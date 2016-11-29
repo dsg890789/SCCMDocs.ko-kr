@@ -118,7 +118,7 @@ System Center Configuration Manager의 경계는 관리하려는 장치를 포�
 
 7.  **확인** 을 클릭하여 경계 속성을 닫고 구성을 저장합니다.  
 
-##  <a name="a-namebkmkboundarygroupsa-boundary-groups"></a><a name="BKMK_BoundaryGroups"></a> 경계 그룹  
+##  <a name="a-namebkmkboundarygroupsa-boundary-groups"></a><a name="BKMK_BoundaryGroups"></a> Boundary groups  
  경계 그룹을 만들어 관련 네트워크 위치(경계)를 논리적으로 그룹화하면 인프라를 보다 쉽게 관리할 수 있습니다. 경계 그룹을 사용하기 전에 경계 그룹에 경계를 할당해야 합니다. 클라이언트는 다음 항목에 대해 경계 그룹 구성을 사용합니다.  
 
 -   자동 사이트 할당  

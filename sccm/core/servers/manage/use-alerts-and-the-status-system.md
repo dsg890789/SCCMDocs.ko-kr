@@ -204,7 +204,7 @@ ms.openlocfilehash: dda2e3af6ae14a949af5c70f300f8c7c6772e1a8
 |경고에 대한 메일 구독 구성|이 항목에서 [Management tasks for alerts](#BKMK_Manage) 섹션을 참조하세요.|  
 |경고 모니터링|이 항목에서 [경고 모니터링](#BKMK_MonitorAlerts)|  
 
-###  <a name="a-namebkmkmanagea-management-tasks-for-alerts"></a><a name="BKMK_Manage"></a> 경고에 대한 관리 작업  
+###  <a name="a-namebkmkmanagea-management-tasks-for-alerts"></a><a name="BKMK_Manage"></a> Management tasks for alerts  
 
 ##### <a name="to-manage-general-alerts"></a>일반 경고를 관리하려면  
 

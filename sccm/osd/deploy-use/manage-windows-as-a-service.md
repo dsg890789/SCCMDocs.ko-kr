@@ -32,7 +32,7 @@ ms.openlocfilehash: 0ed06bb30d1277afa71d1eb2d045ea0ebc87912a
 
  Windows as a Service를 관리하려면 다음 섹션을 참조하세요.
 
-##  <a name="a-namebkmkprerequisitesa-prerequisites"></a><a name="BKMK_Prerequisites"></a> 필수 조건  
+##  <a name="a-namebkmkprerequisitesa-prerequisites"></a><a name="BKMK_Prerequisites"></a> 전제 조건  
  Windows 10 서비스 대시보드에 데이터를 보려면 다음을 수행해야 합니다.  
 
 -   Windows 10 컴퓨터는 소프트웨어 업데이트 관리를 위해 WSUS(Windows Server Update Services)에서 Configuration Manager 소프트웨어 업데이트를 사용해야 합니다. 컴퓨터가 소프트웨어 업데이트 관리를 위해 비즈니스용 Windows 업데이트(또는 Windows 참가자)를 사용하는 경우 Windows 10 서비스 계획에서 해당 컴퓨터가 평가되지 않습니다. 자세한 내용은 [Integration with Windows Update for Business in Windows 10](../../sum/deploy-use/integrate-windows-update-for-business-windows-10.md)을 참조하십시오.  
