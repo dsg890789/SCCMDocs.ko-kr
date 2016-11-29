@@ -89,7 +89,7 @@ System Center Configuration Manager에서 전원 관리를 사용하면 Configur
 
 10. **확인**을 클릭하여 *<컬렉션 이름\>***설정** 대화 상자를 닫고 전원 계획을 적용합니다.  
 
-##  <a name="a-namebkmkplansa-available-power-management-plan-settings"></a><a name="BKMK_Plans"></a> 사용 가능한 전원 관리 계획 설정  
+##  <a name="a-namebkmkplansa-available-power-management-plan-settings"></a><a name="BKMK_Plans"></a> Available power management plan settings  
  다음 표에는 Configuration Manager에서 사용 가능한 전원 관리 설정이 나와 있습니다. 컴퓨터가 연결되어 있거나 배터리 전원을 사용하는 경우에 대해 별도의 설정을 구성할 수 있습니다. 사용 중인 Windows 버전에 따라 일부 설정을 구성하지 못할 수도 있습니다.  
 
 > [!NOTE]  

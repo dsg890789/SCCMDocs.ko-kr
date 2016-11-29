@@ -35,7 +35,7 @@ ms.openlocfilehash: 5f8d051a92cd74938f1a5235b37f02ebe0ff542c
 
  사이트 시스템 역할에 사용할 프록시를 사이트 시스템 서버와 함께 구성하는 경우 [프록시 서버를 사용할 수 있는 사이트 시스템 역할](#bkmk_proxy)을 참조하세요.  
 
-##  <a name="a-namebkmkplanrolesa-site-system-roles"></a><a name="bkmk_planroles"></a> 사이트 시스템 역할  
+##  <a name="a-namebkmkplanrolesa-site-system-roles"></a><a name="bkmk_planroles"></a> Site system roles  
  사이트 시스템 역할은 사이트에 추가 기능을 제공하는 컴퓨터에 설치됩니다. 다음과 같은 경우를 예로 들 수 있습니다.  
 
 -   추가 관리 지점. 사이트는 사이트의 최대 지원 용량까지 더 많은 장치를 지원할 수 있습니다.  

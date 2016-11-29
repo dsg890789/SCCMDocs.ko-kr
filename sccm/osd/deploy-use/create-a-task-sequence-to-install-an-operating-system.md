@@ -115,7 +115,7 @@ System Center Configuration Manager에서 작업 순서를 사용하여 운영 �
 
  이제 컴퓨터의 컬렉션에 작업 순서를 배포할 수 있습니다.  자세한 내용은 [Deploy a task sequence](manage-task-sequences-to-automate-tasks.md#BKMK_DeployTS)항목을 참조하세요.  
 
-##  <a name="a-namebkmkinstallexistingosimagetsexamplea-example-task-sequence-to-install-an-existing-operating-system-image"></a><a name="BKMK_InstallExistingOSImageTSExample"></a> 기존 운영 체제 이미지를 설치하는 작업 순서 예제  
+##  <a name="a-namebkmkinstallexistingosimagetsexamplea-example-task-sequence-to-install-an-existing-operating-system-image"></a><a name="BKMK_InstallExistingOSImageTSExample"></a> 기존 운영 체제 이미지를 설치하는 작업 순서 예  
  기존 운영 체제 이미지를 사용하여 운영 체제를 배포하는 작업 순서를 만드는 경우 다음 표를 가이드로 사용합니다. 테이블에 작업 순서 단계 및 구성 하 고 해당 작업 순서 단계를 논리 그룹으로 구성 하는 방법에 대 한 일반적인 순서를 결정 하는데 도움이 됩니다. 작업 순서를 만들면이 샘플에서 다를 수 있습니다 및 작업 순서 단계 및 그룹 보다 포함할 수 있습니다.  
 
 > [!IMPORTANT]  

@@ -82,7 +82,7 @@ System Center Configuration Manager의 소프트웨어 업데이트는 기업의
 
 7.  WSUS 동기화 관리자는 사이트의 소프트웨어 업데이트 지점에서 실행 중인 WSUS로 한 번에 하나의 요청을 보냅니다. 다른 소프트웨어 업데이트 지점의 WSUS 서버는 사이트의 기본 소프트웨어 업데이트 지점에서 실행 중인 WSUS의 복제본으로 구성됩니다.  
 
-##  <a name="a-namebkmksumcompliancea-software-updates-compliance-assessment"></a><a name="BKMK_SUMCompliance"></a> 소프트웨어 업데이트 준수 평가  
+##  <a name="a-namebkmksumcompliancea-software-updates-compliance-assessment"></a><a name="BKMK_SUMCompliance"></a> Software updates compliance assessment  
  Configuration Manager의 클라이언트 컴퓨터에 소프트웨어 업데이트를 배포하기 전에 클라이언트 컴퓨터에서 소프트웨어 업데이트 준수 검사를 시작합니다. 각 소프트웨어 업데이트에 대해 업데이트에 관한 호환 상태가 포함된 상태 메시지가 만들어집니다. 상태 메시지는 관리 지점에 대량으로 전송된 다음 사이트 서버로 전송됩니다. 여기에서 호환 상태가 사이트 데이터베이스에 삽입됩니다. 소프트웨어 업데이트에 대한 호환 상태가 Configuration Manager 콘솔에 표시됩니다. 업데이트가 필요한 컴퓨터에 소프트웨어 업데이트를 배포하고 설치할 수 있습니다. 다음 섹션에서는 호환 상태에 대한 정보를 제공하고 소프트웨어 업데이트 호환성을 검사하는 프로세스에 대해 설명합니다.  
 
 ### <a name="software-updates-compliance-states"></a>소프트웨어 업데이트 호환 상태  

@@ -70,7 +70,7 @@ System Center Configuration Manager 설치 프로그램은 다음 섹션에 자�
 
 -   [System Center 2012 Configuration Manager SP1](http://www.microsoft.com/en-pk/download/details.aspx?id=36212)  
 
-##  <a name="a-namebkmkusagea-usage-data-levels-and-settings"></a><a name="bkmk_usage"></a> 사용 현황 데이터 수준 및 설정  
+##  <a name="a-namebkmkusagea-usage-data-levels-and-settings"></a><a name="bkmk_usage"></a> 사용 데이터 수준 및 설정  
 System Center Configuration Manager 사이트를 처음 설치하는 경우 자동으로 설치되고 사이트 서버에 새 사이트 시스템 역할이 구성되며 **서비스 연결 지점**이 다음과 같은 기본 설정으로 구성됩니다.  
 
 -   **온라인** 모드(오프 라인 모드도 지원됨)  

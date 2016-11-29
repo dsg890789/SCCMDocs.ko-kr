@@ -46,7 +46,7 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 
  이러한 절차를 수행하는 컴퓨터에 SQL Server Business Intelligence Development Studio를 설치했는지, 그리고 이 컴퓨터에 보고 서비스 지점 서버에 대한 네트워크 연결이 있는지 확인합니다. SQL Server Business Intelligence Development Studio에 대한 자세한 내용은 SQL Server 2008 설명서를 참조하십시오.  
 
-###  <a name="a-namebkmkcreatereportmodelprojecta-to-create-the-report-model-project"></a><a name="BKMK_CreateReportModelProject"></a> 보고서 모델 프로젝트를 만들려면  
+###  <a name="a-namebkmkcreatereportmodelprojecta-to-create-the-report-model-project"></a><a name="BKMK_CreateReportModelProject"></a> To create the report model project  
 
 1.  바탕 화면에서 **시작**, **Microsoft SQL Server 2008**, **SQL Server Business Intelligence Development Studio**를 차례로 클릭합니다.  
 
@@ -63,7 +63,7 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
     > [!NOTE]  
     >  **솔루션 탐색기** 창이 표시되지 않는 경우 **보기**를 클릭한 다음 **솔루션 탐색기**를 클릭합니다.  
 
-###  <a name="a-namebkmkdefinereportmodeldatasourcea-to-define-the-data-source-for-the-report-model"></a><a name="BKMK_DefineReportModelDataSource"></a> 보고서 모델의 데이터 원본을 정의하려면  
+###  <a name="a-namebkmkdefinereportmodeldatasourcea-to-define-the-data-source-for-the-report-model"></a><a name="BKMK_DefineReportModelDataSource"></a> To define the data source for the report model  
 
 1.  **SQL Server Business Intelligence Development Studio** 의 **솔루션 탐색기**창에서 **데이터 원본** 을 마우스 오른쪽 단추로 클릭하여 **새 데이터 원본 추가**를 선택합니다.  
 
@@ -92,7 +92,7 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
     > [!NOTE]  
     >  기존 데이터 원본의 속성을 편집하려면 **솔루션 탐색기** 창의 **데이터 원본** 폴더에서 데이터 원본을 두 번 클릭하여 데이터 원본 디자이너에 데이터 원본 속성을 표시합니다.  
 
-###  <a name="a-namebkmkdefinereportmodeldatasourceviewa-to-define-the-data-source-view-for-the-report-model"></a><a name="BKMK_DefineReportModelDataSourceView"></a> 보고서 모델의 데이터 원본 뷰를 정의하려면  
+###  <a name="a-namebkmkdefinereportmodeldatasourceviewa-to-define-the-data-source-view-for-the-report-model"></a><a name="BKMK_DefineReportModelDataSourceView"></a> To define the data source view for the report model  
 
 1.  **솔루션 탐색기**에서 **데이터 원본 뷰** 를 마우스 오른쪽 단추로 클릭하여 **새 데이터 원본 뷰 추가**를 선택합니다.  
 
@@ -113,7 +113,7 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 
 8.  **마침**을 클릭합니다. **솔루션 탐색기** 의 **데이터 원본 뷰** 폴더에 **Simple_Model.dsv**데이터 원본 뷰가 표시됩니다.  
 
-###  <a name="a-namebkmkcreatereportmodela-to-create-the-report-model"></a><a name="BKMK_CreateReportModel"></a> 보고서 모델을 만들려면  
+###  <a name="a-namebkmkcreatereportmodela-to-create-the-report-model"></a><a name="BKMK_CreateReportModel"></a> To create the report model  
 
 1.  **솔루션 탐색기**에서 **보고서 모델** 을 마우스 오른쪽 단추로 클릭하여 **새 보고서 모델 추가**를 선택합니다.  
 
@@ -131,7 +131,7 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 
 8.  마법사를 끝내려면 **마침**을 클릭합니다. 디자인 창에 보고서 모델이 표시됩니다.  
 
-###  <a name="a-namebkmkpublishreportmodela-to-publish-the-report-model-for-use-in-sql-server-reporting-services"></a><a name="BKMK_PublishReportModel"></a> SQL Server Reporting Services에서 사용할 보고서 모델을 게시하려면  
+###  <a name="a-namebkmkpublishreportmodela-to-publish-the-report-model-for-use-in-sql-server-reporting-services"></a><a name="BKMK_PublishReportModel"></a> To publish the report model for use in SQL Server Reporting Services  
 
 1.  **솔루션 탐색기**에서 보고서 모델을 마우스 오른쪽 단추로 클릭하여 **배포**를 선택합니다. 이 예에서는 보고서 모델이 **Simple_Model.smdl**입니다.  
 
@@ -139,7 +139,7 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 
 3.  **파일**, **모두 저장**을 차례로 클릭한 다음 **SQL Server Business Intelligence Development Studio**를 닫습니다.  
 
-###  <a name="a-namebkmkdeployreportmodela-to-deploy-the-custom-report-model-to-configuration-manager"></a><a name="BKMK_DeployReportModel"></a> Configuration Manager에 사용자 지정 보고서 모델을 배포하려면  
+###  <a name="a-namebkmkdeployreportmodela-to-deploy-the-custom-report-model-to-configuration-manager"></a><a name="BKMK_DeployReportModel"></a> To deploy the custom report model to Configuration Manager  
 
 1.  보고서 모델 프로젝트를 만든 폴더로 이동합니다. 예: %*USERPROFILE*%\Documents\Visual Studio 2008\Projects\\*&lt;프로젝트 이름\>.*  
 
@@ -180,7 +180,7 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
     > [!IMPORTANT]  
     >  보고서 모델 파일을 Configuration Manager 사이트 서버로 복사한 후 Configuration Manager 콘솔을 끝내고 다시 시작해야 **보고서 만들기 마법사**에서 보고서 모델을 사용할 수 있습니다.  
 
-##  <a name="a-nameadvancedreportmodela-steps-for-creating-an-advanced-report-model-in-sql-server-reporting-services"></a><a name="AdvancedReportModel"></a> SQL Server Reporting Services에서 고급 보고서 모델을 만드는 단계  
+##  <a name="a-nameadvancedreportmodela-steps-for-creating-an-advanced-report-model-in-sql-server-reporting-services"></a><a name="AdvancedReportModel"></a> Steps for Creating an Advanced Report Model in SQL Server Reporting Services  
  다음 절차를 사용하면 사이트의 사용자가 Configuration Manager 데이터베이스의 여러 뷰에서 데이터를 기반으로 한 특정 모델 기반 보고서를 작성하는 데 사용할 수 있는 고급 보고서 모델을 만들 수 있습니다. 보고서 작성자에게 클라이언트 컴퓨터 및 이러한 컴퓨터에 설치된 운영 체제에 대한 정보를 나타내는 보고서 모델을 만듭니다. 이 정보는 Configuration Manager 데이터베이스의 다음 뷰에서 가져옵니다.  
 
 -   **V_R_System**: 검색된 컴퓨터와 Configuration Manager 클라이언트에 대한 정보가 포함되어 있습니다.  

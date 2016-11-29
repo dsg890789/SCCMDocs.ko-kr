@@ -46,7 +46,7 @@ System Center Configuration Manager에서 컬렉션을 만들어 사용자 또�
 
 ##  <a name="a-namebkmk1a-to-create-a-device-collection"></a><a name="BKMK_1"></a> 장치 컬렉션을 만들려면  
 
-1.  Configuration Manager 콘솔에서 **자산 및 준수**를 클릭합니다.  
+1.  Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.  
 
 2.  **자산 및 준수** 작업 영역에서 **장치 컬렉션**을 클릭합니다.  
 
@@ -139,7 +139,7 @@ System Center Configuration Manager에서 컬렉션을 만들어 사용자 또�
 
 ##  <a name="a-namebkmk2a-to-create-a-user-collection"></a><a name="BKMK_2"></a> 사용자 컬렉션을 만들려면  
 
-1.  Configuration Manager 콘솔에서 **자산 및 준수**를 클릭합니다.  
+1.  Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.  
 
 2.  **자산 및 준수** 작업 영역에서 **사용자 컬렉션**을 클릭합니다.  
 
@@ -228,7 +228,7 @@ System Center Configuration Manager에서 컬렉션을 만들어 사용자 또�
 
 ##  <a name="a-namebkmk3a-to-import-a-collection"></a><a name="BKMK_3"></a> 컬렉션을 가져오려면  
 
-1.  Configuration Manager 콘솔에서 **자산 및 준수**를 클릭합니다.  
+1.  Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.  
 
 2.  **자산 및 준수** 작업 영역에서 **사용자 컬렉션** 또는 **장치 컬렉션**을 클릭합니다.  
 

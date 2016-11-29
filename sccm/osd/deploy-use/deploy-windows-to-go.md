@@ -463,7 +463,7 @@ ms.openlocfilehash: 104355185c5bbb4c15f3b9cc80cf8fa0e529cf6d
 ###  <a name="a-namebkmkconfigurestagedrivea-configuration-manager-configures-and-stages-the-windows-to-go-drive"></a><a name="BKMK_ConfigureStageDrive"></a> Configuration Manager에서 Windows To Go 드라이브 구성 및 준비  
  컴퓨터가 Windows To Go 드라이브로 다시 시작되고 나면 해당 드라이브는 Windows PE로 부팅되어 관리 지점에 연결해 정책을 가져오며, 그러면 운영 체제 배포가 완료됩니다. Configuration Manager에서 드라이브를 구성하고 준비합니다. Configuration Manager의 드라이브 준비가 완료된 후 사용자는 컴퓨터를 다시 시작하여 프로비저닝 프로세스를 마무리할 수 있습니다(예: 도메인 가입 또는 응용 프로그램 설치). 이 프로세스는 사전 준비된 미디어의 경우에도 동일합니다.  
 
-###  <a name="a-namebkmkuserlogsina-user-logs-in-to-windows-8"></a><a name="BKMK_UserLogsIn"></a> 사용자가 Windows 8에 로그인  
+###  <a name="a-namebkmkuserlogsina-user-logs-in-to-windows-8"></a><a name="BKMK_UserLogsIn"></a> Windows 8에 로그인  
  Configuration Manager의 프로비전 프로세스가 완료되고 Windows 8 잠금 화면이 표시되면 사용자는 운영 체제에 로그인할 수 있습니다.  
 
 

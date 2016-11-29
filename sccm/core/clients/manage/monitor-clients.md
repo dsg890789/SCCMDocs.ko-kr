@@ -28,7 +28,7 @@ ms.openlocfilehash: 9961932a35a685626c021613d69f9b223f781d46
 
  System Center Configuration Manager 클라이언트 응용 프로그램이 사이트의 Windows 컴퓨터 및 장치에 설치되면 Configuration Manager 콘솔에서 해당 상태 및 활동을 모니터링할 수 있습니다.  
 
-##  <a name="a-namebkmkabouta-about-client-status"></a><a name="bkmk_about"></a> 클라이언트 상태 정보  
+##  <a name="a-namebkmkabouta-about-client-status"></a><a name="bkmk_about"></a> 클라이언트 상태에 대한 정보  
  Configuration Manager에서는 다음과 같은 정보 유형을 클라이언트 상태로 제공합니다.  
 
 -   **클라이언트 온라인 상태** - Configuration Manager 버전 1602부터, 이 상태는 컴퓨터가 온라인 상태인지 여부를 나타냅니다. 컴퓨터가 할당된 관리 지점에 연결된 경우 온라인인 것으로 간주됩니다.  클라이언트가 온라인 상태인지 여부를 나타내기 위해 관리 지점에 ping과 유사한 메시지를 보냅니다. 관리 지점에서 5분 내에 메시지를 받지 못하면 클라이언트 상태가 오프라인으로 변경된 것입니다.  

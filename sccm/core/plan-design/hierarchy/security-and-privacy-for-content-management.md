@@ -89,7 +89,7 @@ ms.openlocfilehash: fcc3c74e50a4cdac9337178f5fcfe710f0fa17a5
 
      이 8시간의 기간 내에 차단된 클라이언트가 콘텐츠를 다운로드하지 못하도록 하려는 경우 Configuration Manager 콘솔의 **관리** 작업 영역 내 **클라우드** 노드 **계층 구성**에서 클라우드 서비스를 중지할 수 있습니다.  
 
-##  <a name="a-namebkmkprivacycontentmanagementa-privacy-information-for-content-management"></a><a name="BKMK_Privacy_ContentManagement"></a> 콘텐츠 관리에 대한 개인 정보  
+##  <a name="a-namebkmkprivacycontentmanagementa-privacy-information-for-content-management"></a><a name="BKMK_Privacy_ContentManagement"></a> 콘텐츠 관리를 위한 개인 정보  
  Configuration Manager에서는 콘텐츠 파일에 사용자 데이터가 포함되지 않습니다. 관리자가 포함하도록 선택하더라도 포함되지 않습니다.  
 
  콘텐츠 관리를 구성하기 전에 개인 정보 요구 사항을 고려하세요.  

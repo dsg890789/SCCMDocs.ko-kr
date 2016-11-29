@@ -39,7 +39,7 @@ System Center Configuration Manager 사이트를 제거해야 하는 경우 다�
 -   모든 기본 사이트가 제거된 후 중앙 관리 사이트를 제거할 수 있습니다.  
 
 
-##  <a name="a-namebkmkremovesecondarysitea-remove-a-secondary-site-from-a-hierarchy"></a><a name="BKMK_RemoveSecondarysite"></a> 계층 구조에서 보조 사이트 제거  
+##  <a name="a-namebkmkremovesecondarysitea-remove-a-secondary-site-from-a-hierarchy"></a><a name="BKMK_RemoveSecondarysite"></a> 계층에서 보조 사이트 제거  
 보조 사이트는 새 부모 기본 사이트로 이동하거나 재할당할 수 없습니다. 계층에서 보조 사이트를 제거하려면 직계 부모 사이트에서 삭제해야 합니다. 보조 사이트를 제거하려면 Configuration Manager 콘솔에서 보조 사이트 삭제 마법사를 사용합니다. 보조 사이트를 제거하는 경우 보조 사이트를 삭제할지 또는 설치를 제거할지 선택해야 합니다.  
 
 -   **보조 사이트 제거**: 네트워크에서 액세스할 수 있는 기능적 보조 사이트를 제거하려면 이 옵션을 사용합니다. 이 옵션은 보조 사이트 서버에서 Configuration Manager를 제거한 다음 사이트 및 관련 리소스에 대한 모든 정보를 Configuration Manager 계층 구조에서 삭제합니다. Configuration Manager에서 보조 사이트를 설치하는 동안 SQL Server Express를 설치한 경우 보조 사이트를 제거하는 동안 Configuration Manager에서 SQL Express도 제거합니다. 보조 사이트를 설치하기 전에 SQL Server Express가 설치되었던 경우 Configuration Manager는 SQL Server Express를 제거하지 않습니다.  

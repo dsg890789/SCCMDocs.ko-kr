@@ -43,7 +43,7 @@ System Center Configuration Manager에 대해 수집된 진단 및 사용 현황
 
 -   기능 사용 또는 지리적 위치(표준 시간대)와 같은 사용 가능한 데이터를 기반으로 하는 광고  
 
-##  <a name="a-namebkmkimprovea-examples-of-how-diagnostics-and-usage-data-is-improving-the-product"></a><a name="bkmk_improve"></a> 진단 및 사용 현황 데이터를 통한 제품 개선 방법 예제  
+##  <a name="a-namebkmkimprovea-examples-of-how-diagnostics-and-usage-data-is-improving-the-product"></a><a name="bkmk_improve"></a> 진단 및 사용 현황 데이터는 제품을 개선하는 방법의 예  
 Microsoft에서는 사용 가능한 데이터를 사용하여 제품을 개선합니다. 다음은 제품 개선 방법에 대한 몇 가지 예입니다.  
 
 -   **이전 서버 운영 체제에 대한 수정된 지원:**  

@@ -45,7 +45,7 @@ System Center Configuration Manager에서 Asset Intelligence를 사용하여 엔
 ## <a name="supplemental-procedures-for-configuring-asset-intelligence"></a>Asset Intelligence를 구성하기 위한 보완 절차  
  앞의 표의 단계에 대해 다음 정보를 사용합니다.  
 
-###  <a name="a-namebkmkenableassetintelligencea-enable-asset-intelligence-hardware-inventory-reporting-classes"></a><a name="BKMK_EnableAssetIntelligence"></a> Asset Intelligence 하드웨어 인벤토리 보고 클래스를 사용하도록 설정  
+###  <a name="a-namebkmkenableassetintelligencea-enable-asset-intelligence-hardware-inventory-reporting-classes"></a><a name="BKMK_EnableAssetIntelligence"></a> Enable Asset Intelligence hardware inventory reporting classes  
  Configuration Manager 사이트에 Asset Intelligence를 사용하도록 설정하려면 Asset Intelligence 하드웨어 인벤토리 보고 클래스를 하나 이상 사용하도록 설정해야 합니다. **Asset Intelligence** 홈페이지 또는 **관리** 작업 영역, **클라이언트 설정** 노드, 클라이언트 설정 속성에서 클래스를 사용하도록 설정할 수 있습니다. Asset Intelligence 하드웨어 인벤토리 보고 클래스를 사용하도록 설정하려면 다음 절차 중 하나를 따르세요.  
 
 ##### <a name="to-enable-asset-intelligence-hardware-inventory-reporting-classes-from-the-asset-intelligence-home-page"></a>Asset Intelligence 홈페이지에서 Asset Intelligence 하드웨어 인벤토리 보고 클래스를 사용하도록 설정하려면  
@@ -85,7 +85,7 @@ System Center Configuration Manager에서 Asset Intelligence를 사용하여 엔
 
 7.  **확인** 을 클릭하여 선택한 Asset Intelligence 하드웨어 인벤토리 보고 클래스를 사용하도록 설정합니다.  
 
-###  <a name="a-namebkmkinstallassetintelligencesynchronizationpointa-install-an-asset-intelligence-synchronization-point"></a><a name="BKMK_InstallAssetIntelligenceSynchronizationPoint"></a> Asset Intelligence 동기화 지점 설치  
+###  <a name="a-namebkmkinstallassetintelligencesynchronizationpointa-install-an-asset-intelligence-synchronization-point"></a><a name="BKMK_InstallAssetIntelligenceSynchronizationPoint"></a> Install an Asset Intelligence Synchronization Point  
  다음 절차를 사용하여 Asset Intelligence 동기화 지점 사이트 시스템 역할을 설치할 수 있습니다.  
 
 ##### <a name="to-install-an-asset-intelligence-synchronization-point-site-system-role"></a>Asset Intelligence 동기화 지점 사이트 시스템 역할을 설치하려면  
@@ -124,7 +124,7 @@ System Center Configuration Manager에서 Asset Intelligence를 사용하여 엔
 
 10. 새 사이트 역할 마법사의 **요약** 페이지에서 지정한 설정을 검토하여 설정이 올바른지 확인한 다음 계속합니다. 설정을 변경하려면 적절한 페이지로 되돌아갈 때까지 **이전** 을 클릭한 다음 설정을 변경하고 **요약** 페이지로 돌아갑니다.  
 
-###  <a name="a-namebkmkenablesuccesslogoneventsa-enable-auditing-of-success-logon-events"></a><a name="BKMK_EnableSuccessLogonEvents"></a> 성공 로그온 이벤트 감사 사용  
+###  <a name="a-namebkmkenablesuccesslogoneventsa-enable-auditing-of-success-logon-events"></a><a name="BKMK_EnableSuccessLogonEvents"></a> Enable auditing of success logon events  
  다음 절차를 사용하여 성공 로그온 이벤트의 감사를 사용하도록 컴퓨터 보안 정책 로그온 설정을 구성할 수 있습니다.  
 
 ##### <a name="to-enable-success-logon-event-logging-by-using-a-local-security-policy"></a>로컬 보안 정책을 사용하여 성공 로그온 이벤트 로깅을 사용하도록 설정하려면  
@@ -143,7 +143,7 @@ System Center Configuration Manager에서 Asset Intelligence를 사용하여 엔
 
 3.  결과 창에서 **로그온 이벤트 감사**를 두 번 클릭하고 **성공** 확인란이 선택되었는지 확인한 다음 **확인**을 클릭합니다.  
 
-###  <a name="a-namebkmkimportsoftwarelicenseinformationa-import-software-license-information"></a><a name="BKMK_ImportSoftwareLicenseInformation"></a> 소프트웨어 라이선스 정보 가져오기  
+###  <a name="a-namebkmkimportsoftwarelicenseinformationa-import-software-license-information"></a><a name="BKMK_ImportSoftwareLicenseInformation"></a> Import software license information  
  다음 섹션에서는 소프트웨어 라이선스 가져오기 마법사를 사용하여 Microsoft 및 일반 소프트웨어 라이선스 정보를 Configuration Manager 사이트 데이터베이스로 가져오는 데 필요한 절차에 대해 설명합니다. 소프트웨어 라이선스 정보를 라이선스 계정 파일에서 사이트 데이터베이스로 가져올 때 사이트 서버 컴퓨터 계정은 소프트웨어 라이선스 정보를 가져오는 데 사용되는 파일 공유에 대한 NTFS 파일 시스템의 **모든 권한** 권한이 필요합니다.  
 
 > [!IMPORTANT]  
@@ -169,7 +169,7 @@ System Center Configuration Manager에서 Asset Intelligence를 사용하여 엔
 
 6.  **요약** 페이지에서 지정한 정보를 검토하여 올바른지 확인한 다음 계속합니다. 설정을 변경하려면 **이전** 을 클릭하여 **가져오기** 페이지로 돌아갑니다.  
 
-###  <a name="a-namebkmkcreategenerallicensestatementa-create-a-general-license-statement-information-file-for-import"></a><a name="BKMK_CreateGeneralLicenseStatement"></a> 가져오기를 위한 일반 라이선스 계정 정보 파일 만들기  
+###  <a name="a-namebkmkcreategenerallicensestatementa-create-a-general-license-statement-information-file-for-import"></a><a name="BKMK_CreateGeneralLicenseStatement"></a> Create a general license statement information file for import  
  일반 라이선스 계정은 쉼표로 구분된(.csv) 파일 형식으로 수동으로 만든 라이선스 가져오기 파일을 사용하여 Asset Intelligence 카탈로그에 가져올 수도 있습니다.  
 
 > [!NOTE]  
@@ -226,7 +226,7 @@ System Center Configuration Manager에서 Asset Intelligence를 사용하여 엔
 |SupportExpirationDate|다음 형식의 날짜 값: MM/DD/YYYY|아니요|구매한 지원의 종료 날짜|  
 |설명|최대 255자|아니요|선택적 설명|  
 
-###  <a name="a-namebkmkconfiguremaintenancetasksa-configure-asset-intelligence-maintenance-tasks"></a><a name="BKMK_ConfigureMaintenanceTasks"></a> Asset Intelligence 유지 관리 작업 구성  
+###  <a name="a-namebkmkconfiguremaintenancetasksa-configure-asset-intelligence-maintenance-tasks"></a><a name="BKMK_ConfigureMaintenanceTasks"></a> Configure Asset Intelligence maintenance tasks  
  다음 유지 관리 작업을 Asset Intelligence에 사용할 수 있습니다.  
 
 -   **인벤토리 정보를 사용하여 응용 프로그램 타이틀 확인**: 이 유지 관리 작업은 소프트웨어 인벤토리에 보고된 소프트웨어 타이틀이 Asset Intelligence 카탈로그 내 소프트웨어 타이틀과 일치하는지 확인합니다. 기본적으로 이 작업은 사용하도록 설정되어 있으며 토요일 오전 12시 이후부터 오전 5시 이전 사이에 실행되도록 예약되어 있습니다. 이 유지 관리 작업은 Configuration Manager 계층 구조의 최상위 사이트에서만 사용할 수 있습니다.  

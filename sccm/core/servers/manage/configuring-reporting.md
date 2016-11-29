@@ -172,7 +172,7 @@ System Center Configuration Manager 콘솔에서 보고서를 만들고 수정�
 
      Configuration Manager에서 Reporting Services에 연결하고 Configuration Manager 및 Reporting Services 루트 폴더와 특정 보고서 폴더의 사용자에 대한 권한을 설정합니다. 보고 서비스 지점을 처음 설치하면 Configuration Manager에서 10분 간격으로 Reporting Services에 연결하여 보고서 폴더에 구성된 사용자 권한이 Configuration Manager 사용자에 대해 설정된 연결된 권한인지 확인합니다. Reporting Services 보고서 관리자를 사용하여 보고서 폴더에서 사용자를 추가하거나 사용자 권한을 수정하면 Configuration Manager에서 사이트 데이터베이스에 저장된 역할 기반 할당을 사용하여 해당 변경 내용을 덮어씁니다. 또한 Configuration Manager는 Configuration Manager에서 보고 권한이 없는 사용자를 제거합니다.  
 
-##  <a name="a-namebkmksecurityrolesa-reporting-services-security-roles-for-configuration-manager"></a><a name="BKMK_SecurityRoles"></a> Configuration Manager의 Reporting Services 보안 역할  
+##  <a name="a-namebkmksecurityrolesa-reporting-services-security-roles-for-configuration-manager"></a><a name="BKMK_SecurityRoles"></a> Configuration Manager의 보고 서비스 보안 역할  
  Configuration Manager에서 보고 서비스 지점을 설치하면 Reporting Services에 다음 보안 역할이 추가됩니다.  
 
 -   **ConfigMgr 보고서 사용자**: 이 보안 역할이 할당된 사용자만 Configuration Manager 보고서를 실행할 수 있습니다.  

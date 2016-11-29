@@ -64,7 +64,7 @@ System Center Configuration Manager 응용 프로그램을 사용하여 Mac 컴�
 
  Configuration Manager 등록을 사용하지 않고 Configuration Manager와 독립적으로 클라이언트 인증서를 설치하는 경우에는 [업그레이드된 클라이언트가 기존 인증서를 사용하도록 구성](#BKMK_UpgradingClient_MachineEnrollment)을 참조하세요.  
 
-##  <a name="a-namebkmkupgradingclientmachineenrollmenta-configure-the-upgraded-client-to-use-an-existing-certificate"></a><a name="BKMK_UpgradingClient_MachineEnrollment"></a> 업그레이드된 클라이언트가 기존 인증서를 사용하도록 구성  
+##  <a name="a-namebkmkupgradingclientmachineenrollmenta-configure-the-upgraded-client-to-use-an-existing-certificate"></a><a name="BKMK_UpgradingClient_MachineEnrollment"></a> Configure the upgraded client to use an existing certificate  
  다음 절차를 실행하여 컴퓨터 등록 마법사가 실행되는 것을 방지하고 업그레이드된 클라이언트가 기존 클라이언트 인증서를 사용하도록 구성합니다.  
 
 -   Configuration Manager 콘솔에서 **Mac OS X** 형식의 구성 항목을 만듭니다.  

@@ -216,7 +216,7 @@ ADR을 사용하면 소프트웨어 업데이트를 자동으로 승인하고 �
 
  마법사를 완료하면 ADR이 실행됩니다. 지정한 기준을 충족하는 소프트웨어 업데이트가 소프트웨어 업데이트 그룹에 추가되고, 사이트 서버의 콘텐츠 라이브러리에 소프트웨어 업데이트가 다운로드되며, 구성된 배포 지점에 소프트웨어 업데이트가 배포된 후 대상 컬렉션의 클라이언트에 소프트웨어 업데이트 그룹이 배포됩니다.  
 
-##  <a name="a-namebkmkadddeploymenttoadra-add-a-new-deployment-to-an-existing-adr"></a><a name="BKMK_AddDeploymentToADR"></a> 기존 ADR에 새 배포 추가  
+##  <a name="a-namebkmkadddeploymenttoadra-add-a-new-deployment-to-an-existing-adr"></a><a name="BKMK_AddDeploymentToADR"></a> 기존 ADR에 새 배포를 추가합니다.  
  ADR을 만든 후에 규칙에 배포를 더 추가할 수 있습니다. 따라서 컬렉션마다 각기 다른 업데이트를 배포해야 하는 복잡한 작업을 관리할 수 있습니다. 각각의 새 배포는 모든 기능 및 배포 모니터링 환경을 포함합니다.  
 
 #### <a name="to-add-a-new-deployment-to-an-existing-adr"></a>기존 ADR에 새 배포를 추가하려면  

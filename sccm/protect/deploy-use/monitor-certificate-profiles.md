@@ -33,7 +33,7 @@ ms.openlocfilehash: bb72571596e77ce3069c1f6526fb3ba00fc9ecdc
 
 -   [보고서를 사용하여 호환성 결과를 보는 방법](#BKMK_Reports)  
 
-##  <a name="a-namebkmkconsolea-how-to-view-compliance-results-in-the-configuration-manager-console"></a><a name="BKMK_console"></a> Configuration Manager 콘솔에서 준수 결과를 보는 방법  
+##  <a name="a-namebkmkconsolea-how-to-view-compliance-results-in-the-configuration-manager-console"></a><a name="BKMK_console"></a> Configuration Manager 콘솔에서 호환성 결과를 보는 방법  
  다음 절차를 사용하여 System Center Configuration Manager 콘솔에서 배포된 인증서 프로필의 준수에 대한 자세한 내용을 봅니다.  
 
 > [!NOTE]  
@@ -80,7 +80,7 @@ ms.openlocfilehash: bb72571596e77ce3069c1f6526fb3ba00fc9ecdc
     |0x00000040|상태 정보를 건너뛰었습니다. 이러한 현상은 "http://msdn.microsoft.com/ko-kr/windows/ms721572" \l "_security_certification_authority_gly" 인증 기관이 유효하지 않거나 모니터링용으로 선택되지 않은 경우 발생할 수 있습니다.|  
     |0x00000100|등록이 거부되었습니다.|  
 
-##  <a name="a-namebkmkreportsa-how-to-view-compliance-results-by-using-reports"></a><a name="BKMK_Reports"></a> 보고서를 사용하여 준수 결과를 보는 방법
+##  <a name="a-namebkmkreportsa-how-to-view-compliance-results-by-using-reports"></a><a name="BKMK_Reports"></a> 보고서를 사용하여 호환성 결과를 보는 방법
 
  System Center Configuration Manager의 준수 설정에는 인증서 프로필에 대한 정보를 모니터링하는 데 사용할 수 있는 기본 제공 보고서가 포함됩니다. 이러한 보고서에는 **호환 및 설정 관리**라는 보고서 범주가 있습니다.  
 

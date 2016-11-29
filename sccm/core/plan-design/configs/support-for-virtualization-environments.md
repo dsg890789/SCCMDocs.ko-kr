@@ -48,7 +48,7 @@ Configuration Manager는 온라인 상태가 아닌 가상 컴퓨터를 관리�
 
 가상 컴퓨터에 대한 특수 고려 사항은 없습니다. 예를 들어 Configuration Manager는 업데이트가 적용된 가상 컴퓨터의 상태를 저장하지 않고 가상 컴퓨터를 중지했다가 다시 시작하는 경우 가상 컴퓨터에 업데이트를 다시 적용해야 하는지 여부를 확인하지 않을 수 있습니다.  
 
-##  <a name="a-namebkmkazurea-microsoft-azure-virtual-machines"></a><a name="bkmk_Azure"></a> Microsoft Azure Virtual Machine  
+##  <a name="a-namebkmkazurea-microsoft-azure-virtual-machines"></a><a name="bkmk_Azure"></a> Microsoft Azure 가상 컴퓨터  
  Configuration Manager는 실제 회사 네트워크 내의 온-프레미스에서 실행하는 경우와 마찬가지로 Microsoft Azure의 Virtual Machine에서도 실행할 수 있습니다. 다음 시나리오에서는 Configuration Manager를 Microsoft Azure Virtual Machine과 함께 사용할 수 있습니다.  
 
 -   **시나리오 1:** Microsoft Azure Virtual Machine에서 Configuration Manager를 실행하고 다른 Microsoft Azure Virtual Machine에 설치된 클라이언트를 관리하는 데 사용할 수 있습니다.  

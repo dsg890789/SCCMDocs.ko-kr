@@ -114,7 +114,7 @@ ms.openlocfilehash: 04ada4c90a5763a454c859eb7af9ac6ac84ceb3a
 |-----------------|-------------|  
 |**컴퓨터 세부 정보**|선택한 컴퓨터에 대한 전원 기능, 전원 설정 및 적용된 전원 계획을 확인하려면 **자세한 정보를 보려면 클릭** 링크를 클릭합니다.|  
 
-###  <a name="a-namebkmkactivitydetailsa-computer-activity-details-report"></a><a name="BKMK_Activity_Details"></a> 컴퓨터 활동 세부 정보 보고서  
+###  <a name="a-namebkmkactivitydetailsa-computer-activity-details-report"></a><a name="BKMK_Activity_Details"></a> Computer Activity Details report  
  **컴퓨터 활동 세부 정보** 보고서에는 절전 모드 및 절전 모드 해제 기능이 있는 활성 또는 비활성 컴퓨터의 목록이 표시됩니다. 이 보고서는 [Computer Activity Report](#BKMK_Activity) 에서 호출되며 사이트 관리자가 직접 실행하도록 설계되지 않았습니다.  
 
  이 보고서를 구성하려면 다음 매개 변수를 사용합니다.  
@@ -508,7 +508,7 @@ ms.openlocfilehash: 04ada4c90a5763a454c859eb7af9ac6ac84ceb3a
 |-----------------|-------------|  
 |**컴퓨터 세부 정보**|선택한 컴퓨터에 대한 전원 기능, 전원 설정 및 적용된 전원 계획을 확인하려면 **자세한 정보를 보려면 클릭** 링크를 클릭합니다.<br /><br /> 자세한 내용은 이 항목의 [Computer Details Report](#BKMK_Computer_Details) 를 참조하십시오.|  
 
-###  <a name="a-namebkmkinsomniaa-insomnia-report"></a><a name="BKMK_Insomnia"></a> 절전 모드 불가 보고서  
+###  <a name="a-namebkmkinsomniaa-insomnia-report"></a><a name="BKMK_Insomnia"></a> Insomnia report  
  **절전 모드 불가 보고서** 에는 컴퓨터가 절전 모드 또는 최대 절전 모드로 전환하지 못한 일반적인 이유 목록과 지정한 기간 동안 각 원인의 영향을 받은 컴퓨터의 수가 표시됩니다. 컴퓨터에서 프로세스 실행, 원격 데스크톱 세션 열림 또는 컴퓨터에서 절전 또는 최대 절전 모드가 지원되지 않는 등 컴퓨터가 절전 모드 또는 최대 절전 모드로 전환하지 못하는 다양한 이유가 있습니다. 이 보고서에서 **절전 모드 불가 컴퓨터 세부 정보** 보고서를 열 수 있으며, 컴퓨터가 절전 모드 또는 최대 절전 모드가 되지 않는 각 원인에 의해 영향을 받는 컴퓨터 목록이 표시됩니다.  
 
  전원 절전 모드 불가 보고서는 지정된 전체 보고 간격 동안 컴퓨터가 절전 모드로 전환되지 않고 켜져 있는 경우 컴퓨터를 **지원되는 절전 모드 없음** 으로 표시합니다. 보고서는 컴퓨터가 지정된 전체 보고 간격 동안 최대 절전 모드로 전환되지 않고 켜져 있는 경우 컴퓨터를 **지원되는 최대 절전 모드 없음** 으로 표시합니다.  
@@ -598,7 +598,7 @@ ms.openlocfilehash: 04ada4c90a5763a454c859eb7af9ac6ac84ceb3a
 |-----------------|-------------|  
 |**전원 설정 세부 정보**|해당 행의 전원 설정을 사용하는 모든 컴퓨터 목록을 확인하려면 **컴퓨터** 열에서 컴퓨터의 수를 클릭합니다.<br /><br /> 자세한 내용은 이 항목의 [Power Settings Details Report](#BKMK_Settings_Details) 를 참조하십시오.|  
 
-###  <a name="a-namebkmksettingsdetailsa-power-settings-details-report"></a><a name="BKMK_Settings_Details"></a> 전원 설정 세부 정보 보고서  
+###  <a name="a-namebkmksettingsdetailsa-power-settings-details-report"></a><a name="BKMK_Settings_Details"></a> Power Settings Details report  
  **전원 설정 세부 정보** 보고서는 **전원 설정** 보고서에서 선택한 컴퓨터에 대한 추가 정보를 표시합니다. 이 보고서는 **전원 설정** 보고서에서 호출되며 사이트 관리자가 직접 실행하도록 설계되지 않았습니다.  
 
 #### <a name="required-report-parameters"></a>필수 보고서 매개 변수  

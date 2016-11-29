@@ -207,7 +207,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |OSDBitLockerRecoveryPassword<br /><br /> (입력)|임의 복구 암호를 생성하는 대신 **BitLocker 사용** 작업 순서 동작은 지정된 값을 복구 암호로 사용합니다. 값은 유효한 숫자 BitLocker 복구 암호여야 합니다.|  
 |OSDBitLockerStartupKey<br /><br /> (입력)|키 관리 옵션인 **USB의 시작 키만**에 대해 임의 시작 키를 생성하는 대신 **BitLocker 사용** 작업 순서 동작은 TPM(신뢰할 수 있는 플랫폼 모듈)을 시작 키로 사용합니다. 값은 유효한 256비트 Base64로 인코딩된 BitLocker 시작 키여야 합니다.|  
 
-###  <a name="a-namebkmkformatpartitiondiska-format-and-partition-disk-task-sequence-action-variables"></a><a name="BKMK_FormatPartitionDisk"></a> 디스크 포맷 및 파티션 만들기 작업 순서 동작 변수  
+###  <a name="a-namebkmkformatpartitiondiska-format-and-partition-disk-task-sequence-action-variables"></a><a name="BKMK_FormatPartitionDisk"></a> 디스크 포맷 및 분할 작업 순서 동작 변수  
  이 동작에 대한 변수는 디스크 번호 및 파티션 설정의 배열과 같이 실제 디스크의 포맷 및 분할에 대한 정보를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [디스크 포맷 및 파티션 만들기](task-sequence-steps.md#BKMK_FormatandPartitionDisk)를 참조하세요.  
 
 #### <a name="details"></a>세부 정보  

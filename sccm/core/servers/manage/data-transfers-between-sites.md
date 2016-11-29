@@ -28,7 +28,7 @@ ms.openlocfilehash: 1abd28aa4ce4f946f6328f8f7924b5f5a81e640c
 System Center Configuration Manager는 **파일 기반 복제** 및 **데이터베이스 복제**를 사용하여 사이트 간에 여러 유형의 정보를 전송합니다.  이 항목의 주제는 Configuration Manager에서 사이트 간에 데이터를 이동하는 방식과 네트워크를 통해 해당 데이터의 전송을 관리하는 방법을 이해하는 데 도움이 될 수 있습니다.  
 
 
-##  <a name="a-namebkmkfileroutea-file-based-replication"></a><a name="bkmk_fileroute"></a> 파일 기반 복제  
+##  <a name="a-namebkmkfileroutea-file-based-replication"></a><a name="bkmk_fileroute"></a> File-based replication  
  Configuration Manager는 파일 기반 복제를 사용하여 계층 내의 사이트 간에 파일 기반 데이터를 전송합니다. 이러한 데이터로는 자식 사이트의 배포 지점으로 배포하려는 응용 프로그램 및 패키지와 같은 콘텐츠, 처리될 수 있도록 부모 사이트로 전송되는 미처리 검색 데이터 레코드 등이 있습니다.  
 
  사이트 간의 파일 기반 통신에서는 **TCP/IP 포트 445** 를 통해 SMB( **서버 메시지 블록**) 프로토콜을 사용합니다. 네트워크를 통해 전송되는 데이터 양을 제어하는 대역폭 제한 및 펄스 모드, 네트워크로 데이터를 전송하는 시간을 제어하는 일정 등의 구성을 지정할 수 있습니다.  
@@ -72,7 +72,7 @@ System Center Configuration Manager는 **파일 기반 복제** 및 **데이터�
 
 사이트의 발신자를 관리하려면 **관리** 작업 영역에서 **사이트 구성** 노드를 확장하고 **사이트** 노드를 선택한 다음 관리하려는 사이트의 **속성** 을 클릭합니다. 그리고 **발신자** 탭을 클릭하여 발신자 구성을 변경합니다.  
 
-##  <a name="a-namebkmkdbrepa-database-replication"></a><a name="bkmk_dbrep"></a> 데이터베이스 복제  
+##  <a name="a-namebkmkdbrepa-database-replication"></a><a name="bkmk_dbrep"></a> Database replication  
 Configuration Manager 데이터베이스 복제 기능에서는 SQL Server를 사용하여 데이터를 전송하고 사이트 데이터베이스에서 발생한 변경 내용을 계층 구조 내 다른 사이트의 데이터베이스에 저장된 정보와 병합합니다.  
 
 -   이를 통해 모든 사이트가 동일한 정보를 공유할 수 있습니다.  

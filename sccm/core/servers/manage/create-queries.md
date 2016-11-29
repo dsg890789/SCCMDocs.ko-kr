@@ -101,7 +101,7 @@ System Center Configuration Manager에서 쿼리를 만들거나 가져오려면
 
 4.  가져올 쿼리에 대한 정보를 검토한 다음 마법사를 완료합니다. **모니터링** 작업 영역의 **쿼리** 노드에 새 쿼리가 표시됩니다.  
 
-##  <a name="a-namebkmkexamplea-example-wql-queries"></a><a name="BKMK_Example"></a> WQL 쿼리 예제  
+##  <a name="a-namebkmkexamplea-example-wql-queries"></a><a name="BKMK_Example"></a> Example WQL queries  
  이 섹션에서는 계층에서 사용하거나 다른 용도로 수정할 수 있는 WMI 쿼리 예제를 설명합니다. 이러한 쿼리를 사용하려면 **쿼리 문 속성** 대화 상자에서 **쿼리 언어 표시** 를 클릭한 다음 쿼리를 **쿼리 문** 필드로 복사 및 붙여넣기합니다.  
 
 > [!TIP]  

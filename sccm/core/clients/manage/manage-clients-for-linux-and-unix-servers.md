@@ -28,7 +28,7 @@ ms.openlocfilehash: d10b6876058d19d3a9a750a59267913d15793574
 
 System Center Configuration Manager에서 Linux 및 UNIX 서버를 관리하는 경우 서버를 관리할 수 있도록 컬렉션, 유지 관리 기간 및 클라이언트 설정을 구성할 수 있습니다. 또한 Linux 및 UNIX용 Configuration Manager 클라이언트에 사용자 인터페이스가 없어도 클라이언트가 수동으로 클라이언트 정책을 강제로 폴링할 수 있습니다.
 
-##  <a name="a-namebkmkcollectionsforlnua-collections-of-linux-and-unix-servers"></a><a name="BKMK_CollectionsforLnU"></a> Linux 및 UNIX 서버 컬렉션  
+##  <a name="a-namebkmkcollectionsforlnua-collections-of-linux-and-unix-servers"></a><a name="BKMK_CollectionsforLnU"></a> Collections of Linux and UNIX servers  
  컬렉션을 사용하여 다른 클라이언트 형식을 관리하는 것과 같은 방식으로 Linux 및 UNIX 서버 그룹을 관리합니다. 컬렉션은 클라이언트 운영 체제, 하드웨어 구성 또는 사이트 데이터베이스에 저장된 클라이언트의 다른 세부 정보를 식별하는 쿼리 기반 컬렉션 또는 직접 멤버 자격 컬렉션일 수 있습니다. 예를 들어 Linux 및 UNIX 서버를 포함하는컬렉션을 사용하여 다음을 관리할 수 있습니다.  
 
 -   클라이언트 설정  
@@ -47,12 +47,12 @@ System Center Configuration Manager에서 Linux 및 UNIX 서버를 관리하는 
 
  Linux 및 UNIX 서버용 사용자 지정 컬렉션을 빌드할 때 운영 체제 특성에 대해 캡션 특성을 포함하는 멤버 관리 규칙 쿼리를 포함시킵니다. 컬렉션을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 컬렉션을 만드는 방법](../../../core/clients/manage/collections/create-collections.md)을 참조하세요.  
 
-##  <a name="a-namebkmkmaintenancewindowsforlnua-maintenance-windows-for-linux-and-unix-servers"></a><a name="BKMK_MaintenanceWindowsforLnU"></a> Linux 및 UNIX 서버에 대한 유지 관리 기간  
+##  <a name="a-namebkmkmaintenancewindowsforlnua-maintenance-windows-for-linux-and-unix-servers"></a><a name="BKMK_MaintenanceWindowsforLnU"></a> Maintenance windows for Linux and UNIX servers  
  Linux 및 UNIX 서버용 Configuration Manager 클라이언트는 유지 관리 기간 사용을 지원합니다. 이 지원은 Windows 기반 클라이언트 지원에서 변경되지 않았습니다.  
 
  유지 관리 기간을 사용하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 유지 관리 기간을 사용하는 방법](../../../core/clients/manage/collections/use-maintenance-windows.md)을 참조하세요.  
 
-##  <a name="a-namebkmkclientsettingsforlnua-client-settings-for-linux-and-unix-servers"></a><a name="BKMK_ClientSettingsforLnU"></a> Linux 및 UNIX 서버에 대한 클라이언트 설정  
+##  <a name="a-namebkmkclientsettingsforlnua-client-settings-for-linux-and-unix-servers"></a><a name="BKMK_ClientSettingsforLnU"></a> Client settings for Linux and UNIX servers  
  다른 클라이언트에 대한 설정을 구성하는 것과 동일한 방식으로 Linux 및 UNIX 서버에 적용하는 클라이언트 설정을 구성할 수 있습니다.  
 
  기본적으로 **기본 클라이언트 에이전트 설정** 은 Linux 및 UNIX 서버에 적용됩니다. 또한 사용자 지정 클라이언트 설정을 만들고 특정 클라이언트 운영 체제 또는 클라이언트 운영 체제의 조합을 포함하는 컬렉션에 배포할 수 있습니다.  
@@ -63,7 +63,7 @@ System Center Configuration Manager에서 Linux 및 UNIX 서버를 관리하는 
 
  클라이언트 설정을 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../../core/clients/deploy/configure-client-settings.md)을 참조하세요.  
 
-##  <a name="a-namebkmkpolicyforlnua-computer-policy-for-linux-and-unix-servers"></a><a name="BKMK_PolicyforLnU"></a> Linux 및 UNIX 서버에 대한 컴퓨터 정책  
+##  <a name="a-namebkmkpolicyforlnua-computer-policy-for-linux-and-unix-servers"></a><a name="BKMK_PolicyforLnU"></a> Computer policy for Linux and UNIX servers  
  Linux 및 UNIX 서버용 Configuration Manager 클라이언트는 주기적으로 컴퓨터 정책에 대해 해당 사이트를 폴링하여 요청된 구성에 대해 알아보고 배포를 확인합니다.  
 
  또한 컴퓨터 정책에 대해 Linux 또는 UNIX 서버의 클라이언트를 즉시 폴링하도록 강제할 수 있습니다. 즉시 폴링하려면 서버에서 **루트** 자격 증명을 사용하여 **/opt/microsoft/configmgr/bin/ccmexec -rs policy**명령을 실행합니다.  
@@ -73,7 +73,7 @@ System Center Configuration Manager에서 Linux 및 UNIX 서버를 관리하는 
 > [!NOTE]  
 >  Linux 및 UNIX용 Configuration Manager 클라이언트는 사용자 정책을 요청하거나 처리하지 않습니다.  
 
-##  <a name="a-namebkmkmanagelinuxcertsa-how-to-manage-certificates-on-the-client-for-linux-and-unix"></a><a name="BKMK_ManageLinuxCerts"></a> Linux 및 UNIX용 클라이언트에서 인증서를 관리하는 방법  
+##  <a name="a-namebkmkmanagelinuxcertsa-how-to-manage-certificates-on-the-client-for-linux-and-unix"></a><a name="BKMK_ManageLinuxCerts"></a> How to manage certificates on the client for Linux and UNIX  
  Linux 및 UNIX용 클라이언트를 설치한 후 **certutil** 도구를 사용하여 새 PKI 인증서로 클라이언트를 업데이트하고 새 CRL(인증서 해지 목록)을 가져옵니다. Linux 및 UNIX용 클라이언트를 설치할 때 이 도구는 **/opt/microsoft/configmgr/bin/certutil**에 배치됩니다.  
 
  인증서를 관리하려면 각 클라이언트에서 다음 옵션 중 하나를 사용하여 certutil을 실행합니다.  

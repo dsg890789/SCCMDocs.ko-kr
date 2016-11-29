@@ -52,7 +52,7 @@ System Center Configuration Manager에서 Microsoft Intune 커넥터를 사용�
 |MEID(Mobile Equipment Identifier)|Device_ComputerSystem.MEID|  
 |제조업체|해당 없음|  
 |모델|ModelName|  
-|전화 번호<sup>1</sup>|Device_ComputerSystem.PhoneNumber|  
+|전화번호<sup>1</sup>|Device_ComputerSystem.PhoneNumber|  
 |구독자의 통신사|Device_ComputerSystem.SubscriberCarrierNetwork|  
 |셀룰러 기술|Device_ComputerSystem.CellularTechnology|  
 |Wi-Fi MAC|Device_WLAN.WiFiMAC|  
@@ -80,7 +80,7 @@ System Center Configuration Manager에서 Microsoft Intune 커넥터를 사용�
 |MEID(Mobile Equipment Identifier)|해당 없음|  
 |제조업체|Device_Info.Manufacturer|  
 |모델|Device_Info.Model|  
-|전화 번호<sup>1</sup>|Device_ComputerSystem.PhoneNumber|  
+|전화번호<sup>1</sup>|Device_ComputerSystem.PhoneNumber|  
 |구독자의 통신사|Device_ComputerSystem.SubscriberCarrierNetwork|  
 |셀룰러 기술|Device_ComputerSystem.CellularTechnology|  
 |Wi-Fi MAC|Device_WLAN.WiFiMAC|  
@@ -105,7 +105,7 @@ System Center Configuration Manager에서 Microsoft Intune 커넥터를 사용�
 |MEID(Mobile Equipment Identifier)|해당 없음|  
 |제조업체|Device_ComputerSystem.DeviceManufacturer|  
 |모델|Device_ComputerSystem.DeviceModel|  
-|전화 번호<sup>1</sup>|해당 없음|  
+|전화번호<sup>1</sup>|해당 없음|  
 |구독자의 통신사|해당 없음|  
 |셀룰러 기술|해당 없음|  
 |Wi-Fi MAC|해당 없음|  
@@ -130,12 +130,12 @@ System Center Configuration Manager에서 Microsoft Intune 커넥터를 사용�
 |MEID(Mobile Equipment Identifier)|해당 없음|  
 |제조업체|Win32_ComputerSystem.Manufacturer|  
 |모델|Win32_ComputerSystem.Model|  
-|전화 번호<sup>1</sup>|해당 없음|  
+|전화번호<sup>1</sup>|해당 없음|  
 |구독자의 통신사|해당 없음|  
 |셀룰러 기술|해당 없음|  
 |Wi-Fi MAC|Win32_NetworkAdapter.MACAddress|  
 
- <sup>1</sup> 전화 번호는 마지막 4자리를 제외하고 모두 *로 마스킹됩니다.  
+ <sup>1</sup> 전화번호는 마지막 4자리를 제외하고 모두 *로 마스킹됩니다.  
 
  전화 번호를 수집하는 인벤토리의 경우, 장치에 SIM 카드가 삽입되어 있어야 하고 통신 회사에서 해당 SIM에 프로비전한 전화 번호가 있어야 합니다.  
 

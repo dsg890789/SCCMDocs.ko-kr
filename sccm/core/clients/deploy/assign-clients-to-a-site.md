@@ -135,7 +135,7 @@ System Center Configuration Manager 클라이언트를 설치한 후 Configurati
  클라이언트가 사이트 내 관리 지점에서 클라이언트 정책을 다운로드하면 이 클라이언트는 관리되는 클라이언트가 됩니다.  
 
 ##  <a name="a-namebkmkdownloadsitesettingsa-downloading-site-settings"></a><a name="BKMK_DownloadSiteSettings"></a> 사이트 설정 다운로드  
- 사이트 할당이 성공하고 클라이언트에서 관리 지점을 찾으면 사이트 호환성 검사를 위해 Active Directory Domain Services를 사용하는 클라이언트 컴퓨터는 할당된 사이트에 대한 클라이언트 관련 사이트 설정을 다운로드합니다. 이 설정에는 클라이언트 인증서 선택 기준, CRL(인증서 해지 목록) 사용 여부 및 클라이언트 요청 포트 번호 등이 포함됩니다. 클라이언트는 이 설정을 주기적으로 계속 확인합니다.  
+ 사이트 할당이 성공하고 클라이언트에서 관리 지점을 찾으면 사이트 호환성 검사를 위해 Active Directory 도메인 서비스를 사용하는 클라이언트 컴퓨터는 할당된 사이트에 대한 클라이언트 관련 사이트 설정을 다운로드합니다. 이 설정에는 클라이언트 인증서 선택 기준, CRL(인증서 해지 목록) 사용 여부 및 클라이언트 요청 포트 번호 등이 포함됩니다. 클라이언트는 이 설정을 주기적으로 계속 확인합니다.  
 
  클라이언트 컴퓨터는 Active Directory Domain Services에서 사이트 설정을 가져올 수 없는 경우 자체 관리 지점에서 사이트 설정을 다운로드합니다. 또한 클라이언트 컴퓨터는 클라이언트 강제를 통해 설치된 경우 사이트 설정을 가져올 수 있습니다. 또는 CCMSetup.exe 및 클라이언트 설치 속성을 사용하면 사이트 설정을 수동으로 지정할 수 있습니다. 클라이언트 설치 속성에 대한 자세한 내용은 [System Center Configuration Manager의 클라이언트 설치 속성 정보](../../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  
 
