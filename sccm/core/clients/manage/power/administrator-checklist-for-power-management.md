@@ -1,0 +1,88 @@
+---
+title: "전원 관리를 위한 관리자 검사 목록 | System Center Configuration Manager"
+description: "관리자 검사 목록을 사용하면 System Center Configuration Manager에서 전원 관리를 계획하고 구현할 수 있습니다."
+ms.custom: na
+ms.date: 10/06/2016
+ms.prod: configuration-manager
+ms.reviewer: na
+ms.suite: na
+ms.technology:
+- configmgr-other
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.assetid: 94e42cbe-9df8-4228-a04e-0ad7626180ca
+caps.latest.revision: 6
+caps.handback.revision: 0
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+translationtype: Human Translation
+ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
+ms.openlocfilehash: 6d594334040a98c5f661b95b8a0b48a61d391b0c
+
+
+---
+# <a name="administrator-checklist-for-power-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 전원 관리를 위한 관리자 검사 목록
+
+*적용 대상: System Center Configuration Manager(현재 분기)*
+
+이 관리자 검사 목록은 조직에서 System Center Configuration Manager 전원 관리를 사용하기 위한 권장 단계를 제공합니다.  
+
+## <a name="configuring-power-management"></a>전원 관리 구성  
+ 다음 단계를 사용하여 클라이언트 컴퓨터에서 전원 관리 정보를 수집할 수 있도록 계층을 구성할 수 있습니다.  
+
+> [!IMPORTANT]  
+>  클라이언트 컴퓨터에서 전원 데이터를 수집하고 분석할 때까지 계층 내의 컴퓨터에 전원 계획을 적용하지 마세요. 기존 설정을 먼저 검사하지 않고 컴퓨터에 새로운 전원 관리 설정을 적용하면 전력 소비가 늘어날 수 있습니다.  
+
+|작업|세부 정보|  
+|----------|-------------|  
+|Configuration Manager 문서 라이브러리에서 전원 관리 개념을 검토합니다.|[전원 관리 소개](introduction-to-power-management.md)를 참조하세요.|  
+|Configuration Manager 문서 라이브러리에서 전원 관리 필수 조건을 검토합니다.|[전원 관리에 대한 필수 조건](prerequisites-for-power-management.md)을 참조하세요.|  
+|전원 관리에 대한 모범 사례 정보를 검토합니다.|[전원 관리에 대한 모범 사례](best-practices-for-power-management.md)를 참조하세요.|  
+|사용자 환경 내에서 컴퓨터의 전력 소비를 관리하도록 컬렉션을 구성합니다.|**기본 데이터 보고에 대한 컬렉션**, **기본 데이터 보고에 대한 컬렉션**, **전원 관리가 불가능한 컴퓨터 컬렉션**, **전원 계획이 적용될 컴퓨터 컬렉션**, **전원 계획이 적용될 컴퓨터 컬렉션** 및 **Windows Server를 실행 중인 컴퓨터 컬렉션**을 사용하여 계층 구조에 있는 컴퓨터의 전원 설정을 관리할 수 있습니다. 여러 컬렉션을 만들고 각 컬렉션에 서로 다른 전원 계획을 적용할 수 있습니다.|  
+|전원 관리를 사용하도록 설정합니다.|전원 관리 사용을 시작하려면 먼저 사용하도록 설정하고 필요한 클라이언트 설정을 구성해야 합니다. 자세한 내용은 [전원 관리 구성](configuring-power-management.md)을 참조하세요.|  
+|클라이언트 컴퓨터에서 전원 관리 정보를 수집합니다.|전원 관리 데이터는 Configuration Manager 하드웨어 인벤토리를 통해 클라이언트에 의해 보고됩니다. 구성한 하드웨어 인벤토리 일정에 따라 모든 클라이언트 컴퓨터에서 인벤토리를 검색하는 데 시간이 걸릴 수 있습니다.|  
+
+## <a name="monitoring-and-planning-phase"></a>모니터링 및 계획 단계  
+
+|작업|세부 정보|  
+|----------|-------------|  
+|**컴퓨터 활동**보고서를 실행합니다.|**컴퓨터 활동** 보고서에는 지정한 기간 동안 지정된 컬렉션에 대한 모니터, 컴퓨터 및 사용자 활동을 보여 주는 그래프가 표시됩니다. 이 보고서는 지정된 컬렉션에서 컴퓨터의 절전 모드 및 절전 모드 해제 기능을 표시하는 **컴퓨터 활동 세부 정보** 보고서와 연결됩니다. 자세한 내용은 [전원 관리를 모니터링하고 계획하는 방법](monitor-and-plan-for-power-management.md)을 참조하세요.|  
+|**에너지 소비** 또는 **일별 에너지 소비**보고서를 실행합니다.|**에너지 소비** 및 **일별 에너지 소비** 보고서는 지정된 기간 동안 지정된 컬렉션에 대해 월별 총 전력 소비량을 kWh(시간당 킬로와트) 단위로 표시합니다. 자세한 내용은 [전원 관리를 모니터링하고 계획하는 방법](monitor-and-plan-for-power-management.md)을 참조하세요.|  
+|**환경 효과** 또는  **일별 환경 효과**보고서를 실행합니다.|**환경 효과** 및 **일별 환경 효과** 보고서는 지정된 기간 동안 컴퓨터의 지정된 컬렉션에서 절약한 CO2(이산화탄소) 방출량을 나타내는 그래프를 표시합니다. 자세한 내용은 [전원 관리를 모니터링하고 계획하는 방법](monitor-and-plan-for-power-management.md)을 참조하세요.|  
+|**에너지 비용** 또는 **일별 에너지 비용**보고서를 실행합니다.|**에너지 비용** 및 **일별 에너지 비용** 보고서는 지정된 기간 동안 총 전력 소비 비용을 표시합니다. 자세한 내용은 [전원 관리를 모니터링하고 계획하는 방법](monitor-and-plan-for-power-management.md)을 참조하세요.|  
+|**전원 기능**보고서를 실행합니다.|**전원 기능** 보고서에는 지정된 컬렉션에 포함된 컴퓨터의 전원 관리 기능이 표시됩니다. 자세한 내용은 [전원 관리를 모니터링하고 계획하는 방법](monitor-and-plan-for-power-management.md)을 참조하세요.|  
+|**전원 설정**보고서를 실행합니다.|**전원 설정** 보고서는 지정된 컬렉션의 컴퓨터에서 사용하는 현재 전원 설정의 집계 목록을 표시합니다. 자세한 내용은 [전원 관리를 모니터링하고 계획하는 방법](monitor-and-plan-for-power-management.md)을 참조하세요.|  
+|컴퓨터에서 필요한 컬렉션은 전원 관리에서 제외합니다.|[전원 관리 구성](configuring-power-management.md)을 참조하세요.|  
+
+> [!IMPORTANT]  
+>  모니터링 및 계획 단계에서 생성된 전원 관리 보고서의 정보는 저장해야 합니다. 이 데이터를 적용 및 준수 단계에서 생성된 전원 관리 정보와 비교하면 계층의 컴퓨터에 전원 계획을 적용한 결과로 나타나는 전원 사용, 전원 비용 및 환경 효과 절감을 평가할 수 있습니다.  
+
+## <a name="enforcement-phase"></a>적용 단계  
+
+|작업|세부 정보|  
+|----------|-------------|  
+|조직의 컴퓨터의 컬렉션에 대해 기존 전원 계획을 선택하거나 새 전원 계획을 만듭니다.|[전원 계획을 만들고 적용하는 방법](create-and-apply-power-plans.md)을 참조하세요.|  
+|컴퓨터에 이러한 전원 계획을 적용합니다.|[전원 계획을 만들고 적용하는 방법](create-and-apply-power-plans.md)을 참조하세요.|  
+
+## <a name="compliance-phase"></a>준수 단계  
+
+|작업|세부 정보|  
+|----------|-------------|  
+|**컴퓨터 활동**보고서를 실행합니다.|**컴퓨터 활동** 보고서에는 지정한 기간 동안 지정된 컬렉션에 대한 모니터, 컴퓨터 및 사용자 활동을 보여 주는 그래프가 표시됩니다. 이 보고서는 지정된 컬렉션에 있는 컴퓨터의 절전 모드 및 절전 모드 해제 기능을 표시하는 **전원 컴퓨터 활동 세부 정보** 보고서에 연결됩니다. 자세한 내용은 [전원 관리를 모니터링하고 계획하는 방법](monitor-and-plan-for-power-management.md)을 참조하세요.|  
+|**에너지 소비** 또는 **일별 에너지 소비**보고서를 실행합니다.|**에너지 소비** 및 **일별 에너지 소비** 보고서는 지정된 기간 동안 지정된 컬렉션에 대해 월별 총 전력 소비량을 kWh(시간당 킬로와트) 단위로 표시합니다. 자세한 내용은 [전원 관리를 모니터링하고 계획하는 방법](monitor-and-plan-for-power-management.md)을 참조하세요.|  
+|**환경 효과** 또는 **일별 환경 효과**보고서를 실행합니다.|**환경 효과** 및 **일별 환경 효과** 보고서는 지정된 기간 동안 컴퓨터의 지정된 컬렉션에서 절약한 CO2(이산화탄소) 방출량을 나타내는 그래프를 표시합니다. 자세한 내용은 [전원 관리를 모니터링하고 계획하는 방법](monitor-and-plan-for-power-management.md)을 참조하세요.|  
+|**에너지 비용** 또는 **일별 에너지 비용**보고서를 실행합니다.|**에너지 비용** 및 **일별 에너지 비용** 보고서는 지정된 기간 동안 총 전력 소비 비용을 표시합니다. 자세한 내용은 [전원 관리를 모니터링하고 계획하는 방법](monitor-and-plan-for-power-management.md)을 참조하세요.|  
+
+## <a name="troubleshooting"></a>문제 해결  
+
+|작업|세부 정보|  
+|----------|-------------|  
+|계층의 컴퓨터가 절전 모드 또는 최대 절전 모드로 전환되지 않은 경우 **절전 모드 불가 보고서** 보고서를 실행하여 가능한 원인을 표시합니다.|**절전 모드 불가 보고서** 에는 컴퓨터가 절전 모드 또는 최대 절전 모드로 전환하지 못한 일반적인 이유 목록과 지정한 기간 동안 각 원인의 영향을 받은 컴퓨터의 수가 표시됩니다. 자세한 내용은 [전원 관리를 모니터링하고 계획하는 방법](monitor-and-plan-for-power-management.md)을 참조하세요.|  
+|여러 개의 전원 계획을 한 대의 컴퓨터에 적용하면 제한이 가장 적은 전원 계획이 적용됩니다. 전원 계획이 여러 개인 컴퓨터를 보려면 **전원 계획이 여러 개인 컴퓨터** 보고서를 실행합니다.|[전원 관리를 모니터링하고 계획하는 방법](monitor-and-plan-for-power-management.md)에서 **여러 전원 계획을 사용하는 컴퓨터**를 참조하세요.|  
+
+
+
+<!--HONumber=Nov16_HO1-->
+
+

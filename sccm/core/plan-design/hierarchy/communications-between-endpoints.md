@@ -47,7 +47,7 @@ ms.openlocfilehash: bf485456b4d8f0bffe956006b2a8b3dd8c17a5db
 
 
 ##  <a name="a-nameplanningclienttositesystema-communications-from-clients-to-site-systems-and-services"></a><a name="Planning_Client_to_Site_System"></a> 클라이언트와 사이트 시스템 및 서비스 간의 통신  
-클라이언트는 사이트 시스템 역할, Active Directory Domain Services 및 온라인 서비스에 대한 통신을 시작합니다. 이러한 통신을 설정하려면 방화벽에서 클라이언트와 통신 끝점 간의 네트워크 트래픽을 허용해야 합니다. 끝점은 다음과 같습니다.  
+클라이언트는 사이트 시스템 역할, Active Directory 도메인 서비스 및 온라인 서비스에 대한 통신을 시작합니다. 이러한 통신을 설정하려면 방화벽에서 클라이언트와 통신 끝점 간의 네트워크 트래픽을 허용해야 합니다. 끝점은 다음과 같습니다.  
 
 -   **응용 프로그램 카탈로그 웹 사이트 지점** - (HTTP 및 HTTPS 통신 지원)  
 

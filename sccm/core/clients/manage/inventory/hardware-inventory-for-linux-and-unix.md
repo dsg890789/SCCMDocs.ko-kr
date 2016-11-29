@@ -106,7 +106,7 @@ Linux 및 UNIX용 System Center Configuration Manager 클라이언트는 하드�
 
  OMI Source v.1.0.6, 및 OMI 시작 가이드 모두 [Open Group](http://go.microsoft.com/fwlink/p/?LinkId=262317) 웹 사이트에서 다운로드할 수 있습니다. 이 다운로드는 OpenGroup.org 웹 사이트의 **OMI(개방형 관리 인프라)** 웹 페이지에 있는 [문서](http://go.microsoft.com/fwlink/p/?LinkId=286805)탭에 있습니다.  
 
-###  <a name="a-namebkmkaddprovidertolinuxa-configure-each-computer-that-runs-linux-or-unix-with-the-custom-hardware-inventory-provider"></a><a name="BKMK_AddProvidertoLinux"></a> 사용자 지정 하드웨어 인벤토리 공급자를 사용하여 Linux 또는 UNIX를 실행하는 각 컴퓨터 구성:  
+###  <a name="a-namebkmkaddprovidertolinuxa-configure-each-computer-that-runs-linux-or-unix-with-the-custom-hardware-inventory-provider"></a><a name="BKMK_AddProvidertoLinux"></a> 사용자 지정 하드웨어 인벤토리 공급자를 사용하여 Linux 또는 UNIX를 실행하는 각 컴퓨터 구성  
  사용자 지정 인벤토리 공급자를 만든 후에는 수집할 인벤토리가 있는 각 컴퓨터에 공급자 라이브러리 파일을 복사하고 등록해야 합니다.  
 
 1.  공급자 라이브러리를 인벤토리를 수집하려는 각 Linux 및 UNIX 컴퓨터에 복사합니다. 공급자 라이브러리의 이름은 **XYZ_MyProvider.so**와 유사합니다.  
@@ -120,7 +120,7 @@ Linux 및 UNIX용 System Center Configuration Manager 클라이언트는 하드�
 > [!TIP]  
 >  소프트웨어 배포를 사용하여 사용자 지정 공급자를 배포하고 각 Linux 및 UNIX 클라이언트 컴퓨터에 사용자 지정 공급자를 등록합니다.  
 
-###  <a name="a-namebkmkaddlinuxprovidertocma-enable-the-new-inventory-class-in-configuration-manager"></a><a name="BKMK_AddLinuxProvidertoCM"></a> Configuration Manager에서 새 인벤토리 클래스 사용:  
+###  <a name="a-namebkmkaddlinuxprovidertocma-enable-the-new-inventory-class-in-configuration-manager"></a><a name="BKMK_AddLinuxProvidertoCM"></a> Configuration Manager에서 새 인벤토리 클래스 사용  
  Linux 및 UNIX 컴퓨터에서 새 공급자가 보고하는 인벤토리에 대해 Configuration Manager로 보고하려면 먼저 사용자 지정 공급자의 스키마를 정의하는 MOF(Managed Object Format) 파일을 가져와야 합니다.  
 
  사용자 지정 MOF 파일을 Configuration Manager로 가져오려면 [System Center Configuration Manager에서 하드웨어 인벤토리를 구성하는 방법](../../../../core/clients/manage/inventory/configure-hardware-inventory.md)을 참조하세요.  

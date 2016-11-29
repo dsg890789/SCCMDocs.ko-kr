@@ -32,7 +32,7 @@ System Center Configuration Manager 메일, Wi-Fi 또는 VPN 프로필을 계층
 
 -   [보고서를 사용하여 호환성 결과를 보는 방법](#BKMK_Reports)  
 
-##  <a name="a-namebkmkconsolea-how-to-view-compliance-results-in-the-configuration-manager-console"></a><a name="BKMK_console"></a> Configuration Manager 콘솔에서 준수 결과를 보는 방법  
+##  <a name="a-namebkmkconsolea-how-to-view-compliance-results-in-the-configuration-manager-console"></a><a name="BKMK_console"></a> Configuration Manager 콘솔에서 호환성 결과를 보는 방법  
  다음 절차를 사용하여 System Center Configuration Manager 콘솔에서 배포된 프로필의 준수에 대한 자세한 내용을 봅니다.  
 
 #### <a name="to-view-compliance-results-in-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 호환성 결과를 보려면  
@@ -60,7 +60,7 @@ System Center Configuration Manager 메일, Wi-Fi 또는 VPN 프로필을 계층
 
 5.  **배포 상태** 페이지에서 배포된 프로필의 준수에 대한 자세한 정보를 검토할 수 있습니다. 이 정보를 나중에 빠르게 다시 찾을 수 있도록 임시 노드가 **배포** 노드 아래에 만들어집니다.  
 
-##  <a name="a-namebkmkreportsa-how-to-view-compliance-results-by-using-reports"></a><a name="BKMK_Reports"></a> 보고서를 사용하여 준수 결과를 보는 방법  
+##  <a name="a-namebkmkreportsa-how-to-view-compliance-results-by-using-reports"></a><a name="BKMK_Reports"></a> 보고서를 사용하여 호환성 결과를 보는 방법  
  준수 설정에는 System Center Configuration Manager의 프로필을 비롯하여 프로필 관련 정보를 모니터링할 수 있는 기본 제공 보고서도 많이 포함되어 있습니다. 이러한 보고서에는 **호환 및 설정 관리**라는 보고서 범주가 있습니다.  
 
 > [!IMPORTANT]  

@@ -65,7 +65,7 @@ ms.openlocfilehash: 0f3b68fb17920b0abacc1428c8763ec8c06e6b22
 
 이 사이트 시스템 역할은 추가 사용에 영향을 줄 수 있는 작업의 온라인 및 오프라인 모드를 모두 지원합니다. 자세한 내용은 [System Center Configuration Manager의 서비스 연결 지점 정보](../../../core/servers/deploy/configure/about-the-service-connection-point.md)를 참조하세요.  
 
-##  <a name="a-namebkmkusagea-usage-data-collection"></a><a name="bkmk_usage"></a> 사용 현황 데이터 컬렉션  
+##  <a name="a-namebkmkusagea-usage-data-collection"></a><a name="bkmk_usage"></a> 사용 현황 데이터 수집  
  System Center Configuration Manager는 사이트 및 인프라에 대한 사용 현황 데이터를 수집합니다. 이 정보는 서비스 연결 지점(새 사이트 시스템 역할)을 통해 컴파일되어 Microsoft 클라우드 서비스에 제출되며, 사용하는 Configuration Manager의 버전에 적용되는 배포의 업데이트를 다운로드하기 위해 Configuration Manager를 사용하도록 설정하는 데 필요합니다. 서비스 연결 지점을 구성할 때 수집되는 데이터의 액세스 수준과 해당 데이터를 자동으로 제출할지(온라인 모드) 아니면 수동으로 제출할지(오프라인 모드) 여부를 구성할 수 있습니다.  
 
  자세한 내용은 [사용 데이터 수준 및 설정](../../../core/servers/deploy/install/setup-reference.md#bkmk_usage)을 참조하세요.  

@@ -30,7 +30,7 @@ ms.openlocfilehash: 96787d5c4ad92d86ad9172fcfacb92fe4138c7ba
 
  필수 조건 검사기를 사용하는 방법에 대한 자세한 내용은 [필수 조건 검사기](prerequisite-checker.md)를 참조하세요.  
 
-##  <a name="a-namebkmksecuritya-prerequisite-checks-for-security-rights"></a><a name="BKMK_Security"></a> 보안 권한의 필수 조건 검사  
+##  <a name="a-namebkmksecuritya-prerequisite-checks-for-security-rights"></a><a name="BKMK_Security"></a> 보안 권한의 필수 구성 요소 확인  
  다음은 필수 조건 검사에서 보안 권한에 대해 수행하는 필수 조건 검사 목록입니다.  
 
  **중앙 관리 사이트에 대한 관리자 권한** - Configuration Manager 설치 프로그램을 실행하는 사용자 계정에 중앙 관리 사이트 컴퓨터에 대한 로컬 **관리자** 권한이 있는지 확인합니다.  
@@ -116,7 +116,7 @@ ms.openlocfilehash: 96787d5c4ad92d86ad9172fcfacb92fe4138c7ba
 
     -   SQL Server  
 
-##  <a name="a-namebkmkdependenciesa-prerequisite-checks-for-configuration-manager-dependencies"></a><a name="BKMK_Dependencies"></a> Configuration Manager 종속성의 필수 조건 검사  
+##  <a name="a-namebkmkdependenciesa-prerequisite-checks-for-configuration-manager-dependencies"></a><a name="BKMK_Dependencies"></a> Configuration Manager 종속성의 필수 구성 요소 확인  
  다음은 필수 조건 검사기가 Configuration Manager 종속성에 대해 수행하는 필수 조건 검사 목록입니다.  
 
 **대상 기본 사이트에 대한 활성 마이그레이션 매핑**  
@@ -626,7 +626,7 @@ ms.openlocfilehash: 96787d5c4ad92d86ad9172fcfacb92fe4138c7ba
     -   중앙 관리 사이트    
     -   기본 사이트  
 
-##  <a name="a-namebkmkrequirementsa-prerequisite-checks-for-system-requirements"></a><a name="BKMK_Requirements"></a> 시스템 요구 사항의 필수 조건 검사  
+##  <a name="a-namebkmkrequirementsa-prerequisite-checks-for-system-requirements"></a><a name="BKMK_Requirements"></a> 시스템 요구 사항의 필수 구성 요소 확인  
  다음은 필수 조건 검사가 시스템 요구 사항에 대해 수행하는 필수 조건 검사 목록입니다.  
 
 **Active Directory 도메인 기능 수준 검사** - Active Directory 도메인 기능 수준이 Windows Server 2008 R2 이상인지 확인합니다.  
