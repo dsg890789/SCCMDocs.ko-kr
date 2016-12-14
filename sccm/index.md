@@ -6,7 +6,7 @@ layout: HubPage
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 10/06/2016
+ms.date: 11/18/2016
 ms.topic: hubpage
 ms.prod: configuration-manager
 ms.technology:
@@ -15,8 +15,8 @@ ms.suite: ems
 ms.assetid: a89ecd55-fe24-4f40-86c4-8a91dd683a1c
 toc_rel: /sccm/toc.json
 translationtype: Human Translation
-ms.sourcegitcommit: 06506ef41638c2c518b02b3b13ab3453fe5de5af
-ms.openlocfilehash: 2ed99aa90915903056ee43074e0d19a1e018b9a4
+ms.sourcegitcommit: a10fb140adfc1109a49760d601b5fca3d93d4b39
+ms.openlocfilehash: 690b516b6be4380b566649adacfafcc8f920373c
 
 ---
 # <a name="system-center-configuration-manager-documentation"></a>System Center Configuration Manager 문서
@@ -35,7 +35,7 @@ ms.openlocfilehash: 2ed99aa90915903056ee43074e0d19a1e018b9a4
         <ul class="column column-half">
           <li><a href="/sccm/core/understand/introduction">Configuration Manager 소개</a></li>
           <li><a href="/sccm/core/get-started/evaluate-with-lab-environment">고유한 랩 환경을 구축하여 System Center Configuration Manager 평가</a></li>
-          <li><a href="/sccm/core/plan-design/changes/whats-new-in-version-1606">System Center Configuration Manager 버전 1606의 새로운 기능</a></li>
+          <li><a href="/sccm/core/plan-design/changes/whats-new-in-version-1610">System Center Configuration Manager 버전 1610의 새로운 기능</a></li>
         </ul>
         <ul class="column column-half">
           <li><a href="/sccm/core/plan-design/changes/features-and-capabilities">System Center Configuration Manager의 기능 및 특성</a></li>
@@ -288,6 +288,43 @@ ms.openlocfilehash: 2ed99aa90915903056ee43074e0d19a1e018b9a4
               </ul>
             </section>
           </li>
+
+
+<li class="journey-step">
+            <header class="journey-step-header row">
+              <a href="/sccm/develop/core/misc/system-center-configuration-manager-sdk">
+                <div class="title column-third">
+                  <span class="step-number">8</span>
+                  <p>Configuration Manager 개발 및 자동화</p>
+                </div>
+                <p class="description column-two-thirds">Configuration Manager를 자동화하고 확장하는 방법을 알아봅니다.</p>
+              </a>
+            </header>
+            <section class="journey-step-elements content">
+              <ul class="row">
+                <li class="column-third">
+                  <a href="/sccm/develop/core/understand/configuration-manager-programming-fundamentals">
+                    <h3>Configuration Manager 프로그래밍 기본 사항</h3>
+                    <p>Configuration Manager를 프로그래밍하는 데 도움이 되는 기본적인 프로그래밍 기술을 알아봅니다.</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="/sccm/develop/reference/configuration-manager-reference">
+                    <h3>Configuration Manager 참조</h3>
+                    <p>관리되는 SMS 공급자 라이브러리, Configuration Manager 클래스 스키마, 확장된 WQL(WMI Query Language), 명명된 값 및 한정자, Configuration Manager 콘솔 라이브러리에 대해 자세히 설명합니다.</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="https://docs.microsoft.com/powershell/sccm/configurationmanager/vlatest/configurationmanager">
+                    <h3>Configuration Manager cmdlet</h3>
+                    <p>Configuration Manager cmdlet에 대한 온라인 도움말 파일로, 각 cmdlet에 대한 자세한 정보와 cmdlet 사용 방법을 보여 주는 예제를 제공합니다.</p>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </li>
+
+
       </section>
     </div>
     <div class="section-border">
@@ -317,6 +354,6 @@ ms.openlocfilehash: 2ed99aa90915903056ee43074e0d19a1e018b9a4
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
