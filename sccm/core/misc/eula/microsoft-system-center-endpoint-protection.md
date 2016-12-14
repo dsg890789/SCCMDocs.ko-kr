@@ -16,8 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: noindex,nofollow
+
 ---
-# MICROSOFT SYSTEM CENTER CONFIGURATION MANAGER
+# MICROSOFT SYSTEM CENTER ENDPOINT PROTECTION
+
 **참고:** 본 소프트웨어의 사용에는 귀하\(또는 귀하의 회사\)가 Microsoft 서버 소프트웨어를 구입하거나 Microsoft의 온라인 서비스를 이용하는 라이선스 계약의 조건이 적용됩니다. 예를 들어 다음과 같은 경우가 해당됩니다.  
   
 -   볼륨 라이선스 고객 또는 서비스 공급자의 경우 본 소프트웨어 사용 시 볼륨 라이선스 계약 또는 서비스 공급자 라이선스 계약이 적용됩니다.  
