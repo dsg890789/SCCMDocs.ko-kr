@@ -1,5 +1,5 @@
 ---
-title: "사이트 시스템 역할 계획 | System Center Configuration Manager"
+title: "사이트 시스템 역할 계획 | Microsoft 문서"
 description: "System Center Configuration Manager 계층 구조를 계획할 때 사이트 시스템 서버 및 사이트 시스템 역할을 고려하세요."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 5f8d051a92cd74938f1a5235b37f02ebe0ff542c
+ms.sourcegitcommit: 2b00cfcec0959716d69a1605018f33d30287fee9
+ms.openlocfilehash: a2e57aac01fff3c28b4acfcf58bcd786bd3e62c4
 
 
 ---
@@ -72,6 +72,8 @@ Configuration Manager 사이트마다 다른 사이트 시스템 역할을 지�
 -   **인증서 등록 지점** - SCEP(단순 인증서 등록 프로토콜)를 사용하는 장치 인증서 요청을 관리하기 위해 네트워크 장치 등록 서비스를 실행하는 서버와 통신하는 사이트 시스템 역할입니다.  이 역할은 기본 사이트와 중앙 관리 사이트에서만 지원됩니다.   단일 인증서 등록 지점에서 전체 계층에 기능을 제공할 수 있지만 인증서 요청의 부하를 분산하기 위해 한 사이트에 그리고 동일한 계층의 여러 사이트에 이 역할의 여러 인스턴스를 설치할 수 있습니다. 여러 인스턴스가 한 계층에 있는 경우 클라이언트가 인증서 등록 지점 중 하나에 임의로 할당됩니다.  
 
      각 인증서 등록 지점을 사용하려면 네트워크 장치 등록 서비스의 개별 인스턴스에 액세스할 수 있어야 합니다. 두 개 이상의 인증서 등록 지점에서 동일한 네트워크 장치 등록 서비스를 사용하도록 구성할 수는 없습니다. 그 밖에도 네트워크 장치 등록 서비스를 실행하는 동일한 서버에 인증서 등록 지점을 설치하지 않아야 합니다.  
+
+- **클라우드 관리 게이트웨이 연결점** - [클라우드 관리 게이트웨이](/sccm/core/clients/manage/setup-cloud-management-gateway)와 통신하기 위한 사이트 시스템 역할입니다. 
 
 -   **배포 지점** - 클라이언트가 다운로드하는 원본 파일(예: 응용 프로그램 콘텐츠, 소프트웨어 패키지, 소프트웨어 업데이트, 운영 체제 이미지 및 부팅 이미지)을 포함하는 사이트 시스템 역할입니다. 기본적으로 이 역할은 사이트가 설치될 때 새로운 기본 및 보조 사이트의 사이트 서버 컴퓨터에 설치되지만 중앙 관리 사이트에서는 지원되지 않습니다.  지원되는 사이트에 그리고 동일한 계층 내 여러 사이트에 이 역할의 인스턴스를 여러 개 설치할 수 있습니다.  자세한 내용은 [System Center Configuration Manager에서 콘텐츠 관리의 기본 개념](../../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md) 및 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
 
@@ -150,6 +152,6 @@ Configuration Manager 사이트마다 다른 사이트 시스템 역할을 지�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

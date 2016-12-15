@@ -1,8 +1,8 @@
 ---
-title: "새로운 기능 하이브리드 MDM | Microsoft Intune | System Center Configuration Manager"
+title: "새로운 하이브리드 MDM 기능 | Microsoft 문서"
 description: "System Center Configuration Manager 및 Intune을 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 장치 관리 기능에 대해 알아봅니다."
 ms.custom: na
-ms.date: 10/25/2016
+ms.date: 11/18/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f13b38fcc4e7c55f05dbf6a7d8f516643939ba92
-ms.openlocfilehash: 3525fba1b75196bddebc89e49f40cbfd3c75d9d0
+ms.sourcegitcommit: 776c606f8e9ebfd7348d9d3a8f1e038d47bdf7a1
+ms.openlocfilehash: 891638f920a5bf807b17c7f55b9153be45fc3b93
 
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 장치 관리의 새로운 기능
@@ -30,9 +30,95 @@ ms.openlocfilehash: 3525fba1b75196bddebc89e49f40cbfd3c75d9d0
 
  이 문서의 각 섹션에서는 세 가지 범주로 하이브리드 기능이 나열되어 있습니다. 각 범주의 기능과 다양한 Configuration Manager 버전 간의 호환성을 확인하려면 다음 지침을 따르세요.  
 
-|기능 범주|
-|-|  
-|**Microsoft Intune의 새로운 기능** - 일반적으로 이 범주 아래에 나열된 모든 기능은 Intune 서비스만 필요하고 Configuration Manager의 추가 기능이 필요하지 않으므로 System Center 2012 R2 Configuration Manager 릴리스를 비롯한 모든 Configuration Manager 릴리스에서 사용할 수 있어야 합니다.<br /><br /> **Configuration Manager Technical Preview의 새로운 기능** - 이 범주 아래에 나열된 모든 기능은 지정된 기술 미리 보기 릴리스에서만 사용할 수 있습니다. 이러한 기능을 시험해보려면 기능 설명에 지정된 기술 미리 보기 버전을 설치해야 합니다. 자세한 내용은 [System Center Configuration Manager Technical Preview](../../core/get-started/technical-preview.md)를 참조하세요.<br /><br /> **Configuration Manager(현재 분기)의 새로운 기능** - 이 범주 아래에 나열된 모든 기능은 지정된 버전의 Configuration Manager(현재 분기)(예: 버전 1511 또는 1602)에서만 사용할 수 있습니다. 하이브리드 배포에 이전 버전의 Configuration Manager를 사용하는 경우 기능 설명에 지정된 Configuration Manager(현재 분기) 버전으로 업그레이드해야 합니다. 자세한 내용은 [System Center Configuration Manager 업그레이드](../../core/servers/deploy/install/upgrade-to-configuration-manager.md)를 참조하세요.|  
+|기능 범주|설명|
+|-|-|
+|**Microsoft Intune의 새로운 기능** | 일반적으로 이 범주 아래에 나열된 모든 기능은 Intune 서비스만 필요하고 Configuration Manager의 추가 기능이 필요하지 않으므로 System Center 2012 R2 Configuration Manager 릴리스를 비롯한 모든 Configuration Manager 릴리스에서 사용할 수 있어야 합니다.|
+|**Configuration Manager Technical Preview의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 Technical Preview 릴리스에서만 사용할 수 있습니다. 이러한 기능을 시험해보려면 기능 설명에 지정된 기술 미리 보기 버전을 설치해야 합니다. 자세한 내용은 [System Center Configuration Manager Technical Preview](../../core/get-started/technical-preview.md)를 참조하세요.|
+|**Configuration Manager(현재 분기)의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 버전의 Configuration Manager(현재 분기)(예: 버전 1511 또는 1602)에서만 사용할 수 있습니다. 하이브리드 배포에 이전 버전의 Configuration Manager를 사용하는 경우 기능 설명에 지정된 Configuration Manager(현재 분기) 버전으로 업그레이드해야 합니다. 자세한 내용은 [System Center Configuration Manager 업그레이드](../../core/servers/deploy/install/upgrade-to-configuration-manager.md)를 참조하세요.|
+
+## <a name="new-hybrid-features-in-december-2016"></a>2016년 12월의 새로운 하이브리드 기능
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+2016년 12월에 도입될 예정인 다음 Intune 기능은 하이브리드 배포에서 사용할 수 있습니다.
+
+- **등록 시의 MFA(Multi-Factor Authentication) 과정이 Azure Portal로 이전됨**
+
+  이전에는 Intune 등록용으로 MFA를 설정하려면 Intune 콘솔 또는 Configuration Manager 콘솔로 이동해야 했습니다. 이제는 이 업데이트된 기능을 통해 Intune 자격 증명을 사용하여 [Microsoft Azure Portal](https://manage.windowsazure.com)에 로그인한 다음 Azure AD를 통해 MFA 설정을 구성할 수 있습니다. 자세한 내용은 [Microsoft Intune용 Multi-Factor Authentication]을 참조하세요(https://aka.ms/mfa_ad).
+
+- **이제 중국에서 Android용 회사 포털 앱 사용 가능**
+
+  이제 중국에서 Android용 회사 포털 앱을 사용할 수 있습니다. 중국에는 Google Play 스토어를 사용할 수 없으므로 Android 장치 사용자는 중국 앱 마켓플레이스에서 앱을 다운로드해야 합니다. 다음 스토어에서 Android용 회사 포털 앱을 다운로드할 수 있습니다.
+
+  - [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
+  - [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
+  - [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
+  - [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
+  - [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
+
+  Android 용 회사 포털 앱은 Google Play 서비스를 사용하여 Microsoft Intune 서비스와 통신합니다. Google Play 서비스는 중국에서 아직 제공되지 않으므로 다음 작업을 수행하는 경우 완료하는 데 최대 8시간이 걸릴 수 있습니다.
+
+  | Configuration Manager 관리 콘솔 | Android용 Intune 회사 포털 앱 | Intune 회사 포털 웹 사이트 |
+  |----|----|----|      
+  | 사용 중지/초기화(모든 데이터 제거)   | 원격 장치 제거 | 장치 제거(로컬 및 원격) |
+  | 사용 중지/초기화(회사 데이터 제거)   | 장치 재설정 | 장치 재설정|
+  | 신규 또는 업데이트된 앱 배포 | 사용 가능한 LOB(기간 업무) 앱 설치 | 장치 암호 재설정|
+  | 원격 잠금 | | |
+  | 암호 재설정 | | |        
+
+
+## <a name="new-hybrid-features-in-november-2016"></a>2016년 11월의 새로운 하이브리드 기능
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+2016년 11월에 도입된 다음 Intune 기능은 하이브리드 배포에서 사용할 수 있습니다.
+
+- **Windows 10 장치에 사용할 수 있는 새로운 Microsoft Intune 회사 포털**
+
+  Microsoft에서 새로운 [Windows 10 장치용 회사 포털 앱](https://www.microsoft.com/store/apps/9wzdncrfj3pz)을 출시했습니다. 새로운 Windows 10 유니버설 형식을 활용하는 이 앱은 모든 Windows 10 장치(PC 및 모바일)에서 동일한 업데이트된 사용자 환경을 제공합니다. 이전 회사 포털 앱에서 제공되었던 것과 동일한 기능도 모두 계속 사용할 수 있습니다.
+
+  새로운 앱은 Windows 10 장치에서 SSO(Single Sign-On) 및 인증서 기반 인증과 같은 플랫폼 기능을 활용합니다. 이 앱은 Windows 스토어에서 설치되는 기존 Windows 8.1 회사 포털 및 Windows Phone 8.1 회사 포털의 업그레이드로 제공됩니다. 추가 세부 정보를 확인하려면 [Intune 지원 팀 블로그](http://aka.ms/intunecp_universalapp)를 방문하세요.
+
+  새로운 회사 포털 앱에는 Configuration Manager 콘솔에 **사용 가능**으로 표시되는 비즈니스용 Windows 스토어 응용 프로그램도 표시됩니다.
+
+
+### <a name="new-in-configuration-manager-current-branch"></a>Configuration Manager(현재 분기)의 새로운 기능
+
+이전에 Configuration Manager Technical Preview 릴리스에서 사용할 수 있었던 다음 기능을 이제 Intune과 Configuration Manager(현재 분기) 버전 1610을 포함하는 하이브리드 배포에서 사용할 수 있습니다.
+
+* [구성 항목에 대한 추가 설정 및 향상된 환경](/sccm/core/plan-design/changes/whats-new-in-version-1610?branch=sccm-1610-release#new-compliance-settings-for-configuration-items)
+* [DEP 프로필에 대한 추가 설정](#new-in-configuration-manager-technical-preview-1609)
+* [비즈니스용 Windows 스토어의 유료 앱](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+* [Windows 10 VPN 프로필에 대한 네이티브 연결 형식](#new-in-configuration-manager-technical-preview-1609)
+* [Intune 준수 차트](/sccm/protect/deploy-use/create-compliance-policy#monitor-the-compliance-policy)
+* [콘솔의 동기화 정책 요청](/sccm/mdm/deploy-use/sync-intune-device)
+* [Windows Defender 구성 설정](/sccm/compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client#windows-defender)
+
+Configuration Manager(현재 분기)의 버전 1610에는 다음과 같은 추가 하이브리드 기능도 포함되어 있습니다.
+
+- **등록된 장치 수 증가**
+
+  이제 사용자가 최대 15개의 장치를 등록하도록 설정할 수 있습니다. 이전에는 사용자당 장치가 5대로 제한되었습니다.
+
+
+- **추가 보안 지원**
+
+  이제는 전체 관리자 권한 외에 다음과 같은 기본 제공 보안 역할도 회사가 소유한 모든 장치 노드의 항목(미리 선언된 장치, iOS 등록 프로필, Windows 등록 프로필 포함)에 대한 모든 권한을 소유합니다.
+
+    - 자산 관리자
+    - 회사 리소스 액세스 관리자
+
+  읽기 전용 분석가 역할에는 이러한 Configuration Manager 콘솔 영역에 대한 읽기 전용 권한이 계속 부여됩니다.
+
+- **Windows Information Protection 앱에서 VPN 액세스 자동 트리거**
+
+  Windows Information Protection 주 도메인을 Windows 10 VPN 프로필에 추가할 수 있습니다. 이렇게 하면 모든 관련 앱이 장치에서 실행될 때 VPN 연결을 자동으로 트리거합니다. 이 옵션은 네이티브 연결 유형을 선택할 때만 사용 가능합니다.
+
+- **Windows 10 VPN 프로필에 대한 조건부 액세스**
+
+    이제 Azure Active Directory에 등록된 Windows 10 장치가 Configuration Manager 콘솔에서 작성된 Windows 10 VPN 프로필을 통해 VPN에 액세스하려면 규정을 준수해야 하도록 지정할 수 있습니다. 이렇게 하려면 Windows 10 VPN 프로필의 VPN 프로필 속성과 VPN 프로필 마법사의 인증 방법 페이지에서 새로운 **이 VPN 연결에 조건부 액세스 사용** 확인란을 사용합니다. 이 옵션은 네이티브 연결 유형을 선택할 때만 사용 가능합니다.
+
+    프로필에 대한 조건부 액세스를 사용하도록 설정하는 경우 SSO(Single Sign-On) 인증용으로 별도의 인증서를 지정할 수도 있습니다.
 
 ## <a name="new-hybrid-features-in-october-2016"></a>2016년 10월의 새로운 하이브리드 기능
 
@@ -48,9 +134,9 @@ ms.openlocfilehash: 3525fba1b75196bddebc89e49f40cbfd3c75d9d0
 
   Intune 앱 래핑 도구를 통해 앱이 Intune MAM(모바일 응용 프로그램 관리) 정책을 사용할 수 있도록 설정할 수 있습니다.
 
-- **Intune과 Android 삼성 KNOX 호환성**
+- **Intune과 Android 삼성 KNOX Standard 호환성**
 
-  특정 모델의 삼성 Galaxy Ace 휴대폰은 Intune에서 삼성 KNOX 장치로 관리할 수 없습니다. 이러한 장치를 Intune에 등록하면 대신 표준 Android 장치로 관리됩니다.
+  특정 모델의 삼성 Galaxy Ace 휴대폰은 Intune에서 삼성 KNOX Standard 장치로 관리할 수 없습니다. 이러한 장치를 Intune에 등록하면 대신 표준 Android 장치로 관리됩니다.
 
   영향을 받는 모델 번호는 다음과 같습니다.
 
@@ -143,14 +229,14 @@ Configuration Manager Technical Preview 1609의 2016년 9월에 도입된 새로
 
   Google은 Android 7.0 장치의 암호를 원격으로 다시 설정하는 IT 관리자와 최종 사용자의 기능을 제거합니다. 이전에는 IT 관리자가 사용자 암호를 원격으로 다시 설정할 수 있고, 최종 사용자가 회사 포털 웹 사이트에서 자신의 암호를 다시 설정할 수 있었습니다.
 
-- **삼성 KNOX 장치에 대한 허용 및 차단된 앱 정책**
+- **삼성 KNOX Standard 장치에 대한 허용 및 차단된 앱 정책**
 
-  이제 다음 중 하나를 만들 수 있는 삼성 KNOX 장치에 대한 사용자 지정 정책을 구성할 수 있습니다.
+  이제 다음 중 하나를 만들 수 있는 삼성 KNOX Standard 장치에 대한 사용자 지정 정책을 구성할 수 있습니다.
 
   - 장치에서 실행이 차단된 앱 목록입니다. 차단된 목록에 정의된 앱은 설치된 경우에도 장치에서 활성화할 수 없습니다.
   - 장치의 사용자가 Google Play 스토어에서 설치할 수 있는 앱 목록입니다. 다른 앱은 스토어에서 설치할 수 없습니다.
 
-  이러한 설정은 삼성 KNOX를 실행하는 장치에서만 사용할 수 있습니다. 자세한 내용은 [사용자 지정 정책을 사용하여 삼성 KNOX 장치용 앱 허용 및 차단](/intune/deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps)을 참조하세요.
+  이러한 설정은 삼성 KNOX Standard를 실행하는 장치에서만 사용할 수 있습니다. 자세한 내용은 [사용자 지정 정책을 사용하여 삼성 KNOX Standard 장치용 앱 허용 및 차단](/intune/deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps)을 참조하세요.
 
 - **회사 포털에서 Microsoft로 연결되는 피드백 링크**
 
@@ -237,6 +323,6 @@ Configuration Manager Technical Preview 2016년 7월에 새로 도입된 하이�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

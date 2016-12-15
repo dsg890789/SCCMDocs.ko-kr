@@ -1,12 +1,12 @@
 ---
 
-title: "소프트웨어 업데이트 계획 | System Center Configuration Manager"
+title: "소프트웨어 업데이트 계획 | Microsoft 문서"
 description: "System Center Configuration Manager 프로덕션 환경에서 소프트웨어 업데이트를 사용하기 전에 소프트웨어 업데이트 지점 인프라에 대한 계획이 반드시 필요합니다."
 keywords: 
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/06/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -14,8 +14,8 @@ ms.technology:
 - configmgr-sum
 ms.assetid: d071b0ec-e070-40a9-b7d4-564b92a5465f
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 69f2c9c3c098013679e12d8578a780130adb94be
+ms.sourcegitcommit: b1c68b233097ef3a744dd25b3fb919660f0b2244
+ms.openlocfilehash: 16415fb54a2cf91747990c94ffea0076effe525b
 
 
 ---
@@ -34,8 +34,16 @@ System Center Configuration Manager 프로덕션 환경에서 소프트웨어 �
 
 -   소프트웨어 업데이트 지점 컴퓨터에서 WSUS가 실행되고 소프트웨어 업데이트 지점이 다른 사이트 시스템 역할과 함께 있는 경우 소프트웨어 업데이트 지점은 최대 25,000개의 클라이언트를 지원할 수 있습니다.  
 
--   원격 컴퓨터가 최대 15만 개의 클라이언트를 지원해야 하는 WSUS 요구 사항을 충족하면 소프트웨어 업데이트 지점도 최대 15만 개의 클라이언트를 지원할 수 있습니다.   
-    기본적으로 Configuration Manager에서는 소프트웨어 업데이트 지점을 NLB 클러스터로 구성할 수 없습니다. 그러나 Configuration Manager SDK를 사용하여 NLB 클러스터에서 최대 4개의 소프트웨어 업데이트 지점을 구성할 수는 있습니다.  
+-   원격 컴퓨터가 WSUS 요구 사항을 충족하고 WSUS가 Configuration Manager에서 사용되며 다음을 구성하는 경우 소프트웨어 업데이트 지점은 최대 15만 개의 클라이언트를 지원할 수 있습니다.
+
+    IIS 응용 프로그램 풀:
+    - WsusPool 큐 길이를 2000으로 증가
+    - WsusPool 개인 메모리 제한을 4배로 늘리거나 0(무제한)으로 설정      
+
+    소프트웨어 업데이트 지점의 하드웨어 요구 사항에 대한 자세한 내용은 [사이트 시스템용 권장 하드웨어](/sccm/core/plan-design/configs/recommended-hardware#a-namebkmkscalesiesystemsa-site-systems)를 참조하세요.
+
+-   기본적으로 Configuration Manager에서는 소프트웨어 업데이트 지점을 NLB 클러스터로 구성할 수 없습니다. 그러나 Configuration Manager SDK를 사용하여 NLB 클러스터에서 최대 4개의 소프트웨어 업데이트 지점을 구성할 수는 있습니다.  
+
 
 ### <a name="capacity-planning-for-software-updates-objects"></a>소프트웨어 업데이트 개체를 위한 용량 계획  
  소프트웨어 업데이트 개체에 대한 계획을 세울 때에는 다음 용량 정보를 따르십시오.  
@@ -127,7 +135,7 @@ Configuration Manager 버전 1606부터, 활성 소프트웨어 업데이트 지
 ###  <a name="a-namebkmkplanningforwsusa-plan-for-wsus-installation"></a><a name="BKMK_PlanningForWSUS"></a> WSUS 설치 계획  
  소프트웨어 업데이트를 위해서는 소프트웨어 업데이트 지점 사이트 시스템 역할로 구성하는 모든 사이트 시스템 서버에 지원되는 버전의 WSUS가 설치되어 있어야 합니다. 또한 사이트 서버에 소프트웨어 업데이트 지점을 설치하지 않는 경우 사이트 서버 컴퓨터에 WSUS 관리 콘솔(아직 설치되지 않은 경우)을 설치해야 합니다. 이렇게 하면 사이트 서버가 소프트웨어 업데이트 지점에서 실행되는 WSUS와 통신할 수 있습니다.  
 
- Windows Server 2012에서 WSUS를 사용하는 경우 Configuration Manager에서 **WSUS Configuration Manager**가 WSUS에 연결되어 정기 상태 검사를 수행할 수 있도록 추가 권한을 구성해야 합니다. 추가 권한을 구성하려면 다음 옵션 중 하나를 선택합니다.  
+ Windows Server 2012에서 WSUS를 사용하는 경우 Configuration Manager에서 **WSUS Configuration Manager**가 WSUS에 연결되어 정기 상태 검사를 수행할 수 있도록 추가 권한을 구성해야 합니다. 추가 권한을 구성하려면 다음 옵션 중 하나를 선택합니다.  
 
 -   **WSUS Administrators** 그룹에 **SYSTEM** 계정을 추가합니다.  
 
@@ -300,6 +308,6 @@ Configuration Manager 버전 1606부터 Configuration Manager 소프트웨어 �
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

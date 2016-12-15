@@ -1,8 +1,8 @@
 ---
-title: "PXE를 사용하여 네트워크를 통해 Windows 배포 | Configuration Manager"
+title: "PXE를 사용하여 네트워크를 통해 Windows 배포 | Microsoft 문서"
 description: "PXE 시작 운영 체제 배포를 사용하여 컴퓨터의 운영 체제를 새로 고치거나 새 컴퓨터에 새 버전의 Windows를 설치할 수 있습니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/07/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 4bb62f7479fafac6b57d42cd048fd5bcec29b0e9
+ms.sourcegitcommit: 3f44505c977b511223a083a960f871371c0ff133
+ms.openlocfilehash: b22cdbd42693078caa47f41182ce73ea881c3515
 
 
 ---
@@ -98,6 +98,8 @@ RamDisk TFTP 블록 크기를 사용자 지정할 수 있으며 Configuration Ma
 ##  <a name="how-is-the-boot-image-selected-for-clients-booting-with-pxe"></a>PXE를 사용하여 부팅하는 클라이언트에 대해 부팅 이미지가 선택되는 방식
 클라이언트가 PXE를 사용하여 부팅하는 경우 Configuration Manager에서 사용할 부팅 이미지를 클라이언트에 제공합니다. Configuration Manager 버전 1606부터, Configuration Manager는 아키텍처가 정확히 일치하는 부팅 이미지를 사용합니다(사용 가능한 경우). 아키텍처가 정확히 일치하는 부팅 이미지를 사용할 수 없는 경우 Configuration Manager는 아키텍처가 호환되는 부팅 이미지를 사용합니다. 다음 목록에서는 PXE를 사용하여 부팅하는 클라이언트에 대해 부팅 이미지가 선택되는 방식에 대한 세부 정보를 제공합니다.
 1. Configuration Manager는 사이트 데이터베이스에서 부팅하려는 클라이언트의 MAC 주소 또는 SMBIOS와 일치하는 시스템 레코드를 찾습니다.
+    > [!NOTE]
+    > 특정 사이트에 할당된 컴퓨터가 다른 사이트용 PXE로 부팅되는 경우에는 해당 컴퓨터에 대해 정책이 표시되지 않습니다. 예를 들어 클라이언트가 사이트 A에 이미 할당되어 있으면 사이트 B의 관리 지점 및 배포 지점에서는 사이트 A의 정책에 액세스할 수 없으며 클라이언트는 정상적으로 PXE 부팅되지 않습니다.
 2. Configuration Manager는 1단계에서 찾은 시스템 레코드에 배포되는 작업 순서를 찾습니다.
 3. 2단계에서 찾은 작업 순서 목록에서 Configuration Manager는 부팅하려는 클라이언트의 아키텍처와 일치하는 부팅 이미지를 찾습니다. 동일한 아키텍처를 가진 부팅 이미지가 있으면 해당 부팅 이미지가 사용됩니다.
 
@@ -105,6 +107,6 @@ RamDisk TFTP 블록 크기를 사용자 지정할 수 있으며 Configuration Ma
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

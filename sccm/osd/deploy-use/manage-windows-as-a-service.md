@@ -1,8 +1,8 @@
 ---
-title: "Windows as a Service 관리 | Configuration Manager"
+title: "Windows as a Service 관리 | Microsoft 문서"
 description: "System Center Configuration Manager의 기능을 사용하면 업데이트된 상태로 유지할 수 있도록 사용자 환경의 Windows as a Service 상태를 볼 수 있습니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/07/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 0ed06bb30d1277afa71d1eb2d045ea0ebc87912a
+ms.sourcegitcommit: 3f44505c977b511223a083a960f871371c0ff133
+ms.openlocfilehash: 1885968006ef5be1f507e94e0d33918174b1af12
 
 
 ---
@@ -134,14 +134,15 @@ ms.openlocfilehash: 0ed06bb30d1277afa71d1eb2d045ea0ebc87912a
 
     -   **Specify the Windows readiness state to which this servicing plan should apply(이 서비스 계획을 적용할 Windows 준비 상태 지정)**: 다음 중 하나를 선택합니다.  
 
-        -   **릴리스 준비(현재 분기)**:  
+        -   **릴리스 지원(현재 분기)**: CB 서비스 모델에서 Microsoft가 릴리스하는 기능 업데이트를 즉시 사용할 수 있습니다.
 
-        -   **비즈니스 준비(비즈니스에 대한 현재 분기)**:  
+        -   **비즈니스 지원(비즈니스용 현재 분기)**: 일반적으로 CBB 서비스 분기가 광범위한 배포에 사용됩니다. CBB 서비스 분기의 Windows 10 클라이언트는 CB 서비스 분기의 클라이언트와 동일한 Windows 10 빌드를 받으며, 받는 시기가 더 이후일 뿐입니다.
 
-    -   **How many days after Microsoft has published a new upgrade would you like to wait before deploying in your environment(Microsoft에서 새 업그레이드를 게시한 후 사용자 환경에 배포될 때까지 기다리는 일 수)**:  
+    -   **Microsoft에서 새 업그레이드를 게시한 후 내 환경에 배포할 때까지 대기할 일수**: Configuration Manager는 현재 날짜가 릴리스 날짜와 이 설정에 대해 구성한 기간(일)을 더한 날짜 이후이면 배포에 업그레이드를 포함할지를 평가합니다.
 
     -   Configuration Manager 버전 1602 전에는 **미리 보기**를 클릭하여 해당 준비 상태와 연결된 Windows 10 업데이트를 확인합니다.  
 
+    자세한 내용은 [서비스 분기](https://technet.microsoft.com/itpro/windows/manage/waas-overview#servicing-branches)를 참조하세요.
 7.  Configuration Manager 버전 1602부터, 업그레이드 페이지에서 검색 조건을 구성하여 서비스 계획에 추가할 업그레이드를 필터링할 수 있습니다. 지정된 조건을 충족하는 업그레이드만 연결된 배포에 추가됩니다.  
 
      지정된 조건을 충족하는 업그레이드를 보려면 **미리 보기** 를 클릭합니다.  
@@ -168,7 +169,7 @@ ms.openlocfilehash: 0ed06bb30d1277afa71d1eb2d045ea0ebc87912a
         > [!NOTE]  
         >  실제 설치 최종 기한 시간은 표시된 최종 기한 시간에 최대 2시간의 임의 시간을 더한 시간입니다. 이 설정을 사용하면 대상 컬렉션의 모든 클라이언트 컴퓨터가 배포 내의 업데이트를 동시에 설치하는 데서 발생할 영향을 최소화할 수 있습니다.  
         >   
-        >  필수 업데이트에 대해 설치 임의 설정 지연 시간을 사용하지 않도록 **컴퓨터 에이전트** 클라이언트 설정인 **최종 기한 임의 설정 사용 안 함** 을 구성할 수 있습니다. 자세한 내용은 [Computer Agent](../../core/clients/deploy/about-client-settings.md#BKMK_ComputerAgentDeviceSettings)항목을 참조하세요.  
+        >  필수 업데이트에 대해 설치 임의 설정 지연 시간을 사용하지 않도록 **컴퓨터 에이전트** 클라이언트 설정인 **최종 기한 임의 설정 사용 안 함** 을 구성할 수 있습니다. 자세한 내용은 [Computer Agent](../../core/clients/deploy/about-client-settings.md#computer-agent)항목을 참조하세요.  
 
 9. 사용자 환경 페이지에서 다음 설정을 구성합니다.  
 
@@ -220,7 +221,12 @@ ms.openlocfilehash: 0ed06bb30d1277afa71d1eb2d045ea0ebc87912a
  마법사를 완료하면 서비스 계획이 실행됩니다. 지정한 기준을 충족하는 업데이트가 소프트웨어 업데이트 그룹에 추가되고, 사이트 서버의 콘텐츠 라이브러리에 업데이트가 다운로드되며, 구성된 배포 지점에 업데이트가 배포된 후 대상 컬렉션의 클라이언트에 소프트웨어 업데이트 그룹이 배포됩니다.  
 
 ##  <a name="a-namebkmkmodifyservicingplana-modify-a-servicing-plan"></a><a name="BKMK_ModifyServicingPlan"></a> 서비스 계획 수정  
- Windows 10 서비스 대시보드에서 기본 서비스 계획을 만들거나 기존 서비스 계획에 대한 설정을 변경해야 하는 경우 서비스 계획에 대한 속성으로 이동할 수 있습니다. 서비스 계획의 속성을 수정하려면 다음 절차를 사용합니다.  
+Windows 10 서비스 대시보드에서 기본 서비스 계획을 만들거나 기존 서비스 계획에 대한 설정을 변경해야 하는 경우 서비스 계획에 대한 속성으로 이동할 수 있습니다.
+
+> [!NOTE]
+> 서비스 계획을 만들 때 마법사에서 제공되지 않는 서비스 계획의 경우 속성에서 설정을 구성할 수 있습니다. 마법사는 다운로드 설정, 배포 설정 및 경고 설정에 대해 기본 설정을 사용합니다.  
+
+서비스 계획의 속성을 수정하려면 다음 절차를 사용합니다.  
 
 #### <a name="to-modify-the-properties-of-a-servicing-plan"></a>서비스 계획의 속성을 수정하려면  
 
@@ -228,10 +234,34 @@ ms.openlocfilehash: 0ed06bb30d1277afa71d1eb2d045ea0ebc87912a
 
 2.  소프트웨어 라이브러리 작업 영역에서 **Windows 10 서비스**를 확장하고 **서비스 계획**을 클릭한 후 수정할 서비스 계획을 선택합니다.  
 
-3.  **홈** 탭에서 **속성** 을 클릭하여 선택한 서비스 계획에 대한 속성을 엽니다.  
+3.  **홈** 탭에서 **속성** 을 클릭하여 선택한 서비스 계획에 대한 속성을 엽니다.
+
+    다음 설정은 마법사에서 구성되지 않은 서비스 계획 속성에서 사용 가능합니다.
+
+    - 배포 설정 배포 설정 탭에서 다음 설정을 구성합니다.  
+
+        -   **배포 유형**: 소프트웨어 업데이트 배포의 배포 유형을 지정합니다. 필수 소프트웨어 업데이트 배포를 만들려면 **필수** 를 선택합니다. 이 경우 소프트웨어 업데이트는 구성된 설치 최종 기한 안에 클라이언트에 자동으로 설치됩니다. 사용자가 소프트웨어 센터에서 설치할 수 있는 선택적 소프트웨어 업데이트 배포를 만들려면 **사용 가능** 을 선택합니다.  
+
+            > [!IMPORTANT]  
+            >  소프트웨어 업데이트 배포를 만든 후 나중에 배포 유형을 변경할 수 없습니다.  
+
+            > [!NOTE]  
+            >  **필수** 로 배포된 소프트웨어 업데이트 그룹은 백그라운드로 다운로드되고 BITS 설정이 구성된 경우 이 설정을 따릅니다.  
+            > 그러나 **사용 가능** 으로 배포된 소프트웨어 업데이트 그룹은 포그라운드로 다운로드되고 BITS 설정을 무시합니다.  
+
+        -   **필수 배포를 위해 클라이언트의 최대 절전 모드를 해제하도록 Wake-On-LAN 사용**: 배포에 있는 하나 이상의 소프트웨어 업데이트가 필요한 컴퓨터에 절전 모드 해제 패킷을 보내도록 최종 기한에 Wake-On-LAN을 사용할지 여부를 지정합니다. 이 설정을 선택하면 설치 최종 기한 시점에 절전 모드인 모든 컴퓨터는 절전 모드에서 해제되므로 소프트웨어 업데이트 설치를 시작할 수 있습니다. 이 경우 배포 내의 소프트웨어 업데이트가 필요하지 않은 절전 모드 클라이언트는 작동을 시작하지 않습니다. 기본적으로 이 설정은 사용되지 않으며 **배포 유형** 이 **필수**로 설정된 경우에만 사용할 수 있습니다.  
+
+            > [!WARNING]  
+            >  이 옵션을 사용하려면 먼저 컴퓨터와 네트워크에 Wake-On-LAN을 구성해야 합니다.  
+
+        -   **세부 정보 수준**: 클라이언트 컴퓨터에서 보고하는 상태 메시지에 대해 세부 정보 수준을 지정합니다.  
+
+    - 다운로드 설정
+
+    - 경고
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

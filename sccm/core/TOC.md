@@ -1,4 +1,4 @@
-#   [이해 및 탐색](understand/introduction.md)
+#   이해 및 탐색
 ##  [Configuration Manager 소개](understand/introduction.md)
 ### [Configuration Manager에 대한 도움말 찾기](understand/find-help.md)
 ### [접근성 기능](understand/accessibility-features.md)
@@ -19,13 +19,16 @@
 ##  [진단 및 사용 현황 데이터에 대한 질문과 대답](understand/frequently-asked-questions-about-diagnostics-and-usage-data.md)
 
 #    [계획 및 디자인](plan-design/get-ready.md)
-##   [제품 변경 내용](plan-design/changes/features-and-capabilities.md)
+
+##   제품 변경 내용
 ###  [기능 및 특성](plan-design/changes/features-and-capabilities.md)
 ###  [Configuration Manager 2012에서 변경된 내용](plan-design/changes/what-has-changed-from-configuration-manager-2012.md)
 ###  [증분 버전의 새로운 기능](plan-design/changes/whats-new-incremental-versions.md)
+###  [버전 1610의 새로운 기능](plan-design/changes/whats-new-in-version-1610.md)
 ###  [버전 1606의 새로운 기능](plan-design/changes/whats-new-in-version-1606.md)
 ###  [버전 1602의 새로운 기능](plan-design/changes/whats-new-in-version-1602.md)
 ###  [제거되는 기능과 사용되지 않는 기능](plan-design/changes/removed-and-deprecated-features.md)
+
 ##   [지원되는 구성](plan-design/configs/supported-configurations.md)
 ###  [크기 조정 및 규모 숫자 값](plan-design/configs/size-and-scale-numbers.md)
 ###  [사이트 및 사이트 시스템 필수 조건](plan-design/configs/site-and-site-system-prerequisites.md)
@@ -37,6 +40,7 @@
 ###  [Active Directory 도메인 지원](plan-design/configs/support-for-active-directory-domains.md)
 ###  [Windows 기능 및 네트워크 지원](plan-design/configs/support-for-windows-features-and-networks.md)
 ###  [가상화 환경 지원](plan-design/configs/support-for-virtualization-environments.md)
+
 ##   [장치 관리 솔루션 선택](plan-design/choose-a-device-management-solution.md)
 ##   [사이트 계층 구조 디자인](plan-design/hierarchy/design-a-hierarchy-of-sites.md)
 ###  [SMS 공급자 계획](plan-design/hierarchy/plan-for-the-sms-provider.md)
@@ -47,25 +51,30 @@
 #### [풀(pull) 배포 지점 사용](plan-design/hierarchy/use-a-pull-distribution-point.md)
 #### [콘텐츠 라이브러리](plan-design/hierarchy/the-content-library.md)
 #### [콘텐츠에 액세스하기 위한 계정 관리](plan-design/hierarchy/manage-accounts-to-access-content.md)
+#### [Configuration Manager 클라이언트에 대한 피어 캐시](plan-design/hierarchy/client-peer-cache.md)
 #### [콘텐츠 원본 위치 시나리오](plan-design/hierarchy/content-source-location-scenarios.md)
 #### [패키지 전송 관리자](plan-design/hierarchy/package-transfer-manager.md)
 #### [콘텐츠 관리를 위한 네트워크 대역폭 관리](plan-design/hierarchy/manage-network-bandwidth.md)
 #### [콘텐츠 관리에 대한 보안 및 개인 정보](plan-design/hierarchy/security-and-privacy-for-content-management.md)
 ###  [클라이언트가 리소스 및 서비스를 찾는 방법](plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)
 ###  [사이트 관리에 대한 보안 및 개인 정보](plan-design/hierarchy/security-and-privacy-for-site-administration.md)
+
 ##   [네트워크 인프라 계획](plan-design/network/configure-firewalls-ports-domains.md)
 ###  [Active Directory 스키마 확장](plan-design/network/extend-the-active-directory-schema.md)
 ###  [사이트 시스템을 지원할 Windows 서버 준비](plan-design/network/prepare-windows-servers.md)
 ###  [사이트 시스템 서버용 웹 사이트](plan-design/network/websites-for-site-system-servers.md)
 ###  [PKI 인증서 요구 사항](plan-design/network/pki-certificate-requirements.md)
+
 ##   [진단 및 사용 현황 데이터](plan-design/diagnostics/diagnostics-and-usage-data.md)
 ###  [진단 및 사용 현황 데이터 사용 방법](plan-design/diagnostics/how-diagnostics-and-usage-data-is-used.md)
 ###  [1511에 대한 진단 데이터](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1511.md)
 ###  [1602에 대한 진단 데이터](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1602.md)
 ###  [1606에 대한 진단 데이터](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1606.md)
+###  [1610에 대한 진단 데이터](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1610.md)
 ###  [진단 및 사용 현황 데이터 수집 방법](plan-design/diagnostics/how-diagnostics-and-usage-data-is-collected.md)
 ###  [진단 및 사용 현황 데이터를 보는 방법](plan-design/diagnostics/view-diagnostics-and-usage-data.md)
 ###  [CEIP(사용자 환경 개선 프로그램)](plan-design/diagnostics/customer-experience-improvement-program-ceip.md)
+
 ##   [Configuration Manager에 대한 보안 및 개인 정보](plan-design/security/security-and-privacy.md)
 ###  [보안 계획](plan-design/security/plan-for-security.md)
 ###  [보안 모범 사례 및 개인 정보](plan-design/security/security-best-practices-and-privacy-information.md)
@@ -73,10 +82,13 @@
 ###  [추가 개인 정보](plan-design/security/additional-privacy.md)
 ###  [보안 구성](plan-design/security/configure-security.md)
 
-#    [시작](get-started/evaluate-with-lab-environment.md)
+#    시작
+
 ##   [랩에서 Configuration Manager 평가](get-started/evaluate-with-lab-environment.md)
 ###  [랩 설정](get-started/set-up-your-lab.md)
+
 ##   [기술 미리 보기](get-started/technical-preview.md)
+###  [1611의 기능](get-started/capabilities-in-technical-preview-1611.md)
 ###  [1610의 기능](get-started/capabilities-in-technical-preview-1610.md)
 ###  [1609의 기능](get-started/capabilities-in-technical-preview-1609.md)
 ###  [1608의 기능](get-started/capabilities-in-technical-preview-1608.md)
@@ -89,6 +101,7 @@
 ###  [1601의 기능](get-started/capabilities-in-technical-preview-1601.md)
 ###  [1512의 기능](get-started/capabilities-in-technical-preview-1512.md)
 ###  [1511의 기능](get-started/capabilities-in-technical-preview-1511.md)
+
 ##   [계층 구조 간에 데이터 마이그레이션](migration/migrate-data-between-hierarchies.md)
 ###  [마이그레이션 계획](migration/planning-for-migration.md)
 #### [마이그레이션을 위한 필수 조건](migration/prerequisites-for-migration.md)
@@ -106,7 +119,8 @@
 ###  [마이그레이션에 대한 보안 및 개인 정보](migration/security-and-privacy-for-migration.md)
 
 #    [서버 및 역할 배포](servers/deploy/start-using.md)
-##   [인프라 설치](servers/deploy/install/setup-downloader.md)
+
+##   인프라 설치
 ###  [설치 프로그램을 실행하기 전에](servers/deploy/install/setup-downloader.md)
 #### [설치 다운로더](servers/deploy/install/setup-downloader.md)
 #### [필수 조건 검사기](servers/deploy/install/prerequisite-checker.md)
@@ -119,6 +133,7 @@
 #### [평가판 설치 업그레이드](servers/deploy/install/upgrade-an-evaluation-install-to-a-full-install.md)
 #### [System Center Configuration Manager로 업그레이드](servers/deploy/install/upgrade-to-configuration-manager.md)
 #### [설치를 간소화하는 시나리오](servers/deploy/install/scenarios-to-streamline-your-installation.md)
+
 ##   [사이트 및 계층 구조 구성](servers/deploy/configure/configure-sites-and-hierarchies.md)
 ###  [사이트 시스템 역할 추가](servers/deploy/configure/add-site-system-roles.md)
 #### [사이트 시스템 역할 설치](servers/deploy/configure/install-site-system-roles.md)
@@ -142,7 +157,7 @@
 ###  [데이터베이스 파일에 대한 사용자 지정 위치](servers/deploy/configure/custom-locations-for-site-database-files.md)
 ###  [역할 기반 관리 구성](servers/deploy/configure/configure-role-based-administration.md)
 
-#    [인프라 관리](servers/manage/maintenance-tasks.md)
+#    인프라 관리
 ##   [유지 관리 작업](servers/manage/maintenance-tasks.md)
 ##   [인프라 수정](servers/manage/modify-your-infrastructure.md)
 ###  [CD.Latest 폴더](servers/manage/the-cd.latest-folder.md)
@@ -154,10 +169,12 @@
 ###  [서비스 연결 도구 사용](servers/manage/use-the-service-connection-tool.md)
 ###  [업데이트 등록 도구 사용](servers/manage/use-the-update-registration-tool-to-import-hotfixes.md)
 ###  [핫픽스 설치 관리자 사용](servers/manage/use-the-hotfix-installer-to-install-updates.md)
+###  [업데이트 1610을 설치하기 위한 검사 목록](servers/manage/checklist-for-installing-update-1610.md)
 ###  [업데이트 1606을 설치하기 위한 검사 목록](servers/manage/checklist-for-installing-update-1606.md)
 ###  [업데이트 1602를 설치하기 위한 검사 목록](servers/manage/checklist-for-installing-update-1602.md)
 ###  [현재 분기 버전 지원](servers/manage/current-branch-versions-supported.md)
-##   [인프라 모니터링](servers/manage/use-alerts-and-the-status-system.md)
+
+##   인프라 모니터링
 ###  [경고 및 상태 시스템 사용](servers/manage/use-alerts-and-the-status-system.md)
 ###  [상태 증명](servers/manage/health-attestation.md)
 ###  [계층 구조 및 복제 인프라 모니터링](servers/manage/monitor-hierarchy-and-replication-infrastructure.md)
@@ -179,8 +196,8 @@
 #### [사용자 지정 보고서 모델 만들기](servers/manage/creating-custom-report-models-in-sql-server-reporting-services.md)
 #### [보고에 대한 보안 및 개인 정보](servers/manage/security-and-privacy-for-reporting.md)
 
-#    [클라이언트 배포](clients/deploy/plan/client-installation-methods.md)
-##   [클라이언트 배포 계획](clients/deploy/plan/client-installation-methods.md)
+#    클라이언트 배포
+##   클라이언트 배포 계획
 ###  [클라이언트 설치 방법](clients/deploy/plan/client-installation-methods.md)
 ###  [Windows 컴퓨터에 클라이언트를 배포하기 위한 필수 조건](clients/deploy/prerequisites-for-deploying-clients-to-windows-computers.md)
 ###  [클라이언트에 대한 사이트 시스템 역할 결정](clients/deploy/plan/determine-the-site-system-roles-for-clients.md)
@@ -191,10 +208,9 @@
 ###  [Mac 컴퓨터에 클라이언트 배포 계획](clients/deploy/plan/planning-for-client-deployment-to-mac-computers.md)
 ###  [Windows Embedded 장치에 클라이언트 배포 계획](clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)
 ###  [클라이언트를 절전 모드에서 해제하는 방식 계획](clients/deploy/plan/plan-wake-up-clients.md)
-###  [인터넷 기반 클라이언트 관리 계획](clients/deploy/plan/plan-for-managing-internet-based-clients.md)
 ###  [VDI(가상 데스크톱 인프라)에서 클라이언트를 관리할 때의 고려 사항](clients/deploy/plan/considerations-for-managing-clients-in-a-vdi.md)
 
-##   [클라이언트 배포 작업](clients/deploy/configure-client-communication-ports.md)
+##   클라이언트 배포 작업
 ###  [클라이언트 통신 포트를 구성하는 방법](clients/deploy/configure-client-communication-ports.md)
 ###  [DNS 게시를 사용하여 관리 지점을 찾도록 클라이언트 컴퓨터를 구성하는 방법](clients/deploy/configure-client-computers-to-find-management-points-by-using-dns-publishing.md)
 ###  [클라이언트 설정을 구성하는 방법](clients/deploy/configure-client-settings.md)
@@ -215,7 +231,13 @@
 ###  [Linux 및 UNIX 클라이언트를 관리하는 방법](clients/manage/manage-clients-for-linux-and-unix-servers.md)
 ###  [OMS에 데이터 동기화](clients/manage/sync-data-microsoft-operations-management-suite.md)
 
-##   [컬렉션](clients/manage/collections/introduction-to-collections.md)
+##   [인터넷에서 클라이언트 관리](clients/manage/manage-clients-internet.md)
+###  [클라우드 관리 게이트웨이에 대한 계획](clients/manage/plan-cloud-management-gateway.md)
+###  [클라우드 관리 게이트웨이 설정](clients/manage/setup-cloud-management-gateway.md)
+###  [클라우드 관리 게이트웨이에서 클라이언트 모니터링](clients/manage/monitor-clients-cloud-management-gateway.md)
+###  [인터넷 기반 클라이언트 관리에 대한 계획](clients/manage/plan-internet-based-client-management.md)
+
+##   컬렉션
 ###  [컬렉션 소개](clients/manage/collections/introduction-to-collections.md)
 ### [컬렉션에 대한 필수 조건](clients/manage/collections/prerequisites-for-collections.md)
 ### [컬렉션에 대한 모범 사례](clients/manage/collections/best-practices-for-collections.md)
@@ -225,24 +247,24 @@
 ### [컬렉션으로 장치를 자동 분류하는 방법](clients/manage/collections/automatically-categorize-devices-into-collections.md)
 ###  [컬렉션에 대한 보안 및 개인 정보](clients/manage/collections/security-and-privacy-for-collections.md)
 
-##   [하드웨어 인벤토리](clients/manage/inventory/hardware-inventory.md)
+##   하드웨어 인벤토리
 ###  [하드웨어 인벤토리 소개](clients/manage/inventory/introduction-to-hardware-inventory.md)
 ###  [하드웨어 인벤토리를 확장하는 방법](clients/manage/inventory/extend-hardware-inventory.md)
 ###  [하드웨어 인벤토리를 구성하는 방법](clients/manage/inventory/configure-hardware-inventory.md)
 ###  [하이브리드 배포에서 모바일 장치에 대한 하드웨어 인벤토리를 구성하는 방법](clients/manage/inventory/mobile-device-hardware-inventory-hybrid.md)
-###  [하드웨어 인벤토리 작업 및 유지 관리](clients/manage/inventory/operations-and-maintenance-for-hardware-inventory.md)
+<!--- ###  [Operations and maintenance for hardware inventory](clients/manage/inventory/hardware-inventory.md) --->
 ###  [하드웨어 인벤토리를 보기 위해 리소스 탐색기를 사용하는 방법](clients/manage/inventory/use-resource-explorer-to-view-hardware-inventory.md)
 ###  [Linux 및 UNIX용 하드웨어 인벤토리](clients/manage/inventory/hardware-inventory-for-linux-and-unix.md)
 ###  [하드웨어 인벤토리에 대한 보안 및 개인 정보](clients/manage/inventory/security-and-privacy-for-hardware-inventory.md)
 
-##   [소프트웨어 인벤토리](clients/manage/inventory/software-inventory.md)
+##   소프트웨어 인벤토리
 ###  [소프트웨어 인벤토리 소개](clients/manage/inventory/introduction-to-software-inventory.md)
 ###  [소프트웨어 인벤토리에서 폴더를 제외하는 방법](clients/manage/inventory/exclude-folders-from-software-inventory.md)
 ###  [소프트웨어 인벤토리를 구성하는 방법](clients/manage/inventory/configure-software-inventory.md)
 ###  [소프트웨어 인벤토리를 보기 위해 리소스 탐색기를 사용하는 방법](clients/manage/inventory/use-resource-explorer-to-view-software-inventory.md)
 ###  [소프트웨어 인벤토리에 대한 보안 및 개인 정보](clients/manage/inventory/security-and-privacy-for-software-inventory.md)
 
-##   [Asset Intelligence](clients/manage/asset-intelligence/introduction-to-asset-intelligence.md)
+##   Asset Intelligence
 ###  [Asset Intelligence 소개](clients/manage/asset-intelligence/introduction-to-asset-intelligence.md)
 ###  [Asset Intelligence에 대한 필수 조건](clients/manage/asset-intelligence/prerequisites-for-asset-intelligence.md)
 ###  [Asset Intelligence 구성](clients/manage/asset-intelligence/configuring-asset-intelligence.md)
@@ -251,7 +273,7 @@
 ###  [Asset Intelligence에 대한 유효성 검사 상태 전환 예제](clients/manage/asset-intelligence/example-validation-state-transitions-for-asset-intelligence.md)
 ###  [Asset Intelligence 일반 라이선스 가져오기 파일 예제](clients/manage/asset-intelligence/example-asset-intelligence-general-license-import.md)
 
-##   [원격 제어](clients/manage/remote-control/introduction-to-remote-control.md)
+##   원격 제어
 ###  [원격 제어 소개](clients/manage/remote-control/introduction-to-remote-control.md)
 ### [원격 제어를 위한 필수 조건](clients/manage/remote-control/prerequisites-for-remote-control.md)
 ###  [원격 제어 구성](clients/manage/remote-control/configuring-remote-control.md)
@@ -259,7 +281,7 @@
 ### [원격 제어 사용을 감사하는 방법](clients/manage/remote-control/audit-remote-control-usage.md)
 ###  [원격 제어에 대한 보안 및 개인 정보](clients/manage/remote-control/security-and-privacy-for-remote-control.md)
 
-##   [전원 관리](clients/manage/power/introduction-to-power-management.md)
+##   전원 관리
 ###  [전원 관리 소개](clients/manage/power/introduction-to-power-management.md)
 ### [전원 관리에 대한 필수 조건](clients/manage/power/prerequisites-for-power-management.md)
 ### [전원 관리에 대한 모범 사례](clients/manage/power/best-practices-for-power-management.md)
@@ -270,12 +292,14 @@
 ###  [전원 관리에 대한 보안 및 개인 정보](clients/manage/power/security-and-privacy-for-power-management.md)
 
 ##   [클라이언트 업그레이드](clients/manage/upgrade/upgrade-clients.md)
-###  [사전 프로덕션 컬렉션에서 클라이언트 업그레이드를 테스트하는 방법](clients/manage/upgrade/test-client-upgrades.md)
-###  [Windows 컴퓨터용 클라이언트를 업그레이드하는 방법](clients/manage/upgrade/upgrade-clients-for-windows-computers.md)
-###  [Linux 및 UNIX 서버용 클라이언트를 업그레이드하는 방법](clients/manage/upgrade/upgrade-clients-for-linux-and-unix-servers.md)
-###  [Mac 컴퓨터의 클라이언트를 업그레이드하는 방법](clients/manage/upgrade/upgrade-clients-on-mac-computers.md)
+###  [사전 프로덕션 컬렉션에서 클라이언트 업그레이드 테스트](clients/manage/upgrade/test-client-upgrades.md)
+###  [업그레이드에서 Windows 클라이언트 제외](clients/manage/upgrade/exclude-clients-windows.md)
+###  [Windows 클라이언트 업그레이드](clients/manage/upgrade/upgrade-clients-for-windows-computers.md)
+###  [Linux 및 UNIX 클라이언트 업그레이드](clients/manage/upgrade/upgrade-clients-for-linux-and-unix-servers.md)
+###  [Mac 클라이언트 업그레이드](clients/manage/upgrade/upgrade-clients-on-mac-computers.md)
+###  [Upgrade Analytics](clients/manage/upgrade/upgrade-analytics.md)
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

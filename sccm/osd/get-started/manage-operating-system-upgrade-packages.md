@@ -1,8 +1,8 @@
 ---
-title: "운영 체제 업그레이드 패키지 관리 | Configuration Manager"
+title: "운영 체제 업그레이드 패키지 관리 | Microsoft 문서"
 description: "System Center Configuration Manager에서 운영 체제 업그레이드 패키지를 관리하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 226e283b5d9a04d2a9e0f3ce6894a82a3683d972
+ms.sourcegitcommit: 3f44505c977b511223a083a960f871371c0ff133
+ms.openlocfilehash: 5fef04f26b12bced073332fd1f7b4e7c7bd7d398
 
 
 ---
@@ -63,7 +63,7 @@ System Center Configuration Manager의 업그레이드 패키지에는 컴퓨터
  운영 체제 이미지는 다른 콘텐츠를 배포하는 것과 동일한 방식으로 배포 지점에 배포할 수 있습니다. 대부분의 경우 운영 체제를 배포하기 전에 하나 이상의 배포 지점에 운영 체제 이미지를 배포해야 합니다. 운영 체제 이미지를 배포하는 단계는 [Distribute content](../../core/servers/deploy/configure/deploy-and-manage-content.md#a-namebkmkdistributea-distribute-content)항목을 참조하세요.  
 
 ##  <a name="a-namebkmkosupgradepkgapplyupdatesa-apply-software-updates-to-an-operating-system-upgrade-package"></a><a name="BKMK_OSUpgradePkgApplyUpdates"></a> 운영 체제 업그레이드 패키지에 소프트웨어 업데이트 적용  
- Configuration Manager 버전 1602부터 운영 체제 업그레이드 패키지에서 운영 체제 이미지에 새 소프트웨어 업데이트를 적용할 수 있습니다. 물론, 업그레이드 패키지에 소프트웨어 업데이트를 적용하려면 먼저 소프트웨어 업데이트 인프라를 구축하고 소프트웨어 업데이트를 동기화해야 합니다. 자세한 내용은 [소프트웨어 업데이트 배포](../../sum/deploy-use/deploy-software-updates.md)를 참조하세요.  
+ Configuration Manager 버전 1602부터 운영 체제 업그레이드 패키지에서 운영 체제 이미지에 새 소프트웨어 업데이트를 적용할 수 있습니다. 업그레이드 패키지에 소프트웨어 업데이트를 적용하려면 먼저 소프트웨어 업데이트 인프라를 구축하고 소프트웨어 업데이트를 동기화한 다음 사이트 서버의 콘텐츠 라이브러리에 소프트웨어 업데이트를 다운로드해야 합니다. 자세한 내용은 [소프트웨어 업데이트 배포](../../sum/deploy-use/deploy-software-updates.md)를 참조하세요.  
 
  지정된 일정에 적용 가능한 소프트웨어 업데이트를 업그레이드 패키지에 적용할 수 있습니다. Configuration Manager는 지정된 일정에 따라 선택된 소프트웨어 업데이트를 운영 체제 업그레이드 패키지에 적용하고 선택적으로 업데이트된 업그레이드 패키지를 배포 지점에 배포합니다. 가져올 때 적용된 소프트웨어 업데이트를 비롯하여, 운영 체제 업그레이드 패키지에 대한 정보가 사이트 데이터베이스에 저장됩니다. 처음에 추가한 이후에 업그레이드 패키지에 적용된 소프트웨어 업데이트도 사이트 데이터베이스에 저장됩니다. 마법사를 시작하여 운영 체제 업그레이드 패키지에 소프트웨어 업데이트를 적용할 때 마법사에서 사용자가 선택할 수 있도록 업그레이드 패키지에 아직 적용되지 않은 적용 가능한 소프트웨어 업데이트 목록을 검색합니다. Configuration Manager는 사이트 서버의 콘텐츠 라이브러리에서 소프트웨어 업데이트를 복사하여 운영 체제 업그레이드 패키지에 소프트웨어 업데이트를 적용합니다.  
 
@@ -95,6 +95,6 @@ System Center Configuration Manager의 업그레이드 패키지에는 컴퓨터
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

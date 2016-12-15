@@ -1,5 +1,5 @@
 ---
-title: "iOS 응용 프로그램 만들기 | System Center Configuration Manager"
+title: "iOS 응용 프로그램 만들기 | Microsoft 문서"
 description: "iOS 장치용 응용 프로그램을 만들고 배포할 때 고려해야 할 사항을 확인합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 4c3845635846cae183e81d0ddb9c8222dabd8929
+ms.sourcegitcommit: e9e34359f4412ba07b9fb49f871a1eb2d36cecf8
+ms.openlocfilehash: eb2d1245932d71bd10fd63d95a155eae7d128836
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 4c3845635846cae183e81d0ddb9c8222dabd8929
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-응용 프로그램을 만들기 위한 다른 System Center Configuration Manager 요구 사항 및 절차 외에도 iOS 장치용 응용 프로그램을 만들어 배포할 때는 다음 사항을 고려해야 합니다.  
+iOS 장치용 응용 프로그램을 만들고 배포할 때는 다음 사항을 고려하세요.  
 
 ## <a name="general-considerations"></a>일반적인 고려 사항  
  Configuration Manager는 다음과 같은 앱 유형의 배포를 지원합니다.  
@@ -38,13 +38,13 @@ ms.openlocfilehash: 4c3845635846cae183e81d0ddb9c8222dabd8929
 
 |장치 유형|지원되는 작업|  
 |-----------------|-----------------------|  
-|iOS|사용 가능, 필수(사용자가 설치에 동의해야 함), 제거|  
+|iOS|**사용 가능**, **필수**. 사용자가 설치 및 제거에 모두 동의해야 합니다.
 
 > [!IMPORTANT]  
->  현재 최종 사용자는 iOS용 Microsoft Intune 회사 포털 앱에서 회사 앱을 설치할 수 없습니다. 이는 iOS 앱 스토어에 게시된 앱에 적용되는 제약 조건 때문입니다(앱 스토어 검토 지침, 섹션 2 참조). 사용자는 자신의 장치에서 Intune 웹 포털(portal.manage.microsoft.com)로 이동하여, 관리되는 앱 스토어 앱과 기간 업무 앱 패키지를 비롯한 회사 앱을 설치할 수 있습니다. Intune 회사 포털 앱을 사용하여 설정할 수 있는 모바일 관리 기능에 대한 자세한 내용은 [Microsoft Intune의 등록된 장치 관리 기능](https://technet.microsoft.com/library/dn600287.aspx)을 참조하세요.  
+>  현재 최종 사용자는 iOS용 Microsoft Intune 회사 포털 앱에서 회사 앱을 설치할 수 없습니다. 이는 iOS 앱 스토어에 게시된 앱에 적용되는 제약 조건이 있기 때문입니다(앱 스토어 검토 지침, 섹션 2 참조). 사용자는 자신의 장치에서 Intune 웹 포털(portal.manage.microsoft.com)로 이동하여, 관리되는 앱 스토어 앱과 기간 업무 앱 패키지를 비롯한 회사 앱을 설치할 수 있습니다. Intune 회사 포털 앱을 사용하여 설정할 수 있는 모바일 관리 기능에 대한 자세한 내용은 [Microsoft Intune의 등록된 장치 관리 기능](https://technet.microsoft.com/library/dn600287.aspx)을 참조하세요.  
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

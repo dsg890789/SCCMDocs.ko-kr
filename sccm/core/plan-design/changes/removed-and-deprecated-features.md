@@ -1,8 +1,8 @@
 ---
-title: "사용되지 않는 기능 | System Center Configuration Manager"
+title: "사용되지 않는 기능 | Microsoft 문서"
 description: "System Center Configuration Manager에서 더 이상 지원되지 않는 기능, 제품 및 운영 체제에 대해 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/05/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 0f1e1070fd5b56b1abf22159e9f95b3b4bd8a8c6
+ms.sourcegitcommit: c899b4beaa2aae4eb609291dca0e23f3c266627a
+ms.openlocfilehash: 294166af3d5c6062e3508249c767779876b23931
 
 
 ---
@@ -30,27 +30,39 @@ ms.openlocfilehash: 0f1e1070fd5b56b1abf22159e9f95b3b4bd8a8c6
 
  이 정보는 이후 릴리스에서 변경될 수 있으며 더 이상 지원되지 않는 각 기능, 제품 및 운영 체제가 누락될 수 있습니다.  
 
-## <a name="deprecated-features-products-and-operating-systems"></a>이후 지원되지 않는 기능, 제품 및 운영 체제  
- 이후 지원되지 않는 것으로 나열된 Microsoft 제품 및 운영 체제는 연장하여 지원 중이거나 수명을 다한 것입니다. 이후 지원되지 않는 것으로 나열된 Microsoft 제품 및 운영 체제는 Microsoft 지원 기간을 벗어날 때까지 Configuration Manager의 현재 버전을 사용하여 테스트됩니다.  자세한 내용은 [Microsoft 지원 기간](https://support.microsoft.com/lifecycle) 웹 사이트를 참조하세요.  
+## <a name="how-to-use-this-information"></a>이 정보를 사용하는 방법  
+특정 기능 또는 운영 체제가 사용되지 않는 항목으로 처음 표시되면 Configuration Manager에서 해당 기능이나 운영 체제를 사용하도록 지원하는 기능은 이후 Configuration Manager 버전에서 제거되도록 예약됩니다. 이 정보는 해당 기능 또는 운영 체제 대신 사용할 항목을 계획하는 과정을 지원하기 위해 제공됩니다.  해당 지원이 제거되는 첫 번째 Configuration Manager 버전이 출시되면 해당 특정 버전을 나타내도록 이 항목의 세부 정보가 업데이트될 예정입니다.  
 
- **사용되지 않는 기능:**  
+기능 또는 운영 체제 지원이 제거되더라도 이전 버전의 Configuration Manager가 계속 지원된다면 해당 Configuration Manager 버전을 사용할 때 지원이 제거된 기능이나 운영 체제는 계속 지원됩니다. 그러나 이 항목에 나와 있는 버전 또는 날짜 이후에 출시된 Configuration Manager 버전을 사용하는 경우 해당 Configuration Manager 버전에서는 기능 또는 운영 체제 지원을 제공하지 않습니다.
+
+**예:** 2016년 9월 이후 출시된 첫 번째 업데이트에서 기능의 지원이 제거되도록 예약된 경우 2016년 10월에 출시된 업데이트 1610에는 해당 기능에 대한 지원이 더 이상 포함되지 않습니다.
+-  즉, 업데이트 1610을 설치하면 해당 기능은 더 이상 지원되지 않습니다.
+-  그러면 이 항목의 내용은 버전 1610에서 지원이 제거되었음을 나타내도록 업데이트됩니다.
+그러나 버전 1602 또는 1606과 같이 해당 기능을 지원하는 이전 버전을 계속 사용하는 경우에는 사용 중인 버전의 지원이 중단될 때까지 해당 기능도 계속 사용할 수 있습니다.
+
+자세한 내용은 다음을 참조하세요.
+ - [Microsoft 지원 주기 정책](https://support.microsoft.com/lifecycle) 웹 사이트
+ - [Configuration Manager 현재 분기 버전에 대한 지원](/sccm/core/servers/manage/current-branch-versions-supported)
+
+**사용되지 않는 기능:**  
 
 
 |**기능**|**처음 중단 발표**|**제거된 지원**|  
 |-|-|-|  
-|NAP(네트워크 액세스 보호) - System Center 2012 Configuration Manager에 있음|7/10/2015|√|  
-|대역 외 관리 - System Center 2012 Configuration Manager에 있음|10/16/2015|√|  
+|NAP(네트워크 액세스 보호) - System Center 2012 Configuration Manager에 있음|7/10/2015|버전 1511|  
+|대역 외 관리 - System Center 2012 Configuration Manager에 있음|10/16/2015|버전 1511|
+|작업 순서: <br /> - 동적 디스크로 변환 <br /> - 배포 도구 설치 |2016/11/18|이러한 작업 순서에 대한 지원은 2017년 6월 1일 이후 처음으로 출시되는 업데이트와 함께 종료됨|  
 
  **사용되지 않는 서버 운영 체제:**  
 
- |**운영 체제**|**처음 중단 발표**|**제거된 지원**|  
+ |**운영 체제**|**처음 중단 발표**|**제거된 지원** |  
 |-|-|-|  
-|Windows Server 2008|7/10/2015|2016년 12월 31일 이후 출시된 첫 번째 업데이트와 함께 지원 종료(참고 1 참조)|  
-|Windows Server 2008 R2|7/10/2015|2016년 12월 31일 이후 출시된 첫 번째 업데이트와 함께 지원 종료(참고 2 참조)|  
+|Windows Server 2008|7/10/2015|2016년 12월 31일 이후 출시되는 첫 번째 업데이트와 함께 지원 종료*(참고 1 참조)*|  
+|Windows Server 2008 R2|7/10/2015|2016년 12월 31일 이후 출시되는 첫 번째 업데이트와 함께 지원 종료*(참고 2 참조)*|  
 
--   참고 1: 지원이 종료된 후에 이 운영 체제는 사이트 서버 또는 대부분의 사이트 시스템 역할에 대해 더 이상 지원되지 않습니다. 그러나 이 지원의 중단이 발표되거나 이 운영 체제의 추가 지원 기간이 만료될 때까지 배포 지점 사이트 시스템 역할(풀(pull) 배포 지점 포함)에 대해 계속 지원됩니다.  
+-   *참고 1*: 지원이 종료된 후에 이 운영 체제는 사이트 서버 또는 대부분의 사이트 시스템 역할에 대해 더 이상 지원되지 않습니다. 그러나 이 지원의 중단이 발표되거나 이 운영 체제의 추가 지원 기간이 만료될 때까지 배포 지점 사이트 시스템 역할(풀(pull) 배포 지점 포함)에 대해 계속 지원됩니다.  
 
--   참고 2: 지원이 종료된 후에 이 운영 체제는 사이트 서버 또는 대부분의 사이트 시스템 역할에 대해 더 이상 지원되지 않습니다. 그러나 이 지원의 중단이 발표되거나 이 운영 체제의 추가 지원 기간이 만료될 때까지 상태 마이그레이션 지점 및 배포 지점 사이트 시스템 역할에 대해(풀(pull) 배포 지점 포함, PXE 및 멀티캐스트에 대해) 계속 지원됩니다.  버전 1602부터, Windows Sever 2008 R2에서 Windows Server 2012 R2로 사이트 서버의 운영 체제에 대해 현재 위치 업그레이드를 수행할 수 있습니다.  
+-   *참고 2*: 지원이 종료된 후에 이 운영 체제는 사이트 서버 또는 대부분의 사이트 시스템 역할에 대해 더 이상 지원되지 않습니다. 그러나 이 지원의 중단이 발표되거나 이 운영 체제의 추가 지원 기간이 만료될 때까지 상태 마이그레이션 지점 및 배포 지점 사이트 시스템 역할에 대해(풀(pull) 배포 지점 포함, PXE 및 멀티캐스트에 대해) 계속 지원됩니다.  버전 1602부터, Windows Sever 2008 R2에서 Windows Server 2012 R2로 사이트 서버의 운영 체제에 대해 현재 위치 업그레이드를 수행할 수 있습니다.  
 
      사이트 서버 운영 체제의 현재 위치 업그레이드에 대한 자세한 내용은 [System Center Configuration Manager의 변경된 내용](../../../core/plan-design/changes/what-has-changed-from-configuration-manager-2012.md)의 [Windows Server 2008 R2를 실행하는 사이트 서버의 운영 체제에 대한 현재 위치 업그레이드를 수행합니다.](../../../core/plan-design/changes/whats-new-in-version-1602.md#bkmk_UpgradeOS) 섹션을 참조하세요.
 
@@ -62,22 +74,22 @@ ms.openlocfilehash: 0f1e1070fd5b56b1abf22159e9f95b3b4bd8a8c6
 
 |**운영 체제**|**처음 중단 발표**|**제거된 지원**|  
 |-|-|-|  
-|Windows XP|7/10/2015|√|  
+|Windows XP|7/10/2015|버전 1511|  
 |Windows XP Embedded|7/10/2015|2016년 12월 31일 이후 출시된 첫 번째 업데이트와 함께 지원 종료|  
-|Windows Server 2003|7/10/2015|√|  
-|Windows Server 2003 R2|7/10/2015|√|  
-|Windows Vista|7/10/2015|√|  
-|Mac OS X 10.6 – 10.8|7/10/2015|√|  
-|Windows Mobile 6.0 - 6.5|7/10/2015|√|  
-|Nokia Symbian Belle|7/10/2015|√|  
-|Windows CE 5.0 – 6.0|7/10/2015|√|  
+|Windows Server 2003|7/10/2015|버전 1511|  
+|Windows Server 2003 R2|7/10/2015|버전 1511|  
+|Windows Vista|7/10/2015|버전 1511|  
+|Mac OS X 10.6 – 10.8|7/10/2015|버전 1511|  
+|Windows Mobile 6.0 - 6.5|7/10/2015|버전 1511|  
+|Nokia Symbian Belle|7/10/2015|버전 1511|  
+|Windows CE 5.0 – 6.0|7/10/2015|버전 1511|  
 
 
  **사이트 데이터베이스인 SQL Server 버전에 대해 사용되지 않는 지원:**  
 
 |**SQL Server 버전**|**처음 중단 발표**|**제거된 지원**|   
 |-|-|-|  
-|SQL Server 2008|7/10/2015|√|  
+|SQL Server 2008|7/10/2015|버전 1511|  
 |SQL Server 2008 R2|7/10/2015|2016년 12월 31일 이후 출시된 첫 번째 업데이트와 함께 지원 종료|  
 
 ## <a name="features-removed-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 제거된 기능  
@@ -99,6 +111,6 @@ ms.openlocfilehash: 0f1e1070fd5b56b1abf22159e9f95b3b4bd8a8c6
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

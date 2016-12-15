@@ -1,8 +1,8 @@
 ---
-title: "운영 체제 이미지 관리 | Configuration Manager"
+title: "운영 체제 이미지 관리 | Microsoft 문서"
 description: "Configuration Manager에서 Windows 이미징(WIM) 파일에 저장된 운영 체제 이미지를 관리하는 데 사용할 수 있는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 3c0801afa6a967faabf186f70685b701ba2a95d8
+ms.sourcegitcommit: 03722ff4f480cd26842e395fe1f7ec8359e2b33e
+ms.openlocfilehash: 6953c3834ca303b949f22436010a87b3da9688dc
 
 
 ---
@@ -85,7 +85,7 @@ Configuration Manager의 운영 체제 이미지는 WIM(Windows Imaging) 형식 
  운영 체제 이미지는 다른 콘텐츠를 배포하는 것과 동일한 방식으로 배포 지점에 배포할 수 있습니다. 대부분의 경우 운영 체제를 배포하기 전에 하나 이상의 배포 지점에 운영 체제 이미지를 배포해야 합니다. 운영 체제 이미지를 배포하는 단계는 [Distribute content](../../core/servers/deploy/configure/deploy-and-manage-content.md#a-namebkmkdistributea-distribute-content)항목을 참조하세요.  
 
 ##  <a name="a-namebkmkosimagesapplyupdatesa-apply-software-updates-to-an-operating-system-image"></a><a name="BKMK_OSImagesApplyUpdates"></a> 운영 체제 이미지에 소프트웨어 업데이트 적용  
- 운영 체제 이미지의 운영 체제에 적용 가능한 새 소프트웨어 업데이트가 정기적으로 릴리스됩니다. 물론, 이미지에 소프트웨어 업데이트를 적용하려면 먼저 소프트웨어 업데이트 인프라를 구축하고 소프트웨어 업데이트를 동기화해야 합니다. 자세한 내용은 [소프트웨어 업데이트 배포](../../sum/deploy-use/deploy-software-updates.md)를 참조하세요.  
+ 운영 체제 이미지의 운영 체제에 적용 가능한 새 소프트웨어 업데이트가 정기적으로 릴리스됩니다. 이미지에 소프트웨어 업데이트를 적용하려면 먼저 소프트웨어 업데이트 인프라를 구축하고 소프트웨어 업데이트를 동기화한 다음 사이트 서버의 콘텐츠 라이브러리에 소프트웨어 업데이트를 다운로드해야 합니다. 자세한 내용은 [소프트웨어 업데이트 배포](../../sum/deploy-use/deploy-software-updates.md)를 참조하세요.  
 
  지정된 일정에 적용 가능한 소프트웨어 업데이트를 이미지에 적용할 수 있습니다. Configuration Manager는 지정된 일정에 따라 선택된 소프트웨어 업데이트를 운영 체제 이미지에 적용하고 선택적으로 업데이트된 이미지를 배포 지점에 배포합니다. 가져올 때 적용된 소프트웨어 업데이트를 포함한 운영 체제 이미지에 대한 정보는 사이트 데이터베이스에 저장됩니다. 처음에 추가한 이후에 이미지에 적용된 소프트웨어 업데이트도 사이트 데이터베이스에 저장됩니다. 마법사를 시작하여 운영 체제 이미지에 소프트웨어 업데이트를 적용할 때 마법사에서 사용자가 선택할 수 있도록 이미지에 아직 적용되지 않은 적용 가능한 소프트웨어 업데이트 목록을 검색합니다. Configuration Manager는 사이트 서버의 콘텐츠 라이브러리에서 소프트웨어 업데이트를 복사하여 운영 체제 이미지에 소프트웨어 업데이트를 적용합니다.  
 
@@ -142,6 +142,6 @@ Configuration Manager의 운영 체제 이미지는 WIM(Windows Imaging) 형식 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

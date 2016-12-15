@@ -1,11 +1,11 @@
 ---
-title: "서버 그룹 제공 | Configuration Manager"
+title: "서버 그룹 제공 | Microsoft 문서"
 description: "System Center Configuration Manager 콘솔은 업데이트 및 준수를 모니터링하기 위해 경고 및 상태를 제공합니다."
 keywords: 
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/06/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -13,8 +13,8 @@ ms.technology:
 - configmgr-sum
 ms.assetid: 304a83ea-0f72-437d-9688-2e6e0c7526dd
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: da7a5f1d075eb1fcd7c56b713401bb0f985fa487
+ms.sourcegitcommit: 78524abd4c45f0b7402d6f1e85afc60bb72ab0ee
+ms.openlocfilehash: b89cec7cebb5342da32ec8e11a049edad12f1231
 
 
 ---
@@ -47,8 +47,11 @@ System Center Configuration Manager 버전 1606부터, 컬렉션에 대한 서�
 
 5.  배포 전(노드 드레이닝) 또는 배포 후(노드 다시 시작) 스크립트 사용 여부를 지정합니다.  
 
+    > [!WARNING]
+    > 사용자 지정 스크립트는 Microsoft에서 서명하지 않은 스크립트입니다. 이러한 스크립트의 무결성을 유지하는 것은 사용자의 책임입니다.
+
     > [!TIP]  
-    >다음은 텍스트 파일에 현재 시간을 작성하는 배포 전/배포 후 스크립트를 테스트하는 데 사용할 수 있는 예제입니다.  
+    > 다음은 텍스트 파일에 현재 시간을 작성하는 배포 전/배포 후 스크립트를 테스트하는 데 사용할 수 있는 예제입니다.  
     >   
     >  **배포 전**  
     >   
@@ -85,6 +88,6 @@ System Center Configuration Manager 버전 1606부터, 컬렉션에 대한 서�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

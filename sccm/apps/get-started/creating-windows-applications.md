@@ -1,5 +1,5 @@
 ---
-title: "Windows 응용 프로그램 만들기 | System Center Configuration Manager"
+title: "Windows 응용 프로그램 만들기 | Microsoft 문서"
 description: "Windows 장치용 응용 프로그램을 만들고 배포할 때 고려해야 할 사항을 확인합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: f776e624c7fff5f52b573e5066a6e7d20396ce91
+ms.sourcegitcommit: 557888d1f1f899e3198c430bbe5ccdd44178f824
+ms.openlocfilehash: 9c80cc42f9ce6775067a89a9f5a63c1bf4a0c7ca
 
 ---
 # <a name="create-windows-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 Windows 응용 프로그램 만들기
@@ -27,9 +27,9 @@ ms.openlocfilehash: f776e624c7fff5f52b573e5066a6e7d20396ce91
 응용 프로그램을 만들기 위한 다른 System Center Configuration Manager 요구 사항 및 절차 외에도 Windows 장치에 대한 응용 프로그램을 만들어 배포할 때는 다음 사항을 고려해야 합니다.  
 
 ## <a name="general-considerations"></a>일반적인 고려 사항  
- Configuration Manager는 다음과 같은 앱 유형의 배포를 지원합니다.  
+ Configuration Manager는 다음과 같은 앱 파일 형식의 배포를 지원합니다.  
 
-|장치 유형|지원되는 파일|  
+|장치 유형|지원되는 파일 형식|  
 |-----------------|---------------------|  
 |Windows RT 및 Windows RT 8.1|*.appx, \*.appxbundle|  
 |모바일 장치로 등록된 Windows 8.1 이상|*.appx, \*.appxbundle|  
@@ -38,11 +38,11 @@ ms.openlocfilehash: f776e624c7fff5f52b573e5066a6e7d20396ce91
 
 |장치 유형|지원되는 작업|  
 |-----------------|-----------------------|  
-|Windows 8.1 이상|사용 가능, 필수 제거|  
+|Windows 8.1 이상|사용 가능, 필수, 제거|  
 |Windows RT|사용 가능, 필수, 제거|  
 
 ## <a name="support-for-universal-windows-platform-uwp-apps"></a>UWP(유니버설 Windows 플랫폼) 앱 지원  
- Windows 10 장치에서는 LOB(기간 업무) 앱을 설치하기 위한 테스트용 로드 키가 필요하지 않습니다. 그러나 레지스트리 키 **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** 에 1의 값이 있어야 테스트용 로드를 수행할 수 있습니다.  
+ Windows 10 장치에서는 LOB(기간 업무) 앱을 설치하기 위한 테스트용 로드 키가 필요하지 않습니다. 그러나 테스트용 로드를 사용하도록 설정하려면 레지스트리 키 **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps**의 값이 1이어야 합니다.  
 
  이 레지스트리 키를 구성하지 않으면 앱을 처음으로 장치에 배포할 때 Configuration Manager에서 이 값을 자동으로 **1**로 설정하게 됩니다. 이 값을 **0**으로 설정한 경우 Configuration Manager에서 이 값을 자동으로 변경할 수 없고 LOB(기간 업무) 앱의 배포가 실패하게 됩니다.  
 
@@ -69,6 +69,6 @@ ms.openlocfilehash: f776e624c7fff5f52b573e5066a6e7d20396ce91
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

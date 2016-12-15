@@ -1,8 +1,8 @@
 ---
-title: "System Center Configuration Manager를 사용하여 새 컴퓨터에 새 버전의 Windows 설치(완전 복구)"
+title: "System Center Configuration Manager를 사용하여 새 컴퓨터(운영 체제 미설치 컴퓨터)에 새 버전의 Windows 설치 | Microsoft 문서"
 description: "PXE, OEM 또는 독립 실행형 미디어를 사용하여 새 컴퓨터에 운영 체제를 설치하려면 System Center Configuration Manager에서 다음 단계를 따르세요."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: c672595a06a45bec840f17743636ef6f502af49f
+ms.sourcegitcommit: 06ade037c580d64503e6b8b5c3bf31004ab0650b
+ms.openlocfilehash: 93b3d99e7391feefc3d706f15f0fe8f8df3b75ac
 
 
 ---
@@ -33,7 +33,7 @@ ms.openlocfilehash: c672595a06a45bec840f17743636ef6f502af49f
 
 -   **인프라 요구 사항 계획 및 구현**  
 
-     Windows ADK, WDS(Windows 배포 서비스), 지원되는 하드 디스크 구성 등 운영 체제를 배포하기 전에 준비해야 하는 몇 가지 인프라 요구 사항이 있습니다. 자세한 내용은 [운영 체제 배포를 위한 인프라 요구 사항](../plan-design/infrastructure-requirements-for-operating-system-deployment.md)을 참조하세요.  
+     Windows ADK, WDS(Windows 배포 서비스), 지원되는 하드 디스크 구성 등 운영 체제를 배포하기 전에 준비해야 하는 몇 가지 인프라 요구 사항이 있습니다. 자세한 내용은 [운영 체제 배포를 위한 인프라 요구 사항](../plan-design/infrastructure-requirements-for-operating-system-deployment.md)을 참조하세요.
 
 ##  <a name="a-namebkmkconfigurea-configure"></a><a name="BKMK_Configure"></a> 구성  
 
@@ -81,6 +81,6 @@ ms.openlocfilehash: c672595a06a45bec840f17743636ef6f502af49f
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
