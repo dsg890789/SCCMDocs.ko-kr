@@ -146,7 +146,7 @@ ms.openlocfilehash: aeeb902fad7444534cafa7f9cb984ce8764471b0
 >  중앙 관리 사이트가 SQL Server Standard Edition을 사용하는 계층에서, 계층은 최대 50,000대의 데스크톱 및 장치를 지원합니다. 독립 실행형 기본 사이트에서 사용 중인 SQL Server의 버전은 명시된 클라이언트 수까지 지원하도록 해당 사이트 용량을 제한하지 않습니다.  
 
 
-###  <a name="a-namebkmkchipria-child-primary-site"></a><a name="bkmk_chipri"></a> 하위 기본 사이트  
+###  <a name="a-namebkmkchipria-child-primary-site"></a><a name="bkmk_chipri"></a> 자식 기본 사이트  
 중앙 관리 사이트가 있는 계층의 각 자식 기본 사이트에서는 다음을 지원합니다.  
 
 -   총 클라이언트 및 장치 150000대, 계층에 대해 지원되는 수를 초과하지 않는 한 특정 그룹 또는 유형으로 제한되지 않음  

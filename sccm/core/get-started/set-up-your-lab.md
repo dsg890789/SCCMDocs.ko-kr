@@ -344,7 +344,7 @@ IIS(인터넷 정보 서비스)는 웹에서 서비스를 호스트하는 데 �
 
 4.  대화 상자에 **.msi** 을 입력하고 **확인**을 클릭합니다.  
 
-###  <a name="a-namebkmkinstallcmlaba-installing-configuration-manager"></a><a name="BKMK_InstallCMLab"></a> Configuration Manager 설치  
+###  <a name="a-namebkmkinstallcmlaba-installing-configuration-manager"></a><a name="BKMK_InstallCMLab"></a> 구성 관리자 설치  
 클라이언트를 직접 관리하기 위해 [기본 사이트를 사용할 시기 결정](../../core/plan-design/hierarchy/design-a-hierarchy-of-sites.md#BKMK_ChoosePriimary)을 만듭니다. 그러면 랩 환경에서 잠재적인 장치의 [사이트 시스템 배율](/sccm/core/plan-design/configs/size-and-scale-numbers)에 대한 관리를 지원할 수 있습니다.  
 또한 이 과정에서 계속 평가 장치를 관리하는 데 사용할 Configuration Manager 콘솔도 설치합니다.  
 

@@ -16,8 +16,8 @@ caps.handback.revision: 0
 ms.author: nbigman
 ms.manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: e215b33ca24370ddd0e1b892d6ebe559023852a2
-ms.openlocfilehash: ccea5cb46bf69dbb88f6fcb217a73c7939be0b02
+ms.sourcegitcommit: a65de5feae2ff44f938ce8b7e3c8d23d560bb180
+ms.openlocfilehash: bcea8676c163a8aba1bc7f3364fde52375f52429
 
 
 ---
@@ -131,7 +131,7 @@ ms.openlocfilehash: ccea5cb46bf69dbb88f6fcb217a73c7939be0b02
             >  
             >  iOS를 실행하는 장치는 연결 형식이 PPTP인 경우 인증 방법으로 RSA SecurID 및 MSCHAP v2만 지원합니다. 오류 보고를 방지하려면 iOS를 실행하는 장치에 별도의 PPTP VPN 프로필을 배포하세요.  
 
-               - **조건부 액세스** 및 **엔터프라이즈 데이터 보호 주 도메인** 설정은 Intune 없이 Configuration Manager를 사용하는 경우에만 지원되며 **고급**을 선택하여 액세스할 수 있습니다.
+               - **조건부 액세스** 및 **엔터프라이즈 데이터 보호 주 도메인** 설정은 Intune 없이 Configuration Manager를 사용하는 경우에만 지원되며 **고급**을 선택하여 액세스할 수 있습니다. 엔터프라이즈 데이터 보호에 대한 자세한 내용은 [Microsoft Intune을 사용하여 WIP(Windows Information Protection) 정책 만들기](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/create-wip-policy-using-intune)를 참조하세요.
         
         ![VPN에 대한 조건부 액세스 구성](../media/vpn-conditional-access.png)
 

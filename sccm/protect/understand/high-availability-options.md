@@ -118,7 +118,7 @@ ms.openlocfilehash: 7d8dff8779fbf146a57f753dee9f98488fa5fa61
 
  **SMS 공급자 및 Configuration Manager 콘솔:**  
 
- Configuration Manager에서는 여러 SMS 공급자를 각각 별도의 컴퓨터에 설치하여 Configuration Manager 콘솔에 대한 여러 액세스 지점을 확보할 수 있습니다. 이렇게 하면 한 SMS 공급자 컴퓨터가 오프라인이 될 경우에도 계속 Configuration Manager 사이트와 클라이언트를 보고 다시 구성할 수 있습니다.  
+ Configuration Manager에서는 여러 SMS 공급자를 각각 별도의 컴퓨터에 설치하여 Configuration Manager 콘솔에 대한 여러 액세스 지점을 확보할 수 있습니다. 이렇게 하면 한 SMS 공급자 컴퓨터가 오프라인이 될 경우에도 계속 Configuration Manager 사이트와 클라이언트를 보고 다시 구성할 수 있습니다.  
 
  Configuration Manager 콘솔은 사이트에 연결할 때 해당 사이트의 SMS 공급자 인스턴스에 연결합니다. SMS 공급자의 인스턴스는 비결정적으로 선택됩니다. 선택한 SMS 공급자를 사용할 수 없는 경우 다음과 같은 옵션이 있습니다.  
 

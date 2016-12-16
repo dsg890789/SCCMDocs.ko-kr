@@ -55,7 +55,7 @@ ms.openlocfilehash: fe342b76569f171855c6c422c7173317381e0103
 클라이언트 컴퓨터는 다음에 클라이언트 정책을 다운로드할 때 이 설정으로 구성됩니다. 단일 클라이언트에 대해 정책 검색을 시작하려면 [System Center Configuration Manager에서 클라이언트를 관리하는 방법](../../core/clients/manage/manage-clients.md)에서 Configuration Manager 클라이언트에 대한 정책 검색 시작 섹션을 참조하세요.
 
 ## <a name="how-to-provision-the-endpoint-protection-client-in-a-disk-image-in-configuration-manager"></a>Configuration Manager에서 디스크 이미지의 Endpoint Protection 클라이언트 프로비전 방법
-Configuration Manager 운영 체제 배포의 디스크 이미지 원본으로 사용하려는 컴퓨터에 Endpoint Protection 클라이언트를 설치할 수 있습니다. 이 컴퓨터는 일반적으로 참조 컴퓨터라고 합니다. 운영 체제 이미지를 만든 다음 Configuration Manager 운영 체제 배포를 사용하여 Endpoint Protection과 같은 소프트웨어 패키지를 포함할 수 있는 이미지를 클라이언트 컴퓨터에 배포할 수 있습니다.
+Configuration Manager 운영 체제 배포의 디스크 이미지 원본으로 사용하려는 컴퓨터에 Endpoint Protection 클라이언트를 설치할 수 있습니다. 이 컴퓨터는 일반적으로 참조 컴퓨터라고 합니다. 운영 체제 이미지를 만든 다음 Configuration Manager 운영 체제 배포를 사용하여 Endpoint Protection과 같은 소프트웨어 패키지를 포함할 수 있는 이미지를 클라이언트 컴퓨터에 배포할 수 있습니다.
 
 이 항목의 절차는 참조 컴퓨터에서 Endpoint Protection 클라이언트를 설치하고 구성하는 방법을 설명합니다.
 

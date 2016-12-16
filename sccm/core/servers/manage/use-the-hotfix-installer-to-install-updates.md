@@ -200,7 +200,7 @@ Microsoft에서 받은 업데이트(핫픽스)를 설치해야 하며 해당 업
 
 예를 들어 Configuration Manager 콘솔을 업데이트하기 위해 다음 명령줄을 사용할 수 있습니다. 이 명령줄은 컴퓨터에서 MSIEXEC를 실행하고 업데이트 번들이 사이트 서버에 추출한 .msp 파일을 참조합니다. **msiexec.exe /p \\\\&lt;서버 이름\>\SMS_&lt;사이트 코드\>\Hotfix\\&lt;KB 번호\>\AdminConsole\\&lt;플랫폼\>\\&lt;msp\> /L\*v &lt;로그 파일\>REINSTALLMODE=mous REINSTALL=ALL**  
 
-##  <a name="a-namebkmkdeploya-deploy-updates-for-configuration-manager"></a><a name="BKMK_Deploy"></a> Configuration Manager용 업데이트 배포  
+##  <a name="a-namebkmkdeploya-deploy-updates-for-configuration-manager"></a><a name="BKMK_Deploy"></a> Configuration Manager에 대한 업데이트 배포  
  사이트 서버에 업데이트 번들을 설치한 후에는 다음 세 가지 방법 중 하나를 사용하여 추가 컴퓨터에 업데이트를 배포할 수 있습니다.  
 
 ###  <a name="a-namebkmkdeployscupa-use-updates-publisher-2011-to-install-updates"></a><a name="BKMK_DeploySCUP"></a> Updates Publisher 2011을 사용하여 업데이트 설치  

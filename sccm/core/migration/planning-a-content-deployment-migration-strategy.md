@@ -152,7 +152,7 @@ Configuration Manager 콘솔에서 **관리** 작업 영역의 **마이그레이
 
 공유 배포 지점을 업그레이드하지 않기로 결정한 경우 대상 계층의 배포 지점을 이전 Configuration Manager 2007 배포 지점에 계속 설치할 수 있습니다. 새 배포 지점을 설치하려면 먼저 배포 지점 컴퓨터에서 모든 Configuration Manager 2007 사이트 시스템 역할을 제거해야 합니다. 여기에는 해당 컴퓨터가 사이트 서버 컴퓨터인 경우 Configuration Manager 2007 사이트도 포함됩니다. Configuration Manager 2007 배포 지점을 제거할 때 배포 지점에 배포된 콘텐츠는 컴퓨터에서 삭제되지 않습니다.  
 
-###  <a name="a-namebkmkupgradessa-planning-to-upgrade-configuration-manager-2007-secondary-sites"></a><a name="BKMK_UpgradeSS"></a> Configuration Manager 2007 보조 사이트 업그레이드 계획  
+###  <a name="a-namebkmkupgradessa-planning-to-upgrade-configuration-manager-2007-secondary-sites"></a><a name="BKMK_UpgradeSS"></a> Planning to upgrade Configuration Manager 2007 secondary sites  
  Configuration Manager 2007 보조 사이트 서버에서 호스트되는 공유 배포 지점을 마이그레이션을 통해 업그레이드할 경우 Configuration Manager에서는 배포 지점 사이트 시스템 역할을 대상 계층의 배포 지점으로 업그레이드하고 원본 계층에서 보조 사이트도 제거합니다. 따라서 보조 사이트 없이 System Center Configuration Manager 배포 지점이 만들어집니다.  
 
  사이트 서버 컴퓨터에 있는 배포 지점의 업그레이드가 가능하려면 Configuration Manager로 해당 컴퓨터에 있는 각 사이트 시스템 역할을 포함해 보조 사이트를 제거할 수 있어야 합니다. 일반적으로 Configuration Manager 2007 서버 공유의 공유 배포 지점은 업그레이드가 가능합니다. 그러나 서버 공유가 보조 사이트 서버에 있는 경우 보조 사이트와 이 컴퓨터의 공유 배포 지점은 업그레이드할 수 없습니다. 이는 프로세스에서 보조 사이트를 제거하려고 할 때 서버 공유는 추가 사이트 시스템 개체로 처리되고 프로세스에서 이 개체를 제거할 수 없기 때문입니다. 이 시나리오에서는 보조 사이트 서버에서 표준 배포 지점을 사용하도록 설정한 다음 콘텐츠를 이 표준 배포 지점에 재배포하면 됩니다. 이 경우 네트워크 대역폭이 소비되지 않습니다. 또한 작업이 완료되면 서버 공유에서 배포 지점을 제거하고 서버 공유를 제거한 다음, 배포 지점과 보조 사이트를 업그레이드할 수 있습니다.  

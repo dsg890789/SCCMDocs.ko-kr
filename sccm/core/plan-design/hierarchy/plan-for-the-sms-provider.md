@@ -31,7 +31,7 @@ System Center Configuration Manager를 관리하려면 **SMS 공급자**의 인�
 ##  <a name="a-namebkmkplansmsprova-about-the-sms-provider"></a><a name="BKMK_PlanSMSProv"></a> SMS 공급자 정보  
  SMS 공급자는 사이트의 Configuration Manager 데이터베이스에 **읽기** 및 **쓰기** 권한을 할당하는 WMI(Windows Management Instrumentation) 공급자입니다.  
 
--   **SMS Admins**  그룹은 SMS 공급자에 대한 액세스를 제공합니다. Configuration Manager는 이 보안 그룹을 사이트 서버 및 각 SMS 공급자 컴퓨터에 자동으로 만듭니다.  
+-   **SMS Admins**  그룹은 SMS 공급자에 대한 액세스를 제공합니다. Configuration Manager는 이 보안 그룹을 사이트 서버 및 각 SMS 공급자 컴퓨터에 자동으로 만듭니다.  
 
 -   각 중앙 관리 사이트 및 기본 사이트에는 SMS 공급자가 하나 이상 있어야 합니다.  필요에 따라 추가 공급자를 설치할 수 있습니다.  
 
