@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: d22f29ad5c5d193e387bd172899902cc1604c8a0
+ms.sourcegitcommit: 783fb4d61aab83ad64b9cec332e90d6c9de59f47
+ms.openlocfilehash: b1ed3011356a794b7b0913a1c8f189230d8957b2
 
 
 ---
@@ -27,6 +27,9 @@ ms.openlocfilehash: d22f29ad5c5d193e387bd172899902cc1604c8a0
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 System Center Configuration Manager 계층 구조의 첫 번째 사이트를 설치하려면 먼저 Configuration Manager에 사용 가능한 토폴로지와 토폴로지의 연관 관계, 각 사이트 유형에서 가능한 관리 범위를 이해해야 합니다. 그래야 설치해야 하는 사이트 수를 줄일 수 있는 콘텐츠 관리 옵션을 고려하여 현재 비즈니스 요구를 효율적으로 처리할 토폴로지를 계획할 수 있고, 향후의 크기 증가를 관리하도록 이후에 확장할 수도 있습니다.  
+
+> [!NOTE]
+> Configuration Manager의 새 설치를 계획할 때는 활성 버전의 현재 문제를 자세히 설명하는 [릴리스 정보]( /sccm/core/servers/deploy/install/release-notes)에 대해 알고 있어야 합니다. 릴리스 정보는 Configuration Manager의 모든 분기에 적용됩니다.  그러나 [Technical Preview Branch]( /sccm/core/get-started/technical-preview)를 사용하는 경우 각 Technical Preview 버전의 설명서에서 해당 분기와 관련된 문제를 확인할 수 있습니다.  
 
 ##  <a name="a-namebkmktopologya-hierarchy-topology"></a><a name="bkmk_topology"></a> 계층 토폴로지  
  계층 토폴로지의 범위는 단일 독립 실행형 기본 사이트에서 계층 구조의 최상위(상위 계층) 사이트에 있는 중앙 관리 사이트와 연결된 기본 및 보조 사이트 그룹까지입니다.    

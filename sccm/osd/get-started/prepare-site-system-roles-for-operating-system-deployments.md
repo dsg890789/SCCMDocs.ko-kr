@@ -183,7 +183,7 @@ RamDisk TFTP 블록 크기를 사용자 지정할 수 있으며 Configuration Ma
  사용자 상태의 크기는 상태 마이그레이션 지점의 디스크 저장소와 마이그레이션 중 네트워크 성능에 직접적인 영향을 미칩니다. 사용자 상태의 크기와 마이그레이션할 컴퓨터의 수를 적절히 고려해야 합니다. 또한 컴퓨터에서 어떤 설정을 마이그레이션할지 고려해야 합니다. 예를 들어 **내 문서** 가 이미 서버에 백업되어 있는 경우 이미지 배포의 일부로 마이그레이션할 필요가 없을 것입니다. 불필요한 마이그레이션을 생략하면 사용자 상태의 전체 크기를 줄이고 네트워크 성능과 상태 마이그레이션 지점의 디스크 저장소에 미칠 수 있는 영향을 최소화할 수 있습니다.  
 
 ### <a name="user-state-migration-tool"></a>사용자 상태 마이그레이션 도구  
- 운영 체제를 배포하는 동안 사용자 상태를 캡처 및 복원하려면 USMT(사용자 상태 마이그레이션 도구) 원본 파일을 가리키는 USMT 패키지를 사용해야 합니다. Configuration Manager는 Configuration Manager 콘솔의 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **패키지**에서 이 패키지를 자동으로 만듭니다. Configuration Manager에서는 USMT 10.0을 사용합니다. 이는 Windows ADK(Windows Assessment and Deployment Kit)를 통해 배포되며 한 운영 체제에서 사용자 상태를 캡처한 다음 다른 운영 체제로 복원하는 데 사용할 수 있습니다.  
+ 운영 체제를 배포하는 동안 사용자 상태를 캡처 및 복원하려면 USMT(사용자 상태 마이그레이션 도구) 원본 파일을 가리키는 USMT 패키지를 사용해야 합니다. Configuration Manager는 Configuration Manager 콘솔의 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **패키지**에서 이 패키지를 자동으로 만듭니다. Configuration Manager에서는 USMT 10.0을 사용합니다. 이는 Windows ADK(Windows Assessment and Deployment Kit)를 통해 배포되며 한 운영 체제에서 사용자 상태를 캡처한 다음 다른 운영 체제로 복원하는 데 사용할 수 있습니다.  
 
  USMT 10.0에 대한 여러 마이그레이션 시나리오 설명을 보려면 [일반 마이그레이션 시나리오](https://technet.microsoft.com/library/mt299169\(v=vs.85\).aspx)를 참조하세요.  
 

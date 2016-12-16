@@ -40,7 +40,7 @@ ms.openlocfilehash: 6044f9b8116687fca80deeea87abd4652f773db0
 
 -   **Configuration Manager 2007 원본 계층:** 지원되는 Configuration Manager 버전을 실행하는 원본 계층의 클라이언트를 마이그레이션하면 클라이언트 소프트웨어가 대상 계층의 클라이언트 버전으로 업그레이드됩니다.  
 
--   **System Center 2012 Configuration Manager 이상 원본 계층:** 제품 버전이 같은 계층 간에 클라이언트를 마이그레이션하면 클라이언트 소프트웨어가 변경되거나 업그레이드되지 않습니다. 대신 클라이언트가 원본 계층에서 대상 계층의 사이트로 재할당됩니다.  
+-   **System Center 2012 Configuration Manager 이상 원본 계층:** 제품 버전이 같은 계층 간에 클라이언트를 마이그레이션하면 클라이언트 소프트웨어가 변경되거나 업그레이드되지 않습니다. 대신 클라이언트가 원본 계층에서 대상 계층의 사이트로 재할당됩니다.  
 
     > [!NOTE]  
     >  계층의 제품 버전이 대상 계층으로의 마이그레이션을 지원하지 않는 경우 원본 계층의 모든 사이트와 클라이언트를 호환되는 제품 버전으로 업그레이드하십시오. 원본 계층이 지원되는 제품 버전으로 업그레이드되면 계층 간에 마이그레이션할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 마이그레이션을 수행하기 위한 필수 조건](../../core/migration/prerequisites-for-migration.md) 항목의 [마이그레이션에 지원되는 Configuration Manager 버전](../../core/migration/prerequisites-for-migration.md#BKMK_supportedmigrationversions) 섹션을 참조하세요.  

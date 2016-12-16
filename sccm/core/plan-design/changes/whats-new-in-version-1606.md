@@ -35,7 +35,7 @@ System Center Configuration Manager 업데이트 1606은 버전 1511 또는 1602
 
 
 
-## <a name="a-nameupdatesandservicingaupdates-and-servicing"></a><a name="updatesandservicing"></a> 업데이트 및 서비스
+## <a name="a-nameupdatesandservicingaupdates-and-servicing"></a><a name="updatesandservicing"></a>업데이트 및 서비스
 
 ### <a name="changes-for-the-updates-and-servicing-node"></a>업데이트 및 서비스 노드의 변경 내용
 다음은 Configuration Manager 콘솔의 업데이트 및 서비스에 대한 변경 내용입니다.
@@ -84,7 +84,7 @@ System Center Configuration Manager 업데이트 1606은 버전 1511 또는 1602
 ## <a name="a-nameaccessibilitya-accessibility"></a><a name="accessibility"></a> 접근성
 버전 1606부터 작업 영역의 다른 노드로 이동하려면 노드 이름의 첫 글자를 입력합니다. 키를 누를 때마다 해당 문자로 시작하는 다음 노드로 커서가 이동하며, 화면 판독기를 사용하는 경우 해당 판독기가 해당 노드의 이름을 읽어냅니다. 접근성 옵션에 대한 자세한 내용은 [System Center Configuration Manager의 접근성 기능](../../../core/understand/accessibility-features.md)을 참조하세요.
 
-## <a name="a-nameadministrationaadministration"></a><a name="administration"></a> 관리
+## <a name="a-nameadministrationaadministration"></a><a name="administration"></a>관리
 다음은 Configuration Manager 콘솔의 관리에 대한 변경 내용입니다.
 ### <a name="oms-connector"></a>OMS 커넥터
 
