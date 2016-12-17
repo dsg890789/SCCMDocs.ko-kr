@@ -56,7 +56,7 @@ System Center Configuration Manager에서 Mac 컴퓨터에 대한 클라이언�
 
 -   [Use a certificate request and installation method that is independent from Configuration Manager](#BKMK_ManualCertifcateInstallation)  
 
-##  <a name="a-nameinstallstepsa-steps-to-install-and-configure-the-client-for-macs"></a><a name="InstallSteps"></a> Mac 컴퓨터용 클라이언트를 설치하고 구성하는 단계  
+##  <a name="a-nameinstallstepsa-steps-to-install-and-configure-the-client-for-macs"></a><a name="InstallSteps"></a> Mac용 클라이언트를 설치하고 구성하는 단계  
 
 > [!IMPORTANT]  
 >  이러한 단계를 수행하기 전에 Mac 컴퓨터가 필수 조건을 충족해야 합니다. 자세한 내용은 [Mac 지원 운영 체제](../../plan-design/configs/supported-operating-systems-for-clients-and-devices.md#mac-computers)를 참조하세요.  
@@ -153,7 +153,7 @@ System Center Configuration Manager에서 Mac 컴퓨터에 대한 클라이언�
 
 -   [등록 사이트 시스템: 기존 사이트 시스템 서버를 설치 및 구성하려면](#BKMK_HowtoInstallEnrollmentSiteSystems_existing)  
 
-####  <a name="a-namebkmkhowtoinstallenrollmentsitesystemsnewa-to-install-and-configure-the-enrollment-site-systems-new-site-system-server"></a><a name="BKMK_HowtoInstallEnrollmentSiteSystems_new"></a> 등록 사이트 시스템을 설치하고 구성하려면: 새 사이트 시스템 서버  
+####  <a name="a-namebkmkhowtoinstallenrollmentsitesystemsnewa-to-install-and-configure-the-enrollment-site-systems-new-site-system-server"></a><a name="BKMK_HowtoInstallEnrollmentSiteSystems_new"></a> 등록 사이트 시스템: 새 사이트 시스템 서버를 설치 및 구성하려면  
 
 1.  Configuration Manager 콘솔에서 **관리**를 클릭합니다.  
 
@@ -174,7 +174,7 @@ System Center Configuration Manager에서 Mac 컴퓨터에 대한 클라이언�
 
 8.  마법사를 완료합니다.  
 
-####  <a name="a-namebkmkhowtoinstallenrollmentsitesystemsexistinga-to-install-and-configure-the-enrollment-site-systems-existing-site-system-server"></a><a name="BKMK_HowtoInstallEnrollmentSiteSystems_existing"></a> 등록 사이트 시스템을 설치하고 구성하려면: 기존 사이트 시스템 서버  
+####  <a name="a-namebkmkhowtoinstallenrollmentsitesystemsexistinga-to-install-and-configure-the-enrollment-site-systems-existing-site-system-server"></a><a name="BKMK_HowtoInstallEnrollmentSiteSystems_existing"></a> 등록 사이트 시스템: 기존 사이트 시스템 서버를 설치 및 구성하려면  
 
 1.  Configuration Manager 콘솔에서 **관리**를 클릭합니다.  
 
@@ -357,7 +357,7 @@ System Center Configuration Manager에서 Mac 컴퓨터에 대한 클라이언�
 >   
 >  CmDiagnostics를 통해 수집되는 정보는 이름이 cmdiag-*<호스트 이름\>***-***<날짜 및 시간\>*.zip인 압축 파일에 추가되어 컴퓨터 바탕 화면에 저장됩니다.  
 
-####  <a name="a-namebkmkenrollr2a-to-enroll-the-client-by-using-the-mac-computer-enrollment-wizard"></a><a name="BKMK_EnrollR2"></a> Mac 컴퓨터 등록 마법사를 사용하여 클라이언트를 등록하려면  
+####  <a name="a-namebkmkenrollr2a-to-enroll-the-client-by-using-the-mac-computer-enrollment-wizard"></a><a name="BKMK_EnrollR2"></a> To enroll the client by using the Mac Computer Enrollment Wizard  
 
 1.  클라이언트 설치를 마치면 컴퓨터 등록 마법사가 열립니다. **다음** 을 클릭하여 시작 페이지를 지나 계속 진행합니다.  
 
@@ -383,7 +383,7 @@ System Center Configuration Manager에서 Mac 컴퓨터에 대한 클라이언�
 
 3.  **다음** 을 클릭하여 계속 진행한 후 마법사를 완료합니다.  
 
-##  <a name="a-nameuninstallmacclienta-uninstalling-the-mac-client"></a><a name="uninstallMacClient"></a> Mac 클라이언트 제거  
+##  <a name="a-nameuninstallmacclienta-uninstalling-the-mac-client"></a><a name="uninstallMacClient"></a> Uninstalling the Mac client  
  Mac 클라이언트를 제거하려면 웹에서 다운로드한 Mac 클라이언트 파일과 함께 제공된 CMUninstall 스크립트를 사용합니다. Mac 컴퓨터에서 Configuration Manager 클라이언트를 제거하려면 다음 절차를 따르세요.  
 
 #### <a name="to-uninstall-the-mac-client"></a>Mac 클라이언트를 제거하려면  
@@ -399,14 +399,14 @@ System Center Configuration Manager에서 Mac 컴퓨터에 대한 클라이언�
 
 3.  필요한 경우 Configuration Manager에 사용되던 클라이언트 인증 인증서를 수동으로 제거하거나 해지합니다. CMUnistall은 이 인증서를 제거하거나 해지하지 않습니다.  
 
-##  <a name="a-namebkmkrenewa-renewing-the-mac-client-certificate"></a><a name="BKMK_Renew"></a> Mac 클라이언트 인증서 갱신  
+##  <a name="a-namebkmkrenewa-renewing-the-mac-client-certificate"></a><a name="BKMK_Renew"></a> Renewing the Mac client certificate  
  다음 방법 중 하나를 사용하여 Mac 클라이언트 인증서를 갱신할 수 있습니다.  
 
 -   [Renewing the Mac client certificate by using the Renew Certificate Wizard](#BKMK_UI)  
 
 -   [Renewing the Mac client certificate manually](#BKMK_Man)  
 
-###  <a name="a-namebkmkuia-renewing-the-mac-client-certificate-by-using-the-renew-certificate-wizard"></a><a name="BKMK_UI"></a> 인증서 갱신 마법사를 사용하여 Mac 클라이언트 인증서 갱신  
+###  <a name="a-namebkmkuia-renewing-the-mac-client-certificate-by-using-the-renew-certificate-wizard"></a><a name="BKMK_UI"></a> Renewing the Mac client certificate by using the Renew Certificate Wizard  
  다음 절차에 따라 Configuration Manager에서 인증서 갱신 마법사를 구성 및 사용할 수 있습니다.  
 
 ##### <a name="to-renew-the-mac-client-certificate-by-using-the-renew-certificate-wizard"></a>인증서 갱신 마법사를 사용하여 Mac 클라이언트 인증서를 갱신하려면  
@@ -447,7 +447,7 @@ System Center Configuration Manager에서 Mac 컴퓨터에 대한 클라이언�
     > [!NOTE]  
     >  마법사가 열리지 않거나 마법사를 실수로 닫은 경우 **Configuration Manager** 기본 설정 페이지에서 **갱신** 을 클릭하여 마법사를 엽니다.  
 
-###  <a name="a-namebkmkmana-renewing-the-mac-client-certificate-manually"></a><a name="BKMK_Man"></a> Mac 클라이언트 인증서 수동 갱신  
+###  <a name="a-namebkmkmana-renewing-the-mac-client-certificate-manually"></a><a name="BKMK_Man"></a> Renewing the Mac client certificate manually  
  Mac 클라이언트 인증서의 일반적인 유효 기간은 1년입니다. Configuration Manager에서는 등록 중에 요청하는 사용자 인증서를 자동으로 갱신하지 않으므로 다음 절차에 따라 인증서를 수동으로 갱신해야 합니다.  
 
 > [!IMPORTANT]  
@@ -543,7 +543,7 @@ System Center Configuration Manager에서 Mac 컴퓨터에 대한 클라이언�
 
 17. Mac 컴퓨터를 다시 시작합니다.  
 
-##  <a name="a-namebkmkmanualcertifcateinstallationa-use-a-certificate-request-and-installation-method-that-is-independent-from-configuration-manager"></a><a name="BKMK_ManualCertifcateInstallation"></a> Configuration Manager와 별개의 인증서 요청 및 설치 방법 사용  
+##  <a name="a-namebkmkmanualcertifcateinstallationa-use-a-certificate-request-and-installation-method-that-is-independent-from-configuration-manager"></a><a name="BKMK_ManualCertifcateInstallation"></a> Use a certificate request and installation method that is independent from Configuration Manager  
  Configuration Manager 등록을 사용하지 않고 대신 Configuration Manager와는 별개로 클라이언트 인증서를 요청 및 설치하는 경우 구성 단계는 약간 다릅니다.  
 
 1.  1, 2, 4, 6단계(선택적) 및 8단계를 수행합니다.  

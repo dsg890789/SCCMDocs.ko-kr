@@ -109,7 +109,7 @@ Microsoft Azure에서 System Center Configuration Manager 클라우드 기반 �
 
 Configuration Manager 클라우드 기반 배포 지점 서비스 인증서에 대해 지정한 서비스 이름(예: **clouddp1.contoso.com**)을 Microsoft Azure 서비스 FQDN(예: **d1594d4527614a09b934d470.cloudapp.net**)에 매핑하려면 인터넷의 DNS 서버에 DNS 별칭(CNAME 레코드)이 있어야 합니다. 그러면 클라이언트가 인터넷의 DNS 서버를 사용하여 Microsoft Azure 서비스 FQDN을 IP 주소로 확인할 수 있습니다.  
 
-##  <a name="a-namebkmkconfigproxyforclouda-configure-proxy-settings-for-primary-sites-that-manage-cloud-services"></a><a name="BKMK_ConfigProxyforCloud"></a> Cloud Services를 관리하는 기본 사이트의 프록시 설정 구성  
+##  <a name="a-namebkmkconfigproxyforclouda-configure-proxy-settings-for-primary-sites-that-manage-cloud-services"></a><a name="BKMK_ConfigProxyforCloud"></a> 클라우드 서비스를 관리하는 기본 사이트의 프록시 설정 구성  
  Configuration Manager에 클라우드 서비스를 사용하는 경우 클라우드 기반 배포 지점을 관리하는 기본 사이트가 기본 사이트 컴퓨터의 **System** 계정을 사용하여 Microsoft Azure 관리 포털에 연결할 수 있어야 합니다. 이 연결은 기본 사이트 서버 컴퓨터에서 기본 웹 브라우저를 사용하여 이루어집니다.  
 
  클라우드 기반 배포 지점을 관리하는 기본 사이트 서버에서 기본 사이트가 인터넷과 Microsoft Azure에 액세스할 수 있도록 프록시 설정을 구성해야 할 수도 있습니다.  

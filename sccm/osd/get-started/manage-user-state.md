@@ -83,7 +83,7 @@ System Center Configuration Manager 작업 순서를 사용하여 현재 운영 
         > [!NOTE]  
         >  작업 순서를 통해 이전 운영 체제가 제거된 후에도 하드 링크가 참조하는 사용자 상태 데이터는 컴퓨터에 유지됩니다. 새 운영 체제가 배포된 후에 이 데이터를 사용하여 사용자 상태가 복원됩니다.  
 
-##  <a name="a-namebkmkstatemigrationpointa-configure-a-state-migration-point"></a><a name="BKMK_StateMigrationPoint"></a> 상태 마이그레이션 지점 구성  
+##  <a name="a-namebkmkstatemigrationpointa-configure-a-state-migration-point"></a><a name="BKMK_StateMigrationPoint"></a> Configure a state migration point  
  상태 마이그레이션 지점에서는 한 컴퓨터에서 캡처된 후 다른 컴퓨터에서 복원된 사용자 상태 데이터를 저장합니다. 그러나 대상 컴퓨터에서 운영 체제를 새로 고치는 배포와 같이 동일한 컴퓨터에서 운영 체제 배포에 대한 사용자 설정을 캡처하는 경우, 하드 링크를 사용하여 동일한 컴퓨터에 데이터를 저장하거나 상태 마이그레이션 지점에 데이터를 저장할 수 있습니다. 일부 컴퓨터 배포에 대해 상태 저장소를 만들 경우 Configuration Manager에서 이 상태 저장소와 대상 컴퓨터 간에 자동으로 연결을 만듭니다. 다음 방법을 사용하여 사용자 상태 데이터를 저장하도록 상태 마이그레이션 지점을 구성할 수 있습니다.  
 
 -   **사이트 시스템 서버 만들기 마법사** 를 사용하여 상태 마이그레이션 지점을 위한 새 사이트 시스템 서버를 만듭니다.  
@@ -104,7 +104,7 @@ System Center Configuration Manager 작업 순서를 사용하여 현재 운영 
 
  상태 마이그레이션 지점 및 구성 단계에 대한 자세한 내용은 [상태 마이그레이션 지점](prepare-site-system-roles-for-operating-system-deployments.md#BKMK_StateMigrationPoints)을 참조하세요.  
 
-##  <a name="a-namebkmkcomputerassociationa-create-a-computer-association"></a><a name="BKMK_ComputerAssociation"></a> 컴퓨터 연결 만들기  
+##  <a name="a-namebkmkcomputerassociationa-create-a-computer-association"></a><a name="BKMK_ComputerAssociation"></a> Create a computer association  
  새 하드웨어에 운영 체제를 설치하고 사용자 데이터 설정을 캡처 및 복원하려면 원본 컴퓨터와 대상 컴퓨터 사이의 관계를 정의하는 컴퓨터 연결을 만듭니다. 원본 컴퓨터는 Configuration Manager가 관리하는 기존 컴퓨터입니다. 새 운영 체제를 대상 컴퓨터에 배포하는 경우 원본 컴퓨터에 대상 컴퓨터로 마이그레이션되는 사용자 상태가 포함됩니다.  
 
 > [!NOTE]  

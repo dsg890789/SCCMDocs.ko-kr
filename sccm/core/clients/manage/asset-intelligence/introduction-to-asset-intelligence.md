@@ -73,7 +73,7 @@ System Center Configuration Manager의 Asset Intelligence를 통해 Asset Intell
 
  Asset Intelligence 카탈로그에 저장된 미리 정의된 하드웨어 요구 사항은 읽기 전용이며 삭제할 수 없습니다.  관리자는 Asset Intelligence 카탈로그에 저장되지 않은 소프트웨어 타이틀에 대한 사용자 정의 하드웨어 요구 사항을 추가, 수정 또는 삭제할 수 있습니다.  
 
-##  <a name="a-namebkmkinventoriedsoftwaretitlesa-inventoried-software-titles"></a><a name="BKMK_InventoriedSoftwareTitles"></a> 인벤토리 소프트웨어 타이틀  
+##  <a name="a-namebkmkinventoriedsoftwaretitlesa-inventoried-software-titles"></a><a name="BKMK_InventoriedSoftwareTitles"></a> 인벤토리에 포함된 소프트웨어 타이틀  
  **Asset Intelligence** 노드 아래 **인벤토리에 포함된 소프트웨어** 노드의 **자산 및 준수** 작업 영역에서 인벤토리에 포함된 소프트웨어 타이틀 정보를 볼 수 있습니다. 하드웨어 인벤토리 클라이언트 에이전트는 Asset Intelligence 카탈로그에 저장되어 있는 소프트웨어 타이틀을 기반으로 하는 인벤토리 소프트웨어 정보를 Configuration Manager 클라이언트에서 수집합니다.  
 
 > [!WARNING]  

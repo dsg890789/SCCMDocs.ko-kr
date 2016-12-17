@@ -194,7 +194,7 @@ Technical Preview 1601부터는 Configuration Manager 콘솔에서 클라이언�
 
 -   **소프트웨어 배포** 마법사의 **앱 구성 정책** 페이지에서 만든 앱 구성 정책을 응용 프로그램의 호환 가능한 배포 유형에 연결합니다.  
 
-##  <a name="a-namebkmkcompliance1601a-improvements-to-compliance-settings"></a><a name="bkmk_compliance1601"></a> 향상된 준수 설정  
+##  <a name="a-namebkmkcompliance1601a-improvements-to-compliance-settings"></a><a name="bkmk_compliance1601"></a> 향상된 호환성 설정  
  1601 기술 미리 보기에서는 다음 기능에 대한 지원이 추가되었습니다.  
 
 ### <a name="microsoft-edge-browser-settings"></a>Microsoft Edge 브라우저 설정  

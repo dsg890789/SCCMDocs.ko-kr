@@ -236,7 +236,7 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
  **증상**  
 
  **프로그램 서비스가 중지되어 Windows Defender 또는**  
- **Endpoint Protection에서 컴퓨터를 모니터링하고 있지 않습니다. 지금 다시 시작해야 합니다.**"라는 메시지가 표시됩니다.  
+ **Endpoint Protection에서 컴퓨터를 모니터링하고 있지 않습니다. 지금 다시 시작해야 합니다.**â€  
 
  **해결 방법**  
 

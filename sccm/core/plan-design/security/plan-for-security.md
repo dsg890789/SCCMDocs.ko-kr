@@ -107,7 +107,7 @@ Configuration Manager에 루트 CA 인증서를 가져와야 하는 경우 발�
 
 또한 사이트 구성과는 별도로 모바일 장치 또는 Mac 컴퓨터를 등록할 때와 무선 네트워크에 Intel AMT 기반 컴퓨터를 프로비전할 때 루트 CA 인증서를 가져와야 할 수 있습니다.  
 
-###  <a name="a-namebkmkplanningforclientcertificateselectiona-planning-for-pki-client-certificate-selection"></a><a name="BKMK_PlanningForClientCertificateSelection"></a> PKI 클라이언트 인증서 선택 계획  
+###  <a name="a-namebkmkplanningforclientcertificateselectiona-planning-for-pki-client-certificate-selection"></a><a name="BKMK_PlanningForClientCertificateSelection"></a> Planning for PKI client certificate selection  
  IIS 사이트 시스템이 HTTP를 통한 클라이언트 인증과 HTTPS를 통한 클라이언트 인증 및 암호화에 PKI 클라이언트 인증서를 사용하는 경우 Windows 기반 클라이언트가 Configuration Manager에 사용할 인증서를 선택하는 방식을 계획해야 합니다.  
 
 > [!NOTE]  

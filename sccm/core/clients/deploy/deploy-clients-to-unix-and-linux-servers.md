@@ -33,14 +33,14 @@ System Center Configuration Manager를 사용하여 Linux 또는 UNIX 서버를 
 
  클라이언트를 설치한 후 Configuration Manager 콘솔에서 클라이언트 설정을 지정하여 Windows 기반 클라이언트와 동일한 방식으로 클라이언트 에이전트를 구성합니다. 자세한 내용은 [Linux 및 UNIX 서버에 대한 클라이언트 설정](../../../core/clients/manage/manage-clients-for-linux-and-unix-servers.md#BKMK_ClientSettingsforLnU)을 참조하세요.  
 
-##  <a name="a-namebkmkaboutinstallpackagesa-about-client-installation-packages-and-the-universal-agent"></a><a name="BKMK_AboutInstallPackages"></a> 클라이언트 설치 패키지 및 유니버설 에이전트 정보  
+##  <a name="a-namebkmkaboutinstallpackagesa-about-client-installation-packages-and-the-universal-agent"></a><a name="BKMK_AboutInstallPackages"></a> 클라이언트 설치 패키지 및 유니버설 에이전트에 대 한  
  특정 플랫폼에 Linux 및 UNIX용 클라이언트를 설치하려면 클라이언트를 설치할 컴퓨터에 해당하는 클라이언트 설치 패키지를 사용해야 합니다. 해당하는 클라이언트 설치 패키지는 [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkID=525184)의 각 클라이언트 다운로드에 포함되어 있습니다. 클라이언트 설치 패키지 외에도 클라이언트 다운로드에는 각 컴퓨터의 클라이언트 설치를 관리하는 **install** 스크립트가 들어 있습니다.  
 
  클라이언트를 설치할 때 사용 하면 클라이언트 설치 패키지에 관계 없이 동일한 프로세스 및 명령줄 속성을 사용할 수 있습니다.  
 
  각 Linux 및 UNIX용 Configuration Manager 클라이언트 릴리스에서 지원하는 운영 체제, 플랫폼 및 클라이언트 설치 패키지에 대한 자세한 내용은 [Linux 및 UNIX 서버](../../plan-design/configs/supported-operating-systems-for-clients-and-devices.md#bkmk_LinuxOS)를 참조하세요.  
 
-##  <a name="a-namebkmkinstalllnuclienta-install-the-client-on-linux-and-unix-servers"></a><a name="BKMK_InstallLnUClient"></a> Linux 및 UNIX 서버에 클라이언트 설치  
+##  <a name="a-namebkmkinstalllnuclienta-install-the-client-on-linux-and-unix-servers"></a><a name="BKMK_InstallLnUClient"></a> Linux 및 UNIX 서버에 클라이언트를 설치 합니다.  
  Linux 및 UNIX 용 클라이언트를 설치 하려면 각 Linux 또는 UNIX 컴퓨터에서 스크립트를 실행 합니다. 스크립트 라는 **설치** 설치 동작을 수정 하 고 클라이언트 설치 패키지를 참조 하는 명령줄 속성을 지원 합니다. 설치 스크립트 및 클라이언트 설치 패키지는 클라이언트에 위치 해야 합니다. 클라이언트 설치 패키지에는 특정 Linux 또는 UNIX 운영 체제 및 플랫폼에 대한 Configuration Manager 클라이언트 파일이 들어 있습니다.
 각 클라이언트 설치 패키지는 클라이언트 설치를 완료 하는데 필요한 모든 파일을 포함 하며 달리 Windows 기반 컴퓨터에서 다운로드 하지 않습니다 추가 파일 관리 지점 또는 다른 원본 위치 합니다.  
 
@@ -71,7 +71,7 @@ System Center Configuration Manager를 사용하여 Linux 또는 UNIX 서버를 
 
      예: ccm-Universal-x64.&lt;build\>.tar  
 
-###  <a name="a-namebkmktoinstalllnuclinenta-to-install-the-configuration-manager-client-on-linux-and-unix-servers"></a><a name="BKMK_ToInstallLnUClinent"></a> Linux 및 UNIX 서버에 Configuration Manager 클라이언트를 설치하려면  
+###  <a name="a-namebkmktoinstalllnuclinenta-to-install-the-configuration-manager-client-on-linux-and-unix-servers"></a><a name="BKMK_ToInstallLnUClinent"></a> Linux 및 UNIX 서버에 Configuration Manager 클라이언트를 설치 하려면  
 
 1.  Windows 컴퓨터에서 관리하려는 [Linux 또는 UNIX 서버의 적절한 클라이언트 파일을 다운로드](http://go.microsoft.com/fwlink/?LinkID=525184) 합니다.  
 
@@ -222,7 +222,7 @@ System Center Configuration Manager를 사용하여 Linux 또는 UNIX 서버를 
 
  Linux 및 UNIX용 Configuration Manager 클라이언트를 제거한 후 컴퓨터를 다시 부팅하지 않아도 됩니다.  
 
-##  <a name="a-namebkmkconfiglnuclientcommuincationsa-configure-request-ports-for-the-client-for-linux-and-unix"></a><a name="BKMK_ConfigLnUClientCommuincations"></a> Linux 및 UNIX용 클라이언트에 대한 요청 포트 구성  
+##  <a name="a-namebkmkconfiglnuclientcommuincationsa-configure-request-ports-for-the-client-for-linux-and-unix"></a><a name="BKMK_ConfigLnUClientCommuincations"></a> Linux 및 UNIX 용 클라이언트에 대 한 요청 포트 구성  
  Windows 기반 클라이언트와 마찬가지로 Linux 및 UNIX용 Configuration Manager 클라이언트는 HTTP 및 HTTPS를 사용하여 Configuration Manager 사이트 시스템과 통신합니다. Configuration Manager 클라이언트에서 통신에 사용하는 포트를 요청 포트라고 합니다.  
 
  Linux 및 UNIX용 Configuration Manager 클라이언트를 설치할 때 **-httpport** 및 **-httpsport** 설치 속성을 지정하여 클라이언트 기본 요청 포트를 변경할 수 있습니다. 설치 속성 및 사용자 지정 값을 지정 하지 않으면 클라이언트는 기본값을 사용 합니다. 기본값은 **80** HTTP 트래픽의 및 **443** HTTPS 트래픽에 대 한 합니다.  
@@ -231,7 +231,7 @@ System Center Configuration Manager를 사용하여 Linux 또는 UNIX 서버를 
 
  클라이언트 통신 포트 번호에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 통신 포트를 구성하는 방법](../../../core/clients/deploy/configure-client-communication-ports.md)을 참조하세요.  
 
-##  <a name="a-namebkmkconfigclientmpa-configure-the-client-for-linux-and-unix-to-locate-management-points"></a><a name="BKMK_ConfigClientMP"></a> 관리 지점을 찾도록 Linux 및 UNIX용 클라이언트 구성  
+##  <a name="a-namebkmkconfigclientmpa-configure-the-client-for-linux-and-unix-to-locate-management-points"></a><a name="BKMK_ConfigClientMP"></a> 관리 지점을 찾기위해 Linux 및 UNIX 용 클라이언트를 구성 합니다.  
  Linux 및 UNIX용 Configuration Manager 클라이언트를 설치하는 경우 초기 연결 지점으로 사용할 관리 지점을 지정해야 합니다.  
 
  Linux 및 UNIX용 Configuration Manager 클라이언트는 클라이언트 설치 시 이 관리 지점에 연결합니다. 클라이언트가 관리 지점에 연결하지 못하면 성공할 때까지 클라이언트 소프트웨어에서 계속 다시 시도합니다.  

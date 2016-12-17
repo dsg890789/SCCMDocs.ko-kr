@@ -58,7 +58,7 @@ ms.openlocfilehash: 62a3b720abbc93460a782928e6cbdcb5d6f215aa
 ## <a name="wsus-settings"></a>WSUS 설정  
  사용 중인 Configuration Manager 버전에 따라 **사이트 시스템 서버 만들기 마법사** 또는 **사이트 시스템 역할 추가 마법사**의 각기 다른 페이지에서 WSUS 설정을 구성해야 하며, 경우에 따라서는 소프트웨어 업데이트 지점의 속성(또는 소프트웨어 업데이트 지점 구성 요소 속성)에서만 이 설정을 구성해야 합니다. WSUS 설정을 구성하려면 다음 섹션의 정보를 참조하세요.  
 
-### <a name="a-namebkmkwsusportawsus-port-settings"></a><a name="BKMK_wsusport"></a> WSUS 포트 설정  
+### <a name="a-namebkmkwsusportawsus-port-settings"></a><a name="BKMK_wsusport"></a>WSUS 포트 설정  
  마법사의 소프트웨어 업데이트 지점 페이지에서 또는 소프트웨어 업데이트 지점의 속성에서 WSUS 포트 설정을 구성해야 합니다. WSUS에 사용되는 포트 설정을 확인하려면 다음 절차를 따르세요.  
 
 #### <a name="to-determine-the-port-settings-used-in-iis"></a>IIS에서 사용되는 포트 설정을 확인하려면  

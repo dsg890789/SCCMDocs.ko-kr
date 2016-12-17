@@ -28,7 +28,7 @@ ms.openlocfilehash: 9552ac1b77acfce6a398ec6e74f1be3686ee15a4
 
 보조 사이트를 설치하려면 Configuration Manager 콘솔 내에서 사이트를 설치해야 합니다.  보조 사이트는 스크립팅된 명령줄 설치를 지원하지 않습니다.
 
-## <a name="a-namebkmkprimarya-install-a-central-administration-site-or-primary-site"></a><a name="bkmk_primary"></a> 중앙 관리 사이트 또는 기본 사이트 설치
+## <a name="a-namebkmkprimarya-install-a-central-administration-site-or-primary-site"></a><a name="bkmk_primary"></a>  중앙 관리 사이트 또는 기본 사이트 설치
 중앙 관리 사이트 또는 기본 사이트를 설치하거나 평가판 사이트를 정식 라이선스 Configuration Manager 사이트로 업그레이드하려면 다음 절차를 따르세요.   
 
 사이트 설치를 시작하기 전에 다음 문서의 세부 정보를 잘 알고 있어야 합니다.
@@ -37,7 +37,7 @@ ms.openlocfilehash: 9552ac1b77acfce6a398ec6e74f1be3686ee15a4
 
 사이트 확장 시나리오의 일부로 중앙 관리 사이트를 설치하는 경우 다음 절차를 사용하기 전에 이 항목의 [독립 실행형 기본 사이트 확장](../../../../core/servers/deploy/install/use-the-setup-wizard-to-install-sites.md#bkmk_expand) 섹션을 검토합니다.
 
-### <a name="a-namebkmkinstallpria-to-install-a-primary-or-central-administration-site"></a><a name="bkmk_installpri"></a> 기본 사이트 또는 중앙 관리 사이트를 설치하려면
+### <a name="a-namebkmkinstallpria-to-install-a-primary-or-central-administration-site"></a><a name="bkmk_installpri"></a>  기본 사이트 또는 중앙 관리 사이트를 설치하려면
 
 1.  사이트를 설치하려는 컴퓨터에서 **&lt;설치 미디어\>\SMSSETUP\BIN\X64\Setup.exe**를 실행하여 **System Center Configuration Manager 설치 마법사**를 시작합니다.  
 

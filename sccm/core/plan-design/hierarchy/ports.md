@@ -79,39 +79,39 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 
 -   &lt; -- >는 어느 쪽 컴퓨터든 통신을 시작할 수 있음을 나타냅니다.  
 
-###  <a name="a-namebkmkportsaia-asset-intelligence-synchronization-point----microsoft"></a><a name="BKMK_PortsAI"></a> Asset Intelligence 동기화 지점 -- > Microsoft  
+###  <a name="a-namebkmkportsaia-asset-intelligence-synchronization-point----microsoft"></a><a name="BKMK_PortsAI"></a> Asset Intelligence 동기화 지점 -- &gt; Microsoft  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTPS(Secure Hypertext Transfer Protocol)|--|443|  
 
-###  <a name="a-namebkmkportsai-to-sqla-asset-intelligence-synchronization-point----sql-server"></a><a name="BKMK_PortsAI-to-SQL"></a> Asset Intelligence 동기화 지점 -- > SQL Server  
+###  <a name="a-namebkmkportsai-to-sqla-asset-intelligence-synchronization-point----sql-server"></a><a name="BKMK_PortsAI-to-SQL"></a> Asset Intelligence 동기화 지점 -- &gt; SQL Server  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |SQL over TCP|--|1433(참고 2 참조, **대체 포트 사용 가능**)|  
 
-###  <a name="a-namebkmkportsappcatalogservice-sqla-application-catalog-web-service-point----sql-server"></a><a name="BKMK_PortsAppCatalogService-SQL"></a> 응용 프로그램 카탈로그 웹 서비스 지점 -- > SQL Server  
+###  <a name="a-namebkmkportsappcatalogservice-sqla-application-catalog-web-service-point----sql-server"></a><a name="BKMK_PortsAppCatalogService-SQL"></a> 응용 프로그램 카탈로그 웹 서비스 지점 -- &gt; SQL Server  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |SQL over TCP|--|1433(참고 2 참조, **대체 포트 사용 가능**)|  
 
-###  <a name="a-namebkmkportsappcatalogwebsitepointappcatalogwebservicepointa-application-catalog-website-point----application-catalog-web-service-point"></a><a name="BKMK_PortsAppCatalogWebSitePoint_AppCatalogWebServicePoint"></a> 응용 프로그램 카탈로그 웹 사이트 지점 -- > 응용 프로그램 카탈로그 웹 서비스 지점  
+###  <a name="a-namebkmkportsappcatalogwebsitepointappcatalogwebservicepointa-application-catalog-website-point----application-catalog-web-service-point"></a><a name="BKMK_PortsAppCatalogWebSitePoint_AppCatalogWebServicePoint"></a> 응용 프로그램 카탈로그 웹 사이트 지점 -- &gt; 응용 프로그램 카탈로그 웹 서비스 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTP(Hypertext Transfer Protocol)|--|80(참고 2 참조, **대체 포트 사용 가능**)|  
 |HTTPS(Secure Hypertext Transfer Protocol)|--|443(참고 2 참조, **대체 포트 사용 가능**)|  
 
-###  <a name="a-namebkmkportsclient-appcatalogwebsitepointa-client----application-catalog-website-point"></a><a name="BKMK_PortsClient-AppCatalogWebsitePoint"></a> 클라이언트 -- > 응용 프로그램 카탈로그 웹 사이트 지점  
+###  <a name="a-namebkmkportsclient-appcatalogwebsitepointa-client----application-catalog-website-point"></a><a name="BKMK_PortsClient-AppCatalogWebsitePoint"></a> 클라이언트 -- &gt; 응용 프로그램 카탈로그 웹 사이트 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTP(Hypertext Transfer Protocol)|--|80(참고 2 참조, **대체 포트 사용 가능**)|  
 |HTTPS(Secure Hypertext Transfer Protocol)|--|443(참고 2 참조, **대체 포트 사용 가능**)|  
 
-###  <a name="a-namebkmkportsclient-clientwakeupa-client----client"></a><a name="BKMK_PortsClient-ClientWakeUp"></a> 클라이언트 -- > 클라이언트  
+###  <a name="a-namebkmkportsclient-clientwakeupa-client----client"></a><a name="BKMK_PortsClient-ClientWakeUp"></a> 클라이언트 -- &gt; 클라이언트  
  다음 표에 나열된 포트와 더불어, 클라이언트에 절전 모드 해제 프록시가 구성된 경우 절전 모드 해제 프록시가 한 클라이언트에서 다른 클라이언트로의 ICMP(Internet Control Message Protocol) 에코 요청 메시지를 사용합니다. 이 통신은 네트워크의 다른 클라이언트 컴퓨터가 절전 모드에서 해제되었는지 여부를 확인하는 데 사용됩니다. ICMP는 TCP/IP Ping 명령이라고도 합니다. ICMP에는 UDP 또는 TCP 프로토콜 번호가 없으므로 다음 표에는 나와 있지 않습니다. 하지만 이러한 클라이언트 컴퓨터의 호스트 기반 방화벽이나 서브넷 내에 장애가 있는 네트워크 장치에서 ICMP 트래픽을 허용해야 절전 모드 해제 프록시 통신이 성공합니다.  
 
 |설명|UDP|TCP|  
@@ -119,34 +119,34 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |Wake on LAN|9(참고 2 참조, **대체 포트 사용 가능**)|--|  
 |절전 모드 해제 프록시|25536(참고 2 참조, **대체 포트 사용 가능**)|--|  
 
-###  <a name="a-namebkmkportsclient-policymodulea-client----configuration-manager-policy-module-network-device-enrollment-service"></a><a name="BKMK_PortsClient-PolicyModule"></a> 클라이언트 -- > Configuration Manager 정책 모듈(네트워크 장치 등록 서비스)  
+###  <a name="a-namebkmkportsclient-policymodulea-client----configuration-manager-policy-module-network-device-enrollment-service"></a><a name="BKMK_PortsClient-PolicyModule"></a> 클라이언트 -- &gt; Configuration Manager 정책 모듈(네트워크 장치 등록 서비스)  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTP(Hypertext Transfer Protocol)||80|  
 |HTTPS(Secure Hypertext Transfer Protocol)|--|443|  
 
-###  <a name="a-namebkmkportsclient-clouddpa-client----cloud-based-distribution-point"></a><a name="BKMK_PortsClient-CloudDP"></a> 클라이언트 -- > 클라우드 기반 배포 지점  
+###  <a name="a-namebkmkportsclient-clouddpa-client----cloud-based-distribution-point"></a><a name="BKMK_PortsClient-CloudDP"></a> 클라우드 -- &gt; 클라우드 기반 배포 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTPS(Secure Hypertext Transfer Protocol)|--|443|  
 
-###  <a name="a-namebkmkportsclient-dpa-client----distribution-point"></a><a name="BKMK_PortsClient-DP"></a> 클라이언트 -- > 배포 지점  
+###  <a name="a-namebkmkportsclient-dpa-client----distribution-point"></a><a name="BKMK_PortsClient-DP"></a> 클라이언트 -- &gt; 배포 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTP(Hypertext Transfer Protocol)|--|80(참고 2 참조, **대체 포트 사용 가능**)|  
 |HTTPS(Secure Hypertext Transfer Protocol)|--|443(참고 2 참조, **대체 포트 사용 가능**)|  
 
-###  <a name="a-namebkmkportsclient-dp2a-client----distribution-point-configured-for-multicast"></a><a name="BKMK_PortsClient-DP2"></a> 클라이언트 -- > 멀티캐스트에 구성된 배포 지점  
+###  <a name="a-namebkmkportsclient-dp2a-client----distribution-point-configured-for-multicast"></a><a name="BKMK_PortsClient-DP2"></a> 클라이언트 -- &gt; 멀티캐스트에 구성된 배포 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |SMB(서버 메시지 블록)|--|445|  
 |멀티캐스트 프로토콜|63000-64000|--|  
 
-###  <a name="a-namebkmkportsclient-dp3a-client----distribution-point-configured-for-pxe"></a><a name="BKMK_PortsClient-DP3"></a> 클라이언트 -- > PXE에 구성된 배포 지점  
+###  <a name="a-namebkmkportsclient-dp3a-client----distribution-point-configured-for-pxe"></a><a name="BKMK_PortsClient-DP3"></a> 클라이언트 -- &gt; PXE에 구성된 배포 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -154,13 +154,13 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |TFTP(Trivial File Transfer Protocol)|69(참고 4 참조 **TFTP(Trivial FTP) 디먼**)|--|  
 |BINL(Boot Information Negotiation Layer)|4011|--|  
 
-###  <a name="a-namebkmkportsclient-fspa-client----fallback-status-point"></a><a name="BKMK_PortsClient-FSP"></a> 클라이언트 -- > 대체 상태 지점  
+###  <a name="a-namebkmkportsclient-fspa-client----fallback-status-point"></a><a name="BKMK_PortsClient-FSP"></a> 클라이언트 -- &gt; 대체 상태 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTP(Hypertext Transfer Protocol)|--|80(참고 2 참조, **대체 포트 사용 가능**)|  
 
-###  <a name="a-namebkmkportsclient-gcdca-client----global-catalog-domain-controller"></a><a name="BKMK_PortsClient-GCDC"></a> 클라이언트 -- > 글로벌 카탈로그 도메인 컨트롤러  
+###  <a name="a-namebkmkportsclient-gcdca-client----global-catalog-domain-controller"></a><a name="BKMK_PortsClient-GCDC"></a> 클라이언트 -- &gt; 글로벌 카탈로그 도메인 컨트롤러  
  Configuration Manager 클라이언트는 글로벌 카탈로그 서버가 작업 그룹 컴퓨터인 경우나 인터넷 전용 통신으로만 구성된 경우 글로벌 카탈로그 서버를 연결하지 않습니다.  
 
 |설명|UDP|TCP|  
@@ -168,7 +168,7 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |글로벌 카탈로그 LDAP|--|3268|  
 |글로벌 카탈로그 LDAP SSL|--|3269|  
 
-###  <a name="a-namebkmkportsclient-mpa-client----management-point"></a><a name="BKMK_PortsClient-MP"></a> 클라이언트 -- > 관리 지점  
+###  <a name="a-namebkmkportsclient-mpa-client----management-point"></a><a name="BKMK_PortsClient-MP"></a> 클라이언트 -- &gt; 관리 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -176,14 +176,14 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |HTTP(Hypertext Transfer Protocol)|--|80(참고 2 참조, **대체 포트 사용 가능**)|  
 |HTTPS(Secure Hypertext Transfer Protocol)|--|443(참고 2 참조, **대체 포트 사용 가능**)|  
 
-###  <a name="a-namebkmkportsclient-supa-client----software-update-point"></a><a name="BKMK_PortsClient-SUP"></a> 클라이언트 -- > 소프트웨어 업데이트 지점  
+###  <a name="a-namebkmkportsclient-supa-client----software-update-point"></a><a name="BKMK_PortsClient-SUP"></a> 클라이언트 -- &gt; 소프트웨어 업데이트 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTP(Hypertext Transfer Protocol)|--|80 또는 8530 (참고 3 참조, **Windows Server Update Services**)|  
 |HTTPS(Secure Hypertext Transfer Protocol)|--|443 또는 8531(참고 3 참조, **Windows Server Update Services**)|  
 
-###  <a name="a-namebkmkportsclient-smpa-client----state-migration-point"></a><a name="BKMK_PortsClient-SMP"></a> 클라이언트 -- > 상태 마이그레이션 지점  
+###  <a name="a-namebkmkportsclient-smpa-client----state-migration-point"></a><a name="BKMK_PortsClient-SMP"></a> 클라이언트 -- &gt; 상태 마이그레이션 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -191,20 +191,20 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |HTTPS(Secure Hypertext Transfer Protocol)|--|443(참고 2 참조, **대체 포트 사용 가능**)|  
 |SMB(서버 메시지 블록)|--|445|  
 
-###  <a name="a-namebkmkportsconsole-clienta-configuration-manager-console----client"></a><a name="BKMK_PortsConsole-Client"></a> Configuration Manager 콘솔 -- > 클라이언트  
+###  <a name="a-namebkmkportsconsole-clienta-configuration-manager-console----client"></a><a name="BKMK_PortsConsole-Client"></a> Configuration Manager 콘솔 -- &gt; 클라이언트  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |원격 제어(제어)|--|2701|  
 |원격 지원(RDP 및 RTC)|--|3389|  
 
-###  <a name="a-namebkmkportsconsole-interneta-configuration-manager-console----internet"></a><a name="BKMK_PortsConsole-Internet"></a> Configuration Manager 콘솔 -- > 인터넷  
+###  <a name="a-namebkmkportsconsole-interneta-configuration-manager-console----internet"></a><a name="BKMK_PortsConsole-Internet"></a> Configuration Manager 콘솔 -- &gt; 인터넷  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTP(Hypertext Transfer Protocol)|--|80|  
 
-###  <a name="a-namebkmkportsconsole-rspa-configuration-manager-console----reporting-services-point"></a><a name="BKMK_PortsConsole-RSP"></a> Configuration Manager 콘솔 -- > 보고 서비스 지점  
+###  <a name="a-namebkmkportsconsole-rspa-configuration-manager-console----reporting-services-point"></a><a name="BKMK_PortsConsole-RSP"></a> Configuration Manager 콘솔 -- &gt; 보고 서비스 지점  
 
 ||||  
 |-|-|-|  
@@ -212,26 +212,26 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |HTTP(Hypertext Transfer Protocol)|--|80(참고 2 참조, **대체 포트 사용 가능**)|  
 |HTTPS(Secure Hypertext Transfer Protocol)|--|443(참고 2 참조, **대체 포트 사용 가능**)|  
 
-###  <a name="a-namebkmkportsconsole-sitea-configuration-manager-console----site-server"></a><a name="BKMK_PortsConsole-Site"></a> Configuration Manager 콘솔 -- > 사이트 서버  
+###  <a name="a-namebkmkportsconsole-sitea-configuration-manager-console----site-server"></a><a name="BKMK_PortsConsole-Site"></a> Configuration Manager 콘솔 -- &gt; 사이트 서버  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |RPC(공급자 시스템을 찾기 위해 초기에 WMI에 연결)|--|135|  
 
-###  <a name="a-namebkmkportsconsole-providera-configuration-manager-console----sms-provider"></a><a name="BKMK_PortsConsole-Provider"></a> Configuration Manager 콘솔 -- > SMS 공급자  
+###  <a name="a-namebkmkportsconsole-providera-configuration-manager-console----sms-provider"></a><a name="BKMK_PortsConsole-Provider"></a> Configuration Manager 콘솔 -- &gt; SMS 공급자  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |RPC 끝점 매퍼|135|135|  
 |RPC|--|동적(참고 6 참조, **동적 포트**)|  
 
-###  <a name="a-namebkmkportscertificateregistationpointpolicymodulea-configuration-manager-policy-module-network-device-enrollment-service----certificate-registration-point"></a><a name="BKMK_PortsCertificateRegistationPoint_PolicyModule"></a> Configuration Manager 정책 모듈(네트워크 장치 등록 서비스) -- > 인증서 등록 지점  
+###  <a name="a-namebkmkportscertificateregistationpointpolicymodulea-configuration-manager-policy-module-network-device-enrollment-service----certificate-registration-point"></a><a name="BKMK_PortsCertificateRegistationPoint_PolicyModule"></a> Configuration Manager 정책 모듈(네트워크 장치 등록 서비스) -- &gt; 인증서 등록 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTPS(Secure Hypertext Transfer Protocol)|--|443(참고 2 참조, **대체 포트 사용 가능**)|  
 
-###  <a name="a-namebkmkportsdistmpa-distribution-point----management-point"></a><a name="BKMK_PortsDist_MP"></a> 배포 지점 --> 관리 지점  
+###  <a name="a-namebkmkportsdistmpa-distribution-point----management-point"></a><a name="BKMK_PortsDist_MP"></a> 배포 지점 --&gt; 관리 지점  
  배포 지점은 다음과 같은 시나리오에서 관리 지점과 통신합니다.  
 
 -   사전 준비된 콘텐츠의 상태 보고  
@@ -247,49 +247,49 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |HTTP(Hypertext Transfer Protocol)|--|80(참고 2 참조, **대체 포트 사용 가능**)|  
 |HTTPS(Secure Hypertext Transfer Protocol)|--|443(참고 2 참조, **대체 포트 사용 가능**)|  
 
-###  <a name="a-namebkmkportsendpointprotectioninterneta-endpoint-protection-point----internet"></a><a name="BKMK_PortsEndpointProtection_Internet"></a> Endpoint Protection 지점 -- > 인터넷  
+###  <a name="a-namebkmkportsendpointprotectioninterneta-endpoint-protection-point----internet"></a><a name="BKMK_PortsEndpointProtection_Internet"></a> Endpoint Protection 지점 -- &gt; 인터넷  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTP(Hypertext Transfer Protocol)|--|80|  
 
-###  <a name="a-namebkmkportsep-to-sqla-endpoint-protection-point----sql-server"></a><a name="BKMK_PortsEP-to-SQL"></a> Endpoint Protection 지점 --> SQL Server  
+###  <a name="a-namebkmkportsep-to-sqla-endpoint-protection-point----sql-server"></a><a name="BKMK_PortsEP-to-SQL"></a> Endpoint Protection 지점 --&gt; SQL Server  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |SQL over TCP|--|1433(참고 2 참조, **대체 포트 사용 가능**)|  
 
-###  <a name="a-namebkmkportsenrollmentproxyenrollmentpointa-enrollment-proxy-point----enrollment-point"></a><a name="BKMK_PortsEnrollmentProxyEnrollmentPoint"></a> 등록 프록시 지점 -- > 등록 지점  
+###  <a name="a-namebkmkportsenrollmentproxyenrollmentpointa-enrollment-proxy-point----enrollment-point"></a><a name="BKMK_PortsEnrollmentProxyEnrollmentPoint"></a> 등록 프록시 지점 -- &gt; 등록 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTPS(Secure Hypertext Transfer Protocol)|--|443(참고 2 참조, **대체 포트 사용 가능**)|  
 
-###  <a name="a-namebkmkportsenrollmentenrollmentsqla-enrollment-point----sql-server"></a><a name="BKMK_PortsEnrollmentEnrollmentSQL"></a> 등록 지점 -- > SQL Server  
+###  <a name="a-namebkmkportsenrollmentenrollmentsqla-enrollment-point----sql-server"></a><a name="BKMK_PortsEnrollmentEnrollmentSQL"></a> 등록 지점 -- &gt; SQL Server  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |SQL over TCP|--|1433(참고 2 참조, **대체 포트 사용 가능**)|  
 
-###  <a name="a-namebkmkportsexchangeconnectorhosteda-exchange-server-connector----exchange-online"></a><a name="BKMK_PortsExchangeConnectorHosted"></a> Exchange Server 커넥터 -- > Exchange Online  
+###  <a name="a-namebkmkportsexchangeconnectorhosteda-exchange-server-connector----exchange-online"></a><a name="BKMK_PortsExchangeConnectorHosted"></a> Exchange Server 커넥터 -- &gt; Exchange Online  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTPS를 통한 Windows 원격 관리|--|5986|  
 
-###  <a name="a-namebkmkportsexchangeconnectoronprema-exchange-server-connector----on-premises-exchange-server"></a><a name="BKMK_PortsExchangeConnectorOnPrem"></a> Exchange Server 커넥터 -- > 온-프레미스 Exchange Server  
+###  <a name="a-namebkmkportsexchangeconnectoronprema-exchange-server-connector----on-premises-exchange-server"></a><a name="BKMK_PortsExchangeConnectorOnPrem"></a> Exchange Server 커넥터 -- &gt; 온-프레미스 Exchange Server  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTP를 통한 Windows 원격 관리|--|5985|  
 
-###  <a name="a-namebkmkportsmacenrollmentproxypointa-mac-computer----enrollment-proxy-point"></a><a name="BKMK_PortsMacEnrollmentProxyPoint"></a> Mac 컴퓨터 -- > 등록 프록시 지점  
+###  <a name="a-namebkmkportsmacenrollmentproxypointa-mac-computer----enrollment-proxy-point"></a><a name="BKMK_PortsMacEnrollmentProxyPoint"></a> Mac 컴퓨터 -- &gt; 등록 프록시 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTPS(Secure Hypertext Transfer Protocol)|--|443|  
 
-###  <a name="a-namebkmkportsmp-dca-management-point----domain-controller"></a><a name="BKMK_PortsMP-DC"></a> 관리 지점 -- > 도메인 컨트롤러  
+###  <a name="a-namebkmkportsmp-dca-management-point----domain-controller"></a><a name="BKMK_PortsMP-DC"></a> 관리 지점 -- &gt; 도메인 컨트롤러  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -309,38 +309,38 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |RPC|--|동적(참고 6 참조, **동적 포트**)|  
 |SMB(서버 메시지 블록)|--|445|  
 
-###  <a name="a-namebkmkportsmp-sqla-management-point----sql-server"></a><a name="BKMK_PortsMP-SQL"></a> 관리 지점 -- > SQL Server  
+###  <a name="a-namebkmkportsmp-sqla-management-point----sql-server"></a><a name="BKMK_PortsMP-SQL"></a> 관리 지점 -- &gt; SQL Server  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |SQL over TCP|--|1433(참고 2 참조, **대체 포트 사용 가능**)|  
 
-###  <a name="a-namebkmkportsmobiledeviceclient-enrollmentproxypointa-mobile-device----enrollment-proxy-point"></a><a name="BKMK_PortsMobileDeviceClient-EnrollmentProxyPoint"></a> 모바일 장치 -- > 등록 프록시 지점  
+###  <a name="a-namebkmkportsmobiledeviceclient-enrollmentproxypointa-mobile-device----enrollment-proxy-point"></a><a name="BKMK_PortsMobileDeviceClient-EnrollmentProxyPoint"></a> 모바일 장치 -- &gt; 등록 프록시 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTPS(Secure Hypertext Transfer Protocol)|--|443|  
 
-###  <a name="a-namebkmkportsmobiledeviceclient-windowsintunea-mobile-device----microsoft-intune"></a><a name="BKMK_PortsMobileDeviceClient-WindowsIntune"></a> 모바일 장치 -- > Microsoft Intune  
+###  <a name="a-namebkmkportsmobiledeviceclient-windowsintunea-mobile-device----microsoft-intune"></a><a name="BKMK_PortsMobileDeviceClient-WindowsIntune"></a> 모바일 장치 -- &gt; Microsoft Intune  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTPS(Secure Hypertext Transfer Protocol)|--|443|  
 
-###  <a name="a-namebkmkportsrsp-sqla-reporting-services-point----sql-server"></a><a name="BKMK_PortsRSP-SQL"></a> 보고 서비스 지점 -- > SQL Server  
+###  <a name="a-namebkmkportsrsp-sqla-reporting-services-point----sql-server"></a><a name="BKMK_PortsRSP-SQL"></a> 보고 서비스 지점 -- &gt; SQL Server  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |SQL over TCP|--|1433(참고 2 참조, 대체 포트 사용 가능)|  
 
-###  <a name="a-namebkmkportsintuneconnector-windowsintunea-service-connection-point----microsoft-intune"></a><a name="BKMK_PortsIntuneConnector-WindowsIntune"></a> 서비스 연결 지점 -- > Microsoft Intune  
+###  <a name="a-namebkmkportsintuneconnector-windowsintunea-service-connection-point----microsoft-intune"></a><a name="BKMK_PortsIntuneConnector-WindowsIntune"></a> 서비스 연결 지점 -- &gt; Microsoft Intune  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTPS(Secure Hypertext Transfer Protocol)|--|443|
 서비스 연결 지점에 대한 자세한 내용은 [인터넷 액세스 요구 사항](/sccm/core/servers/deploy/configure/about-the-service-connection-point#bkmk_urls)을 참조하세요.
 
-###  <a name="a-namebkmkportsappcatalogwebservicepointsiteservera-site-server-lt----application-catalog-web-service-point"></a><a name="BKMK_PortsAppCatalogWebServicePoint_SiteServer"></a> 사이트 서버 &lt; -- > 응용 프로그램 카탈로그 웹 서비스 지점  
+###  <a name="a-namebkmkportsappcatalogwebservicepointsiteservera-site-server-lt----application-catalog-web-service-point"></a><a name="BKMK_PortsAppCatalogWebServicePoint_SiteServer">&lt; 사이트 서버 </a> -- > 응용 프로그램 카탈로그 웹 서비스 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -364,19 +364,19 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |RPC 끝점 매퍼|135|135|  
 |RPC|--|동적(참고 6 참조, **동적 포트**)|  
 
-###  <a name="a-namebkmkportssite-clienta-site-server----client"></a><a name="BKMK_PortsSite-Client"></a> 사이트 서버 -- > 클라이언트  
+###  <a name="a-namebkmkportssite-clienta-site-server----client"></a><a name="BKMK_PortsSite-Client"></a> 사이트 서버 -- &gt; 클라이언트  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |Wake on LAN|9(참고 2 참조, **대체 포트 사용 가능**)|--|  
 
-###  <a name="a-namebkmkportssiteserver-clouddpa-site-server----cloud-based-distribution-point"></a><a name="BKMK_PortsSiteServer-CloudDP"></a> 사이트 서버 -- > 클라우드 기반 배포 지점  
+###  <a name="a-namebkmkportssiteserver-clouddpa-site-server----cloud-based-distribution-point"></a><a name="BKMK_PortsSiteServer-CloudDP"></a> 사이트 서버 -- &gt; 클라우드 기반 배포 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTPS(Secure Hypertext Transfer Protocol)|--|443|  
 
-###  <a name="a-namebkmkportssite-dpa-site-server----distribution-point"></a><a name="BKMK_PortsSite-DP"></a> 사이트 서버 -- > 배포 지점  
+###  <a name="a-namebkmkportssite-dpa-site-server----distribution-point"></a><a name="BKMK_PortsSite-DP"></a> 사이트 서버 -- &gt; 배포 지점  
  (참고 5 참조, **사이트 서버 및 사이트 시스템 간 통신**)  
 
 |설명|UDP|TCP|  
@@ -385,7 +385,7 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |RPC 끝점 매퍼|135|135|  
 |RPC|--|동적(참고 6 참조, **동적 포트**)|  
 
-###  <a name="a-namebkmkportssite-dca-site-server----domain-controller"></a><a name="BKMK_PortsSite-DC"></a> 사이트 서버 -- > 도메인 컨트롤러  
+###  <a name="a-namebkmkportssite-dca-site-server----domain-controller"></a><a name="BKMK_PortsSite-DC"></a> 사이트 서버 -- &gt; 도메인 컨트롤러  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -396,7 +396,7 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |RPC 끝점 매퍼|135|135|  
 |RPC|--|동적(참고 6 참조, **동적 포트**)|  
 
-###  <a name="a-namebkmkportscertificateregistrationpointsiteservera-site-server-lt----certificate-registration-point"></a><a name="BKMK_PortsCertificateRegistrationPoint_SiteServer"></a> 사이트 서버 &lt; -- > 인증서 등록 지점  
+###  <a name="a-namebkmkportscertificateregistrationpointsiteservera-site-server-lt----certificate-registration-point"></a><a name="BKMK_PortsCertificateRegistrationPoint_SiteServer">&lt; 사이트 서버 </a> -- > 인증서 등록 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -404,7 +404,7 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |RPC 끝점 매퍼|135|135|  
 |RPC|--|동적(참고 6 참조, **동적 포트**)|  
 
-###  <a name="a-namebkmkportsendpointprotectionsiteservera-site-server-lt----endpoint-protection-point"></a><a name="BKMK_PortsEndpointProtection_SiteServer"></a> 사이트 서버 &lt; -- > Endpoint Protection 지점  
+###  <a name="a-namebkmkportsendpointprotectionsiteservera-site-server-lt----endpoint-protection-point"></a><a name="BKMK_PortsEndpointProtection_SiteServer">&lt; 사이트 서버 </a> -- > Endpoint Protection 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -412,7 +412,7 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |RPC 끝점 매퍼|135|135|  
 |RPC|--|동적(참고 6 참조, **동적 포트**)|  
 
-###  <a name="a-namebkmkenrollmentpointsiteservera-site-server-lt----enrollment-point"></a><a name="BKMK_EnrollmentPoint_SiteServer"></a> 사이트 서버 &lt; -- > 등록 지점  
+###  <a name="a-namebkmkenrollmentpointsiteservera-site-server-lt----enrollment-point"></a><a name="BKMK_EnrollmentPoint_SiteServer">&lt; 사이트 서버 </a> -- > 등록 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -437,7 +437,7 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |RPC 끝점 매퍼|135|135|  
 |RPC|--|동적(참고 6 참조, **동적 포트**)|  
 
-###  <a name="a-namebkmkportsite-interneta-site-server----internet"></a><a name="BKMK_PortSite-Internet"></a> 사이트 서버 -- > 인터넷  
+###  <a name="a-namebkmkportsite-interneta-site-server----internet"></a><a name="BKMK_PortSite-Internet"></a> 사이트 서버 -- &gt; 인터넷  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -466,7 +466,7 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |-----------------|---------|---------|  
 |SMB(서버 메시지 블록)|--|445|  
 
-###  <a name="a-namebkmkportssite-sqla-site-server----sql-server"></a><a name="BKMK_PortsSite-SQL"></a> 사이트 서버 -- > SQL Server  
+###  <a name="a-namebkmkportssite-sqla-site-server----sql-server"></a><a name="BKMK_PortsSite-SQL"></a> 사이트 서버 -- &gt; SQL Server  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -480,7 +480,7 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |RPC 끝점 매퍼|135|135|  
 |RPC|--|동적(참고 6 참조, **동적 포트**)|  
 
-###  <a name="a-namebkmkportssite-providera-site-server----sms-provider"></a><a name="BKMK_PortsSite-Provider"></a> 사이트 서버 -- > SMS 공급자  
+###  <a name="a-namebkmkportssite-providera-site-server----sms-provider"></a><a name="BKMK_PortsSite-Provider"></a> 사이트 서버 -- &gt; SMS 공급자  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -505,26 +505,26 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |SMB(서버 메시지 블록)|--|445|  
 |RPC 끝점 매퍼|135|135|  
 
-###  <a name="a-namebkmkportsprovider-sqla-sms-provider----sql-server"></a><a name="BKMK_PortsProvider-SQL"></a> SMS 공급자 -- > SQL Server  
+###  <a name="a-namebkmkportsprovider-sqla-sms-provider----sql-server"></a><a name="BKMK_PortsProvider-SQL"></a> SMS 공급자 -- &gt; SQL Server  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |SQL over TCP|--|1433(참고 2 참조, 대체 포트 사용 가능)|  
 
-###  <a name="a-namebkmkportssup-interneta-software-update-point----internet"></a><a name="BKMK_PortsSUP-Internet"></a> 소프트웨어 업데이트 지점 -- > 인터넷  
+###  <a name="a-namebkmkportssup-interneta-software-update-point----internet"></a><a name="BKMK_PortsSUP-Internet"></a> 소프트웨어 업데이트 지점 -- &gt; 인터넷  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTP(Hypertext Transfer Protocol)|--|80(참고 1 참조, **프록시 서버 포트**)|  
 
-###  <a name="a-namebkmkportssup-wsusa-software-update-point----upstream-wsus-server"></a><a name="BKMK_PortsSUP-WSUS"></a> 소프트웨어 업데이트 지점-- > 업스트림 WSUS 서버  
+###  <a name="a-namebkmkportssup-wsusa-software-update-point----upstream-wsus-server"></a><a name="BKMK_PortsSUP-WSUS"></a> 소프트웨어 업데이트 지점-- &gt; 업스트림 WSUS 서버  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTP(Hypertext Transfer Protocol)|--|80 또는 8530 (참고 3 참조, **Windows Server Update Services**)|  
 |HTTPS(Secure Hypertext Transfer Protocol)|--|443 또는 8531(참고 3 참조, **Windows Server Update Services**)|  
 
-###  <a name="a-namebkmkportssql-sqla-sql-server----sql-server"></a><a name="BKMK_PortsSQL-SQL"></a> SQL Server-- > SQL Server  
+###  <a name="a-namebkmkportssql-sqla-sql-server----sql-server"></a><a name="BKMK_PortsSQL-SQL"></a> SQL Server-- &gt; SQL Server  
  사이트 간 데이터베이스 복제를 사용하려면 해당 부모 또는 자식 사이트의 SQL Server와 직접 통신하는 한 사이트에 SQL Server를 설치해야 합니다.  
 
 |설명|UDP|TCP|  
@@ -535,7 +535,7 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 > [!TIP]  
 >  Configuration Manager에는 UDP 1434 포트를 사용하는 SQL Server Browser가 필요하지 않습니다.  
 
-###  <a name="a-namebkmkportsstatemigrationpoint-to-sqla-state-migration-point----sql-server"></a><a name="BKMK_PortsStateMigrationPoint-to-SQL"></a> 상태 마이그레이션 지점 --> SQL Server  
+###  <a name="a-namebkmkportsstatemigrationpoint-to-sqla-state-migration-point----sql-server"></a><a name="BKMK_PortsStateMigrationPoint-to-SQL"></a> 상태 마이그레이션 지점 --&gt; SQL Server  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  

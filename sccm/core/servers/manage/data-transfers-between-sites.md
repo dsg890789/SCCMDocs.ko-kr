@@ -73,7 +73,7 @@ System Center Configuration Manager는 **파일 기반 복제** 및 **데이터�
 사이트의 발신자를 관리하려면 **관리** 작업 영역에서 **사이트 구성** 노드를 확장하고 **사이트** 노드를 선택한 다음 관리하려는 사이트의 **속성** 을 클릭합니다. 그리고 **발신자** 탭을 클릭하여 발신자 구성을 변경합니다.  
 
 ##  <a name="a-namebkmkdbrepa-database-replication"></a><a name="bkmk_dbrep"></a> Database replication  
-Configuration Manager 데이터베이스 복제 기능에서는 SQL Server를 사용하여 데이터를 전송하고 사이트 데이터베이스에서 발생한 변경 내용을 계층 구조 내 다른 사이트의 데이터베이스에 저장된 정보와 병합합니다.  
+Configuration Manager 데이터베이스 복제 기능에서는 SQL Server를 사용하여 데이터를 전송하고 사이트 데이터베이스에서 발생한 변경 내용을 계층 구조 내 다른 사이트의 데이터베이스에 저장된 정보와 병합합니다.  
 
 -   이를 통해 모든 사이트가 동일한 정보를 공유할 수 있습니다.  
 
