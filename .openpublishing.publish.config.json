@@ -21,9 +21,9 @@
   ],
   "notification_subscribers": [],
   "branches_to_filter": [
-    "live"
+    "live-oldev"
   ],
-  "skip_source_output_uploading": false,
+  "skip_source-oldevt_uploading": false,
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
