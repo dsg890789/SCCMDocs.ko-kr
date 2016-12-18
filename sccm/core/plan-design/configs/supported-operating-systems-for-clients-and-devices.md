@@ -68,9 +68,9 @@ ms.openlocfilehash: 862291f52d5a1bb34fb5483806972fcf70f158a8
 
 -   **Windows 7 SP1**(x86, x64) – Professional, Enterprise, Ultimate    
 
--   **Windows Server 2012 R2의 Server Core 설치**(x64)<sup>2</sup>    
+-   **Windows Server 2012 R2의 Server Core 설치**(x64) <sup>2</sup>    
 
--   **Windows Server 2012의 Server Core 설치**(x64)<sup>2</sup>    
+-   **Windows Server 2012의 Server Core 설치**(x64) <sup>2</sup>    
 
 -   **Windows Server 2008 R2의 Server Core 설치**  
     **(서비스 팩 없음 또는 SP1)**(x64)    
@@ -79,7 +79,7 @@ ms.openlocfilehash: 862291f52d5a1bb34fb5483806972fcf70f158a8
 
  <sup>1</sup> Datacenter 릴리스는 Configuration Manager용으로 지원되지만 인증되지는 않았습니다. Windows Server Datacenter Edition 관련 문제에 대한 핫픽스 지원은 제공되지 않습니다.  
 
- <sup>2</sup>클라이언트 강제 설치를 지원하려면 이 운영 체제 버전을 실행하는 컴퓨터에서 파일 및 저장소 서비스 서버 역할용으로 파일 서버 역할 서비스를 실행해야 합니다. Server Core 컴퓨터에 Windows 기능을 설치하는 방법에 대한 자세한 내용은 Windows Server 2012 TechNet 라이브러리에서 [Server Core 서버에 서버 역할 및 기능 설치](http://go.microsoft.com/fwlink/p/?LinkId=299359)를 참조하세요.  
+ <sup>2</sup> 클라이언트 강제 설치를 지원하려면 이 운영 체제 버전을 실행하는 컴퓨터에서 파일 및 저장소 서비스 서버 역할용으로 파일 서버 역할 서비스를 실행해야 합니다. Server Core 컴퓨터에 Windows 기능을 설치하는 방법에 대한 자세한 내용은 Windows Server 2012 TechNet 라이브러리에서 [Server Core 서버에 서버 역할 및 기능 설치](http://go.microsoft.com/fwlink/p/?LinkId=299359)를 참조하세요.  
 
  <sup>3</sup> 이 운영 체제를 사용하려면 버전 1602 이상이 필요합니다.  
 

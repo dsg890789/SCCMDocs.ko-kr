@@ -43,7 +43,7 @@ ms.openlocfilehash: 1d97e7646adbb02a03b33b5efc56c1658364956e
 
 장치 상태 증명 보기를 미리 보려면 Configuration Manager에서 **모니터링** 작업 영역으로 이동한 후 **보안** 노드를 클릭하고 **상태 증명**을 클릭합니다.  
 
-##  <a name="a-namebkmkviewtermsa-in-console-monitoring-for-terms-and-conditions"></a><a name="bkmk_viewterms"></a> 콘솔 내 계약조건 모니터링  
+##  <a name="a-namebkmkviewtermsa-in-console-monitoring-for-terms-and-conditions"></a><a name="bkmk_viewterms"></a> 콘솔 내 사용 약관 모니터링  
 Technical  Preview 1512부터 Microsoft Intune에서 Configuration Manager를 통합할 경우 Configuration Manager 콘솔을 사용하여 IT 부서에서 구성한 계약조건에 동의한 사용자와 동의하지 않은 사용자를 볼 수 있습니다.  
 
 **요약 정보를 보려면**  

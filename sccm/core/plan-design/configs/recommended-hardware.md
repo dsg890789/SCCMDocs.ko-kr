@@ -57,7 +57,7 @@ ms.openlocfilehash: d5aa39a9551cc872631895bb1664de5a35531854
 |자식 기본 사이트에 대한 원격 데이터베이스 서버|16|64개|90|  
 |보조 사이트 서버|8|16|-|  
 
- <sup>1</sup> 사이트 서버와 SQL Server가 동일한 컴퓨터에 설치된 경우 배포에서 사이트와 클라이언트에 대해 최대 [크기 조정 및 규모 숫자 값](/sccm/core/plan-design/configs/size-and-scale-numbers)을 지원합니다. 그러나 이 구성에서는 SQL Server 클러스터 사용과 같은 [System Center Configuration Manager의 고가용성 옵션](/sccm/protect/understand/high-availability-options)이 제한될 수 있습니다.  또한 동일한 컴퓨터에서 실행할 경우 SQL Server와 Configuration Manager 사이트 서버를 둘 다 지원하기 위해 높은 I/O 요구 사항이 필요하기 때문에 대규모 배포를 사용하는 고객은 원격 SQL Server 컴퓨터가 포함된 구성을 사용하는 것이 좋습니다.  
+ <sup>1</sup> 사이트 서버와 SQL Server가 동일한 컴퓨터에 설치된 경우 배포에서 사이트와 클라이언트에 대해 최대 크기 [조정 및 규모 숫자](/sccm/core/plan-design/configs/size-and-scale-numbers) 값을 지원합니다. 그러나 이 구성에서는 SQL Server 클러스터 사용과 같은 [System Center Configuration Manager의 고가용성 옵션](/sccm/protect/understand/high-availability-options)이 제한될 수 있습니다.  또한 동일한 컴퓨터에서 실행할 경우 SQL Server와 Configuration Manager 사이트 서버를 둘 다 지원하기 위해 높은 I/O 요구 사항이 필요하기 때문에 대규모 배포를 사용하는 고객은 원격 SQL Server 컴퓨터가 포함된 구성을 사용하는 것이 좋습니다.  
 
 ###  <a name="a-namebkmkremotesitesystema-remote-site-system-servers"></a><a name="bkmk_RemoteSiteSystem"></a> 원격 사이트 시스템 서버  
  다음 지침은 단일 사이트 시스템 역할을 포함하는 컴퓨터에 적용됩니다. 같은 컴퓨터에 여러 사이트 시스템 역할을 설치할 때는 해당 지침을 조정하세요.  

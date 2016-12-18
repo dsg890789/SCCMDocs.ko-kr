@@ -205,7 +205,7 @@ Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deploy
     > [!NOTE]
     >  DISM에 대한 자세한 내용은 Windows 7 TechNet 문서 라이브러리의 [배포 이미지 서비스 및 관리 기술 참조](http://technet.microsoft.com/library/dd744256\(v=ws.10\).aspx)를 참조하세요.  
 
-5.  부팅 이미지를 탑재한 후 DISM을 사용하여 부팅 이미지에 선택적 구성 요소를 추가합니다. 예를 들어 Windows PE 3.1에서 선택적 구성 요소는 <*설치 경로*>\Windows AIK\Tools\PETools\amd64\WinPE_FPs\\에 있습니다.  
+5.  부팅 이미지를 탑재한 후 DISM을 사용하여 부팅 이미지에 선택적 구성 요소를 추가합니다. 예를 들어 Windows PE 3.1에서 선택적 구성 요소는 <*설치 경로*>\Windows AIK\Tools\PETools\amd64\WinPE_FPs\\에 있습니다.  
 
     > [!NOTE]
     >  이 절차에서는 선택적 구성 요소에 대해 C:\Program Files\Windows AIK\Tools\PETools\amd64\WinPE_FPs 위치를 사용합니다. 사용하는 경로는 Windows AIK에 대해 선택하는 버전 및 설치 옵션에 따라 달라집니다.  

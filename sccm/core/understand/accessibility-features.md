@@ -28,7 +28,7 @@ ms.openlocfilehash: dd5dfb749e101b6fa19ac3c20c110085d3c2416e
  System Center Configuration Manager에는 장애가 있는 사용자가 액세스할 수 있도록 하는 기능이 포함되어 있습니다.
 
 
- ## <a name="a-namebkmkaconsolea-accessibility-features-for-the-configuration-manager-console"></a><a name="bkmk_aconsole"></a> Configuration Manager 콘솔에 대한 내게 필요한 옵션 기능  
+ ## <a name="a-namebkmkaconsolea-accessibility-features-for-the-configuration-manager-console"></a><a name="bkmk_aconsole"></a> Configuration Manager 콘솔에 대한 접근성 기능  
 -   작업 영역에 액세스하려면 다음 키보드 바로 가기 키를 사용합니다.  
 
     |작업 영역|바로 가기 키|  
@@ -53,7 +53,7 @@ ms.openlocfilehash: dd5dfb749e101b6fa19ac3c20c110085d3c2416e
 > [!NOTE]  
 >  이 섹션의 정보는 미국에 거주하는 Microsoft 제품 라이선스를 보유한 사용자에게만 적용될 수 있습니다. 미국 이외의 지역에서 이 제품을 구입한 경우 Microsoft 지원 서비스 전화번호 및 주소 목록을 보려면 소프트웨어 패키지와 함께 제공되는 자회사 정보 카드를 확인하거나 [Microsoft 내게 필요한 옵션 웹 사이트](http://go.microsoft.com/fwlink/?LinkId=8431)를 방문하세요. 현지 자회사에 문의하여 이 섹션에 설명된 제품 유형 및 서비스를 해당 지역에서 이용할 수 있는지 알아볼 수 있습니다. 내게 필요한 옵션에 대한 정보는 일본어 및 프랑스어를 비롯한 여러 언어로 제공됩니다.  
 
-##  <a name="a-namebkmkahelpa-accessibility-features-for-configuration-manager-help"></a><a name="bkmk_ahelp"></a> Configuration Manager에 대한 내게 필요한 옵션 기능 도움말  
+##  <a name="a-namebkmkahelpa-accessibility-features-for-configuration-manager-help"></a><a name="bkmk_ahelp"></a> Configuration Manager 도움말에 대한 접근성 기능  
  Configuration Manager 도움말에는 손놀림이 자유롭지 않거나 시각 장애 또는 기타 장애가 있는 사용자를 포함해 더 다양한 사용자가 쉽게 사용할 수 있도록 지원하는 기능이 있습니다.  
 
 |이러한 기능은 다음과 같습니다.|이 키보드 바로 가기 키를 사용합니다.|  

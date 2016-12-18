@@ -579,7 +579,7 @@ Windows Server 2008 CA(인증 기관)를 사용하는 이 단계별 배포 예�
 
 -   802.1X AMT 기반 컴퓨터용 클라이언트 인증 인증서 만들기 및 발급  
 
-###  <a name="a-namebkmkamtprovisioning2008a-creating-issuing-and-installing-the-amt-provisioning-certificate"></a><a name="BKMK_AMTprovisioning2008"></a> AMT 프로비전 인증서 만들기, 발급 및 설치  
+###  <a name="a-namebkmkamtprovisioning2008a-creating-issuing-and-installing-the-amt-provisioning-certificate"></a><a name="BKMK_AMTprovisioning2008"></a> Creating, Issuing, and Installing the AMT Provisioning Certificate  
  내부 루트 CA의 인증서 지문을 사용하여 AMT 기반 컴퓨터를 구성한 경우 내부 CA를 사용하여 프로비전 인증서를 만듭니다. 이 경우가 아니고 외부 인증 기관을 사용해야 하는 경우, AMT 프로비전 인증서를 발급하는 회사의 지침을 따릅니다. 대개 회사의 공공 웹 사이트에서 인증서를 요청해야 합니다. Intel vPro Expert Center: Microsoft vPro Manageability 웹 사이트([http://go.microsoft.com/fwlink/?LinkId=132001](http://go.microsoft.com/fwlink/?LinkId=132001))에서 선택한 외부 CA에 대한 자세한 지침을 찾을 수도 있습니다.  
 
 > [!IMPORTANT]  

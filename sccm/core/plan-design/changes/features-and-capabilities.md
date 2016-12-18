@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: be7638f006b0eac9e58add7e3926532ba7921e8e
+ms.sourcegitcommit: fc40912a3da034ac0e3f84c72593aa4a9df8d057
+ms.openlocfilehash: c558148104b6338e4038bf690491c88e76dfdcaf
 
 
 ---
@@ -60,7 +60,7 @@ ms.openlocfilehash: be7638f006b0eac9e58add7e3926532ba7921e8e
 
  인터넷에서 Microsoft Intune 서비스를 사용하여 Configuration Manager를 통해 iOS, Android(Samsung KNOX 포함), Windows Phone 및 Windows 장치를 관리할 수 있습니다.
 
- Intune 서비스를 사용하더라도 Configuration Manager 콘솔을 통해 사용 가능한 서비스 연결 지점 사이트 시스템 역할을 사용하여 관리 작업이 완료됩니다. [System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 MDM(모바일 장치 관리)](../../../mdm/plan-design/hybrid-mobile-device-management.md)을 참조하세요.  
+ Intune 서비스를 사용하더라도 Configuration Manager 콘솔을 통해 사용 가능한 서비스 연결 지점 사이트 시스템 역할을 사용하여 관리 작업이 완료됩니다. [System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 MDM(모바일 장치 관리)](../../../mdm/understand/hybrid-mobile-device-management.md)을 참조하세요.  
 
  **온-프레미스 모바일 장치 관리**  
 

@@ -66,7 +66,7 @@ System Center Configuration Manager에 대한 자세한 내용은 다음 리소�
 -   로컬에 저장된 설명서를 검색하는 게 더 쉽고 빠르다면 TechNet에서 여러 항목을 선택하여 로컬에 저장할 수 있습니다. **TechNet에 로그인**한 다음 로컬로 저장할 페이지 맨 위에서 **내보내기** ( **인쇄**옆에 있음)를 클릭합니다. 그러면 저장할 페이지를 추가 및 제거할 수 있는 **여러 페이지 내보내기** 배너가 표시됩니다. **페이지 관리** 를 클릭하여 내보냅니다. 자세한 내용을 보려면 배너에서 **도움말** 을 클릭하세요.  
 
 ###  <a name="a-namebkmkproductgroupbloga-the-system-center-configuration-manager-team-blog"></a><a name="BKMK_ProductGroupBlog"></a> System Center Configuration Manager 팀 블로그  
- Configuration Manager 엔지니어링 및 파트너 팀은 [System Center Configuration Manager 팀 블로그](http://go.microsoft.com/fwlink/?LinkId=191941)를 사용하여 Configuration Manager 및 관련 기술에 대한 기술 정보와 기타 소식을 제공합니다. 이러한 블로그 게시물은 제품 설명서와 지원 정보를 보완합니다.  
+ Configuration Manager 엔지니어링 및 파트너 팀은 [System Center Configuration Manager 팀 블로그](http://go.microsoft.com/fwlink/?LinkId=191941)를 사용하여 Configuration Manager 및 관련 기술에 대한 기술 정보와 기타 소식을 제공합니다. 이러한 블로그 게시물은 제품 설명서와 지원 정보를 보완합니다.  
 
 ###  <a name="a-namebkmksupportoptionsa-support-options-and-community-resources"></a><a name="BKMK_SupportOptions"></a> 지원 옵션 및 커뮤니티 리소스  
  다음 링크는 지원 옵션 및 커뮤니티 리소스에 대한 정보를 제공합니다.  
