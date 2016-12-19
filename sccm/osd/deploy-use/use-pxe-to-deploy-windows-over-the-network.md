@@ -107,6 +107,6 @@ RamDisk TFTP 블록 크기를 사용자 지정할 수 있으며 Configuration Ma
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

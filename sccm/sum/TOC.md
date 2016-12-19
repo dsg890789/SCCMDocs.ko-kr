@@ -1,14 +1,13 @@
-# [이해 및 탐색](understand/software-updates-introduction.md)
-
+# 이해 및 탐색
 ## [소프트웨어 업데이트 소개](understand/software-updates-introduction.md)
 ## [소프트웨어 업데이트에 사용되는 아이콘](understand/software-updates-icons.md)
 
-# [계획 및 디자인](plan-design/plan-for-software-updates.md)
+# 계획 및 디자인
 ## [소프트웨어 업데이트 계획](plan-design/plan-for-software-updates.md)
 ## [소프트웨어 업데이트에 대한 필수 조건](plan-design/prerequisites-for-software-updates.md)
 ## [소프트웨어 업데이트에 대한 보안 및 개인 정보](plan-design/security-and-privacy-for-software-updates.md)
 
-# [시작](get-started/prepare-for-software-updates-management.md)
+# 시작
 ## [소프트웨어 업데이트 관리 준비](get-started/prepare-for-software-updates-management.md)
 ## [소프트웨어 업데이트 지점 설치](get-started/install-a-software-update-point.md)
 ## [소프트웨어 업데이트 동기화](get-started/synchronize-software-updates.md)
@@ -17,7 +16,7 @@
 ## [소프트웨어 업데이트 설정 관리](get-started/manage-settings-for-software-updates.md)
 ## [소프트웨어 업데이트 지점 제거](get-started/remove-a-software-update-point.md)
 
-# [배포 및 사용](deploy-use/deploy-software-updates.md)
+# 배포 및 사용
 ## [소프트웨어 업데이트 다운로드](deploy-use/download-software-updates.md)
 
 ## [업데이트 그룹에 소프트웨어 업데이트 추가](deploy-use/add-software-updates-to-an-update-group.md)
@@ -33,6 +32,6 @@
 ## [보안 업데이트를 배포하는 예제 시나리오](deploy-use/example-scenario-deploy-monitor-monthly-security-updates.md)
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

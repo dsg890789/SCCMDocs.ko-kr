@@ -65,6 +65,6 @@ System Center Configuration Manager 버전 1610부터는 **피어 캐시**를 �
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

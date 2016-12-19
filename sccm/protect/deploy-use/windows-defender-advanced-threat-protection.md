@@ -114,6 +114,6 @@ Windows Defender ATP는 [Windows 보안 센터](https://securitycenter.windows.c
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

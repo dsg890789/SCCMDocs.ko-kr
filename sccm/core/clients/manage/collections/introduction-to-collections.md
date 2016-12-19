@@ -67,6 +67,6 @@ System Center Configuration Manager(ConfigMgr, SCCM이라고도 함)의 컬렉�
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 
