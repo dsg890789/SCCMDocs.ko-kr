@@ -142,6 +142,6 @@ Configuration Manager의 운영 체제 이미지는 WIM(Windows Imaging) 형식 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

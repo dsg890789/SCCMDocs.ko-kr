@@ -95,6 +95,6 @@ System Center Configuration Manager의 업그레이드 패키지에는 컴퓨터
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

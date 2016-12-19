@@ -88,6 +88,6 @@ System Center Configuration Manager 버전 1606부터, 컬렉션에 대한 서�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

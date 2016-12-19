@@ -167,6 +167,6 @@ Background Intelligent Transfer에 대한 다음 구성은 Linux 및 UNIX용 클
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

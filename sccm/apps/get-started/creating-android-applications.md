@@ -42,6 +42,6 @@ Configuration Manager는 다음과 같은 Android용 앱 유형의 배포를 지
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

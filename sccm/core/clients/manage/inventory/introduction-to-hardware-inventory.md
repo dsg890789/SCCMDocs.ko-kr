@@ -58,6 +58,6 @@ System Center Configuration Manager에서 하드웨어 인벤토리를 사용하
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

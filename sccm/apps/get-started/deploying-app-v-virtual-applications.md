@@ -209,6 +209,6 @@ Windows Vista, Windows 7 및 Windows 8의 경우 App-V 클라이언트의 로그
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 
