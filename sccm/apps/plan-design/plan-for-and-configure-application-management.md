@@ -2,7 +2,7 @@
 title: "응용 프로그램 관리 계획 및 구성 | Microsoft 문서"
 description: "System Center Configuration Manager에서 응용 프로그램 배포에 필요한 종속성을 구현하고 구성합니다."
 ms.custom: na
-ms.date: 12/06/2016
+ms.date: 12/13/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f1aaaf1c4fba8613b82d2c7a344a4dab572449a6
-ms.openlocfilehash: e9179a16d6fef73c7e50c3cf1dbfdc41623d1d15
+ms.sourcegitcommit: 7634d5326265d7947a01e5b83374f65911e33aeb
+ms.openlocfilehash: 3ab905192c091cb5ad013c8e0c8590597fb0422a
 
 
 ---
@@ -65,7 +65,11 @@ ms.openlocfilehash: e9179a16d6fef73c7e50c3cf1dbfdc41623d1d15
  사용하도록 선택한 버전과 상관없이 Windows PC에 Configuration Manager 클라이언트를 설치할 때 소프트웨어 센터가 자동으로 설치됩니다.  
 
     > [!TIP]  
-    >  사용자에게 표시되는 소프트웨어 센터의 버전은 Configuration Manager 클라이언트 설정에 따라 다릅니다. 따라서 컬렉션에 배포하는 사용자 지정 클라이언트 설정에 따라 사용되는 버전을 유연하게 제어할 수 있습니다.  
+    >  사용자에게 표시되는 소프트웨어 센터의 버전은 Configuration Manager 클라이언트 설정에 따라 다릅니다. 따라서 컬렉션에 배포하는 사용자 지정 클라이언트 설정에 따라 사용되는 버전을 유연하게 제어할 수 있습니다. 
+
+    > [!IMPORTANT]
+    > 향후 몇 개월 동안 소프트웨어 센터의 이전 버전이 제거될 예정이므로 이전 버전은 더 이상 사용할 수 없게 됩니다.
+    > 클라이언트 설정인 **컴퓨터 에이전트** > **새 소프트웨어 센터 사용**을 활성화하여 새로운 소프트웨어 센터를 사용하도록 클라이언트를 구성할 수 있습니다. 
 
 ## <a name="steps-to-install-and-configure-the-application-catalog-and-software-center"></a>응용 프로그램 카탈로그 및 소프트웨어 센터를 설치하고 구성하는 단계  
 
@@ -130,7 +134,7 @@ ms.openlocfilehash: e9179a16d6fef73c7e50c3cf1dbfdc41623d1d15
     자세한 내용을 보려면 **awebsvcMSI.log** 및 **portlwebMSI.log** 로그 파일을 검색하세요.  
 
 ###  <a name="step-4-configure-the-client-settings-for-the-application-catalog-and-software-center"></a>4단계: 응용 프로그램 카탈로그 및 소프트웨어 센터에 대한 클라이언트 설정 구성  
- 이 절차는 계층의 모든 장치에 적용할 응용 프로그램 카탈로그 및 소프트웨어 센터의 기본 클라이언트 설정을 구성합니다. 이러한 설정을 일부 장치에만 적용하려면 사용자 지정 클라이언트 설정을 만들어 특정 설정을 적용할 장치가 포함된 컬렉션에 배포하면 됩니다. 사용자 지정 장치 설정을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../core/clients/deploy/configure-client-settings.md) 문서의 [사용자 지정 클라이언트 설정을 만들어 배포하는 방법](../../core/clients/deploy/configure-client-settings.md#BKMK_CustomClientSettings) 섹션을 참조하세요.  
+ 이 절차는 계층의 모든 장치에 적용할 응용 프로그램 카탈로그 및 소프트웨어 센터의 기본 클라이언트 설정을 구성합니다. 이러한 설정을 일부 장치에만 적용하려면 사용자 지정 클라이언트 설정을 만들어 특정 설정을 적용할 장치가 포함된 컬렉션에 배포하면 됩니다. 사용자 지정 장치 설정을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../core/clients/deploy/configure-client-settings.md) 문서의 [사용자 지정 클라이언트 설정을 만들어 배포하는 방법](../../core/clients/deploy/configure-client-settings.md#create-and-deploy-custom-client-settings) 섹션을 참조하세요.  
 
 1.  Configuration Manager 콘솔에서 **관리** > **클라이언트 설정** > **기본 클라이언트 설정**을 선택합니다.  
 
@@ -224,6 +228,6 @@ ms.openlocfilehash: e9179a16d6fef73c7e50c3cf1dbfdc41623d1d15
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

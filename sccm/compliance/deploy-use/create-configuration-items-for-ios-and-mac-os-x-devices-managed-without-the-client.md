@@ -1,8 +1,8 @@
 ---
-title: "System Center Configuration Manager 클라이언트 없이 관리되는 iOS 및 Mac OS X 장치에 대한 구성 항목 만들기 | System Center Configuration Manager"
+title: "System Center Configuration Manager 클라이언트 없이 관리되는 iOS 및 Mac OS X 장치에 대한 구성 항목 만들기 | Microsoft 문서"
 description: "System Center Configuration Manager iOS 및 Mac OS X 구성 항목을 사용하여 iOS 및 Mac OS X 장치에 대한 설정을 관리할 수 있습니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/14/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 34fb20b0d793d4b508d4cfc3b45c76a407ff4299
+ms.sourcegitcommit: d023df79e0bcb7d5583224802976a5059c4ee753
+ms.openlocfilehash: ea4024aaa07d40781663725127d64388055c6501
 
 
 ---
@@ -80,8 +80,11 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
 |**최소 암호 길이(문자 수)**|암호의 최소 길이입니다.|  
 |**다음 기간 후 암호 만료(일)**|암호를 변경해야 할 때까지의 기간(일)입니다.|  
 |**저장한 암호 수**|이전에 사용한 암호를 다시 사용하지 못하도록 설정합니다.|  
-|**다음 로그온 실패 횟수 후 장치 초기화**|이 횟수만큼 로그인에 실패하면 장치를 초기화합니다.<br>(iOS에만 해당)|  
-|**암호 복잡도**|'1234' 등의 PIN을 지정할 수 있는지 아니면 강력한 암호를 입력해야 하는지를 선택합니다.|  
+|**다음 로그온 실패 횟수 후 장치 초기화**|이 횟수만큼 로그인에 실패하면 장치를 초기화합니다.<br>(iOS에만 해당)| 
+|**다음 유휴 시간 후 장치 잠그기**|장치가 자동으로 잠길 때까지 비활성 상태로 유지되는 시간(분)을 지정합니다.|
+|**암호 복잡도**|'1234' 등의 PIN을 지정할 수 있는지 아니면 강력한 암호를 입력해야 하는지를 선택합니다.|
+|**단순 암호 허용**|'0000' 및 '1234'와 같은 단순한 암호를 사용할 수 있도록 지정합니다.|
+|**잠금 해제 지문**|지문을 사용하여 장치를 잠금 해제할 수 있습니다.|
 
 ###  <a name="device"></a>장치  
  이러한 설정은 iOS 및 Mac OS X 장치에 적용됩니다.  
@@ -112,7 +115,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
 
 |설정 이름|세부 정보|  
 |------------------|-------------|  
-|**기본 브라우저**|사용자가 기본 인터넷 브라우저를 변경할 수 있습니다.|  
+|**웹 브라우저 허용**|사용자가 기본 장치 웹 브라우저를 사용할 수 있습니다.|  
 |**자동 채우기**|사용자가 브라우저에서 자동 완성 설정을 변경할 수 있습니다.|  
 |**액티브 스크립팅**|브라우저에서 ActiveX 스크립트와 같은 스크립트를 실행할 수 있습니다.|  
 |**팝업 차단**|브라우저 팝업 차단을 사용하거나 사용하지 않도록 설정합니다.|  
@@ -168,8 +171,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
 |**활성화 잠금 허용(감독 모드만)**|이 설정을 사용하면 관리하는 **감독 모드**의 iOS 장치에서 iOS 활성화 잠금을 사용하도록 설정할 수 있습니다. 활성화 잠금에 대한 자세한 내용은 [iOS 활성화 잠금 관리](../../mdm/deploy-use/manage-ios-activation-lock.md)를 참조하세요.
 |**잠금 화면 제어 센터**|장치가 잠겨 있을 때 제어 센터 앱에 액세스할 수 있는지 여부를 제어합니다.|  
 |**잠금 화면 알림 보기**|장치가 잠겨 있을 때 알림을 볼 수 있는지 여부를 제어합니다.|  
-|**잠금 화면 오늘 보기**|장치가 잠겨 있을 때 오늘 보기를 볼 수 있는지 여부를 제어합니다.|  
-|**잠금 해제 지문**|지문 센서를 사용하여 장치 잠금을 해제할 수 있습니다.|  
+|**잠금 화면 오늘 보기**|장치가 잠겨 있을 때 오늘 보기를 볼 수 있는지 여부를 제어합니다.|   
 
 ###  <a name="data-protection"></a>데이터 보호  
  이러한 설정은 iOS 장치에만 적용됩니다.  
@@ -247,7 +249,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
 
     -   **가져오기** - 지정한 앱 목록을 쉼표로 구분된 값 파일로 가져옵니다. 파일의 형식, 앱 이름, 게시자, 앱 번들 ID를 사용합니다.  
 
-2.  작업을 완료한 경우 **다음**을 클릭합니다.  
+2.  작업을 완료한 경우 **다음**을 클릭합니다. 규격 및 비규격 앱 설정을 포함하는 구성 항목은 사용자 컬렉션에 배포해야 합니다.
 
  다음 보고서 모니터 규격 및 비규격 앱 중 하나를 사용할 수 있습니다.  
 
@@ -368,6 +370,6 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

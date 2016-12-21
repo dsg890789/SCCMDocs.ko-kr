@@ -1,8 +1,8 @@
 ---
-title: "Endpoint Protection 모니터링 | System Center Configuration Manager"
+title: "Endpoint Protection 모니터링 | Microsoft 문서"
 description: "System Center Configuration Manager 계층 구조에서 Endpoint Protection을 모니터링하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/9/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: fb5b247ae3fc031cd0beea21b03a45affe3add68
+ms.sourcegitcommit: 9fcbc0bb9c8ccd4265381ca4db7a363c8ae3b54a
+ms.openlocfilehash: 590d95f82a30167dcc0d5191feaa39ecab2b3136
 
 
 ---
@@ -25,13 +25,13 @@ ms.openlocfilehash: fb5b247ae3fc031cd0beea21b03a45affe3add68
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-**모니터링** 작업 영역의 **Endpoint Protection 상태** 노드, **자산 및 준수** 작업 영역의 **Endpoint Protection** 노드 및 보고서를 사용하여 Microsoft System Center 2012 Configuration Manager 계층 구조에서 Endpoint Protection을 모니터링할 수 있습니다.  
+**모니터링** 작업 영역 **보안** 아래의 **Endpoint Protection 상태** 노드, **자산 및 호환성** 작업 영역의 **Endpoint Protection** 노드 및 보고서를 사용하여 Microsoft System Center Configuration Manager 계층에서 Endpoint Protection을 모니터링할 수 있습니다.  
 
 ##  <a name="a-namebkmk1a-how-to-monitor-endpoint-protection-by-using-the-endpoint-protection-status-node"></a><a name="BKMK_1"></a> Endpoint Protection 상태 노드를 사용하여 Endpoint Protection을 모니터링하는 방법  
 
 1.  Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.  
 
-2.  **모니터링** 작업 영역에서 **Endpoint Protection 상태**를 클릭합니다.  
+2.  **모니터링** 작업 영역에서 **보안**을 확장한 다음 **Endpoint Protection 상태**를 클릭합니다.  
 
 3.  에 **컬렉션** 목록에서 상태 정보를 보려는 컬렉션을 선택 합니다.  
 
@@ -49,7 +49,7 @@ ms.openlocfilehash: fb5b247ae3fc031cd0beea21b03a45affe3add68
 
 ##  <a name="a-namebkmk2a-how-to-monitor-endpoint-protection-in-the-assets-and-compliance-workspace"></a><a name="BKMK_2"></a> 자산 및 준수 작업 영역에서 Endpoint Protection을 모니터링하는 방법  
 
-1.  Configuration Manager 콘솔에서 **자산 및 준수**를 클릭합니다.  
+1.  Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.  
 
 2.  에 **자산 및 준수** 작업 영역에서 다음 작업 중 하나를 수행 합니다.  
 
@@ -84,6 +84,6 @@ ms.openlocfilehash: fb5b247ae3fc031cd0beea21b03a45affe3add68
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,8 +1,8 @@
 ---
-title: "클라이언트 설정 | System Center Configuration Manager"
+title: "클라이언트 설정 | Microsoft 문서"
 description: "System Center Configuration Manager에서 관리 콘솔을 사용하여 클라이언트 설정을 선택합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/12/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,12 +13,12 @@ ms.topic: article
 ms.assetid: f7560876-8084-4570-aeab-7fd44f4ba737
 caps.latest.revision: 15
 caps.handback.revision: 0
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f777295958e9cbc729e3759d354521c96ae3e8ac
-ms.openlocfilehash: cbe052891c55dd0c0d58c6e65d783314b0ec8ce9
+ms.sourcegitcommit: 809c7938968b4a6efce6ef37fe7b7baf2c9dd3e7
+ms.openlocfilehash: 1615c183c440b44084651d52bfc50be2d65c2e11
 
 ---
 # <a name="about-client-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 설정 정보
@@ -27,82 +27,92 @@ ms.openlocfilehash: cbe052891c55dd0c0d58c6e65d783314b0ec8ce9
 
 System Center Configuration Manager의 모든 클라이언트 설정은 **관리** 작업 영역에 있는 **클라이언트 설정** 노드의 Configuration Manager 콘솔에서 관리됩니다. Configuration Manager에 일련의 기본 설정이 제공됩니다. 기본 클라이언트 설정을 수정하면 이러한 설정이 계층의 모든 클라이언트에 적용됩니다. 또한 사용자 지정 클라이언트 설정을 구성할 수 있습니다. 사용자 지정 클라이언트 설정을 컬렉션에 할당하면 기본 클라이언트 설정이 재정의됩니다. 클라이언트 설정을 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../../core/clients/deploy/configure-client-settings.md)을 참조하세요.  
 
- 대부분의 클라이언트 설정은 별도의 설명이 필요 없습니다. 다음 섹션에서는 구성 전에 약간의 정보가 필요할 수 있는 클라이언트 설정에 대한 자세한 정보를 제공합니다.  
+ 대부분의 클라이언트 설정은 별도의 설명이 필요하지 않으며, 여기서는 설명이 필요한 항목에 대해 설명합니다.  
 
-##  <a name="a-namebkmkbitsa-background-intelligent-transfer"></a><a name="BKMK_BITS"></a> Background Intelligent Transfer  
+## <a name="background-intelligent-transfer"></a>Background Intelligent Transfer  
 
 -   **BITS 백그라운드 전송의 최대 네트워크 대역폭 제한**  
 
-     이 옵션을 **True** 또는 **예**로 구성할 경우 Configuration Manager 클라이언트에서 BITS 대역폭 제한이 사용됩니다.  
+   **True** 또는 **예**로 설정할 경우 클라이언트에서 BITS 대역폭 제한이 사용됩니다.  
 
 -   **제한 기간 시작 시간**  
 
-     BITS 제한 기간이 시작되는 시간을 현지 시간으로 지정합니다.  
+   BITS 제한 기간의 현지 시작 시간입니다.  
 
 -   **제한 기간 끝 시간**  
 
-     BITS 제한 기간이 끝나는 시간을 현지 시간으로 지정합니다. 이 값이 **제한 기간 시작 시간**과 같을 경우 BITS 제한이 항상 사용됩니다.  
+  BITS 제한 기간의 현지 종료 시간입니다. **제한 기간 시작 시간**과 같을 경우 BITS 제한이 항상 사용됩니다.  
 
 -   **제한 기간 내의 최대 전송 속도(Kbps)**  
 
-     Configuration Manager 클라이언트가 지정된 BITS 제한 기간 동안 사용할 수 있는 최대 전송 속도를 Kbps 단위로 지정합니다.  
+   클라이언트가 해당 기간 동안 사용할 수 있는 최대 전송 속도를 지정합니다.  
 
 -   **제한 기간 외에 BITS 다운로드 허용**  
 
-     제한 기간 외에 BITS 다운로드를 허용하려면 이 옵션을 선택합니다. 이 옵션은 Configuration Manager 클라이언트가 지정된 기간 외에 별도의 BITS 설정을 사용하도록 허용합니다.  
+   Configuration Manager 클라이언트가 지정된 기간이 아닐 때 별도의 BITS 설정을 사용하도록 허용합니다.  
 
 -   **제한 기간 외의 최대 전송 속도(Kbps)**  
 
-     Configuration Manager 클라이언트가 지정된 BITS 제한 기간 이외의 시간에 사용할 최대 전송 속도를 Kbps 단위로 지정합니다. 이 옵션은 지정된 기간 외에 BITS 제한을 허용하도록 선택한 경우에만 구성할 수 있습니다.  
+   BITS 제한 기간 이외의 시간에 BITS 제한을 허용하도록 선택한 경우 해당 기간이 아닐 때 클라이언트가 사용하는 최대 전송 속도입니다.  
 
-##  <a name="a-namebkmkclientpolicydevicesettingsa-client-policy"></a><a name="BKMK_ClientPolicyDeviceSettings"></a> 클라이언트 정책  
+## <a name="client-cache-settings"></a>클라이언트 캐시 설정
+
+- **BranchCache 구성**
+
+  버전 1606부터 [BranchCache](/sccm/core/plan-design/configs/support-for-windows-features-and-networks#branchcache)를 사용하도록 클라이언트 컴퓨터를 설정하는 데 사용됩니다. 클라이언트에 대해 BranchCache 캐싱을 허용하려면 **BranchCache 사용**을 **예**로 설정합니다. 
+
+- **클라이언트 캐시 크기 구성**
+
+  Windows 컴퓨터의 클라이언트 캐시에서 응용 프로그램 및 프로그램 설치에 사용되는 임시 파일이 저장됩니다. **최대 캐시 크기**(MB 또는 디스크의 백분율)를 지정하려면 **예**를 선택합니다. **아니요**를 선택하면 기본 크기인 5120MB가 사용됩니다.
+
+## <a name="client-policy"></a>클라이언트 정책  
 
 -   **클라이언트 정책 폴링 간격(분)**  
 
-     다음 Configuration Manager 클라이언트가 클라이언트 정책을 다운로드하는 빈도를 지정합니다.  
+   다음 Configuration Manager 클라이언트가 클라이언트 정책을 다운로드하는 빈도를 지정합니다.  
 
-    -   Windows 컴퓨터(예: 데스크톱, 서버, 랩톱)  
+  -   Windows 컴퓨터(예: 데스크톱, 서버, 랩톱)  
 
-    -   Configuration Manager에서 등록된 모바일 장치  
+  -   Configuration Manager에서 등록된 모바일 장치  
 
-    -   Mac 컴퓨터  
+  -   Mac 컴퓨터  
 
-    -   Linux 또는 UNIX를 실행하는 컴퓨터  
+  -   Linux 또는 UNIX를 실행하는 컴퓨터  
 
 -   **클라이언트에서 사용자 정책 폴링 사용**  
 
-     이 설정을 **True** 또는 **예**로 구성하고 Configuration Manager에서 사용자를 검색한 경우, 컴퓨터의 Configuration Manager 클라이언트가 로그온한 사용자를 대상으로 하는 응용 프로그램과 프로그램을 받습니다. 사용자를 검색하는 방법에 대한 자세한 내용은 [Configuration Manager의 Active Directory 사용자 검색](../../../core/servers/deploy/configure/about-discovery-methods.md#bkmk_aboutUser)을 참조하세요.  
+   이 설정을 **True** 또는 **예**로 구성한 상태에서 Configuration Manager가 [사용자를 검색](../../../core/servers/deploy/configure/about-discovery-methods.md#bkmk_aboutUser)하면 컴퓨터의 클라이언트가 로그온한 사용자를 대상으로 하는 응용 프로그램과 프로그램을 받습니다.  
 
-     응용 프로그램 카탈로그는 사이트 서버에서 사용자가 사용할 수 있는 소프트웨어 목록을 받기 때문에 응용 프로그램 카탈로그에서 응용 프로그램을 보고 요청하는 사용자에 대해서는 이 설정을 **참** 또는 **예** 로 구성하지 않아도 됩니다. 그러나 이 설정이 **거짓** 또는 **아니요**인 경우 사용자가 응용 프로그램을 사용할 때 다음이 작동하지 않습니다.  
+   응용 프로그램 카탈로그는 사이트 서버에서 사용자가 사용할 수 있는 소프트웨어 목록을 받기 때문에 응용 프로그램 카탈로그에서 응용 프로그램을 보고 요청하는 사용자에 대해서는 이 설정을 **참** 또는 **예** 로 구성하지 않아도 됩니다. 그러나 이 설정이 **거짓** 또는 **아니요**인 경우 사용자가 응용 프로그램을 사용할 때 다음이 작동하지 않습니다.  
 
-    -   사용자가 응용 프로그램 카탈로그에서 보는 응용 프로그램을 설치할 수 없습니다.  
+  -   사용자가 응용 프로그램 카탈로그에서 보는 응용 프로그램을 설치할 수 없습니다.  
 
-    -   사용자에게 응용 프로그램 승인 요청에 대한 알림이 표시되지 않습니다. 대신 응용 프로그램 카탈로그를 새로 고치고 응용 프로그램 상태를 확인해야 합니다.  
+  -   사용자에게 응용 프로그램 승인 요청에 대한 알림이 표시되지 않습니다. 대신 응용 프로그램 카탈로그를 새로 고치고 응용 프로그램 상태를 확인해야 합니다.  
 
-    -   사용자가 응용 프로그램 카탈로그에 게시되는 응용 프로그램에 대한 수정 버전과 업데이트를 받지 않습니다. 그러나 응용 프로그램 카탈로그에서 응용 프로그램 정보에 대한 변경 내용을 볼 수 있습니다.  
+  -   사용자가 응용 프로그램 카탈로그에 게시되는 응용 프로그램에 대한 수정 버전과 업데이트를 받지 않습니다. 그러나 응용 프로그램 카탈로그에서 응용 프로그램 정보에 대한 변경 내용을 볼 수 있습니다.  
 
-    -   클라이언트가 응용 프로그램 카탈로그에서 응용 프로그램을 설치한 후에 응용 프로그램 배포를 제거할 경우 클라이언트는 최대 2일 동안 응용 프로그램이 설치되어 있는지를 계속 확인합니다.  
+  -   클라이언트가 응용 프로그램 카탈로그에서 응용 프로그램을 설치한 후에 응용 프로그램 배포를 제거할 경우 클라이언트는 최대 2일 동안 응용 프로그램이 설치되어 있는지를 계속 확인합니다.  
 
-     또한 이 설정이 **거짓** 또는 **아니요**일 경우 사용자에게 배포한 필수 응용 프로그램 또는 사용자 정책에 포함된 기타 관리 작업을 사용자가 받지 않게 됩니다.  
+   또한 이 설정이 **거짓** 또는 **아니요**일 경우 사용자에게 배포한 필수 응용 프로그램 또는 사용자 정책에 포함된 기타 관리 작업을 사용자가 받지 않게 됩니다.  
 
-     이 설정은 컴퓨터가 인트라넷 및 인터넷에 있는 사용자에게 적용되며, 이와 함께 인터넷에서 사용자 정책을 사용하도록 설정하려는 경우 이 설정을 **참** 또는 **예** 로 구성해야 합니다.  
+   이 설정은 컴퓨터가 인트라넷 및 인터넷에 있는 사용자에게 적용되며, 이와 함께 인터넷에서 사용자 정책을 사용하도록 설정하려는 경우 이 설정을 **참** 또는 **예** 로 구성해야 합니다.  
 
 -   **인터넷 클라이언트의 사용자 정책 요청 사용**  
 
-     클라이언트와 사이트가 인터넷 기반 클라이언트 관리로 구성되어 있고 이 옵션을 **참** 또는 **예** 로 구성했으며 다음 조건이 모두 해당되는 경우, 사용자 컴퓨터가 인터넷에 있을 때 사용자가 사용자 정책을 받게 됩니다.  
+   클라이언트와 사이트가 인터넷 기반 클라이언트 관리로 구성되어 있고 이 옵션을 **참** 또는 **예** 로 구성했으며 다음 조건이 모두 해당되는 경우, 사용자 컴퓨터가 인터넷에 있을 때 사용자가 사용자 정책을 받게 됩니다.  
 
-    -   **클라이언트에 대한 사용자 정책 폴링 사용** 클라이언트 설정이 **참** 으로 구성되거나 **클라이언트에 대한 사용자 정책 사용** 이 **예**로 구성됩니다.  
+  -   **클라이언트에 대한 사용자 정책 폴링 사용** 클라이언트 설정이 **참** 으로 구성되거나 **클라이언트에 대한 사용자 정책 사용** 이 **예**로 구성됩니다.  
 
-    -   인터넷 기반 관리 지점이 Windows 인증(Kerberos 또는 NTLM)을 사용하여 사용자를 성공적으로 인증함  
+  -   인터넷 기반 관리 지점이 Windows 인증(Kerberos 또는 NTLM)을 사용하여 사용자를 성공적으로 인증함  
 
-     이 옵션을 **거짓** 또는 **아니요**로 두거나 이러한 조건 중 하나를 만족하지 않을 경우 인터넷상의 컴퓨터가 컴퓨터 정책만 받게 됩니다. 이 시나리오에서 사용자는 여전히 인터넷 기반 응용 프로그램 카탈로그에서 응용 프로그램을 보고 요청하고 설치할 수 있습니다. 이 설정이 **거짓** 또는 **아니요** 이지만 **클라이언트에 대한 사용자 정책 폴링 사용** 이 **참** 으로 구성되었거나 **클라이언트에 대한 사용자 정책 사용** 이 **예**로 구성된 경우 컴퓨터가 인트라넷에 연결될 때까지 사용자 정책을 받지 않게 됩니다.  
+   이 옵션을 **거짓** 또는 **아니요**로 두거나 이러한 조건 중 하나를 만족하지 않을 경우 인터넷상의 컴퓨터가 컴퓨터 정책만 받게 됩니다. 이 시나리오에서 사용자는 여전히 인터넷 기반 응용 프로그램 카탈로그에서 응용 프로그램을 보고 요청하고 설치할 수 있습니다. 이 설정이 **거짓** 또는 **아니요** 이지만 **클라이언트에 대한 사용자 정책 폴링 사용** 이 **참** 으로 구성되었거나 **클라이언트에 대한 사용자 정책 사용** 이 **예**로 구성된 경우 컴퓨터가 인트라넷에 연결될 때까지 사용자 정책을 받지 않게 됩니다.  
 
-     인터넷상의 클라이언트 관리에 대한 자세한 내용은 [System Center Configuration Manager에서 끝점 간의 통신](../../../core/plan-design/hierarchy/communications-between-endpoints.md)의 [인터넷 또는 신뢰할 수 없는 포리스트에서의 클라이언트 통신에 대한 고려 사항](../../../core/plan-design/hierarchy/communications-between-endpoints.md#BKMK_clientspan)을 참조하세요.  
+   인터넷상의 클라이언트 관리에 대한 자세한 내용은 [System Center Configuration Manager에서 끝점 간의 통신](../../../core/plan-design/hierarchy/communications-between-endpoints.md)의 [인터넷 또는 신뢰할 수 없는 포리스트에서의 클라이언트 통신에 대한 고려 사항](../../../core/plan-design/hierarchy/communications-between-endpoints.md#BKMK_clientspan)을 참조하세요.  
 
-    > [!NOTE]  
-    >  사용자의 응용 프로그램 승인 요청에는 사용자 정책이나 사용자 인증이 필요하지 않습니다.  
+  > [!NOTE]  
+  >  사용자의 응용 프로그램 승인 요청에는 사용자 정책이나 사용자 인증이 필요하지 않습니다.  
 
-##  <a name="a-namebkmkcompliancea-compliance-settings"></a><a name="BKMK_Compliance"></a> Compliance Settings  
+##  <a name="compliance-settings"></a>호환성 설정  
 
 -   **호환성 평가의 일정**  
 
@@ -110,11 +120,9 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
 
 -   **사용자 데이터 및 프로필 사용**  
 
-     계층의 Windows 8 컴퓨터에 사용자 데이터 및 프로필 구성 항목을 배포하려면 **예** 를 선택합니다.  
+     계층의 Windows 8 컴퓨터에 [사용자 데이터 및 프로필](../../../compliance/deploy-use/create-user-data-and-profiles-configuration-items.md) 구성 항목을 배포하려면 **예** 를 선택합니다.  
 
-     사용자 데이터 및 프로필에 대한 자세한 내용은 [System Center Configuration Manager에서 사용자 데이터 및 프로필 구성 항목을 만드는 방법](../../../compliance/deploy-use/create-user-data-and-profiles-configuration-items.md)을 참조하세요.  
-
-##  <a name="a-namebkmkcomputeragentdevicesettingsa-computer-agent"></a><a name="BKMK_ComputerAgentDeviceSettings"></a> 컴퓨터 에이전트  
+## <a name="computer-agent"></a>컴퓨터 에이전트  
 
 -   **기본 응용 프로그램 카탈로그 웹 사이트 지점**  
 
@@ -122,7 +130,7 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
 
     -   사이트에 응용 프로그램 카탈로그 웹 사이트 지점이 포함된 경우 사이트에서 응용 프로그램 카탈로그 웹 사이트 지점이 클라이언트에 자동으로 지정됩니다.  
 
-    -   HTTPS로 구성된 인트라넷의 응용 프로그램 카탈로그 웹 사이트 지점이 HTTPS로 구성되지 않은 응용 프로그램 카탈로그 웹 사이트 지점보다 우선되므로 Rogue 서버로부터 보호됩니다.  
+    -   HTTPS용으로 구성된 인트라넷의 응용 프로그램 카탈로그 웹 사이트 지점이 HTTPS용으로 구성되지 않은 응용 프로그램 카탈로그 웹 사이트 지점보다 우선적으로 사용되므로 Rogue 서버로부터 보호됩니다.  
 
     -   클라이언트가 인트라넷 및 인터넷 기반 클라이언트 관리로 구성된 경우, 인터넷에 있으면 인터넷 기반의 응용 프로그램 카탈로그 웹 사이트 지점이 지정되고 인트라넷에 있으면 인트라넷 기반의 응용 프로그램 카탈로그 웹 사이트 지점이 지정됩니다.  
 
@@ -247,12 +255,17 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
 
      구성된 최종 기한에 도달한 경우 필수 소프트웨어 업데이트를 지연 시간 없이 설치해야 하는 경우 이 설정에 대해 **예** 를 선택하세요.  
 
-##  <a name="a-namebkmkcomputerrestartdevicesettingsa-computer-restart"></a><a name="BKMK_ComputerRestartDeviceSettings"></a> 컴퓨터 다시 시작  
+-   **배포 최종 기한 이후 적용 유예 기간(시간)** 
+    
+     간혹 구성한 기한 이후에도 필수 응용 프로그램 배포 또는 소프트웨어 업데이트를 설치할 수 있는 시간을 사용자에게 더 제공하려는 경우가 있습니다. 컴퓨터가 오랫동안 꺼져 있었거나 많은 응용 프로그램 또는 업데이트 배포를 설치해야 할 때 이런 경우가 필요할 수 있습니다. 예를 들어 최종 사용자가 휴가에서 막 돌아온 경우 지연된 응용 프로그램 배포를 설치하는 데 너무 오래 기다려야 할 수 있습니다. 이 문제를 해결하기 위해 컬렉션에 Configuration Manager 클라이언트 설정을 배포하여 적용 유예 기간을 정의할 수 있습니다.
+    유예 기간은 1~120시간 사이로 설정할 수 있습니다. 이 설정은 **이 배포의 적용을 사용자 기본 설정에 따라 연기** 배포 속성과 함께 사용됩니다. 자세한 내용은 [응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications)를 참조하세요.
+
+##  <a name="computer-restart"></a>컴퓨터 다시 시작  
  이 컴퓨터 다시 시작 설정을 지정할 경우 다시 시작 임시 알림 간격의 값과 최종 카운트다운 간격의 값을 컴퓨터에 적용된 최단 유지 관리 기간보다 더 짧게 설정해야 합니다.  
 
  유지 관리 기간에 대한 자세한 내용은 [System Center Configuration Manager에서 유지 관리 기간을 사용하는 방법](../../../core/clients/manage/collections/use-maintenance-windows.md)을 참조하세요.  
 
-##  <a name="a-namebkmkendpointprotectiondevicesettingsa-endpoint-protection"></a><a name="BKMK_EndpointProtectionDeviceSettings"></a> Endpoint Protection  
+##  <a name="endpoint-protection"></a>Endpoint Protection  
 
 -   **클라이언트 컴퓨터에서 Endpoint Protection 클라이언트 관리**  
 
@@ -290,7 +303,7 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
 
      Configuration Manager에서 클라이언트 컴퓨터에 초기 정의 업데이트만 설치하도록 하려면 **True** 또는 **예**를 선택합니다. 이 설정은 정의 업데이트 초기 설치 중에 불필요한 네트워크 연결을 방지하고 네트워크 대역폭의 사용량을 줄이는 데 유용합니다.  
 
-##  <a name="a-namebkmkhardwareinventorydevicesettingsa-hardware-inventory"></a><a name="BKMK_HardwareInventoryDeviceSettings"></a> 하드웨어 인벤토리  
+##  <a name="hardware-inventory"></a>하드웨어 인벤토리  
 
 -   **최대 사용자 지정 MIF 파일 크기(KB)**  
 
@@ -316,7 +329,7 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
     > [!NOTE]  
     >  이 설정은 기본 클라이언트 설정에서만 사용할 수 있습니다.  
 
-##  <a name="a-namebkmkmeteredinternetconnetionssettingsa-metered-internet-connections"></a><a name="BKMK_MeteredInternetConnetionsSettings"></a> 요금제 인터넷 연결  
+##  <a name="metered-internet-connections"></a>요금제 인터넷 연결  
  Windows 8 클라이언트 컴퓨터에서 데이터 통신 연결을 사용할 경우 해당 컴퓨터가 Configuration Manager 사이트와 통신하는 방식을 관리할 수 있습니다. 때로 인터넷 공급자는 사용자가 요금제 인터넷 연결을 사용할 경우 보내고 받는 데이터 양을 기준으로 요금을 청구하기도 합니다.  
 
 > [!NOTE]  
@@ -348,7 +361,7 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
 
     -   **차단**: Configuration Manager 클라이언트는 데이터 통신 연결을 사용할 경우 Configuration Manager 사이트와 통신을 시도하지 않습니다. 이 설정은 기본값입니다.  
 
-##  <a name="a-namebkmkpowmgmtdevicesettingsa-power-management"></a><a name="BKMK_PowMgmtDeviceSettings"></a> 전원 관리  
+##  <a name="power-management"></a>전원 관리  
 
 -   **사용자가 전원 관리에서 장치를 제외할 수 있도록 허용**  
 
@@ -376,7 +389,7 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
     > [!IMPORTANT]  
     >  이 번호는 사이트 **속성**에서 지정한 번호와 일치해야 합니다. 이 번호는 한 곳에서 변경 시 다른 곳에서 자동으로 업데이트되지 않습니다.  
 
-##  <a name="a-namebkmkremotetoolsdevicesettingsa-remote-tools"></a><a name="BKMK_RemoteToolsDeviceSettings"></a> 원격 도구  
+##  <a name="remote-tools"></a>원격 도구  
 
 -   **클라이언트에서 원격 제어 사용** 및 **방화벽 예외 프로필**  
 
@@ -460,7 +473,7 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
 
      Windows Vista 이후 버전을 실행하는 클라이언트 컴퓨터에 대한 원격 데스크톱 연결을 설정할 때 네트워크 수준 인증을 사용하려면 보다 안전한 이 옵션을 선택합니다. 네트워크 수준 인증을 사용하면 사용자 인증을 완료한 후에 원격 데스크톱 연결을 설정하기 때문에 초기에 원격 컴퓨터 리소스가 더 적게 필요합니다. 이 방법은 컴퓨터를 악의적인 사용자 또는 소프트웨어로부터 보호하고 서비스 거부 공격의 위험을 줄이기 때문에 더욱 안전합니다.  
 
-##  <a name="a-namebkmksoftwaredeploymentdevicesettingsa-software-deployment"></a><a name="BKMK_SoftwareDeploymentDeviceSettings"></a> 소프트웨어 배포  
+## <a name="software-deployment"></a>소프트웨어 배포  
 
 -   **배포의 재평가 일정**  
 
@@ -471,7 +484,7 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
 
      제어판의 **Configuration Manager** **작업** 탭에서 **응용 프로그램 배포 평가 주기** 작업을 선택하여 Configuration Manager 클라이언트 컴퓨터에서 이 작업을 시작할 수도 있습니다.  
 
-##  <a name="a-namebkmksoftinventorydevicesettingsa-software-inventory"></a><a name="BKMK_SoftInventoryDeviceSettings"></a> 소프트웨어 인벤토리  
+##  <a name="software-inventory"></a>소프트웨어 인벤토리  
 
 -   **인벤토리 보고 세부 정보**  
 
@@ -524,7 +537,7 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
         >   
         >  **클라이언트 설정 구성** 의 **모든 수집된 파일의 최대 크기(KB)** 값에는 수집된 모든 파일의 최대 크기가 표시됩니다. 이 크기에 도달하면 파일 수집이 중지됩니다. 이미 수집된 모든 파일은 유지되고 사이트 서버에 전송됩니다.  
 
-        > [!IMPORTANT]  
+        > [!IMPORTANT]
         >  다수의 큰 파일을 수집하도록 소프트웨어 인벤토리를 구성할 경우 네트워크와 사이트 서버의 성능에 부정적인 영향을 미칠 수 있습니다.  
 
          수집된 파일을 확인하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 소프트웨어 인벤토리를 보기 위해 리소스 탐색기를 사용하는 방법](../../../core/clients/manage/inventory/use-resource-explorer-to-view-software-inventory.md)을 참조하세요.  
@@ -543,7 +556,7 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
 
     -   **인벤토리 이름** - 새로 만들기 아이콘을 클릭하고 새 인벤토리 이름을 추가합니다. 소프트웨어 인벤토리에서 이 이름은 **표시 이름** 목록에서 선택한 이름으로 바뀝니다. 바꿀 여러 이름을 추가할 수 있습니다.  
 
-##  <a name="a-namebkmksoftwareupdatesdevicesettinga-software-updates"></a><a name="BKMK_SoftwareUpdatesDeviceSetting"></a> 소프트웨어 업데이트  
+##  <a name="software-updates"></a>소프트웨어 업데이트  
 
 -   **클라이언트에서 소프트웨어 업데이트 사용**  
 
@@ -581,7 +594,7 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
 
      이 설정을 사용하여 이전 설정의 기간을 지정할 수 있습니다. 1~23시간 및 1~365일의 값을 입력할 수 있습니다. 기본적으로, 이 설정은 7일로 구성됩니다.  
 
-##  <a name="a-namebkmkuserdeviceaffinitydevicesettingsa-user-and-device-affinity"></a><a name="BKMK_UserDeviceAffinityDeviceSettings"></a> 사용자 및 장치 선호도  
+##  <a name="user-and-device-affinity"></a>사용자 및 장치 선호도  
 
 -   **사용자 장치 선호도 사용량 임계값(분)**  
 
@@ -598,23 +611,7 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
 
      수집된 사용 정보를 기준으로 하여 Configuration Manager에서 사용자 장치 선호도를 자동으로 만들 수 있도록 설정하려면 **True** 또는 **예**를 선택합니다.  
 
-## <a name="client-cache-settings"></a>클라이언트 캐시 설정
-
-- **클라이언트 캐시 크기 구성**
-
-  클라이언트 캐시 폴더는 Windows 컴퓨터에서 응용 프로그램 및 프로그램 설치에 사용되는 임시 파일을 저장하는 데 사용됩니다. 버전1606부터는 **예**를 선택하여 **최대 캐시 크기** 설정을 통해 클라이언트 캐시 폴더의 크기를 지정합니다. **아니요**로 설정되면 클라이언트 캐시 폴더의 기본값이 5120MB가 됩니다.
-
-  클라이언트 설치 중에 다른 클라이언트 캐시 속성을 설정할 수 있습니다. 자세한 내용은 [Configure the Client Cache for Configuration Manager Clients](../../../core/clients/manage/manage-clients.md#BKMK_ClientCache)항목을 참조하세요.
-
-- **최대 캐시 크기(MB)**
-
-  버전 1606부터 클라이언트 캐시 폴더의 최대 크기를 메가바이트 단위로 지정합니다.
-
-- **최대 캐시 크기(디스크의 백분율)**(버전 1606부터)
-
-  버전 1606부터 클라이언트 캐시 폴더의 최대 크기를 디스크 크기의 백분율로 지정합니다.
-
-##  <a name="a-namebkmkmobiledevicesusersettingsa-mobile-devices"></a><a name="BKMK_MobileDevicesUserSettings"></a> 모바일 장치  
+##  <a name="mobile-devices"></a>모바일 장치  
 
 -   **모바일 장치 등록 프로필**  
 
@@ -623,7 +620,7 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
     > [!IMPORTANT]  
     >  이 옵션을 구성하기 전에 모바일 장치 등록에 사용할 인증서 템플릿을 구성해야 합니다.  
 
-##  <a name="a-namebkmkenrollmentusersettingsa-enrollment"></a><a name="BKMK_EnrollmentUserSettings"></a> 등록  
+##  <a name="enrollment"></a>등록  
 
 -   **모바일 장치 등록 프로필**  
 
@@ -632,7 +629,7 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
     > [!IMPORTANT]  
     >  이 옵션을 구성하기 전에 모바일 장치 등록 또는 Mac 클라이언트 인증서 등록에 사용할 인증서 템플릿을 구성해야 합니다.  
 
-##  <a name="a-namebkmkuserdeviceaffinityusersettingsa-user-and-device-affinity"></a><a name="BKMK_UserDeviceAffinityUserSettings"></a> 사용자 및 장치 선호도  
+## <a name="user-and-device-affinity"></a>사용자 및 장치 선호도  
 
 -   **사용자가 기본 장치를 정의할 수 있도록 허용**  
 
@@ -640,6 +637,6 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

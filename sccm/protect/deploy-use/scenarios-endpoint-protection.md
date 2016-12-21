@@ -1,8 +1,8 @@
 ---
-title: "Endpoint Protection으로 맬웨어로부터 컴퓨터를 보호하는 시나리오 | System Center Configuration Manager"
+title: "Endpoint Protection으로 맬웨어로부터 컴퓨터를 보호하는 시나리오 | Microsoft 문서"
 description: "Configuration Manager에서 Endpoint Protection을 구현하여 맬웨어 공격으로부터 컴퓨터를 보호하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/9/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,8 +15,8 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: d4506bbbe3533d6d9c2353f99658352ad1671a2f
+ms.sourcegitcommit: 9fcbc0bb9c8ccd4265381ca4db7a363c8ae3b54a
+ms.openlocfilehash: 2cdc57b766b18a6fdf21ec8748172c12b11b08db
 
 
 ---
@@ -72,12 +72,12 @@ ms.openlocfilehash: d4506bbbe3533d6d9c2353f99658352ad1671a2f
 |이한일은 Windows 방화벽 정책 만들기 마법사를 통해 도메인 프로필에 대한 다음 설정을 구성하여 정책을 만듭니다.<br /><br /> 1) **Windows 방화벽 설정**: **예**<br /><br /> 2)<br />                    **Windows 방화벽이 새 프로그램을 차단할 때 사용자에게 알림**: **예**|[System Center Configuration Manager에서 Endpoint Protection에 대한 Windows 방화벽 정책을 만들어 배포하는 방법](../../protect/deploy-use/create-windows-firewall-policies.md)을 참조하세요.|  
 |John은 이전에 만든 **Endpoint Protection에 의해 보호된 모든 컴퓨터** 컬렉션에 새 방화벽 정책을 배포합니다.|자세한 내용은 [System Center Configuration Manager에서 Endpoint Protection에 대한 Windows 방화벽 정책을 만들어 배포하는 방법](create-windows-firewall-policies.md)의 "Windows 방화벽 정책을 배포하려면"을 참조하세요.|  
 |John은 Endpoint Protection에 대해 사용 가능한 관리 작업을 사용하여 맬웨어 방지 및 Windows 방화벽 정책을 관리하고, 필요한 경우 주문형 컴퓨터 검사를 수행하고, 강제로 컴퓨터에서 최신 정의를 다운로드하도록 하고, 맬웨어가 검색되었을 때 수행할 추가 작업을 지정합니다.|[System Center Configuration Manager에서 Endpoint Protection에 대한 맬웨어 방지 정책 및 방화벽 설정을 관리하는 방법](endpoint-antimalware-firewall.md)을 참조하세요.|  
-|Jone은 다음 방법을 사용하여 Endpoint Protection의 상태와 Endpoint Protection에 의해 수행된 작업을 모니터링합니다.<br /><br /> 1) **모니터링** 작업 영역에서 **System Center 2012 Endpoint Protection 상태** 노드 사용<br /><br /> 2) **자산 및 준수** 작업 영역에서 **Endpoint Protection** 노드 사용<br /><br /> 3) 기본 제공 Configuration Manager 보고서 사용|[System Center Configuration Manager에서 Endpoint Protection을 모니터링하는 방법](monitor-endpoint-protection.md)을 참조하세요.|  
+|Jone은 다음 방법을 사용하여 Endpoint Protection의 상태와 Endpoint Protection에 의해 수행된 작업을 모니터링합니다.<br /><br /> 1) **모니터링** 작업 영역의 **보안** 아래에서 **Endpoint Protection 상태** 노드 사용<br /><br /> 2) **자산 및 준수** 작업 영역에서 **Endpoint Protection** 노드 사용<br /><br /> 3) 기본 제공 Configuration Manager 보고서 사용|[System Center Configuration Manager에서 Endpoint Protection을 모니터링하는 방법](monitor-endpoint-protection.md)을 참조하세요.|  
 
  John은 관리자에게 Endpoint Protection의 성공적인 구현을 보고하고 Woodgrove Bank의 컴퓨터가 지정된 비즈니스 요구에 따라 맬웨어 방지 소프트웨어를 통해 보호됨을 확인합니다.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

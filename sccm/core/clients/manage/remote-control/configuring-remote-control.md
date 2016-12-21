@@ -2,7 +2,7 @@
 title: "원격 제어 구성 | Microsoft 문서"
 description: "System Center Configuration Manager에서 원격 제어를 설정합니다."
 ms.custom: na
-ms.date: 12/06/2016
+ms.date: 12/12/2016
 ms.prod: configuration-manager
 ms.reviewer: dudeso
 ms.suite: na
@@ -17,8 +17,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 88828e68bc4aff216e83807ea8288c7d42c60cbd
-ms.openlocfilehash: cbfa9dc6cb37518c0a561700272cc882b0041350
+ms.sourcegitcommit: 809c7938968b4a6efce6ef37fe7b7baf2c9dd3e7
+ms.openlocfilehash: 6741c6aa11a8a7c868bff36916afe4d066b9924d
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: cbfa9dc6cb37518c0a561700272cc882b0041350
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
- 이 절차는 원격 제어에 대한 기본 클라이언트 설정 구성에 대해 설명하며 계층의 모든 컴퓨터에 적용됩니다. 이러한 설정이 일부 컴퓨터에만 적용되도록 하려면 사용자 지정 장치 클라이언트 설정을 만들어서 원격 제어 세션에서 사용할 컴퓨터가 포함된 컬렉션에 할당합니다. 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../../../core/clients/deploy/configure-client-settings.md)을 참조하세요. 
+ 이 절차에서는 원격 제어용 기본 클라이언트 설정을 구성하는 방법에 대해 설명합니다. 이러한 설정은 계층의 모든 컴퓨터에 적용됩니다. 이러한 설정이 일부 컴퓨터에만 적용되도록 하려면 원하는 컴퓨터가 포함된 컬렉션에 사용자 지정 장치 클라이언트 설정을 할당합니다. 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../../../core/clients/deploy/configure-client-settings.md)을 참조하세요. 
 
 원격 지원 또는 원격 데스크톱을 사용하려면 Configuration Manager 콘솔을 실행하는 컴퓨터에 설치되고 구성되어야 합니다. 원격 지원 또는 원격 데스크톱을 설치하고 구성하는 방법에 대한 자세한 내용은 Windows 설명서를 참조하세요.  
 
@@ -44,8 +44,17 @@ ms.openlocfilehash: cbfa9dc6cb37518c0a561700272cc882b0041350
 
  클라이언트 컴퓨터는 다음에 클라이언트 정책을 다운로드할 때 이러한 설정으로 구성됩니다. 단일 클라이언트에 대한 정책 검색을 시작하려면 [System Center Configuration Manager에서 클라이언트를 관리하는 방법](../../../../core/clients/manage/manage-clients.md)을 참조하세요.  
 
+#### <a name="enable-keyboard-translation"></a>키보드 변환 사용
+
+Configuration Manager에서는 기본적으로 뷰어의 위치에서 공유자의 위치로 키 위치를 전송합니다. 이로 인해 뷰어와 공유자 간의 키보드 구성이 다를 경우 문제가 발생할 수 있습니다. 예를 들어 영어 키보드를 사용하는 뷰어는 "A"를 입력하지만 공유자의 프랑스어 키보드는 "Q"를 제공합니다. 이제는 뷰어의 키보드에서 공유자에게 문자 자체가 전송되며 뷰어가 입력하려고 했던 내용이 공유자에게 전달되도록 원격 제어를 구성하는 옵션이 제공됩니다.
+
+키보드 변환을 설정하려면 **Configuration Manager 원격 제어**에서 **작업**, **키보드 변환 사용**을 선택하여 키 위치를 전송합니다.
+
+> [!NOTE]
+>
+> ~!#@$%, 등의 특수 키는 올바르게 변환되지 않습니다.
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

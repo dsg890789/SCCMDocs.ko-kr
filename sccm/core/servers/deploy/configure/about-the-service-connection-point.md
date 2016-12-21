@@ -1,5 +1,5 @@
 ---
-title: "서비스 연결 지점 | System Center Configuration Manager"
+title: "서비스 연결점 | Microsoft 문서"
 description: "이 Configuration Manager 사이트 시스템 역할에 대해 알아보고 사용 범위를 이해하고 계획합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: e30c3d4bbf42e008a3f570c843b2f63251bce158
+ms.sourcegitcommit: 8195abd403d94a96d193289ea6e6bf8880d06078
+ms.openlocfilehash: aaa9a80a8429ab315a25862a78d6eb8733fd2e89
 
 
 ---
@@ -28,7 +28,7 @@ ms.openlocfilehash: e30c3d4bbf42e008a3f570c843b2f63251bce158
 
 System Center Configuration Manager 서비스 연결 지점은 계층 구조에 대한 여러 중요한 기능을 제공하는 사이트 시스템 역할입니다. 서비스 연결 지점을 구성하기 전에 이 사이트 시스템 역할을 구성하는 방법에 영향을 줄 수 있는 사용 범위를 이해하고 계획합니다.  
 
--   **Microsoft Intune을 사용하여 모바일 장치 관리** - 이 역할은 이전 버전의 Configuration Manager에서 사용된 Windows Intune 커넥터를 대체하며 Intune 구독 세부 정보로 구성할 수 있습니다. [System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 MDM(모바일 장치 관리)](../../../../mdm/plan-design/hybrid-mobile-device-management.md)을 참조하세요.  
+-   **Microsoft Intune을 사용하여 모바일 장치 관리** - 이 역할은 이전 버전의 Configuration Manager에서 사용된 Windows Intune 커넥터를 대체하며 Intune 구독 세부 정보로 구성할 수 있습니다. [System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 MDM(모바일 장치 관리)](../../../../mdm/understand/hybrid-mobile-device-management.md)을 참조하세요.  
 
 -   **온-프레미스 MDM을 사용하여 모바일 장치 관리** - 이 역할은 인터넷에 연결하지 않는 관리되는 온-프레미스 장치를 지원합니다. [System Center Configuration Manager의 온-프레미스 인프라로 모바일 장치 관리](../../../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)를 참조하세요.  
 
@@ -74,9 +74,11 @@ Configuration Manager 서비스 관리자를 사용하려면 콘솔에서 **모�
 
 **사이트 서버에서 원격 컴퓨터에 역할을 설치하는 경우:**  
 
+-   사이트 서버의 컴퓨터 계정은 원격 서비스 연결을 호스팅하는 컴퓨터의 로컬 관리자여야 합니다.
+
 -   사이트 시스템 설치 계정을 사용하여 역할을 호스트하는 사이트 시스템 서버를 구성해야 합니다.  
 
--   사이트 시스템 설치 계정은 사이트 서버의 배포 관리자가 서비스 연결 지점에서 업데이트를 전송하는 데 사용됩니다.  
+-   사이트 시스템 설치 계정은 사이트 서버의 배포 관리자가 서비스 연결점에서 업데이트를 전송하는 데 사용됩니다.
 
 ##  <a name="a-namebkmkurlsa-internet-access-requirements"></a><a name="bkmk_urls"></a> 인터넷 액세스 요구 사항  
 작업을 사용하려면 서비스 연결 지점 및 해당 컴퓨터와 인터넷 간의 모든 방화벽을 호스트하는 컴퓨터에서 **포트 TCP 443**을 통해 다음 인터넷 위치로 통신을 전달해야 합니다. 서비스 연결 지점에서도 웹 프록시(인증을 사용하거나 사용하지 않고)를 통해 이러한 위치에 액세스할 수 있습니다.  
@@ -95,7 +97,7 @@ Configuration Manager 서비스 관리자를 사용하려면 콘솔에서 **모�
 
 -   sccmconnected-a01.cloudapp.net  
 
-**Microsoft Intune**  
+**Microsoft Intune**  
 
 -   *.manage.microsoft.com  
 -   https://bspmts.mp.microsoft.com/V
@@ -108,8 +110,13 @@ Configuration Manager 서비스 관리자를 사용하려면 콘솔에서 **모�
 
 -   https://go.microsoft.com/fwlink/?LinkID=619849  
 
+## <a name="install-the-service-connection-point"></a>서비스 연결점 설치
+**설치 프로그램**을 실행하여 계층의 최상위 사이트를 설치할 때는 서비스 연결점을 설치할 수 있습니다.
+
+설치 프로그램을 실행한 후나 사이트 시스템 역할을 다시 설치하는 경우에는 **사이트 시스템 역할 추가** 마법사 또는 **사이트 시스템 서버 만들기** 마법사를 사용하여 계층의 최상위 사이트(중앙 관리 사이트 또는 독립 실행형 기본 사이트)에 있는 서버에 사이트 시스템을 설치합니다.  이 두 마법사는 모두 콘솔 **홈** 탭의 **관리** > **사이트 구성** > **서버 및 사이트 시스템 역할**에 있습니다.
 
 
-<!--HONumber=Nov16_HO1-->
+
+<!--HONumber=Dec16_HO3-->
 
 

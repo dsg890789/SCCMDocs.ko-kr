@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: c899b4beaa2aae4eb609291dca0e23f3c266627a
-ms.openlocfilehash: 294166af3d5c6062e3508249c767779876b23931
+ms.sourcegitcommit: ffebee1e85008611a9841dc849bea735d15a88c6
+ms.openlocfilehash: 888b6de9fd2b70e8b4f58e32cca7cf5e615d1dca
 
 
 ---
@@ -51,7 +51,8 @@ ms.openlocfilehash: 294166af3d5c6062e3508249c767779876b23931
 |-|-|-|  
 |NAP(네트워크 액세스 보호) - System Center 2012 Configuration Manager에 있음|7/10/2015|버전 1511|  
 |대역 외 관리 - System Center 2012 Configuration Manager에 있음|10/16/2015|버전 1511|
-|작업 순서: <br /> - 동적 디스크로 변환 <br /> - 배포 도구 설치 |2016/11/18|이러한 작업 순서에 대한 지원은 2017년 6월 1일 이후 처음으로 출시되는 업데이트와 함께 종료됨|  
+|작업 순서: <br /> - 동적 디스크로 변환 <br /> - 배포 도구 설치 |2016/11/18|이러한 작업 순서에 대한 지원은 2017년 6월 1일 이후 처음으로 출시되는 업데이트와 함께 종료됨|
+|새로운 소프트웨어 센터의 모양이 최신 스타일로 변경되었으며, 이전에 Silverlight 종속 응용 프로그램 카탈로그에서만 표시된 앱(사용자가 사용할 수 있는 앱)이 이제 소프트웨어 센터의 **응용 프로그램** 탭 아래에 표시됩니다. 소프트웨어 센터의 **설치 상태** 탭에 있는 링크를 사용하여 응용 프로그램 카탈로그에 액세스할 수 있습니다.<br><br>향후 몇 개월 동안 소프트웨어 센터의 이전 버전이 제거될 예정이므로 이전 버전은 더 이상 사용할 수 없게 됩니다.<br><br>클라이언트 설정인 **컴퓨터 에이전트** > **새 소프트웨어 센터 사용**을 활성화하여 새로운 소프트웨어 센터를 사용하도록 클라이언트를 구성할 수 있습니다.<br><br>소프트웨어 센터에 대한 자세한 내용은 [System Center Configuration Manager에서 응용 프로그램 관리 계획 및 구성](https://docs.microsoft.com/sccm/apps/plan-design/plan-for-and-configure-application-management)을 참조하세요.|2016/12/13|공지 예정| 
 
  **사용되지 않는 서버 운영 체제:**  
 
@@ -111,6 +112,6 @@ ms.openlocfilehash: 294166af3d5c6062e3508249c767779876b23931
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,6 +1,6 @@
 ---
 
-title: "소프트웨어 업데이트 소개 | Configuration Manager"
+title: "소프트웨어 업데이트 소개 | Microsoft 문서"
 description: "System Center Configuration Manager의 소프트웨어 업데이트에 대한 기본 사항을 알아봅니다."
 keywords: 
 author: dougeby
@@ -14,8 +14,8 @@ ms.technology:
 - configmgr-sum
 ms.assetid: e9778b13-c8a3-40eb-8655-34ac8ce9cdaa
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: e41f91b9f796cb6a1a8eb2a500c7f615e07d60ac
+ms.sourcegitcommit: d8cace9edd58e8fa438dbb43e54e57cd0dc55d2b
+ms.openlocfilehash: 2904b904bbaf155f016f55fbd36af80308a42d76
 
 
 
@@ -29,10 +29,10 @@ System Center Configuration Manager의 소프트웨어 업데이트는 기업의
 사용 환경에서 소프트웨어 업데이트를 배포할 수 있는 방법을 보여 주는 예제 시나리오는 [보안 소프트웨어 업데이트를 배포하는 예제 시나리오](../deploy-use/example-scenario-deploy-monitor-monthly-security-updates.md)를 참조하세요.  
 
 ##  <a name="a-namebkmksynchronizationa-software-updates-synchronization"></a><a name="BKMK_Synchronization"></a> 소프트웨어 업데이트 동기화  
- Configuration Manager의 소프트웨어 업데이트 동기화는 Microsoft 업데이트를 사용하여 소프트웨어 업데이트 메타데이터를 검색합니다. Configuration Manager 콘솔에서 수동으로 동기화를 시작하면 최상위 사이트(중앙 관리 사이트 또는 독립 실행형 기본 사이트)가 일정에 따라 Microsoft 업데이트와 동기화합니다. Configuration Manager가 최상위 사이트에서 소프트웨어 업데이트 동기화를 마치면 하위 사이트가 있는 경우 하위 사이트에서 소프트웨어 업데이트 동기화가 시작됩니다. 각 기본 사이트 또는 보조 사이트에서 동기화를 완료하면 클라이언트 컴퓨터에 소프트웨어 업데이트 지점의 위치를 제공하는 사이트 전체 정책이 만들어집니다.  
+ Configuration Manager의 소프트웨어 업데이트 동기화는 Microsoft 업데이트에 연결하여 소프트웨어 업데이트 메타데이터를 검색합니다. Configuration Manager 콘솔에서 수동으로 동기화를 시작하면 최상위 사이트(중앙 관리 사이트 또는 독립 실행형 기본 사이트)가 일정에 따라 Microsoft 업데이트와 동기화합니다. Configuration Manager가 최상위 사이트에서 소프트웨어 업데이트 동기화를 마치면 하위 사이트가 있는 경우 하위 사이트에서 소프트웨어 업데이트 동기화가 시작됩니다. 각 기본 사이트 또는 보조 사이트에서 동기화를 완료하면 클라이언트 컴퓨터에 소프트웨어 업데이트 지점의 위치를 제공하는 사이트 전체 정책이 만들어집니다.  
 
 > [!NOTE]  
->  클라이언트 설정에서 소프트웨어 업데이트는 기본적으로 사용됩니다. 그러나 **클라이언트에서 소프트웨어 업데이트 사용** 클라이언트 설정이 **아니요** 로 설정되어 컬렉션이나 기본 설정에서 소프트웨어 업데이트를 사용하지 않는 경우 소프트웨어 업데이트 지점의 위치를 연결된 클라이언트로 보내지 않습니다. 자세한 내용은 [소프트웨어 업데이트 클라이언트 설정](../../core/clients/deploy/about-client-settings.md#BKMK_SoftwareUpdatesDeviceSetting)을 참조하세요.  
+>  클라이언트 설정에서 소프트웨어 업데이트는 기본적으로 사용됩니다. 그러나 **클라이언트에서 소프트웨어 업데이트 사용** 클라이언트 설정이 **아니요** 로 설정되어 컬렉션이나 기본 설정에서 소프트웨어 업데이트를 사용하지 않는 경우 소프트웨어 업데이트 지점의 위치를 연결된 클라이언트로 보내지 않습니다. 자세한 내용은 [소프트웨어 업데이트 클라이언트 설정](../../core/clients/deploy/about-client-settings.md#software-updates)을 참조하세요.  
 
  클라이언트는 정책을 받은 다음 소프트웨어 업데이트 호환성 검사를 시작하고 WMI(Windows Management Instrumentation)에 정보를 씁니다. 그러면 호환성 정보가 관리 지점으로 전송되고 여기서 이 정보를 사이트 서버로 보냅니다. 호환성 평가에 대한 자세한 내용은 이 항목에서 [Software updates compliance assessment](#BKMK_SUMCompliance) 섹션을 참조하세요.  
 
@@ -132,11 +132,11 @@ System Center Configuration Manager의 소프트웨어 업데이트는 기업의
 
  검사 일정을 포함해 소프트웨어 업데이트 호환성에 대한 검사는 다음 방식으로 시작할 수 있습니다.  
 
--   **소프트웨어 업데이트 검사 일정**: 소프트웨어 업데이트 준수 검사는 소프트웨어 업데이트 클라이언트 에이전트 설정에 구성된 검사 일정에 따라 시작됩니다. 소프트웨어 업데이트 클라이언트 설정을 구성하는 방법에 대한 자세한 내용은 [소프트웨어 업데이트 클라이언트 설정](../../core/clients/deploy/about-client-settings.md#BKMK_SoftwareUpdatesDeviceSetting)을 참조하세요.  
+-   **소프트웨어 업데이트 검사 일정**: 소프트웨어 업데이트 준수 검사는 소프트웨어 업데이트 클라이언트 에이전트 설정에 구성된 검사 일정에 따라 시작됩니다. 소프트웨어 업데이트 클라이언트 설정을 구성하는 방법에 대한 자세한 내용은 [소프트웨어 업데이트 클라이언트 설정](../../core/clients/deploy/about-client-settings.md#software-updates)을 참조하세요.  
 
 -   **Configuration Manager 속성 작업**: 사용자는 클라이언트 컴퓨터의 **Configuration Manager 속성** 대화 상자에 있는 **작업** 탭에서 **소프트웨어 업데이트 검사 주기** 또는 **소프트웨어 업데이트 배포 평가 주기** 작업을 시작할 수 있습니다.  
 
--   **배포 재평가 일정**: 소프트웨어 업데이트 준수에 대한 배포 평가 및 검사는 소프트웨어 업데이트 클라이언트 에이전트 설정에 구성된 배포 재평가 일정에 따라 시작됩니다. 소프트웨어 업데이트 클라이언트 설정에 대한 자세한 내용은 [소프트웨어 업데이트 클라이언트 설정](../../core/clients/deploy/about-client-settings.md#BKMK_SoftwareUpdatesDeviceSetting)을 참조하세요.  
+-   **배포 재평가 일정**: 소프트웨어 업데이트 준수에 대한 배포 평가 및 검사는 소프트웨어 업데이트 클라이언트 에이전트 설정에 구성된 배포 재평가 일정에 따라 시작됩니다. 소프트웨어 업데이트 클라이언트 설정에 대한 자세한 내용은 [소프트웨어 업데이트 클라이언트 설정](../../core/clients/deploy/about-client-settings.md#software-updates)을 참조하세요.  
 
 -   **업데이트 파일 다운로드 전**: 클라이언트 컴퓨터에서 새 필수 배포에 대한 할당 정책을 받으면 소프트웨어 업데이트 클라이언트 에이전트에서는 소프트웨어 업데이트 파일을 로컬 클라이언트 캐시에 다운로드합니다. 소프트웨어 업데이트 파일이 다운로드되기 전에 클라이언트 에이전트는 검사를 시작하여 소프트웨어 업데이트가 아직 필요한지 확인합니다.  
 
@@ -285,6 +285,6 @@ System Center Configuration Manager의 소프트웨어 업데이트는 기업의
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 
