@@ -2,7 +2,7 @@
 title: "원격 제어 구성 | Microsoft 문서"
 description: "System Center Configuration Manager에서 원격 제어를 설정합니다."
 ms.custom: na
-ms.date: 12/12/2016
+ms.date: 12/26/2016
 ms.prod: configuration-manager
 ms.reviewer: dudeso
 ms.suite: na
@@ -17,8 +17,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 809c7938968b4a6efce6ef37fe7b7baf2c9dd3e7
-ms.openlocfilehash: 6741c6aa11a8a7c868bff36916afe4d066b9924d
+ms.sourcegitcommit: 9206b82eca02877c30eebf146d42bcca7290eb42
+ms.openlocfilehash: 20c28a625adb69f239b9c0e7673e57dd39e8d561
 
 
 ---
@@ -55,6 +55,21 @@ Configuration Manager에서는 기본적으로 뷰어의 위치에서 공유자�
 > ~!#@$%, 등의 특수 키는 올바르게 변환되지 않습니다.
 
 
-<!--HONumber=Dec16_HO3-->
+## <a name="keyboard-shortcuts-for-the-remote-control-viewer"></a>원격 제어 뷰어를 위한 바로 가기 키
+
+|키보드 바로 가기 키|설명|  
+|-----------------------|-----------------|  
+|Alt+Page Up|실행 중인 프로그램 간에 왼쪽에서 오른쪽으로 전환합니다.|  
+|Alt+Page Down|실행 중인 프로그램 간에 오른쪽에서 왼쪽으로 전환합니다.|  
+|Alt+Insert|실행중인 프로그램을 열린 순서대로 돌아가며 선택합니다.|  
+|Alt+Home|**시작** 메뉴를 표시합니다.|  
+|Ctrl+Alt+End|Windows 보안 대화 상자를 표시합니다(Ctrl+Alt+Del).|  
+|Alt+Delete|Windows 메뉴를 표시합니다.|  
+|Ctrl+Alt+빼기 기호(숫자 키패드의 키)|로컬 컴퓨터의 활성 창을 원격 컴퓨터 클립보드에 복사합니다.|  
+|Ctrl+Alt+더하기 기호(숫자 키패드의 키)|전체 로컬 컴퓨터의 창 영역을 원격 컴퓨터 클립보드에 복사합니다.|  
+
+
+
+<!--HONumber=Dec16_HO5-->
 
 
