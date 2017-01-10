@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 8195abd403d94a96d193289ea6e6bf8880d06078
-ms.openlocfilehash: aaa9a80a8429ab315a25862a78d6eb8733fd2e89
+ms.sourcegitcommit: 4a8d98addcd463eb82d8b7100b44254a10d21992
+ms.openlocfilehash: b5f7ad01f7a32d69d0c75b3c80a053f3c020c036
 
 
 ---
@@ -40,7 +40,9 @@ System Center Configuration Manager 서비스 연결 지점은 계층 구조에 
 
     -   사용하는 버전의 Configuration Manager에 적용되는 Configuration Manager 업데이트 식별  
 
-     [사용 현황 데이터 수준 및 설정](../../../../core/servers/deploy/install/setup-reference.md#bkmk_usage)을 참조하세요.  
+  각 수준에서 수집되는 데이터 및 역할이 설치된 후 수집 수준을 변경하는 방법에 대한 자세한 내용을 보려면 [진단 및 사용 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 확인한 다음 사용하는 Configuration Manager 버전에 대한 링크를 클릭하세요.  
+
+    자세한 내용은 [사용 데이터 수준 및 설정](../../../../core/servers/deploy/install/setup-reference.md#bkmk_usage)을 참조하세요.  
 
 -   **Configuration Manager 인프라에 적용되는 업데이트 다운로드** - 업로드하는 사용 현황 데이터를 기준으로 인프라와 관련된 업데이트만 사용할 수 있습니다.  
 
@@ -117,6 +119,6 @@ Configuration Manager 서비스 관리자를 사용하려면 콘솔에서 **모�
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 

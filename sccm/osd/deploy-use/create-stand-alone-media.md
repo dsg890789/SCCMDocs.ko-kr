@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager에서 독립 실행형 미디어 만들기 | Microsoft 문서"
 description: "독립 실행형 미디어를 사용하여 Configuration Manager 사이트나 네트워크에 연결하지 않고 컴퓨터에 운영 체제를 배포합니다."
 ms.custom: na
-ms.date: 12/06/2016
+ms.date: 12/21/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 06ade037c580d64503e6b8b5c3bf31004ab0650b
-ms.openlocfilehash: b566c101b58774805a6ff103fd0c9ad16603ed34
+ms.sourcegitcommit: 66cd6d099acdd9db2bc913a69993aaf5e17237fe
+ms.openlocfilehash: 411ca1d13778521f7fa0dba71980158477cd0735
 
 
 ---
@@ -45,8 +45,9 @@ Configuration Manager의 독립 실행형 미디어에는 Configuration Manager 
 다음 작업은 독립 실행형 미디어에 대해 지원되지 않습니다.
 - 작업 순서의 드라이버 자동 적용 단계. 드라이버 카탈로그에서 장치 드라이버 자동 적용은 지원되지 않지만 Windows 설치 프로그램에서 지정된 드라이버 집합을 사용할 수 있도록 드라이버 패키지 적용 단계를 선택할 수 있습니다.
 - 작업 순서의 패키지 콘텐츠 다운로드 단계. 독립 실행형 미디어에서는 관리 지점 정보가 제공되지 않으므로 콘텐츠 위치를 열거하려고 하면 단계가 실패합니다.
-- 소프트웨어 업데이트 설치
+- 소프트웨어 업데이트 설치.
 - 운영 체제 배포 전에 소프트웨어를 설치합니다.
+- 비운영 체제 배포에 대한 작업 순서.
 - 사용자를 대상 컴퓨터와 연결하여 사용자 장치 선호도 지원
 - 동적 패키지는 패키지 설치 작업을 통해 설치됩니다.
 - 동적 응용 프로그램은 응용 프로그램 설치 작업을 통해 설치됩니다.
@@ -106,7 +107,11 @@ Before you run the Create Task Sequence Media Wizard to create media for a CD or
     > [!IMPORTANT]  
     >  On stand-alone media, only the task sequence steps and their variables are encrypted. The remaining content of the media is not encrypted, so do not include any sensitive information in task sequence scripts. Store and implement all sensitive information by using task sequence variables.  
 
-7.  On the **Stand-Alone CD/DVD** page, specify the task sequence that deploys the operating system, and then click **Next**. The wizard lets you select only those task sequences that are associated with a boot image.  
+7.  On the **Stand-Alone CD/DVD** page, specify the task sequence that deploys the operating system, and then click **Next**. Choose **Detect associated application dependencies and add them to this media** to add content to the stand-alone media for application dependencies.
+> [!TIP]
+> If you do not see expected application dependencies, deselect and then reselect the **Detect associated application dependencies and add them to this media** setting to refresh the list.
+
+The wizard lets you select only those task sequences that are associated with a boot image.  
 
 8.  On the **Distribution Points** page, specify the distribution points that contain the content required by the task sequence, and then click **Next**.  
 
@@ -157,6 +162,6 @@ Before you run the Create Task Sequence Media Wizard to create media for a CD or
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO4-->
 
 

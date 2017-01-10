@@ -2,7 +2,7 @@
 title: "응용 프로그램 관리 소개 | Microsoft 문서"
 description: "System Center Configuration Manager 응용 프로그램을 관리 및 배포하는 데 필요한 기본 정보를 검색합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/23/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,8 +18,8 @@ manager: angrobe
 experimental: true
 experiment_id: rob-table-161101
 translationtype: Human Translation
-ms.sourcegitcommit: aa985dcb947803f7bc6d770f80a89a2fe6750681
-ms.openlocfilehash: 4be1fdaeeba2859389ea87b49b8e5891a28d052c
+ms.sourcegitcommit: 5aef08865b232ff2dacec6906098bebf4e42e6b1
+ms.openlocfilehash: 699adb5fac0c625c321db011af6989cc4c0778ec
 
 
 ---
@@ -56,12 +56,12 @@ ms.openlocfilehash: 4be1fdaeeba2859389ea87b49b8e5891a28d052c
  Configuration Manager에서는 다음과 같은 앱 유형을 배포할 수 있습니다.  
 
 - Windows Installer(*.msi 파일)
-- Windows 앱 패키지(*.appx, \*.appxbundle)
+- Windows 앱 패키지(*.appx, *.appxbundle)
 - Windows 앱 패키지(Windows 스토어)
 - Microsoft Application Virtualization 4
 - Microsoft Application Virtualization 5
 - Windows Mobile 캐비닛
-- Mac OS X  
+- macOS  
 
 
 또한 Microsoft Intune 또는 Configuration Manager 온-프레미스 장치 관리를 통해 장치를 관리하는 경우 다음과 같은 앱 유형을 추가로 관리할 수 있습니다.
@@ -113,6 +113,6 @@ ms.openlocfilehash: 4be1fdaeeba2859389ea87b49b8e5891a28d052c
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 

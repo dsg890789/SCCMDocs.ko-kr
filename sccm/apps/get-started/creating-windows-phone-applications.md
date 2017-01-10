@@ -2,7 +2,7 @@
 title: "Windows Phone 응용 프로그램 만들기 | Microsoft 문서"
 description: "Windows Phone 장치용 응용 프로그램을 만들고 배포할 때 고려해야 할 사항을 확인합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/23/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 557888d1f1f899e3198c430bbe5ccdd44178f824
-ms.openlocfilehash: 5cd1ba42afd13e98565d24d1ec8a3ee209e8532c
+ms.sourcegitcommit: 5aef08865b232ff2dacec6906098bebf4e42e6b1
+ms.openlocfilehash: c230212d72e1c00856d6869414f2db927b1b79ad
 
 
 ---
@@ -33,13 +33,14 @@ ms.openlocfilehash: 5cd1ba42afd13e98565d24d1ec8a3ee209e8532c
 |장치 유형|지원되는 파일 형식|  
 |-----------------|---------------------|  
 |Windows Phone 8|*.xap|  
-|Windows Phone 8.1|*.xap, *.appx, *.appxbundle|  
+|Windows Phone 8.1|*.xap, *.appx, *.appxbundle|
+|Windows 10 Mobile|*.xap, *.appx, *.appxbundle|
 
  다음 배포 작업이 지원됩니다.  
 
 |장치 유형|지원되는 작업|  
 |-----------------|-----------------------|  
-|Windows Phone 8 및 Windows Phone 8.1|사용 가능, 필수, 제거|  
+|Windows Phone 8, Windows Phone 8.1 및 Windows 10 Mobile|사용 가능, 필수, 제거|  
 
 ## <a name="steps-to-deploy-the-latest-windows-phone-company-portal-app-with-supersedence"></a>교체를 통해 최신 Windows Phone 회사 포털 앱을 배포하는 단계  
  다음 표에는 최신 Windows Phone 8 회사 포털 앱을 만들어 배포하기 위한 단계, 세부 정보 및 추가 정보가 나와 있습니다.  
@@ -56,6 +57,6 @@ ms.openlocfilehash: 5cd1ba42afd13e98565d24d1ec8a3ee209e8532c
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 

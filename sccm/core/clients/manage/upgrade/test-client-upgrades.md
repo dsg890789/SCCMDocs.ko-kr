@@ -2,7 +2,7 @@
 title: "사전 프로덕션 컬렉션에서 클라이언트 업그레이드 테스트 | Microsoft 문서"
 description: "System Center Configuration Manager의 사전 프로덕션 컬렉션에서 클라이언트 업그레이드를 테스트합니다."
 ms.custom: na
-ms.date: 12/04/2016
+ms.date: 12/12/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,12 +17,12 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 17b36eae97272c408fce20e1f88812dafc984773
-ms.openlocfilehash: bfc53760572e71814ebf0e38ea24c5c4684619ee
+ms.sourcegitcommit: 52d2e088b8db3c2e9a0af640ca3db72b9fd7af60
+ms.openlocfilehash: 250c9312b932670c408554f3968ae43ae4f3dbaa
 
 
 ---
-# <a name="how-to-test-client-upgrades-in-a-preproduction-collection-in-system-center-configuration-manager"></a>System Center Configuration Manager의 사전 프로덕션 컬렉션에서 클라이언트 업그레이드를 테스트하는 방법
+# <a name="how-to-test-client-upgrades-in-a-pre-production-collection-in-system-center-configuration-manager"></a>System Center Configuration Manager의 사전 프로덕션 컬렉션에서 클라이언트 업그레이드를 테스트하는 방법
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -33,21 +33,15 @@ ms.openlocfilehash: bfc53760572e71814ebf0e38ea24c5c4684619ee
 
  사전 프로덕션에서 클라이언트를 테스트하려면 기본적인 3단계를 수행해야 합니다.  
 
-1.  사전 프로덕션 컬렉션을 사용하도록[사전 프로덕션 컬렉션을 사용하도록 자동 클라이언트 업그레이드를 구성하려면](#BKMK_config)   
+1.  사전 프로덕션 컬렉션을 사용하도록 자동 클라이언트 업그레이드를 구성합니다.  
 
-2.  새 버전의 클라이언트가 포함된[새 버전의 클라이언트가 포함된 Configuration Manager 업데이트를 설치하려면](#BKMK_install) . 설치하는 동안 새 클라이언트 소프트웨어용 사전 프로덕션 컬렉션을 지정합니다.  
+2.  새 버전의 클라이언트가 포함된 Configuration Manager 업데이트를 설치합니다.  
 
-3.  테스트를 완료한 후 [새 클라이언트의 수준을 프로덕션 클라이언트로 올리려면](#BKMK_promote)  
+3.  새 클라이언트를 프로덕션 수준으로 올립니다.  
 
-> [!TIP]  
->  \(Configuration Manager 2007 또는 System Center 2012 Configuration Manager\)와 같은 이전 버전의 Configuration Manager에서 서버 인프라를 업그레이드하는 경우 현재 분기 업데이트를 모두 설치하는 등 서버 업그레이드를 완료하는 것이 좋습니다. 이렇게 하면 Configuration Manager 클라이언트를 업그레이드하기 전에 클라이언트 소프트웨어를 최신 버전으로 설정할 수 있습니다.  
+##  <a name="to-configure-automatic-client-upgrades-to-use-a-pre-production-collection"></a>사전 프로덕션 컬렉션을 사용하도록 자동 클라이언트 업그레이드를 구성하려면  
 
-##  <a name="a-namebkmkconfiga-to-configure-automatic-client-upgrades-to-use-a-preproduction-collection"></a><a name="BKMK_config"></a> 사전 프로덕션 컬렉션을 사용하도록 자동 클라이언트 업그레이드를 구성하려면  
-
-1. 사전 프로덕션 클라이언트를 배포할 컴퓨터를 포함하는 컬렉션을 설정합니다. 이 단계를 수행하는 방법에 대한 자세한 내용은 [컬렉션을 만드는 방법](..\collections\create-collections.md)을 참조하세요.
-
-> [!NOTE]
-> 사전 프로덕션 컬렉션에 작업 그룹 컴퓨터를 포함하지 마세요. 작업 그룹 컴퓨터는 배포 지점이 사전 프로덕션 클라이언트 패키지에 액세스하는 데 필요한 인증을 사용할 수 없습니다.   
+1. 사전 프로덕션 클라이언트를 배포할 컴퓨터를 포함하는 [컬렉션을 설정](..\collections\create-collections.md)합니다. 사전 프로덕션 컬렉션에 작업 그룹 컴퓨터를 포함하지 마세요. 작업 그룹 컴퓨터는 배포 지점이 사전 프로덕션 클라이언트 패키지에 액세스하는 데 필요한 인증을 사용할 수 없습니다.   
 
 1.  Configuration Manager 콘솔에서 **관리** > **사이트 구성** > **사이트**를 열고 **계층 설정**을 선택합니다.  
 
@@ -57,8 +51,10 @@ ms.openlocfilehash: bfc53760572e71814ebf0e38ea24c5c4684619ee
 
     -   사전 프로덕션 컬렉션으로 사용하는 컬렉션 이름 입력  
 
+![클라이언트 업그레이드 테스트](media/test-client-upgrades.png)
 
-##  <a name="a-namebkmkinstalla-to-install-a-configuration-manager-update-that-includes-a-new-version-of-the-client"></a><a name="BKMK_install"></a> 새 버전의 클라이언트가 포함된 Configuration Manager 업데이트를 설치하려면  
+
+##  <a name="to-install-a-configuration-manager-update-that-includes-a-new-version-of-the-client"></a>새 버전의 클라이언트가 포함된 Configuration Manager 업데이트를 설치하려면  
 
 1.  Configuration Manager 콘솔에서 **관리** > **Cloud Services** > **업데이트 및 서비스**를 열고 **사용 가능** 업데이트를 선택한 다음 **업데이트 팩 설치**를 선택합니다.  
 
@@ -73,19 +69,19 @@ ms.openlocfilehash: bfc53760572e71814ebf0e38ea24c5c4684619ee
     > [!NOTE]
     > 사전 프로덕션 컬렉션의 사이트 시스템 역할을 호스팅하는 컴퓨터의 배포 상태는 클라이언트가 배포된 경우에도 **호환되지 않음**으로 보고될 수 있습니다. 클라이언트 수준을 프로덕션에 올리면 배포 상태가 올바르게 나타납니다.
 
-##  <a name="a-namebkmkpromotea-to-promote-the-new-client-to-production"></a><a name="BKMK_promote"></a> 새 클라이언트를 프로덕션으로 승격하려면  
+##  <a name="to-promote-the-new-client-to-production"></a>새 클라이언트를 프로덕션으로 승격하려면  
 
 1.  Configuration Manager 콘솔에서 **관리** > **Cloud Services** > **업데이트 및 서비스**를 열고 **사전 프로덕션 클라이언트 수준 올리기**를 선택합니다.
 
     > [!TIP]
     > **사전 프로덕션 클라이언트 수준 올리기** 단추는 **모니터링** > **클라이언트 상태** > **사전 프로덕션 클라이언트 배포**에서 콘솔의 클라이언트 배포를 모니터링할 경우에도 사용할 수 있습니다.
 
-2.  대화 상자에서 프로덕션 및 사전 프로덕션의 클라이언트 버전을 검토하고 올바른 사전 프로덕션 컬렉션이 지정되었는지 확인한 다음 **승격**을 클릭합니다. 확인 상자에서 **예**를 클릭합니다.  
+2.  프로덕션 및 사전 프로덕션의 클라이언트 버전을 검토하고 올바른 사전 프로덕션 컬렉션이 지정되었는지 확인한 다음 **수준 올리기**, **예**를 차례로 클릭합니다.  
 
-3.  대화 상자를 닫으면 계층에서 사용하는 현재 클라이언트 버전이 업데이트된 클라이언트 버전으로 대체됩니다. 그런 다음 전체 사이트에 대해 클라이언트를 업그레이드할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 Windows 컴퓨터용 클라이언트를 업그레이드하는 방법](../../../../core/clients/manage/upgrade/upgrade-clients-for-windows-computers.md)을 참조하세요.  
+3.  대화 상자를 닫으면 계층에서 사용하는 클라이언트 버전이 업데이트된 클라이언트 버전으로 대체됩니다. 그런 다음 전체 사이트에 대해 클라이언트를 업그레이드할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 Windows 컴퓨터용 클라이언트를 업그레이드하는 방법](../../../../core/clients/manage/upgrade/upgrade-clients-for-windows-computers.md)을 참조하세요.  
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

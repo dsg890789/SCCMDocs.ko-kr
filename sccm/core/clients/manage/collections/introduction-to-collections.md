@@ -2,7 +2,7 @@
 title: "컬렉션 소개 | Microsoft 문서"
 description: "System Center Configuration Manager에서 컬렉션을 사용하는 방법을 소개합니다."
 ms.custom: na
-ms.date: 12/05/2016
+ms.date: 01/03/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 08a509cacb711ed6d1ae188d5512a026a12417f2
-ms.openlocfilehash: 8a228a55c198df08701f28123696e35cc73fd98c
+ms.sourcegitcommit: 05c27c7aa36e0b4236867766dab36125c31467b3
+ms.openlocfilehash: fd4c6fd85d12592b3d4f57a48cf6da6c7a668615
 
 
 ---
@@ -25,13 +25,13 @@ ms.openlocfilehash: 8a228a55c198df08701f28123696e35cc73fd98c
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager(ConfigMgr, SCCM이라고도 함)의 컬렉션을 사용하면 리소스를 쉽게 관리할 수 있는 단위로 구성할 수 있습니다. 클라이언트 관리 요구에 맞게 컬렉션을 만들고 여러 리소스에 대한 작업을 한 번에 수행할 수 있습니다. 
+컬렉션을 사용하면 리소스를 관리 가능한 단위로 구성할 수 있습니다. 클라이언트 관리 요구에 맞게 컬렉션을 만들고 여러 리소스에 대한 작업을 한 번에 수행할 수 있습니다. 
 
 대부분의 관리 작업에서는 하나 이상의 컬렉션을 사용하거나 사용해야 합니다. 기본 제공 컬렉션인 모든 시스템을 사용할 수도 있지만 관리 작업에는 이 컬렉션을 사용하지 않는 것이 좋습니다. 작업의 사용자나 장치를 보다 구체적으로 식별하려면 사용자 지정 컬렉션을 만드세요.  
 
  기본 제공 및 사용자 지정 컬렉션은 Configuration Manager 콘솔의 **자산 및 준수** 작업 영역에 있는 **사용자 컬렉션** 및 **장치 컬렉션** 노드에 표시됩니다.  
 
- 최근에 본 컬렉션은 Configuration Manager 콘솔의 **자산 및 준수** 작업 영역에 있는 **사용자** 노드 및 **장치** 노드에 표시됩니다.  
+ 최근에 본 컬렉션은 **자산 및 준수** 작업 영역에 있는 **사용자** 노드 및 **장치** 노드에 표시됩니다.  
 
 아래에는 컬렉션 사용 방식의 몇 가지 예가 나와 있습니다.  
 
@@ -67,6 +67,6 @@ System Center Configuration Manager(ConfigMgr, SCCM이라고도 함)의 컬렉�
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 
