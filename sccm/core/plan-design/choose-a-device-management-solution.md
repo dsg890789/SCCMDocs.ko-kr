@@ -17,8 +17,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f6a6aad6859cf962f6f94fa5385a1dbfae6c7ff2
-ms.openlocfilehash: bea86f7fce6af913339ba0d1b56822ad761af48f
+ms.sourcegitcommit: d56b2a8090dd798bceda63e29df6c6ff4a4afe4e
+ms.openlocfilehash: 792d9b03904193c1c302c2f8373448a44887ed9c
 
 
 ---
@@ -92,7 +92,7 @@ System Center Configuration Manager(ConfgMgr, SCCM이라고도 함)에서는 PC,
 |배포 지점에 대한 연결|예|예|예||  
 |Configuration Manager의 블록|예|예|예||  
 |Exchange Server(및 Configuration Manager)에서 격리 및 차단||||예|  
-|원격 지우기|예|예|예|예|  
+|원격 지우기| |예|예|예|  
 
 
 
