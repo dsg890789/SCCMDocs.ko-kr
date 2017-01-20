@@ -1,5 +1,5 @@
 ---
-title: "온-프레미스 MDM 계획 | System Center Configuration Manager"
+title: "온-프레미스 MDM 계획 | Microsoft 문서"
 description: "System Center Configuration Manager에서 모바일 장치를 관리하기 위해 온-프레미스 모바일 장치 관리를 계획합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 6bc3bf68d098fec7b6ac976d8e7ee7a7d71fab6a
+ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
+ms.openlocfilehash: cc5b04dc41b13993fca35f202437b71e96bc9cdd
 
 
 ---
@@ -40,7 +40,7 @@ ms.openlocfilehash: 6bc3bf68d098fec7b6ac976d8e7ee7a7d71fab6a
 > -   Windows 10 Mobile  
 > -   Windows 10 Mobile Enterprise   
 
-##  <a name="a-namebkmkintunea-use-of-the-microsoft-intune-subscription"></a><a name="bkmk_intune"></a> Microsoft Intune 구독의 용도  
+##  <a name="a-namebkmkintunea-use-of-the--microsoft-intune-subscription"></a><a name="bkmk_intune"></a> Microsoft Intune 구독의 용도  
  온\-프레미스 모바일 장치 관리를 사용하기 시작하려면 Microsoft Intune을 구독해야 합니다. 구독은 장치 라이선스를 추적하는 데만 필요하며 장치에 대한 관리 정보를 관리하거나 저장하는 데는 사용되지 않습니다. 모든 관리는 온-프레미스 Configuration Manager 인프라를 사용하여 조직의 엔터프라이즈에서 처리됩니다.  
 
 > [!IMPORTANT]  
@@ -122,6 +122,6 @@ ms.openlocfilehash: 6bc3bf68d098fec7b6ac976d8e7ee7a7d71fab6a
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

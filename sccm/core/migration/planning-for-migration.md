@@ -1,5 +1,5 @@
 ---
-title: "마이그레이션 계획 | System Center Configuration Manager"
+title: "마이그레이션 계획 | Microsoft 문서"
 description: "System Center Configuration Manager 대상 계층 구조로 데이터를 마이그레이션하기 전에 사이트 및 계층에 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: a80c7af58f88f76afd00771778411a4842a204c8
+ms.sourcegitcommit: 5e3d3f4194b06442e34c10988a20fe9ca40ac5d7
+ms.openlocfilehash: ccc9973c07da9eca4bfacfb3bc7d1228a976c78b
 
 
 ---
@@ -61,6 +61,6 @@ System Center Configuration Manager 대상 계층 구조로 데이터를 마이�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

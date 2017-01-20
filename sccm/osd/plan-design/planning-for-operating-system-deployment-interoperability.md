@@ -1,5 +1,5 @@
 ---
-title: "운영 체제 배포 상호 운용성 계획 | Configuration Manager"
+title: "운영 체제 배포 상호 운용성 계획 | Microsoft 문서"
 description: "단일 계층 구조의 다른 System Center Configuration Manager 사이트가 서로 다른 버전을 사용하는 경우 상호 운용성 문제를 고려해야 합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 1bcd81122c04b4f754326300365ff2c13ce7759d
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 50a4b75b8c8c1cb6f7a8e696abad285f99080fcd
 
 
 ---
@@ -74,6 +74,6 @@ ms.openlocfilehash: 1bcd81122c04b4f754326300365ff2c13ce7759d
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

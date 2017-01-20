@@ -1,6 +1,6 @@
 ---
 
-title: "소프트웨어 업데이트에 대한 설정 관리 | Configuration Manager"
+title: "소프트웨어 업데이트 설정 관리 | Microsoft 문서"
 description: "소프트웨어 업데이트 지점을 설치한 후 사이트에서 소프트웨어 업데이트에 적합한 클라이언트 설정을 알아봅니다."
 keywords: 
 author: dougeby
@@ -14,8 +14,8 @@ ms.technology:
 - configmgr-sum
 ms.assetid: 0d484c1a-e903-4bff-9e9b-e452c62e38a8
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 4d7ffc12a3626f35a4481a3dcaed40abc0bbdac0
+ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
+ms.openlocfilehash: 7d37f3c5e398c914482c45ab837fe41d00fce8ea
 
 
 ---
@@ -142,6 +142,6 @@ CRL 확인을 수행하는 컴퓨터에서 제품 DVD를 사용하여 명령 프
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

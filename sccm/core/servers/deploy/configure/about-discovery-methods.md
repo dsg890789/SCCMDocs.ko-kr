@@ -1,5 +1,5 @@
 ---
-title: "검색 방법 | System Center Configuration Manager"
+title: "검색 방법 | Microsoft 문서"
 ms.custom: na
 ms.date: 10/06/2016
 ms.prod: configuration-manager
@@ -15,8 +15,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 8bb71e477bb9a265b3485bd3ef8232f6e9933a37
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 223ebc3009b33c43818636a9e19b9b482619550b
 
 ---
 # <a name="about-discovery-methods-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 검색 방법 정보
@@ -501,6 +501,6 @@ Active Directory 사용자 검색 작업은 사이트 서버에 있는 **&lt;Ins
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

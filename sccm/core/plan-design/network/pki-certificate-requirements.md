@@ -1,8 +1,8 @@
 ---
-title: "PKI 인증서 요구 사항 | System Center Configuration Manager"
+title: "PKI 인증서 요구 사항 | Microsoft 문서"
 description: "System Center Configuration Manager에 필요할 수 있는 PKI 인증서 요구 사항을 찾습니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/07/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: fbc85f65e4ad952d40161e6f6282bb6c0796662b
+ms.sourcegitcommit: db0642e95bbd7e704d2052aa1e0f5c27cd7bf568
+ms.openlocfilehash: 00c3c355fc43eff18b86112b0b9272cbcdf38e85
 
 
 ---
@@ -32,7 +32,7 @@ ms.openlocfilehash: fbc85f65e4ad952d40161e6f6282bb6c0796662b
 -   Windows Server 2008: [Windows Server 2008의 Active Directory 인증서 서비스](http://go.microsoft.com/fwlink/p/?LinkId=115018)  
 
 > [!IMPORTANT]  
->  2017년 1월 1일부터 Windows에서는 SHA-1로 서명된 인증서를 더 이상 신뢰하지 않습니다.  SHA-2로 서명된 서버 및 클라이언트 인증 인증서를 새로 발급하는 것이 좋습니다.  
+>  2017년 1월 1일부터 Windows에서는 SHA-1로 서명된 인증서를 더 이상 신뢰하지 않습니다.  SHA-2(SHA-256 포함)로 서명된 서버 및 클라이언트 인증 인증서를 새로 발급하는 것이 좋습니다.  
 >   
 >  이 변경 내용과 기한 전에 가능한 업데이트에 대한 자세한 내용은 다음 블로그 게시물을 참조하세요. [Windows Enforcement of Authenticode Code Signing and Timestamping(Windows의 Authenticode 코드 서명 및 타임스탬프 적용)](http://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-authenticode-code-signing-and-timestamping.aspx)  
 
@@ -86,6 +86,6 @@ ms.openlocfilehash: fbc85f65e4ad952d40161e6f6282bb6c0796662b
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

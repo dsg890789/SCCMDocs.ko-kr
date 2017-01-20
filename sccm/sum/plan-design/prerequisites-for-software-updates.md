@@ -1,5 +1,5 @@
 ---
-title: "소프트웨어 업데이트에 대한 필수 조건 | Configuration Manager"
+title: "소프트웨어 업데이트 필수 조건 | Microsoft 문서"
 description: "System Center Configuration Manager의 소프트웨어 업데이트에 대한 필수 조건에 대해 알아봅니다."
 keywords: 
 author: dougeby
@@ -13,8 +13,8 @@ ms.technology:
 - configmgr-sum
 ms.assetid: fdf05118-162a-411e-b72e-386b9dc9a5e1
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: fe56129c09b8936ba59181add86acb239111fea7
+ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
+ms.openlocfilehash: 179f076f228daa5adf612275a822cd379b0ce1e3
 
 
 ---
@@ -78,7 +78,7 @@ ms.openlocfilehash: fe56129c09b8936ba59181add86acb239111fea7
 
 -   [소프트웨어 업데이트를 위한 클라이언트 설정](../get-started/manage-settings-for-software-updates.md#a-namebkmkclientsettingsa-client-settings-for-software-updates)  
 
--   [소프트웨어 업데이트 클라이언트 설정](../../core/clients/deploy/about-client-settings.md#a-namebkmksoftwareupdatesdevicesettinga-software-updates) 항목  
+-   [소프트웨어 업데이트 클라이언트 설정](../../core/clients/deploy/about-client-settings.md#software-updates) 항목  
 
 ### <a name="reporting-services-point"></a>보고 서비스 지점  
  보고 서비스 지점 사이트 시스템 역할에서는 소프트웨어 업데이트에 대한 보고서를 표시할 수 있습니다. 이 역할은 선택 사항이지만 설치하는 것이 좋습니다. 보고 서비스 지점을 만드는 방법에 대한 자세한 내용은 [보고 구성](../../core/servers/manage/configuring-reporting.md)을 참조하세요.  
@@ -114,6 +114,6 @@ ms.openlocfilehash: fe56129c09b8936ba59181add86acb239111fea7
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

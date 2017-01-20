@@ -1,5 +1,5 @@
 ---
-title: "클라이언트 보안 및 개인 정보 | System Center Configuration Manager"
+title: "클라이언트 보안 및 개인 정보 | Microsoft 문서"
 description: "System Center Configuration Manager에서 클라이언트에 대한 보안 및 개인 정보에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -13,12 +13,12 @@ ms.topic: get-started-article
 ms.assetid: c1d71899-308f-49d5-adfa-3a3ec0163ed8
 caps.latest.revision: 10
 caps.handback.revision: 0
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: ce7bb5194b6cca7ab0fa3829655c4b51f6725097
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: 6e76c3ae104c0561a5c7b178823b7a48761518fe
 
 
 ---
@@ -308,6 +308,6 @@ ms.openlocfilehash: ce7bb5194b6cca7ab0fa3829655c4b51f6725097
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "콘텐츠 관리 보안 및 개인 정보 | System Center Configuration Manager"
+title: "콘텐츠 관리 보안 및 개인 정보 | Microsoft 문서"
 description: "System Center Configuration Manager에서 콘텐츠 관리에 대한 보안 및 개인 정보를 최적화합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: fcc3c74e50a4cdac9337178f5fcfe710f0fa17a5
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: 44c45bf87d27da23da5e1dc7b047cbacc6d9903e
 
 
 ---
@@ -96,6 +96,6 @@ ms.openlocfilehash: fcc3c74e50a4cdac9337178f5fcfe710f0fa17a5
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

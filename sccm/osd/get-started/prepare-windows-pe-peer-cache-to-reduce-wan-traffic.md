@@ -1,5 +1,5 @@
 ---
-title: "WAN 트래픽을 줄이기 위해 Windows PE 피어 캐시 준비 | Configuration Manager"
+title: "WAN 트래픽을 줄이기 위해 Windows PE 피어 캐시 준비 | Microsoft 문서"
 description: "Windows PE 피어 캐시는 로컬 배포 지점이 없는 경우 로컬 피어로부터 콘텐츠를 가져와 WAN 트래픽을 최소화하도록 Windows PE에서 작동합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: dc21868f99e17070b25c8b490e86477227a96c8e
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 814c6133a30b1116d05aaeafddb0dfb7fe2a390e
 
 
 ---
@@ -52,17 +52,17 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
 
 -   소프트웨어 업데이트  
 
-##  <a name="a-namebkmkpeercacheworka-how-does-windows-pe-peer-cache-work"></a><a name="BKMK_PeerCacheWork"></a> Windows PE 피어 캐시 작동 방식  
+##  <a name="a-namebkmkpeercacheworka-how-does--windows-pe-peer-cache-work"></a><a name="BKMK_PeerCacheWork"></a> Windows PE 피어 캐시 작동 방식  
  배포 지점은 없으며 여러 클라이언트가 Windows PE 피어 캐시를 사용할 수 있도록 설정된 지점 시나리오를 고려해 보겠습니다. 피어 캐시를 사용하도록 구성된 작업 순서를 피어 캐시 원본의 일부가 되도록 구성된 여러 클라이언트에 배포합니다. 작업 순서를 실행하는 첫 번째 클라이언트는 콘텐츠를 포함하여 피어에 대한 요청을 브로드캐스트합니다. 해당 콘텐츠를 찾지 못하므로 WAN을 통해 배포 지점에서 콘텐츠를 가져옵니다. 클라이언트는 새 이미지를 설치하고 다른 클라이언트에 대한 피어 캐시 원본 역할을 할 수 있도록 해당 Configuration Manager 클라이언트 캐시에 콘텐츠를 저장합니다. 다음 클라이언트는 작업 순서를 실행할 때 피어 캐시 원본에 대해 서브넷에서 요청을 브로드캐스트하며, 그러면 첫 번째 클라이언트가 응답하여 캐시된 콘텐츠를 제공합니다.  
 
-##  <a name="a-namebkmkpeercachedeterminea-determine-what-clients-will-be-part-of-the-windows-pe-peer-cache-source"></a><a name="BKMK_PeerCacheDetermine"></a> Windows PE 피어 캐시 원본의 일부가 될 클라이언트 확인  
+##  <a name="a-namebkmkpeercachedeterminea-determine-what--clients-will-be-part-of-the-windows-pe-peer-cache-source"></a><a name="BKMK_PeerCacheDetermine"></a> Windows PE 피어 캐시 원본의 일부가 될 클라이언트 확인  
  Windows PE 피어 캐시 원본으로 선택할 컴퓨터를 확인하는 데 도움이 되도록 고려해야 할 몇 가지 사항이 다음에 설명되어 있습니다.  
 
 -   Windows PE 피어 캐시 원본은 항상 전원이 켜져 있고 피어 캐시 클라이언트에서 사용할 수 있는 데스크톱 컴퓨터여야 합니다.  
 
 -   Windows PE 피어 캐시에는 이미지를 저장할 만큼 충분한 크기의 클라이언트 캐시가 있어야 합니다.  
 
-##  <a name="a-namebkmkpeercacherequirementsa-requirements-for-a-client-to-use-a-windows-pe-peer-cache-source"></a><a name="BKMK_PeerCacheRequirements"></a> Windows PE 피어 캐시 원본을 사용하기 위한 클라이언트 요구 사항  
+##  <a name="a-namebkmkpeercacherequirementsa-requirements-for-a-client-to-use-a--windows-pe-peer-cache-source"></a><a name="BKMK_PeerCacheRequirements"></a> Windows PE 피어 캐시 원본을 사용하기 위한 클라이언트 요구 사항  
  클라이언트에서 Windows PE 피어 캐시 원본을 사용하려면 다음 요구 사항을 충족해야 합니다.  
 
 -   Configuration Manager 클라이언트가 네트워크의 다음 포트를 통해 통신할 수 있어야 합니다.  
@@ -144,6 +144,6 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

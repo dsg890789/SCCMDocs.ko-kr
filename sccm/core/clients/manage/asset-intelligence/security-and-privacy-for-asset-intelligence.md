@@ -1,5 +1,5 @@
 ---
-title: "Asset Intelligence 보안 개인 정보 | System Center Configuration Manager"
+title: "Asset Intelligence 보안 및 개인 정보 | Microsoft 문서"
 description: "System Center Configuration Manager에서 Asset Intelligence 대한 보안 및 개인 정보를 확인합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 85e0b6e3a96852cbf9c8781a3124bff13a6c6fdd
+ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
+ms.openlocfilehash: d577a16725c2b167d1ff9f77096018433a2fa580
 
 
 ---
@@ -61,6 +61,6 @@ ms.openlocfilehash: 85e0b6e3a96852cbf9c8781a3124bff13a6c6fdd
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

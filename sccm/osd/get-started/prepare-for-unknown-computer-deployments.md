@@ -1,5 +1,5 @@
 ---
-title: "알 수 없는 컴퓨터 배포 준비 | Configuration Manager"
+title: "알 수 없는 컴퓨터 배포 준비 | Microsoft 문서"
 description: "System Center Configuration Manager 환경에서 Configuration Manager가 관리하지 않는 컴퓨터에 운영 체제를 배포하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 1228dc7ebee2f17da9a7ade5641ef73e1891bba9
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 445e76950f0605da917f3d0e7e71557d969e3c2d
 
 
 ---
@@ -87,6 +87,6 @@ ms.openlocfilehash: 1228dc7ebee2f17da9a7ade5641ef73e1891bba9
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Asset Intelligence 필수 조건 | System Center Configuration Manager"
+title: "Asset Intelligence 필수 조건 | Microsoft 문서"
 description: "System Center Configuration Manager에서 Asset Intelligence에 대한 필수 조건을 확인합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 12f7ea7223237f57fb2d90f0f7b66381e8f09a1f
+ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
+ms.openlocfilehash: 156d6679817b81ca27fbd2b8836431396e1e6b23
 
 
 ---
@@ -51,6 +51,6 @@ System Center Configuration Manager의 Asset Intelligence에는 외부 종속성
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

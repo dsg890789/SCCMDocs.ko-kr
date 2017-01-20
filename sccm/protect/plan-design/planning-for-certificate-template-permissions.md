@@ -1,5 +1,5 @@
 ---
-title: "인증서 템플릿 권한 계획 | System Center Configuration Manager"
+title: "인증서 템플릿 권한 계획 | Microsoft 문서"
 description: "System Center Configuration Manager에서 사용하는 인증서 템플릿을 구성해야 하는 권한에 대한 계획을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 38f4176d40bffd20b9e3076213957765dfb0c7f3
+ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
+ms.openlocfilehash: 3c3725678561c32fce316ed1209ac8fe73a0eed1
 
 
 ---
@@ -36,7 +36,7 @@ ms.openlocfilehash: 38f4176d40bffd20b9e3076213957765dfb0c7f3
 
 -   System Center Configuration Manager 콘솔을 실행하는 계정의 읽기 권한  
 
- 이 보안 권한에 대한 자세한 내용은 [1단계: 네트워크 장치 등록 서비스 및 종속 항목 설치 및 구성](../deploy-use/certificate-infrastructure.md#BKMK_Step1)을 참조하세요.  
+ 이 보안 권한에 대한 자세한 내용은 [1단계: 네트워크 장치 등록 서비스 및 종속 항목 설치 및 구성](../deploy-use/certificate-infrastructure.md#step-1-install-and-configure-the-network-device-enrollment-service-and-dependencies)을 참조하세요.  
 
  이 기본 구성을 사용하면 사용자 및 장치가 인증서 템플릿에서 직접 인증서를 요청할 수 없고 모든 요청을 네트워크 장치 등록 서비스에서 시작해야 합니다. 이러한 인증서 템플릿은 인증서 주체에 대해 **요청에서 제공** 으로 구성해야 하기 때문에 이 사항은 중요한 제한입니다. 즉, Rogue 사용자 또는 손상된 장치가 인증서를 요청할 경우 가장의 위험이 있습니다. 기본 구성에서 네트워크 장치 등록 서비스가 이러한 요청을 시작해야 합니다. 그러나 네트워크 장치 등록 서비스를 실행하는 서비스가 손상된 경우 가장의 위험이 남아 있습니다. 이러한 위험을 방지하려면 네트워크 장치 등록 서비스 및 이 역할 서비스를 실행하는 컴퓨터와 관련된 모든 보안 모범 사례를 따르십시오.  
 
@@ -65,6 +65,6 @@ ms.openlocfilehash: 38f4176d40bffd20b9e3076213957765dfb0c7f3
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

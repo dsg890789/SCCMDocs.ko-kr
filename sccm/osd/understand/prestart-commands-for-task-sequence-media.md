@@ -1,5 +1,5 @@
 ---
-title: "작업 순서 미디어에 대한 시작 전 명령 | Configuration Manager"
+title: "작업 순서 미디어에 대한 시작 전 명령 | Microsoft 문서"
 description: "시작 전 명령에 사용할 스크립트를 만들고, 시작 전 명령과 연관된 콘텐츠를 배포하고, 미디어 안에 시작 전 명령을 구성합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 40787837e17c31f788c6c20a764460aa9dba2769
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 1c396534425179c6828d48acc578295167c566be
 
 
 ---
@@ -81,6 +81,6 @@ env("MyCustomVariable") = "varname"
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

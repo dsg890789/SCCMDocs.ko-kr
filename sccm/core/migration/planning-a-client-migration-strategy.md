@@ -1,5 +1,5 @@
 ---
-title: "클라이언트 마이그레이션 계획 | System Center Configuration Manager"
+title: "클라이언트 마이그레이션 계획 | Microsoft 문서"
 description: "원본 계층에서 System Center Configuration Manager 대상 계층으로 클라이언트를 마이그레이션하는 작업에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 6044f9b8116687fca80deeea87abd4652f773db0
+ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
+ms.openlocfilehash: 11da338af9d7dd4d6f9c5fc1c6c62e277139f852
 
 
 ---
@@ -43,7 +43,7 @@ ms.openlocfilehash: 6044f9b8116687fca80deeea87abd4652f773db0
 -   **System Center 2012 Configuration Manager 이상 원본 계층:** 제품 버전이 같은 계층 간에 클라이언트를 마이그레이션하면 클라이언트 소프트웨어가 변경되거나 업그레이드되지 않습니다. 대신 클라이언트가 원본 계층에서 대상 계층의 사이트로 재할당됩니다.  
 
     > [!NOTE]  
-    >  계층의 제품 버전이 대상 계층으로의 마이그레이션을 지원하지 않는 경우 원본 계층의 모든 사이트와 클라이언트를 호환되는 제품 버전으로 업그레이드하십시오. 원본 계층이 지원되는 제품 버전으로 업그레이드되면 계층 간에 마이그레이션할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 마이그레이션을 수행하기 위한 필수 조건](../../core/migration/prerequisites-for-migration.md) 항목의 [마이그레이션에 지원되는 Configuration Manager 버전](../../core/migration/prerequisites-for-migration.md#BKMK_supportedmigrationversions) 섹션을 참조하세요.  
+    >  계층의 제품 버전이 대상 계층으로의 마이그레이션을 지원하지 않는 경우 원본 계층의 모든 사이트와 클라이언트를 호환되는 제품 버전으로 업그레이드하십시오. 원본 계층이 지원되는 제품 버전으로 업그레이드되면 계층 간에 마이그레이션할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 마이그레이션을 수행하기 위한 필수 조건](../../core/migration/prerequisites-for-migration.md) 항목의 [마이그레이션에 지원되는 Configuration Manager 버전](../../core/migration/prerequisites-for-migration.md#BKMK_SupportedMigrationVersions) 섹션을 참조하세요.  
 
 클라이언트 마이그레이션을 계획하려면 다음 정보를 참조하십시오.  
 
@@ -98,13 +98,13 @@ Configuration Manager 콘솔에 있는 **관리** 작업 영역의 **마이그�
 
 또한, 일부 응용 프로그램은 다시 설치해야 할 수 있습니다.  
 
-##  <a name="a-nameplanningforinventorydatamigrationa-plan-for-inventory-and-compliance-data-during-migration"></a><a name="Planning_for_Inventory_data_migration"></a> 마이그레이션 중에 인벤토리 및 준수 데이터 계획  
+##  <a name="a-nameplanningforinventorydatamigrationa-plan-for--inventory-and-compliance-data-during-migration"></a><a name="Planning_for_Inventory_data_migration"></a> 마이그레이션 중에 인벤토리 및 준수 데이터 계획  
 클라이언트를 대상 계층으로 마이그레이션할 때 클라이언트 인벤토리 및 호환 데이터는 저장되지 않습니다. 대신 이 정보는 클라이언트에서 할당된 사이트에 해당 정보를 처음 보낼 때 대상 계층에서 다시 만들어집니다. 그로 인한 네트워크 대역폭 요구 사항 및 서버 처리를 줄이려면 한 번에 많은 클라이언트를 마이그레이션하는 것보다 적은 수의 클라이언트를 단계적으로 마이그레이션하는 것이 좋습니다.  
 
  또한, 하드웨어 인벤토리의 사용자 지정은 원본 계층에서 마이그레이션할 수 없습니다. 이러한 설정은 마이그레이션과 별도로 대상 계층에 적용해야 합니다. 하드웨어 인벤토리 확장에 대한 자세한 내용은 [System Center Configuration Manager에서 하드웨어 인벤토리를 구성하는 방법](../../core/clients/manage/inventory/configure-hardware-inventory.md)을 참조하세요.  
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

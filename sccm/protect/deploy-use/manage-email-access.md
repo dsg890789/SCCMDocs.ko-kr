@@ -1,5 +1,5 @@
 ---
-title: "메일 액세스 관리 | System Center Configuration Manager"
+title: "메일 액세스 관리 | Microsoft 문서"
 description: "System Center Configuration Manager 조건부 액세스를 사용하여 Exchange 메일에 대한 액세스를 관리하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/04/2016
@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4544088a-4752-4e3a-aa0a-049f10d8f178
 caps.latest.revision: 24
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 5c6cf3c1697b49708aa5192b67b08b700da7dc72
-ms.openlocfilehash: c1797910f2b7ceda451c2ccb23f66a4b2bd4b6ff
+ms.sourcegitcommit: c13c6268fa76ade7feb0981f9c4a6e325e393aca
+ms.openlocfilehash: 0bbe25598f38f9cf3c15375748fee09c43dfb928
 
 
 ---
@@ -37,7 +37,7 @@ System Center Configuration Manager 조건부 액세스를 사용하면 지정�
 
 기본 제공 전자 메일 클라이언트에서의 Exchange Online 및 Exchange 온-프레미스에 대한 액세스를 다음 플랫폼에서 제어할 수 있습니다.  
 
--   Android 4.0 이상, Samsung Knox Standard 4.0 이상  
+-   Android 4.0 이상, Samsung KNOX Standard 4.0 이상  
 
 -   iOS 7.1 이상  
 
@@ -91,7 +91,7 @@ Office 데스크톱 응용 프로그램은 다음을 실행하는 Exchange Onlin
 
  다음 플랫폼의 장치 기본 제공 Exchange ActiveSync 전자 메일 클라이언트에서 Exchange 전자 메일에 대 한 액세스를 차단할 수 있습니다.  
 
--   Android 4.0 이상, Samsung Knox Standard 4.0 이상  
+-   Android 4.0 이상, Samsung KNOX Standard 4.0 이상  
 
 -   iOS 7.1 이상  
 
@@ -363,6 +363,6 @@ Office 데스크톱 응용 프로그램은 다음을 실행하는 Exchange Onlin
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

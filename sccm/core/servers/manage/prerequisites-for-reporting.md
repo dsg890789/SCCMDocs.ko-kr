@@ -1,5 +1,5 @@
 ---
-title: "보고에 대한 필수 조건 | Configuration Manager"
+title: "보고 필수 조건 | Microsoft 문서"
 description: "System Center Configuration Manager에서 보고를 사용하는 데 영향을 주는 다양한 종속성을 이해합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 8554221bc3aede86a255b7f0aa45948fe312b43d
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: ae750188b0258122d8561b163a5ecd85c4179f18
 
 
 ---
@@ -65,6 +65,6 @@ System Center Configuration Manager의 보고에는 외부 종속성과 제품 �
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "기존 컴퓨터 바꾸기 및 설정 전송 | Configuration Manager"
+title: "기존 컴퓨터 바꾸기 및 설정 전송 | Microsoft 문서"
 description: "Configuration Manager에서 부팅 가능한 미디어, 멀티캐스트 또는 소프트웨어 센터와 같은 배포 방법 중에서 선택하여 기존 컴퓨터를 새 컴퓨터로 바꿉니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 82a2ebb830b872f8e6368be75b6d9beb1955ec27
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 243433980e1720fd468d52a4a61f2c3a8e3659b5
 
 
 ---
@@ -86,6 +86,6 @@ ms.openlocfilehash: 82a2ebb830b872f8e6368be75b6d9beb1955ec27
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

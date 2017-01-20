@@ -1,5 +1,5 @@
 ---
-title: "유지 관리 작업 참조 | System Center Configuration Manager"
+title: "유지 관리 작업에 대한 참조 | Microsoft 문서"
 description: "각 System Center Configuration Manager 사이트 유지 관리 작업에 대한 세부 정보와 이러한 작업이 기본적으로 사용되는지 여부를 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: f88282736c5e1fd3560745933f4c8e2a2268ea77
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 7aee7c89c2857bc59beff7f140f06c4ac82f4294
 
 
 ---
@@ -279,6 +279,6 @@ ms.openlocfilehash: f88282736c5e1fd3560745933f4c8e2a2268ea77
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

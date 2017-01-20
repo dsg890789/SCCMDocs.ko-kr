@@ -1,5 +1,5 @@
 ---
-title: "마이그레이션 작업 계획 | System Center Configuration Manager"
+title: "마이그레이션 작업 계획 | Microsoft 문서"
 description: "마이그레이션 작업을 사용하면 System Center Configuration Manager 환경으로 마이그레이션할 데이터를 구성할 수 있습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -18,8 +18,8 @@ ms.author: brenduns
 manager: angrobe
 robots: noindex
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 21e00064a8ecad3dd1c24b7f02bd0a8a8c36924f
+ms.sourcegitcommit: 5e3d3f4194b06442e34c10988a20fe9ca40ac5d7
+ms.openlocfilehash: 4e1ad4e8a043d1a6ede5dc88ca6b6c703f46e9da
 
 
 ---
@@ -226,7 +226,7 @@ ms.openlocfilehash: 21e00064a8ecad3dd1c24b7f02bd0a8a8c36924f
 ### <a name="data-selection"></a>데이터 선택  
  컬렉션 마이그레이션 작업을 만들 때 컬렉션을 하나 이상 선택해야 합니다. 컬렉션을 선택하면 마이그레이션 작업 만들기 마법사에 컬렉션과 연결된 개체가 표시됩니다. 기본적으로는 선택한 컬렉션과 연결된 개체가 모두 마이그레이션되지만 해당 작업으로 마이그레이션하지 않을 개체를 선택 해제할 수 있습니다. 종속된 개체가 있는 개체를 선택 해제하면 해당하는 종속된 개체도 선택 해제됩니다. 선택 해제된 모든 개체는 제외 목록에 추가됩니다. 제외 목록의 개체는 향후 마이그레이션 작업의 자동 선택에서 제거됩니다. 앞으로 만들 마이그레이션 작업에서 마이그레이션하도록 자동 선택할 개체를 제외 목록에서 제거하려면 제외 목록을 수동으로 편집해야 합니다.  
 
-### <a name="site-ownership-for-migrated-content"></a>마이그레이션된 콘텐츠에 대한 사이트 소유권  
+### <a name="site-ownership-for--migrated-content"></a>마이그레이션된 콘텐츠에 대한 사이트 소유권  
  배포할 콘텐츠를 마이그레이션하는 경우 콘텐츠 개체를 대상 계층 내 사이트에 할당해야 합니다. 그러면 이 사이트는 대상 계층에서 해당 콘텐츠의 소유자가 됩니다. 대상 계층의 최상위 사이트는 콘텐츠의 메타데이터를 실제로 마이그레이션하는 사이트지만 네트워크를 통해 콘텐츠의 원래 원본 파일에 액세스하는 사이트는 할당된 사이트입니다.  
 
  마이그레이션 중에 사용되는 네트워크 대역폭을 최소화하려면 콘텐츠의 소유권을 사용 가능한 가장 가까운 사이트로 이전하는 것이 좋습니다. 콘텐츠에 대한 정보는 System Center Configuration Manager에서 전체적으로 공유되므로 모든 사이트에서 사용할 수 있습니다.  
@@ -322,6 +322,6 @@ ms.openlocfilehash: 21e00064a8ecad3dd1c24b7f02bd0a8a8c36924f
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

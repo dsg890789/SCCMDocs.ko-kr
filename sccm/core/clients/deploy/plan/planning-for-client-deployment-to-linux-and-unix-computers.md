@@ -1,5 +1,5 @@
 ---
-title: "Linux 및 UNIX 컴퓨터에 클라이언트 배포 계획 | System Center Configuration Manager"
+title: "Linux 및 UNIX 컴퓨터에 클라이언트 배포 계획 | Microsoft 문서"
 description: "System Center Configuration Manager에서 Linux 및 UNIX 컴퓨터에 클라이언트 배포를 계획합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -13,12 +13,12 @@ ms.topic: get-started-article
 ms.assetid: 44153689-70e8-42ad-9ae8-17ae35f6a2e3
 caps.latest.revision: 9
 caps.handback.revision: 0
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 7d541d3afc86e1bb887a61d5b8cabce9aef9af57
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: dad941d5984fc7e0b43954b14c3966bb2632ad05
 
 
 ---
@@ -312,6 +312,6 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manag
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

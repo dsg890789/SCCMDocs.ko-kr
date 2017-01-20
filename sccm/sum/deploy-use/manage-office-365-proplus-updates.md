@@ -1,12 +1,11 @@
 ---
-
-title: "Office 365 ProPlus 업데이트 관리 | Configuration Manager"
+title: "Office 365 ProPlus 업데이트 관리 | Microsoft 문서"
 description: "Configuration Manager는 WSUS 카탈로그의 Office 365 클라이언트 업데이트를 사이트 서버와 동기화하여 업데이트를 클라이언트에 배포할 수 있게 합니다."
 keywords: 
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/06/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -14,9 +13,8 @@ ms.technology:
 - configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 58a551425591332264592713fa3cc4e04d9939aa
-
+ms.sourcegitcommit: 5415bfa0ac4af14891a9445cdeab6a4509fffc38
+ms.openlocfilehash: 630ccdf7b7f45a88586c9ab530c164985267bec9
 
 ---
 
@@ -25,6 +23,32 @@ ms.openlocfilehash: 58a551425591332264592713fa3cc4e04d9939aa
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 Configuration Manager 버전 1602부터, Configuration Manager에서 소프트웨어 업데이트 관리 워크플로를 사용하여 Office 365 클라이언트 업데이트를 관리할 수 있습니다. Microsoft에서 새 Office 365 클라이언트 업데이트를 Office CDN(Content Delivery Network)에 게시하면 Microsoft에서 업데이트 패키지도 WSUS(Windows Server Update Services)에 게시합니다. Configuration Manager에서 WSUS 카탈로그의 Office 365 클라이언트 업데이트를 사이트 서버로 동기화한 후에 업데이트를 클라이언트에 배포할 수 있습니다.
+
+## <a name="office-365-client-management-dashboard"></a>Office 365 클라이언트 관리 대시보드  
+Configuration Manager 버전 1610부터 Configuration Manager 콘솔에서 Office 365 클라이언트 관리 대시보드를 사용할 수 있습니다. 대시보드를 보려면 **소프트웨어 라이브러리** > **개요** > **Office 365 클라이언트 관리**로 이동합니다.
+
+<!--- >[!NOTE]
+>In the **What's New** workspace in the Configuration Manager console, the new dashboard is incorrectly named **Office 365 Servicing dashboard**. --->
+
+대시보드는 다음에 대한 차트를 표시합니다.
+
+- Office 365 클라이언트 수
+- Office 365 클라이언트 버전
+- Office 365 클라이언트 언어
+- Office 365 클라이언트 채널     
+자세한 내용은 [Office 365 ProPlus의 업데이트 채널 개요](https://technet.microsoft.com/library/mt455210.aspx)를 참조하세요.
+<!--- - Automatic deployment rules with Office 365 apps (have Office 365 Client selected in the set of available products). --->
+
+<!---You can take the following actions on the dashboard:
+- --->
+
+대시보드 맨 위에 있는 **컬렉션** 드롭다운 설정을 사용하여 특정 컬렉션 멤버별로 대시보드 데이터를 필터링합니다.
+
+<!---
+ On the upper-right side of the dashboard, click **Office 365 Installer** to start the Office 365 Client Installation Wizard to deploy Office 365 apps to clients. For details, see [Deploy Office 365 apps to clients](#deploy-office-365-apps-to-clients).
+- On the middle-right side of the dashboard, click **Create an ADR** to open the Automatic Deployment Rule Wizard to create a new automatic deployment rule (ADR). To create an ADR for Office 365 apps, select **Office 365 Client** when you choose the product. For more information, see [Automatically deploy software updates](/sccm/sum/deploy-use/automatically-deploy-software-updates).
+- On the lower-right side of the dashboard, click **Create Client Agent Settings** to open Client Agent settings. For more information, see [About client settings](/sccm/core/clients/deploy/about-client-settings).
+--->
 
 #### <a name="to-deploy-office-365-updates-with-configuration-manager"></a>Configuration Manager를 사용하여 Office 365 업데이트를 배포하려면
 Configuration Manager를 사용하여 Office 365 업데이트를 배포하려면 다음 단계를 따르세요.
@@ -45,8 +69,11 @@ Configuration Manager를 사용하여 Office 365 업데이트를 배포하려면
 
 4. 클라이언트에 [Office 365 업데이트를 배포](deploy-software-updates.md)합니다.  
 
+<!--- ## Next steps
+Use the Office 365 Client Management dashboard in Configuration Manager to review Office 365 client information and deploy Office 365 apps. For details, see [Manage Office 365 apps](manage-office-365-apps.md). --->
 
 
-<!--HONumber=Nov16_HO1-->
+
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "원본 계층 전략 | System Center Configuration Manager"
+title: "원본 계층 구조 전략 | Microsoft 문서"
 description: "System Center Configuration Manager 마이그레이션 작업을 구성하기 전에 원본 계층을 구성하고 원본 사이트의 데이터를 수집합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 11ab1dc90c3e26b159346693b8e85a182219daf4
+ms.sourcegitcommit: 5e3d3f4194b06442e34c10988a20fe9ca40ac5d7
+ms.openlocfilehash: 39f258ac271bec53b9a2cb2c8bb376ef5ba23e11
 
 
 ---
@@ -116,6 +116,6 @@ System Center Configuration Manager 환경에서 마이그레이션 작업을 �
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

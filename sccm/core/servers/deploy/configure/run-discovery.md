@@ -1,5 +1,5 @@
 ---
-title: "검색 실행 | System Center Configuration Manager"
+title: "검색 실행 | Microsoft 문서"
 description: "검색 프로세스 및 검색 데이터 기록 개요를 읽습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: d73b493318b0a1938d42265ec03369015365addb
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 1d225b9f904215280feef5efd4283cbd51f84577
 
 
 ---
@@ -90,6 +90,6 @@ DDR 파일은 .ddr 확장명으로 식별되며 일반적으로 약 1KB의 크�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

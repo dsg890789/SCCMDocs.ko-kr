@@ -1,5 +1,5 @@
 ---
-title: "사이트 설치 준비 | System Center Configuration Manager"
+title: "사이트를 설치할 준비 | Microsoft 문서"
 description: "여러 사이트를 설치하는 동안 시간을 절약하고 오류를 방지하려면 이러한 세부 정보를 참조하세요."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 6f240f1da4561c05bee974b78f43bfcdba591df6
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 0534d1eb587cb01f35d811d72ddfe6ceb07e5b7c
 
 ---
 # <a name="prepare-to-install-system-center-configuration-manager-sites"></a>System Center Configuration Manager 사이트 설치 준비
@@ -73,7 +73,7 @@ Configuration Manager 콘솔을 사용하여 기본 사이트 아래 자식 사�
 
 
 
-## <a name="a-namebkmktasksa-common-tasks-to-complete-before-starting-an-install"></a><a name="bkmk_tasks"></a> 설치를 시작하기 전에 완료해야 하는 일반적인 작업
+## <a name="a-namebkmktasksa--common-tasks-to-complete-before-starting-an-install"></a><a name="bkmk_tasks"></a> 설치를 시작하기 전에 완료해야 하는 일반적인 작업
 -   배포에 사용할 계층 구조 토폴로지 이해    
      ([System Center Configuration Manager에 대한 사이트 계층 구조 디자인](../../../../core/plan-design/hierarchy/design-a-hierarchy-of-sites.md) 참조)  
 
@@ -90,7 +90,7 @@ Configuration Manager 콘솔을 사용하여 기본 사이트 아래 자식 사�
 
 
 
-## <a name="a-namebkmksitecodesa-about-site-names-and-site-codes"></a><a name="bkmk_sitecodes"></a> 사이트 이름 및 사이트 코드 정보
+## <a name="a-namebkmksitecodesa--about-site-names-and-site-codes"></a><a name="bkmk_sitecodes"></a> 사이트 이름 및 사이트 코드 정보
 사이트 코드 및 사이트 이름은 Configuration Manager 계층 구조의 사이트를 식별하고 관리하는 데 사용됩니다. Configuration Manager 콘솔에서 사이트 코드 및 사이트 이름은 &lt;사이트 코드\> - &lt;사이트 이름\> 형식으로 표시됩니다. 계층에 사용하는 사이트 코드는 모두 서로 고유해야 합니다. Active Directory 스키마가 Configuration Manager에 대해 확장된 경우 사이트에서 데이터를 게시하면 Active Directory 포리스트 내에 사용되는 사이트 코드는 다른 Configuration Manager 계층 구조에 사용되거나 이전 Configuration Manager 설치에 사용되었던 경우라도 반드시 고유해야 합니다. 따라서 계층을 배포하기 전에 사이트 코드 및 사이트 이름을 신중하게 계획해야 합니다.
 
 ### <a name="specify-a-site-code-and-site-name"></a>사이트 코드 및 사이트 이름 지정
@@ -126,7 +126,7 @@ Configuration Manager를 설치하는 동안 사이트의 사이트 코드를 �
     -   Configuration Manager에서는 독립 실행형 기본 사이트를 만들거나 다른 계층 구조에 연결하기 위해 계층 구조에서 자식 기본 사이트를 이동할 수 없습니다. 대신, 자식 기본 사이트를 제거한 다음 새 독립 실행형 기본 사이트로 다시 설치하거나 다른 계층 구조의 중앙 관리 사이트의 자식으로 다시 설치할 수 있습니다.  
 
 
-## <a name="a-namebkmkoptionalstepsa-optional-steps-to-run-before-starting-setup"></a><a name="bkmk_optionalsteps"></a> 설치 프로그램을 시작하기 전에 실행하는 선택적 단계
+## <a name="a-namebkmkoptionalstepsa--optional-steps-to-run-before-starting-setup"></a><a name="bkmk_optionalsteps"></a> 설치 프로그램을 시작하기 전에 실행하는 선택적 단계
 **[설치 다운로더](../../../../core/servers/deploy/install/setup-downloader.md)를 수동으로 실행하여** Configuration Manager의 업데이트된 설치 파일을 다운로드합니다.
 
 설치 프로그램을 실행할 컴퓨터가 인터넷에 연결되어 있지 않거나 여러 사이트 서버를 설치하려는 경우에는 설치 다운로더를 사용하여 설치 파일에 대한 필수 업데이트를 다운로드하는 것이 좋습니다.
@@ -148,6 +148,6 @@ Configuration Manager를 설치하는 동안 사이트의 사이트 코드를 �
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

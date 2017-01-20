@@ -1,5 +1,5 @@
 ---
-title: "Windows 서버 준비 | System Center Configuration Manager"
+title: "Windows 서버 준비 | Microsoft 문서"
 description: "컴퓨터가 System Center Configuration Manager의 사이트 서버 또는 사이트 시스템 서버를 사용하기 위한 필수 조건을 충족하는지 확인합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f0a1cc32285fcb792c3f4cdec616668474708404
-ms.openlocfilehash: acf8a401f1ce67a4d8c905c0126c031b97484271
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: bd89f97f4252ddea2d1bf7ab329417477c77868d
 
 
 ---
@@ -42,11 +42,8 @@ Windows 컴퓨터를 System Center Configuration Manager용 사이트 시스템 
 -   **.NET Framework**: 다음을 포함합니다.  
 
     -   ASP.NET  
-
     -   HTTP 활성화  
-
     -   비HTTP 활성화  
-
     -   WCF 서비스  
 
     각 사이트 시스템 역할에는 각기 다른 버전의 .NET Framework가 필요합니다.  
@@ -68,61 +65,37 @@ Windows 컴퓨터를 System Center Configuration Manager용 사이트 시스템 
  -   **네트워크 장치 등록 서비스**(Active Directory 인증서 서비스에서): 이 Windows 역할은 Configuration Manager의 인증서 프로필 사용을 위한 필수 조건입니다.  
 
  -   **웹 서버(IIS)**: 다음을 포함합니다.  
-
     -   일반 HTTP 기능 >  
-
         -   HTTP 리디렉션  
-
     -   응용 프로그램 개발 >  
-
         -   .NET 확장  
-
         -   ASP.NET  
-
         -   ISAPI 확장  
-
         -   ISAPI 필터  
-
     -   관리 도구 >  
-
         -   IIS 6 관리 호환성  
-
         -   IIS 6 메타데이터 호환성  
-
         -   IIS 6 WMI 호환성  
-
     -   보안 >  
-
         -   요청 필터링  
-
         -   Windows 인증  
 
  다음 사이트 시스템 역할은 나열된 IIS 구성 중 하나 이상을 사용합니다.  
-
     -   응용 프로그램 카탈로그 웹 서비스 지점  
-
     -   응용 프로그램 카탈로그 웹 사이트 지점  
-
     -   배포 지점  
-
     -   등록 지점  
-
     -   등록 프록시 지점  
-
     -   대체 상태 지점  
-
     -   관리 지점  
-
     -   소프트웨어 업데이트 지점  
-
-    -   상태 마이그레이션 지점  
+    -   상태 마이그레이션 지점     
 
     필요한 IIS의 최소 버전은 사이트 서버의 운영 체제와 함께 제공되는 버전입니다.  
 
     이러한 IIS 구성 외에 [배포 지점에 대한 IIS 요청 필터링](#BKMK_IISFiltering)도 구성해야 합니다.  
 
 -   **Windows 배포 서비스**: 이 역할은 운영 체제 배포와 함께 사용됩니다.  
-
 -   **Windows Server Update Services**: 이 역할은 소프트웨어 업데이트를 배포할 때 필요합니다.  
 
 ##  <a name="a-namebkmkiisfilteringa-iis-request-filtering-for-distribution-points"></a><a name="BKMK_IISFiltering"></a> 배포 지점에 대한 IIS 요청 필터링  
@@ -133,11 +106,8 @@ Windows 컴퓨터를 System Center Configuration Manager용 사이트 시스템 
  또한 Configuration Manager에서는 패키지와 응용 프로그램에 대해 다음 파일 이름 확장명이 사용됩니다. 요청 필터링 구성에서 이러한 파일 확장명을 차단하지 않는지 확인합니다.  
 
 -   .PCK  
-
 -   .PKG  
-
 -   .STA  
-
 -   .TAR  
 
 예를 들어 **bin**이라는 폴더 또는 **.mdb** 파일 이름 확장명의 파일이 포함된 소프트웨어 배포를 위한 원본 파일이 있을 수 있습니다.  
@@ -167,12 +137,12 @@ Windows 컴퓨터를 System Center Configuration Manager용 사이트 시스템 
 **배포 지점:** 배포 지점에서는 다음 HTTP 동사가 허용되어야 합니다.
  - GET
  - HEAD
- - PROFIND
+ - PROPFIND
 
 요청 필터링 구성에 대한 자세한 내용은 TechNet의 [IIS에서 요청 필터링 구성](https://technet.microsoft.com/library/hh831621.aspx#Verbs) 또는 관리 지점을 호스트하는 Windows Server 버전에 적용되는 유사한 문서를 참조하세요.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

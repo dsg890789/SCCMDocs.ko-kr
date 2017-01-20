@@ -1,8 +1,8 @@
 ---
-title: "데이터 및 사이트 인프라 보호 | System Center Configuration Manager"
+title: "데이터 및 사이트 인프라 보호 | Microsoft 문서"
 description: "System Center Configuration Manager를 사용하여 노출이나 악의적인 공격으로부터 조직의 리소스를 보호하는 방법에 대해 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 11/27/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 366a3626e2ab4894bbb515176890d508761b6561
+ms.sourcegitcommit: 593fbd0587d54490246f48ae54f666bac6b7830d
+ms.openlocfilehash: c80750358d64cf87f8a3ce3a4c4f4030a9dfd742
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 366a3626e2ab4894bbb515176890d508761b6561
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 
-인프라 및 데이터를 노출이나 악의적인 공격으로부터 보호하기 위해 사용자가 조직의 리소스에 안전하게 액세스할 수 있도록 설정할 수 있습니다. 이러한 항목의 내용에서는 해당 액세스를 사용하는 방법과 조직의 리소스를 보호하는 방법을 설명합니다.  
+인프라 및 데이터를 노출이나 악의적인 공격으로부터 보호하기 위해 사용자가 조직의 리소스에 안전하게 액세스할 수 있도록 설정할 수 있습니다. 이 항목의 정보는 System Center Configuration Manager(ConfigMgr 또는 SCCM이라고도 함)를 사용하여 해당 액세스를 허용하는 방법과 조직의 리소스를 보호하는 방법을 설명합니다.  
 
 -   VPN 프로필로 VPN 연결을 사용하도록 설정하면 사용자가 회사 리소스에 손쉽게 연결할 수 있습니다. [System Center Configuration Manager에서 VPN 프로필](../deploy-use/vpn-profiles.md)을 참조하세요.  
 
@@ -44,6 +44,6 @@ ms.openlocfilehash: 366a3626e2ab4894bbb515176890d508761b6561
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

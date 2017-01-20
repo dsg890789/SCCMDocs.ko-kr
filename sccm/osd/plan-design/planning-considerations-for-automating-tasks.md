@@ -1,5 +1,5 @@
 ---
-title: "작업 자동화에 대한 계획 고려 사항 | Configuration Manager"
+title: "작업 자동화에 대한 계획 고려 사항 | Microsoft 문서"
 description: "System Center Configuration Manager에서 작업을 자동화하기 전에 계획합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: a439d847adb129a341b33be8e1a1674c72184e77
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 830f715b688cc9929a179da94eba9c81de8db11a
 
 
 ---
@@ -183,7 +183,7 @@ System Center Configuration Manager 환경에서 작업을 자동화하는 작�
 > [!TIP]  
 >  작업 순서는 Configuration Manager 콘솔을 실행하는 컴퓨터의 CreateTSMedia.log 로그 파일에 작업 순서 변수의 값을 비롯하여 패키지 ID 및 시작 전 명령줄을 기록합니다. 이 로그 파일을 검토하여 작업 순서 변수의 값을 확인할 수 있습니다.  
 
-##  <a name="a-namebkmktscreatea-create-a-task-sequence"></a><a name="BKMK_TSCreate"></a> 작업 순서 만들기  
+##  <a name="a-namebkmktscreatea-create-a--task-sequence"></a><a name="BKMK_TSCreate"></a> 작업 순서 만들기  
  작업 순서는 작업 순서 만들기 마법사를 사용하여 만듭니다. 이 마법사를 통해, 특정 작업을 수행하는 기본 제공 작업 순서 또는 여러 다양한 작업을 수행할 수 있는 사용자 지정 작업 순서를 만들 수 있습니다.  
 
  예를 들어 참조 컴퓨터의 운영 체제 이미지를 작성 및 캡처하고 대상 컴퓨터에 기존 운영 체제 이미지를 설치하는 작업 순서를 만들거나, 사용자 지정된 작업을 수행하는 사용자 지정 작업 순서를 만들 수 있습니다. 사용자 지정 작업 순서를 사용하여 특수한 운영 체제 배포를 수행할 수 있습니다.  
@@ -326,6 +326,6 @@ System Center Configuration Manager 환경에서 작업을 자동화하는 작�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

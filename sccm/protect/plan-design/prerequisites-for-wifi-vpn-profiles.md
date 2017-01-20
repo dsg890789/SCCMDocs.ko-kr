@@ -1,8 +1,8 @@
 ---
-title: "Wi-Fi 및 VPN 프로필 필수 조건 | System Center Configuration Manager"
+title: "Wi-Fi 및 VPN 프로필 필수 조건 | Microsoft 문서"
 description: "System Center Configuration Manager의 인증서 프로필, Wi-Fi 프로필 및 VPN 프로필을 관리하는 데 필요한 보안 권한에 대해 알아봅니다."
 ms.custom: na
-ms.date: 0201-03-31
+ms.date: 11/23/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 5c6cf3c1697b49708aa5192b67b08b700da7dc72
-ms.openlocfilehash: c103735a0f5fab6b800a7e9fb808221aebb102cb
+ms.sourcegitcommit: 31b68ede677df8b86412a334d1d100041a0e659e
+ms.openlocfilehash: 309b0363f9b3ec4a31b8323b9e64c9f73060c281
 
 
 ---
@@ -54,6 +54,6 @@ System Center Configuration Manager의 Wi-Fi 및 VPN 프로필에는 제품 내 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

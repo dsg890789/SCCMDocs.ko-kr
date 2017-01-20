@@ -1,5 +1,5 @@
 ---
-title: "Windows 클라이언트 배포 필수 조건 | System Center Configuration Manager"
+title: "Windows 클라이언트 배포 필수 조건 | Microsoft 문서"
 description: "System Center Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하기 위한 필수 조건을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -13,12 +13,12 @@ ms.topic: get-started-article
 ms.assetid: 1a2a9b48-a95b-4643-b00c-b3079584ae2e
 caps.latest.revision: 16
 caps.handback.revision: 0
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 03ae6de34742ed0030e42c13639ef853d6b2bedc
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: cbcffea0fe2b4c8a05d3a835ff1193b528e55762
 
 
 ---
@@ -58,7 +58,7 @@ ms.openlocfilehash: 03ae6de34742ed0030e42c13639ef853d6b2bedc
 |Microsoft Core XML Services(MSXML) 버전 6.20.5002 이상|Windows에서 XML 문서 처리를 지원하는 데 필요합니다.|  
 |Microsoft RDC(원격 차등 압축)|네트워크를 통한 데이터 전송을 최적화하는 데 필요합니다.|  
 |Microsoft Visual C++ 2013 재배포 가능 버전 12.0.21005.1|클라이언트 작업을 지원하는 데 필요합니다. 이 업데이트를 클라이언트 컴퓨터에 설치한 경우 설치를 완료하려면 컴퓨터를 다시 시작해야 할 수 있습니다.|  
-|Microsoft Visual C++ 2005 재배포 가능 버전 8.0.50727.42|Microsoft SQL Server Compact 작업을 지원하는 데 필요합니다.|  
+|Microsoft Visual C++ 2005 재배포 가능 버전 8.0.50727.42|버전 1606 이전에서는 Microsoft SQL Server Compact 작업을 지원하는 데 필요합니다.|  
 |Windows 이미징 API 6.0.6001.18000|Configuration Manager에서 Windows 이미지 파일(.wim)을 관리하도록 허용하는 데 필요합니다.|  
 |Microsoft Policy Platform 1.2.3514.0|클라이언트에서 호환성 설정을 평가하는 데 필요합니다.|  
 |Microsoft Silverlight 5.1.41212.0(Configuration Manager 버전 1602부터)|응용 프로그램 카탈로그 웹 사이트 사용자 환경을 지원하는 데 필요합니다.|  
@@ -238,6 +238,6 @@ ms.openlocfilehash: 03ae6de34742ed0030e42c13639ef853d6b2bedc
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

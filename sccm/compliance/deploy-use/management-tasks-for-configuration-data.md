@@ -1,5 +1,5 @@
 ---
-title: "구성 데이터 관리 | System Center Configuration Manager"
+title: "구성 데이터 관리 | Microsoft 문서"
 description: "System Center Configuration Manager에서 구성 항목 및 기준을 만든 후 다른 명령을 사용하여 다양한 작업을 수행할 수 있습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 4f9c78524bc264e55f7c8b5625a8d654ecabc8b7
+ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
+ms.openlocfilehash: 1a6084834384e695b49a71fe23833049c86f8dbc
 
 
 ---
@@ -61,6 +61,6 @@ System Center Configuration Manager에서 구성 항목 및 구성 기준을 만
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

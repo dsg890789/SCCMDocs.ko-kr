@@ -1,5 +1,5 @@
 ---
-title: "관리 브라우저 정책을 사용하여 인터넷 액세스 관리 | System Center Configuration Manager"
+title: "관리 브라우저 정책을 사용하여 인터넷 액세스 관리 | Microsoft 문서"
 description: "Intune Managed Browser를 배포하여 인터넷 액세스를 관리하고 제한합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: e5efee7b94f5c61a610fd9f9fa278c992f9c64b8
+ms.sourcegitcommit: dcdaec52c9eafba3f7ce569f0dabb98921b4dc0a
+ms.openlocfilehash: f870a98fa9e839df16d0ca9deb96a18128f35ba6
 
 
 ---
@@ -26,10 +26,10 @@ ms.openlocfilehash: e5efee7b94f5c61a610fd9f9fa278c992f9c64b8
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager에서는 웹 검색 응용 프로그램인 Intune Managed Browser를 배포하고 관리 브라우저 정책과 연결할 수 있습니다. 관리 브라우저 정책은 관리 브라우저의 사용자가 방문할 수 있는 웹 사이트를 제한하는 허용 목록 또는 차단 목록을 구성합니다.  
-  
- 이 앱은 관리 앱이므로 잘라내기, 복사 및 붙여넣기 제어, 화면 캡처 방지, 사용자가 클릭하는 콘텐츠에 대한 링크를 다른 관리 앱에서만 열리게 하는 기능 등과 같은 모바일 응용 프로그램 관리 정책을 앱에 적용할 수 있습니다. 자세한 내용은 [모바일 응용 프로그램 관리 정책을 사용하여 앱 보호](../../apps/deploy-use/protect-apps-using-mam-policies.md)를 참조하세요.  
-  
+System Center Configuration Manager에서는 Intune Managed Browser(웹 검색 응용 프로그램)를 배포하고 관리 브라우저 정책과 연결할 수 있습니다. 관리 브라우저 정책은 관리 브라우저의 사용자가 이동할 수 있는 웹 사이트를 제한하는 허용 목록 또는 차단 목록을 설정합니다.  
+
+ 이 앱은 관리되는 앱이므로 잘라내기, 복사, 붙여넣기 사용 제어와 같은 모바일 응용 프로그램 관리 정책을 적용할 수도 있습니다. 이 경우 화면 캡처가 금지되며 콘텐츠 링크가 다른 관리되는 앱에서만 열립니다. 자세한 내용은 [모바일 응용 프로그램 관리 정책을 사용하여 앱 보호](../../apps/deploy-use/protect-apps-using-mam-policies.md)를 참조하세요.  
+
 > [!IMPORTANT]  
 >  사용자가 직접 관리 브라우저를 설치하는 경우 지정하는 정책에 의해 관리되지 않습니다. 브라우저가 Configuration Manager를 통해 관리되게 하려면 관리되는 앱으로 배포하려는 앱을 먼저 제거해야 합니다.  
 
@@ -41,16 +41,16 @@ System Center Configuration Manager에서는 웹 검색 응용 프로그램인 I
 
 > [!NOTE]  
 >  Intune Managed Browser 앱을 다운로드하고 자세한 내용을 보려면 iOS의 경우 [iTunes](https://itunes.apple.com/us/app/microsoft-intune-managed-browser/id943264951?mt=8)를 참조하고, Android의 경우 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.managedbrowser&hl=en)를 참조하세요.  
-  
+
 ## <a name="create-a-managed-browser-policy"></a>관리 브라우저 정책 만들기  
 
-1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **응용 프로그램 관리 정책**을 클릭합니다.  
+1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **응용 프로그램 관리 정책**을 선택합니다.  
 
-3.  **홈** 탭의 **만들기** 그룹에서 **응용 프로그램 관리 정책 만들기**를 클릭합니다.  
+3.  **홈** 탭의 **만들기** 그룹에서 **응용 프로그램 관리 정책 만들기**를 선택합니다.  
 
-4.  **일반** 페이지에서 정책의 이름과 설명을 입력하고 **다음**을 클릭합니다.  
+4.  **일반** 페이지에서 정책의 이름과 설명을 입력하고 **다음**을 선택합니다.  
 
-5.  **정책 형식** 페이지에서 플랫폼을 선택하고 정책 형식에 대해 **관리 브라우저** 를 선택한 후에 **다음**을 클릭합니다.  
+5.  **정책 형식** 페이지에서 플랫폼을 선택하고 정책 형식에 대해 **관리 브라우저**를 선택한 후에 **다음**을 선택합니다.  
 
      **관리 브라우저** 페이지에서 다음 옵션 중 하나를 선택합니다.  
 
@@ -61,32 +61,32 @@ System Center Configuration Manager에서는 웹 검색 응용 프로그램인 I
     > [!NOTE]  
     >  동일한 관리 브라우저 정책에 허용 URL과 차단 URL을 함께 포함시킬 수 없습니다.  
 
-     지정할 수 있는 URL에 대한 자세한 내용은 이 항목에서 **허용 및 차단 URL에 대한 URL 형식**을 참조하세요.  
+     지정할 수 있는 URL에 대한 자세한 내용은 이 문서에서 허용 및 차단 URL에 대한 URL 형식을 참조하세요.  
 
     > [!NOTE]  
-    >  **일반** 정책을 사용하는 경우 회사 규정 준수 및 보안 정책에 맞도록 배포하는 앱의 기능을 수정할 수 있습니다. 예를 들어 제한된 앱 내의 잘라내기, 복사 및 붙여넣기 작업을 제한할 수 있습니다. 일반 정책 유형에 대한 자세한 내용은 [모바일 응용 프로그램 관리 정책을 사용하여 앱 보호](../../apps/deploy-use/protect-apps-using-mam-policies.md)를 참조하세요.  
+    >  일반 정책을 사용하는 경우 회사 규정 준수 및 보안 정책에 맞도록 배포하는 앱의 기능을 변경할 수 있습니다. 예를 들어 제한된 앱 내의 잘라내기, 복사 및 붙여넣기 작업을 제한할 수 있습니다. 일반 정책 유형에 대한 자세한 내용은 [모바일 응용 프로그램 관리 정책을 사용하여 앱 보호](../../apps/deploy-use/protect-apps-using-mam-policies.md)를 참조하세요.  
 
-6.  마법사를 완료합니다.  
+6.  마법사를 마칩니다.  
 
- 새 정책이 **소프트웨어 라이브러리** 작업 영역의 **응용 프로그램 관리 정책** 노드에 표시됩니다.  
+새 정책이 **소프트웨어 라이브러리** 작업 영역의 **응용 프로그램 관리 정책** 노드에 표시됩니다.  
 
 ## <a name="create-a-software-deployment-for-the-managed-browser-app"></a>관리 브라우저 앱에 대한 소프트웨어 배포 만들기  
  관리 브라우저 정책을 만든 후에는 Managed Browser 앱에 대한 소프트웨어 배포 유형을 만들 수 있습니다. Managed Browser 앱의 경우 일반 정책과 관리 브라우저 정책을 모두 연결해야 합니다.  
-  
+
  자세한 내용은 [응용 프로그램 만들기](../../apps/deploy-use/create-applications.md)를 참조하세요.  
-  
+
 ## <a name="security-and-privacy-for-the-managed-browser"></a>관리 브라우저에 대한 보안 및 개인 정보  
 
--   iOS 장치에서 만료되거나 신뢰할 수 없는 인증서가 있는 웹 사이트를 사용자가 방문하면 해당 웹 사이트를 열 수 없습니다.  
+-   iOS 장치에서 만료되었거나 신뢰할 수 없는 인증서를 가진 웹 사이트는 열 수 없습니다.  
 
--   사용자가 자신의 장치에서 기본 제공 브라우저에 대해 구성하는 설정은 관리 브라우저에서 사용되지 않습니다. 관리 브라우저는 이러한 설정에 액세스할 수 없기 때문입니다.  
+-   사용자가 자신의 장치에서 기본 제공 브라우저에 대해 구성하는 설정은 관리 브라우저에서 사용되지 않습니다. Managed Browser는 이러한 설정에 액세스할 수 없습니다.  
 
--   관리 브라우저와 연결된 모바일 응용 프로그램 관리 정책에 **액세스하려면 단순 PIN 필요** 또는 **액세스하려면 회사 자격 증명 필요** 옵션을 구성했는데 사용자가 인증 페이지의 도움말 링크를 클릭한 경우 해당 사용자는 관리 브라우저 정책의 차단 목록에 추가되었는지 여부와 상관없이 아무 인터넷 사이트나 탐색할 수 있습니다.  
+-   Managed Browser와 연결된 모바일 응용 프로그램 관리 정책에서 **액세스하려면 단순 PIN 필요** 또는 **액세스하려면 회사 자격 증명 필요** 옵션을 설정한 경우 사용자가 인증 페이지에서 도움말을 클릭한 다음 Managed Browser 정책의 차단 목록에 추가된 사이트를 포함하여 모든 페이지로 이동할 수 있습니다.  
 
 -   관리 브라우저는 직접 액세스하는 사이트에 대한 액세스만 차단할 수 있습니다. 중간 서비스(변환 서비스 등)를 사용하여 사이트에 액세스하는 경우 액세스를 차단할 수 없습니다.  
 
 ## <a name="reference-information"></a>참조 정보  
-  
+
 ###  <a name="url-format-for-allowed-and-blocked-urls"></a>허용 및 차단 URL에 대한 URL 형식  
 
 다음 정보를 사용하여 허용 및 차단 목록에 URL을 지정할 때 사용할 수 있는 형식 및 와일드카드에 대해 알아볼 수 있습니다.  
@@ -140,7 +140,7 @@ System Center Configuration Manager에서는 웹 검색 응용 프로그램인 I
 
 > [!NOTE]  
 >  *.microsoft.com은 항상 허용됩니다.  
-  
+
 ### <a name="how-conflicts-between-the-allow-and-block-list-are-resolved"></a>허용 목록과 차단 목록 간의 충돌을 해결하는 방법  
  여러 관리 브라우저 정책을 장치에 배포했는데 설정이 충돌하면 모드(허용 또는 차단)와 URL 목록에 대해 모두 충돌을 평가합니다. 충돌이 발생할 경우 다음 동작이 적용됩니다.  
 
@@ -154,6 +154,6 @@ System Center Configuration Manager에서는 웹 검색 응용 프로그램인 I
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

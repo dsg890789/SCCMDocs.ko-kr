@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager 개인정보취급방침 – Configuration Manager Cmdlet 라이브러리"
+title: "System Center Configuration Manager 개인정보취급방침 – Configuration Manager Cmdlet 라이브러리 | Microsoft 문서"
 description: "Microsoft에서 System Center Configuration Manager Cmdlet 라이브러리와 관련된 데이터를 수집하고 사용하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 88d11aaed4a0e6575cb859f5dfc3ac425bd2bf38
+ms.sourcegitcommit: 767d0594eb871462df038997ea3b7e29615e05f7
+ms.openlocfilehash: 10d8e8948d66a6b9b74e16a02cfbfc4ced66596c
 
 
 ---
@@ -49,31 +49,10 @@ System Center Configuration Manager Cmdlet 라이브러리를 사용하면 Windo
 
  사용 현황 데이터 설정에 대한 변경은 변경이 수행된 컴퓨터에서만 할 수 있습니다.  
 
- 사용 현황 데이터(컬렉션)를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager Cmdlet 라이브러리 설명서](https://technet.microsoft.com/en-us/library/dn958404.aspx)를 참조하세요.  
-
-## <a name="update-check"></a>업데이트 확인  
- **이 기능의 용도:**   
-System Center Configuration Manager Cmdlet 라이브러리는 매일 라이브러리 업데이트를 자동으로 확인하고 사용자에게 업데이트된 라이브러리를 다운로드하도록 알립니다.  
-
- **정보 수집, 처리 또는 전송:**   
-Cmdlet 라이브러리 업데이트 확인을 수행하면 버전 확인을 위해 Microsoft 다운로드 센터에서 작은 텍스트 파일을 다운로드합니다.   이 파일은 로컬에 저장되지 않습니다.  Cmdlet 라이브러리는 자동으로 소프트웨어를 업그레이드하지 않습니다.  
-
- **정보의 사용:**   
-이 정보는 Microsoft에서 제공하는 제품과 서비스의 품질, 보안 및 무결성을 향상하기 위해 사용됩니다.  
-
- **선택/제어:**   
-업데이트 확인은 기본적으로 사용하도록 설정됩니다.  System Center Configuration Manager Cmdlet 라이브러리에는 업데이트 알림 기능을 제어하기 위해 이러한 cmdlet이 포함되어 있습니다.  
-
--   `Get-CMCmdletUpdateCheck` 은(는) 업데이트 기능 구성을 가져오고, 사용자 정책이 시스템 정책에 의해 재정의되는지 표시합니다.  
-
--   `Send-CMCmdletUpdateCheck` 을(를) 사용하면 예약되지 않은 업데이트 확인을 수행할 수 있습니다. 예약되지 않은 확인에서는 정책 설정이 고려되지 않습니다.  
-
--   `Set-CMCmdletUpdateCheck` 은(는) 사용자별 또는 시스템별로 업데이트 확인 설정을 구성합니다. 시스템 설정을 구성하려면 관리자 권한으로 실행해야 합니다.  
-
- 업데이트 확인 구성에 대한 자세한 내용은 [System Center Configuration Manager Cmdlet 라이브러리 설명서](https://technet.microsoft.com/en-us/library/dn958404.aspx)에서 확인할 수 있습니다.  
+ 사용 현황 데이터(컬렉션)를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager Cmdlet 라이브러리 설명서](https://technet.microsoft.com/en-us/library/dn958404.aspx)를 참조하세요.   
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

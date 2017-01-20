@@ -1,5 +1,5 @@
 ---
-title: "콘텐츠 마이그레이션 |System Center Configuration Manager"
+title: "콘텐츠 마이그레이션 | Microsoft 문서"
 description: "System Center Configuration Manager 대상 계층 구조로 데이터를 마이그레이션하는 동안 배포 지점을 사용하여 콘텐츠를 관리합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: aa88f18247b49995bff4a4a6f5fd1e1ed70ca214
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: c96fa0995b5de87f50e1146b338058f26daeb624
 
 
 ---
@@ -188,8 +188,23 @@ Configuration Manager 콘솔의 **원본 계층** 노드에서 재할당할 수 
 
  배포 지점을 재할당하기 위해 대상 계층에서는 원본 사이트의 SMS 공급자에서 데이터를 수집하도록 구성된 원본 사이트 액세스 계정을 사용합니다. 필요한 권한과 추가 필수 조건에 대한 자세한 내용은 [System Center Configuration Manager에서 마이그레이션을 수행하기 위한 필수 조건](../../core/migration/prerequisites-for-migration.md)을 참조하세요.  
 
+## <a name="migrate-multiple-shared-distribution-points-at-the-same-time"></a>동시에 여러 공유 배포 지점 마이그레이션
+버전 1610부터 **배포 지점 다시 할당** 옵션을 사용하여 Configuration Manager 프로세스에서 동시에 최대 50개의 공유 배포 지점을 병렬로 다시 할당하도록 할 수 있습니다. 여기에는 다음을 실행하는 지원되는 원본 사이트의 공유 배포 지점이 포함됩니다.  
+- Configuration Manager 2007
+- System Center 2012 Configuration Manager
+- System Center 2012 R2 Configuration Manager
+- System Center Configuration Manager 현재 분기 사이트
+
+배포 지점을 다시 할당하는 경우 각 배포 지점이 업그레이드되거나 다시 할당될 자격이 있어야 합니다. 관련된 작업 및 프로세스의 이름(업그레이드 또는 다시 할당)은 원본 사이트에서 실행하는 Configuration Manager 버전에 따라 달라집니다. 그러나 업그레이드 또는 다시 할당된 최종 결과는 동일합니다. 배포 지점이 해당 콘텐츠가 구현된 현재 분기 사이트 중 하나에 할당됩니다.
+
+버전 1610 이전에는 Configuration Manager에서 한 번에 하나의 배포 지점만 처리할 수 있었습니다. 이제 다음과 같은 주의 사항은 있지만 배포 지점을 원하는 개수만큼 다시 할당할 수 있습니다.  
+- 다시 할당할 배포 지점을 다중 선택할 수는 없지만 둘 이상을 큐에 넣으면 Configuration Manager에서 다음 배포 지점을 시작하기 전에 배포 지점이 완료되기를 기다리는 대신 병렬로 처리합니다.  
+- 기본적으로 최대 50개의 배포 지점이 동시에 병렬로 처리됩니다. 첫 번째 배포 지점의 다시 할당이 완료되면 Configuration Manager에서 51번째 배포 지점의 처리를 시작합니다.  
+- Configuration Manager SDK를 사용하는 경우 **SharedDPImportThreadLimit** 속성을 수정하여 Configuration Manager에서 병렬로 처리할 수 있는 다시 할당된 배포 지점 수를 조정할 수 있습니다.
+
+
 ##  <a name="a-nameaboutmigratingcontenta-content-ownership-when-migrating-content"></a><a name="About_Migrating_Content"></a> 콘텐츠 마이그레이션 시 콘텐츠 소유권  
- 배포할 콘텐츠를 마이그레이션하는 경우 콘텐츠 개체를 대상 계층 내 사이트에 할당해야 합니다. 그러면 이 사이트는 대상 계층에서 해당 콘텐츠의 소유자가 됩니다. 대상 계층의 최상위 사이트는 콘텐츠의 메타데이터를 실제로 마이그레이션하는 사이트지만 네트워크를 통해 콘텐츠의 원래 원본 파일에 액세스하는 사이트는 할당된 사이트입니다.  
+ 배포할 콘텐츠를 마이그레이션하는 경우 콘텐츠 개체를 대상 계층 내 사이트에 할당해야 합니다. 그러면 이 사이트는 대상 계층에서 해당 콘텐츠의 소유자가 됩니다. 대상 계층 구조의 최상위 사이트는 콘텐츠의 메타데이터를 마이그레이션하는 사이트지만 네트워크를 통해 콘텐츠의 원래 원본 파일에 액세스하는 사이트는 할당된 사이트입니다.  
 
  콘텐츠를 마이그레이션할 때 사용되는 네트워크 대역폭을 최소화하려면 네트워크에서 원본 계층의 콘텐츠 위치에 가까운 대상 계층의 사이트로 콘텐츠 소유권을 이전하는 것이 좋습니다. 대상 계층의 콘텐츠에 대한 정보는 전체에서 공유되므로 모든 사이트에서 사용할 수 있습니다.  
 
@@ -197,6 +212,6 @@ Configuration Manager 콘솔의 **원본 계층** 노드에서 재할당할 수 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

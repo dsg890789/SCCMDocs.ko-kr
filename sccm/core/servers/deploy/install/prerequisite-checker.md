@@ -1,5 +1,5 @@
 ---
-title: "필수 조건 검사기 | System Center Configuration Manager"
+title: "필수 구성 요소 검사기 | Microsoft 문서"
 description: "실제 사이트 또는 사이트 시스템 역할 설치를 차단하는 문제를 확인하고 해결하기 위해 필수 조건 검사기를 사용하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 4c2322ed0805b5f087409ec487ebec9d7c4f10d5
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: f30d7a451f47a3ab1efe6f7ac9c3e0151b8cda96
 
 ---
 # <a name="prerequisite-checker-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 필수 조건 검사기
@@ -91,7 +91,7 @@ ms.openlocfilehash: 4c2322ed0805b5f087409ec487ebec9d7c4f10d5
 
 2.  **prereqchk.exe /LOCAL** 을 입력하여 필수 구성 요소 검사기를 시작하고 서버에서 모든 필수 구성 요소 검사를 실행합니다.  
 
-## <a name="run-prerequisite-checker-from-a-command-prompt-for-specified-options"></a>지정한 옵션을 적용하여 명령 프롬프트에서 필수 구성 요소 검사기 실행  
+## <a name="run-prerequisite-checker-from-a-command-prompt--for-specified-options"></a>지정한 옵션을 적용하여 명령 프롬프트에서 필수 구성 요소 검사기 실행  
 
 1.  명령 프롬프트 창을 열고 디렉터리를 다음 위치 중 하나로 변경합니다.  
 
@@ -216,6 +216,6 @@ ms.openlocfilehash: 4c2322ed0805b5f087409ec487ebec9d7c4f10d5
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 
