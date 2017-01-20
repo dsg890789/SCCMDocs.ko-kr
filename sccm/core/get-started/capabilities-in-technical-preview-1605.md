@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager용 Technical Preview 1605의 기능"
+title: "System Center Configuration Manager용 Technical Preview 1605의 기능 | Microsoft 문서"
 description: "System Center Configuration Manager용 Technical Preview 버전 1605에서 사용 가능한 기능에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ ms.author: brenduns
 manager: angrobe
 robots: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: f777295958e9cbc729e3759d354521c96ae3e8ac
-ms.openlocfilehash: 0137d6e2c69480d6de88fbf8fa3450d1699007e5
+ms.sourcegitcommit: 3bf44f850722afdb8dfe5922c8ceff11c9b56d08
+ms.openlocfilehash: 06741d03e208c6f5c8093130780dcdc8f0fcfbf7
 
 ---
 # <a name="capabilities-in-technical-preview-1605-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1605의 기능
@@ -273,7 +273,7 @@ ms.openlocfilehash: 0137d6e2c69480d6de88fbf8fa3450d1699007e5
 
 -   **응용 프로그램** 탭이 세 개의 별도 탭(**업데이트**, **운영 체제**(이전에는 둘 다 **필터** 목록에 있었음) 및 **응용 프로그램**)으로 분리되었습니다.  
 
-##  <a name="a-namebkmkservergroupsa-service-a-server-group"></a><a name="BKMK_ServerGroups"></a> 서버 그룹 제공  
+##  <a name="a-namebkmkservergroupsa-service-a--server-group"></a><a name="BKMK_ServerGroups"></a> 서버 그룹 제공  
  System Center Configuration Manager용 Technical Preview 버전 1511은 컬렉션을 만드는 기능을 포함하고 있으며 여기서 컬렉션의 모든 장치는 서버 그룹을 구성합니다. 서버 그룹에 소프트웨어 업데이트를 배포할 때 사용할 서버 그룹 설정을 구성하고, 지정된 시간에 업데이트되는 컴퓨터의 백분율을 제어할 수 있으며, 사용자 지정 작업을 실행하도록 배포 전/배포 후 PowerShell 스크립트를 구성할 수 있습니다.  
 
  System Center Configuration Manager용 Technical Preview 버전 1605에서는 정의하는 특정 순서대로 서버 그룹의 컴퓨터를 업데이트하는 기능이 추가되고, 서버 그룹의 컴퓨터 상태를 볼 수 있도록 모니터링 기능이 향상되었으며, 클라이언트가 소프트웨어 업데이트를 설치하지 못하거나 다른 클라이언트가 해당 소프트웨어 업데이트를 설치하지 않도록 하는 경우에 유용한 배포 잠금을 제거하는 기능이 제공됩니다.  
@@ -472,6 +472,6 @@ ms.openlocfilehash: 0137d6e2c69480d6de88fbf8fa3450d1699007e5
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

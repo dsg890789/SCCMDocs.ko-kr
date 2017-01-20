@@ -1,8 +1,8 @@
 ---
-title: "장치 준수 정책 만들기 및 배포 | System Center Configuration Manager"
+title: "장치 준수 정책 만들기 및 배포 | Microsoft 문서"
 description: "System Center Configuration Manager에서 장치 준수 정책을 만들고 배포하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 11/15/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,13 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0cba232e-319f-4ae6-9ffa-4cd76c8bcb29
 caps.latest.revision: 
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 robots: noindex
 translationtype: Human Translation
-ms.sourcegitcommit: 5c6cf3c1697b49708aa5192b67b08b700da7dc72
-ms.openlocfilehash: bb91f4a711699790bb01f48d32183cf1215b1952
+ms.sourcegitcommit: c13c6268fa76ade7feb0981f9c4a6e325e393aca
+ms.openlocfilehash: 4cc7148be602367b579d63535a4938919bacf829
 
 ---
 
@@ -79,7 +79,7 @@ ms.openlocfilehash: bb91f4a711699790bb01f48d32183cf1215b1952
 
 ## <a name="monitor-the-compliance-policy"></a>규정 준수 정책 모니터링
 
-#### <a name="to-view-compliance-results-in-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 호환성 결과를 보려면
+### <a name="to-view-compliance-results-in-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 호환성 결과를 보려면
 
 1.  Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.
 
@@ -98,6 +98,14 @@ ms.openlocfilehash: bb91f4a711699790bb01f48d32183cf1215b1952
     -   **비호환**: 영향받는 자산 수에 따라 정책 내에 있는 모든 미준수 규칙의 목록을 표시합니다. 규칙을 클릭하여 **자산 및 준수** 작업 영역의 **사용자** 또는 **장치** 노드 아래에 임시 노드를 만들 수 있습니다. 그러면 이 규칙을 준수하지 않는 모든 사용자 또는 장치가 해당 노드에 포함됩니다. 사용자 또는 장치를 선택하면 **자산 정보** 창에 선택한 문제의 영향을 받는 사용자 또는 장치가 표시됩니다. 목록에서 문제에 대한 추가 정보를 표시할 사용자 또는 장치를 두 번 클릭합니다.
 
     -   **알 수 없음**: 선택한 정책 배포에 대해 준수 여부를 보고하지 않은 모든 사용자 및 장치의 목록과 장치의 현재 클라이언트 상태를 표시합니다.
+
+### <a name="to-view-intune-compliance-policies-charts"></a>Intune 준수 정책 차트를 보려면
+1. Configuration Manager 버전 1610부터 Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.
+2. **모니터링** 작업 영역에서 **개요** > **준수 설정** >  **준수 정책**으로 이동합니다.
+3. 다음 차트가 표시됩니다.
+    - **전체 장치 준수**: 모든 준수 정책에 대한 장치의 전반적인 준수를 표시합니다.
+    - **주요 비준수 이유**: 장치가 비규격인 주요 정책을 표시합니다.
+4. 차트에서 섹션을 클릭하면 해당 범주 내의 장치 목록으로 드릴다운할 수 있습니다.
 
 ### <a name="to-view-a-health-attestation-report"></a>상태 증명 보고서를 보려면
 
@@ -214,10 +222,8 @@ ms.openlocfilehash: bb91f4a711699790bb01f48d32183cf1215b1952
   **지원됨:**
   * Windows 10 및 Windows 10 Mobile
 
-  
 
 
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

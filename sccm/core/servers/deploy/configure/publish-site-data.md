@@ -1,5 +1,5 @@
 ---
-title: "사이트 데이터 게시 | System Center Configuration Manager"
+title: "사이트 데이터 게시 | Microsoft 문서"
 description: "Configuration Manager 사이트를 Active Directory Domain Services에 게시하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: cda87a3bdcbba342f111b68af75369ca14744441
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: eb44c1c8c908e9cac17dc6d3011a3111eeb949b1
 
 
 ---
@@ -76,6 +76,6 @@ System Center Configuration Manager의 Active Directory 스키마를 확장한 �
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

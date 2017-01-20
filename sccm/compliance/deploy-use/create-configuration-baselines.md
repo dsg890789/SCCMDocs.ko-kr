@@ -1,5 +1,5 @@
 ---
-title: "구성 기준 만들기 | System Center Configuration Manager"
+title: "구성 기준 만들기 | Microsoft 문서"
 description: "System Center Configuration Manager에서 컬렉션에 배포할 수 있는 구성 기준을 만듭니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 9494524b68586d34b93b323a16829949b416c035
+ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
+ms.openlocfilehash: 649942d3d468ec35c7246e08f741cdebd22fb3ac
 
 
 ---
@@ -73,6 +73,6 @@ System Center Configuration Manager의 구성 기준에는 미리 정의된 구�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

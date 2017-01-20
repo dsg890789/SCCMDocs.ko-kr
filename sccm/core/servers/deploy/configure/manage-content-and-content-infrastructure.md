@@ -1,5 +1,5 @@
 ---
-title: "콘텐츠 인프라 | System Center Configuration Manager"
+title: "콘텐츠 인프라 | Microsoft 문서"
 description: "System Center Configuration Manager에 대한 콘텐츠 관리 인프라를 배포한 후 관리하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: ad009200bc410078cc32908d241c3e02992a61d8
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 35247425252cb3724de2871d713f08469e72555a
 
 
 ---
@@ -36,6 +36,6 @@ System Center Configuration Manager용 콘텐츠 관리 인프라를 배포하�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

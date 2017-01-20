@@ -1,5 +1,5 @@
 ---
-title: "쿼리 기술 참조 | System Center Configuration Manager"
+title: "기술 참조 쿼리 | Microsoft 문서"
 description: "쿼리를 사용하여 사이트의 리소스 정보를 검색하려면 항목 목록을 참조하세요."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 807737933ce3ff0452d5b728796c77ab1448b6b2
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 479a7e902ff19b8ec501ff01c8e56565fd69f51b
 
 
 ---                     
@@ -38,6 +38,6 @@ System Center Configuration Manager의 쿼리는 사용자가 지정하는 기�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

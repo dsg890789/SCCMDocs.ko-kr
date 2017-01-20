@@ -1,5 +1,5 @@
 ---
-title: "콘텐츠 관리 기본 사항 | System Center Configuration Manager"
+title: "콘텐츠 관리의 기본 사항 | Microsoft 문서"
 description: "System Center Configuration Manager에서 도구와 옵션을 사용하여 배포하는 콘텐츠를 관리합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 27342ef83d877c31f39bc232e3e19e37b78e62da
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: 577d7e3acc27e3b50e22fc42d5db2f68d9cdde29
 
 
 ---
@@ -39,7 +39,7 @@ System Center Configuration Manager에서는 응용 프로그램, 패키지, 소
 
      풀(pull) 배포 지점이 원격 포리스트의 원본 배포 지점에서 콘텐츠를 가져올 때도 이 계정이 사용됩니다.  
 
--   **패키지 액세스 계정** – 기본적으로 Configuration Manager는 일반 액세스 계정인 사용자 및 관리자에 대해 배포 지점의 콘텐츠 액세스 권한을 부여합니다. 그러나 추가 권한을 구성하여 액세스를 제한할 수 있습니다. &lt;패키지 콘텐츠에 액세스하기 위한 계정 관리\>를 참조하세요.  
+-   **패키지 액세스 계정** – 기본적으로 Configuration Manager는 일반 액세스 계정인 사용자 및 관리자에 대해 배포 지점의 콘텐츠 액세스 권한을 부여합니다. 그러나 추가 권한을 구성하여 액세스를 제한할 수 있습니다.   
 
 -   **멀티캐스트 연결 계정** – 운영 체제 배포에 사용되는 계정입니다.  
 
@@ -75,8 +75,12 @@ BDR은 계층 내 각 부모 및 자식 사이트 간에 지원됩니다. 사이
 
 -   이렇게 해서 동일한 서브넷에 있는 후속 클라이언트가 배포 지점에서 콘텐츠를 다운로드하지 않아도 되며 콘텐츠가 여러 클라이언트에 배포되어 이후에 전송됩니다.  
 
+## <a name="peer-cache"></a>피어 캐시
+버전 1610부터 클라이언트 피어 캐시는 원격 위치의 클라이언트에 대한 콘텐츠 배포를 관리하는 데 도움이 됩니다. 피어 캐시는 클라이언트가 로컬 캐시의 콘텐츠를 다른 클라이언트와 직접 공유하도록 기본 제공되는 Configuration Manager 솔루션입니다.
 
+피어 캐시를 사용하도록 설정된 클라이언트 설정을 컬렉션에 배포하고 나면 해당 컬렉션의 멤버가 동일 경계 그룹에서 다른 클라이언트의 피어 콘텐츠 원본 역할을 할 수 있습니다.
 
+자세한 내용은 [Configuration Manager 클라이언트에 대한 피어 캐시](/sccm/core/plan-design/hierarchy/client-peer-cache)를 참조하세요.
 
 
 ## <a name="windows-pe-peer-cache"></a>Windows PE 피어 캐시
@@ -94,7 +98,7 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
 
     -   클라우드 기반 배포 지점은 온-프레미스 배포 지점을 사용할 수 없는 경우의 대체 옵션으로만 사용합니다.  
 
--   **인터넷** :  
+-   **인터넷**:  
 
     -   배포 지점이 HTTPS를 허용해야 합니다.  
 
@@ -119,9 +123,9 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
 
  특수하지 않은 기본 배포 지점은 보통 표준 배포 지점이라고 합니다.  표준 배포 지점에는 특별히 주의해야 하는 두 가지 변형이 있습니다.  
 
--   **풀(pull) 배포 지점** - 클라이언트가 배포 지점에서 콘텐츠를 다운로드하는 방식과 비슷하게, 배포 지점이 다른 배포 지점(원본 배포 지점)에서 콘텐츠를 가져오는 배포 지점의 변형입니다. 풀(pull) 배포 지점을 사용하면 사이트 서버가 각 배포 지점에 콘텐츠를 직접 배포해야 하는 경우 발생할 수 있는 네트워크 대역폭 병목 현상을 방지할 수 있습니다.  [System Center Configuration Manager에서 풀 배포 지점 사용](/sccm/core/plan-design/hierarchy/use-a-pull-distribution-point)  
+-   **풀(pull) 배포 지점** - 클라이언트가 배포 지점에서 콘텐츠를 다운로드하는 방식과 비슷하게, 배포 지점이 다른 배포 지점(원본 배포 지점)에서 콘텐츠를 가져오는 배포 지점의 변형입니다. 풀(pull) 배포 지점을 사용하면 사이트 서버가 각 배포 지점에 콘텐츠를 직접 배포해야 하는 경우 발생할 수 있는 네트워크 대역폭 병목 현상을 방지할 수 있습니다.  [System Center Configuration Manager에서 풀 배포 지점 사용](/sccm/core/plan-design/hierarchy/use-a-pull-distribution-point).
 
--   **클라우드 기반 배포 지점** – Microsoft Azure에 설치되는 배포 지점의 한 변형입니다. [System Center Configuration Manager에서 클라우드 기반 배포 지점 사용](../../../core/plan-design/hierarchy/use-a-cloud-based-distribution-point.md)  
+-   **클라우드 기반 배포 지점** – Microsoft Azure에 설치되는 배포 지점의 한 변형입니다. [System Center Configuration Manager에서 클라우드 기반 배포 지점 사용](../../../core/plan-design/hierarchy/use-a-cloud-based-distribution-point.md).  
 
 
 표준 배포 지점은 제한 및 예약, PXE 및 멀티캐스트 또는 사전 준비된 콘텐츠와 같은 다양한 구성 및 기능을 지원합니다.  
@@ -155,18 +159,29 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
 >  또한 풀(pull) 배포 지점은 우선 순위 개념을 사용하여 원본 배포 지점의 순서를 결정합니다.  
 >   
 >  -   콘텐츠를 배포 지점에 전송하는 배포 지점 우선 순위는 풀(pull) 배포 지점이 원본 배포 지점에서 콘텐츠를 검색할 때 사용하는 우선 순위와는 다릅니다.  
-> -   자세한 내용은 [System Center Configuration Manager에서 풀 배포 지점 사용](/sccm/core/plan-design/hierarchy/use-a-pull-distribution-point)을 참조하세요.  
+>  -   자세한 내용은 [System Center Configuration Manager에서 풀 배포 지점 사용](/sccm/core/plan-design/hierarchy/use-a-pull-distribution-point)을 참조하세요.  
 
 
 ## <a name="fallback"></a>대체  
- 대체 설정은 **기본 배포 지점** 사용 및 클라이언트에서 사용되는 콘텐츠 원본 위치와 관련된 설정입니다.  
+ 버전 1610부터 클라이언트에서 대체(fallback)를 포함하여 콘텐츠가 있는 배포 지점을 검색하는 방법에 대한 몇 가지 개념이 변경되었습니다. 사용하는 버전에 적용되는 다음 정보를 사용하세요.
+
+**버전 1610 이상:**   
+현재 경계 그룹과 연결된 배포 지점에서 콘텐츠를 찾을 수 없는 클라이언트는 인접 경계 그룹과 연결된 콘텐츠 원본 위치를 사용하도록 대체(fallback)할 수 있습니다. 대체에 사용하려면 인접 경계 그룹에 클라이언트의 현재 경계 그룹과 정의된 관계가 있어야 합니다. 이 관계에는 로컬에서 콘텐츠를 찾을 수 없는 클라이언트가 인접 경계 그룹의 콘텐츠 원본을 검색의 일부로 포함할 수 있기 전에 경과해야 하는 구성된 시간이 포함됩니다.
+
+기본 배포 지점의 개념은 더 이상 사용되지 않으며, 콘텐츠에 대한 대체 원본 위치 허용 설정을 더 이상 사용하거나 적용할 수 없습니다.
+
+자세한 내용은 [경계 그룹](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#boundary-groups)을 참조하세요.
+
+
+**버전 1511, 1602 및 1606:**   
+대체 설정은 **기본 배포 지점** 사용 및 클라이언트에서 사용되는 콘텐츠 원본 위치와 관련된 설정입니다.
 
 -   기본적으로 클라이언트는 기본 배포 지점, 즉 클라이언트 경계 그룹에 연결된 배포 지점에서만 콘텐츠를 다운로드합니다.  
 
 -   그러나 **클라이언트가 콘텐츠에 대한 대체 원본 위치로 이 사이트 시스템을 사용하도록 허용**을 사용하여 배포 지점을 구성한 경우에는 기본 배포 지점 중 하나에서 배포를 가져올 수 없는 클라이언트에 대해서만 유효한 콘텐츠 원본으로 해당 배포 지점을 제공할 수 있습니다.  
 
 
-다양한 콘텐츠 위치 및 대체 시나리오에 대한 자세한 내용은 [콘텐츠 원본 위치 시나리오](../../../core/plan-design/hierarchy/content-source-location-scenarios.md)를 참조하세요.
+다양한 콘텐츠 위치 및 대체 시나리오에 대한 자세한 내용은 [콘텐츠 원본 위치 시나리오](../../../core/plan-design/hierarchy/content-source-location-scenarios.md)를 참조하세요. 경계 그룹에 대한 자세한 내용은 [버전 1511,1602 및 1606에 대한 경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups-for-1511-1602-and-1606)을 참조하세요.
 
 ## <a name="network-bandwidth"></a>네트워크 대역폭  
  다음 옵션을 사용하면 콘텐츠를 배포할 때 사용되는 네트워크 대역폭의 양을 관리할 수 있습니다.  
@@ -178,16 +193,23 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
 자세한 내용은 [네트워크 대역폭 관리](/sccm/core/plan-design/hierarchy/manage-network-bandwidth)를 참조하세요.
 
 ## <a name="network-connection-speed-to-content-source"></a>콘텐츠 원본에 대한 네트워크 연결 속도  
+버전 1610부터 클라이언트에서 콘텐츠 원본에 대한 네트워크 연결 속도를 포함하여 콘텐츠가 있는 배포 지점을 검색하는 방법에 대한 몇 가지 개념이 변경되었습니다. 사용하는 버전에 적용되는 다음 정보를 사용하세요.
+
+**버전 1610 이상:**   
+배포 지점을 **고속** 또는 **저속**으로 정의하는 네트워크 연결 속도는 더 이상 사용되지 않습니다. 대신 경계 그룹과 연결된 각 사이트 시스템이 동일하게 처리됩니다.
+
+자세한 내용은 [경계 그룹](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#boundary-groups)을 참조하세요.
+
+
+**버전 1511, 1602 및 1606:**   
+
  경계 그룹에서 각 배포 지점의 네트워크 연결 속도를 구성할 수 있습니다.  
 
 -   클라이언트는 배포 지점에 연결할 때 이 값을 사용합니다.  
-
 -   네트워크 연결 속도는 기본적으로 **고속**으로 구성되어 있지만 **저속**으로 설정할 수도 있습니다.  
-
 -   **네트워크 연결 속도** 및 배포 구성에 따라 연결된 경계 그룹에 있는 클라이언트가 배포 지점에서 콘텐츠를 다운로드할 수 있는지 여부가 결정됩니다.  
 
-
-다양한 콘텐츠 위치 및 대체 시나리오에 대한 자세한 내용은 [콘텐츠 원본 위치 시나리오](../../../core/plan-design/hierarchy/content-source-location-scenarios.md)를 참조하세요.  
+다양한 콘텐츠 위치 및 대체 시나리오에 대한 자세한 내용은 [콘텐츠 원본 위치 시나리오](../../../core/plan-design/hierarchy/content-source-location-scenarios.md)를 참조하세요. 경계 그룹에 대한 자세한 내용은 [버전 1511,1602 및 1606에 대한 경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups-for-1511-1602-and-1606)을 참조하세요.
 
 ## <a name="on-demand-content-distribution"></a>주문형 콘텐츠 배포  
  기본 배포 지점에 대한 주문형 콘텐츠 배포를 사용할 수 있도록 개별 응용 프로그램 및 패키지(배포)에 대해 설정할 수 있는 옵션입니다.  
@@ -198,8 +220,9 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
 
 -   이 경우 Configuration Manager에서 클라이언트의 기본 배포 지점에 콘텐츠를 자동으로 배포하지만, 클라이언트의 기본 배포 지점이 배포를 받기 전에는 클라이언트가 다른 배포 지점에서 해당 콘텐츠를 가져올 수 있습니다. 이 경우 콘텐츠는 해당 배포를 찾고 있는 다음 클라이언트가 사용할 수 있도록 해당 배포 지점에 표시됩니다.  
 
+버전 1610 이상을 사용하는 경우 [경계 그룹](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#boundary-groups)을 참조하세요.
+버전 1511, 1602 또는 1606을 사용하는 경우 다양한 콘텐츠 위치 및 대체 시나리오에 대한 자세한 내용은 [콘텐츠 원본 위치 시나리오](../../../core/plan-design/hierarchy/content-source-location-scenarios.md)를 참조하세요.  
 
-다양한 콘텐츠 위치 및 대체 시나리오에 대한 자세한 내용은 [콘텐츠 원본 위치 시나리오](../../../core/plan-design/hierarchy/content-source-location-scenarios.md)를 참조하세요.  
 
 
 ## <a name="package-transfer-manager"></a>패키지 전송 관리자  
@@ -208,16 +231,17 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
  [패키지 전송 관리자](../../../core/plan-design/hierarchy/package-transfer-manager.md)에 대해 자세히 알아봅니다.  
 
 ## <a name="preferred-distribution-point"></a>기본 배포 지점  
- 클라이언트의 현재 경계 그룹에 연결된 배포 지점입니다.  
+ 기본 배포 지점에는 클라이언트의 현재 경계 그룹에 연결된 배포 지점이 포함됩니다.  
 
  각 배포 지점을 하나 이상의 경계 그룹과 연결할 수 있습니다.  
 
 -   이와 같이 연결하면 클라이언트가 콘텐츠를 다운로드할 수 있는 배포 지점을 식별할 수 있습니다.  
-
 -   기본적으로 클라이언트는 기본 배포 지점의 콘텐츠만 다운로드할 수 있습니다.  
 
 
-다양한 콘텐츠 위치 및 대체 시나리오에 대한 자세한 내용은 [콘텐츠 원본 위치 시나리오](../../../core/plan-design/hierarchy/content-source-location-scenarios.md)를 참조하세요.  
+자세한 내용을 보려면 다음을 수행하십시오.
+ - 버전 1610 이상을 사용하는 경우 [경계 그룹](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#boundary-groups)을 참조하세요.
+ - 버전 1511, 1602 또는 1606을 사용하는 경우 [콘텐츠 원본 위치 시나리오](../../../core/plan-design/hierarchy/content-source-location-scenarios.md)를 참조하세요.
 
 ## <a name="prestage-content"></a>콘텐츠 사전 준비  
  Configuration Manager에서 네트워크 전체에 콘텐츠를 배포하는 방식을 사용하는 대신 배포 지점에 콘텐츠를 전송하는 과정입니다.  
@@ -226,6 +250,6 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

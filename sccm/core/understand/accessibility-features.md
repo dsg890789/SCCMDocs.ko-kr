@@ -1,5 +1,5 @@
 ---
-title: "접근성 | System Center Configuration Manager"
+title: "접근성 | Microsoft 문서"
 description: "장애가 있는 사용자가 System Center Configuration Manager에 액세스할 수 있도록 하는 기능에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: dd5dfb749e101b6fa19ac3c20c110085d3c2416e
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: d238b0d7af7636c08bdfa28974f4c9453d6a415c
 
 ---
 # <a name="accessibility-features-in-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 내게 필요한 옵션 기능
@@ -111,6 +111,6 @@ ms.openlocfilehash: dd5dfb749e101b6fa19ac3c20c110085d3c2416e
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

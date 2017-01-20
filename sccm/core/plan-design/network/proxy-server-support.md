@@ -1,5 +1,5 @@
 ---
-title: "프록시 서버 지원 | System Center Configuration Manager"
+title: "프록시 서버 지원 | Microsoft 문서"
 description: "사이트 시스템 서버와 클라이언트에서 사용하는 프록시 서버에 대한 System Center Configuration Manager 지원에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: d20c734ba8050037cdf4ae290f72723f34781518
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: 97f9cc792d1fea20c32f38bc98cbdfb9ba90640d
 
 
 ---
@@ -89,6 +89,6 @@ Microsoft Azure에서 클라우드 기반 배포 지점에 프록시 서버를 �
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

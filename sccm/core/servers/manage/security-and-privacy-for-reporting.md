@@ -1,5 +1,5 @@
 ---
-title: "보고에 대한 보안 및 개인 정보 | Configuration Manager"
+title: "보고에 대한 보안 및 개인 정보 | Microsoft 문서"
 description: "Configuration Manager의 보고 기능을 사용하는 경우 보안 및 개인 정보에 대한 모범 사례를 이해합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 9e8ce5abf2c00a1aa2c89360bdc0244428c6834b
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 50ef8b761533bfdd5e8d23abc7791beb4c7d0b11
 
 
 ---
@@ -34,6 +34,6 @@ ms.openlocfilehash: 9e8ce5abf2c00a1aa2c89360bdc0244428c6834b
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

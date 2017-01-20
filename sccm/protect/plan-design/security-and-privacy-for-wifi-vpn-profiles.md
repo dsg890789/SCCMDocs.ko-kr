@@ -1,5 +1,5 @@
 ---
-title: "Wi-Fi 및 VPN 프로필 보안 및 개인 정보 | System Center Configuration Manager"
+title: "Wi-Fi 및 VPN 프로필 보안 및 개인 정보 | Microsoft 문서"
 description: "System Center Configuration Manager에서 장치의 Wi-Fi 및 VPN 프로필 관리에 대한 보안 모범 사례를 알아봅니다."
 ms.custom: na
 ms.date: 10/19/2016
@@ -17,8 +17,8 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 32dff36aa8027b0563b999e7fe6ef41d0eb79020
-ms.openlocfilehash: b9d70018708ab5932a3032134b03aef236ef9fda
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: fb168e3af33648e06c2c6be77ddd7d0c1f65d95d
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: b9d70018708ab5932a3032134b03aef236ef9fda
 
 이 항목에는 System Center Configuration Manager의 Wi-Fi 및 VPN 프로필에 대한 보안 및 개인 정보가 포함되어 있습니다.  
 
-##  <a name="a-namebkmksecurityremoteconnectionsa-security-best-practices-for-wi-fi-and-vpn-profiles"></a><a name="BKMK_Security_RemoteConnections"></a> Wi-Fi 및 VPN 프로필에 대한 보안 모범 사례  
+##  <a name="a-namebkmksecurityremoteconnectionsa-security-best-practices-for-wi-fi--and-vpn-profiles"></a><a name="BKMK_Security_RemoteConnections"></a> Wi-Fi 및 VPN 프로필에 대한 보안 모범 사례  
  장치의 Wi-Fi 및 VPN 프로필을 관리하는 경우 다음 보안 모범 사례를 따르세요.  
 
 |보안 모범 사례|추가 정보|  
@@ -45,6 +45,6 @@ ms.openlocfilehash: b9d70018708ab5932a3032134b03aef236ef9fda
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

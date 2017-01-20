@@ -1,5 +1,5 @@
 ---
-title: "복제 모니터링 | System Center Configuration Manager"
+title: "복제 모니터링 | Microsoft 문서"
 description: "콘솔의 모니터링 작업 영역을 사용하여 Configuration Manager에서 인프라 및 작업을 모니터링하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f777295958e9cbc729e3759d354521c96ae3e8ac
-ms.openlocfilehash: 92ded1197d1dcdd6e5f3a8917718e6232b18bce4
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 132803a1aa9aad5c5462686bd656688418e47d07
 
 
 ---
@@ -55,7 +55,7 @@ System Center Configuration Manager에서 인프라 및 작업을 모니터링�
 
 
 
-##  <a name="a-namebkmkmonintormgmttasksa-monitor-common-management-tasks-for-configuration-manager"></a><a name="BKMK_MonintorMgmtTasks"></a> Configuration Manager의 일반 관리 작업 모니터링  
+##  <a name="a-namebkmkmonintormgmttasksa-monitor--common-management-tasks-for-configuration-manager"></a><a name="BKMK_MonintorMgmtTasks"></a> Configuration Manager의 일반 관리 작업 모니터링  
  Configuration Manager는 Configuration Manager 콘솔 내에서 기본 제공 모니터링을 제공합니다. 소프트웨어 업데이트, 전원 관리 및 계층 전체에 콘텐츠 배포와 관련된 작업을 포함한 여러 작업을 모니터링할 수 있습니다.  
 
  일반적인 Configuration Manager 작업을 모니터링하려면 다음 정보를 참조하세요.  
@@ -245,6 +245,6 @@ Replication Link Analyzer가 재구성을 완료하지 못하면 사이트 서�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

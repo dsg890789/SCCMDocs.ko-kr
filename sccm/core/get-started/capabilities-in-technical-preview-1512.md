@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager용 Technical Preview 1512의 기능"
+title: "System Center Configuration Manager용 Technical Preview 1512의 기능 | Microsoft 문서"
 description: "System Center Configuration Manager용 Technical Preview 버전 1512에서 사용 가능한 기능에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 1d97e7646adbb02a03b33b5efc56c1658364956e
+ms.sourcegitcommit: 3bf44f850722afdb8dfe5922c8ceff11c9b56d08
+ms.openlocfilehash: ea6cb27fc229854ba7c1c39bb735ed9b9a88bb61
 
 ---
 # <a name="capabilities-in-technical-preview-1512-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1512의 기능
@@ -93,6 +93,6 @@ Endpoint Protection 정책을 사용하려면 먼저 Endpoint Protection 클라�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

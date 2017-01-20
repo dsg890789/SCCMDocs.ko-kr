@@ -1,5 +1,5 @@
 ---
-title: "Endpoint Protection 클라이언트 도움말 | System Center Configuration Manager"
+title: "Endpoint Protection 클라이언트 도움말 | Microsoft 문서"
 description: "위협으로부터 컴퓨터를 보다 효과적으로 보호할 수 있는 Endpoint Protection의 기능과 향상된 기능에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 3b3f16904de68a226db8cacc62bd6acf8dedd8c9
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: 870aa9766c995a5c8858b9a8c9a5537cd5f82840
 
 
 ---
@@ -52,6 +52,6 @@ ms.openlocfilehash: 3b3f16904de68a226db8cacc62bd6acf8dedd8c9
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

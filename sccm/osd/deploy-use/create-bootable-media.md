@@ -1,8 +1,8 @@
 ---
-title: "부팅 가능한 미디어 만들기 | Configuration Manager"
+title: "부팅 가능한 미디어 만들기 | Microsoft 문서"
 description: "Configuration Manager에서 부팅 가능한 미디어를 사용하면 쉽게 새 버전의 Windows를 설치하거나 컴퓨터 및 전송 설정을 바꿀 수 있습니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 6a3b72ecdee38f6955b601248300e49c1ffdee5d
+ms.sourcegitcommit: 03722ff4f480cd26842e395fe1f7ec8359e2b33e
+ms.openlocfilehash: a7bdad82dc55b4c0fe7d892ef34cc6aa0dfbf476
 
 
 ---
@@ -151,6 +151,6 @@ Configuration Manager의 부팅 가능한 미디어에는 부팅 이미지, 선�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager용 Technical Preview 1603의 기능"
+title: "System Center Configuration Manager용 Technical Preview 1603의 기능 | Microsoft 문서"
 description: "System Center Configuration Manager용 Technical Preview 버전 1603에서 사용 가능한 기능에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 39a9cde3bd955c84f301d25258b413fecaa4393b
-ms.openlocfilehash: ab9f71700ff80414f7cb8e79f54fba3262f810ff
+ms.sourcegitcommit: 3bf44f850722afdb8dfe5922c8ceff11c9b56d08
+ms.openlocfilehash: 58304fd4d9e205249da873536c25a77a5d6f8fb3
 
 ---
 # <a name="capabilities-in-technical-preview-1603-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1603의 기능
@@ -94,6 +94,6 @@ ms.openlocfilehash: ab9f71700ff80414f7cb8e79f54fba3262f810ff
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

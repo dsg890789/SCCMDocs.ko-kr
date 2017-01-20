@@ -1,5 +1,5 @@
 ---
-title: "엔터프라이즈 운영 체제를 배포하는 방법 | Configuration Manager"
+title: "엔터프라이즈 운영 체제를 배포하는 방법 | Microsoft 문서"
 description: "System Center Configuration Manager 환경에서 엔터프라이즈 운영 체제를 배포하는 데 사용할 수 있는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 40f6f414ff0a2687f250f101acbae775a777bf8a
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 6cec9275009ac19ad65a03792c1bc4d0c528ea4c
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 40f6f414ff0a2687f250f101acbae775a777bf8a
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 환경에서 운영 체제를 배포하는 데 사용할 수 있는 방법에는 여러 가지가 있습니다. 
+System Center Configuration Manager 환경에서 운영 체제를 배포하는 데 사용할 수 있는 방법에는 여러 가지가 있습니다.
 
 -   [PXE를 사용하여 네트워크를 통해 Windows 배포](use-pxe-to-deploy-windows-over-the-network.md)  
 
@@ -43,6 +43,6 @@ System Center Configuration Manager 환경에서 운영 체제를 배포하는 �
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

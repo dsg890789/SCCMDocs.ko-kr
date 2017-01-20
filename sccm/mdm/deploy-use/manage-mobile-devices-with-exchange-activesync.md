@@ -1,5 +1,5 @@
 ---
-title: "모바일 장치 관리 | System Center Configuration Manager 및 Exchange"
+title: "모바일 장치 관리 | Microsoft 문서"
 description: "System Center Configuration Manager에서 Exchange Server 커넥터를 사용하여 모바일 장치를 관리합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 18da1455796e265af2adb8852c9f2b610dc672a8
+ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
+ms.openlocfilehash: 4a2b60d893e8d430b107a5bc43ec0748177c27c3
 
 
 ---
@@ -138,6 +138,6 @@ Microsoft Exchange ActiveSync 프로토콜을 사용하여 Exchange Server(온-�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

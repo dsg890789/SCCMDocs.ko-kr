@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager용 Technical Preview 1511의 기능"
+title: "System Center Configuration Manager용 Technical Preview 1511의 기능 | Microsoft 문서"
 description: "System Center Configuration Manager용 Technical Preview 버전 1511에서 사용 가능한 기능에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 4616ba44485e4c528297441f1cf99e25add2dcf3
+ms.sourcegitcommit: 3bf44f850722afdb8dfe5922c8ceff11c9b56d08
+ms.openlocfilehash: 8ef43a2f10a7ef1cbb101f6737c606c72ccdce4f
 
 ---
 # <a name="capabilities-in-technical-preview-1511-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1511의 기능
@@ -147,7 +147,7 @@ SQL Server 가용성 그룹을 사용하는 사이트를 설치하려면 다음�
 
 3.  이 정보를 입력한 후 일반적인 프로세스와 구성을 사용하여 설치를 완료합니다.  
 
-##  <a name="a-namebkmkclusterserverupdatesa-service-a-server-cluster"></a><a name="BKMK_ClusterServerUpdates"></a> 서버 클러스터 서비스  
+##  <a name="a-namebkmkclusterserverupdatesa-service-a--server-cluster"></a><a name="BKMK_ClusterServerUpdates"></a> 서버 클러스터 서비스  
 이제는 클러스터의 서버를 포함하는 컬렉션을 만든 다음 클러스터에 업데이트를 배포할 때 사용할 클러스터 설정을 구성할 수 있습니다. 지정된 시간에 온라인 상태인 서버의 백분율을 제어할 수 있으며 사용자 지정 작업을 실행하도록 배포 전/배포 후 PowerShell 스크립트를 구성할 수도 있습니다.  
 
 **이 릴리스의 알려진 문제:**  
@@ -208,6 +208,6 @@ SQL Server 가용성 그룹을 사용하는 사이트를 설치하려면 다음�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

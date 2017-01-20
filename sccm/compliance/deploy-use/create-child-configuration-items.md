@@ -1,5 +1,5 @@
 ---
-title: "자식 구성 항목 만들기 | System Center Configuration Manager"
+title: "자식 구성 항목 만들기 | Microsoft 문서"
 description: "System Center Configuration Manager에서 자식 구성 항목을 만듭니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 977821799dc7323b03bc8c27c59473cd90f70e2a
+ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
+ms.openlocfilehash: 33d4a2d5a09af74e1d76ac9b34a42b749f5bf7ef
 
 
 ---
@@ -46,6 +46,6 @@ Configuration Manager 콘솔에서 자식 구성 항목의 속성을 볼 때 상
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

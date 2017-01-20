@@ -1,5 +1,5 @@
 ---
-title: "컬렉션 모범 사례 | System Center Configuration Manager"
+title: "컬렉션 모범 사례 | Microsoft 문서"
 description: "System Center Configuration Manager에서 컬렉션에 대한 모범 사례를 확인합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 8e22f353ba0803a3b1b4d387a8c00fdb98186bf5
+ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
+ms.openlocfilehash: 8f3086adac2c6886316a2fd65b3d471acac9077c
 
 
 ---
@@ -44,6 +44,6 @@ System Center Configuration Manager에서 컬렉션에 대한 다음 모범 사�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "사이트 관리 보안 및 개인 정보 | System Center Configuration Manager"
+title: "사이트 관리 보안 및 개인 정보 | Microsoft 문서"
 description: "System Center Configuration Manager에서 사이트 관리에 대한 보안 및 개인 정보를 최적화합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: be8002edb48506286e18b1fb8c09f92f46ff0e10
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: aca2169c8f5f855e84ca924ca56f6b64bba80fd6
 
 
 ---
@@ -365,6 +365,6 @@ IIS를 실행하는 사이트 시스템의 경우 Configuration Manager에서 II
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

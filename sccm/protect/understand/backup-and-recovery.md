@@ -1,5 +1,5 @@
 ---
-title: "백업 및 복구 | System Center Configuration Manager"
+title: "백업 및 복구 | Microsoft 문서"
 description: "System Center Configuration Manager에서 사이트를 백업하고 장애 또는 데이터 손실이 발생할 경우 복구하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
+ms.sourcegitcommit: 828e2ac9a3f9bcea1571d24145a1021fdf1091f3
+ms.openlocfilehash: ce73be3a9fa3876c587bbd7b7cb05acd36c2687e
 
 
 ---
@@ -114,9 +114,9 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
     -   **사이트 서버 및 SQL Server의 로컬 드라이브**: 사이트의 백업 파일이 사이트 서버의 로컬 드라이브의 지정된 경로에 저장되고 사이트 데이터베이스의 백업 파일이 사이트 데이터베이스 서버의 로컬 드라이브의 지정된 경로에 저장되도록 지정합니다. 백업 작업이 실행되기 전에 로컬 폴더를 만들어야 합니다. 사이트 서버의 컴퓨터 계정에 사이트 서버에서 만든 폴더에 대한 **쓰기** NTFS 권한이 있어야 합니다. SQL Server의 컴퓨터 계정에 사이트 데이터베이스 서버에서 만든 폴더에 대한 **쓰기** NTFS 권한이 있어야 합니다. 이 옵션은 사이트 데이터베이스가 사이트 서버에 설치되지 않은 경우에만 사용할 수 있습니다.  
 
     > [!NOTE]  
-    >    - 백업 대상을 찾는 옵션은 백업 대상의 UNC 경로를 지정하는 경우에만 사용할 수 있습니다.
+    >   - 백업 대상을 찾는 옵션은 백업 대상의 UNC 경로를 지정하는 경우에만 사용할 수 있습니다.
 
-    >- 백업 대상으로 사용되는 폴더 이름 또는 공유 이름은 유니코드 문자 사용을 지원하지 않습니다.  
+    > - 백업 대상으로 사용되는 폴더 이름 또는 공유 이름은 유니코드 문자 사용을 지원하지 않습니다.  
 
 
 6.  사이트 백업 작업의 일정을 구성합니다. 모범 사례에 따라 업무 외 시간으로 백업 일정을 정하는 것이 좋습니다. 계층이 있는 경우 사이트 장애 시 데이터를 최대한 보존할 수 있도록 일주일에 두 번 이상 실행되는 일정을 정하는 것이 좋습니다.  
@@ -190,7 +190,7 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
  사이트 서버에 대한 파일 시스템 백업에 콘텐츠 라이브러리 및 패키지 원본 위치가 모두 포함되어 있는지 확인하세요.  
 
 #### <a name="back-up-custom-software-updates"></a>사용자 지정 소프트웨어 업데이트 백업  
-     System Center Updates Publisher 2011 is a stand-alone tool that lets you publish custom software updates to Windows Server Update Services (WSUS), synchronize the software updates to Configuration Manager, assess software updates compliance, and deploy the custom software updates to clients. Updates Publisher uses a local database for its software update repository. When you use Updates Publisher to manage custom software updates, determine whether you have to include the Updates Publisher database in your backup plan. For more information about Updates Publisher, see [System Center Updates Publisher 2011](http://go.microsoft.com/fwlink/p/?LinkId=228726) in the System Center TechCenter Library.  
+ 독립 실행형 도구인 System Center Updates Publisher 2011을 사용하면 사용자 지정 소프트웨어 업데이트를 WSUS(Windows Server Update Services)에 게시하고, 소프트웨어 업데이트를 Configuration Manager에 동기화하고, 소프트웨어 업데이트 호환성을 평가하고, 사용자 지정 소프트웨어 업데이트를 클라이언트에 배포할 수 있습니다. Updates Publisher는 해당 소프트웨어 업데이트 리포지토리에 로컬 데이터베이스를 사용합니다. Updates Publisher를 사용하여 사용자 지정 소프트웨어 업데이트를 관리하는 경우 백업 계획에 Updates Publisher 데이터베이스를 포함해야 할지 여부를 결정합니다. Updates Publisher에 대한 자세한 내용은 System Center TechCenter 라이브러리에서 [System Center Updates Publisher 2011](http://go.microsoft.com/fwlink/p/?LinkId=228726) 을 참조하세요.  
 
  다음 절차를 사용하여 Updates Publisher 데이터베이스를 백업합니다.  
 
@@ -206,7 +206,7 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
 ### <a name="user-state-migration-data"></a>사용자 환경 마이그레이션 데이터  
  Configuration Manager 작업 순서를 사용하면 현재 운영 체제의 사용자 상태를 보존하려는 운영 체제 배포 시나리오에서 사용자 상태 데이터를 캡처 및 복원할 수 있습니다. 사용자 상태 데이터를 저장하는 폴더는 상태 마이그레이션 지점의 속성에 나열됩니다. 이 사용자 환경 마이그레이션 데이터는 사이트 서버 백업 유지 관리 작업의 일부로 백업되지 않습니다. 백업 계획의 일부로, 사용자 환경 마이그레이션 데이터를 저장하도록 지정한 폴더를 수동으로 백업해야 합니다.   
 
-##### <a name="to-determine-the-folders-used-to-store-user-state-migration-data"></a>사용자 환경 마이그레이션 데이터 저장에 사용되는 폴더 결정  
+#### <a name="to-determine-the-folders-used-to-store-user-state-migration-data"></a>사용자 환경 마이그레이션 데이터 저장에 사용되는 폴더 결정  
 
 1.  Configuration Manager 콘솔에서 **관리**를 클릭합니다.  
 
@@ -384,7 +384,7 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
 
     -   **세부 정보:** 중앙 관리 사이트를 복구합니다.  
 
- **RecoveryOptions**  
+**RecoveryOptions**  
 
 -   **키 이름:** ServerRecoveryOptions  
 
@@ -454,7 +454,7 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
 
     -   **세부 정보:** 사이트 데이터베이스 백업 집합의 경로를 지정합니다. **ServerRecoveryOptions** 키 값을 **1** 또는 **4** 로 구성하고 **DatabaseRecoveryOptions** 키 값을 **10** 으로 구성하는 경우 **BackupLocation** 키는 필수입니다.  
 
- **Options**  
+**Options**  
 
 -   **키 이름:** ProductID  
 
@@ -549,7 +549,7 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
 
     -   **세부 정보:** 사용자 환경 개선 프로그램에 참여할지 여부를 지정합니다.  
 
- **SQLConfigOptions**  
+**SQLConfigOptions**  
 
 -   **키 이름:** SQLServerName  
 
@@ -597,7 +597,7 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
 
     -   **세부 정보:** 기본 사이트를 복구합니다.  
 
- **RecoveryOptions**  
+**RecoveryOptions**  
 
 -   **키 이름:** ServerRecoveryOptions  
 
@@ -653,7 +653,7 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
 
     -   **세부 정보:** 사이트 데이터베이스 백업 집합의 경로를 지정합니다. **ServerRecoveryOptions** 키 값을 **1** 또는 **4** 로 구성하고 **DatabaseRecoveryOptions** 키 값을 **10** 으로 구성하는 경우 **BackupLocation** 키는 필수입니다.  
 
- **Options**  
+**Options**  
 
 -   **키 이름:** ProductID  
 
@@ -748,7 +748,7 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
 
     -   **세부 정보:** 사용자 환경 개선 프로그램에 참여할지 여부를 지정합니다.  
 
- **SQLConfigOptions**  
+**SQLConfigOptions**  
 
 -   **키 이름:** SQLServerName  
 
@@ -783,7 +783,7 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
 
     -   **세부 정보:** SQL Server에서 사용하는 SQL SSB(Server Service Broker) 포트를 지정합니다. 일반적으로, SSB는 TCP 포트 4022를 사용하도록 구성되지만 다른 포트도 지원됩니다. 실패하기 전에 사용했던 SSB 포트를 지정해야 합니다.  
 
- **Hierarchy ExpansionOption**  
+**Hierarchy ExpansionOption**  
 
 -   **키 이름:** CCARSiteServer  
 
@@ -839,7 +839,7 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
  사이트 서버 복구 후에 사이트 복구 중 테스트용 로드 키가 초기화되므로 사이트에 대해 지정된 Windows 테스트용 로드 키를 다시 입력해야 합니다. 테스트용 로드 키를 다시 입력한 후 Configuration Manager 콘솔에서 Windows 테스트용 로드 키의 **사용된 활성화 수** 열 수가 다시 설정됩니다. 예를 들어 사이트 오류 전에 장치에 **총 활성화 수**가 **100**으로 설정되어 있고 사용된 키의 수에 대한 **사용된 활성화 수**가 **90**이라고 가정해 봅니다. 사이트 복구 후 **총 활성화 수** 열은 여전히 **100**을 표시하지만 **사용된 활성화 수** 열은 값을 **0**으로 잘못 표시합니다. 그러나 10개의 새 장치에서 테스트용 로드 키를 사용한 후에는 남은 테스트용 로드 키가 없으며 다음 장치에서 테스트용 로드 키를 적용하지 못합니다.  
 
 #### <a name="recreate-the-microsoft-intune-subscription"></a>Microsoft Intune 구독 다시 만들기  
- 사이트 서버 컴퓨터를 이미지로 다시 설치한 후에 Configuration Manager 사이트 서버를 복구하는 경우 Microsoft Intune 구독이 복원되지 않습니다. 사이트를 복구한 후에 구독을 다시 만들어야 합니다. 자세한 내용은 [Configuring the Microsoft Intune subscription](../../mdm/plan-design/hybrid-mobile-device-management.md#bkmk_witsub)을 참조하십시오.  
+ 사이트 서버 컴퓨터를 이미지로 다시 설치한 후에 Configuration Manager 사이트 서버를 복구하는 경우 Microsoft Intune 구독이 복원되지 않습니다. 사이트를 복구한 후에 구독을 다시 만들어야 합니다. 자세한 내용은 [Configuring the Microsoft Intune subscription](../../mdm/deploy-use/setup-hybrid-mdm.md#step-3-configure-intune-subscription)을 참조하십시오.  
 
 #### <a name="configure-ssl-for-site-system-roles-that-use-iis"></a>IIS를 사용하는 사이트 시스템 역할에 대해 SSL 구성  
  실패하기 전에 HTTPS에 대해 구성했던 IIS를 실행하는 사이트 시스템을 복구할 때 웹 서버 인증서를 사용하도록 IIS를 다시 구성해야 합니다.  
@@ -913,6 +913,6 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

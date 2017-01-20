@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager용 Technical Preview 1606의 기능"
+title: "System Center Configuration Manager용 Technical Preview 1606의 기능 | Microsoft 문서"
 description: "System Center Configuration Manager용 Technical Preview 버전 1606에서 사용 가능한 기능에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: d1410b853e8f6b3bcb4d2cbfca735ba26c5c4d52
+ms.sourcegitcommit: 3bf44f850722afdb8dfe5922c8ceff11c9b56d08
+ms.openlocfilehash: 6bc3087768d8455a6ca6beb77a3afc8f313eb831
 
 ---
 # <a name="capabilities-in-technical-preview-1606-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1606의 기능
@@ -261,6 +261,6 @@ Technical Preview 1606에서는 Configuration Manager 콘솔에서 업데이트 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

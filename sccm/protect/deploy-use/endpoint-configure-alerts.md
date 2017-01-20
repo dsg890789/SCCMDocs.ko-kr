@@ -1,5 +1,5 @@
 ---
-title: "Endpoint Protection 경고 구성 | System Center Configuration Manager"
+title: "Endpoint Protection 경고 구성 | Microsoft 문서"
 description: "Microsoft System Center 2012 Configuration Manager에서 Endpoint Protection 경고를 구성하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 38abfd1823972f8fea9966d74ae7c00a48baeb8b
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: 7ade196766d036f5dbca2b39efad380c7895847c
 
 
 ---
@@ -98,6 +98,6 @@ ms.openlocfilehash: 38abfd1823972f8fea9966d74ae7c00a48baeb8b
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

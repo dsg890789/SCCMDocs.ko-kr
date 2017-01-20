@@ -1,5 +1,5 @@
 ---
-title: "드라이버 관리 | Configuration Manager"
+title: "드라이버 관리 | Microsoft 문서"
 description: "Configuration Manager 드라이버 카탈로그를 사용하여 장치 드라이버를 가져오고, 드라이버를 패키지로 그룹화하고, 이 패키지를 배포 지점에 배포할 수 있습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 82cddeb0f2f5210f8bf246b0c757e15815f78669
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 361a18b7da8249fc6cccc333f39313a52dd8ab88
 
 
 ---
@@ -198,7 +198,7 @@ System Center Configuration Manager는 현재 Configuration Manager 환경에서
 
  부팅 이미지에서 장치 드라이버를 추가하거나 제거하려면 다음 절차를 따르세요.  
 
-#### <a name="to-modify-the-device-drivers-associated-with-a-boot-image"></a>부팅 이미지와 연결된 장치 드라이버를 수정하려면  
+#### <a name="to-modify-the--device-drivers-associated-with-a-boot-image"></a>부팅 이미지와 연결된 장치 드라이버를 수정하려면  
 
 1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리**를 클릭합니다.  
 
@@ -278,6 +278,6 @@ System Center Configuration Manager는 현재 Configuration Manager 환경에서
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "작업을 자동화하는 작업 순서 관리 | Configuration Manager"
+title: "작업 순서를 관리하여 작업 자동화 | Microsoft 문서"
 description: "System Center Configuration Manager 환경에서 작업 순서 만들기 편집, 배포, 가져오기 및 내보내기를 통해 작업 순서를 관리할 수 있습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 04e4e8193d427289a3b84a14efe18511bf5c9731
+ms.sourcegitcommit: d04d28bbd5116a841c0872cf3f9ca18783dddc78
+ms.openlocfilehash: 417b31fa1feb6d0f674f14ef9e5c7cebd7013916
 
 
 ---
@@ -237,6 +237,8 @@ System Center Configuration Manager 환경에서 작업 순서를 사용하여 �
 
 -   작업 순서에 저장된 암호는 내보낼 수 없습니다. 암호가 포함된 작업 순서를 내보내고 가져올 경우 가져온 작업 순서를 편집하여 암호를 다시 지정해야 합니다. [도메인 또는 작업 그룹 가입](../understand/task-sequence-steps.md#BKMK_JoinDomainorWorkgroup), [네트워크 폴더에 연결](../understand/task-sequence-steps.md#BKMK_ConnectToNetworkFolder) 및 [명령줄 실행](../understand/task-sequence-steps.md#BKMK_RunCommandLine) 동작에 대한 암호를 지정해야 합니다.  
 
+- **동적 변수 설정** 단계를 사용하여 작업 순서를 내보내는 경우 **비밀 값** 설정으로 구성된 변수의 값은 내보내지지 않습니다. 작업 순서를 가져온 후 이러한 변수의 값을 다시 입력해야 합니다.
+
 -   기본 사이트가 여러 개인 경우 중앙 관리 사이트의 작업 순서를 가져오는 것이 좋습니다.  
 
  작업 순서를 내보내고 가져오려면 다음 절차를 따르세요.  
@@ -367,6 +369,6 @@ System Center Configuration Manager 환경에서 작업 순서를 사용하여 �
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "릴리스 정보 | System Center Configuration Manager"
+title: "릴리스 정보 | Microsoft 문서"
 description: "Microsoft 기술 자료 문서에서 다루지 않거나 제품에서 아직 해결되지 않은 긴급한 문제에 대해서는 이 정보를 참조하세요."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f777295958e9cbc729e3759d354521c96ae3e8ac
-ms.openlocfilehash: 0b6c49f3c5e817f1dbd40b40c78d89c4a018e0f1
+ms.sourcegitcommit: ea723a6694feb2c9584b35498aa9c3519383f08d
+ms.openlocfilehash: a9dc046a54c15d9d299664cd1f2a149383f53489
 
 
 ---
@@ -35,16 +35,31 @@ System Center Configuration Manager에서는 제품에서 수정되지 않은 �
 
 ## <a name="setup-and-upgrade"></a>설치 및 업그레이드  
 
+### <a name="when-installing-a-long-term-service-branch-site-using-version-1606-a-current-branch-site-is-installed"></a>버전 1606을 사용하여 장기 서비스 분기 사이트를 설치하는 경우 현재 분기 사이트가 설치됨
+2016년 10월 릴리스의 버전 1606 기준 미디어를 사용하여 LTSB(장기 서비스 분기) 사이트를 설치하는 경우 현재 분기 사이트가 대신 설치됩니다. 이 문제는 사이트 설치를 사용하여 서비스 연결 지점을 설치하는 옵션을 선택하지 않았기 때문에 발생합니다.
+
+ - 서비스 연결 지점이 필요하지 않더라도 LTSB 사이트를 설치하려면 설치 중에 선택해야 합니다.
+
+설치가 완료된 후 서비스 연결 지점을 제거할 수 있습니다.  그러나 원격 분석 데이터를 제출하고 현재 분기 및 LTSB 사이트 둘 다에 대한 보안 업데이트를 가져오려면 오프라인 또는 온라인 모드의 서비스 연결 지점이 있어야 합니다.
+
+사이트가 현재 분기 사이트로 설치되었지만 LTSB를 설치하려는 경우 사이트를 제거한 후 다시 설치할 수 있습니다. 또는 [Microsoft 도움말 및 지원](http://go.microsoft.com/fwlink/?LinkId=243064)에 도움을 요청할 수 있습니다.  
+
+설치된 분기를 확인하려면 콘솔의 **관리** > **사이트 구성** > **사이트**에서 **계층 설정**을 엽니다. 사이트를 현재 분기 사이트로 변환하는 옵션은 사이트에서 LTSB를 실행하는 경우에만 사용할 수 있습니다.  
+
+**해결 방법:**  없습니다.   
 
 
-### <a name="the-sql-server-backup-model-in-use-by-configuration-manager-can-change-from-full-to-simple"></a>Configuration Manager에서 사용 중인 SQL Server 백업 모델을 전체에서 단순으로 변경할 수 있습니다.  
+
+
+
+### <a name="the--sql-server-backup-model-in-use-by-configuration-manager-can-change-from-full-to-simple"></a>Configuration Manager에서 사용 중인 SQL Server 백업 모델을 전체에서 단순으로 변경할 수 있습니다.  
  System Center Configuration Manager 버전 1511로 업그레이드하면 Configuration Manager에서 사용 중인 SQL Server 백업 모델이 전체에서 단순으로 변경될 수 있습니다.  
 
 -   Configuration Manager의 기본 제공 백업 작업 대신 전체 백업 모델로 사용자 지정 SQL Server 백업 작업을 사용하는 경우 업그레이드 중에 백업 모델이 전체에서 단순으로 변경될 수 있습니다.  
 
 **해결 방법**: 버전 1511로 업그레이드한 후 SQL Server 구성을 검토하고 필요한 경우 전체로 복원합니다.  
 
-### <a name="when-you-add-a-service-window-to-a-new-site-server-service-windows-that-were-configured-for-another-site-server-are-deleted"></a>새 사이트 서버에 서비스 창을 추가한 경우 다른 사이트 서버에 대해 구성된 서비스 창이 삭제되었습니다.  
+### <a name="when-you-add-a-service-window-to-a-new-site-server-service-windows-that-were---configured-for-another-site-server-are-deleted"></a>새 사이트 서버에 서비스 창을 추가한 경우 다른 사이트 서버에 대해 구성된 서비스 창이 삭제되었습니다.  
  System Center Configuration Manager 버전 1511에서 서비스 창을 사용하는 경우 계층에서 단일 사이트 서버에 대한 서비스 창만 구성할 수 있습니다. 한 서버에서 서비스 창을 구성한 후 두 번째 사이트 서버에서 서비스 창을 구성하면 첫 번째 사이트 서버의 서비스 창이 경고 또는 오류 없이 자동으로 삭제됩니다.  
 
 **해결 방법**: [Microsoft 기술 자료 문서 3142341](http://support.microsoft.com/kb/3142341)에서 핫픽스를 설치합니다. System Center Configuration Manager의 1602 업데이트를 설치하는 경우 이 문제도 해결됩니다.  
@@ -120,6 +135,32 @@ System Center Configuration Manager 버전 1511 및 1602에 영향을 주는 이
 **해결 방법:** 다음 방법 중 하나를 사용합니다.
  - 설치 시 CD.Latest 폴더에 포함된 재배포 파일을 사용하는 대신 Microsoft에서 최신 재배포 파일을 다운로드하도록 선택합니다.
  - 수동으로 *cd.latest\redist\languagepack\zhh* 폴더를 삭제한 다음 설치 프로그램을 다시 실행합니다.
+
+### <a name="service-connection-tool-throws-an-exception-when-sql-server-is-remote-or-when-shared-memory-is-disabled"></a>SQL Server가 원격이거나 공유 메모리가 사용되지 않는 경우 서비스 연결 도구에서 예외가 발생합니다.
+버전 1606부터 서비스 연결 도구는 다음 중 하나가 충족될 경우 예외를 생성합니다.  
+ -  사이트 데이터베이스가 서비스 연결 지점을 호스트하고 비표준 포트(1433 이외의 포트)를 사용하는 컴퓨터에서 원격인 경우
+ -  사이트 데이터베이스가 서비스 연결 지점과 동일한 서버에 있지만 SQL 프로토콜 **공유 메모리**가 사용되지 않는 경우
+
+예외는 다음과 유사합니다.
+ - *처리되지 않은 예외: System.Data.SqlClient.SqlException: SQL Server에 대한 연결을 설정하는 동안 네트워크 관련 또는 인스턴스 관련 오류가 발생했습니다. 서버를 찾을 수 없거나 액세스할 수 없습니다. 인스턴스 이름이 올바르고 SQL Server가 원격 연결을 허용하도록 구성되었는지 확인합니다. (공급자: 명명된 파이프 공급자, 오류: 40 - SQL Server에 대한 연결을 열 수 없음) - *
+
+**해결 방법**: 도구를 사용하는 동안 SQL Server 포트에 대한 정보를 포함하도록 서비스 연결 지점을 호스트하는 서버의 레지스트리를 수정해야 합니다.
+
+   1.   도구를 사용하기 전에 다음 레지스트리 키를 편집하고 사용 중인 포트 번호를 SQL Server의 이름에 추가합니다.
+    - 키: HKLM\Microsoft\SMS\COMPONENTS\SMS_DMP_UPLOADER\
+      - 값: &lt;SQL Server 이름>
+    - 추가: **,&lt;포트>**
+
+    예를 들어 *testserver.test.net*이라는 서버에 *15001* 포트를 추가하려는 경우 결과로 생성되는 키는 ***HKLM\Software\Microsoft\SMS\COMPONENTS\SMS_DMP_UPLOADER\testserver.test.net,15001***입니다.
+
+   2.   레지스트리에 포트를 추가하면 도구기 정상적으로 작동합니다.  
+
+   3.   도구 사용이 완료되면 **-connect** 및 **-import** 단계 둘 다에서 레지스트리 키를 원래 값으로 다시 변경합니다.  
+
+
+
+
+
 
 ## <a name="backup-and-recovery"></a>백업 및 복구
 ### <a name="pre-production-client-is-not-available-after-a-site-restore"></a>사이트 복원 후 사전 프로덕션 클라이언트를 사용할 수 없음
@@ -250,6 +291,6 @@ System Center Configuration Manager 버전 업데이트 1602에 영향을 주는
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

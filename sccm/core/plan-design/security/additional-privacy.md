@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager 개인정보취급방침 – Configuration Manager Cmdlet 라이브러리"
+title: "System Center Configuration Manager 개인 정보 취급 방침 - 추가 정보 | Microsoft 문서"
 description: "Microsoft가 System Center Configuration Manager 배포에서 데이터를 수집하고 사용하는 방법에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -36,8 +36,8 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: bcac4e2b6f8377a27417cb2519814ad9e74ee542
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: 613b7dbf81de84129e113468d554d8430cbc3182
 
 ---
 # <a name="additional-information-about-privacy-for-system-center-configuration-manager"></a>System Center Configuration Manager의 개인 정보 보호에 대한 추가 정보
@@ -97,7 +97,7 @@ Microsoft 클라우드 보호 서비스는 개인 정보를 의도적으로 수�
 
 수집된 데이터에 대한 추가적인 세부 정보는 [http://go.microsoft.com/fwlink/?LinkId=823547](http://go.microsoft.com/fwlink/?LinkId=823547)의 제품 설명서에서 확인할 수 있습니다.
 
-## <a name="site-hierarchy-geographical-view-with-bing-maps"></a>사이트 계층 - Bing 지도를 사용하는 지리적 보기
+## <a name="site-hierarchy--geographical-view-with-bing-maps"></a>사이트 계층 - Bing 지도를 사용하는 지리적 보기
 사이트 계층 – 지리적 보기를 통해 Microsoft Bing 지도에서 제공하는 지도를 사용하여 Configuration Manager 실제 서버 토폴로지를 확인할 수 있습니다. 이 기능을 사용할 수 있도록 사용자 서버에서 Bing 지도 웹 서비스로 사용자가 제공한 위치 정보가 전송됩니다.
 
 Microsoft는 정보를 사용하여 Microsoft Bing 지도와 기타 Microsoft 사이트 및 서비스를 작동하고 개선합니다. 자세한 내용은 Microsoft 개인정보취급방침(http://go.microsoft.com/fwlink/?LinkId=823548)을 참조하세요.
@@ -114,6 +114,6 @@ Microsoft Intune에 연결된 장치를 관리하기 위해 일부 정보는 Mic
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

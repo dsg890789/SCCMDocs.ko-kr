@@ -1,5 +1,5 @@
 ---
-title: "비즈니스용 Windows Hello 설정 | System Center Configuration Manager"
+title: "비즈니스용 Windows Hello 설정 | Microsoft 문서"
 description: "System Center Configuration Manager와 비즈니스용 Windows Hello를 통합하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/10/2016
@@ -16,8 +16,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 2a45cfb3e00d8078fbf45bdc8a2668b7dd0a62c6
-ms.openlocfilehash: 80f586763d034891aac9b87dcb38120602aa2b85
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: 1f254ee31bae1c3d7b1506e68c40baf78793bf66
 
 
 ---
@@ -109,7 +109,7 @@ System Center Configuration Manager를 통해 Windows 10 장치의 대체 로그
 
 이 구성뿐 아니라 [인증서 프로필 구성](#configure-a-certificate-profile)에 설명된 대로 인증서 프로필도 배포해야 합니다.
 
-### <a name="recommended-approach---configure-a-windows-hello-for-business-profile"></a>권장 방법 - 비즈니스용 Windows Hello 프로필 구성  
+### <a name="recommended-approach----configure-a-windows-hello-for-business-profile"></a>권장 방법 - 비즈니스용 Windows Hello 프로필 구성  
 
 관리 콘솔의 **회사 리소스 액세스** 아래에서 **비즈니스용 Windows Hello 프로필**을 마우스 오른쪽 단추로 클릭하고 **새로 만들기**를 선택하여 프로필 마법사를 시작합니다. 마법사에서 요청된 설정을 제공하고 마지막 페이지에서 설정을 검토 및 확인한 다음 **닫기**를 클릭합니다. 설정이 표시되는 방식의 예는 다음과 같습니다.  
 
@@ -166,6 +166,6 @@ Configuration Manager 응용 프로그램 관리에 대한 자세한 내용은 [
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "기능 및 특성 | System Center Configuration Manager"
+title: "기능 및 특성 | Microsoft 문서"
 description: "System Center Configuration Manager의 기본 관리 기능에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: fc40912a3da034ac0e3f84c72593aa4a9df8d057
-ms.openlocfilehash: c558148104b6338e4038bf690491c88e76dfdcaf
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: 851029368d97312ef2766505f933eac72d6950e5
 
 
 ---
@@ -58,7 +58,7 @@ ms.openlocfilehash: c558148104b6338e4038bf690491c88e76dfdcaf
 
 **Microsoft Intune에서 모바일 장치 관리**  
 
- 인터넷에서 Microsoft Intune 서비스를 사용하여 Configuration Manager를 통해 iOS, Android(Samsung KNOX 포함), Windows Phone 및 Windows 장치를 관리할 수 있습니다.
+ 인터넷에서 Microsoft Intune 서비스를 사용하여 Configuration Manager를 통해 iOS, Android(Samsung KNOX Standard 포함), Windows Phone 및 Windows 장치를 관리할 수 있습니다.
 
  Intune 서비스를 사용하더라도 Configuration Manager 콘솔을 통해 사용 가능한 서비스 연결 지점 사이트 시스템 역할을 사용하여 관리 작업이 완료됩니다. [System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 MDM(모바일 장치 관리)](../../../mdm/understand/hybrid-mobile-device-management.md)을 참조하세요.  
 
@@ -104,6 +104,6 @@ ms.openlocfilehash: c558148104b6338e4038bf690491c88e76dfdcaf
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

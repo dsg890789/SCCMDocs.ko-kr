@@ -1,5 +1,5 @@
 ---
-title: "계정 | System Center Configuration Manager"
+title: "Configuration Manager에서 사용되는 계정 | Microsoft 문서"
 description: "System Center Configuration Manager에서 Windows 그룹과 계정을 식별하고 관리합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: c3e19bd216523cc75b9a22672d030bb528b32555
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: fe573ebce2868686dd3156f4a3661dc8b85bc948
 
 
 ---
@@ -347,6 +347,6 @@ ms.openlocfilehash: c3e19bd216523cc75b9a22672d030bb528b32555
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

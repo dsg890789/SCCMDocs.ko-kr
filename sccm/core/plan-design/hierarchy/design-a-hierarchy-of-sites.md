@@ -1,5 +1,5 @@
 ---
-title: "계층 구조 디자인 | System Center Configuration Manager"
+title: "계층 구조 디자인 | Microsoft 문서"
 description: "사이트 계층 구조를 계획할 수 있도록 System Center Configuration Manager에 대한 사용 가능한 토폴로지 및 관리 옵션을 이해합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 783fb4d61aab83ad64b9cec332e90d6c9de59f47
-ms.openlocfilehash: b1ed3011356a794b7b0913a1c8f189230d8957b2
+ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
+ms.openlocfilehash: 000acfec2cd61cc2d69e1bbd555b10fc22a40318
 
 
 ---
@@ -173,7 +173,7 @@ System Center Configuration Manager 계층 구조의 첫 번째 사이트를 설
 
 -   [System Center Configuration Manager에서 보안 계획](../../../core/plan-design/security/plan-for-security.md)  
 
--   사이트 내에서 콘텐츠를 배포할 때[Managing network bandwidth](../../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md#bkmk_bandwidth)  
+-   사이트 내에서 콘텐츠를 배포할 때[Managing network bandwidth](../../../core/plan-design/hierarchy/manage-network-bandwidth.md)  
 
 
 **사이트 및 계층 구조에 대한 구성 고려 사항:**  
@@ -188,6 +188,6 @@ System Center Configuration Manager 계층 구조의 첫 번째 사이트를 설
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

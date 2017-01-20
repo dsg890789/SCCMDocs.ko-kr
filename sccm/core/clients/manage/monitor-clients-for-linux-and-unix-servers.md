@@ -1,8 +1,8 @@
 ---
-title: "클라이언트 모니터링 | Linux UNIX | System Center Configuration Manager"
+title: "클라이언트 모니터링 | System Center Configuration Manager | Linux UNIX "
 description: "System Center Configuration Manager에서 Linux 및 UNIX 서버의 클라이언트 모니터링"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 11/23/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d827cf91-b18f-4ee7-b538-24ba6f003ab9
 caps.latest.revision: 6
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 707cb13bcb62848eb42ca824137a645dfd2f9d82
+ms.sourcegitcommit: 620c1caf50b4859afc8f32490ab7945df810aefd
+ms.openlocfilehash: b2b7c88784eed6fbee6ac1f6348d7d6991df1fbb
 
 
 ---
@@ -35,11 +35,10 @@ Windows 기반 클라이언트에서 정보를 볼 때와 동일한 방법을 �
 
 -   리소스 탐색기에 인벤토리 세부 정보  
 
- 다음 섹션에서는 리소스 탐색기 및 보고서를 사용하여 Linux 및 UNIX 서버에 대한 세부 정보를 보는 방법을 설명합니다.  
+ 다음 섹션에서는 리소스 탐색기 및 보고서에서 이러한 세부 정보를 가져오는 방법을 설명합니다.  
 
-##  <a name="a-namebkmkuseresourceexpforlnua-how-to-use-resource-explorer-to-view-inventory-for-linux-and-unix-servers"></a><a name="BKMK_UseResourceExpforLnU"></a> 리소스 탐색기를 사용하여 Linux 및 UNIX 서버에 대한 인벤토리를 보는 방법  
- 리소스 탐색기를 사용하여 Linux 및 UNIX 서버의 하드웨어 및 설치된 소프트웨어 세부 정보를 볼 수 있습니다.  
-
+##  <a name="a-namebkmkuseresourceexpforlnua-use-resource-explorer-to-view-inventory-for-linux-and-unix-servers"></a><a name="BKMK_UseResourceExpforLnU"></a> 리소스 탐색기를 사용하여 Linux 및 UNIX 서버에 대한 인벤토리 보기  
+ 
  Configuration Manager 클라이언트에서 하드웨어 인벤토리를 Configuration Manager 사이트로 전송한 후 리소스 탐색기를 사용하여 이 정보를 볼 수 있습니다. Linux 및 UNIX용 Configuration Manager 클라이언트는 인벤토리에 대한 새 클래스나 뷰를 리소스 탐색기에 추가하지 않습니다. Linux 및 UNIX 인벤토리 데이터는 기존 WMI 클래스에 매핑됩니다. 리소스 탐색기를 사용하여 Windows 기반 분류에서 Linux 및 UNIX 서버에 대한 인벤토리 세부 정보를 볼 수 있습니다.  
 
  예를 들어 Linux 및 UNIX 서버에서 기본적으로 설치된 모든 프로그램 목록을 수집할 수 있습니다. 기본적으로 설치된 프로그램의 예로 Linux의 **.rpms** 또는 Solaris의 **.pkgs** 가 있습니다. Linux 또는 UNIX 클라이언트에서 인벤토리를 전송한 후 Configuration Manager 콘솔의 리소스 탐색기에서 기본적으로 설치된 모든 Linux 또는 UNIX 프로그램 목록을 볼 수 있습니다.  
@@ -57,6 +56,6 @@ Windows 기반 클라이언트에서 정보를 볼 때와 동일한 방법을 �
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

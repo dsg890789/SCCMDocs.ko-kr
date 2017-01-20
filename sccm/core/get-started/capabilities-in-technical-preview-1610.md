@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager용 Technical Preview 1610의 기능"
+title: "System Center Configuration Manager용 Technical Preview 1610의 기능 | Microsoft 문서"
 description: "System Center Configuration Manager용 Technical Preview 버전 1610에서 사용 가능한 기능에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/21/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: c9fe6961a63495d08a3e58e3ddf46c5d316e2613
-ms.openlocfilehash: 865b5078282bf240aa6a2aef5cb2662f2471fb71
+ms.sourcegitcommit: 3bf44f850722afdb8dfe5922c8ceff11c9b56d08
+ms.openlocfilehash: 6ffcb33e94f942fc9400457d3f16b65e12332956
 
 ---
 # <a name="capabilities-in-technical-preview-1610-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1610의 기능
@@ -82,7 +82,6 @@ Technical Preview 1610에는 업데이트된 클라이언트 버전을 자동으
 > [!NOTE]
 > 사용자 인터페이스에는 어떠한 방법으로도 클라이언트가 업그레이드되지 않는다고 명시되어 있지만 두 가지 방법을 통해 이러한 설정을 재정의할 수 있습니다. 클라이언트 강제 설치 및 수동 클라이언트 설치를 사용하여 이 구성을 재정의할 수 있습니다. 자세한 내용은 다음 섹션을 참조하세요.
 
-
 ### <a name="how-to-upgrade-a-client-that-is-in-an-excluded-collection"></a>제외된 컬렉션에 있는 클라이언트를 업그레이드하는 방법
 컬렉션이 제외되도록 구성하면 해당 컬렉션의 멤버가 다음 두 가지 방법 중 하나를 사용하여 제외를 재정의해야만 클라이언트 소프트웨어를 업그레이드할 수 있습니다.
  - **클라이언트 강제 설치** – 클라이언트 강제 설치를 사용하여 제외된 컬렉션에 있는 클라이언트를 업그레이드할 수 있습니다. 이 방법은 관리자의 의도인 것으로 간주되고 전체 컬렉션을 제외에서 제거하지 않고 클라이언트를 업그레이드할 수 있습니다.       
@@ -92,12 +91,80 @@ Technical Preview 1610에는 업데이트된 클라이언트 버전을 자동으
 
 클라이언트 설치 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법](/sccm/core/clients/deploy/deploy-clients-to-windows-computers)을 참조하세요.
 
+## <a name="windows-defender-configuration-settings"></a>Windows Defender 구성 설정
+
+이제 Configuration Manager 콘솔에서 구성 항목을 사용하여 Intune에 등록된 Windows 10 컴퓨터에 대한 Windows Defender 클라이언트 설정을 구성할 수 있습니다.
+
+특히 다음과 같은 Windows Defender 설정을 구성할 수 있습니다.
+- 실시간 모니터링 허용
+- 동작 모니터링 허용
+- 네트워크 검사 시스템 사용
+- 모든 다운로드 검색
+- 스크립트 검사 허용
+- 파일 및 프로그램 활동 모니터링
+  - 모니터링되는 파일
+- 해결된 맬웨어 추적 일수
+- 클라이언트 UI 액세스 허용
+- 시스템 검색 예약
+  - 예약일
+  - 예약 시간
+- 매일 빠른 검색 예약
+  - 예약 시간
+- 검색하는 동안 CPU 사용(%) 제한 보관 파일 검색
+- 전자 메일 메시지 검색
+- 이동식 드라이브 검색
+- 매핑된 드라이브 검색
+- 네트워크 공유에서 열린 파일 검색
+- 서명 업데이트 간격
+- 클라우드 보호 허용
+- 사용자에게 샘플 확인
+- 사용자 동의 없이 설치된 응용 프로그램 검색
+- 제외된 파일/폴더
+- 제외된 파일 확장명
+- 제외된 프로세스
+
+> [!NOTE]
+> 이러한 설정은 Windows 10 년 11월 업데이트(1511) 이상을 실행하는 클라이언트 컴퓨터에서만 구성할 수 있습니다.
+
+### <a name="try-it-out"></a>기능 직접 사용해 보기
+
+1.  Configuration Manager 콘솔에서 **자산 및 호환성** > **개요** > **준수 설정** > **구성 항목**으로 이동한 다음 새 **구성 항목**을 만듭니다.
+2.  이름을 입력하고 **Configuration Manager 클라이언트를 사용하지 않고 관리되는 장치에 대한 설정**에서 **Windows 8.1 및 Windows 10**을 선택하고 **다음**을 클릭합니다.
+3.  **지원되는 플랫폼** 페이지에서 **모든 Windows 10(64비트)** 및 **모든 Windows 10(32비트)**가 선택되었는지 확인하고 **다음**을 클릭합니다.
+4.  **Windows Defender** 설정 그룹을 선택하고 **다음**을 클릭합니다.
+5.  이 페이지에서 원하는 설정을 구성하고 **다음**을 클릭합니다.
+6.  마법사를 완료합니다.
+7.  구성 기준에 이 구성 항목을 추가하고 Windows 10 11월 업데이트(1511) 이상을 실행하는 컴퓨터에 이 기준을 배포합니다.
+
+> [!NOTE]
+> 구성 기준을 배포할 때 **비호환 설정 재구성** 확인란을 선택해야 합니다.
+
+## <a name="request-policy-sync-from-administrator-console"></a>관리자 콘솔에서 정책 동기화 요청
+
+이제 장치 자체에서 동기화를 요청할 필요 없이 Configuration Manager 콘솔에서 모바일 장치에 대한 정책 동기화를 요청할 수 있습니다. 동기화 요청 상태 정보는 장치 뷰에서 **원격 동기화 상태**라는 새 열로 제공됩니다. 상태는 각 모바일 장치에 대한 **속성** 대화 상자의 **검색 데이터** 섹션에도 표시됩니다.
+
+### <a name="try-it-out"></a>기능 직접 사용해 보기
+
+1.  Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > 장치로 이동합니다.
+2.  **원격 장치 작업** 메뉴에서 **동기화 요청 보내기**를 선택합니다.
+
+동기화는 5~10분 정도 걸릴 수 있습니다. 정책의 모든 변경 내용이 장치에 동기화됩니다. **장치** 보기의 **원격 동기화 상태** 열이나 장치의 **속성** 대화 상자에서 동기화 요청 상태를 추적할 수 있습니다.
+
+## <a name="additional-security-role-support"></a>추가 보안 역할 지원
+
+이제는 전체 관리자 권한 외에 다음과 같은 기본 제공 보안 역할도 **회사가 소유한 모든 장치** 노드의 항목(**미리 선언된 장치**, **iOS 등록 프로필**, **Windows 등록 프로필** 포함)에 대한 모든 권한을 소유합니다. •   **자산 관리자** •   **회사 리소스 액세스 관리자**
+
+**읽기 전용 분석가** 역할에는 이러한 Configuration Manager 콘솔 영역에 대한 읽기 전용 권한이 계속 부여됩니다.
+
+## <a name="conditional-access-for-windows-10-vpn-profiles"></a>Windows 10 VPN 프로필에 대한 조건부 액세스
+
+이제 Azure Active Directory에 등록된 Windows 10 장치가 Configuration Manager 콘솔에서 작성된 Windows 10 VPN 프로필을 통해 VPN에 액세스하려면 규정을 준수해야 하도록 지정할 수 있습니다. 이렇게 하려면 Windows 10 VPN 프로필의 VPN 프로필 속성과 VPN 프로필 마법사의 **인증 방법** 페이지에서 새로운 **이 VPN 연결에 조건부 액세스 사용** 확인란을 사용합니다. 프로필에 대한 조건부 액세스를 사용하도록 설정하는 경우 SSO(Single Sign-On) 인증용으로 별도의 인증서를 지정할 수도 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

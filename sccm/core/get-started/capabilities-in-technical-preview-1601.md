@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager용 Technical Preview 1601의 기능"
+title: "System Center Configuration Manager용 Technical Preview 1601의 기능 | Microsoft 문서"
 description: "System Center Configuration Manager용 Technical Preview 버전 1601에서 사용 가능한 기능에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: be158c1d893a1c1aae19c6cf2fd3a678a59d4f9e
+ms.sourcegitcommit: 3bf44f850722afdb8dfe5922c8ceff11c9b56d08
+ms.openlocfilehash: 7321645f17a143afe2fd848f45511a374de78c4b
 
 ---
 # <a name="capabilities-in-technical-preview-1601-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1601의 기능
@@ -211,8 +211,8 @@ Technical Preview 1601부터는 Configuration Manager 콘솔에서 클라이언�
 
  자세한 내용은 [System Center Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 장치에 대한 구성 항목을 만드는 방법](../../compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)을 참조하세요.  
 
-### <a name="android---kiosk-mode-for-samsung-knoxbr-hybrid"></a>Android - Samsung KNOX용 키오스크 모드<br />하이브리드  
- 키오스크 모드에서는 장치를 잠가 특정 기능만 작동하도록 허용할 수 있습니다. 예를 들어, 장치에서 지정된 관리되는 앱만 실행할 수 있게 하거나 장치에서 볼륨 단추를 사용되지 않도록 설정할 수 있습니다. 이러한 설정은 POS 장치와 같이 한 가지 기능만 수행하도록 지정된 장치 또는 장치의 데모 모델에 사용할 수 있습니다. 이러한 설정을 Samsung KNOX 장치의 **Windows 8.1 및 Windows 10** 구성 항목에서는 사용할 수 없습니다(해당 설정이 Windows 10 장치에만 적용됨).  
+### <a name="android---kiosk-mode-for-samsung-knox-standardbr-hybrid"></a>Android - Samsung KNOX Standard용 키오스크 모드<br />하이브리드  
+ 키오스크 모드에서는 장치를 잠가 특정 기능만 작동하도록 허용할 수 있습니다. 예를 들어, 장치에서 지정된 관리되는 앱만 실행할 수 있게 하거나 장치에서 볼륨 단추를 사용되지 않도록 설정할 수 있습니다. 이러한 설정은 POS 장치와 같이 한 가지 기능만 수행하도록 지정된 장치 또는 장치의 데모 모델에 사용할 수 있습니다. 이러한 설정을 Samsung KNOX Standard 장치의 **Windows 8.1 및 Windows 10** 구성 항목에서는 사용할 수 없습니다(해당 설정이 Windows 10 장치에만 적용됨).  
 
  새 설정을 보려면 **구성 항목 만들기** 마법사의 구성 항목 **장치 설정** 페이지에서 **키오스크 모드 - Samsung KNOX**를 선택하세요.  
 
@@ -220,6 +220,6 @@ Technical Preview 1601부터는 Configuration Manager 콘솔에서 클라이언�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

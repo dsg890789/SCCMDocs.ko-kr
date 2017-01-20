@@ -1,5 +1,5 @@
 ---
-title: "운영 체제 배포 모니터링 | Configuration Manager"
+title: "운영 체제 배포 모니터링 | Microsoft 문서"
 description: "운영 체제 배포 개체를 모니터링할 수 있도록 돕기 위해 Configuration Manager 콘솔에서는 경고, 보고서 및 다양한 상태 표시기를 제공합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 893e5fe2acee0ffedb7759be85fb2f911f631611
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 154c0a286e6b9ccedc7545eb010967ac00d35407
 
 
 ---
@@ -98,6 +98,6 @@ ms.openlocfilehash: 893e5fe2acee0ffedb7759be85fb2f911f631611
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

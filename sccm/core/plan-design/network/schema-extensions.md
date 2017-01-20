@@ -1,5 +1,5 @@
 ---
-title: "스키마 확장 | System Center Configuration Manager"
+title: "스키마 확장 | Microsoft 문서"
 description: "System Center Configuration Manager를 지원하도록 Active Directory 스키마를 확장합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -18,8 +18,8 @@ ms.author: brenduns
 manager: angrobe
 robots: noindex
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: f8c8533da62d215ed22f5235eefa687d5df41394
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: f230b6cbe97b72fee4f5d2e45260e6217ef2cec0
 
 
 ---
@@ -150,6 +150,6 @@ System Center Configuration Manager 설치 미디어의 **\SMSSETUP\BIN\x64** �
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

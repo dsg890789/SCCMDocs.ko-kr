@@ -1,5 +1,5 @@
 ---
-title: "콘텐츠 모니터링 | System Center Configuration Manager"
+title: "콘텐츠 모니터링 | Microsoft 문서"
 description: "Configuration Manager 콘솔을 사용하여 분산 콘텐츠를 모니터링하는 방법을 이해합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 402c06ed92bbfe509206d3e7800e41e90c5d3a38
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: 9a5d2c3a3c6bdca05b5b00fa4d746c437a56ef89
 
 ---
 # <a name="monitor-content-you-have-distributed-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 배포한 콘텐츠 모니터링
@@ -27,13 +27,9 @@ ms.openlocfilehash: 402c06ed92bbfe509206d3e7800e41e90c5d3a38
 System Center Configuration Manager 콘솔을 사용하여 다음을 포함하는 분산된 콘텐츠를 모니터링합니다.  
 
 -   연결되어 있는 배포 지점과 관련된 모든 패키지 유형의 상태  
-
 -   패키지 내 콘텐츠의 콘텐츠 유효성 검사 상태  
-
 -   특정 배포 지점 그룹에 할당된 콘텐츠의 상태  
-
 -   배포 지점에 할당된 콘텐츠의 상태  
-
 -   각 배포 지점에 대한 선택적 기능(콘텐츠 유효성 검사, PXE, 멀티캐스트)의 상태  
 
 > [!NOTE]  
@@ -43,37 +39,27 @@ System Center Configuration Manager 콘솔을 사용하여 다음을 포함하�
  **모니터링** 작업 영역의 **콘텐츠 상태** 노드에는 콘텐츠 패키지에 대한 정보가 제공됩니다. Configuration Manager 콘솔에서 다음과 같은 정보를 검토할 수 있습니다.  
 
 -   패키지 이름  
-
 -   유형  
-
 -   패키지가 전송된 배포 지점 수  
-
 -   준수 비율  
-
 -   패키지 작성 시간  
-
 -   패키지 ID  
-
 -   원본 버전  
 
 패키지의 배포 상태와 함께 모든 패키지에 대한 다음과 같은 자세한 상태 정보도 확인할 수 있습니다.  
 
 -   오류 횟수  
-
 -   보류 중인 배포  
-
 -   설치 횟수  
 
 또한 배포 지점에 대해 진행 중인 배포나 배포 지점으로 콘텐츠를 배포하지 못한 배포도 관리할 수 있습니다.  
 
 -   **콘텐츠 상태** 노드의 **처리 중** 탭 또는 **오류** 탭의 **자산 정보** 창에서 배포 지점에 대한 배포 작업의 배포 상태 메시지를 볼 때 콘텐츠를 취소하거나 다시 배포하는 옵션 중 적용 가능한 옵션을 사용할 수 있습니다.  
-
 -   그뿐만 아니라 **처리 중** 탭에서 작업 정보를 볼 경우 완료된 작업의 비율이 작업 정보에 표시되고, **오류** 탭에서 사용할 수 있는 작업 정보를 볼 경우에는 작업에 대해 남은 다시 시도 횟수와 다음 다시 시도가 발생하기 전까지의 시간이 작업 정보에 표시됩니다.  
 
 아직 완료되지 않은 배포를 취소하면 해당 콘텐츠를 전송할 배포 지점이 중지됩니다.  
 
 -   그러면 배포 상태가 업데이트되어, 배포가 실패했고 사용자 작업에 의해 취소되었음을 나타냅니다.  
-
 -   이 새로운 상태는 **오류** 탭에 표시됩니다.  
 
 > [!TIP]  
@@ -124,23 +110,16 @@ System Center Configuration Manager 콘솔을 사용하여 다음을 포함하�
 **모니터링** 작업 영역의 **배포 지점 그룹 상태** 노드에는 배포 지점 그룹에 대한 정보가 제공됩니다. 다음과 같은 정보를 검토할 수 있습니다.  
 
 -   배포 지점 그룹 이름  
-
 -   설명  
-
 -   배포 지점 그룹의 구성원인 배포 지점 수  
-
 -   그룹에 할당된 패키지 수  
-
 -   배포 지점 그룹 상태  
-
 -   준수 비율  
 
 다음에 대한 세부 상태 정보도 확인할 수 있습니다.  
 
 -   배포 지점 그룹에 대한 오류  
-
 -   진행 중인 배포 수  
-
 -   정상적으로 완료된 배포 수  
 
 #### <a name="to-monitor-distribution-point-group-status"></a>배포 지점 그룹 상태를 모니터링하려면  
@@ -171,8 +150,18 @@ System Center Configuration Manager 콘솔을 사용하여 다음을 포함하�
 
 4.  결과 창에서 **세부 정보** 탭을 클릭합니다. 배포 지점에 대한 상태 정보가 표시됩니다.  
 
+## <a name="client-data-sources-dashboard"></a>클라이언트 데이터 원본 대시보드
+버전 1610부터 **클라이언트 데이터 원본** 대시보드를 사용하여 사용자 환경의 [피어 캐시](/sccm/core/plan-design/hierarchy/client-peer-cache) 사용을 파악할 수 있습니다. 이 대시보드는 클라이언트가 피어 캐시를 사용하여 콘텐츠를 다운로드하고 해당 정보를 사이트에 다시 보고해야 콘솔에 표시됩니다. 보고 간격에 따라 이 작업은 최대 24시간이 걸릴 수 있습니다.
+
+> [!TIP]  
+> 버전 1610의 경우 피어 캐시 및 클라이언트 데이터 원본 대시보드는 시험판 기능입니다. 이러한 기능을 사용하도록 설정하려면 [업데이트에서 시험판 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_prerelease)을 참조하세요.
+
+콘솔에서 **모니터링** > **클라이언트 상태** > **클라이언트 데이터 원본**으로 이동합니다. 여기서 대시보드에 적용하는 기간을 선택할 수 있습니다. 그런 다음 디스플레이에서, 정보를 보려는 경계 그룹 또는 패키지를 선택할 수 있습니다. 정보를 볼 때 서로 다른 콘텐츠 또는 정책 원본에 대한 자세한 내용을 보려면 화면 위로 마우스를 가져가면 됩니다.  
+
+새 보고서 **클라이언트 데이터 원본 - 요약**을 사용하면 각 경계 그룹에 대한 클라이언트 데이터 원본의 요약을 볼 수 있습니다.
 
 
-<!--HONumber=Nov16_HO1-->
+
+<!--HONumber=Dec16_HO3-->
 
 

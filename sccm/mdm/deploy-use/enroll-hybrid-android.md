@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager 및 Microsoft Intune으로 Android 하이브리드 장치 관리 설정"
+title: "System Center Configuration Manager 및 Microsoft Intune으로 Android 하이브리드 장치 관리 설정 | Microsoft 문서"
 description: "Configuration Manager 및 Intune으로 Android 모바일 장치 관리 준비"
 ms.custom: na
 ms.date: 10/06/2016
@@ -13,12 +13,12 @@ ms.topic: get-started-article
 ms.assetid: c517fe34-0130-465b-a020-bdb555878778
 caps.latest.revision: 9
 caps.handback.revision: 0
-author: NathBarn
-ms.author: nathbarn
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: fa189e812a2e3104cb337ccf40c693621745ee53
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: ab892174643e7565ad9a74abc4f83f2f152669bd
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: fa189e812a2e3104cb337ccf40c693621745ee53
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 경우 사용자가 Android(Samsung KNOX 포함) 장치를 등록할 수 있는 Google Play에서 Android 회사 포털 앱을 다운로드할 수 있습니다. Android 회사 포털 앱을 사용하여 준수 설정을 관리하고, Android 장치를 초기화 또는 삭제하고, 앱을 배포하고, 소프트웨어 및 하드웨어 인벤토리를 수집할 수 있습니다. Android 회사 포털 앱이 Android 장치에 설치되지 않은 경우 인벤토리 및 준수 설정과 같은 일부 관리 기능을 사용할 수 없지만 Android 장치에 앱을 계속 배포할 수 있습니다.  
+System Center Configuration Manager의 경우 사용자가 Android(Samsung KNOX Standard 포함) 장치를 등록할 수 있는 Google Play에서 Android 회사 포털 앱을 다운로드할 수 있습니다. Android 회사 포털 앱을 사용하여 준수 설정을 관리하고, Android 장치를 초기화 또는 삭제하고, 앱을 배포하고, 소프트웨어 및 하드웨어 인벤토리를 수집할 수 있습니다. Android 회사 포털 앱이 Android 장치에 설치되지 않은 경우 인벤토리 및 준수 설정과 같은 일부 관리 기능을 사용할 수 없지만 Android 장치에 앱을 계속 배포할 수 있습니다.  
 
 ## <a name="prepare-to-manage-android-mobile-devices-with-configuration-manager-and-intune"></a>Configuration Manager 및 Intune으로 Android 모바일 장치 관리 준비  
  다음 단계를 수행하면 Configuration Manager에서 Android 장치를 관리할 수 있습니다.  
@@ -45,6 +45,6 @@ System Center Configuration Manager의 경우 사용자가 Android(Samsung KNOX 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "콘텐츠에 대한 네트워크 대역폭 관리 | System Center Configuration Manager"
+title: "콘텐츠에 대한 네트워크 대역폭 관리 | Microsoft 문서"
 description: "System Center Configuration Manager에 대한 일정, 제한 및 사전 준비된 콘텐츠를 구성합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 92a08908f284abb02ce8000122b0839c474616d7
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: 14ce376f385ec19d224e8b1a2918eed5379a64e5
 
 
 ---
@@ -76,6 +76,6 @@ Configuration Manager 콘솔에서 사전 준비할 콘텐츠를 선택하고 **
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

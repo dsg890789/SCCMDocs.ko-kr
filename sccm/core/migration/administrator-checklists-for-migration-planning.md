@@ -1,5 +1,5 @@
 ---
-title: "마이그레이션 검사 목록 | System Center Configuration Manager"
+title: "마이그레이션 검사 목록 | Microsoft 문서"
 description: "관리자 검사 목록을 사용하여 System Center Configuration Manager로의 마이그레이션 전략을 계획할 수 있습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: f3912de04aa3e6196137a7034753013c35180d64
+ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
+ms.openlocfilehash: 285d1111502ec25b3b75a64d834b65b6898128e8
 
 
 ---
@@ -147,7 +147,7 @@ ms.openlocfilehash: f3912de04aa3e6196137a7034753013c35180d64
 
     예를 들어 콘텐츠를 마이그레이션하는 경우 사용 중인 마이그레이션 작업에 상관없이 해당 콘텐츠의 관리를 소유할 대상 계층 내 사이트를 할당해야 합니다. 할당된 사이트는 콘텐츠에 대한 원래의 원본 파일 위치에 액세스하며 이 콘텐츠를 대상 계층의 배포 지점에 배포하는 작업을 담당합니다.  
 
-    자세한 내용은 [Create and Edit Migration Jobs for System Center Configuration Manager](../../core/migration/operations-for-migration.md#create_edit_migration_jobs) 항목의 [Operations for migrating to System Center Configuration Manager](../../core/migration/operations-for-migration.md) 섹션을 참조하세요.  
+    자세한 내용은 [Create and Edit Migration Jobs for System Center Configuration Manager](../../core/migration/operations-for-migration.md#Create_Edit_migration_Jobs) 항목의 [Operations for migrating to System Center Configuration Manager](../../core/migration/operations-for-migration.md) 섹션을 참조하세요.  
 
 -   **클라이언트를 대상 계층으로 마이그레이션합니다.**  
 
@@ -167,7 +167,7 @@ ms.openlocfilehash: f3912de04aa3e6196137a7034753013c35180d64
 
     또한 Configuration Manager 2007 보조 사이트 서버에 함께 있는 배포 지점도 업그레이드할 수 있습니다. 이렇게 하면 보조 사이트는 제거되고 대상 계층의 배포 지점만 남습니다.  
 
-    공유 배포 지점에 대한 자세한 내용은 [Share Distribution Points Between Source and Destination Hierarchies](../../core/migration/planning-a-content-deployment-migration-strategy.md#about_shared_dps_in_migrations) 항목에서 [Planning a content deployment migration strategy in System Center Configuration Manager](../../core/migration/planning-a-content-deployment-migration-strategy.md) 섹션을 참조하세요.  
+    공유 배포 지점에 대한 자세한 내용은 [Share Distribution Points Between Source and Destination Hierarchies](../../core/migration/planning-a-content-deployment-migration-strategy.md#About_Shared_DPs_in_Migration) 항목에서 [Planning a content deployment migration strategy in System Center Configuration Manager](../../core/migration/planning-a-content-deployment-migration-strategy.md) 섹션을 참조하세요.  
 
 -   **마이그레이션을 완료합니다.**  
 
@@ -175,6 +175,6 @@ ms.openlocfilehash: f3912de04aa3e6196137a7034753013c35180d64
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

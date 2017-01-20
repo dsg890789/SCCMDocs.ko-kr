@@ -1,5 +1,5 @@
 ---
-title: "Endpoint Protection 맬웨어 정의 | System Center Configuration Manager"
+title: "Endpoint Protection 맬웨어 정의 | Microsoft 문서"
 description: "클라이언트 컴퓨터에 정의 업데이트를 제공하도록 Configuration Manager 소프트웨어 업데이트를 구성하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: ead791ae0bf9d26ff02bea9a85973d7149b695a5
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: ca8dfd2882189065aecdb46b42205a04294dafed
 
 
 ---
@@ -121,6 +121,6 @@ ms.openlocfilehash: ead791ae0bf9d26ff02bea9a85973d7149b695a5
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

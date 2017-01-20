@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager를 사용하여 원격 초기화, 잠금 또는 암호 재설정으로 데이터 보호"
+title: "System Center Configuration Manager를 사용하여 원격 초기화, 잠금 또는 암호 재설정으로 데이터 보호 | Microsoft 문서"
 description: "System Center Configuration Manager를 사용하여 전체 초기화, 선택적 초기화, 원격 잠금 또는 암호 다시 설정으로 장치 데이터를 보호합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -13,12 +13,12 @@ ms.topic: article
 ms.assetid: 770da7bd-02dd-474a-9604-93ff1ea0c1e4
 caps.latest.revision: 18
 caps.handback.revision: 0
-author: NathBarn
-ms.author: nathbarn
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 49a2220616bb6c6734643885bf969245e4c67c77
+ms.sourcegitcommit: 828e2ac9a3f9bcea1571d24145a1021fdf1091f3
+ms.openlocfilehash: d3dd55b496a124c478f1cf2880a096e2fbdd9145
 
 ---
 # <a name="protect-data-with-remote-wipe-lock-or-passcode-reset-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 원격 초기화, 잠금 또는 암호 재설정으로 데이터 보호
@@ -65,9 +65,9 @@ Configuration Manager는 선택적 초기화, 전체 초기화, 원격 잠금 �
 |관리 에이전트|관리 프로필이 제거됩니다.|  
 |전자 메일 프로필|Intune에 의해 프로비전된 메일 프로필의 경우 메일 계정 및 메일이 제거됩니다.|  
 
- **Android 및 Android 삼성 KNOX**  
+ **Android 및 Android Samsung KNOX Standard**  
 
-|장치를 사용 중지할 경우 제거되는 콘텐츠|Android|Samsung KNOX|  
+|장치를 사용 중지할 경우 제거되는 콘텐츠|Android|Samsung KNOX Standard|  
 |--------------------------------------------|-------------|------------------|  
 |Configuration Manager 및 Intune을 사용하여 설치된 회사 앱 및 관련 데이터|앱 및 데이터는 계속 설치되어 있습니다.|앱이 제거됩니다.|  
 |VPN 및 Wi-Fi 프로필|제거됩니다.|제거됩니다.|  
@@ -243,10 +243,10 @@ Configuration Manager는 선택적 초기화, 전체 초기화, 원격 잠금 �
 
 ## <a name="see-also"></a>참고 항목  
  [장치 데이터 관리를 위한 Windows 선택적 초기화](http://technet.microsoft.com/library/dn486874.aspx)   
- [System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 MDM(모바일 장치 관리)](../../mdm/plan-design/hybrid-mobile-device-management.md)
+ [System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 MDM(모바일 장치 관리)](../../mdm/understand/hybrid-mobile-device-management.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "컬렉션 만들기 | System Center Configuration Manager"
+title: "컬렉션 만들기 | Microsoft 문서"
 description: "System Center Configuration Manager에서 컬렉션을 만들어 사용자 및 장치 그룹을 더 쉽게 관리합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: f73f0e58b82d1aab1f64f3695dd5c3a61e933d2a
+ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
+ms.openlocfilehash: 5ade6d22e1f04c1528f319e2c2a4b576ac290bd6
 
 
 ---
@@ -248,6 +248,6 @@ System Center Configuration Manager에서 컬렉션을 만들어 사용자 또�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

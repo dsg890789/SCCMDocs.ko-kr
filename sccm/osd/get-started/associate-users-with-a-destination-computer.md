@@ -1,5 +1,5 @@
 ---
-title: "대상 컴퓨터에 사용자 연결 | Configuration Manager"
+title: "사용자를 대상 컴퓨터에 연결 | Microsoft 문서"
 description: "운영 체제를 배포할 때 System Center Configuration Manager를 구성하여 사용자와 대상 컴퓨터를 연결합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 5339b5aba31efc06b46d0ffcfe37b5e05dcb839d
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: c0331567b94a99b29cc73c16de17a9f3bc6b9e43
 
 
 ---
@@ -47,6 +47,6 @@ System Center Configuration Manager를 사용하여 운영 체제를 배포할 �
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

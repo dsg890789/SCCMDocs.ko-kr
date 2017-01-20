@@ -1,12 +1,12 @@
 ---
 
-title: "소프트웨어 업데이트 모니터링 | Configuration Manager"
+title: "소프트웨어 업데이트 모니터링 | Microsoft 문서"
 description: "System Center Configuration Manager 콘솔은 업데이트 및 준수를 모니터링하기 위해 경고 및 상태를 제공합니다."
 keywords: 
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/06/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -14,8 +14,8 @@ ms.technology:
 - configmgr-sum
 ms.assetid: 9afd7b0f-5c8e-48bc-9a65-1f7d74103688
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: fe41807cebf87f4e6bab47e41db0ffe7cc83c5d1
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: 956ef263a1c178b5ab5926705859f4b2d0ae5bc7
 
 ---
 # <a name="monitor-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 업데이트 모니터링
@@ -23,6 +23,9 @@ ms.openlocfilehash: fe41807cebf87f4e6bab47e41db0ffe7cc83c5d1
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 System Center Configuration Manager는 소프트웨어 업데이트 개체, 프로세스 및 준수 정보를 모니터링할 수 있도록 여러 가지 방법을 제공합니다. 다음 섹션을 사용하여 소프트웨어 업데이트를 모니터링합니다.
+
+## <a name="software-updates-dashboard"></a>소프트웨어 업데이트 대시보드
+Configuration Manager 버전 1610부터 소프트웨어 업데이트 대시보드를 사용하여 조직 내 장치의 현재 준수 상태를 보고 데이터를 빠르게 분석하여 위험한 장치를 확인할 수 있습니다. 대시보드를 보려면 **모니터링** > **개요** > **보안** > **소프트웨어 업데이트 대시보드**로 이동합니다.   
 
 ##  <a name="a-namebkmksualertsa-alerts-for-software-updates"></a><a name="BKMK_SUAlerts"></a> 소프트웨어 업데이트에 대한 경고  
  소프트웨어 업데이트에 대한 경고를 구성하여 소프트웨어 업데이트 배포의 호환성 수준이 구성된 백분율 이하인 경우 관리자에게 알릴 수 있습니다. 소프트웨어 업데이트 배포에 대한 경고는 다음 위치에서 구성할 수 있습니다.  
@@ -98,6 +101,6 @@ System Center Configuration Manager는 소프트웨어 업데이트 개체, 프�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "클라이언트 배포 상태 모니터링 | System Center Configuration Manager"
+title: "클라이언트 배포 상태 모니터링 | Microsoft 문서"
 description: "System Center Configuration Manager에서 클라이언트 배포 상태를 모니터링합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -13,12 +13,12 @@ ms.topic: get-started-article
 ms.assetid: 20a573b3-53cb-4ed5-bae1-7542f533ed20
 caps.latest.revision: 11
 caps.handback.revision: 0
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 495c95b6add90619881291a551f394511d9eb36d
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: 3bc82535955d937e5620ef2963ccc29bfd0124e3
 
 
 ---
@@ -33,9 +33,7 @@ ms.openlocfilehash: 495c95b6add90619881291a551f394511d9eb36d
 
  콘솔의 **모니터링** 작업 영역에서, 지정된 컬렉션 내에서 수행되는 클라이언트 배포에 대해 다음과 같은 상태를 모니터링할 수 있습니다.  
 
--   시작 안 됨   
-
--   규칙 준수  
+-   규정  
 
 -   진행 중  
 
@@ -60,7 +58,7 @@ ms.openlocfilehash: 495c95b6add90619881291a551f394511d9eb36d
  사전 프로덕션 클라이언트 배포에 대한 자세한 내용은 [System Center Configuration Manager의 사전 프로덕션 컬렉션에서 클라이언트 업그레이드를 테스트하는 방법](../../../core/clients/manage/upgrade/test-client-upgrades.md)을 참조하세요.
 
  > [!NOTE]
- > 사전 프로덕션 컬렉션의 사이트 시스템 역할을 호스팅하는 컴퓨터의 배포 상태는 클라이언트가 배포된 경우에도 **시작되지 않음**으로 나타날 수 있습니다. 클라이언트 수준을 프로덕션에 올리면 배포 상태가 올바르게 나타납니다.   
+ > 사전 프로덕션 컬렉션의 사이트 시스템 역할을 호스팅하는 컴퓨터의 배포 상태는 클라이언트가 배포된 경우에도 **호환되지 않음**으로 보고될 수 있습니다. 클라이언트 수준을 프로덕션에 올리면 배포 상태가 올바르게 나타납니다.   
 
  배포된 클라이언트 상태를 모니터링하려면 [System Center Configuration Manager에서 클라이언트를 모니터링하는 방법](../../../core/clients/manage/monitor-clients.md)을 참조하세요.  
 
@@ -68,6 +66,6 @@ ms.openlocfilehash: 495c95b6add90619881291a551f394511d9eb36d
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

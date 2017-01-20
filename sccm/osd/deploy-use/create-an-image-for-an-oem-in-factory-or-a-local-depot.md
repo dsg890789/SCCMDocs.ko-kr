@@ -1,5 +1,5 @@
 ---
-title: "팩터리 또는 로컬 저장소에 OEM에 대한 이미지 만들기 | Configuration Manager"
+title: "팩터리 또는 로컬 저장소에 OEM에 대한 이미지 만들기 | Microsoft 문서"
 description: "사전 준비된 미디어 배포를 사용하면 완전히 프로비전되지 않은 컴퓨터에 운영 체제를 배포하는 동안 네트워크 트래픽을 줄일 수 있습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: d604577fdb9af7c7789840ea6281c371e35c46b0
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 07aba04fb1b845e389a5f75b115d536136c1569c
 
 
 ---
@@ -58,6 +58,6 @@ System Center Configuration Manager에서 사전 준비된 미디어 배포를 �
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 
