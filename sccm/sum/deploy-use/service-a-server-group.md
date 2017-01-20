@@ -13,11 +13,15 @@ ms.technology:
 - configmgr-sum
 ms.assetid: 304a83ea-0f72-437d-9688-2e6e0c7526dd
 translationtype: Human Translation
-ms.sourcegitcommit: 78524abd4c45f0b7402d6f1e85afc60bb72ab0ee
-ms.openlocfilehash: b89cec7cebb5342da32ec8e11a049edad12f1231
+ms.sourcegitcommit: af5f58dd5fe1f19d7a70cb9516af159c6682d194
+ms.openlocfilehash: ae09a02dd5d67113b9a7e2ce146c844efa4caf55
 
 
 ---
+>[!IMPORTANT]
+>이는 Configuration Manager 버전 1606 및 버전 1610에서 제공되는 시험판 기능입니다. 시험판 기능은 프로덕션 환경의 초기 테스트를 위한 제품에 포함되었지만 이러한 기능은 프로덕션 준비가 된 것으로 간주되지 않아야 합니다. 이 기능을 사용하려면 사용자가 설정해야 합니다. 자세한 내용은 [업데이트에서 시험판 기능 사용](https://docs.microsoft.com/sccm/core/servers/manage/install-in-console-updates#bkmk_prerelease)을 참조하세요.
+
+
 # <a name="service-a-server-group"></a>서버 그룹 제공
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -88,6 +92,6 @@ System Center Configuration Manager 버전 1606부터, 컬렉션에 대한 서�
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

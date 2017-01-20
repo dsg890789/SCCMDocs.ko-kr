@@ -2,7 +2,7 @@
 title: "클라이언트 피어 캐시 | System Center Configuration Manager"
 description: "System Center Configuration Manager를 사용하여 콘텐츠를 배포할 때는 클라이언트 콘텐츠 원본 위치에 대해 피어 캐시를 사용합니다."
 ms.custom: na
-ms.date: 1/3/2017
+ms.date: 1/9/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: e2a72fd9fb9ae5e64b7eb92e1d2106162fc7ea5d
-ms.openlocfilehash: 599ba03a1934b9feb030f27c827625c2c9471d8e
+ms.sourcegitcommit: f3e8cb3a7a4c1de9b8e9866ed192a8a0a7aec106
+ms.openlocfilehash: 86129a7fd5bfac676b5f03336cf97d07747b48d1
 
 ---
 # <a name="peer-cache-for-configuration-manager-clients"></a>Configuration Manager 클라이언트용 피어 캐시
@@ -48,6 +48,8 @@ System Center Configuration Manager 버전 1610부터는 **피어 캐시**를 �
 
 
 ## <a name="requirements-and-considerations-for-peer-cache"></a>피어 캐시에 대한 요구 사항 및 고려 사항
+- 피어 캐시는 Configuration Manager 클라이언트로 지원되는 모든 Windows 운영 체제에서 지원됩니다. Windows가 아닌 운영 체제는 피어 캐시에 대해 지원되지 않습니다.
+
 - 각 클라이언트의 캐시 폴더에 대해 **모든 권한**을 가진 **네트워크 액세스 계정**으로 사이트를 구성해야 합니다. 기본적으로 이 폴더는 ***%windir%\ccmcache***입니다.
 
 - 클라이언트는 현재 경계 그룹에 포함되어 있는 피어 캐시 클라이언트의 콘텐츠만 전송할 수 있습니다.
@@ -67,6 +69,6 @@ System Center Configuration Manager 버전 1610부터는 **피어 캐시**를 �
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

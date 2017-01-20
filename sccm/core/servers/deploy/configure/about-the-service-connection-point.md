@@ -2,7 +2,7 @@
 title: "서비스 연결점 | Microsoft 문서"
 description: "이 Configuration Manager 사이트 시스템 역할에 대해 알아보고 사용 범위를 이해하고 계획합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 1/6/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 4a8d98addcd463eb82d8b7100b44254a10d21992
-ms.openlocfilehash: b5f7ad01f7a32d69d0c75b3c80a053f3c020c036
+ms.sourcegitcommit: 4409d32593e3ab22482b08335005bd2a278a7e35
+ms.openlocfilehash: 36f33e0ce898ccdd5fa25aa59b8cf032805769b9
 
 
 ---
@@ -83,7 +83,7 @@ Configuration Manager 서비스 관리자를 사용하려면 콘솔에서 **모�
 -   사이트 시스템 설치 계정은 사이트 서버의 배포 관리자가 서비스 연결점에서 업데이트를 전송하는 데 사용됩니다.
 
 ##  <a name="a-namebkmkurlsa-internet-access-requirements"></a><a name="bkmk_urls"></a> 인터넷 액세스 요구 사항  
-작업을 사용하려면 서비스 연결 지점 및 해당 컴퓨터와 인터넷 간의 모든 방화벽을 호스트하는 컴퓨터에서 **포트 TCP 443**을 통해 다음 인터넷 위치로 통신을 전달해야 합니다. 서비스 연결 지점에서도 웹 프록시(인증을 사용하거나 사용하지 않고)를 통해 이러한 위치에 액세스할 수 있습니다.  
+작업을 사용하려면 서비스 연결 지점 및 해당 컴퓨터와 인터넷 간의 모든 방화벽을 호스트하는 컴퓨터에서 **포트 TCP 443** 및 **포트 TCP 443**을 통해 다음 인터넷 위치로 통신을 전달해야 합니다. 서비스 연결 지점에서도 웹 프록시(인증을 사용하거나 사용하지 않고)를 통해 이러한 위치에 액세스할 수 있습니다.  
 
 **업데이트 및 서비스**  
 
@@ -96,6 +96,8 @@ Configuration Manager 서비스 관리자를 사용하려면 콘솔에서 **모�
 -   blob.core.windows.net  
 
 -   download.microsoft.com  
+
+-   download.windowsupdate.com
 
 -   sccmconnected-a01.cloudapp.net  
 
@@ -119,6 +121,6 @@ Configuration Manager 서비스 관리자를 사용하려면 콘솔에서 **모�
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

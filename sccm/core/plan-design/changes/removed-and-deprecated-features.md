@@ -2,7 +2,7 @@
 title: "사용되지 않는 기능 | Microsoft 문서"
 description: "System Center Configuration Manager에서 더 이상 지원되지 않는 기능, 제품 및 운영 체제에 대해 알아봅니다."
 ms.custom: na
-ms.date: 12/29/2016
+ms.date: 1/5/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 16781e281676c8c1092108d16beaf7e0b16d45a7
-ms.openlocfilehash: e788a3c54e3620db92f1cc3e8246e5469189a802
+ms.sourcegitcommit: f912bb82b8d753f01b15f96eec5099c3f92abe75
+ms.openlocfilehash: 18b411b05dd6fc9b572e1d3d201876172bb40d07
 
 
 ---
@@ -52,6 +52,7 @@ ms.openlocfilehash: e788a3c54e3620db92f1cc3e8246e5469189a802
 |대역 외 관리 - System Center 2012 Configuration Manager에 있음|2015년 10월 16일|버전 1511|
 |작업 순서: <br /> - 동적 디스크로 변환 <br /> - 배포 도구 설치 |2016년 11월 18일|이러한 작업 순서에 대한 지원은 2017년 6월 1일 이후 처음으로 출시되는 업데이트와 함께 종료됨.|
 |소프트웨어 센터가 새로운 세련된 디자인으로 바뀌었습니다. 이전에는 Silverlight 종속 응용 프로그램 카탈로그에서만 표시되었던 앱(사용자가 사용할 수 있는 앱)이 이제 소프트웨어 센터의 **응용 프로그램** 탭에 표시됩니다. 소프트웨어 센터의 **설치 상태** 탭에 있는 링크를 사용하면 응용 프로그램 카탈로그에 계속 액세스할 수 있습니다.<br><br>향후 몇 개월 이후 소프트웨어 센터의 이전 버전을 더 이상 사용할 수 없게 됩니다.<br><br>클라이언트 설정인 **컴퓨터 에이전트** > **새 소프트웨어 센터 사용**을 활성화하여 새로운 소프트웨어 센터를 사용하도록 클라이언트를 설정할 수 있습니다.<br><br>소프트웨어 센터에 대한 자세한 내용은 [System Center Configuration Manager에서 응용 프로그램 관리 계획 및 구성](https://docs.microsoft.com/sccm/apps/plan-design/plan-for-and-configure-application-management)을 참조하세요.|2016년 12월 13일|공지 예정|
+|Configuration Manager를 사용한 VHD(가상 하드 디스크) 관리 </br></br>새 VHD를 만들거나 작업 순서를 사용하여 VHD를 관리하는 옵션이 제거되고, Configuration Manager 콘솔에서 가상 하드 디스크 노드가 제거됩니다. </br></br>이 지원이 제거되면 기존 VHD가 삭제되는 것은 아니지만 더 이상 Configuration Manager 콘솔 내에서 액세스할 수 없게 됩니다.  |2017년 1월 6일 |2017년 1월 1일 이후에 릴리스되는 첫 번째 업데이트와 함께 VHD에 대한 지원이 종료됩니다.|
 
 
 System Center Configuration Manager 버전 1511 출시와 함께 제거된 기능에 대한 추가 정보:
@@ -111,7 +112,6 @@ System Center Configuration Manager 버전 1511 출시와 함께 제거된 기�
 
 
 
-
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 
