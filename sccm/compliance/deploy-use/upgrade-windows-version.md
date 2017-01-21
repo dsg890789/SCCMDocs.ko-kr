@@ -1,0 +1,99 @@
+---
+title: "Windows 장치를 새 버전으로 업그레이드 | System Center Configuration Manager"
+description: "Windows 10 Desktop, Windows 10 Mobile 또는 Windows 10 Holographic을 실행하는 장치를 최신 버전으로 자동으로 업그레이드합니다."
+ms.custom: na
+ms.date: 10/06/2016
+ms.prod: configuration-manager
+ms.reviewer: na
+ms.suite: na
+ms.technology:
+- configmgr-other
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.assetid: b0c9db74-841e-46eb-8924-957cde968bf7
+caps.latest.revision: 8
+caps.handback.revision: 0
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+translationtype: Human Translation
+ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
+ms.openlocfilehash: 7ee088f6da266742e7836499a7f0e072bf446a62
+
+
+---
+
+# <a name="upgrade-windows-devices-with-the-edition-upgrade-policy-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 버전 업그레이드 정책을 사용하여 Windows 장치 업그레이드
+
+*적용 대상: System Center Configuration Manager(현재 분기)*
+
+
+System Center Configuration Manager **버전 업그레이드 정책**을 사용하면 다음 Windows 10 버전 중 하나를 실행하는 장치를 최신 버전으로 자동으로 업그레이드할 수 있습니다.
+
+- Windows 10 Desktop
+- Windows 10 Mobile
+- Windows 10 Holographic
+
+지원되는 업그레이드 경로는 다음과 같습니다.
+- Windows 10 Pro에서 Windows 10 Enterprise로 업그레이드
+- Windows 10 Home에서 Windows 10 Education으로 업그레이드
+- Windows 10 Mobile에서 Windows 10 Mobile Enterprise로 업그레이드
+- Windows 10 Holographic Pro에서 Windows 10 Holographic Enterprise로 업그레이드
+
+장치는 Microsoft Intune에 등록되어야 합니다. 이 기능은 현재 Configuration Manager 클라이언트 소프트웨어를 실행하는 PC 또는 온-프레미스 MDM에서 관리되는 PC와 호환되지 않습니다.
+
+## <a name="before-you-start"></a>시작하기 전에  
+ 장치를 최신 버전으로 업그레이드하기 전에 다음 중 하나가 있어야 합니다.  
+
+-   데스크톱 운영 체제용 정책에서 대상으로 지정하는 모든 장치에 새 버전의 Windows를 설치하는 데 유효한 제품 키  
+
+-   Windows 10 Mobile 및 Windows 10 Holographic용 정책에서 대상으로 지정하는 모든 장치에 새 버전의 Windows를 설치하기 위한 라이선스 정보가 포함된 Microsoft 라이선스 파일
+
+- 이 정책 유형을 만들고 배포하려면 Configuration Manager **전체 관리자** 보안 역할이 할당된 상태여야 합니다.
+
+## <a name="configure-the-edition-upgrade-policy"></a>버전 업그레이드 정책 구성  
+
+1.  Configuration Manager 콘솔에서 **자산 및 준수** > **준수 설정** > **Windows 10 버전 업그레이드**를 클릭합니다.  
+
+3.  **홈** 탭의 **만들기** 그룹에서 **버전 업그레이드 정책 만들기**를 클릭합니다.  
+
+4.  **정책 만들기**를 클릭합니다.  
+
+5.  **버전 업그레이드 정책 만들기 마법사** 의 **일반**페이지에서 다음 정보를 지정합니다.  
+
+    -   **이름** - 버전 업그레이드 정책의 이름을 입력합니다.  
+
+    -   **설명** (선택 사항) - 필요에 따라 Intune 콘솔에서 식별하는 데 도움이 되는 정책 설명을 입력합니다.  
+
+    -   **장치를 업그레이드할 SKU** - 드롭다운 목록에서 대상 장치를 업그레이드할 Windows 10 Desktop, Windows 10 Holographic 또는 Windows 10 Mobile 버전을 선택합니다.  
+
+    -   **라이선스 정보** - 다음 중 하나를 선택합니다.  
+
+        -   **제품 키** - Windows 10 Desktop 운영 체제를 실행하는 대상 장치를 업그레이드하는 데 사용할 유효한 Windows 10 제품 키를 입력합니다.  
+
+            > [!NOTE]  
+            >  제품 키가 포함된 정책을 만든 후에는 나중에 제품 키를 편집할 수 없습니다. 보안상 키가 가려지기 때문입니다. 제품 키를 변경하려면 전체 키를 다시 입력해야 합니다.  
+
+        -   **라이선스 파일** - **찾아보기** 를 클릭하여 Windows 10 Holographic 및 Windows 10 Mobile 운영 체제를 실행하는 대상 장치를 업그레이드하는 데 사용할 XML 형식의 유효한 라이선스 파일을 선택합니다.  
+
+6.  마법사를 완료합니다.  
+
+ 새 정책이 **자산 및 준수** 작업 영역의 **Windows 10 버전 업그레이드** 노드에 표시됩니다.  
+
+## <a name="deploy-the-edition-upgrade-policy"></a>버전 업그레이드 정책 배포  
+
+1.  Configuration Manager 콘솔에서 **자산 및 준수** > **준수 설정** > **Windows 10 버전 업그레이드**를 클릭합니다.  
+
+3.  배포할 Windows 10 버전 업그레이드 정책을 선택한 다음 **홈** 탭의 **배포** 그룹에서 **배포**를 클릭합니다.  
+
+4.  **Windows 10 버전 업그레이드 배포** 대화 상자에서 정책을 배포할 사용자 또는 장치 컬렉션과 정책 평가 일정을 선택한 다음 **확인**을 클릭합니다.  
+
+ **모니터링** 작업 영역의 **배포** 노드에서 방금 만든 배포를 모니터링할 수 있습니다.  
+
+ 정책이 대상 Windows PC에 도달하면 2시간 내에 PC가 다시 시작되어 업그레이드를 적용합니다. 정책을 배포할 모든 사용자에게 알리거나 사용자의 근무 시간 외에 정책이 실행되도록 예약해야 합니다.
+
+
+
+<!--HONumber=Nov16_HO1-->
+
+
