@@ -1,8 +1,8 @@
 ---
-title: "예제 시나리오 - Windows Embedded 클라이언트 배포 | System Center Configuration Manager"
+title: "예제 시나리오 - Windows Embedded 클라이언트 배포 | Microsoft 문서"
 description: "Windows Embedded 장치의 System Center Configuration Manager 클라이언트 배포 및 관리에 대한 예제 시나리오를 참조하세요."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 01/12/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 10049c89-b37c-472b-b317-ce4f56cd4be7
 caps.latest.revision: 8
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: dd97ae9afb2d0ecfc33266267a65f3c3f6d1dd29
+ms.sourcegitcommit: a650ad8e7b1f9468dd04165a3e43a89387b5d696
+ms.openlocfilehash: b07af49e2fecf6cc41258c87794ca7952206bb8a
 
 
 ---
@@ -25,11 +25,11 @@ ms.openlocfilehash: dd97ae9afb2d0ecfc33266267a65f3c3f6d1dd29
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-이 시나리오에서는 System Center Configuration Manager를 통해 쓰기 필터를 사용하는 Windows Embedded 장치를 관리하는 방법을 보여 줍니다. Embedded 장치가 쓰기 필터를 지원하지 않는 경우 표준 Configuration Manager 클라이언트로 동작하므로 쓰기 필터를 관리하는 데 필요한 이 시나리오의 단계를 수행하지 않아도 됩니다.  
+이 시나리오에서는 Configuration Manager를 통해 쓰기 필터를 사용하는 Windows Embedded 장치를 관리하는 방법을 보여 줍니다. Embedded 장치가 쓰기 필터를 지원하지 않는 경우 표준 Configuration Manager 클라이언트로 동작하므로 이러한 절차가 적용되지 않습니다.  
 
- Coho Vineyard & Winery에서는 방문자 센터를 개설할 예정이며 Windows Embedded를 실행하여 대화형 프레젠테이션을 실행하는 키오스크에 관심을 가지고 있습니다. 새 방문자 센터로 사용할 건물은 IT 부서에서 가깝지 않으므로 원격으로 키오스크를 관리할 수 있는 것이 중요합니다. 대화형 프레젠테이션을 실행하는 소프트웨어를 설치하는 것 외에도 이러한 장치에서 최신 맬웨어 방지 소프트웨어를 실행하여 회사 보안 정책을 준수해야 합니다. 방문자가 대화형 프레젠테이션을 항상 사용할 수 있도록 하기 위해 방문객 센터가 운영 중인 동안 가동 중지 시간 없이 키오스크를 매일 실행해야 합니다.  
+Coho Vineyard & Winery에서는 방문자 센터를 개설할 예정이며 Windows Embedded를 실행하여 대화형 프레젠테이션을 실행하는 키오스크가 필요합니다. 새 방문자 센터로 사용할 건물은 IT 부서에서 가깝지 않으므로 원격으로 키오스크를 관리해야 합니다. 프레젠테이션을 실행하는 소프트웨어 외에도 이러한 장치에서 최신 맬웨어 방지 소프트웨어를 실행하여 회사 보안 정책을 준수해야 합니다. 키오스크는 방문자 센터가 열려 있는 동안 가동 중지 시간 없이 연중무휴로 실행되어야 합니다.  
 
- Coho Vineyard & Winery에서는 이미 Configuration Manager를 실행하여 네트워크의 장치를 관리합니다. Configuration Manager는 Endpoint Protection을 실행하고 소프트웨어 업데이트와 응용 프로그램을 설치하도록 구성되어 있습니다. 그러나 IT 팀에서는 이전에 Windows Embedded 장치를 관리해 본 적이 없기 때문에 Configuration Manager 관리자인 Jane이 파일럿을 실행하여 회사의 리셉션 로비에 있는 두 키오스크를 관리하고 있습니다. 이러한 장치를 원격으로 관리하는 파일럿이 성공할 경우 방문자 센터 키오스크에 대한 구매 주문이 승인될 수 있습니다.  
+ Coho에서는 이미 Configuration Manager를 실행하여 네트워크의 장치를 관리합니다. Configuration Manager는 Endpoint Protection을 실행하고 소프트웨어 업데이트와 응용 프로그램을 설치하도록 구성되어 있습니다. 그러나 IT 팀에서는 이전에 Windows Embedded 장치를 관리해 본 적이 없기 때문에 Configuration Manager 관리자인 Jane이 파일럿을 실행하여 리셉션 로비에서 두 개의 키오스크를 관리하고 있습니다.   
 
  쓰기 필터를 지원하는 이러한 Windows Embedded 장치를 관리하기 위해 Jane은 Configuration Manager 클라이언트를 설치하고, Endpoint Protection을 사용하여 클라이언트를 보호하고, 대화형 프레젠테이션 소프트웨어를 설치하는 다음과 같은 단계를 수행합니다.  
 
@@ -37,7 +37,7 @@ ms.openlocfilehash: dd97ae9afb2d0ecfc33266267a65f3c3f6d1dd29
 
      자세한 내용은 [System Center Configuration Manager에서 Windows Embedded 장치에 클라이언트 배포 계획](../../../core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)을 참조하세요.  
 
-2.  Configuration Manager 클라이언트를 설치하기 전에 Jane은 Windows Embedded 장치를 위한 새로운 쿼리 기반 장치 컬렉션을 만듭니다. 회사에서는 표준 명명 형식을 사용하여 컴퓨터를 식별하기 때문에 Jane은 컴퓨터 이름의 첫 6자로 Windows Embedded 장치를 고유하게 식별할 수 있습니다. **WEMDVC** Jane은 다음 WQL 쿼리를 사용하여 이 컬렉션을 만듭니다. **select SMS_R_System.NetbiosName from SMS_R_System where SMS_R_System.NetbiosName like "WEMDVC%"**  
+2.  Configuration Manager 클라이언트를 설치하기 전에 Jane은 Windows Embedded 장치를 위한 새로운 쿼리 기반 장치 컬렉션을 만듭니다. 회사에서는 표준 명명 형식을 사용하여 컴퓨터를 식별하기 때문에 Jane은 컴퓨터 이름의 첫&6;자로 Windows Embedded 장치를 고유하게 식별할 수 있습니다. **WEMDVC** Jane은 다음 WQL 쿼리를 사용하여 이 컬렉션을 만듭니다. **select SMS_R_System.NetbiosName from SMS_R_System where SMS_R_System.NetbiosName like "WEMDVC%"**  
 
      이 컬렉션을 통해 다른 장치와 다른 구성 옵션을 갖는 Windows Embedded 장치를 관리할 수 있습니다. Jane은 이 컬렉션을 사용하여 다시 시작을 제어하고, 클라이언트 설정을 갖는 Endpoint Protection을 배포하고, 대화형 프레젠테이션 응용 프로그램을 배포하게 됩니다.  
 
@@ -70,7 +70,7 @@ ms.openlocfilehash: dd97ae9afb2d0ecfc33266267a65f3c3f6d1dd29
 
      Jane은 클라이언트가 설치되고 사이트에 상태를 보내기까지 항상 약간의 시간이 걸린다는 것을 알고 있으므로 기다렸다가 클라이언트가 성공적으로 설치되고 사이트에 할당되어 Windows Embedded 장치용으로 만든 컬렉션의 클라이언트로 표시되는 것을 확인합니다.  
 
-     추가적인 확인으로, Windows Embedded 장치에서 제어판의 Configuration Manager 속성을 확인하고 사이트에서 관리되는 표준 Windows 컴퓨터와 이러한 속성을 비교합니다. 예를 들어 **구성 요소** 탭의 **하드웨어 인벤토리 에이전트** 에는 **사용**이 표시되고, **작업** 탭에는 **응용 프로그램 배포 평가 주기** 및 **검색 데이터 컬렉션 주기**를 포함한 11개의 작업을 사용할 수 있습니다.  
+     추가적인 확인으로, 장치에서 제어판의 Configuration Manager 속성을 확인하고 사이트에서 관리되는 표준 Windows 컴퓨터와 이러한 속성을 비교합니다. 예를 들어 **구성 요소** 탭의 **하드웨어 인벤토리 에이전트** 에는 **사용**이 표시되고, **작업** 탭에는 **응용 프로그램 배포 평가 주기** 및 **검색 데이터 컬렉션 주기**를 포함한 11개의 작업을 사용할 수 있습니다.  
 
      클라이언트가 성공적으로 설치 및 할당되어 배포 지점에서 클라이언트 정책을 받는다는 것을 확인한 후에 Jane은 OEM의 지침을 따라 수동으로 쓰기 필터를 사용하도록 설정합니다.  
 
@@ -182,6 +182,6 @@ ms.openlocfilehash: dd97ae9afb2d0ecfc33266267a65f3c3f6d1dd29
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO3-->
 
 

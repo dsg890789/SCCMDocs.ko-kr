@@ -1,8 +1,8 @@
 ---
-title: "LTSB에 대해 지원되는 구성 | System Center Configuration Manager"
+title: "지원되는 LTSB 구성 | Microsoft 문서"
 description: "System Center Configuration Manager의 장기 서비스 분기에서 작동하는 운영 체제 및 종속 제품을 이해합니다."
 ms.custom: na
-ms.date: 10/12/2016
+ms.date: 1/12/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 275d94b0596f04d2339ffb7aa315b4afdd237678
-ms.openlocfilehash: 25dbdd401d0f6e955e5dcc704a0c756c74c64773
+ms.sourcegitcommit: 12aa9f0a1ad4ce8acf0b914e9911bb50ba887919
+ms.openlocfilehash: 5b2ab25d7f645ea9eada81d241ef14168b017304
 
 
 ---
@@ -48,16 +48,16 @@ ms.openlocfilehash: 25dbdd401d0f6e955e5dcc704a0c756c74c64773
 LTSB에서는 다음 Windows 컴퓨터 운영 체제를 사이트 시스템으로 사용할 수 있습니다.  각 운영 체제는 [사이트 시스템 서버에 대해 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-site-system-servers)의 해당 항목과 동일한 요구 사항 및 제한 사항을 갖습니다.  예를 들어 Windows 2012 R2의 Server Core 설치는 x64 버전이어야 하며, 배포 지점을 호스트하기 위해서만 지원되며, PXE 또는 멀티캐스트를 지원하지 않습니다.
 
 **지원되는 운영 체제:**
-- **Windows Server 2016**
-- **Windows Server 2012**(x64) – Standard, Datacenter
-- **Windows Server 2008 R2 SP1**(x64) – Standard, Enterprise, Datacenter
-- **Windows Server 2008 SP2**(x86, x64) – Standard, Enterprise, Datacenter
-- **Windows 10 Enterprise 2015 LTSB**(x86, x64)
-- **Windows 10 Enterprise 2016 LTSB**(x86, x64)
-- **Windows 8.1**(x86, x64) – Professional, Enterprise
-- **Windows 7 SP1**(x86, x64) – Professional, Enterprise, Ultimate
-- **Windows Server 2012의 Server Core 설치**
-- **Windows Server 2012 R2의 Server Core 설치**  
+- Windows Server 2016
+- Windows Server 2012(x64): Standard, Datacenter
+- Windows Server 2008 R2 SP1(x64): Standard, Enterprise, Datacenter
+- Windows Server 2008 SP2(x86, x64): Standard, Enterprise, Datacenter
+- Windows 10 Enterprise 2015 LTSB(x86, x64)
+- Windows 10 Enterprise 2016 LTSB(x86, x64)
+- Windows 8.1(x86, x64): Professional, Enterprise
+- Windows 7 SP1(x86, x64): Professional, Enterprise, Ultimate
+- Windows Server 2012의 Server Core 설치
+- Windows Server 2012 R2의 Server Core 설치  
 
 ## <a name="client-management"></a>클라이언트 관리
 다음 섹션에서는 LTSB를 사용하여 관리할 수 있는 클라이언트 운영 체제를 식별합니다. LTSB에서는 새 운영 체제를 지원되는 클라이언트로 추가할 수 없습니다.
@@ -66,27 +66,27 @@ LTSB에서는 다음 Windows 컴퓨터 운영 체제를 사이트 시스템으�
 LTSB를 사용하여 Configuration Manager에 포함된 Configuration Manager 클라이언트 소프트웨어를 통해 다음 Windows 컴퓨터 운영 체제를 관리할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법](/sccm/core/clients/deploy/deploy-clients-to-windows-computers)을 참조하세요.
 
 **지원되는 운영 체제:**
-- **Windows Server 2016**
-- **Windows Server 2012 R2**(x64) – Standard, Datacenter(참고 1)
-- **Windows Server 2012**(x64) – Standard, Datacenter(참고 1)
-- **Windows Storage Server 2012 R2**(x64)
-- **Windows Storage Server 2012**(x64)
-- **Windows Server 2008 R2 SP1**(x64) – Standard, Enterprise, Datacenter(참고 1)
-- **Windows Storage Server 2008 R2**(x86, x64) - Workgroup, Standard, Enterprise
-- **Windows Server 2008 SP2**(x86, x64) - Standard, Enterprise, Datacenter(참고 1)
-- **Windows 10 Enterprise 2015 LTSB**(x86, x64)
-- **Windows 10 Enterprise 2016 LTSB**(x86, x64)
-- **Windows 8.1**(x86, x64) – Professional, Enterprise
-- **Windows 7 SP1**(x86, x64) – Professional, Enterprise, Ultimate
-- **Windows Server 2012 R2의 Server Core 설치**(x64)(참고 2)
-- **Windows Server 2012의 Server Core 설치**(x64)(참고 2)
-- **Windows Server 2008 R2 SP1의 Server Core 설치**(x64)
-- **Windows Server 2008 SP2의 Server Core 설치**(x86, x64)
+- Windows Server 2016
+- Windows Server 2012 R2(x64): Standard, Datacenter(참고 1)
+- Windows Server 2012(x64): Standard, Datacenter(참고 1)
+- Windows Storage Server 2012 R2(x64)
+- Windows Storage Server 2012(x64)
+- Windows Server 2008 R2 SP1(x64): Standard, Enterprise, Datacenter(참고 1)
+- Windows Storage Server 2008 R2(x86, x64): Workgroup, Standard, Enterprise
+- Windows Server 2008 SP2(x86, x64): Standard, Enterprise, Datacenter(참고 1)
+- Windows 10 Enterprise 2015 LTSB(x86, x64)
+- Windows 10 Enterprise 2016 LTSB(x86, x64)
+- Windows 8.1(x86, x64): Professional, Enterprise
+- Windows 7 SP1(x86, x64): Professional, Enterprise, Ultimate
+- Windows Server 2012 R2의 Server Core 설치(x64)(참고 2)
+- Windows Server 2012의 Server Core 설치(x64)(참고 2)
+- Windows Server 2008 R2 SP1의 Server Core 설치(x64)
+- Windows Server 2008 SP2의 Server Core 설치(x86, x64)
 
 **(참고 1)** Datacenter 릴리스는 Configuration Manager용으로 지원되지만 인증되지는 않았습니다.  
-**(참고 2)** 클라이언트 강제 설치를 지원하려면 이 운영 체제 버전을 실행하는 컴퓨터에서 파일 및 저장소 서비스 서버 역할용으로 파일 서버 역할 서비스를 실행해야 합니다. Server Core 컴퓨터에 Windows 기능을 설치하는 방법에 대한 자세한 내용은 Windows Server 2012 TechNet 라이브러리에서 Server Core 서버에 서버 역할 및 기능 설치를 참조하세요.
+**(참고 2)** 클라이언트 강제 설치를 지원하려면 이 운영 체제 버전을 실행하는 컴퓨터에서 파일 및 저장소 서비스 서버 역할용으로 파일 서버 역할 서비스를 실행해야 합니다. Server Core 컴퓨터에 Windows 기능을 설치하는 방법에 대한 자세한 내용은 Windows Server 2012 TechNet 라이브러리에서 [Server Core 서버에 서버 역할 및 기능 설치](https://technet.microsoft.com/library/jj574158(v=ws.11).aspx)를 참조하세요.
 
-### <a name="windows-embedded"></a>Windows Embedded:
+### <a name="windows-embedded"></a>Windows Embedded
 장치에 클라이언트 소프트웨어를 설치하면 LTSB를 사용하여 다음 Windows Embedded 장치를 관리할 수 있습니다.  자세한 내용은 [System Center Configuration Manager에서 Windows Embedded 장치에 클라이언트 배포 계획](/sccm/core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices)을 참조하세요.
 
 **요구 사항 및 제한 사항:**  
@@ -97,32 +97,32 @@ LTSB를 사용하여 Configuration Manager에 포함된 Configuration Manager �
 
     -   강화된 쓰기 필터(EWF)    
 
-    -   RAM 파일 기반 쓰기 필터(FBWF)    
+    -   RAM FBWF(파일 기반 쓰기 필터)    
 
     -   통합 쓰기 필터(UWF)  
 
 -   Windows Embedded 장치에는 응용 프로그램 카탈로그가 지원되지 않습니다.  
 
--   Windows XP를 기반으로 하는 Windows Embedded 장치에서는 검색된 맬웨어를 모니터링할 수 있으므로 임베디드 장치에 Microsoft Windows WMI 스크립팅 패키지를 설치해야 합니다. 이 패키지를 설치하려면 Windows Embedded Target Designer를 사용합니다. 이 경우 **WBEMDISP.DLL** 및 **WBEMDISP.TLB** 파일이 있고 임베디드 장치의 **%windir%\System32\WBEM** 폴더에 등록되어 있어야 검색된 맬웨어가 보고됩니다.  
+-   Windows XP를 기반으로 하는 Windows Embedded 장치에서는 검색된 맬웨어를 모니터링할 수 있으므로 임베디드 장치에 Microsoft Windows WMI 스크립팅 패키지를 설치해야 합니다. 이 패키지를 설치하려면 Windows Embedded Target Designer를 사용합니다. 이 경우 *WBEMDISP.DLL* 및 *WBEMDISP.TLB* 파일이 있고 포함된 장치의 %windir%\System32\WBEM 폴더에 등록되어 있어야 검색된 맬웨어가 보고됩니다.  
 
 **지원되는 운영 체제:**  
--   **Windows 10 Enterprise 2016 LTSB**(x86, x64)  
--   **Windows 10 Enterprise 2015 LTSB**(x86, x64)  
--   **Windows Embedded 8.1 Industry**(x86, x64)    
--   **Windows Thin PC**(x86, x64)    
--   **Windows Embedded POSReady 7**(x86, x64)    
--   **Windows Embedded Standard 7 SP1**(x86, x64)    
--   **Windows Embedded POSReady 2009**(x86)   
--   **Windows Embedded Standard 2009**(x86)  
+-   Windows 10 Enterprise 2016 LTSB(x86, x64)  
+-   Windows 10 Enterprise 2015 LTSB(x86, x64)  
+-   Windows Embedded 8.1 Industry(x86, x64)    
+-   Windows Thin PC(x86, x64)    
+-   Windows Embedded POSReady 7(x86, x64)    
+-   Windows Embedded Standard 7 SP1(x86, x64)    
+-   Windows Embedded POSReady 2009(x86)   
+-   Windows Embedded Standard 2009(x86)  
 
 ### <a name="windows-ce"></a>Windows CE  
  Configuration Manager와 함께 제공되는 Configuration Manager 모바일 장치 레거시 클라이언트에서 Windows CE 장치를 관리할 수 있습니다.  
 
-**요구 사항 및 제한 사항**  
+**요구 사항 및 제한 사항:**  
 
--   모바일 장치 클라이언트를 설치하려면 0.78MB의 저장소 공간이 필요합니다. 모바일 장치 로깅을 위해서는 256KB까지의 추가 저장소 공간이 필요할 수 있습니다.    
+-   모바일 장치 클라이언트를 설치하려면 0.78MB의 저장소 공간이 필요합니다. 모바일 장치에서 로그인하려면 최대 256KB의 추가 저장소 공간이 필요할 수 있습니다.    
 
--   이러한 모바일 장치의 기능은 플랫폼 및 클라이언트 유형별로 달라집니다. Configuration Manager에서 모바일 장치 레거시 클라이언트에 대해 지원하는 관리 기능에 대한 자세한 내용은 [System Center Configuration Manager용 장치 관리 솔루션 선택](/sccm/core/plan-design/choose-a-device-management-solution)을 참조하세요.  
+-   이러한 모바일 장치의 기능은 플랫폼 및 클라이언트 유형별로 달라집니다. Configuration Manager에서 모바일 장치 레거시 클라이언트에 대해 지원하는 관리 기능 종류에 대한 자세한 내용은 [System Center Configuration Manager용 장치 관리 솔루션 선택](/sccm/core/plan-design/choose-a-device-management-solution)을 참조하세요.  
 
 **지원되는 운영 체제:**  
 
@@ -143,23 +143,23 @@ LTSB를 사용하여 Configuration Manager에 포함된 Configuration Manager �
 ### <a name="mac-computers"></a>Mac 컴퓨터  
  LTSB를 사용하여 Mac용 Configuration Manager 클라이언트에서 Mac OS X 컴퓨터를 관리할 수 있습니다.
 
-Mac 클라이언트 설치 패키지는 Configuration Manager 미디어와 함께 제공되지 않습니다. [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkID=525184)에서 추가 운영 체제용 클라이언트 다운로드의 일부로 다운로드할 수 있습니다.  
+Mac 클라이언트 설치 패키지는 Configuration Manager 미디어와 함께 제공되지 않습니다. [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkID=525184)에서 "추가 운영 체제용 클라이언트" 다운로드의 일부로 다운로드할 수 있습니다.  
 
-Mac 운영 체제에 대한 지원은 이 섹션에 나열된 운영 체제로 제한되며, 현재 분기에 대한 Mac 클라이언트 설치 패키지의 이후 업데이트에서 지원될 수 있는 추가 운영 체제를 포함하지 않습니다.
+Mac 운영 체제에 대한 지원은 이 섹션에 나열된 운영 체제로 제한됩니다. 현재 분기에 대한 Mac 클라이언트 설치 패키지의 이후 업데이트에서 지원될 수 있는 추가 운영 체제는 지원에 포함되지 않습니다.
 
 자세한 내용은 [System Center Configuration Manager에서 Mac에 클라이언트를 배포하는 방법](/sccm/core/clients/deploy/deploy-clients-to-macs)을 참조하세요.
 
 **지원되는 버전:**  
--   **Mac OS X 10.9**(Mavericks)  
--   **Mac OS X 10.10**(Yosemite)  
--   **Mac OS X 10.11**(El Capitan)  
+-   Mac OS X 10.9(Mavericks)  
+-   Mac OS X 10.10(Yosemite)  
+-   Mac OS X 10.11(El Capitan)  
 
 ## <a name="linux-and-unix-servers"></a>Linux 및 UNIX 서버
 LTSB를 사용하여 Linux 및 UNIX용 Configuration Manager 클라이언트에서 Linux 및 UNIX 서버를 관리할 수 있습니다.
 
-Linux 및 UNIX 클라이언트 설치 패키지는 Configuration Manager 미디어와 함께 제공되지 않습니다. [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkID=525184)에서 추가 운영 체제용 클라이언트 다운로드의 일부로 다운로드할 수 있습니다. 클라이언트 설치 패키지 외에도 클라이언트 다운로드에는 각 컴퓨터의 클라이언트 설치를 관리하는 install 스크립트가 들어 있습니다.
+Linux 및 UNIX 클라이언트 설치 패키지는 Configuration Manager 미디어와 함께 제공되지 않습니다. [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkID=525184)에서 "추가 운영 체제용 클라이언트" 다운로드의 일부로 다운로드할 수 있습니다. 클라이언트 설치 패키지 외에도 클라이언트 다운로드에는 각 컴퓨터의 클라이언트 설치를 관리하는 install 스크립트가 들어 있습니다.
 
-Linux 및 UNIX 운영 체제에 대한 지원은 이 섹션에 나열된 운영 체제로 제한되며, 현재 분기에 대한 Linux 및 UNIX 클라이언트 패키지의 이후 업데이트에서 지원될 수 있는 추가 운영 체제를 포함하지 않습니다.
+Linux 및 UNIX 운영 체제에 대한 지원은 이 섹션에 나열된 운영 체제로 제한됩니다. 현재 분기에 대한 Linux 및 UNIX 클라이언트 패키지의 이후 업데이트에서 지원될 수 있는 추가 운영 체제는 지원에 포함되지 않습니다.
 
 **요구 사항 및 제한 사항:**  
 
@@ -266,18 +266,18 @@ Linux 및 UNIX 운영 체제에 대한 지원은 이 섹션에 나열된 운영 
 |버전 14.04 LTS x64|ccm-Universalx64.&lt;빌드\>.tar|  
 
 ### <a name="exchange-server-connector"></a>Exchange Server 커넥터
- LTSB에서는 클라이언트 소프트웨어를 설치하지 않고 Exchange Sever에 연결하는 장치에 대해 제한적인 관리를 지원합니다. 자세한 내용은 [System Center Configuration Manager와 Exchange를 사용하여 모바일 장치 관리](/sccm/mdm/deploy-use/manage-mobile-devices-with-exchange-activesync)를 참조하세요.
+ LTSB에서는 클라이언트 소프트웨어를 설치하지 않고 Exchange Sever 인스턴스에 연결하는 장치에 대해 제한적인 관리를 지원합니다. 자세한 내용은 [System Center Configuration Manager와 Exchange를 사용하여 모바일 장치 관리](/sccm/mdm/deploy-use/manage-mobile-devices-with-exchange-activesync)를 참조하세요.
 
  **요구 사항 및 제한 사항:**  
 
--   Configuration Manager에서는 Exchange Server 또는 Exchange Online을 실행 중인 서버에 연결하는 EAS(Exchange ActiveSync) 사용 가능 장치에 대해 Exchange Server 커넥터를 사용하는 경우 모바일 장치용으로 제한적인 관리 기능을 제공합니다.  
+-   Configuration Manager는 모바일 장치에 대해 제한적인 관리 기능을 제공합니다. Exchange Server 또는 Exchange Online을 실행하는 서버에 연결하는 EAS(Exchange Active Sync) 사용 가능 장치에 대해 Exchange Server 커넥터를 사용하는 경우 제한적인 관리 기능을 사용할 수 있습니다.  
 
 -   Exchange Server 커넥터가 관리하는 모바일 장치에 대해 Configuration Manager가 지원하는 관리 기능에 대한 자세한 내용은 [System Center Configuration Manager에 대한 장치 관리 솔루션 선택](/sccm/core/plan-design/choose-a-device-management-solution)을 참조하세요.  
 
 **Exchange Server의 지원되는 버전:**  
--   **Exchange Server 2010 SP1**  
--   **Exchange Server 2010 SP2**  
--   **Exchange Server 2013**  
+-   Exchange Server 2010 SP1  
+-   Exchange Server 2010 SP2  
+-   Exchange Server 2013  
 
 > [!NOTE]
 > LTSB는 Exchange Online(Office 365)과 같은 온라인 서비스를 통해 연결하는 장치 관리를 지원하지 않습니다.
@@ -287,40 +287,42 @@ Linux 및 UNIX 운영 체제에 대한 지원은 이 섹션에 나열된 운영 
 LTSB는 다음 운영 체제에서 Configuration Manager 콘솔을 실행하도록 지원합니다. 콘솔을 호스트하는 각 컴퓨터에 최소 .NET Framework 버전 4.5.2가 있어야 합니다(.NET Framework 4.6이 필요한 Windows 10 제외).
 
 **지원되는 운영 체제:**
-- **Windows Server 2016**
-- **Windows Server 2012 R2**(x64) – Standard, Datacenter
-- **Windows Server 2012**(x64) – Standard, Datacenter
-- **Windows Server 2008 R2 SP1**(x64) – Standard, Enterprise, Datacenter
-- **Windows Server 2008 SP2**(x86, x64) – Standard, Enterprise, Datacenter
-- **Windows 10 Enterprise 2016 LTSB**(x86, x64)
-- **Windows 10 Enterprise 2015 LTSB**(x86, x64)
-- **Windows 8.1**(x86, x64) – Professional, Enterprise Windows 7 SP1**(x86, x64) – Professional, Enterprise, Ultimate
+- Windows Server 2016
+- Windows Server 2012 R2(x64): Standard, Datacenter
+- Windows Server 2012(x64): Standard, Datacenter
+- Windows Server 2008 R2 SP1(x64): Standard, Enterprise, Datacenter
+- Windows Server 2008 SP2(x86, x64): Standard, Enterprise, Datacenter
+- Windows 10 Enterprise 2016 LTSB(x86, x64)
+- Windows 10 Enterprise 2015 LTSB(x86, x64)
+- Windows 8.1(x86, x64): Professional, Enterprise
+- Windows 7 SP1(x86, x64): Professional, Enterprise, Ultimate
+
 
 ## <a name="sql-server-versions-supported-for-the-site-database-and-reporting-point"></a>사이트 데이터베이스 및 보고 지점에 대해 지원되는 SQL Server 버전
 LTSB는 다음 SQL Server 버전에서 사이트 데이터베이스 및 보고 지점을 호스트하도록 지원합니다. 지원되는 각 버전에서 현재 분기에 대한 [SQL Server 버전 지원](/sccm/core/plan-design/configs/support-for-sql-server-versions)에 표시되는 것과 동일한 구성 요구 사항 및 제한 사항이 LTSB에 적용됩니다.  여기에는 SQL Server 클러스터 또는 SQL Server AlwaysOn 가용성 그룹의 사용이 포함됩니다.  
 
 **지원되는 버전:**
 
-- **SQL Server 2016** - Standard, Enterprise
-- **SQL Server 2014 SP2** – Standard, Enterprise
-- **SQL Server 2014 SP1** – Standard, Enterprise
-- **SQL Server 2012 SP3** – Standard, Enterprise
-- **SQL Server 2012 SP2** – Standard, Enterprise
-- **SQL Server 2008 R2 SP3** – Standard, Enterprise, Datacenter
-- **SQL Server 2016 Express**
-- **SQL Server 2014 Express SP2**
-- **SQL Server 2014 Express SP1**
-- **SQL Server 2012 Express SP3**
-- **SQL Server 2012 Express SP2**
+- SQL Server 2016: Standard, Enterprise
+- SQL Server 2014 SP2: Standard, Enterprise
+- SQL Server 2014 SP1: Standard, Enterprise
+- SQL Server 2012 SP3: Standard, Enterprise
+- SQL Server 2012 SP2: Standard, Enterprise
+- SQL Server 2008 R2 SP3: Standard, Enterprise, Datacenter
+- SQL Server 2016 Express
+- SQL Server 2014 Express SP2
+- SQL Server 2014 Express SP1
+- SQL Server 2012 Express SP3
+- SQL Server 2012 Express SP2
 
 ## <a name="support-for-active-directory-domains"></a>Active Directory 도메인 지원
 모든 LTSB 사이트 시스템은 지원되는 Windows Active Directory 도메인의 구성원이어야 합니다. Active Directory 도메인 지원은 [Active Directory 도메인 지원](/sccm/core/plan-design/configs/support-for-active-directory-domains)에 표시되는 것과 동일한 요구 사항 및 제한 사항을 갖지만 다음 도메인 기능 수준으로 제한됩니다.
 
 **지원되는 수준:**
-- **Windows Server 2008**
-- **Windows Server 2008 R2**
-- **Windows Server 2012**
-- **Windows Server 2012 R2**
+- Windows Server 2008
+- Windows Server 2008 R2
+- Windows Server 2012
+- Windows Server 2012 R2
 
 ## <a name="additional-support-topics-that-apply-to-the-long-term-servicing-branch"></a>장기 서비스 지점에 적용되는 추가 지원 항목
 다음 현재 분기 항목의 정보는 LTSB에 적용됩니다.
@@ -333,6 +335,6 @@ LTSB는 다음 SQL Server 버전에서 사이트 데이터베이스 및 보고 �
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

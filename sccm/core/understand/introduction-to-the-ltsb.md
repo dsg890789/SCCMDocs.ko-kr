@@ -1,8 +1,8 @@
 ---
-title: "장기 서비스 분기 소개 | System Center Configuration Manager"
+title: "장기 서비스 분기 소개 | Microsoft 문서"
 description: "System Center Configuration Manager의 장기 서비스 분기에 대해 알아봅니다."
 ms.custom: na
-ms.date: 10/12/2016
+ms.date: 1/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 2a45cfb3e00d8078fbf45bdc8a2668b7dd0a62c6
-ms.openlocfilehash: 926d1b1299e7851bd1d9168237859c5cd7a65abe
+ms.sourcegitcommit: a86546eb513a2ef6f95013178b141fb1833ea8ab
+ms.openlocfilehash: fa4d7dd2e1edbbc0b136ebfc27560f20ab63c12e
 
 
 ---
@@ -55,7 +55,7 @@ LTSB 사이트를 설치하는 방법에 대한 자세한 내용은 [장기 서�
 
 - 새로운 기능에 대한 업데이트를 받지 않습니다.
 - Microsoft Intune 구독 추가를 지원하지 않으며, 이로 인해 다음을 사용할 수 없습니다.
-  - 하이브리드 MDM 구성에서 Intune을 사용할 수 없음
+  - 하이브리드 MDM(모바일 장치 관리) 구성에서 Intune을 사용할 수 없음
   - 온-프레미스 MDM을 사용할 수 없음
 -   Windows 10 서비스 대시보드 및 서비스 계획의 사용을 지원하지 않으며, Windows 10 CB(현재 분기) 및 CBB(비즈니스용 현재 분기)도 지원하지 않습니다.
 - Windows 10 LTSB 및 Windows Server의 이후 릴리스를 지원하지 않음
@@ -72,25 +72,25 @@ LTSB에는 이러한 기능에 대한 지원이 포함되지 않아도 일부 �
 ## <a name="documentation-for-the-ltsb"></a>LTSB에 대한 문서
 LTSB는 버전 1606 현재 분기를 기반으로 하기 때문에 LTSB와 관련해서 사용되는 문서는 [현재 분기에 적용되는 온라인 문서](https://docs.microsoft.com/sccm/)로, 다음 항목에 설명된 LTSB 관련 주의 사항과 제한 사항을 포함합니다.  
 
--   [장기 서비스 분기 소개](introduction-to-the-ltsb.md) - (이 항목)
+-   [장기 서비스 분기 소개](introduction-to-the-ltsb.md): (이 항목)
 
--   [사용해야 하는 Configuration Manager 분기](which-branch-should-i-use.md) – 요구에 맞는 최상의 분기를 설치할 수 있도록 다양한 System Center Configuration Manager 분기에 대한 정보입니다.
+-   [사용해야 하는 Configuration Manager 분기](which-branch-should-i-use.md): 요구에 맞는 최상의 분기를 설치할 수 있도록 다양한 System Center Configuration Manager 분기에 대한 정보입니다.
 
--   [장기 서비스 분기 설치](install-the-ltsb.md) - 새 LTSB 사이트를 설치하거나 System Center 2012 Configuration Manager 사이트를 LTSB로 업그레이드하는 방법입니다.
+-   [장기 서비스 분기 설치](install-the-ltsb.md) 새 LTSB 사이트를 설치하거나 System Center 2012 Configuration Manager 사이트를 LTSB로 업그레이드하는 방법입니다.
 
--   [장기 서비스 분기를 현재 분기로 업그레이드](convert-to-current-branch.md) - LTSB 설치를 현재 분기 설치로 변환하는 방법입니다.
+-   [장기 서비스 분기를 현재 분기로 업그레이드](convert-to-current-branch.md): LTSB 설치를 현재 분기 설치로 변환하는 방법입니다.
 
--   [System Center Configuration Manager의 라이선스 및 분기](learn-more-editions.md) – System Center Configuration Manager의 Software Assurance 및 관련 라이선스 요구 사항에 대한 정보입니다.
--   [장기 서비스 분기에 대해 지원되는 구성](supported-configurations-for-ltsb.md) - LTSB에 사용할 수 있는 운영 체제 및 SQL Server 등의 종속 제품에 대한 버전 및 요구 사항입니다.
+-   [System Center Configuration Manager의 라이선스 및 분기](learn-more-editions.md): System Center Configuration Manager의 Software Assurance 및 관련 라이선스 요구 사항에 대한 정보입니다.
+-   [장기 서비스 분기에 대해 지원되는 구성](supported-configurations-for-ltsb.md): LTSB에 사용할 수 있는 운영 체제 및 SQL Server 등의 종속 제품에 대한 버전 및 요구 사항입니다.
 
 
 특정 문서가 적용되는 분기를 구분하려면 다음 가이드를 사용합니다.  
 -   제목이 *적용 대상: 현재 분기*인 항목은 현재 분기와 장기 서비스 분기 둘 다에 적용됩니다. 단, 항목의 일부 내용은 최신 버전의 현재 분기에만 적용될 수도 있습니다.
 
--   LTSB에 적용되지 않는 항목 부분을 확인하려면 버전 1606 이후의 현재 분기에 도입된 기능과 변경 내용은 '버전 1610부터 시작' 등의 단어로 식별됩니다. 이러한 기능은 1606 버전 이후의 현재 분기에서 도입되었으므로 LTSB에서 사용할 수 없습니다.
+-   LTSB에 적용되지 않는 항목 부분을 확인하려면 버전 1606 이후의 현재 분기에 도입된 기능과 변경 내용은 *버전 1610부터 시작* 등의 단어로 식별됩니다. 이러한 기능은 1606 버전 이후의 현재 분기에서 도입되었으므로 LTSB에서 사용할 수 없습니다.
 
 ### <a name="similarities-between-the-current-branch-and-the-ltsb"></a>현재 분기와 LTSB 간의 유사점
-LTSB는 현재 분기 버전 1606을 기반으로 하기 때문에(Intune 통합, 클라우드 관련 기능 등의 몇 가지 예외 포함), 두 분기에 대한 배포 계획, 구성 및 관리 작업은 대부분 동일합니다.
+LTSB는 현재 분기 버전 1606을 기반으로 하기 때문에(Intune 통합, 클라우드 관련 기능 등의 몇 가지 예외 포함), 두 분기의 배포, 구성 및 관리 계획에 사용되는 작업은 대부분 동일합니다.
 
 예를 들어 LTSB는 현재 분기와 동일한 사이트 수, 사이트 유형, 클라이언트 및 일반 인프라를 지원합니다. 따라서 현재 분기에 대한 사이트 및 계층 구조 계획 및 디자인 항목에 있는 지침을 사용합니다. 마찬가지로, 소프트웨어 업데이트 또는 운영 체제 배포와 같이 두 분기에서 모두 지원하는 기능의 경우 현재 분기 문서의 해당 섹션에 있는 지침을 사용합니다. 단, 1606 버전 이후의 현재 분기에서 도입된 변경 내용에 액세스하지 않도록 주의합니다.
 
@@ -102,13 +102,13 @@ Configuration Manager 사이트에 대한 버전 정보를 보면 분기도 확�
 
 사이트 분기를 LTSB 또는 현재 분기로 확인하려면 콘솔에서 **관리** > **사이트 구성** > **사이트**으로 이동한 다음 **계층 설정**을 엽니다.  현재 분기로 변환하는 옵션이 있고 활성 상태이면 사이트에서 LTSB 버전을 실행합니다. 사이트에서 현재 분기를 실행하는 경우에는 이 옵션이 회색으로 표시됩니다.
 
-다양한 Configuration Manager 버전에 대한 자세한 내용은 [Configuration Manager용 업데이트](/sccm/core/servers/manage/updates) 항목에서 **기준 및 업데이트 버전**을 참조하세요.
+다양한 Configuration Manager 버전에 대한 자세한 내용은 [Configuration Manager용 업데이트](/sccm/core/servers/manage/updates) 항목에서 "기준 및 업데이트 버전"을 참조하세요.
 
 ## <a name="exceptions-for-using-the-ltsb"></a>LTSB 사용에 대한 예외
 ### <a name="updates-and-servicing-of-the-ltsb"></a>LTSB 업데이트 및 서비스
 LTSB에서는 중요 보안 업데이트만 콘솔 내 업데이트로 제공됩니다.
 
-그러나 후속 현재 분기 릴리스에 대한 정기 업데이트 정보가 콘솔에 표시됩니다. 이러한 업데이트는 LTSB에 제공되지 않으므로 다운로드되지 않으며 설치할 수 없습니다.
+후속 현재 분기 릴리스에 대한 정기 업데이트 정보가 콘솔에 표시되지만 LTSB에는 제공되지 않습니다. 다운로드되지 않으며 설치할 수 없습니다.
 
 중요한 보안 픽스에 대해 콘솔 내 업데이트를 지원하려면 LTSB 사이트에서 [서비스 연결 지점](/sccm/core/servers/deploy/configure/about-the-service-connection-point)을 사용해야 합니다. 현재 분기와 마찬가지로 이 사이트 시스템 역할을 오프라인 또는 온라인 모드로 구성할 수 있습니다. LTSB는 현재 분기와 동일한 원격 분석 및 사용 현황 데이터를 수집하고 제출합니다.
 
@@ -117,7 +117,7 @@ LTSB는 현재 분기에 대해 문서화된 대로 핫픽스 설치 관리자 �
 업데이트 및 서비스에 대한 일반적인 내용은 [Configuration Manager용 업데이트](/sccm/core/servers/manage/updates)를 참조하세요.
 
 ### <a name="changes-for-site-expansion-and-the-cdlatest-folder"></a>사이트 확장 및 CD.Latest 폴더에 대한 변경 내용
-LTSB를 실행하고 새 중앙 관리 사이트를 설치하여 독립 실행형 기본 사이트를 확장하는 경우 버전 1606 기준 미디어의 설치 프로그램 및 소스 파일을 사용해야 합니다.  현재 분기의 경우 CD.Latest 폴더에서 설치 프로그램을 실행하고 소스 파일을 사용합니다.
+LTSB를 실행하고 새 중앙 관리 사이트를 설치하여 독립 실행형 기본 사이트를 확장하는 경우 버전 1606 기준 미디어의 설치 프로그램 및 소스 파일을 사용해야 합니다.  현재 분기의 경우 설치 프로그램을 실행하고 CD.Latest 폴더의 원본 파일을 사용합니다.
 
 CD.Latest 폴더에서 사이트 확장을 위해 설치 프로그램을 실행하지 않더라도 CD.Latest 폴더는 사이트 복구에 계속 사용되며, 첫 번째 LTSB 사이트가 중앙 관리 사이트인 경우 새 하위 기본 사이트를 설치할 때도 사용됩니다.
 
@@ -126,6 +126,6 @@ CD.Latest 폴더에 대한 자세한 내용은 [CD.Latest 폴더](/sccm/core/ser
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 
