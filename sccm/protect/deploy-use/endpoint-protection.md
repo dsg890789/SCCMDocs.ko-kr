@@ -2,7 +2,7 @@
 title: "Endpoint Protection | Microsoft 문서"
 description: "Configuration Manager 계층 구조에서 클라이언트 컴퓨터에 대한 맬웨어 방지 정책 및 Windows 방화벽 보안을 관리하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 12/9/2016
+ms.date: 01/17/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,12 +16,12 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 9fcbc0bb9c8ccd4265381ca4db7a363c8ae3b54a
-ms.openlocfilehash: 59313bd6f76433782a79ab3ee9d6240f767fbd76
+ms.sourcegitcommit: 0fa837c68eb073d2ceaf48c938137a94141a102e
+ms.openlocfilehash: dd08e9ae6827e5f59eaf3414adbcc8667bc75140
 
 
 ---
-# <a name="endpoint-protection-in-system-center-configuration-manager"></a>System Center Configuration Manager의 Endpoint Protection 구성
+# <a name="endpoint-protection"></a>Endpoint Protection
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -108,10 +108,21 @@ Configuration Manager의 1606 버전부터(현재 분기) Endpoint Protection은
 
  이러한 제품은 Configuration Manager 콘솔에서 관리할 수 없습니다. 그러나 설치 파일이 포함된 System Center Operations Manager 관리 팩을 사용하면 Operations Manager로 Linux용 클라이언트를 관리할 수 있습니다.  
 
+### <a name="how-to-get-the-endpoint-protection-client-for-mac-computers-and-linux-servers"></a>Mac 컴퓨터 및 Linux 서버에 대한 Endpoint Protection 클라이언트를 가져오는 방법
+
+Mac 컴퓨터와 Linux 서버에 대한 Endpoint Protection 클라이언트 소프트웨어 및 설명서를 포함하는 이미지 파일을 다운로드하려면 다음 단계를 따르세요.
+1. [Microsoft 볼륨 라이선스 서비스 센터](https://www.microsoft.com/licensing/servicecenter/default.aspx)에 로그인합니다.
+2. 웹 사이트의 위쪽에서 **다운로드 및 키** 탭을 선택합니다.
+3. **System Center Endpoint Protection(현재 분기)** 제품을 필터링합니다.
+4. **다운로드** 링크를 클릭합니다.
+5. 
+              **Continue(계속)**를 클릭합니다. **System Center Endpoint Protection (current branch - version 1606) for Linux OS and Macintosh OS Multilanguage   32/64 bit   1507 MB ISO** 파일을 포함하여 여러 개의 파일이 표시됩니다.
+6. 화살표 아이콘을 클릭하여 파일을 다운로드합니다. 파일 이름은 **SW_DVD5_Sys_Ctr_Endpnt_Prtctn_1606_MultiLang_EptProt_Lin_Mac_MLF_X21-30777.ISO**입니다.
+
  Linux 및 Mac 컴퓨터용 Endpoint Protection 클라이언트를 설치 및 관리하는 방법에 대한 자세한 내용은 **설명서** 폴더에 있는 해당 제품의 설명서를 참조하세요.
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 
