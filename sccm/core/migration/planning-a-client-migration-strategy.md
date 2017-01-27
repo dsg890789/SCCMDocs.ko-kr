@@ -2,7 +2,7 @@
 title: "클라이언트 마이그레이션 계획 | Microsoft 문서"
 description: "원본 계층에서 System Center Configuration Manager 대상 계층으로 클라이언트를 마이그레이션하는 작업에 대해 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/30/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,12 +16,12 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
-ms.openlocfilehash: 11da338af9d7dd4d6f9c5fc1c6c62e277139f852
+ms.sourcegitcommit: ac4576035fda943e38d960dd425d44b7a6ef6a01
+ms.openlocfilehash: b52ca4059dfeed08cabf1f75319da40d6499622f
 
 
 ---
-# <a name="planning-a-client-migration-strategy-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트 마이그레이션 전략 계획
+# <a name="plan-a-client-migration-strategy-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트 마이그레이션 전략 계획
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -36,14 +36,14 @@ ms.openlocfilehash: 11da338af9d7dd4d6f9c5fc1c6c62e277139f852
 -   [마이그레이션 중에 인벤토리 및 준수 데이터 계획](#Planning_for_Inventory_data_migration)  
 
 ##  <a name="a-nameplanningforclientagentmigrationa-plan-to-migrate-clients-to-the-destination-hierarchy"></a><a name="Planning_for_Client_Agent_Migration"></a> 클라이언트를 대상 계층 구조로 마이그레이션하도록 계획  
- 원본 계층의 클라이언트를 마이그레이션하면 클라이언트 컴퓨터의 클라이언트 소프트웨어가 업데이트되어 대상 계층의 제품 버전과 일치하게 됩니다.  
+ 원본 계층의 클라이언트를 마이그레이션하면 클라이언트 컴퓨터의 클라이언트 소프트웨어가 업그레이드되어 대상 계층의 제품 버전과 일치하게 됩니다.  
 
 -   **Configuration Manager 2007 원본 계층:** 지원되는 Configuration Manager 버전을 실행하는 원본 계층의 클라이언트를 마이그레이션하면 클라이언트 소프트웨어가 대상 계층의 클라이언트 버전으로 업그레이드됩니다.  
 
 -   **System Center 2012 Configuration Manager 이상 원본 계층:** 제품 버전이 같은 계층 간에 클라이언트를 마이그레이션하면 클라이언트 소프트웨어가 변경되거나 업그레이드되지 않습니다. 대신 클라이언트가 원본 계층에서 대상 계층의 사이트로 재할당됩니다.  
 
     > [!NOTE]  
-    >  계층의 제품 버전이 대상 계층으로의 마이그레이션을 지원하지 않는 경우 원본 계층의 모든 사이트와 클라이언트를 호환되는 제품 버전으로 업그레이드하십시오. 원본 계층이 지원되는 제품 버전으로 업그레이드되면 계층 간에 마이그레이션할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 마이그레이션을 수행하기 위한 필수 조건](../../core/migration/prerequisites-for-migration.md) 항목의 [마이그레이션에 지원되는 Configuration Manager 버전](../../core/migration/prerequisites-for-migration.md#BKMK_SupportedMigrationVersions) 섹션을 참조하세요.  
+    >  계층의 제품 버전이 대상 계층으로의 마이그레이션을 지원하지 않는 경우 원본 계층의 모든 사이트와 클라이언트를 호환되는 제품 버전으로 업그레이드하십시오. 원본 계층이 지원되는 제품 버전으로 업그레이드되면 계층 간에 마이그레이션할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 마이그레이션을 수행하기 위한 필수 조건](../../core/migration/prerequisites-for-migration.md)의 [마이그레이션에 지원되는 Configuration Manager 버전](../../core/migration/prerequisites-for-migration.md#BKMK_SupportedMigrationVersions)을 참조하세요.  
 
 클라이언트 마이그레이션을 계획하려면 다음 정보를 참조하십시오.  
 
@@ -53,11 +53,11 @@ ms.openlocfilehash: 11da338af9d7dd4d6f9c5fc1c6c62e277139f852
 
 -   클라이언트를 마이그레이션하기 전에 마이그레이션 작업을 실행하여 대상 계층의 클라이언트가 사용할 정보를 마이그레이션합니다.  
 
--   업그레이드하는 클라이언트에는 배포 실행 기록이 보존되어 대상 계층에서 배포가 불필요하게 다시 실행되지 않도록 합니다.  
+-   업그레이드하는 클라이언트에는 배포 실행 기록이 보존됩니다. 이 덕분에 대상 계층에서 배포가 불필요하게 다시 실행되지 않습니다.  
 
     -   Configuration Manager 2007 클라이언트의 경우 보급 알림 실행 기록이 보존됩니다.  
 
-    -   System Center 2012 Configuration Manager 또는 System Center Configuration Manager의 클라이언트와 함께 배포 실행 기록이 보존됩니다.  
+    -   System Center 2012 Configuration Manager 또는 System Center Configuration Manager의 클라이언트에 대한 배포 실행 기록이 보존됩니다.  
 
 -   원본 계층의 사이트에서 클라이언트를 선택한 순서대로 마이그레이션할 수 있습니다. 그러나 한 번에 많은 클라이언트를 마이그레이션하는 것보다 제한된 수의 클라이언트를 단계적으로 마이그레이션하는 것이 좋습니다. 단계적으로 마이그레이션하면 새로 업그레이드한 각 클라이언트에서 최초의 전체 인벤토리 및 호환 데이터를 할당된 사이트로 전송할 때 네트워크 대역폭 요구 사항 및 서버 처리를 줄일 수 있습니다.  
 
@@ -105,6 +105,6 @@ Configuration Manager 콘솔에 있는 **관리** 작업 영역의 **마이그�
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 
