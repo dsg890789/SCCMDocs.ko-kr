@@ -2,7 +2,7 @@
 title: "사이트를 설치할 준비 | Microsoft 문서"
 description: "여러 사이트를 설치하는 동안 시간을 절약하고 오류를 방지하려면 이러한 세부 정보를 참조하세요."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 1/11/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
-ms.openlocfilehash: 0534d1eb587cb01f35d811d72ddfe6ceb07e5b7c
+ms.sourcegitcommit: 0d0735c170820259ac8bb6706aac7cc5569a1628
+ms.openlocfilehash: 42a7ae3b3c1064fe7cc7def9fdc3649e0d0829b2
 
 ---
 # <a name="prepare-to-install-system-center-configuration-manager-sites"></a>System Center Configuration Manager 사이트 설치 준비
@@ -25,11 +25,11 @@ ms.openlocfilehash: 0534d1eb587cb01f35d811d72ddfe6ceb07e5b7c
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 하나 이상의 System Center Configuration Manager 사이트의 성공적인 배포를 준비하려면 이 문서를 자세히 이해하고 숙지해야 합니다. 이 단계를 통해 여러 사이트를 설치할 때 시간을 절약할 수 있으며 하나 이상의 사이트를 다시 설치해야 할 경우를 발생시키는 실수를 방지할 수 있습니다.
- > [!TIP]
- >  다음 시나리오는 System Center Configuration Manager 현재 분기 사이트를 설치하는 것과는 유사하지만 구분됩니다.
- > -  **업그레이드**: System Center Configuration Manager를 설치하여 System Center 2012 Configuration Manager에서 **업그레이드**합니다. [System Center Configuration Manager로 업그레이드](../../../../core/servers/deploy/install/upgrade-to-configuration-manager.md)를 참조하세요.
- > -  **업데이트**: 콘솔 내 업데이트를 사용하여 기존 System Center Configuration Manager 사이트에 새 **업데이트 버전**을 설치합니다. [System Center Configuration Manager용 업데이트](../../../../core/servers/manage/updates.md)를 참조하세요.
- > -  **마이그레이션**: 다른 Configuration Manager 계층 구조에서 현재 System Center Configuration Manager 계층 구조로 **데이터를 마이그레이션**하려면 [System Center Configuration Manager로 마이그레이션 계획](../../../../core/migration/planning-for-migration.md)을 참조하세요.
+
+> [!TIP]
+> System Center Configuration Manager 사이트 및 계층 인프라를 관리할 때 *업그레이드*, *업데이트* 및 *설치*라는 용어는 세 가지 별도의 개념을 설명하는 데 사용됩니다. 각 용어가 어떻게 사용되는지 알아보려면 [업그레이드, 업데이트 및 설치 정보](/sccm/core/understand/upgrade-update-install)를 참조하세요.
+
+
 
 
 
@@ -106,7 +106,7 @@ Configuration Manager를 설치하는 동안 중앙 관리 사이트와 각 기�
 
 
 
-Configuration Manager를 설치하는 동안 사이트의 사이트 코드를 입력하려면 3자리 영숫자를 입력해야 합니다. A~Z 문자, 0~9 숫자 또는 이 둘을 조합해서만 사이트 코드를 지정할 수 있습니다. 연속된 문자나 숫자는 사이트 간 통신에 아무런 영향을 미치지 않습니다. 예를 들어 기본 사이트 이름을 ABC로 지정하고 보조 사이트 이름을 DEF로 지정할 필요가 없습니다.
+Configuration Manager를 설치하는 동안 사이트의 사이트 코드를 입력하려면&3;자리 영숫자를 입력해야 합니다. A~Z 문자, 0~9 숫자 또는 이 둘을 조합해서만 사이트 코드를 지정할 수 있습니다. 연속된 문자나 숫자는 사이트 간 통신에 아무런 영향을 미치지 않습니다. 예를 들어 기본 사이트 이름을 ABC로 지정하고 보조 사이트 이름을 DEF로 지정할 필요가 없습니다.
 
 사이트 이름은 사이트의 이름 식별자입니다. 표준 문자인 A~Z, a~z, 0~9 및 하이픈(-)만 사이트 이름에 사용할 수 있습니다.
 > [!IMPORTANT]
@@ -148,6 +148,6 @@ Configuration Manager를 설치하는 동안 사이트의 사이트 코드를 �
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO2-->
 
 
