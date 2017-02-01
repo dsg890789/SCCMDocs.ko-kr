@@ -1,5 +1,5 @@
 ---
-title: "사이트 시스템 역할 설치 | 온-프레미스 MDM | System Center Configuration Manager"
+title: "온-프레미스 MDM에 대한 역할 설치 - Configuration Manager | Microsoft 문서"
 description: "System Center Configuration Manager에서 온-프레미스 모바일 장치 관리를 위한 사이트 시스템 역할을 설치합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: d6a36acc53b8ccd85395a7543cbd0e361d093840
+ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b
+ms.openlocfilehash: 916b971f851f968f6534ac834bd3182cc61614aa
 
 
 ---
@@ -74,6 +74,6 @@ System Center Configuration Manager 온\-프레미스 모바일 장치 관리를
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

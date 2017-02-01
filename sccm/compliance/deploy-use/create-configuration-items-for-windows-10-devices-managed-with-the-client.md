@@ -1,8 +1,8 @@
 ---
-title: "System Center Configuration Manager 클라이언트로 관리되는 Windows 10 장치에 대한 구성 항목을 만드는 방법 | System Center Configuration Manager"
+title: "클라이언트 관리 Windows 10에 대한 구성 항목 만들기 - Configuration Manager | Microsoft 문서"
 description: "System Center Configuration Manager Windows 10 구성 항목을 사용하여 Configuration Manager 클라이언트에서 관리되는 Windows 10 컴퓨터에 대한 설정을 관리할 수 있습니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 11/18/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: d5248e7262f758c2de2a1deaf42282d4e77e3e0c
+ms.sourcegitcommit: 35e48666f4d1a2363304650f960531fd0630a291
+ms.openlocfilehash: 030cc33d98c81f3a6d5dff2d4c011e03fff12dc2
 
 
 ---
@@ -125,7 +125,7 @@ System Center Configuration Manager **Windows 10** 구성 항목을 사용하여
 |**바이러스 방지**|바이러스 백신 소프트웨어를 설치 및 구성해야 합니다.|  
 |**바이러스 방지 서명이 최신임**|장치에서 바이러스 백신 소프트웨어에 대한 서명 파일이 최신이어야 합니다.|  
 
-### <a name="windows-information-protection-formerly-enterprise-data-protection"></a>Windows Information Protection(이전의 엔터프라이즈 데이터 보호)
+### <a name="windows-information-protection"></a>Windows Information Protection
 
 기업에서 직원 소유 장치가 증가됨에 따라 메일, 소셜 미디어, 공용 클라우드 등의 앱 및 서비스를 통해 실수에 의한 데이터 유출의 위험도 증가하며, 이러한 상황은 기업에서 제어할 수 없습니다. 예를 들면 직원이 자신의 개인 메일 계정에서 최신 엔지니어링 그림을 보내거나 제품 정보를 복사하여 트윗에 붙여넣거나 진행 중인 판매 보고서를 해당 공용 클라우드 저장소에 저장하는 경우가 있습니다.
 
@@ -137,6 +137,6 @@ Configuration Manager로 Windows Information Protection을 구성하는 방법�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

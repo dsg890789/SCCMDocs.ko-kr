@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager 클라이언트로 관리되는 장치의 구성 항목 | System Center Configuration Manager"
+title: "클라이언트 관리 장치에 대한 구성 항목 - Configuration Manager | Microsoft 문서"
 description: "System Center Configuration Manager 클라이언트에서 관리되는 Windows 및 Mac 장치를 구성하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 4d8947fc9708c8c6d05a4507ef67501efade91d5
+ms.sourcegitcommit: 35e48666f4d1a2363304650f960531fd0630a291
+ms.openlocfilehash: c0648c8c6ca3b36e2c2cf311bc4ae9edc7e8f906
 
 
 ---
@@ -36,6 +36,6 @@ ms.openlocfilehash: 4d8947fc9708c8c6d05a4507ef67501efade91d5
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

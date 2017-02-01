@@ -1,8 +1,8 @@
 ---
-title: "부팅 이미지 사용자 지정 | Configuration Manager"
+title: "부팅 이미지 사용자 지정 - Configuration Manager | Microsoft 문서"
 description: "Configuration Manager 또는 DISM(배포 이미지 서비스 및 관리) 명령줄 도구를 사용하여 부팅 이미지 사용자 지정하는 몇 가지 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 5b78d68087bb5513723e1cc25291f7776d48f7b5
+ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
+ms.openlocfilehash: ab2ecb64c9c80b4effed79ba08769c99473db0c4
 
 
 ---
@@ -303,6 +303,6 @@ Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deploy
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

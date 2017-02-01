@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager 클라이언트가 설치된 장치의 준수 관리를 위한 일반 작업 | System Center Configuration Manager"
+title: "클라이언트 관리 장치에 대한 일반 준수 관리 작업 - Configuration Manager | Microsoft 문서"
 description: "몇 가지 일반적인 시나리오를 진행하여 System Center Configuration Manager의 준수 설정에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 9be045df8433463d01d6cfca9271f230b5bf991d
+ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
+ms.openlocfilehash: 2012ab5e55da8d707fd668e0163b42fe7d56c72f
 
 
 ---
@@ -113,6 +113,6 @@ ms.openlocfilehash: 9be045df8433463d01d6cfca9271f230b5bf991d
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

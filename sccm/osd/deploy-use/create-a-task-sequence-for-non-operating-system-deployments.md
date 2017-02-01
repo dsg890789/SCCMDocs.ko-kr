@@ -1,5 +1,5 @@
 ---
-title: "비운영 체제 배포에 대한 작업 순서 만들기 | Configuration Manager"
+title: "비운영 체제 배포에 대한 작업 순서 만들기 | Microsoft 문서"
 description: "소프트웨어 배포, 드라이버 업데이트, 사용자 상태 편집 등 운영 체제 배포와 관련이 없는 작업 순서를 만듭니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: bc8ef5912f753031191a677d58d5e88f62b8d36a
+ms.sourcegitcommit: 6bb2bf0a029bc21e9420ac0ba782e8ea21291896
+ms.openlocfilehash: 692e8331f39f7c9ce78a6b710b8990760bf128c4
 
 
 ---
@@ -27,9 +27,9 @@ ms.openlocfilehash: bc8ef5912f753031191a677d58d5e88f62b8d36a
 
 System Center Configuration Manager의 작업 순서는 사용자 환경 내에서 다양한 작업을 자동화하는 데 사용됩니다. 이러한 작업은 주로 운영 체제 배포를 위해 설계되고 테스트됩니다.  Configuration Manager에는 [응용 프로그램 설치](../../apps/understand/introduction-to-application-management.md), [소프트웨어 업데이트 설치](../../sum/understand/software-updates-introduction.md), [구성 설정](../../compliance/understand/ensure-device-compliance.md), 사용자 지정 자동화 등 시나리오에 사용하는 기본 기술인 기타 많은 기능이 있습니다. 또한 [Orchestrator](https://technet.microsoft.com/library/hh237242.aspx) , [서비스 관리 자동화](https://technet.microsoft.com/library/dn469260.aspx) 등 고려해야 하는 기타 Microsoft System Center 자동화 기술도 있습니다.  
 
- 작업 순서의 장점은 유연성에 있으며, 이러한 작업 순서를 사용하여 운영 체제 배포와 독립적으로 클라이언트 설정 구성, 소프트웨어 배포, 드라이버 업데이트, 사용자 환경 편집 및 기타 작업을 수행할 수 있습니다. 개수와 상관없이 작업을 추가하는 사용자 지정 작업 순서를 만들 수 있습니다. 비운영 체제 배포에 대한 사용자 지정 작업 순서의 기본적인 사용은 지원되지만, 보다 복잡한 작업 순서를 개발함에 따라 가능한 모든 구성을 테스트할 방법이 없어 문제가 발생할 경우가 늘어납니다.  
+작업 순서의 장점은 유연성에 있으며, 이러한 작업 순서를 사용하여 운영 체제 배포와 독립적으로 클라이언트 설정 구성, 소프트웨어 배포, 드라이버 업데이트, 사용자 환경 편집 및 기타 작업을 수행할 수 있습니다. 개수와 상관없이 작업을 추가하는 사용자 지정 작업 순서를 만들 수 있습니다. 개수와 상관없이 작업을 추가하는 사용자 지정 작업 순서를 만들 수 있습니다. Configuration Manager에서 비운영 체제 배포에 대한 사용자 지정 작업 순서 사용이 지원됩니다. 그러나 작업 순서로 인해 원치 않거나 일관성이 없는 결과가 발생하는 경우 작업을 간소화하는 방법을 살펴보세요. 여러 작업 순서로 작업을 나누어 더 간단한 단계를 사용하거나 작업 순서를 만들고 테스트하는 단계별 방법을 사용하면 됩니다.
 
- 다음 단계는 비운영 체제 배포 사용자 지정 작업 순서에 사용할 수 있습니다.  
+ 비운영 체제 배포 사용자 지정 작업 순서에 사용할 수 있는 단계는 다음과 같습니다.  
 
 -   [준비 확인](../understand/task-sequence-steps.md#BKMK_CheckReadiness)  
 
@@ -58,6 +58,6 @@ System Center Configuration Manager의 작업 순서는 사용자 환경 내에�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO3-->
 
 

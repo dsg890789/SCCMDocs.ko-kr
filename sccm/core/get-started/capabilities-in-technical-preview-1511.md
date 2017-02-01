@@ -1,8 +1,8 @@
 ---
-title: "System Center Configuration Manager용 Technical Preview 1511의 기능 | Microsoft 문서"
+title: "Technical Preview 1511 Configuration Manager의 기능"
 description: "System Center Configuration Manager용 Technical Preview 버전 1511에서 사용 가능한 기능에 대해 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.technology:
 - configmgr-other
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 3bf44f850722afdb8dfe5922c8ceff11c9b56d08
-ms.openlocfilehash: 8ef43a2f10a7ef1cbb101f6737c606c72ccdce4f
+ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
+ms.openlocfilehash: 2e0338267ea9fdc639d57f93adda1e46aea80eec
 
 ---
 # <a name="capabilities-in-technical-preview-1511-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1511의 기능
@@ -89,7 +89,7 @@ Microsoft가 WSUS(Windows Server Updates Services)를 위한 새로운 Office 36
 
 -   Configuration Manager를 설치하기 전에 SQL Server 가용성 그룹을 만들고 구성해야 합니다.  
 
--   가용성 그룹에는 주 복제본이 하나 있어야 하며 동기 보조 복제본이 2개까지 포함될 수 있습니다.  
+-   가용성 그룹에는 주 복제본이 하나 있어야 하며 동기 보조 복제본이&2;개까지 포함될 수 있습니다.  
 
 -   가용성 그룹에는 끝점이 하나 이상 있어야 합니다.  
 
@@ -114,9 +114,9 @@ Microsoft가 WSUS(Windows Server Updates Services)를 위한 새로운 Office 36
 #### <a name="to-create-a-sql-server-alwayson-availability-group"></a>SQL Server AlwaysOn 가용성 그룹을 만들려면  
 [SQL Server 가용성 그룹 만들기](https://technet.microsoft.com/library/ff878265\(v=sql.120\).aspx) 프로세스는 SQL Server 문서 라이브러리에 설명되어 있습니다.  가용성 그룹을 만들 때는 Configuration Manager와 함께 가용성 그룹을 사용하기 위한 다음 요구 사항을 충족하는지 확인합니다.  
 
--   최대 3개 구성원:  
+-   최대&3;개 구성원:  
 
-    -   주 복제본 1개/보조 복제본 최대 2개  
+    -   주 복제본&1;개/보조 복제본 최대&2;개  
 
     -   보조 복제본은 동기 복제본이어야 함  
 
@@ -208,6 +208,6 @@ SQL Server 가용성 그룹을 사용하는 사이트를 설치하려면 다음�
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

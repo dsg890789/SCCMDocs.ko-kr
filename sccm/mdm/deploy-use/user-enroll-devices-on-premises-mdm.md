@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 사용하여 장치를 등록하는 방법"
+title: "사용자가 온-프레미스 MDM을 사용하여 장치를 등록하는 방법 - Configuration Manager | Microsoft 문서"
 description: "System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 사용하여 장치를 등록하는 방법을 이해합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: e390da9377adfb7f32687c6c01b35a51a3bd495b
+ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
+ms.openlocfilehash: 43a30709473939829d82d822503537d448159a1c
 
 
 ---
@@ -83,6 +83,6 @@ System Center Configuration Manager 온-프레미스 모바일 장치 관리에�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

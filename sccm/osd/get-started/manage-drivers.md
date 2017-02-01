@@ -1,8 +1,8 @@
 ---
-title: "드라이버 관리 | Microsoft 문서"
+title: "드라이버 관리 - Configuration Manager | Microsoft 문서"
 description: "Configuration Manager 드라이버 카탈로그를 사용하여 장치 드라이버를 가져오고, 드라이버를 패키지로 그룹화하고, 이 패키지를 배포 지점에 배포할 수 있습니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 01/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
-ms.openlocfilehash: 361a18b7da8249fc6cccc333f39313a52dd8ab88
+ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
+ms.openlocfilehash: 87ab9925717a307cbda3cea1f2e470ae012fa067
 
 
 ---
@@ -278,6 +278,6 @@ System Center Configuration Manager는 현재 Configuration Manager 환경에서
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

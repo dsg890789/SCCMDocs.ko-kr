@@ -1,5 +1,5 @@
 ---
-title: "클라이언트 모니터링 | Microsoft 문서"
+title: "클라이언트 모니터링 - Configuration Manager | Microsoft 문서"
 description: "System Center Configuration Manager에서 클라이언트를 모니터링하는 방법에 대한 자세한 지침을 가져옵니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: d3b7e917ccf841f8f5687b0afa5acaf151730ba6
+ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b
+ms.openlocfilehash: 85afe010e734d20ae1f1479b3edd166c54cc8fd2
 
 
 ---
@@ -37,7 +37,7 @@ ms.openlocfilehash: d3b7e917ccf841f8f5687b0afa5acaf151730ba6
 
 -   **클라이언트 검사** - 이 상태는 Configuration Manager 클라이언트가 컴퓨터에서 실행하는 정기적으로 평가의 성공 여부를 나타냅니다.  평가에서 컴퓨터를 검사하고 검색된 문제를 수정할 수 있습니다. 자세한 내용은 [클라이언트 검사를 통한 검사 및 수정](#BKMK_ClientHealth)을 참조하세요.  
 
-     Windows 7을 실행하는 컴퓨터에서 클라이언트 검사는 예약된 작업으로 실행됩니다. Windows 7 이후의 운영 체제에서는 Windows 유지 관리 기간 중에 클라이언트 검사가 자동으로 실행됩니다.  
+     Windows 7을 실행하는 컴퓨터에서 클라이언트 검사는 예약된 작업으로 실행됩니다. Windows&7; 이후의 운영 체제에서는 Windows 유지 관리 기간 중에 클라이언트 검사가 자동으로 실행됩니다.  
 
      재구성이 업무에 중요한 서버와 같은 특정 컴퓨터에서 실행되지 않도록 구성할 수 있습니다. 또한 평가할 추가 항목이 있는 경우 Configuration Manager 준수 설정을 사용하여 조직 내 컴퓨터의 전체 상태, 활동 및 준수를 모니터링할 수 있는 포괄적인 솔루션을 제공할 수 있습니다. 준수 설정에 대한 자세한 내용은 [System Center Configuration Manager에서 준수 설정 계획 및 구성](../../../compliance/plan-design/plan-for-and-configure-compliance-settings.md)을 참조하세요.  
 
@@ -81,7 +81,7 @@ ms.openlocfilehash: d3b7e917ccf841f8f5687b0afa5acaf151730ba6
 
 |클라이언트 검사|재구성 작업|추가 정보|  
 |------------------|------------------------|----------------------|  
-|클라이언트 검사가 최근에 실행되었는지 확인|클라이언트 검사 실행|지난 3일간 클라이언트 검사가 1회 이상 실행되었는지 검사합니다.|  
+|클라이언트 검사가 최근에 실행되었는지 확인|클라이언트 검사 실행|지난&3;일간 클라이언트 검사가&1;회 이상 실행되었는지 검사합니다.|  
 |클라이언트 필수 구성 요소가 설치되었는지 확인|클라이언트 필수 구성 요소 설치|클라이언트 필수 구성 요소가 설치되었는지 검사합니다. 필수 구성 요소 검색을 위해 클라이언트 설치 폴더에서 ccmsetup.xml 파일을 읽습니다.|  
 |WMI 저장소 무결성 테스트|Configuration Manager 클라이언트 다시 설치|WMI에 Configuration Manager 클라이언트 항목이 있는지 검사합니다.|  
 |클라이언트 서비스가 실행 중인지 확인|클라이언트(SMS 에이전트 호스트) 서비스 시작|추가 정보 없음|  
@@ -112,6 +112,6 @@ ms.openlocfilehash: d3b7e917ccf841f8f5687b0afa5acaf151730ba6
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

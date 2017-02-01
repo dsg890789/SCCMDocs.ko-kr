@@ -1,12 +1,12 @@
 ---
 
-title: "연결이 끊긴 소프트웨어 업데이트 지점에서 소프트웨어 업데이트 동기화 | Configuration Manager"
-description: "내보내기 서버, 내보내기 업데이트 및 가져오기 업데이트 메타데이터에서 소프트웨어 업데이트 동기화에 성공했는지 확인하려면 다음 절차를 따르세요."
+title: "인터넷 연결 없이 업데이트 동기화 - Configuration Manager | Microsoft 문서"
+description: "인터넷에서 연결이 끊어진 최상위 소프트웨어 업데이트 지점에서 소프트웨어 업데이트 동기화를 실행합니다."
 keywords: 
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/06/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -14,8 +14,8 @@ ms.technology:
 - configmgr-sum
 ms.assetid: 1a997c30-8e71-4be5-89ee-41efb2c8d199
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: f821433d017f2e14f874eca359df0f38e896ab69
+ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
+ms.openlocfilehash: fd9c1e9418ff1956c6ef98753e23a293440179be
 
 
 
@@ -111,6 +111,6 @@ ms.openlocfilehash: f821433d017f2e14f874eca359df0f38e896ab69
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

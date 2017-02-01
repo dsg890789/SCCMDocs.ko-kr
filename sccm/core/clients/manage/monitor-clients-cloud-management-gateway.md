@@ -1,5 +1,5 @@
 ---
-title: "클라이언트 모니터링 | 클라우드 관리 게이트웨이 | Microsoft 문서"
+title: "클라우드 관리 게이트웨이 모니터링 - Configuration Manager | Microsoft 문서"
 description: 
 ms.date: 11/18/2016
 ms.prod: configuration-manager
@@ -10,8 +10,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: 2753efaca58447417cf0671645e737d052f0849b
+ms.sourcegitcommit: ef12c9b966a1b83b61243311b30e1a925c20d2e3
+ms.openlocfilehash: 4475205c37c20631a189e0c315dc48e288c15ba6
 
 ---
 
@@ -59,6 +59,6 @@ Configuration Manager 콘솔을 사용하여 클라우드 관리 게이트웨이
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

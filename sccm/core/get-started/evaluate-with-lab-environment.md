@@ -1,5 +1,5 @@
 ---
-title: "고유한 랩 환경을 구축하여 System Center Configuration Manager 평가"
+title: "Configuration Manager 평가 | Microsoft 문서"
 description: "조직에서 사용할 System Center Configuration Manager를 평가하는 랩 환경을 만듭니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 363e6a929b72e027d5fff7584905fb552dc695b0
+ms.sourcegitcommit: 35e48666f4d1a2363304650f960531fd0630a291
+ms.openlocfilehash: ad3c849bd3ebfc6c0aa795e5b49a4850371cda47
 
 
 ---
@@ -64,12 +64,12 @@ ms.openlocfilehash: 363e6a929b72e027d5fff7584905fb552dc695b0
 
 -   [System Center Configuration Manager의 역할 기반 관리 기본 사항](../../core/understand/fundamentals-of-role-based-administration.md)에서 보안 역할의 중요성을 알아봅니다.  
 
--   이러한 [콘텐츠 관리 관련 개념](../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md#bkmk_Concepts)을 이해하면 콘텐츠 관리와 관련된 특정 개념을 제공할 수 있습니다.  
+-   이러한 [콘텐츠 관리 관련 개념](../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md)을 이해하면 콘텐츠 관리와 관련된 특정 개념을 제공할 수 있습니다.  
 
 -   [클라이언트가 System Center Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법 이해](../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)를 통해 배포 전체에서 매일 진행하는 작업을 성공적으로 지원할 수 있습니다.  
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

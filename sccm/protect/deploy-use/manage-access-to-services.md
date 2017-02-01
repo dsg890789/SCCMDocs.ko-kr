@@ -1,5 +1,5 @@
 ---
-title: "조건부 액세스 | System Center Configuration Manager"
+title: "Configuration Manager에서 서비스에 대한 액세스 관리 | Microsoft 문서"
 description: "System Center Configuration Manager에서 조건부 액세스를 사용하여 메일 및 기타 서비스를 보호하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -12,17 +12,17 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 76d86613-b87f-4fe5-9236-a573e00b613a
 caps.latest.revision: 26
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 5c6cf3c1697b49708aa5192b67b08b700da7dc72
-ms.openlocfilehash: 2dad04cb429ac854b5455c2af051f6f7caaadd66
+ms.sourcegitcommit: 0fa837c68eb073d2ceaf48c938137a94141a102e
+ms.openlocfilehash: 011d9345f6f2ec05b23fb574d9ab71d43ede7f69
 
 
 ---
 
-# <a name="manage-access-to-services-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 서비스 액세스 관리
+# <a name="manage-access-to-services"></a>서비스 액세스 관리
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -81,7 +81,7 @@ Exchange Online에 대한 조건부 액세스에서는 다음을 실행하는 �
 -   Windows 7.0 또는 Windows 8.1(도메인에 가입된 경우)
 -   Windows Phone 8.1 이상
 -   iOS 7.1 이상
--   Android 4.0 이상, Samsung Knox Standard 4.0 이상
+-   Android 4.0 이상, Samsung KNOX Standard 4.0 이상
 
  **추가 필수 조건**:
 -   장치는 AAD DRS(Azure Active Directory Device Registration Service)에 장치를 등록하는 작업 공간에 연결되어 있어야 합니다.<br />     
@@ -133,7 +133,7 @@ Exchange 온-프레미스에 대한 조건부 액세스는 다음을 지원합�
 SharePoint Online에 대한 조건부 액세스에서는 다음을 실행하는 장치를 지원합니다.
  -   iOS 7.1 이상
  -   Android 4.0 이상
- -   삼성 Knox 표준 4.0 이상
+ -   Samsung KNOX Standard 4.0 이상
 
 **또한** 비즈니스용 Skype Online에 최신 인증을 사용해야 합니다. 최신 인증 프로그램에 등록하려면 [Connect 양식](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) 을 작성하세요.
 
@@ -145,7 +145,7 @@ SharePoint Online에 대한 조건부 액세스에서는 다음을 실행하는 
  -   Windows 7.0 또는 Windows 8.1(도메인에 가입된 경우)
  -   Windows Phone 8.1 이상
  -   iOS 7.1 이상
- -   Android 4.0 이상, Samsung Knox Standard 4.0 이상
+ -   Android 4.0 이상, Samsung KNOX Standard 4.0 이상
 
  **추가 필수 조건**:
  -   장치는 AAD DRS(Azure Active Directory Device Registration Service)에 장치를 등록하는 작업 공간에 연결되어 있어야 합니다.
@@ -184,6 +184,6 @@ SharePoint Online에 대한 조건부 액세스에서는 다음을 실행하는 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

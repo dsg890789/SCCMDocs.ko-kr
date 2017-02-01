@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 장치에 대한 구성 항목 만들기 | Microsoft 문서"
+title: "Windows 10에 대한 구성 항목 만들기 - 클라이언트 없음 - Configuration Manager | Microsoft 문서"
 description: "System Center Configuration Manager Windows 10 구성 항목을 사용하여 Windows 10 컴퓨터에 대한 설정을 관리할 수 있습니다."
 ms.custom: na
 ms.date: 12/08/2016
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 8f6e6fd1d2a9a6352c9191ea7e2a1f9c6f6e2199
-ms.openlocfilehash: 7efde8dda724d71775313290b13a6aad2f9a7d6c
+ms.sourcegitcommit: 35e48666f4d1a2363304650f960531fd0630a291
+ms.openlocfilehash: 4c34ace72905b286c3582f09993bd897a87cce45
 
 
 ---
@@ -74,7 +74,7 @@ System Center Configuration Manager **Windows 8.1 및 Windows 10** 구성 항목
 ##  <a name="windows-81-and-windows-10-configuration-item-settings-reference"></a>Windows 8.1 및 Windows 10 구성 항목 설정 참조  
 
 ### <a name="password"></a>암호  
- 
+
 |설정|세부 정보|  
 |-------------|-------------|  
 |**장치에 암호 설정 필요**|지원되는 장치에는 암호가 필요합니다.|  
@@ -100,8 +100,8 @@ System Center Configuration Manager **Windows 8.1 및 Windows 10** 구성 항목
 |**Bluetooth**|장치 Bluetooth 기능을 사용할 수 있습니다.|  
 |**Bluetooth 검색 가능 모드**|다른 Bluetooth 장치에서 장치를 검색할 수 있습니다.<br>(Windows 10만 해당)|  
 |**Bluetooth 광고**|Bluetooth 광고를 사용할 수 있습니다.<br> (Windows 10만 해당)|  
-|**음성 녹음**|장치의 녹음 기능을 사용할 수 있습니다.<br>(Windows 10만 해당)| 
-|**Cortana**|Cortana 음성 도우미를 사용하거나 사용하지 않도록 설정합니다.| 
+|**음성 녹음**|장치의 녹음 기능을 사용할 수 있습니다.<br>(Windows 10만 해당)|
+|**Cortana**|Cortana 음성 도우미를 사용하거나 사용하지 않도록 설정합니다.|
 
 ### <a name="email-management"></a>전자 메일 관리  
 
@@ -153,7 +153,7 @@ System Center Configuration Manager **Windows 8.1 및 Windows 10** 구성 항목
 |**한 단어를 입력하면 인트라넷 사이트로 이동**|앞에 HTTP를 추가하지 않고 유효한 사이트 이름을 입력하는 경우 Internet Explorer에서 인트라넷 사이트로 자동 이동하도록 허용하는 설정을 사용하거나 사용하지 않도록 설정합니다.|  
 |**엔터프라이즈 모드 메뉴 옵션**|사용자가 Internet Explorer **도구** 메뉴에서 엔터프라이즈 모드를 활성화 및 비활성화할 수 있습니다.|  
 |**보고서 위치 로깅(URL)**|엔터프라이즈 모드가 활성화된 경우 방문한 웹 사이트를 기록할 URL을 지정합니다.|  
-|**엔터프라이즈 모드 사이트 목록 위치(URL)**|엔터프라이즈 모드가 활성화된 경우 이 모드를 사용할 웹 사이트 목록의 위치를 지정합니다.| 
+|**엔터프라이즈 모드 사이트 목록 위치(URL)**|엔터프라이즈 모드가 활성화된 경우 이 모드를 사용할 웹 사이트 목록의 위치를 지정합니다.|
 
 ### <a name="microsoft-edge"></a>Microsoft Edge  
  다음 설정은 Windows 10 이상을 실행하는 장치에 적용됩니다.  
@@ -175,7 +175,7 @@ System Center Configuration Manager **Windows 8.1 및 Windows 10** 구성 항목
  다음 설정은 Windows 10 11월 업데이트(1511) 이상을 실행하는 장치에 적용됩니다.  
 
 |설정 이름|세부 정보|  
-|------------------|-------------| 
+|------------------|-------------|
 |**실시간 모니터링 허용**|맬웨어, 스파이웨어 및 기타 원치 않는 소프트웨어에 대한 실시간 검사를 사용하도록 설정합니다.|
 |**동작 모니터링 허용**|Defender가 장치에서 의심스러운 활동의 알려진 특정 패턴을 확인할 수 있습니다.|
 |**네트워크 검사 시스템 사용**|NIS(네트워크 검사 시스템)에서는 Microsoft Endpoint Protection Center에서 제공하는 알려진 취약점 서명을 사용해 악의적인 트래픽을 검색하고 차단함으로써 네트워크 기반 익스플로잇으로부터 장치를 보호할 수 있습니다.|
@@ -201,7 +201,7 @@ System Center Configuration Manager **Windows 8.1 및 Windows 10** 구성 항목
 |**파일 확장명 제외**|jpg 또는 txt와 같은 파일 확장명을 제외 목록에 하나 이상 추가합니다. 이러한 확장명의 파일은 실시간 검사 또는 예약 검사에 포함되지 않습니다.|
 |**프로세스 제외**|.exe, .com 또는 .scr 유형의 프로세스를 제외 목록에 하나 이상 추가합니다. 이러한 프로세스는 실시간 검사 또는 예약 검사에 포함되지 않습니다.|
 
- 
+
 
 ###  <a name="cloud"></a>클라우드  
 
@@ -244,9 +244,9 @@ System Center Configuration Manager **Windows 8.1 및 Windows 10** 구성 항목
 |**로밍 시 장치 관리**|장치를 로밍 중일 때 Configuration Manager에서 장치를 관리할 수 있습니다.<br>(Windows 10만 해당)|  
 |**로밍 시 소프트웨어 다운로드**|로밍 시 앱 및 소프트웨어를 다운로드할 수 있습니다.<br>(Windows 10만 해당)|  
 |**로밍 시 전자 메일 다운로드**|로밍 시 전자 메일을 다운로드할 수 있습니다.<br>(Windows 10만 해당)|  
-|**데이터 로밍**|데이터 액세스 시 네트워크 간 로밍이 가능합니다.| 
+|**데이터 로밍**|데이터 액세스 시 네트워크 간 로밍이 가능합니다.|
 |**셀룰러에서 VPN**|장치가 셀룰러 네트워크에 연결되어 있을 때 VPN 연결에 액세스할 수 있는지 여부를 제어합니다.<br>(Windows 10만 해당)|
-|**셀룰러에서 VPN 로밍**|장치가 셀룰러 네트워크에서 로밍될 때 VPN 연결에 액세스할 수 있는지 여부를 제어합니다.<br>(Windows 10만 해당)| 
+|**셀룰러에서 VPN 로밍**|장치가 셀룰러 네트워크에서 로밍될 때 VPN 연결에 액세스할 수 있는지 여부를 제어합니다.<br>(Windows 10만 해당)|
 
 ###  <a name="encryption"></a>암호화  
 
@@ -287,7 +287,7 @@ System Center Configuration Manager **Windows 8.1 및 Windows 10** 구성 항목
 |**프록시 서버 설정**|필요에 따라 **HTTP** , **WAP** 및 **소켓**에 대해 **서버** 및 **포트**설정을 지정합니다.|  
 |**802.1X 네트워크 액세스 사용**|EAP 방식을 지정하여 연결을 보호하려면 이 옵션을 선택합니다.|  
 |**EAP 방식**|사용할 EAP 방식을 다음 중에서 선택합니다.<br>- **PEAP**<br>- **스마트 카드 또는 인증서**|  
- 
+
 
 ### <a name="certificates"></a>인증서  
  모바일 장치에 설치할 인증서를 가져올 수 있습니다.  
@@ -356,11 +356,11 @@ System Center Configuration Manager **Windows 8.1 및 Windows 10** 구성 항목
 |------------------|-------------|  
 |**센서로 방에서 사람이 감지되면 화면이 자동으로 켜지도록 허용**|센서가 방에서 사람을 감지하면 장치가 자동으로 켜지도록 합니다.|  
 |**무선 프로젝션용 PIN 필요**|장치의 무선 프로젝션 기능을 사용하려면 PIN을 입력해야 하는지 여부를 지정합니다.|  
-|**유지 관리 기간**|장치를 업데이트할 수 있는 기간을 구성합니다. 시작 시간 및 지속 기간(1-5시간)을 구성할 수 있습니다.| 
+|**유지 관리 기간**|장치를 업데이트할 수 있는 기간을 구성합니다. 시작 시간 및 지속 기간(1-5시간)을 구성할 수 있습니다.|
 |**Azure Operational Insights**|Microsoft Operations Manager 제품군에 포함되어 있는 Azure Operational Insights는 Windows 10 Team 장치에서 로그 파일 데이터를 수집, 저장 및 분석합니다.<br>Azure Operational insights에 연결하려면 **작업 영역 ID** 및 **작업 영역 키**를 지정해야 합니다.|
 |**Miracast 무선 프로젝션**|Windows 10 Team 장치에서 Miracast 지원 장치를 프로젝션에 사용할 수 있도록 하려면 이 옵션을 사용합니다.<br>이 옵션을 사용하도록 설정하는 경우 **Miracast 채널 선택**에서 콘텐츠 프로젝션에 사용할 Miracast 채널을 선택합니다.|
 |**시작 화면에 표시되는 모임 정보**|이 옵션을 사용하도록 설정하는 경우 시작 화면의 **모임** 타일에 표시할 정보를 선택할 수 있습니다. 다음과 같습니다.<br>- **이끌이 및 시간만 표시**<br>- **이끌이, 시간 및 제목 표시(비공개 모임의 경우 제목이 숨겨짐)**|
-|**잠금 화면 배경 이미지 URL**|지정한 URL에서 Windows 10 Team 장치의 **시작** 화면에 사용자 지정 배경을 표시하려면 이 설정을 사용하도록 설정합니다.<br>이미지는 PNG 형식이어야 하며 URL은 **https://**로 시작되어야 합니다.| 
+|**잠금 화면 배경 이미지 URL**|지정한 URL에서 Windows 10 Team 장치의 **시작** 화면에 사용자 지정 배경을 표시하려면 이 설정을 사용하도록 설정합니다.<br>이미지는 PNG 형식이어야 하며 URL은 **https://**로 시작되어야 합니다.|
 
 ### <a name="windows-information-protection"></a>Windows Information Protection
  다음 설정은 Windows 10을 실행하는 장치에만 적용됩니다.
@@ -393,7 +393,6 @@ Configuration Manager로 Windows Information Protection을 구성하는 방법�
 
 
 
-
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

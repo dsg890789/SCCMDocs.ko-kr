@@ -1,5 +1,5 @@
 ---
-title: "인증서 프로필 만들기 | Microsoft 문서"
+title: "SCEP 인증서 프로필을 만드는 방법 | Microsoft 문서"
 description: "인증서 프로필을 사용하여 System Center Configuration Manager에서 관리되는 장치를 필요한 인증서로 프로비전하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 11/22/2016
@@ -17,12 +17,12 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: fdf0915d937e9555ef4f84797f70391dbf2543d3
-ms.openlocfilehash: 4293cb586046791c0a75c913794cb223b6823a8f
+ms.sourcegitcommit: 0fa837c68eb073d2ceaf48c938137a94141a102e
+ms.openlocfilehash: cb9351fc63e49af611c494ec82a6c8651afae30f
 
 
 ---
-# <a name="how-to-create-scep-certificate-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 SCEP 인증서 프로필을 만드는 방법
+# <a name="create-certificate-profiles"></a>인증서 프로필 만들기
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -150,7 +150,7 @@ Configuration Manager(SCCM)에서 인증서 프로필을 사용하여 관리되�
 
  -   **인증서 유효 기간**: 발급 CA에 대해 사용자 지정 유효 기간을 허용하는 certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE 명령을 실행한 경우 인증서가 만료될 때까지 남은 기간을 지정할 수 있습니다. 이 명령에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 인프라](../../protect/deploy-use/certificate-infrastructure.md) 항목을 참조하세요.  
 
-   지정된 인증서 템플릿에서 유효 기간보다 작은 값은 지정할 수 있지만 높은 값은 지정할 수 없습니다. 예를 들어 인증서 템플릿의 인증서 유효 기간이 2년이면 값을 1년으로 지정할 수는 있어도 5년으로는 지정할 수 없습니다. 또한 이 값은 발급 CA 인증서의 남은 유효 기간보다 작아야 합니다.  
+   지정된 인증서 템플릿에서 유효 기간보다 작은 값은 지정할 수 있지만 높은 값은 지정할 수 없습니다. 예를 들어 인증서 템플릿의 인증서 유효 기간이&2;년이면 값을&1;년으로 지정할 수는 있어도&5;년으로는 지정할 수 없습니다. 또한 이 값은 발급 CA 인증서의 남은 유효 기간보다 작아야 합니다.  
 
  -   **키 사용**: 인증서에 대한 키 사용 옵션을 지정합니다. 다음 옵션 중에서 선택할 수 있습니다.  
 
@@ -187,6 +187,6 @@ Configuration Manager(SCCM)에서 인증서 프로필을 사용하여 관리되�
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

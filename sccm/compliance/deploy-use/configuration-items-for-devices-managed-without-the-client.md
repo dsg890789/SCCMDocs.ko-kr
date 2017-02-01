@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager 클라이언트 없이 관리되는 장치에 대한 구성 항목 | System Center Configuration Manager"
+title: "클라이언트가 없는 장치에 대한 구성 항목 - Configuration Manager | Microsoft 문서"
 description: "Windows, Mac 및 System Center Configuration Manager 클라이언트에서 관리되지 않는 기타 장치에 대한 구성 항목을 만듭니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 3a1de1d04d3a1a613decf1d848d508986817ff4b
+ms.sourcegitcommit: 35e48666f4d1a2363304650f960531fd0630a291
+ms.openlocfilehash: 6f0cd1532385f40feaac424877cfcb5f31d35868
 
 
 ---
@@ -34,10 +34,10 @@ ms.openlocfilehash: 3a1de1d04d3a1a613decf1d848d508986817ff4b
 
 -   [System Center Configuration Manager 클라이언트 없이 관리되는 iOS 및 Mac OS X 장치에 대해 구성 항목을 만드는 방법](../../compliance/deploy-use/create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client.md)  
 
--   [System Center Configuration Manager 클라이언트 없이 관리되는 Android 및 Samsung KNOX 장치에 대한 구성 항목을 만드는 방법](../../compliance/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client.md)  
+-   [System Center Configuration Manager 클라이언트 없이 관리되는 Android 및 Samsung KNOX Standard 장치에 대한 구성 항목을 만드는 방법](../../compliance/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client.md)  
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

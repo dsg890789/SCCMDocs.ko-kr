@@ -1,8 +1,8 @@
 ---
-title: "운영 체제 이미지 사용자 지정 | Configuration Manager"
+title: "운영 체제 이미지 사용자 지정 - Configuration Manager | Microsoft 문서"
 description: "캡처 및 빌드 작업 순서, 수동 구성 또는 이 둘의 조합을 사용하여 운영 체제 이미지를 사용자 지정할 수 있습니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: e7e0ecf394297799c2a3d0c14e719182b403e1e8
+ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
+ms.openlocfilehash: 485cb3ca4988f983c1ec71b6c8daf136571bf0ea
 
 
 ---
@@ -28,7 +28,7 @@ ms.openlocfilehash: e7e0ecf394297799c2a3d0c14e719182b403e1e8
 
 System Center Configuration Manager의 운영 체제 이미지는 WIM 파일이며 컴퓨터에 운영 체제를 성공적으로 설치하고 구성하는 데 필요한 참조 파일 및 폴더의 압축된 컬렉션을 나타냅니다. 사용자 지정 운영 체제 이미지는 필요한 모든 운영 체제 파일, 지원 파일, 소프트웨어 업데이트, 도구 및 기타 소프트웨어 앱을 사용하여 구성된 참조 컴퓨터에서 만들어지고 캡처됩니다. 참조 컴퓨터를 수동으로 구성하는 범위는 사용자가 결정합니다. 빌드를 사용하여 참조 컴퓨터의 구성을 완전히 자동화하고 작업 순서를 캡처하거나, 참조 컴퓨터의 특정 부분을 수동으로 구성한 다음 작업 순서를 사용하여 나머지를 자동화하거나, 작업 순서를 사용하지 않고 수동으로 참조 컴퓨터를 구성할 수 있습니다. 다음 섹션은 운영 체제를 사용자 지정하는 데 사용됩니다.
 
-##  <a name="a-namebkmkpreparereferencecomputera-prepare-for-the-reference-computer"></a><a name="BKMK_PrepareReferenceComputer"></a> 참조 컴퓨터 준비  
+##  <a name="a-namebkmkpreparereferencecomputera-prepare-for-the--reference-computer"></a><a name="BKMK_PrepareReferenceComputer"></a> 참조 컴퓨터 준비  
  참조 컴퓨터에서 운영 체제 이미지를 캡처하기 전에 고려할 사항이 몇 가지 있습니다.  
 
 ###  <a name="a-namebkmkrefcomputerdecidea-decide-between-an-automated-or-manual-configuration"></a><a name="BKMK_RefComputerDecide"></a> 자동 구성 또는 수동 구성을 사용할지 결정  
@@ -140,6 +140,6 @@ System Center Configuration Manager의 운영 체제 이미지는 WIM 파일이�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -1,8 +1,8 @@
 ---
-title: "System Center Configuration Manager 클라이언트에서 관리되는 Windows 데스크톱 및 서버 컴퓨터에 대한 사용자 지정 구성 항목 만들기 | System Center Configuration Manager"
+title: "클라이언트 관리 Windows 컴퓨터에 대한 구성 항목 만들기 - Configuration Manager | Microsoft 문서"
 description: "사용자 지정 Windows 데스크톱 및 서버 구성 항목을 사용하여 Windows 컴퓨터 및 서버에 대한 설정을 관리합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 11/18/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: bf3d46377d4027832e59e5ce50af90a0770919ea
+ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
+ms.openlocfilehash: e55883471fde63036c91b315ed6db6dceb315207
 
 
 ---
@@ -359,6 +359,6 @@ System Center Configuration Manager **사용자 지정 Windows 데스크톱 및 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

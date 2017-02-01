@@ -1,5 +1,5 @@
 ---
-title: "Configuration Manager와 장치 등록 관리자를 사용하여 장치 등록"
+title: "장치 등록 관리자를 사용하여 장치 등록 - Configuration Manager | Microsoft 문서"
 description: "System Center Configuration Manager와 장치 등록 관리자 계정을 사용하여 회사 소유 장치를 등록합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2905f26e-7859-497d-b995-5ff48261efa2
 caps.latest.revision: 8
-author: NathBarn
-ms.author: nathbarn
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 287815a534c1fba8af8f5d212c6321bda93fc44f
+ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
+ms.openlocfilehash: b356d2351b8a28bdca78176fdf0ff3c913a36bd3
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 287815a534c1fba8af8f5d212c6321bda93fc44f
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-조직에서는 System Center Configuration Manager 및 Intune을 사용하여 단일 사용자 계정으로 많은 수의 모바일 장치를 관리할 수 있습니다. *장치 등록 관리자* 계정은 5개가 넘는 장치를 등록할 수 있는 권한이 있는 특수한 Intune 계정입니다.  
+조직에서는 System Center Configuration Manager 및 Intune을 사용하여 단일 사용자 계정으로 많은 수의 모바일 장치를 관리할 수 있습니다. *장치 등록 관리자* 계정은&5;개가 넘는 장치를 등록할 수 있는 권한이 있는 특수한 Intune 계정입니다.  
 
 ## <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager"></a>장치 등록 관리자로 회사 소유 장치 등록  
  예를 들어, 저장소 관리자나 감독자에게 장치 등록 관리자 사용자 계정을 할당하여 다음 작업을 수행하도록 할 수 있습니다.  
@@ -92,6 +92,6 @@ ms.openlocfilehash: 287815a534c1fba8af8f5d212c6321bda93fc44f
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

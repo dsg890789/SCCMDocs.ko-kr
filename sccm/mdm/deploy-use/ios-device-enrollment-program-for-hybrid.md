@@ -1,5 +1,5 @@
 ---
-title: "Configuration Manager에서의 하이브리드 배포를 위한 iOS DEP(장치 등록 프로그램) 등록"
+title: "DEP(장치 등록 프로그램)를 사용하여 iOS 장치 등록 - Configuration Manager | Microsoft 문서"
 description: "Configuration Manager 및 Intune에서 하이브리드 배포를 위해 iOS DEP(장치 등록 프로그램) 등록을 사용하도록 설정합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 78d44adc-9b1c-4bc6-b72d-e93873916ea6
 caps.latest.revision: 9
-author: NathBarn
-ms.author: nathbarn
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 730b0e6b0ad9eb0ee3bf58c9419920c3a28a27d1
+ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
+ms.openlocfilehash: 4222ca27e19ade46d53f8cd4598643ddd4fd5c8f
 
 ---
 # <a name="ios-device-enrollment-program-dep-enrollment-for-hybrid-deployments-with-configuration-manager"></a>Configuration Manager에서의 하이브리드 배포를 위한 iOS DEP(장치 등록 프로그램) 등록
@@ -40,7 +40,7 @@ ms.openlocfilehash: 730b0e6b0ad9eb0ee3bf58c9419920c3a28a27d1
     Configuration Manager 콘솔의 **관리** 작업 영역에서 **계층 구성**, **클라우드 서비스**를 차례로 확장하고 **Windows Intune 구독**을 클릭합니다. **홈** 탭에서 **DEP 토큰 요청 만들기** 를 클릭하고 **찾아보기** 를 클릭하여 DEP 토큰 요청에 대한 다운로드 위치를 지정한 후에 **다운로드**를 클릭합니다. DEP 토큰 요청(.pem) 파일을 로컬로 저장합니다. .pem 파일은 Apple 장치 등록 프로그램 포털에서 신뢰할 수 있는 토큰(.p7m)을 요청하는 데 사용됩니다.  
 
 3.  **장치 등록 프로그램 토큰 가져오기**   
-     [장치 등록 프로그램 포털](https://deploy.apple.com) (https://deploy.apple.com)로 이동하고 회사 Apple ID로 로그인합니다. 나중에 DEP 토큰을 갱신하려면 이 Apple ID를 사용해야 합니다.  
+    [장치 등록 프로그램 포털](https://deploy.apple.com) (https://deploy.apple.com)로 이동하고 회사 Apple ID로 로그인합니다. 나중에 DEP 토큰을 갱신하려면 이 Apple ID를 사용해야 합니다.  
 
     1.  [장치 등록 프로그램 포털](https://deploy.apple.com)에서 **장치 등록 프로그램** > **서버 관리**로 이동한 후 **MDM 서버 추가**를 클릭합니다.  
 
@@ -91,22 +91,18 @@ ms.openlocfilehash: 730b0e6b0ad9eb0ee3bf58c9419920c3a28a27d1
 
             -   **사용 안 함** - **설정** 메뉴에서 관리 프로필을 제거할 수 있습니다.  
 
-            -   사용 - (**준비 모드** = **감독됨** 필요) 관리 프로필 제거를 허용하는 iOS 설정이 해제됩니다.  
+            -   **사용** - (**준비 모드** = **감독됨** 필요) 관리 프로필 제거를 허용하는 iOS 설정이 해제됩니다.  
 
     3.  **설정 도우미** 페이지에서 장치를 처음 켤 때 시작되는 iOS 설정 도우미를 사용자 지정하는 설정을 구성하고 **다음**을 클릭합니다. 이러한 설정은 다음과 같습니다.  
-
         -   **암호** - 활성화하는 동안 암호를 확인하는 메시지가 표시됩니다. 장치 보안이 유지되거나 다른 방식(즉, 장치를 하나의 앱으로 제한하는 키오스크 모드)으로 액세스가 제어되지 않는 경우 항상 암호가 필요합니다.  
-
         -   **위치 서비스** - 이 옵션을 사용하도록 설정하면 활성화하는 동안 설정 도우미에서 서비스를 확인하는 메시지가 표시됩니다.  
-
         -   **복원** - 이 옵션을 사용하도록 설정하면 활성화하는 동안 설정 도우미에서 iCloud 백업을 확인하는 메시지가 표시됩니다.  
-
         -   **Apple ID** - Intune에 의해 설치된 앱을 포함하여 iOS App Store 앱을 다운로드하려면 Apple ID가 필요합니다. 이 옵션을 사용하도록 설정하면 Intune에서 ID 없이 앱을 설치하려고 할 때 iOS에서 Apple ID를 확인하는 메시지가 표시됩니다.  
-
         -   **계약조건** - 이 옵션을 사용하도록 설정하면 활성화하는 동안 설정 도우미에서 Apple 계약조건에 동의하라는 메시지가 표시됩니다.  
-
+        -   **터치 ID** - 이 옵션을 사용하도록 설정하면 활성화하는 동안 설정 도우미에서 이 서비스를 확인하는 메시지가 표시됩니다.
+        -   **Apple Pay** - 이 옵션을 사용하도록 설정하면 활성화하는 동안 설정 도우미에서 이 서비스를 확인하는 메시지가 표시됩니다.
+        -   **확대/축소** - 이 옵션을 사용하도록 설정하면 활성화하는 동안 설정 도우미에서 이 서비스를 확인하는 메시지가 표시됩니다.
         -   **Siri** - 이 옵션을 사용하도록 설정하면 활성화하는 동안 설정 도우미에서 이 서비스를 확인하는 메시지가 표시됩니다.  
-
         -   **Apple에 진단 데이터 보내기** - 이 옵션을 사용하도록 설정하면 활성화하는 동안 설정 도우미에서 이 서비스를 확인하는 메시지가 표시됩니다.  
 
     4.  **추가 관리** 페이지에서 USB 연결을 추가 관리 설정에 사용할 수 있는지 여부를 지정합니다. **인증서 필요**를 선택하는 경우 이 프로필에 사용할 Apple 구성기 관리 인증서를 가져와야 합니다.  **허용 안 함**으로 설정하면 iTunes와 파일을 공유하거나 Apple Configurator를 통해 관리할 수 없습니다. 이 설정을 통해 인증서를 사용하거나 사용하지 않는 수동 배포를 허용하는 대신 **허용 안 함**으로 설정하고 Apple Configurator에서 추가 구성을 내보낸 다음 사용자 지정 iOS 구성 프로필로 배포하는 것이 좋습니다.  
@@ -118,7 +114,7 @@ ms.openlocfilehash: 730b0e6b0ad9eb0ee3bf58c9419920c3a28a27d1
         -   **인증서 필요**- 등록 프로필로 가져온 인증서를 사용하여 Mac에 연결할 수 있습니다.  
 
 2.  **관리할 DEP 장치 할당**   
-     [장치 등록 프로그램 포털](https://deploy.apple.com) (https://deploy.apple.com)로 이동하고 회사 Apple ID로 로그인합니다. **배포 프로그램** > **장치 등록 프로그램** > **장치 관리**으로 관리할 수 있습니다. **장치 선택**방법을 지정하고, 장치 정보를 제공한 다음 장치 **일련번호**, **주문 번호**또는 **CSV 파일 업로드**에 따라 세부 정보를 지정합니다. **서버에 할당**을 선택하고 3단계에서 지정한 <*서버 이름*>을 선택한 후 **확인**을 클릭합니다.  
+    [장치 등록 프로그램 포털](https://deploy.apple.com) (https://deploy.apple.com)로 이동하고 회사 Apple ID로 로그인합니다. **배포 프로그램** > **장치 등록 프로그램** > **장치 관리**으로 관리할 수 있습니다. **장치 선택**방법을 지정하고, 장치 정보를 제공한 다음 장치 **일련번호**, **주문 번호**또는 **CSV 파일 업로드**에 따라 세부 정보를 지정합니다. **서버에 할당**을 선택하고 3단계에서 지정한 <*서버 이름*>을 선택한 후 **확인**을 클릭합니다.  
 
 3.  **DEP 관리 장치 동기화**   
     **자산 및 준수** 작업 영역에서 **회사가 소유한 모든 장치** > **iOS** > **장치 정보**으로 관리할 수 있습니다. **홈** 탭에서 **DEP 동기화**를 클릭합니다. 동기화 요청이 Apple에 전송됩니다. 동기화가 완료되고 나면 DEP에서 관리하는 장치가 표시됩니다. 장치를 켜고 설정 도우미를 실행하여 장치를 등록할 때까지는 관리되는 장치의 **등록 상태** 가 **연결되지 않음** 으로 표시됩니다.  
@@ -128,6 +124,6 @@ ms.openlocfilehash: 730b0e6b0ad9eb0ee3bf58c9419920c3a28a27d1
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

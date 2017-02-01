@@ -1,5 +1,5 @@
 ---
-title: "클라이언트 업그레이드 | Mac | System Center Configuration Manager"
+title: "macOS 클라이언트 업그레이드 - Configuration Manager | Microsoft 문서"
 description: "System Center Configuration Manager에서 Mac 컴퓨터용 클라이언트를 업그레이드합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 74c60941-5eae-4905-9e58-252bdb39df96
 caps.latest.revision: 10
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: e2e13d31ccdeba155b4030a78d12b82939394f54
+ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b
+ms.openlocfilehash: 6bdc5cca01bf5a79a6177d7cf1de96b8ff2c2305
 
 
 ---
@@ -105,6 +105,6 @@ System Center Configuration Manager 응용 프로그램을 사용하여 Mac 컴�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

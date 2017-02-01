@@ -1,8 +1,8 @@
 ---
-title: "System Center Configuration Manager용 Technical Preview 1610의 기능 | Microsoft 문서"
+title: "Technical Preview 1610 Configuration Manager의 기능"
 description: "System Center Configuration Manager용 Technical Preview 버전 1610에서 사용 가능한 기능에 대해 알아봅니다."
 ms.custom: na
-ms.date: 10/21/2016
+ms.date: 01/23/2017
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 3bf44f850722afdb8dfe5922c8ceff11c9b56d08
-ms.openlocfilehash: 6ffcb33e94f942fc9400457d3f16b65e12332956
+ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
+ms.openlocfilehash: 59633ce68e2bb2d722900215751f345d6d098721
 
 ---
 # <a name="capabilities-in-technical-preview-1610-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1610의 기능
@@ -148,7 +148,7 @@ Technical Preview 1610에는 업데이트된 클라이언트 버전을 자동으
 1.  Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > 장치로 이동합니다.
 2.  **원격 장치 작업** 메뉴에서 **동기화 요청 보내기**를 선택합니다.
 
-동기화는 5~10분 정도 걸릴 수 있습니다. 정책의 모든 변경 내용이 장치에 동기화됩니다. **장치** 보기의 **원격 동기화 상태** 열이나 장치의 **속성** 대화 상자에서 동기화 요청 상태를 추적할 수 있습니다.
+동기화는&5;~10분 정도 걸릴 수 있습니다. 정책의 모든 변경 내용이 장치에 동기화됩니다. **장치** 보기의 **원격 동기화 상태** 열이나 장치의 **속성** 대화 상자에서 동기화 요청 상태를 추적할 수 있습니다.
 
 ## <a name="additional-security-role-support"></a>추가 보안 역할 지원
 
@@ -165,6 +165,6 @@ Technical Preview 1610에는 업데이트된 클라이언트 버전을 자동으
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

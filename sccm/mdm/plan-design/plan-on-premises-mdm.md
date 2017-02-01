@@ -17,8 +17,8 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
-ms.openlocfilehash: cc5b04dc41b13993fca35f202437b71e96bc9cdd
+ms.sourcegitcommit: cec595d473ca2459e43a7fa1c70b7668a8a48986
+ms.openlocfilehash: d529a058968cf99dce77997844b33ff5dc7c0004
 
 
 ---
@@ -43,8 +43,8 @@ ms.openlocfilehash: cc5b04dc41b13993fca35f202437b71e96bc9cdd
 ##  <a name="a-namebkmkintunea-use-of-the--microsoft-intune-subscription"></a><a name="bkmk_intune"></a> Microsoft Intune 구독의 용도  
  온\-프레미스 모바일 장치 관리를 사용하기 시작하려면 Microsoft Intune을 구독해야 합니다. 구독은 장치 라이선스를 추적하는 데만 필요하며 장치에 대한 관리 정보를 관리하거나 저장하는 데는 사용되지 않습니다. 모든 관리는 온-프레미스 Configuration Manager 인프라를 사용하여 조직의 엔터프라이즈에서 처리됩니다.  
 
-> [!IMPORTANT]  
->  Configuration Manager는 Microsoft Intune과 온-프레미스 Configuration Manager 인프라를 동시에 관리 기관으로 사용할 수 없습니다. 따라서 온-프레미스 관리에 대한 Intune 구독을 설정할 때 Intune 관리를 사용하지 않도록 설정하는 것이 효과적입니다.  
+ > [!NOTE]  
+ > 버전 1610부터 Configuration Manager는 Microsoft Intune과 온-프레미스 Configuration Manager 인프라를 둘 다 사용하여 동시에 모바일 장치를 관리할 수 있도록 지원합니다.   
 
  인터넷에 연결된 장치가 사이트에 있는 경우 Intune 서비스를 사용하여 정책 업데이트에 대한 장치 관리 지점을 확인하도록 장치에 알릴 수 있습니다. 이 Intune의 용도는 인터넷 연결 장치에 대한 알림으로 엄격히 국한됩니다. 인터넷에 연결되지 않은(그리고 Intune에서 연결할 수 없는) 장치는 구성된 폴링 간격에 의존하여 관리 기능에 대한 사이트 시스템 역할을 확인합니다.  
 
@@ -122,6 +122,6 @@ ms.openlocfilehash: cc5b04dc41b13993fca35f202437b71e96bc9cdd
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

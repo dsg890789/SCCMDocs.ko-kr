@@ -1,11 +1,11 @@
 ---
-title: "업데이트 그룹에 소프트웨어 업데이트 추가 | Microsoft 문서"
+title: "업데이트 그룹에 업데이트 추가 - Configuration Manager | Microsoft 문서"
 description: "사용자 환경에서 소프트웨어 업데이트 그룹에 소프트웨어 업데이트를 수동 또는 자동으로 추가합니다."
 keywords: 
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/06/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -13,8 +13,8 @@ ms.technology:
 - configmgr-sum
 ms.assetid: a0767664-fd60-46a8-9da5-86cc431ce53c
 translationtype: Human Translation
-ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
-ms.openlocfilehash: 620bec75ba61de2146361a86ab61f6f8e6074bcf
+ms.sourcegitcommit: 4e44e2b8f6baf020c3b7742bafd607082ffacaa4
+ms.openlocfilehash: 02e30ba48f3564fa8a31f21793c145054e02e002
 
 ---
 
@@ -61,6 +61,6 @@ ms.openlocfilehash: 620bec75ba61de2146361a86ab61f6f8e6074bcf
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

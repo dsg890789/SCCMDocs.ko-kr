@@ -1,5 +1,5 @@
 ---
-title: "Wi-Fi 프로필 만들기 | Microsoft 문서"
+title: "Wi-Fi 프로필을 만드는 방법 | Microsoft 문서"
 description: "System Center Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의 사용자에게 무선 네트워크 설정을 배포하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 12/11/2016
@@ -17,12 +17,12 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 22a74f3b12fe4f4559b682a8fcb287863a7686af
-ms.openlocfilehash: 1262cb7d524fdce21f778e2179275bd177e9330f
+ms.sourcegitcommit: 0fa837c68eb073d2ceaf48c938137a94141a102e
+ms.openlocfilehash: 7d42ec89300d4eb6b02bafb3f83d341f8e3ca0c0
 
 
 ---
-# <a name="how-to-create-wi-fi-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Wi-Fi 프로필을 만드는 방법
+# <a name="create-wi-fi-profiles"></a>Wi-Fi 프로필 만들기
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -136,6 +136,6 @@ System Center Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

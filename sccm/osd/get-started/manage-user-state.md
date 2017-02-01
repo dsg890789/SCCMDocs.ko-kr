@@ -1,8 +1,8 @@
 ---
-title: "사용자 상태 관리 | Microsoft 문서"
+title: "사용자 상태 관리 - Configuration Manager | Microsoft 문서"
 description: "System Center Configuration Manager는 사용자 상태 마이그레이션 도구를 사용하여 운영 체제 배포 시나리오에서 사용자 상태 데이터를 캡처 및 복원합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
-ms.openlocfilehash: 65ebfd385a27ebda8d5057f503c01b8b33628a72
+ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
+ms.openlocfilehash: a0bd86587669c32377b1eafa6a890d37e10ac3f6
 
 
 ---
@@ -133,6 +133,6 @@ System Center Configuration Manager 작업 순서를 사용하여 현재 운영 
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

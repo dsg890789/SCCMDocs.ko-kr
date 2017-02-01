@@ -1,5 +1,5 @@
 ---
-title: Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune
+title: "하이브리드 MDM(모바일 장치 관리) - Configuration Manager 및 Microsoft Intune | Microsoft 문서"
 description: "System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 MDM(모바일 장치 관리)에 대해 알아보세요."
 ms.custom: na
 ms.date: 10/06/2016
@@ -13,12 +13,12 @@ ms.topic: get-started-article
 ms.assetid: bb95154b-f63e-4491-896e-41d732c802f8
 caps.latest.revision: 34
 caps.handback.revision: 0
-author: NathBarn
-ms.author: nathbarn
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 22e673122f0f664d1240c11451b7e6db78481b26
-ms.openlocfilehash: 83832465e93997a2893e024c565ee00f471036d1
+ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
+ms.openlocfilehash: ceeccab158cd23267ccd05cfbff82ef772f97fbc
 
 ---
 # <a name="hybrid-mobile-device-management-mdm-with-system-center-configuration-manager-and-microsoft-intune"></a>Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune
@@ -66,7 +66,7 @@ Intune으로 Configuration Manager를 확장하면 관리자가 회사 소유 �
 
 | **방법** |  **초기화** |  **선호도**    |   **잠금** | **세부 정보**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 아니요|    예 |   아니요 | [자세히](../deploy-use/setup-hybrid-mdm.md#set-up-device-management)|
+|**[BYOD](#byod)** | 아니요|    예 |   아니요 | [자세히](../deploy-use/setup-hybrid-mdm.md#windows-enrollment-setup)|
 |**[DEM](#dem)**|   아니요 |아니요 |아니요  |[자세히](../deploy-use/enroll-devices-with-device-enrollment-manager.md)|
 
 올바른 방법을 찾는 데 도움이 되는 일련의 질문을 보려면 [장치 등록 방법 선택](/intune/get-started/choose-how-to-enroll-devices1)을 참조하세요.
@@ -117,6 +117,6 @@ Configuration Manager 하이브리드 MDM에서 관리할 수 있는 장치 플�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

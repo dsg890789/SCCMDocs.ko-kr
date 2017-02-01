@@ -1,5 +1,5 @@
 ---
-title: "Configuration Manager를 사용하는 하이브리드 배포를 위해 회사 소유 장치 등록"
+title: "회사 소유 장치 등록 - Configuration Manager | Microsoft 문서"
 description: "Configuration Manager를 사용하여 하이브리드 배포를 위해 회사 소유 장치를 등록하는 다양한 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e2754ce6-1460-4ddd-9050-2cc87e7964f4
 caps.latest.revision: 13
-author: NathBarn
-ms.author: nathbarn
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 91f1d0d775236fe4cb6675b1017161520a281df5
+ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
+ms.openlocfilehash: b797bf2c180478f6a9ee5a7228e8eb94194285ff
 
 
 ---
@@ -34,7 +34,7 @@ ms.openlocfilehash: 91f1d0d775236fe4cb6675b1017161520a281df5
  이 방법을 사용하려면 등록을 미리 구성하도록 관리자가 Apple Configurator를 실행하는 Mac 컴퓨터에 iOS 장치를 USB로 연결해야 합니다. 그런 다음 장치는 설치 도우미 프로세스를 실행하는 사용자에게 제공되어 회사 또는 학교 자격 증명을 사용하여 장치를 구성하고 등록 프로세스를 완료합니다. [Configuration Manager와 Apple Configurator를 사용하여 iOS 하이브리드 등록](../../mdm/deploy-use/ios-hybrid-enrollment-using-apple-configurator.md)을 참조하세요.  
 
 ## <a name="device-enrollment-manager"></a>장치 등록 관리자  
- 조직에서는 Intune을 사용하여 장치 등록 관리자 계정이라는 단일 사용자 계정으로 많은 수의 모바일 장치를 관리할 수 있습니다. 장치 등록 관리자 계정을 만든 후 해당 계정은 관리자가 일반 사용자에게 기본적으로 허용하는 5개의 표준 장치보다 많은 장치를 등록하는 데 사용할 수 있습니다. 특정 사용자가 사용하지 않는 장치에만 장치 등록 관리자를 사용하여 장치를 등록할 수 있습니다. 이러한 장치는 예를 들면 POS(point-of-sale) 또는 유틸리티 앱에는 좋으나 메일 또는 회사 리소스에 액세스해야 하는 사용자에게는 좋지 않습니다. [Configuration Manager와 장치 등록 관리자를 사용하여 장치 등록](../../mdm/deploy-use/enroll-devices-with-device-enrollment-manager.md)을 참조하세요.  
+ 조직에서는 Intune을 사용하여 장치 등록 관리자 계정이라는 단일 사용자 계정으로 많은 수의 모바일 장치를 관리할 수 있습니다. 장치 등록 관리자 계정을 만든 후 해당 계정은 관리자가 일반 사용자에게 기본적으로 허용하는&5;개의 표준 장치보다 많은 장치를 등록하는 데 사용할 수 있습니다. 특정 사용자가 사용하지 않는 장치에만 장치 등록 관리자를 사용하여 장치를 등록할 수 있습니다. 이러한 장치는 예를 들면 POS(point-of-sale) 또는 유틸리티 앱에는 좋으나 메일 또는 회사 리소스에 액세스해야 하는 사용자에게는 좋지 않습니다. [Configuration Manager와 장치 등록 관리자를 사용하여 장치 등록](../../mdm/deploy-use/enroll-devices-with-device-enrollment-manager.md)을 참조하세요.  
 
 ## <a name="user-affinity-for-managed-devices"></a>관리 장치에 대한 사용자 선호도  
  회사 소유 장치의 프로필을 구성할 때 관리자는 장치로 특정 사용자를 식별하는 *사용자 선호도*를 관리 장치가 지원할지 여부를 지정할 수 있습니다. **사용자 선호도**로 구성한 장치에서 회사 포털 앱을 설치하고 실행하여 앱을 다운로드하고 장치를 관리할 수 있습니다. [Configuration Manager의 하이브리드 관리 장치에 대한 사용자 선호도](../../mdm/deploy-use/user-affinity-for-hybrid-managed-devices.md)를 참조하세요.  
@@ -47,10 +47,10 @@ ms.openlocfilehash: 91f1d0d775236fe4cb6675b1017161520a281df5
 해당 IMEI(International station Mobile Equipment Identity) 번호 또는 iOS 일련 번호를 가져와서 회사 소유의 장치를 식별할 수 있습니다. 장치 IMEI 번호를 포함한 쉼표로 구분된 값(.csv) 파일을 업로드하거나 장치 정보를 수동으로 입력할 수 있습니다.  [하드웨어 ID 번호로 장치 미리 선언](../../mdm/deploy-use/predeclare-devices-with-hardware-id.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목  
- [System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 MDM(모바일 장치 관리)](../../mdm/plan-design/hybrid-mobile-device-management.md)
+ [System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 MDM(모바일 장치 관리)](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

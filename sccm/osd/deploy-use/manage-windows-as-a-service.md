@@ -1,8 +1,8 @@
 ---
-title: "Windows as a Service 관리 | Microsoft 문서"
-description: "System Center Configuration Manager의 기능을 사용하면 업데이트된 상태로 유지할 수 있도록 사용자 환경의 Windows as a Service 상태를 볼 수 있습니다."
+title: "Windows as a Service 관리 - Configuration Manager | Microsoft 문서"
+description: "Configuration Manager를 사용하여 Windows as a Service의 상태를 보고, 배포 링을 구성할 서비스 계획을 만들고, Windows 10 클라이언트 지원이 끝나갈 때 경고를 볼 수 있습니다."
 ms.custom: na
-ms.date: 12/21/2016
+ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 66cd6d099acdd9db2bc913a69993aaf5e17237fe
-ms.openlocfilehash: 79e13074db18a617c7e3fceedaa143dbece90a3d
+ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
+ms.openlocfilehash: b3859bc01c37dab04275028585e892f927606025
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 79e13074db18a617c7e3fceedaa143dbece90a3d
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 
- System Center Configuration Manager에서 사용자 환경의 Windows as a Service 상태를 보고, 양식 배포 링에 서비스 계획을 만들고, 새로운 빌드가 릴리스될 때 Windows 10 현재 분기 시스템을 최신 상태로 유지하고, Windows 10 클라이언트에서 CB(현재 분기) 또는 CBB(비즈니스용 현재 분기)의 빌드에 대한 지원이 끝나갈 때 경고를 표시할 수 있습니다.  
+ System Center Configuration Manager에서 사용자 환경의 Windows as a Service 상태를 보고, 배포 링을 구성할 서비스 계획을 만들고, 새로운 빌드가 릴리스될 때 Windows 10 현재 분기 시스템을 최신 상태로 유지하고, Windows 10 클라이언트에서 CB(현재 분기) 또는 CBB(비즈니스용 현재 분기) 빌드에 대한 지원이 끝나갈 때 경고를 볼 수 있습니다.  
 
  Windows 10 서비스 옵션에 대한 자세한 내용은  [업데이트 및 업그레이드에 대한 Windows 10 서비스 옵션](https://technet.microsoft.com/library/mt598226\(v=vs.85\).aspx)을 참조하세요.  
 
@@ -65,11 +65,11 @@ ms.openlocfilehash: 79e13074db18a617c7e3fceedaa143dbece90a3d
 
 -   **Windows 10 링 타일**: 분기 및 준비 상태에 따라 Windows 10 분류를 제공합니다. LTSB 세그먼트는 모든 LTSB 버전이 됩니다(첫 번째 타일은 특정 버전을 분석을 분류함. 예: Windows 10 LTSB 2015). **릴리스 준비** 세그먼트는 CB에 해당하고, **비즈니스 준비** 세그먼트는 CBB입니다.  
 
--   **서비스 계획 만들기 타일**: 서비스 계획을 만드는 빠른 방법을 제공합니다. 이름, 컬렉션(크기별로 가장 작은 것부터 상위 10개의 컬렉션만 표시), 배포 패키지(가장 최근에 수정한 순서별로 상위 10개의 패키지만 표시), 준비 상태를 지정합니다. 다른 설정에 대해서는 기본값이 사용됩니다. **고급 설정** 을 클릭하여 모든 서비스 계획 설정을 구성할 수 있는 서비스 계획 만들기 마법사를 시작합니다.  
+-   **서비스 계획 만들기 타일**: 서비스 계획을 만드는 빠른 방법을 제공합니다. 이름, 컬렉션(크기별로 가장 작은 것부터 상위&10;개의 컬렉션만 표시), 배포 패키지(가장 최근에 수정한 순서별로 상위&10;개의 패키지만 표시), 준비 상태를 지정합니다. 다른 설정에 대해서는 기본값이 사용됩니다. **고급 설정** 을 클릭하여 모든 서비스 계획 설정을 구성할 수 있는 서비스 계획 만들기 마법사를 시작합니다.  
 
 -   **만료됨 타일**: 수명 끝을 지난 Windows 10 빌드에 있는 장치의 백분율을 표시합니다. Configuration Manager에서는 메타데이터에서 서비스 연결 지점이 다운로드하는 비율을 확인한 후 검색 데이터와 비교합니다. 수명 끝을 지난 빌드는 보안 업데이트를 비롯하여 월별 누적 업데이트를 더 이상 수신하지 않습니다. 이 범주의 컴퓨터는 다음 빌드 버전으로 업그레이드해야 합니다. Configuration Manager에서는 다음 정수로 반올림합니다. 예를 들어, 컴퓨터 1만 대가 있고 이 중 컴퓨터 한 대만 만료됨 빌드 상태이면 타일에 1%가 표시됩니다.  
 
--   **곧 만료 타일**: **만료됨** 타일과 비슷하게 수명 끝에 다다른(약 4개월 이내) 빌드에 있는 컴퓨터의 백분율을 나타냅니다. Configuration Manager에서는 다음 정수로 반올림합니다.  
+-   **곧 만료 타일**: **만료됨** 타일과 비슷하게 수명 끝에 다다른(약&4;개월 이내) 빌드에 있는 컴퓨터의 백분율을 나타냅니다. Configuration Manager에서는 다음 정수로 반올림합니다.  
 
 -   **경고 타일**: 활성 경고를 표시합니다.  
 
@@ -98,7 +98,7 @@ ms.openlocfilehash: 79e13074db18a617c7e3fceedaa143dbece90a3d
 > [!NOTE]  
 >  작업 순서를 사용하여 각 Windows 10 빌드에 대한 업그레이드를 배포할 수 있지만 더 많은 수동 작업이 필요합니다. 업데이트된 원본 파일을 운영 체제 업그레이드 패키지로 가져온 다음, 해당 작업 순서를 만들고 적절한 컴퓨터 집합에 배포해야 합니다. 그러나 작업 순서는 배포 전 및 배포 후 작업과 같은 추가 사용자 지정 옵션을 제공합니다.  
 
- Windows 10 서비스 대시보드에서 기본 서비스 계획을 만들 수 있습니다. 이름, 컬렉션(크기별로 가장 작은 것부터 상위 10개의 컬렉션만 표시), 배포 패키지(가장 최근에 수정한 순서별로 상위 10개의 패키지만 표시), 준비 상태를 지정하면 Configuration Manager에서 기타 설정에 대해서는 기본값을 갖는 서비스 계획을 만듭니다. 서비스 계획 만들기 마법사를 시작하여 모든 설정을 구성할 수도 있습니다. 서비스 계획 만들기 마법사를 사용하여 서비스 계획을 만들려면 다음 절차를 사용하세요.  
+ Windows 10 서비스 대시보드에서 기본 서비스 계획을 만들 수 있습니다. 이름, 컬렉션(크기별로 가장 작은 것부터 상위&10;개의 컬렉션만 표시), 배포 패키지(가장 최근에 수정한 순서별로 상위&10;개의 패키지만 표시), 준비 상태를 지정하면 Configuration Manager에서 기타 설정에 대해서는 기본값을 갖는 서비스 계획을 만듭니다. 서비스 계획 만들기 마법사를 시작하여 모든 설정을 구성할 수도 있습니다. 서비스 계획 만들기 마법사를 사용하여 서비스 계획을 만들려면 다음 절차를 사용하세요.  
 
 > [!NOTE]  
 >  Configuration Manager 버전 1602부터, 높은 위험 수준의 배포에 대한 동작을 관리할 수 있습니다. 위험 수준이 높은 배포는 자동으로 설치되며 원치 않는 결과가 발생할 수 있는 배포입니다. 예를 들어 용도가 **필수** 이며 Windows 10을 배포하는 작업 순서는 위험 수준이 높은 배포로 간주됩니다. 자세한 내용은 [높은 위험 수준의 배포를 관리하는 설정](../../protect/understand/settings-to-manage-high-risk-deployments.md)을 참조하세요.  
@@ -277,6 +277,6 @@ Windows 10 서비스 대시보드에서 기본 서비스 계획을 만들거나 
 
 
 
-<!--HONumber=Dec16_HO4-->
+<!--HONumber=Jan17_HO4-->
 
 

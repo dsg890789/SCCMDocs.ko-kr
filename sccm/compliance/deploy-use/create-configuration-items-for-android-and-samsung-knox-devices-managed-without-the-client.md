@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager 클라이언트 없이 관리되는 Android 및 Samsung KNOX Standard 장치에 대한 구성 항목 만들기 | Microsoft 문서"
+title: "Android 및 Samsung KNOX Standard에 대한 구성 항목 만들기 - Configuration Manager | Microsoft 문서"
 description: "System Center Configuration Manager Android 및 Samsung KNOX Standard 구성 항목을 사용하여 장치 설정을 관리할 수 있습니다."
 ms.custom: na
 ms.date: 12/14/2016
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: d023df79e0bcb7d5583224802976a5059c4ee753
-ms.openlocfilehash: c699c9c807f864fe161255522a8d694ab71d1a4e
+ms.sourcegitcommit: 35e48666f4d1a2363304650f960531fd0630a291
+ms.openlocfilehash: 12f5db5839fe66fb07d7055af45f8020abd43e24
 
 
 ---
@@ -109,7 +109,7 @@ System Center Configuration Manager **Android 및 Samsung KNOX** 구성 항목�
 
 ### <a name="browser"></a>브라우저
 |설정|세부 정보|  
-|-------------|-------------| 
+|-------------|-------------|
 |**웹 브라우저 허용**|장치의 기본 웹 브라우저 사용 가능 여부를 지정합니다.|
 |**자동 채우기**|웹 브라우저의 자동 채우기 기능을 사용할 수 있습니다.|
 |**액티브 스크립팅**|장치 웹 브라우저가 액티브 스크립팅을 사용할 수 있습니다.|
@@ -135,9 +135,9 @@ System Center Configuration Manager **Android 및 Samsung KNOX** 구성 항목�
 |**카메라**|장치 카메라를 사용할 수 있습니다.<br /><br /> Android 및 Samsung KNOX Standard 장치에 적용됩니다.|  
 |**NFC(근거리 통신)**|장치에서 지원하는 경우 근거리 통신을 사용하는 작업을 수행할 수 있습니다.|
 |**YouTube**|장치에 YouTube 앱을 사용할 수 있습니다.<br /><br /> Samsung KNOX Standard 장치에만 적용됩니다.|  
-|**전원 끄기**|장치 전원을 끌 수 있습니다.<br /><br /> Samsung KNOX Standard 장치에만 적용됩니다.| 
+|**전원 끄기**|장치 전원을 끌 수 있습니다.<br /><br /> Samsung KNOX Standard 장치에만 적용됩니다.|
 
-### <a name="roaming"></a>로밍 
+### <a name="roaming"></a>로밍
 |설정|세부 정보|  
 |-------------|-------------|
 |**음성 로밍**|장치가 셀룰러 네트워크에 있을 때 음성 로밍을 허용합니다.|
@@ -199,6 +199,6 @@ System Center Configuration Manager **Android 및 Samsung KNOX** 구성 항목�
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

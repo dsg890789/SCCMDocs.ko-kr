@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager에서 구성 기준을 만들고 배포하기 위한 일반 작업 | System Center Configuration Manager"
+title: "구성 기준에 대한 일반 작업 - Configuration Manager | Microsoft 문서"
 description: "System Center Configuration Manager 구성 기준을 만들고 배포하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 0d66240408dcd65576954ffb27395d3f05f5a41e
+ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
+ms.openlocfilehash: 5682cacb43af5bf9248446f1c35b08f137bdae9d
 
 
 ---
@@ -93,6 +93,6 @@ ms.openlocfilehash: 0d66240408dcd65576954ffb27395d3f05f5a41e
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

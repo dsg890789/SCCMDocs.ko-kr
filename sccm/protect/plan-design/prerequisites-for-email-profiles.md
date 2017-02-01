@@ -1,5 +1,5 @@
 ---
-title: "메일 프로필 필수 조건 | Microsoft 문서"
+title: "메일 프로필에 대한 필수 조건 | Microsoft 문서"
 description: "System Center Configuration Manager의 메일 프로필과 해당 외부 종속성 및 제품 내 종속성에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,12 +17,12 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
-ms.openlocfilehash: a41bec089897717a7e73e751d58275af9e0a5fa3
+ms.sourcegitcommit: 0fa837c68eb073d2ceaf48c938137a94141a102e
+ms.openlocfilehash: bdb7f78480f73bc4559c4ff49ecb7b047581780a
 
 
 ---
-# <a name="prerequisites-for-email-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 메일 프로필에 대한 필수 조건
+# <a name="email-profile-prerequisites"></a>메일 프로필 필수 조건
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -43,6 +43,6 @@ System Center Configuration Manager의 메일 프로필에는 외부 및 제품 
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

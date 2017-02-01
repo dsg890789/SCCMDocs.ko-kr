@@ -1,5 +1,5 @@
 ---
-title: "메일 액세스 관리 | Microsoft 문서"
+title: "Configuration Manager를 사용하여 Exchange 메일 액세스 관리 | Microsoft 문서"
 description: "System Center Configuration Manager 조건부 액세스를 사용하여 Exchange 메일에 대한 액세스를 관리하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/04/2016
@@ -16,12 +16,12 @@ author: andredm7
 ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: c13c6268fa76ade7feb0981f9c4a6e325e393aca
-ms.openlocfilehash: 0bbe25598f38f9cf3c15375748fee09c43dfb928
+ms.sourcegitcommit: 0fa837c68eb073d2ceaf48c938137a94141a102e
+ms.openlocfilehash: 26179c0c92773dc0b69be500c165a52e15afc6fd
 
 
 ---
-# <a name="manage-email-access-in-system-center-configuration-manager"></a>System Center Configuration Manager의 메일 액세스 관리
+# <a name="manage-email-access"></a>전자 메일 액세스 관리 
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -363,6 +363,6 @@ Office 데스크톱 응용 프로그램은 다음을 실행하는 Exchange Onlin
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager 클라이언트를 실행하지 않는 장치의 준수 관리를 위한 일반 작업 | System Center Configuration Manager"
+title: "클라이언트가 없는 장치에 대한 일반 준수 관리 작업 - Configuration Manager | Microsoft 문서"
 description: "몇 가지 일반적인 시나리오를 진행하여 System Center Configuration Manager의 준수 설정에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: f69250fbe51ea8902a0446a613d66be390ea7434
+ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
+ms.openlocfilehash: c206c1ff2258e0e7f0c42fe5f6a6327e850261c4
 
 
 ---
@@ -101,7 +101,7 @@ ms.openlocfilehash: f69250fbe51ea8902a0446a613d66be390ea7434
 
  이제 [System Center Configuration Manager에서 구성 기준을 만들고 배포하기 위한 일반 작업](../../compliance/plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md) 항목의 내용을 참조하여, 만든 구성을 장치에 쉽게 배포할 수 있습니다.  
 
-## <a name="scenarios-for-android-and-samsung-knox-devices-managed-without-the-configuration-manager-client"></a>Configuration Manager 클라이언트 없이 관리되는 Android 및 삼성 KNOX 장치에 대한 시나리오  
+## <a name="scenarios-for-android-and-samsung-knox-standard-devices-managed-without-the-configuration-manager-client"></a>Configuration Manager 클라이언트 없이 관리되는 Android 및 Samsung KNOX Standard 장치에 대한 시나리오  
 
 ### <a name="scenario-require-a-password-on-all-android-5-devices"></a>시나리오: 모든 Android 5 장치에서 암호 필요  
  이 시나리오에서는 사용자가 자신의 장치에서 6자 이상의 암호를 구성하도록 요구하는 Android 5 장치에 대한 구성 항목을 만듭니다. 또한 사용자가 잘못된 암호를 5회 입력하면 장치가 초기화됩니다.  
@@ -126,7 +126,6 @@ ms.openlocfilehash: f69250fbe51ea8902a0446a613d66be390ea7434
 
 
 
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

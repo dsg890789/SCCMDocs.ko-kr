@@ -1,8 +1,8 @@
 ---
-title: "System Center Configuration Manager를 사용하여 새 컴퓨터(운영 체제 미설치 컴퓨터)에 새 버전의 Windows 설치 | Microsoft 문서"
-description: "PXE, OEM 또는 독립 실행형 미디어를 사용하여 새 컴퓨터에 운영 체제를 설치하려면 System Center Configuration Manager에서 다음 단계를 따르세요."
+title: "새 컴퓨터에 Windows 설치 - Configuration Manager | Microsoft 문서"
+description: "Configuration Manager에서 PXE, OEM 또는 독립 실행형 미디어를 사용하여 새 컴퓨터에 운영 체제를 설치(완전 복구)할 수 있습니다."
 ms.custom: na
-ms.date: 12/06/2016
+ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 06ade037c580d64503e6b8b5c3bf31004ab0650b
-ms.openlocfilehash: 93b3d99e7391feefc3d706f15f0fe8f8df3b75ac
+ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
+ms.openlocfilehash: 584dad7d8b05a2da9f7a66b73028ae99ff1a594f
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 93b3d99e7391feefc3d706f15f0fe8f8df3b75ac
 
 이 항목에서는 새 컴퓨터에 운영 체제를 설치하기 위한 System Center Configuration Manager의 일반 단계를 제공합니다. 이 시나리오에서는 PXE, OEM 또는 독립 실행형 미디어와 같은 다양한 여러 배포 방법 중에서 선택할 수 있습니다. 올바른 운영 체제 배포 시나리오인지 확실하지 않으면 [엔터프라이즈 운영 체제를 배포하는 시나리오](scenarios-to-deploy-enterprise-operating-systems.md)를 참조하세요.  
 
- 다음 섹션을 사용하여 새 버전의 Windows로 기존 컴퓨터를 새로 고치세요.  
+다음 섹션을 사용하여 새 버전의 Windows로 기존 컴퓨터를 새로 고치세요.  
 
 ##  <a name="a-namebkmkplana-plan"></a><a name="BKMK_Plan"></a> 계획  
 
@@ -81,6 +81,6 @@ ms.openlocfilehash: 93b3d99e7391feefc3d706f15f0fe8f8df3b75ac
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

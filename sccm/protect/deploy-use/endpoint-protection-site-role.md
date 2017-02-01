@@ -1,5 +1,5 @@
 ---
-title: "Endpoint Protection 구성 | System Center Configuration Manager"
+title: "Endpoint Protection 지점 사이트 시스템 역할 만들기 | Microsoft 문서"
 description: "Configuration Manager 클라이언트 컴퓨터에서 보안 및 맬웨어를 관리하도록 Endpoint Protection을 구성하는 방법을 알아봅니다."
 defintion: 
 definition: 
@@ -18,8 +18,8 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 3346a5ed596a62b0a74774a568739228d75ac050
+ms.sourcegitcommit: 9db108fb2d4d16013f416b8ee87a57ff1c91e21f
+ms.openlocfilehash: 25ce24d16bd55366d23a176b21b38ed53aa40644
 
 
 ---
@@ -98,6 +98,6 @@ ms.openlocfilehash: 3346a5ed596a62b0a74774a568739228d75ac050
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

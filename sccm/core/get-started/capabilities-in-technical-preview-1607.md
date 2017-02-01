@@ -1,8 +1,8 @@
 ---
-title: "System Center Configuration Manager용 Technical Preview 1607의 기능 | Microsoft 문서"
+title: "Technical Preview 1607 Configuration Manager의 기능"
 description: "System Center Configuration Manager용 Technical Preview 버전 1607에서 사용 가능한 기능에 대해 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.technology:
 - configmgr-other
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f6e34e39d267f3bba26d6aa6a912eb4ba4aa3ab2
-ms.openlocfilehash: 1f91cda68204346913bee382a8bbf52b5a58e227
+ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
+ms.openlocfilehash: 54fc16c104ab25f3650ad1c38a2044abaee96a31
 
 ---
 # <a name="capabilities-in-technical-preview-1607-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1607의 기능
@@ -42,7 +42,7 @@ ms.openlocfilehash: 1f91cda68204346913bee382a8bbf52b5a58e227
 
 1. [기존 버전 업그레이드 정책 항목](/sccm/compliance/deploy-use/upgrade-windows-version)의 정보를 사용하여 버전 업그레이드 정책을 만듭니다.
 2. Configuration Manager 클라이언트를 실행하는 Windows 10 PC에 이 정책을 배포합니다.
-정책이 대상 Windows PC에 도달하면 2시간 내에 PC가 다시 시작되어 업그레이드를 적용합니다. 현재 이러한 다시 시작을 무시할 수 없습니다. 정책을 배포할 모든 사용자에게 알리거나 사용자의 근무 시간 외에 정책이 실행되도록 예약해야 합니다.
+정책이 대상 Windows PC에 도달하면&2;시간 내에 PC가 다시 시작되어 업그레이드를 적용합니다. 현재 이러한 다시 시작을 무시할 수 없습니다. 정책을 배포할 모든 사용자에게 알리거나 사용자의 근무 시간 외에 정책이 실행되도록 예약해야 합니다.
 
 ### <a name="known-issue-with-this-release"></a>이 릴리스의 알려진 문제
 Configuration Manager 클라이언트 설정에서 **버전 업그레이드**에 대한 설정을 볼 수 있습니다. 이 릴리스에서는 이러한 설정이 작동하지 않습니다. 위에 나와 있는 지침을 사용하여 Windows 10을 최신 버전으로 업그레이드합니다.
@@ -79,6 +79,6 @@ Technical Preview 버전 1607에서는 이미지 다중 장치(예: 여러 장�
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

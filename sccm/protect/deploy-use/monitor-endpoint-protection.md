@@ -1,5 +1,5 @@
 ---
-title: "Endpoint Protection 모니터링 | Microsoft 문서"
+title: "Endpoint Protection 상태 모니터링 | Microsoft 문서"
 description: "System Center Configuration Manager 계층 구조에서 Endpoint Protection을 모니터링하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 12/9/2016
@@ -16,12 +16,12 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 9fcbc0bb9c8ccd4265381ca4db7a363c8ae3b54a
-ms.openlocfilehash: 590d95f82a30167dcc0d5191feaa39ecab2b3136
+ms.sourcegitcommit: 0fa837c68eb073d2ceaf48c938137a94141a102e
+ms.openlocfilehash: 99e266e44f718d97c2a6e61e8e6816752751ed7b
 
 
 ---
-# <a name="how-to-monitor-endpoint-protection-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Endpoint Protection을 모니터링하는 방법
+# <a name="how-to-monitor-endpoint-protection-status"></a>Endpoint Protection 상태를 모니터링하는 방법
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -84,6 +84,6 @@ ms.openlocfilehash: 590d95f82a30167dcc0d5191feaa39ecab2b3136
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

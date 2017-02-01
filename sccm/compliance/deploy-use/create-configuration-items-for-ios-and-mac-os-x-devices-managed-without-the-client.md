@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager 클라이언트 없이 관리되는 iOS 및 Mac OS X 장치에 대한 구성 항목 만들기 | Microsoft 문서"
+title: "클라이언트가 없는 iOS/Mac에 대한 구성 항목 만들기 - Configuration Manager | Microsoft 문서"
 description: "System Center Configuration Manager iOS 및 Mac OS X 구성 항목을 사용하여 iOS 및 Mac OS X 장치에 대한 설정을 관리할 수 있습니다."
 ms.custom: na
 ms.date: 12/14/2016
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: d023df79e0bcb7d5583224802976a5059c4ee753
-ms.openlocfilehash: ea4024aaa07d40781663725127d64388055c6501
+ms.sourcegitcommit: 35e48666f4d1a2363304650f960531fd0630a291
+ms.openlocfilehash: 0614753a68e98675ccae99b792b03481f4ca7ab1
 
 
 ---
@@ -80,7 +80,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
 |**최소 암호 길이(문자 수)**|암호의 최소 길이입니다.|  
 |**다음 기간 후 암호 만료(일)**|암호를 변경해야 할 때까지의 기간(일)입니다.|  
 |**저장한 암호 수**|이전에 사용한 암호를 다시 사용하지 못하도록 설정합니다.|  
-|**다음 로그온 실패 횟수 후 장치 초기화**|이 횟수만큼 로그인에 실패하면 장치를 초기화합니다.<br>(iOS에만 해당)| 
+|**다음 로그온 실패 횟수 후 장치 초기화**|이 횟수만큼 로그인에 실패하면 장치를 초기화합니다.<br>(iOS에만 해당)|
 |**다음 유휴 시간 후 장치 잠그기**|장치가 자동으로 잠길 때까지 비활성 상태로 유지되는 시간(분)을 지정합니다.|
 |**암호 복잡도**|'1234' 등의 PIN을 지정할 수 있는지 아니면 강력한 암호를 입력해야 하는지를 선택합니다.|
 |**단순 암호 허용**|'0000' 및 '1234'와 같은 단순한 암호를 사용할 수 있도록 지정합니다.|
@@ -370,6 +370,6 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

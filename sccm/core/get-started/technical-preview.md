@@ -1,8 +1,8 @@
 ---
-title: System Center Configuration Manager Technical Preview
+title: "System Center Configuration Manager Technical Preview | Microsoft 문서"
 description: "System Center Configuration Manager에서 새로운 기능을 테스트 시험해 볼 수 있는 기술 미리 보기 릴리스에 대해 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 1/20/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 39a9cde3bd955c84f301d25258b413fecaa4393b
-ms.openlocfilehash: 2aa78c20c919d04401f663063860df06c5262048
+ms.sourcegitcommit: 8e4ccaf26b83896d12efcbd7ebd4bda4d4bf6675
+ms.openlocfilehash: d7d03c4494338a1d4583b6c82d3d5009b7785cfe
 
 
 ---
@@ -134,39 +134,61 @@ ms.openlocfilehash: 2aa78c20c919d04401f663063860df06c5262048
 
  |기능|기술 미리 보기 버전|현재 분기 버전|  
  |----------------|---------------------|--------------------|
- |자동 배포 규칙의 콘텐츠 크기에 따라 필터링|[Tech Preview 1610](capabilities-in-technical-preview-1610.md#filter-by-content-size-in-automatic-deployment-rules)|![추가되지 않음](media/Red_X.gif)|
- |필수 소프트웨어 대화 상자에 대한 향상된 기능|[Tech Preview 1610](capabilities-in-technical-preview-1610.md#improved-functionality-for-required-software-dialogs)|![추가되지 않음](media/Red_X.gif)|
- |이전에 승인된 응용 프로그램 요청 거부|[Tech Preview 1610](capabilities-in-technical-preview-1610.md#deny-previously-approved-application-requests)|![추가되지 않음](media/Red_X.gif)|
- |자동 업그레이드에서 클라이언트 제외|[Tech Preview 1610](capabilities-in-technical-preview-1610.md#exclude-clients-from-automatic-upgrade)|![추가되지 않음](media/Red_X.gif)|
+ |소프트웨어 업데이트 지점에 대한 향상된 경계 그룹 | [Tech Preview 1701](capabilities-in-technical-preview-1701.md#boundary-groups-improvements-for-software-update-points)    |![추가되지 않음](media/Red_X.gif)  |
+ |하드웨어 인벤토리를 통해 UEFI 정보 수집 | [Tech Preview 1701](capabilities-in-technical-preview-1701.md#hardware-inventory-collects-uefi-information)|![추가되지 않음](media/Red_X.gif)  |
+ |운영 체제 배포 향상| [Tech Preview 1701](capabilities-in-technical-preview-1701.md#improvements-to-operating-system-deployment)|![추가되지 않음](media/Red_X.gif)  |
+ |클라우드 기반 배포 지점에서 소프트웨어 업데이트 호스트| [Tech Preview 1701](capabilities-in-technical-preview-1701.md#host-software-updates-on-cloud-based-distribution-points)|![추가되지 않음](media/Red_X.gif) |
+ |관리 지점을 통해 장치 상태 증명 데이터의 유효성 검사| [Tech Preview 1701](capabilities-in-technical-preview-1701.md#validate-device-health-attestation-data-via-management-points)|![추가되지 않음](media/Red_X.gif) |
+ |Microsoft Azure Government 클라우드용 OMS 커넥터 |[Tech Preview 1701](capabilities-in-technical-preview-1701.md#use-the-oms-connector-for-microsoft-azure-government-cloud) |![추가되지 않음](media/Red_X.gif) |
+ |OData 끝점 데이터 액세스 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#odata-endpoint-data-access)|![추가되지 않음](media/Red_X.gif)|
+ |데이터 웨어하우스 서비스 지점 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#the-data-warehouse-service-point)|![추가되지 않음](media/Red_X.gif)|
+ |콘텐츠 라이브러리 정리 도구 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#content-library-cleanup-tool)|![추가되지 않음](media/Red_X.gif)|
+ |콘솔 내 검색의 향상된 기능 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#improvements-for-in-console-search)|![추가되지 않음](media/Red_X.gif)|
+ |지정한 프로그램이 실행되는 경우 응용 프로그램 설치 차단|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#prevent-installation-of-an-application-if-a-specified-program-is-running)|![추가되지 않음](media/Red_X.gif)|
+ |최종 사용자에 대한 새 비즈니스용 Windows Hello 알림|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#new-windows-hello-for-business-notification-for-end-users)|![추가되지 않음](media/Red_X.gif)|
+ |Configuration Manager의 비즈니스용 Windows 스토어 지원|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#windows-store-for-business-support-in-configuration-manager)|![추가되지 않음](media/Red_X.gif)|
+ |작업 순서가 실패할 경우 이전 페이지로 돌아가기|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#return-to-previous-page-when-a-task-sequence-fails)|![추가되지 않음](media/Red_X.gif)|
+ |Windows 10 업데이트에 대한 빠른 설치 파일 지원|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#express-installation-files-support-for-windows-10-updates)|![추가되지 않음](media/Red_X.gif)|
+ |Azure Active Directory 등록|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#azure-active-directory-onboarding)|![추가되지 않음](media/Red_X.gif)|
+|장치 등록에 대한 다단계 인증 구성 변경|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#change-to-configuring-multi-factor-authentication-for-device-enrollment)|![추가되지 않음](media/Red_X.gif)|
+|배포 및 작업 순서에 대한 콘텐츠 사전 캐시 |[Tech Preview 1611](capabilities-in-technical-preview-1611.md#pre-cache-content-for-available-deployments-and-task-sequences)|![추가되지 않음](media/Red_X.gif)|
+ |Windows Defender 구성 설정|[Tech Preview 1610](capabilities-in-technical-preview-1610.md#windows-defender-configuration-settings)|[버전 1610](/sccm/compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client)|
+ |관리자 콘솔에서 정책 동기화 요청|[Tech Preview 1610](capabilities-in-technical-preview-1610.md#request-policy-sync-from-administrator-console)|[버전 1610](/sccm/mdm/deploy-use/sync-intune-device)|
+ |모든 회사 소유 장치 노드에 대한 추가 보안 역할 지원|[Tech Preview 1610](capabilities-in-technical-preview-1610.md#additional-security-role-support)|[버전 1610](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management#new-hybrid-features-in-november-2016)|
+ |Windows 10 VPN 프로필에 대한 조건부 액세스|[Tech Preview 1610](capabilities-in-technical-preview-1610.md#conditional-access-for-windows-10-vpn-profiles)|[버전 1610](/sccm/protect/deploy-use/create-vpn-profiles#configure-the-authentication-method-for-the-vpn-profile)|
+ |자동 배포 규칙의 콘텐츠 크기에 따라 필터링|[Tech Preview 1610](capabilities-in-technical-preview-1610.md#filter-by-content-size-in-automatic-deployment-rules)|[버전 1610](/sccm/core/plan-design/changes/whats-new-in-version-1610#filter-by-content-size-in-automatic-deployment-rules) |
+ |필수 소프트웨어 대화 상자에 대한 향상된 기능|[Tech Preview 1610](capabilities-in-technical-preview-1610.md#improved-functionality-for-required-software-dialogs)|[버전 1610](/sccm/apps/deploy-use/deploy-applications)|
+ |이전에 승인된 응용 프로그램 요청 거부|[Tech Preview 1610](capabilities-in-technical-preview-1610.md#deny-previously-approved-application-requests)|[버전 1610](/sccm/apps/deploy-use/deploy-applications)|
+ |자동 업그레이드에서 클라이언트 제외|[Tech Preview 1610](capabilities-in-technical-preview-1610.md#exclude-clients-from-automatic-upgrade)|[버전 1610](/sccm/core/clients/manage/upgrade/exclude-clients-windows)|
  |Endpoint Protection 개선|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#improvements-to-endpoint-protection)|![추가되지 않음](media/Red_X.gif)|
  |등록된 장치 수 증가|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#increased-number-of-enrolled-devices)|![추가되지 않음](media/Red_X.gif)|
- |추가 Apple DEP 설정|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#additional-apple-dep-settings)|![추가되지 않음](media/Red_X.gif)|
- |Configuration Manager와 비즈니스용 Windows 스토어 통합 향상|[Tech Preview 1609](capabilities-in-technical-preview-1609.md)|![추가되지 않음](media/Red_X.gif)|
- |구성 항목의 새 준수 설정|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#new-compliance-settings-for-configuration-items)|![추가되지 않음](media/Red_X.gif)|
- |Upgrade Analytics 통합|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#integration-with-upgrade-analytics)|![추가되지 않음](media/Red_X.gif)|
+ |추가 Apple DEP 설정|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#additional-apple-dep-settings)|[버전 1610](/sccm/mdm/deploy-use/ios-device-enrollment-program-for-hybrid)|
+ |Configuration Manager와 비즈니스용 Windows 스토어 통합 향상|[Tech Preview 1609](capabilities-in-technical-preview-1609.md)|[버전 1610](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)|
+ |구성 항목의 새 준수 설정|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#new-compliance-settings-for-configuration-items)|[버전 1610](/sccm/compliance/deploy-use/create-configuration-items)|
+ |Upgrade Analytics 통합|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#integration-with-upgrade-analytics)|[버전 1610](/sccm/core/clients/manage/upgrade/upgrade-analytics)|
  |Windows 10 VPN 하이브리드 프로필에 대한 네이티브 연결 형식|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#native-connection-types-for-windows-10-vpn-hybrid-profiles)|![추가되지 않음](media/Red_X.gif)|
- |경계 그룹의 향상된 기능|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#improvements-for-boundary-groups)|![추가되지 않음](media/Red_X.gif)|
- |Office 365 클라이언트 관리 대시보드|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#office-365-client-management-dashboard)|![추가되지 않음](media/Red_X.gif)|
- |클라이언트에 Office 365 앱 배포|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#ceploy-office-365-apps-to-clients)|![추가되지 않음](media/Red_X.gif)|
- |BIOS-UEFI 변환의 향상된 기능|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#improvements-for-bios-to-uefi-conversion)|![추가되지 않음](media/Red_X.gif)|
- |Intune 준수 차트|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#intune-compliance-charts)|![추가되지 않음](media/Red_X.gif)|
- |ConfigMgr 클라이언트 캡처 준비 작업 순서 단계의 향상 기능|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-the-prepare-configmgr-client-for-capture-task-sequence-step)|![추가되지 않음](media/Red_X.gif)|
- |소프트웨어 센터 개선|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-software-center)|![추가되지 않음](media/Red_X.gif)|
+ |경계 그룹의 향상된 기능|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#improvements-for-boundary-groups)|[버전 1610](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#BKMK_BoundaryGroups)|
+ |Office 365 클라이언트 관리 대시보드|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#office-365-client-management-dashboard)|[버전 1610](/sccm/sum/deploy-use/manage-office-365-proplus-updates#office-365-client-management-dashboard)|
+ |클라이언트에 Office 365 앱 배포|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#deploy-office-365-apps-to-clients)|![추가되지 않음](media/Red_X.gif)|
+ |BIOS-UEFI 변환의 향상된 기능|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#BKMK_UEFIConversion)|[버전 1610](/sccm/osd/deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion)|
+ |Intune 준수 차트|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#intune-compliance-charts)|[버전 1610](/sccm/protect/deploy-use/create-compliance-policy#monitor-the-compliance-policy)|
+ |ConfigMgr 클라이언트 캡처 준비 작업 순서 단계의 향상 기능|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-the-prepare-configmgr-client-for-capture-task-sequence-step)|[버전 1610](/sccm/osd/understand/task-sequence-steps#BKMK_PrepareConfigMgrClientforCapture)|
+ |소프트웨어 센터 개선|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-software-center)|[1610](/sccm/core/plan-design/changes/whats-new-in-version-1610#general-improvements-to-software-center)|
  |Asset Intelligence 개선|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-asset-intelligence)|![추가되지 않음](media/Red_X.gif)|
  |원격 제어 키보드 변환|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#remote-control-keyboard-translation)|![추가되지 않음](media/Red_X.gif)|
- |Windows 10 버전 업그레이드 정책의 향상 기능|[Tech Preview 1607](capabilities-in-technical-preview-1607.md#dmp_edition)|![추가되지 않음](media/Red_X.gif)|
- |소프트웨어 센터 대화 상자에 대한 사용자 지정 가능한 브랜딩|[Tech Preview 1607](capabilities-in-technical-preview-1607.md#customizable-branding-for-software-denter-dialogs)|![추가되지 않음](media/Red_X.gif)|  
+ |Windows 10 버전 업그레이드 정책의 향상 기능|[Tech Preview 1607](capabilities-in-technical-preview-1607.md#dmp_edition)|[버전 1610](/sccm/compliance/deploy-use/upgrade-windows-version)|
+ |소프트웨어 센터 대화 상자에 대한 사용자 지정 가능한 브랜딩|[Tech Preview 1607](capabilities-in-technical-preview-1607.md#customizable-branding-for-software-center-dialogs)|![추가되지 않음](media/Red_X.gif)|  
  |온-프레미스 모바일 장치 관리에 대한 여러 장치 관리 지점|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_onprem)|[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#on-premises-mobile-device-management)|
  |컬렉션으로 장치 자동 분류|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_category)|[버전 1606](/sccm/core/clients/manage/collections/automatically-categorize-devices-into-collections) |
- |필수 응용 프로그램 및 소프트웨어 업데이트 배포를 위한 유예 기간 적용|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_grace)|![추가되지 않음](media/Red_X.gif)|
+ |필수 응용 프로그램 및 소프트웨어 업데이트 배포를 위한 유예 기간 적용|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_grace)|[버전 1610](/sccm/apps/deploy-use/deploy-applications)|
  |Device Guard로 Configuration Manager를 관리되는 설치 프로그램으로 사용|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_devg)|![추가되지 않음](media/Red_X.gif)|
- |클라우드 프록시 서비스|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#cloud_proxy) | ![추가되지 않음](media/Red_X.gif)|  
+ |클라우드 관리 게이트웨이(이전의 클라우드 프록시 서비스)|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#cloud_proxy) | [버전 1610](/sccm/core/clients/manage/plan-cloud-management-gateway)|  
  |Configuration Manager에서 Office 365 클라이언트 에이전트 관리|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#manage_o365) |[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#software-updates)|  
  |OSDPreserveDriveLetter 작업 순서 변수는 사용되지 않습니다.|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#osdpreservedriveletter) |[버전 1606](/sccm/osd/understand/task-sequence-built-in-variables) |
  |업데이트 및 서비스 노드의 변경 내용|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#updatesandservicing)|[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#updates-and-servicing) |
  |Windows 10 장치를 위한 앱당 VPN|[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_PerAppVPN)|[버전 1606](/sccm/protect/deploy-use/create-vpn-profiles)|  
  |소프트웨어 업데이트 설치 작업 순서의 향상 기능|[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_InstallSU)|[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#operating-system-deployment)|  
- |ConfigMgr 클라이언트 캡처 준비 작업 순서 단계의 향상 기능 |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_PrepareConfigMgrClient)|![추가되지 않음](media/Red_X.gif) |
+ |ConfigMgr 클라이언트 캡처 준비 작업 순서 단계의 향상 기능 |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_PrepareConfigMgrClient)|[버전 1610](/sccm/osd/understand/task-sequence-steps#BKMK_PrepareConfigMgrClientforCapture) |
  |필수 응용 프로그램 배포를 위한 유예 기간 |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_Grace)|![추가되지 않음](media/Red_X.gif)|  
  |원격 장치 작업을 위한 새로운 환경 |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_Remote)|[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#device-configuration-and-protection)|  
  |비즈니스용 Windows 스토어 앱 |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_WSFB)|[버전 1606](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)|  
@@ -182,7 +204,7 @@ ms.openlocfilehash: 2aa78c20c919d04401f663063860df06c5262048
  |비즈니스용 Windows 스토어에서 대량 구매 앱 관리| [Tech Preview 1604](capabilities-in-technical-preview-1604.md#BKMK_WindowsVPP)|[버전 1606](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)|  
  |Microsoft Passport for Work 관리의 개선 사항|[Tech Preview 1604](capabilities-in-technical-preview-1604.md#BKMK_PFW)|[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#device-configuration-and-protection)|  
  |클라이언트에서 새 소프트웨어 업데이트 지점으로 전환하는 옵션|[Tech Preview 1604](capabilities-in-technical-preview-1604.md#bkmk_switchsup)|[버전 1606](/sccm/sum/plan-design/plan-for-software-updates#BKMK_ManuallySwitchSUPs)|  
- |클라이언트 캐시 설정 및 클라이언트 피어 캐시를 관리하는 클라이언트 설정 |[Tech Preview 1604](capabilities-in-technical-preview-1604.md#bkmk_peercache)|[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#administration)|  
+ |클라이언트 캐시 설정 및 클라이언트 피어 캐시를 관리하는 클라이언트 설정 |[Tech Preview 1604](capabilities-in-technical-preview-1604.md#bkmk_peercache)|클라이언트 설정: [버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#administration)<br/>피어 캐시: [버전 1610](/sccm/core/plan-design/hierarchy/client-peer-cache)|  
  |KSP로서 Passport for Work에 대한 지원 |[Tech Preview 1604](capabilities-in-technical-preview-1604.md#bkmk_passport)|[버전 1606](/sccm/protect/deploy-use/create-certificate-profiles)|  
  |온-프레미스 장치 상태 증명|[Tech Preview 1604](capabilities-in-technical-preview-1604.md#bkmk_onpremdha)|[버전 1606](/sccm/core/servers/manage/health-attestation)|  
  |Android 장치에 대한 SmartLock 설정|[Tech Preview 1604](capabilities-in-technical-preview-1604.md#BKMK_Smart)|[버전 1606](/sccm/compliance/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client#android-and-samsung-knox-configuration-item-settings-reference)|  
@@ -209,6 +231,6 @@ ms.openlocfilehash: 2aa78c20c919d04401f663063860df06c5262048
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO3-->
 
 
