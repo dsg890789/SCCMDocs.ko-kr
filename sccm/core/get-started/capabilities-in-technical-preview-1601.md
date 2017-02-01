@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 3bf44f850722afdb8dfe5922c8ceff11c9b56d08
-ms.openlocfilehash: 7321645f17a143afe2fd848f45511a374de78c4b
+ms.sourcegitcommit: 52d2e088b8db3c2e9a0af640ca3db72b9fd7af60
+ms.openlocfilehash: b250456c92f77bf76a56b32fedafa934096abe2e
 
 ---
 # <a name="capabilities-in-technical-preview-1601-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1601의 기능
@@ -28,7 +28,7 @@ ms.openlocfilehash: 7321645f17a143afe2fd848f45511a374de78c4b
 
  **Technical Preview의 알려진 문제:**  
 
--   **클라이언트 업데이트 옵션**을 관리하여 사전 프로덕션 클라이언트를 프로덕션으로 승격하는 경우 해당 확인란에 실제 클라이언트 빌드 번호 대신 클라이언트 버전 0이 표시됩니다. 올바른 사전 프로덕션 클라이언트 버전은 이 옵션 위의 화면에 표시되며, 이 옵션을 선택하면 프로덕션으로 승격되는 클라이언트 버전을 나타냅니다.  
+-   **클라이언트 업데이트 옵션**을 관리하여 사전 프로덕션 클라이언트를 프로덕션으로 승격하는 경우 해당 확인란에 실제 클라이언트 빌드 번호 대신 클라이언트 버전&0;이 표시됩니다. 올바른 사전 프로덕션 클라이언트 버전은 이 옵션 위의 화면에 표시되며, 이 옵션을 선택하면 프로덕션으로 승격되는 클라이언트 버전을 나타냅니다.  
 
 -   Technical Preview 1601로 업데이트하고 사전 프로덕션 컬렉션에서 Configuration Manager 클라이언트를 테스트하도록 선택하는 경우, 컬렉션에 대한 클라이언트 패키지는 업그레이드되지 않습니다. 이 문제는 Technical Preview 1601에서만 발생합니다.  
 
@@ -220,6 +220,6 @@ Technical Preview 1601부터는 Configuration Manager 콘솔에서 클라이언�
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

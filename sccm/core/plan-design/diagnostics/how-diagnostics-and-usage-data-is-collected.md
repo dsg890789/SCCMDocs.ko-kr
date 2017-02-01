@@ -1,8 +1,8 @@
 ---
-title: "진단 데이터 수집 | System Center Configuration Manager"
+title: "진단 데이터 수집 | Microsoft 문서"
 description: "System Center Configuration Manager에서 자체 진단 및 사용 현황 데이터를 수집하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 89292a11d003edd9e3a0eeb7fd367265a6b150b6
+ms.sourcegitcommit: 24a233516058e645df2a43623855665b97b041b0
+ms.openlocfilehash: 9c0165212fe34f460be2ce870d0542b616f3bc4d
 
 
 ---
@@ -37,6 +37,6 @@ System Center Configuration Manager에 대한 진단 및 사용 현황 데이터
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO5-->
 
 

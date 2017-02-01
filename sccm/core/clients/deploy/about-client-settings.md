@@ -17,8 +17,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 21eeba4d35f19930f26ed820295d6f142adae1ac
-ms.openlocfilehash: 6c63d63c5b5a7fc1406027dd9380ea799c1aa318
+ms.sourcegitcommit: d7265aec46474ba7fc317ddb5e20b91b7b134585
+ms.openlocfilehash: 36f6eb3fe48e904adf4d04450906fada9b477246
 
 ---
 # <a name="about-client-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 설정 정보
@@ -328,7 +328,11 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
     -   NOIDMIF 파일은 Windows\System32\CCM\Inventory\Noidmif 폴더에 있어야 합니다.  
 
     > [!NOTE]  
-    >  이 설정은 기본 클라이언트 설정에서만 사용할 수 있습니다.  
+    >  이 설정은 기본 클라이언트 설정에서만 사용할 수 있습니다. 
+
+-   **최대 임의 지연**
+
+    작업이 모든 클라이언트에서 동시에 수행되지 않도록 최대&2;시간마다 하드웨어 정보가 무작위로 수집됩니다. 작업이 수행되는 기간을 제한하기 위해 최대 지연을 설정할 수 있습니다.      
 
 ##  <a name="metered-internet-connections"></a>데이터 통신 연결  
  Windows 8 클라이언트 컴퓨터에서 데이터 통신 연결을 사용할 경우 해당 컴퓨터가 Configuration Manager 사이트와 통신하는 방식을 관리할 수 있습니다. 때로 인터넷 공급자는 사용자가 요금제 인터넷 연결을 사용할 경우 보내고 받는 데이터 양을 기준으로 요금을 청구하기도 합니다.  
@@ -532,7 +536,7 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
         -   **총 파일 크기(KB)가 다음을 초과하면 파일 컬렉션 중지**: 이를 초과하면 **이름** 아래 지정된 파일이 더 이상 수집되지 않는 파일 크기(KB)를 지정합니다.  
 
           > [!NOTE]  
-          >  사이트 서버에서는 가장 최근에 변경된 버전의 수집된 파일 5개를 수집하여 *&lt;Configuration Manager 설치 디렉터리\>*\Inboxes\Sinv.box\Filecol 디렉터리에 저장합니다. 마지막 소프트웨어 인벤토리가 수집된 이후로 파일이 변경되지 않은 경우 파일이 다시 수집되지 않습니다.  
+          >  사이트 서버에서는 가장 최근에 변경된 버전의 수집된 파일&5;개를 수집하여 *&lt;Configuration Manager 설치 디렉터리\>*\Inboxes\Sinv.box\Filecol 디렉터리에 저장합니다. 마지막 소프트웨어 인벤토리가 수집된 이후로 파일이 변경되지 않은 경우 파일이 다시 수집되지 않습니다.  
           >   
           >  소프트웨어 인벤토리는 20MB보다 큰 파일을 수집하지 않습니다.  
           >   
@@ -640,6 +644,6 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 

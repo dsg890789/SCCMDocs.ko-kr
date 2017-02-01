@@ -1,8 +1,8 @@
 ---
-title: "1606에 대한 진단 데이터 | System Center Configuration Manager"
+title: "1606에 대한 진단 데이터 | Microsoft 문서"
 description: "System Center Configuration Manager 버전 1606에서 수집하는 진단 및 사용 현황 데이터에 대해 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -34,8 +34,8 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 724b8717b92b460af1c2a92d5e3282b04810325e
+ms.sourcegitcommit: 688e05aae0e0b15b54835f8d64a98487f4d7b64d
+ms.openlocfilehash: 27eb4225b7e907772fa5ed8b209fc04fa9f3a677
 
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1606-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1606에 대한 진단 사용 현황 데이터 수집의 수준
@@ -48,13 +48,15 @@ System Center Configuration Manager 버전 1606에서는 **기본**, **고급**,
 
 
 > [!IMPORTANT]
->  Configuration Manager에서는 기본 또는 고급 수준에서 사이트 코드 또는 사이트 이름, IP 주소, 사용자 또는 컴퓨터 이름, 실제 주소 또는 메일 주소를 수집하지 않습니다. 전체 수준에서 이 정보가 수집되는 경우가 있어도 이는 특별한 목적이 있는 것은 아니며(잠재적으로 로그 파일 또는 메모리 스냅숏과 같은 고급 진단 정보에 포함됨) Microsoft에서는 이러한 정보를 사용자 식별, 연락 또는 광고 목적으로 사용하지 않습니다.
+>  Configuration Manager에서는 기본 또는 고급 수준에서 사이트 코드 또는 사이트 이름, IP 주소, 사용자 이름, 컴퓨터 이름, 실제 주소 또는 메일 주소를 수집하지 않습니다. 전체 수준에서 이 정보가 수집되는 경우가 있어도 이는 특별한 목적이 있는 것은 아닙니다(잠재적으로 로그 파일 또는 메모리 스냅숏과 같은 고급 진단 정보에 포함됨). Microsoft에서는 이러한 정보를 사용자 식별, 연락 또는 광고 목적으로 사용하지 않습니다.
 
 ##  <a name="a-namebkmkchangea-how-to-change-the-level"></a><a name="bkmk_change"></a> 수준을 변경하는 방법
  **사이트** 개체 클래스에 대한 **수정** 권한이 포함된 역할 기반 관리 범위를 가진 관리자는 Configuration Manager 콘솔의 진단 및 사용 현황 데이터 설정에서 수집된 데이터의 수준을 변경할 수 있습니다.
 
+   이렇게 하려면 콘솔에서 Backstage 탭(드롭다운 화살표가 있는 왼쪽 위 탭)으로 이동하고 **사용 현황 데이터**를 선택한 다음 사용할 데이터 수준을 선택합니다.  
+
 ##  <a name="a-namebkmklevel1a-level-1---basic"></a><a name="bkmk_level1"></a> 수준 1 - 기본
- 기본 수준에는 계층 구조에 대한 데이터가 포함되어 있으며, 설치 환경이나 업그레이드 환경을 개선하고 계층 구조에 적용할 수 있는 Configuration Manager 업데이트를 확인하는 데 필요합니다.
+ 기본 수준에는 계층 구조에 대한 데이터, 설치 환경이나 업그레이드 환경을 개선하는 데 필요한 데이터 및 계층 구조에 적용할 수 있는 Configuration Manager 업데이트를 확인할 수 있는 데이터가 포함됩니다.
 
  System Center Configuration Manager 버전 1606부터 이 수준에는 다음이 포함됩니다.
 
@@ -62,7 +64,7 @@ System Center Configuration Manager 버전 1606에서는 **기본**, **고급**,
  -   설정 정보:
       - 빌드, 설치 유형, 언어 팩, 사용하도록 설정한 기능  
 
-      -   업데이트 팩 배포 상태 및 오류, 다운로드 진행률 및 필수 조건 오류    
+      -   업데이트 팩 배포 상태 및 오류, 다운로드 진행률 및 필수 구성 요소 오류  
 
       -  업그레이드 후 스크립트의 버전
 
@@ -92,7 +94,7 @@ System Center Configuration Manager 버전 1606에서는 **기본**, **고급**,
 
 -   기본 응용 프로그램 및 배포 유형 수(총 앱, 여러 배포 유형을 사용하는 총 앱, 종속성을 가진 총 앱, 총 교체된 앱, 사용 중인 배포 기술 개수)
 
--   기본 OSD 수(이미지)
+-   기본 OSD(운영 체제 배포) 개수(이미지)
 
 -   배포 지점, 관리 지점 유형 및 기본 구성 정보(보호됨, 미리 구성됨, PXE, 멀티캐스트, SSL 상태, 풀/피어 배포 지점, MDM 사용, SSL 사용 등)
 
@@ -103,14 +105,14 @@ System Center Configuration Manager 버전 1606에서는 **기본**, **고급**,
 -  네트워크 검색 사용(사용 또는 사용 안 함)
 -  관리 콘솔:
 
-     -  콘솔 연결에 대한 통계(OS 버전, 언어, SKU 및 아키텍처, 시스템 메모리, 논리 프로세서 개수, 연결 사이트 ID, 설치된 .NET 버전 및 콘솔 언어 팩)    
+     -  콘솔 연결에 대한 통계(운영 체제 버전, 언어, SKU 및 아키텍처, 시스템 메모리, 논리 프로세서 개수, 연결 사이트 ID, 설치된 .NET 버전 및 콘솔 언어 팩)    
 
 
-- ***[새로운 기능]*** SQL 버전, 서비스 팩 수준, 버전, 데이터 정렬 ID, 문자 집합
+- ***[새로운 기능]*** SQL 버전, 서비스 팩 수준, 버전, 데이터 정렬 ID 및 문자 집합
 
 
 ##  <a name="a-namebkmklevel2a-level-2---enhanced"></a><a name="bkmk_level2"></a> 수준 2 - 고급
-고급 수준에는 기본적으로 다음과 같은 설정이 있습니다. 이 수준은 기본 수준에서 수집한 데이터 외에 기능별 데이터(사용 빈도 및 기간), Configuration Manager 클라이언트 설정(구성 요소 이름, 상태 및 폴링 간격과 같은 특정 설정) 및 소프트웨어 업데이트에 대한 기본 정보를 포함합니다.
+설정이 완료된 후에는 고급 수준이 기본값입니다. 이 수준은 기본 수준에서 수집한 데이터 외에 기능별 데이터(사용 빈도 및 기간), Configuration Manager 클라이언트 설정(구성 요소 이름, 상태 및 폴링 간격과 같은 특정 설정) 및 소프트웨어 업데이트에 대한 기본 정보를 포함합니다.
 
 이 수준에 포함된 정보는 Microsoft에서 향후 개선된 제품 및 서비스를 제공하기 위해 필요한 최소한의 데이터로 유용하게 사용할 수 있기 때문에 이 수준을 사용하는 것이 권장됩니다. 이 수준에서는 개체 이름(사이트, 사용자, 컴퓨터 또는 개체), 보안 관련 개체의 세부 정보 또는 소프트웨어 업데이트가 필요한 시스템 개수와 같은 취약성은 수집하지 않습니다.
 
@@ -118,7 +120,7 @@ System Center Configuration Manager 버전 1606부터 이 수준에는 다음이
 
 -   **응용 프로그램 관리:**  
 
-    -    조직 내에서 사용되는 배포 유형에 대한 기본 사용 현황/대상 지정 정보(사용자 및 장치 대상 지정, 필수 및 사용 가능, 범용 앱)  
+    -    조직 내에서 사용되는 배포 유형에 대한 기본 사용 현황/대상 지정 정보(사용자 및 장치 대상 지정, 필수 및 사용 가능, 유니버설 앱)  
 
     -   응용 프로그램 배포 정보(설치/제거, 승인 필요, 사용자 조작 사용/사용 안 함, 종속성, 대체)  
 
@@ -140,7 +142,7 @@ System Center Configuration Manager 버전 1606부터 이 수준에는 다음이
 
     -  응용 프로그램 정책 크기 및 복잡성 통계
 
-    - ***[새로운 기능]*** WSfB(비즈니스용 Windows 스토어) 앱 개수 및 동기화 통계(요약된 앱 유형 포함)  
+    - ***[새로운 기능]*** 비즈니스용 Windows 스토어 앱 개수 및 동기화 통계(요약된 앱 유형 포함)  
 
     - ***[새로운 기능]*** 경계 그룹 통계(빠른 정도, 느린 정도, 그룹별 개수)
 
@@ -150,7 +152,7 @@ System Center Configuration Manager 버전 1606부터 이 수준에는 다음이
 
     - ***[새로운 기능]*** 앱 대체, 최대 체인 깊이
 
-    - ***[새로운 기능]*** UDA 사용, 생성 방법
+    - ***[새로운 기능]*** UDA(Universal Data Access) 사용, 생성 방법
 
 
 
@@ -168,7 +170,7 @@ System Center Configuration Manager 버전 1606부터 이 수준에는 다음이
 
     - ***[새로운 기능]*** BIOS 사용 기간(년)
 
-    - ***[새로운 기능]*** OS 사용 기간(월)
+    - ***[새로운 기능]*** 운영 체제 사용 기간(월)
 
     - ***[새로운 기능]*** 소프트웨어 센터 작업 개수
 
@@ -186,9 +188,9 @@ System Center Configuration Manager 버전 1606부터 이 수준에는 다음이
 
 - ***[새로운 기능]*** **클라우드 서비스:**
 
-  - ***[새로운 기능]*** OMS에 동기화된 컬렉션 개수
+  - ***[새로운 기능]*** Operations Management Suite에 동기화되는 컬렉션 개수
 
-  - ***[새로운 기능]*** OMS 클라우드 커넥터 사용 여부
+  - ***[새로운 기능]*** Operations Management Suite 클라우드 커넥터를 사용하도록 설정할지 여부
 
 
 
@@ -211,9 +213,9 @@ System Center Configuration Manager 버전 1606부터 이 수준에는 다음이
     -   ***[업데이트된 기능]*** 기본 제공 설정을 참조하는 배포 개수(현재 재구성 설정 캡처)  
 
     -   ***[업데이트된 기능]*** 사용자 지정 설정에 대해 만들어진 규칙 및 배포 개수(현재 재구성 설정 캡처)  
-    -   배포된 단순 인증서 등록 프로토콜, VPN, WiFi, 인증서(.pfx) 및 준수 정책 템플릿 개수
+    -   배포된 SCEP(단순 인증서 등록 프로토콜), VPN, WiFi, 인증서(.pfx) 및 준수 정책 템플릿 개수
 
-    -  플랫폼별 SCEP 인증서, VPN, WiFi, 인증서(.pfx) 및 준수 정책 배포 개수
+    -  플랫폼별 SCEP 인증서, VPN, Wi-Fi, 인증서(.pfx) 및 준수 정책 배포 개수
 
     - ***[새로운 기능]*** Passport for Work 정책(생성됨, 배포됨)
 
@@ -234,7 +236,7 @@ System Center Configuration Manager 버전 1606부터 이 수준에는 다음이
 
 -   **Endpoint Protection:**  
 
-    -   Endpoint Protection 맬웨어 방지 및 Windows 방화벽 정책 사용 현황(그룹에 할당된 고유 정책 수, 정책에 포함된 설정 정보는 포함되지 않음)  
+    -   Endpoint Protection 맬웨어 방지 및 Windows 방화벽 정책 사용 현황(그룹에 할당된 고유 정책 수)<br /><br /> 여기에는 정책에 포함된 설정 정보는 포함되지 않습니다.  
 
     -   Endpoint Protection 배포 오류(Endpoint protection 정책 배포 오류 코드 개수)  
 
@@ -242,12 +244,12 @@ System Center Configuration Manager 버전 1606부터 이 수준에는 다음이
 
     -   Endpoint Protection 기능에 대해 구성된 경고 개수  
 
-    - ***[새로운 기능]*** ATP 정책(정책 개수, 배포 여부)
+    - ***[새로운 기능]*** ATP(Advanced Threat Protection) 정책(정책 개수 및 정책 배포 여부)
 
 
 -   ***[제거된 기능]*** **MAM(모바일 응용 프로그램 관리):**  
 
-    -   ***[제거된 기능]*** 운영 체제별 MAM 사용 Office 및 LOB(기간 업무) 응용 프로그램과 정책 개수  
+    -   ***[제거된 기능]*** 운영 체제별 MAM 사용 Office 응용 프로그램, LOB(기간 업무) 응용 프로그램 및 정책의 개수  
 
     -   ***[제거된 기능]*** MAM 응용 프로그램/정책 배포 개수  
 
@@ -262,9 +264,9 @@ System Center Configuration Manager 버전 1606부터 이 수준에는 다음이
 
 -   **MDM(모바일 장치 관리):**  
 
-    -   실행된 모바일 장치 작업(잠금, 핀 다시 설정, 초기화, 사용 중지) 명령 개수  
+    -   실행된 모바일 장치 작업(잠금, 핀 다시 설정, 초기화, 사용 중지 명령) 개수  
 
-    -   Configuration Manager 및 Microsoft Intune에서 관리되는 모바일 장치 개수 및 등록 방법(대량, 사용자 기반)  
+    -   Configuration Manager 및 Microsoft Intune에서 관리되는 모바일 장치 개수 및 등록 방법(대량 또는 사용자 기반)  
 
     -   모바일 장치 폴링 일정 및 통계 모바일 장치 체크 인 기간  
 
@@ -368,12 +370,12 @@ System Center Configuration Manager 버전 1606부터 이 수준에는 다음이
 
 - ***[새로운 기능]*** **기타**
 
-    - ***[새로운 기능]*** WOL이 있는 사이트 개수
+    - ***[새로운 기능]*** WOL(Wake On Lan)이 있는 사이트 개수
 
 
 
 ##  <a name="a-namebkmklevel3a-level-3---full"></a><a name="bkmk_level3"></a> 수준 3 - 전체
-전체 수준은 기본 및 고급 수준의 모든 데이터를 포함합니다. 또한 Endpoint Protection, 업데이트 준수 비율 및 소프트웨어 업데이트 정보에 대한 추가 정보를 포함합니다.  또한 이 수준은 캡처 시점의 메모리 또는 로그 파일에 있던 개인 정보를 포함할 수도 있는 시스템 파일 및 메모리 스냅숏과 같은 고급 진단 정보를 포함할 수 있습니다.
+전체 수준은 기본 및 고급 수준의 모든 데이터를 포함합니다. 또한 Endpoint Protection, 업데이트 준수 비율 및 소프트웨어 업데이트 정보에 대한 추가 정보를 포함합니다. 또한 이 수준은 캡처 시점의 메모리 또는 로그 파일에 있던 개인 정보를 포함할 수도 있는 시스템 파일 및 메모리 스냅숏과 같은 고급 진단 정보를 포함할 수 있습니다.
 
 System Center Configuration Manager 버전 1606부터 이 수준에는 다음이 포함됩니다.
 
@@ -404,13 +406,13 @@ System Center Configuration Manager 버전 1606부터 이 수준에는 다음이
 -   마지막 소프트웨어 업데이트 검사 이후 최소/최대/평균 시간 수
 
 -    소프트웨어 업데이트 지점에서 동기화된 소프트웨어 업데이트 제품
--    준수 설정: SCEP, VPN, WiFi 및 준수 정책 템플릿 구성 정보
+-    준수 설정: SCEP, VPN, Wi-Fi 및 준수 정책 템플릿 구성 정보
 
--    Intune 관리 장치에 대한 EAS 조건부 액세스 정책 유형(차단 또는 격리)
+-    Intune에서 관리하는 장치에 대한 EAS 조건부 액세스 정책 유형(차단 또는 격리)
 
 -   ***[새로운 기능]*** 환경에서 상위 50개 CPU
 
--   ***[새로운 기능]*** SCCM 사용을 위한 DCM 구성 팩
+-   ***[새로운 기능]*** System Center Configuration Manager 사용을 위한 DCM 구성 팩
 
 -   ***[새로운 기능]*** MSI 제품 코드(고객이 배포하는 일반 앱)
 
@@ -420,6 +422,6 @@ System Center Configuration Manager 버전 1606부터 이 수준에는 다음이
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO5-->
 
 

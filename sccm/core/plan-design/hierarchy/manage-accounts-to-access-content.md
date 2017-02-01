@@ -1,8 +1,8 @@
 ---
-title: "콘텐츠에 액세스하기 위한 계정 | System Center Configuration Manager"
+title: "콘텐츠에 액세스하기 위한 계정 | Microsoft 문서"
 description: "클라이언트가 System Center Configuration Manager 콘텐츠에 액세스하는 계정에 대해 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 1/4/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: c7d5dc2767621ac2e494d24af07ca20513d6d63f
+ms.sourcegitcommit: 4d34a272a93100426cccd2308c5b3b0b0ae94a60
+ms.openlocfilehash: ee83aa6fdbd1a82384a4684055ed72620a3f474e
 
 ---
 # <a name="manage-accounts-to-access-content-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 콘텐츠에 액세스하기 위한 계정 관리
@@ -30,7 +30,7 @@ System Center Configuration Manager에서 콘텐츠를 배포하기 전에 클�
 
      풀(pull) 배포 지점이 원격 포리스트의 원본 배포 지점에서 콘텐츠를 가져올 때도 이 계정이 사용됩니다.  
 
--   **패키지 액세스 계정** - 기본적으로 Configuration Manager는 일반 액세스 계정인 사용자 및 관리자에 대해 배포 지점의 콘텐츠 액세스 권한을 부여합니다. 그러나 추가 권한을 구성하여 액세스를 제한할 수 있습니다.  
+-   **패키지 액세스 계정** – 기본적으로 Configuration Manager는 **사용자** 및 **관리자**라는 기본 제공 계정에 대해 배포 지점의 콘텐츠 액세스 권한을 부여합니다. 추가 권한을 구성하여 액세스를 제한할 수 있습니다.  
 
 -   **멀티캐스트 연결 계정** – 운영 체제 배포에 사용되는 계정입니다.  
 
@@ -120,6 +120,6 @@ System Center Configuration Manager에서 콘텐츠를 배포하기 전에 클�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 
