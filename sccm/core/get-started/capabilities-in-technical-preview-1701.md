@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
-ms.openlocfilehash: 1452362c280fed871da81fa8f711a975493b98a0
+ms.sourcegitcommit: 34dded3a8caf8c2be0313bc012cbd8ad2a909fad
+ms.openlocfilehash: 20bcc1cd909eec13eaca0a6de66806bd496f729d
 
 ---
 # <a name="capabilities-in-technical-preview-1701-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1701의 기능
@@ -135,6 +135,28 @@ ms.openlocfilehash: 1452362c280fed871da81fa8f711a975493b98a0
 2.  두 가지 사항을 변경하고 파일을 저장한 후 동일한 컴퓨터에서 Configuration Manager 콘솔을 다시 시작하고 해당 콘솔을 사용하여 OMS 커넥터를 설치합니다. 커넥터를 설치하려면 [Configuration Manager의 데이터를 Microsoft Operations Management Suite에 동기화](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite)에 제공된 정보를 사용하고 Microsoft Azure Government 클라우드에 있는 **Operations Management Suite 작업 영역**을 선택합니다.
 
 3.  OMS 커넥터가 설치되면 사이트에 연결하는 모든 콘솔에서 Government 클라우드에 대한 연결을 사용할 수 있습니다.
+
+## <a name="android-and-ios-versions-are-no-longer-targetable-in-creation-wizards-for-hybrid-mdm"></a>Android 및 iOS 버전은 하이브리드 MDM 만들기 마법사에서 대상 지정이 가능하지 않음
+
+하이브리드 MDM(모바일 장치 관리)에 대한 이 Technical Preview부터 Intune 관리 장치에 대한 새 정책 및 프로필을 만들 때 특정 버전의 Android 및 iOS를 대상으로 지정할 필요가 없습니다. 대신 다음 장치 유형 중 하나를 선택합니다.
+
+- Android
+- Samsung KNOX Standard 4.0 이상
+- iPhone
+- iPad
+
+이 변경 내용은 다음 항목을 만들기 위한 마법사에 영향을 줍니다.
+
+- 구성 항목
+- 규정 준수 정책
+- 인증서 프로필
+- 전자 메일 프로필
+- VPN 프로필
+- Wi-Fi 프로필
+
+이러한 변경으로 인해 하이브리드 배포에서 새 Configuration Manager 릴리스나 확장 없이 새 Android 및 iOS 버전을 더 빠르게 지원할 수 있습니다. Intune 독립 실행형에서 새 버전이 지원되게 되면 사용자는 모바일 장치를 해당 버전으로 업그레이드할 수 있습니다.
+
+이전 버전의 Configuration Manager에서 업그레이드할 때 문제를 방지하려면 이러한 항목의 속성 페이지에서 모바일 운영 체제 버전을 계속 사용할 수 있습니다. 특정 버전을 대상으로 지정해야 하는 경우 새 항목을 만든 다음 새로 만든 항목의 속성 페이지에서 대상 버전을 지정할 수 있습니다.
 
 
 

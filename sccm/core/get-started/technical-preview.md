@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 8e4ccaf26b83896d12efcbd7ebd4bda4d4bf6675
-ms.openlocfilehash: d7d03c4494338a1d4583b6c82d3d5009b7785cfe
+ms.sourcegitcommit: 916c39133ec3796b9cff97c3c3bdb49dcbb6d7e7
+ms.openlocfilehash: defff3d720363cfb066b120e2b8f58d643a87699
 
 
 ---
@@ -140,6 +140,7 @@ ms.openlocfilehash: d7d03c4494338a1d4583b6c82d3d5009b7785cfe
  |클라우드 기반 배포 지점에서 소프트웨어 업데이트 호스트| [Tech Preview 1701](capabilities-in-technical-preview-1701.md#host-software-updates-on-cloud-based-distribution-points)|![추가되지 않음](media/Red_X.gif) |
  |관리 지점을 통해 장치 상태 증명 데이터의 유효성 검사| [Tech Preview 1701](capabilities-in-technical-preview-1701.md#validate-device-health-attestation-data-via-management-points)|![추가되지 않음](media/Red_X.gif) |
  |Microsoft Azure Government 클라우드용 OMS 커넥터 |[Tech Preview 1701](capabilities-in-technical-preview-1701.md#use-the-oms-connector-for-microsoft-azure-government-cloud) |![추가되지 않음](media/Red_X.gif) |
+ |Android 및 iOS 버전은 만들기 마법사에서 대상 지정이 가능하지 않음 |[Tech Preview 1701](capabilities-in-technical-preview-1701.md#android-and-ios-versions-are-no-longer-targetable-in-creation-wizards-for-hybrid-mdm) |![추가되지 않음](media/Red_X.gif) |
  |OData 끝점 데이터 액세스 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#odata-endpoint-data-access)|![추가되지 않음](media/Red_X.gif)|
  |데이터 웨어하우스 서비스 지점 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#the-data-warehouse-service-point)|![추가되지 않음](media/Red_X.gif)|
  |콘텐츠 라이브러리 정리 도구 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#content-library-cleanup-tool)|![추가되지 않음](media/Red_X.gif)|
@@ -231,6 +232,6 @@ ms.openlocfilehash: d7d03c4494338a1d4583b6c82d3d5009b7785cfe
 
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 
