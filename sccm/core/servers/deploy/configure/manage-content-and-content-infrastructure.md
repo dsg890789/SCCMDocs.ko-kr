@@ -22,7 +22,7 @@ ms.openlocfilehash: 35247425252cb3724de2871d713f08469e72555a
 
 
 ---
-# <a name="manage-content-and-content-infrastructure-for-system-center-configuration-manager"></a>Manage content and content infrastructure for System Center Configuration Manager
+# <a name="manage-content-and-content-infrastructure-for-system-center-configuration-manager"></a>System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
