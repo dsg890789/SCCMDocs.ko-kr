@@ -22,7 +22,7 @@ ms.openlocfilehash: cd9edf61d151ac8334ace0bf668fa4c919d8c75b
 
 
 ---
-# <a name="manage-volume-purchased-ios-apps-with-system-center-configuration-manager"></a>Manage volume-purchased iOS apps with System Center Configuration Manager
+# <a name="manage-volume-purchased-ios-apps-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 대량 구매한 iOS 앱 관리
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -51,10 +51,10 @@ ms.openlocfilehash: cd9edf61d151ac8334ace0bf668fa4c919d8c75b
 > -   비즈니스용 Apple Volume Purchase Program만 지원됩니다.  
 > -   Apple VPP 계정을 Intune에 연결한 후에는 다른 계정을 연결할 수 없습니다. 따라서 사용하는 계정의 세부 정보를 여러 사람이 보유해야 합니다.  
 > -   기존 Apple VPP 계정에서 이전에 VPP 토큰을 다른 MDM 제품에 사용한 경우 Configuration Manager에 사용할 토큰을 새로 생성해야 합니다.  
-> -   각 토큰은 1년 동안 유효합니다.  
+> -   각 토큰은&1;년 동안 유효합니다.  
 > -   기본적으로 Configuration Manager는 하루에 두 번 Apple VPP 서비스와 동기화하여 라이선스가 Configuration Manager와 동기화되도록 합니다.  
 >   
->      라이선스 변경 내용만 동기화됩니다. 그러나 7일마다 한 번 전체 동기화가 수행됩니다.  
+>      라이선스 변경 내용만 동기화됩니다. 그러나&7;일마다 한 번 전체 동기화가 수행됩니다.  
 >   
 >      **동기화**를 선택하여 수동 동기화를 수행하는 경우 항상 전체 동기화가 수행됩니다.  
 > -   Configuration Manager 데이터베이스를 복구하거나 복원해야 하는 경우 나중에 수동 동기화를 수행하여 동기화된 라이선스 데이터를 최신 상태로 유지하는 것이 좋습니다.  
