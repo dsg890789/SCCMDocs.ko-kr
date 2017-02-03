@@ -284,6 +284,6 @@ System Center Configuration Manager 버전 1511부터 이 수준에는 다음이
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Feb17_HO1-->
 
 
