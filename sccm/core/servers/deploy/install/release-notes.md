@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: ea723a6694feb2c9584b35498aa9c3519383f08d
-ms.openlocfilehash: a9dc046a54c15d9d299664cd1f2a149383f53489
+ms.sourcegitcommit: c6358d65609605bfef3ac533f4caa0df1cfce0c5
+ms.openlocfilehash: 73208c8e9ec15e96a6caaf20b74c1f94d92a8975
 
 
 ---
@@ -81,7 +81,7 @@ ConfigMgrSetup.log:
 
 -   **편집할 키**: HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing  
 
--   **상태 값**: **146944** 10진수 또는 **0x00023e00** 16진수로 설정  
+-   **상태 값**: **146944**&10;진수 또는 **0x00023e00**&16;진수로 설정  
 
 ### <a name="pre-release-features-introduced-in-system-center-configuration-manager-1602"></a>System Center Configuration Manager 1602에 도입된 시험판 기능  
 
@@ -247,6 +247,12 @@ Windows 및 ConfigMgr 설치 작업 순서 단계를 중지한 후 명령줄 실
 **해결 방법**:    
 서비스 계획을 만든 후 서비스 계획에 대한 속성을 열고, **평가 일정** 탭으로 이동하고, **일정에 따라 규칙 실행**을 선택하고, **사용자 지정**을 클릭하여 사용자 지정 일정을 만듭니다. 예를 들어 60일마다 실행하는 서비스 계획이 있을 수 있습니다.  
 
+### <a name="when-a-high-risk-deployment-dialog-is-visible-to-a-user-subsequent-high-risk-dialogs-with-a-sooner-deadline-are-not-displayed"></a>높은 위험 수준 배포 대화 상자가 사용자에게 표시될 경우 마감일이 더 가까운 후속 높은 위험 수준 대화 상자가 표시되지 않음
+높은 위험 수준 작업 배포를 만들고 사용자에게 배포한 후 높은 위험 수준 대화 상자가 사용자에게 표시됩니다. 사용자가 대화 상자를 닫지 않고 첫 번째보다 마감일이 더 가까운 또 다른 높은 위험 수준 배포를 만들고 배포하면 사용자는 원래 대화 상자를 닫을 때까지 업데이트된 대화 상자를 받을 수 없습니다. 배포는 구성된 마감일에 계속 실행됩니다.
+
+**해결 방법**:  
+사용자가 첫 번째 높은 위험 수준 배포 대화 상자를 닫아야 다음 높은 위험 수준 배포 대화 상자를 볼 수 있습니다.
+
 ## <a name="mobile-device-management"></a>모바일 장치 관리  
 
 ### <a name="cannot-create-an-enrollment-profile-on-a-primary-site"></a>기본 사이트에 등록 프로필을 만들 수 없습니다.  
@@ -291,6 +297,6 @@ System Center Configuration Manager 버전 업데이트 1602에 영향을 주는
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 

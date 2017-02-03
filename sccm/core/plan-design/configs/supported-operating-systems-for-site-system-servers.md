@@ -1,8 +1,8 @@
 ---
-title: "지원되는 사이트 시스템 서버 | System Center Configuration Manager"
+title: "지원되는 사이트 시스템 서버 | Microsoft 문서"
 description: "System Center Configuration Manager 사이트 또는 사이트 시스템 역할을 호스트하는 데 사용할 수 있는 Windows 버전을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 1/3/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 00d5d8d9ce90b2da79485250d25f943ca1c4547b
+ms.sourcegitcommit: bebbeebba76ab5cf0c517fcb00b7b6a516a08e3e
+ms.openlocfilehash: 12fe730d924979eec2ef55ea80a1fa90b7b47464
 
 
 ---
@@ -36,7 +36,7 @@ ms.openlocfilehash: 00d5d8d9ce90b2da79485250d25f943ca1c4547b
 
 
 
-## <a name="windows-server-2016---standard-datacenter"></a>Windows Server 2016 - Standard, Datacenter
+## <a name="windows-server-2016-standard-and-datacenter"></a>Windows Server 2016: Standard 및 Datacenter
 Windows Server 2016은 Configuration Manager 버전 1606 및 KB3186654의 핫픽스 롤업(또는 2016년 10월에 릴리스된 1606의 기준 버전)부터 지원됩니다.
 
 **사이트 서버:**  
@@ -59,7 +59,7 @@ Windows Server 2016은 Configuration Manager 버전 1606 및 KB3186654의 핫픽
 
 -   배포 지점  
 
-     배포 지점은 각기 요구 사항이 다른 여러 구성을 지원하며, 경우에 따라서는 서버뿐만 아니라 클라이언트 운영 체제에도 설치할 수 있습니다. 배포 지점에 사용할 수 있는 옵션에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
+     배포 지점은 각기 요구 사항이 다른 여러 구성을 지원합니다. 경우에 따라 이러한 구성은 서버뿐만 아니라 클라이언트 운영 체제에 대한 설치도 지원합니다. 배포 지점에 사용할 수 있는 옵션에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
 
 -   Endpoint Protection 지점  
 
@@ -68,6 +68,8 @@ Windows Server 2016은 Configuration Manager 버전 1606 및 KB3186654의 핫픽
 -   등록 프록시 지점  
 
 -   대체 상태 지점  
+
+-   관리 지점
 
 -   보고 서비스 지점  
 
@@ -83,7 +85,7 @@ Windows Server 2016은 Configuration Manager 버전 1606 및 KB3186654의 핫픽
 
 -   상태 마이그레이션 지점
 
-## <a name="windows-server-2012-r2-x64---standard-datacenter"></a>Windows Server 2012 R2(x64) – Standard, Datacenter  
+## <a name="windows-server-2012-r2-x64-standard-and-datacenter"></a>Windows Server 2012 R2(x64): Standard 및 Datacenter  
 **사이트 서버:**  
 
 -   중앙 관리 사이트  
@@ -104,7 +106,7 @@ Windows Server 2016은 Configuration Manager 버전 1606 및 KB3186654의 핫픽
 
 -   배포 지점  
 
-     배포 지점은 각기 요구 사항이 다른 여러 구성을 지원하며, 경우에 따라서는 서버뿐만 아니라 클라이언트 운영 체제에도 설치할 수 있습니다. 배포 지점에 사용할 수 있는 옵션에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
+     배포 지점은 각기 요구 사항이 다른 여러 구성을 지원합니다. 경우에 따라 이러한 구성은 서버뿐만 아니라 클라이언트 운영 체제에 대한 설치도 지원합니다. 배포 지점에 사용할 수 있는 옵션에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
 
 -   Endpoint Protection 지점  
 
@@ -113,6 +115,8 @@ Windows Server 2016은 Configuration Manager 버전 1606 및 KB3186654의 핫픽
 -   등록 프록시 지점  
 
 -   대체 상태 지점  
+
+-   관리 지점
 
 -   보고 서비스 지점  
 
@@ -128,7 +132,7 @@ Windows Server 2016은 Configuration Manager 버전 1606 및 KB3186654의 핫픽
 
 -   상태 마이그레이션 지점  
 
-## <a name="windows-server-2012-x64---standard-datacenter"></a>Windows Server 2012(x64) – Standard, Datacenter  
+## <a name="windows-server-2012-x64-standard-and-datacenter"></a>Windows Server 2012(x64): Standard 및 Datacenter  
 **사이트 서버:**  
 
 -   중앙 관리 사이트  
@@ -149,7 +153,7 @@ Windows Server 2016은 Configuration Manager 버전 1606 및 KB3186654의 핫픽
 
 -   배포 지점  
 
-     배포 지점은 각기 요구 사항이 다른 여러 구성을 지원하며, 경우에 따라서는 서버뿐만 아니라 클라이언트 운영 체제에도 설치할 수 있습니다. 배포 지점에 사용할 수 있는 옵션에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
+     배포 지점은 각기 요구 사항이 다른 여러 구성을 지원합니다. 경우에 따라 이러한 구성은 서버뿐만 아니라 클라이언트 운영 체제에 대한 설치도 지원합니다. 배포 지점에 사용할 수 있는 옵션에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
 
 -   Endpoint Protection 지점  
 
@@ -158,6 +162,8 @@ Windows Server 2016은 Configuration Manager 버전 1606 및 KB3186654의 핫픽
 -   등록 프록시 지점  
 
 -   대체 상태 지점  
+
+-   관리 지점
 
 -   보고 서비스 지점  
 
@@ -173,7 +179,7 @@ Windows Server 2016은 Configuration Manager 버전 1606 및 KB3186654의 핫픽
 
 -   상태 마이그레이션 지점  
 
-## <a name="windows-server-2008-r2-with-sp1-x64---standard-enterprise-datacenter"></a>Windows Server 2008 R2 SP1(x64)   – Standard, Enterprise, Datacenter  
+## <a name="windows-server-2008-r2-with-sp1-x64-standard-enterprise-and-datacenter"></a>Windows Server 2008 R2 with SP1(x64): Standard, Enterprise 및 Datacenter  
  [Microsoft 지원 기간](https://support.microsoft.com/lifecycle)에 설명된 대로 Windows Server 2008 R2는 현재 추가 지원 상태이며 더 이상 일반 지원에 속하지 않습니다. 향후에 Configuration Manager에서 이러한 운영 체제를 사이트 시스템 서버로 사용할 수 있는지에 대한 자세한 내용은 [System Center Configuration Manager에서 제거되는 기능과 사용되지 않는 기능](../../../core/plan-design/changes/removed-and-deprecated-features.md)을 참조하세요.  
 
 **사이트 서버:**  
@@ -196,7 +202,7 @@ Windows Server 2016은 Configuration Manager 버전 1606 및 KB3186654의 핫픽
 
 -   배포 지점  
 
-     배포 지점은 각기 요구 사항이 다른 여러 구성을 지원하며, 경우에 따라서는 서버뿐만 아니라 클라이언트 운영 체제에도 설치할 수 있습니다. 배포 지점에 사용할 수 있는 옵션에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
+     배포 지점은 각기 요구 사항이 다른 여러 구성을 지원합니다. 경우에 따라 이러한 구성은 서버뿐만 아니라 클라이언트 운영 체제에 대한 설치도 지원합니다. 배포 지점에 사용할 수 있는 옵션에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
 
 -   Endpoint Protection 지점  
 
@@ -205,6 +211,8 @@ Windows Server 2016은 Configuration Manager 버전 1606 및 KB3186654의 핫픽
 -   등록 프록시 지점  
 
 -   대체 상태 지점  
+
+-   관리 지점
 
 -   보고 서비스 지점  
 
@@ -220,7 +228,7 @@ Windows Server 2016은 Configuration Manager 버전 1606 및 KB3186654의 핫픽
 
 -   상태 마이그레이션 지점  
 
-## <a name="windows-server-2008-with-sp2-x86-x64---standard-enterprise-datacenter"></a>Windows Server 2008 SP2(x86, x64) – Standard, Enterprise, Datacenter  
+## <a name="windows-server-2008-with-sp2-x86-x64-standard-enterprise-and-datacenter"></a>Windows Server 2008 SP2(x86, x64): Standard, Enterprise 및 Datacenter  
  [Microsoft 지원 기간](https://support.microsoft.com/lifecycle)에 설명된 대로 Windows Server 2008은 현재 추가 지원 상태이며 더 이상 일반 지원에 속하지 않습니다. 향후에 Configuration Manager에서 이러한 운영 체제를 사이트 시스템 서버로 사용할 수 있는지에 대한 자세한 내용은 [System Center Configuration Manager에서 제거되는 기능과 사용되지 않는 기능](../../../core/plan-design/changes/removed-and-deprecated-features.md)을 참조하세요.  
 
 **사이트 서버:**  
@@ -247,7 +255,7 @@ Windows Server 2016은 Configuration Manager 버전 1606 및 KB3186654의 핫픽
 
     -   이 운영 체제 버전의 배포 지점은 PXE용으로 지원되지만 EFI 모드의 클라이언트 컴퓨터 네트워크 부팅은 지원하지 않습니다. 레거시 모드에서 EFI 부팅 또는 BIOS를 사용하는 클라이언트 컴퓨터는 지원됩니다.  
 
-    -   배포 지점은 각기 요구 사항이 다른 여러 구성을 지원하며, 경우에 따라서는 서버뿐만 아니라 클라이언트 운영 체제에도 설치할 수 있습니다. 배포 지점에 사용할 수 있는 옵션에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
+    -   배포 지점은 각기 요구 사항이 다른 여러 구성을 지원합니다. 경우에 따라 이러한 구성은 서버뿐만 아니라 클라이언트 운영 체제에 대한 설치도 지원합니다. 배포 지점에 사용할 수 있는 옵션에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
 
 -   Endpoint Protection 지점  
 
@@ -256,6 +264,8 @@ Windows Server 2016은 Configuration Manager 버전 1606 및 KB3186654의 핫픽
 -   등록 프록시 지점  
 
 -   대체 상태 지점  
+
+-   관리 지점
 
 -   보고 서비스 지점  
 
@@ -271,7 +281,7 @@ Windows Server 2016은 Configuration Manager 버전 1606 및 KB3186654의 핫픽
 
 -   상태 마이그레이션 지점  
 
-## <a name="windows-10-x86-x64---pro-enterprise"></a>Windows 10(x86, x64) – Pro, Enterprise  
+## <a name="windows-10-x86-x64-pro-and-enterprise"></a>Windows 10(x86, x64): Pro 및 Enterprise  
 **사이트 시스템 서버:**  
 
 -   배포 지점  
@@ -280,9 +290,9 @@ Windows Server 2016은 Configuration Manager 버전 1606 및 KB3186654의 핫픽
 
     -   이 운영 체제의 배포 지점은 멀티캐스트를 지원하지 않습니다.  
 
-    -   배포 지점은 각기 요구 사항이 다른 여러 구성을 지원하며, 경우에 따라서는 서버뿐만 아니라 클라이언트 운영 체제에도 설치할 수 있습니다. 배포 지점에 사용할 수 있는 옵션에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
+    -   배포 지점은 각기 요구 사항이 다른 여러 구성을 지원합니다. 경우에 따라 이러한 구성은 서버뿐만 아니라 클라이언트 운영 체제에 대한 설치도 지원합니다. 배포 지점에 사용할 수 있는 옵션에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
 
-## <a name="windows-81-x86-x64---professional-enterprise"></a>Windows 8.1(x86, x64) – Professional, Enterprise  
+## <a name="windows-81-x86-x64-professional-and-enterprise"></a>Windows 8.1(x86, x64): Professional 및 Enterprise  
 **사이트 시스템 서버:**  
 
 -   배포 지점  
@@ -291,9 +301,9 @@ Windows Server 2016은 Configuration Manager 버전 1606 및 KB3186654의 핫픽
 
     -   이 운영 체제의 배포 지점은 멀티캐스트를 지원하지 않습니다.  
 
-    -   배포 지점은 각기 요구 사항이 다른 여러 구성을 지원하며, 경우에 따라서는 서버뿐만 아니라 클라이언트 운영 체제에도 설치할 수 있습니다. 배포 지점에 사용할 수 있는 옵션에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
+    -   배포 지점은 각기 요구 사항이 다른 여러 구성을 지원합니다. 경우에 따라 이러한 구성은 서버뿐만 아니라 클라이언트 운영 체제에 대한 설치도 지원합니다. 배포 지점에 사용할 수 있는 옵션에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
 
-## <a name="windows-8-x86-x64---professional-enterprise-distribution-point"></a>Windows 8(x86, x64) – Professional, Enterprise 배포 지점  
+## <a name="windows-8-x86-x64-professional-and-enterprise"></a>Windows 8(x86, x64): Professional 및 Enterprise
 **사이트 시스템 서버:**  
 
 -   배포 지점  
@@ -302,9 +312,9 @@ Windows Server 2016은 Configuration Manager 버전 1606 및 KB3186654의 핫픽
 
     -   이 운영 체제의 배포 지점은 멀티캐스트를 지원하지 않습니다.  
 
-    -   배포 지점은 각기 요구 사항이 다른 여러 구성을 지원하며, 경우에 따라서는 서버뿐만 아니라 클라이언트 운영 체제에도 설치할 수 있습니다. 배포 지점에 사용할 수 있는 옵션에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
+    -   배포 지점은 각기 요구 사항이 다른 여러 구성을 지원합니다. 경우에 따라 이러한 구성은 서버뿐만 아니라 클라이언트 운영 체제에 대한 설치도 지원합니다. 배포 지점에 사용할 수 있는 옵션에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
 
-## <a name="windows-7-with-sp1-x86-x64---professional-enterprise-ultimate"></a>Windows 7 SP1(x86, x64) – Professional, Enterprise, Ultimate  
+## <a name="windows-7-with-sp1-x86-x64-professional-enterprise-and-ultimate"></a>Windows 7 SP1(x86, x64): Professional, Enterprise 및 Ultimate  
 **사이트 시스템 서버:**  
 
 -   배포 지점  
@@ -313,24 +323,24 @@ Windows Server 2016은 Configuration Manager 버전 1606 및 KB3186654의 핫픽
 
     -   이 운영 체제의 배포 지점은 멀티캐스트를 지원하지 않습니다.  
 
-    -   배포 지점은 각기 요구 사항이 다른 여러 구성을 지원하며, 경우에 따라서는 서버뿐만 아니라 클라이언트 운영 체제에도 설치할 수 있습니다. 배포 지점에 사용할 수 있는 옵션에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
+    -   배포 지점은 각기 요구 사항이 다른 여러 구성을 지원합니다. 경우에 따라 이러한 구성은 서버뿐만 아니라 클라이언트 운영 체제에 대한 설치도 지원합니다. 배포 지점에 사용할 수 있는 옵션에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
 
 ## <a name="the-server-core-installation-of-windows-server-2012"></a>Windows Server 2012의 Server Core 설치  
- 이전 운영 체제 외에도, Windows Server 2012의 Server Core 설치를 다음과 같은 제한 사항이 있는 배포 지점으로 사용할 수 있습니다.  
+ 나열된 이전 운영 체제 외에도, Windows Server 2012의 Server Core 설치를 다음과 같은 제한 사항이 있는 배포 지점으로 사용할 수도 있습니다.  
 
--   x64만 지원됩니다.  
+-   64비트 버전만 지원됩니다.  
 
--   이 운영 체제의 배포 지점은 PXE 또는 멀티캐스트를 지원하지 않습니다.  
+-   이 운영 체제의 배포 지점은 PXE 또는 멀티캐스트를 지원하지 않습니다.
 
 ## <a name="the-server-core-installation-of-windows-server-2012-r2"></a>Windows Server 2012 R2의 Server Core 설치  
- 이전 운영 체제 외에도, Windows Server 2012 R2의 Server Core 설치를 다음과 같은 제한 사항이 있는 배포 지점으로 사용할 수 있습니다.  
+ 나열된 이전 운영 체제 외에도, Windows Server 2012 R2의 Server Core 설치를 다음과 같은 제한 사항이 있는 배포 지점으로 사용할 수도 있습니다.  
 
--   x64만 지원됩니다.  
+-   x64비트 버전만 지원됩니다.
 
 -   이 운영 체제의 배포 지점은 PXE 또는 멀티캐스트를 지원하지 않습니다.  
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

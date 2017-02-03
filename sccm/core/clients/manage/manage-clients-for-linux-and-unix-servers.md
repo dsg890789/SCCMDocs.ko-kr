@@ -1,8 +1,8 @@
 ---
-title: "Linux 및 UNIX 클라이언트 관리 | System Center Configuration Manager"
+title: "Linux 및 UNIX 클라이언트 관리 | Microsoft 문서"
 description: "System Center Configuration Manager에서 Linux 및 UNIX 서버의 클라이언트 관리"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/26/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,12 +13,12 @@ ms.topic: article
 ms.assetid: 948664f2-239d-47a8-92fc-f8efeebd5796
 caps.latest.revision: 7
 caps.handback.revision: 0
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: d10b6876058d19d3a9a750a59267913d15793574
+ms.sourcegitcommit: 9206b82eca02877c30eebf146d42bcca7290eb42
+ms.openlocfilehash: 7a5ff0e75b8cdac68e3854c4f5aba01a7d423e9b
 
 
 ---
@@ -37,36 +37,32 @@ System Center Configuration Manager에서 Linux 및 UNIX 서버를 관리하는 
 
 -   유지 관리 기간 적용  
 
- Linux 또는 UNIX 클라이언트를 해당 운영 체제 또는 배포로 식별하려면 클라이언트에서 하드웨어 인벤토리를 성공적으로 수집해야 합니다. 하드웨어 인벤토리를 수집하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 Linux 및 UNIX용 하드웨어 인벤토리](../../../core/clients/manage/inventory/hardware-inventory-for-linux-and-unix.md)를 참조하세요.  
+ Linux 또는 UNIX 클라이언트를 해당 운영 체제 또는 배포로 식별하려면 클라이언트에서 [하드웨어 인벤토리](../../../core/clients/manage/inventory/hardware-inventory-for-linux-and-unix.md)를 수집해야 합니다.  
 
  하드웨어 인벤토리에 대한 기본 클라이언트 설정에는 클라이언트 컴퓨터의 운영 체제에 대한 정보가 포함됩니다. **운영 체제** 클래스의 **캡션** 속성을 사용하여 Linux 또는 UNIX 서버의 운영 체제를 식별할 수 있습니다.  
 
  Configuration Manager 콘솔에 있는 자산 및 준수 작업 영역의 장치 노드에서 Linux 및 UNIX용 Configuration Manager 클라이언트를 실행하는 컴퓨터에 대한 세부 정보를 볼 수 있습니다. Configuration Manager 콘솔의 자산 및 준수 작업 영역에 있는 **운영 체제** 열에서 각 컴퓨터 운영 체제의 이름을 볼 수 있습니다.  
 
- 기본적으로 Linux 및 UNIX 서버는 **모든 시스템** 컬렉션의 멤버입니다. Linux 및 UNIX 서버, 또는 그 하위 집합만을 포함하는 사용자 지정 컬렉션을 빌드하는 것이 좋습니다. 이 옵션을 사용하면 소프트웨어 배포 또는 관련 컴퓨터 그룹에 클라이언트 설정 할당과 같은 작업을 관리할 수 있습니다. 예를 들어 Windows 및 Linux 컴퓨터를 모두 포함하는 컬렉션에 RHEL6 x64 컴퓨터용 소프트웨어를 배포하면 그 배포는 부분적 성공 상태로 표시됩니다. 대신 RHEL6 x64 컴퓨터만 포함하는 컬렉션에 소프트웨어를 배포하는 경우 상태 메시지 및 보고서를 사용하여 배포의 성공을 정확하게 식별할 수 있습니다.  
+ 기본적으로 Linux 및 UNIX 서버는 **모든 시스템** 컬렉션의 멤버입니다. Linux 및 UNIX 서버 또는 그 하위 집합만을 포함하는 사용자 지정 컬렉션을 빌드하는 것이 좋습니다. 이 옵션을 사용하면 소프트웨어 배포 또는 유사 컴퓨터 그룹에 클라이언트 설정 할당과 같은 작업을 관리할 수 있으므로 배포에 성공했는지 정확히 측정할 수 있습니다.   
 
  Linux 및 UNIX 서버용 사용자 지정 컬렉션을 빌드할 때 운영 체제 특성에 대해 캡션 특성을 포함하는 멤버 관리 규칙 쿼리를 포함시킵니다. 컬렉션을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 컬렉션을 만드는 방법](../../../core/clients/manage/collections/create-collections.md)을 참조하세요.  
 
 ##  <a name="a-namebkmkmaintenancewindowsforlnua-maintenance-windows-for-linux-and-unix-servers"></a><a name="BKMK_MaintenanceWindowsforLnU"></a> Maintenance windows for Linux and UNIX servers  
- Linux 및 UNIX 서버용 Configuration Manager 클라이언트는 유지 관리 기간 사용을 지원합니다. 이 지원은 Windows 기반 클라이언트 지원에서 변경되지 않았습니다.  
-
- 유지 관리 기간을 사용하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 유지 관리 기간을 사용하는 방법](../../../core/clients/manage/collections/use-maintenance-windows.md)을 참조하세요.  
+ Linux 및 UNIX 서버용 Configuration Manager 클라이언트는 [유지 관리 기간](../../../core/clients/manage/collections/use-maintenance-windows.md) 사용을 지원합니다. 이 지원은 Windows 기반 클라이언트 지원에서 변경되지 않았습니다.  
 
 ##  <a name="a-namebkmkclientsettingsforlnua-client-settings-for-linux-and-unix-servers"></a><a name="BKMK_ClientSettingsforLnU"></a> Client settings for Linux and UNIX servers  
- 다른 클라이언트에 대한 설정을 구성하는 것과 동일한 방식으로 Linux 및 UNIX 서버에 적용하는 클라이언트 설정을 구성할 수 있습니다.  
+ 다른 클라이언트에 대한 설정을 구성하는 것과 동일한 방식으로 Linux 및 UNIX 서버에 적용하는 [클라이언트 설정을 구성](../../../core/clients/deploy/configure-client-settings.md)할 수 있습니다.  
 
- 기본적으로 **기본 클라이언트 에이전트 설정** 은 Linux 및 UNIX 서버에 적용됩니다. 또한 사용자 지정 클라이언트 설정을 만들고 특정 클라이언트 운영 체제 또는 클라이언트 운영 체제의 조합을 포함하는 컬렉션에 배포할 수 있습니다.  
+ 기본적으로 **기본 클라이언트 에이전트 설정** 은 Linux 및 UNIX 서버에 적용됩니다. 사용자 지정 클라이언트 설정을 만들고 특정 클라이언트의 컬렉션에 배포할 수도 있습니다.  
 
- Linux 및 UNIX 클라이언트에만 적용하는 추가 클라이언트 설정은 없습니다. 그러나 Linux 및 UNIX 클라이언트에 적용하지 않는 기본 클라이언트 설정은 있습니다. Linux 및 UNIX용 클라이언트는 지원되는 기능에 대한 설정만 적용하고 지원하지 않는 기능에 대한 구성은 무시합니다.  
+ Linux 및 UNIX 클라이언트에만 적용하는 추가 클라이언트 설정은 없습니다. 그러나 Linux 및 UNIX 클라이언트에 적용하지 않는 기본 클라이언트 설정은 있습니다. Linux 및 UNIX용 클라이언트는 지원되는 기능에 대한 설정만 적용합니다.  
 
- 예를 들어 하드웨어 인벤토리 일정을 지정하는 사용자 지정 클라이언트 장치 설정을 만든 다음 Linux 컴퓨터를 포함하는 컬렉션에 할당합니다. 그 결과 Linux 및 UNIX 서버에 하드웨어 인벤토리 일정이 적용됩니다. 다음으로 원격 제어 설정을 사용하도록 설정하고 구성하는 사용자 지정 클라이언트 장치 설정을 만들어 동일한 컬렉션에 할당합니다. 그러면 원격 제어 설정이 Linux 및 UNIX 서버에서 무시됩니다. 이는 Linux 및 UNIX용 클라이언트가 Configuration Manager에서 원격 제어를 지원하지 않기 때문입니다.  
-
- 클라이언트 설정을 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../../core/clients/deploy/configure-client-settings.md)을 참조하세요.  
+ 예를 들어 원격 제어 설정을 사용하도록 설정하고 구성하는 사용자 지정 클라이언트 장치 설정은 Linux 및 UNIX 서버에서 무시됩니다. Linux 및 UNIX용 클라이언트는 원격 제어를 지원하지 않기 때문입니다.  
 
 ##  <a name="a-namebkmkpolicyforlnua-computer-policy-for-linux-and-unix-servers"></a><a name="BKMK_PolicyforLnU"></a> Computer policy for Linux and UNIX servers  
- Linux 및 UNIX 서버용 Configuration Manager 클라이언트는 주기적으로 컴퓨터 정책에 대해 해당 사이트를 폴링하여 요청된 구성에 대해 알아보고 배포를 확인합니다.  
+ Linux 및 UNIX 서버용 클라이언트는 주기적으로 컴퓨터 정책에 대해 해당 사이트를 폴링하여 요청된 구성에 대해 알아보고 배포를 확인합니다.  
 
- 또한 컴퓨터 정책에 대해 Linux 또는 UNIX 서버의 클라이언트를 즉시 폴링하도록 강제할 수 있습니다. 즉시 폴링하려면 서버에서 **루트** 자격 증명을 사용하여 **/opt/microsoft/configmgr/bin/ccmexec -rs policy**명령을 실행합니다.  
+ 또한 컴퓨터 정책에 대해 Linux 또는 UNIX 서버의 클라이언트를 즉시 폴링하도록 강제할 수 있습니다. 이렇게 하려면 서버에서 **루트** 자격 증명을 사용하여 **/opt/microsoft/configmgr/bin/ccmexec -rs policy** 명령을 실행합니다.  
 
  컴퓨터 정책 폴링에 대한 세부 정보는 공유 클라이언트 로그 파일인 **scxcm.log**에 입력됩니다.  
 
@@ -74,7 +70,7 @@ System Center Configuration Manager에서 Linux 및 UNIX 서버를 관리하는 
 >  Linux 및 UNIX용 Configuration Manager 클라이언트는 사용자 정책을 요청하거나 처리하지 않습니다.  
 
 ##  <a name="a-namebkmkmanagelinuxcertsa-how-to-manage-certificates-on-the-client-for-linux-and-unix"></a><a name="BKMK_ManageLinuxCerts"></a> How to manage certificates on the client for Linux and UNIX  
- Linux 및 UNIX용 클라이언트를 설치한 후 **certutil** 도구를 사용하여 새 PKI 인증서로 클라이언트를 업데이트하고 새 CRL(인증서 해지 목록)을 가져옵니다. Linux 및 UNIX용 클라이언트를 설치할 때 이 도구는 **/opt/microsoft/configmgr/bin/certutil**에 배치됩니다.  
+ Linux 및 UNIX용 클라이언트를 설치한 후 **certutil** 도구를 사용하여 새 PKI 인증서로 클라이언트를 업데이트하고 새 CRL(인증서 해지 목록)을 가져옵니다. Linux 및 UNIX용 클라이언트를 설치할 때 이 도구는 **/opt/microsoft/configmgr/bin/certutil**에 배치됩니다. 
 
  인증서를 관리하려면 각 클라이언트에서 다음 옵션 중 하나를 사용하여 certutil을 실행합니다.  
 
@@ -86,6 +82,6 @@ System Center Configuration Manager에서 Linux 및 UNIX 서버를 관리하는 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO5-->
 
 

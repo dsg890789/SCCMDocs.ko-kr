@@ -1,7 +1,7 @@
 ---
-title: SQL Server AlwaysOn | System Center Configuration Manager
+title: "SQL Server AlwaysOn | Microsoft 문서"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 1/4/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,8 +15,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 570e651d486a6120eb062ef845930445596054da
+ms.sourcegitcommit: 4d34a272a93100426cccd2308c5b3b0b0ae94a60
+ms.openlocfilehash: 5fb6bc0bca5ee590000fd30bd46c765871cf5220
 
 
 ---
@@ -98,9 +98,12 @@ ms.openlocfilehash: 570e651d486a6120eb062ef845930445596054da
 
  **System Center Configuration Manager에서 사용하는 AlwaysOn 가용성 그룹에 대한 요구 사항:**  
 
--   가용성 그룹의 각 노드(또는 복제본)는 System Center Configuration Manager에서 지원하는 SQL Server 버전을 실행해야 합니다.  
+-  *버전*: 가용성 그룹의 각 노드(또는 복제본)는 System Center Configuration Manager에서 지원하는 SQL Server 버전을 실행해야 합니다. SQL Server에서 지원될 경우 가용성 그룹의 노드별로 다른 SQL Server 버전을 실행할 수 있습니다.   
 
--   가용성 그룹에는 주 복제본이 하나 있어야 하며 동기 보조 복제본이 2개까지 포함될 수 있습니다.  
+- *Edition*: SQL Server의 Enterprise Edition을 사용해야 합니다.  SQL Server 2016 Standard Edition은 Configuration Manager에서 지원되지 않는 기본 가용성 그룹을 소개합니다.
+
+
+-   가용성 그룹에는 주 복제본이 하나 있어야 하며 동기 보조 복제본이&2;개까지 포함될 수 있습니다.  
 
 -  가용성 그룹에 데이터베이스를 추가한 후에는 주 복제본을 보조 복제본으로 장애 조치하고(새 주 복제본으로 설정됨) 다음과 같이 데이터베이스를 구성해야 합니다.
     - 신뢰성을 사용하도록 설정: True와 같음
@@ -123,14 +126,16 @@ ms.openlocfilehash: 570e651d486a6120eb062ef845930445596054da
 -   가용성 그룹에는 **가용성 그룹 수신기**가 하나 이상 있어야 합니다.  이 수신기의 가상 이름은 가용성 그룹의 사이트 데이터베이스를 사용하도록 Configuration Manager를 구성할 때 사용됩니다. 가용성 그룹에 수신기가 여러 개 포함될 수 있지만 Configuration Manager에서는 수신기를 하나만 사용할 수 있습니다.  
 
 -   각 기본 및 보조 복제본은 다음과 같아야 합니다.  
-    -  **모든 읽기 전용 연결을 허용**하도록 설정해야 합니다.
-    -  **기본 인스턴스**를 사용해야 합니다.
-    -  **수동 장애 조치**가 설정되어야 합니다.  
+    - **모든 읽기 전용 연결을 허용**하도록 설정해야 합니다.
+    - **기본 인스턴스**를 사용해야 합니다.
+    - **수동 장애 조치**가 설정되어야 합니다.  
 
         > [!TIP]  
         >  System Center Configuration Manager에서는 자동 장애 조치로 설정된 가용성 그룹 복제본을 사용할 수 있습니다. 하지만 설치 프로그램을 실행하여 가용성 그룹에서 사이트 데이터베이스의 사용을 지정할 때 그리고 Configuration Manager로의 업데이트(사이트 데이터베이스에 적용되는 업데이트가 아님)를 설치할 때 수동 장애 조치를 설정해야 합니다.  
 
   **가용성 그룹에 대한 제한 사항**
+   - SQL Server 2016 Standard Edition에서 소개된 기본 가용성 그룹은 지원되지 않습니다. 이는 Configuration Manager에서 사용하기 위한 요구 사항인 보조 복제본에 대한 읽기 액세스를 기본 가용성 그룹이 지원하지 않기 때문입니다. 자세한 내용은 [기본 가용성 그룹(Always On 가용성 그룹)](https://msdn.microsoft.com/en-us/library/mt614935.aspx)을 참조하세요.
+
    - 가용성 그룹은 사이트 데이터베이스에 대해서만 지원됩니다 소프트웨어 업데이트 데이터베이스 또는 보고 데이터베이스에 대해서는 지원되지 않습니다.   
    - 가용성 그룹을 사용하면 가용성 그룹 수신기가 아니라 현재 주 복제본을 사용하도록 보고 지점을 수동으로 구성해야 합니다. 주 복제본이 다른 복제본으로 장애 조치되는 경우에는 새 주 복제본을 사용할 수 있도록 보고 지점을 다시 구성해야 합니다.  
    - 버전 1606과 같이 업데이트를 설치하기 전에 가용성 그룹이 수동 장애 조치로 설정되어 있는지 확인합니다. 사이트를 업데이트 한 후에는 장애 조치를 자동으로 복원할 수 있습니다.
@@ -152,15 +157,7 @@ ms.openlocfilehash: 570e651d486a6120eb062ef845930445596054da
 
      SQL Server 문서에서 [데이터베이스의 복구 모델 보기 또는 변경](https://msdn.microsoft.com/library/ms189272\(v=sql.120\).aspx) 을 참조하세요. 가용성 그룹은 전체만 지원합니다.  
 
-3.  SQL Server를 사용하여 사이트 데이터베이스의 전체 백업을 만든 후 다음을 수행합니다.  
-
-    -   현재 사이트 데이터베이스에서 가용성 그룹의 구성원이 아니거나 가용성 그룹에 대한 초기 주 복제본으로 사용되지 않는 경우 그룹의 주 복제본을 호스트하는 서버로 사이트 데이터베이스의 복사본을 복원합니다.  
-
-    -   현재 사이트 데이터베이스 서버가 가용성 그룹의 구성원인 경우 가용성 그룹의 주 복제본 구성원으로 이 서버를 사용하도록 계획합니다. 이렇게 하면 사이트 데이터베이스의 복사본을 이 서버나 다른 서버로 복원할 필요가 없습니다.  
-
-    이 단계를 완료하는 방법에 대해서는 SQL Server 문서의 [전체 데이터베이스 백업 만들기](https://msdn.microsoft.com/library/ms187510\(v=sql.120\).aspx) 및 [데이터베이스 백업 복원(SQL Server Management Studio)](https://msdn.microsoft.com/library/ms177429\(v=sql.120\).aspx)을 참조하세요.  
-
-4.  그룹의 주 복제본을 호스트하는 서버에서 **새 가용성 그룹 마법사** 를 사용하여 가용성 그룹을 만듭니다. 마법사에서:  
+3.  그룹의 주 복제본을 호스트하는 서버에서 **새 가용성 그룹 마법사** 를 사용하여 가용성 그룹을 만듭니다. 마법사에서:  
 
     -   **데이터베이스 선택** 페이지에서 Configuration Manager 사이트에 적합한 데이터베이스를 선택합니다.  
 
@@ -174,15 +171,15 @@ ms.openlocfilehash: 570e651d486a6120eb062ef845930445596054da
 
     자세한 내용은 SQL Server 문서의 [가용성 그룹 마법사 사용](https://msdn.microsoft.com/library/hh403415\(v=sql.120\).aspx) 을 참조하세요.  
 
-5.  가용성 그룹이 구성된 후 주 복제본에서 **TRUSTWORTHY** 속성을 사용하여 사이트 데이터베이스를 구성한 후 **CLR 통합을 사용**합니다. 이들을 구성하는 방법에 대해서는 SQL Server 문서의 [TRUSTWORTHY 데이터베이스 속성](https://msdn.microsoft.com/library/ms187861\(v=sql.120\).aspx) 및  [CLR 통합 사용](https://msdn.microsoft.com/library/ms131048\(v=sql.120\).aspx) 을 참조하세요.  
+4.  가용성 그룹이 구성된 후 주 복제본에서 **TRUSTWORTHY** 속성을 사용하여 사이트 데이터베이스를 구성한 후 **CLR 통합을 사용**합니다. 이들을 구성하는 방법에 대해서는 SQL Server 문서의 [TRUSTWORTHY 데이터베이스 속성](https://msdn.microsoft.com/library/ms187861\(v=sql.120\).aspx) 및  [CLR 통합 사용](https://msdn.microsoft.com/library/ms131048\(v=sql.120\).aspx) 을 참조하세요.  
 
-6.  다음 작업을 수행하여 가용성 그룹에서 각 보조 복제본을 구성합니다.  
+5.  다음 작업을 수행하여 가용성 그룹에서 각 보조 복제본을 구성합니다.  
 
     1.  현재 주 복제본을 보조 복제본으로 수동으로 장애 조치합니다. SQL Server 문서에서 [가용성 그룹의 계획된 수동 장애 조치(Failover) 수행](https://msdn.microsoft.com/library/hh231018\(v=sql.120\).aspx) 을 참조하세요.  
 
     2.  새로운 주 복제본의 데이터베이스를 **TRUSTWORTHY** 속성을 사용하여 사이트 데이터베이스를 구성한 후 **CLR 통합을 사용**합니다.  
 
-7.  모든 복제본이 주 복제본으로 승격되고 데이터베이스가 구성되면 가용성 그룹을 Configuration Manager에서 사용할 준비가 된 것입니다.  
+6.  모든 복제본이 주 복제본으로 승격되고 데이터베이스가 구성되면 가용성 그룹을 Configuration Manager에서 사용할 준비가 된 것입니다.  
 
 
 
@@ -220,15 +217,13 @@ ms.openlocfilehash: 570e651d486a6120eb062ef845930445596054da
 
 2.  **Preinst.exe /stopsite**를 실행하여 Configuration Manager 사이트를 중지합니다. [System Center Configuration Manager용 계층 구조 유지 관리 도구(Preinst.exe)](../../../../core/servers/manage/hierarchy-maintenance-tool-preinst.exe.md)를 참조하세요.  
 
-3.  SQL Server를 사용하여 주 복제본에서 사이트 데이터베이스의 백업을 만든 후 새로운 보조 복제본 서버로 해당 백업을 복원합니다. SQL Server 문서 라이브러리에서 [전체 데이터베이스 백업 만들기](https://msdn.microsoft.com/library/ms187510\(v=sql.120\).aspx) 및 [데이터베이스 백업 복원(SQL Server Management Studio)](https://msdn.microsoft.com/library/ms177429\(v=sql.120\).aspx) 을 참조하세요.  
-
-4.  각 보조 복제본을 구성합니다. 가용성 그룹에 있는 각 보조 복제본에 대해 다음 작업을 수행합니다.  
+3.  각 보조 복제본을 구성합니다. 가용성 그룹에 있는 각 보조 복제본에 대해 다음 작업을 수행합니다.  
 
     1.  주 복제본을 새 보조 복제본으로 수동으로 장애 조치합니다. SQL Server 문서에서 [가용성 그룹의 계획된 수동 장애 조치(Failover) 수행](https://msdn.microsoft.com/library/hh231018\(v=sql.120\).aspx) 을 참조하세요.  
 
     2.  새 서버의 데이터베이스를 Trustworthy로 구성하고 CLR 통합을 사용하도록 설정합니다. SQL Server 문서의 [TRUSTWORTHY 데이터베이스 속성](https://msdn.microsoft.com/library/ms187861\(v=sql.120\).aspx) 및  [CLR 통합 사용](https://msdn.microsoft.com/library/ms131048\(v=sql.120\).aspx)을 참조하세요.  
 
-5.  사이트 구성 요소 관리자(**sitecomp**) 및 **SMS_Executive** 서비스를 시작하여 사이트를 다시 시작합니다.  
+4.  사이트 구성 요소 관리자(**sitecomp**) 및 **SMS_Executive** 서비스를 시작하여 사이트를 다시 시작합니다.  
 
 #### <a name="to-remove-a-replica-member-from-the-availability-group"></a>가용성 그룹에서 복제본 구성원을 제거하려면  
 
@@ -270,6 +265,6 @@ ms.openlocfilehash: 570e651d486a6120eb062ef845930445596054da
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

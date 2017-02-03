@@ -1,8 +1,8 @@
 ---
-title: "계층 구조 디자인 | Microsoft 문서"
+title: "System Center Configuration Manager에 대한 사이트 계층 구조 디자인 | Microsoft 문서"
 description: "사이트 계층 구조를 계획할 수 있도록 System Center Configuration Manager에 대한 사용 가능한 토폴로지 및 관리 옵션을 이해합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 1/3/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
-ms.openlocfilehash: 000acfec2cd61cc2d69e1bbd555b10fc22a40318
+ms.sourcegitcommit: f1e6213c5d28a3219f976b2c92f193b05fed15ce
+ms.openlocfilehash: 805184a3e3913d93fa57c0742adf48955175df7f
 
 
 ---
@@ -26,14 +26,14 @@ ms.openlocfilehash: 000acfec2cd61cc2d69e1bbd555b10fc22a40318
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 계층 구조의 첫 번째 사이트를 설치하려면 먼저 Configuration Manager에 사용 가능한 토폴로지와 토폴로지의 연관 관계, 각 사이트 유형에서 가능한 관리 범위를 이해해야 합니다. 그래야 설치해야 하는 사이트 수를 줄일 수 있는 콘텐츠 관리 옵션을 고려하여 현재 비즈니스 요구를 효율적으로 처리할 토폴로지를 계획할 수 있고, 향후의 크기 증가를 관리하도록 이후에 확장할 수도 있습니다.  
+System Center Configuration Manager 계층 구조의 첫 번째 사이트를 설치하려면 먼저 Configuration Manager에 사용 가능한 토폴로지, 사용 가능한 사이트 유형과 서로 간의 관계, 각 사이트 유형이 제공하는 관리 범위를 이해하는 것이 좋습니다.
+그래야 설치해야 하는 사이트 수를 줄일 수 있는 콘텐츠 관리 옵션을 고려하여 현재 비즈니스 요구를 효율적으로 처리할 토폴로지를 계획할 수 있고, 향후의 크기 증가를 관리하도록 이후에 확장할 수도 있습니다.  
 
 > [!NOTE]
-> Configuration Manager의 새 설치를 계획할 때는 활성 버전의 현재 문제를 자세히 설명하는 [릴리스 정보]( /sccm/core/servers/deploy/install/release-notes)에 대해 알고 있어야 합니다. 릴리스 정보는 Configuration Manager의 모든 분기에 적용됩니다.  그러나 [Technical Preview Branch]( /sccm/core/get-started/technical-preview)를 사용하는 경우 각 Technical Preview 버전의 설명서에서 해당 분기와 관련된 문제를 확인할 수 있습니다.  
+> Configuration Manager의 새 설치를 계획할 때는 활성 버전의 현재 문제를 자세히 설명하는 [릴리스 정보]( /sccm/core/servers/deploy/install/release-notes)에 대해 알아보세요. 릴리스 정보는 Configuration Manager의 모든 분기에 적용됩니다.  그러나 [Technical Preview 분기]( /sccm/core/get-started/technical-preview)를 사용하는 경우 각 Technical Preview 버전의 설명서에서 해당 분기와 관련된 문제를 확인할 수 있습니다.  
 
 ##  <a name="a-namebkmktopologya-hierarchy-topology"></a><a name="bkmk_topology"></a> 계층 토폴로지  
- 계층 토폴로지의 범위는 단일 독립 실행형 기본 사이트에서 계층 구조의 최상위(상위 계층) 사이트에 있는 중앙 관리 사이트와 연결된 기본 및 보조 사이트 그룹까지입니다.    
-계층 구조에서 사용하는 사이트 유형 및 수의 핵심 드라이버는 일반적으로 지원해야 하는 장치의 유형 및 수에 해당합니다.  
+ 계층 토폴로지의 범위는 단일 독립 실행형 기본 사이트에서 계층 구조의 최상위(상위 계층) 사이트에 있는 중앙 관리 사이트와 연결된 기본 및 보조 사이트 그룹까지입니다.   계층 구조에서 사용하는 사이트 유형 및 수의 핵심 드라이버는 일반적으로 다음과 같이 지원해야 하는 장치의 유형 및 수에 해당합니다.   
 
  **독립 실행형 기본 사이트:** 단일 기본 사이트로 모든 장치와 사용자를 관리할 수 있는 경우 독립 실행형 기본 사이트를 사용하세요([크기 조정 및 비율 값](/sccm/core/plan-design/configs/size-and-scale-numbers) 참조). 이 토폴로지는 회사의 여러 지리적 위치를 단일 기본 사이트에서 처리할 수 있는 경우에도 적합합니다.  네트워크 트래픽을 쉽게 관리하려면 선호하는 관리 지점과 신중하게 계획한 콘텐츠 인프라를 사용하세요([System Center Configuration Manager에서 콘텐츠 관리의 기본 개념](../../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md) 참조).  
 
@@ -43,18 +43,17 @@ System Center Configuration Manager 계층 구조의 첫 번째 사이트를 설
 
 -   클라이언트 사이트 할당 및 사용 가능한 리소스 및 서비스 검색을 간소화합니다.  
 
--   사이트 간 데이터베이스 복제로 정의된 가능한 지연 시간을 제거합니다.  
+-   사이트 간 데이터베이스 복제로 정의된 가능한 지연 시간을 제거합니다.
 
--   이 선택 항목은 영구적이 아니며 독립 실행형 기본 계층 구조를 중앙 관리 사이트에서 더 큰 계층 구조로 확장할 수 있습니다. 이렇게 하면 새 기본 사이트를 설치하여 배포 규모를 확장할 수 있습니다.  
+-   독립 실행형 기본 계층 구조를 중앙 관리 사이트에서 더 큰 계층 구조로 확장하는 옵션입니다. 이렇게 하면 새 기본 사이트를 설치하여 배포 규모를 확장할 수 있습니다.  
 
 
-**자식 기본 사이트가 하나 이상 있는 중앙 관리 사이트:** 모든 장치 및 사용자를 관리하려면 기본 사이트가 두 개 이상 필요할 경우 이 토폴로지를 사용하세요.  이 토폴로지는 이점은 다음과 같습니다.  
+**자식 기본 사이트가 하나 이상 있는 중앙 관리 사이트:** 모든 장치 및 사용자를 관리하려면 기본 사이트가 두 개 이상 필요할 경우 이 토폴로지를 사용하세요.  두 개 이상의 단일 기본 사이트를 사용해야 하는 경우 필수입니다. 이 토폴로지는 이점은 다음과 같습니다.  
 
--   두 개 이상의 단일 기본 사이트를 사용해야 하는 경우 필수  
 
--   계층 구조 규모를 확장할 수 있도록 최대 25개의 기본 사이트 지원  
+-   계층 구조 규모를 확장할 수 있도록 최대 25개의 기본 사이트를 지원합니다.  
 
--   이 선택 항목은 영구적입니다. 자식 기본 사이트를 분리하여 독립 실행형 기본 사이트로 설정할 수 없습니다. 따라서 사이트를 다시 설치하지 않는 경우 항상 중앙 관리 사이트를 사용합니다.  
+-   사이트를 다시 설치하지 않는 경우 항상 중앙 관리 사이트를 사용합니다. 이는 영구적 옵션입니다. 자식 기본 사이트를 분리하여 독립 실행형 기본 사이트로 설정할 수 없습니다.
 
  다음 섹션에서는 추가 사이트 대신 특정 사이트 또는 콘텐츠 관리 옵션을 사용할 시기를 이해하는 데 도움이 됩니다.  
 
@@ -67,7 +66,7 @@ System Center Configuration Manager 계층 구조의 첫 번째 사이트를 설
 
 -   기본 사이트가 둘 이상 있는 계층을 구성하는 경우 중앙 관리 사이트를 반드시 설치해야 하며, 중앙 관리 사이트가 설치하는 첫 번째 사이트여야 합니다.  
 
--   중앙 관리 사이트는 기본 사이트를 하위 사이트로서만 지원합니다.  
+-   중앙 관리 사이트는 기본 사이트를 자식 사이트로서만 지원합니다.  
 
 -   중앙 관리 사이트에는 클라이언트를 할당할 수 없습니다.  
 
@@ -84,7 +83,7 @@ System Center Configuration Manager 계층 구조의 첫 번째 사이트를 설
 -   파일 복제 및 데이터베이스 복제 시 계층의 사이트 간 통신을 제어하도록 구성할 수 있습니다. 예를 들어 사이트 데이터에 대한 데이터베이스 복제를 예약하거나, 사이트 간 파일 기반 데이터 전송 시 대역폭을 관리할 수 있습니다.  
 
 ##  <a name="a-namebkmkchoosepriimarya-determine-when-to-use-a-primary-site"></a><a name="BKMK_ChoosePriimary"></a> 기본 사이트를 사용할 시기 결정  
- 기본 사이트는 클라이언트를 관리하는 데 사용됩니다. 기본 사이트를 중앙 관리 사이트 아래에 자식 기본 사이트로 설치하거나 새 계층 구조의 첫 번째 사이트로 설치할 수 있습니다. 계층의 첫 번째 사이트로 설치하는 기본 사이트는 독립 실행형 기본 사이트를 만듭니다. 자식 기본 사이트와 독립 실행형 기본 사이트는 모두 보조 사이트를 기본 사이트의 자식 사이트로 지원합니다.  
+ 기본 사이트는 클라이언트를 관리하는 데 사용됩니다. 기본 사이트를 중앙 관리 사이트 아래에 자식 기본 사이트로 설치하거나 새 계층 구조의 첫 번째 사이트로 설치할 수 있습니다. 계층 구조의 첫 번째 사이트로 설치하는 기본 사이트는 독립 실행형 기본 사이트를 만듭니다. 자식 기본 사이트와 독립 실행형 기본 사이트는 모두 보조 사이트를 기본 사이트의 자식 사이트로 지원합니다.  
 
  기본 사이트는 다음과 같은 목적으로 사용하는 것이 좋습니다.  
 
@@ -94,16 +93,16 @@ System Center Configuration Manager 계층 구조의 첫 번째 사이트를 설
 
 -   배포 관리를 위한 추가 연결 지점을 제공하기 위해  
 
--   조직의 관리 요구 사항을 충족하기 위해 예를 들어 원격 위치에 기본 사이트를 설치하여 대역폭이 낮은 네트워크를 통한 배포 콘텐츠 전송을 관리할 수 있습니다. 그러나 System Center Configuration Manager에서는 데이터를 배포 지점으로 전송할 때 네트워크 대역폭 사용을 제한하는 옵션을 사용할 수 있으며, 이러한 콘텐츠 관리 기능 덕분에 추가 사이트를 설치하지 않아도 되는 경우가 있습니다.  
+-   조직의 관리 요구 사항을 충족하기 위해 예를 들어 원격 위치에 기본 사이트를 설치하여 대역폭이 낮은 네트워크를 통한 배포 콘텐츠 전송을 관리할 수 있습니다. 그러나 System Center Configuration Manager에서는 데이터를 배포 지점으로 전송할 때 네트워크 대역폭 사용을 제한하는 옵션을 사용할 수 있습니다. 이러한 콘텐츠 관리 기능 덕분에 추가 사이트를 설치하지 않아도 되는 경우가 있습니다.  
 
 
 **다음 정보는 기본 사이트를 설치할 시기를 결정하는 데 도움이 됩니다.**  
 
 -   기본 사이트는 독립 실행형 기본 사이트이거나 더 큰 계층의 자식 기본 사이트가 될 수 있습니다. 기본 사이트가 중앙 관리 사이트를 포함하는 계층의 구성원인 경우 이 사이트는 데이터베이스 복제본을 사용하여 사이트 간에 데이터를 복제합니다. 단일 사이트에서 지원할 수 있는 것보다 많은 클라이언트 및 장치를 지원해야 하는 경우가 아니라면 독립 실행형 기본 사이트를 설치해 볼 수 있습니다.  독립 실행형 기본 사이트를 설치하고 나면 해당 사이트를 확장하여 배포를 강화하도록 새 중앙 관리 사이트에 보고할 수 있습니다.  
 
--   기본 사이트는 중앙 관리 사이트를 상위 사이트로만 지원합니다.  
+-   기본 사이트는 중앙 관리 사이트를 부모 사이트로만 지원합니다.  
 
--   기본 사이트는 하위 사이트로 보조 사이트만 지원하며, 여러 보조 하위 사이트를 지원할 수 있습니다.  
+-   기본 사이트는 하위 사이트로 보조 사이트만 지원하며, 여러 보조 하위 사이트도 지원할 수 있습니다.  
 
 -   기본 사이트는 할당된 클라이언트의 모든 클라이언트 데이터를 처리합니다.  
 
@@ -112,7 +111,9 @@ System Center Configuration Manager 계층 구조의 첫 번째 사이트를 설
 ##  <a name="a-namebkmkchoosesecondarya-determine-when-to-use-a-secondary-site"></a><a name="BKMK_ChooseSecondary"></a> 보조 사이트를 사용할 시기 결정  
  낮은 대역폭 네트워크를 통한 배포 콘텐츠 및 클라이언트 데이터의 전송을 관리하려면 보조 사이트를 사용합니다.  
 
- 보조 사이트는 중앙 관리 사이트 또는 보조 사이트의 직계 부모 기본 사이트에서 관리할 수 있습니다. 보조 사이트는 기본 사이트에 연결해야 합니다. 기본 사이트에 연결된 보조 사이트는 다른 상위 사이트로 이동할 수 없으며, 이동하려면 먼저 제거한 다음 새 기본 사이트 아래에 하위 사이트로 다시 설치해야 합니다. 그러나 두 개의 피어 보조 사이트 간에 콘텐츠의 경로를 지정하는 방식으로 배포 콘텐츠의 파일 기반 복제를 관리할 수 있습니다. 보조 사이트에서 클라이언트 데이터를 기본 사이트에 전송하기 위해 파일 기반 복제를 사용합니다. 보조 사이트에서는 부모 기본 사이트와 통신하기 위해 데이터베이스 복제도 사용합니다.  
+ 보조 사이트는 중앙 관리 사이트 또는 보조 사이트의 직계 부모 기본 사이트에서 관리할 수 있습니다. 보조 사이트는 기본 사이트에 연결해야 합니다. 기본 사이트에 연결된 보조 사이트는 다른 상위 사이트로 이동할 수 없으며, 이동하려면 먼저 제거한 다음 새 기본 사이트 아래에 하위 사이트로 다시 설치해야 합니다.
+
+그러나 두 개의 피어 보조 사이트 간에 콘텐츠의 경로를 지정하는 방식으로 배포 콘텐츠의 파일 기반 복제를 관리할 수 있습니다. 보조 사이트에서 클라이언트 데이터를 기본 사이트에 전송하기 위해 파일 기반 복제를 사용합니다. 보조 사이트에서는 부모 기본 사이트와 통신하기 위해 데이터베이스 복제도 사용합니다.  
 
  다음 조건 중 하나라도 충족할 경우 보조 사이트를 설치하는 것이 좋습니다.  
 
@@ -129,13 +130,13 @@ System Center Configuration Manager 계층 구조의 첫 번째 사이트를 설
 
 -   SQL Server의 로컬 인스턴스를 사용할 수 없는 경우 보조 사이트 설치 과정에서 SQL Server Express가 자동으로 설치됩니다.  
 
--   보조 사이트 설치는 Configuration Manager 설치를 컴퓨터에서 직접 실행하는 대신 Configuration Manager 콘솔에서 시작됩니다.  
+-   보조 사이트 설치는 설치를 컴퓨터에서 직접 실행하는 대신 Configuration Manager 콘솔에서 시작됩니다.  
 
 -   보조 사이트에서는 사이트 데이터베이스에 있는 정보의 하위 집합을 사용하여 부모 기본 사이트와 보조 사이트 간 데이터베이스 복제를 통해 복제하는 데이터의 크기를 줄입니다.  
 
 -   보조 사이트는 공통 부모 기본 사이트를 공유하는 다른 보조 사이트로 파일 기반 콘텐츠를 라우팅하는 기능을 지원합니다.  
 
--   보조 사이트를 설치할 때 보조 사이트 서버에 있는 관리 지점 및 배포 지점이 자동으로 배포됩니다.  
+-   보조 사이트를 설치할 때 보조 사이트 서버에 있는 관리 지점 및 배포 지점은 자동으로 배포됩니다.  
 
 ##  <a name="a-namebkmkchoosesecondaryordpa-determine-when-to-use-content-management-options"></a><a name="BKMK_ChooseSecondaryorDP"></a> 콘텐츠 관리 옵션을 사용할 시기 결정  
  원격 네트워크 위치에 클라이언트가 있는 경우 기본 사이트 또는 보조 사이트 대신 하나 이상의 콘텐츠 관리 옵션을 사용하는 것이 좋습니다. Windows BranchCache를 사용하거나, 대역폭 제어를 위한 배포 지점을 구성하거나, 콘텐츠를 배포 지점에 수동으로 복사(콘텐츠 준비)하는 경우에는 일반적으로 사이트를 설치하지 않아도 됩니다.  
@@ -150,11 +151,11 @@ System Center Configuration Manager 계층 구조의 첫 번째 사이트를 설
  Configuration Manager의 콘텐츠 관리 옵션에 대한 자세한 내용은 [System Center Configuration Manager에서 콘텐츠 관리의 기본 개념](../../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md)을 참조하세요.  
 
 ##  <a name="a-namebkmkbeyonda-beyond-hierarchy-topology"></a><a name="bkmk_beyond"></a> 계층 토폴로지 외의 다른 사항들  
- 초기 계층 구조 토폴로지 이외에도 계층 구조의 다양한 사이트에서 사용할 수 있는 서비스 또는 기능(사이트 시스템 역할) 및 계층 구조 전체 구성과 기능을 인프라에서 관리하는 방법을 고려합니다. 다음은 일반적인 고려 사항으로 별도의 항목에서 다룹니다. 다음은 계층 구조 설계와 영향을 주거나 영향을 받을 수 있으므로 고려해야 합니다.  
+ 초기 계층 구조 토폴로지 이외에도 계층 구조의 다양한 사이트에서 사용할 수 있는 서비스 또는 기능(사이트 시스템 역할) 및 계층 구조 전체 구성과 기능을 인프라에서 관리하는 방법을 고려합니다. 다음 일반적인 고려 사항은 별도의 항목에서 다룹니다. 다음은 계층 구조 설계와 영향을 주거나 영향을 받을 수 있으므로 중요합니다.  
 
 -   [System Center Configuration Manager로 컴퓨터 및 장치 관리](/sccm/core/clients/manage/manage-clients)를 준비할 때 관리하는 장치가 온-프레미스에 있는지 클라우드에 있는지 또는 사용자 소유의 장치(BYOD)를 포함하는지 고려합니다.  또한 Configuration Manager로 직접 관리하거나 Microsoft Intune과의 통합을 통해 관리할 수 있는 Windows 10 컴퓨터와 같이 여러 관리 옵션으로 지원되는 장치를 어떻게 관리할지 고려합니다.  
 
--   사용 가능한 네트워크 인프라가 원격 위치 간의 데이터 흐름에 어떤 영향을 줄지 이해합니다([System Center Configuration Manager에 대한 네트워크 환경 준비](/sccm/core/plan-design/network/configure-firewalls-ports-domains) 참조). 또한 관리하는 사용자 및 장치의 지리적 위치 및 인프라에 회사 도메인을 통해 액세스할지 또는 인터넷에서 액세스할지를 고려합니다.  
+-   사용 가능한 네트워크 인프라가 원격 위치 간의 데이터 흐름에 어떤 영향을 줄지 이해합니다([System Center Configuration Manager에 대한 네트워크 환경 준비](/sccm/core/plan-design/network/configure-firewalls-ports-domains) 참조). 또한 관리하는 사용자 및 장치의 지리적 위치 및 인프라에 회사 도메인 또는 인터넷을 통해 액세스할지를 고려합니다.  
 
 -   배포 정보(파일 및 앱)를 관리하는 장치에 효과적으로 분배하도록 콘텐츠 인프라를 계획합니다([System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md) 참조).  
 
@@ -178,16 +179,16 @@ System Center Configuration Manager 계층 구조의 첫 번째 사이트를 설
 
 **사이트 및 계층 구조에 대한 구성 고려 사항:**  
 
--   [System Center Configuration Manager의 사이트 및 계층에 사용할 수 있는 고가용성 옵션](/sccm/protect/understand/high-availability-options)   
+-   [System Center Configuration Manager의 사이트 및 계층에 사용할 수 있는 고가용성 옵션](/sccm/protect/understand/high-availability-options) 
 
--   [System Center Configuration Manager에 대한 Active Directory 스키마를 확장](../../../core/plan-design/network/extend-the-active-directory-schema.md)한 후 [System Center Configuration Manager용으로 사이트 데이터를 게시](../../../core/servers/deploy/configure/publish-site-data.md)하도록 사이트를 구성할 것인가요?  
+-   [System Center Configuration Manager에 대한 Active Directory 스키마를 확장](../../../core/plan-design/network/extend-the-active-directory-schema.md)한 후 [System Center Configuration Manager용으로 사이트 데이터를 게시](../../../core/servers/deploy/configure/publish-site-data.md)하도록 사이트를 구성합니다.  
 
--   계층 구조 내 사이트 간의 네트워크 대역폭을 관리하려면 [System Center Configuration Manager의 사이트 간 데이터 전송](../../../core/servers/manage/data-transfers-between-sites.md)을 참조하세요.  
+-   [System Center Configuration Manager의 사이트 간 데이터 전송](../../../core/servers/manage/data-transfers-between-sites.md)  
 
--   [System Center Configuration Manager의 역할 기반 관리 기본 사항](../../../core/understand/fundamentals-of-role-based-administration.md)  
+-   [System Center Configuration Manager의 역할 기반 관리 기본 사항](../../../core/understand/fundamentals-of-role-based-administration.md)
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

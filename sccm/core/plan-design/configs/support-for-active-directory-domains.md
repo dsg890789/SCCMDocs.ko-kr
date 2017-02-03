@@ -1,8 +1,8 @@
 ---
-title: "AD 도메인 지원 | System Center Configuration Manager"
+title: "지원되는 Active Directory 도메인 | Microsoft 문서"
 description: "Active Directory 도메인에서 System Center Configuration Manager 사이트 시스템의 멤버 자격에 대한 요구 사항을 가져옵니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 1/3/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,16 +17,16 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: fdcd1b3b59dbe2b5bd82499e8d29230b3d8ca5cd
+ms.sourcegitcommit: a3da133205506ba0463dd3207da5ceb5a5d1ab49
+ms.openlocfilehash: ea527a7767b33eaf495e78522364d8a7a47712ca
 
 
 ---
-# <a name="support-for-active-directory-domains-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 Active Directory 도메인 지원
+# <a name="supported-active-directory-domains-for-system-center-configuration-manager"></a>System Center Configuration Manager에서 지원되는 Active Directory 도메인
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-모든 System Center Configuration Manager 사이트 시스템은 지원되는 Windows Active Directory 도메인의 구성원이어야 합니다. Configuration Manager 클라이언트 컴퓨터는 도메인 구성원 또는 작업 그룹 구성원일 수 있습니다.  
+모든 System Center Configuration Manager 사이트 시스템은 지원되는 Windows Server Active Directory 도메인의 구성원이어야 합니다. Configuration Manager 클라이언트 컴퓨터는 도메인 구성원 또는 작업 그룹 구성원일 수 있습니다.  
 
  **요구 사항 및 제한 사항:**  
 
@@ -66,7 +66,7 @@ Configuration Manager에서는 비연속 네임스페이스를 포함하는 도�
 
  컴퓨터가 비연속 도메인 컨트롤러에 액세스할 수 있도록 하려면 도메인 개체 컨테이너에서 **msDS-AllowedDNSSuffixes** Active Directory 특성을 변경해야 합니다. 두 DNS 접미사를 모두 특성에 추가해야 합니다.  
 
- 또한 조직 내에 배포된 모든 DNS 네임스페이스가 DNS 접미사 검색 목록에 포함되도록 하려면 비연속 도메인의 각 컴퓨터에 대해 검색 목록을 구성해야 합니다. 도메인 컨트롤러의 주 DNS 접미사, DNS 도메인 이름 및 Configuration Manager가 상호 작용할 수도 있는 다른 서버의 추가 네임스페이스 목록을 포함합니다. 그룹 정책 관리 콘솔을 사용하여 **DNS(Domain Name System) 접미사 검색** 목록을 구성할 수 있습니다.  
+ 또한 조직 내에 배포된 모든 DNS 네임스페이스가 DNS 접미사 검색 목록에 포함되도록 하려면 비연속 도메인의 각 컴퓨터에 대해 검색 목록을 구성해야 합니다. 도메인 컨트롤러의 주 DNS 접미사, DNS 도메인 이름 및 Configuration Manager가 상호 작용할 수도 있는 다른 서버의 추가 네임스페이스가 네임스페이스 목록에 포함되는지 확인합니다. 그룹 정책 관리 콘솔을 사용하여 **DNS(Domain Name System) 접미사 검색** 목록을 구성할 수 있습니다.  
 
 > [!IMPORTANT]  
 >  Configuration Manager에서 컴퓨터를 참조하는 경우 해당 주 DNS 접미사를 사용하여 컴퓨터를 입력합니다. 이 접미사는 Active Directory 도메인에 **dnsHostName** 특성으로 등록되어 있는 정규화된 도메인 이름 및 시스템과 연결된 서비스 사용자 이름과 일치해야 합니다.  
@@ -76,12 +76,13 @@ Configuration Manager에서는 비연속 네임스페이스를 포함하는 도�
 
 -   유효한 최상위 도메인이 있는 비연속 DNS 네임스페이스를 사용하여 Active Directory Domain Services의 단일 레이블 도메인을 구성해야 합니다.  
 
-     **예제:** Contoso의 단일 레이블 도메인이 DNS contoso.com에서 비연속 네임스페이스를 포함하도록 구성되어 있습니다. 따라서 Contoso 도메인의 컴퓨터에 대해 Configuration Manager에서 DNS 접미사를 지정할 때는 Contoso가 아닌 Contoso.com을 지정합니다.  
+     **예제:** Contoso의 단일 레이블 도메인이 DNS contoso.com에서 비연속 네임스페이스를 포함하도록 구성되어 있습니다. 따라서 Contoso 도메인의 컴퓨터에 대해 Configuration Manager에서 DNS 접미사를 지정할 때는 “Contoso”가 아닌 “Contoso.com”을 지정합니다.  
 
--   Kerberos 인증을 사용하여 사이트 서버와 시스템 컨텍스트 간의 DCOM 연결을 설정할 수 있어야 합니다.  
+-   Kerberos 인증을 사용하여 사이트 서버와 시스템 컨텍스트 간의 DCOM(Distributed Component Object Model) 연결을 설정할 수 있어야 합니다.  
+  
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

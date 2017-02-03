@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager의 보안 및 개인 정보 | Microsoft 문서"
 description: "System Center Configuration Manager의 보안 및 개인 정보에 대한 리소스를 찾습니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 1/3/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
-ms.openlocfilehash: a0cc96d1bde1ab895a4560d89dbc162f34a8443b
+ms.sourcegitcommit: b470aee50669bcded176d55d8b1496768d1f3cde
+ms.openlocfilehash: de9df79c7adc24b415fd1be6e45a42aec7e16f9a
 
 
 ---
@@ -25,11 +25,11 @@ ms.openlocfilehash: a0cc96d1bde1ab895a4560d89dbc162f34a8443b
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-이 항목에는 System Center Configuration Manager의 보안 및 개인 정보에 대한 리소스가 포함되어 있습니다.  
+이 문서에는 System Center Configuration Manager의 보안 및 개인 정보에 대한 리소스가 포함되어 있습니다.  
 
  계속하기 전에 [System Center Configuration Manager의 기본 사항](../../../core/understand/fundamentals.md)을 이해해야 합니다. System Center Configuration Manager를 이미 설치한 경우 해당 구현에 대한 설계 결정을 파악합니다. Configuration Manager 계획 및 배포 콘텐츠가 유용할 수 있습니다.  
 
- 제품의 보안 관련 기능은 다음 항목을 참조하세요.  
+ 제품의 보안 관련 기능은 다음 문서를 참조하세요.  
 
 -   [System Center Configuration Manager에서 운영 체제 배포의 보안 및 개인 정보](../../../osd/plan-design/security-and-privacy-for-operating-system-deployment.md)  
 
@@ -59,7 +59,7 @@ ms.openlocfilehash: a0cc96d1bde1ab895a4560d89dbc162f34a8443b
 
 
 
- **보안 및 개인 정보 항목:**  
+ **보안 및 개인 정보 문서:**  
 
 -   [System Center Configuration Manager에서 보안 계획](../../../core/plan-design/security/plan-for-security.md)  
 
@@ -76,6 +76,6 @@ ms.openlocfilehash: a0cc96d1bde1ab895a4560d89dbc162f34a8443b
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

@@ -2,7 +2,7 @@
 title: "백업 및 복구 | Microsoft 문서"
 description: "System Center Configuration Manager에서 사이트를 백업하고 장애 또는 데이터 손실이 발생할 경우 복구하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 1/3/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 828e2ac9a3f9bcea1571d24145a1021fdf1091f3
-ms.openlocfilehash: ce73be3a9fa3876c587bbd7b7cb05acd36c2687e
+ms.sourcegitcommit: d68a6d6799bc898308f20a1f2af27b938a60dca2
+ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
 
 ---
@@ -839,7 +839,7 @@ ms.openlocfilehash: ce73be3a9fa3876c587bbd7b7cb05acd36c2687e
  사이트 서버 복구 후에 사이트 복구 중 테스트용 로드 키가 초기화되므로 사이트에 대해 지정된 Windows 테스트용 로드 키를 다시 입력해야 합니다. 테스트용 로드 키를 다시 입력한 후 Configuration Manager 콘솔에서 Windows 테스트용 로드 키의 **사용된 활성화 수** 열 수가 다시 설정됩니다. 예를 들어 사이트 오류 전에 장치에 **총 활성화 수**가 **100**으로 설정되어 있고 사용된 키의 수에 대한 **사용된 활성화 수**가 **90**이라고 가정해 봅니다. 사이트 복구 후 **총 활성화 수** 열은 여전히 **100**을 표시하지만 **사용된 활성화 수** 열은 값을 **0**으로 잘못 표시합니다. 그러나 10개의 새 장치에서 테스트용 로드 키를 사용한 후에는 남은 테스트용 로드 키가 없으며 다음 장치에서 테스트용 로드 키를 적용하지 못합니다.  
 
 #### <a name="recreate-the-microsoft-intune-subscription"></a>Microsoft Intune 구독 다시 만들기  
- 사이트 서버 컴퓨터를 이미지로 다시 설치한 후에 Configuration Manager 사이트 서버를 복구하는 경우 Microsoft Intune 구독이 복원되지 않습니다. 사이트를 복구한 후에 구독을 다시 만들어야 합니다. 자세한 내용은 [Configuring the Microsoft Intune subscription](../../mdm/deploy-use/setup-hybrid-mdm.md#step-3-configure-intune-subscription)을 참조하십시오.  
+ 사이트 서버 컴퓨터를 이미지로 다시 설치한 후에 Configuration Manager 사이트 서버를 복구하는 경우 Microsoft Intune 구독이 복원되지 않습니다. 사이트를 복구한 후 구독을 다시 연결 해야 합니다.  새 APN 요청을 만드는 대신, iOS 관리가 마지막으로 구성 또는 갱신될 때 업로드된 현재 유효한 .pem 파일을 업로드하세요. 자세한 내용은 [Configuring the Microsoft Intune subscription](../../mdm/deploy-use/setup-hybrid-mdm.md#step-3-configure-intune-subscription)을 참조하십시오.  
 
 #### <a name="configure-ssl-for-site-system-roles-that-use-iis"></a>IIS를 사용하는 사이트 시스템 역할에 대해 SSL 구성  
  실패하기 전에 HTTPS에 대해 구성했던 IIS를 실행하는 사이트 시스템을 복구할 때 웹 서버 인증서를 사용하도록 IIS를 다시 구성해야 합니다.  
@@ -913,6 +913,6 @@ ms.openlocfilehash: ce73be3a9fa3876c587bbd7b7cb05acd36c2687e
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

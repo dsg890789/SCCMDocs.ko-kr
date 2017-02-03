@@ -1,5 +1,5 @@
 ---
-title: "온-프레미스 인프라 업그레이드 | System Center Configuration Manager"
+title: "온-프레미스 인프라 업그레이드 | Microsoft 문서"
 description: "SQL Server, 사이트 시스템의 사이트 운영 체제 등의 인프라를 업그레이드하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/28/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: c8115fba0722fc902e60ce201d8a9914036c1245
-ms.openlocfilehash: 1239bf81991bb233a9640606bb47f598a70d5e50
+ms.sourcegitcommit: 4a8d98addcd463eb82d8b7100b44254a10d21992
+ms.openlocfilehash: b79346968edf88443f8e30691aa4baec7b81699f
 
 
 ---
@@ -26,7 +26,11 @@ ms.openlocfilehash: 1239bf81991bb233a9640606bb47f598a70d5e50
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-다음 정보를 사용하여 System Center Configuration Manager를 실행하는 인프라를 업그레이드할 수 있습니다.  
+이 항목의 정보를 사용하여 System Center Configuration Manager를 실행하는 서버 인프라를 업그레이드할 수 있습니다.  
+
+ - Configuration Manager의 이전 버전에서 System Center Configuration Manager로 업그레이드하려면 [System Center Configuration Manager로 업그레이드](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager)를 참조하세요.
+
+- System Center Configuration Manager 인프라를 새 버전으로 업데이트하려면 [System Center Configuration Manager용 업데이트](/sccm/core/servers/manage/updates)를 참조하세요.
 
 ##  <a name="a-namebkmksupconfigupgradesitesrva-upgrade-site-operating-system-of-site-systems"></a><a name="BKMK_SupConfigUpgradeSiteSrv"></a> 사이트 시스템의 사이트 운영 체제 업그레이드  
  Configuration Manager는 다음과 같은 상황에서 사이트 서버를 호스트하는 서버의 운영 체제 및 사이트 시스템 역할을 호스트하는 원격 서버의 현재 위치 업그레이드를 지원합니다.  
@@ -78,7 +82,7 @@ ms.openlocfilehash: 1239bf81991bb233a9640606bb47f598a70d5e50
 3. 루트 아래의 트리를 확장하고 **SMS** 노드를 선택한 다음 **보안**을 클릭합니다.  **SMS Admins** 그룹에 다음 사용 권한이 있는지 확인합니다.
   -     계정 사용
   -     원격 사용
-4. **보안 탭**의 SMS 노드 아래에서 **사이트 _<sitecode>** 노드를 선택하고 **보안**을 클릭합니다. **SMS Admins** 그룹에 다음 사용 권한이 있는지 확인합니다.
+4. **보안 탭**의 SMS 노드 아래에서 **사이트_&lt;사이트 코드>** 노드를 선택하고 **보안**을 클릭합니다. **SMS Admins** 그룹에 다음 사용 권한이 있는지 확인합니다.
   -   메서드 실행
   -   공급자 쓰기
   -   계정 사용
@@ -176,6 +180,19 @@ ms.openlocfilehash: 1239bf81991bb233a9640606bb47f598a70d5e50
  2. 보조 사이트의 상위 기본 사이트를 업그레이드하기 전에 보조 사이트를 업그레이드합니다.
  3. 마지막으로 부모 기본 사이트를 업그레이드합니다. 여기에는 중앙 관리 사이트에 보고를 하는 자식 기본 사이트와 계층의 최상위 사이트인 독립 실행형 기본 사이트가 모두 포함됩니다.
 
+**SQL Server 카디널리티 추정 수준 및 사이트 데이터베이스:**   
+사이트 데이터베이스가 이전 버전의 SQL Server에서 업그레이드된 경우 데이터베이스는 해당 SQL Server 인스턴스에 허용되는 최소값일 경우 기존 SQL CE(카디널리티 추정) 수준이 유지됩니다. 허용되는 수준보다 낮은 호환성 수준의 데이터베이스를 사용하여 SQL Server를 업그레이드하면 데이터베이스가 자동으로 SQL에서 허용되는 가장 낮은 호환성 수준으로 설정됩니다.
+
+다음 표에서는 Configuration Manager 사이트 데이터베이스에 권장되는 호환성 수준을 식별합니다.
+
+|SQL Server 버전 | 지원되는 호환성 수준 |권장 수준|
+|----------------|--------------------|--------|
+| SQL Server 2016| 130, 120, 110, 100 | 130|
+| SQL Server 2014| 120, 110, 100      | 110|
+
+사이트 데이터베이스에 사용 중인 SQL Server CE 호환성 수준을 식별하려면 사이트 데이터베이스 서버에서 다음 SQL 쿼리를 실행합니다. **SELECT name, compatibility_level FROM sys.databases**
+
+ SQL CE 호환성 수준 및 설정 방법에 대한 자세한 내용은 [ALTER DATABASE 호환성 수준(Transact-SQL)](https://msdn.microsoft.com/library/bb510680.aspx)을 참조하세요.
 
 
 **SQL Server에 대한 자세한 내용은 TechNet에서 SQL Server 설명서를 참조하세요.**  
@@ -196,6 +213,6 @@ ms.openlocfilehash: 1239bf81991bb233a9640606bb47f598a70d5e50
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO5-->
 
 

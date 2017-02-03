@@ -2,7 +2,7 @@
 title: "부팅 가능한 미디어 만들기 | Microsoft 문서"
 description: "Configuration Manager에서 부팅 가능한 미디어를 사용하면 쉽게 새 버전의 Windows를 설치하거나 컴퓨터 및 전송 설정을 바꿀 수 있습니다."
 ms.custom: na
-ms.date: 12/06/2016
+ms.date: 12/21/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 03722ff4f480cd26842e395fe1f7ec8359e2b33e
-ms.openlocfilehash: a7bdad82dc55b4c0fe7d892ef34cc6aa0dfbf476
+ms.sourcegitcommit: 66cd6d099acdd9db2bc913a69993aaf5e17237fe
+ms.openlocfilehash: 0a4c2b41f899f6e243e7eb825082514114226a8f
 
 
 ---
@@ -47,7 +47,7 @@ Configuration Manager의 부팅 가능한 미디어에는 부팅 이미지, 선�
 
  부팅 가능한 미디어를 만들려면 다음 절차를 따르세요.  
 
-#### <a name="to-create-bootable-media"></a>부팅 가능한 미디어를 만들려면  
+### <a name="to-create-bootable-media"></a>부팅 가능한 미디어를 만들려면  
 
 1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리**를 클릭합니다.  
 
@@ -146,11 +146,18 @@ Configuration Manager의 부팅 가능한 미디어에는 부팅 이미지, 선�
 
 10. 마법사를 완료합니다.  
 
+## <a name="create-bootable-media-on-a-usb-drive-from-a-network-share"></a>네트워크 공유를 통해 USB 드라이브에서 부팅 가능한 미디어 만들기
+이 섹션의 정보를 사용하여 플래시 드라이브가 Configuration Manager 콘솔을 실행하는 컴퓨터에 연결되지 않을 경우 USB 플래시 드라이브에서 부팅 가능한 미디어를 만들 수 있습니다. USB 드라이브에서 부팅 가능한 미디어를 만들려면 작업 순서 부팅 미디어를 만들고, ISO를 탑재하고, ISO에서 USB 드라이브로 파일을 전송하면 됩니다.
+
+1. [작업 순서 부팅 미디어 만들기](#to-create-task-boobable-media). **미디어 유형** 페이지에서 **CD/DVD 세트**를 선택합니다. 마법사에서 출력 파일을 지정한 위치에 기록합니다. 예: **\\\servername\folder\outputfile.iso**.  
+2. 이동식 USB 드라이브를 준비합니다. 드라이브는 포맷되고, 비어 있고, 부팅 가능해야 합니다.
+3. 공유 위치에서 ISO를 탑재하고 ISO에서 USB 드라이브로 파일을 전송합니다.
+
 ## <a name="next-steps"></a>다음 단계  
 [부팅 가능한 미디어를 사용하여 네트워크를 통해 Windows 배포](use-bootable-media-to-deploy-windows-over-the-network.md)  
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO4-->
 
 

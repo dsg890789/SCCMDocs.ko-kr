@@ -1,8 +1,8 @@
 ---
-title: "클라이언트 업그레이드 | System Center Configuration Manager"
+title: "클라이언트 업그레이드 | Microsoft 문서"
 description: "System Center Configuration Manager에서 클라이언트를 업그레이드하는 방법에 대한 정보를 가져옵니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 01/01/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 446c83b5-c292-4e74-ba19-0792ac6b3472
 caps.latest.revision: 8
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 1571d31af1e2697c5ecbdc709a3eea9d6e28dbf0
+ms.sourcegitcommit: 52d2e088b8db3c2e9a0af640ca3db72b9fd7af60
+ms.openlocfilehash: f369bccb1da6d428fb321455272190e1a0439ec3
 
 
 ---
@@ -25,10 +25,10 @@ ms.openlocfilehash: 1571d31af1e2697c5ecbdc709a3eea9d6e28dbf0
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-다양한 방법을 사용하여 엔터프라이즈의 Windows 장치, UNIX 및 Linux 서버, Mac 컴퓨터에서 System Center Configuration Manager 클라이언트 소프트웨어를 업그레이드할 수 있습니다. 다음 섹션에는 조직에 가장 적합한 방법을 결정하는 데 도움이 되도록 각 클라이언트 업그레이드 방법의 장점과 단점이 정리되어 있습니다.  
+다양한 방법을 사용하여 Windows 장치, UNIX 및 Linux 서버, Mac 컴퓨터에서 System Center Configuration Manager 클라이언트 소프트웨어를 업그레이드할 수 있습니다. 각 방법의 장점과 단점은 다음과 같습니다.  
 
 > [!TIP]  
->  이전 버전의 Configuration Manager\(예: Configuration Manager 2007 또는 System Center 2012 Configuration Manager\)에서 서버 인프라를 업그레이드하는 경우 Configuration Manager 클라이언트를 업그레이드하기 전에 현재 분기 업데이트를 모두 설치하는 등 서버를 업그레이드하는 것이 좋습니다.   최신 현재 분기 업데이트에는 클라이언트의 최신 버전이 포함되어 있으므로 사용하려는 Configuration Manager 업데이트를 모두 설치한 후에 클라이언트 업그레이드를 수행하는 것이 좋습니다.  
+>  이전 버전의 Configuration Manager\(예: Configuration Manager 2007 또는 System Center 2012 Configuration Manager\)에서 서버 인프라를 업그레이드하는 경우 Configuration Manager 클라이언트를 업그레이드하기 전에 현재 분기 업데이트를 모두 설치하는 등 서버를 업그레이드하는 것이 좋습니다. 이 방법으로 최신 버전의 클라이언트 소프트웨어를 보유하게 됩니다.  
 
 ## <a name="group-policy-installation"></a>그룹 정책 설치  
  **지원되는 클라이언트 플랫폼:** Windows  
@@ -47,9 +47,8 @@ ms.openlocfilehash: 1571d31af1e2697c5ecbdc709a3eea9d6e28dbf0
 
 -   다수의 클라이언트를 업그레이드하는 경우 네트워크 트래픽이 높아질 수 있습니다.  
 
--   Active Directory 스키마가 Configuration Manager를 지원하도록 확장되지 않은 경우 그룹 정책 설정을 사용하여 클라이언트 설치 속성을 사이트의 컴퓨터에 추가해야 합니다.  
+-   Active Directory 스키마가 Configuration Manager를 지원하도록 확장되지 않은 경우 [그룹 정책 설정](../../../../core/clients/deploy/deploy-clients-to-windows-computers.md#BKMK_ClientGP)을 사용하여 클라이언트 설치 속성을 사이트의 컴퓨터에 추가해야 합니다.  
 
- 자세한 내용은 [그룹 정책을 사용하여 Configuration Manager 클라이언트를 설치하는 방법](../../../../core/clients/deploy/deploy-clients-to-windows-computers.md#BKMK_ClientGP)을 참조하세요.  
 
 ## <a name="logon-script-installation"></a>로그온 스크립트 설치  
  **지원되는 클라이언트 플랫폼:** Windows  
@@ -122,7 +121,7 @@ ms.openlocfilehash: 1571d31af1e2697c5ecbdc709a3eea9d6e28dbf0
 
 -   사이트의 클라이언트를 자동으로 최신 버전으로 유지할 수 있습니다.  
 
--   관리자의 관리 작업이 최소화됩니다.  
+-   관리 작업이 최소화됩니다.  
 
  **단점**  
 
@@ -153,6 +152,6 @@ ms.openlocfilehash: 1571d31af1e2697c5ecbdc709a3eea9d6e28dbf0
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

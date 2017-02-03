@@ -2,7 +2,7 @@
 title: "마이그레이션 검사 목록 | Microsoft 문서"
 description: "관리자 검사 목록을 사용하여 System Center Configuration Manager로의 마이그레이션 전략을 계획할 수 있습니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
-ms.openlocfilehash: 285d1111502ec25b3b75a64d834b65b6898128e8
+ms.sourcegitcommit: 5e6e8a18a8fc705c993177b3c5b4113a351a45a4
+ms.openlocfilehash: 36f7c37e4da3f2bce64a25d266dae57d9fe98c36
 
 
 ---
@@ -26,13 +26,7 @@ ms.openlocfilehash: 285d1111502ec25b3b75a64d834b65b6898128e8
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-다음 관리자 검사 목록을 사용하여 System Center Configuration Manager로의 마이그레이션 전략을 계획할 수 있습니다.  
-
--   [마이그레이션 계획을 위한 관리자 검사 목록](#Checklist_Migraiton_Planning)  
-
--   [계층 구조 마이그레이션을 위한 관리자 검사 목록](#Checklist_Hierarchy_for_migration)  
-
--   [마이그레이션을 위한 관리자 검사 목록](#Checklisit_Migration)  
+다음 관리자 검사 목록을 사용하여 System Center Configuration Manager로의 마이그레이션 전략을 계획할 수 있습니다.
 
 ##  <a name="a-namechecklistmigraitonplanninga-administrator-checklist-for-migration-planning"></a><a name="Checklist_Migraiton_Planning"></a> 마이그레이션 계획을 위한 관리자 검사 목록  
  사전 마이그레이션 계획 단계에서는 다음 검사 목록을 사용하십시오.  
@@ -50,9 +44,7 @@ ms.openlocfilehash: 285d1111502ec25b3b75a64d834b65b6898128e8
 
     자세한 내용은 [System Center Configuration Manager의 역할 기반 관리 기본 사항](../../core/understand/fundamentals-of-role-based-administration.md)을 참조하세요.  
 
--   **사용자 네트워크 및 Active Directory 토폴로지를 평가합니다.**  
-
-    기존 도메인 구조와 네트워크 토폴로지를 검토하고 이러한 구성이 계층 설계 및 마이그레이션 작업에 어떠한 영향을 미치는지 살펴봅니다.  
+-   **네트워크 및 Active Directory 토폴로지 평가:** 기존 도메인 구조와 네트워크 토폴로지를 검토하고 이러한 구성이 계층 구조 설계 및 마이그레이션 작업에 어떠한 영향을 미치는지 살펴봅니다.  
 
 -   **대상 계층 설계를 완료합니다.**  
 
@@ -64,7 +56,7 @@ ms.openlocfilehash: 285d1111502ec25b3b75a64d834b65b6898128e8
 
 -   **개체 마이그레이션 전략을 계획합니다.**  
 
-    사이트 경계, 컬렉션, 보급 알림 및 배포 등과 같은 여러 개체를 마이그레이션하는 마이그레이션 작업의 사용을 계획합니다. 자세한 내용은 [Plann항목에서g a Migration Job Strategy 항목에서 System Center Configuration Manager](../../core/migration/planning-a-migration-job-strategy.md#Types_of_Migration) 항목에서 [Plann항목에서g a migration job strategy 항목에서 System Center Configuration Manager](../../core/migration/planning-a-migration-job-strategy.md)을 참조하세요.  
+    사이트 경계, 컬렉션, 보급 알림 및 배포 등과 같은 여러 개체를 마이그레이션하는 마이그레이션 작업의 사용을 계획합니다. 자세한 내용은 [System Center Configuration Manager에서 마이그레이션 작업 전략 계획](../../core/migration/planning-a-migration-job-strategy.md)에서 [마이그레이션 작업 유형](../../core/migration/planning-a-migration-job-strategy.md#Types_of_Migration)을 참조하세요.  
 
     Configuration Manager는 선택하는 개체만 마이그레이션합니다. 마이그레이션되지 않은 개체 중 대상 계층에 필요한 개체는 대상 계층에서 다시 만들어야 합니다.  
 
@@ -72,7 +64,7 @@ ms.openlocfilehash: 285d1111502ec25b3b75a64d834b65b6898128e8
 
 -   **클라이언트 마이그레이션 전략을 계획합니다.**  
 
-    클라이언트의 마이그레이션을 계획합니다. 여기서는 클라이언트를 대상 계층으로 마이그레이션할 때 네트워크 대역폭 및 서버 처리 요구 사항을 제한하는 제어되는 방법을 사용합니다. 클라이언트 마이그레이션 전략을 계획하는 방법에 대한 자세한 내용은 [Planning a client migration strategy in System Center Configuration Manager](../../core/migration/planning-a-client-migration-strategy.md)섹션을 참조하세요.  
+    클라이언트의 마이그레이션을 계획합니다. 여기서는 클라이언트를 대상 계층으로 마이그레이션할 때 네트워크 대역폭 및 서버 처리 요구 사항을 제한하는 제어되는 방법을 사용합니다. 클라이언트 마이그레이션 전략을 계획하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 마이그레이션 전략 계획](../../core/migration/planning-a-client-migration-strategy.md)을 참조하세요.  
 
 -   **인벤토리 및 준수 데이터를 계획합니다.**  
 
@@ -126,20 +118,20 @@ ms.openlocfilehash: 285d1111502ec25b3b75a64d834b65b6898128e8
 
 -   **대상 계층에서 마이그레이션을 사용하도록 설정합니다.**  
 
-    원본 계층의 최상위 사이트를 지정하여 원본 계층을 구성합니다. 원본 사이트 지정에 대한 자세한 내용은 [Planning a source hierarchy strategy in System Center Configuration Manager](../../core/migration/planning-a-source-hierarchy-strategy.md)섹션을 참조하세요.  
+    원본 계층의 최상위 사이트를 지정하여 원본 계층을 구성합니다. 원본 사이트 지정에 대한 자세한 내용은 [System Center Configuration Manager에서 원본 계층 전략 계획](../../core/migration/planning-a-source-hierarchy-strategy.md)을 참조하세요.  
 
 -   **원본 계층에서 Configuration Manager 2007 SP2를 실행하는 경우 해당 원본 계층에서 추가 사이트를 선택 및 구성합니다.**  
 
-    데이터를 수집할 Configuration Manager 2007 SP2 원본 계층 내 각 추가 사이트에 대해 데이터 수집을 위한 자격 증명을 구성해야 합니다. 데이터 수집 프로세스는 각 원본 사이트를 구성하는 즉시 시작되어 관리자가 해당 사이트에 대한 데이터 수집을 중지할 때까지 마이그레이션 기간 동안 계속 실행됩니다. 데이터 수집을 통해 원본 계층에서 이전 데이터 수집 프로세스 이후에 업데이트되거나 추가된 개체를 마이그레이션할 수 있습니다.  
+    데이터를 수집할 Configuration Manager 2007 SP2 원본 계층 내 각 추가 사이트에 대해 데이터 수집을 위한 자격 증명을 구성해야 합니다. 데이터 수집 프로세스는 각 원본 사이트를 구성하는 즉시 시작되어 관리자가 해당 사이트에 대한 데이터 수집을 중지할 때까지 마이그레이션 기간 동안 계속 실행됩니다. 데이터 수집을 통해 원본 계층에서 이전 데이터 수집 프로세스 이후에 업데이트되거나 추가된 개체를 마이그레이션할 수 있습니다.
 
     > [!NOTE]  
     >  원본 계층에서 System Center 2012 Configuration Manager 이상을 실행하면 추가 원본 사이트를 구성할 필요가 없습니다.  
 
 -   **배포 지점 공유를 구성합니다.**  
 
-    두 계층 간에 배포 지점을 공유하면 마이그레이션하는 개체에 대한 콘텐츠를 대상 계층의 클라이언트에서 사용할 수 있습니다. 이렇게 하면 두 계층 모두에서 각 클라이언트는 동일한 콘텐츠를 계속 사용할 수 있고 관리자는 데이터 수집을 중지하고 마이그레이션을 완료할 때까지 이 콘텐츠를 유지 관리할 수 있습니다.  
+    두 계층 간에 배포 지점을 공유하면 마이그레이션하는 개체에 대한 콘텐츠를 대상 계층의 클라이언트에서 사용할 수 있습니다. 이렇게 하면 두 계층 구조 모두에서 각 클라이언트는 동일한 콘텐츠를 계속 사용할 수 있고 관리자는 데이터 수집을 중지하고 마이그레이션을 완료할 때까지 이 콘텐츠를 유지 관리할 수 있습니다.  
 
-    공유 배포 지점에 대한 자세한 내용은 *Share Distribution Points Between Source and Destination Hierarchies* 항목에서 [Planning a content deployment migration strategy in System Center Configuration Manager](../../core/migration/planning-a-content-deployment-migration-strategy.md) 섹션을 참조하세요.  
+    공유 배포 지점에 대한 자세한 내용은 [System Center Configuration Manager에서 콘텐츠 배포 마이그레이션 전략 계획](../../core/migration/planning-a-content-deployment-migration-strategy.md)에서 [원본 계층과 대상 계층 간에 배포 지점 공유](../../core/migration/planning-a-content-deployment-migration-strategy.md#About_Shared_DPs_in_Migration)를 참조하세요.  
 
 -   **원본 계층의 클라이언트와 연결된 개체를 마이그레이션하는 마이그레이션 작업을 만들고 실행합니다.**  
 
@@ -147,7 +139,7 @@ ms.openlocfilehash: 285d1111502ec25b3b75a64d834b65b6898128e8
 
     예를 들어 콘텐츠를 마이그레이션하는 경우 사용 중인 마이그레이션 작업에 상관없이 해당 콘텐츠의 관리를 소유할 대상 계층 내 사이트를 할당해야 합니다. 할당된 사이트는 콘텐츠에 대한 원래의 원본 파일 위치에 액세스하며 이 콘텐츠를 대상 계층의 배포 지점에 배포하는 작업을 담당합니다.  
 
-    자세한 내용은 [Create and Edit Migration Jobs for System Center Configuration Manager](../../core/migration/operations-for-migration.md#Create_Edit_migration_Jobs) 항목의 [Operations for migrating to System Center Configuration Manager](../../core/migration/operations-for-migration.md) 섹션을 참조하세요.  
+    자세한 내용은 [System Center Configuration Manager로 마이그레이션을 위한 작업](../../core/migration/operations-for-migration.md)에서 [System Center Configuration Manager를 위한 마이그레이션 작업 만들기 및 편집](../../core/migration/operations-for-migration.md#Create_Edit_migration_Jobs)을 참조하세요.  
 
 -   **클라이언트를 대상 계층으로 마이그레이션합니다.**  
 
@@ -167,7 +159,7 @@ ms.openlocfilehash: 285d1111502ec25b3b75a64d834b65b6898128e8
 
     또한 Configuration Manager 2007 보조 사이트 서버에 함께 있는 배포 지점도 업그레이드할 수 있습니다. 이렇게 하면 보조 사이트는 제거되고 대상 계층의 배포 지점만 남습니다.  
 
-    공유 배포 지점에 대한 자세한 내용은 [Share Distribution Points Between Source and Destination Hierarchies](../../core/migration/planning-a-content-deployment-migration-strategy.md#About_Shared_DPs_in_Migration) 항목에서 [Planning a content deployment migration strategy in System Center Configuration Manager](../../core/migration/planning-a-content-deployment-migration-strategy.md) 섹션을 참조하세요.  
+    공유 배포 지점에 대한 자세한 내용은 [System Center Configuration Manager에서 콘텐츠 배포 마이그레이션 전략 계획](../../core/migration/planning-a-content-deployment-migration-strategy.md)에서 [원본 계층과 대상 계층 간에 배포 지점 공유](../../core/migration/planning-a-content-deployment-migration-strategy.md#About_Shared_DPs_in_Migration)를 참조하세요.  
 
 -   **마이그레이션을 완료합니다.**  
 
@@ -175,6 +167,6 @@ ms.openlocfilehash: 285d1111502ec25b3b75a64d834b65b6898128e8
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 

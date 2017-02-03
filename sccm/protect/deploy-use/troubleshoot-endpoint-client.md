@@ -1,8 +1,8 @@
 ---
-title: "Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결 | System Center Configuration Manager"
+title: "Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결 | Microsoft 문서"
 description: "Windows Defender 및 Endpoint Protection 문제를 해결하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 01/03/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 4d30cd85cb59f8f27704979074470bb06310054b
+ms.sourcegitcommit: 1432568286605d29683416885d7aa522c649016e
+ms.openlocfilehash: fde190f141fb55462755119b533519d05af3f3c3
 
 
 ---
@@ -29,80 +29,14 @@ ms.openlocfilehash: 4d30cd85cb59f8f27704979074470bb06310054b
 
 Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관리자에게 지원을 문의합니다. 다음 문제 해결을 시도할 수도 있습니다.  
 
+-   [Windows Defender 또는 Endpoint Protection 업데이트](#update-windows-defender-or-endpoint-protection)  
+-   [Windows Defender 또는 Endpoint Protection 서비스 시작](#starting-windows-defender-or-endpoint-protection-service)  
+-   [인터넷 연결 문제](#internet-connection-issues)  
+-   [수정할 수 없는 위협 감지](#detected-threat-cant-be-remediated)  
 -   [Endpoint Protection 클라이언트 설치](#install-the-endpoint-protection-client)  
 
--   [Windows Defender 또는 Endpoint Protection 업데이트](#update-windows-defender-or-endpoint-protection)  
-
--   [Windows Defender 또는 Endpoint Protection 서비스 시작](#starting-windows-defender-or-endpoint-protection-service)  
-
--   [인터넷 연결 문제](#internet-connection-issues)  
-
--   [수정할 수 없는 위협 감지](#detected-threat-cant-be-remediated)  
-
-##  <a name="install-the-endpoint-protection-client"></a>Endpoint Protection 클라이언트 설치  
-
-> [!NOTE]  
->  Windows Defender는 Windows 10 PC의 운영 체제에 설치됩니다.  
-
- **증상**  
-
- 알 수 없는 이유로 설치에 실패하거나 오류 코드와 함께 오류 메시지가 표시됩니다. 오류 코드의 예는 0x80070643, 0X8007064A, 0x8004FF2E, 0x8004FF01, 0x8004FF07, 0x80070002, 0x8007064C, 0x8004FF00, 0x80070001, 0x80070656, 0x8004FF40, 0xC0000156, 0x8004FF41 0x8004FF0B, 0x8004FF11, 0x80240022, 0x8004FF04, 0x80070660, 0x800106B5, 0x80070715, 0x80070005, 0x8004EE00, 0x8007003, 0x800B0100, 0x8007064E, 0x8007007E 등입니다.  
-
- 컴퓨터에서 Windows XP SP2(서비스 팩 2)를 실행 중인 경우 다음과 같은 오류 메시지가 하나 이상 표시될 수 있습니다.  
-
--   설치 마법사에 설치하는 데 필요한 필터 관리자 롤업 패키지가 없습니다.  
-
--   KB914882 설치 오류, 시스템에 설치된 언어가 업데이트 언어와 다르므로 Windows XP 파일을 업데이트할 수 없습니다.  
-
- **원인**  
-
- 다른 보안 프로그램을 실행 중인 컴퓨터에는 Endpoint Protection을 설치할 수 없습니다. 다른 보안 프로그램을 제거해도 완전히 제거되지 않는 경우가 있습니다. Endpoint Protection을 설치하려면 정품 Windows 운영 체제를 사용해야 합니다.  
-
- **해결 방법**  
-
-> [!IMPORTANT]  
->  이 문제를 해결하는 동안 컴퓨터를 다시 시작해야 할 수 있으므로, 이 항목을 쉽게 다시 찾을 수 있도록 이 페이지를 즐겨찾기에 추가하거나 인쇄하여 참고하십시오.  
-
-### <a name="step-1-remove-any-existing-security-programs"></a>1단계: 기존 보안 프로그램 제거  
-
-1.  기존 인터넷 보안 프로그램을 완전히 제거합니다.  
-
-2.  컴퓨터를 다시 시작합니다.  
-
-3.  Endpoint Protection을 다시 설치합니다. 위에 나와 있는 방법으로 문제가 해결되지 않을 경우 다음 단계를 수행합니다.  
-
-### <a name="step-2-ensure-that-the-windows-installer-service-is-running"></a>2단계: Windows Installer 서비스가 실행 중인지 확인  
-
-1.  **시작** 을 클릭하고 **services.msc**를 검색한 후 **Enter**키를 누릅니다.  
-
-2.  **Windows Installer**를 마우스 오른쪽 단추로 클릭한 후 **시작**을 클릭합니다. **시작** 은 표시되지 않고 **중지** 및 **다시 시작** 옵션이 표시되면 서비스가 이미 시작되었음을 나타냅니다.  
-
-3.  **서비스** 페이지의 **파일** 메뉴에서 **끝내기**를 클릭합니다.  
-
-4.  **시작**을 클릭합니다. **프로그램 및 파일 검색** 상자에서 **명령 프롬프트**를 입력합니다. **명령 프롬프트**를 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 클릭합니다.  
-
-5.  **MSIEXEC /REGSERVER**를 입력한 후 **Enter**키를 누릅니다.  
-
-    > [!NOTE]  
-    >  이 명령의 실행 성공 여부를 알려 주는 메시지는 제공되지 않습니다.  
-
-6.  Endpoint Protection을 다시 설치합니다. 위에 나와 있는 방법으로 문제가 해결되지 않을 경우 다음 단계를 수행합니다.  
-
-### <a name="step-3-start-windows-in-selective-startup-mode"></a>3단계: 선택 모드로 Windows 시작  
-
-1.  **시작** 을 클릭하고 **msconfig**를 검색한 후 **Enter**키를 누릅니다.  
-
-2.  **일반** 탭에서 **선택 모드**를 클릭한 후 **시작 항목 로드** 확인란의 선택을 취소합니다.  
-
-3.  **서비스** 탭에서 **모든 Microsoft 서비스 숨기기** 확인란을 선택한 후 목록에 남아 있는 서비스의 모든 확인란 선택을 취소합니다.  
-
-4.  **확인**을 클릭한 후 **다시 시작** 을 클릭하여 컴퓨터를 다시 시작합니다.  
-
-5.  Endpoint Protection을 다시 설치합니다.  
-
 ##  <a name="update-windows-defender-or-endpoint-protection"></a>Windows Defender 또는 Endpoint Protection 업데이트  
- Windows Defender 또는  
-      Endpoint Protection은 자동으로 Microsoft 업데이트와 함께 작동하여 바이러스 및 스파이웨어 정의를 최신 상태로 유지합니다.  
+ Windows Defender 또는 Endpoint Protection은 자동으로 Microsoft 업데이트와 함께 작동하여 바이러스 및 스파이웨어 정의를 최신 상태로 유지합니다.  
 
  **증상**  
 
@@ -156,15 +90,13 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 
 5.  **확인**을 클릭합니다.  
 
-6.  Windows Defender 또는  
-          끝점 보호 **업데이트** 탭을 클릭한 다음 **업데이트**를 클릭합니다.  
+6.  Windows Defender 또는 Endpoint Protection을 엽니다. **업데이트** 탭을 클릭한 다음 **업데이트**를 클릭합니다.  
 
 7.  문제가 지속되면 다음 단계를 계속 진행합니다.  
 
 ### <a name="step-3-ensure-that-the-date-and-time-are-set-correctly-on-your-computer"></a>3단계: 컴퓨터의 날짜와 시간이 올바르게 설정되었는지 확인  
 
-1.  Windows Defender 또는  
-          끝점 보호  
+1.  Windows Defender 또는 Endpoint Protection을 엽니다.  
 
 2.  표시된 오류 메시지에 코드 0x80072f8f가 포함되어 있으면 컴퓨터의 잘못된 날짜 또는 시간 설정으로 인한 문제일 가능성이 큽니다.  
 
@@ -206,9 +138,9 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 
      **Cd\\**  
 
-     **Cd program files\microsoft security essentials**  
+     **Cd program files\windows defender**  
 
-     **Mpcmdrun -removedefinitions -all**  
+     **Mpcmdrun -RemoveDefinitions -all**  
 
      **끝내기**  
 
@@ -236,7 +168,7 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
  **증상**  
 
  **프로그램 서비스가 중지되어 Windows Defender 또는**  
- **Endpoint Protection에서 컴퓨터를 모니터링하고 있지 않습니다. 지금 다시 시작해야 합니다.**â€  
+ **Endpoint Protection에서 컴퓨터를 모니터링하고 있지 않습니다. 지금 다시 시작해야 합니다.**  
 
  **해결 방법**  
 
@@ -244,7 +176,7 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 
 -   모든 응용 프로그램을 종료한 후 컴퓨터를 다시 시작합니다.  
 
-### <a name="step-2-make-sure-the-windows-defender-orbr-endpoint-protection-service-is-set-to-automatic-and-is-started"></a>2단계: "Windows Defender" 또는<br />      "Endpoint Protection" 서비스가 자동으로 설정되고 시작되었는지 확인  
+### <a name="step-2-make-sure-the-windows-defender-orbr-------endpoint-protection-service-is-set-to-automatic-and-is-started"></a>2단계: "Windows Defender" 또는<br />      "Endpoint Protection" 서비스가 자동으로 설정되고 시작되었는지 확인  
 
 1.  **시작** 을 클릭하고 **services.msc**를 검색한 후 **Enter**키를 누릅니다.  
 
@@ -304,7 +236,7 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 
 2.  케이블 모뎀을 사용하는 경우 모뎀으로의 케이블 연결과 모뎀과 컴퓨터 간의 연결에 문제가 없는지 확인합니다.  
 
-3.  케이블 모뎀 또는 DSL 라우터를 사용하는 경우 라우터 및 컴퓨터에 대한 연결에 문제가 없는지 확인합니다. 라우터 및 모뎀을 뽑은 후 끕니다. 잠시 기다렸다가 먼저 모뎀을 꽂고, 1분 정도 기다렸다가 라우터를 꽂은 후 컴퓨터를 다시 시작합니다.  
+3.  케이블 모뎀 또는 DSL 라우터를 사용하는 경우 라우터 및 컴퓨터에 대한 연결에 문제가 없는지 확인합니다. 라우터 및 모뎀을 뽑은 후 끕니다. 잠시 기다렸다가 먼저 모뎀을 꽂고,&1;분 정도 기다렸다가 라우터를 꽂은 후 컴퓨터를 다시 시작합니다.  
 
 ##  <a name="detected-threat-cant-be-remediated"></a>재구성할 수 없는 위협 감지  
  Windows Defender 또는  
@@ -318,6 +250,70 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 
 -   파일의 출처가 확실하지 않을 경우 컴퓨터에 대한 전체 검사를 실행하는 것이 가장 좋습니다. 전체 검사를 완료하려면 다소 시간이 소요되지만 Windows Defender 또는 Endpoint Protection에서 감염된 파일의 출처를 찾아 치료할 수 있습니다.  
 
+##  <a name="install-the-endpoint-protection-client"></a>Endpoint Protection 클라이언트 설치  
+
+> [!NOTE]  
+>  Windows Defender는 Windows 10 PC의 운영 체제에 설치됩니다.  
+
+ **증상**  
+
+ 알 수 없는 이유로 설치에 실패하거나 오류 코드와 함께 오류 메시지가 표시됩니다. 오류 코드의 예는 0x80070643, 0X8007064A, 0x8004FF2E, 0x8004FF01, 0x8004FF07, 0x80070002, 0x8007064C, 0x8004FF00, 0x80070001, 0x80070656, 0x8004FF40, 0xC0000156, 0x8004FF41 0x8004FF0B, 0x8004FF11, 0x80240022, 0x8004FF04, 0x80070660, 0x800106B5, 0x80070715, 0x80070005, 0x8004EE00, 0x8007003, 0x800B0100, 0x8007064E, 0x8007007E 등입니다.  
+
+ 컴퓨터에서 Windows XP SP2(서비스 팩 2)를 실행 중인 경우 다음과 같은 오류 메시지가 하나 이상 표시될 수 있습니다.  
+
+-   설치 마법사에 설치하는 데 필요한 필터 관리자 롤업 패키지가 없습니다.  
+
+-   KB914882 설치 오류, 시스템에 설치된 언어가 업데이트 언어와 다르므로 Windows XP 파일을 업데이트할 수 없습니다.  
+
+ **원인**  
+
+ 다른 보안 프로그램을 실행 중인 컴퓨터에는 Endpoint Protection을 설치할 수 없습니다. 다른 보안 프로그램을 제거해도 완전히 제거되지 않는 경우가 있습니다. Endpoint Protection을 설치하려면 정품 Windows 운영 체제를 사용해야 합니다.  
+
+ **해결 방법**  
+
+> [!IMPORTANT]  
+>  이 문제를 해결하는 동안 컴퓨터를 다시 시작해야 할 수 있으므로, 이 항목을 쉽게 다시 찾을 수 있도록 이 페이지를 즐겨찾기에 추가하거나 인쇄하여 참고하십시오.  
+
+### <a name="step-1-remove-any-existing-security-programs"></a>1단계: 기존 보안 프로그램 제거  
+**Endpoint Protection만**
+
+1.  기존 인터넷 보안 프로그램을 완전히 제거합니다.  
+
+2.  컴퓨터를 다시 시작합니다.  
+
+3.  Endpoint Protection을 다시 설치합니다. 위에 나와 있는 방법으로 문제가 해결되지 않을 경우 다음 단계를 수행합니다.  
+
+### <a name="step-2-ensure-that-the-windows-installer-service-is-running"></a>2단계: Windows Installer 서비스가 실행 중인지 확인  
+
+1.  **시작** 을 클릭하고 **services.msc**를 검색한 후 **Enter**키를 누릅니다.  
+
+2.  **Windows Installer**를 마우스 오른쪽 단추로 클릭한 후 **시작**을 클릭합니다. **시작** 은 표시되지 않고 **중지** 및 **다시 시작** 옵션이 표시되면 서비스가 이미 시작되었음을 나타냅니다.  
+
+3.  **서비스** 페이지의 **파일** 메뉴에서 **끝내기**를 클릭합니다.  
+
+4.  **시작**을 클릭하고 **명령 프롬프트**를 검색합니다. **명령 프롬프트**를 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 클릭합니다.  
+
+5.  **MSIEXEC /REGSERVER**를 입력한 후 **Enter**키를 누릅니다.  
+
+    > [!NOTE]  
+    >  이 명령의 실행 성공 여부를 알려 주는 메시지는 제공되지 않습니다.  
+
+6.  Endpoint Protection을 다시 설치합니다. 위에 나와 있는 방법으로 문제가 해결되지 않을 경우 다음 단계를 수행합니다.  
+
+### <a name="step-3-start-windows-in-selective-startup-mode"></a>3단계: 선택 모드로 Windows 시작  
+
+1.  **시작** 을 클릭하고 **msconfig**를 검색한 후 **Enter**키를 누릅니다.  
+
+2.  **일반** 탭에서 **선택 모드**를 클릭한 후 **시작 항목 로드** 확인란의 선택을 취소합니다.  
+
+3.  **서비스** 탭에서 **모든 Microsoft 서비스 숨기기** 확인란을 선택한 후 목록에 남아 있는 서비스의 모든 확인란 선택을 취소합니다.  
+
+4.  **확인**을 클릭한 후 **다시 시작** 을 클릭하여 컴퓨터를 다시 시작합니다.  
+
+5.  Endpoint Protection을 다시 설치합니다.  
+
+
+
 ### <a name="see-also"></a>참고 항목  
  [Endpoint Protection 클라이언트에 대한 질문과 대답](../../protect/deploy-use/endpoint-protection-client-faq.md)   
 
@@ -325,6 +321,6 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

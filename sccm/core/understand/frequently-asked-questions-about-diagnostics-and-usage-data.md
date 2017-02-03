@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
-ms.openlocfilehash: 856ee34621816155d4ad95ed7240cf585e322486
+ms.sourcegitcommit: 4a8d98addcd463eb82d8b7100b44254a10d21992
+ms.openlocfilehash: 7d252fbbdc23ff676b87643408caf977f5636b67
 
 
 ---
@@ -28,22 +28,25 @@ ms.openlocfilehash: 856ee34621816155d4ad95ed7240cf585e322486
 다음은 System Center Configuration Manager에 대한 진단 및 사용 현황 데이터에 대한 질문과 대답입니다.  
 
 ###  <a name="a-namebkmkoffa-how-do-i-turn-off-telemetry"></a><a name="bkmk_off"></a> 원격 분석을 해제하려면 어떻게 할까요?  
- 현재 분기의 Configuration Manager는 새 버전의 Windows 10 및 Microsoft Intune을 지원하기 위해 정기적으로 업데이트해야 합니다. Microsoft에서 제품을 최신 상태로 유지하고 업데이트 환경을 개선하고 제품의 품질 및 보안을 개선하려면 최소한 기본 수준의 진단 및 사용 현황 데이터가 필요합니다.  
+원격 분석은 해제할 수 없습니다. 하지만 수집되는 원격 분석 데이터의 수준을 선택하고 오프라인 모드에서 서비스 연결 지점을 사용하여 원격 분석 데이터가 제출되는 경우를 관리할 수 있습니다.
+
+현재 분기의 Configuration Manager는 새 버전의 Windows 10 및 Microsoft Intune을 지원하기 위해 정기적으로 업데이트해야 합니다. Microsoft에서 제품을 최신 상태로 유지하고 업데이트 환경을 개선하고 제품의 품질 및 보안을 개선하려면 최소한 기본 수준의 진단 및 사용 현황 데이터가 필요합니다.
 
 ###  <a name="a-namebkmkretentiona-what-is-the-data-retention-period"></a><a name="bkmk_retention"></a> 데이터 보존 기간이란 무엇인가요?  
- 진단 및 사용 현황 데이터는 1년 동안 보존됩니다.  
+ 진단 및 사용 현황 데이터는&1;년 동안 보존됩니다.  
 
 ###  <a name="a-namebkmkupdatea-is-diagnostics-and-usage-data-sent-when-installing-or-updating-the-product"></a><a name="bkmk_update"></a> 제품을 설치하거나 업데이트할 때 진단 및 사용 현황 데이터가 전송되나요?  
  아니요. 진단 및 사용 현황 데이터는 사이트가 설치되고 작동하는 후에만 전송됩니다.  
 
 ###  <a name="a-namebkmkfrequencya-how-frequently-is-the-data-sent"></a><a name="bkmk_frequency"></a> 데이터는 얼마나 자주 전송되나요?  
- SQL 저장 프로시저는 7일마다 실행됩니다(사이트가 설치된 날짜로부터). 온라인 모드에서 서비스 연결 지점은 쿼리가 실행된 후 데이터를 업로드하도록 구성됩니다. 오프라인 모드에서 관리자는 서비스 연결 도구를 사용하여 데이터를 업로드합니다. 참고: 사이트를 설치한 후 7일이 될 때까지는 데이터를 오프라인에서 사용할 수 없습니다.  
+ SQL 저장 프로시저는&7;일마다 실행됩니다(사이트가 설치된 날짜로부터). 온라인 모드에서 서비스 연결 지점은 쿼리가 실행된 후 데이터를 업로드하도록 구성됩니다. 오프라인 모드에서 관리자는 서비스 연결 도구를 사용하여 데이터를 업로드합니다. 참고: 사이트를 설치한 후&7;일이 될 때까지는 데이터를 오프라인에서 사용할 수 없습니다.  
 
 ###  <a name="a-namebkmknetworka-can-the-data-be-used-to-form-a-network-map"></a><a name="bkmk_network"></a> 네트워크 맵을 만드는 데 데이터를 사용할 수 있나요?  
  System Center Configuration에 대한 진단 사용 현황 데이터 수집의 수준의 설명과 같이 사이트 세부 정보에는 각 사이트의 표준 시간대 정보가 포함됩니다. 따라서 특정 계층의 사이트에 대한 광범위한 지리적 위치 및 계층의 글로벌 분산에 대한 통찰력을 제공할 수 있습니다. 그러나 IP 주소, 보다 자세한 지리적 정보 등 네트워크 세부 정보는 수집되지 않습니다.
  - [1511에 대한 진단 데이터](/sccm/core/plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1511)
  - [1602에 대한 진단 데이터](/sccm/core/plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1602)
  - [1606에 대한 진단 데이터](/sccm/core/plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1606)
+ - [1610에 대한 진단 데이터](/sccm/core/plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1610)
 
 
 ###  <a name="a-namebkmktablesa-can-you-see-data-in-custom-tables"></a><a name="bkmk_tables"></a> 사용자 지정 테이블의 데이터를 볼 수 있나요?  
@@ -57,6 +60,6 @@ ms.openlocfilehash: 856ee34621816155d4ad95ed7240cf585e322486
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 

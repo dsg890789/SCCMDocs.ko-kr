@@ -1,5 +1,5 @@
 ---
-title: "설치 하이브리드 MDM | System Center Configuration Manager 및 Microsoft Intune"
+title: "설치 하이브리드 MDM | Microsoft 문서"
 description: "Configuration Manager 및 Intune을 사용하여 하이브리드 장치 등록을 설정합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -13,12 +13,12 @@ ms.topic: get-started-article
 ms.assetid: bb95154b-f63e-4491-896e-41d732c802f8
 caps.latest.revision: 34
 caps.handback.revision: 0
-author: NathBarn
-ms.author: nathbarn
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 44c0947fcb7abdc4369fe0b4f47409b49d068861
+ms.sourcegitcommit: 0a6cb36aad455b38db628f26b97e1b4c00adc741
+ms.openlocfilehash: 12ef5c1faf5fe5780ddb7c12cfe6d533e9785f6d
 
 ---
 
@@ -46,7 +46,12 @@ Configuration Manager 없이 Intune을 사용하고 싶으세요?
 [Intune 문서 보기 >](https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune)
 
 ## <a name="step-1-create-an-mdm-collection"></a>1단계: MDM 컬렉션 만들기
-관리에 장치를 등록할 수 있는 사용자를 지정하려면 Configuration Manager 사용자 컬렉션이 필요합니다. Intune 라이선스가 사용자에게 할당되기 때문에 사용자 컬렉션만 대상으로 지정할 수 있습니다. 테스트 목적으로 **직접 규칙**을 설정하고 장치를 등록할 수 있는 특정 사용자를 추가할 수 있습니다. Configuration Manager 콘솔에서 **자산 및 준수** > **사용자 컬렉션**을 선택하고 **홈** 탭 > **만들기** 그룹을 클릭한 다음 **사용자 컬렉션 만들기**를 클릭합니다. 광범위한 배포의 경우 **쿼리 규칙**을 사용하여 사용자를 정의해야 합니다. 컬렉션에 대한 자세한 내용은 [컬렉션을 만드는 방법](https://technet.microsoft.com/library/mt629371.aspx)을 참조하세요.
+관리에 장치를 등록할 수 있는 사용자를 지정하려면 Configuration Manager 사용자 컬렉션이 필요합니다. Intune 라이선스는 사용자에 의해 할당되기 때문에 장치 컬렉션이 아니라 사용자 컬렉션만 사용할 수 있습니다.
+
+> [!NOTE]
+> Intune에 장치를 등록하기 위해 Office 365 포털이나 Azure Active Directory 포털에서 사용자에게 라이선스를 할당할 필요가 없습니다. [이후 단계](#step-3-configure-intune-subscription)에서 Intune 구독과 연결된 컬렉션에 사용자를 포함하면 됩니다.
+
+테스트 목적으로 **직접 규칙**을 설정하고 장치를 등록할 수 있는 특정 사용자를 추가할 수 있습니다. Configuration Manager 콘솔에서 **자산 및 준수** > **사용자 컬렉션**을 선택하고 **홈** 탭 > **만들기** 그룹을 클릭한 다음 **사용자 컬렉션 만들기**를 클릭합니다. 광범위한 배포의 경우 **쿼리 규칙**을 사용하여 사용자를 정의해야 합니다. 컬렉션에 대한 자세한 내용은 [컬렉션을 만드는 방법](https://technet.microsoft.com/library/mt629371.aspx)을 참조하세요.
 
 ![MDM에 대한 사용자 컬렉션 만들기](../media/mdm-create-user-collection.png)
 
@@ -173,6 +178,7 @@ Configuration Manager 없이 Intune을 사용하고 싶으세요?
   - [Windows 등록 설정](#windows-enrollment-setup): DNS를 구성하고 Windows PC, Windows 10 Mobile 및 Windows Phone 장치에 대해 등록을 사용하도록 설정합니다.
   - Android: Android 장치는 등록을 사용하도록 설정하기 위한 추가 단계가 필요하지 않습니다.
 
+MDM 관리를 사용하면 각 사용자가 등록할 수 있는 장치 수를 사용자당 최대 15개 장치까지 지정할 수 있습니다.
 
 ### <a name="ios-and-mac-enrollment-setup"></a>iOS 및 Mac 등록 설정
   다음 단계에서는 Intune 서비스에 Apple MDM 푸시 인증서를 업로드하여 Apple 장치에 대해 관리를 사용하도록 설정합니다.
@@ -245,7 +251,7 @@ Configuration Manager 및 Intune을 사용하여 Android를 실행하는 휴대�
 - [Windows 10 및 Windows 8.1 장치](/sccm/compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client)
 - [Windows Phone 장치](/sccm/compliance/deploy-use/create-configuration-items-for-windows-phone-devices-managed-without-the-client)
 - [iOS 및 Mac 장치](/sccm/compliance/deploy-use/create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client)
-- [Android 및 삼성 KNOX 장치](/sccm/compliance/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client)
+- [Android 및 Samsung KNOX Standard 장치](/sccm/compliance/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client)
 
 **응용 프로그램**을 관리 장치에 배포할 수 있습니다.
 - [iOS 응용 프로그램](/sccm/apps/get-started/creating-ios-applications)
@@ -273,30 +279,38 @@ Configuration Manager 및 Intune을 사용하여 Android를 실행하는 휴대�
 - 사용자 소유(BYOD) 장치: [사용자에게 장치 등록 방법을 알림](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) - 등록 지침은 Intune 하이브리드 관리 장치와 동일합니다.
 - 회사 소유(COD) 장치: [회사 소유 장치 등록](enroll-company-owned-devices.md)에서는 회사 소유 장치를 등록하는 다양한 플랫폼별 방법에 대한 지침을 제공합니다.
 
-### <a name="managing-intune-subscriptions-associated-with-configuration-manager"></a>Configuration Manager와 연결된 Intune 구독 관리
- Microsoft Intune(평가판 구독 또는 유료 구독)을 Configuration Manager에 추가하고 다른 Intune 구독으로 전환해야 하는 경우 새 구독을 추가하려면 먼저 Configuration Manager 콘솔에서 **Microsoft Intune 구독** 및 **서비스 연결 지점**을 모두 삭제해야 합니다.
+## <a name="managing-intune-subscriptions-associated-with-configuration-manager"></a>Configuration Manager와 연결된 Intune 구독 관리
 
-#### <a name="how-to-delete-an-intune-subscription-from-configuration-manager"></a>Configuration Manager에서 Intune 구독을 삭제하는 방법
+Microsoft Intune(평가판 구독 또는 유료 구독)을 Configuration Manager에 추가하고 다른 Intune 구독으로 전환해야 하는 경우 새 구독을 추가하려면 먼저 Configuration Manager 콘솔에서 **Microsoft Intune 구독** 및 **서비스 연결 지점**을 모두 삭제해야 합니다.
 
-1.  Configuration Manager 콘솔에서 **관리**를 클릭합니다.
+### <a name="how-to-delete-an-intune-subscription-from-configuration-manager"></a>Configuration Manager에서 Intune 구독을 삭제하는 방법
 
-2.  **관리** 작업 영역에서 **개요**를 확장하고 **클라우드 서비스**로 이동하고 **Microsoft Intune 구독**을 클릭합니다.
+> [!IMPORTANT]
+>  구독을 삭제하면 Intune 구독을 통해 관리되는 장치에 구성된 사용자 등록, 정책 및 앱 배포를 포함한 모든 콘텐츠가 제거됩니다.
 
-3.  **Microsoft Intune 구독**을 마우스 오른쪽 단추로 클릭하고 **삭제**를 클릭합니다. **Microsoft Intune 구독**
+1.  Configuration Manager 콘솔에서 **관리** > **개요** > **클라우드 서비스** > **Microsoft Intune 구독**으로 이동합니다.
 
-    > [!IMPORTANT]
-    >  Intune 평가판 구독을 위해 구성된 사용자 등록, 정책 및 앱 배포를 포함하는 모든 콘텐츠는 손실됩니다.
+2.  나열된 **Microsoft Intune 구독**을 마우스 오른쪽 단추로 클릭하고 **삭제**를 클릭합니다.
 
-4.  **관리** 작업 영역에서 **개요**를 확장하고 **사이트 구성**으로 이동하고 **서버 및 사이트 시스템 역할**을 클릭합니다.
-
-5.  **서비스 연결 지점** 역할을 호스트하는 서버를 선택합니다.
-
-6.  **사이트 시스템 역할** 목록에서 **서비스 연결 지점**을 선택한 후 리본 메뉴에서 **역할 제거**를 클릭합니다. 역할을 제거할 것을 확인합니다. 서비스 연결 지점이 삭제됩니다.
-
-7.  이제 새 서비스 연결 지점을 만들고, 새 Intune 구독을 Configuration Manager에 추가하고, Configuration Manager를 MDM 기관으로 설정할 수 있습니다.
+3.   마법사에서 **Configuration Manager에서 Microsoft Intune 구독 제거**, **다음**, **다음**을 차례로 클릭하여 구독을 제거합니다.
 
 
+### <a name="how-to-remove-the-service-connection-point-role"></a>서비스 연결 지점 역할을 제거하는 방법
 
-<!--HONumber=Nov16_HO1-->
+1.  **관리** > **개요** > **사이트 구성** > **서버 및 사이트 시스템 역할**로 이동합니다.
+
+2.  **서비스 연결 지점** 역할을 호스트하는 서버를 선택합니다.
+
+3.  **사이트 시스템 역할** 목록에서 **서비스 연결 지점**을 선택한 후 리본 메뉴에서 **역할 제거**를 클릭합니다. 역할을 제거할 것을 확인합니다. 서비스 연결 지점이 삭제됩니다.
+
+이제 새 서비스 연결 지점을 만들고, 새 Intune 구독을 Configuration Manager에 추가하고, Configuration Manager를 MDM 기관으로 설정할 수 있습니다.
+
+### <a name="how-to-change-mdm-authority-to-intune"></a>MDM 기관을 Intune으로 변경하는 방법
+
+버전 1610부터 MDM 기관을 Configuration Manager에서 Intune으로 전환할 수 있습니다. 이 기능에 대한 정보는 곧 제공될 예정입니다.
+
+
+
+<!--HONumber=Dec16_HO3-->
 
 

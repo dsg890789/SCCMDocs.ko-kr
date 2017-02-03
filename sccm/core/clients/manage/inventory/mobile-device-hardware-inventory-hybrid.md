@@ -2,7 +2,7 @@
 title: "하드웨어 인벤토리 구성 | Microsoft 문서 | 모바일 장치"
 description: "Microsoft Intune 및 System Center Configuration Manager에서 등록한 모바일 장치의 하드웨어 인벤토리를 구성합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/26/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
-ms.openlocfilehash: 6db22a2ddce1afb471cf8b603c6d98f7f0acbc15
+ms.sourcegitcommit: 9206b82eca02877c30eebf146d42bcca7290eb42
+ms.openlocfilehash: be954724587e68e92e5d8f5cecd712dfd5df278e
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 6db22a2ddce1afb471cf8b603c6d98f7f0acbc15
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager에서 Microsoft Intune 커넥터를 사용하여 iOS, Android 및 Windows 장치에 대한 하드웨어 인벤토리를 수집할 수 있습니다. 하드웨어 인벤토리를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 하드웨어 인벤토리를 확장하는 방법](../../../../core/clients/manage/inventory/extend-hardware-inventory.md)을 참조하세요.  
+Configuration Manager에서 Microsoft Intune 커넥터를 사용하여 iOS, Android 및 Windows 장치에 대한 하드웨어 인벤토리를 수집할 수 있습니다. 하드웨어 인벤토리를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 하드웨어 인벤토리를 확장하는 방법](../../../../core/clients/manage/inventory/extend-hardware-inventory.md)을 참조하세요.  
 
  Microsoft Intune에 장치를 등록하는 방법에 대한 자세한 내용은 [Microsoft Intune을 사용하여 모바일 장치 관리](https://technet.microsoft.com/en-us/library/dn646962.aspx)를 참조하세요.  
 
@@ -141,6 +141,6 @@ System Center Configuration Manager에서 Microsoft Intune 커넥터를 사용�
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 
