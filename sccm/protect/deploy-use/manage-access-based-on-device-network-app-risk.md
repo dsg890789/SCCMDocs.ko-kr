@@ -12,8 +12,8 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4c0e6824-2dfe-4700-b817-d5631e0eb872
 caps.latest.revision: 
-author: nathbarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: c13c6268fa76ade7feb0981f9c4a6e325e393aca
@@ -93,11 +93,11 @@ Lookout에서 지원하는 플랫폼 및 언어에 대한 자세한 내용은 �
 
 ## <a name="next-steps"></a>다음 단계
 이 솔루션을 구현하기 위해 수행해야 하는 주요 단계는 다음과 같습니다.
-1.  [Lookout 모바일 위협 방지를 사용하여 구독 설정](set-up-your-subscription-with-lookout.md)
-2.  [Intune에서 Lookout MTP 연결 사용](enable-lookout-connection-in-intune.md)
+1.    [Lookout 모바일 위협 방지를 사용하여 구독 설정](set-up-your-subscription-with-lookout.md)
+2.    [Intune에서 Lookout MTP 연결 사용](enable-lookout-connection-in-intune.md)
 3.  [Lookout for Work 응용 프로그램 구성 및 배포](configure-and-deploy-lookout-for-work-apps.md)
-4.  [준수 정책 구성](enable-device-threat-protection-rule-compliance-policy.md)
-5.  [Lookout 통합 문제 해결](troubleshoot-lookout-integration.md)
+4.    [준수 정책 구성](enable-device-threat-protection-rule-compliance-policy.md)
+5.    [Lookout 통합 문제 해결](troubleshoot-lookout-integration.md)
 
 
 

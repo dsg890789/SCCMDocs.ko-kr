@@ -225,10 +225,16 @@ Technical Preview 1606부터 Configuration Manager 클라이언트 에이전트 
 
 ### <a name="set-the-configuration-manager-client-setting-to-manage-the-office-365-client-agent"></a>Office 365 클라이언트 에이전트를 관리하려면 Configuration Manager 클라이언트 설정을 지정합니다.
 1.  Configuration Manager 콘솔에서 **관리** > **개요** > **클라이언트 설정**을 클릭합니다.
-1. 적절한 장치 설정을 열어 클라이언트 에이전트를 사용하도록 설정합니다. 기본 및 사용자 지정 클라이언트 설정에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../core/clients/deploy/configure-client-settings.md)을 참조하세요.
-2. **소프트웨어 업데이트**를 클릭하고 **Office 365 클라이언트 에이전트 관리 사용** 설정에 대해 **예**를 선택합니다.
+2. 적절한 장치 설정을 열어 클라이언트 에이전트를 사용하도록 설정합니다. 기본 및 사용자 지정 클라이언트 설정에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../core/clients/deploy/configure-client-settings.md)을 참조하세요.
+3. **소프트웨어 업데이트**를 클릭하고 **Office 365 클라이언트 에이전트 관리 사용** 설정에 대해 **예**를 선택합니다.  
+
+
 ## <a name="a-nameosdpreservedriveletterathe-osdpreservedriveletter-task-sequence-variable-has-been-deprecated"></a><a name="osdpreservedriveletter"></a>OSDPreserveDriveLetter 작업 순서 변수는 사용되지 않음
-SDPreserveDriveLetter 작업 순서 변수는 작업 순서에서 운영 체제 이미지를 대상 컴퓨터에 적용할 때 해당 이미지의 WIM 파일에서 캡처된 드라이브 문자를 사용할지 결정합니다. Technical Preview 1606에서는 이 작업 순서 변수가 사용되지 않았습니다. 기본적으로 운영 체제 배포 시 Windows 설치 프로그램이 이제 사용하기에 가장 적합한 드라이브 문자(일반적으로 C:)를 결정합니다. 다른 드라이브를 사용하도록 지정하려면 운영 체제 적용 작업 순서 단계에서 위치를 변경할 수 있습니다. **이 운영 체제를 적용할 위치를 선택하십시오.** 설정으로 이동하여 **특정 논리 드라이브 문자**를 선택하고 사용하려는 드라이브를 선택합니다. 대상 컴퓨터에서 선택한 문자로 할당된 드라이브여야 합니다.
+SDPreserveDriveLetter 작업 순서 변수는 작업 순서에서 운영 체제 이미지를 대상 컴퓨터에 적용할 때 해당 이미지의 WIM 파일에서 캡처된 드라이브 문자를 사용할지 결정합니다.
+- Technical Preview 1606에서는 이 작업 순서 변수가 사용되지 않았습니다.
+
+기본적으로 운영 체제 배포 시 Windows 설치 프로그램이 이제 사용하기에 가장 적합한 드라이브 문자(일반적으로 C:)를 결정합니다. 다른 드라이브를 사용하도록 지정하려면 운영 체제 적용 작업 순서 단계에서 위치를 변경할 수 있습니다. **이 운영 체제를 적용할 위치를 선택하십시오.** 설정으로 이동하여 **특정 논리 드라이브 문자**를 선택하고 사용하려는 드라이브를 선택합니다. 대상 컴퓨터에서 선택한 문자로 할당된 드라이브여야 합니다. 
+
 ## <a name="a-nameupdatesandservicingachanges-for-the-updates-and-servicing-node"></a><a name="updatesandservicing"></a>업데이트 및 서비스 노드의 변경 내용
 Technical Preview 1606에서는 Configuration Manager 콘솔에서 업데이트 및 서비스에 적용되는 몇 가지 변경 사항이 도입되었습니다.
 - **노드 이름 변경:**
