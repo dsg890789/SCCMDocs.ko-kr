@@ -2,7 +2,7 @@
 title: "Endpoint Protection 맬웨어 정의 | Microsoft 문서"
 description: "클라이언트 컴퓨터에 정의 업데이트를 제공하도록 Configuration Manager 소프트웨어 업데이트를 구성하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
