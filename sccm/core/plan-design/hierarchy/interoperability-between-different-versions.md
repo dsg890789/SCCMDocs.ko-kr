@@ -1,8 +1,8 @@
 ---
-title: "버전 간의 상호 운용성 | System Center Configuration Manager"
+title: "Configuration Manager 버전 간의 상호 운용성 | Microsoft 문서"
 description: "동일한 네트워크에 있는 여러 System Center Configuration Manager 계층 구조 간의 충돌을 방지하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 1/30/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: db0bf04b73050cb42f8230227c8db6ebfb3c6987
+ms.sourcegitcommit: f9886d9d83cd23ddd294d5af5eed3ec00946a4f4
+ms.openlocfilehash: 8a4c52f6adb18c7e170ea87764cc38c3bbfbf9ca
 
 
 ---
@@ -61,12 +61,12 @@ System Center Configuration Manager의 여러 독립적인 계층 구조를 동�
 
  두 계층 구조에서 경계가 겹치는 경우 클라이언트가 의도치 않게 잘못된 사이트에 할당되지 않도록 하려면 클라이언트를 특정 사이트에 할당하도록 Configuration Manager 클라이언트 설치 매개 변수를 구성합니다.  
 
-##  <a name="a-namebkmkmixeda-configuration-manager-limitations-in-a-mixed-version-hierarchy"></a><a name="bkmk_mixed"></a> 혼합 버전 계층 구조의 Configuration Manager 제한 사항  
+##  <a name="a-namebkmkmixeda-configuration-manager-limitations--in-a-mixed-version-hierarchy"></a><a name="bkmk_mixed"></a> 혼합 버전 계층 구조의 Configuration Manager 제한 사항  
  System Center Configuration Manager 사이트를 업그레이드하는 경우 각 사이트가 서로 다른 버전인 시기가 있습니다.  예를 들어 중앙 관리 사이트를 새 버전으로 업그레이드하는 경우 사이트 유지 관리 기간으로 인해 하나 이상의 기본 사이트가 이후 시간 및 날짜까지 업그레이드되지 않을 수 있습니다.  
 
  단일 계층 구조에 있는 여러 사이트가 서로 다른 버전을 실행하는 경우 일부 기능을 사용할 수 없습니다. 이는 Configuration Manager 콘솔에서 Configuration Manager 개체를 관리하는 방법 및 클라이언트에서 사용할 수 있는 기능에 영향을 줄 수 있습니다. 일반적으로 최신 버전의 Configuration Manager는 더 낮은 서비스 팩 버전을 실행하는 사이트 또는 클라이언트에서 액세스할 수 없습니다.  
 
-### <a name="limitations-when-upgrading-configuration-manager"></a>Configuration Manager를 업그레이드할 때의 제한 사항  
+### <a name="limitations-when-upgrading--configuration-manager"></a>Configuration Manager를 업그레이드할 때의 제한 사항  
 
 |개체|세부 정보|  
 |------------|-------------|  
@@ -81,10 +81,10 @@ System Center Configuration Manager의 여러 독립적인 계층 구조를 동�
 |상호 운용성 환경|추가 정보|  
 |----------------------------------|----------------------|  
 |System Center 2012 Configuration Manager 및 System Center Configuration Manager가 둘 다 포함된 환경|Configuration Manager 사이트를 관리하려면 콘솔 및 콘솔이 연결하는 사이트에서 동일한 버전의 Configuration Manager를 실행해야 합니다. 예를 들어 System Center 2012 Configuration Manager 콘솔을 사용하여 System Center Configuration Manager 사이트를 관리할 수 없으며, 그 반대의 경우도 마찬가지입니다.<br /><br /> System Center 2012 Configuration Manager 콘솔과 System Center Configuration Manager 콘솔을 동일한 컴퓨터에 설치할 수 없습니다.|  
-|여러 버전의 System Center Configuration Manager가 설치된 환경|System Center Configuration Manager는 한 컴퓨터에서 둘 이상의 Configuration Manager 콘솔 설치를 지원하지 않습니다. 각기 다른 버전의 System Center Configuration Manager와 관련된 여러 콘솔을 사용하려면 각 콘솔을 별도의 컴퓨터에 설치해야 합니다.<br /><br /> 한 계층 구조의 사이트를 업그레이드하는 동안 최신 버전을 실행하는 사이트에 콘솔을 연결하고 해당 계층 구조의 다른 사이트에 대한 정보를 볼 수 있습니다. 그러나 콘솔 버전과 Configuration Manager 사이트 버전 간의 차이로 인해 데이터 문제가 발생할 수 있고 최신 제품 버전에서 사용 가능한 일부 기능을 콘솔에서 사용할 수 없기 때문에 이 구성은 사용하지 않는 것이 좋습니다.|  
+|여러 버전의 System Center Configuration Manager가 설치된 환경|System Center Configuration Manager는 한 컴퓨터에서 둘 이상의 Configuration Manager 콘솔 설치를 지원하지 않습니다. 각기 다른 버전의 System Center Configuration Manager와 관련된 여러 콘솔을 사용하려면 각 콘솔을 별도의 컴퓨터에 설치해야 합니다.<br /><br /> 한 계층 구조의 사이트를 새 버전으로 업데이트하는 동안 최신 버전을 실행하는 사이트에 콘솔을 연결하고 해당 계층 구조의 다른 사이트에 대한 정보를 볼 수 있습니다. 그러나 콘솔 버전과 Configuration Manager 사이트 버전 간의 차이로 인해 데이터 문제가 발생할 수 있고 최신 제품 버전에서 사용 가능한 일부 기능을 콘솔에서 사용할 수 없기 때문에 이 구성은 사용하지 않는 것이 좋습니다. <br /></br /> 사이트 버전이 일치하지 않는 버전으로 콘솔을 사용하는 경우 사이트 관리가 지원되지 않습니다. 이렇게 하면 데이터의 손실이 발생할 수 있으며 사이트를 위험하게 할 수 있습니다. 예를 들어, 1606 버전을 실행하는 사이트를 관리하는 데 1610 버전의 콘솔 사용이 지원되지 않습니다. |
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO5-->
 
 

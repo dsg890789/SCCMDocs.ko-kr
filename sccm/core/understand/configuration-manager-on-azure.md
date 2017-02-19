@@ -1,8 +1,8 @@
 ---
-title: "Azure의 Configuration Manager | System Center Configuration Manager"
+title: "Azure의 Configuration Manager | Microsoft 문서"
 description: "Azure 환경에서 Configuration Manager를 사용하는 방법에 대한 정보입니다."
 ms.custom: na
-ms.date: 10/21/2016
+ms.date: 01/30/2017
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6d304ddb87b9c9abe37b5dc9cf4252580cbcf048
-ms.openlocfilehash: d8f8ea98c4383783c95e6425af29987bdee1429a
+ms.sourcegitcommit: 264e009952db34a6f4929ecb70dc6857117ce4fe
+ms.openlocfilehash: e8798adc0e479417c682450d181611284c148e6d
 
 ---
 # <a name="configuration-manager-on-azure---frequently-asked-questions"></a>Azure의 Configuration Manager - 질문과 대답
@@ -80,7 +80,7 @@ Configuration Manager 사이트 서버에도 사용할 수 있습니다. 예를 
 ### <a name="how-can-i-make-my-database-highly-available-can-i-use-azure-sql-database-or-do-i-have-to-use-microsoft-sql-server-in-a-vm"></a>데이터베이스의 가용성을 높이려면 어떻게 해야 하나요? Azure SQL Database를 사용할 수 있나요? 아니면 VM에서 Microsoft SQL Server를 사용해야 하나요?
 VM에서 Microsoft SQL Server를 사용해야 합니다. Configuration Manager는 현재 Azure SQL Server를 지원하지 않습니다. 그러나 AlwaysOn 가용성 그룹 등의 기능을 SQL Server에 사용할 수 있습니다. [AlwaysOn 가용성 그룹](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database)은 권장 사항이며 Configuration Manager 버전 1602에서 공식적으로 지원됩니다.
 
-### <a name="can-i-use-azure-load-balancers-with-site-system-roles-like-management-points-or-software-update-points"></a>Azure 부하 분산 장치를 관리 지점 또는 소프트웨어 업데이트 지점과 같은 사이트 시스템 역할과 함께 사용할 수 있나요?
+### <a name="can-i-use-azure-load-balancers-with-site-system-roles-like-management-points--or-software-update-points"></a>Azure 부하 분산 장치를 관리 지점 또는 소프트웨어 업데이트 지점과 같은 사이트 시스템 역할과 함께 사용할 수 있나요?
 Configuration Manager는 Azure 부하 분산 장치에서 테스트되지 않았지만 기능이 응용 프로그램에 투명한 경우 정상적인 작동에 부정적인 영향을 주지 않아야 합니다.
 
 
@@ -92,7 +92,7 @@ Configuration Manager는 Azure 부하 분산 장치에서 테스트되지 않았
 일반적으로 컴퓨터 성능(CPU 및 메모리)은 [System Center Configuration Manager의 하드웨어 권장 사항](/sccm/core/plan-design/configs/recommended-hardware)을 만족해야 합니다. 그러나 일반적인 컴퓨터 하드웨어와 Azure VM 간에는 약간의 차이가 있습니다. 특히 이러한 VM이 사용하는 디스크가 다릅니다.  사용할 VM의 크기는 해당 환경의 크기에 따라 달라지지만 다음 권장 사항을 참조할 수 있습니다.
 - 대용량 크기의 프로덕션 배포의 경우 “**S**” 클래스 Azure VM을 권장합니다. 이는 Premium Storage 디스크를 이용할 수 있기 때문입니다.  “S” 클래스가 아닌 VM은 Blob Storage를 사용하는데 이 저장소는 일반적으로 수용 가능한 프로덕션 환경의 성능 요구 사항을 만족하지 않습니다.
 - 확장성을 향상시키려면 여러 개의 Premium Storage 디스크를 사용해야 합니다. 최대 IOPS를 위해서는 Windows 디스크 관리 콘솔에서 스트라이프해야 합니다.  
-- 초기 사이트 배포 중 더 나은 또는 여러 개의 프리미엄 디스크를 사용하는 것이 좋습니다(예: P20보다 P30, 1xP30보다 2xP30). 그런 다음 나중에 추가 로드로 인해 VM 크기를 확장해야 할 경우 더 큰 VM 크기가 제공하는 추가 CPU 및 메모리를 사용할 수 있습니다. 또한 이미 배치된 디스크가 더 큰 VM 크기에서 허용하는 추가 IOPS 처리량을 사용하게 될 수 있습니다.
+- 초기 사이트 배포 중 더 나은 또는 여러 개의 프리미엄 디스크를 사용하는 것이 좋습니다(예: P20보다 P30, 1xP30보다 스트라이프 볼륨의 2xP30). 그런 다음 나중에 추가 로드로 인해 VM 크기를 확장해야 할 경우 더 큰 VM 크기가 제공하는 추가 CPU 및 메모리를 사용할 수 있습니다. 또한 이미 배치된 디스크가 더 큰 VM 크기에서 허용하는 추가 IOPS 처리량을 사용하게 될 수 있습니다.
 
 
 
@@ -102,18 +102,21 @@ Configuration Manager는 Azure 부하 분산 장치에서 테스트되지 않았
 
 | 데스크톱 클라이언트    |권장 VM 크기|권장 디스크|
 |--------------------|-------------------|-----------------|
-|**최대 25,000**       |   DS4_V2          |2xP30            |
-|**25,000 - 50,000**      |   DS13_V2         |2xP30            |
-|**50,000 - 100,000**     |   DS14_V2         |3xP30            |
+|**최대 25,000**       |   DS4_V2          |2xP30(스트라이프)  |
+|**25,000 - 50,000**      |   DS13_V2         |2xP30(스트라이프)  |
+|**50,000 - 100,000**     |   DS14_V2         |3xP30(스트라이프)  |
 
 
 **원격 사이트 데이터베이스** - 원격 서버에 사이트 데이터베이스와 함께 기본 또는 중앙 관리 사이트 배치:
 
 | 데스크톱 클라이언트    |권장 VM 크기|권장 디스크 |
 |--------------------|-------------------|------------------|
-|**최대 25,000**       | 사이트 서버: F4S </br>데이터베이스 서버: DS12_V2 | 사이트 서버: 1xP30 </br>데이터베이스 서버: 2xP30 |
-|**25,000 - 50,000**      | 사이트 서버: F4S </br>데이터베이스 서버: DS13_V2 | 사이트 서버: 1xP30 </br>데이터베이스 서버: 2xP30 |
-|**50,000 - 100,000**     | 사이트 서버: F8S </br>데이터베이스 서버: DS14_V2 | 사이트 서버: 2xP30 </br>데이터베이스 서버: 3xP30 |
+|**최대 25,000**       | 사이트 서버: F4S </br>데이터베이스 서버: DS12_V2 | 사이트 서버: 1xP30 </br>데이터베이스 서버: 2xP30(스트라이프)  |
+|**25,000 - 50,000**      | 사이트 서버: F4S </br>데이터베이스 서버: DS13_V2 | 사이트 서버: 1xP30 </br>데이터베이스 서버: 2xP30(스트라이프)   |
+|**50,000 - 100,000**     | 사이트 서버: F8S </br>데이터베이스 서버: DS14_V2 | 사이트 서버: 2xP30(스트라이프)   </br>데이터베이스 서버: 3xP30(스트라이프)   |
+
+다음은 Configuration Manager 설치 및 데이터베이스 파일에 대한 별도의 논리적 볼륨이 있고, 스트라이프 볼륨에 3xP30개 디스크가 포함된 DS14_V2의 50,000-100,000개 클라이언트에 대한 예제 구성입니다.  ![VM) 디스크](media/vm_disks.png)  
+
 
 
 ## <a name="user-experience"></a>사용자 환경
@@ -136,9 +139,11 @@ Configuration Manager는 Azure 부하 분산 장치에서 테스트되지 않았
 
 
 ### <a name="while-i-am-ok-with-the-limitations-of-cloud-based-distribution-points-i-dont-want-to-put-my-management-point-into-a-dmz-even-though-that-is-needed-to-support-my-internet-based-clients-do-i-have-any-other-options"></a>클라우드 기반 배포 지점의 제한은 괜찮지만 내 인터넷 기반 클라이언트 지원에 필요하더라도 관리 지점을 DMZ에 배치하고 싶지 않습니다. 다른 방법은 없나요?
-조금만 기다려 주세요. Configuration Manager Technical Preview 버전 1606에 [클라우드 프록시 서비스](/sccm/core/get-started/capabilities-in-technical-preview-1606#a-namecloudproxyacloud-proxy-service-for-managing-clients-on-the-internet)가 도입되었습니다. 클라우드 프록시 서비스는 인터넷에서 Configuration Manager 클라이언트를 관리하는 간단한 방법을 제공합니다. Microsoft Azure에 배포되고 Azure 구독이 필요한 서비스는 클라우드 프록시 연결점이라는 새 역할을 사용하여 온-프레미스 Configuration Manager 인프라에 연결합니다. 배포 및 구성된 클라이언트는 내부 개인 네트워크 또는 인터넷에 연결되었는지 여부에 관계없이 온-프레미스 Configuration Manager 사이트 시스템 역할에 액세스할 수 있습니다.
+예. Configuration Manager 버전 1610과 함께 [클라우드 관리 게이트웨이](/sccm/core/clients/manage/manage-clients-internet#cloud-management-gateway)를 시험판 기능으로 도입했습니다. (이 기능은 Technical Preview 버전 1606에 [클라우드 프록시 서비스](/sccm/core/get-started/capabilities-in-technical-preview-1606#a-namecloudproxyacloud-proxy-service-for-managing-clients-on-the-internet)로 처음 표시되었습니다).
 
-테스트 환경에서 클라우드 서비스 프록시를 테스트한 다음 제품 개선을 위해 이에 대한 피드백을 제출할 수 있습니다.
+**클라우드 관리 게이트웨이**는 인터넷에서 Configuration Manager 클라이언트를 관리할 수 있는 간단한 방법을 제공합니다. Microsoft Azure에 배포되고 Azure 구독이 필요한 서비스는 클라우드 관리 게이트웨이 연결점이라는 새 역할을 사용하여 온-프레미스 Configuration Manager 인프라에 연결합니다. 배포 및 구성된 클라이언트는 내부 개인 네트워크 또는 인터넷에 연결되었는지 여부에 관계없이 온-프레미스 Configuration Manager 사이트 시스템 역할에 액세스할 수 있습니다.
+
+사용자의 환경에서 클라우드 관리 게이트웨이를 사용한 다음 제품 개선을 위해 이에 대한 피드백을 제출할 수 있습니다. 시험판 기능에 대한 자세한 내용은 [업데이트에서 시험판 기능 사용](/sccm/core/servers/manage/install-in-console-updates#a-namebkmkprereleasea-use-pre-release-features-from-updates)을 참조하세요.
 
 ### <a name="i-also-heard-that-you-have-another-new-feature-called-peer-cache-in-the-technical-preview-version-1604-is-that-different-than-branchcache-which-one-should-i-choose"></a>Technical Preview 버전 1604에 피어 캐시라는 새 기능이 있다고 들었습니다. BranchCache와 다른가요? 어떤 것을 선택해야 하나요?
 예, 전혀 다릅니다. [피어 캐시](/sccm/core/get-started/capabilities-in-technical-preview-1604#bkmk_peercache)는 Configuration Manager의 기본 기술이지만 BranchCache는 Windows 기능입니다. 두 가지 모두 유용합니다. BranchCache는 브로드캐스트를 사용하여 필요한 콘텐츠를 찾는 반면, 피어 캐시는 Configuration Managers 일반 배포 워크플로 및 경계 그룹 설정을 사용합니다.
@@ -177,6 +182,6 @@ Configuration Manager는 Azure 부하 분산 장치에서 테스트되지 않았
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO5-->
 
 

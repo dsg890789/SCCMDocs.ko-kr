@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 8e0090bd671e2c566447579974a38474c2f898ea
-ms.openlocfilehash: 1ca51e256ea2f406f393e4b0d3634ea0f6f637bc
+ms.sourcegitcommit: a8cb3c9850b183eec156c37a181c04088b71805e
+ms.openlocfilehash: 40837306816639ff8cea8930fec75b05edc5164a
 
 
 ---
@@ -72,9 +72,9 @@ Configuration Manager에 대해 관리 보안을 디자인하고 구현할 때�
 
 -   *전체 관리자*: Configuration Manager의 모든 권한을 부여합니다.  
 
--   *자산 분석가*: 관리자에게 Asset Intelligence, 소프트웨어 인벤토리, 하드웨어 인벤토리, 소프트웨어 계량 등을 사용하여 수집한 데이터를 볼 권한을 부여합니다. 관리자는 계량 규칙 및 Asset Intelligence 범주, 그룹, 레이블을 만들 수 있습니다.  
+-   *자산 관리자*는 Asset Intelligence 동기화 지점, Asset Intelligence 보고 클래스, 소프트웨어 인벤토리, 하드웨어 인벤토리 및 계량 규칙을 관리할 수 있는 권한을 부여합니다.  
 
--   *소프트웨어 업데이트 관리자*: 소프트웨어 업데이트를 정의 및 배포할 권한을 부여합니다. 이 역할에 연결된 관리자는 컬렉션, 소프트웨어 업데이트 그룹, 배포 및 템플릿을 만들고 NAP(네트워크 액세스 보호)에 소프트웨어 업데이트를 설정할 수 있습니다.  
+-   *소프트웨어 업데이트 관리자*: 소프트웨어 업데이트를 정의 및 배포할 권한을 부여합니다. 이 역할과 연결된 관리자는 컬렉션, 소프트웨어 업데이트 그룹, 배포 및 템플릿을 만들 수 있습니다.  
 
 > [!TIP]  
 >  Configuration Manager 콘솔에서 기본 제공 보안 역할과 사용자가 만든 사용자 지정 보안 역할을 설명과 함께 볼 수 있습니다. 역할을 보려면 **관리** 작업 영역에서 **보안**을 확장하고 **보안 역할**을 선택합니다.  
@@ -215,6 +215,6 @@ Configuration Manager에 대해 관리 보안을 디자인하고 구현할 때�
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO5-->
 
 
