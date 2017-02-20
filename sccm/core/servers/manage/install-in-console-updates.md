@@ -1,8 +1,8 @@
 ---
-title: "콘솔 내 업데이트 | System Center Configuration Manager"
+title: "콘솔 내 업데이트 | Microsoft 문서"
 description: "System Center Configuration Manager는 Microsoft 클라우드와 동기화하여 콘솔 내에서 설치할 수 있는 업데이트를 가져옵니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 2/1/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f777295958e9cbc729e3759d354521c96ae3e8ac
-ms.openlocfilehash: b9721737b4181d8f5e41224c3e2c32ae41647554
+ms.sourcegitcommit: 2f90f3204b3c31caaed1359e11451285b21eef50
+ms.openlocfilehash: b3a58503ea4d49825e93ea3a2e9bfedf975145e6
 
 
 ---
@@ -51,11 +51,11 @@ System Center Configuration Manager는 Microsoft 클라우드 서비스와 동�
 
 -   서비스 연결 지점은 사이트에 대한 사용 정보를 업로드하는 데 사용됩니다. 이 정보는 Microsoft 클라우드 서비스에서 현재 인프라 버전에 사용할 수 있는 업데이트를 식별하는 데 도움이 됩니다. 자세한 내용은 [System Center Configuration Manager의 진단 및 사용 현황 데이터](../../../core/plan-design/diagnostics/diagnostics-and-usage-data.md)를 참조하세요.  
 
--   서비스 연결 지점은 Microsoft Intune 및 Configuration Manager 온-프레미스 모바일 장치 관리를 통해 장치를 관리하는 데 사용됩니다. 자세한 내용은 [System Center Configuration Manager 및 Microsoft Intune을 사용하는 하이브리드 MDM(모바일 장치 관리)](../../../mdm/plan-design/hybrid-mobile-device-management.md)을 참조하세요.  
+-   서비스 연결 지점은 Microsoft Intune 및 Configuration Manager 온-프레미스 모바일 장치 관리를 통해 장치를 관리하는 데 사용됩니다. 자세한 내용은 [System Center Configuration Manager 및 Microsoft Intune을 사용하는 하이브리드 MDM(모바일 장치 관리)](../../../mdm/understand/hybrid-mobile-device-management.md)을 참조하세요.  
 
 업데이트가 다운로드되는 방식을 더 적절히 이해하려면 다음을 참조하세요.  
 
--   [순서도 – System Center Configuration Manager용 업데이트 다운로드](../../../core/servers/manage/download-updates-flowchart.md)  
+-   [순서도 – System Center Configuration Manager용 업데이트 다운로드](../../../core/servers/manage/download-updates-flowchart.md)
 
 -   [순서도 - System Center Configuration Manager의 복제본 업데이트](../../../core/servers/manage/update-replication-flowchart.md)  
 
@@ -100,13 +100,14 @@ Configuration Manager 콘솔 내에서 새 업데이트를 설치하기 전에, 
 
 - 1511 또는 1602에서 1606으로 업데이트: [업데이트 1606을 설치하기 위한 검사 목록](../../../core/servers/manage/checklist-for-installing-update-1606.md) 참조  
 
+- 1511, 1602 또는 1606에서 1610으로 업데이트: [업데이트 1610을 설치하기 위한 검사 목록](../../../core/servers/manage/checklist-for-installing-update-1610.md) 참조  
 
 ###  <a name="a-namebkmkstep2a-step-2-test-the-database-upgrade-before-installing-an-update"></a><a name="bkmk_step2"></a> 2단계: 업데이트를 설치하기 전에 데이터베이스 업그레이드 테스트  
 1602 업데이트와 같은 계층에 새 업데이트를 설치하기 전에 사이트 데이터베이스의 업그레이드를 테스트해야 합니다. 사이트 데이터베이스의 백업에 업데이트 설치를 테스트하는 데 사용하는 명령줄 옵션의 이름은 **testdbupgrade**입니다.  
 
 이전 버전의 Configuration Manager와 달리, 업데이트 설치에 실패하는 경우 사이트 복구를 수행할 필요가 없으며 대신 업데이트 설치를 다시 시도할 수 있습니다. 따라서 데이터베이스의 테스트 업그레이드가 이전 제품 버전보다 덜 중요한 기간 동안에는 권장 단계에 남아 있습니다.  
 
-##### <a name="to-run-testdbupgrade-before-installing-an-update"></a>업데이트를 설치하기 전에 testdbupgrade를 실행하려면  
+#### <a name="to-run-testdbupgrade-before-installing-an-update"></a>업데이트를 설치하기 전에 testdbupgrade를 실행하려면  
 
 1.  업데이트하려는 버전을 실행하는 사이트의 **CD.Latest** 폴더에서 소스 파일의 집합을 가져옵니다. 해당 버전의 System Center Configuration Manager를 실행하는 랩 또는 테스트 환경에 사이트를 먼저 설치해야 할 수도 있습니다.  
 
@@ -136,13 +137,13 @@ Configuration Manager 콘솔 내에서 새 업데이트를 설치하기 전에, 
 ###  <a name="a-namebkmkstep3a-step-3-run-the-prerequisite-checker-before-installing-an-update"></a><a name="bkmk_step3"></a> 3단계: 업데이트를 설치하기 전에 필수 조건 검사 실행  
 업데이트를 설치하기 전에 해당 업데이트에 대한 필수 조건 검사를 실행하는 것이 좋습니다. 업데이트를 설치하기 전에 필수 구성 요소를 실행하면  
 
--   업데이트 파일이 실제로 업데이트를 설치하기 전에 다른 사이트에 복제됩니다.  
+-   업데이트 파일이 업데이트를 설치하기 전에 다른 사이트에 복제됩니다.  
 
 -   업데이트를 설치하도록 선택하면 필수 조건 검사가 자동으로 다시 실행됩니다.  
 
 나중에 업데이트를 설치하면 필수 조건 검사 경고를 무시하도록 업데이트를 구성할 수 있습니다.  
 
-##### <a name="to-run-the-prerequisite-checker-before-installing-an-update"></a>업데이트를 설치하기 전에 필수 조건 검사를 실행하려면  
+#### <a name="to-run-the-prerequisite-checker-before-installing-an-update"></a>업데이트를 설치하기 전에 필수 조건 검사를 실행하려면  
 
 1.  Configuration Manager 콘솔에서 **관리** > **클라우드 서비스** > **업데이트 및 서비스**로 이동합니다.  
 
@@ -161,7 +162,7 @@ Configuration Manager 콘솔 내에서 새 업데이트를 설치하기 전에, 
 
  각 사이트에 대한 일상적인 업무 시간 외(업데이트를 설치하는 프로세스와 사이트 구성 요소 및 사이트 시스템 역할을 다시 설치하는 작업이 비즈니스 운영에 가장 영향을 덜 주는 시기)에 업데이트를 설치하도록 계획하는 것이 좋습니다.  
 
--   중앙 관리 사이트에서 업데이트 설치를 완료한 후 자식 기본 사이트가 업데이트를 자동으로 시작합니다. 이것이 권장되는 기본 프로세스입니다. 그러나 [사이트 서버에 대한 서비스 기간](#bkmk_ServiceWindow)을 사용하여 기본 사이트에서 업데이트를 설치하는 시기를 제어할 수 있습니다.  
+-   중앙 관리 사이트에서 업데이트 설치를 완료한 후 자식 기본 사이트가 업데이트를 자동으로 시작합니다. 이것이 권장되는 기본 프로세스입니다. 그러나 [사이트 서버에 대한 서비스 기간](/sccm/core/servers/manage/service-windows)을 사용하여 기본 사이트에서 업데이트를 설치하는 시기를 제어할 수 있습니다.  
 
 -   기본 상위 사이트 업데이트가 완료된 후 Configuration Manager 콘솔 내에서 보조 사이트를 수동으로 업데이트해야 합니다. 보조 사이트 서버의 자동 업데이트는 지원되지 않습니다.  
 
@@ -208,12 +209,13 @@ Configuration Manager 콘솔 내에서 새 업데이트를 설치하기 전에, 
 -   Configuration Manager 콘솔에서 **모니터링** > **개요** > **업데이트 및 서비스 상태** 노드로 이동합니다. 이 노드에는 현재 설치 중인 업데이트 패키지의 설치 상태만 표시됩니다.  
 
     버전 1606부터 업데이트 팩 설치가 모니터링의 편의를 위해 다음 단계를 통해 분할됩니다. 각 단계에 대해 이제 자세한 내용을 확인할 수 있는 로그 파일을 비롯하여 추가 세부 정보가 제공됩니다.  
-    -   **다운로드** (서비스 연결 지점 사이트 시스템 역할이 설치되어 있는 최상위 계층 사이트에만 적용됨)
+    -   **다운로드**(이 단계는 서비스 연결 지점 사이트 시스템 역할이 설치되어 있는 최상위 계층 사이트에만 적용됨)
     -   **복제**
-    - **필수 구성 요소 확인**
-    - **설치**
+    -   **필수 구성 요소 확인**
+    -   **설치**
+    -   **설치 후**(이 단계는 버전 1610 이상에서만 사용할 수 있음)
 
--   **&lt;ConfigMgr 설치 디렉터리>\Logs\\**에서 **CMUpdate.log** 파일을 볼 수 있습니다.  
+-   **&lt;ConfigMgr 설치 디렉터리>\Logs**에서 **CMUpdate.log** 파일을 볼 수 있습니다.  
 
 **4. 업데이트 설치 완료 시**  
 첫 번째 사이트 업데이트가 설치를 완료한 후  
@@ -344,23 +346,17 @@ Configuration Manager 콘솔 내에서 새 업데이트를 설치하기 전에, 
 
  |기능                    |시험판으로 추가됨 |전체 기능으로 추가됨 |  
 |----------------------------|---------------------|------------------------|
+| 클라이언트에 콘텐츠 배포를 위한 피어 캐시 |  [버전 1610](/sccm/core/plan-design/hierarchy/client-peer-cache) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
+| 클라우드 관리 게이트웨이 |  [버전 1610](/sccm/core/clients/manage/plan-cloud-management-gateway) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
+| 클라이언트 데이터 원본 대시보드 |  [버전 1610](/sccm/core/servers/deploy/configure/monitor-content-you-have-distributed#client-data-sources-dashboard) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
 | Microsoft OMS(Operations Management Suite) 커넥터  | [버전 1606](../../../core/clients/manage/sync-data-microsoft-operations-management-suite.md) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
-| 클러스터 인식 컬렉션 서비스 제공(서버 그룹 제공)| [버전 1602](../../../core/get-started/capabilities-in-technical-preview-1605.md#bkmk_servergroups)|![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
-|System Center Configuration Manager에서 관리되는 PC에 대한 조건부 액세스 | [버전 1602](../../../protect/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md)     |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)                        |
+| 클러스터 인식 컬렉션 서비스 제공(서버 그룹 제공)| [버전 1602](../../../core/get-started/capabilities-in-technical-preview-1605.md#BKMK_ServerGroups)|![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
+|System Center Configuration Manager에서 관리하는 PC에 대한 조건부 액세스 지원 | [버전 1602](../../../protect/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md)     |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)                        |
 
 
+## <a name="known-issues"></a>알려진 문제
 
-
-##  <a name="a-namebkmkservicewindowa-service-windows-for-site-servers"></a><a name="bkmk_ServiceWindow"></a> 사이트 서버에 대한 서비스 기간  
-사이트 서버에서 서비스 기간을 구성하여 Configuration Manager용 인프라 업데이트를 해당 사이트 서버에 적용할 수 있는 시기를 제어할 수 있습니다.  각 사이트 서버에서는 여러 기간을 지원하므로 인프라 업데이트를 설치할 수 있는 기간은 해당 사이트 서버에 대해 구성된 모든 기간의 조합으로 결정됩니다.  
-
-**서비스 기간을 구성하려면**  
-
-1.  Configuration Manager 콘솔에서 **관리** > **사이트 구성** > **사이트**를 열고 서비스 기간을 구성할 사이트 서버를 선택합니다.  
-
-2.  이제, 사이트 서버 **속성** 을 편집하고 **서비스 기간** 탭을 선택한 다음 해당 사이트 서버의 서비스 기간을 하나 이상 설정할 수 있습니다.  
-
-##  <a name="a-namebkmkfaqa-why-dont-i-see-certain-updates-in-my-console"></a><a name="bkmk_faq"></a> 콘솔에서 특정 업데이트가 표시되지 않는 이유는 무엇인가요?  
+###  <a name="a-namebkmkfaqa-why-dont-i-see-certain-updates-in-my-console"></a><a name="bkmk_faq"></a> 콘솔에서 특정 업데이트가 표시되지 않는 이유는 무엇인가요?  
  특정 업데이트를 찾을 수 없거나 Microsoft 클라우드 서비스와 성공적으로 동기화한 후 콘솔에서 어떤 업데이트도 찾을 수 없는 경우 그 이유는 다음과 같을 수 있습니다.  
 
 -   업데이트하려면 인프라에서 사용하지 않는 구성이 필요하거나 현재 제품 버전에서 업데이트를 받기 위한 필수 조건을 충족하지 않습니다.  
@@ -369,10 +365,23 @@ Configuration Manager 콘솔 내에서 새 업데이트를 설치하기 전에, 
 
 -   Configuration Manager 콘솔에서 업데이트를 볼 수 있는 올바른 역할 기반 관리 권한이 계정에 없습니다.
 
-    콘솔에서 업데이트를 보고 기능을 사용하도록 설정하는 데 필요한 권한에 대한 자세한 내용은 이 항목에서 [업데이트를 관리할 수 있는 권한](../../../core/servers/manage/install-in-console-updates.md#Permissions-to-view-and-manage-updates-and-features)을 참조하세요.
+    콘솔에서 업데이트를 보고 기능을 사용하도록 설정하는 데 필요한 권한에 대한 자세한 내용은 이 항목에서 [업데이트를 관리할 수 있는 권한](../../../core/servers/manage/install-in-console-updates.md#permissions-to-view-and-manage-updates-and-features)을 참조하세요.
+
+### <a name="why-do-i-see-two-updates-for-version-1610"></a>1610 버전의 업데이트가 두 개 보이는 이유는 무엇인가요
+콘솔에서 업데이트를 볼 때 1610 버전을 설치하는 업데이트 두 개가 표시될 수 있습니다. 이러한 업데이트는 서로 날짜가 다릅니다. 다음 중 한 가지에 해당될 경우 이 상황이 발생합니다.   
+-   1610 버전을 사용할 수 있게 된 후에 이전 버전(예: 1606)을 설치한 경우
+
+-   계층에서 1511 또는 1602 버전을 사용하는데 1606 버전을 다운로드하지 못한 경우
+
+1610 버전은 일부 이진 파일에서 몇 부분이 사소하게 변경된 후에 다시 릴리스되었기 때문에 업데이트 릴리스가 두 가지입니다. 이러한 변경 내용은 Configuration Manager나 업데이트의 기능에 영향을 주지 않습니다.
+
+콘솔에서 두 업데이트를 모두 사용할 수 있는 경우에는 최근 날짜의 업데이트를 설치하는 것이 좋습니다. 그러나 두 업데이트 모두 동일한 기능을 제공하므로, 이미 하나를 설치한 경우에는 다시 설치할 필요가 없습니다.
+-   이전에 오래된 업데이트를 이미 설치했으면 최신 날짜로 된 업데이트를 설치하지 않아도 됩니다. 그러나 첫 번째 업데이트를 설치한 후에 새 업데이트를 설치하면 변경된 이진 파일만 업데이트되고 다른 변경이 일어나지는 않으며, 다른 추가 작업을 수행할 필요가 없습니다.
+
+-   이전에 최신 업데이트를 설치했는데 오래된 날짜의 업데이트를 설치한 경우에도 추가 작업은 필요가 없습니다. 이미 설치한 새 이진 파일을 원래 업데이트의 같은 파일로 덮어쓰지 않기 때문입니다.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 

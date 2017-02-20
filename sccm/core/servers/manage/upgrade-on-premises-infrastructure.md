@@ -2,7 +2,7 @@
 title: "온-프레미스 인프라 업그레이드 | Microsoft 문서"
 description: "SQL Server, 사이트 시스템의 사이트 운영 체제 등의 인프라를 업그레이드하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/28/2016
+ms.date: 2/2/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 4a8d98addcd463eb82d8b7100b44254a10d21992
-ms.openlocfilehash: b79346968edf88443f8e30691aa4baec7b81699f
+ms.sourcegitcommit: 83c8492191f40fc4d582562268db0d58a0f9cdde
+ms.openlocfilehash: a5d8496d98bd7f202ffbe8859981e94457ffa5c4
 
 
 ---
@@ -32,7 +32,7 @@ ms.openlocfilehash: b79346968edf88443f8e30691aa4baec7b81699f
 
 - System Center Configuration Manager 인프라를 새 버전으로 업데이트하려면 [System Center Configuration Manager용 업데이트](/sccm/core/servers/manage/updates)를 참조하세요.
 
-##  <a name="a-namebkmksupconfigupgradesitesrva-upgrade-site-operating-system-of-site-systems"></a><a name="BKMK_SupConfigUpgradeSiteSrv"></a> 사이트 시스템의 사이트 운영 체제 업그레이드  
+##  <a name="a-namebkmksupconfigupgradesitesrva-upgrade-the-operating-system-of-site-systems"></a><a name="BKMK_SupConfigUpgradeSiteSrv"></a> 사이트 시스템의 운영 체제 업그레이드  
  Configuration Manager는 다음과 같은 상황에서 사이트 서버를 호스트하는 서버의 운영 체제 및 사이트 시스템 역할을 호스트하는 원격 서버의 현재 위치 업그레이드를 지원합니다.  
 
 -   업그레이드 후 Windows의 서비스 팩 수준이 Configuration Manager에서 계속 지원되는 경우 상위 Windows Server 서비스 팩으로의 현재 위치 업그레이드  
@@ -213,6 +213,6 @@ ms.openlocfilehash: b79346968edf88443f8e30691aa4baec7b81699f
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Feb17_HO1-->
 
 

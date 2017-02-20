@@ -2,7 +2,7 @@
 title: "지원되는 사이트 시스템 서버 | Microsoft 문서"
 description: "System Center Configuration Manager 사이트 또는 사이트 시스템 역할을 호스트하는 데 사용할 수 있는 Windows 버전을 알아봅니다."
 ms.custom: na
-ms.date: 1/3/2017
+ms.date: 2/1/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: bebbeebba76ab5cf0c517fcb00b7b6a516a08e3e
-ms.openlocfilehash: 12fe730d924979eec2ef55ea80a1fa90b7b47464
+ms.sourcegitcommit: 4688b4b12a7afa5fcfdc0e42f984271d98f10316
+ms.openlocfilehash: bb017e575e0318b73cc5ea4e27fd33b1e9c2a02a
 
 
 ---
@@ -37,7 +37,7 @@ ms.openlocfilehash: 12fe730d924979eec2ef55ea80a1fa90b7b47464
 
 
 ## <a name="windows-server-2016-standard-and-datacenter"></a>Windows Server 2016: Standard 및 Datacenter
-Windows Server 2016은 Configuration Manager 버전 1606 및 KB3186654의 핫픽스 롤업(또는 2016년 10월에 릴리스된 1606의 기준 버전)부터 지원됩니다.
+KB3186654의 핫픽스 롤업이 포함된 1606 버전(또는 2016년 10월에 릴리스된 1606 기준 버전)부터 다음에 대해 이 운영 체제가 지원됩니다.
 
 **사이트 서버:**  
 
@@ -325,12 +325,12 @@ Windows Server 2016은 Configuration Manager 버전 1606 및 KB3186654의 핫픽
 
     -   배포 지점은 각기 요구 사항이 다른 여러 구성을 지원합니다. 경우에 따라 이러한 구성은 서버뿐만 아니라 클라이언트 운영 체제에 대한 설치도 지원합니다. 배포 지점에 사용할 수 있는 옵션에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
 
-## <a name="the-server-core-installation-of-windows-server-2012"></a>Windows Server 2012의 Server Core 설치  
- 나열된 이전 운영 체제 외에도, Windows Server 2012의 Server Core 설치를 다음과 같은 제한 사항이 있는 배포 지점으로 사용할 수도 있습니다.  
 
--   64비트 버전만 지원됩니다.  
+## <a name="the-server-core-installation-of-windows-server-2016"></a>Windows Server 2016의 Server Core 설치
+KB3186654의 핫픽스 롤업이 포함된 1606 버전(또는 2016년 10월에 릴리스된 1606 기준 버전)부터 이 운영 체제를 배포 지점으로 사용할 수 있으며, 그럴 경우 다음과 같은 제한 사항이 적용됩니다.  
+  -   x64비트 버전만 지원됩니다.
+  -   이 운영 체제의 배포 지점은 PXE 또는 멀티캐스트를 지원하지 않습니다.  
 
--   이 운영 체제의 배포 지점은 PXE 또는 멀티캐스트를 지원하지 않습니다.
 
 ## <a name="the-server-core-installation-of-windows-server-2012-r2"></a>Windows Server 2012 R2의 Server Core 설치  
  나열된 이전 운영 체제 외에도, Windows Server 2012 R2의 Server Core 설치를 다음과 같은 제한 사항이 있는 배포 지점으로 사용할 수도 있습니다.  
@@ -339,8 +339,15 @@ Windows Server 2016은 Configuration Manager 버전 1606 및 KB3186654의 핫픽
 
 -   이 운영 체제의 배포 지점은 PXE 또는 멀티캐스트를 지원하지 않습니다.  
 
+## <a name="the-server-core-installation-of-windows-server-2012"></a>Windows Server 2012의 Server Core 설치  
+ 나열된 이전 운영 체제 외에도, Windows Server 2012의 Server Core 설치를 다음과 같은 제한 사항이 있는 배포 지점으로 사용할 수도 있습니다.  
+
+-   64비트 버전만 지원됩니다.  
+
+-   이 운영 체제의 배포 지점은 PXE 또는 멀티캐스트를 지원하지 않습니다.
 
 
-<!--HONumber=Jan17_HO1-->
+
+<!--HONumber=Feb17_HO1-->
 
 

@@ -2,7 +2,7 @@
 title: "콘텐츠 모니터링 | Microsoft 문서"
 description: "Configuration Manager 콘솔을 사용하여 분산 콘텐츠를 모니터링하는 방법을 이해합니다."
 ms.custom: na
-ms.date: 1/4/2017
+ms.date: 2/8/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 4d34a272a93100426cccd2308c5b3b0b0ae94a60
-ms.openlocfilehash: 60f30fd6477f1ee8755e50ceb9cc17d43ef8ea68
+ms.sourcegitcommit: 3b387d78e03cc2d1c535e52016d2de4945328f72
+ms.openlocfilehash: c51cf3b3b7563a82db40405677c2edfb6de47cf1
 
 ---
 # <a name="monitor-content-you-have-distributed-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 배포한 콘텐츠 모니터링
@@ -50,12 +50,12 @@ System Center Configuration Manager 콘솔을 사용하여 다음을 포함하�
 
 -   오류 횟수  
 -   보류 중인 배포  
--   설치 횟수  
+-   설치 횟수
 
 또한 배포 지점에 대해 진행 중인 배포나 배포 지점으로 콘텐츠를 배포하지 못한 배포도 관리할 수 있습니다.  
 
--   **콘텐츠 상태** 노드의 **처리 중** 탭 또는 **오류** 탭의 **자산 정보** 창에서 배포 지점에 대한 배포 작업의 배포 상태 메시지를 볼 때 콘텐츠를 취소하거나 다시 배포하는 옵션 중 적용 가능한 옵션을 사용할 수 있습니다.  
--   그뿐만 아니라 **처리 중** 탭에서 작업 정보를 볼 경우 완료된 작업의 비율이 작업 정보에 표시되고, **오류** 탭에서 사용할 수 있는 작업 정보를 볼 경우에는 작업에 대해 남은 다시 시도 횟수와 다음 다시 시도가 발생하기 전까지의 시간이 작업 정보에 표시됩니다.  
+-   **자산 정보** 창에서 배포 지점에 대한 배포 작업의 배포 상태 메시지를 볼 때 콘텐츠를 취소하거나 다시 배포하는 옵션. 이 창은 **콘텐츠 상태** 노드의 **진행 중** 탭이나 **오류** 탭에서 찾을 수 있습니다.  
+-   작업 세부 정보에는 **진행 중** 탭에서 작업 세부 정보를 볼 때 완료된 작업의 백분율도 표시됩니다. 작업 세부 정보에는 작업에 대해 남은 다시 시도 횟수가 표시되고, **오류** 탭에서 작업의 세부 정보를 보는 동안은 다음 다시 시도까지 남은 시간도 표시됩니다.  
 
 아직 완료되지 않은 배포를 취소하면 해당 콘텐츠를 전송할 배포 지점이 중지됩니다.  
 
@@ -66,13 +66,13 @@ System Center Configuration Manager 콘솔을 사용하여 다음을 포함하�
 >  배포가 거의 완료되었을 때 해당 배포를 취소하면 배포 지점에 배포가 완료되기 전까지 처리되지 않을 수 있습니다. 이 경우 배포 취소가 무시되고 배포 상태가 성공으로 표시됩니다.  
 
 > [!NOTE]  
->  사이트 서버에 있는 배포 지점에 대한 배포 취소 옵션은 선택 가능하지만 아무 효과가 없습니다. 이는 사이트 서버와 사이트 서버의 배포 지점이 동일한 인스턴스 콘텐츠 저장소를 공유하며 실제로 취소할 배포 작업이 없기 때문입니다.  
+>  사이트 서버에 있는 배포 지점에 대한 배포 취소 옵션은 선택 가능하지만 아무 효과가 없습니다. 사이트 서버와 사이트 서버의 배포 지점이 동일한 인스턴스 콘텐츠 저장소 하나를 공유하기 때문입니다. 취소할 실제 배포 작업이 없습니다.  
 
-이전에 배포 지점에 전송하지 못한 콘텐츠를 재배포하면 Configuration Manager에서 즉시 해당 콘텐츠를 배포 지점에 다시 배포하기 시작하고 배포 상태를 업데이트하여 해당 재배포의 지속적인 상태를 반영합니다.  
+이전에 배포 지점으로 전송하지 못한 콘텐츠를 재배포하면 Configuration Manager에서 해당 콘텐츠를 배포 지점으로 즉시 재배포하기 시작합니다. Configuration Manager에서 배포 상태를 업데이트하여 진행 중인 재배포 상태를 반영합니다.  
 
-콘텐츠 상태를 보고 처리 중이거나 실패한 상태로 남아 있는 배포를 관리하려면 다음 절차를 수행하십시오.  
+콘텐츠 상태를 보고 처리 중이거나 실패한 상태로 남아 있는 배포를 관리하려면 다음 절차를 수행하세요.  
 
-#### <a name="to-monitor-content-status"></a>콘텐츠 상태를 모니터링하려면  
+### <a name="to-monitor-content-status"></a>콘텐츠 상태를 모니터링하려면  
 
 1.  Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.  
 
@@ -82,7 +82,7 @@ System Center Configuration Manager 콘솔을 사용하여 다음을 포함하�
 
 4.  **홈** 탭에서 **상태 보기**를 클릭합니다. 패키지에 대한 자세한 상태 정보가 표시됩니다.  
 
-#### <a name="to-cancel-a-distribution-that-remains-in-progress"></a>처리 중인 상태로 남아 있는 배포를 취소하려면  
+### <a name="to-cancel-a-distribution-that-remains-in-progress"></a>처리 중인 상태로 남아 있는 배포를 취소하려면  
 
 1.  Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.  
 
@@ -90,11 +90,11 @@ System Center Configuration Manager 콘솔을 사용하여 다음을 포함하�
 
 3.  관리하려는 패키지를 선택한 다음 세부 정보 창에서 **상태 보기**를 클릭합니다.  
 
-4.  **처리 중** 탭의 **자산 정보** 창에서 취소하려는 배포 항목을 마우스 오른쪽 단추로 클릭하고 **취소**를 선택합니다.  
+4.  **진행 중** 탭의 **자산 정보** 창에서 취소하려는 배포 항목을 마우스 오른쪽 단추로 클릭하고 **취소**를 선택합니다.  
 
 5.  **예** 를 클릭하여 작업을 확인하고 해당 배포 지점에 대한 배포 작업을 취소합니다.  
 
-#### <a name="to-redistribute-content-that-failed-to-distribute"></a>배포에 실패한 콘텐츠를 재배포하려면  
+### <a name="to-redistribute-content-that-failed-to-distribute"></a>배포에 실패한 콘텐츠를 재배포하려면  
 
 1.  Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.  
 
@@ -104,7 +104,7 @@ System Center Configuration Manager 콘솔을 사용하여 다음을 포함하�
 
 4.  **오류** 탭의 **자산 정보** 창에서 재배포하려는 배포 항목을 마우스 오른쪽 단추로 클릭하고 **재배포**를 선택합니다.  
 
-5.  **예** 를 클릭하여 작업을 확인하고 해당 배포 지점에 대한 재배포 프로세스를 시작합니다.  
+5.  **예**를 클릭하여 작업을 확인하고 해당 배포 지점에 대한 재배포 프로세스를 시작합니다.  
 
 ## <a name="distribution-point-group-status"></a>배포 지점 그룹 상태  
 **모니터링** 작업 영역의 **배포 지점 그룹 상태** 노드에는 배포 지점 그룹에 대한 정보가 제공됩니다. 다음과 같은 정보를 검토할 수 있습니다.  
@@ -119,10 +119,10 @@ System Center Configuration Manager 콘솔을 사용하여 다음을 포함하�
 다음에 대한 세부 상태 정보도 확인할 수 있습니다.  
 
 -   배포 지점 그룹에 대한 오류  
--   진행 중인 배포 수  
+-   진행 중인 배포 수
 -   정상적으로 완료된 배포 수  
 
-#### <a name="to-monitor-distribution-point-group-status"></a>배포 지점 그룹 상태를 모니터링하려면  
+### <a name="to-monitor-distribution-point-group-status"></a>배포 지점 그룹 상태를 모니터링하려면  
 
 1.  Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.  
 
@@ -140,7 +140,7 @@ System Center Configuration Manager 콘솔을 사용하여 다음을 포함하�
 
 배포 지점 구성 상태를 보려면 다음 절차를 수행하세요.  
 
-#### <a name="to-monitor-distribution-point-configuration-status"></a>배포 지점 구성 상태를 모니터링하려면  
+### <a name="to-monitor-distribution-point-configuration-status"></a>배포 지점 구성 상태를 모니터링하려면  
 
 1.  Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.  
 
@@ -151,14 +151,14 @@ System Center Configuration Manager 콘솔을 사용하여 다음을 포함하�
 4.  결과 창에서 **세부 정보** 탭을 클릭합니다. 배포 지점에 대한 상태 정보가 표시됩니다.  
 
 ## <a name="client-data-sources-dashboard"></a>클라이언트 데이터 원본 대시보드
-버전 1610부터 **클라이언트 데이터 원본** 대시보드를 사용하여 사용자 환경의 [피어 캐시](/sccm/core/plan-design/hierarchy/client-peer-cache) 사용을 파악할 수 있습니다. 이 대시보드는 클라이언트가 피어 캐시를 사용하여 콘텐츠를 다운로드하고 해당 정보를 사이트에 다시 보고해야 콘솔에 표시됩니다. 보고 간격에 따라 이 작업은 최대 24시간이 걸릴 수 있습니다.
+버전 1610부터 **클라이언트 데이터 원본** 대시보드를 사용하여 사용자 환경의 [피어 캐시](/sccm/core/plan-design/hierarchy/client-peer-cache) 사용을 파악할 수 있습니다. 이 대시보드는 클라이언트가 피어 캐시를 사용하여 콘텐츠를 다운로드하고 해당 정보를 사이트에 다시 보고해야 콘솔에 표시됩니다. 여기에는 최대 24시간이 소요될 수 있습니다.
 
 > [!TIP]  
 > 버전 1610의 경우 피어 캐시 및 클라이언트 데이터 원본 대시보드는 시험판 기능입니다. 이러한 기능을 사용하도록 설정하려면 [업데이트에서 시험판 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_prerelease)을 참조하세요.
 
 콘솔에서 **모니터링** > **클라이언트 상태** > **클라이언트 데이터 원본**으로 이동합니다. 여기서 대시보드에 적용하는 기간을 선택할 수 있습니다. 그런 다음 디스플레이에서, 정보를 보려는 경계 그룹 또는 패키지를 선택할 수 있습니다. 정보를 볼 때 서로 다른 콘텐츠 또는 정책 원본에 대한 자세한 내용을 보려면 화면 위로 마우스를 가져가면 됩니다.
 
-세부 정보:  
+세부 정보는 다음과 같습니다.  
 - **클라이언트 콘텐츠 원본**: 클라이언트가 콘텐츠를 가져오는 원본을 표시합니다.
 - **배포 지점**: 선택된 경계 그룹에 속한 배포 지점 수를 표시합니다.
 - **배포 지점을 사용한 클라이언트**: 선택된 경계 그룹에 포함된 클라이언트 중에서 콘텐츠를 가져오기 위해 사용된 배포 지점 수를 표시합니다.
@@ -171,6 +171,6 @@ System Center Configuration Manager 콘솔을 사용하여 다음을 포함하�
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

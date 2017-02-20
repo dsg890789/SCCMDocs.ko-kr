@@ -5,7 +5,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 01/04/2017
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -13,8 +13,8 @@ ms.technology:
 - configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
 translationtype: Human Translation
-ms.sourcegitcommit: 46c8004afee4b18d5c7a2fcc5dac0f7d0d1f823c
-ms.openlocfilehash: fb2fc409c2f734816e4f3bf93d61a748d957ebf0
+ms.sourcegitcommit: 5ab49481a78eda044350addab86ee6f8ef1c0946
+ms.openlocfilehash: fe8bf45970e34af0795a5a9a4c3aa985e446784d
 
 ---
 
@@ -44,6 +44,18 @@ Configuration Manager 버전 1610부터 Configuration Manager 콘솔에서 Offic
 
 대시보드 맨 위에 있는 **컬렉션** 드롭다운 설정을 사용하여 특정 컬렉션 멤버별로 대시보드 데이터를 필터링합니다.
 
+### <a name="display-data-in-the-office-365-client-management-dashboard"></a>Office 365 클라이언트 관리 대시보드에 데이터 표시
+Office 365 클라이언트 관리 대시보드에 표시되는 데이터는 하드웨어 인벤토리에서 옵니다. 하드웨어 인벤토리를 사용하도록 설정하고 **Office 365 ProPlus 구성** 하드웨어 인벤토리를 선택해야 대시보드에 데이터를 표시할 수 있습니다.
+#### <a name="to-display-data-in-the-office-365-client-management-dashboard"></a>Office 365 클라이언트 관리 대시보드에 데이터를 표시하려면
+1. 하드웨어 인벤토리를 아직 사용하도록 설정하지 않은 경우 지금 설정합니다. 자세한 내용은 [하드웨어 인벤토리 구성](\sccm\core\clients\manage\configure-hardware-inventory)을 참조하세요.
+2. Configuration Manager 콘솔에서 **관리** > **클라이언트 설정** > **기본 클라이언트 설정**으로 이동합니다.  
+3. **홈** 탭의 **속성** 그룹에서 **속성**을 클릭합니다.  
+4. 에 **기본 클라이언트 설정** 대화 상자를 클릭 하 여 **하드웨어 인벤토리**.  
+5. 에 **장치 설정을** 목록에서 클릭 **클래스 설정**.  
+6. **하드웨어 인벤토리 클래스** 대화 상자에서 **Office 365 ProPlus 구성**을 선택합니다.  
+7.  클릭 하 여 **확인** 변경 내용을 저장 하 고 닫습니다는 **하드웨어 인벤토리 클래스** 대화 상자.  
+하드웨어 인벤토리가 보고되면 Office 365 클라이언트 관리 대시보드에서 데이터를 표시하기 시작합니다.
+
 <!---
  On the upper-right side of the dashboard, click **Office 365 Installer** to start the Office 365 Client Installation Wizard to deploy Office 365 apps to clients. For details, see [Deploy Office 365 apps to clients](#deploy-office-365-apps-to-clients).
 - On the middle-right side of the dashboard, click **Create an ADR** to open the Automatic Deployment Rule Wizard to create a new automatic deployment rule (ADR). To create an ADR for Office 365 apps, select **Office 365 Client** when you choose the product. For more information, see [Automatically deploy software updates](/sccm/sum/deploy-use/automatically-deploy-software-updates).
@@ -55,8 +67,7 @@ Configuration Manager를 사용하여 Office 365 업데이트를 배포하려면
 
 1.  항목의 **Configuration Manager를 사용하여 Office 365 클라이언트 업데이트를 관리하기 위한 요구 사항** 섹션에서 Configuration Manager를 사용하여 Office 365 클라이언트 업데이트를 관리하기 위한 [요구 사항을 확인](https://technet.microsoft.com/library/mt628083.aspx)합니다.  
 
-2.  [소프트웨어 업데이트 지점을 구성](../get-started/configure-classifications-and-products.md)하여 Office 365 클라이언트 업데이트를 동기화합니다. 분류에 대한 **업데이트**를 설정하고 제품에 대한 **Office 365 클라이언트**를 선택합니다. Office 365 클라이언트 제품을 선택할 수 있으려면 먼저 소프트웨어 업데이트를 한 번 이상 동기화해야 할 수도 있습니다. **업데이트** 분류를 사용하도록 소프트웨어 업데이트 지점을 구성한 후 소프트웨어 업데이트를 동기화해야 합니다.  
-
+2.  [소프트웨어 업데이트 지점을 구성](../get-started/configure-classifications-and-products.md)하여 Office 365 클라이언트 업데이트를 동기화합니다. 분류에 대한 **업데이트**를 설정하고 제품에 대한 **Office 365 클라이언트**를 선택합니다. Office 365 클라이언트 제품을 선택할 수 있으려면 먼저 소프트웨어 업데이트를 한 번 이상 동기화해야 할 수도 있습니다. **업데이트** 분류를 사용하도록 소프트웨어 업데이트 지점을 구성한 후 소프트웨어 업데이트를 동기화해야 합니다.
 3.  Office 365 클라이언트가 Configuration Manager에서 업데이트를 받을 수 있도록 합니다. 이렇게 하려면 Configuration Manager 클라이언트 설정을 사용하거나 그룹 정책을 사용합니다. 다음 방법 중 하나를 통해 클라이언트를 사용하도록 설정합니다.  
     - 방법 1: Configuration Manager 버전 1606부터, Configuration Manager 클라이언트 설정을 사용하여 Office 365 클라이언트 에이전트를 관리할 수 있습니다. 이 설정을 구성하고 Office 365 업데이트를 배포한 후 Configuration Manager 클라이언트 에이전트는 Office 365 클라이언트 에이전트와 통신하여 배포 지점에서 Office 365 업데이트를 다운로드하고 설치합니다. Configuration Manager는 Office 365 ProPlus 클라이언트 설정의 인벤토리를 사용합니다.
       1.  Configuration Manager 콘솔에서 **관리** > **개요** > **클라이언트 설정**을 클릭합니다.  
@@ -67,47 +78,54 @@ Configuration Manager를 사용하여 Office 365 업데이트를 배포하려면
 
     - 방법 2: Office 배포 도구 또는 그룹 정책을 사용하여 [Office 365 클라이언트가 Configuration Manager에서 업데이트를 받을 수 있도록 설정](https://technet.microsoft.com/library/mt628083.aspx#BKMK_EnableClient)합니다.  
 
-4. 클라이언트에 [Office 365 업데이트를 배포](deploy-software-updates.md)합니다.  
+4. 클라이언트에 [Office 365 업데이트를 배포](deploy-software-updates.md)합니다.   
 
-<!--  ## Add other languages for Office 365 update downloads
-Beginning in Configuration Manager version 1610, you can add support for Configuration Manager to download updates for any languages supported by Office 365 regardless of whether they are supported in Configuration Manager.
+## <a name="add-other-languages-for-office-365-update-downloads"></a>Office 365 업데이트 다운로드에 다른 언어 추가
+Configuration Manager 버전 1610부터는 Configuration Manager의 지원 여부에 관계 없이 Office 365에서 지원되는 모든 언어의 업데이트를 Configuration Manager에서 다운로드하도록 지원하는 기능을 추가할 수 있습니다.
+> [!IMPORTANT]  
+> 추가 Office 365 업데이트 언어 구성은 사이트 전체 설정입니다. 다음 절차를 사용하여 언어를 추가하면 모든 Office 365 업데이트가 소프트웨어 업데이트 다운로드 또는 소프트웨어 업데이트 배포 마법사의 언어 선택 페이지에서 선택한 언어 외에 해당 언어로도 다운로드됩니다.
 
-### To add support to download updates for additional languages
-Use the following procedure on the central administration site, or stand-alone primary site, where the software update point site system role is installed.
-1. From a command prompt, type *wbemtest* as an administrative user to open the Windows Management Instrumentation Tester.
-2. Click **Connect**, and then type *root\sms\site_<siteCode>*.
-3. Click **Query**, and then run the following query:
-   *select &#42; from SMS_SCI_Component where componentname ="SMS_WSUS_CONFIGURATION_MANAGER"*
-4. Double-click the object with the site code for the central administration site or stand-alone primary site.
+### <a name="to-add-support-to-download-updates-for-additional-languages"></a>추가 언어의 업데이트 다운로드 지원을 추가하려면
+소프트웨어 업데이트 지점 사이트 시스템 역할이 설치된 중앙 관리 사이트나 독립 실행형 기본 사이트에서 다음 절차를 사용합니다.
+1. 명령 프롬프트에서 관리자 권한으로 *wbemtest*를 입력하여 Windows Management Instrumentation 테스터를 엽니다.
+2. **연결**을 클릭한 후 *root\sms\site_&lt;siteCode&gt;*를 입력합니다.
+3. **쿼리**를 클릭한 후 다음 쿼리를 실행합니다. *select &#42; from SMS_SCI_Component where componentname ="SMS_WSUS_CONFIGURATION_MANAGER"*  
+   ![WMI 쿼리](..\media\1-wmiquery.png)
+4. 결과 창에서 중앙 관리 사이트 또는 독립 실행형 기본 사이트의 사이트 코드가 있는 개체를 두 번 클릭합니다.
+5. **속성** 속성을 선택하고 **속성 편집**을 클릭한 후 **포함값 보기**를 클릭합니다.
+![속성 편집기](..\media\2-propeditor.png)
+6. 첫 번째 쿼리 결과부터 시작해서 **PropertyName** 속성의 **AdditionalUpdateLanguagesForO365**가 있는 개체를 찾을 때까지 각 개체를 엽니다.
+7. **Value2**를 선택하고 **속성 편집**을 클릭합니다.  
+![Value2 속성 편집](..\media\3-queryresult.png)
+8. **Value2** 속성에 다른 언어를 추가하고 **속성 저장**을 클릭합니다.  
+예를 들면 pt-pt(포르투갈어 - 포르투갈), af-za(아프리칸스어 - 남아프리카), nn-no(노르웨이어(니노르스크) - 노르웨이) 등이 있습니다.  
+![속성 편집기에서 언어 추가](..\media\4-props.png)  
+9. **닫기**, **닫기**, **속성 저장**, **개체 저장**(여기에서 **닫기**를 클릭하면 값이 취소됨), **닫기**를 차례로 클릭한 다음 **종료**를 클릭하여 Windows Management Intstrumentation 테스터를 종료합니다.
+10. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **개요** > **Office 365 클라이언트 관리** > **Office 365 업데이트**로 이동합니다.
+11. 이제 Office 365 업데이트를 다운로드하면 마법사에서 선택한 언어와 이 절차에서 구성한 언어로 업데이트가 다운로드됩니다. 이러한 언어로 다운로드된 업데이트를 확인하려면 업데이트의 패키지 원본으로 이동한 후 파일 이름에 언어 코드가 포함된 언어를 찾습니다.  
+![추가 언어가 있는 파일 이름](..\media\5-verification.png)
 
-5. Browse the properties for View Embedded.
-3). Find the SMS_EmbeddedProperty instance with the PropertyName of "AdditionalUpdateLanguagesForO365"
-4). Set Value2 to be additional languages, e.g.:  pt-pt,af-za,nn-no, and save
-5). Right click to download an O365 update, choose languages from UI
-6). Verify that the language packs got downloaded including the UI specified ones plus the SDK specified ones. Admin can check the content package share specified to verify this.
--->
 
-<!-- ## Change the update channel after you enable Office 365 clients to receive updates from Configuration Manager
-To change the update channel after you enable Office 365 clients to receive updates from Configuration Manager, you must distribute a registry key value change to Office 365 clients using group policy. Change the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\Configuration\CDNBaseUrl** registry key to use one of the following values:
+## <a name="change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager"></a>Office 365 클라이언트가 Configuration Manager에서 업데이트를 받도록 설정한 후에 업데이트 채널 변경
+Office 365 클라이언트가 Configuration Manager에서 업데이트를 받도록 설정한 후에 업데이트 채널을 변경하려는 경우 그룹 정책을 사용하여 레지스트리 키 값의 변경 사항을 Office 365 클라이언트에 배포할 수 있습니다. **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\Configuration\CDNBaseUrl** 레지스트리 키를 다음 중 한 값을 사용하도록 변경합니다.
 
-- Current Channel:  
-  **CDNBaseUrl** = http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60
+- 현재 채널:  
+  **CDNBaseUrl** = http&#58;//officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60
 
-- Deferred Channel:  
-  **CDNBaseUrl** = http://officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114
+- 지연된 채널:  
+  **CDNBaseUrl** = http&#58;//officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114
 
-- First Release for Current Channel:  
-  **CDNBaseUrl** = http://officecdn.microsoft.com/pr/64256afe-f5d9-4f86-8936-8840a6a4f5be
+- 현재 채널의 첫 번째 릴리스:  
+  **CDNBaseUrl** = http&#58;//officecdn.microsoft.com/pr/64256afe-f5d9-4f86-8936-8840a6a4f5be
 
-- First Release for Deferred Channel:  
-  **CDNBaseUrl** = http://officecdn.microsoft.com/pr/b8f9b850-328d-4355-9145-c59439a0c4cf
--->
+- 지연된 채널의 첫 번째 릴리스:  
+  **CDNBaseUrl** = http&#58;//officecdn.microsoft.com/pr/b8f9b850-328d-4355-9145-c59439a0c4cf
 
 <!--- ## Next steps
 Use the Office 365 Client Management dashboard in Configuration Manager to review Office 365 client information and deploy Office 365 apps. For details, see [Manage Office 365 apps](manage-office-365-apps.md). --->
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 

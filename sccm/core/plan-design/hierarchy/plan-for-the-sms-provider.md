@@ -2,7 +2,7 @@
 title: "SMS 공급자 계획 | Microsoft 문서"
 description: "SMS 공급자를 사용하여 System Center Configuration Manager를 관리하는 방법에 대해 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 2/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
-ms.openlocfilehash: 9b766575739246e05d5affbfeade3c31de95ef98
+ms.sourcegitcommit: 11ac851696ce52642412ca29e4873679d50cf398
+ms.openlocfilehash: 547dc39d5659c7c2e6f1ca670caddc127dbf22c4
 
 
 ---
@@ -25,20 +25,19 @@ ms.openlocfilehash: 9b766575739246e05d5affbfeade3c31de95ef98
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager를 관리하려면 **SMS 공급자**의 인스턴스에 연결하는 Configuration Manager 콘솔을 사용합니다. 기본적으로 사이트를 설치하는 경우 SMS 공급자는 중앙 관리 사이트 또는 기본 사이트에 설치됩니다.  
+System Center Configuration Manager를 관리하려면 **SMS 공급자**의 인스턴스에 연결하는 Configuration Manager 콘솔을 사용합니다. 기본적으로 SMS 공급자는 중앙 관리 사이트나 기본 사이트를 설치할 때 사이트 서버에 설치됩니다. 
 
 
 ##  <a name="a-namebkmkplansmsprova-about-the-sms-provider"></a><a name="BKMK_PlanSMSProv"></a> SMS 공급자 정보  
  SMS 공급자는 사이트의 Configuration Manager 데이터베이스에 **읽기** 및 **쓰기** 권한을 할당하는 WMI(Windows Management Instrumentation) 공급자입니다.  
 
--   **SMS Admins**  그룹은 SMS 공급자에 대한 액세스를 제공합니다. Configuration Manager는 이 보안 그룹을 사이트 서버 및 각 SMS 공급자 컴퓨터에 자동으로 만듭니다.  
-
--   각 중앙 관리 사이트 및 기본 사이트에는 SMS 공급자가 하나 이상 있어야 합니다.  필요에 따라 추가 공급자를 설치할 수 있습니다.  
+-   각 중앙 관리 사이트 및 기본 사이트에는 SMS 공급자가 하나 이상 있어야 합니다. 필요에 따라 추가 공급자를 설치할 수 있습니다.  
+-   **SMS Admins** 보안 그룹은 SMS 공급자에 대한 액세스를 제공합니다. Configuration Manager는 사이트 서버와 SMS 공급자 인스턴스를 설치하는 각 컴퓨터에 자동으로 이 그룹을 만듭니다.  
 
 -   보조 사이트에서는 SMS 공급자를 지원하지 않습니다.  
 
 
-각 Configuration Manager 콘솔, 리소스 탐색기, 도구 및 사용자 지정 스크립트에는 SMS 공급자가 사용되므로 Configuration Manager 관리자는 데이터베이스에 저장된 정보에 액세스할 수 있습니다. SMS 공급자는 Configuration Manager 클라이언트와 상호 작용하지 않습니다. Configuration Manager 콘솔에서 사이트에 연결할 때 Configuration Manager 콘솔은 사이트 서버에서 WMI를 쿼리하여 사용할 SMS 공급자의 인스턴스를 찾습니다.  
+Configuration Manager 관리자는 SMS 공급자를 사용하여 데이터베이스에 저장된 정보에 액세스합니다. 관리자는 이 작업을 위해 Configuration Manager 콘솔, 리소스 탐색기, 도구 및 사용자 지정 스크립트를 사용할 수 있습니다. SMS 공급자는 Configuration Manager 클라이언트와 상호 작용하지 않습니다. Configuration Manager 콘솔에서 사이트에 연결할 때 Configuration Manager 콘솔은 사이트 서버에서 WMI를 쿼리하여 사용할 SMS 공급자의 인스턴스를 찾습니다.  
 
  SMS 공급자는 Configuration Manager 보안을 적용하는 데 도움이 됩니다. SMS 공급자는 Configuration Manager 콘솔을 실행하는 관리자가 보기 권한이 있다는 정보만 반환합니다.  
 
@@ -47,7 +46,7 @@ System Center Configuration Manager를 관리하려면 **SMS 공급자**의 인�
 
  SMS 공급자를 관리하는 방법에 대한 자세한 내용은 [Modify your System Center Configuration Manager infrastructure](../../../core/servers/manage/modify-your-infrastructure.md)(System Center Configuration Manager 인프라 수정)의 [Manage the SMS Provider](../../../core/servers/manage/modify-your-infrastructure.md#BKMK_ManageSMSprovider)(SMS 공급자 관리)를 참조하세요.  
 
- **SMS 공급자를 설치하기 위한 필수 구성 요소:**  
+## <a name="prerequisites-to-install-the-sms-provider"></a>SMS 공급자를 설치하기 위한 필수 구성 요소  
 
  SMS 공급자를 지원하려면  
 
@@ -62,7 +61,7 @@ System Center Configuration Manager를 관리하려면 **SMS 공급자**의 인�
 -   컴퓨터에는 SMS 공급자와 함께 설치되는 Windows ADK(Windows 자동 배포 키트) 구성 요소를 지원할 수 있도록 사용 가능한 디스크 공간이 650MB 이상 있어야 합니다. Windows ADK 및 SMS 공급자에 대한 자세한 내용은 이 항목에서 [SMS 공급자에 대한 운영 체제 배포 요구 사항](#BKMK_WAIKforSMSProv) 섹션을 참조하세요.  
 
 ##  <a name="a-namebkmklocationa-sms-provider-locations"></a><a name="bkmk_location"></a> SMS 공급자 위치  
- 사이트를 설치할 경우 사이트에 대한 첫 번째 SMS 공급자가 자동으로 설치됩니다. SMS 공급자에 대해 다음과 같은 지원되는 위치를 지정할 수 있습니다.  
+ 사이트를 설치할 때, 사이트의 첫 번째 SMS 공급자를 자동으로 설치합니다. SMS 공급자에 대해 다음과 같은 지원되는 위치를 지정할 수 있습니다.  
 
 -   사이트 서버 컴퓨터  
 
@@ -71,7 +70,7 @@ System Center Configuration Manager를 관리하려면 **SMS 공급자**의 인�
 -   SMS 공급자가 없는 서버급 컴퓨터 또는 다른 사이트의 사이트 시스템 역할  
 
 
-사이트에 설치된 각 SMS 공급자의 위치를 보려면 사이트 **속성** 대화 상자의 **일반** 탭을 확인하세요.  
+사이트에 설치된 각 SMS 공급자의 위치를 보려면 사이트 **속성** 대화 상자의 **일반** 탭을 선택합니다.  
 
  각 SMS 공급자에서 여러 요청의 동시 연결을 지원합니다. 이 연결에 대한 제한 사항은 SMS 공급자 컴퓨터에서 사용할 수 있는 서버 연결 수와 SMS 공급자 컴퓨터에서 연결 요청을 처리하기 위한 가용 리소스입니다.  
 
@@ -79,8 +78,7 @@ System Center Configuration Manager를 관리하려면 **SMS 공급자**의 인�
 
  다음 내용을 참고하면 지원되는 각 위치마다 SMS 공급자를 설치하는 방식의 장점과 단점을 확인할 수 있습니다.  
 
-
-**Configuration Manager 사이트 서버**  
+ **Configuration Manager 사이트 서버**  
 
 -   **장점:**  
 
@@ -105,7 +103,7 @@ System Center Configuration Manager를 관리하려면 **SMS 공급자**의 인�
 
     -   SMS 공급자는 사이트 데이터베이스 작업에 전용으로 사용될 수 있는 시스템 및 네트워크 리소스를 사용합니다.  
 
-    -   이 위치는 사이트 데이터베이스가 SQL Server의 클러스터된 인스턴스에서 호스트되는 경우 옵션이 아닙니다.  
+    -   사이트 데이터베이스가 SQL Server의 클러스터된 인스턴스에서 호스트되는 경우에는 이 위치를 사용할 수 없습니다.  
 
 
 **사이트 서버 또는 사이트 데이터베이스 컴퓨터가 아닌 컴퓨터**  
@@ -118,7 +116,7 @@ System Center Configuration Manager를 관리하려면 **SMS 공급자**의 인�
 
 -   **단점:**  
 
-    -   SMS 공급자 성능은 사이트 서버 및 사이트 데이터베이스 컴퓨터와 조정하기 위해 필요한 추가 네트워크 트래픽으로 인해 감소할 수도 있습니다.  
+    -   SMS 공급자 성능은 사이트 서버 및 사이트 데이터베이스 컴퓨터와 조정하기 위해 필요한 추가 네트워크 활동으로 인해 감소할 수도 있습니다.  
 
     -   이 서버는 사이트 데이터베이스 컴퓨터와 Configuration Manager 콘솔이 설치된 모든 컴퓨터에서 항상 액세스할 수 있어야 합니다.  
 
@@ -127,7 +125,9 @@ System Center Configuration Manager를 관리하려면 **SMS 공급자**의 인�
 ##  <a name="a-namebkmksmsprovlanguagesa-about-sms-provider-languages"></a><a name="BKMK_SMSProvLanguages"></a> SMS 공급자 언어 정보  
  SMS 공급자는 설치된 컴퓨터의 표시 언어와 독립적으로 작동합니다.  
 
- 관리자 또는 Configuration Manager 프로세스에서 SMS 공급자를 사용하여 데이터를 요청하는 경우 SMS 공급자는 요청하는 컴퓨터의 운영 체제 언어와 일치하는 형식으로 해당 데이터의 반환을 시도합니다. SMS 공급자는 정보를 한 언어에서 다른 언어로 변역하지 않습니다. 대신 데이터가 Configuration Manager 콘솔에 표시되기 위해 반환될 때 데이터의 표시 언어는 개체 및 저장소 유형의 원본에 따라 달라집니다.  
+ 관리자 또는 Configuration Manager 프로세스에서 SMS 공급자를 사용하여 데이터를 요청하는 경우 SMS 공급자는 요청하는 컴퓨터의 운영 체제 언어와 일치하는 형식으로 해당 데이터의 반환을 시도합니다.
+
+언어를 일치시키는 방법은 다소 간접적입니다. SMS 공급자는 정보를 한 언어에서 다른 언어로 변역하지 않습니다. 대신 데이터가 Configuration Manager 콘솔에 표시되기 위해 반환될 때 데이터의 표시 언어는 개체 및 저장소 유형의 원본에 따라 달라집니다.  
 
  개체에 대한 데이터가 데이터베이스에 저장되면 사용 가능한 언어는 다음 사항에 따라 달라집니다.  
 
@@ -145,12 +145,12 @@ System Center Configuration Manager를 관리하려면 **SMS 공급자**의 인�
 -   SMS 공급자의 고가용성을 보장하려 합니다.  
 
 
-사이트에 여러 SMS 공급자가 설치되고 연결 요청이 발생할 때 사이트에서 각 새 연결 요청이 설치된 SMS 공급자를 사용하도록 임의로 할당됩니다. 특정 연결 세션과 함께 사용할 SMS 공급자 위치는 지정할 수 없습니다.  
+사이트에 여러 SMS 공급자가 설치되고 연결 요청이 발생할 때 사이트에서 각 새 연결 요청이 설치된 SMS 공급자를 사용하도록 무작위로 할당됩니다. 특정 연결 세션과 함께 사용할 SMS 공급자 위치는 지정할 수 없습니다.  
 
 > [!NOTE]  
->  각 SMS 공급자 위치의 장점 및 단점을 파악하고 각 새 연결에 사용할 SMS 공급자를 지정할 수 없다는 사실을 감안해 이러한 고려 사항을 균형 있게 검토하세요.  
+>  각 SMS 공급자 위치의 장단점을 고려하세요. SMS 공급자를 각 새 연결에 사용할 때마다 이러한 고려 사항과 제어할 수 없는 정보의 균형을 맞추세요.  
 
-예를 들어 Configuration Manager 콘솔을 사이트에 처음 연결할 때 연결 과정에서 사이트 서버의 WMI를 쿼리하여 콘솔이 사용할 SMS 공급자의 인스턴스를 임의로 확인합니다. 이러한 특정 SMS 공급자 인스턴스는 해당 Configuration Manager 콘솔 세션이 종료될 때까지 Configuration Manager 콘솔에 의해 사용 중인 상태로 유지됩니다. 네트워크에서 SMS 공급자 컴퓨터를 사용할 수 없게 되어 세션이 종료될 경우, Configuration Manager 콘솔에 다시 연결하면 사이트에서 SMS 공급자 컴퓨터를 새 연결 세션에 임의로 할당합니다. 이때, 사용할 수 없는 같은 SMS 공급자 컴퓨터가 할당될 수도 있습니다. 이 경우 사용 가능한 SMS 공급자 컴퓨터가 할당될 때까지 Configuration Manager 콘솔을 다시 연결할 수 있습니다.  
+예를 들어 Configuration Manager 콘솔을 사이트에 처음 연결할 때 연결 과정에서 사이트 서버의 WMI를 쿼리하여 콘솔이 사용할 SMS 공급자의 인스턴스를 확인합니다. 이러한 특정 SMS 공급자 인스턴스는 해당 Configuration Manager 콘솔 세션이 종료될 때까지 Configuration Manager 콘솔에 의해 사용 중인 상태로 유지됩니다. 네트워크에서 SMS 공급자 컴퓨터를 사용할 수 없게 되어 세션이 종료될 경우, Configuration Manager 콘솔을 다시 연결하면 사이트에서는 단순히 연결할 SMS 공급자 인스턴스 식별 작업을 반복합니다. 이때, 사용할 수 없는 같은 SMS 공급자 컴퓨터가 할당될 수도 있습니다. 이 경우 사용 가능한 SMS 공급자 컴퓨터가 할당될 때까지 Configuration Manager 콘솔을 다시 연결할 수 있습니다.  
 
 ##  <a name="a-namebkmkaboutsmsadminsa-about-the-sms-admins-group"></a><a name="BKMK_AboutSMSAdmins"></a> SMS Admins 그룹 정보  
  SMS Admins 그룹으로 SMS 공급자에 대한 관리자 권한을 제공할 수 있습니다. 이 그룹은 사이트가 설치될 때 사이트 서버에, 그리고 SMS 공급자를 설치하는 각 컴퓨터에 자동으로 만들어집니다. SMS Admins 그룹에 대한 추가 정보:  
@@ -178,17 +178,19 @@ SMS 공급자의 구조는 WMI 스키마에 의해 정의됩니다. 스키마 �
 |네임스페이스|설명|  
 |---------------|-----------------|  
 |Root\SMS\site_*&lt;사이트 코드\>*|Configuration Manager 콘솔, 리소스 탐색기, Configuration Manager 도구 및 스크립트에 광범위하게 사용되는 SMS 공급자입니다.|  
-|Root\SMS\SMS_ProviderLocation|사이트에 SMS 공급자 컴퓨터의 위치를 제공합니다.|  
+|Root\SMS\SMS_ProviderLocation|사이트의 SMS 공급자 컴퓨터 위치입니다.|  
 |Root\CIMv2|하드웨어 및 소프트웨어 인벤토리 도중 WMI 네임스페이스 정보가 인벤토리에 저장되는 위치입니다.|  
 |Root\CCM|Configuration Manager 클라이언트 구성 정책 및 클라이언트 데이터입니다.|  
-|root\CIMv2\SMS|인벤토리 클라이언트 에이전트에서 수집하는 인벤토리 보고 클래스의 위치입니다. 이러한 설정은 컴퓨터 정책 평가 도중 클라이언트에 의해 컴파일되며, 컴퓨터의 클라이언트 설정 구성에 기반합니다.|  
+|root\CIMv2\SMS|인벤토리 클라이언트 에이전트에서 수집하는 인벤토리 보고 클래스의 위치입니다. 이러한 설정은 컴퓨터 정책 평가 도중 클라이언트에 의해 컴파일되며, 컴퓨터의 클라이언트 설정 구성을 기반으로 합니다.|  
 
 ##  <a name="a-namebkmkwaikforsmsprova-operating-system-deployment-requirements-for-the-sms-provider"></a><a name="BKMK_WAIKforSMSProv"></a> SMS 공급자에 대한 운영 체제 배포 요구 사항  
-SMS 공급자를 사용하려면 다음 외부 종속 요소가 SMS 공급자를 실행하는 컴퓨터에 설치되어야 합니다. 그래야 다음 Configuration Manager 콘솔을 사용하여 운영 체제 배포 작업 기능을 사용할 수 있습니다.  
+SMS 공급자의 인스턴스를 설치하는 컴퓨터에는 사용할 Configuration Manager 버전에서 요구하는 Windows ADK의 필수 버전이 있어야 합니다.  
 
--   Windows 평가 및 배포 키트 8.1  
+ -   Configuration Manager 버전 1511에는 Windows ADK의 Windows 10 RTM(10.0.10240) 버전이 필요합니다.  
 
- 운영 체제 배포를 관리하는 경우 Windows ADK는 다음을 포함하여 다양한 작업을 SMS 공급자에서 완료할 수 있도록 허용합니다.  
+ -   이 요구 사항에 대한 자세한 내용은 [운영 체제 배포를 위한 인프라 요구 사항](/sccm/osd/plan-design/infrastructure-requirements-for-operating-system-deployment)을 참조하세요.  
+
+운영 체제 배포를 관리하는 경우 Windows ADK는 다음과 같은 다양한 작업을 SMS 공급자에서 완료할 수 있도록 허용합니다.  
 
 -   WIM 파일 정보 보기  
 
@@ -201,6 +203,6 @@ Windows ADK를 설치하려면 SMS 공급자를 설치하는 각 컴퓨터에 �
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

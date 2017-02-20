@@ -2,7 +2,7 @@
 title: "응용 프로그램 관리 계획 및 구성 | Microsoft 문서"
 description: "System Center Configuration Manager에서 응용 프로그램 배포에 필요한 종속성을 구현하고 구성합니다."
 ms.custom: na
-ms.date: 01/17/2017
+ms.date: 02/03/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: d2a12edcc6bc7413558e25b694b69133c2496019
-ms.openlocfilehash: 0a38ea116e589425048f6c46378df46ecc0d375b
+ms.sourcegitcommit: 50c08d63e7220a47d21dcbdcd7abafba7c7f5f75
+ms.openlocfilehash: 4eca69f54ec0bca5f1f972d3814ceb87d4a30d67
 
 
 ---
@@ -112,7 +112,7 @@ ms.openlocfilehash: 0a38ea116e589425048f6c46378df46ecc0d375b
 
 1.  Configuration Manager 콘솔에서 **관리** > **사이트 구성** > **서버 및 사이트 시스템 역할**을 선택한 다음 응용 프로그램 카탈로그에 사용할 서버를 선택합니다.  
 
-3.  **홈** 탭의 **만들기** 그룹에서 **사이트 시스템 역할 추가**를 선택합니다.  
+3.  **홈** 탭의 **서버** 그룹에서 **사이트 시스템 역할 추가**를 선택합니다.  
 
 4.  **일반** 페이지에서 사이트 시스템의 일반 설정을 지정하고 **다음**을 선택합니다.  
 
@@ -182,7 +182,7 @@ ms.openlocfilehash: 0a38ea116e589425048f6c46378df46ecc0d375b
 
 소프트웨어 센터에 대한 사용자 지정 브랜딩은 다음 규칙에 따라 적용됩니다.
 
-1. 응용 프로그램 카탈로그 웹 사이트 지점 사이트 서버 역할이 설치되지 않은 경우 소프트웨어 센터에서 **컴퓨터 에이전트** 클라이언트 설정 **소프트웨어 센터에 표시되는 조직 이름**에 지정된 조직 이름을 표시합니다. 자세한 내용은 [클라이언트 설정을 구성하는 방법](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/configure-client-settings)을 참조하세요.
+1. 응용 프로그램 카탈로그 웹 사이트 지점 사이트 서버 역할이 설치되지 않은 경우 소프트웨어 센터에서 **컴퓨터 에이전트** 클라이언트 설정의 **소프트웨어 센터에 표시되는 조직 이름**에 지정된 조직 이름을 표시합니다. 자세한 내용은 [클라이언트 설정을 구성하는 방법](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/configure-client-settings)을 참조하세요.
 2. 응용 프로그램 카탈로그 웹 사이트 지점 사이트 서버 역할이 설치되어 있는 경우 소프트웨어 센터에서 응용 프로그램 카탈로그 웹 사이트 지점 사이트 서버 역할 속성에 지정된 조직 이름 및 색을 표시합니다. 자세한 내용은 [응용 프로그램 카탈로그 웹 사이트 지점에 대한 옵션 구성](https://docs.microsoft.com/en-us/sccm/core/servers/deploy/configure/configuration-options-for-site-system-roles#BKMK_ApplicationCatalog_Website)을 참조하세요.
 3. Microsoft Intune 구독을 구성하고 Configuration Manager에 연결한 경우 소프트웨어 센터에서 Intune 구독 속성에 지정된 조직 이름, 색 및 회사 로고를 표시합니다. 자세한 내용은 [Configuring the Microsoft Intune subscription](https://docs.microsoft.com/en-us/sccm/mdm/deploy-use/setup-hybrid-mdm#step-3-configure-intune-subscription)을 참조하십시오.
 
@@ -228,6 +228,6 @@ ms.openlocfilehash: 0a38ea116e589425048f6c46378df46ecc0d375b
 
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Feb17_HO1-->
 
 

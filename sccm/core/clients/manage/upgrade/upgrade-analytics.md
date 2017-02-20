@@ -2,10 +2,10 @@
 title: Upgrade Analytics | System Center Configuration Manager
 description: "Upgrade Analytics를 Configuration Manager와 통합합니다. 관리 콘솔에서 업그레이드 호환성 데이터에 액세스합니다. 업그레이드 또는 수정 대상 장치를 지정합니다."
 keywords: 
-author: nbigman
-ms.author: nbigman
+author: brenduns
+ms.author: brenduns
 manager: angerobe
-ms.date: 11/23/2016
+ms.date: 12/3/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -13,8 +13,8 @@ ms.technology:
 - configmgr-client
 ms.assetid: 68407ab8-c205-44ed-9deb-ff5714451624
 translationtype: Human Translation
-ms.sourcegitcommit: bf28164fc2594d2557db5626a6f52c32ad99a1fe
-ms.openlocfilehash: fa90fa0da348e7cca186ff8066c7a9fa98c57cf5
+ms.sourcegitcommit: 831d8a66c827d246069c7415cdce7a7c4bb95b33
+ms.openlocfilehash: 07747b86bad0d1ce6302521093fc3c4433c59325
 
 
 ---
@@ -73,13 +73,13 @@ Upgrade Analytics 배포 스크립트는 다음을 수행합니다.
 - 상용 ID 키 + CommercialDataOptIn + RequestAllAppraiserVersions 키를 설정합니다.  
 - 사용자 컴퓨터가 데이터를 Microsoft에 보낼 수 있는지 확인합니다.  
 - 컴퓨터에 보류 중인 다시 시작이 있는지 여부를 확인합니다.   
-- 최신 버전의 KB 패키지 10.0.x가 설치되어 있는지 확인합니다(10.0.14348 또는 후속 릴리스가 필요함).  
+- 최신 버전의 KB 패키지 10.0.x가 설치되어 있는지 확인합니다(10.0.14913 또는 후속 릴리스가 필요함).  
 - 사용할 경우 문제 해결을 위해 자세한 정보 표시 모드를 설정합니다.  
 - Microsoft에서 조직의 업그레이드 준비 상태를 평가하는 데 필요한 원격 분석 데이터 수집을 시작합니다.  
 - 사용할 경우 cmd 창에 스크립트 진행률을 표시하여 문제(각 단계의 성공 또는 실패)를 확인할 수 있게 하고 로그 파일에 씁니다.  
-  
+
 ### <a name="to-run-the-upgrade-analytics-deployment-script"></a>Upgrade Analytics 배포 스크립트를 실행하려면  
-  
+
 1. [Upgrade Analytics 배포 스크립트](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409)를 다운로드하고 UpgradeAnalytics.zip의 압축을 풉니다. **Diagnostics** 폴더의 파일은 문제 해결 모드로 스크립트를 실행하려는 경우에만 필요합니다.  
 2. RunConfig.bat에서 다음 매개 변수를 편집합니다.  
 - 로그 정보에 대한 저장소 위치. 예: %SystemDrive%\UADiagnostics. 원격 파일 공유 또는 로컬 디렉터리에 로그 정보를 저장할 수 있습니다. 스크립트는 지정된 경로에 대한 로그 파일을 만들 수 없도록 차단될 경우 Windows 디렉터리가 있는 드라이브에 로그 파일을 만듭니다.  
@@ -90,12 +90,12 @@ Upgrade Analytics 배포 스크립트는 다음을 수행합니다.
     - logMode = 2 파일에만 기록  
     - 문제 해결을 위해 **isVerboseLogging**을 **$true**로 설정하여 문제 진단에 도움이 되는 로그 정보를 생성합니다. 기본적으로 **isVerboseLogging**은 **$false**로 설정됩니다. Diagnostics 폴더는 이 모드를 사용할 스크립트와 동일한 디렉터리에 설치되어야 합니다.  
     - 컴퓨터를 다시 시작해야 하는 경우 사용자에게 알립니다. 기본적으로 off로 설정됩니다.  
-  
+
 3. RunConfig.bat에서 매개 변수 편집을 마친 후 관리자 권한으로 스크립트를 실행합니다.  
-  
-  
+
+
 ## <a name="view-microsoft-upgrade-analytics-properties-in-configuration-manager"></a>Configuration Manager에서 Microsoft Upgrade Analytics 속성 보기  
-  
+
 1.  Configuration Manager 콘솔에서 **클라우드 서비스**로 이동한 다음 **OMS 커넥터**를 선택하여 **OMS 연결 속성** 페이지를 엽니다.  
 
 2.  이 페이지에는 다음 두 개의 탭이 있습니다.
@@ -113,6 +113,6 @@ Upgrade Analytics를 Configuration Manager와 통합한 후 클라이언트의 �
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

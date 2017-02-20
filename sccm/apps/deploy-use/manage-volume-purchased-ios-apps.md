@@ -2,7 +2,7 @@
 title: "대량 구매한 iOS 앱 관리 | Microsoft 문서"
 description: "iOS App Store를 통해 구입한 앱의 라이선스를 배포, 관리 및 추적합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 02/08/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 828e2ac9a3f9bcea1571d24145a1021fdf1091f3
-ms.openlocfilehash: cd9edf61d151ac8334ace0bf668fa4c919d8c75b
+ms.sourcegitcommit: 191e01f6b8a1ef2b9e193abd62d7981e6c977c1d
+ms.openlocfilehash: fb771bc94f49f25cfe01ff67c88572c8f2b18909
 
 
 ---
@@ -91,7 +91,7 @@ ms.openlocfilehash: cd9edf61d151ac8334ace0bf668fa4c919d8c75b
 1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **스토어 앱에 대한 라이선스 정보**를 선택합니다.  
 
 3.  배포하려는 앱을 선택한 후 **홈** 탭의 **만들기** 그룹에서 **응용 프로그램 만들기**를 선택합니다.
-비즈니스용 Windows 스토어 앱을 포함하여 Configuration Manager 응용 프로그램이 만들어집니다. 그런 다음 이 응용 프로그램을 원하는 Configuration Manager 응용 프로그램으로 배포 및 모니터링할 수 있습니다.
+만들어지는 Configuration Manager 응용 프로그램에는 구입한 iOS 앱이 포함되어 있습니다. 그런 다음 이 응용 프로그램을 원하는 Configuration Manager 응용 프로그램으로 배포 및 모니터링할 수 있습니다.
 
     > [!IMPORTANT]  
     > 배포 목적으로 **필수**를 선택해야 합니다. 사용 가능한 설치는 현재 지원되지 않습니다.
@@ -111,6 +111,6 @@ ms.openlocfilehash: cd9edf61d151ac8334ace0bf668fa4c919d8c75b
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

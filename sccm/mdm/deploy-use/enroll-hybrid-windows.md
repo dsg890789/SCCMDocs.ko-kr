@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager 및 Microsoft Intune에서 Windows 하이브리드 장치 관리 설정"
+title: "System Center Configuration Manager 및 Microsoft Intune에서 Windows 하이브리드 장치 관리 설정 | Microsoft 문서"
 description: "System Center Configuration Manager 및 Microsoft Intune에서 Windows 장치 관리 설정"
 ms.custom: na
 ms.date: 10/06/2016
@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: dc1f70f5-64ab-42ab-aa91-d3858803e12f
 caps.latest.revision: 9
-author: NathBarn
-ms.author: nathbarn
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 55fca210e5b3ce11e513662994105027f1a4f227
+ms.sourcegitcommit: 76cb0c41865859fd410a187435d73c6a23b0c57e
+ms.openlocfilehash: 7b53b094eeb1d59d052c63831eeab0e10edb5913
 
 
 ---
@@ -57,7 +57,7 @@ Windows 등록 옵션은 다음과 같습니다.
 
 5. Intune의 URL을 지정합니다.
 
-  - **MDM 등록 URL** – MDM 등록 URL의 경우 `https://enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc`를 사용합니다.
+  - **MDM 등록 URL** – 기본값을 사용합니다.
   - **MDM 사용 약관 URL** – 기본값을 사용합니다. 이 URL은 장치 등록 시 사용자에 대한 사용 약관을 표시합니다.
   - **MDM 준수 URL** – 기본값을 사용합니다. 장치가 준수하지 않는 것으로 확인되는 경우 **액세스 거부됨** 메시지가 이 URL과 함께 표시됩니다. 이 URL이 가리키는 페이지에서 장치가 정책을 준수하지 않는 이유와 다시 준수할 수 있는 방법을 확인할 수 있습니다.
 
@@ -74,6 +74,8 @@ Windows 등록 옵션은 다음과 같습니다.
 
 ### <a name="create-dns-alias-for-device-enrollment"></a>장치 등록에 대한 DNS 별칭 만들기  
  DNS 별칭(CNAME 레코드 종류)을 사용하면 장치를 등록하는 동안 서버 이름이 자동으로 채워지므로 사용자가 보다 쉽게 장치를 등록할 수 있습니다. DNS 별칭(CNAME 레코드 종류)을 만들려면 회사의 DNS 레코드에서, 회사의 도메인에 있는 URL로 전송된 요청을 Microsoft의 클라우드 서비스 서버로 리디렉션하는 CNAME을 구성해야 합니다.  예를 들어 회사의 도메인이 contoso.com인 경우 DNS에 EnterpriseEnrollment.contoso.com을 EnterpriseEnrollment-s.manage.microsoft.com으로 리디렉션하는 CNAME을 만들어야 합니다.  
+
+ CNAME DNS 항목을 만드는 것은 선택 사항이지만 CNAME 레코드를 사용하면 사용자가 보다 쉽게 등록할 수 있습니다. 등록 CNAME 레코드가 없으면 사용자에게 MDM 서버 이름인 enrollment.manage.microsoft.com을 수동으로 입력하라는 메시지가 표시됩니다.
 
 |유형|호스트 이름|지시 대상|  
 |----------|---------------|---------------|  
@@ -118,6 +120,6 @@ Windows 등록 옵션은 다음과 같습니다.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

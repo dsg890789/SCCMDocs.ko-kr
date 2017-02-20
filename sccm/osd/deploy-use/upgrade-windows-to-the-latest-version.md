@@ -1,8 +1,8 @@
 ---
-title: "최신 버전으로 Windows 업그레이드 | Configuration Manager"
-description: "Configuration Manager에서 독립 실행형 미디어 또는 소프트웨어 센터를 사용하여 Windows 7 이상의 운영 체제를 Windows 10으로 업그레이드하는 방법을 알아봅니다."
+title: "최신 버전으로 Windows 업그레이드 | Microsoft 문서"
+description: "Configuration Manager를 사용하여 Windows 7 이상 운영 체제를 Windows 10으로 업그레이드하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 02/06/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: b44258255345c2e5488846736ddc1df48a147616
+ms.sourcegitcommit: 288a4c649f371d9701fe7249449356aa222bf372
+ms.openlocfilehash: 35f04e237efffbdb12893f658950a99dc0b98b85
 
 
 ---
@@ -69,6 +69,9 @@ ms.openlocfilehash: b44258255345c2e5488846736ddc1df48a147616
 
      운영 체제 업그레이드를 자동화하려면 [운영 체제를 업그레이드하는 작업 순서 만들기](create-a-task-sequence-to-upgrade-an-operating-system.md)의 단계를 따르세요.  
 
+    > [중요] 독립 실행형 미디어를 사용할 경우 부팅 이미지를 작업 순서 미디어 마법사에서 사용할 수 있도록 작업 순서에 포함해야 합니다.
+
+
     > [!NOTE]  
     >  일반적으로 [운영 체제를 업그레이드하는 작업 순서 만들기](create-a-task-sequence-to-upgrade-an-operating-system.md)의 단계를 사용하여 운영 체제를 Windows 10으로 업그레이드하는 작업 순서를 만듭니다. 작업 순서에는 운영 체제 업그레이드 단계와 종단 간 업그레이드 프로세스를 처리하기 위한 추가적인 권장 단계 및 그룹이 포함됩니다. 그렇지만 사용자 지정 작업 순서를 만들고 [운영 체제 업그레이드](../understand/task-sequence-steps.md#BKMK_UpgradeOS) 작업 순서 단계를 추가하여 운영 체제를 업그레이드할 수 있습니다. 이것이 운영 체제를 Windows 10으로 업그레이드하는 데 필요한 유일한 단계입니다. 이 방법을 선택하는 경우 운영 체제 업그레이드 단계 다음에 [컴퓨터 다시 시작](../understand/task-sequence-steps.md#a-namebkmkrestartcomputera-restart-computer) 단계를 추가하여 업그레이드를 완료합니다. **현재 설치된 기본 운영 체제** 설정을 사용하여 컴퓨터를 Windows PE가 아닌 설치된 운영 체제로 다시 시작해야 합니다.  
 
@@ -88,6 +91,6 @@ ms.openlocfilehash: b44258255345c2e5488846736ddc1df48a147616
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 

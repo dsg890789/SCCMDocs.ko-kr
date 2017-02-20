@@ -2,7 +2,7 @@
 title: "Endpoint Protection | Microsoft 문서"
 description: "Configuration Manager 계층 구조에서 클라이언트 컴퓨터에 대한 맬웨어 방지 정책 및 Windows 방화벽 보안을 관리하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 01/17/2017
+ms.date: 02/6/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0fa837c68eb073d2ceaf48c938137a94141a102e
-ms.openlocfilehash: dd08e9ae6827e5f59eaf3414adbcc8667bc75140
+ms.sourcegitcommit: 4688b4b12a7afa5fcfdc0e42f984271d98f10316
+ms.openlocfilehash: 90e6d82e7fd1ff0ad4f1d616cc23201769fe26e2
 
 
 ---
@@ -38,7 +38,7 @@ System Center Configuration Manager의 Endpoint Protection을 사용하면 Confi
 
 -   메일 알림을 보내거나, 콘솔 내 모니터링을 사용하거나, 보고서를 확인하여 클라이언트 컴퓨터에서 맬웨어가 검색되면 관리자에게 알림  
 
-Windows 10 컴퓨터에서는 Endpoint Protection 관리에 대한 추가 클라이언트가 필요하지 않습니다. Windows 8.1 이하 버전의 컴퓨터에서 Endpoint Protection은 Configuration Manager 클라이언트뿐만 아니라 자체 클라이언트를 설치합니다. Endpoint Protection은 관리할 수 있습니다. Endpoint Protection 클라이언트에는 다음과 같은 기능이 있습니다.  
+Windows 10 및 Windows Server 2016부터는 컴퓨터에 끝점 보호 관리를 위한 추가 클라이언트가 필요하지 않습니다. Windows 8.1 이하 버전의 컴퓨터에서 Endpoint Protection은 Configuration Manager 클라이언트뿐만 아니라 자체 클라이언트를 설치합니다. Endpoint Protection 클라이언트에는 다음과 같은 기능이 있습니다.  
 
 -   맬웨어 및 스파이웨어 검색 및 수정  
 
@@ -123,6 +123,6 @@ Mac 컴퓨터와 Linux 서버에 대한 Endpoint Protection 클라이언트 소�
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 

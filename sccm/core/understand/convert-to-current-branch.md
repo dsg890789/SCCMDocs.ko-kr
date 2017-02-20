@@ -1,8 +1,8 @@
 ---
-title: "장기 서비스 분기를 현재 분기로 업그레이드 | System Center Configuration Manager"
+title: "장기 서비스 분기를 현재 분기로 업그레이드 | Microsoft 문서"
 description: "장기 서비스 분기 사이트를 현재 분기 사이트로 변환하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/12/2016
+ms.date: 2/8/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,15 +16,15 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 835469e78e83bb54c43e530303d27b0918c531e6
-ms.openlocfilehash: efccff6e2a0b1708d4124648da4e173d41663bd1
+ms.sourcegitcommit: 60631bc0346bd78d704e7129bb755af504c59b1b
+ms.openlocfilehash: 6e7edc85630d22c5bbba1ff66bd1199903db76db
 
 ---
 
 
 # <a name="upgrade-the-long-term-servicing-branch-to-the-current-branch"></a>장기 서비스 분기를 현재 분기로 업그레이드
 
-*적용 대상: System Center Configuration Manager(장기 서비스 분기)* 
+*적용 대상: System Center Configuration Manager(장기 서비스 분기)*
 
 이 항목에서는 Configuration Manager의 LTSB(장기 서비스 분기)를 실행하는 사이트 및 계층 구조를 현재 분기로 업그레이드(변환)하는 방법을 알아봅니다.
 
@@ -32,12 +32,12 @@ ms.openlocfilehash: efccff6e2a0b1708d4124648da4e173d41663bd1
 
 여러 사이트가 있는 경우 계층 구조의 최상위 계층 사이트만 변환하면 됩니다. 최상위 계층 사이트를 변환하면
 - 하위 기본 사이트가 자동으로 변환됩니다.
--   Configuration Manager 콘솔 내에서 보조 사이트를 수동으로 업데이트해야 합니다.
+-    Configuration Manager 콘솔 내에서 보조 사이트를 수동으로 업데이트해야 합니다.
 
-## <a name="run-setup-to-convert"></a>설치 프로그램을 실행하여 변환
+## <a name="run-setup-to-convert-the-long-term-servicing-branch"></a>설치 프로그램을 실행하여 장기 서비스 분기 변환
 계층 구조의 최상위 계층 사이트에서 정식 기준 미디어를 통해 Configuration Manager 설치 프로그램을 실행하고 **사이트 유지 관리**를 선택할 수 있습니다.  그런 다음 라이선스 페이지가 표시되면 현재 분기에 대한 옵션을 선택하고 마법사를 완료합니다.
 
-완료되면 사이트가 현재 분기로 변환되고, 이전에 사용할 수 없었던 기능과 특성을 사용할 수 있게 됩니다.
+사이트가 현재 분기로 변환되면, 이전에 사용할 수 없었던 기능과 특성을 사용할 수 있게 됩니다.
 
 > [!NOTE]  
 > 정식 기준 미디어는 LTSB 설치와 같거나 이후 버전인 미디어입니다.
@@ -46,16 +46,17 @@ ms.openlocfilehash: efccff6e2a0b1708d4124648da4e173d41663bd1
 
 기준 버전 목록을 보려면 [Configuration Manager용 업데이트](/sccm/core/servers/manage/updates)에서 **기준 및 업데이트 버전**을 참조하세요.
 
-## <a name="use-the-configuration-manager-console-to-convert"></a>Configuration Manager 콘솔을 사용하여 변환
+## <a name="use-the-configuration-manager-console-to-convert-the-long-term-servicing-branch"></a>Configuration Manager 콘솔을 사용하여 장기 서비스 분기 변환
 사이트에서 LTSB를 실행하는 경우 Configuration Manager 콘솔에서 다음 옵션을 사용하여 현재 분기로 변환할 수 있습니다.
 
- 1. 콘솔에서 **관리** > **사이트 구성** > **사이트**으로 이동한 다음 **계층 설정**을 엽니다.  
- 2. 옵션을 선택하여 현재 분기로 변환한 다음 **적용**을 클릭합니다.  
+ 1. 콘솔에서 **관리** > **사이트 구성** > **사이트**로 이동한 다음 **계층 설정**을 엽니다.  
 
-완료되면 사이트가 현재 분기로 변환되고, 이전에 사용할 수 없었던 기능과 특성을 사용할 수 있게 됩니다.
+ 2. 옵션을 선택하여 현재 분기로 변환한 다음 **적용**을 선택합니다.  
+
+사이트가 현재 분기로 변환되면, 이전에 사용할 수 없었던 기능과 특성을 사용할 수 있게 됩니다.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 
