@@ -2,7 +2,7 @@
 title: "새로운 하이브리드 MDM 기능 | Microsoft 문서"
 description: "System Center Configuration Manager 및 Intune을 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 장치 관리 기능에 대해 알아봅니다."
 ms.custom: na
-ms.date: 01/12/2017
+ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 07578e3aaa93a06a2fa90e72de2b7c71ce2a14b9
-ms.openlocfilehash: f405514402d7140e26bff6da5e8c2759a80b8a7f
+ms.sourcegitcommit: 7972aa2c39f5b86e69087b1ed5a1c3b50ba69940
+ms.openlocfilehash: f74bd019b5403f3f5702795279759270261ce4db
 
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 장치 관리의 새로운 기능
@@ -35,6 +35,20 @@ ms.openlocfilehash: f405514402d7140e26bff6da5e8c2759a80b8a7f
 |**Microsoft Intune의 새로운 기능** | 일반적으로 이 범주 아래에 나열된 모든 기능은 Intune 서비스만 필요하고 Configuration Manager의 추가 기능이 필요하지 않으므로 System Center 2012 R2 Configuration Manager 릴리스를 비롯한 모든 Configuration Manager 릴리스에서 사용할 수 있어야 합니다.|
 |**Configuration Manager Technical Preview의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 Technical Preview 릴리스에서만 사용할 수 있습니다. 이러한 기능을 시험해보려면 기능 설명에 지정된 기술 미리 보기 버전을 설치해야 합니다. 자세한 내용은 [System Center Configuration Manager Technical Preview](../../core/get-started/technical-preview.md)를 참조하세요.|
 |**Configuration Manager(현재 분기)의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 버전의 Configuration Manager(현재 분기)(예: 버전 1511 또는 1602)에서만 사용할 수 있습니다. 하이브리드 배포에 이전 버전의 Configuration Manager를 사용하는 경우 기능 설명에 지정된 Configuration Manager(현재 분기) 버전으로 업그레이드해야 합니다. 자세한 내용은 [System Center Configuration Manager 업그레이드](../../core/servers/deploy/install/upgrade-to-configuration-manager.md)를 참조하세요.|
+
+## <a name="new-hybrid-features-in-february-2017"></a>2017년 2월의 새로운 하이브리드 기능
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+2017년 2월에 도입된 다음 Intune 기능은 하이브리드 배포에서 사용할 수 있습니다.
+
+- **회사 포털 웹 사이트 현대화**
+
+  회사 포털 웹 사이트는 관리되는 장치가 없는 사용자를 대상으로 하는 앱을 지원합니다. 이 웹 사이트는 새로운 고대비 색 구성표, 동적 그림, 기술 지원팀 연락처 세부 정보 및 기존 관리되는 장치에 대한 정보를 포함하는 “햄버거 메뉴”를 사용하여 다른 Microsoft 제품 및 서비스에 맞춥니다. 방문 페이지는 추천 및 최근에 업데이트된 앱에 대한 슬라이드를 포함하여 사용자가 사용할 수 있는 앱을 강조하도록 재조정됩니다. [UI 업데이트](/intune/whats-new/whats-new-in-intune-app-ui) 페이지에서 사용 가능한 이전 및 이후 이미지를 찾을 수 있습니다.
+
+- **Windows 장치의 새 MDM 서버 주소**
+
+  Windows 및 Windows Phone 장치 등록을 위한 MDM 서버 주소가 manage.microsoft.com에서 enrollment.manage.microsoft.com으로 변경되었습니다. 사용자에게 Windows 또는 Windows Phone 장치를 등록하는 동안 MDM 서버 주소를 입력하라는 메시지가 표시되면 enrollment.manage.microsoft.com을 사용하라고 알리세요. 이 업데이트에는 또한 EnterpriseEnrollment.contoso.com을 manage.microsoft.com으로 리디렉션하는 DNS의 CNAME이 필요하며, 이 manage.microsoft.com은 EnterpriseEnrollment.contoso.com을 EnterpriseEnrollment-s.manage.microsoft.com으로 리디렉션하는 DNS의 CNAME으로 대체됩니다. 이 변경에 대한 자세한 내용은 http://aka.ms/intuneenrollsvrchange를 방문하세요. 
 
 ## <a name="new-hybrid-features-in-january-2017"></a>2017년 1월의 새로운 하이브리드 기능
 
@@ -71,20 +85,20 @@ ms.openlocfilehash: f405514402d7140e26bff6da5e8c2759a80b8a7f
 
   이제 중국에서 Android용 회사 포털 앱을 사용할 수 있습니다. 중국에는 Google Play 스토어를 사용할 수 없으므로 Android 장치 사용자는 중국 앱 마켓플레이스에서 앱을 다운로드해야 합니다. 다음 스토어에서 Android용 회사 포털 앱을 다운로드할 수 있습니다.
 
-  - [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
-  - [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
-  - [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
-  - [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
-  - [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
+  -    [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
+  -    [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
+  -    [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
+  -    [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
+  -    [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
 
   Android 용 회사 포털 앱은 Google Play 서비스를 사용하여 Microsoft Intune 서비스와 통신합니다. Google Play 서비스는 중국에서 아직 제공되지 않으므로 다음 작업을 수행하는 경우 완료하는 데 최대 8시간이 걸릴 수 있습니다.
 
   | Configuration Manager 관리 콘솔 | Android용 Intune 회사 포털 앱 | Intune 회사 포털 웹 사이트 |
-  |----|----|----|      
-  | 사용 중지/초기화(모든 데이터 제거)   | 원격 장치 제거 | 장치 제거(로컬 및 원격) |
-  | 사용 중지/초기화(회사 데이터 제거)   | 장치 재설정 | 장치 재설정|
+  |----|----|----|        
+  | 사용 중지/초기화(모든 데이터 제거)    | 원격 장치 제거 | 장치 제거(로컬 및 원격) |
+  | 사용 중지/초기화(회사 데이터 제거)    | 장치 재설정 | 장치 재설정|
   | 신규 또는 업데이트된 앱 배포 | 사용 가능한 LOB(기간 업무) 앱 설치 | 장치 암호 재설정|
-  | 원격 잠금 | | |
+  | 원격 잠금    | | |
   | 암호 재설정 | | |        
 
 
@@ -153,9 +167,9 @@ System Center 2012 Configuration Manager SP1 및 System Center 2012 R2 Configura
 Configuration Manager 2012 SP1 또는 R2 RTM과 함께 하이브리드 배포를 실행하는 경우 2017년 4월 10일 이전에 Configuration Manager(현재 분기)로 업그레이드하거나 Configuration Manager 2012의 지원되는 최신 서비스 팩(R2 SP1 또는 SP2)으로 업그레이드하여 서비스 중단을 방지하는 것이 좋습니다.
 
 추가 리소스:
--   [System Center Configuration Manager(현재 분기)로 업그레이드](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager)
--   [System Center 2012 R2 Configuration Manager SP1로의 업그레이드 계획](https://technet.microsoft.com/library/jj822981.aspx#BKMK_PlanningR2SP1Upgrade)
--   [System Center 2012 Configuration Manager SP2로의 업그레이드 계획](https://technet.microsoft.com/library/jj822981.aspx#BKMK_PlanningSP2Upgrade)
+-    [System Center Configuration Manager(현재 분기)로 업그레이드](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager)
+-    [System Center 2012 R2 Configuration Manager SP1로의 업그레이드 계획](https://technet.microsoft.com/library/jj822981.aspx#BKMK_PlanningR2SP1Upgrade)
+-    [System Center 2012 Configuration Manager SP2로의 업그레이드 계획](https://technet.microsoft.com/library/jj822981.aspx#BKMK_PlanningSP2Upgrade)
 
 ### <a name="windows-phone-8-company-portal-upload-deprecated"></a>Windows Phone 8 회사 포털 업로드가 사용되지 않음
 *2016년 10월 25일*
@@ -170,6 +184,6 @@ Windows 8, Windows Phone 8 및 Windows RT에 대한 Intune 지원이 중단되�
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

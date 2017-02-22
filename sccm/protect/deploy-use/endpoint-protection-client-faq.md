@@ -1,8 +1,8 @@
 ---
-title: "Endpoint Protection 클라이언트에 대한 질문과 대답 | System Center Configuration Manager"
+title: "Endpoint Protection 클라이언트에 대한 질문과 대답 | Microsoft 문서"
 description: "Windows Defender 및 Endpoint Protection에 대한 질문과 대답을 확인합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: d19e3bd20645bbde6f6f10b86b517a159cedc99c
+ms.sourcegitcommit: 017bd5b899b364fc832c721d63cc7dbad0a11671
+ms.openlocfilehash: b88bc5f734b85527b81e5848deb0617db4c8dfbc
 
 
 ---
@@ -29,39 +29,23 @@ ms.openlocfilehash: d19e3bd20645bbde6f6f10b86b517a159cedc99c
 이 FAQ는 해당 IT 관리자가 관리되는 컴퓨터에 Windows Defender 또는 Endpoint Protection을 배포한 컴퓨터 사용자를 위한 것입니다. 여기 내용은 다른 맬웨어 방지 프로그램에 적용되지 않을 수 있습니다. Microsoft System Center Endpoint Protection은 Windows 10에서 Windows Defender를 관리합니다. 또한 Windows 10 이전의 컴퓨터에 Endpoint Protection 클라이언트를 배포하고 관리할 수 있습니다. 이 문서에서 Windows Defender가 설명되고 있지만 해당 정보가 Endpoint Protection에도 적용됩니다.  
 
 -   [바이러스 백신 및 스파이웨어 방지 소프트웨어가 필요한 이유는 무엇인가요?](#why-do-i-need-antivirus-and-antispyware-software)  
-
--   [컴퓨터가 악성 소프트웨어에 감염되었는지 어떻게 알 수 있나요?](#how-can-i-tell-if-my-computer-is-infected-with-malicious-software)  
-
+-   [컴퓨터가 악성 소프트웨어에 감염되었는지 어떻게 알 수 있나요?](#how-can-i-tell-if-my-computer-is-infected-with-malicious-software)
+-   [Windows Defender의 버전을 어떻게 확인할 수 있나요?](#how-can-i-find-the-version-of-windows-defender)
 -   [Windows Defender 또는 Endpoint Protection이 컴퓨터에서 악성 소프트웨어를 발견할 경우 어떻게 해야 하나요?](#what-should-i-do-if-windows-defender-or-endpoint-protection-detects-software-on-my-computer)  
-
 -   [바이러스란 무엇인가요?](#what-is-a-virus)  
-
 -   [스파이웨어란 무엇인가요?](#what-is-spyware)  
-
 -   [바이러스, 스파이웨어 및 기타 잠재적으로 위험한 소프트웨어 간의 차이는 무엇인가요?](#hat-s-the-difference-between-viruses-spyware-and-other-potentially-harmful-software)  
-
 -   [바이러스, 스파이웨어 및 기타 사용자 동의 없이 설치된 소프트웨어의 출처는 무엇인가요?](#where-do-viruses-spyware-and-other-potentially-unwanted-software-come-from)  
-
 -   [자기도 모르는 사이에 악성 소프트웨어를 받을 수 있나요?](#can-i-get-malicious-software-without-knowing-it)  
-
 -   [소프트웨어를 설치하기 전에 사용권 계약을 검토하는 것이 중요한 이유는 무엇인가요?](#why-is-it-important-to-review-license-agreements-before-installing-software)  
-
 -   [Endpoint Protection 및 Windows Defender의 차이는 무엇인가요?](#what-s-the-difference-between-endpoint-protection-and-windows-defender)  
-
 -   [Windows Defender가 쿠키를 검색하지 않는 이유는 무엇인가요?](#why-doesn-t-windows-defender-detect-cookies)  
-
 -   [맬웨어를 방지하려면 어떻게 해야 하나요?](#how-can-i-prevent-malware)  
-
 -   [바이러스 및 스파이웨어 정의란?](#what-are-virus-and-spyware-definitions)  
-
 -   [바이러스 및 스파이웨어 정의를 최신 상태로 유지하려면 어떻게 해야 하나요?](#how-do-i-keep-virus-and-spyware-definitions-up-to-date)  
-
 -   [Windows Defender 또는 Endpoint Protection에 의해 격리된 항목을 제거 또는 복원하려면 어떻게 하나요?](#how-do-i-remove-or-restore-items-quarantined-by-windows-defender-or-endpoint-protection)  
-
 -   [실시간 보호란?](#what-is-real-time-protection)  
-
 -   [컴퓨터에서 Windows Defender 또는 Endpoint Protection이 실행되고 있는지 확인하려면 어떻게 하나요?](#how-do-i-know-that-windows-defender-or-endpoint-protection-is-running-on-my-computer)
-
 -   [Windows Defender 또는 Endpoint Protection 경고를 설정하는 방법](#how-to-set-up-windows-defender-or-endpoint-protection-alerts)  
 
 ##  <a name="why-do-i-need-antivirus-and-antispyware-software"></a>바이러스 백신 및 스파이웨어 방지 소프트웨어가 필요한 이유는 무엇입니까?  
@@ -104,6 +88,9 @@ ms.openlocfilehash: d19e3bd20645bbde6f6f10b86b517a159cedc99c
 -   컴퓨터가 갑자기 보통 때보다 더 느리게 실행되기 시작합니다. 모든 컴퓨터 성능 문제가 악성 소프트웨어로 인해 발생하는 것은 아니지만 악성 소프트웨어(특히 스파이웨어)로 인해 눈에 띄는 변화가 발생할 수 있습니다.  
 
 증상이 보이지 않아도 컴퓨터에 악성 소프트웨어가 있을 수 있습니다. 이러한 종류의 소프트웨어는 사용자 모르게 동의 없이 사용자 및 컴퓨터에 대한 정보를 수집할 수 있습니다. 사용자의 개인 정보 및 컴퓨터를 보호하려면 Windows Defender 또는 Endpoint Protection을 실행해야 합니다.  
+
+## <a name="how-can-i-find-the-version-of-windows-defender"></a>Windows Defender의 버전을 어떻게 확인할 수 있나요?
+ 컴퓨터에서 실행 중인 Windows Defender의 버전을 보려면 Windows Defender를 열고(**시작**을 클릭한 후 **Windows Defender** 검색) **설정**을 클릭한 다음 Windows Defender 설정 아래쪽으로 스크롤하여 **버전 정보**를 확인합니다.
 
 ##  <a name="what-should-i-do-if-windows-defender-or-endpoint-protection-detects-malicious-software-on-my-computer"></a>Windows Defender 또는 Endpoint Protection이 컴퓨터에서 악성 소프트웨어를 발견할 경우 어떻게 해야 하나요?  
 
@@ -193,7 +180,7 @@ Windows Defender에서 검색된 사용자 동의 없이 설치되거나 컴퓨�
 
 ### <a name="to-check-for-new-definitions-manually"></a>새 정의를 수동으로 확인하려면
 
- Windows Defender 또는 Endpoint Protection은 컴퓨터의 바이러스 및 스파이웨어 정의를 자동으로 업데이트합니다. 정의가 7일 넘게 업데이트되지 않은 경우(예: 1주일 동안 컴퓨터를 켜지 않음) Windows Defender 또는 Endpoint Protection은 정의가 이전 버전임을 알립니다.  
+ Windows Defender 또는 Endpoint Protection은 컴퓨터의 바이러스 및 스파이웨어 정의를 자동으로 업데이트합니다. 정의가&7;일 넘게 업데이트되지 않은 경우(예:&1;주일 동안 컴퓨터를 켜지 않음) Windows Defender 또는 Endpoint Protection은 정의가 이전 버전임을 알립니다.  
 
 1.  알림 영역에서 아이콘을 클릭하거나 **시작** 메뉴에서 실행하여 Windows Defender 또는 Endpoint Protection 클라이언트를 엽니다.  
 
@@ -236,7 +223,7 @@ Windows Defender에서 검색된 사용자 동의 없이 설치되거나 컴퓨�
 
 ### <a name="to-turn-off-real-time-protection"></a>실시간 보호를 해제하려면  
 
-1.   **설정**을 클릭하고 **실시간 보호**를 클릭합니다.  
+1.  **설정**을 클릭하고 **실시간 보호**를 클릭합니다.  
 
 2.  해제하려는 실시간 보호 옵션을 선택 취소하고 **변경 내용 저장**을 클릭합니다. 관리자 암호 또는 확인을 요청하는 메시지가 표시되면 암호를 입력하거나 해당 작업을 확인합니다.  
 
@@ -266,7 +253,7 @@ Windows Defender에서 검색된 사용자 동의 없이 설치되거나 컴퓨�
 
 ### <a name="to-set-up-alerts"></a>경고를 설정하려면  
 
-1.   **설정**을 클릭하고 **실시간 보호**를 클릭합니다.  
+1.  **설정**을 클릭하고 **실시간 보호**를 클릭합니다.  
 
 2.  **실시간 보호 설정(권장)** 확인란이 선택되어 있는지 확인합니다.  
 
@@ -279,6 +266,6 @@ Windows Defender에서 검색된 사용자 동의 없이 설치되거나 컴퓨�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -16,48 +16,50 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: d68a6d6799bc898308f20a1f2af27b938a60dca2
-ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
-
+ms.sourcegitcommit: 3aa9f2e4d3f7210981b5b84942485de11fe15cb2
+ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 
 ---
-# <a name="backup-and-recovery-for-system-center-configuration-manager"></a>System Center Configuration Manager 백업 및 복구
+
+# <a name="backup-and-recovery"></a>백업 및 복구
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 데이터 손실을 방지하려면 백업 및 복구 방법을 준비합니다. Configuration Manager 사이트의 백업 및 복구 방법을 사용하면 데이터 손실을 최소화하면서 사이트 및 계층 구조를 더 신속하게 복구할 수 있습니다. 이 항목의 섹션에서는 사이트를 백업하고 장애 또는 데이터 손실이 발생할 경우 사이트를 복구하는 방법을 설명합니다.  
 
--   [Configuration Manager 사이트 백업](#BKMK_SiteBackup)  
 
-    -   [백업 유지 관리 작업](#BKMK_BackupMaintenanceTask)  
 
-    -   [Data Protection Manager를 사용하여 사이트 데이터베이스 백업](#BKMK_DPMBackup)  
+- [Configuration Manager 사이트 백업](#BKMK_SiteBackup)   
 
-    -   [백업 스냅숏 보관](#BKMK_ArchivingBackupSnapshot)  
+  - [백업 유지 관리 작업](#BKMK_BackupMaintenanceTask)   
 
-    -   [AfterBackup.bat 파일 사용](#BKMK_UsingAfterBackup)  
+  - [Data Protection Manager를 사용하여 사이트 데이터베이스 백업](#BKMK_DPMBackup)   
 
-    -   [추가 백업 작업](#BKMK_SupplementalBackup)  
+  -  [백업 스냅숏 보관](#BKMK_ArchivingBackupSnapshot)   
 
--   [Configuration Manager 사이트 복구](#BKMK_RecoverSite)  
+  -  [AfterBackup.bat 파일 사용](#BKMK_UsingAfterBackup)   
 
-    -   [복구 옵션 결정](#BKMK_DetermineRecoveryOptions)  
+  -  [추가 백업 작업](#BKMK_SupplementalBackup)   
 
-        -   [사이트 서버 복구 옵션](#BKMK_SiteServerRecoveryOptions)  
+-  [Configuration Manager 사이트 복구](#BKMK_RecoverSite)   
 
-        -   [사이트 데이터베이스 복구 옵션](#BKMK_SiteDatabaseRecoveryOption)  
+  -   [복구 옵션 결정](#BKMK_DetermineRecoveryOptions)   
 
-        -   [SQL Server 변경 내용 추적 보존 기간](#bkmk_SQLretention)  
+         -   [사이트 서버 복구 옵션](#BKMK_SiteServerRecoveryOptions)   
 
-        -   [사이트 또는 글로벌 데이터를 다시 초기화하는 프로세스](#bkmk_reinit)  
+         -   [사이트 데이터베이스 복구 옵션](#BKMK_SiteDatabaseRecoveryOption)   
 
-        -   [사이트 데이터베이스 복구 시나리오](#BKMK_SiteDBRecoveryScenarios)  
+         -   [SQL Server 변경 내용 추적 보존 기간](#bkmk_SQLretention)   
 
-    -   [무인 사이트 복구 스크립트 파일 키](#BKMK_UnattendedSiteRecoveryKeys)  
+         -   [사이트 또는 글로벌 데이터를 다시 초기화하는 프로세스](#bkmk_reinit)   
 
-    -   [복구 후 작업](#BKMK_PostRecovery)  
+         -   [사이트 데이터베이스 복구 시나리오](#BKMK_SiteDBRecoveryScenarios)  
 
-    -   [보조 사이트 복구](#BKMK_RecoverSecondarySite)  
+  -   [무인 사이트 복구 스크립트 파일 키](#BKMK_UnattendedSiteRecoveryKeys)  
+
+  -   [복구 후 작업](#BKMK_PostRecovery)  
+
+  -   [보조 사이트 복구](#BKMK_RecoverSecondarySite)  
 
 -   [SMS 작성기 서비스](#BKMK_SMSWriterService)  
 
@@ -87,7 +89,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 >  Configuration Manager는 Configuration Manager 백업 유지 관리 작업 또는 다른 프로세스를 사용하여 만든 사이트 데이터베이스 백업에서 사이트 데이터베이스를 복구할 수 있습니다. 예를 들어 Microsoft SQL Server 유지 관리 계획의 일환으로 만든 백업에서 사이트 데이터베이스를 복원할 수 있습니다. System Center 2012 DPM(Data Protection Manager)을 사용하여 만든 백업에서 사이트 데이터베이스를 복원할 수 있습니다. 자세한 내용은 [Data Protection Manager를 사용하여 사이트 데이터베이스 백업](#BKMK_DPMBackup)을 참조하세요.  
 
 ###  <a name="a-namebkmkbackupmaintenancetaska-backup-maintenance-task"></a><a name="BKMK_BackupMaintenanceTask"></a> 백업 유지 관리 작업  
- 미리 정의된 백업 사이트 서버 유지 관리 작업을 예약하여 Configuration Manager 사이트에 대한 백업을 자동화할 수 있습니다. 중앙 관리 사이트와 기본 사이트를 백업할 수 있지만 보조 사이트 또는 사이트 시스템 서버에 대한 백업은 지원되지 않습니다. Configuration Manager 백업 서비스가 실행될 때 이 서비스는 백업 제어 파일(**<ConfigMgrInstallationFolder\>\Inboxes\Smsbkup.box\Smsbkup.ctl**)에 정의된 지침을 따릅니다. 백업 제어 파일을 수정하여 백업 서비스의 동작을 변경할 수 있습니다. 사이트 백업 상태 정보는 **Smsbkup.log** 파일에 기록됩니다. 이 파일은 백업 사이트 서버 유지 관리 작업 속성에서 지정한 대상 폴더에 만들어집니다.  
+ 미리 정의된 백업 사이트 서버 유지 관리 작업을 예약하여 Configuration Manager 사이트에 대한 백업을 자동화할 수 있습니다. 중앙 관리 사이트와 기본 사이트를 백업할 수 있지만 보조 사이트 또는 사이트 시스템 서버에 대한 백업은 지원되지 않습니다. Configuration Manager 백업 서비스가 실행될 때 이 서비스는 백업 제어 파일(**&lt;Configuration Manager 설치 폴더\>\Inboxes\Smsbkup.box\Smsbkup.ctl**)에 정의된 지침을 따릅니다. 백업 제어 파일을 수정하여 백업 서비스의 동작을 변경할 수 있습니다. 사이트 백업 상태 정보는 **Smsbkup.log** 파일에 기록됩니다. 이 파일은 백업 사이트 서버 유지 관리 작업 속성에서 지정한 대상 폴더에 만들어집니다.  
 
 
 ##### <a name="to-enable-the-site-backup-maintenance-task"></a>사이트 백업 유지 관리 작업을 사용하도록 설정하려면  
@@ -114,7 +116,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
     -   **사이트 서버 및 SQL Server의 로컬 드라이브**: 사이트의 백업 파일이 사이트 서버의 로컬 드라이브의 지정된 경로에 저장되고 사이트 데이터베이스의 백업 파일이 사이트 데이터베이스 서버의 로컬 드라이브의 지정된 경로에 저장되도록 지정합니다. 백업 작업이 실행되기 전에 로컬 폴더를 만들어야 합니다. 사이트 서버의 컴퓨터 계정에 사이트 서버에서 만든 폴더에 대한 **쓰기** NTFS 권한이 있어야 합니다. SQL Server의 컴퓨터 계정에 사이트 데이터베이스 서버에서 만든 폴더에 대한 **쓰기** NTFS 권한이 있어야 합니다. 이 옵션은 사이트 데이터베이스가 사이트 서버에 설치되지 않은 경우에만 사용할 수 있습니다.  
 
     > [!NOTE]  
-    >   - 백업 대상을 찾는 옵션은 백업 대상의 UNC 경로를 지정하는 경우에만 사용할 수 있습니다.
+    >    - 백업 대상을 찾는 옵션은 백업 대상의 UNC 경로를 지정하는 경우에만 사용할 수 있습니다.
 
     > - 백업 대상으로 사용되는 폴더 이름 또는 공유 이름은 유니코드 문자 사용을 지원하지 않습니다.  
 
@@ -137,7 +139,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
     -   백업이 실패할 경우 경고를 생성하도록 백업 사이트 서버 유지 관리 작업이 구성된 경우 **모니터링** 작업 영역의 **경고** 노드에서 백업 실패 여부를 확인합니다.  
 
-    -   <*Configuration Manager 설치 폴더*>\Logs에서 Smsbkup.log를 검토하여 경고와 오류를 확인합니다. 사이트 백업이 성공적으로 완료되면 타임스탬프 및 메시지 ID `Backup completed` 와 함께 `STATMSG: ID=5035`가 표시됩니다.  
+    -   &lt;Configuration Manager 설치 폴더>\Logs에서 Smsbkup.log를 검토하여 경고와 오류를 확인합니다. 사이트 백업이 성공적으로 완료되면 타임스탬프 및 메시지 ID `Backup completed` 와 함께 `STATMSG: ID=5035`가 표시됩니다.  
 
     > [!TIP]  
     >  백업 유지 관리 작업이 실패할 경우 SMS_SITE_BACKUP 서비스를 중지하고 다시 시작하여 백업 작업을 다시 시작할 수 있습니다.  
@@ -162,7 +164,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 -   백업 사이트 서버 유지 관리 작업이 실패할 경우와 같이 사이트에 백업 스냅숏이 전혀 없을 수도 있습니다. 백업 작업은 현재 데이터의 백업을 시작하기 전에 이전의 백업 스냅숏을 제거하므로, 그와 같은 경우에는 유효한 백업 스냅숏이 존재하지 않을 것입니다.  
 
 ###  <a name="a-namebkmkusingafterbackupa-using-the-afterbackupbat-file"></a><a name="BKMK_UsingAfterBackup"></a> AfterBackup.bat 파일 사용  
- 사이트를 백업한 후 백업 사이트 서버 작업에서는 AfterBackup.bat라는 파일을 자동으로 실행합니다. AfterBackup.bat 파일은 <*Configuration Manager 설치 폴더*>\Inboxes\Smsbkup에서 수동으로 만들어야 합니다. AfterBackup.bat 파일이 이미 올바른 폴더 안에 저장되어 있는 경우 백업 작업이 완료된 후 자동으로 실행됩니다. AfterBackup.bat 파일을 활용하면 백업 작업이 끝날 때마다 백업 스냅숏을 보관할 수 있고 백업 사이트 서버 유지 관리 작업에 속하지 않는 기타 백업 후 작업을 자동으로 수행할 수 있습니다. AfterBackup.bat 파일에 의해 보관 및 백업 작업이 통합되므로 새로운 백업 스냅숏은 모두 보관됩니다. AfterBackup.bat 파일이 없으면 백업 작업은 이 파일을 건너뛰며 백업 과정은 아무런 영향도 받지 않습니다. 사이트 백업 작업에서 AfterBackup.bat 파일을 성공적으로 실행했는지 확인하려면 **모니터링** 작업 영역에서 **구성 요소 상태** 노드를 확인하여 SMS_SITE_BACKUP에 대한 상태 메시지를 검토하세요. AfterBackup.bat 명령 파일이 성공적으로 시작된 경우 메시지 ID 5040이 표시됩니다.  
+ 사이트를 백업한 후 백업 사이트 서버 작업에서는 AfterBackup.bat라는 파일을 자동으로 실행합니다. AfterBackup.bat 파일은 &lt;Configuration Manager 설치 폴더>\Inboxes\Smsbkup에서 수동으로 만들어야 합니다. AfterBackup.bat 파일이 이미 올바른 폴더 안에 저장되어 있는 경우 백업 작업이 완료된 후 자동으로 실행됩니다. AfterBackup.bat 파일을 활용하면 백업 작업이 끝날 때마다 백업 스냅숏을 보관할 수 있고 백업 사이트 서버 유지 관리 작업에 속하지 않는 기타 백업 후 작업을 자동으로 수행할 수 있습니다. AfterBackup.bat 파일에 의해 보관 및 백업 작업이 통합되므로 새로운 백업 스냅숏은 모두 보관됩니다. AfterBackup.bat 파일이 없으면 백업 작업은 이 파일을 건너뛰며 백업 과정은 아무런 영향도 받지 않습니다. 사이트 백업 작업에서 AfterBackup.bat 파일을 성공적으로 실행했는지 확인하려면 **모니터링** 작업 영역에서 **구성 요소 상태** 노드를 확인하여 SMS_SITE_BACKUP에 대한 상태 메시지를 검토하세요. AfterBackup.bat 명령 파일이 성공적으로 시작된 경우 메시지 ID 5040이 표시됩니다.  
 
 > [!TIP]  
 >  사이트 서버 백업 파일을 보관할 AfterBackup.bat 파일을 만들려면 해당 배치 파일에서 Robocopy와 같은 복사 명령 도구를 사용해야 합니다. 예를 들어 AfterBackup.bat 파일을 만든 후 첫 번째 줄에 다음과 같은 내용을 추가하면 됩니다. `Robocopy E:\ConfigMgr_Backup \\ServerName\ShareName\ConfigMgr_Backup /MIR` Robocopy에 대한 자세한 내용은 [Robocopy](http://go.microsoft.com/fwlink/p/?LinkId=228408) 명령줄 참조 웹 페이지를 참조하세요.  
@@ -214,16 +216,16 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
 3.  상태 마이그레이션 역할을 호스트하는 사이트 시스템을 선택한 다음 **사이트 시스템 역할**에서 **상태 마이그레이션 지점**을 선택합니다.  
 
-4.  **사이트 역할** 탭의 **속성** 그룹에서 **속성**을 클릭합니다.  
 
+4.  **사이트 역할** 탭의 **속성** 그룹에서 **속성**을 클릭합니다.  
 5.  사용자 환경 마이그레이션 데이터를 저장하는 폴더는 **일반** 탭의 **폴더 세부 정보** 섹션에 나열됩니다.  
 
-##  <a name="a-namebkmkrecoversitea-recover-a-configuration-manager-site"></a><a name="BKMK_RecoverSite"></a> Configuration Manager 사이트 복구  
+## <a name="recover-a-configuration-manager-site"></a>Configuration Manager 사이트 복구
  Configuration Manager 사이트 복구는 Configuration Manager 사이트가 실패하거나 데이터 손실이 사이트 데이터베이스에서 발생할 때마다 수행해야 합니다. 데이터 복구 및 재동기화는 사이트 복구의 핵심 작업으로서 작업 중단을 방지하기 위해 필요합니다.  
 
 > [!IMPORTANT]  
 >  사이트의 데이터베이스를 복구하는 경우:  
->   
+
 >  -   동일한 SQL Server 버전을 사용해야 합니다. 예를 들어 SQL Server 2012에서 실행했던 데이터베이스를 SQL Server 2014로 복원할 수 없습니다. 마찬가지로 SQL Server 2014 Standard Edition에서 실행했던 사이트 데이터베이스를 SQL Server 2014 Enterprise Edition으로 복원할 수는 없습니다.  
 > -   SQL Server를 **단일 사용자 모드**로 설정하면 안 됩니다.  
 > -   . MDF 및 .LDF 파일이 올바른지 확인합니다. 사이트를 복구할 때 복원하려는 파일의 상태는 확인되지 않습니다.  
@@ -233,7 +235,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
 > [!IMPORTANT]  
 >  사이트 서버의 **시작** 메뉴에서 Configuration Manager 설치 프로그램을 실행하는 경우 **사이트 복구** 옵션을 사용할 수 없습니다.  
->   
+
 >  백업을 수행하기 전에 Configuration Manager 콘솔 내에서 업데이트를 설치한 경우 설치 미디어나 Configuration Manager 설치 경로의 설치 프로그램을 사용하여 사이트를 다시 설치할 수 없습니다.  
 
 > [!NOTE]  
@@ -243,7 +245,6 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
  Configuration Manager 기본 사이트 서버 및 중앙 관리 사이트 복구를 수행하려면 사이트 서버 및 사이트 데이터베이스라는 두 가지 영역을 가장 기본적으로 고려해야 합니다. 다음 섹션에서는 복구 시나리오에서 선택해야 할 옵션을 결정하는 방법에 대해 설명합니다.  
 
 > [!NOTE]  
->  이전 사이트 복구가 실패했거나 완전히 제거되지 않은 사이트의 복구를 시도할 경우, 먼저 설치 프로그램에서 **Configuration Manager 사이트 제거** 를 선택해야 사이트 복구를 선택할 수 있습니다. 자식 사이트가 포함된 실패한 사이트를 제거해야 할 경우, **Configuration Manager 사이트 제거** 옵션을 선택하기 전에 먼저 실패한 사이트에서 사이트 데이터베이스를 수동으로 삭제해야 하며 그렇지 않으면 제거 프로세스는 실패합니다.  
 
 ####  <a name="a-namebkmksiteserverrecoveryoptionsa-site-server-recovery-options"></a><a name="BKMK_SiteServerRecoveryOptions"></a> 사이트 서버 복구 옵션  
  Configuration Manager 설치 폴더 외부에 만든 CD.Latest 폴더의 복사본에서 설치 프로그램을 시작해야 합니다. 그런 다음 **사이트 복구** 옵션을 선택합니다. 설치 프로그램을 실행할 때 실패한 사이트 서버에 대해 다음과 같은 복구 옵션을 사용할 수 있습니다.  
@@ -275,7 +276,11 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 -   **데이터베이스 복구 건너뛰기**: 이 옵션은 Configuration Manager 사이트 데이터베이스 서버에서 데이터 손실이 발생하지 않았을 때 사용합니다. 이 옵션은 사이트 데이터베이스가 현재 복구 중인 사이트 서버가 아닌 다른 컴퓨터에 있는 경우에만 유효합니다.  
 
 ####  <a name="a-namebkmksqlretentiona-sql-server-change-tracking-retention-period"></a><a name="bkmk_SQLretention"></a> SQL Server 변경 내용 추적 보존 기간  
- 변경 내용 추적은 SQL Server에서 사이트 데이터베이스에 대해 사용하도록 설정됩니다. Configuration Manager는 변경 내용 추적을 통해 이전 시점 이후에 데이터베이스 테이블에서 변경된 내용에 관한 정보를 쿼리할 수 있습니다. 보존 기간은 변경 내용 추적 정보가 보존되는 기간을 지정합니다. 기본적으로 사이트 데이터베이스는 5일간의 보존 기간을 갖도록 구성됩니다. 사이트 데이터베이스를 복구할 때 백업이 보존 기간 내에 있느냐 없느냐에 따라 복구 프로세스는 다르게 진행됩니다. 예를 들어, 사이트 데이터베이스 서버가 실패하고 마지막 백업이 7일 경과한 경우 이 백업은 보존 기간을 벗어납니다.  
+ 변경 내용 추적은 SQL Server에서 사이트 데이터베이스에 대해 사용하도록 설정됩니다. Configuration Manager는 변경 내용 추적을 통해 이전 시점 이후에 데이터베이스 테이블에서 변경된 내용에 관한 정보를 쿼리할 수 있습니다. 보존 기간은 변경 내용 추적 정보가 보존되는 기간을 지정합니다. 기본적으로 사이트 데이터베이스는 5일간의 보존 기간을 갖도록 구성됩니다. 사이트 데이터베이스를 복구할 때 백업이 보존 기간 내에 있느냐 없느냐에 따라 복구 프로세스는 다르게 진행됩니다. 예를 들어, 사이트 데이터베이스 서버가 실패하고 마지막 백업이 7일 경과한 경우 이 백업은 보존 기간을 벗어납니다.
+
+ SQL Server 변경 내용 추적 내부에 대한 자세한 내용은 SQL Server 팀의 [변경 내용 추적 정리-1부](https://blogs.msdn.microsoft.com/sql_server_team/change-tracking-cleanup-part-1) 및 [변경 내용 추적 정리-2부](https://blogs.msdn.microsoft.com/sql_server_team/change-tracking-cleanup-part-2) 블로그를 참조하세요.
+
+
 
 ####  <a name="a-namebkmkreinita-process-to-reinitialize-site-or-global-data"></a><a name="bkmk_reinit"></a> 사이트 또는 글로벌 데이터를 다시 초기화하는 프로세스  
  사이트 또는 글로벌 데이터를 다시 초기화하는 프로세스는 사이트 데이터베이스 내 기존 데이터를 다른 사이트 데이터베이스의 데이터로 교체합니다. 예를 들어 사이트 ABC에서 사이트 XYZ의 데이터를 다시 초기화하면 다음 단계가 진행됩니다.  
@@ -428,7 +433,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
     -   **필수:** 미정  
 
-    -   **값:** <ReferenceSiteFQDN\>  
+    -   **값:** &lt;ReferenceSiteFQDN\>  
 
     -   **세부 정보:** 데이터베이스 백업이 변경 내용 추적 보존 기간보다 오래 되었거나 백업 없이 사이트를 복구할 경우 중앙 관리 사이트에서 글로벌 데이터를 복구하는 데 사용하는 참조 기본 사이트를 지정합니다.  
 
@@ -442,7 +447,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
     -   **필수:** 아니요  
 
-    -   **값:** <PathToSiteServerBackupSet\>  
+    -   **값:** &lt;PathToSiteServerBackupSet\>  
 
     -   **세부 정보:** 사이트 서버 백업 집합의 경로를 지정합니다. **ServerRecoveryOptions** 설정 값이 **1** 또는 **2**인 경우 이 키는 옵션입니다. 사이트 백업을 사용하여 사이트를 복구할 수 있도록 **SiteServerBackupLocation** 키의 값을 지정합니다. 값을 지정하지 않으면 사이트는 백업 집합으로부터 복원되지 않고 다시 설치됩니다.  
 
@@ -450,7 +455,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
     -   **필수:** 미정  
 
-    -   **값:** <PathToSiteDatabaseBackupSet\>  
+    -   **값:** &lt;PathToSiteDatabaseBackupSet\>  
 
     -   **세부 정보:** 사이트 데이터베이스 백업 집합의 경로를 지정합니다. **ServerRecoveryOptions** 키 값을 **1** 또는 **4** 로 구성하고 **DatabaseRecoveryOptions** 키 값을 **10** 으로 구성하는 경우 **BackupLocation** 키는 필수입니다.  
 
@@ -472,7 +477,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
     -   **필수:** 예  
 
-    -   **값:** <사이트 코드\>  
+    -   **값:** &lt;Site code\>  
 
     -   **세부 정보:** 계층에서 사이트를 고유하게 식별하는 세 자리 영숫자입니다. 실패하기 전에 사이트에서 사용했던 사이트 코드를 지정해야 합니다.  
 
@@ -488,7 +493,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
     -   **필수:** 예  
 
-    -   **값:** <*Configuration Manager 설치 경로*>  
+    -   **값:** &lt;*ConfigMgrInstallationPath*>  
 
     -   **세부 정보:** Configuration Manager 프로그램 파일의 설치 폴더를 지정합니다.  
 
@@ -499,7 +504,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
     -   **필수:** 예  
 
-    -   **값:** <*SMS 공급자의 FQDNr*>  
+    -   **값:**&lt;*SMS 공급자의 FQDN*>  
 
     -   **세부 정보:** SMS 공급자를 호스트할 서버의 FQDN을 지정합니다. 장애가 발생하기 전에 SMS 공급자를 호스트하던 서버를 지정해야 합니다.  
 
@@ -521,7 +526,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
     -   **필수:** 예  
 
-    -   **값:** <*설치를 위한 필수 파일의 경로*>  
+    -   **값:** &lt;*PathToSetupPrerequisiteFiles*>  
 
     -   **세부 정보:** 설치를 위한 필수 파일의 경로를 지정합니다. **PrerequisiteComp** 값에 따라 이 경로는 다운로드한 파일을 저장하는 데 사용되거나 이전에 다운로드한 파일을 찾는 데 사용됩니다.  
 
@@ -555,7 +560,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
     -   **필수:** 예  
 
-    -   **값:** *<SQL Server 이름\>*  
+    -   **값:** *&lt;SQLServerName\>*  
 
     -   **세부 정보:** 사이트 데이터베이스를 호스트할 SQL Server를 실행하는 서버 이름 또는 클러스터형 인스턴스 이름입니다. 실패하기 전에 사이트 데이터베이스를 호스팅했던 서버를 지정해야 합니다.  
 
@@ -565,11 +570,11 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
     -   **값:**  
 
-         *&lt;사이트 데이터베이스 이름&gt;\>*  
+         *&lt;SiteDatabaseName\>*  
 
          대화 상자에 있는  
 
-         *<인스턴스 이름\>*\\*<사이트 데이터베이스 이름\>*  
+         *&lt;InstanceName\>*\\*&lt;SiteDatabaseName\>*  
 
     -   **세부 정보:** 중앙 관리 사이트 데이터베이스를 설치하기 위해 사용하거나 만들 SQL Server 데이터베이스의 이름입니다. 실패하기 전에 사용되던 동일한 데이터베이스 이름을 지정해야 합니다.  
 
@@ -580,7 +585,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
     -   **필수:** 아니요  
 
-    -   **값:** <*SSB 포트 번호*>  
+    -   **값:** &lt;*SSBPortNumber*>  
 
     -   **세부 정보:** SQL Server에서 사용하는 SQL SSB(Server Service Broker) 포트를 지정합니다. 일반적으로, SSB는 TCP 포트 4022를 사용하도록 구성되지만 다른 포트도 지원됩니다. 실패하기 전에 사용했던 SSB 포트를 지정해야 합니다.  
 
@@ -641,7 +646,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
     -   **필수:** 아니요  
 
-    -   **값:** <PathToSiteServerBackupSet\>  
+    -   **값:** &lt;PathToSiteServerBackupSet\>  
 
     -   **세부 정보:** 사이트 서버 백업 집합의 경로를 지정합니다. **ServerRecoveryOptions** 설정 값이 **1** 또는 **2**인 경우 이 키는 옵션입니다. 사이트 백업을 사용하여 사이트를 복구할 수 있도록 **SiteServerBackupLocation** 키의 값을 지정합니다. 값을 지정하지 않으면 사이트는 백업 집합으로부터 복원되지 않고 다시 설치됩니다.  
 
@@ -649,7 +654,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
     -   **필수:** 미정  
 
-    -   **값:** <PathToSiteDatabaseBackupSet\>  
+    -   **값:** &lt;PathToSiteDatabaseBackupSet\>  
 
     -   **세부 정보:** 사이트 데이터베이스 백업 집합의 경로를 지정합니다. **ServerRecoveryOptions** 키 값을 **1** 또는 **4** 로 구성하고 **DatabaseRecoveryOptions** 키 값을 **10** 으로 구성하는 경우 **BackupLocation** 키는 필수입니다.  
 
@@ -671,7 +676,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
     -   **필수:** 예  
 
-    -   **값:** <사이트 코드\>  
+    -   **값:** &lt;Site code\>  
 
     -   **세부 정보:** 계층에서 사이트를 고유하게 식별하는 세 자리 영숫자입니다. 실패하기 전에 사이트에서 사용했던 사이트 코드를 지정해야 합니다.  
 
@@ -687,7 +692,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
     -   **필수:** 예  
 
-    -   **값:** <*Configuration Manager 설치 경로*>  
+    -   **값:** &lt;*ConfigMgrInstallationPath*>  
 
     -   **세부 정보:** Configuration Manager 프로그램 파일의 설치 폴더를 지정합니다.  
 
@@ -698,7 +703,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
     -   **필수:** 예  
 
-    -   **값:** <*SMS 공급자의 FQDNr*>  
+    -   **값:**&lt;*SMS 공급자의 FQDN*>  
 
     -   **세부 정보:** SMS 공급자를 호스트할 서버의 FQDN을 지정합니다. 장애가 발생하기 전에 SMS 공급자를 호스트하던 서버를 지정해야 합니다.  
 
@@ -720,7 +725,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
     -   **필수:** 예  
 
-    -   **값:** <*설치를 위한 필수 파일의 경로*>  
+    -   **값:** &lt;*PathToSetupPrerequisiteFiles*>  
 
     -   **세부 정보:** 설치를 위한 필수 파일의 경로를 지정합니다. **PrerequisiteComp** 값에 따라 이 경로는 다운로드한 파일을 저장하는 데 사용되거나 이전에 다운로드한 파일을 찾는 데 사용됩니다.  
 
@@ -754,7 +759,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
     -   **필수:** 예  
 
-    -   **값:** *<SQL Server 이름\>*  
+    -   **값:** *&lt;SQLServerName\>*  
 
     -   **세부 정보:** 사이트 데이터베이스를 호스트할 SQL Server를 실행하는 서버 이름 또는 클러스터형 인스턴스 이름입니다. 실패하기 전에 사이트 데이터베이스를 호스팅했던 서버를 지정해야 합니다.  
 
@@ -764,11 +769,11 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
     -   **값:**  
 
-         *&lt;사이트 데이터베이스 이름&gt;\>*  
+         *&lt;SiteDatabaseName\>*  
 
          대화 상자에 있는  
 
-         *<인스턴스 이름\>*\\*<사이트 데이터베이스 이름\>*  
+         *&lt;InstanceName\>*\\*&lt;SiteDatabaseName\>*  
 
     -   **세부 정보:** 중앙 관리 사이트 데이터베이스를 설치하기 위해 사용하거나 만들 SQL Server 데이터베이스의 이름입니다. 실패하기 전에 사용되던 동일한 데이터베이스 이름을 지정해야 합니다.  
 
@@ -779,7 +784,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
     -   **필수:** 아니요  
 
-    -   **값:** <*SSB 포트 번호*>  
+    -   **값:** &lt;*SSBPortNumber*>  
 
     -   **세부 정보:** SQL Server에서 사용하는 SQL SSB(Server Service Broker) 포트를 지정합니다. 일반적으로, SSB는 TCP 포트 4022를 사용하도록 구성되지만 다른 포트도 지원됩니다. 실패하기 전에 사용했던 SSB 포트를 지정해야 합니다.  
 
@@ -789,7 +794,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
     -   **필수:** 미정  
 
-    -   **값:** <*중앙 관리 사이트의 사이트 코드*>  
+    -   **값:** &lt;*SiteCodeForCentralAdministrationSite*>  
 
     -   **세부 정보:** 기본 사이트가 Configuration Manager 계층 구조에 가입할 때 연결할 중앙 관리 사이트를 지정합니다. 실패하기 전에 기본 사이트가 중앙 관리 사이트에 연결되었던 경우 이 설정은 필수입니다. 실패하기 전에 중앙 관리 사이트에 사용했던 사이트 코드를 지정해야 합니다.  
 
@@ -797,7 +802,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
     -   **필수:** 아니요  
 
-    -   **값:** <*간격*>  
+    -   **값:** &lt;*Interval*>  
 
     -   **세부 정보:** 연결에 실패한 후 중앙 관리 사이트를 연결하려고 다시 시도하는 간격(분)을 지정합니다. 예를 들어 기본 사이트가 중앙 관리 사이트에 연결하지 못하면 WaitForCASTimeout 기간에 도달할 때까지 기본 사이트는 CASRetryInterval 값에 기반하여 중앙 관리 사이트에 대한 연결을 다시 시도합니다.  
 
@@ -805,7 +810,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
     -   **필수:** 아니요  
 
-    -   **값:** <*시간 제한*>  
+    -   **값:** &lt;*Timeout*>  
 
     -   **세부 정보:** 기본 사이트가 중앙 관리 사이트에 연결하는 최대 시간 제한 값(분)을 지정합니다. 예를 들어 기본 사이트가 중앙 관리 사이트에 연결하지 못하면 WaitForCASTimeout 기간에 도달할 때까지 기본 사이트는 CASRetryInterval 값에 기반하여 중앙 관리 사이트에 대한 연결을 다시 시도합니다. 값은 0에서 100까지 지정할 수 있습니다.  
 
@@ -898,7 +903,7 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
  SMS 작성기는 백업 과정에서 VSS(볼륨 섀도 복사본 서비스)와 상호 작용하는 서비스입니다. Configuration Manager 사이트 백업이 성공적으로 완료되려면 SMS 작성기 서비스가 실행되어야 합니다.  
 
 ### <a name="purpose"></a>용도  
- SMS 작성기는 VSS 서비스에 등록되어 VSS 서비스 인터페이스 및 이벤트에 바인딩됩니다. VSS가 이벤트를 브로드캐스팅하는 경우, 즉 SMS 작성기에 특정 알림을 보내는 경우 SMS 작성기가 알림에 응답하여 적절한 조치를 취합니다. SMS 작성기는 <*Configuration Manager 설치 경로*>\inboxes\smsbkup.box에 있는 백업 제어 파일(smsbkup.ctl)을 읽고 백업할 파일과 데이터를 결정합니다. SMS 작성기는 이 정보와 함께 SMS 레지스트리 키 및 하위 키의 특정 데이터를 기반으로 다양한 구성 요소로 이루어진 메타데이터를 작성합니다. 그리고 요청 시 VSS에 메타데이터를 보냅니다. 그러면 VSS가 요청하는 응용 프로그램(Configuration Manager 백업 관리자)에 메타데이터를 전송합니다. 백업 관리자는 백업되는 데이터를 선택한 후 이 데이터를 VSS를 통해 SMS 작성기에 보냅니다. SMS 작성기는 적절한 단계를 수행하여 백업을 준비합니다. 이후에 VSS가 스냅숏을 생성할 준비가 되면 이벤트를 보냅니다. 그러면 SMS 작성기가 모든 Configuration Manager 서비스를 중지하여 스냅숏이 생성되는 동안 Configuration Manager 작업이 고정되도록 보장합니다. 스냅숏이 완료된 후에 SMS 작성기는 서비스와 작업을 다시 시작합니다.  
+ SMS 작성기는 VSS 서비스에 등록되어 VSS 서비스 인터페이스 및 이벤트에 바인딩됩니다. VSS가 이벤트를 브로드캐스팅하는 경우, 즉 SMS 작성기에 특정 알림을 보내는 경우 SMS 작성기가 알림에 응답하여 적절한 조치를 취합니다. SMS 작성기는 &lt;*Configuration Manager 설치 경로*>\inboxes\smsbkup.box에 있는 백업 제어 파일(smsbkup.ctl)을 읽고 백업할 파일과 데이터를 결정합니다. SMS 작성기는 이 정보와 함께 SMS 레지스트리 키 및 하위 키의 특정 데이터를 기반으로 다양한 구성 요소로 이루어진 메타데이터를 작성합니다. 그리고 요청 시 VSS에 메타데이터를 보냅니다. 그러면 VSS가 요청하는 응용 프로그램(Configuration Manager 백업 관리자)에 메타데이터를 전송합니다. 백업 관리자는 백업되는 데이터를 선택한 후 이 데이터를 VSS를 통해 SMS 작성기에 보냅니다. SMS 작성기는 적절한 단계를 수행하여 백업을 준비합니다. 이후에 VSS가 스냅숏을 생성할 준비가 되면 이벤트를 보냅니다. 그러면 SMS 작성기가 모든 Configuration Manager 서비스를 중지하여 스냅숏이 생성되는 동안 Configuration Manager 작업이 고정되도록 보장합니다. 스냅숏이 완료된 후에 SMS 작성기는 서비스와 작업을 다시 시작합니다.  
 
  SMS 작성기 서비스는 자동으로 설치됩니다. VSS 응용 프로그램이 백업 또는 복원을 요청할 때 이 서비스가 실행되고 있어야 합니다.  
 
@@ -913,6 +918,6 @@ ms.openlocfilehash: 44be4075fb070d128524aa3304a3769a37b6fb40
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

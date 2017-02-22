@@ -2,7 +2,7 @@
 title: "Endpoint Protection 클라이언트 도움말 | Microsoft 문서"
 description: "위협으로부터 컴퓨터를 보다 효과적으로 보호할 수 있는 Endpoint Protection의 기능과 향상된 기능에 대해 알아봅니다."
 ms.custom: na
-ms.date: 01/03/2017
+ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1432568286605d29683416885d7aa522c649016e
-ms.openlocfilehash: ef2d8b540856b395575b99de79fa463de5d133ac
+ms.sourcegitcommit: 017bd5b899b364fc832c721d63cc7dbad0a11671
+ms.openlocfilehash: 212c73fcb947c3b56da6055bf47fe078301ad90d
 
 
 ---
@@ -29,14 +29,12 @@ ms.openlocfilehash: ef2d8b540856b395575b99de79fa463de5d133ac
 이 버전의 Windows Defender 또는 Endpoint Protection에는 위협으로부터 컴퓨터를 보호하는 다음과 같은 기능이 포함됩니다.  
 
 -   **Windows 방화벽 통합.** Endpoint Protection 설치 프로그램에서 Windows 방화벽을 설정하거나 해제할 수 있습니다.  
-
 -   **네트워크 검사 시스템:** 이 기능은 네트워크 트래픽 검사를 통해 알려진 네트워크 기반 취약성을 악용하지 못하도록 사전에 차단하여 실시간 보호를 향상시켜 줍니다.  
-
 -   **보호 엔진.** 실시간 보호를 통해 PC에서 설치 또는 실행되지 못하도록 맬웨어를 찾아서 중지합니다. 업데이트된 엔진은 보다 우수한 성능의 향상된 검색 및 치료 기능을 제공합니다.  
 
 Windows Defender는 Windows 10 운영 체제와 함께 제공됩니다.  이전 버전의 Windows에서 관리자는 관리 소프트웨어를 사용하여 Windows Defender 또는 Endpoint Protection을 제공할 수 있습니다.
 
-문제를 해결하려면 [Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결](troubleshoot-endpoint-client.md)을 참조하세요. 새로운 기능 목록을 보려면 [Windows Defender 클라이언트의 새로운 기능](https://support.microsoft.com/help/29276/windows-10-whats-new-in-windows-defender)을 참조하세요.
+[Windows Defender 및 Endpoint Protection에 대한 질문과 대답](endpoint-protection-client-faq.md) 목록도 확인할 수 있습니다. 문제를 해결하려면 [Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결](troubleshoot-endpoint-client.md)을 참조하세요. 새로운 기능 목록을 보려면 [Windows Defender 클라이언트의 새로운 기능](https://support.microsoft.com/help/29276/windows-10-whats-new-in-windows-defender)을 참조하세요.
 
 ## <a name="windows-firewall-integration"></a>Windows 방화벽 통합  
  Windows 방화벽은 공격자나 악성 소프트웨어가 인터넷 또는 네트워크를 통해 사용자의 컴퓨터에 액세스하지 못하도록 하는 데 유용합니다. 이제 Endpoint Protection을 설치할 때 설치 마법사에서 Windows 방화벽을 설정할지 확인합니다. Windows 방화벽을 의도적으로 해제하고 있던 경우에는 확인란의 선택을 취소하여 Windows 방화벽이 설정되지 않도록 할 수 있습니다. 제어판의 시스템 및 보안 설정을 통해 언제든지 Windows 방화벽 설정을 변경할 수 있습니다.  
@@ -60,11 +58,10 @@ Windows Defender 설정을 보려면 PC에서 `Windows Defender`를 검색합니
 
 ### <a name="see-also"></a>참고 항목  
  [Endpoint Protection 클라이언트에 대한 질문과 대답](endpoint-protection-client-faq.md)   
-
  [Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결](troubleshoot-endpoint-client.md)
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 
