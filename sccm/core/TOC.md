@@ -4,6 +4,7 @@
 ### [접근성 기능](understand/accessibility-features.md)
 ##  [Configuration Manager의 기본 사항](understand/fundamentals.md)
 ### [사이트 및 계층 구조의 기본 사항](understand/fundamentals-of-sites-and-hierarchies.md)
+#### [사이트 및 계층 인프라에 대한 업그레이드, 업데이트 및 설치 정보](understand/upgrade-update-install.md)
 ### [장치 관리의 기본 사항](understand/fundamentals-of-managing-devices.md)
 ### [클라이언트 관리의 기본 사항](understand/fundamentals-of-client-management-tasks.md)
 ### [보안 기본 사항](understand/fundamentals-of-security.md)
@@ -16,10 +17,10 @@
 ### [장기 서비스 분기를 현재 분기로 업그레이드](understand/convert-to-current-branch.md)
 ##  [클라우드 서비스 사용](understand/use-cloud-services.md)
 ### [Azure의 Configuration Manager](understand/configuration-manager-on-azure.md)
-##  [진단 및 사용 현황 데이터에 대한 질문과 대답](understand/frequently-asked-questions-about-diagnostics-and-usage-data.md)
+##  [제품 및 라이선스에 대한 FAQ](understand/product-and-licensing-faq.md)
+##  [진단 및 사용 현황 데이터에 대한 FAQ](understand/frequently-asked-questions-about-diagnostics-and-usage-data.md)
 
 #    [계획 및 디자인](plan-design/get-ready.md)
-
 ##   제품 변경 내용
 ###  [기능 및 특성](plan-design/changes/features-and-capabilities.md)
 ###  [Configuration Manager 2012에서 변경된 내용](plan-design/changes/what-has-changed-from-configuration-manager-2012.md)
@@ -60,7 +61,7 @@
 ###  [사이트 관리에 대한 보안 및 개인 정보](plan-design/hierarchy/security-and-privacy-for-site-administration.md)
 
 ##   [네트워크 인프라 계획](plan-design/network/configure-firewalls-ports-domains.md)
-###  [Active Directory 스키마 확장](plan-design/network/extend-the-active-directory-schema.md)
+###  [Active Directory 스키마 준비](plan-design/network/extend-the-active-directory-schema.md)
 ###  [사이트 시스템을 지원할 Windows 서버 준비](plan-design/network/prepare-windows-servers.md)
 ###  [사이트 시스템 서버용 웹 사이트](plan-design/network/websites-for-site-system-servers.md)
 ###  [PKI 인증서 요구 사항](plan-design/network/pki-certificate-requirements.md)
@@ -88,6 +89,8 @@
 ###  [랩 설정](get-started/set-up-your-lab.md)
 
 ##   [기술 미리 보기](get-started/technical-preview.md)
+###  [1701의 기능](get-started/capabilities-in-technical-preview-1701.md)
+###  [1612의 기능](get-started/capabilities-in-technical-preview-1612.md)
 ###  [1611의 기능](get-started/capabilities-in-technical-preview-1611.md)
 ###  [1610의 기능](get-started/capabilities-in-technical-preview-1610.md)
 ###  [1609의 기능](get-started/capabilities-in-technical-preview-1609.md)
@@ -121,7 +124,8 @@
 #    [서버 및 역할 배포](servers/deploy/start-using.md)
 
 ##   인프라 설치
-###  [설치 프로그램을 실행하기 전에](servers/deploy/install/setup-downloader.md)
+###  [설치 미디어 받기](servers/deploy/install/get-install-media.md)
+###  설치 프로그램을 실행하기 전에
 #### [설치 다운로더](servers/deploy/install/setup-downloader.md)
 #### [필수 조건 검사기](servers/deploy/install/prerequisite-checker.md)
 ###  [사이트 설치](servers/deploy/install/installing-sites.md)
@@ -166,6 +170,7 @@
 ###  [콘솔 내 업데이트 설치](servers/manage/install-in-console-updates.md)
 #### [순서도 – 업데이트 다운로드](servers/manage/download-updates-flowchart.md)
 #### [순서도 – 업데이트 복제](servers/manage/update-replication-flowchart.md)
+###  [사이트 서버에 대한 서비스 기간](servers/manage/service-windows.md)
 ###  [서비스 연결 도구 사용](servers/manage/use-the-service-connection-tool.md)
 ###  [업데이트 등록 도구 사용](servers/manage/use-the-update-registration-tool-to-import-hotfixes.md)
 ###  [핫픽스 설치 관리자 사용](servers/manage/use-the-hotfix-installer-to-install-updates.md)
@@ -217,6 +222,7 @@
 ###  [Wake on LAN을 구성하는 방법](clients/deploy/configure-wake-on-lan.md)
 ###  [Windows 컴퓨터에 클라이언트를 배포하는 방법](clients/deploy/deploy-clients-to-windows-computers.md)
 ###  [UNIX 및 Linux 서버에 클라이언트를 배포하는 방법](clients/deploy/deploy-clients-to-unix-and-linux-servers.md)
+###  [Mac에 클라이언트 배포 준비](clients/deploy/prepare-to-deploy-mac-clients.md)
 ###  [Mac에 클라이언트를 배포하는 방법](clients/deploy/deploy-clients-to-macs.md)
 ###  [사이트에 클라이언트를 할당하는 방법](clients/deploy/assign-clients-to-a-site.md)
 ###  [클라이언트 상태를 구성하는 방법](clients/deploy/configure-client-status.md)
@@ -230,6 +236,7 @@
 ###  [클라이언트를 관리하는 방법](clients/manage/manage-clients.md)
 ###  [Linux 및 UNIX 클라이언트를 관리하는 방법](clients/manage/manage-clients-for-linux-and-unix-servers.md)
 ###  [OMS에 데이터 동기화](clients/manage/sync-data-microsoft-operations-management-suite.md)
+###  [Mac 클라이언트 유지 관리](clients/manage/maintain-mac-clients.md)
 
 ##   [인터넷에서 클라이언트 관리](clients/manage/manage-clients-internet.md)
 ###  [클라우드 관리 게이트웨이에 대한 계획](clients/manage/plan-cloud-management-gateway.md)
@@ -252,14 +259,12 @@
 ###  [하드웨어 인벤토리를 확장하는 방법](clients/manage/inventory/extend-hardware-inventory.md)
 ###  [하드웨어 인벤토리를 구성하는 방법](clients/manage/inventory/configure-hardware-inventory.md)
 ###  [하이브리드 배포에서 모바일 장치에 대한 하드웨어 인벤토리를 구성하는 방법](clients/manage/inventory/mobile-device-hardware-inventory-hybrid.md)
-<!--- ###  [Operations and maintenance for hardware inventory](clients/manage/inventory/hardware-inventory.md) --->
 ###  [하드웨어 인벤토리를 보기 위해 리소스 탐색기를 사용하는 방법](clients/manage/inventory/use-resource-explorer-to-view-hardware-inventory.md)
 ###  [Linux 및 UNIX용 하드웨어 인벤토리](clients/manage/inventory/hardware-inventory-for-linux-and-unix.md)
 ###  [하드웨어 인벤토리에 대한 보안 및 개인 정보](clients/manage/inventory/security-and-privacy-for-hardware-inventory.md)
 
 ##   소프트웨어 인벤토리
 ###  [소프트웨어 인벤토리 소개](clients/manage/inventory/introduction-to-software-inventory.md)
-###  [소프트웨어 인벤토리에서 폴더를 제외하는 방법](clients/manage/inventory/exclude-folders-from-software-inventory.md)
 ###  [소프트웨어 인벤토리를 구성하는 방법](clients/manage/inventory/configure-software-inventory.md)
 ###  [소프트웨어 인벤토리를 보기 위해 리소스 탐색기를 사용하는 방법](clients/manage/inventory/use-resource-explorer-to-view-software-inventory.md)
 ###  [소프트웨어 인벤토리에 대한 보안 및 개인 정보](clients/manage/inventory/security-and-privacy-for-software-inventory.md)
@@ -300,6 +305,6 @@
 ###  [Upgrade Analytics](clients/manage/upgrade/upgrade-analytics.md)
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

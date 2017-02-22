@@ -2,7 +2,7 @@
 title: "온-프레미스 인프라 업그레이드 | Microsoft 문서"
 description: "SQL Server, 사이트 시스템의 사이트 운영 체제 등의 인프라를 업그레이드하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 2/2/2017
+ms.date: 2/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 83c8492191f40fc4d582562268db0d58a0f9cdde
-ms.openlocfilehash: a5d8496d98bd7f202ffbe8859981e94457ffa5c4
+ms.sourcegitcommit: 2e711cce2435957f3e85dad08f17260e1a224fc2
+ms.openlocfilehash: c6448932e91a02984ca57cef0b75c10ea3f43fa1
 
 
 ---
@@ -42,9 +42,9 @@ ms.openlocfilehash: a5d8496d98bd7f202ffbe8859981e94457ffa5c4
     - Configuration Manager 버전 1602 이상을 사용하는 경우 Windows Server 2008 R2를 Windows Server 2012 R2로 업그레이드할 수도 있습니다([추가 정보 참조](#upgrade-windows-server-2008-r2-to-windows-server-2012-r2)).
 
     > [!WARNING]  
-    >  Windows Server 2012 R2로 업그레이드하기 전에 서버에서 **WSUS 3.2를 제거** 해야 합니다.  
+    >  Windows Server 2012 R2로 업그레이드하기 전에 서버에서 *WSUS 3.2를 제거* 해야 합니다.  
     >   
-    >  이 중요 단계에 대한 자세한 내용은 Windows Server 문서에서 [Windows Server Update Services 개요](https://technet.microsoft.com/library/hh852345.aspx) 새로운 기능 및 변경된 기능 섹션을 참조하세요.  
+    >  이 중요 단계에 대한 자세한 내용은 Windows Server 문서에서 [Windows Server Update Services 개요](https://technet.microsoft.com/library/hh852345.aspx)의 “새로운 기능 및 변경된 기능” 섹션을 참조하세요.  
 
 서버를 업그레이드하려면 업그레이드할 운영 체제에서 제공하는 업그레이드 절차를 따르세요.  다음을 참조하세요.
   -  Windows Server 문서에서 [Windows Server 2012 R2에 대한 업그레이드 옵션](https://technet.microsoft.com/library/dn303416.aspx)  
@@ -54,35 +54,35 @@ ms.openlocfilehash: a5d8496d98bd7f202ffbe8859981e94457ffa5c4
 이 운영 체제 업그레이드 시나리오에는 다음과 같은 조건이 있습니다.
 
 **업그레이드 전:**  
--   SCEP(System Center Endpoint Protection) 클라이언트를 제거합니다. Windows Server 2016에는 SCEP 클라이언트를 대체하는 Windows Defender가 기본 제공됩니다. SCEP 클라이언트가 있으면 Windows Server 2016으로 업그레이드할 수 없습니다.
+-     SCEP(System Center Endpoint Protection) 클라이언트를 제거합니다. Windows Server 2016에는 SCEP 클라이언트를 대체하는 Windows Defender가 기본 제공됩니다. SCEP 클라이언트가 있으면 Windows Server 2016으로 업그레이드할 수 없습니다.
 
 **업그레이드 후:**
--   Windows Defender가 사용되고 자동 시작되도록 설정되었으며 실행되고 있는지 확인합니다.
--   다음 Configuration Manager 서비스가 실행되고 있는지 확인합니다.
+-     Windows Defender가 사용되고 자동 시작되도록 설정되었으며 실행되고 있는지 확인합니다.
+-     다음 Configuration Manager 서비스가 실행되고 있는지 확인합니다.
   -     SMS_EXECUTIVE
   -     SMS_SITE_COMPONENT_MANAGER
 
 
--   **Windows 프로세스 활성화** 및 **WWW/W3svc** 서비스가 다음 사이트 시스템 역할에 대해 사용되고 자동 시작되도록 설정되었으며 실행되고 있는지 확인합니다(업그레이드 중에는 해당 서비스를 사용할 수 없음).
+-     **Windows 프로세스 활성화** 및 **WWW/W3svc** 서비스가 다음 사이트 시스템 역할에 대해 사용되고 자동 시작되도록 설정되었으며 실행되고 있는지 확인합니다(업그레이드 중에는 해당 서비스를 사용할 수 없음).
   -     사이트 서버
   -     관리 지점
   -     응용 프로그램 카탈로그 웹 서비스 지점
   -     응용 프로그램 카탈로그 웹 사이트 지점
 
 
--   사이트 시스템 역할을 호스트하는 각 서버가 해당 서버에서 실행되는 [사이트 시스템 역할에 대한 필수 조건](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)을 계속해서 모두 충족하는지 확인합니다. 예를 들어 BITS 또는 WSUS를 다시 설치하거나 IIS에 대한 특정 설정을 구성해야 할 수 있습니다.
+-     사이트 시스템 역할을 호스트하는 각 서버가 해당 서버에서 실행되는 [사이트 시스템 역할에 대한 필수 조건](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)을 계속해서 모두 충족하는지 확인합니다. 예를 들어 BITS 또는 WSUS를 다시 설치하거나 IIS에 대한 특정 설정을 구성해야 할 수 있습니다.
 
-  누락된 필수 조건을 복원한 후 서버를 한 번 더 다시 부팅하여 서비스가 시작되고 작동하도록 합니다.
+  누락된 필수 조건을 복원한 후 서버를 한 번 더 다시 시작하여 서비스가 시작되고 작동하도록 합니다.
 
 **원격 Configuration Manager 콘솔에 대해 알려진 문제:**  
-사이트 서버 또는 SMS_Provider 인스턴스를 호스트하는 서버를 Windows Server 2016으로 업그레이드한 후 관리자가 Configuration Manager 콘솔을 사이트에 연결하지 못할 수 있습니다. 이 문제를 해결하려면 WMI에서 SMS Admins 그룹의 사용 권한을 수동으로 복원해야 합니다. 사이트 서버 및 SMS 공급자 인스턴스를 호스트하는 각 원격 서버에서 사용 권한을 설정해야 합니다.
+사이트 서버 또는 SMS_Provider 인스턴스를 호스트하는 서버를 Windows Server 2016으로 업그레이드한 후 관리자가 Configuration Manager 콘솔을 사이트에 연결하지 못할 수 있습니다. 이 문제를 해결하려면 WMI에서 SMS Admins 그룹의 사용 권한을 수동으로 복원해야 합니다. 사이트 서버 및 SMS_Provider 인스턴스를 호스트하는 각 원격 서버에서 사용 권한을 설정해야 합니다.
 
 1. 해당 서버에서 MMC(Microsoft Management Console)를 열고 **WMI 컨트롤**용 스냅인을 추가한 다음 **로컬 컴퓨터**를 선택합니다.
 2. MMC에서 **WMI 컨트롤(로컬)**의 **속성**을 열고 **보안** 탭을 선택합니다.
-3. 루트 아래의 트리를 확장하고 **SMS** 노드를 선택한 다음 **보안**을 클릭합니다.  **SMS Admins** 그룹에 다음 사용 권한이 있는지 확인합니다.
+3. 루트 아래의 트리를 확장하고 **SMS** 노드를 선택한 다음 **보안**을 선택합니다.  **SMS Admins** 그룹에 다음 사용 권한이 있는지 확인합니다.
   -     계정 사용
   -     원격 사용
-4. **보안 탭**의 SMS 노드 아래에서 **사이트_&lt;사이트 코드>** 노드를 선택하고 **보안**을 클릭합니다. **SMS Admins** 그룹에 다음 사용 권한이 있는지 확인합니다.
+4. **보안 탭**의 **SMS** 노드 아래에서 **사이트_**&lt;*사이트 코드>* 노드를 선택하고 **보안**을 선택합니다. **SMS Admins** 그룹에 다음 사용 권한이 있는지 확인합니다.
   -   메서드 실행
   -   공급자 쓰기
   -   계정 사용
@@ -95,7 +95,7 @@ ms.openlocfilehash: a5d8496d98bd7f202ffbe8859981e94457ffa5c4
 -  다른 지원되는 시나리오와 달리 이 시나리오에서는 업그레이드 전에 추가 고려 사항이 필요하지 않습니다.
 
 **업그레이드 후:**
-  - 다음 사이트 시스템 역할에 대해 Windows 배포 서비스가 시작되어 실행되고 있는지 확인합니다(업그레이드 중에는 이 서비스가 중지됨).
+  -    다음 사이트 시스템 역할에 대해 Windows 배포 서비스가 시작되어 실행되고 있는지 확인합니다(업그레이드 중에는 이 서비스가 중지됨).
     - 사이트 서버
     - 관리 지점
     - 응용 프로그램 카탈로그 웹 서비스 지점
@@ -103,25 +103,25 @@ ms.openlocfilehash: a5d8496d98bd7f202ffbe8859981e94457ffa5c4
 
 
   -     **Windows 프로세스 활성화** 및 **WWW/W3svc** 서비스가 다음 사이트 시스템 역할에 대해 사용되고 자동 시작되도록 설정되었으며 실행되고 있는지 확인합니다(업그레이드 중에는 해당 서비스를 사용할 수 없음).
-    -   사이트 서버
-    -   관리 지점
-    -   응용 프로그램 카탈로그 웹 서비스 지점
-    -   응용 프로그램 카탈로그 웹 사이트 지점
+    -     사이트 서버
+    -     관리 지점
+    -     응용 프로그램 카탈로그 웹 서비스 지점
+    -     응용 프로그램 카탈로그 웹 사이트 지점
 
 
   -     사이트 시스템 역할을 호스트하는 각 서버가 해당 서버에서 실행되는 [사이트 시스템 역할에 대한 필수 조건](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)을 계속해서 모두 충족하는지 확인합니다. 예를 들어 BITS 또는 WSUS를 다시 설치하거나 IIS에 대한 특정 설정을 구성해야 할 수 있습니다.
 
-  누락된 필수 조건을 복원한 후 서버를 한 번 더 다시 부팅하여 서비스가 시작되고 작동하도록 합니다.
+  누락된 필수 조건을 복원한 후 서버를 한 번 더 다시 시작하여 서비스가 시작되고 작동하도록 합니다.
 
 ### <a name="upgrade-windows-server-2008-r2-to-windows-server-2012-r2"></a>Windows Server 2008 R2에서 Windows Server 2012 R2로 업그레이드
 이 운영 체제 업그레이드 시나리오에는 다음과 같은 조건이 있습니다.  
 
 **업그레이드 전:**
--   WSUS 3.2를 제거합니다.  
+-     WSUS 3.2를 제거합니다.  
     서버 운영 체제를 Windows Server 2012 R2로 업그레이드하기 전에 서버에서 WSUS 3.2를 제거해야 합니다. 이 중요 단계에 대한 자세한 내용은 Windows Server 문서에서 Windows Server Update Services 개요의 새로운 기능 및 변경된 기능 섹션을 참조하세요.
 
 **업그레이드 후:**
-  - 다음 사이트 시스템 역할에 대해 Windows 배포 서비스가 시작되어 실행되고 있는지 확인합니다(업그레이드 중에는 이 서비스가 중지됨).
+  -    다음 사이트 시스템 역할에 대해 Windows 배포 서비스가 시작되어 실행되고 있는지 확인합니다(업그레이드 중에는 이 서비스가 중지됨).
     - 사이트 서버
     - 관리 지점
     - 응용 프로그램 카탈로그 웹 서비스 지점
@@ -129,15 +129,15 @@ ms.openlocfilehash: a5d8496d98bd7f202ffbe8859981e94457ffa5c4
 
 
   -     **Windows 프로세스 활성화** 및 **WWW/W3svc** 서비스가 다음 사이트 시스템 역할에 대해 사용되고 자동 시작되도록 설정되었으며 실행되고 있는지 확인합니다(업그레이드 중에는 해당 서비스를 사용할 수 없음).
-    -   사이트 서버
-    -   관리 지점
-    -   응용 프로그램 카탈로그 웹 서비스 지점
-    -   응용 프로그램 카탈로그 웹 사이트 지점
+    -     사이트 서버
+    -     관리 지점
+    -     응용 프로그램 카탈로그 웹 서비스 지점
+    -     응용 프로그램 카탈로그 웹 사이트 지점
 
 
   -     사이트 시스템 역할을 호스트하는 각 서버가 해당 서버에서 실행되는 [사이트 시스템 역할에 대한 필수 조건](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)을 계속해서 모두 충족하는지 확인합니다. 예를 들어 BITS 또는 WSUS를 다시 설치하거나 IIS에 대한 특정 설정을 구성해야 할 수 있습니다.
 
-  누락된 필수 조건을 복원한 후 서버를 한 번 더 다시 부팅하여 서비스가 시작되고 작동하도록 합니다.
+  누락된 필수 조건을 복원한 후 서버를 한 번 더 다시 시작하여 서비스가 시작되고 작동하도록 합니다.
 
 
 ### <a name="unsupported-upgrade-scenarios"></a>지원되지 않는 업그레이드 시나리오
@@ -158,9 +158,9 @@ ms.openlocfilehash: a5d8496d98bd7f202ffbe8859981e94457ffa5c4
 -   Windows 10의 빌드 간 서비스 업그레이드.  자세한 내용은 [System Center Configuration Manager를 사용하여 Windows as a Service 관리](../../../osd/deploy-use/manage-windows-as-a-service.md)를 참조하세요.  
 
 ##  <a name="a-namebkmksupconfigupgradedbsrva-upgrade-sql-server-on-the-site-database-server"></a><a name="BKMK_SupConfigUpgradeDBSrv"></a> 사이트 데이터베이스 서버에서 SQL Server 업그레이드  
-  Configuration Manager는 사이트 데이터베이스 서버에서 지원되는 SQL 버전의 SQL Server 현재 위치 업그레이드를 지원합니다. 다음은 Configuration Manager에서 지원하는 SQL Server 업그레이드 시나리오 및 각 시나리오의 요구 사항에 대한 세부 정보입니다.
+  Configuration Manager는 사이트 데이터베이스 서버에서 지원되는 SQL 버전의 SQL Server 현재 위치 업그레이드를 지원합니다. 이 섹션의 SQL Server 업그레이드 시나리오는 Configuration Manager에서 지원되며 각 시나리오에 대한 요구 사항이 포함되어 있습니다.
 
- Configuration Manager에서 지원되는 SQL Server 버전에 대한 자세한 내용은 [System Center Configuration Manager에 대한 SQL Server 버전 지원](../../../core/plan-design/configs/support-for-sql-server-versions.md)을 참조하세요.  
+ Configuration Manager에서 지원하는 SQL Server 버전에 대한 자세한 내용은 [System Center Configuration Manager에 대한 SQL Server 버전 지원](../../../core/plan-design/configs/support-for-sql-server-versions.md)을 참조하세요.  
 
  **SQL Server의 서비스 팩 버전 업그레이드:**    
  Configuration Manager는 업그레이드 후의 SQL Server 서비스 팩 수준이 Configuration Manager에서 계속 지원되는 경우 상위 서비스 팩으로의 SQL Server 현재 위치 업그레이드를 지원합니다.
@@ -181,7 +181,7 @@ ms.openlocfilehash: a5d8496d98bd7f202ffbe8859981e94457ffa5c4
  3. 마지막으로 부모 기본 사이트를 업그레이드합니다. 여기에는 중앙 관리 사이트에 보고를 하는 자식 기본 사이트와 계층의 최상위 사이트인 독립 실행형 기본 사이트가 모두 포함됩니다.
 
 **SQL Server 카디널리티 추정 수준 및 사이트 데이터베이스:**   
-사이트 데이터베이스가 이전 버전의 SQL Server에서 업그레이드된 경우 데이터베이스는 해당 SQL Server 인스턴스에 허용되는 최소값일 경우 기존 SQL CE(카디널리티 추정) 수준이 유지됩니다. 허용되는 수준보다 낮은 호환성 수준의 데이터베이스를 사용하여 SQL Server를 업그레이드하면 데이터베이스가 자동으로 SQL에서 허용되는 가장 낮은 호환성 수준으로 설정됩니다.
+사이트 데이터베이스가 이전 버전의 SQL Server에서 업그레이드된 경우 데이터베이스는 해당 SQL Server 인스턴스에 허용되는 최소값일 경우 기존 SQL CE(카디널리티 추정) 수준이 유지됩니다. 허용되는 수준보다 낮은 호환성 수준의 데이터베이스를 사용하여 SQL Server를 업그레이드하면 데이터베이스가 자동으로 SQL Server에서 허용되는 가장 낮은 호환성 수준으로 설정됩니다.
 
 다음 표에서는 Configuration Manager 사이트 데이터베이스에 권장되는 호환성 수준을 식별합니다.
 
@@ -195,9 +195,9 @@ ms.openlocfilehash: a5d8496d98bd7f202ffbe8859981e94457ffa5c4
  SQL CE 호환성 수준 및 설정 방법에 대한 자세한 내용은 [ALTER DATABASE 호환성 수준(Transact-SQL)](https://msdn.microsoft.com/library/bb510680.aspx)을 참조하세요.
 
 
-**SQL Server에 대한 자세한 내용은 TechNet에서 SQL Server 설명서를 참조하세요.**  
--   [SQL Server 2014로 업그레이드](http://technet.microsoft.com/library/ms143393\(v=sql.120))  
+SQL Server에 대한 자세한 내용은 TechNet에서 SQL Server 설명서를 참조하세요.
 -   [SQL Server 2012로 업그레이드](http://technet.microsoft.com/library/ms143393\(v=sql.110))
+-   [SQL Server 2014로 업그레이드](http://technet.microsoft.com/library/ms143393\(v=sql.120))  
 -   [SQL Server 2016으로 업그레이드](https://technet.microsoft.com/library/bb677622(v=sql.130))
 
 
@@ -213,6 +213,6 @@ ms.openlocfilehash: a5d8496d98bd7f202ffbe8859981e94457ffa5c4
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

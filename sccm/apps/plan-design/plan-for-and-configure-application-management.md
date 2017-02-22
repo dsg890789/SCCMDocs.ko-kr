@@ -2,7 +2,7 @@
 title: "응용 프로그램 관리 계획 및 구성 | Microsoft 문서"
 description: "System Center Configuration Manager에서 응용 프로그램 배포에 필요한 종속성을 구현하고 구성합니다."
 ms.custom: na
-ms.date: 02/03/2017
+ms.date: 02/09/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 50c08d63e7220a47d21dcbdcd7abafba7c7f5f75
-ms.openlocfilehash: 4eca69f54ec0bca5f1f972d3814ceb87d4a30d67
+ms.sourcegitcommit: 1c43c4968f93985515249ddb117269f8ed61302a
+ms.openlocfilehash: 46cc3fcfd9516cf1c124e24b50d0aac0cb0025dc
 
 
 ---
@@ -127,7 +127,7 @@ ms.openlocfilehash: 4eca69f54ec0bca5f1f972d3814ceb87d4a30d67
 
     상태 메시지: **SMS_PORTALWEB_CONTROL_MANAGER** 및 **SMS_AWEBSVC_CONTROL_MANAGER**구성 요소를 사용합니다.  
 
-    예를 들어 **SMS_PORTALWEB_CONTROL_MANAGER** 의 상태 ID **1015** 는 사이트 구성 요소 관리자가 응용 프로그램 카탈로그 웹 사이트 지점에 제대로 설치되었음을 확인합니다.  
+    예를 들어 **SMS_PORTALWEB_CONTROL_MANAGER**의 상태 ID **1015**는 사이트 구성 요소 관리자가 응용 프로그램 카탈로그 웹 사이트 지점을 설치했음을 확인합니다.  
 
     로그 파일: **SMSAWEBSVCSetup.log** 및 **SMSPORTALWEBSetup.log**를 검색합니다.  
 
@@ -228,6 +228,6 @@ ms.openlocfilehash: 4eca69f54ec0bca5f1f972d3814ceb87d4a30d67
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 
