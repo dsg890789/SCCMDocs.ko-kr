@@ -2,7 +2,7 @@
 title: "하드웨어 인벤토리 - Configuration Manager | Microsoft 문서"
 description: "System Center Configuration Manager의 하드웨어 인벤토리를 소개합니다."
 ms.custom: na
-ms.date: 12/05/2016
+ms.date: 02/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,8 +13,8 @@ ms.topic: get-started-article
 ms.assetid: 3969952e-9d05-49c9-82a2-e7e90ccef511
 caps.latest.revision: 6
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b

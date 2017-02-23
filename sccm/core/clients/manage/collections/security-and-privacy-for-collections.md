@@ -2,7 +2,7 @@
 title: "컬렉션 보안 및 개인 정보 | Microsoft 문서"
 description: "System Center Configuration Manager에서 컬렉션의 보안 및 개인 정보에 대한 모범 사례를 확인합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 2/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,8 +13,8 @@ ms.topic: article
 ms.assetid: 30bf2451-5415-4be2-ba8d-21759370cd83
 caps.latest.revision: 5
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53

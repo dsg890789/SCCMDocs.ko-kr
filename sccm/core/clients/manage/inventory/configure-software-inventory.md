@@ -2,7 +2,7 @@
 title: "소프트웨어 인벤토리 구성 | Microsoft 문서"
 description: "Configuration Manager에서 소프트웨어 인벤토리를 구성하고 소프트웨어 인벤토리의 폴더를 제외합니다."
 ms.custom: na
-ms.date: 01/03/2017
+ms.date: 02/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,8 +13,8 @@ ms.topic: get-started-article
 ms.assetid: f86559de-092a-4ce8-9b43-5d7530e0b763
 caps.latest.revision: 5
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: dacfdf02f04c6bd731ca0fc11e5af371b409c8b4
