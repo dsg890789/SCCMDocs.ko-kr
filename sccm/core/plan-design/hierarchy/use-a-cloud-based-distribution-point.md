@@ -2,7 +2,7 @@
 title: "클라우드 기반 배포 지점 | Microsoft 문서"
 description: "System Center Configuration Manager에서 클라우드 기반 배포 지점을 사용하기 위한 구성 및 제한 사항을 알아봅니다."
 ms.custom: na
-ms.date: 2/14/2017
+ms.date: 2/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 8800a497a8c1e26b89ad3817ee2c15258bd1d5c5
-ms.openlocfilehash: f9164eeb19027366525ebc41640c82de3a606e4d
+ms.sourcegitcommit: 97051d9c65ef5ea28c94468b24863120624e8de0
+ms.openlocfilehash: b78b3b20a8b317a242cd06f9fda6326f41673915
 
 
 ---
@@ -185,9 +185,7 @@ ms.openlocfilehash: f9164eeb19027366525ebc41640c82de3a606e4d
 
 3.  기본 배포 지점 또는 원격 배포 지점을 사용할 수 없는 경우 클라이언트는 대신 클라우드 기반 배포 지점에서 콘텐츠를 가져올 수 있습니다.  
 
-    > [!NOTE]  
-        >  배포용 콘텐츠 위치로 인터넷 기반 배포 지점 및 클라우드 기반 배포 지점을 모두 수신하는 인터넷상 클라이언트는 인터넷 기반 배포 지점에서만 컨텐츠의 검색을 시도합니다. 인터넷상의 클라이언트는 인터넷 기반 배포 지점에서 콘텐츠를 검색하지 못한 경우에도 클라우드 기반 배포 지점에 액세스를 시도하지 않습니다.  
-
+    
 
   콘텐츠 위치로 클라우드 기반 배포 지점을 사용하는 클라이언트는 Configuration Manager 액세스 토큰을 사용하여 클라우드 기반 배포 지점에 대해 자신을 인증합니다. 클라이언트에서 Configuration Manager 클라우드 기반 배포 지점 인증서를 신뢰하면 이 클라이언트는 요청한 콘텐츠를 다운로드할 수 있습니다.  
 
@@ -217,6 +215,6 @@ ms.openlocfilehash: f9164eeb19027366525ebc41640c82de3a606e4d
 
 
 
-<!--HONumber=Feb17_HO3-->
+<!--HONumber=Feb17_HO4-->
 
 
