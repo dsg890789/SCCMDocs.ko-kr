@@ -35,6 +35,7 @@
 ###  [사이트 및 사이트 시스템 필수 조건](plan-design/configs/site-and-site-system-prerequisites.md)
 ###  [사이트 시스템 서버에 대해 지원되는 운영 체제](plan-design/configs/supported-operating-systems-for-site-system-servers.md)
 ###  [클라이언트 및 장치에 대해 지원되는 운영 체제](plan-design/configs/supported-operating-systems-for-clients-and-devices.md)
+###  [클라이언트로 Windows 10 지원](plan-design/configs/support-for-windows-10.md)
 ###  [콘솔의 지원되는 운영 체제](plan-design/configs/supported-operating-systems-consoles.md)
 ###  [권장 하드웨어](plan-design/configs/recommended-hardware.md)
 ###  [SQL Server 버전 지원](plan-design/configs/support-for-sql-server-versions.md)
@@ -89,6 +90,7 @@
 ###  [랩 설정](get-started/set-up-your-lab.md)
 
 ##   [기술 미리 보기](get-started/technical-preview.md)
+<!-- ###  [Capabilities in 1702](get-started/capabilities-in-technical-preview-1702.md) -->
 ###  [1701의 기능](get-started/capabilities-in-technical-preview-1701.md)
 ###  [1612의 기능](get-started/capabilities-in-technical-preview-1612.md)
 ###  [1611의 기능](get-started/capabilities-in-technical-preview-1611.md)
@@ -305,6 +307,6 @@
 ###  [Upgrade Analytics](clients/manage/upgrade/upgrade-analytics.md)
 
 
-<!--HONumber=Feb17_HO3-->
+<!--HONumber=Feb17_HO4-->
 
 
