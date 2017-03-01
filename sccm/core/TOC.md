@@ -90,7 +90,7 @@
 ###  [랩 설정](get-started/set-up-your-lab.md)
 
 ##   [기술 미리 보기](get-started/technical-preview.md)
-<!-- ###  [Capabilities in 1702](get-started/capabilities-in-technical-preview-1702.md) -->
+###  [1702의 기능](get-started/capabilities-in-technical-preview-1702.md)
 ###  [1701의 기능](get-started/capabilities-in-technical-preview-1701.md)
 ###  [1612의 기능](get-started/capabilities-in-technical-preview-1612.md)
 ###  [1611의 기능](get-started/capabilities-in-technical-preview-1611.md)
@@ -305,8 +305,3 @@
 ###  [Linux 및 UNIX 클라이언트 업그레이드](clients/manage/upgrade/upgrade-clients-for-linux-and-unix-servers.md)
 ###  [Mac 클라이언트 업그레이드](clients/manage/upgrade/upgrade-clients-on-mac-computers.md)
 ###  [Upgrade Analytics](clients/manage/upgrade/upgrade-analytics.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

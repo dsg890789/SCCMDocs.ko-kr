@@ -15,8 +15,9 @@ ms.suite: ems
 ms.assetid: a89ecd55-fe24-4f40-86c4-8a91dd683a1c
 toc_rel: /sccm/toc.json
 translationtype: Human Translation
-ms.sourcegitcommit: a10fb140adfc1109a49760d601b5fca3d93d4b39
-ms.openlocfilehash: 690b516b6be4380b566649adacfafcc8f920373c
+ms.sourcegitcommit: fd507d0e034eb8ba97181b8e0491d0b1108a7dbe
+ms.openlocfilehash: 8987d5b00eb3c7fccfb0f9186169871d02da6a04
+ms.lasthandoff: 02/28/2017
 
 ---
 # <a name="system-center-configuration-manager-documentation"></a>System Center Configuration Manager 문서
@@ -30,7 +31,7 @@ ms.openlocfilehash: 690b516b6be4380b566649adacfafcc8f920373c
     </section>
 
     <section id="featured" class="container">
-      <h2 class="section-heading"><span class="icon icon-warning"></span> 추천 콘텐츠</h2>
+      <h2 class="section-heading"><span class="icon icon-warning"></span>추천 콘텐츠</h2>
       <div class="features row">
         <ul class="column column-half">
           <li><a href="/sccm/core/understand/introduction">Configuration Manager 소개</a></li>
@@ -39,7 +40,7 @@ ms.openlocfilehash: 690b516b6be4380b566649adacfafcc8f920373c
         </ul>
         <ul class="column column-half">
           <li><a href="/sccm/core/plan-design/changes/features-and-capabilities">System Center Configuration Manager의 기능 및 특성</a></li>
-          <li><a href="/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management">Microsoft Intune 독립 실행형 및 System Center Configuration Manager에서 하이브리드 모바일 장치 관리 선택</a></li>
+          <li><a href="/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management">Center Configuration Manager에서 Microsoft Intune 독립 실행형 및 System 하이브리드 모바일 장치 관리 중 선택</a></li>
           <li><a href="/sccm/core/plan-design/configs/supported-configurations">System Center Configuration Manager에서 지원되는 구성</a></li>
         </ul>
       </div>
@@ -346,14 +347,9 @@ ms.openlocfilehash: 690b516b6be4380b566649adacfafcc8f920373c
     <aside class="alert alert-social">
       <p>Configuration Manager에 대한 최신 정보</p>
       <ol class="action-list">
-        <li><a href="https://blogs.technet.microsoft.com/enterprisemobility/" target="_blank" class="button-bordered button-translucent">Enterprise Mobility + Security 팀 블로그</a></li>
-        <li><a href="https://twitter.com/hashtag/configmgr" target="_blank" class="button-bordered button-translucent">#ConfigMgr on Twitter</a></li>
+        <li><a href="https://blogs.technet.microsoft.com/enterprisemobility/" target="_blank" class="button-bordered button-translucent">Enterprise Mobility 및 보안 팀 블로그</a></li>
+        <li><a href="https://twitter.com/hashtag/configmgr" target="_blank" class="button-bordered button-translucent">#Twitter에서 Configuration Manager</a></li>
       </ol>
     </aside>
 </article>
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
