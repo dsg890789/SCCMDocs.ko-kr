@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: a71e37060937f40bcb1bdb1c6165b7799fc72675
 ms.openlocfilehash: a9847e67ab1935fb66824945637ff683c006bdbe
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -81,7 +82,7 @@ Configuration Manager 클라이언트 소프트웨어를 사용하여 장치를 
  Configuration Manager는 클라이언트 소프트웨어를 설치하지 않았으며 Intune을 통해 관리되지 않는 일부 장치를 관리할 수 있습니다. 자세한 내용은 [System Center Configuration Manager의 온-프레미스 인프라로 모바일 장치 관리](../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md) 및 [System Center Configuration Manager와 Exchange를 사용하여 모바일 장치 관리](../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md)를 참조하세요.  
 
 ## <a name="user-based-management"></a>사용자 기반 관리  
- Configuration Manager는 Active Directory Domain Services 사용자의 컬렉션을 지원합니다. 사용자 컬렉션을 사용하면 컬렉션의 멤버가 사용하는 모든 컴퓨터에 소프트웨어 설치할 수 있습니다. 배포하는 소프트웨어가 사용자의 기본 장치로 지정된 장치에만 설치되도록 하려면 사용자 장치 선호도를 설정합니다. 사용자는 기본 장치를 하나 이상 사용할 수 있습니다.  
+ Configuration Manager는 Active Directory Domain Services 사용자의 컬렉션을 지원합니다. 사용자 컬렉션을 사용하면 컬렉션의 멤버가 사용하는 모든 컴퓨터에 소프트웨어를 설치할 수 있습니다. 배포하는 소프트웨어가 사용자의 기본 장치로 지정된 장치에만 설치되도록 하려면 사용자 장치 선호도를 설정합니다. 사용자는 기본 장치를 하나 이상 사용할 수 있습니다.  
 
  사용자가 소프트웨어 배포 환경을 제어할 수는 방법 중 하나는 **소프트웨어 센터** 클라이언트 인터페이스를 사용하는 것입니다. **소프트웨어 센터**는 클라이언트 컴퓨터에 자동으로 설치되며 **시작** 메뉴에서 실행할 수 있습니다. **소프트웨어 센터**를 사용하면 사용자가 자신의 소프트웨어를 관리하고 다음 작업을 수행할 수 있습니다.  
 
@@ -99,9 +100,4 @@ Configuration Manager 클라이언트 소프트웨어를 사용하여 장치를 
  **소프트웨어 센터**의 링크를 사용하면 사용자가 소프트웨어를 탐색, 설치, 요청할 수 있는 **응용 프로그램 카탈로그**에 연결할 수 있습니다. **응용 프로그램 카탈로그**는 기본 설정을 구성하고, 모바일 장치를 초기화하고, 설정된 경우 사용자 장치 선호도에 대한 기본 장치를 지정하는 데에도 사용합니다.   
 
  또한 사용자가 브라우저 인트라넷이나 인터넷 세션을 통해 **응용 프로그램 카탈로그**에 액세스할 수도 있습니다.  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
