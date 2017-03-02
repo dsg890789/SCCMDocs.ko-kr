@@ -16,8 +16,9 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 4688b4b12a7afa5fcfdc0e42f984271d98f10316
-ms.openlocfilehash: d2d888edf51d46a2dd13ef6b7ed39c066179a088
+ms.sourcegitcommit: bdd7961d9126dc6f3c1ae1fec1842c862e8a7c6d
+ms.openlocfilehash: 12633a7b9f799ffc74e0ee657e091595ed7eaf67
+ms.lasthandoff: 02/22/2017
 
 ---
 # <a name="supported-operating-systems-for-clients-and-devices-for-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 및 장치에 대해 지원되는 운영 체제
@@ -34,13 +35,13 @@ ms.openlocfilehash: d2d888edf51d46a2dd13ef6b7ed39c066179a088
 -   root 이외의 계정으로 실행하는 컴퓨터에서는 Linux/UNIX용 Configuration Manager 클라이언트나 Mac용 클라이언트를 설치 또는 실행은 지원되지 않습니다. 이러한 설정을 변경하면 주요 서비스가 정상적으로 실행되지 않을 수 있습니다.  
 
 ##  <a name="windows-computers"></a>Windows 컴퓨터  
- Configuration Manager와 함께 제공되는 Configuration Manager 클라이언트에서 Windows 컴퓨터를 관리할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법](../../../core/clients/deploy/deploy-clients-to-windows-computers.md)을 참조하세요.  
+ Configuration Manager에 포함된 Configuration Manager 클라이언트를 사용하여 다음 Windows 운영 체제를 관리할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법](../../../core/clients/deploy/deploy-clients-to-windows-computers.md)을 참조하세요.  
 
 **지원되는 운영 체제:**  
 
+
 -  **Windows Server 2016**: Standard, Datacenter <sup>1</sup>
   - 이 운영 체제는 Configuration Manager 버전 1606 및 KB3186654의 핫픽스 롤업(또는 2016년 10월에 릴리스된 1606의 기준 버전)부터 지원됩니다.  
-
 
 -   **Windows Server 2012 R2**(x64): Standard, Datacenter <sup>1</sup>    
 
@@ -56,9 +57,8 @@ ms.openlocfilehash: d2d888edf51d46a2dd13ef6b7ed39c066179a088
 
 -   **Windows Server 2008 SP2**(x86, x64): Standard, Enterprise, Datacenter <sup>1</sup>    
 
--   **Windows 10 Enterprise LTSB**(x86, x64) <sup>3</sup>    
-
--   **Windows 10**(x86, x64): Pro, Enterprise    
+-   **Windows 10**: Pro, Enterprise  
+   여러 버전의 Configuration Manager에서 지원되는 다양한 릴리스 버전의 Windows 10에 대한 자세한 내용은 [Support for versions of Windows 10](/sccm/core/plan-design/configs/support-for-windows-10)(Windows 10 버전에 대한 지원)을 참조하세요.
 
 -   **Windows 8.1**(x86, x64): Professional, Enterprise    
 
@@ -83,7 +83,6 @@ ms.openlocfilehash: d2d888edf51d46a2dd13ef6b7ed39c066179a088
 
  <sup>2</sup> 클라이언트 강제 설치를 지원하려면 이 운영 체제 버전을 실행하는 컴퓨터에서 파일 및 저장소 서비스 서버 역할용으로 파일 서버 역할 서비스를 실행해야 합니다. Server Core 컴퓨터에 Windows 기능을 설치하는 방법에 대한 자세한 내용은 Windows Server 2012 TechNet 라이브러리에서 [Server Core 서버에 서버 역할 및 기능 설치](http://go.microsoft.com/fwlink/p/?LinkId=299359)를 참조하세요.  
 
- <sup>3</sup> 이 운영 체제를 사용하려면 Configuration Manager 버전 1602 이상이 필요합니다.  
 
 ##  <a name="windows-embedded-computers"></a>Windows Embedded 컴퓨터  
  장치에 Configuration Manager 클라이언트 소프트웨어를 설치하여 Windows Embedded 장치를 관리할 수 있습니다.  자세한 내용은 [System Center Configuration Manager에서 Windows Embedded 장치에 클라이언트 배포 계획](../../../core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)을 참조하세요.  
@@ -349,9 +348,4 @@ Configuration Manager에서는 Configuration Manager 클라이언트를 설치�
 -   **Exchange Server 2013**  
 
 -   **Exchange Online(Office 365)**: 여기에는 Business Productivity Online Standard Suite가 포함됨  
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

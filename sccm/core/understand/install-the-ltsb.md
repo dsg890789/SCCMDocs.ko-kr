@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0c084e9f630a96c7b22c3dbdd72e18ad4a86926d
-ms.openlocfilehash: 9631b5622fec19e0248eb919bc8bd876152f66d7
+ms.sourcegitcommit: 1a3460143628ef297c99c364ded7ebea86d270dd
+ms.openlocfilehash: c266bb753ea69785b674508647c3857b2218cb77
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -29,7 +30,7 @@ ms.openlocfilehash: 9631b5622fec19e0248eb919bc8bd876152f66d7
 
 버전 1606 기준선 미디어를 사용하는 경우 설치 또는 업그레이드되는 사이트는 다음과 같습니다.
 - *현재 분기 사이트* - 1511 기준선 미디어를 사용하여 처음 설치된 다음 버전 1606 및 1606 핫픽스 롤업 - KB3186654로 업데이트된 사이트에 해당합니다.
--   *LTSB 사이트* - 버전 1606 및 1606 핫픽스 롤업 - KB3186654를 실행하는 현재 분기 사이트에 해당합니다. 기준선 미디어에 핫픽스 롤업이 이미 포함되어 있습니다.  그러나 LTSB는 [System Center Configuration Manager의 장기 서비스 분기 소개](introduction-to-the-ltsb.md)에 자세히 설명된 대로 현재 분기에서 사용할 수 있는 일부 기능이나 특성을 지원하지 않습니다.
+-    *LTSB 사이트* - 버전 1606 및 1606 핫픽스 롤업 - KB3186654를 실행하는 현재 분기 사이트에 해당합니다. 기준선 미디어에 핫픽스 롤업이 이미 포함되어 있습니다.  그러나 LTSB는 [System Center Configuration Manager의 장기 서비스 분기 소개](introduction-to-the-ltsb.md)에 자세히 설명된 대로 현재 분기에서 사용할 수 있는 일부 기능이나 특성을 지원하지 않습니다.
 
 System Center Configuration Manager의 다양한 분기에 대해 잘 모르겠으면 [사용해야 하는 Configuration Manager 분기](which-branch-should-i-use.md)를 참조하세요.
 
@@ -70,7 +71,7 @@ LTSB에서 지원되지 않는 사이트 시스템 역할을 제거합니다.
 무인 설치 스크립트를 사용하여 사용이 허가된 분기를 설치하는 경우 스크립트의 옵션 섹션에 다음과 같은 섹션, 키 이름 및 값을 추가해야 합니다. 현재 분기의 평가판 설치를 스크립팅할 때는 이러한 값을 사용할 필요가 없습니다.  
 
  **SABranchOptions**
--   **키 이름: SSActive**
+-     **키 이름: SAActive**
   - 값: 0 또는 1  
   - 세부 정보: 값이 0이면 현재 분기의 사용이 허가되지 않은 평가판이 설치되고, 값이 1이면 사용이 허가된 버전이 설치됩니다.   
 
@@ -81,7 +82,7 @@ LTSB에서 지원되지 않는 사이트 시스템 역할을 제거합니다.
 예를 들어 사용이 허가된 현재 분기 버전을 설치하려면 다음을 사용합니다.
 
   **키 이름: SABranchOptions**
-   -    **SSActive = 1**
+   -    **SAActive = 1**
    - **CurrentBranch = 1**
 
 
@@ -97,7 +98,7 @@ LTSB에서 지원되지 않는 사이트 시스템 역할을 제거합니다.
 1606 기준 미디어를 사용하여 두 분기 중 하나의 새 사이트를 설치하는 경우 [System Center Configuration Manager 사이트 설치](/sccm/core/servers/deploy/install/installing-sites) 항목에 문서화된 사이트 계획, 준비 및 설치 절차와 설치 프로그램에 대한 다음 고려 사항을 추가로 사용합니다.
 
 - 설치하는 동안 설치할 Configuration Manager 분기를 선택해야 하며, Software Assurance 계약에 대한 세부 정보를 지정할 수 있습니다.
--   스크립팅된 새 설치. 자세한 내용은 이 문서의 앞부분에서 "스크립팅된 새 설치 옵션"을 참조하세요.
+-    스크립팅된 새 설치. 자세한 내용은 이 문서의 앞부분에서 "스크립팅된 새 설치 옵션"을 참조하세요.
 
 ## <a name="expand-a-stand-alone-primary-site"></a>독립 실행형 기본 사이트 확장
 LTSB를 실행하는 독립 실행형 기본 사이트를 확장할 수 있습니다.  이 프로세스는 현재 분기 사이트에 사용되는 프로세스와 같지만 다음 한 가지 사항에 주의해야 합니다.
@@ -111,7 +112,7 @@ System Center 2012 Configuration Manager에서 업그레이드하는 경우 [Sys
 
 **현재 분기로 업그레이드:**
 - 설치하는 동안 현재 분기를 선택해야 하며, Software Assurance 계약에 대한 세부 정보를 지정할 수 있습니다.
--   스크립팅된 새 설치. 자세한 내용은 이 문서의 앞부분에서 "스크립팅된 새 설치 옵션"을 참조하세요.
+-     스크립팅된 새 설치. 자세한 내용은 이 문서의 앞부분에서 "스크립팅된 새 설치 옵션"을 참조하세요.
 
 **LTSB로 업그레이드:**  
 - 업그레이드 전 체크리스트에서 수행할 추가 단계
@@ -147,9 +148,4 @@ CD.Latest 폴더의 미디어는 다음 용도로 사용할 수 없습니다.
 LTSB를 실행하는 사이트에서 백업 또는 복구하거나 사이트 유지 관리를 실행하려면 [System Center Configuration Manager 백업 및 복구](/sccm/protect/understand/backup-and-recovery)에 있는 지침과 절차를 사용합니다.  
 
 LTSB 사이트 백업의 CD.Latest 폴더에 있는 Configuration Manager 설치 프로그램을 사용합니다.
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

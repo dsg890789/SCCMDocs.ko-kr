@@ -17,8 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
-ms.openlocfilehash: 3b7125e782b60853e750aeb7ba923490e46a76b0
+ms.sourcegitcommit: 4edf7d09d39fa22fb5812aecc88febd763001eba
+ms.openlocfilehash: 369aa062d0f38eedebc0a7c351a7ce67b53d199b
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -29,9 +30,9 @@ ms.openlocfilehash: 3b7125e782b60853e750aeb7ba923490e46a76b0
 Configuration Manager의 부팅 이미지는 운영 체제 배포 중에 사용되는 [WinPE(Windows PE)](https://msdn.microsoft.com/library/windows/hardware/dn938389%28v=vs.85%29.aspx) 이미지입니다. 부팅 이미지는 Windows 설치용 대상 컴퓨터를 준비하는 제한된 구성 요소 및 서비스가 포함된 최소 운영 체제인 WinPE에서 컴퓨터를 시작하는 데 사용됩니다.  부팅 이미지를 관리하려면 다음 섹션을 참조하세요.
 
 ##  <a name="a-namebkmkbootimagedefaulta-default-boot-images"></a><a name="BKMK_BootImageDefault"></a> 기본 부팅 이미지  
- Configuration Manager는 x86 플랫폼을 지원하는 부팅 이미지와 x64 플랫폼을 지원하는 부팅 이미지 등 두 가지 기본 부팅 이미지를 제공합니다. 이러한 이미지는 \\\\*서버 이름*>\SMS_<*사이트 코드*>\osd\boot\\<*x64 또는 i386*에 저장됩니다.  
+ Configuration Manager는 x86 플랫폼을 지원하는 부팅 이미지와 x64 플랫폼을 지원하는 부팅 이미지 등 두 가지 기본 부팅 이미지를 제공합니다. 이러한 이미지는 \\\\*서버 이름*>\SMS_<*사이트 코드*>\osd\boot\\<*x64*> 또는 <*i386*>에 저장됩니다.  
 
- 새 버전으로 Configuration Manager를 업그레이드하는 경우 Configuration Manager에서 이 위치의 기본 부팅 이미지와, 기본 부팅 이미지를 기반으로 하는 사용자 지정된 부팅 이미지를 업데이트된 파일로 바꿀 수 있습니다. 드라이버를 포함하여 부팅 이미지를 업데이트하면 사이트의 기본 부팅 이미지에서 구성하는 옵션(예: 선택적 구성 요소)이 전달됩니다. 드라이버 소스 파일을 비롯하여 원본 드라이버 개체가 유효해야 합니다. 그렇지 않으면 사이트의 업데이트된 부팅 이미지에 드라이버가 추가되지 않습니다. 동일한 Windows ADK 버전을 기반으로 하는 경우에도 기본 부팅 이미지를 기반으로 하지 않는 다른 부팅 이미지는 업데이트되지 않습니다. 부팅 이미지가 업데이트된 후 배포 지점에 이를 재배포해야 합니다. 부팅 이미지를 사용하는 모든 미디어를 다시 생성해야 합니다. 사용자 지정된 기본 부팅 이미지를 자동으로 업데이트를 하지 않으려면 다른 위치에 저장해야 합니다.  
+ 새 버전으로 Configuration Manager를 업그레이드하는 경우 Configuration Manager에서 이 위치의 기본 부팅 이미지와, 기본 부팅 이미지를 기반으로 하는 사용자 지정된 부팅 이미지를 업데이트된 파일로 바꿀 수 있습니다. 드라이버를 포함하여 부팅 이미지를 업데이트하면 사이트의 기본 부팅 이미지에서 구성하는 옵션(예: 선택적 구성 요소)이 전달됩니다. 드라이버 소스 파일을 비롯하여 원본 드라이버 개체가 유효해야 합니다. 그렇지 않으면 사이트의 업데이트된 부팅 이미지에 드라이버가 추가되지 않습니다. 동일한 Windows ADK 버전을 기반으로 하는 경우에도 기본 부팅 이미지를 기반으로 하지 않는 다른 부팅 이미지는 업데이트되지 않습니다. 부팅 이미지가 업데이트된 후 배포 지점에 이를 재배포해야 합니다. 부팅 이미지를 사용하는 모든 미디어를 다시 생성해야 합니다. 사용자 지정된/기본 부팅 이미지를 자동으로 업데이트를 하지 않으려면 다른 위치에 저장해야 합니다.  
 
  **소프트웨어 라이브러리**에 추가한 모든 부팅 이미지에 Configuration Manager 추적 로그 도구가 추가됩니다. WinPE에 있는 경우 명령 프롬프트에서 **CMTrace**를 입력하여 Configuration Manager 추적 로그 도구를 시작할 수 있습니다.  
 
@@ -248,9 +249,4 @@ Configuration Manager의 부팅 이미지는 운영 체제 배포 중에 사용�
 1.  부팅 이미지를 업데이트하기 전에 사이트 서버의 해당 언어 폴더에 적합한 작업 순서 리소스 파일(tsres.dll)이 있는지 확인합니다. 예를 들어 영어 리소스 파일은 <*Configuration Manager 설치 폴더*>\OSD\bin\x64\00000409\tsres.dll 위치에 있습니다.  
 
 2.  시작 전 명령의 일부로 SMSTSLanguageFolder 환경 변수를 적합한 언어 ID로 설정합니다. 언어 ID는&16;진수가 아닌&10;진수를 사용하여 지정해야 합니다. 예를 들어 언어 ID를 영어로 설정하려면 폴더 이름에 사용되는 16진수 값인 00000409 대신 10진수 값인 1033을 지정합니다.  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager Technical Preview | Microsoft 문서"
 description: "System Center Configuration Manager에서 새로운 기능을 테스트 시험해 볼 수 있는 기술 미리 보기 릴리스에 대해 알아봅니다."
 ms.custom: na
-ms.date: 1/20/2017
+ms.date: 2/1/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 916c39133ec3796b9cff97c3c3bdb49dcbb6d7e7
-ms.openlocfilehash: defff3d720363cfb066b120e2b8f58d643a87699
+ms.sourcegitcommit: 4b1daa727477b1273cdbee1bc7e3ac8af5911ff0
+ms.openlocfilehash: 4703178c5ce3e23cb9d2e4557466fcec571c2983
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -29,7 +30,7 @@ ms.openlocfilehash: defff3d720363cfb066b120e2b8f58d643a87699
 
  이 항목은 기술 미리 보기이므로 세부 정보 및 기능은 변경될 수 있습니다.  
 
- 이 항목에서는 기술 미리 보기의 모든 버전에 적용되며, 2015년 12월의 버전 1512처럼 기능이 가장 먼저 제공되는 기술 미리 보기 버전과 함께 새로운 각 기능을 설명합니다. 이러한 기능에 대한 세부 정보는 각 미리 보기 버전만을 다룬 별도 항목에서 자세히 설명합니다.  
+ 이 항목에서는 기술 미리 보기의 모든 버전에 적용되며, 2017년 1월의 버전 1701처럼 기능이 가장 먼저 제공되는 기술 미리 보기 버전과 함께 새로운 각 기능을 설명합니다. 이러한 기능에 대한 세부 정보는 각 미리 보기 버전만을 다룬 별도 항목에서 자세히 설명합니다.  
 
  현재 분기의 Configuration Manager에서 제공하는 새로운 기능에 대한 자세한 내용은 [System Center Configuration Manager의 새로운 기능](/sccm/core/plan-design/changes/what-has-changed-from-configuration-manager-2012)을 참조하세요.
 
@@ -37,7 +38,7 @@ ms.openlocfilehash: defff3d720363cfb066b120e2b8f58d643a87699
 
 ##  <a name="a-namebkmkreqsa-requirements-and-limitations-for-the-technical-preview"></a><a name="bkmk_reqs"></a> Technical Preview의 요구 사항 및 제한  
 
-> [!IMPORTANT]  
+> [!IMPORTANT]     
 >  기술 미리 보기는 랩 환경에서만 사용하도록 허가되었습니다.  Microsoft에서 지원 서비스를 제공하지 않고, 특정 기능은 미리 보기 소프트웨어에서 사용하지 못할 수 있습니다. 또한 상업적으로 제공되는 소프트웨어와 비교했을 때 Preview 소프트웨어의 보안, 개인 정보 보호, 액세스 가능성, 가용성 및 안정성 표준이 낮거나 다를 수 있습니다.  
 
  대부분의 제품 필수 조건에 대한 자세한 내용은 [System Center Configuration Manager에서 지원되는 구성](../../core/plan-design/configs/supported-configurations.md)의 정보를 참조하세요. 기술 미리 보기 릴리스에는 다음과 같은 예외가 적용됩니다.  
@@ -50,24 +51,22 @@ ms.openlocfilehash: defff3d720363cfb066b120e2b8f58d643a87699
 
 -   다음 SQL Server 버전만 지원됩니다.  
 
-    -   SQL Server 2012 누적 업데이트 2 이상  
+    -   SQL Server 2016(서비스 팩 없음 버전 이상)
+    -   SQL Server 2014(서비스 팩 없음 버전 이상)
+    -   SQL Server 2012 SP2(서비스 팩 2 이상)
 
-    -   SQL Server 2014  
 
 -   사이트는 최대 10개 클라이언트를 지원하며, 이러한 클라이언트는 다음 운영 체제 중 하나를 실행해야 합니다.  
 
-    -   Windows 7  
+      -   Windows 10  
+      -   Windows 8.1  
+      -   Windows 8  
+      -   Windows 7  
 
-    -   Windows 8  
-
-    -   Windows 8.1  
-
-    -   Windows 10  
 
 -   다음 설치 플래그(스위치)만 지원됩니다.  
 
     -   **/silent**  
-
     -   **/testdbupgrade**  
 
 -   해당되는 추가 제한 사항 또는 요구 사항이 특정 버전의 각 Technical Preview에 대한 세부 정보에 포함되어 있습니다.  
@@ -81,7 +80,9 @@ ms.openlocfilehash: defff3d720363cfb066b120e2b8f58d643a87699
 ##  <a name="a-namebkmkinstalla-install-and-update-the-technical-preview"></a><a name="bkmk_install"></a> 기술 미리 보기 설치 및 업데이트  
  System Center Configuration Manager Technical Preview는 현재 릴리스의 System Center Configuration Manager와 다릅니다.  
 
- 기술 미리 보기를 사용하려면 먼저 기술 미리 보기 빌드의 **기준선 버전** 을 설치해야 합니다. 기준선 버전을 설치한 후 **콘솔 내 업데이트** 를 사용하여 최근의 미리 보기 버전으로 설치를 업데이트할 수 있습니다.     일반적으로 새 버전의 기술 미리 보기는 매달 사용할 수 있습니다.  
+ 기술 미리 보기를 사용하려면 먼저 기술 미리 보기 빌드의 **기준선 버전** 을 설치해야 합니다. 기준선 버전을 설치한 후 **콘솔 내 업데이트** 를 사용하여 최근의 미리 보기 버전으로 설치를 업데이트할 수 있습니다.     일반적으로 새 버전의 기술 미리 보기는 매달 사용할 수 있습니다.
+
+세 가지 후속 릴리스를 사용할 수 있을 때까지 각 미리 보기 릴리스가 지원됩니다. 즉, 버전 1702가 출시되면 버전 1610이 더 이상 지원되지 않지만 버전 1611, 1612 및 1701은 지원됩니다. 그러나 마지막 기준 버전이 지원되지 않을 경우(예: 버전 1610)에도, 해당 설치를 지원되는 버전으로 업데이트하는 한 새로운 기술 미리 보기 사이트를 설치할 수 있습니다.
 
 > [!TIP]  
 >  기술 미리 보기에 대한 업데이트를 설치하면 해당 새 기술 미리 보기 버전으로 미리 보기 설치가 업데이트됩니다.    기술 미리 보기 설치에는 현재 분기 설치로 업그레이드하거나 현재 분기 릴리스의 업데이트를 받을 수 있는 옵션이 없습니다.  
@@ -91,13 +92,7 @@ ms.openlocfilehash: defff3d720363cfb066b120e2b8f58d643a87699
 
 -   **Technical Preview 1610** - Configuration Manager Technical Preview 1610은 Configuration Manager Technical Preview의 콘솔 내 업데이트로, 그리고 [TechNet Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection-technical-preview) 웹 사이트에서 사용할 수 있는 새 기준 버전으로 제공됩니다.
 
--   **System Center Technical Preview 5**의 일부인 **Technical Preview 1603** - Configuration Manager Technical Preview 1603은 Configuration Manager Technical Preview의 콘솔 내 업데이트로, 그리고 System Center Technical Preview 5에 포함된 새 기준 버전으로 사용할 수 있습니다.    System Center Technical Preview 5에 포함된 버전만 초기 설치에 사용할 수 있습니다.  
 
-     [System Center Technical Preview 5의 Configuration Manager Technical Preview](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection-technical-preview) 기준 버전 정보:  
-
-    -   설치 프로그램과 Configuration Manager 콘솔은 둘 다 System Center Configuration Manager Technical Preview 1603으로 버전이 표시됩니다.  
-
-    -   이 기준 버전은 콘솔 내 업데이트에 대한 지원을 비롯하여 Configuration Manager Technical Preview 1603과 마찬가지로 작동합니다.  
 
 
 ##  <a name="a-namebkmktpfeedbacka-providing-feedback"></a><a name="BKMK_TPFeedback"></a> 사용자 의견 제공  
@@ -105,26 +100,7 @@ ms.openlocfilehash: defff3d720363cfb066b120e2b8f58d643a87699
 
  새로 추가되기를 원하는 기능에 대한 의견을 보내 주셔도 됩니다. 새로운 아이디어를 전송하고 다른 사용자들이 전송한 아이디어에 대해 투표를 하려면 [사용자 의견 페이지를 방문](http://configurationmanager.uservoice.com)하세요.  
 
-##  <a name="a-namebdmktpknownissuesa-general-changes-introduced-in-technical-previews"></a><a name="bdmk_tpknownissues"></a> Technical Preview에 도입된 일반 변경 내용  
-
--   **Technical Preview 1603:**  
-
-    -   Technical Preview 1603부터, 클라이언트에서 소프트웨어 업데이트를 설치하고 다시 시작한 직후에 소프트웨어 업데이트 준수 검사를 실행하도록 소프트웨어 업데이트 배포를 구성할 수 있습니다. 이렇게 하면 클라이언트가 다시 시작된 후 해당하는 추가 소프트웨어 업데이트를 확인한 다음, 동일한 유지 관리 기간 동안 해당 업데이트를 설치하여 규격을 준수할 수 있습니다.  
-
-         배포를 위해 이를 구성하려면 소프트웨어 업데이트 배포 마법사의 **사용자 환경** 페이지에서 **이 배포의 업데이트를 적용하기 위해 시스템을 다시 시작해야 하는 경우 다시 시작한 후 업데이트 배포 평가 주기 실행**옵션을 선택합니다.  
-
-    -   Technical Preview 1603 부터 SMSTSRebootDelay 작업 순서 변수의 동작이 변경되었습니다. SMSTSRebootDelay 변수는 컴퓨터를 다시 시작하기 전까지 대기하는 시간(초)을 지정합니다. 이 변수를 0으로 설정하지 않은 경우에는 다시 시작하기 전에 작업 순서 관리자에 알림 대화 상자가 표시됩니다.  
-        이 변수의 값을 구성하면 해당 값은 새 값을 구성할 때까지 유지됩니다. 모든 후속 컴퓨터 다시 시작에 대한 지연의 값은 동일합니다. Configuration Manager 1602 이전 버전에서는, 컴퓨터가 다시 시작된 후 이 변수가 기본값(30초)으로 다시 설정됩니다.   자세한 내용은 [System Center Configuration Manager에서 작업 순서 기본 제공 변수](../../osd/understand/task-sequence-built-in-variables.md)를 참조하세요.
-
--   **Technical Preview 1602:** Technical Preview 1602부터는 Windows 2008 Server R2를 실행하는 사이트 시스템 서버의 운영 체제를 Windows 2012 Server R2로 전체 업그레이드할 수 있습니다.  Windows Server 2012 R2 업그레이드 절차를 사용하면 업그레이드 후에 Configuration Manager 사이트 서버 복원을 실행할 필요가 없습니다.  업그레이드 절차를 [Windows Server 2012 R2에 대한 업그레이드 옵션](https://technet.microsoft.com/library/dn303416.aspx)을 참조하세요.  
-
-    > [!WARNING]  
-    >  Windows Server 2012 R2로 업그레이드하기 전에 서버에서 **WSUS 3.2를 제거** 해야 합니다.  
-    >   
-    >  이 중요 단계에 대한 자세한 내용은 Windows Server 문서에서 [Windows Server Update Services 개요](https://technet.microsoft.com/library/hh852345.aspx) 새로운 기능 및 변경된 기능 섹션을 참조하세요.  
-
--   **Technical Preview 1601:** 기본적으로 서비스 연결 지점은 설치 시 온라인 모드로 설정되며 오프라인 모드로 변경할 수 없습니다.  
-
+<!--   ##  <a name="bdmk_tpknownissues"></a> General changes introduced in Technical Previews    -->
 
 
 
@@ -212,26 +188,12 @@ ms.openlocfilehash: defff3d720363cfb066b120e2b8f58d643a87699
  |소프트웨어 센터 개선|[Tech Preview 1603](capabilities-in-technical-preview-1603.md#BKMK_SC1603)|[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#application-management)|  
  |원격 제어의 개선 사항|[Tech Preview 1603](capabilities-in-technical-preview-1603.md#BKMK_RC1603)|[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#remote-control)|  
  |PXE 사용 배포 지점에서 RamDisk TFTP 블록 크기 및 창 크기 사용자 지정|[Tech Preview 1603](capabilities-in-technical-preview-1603.md#BKMK_RamDiskTFTP)|[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#operating-system-deployment)|  
- |모바일 장치 관리 개선|[Tech Preview 1602](capabilities-in-technical-preview-1602.md#BKMK_MDM)|[버전 1602](/sccm/mdm/deploy-use/manage-ios-activation-lock) |  
- |1602 버전에서 소프트웨어 센터의 개선 사항|[Tech Preview 1602](capabilities-in-technical-preview-1602.md#BKMK_SC1601)| [버전 1602](/sccm/core/plan-design/changes/whats-new-in-version-1602#client-management)|  
- |Windows 10 서비스 개선|[Tech Preview 1602](capabilities-in-technical-preview-1602.md#BKMK_Win10Servicing)|[버전 1602](/sccm/core/plan-design/changes/whats-new-in-version-1602#operating-system-deployment) |  
- |Microsoft Intune 통합 향상|[Tech Preview 1601](capabilities-in-technical-preview-1601.md#bkmk_hybrid1)|[버전 1602](/sccm/core/plan-design/changes/whats-new-in-version-1602#conditional-access)|  
- |클라이언트 온라인 상태|[Tech Preview 1601](capabilities-in-technical-preview-1601.md#bkmk_clientStatus)|[버전 1602](/sccm/core/clients/manage/monitor-clients)|
- |응용 프로그램 관리 향상|[Tech Preview 1601](capabilities-in-technical-preview-1601.md#bkmk_appmgmt1601)|[버전 1602](/sccm/core/plan-design/changes/whats-new-in-version-1602#application-management)|  
- |향상된 호환성 설정|[Tech Preview 1601](capabilities-in-technical-preview-1601.md#bkmk_compliance1601)|[버전 1602](/sccm/core/plan-design/changes/whats-new-in-version-1602#compliance-settings)|  
- |장치 상태 증명|[Tech Preview 1512](capabilities-in-technical-preview-1512.md#bkmk_devicehealth)|[버전 1602](/sccm/core/servers/manage/health-attestation))|
- |콘솔 내 사용 약관 모니터링|[Tech Preview 1512](capabilities-in-technical-preview-1512.md#bkmk_viewterms)|[버전 1602](/sccm/mdm/deploy-use/terms-and-conditions)|  
- |Endpoint Protection 정책 설정의 향상된 기능|[Tech Preview 1512](capabilities-in-technical-preview-1512.md#bkmk_EPpolicy)|[버전 1602](/sccm/protect/deploy-use/endpoint-antimalware-policies)|  
- |Windows 10에서 비즈니스용 Windows 업데이트와 통합|[Tech Preview 1511](capabilities-in-technical-preview-1511.md#BKMK_WUfB)|[버전 1602](/sccm/sum/deploy-use/integrate-windows-update-for-business-windows-10)|  
- |System Center Configuration Manager를 통해 Office 365 ProPlus 클라이언트 업데이트 관리|[Tech Preview 1511](capabilities-in-technical-preview-1511.md#BKMK_Office365ProPlus)|[버전 1602](/sccm/sum/deploy-use/manage-office-365-proplus-updates)|  
- |항상 사용 가능한 데이터베이스에 대한 SQL Server AlwaysOn 지원|[Tech Preview 1511](capabilities-in-technical-preview-1511.md#BKMK_AlwasyOn)|[버전 1602](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database)|  
- |서버 클러스터 서비스|[Tech Preview 1511](capabilities-in-technical-preview-1511.md#BKMK_ClusterServerUpdates)|[버전 1606](/sccm/sum/deploy-use/service-a-server-group)|  
+
+
+ 기술 미리 보기 릴리스의 모든 기능을 현재 분기의 지원되는 최소 버전으로 사용할 수 있는 경우 해당 미리 보기 버전에 대한 세부 정보는 이 테이블에서 제거 됩니다.
+
+
 ## <a name="see-also"></a>참고 항목  
 [System Center Configuration Manager의 새로운 기능](/sccm/core/plan-design/changes/whats-new-incremental-versions)  
  [System Center Configuration Manager 소개](../../core/understand/introduction.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
