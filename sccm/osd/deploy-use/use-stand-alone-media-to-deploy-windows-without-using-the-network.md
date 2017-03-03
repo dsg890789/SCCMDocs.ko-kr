@@ -1,5 +1,5 @@
 ---
-title: "독립 실행형 미디어를 통해 네트워크를 사용하지 않고 Windows 배포 | Configuration Manager"
+title: "독립 실행형 미디어를 사용하여 네트워크를 사용하지 않고 Windows 배포 | Microsoft 문서"
 description: "Configuration Manager의 독립 실행형 미디어를 사용하여 대역폭이 제한된 운영 체제를 배포하거나 컴퓨터를 새로 고치거나 설치 또는 업그레이드하는 옵션으로 사용할 수 있습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: f09359b2c565f259ddd0dab01812bafcaecff60a
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 30ae794381c6894e11b21a8167d0af60463c5279
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -79,9 +80,4 @@ System Center Configuration Manager의 독립 실행형 미디어에는 컴퓨�
 
 ## <a name="install-the-operating-system-from-stand-alone-media"></a>독립 실행형 미디어에서 운영 체제 설치  
  컴퓨터에서 부팅 가능한 드라이브에 독립 실행형 미디어를 삽입한 다음 전원을 켜서 운영 체제를 설치합니다.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 
