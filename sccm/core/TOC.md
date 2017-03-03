@@ -304,4 +304,4 @@
 ###  [Windows 클라이언트 업그레이드](clients/manage/upgrade/upgrade-clients-for-windows-computers.md)
 ###  [Linux 및 UNIX 클라이언트 업그레이드](clients/manage/upgrade/upgrade-clients-for-linux-and-unix-servers.md)
 ###  [Mac 클라이언트 업그레이드](clients/manage/upgrade/upgrade-clients-on-mac-computers.md)
-###  [Upgrade Analytics](clients/manage/upgrade/upgrade-analytics.md)
+###  [준비 확인 업그레이드](clients/manage/upgrade/upgrade-analytics.md)
