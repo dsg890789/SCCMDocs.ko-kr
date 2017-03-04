@@ -15,6 +15,7 @@ ms.assetid: fdf05118-162a-411e-b72e-386b9dc9a5e1
 translationtype: Human Translation
 ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
 ms.openlocfilehash: 179f076f228daa5adf612275a822cd379b0ce1e3
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -43,7 +44,7 @@ ms.openlocfilehash: 179f076f228daa5adf612275a822cd379b0ce1e3
 > [!WARNING]  
 >  소프트웨어 업데이트 분류 **업그레이드**는 WSUS 4.0 이후에서만 지원됩니다. 새로운 분류를 동기화하고 Windows 10 서비스 계획에서 Windows 10 컴퓨터를 평가하는 기능을 얻기 전에 소프트웨어 업데이트 지점 및 사이트 서버에 WSUS용 [핫픽스 3095113](https://support.microsoft.com/kb/3095113) 을 반드시 설치해야 합니다. 이 핫픽스를 통해 Windows Server 2012 기반 또는 Windows Server 2012 R2 기반 서버의 WSUS에서 Windows 10용 기능 업그레이드를 동기화하고 배포할 수 있습니다. 자세한 내용은 [Windows as a Service 관리](../../osd/deploy-use/manage-windows-as-a-service.md)를 참조하세요.  
 >   
->  **업그레이드** https://support의 소프트웨어 업데이트를 위한 필수 조건을 설명합니다.microsoft의 소프트웨어 업데이트를 위한 필수 조건을 설명합니다.com/kb/3095113 [핫픽스 3095113](https://support.microsoft.com/kb/3095113)분류와 소프트웨어 업데이트를 동기화하는 경우 [Recover from synchronizing the 업그레이드 category before you install KB 3095113](#BKMK_RecoverUpgrades)의 소프트웨어 업데이트를 위한 필수 조건을 설명합니다.  
+>  [핫픽스 3095113](https://support.microsoft.com/kb/3095113)을 설치하기 전에 **업그레이드** 분류와 소프트웨어 업데이트를 동기화하는 경우 [KB 3095113을 설치하기 전에 업그레이드 범주 동기화에서 복구](#BKMK_RecoverUpgrades)를 참조하세요.  
 
 ### <a name="wsus-administration-console"></a>WSUS 관리 콘솔  
  소프트웨어 업데이트 지점이 원격 사이트 시스템 서버에 있고 WSUS가 Configuration Manager 사이트 서버에 아직 설치되지 않은 경우 이 사이트 서버에 WSUS 관리 콘솔이 필요합니다.  
@@ -111,9 +112,4 @@ ms.openlocfilehash: 179f076f228daa5adf612275a822cd379b0ce1e3
 
 ## <a name="next-steps"></a>다음 단계
 [소프트웨어 업데이트 관리 준비](../get-started/prepare-for-software-updates-management.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
