@@ -31,7 +31,6 @@
 
 ## [인증서 프로필](deploy-use/introduction-to-certificate-profiles.md)
 ### [인증서 프로필 만들기](deploy-use/create-certificate-profiles.md)
-### [PFX 인증서 프로필 만들기](deploy-use/create-pfx-certificate-profiles.md)
 ### [인증서 인프라 구성](deploy-use/certificate-infrastructure.md)
 ### [암호화 컨트롤 기술 참조](deploy-use/cryptographic-controls-technical-reference.md)
 
@@ -56,25 +55,7 @@
 ### [Endpoint Protection 클라이언트 도움말](deploy-use/endpoint-protection-client-help.md)
 ### [클라이언트 문제 해결](deploy-use/troubleshoot-endpoint-client.md)
 
-## [메일 프로필](deploy-use/introduction-to-email-profiles.md)
-### [메일 프로필 만들기](deploy-use/create-exchange-activesync-profiles.md)
-### [Wi-Fi, VPN, 메일 및 인증서 프로필 배포](deploy-use/deploy-wifi-vpn-email-cert-profiles.md)
-
-## [서비스에 대한 액세스 관리](deploy-use/manage-access-to-services.md)
-### [장치 준수 정책](deploy-use/device-compliance-policies.md)
-### [장치 준수 정책 만들기](deploy-use/create-compliance-policy.md)
-### [메일 액세스 관리](deploy-use/manage-email-access.md)
-### [SharePoint Online 액세스 관리](deploy-use/manage-sharepoint-online-access.md)
-### [비즈니스용 Skype Online 액세스 관리](deploy-use/manage-skype-for-business-online-access.md)
-### [Dynamics CRM Online 액세스 관리](deploy-use/manage-dynamics-crm-online-access.md)
-### [O365 서비스에 대한 PC 액세스 관리](deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md)
-## [장치, 네트워크 및 응용 프로그램 위험에 따라 액세스 관리](deploy-use/configuration-manager-mobile-threat-defense.md)
-### [Configuration Manager에서 Lookout](deploy-use/lookout-mobile-threat-defense-in-configuration-manager.md)
-#### [Lookout 장치 위협 방지 설정](deploy-use/set-up-your-subscription-with-lookout.md)
-#### [Intune에서 Lookout 사용](deploy-use/enable-lookout-connection-in-intune.md)
-#### [Lookout for Work 앱 배포](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
-#### [장치 위협 방지 정책 사용](deploy-use/enable-device-threat-protection-rule-compliance-policy.md)
-#### [Lookout 통합 문제 해결](deploy-use/troubleshoot-lookout-integration.md)
+## [Wi-Fi, VPN, 메일 및 인증서 프로필 배포](deploy-use/deploy-wifi-vpn-email-cert-profiles.md)
 
 ## [비즈니스용 Windows Hello 설정](deploy-use/windows-hello-for-business-settings.md)
 
