@@ -2,7 +2,7 @@
 title: "장치 등록 관리자를 사용하여 장치 등록 - Configuration Manager | Microsoft 문서"
 description: "System Center Configuration Manager와 장치 등록 관리자 계정을 사용하여 회사 소유 장치를 등록합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
 ms.openlocfilehash: b356d2351b8a28bdca78176fdf0ff3c913a36bd3
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -89,9 +90,4 @@ ms.openlocfilehash: b356d2351b8a28bdca78176fdf0ff3c913a36bd3
 -   삭제된 장치 등록 관리자 계정 자격 증명으로는 여전히 장치를 초기화하거나 사용 중지할 수 없습니다.  
 
 -   등록된 장치에 대한 삭제된 장치 등록 관리자 계정의 관계는 유지되지만 추가 장치를 등록할 수는 없습니다.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

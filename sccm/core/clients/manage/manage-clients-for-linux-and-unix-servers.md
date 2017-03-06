@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: 948664f2-239d-47a8-92fc-f8efeebd5796
 caps.latest.revision: 7
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 9206b82eca02877c30eebf146d42bcca7290eb42
 ms.openlocfilehash: 7a5ff0e75b8cdac68e3854c4f5aba01a7d423e9b
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -79,9 +80,4 @@ System Center Configuration Manager에서 Linux 및 UNIX 서버를 관리하는 
 |importPFX|클라이언트에서 현재 사용 중인 인증서를 대체할 인증서를 지정하려면 이 옵션을 사용합니다.<br /><br /> **-importPFX**를 사용하는 경우 **-password** 명령줄 매개 변수도 사용하여 PKCS#12 파일과 관련된 암호를 입력해야 합니다.<br /><br /> **-rootcerts** 를 사용하여 추가 루트 인증서 요구 사항을 지정합니다.<br /><br /> 예: **certutil -importPFX &lt;PKCS#12 인증서 경로> -password &lt;인증서 암호\> [-rootcerts &lt;쉼표로 구분된 인증서 목록>]**|  
 |-importsitecert|관리 서버의 사이트 서버 서명 인증서를 업데이트하려면 이 옵션을 사용합니다.<br /><br /> 예: **certutil importsitecert &lt;DER 인증서 경로\>**|  
 |-importcrl|클라이언트에서 하나 이상의 CRL 파일 경로로 CRL을 업데이트하려면 이 옵션을 사용합니다.<br /><br /> 예: **certutil importcrl &lt;쉼표로 구분된 CRL 파일 경로\>**|  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

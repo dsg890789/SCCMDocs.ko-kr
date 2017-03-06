@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: 98feaa06-64b1-4e86-a122-93017c97cd4f
 caps.latest.revision: 7
 caps.handback.revision: 0
-author: Nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 8a5dc7361da34f3e6b926acd35c72c0c0767ce70
 ms.openlocfilehash: 74a0a4274965891869caf838550cd9465b46fd51
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -80,9 +81,4 @@ SCEP 인증서 준수 여부를 모니터링하려면 **회사 리소스 액세�
 
 
  System Center Configuration Manager에서 보고를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고](../../core/servers/manage/reporting.md)를 참조하세요.  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

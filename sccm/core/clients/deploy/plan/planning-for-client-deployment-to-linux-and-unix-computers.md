@@ -13,12 +13,13 @@ ms.topic: get-started-article
 ms.assetid: 44153689-70e8-42ad-9ae8-17ae35f6a2e3
 caps.latest.revision: 9
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
 ms.openlocfilehash: dad941d5984fc7e0b43954b14c3966bb2632ad05
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -309,9 +310,4 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manag
 
 > [!NOTE]  
 >  명령줄 옵션 **ignoreSHA256validation** s h A-256을 지원 하는 버전의 OpenSSL와 Linux 및 UNIX 릴리스된 버전을 실행 하는 컴퓨터에서 무시 됩니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

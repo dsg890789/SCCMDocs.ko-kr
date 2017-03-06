@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: ba9b623f-6e86-4006-93f2-83d563de0cd0
 caps.latest.revision: 10
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 08afca8b422474639cbdb860e555fe0da27361a4
 ms.openlocfilehash: d8f25e849a8456f1658c4c7da32be733282bbde8
+ms.lasthandoff: 12/16/2016
 
 ---
 # <a name="how-to-assign-clients-to-a-site-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사이트에 클라이언트를 할당하는 방법
@@ -162,9 +163,4 @@ Configuration Manager에서 등록된 모바일 장치 클라이언트는 할당
  다른 사이트(모든 기본 사이트 및 모든 보조 사이트)로 로밍하는 이러한 클라이언트 컴퓨터는 콘텐츠 위치 요청에 대해 다른 사이트의 관리 지점을 항상 사용할 수 있습니다. 현재 사이트의 관리 지점은 클라이언트가 요청한 콘텐츠를 포함하는 배포 지점 목록을 클라이언트에 제공합니다.  
 
  인터넷 전용 클라이언트 관리에 대해 구성된 클라이언트 컴퓨터의 경우 및 Configuration Manager를 통해 등록된 모바일 장치와 Mac 컴퓨터의 경우 이러한 컴퓨터는 할당된 사이트의 관리 지점과만 통신합니다. 이러한 클라이언트는 보조 사이트의 관리 지점 또는 다른 기본 사이트의 관리 지점과 통신하지 않습니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

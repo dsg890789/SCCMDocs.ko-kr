@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: 29350919-6a25-446b-a0da-05e8914fbb26
 caps.latest.revision: 4
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 9206b82eca02877c30eebf146d42bcca7290eb42
 ms.openlocfilehash: 47bfeec5bd5d9b843e9064560d0cd0b14bd7d6a1
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -37,9 +38,4 @@ ms.openlocfilehash: 47bfeec5bd5d9b843e9064560d0cd0b14bd7d6a1
 > -   Configuration Manager 콘솔을 실행하는 컴퓨터에는 Windows XP 서비스 팩 3이 실행되고 있지만 호스트 컴퓨터에서 Windows XP 서비스 팩 3이 실행되고 있지 않습니다. 자세한 내용은 Windows 원격 지원 설명서를 참조하세요.  
 
  Configuration Manager 콘솔의 모든 장치 컬렉션, Windows 명령 프롬프트 창 또는 Widnows **시작** 메뉴에서 원격 제어 세션을 시작할 수 있습니다.  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

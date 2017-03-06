@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 446c83b5-c292-4e74-ba19-0792ac6b3472
 caps.latest.revision: 8
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 52d2e088b8db3c2e9a0af640ca3db72b9fd7af60
 ms.openlocfilehash: f369bccb1da6d428fb321455272190e1a0439ec3
+ms.lasthandoff: 01/03/2017
 
 
 ---
@@ -149,9 +150,4 @@ ms.openlocfilehash: f369bccb1da6d428fb321455272190e1a0439ec3
 -   클라이언트 소프트웨어를 업그레이드할 수만 있고 새 클라이언트를 설치할 수는 없습니다.  
 
  [System Center Configuration Manager의 사전 프로덕션 컬렉션에서 클라이언트 업그레이드를 테스트하는 방법](../../../../core/clients/manage/upgrade/test-client-upgrades.md)  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

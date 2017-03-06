@@ -2,7 +2,7 @@
 title: "iOS 장치 등록 Apple Configurator - Configuration Manager | Microsoft 문서"
 descriptions: Pre-enroll iOS devices by using Apple Configurator with Configuration Manager.
 ms.custom: na
-ms.date: 12/16/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
 ms.openlocfilehash: 6c6e9edbc7b2fca3d1be4feabb238efab80465fa
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -136,9 +137,4 @@ ms.openlocfilehash: 6c6e9edbc7b2fca3d1be4feabb238efab80465fa
 ## <a name="step-5-distribute-devices"></a>5단계: 장치 배포
 
 이제 장치를 회사에 등록할 준비가 되었습니다. 장치를 끈 다음 사용자에게 배포합니다. 장치를 켜면 설치 도우미가 시작되고 등록을 시작하기 위해 회사 또는 학교 계정을 입력하라는 메시지가 표시됩니다.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

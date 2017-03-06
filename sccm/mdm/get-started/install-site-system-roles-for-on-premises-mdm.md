@@ -2,7 +2,7 @@
 title: "온-프레미스 MDM에 대한 역할 설치 - Configuration Manager | Microsoft 문서"
 description: "System Center Configuration Manager에서 온-프레미스 모바일 장치 관리를 위한 사이트 시스템 역할을 설치합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b
 ms.openlocfilehash: 916b971f851f968f6534ac834bd3182cc61614aa
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -71,9 +72,4 @@ System Center Configuration Manager 온\-프레미스 모바일 장치 관리를
      이렇게 하면 관리 지점이 장치 관리 지점이 됩니다.  
 
  사이트 시스템 역할이 추가되고 최신 장치를 관리하도록 구성되면 해당 역할을 호스트하는 서버를 관리되는 장치에 등록하고 통신하기 위한 신뢰할 수 있는 끝점으로 구성해야 합니다. 자세한 내용은 [System Center Configuration Manager에서 온-프레미스 모바일 장치 관리를 위해 신뢰할 수 있는 통신에 대한 인증서 설정](../../mdm/get-started/set-up-certificates-on-premises-mdm.md)을 참조하세요.  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

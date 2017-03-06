@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2c8f57cf-1968-48de-87fb-4897432ed6e0
 caps.latest.revision: 23
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b
 ms.openlocfilehash: 85afe010e734d20ae1f1479b3edd166c54cc8fd2
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -109,9 +110,4 @@ ms.openlocfilehash: 85afe010e734d20ae1f1479b3edd166c54cc8fd2
 |클라이언트 WMI 공급자가 정상인지 확인|WMI(Windows Management Instrumentation) 서비스를 다시 시작|이 클라이언트 검사의 해결 방법은 Windows Server 2003, Windows XP(64비트) 이하를 실행하는 컴퓨터에서만 수행해야 합니다.|  
 |절전 모드 해제 프록시 서비스(ConfigMgr 절전 모드 해제 프록시)가 실행 중인지 확인|ConfigMgr 절전 모드 해제 프록시 서비스를 시작|이 클라이언트 검사는 지원되는 클라이언트 운영 체제에서 **전원 관리**: **절전 모드 해제 프록시 사용** 클라이언트 설정이 **예** 로 설정된 경우에만 수행됩니다.|  
 |절전 모드 해제 프록시 서비스(ConfigMgr 절전 모드 해제 프록시) 시작 유형이 자동인지 확인|ConfigMgr 절전 모드 해제 프록시 서비스 시작 유형을 '자동'으로 다시 설정|이 클라이언트 검사는 지원되는 클라이언트 운영 체제에서 **전원 관리**: **절전 모드 해제 프록시 사용** 클라이언트 설정이 **예** 로 설정된 경우에만 수행됩니다.|  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

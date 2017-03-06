@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 110b65b3-2202-466f-bb5d-e5ee282506fc
 caps.latest.revision: 5
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 593fbd0587d54490246f48ae54f666bac6b7830d
 ms.openlocfilehash: dbdc74cc2f94553745eb50aeadf6d33a54064c6b
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -36,9 +37,4 @@ System Center Configuration Manager(ConfigMgr 또는 SCCM이라고도 함)는 �
 -   [System Center Configuration Manager에서 클라이언트를 관리하는 방법](../../../core/clients/manage/manage-clients.md)  
 
 -   [System Center Configuration Manager에서 Linux 및 UNIX 서버용 클라이언트를 관리하는 방법](../../../core/clients/manage/manage-clients-for-linux-and-unix-servers.md)  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

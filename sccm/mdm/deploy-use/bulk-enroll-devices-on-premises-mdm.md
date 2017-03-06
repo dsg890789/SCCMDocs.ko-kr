@@ -3,7 +3,7 @@
 title: "장치 대량 등록 | Microsoft 문서 | 온-프레미스 MDM"
 description: "System Center Configuration Manager에서 온-프레미스 모바일 장치 관리를 사용하여 자동화된 방법으로 장치를 대량 등록합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -20,6 +20,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
 ms.openlocfilehash: ef68a9f998ea6ff9628e01f6ac622711de68375d
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -165,9 +166,4 @@ System Center Configuration Manager 온-프레미스 모바일 장치 관리에�
 -   Configuration Manager 콘솔을 시작합니다.  
 
 -   마법사를 종료하려면 **자산 및 준수** > **개요** > **장치**에 필요한 사이트 시스템 역할 간의 신뢰할 수 있는 통신에 필요합니다. 등록된 장치가 목록에 표시됩니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

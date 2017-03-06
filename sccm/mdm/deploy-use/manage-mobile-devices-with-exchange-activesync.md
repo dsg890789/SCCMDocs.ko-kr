@@ -2,7 +2,7 @@
 title: "모바일 장치 관리 | Microsoft 문서"
 description: "System Center Configuration Manager에서 Exchange Server 커넥터를 사용하여 모바일 장치를 관리합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
 ms.openlocfilehash: 4a2b60d893e8d430b107a5bc43ec0748177c27c3
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -135,9 +136,4 @@ Microsoft Exchange ActiveSync 프로토콜을 사용하여 Exchange Server(온-�
     -   사이트 구성 요소 관리자에서 Exchange Server 커넥터를 설치했는지 확인하려면 **SMS_EXCHANGE_CONNECTOR** 구성 요소의 상태 ID **1015** 를 찾아보십시오. Configuration Manager에서 커넥터를 설치할 수 없는 경우, 예를 들어 지정한 클라이언트 액세스 서버 컴퓨터가 오프라인 상태라서 설치할 수 없는 경우 Configuration Manager에서 설치에 성공하거나 사용자가 Exchange Server 커넥터를 제거할 때까지 60분마다 다시 설치하려고 시도합니다.  
 
     -   사이트 서버 컴퓨터에서 SiteComp.log 파일을 검색한 후 이 로그 파일에서 `Component SMS_EXCHANGE_CONNECTOR flagged for installation`을 검색합니다. 설치가 완료되면 `STATMSG: ID=1015`텍스트가 기록됩니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

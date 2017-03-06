@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: 101d7d4d-92db-419d-b2ae-3c1c1dea68e9
 caps.latest.revision: 6
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: bc610b495047c49853c0a8f478cbf2773c0d3603
 ms.openlocfilehash: e50095ef618ec40a51c29ef2c8116f8e07401bd1
+ms.lasthandoff: 12/16/2016
 
 ---
 # <a name="about-client-installation-properties-published-to-active-directory-domain-services"></a>Active Directory Domain Services에 게시된 클라이언트 설치 속성 정보
@@ -125,9 +126,4 @@ System Center Configuration Manager용으로 Active Directory 스키마를 확�
 -   Active Directory Domain Services에 게시되지 않은 Configuration Manager 사이트에 할당된 클라이언트  
 
 -   인터넷상에 있을 때 설치된 클라이언트  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

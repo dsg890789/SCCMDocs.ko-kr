@@ -2,7 +2,7 @@
 title: "DEP(장치 등록 프로그램)를 사용하여 iOS 장치 등록 - Configuration Manager | Microsoft 문서"
 description: "Configuration Manager 및 Intune에서 하이브리드 배포를 위해 iOS DEP(장치 등록 프로그램) 등록을 사용하도록 설정합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
 ms.openlocfilehash: 4222ca27e19ade46d53f8cd4598643ddd4fd5c8f
+ms.lasthandoff: 01/24/2017
 
 ---
 # <a name="ios-device-enrollment-program-dep-enrollment-for-hybrid-deployments-with-configuration-manager"></a>Configuration Manager에서의 하이브리드 배포를 위한 iOS DEP(장치 등록 프로그램) 등록
@@ -121,9 +122,4 @@ ms.openlocfilehash: 4222ca27e19ade46d53f8cd4598643ddd4fd5c8f
 
 4.  ****   
     이제 회사 소유 장치를 사용자에게 제공할 수 있습니다. IOS 장치를 설정하는 경우에 Intune에 관리용으로 등록됩니다.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e46ad501-5d73-44ac-92de-0de14ef72b83
 caps.latest.revision: 12
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: c74b553ab76a2b77b0d893151351132da05a640d
 ms.openlocfilehash: 76ce5f413f406088862fb310bbea24140317ca06
+ms.lasthandoff: 01/04/2017
 
 
 ---
@@ -324,9 +325,4 @@ CMEnroll 도구를 사용하여 클라이언트 설치를 자동화하고 클라
 ### <a name="see-also"></a>참고 항목
 
 [Mac 클라이언트 유지 관리](/sccm/core/clients/manage/maintain-mac-clients)
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

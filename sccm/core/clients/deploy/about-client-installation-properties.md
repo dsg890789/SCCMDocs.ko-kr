@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c890fd27-7a8c-4f51-bbe2-f9908af1f42b
 caps.latest.revision: 15
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: a1fc9f2db7c9c2b40d986bb39a0b27d6cc699987
 ms.openlocfilehash: 454828d64b5643e57da4cff3aa3f671e8cd157b1
+ms.lasthandoff: 01/05/2017
 
 ---
 # <a name="about-client-installation-properties-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 설치 속성 정보
@@ -582,9 +583,4 @@ Configuration Manager 클라이언트가 사용할 초기 관리 지점을 지�
 |2.5.4.42|G 또는 GN 또는 GivenName|이름|  
 |2.5.4.43|I 또는 Initials|이니셜|  
 |2.5.29.17|(값 없음)|주체 대체 이름|  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

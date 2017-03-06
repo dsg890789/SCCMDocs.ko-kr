@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: 49ef2ed2-2e15-4637-8b63-1d5b7f9c17e1
 caps.latest.revision: 10
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 52d2e088b8db3c2e9a0af640ca3db72b9fd7af60
 ms.openlocfilehash: 250c9312b932670c408554f3968ae43ae4f3dbaa
+ms.lasthandoff: 01/03/2017
 
 
 ---
@@ -79,9 +80,4 @@ ms.openlocfilehash: 250c9312b932670c408554f3968ae43ae4f3dbaa
 2.  프로덕션 및 사전 프로덕션의 클라이언트 버전을 검토하고 올바른 사전 프로덕션 컬렉션이 지정되었는지 확인한 다음 **수준 올리기**, **예**를 차례로 클릭합니다.  
 
 3.  대화 상자를 닫으면 계층에서 사용하는 클라이언트 버전이 업데이트된 클라이언트 버전으로 대체됩니다. 그런 다음 전체 사이트에 대해 클라이언트를 업그레이드할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 Windows 컴퓨터용 클라이언트를 업그레이드하는 방법](../../../../core/clients/manage/upgrade/upgrade-clients-for-windows-computers.md)을 참조하세요.  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

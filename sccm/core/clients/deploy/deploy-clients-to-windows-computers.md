@@ -13,12 +13,13 @@ ms.topic: get-started-article
 ms.assetid: 341f0d0b-f907-44cf-9e10-e1b41fc15f82
 caps.latest.revision: 13
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 9555a16d97224a1cf49a426ab225468b07403f60
 ms.openlocfilehash: 0e5e624fdfc2b5ee5b497d1063bd4e2d15df578b
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -472,8 +473,3 @@ Configuration Manager 클라이언트 소프트웨어를 다른 컴퓨터를 이
 
 ### <a name="see-also"></a>참고 항목
 [System Center Configuration Manager의 클라이언트 설치 방법](../../../core/clients/deploy/plan/client-installation-methods.md)
-
-
-<!--HONumber=Dec16_HO5-->
-
-

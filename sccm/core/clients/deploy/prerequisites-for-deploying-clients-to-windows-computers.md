@@ -13,12 +13,13 @@ ms.topic: get-started-article
 ms.assetid: 1a2a9b48-a95b-4643-b00c-b3079584ae2e
 caps.latest.revision: 16
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
 ms.openlocfilehash: cbcffea0fe2b4c8a05d3a835ff1193b528e55762
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -235,9 +236,4 @@ ms.openlocfilehash: cbcffea0fe2b4c8a05d3a835ff1193b528e55762
 -   등록 프록시 지점 및 등록 지점 간: HTTPS(기본적으로 TCP 443)  
 
  프록시 웹 서버를 사용하는 경우 SSL 터널링에 대해 프록시 웹 서버를 구성해야 하며 SSL 브리징은 모바일 장치에 대해 지원되지 않습니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

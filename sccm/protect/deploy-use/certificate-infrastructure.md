@@ -13,12 +13,13 @@ ms.topic: get-started-article
 ms.assetid: 29ae59b7-2695-4a0f-a9ff-4f29222f28b3
 caps.latest.revision: 7
 caps.handback.revision: 0
-author: Nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
 ms.openlocfilehash: 56e0a1923305c5134386623b1e306b8ebd013d53
+ms.lasthandoff: 12/16/2016
 
 ---
 # <a name="certificate-infrastructure"></a>인증서 인프라
@@ -191,9 +192,4 @@ ms.openlocfilehash: 56e0a1923305c5134386623b1e306b8ebd013d53
  네트워크 장치 등록 서비스와 종속 항목, 인증서 등록 지점 및 System Center Configuration Manager 정책 모듈을 설치하는 구성 단계를 완료했으므로 인증서 프로필을 만들어 배포하는 방식으로 사용자와 장치에 인증서를 배포할 준비가 되었습니다. 인증서 프로필을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 인증서 프로필을 만드는 방법](../../protect/deploy-use/create-certificate-profiles.md)을 참조하세요.  
 
  System Center Configuration Manager 정책 모듈을 제거하려는 경우 제어판에서 **프로그램 및 기능**을 사용하세요.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

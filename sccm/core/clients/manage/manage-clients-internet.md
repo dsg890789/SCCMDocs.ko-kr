@@ -6,12 +6,13 @@ ms.prod: configuration-manager
 ms.technology:
 - configmgr-client
 ms.assetid: c667d6af-80c4-485f-910c-896c0171fd00
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b
 ms.openlocfilehash: 6104107429184f31df12db84089f41df1ef81539
+ms.lasthandoff: 01/24/2017
 
 ---
 
@@ -70,9 +71,4 @@ Configuration Manager는 인터넷에 연결된 클라이언트를 관리하는 
 -   인프라를 인터넷에 노출해야 합니다.
 
 자세한 내용은 [인터넷 기반 클라이언트 관리 계획](plan-internet-based-client-management.md)을 참조하세요.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

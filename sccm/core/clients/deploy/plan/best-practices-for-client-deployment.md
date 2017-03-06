@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: a933d69c-5feb-4b2b-84e8-56b3b64d5947
 caps.latest.revision: 11
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 9206b82eca02877c30eebf146d42bcca7290eb42
 ms.openlocfilehash: 9c2fd7cea178716f81571856608ce517049a3e8d
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -78,9 +79,4 @@ ms.openlocfilehash: 9c2fd7cea178716f81571856608ce517049a3e8d
  Configuration Manager 클라이언트에서 사용할 쓰기 필터 유형을 선택하는 옵션이 나타나면 네트워크 및 CPU 효율성을 위해 파일 기반 쓰기 필터를 선택하고 장치 다시 시작 사이에 클라이언트 상태와 인벤토리 데이터를 유지하는 예외를 구성합니다. 필터 작성에 대한 자세한 내용은   [System Center Configuration Manager에서 Windows Embedded 장치에 클라이언트 배포 계획](../../../../core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)항목을 참조하세요.  
 
  기본 사이트에서 지원할 수 있는 Windows Embedded 클라이언트의 최대 수에 대한 자세한 내용은 [클라이언트 및 장치에 대해 지원되는 운영 체제](../../../../core/plan-design/configs/supported-operating-systems-for-clients-and-devices.md)를 참조하세요.  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

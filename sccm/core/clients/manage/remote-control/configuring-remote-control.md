@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: 45affc27-aa11-4249-9493-082ac23a3a3d
 caps.latest.revision: 4
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 9206b82eca02877c30eebf146d42bcca7290eb42
 ms.openlocfilehash: 20c28a625adb69f239b9c0e7673e57dd39e8d561
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -67,9 +68,4 @@ Configuration Manager에서는 기본적으로 뷰어의 위치에서 공유자�
 |Alt+Delete|Windows 메뉴를 표시합니다.|  
 |Ctrl+Alt+빼기 기호(숫자 키패드의 키)|로컬 컴퓨터의 활성 창을 원격 컴퓨터 클립보드에 복사합니다.|  
 |Ctrl+Alt+더하기 기호(숫자 키패드의 키)|전체 로컬 컴퓨터의 창 영역을 원격 컴퓨터 클립보드에 복사합니다.|  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

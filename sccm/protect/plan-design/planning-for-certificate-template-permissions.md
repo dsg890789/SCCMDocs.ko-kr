@@ -13,12 +13,13 @@ ms.topic: get-started-article
 ms.assetid: eab0e09d-b09e-4c14-ab14-c5f87472522e
 caps.latest.revision: 5
 caps.handback.revision: 0
-author: Nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
 ms.openlocfilehash: 3c3725678561c32fce316ed1209ac8fe73a0eed1
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -62,9 +63,4 @@ ms.openlocfilehash: 3c3725678561c32fce316ed1209ac8fe73a0eed1
     -   인증서 등록 지점을 호스트하는 사이트 시스템 서버에 1 값을 갖는 다음 DWORD 레지스트리 키를 만듭니다. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SCCM\CRP\SkipTemplateCheckOnlyIfAccountAccessDenied  
 
 3.  발급 CA에서, 인증서 템플릿 속성에 있는 **보안** 탭에서 보안 그룹을 하나 이상 추가하여 사용자 또는 장치 계정에 읽기 및 등록 권한을 부여합니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -2,7 +2,7 @@
 title: "iOS 활성화 잠금 관리 | Microsoft 문서"
 description: "System Center Configuration Manager로 iOS 활성화 잠금을 관리합니다."
 ms.custom: na
-ms.date: 12/15/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: a25c6b409ea6501ead762fabb8cc11c62c84885d
 ms.openlocfilehash: cf98bbb9dee6142e8b085dbffcadb3ed712adcb9
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -104,9 +105,4 @@ Configuration Manager 준수 설정을 사용해 **iOS 및 Mac OS X** 형식의 
     - 장치 속성 대화 상자의 장치에 대한 검색 데이터
     - **장치** 보기의 **활성화 잠금 무시 상태** 열(이 열은 기본적으로 숨겨져 있음)
     - 세부 정보 창의 **요약** 탭에 있는 **원격 장치 작업 정보** 섹션(장치를 선택한 경우)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

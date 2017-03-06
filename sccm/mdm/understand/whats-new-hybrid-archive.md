@@ -2,7 +2,7 @@
 title: "새로운 기능 하이브리드 MDM 보관 | Microsoft 문서"
 description: "System Center Configuration Manager 및 Intune을 포함하는 하이브리드 배포에 사용할 수 있는 과거 모바일 장치 관리 기능의 보관 파일입니다."
 ms.custom: na
-ms.date: 10/25/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,6 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 translationtype: Human Translation
 ms.sourcegitcommit: bd870d66bb1a482cb5985f1fc0fe66a7dee206eb
 ms.openlocfilehash: d286b038c900873154d3a0761aa1eaface47e186
+ms.lasthandoff: 01/22/2017
 
 ---
 # <a name="past-hybrid-features-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하는 이전 하이브리드 기능
@@ -44,7 +45,7 @@ ms.openlocfilehash: d286b038c900873154d3a0761aa1eaface47e186
 
   Outlook 등의 Intune 모바일 응용 프로그램 관리 정책을 지원하는 앱에서만 액세스할 수 있도록 Exchange Online에 대한 액세스를 제한할 수 있습니다. [이 새로운 기능](/intune/deploy-use/allow-policy-managed-apps-access-to-o365)은 기본 제공 메일 클라이언트 또는 Intune MAM 정책으로 구성되지 않은 다른 앱에 대한 액세스를 차단할 수 있도록 Intune MAM(모바일 앱 관리) 정책과 완벽하게 연결됩니다. 이렇게 하면 사용자가 Intune MAM으로 보호할 수 있는 앱을 사용하여 조직의 데이터에 액세스합니다. Azure Portal을 통해 Intune 모바일 앱 관리를 시작할 수 있습니다. "설정" 블레이드에서 새 조건부 액세스 섹션을 찾습니다.
 
--   **Android용 Intune 앱 래핑 도구**
+-    **Android용 Intune 앱 래핑 도구**
 
   Intune 앱 래핑 도구를 통해 앱이 Intune MAM(모바일 응용 프로그램 관리) 정책을 사용할 수 있도록 설정할 수 있습니다.
 
@@ -55,10 +56,10 @@ ms.openlocfilehash: d286b038c900873154d3a0761aa1eaface47e186
   영향을 받는 모델 번호는 다음과 같습니다.
 
   - SM-G313HU
-  - SM-G313HY
-  - SM-G313M
-  - SM-G313MY
-  - SM-G313U
+  -    SM-G313HY
+  -    SM-G313M
+  -    SM-G313MY
+  -    SM-G313U
 
   관리자와 최종 사용자가 추가 작업을 수행할 필요는 없습니다. 자세한 내용은 삼성 KNOX 웹 사이트를 참조하세요.
 
@@ -212,14 +213,14 @@ Configuration Manager Technical Preview 2016년 7월에 새로 도입된 하이�
 이전에 Configuration Manager Technical Preview 릴리스에서 사용할 수 있었던 다음 기능을 이제 Intune과 Configuration Manager(현재 분기) 버전 1606을 포함하는 하이브리드 배포에서 사용할 수 있습니다.
 
 * Configuration Manager 콘솔에서 Windows 10 장치에 대한 비즈니스용 Windows 스토어 앱 찾기, 관리 및 배포([1604](#new-in-1604-technical-preview))
-*   Android 장치에 대한 SmartLock 설정([1604](#new-in-1604-technical-preview))
-*   Windows 10 장치를 위한 앱 트리거 VPN([1605](#new-in-1605-technical-preview))
-*   원격 장치 작업을 위한 새로운 환경([1605](#new-in-1605-technical-preview))
-*   비즈니스용 Windows 스토어 앱([1605](#new-in-1605-technical-preview))
-*   대량 구매 앱의 일반적인 향상 기능([1605](#new-in-1605-technical-preview))
-*   WIP(Windows Information Protection)([1605](#new-in-1605-technical-preview))
-*   IMEI 또는 iOS 일련 번호로 회사 소유 장치 미리 선언([1605](#new-in-1605-technical-preview))
-*   컬렉션으로 장치 자동 분류([1606](#new-in-1606-technical-preview))
+*     Android 장치에 대한 SmartLock 설정([1604](#new-in-1604-technical-preview))
+*    Windows 10 장치를 위한 앱 트리거 VPN([1605](#new-in-1605-technical-preview))
+*    원격 장치 작업을 위한 새로운 환경([1605](#new-in-1605-technical-preview))
+*    비즈니스용 Windows 스토어 앱([1605](#new-in-1605-technical-preview))
+*    대량 구매 앱의 일반적인 향상 기능([1605](#new-in-1605-technical-preview))
+*    WIP(Windows Information Protection)([1605](#new-in-1605-technical-preview))
+*    IMEI 또는 iOS 일련 번호로 회사 소유 장치 미리 선언([1605](#new-in-1605-technical-preview))
+*    컬렉션으로 장치 자동 분류([1606](#new-in-1606-technical-preview))
 
 새로운 기능에 대한 자세한 내용은 지정된 기술 미리 보기 릴리스에 대한 설명서를 참조하세요.
 
@@ -479,9 +480,4 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 - **iOS 활성화 잠금**
 
   Configuration Manager(현재 분기) 버전 1602부터, iOS 7.1 이상 장치용 나의 iPhone 찾기(Find My iPhone) 앱의 기능인 iOS 활성화 잠금을 관리할 수 있습니다. 활성화 잠금은 장치에서 나의 iPhone 찾기 앱을 사용할 때 자동으로 사용하도록 설정됩니다.  자세한 내용은 [System Center Configuration Manager에 대한 iOS 활성화 잠금 무시 관리](/sccm/mdm/deploy-use/manage-ios-activation-lock#bypass-activation-lock)를 참조하세요.  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

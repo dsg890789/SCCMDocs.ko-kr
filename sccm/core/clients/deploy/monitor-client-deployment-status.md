@@ -13,12 +13,13 @@ ms.topic: get-started-article
 ms.assetid: 20a573b3-53cb-4ed5-bae1-7542f533ed20
 caps.latest.revision: 11
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 52d2e088b8db3c2e9a0af640ca3db72b9fd7af60
 ms.openlocfilehash: 0ca218e4276699dd9029308e1d8ac524563da7c5
+ms.lasthandoff: 01/03/2017
 
 
 ---
@@ -63,9 +64,4 @@ ms.openlocfilehash: 0ca218e4276699dd9029308e1d8ac524563da7c5
  배포된 클라이언트 상태를 모니터링하려면 [System Center Configuration Manager에서 클라이언트를 모니터링하는 방법](../../../core/clients/manage/monitor-clients.md)을 참조하세요.  
 
  Configuration Manager 보고서를 사용하면 사이트 내 클라이언트의 상태에 대해 더 많은 정보를 확인할 수 있습니다. 보고서 실행 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고 기능](../../../core/servers/manage/reporting.md)을 참조하세요.  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

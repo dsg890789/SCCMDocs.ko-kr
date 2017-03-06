@@ -2,7 +2,7 @@
 title: "온-프레미스 MDM(모바일 장치 관리) | Microsoft 문서"
 description: "System Center Configuration Manager의 장치 관리 솔루션인 온-프레미스 모바일 장치 관리에 대해 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
 ms.openlocfilehash: cbd33bf3cf7d623d9ba7a657d4ca7d746d7e79da
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -50,9 +51,4 @@ System Center Configuration Manager 온\-프레미스 모바일 장치 관리는
 -   [System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 위한 장치 등록](../deploy-use/enroll-devices-on-premises-mdm.md)  
 
      등록을 수행하는 방법, 사용자가 자신의 장치를 등록하는 방법 그리고 등록 패키지로 장치를 대량으로 등록하는 방법에 대해 알아봅니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

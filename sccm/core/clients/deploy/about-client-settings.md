@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: f7560876-8084-4570-aeab-7fd44f4ba737
 caps.latest.revision: 15
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: d7265aec46474ba7fc317ddb5e20b91b7b134585
 ms.openlocfilehash: 36f6eb3fe48e904adf4d04450906fada9b477246
+ms.lasthandoff: 12/30/2016
 
 ---
 # <a name="about-client-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 설정 정보
@@ -641,9 +642,4 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
 -   **사용자가 기본 장치를 정의할 수 있도록 허용**  
 
      응용 프로그램 카탈로그의 **내 장치** 탭에서 사용자 자신의 기본 장치를 식별할 수 있도록 허용할지 여부를 지정합니다.  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

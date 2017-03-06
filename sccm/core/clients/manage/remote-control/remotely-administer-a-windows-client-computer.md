@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: 3c9648c4-645e-4e47-ae10-2da817b8c83b
 caps.latest.revision: 5
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 08afca8b422474639cbdb860e555fe0da27361a4
 ms.openlocfilehash: dd794de867e1d0db47be9dc21a6d494087f76bc1
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -97,9 +98,4 @@ ms.openlocfilehash: dd794de867e1d0db47be9dc21a6d494087f76bc1
     > -   **/?** – 원격 제어 뷰어에 대한 명령줄 옵션을 표시합니다.  
     >   
     >  **예:CmRcViewer.exe** *<주소\>* *<\\\사이트 서버 이름 >*  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
