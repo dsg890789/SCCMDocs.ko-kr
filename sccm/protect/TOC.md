@@ -36,7 +36,7 @@
 ### [암호화 컨트롤 기술 참조](deploy-use/cryptographic-controls-technical-reference.md)
 
 ## [Endpoint Protection](deploy-use/endpoint-protection.md)
-### [Endpoint Protection 구성](deploy-use/configure-endpoint-protection.md)
+### [Endpoint Protection 구성](deploy-use/endpoint-protection-configure.md)
 #### [사이트 시스템 역할](deploy-use/endpoint-protection-site-role.md)
 #### [경고](deploy-use/endpoint-configure-alerts.md)
 #### [정의 업데이트](deploy-use/endpoint-definition-updates.md)
@@ -68,12 +68,13 @@
 ### [비즈니스용 Skype Online 액세스 관리](deploy-use/manage-skype-for-business-online-access.md)
 ### [Dynamics CRM Online 액세스 관리](deploy-use/manage-dynamics-crm-online-access.md)
 ### [O365 서비스에 대한 PC 액세스 관리](deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md)
-## [장치, 네트워크 및 응용 프로그램 위험에 따라 액세스 관리](deploy-use/manage-access-based-on-device-network-app-risk.md)
-### [Lookout 장치 위협 방지 설정](deploy-use/set-up-your-subscription-with-lookout.md)
-### [Intune에서 Lookout 사용](deploy-use/enable-lookout-connection-in-intune.md)
-### [Lookout for Work 앱 배포](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
-### [장치 위협 방지 정책 사용](deploy-use/enable-device-threat-protection-rule-compliance-policy.md)
-### [Lookout 통합 문제 해결](deploy-use/troubleshoot-lookout-integration.md)
+## [장치, 네트워크 및 응용 프로그램 위험에 따라 액세스 관리](deploy-use/configuration-manager-mobile-threat-defense.md)
+### [Configuration Manager에서 Lookout](deploy-use/lookout-mobile-threat-defense-in-configuration-manager.md)
+#### [Lookout 장치 위협 방지 설정](deploy-use/set-up-your-subscription-with-lookout.md)
+#### [Intune에서 Lookout 사용](deploy-use/enable-lookout-connection-in-intune.md)
+#### [Lookout for Work 앱 배포](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
+#### [장치 위협 방지 정책 사용](deploy-use/enable-device-threat-protection-rule-compliance-policy.md)
+#### [Lookout 통합 문제 해결](deploy-use/troubleshoot-lookout-integration.md)
 
 ## [비즈니스용 Windows Hello 설정](deploy-use/windows-hello-for-business-settings.md)
 
@@ -83,8 +84,3 @@
 ### [Wi-Fi, 메일 및 VPN 프로필 모니터링](deploy-use/monitor-wifi-email-vpn-profiles.md)
 ### [인증서 프로필 모니터링](deploy-use/monitor-certificate-profiles.md)
 ### [Endpoint Protection 모니터링](deploy-use/monitor-endpoint-protection.md)
-
-
-<!--HONumber=Dec16_HO3-->
-
-
