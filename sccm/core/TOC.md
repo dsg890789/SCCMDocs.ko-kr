@@ -120,8 +120,7 @@
 #### [마이그레이션 모니터링 계획](migration/planning-to-monitor-migration-activity.md)
 #### [마이그레이션 완료 계획](migration/planning-to-complete-migration.md)
 ###  [원본 계층 구조 및 원본 사이트 구성](migration/configuring-source-hierarchies-and-source-sites-for-migration.md)
-###  [마이그레이션을 위한 작업](migration/operations-for-migration.md)
-###  [마이그레이션에 대한 보안 및 개인 정보](migration/security-and-privacy-for-migration.md)
+###  [마이그레이션을 위한 작업](migration/operations-for-migration.md)###  [마이그레이션에 대한 보안 및 개인 정보](migration/security-and-privacy-for-migration.md)
 
 #    [서버 및 역할 배포](servers/deploy/start-using.md)
 
@@ -172,14 +171,20 @@
 ###  [콘솔 내 업데이트 설치](servers/manage/install-in-console-updates.md)
 #### [순서도 – 업데이트 다운로드](servers/manage/download-updates-flowchart.md)
 #### [순서도 – 업데이트 복제](servers/manage/update-replication-flowchart.md)
+###  [시험판 기능](servers/manage/pre-release-features.md)
 ###  [사이트 서버에 대한 서비스 기간](servers/manage/service-windows.md)
 ###  [서비스 연결 도구 사용](servers/manage/use-the-service-connection-tool.md)
 ###  [업데이트 등록 도구 사용](servers/manage/use-the-update-registration-tool-to-import-hotfixes.md)
 ###  [핫픽스 설치 관리자 사용](servers/manage/use-the-hotfix-installer-to-install-updates.md)
+<!-- 
+###  [Checklist for installing update 1702](servers/manage/checklist-for-installing-update-1702.md)
+-->
 ###  [업데이트 1610을 설치하기 위한 검사 목록](servers/manage/checklist-for-installing-update-1610.md)
 ###  [업데이트 1606을 설치하기 위한 검사 목록](servers/manage/checklist-for-installing-update-1606.md)
-###  [업데이트 1602를 설치하기 위한 검사 목록](servers/manage/checklist-for-installing-update-1602.md)
-###  [현재 분기 버전 지원](servers/manage/current-branch-versions-supported.md)
+<!-- Deprecated from Content:
+###  [Checklist for installing update 1602](servers/manage/checklist-for-installing-update-1602.md)
+###  [Support for current branch versions](servers/manage/current-branch-versions-supported.md)  
+-->
 
 ##   인프라 모니터링
 ###  [경고 및 상태 시스템 사용](servers/manage/use-alerts-and-the-status-system.md)
@@ -202,6 +207,7 @@
 #### [보고 작업 및 유지 관리](servers/manage/operations-and-maintenance-for-reporting.md)
 #### [사용자 지정 보고서 모델 만들기](servers/manage/creating-custom-report-models-in-sql-server-reporting-services.md)
 #### [보고에 대한 보안 및 개인 정보](servers/manage/security-and-privacy-for-reporting.md)
+###  [데이터 웨어하우스](servers/manage/data-warehouse.md)
 
 #    클라이언트 배포
 ##   클라이언트 배포 계획
@@ -260,7 +266,6 @@
 ###  [하드웨어 인벤토리 소개](clients/manage/inventory/introduction-to-hardware-inventory.md)
 ###  [하드웨어 인벤토리를 확장하는 방법](clients/manage/inventory/extend-hardware-inventory.md)
 ###  [하드웨어 인벤토리를 구성하는 방법](clients/manage/inventory/configure-hardware-inventory.md)
-###  [하이브리드 배포에서 모바일 장치에 대한 하드웨어 인벤토리를 구성하는 방법](clients/manage/inventory/mobile-device-hardware-inventory-hybrid.md)
 ###  [하드웨어 인벤토리를 보기 위해 리소스 탐색기를 사용하는 방법](clients/manage/inventory/use-resource-explorer-to-view-hardware-inventory.md)
 ###  [Linux 및 UNIX용 하드웨어 인벤토리](clients/manage/inventory/hardware-inventory-for-linux-and-unix.md)
 ###  [하드웨어 인벤토리에 대한 보안 및 개인 정보](clients/manage/inventory/security-and-privacy-for-hardware-inventory.md)

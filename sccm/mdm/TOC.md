@@ -1,41 +1,97 @@
-#  [이해 및 탐색](understand/hybrid-mobile-device-management.md)
-## [하이브리드 MDM](understand/hybrid-mobile-device-management.md)
-## [Intune 또는 하이브리드 MDM 선택](understand/choose-between-standalone-intune-and-hybrid-mobile-device-management.md)
+# 개요
+## [하이브리드 MDM이란?](understand/hybrid-mobile-device-management.md)
+## [Intune 독립 실행형 또는 하이브리드 MDM를 선택](understand/choose-between-standalone-intune-and-hybrid-mobile-device-management.md)
 ## [하이브리드 MDM의 새로운 기능](understand/whats-new-in-hybrid-mobile-device-management.md)
-## [온-프레미스 MDM](understand/manage-mobile-devices-with-on-premises-infrastructure.md)
 
 # [계획 및 디자인](plan-design/plan-hybrid-mobile-device-management.md)
-## [하이브리드 MDM 계획](plan-design/plan-hybrid-mobile-device-management.md)
-## [온-프레미스 MDM 계획](plan-design/plan-on-premises-mdm.md)
+## [지원되는 장치 플랫폼](plan-design/supported-device-platforms-for-hybrid.md)
+## [장치 등록 방법](plan-design/device-enrollment-methods.md)
 
-# [배포 및 사용](deploy-use/setup-hybrid-mdm.md)
-
-## [하이브리드 MDM 설정](deploy-use/setup-hybrid-mdm.md)
-### [iOS 및 Mac](deploy-use/enroll-hybrid-ios-mac.md)
+# [시작](deploy-use/setup-hybrid-mdm.md)
+## [MDM 컬렉션 만들기](deploy-use/create-mdm-collection.md)
+## [도메인 이름 요구 사항을 확인](deploy-use/confirm-dns.md)
+## [Intune 구독 구성](deploy-use/configure-intune-subscription.md)
+## [사용 약관 추가](deploy-use/terms-and-conditions.md)
+## [서비스 연결 지점 만들기](deploy-use/create-service-connection-point.md)
+## [플랫폼 등록 사용](deploy-use/enable-platform-enrollment.md)
+### [iOS 및 MAC](deploy-use/enroll-hybrid-ios-mac.md)
 ### [Windows](deploy-use/enroll-hybrid-windows.md)
-### [Android](deploy-use/enroll-hybrid-android.md)
-### [계약조건](deploy-use/terms-and-conditions.md)
-## [하이브리드 MDM에서 회사 소유 장치 등록](deploy-use/enroll-company-owned-devices.md)
+### [OWA(Outlook Web Access)](deploy-use/enroll-hybrid-android.md)
+## [추가 관리 설정](deploy-use/set-up-additional-management.md)
+## [MDM 구성 확인](deploy-use/verify-mdm-configuration.md)
+
+# 방법
+## [사용자 소유의 (BYOD) 장치 등록](deploy-use/enroll-user-owned-devices.md)
+## [회사 소유 장치 등록](deploy-use/enroll-company-owned-devices.md)
 ### [iOS DEP 등록](deploy-use/ios-device-enrollment-program-for-hybrid.md)
 ### [Apple Configurator 등록](deploy-use/ios-hybrid-enrollment-using-apple-configurator.md)
 ### [장치 등록 관리자](deploy-use/enroll-devices-with-device-enrollment-manager.md)
 ### [하드웨어 ID 미리 선언](deploy-use/predeclare-devices-with-hardware-id.md)
 ### [iOS 활성화 잠금 관리](deploy-use/manage-ios-activation-lock.md)
-### [사용자 선호도](deploy-use/user-affinity-for-hybrid-managed-devices.md)
+### [사용자 장치 선호도](deploy-use/user-affinity-for-hybrid-managed-devices.md)
 
-## [온-프레미스 MDM 설정](get-started/preparation-steps-for-on-premises-mdm.md)
-### [Intune 설정](get-started/set-up-intune-subscription-on-premises-mdm.md)
+## [장치 사용 중지/초기화, 잠금, 다시 설정](deploy-use/wipe-lock-reset-devices.md)
+## [하드웨어 인벤토리 구성](deploy-use/mobile-device-hardware-inventory-hybrid.md)
+## [소프트웨어 인벤토리 구성](deploy-use/software-inventory-mobile-devices.md)
+
+## [준수 설정 관리](deploy-use/manage-compliance-settings.md)
+### [Windows 8.1 및 Windows 10](deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)
+### [Windows Phone](deploy-use/create-configuration-items-for-windows-phone-devices-managed-without-the-client.md)
+### [iOS 및 Mac OS X](deploy-use/create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client.md)
+### [Android 및 Samsung KNOX Standard](deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client.md)
+
+## [Intune에 등록된 장치 동기화](deploy-use/sync-intune-device.md)
+
+## [응용 프로그램 관리](deploy-use/management-tasks-applications.md)
+### [iOS 응용 프로그램 만들기](deploy-use/creating-ios-applications.md)
+### [iOS 앱 구성 정책](deploy-use/configure-ios-apps-with-app-configuration-policies.md)
+### [iOS 대량 구매 앱](deploy-use/manage-volume-purchased-ios-apps.md)
+### [Windows Phone 응용 프로그램 만들기](deploy-use/creating-windows-phone-applications.md)
+### [Android 응용 프로그램 만들기](deploy-use/creating-android-applications.md)
+### [모바일 응용 프로그램 관리 정책](deploy-use/protect-apps-using-mam-policies.md)
+### [관리 브라우저 정책](deploy-use/manage-internet-access-using-managed-browser-policies.md)
+### [비즈니스용 Windows 스토어 앱](deploy-use/windows-store-for-business.md)
+
+## [Intune 구독 관리](deploy-use/manage-intune-subscriptions.md)
+
+## 리소스 액세스 관리
+### [Wi-Fi 프로필 만들기](deploy-use/create-wifi-profiles.md)
+### [PFX 인증서 프로필 만들기](deploy-use/create-pfx-certificate-profiles.md)
+### [VPN 프로필](deploy-use/create-vpn-profiles.md)
+### [메일 프로필 만들기](deploy-use/create-exchange-activesync-profiles.md)
+### [비즈니스용 Windows Hello 설정 ](deploy-use/windows-hello-for-business-settings.md)
+
+## [조건부 액세스 관리](deploy-use/manage-access-to-services.md)
+### [장치 준수 정책](deploy-use/device-compliance-policies.md)
+### [장치 준수 정책 만들기](deploy-use/create-compliance-policy.md)
+### [메일 액세스 관리](deploy-use/manage-email-access.md)
+### [SharePoint Online 액세스 관리](deploy-use/manage-sharepoint-online-access.md)
+### [비즈니스용 Skype Online 액세스 관리](deploy-use/manage-skype-for-business-online-access.md)
+### [Dynamics CRM Online 액세스 관리](deploy-use/manage-dynamics-crm-online-access.md)
+### [O365 서비스에 대한 PC 액세스 관리](deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md)
+
+## [위험에 따라 액세스 관리](deploy-use/manage-access-based-on-device-network-app-risk.md)
+### [Lookout 장치 위협 방지 설정](deploy-use/set-up-your-subscription-with-lookout.md)
+### [Intune에서 Lookout 사용](deploy-use/enable-lookout-connection-in-intune.md)
+### [Lookout for Work 앱 배포](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
+### [장치 위협 방지 정책 사용](deploy-use/enable-device-threat-protection-rule-compliance-policy.md)
+### [Lookout 통합 문제 해결](deploy-use/troubleshoot-lookout-integration.md)
+
+# 온-프레미스 MDM(모바일 장치 관리)
+## [온-프레미스 MDM이란?](understand/manage-mobile-devices-with-on-premises-infrastructure.md)
+## [온-프레미스 MDM 계획](plan-design/plan-on-premises-mdm.md)
+
+## [설치 단계](get-started/preparation-steps-for-on-premises-mdm.md)
+### [Intune 구독 설정](get-started/set-up-intune-subscription-on-premises-mdm.md)
 ### [온-프레미스 역할 설치](get-started/install-site-system-roles-for-on-premises-mdm.md)
 ### [인증서 설정](get-started/set-up-certificates-on-premises-mdm.md)
-### [장치 등록 설정](get-started/set-up-device-enrollment-on-premises-mdm.md)
+### [등록에 대 한 설정](get-started/set-up-device-enrollment-on-premises-mdm.md)
+
 ## [온-프레미스 MDM에 대한 장치 등록](deploy-use/enroll-devices-on-premises-mdm.md)
 ### [사용자 등록](deploy-use/user-enroll-devices-on-premises-mdm.md)
 ### [대량 등록](deploy-use/bulk-enroll-devices-on-premises-mdm.md)
+## [장치 관리](deploy-use/onprem-manage-devices.md)
+## [응용 프로그램 관리](deploy-use/onprem-manage-applications.md)
+## [데이터 및 장치 보호](deploy-use/onprem-protect-data-devices.md)
 
-## [장치 사용 중지, 잠금 및 다시 설정](deploy-use/wipe-lock-reset-devices.md)
-## [Exchange를 사용하여 장치 관리](deploy-use/manage-mobile-devices-with-exchange-activesync.md)
-
-
-<!--HONumber=Nov16_HO1-->
-
-
+# [Exchange를 사용한 장치 관리](deploy-use/manage-mobile-devices-with-exchange-activesync.md)
