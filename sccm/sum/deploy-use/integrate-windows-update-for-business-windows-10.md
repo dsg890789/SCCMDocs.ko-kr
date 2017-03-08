@@ -1,6 +1,6 @@
 ---
 
-title: "Windows 10에서 비즈니스용 Windows 업데이트와 통합 | Configuration Manager"
+title: "Windows 10에서 비즈니스용 Windows 업데이트와 통합 | Microsoft 문서"
 description: "비즈니스용 Windows 업데이트를 사용하면 Windows 업데이트 서비스에 연결된 장치에 대해 조직의 Windows 10 기반 장치를 최신 상태로 유지할 수 있습니다."
 keywords: 
 author: dougeby
@@ -14,8 +14,9 @@ ms.technology:
 - configmgr-sum
 ms.assetid: 183315fe-27bd-456f-b2c5-e8d25e05229b
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: c4c6e50d0e1a34653226369cffdc0bde905398fc
+ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
+ms.openlocfilehash: 8bdbacd54632475ac69a0d0a9a34b2567c3daa13
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -45,7 +46,7 @@ ms.openlocfilehash: c4c6e50d0e1a34653226369cffdc0bde905398fc
 
 -   소프트웨어 업데이트 인프라를 사용하는 Configuration Manager 전체 클라이언트 배포는 WUfB에 연결하여 업데이트를 받는 클라이언트에 대해 작동하지 않습니다.  
 
-## <a name="identify-clients-that-use-wufb-for-windows-10-updates"></a>Windows 10 업데이트를 위해 WUfB를 사용하는 클라이언트 식별  
+## <a name="identify-clients-that-use--wufb-for-windows-10-updates"></a>Windows 10 업데이트를 위해 WUfB를 사용하는 클라이언트 식별  
  다음 절차를 사용하여 Windows 10 업데이트 및 업그레이드를 가져오는 데 WUfB를 사용하는 클라이언트를 식별하고, 이러한 클라이언트를 업데이트를 가져오는 데 WSUS를 사용하지 않도록 구성한 후, 클라이언트 에이전트 설정을 배포하여 해당 클라이언트에 소프트웨어 업데이트 워크플로를 사용하지 않도록 설정합니다.  
 
  **전제 조건**  
@@ -66,9 +67,4 @@ ms.openlocfilehash: c4c6e50d0e1a34653226369cffdc0bde905398fc
 4.  소프트웨어 업데이트 워크플로를 사용하지 않도록 클라이언트 에이전트 설정을 만들고 이 설정을 WUfB에 직접 연결된 컴퓨터 컬렉션에 배포합니다.  
 
 5.  WUfB를 통해 관리되는 컴퓨터는 준수 상태가 **알 수 없음**으로 표시되며 전체 준수 비율의 일부로 계산되지 않습니다.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

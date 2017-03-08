@@ -1,6 +1,6 @@
 ---
 
-title: "소프트웨어 업데이트 지점 제거 | Configuration Manager"
+title: "소프트웨어 업데이트 지점 제거 | Microsoft 문서"
 description: "이 절차에 따라 Configuration Manager 콘솔에서 사이트의 소프트웨어 업데이트 지점 사이트 시스템 역할을 제거할 수 있습니다."
 keywords: 
 author: dougeby
@@ -14,12 +14,13 @@ ms.technology:
 - configmgr-sum
 ms.assetid: 2486375c-d4a2-4cf2-9124-9bee02bbf173
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: e95e3fc2aafde2d947f08d32e2b2130a313e7328
+ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
+ms.openlocfilehash: 22de02c51be3a0cd66b1be0f04b2fbdeb897858c
+ms.lasthandoff: 12/16/2016
 
 
 ---
-#  <a name="a-namebkmkremovesupa-remove-the-software-update-point-site-system-role"></a><a name="BKMK_RemoveSUP"></a> 소프트웨어 업데이트 지점 사이트 시스템 역할 제거  
+#  <a name="BKMK_RemoveSUP"></a> 소프트웨어 업데이트 지점 사이트 시스템 역할 제거  
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -39,9 +40,4 @@ Configuration Manager 콘솔에서 사이트의 소프트웨어 업데이트 지
 3.  소프트웨어 업데이트 지점을 제거할 사이트 시스템 서버를 선택하고 **사이트 시스템 역할**에서 **소프트웨어 업데이트 지점**을 선택합니다.  
 
 4.  **사이트 역할** 탭의 **사이트 역할** 그룹에서 **역할 제거**를 클릭합니다. 소프트웨어 업데이트 지점을 제거하도록 확인하거나 사이트에서 다른 소프트웨어 업데이트 지점에 대한 새 동기화 원본을 선택합니다.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

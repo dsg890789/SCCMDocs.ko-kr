@@ -1,5 +1,5 @@
 ---
-title: "사용자 상태를 캡처 및 복원하는 작업 순서 만들기 | Configuration Manager"
+title: "사용자 환경을 캡처 및 복원하는 작업 순서 만들기 | Microsoft 문서"
 description: "System Center Configuration Manager 작업 순서를 사용하여 운영 체제 배포 시나리오에서 사용자 상태 데이터를 캡처 및 복원할 수 있습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 4b3a3bf206dc273eabf88c680ca00688b6183115
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: fdfbdd1acb1190ca7de9cff2b4b7f916d8dc1272
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -28,7 +29,7 @@ ms.openlocfilehash: 4b3a3bf206dc273eabf88c680ca00688b6183115
 
 System Center Configuration Manager 작업 순서를 사용하여 현재 운영 체제의 사용자 상태를 보존하려는 운영 체제 배포 시나리오에서 사용자 상태 데이터를 캡처 및 복원할 수 있습니다. 만드는 작업 순서 유형에 따라, 캡처 및 복원 단계가 작업 순서의 일부로 자동으로 추가될 수도 있습니다. 다른 시나리오에서는 캡처 및 복원 단계를 작업 순서에 수동으로 추가해야 할 수 있습니다. 이 항목에서는 사용자 상태 데이터를 캡처 및 복원하기 위해 기존 작업 순서에 추가해야 하는 단계를 제공합니다.  
 
-##  <a name="a-namebkmkcapturerestoreuserstatea-how-to-capture-and-restore-user-state-data"></a><a name="BKMK_CaptureRestoreUserState"></a> 사용자 상태 데이터를 캡처 및 복원하는 방법  
+##  <a name="BKMK_CaptureRestoreUserState"></a> 사용자 상태 데이터를 캡처 및 복원하는 방법  
  사용자 상태를 캡처하고 복원하려면 작업 순서에 다음 단계를 추가해야 합니다.  
 
 -   **상태 저장소 요청**: 이 단계는 상태 마이그레이션 지점에 사용자 상태를 저장하는 경우에만 필요합니다.  
@@ -169,9 +170,4 @@ System Center Configuration Manager 작업 순서를 사용하여 현재 운영 
 
 ## <a name="next-steps"></a>다음 단계
 [작업 순서 배포 모니터링](monitor-operating-system-deployments.md#BKMK_TSDeployStatus)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

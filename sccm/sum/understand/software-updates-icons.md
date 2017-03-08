@@ -1,5 +1,5 @@
 ---
-title: "소프트웨어 업데이트에 사용되는 아이콘 | Configuration Manager"
+title: "소프트웨어 업데이트에 사용되는 아이콘 | Microsoft 문서"
 description: "Configuration Manager 콘솔에는 동기화된 업데이트 또는 소프트웨어 업데이트 그룹의 상태를 나타내는 아이콘이 포함되어 있습니다."
 keywords: 
 author: dougeby
@@ -13,8 +13,9 @@ ms.technology:
 - configmgr-sum
 ms.assetid: 63c5ef72-5715-4d86-85a2-71beba469fab
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 48b0296809400805bdba9e6ebd163a0c39b37968
+ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
+ms.openlocfilehash: 04c5ccc53263b2672096b564695a636bfb28d952
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -28,7 +29,7 @@ ms.openlocfilehash: 48b0296809400805bdba9e6ebd163a0c39b37968
  동기화된 소프트웨어 업데이트는 다음 아이콘 중 하나로 표시됩니다.  
 
 ### <a name="normal-icon"></a>일반 아이콘  
- ![아이콘](../media/Normal.jpg "Normal icon") 녹색 화살표가 있는 아이콘은 일반적인 소프트웨어 업데이트를 나타냅니다.  
+ ![아이콘](../media/Normal.jpg "일반 아이콘") 녹색 화살표가 있는 아이콘은 일반적인 소프트웨어 업데이트를 나타냅니다.  
 
  **설명:**  
 
@@ -39,7 +40,7 @@ ms.openlocfilehash: 48b0296809400805bdba9e6ebd163a0c39b37968
  작동 문제가 없습니다.  
 
 ### <a name="expired-icon"></a>만료됨 아이콘  
- ![아이콘](../media/Expired.jpg "Expired icon") 검정색 X가 있는 아이콘은 만료된 소프트웨어 업데이트를 나타냅니다. 만료된 소프트웨어 업데이트는 Configuration Manager 콘솔에 표시될 때 소프트웨어 업데이트의 **만료됨** 열을 통해서도 확인할 수 있습니다.  
+ ![아이콘](../media/Expired.jpg "만료됨 아이콘") 검은색 X가 있는 아이콘은 만료된 소프트웨어 업데이트를 나타냅니다. 만료된 소프트웨어 업데이트는 Configuration Manager 콘솔에 표시될 때 소프트웨어 업데이트의 **만료됨** 열을 통해서도 확인할 수 있습니다.  
 
  **설명:**  
 
@@ -50,7 +51,7 @@ ms.openlocfilehash: 48b0296809400805bdba9e6ebd163a0c39b37968
  작동 문제가 없습니다.
 
 ### <a name="superseded-icon"></a>대체됨 아이콘  
- ![아이콘](../media/Superseded.jpg "Superseded icon") 노란색 별이 있는 아이콘은 대체된 소프트웨어 업데이트를 나타냅니다. 대체된 소프트웨어 업데이트는 Configuration Manager 콘솔에 표시될 때 소프트웨어 업데이트의 **대체됨** 열을 통해서도 확인할 수 있습니다.  
+ ![아이콘](../media/Superseded.jpg "대체됨 아이콘") 노란색 별이 있는 아이콘은 대체된 소프트웨어 업데이트를 나타냅니다. 대체된 소프트웨어 업데이트는 Configuration Manager 콘솔에 표시될 때 소프트웨어 업데이트의 **대체됨** 열을 통해서도 확인할 수 있습니다.  
 
  **설명:**  
 
@@ -69,7 +70,7 @@ ms.openlocfilehash: 48b0296809400805bdba9e6ebd163a0c39b37968
  가능하면 대체된 소프트웨어 업데이트 대신 대체하는 소프트웨어 업데이트를 클라이언트 컴퓨터에 배포합니다. 소프트웨어 업데이트 속성의 **대체 정보** 탭에서 소프트웨어 업데이트를 대체하는 소프트웨어 업데이트 목록을 표시할 수 있습니다.  
 
 ### <a name="invalid-icon"></a>잘못됨 아이콘  
- ![아이콘](../media/Invalid.jpg "Invalid icon") 빨간색 X가 있는 아이콘은 잘못된 소프트웨어 업데이트를 나타냅니다.  
+ ![아이콘](../media/Invalid.jpg "잘못됨 아이콘") 빨간색 X가 있는 아이콘은 잘못된 소프트웨어 업데이트를 나타냅니다.  
 
  **설명:**  
 
@@ -84,7 +85,7 @@ ms.openlocfilehash: 48b0296809400805bdba9e6ebd163a0c39b37968
  소프트웨어 업데이트에 대한 콘텐츠가 없을 경우 클라이언트는 배포 지점에서 콘텐츠를 사용할 수 있을 때까지 소프트웨어 업데이트를 설치할 수 없습니다. **재배포** 동작을 사용하여 배포 지점에 콘텐츠를 다시 배포할 수 있습니다. 부모 사이트에서 만든 배포에 소프트웨어 업데이트에 대한 콘텐츠가 없을 경우 소프트웨어 업데이트를 자식 사이트로 복제하거나 다시 배포해야 합니다. 콘텐츠 재배포에 대한 자세한 내용은 [배포한 콘텐츠 관리](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_manage)를 참조하세요.  
 
 ### <a name="metadata-only-icon"></a>메타데이터 전용 아이콘
- ![아이콘](../media/MetadataOnly.png "Metadata-only icon") 파란색 화살표가 있는 아이콘은 메타데이터 전용 소프트웨어 업데이트를 나타냅니다.
+ ![아이콘](../media/MetadataOnly.png "메타데이터 전용 아이콘") 파란색 화살표가 있는 아이콘은 메타데이터 전용 소프트웨어 업데이트를 나타냅니다.
 
  **설명:**  
 
@@ -98,35 +99,30 @@ ms.openlocfilehash: 48b0296809400805bdba9e6ebd163a0c39b37968
  소프트웨어 업데이트 그룹은 다음 아이콘 중 하나로 표시됩니다.  
 
 ### <a name="normal-icon"></a>일반 아이콘  
- ![아이콘](../media/Normal.jpg "Normal icon") 녹색 화살표가 있는 아이콘은 일반적인 소프트웨어 업데이트만 포함된 소프트웨어 업데이트 그룹을 나타냅니다.  
+ ![아이콘](../media/Normal.jpg "일반 아이콘") 녹색 화살표가 있는 아이콘은 일반적인 소프트웨어 업데이트만 포함된 소프트웨어 업데이트 그룹을 나타냅니다.  
 
  **작동 문제:**  
 
  작동 문제가 없습니다.  
 
 ### <a name="expired-icon"></a>만료됨 아이콘  
- ![아이콘](../media/Expired.jpg "Expired icon") 검정색 X가 있는 아이콘은 만료된 소프트웨어 업데이트가 하나 이상 포함된 소프트웨어 업데이트 그룹을 나타냅니다.  
+ ![아이콘](../media/Expired.jpg "만료됨 아이콘") 검정색 X가 있는 아이콘은 만료된 소프트웨어 업데이트가 하나 이상 포함된 소프트웨어 업데이트 그룹을 나타냅니다.  
 
  **작동 문제:**  
 
  가능하면 소프트웨어 업데이트 그룹에서 만료된 소프트웨어 업데이트를 제거하거나 대체합니다.  
 
 ### <a name="superseded-icon"></a>대체됨 아이콘  
- ![아이콘](../media/Superseded.jpg "Superseded icon") 노란색 별이 있는 아이콘은 대체된 소프트웨어 업데이트가 하나 이상 포함된 소프트웨어 업데이트 그룹을 나타냅니다.  
+ ![아이콘](../media/Superseded.jpg "대체됨 아이콘") 노란색 별이 있는 아이콘은 대체된 소프트웨어 업데이트가 하나 이상 포함된 소프트웨어 업데이트 그룹을 나타냅니다.  
 
  **작동 문제:**  
 
  가능하면 소프트웨어 업데이트 그룹에서 대체된 소프트웨어 업데이트를 대체하는 소프트웨어 업데이트로 바꿉니다.  
 
 ### <a name="invalid-icon"></a>잘못됨 아이콘  
- ![아이콘](../media/Invalid.jpg "Invalid icon") 빨간색 X가 있는 아이콘은 잘못된 소프트웨어 업데이트가 하나 이상 포함된 소프트웨어 업데이트 그룹을 나타냅니다.  
+ ![아이콘](../media/Invalid.jpg "잘못됨 아이콘") 빨간색 X가 있는 아이콘은 잘못된 소프트웨어 업데이트가 하나 이상 포함된 소프트웨어 업데이트 그룹을 나타냅니다.  
 
  **작동 문제:**  
 
  소프트웨어 업데이트에 대한 콘텐츠가 없을 경우 클라이언트는 배포 지점에서 콘텐츠를 사용할 수 있을 때까지 소프트웨어 업데이트를 설치할 수 없습니다. **재배포** 동작을 사용하여 배포 지점에 콘텐츠를 다시 배포할 수 있습니다. 부모 사이트에서 만든 배포에 소프트웨어 업데이트에 대한 콘텐츠가 없을 경우 소프트웨어 업데이트를 자식 사이트로 복제하거나 다시 배포해야 합니다. 콘텐츠 재배포에 대한 자세한 내용은 [배포한 콘텐츠 관리](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_manage)를 참조하세요.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

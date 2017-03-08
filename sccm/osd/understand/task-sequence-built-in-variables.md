@@ -1,5 +1,5 @@
 ---
-title: "작업 순서 기본 제공 변수 | Configuration Manager"
+title: "작업 순서 기본 제공 변수 | Microsoft 문서"
 description: "작업 순서 기본 제공 변수는 작업 순서가 실행되고 전체 작업 순서 동안 사용할 수 있는 환경에 대한 정보를 제공합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 4b1014bc9a5c17dd571e69e7f5bfdae060a3eb55
+ms.sourcegitcommit: c9fb0fa46058c773eec6ac23999357d35d9f970f
+ms.openlocfilehash: a75adebfe2bbec8f6fe5206561530a720c0bfbf1
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -27,7 +28,7 @@ ms.openlocfilehash: 4b1014bc9a5c17dd571e69e7f5bfdae060a3eb55
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 
- 작업 순서 기본 제공 변수는 System Center Configuration Manager에서 제공됩니다. 기본 제공 변수는 작업 순서가 실행 중인 환경에 대한 정보를 제공하며, 전체 작업 순서에서 해당 값을 사용할 수 있습니다. 일반적으로 기본 제공 변수는 작업 순서에서 단계를 실행하기 전에 초기화됩니다. 예를 들어 기본 제공 변수 **_SMSTSLogPath**는 작업 순서가 실행되는 동안 Configuration Manager 구성 요소에서 로그 파일을 작성하는 데 사용하는 경로를 지정하는 환경 변수입니다. 모든 작업 순서 단계에서 이 환경 변수에 액세스할 수 있습니다. 그러나 _SMSTSCurrentActionName과 같은 일부 변수를 각 단계 전에 평가됩니다. 기본 제공 변수 값은 일반적으로 읽기 전용입니다. 이름이 밑줄로 시작하는 기본 제공 변수의 값만 읽기 전용입니다.  
+ 작업 순서 기본 제공 변수는 System Center Configuration Manager에서 제공됩니다. 기본 제공 변수는 작업 순서가 실행 중인 환경에 대한 정보를 제공하며, 전체 작업 순서에서 해당 값을 사용할 수 있습니다. 일반적으로 기본 제공 변수는 작업 순서에서 단계를 실행하기 전에 초기화됩니다. 예를 들어 기본 제공 변수 **_SMSTSLogPath**는 작업 순서가 실행되는 동안 Configuration Manager 구성 요소에서 로그 파일을 작성하는 데 사용하는 경로를 지정하는 환경 변수입니다. 모든 작업 순서 단계에서 이 환경 변수에 액세스할 수 있습니다. 그러나 &#95;SMSTSCurrentActionName과 같은 일부 변수는 각 단계 전에 평가됩니다. 기본 제공 변수 값은 일반적으로 읽기 전용입니다. 이름이 밑줄로 시작하는 기본 제공 변수의 값만 읽기 전용입니다.  
 
 ## <a name="task-sequence-built-in-variable-list"></a>작업 순서 기본 제공 변수 목록  
  다음 목록에서는 Configuration Manager에서 사용할 수 있는 기본 제공 변수를 설명합니다.  
@@ -67,9 +68,11 @@ ms.openlocfilehash: 4b1014bc9a5c17dd571e69e7f5bfdae060a3eb55
 |_SMSTSUseSSL|작업 순서에서 SSL을 사용하여 Configuration Manager 관리 지점과 통신하는지 여부를 지정합니다. 사이트가 기본 모드로 실행되는 경우 이 값은 **true**로 설정됩니다.|  
 |_SMSTSWTG|컴퓨터가 Windows To Go 장치로 실행되는지 여부를 지정합니다.|  
 |OSDPreserveDriveLetter|Configuration Manager 버전 1606부터 이 작업 순서 변수가 사용되지 않습니다. 기본적으로 운영 체제 배포 시 Windows 설치 프로그램이 사용하기에 가장 적합한 드라이브 문자(일반적으로 C:)를 결정합니다. <br /><br />이전 버전에서는 OSDPreverveDriveLetter 변수가 작업 순서에서 운영 체제 이미지를 대상 컴퓨터에 적용할 때 해당 이미지에서 캡처된 드라이브 문자를 사용할지를 결정합니다. 이 변수 값을 **False** 로 설정하여 **운영 체제 적용** 작업 순서 단계의 **대상** 설정에 지정한 위치를 사용할 수 있습니다. 자세한 내용은 [운영 체제 이미지 적용](task-sequence-steps.md#BKMK_ApplyOperatingSystemImage)을 참조하세요.|  
+|OSDSetupAdditionalUpgradeOptions|Configuration Manager 버전 1602부터 이 변수를 사용하여 Windows 설치 프로그램 업그레이드의 추가 옵션을 지정할 수 있습니다.
 |SMSTSAssignmentsDownloadInterval|이 변수를 사용하여 정책이 반환되지 않은 마지막 시도 이후 정책을 다운로드하기 위해 클라이언트가 대기하는 시간(초)을 지정합니다. 기본적으로는 클라이언트는 **0** 초를 대기한 후 다시 시도합니다.<br /><br /> 미디어 또는 PXE에서 시작 전 명령을 사용하여 이 변수를 설정할 수 있습니다.|  
 |SMSTSAssignmentsDownloadRetry|이 변수를 사용하여 첫 번째 시도에서 정책을 찾지 못한 이후 클라이언트가 정책 다운로드를 시도하는 횟수를 지정합니다. 기본적으로 클라이언트는 **0** 번 다시 시도합니다.<br /><br /> 미디어 또는 PXE에서 시작 전 명령을 사용하여 이 변수를 설정할 수 있습니다.|  
 |SMSTSAssignUsersMode|작업 순서에서 사용자를 대상 컴퓨터와 연결하는 방법을 지정합니다. 이 변수를 다음 값 중 하나로 설정합니다.<br /><br /> -   자동: 작업 순서에서 운영 체제를 대상 컴퓨터에 배포할 때 지정된 사용자와 대상 컴퓨터 사이의 관계를 만듭니다.<br />-   보류 중: 작업 순서에서 지정된 사용자와 대상 컴퓨터 간의 관계를 만들지만 관계를 설정하기 전에 관리자의 승인을 기다립니다.<br />-   사용 안 함: 작업 순서에서 운영 체제를 배포할 때 사용자를 대상 컴퓨터와 연결하지 않습니다.|  
+|SMSTSDownloadAbortCode|이 변수에는 외부 프로그램 다운로더의 중단 코드 값(SMSTSDownloadProgram 변수에 지정됨)이 포함되어 있습니다. 프로그램이 SMSTSDownloadAbortCode 변수 값과 같은 오류 코드를 반환하면 콘텐츠 다운로드에 실패하고 다른 다운로드 방법이 시도되지 않습니다.
 |SMSTSDownloadProgram|이 변수를 사용하면 대체 콘텐츠 공급자(작업 순서를 위한 콘텐츠를 다운로드하는 데 기본 Configuration Manager 다운로더 대신에 사용하는 다운로더 프로그램)를 지정할 수 있습니다. 콘텐츠 다운로드 프로세스의 일부로, 작업 순서는 지정한 다운로더 프로그램에 대한 변수를 확인합니다. 지정된 경우 작업 순서는 해당 프로그램을 실행하여 다운로드를 수행합니다.|  
 |SMSTSDownloadRetryCount|이 변수를 사용하면 Configuration Manager가 배포 지점의 콘텐츠를 다운로드하기 위해 시도할 횟수를 지정할 수 있습니다. 기본적으로 클라이언트는 **2** 번 다시 시도합니다.|  
 |SMSTSDownloadRetryDelay|이 변수를 사용하면 Configuration Manager가 배포 지점의 콘텐츠를 다시 다운로드하기 전까지 대기하는 시간(초)을 지정할 수 있습니다. 기본적으로는 클라이언트는 **15** 초를 대기한 후 다시 시도합니다.|  
@@ -80,7 +83,7 @@ ms.openlocfilehash: 4b1014bc9a5c17dd571e69e7f5bfdae060a3eb55
 |SMSTSMPListRequestTimeout|이 변수를 사용하여, 위치 서비스에서 관리 지점 목록을 검색하지 못한 후 응용 프로그램 또는 소프트웨어 업데이트 설치를 다시 시도하기 전까지 작업 순서가 대기하는 시간(밀리초)을 지정합니다. 기본적으로 작업 순서는 60,000밀리초(60초)를 대기한 후 단계를 다시 시도하며, 최대 다시 시도 횟수는 3회입니다. 이 변수는 응용 프로그램 설치 및 소프트웨어 업데이트 설치 작업 순서 단계에만 적용됩니다.|  
 |SMSTSMPListRequestTimeoutEnabled|클라이언트가 인트라넷에 없는 경우 이 변수를 사용하여 반복된 MPList 요청으로 클라이언트를 새로 고치도록 설정할 수 있습니다. <br />기본적으로 이 변수는 True로 설정됩니다. 클라이언트가 인터넷에 있는 경우에는 불필요한 지연이 발생하지 않도록 이 변수를 False로 설정할 수 있습니다. 이 변수는 응용 프로그램 설치 및 소프트웨어 업데이트 설치 작업 순서 단계에만 적용됩니다.|  
 |SMSTSPeerDownload|이 변수를 사용하여 클라이언트가 Windows PE 피어 캐시를 사용할 수 있도록 합니다.<br /><br /> 예:<br /><br /> SMSTSPeerDownload  = **TRUE** 로 설정하면 이 기능을 사용할 수 있습니다.|  
-|SMSTSPeerRequestPort|Windows PE 피어 캐시에 대한 이 변수를 사용하여 클라이언트 설정에서 구성된 기본 포트(8003 및 8004)를 사용하지 않을 때 초기 브로드캐스트에 사용할 사용자 지정 네트워크 포트를 지정합니다.|  
+|SMSTSPeerRequestPort|Windows PE 피어 캐시에 대한 이 변수를 사용하여 클라이언트 설정에서 구성된 기본 포트(8004)를 사용하지 않을 때 초기 브로드캐스트에 사용할 사용자 지정 네트워크 포트를 지정합니다.|  
 |SMSTSPersistContent|이 변수를 사용하여 작업 순서 캐시에 콘텐츠를 일시적으로 유지할 수 있습니다.|  
 |SMSTSPostAction|작업 순서를 완료한 후 실행되는 명령을 지정합니다. 예를 들어 이 변수를 사용하면 작업 순서에서 장치에 운영 체제를 배포한 후 포함된 장치에서 쓰기 필터를 사용할 수 있는 스크립트를 지정할 수 있습니다.|  
 |SMSTSPreferredAdvertID|대상 컴퓨터에 지정된 특정 배포를 강제로 실행합니다. 미디어 또는 PXE에서 시작 전 명령을 통해 이를 설정할 수 있습니다. 이 변수를 설정한 경우에는 작업 순서가 모든 필수 배포를 재정의합니다.|  
@@ -92,9 +95,4 @@ ms.openlocfilehash: 4b1014bc9a5c17dd571e69e7f5bfdae060a3eb55
 |SMSTSSoftwareUpdateScanTimeout| [소프트웨어 업데이트 설치](task-sequence-steps.md#BKMK_InstallSoftwareUpdates) 작업 순서 단계를 진행하는 동안 소프트웨어 업데이트 검사 시간 제한을 조정할 수 있습니다. 예를 들어 소프트웨어 업데이트 설치가 많은 경우 기본값을 늘릴 수 있습니다. 기본값은 30분입니다. |
 |SMSTSUDAUsers|대상 컴퓨터의 기본 사용자를 지정합니다. 다음 형식을 사용하여 사용자를 지정합니다. 여러 사용자를 구분하려면 쉼표(,)를 사용합니다.<br /><br /> 예:<br /><br /> **domain\user1, domain\user2, domain\user3**<br /><br /> 사용자를 대상 컴퓨터와 연결하는 방법에 대한 자세한 내용은 [사용자를 대상 컴퓨터에 연결](../get-started/associate-users-with-a-destination-computer.md)을 참조하세요.|  
 |SMSTSWaitForSecondReboot|Configuration Manager 버전 1602부터, 소프트웨어 업데이트 설치에서 두 번의 다시 시작을 요구하는 경우 이 선택적 작업 순서 변수를 사용하여 클라이언트 동작을 제어할 수 있습니다. 소프트웨어 업데이트가 설치되어 다시 시작되는 동작으로 인해 작업 순서에서 오류가 발생하는 것을 방지하려면 이 변수를 [소프트웨어 업데이트 설치](task-sequence-steps.md#BKMK_InstallSoftwareUpdates) 단계 전에 설정해야 합니다.<br /><br /> SMSTSWaitForSecondReboot 값을 초 단위로 설정하여 두 번째로 다시 시작해야 할 때 컴퓨터 다시 시작에서 충분한 시간을 허용하는 경우 소프트웨어 업데이트 설치 단계 중 작업 순서가 일시 중지되는 기간을 지정할 수 있습니다. <br />예를 들어 SMSTSWaitForSecondReboot를 600으로 설정하면 다시 시작된 후 추가 작업 순서 단계가 실행되기 전에 작업 순서가 10분간 일시 중지됩니다. 이 변수는 단일 소프트웨어 업데이트 설치 작업 순서 단계에서 수백 개의 소프트웨어 업데이트가 설치되는 경우에 유용합니다.|  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

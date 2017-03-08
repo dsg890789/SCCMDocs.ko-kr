@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager 사용 시작 | System Center Configuration Manager"
+title: "System Center Configuration Manager 사용 시작 | Microsoft 문서"
 ms.custom: na
 ms.date: 10/06/2016
 ms.prod: configuration-manager
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 8daab879af938b6d131a08c07560f51164a64b17
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 1786209f1a1b0d1caab9e31414bfccb690c8e659
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -36,9 +37,4 @@ System Center Configuration Manager 사이트 및 계층 구조 토폴로지를 
 -   [System Center Configuration Manager에 대한 사이트 및 계층 구조 구성](../../../core/servers/deploy/configure/configure-sites-and-hierarchies.md)  
 
 -   [System Center Configuration Manager의 계층 구조 간에 데이터 마이그레이션](../../../core/migration/migrate-data-between-hierarchies.md)  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

@@ -1,5 +1,5 @@
 ---
-title: "관리 지점 DNS 게시를 찾도록 클라이언트 구성 | System Center Configuration Manager"
+title: "관리 지점 DNS 게시를 찾도록 클라이언트 구성 | Microsoft 문서"
 description: "System Center Configuration Manager에서 DNS 게시를 사용하여 관리 지점을 찾도록 클라이언트 컴퓨터를 설정합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 03cec407-0f9f-454f-a360-b005af738d29
 caps.latest.revision: 6
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: c6470a39519bc25357ba5d9721afe9c39a28c348
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: 9eadb91a575323b4c36af14962f370046ea513ce
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -57,9 +58,4 @@ System Center Configuration Manager의 클라이언트는 사이트 할당을 �
 2.  **사이트** 탭에서 관리 지점의 DNS 접미사를 지정한 후에 **확인**을 클릭합니다.  
 
      사이트가 관리 지점을 둘 이상 갖고 둘 이상의 도메인에 있는 경우 한 도메인만 지정합니다. 클라이언트가 이 도메인의 관리 지점에 연결하면 사용 가능한 관리 지점 목록을 다운로드하며, 여기에는 다른 도메인의 관리 지점도 포함됩니다.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

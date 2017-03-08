@@ -1,5 +1,5 @@
 ---
-title: "암호화 제어 기술 참조 | System Center Configuration Manager"
+title: "암호화 컨트롤 기술 참조 | Microsoft 문서"
 description: "공격을 방지하여 System Center Configuration Manager의 데이터를 읽을 수 없도록 서명 및 암호화하는 방법에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0c63dcc5-a1bd-4037-959a-2e6ba0fd1b2c
 caps.latest.revision: 6
-author: Nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 354289f980836f10ebfc770b2408ba02dcb0eecb
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: 0f76ed3dd74a80d9e22cfa743e5aa484f6cd7d97
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -281,10 +282,4 @@ System Center Configuration Manager는 서명 및 암호화를 사용하여 Conf
 
 ##  <a name="about-ssl-vulnerabilities"></a>SSL 취약점 정보  
  Configuration Manager 서버의 보안을 개선하려면 SSL 3.0은 사용하지 않도록 설정하고, TLS 1.1 및 1.2는 사용하도록 설정하고, TLS 관련 암호 그룹을 다시 정렬하는 것이 좋습니다. 이러한 작업을 수행하는 방법은 [이 KB 문서](https://support.microsoft.com/en-us/kb/245030/)에서 확인할 수 있습니다. 이 작업은 Configuration Manager 기능에 영향을 주지 않습니다.  
-
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

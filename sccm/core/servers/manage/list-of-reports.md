@@ -1,5 +1,5 @@
 ---
-title: "보고서 목록 | System Center Configuration Manager"
+title: "보고서 목록 | Microsoft 문서"
 description: "Configuration Manager와 함께 제공되는 보고서 목록을 검토합니다. 보고서는 다양한 범주에서 표시됩니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: ef0e136376f4229e531880ad46fc8ce636eb0d8b
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 1480c38a6a3afef76b2e8759eaafd47d28f978f4
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -790,9 +791,4 @@ System Center Configuration Manager에서는 수행하려는 대부분의 보고
 |**Wake On LAN 활동 기록**|특정 기간 이후에 발생한 절전 모드 해제 활동의 기록이 표시됩니다.|  
 |**절전 모드 해제 프록시 배포 상태 정보**|지정한 컬렉션에 포함된 각 장치의 절전 모드 해제 프록시 배포 상태에 대한 정보가 표시됩니다.|  
 |**절전 모드 해제 프록시 배포 상태 요약**|지정한 컬렉션의 절전 모드 해제 프록시 배포 상태 요약이 표시됩니다.|  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

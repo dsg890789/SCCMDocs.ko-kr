@@ -1,5 +1,5 @@
 ---
-title: "장치 준수 확인 | System Center Configuration Manager"
+title: "장치 준수 확인 | Microsoft 문서"
 description: "System Center Configuration Manager를 사용하여 조직에서 장치의 구성 및 준수를 관리합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 70104ac6e8fa19e222ef93c28e5fe33e9093af79
+ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
+ms.openlocfilehash: f7ecfe550d2e28579ea873442b2a68dc1c7c5483
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -71,9 +72,4 @@ System Center Configuration Manager의 준수 설정은 조직에서 장치의 �
  버전 업그레이드 정책을 통해 Windows 10 장치를 최신 버전으로 자동으로 업그레이드할 수 있습니다. Windows 10 데스크톱 버전을 업그레이드할 제품 키 또는 Windows 10 Mobile 및 Windows 10 Holographic을 실행하는 장치를 업그레이드하는 데 사용할 수 있는 라이선스 파일을 지정할 수 있습니다.  
 
  [버전 업그레이드 정책을 사용하여 Windows 장치 업그레이드](/sccm/compliance/deploy-use/upgrade-windows-version)  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

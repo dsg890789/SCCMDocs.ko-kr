@@ -1,11 +1,11 @@
 ---
-title: "모바일 장치 관리 배포 및 사용 | System Center Configuration Manager"
+title: "모바일 장치 관리 배포 및 사용 | Microsoft 문서"
 description: "System Center Configuration Manager를 사용하여 모바일 장치를 관리하는 다양한 방법에 대해 알아봅니다."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: mtillman
+ms.author: mtillman
 manager: angrobe
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -13,8 +13,9 @@ ms.technology:
 - configmgr-hybrid
 ms.assetid: 756694f3-4d62-4463-9334-a21991c30ba3
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 4347a305124e023d069aa28499fdc3eb3a7de7ef
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: 7a7b64a187d66f0dc965fe3568dd14004b2d090e
+ms.lasthandoff: 12/16/2016
 
 ---
 
@@ -28,9 +29,4 @@ System Center Configuration Manager를 사용하여 다양한 방법으로 모�
 - [온-프레미스 모바일 장치 관리](enroll-devices-on-premises-mdm.md)
 - [관리되는 장치의 사용 중지, 잠금 및 다시 설정](wipe-lock-reset-devices.md)
 - [Exchange ActiveSync 관리](manage-mobile-devices-with-exchange-activesync.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

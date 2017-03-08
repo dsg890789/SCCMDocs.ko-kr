@@ -1,5 +1,5 @@
 ---
-title: "사용자 데이터 및 프로필 구성 항목 만들기 | System Center Configuration Manager"
+title: "사용자 데이터 및 프로필 구성 항목 만들기 | Microsoft 문서"
 description: "System Center Configuration Manager에서 데이터 및 프로필 구성 항목을 사용하여 폴더 리디렉션, 오프라인 파일 및 로밍 프로필을 관리할 수 있습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: f9d0986fe1275bc6cb855be6ca7fa34bc289feca
+ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
+ms.openlocfilehash: 85b984d739dc9f9d2046186b381eff54ba687c66
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -120,9 +121,4 @@ System Center Configuration Manager의 사용자 데이터 및 프로필 구성 
  다른 준수 설정을 모니터링하는 것과 같은 방식으로 이 구성 항목 형식을 모니터링합니다.  
 
  자세한 내용은 [준수 설정을 모니터링하는 방법](../../compliance/deploy-use/monitor-compliance-settings.md)을 참조하세요.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

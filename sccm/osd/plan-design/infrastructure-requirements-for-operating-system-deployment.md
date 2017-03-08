@@ -1,5 +1,5 @@
 ---
-title: "운영 체제 배포를 위한 인프라 요구 사항 | Configuration Manager"
+title: "운영 체제 배포를 위한 인프라 요구 사항 | Microsoft 문서"
 description: "운영 체제 배포를 위해 System Center 2012 Configuration Manager를 사용하기 전에 외부 종속성과 제품 종속성을 알고 있어야 합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: e78cc0d45127df521e362e4cd96b492ddc110a2a
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 77ac69cecab7aa460001a8d2800e61f20a8565ed
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -27,7 +28,7 @@ ms.openlocfilehash: e78cc0d45127df521e362e4cd96b492ddc110a2a
 
 System Center 2012 Configuration Manager의 운영 체제 배포에는 외부 종속성과 제품 내 종속성이 있습니다. 다음 섹션을 사용하여 운영 체제 배포를 위한 준비를 수행하세요.  
 
-##  <a name="a-namebkmkexternaldependenciesa-dependencies-external-to-configuration-manager"></a><a name="BKMK_ExternalDependencies"></a> Configuration Manager 외부 종속성  
+##  <a name="BKMK_ExternalDependencies"></a> Configuration Manager 외부 종속성  
  다음은 Configuration Manager에서 운영 체제를 배포하는 데 필요한 외부 도구, 설치 키트 및 운영 체제에 대한 정보를 제공합니다.  
 
 ### <a name="windows-adk-for-windows-10"></a>Windows 10용 Windows ADK  
@@ -104,7 +105,7 @@ System Center 2012 Configuration Manager의 운영 체제 배포에는 외부 �
 ### <a name="windows-device-drivers"></a>Windows 장치 드라이버  
  Windows 장치 드라이버는 대상 컴퓨터에 운영 체제를 설치할 경우와 부팅 이미지를 사용하여 Windows PE를 실행할 경우에 사용할 수 있습니다. 장치 드라이버에 대한 자세한 내용은 [드라이버 관리](../get-started/manage-drivers.md)를 참조하세요.  
 
-##  <a name="a-namebkmkinternaldependenciesa-configuration-manager-dependencies"></a><a name="BKMK_InternalDependencies"></a> Configuration Manager 종속성  
+##  <a name="BKMK_InternalDependencies"></a> Configuration Manager 종속성  
  다음에서는 Configuration Manager 운영 체제 배포 필수 조건에 대한 정보를 제공합니다.  
 
 ### <a name="operating-system-image"></a>운영 체제 이미지  
@@ -162,7 +163,7 @@ System Center 2012 Configuration Manager의 운영 체제 배포에는 외부 �
 ### <a name="security-scopes-for-operating-system-deployments"></a>운영 체제 배포를 위한 보안 범위  
  관리자에게 운영 체제 배포에서 사용되는 보안 개체(예: 운영 체제 및 부팅 이미지, 드라이버 패키지, 작업 순서 패키지 등)에 대한 액세스 권한을 제공하려면 보안 범위를 사용합니다. 자세한 내용은 [보안 범위](../../core/understand/fundamentals-of-role-based-administration.md#bkmk_PlanScope)를 참조하세요.  
 
-##  <a name="a-namebkmkwdsa-windows-deployment-services"></a><a name="BKMK_WDS"></a> Windows 배포 서비스  
+##  <a name="BKMK_WDS"></a> Windows 배포 서비스  
  WDS(Windows 배포 서비스)는 PXE 또는 멀티캐스트를 지원하기 위해 구성한 배포 지점과 동일한 서버에 설치해야 합니다. WDS가 서버 운영 체제에 포함되어 있습니다. PXE 배포를 실행할 때 WDS는 PXE 부팅을 수행하는 서비스입니다. 배포 지점이 설치되고 이 배포 지점이 PXE를 사용하도록 설정되면 Configuration Manager에서는 WDS PXE 부팅 기능을 사용하는 공급자를 WDS에 설치합니다.  
 
 > [!NOTE]  
@@ -176,7 +177,7 @@ System Center 2012 Configuration Manager의 운영 체제 배포에는 외부 �
 
 -   원격 서버에 공급자가 설치되어 있는 경우 사이트 서버와 원격 공급자에 WDS를 설치해야 합니다.  
 
-###  <a name="a-namebkmkwdsanddhcpa-considerations-when-you-have-wds-and-dhcp-on-the-same-server"></a><a name="BKMK_WDSandDHCP"></a> WDS 및 DHCP가 동일한 서버에 있을 때 고려할 사항  
+###  <a name="BKMK_WDSandDHCP"></a> WDS 및 DHCP가 동일한 서버에 있을 때 고려할 사항  
  배포 지점을 DHCP가 실행되는 서버에서 함께 호스트하려면 다음과 같은 구성상의 문제를 고려하세요.  
 
 -   활성 영역을 포함하는 작동 중인 DHCP 서버가 있어야 합니다. Windows 배포 서비스는 PXE를 사용하며, PXE에는 DHCP 서버가 필요합니다.  
@@ -208,10 +209,10 @@ System Center 2012 Configuration Manager의 운영 체제 배포에는 외부 �
     > [!NOTE]  
     >  또한 서버에서 DHCP 권한 부여가 필요한 경우 해당 서버에 DHCP 클라이언트 포트 68이 열려 있어야 합니다.  
 
-##  <a name="a-namebkmksupportedosa-supported-operating-systems"></a><a name="BKMK_SupportedOS"></a> 지원되는 운영 체제  
+##  <a name="BKMK_SupportedOS"></a> 지원되는 운영 체제  
  [클라이언트 및 장치에서 지원되는 운영 체제](../../core/plan-design/configs/supported-operating-systems-for-clients-and-devices.md)에 지원되는 클라이언트 운영 체제로 나열된 모든 Windows 운영 체제를 운영 체제 배포에 사용할 수 있습니다.  
 
-##  <a name="a-namebkmksupporteddiskconfiga-supported-disk-configurations"></a><a name="BKMK_SupportedDiskConfig"></a> 지원되는 디스크 구성  
+##  <a name="BKMK_SupportedDiskConfig"></a> 지원되는 디스크 구성  
  Configuration Manager 운영 체제 배포에 지원되는 참조 및 대상 컴퓨터의 하드 디스크 구성 조합은 다음 표와 같습니다.  
 
 |참조 컴퓨터 하드 디스크 구성|대상 컴퓨터 하드 디스크 구성|  
@@ -237,9 +238,4 @@ System Center 2012 Configuration Manager의 운영 체제 배포에는 외부 �
 
 ## <a name="next-steps"></a>다음 단계
 [운영 체제 배포 준비](../get-started/prepare-for-operating-system-deployment.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

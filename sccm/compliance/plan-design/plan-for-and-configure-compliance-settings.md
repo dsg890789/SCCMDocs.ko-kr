@@ -1,5 +1,5 @@
 ---
-title: "준수 설정 계획 및 구성 | System Center Configuration Manager"
+title: "준수 설정 계획 및 구성 | Microsoft 문서"
 description: "System Center Configuration Manager에서 준수 설정으로 작업하기 위한 필수 조건 및 구성 작업에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 43bbbacfcd0e873974c517f1cb870ebc4d5e003d
+ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
+ms.openlocfilehash: d26ac3de58d2f0ef447725e63fc2d8adda6ea06c
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -52,9 +53,4 @@ System Center Configuration Manager 준수 설정 작업을 시작하기 전에 
 5. **확인** 을 클릭하여 **기본 설정** 대화 상자를 닫습니다.  
 
 클라이언트 컴퓨터는 다음에 클라이언트 정책을 다운로드할 때 이러한 설정으로 구성됩니다.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

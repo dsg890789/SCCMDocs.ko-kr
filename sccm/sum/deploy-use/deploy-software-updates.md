@@ -1,5 +1,5 @@
 ---
-title: "소프트웨어 업데이트 배포 | Configuration Manager"
+title: "소프트웨어 업데이트 배포 | Microsoft 문서"
 description: "Configuration Manager 콘솔에서 소프트웨어 업데이트를 선택하여 수동으로 배포 프로세스를 시작하거나 자동으로 업데이트를 배포합니다."
 keywords: 
 author: dougeby
@@ -13,12 +13,13 @@ ms.technology:
 - configmgr-sum
 ms.assetid: 04536d51-3bf7-45e5-b4af-36ceed10583d
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: b9e922c526750a04b3b7b7b24106fcb8900e73fa
+ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
+ms.openlocfilehash: 70a0ad1da03a7ca88df206fec683ab1df2b531e1
+ms.lasthandoff: 12/16/2016
 
 ---
 
-#  <a name="a-namebkmksumdeploya-deploy-software-updates"></a><a name="BKMK_SUMDeploy"></a> 소프트웨어 업데이트 배포  
+#  <a name="BKMK_SUMDeploy"></a> 소프트웨어 업데이트 배포  
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -34,7 +35,7 @@ ms.openlocfilehash: b9e922c526750a04b3b7b7b24106fcb8900e73fa
 
 소프트웨어 업데이트 배포에는 두 가지 기본 시나리오, 즉 수동 배포와 자동 배포가 있습니다. 일반적으로 처음에는 클라이언트 컴퓨터에 대한 기준을 만들기 위해 소프트웨어 업데이트를 수동으로 배포하고 그 후에는 자동 배포를 사용하여 클라이언트의 소프트웨어 업데이트를 관리합니다.  
 
-## <a name="a-namebkmkmanualdeploymenta-manually-deploy-software-updates"></a><a name="BKMK_ManualDeployment"></a> 소프트웨어 업데이트 수동 배포
+## <a name="BKMK_ManualDeployment"></a> 소프트웨어 업데이트 수동 배포
 Configuration Manager 콘솔에서 소프트웨어 업데이트를 선택하고 수동으로 배포 프로세스를 시작할 수 있습니다. 먼저 이 배포 방법을 사용하여 클라이언트 컴퓨터에 필수 소프트웨어 업데이트를 최신 버전으로 유지하는 것이 일반적인 방법입니다. 그 다음에 지속적인 월별 소프트웨어 업데이트 배포를 관리할 자동 배포 규칙을 만듭니다. 또한 수동 배포를 사용하면 대역 외 소프트웨어 업데이트 요구 사항을 배포할 수 있습니다. 다음 목록은 소프트웨어 업데이트의 수동 배포에 대한 일반적인 워크플로입니다.  
 
 1. 특정 요구 사항을 사용하는 소프트웨어 업데이트를 필터링합니다. 예를 들어 51개 이상의 클라이언트 컴퓨터에 필요한 보안 또는 중요 소프트웨어 업데이트를 모두 검색하는 기준을 제시할 수 있습니다.  
@@ -74,9 +75,4 @@ The Configuration Manager client downloads the content for required software upd
 
 
  <!-- For more information about the deployment process, see [Software update deployment process](../../sum/understand/software-updates-introduction.md#BKMK_DeploymentProcess).  -->
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

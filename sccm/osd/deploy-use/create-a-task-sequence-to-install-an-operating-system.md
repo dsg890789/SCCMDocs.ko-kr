@@ -1,5 +1,5 @@
 ---
-title: "운영 체제를 설치하는 작업 순서 만들기 | Configuration Manager"
+title: "운영 체제를 설치하는 작업 순서 만들기 | Microsoft 문서"
 description: "System Center Configuration Manager에서 작업 순서를 사용하여 운영 체제 이미지 및 기타 콘텐츠를 대상 컴퓨터에 자동으로 설치할 수 있습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 5c2823ddfc873864b7617d730e14742b7451ef0f
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 41aa6cf69a746f0ab67d804f1ee0c70db05d65ee
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -27,7 +28,7 @@ ms.openlocfilehash: 5c2823ddfc873864b7617d730e14742b7451ef0f
 
 System Center Configuration Manager에서 작업 순서를 사용하여 운영 체제 이미지를 대상 컴퓨터에 자동으로 설치할 수 있습니다. 대상 컴퓨터를 시작하는 데 사용되는 참조 부팅 이미지, 대상 컴퓨터에 설치할 운영 체제 이미지 및 그 외에 설치할 기타 추가 콘텐츠(예: 기타 응용 프로그램 또는 소프트웨어 업데이트)를 참조하는 작업 순서를 만듭니다. 그런 다음 대상 컴퓨터가 포함된 컬렉션에 작업 순서를 배포합니다.  
 
-##  <a name="a-namebkmkinstallosa-create-a-task-sequence-to-install-an-operating-system"></a><a name="BKMK_InstallOS"></a> 운영 체제를 설치하는 작업 순서 만들기  
+##  <a name="BKMK_InstallOS"></a> 운영 체제를 설치하는 작업 순서 만들기  
  해당 환경에서 컴퓨터에 운영 체제를 배포하는 시나리오는 다양합니다. 대부분의 경우 작업 순서를 만들고 작업 순서 만들기 마법사에서 **기존 이미지 패키지 설치** 를 선택하여 운영 체제 설치, 사용자 설정 마이그레이션, 소프트웨어 업데이트 적용, 응용 프로그램 설치를 수행합니다. 운영 체제를 설치하는 작업 순서를 만들기 전에 다음을 준비해야 합니다.   
 
 -   **필수**  
@@ -115,7 +116,7 @@ System Center Configuration Manager에서 작업 순서를 사용하여 운영 �
 
  이제 컴퓨터의 컬렉션에 작업 순서를 배포할 수 있습니다.  자세한 내용은 [Deploy a task sequence](manage-task-sequences-to-automate-tasks.md#BKMK_DeployTS)항목을 참조하세요.  
 
-##  <a name="a-namebkmkinstallexistingosimagetsexamplea-example-task-sequence-to-install-an-existing-operating-system-image"></a><a name="BKMK_InstallExistingOSImageTSExample"></a> 기존 운영 체제 이미지를 설치하는 작업 순서 예  
+##  <a name="BKMK_InstallExistingOSImageTSExample"></a> 기존 운영 체제 이미지를 설치하는 작업 순서 예  
  기존 운영 체제 이미지를 사용하여 운영 체제를 배포하는 작업 순서를 만드는 경우 다음 표를 가이드로 사용합니다. 테이블에 작업 순서 단계 및 구성 하 고 해당 작업 순서 단계를 논리 그룹으로 구성 하는 방법에 대 한 일반적인 순서를 결정 하는데 도움이 됩니다. 작업 순서를 만들면이 샘플에서 다를 수 있습니다 및 작업 순서 단계 및 그룹 보다 포함할 수 있습니다.  
 
 > [!IMPORTANT]  
@@ -156,9 +157,4 @@ System Center Configuration Manager에서 작업 순서를 사용하여 운영 �
 |사용자 환경 저장소 요청|이 작업 순서 단계를 사용 하 여 사용자 상태 데이터가 저장 되는 상태 마이그레이션 지점에 대 한 액세스를 요청 합니다.|  
 |사용자 파일 및 설정 복원|이 작업 순서 단계를 사용 하 여 상태 마이그레이션 도구 USMT (사용자)는 대상 컴퓨터에 사용자 상태 및 설정을 복원 하려면 시작 합니다.|  
 |릴리스 사용자 상태 저장소|상태 마이그레이션 지점에 사용자 상태 데이터가 더 이상 필요하지 않음을 알릴 때 사용하는 작업 순서 단계입니다.|  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

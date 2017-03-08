@@ -1,5 +1,5 @@
 ---
-title: "원격 연결 프로필 만들기 | System Center Configuration Manager"
+title: "원격 연결 프로필 만들기 | Microsoft 문서"
 description: "System Center Configuration Manager 원격 연결 프로필을 사용하여 사용자가 작업 컴퓨터에 원격으로 연결할 수 있습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: fd05211959d844c3658e3c5ead70b0c9a7f90116
+ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
+ms.openlocfilehash: 72fc94c6449649656a7e8b81659c2b5cc2551107
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -186,9 +187,4 @@ System Center Configuration Manager 원격 연결 프로필을 사용하면 사�
 >  호환성 설정 보고서에서 **장치 필터** 및 **사용자 필터** 매개 변수를 사용할 경우 와일드카드(%) 문자를 사용해야 합니다.  
 
  Configuration Manager에서 보고를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고](/sccm/core/servers/manage/reporting)를 참조하세요.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

@@ -1,5 +1,5 @@
 ---
-title: "VDI(가상 데스크톱 인프라) 클라이언트 관리 | System Center Configuration Manager "
+title: "VDI(가상 데스크톱 인프라) 클라이언트 관리 | Microsoft 문서 "
 description: "VDI(가상 데스크톱 인프라)에서 System Center Configuration Manager 클라이언트를 관리합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -13,16 +13,17 @@ ms.topic: get-started-article
 ms.assetid: abd45393-d84e-4583-bc80-74bbb3709577
 caps.latest.revision: 7
 caps.handback.revision: 0
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 2f9014a592de07ae8f36d23ce939fc1de776cd76
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: 58251f6a4eebac4cba9f3d51f8d0aaad068c3ab8
+ms.lasthandoff: 12/16/2016
 
 
 ---
-# <a name="considerations-for-managing-system-center-configuration-manager-clients-in-a-virtual-desktop-infrastructure-vdi"></a>VDI(가상 데스크톱 인프라)에서 System Center Configuration Manager 클라이언트를 관리할 때의 고려 사항
+# <a name="considerations-for-managing-system-center-configuration-manager-clients--in-a-virtual-desktop-infrastructure-vdi"></a>VDI(가상 데스크톱 인프라)에서 System Center Configuration Manager 클라이언트를 관리할 때의 고려 사항
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -48,9 +49,4 @@ System Center Configuration Manager는 다음과 같은 VDI(가상 데스크톱 
 >  서비스 모드인 Windows Embedded 클라이언트를 제외하고, 가상화된 환경에서 실행 중이지 않은 Configuration Manager 클라이언트에서도 이러한 임의 지연 시간을 활용합니다. 배포된 클라이언트가 여러 개인 경우 이러한 동작은 네트워크 대역폭의 최대 사용을 방지하고 관리 지점 및 사이트 서버와 같은 Configuration Manager 사이트 시스템에서 CPU 처리 요구 사항을 완화하는 데 도움이 됩니다. 지연 간격은 Configuration Manager 기능에 따라 달라집니다.  
 >   
 >  임의 지연은 **컴퓨터 에이전트**: **최종 기한 임의 설정 사용 안 함**클라이언트 설정을 통해 필수 소프트웨어 업데이트 및 필수 응용 프로그램 배포에 대해 기본적으로 사용되지 않습니다.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

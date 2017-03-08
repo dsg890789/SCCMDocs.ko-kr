@@ -1,5 +1,5 @@
 ---
-title: "Windows Embedded 장치에 클라이언트 배포 계획 | System Center Configuration Manager"
+title: "Windows Embedded 장치에 클라이언트 배포 계획 | Microsoft 문서"
 description: "System Center Configuration Manager에서 Windows Embedded 장치에 클라이언트 배포를 계획합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -13,12 +13,13 @@ ms.topic: get-started-article
 ms.assetid: 038e61f9-f49d-41d1-9a9f-87bec9e00d5d
 caps.latest.revision: 7
 caps.handback.revision: 0
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 2b73a59023aa2658c0920beab5cf7706e40601c9
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: 0f6a6719c4c9bc1e67be11adf5206a7672624fa0
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -108,9 +109,4 @@ ms.openlocfilehash: 2b73a59023aa2658c0920beab5cf7706e40601c9
 >   
 >      -   Windows Embedded Standard 7(64비트)  
 >     -   Windows Embedded POSReady 7(64비트)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

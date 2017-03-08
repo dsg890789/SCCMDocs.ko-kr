@@ -1,6 +1,6 @@
 ---
 
-title: "동기화할 분류 및 제품 구성 | System Center Configuration Manager"
+title: "동기화할 분류 및 제품 구성 | Microsoft 문서"
 description: "다음 단계에 따라 Configuration Manager 콘솔에서 동기화할 분류 및 제품을 구성하세요."
 keywords: 
 author: dougeby
@@ -14,8 +14,9 @@ ms.technology:
 - configmgr-sum
 ms.assetid: 5ddde4e6-d553-4182-b752-6bc8b4a26745
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 46cf461c92348e1a90533518355f2b5982ae5770
+ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
+ms.openlocfilehash: 6add66e625c790b65edf64216c2262a5d082f820
+ms.lasthandoff: 12/16/2016
 
 
 
@@ -68,9 +69,4 @@ ms.openlocfilehash: 46cf461c92348e1a90533518355f2b5982ae5770
 
 ## <a name="next-steps"></a>다음 단계
 소프트웨어 업데이트 동기화를 시작하여 새 기준을 기반으로 소프트웨어 업데이트를 검색합니다. 자세한 내용은 [소프트웨어 업데이트 동기화](synchronize-software-updates.md)를 참조하세요.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

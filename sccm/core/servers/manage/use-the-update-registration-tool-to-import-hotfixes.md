@@ -1,5 +1,5 @@
 ---
-title: "업데이트 등록 도구 | System Center Configuration Manager"
+title: "업데이트 등록 도구 | Microsoft 문서"
 description: "업데이트 등록 도구를 사용하여 수동으로 업데이트를 Configuration Manager 콘솔로 가져오는 시기 및 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 176c1d7055ae8706b92886d59d8a048dd867c18b
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: c729212d38168acfff3f11ea41f3d52b234c70c8
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -70,9 +71,4 @@ Configuration Manager의 일부 업데이트는 Microsoft 클라우드 서비스
      업데이트가 등록된 후 업데이트 등록 도구를 닫을 수 있습니다.  
 
 3.  Configuration Manager 콘솔을 열고 **관리** > **클라우드 서비스** > **업데이트 및 서비스**를 선택합니다. 이제 가져온 핫픽스를 설치할 수 있습니다. 업데이트를 설치하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 콘솔 내 업데이트 설치](../../../core/servers/manage/install-in-console-updates.md)를 참조하세요.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

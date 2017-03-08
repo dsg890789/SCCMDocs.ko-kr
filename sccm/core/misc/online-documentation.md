@@ -1,5 +1,5 @@
 ---
-title: "온라인 설명서 | System Center Configuration Manager"
+title: "온라인 설명서 | Microsoft 문서"
 ms.custom: na
 ms.date: 10/06/2016
 ms.reviewer: na
@@ -8,25 +8,25 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.assetid: 6d665cef-fc67-4686-bcb3-0572c0a3760c
 caps.latest.revision: 5
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: ff3d67b8d8e038ecd87dac90e65b4c1ab7cb15bc
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: 73bb5d4236469746102fd4893c53f20aaee122d5
+ms.lasthandoff: 12/16/2016
 
 
 ---
 # <a name="online-documentation-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 온라인 설명서
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
 
 System Center Configuration Manager 문서 라이브러리를 시작합니다.  
-
- 사용하는 제품 버전에 대한 문서 라이브러리를 찾습니다.  
+사용하는 제품 버전에 대한 문서 라이브러리를 찾습니다.  
 
 ## <a name="system-center-configuration-manager-current-branch"></a>System Center Configuration Manager(현재 분기)  
 **온라인 설명서:** TechNet에서 System Center Configuration Manager의 현재 분기에 대한 온라인 설명서를 볼 수 있습니다.  
@@ -49,19 +49,14 @@ System Center Configuration Manager 문서 라이브러리를 시작합니다.
 
 -   [System Center Configuration Manager의 모니터링 및 유지 관리](https://technet.microsoft.com/library/mt612855.aspx)  
 
--   [System Center Configuration Manager에 대한 기술 참조](https://technet.microsoft.com/library/mt634283.aspx)  
-
 -   [System Center Configuration Manager의 보안 및 개인 정보](https://technet.microsoft.com/library/mt622694.aspx)  
 
-**릴리스 정보:** 릴리스 정보에는 제품 설명서에서 확인할 수 없지만 System Center Configuration Manager를 설치하고 사용하는 데 필요한 정보가 들어 있습니다.  
+**릴리스 정보:** 릴리스 정보에는 제품 설명서에서 확인할 수 없지만 System Center Configuration Manager를 설치하고 사용하는 데 필요한 정보가 들어 있습니다. [System Center Configuration Manager의 릴리스 정보](https://technet.microsoft.com/library/mt592024.aspx)를 참조하세요.  
 
--   [System Center Configuration Manager의 릴리스 정보](https://technet.microsoft.com/library/mt592024.aspx)  
+**도움말 찾기:** [System Center Configuration Manager 사용 도움말 찾기](https://technet.microsoft.com/library/mt628521.aspx) 참조  
 
-**내게 필요한 옵션온라인 항목의 다음 섹션을 참조하세요.** [System Center Configuration Manager 사용 도움말 찾기](https://technet.microsoft.com/library/mt628521.aspx)온라인 항목의 다음 섹션을 참조하세요.  
+**접근성:** [Configuration Manager 콘솔에 대한 접근성 기능](https://technet.microsoft.com/library/mt628521.aspx) 참조  
 
--   [Configuration Manager 콘솔에 대한 내게 필요한 옵션 기능](https://technet.microsoft.com/library/mt628521.aspx#bkmk_aconsole)  
-
--   [Configuration Manager 도움말에 대한 내게 필요한 옵션 기능](https://technet.microsoft.com/library/mt628521.aspx#bkmk_ahelp)  
 
 ## <a name="system-center-configuration-manager-technical-preview"></a>System Center Configuration Manager 기술 미리 보기  
 **온라인 설명서:** TechNet의 다음 가이드에서 온라인 설명서를 볼 수 있습니다.  
@@ -108,9 +103,4 @@ TechNet의 다음 가이드에서 온라인 설명서를 볼 수 있습니다.
 **내게 필요한 옵션:** 장애가 있는 사용자가 Configuration Manager를 더욱 쉽게 이용할 수 있도록 지원하는 기능, 제품 및 서비스에 대해서는 [Configuration Manager의 내게 필요한 옵션 기능](http://go.microsoft.com/fwlink/p/?LinkId=258586)을 참조하세요.  
 
 **다운로드 가능한 설명서:** [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkId=253643)와 동일합니다. 최신 정보는 온라인 TechNet 라이브러리에서 확인하세요.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

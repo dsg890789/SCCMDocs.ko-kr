@@ -1,5 +1,5 @@
 ---
-title: "운영 체제를 캡처하는 작업 순서 만들기 | Configuration Manager"
+title: "운영 체제를 캡처하는 작업 순서 만들기 | Microsoft 문서"
 description: "빌드 및 캡처 작업 순서는 운영 체제와 함께 특정 드라이버 및 소프트웨어 업데이트를 포함할 수 있는 참조 컴퓨터를 빌드합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 12ea958e18a291a1b88e342b204e633d3bdf869f
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: e9320e40b8e5031ffa3da5e5149c7da718cc87d5
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -28,10 +29,10 @@ ms.openlocfilehash: 12ea958e18a291a1b88e342b204e633d3bdf869f
 
 System Center Configuration Manager에서 작업 순서를 사용하여 컴퓨터에 운영 체제를 배포하면 작업 순서에 지정하는 운영 체제 이미지가 설치됩니다. 특정 드라이버, 응용 프로그램, 소프트웨어 업데이트 등을 포함하도록 운영 체제 이미지를 사용자 지정하려면 빌드 및 캡처 작업 순서를 사용하여 참조 컴퓨터를 빌드한 다음 해당 참조 컴퓨터에서 운영 체제 이미지를 캡처합니다. 캡처를 사용할 수 있는 참조 컴퓨터가 이미 있는 경우에는 사용자 지정 작업 순서를 만들어 운영 체제를 캡처할 수 있습니다. 다음 섹션은 사용자 지정 운영 체제를 캡처하는 데 사용됩니다.  
 
-##  <a name="a-namebkmkbuildcapturetsa-use-a-task-sequence-to-build-and-capture-a-reference-computer"></a><a name="BKMK_BuildCaptureTS"></a> 작업 순서를 사용하여 참조 컴퓨터를 빌드 및 캡처  
+##  <a name="BKMK_BuildCaptureTS"></a> 작업 순서를 사용하여 참조 컴퓨터를 빌드 및 캡처  
  빌드 및 캡처 작업 순서는 참조 컴퓨터를 분할 및 포맷하고 운영 체제, Configuration Manager 클라이언트, 응용 프로그램, 소프트웨어 업데이트를 설치한 다음 참조 컴퓨터에서 운영 체제를 캡처합니다. 작업 순서와 연결된 패키지(예: 응용 프로그램)는 빌드 및 캡처 작업 순서를 만들기 전에 배포 지점에서 사용할 수 있어야 합니다.  
 
-###  <a name="a-namebkmkcreatepackagesa-prepare-for-operating-system-deployments"></a><a name="BKMK_CreatePackages"></a> 운영 체제 배포 준비  
+###  <a name="BKMK_CreatePackages"></a> 운영 체제 배포 준비  
  해당 환경에서 컴퓨터에 운영 체제를 배포하는 시나리오는 다양합니다. 대부분의 경우 작업 순서를 만들고 작업 순서 만들기 마법사에서 **기존 이미지 패키지 설치** 를 선택하여 운영 체제 설치, 사용자 설정 마이그레이션, 소프트웨어 업데이트 적용, 응용 프로그램 설치를 수행합니다. 운영 체제를 설치하는 작업 순서를 만들기 전에 다음을 준비해야 합니다.  
 
 -   **필수**  
@@ -48,7 +49,7 @@ System Center Configuration Manager에서 작업 순서를 사용하여 컴퓨�
 
     -   Configuration Manager 콘솔에 [응용 프로그램](../../apps/deploy-use/create-applications.md)을 추가해야 합니다.  
 
-###  <a name="a-namebkmkcreatebuildcapturetsa-create-a-build-and-capture-task-sequence"></a><a name="BKMK_CreateBuildCaptureTS"></a> 빌드 및 캡처 작업 순서 만들기  
+###  <a name="BKMK_CreateBuildCaptureTS"></a> 빌드 및 캡처 작업 순서 만들기  
  작업 순서를 사용하여 참조 컴퓨터를 빌드하고 운영 체제를 캡처하려면 다음 절차를 따릅니다.  
 
 #### <a name="to-create-a-task-sequence-that-builds-and-captures-an-operating-system-image"></a>운영 체제 이미지를 만들고 캡처하는 작업 순서를 만들려면  
@@ -145,7 +146,7 @@ System Center Configuration Manager에서 작업 순서를 사용하여 컴퓨�
 
 -   참조 컴퓨터가 Configuration Manager 클라이언트가 아닌 경우 또는 참조 컴퓨터에서 작업 순서를 수동으로 실행하려는 경우 **작업 순서 미디어 만들기 마법사**를 실행하여 부팅 가능한 미디어를 만듭니다. 부팅 가능한 미디어를 만드는 방법에 대한 자세한 내용은 [부팅 가능한 미디어 만들기](create-bootable-media.md)를 참조하세요.  
 
-##  <a name="a-namebkmkcaptureexistingrefcomputera-capture-an-operating-system-image-from-an-existing-reference-computer"></a><a name="BKMK_CaptureExistingRefComputer"></a> 기존 참조 컴퓨터에서 운영 체제 이미지 캡처  
+##  <a name="BKMK_CaptureExistingRefComputer"></a> 기존 참조 컴퓨터에서 운영 체제 이미지 캡처  
  캡처할 참조 컴퓨터가 이미 있는 경우에는 참조 컴퓨터에서 운영 체제를 캡처하는 작업 순서를 만들 수 있습니다. **운영 체제 이미지 캡처** 작업 순서 단계를 사용하여 참조 컴퓨터에서 하나 이상의 이미지를 캡처하고 지정된 네트워크 공유의 이미지 파일(.wim)에 저장할 수 있습니다. 참조 컴퓨터는 부팅 이미지를 사용하여 Windows PE에서 시작되며, 참조 컴퓨터의 각 하드 드라이브는 .wim 파일 내에 별도의 이미지로 캡처됩니다. 참조된 컴퓨터에 여러 개의 드라이브가 있는 경우에는 결과 .wim 파일에 각 볼륨에 대한 별도의 이미지가 포함됩니다. NTFS 또는 FAT32로 포맷된 볼륨만 캡처됩니다. 다른 형식의 볼륨 및 USB 볼륨은 건너뜁니다.  
 
  다음 절차에 따라 기존 참조 컴퓨터에서 운영 체제 이미지를 캡처합니다.  
@@ -166,7 +167,7 @@ System Center Configuration Manager에서 작업 순서를 사용하여 컴퓨�
 
 7.  마법사를 완료합니다.  
 
-8.   **작업 순서**에서 사용자 지정 작업 순서를 선택한 다음 **홈** 탭의 **작업 순서** 그룹에서 **편집** 을 클릭하여 작업 순서 편집기를 엽니다.  
+8.  **작업 순서**에서 사용자 지정 작업 순서를 선택한 다음 **홈** 탭의 **작업 순서** 그룹에서 **편집** 을 클릭하여 작업 순서 편집기를 엽니다.  
 
 9. 이 단계는 Configuration Manager 클라이언트가 참조 컴퓨터에 설치된 경우에만 사용합니다.  
 
@@ -192,7 +193,7 @@ System Center Configuration Manager에서 작업 순서를 사용하여 컴퓨�
 
 -   참조 컴퓨터가 Configuration Manager 클라이언트가 아닌 경우 또는 참조 컴퓨터에서 작업 순서를 수동으로 실행하려는 경우 **작업 순서 미디어 만들기 마법사**를 실행하여 부팅 가능한 미디어를 만듭니다. 부팅 가능한 미디어를 만드는 방법에 대한 자세한 내용은 [부팅 가능한 미디어 만들기](create-bootable-media.md)를 참조하세요.  
 
-##  <a name="a-namebkmkbuildandcapturetsexamplea-task-sequence-example-to-build-and-capture-an-operating-system-image"></a><a name="BKMK_BuildandCaptureTSExample"></a> 운영 체제 이미지를 만들고 캡처하는 작업 순서 예제  
+##  <a name="BKMK_BuildandCaptureTSExample"></a> 운영 체제 이미지를 만들고 캡처하는 작업 순서 예제  
  운영 체제 이미지를 만들고 캡처하는 작업 순서를 만드는 동안 다음 표를 가이드로 사용합니다. 이 표는 작업 순서 단계에 대한 일반적인 순서 및 해당 작업 순서 단계를 논리 그룹으로 구성하는 방법을 결정하는 데 도움이 됩니다. 만드는 작업 순서는 이 샘플과 다를 수 있으며, 작업 순서 단계 및 그룹이 더 많거나 적을 수 있습니다.  
 
 > [!IMPORTANT]  
@@ -232,9 +233,4 @@ System Center Configuration Manager에서 작업 순서를 사용하여 컴퓨�
 
 ## <a name="next-steps"></a>다음 단계  
 [엔터프라이즈 운영 체제를 배포하는 방법](methods-to-deploy-enterprise-operating-systems.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

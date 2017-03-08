@@ -1,5 +1,5 @@
 ---
-title: "쿼리 소개 | System Center Configuration Manager"
+title: "쿼리 소개 | Microsoft 문서"
 description: "쿼리를 만들고 실행하여 쿼리 조건과 일치하는 개체를 System Center Configuration Manager 계층 구조에서 찾습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 054f3cc5ba7963231df93ed0ceb973d20b2e8f8e
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: f84d518670c0ece3c08c890d2293335518f7f8e9
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -38,9 +39,4 @@ ms.openlocfilehash: 054f3cc5ba7963231df93ed0ceb973d20b2e8f8e
 
 ## <a name="see-also"></a>참고 항목  
  [System Center Configuration Manager에 대한 쿼리 기술 참조](../../../core/servers/manage/queries-technical-reference.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

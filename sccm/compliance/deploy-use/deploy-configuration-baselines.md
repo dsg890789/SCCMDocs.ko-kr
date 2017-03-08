@@ -1,5 +1,5 @@
 ---
-title: "구성 기준 배포 | System Center Configuration Manager"
+title: "구성 기준 배포 | Microsoft 문서"
 description: "구성 기준을 배포하여 구성 기준 배포를 정의하고 배포에서 구성 기준을 추가하거나 제거합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 47aad22bc88d3a466767e4d131122fbee38e3fd7
+ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
+ms.openlocfilehash: 9c9e6b7780c7c10c20a60dbbbf506e916031eb88
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -57,9 +58,4 @@ ms.openlocfilehash: 47aad22bc88d3a466767e4d131122fbee38e3fd7
     >  구성 기준이 컴퓨터에 배포되면 예약한 시작 시간의 2시간 이내에 준수 여부가 평가됩니다. 사용자에게 배포된 경우 사용자가 로그온할 때 준수 여부가 평가됩니다.  
 
 9. **확인** 을 클릭하여 **구성 기준 배포** 대화 상자를 닫고 배포를 만듭니다. 배포를 모니터링하는 방법에 대한 자세한 내용은 [Monitor compliance settings](/sccm/compliance/deploy-use/monitor-compliance-settings)(준수 설정 모니터링)를 참조하세요.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

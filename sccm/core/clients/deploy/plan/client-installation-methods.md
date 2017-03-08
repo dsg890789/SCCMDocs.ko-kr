@@ -1,8 +1,8 @@
 ---
-title: "클라이언트 설치 방법 | System Center Configuration Manager"
+title: "클라이언트 설치 방법 | Microsoft 문서"
 description: "System Center Configuration Manager의 클라이언트 설치 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 11/23/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,12 +13,13 @@ ms.topic: get-started-article
 ms.assetid: 51b5964b-374d-4abc-8619-414a9fffad2d
 caps.latest.revision: 9
 caps.handback.revision: 0
-author: Mtillman
-ms.author: mtillman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 169e7871bc1fbc83964ecb17e277d64ce4fd472c
+ms.sourcegitcommit: 593fbd0587d54490246f48ae54f666bac6b7830d
+ms.openlocfilehash: a7d5a04cf34c49246f768f9a4757c5da3b4db31a
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -26,9 +27,7 @@ ms.openlocfilehash: 169e7871bc1fbc83964ecb17e277d64ce4fd472c
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-다양한 방법을 사용하여 엔터프라이즈의 Windows 장치, UNIX/Linux 서버 및 Mac 컴퓨터에 System Center Configuration Manager 클라이언트 소프트웨어를 설치할 수 있습니다. 요구 사항에 따라 이러한 방법 중 한 가지를 사용하거나 여러 가지를 조합하여 사용할 수 있습니다.  
-
- 다음 섹션에는 조직에 가장 적합한 방법을 결정하는 데 도움이 되도록 각 클라이언트 설치 방법의 장점과 단점이 정리되어 있습니다.  
+다양한 방법으로 Configuration Manager(ConfigMgr 또는 SCCM이라고도 함) 클라이언트 소프트웨어를 설치할 수 있습니다. 한 가지 방법이나 여러 방법의 조합을 사용할 수 있습니다. 이 항목에서 각 방법을 살펴보고 조직에 가장 적합한 방법을 확인할 수 있습니다.  
 
 ## <a name="client-push-installation"></a>클라이언트 강제 설치  
 
@@ -147,9 +146,4 @@ ms.openlocfilehash: 169e7871bc1fbc83964ecb17e277d64ce4fd472c
 -   [System Center Configuration Manager에서 UNIX 및 Linux 서버에 클라이언트를 배포하는 방법](../../../../core/clients/deploy/deploy-clients-to-unix-and-linux-servers.md)  
 
 -   [System Center Configuration Manager에서 Mac에 클라이언트를 배포하는 방법](../../../../core/clients/deploy/deploy-clients-to-macs.md)  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

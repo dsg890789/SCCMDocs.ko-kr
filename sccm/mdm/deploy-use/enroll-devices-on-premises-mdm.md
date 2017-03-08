@@ -1,6 +1,6 @@
 ---
 
-title: "장치 등록 | MDM System Center | Configuration Manager"
+title: "장치 등록 | Microsoft 문서 | MDM System Center"
 description: "System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 위해 장치를 등록하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 911139148a18b2d5044962406a0847cdc97ab9d6
+ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
+ms.openlocfilehash: 9ecfef871b9082aad4c8f0cf933f963efd57c292
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -44,9 +45,4 @@ System Center Configuration Manager 온-프레미스 모바일 장치 관리를 
 > -   Windows 10 Team\(Configuration Manager 버전 1602 이상\)  
 > -   Windows 10 Mobile  
 > -   Windows 10 Mobile Enterprise   
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

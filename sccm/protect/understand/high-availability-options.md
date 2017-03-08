@@ -1,5 +1,5 @@
 ---
-title: "고가용성 | System Center Configuration Manager"
+title: "고가용성 | Microsoft 문서"
 description: "높은 수준으로 사용 가능한 서비스를 유지하는 옵션을 사용하여 System Center Configuration Manager를 배포하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 7d8dff8779fbf146a57f753dee9f98488fa5fa61
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: d3e9afb90cdc85bc7299626b642c52be659e3bdf
+ms.lasthandoff: 12/16/2016
 
 ---
 # <a name="high-availability-options-for-system-center-configuration-manager"></a>System Center Configuration Manager의 고가용성 옵션
@@ -61,7 +62,7 @@ ms.openlocfilehash: 7d8dff8779fbf146a57f753dee9f98488fa5fa61
 -   [사이트 및 사이트 시스템 필수 조건](../../core/plan-design/configs/site-and-site-system-prerequisites.md)
 
 
-##  <a name="a-namebkmksnha-high-availability-for-sites-and-hierarchies"></a><a name="bkmk_snh"></a> 사이트 및 계층 구조의 고가용성  
+##  <a name="bkmk_snh"></a> 사이트 및 계층 구조의 고가용성  
  **SQL Server 클러스터를 사용하여 사이트 데이터베이스 호스트**  
 
  중앙 관리 사이트 또는 기본 사이트에서 데이터베이스로 SQL Server 클러스터를 사용하는 경우 SQL Server에 기본 제공되는 장애 조치(failover) 지원을 사용하게 됩니다.  
@@ -86,7 +87,7 @@ ms.openlocfilehash: 7d8dff8779fbf146a57f753dee9f98488fa5fa61
 
  **사이트에 SMS 공급자의 여러 인스턴스 설치:** SMS 공급자는 하나 이상의 Configuration Manager 콘솔에 대한 관리 연결 지점을 제공합니다. 여러 SMS 공급자를 설치하면 사이트와 계층을 관리하는 연결 지점에 중복성을 구현할 수 있습니다.  
 
-##  <a name="a-namebkmkssra-high-availability-for-site-system-roles"></a><a name="bkmk_ssr"></a> 사이트 시스템 역할의 고가용성  
+##  <a name="bkmk_ssr"></a> 사이트 시스템 역할의 고가용성  
  클라이언트가 사이트에서 사용할 서비스를 제공하는 사이트 시스템 역할을 각 사이트에서 배포해야 합니다. 사이트 데이터베이스에는 사이트와 모든 클라이언트에 대한 구성 정보가 들어 있습니다. 사용 가능한 옵션을 하나 이상 사용해서 사이트 데이터베이스에 고가용성을 제공하거나 필요한 경우 사이트 및 사이트 데이터베이스를 복구하십시오.  
 
  **중요한 사이트 시스템 역할에 대한 중복성:**  
@@ -153,9 +154,9 @@ ms.openlocfilehash: 7d8dff8779fbf146a57f753dee9f98488fa5fa61
 
  각 응용 프로그램 카탈로그 사이트 시스템 역할은 해당 사이트 서버 역할의 계층 내 위치에 상관없이 해당 사이트 시스템 역할의 다른 인스턴스와 동일한 정보를 제공합니다. 따라서 클라이언트가 응용 프로그램 카탈로그에 대한 요청을 보내는 경우 기본 응용 프로그램 카탈로그 웹 사이트 지점 장치 클라이언트 설정이 자동 검색으로 구성되어 있으면 클라이언트가 사용 가능한 인스턴스로 리디렉션될 수 있습니다. 기본 설정은 클라이언트의 현재 네트워크 위치에 따라 로컬 응용 프로그램 카탈로그 사이트 시스템 서버로 지정됩니다.  
 
- 이 클라이언트 설정에 대한 정보와 자동 검색이 작동하는 방식에 대한 자세한 내용은 [System Center Configuration Manager의 클라이언트 설정 정보](../../core/clients/deploy/about-client-settings.md) 항목에서 [컴퓨터 에이전트](../../core/clients/deploy/about-client-settings.md#BKMK_ComputerAgentDeviceSettings) 섹션을 참조하세요.  
+ 이 클라이언트 설정에 대한 정보와 자동 검색이 작동하는 방식에 대한 자세한 내용은 [System Center Configuration Manager의 클라이언트 설정 정보](../../core/clients/deploy/about-client-settings.md) 항목에서 [컴퓨터 에이전트](../../core/clients/deploy/about-client-settings.md#computer-agent) 섹션을 참조하세요.  
 
-##  <a name="a-namebkmkclienta-high-availability-for-clients"></a><a name="bkmk_client"></a> 클라이언트의 고가용성  
+##  <a name="bkmk_client"></a> 클라이언트의 고가용성  
  **클라이언트 작업이 자치적으로 수행됨:**  
 
  Configuration Manager 클라이언트 자치성에는 다음이 포함됩니다.  
@@ -200,7 +201,7 @@ ms.openlocfilehash: 7d8dff8779fbf146a57f753dee9f98488fa5fa61
 
 -   클라이언트 컴퓨터에 오류가 발생해도 데이터베이스에 저장된 정보의 무결성에 영향을 미치지 않습니다. 이 정보를 여전히 보고에 사용할 수 있습니다.  
 
-##  <a name="a-namebkmknonhaoptionsa-options-for-sites-and-site-system-roles-that-are-not-highly-available"></a><a name="bkmk_nonHAoptions"></a> 가용성이 높지 않은 사이트 및 사이트 시스템 역할에 대한 옵션  
+##  <a name="bkmk_nonHAoptions"></a> 가용성이 높지 않은 사이트 및 사이트 시스템 역할에 대한 옵션  
  여러 사이트 시스템이 사이트에 여러 인스턴스를 구성하는 것이나 계층 구조를 지원하지 않습니다. 이 정보는 이러한 사이트 시스템의 오프라인 전환을 준비하는 데 유용합니다.  
 
  **사이트 서버(사이트):**  
@@ -261,9 +262,4 @@ ms.openlocfilehash: 7d8dff8779fbf146a57f753dee9f98488fa5fa61
 
 ### <a name="see-also"></a>참고 항목  
  [System Center Configuration Manager에서 지원되는 구성](../../core/plan-design/configs/supported-configurations.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

@@ -1,5 +1,5 @@
 ---
-title: "보고 구성 | System Center Configuration Manager"
+title: "보고 구성 | Microsoft 문서"
 description: "SQL Server Reporting Services에 대한 정보를 포함하여 Configuration Manager 계층 구조에서 보고를 설정하는 방법에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 7c7fb75ec6be7a24afe2bb8038998fb58b10e331
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: aed95333b6509b0aa7061f23969381f1ce8aff7f
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -33,7 +34,7 @@ System Center Configuration Manager 콘솔에서 보고서를 만들고 수정�
 
 -   [System Center Configuration Manager의 보고 계획](../../../core/servers/manage/planning-for-reporting.md)  
 
-##  <a name="a-namebkmksqlreportingservicesa-sql-server-reporting-services"></a><a name="BKMK_SQLReportingServices"></a> SQL Server Reporting Services  
+##  <a name="BKMK_SQLReportingServices"></a> SQL Server Reporting Services  
  SQL Server Reporting Services는 서버 기반의 보고 플랫폼으로서 다양한 데이터 원본에 대한 포괄적인 보고 기능을 제공합니다. Configuration Manager의 보고 서비스 지점은 SQL Server Reporting Services와 통신하여 Configuration Manager 보고서를 지정된 보고서 폴더에 복사하고 Reporting Services 설정을 구성하며 Reporting Services 보안 설정을 구성합니다. Reporting Services는 Configuration Manager 사이트 데이터베이스에 연결하여 보고서를 실행할 때 반환되는 데이터를 검색합니다.  
 
  Configuration Manager 사이트에 보고 서비스 지점을 설치하려면 먼저 보고 서비스 지점 사이트 시스템 역할을 호스트하는 사이트 시스템에서 SQL Server Reporting Services를 설치하고 구성해야 합니다. 보고 서비스 설치에 대한 자세한 내용은 [SQL Server TechNet Library](http://go.microsoft.com/fwlink/p/?LinkId=266389)를 참조하십시오.  
@@ -48,18 +49,18 @@ System Center Configuration Manager 콘솔에서 보고서를 만들고 수정�
 
 3.  **보고서 서버 상태** 페이지에서 **보고서 서비스 상태** 가 **시작됨**으로 설정되어 있는지 확인합니다. 설정되어 있지 않은 경우 **시작**을 클릭합니다.  
 
-4.  **웹 서비스 URL** 페이지에서 **보고서 서비스 웹 서비스 URL** 의 URL을 클릭하여 보고서 폴더에 대한 연결을 테스트합니다.  **Windows 보안** 대화 상자가 열리고 보안 자격 증명을 입력하라는 메시지가 표시될 수 있습니다. 기본적으로 사용자 계정이 표시됩니다. 암호를 입력한 후에 **확인**을 클릭합니다. 웹 페이지가 성공적으로 열리는지 확인합니다. 브라우저 창을 닫습니다.  
+4.  **웹 서비스 URL** 페이지에서 **보고서 서비스 웹 서비스 URL** 의 URL을 클릭하여 보고서 폴더에 대한 연결을 테스트합니다. **Windows 보안** 대화 상자가 열리고 보안 자격 증명을 입력하라는 메시지가 표시될 수 있습니다. 기본적으로 사용자 계정이 표시됩니다. 암호를 입력한 후에 **확인**을 클릭합니다. 웹 페이지가 성공적으로 열리는지 확인합니다. 브라우저 창을 닫습니다.  
 
 5.  **데이터베이스** 페이지에서 **보고서 서버 모드** 설정이 **네이티브**를 사용하여 구성되어 있는지 확인합니다.  
 
-6.  **보고서 관리자 URL** 페이지에서 **보고서 관리자 사이트 확인** 의 URL을 클릭하여 보고서 관리자의 가상 디렉터리에 대한 연결을 테스트합니다.  **Windows 보안** 대화 상자가 열리고 보안 자격 증명을 입력하라는 메시지가 표시될 수 있습니다. 기본적으로 사용자 계정이 표시됩니다. 암호를 입력한 후에 **확인**을 클릭합니다. 웹 페이지가 성공적으로 열리는지 확인합니다. 브라우저 창을 닫습니다.  
+6.  **보고서 관리자 URL** 페이지에서 **보고서 관리자 사이트 확인** 의 URL을 클릭하여 보고서 관리자의 가상 디렉터리에 대한 연결을 테스트합니다. **Windows 보안** 대화 상자가 열리고 보안 자격 증명을 입력하라는 메시지가 표시될 수 있습니다. 기본적으로 사용자 계정이 표시됩니다. 암호를 입력한 후에 **확인**을 클릭합니다. 웹 페이지가 성공적으로 열리는지 확인합니다. 브라우저 창을 닫습니다.  
 
     > [!NOTE]  
     >  Configuration Manager에서는 보고에 Reporting Services 보고서 관리자가 필요 없지만 인터넷 브라우저에 대한 보고서를 실행하거나 보고서 관리자를 사용하여 보고서를 관리하려는 경우 필요합니다.  
 
 7.  **끝내기**를 클릭하여 Reporting Services Configuration Manager를 닫습니다.  
 
-##  <a name="a-namebkmkreportbuilder3a-configure-reporting-to-use-report-builder-30"></a><a name="BKMK_ReportBuilder3"></a> 보고서 작성기 3.0을 사용하도록 보고 구성  
+##  <a name="BKMK_ReportBuilder3"></a> 보고서 작성기 3.0을 사용하도록 보고 구성  
 
 #### <a name="to-change-the-report-builder-manifest-name-to-report-builder-30"></a>보고서 작성기 이름을 보고서 작성기 3.0으로 변경하려면  
 
@@ -73,7 +74,7 @@ System Center Configuration Manager 콘솔에서 보고서를 만들고 수정�
 
 5.  Windows 레지스트리 편집기를 닫습니다.  
 
-##  <a name="a-namebkmkinstallreportingservicespointa-install-a-reporting-services-point"></a><a name="BKMK_InstallReportingServicesPoint"></a> 보고 서비스 지점 설치  
+##  <a name="BKMK_InstallReportingServicesPoint"></a> 보고 서비스 지점 설치  
  사이트에서 보고서를 관리하려면 보고 서비스 지점을 사이트에 설치해야 합니다. 보고 서비스 지점에서는 보고서 폴더와 보고서를 SQL Server Reporting Services에 복사하고 보고서와 폴더에 대한 보안 정책을 적용하며 보고 서비스에서 구성 설정을 지정합니다. 먼저 보고 서비스 지점을 구성해야 Configuration Manager 콘솔에 보고서가 표시되고 Configuration Manager에서 보고서를 관리할 수 있습니다. 보고 서비스 지점은 Microsoft SQL Server Reporting Services가 설치되어 실행되는 서버에 구성해야 하는 사이트 시스템 역할입니다. 필수 조건에 대한 자세한 내용은 [보고에 대한 필수 조건](prerequisites-for-reporting.md)을 참조하세요.  
 
 > [!IMPORTANT]  
@@ -142,7 +143,7 @@ System Center Configuration Manager 콘솔에서 보고서를 만들고 수정�
     > [!NOTE]  
     >  보고서 폴더가 만들어지고 보고서가 보고서 서버에 복사될 때 Configuration Manager에서는 개체의 해당 언어를 파악합니다. 해당 언어 팩이 사이트에 설치된 경우 Configuration Manager가 사이트에서 보고서 서버를 실행하는 운영 체제와 동일한 언어로 개체를 만듭니다. 해당 언어를 사용할 수 없는 경우 보고서가 영어로 만들어져서 표시됩니다. 언어 팩 없이 사이트에 보고 서비스 지점을 설치할 경우 보고서가 영어로 설치됩니다. 보고 서비스 지점을 설치한 후에 언어 팩을 설치하는 경우 보고 서비스 지점을 제거한 후에 다시 설치해야만 해당 언어 팩 언어로 보고서를 사용할 수 있습니다. 언어 팩에 대한 자세한 내용은 [System Center Configuration Manager의 언어 팩](../deploy/install/language-packs.md)을 참조하세요.  
 
-###  <a name="a-namebkmkfileinstallationandsecuritya-file-installation-and-report-folder-security-rights"></a><a name="BKMK_FileInstallationAndSecurity"></a> 파일 설치 및 보고서 폴더 보안 권한  
+###  <a name="BKMK_FileInstallationAndSecurity"></a> 파일 설치 및 보고서 폴더 보안 권한  
  Configuration Manager에서는 보고 서비스 지점을 설치하고 Reporting Services를 구성하기 위해 다음과 같은 작업을 수행합니다.  
 
 > [!IMPORTANT]  
@@ -172,14 +173,14 @@ System Center Configuration Manager 콘솔에서 보고서를 만들고 수정�
 
      Configuration Manager에서 Reporting Services에 연결하고 Configuration Manager 및 Reporting Services 루트 폴더와 특정 보고서 폴더의 사용자에 대한 권한을 설정합니다. 보고 서비스 지점을 처음 설치하면 Configuration Manager에서 10분 간격으로 Reporting Services에 연결하여 보고서 폴더에 구성된 사용자 권한이 Configuration Manager 사용자에 대해 설정된 연결된 권한인지 확인합니다. Reporting Services 보고서 관리자를 사용하여 보고서 폴더에서 사용자를 추가하거나 사용자 권한을 수정하면 Configuration Manager에서 사이트 데이터베이스에 저장된 역할 기반 할당을 사용하여 해당 변경 내용을 덮어씁니다. 또한 Configuration Manager는 Configuration Manager에서 보고 권한이 없는 사용자를 제거합니다.  
 
-##  <a name="a-namebkmksecurityrolesa-reporting-services-security-roles-for-configuration-manager"></a><a name="BKMK_SecurityRoles"></a> Configuration Manager의 보고 서비스 보안 역할  
+##  <a name="BKMK_SecurityRoles"></a> Configuration Manager의 보고 서비스 보안 역할  
  Configuration Manager에서 보고 서비스 지점을 설치하면 Reporting Services에 다음 보안 역할이 추가됩니다.  
 
 -   **ConfigMgr 보고서 사용자**: 이 보안 역할이 할당된 사용자만 Configuration Manager 보고서를 실행할 수 있습니다.  
 
 -   **ConfigMgr 보고서 관리자**: 이 보안 역할이 할당된 사용자는 Configuration Manager에서 보고와 관련된 모든 작업을 수행할 수 있습니다.  
 
-##  <a name="a-namebkmkverifyreportingservicespointinstallationa-verify-the-reporting-services-point-installation"></a><a name="BKMK_VerifyReportingServicesPointInstallation"></a> 보고 서비스 지점 설치 확인  
+##  <a name="BKMK_VerifyReportingServicesPointInstallation"></a> 보고 서비스 지점 설치 확인  
  보고 서비스 지점 사이트 역할을 추가하면 특정 상태 메시지와 로그 파일 항목을 보고 설치를 확인할 수 있습니다. 보고 서비스 지점 설치가 제대로 수행되었는지 확인하려면 다음 절차를 수행하십시오.  
 
 > [!WARNING]  
@@ -203,7 +204,7 @@ System Center Configuration Manager 콘솔에서 보고서를 만들고 수정�
 
 7.  Srsrp.log를 열고 보고 서비스 지점이 설치된 시점부터 로그 파일의 내용을 차례차례 검토합니다. 보고서 폴더가 만들어졌는지, 보고서가 배포되었는지, 각 폴더의 보안 정책이 확인되었는지 확인합니다. 보안 정책 확인 내용의 마지막 줄 다음에 **SRS 웹 서비스가 서버에서 상태가 성공적으로 체크** 를 찾아 봅니다.  
 
-##  <a name="a-namebkmkcertificatea-configure-a-self-signed-certificate-for-configuration-manager-console-computers"></a><a name="BKMK_Certificate"></a> Configuration Manager 콘솔 컴퓨터용 자체 서명된 인증서 구성  
+##  <a name="BKMK_Certificate"></a> Configuration Manager 콘솔 컴퓨터용 자체 서명된 인증서 구성  
  SQL Server Reporting Services 보고서를 제작하는 데 필요한 여러 옵션이 있습니다. Configuration Manager 콘솔에서 보고서를 만들거나 편집할 때 Configuration Manager에서 보고서 작성기가 열려 제작 환경으로 사용됩니다. Configuration Manager 보고서를 작성하는 방법에 관계없이 사이트 데이터베이스 서버에 대한 서버 인증용으로 자체 서명된 인증서가 필요합니다. Configuration Manager에서는 SMS 공급자가 설치된 컴퓨터와 사이트 서버에 인증서를 자동으로 설치합니다. 그러므로 이러한 컴퓨터 중 하나에서 실행할 때 Configuration Manager 콘솔에서 보고서를 만들거나 편집할 수 있습니다. 그러나 다른 컴퓨터에 설치된 Configuration Manager 콘솔에서 보고서를 만들거나 수정할 때는 사이트 서버에서 인증서를 내보낸 다음 Configuration Manager 콘솔을 실행하는 컴퓨터의 **신뢰된 사용자** 인증서 저장소에 추가해야 합니다.  
 
 > [!NOTE]  
@@ -243,7 +244,7 @@ System Center Configuration Manager 콘솔에서 보고서를 만들고 수정�
 
     5.  **마침** 을 클릭하여 마법사를 닫고 컴퓨터의 인증서 구성을 완료합니다.  
 
-##  <a name="a-namebkmkmodifyreportingservicespointa-modify-reporting-services-point-settings"></a><a name="BKMK_ModifyReportingServicesPoint"></a> 보고 서비스 지점 설정 수정  
+##  <a name="BKMK_ModifyReportingServicesPoint"></a> 보고 서비스 지점 설정 수정  
  보고 서비스 지점을 설치하면 보고 서비스 지점 속성에서 사이트 데이터베이스 연결 및 인증 설정을 수정할 수 있습니다. 보고 서비스 지점 설정을 수정하려면 다음 절차를 수행하십시오.  
 
 #### <a name="to-modify-reporting-services-point-settings"></a>보고 서비스 지점 설정을 수정하려면  
@@ -280,7 +281,7 @@ System Center Configuration Manager 콘솔에서 보고서를 만들고 수정�
 ## <a name="upgrading-sql-server"></a>SQL Server 업그레이드  
  SQL Server와 보고 서비스 지점의 데이터 원본으로 사용되는 SQL Server Reporting Services를 업그레이드하면 Configuration Manager 콘솔에서 보고서를 실행하거나 편집할 때 오류가 나타날 수 있습니다. Configuration Manager 콘솔에서 보고가 제대로 작동하려면 사이트의 보고 서비스 지점 사이트 시스템 역할을 제거하고 다시 설치해야 합니다. 그러나 업그레이드한 후에도 계속 인터넷 브라우저에서 보고서를 실행하고 편집할 수 있습니다.  
 
-##  <a name="a-namebkmkconfigurereportoptionsa-configure-report-options"></a><a name="BKMK_ConfigureReportOptions"></a> 보고서 옵션 구성  
+##  <a name="BKMK_ConfigureReportOptions"></a> 보고서 옵션 구성  
  Configuration Manager 사이트의 보고서 옵션을 사용하여 보고서를 관리하는 데 사용되는 기본 보고 서비스 지점을 선택합니다. 사이트에 보고 서비스 지점이 둘 이상 있을 수 있지만 보고서 옵션에서 선택한 기본 보고서 서버만 보고서를 관리하는 데 사용됩니다. 사이트에 대한 보고서 옵션을 구성하려면 다음 절차를 수행하십시오.  
 
 #### <a name="to-configure-report-options"></a>보고서 옵션을 구성하려면  
@@ -295,9 +296,4 @@ System Center Configuration Manager 콘솔에서 보고서를 만들고 수정�
 
 ## <a name="next-steps"></a>다음 단계
 [보고 작업 및 유지 관리](operations-and-maintenance-for-reporting.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

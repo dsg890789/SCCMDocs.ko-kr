@@ -1,8 +1,8 @@
 ---
-title: "컬렉션 관리 | System Center Configuration Manager"
+title: "컬렉션 관리 | Microsoft 문서"
 description: "System Center Configuration Manager에서 일반적인 컬렉션 관리 작업을 수행합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 2/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: e102fd1a-76df-4d8e-b1b0-10ee18318f67
 caps.latest.revision: 8
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: d7d0b9c40f22bf1a7c477d1b8626d5a531c959d7
+ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
+ms.openlocfilehash: b41b50c75f1b89c8fc712b53988bd8e24813106d
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -71,7 +72,7 @@ ms.openlocfilehash: d7d0b9c40f22bf1a7c477d1b8626d5a531c959d7
 |**배포 시뮬레이트**|**응용 프로그램 배포 시뮬레이트 마법사** 를 엽니다. 이 마법사를 통해 응용 프로그램을 설치하거나 제거하지 않고도 응용 프로그램 배포 결과를 테스트할 수 있습니다.|[System Center Configuration Manager에서 응용 프로그램 배포를 시뮬레이트하는 방법](../../../../apps/deploy-use/simulate-application-deployments.md)|  
 |**배포:**|다음 옵션이 표시됩니다.<br /><br /> - **응용 프로그램** - 선택한 컬렉션에 대한 응용 프로그램 배포를 선택하고 구성할 수 있는 **소프트웨어 배포 마법사**를 엽니다.<br /><br /> - <br />                    **프로그램** – 선택한 컬렉션에 대한 패키지 및 프로그램 배포를 선택하고 구성할 수 있는 **소프트웨어 배포 마법사** 를 엽니다.<br /><br /> - **구성 기준** - 선택한 컬렉션에 하나 이상의 구성 기준 배포를 구성할 수 있는 **구성 기준 배포** 대화 상자를 엽니다.|[System Center Configuration Manager에서 응용 프로그램을 배포하는 방법](../../../../apps/deploy-use/deploy-applications.md)<br /><br /> [System Center Configuration Manager의 패키지 및 프로그램](../../../../apps/deploy-use/packages-and-programs.md)<br /><br /> [System Center Configuration Manager에서 구성 기준을 배포하는 방법](../../../../compliance/deploy-use/deploy-configuration-baselines.md)|  
 
-##  <a name="a-namebkmkcollpropa-collection-properties"></a><a name="BKMK_CollProp"></a> 컬렉션 속성  
+##  <a name="BKMK_CollProp"></a> 컬렉션 속성  
  컬렉션의 **속성** 대화 상자를 열면 컬렉션에 대한 다음 속성을 보고 구성할 수 있습니다.  
 
 |탭 이름|추가 정보|  
@@ -85,9 +86,4 @@ ms.openlocfilehash: d7d0b9c40f22bf1a7c477d1b8626d5a531c959d7
 |**배포 지점 그룹**|선택한 컬렉션의 멤버에 하나 이상의 배포 지점 그룹을 연결할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.|  
 |**보안**|연결된 역할 및 보안 범위에서 선택한 컬렉션에 대한 권한이 있는 관리자를 표시합니다.|  
 |**모니터**|클라이언트 상태와 Endpoint Protection에 대해 경고가 생성되는 때를 구성할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 클라이언트 상태를 구성하는 방법](../../../../core/clients/deploy/configure-client-status.md) 및 [System Center Configuration Manager에서 Endpoint Protection을 모니터링하는 방법](../../../../protect/deploy-use/monitor-endpoint-protection.md)을 참조하세요.|  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

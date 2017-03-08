@@ -1,5 +1,5 @@
 ---
-title: "준수 관리를 위한 일반 작업 | System Center Configuration Manager"
+title: "준수 관리를 위한 공통 작업 | Microsoft 문서"
 description: "System Center Configuration Manager에서 준수 설정을 사용하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: bd70eee176e70c169b6a16ed921bd5022a8a8031
+ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
+ms.openlocfilehash: f62ae116f6f397e7de1da622eea0d9828dd220df
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -35,9 +36,4 @@ ms.openlocfilehash: bd70eee176e70c169b6a16ed921bd5022a8a8031
 
 ## <a name="scenarios-for-creating-and-deploying-configuration-baselines"></a>구성 기준 만들기 및 배포에 대한 시나리오  
  [System Center Configuration Manager에서 구성 기준을 만들고 배포하기 위한 일반 작업](../../compliance/plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md)  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

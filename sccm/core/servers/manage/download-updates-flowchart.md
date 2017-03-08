@@ -1,5 +1,5 @@
 ---
-title: "순서도 – 업데이트 다운로드 | System Center Configuration Manager"
+title: "순서도 – 업데이트 다운로드 | Microsoft 문서"
 description: "온라인 서비스 연결 지점이 있는 사이트가 콘솔 내 업데이트를 다운로드하는 프로세스를 참조하세요."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 96872f92c8c8e76467740a8bb269c172f47be641
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: cd2ef0f0d694937b760d514c2a6a24973810a2b2
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -28,9 +29,4 @@ ms.openlocfilehash: 96872f92c8c8e76467740a8bb269c172f47be641
 이 데이터 흐름은 온라인 서비스 연결 지점이 있는 사이트가 콘솔 내 업데이트를 다운로드하는 프로세스를 표시합니다.  
 
  ![순서도 – 업데이트 다운로드](media/Flowchart---Download-updates.png)  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

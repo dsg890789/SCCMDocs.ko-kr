@@ -1,8 +1,8 @@
 ---
-title: "Configuration Manager의 하이브리드 관리 장치에 대한 사용자 선호도"
+title: "Configuration Manager의 하이브리드 관리 장치에 대한 사용자 선호도 | Microsoft 문서"
 description: "Configuration Manager에서 관리 장치에 대한 사용자 선호도를 구성합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b5d520a7-e9e5-40ee-91f9-f2684214beb6
 caps.latest.revision: 6
-author: NathBarn
-ms.author: nathbarn
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 789374b48d27ffaaec5ca02a910ca6e1899b3d3c
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: 74dcc0f4e680893db804956615248b7e1230d2b5
+ms.lasthandoff: 12/16/2016
 
 ---
 # <a name="user-affinity-for-hybrid-managed-devices-in-configuration-manager"></a>Configuration Manager의 하이브리드 관리 장치에 대한 사용자 선호도
@@ -26,7 +27,7 @@ ms.openlocfilehash: 789374b48d27ffaaec5ca02a910ca6e1899b3d3c
 
 회사 소유 장치의 프로필을 구성할 때 관리자는 장치로 특정 사용자를 식별하는 *사용자 선호도*를 관리 장치가 포함할 수 있는지 여부를 지정할 수 있습니다.  
 
-##  <a name="a-namebkmkioscpa-managed-devices-with-user-affinity"></a><a name="BKMK_iOSCP"></a> 사용자 선호도를 포함하는 관리 장치  
+##  <a name="BKMK_iOSCP"></a> 사용자 선호도를 포함하는 관리 장치  
  **사용자 선호도**로 구성한 장치에서 회사 포털 앱을 설치하고 실행하여 앱을 다운로드하고 장치를 관리할 수 있습니다. 장치를 받은 사용자는 몇 가지 추가 단계를 완료하여 설정 도우미를 완료하고 회사 포털 앱을 설치해야 합니다.  
 
 #### <a name="how-to-enroll-ios-devices-with-user-affinity"></a>사용자 선호도를 사용하여 iOS 장치를 등록하는 방법  
@@ -51,11 +52,6 @@ ms.openlocfilehash: 789374b48d27ffaaec5ca02a910ca6e1899b3d3c
 
 8.  이제 등록이 완료됩니다. 이제 기능의 전체 집합으로 이 장치를 사용할 수 있습니다.  
 
-##  <a name="a-namebkmknouaa-managed-devices-without-user-affinity"></a><a name="BKMK_noUA"></a> 사용자 선호도가 없는 관리 장치  
+##  <a name="BKMK_noUA"></a> 사용자 선호도가 없는 관리 장치  
  **사용자 선호도 없음**으로 구성된 장치에서는 회사 포털을 지원하지 않으므로 앱을 설치하지 않아야 합니다. 회사 포털은 회사 자격 증명을 갖고 있으며 개인 설정된 회사 리소스(예: 메일)에 대한 액세스 권한이 필요한 사용자를 위해 설계되었습니다. **사용자 선호도 없음** 으로 등록된 장치의 경우에는 전용 사용자가 로그인할 필요가 없습니다. 키오스크, POS(Point of Sale) 또는 공유 유틸리티 장치는 사용자 선호도 없음으로 등록된 장치에 대한 일반적인 사용 사례입니다. 사용자 선호도가 필요한 경우 장치를 등록하기 전에 장치의 등록 프로필에서 **사용자 선호도** 가 선택되어 있어야 합니다. 장치에 대한 선호도 상태를 변경하려면 장치를 사용 중지한 후 다시 등록해야 합니다.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

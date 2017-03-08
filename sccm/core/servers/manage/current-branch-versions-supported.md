@@ -1,5 +1,5 @@
 ---
-title: "현재 분기 버전 | System Center Configuration Manager"
+title: "현재 분기 버전 | Microsoft 문서"
 description: "System Center Configuration Manager의 버전 기록을 검토하고 제공하는 서비스의 단계에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ ms.author: brenduns
 manager: angrobe
 robots: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 2308e1f8bde4a93329dfe6ce96d781fcac1b495a
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: fecbdfa9ad99ca36f419cdda19a14b58f9f2b316
+ms.lasthandoff: 12/16/2016
 
 ---
 # <a name="support-for-system-center-configuration-manager-current-branch-versions"></a>System Center Configuration Manager 현재 분기 버전에 대한 지원
@@ -44,9 +45,7 @@ Microsoft는 GA(일반 공급) 릴리스 날짜로부터 12개월 동안 지원�
 |1511|12/8/2015|12/8/2016|  
 |1602|3/11/2016|3/11/2017|
 |1606|7/22/2016|7/22/2017|
+|1610|2016/11/18|11/18/2017|
 
-
-
-<!--HONumber=Nov16_HO1-->
-
+버전 번호와 콘솔 내 업데이트 또는 기준으로 사용 가능성에 대한 자세한 내용은 [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)을 참조하세요.
 

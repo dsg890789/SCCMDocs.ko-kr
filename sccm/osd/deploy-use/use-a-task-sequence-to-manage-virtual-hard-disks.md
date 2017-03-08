@@ -1,5 +1,5 @@
 ---
-title: "작업 순서를 사용하여 가상 하드 디스크 관리 | Configuration Manager"
+title: "작업 순서를 사용하여 가상 하드 디스크 관리 | Microsoft 문서"
 description: "Configuration Manager에서 VHD를 만들고 수정하며, 응용 프로그램과 소프트웨어 업데이트를 추가하고, VHD를 System Center VMM(Virtual Machine Manager)에 게시합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: e0ba309d8efc34cccce6acc4c59f0c4d218a617a
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: f77af4b8fcb193ed44511c0e5eea7290f55dbbf8
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -60,10 +61,10 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
     > [!NOTE]  
     >  Configuration Manager 콘솔이 열린 상태에서 VMM 콘솔을 설치하는 경우 VMM 콘솔 설치가 완료된 후 Configuration Manager 콘솔을 다시 시작해야 합니다. 그러지 않으면 Configuration Manager에서 VMM 관리 서버에 성공적으로 연결하지 못해 VHD를 업로드할 수 없습니다.  
 
-##  <a name="a-namebkmkcreatevhdstepsa-steps-to-create-a-vhd"></a><a name="BKMK_CreateVHDSteps"></a> VHD를 만드는 단계  
+##  <a name="BKMK_CreateVHDSteps"></a> VHD를 만드는 단계  
  VHD를 만들려면 VHD를 만드는 단계가 포함된 작업 순서를 만든 후 "가상 하드 드라이브 만들기 마법사"에서 VHD를 만드는 작업 순서를 사용해야 합니다. 다음 섹션에서는 VHD를 만드는 단계를 설명합니다.  
 
-###  <a name="a-namebkmkcreatetsa-create-a-task-sequence-for-the-vhd"></a><a name="BKMK_CreateTS"></a> VHD에 대한 작업 순서 만들기  
+###  <a name="BKMK_CreateTS"></a> VHD에 대한 작업 순서 만들기  
  VHD를 만드는 단계가 포함된 작업 순서를 만들어야 합니다. VHD를 만드는 데 사용할 단계를 만드는 **가상 하드 디스크에 기존 이미지 패키지 설치** 옵션이 작업 순서 만들기 마법사에 있습니다. 예를 들어 마법사에서 필수 단계인 Windows PE에서 다시 시작, 디스크 포맷 및 파티션 만들기, 운영 체제 적용, 컴퓨터 종료 등이 추가됩니다. 정식 운영 체제 상태에서 VHD를 만들 수 없습니다. 또한 가상 컴퓨터가 종료되어야 패키징이 완료되므로 Configuration Manager는 가상 컴퓨터가 종료될 때까지 기다려야 합니다. 기본적으로 마법사는 5분 동안 기다린 후 가상 컴퓨터를 종료합니다. 작업 순서를 만든 후 필요한 경우 단계를 더 추가할 수 있습니다.  
 
 > [!IMPORTANT]  
@@ -124,7 +125,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
 
 10. 마법사를 완료합니다.  
 
-###  <a name="a-namebkmkcreatevhda-create-a-vhd"></a><a name="BKMK_CreateVHD"></a> VHD 만들기  
+###  <a name="BKMK_CreateVHD"></a> VHD 만들기  
  VHD에 대한 작업 순서를 만든 후 "가상 하드 디스크 만들기 마법사"를 사용하여 VHD를 만들 수 있습니다.  
 
 > [!IMPORTANT]  
@@ -182,10 +183,10 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
 > [!NOTE]  
 >  Configuration Manager는 VHD의 원본 위치에 연결하여 VHD의 크기를 검색합니다. Configuration Manager에서 VHD 파일에 액세스할 수 없는 경우 **0**이 VHD의 **크기(KB)** 열에 표시됩니다.  
 
-##  <a name="a-namebkmkmodifyvhdstepsa-steps-to-modify-an-existing-vhd"></a><a name="BKMK_ModifyVHDSteps"></a> 기존 VHD를 수정하는 단계  
+##  <a name="BKMK_ModifyVHDSteps"></a> 기존 VHD를 수정하는 단계  
  VHD를 수정하려면 VHD를 수정하는 데 필요한 단계가 포함된 작업 순서를 만들어야 합니다. 그런 다음 "가상 하드 드라이브 수정 마법사"에서 작업 순서를 선택합니다. 이 마법사는 VHD를 가상 컴퓨터에 연결하고, VHD에서 작업 순서를 실행한 후 VHD 파일을 업데이트합니다. 다음 섹션에서는 VHD를 수정하는 단계를 설명합니다.  
 
-###  <a name="a-namebkmkmodifytsa-create-a-task-sequence-to-modify-the-vhd"></a><a name="BKMK_ModifyTS"></a> VHD를 수정하는 작업 순서 만들기  
+###  <a name="BKMK_ModifyTS"></a> VHD를 수정하는 작업 순서 만들기  
  기존 VHD를 수정하려면 먼저 작업 순서를 만들어야 합니다. 이때 작업 순서를 수정하는 데 필요한 단계만 선택하십시오. 예를 들어, VHD에 응용 프로그램을 추가하려는 경우 사용자 지정 작업 순서를 만든 후 응용 프로그램 설치 단계만 추가합니다.  
 
  다음 절차에 따라 VHD를 수정하는 작업 순서를 만들 수 있습니다.  
@@ -224,7 +225,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
 
 5.  **확인** 을 클릭하여 작업 순서 편집기를 종료합니다.  
 
-###  <a name="a-namebkmkmodifyvhda-modify-a-vhd"></a><a name="BKMK_ModifyVHD"></a> VHD 수정  
+###  <a name="BKMK_ModifyVHD"></a> VHD 수정  
  VHD에 대한 작업 순서를 만든 후 "가상 하드 디스크 수정 마법사"를 사용하여 VHD를 수정할 수 있습니다.  
 
  다음 절차에 따라 VHD를 수정할 수 있습니다.  
@@ -269,7 +270,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
     >   
     >  또한 컴퓨터에 Hyper-V 관리 도구가 설치되어 있으면 Hyper-V 관리자를 열고 마법사가 만든 임시 가상 컴퓨터에 연결하여 실행 중인 작업 순서를 확인할 수 있습니다. 가상 컴퓨터에서 smsts.log 파일을 모니터링하여 작업 순서의 진행률을 추적할 수 있습니다. 작업 순서 단계를 완료하는 데 문제가 있는 경우 이 로그 파일을 사용하면 문제 해결에 도움이 됩니다. smsts.log 파일은 하드 디스크가 포맷되기 전에는 x: \windows\temp\smstslog\smsts.log에 있고, 포맷된 후에는 c:\\_SMSTaskSequence\Logs\Smstslog\에 있습니다. 작업 순서 단계를 완료한 후 가상 컴퓨터는 기본값인 5분 후에 종료되고 삭제됩니다.  
 
-##  <a name="a-namebkmkapplyupdatesa-apply-software-updates-to-a-vhd"></a><a name="BKMK_ApplyUpdates"></a> VHD에 소프트웨어 업데이트 적용  
+##  <a name="BKMK_ApplyUpdates"></a> VHD에 소프트웨어 업데이트 적용  
  VHD의 운영 체제에 적용 가능한 새 소프트웨어 업데이트가 정기적으로 릴리스됩니다. 지정된 일정에 따라 적용 가능한 소프트웨어 업데이트를 VHD에 적용할 수 있습니다. 지정한 일정에 따라 Configuration Manager는 사용자가 선택한 소프트웨어 업데이트를 VHD에 적용합니다.  
 
  VHD를 만들 때 적용된 소프트웨어 업데이트를 포함한 VHD에 대한 정보는 사이트 데이터베이스에 저장됩니다. 처음 만든 이후에 VHD에 적용된 소프트웨어 업데이트도 사이트 데이터베이스에 저장됩니다. 마법사를 시작하여 VHD에 소프트웨어 업데이트를 적용할 때 마법사는 사용자가 선택할 수 있도록 VHD에 아직 적용되지 않은 적용 가능한 소프트웨어 업데이트 목록을 검색합니다.  
@@ -303,7 +304,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
 
 8.  **완료** 페이지에서 소프트웨어 업데이트가 운영 체제 이미지에 성공적으로 적용되었는지 확인합니다.  
 
-##  <a name="a-namebkmkimporttovmma-import-the-vhd-to-system-center-virtual-machine-manager"></a><a name="BKMK_ImportToVMM"></a> System Center Virtual Machine Manager로 VHD 가져오기  
+##  <a name="BKMK_ImportToVMM"></a> System Center Virtual Machine Manager로 VHD 가져오기  
  System Center VMM은 가상화된 데이터 센터를 위한 관리 솔루션으로, 생성된 사설 클라우드에 가상 컴퓨터와 서비스를 만들고 배포하기 위해 VMM을 사용하여 가상화 호스트, 네트워킹, 저장소 리소스 등을 구성 및 관리할 수 있습니다. Configuration Manager에서 VHD를 만든 후 VMM을 사용하여 VHD를 가져오고 관리할 수 있습니다.  
 
 > [!TIP]  
@@ -328,9 +329,4 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
     -   **암호화되지 않은 전송 사용**: 암호화를 사용하지 않고 VHD 파일을 VMM 관리 서버에 전송하려면 이 옵션을 선택합니다.  
 
 5.  요약 페이지에서 설정을 확인하고 마법사를 완료합니다. VHD를 업로드하는 시간은 VHD 파일 크기와 VMM 관리 서버로의 네트워크 대역폭에 따라 달라집니다.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

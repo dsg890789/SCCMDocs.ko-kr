@@ -1,17 +1,17 @@
-# [이해](understand/introduction-to-operating-system-deployment.md)
+# 이해 및 탐색
 ## [운영 체제 배포 소개](understand/introduction-to-operating-system-deployment.md)
 ## [작업 순서 단계](understand/task-sequence-steps.md)
 ## [작업 순서 동작 변수](understand/task-sequence-action-variables.md)
 ## [작업 순서 기본 제공 변수](understand/task-sequence-built-in-variables.md)
 ## [작업 순서 미디어에 대한 시작 전 명령](understand/prestart-commands-for-task-sequence-media.md)
 
-# [계획 및 디자인](plan-design/infrastructure-requirements-for-operating-system-deployment.md)
+# 계획 및 디자인
 ## [운영 체제 배포를 위한 인프라 요구 사항](plan-design/infrastructure-requirements-for-operating-system-deployment.md)
 ## [작업 자동화에 대한 계획 고려 사항](plan-design/planning-considerations-for-automating-tasks.md)
 ## [운영 체제 배포의 보안 및 개인 정보](plan-design/security-and-privacy-for-operating-system-deployment.md)
 ## [운영 체제 배포 상호 운용성 계획](plan-design/planning-for-operating-system-deployment-interoperability.md)
 
-# [시작](get-started/prepare-site-system-roles-for-operating-system-deployments.md)
+# 시작
 ## [운영 체제 배포를 위한 사이트 시스템 역할 준비](get-started/prepare-site-system-roles-for-operating-system-deployments.md)
 ## [운영 체제 배포 준비](get-started/prepare-for-operating-system-deployment.md)
 ### [부팅 이미지 관리](get-started/manage-boot-images.md)
@@ -28,7 +28,7 @@
 
 ## [WAN 트래픽을 줄이기 위해 Windows PE 피어 캐시 준비](get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic.md)
 
-# [배포 및 사용](deploy-use/scenarios-to-deploy-enterprise-operating-systems.md)
+# 배포 및 사용
 ## [엔터프라이즈 운영 체제를 배포하는 시나리오](deploy-use/scenarios-to-deploy-enterprise-operating-systems.md)
 ### [최신 버전으로 Windows 업그레이드](deploy-use/upgrade-windows-to-the-latest-version.md)
 ### [새 버전의 Windows로 기존 컴퓨터 새로 고침](deploy-use/refresh-an-existing-computer-with-a-new-version-of-windows.md)
@@ -54,16 +54,13 @@
 ### [사용자 상태를 캡처 및 복원하는 작업 순서 만들기](deploy-use/create-a-task-sequence-to-capture-and-restore-user-state.md)
 ### [작업 순서를 사용하여 가상 하드 디스크 관리](deploy-use/use-a-task-sequence-to-manage-virtual-hard-disks.md)
 
-## [사용자 지정 작업 순서 만들기](deploy-use/create-a-custom-task-sequence.md)
+## [사용자 지정 작업 순서 시나리오](deploy-use/custom-task-sequence-scenarios.md)
+### [사용자 지정 작업 순서 만들기](deploy-use/create-a-custom-task-sequence.md)
 ### [비운영 체제 배포에 대한 작업 순서 만들기](deploy-use/create-a-task-sequence-for-non-operating-system-deployments.md)
+### [BIOS-UEFI 변환을 관리하는 작업 순서 단계](deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion.md)
 
 ## [작업 순서 미디어 만들기](deploy-use/create-task-sequence-media.md)
 ### [독립 실행형 미디어 만들기](deploy-use/create-stand-alone-media.md)
 ### [사전 준비된 미디어 만들기](deploy-use/create-prestaged-media.md)
 ### [부팅 가능한 미디어 만들기](deploy-use/create-bootable-media.md)
 ### [미디어 캡처 만들기](deploy-use/create-capture-media.md)
-
-
-<!--HONumber=Nov16_HO1-->
-
-

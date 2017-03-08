@@ -1,8 +1,8 @@
 ---
-title: "WSUS의 Endpoint Protection 맬웨어 정의 | System Center Configuration Manager"
+title: "WSUS의 Endpoint Protection 맬웨어 정의 | Microsoft 문서"
 definition: Learn how to configure Windows Server Updates Services to auto-approve definition updates.
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 1c545e990fe6e3fc1bb79361d553a77914c20ea5
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: 3142db9e25f678a0093f305ef11a17bde1990a88
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -103,9 +104,4 @@ ms.openlocfilehash: 1c545e990fe6e3fc1bb79361d553a77914c20ea5
 
 > [!div class="button"]
 [뒤로 >](endpoint-configure-alerts.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

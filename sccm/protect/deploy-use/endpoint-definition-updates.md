@@ -1,9 +1,9 @@
 ---
 
-title: "Endpoint Protection 구성 | System Center Configuration Manager"
+title: "Endpoint Protection 구성 | Microsoft 문서"
 description: "클라이언트 컴퓨터에서 맬웨어 방지 정의를 최신 상태로 유지하도록 System Center Configuration Manager에서 Endpoint protection의 방법을 선택하고 구성하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 7988eb84d1384dbf1a3201a6a6e47aefdfbea447
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: 9085a4daed409eeff4c95e5c467f123d0a38147a
+ms.lasthandoff: 12/16/2016
 
 
 
@@ -73,9 +74,4 @@ ms.openlocfilehash: 7988eb84d1384dbf1a3201a6a6e47aefdfbea447
 -   Microsoft 맬웨어 보호 센터에서 배포되는 업데이트 - 이 방법은 Microsoft 맬웨어 보호 센터에서 정의 업데이트를 다운로드합니다.
 
 -   [UNC 파일 공유의 업데이트](endpoint-definitions-network.md) - 이 방법을 사용하면 최신 정의 및 엔진 업데이트를 네트워크 공유에 저장할 수 있습니다. 그런 후에 클라이언트에서 네트워크에 액세스하여 업데이트를 설치할 수 있습니다.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

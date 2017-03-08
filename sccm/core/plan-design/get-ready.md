@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager 준비"
+title: "System Center Configuration Manager 준비 | Microsoft 문서"
 description: "System Center Configuration Manager 배포를 계획할 수 있도록 하는 항목을 찾습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 70354ebc19786f9ff322d1c0b9e50d08265e15c0
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: b2d9cf11b944b6ee648b8fc7bc836ed5a82925a5
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -40,9 +41,4 @@ System Center Configuration Manager 배포 계획을 시작할 준비가 되면 
 -   [System Center Configuration Manager에 대한 네트워크 환경 준비](/sccm/core/plan-design/network/configure-firewalls-ports-domains)  
 
 -   [System Center Configuration Manager에서 지원되는 구성](../../core/plan-design/configs/supported-configurations.md)  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

@@ -1,8 +1,8 @@
 ---
-title: "네트워크 공유의 Endpoint Protection 맬웨어 정의 | System Center Configuration Manager"
+title: "네트워크 공유의 Endpoint Protection 맬웨어 정의 | Microsoft 문서"
 description: "Microsoft에서 최신 정의 업데이트를 수동으로 다운로드한 다음 이러한 정의를 다운로드하도록 클라이언트를 구성하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: e4ff39f89a71ddbf9cadfcfa80f0c5c019611a35
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: 6b1780c4ea4304d950188fbb6201d810e940c4fc
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -57,9 +58,4 @@ ms.openlocfilehash: e4ff39f89a71ddbf9cadfcfa80f0c5c019611a35
 
 > [!div class="button"]
 [뒤로 >](endpoint-configure-alerts.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

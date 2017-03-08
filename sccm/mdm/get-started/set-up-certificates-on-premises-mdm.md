@@ -1,5 +1,5 @@
 ---
-title: "인증서 설정 | 온-프레미스 MDM | System Center Configuration Manager"
+title: "인증서 설정 | Microsoft 문서 | 온-프레미스 MDM"
 description: "System Center Configuration Manager에서 온-프레미스 모바일 장치 관리를 위해 신뢰할 수 있는 통신에 대한 인증서를 설정합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 22a01ffa8385413c9671fd282c7337cbb6e2ffa0
+ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
+ms.openlocfilehash: d7aaad9298308b588f1bc13027082bf07066a3c2
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -49,7 +50,7 @@ System Center Configuration Manager 온\-프레미스 모바일 장치 관리에
 
 -   [웹 서버 인증서와 동일한 루트를 가진 인증서 내보내기](#bkmk_exportCert)  
 
-##  <a name="a-namebkmkconfigcaa-configure-the-certification-authority-ca-for-crl-publishing"></a><a name="bkmk_configCa"></a> CRL 게시에 대한 CA(인증 기관) 구성  
+##  <a name="bkmk_configCa"></a> CRL 게시에 대한 CA(인증 기관) 구성  
  기본적으로 CA(인증 기관)는 도메인에 가입된 장치에 대한 연결을 허용하는 LDAP 기반 CRL(인증서 해지 목록)을 사용합니다. 도메인에 가입되지 않은 장치를 CA의 인증서 발급으로 신뢰하려면 CA에 HTTP 기반 CRL을 추가해야 합니다. 이 인증서는 Configuration Manager 사이트 시스템 역할을 호스트하는 서버와 온\-프레미스 모바일 장치 관리에 등록된 장치 간의 SSL 통신에 필요합니다.  
 
  아래의 단계에 따라 도메인에 가입된 장치와 도메인에 가입되지 않은 장치에 대해 신뢰할 수 있는 연결을 허용하는 인증서 발급을 위해 CRL 정보를 자동 게시하도록 CA를 구성합니다.  
@@ -76,7 +77,7 @@ System Center Configuration Manager 온\-프레미스 모바일 장치 관리에
 
 8.  CRL 게시 대화 상자에서 **델타 CRL**을 선택한 후 **확인**을 클릭합니다.  
 
-##  <a name="a-namebkmkcerttempla-create-the-web-server-certificate-template-on-the-ca"></a><a name="bkmk_certTempl"></a> CA에서 웹 서버 인증서 템플릿 만들기  
+##  <a name="bkmk_certTempl"></a> CA에서 웹 서버 인증서 템플릿 만들기  
  CA에 새 CRL을 게시한 후 다음 단계는 웹 서버 인증서 템플릿을 만드는 것입니다. 이 템플릿은 등록 지점, 등록 프록시 지점, 배포 지점 및 장치 관리 지점 사이트 시스템 역할을 호스트하는 서버에 대한 인증서를 발급하는 데 필요합니다. 이러한 서버는 사이트 시스템 역할과 등록된 장치 간의 신뢰할 수 있는 통신을 위한 SSL 끝점이 됩니다.    아래 단계에 따라 인증서 템플릿을 만듭니다.  
 
 1.  **ConfigMgr MDM Servers**라는 보안 그룹을 만들고 등록된 장치와 신뢰할 수 있는 통신을 요구하는 사이트 시스템을 실행하는 서버를 포함합니다.  
@@ -113,7 +114,7 @@ System Center Configuration Manager 온\-프레미스 모바일 장치 관리에
 
 12. **인증서 템플릿 사용** 대화 상자에서 방금 만든 새 템플릿 **ConfigMgr MDM Web Server**를 선택하고 **확인**을 클릭합니다.  
 
-##  <a name="a-namebkmkrequestcerta-request-the-web-server-certificate-for-each-site-system-role"></a><a name="bkmk_requestCert"></a> 각 사이트 시스템 역할에 대한 웹 서버 인증서 요청  
+##  <a name="bkmk_requestCert"></a> 각 사이트 시스템 역할에 대한 웹 서버 인증서 요청  
  온\-프레미스 모바일 장치 관리에 등록된 장치는 등록 지점, 등록 프록시 지점, 배포 지점 및 장치 관리 지점을 호스트하는 SSL 끝점을 신뢰해야 합니다.  아래 단계에서는 IIS의 웹 서버 인증서를 요청하는 방법을 설명합니다. 온\-프레미스 모바일 장치 관리에 필요한 사이트 시스템 역할 중 하나를 호스트하는 각 서버(SSL 끝점)에 대해 이 작업을 수행해야 합니다.  
 
 1.  기본 사이트 서버에서, 관리자 권한으로 명령 프롬프트를 열고 **MMC**를 입력하고 **Enter** 키를 누릅니다.  
@@ -132,7 +133,7 @@ System Center Configuration Manager 온\-프레미스 모바일 장치 관리에
 
  각 서버에서 고유한 웹 서버 인증서를 필요로 하므로 온\-프레미스 모바일 장치 관리의 필요한 사이트 시스템 역할 중 하나를 호스트하는 모든 서버에 대해 이 프로세스를 반복해야 합니다.  한 서버에서 모든 사이트 시스템 역할을 호스트하는 경우 웹 서버 인증서를 하나만 요청하면 됩니다.  
 
-##  <a name="a-namebkmkbindcerta-bind-the-certificate-to-the-web-server"></a><a name="bkmk_bindCert"></a> 웹 서버에 인증서 바인딩  
+##  <a name="bkmk_bindCert"></a> 웹 서버에 인증서 바인딩  
  이제, 온\-프레미스 모바일 장치 관리에 필요한 사이트 시스템 역할을 호스트하는 각 사이트 시스템 서버의 웹 서버에 새 인증서를 바인딩해야 합니다. 등록 지점 및 등록 프록시 지점 사이트 시스템 역할을 호스트하는 각 서버에 대해 아래 단계를 따르세요. 한 서버에서 모든 사이트 시스템 역할을 호스트하는 경우 다음 단계를 한 번만 수행하면 됩니다. 등록하는 동안 배포 지점 및 장치 관리 지점 사이트 시스템 역할에서 필요한 인증서를 자동으로 받게 되므로 이런 항목에 대해서는 이 작업을 수행할 필요가 없습니다.  
 
 1.  등록 지점, 등록 프록시 지점, 배포 지점 또는 장치 관리 지점을 호스트하는 서버에서 **시작** > **관리 도구** > **IIS 관리자**를 클릭합니다.  
@@ -145,7 +146,7 @@ System Center Configuration Manager 온\-프레미스 모바일 장치 관리에
 
 5.  IIS 관리자 콘솔의 연결에서 웹 서버를 선택하고 오른쪽 작업 패널에서 **다시 시작**을 클릭합니다.  
 
-##  <a name="a-namebkmkexportcerta-export-the-certificate-with-the-same-root-as-the-web-server-certificate"></a><a name="bkmk_exportCert"></a> 웹 서버 인증서와 동일한 루트를 가진 인증서 내보내기  
+##  <a name="bkmk_exportCert"></a> 웹 서버 인증서와 동일한 루트를 가진 인증서 내보내기  
  Active Directory 인증서 서비스는 일반적으로 필요한 CA의 인증서를 도메인에 가입된 모든 장치에 설치합니다. 하지만 도메인에 가입되지 않은 장치에서는 루트 CA의 인증서가 없는 사이트 시스템 역할과 통신할 수 없습니다. 사이트 시스템 역할과 통신하는 장치에 필요한 인증서를 가져오려면 웹 서버에 바인딩된 인증서에서 내보낼 수 있습니다.  
 
  다음 단계를 수행하여 웹 서버 인증서의 루트 인증서를 내보냅니다.  
@@ -171,9 +172,4 @@ System Center Configuration Manager 온\-프레미스 모바일 장치 관리에
      **다음**을 클릭합니다.  
 
 9. 설정을 확인하고 **마침**을 클릭합니다.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

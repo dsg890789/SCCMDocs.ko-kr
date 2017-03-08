@@ -1,8 +1,8 @@
 ---
-title: "Asset Intelligence 일반 라이선스 가져오기 파일 예제 | System Center Configuration Manager"
+title: "Asset Intelligence 일반 라이선스 가져오기 파일 예제 | Microsoft 문서"
 description: "샘플 Asset Intelligence 일반 라이선스 파일을 사용하여 System Center Configuration Manager의 소프트웨어 라이선스를 가져올 수 있도록 합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 2/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: e6258333-a783-440b-b1af-f8023b782fbc
 caps.latest.revision: 5
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 706828f2b954eb4ad5fc6fbaa27f0f816e701d47
+ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
+ms.openlocfilehash: 6ee39d311108253ece1c9d60c25ac06017867c1f
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -40,9 +41,4 @@ ms.openlocfilehash: 706828f2b954eb4ad5fc6fbaa27f0f816e701d47
 |소프트웨어 타이틀 8|소프트웨어 게시자|1.08|영어|1|구매 번호|재판매인 이름|10/10/2010|0|10/10/2012|설명|  
 |소프트웨어 타이틀 9|소프트웨어 게시자|1.09|영어|1|구매 번호|재판매인 이름|10/10/2010|0|10/10/2012|설명|  
 |소프트웨어 타이틀 10|소프트웨어 게시자|1.10|영어|1|구매 번호|재판매인 이름|10/10/2010|0|10/10/2012|설명|  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

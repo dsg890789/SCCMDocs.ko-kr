@@ -1,5 +1,5 @@
 ---
-title: "작업 순서 동작 변수 | Configuration Manager"
+title: "작업 순서 동작 변수 | Microsoft 문서"
 description: "네트워크 설정 변수 등의 순서 동작 변수를 사용하여 Configuration Manager 작업 순서의 단일 단계에 대한 구성 설정을 지정할 수 있습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -39,7 +40,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 > [!NOTE]  
 >  일부 작업 순서 동작은 작업 순서 변수 집합에 연결되어 있지 않습니다. 예를 들어 BitLocker 사용 작업과 연결된 변수가 있지만 BitLocker 사용 안 함 작업과 연결된 변수는 없습니다.  
 
-###  <a name="a-namebkmkapplydataimagea-apply-data-image-task-sequence-action-variables"></a><a name="BKMK_ApplyDataImage"></a> 데이터 이미지 적용 작업 순서 동작 변수  
+###  <a name="BKMK_ApplyDataImage"></a> 데이터 이미지 적용 작업 순서 동작 변수  
  이 동작에 대한 변수는 대상 컴퓨터에 적용되는 WIM 파일의 이미지 및 대상 파티션에서 파일을 삭제할지 여부를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [데이터 이미지 적용 작업 순서 단계](task-sequence-steps.md#BKMK_ApplyDataImage)를 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
@@ -49,7 +50,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |OSDDataImageIndex<br /><br /> (입력)|대상 컴퓨터에 적용되는 이미지의 인덱스 값을 지정합니다.|  
 |OSDWipeDestinationPartition<br /><br /> (입력)|대상 파티션에 있는 파일을 삭제할지 여부를 지정합니다.<br /><br /> 유효한 값은<br /><br /> **"true"** (기본값)<br /><br /> **"false"**|  
 
-###  <a name="a-namebkmkapplydriverpackagea-apply-driver-package-task-sequence-action-variables"></a><a name="BKMK_ApplyDriverPackage"></a> 드라이버 패키지 적용 작업 순서 동작 변수  
+###  <a name="BKMK_ApplyDriverPackage"></a> 드라이버 패키지 적용 작업 순서 동작 변수  
  이 동작에 대한 변수는 대용량 저장소 드라이버의 설치에 대한 정보 및 서명되지 않은 드라이버를 설치할지 여부를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [드라이버 패키지 적용](task-sequence-steps.md#BKMK_ApplyDriverPackage)을 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
@@ -62,7 +63,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |OSDApplyDriverBootCriticalID<br /><br /> (입력)|설치할 대용량 저장 장치 드라이버의 부팅 필요 ID를 지정합니다. 이 ID는 장치 드라이버의 txtsetup.oem 파일의 "**scsi**" 섹션에 나열되어 있습니다.<br /><br /> <br /><br /> OSDApplyDriverBootCriticalContentUniqueID가 설정된 경우 이 작업 순서 변수가 필요합니다.|  
 |OSDAllowUnsignedDriver<br /><br /> (입력)|Windows가 서명되지 않은 장치 드라이버를 설치할 수 있도록 구성할지 여부를 지정합니다. Windows Vista 이상 운영 체제를 배포하는 경우에는 이 작업 순서 변수가 사용되지 않습니다.<br /><br /> 유효한 값은<br /><br /> **"true"**<br /><br /> **"false"** (기본값)|  
 
-###  <a name="a-namebkmkapplynetworksettingsa-apply-network-settings-task-sequence-action-variables"></a><a name="BKMK_ApplyNetworkSettings"></a> 네트워크 설정 적용 작업 순서 동작 변수  
+###  <a name="BKMK_ApplyNetworkSettings"></a> 네트워크 설정 적용 작업 순서 동작 변수  
  이 동작에 대한 변수는 컴퓨터의 네트워크 어댑터에 대한 설정, 도메인 설정 및 작업 그룹 설정과 같은 대상 컴퓨터에 대한 네트워크 설정을 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [네트워크 설정 적용 단계](task-sequence-steps.md#BKMK_ApplyNetworkSettings)를 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
@@ -81,7 +82,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |OSDDNSSuffixSearchOrder<br /><br /> (입력)|대상 컴퓨터에 대한 DNS 검색 순서를 지정합니다.|  
 |OSDWorkgroupName<br /><br /> (입력)|대상 컴퓨터가 가입하는 작업 그룹의 이름을 지정합니다.<br /><br /> 이 값 또는 **OSDDomainName** 값 중 하나를 지정해야 합니다. 작업 그룹 이름은 최대 32자까지 가능합니다.<br /><br /> 예:<br /><br /> **"Accounting"**|  
 
-###  <a name="a-namebkmkapplyoperatingsystema-apply-operating-system-image-task-sequence-action-variables"></a><a name="BKMK_ApplyOperatingSystem"></a> 운영 체제 이미지 적용 작업 순서 동작 변수  
+###  <a name="BKMK_ApplyOperatingSystem"></a> 운영 체제 이미지 적용 작업 순서 동작 변수  
  이 동작에 대한 변수는 대상 컴퓨터에 설치할 운영 체제에 대한 설정을 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [운영 체제 이미지 적용](task-sequence-steps.md#BKMK_ApplyOperatingSystemImage)을 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
@@ -93,7 +94,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |OSDInstallEditionIndex<br /><br /> (입력)|설치되는 Windows Vista 또는 운영 체제의 버전을 지정합니다. 버전이 지정되지 않으면 Windows 설치 프로그램에서 참조된 제품 키를 사용하여 설치할 버전을 결정합니다.<br /><br /> 다음 조건에 해당하는 경우 영(0) 값만 사용합니다.<br /><br /> - Windows Vista 이전 운영 체제를 설치하고 있습니다.<br />- Windows Vista 이상의 볼륨 라이선스 버전을 설치하고 있고 제품 키를 지정하지 않았습니다.<br /><br /> 유효한 값은<br /><br /> **"0"** (기본값)|  
 |OSDTargetSystemDrive(출력)|운영 체제 파일이 포함된 파티션의 드라이브 문자를 지정합니다.|  
 
-###  <a name="a-namebkmkapplywindowssettingsa-apply-windows-settings-task-sequence-action-variables"></a><a name="BKMK_ApplyWindowsSettings"></a> Windows 설정 적용 작업 순서 동작 변수  
+###  <a name="BKMK_ApplyWindowsSettings"></a> Windows 설정 적용 작업 순서 동작 변수  
  이 동작에 대한 변수는 컴퓨터 이름, Windows 제품 키, 등록된 사용자 및 조직, 로컬 관리자 암호와 같은 대상 컴퓨터에 대한 Windows 설정을 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings)을 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
@@ -110,7 +111,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |OSDRandomAdminPassword<br /><br /> (입력)|새 운영 체제에서 관리자 계정에 대해 임의로 생성된 암호를 지정합니다. **true**로 설정되면 대상 컴퓨터에서 로컬 관리자 계정이 사용되지 않도록 설정됩니다. **false**로 설정되면 대상 컴퓨터에서 로컬 관리자 계정이 사용되도록 설정되고 로컬 관리자 계정 암호에 **OSDLocalAdminPassword** 변수의 값이 할당됩니다.<br /><br /> 유효한 값은<br /><br /> **"true"** (기본값)<br /><br /> **"false"**|  
 |OSDLocalAdminPassword<br /><br /> (입력)|로컬 관리자 암호를 지정합니다. **로컬 관리자 암호를 임의로 생성하고 지원되는 모든 플랫폼에서 계정 사용 안 함** 옵션이 사용되도록 설정된 경우 이 값은 무시됩니다. 지정된 값은 1-255자 사이여야 합니다.|  
 
-###  <a name="a-namebkmkautoapplydriversa-auto-apply-drivers-task-sequence-action-variables"></a><a name="BKMK_AutoApplyDrivers"></a> 드라이버 자동 적용 작업 순서 동작 변수  
+###  <a name="BKMK_AutoApplyDrivers"></a> 드라이버 자동 적용 작업 순서 동작 변수  
  이 동작에 대한 변수는 대상 컴퓨터에 설치되는 Windows 드라이버 및 서명되지 않은 드라이버가 설치되는지 여부를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [드라이버 자동 적용](task-sequence-steps.md#BKMK_AutoApplyDrivers)을 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
@@ -121,7 +122,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |OSDAllowUnsignedDriver<br /><br /> (입력)|서명되지 않은 장치 드라이버를 설치할 수 있도록 Windows를 구성할지 여부를 지정합니다. Windows Vista 이상 운영 체제를 배포하는 경우에는 이 작업 순서 변수가 사용되지 않습니다.<br /><br /> 유효한 값은<br /><br /> **"true"**<br /><br /> **"false"** (기본값)|  
 |OSDAutoApplyDriverBestMatch<br /><br /> (입력)|하드웨어 장치와 호환되는 드라이버 카탈로그의 여러 장치 드라이버가 있는 경우 작업 순서 동작이 수행하는 작업을 지정합니다. **"true"**로 설정된 경우 가장 적합한 장치 드라이버만 설치됩니다.  **false**인 경우 호환되는 모든 장치 드라이버가 설치되고 운영 체제가 가장 사용하기 적합한 드라이버를 선택합니다.<br /><br /> 유효한 값은<br /><br /> **"true"** (기본값)<br /><br /> **"false"**|  
 
-###  <a name="a-namebkmkcapturenetworksettingsa-capture-network-settings-task-sequence-action-variables"></a><a name="BKMK_CaptureNetworkSettings"></a> 네트워크 설정 캡처 작업 순서 동작 변수  
+###  <a name="BKMK_CaptureNetworkSettings"></a> 네트워크 설정 캡처 작업 순서 동작 변수  
  이 동작에 대한 변수는 네트워크 어댑터 설정(TCP/IP, DNS 및 WINS) 구성 정보가 캡처되는지 여부 및 작업 그룹 또는 도메인 멤버 자격 정보가 운영 체제 배포 중에 마이그레이션되는지 여부를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [네트워크 설정 캡처](task-sequence-steps.md#BKMK_CaptureNetworkSettings)를 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
@@ -131,7 +132,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |OSDMigrateAdapterSettings<br /><br /> (입력)|네트워크 어댑터 설정(TCP/IP, DNS 및 WINS) 구성 정보가 캡처되는지 여부를 지정합니다.<br /><br /> 예:<br /><br /> **"true"** (기본값)<br /><br /> **"false"**|  
 |OSDMigrateNetworkMembership<br /><br /> (입력)|작업 그룹 또는 도메인 멤버 자격 정보가 운영 체제 배포 중에 마이그레이션되는지 여부를 지정합니다.<br /><br /> 예:<br /><br /> **"true"** (기본값)<br /><br /> **"false"**|  
 
-###  <a name="a-namebkmkcaptureoperatingsystemimagea-capture-operating-system-image-task-sequence-action-variables"></a><a name="BKMK_CaptureOperatingSystemImage"></a> 운영 체제 이미지 캡처 작업 순서 동작 변수  
+###  <a name="BKMK_CaptureOperatingSystemImage"></a> 운영 체제 이미지 캡처 작업 순서 동작 변수  
  이 동작에 대한 변수는 이미지가 저장되는 위치, 이미지를 만든 사람 및 이미지에 대한 설명과 같이 캡처되는 운영 체제 이미지에 대한 정보를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [운영 체제 이미지 캡처](task-sequence-steps.md#BKMK_CaptureOperatingSystemImage)를 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
@@ -146,7 +147,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |OSDImageVersion<br /><br /> (입력)|캡처된 운영 체제 이미지에 할당할 선택적 사용자 정의 버전 번호입니다. 이 버전 번호는 WIM 파일에 저장됩니다. 이 값은 최대 32자의 문자 조합일 수 있습니다.|  
 |OSDTargetSystemRoot<br /><br /> (입력)|참조 컴퓨터에 설치된 운영 체제의 Windows 디렉터리 경로를 지정합니다. 이 운영 체제는 Configuration Manager에서 캡처를 위해 지원되는 운영 체제로 확인됩니다.|  
 
-###  <a name="a-namebkmkcaptureuserstatea-capture-user-state-task-sequence-action-variables"></a><a name="BKMK_CaptureUserState"></a> 사용자 상태 캡처 작업 순서 동작 변수  
+###  <a name="BKMK_CaptureUserState"></a> 사용자 상태 캡처 작업 순서 동작 변수  
  이 동작에 대한 변수는 사용자 상태가 저장되는 폴더, USMT에 대한 명령줄 옵션, 사용자 프로필의 캡처를 제어하는 데 사용되는 구성 파일과 같이 USMT(사용자 환경 마이그레이션 도구)에서 사용되는 정보를 지정합니다.  이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [사용자 상태 캡처](task-sequence-steps.md#BKMK_CaptureUserState)를 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
@@ -162,7 +163,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |OSDMigrateSkipEncryptedFiles<br /><br /> (입력)|암호화된 파일이 캡처되는지 여부를 지정합니다.<br /><br /> 유효한 값은<br /><br /> **"true"**<br /><br /> **"false"** (기본값)|  
 |_OSDMigrateUsmtPackageID<br /><br /> (입력)|USMT 파일을 포함할 Configuration Manager 패키지의 패키지 ID를 지정합니다. 이 변수가 필요합니다.|  
 
-###  <a name="a-namebkmkcapturewindowssettingsa-capture-windows-settings-task-sequence-action-variables"></a><a name="BKMK_CaptureWindowsSettings"></a> Windows 설정 캡처 작업 순서 동작 변수  
+###  <a name="BKMK_CaptureWindowsSettings"></a> Windows 설정 캡처 작업 순서 동작 변수  
  이 동작에 대한 변수는 컴퓨터의 이름, 등록 조직 이름 및 표준 시간대 정보와 같이 특정 Windows 설정이 대상 컴퓨터로 마이그레이션되는지 여부를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [Windows 설정 캡처](task-sequence-steps.md#BKMK_CaptureWindowsSettings)를 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
@@ -176,7 +177,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |OSDMigrateTimeZone<br /><br /> (입력)|컴퓨터의 표준 시간대가 마이그레이션되는지 여부를 지정합니다.<br /><br /> 유효한 값은<br /><br /> **"true"** (기본값)<br /><br /> **"false"**<br /><br /> 값이 "true"이면 변수 OSDTimeZone이 컴퓨터의 표준 시간대로 설정됩니다.|  
 |OSDTimeZone<br /><br /> (출력)|컴퓨터의 표준 시간대로 설정됩니다. OSDMigrateTimeZone 변수가 "true"로 설정된 경우에만 이 값이 설정됩니다.|  
 
-###  <a name="a-namebkmkconnecttonetworkfoldera-connect-to-network-folder-task-sequence-action-variables"></a><a name="BKMK_ConnecttoNetworkFolder"></a> 네트워크 폴더에 연결 작업 순서 동작 변수  
+###  <a name="BKMK_ConnecttoNetworkFolder"></a> 네트워크 폴더에 연결 작업 순서 동작 변수  
  이 동작에 대한 변수는 사용되는 계정 및 네트워크 폴더에 연결할 암호, 폴더의 드라이브 문자 및 폴더에 대한 경로와 같이 네트워크의 폴더에 대한 정보를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [네트워크 폴더에 연결](task-sequence-steps.md#BKMK_ConnectToNetworkFolder)을 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
@@ -188,7 +189,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |SMSConnectNetworkFolderPassword<br /><br /> (입력)|네트워크 공유에 연결하는 데 사용되는 네트워크 암호를 지정합니다.|  
 |SMSConnectNetworkFolderPath<br /><br /> (입력)|연결에 대한 네트워크 경로를 지정합니다.<br /><br /> 예제:<br /><br /> **"\\\servername\sharename"**|  
 
-###  <a name="a-namebkmkconvertdiska-convert-disk-to-dynamic-task-sequence-action-variables"></a><a name="BKMK_ConvertDisk"></a> 동적 디스크로 변환 작업 순서 동작 변수  
+###  <a name="BKMK_ConvertDisk"></a> 동적 디스크로 변환 작업 순서 동작 변수  
  이 동작에 대한 변수는 기본에서 동적 디스크로 변환할 실제 디스크의 수를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [동적 디스크로 변환](task-sequence-steps.md#BKMK_ConvertDisktoDynamic)을 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
@@ -197,7 +198,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |--------------------------|-----------------|  
 |OSDConvertDiskIndex<br /><br /> (입력)|변환되는 실제 디스크 번호를 지정합니다.|  
 
-###  <a name="a-namebkmkenablebitlockera-enable-bitlocker-task-sequence-action-variables"></a><a name="BKMK_EnableBitLocker"></a> BitLocker 사용 작업 순서 동작 변수  
+###  <a name="BKMK_EnableBitLocker"></a> BitLocker 사용 작업 순서 동작 변수  
  이 동작에 대한 변수는 대상 컴퓨터에서 BitLocker를 사용하도록 설정하기 위해 사용되는 복구 암호 및 시작 키 옵션을 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [BitLocker 사용](task-sequence-steps.md#BKMK_EnableBitLocker)을 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
@@ -207,7 +208,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |OSDBitLockerRecoveryPassword<br /><br /> (입력)|임의 복구 암호를 생성하는 대신 **BitLocker 사용** 작업 순서 동작은 지정된 값을 복구 암호로 사용합니다. 값은 유효한 숫자 BitLocker 복구 암호여야 합니다.|  
 |OSDBitLockerStartupKey<br /><br /> (입력)|키 관리 옵션인 **USB의 시작 키만**에 대해 임의 시작 키를 생성하는 대신 **BitLocker 사용** 작업 순서 동작은 TPM(신뢰할 수 있는 플랫폼 모듈)을 시작 키로 사용합니다. 값은 유효한 256비트 Base64로 인코딩된 BitLocker 시작 키여야 합니다.|  
 
-###  <a name="a-namebkmkformatpartitiondiska-format-and-partition-disk-task-sequence-action-variables"></a><a name="BKMK_FormatPartitionDisk"></a> 디스크 포맷 및 분할 작업 순서 동작 변수  
+###  <a name="BKMK_FormatPartitionDisk"></a> 디스크 포맷 및 분할 작업 순서 동작 변수  
  이 동작에 대한 변수는 디스크 번호 및 파티션 설정의 배열과 같이 실제 디스크의 포맷 및 분할에 대한 정보를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [디스크 포맷 및 파티션 만들기](task-sequence-steps.md#BKMK_FormatandPartitionDisk)를 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
@@ -220,7 +221,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |OSDPartitions<br /><br /> (입력)|파티션 설정의 배열을 지정합니다. 작업 순서 환경에서 배열 변수에 액세스하려면 SDK 항목을 참조하세요.<br /><br /> 이 작업 순서 변수는 배열 변수입니다. 배열의 각 요소는 하드 디스크에서 단일 파티션에 대한 설정을 나타냅니다. 각 파티션에 대해 정의된 설정은 배열 변수 이름과 0부터 시작하는 디스크 파티션 번호 및 속성 이름을 결합하여 액세스할 수 있습니다.<br /><br /> 예를 들어 다음 변수 이름을 사용하여 이 작업 순서 동작으로 하드 디스크에 만들어질 첫 번째 파티션에 대한 속성을 정의할 수 있습니다.<br /><br /> - **OSDPartitions0Type** - 파티션 유형을 지정합니다. 필수 속성입니다. 유효한 값은 "**Primary**", "**Extended**", "**Logical**" 및 "**Hidden**"입니다.<br />-   **OSDPartitions0FileSystem** - 파티션을 포맷할 때 사용할 파일 시스템의 유형을 지정합니다. 선택적 속성입니다. 파일 시스템이 지정되지 않으면 파티션이 포맷되지 않습니다. 유효한 값은 "**FAT32**" 및 "**NTFS**"입니다.<br />-   **OSDPartitions0Bootable** - 파티션이 부팅 가능한지 여부를 지정합니다. 필수 속성입니다. 이 값이 MBR 디스크에 대해 "**TRUE**"로 설정되면 활성 파티션이 됩니다.<br />-   **OSDPartitions0QuickFormat** - 사용되는 포맷 유형을 지정합니다. 필수 속성입니다. 이 값이 "**TRUE**"로 설정되면 빠른 포맷이 수행되고 그렇지 않으면 전체 포맷이 수행됩니다.<br />-   **OSDPartitions0VolumeName** - 포맷될 때 볼륨에 할당되는 이름을 지정합니다. 이는 선택적 속성입니다.<br />-   **OSDPartitions0Size** - 파티션의 크기를 지정합니다. 단위는 **OSDPartitions0SizeUnits** 변수로 지정됩니다. 이는 선택적 속성입니다. 이 속성이 지정되지 않은 경우 남아 있는 모든 사용 가능한 공간을 사용하여 파티션이 만들어집니다.<br />-   **OSDPartitions0SizeUnits** - **OSDPartitions0Size** 작업 순서 변수를 해석할 때 사용될 단위를 지정합니다. 이는 선택적 속성입니다. 유효한 값은 "**MB**"(기본값), "**GB**" 및 "**Percent**"입니다.<br />-   **OSDPartitions0VolumeLetterVariable** - 파티션이 만들어질 때 Windows PE에서 항상 사용 가능한 다음 드라이브 문자를 사용합니다. 이 선택적 속성을 사용하여 나중에 참조하기 위해 새 드라이브 문자를 저장하는 데 사용할 다른 작업 순서 변수의 이름을 지정합니다.<br /><br /> <br /><br /> 이 작업 순서 동작으로 여러 파티션이 정의될 경우 두 번째 파티션에 대한 속성은 변수 이름의 해당 인덱스를 사용하여 정의할 수 있습니다. 예를 들어 **OSDPartitions1Type**, **OSDPartitions1FileSystem**, **OSDPartitions1Bootable**, **OSDPartitions1QuickFormat**, **OSDPartitions1VolumeName** 등입니다.|  
 |OSDPartitionStyle<br /><br /> (입력)|디스크를 분할하는 경우 사용할 파티션 스타일을 지정합니다. "**MBR**"은 마스터 부팅 레코드 파티션 스타일을 나타내고 "**GPT**"는 GUID 파티션 테이블 스타일을 나타냅니다.<br /><br /> 유효한 값은<br /><br /> **"GPT"**<br /><br /> **"MBR"**|  
 
-###  <a name="a-namebkmkinstallsoftwareupdatesa-install-software-updates-task-sequence-action-variables"></a><a name="BKMK_InstallSoftwareUpdates"></a> 소프트웨어 업데이트 설치 작업 순서 동작 변수  
+###  <a name="BKMK_InstallSoftwareUpdates"></a> 소프트웨어 업데이트 설치 작업 순서 동작 변수  
  이 동작에 대한 변수는 모든 업데이트를 설치할지 아니면 필수 업데이트만 설치할지 여부를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [소프트웨어 업데이트 설치](task-sequence-steps.md#BKMK_InstallSoftwareUpdates)를 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
@@ -229,7 +230,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |----------------------------------------|-----------------|  
 |SMSInstallUpdateTarget<br /><br /> (입력)|모든 업데이트를 설치할지 아니면 필수 업데이트만 설치할지 여부를 지정합니다.<br /><br /> 유효한 값은<br /><br /> **"모두"**<br /><br /> **"필수"**|  
 
-###  <a name="a-namebkmkjoindomainworkgroupa-join-domain-or-workgroup-task-sequence-action-variables"></a><a name="BKMK_JoinDomainWorkgroup"></a> 도메인 또는 작업 그룹 가입 작업 순서 동작 변수  
+###  <a name="BKMK_JoinDomainWorkgroup"></a> 도메인 또는 작업 그룹 가입 작업 순서 동작 변수  
  이 동작에 대한 변수는 대상 컴퓨터를 Windows 도메인 또는 작업 그룹에 가입하기 위해 필요한 정보를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [도메인 또는 작업 그룹 가입](task-sequence-steps.md#BKMK_JoinDomainorWorkgroup)을 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
@@ -244,7 +245,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |OSDJoinType<br /><br /> (입력)|대상 컴퓨터가 Windows 도메인 또는 작업 그룹에 가입하는지 여부를 지정합니다. 대상 컴퓨터를 Windows 도메인에 가입하려면 "**0**"을 지정합니다. 대상 컴퓨터를 작업 그룹에 가입하려면 "**1**"을 지정합니다.<br /><br /> 유효한 값은<br /><br /> **"0"**<br /><br /> **"1"**|  
 |OSDJoinWorkgroupName<br /><br /> (입력)|대상 컴퓨터가 가입하는 작업 그룹의 이름을 지정합니다. 작업 그룹 이름은 1-32자 사이여야 합니다.<br /><br /> 예:<br /><br /> **"Accounting"**|  
 
-###  <a name="a-namebkmkpreparewindowscapturea-prepare-windows-for-capture-task-sequence-action-variables"></a><a name="BKMK_PrepareWindowsCapture"></a> Windows 캡처 준비 작업 순서 동작 변수  
+###  <a name="BKMK_PrepareWindowsCapture"></a> Windows 캡처 준비 작업 순서 동작 변수  
  이 동작에 대한 변수는 대상 컴퓨터에서 Windows 운영 체제를 캡처하는 데 사용되는 정보를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [ConfigMgr 클라이언트 캡처 준비](task-sequence-steps.md#BKMK_PrepareConfigMgrClientforCapture)를 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
@@ -255,7 +256,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |OSDKeepActivation<br /><br /> (입력)|Sysprep이 제품 활성화 플래그를 다시 설정하는지 여부를 지정합니다.<br /><br /> 유효한 값은<br /><br /> **"true"**<br /><br /> **"false"** (기본값)|  
 |OSDTargetSystemRoot<br /><br /> (출력)|참조 컴퓨터에 설치된 운영 체제의 Windows 디렉터리 경로를 지정합니다. 이 운영 체제는 Configuration Manager에서 캡처를 위해 지원되는 운영 체제로 확인됩니다.|  
 
-###  <a name="a-namebkmkreleasestatestorea-release-state-store-sequence-action-variables"></a><a name="BKMK_ReleaseStateStore"></a> 상태 저장소 해제 순서 동작 변수  
+###  <a name="BKMK_ReleaseStateStore"></a> 상태 저장소 해제 순서 동작 변수  
  이 동작에 대한 변수는 저장된 사용자 상태를 해제하는 데 사용되는 정보를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [상태 저장소 해제](task-sequence-steps.md#BKMK_ReleaseStateStore)를 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
@@ -264,7 +265,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |--------------------------|-----------------|  
 |OSDStateStorePath<br /><br /> (입력)|사용자 상태가 복원되는 위치의 로컬 경로 이름 또는 UNC입니다. 이 값은 **사용자 상태 캡처** 작업 순서 동작 및 **사용자 상태 복원** 작업 순서 동작 둘 다에서 사용됩니다.|  
 
-###  <a name="a-namebkmkrequeststatea-request-state-store-task-sequence-action-variables"></a><a name="BKMK_RequestState"></a> 상태 저장소 요청 작업 순서 동작 변수  
+###  <a name="BKMK_RequestState"></a> 상태 저장소 요청 작업 순서 동작 변수  
  이 동작에 대한 변수는 사용자 데이터가 저장되는 상태 마이그레이션 지점에 있는 폴더와 같이 저장된 사용자 상태를 요청하는 데 사용되는 정보를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [상태 저장소 해제](../../osd/understand/task-sequence-steps.md#BKMK_ReleaseStateStore)를 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
@@ -276,7 +277,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |OSDStateSMPRetryTime<br /><br /> (입력)|작업 순서 단계가 다시 시도하기 전에 대기할 시간(초)을 지정합니다. 시간(초)은 최대 30자까지 가능합니다.|  
 |OSDStateStorePath<br /><br /> (출력)|사용자 상태가 저장되는 상태 마이그레이션 지점의 폴더에 대한 UNC 경로입니다.|  
 
-###  <a name="a-namebkmkrestartcomputera-restart-computer-task-sequence-action-variables"></a><a name="BKMK_RestartComputer"></a> 컴퓨터 다시 시작 작업 순서 동작 변수  
+###  <a name="BKMK_RestartComputer"></a> 컴퓨터 다시 시작 작업 순서 동작 변수  
  이 동작에 대한 변수는 대상 컴퓨터를 다시 시작하는 데 사용되는 정보를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [컴퓨터 다시 시작](task-sequence-steps.md#a-namebkmkrestartcomputera-restart-computer)을 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
@@ -286,7 +287,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |SMSRebootMessage<br /><br /> (입력)|대상 컴퓨터를 다시 시작하기 전에 사용자에게 표시할 메시지를 지정합니다. 이 변수가 설정되지 않은 경우 기본 메시지 텍스트가 표시됩니다. 지정된 메시지는 512자를 초과할 수 없습니다.<br /><br /> 예제:<br /><br /> - "이 컴퓨터가 다시 시작됩니다. 작업을 저장하세요."|  
 |SMSRebootTimeout<br /><br /> (입력)|컴퓨터가 다시 시작하기 전에 경고가 사용자에게 표시되는 시간(초)을 지정합니다. 다시 부팅 메시지를 표시하지 않으려면 0초를 지정합니다.<br /><br /> 예:<br /><br /> **"0"** (기본값)<br /><br /> **"5"**<br /><br /> **"10"**|  
 
-###  <a name="a-namebkmkrestoreuserstatea-restore-user-state-task-sequence-action-variables"></a><a name="BKMK_RestoreUserState"></a> 사용자 상태 복원 작업 순서 동작 변수  
+###  <a name="BKMK_RestoreUserState"></a> 사용자 상태 복원 작업 순서 동작 변수  
  이 동작에 대한 변수는 사용자 상태가 복원되는 폴더의 경로 이름 및 로컬 컴퓨터 계정이 복원되는지 여부와 같은 대상 컴퓨터의 사용자 상태를 복원하는 데 사용되는 정보를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [사용자 상태 복원](task-sequence-steps.md#BKMK_RestoreUserState)을 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
@@ -301,7 +302,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |OSDMigrateAdditionalRestoreOptions<br /><br /> (입력)|사용자 상태를 복원할 때 사용되는 추가 USMT(사용자 환경 마이그레이션 도구) 명령줄 옵션을 지정합니다. 추가 옵션은 자동으로 생성된 USMT 명령줄에 추가된 문자열 형식으로 지정됩니다. 작업 순서를 실행하기 전에 이 작업 순서 변수를 사용하여 지정된 USMT 옵션이 정확성에 대한 유효성이 검사되지 않았습니다.|  
 |_OSDMigrateUsmtRestorePackageID<br /><br /> (입력)|USMT 파일을 포함할 Configuration Manager 패키지의 패키지 ID를 지정합니다. 이 변수가 필요합니다.|  
 
-###  <a name="a-namebkmkruncommanda-run-command-line-task-sequence-action-variables"></a><a name="BKMK_RunCommand"></a> 명령줄 실행 작업 순서 동작 변수  
+###  <a name="BKMK_RunCommand"></a> 명령줄 실행 작업 순서 동작 변수  
  이 동작에 대한 변수는 명령이 실행되는 작업 디렉터리와 같이 명령줄에서 명령을 실행하는 데 사용되는 정보를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [명령줄 실행](task-sequence-steps.md#BKMK_RunCommandLine)을 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
@@ -329,7 +330,7 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |_SMSTSUUID|컴퓨터의 UUID를 지정합니다.|  
 |_SMSTSDefaultGateways|컴퓨터에 사용되는 기본 게이트웨이를 지정합니다.|  
 
-###  <a name="a-namebkmksetupwindowsa-setup-windows-and-configmgr-task-sequence-action-variables"></a><a name="BKMK_SetupWindows"></a> Windows 및 ConfigMgr 설정 작업 순서 동작 변수  
+###  <a name="BKMK_SetupWindows"></a> Windows 및 ConfigMgr 설정 작업 순서 동작 변수  
  이 동작에 대한 변수는 Configuration Manager 클라이언트를 설치할 때 사용되는 클라이언트 설치 속성을 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [Windows 및 ConfigMgr 설정](task-sequence-steps.md#BKMK_SetupWindowsandConfigMgr)을 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
@@ -346,9 +347,4 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 |작업 변수 이름<br /><br /> (입력)|설명|  
 |----------------------------------------|-----------------|  
 |OSDSetupAdditionalUpgradeOptions<br /><br /> (입력)|Windows 10 업그레이드 중 설치 프로그램에 추가된 추가 명령줄 옵션을 지정합니다. 명령줄 옵션은 확인되지 않습니다. 따라서 입력하는 옵션이 정확한지 확인합니다.<br /><br /> 자세한 내용은 [Windows 설치 프로그램 명령줄 옵션](https://msdn.microsoft.com/library/windows/hardware/dn938368\(v=vs.85\).aspx)을 참조하세요.|  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

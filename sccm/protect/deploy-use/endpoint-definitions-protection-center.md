@@ -1,7 +1,7 @@
 ---
-title: "네트워크 공유의 Endpoint Protection 맬웨어 정의 | System Center Configuration Manager"
+title: "네트워크 공유의 Endpoint Protection 맬웨어 정의 | Microsoft 문서"
 ms.custom: na
-ms.date: 10/05/2016
+ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,8 +15,9 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 5c6cf3c1697b49708aa5192b67b08b700da7dc72
-ms.openlocfilehash: fa5abe78fd92beefdc134cd3fa661b8884bea3f1
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: f562bf051e4561053b45bef5363eb960d83bbdd1
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -36,9 +37,4 @@ ms.openlocfilehash: fa5abe78fd92beefdc134cd3fa661b8884bea3f1
 
 > [!div class="button"]
 [뒤로 >](endpoint-configure-alerts.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

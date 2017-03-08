@@ -1,5 +1,5 @@
 ---
-title: "마이그레이션 모니터링 | System Center Configuration Manager"
+title: "마이그레이션 모니터링 | Microsoft 문서"
 description: "Configuration Manager 콘솔을 사용하여 마이그레이션 작업의 진행률과 성공을 모니터링하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: f8b577366cd2438aed21759e18f034642ceae5e3
+ms.sourcegitcommit: 5e3d3f4194b06442e34c10988a20fe9ca40ac5d7
+ms.openlocfilehash: 896807ec2c4be2835094a27add59d4cc09e93add
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -39,9 +40,4 @@ System Center Configuration Manager에서는 대상 계층 구조에 연결된 C
     >  마이그레이션 작업이 실패하면 최대한 빨리 migmctrl.log 파일의 정보를 검토하십시오. 마이그레이션 로그 항목은 계속 파일에 추가되어 이전 정보를 덮어씁니다. 항목을 덮어쓰면 마이그레이션된 개체에 발생할 수 있는 문제가 마이그레이션 문제와 관련이 있는지 여부를 확인하지 못할 수도 있습니다. 마이그레이션 작업은 마이그레이션을 구성할 때 Configuration Manager 콘솔에서 연결한 사이트와 상관없이 계층의 최상위 사이트에서 로깅됩니다.  
 
 -   Configuration Manager 보고를 사용합니다. Configuration Manager에서 마이그레이션을 위해 제공하는 여러 기본 제공 보고서를 그대로 사용할 수도 있고 요구 사항에 맞게 편집할 수도 있습니다. Configuration Manager 보고서에 대한 자세한 내용은 [System Center Configuration Manager에서 보고](../../core/servers/manage/reporting.md)를 참조하세요.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

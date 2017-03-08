@@ -1,5 +1,5 @@
 ---
-title: "쿼리에 대한 보안 및 개인 정보 | System Center Configuration Manager"
+title: "쿼리에 대한 보안 및 개인 정보 | Microsoft 문서"
 description: "사이트 데이터베이스에서 정보를 쿼리할 때 보안 및 개인 정보에 대한 모범 사례를 이해합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: e9ac8ce92a2ff5ebcbad852b6bfb291bb99236d4
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 09f7bdaa29a01fb2a38aa223db56b5bce3bc5205
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -39,9 +40,4 @@ System Center Configuration Manager의 쿼리를 사용하여 지정하는 기�
 
 ## <a name="see-also"></a>참고 항목  
  [System Center Configuration Manager에 대한 쿼리 기술 참조](../../../core/servers/manage/queries-technical-reference.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

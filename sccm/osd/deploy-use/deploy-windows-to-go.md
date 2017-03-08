@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager를 사용하여 Windows to Go 배포"
+title: "System Center Configuration Manager를 사용하여 Windows to Go 배포 | Microsoft 문서"
 description: "외장형 드라이브에서 부팅하는 Windows To Go 작업 영역을 만들기 위해 System Center Configuration Manager에서 Windows To Go를 프로비전하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 104355185c5bbb4c15f3b9cc80cf8fa0e529cf6d
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: a8b1a42c43438553cfbb62328bed933378bb344c
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -51,7 +52,7 @@ ms.openlocfilehash: 104355185c5bbb4c15f3b9cc80cf8fa0e529cf6d
 
 8.  [Windows 8에 로그인](#BKMK_UserLogsIn)  
 
-###  <a name="a-namebkmkprereqsa-prerequisites-to-provision-windows-to-go"></a><a name="BKMK_Prereqs"></a> Windows To Go를 프로비전하기 위한 필수 조건  
+###  <a name="BKMK_Prereqs"></a> Windows To Go를 프로비전하기 위한 필수 조건  
  Windows To Go를 프로비전하기 전에 Configuration Manager에서 다음을 완료해야 합니다.  
 
 -   **배포 지점에 부팅 이미지 배포**  
@@ -72,7 +73,7 @@ ms.openlocfilehash: 104355185c5bbb4c15f3b9cc80cf8fa0e529cf6d
 
      사전 준비된 미디어를 만들 때 참조할 Windows 8 배포용 작업 순서를 만들어야 합니다. 자세한 내용은 [작업을 자동화하는 작업 순서 관리](manage-task-sequences-to-automate-tasks.md)를 참조하세요.  
 
-###  <a name="a-namebkmkcreateprestagedmediaa-create-prestaged-media"></a><a name="BKMK_CreatePrestagedMedia"></a> 사전 준비된 미디어 만들기  
+###  <a name="BKMK_CreatePrestagedMedia"></a> 사전 준비된 미디어 만들기  
  사전 준비된 미디어에는 대상 컴퓨터를 시작하는 데 사용되는 부팅 이미지와 대상 컴퓨터에 적용되는 운영 체제 이미지가 포함됩니다. 사전 준비된 미디어로 프로비전한 컴퓨터를 부팅 이미지를 사용하여 시작할 수 있습니다. 그런 다음 기존 운영 체제 배포 작업 순서를 실행하여 전체 운영 체제 배포를 설치할 수 있습니다. 운영 체제를 배포하는 작업 순서는 미디어에 포함되지 않습니다.  
 
  사전 준비 단계에서 운영 체제 이미지와 부팅 이미지 외에도 응용 프로그램 및 장치 드라이버와 같은 콘텐츠를 추가할 수 있습니다. 이를 통해 콘텐츠가 이미 드라이브에 있으므로 운영 체제 배포에 걸리는 시간이 단축되고 네트워크 트래픽이 감소합니다.  
@@ -213,7 +214,7 @@ ms.openlocfilehash: 104355185c5bbb4c15f3b9cc80cf8fa0e529cf6d
     > [!NOTE]  
     >  마법사가 사전 준비된 미디어 파일을 완료하는 데는 오랜 시간이 걸릴 수 있습니다.  
 
-###  <a name="a-namebkmkcreatepackagea-create-a-windows-to-go-creator-package"></a><a name="BKMK_CreatePackage"></a> Windows To Go Creator 패키지 만들기  
+###  <a name="BKMK_CreatePackage"></a> Windows To Go Creator 패키지 만들기  
  Windows To Go 배포의 일환으로 사전 준비된 미디어 파일을 배포할 패키지를 만들어야 합니다. 이 패키지에는 Windows To Go 드라이브를 구성하고 사전 준비된 미디어를 드라이브에 추출하는 도구가 포함되어야 합니다. Windows To Go Creator 패키지를 만들려면 다음 절차를 따르십시오.  
 
 #### <a name="to-create-the-windows-to-go-creator-package"></a>Windows To Go Creator 패키지를 만들려면  
@@ -223,7 +224,7 @@ ms.openlocfilehash: 104355185c5bbb4c15f3b9cc80cf8fa0e529cf6d
     > [!NOTE]  
     >  사이트 서버의 컴퓨터 계정에 원본 폴더에 대한 **읽기** 권한이 있어야 합니다.  
 
-2.   [Create prestaged media](#BKMK_CreatePrestagedMedia) 섹션에서 만든 사전 준비된 미디어 파일을 패키지 원본 폴더에 복사합니다.  
+2.  [Create prestaged media](#BKMK_CreatePrestagedMedia) 섹션에서 만든 사전 준비된 미디어 파일을 패키지 원본 폴더에 복사합니다.  
 
 3.  Windows To Go Creator 도구(WTGCreator.exe)를 패키지 원본 폴더에 복사합니다. 이 Creator 도구는 <*ConfigMgrInstallationFolder*>\OSD\Tools\WTG\Creator 위치의 모든 기본 사이트에서 사용할 수 있습니다.  
 
@@ -278,11 +279,11 @@ ms.openlocfilehash: 104355185c5bbb4c15f3b9cc80cf8fa0e529cf6d
 
      **다음** 을 클릭하여 마법사를 완료합니다.  
 
-###  <a name="a-namebkmkupdatetasksequencea-update-the-task-sequence-to-enable-bitlocker-for-windows-to-go"></a><a name="BKMK_UpdateTaskSequence"></a> Windows To Go에 BitLocker를 사용하도록 작업 순서 업데이트  
+###  <a name="BKMK_UpdateTaskSequence"></a> Windows To Go에 BitLocker를 사용하도록 작업 순서 업데이트  
  Windows To Go를 통해 TPM을 사용하지 않고 부팅 가능한 외부 드라이브에서 BitLocker를 사용할 수 있습니다. 따라서 별도의 도구를 사용하여 Windows To Go 드라이브에 BitLocker를 구성해야 합니다. BitLocker를 사용하려면 **Windows 및 ConfigMgr 설치** 단계 이후에 작업 순서에 작업을 추가해야 합니다.  
 
 > [!NOTE]  
->  Windows To Go에 대한 Bitlocker에는 암호가 필요합니다.  [Create prestaged media](#BKMK_CreatePrestagedMedia) 단계에서 시작 전 명령의 일부로 OSDBitLockerPIN 변수를 사용하여 암호를 설정합니다.  
+>  Windows To Go에 대한 Bitlocker에는 암호가 필요합니다. [Create prestaged media](#BKMK_CreatePrestagedMedia) 단계에서 시작 전 명령의 일부로 OSDBitLockerPIN 변수를 사용하여 암호를 설정합니다.  
 
  Windows To Go에 BitLocker를 사용하도록 Windows 8 작업 순서를 업데이트하려면 다음 절차를 따르십시오.  
 
@@ -341,7 +342,7 @@ ms.openlocfilehash: 104355185c5bbb4c15f3b9cc80cf8fa0e529cf6d
     > [!NOTE]  
     >  새 명령줄 단계 후에 나올 수 있는 **BitLocker 사용** 단계를 사용해서는 Windows To Go에 대한 BitLocker를 사용하도록 설정할 수 없습니다. 그러나 이 단계를 작업 순서에서 유지하여 Windows To Go 드라이브를 사용하지 않는 Windows 8 배포에 사용할 수 있습니다.  
 
-###  <a name="a-namebkmkdeploymentsa-deploy-the-windows-to-go-creator-package-and-task-sequence"></a><a name="BKMK_Deployments"></a> Windows To Go Creator 패키지 및 작업 순서 배포  
+###  <a name="BKMK_Deployments"></a> Windows To Go Creator 패키지 및 작업 순서 배포  
  Windows To Go는 하이브리드 배포 프로세스입니다. 따라서 Windows To Go Creator 패키지와 Windows 8 작업 순서를 배포해야 합니다. 배포 프로세스를 완료하려면 다음 절차를 따르십시오.  
 
 #### <a name="to-deploy-the-windows-to-go-creator-package"></a>Windows To Go Creator 패키지를 배포하려면  
@@ -400,7 +401,7 @@ ms.openlocfilehash: 104355185c5bbb4c15f3b9cc80cf8fa0e529cf6d
 
 2.  **소프트웨어 라이브러리** 작업 영역에서 **운영 체제**를 확장하고 **작업 순서**를 클릭합니다.  
 
-3.   [Prerequisites to provision Windows To Go](#BKMK_Prereqs) 단계에서 만든 Windows 8 작업 순서를 선택합니다.  
+3.  [Prerequisites to provision Windows To Go](#BKMK_Prereqs) 단계에서 만든 Windows 8 작업 순서를 선택합니다.  
 
 4.  **홈** 탭의 **배포** 그룹에서 **배포**를 클릭합니다.  
 
@@ -411,7 +412,7 @@ ms.openlocfilehash: 104355185c5bbb4c15f3b9cc80cf8fa0e529cf6d
     2.  **컬렉션**: **찾아보기** 를 클릭하고 사용자가 Windows To Go를 프로비저닝할 수 있는 모든 장치를 포함하는 컬렉션을 선택합니다.  
 
         > [!IMPORTANT]  
-        >   [Create prestaged media](#BKMK_CreatePrestagedMedia) 섹션에서 만든 사전 준비된 미디어가 SMSTSPreferredAdvertID 변수를 사용하는 경우 작업 순서를 **모든 시스템** 컬렉션을 배포하고 **콘텐츠** 페이지에서 **Windows PE만(숨김)** 설정을 지정할 수 있습니다. 작업 순서가 숨겨지므로 미디어에만 사용할 수 있습니다.  
+        >  [Create prestaged media](#BKMK_CreatePrestagedMedia) 섹션에서 만든 사전 준비된 미디어가 SMSTSPreferredAdvertID 변수를 사용하는 경우 작업 순서를 **모든 시스템** 컬렉션을 배포하고 **콘텐츠** 페이지에서 **Windows PE만(숨김)** 설정을 지정할 수 있습니다. 작업 순서가 숨겨지므로 미디어에만 사용할 수 있습니다.  
 
     3.  **이 컬렉션에 연결된 기본 배포 지점 그룹 사용**: 컬렉션의 기본 배포 지점 그룹에 패키지 콘텐츠를 저장하려는 경우 이 옵션을 선택합니다. 선택한 컬렉션을 배포 지점 그룹과 연결하지 않은 경우 이 옵션을 사용할 수 없게 됩니다.  
 
@@ -450,24 +451,21 @@ ms.openlocfilehash: 104355185c5bbb4c15f3b9cc80cf8fa0e529cf6d
 
     -   **사용할 수 있는 로컬 배포 지점이 없는 경우 원격 배포 지점을 사용합니다**: 작업 순서에 필요한 콘텐츠를 다운로드할 때 클라이언트가 느리고 불안정한 네트워크에 있는 배포 지점을 사용할 수 있는지 여부를 지정합니다.  
 
-    -   **클라이언트가 콘텐츠에 대한 대체 원본 위치를 사용하도록 허용**: 기본 배포 지점에서 콘텐츠를 사용할 수 없는 경우 기본 배포 지점이 아닌 위치를 원본 위치로 대체하여 사용할 수 있도록 클라이언트를 허용할지 여부를 지정합니다.  
+    -   **클라이언트가 콘텐츠에 대한 대체 원본 위치를 사용하도록 허용**:
+        - *버전 1610 이전*에서 콘텐츠에 대한 대체 원본 위치를 사용하도록 허용 확인란을 선택하면 이러한 경계 그룹 외부에 있는 클라이언트가 다른 배포 지점을 사용할 수 없는 경우 해당 배포 지점을 대체 원본 위치로 사용할 수 있습니다.
+        - *버전 1610부터* **콘텐츠에 대한 대체 원본 위치 허용**을 더 이상 구성할 수 없습니다.  대신, 클라이언트가 추가 경계 그룹에서 유효한 콘텐츠 원본 위치 검색을 시작할 수 있는 경우를 결정하는 경계 그룹 간의 관계를 구성합니다. 
 
 11. 마법사를 완료합니다.  
 
-###  <a name="a-namebkmkuserexperiencea-user-runs-the-windows-to-go-creator"></a><a name="BKMK_UserExperience"></a> Windows To Go Creator 실행  
+###  <a name="BKMK_UserExperience"></a> Windows To Go Creator 실행  
  Windows To Go 패키지와 Windows 8 작업 순서를 배포한 후 사용자가 Windows To Go Creator를 사용할 수 있습니다. 사용자는 소프트웨어 카탈로그 또는 소프트웨어 센터(Windows To Go Creator가 장치에 배포된 경우)로 이동하여 Windows To Go Creator 프로그램을 실행할 수 있습니다. Creator 패키지를 다운로드한 후 작업 표시줄에 깜박이는 아이콘이 표시됩니다. 해당 아이콘을 클릭하면 프로비전할 Windows To Go 드라이브를 선택할 수 있는 대화 상자가 나타납니다. 단, /drive 명령줄 옵션이 사용되지 않은 상태여야 합니다. 드라이브가 Windows To Go 요구 사항을 충족하지 않거나 드라이브에 이미지를 설치할 여유 공간이 부족한 경우 Creator 프로그램에 오류 메시지가 표시됩니다. 사용자는 확인 페이지에서 적용할 드라이브와 이미지를 확인할 수 있습니다. Creator에서 Windows To Go 드라이브로 콘텐츠가 구성 및 사전 준비되는 경우 진행률 대화 상자가 표시됩니다. 사전 준비가 완료된 후 컴퓨터를 다시 시작하여 Windows To Go 드라이브로 부팅하라는 메시지가 표시됩니다.  
 
 > [!NOTE]  
 >  If you did not enable boot redirection as part of the command line for the creator program in the [Create a Windows To Go Creator package](#BKMK_CreatePackage) 섹션에서 Creator 프로그램에 대한 명령줄의 일부로 부팅 리디렉션을 사용하지 않은 경우 시스템을 다시 시작할 때마다 사용자가 수동으로 Windows To Go 드라이브로 부팅해야 합니다.  
 
-###  <a name="a-namebkmkconfigurestagedrivea-configuration-manager-configures-and-stages-the-windows-to-go-drive"></a><a name="BKMK_ConfigureStageDrive"></a> Configuration Manager에서 Windows To Go 드라이브 구성 및 준비  
+###  <a name="BKMK_ConfigureStageDrive"></a> Configuration Manager에서 Windows To Go 드라이브 구성 및 준비  
  컴퓨터가 Windows To Go 드라이브로 다시 시작되고 나면 해당 드라이브는 Windows PE로 부팅되어 관리 지점에 연결해 정책을 가져오며, 그러면 운영 체제 배포가 완료됩니다. Configuration Manager에서 드라이브를 구성하고 준비합니다. Configuration Manager의 드라이브 준비가 완료된 후 사용자는 컴퓨터를 다시 시작하여 프로비저닝 프로세스를 마무리할 수 있습니다(예: 도메인 가입 또는 응용 프로그램 설치). 이 프로세스는 사전 준비된 미디어의 경우에도 동일합니다.  
 
-###  <a name="a-namebkmkuserlogsina-user-logs-in-to-windows-8"></a><a name="BKMK_UserLogsIn"></a> Windows 8에 로그인  
+###  <a name="BKMK_UserLogsIn"></a> Windows 8에 로그인  
  Configuration Manager의 프로비전 프로세스가 완료되고 Windows 8 잠금 화면이 표시되면 사용자는 운영 체제에 로그인할 수 있습니다.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

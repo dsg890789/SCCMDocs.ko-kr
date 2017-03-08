@@ -1,5 +1,5 @@
 ---
-title: "쿼리 만들기 | System Center Configuration Manager"
+title: "쿼리 만들기 | Microsoft 문서"
 description: "System Center Configuration Manager에서 쿼리를 만들고 가져오는 방법을 알아봅니다. 예제 쿼리 및 팁이 포함되어 있습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 1cbba80a73fdd66d84d38e710c02cc79ab972b81
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 89bd798339489071fdb69325c957fefda32621e9
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -34,7 +35,7 @@ System Center Configuration Manager에서 쿼리를 만들거나 가져오려면
 
 -   [Example WQL Queries](#BKMK_Example)  
 
-##  <a name="a-namebkmkcreatea-how-to-create-queries"></a><a name="BKMK_Create"></a> 쿼리를 만드는 방법  
+##  <a name="BKMK_Create"></a> 쿼리를 만드는 방법  
  이 절차를 사용하여 Configuration Manager에서 쿼리를 만듭니다.  
 
 #### <a name="to-create-a-query"></a>쿼리를 만들려면  
@@ -88,7 +89,7 @@ System Center Configuration Manager에서 쿼리를 만들거나 가져오려면
 
 12. 쿼리 만들기 마법사를 완료합니다. **모니터링** 작업 영역의 **쿼리** 노드에 새 쿼리가 표시됩니다.  
 
-##  <a name="a-namebkmkimporta-how-to-import-queries"></a><a name="BKMK_Import"></a> 쿼리를 가져오는 방법  
+##  <a name="BKMK_Import"></a> 쿼리를 가져오는 방법  
  이 절차를 사용하여 쿼리를 Configuration Manager로 가져올 수 있습니다. 쿼리를 내보내는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 쿼리를 관리하는 방법](../../../core/servers/manage/manage-queries.md)을 참조하세요.  
 
 #### <a name="to-import-a-query"></a>쿼리를 가져오려면  
@@ -101,7 +102,7 @@ System Center Configuration Manager에서 쿼리를 만들거나 가져오려면
 
 4.  가져올 쿼리에 대한 정보를 검토한 다음 마법사를 완료합니다. **모니터링** 작업 영역의 **쿼리** 노드에 새 쿼리가 표시됩니다.  
 
-##  <a name="a-namebkmkexamplea-example-wql-queries"></a><a name="BKMK_Example"></a> Example WQL queries  
+##  <a name="BKMK_Example"></a> Example WQL queries  
  이 섹션에서는 계층에서 사용하거나 다른 용도로 수정할 수 있는 WMI 쿼리 예제를 설명합니다. 이러한 쿼리를 사용하려면 **쿼리 문 속성** 대화 상자에서 **쿼리 언어 표시** 를 클릭한 다음 쿼리를 **쿼리 문** 필드로 복사 및 붙여넣기합니다.  
 
 > [!TIP]  
@@ -153,7 +154,7 @@ select SMS_R_System.NetbiosName from
 SMS_R_System where SMS_R_System.NetbiosName like "ABC%"  
 ```  
 
-###  <a name="a-namebkmkdevicetypea-devices-of-a-specific-type"></a><a name="BKMK_DeviceType"></a> 특정 유형의 장치  
+###  <a name="BKMK_DeviceType"></a> 특정 유형의 장치  
  장치 유형은 리소스 클래스 **sms_r_system** 및 특성 이름 **AgentEdition**의 Configuration Manager 데이터베이스에 저장됩니다. 지정하는 장치 유형의 에이전트 버전과 일치하는 장치만 검색하려면 다음 쿼리를 사용합니다.  
 
 ```  
@@ -187,9 +188,4 @@ Select SMS_R_System.ClientEdition from SMS_R_System where SMS_R_System.ClientEdi
 
 ## <a name="see-also"></a>참고 항목  
  [System Center Configuration Manager의 쿼리 작업 및 유지 관리](../../../core/servers/manage/operations-and-maintenance-for-queries.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

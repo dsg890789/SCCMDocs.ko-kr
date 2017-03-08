@@ -1,8 +1,8 @@
 ---
-title: "Endpoint Protection 클라이언트 구성 | System Center Configuration Manager"
+title: "Endpoint Protection 클라이언트 구성 | Microsoft 문서"
 description: "계층 구조의 컴퓨터 컬렉션에 배포할 수 있는 Endpoint Protection용 사용자 지정 클라이언트 설정을 구성하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: fe342b76569f171855c6c422c7173317381e0103
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: 2d7ec9cc626f3ccfded990cf8ba392c4979adfee
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -173,9 +174,4 @@ Configuration Manager에서 운영 체제 배포에 대한 자세한 내용은 [
 앞의 단계를 완료한 후 참조 컴퓨터에서 이미징을 준비할 수 있습니다. Configuration Manager에서 운영 체제 배포에 대한 자세한 내용은 [System Center Configuration Manager에서 운영 체제 이미지 관리](/sccm/osd/get-started/manage-operating-system-images)를 참조하세요.
 
 Endpoint Protection 클라이언트 소프트웨어를 포함하는 이미지가 배포될 때 Endpoint Protection 클라이언트가 컴퓨터가 할당되어 있는 Configuration Manager 사이트에 자동으로 정보를 보고하고 클라이언트 컴퓨터에 적용 가능한 정책이 다운로드되어 적용됩니다.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

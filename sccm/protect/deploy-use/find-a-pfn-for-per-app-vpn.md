@@ -1,5 +1,5 @@
 ---
-title: "앱별 VPN에 대한 PFN(패키지 패밀리 이름) 찾기 | System Center Configuration Manager"
+title: "앱별 VPN에 대한 PFN(패키지 패밀리 이름) 찾기 | Microsoft 문서"
 description: "앱별 VPN을 구성할 수 있도록 패키지 패밀리 이름을 찾는 두 가지 방법에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: bad09d52a962ea5dccf55e4e2e485a17d934055a
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: ce50645155ecb14a82d8b982aa69c0f87dd15fbf
+ms.lasthandoff: 12/16/2016
 
 ---
 # <a name="find-a-package-family-name-pfn-for-per-app-vpn"></a>앱별 VPN에 대한 PFN(패키지 패밀리 이름) 찾기
@@ -86,9 +87,4 @@ Edge에서 원하는 정보가 표시됩니다. Internet Explorer에서 **열기
 `  "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",`
 `  "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"`
 `}`
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

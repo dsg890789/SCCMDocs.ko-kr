@@ -1,5 +1,5 @@
 ---
-title: "클라이언트 배포 작업 | System Center Configuration Manager"
+title: "클라이언트 배포 계획 | Microsoft 문서"
 description: "System Center Configuration Manager의 클라이언트 배포 및 인프라 준비를 계획합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 518f9882-ce71-48c3-9f47-cd968cfb658d
 caps.latest.revision: 3
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 62420ebebabc7bcc615fb209d1154b134e85ade0
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: 6fce443843fcf542a852937217e3a73c7ee0a98b
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -42,9 +43,4 @@ PC, 서버 및 System Center Configuration Manager의 다른 장치에 클라이
 -   [System Center Configuration Manager에서 Mac 컴퓨터에 클라이언트 배포 계획](../../../../core/clients/deploy/plan/planning-for-client-deployment-to-mac-computers.md)  
 
 -   [System Center Configuration Manager에서 Windows Embedded 장치에 클라이언트 배포 계획](../../../../core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

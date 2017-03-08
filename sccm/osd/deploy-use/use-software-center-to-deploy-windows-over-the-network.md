@@ -1,5 +1,5 @@
 ---
-title: "소프트웨어 센터를 사용하여 네트워크를 통해 Windows 배포 | Configuration Manager"
+title: "소프트웨어 센터를 사용하여 네트워크를 통해 Windows 배포 | Microsoft 문서"
 description: "소프트웨어 센터에 운영 체제를 배포하여 기존 컴퓨터를 새 버전의 Windows로 새로 고치거나 Windows를 최신 버전으로 업그레이드할 수 있습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 189fdac38760b75eb3795348f6af4ef7e83c3f20
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 4c3ec20396da37d36f908af527f445a7a736e0ac
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -36,15 +37,10 @@ System Center Configuration Manager에서 운영 체제를 설치하기 위한 �
 ## <a name="configure-deployment-settings"></a>배포 설정 구성  
  소프트웨어 센터에서 운영 체제 배포를 사용할 수 있게 하려면 해당 운영 체제를 Configuration Manager 클라이언트에서 사용할 수 있도록 배포를 구성해야 합니다. 소프트웨어 배포 마법사의 **배포 설정** 페이지 또는 배포에 대한 속성의 **배포 설정** 탭에서 이를 구성할 수 있습니다.  **다음에 사용 가능하도록 설정** 설정에 대해 **Configuration Manager 클라이언트만** 또는 **Configuration Manager 클라이언트, 미디어 및 PXE**를 구성합니다. 운영 체제가 배포되면 대상 컬렉션의 멤버에 대해 소프트웨어 센터에 표시됩니다.  
 
-##  <a name="a-namebkmkdeploya-deploy-the-task-sequence-to-computers"></a><a name="BKMK_Deploy"></a> 컴퓨터에 작업 순서 배포  
+##  <a name="BKMK_Deploy"></a> 컴퓨터에 작업 순서 배포  
  대상 컬렉션에 운영 체제 배포 자세한 내용은 [Deploy a task sequence](manage-task-sequences-to-automate-tasks.md#BKMK_DeployTS)항목을 참조하세요. 소프트웨어 센터에 대해 운영 체제를 배포할 경우 배포를 필수 또는 사용 가능으로 구성할 수 있습니다.  
 
 -   **필수 배포**: 필수 배포는 소프트웨어 센터에서 운영 체제를 사용할 수 있게 하지만 구성된 할당 일정에 따라 자동으로 시작됩니다.  
 
 -   **사용 가능한 배포**: 해당 운영 체제를 소프트웨어 센터에서 사용할 수 있으며 사용자가 필요할 때 설치할 수 있습니다.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

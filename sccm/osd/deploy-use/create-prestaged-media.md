@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager에서 사전 준비된 미디어 만들기"
+title: "System Center Configuration Manager에서 사전 준비된 미디어 만들기 | Microsoft 문서"
 description: "여러 시나리오에서의 Windows 배포를 간소화하기 위해 System Center Configuration Manager에서 사전 준비된 미디어를 만듭니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: fe02e36e7650858bcaac801a0a6d7d3c820b23b8
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 56cfc5837adf986e5d2bf4a73ef9de3b1f60b4f9
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -36,7 +37,7 @@ System Center Configuration Manager의 사전 준비된 미디어는 제조업�
 
  사전 준비된 미디어가 적용된 컴퓨터를 처음 시작하면 컴퓨터가 Windows PE로 부팅된 후 관리 지점에 연결하여 운영 체제 배포 프로세스를 완료할 작업 순서를 찾습니다. 사전 준비된 미디어에 포함할 응용 프로그램, 패키지 및 드라이버 패키지를 지정할 수 있습니다. 사전 준비된 미디어를 사용하는 작업 순서를 배포할 경우 마법사는 먼저 로컬 작업 순서 캐시에서 유효한 콘텐츠를 확인합니다. 콘텐츠를 찾을 수 없거나 콘텐츠가 수정된 경우 마법사에서는 해당 콘텐츠를 배포 지점에서 다운로드합니다.  
 
-##  <a name="a-namebkmkcreateprestagedmediaa-how-to-create-prestaged-media"></a><a name="BKMK_CreatePrestagedMedia"></a> 사전 준비된 미디어를 만드는 방법  
+##  <a name="BKMK_CreatePrestagedMedia"></a> 사전 준비된 미디어를 만드는 방법  
  작업 순서 미디어 만들기 마법사를 사용하여 사전 준비된 미디어를 만들기 전에 다음 조건을 모두 충족해야 합니다.  
 
 |작업|설명|  
@@ -143,9 +144,4 @@ System Center Configuration Manager의 사전 준비된 미디어는 제조업�
 
 ## <a name="next-steps"></a>다음 단계
 [엔터프라이즈 운영 체제를 배포하는 시나리오](scenarios-to-deploy-enterprise-operating-systems.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

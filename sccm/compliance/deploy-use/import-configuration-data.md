@@ -1,5 +1,5 @@
 ---
-title: "구성 데이터 가져오기 | System Center Configuration Manager"
+title: "구성 데이터 가져오기 | Microsoft 문서"
 description: "캐비닛 파일 형식에 포함되어 있고 지원되는 서비스 모델링 언어 스키마를 준수하는 경우 구성 데이터를 가져옵니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 2058238b9834521008c4a077a61645dcfcbb40d5
+ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
+ms.openlocfilehash: 60d0642618a3074fc50a848f1189f4d6559ca916
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -59,9 +60,4 @@ System Center Configuration Manager 콘솔에서 구성 기준 및 구성 항목
 5.  **요약** 페이지에서 수행될 작업을 검토한 다음 마법사를 완료합니다.  
 
 가져온 구성 데이터가 **자산 및 준수** 작업 영역의 **준수 설정** 노드에 표시됩니다.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

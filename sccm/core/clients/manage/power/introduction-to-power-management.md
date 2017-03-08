@@ -1,5 +1,5 @@
 ---
-title: "전원 관리 소개 | System Center Configuration Manager"
+title: "전원 관리 소개 | Microsoft 문서"
 description: "System Center Configuration Manager의 전원 관리를 소개합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 14f83f6f0c96bcd6af09ab75f35d697b594b8a96
+ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
+ms.openlocfilehash: f46c9479021c814b1102d72c7d493f21a7243bf1
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -49,9 +50,4 @@ System Center Configuration Manager의 전원 관리를 통해 많은 조직이 
 
 ### <a name="compliance-phase"></a>준수 단계  
  준수 단계에서 보고서를 실행하여 조직의 전력 사용량 및 전력 비용 절감을 평가할 수 있습니다. 또한 컴퓨터에서 생성된 CO2 양에 대한 개선 사항을 설명하는 보고서를 실행할 수 있습니다. 보고서는 전원 설정이 컴퓨터에 올바르게 적용되었는지 확인하고 전원 관리 기능 문제를 해결하는 데 사용할 수도 있습니다.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

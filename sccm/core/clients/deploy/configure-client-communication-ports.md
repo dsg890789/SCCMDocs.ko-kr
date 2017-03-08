@@ -1,5 +1,5 @@
 ---
-title: "클라이언트 통신 포트 구성 | System Center Configuration Manager"
+title: "클라이언트 통신 포트 구성 | Microsoft 문서"
 description: "System Center Configuration Manager에서 클라이언트 통신 포트를 설정합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -13,12 +13,13 @@ ms.topic: get-started-article
 ms.assetid: 406bbdbf-ab4a-4121-a68b-154f96ea14ec
 caps.latest.revision: 5
 caps.handback.revision: 0
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: a9eb4b84d2d6573155df26e18ebd2e136f4380c4
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: 12e7b8e96dc29a97dc9f81b43618fd7d0faeb1bb
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -75,9 +76,4 @@ System Center Configuration Manager 클라이언트가 통신용으로 HTTP 및 
 7.  **확인** 을 클릭하여 사이트의 속성 대화 상자를 닫습니다.  
 
  계층의 모든 기본 사이트에 대해 이 절차를 반복합니다.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

@@ -1,5 +1,5 @@
 ---
-title: "운영 체제 배포 준비 | Configuration Manager"
+title: "운영 체제 배포 준비 | Microsoft 문서"
 description: "이 문서를 참조하여 운영 체제 배포를 준비하기 위해 Configuration Manager에서 수행해야 할 작업을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 7717b01f73f0403e24d8d192c09a5038a5733981
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: dcc35f39b6ece8b466fc3770c6b9f304180eb42a
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -40,9 +41,4 @@ ms.openlocfilehash: 7717b01f73f0403e24d8d192c09a5038a5733981
 -   [알 수 없는 컴퓨터 배포 준비](prepare-for-unknown-computer-deployments.md)  
 
 -   [사용자를 대상 컴퓨터에 연결](associate-users-with-a-destination-computer.md)  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

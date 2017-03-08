@@ -1,5 +1,5 @@
 ---
-title: "핫픽스 설치 관리자 | System Center Configuration Manager"
+title: "핫픽스 설치 관리자 | Microsoft 문서"
 description: "Configuration Manager용 핫픽스 설치 관리자를 통해 업데이트를 설치하는 시기 및 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 03940a499416ce4231bda5feb8a2e323abdff578
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 8ffc7383e895909e6e6c4b8a7875fd5f0df2220e
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -33,7 +34,7 @@ Microsoft에서 받은 업데이트(핫픽스)를 설치해야 하며 해당 업
 > [!NOTE]  
 >  이 항목에서는 System Center Configuration Manager를 업데이트하는 핫픽스를 설치하는 방법에 대한 일반적인 지침을 제공합니다. 특정 업데이트에 대한 자세한 내용은 Microsoft 지원에서 해당 KB(기술 자료)를 참조하세요.  
 
-##  <a name="a-namebkmkoverviewa-overview-of-hotfixes-for-configuration-manager"></a><a name="bkmk_Overview"></a> Configuration Manager의 핫픽스 개요  
+##  <a name="bkmk_Overview"></a> Configuration Manager의 핫픽스 개요  
  Configuration Manager의 핫픽스는 SQL Server와 같은 다른 Microsoft 제품과 비슷하고 하나의 개별 수정이나 번들(수정 사항의 롤업)을 포함하며 Microsoft 기술 자료 문서에서 설명되어 있습니다.  
 
  개별 업데이트에는 특정 버전의 Configuration Manager에 대한 단일 집중 업데이트가 포함됩니다.  
@@ -101,7 +102,7 @@ Microsoft에서 받은 업데이트(핫픽스)를 설치해야 하며 해당 업
 |&lt;업데이트 형식\>|Configuration Manager의 업데이트 형식입니다. 마법사에서는 업데이트 번들에 포함되는 각 업데이트 유형에 대해 별도의 폴더를 만듭니다. 폴더 이름은 업데이트 형식을 나타냅니다. 이름은 다음과 같습니다.<br /><br /> **서버**: SMS 공급자를 실행하는 사이트 서버, 사이트 데이터베이스 서버 및 컴퓨터에 대한 업데이트가 포함되어 있습니다.<br /><br /> **클라이언트**: Configuration Manager 클라이언트에 대한 업데이트가 포함되어 있습니다.<br /><br /> **AdminConsole**: Configuration Manager 콘솔에 대한 업데이트가 포함되어 있습니다.<br /><br /> 위의 업데이트 형식 외에도 마법사에서는 **SCUP**라는 이름의 폴더를 만듭니다. 이 폴더는 업데이트 형식을 나타내지 않지만, Updates Publisher에 대한 .cab 파일을 포함하고 있습니다.|  
 |&lt;플랫폼\>|플랫폼별 폴더입니다. 프로세서 유형에 따른 업데이트 파일이 포함되어 있습니다.  이러한 폴더는 다음과 같습니다.<br /><br />- x64<br /><br /> - I386|  
 
-##  <a name="a-namebkmkinstalla-how-to-install-updates"></a><a name="bkmk_Install"></a> 업데이트를 설치하는 방법  
+##  <a name="bkmk_Install"></a> 업데이트를 설치하는 방법  
  업데이트를 설치하려면 먼저 사이트 서버에 업데이트 번들을 설치해야 합니다. 업데이트 번들을 설치하면 해당 업데이트에 대한 설치 마법사를 시작합니다. 이 마법사는 다음을 수행합니다.  
 
 -   업데이트 파일을 추출합니다.  
@@ -127,15 +128,15 @@ Microsoft에서 받은 업데이트(핫픽스)를 설치해야 하며 해당 업
 
  Configuration Manager의 각 구성 요소에 대한 업데이트를 설치하려면 다음 섹션의 정보를 사용하세요.  
 
-###  <a name="a-namebkmkserversa-update-servers"></a><a name="bkmk_servers"></a> 서버 업데이트  
+###  <a name="bkmk_servers"></a> 서버 업데이트  
  서버에 대한 업데이트에는 **SMS 공급자**인스턴스를 실행하는 **site database**, **사이트 데이터베이스**및 컴퓨터에 대한 업데이트가 포함될 수 있습니다.  
 
-####  <a name="a-namebkmksitea-update-a-site"></a><a name="bkmk_site"></a> 사이트 업데이트  
+####  <a name="bkmk_site"></a> 사이트 업데이트  
  Configuration Manager 사이트를 업데이트하기 위해 사이트 서버에 직접 업데이트 번들을 설치하거나 한 사이트에 업데이트 번들을 설치한 후 다른 사이트 서버에 업데이트를 배포할 수 있습니다.  
 
  사이트 서버에 업데이트를 설치하면 업데이트 설치 프로세스가 사이트 시스템 역할 업데이트를 비롯하여 업데이트 적용에 필요한 추가 작업을 관리합니다. 사이트 데이터베이스는 이에 대한 예외입니다. 다음 섹션에는 사이트 데이터베이스를 업데이트하는 방법에 대한 정보가 포함되어 있습니다.  
 
-####  <a name="a-namebkmkdatabasea-update-a-site-database"></a><a name="bkmk_database"></a> 사이트 데이터베이스 업데이트  
+####  <a name="bkmk_database"></a> 사이트 데이터베이스 업데이트  
  설치 프로세스에서 사이트 데이터베이스를 업데이트하기 위해 사이트 데이터베이스에 대해 **update.sql** 이라는 파일을 실행합니다. 업데이트 프로세스에서 자동으로 사이트 데이터베이스를 업데이트하도록 구성하거나 나중에 수동으로 사이트 데이터베이스를 업데이트할 수 있습니다.  
 
  **사이트 데이터베이스 자동 업데이트**  
@@ -167,12 +168,12 @@ Microsoft에서 받은 업데이트(핫픽스)를 설치해야 하며 해당 업
 
 5.  업데이트 번들이 설치될 때 **update.sql**이 사이트 서버의 다음 위치에 추출됩니다. **\\\\&lt;서버 이름\>\SMS_&lt;사이트 코드\>\Hotfix\\&lt;KB 번호\>\update.sql**  
 
-####  <a name="a-namebkmkprovidera-update-a-computer-that-runs-the-sms-provider"></a><a name="bkmk_provider"></a> SMS 공급자가 실행되는 컴퓨터 업데이트  
+####  <a name="bkmk_provider"></a> SMS 공급자가 실행되는 컴퓨터 업데이트  
  SMS 공급자의 업데이트가 포함된 업데이트 번들을 설치한 후에는SMS 공급자가 실행되는 각 컴퓨터에 업데이트를 배포해야 합니다. 이에 대한 유일한 예외는 업데이트 번들을 설치하는 사이트 서버에 이전에 설치된 SMS 공급자 인스턴스입니다. 사이트 서버에 있는 SMS 공급자의 로컬 인스턴스는 업데이트 번들을 설치할 때 업데이트됩니다.  
 
  컴퓨터에서 SMS 공급자를 제거한 후에 다시 설치할 경우 해당 컴퓨터에서 SMS 공급자의 업데이트를 다시 설치해야 합니다.  
 
-###  <a name="a-namebkmkclientsa-update-clients"></a><a name="BKMK_clients"></a> 클라이언트 업데이트  
+###  <a name="BKMK_clients"></a> 클라이언트 업데이트  
  Configuration Manager 클라이언트에 대한 업데이트가 포함된 업데이트를 설치할 때 업데이트 설치를 사용하여 클라이언트를 자동으로 업그레이드하거나 나중에 클라이언트를 수동으로 업그레이드하는 옵션이 제공됩니다. 자동 클라이언트 업그레이드에 대한 자세한 내용은 [How to upgrade clients for Windows computers](https://technet.microsoft.com/library/mt627885.aspx)를 업데이트하는 핫픽스를 설치하는 방법에 대한 일반적인 지침을 제공합니다.  
 
  Updates Publisher 또는 소프트웨어 배포 패키지를 사용하여 업데이트를 배포하거나 각 클라이언트에 수동으로 업데이트를 설치하도록 선택할 수 있습니다. 배포를 사용하여 업데이트를 설치하는 방법에 대한 자세한 내용은 이 항목의 [Configuration Manager에 대한 업데이트 배포](#BKMK_Deploy) 섹션을 참조하세요.  
@@ -184,7 +185,7 @@ Microsoft에서 받은 업데이트(핫픽스)를 설치해야 하며 해당 업
 
  예를 들어 클라이언트 업데이트에 다음 명령줄을 사용할 수 있습니다. 이 명령줄은 클라이언트 컴퓨터에서 MSIEXEC를 실행하고 업데이트 번들이 사이트 서버에 추출한 .msp 파일을 참조합니다. **msiexec.exe /p \\\\&lt;서버 이름\>\SMS_&lt;사이트 코드\>\Hotfix\\&lt;KB 번호\>\Client\\&lt;플랫폼\>\\&lt;msp\> /L\*v &lt;로그 파일\>REINSTALLMODE=mous REINSTALL=ALL**  
 
-###  <a name="a-namebkmkconsolea-update-configuration-manager-consoles"></a><a name="BKMK_console"></a> Configuration Manager 콘솔 업데이트  
+###  <a name="BKMK_console"></a> Configuration Manager 콘솔 업데이트  
  Configuration Manager 콘솔을 업데이트하려면 콘솔 설치가 완료된 후에 콘솔이 실행되는 컴퓨터에서 업데이트를 설치해야 합니다.  
 
 > [!IMPORTANT]  
@@ -200,10 +201,10 @@ Microsoft에서 받은 업데이트(핫픽스)를 설치해야 하며 해당 업
 
 예를 들어 Configuration Manager 콘솔을 업데이트하기 위해 다음 명령줄을 사용할 수 있습니다. 이 명령줄은 컴퓨터에서 MSIEXEC를 실행하고 업데이트 번들이 사이트 서버에 추출한 .msp 파일을 참조합니다. **msiexec.exe /p \\\\&lt;서버 이름\>\SMS_&lt;사이트 코드\>\Hotfix\\&lt;KB 번호\>\AdminConsole\\&lt;플랫폼\>\\&lt;msp\> /L\*v &lt;로그 파일\>REINSTALLMODE=mous REINSTALL=ALL**  
 
-##  <a name="a-namebkmkdeploya-deploy-updates-for-configuration-manager"></a><a name="BKMK_Deploy"></a> Configuration Manager에 대한 업데이트 배포  
+##  <a name="BKMK_Deploy"></a> Configuration Manager에 대한 업데이트 배포  
  사이트 서버에 업데이트 번들을 설치한 후에는 다음 세 가지 방법 중 하나를 사용하여 추가 컴퓨터에 업데이트를 배포할 수 있습니다.  
 
-###  <a name="a-namebkmkdeployscupa-use-updates-publisher-2011-to-install-updates"></a><a name="BKMK_DeploySCUP"></a> Updates Publisher 2011을 사용하여 업데이트 설치  
+###  <a name="BKMK_DeploySCUP"></a> Updates Publisher 2011을 사용하여 업데이트 설치  
  사이트 서버에 업데이트 번들을 설치하면 설치 마법사에서 Updates Publisher용 카탈로그 파일을 생성하며, 이를 사용하여 해당 컴퓨터에 업데이트를 배포할 수 있습니다. 마법사는 사용자가 **패키지와 프로그램을 사용하여 이 업데이트 배포**를 업데이트하는 핫픽스를 설치하는 방법에 대한 일반적인 지침을 제공합니다.  
 
  Updates Publisher의 카탈로그 이름은 **SCUPCatalog.cab**이며 업데이트 번들이 실행되는 컴퓨터의 **\\\\&lt;서버 이름\>\SMS_&lt;사이트 코드\>\Hotfix\\&lt;KB 번호\>\SCUP\SCUPCatalog.cab**에 있습니다.  
@@ -231,7 +232,7 @@ Microsoft에서 받은 업데이트(핫픽스)를 설치해야 하며 해당 업
 
 7.  마법사를 완료하여 업데이트를 게시합니다.  
 
-###  <a name="a-namebkmkdeployswdista-use-software-deployment-to-install-updates"></a><a name="BKMK_DeploySWDist"></a> 소프트웨어 배포를 사용하여 업데이트 설치  
+###  <a name="BKMK_DeploySWDist"></a> 소프트웨어 배포를 사용하여 업데이트 설치  
  기본 사이트 또는 중앙 관리 사이트의 사이트 서버에 업데이트 번들을 설치할 때 설치 소프트웨어 배포에 대한 업데이트 패키지를 만들도록 마법사를 구성할 수 있습니다. 그런 다음 각 패키지를 업데이트할 컴퓨터 컬렉션에 배포할 수 있습니다.  
 
  소프트웨어 배포 패키지를 만들려면 마법사의 **소프트웨어 업데이트 배포 구성** 페이지에서 업데이트할 각 업데이트 패키지 유형의 확인란을 선택합니다. 사용 가능한 유형으로는 서버, Configuration Manager 콘솔, 클라이언트 등이 있습니다. 선택한 각 업데이트 유형에 대해 별도의 패키지가 만들어집니다.  
@@ -249,7 +250,7 @@ Microsoft에서 받은 업데이트(핫픽스)를 설치해야 하며 해당 업
 
  Configuration Manager 클라이언트에 패키지를 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 패키지 및 프로그램](../../../apps/deploy-use/packages-and-programs.md)을 참조하세요.  
 
-###  <a name="a-namebkmkdeploycollectionsa-create-collections-for-deploying-updates-to-configuration-manager"></a><a name="BKMK_DeployCollections"></a> Configuration Manager에 업데이트를 배포하기 위한 컬렉션 만들기  
+###  <a name="BKMK_DeployCollections"></a> Configuration Manager에 업데이트를 배포하기 위한 컬렉션 만들기  
  특정 업데이트를 해당 클라이언트에 배포할 수 있습니다. 다음 표에는 Configuration Manager의 여러 구성 요소를 위한 장치 컬렉션을 만드는 방법이 나와 있습니다.  
 
 |Configuration Manager의 구성 요소|지침|  
@@ -266,9 +267,4 @@ Microsoft에서 받은 업데이트(핫픽스)를 설치해야 하며 해당 업
 >  사이트 데이터베이스를 업데이트하려면 해당 사이트의 사이트 서버에 업데이트를 배포합니다.  
 
  컬렉션을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 컬렉션을 만드는 방법](../../../core/clients/manage/collections/create-collections.md)을 참조하세요.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

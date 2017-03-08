@@ -1,5 +1,5 @@
 ---
-title: "콘텐츠 배포 | System Center Configuration Manager"
+title: "콘텐츠 배포 | Microsoft 문서"
 description: "System Center Configuration Manager에 대한 배포 지점을 설치한 후 해당 배포 지점에 콘텐츠 배포를 시작할 수 있는 방법은 다음과 같습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: c6bf461a762b8aa51678a17cb7b294c803d05f37
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: 36b08285ef78d0acb9ba9c44abe2d57e311d44b3
+ms.lasthandoff: 12/16/2016
 
 ---
 # <a name="deploy-and-manage-content-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 콘텐츠 배포 및 관리
@@ -26,7 +27,7 @@ ms.openlocfilehash: c6bf461a762b8aa51678a17cb7b294c803d05f37
 
 System Center Configuration Manager에 대한 배포 지점을 설치한 후 해당 지점에 콘텐츠 배포를 시작할 수 있습니다. 일반적으로 콘텐츠는 네트워크를 통해 배포 지점으로 전송되지만 배포 지점에 콘텐츠를 가져오는 다른 옵션도 있습니다. 특정 배포 지점에 콘텐츠를 전송한 후 여러 배포 지점에서 해당 콘텐츠에 대한 업데이트, 재배포, 제거 및 유효성 검사를 할 수 있습니다.  
 
-##  <a name="a-namebkmkdistributea-distribute-content"></a><a name="bkmk_distribute"></a> 콘텐츠 배포  
+##  <a name="bkmk_distribute"></a> 콘텐츠 배포  
  일반적으로 콘텐츠는 배포 지점으로 배포해야 클라이언트 컴퓨터에서 사용할 수 있습니다. 단, 특정 배포용으로 주문형 콘텐츠 배포를 사용하는 경우는 예외입니다.  콘텐츠를 배포할 때 Configuration Manager에서는 콘텐츠 파일을 패키지에 저장한 다음 해당 패키지를 배포 지점으로 배포합니다. 배포할 수 있는 콘텐츠 유형은 다음과 같습니다.  
 
 -   응용 프로그램 배포 유형  
@@ -105,7 +106,7 @@ System Center Configuration Manager에 대한 배포 지점을 설치한 후 해
 
 9. **확인** 페이지에 콘텐츠가 지점에 성공적으로 할당되었는지 여부가 표시됩니다. 콘텐츠 배포를 모니터링하려면 [System Center Configuration Manager를 사용하여 배포한 콘텐츠 모니터링](../../../../core/servers/deploy/configure/monitor-content-you-have-distributed.md)을 참조하세요.  
 
-##  <a name="a-namebkmkprestagea-use-prestaged-content"></a><a name="bkmk_prestage"></a> 사전 준비된 콘텐츠 사용  
+##  <a name="bkmk_prestage"></a> 사전 준비된 콘텐츠 사용  
  응용 프로그램과 패키지 유형의 콘텐츠 파일을 사전 준비할 수 있습니다.  
 
 -   Configuration Manager 콘솔에서 필요한 콘텐츠를 선택하고 **사전 준비된 콘텐츠 파일 만들기 마법사**를 사용하여 선택한 콘텐츠의 파일 및 관련 메타데이터를 포함하는 사전 준비된 콘텐츠 압축 파일을 만듭니다.  
@@ -130,7 +131,7 @@ System Center Configuration Manager에 대한 배포 지점을 설치한 후 해
 
 다음 섹션에서는 콘텐츠 사전 준비에 대해 설명합니다.  
 
-###  <a name="a-namebkmkcreateprestagedcontentfilea-step-1-create-a-prestaged-content-file"></a><a name="BKMK_CreatePrestagedContentFile"></a> 1단계: 사전 준비된 콘텐츠 파일 만들기  
+###  <a name="BKMK_CreatePrestagedContentFile"></a> 1단계: 사전 준비된 콘텐츠 파일 만들기  
  Configuration Manager 콘솔에서 선택한 콘텐츠의 파일 및 관련 메타데이터가 포함된 사전 준비된 압축 파일을 만들 수 있습니다. 사전 준비된 콘텐츠 파일을 만들려면 다음 절차를 따르십시오.  
 
 ##### <a name="to-create-a-prestaged-content-file"></a>사전 준비된 콘텐츠 파일을 만들려면  
@@ -176,7 +177,7 @@ System Center Configuration Manager에 대한 배포 지점을 설치한 후 해
 
 11. **완료** 페이지에서 사전 준비된 콘텐츠 파일이 성공적으로 만들어졌는지 확인한 후에 **닫기**를 클릭합니다.  
 
-###  <a name="a-namebkmkassigncontenttodistributionpointa-step-2-assign-the-content-to-distribution-points"></a><a name="BKMK_AssignContentToDistributionPoint"></a> 2단계: 배포 지점에 콘텐츠 할당  
+###  <a name="BKMK_AssignContentToDistributionPoint"></a> 2단계: 배포 지점에 콘텐츠 할당  
  콘텐츠 파일을 사전 준비한 후에는 배포 지점에 콘텐츠를 할당합니다.  
 
 > [!NOTE]  
@@ -238,7 +239,7 @@ System Center Configuration Manager에 대한 배포 지점을 설치한 후 해
 
 9. **확인** 페이지에 콘텐츠가 배포 지점에 성공적으로 할당되었는지 여부가 표시됩니다. 콘텐츠 배포를 모니터링하려면 [System Center Configuration Manager를 사용하여 배포한 콘텐츠 모니터링](../../../../core/servers/deploy/configure/monitor-content-you-have-distributed.md)을 참조하세요.  
 
-###  <a name="a-namebkmkexportcontentfromprestagedcontentfilea-step-3-extract-the-content-from-the-prestaged-content-file"></a><a name="BKMK_ExportContentFromPrestagedContentFile"></a> 3단계: 사전 준비된 콘텐츠 파일에서 콘텐츠 추출  
+###  <a name="BKMK_ExportContentFromPrestagedContentFile"></a> 3단계: 사전 준비된 콘텐츠 파일에서 콘텐츠 추출  
  사전 준비된 콘텐츠 파일을 만들고 배포 지점에 콘텐츠를 할당하면 사이트 서버나 배포 지점의 콘텐츠 라이브러리로 콘텐츠 파일을 추출할 수 있습니다. 기존에는 사전 준비된 콘텐츠 파일을 이동식 드라이브(예: USB 드라이브)에 복사하거나 콘텐츠를 미디어(예: DVD)로 구워 콘텐츠가 필요한 사이트 서버나 배포 지점의 위치에서 사용할 수 있도록 만들었습니다.  
 
  콘텐츠 추출 명령줄 도구를 사용하여 사전 준비된 콘텐츠 파일에서 수동으로 콘텐츠 파일을 내보내려면 다음 절차를 수행하십시오.  
@@ -279,7 +280,7 @@ System Center Configuration Manager에 대한 배포 지점을 설치한 후 해
     >   
     > Configuration Manager에서는 패키지 버전 2를 배포 지점에 자동으로 배포하지 않습니다. 새 파일 버전이 포함된 새 사전 준비된 콘텐츠 파일을 만든 다음 콘텐츠를 추출하고, 배포 지점을 업데이트하여 변경된 파일을 배포하거나 패키지의 모든 파일을 재배포해야 합니다.  
 
-###  <a name="a-namebkmkdpsiteservera-how-to-prestage-content-on-a-distribution-point-on-a-site-server"></a><a name="bkmk_dpsiteserver"></a> 사이트 서버의 배포 지점에 콘텐츠를 사전 준비하는 방법  
+###  <a name="bkmk_dpsiteserver"></a> 사이트 서버의 배포 지점에 콘텐츠를 사전 준비하는 방법  
  배포 지점이 사이트 서버에 설치되어 있는 경우 콘텐츠를 사전 준비하려면 다음 절차를 따라야 합니다. 콘텐츠 파일이 콘텐츠 라이브러리에 이미 있기 때문입니다.  
 
  배포 지점이 사전 준비된 콘텐츠에 대해 설정되지 않았거나 사이트 서버에 위치하지 않은 경우 이 항목의 [콘텐츠 사전 준비](#bkmk_prestage) 섹션을 참조하세요.  
@@ -305,45 +306,21 @@ System Center Configuration Manager에 대한 배포 지점을 설치한 후 해
     > [!NOTE]  
     >  배포 지점이 보조 사이트에 있는 경우 10분 이상 기다린 후 부모 기본 사이트에 연결된 Configuration Manager 콘솔을 사용하여 보조 사이트의 해당 배포 지점에 콘텐츠를 할당합니다.  
 
-##  <a name="a-namebkmkmanagea-manage-the-content-you-have-distributed"></a><a name="bkmk_manage"></a> 배포한 콘텐츠 관리  
+##  <a name="bkmk_manage"></a> 배포한 콘텐츠 관리  
  콘텐츠 관리의 경우 다음과 같은 옵션이 있습니다.  
+ - [콘텐츠 업데이트](#update-content)
+ - [콘텐츠 재배포](#redistribute-content)
+ - [콘텐츠 제거](#remove-content)
+ - [콘텐츠 유효성 검사](#validate-content)
 
-**콘텐츠 업데이트:** 새 파일을 추가하거나 기존 파일을 새 버전으로 바꿔 배포의 원본 파일 위치를 업데이트할 때는 **배포 지점 업데이트** 또는 **콘텐츠 업데이트** 작업을 사용하여 배포 지점에서 콘텐츠 파일을 업데이트할 수 있습니다.  
-
+### <a name="update-content"></a>콘텐츠 업데이트
+새 파일을 추가하거나 기존 파일을 새 버전으로 바꿔 배포의 원본 파일 위치를 업데이트할 때는 **배포 지점 업데이트** 또는 **콘텐츠 업데이트** 작업을 사용하여 배포 지점에서 콘텐츠 파일을 업데이트할 수 있습니다.  
 -   콘텐츠 파일은 원본 파일 경로에서 패키지 콘텐츠 원본을 소유한 사이트의 콘텐츠 라이브러리로 복사됩니다.  
-
 -   패키지 버전이 높아집니다.  
-
 -   사이트 서버와 배포 지점의 각 콘텐츠 라이브러리 인스턴스는 변경된 파일만 포함하도록 업데이트됩니다.  
 
 > [!WARNING]  
 >  응용 프로그램의 패키지 버전은 항상 1입니다. 응용 프로그램 배포 유형의 콘텐츠를 업데이트하면 Configuration Manager에서 해당 배포 유형에 대한 새 콘텐츠 ID를 만들고 패키지가 새 콘텐츠 ID를 참조합니다.  
-
-**콘텐츠 재배포:** 패키지를 재배포하여 패키지의 모든 콘텐츠 파일을 배포 지점 또는 배포 지점 그룹에 복사함으로써 기존 파일을 덮어쓸 수 있습니다.  
-
- 이 작업을 사용하여 패키지의 콘텐츠 파일을 복구하거나 초기 배포가 실패할 경우 콘텐츠를 다시 전송합니다. 다음 위치에서 패키지를 재배포할 수 있습니다.  
-
--   패키지 속성  
-
--   배포 지점 속성  
-
--   배포 지점 그룹 속성  
-
-**콘텐츠 제거:** 배포 지점에서 콘텐츠가 더 이상 필요 없어지면 배포 지점에서 해당 콘텐츠 파일을 제거할 수 있습니다.  
-
--   패키지 속성  
-
--   배포 지점 속성  
-
--   배포 지점 그룹 속성  
-
- 그러나 동일한 배포 지점에 배포된 다른 패키지와 연결된 콘텐츠는 제거할 수 없습니다. 다음 위치에서 콘텐츠를 제거할 수 있습니다.  
-
-**콘텐츠 유효성 검사:** 콘텐츠 유효성 검사 프로세스는 배포 지점에서 콘텐츠 파일의 무결성을 확인합니다. 일정에 따라 콘텐츠 유효성 검사를 사용하도록 설정하거나 배포 지점 및 패키지의 속성에서 수동으로 콘텐츠 유효성 검사를 시작할 수 있습니다.  
-
- 콘텐츠 유효성 검사가 시작되면 Configuration Manager가 배포 지점의 콘텐츠 파일을 확인하고 배포 지점의 파일에 예기치 않은 파일 해시가 있는 경우 Configuration Manager가 **모니터링** 작업 영역에서 검토할 수 있는 상태 메시지를 만듭니다.  
-
- 콘텐츠 유효성 검사 일정을 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에 대한 배포 지점 설치 및 구성](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md) 항목의 [배포 지점 구성](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md#bkmk_configs)을 참조하세요.  
 
 #### <a name="to-update-content-on-distribution-points"></a>배포 지점에서 콘텐츠를 업데이트하려면  
 
@@ -372,6 +349,16 @@ System Center Configuration Manager에 대한 배포 지점을 설치한 후 해
 
     > [!NOTE]  
     >  부팅 이미지의 콘텐츠를 업데이트하는 경우 배포 지점 관리 마법사가 열립니다. **요약** 페이지의 정보를 검토한 다음 마법사를 완료하여 콘텐츠를 업데이트합니다.  
+
+### <a name="redistribute-content"></a>콘텐츠 재배포
+패키지를 재배포하여 패키지의 모든 콘텐츠 파일을 배포 지점 또는 배포 지점 그룹에 복사함으로써 기존 파일을 덮어쓸 수 있습니다.  
+
+ 이 작업을 사용하여 패키지의 콘텐츠 파일을 복구하거나 초기 배포가 실패할 경우 콘텐츠를 다시 전송합니다. 다음 위치에서 패키지를 재배포할 수 있습니다.  
+
+-   패키지 속성  
+-   배포 지점 속성  
+-   배포 지점 그룹 속성  
+
 
 #### <a name="to-redistribute-content-from-package-properties"></a>패키지 속성에서 콘텐츠를 재배포하려면  
 
@@ -420,6 +407,23 @@ System Center Configuration Manager에 대한 배포 지점을 설치한 후 해
     > [!IMPORTANT]  
     >  패키지의 콘텐츠가 배포 지점 그룹의 모든 배포 지점에 재배포됩니다.  
 
+
+#### <a name="use-the-sdk-to-force-replication-of-content"></a>SDK를 사용하여 강제로 콘텐츠 복제
+Configuration Manager SDK의 **RetryContentReplication** WMI(Windows Management Instrumentation) 클래스 메서드를 사용하여 강제로 배포 관리자에서 원본 위치의 콘텐츠를 콘텐츠 라이브러리에 복사하도록 할 수 있습니다.  
+
+정상적인 콘텐츠 복제 후에 문제가 발생한 후(일반적으로 콘솔의 모니터링 노드를 사용하여 확인) 콘텐츠를 다시 배포해야 하는 경우에만 이 방법을 사용하여 강제로 복제합니다.   
+
+이 SDK 옵션에 대한 자세한 내용은 MSDN.Microsoft.com에서 [SMS_CM_UpdatePackages 클래스의 RetryContentReplication 메서드](https://msdn.microsoft.com/library/mt762092(CMSDK.16).aspx)를 참조하세요.
+
+### <a name="remove-content"></a>콘텐츠 제거
+배포 지점에서 콘텐츠가 더 이상 필요 없어지면 배포 지점에서 해당 콘텐츠 파일을 제거할 수 있습니다.  
+
+-   패키지 속성  
+-   배포 지점 속성  
+-   배포 지점 그룹 속성  
+
+그러나 동일한 배포 지점에 배포된 다른 패키지와 연결된 콘텐츠는 제거할 수 없습니다.  
+
 #### <a name="to-remove-package-content-files-from-distribution-points"></a>배포 지점에서 패키지 콘텐츠 파일을 제거하려면  
 
 1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리**를 클릭합니다.  
@@ -464,6 +468,15 @@ System Center Configuration Manager에 대한 배포 지점을 설치한 후 해
 
 4.  **콘텐츠** 탭을 클릭하여 제거할 콘텐츠를 선택하고 **제거**를 클릭한 후에 **확인**을 클릭합니다.  
 
+
+### <a name="validate-content"></a>콘텐츠 유효성 검사
+콘텐츠 유효성 검사 프로세스는 배포 지점에서 콘텐츠 파일의 무결성을 확인합니다. 일정에 따라 콘텐츠 유효성 검사를 사용하도록 설정하거나 배포 지점 및 패키지의 속성에서 수동으로 콘텐츠 유효성 검사를 시작할 수 있습니다.  
+
+ 콘텐츠 유효성 검사가 시작되면 Configuration Manager가 배포 지점의 콘텐츠 파일을 확인하고 배포 지점의 파일에 예기치 않은 파일 해시가 있는 경우 Configuration Manager가 **모니터링** 작업 영역에서 검토할 수 있는 상태 메시지를 만듭니다.  
+
+ 콘텐츠 유효성 검사 일정을 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에 대한 배포 지점 설치 및 구성](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md) 항목의 [배포 지점 구성](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md#bkmk_configs)을 참조하세요.  
+
+
 #### <a name="to-initiate-content-validation-for-all-content-on-a-distribution-point"></a>배포 지점의 모든 콘텐츠에 대해 콘텐츠 유효성 검사를 시작하려면  
 
 1.  Configuration Manager 콘솔에서 **관리**를 클릭합니다.  
@@ -501,9 +514,4 @@ System Center Configuration Manager에 대한 배포 지점을 설치한 후 해
 4.  **콘텐츠 위치** 탭에서 콘텐츠 유효성 검사를 수행할 배포 지점 또는 배포 지점 그룹을 선택하고 **유효성 검사**, **확인**, **확인**을 차례로 클릭합니다. 선택한 배포 지점 또는 배포 지점 그룹의 콘텐츠에 대한 콘텐츠 유효성 검사 프로세스가 시작됩니다.  
 
 5.  콘텐츠 유효성 검사 프로세스의 결과를 보려면 **모니터링** 작업 영역에서 **배포 상태**를 확장한 후 **콘텐츠 상태** 노드를 클릭합니다. 각 패키지 유형(예: 응용 프로그램, 소프트웨어 업데이트 패키지 및 부팅 이미지)의 콘텐츠가 표시됩니다. 콘텐츠 상태를 모니터링하는 방법에 대한 자세한 내용은 [System Center Configuration Manager를 사용하여 배포한 콘텐츠 모니터링](../../../../core/servers/deploy/configure/monitor-content-you-have-distributed.md)을 참조하세요.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

@@ -1,5 +1,5 @@
 ---
-title: "Endpoint Protection에 대한 Windows 방화벽 정책 | System Center Configuration Manager"
+title: "Endpoint Protection에 대한 Windows 방화벽 정책 | Microsoft 문서"
 description: "System Center 2012 Configuration Manager에서 Endpoint Protection에 대한 Windows 방화벽 정책을 만들어 배포하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 98e4c49a19da396389acdd0aa56aee9113ce58c9
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: 7a02ae3fb102ab85f98d3b7453fc0736e5a11200
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -62,7 +63,7 @@ System Center 2012 Configuration Manager에서 Endpoint Protection에 대한 방
 
 7.  새 Windows 방화벽 정책이 **Windows 방화벽 정책** 목록에 표시되는지 확인합니다.  
 
-##  <a name="a-namebkmkassigna-to-deploy-a-windows-firewall-policy"></a><a name="BKMK_Assign"></a> Windows 방화벽 정책을 배포하려면  
+##  <a name="BKMK_Assign"></a> Windows 방화벽 정책을 배포하려면  
 
 1.  Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.  
 
@@ -78,9 +79,4 @@ System Center 2012 Configuration Manager에서 Endpoint Protection에 대한 방
 
     > [!IMPORTANT]  
     >  컬렉션에 Windows 방화벽 정책을 배포하는 경우 네트워크 사용 초과를 방지하기 위해 2시간에 걸쳐 임의 순서로 컴퓨터에 이 정책을 적용합니다.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

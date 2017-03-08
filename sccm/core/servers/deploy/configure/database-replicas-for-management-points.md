@@ -1,5 +1,5 @@
 ---
-title: "관리 지점 데이터베이스 복제본 | System Center Configuration Manager"
+title: "관리 지점 데이터베이스 복제본 | Microsoft 문서"
 description: "데이터베이스 복제본을 사용하면 관리 지점에 의한 사이트 데이터베이스 서버의 CPU 부하를 줄일 수 있습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: a4d8af8662c907eb3b10b9e8dd4d50d954b5c19a
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 130c053c9f2a1817dd85b1f3c01285aab19d59cb
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -32,7 +33,7 @@ System Center Configuration Manager 기본 사이트는 데이터베이스 복�
 -   따라서 클라이언트와 관련된 빈번한 처리 작업을 오프로드함으로써 사이트 데이터베이스 서버의 CPU 처리 요구 사항을 줄일 수 있습니다.  클라이언트에 대한 빈번한 처리 작업의 예로는 클라이언트 정책을 자주 요청하는 다수의 클라이언트가 있는 사이트를 들 수 있습니다.  
 
 
-##  <a name="a-namebkmkpreparea-prepare-to-use-database-replicas"></a><a name="bkmk_Prepare"></a> 데이터베이스 복제본 사용 준비  
+##  <a name="bkmk_Prepare"></a> 데이터베이스 복제본 사용 준비  
 **관리 지점용 데이터베이스 복제본 정보:**  
 
 -   복제본은 별도의 SQL Server 인스턴스로 복제되는 사이트 데이터베이스의 부분 복사본입니다.  
@@ -87,7 +88,7 @@ System Center Configuration Manager 기본 사이트는 데이터베이스 복�
 
 -   **단일 SQL Server의 여러 복제본:** 관리 지점에 대해 여러 데이터베이스 복제본을 호스트하도록 데이터베이스 복제본 서버를 구성하는 경우(각 복제본은 개별 인스턴스에 있어야 함), 해당 서버에서 이전에 구성한 데이터베이스 복제본이 사용 중인 자체 서명된 인증서를 덮어쓰지 않도록 다음 섹션의 4단계에서 수정된 구성 스크립트를 사용해야 합니다.  
 
-##  <a name="a-namebkmkdbreplicaconfiga-configure-database-replicas"></a><a name="BKMK_DBReplica_Config"></a> 데이터베이스 복제본 구성  
+##  <a name="BKMK_DBReplica_Config"></a> 데이터베이스 복제본 구성  
 데이터베이스 복제본을 사용하고 구성하려면 다음 단계를 수행해야 합니다.  
 
 -   [1단계 - 데이터베이스 복제본을 게시하도록 사이트 데이터베이스 서버 구성](#BKMK_DBReplica_ConfigSiteDB)  
@@ -100,7 +101,7 @@ System Center Configuration Manager 기본 사이트는 데이터베이스 복�
 
 -   [5단계 - 데이터베이스 복제본 서버에 대해 SQL Server Service Broker 구성](#BKMK_DBreplica_SSB)  
 
-###  <a name="a-namebkmkdbreplicaconfigsitedba-step-1---configure-the-site-database-server-to-publish-the-database-replica"></a><a name="BKMK_DBReplica_ConfigSiteDB"></a> 1단계 - 데이터베이스 복제본을 게시하도록 사이트 데이터베이스 서버 구성  
+###  <a name="BKMK_DBReplica_ConfigSiteDB"></a> 1단계 - 데이터베이스 복제본을 게시하도록 사이트 데이터베이스 서버 구성  
  다음 절차는 Windows Server 2008 R2 컴퓨터에서 데이터베이스 복제본을 게시하도록 사이트 데이터베이스 서버를 구성하는 방법의 예입니다. 다른 운영 체제 버전을 사용하는 경우 해당 운영 체제 문서를 참조하여 필요한 대로 이 절차의 단계를 조정합니다.  
 
 ##### <a name="to-configure-the-site-database-server"></a>사이트 데이터베이스 서버를 구성하려면  
@@ -128,11 +129,11 @@ System Center Configuration Manager 기본 사이트는 데이터베이스 복�
 
         -   ConfigMgr_MPReplicaAccess: **읽기**, **읽기 및 실행**, **폴더 내용 보기**  
 
-5.   **SQL Server Management Studio** 를 사용하여 사이트 데이터베이스에 연결하고 **spCreateMPReplicaPublication**저장 프로시저를 쿼리로 실행합니다.  
+5.  **SQL Server Management Studio** 를 사용하여 사이트 데이터베이스에 연결하고 **spCreateMPReplicaPublication**저장 프로시저를 쿼리로 실행합니다.  
 
 저장 프로시저가 완료되면 사이트 데이터베이스 서버가 데이터베이스 복제본을 게시하도록 구성됩니다.  
 
-###  <a name="a-namebkmkdbreplicaconfigsrva-step-2---configuring-the-database-replica-server"></a><a name="BKMK_DBReplica_ConfigSrv"></a> 2단계 - 데이터베이스 복제본 서버 구성  
+###  <a name="BKMK_DBReplica_ConfigSrv"></a> 2단계 - 데이터베이스 복제본 서버 구성  
 데이터베이스 복제본 서버는 SQL Server를 실행하고 관리 지점이 사용할 사이트 데이터베이스의 복제본을 호스팅하는 컴퓨터입니다. 데이터베이스 복제본 서버는 고정된 일정으로 사이트 데이터베이스 서버에서 게시되는 데이터베이스 복제본과 데이터베이스 복제본을 동기화합니다.  
 
 데이터베이스 복제본 서버는 사이트 데이터베이스 서버와 동일한 요구 사항을 충족해야 합니다. 그러나 데이터베이스 복제본 서버는 사이트 데이터베이스 서버가 사용하는 것과 다른 에디션 또는 버전의 SQL Server를 실행할 수 있습니다. 지원되는 SQL Server의 버전에 대한 자세한 내용은 [System Center Configuration Manager에 대한 SQL Server 버전 지원](../../../../core/plan-design/configs/support-for-sql-server-versions.md)을 참조하세요.  
@@ -213,7 +214,7 @@ System Center Configuration Manager 기본 사이트는 데이터베이스 복�
 
  이제 데이터베이스 복제본을 관리 지점에 사용할 수 있습니다.  
 
-###  <a name="a-namebkmkdbreplicaconfigmpa-step-3---configure-management-points-to-use-the-database-replica"></a><a name="BKMK_DBReplica_ConfigMP"></a> 3단계 - 관리 지점에서 데이터베이스 복제본을 사용하도록 구성  
+###  <a name="BKMK_DBReplica_ConfigMP"></a> 3단계 - 관리 지점에서 데이터베이스 복제본을 사용하도록 구성  
  관리 지점 역할을 설치할 때 기본 사이트의 관리 지점이 데이터베이스 복제본을 사용하도록 구성하거나 기존 관리 지점이 데이터베이스 복제본을 사용하도록 구성할 수 있습니다.  
 
  관리 지점에서 데이터베이스 복제본을 사용하도록 구성하려면 다음 정보를 참고하세요.  
@@ -232,7 +233,7 @@ System Center Configuration Manager 기본 사이트는 데이터베이스 복�
 
 3.  **Windows 인증** 을 **사용**으로 설정하고 **IIS(인터넷 정보 서비스) 관리자**를 닫습니다.  
 
-###  <a name="a-namebkmkdbreplicacerta-step-4--configure-a-self-signed-certificate-for-the-database-replica-server"></a><a name="BKMK_DBReplica_Cert"></a> 4단계 - 데이터베이스 복제본 서버용으로 자체 서명된 인증서 구성  
+###  <a name="BKMK_DBReplica_Cert"></a> 4단계 - 데이터베이스 복제본 서버용으로 자체 서명된 인증서 구성  
  데이터베이스 복제본 서버에 자체 서명된 인증서를 만들고 데이터베이스 복제본 서버를 사용하는 각 관리 지점에서 이 인증서를 사용할 수 있게 해야 합니다.  
 
  데이터베이스 복제본 서버에 설치되는 관리 지점에서는 자동으로 인증서를 사용할 수 있습니다. 그러나 이 인증서를 원격 관리 지점에서 사용할 수 있게 하려면 인증서를 내보낸 다음 원격 관리 지점의 신뢰할 수 있는 사용자 인증서 저장소에 추가해야 합니다.  
@@ -246,7 +247,7 @@ System Center Configuration Manager 기본 사이트는 데이터베이스 복�
 2.  다음 PowerShell 스크립트를 복사하여 **CreateMPReplicaCert.ps1**이라는 이름의 파일로 저장합니다. 이 파일의 복사본을 데이터베이스 복제본 서버의 시스템 파티션에 있는 루트 폴더에 넣습니다.  
 
     > [!IMPORTANT]  
-    >  단일 SQL Server에서 둘 이상의 데이터베이스 복제본을 구성하는 경우에는 구성하는 각각의 후속 복제본에 대해 이 절차용으로 이 스크립트의 수정된 버전을 사용해야 합니다.   [단일 SQL Server의 추가 데이터베이스 복제본용 보충 스크립트](#bkmk_supscript)항목을 참조하세요.  
+    >  단일 SQL Server에서 둘 이상의 데이터베이스 복제본을 구성하는 경우에는 구성하는 각각의 후속 복제본에 대해 이 절차용으로 이 스크립트의 수정된 버전을 사용해야 합니다.  [단일 SQL Server의 추가 데이터베이스 복제본용 보충 스크립트](#bkmk_supscript)항목을 참조하세요.  
 
     ```  
     # Script for creating a self-signed certificate for the local machine and configuring SQL Server to use it.  
@@ -413,7 +414,7 @@ System Center Configuration Manager 기본 사이트는 데이터베이스 복�
 
     5.  **마침** 을 클릭하여 마법사를 닫고 관리 지점의 인증서 구성을 완료합니다.  
 
-###  <a name="a-namebkmkdbreplicassba-step-5---configure-the-sql-server-service-broker-for-the-database-replica-server"></a><a name="BKMK_DBreplica_SSB"></a> 5단계 - 데이터베이스 복제본 서버에 대해 SQL Server Service Broker 구성  
+###  <a name="BKMK_DBreplica_SSB"></a> 5단계 - 데이터베이스 복제본 서버에 대해 SQL Server Service Broker 구성  
 관리 지점의 데이터베이스 복제본으로 클라이언트 알림을 지원하려면 SQL Server Service Broker를 위해 사이트 데이터베이스 서버와 데이터베이스 복제 서버 간의 통신을 구성해야 합니다. 그러기 위해서는 다른 데이터베이스에 대한 정보를 사용하여 각 데이터베이스를 구성하고 보안 통신을 위해 두 데이터베이스 간에 인증서를 교환해야 합니다.  
 
 > [!NOTE]  
@@ -453,20 +454,20 @@ System Center Configuration Manager 기본 사이트는 데이터베이스 복�
 
  사이트 데이터베이스와 데이터베이스 복제 데이터베이스의 구성을 완료한 후 몇 분이 지나면 기본 사이트의 알림 관리자가 기본 사이트 데이터베이스에서 데이터베이스 복제본으로의 클라이언트 알림을 위해 Service Broker 대화를 설정합니다.  
 
-###  <a name="a-namebkmksupscripta-supplemental-script-for-additional-database-replicas-on-a-single-sql-server"></a><a name="bkmk_supscript"></a> 단일 SQL Server의 추가 데이터베이스 복제본용 보충 스크립트  
+###  <a name="bkmk_supscript"></a> 단일 SQL Server의 추가 데이터베이스 복제본용 보충 스크립트  
  계속 사용하려는 데이터베이스 복제본이 이미 있는 SQL Server의 데이터베이스 복제본 서버에 대해 4단계의 스크립트를 사용하여 자체 서명된 인증서를 구성할 때는 수정된 원본 스크립트 버전을 사용해야 합니다. 스크립트를 다음과 같이 수정하면 서버의 기존 인증서가 삭제되지 않으며, 고유한 식별 이름을 사용하여 후속 스크립트가 작성됩니다.  원본 스크립트를 다음과 같이 편집합니다.  
 
 -   스크립트 항목 **# Delete existing cert if one exists** 및 **# Create the new cert**사이의 각 줄을 주석으로 처리하여 실행을 차단합니다. 이렇게 하려면 해당하는 각 줄의 첫 문자로  **#**  을 추가합니다.  
 
 -   각각의 후속 데이터베이스 복제본에 대해 이 스크립트를 사용하여 인증서의 이름을 구성하고 업데이트합니다.  이렇게 하려면 **$enrollment.CertificateFriendlyName = "ConfigMgr SQL Server Identification Certificate"** 줄을 편집하고 **ConfigMgr SQL Server Identification Certificate** 를  **ConfigMgr SQL Server Identification Certificate1**과 같은 새 이름으로 바꿉니다.  
 
-##  <a name="a-namebkmkdbreplicaopsa-manage-database-replica-configurations"></a><a name="BKMK_DBReplicaOps"></a> 데이터베이스 복제본 구성 관리  
+##  <a name="BKMK_DBReplicaOps"></a> 데이터베이스 복제본 구성 관리  
  사이트에서 데이터베이스 복제본을 사용할 때 다음 섹션의 정보를 사용하면 데이터베이스 복제본을 제거하거나, 데이터베이스 복제본을 사용하는 사이트를 제거하거나, 사이트 데이터베이스를 SQL Server의 새 설치로 이동하는 프로세스를 보완할 수 있습니다. 다음 섹션의 정보를 사용하여 게시를 삭제하는 경우 데이터베이스 복제본에 사용하는 SQL Server 버전의 트랜잭션 복제를 삭제하는 지침을 사용하세요. 예를 들어 SQL Server 2008 R2를 사용하는 경우 [방법: 게시 삭제(복제 Transact-SQL 프로그래밍)](http://go.microsoft.com/fwlink/p/?LinkId=273934)를 참조하세요.  
 
 > [!NOTE]  
 >  데이터베이스 복제본용으로 구성된 사이트 데이터베이스를 복원한 후에, 데이터베이스 복제본을 사용하려면 먼저 게시 및 구독을 모두 다시 만드는 것을 포함해 각 데이터베이스 복제본을 다시 구성해야 합니다.  
 
-###  <a name="a-namebkmkuninstalldbreplicaa-uninstall-a-database-replica"></a><a name="BKMK_UninstallDbReplica"></a> 데이터베이스 복제본 제거  
+###  <a name="BKMK_UninstallDbReplica"></a> 데이터베이스 복제본 제거  
  관리 지점에 대한 데이터베이스 복제본을 사용하는 경우 일정 기간 동안 데이터베이스 복제본을 제거한 다음 다시 구성해야 사용할 수 있습니다. 예를 들어 Configuration Manager 사이트를 새 서비스 팩으로 업그레이드하기 전에 데이터베이스 복제본을 제거해야 합니다. 사이트 업그레이드를 완료한 후에 데이터베이스 복제본을 사용할 수 있도록 복원할 수 있습니다.  
 
  데이터베이스 복제본을 제거하려면 다음 단계를 수행하세요.  
@@ -489,7 +490,7 @@ System Center Configuration Manager 기본 사이트는 데이터베이스 복�
 
 5.  게시, 구독, 복제 데이터베이스를 삭제하고 사이트 서버 데이터베이스에서 게시를 사용하지 않도록 설정하면 데이터베이스 복제본이 제거됩니다.  
 
-###  <a name="a-namebkmkdbreplicaopsuninstalla-uninstall-a-site-server-that-publishes-a-database-replica"></a><a name="BKMK_DBReplicaOps_Uninstall"></a> 데이터베이스 복제본을 게시하는 사이트 서버 제거  
+###  <a name="BKMK_DBReplicaOps_Uninstall"></a> 데이터베이스 복제본을 게시하는 사이트 서버 제거  
  데이터베이스 복제본을 게시하는 사이트를 제거하기 전에 다음 단계를 수행하여 게시 및 구독을 정리하세요.  
 
 1.  **SQL Server Management Studio** 를 사용하여 사이트 서버 데이터베이스에서 데이터베이스 복제본 게시를 삭제합니다.  
@@ -498,7 +499,7 @@ System Center Configuration Manager 기본 사이트는 데이터베이스 복�
 
 3.  사이트를 제거합니다.  
 
-###  <a name="a-namebkmkdbreplicaopsmovea-move-a-site-server-database-that-publishes-a-database-replica"></a><a name="BKMK_DBReplicaOps_Move"></a> 데이터베이스 복제본을 게시하는 사이트 서버 데이터베이스 이동  
+###  <a name="BKMK_DBReplicaOps_Move"></a> 데이터베이스 복제본을 게시하는 사이트 서버 데이터베이스 이동  
  새 컴퓨터로 사이트 데이터베이스를 이동하는 경우 다음 단계를 수행하세요.  
 
 1.  **SQL Server Management Studio** 를 사용하여 사이트 서버 데이터베이스에서 데이터베이스 복제본에 대한 게시를 삭제합니다.  
@@ -510,9 +511,4 @@ System Center Configuration Manager 기본 사이트는 데이터베이스 복�
 4.  사이트 데이터베이스 서버에서 데이터베이스 복제본에 대한 게시를 다시 만듭니다. 자세한 내용은 이 항목의 [1단계 - 데이터베이스 복제본을 게시하도록 사이트 데이터베이스 서버 구성](#BKMK_DBReplica_ConfigSiteDB) 를 참조하세요.  
 
 5.  각 데이터베이스 복제 서버에서 데이터베이스 복제본에 대한 구독을 다시 만듭니다. 자세한 내용은 이 항목의 [2단계 - 데이터베이스 복제본 서버 구성](#BKMK_DBReplica_ConfigSrv) 를 참조하십시오.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

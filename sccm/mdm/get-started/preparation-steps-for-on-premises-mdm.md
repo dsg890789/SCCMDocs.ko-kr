@@ -1,5 +1,5 @@
 ---
-title: "준비 단계 | 온-프레미스 MDM | System Center Configuration Manager"
+title: "준비 단계 | Microsoft 문서 | 온-프레미스 MDM"
 description: "System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 사용하여 장치 관리를 준비합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 21bac2eae1aaea5bbd5897fcd4eb2aa11538aac7
+ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
+ms.openlocfilehash: a5c9fa5994f9b7bd13fe53edb6998609852b98ca
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -44,9 +45,4 @@ System Center Configuration Manager 온\-프레미스 모바일 장치 관리를
 -   [System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 위한 장치 등록 설정](../../mdm/get-started/set-up-device-enrollment-on-premises-mdm.md)  
 
      이 작업에서는 사용자에게 컴퓨터 및 장치를 등록할 수 있는 권한을 부여하고, 장치(일반적으로 도메인에 가입되지 않은 장치)에 신뢰할 수 있는 루트 인증서를 설치하여 사이트 시스템 서버에 대한 HTTPS 연결을 허용합니다.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

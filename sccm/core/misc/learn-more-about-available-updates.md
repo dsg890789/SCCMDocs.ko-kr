@@ -1,5 +1,5 @@
 ---
-title: "업데이트에 대한 자세한 내용 | System Center Configuration Manager"
+title: "업데이트에 대한 자세한 정보 | Microsoft 문서"
 ms.custom: na
 ms.date: 10/06/2016
 ms.reviewer: na
@@ -8,7 +8,8 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.assetid: 1fa7d0d9-4bb5-4475-82ff-0d5da4a3da61
 caps.latest.revision: 4
 author: Brenduns
@@ -16,8 +17,9 @@ ms.author: brenduns
 manager: angrobe
 robots: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: ec1528e18ec2831c7b7363ba1e8f0fa9e8a3b82d
-ms.openlocfilehash: 6821fb0ae4fd1ba888b143f9fbec4c7a8d19906c
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: c94b0a9ba5694948ff6f14c568e776de20207b01
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -28,9 +30,4 @@ ms.openlocfilehash: 6821fb0ae4fd1ba888b143f9fbec4c7a8d19906c
 System Center Configuration Manager의 릴리스 버전을 사용하는 경우 [System Center Configuration Manager의 새로운 기능](http://technet.microsoft.com/library/mt622084.aspx)을 참조하세요.  
 
  System Center Configuration Manager의 Technical Preview 버전을 사용하는 경우 [System Center Configuration Manager Technical Preview](http://technet.microsoft.com/library/mt595861.aspx)를 참조하세요.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

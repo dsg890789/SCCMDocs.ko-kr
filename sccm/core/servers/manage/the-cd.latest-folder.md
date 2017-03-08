@@ -1,5 +1,5 @@
 ---
-title: "CD.Latest 폴더 | System Center Configuration Manager"
+title: "CD.Latest 폴더 | Microsoft 문서"
 description: "Configuration Manager 콘솔 내에서 제품 업데이트를 제공하는 새 업데이트 프로세스에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: fc63227aa4345fb58e7efc15abd55071fb33e5d5
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: dcf56f6b82f89e81d636ea920f36133e245cbb1e
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -28,6 +29,8 @@ ms.openlocfilehash: fc63227aa4345fb58e7efc15abd55071fb33e5d5
 System Center Configuration Manager에서는 Configuration Manager 콘솔 내에서 제품 업데이트를 제공하는 새 업데이트 프로세스를 도입합니다. 이처럼 Configuration Manager를 업데이트하는 새로운 방법을 지원하기 위해 업데이트된 버전의 사이트에 대한 Configuration Manager 설치 파일의 복사본이 포함된 **CD.Latest**라는 새 폴더가 생성됩니다.  
 
 업데이트 1606부터 CD.Latest 폴더에는 **Redist** 라는 폴더가 포함되어 있습니다. Redist 폴더에는 설치 프로그램에서 다운로드하고 사용하는 재배포 가능한 파일이 포함되어 있습니다. 이러한 파일은 해당 CD.Latest 폴더에 있는 Configuration Manager 파일의 버전에 대응됩니다. CD.Latest 폴더에서 설치 프로그램을 실행할 때 설치 프로그램의 버전에 대응되는 파일을 사용해야 합니다. 이를 위해 Microsoft에서 새 파일 및 최신 파일을 다운로드하거나, CD.Latest 폴더에 있는 Redist 폴더에서 파일을 사용하도록 설치 프로그램에 지시할 수 있습니다.
+
+그러나 2016년 10월에 릴리스된 기준 버전 1606과 마찬가지로 기준 미디어에는 Redist 폴더가 없습니다. Redist 폴더는 콘솔 내 업데이트를 설치할 때까지 만들어지지 않습니다. 그 동안에는 기준 미디어에서 사이트를 설치할 때 사용한 Redist 폴더를 사용합니다.  
 
 > [!TIP]
 > 버전 1606을 아직 설치하지 않은 경우 사용 중인 재배포 가능 패키지 파일이 최신인지 확인해야 합니다. 재배포 가능 패키지 파일을 최근에 다운로드하지 않은 경우 설치 프로그램을 통해 Microsoft에서 다운로드하도록 계획하세요.   
@@ -58,9 +61,4 @@ CD.Latest 폴더의 소스 파일은 다음에 대해 지원됩니다.
 >   
 >  -   새 계층을 위한 새 사이트 설치  
 >  -   Microsoft System Center 2012 Configuration Manager 사이트를 System Center Configuration Manager로 업그레이드
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

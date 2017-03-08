@@ -1,5 +1,5 @@
 ---
-title: "계층 유지 관리 도구 | System Center Configuration Manager"
+title: "계층 구조 유지 관리 도구 | Microsoft 문서"
 description: "계층 유지 관리 도구의 기능과 사용 이유를 이해합니다. 명령줄 옵션 참조를 포함합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: e9c386d3f45e29de4ddfcfd3807eb96e3544a3b2
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: f3ddeaadfb1418aeeaacdca47768600c86b59083
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -93,7 +94,7 @@ Service Manager를 사용하여 사이트 구성 요소 관리자 서비스를 �
 
 이 옵션을 사용하여 preinst.exe를 실행한 후에는 &lt;*사이트 코드*>.CT7 파일을 복구하는 사이트의 ...\Inboxes\hman.box 폴더(hman.box\pubkey가 아님)로 수동 복사합니다.  
 
-##  <a name="a-namebkmkmanuallyexchangekeysa-manually-exchange-public-keys-between-sites"></a><a name="BKMK_ManuallyExchangeKeys"></a> 사이트 간에 수동으로 공개 키 교환  
+##  <a name="BKMK_ManuallyExchangeKeys"></a> 사이트 간에 수동으로 공개 키 교환  
 기본적으로 Configuration Manager 사이트에는 **보안 키 교환 필요** 옵션이 사용됩니다. 보안 키 교환이 필요할 때 사이트 간의 첫 공개 키 교환을 수동으로 수행해야 하는 두 가지 상황이 있습니다.  
 
 -   Configuration Manager를 지원하도록 Active Directory 스키마를 확장하지 않은 경우  
@@ -124,9 +125,4 @@ Service Manager를 사용하여 사이트 구성 요소 관리자 서비스를 �
 3.  /keyforchild 옵션은 시스템 드라이브 루트에 있는 **&lt;사이트 코드\>.CT5** 파일에 상위 사이트의 공개 키를 배치합니다.  
 
 4.  **&lt;사이트 코드\>.CT5** 파일을 하위 사이트의 **&lt;설치 디렉터리\>\inboxes\hman.box** 디렉터리로 이동합니다.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

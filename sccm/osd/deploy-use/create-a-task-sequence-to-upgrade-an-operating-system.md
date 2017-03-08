@@ -1,5 +1,5 @@
 ---
-title: "운영 체제를 업그레이드하는 작업 순서 만들기 | Configuration Manager"
+title: "운영 체제를 업그레이드하는 작업 순서 만들기 | Microsoft 문서"
 description: "System Center Configuration Manager에서 작업 순서를 사용하여 Windows 7 이상 운영 체제를 Windows 10으로 자동으로 업그레이드할 수 있습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: fe70a3bfddcc0638a27eccb04324c4e6e2ace1d4
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 32af7da62bfe767a21a891338bd778ebf45f2685
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -27,7 +28,7 @@ ms.openlocfilehash: fe70a3bfddcc0638a27eccb04324c4e6e2ace1d4
 
 System Center Configuration Manager에서 작업 순서를 사용하여 대상 컴퓨터의 Windows 7 이상 운영 체제를 Windows 10으로 자동으로 업그레이드할 수 있습니다. 대상 컴퓨터에 설치할 운영 체제 이미지 및 그 밖의 추가 콘텐츠(예: 설치하려는 응용 프로그램 또는 소프트웨어 업데이트)를 참조하는 작업 순서를 만듭니다. 운영 체제를 업그레이드하는 작업 순서는 [최신 버전으로 Windows 업그레이드](upgrade-windows-to-the-latest-version.md) 시나리오의 일부입니다.  
 
-##  <a name="a-namebkmkupgradeosa-create-a-task-sequence-to-upgrade-an-operating-system"></a><a name="BKMK_UpgradeOS"></a> 운영 체제를 업그레이드하는 작업 순서 만들기  
+##  <a name="BKMK_UpgradeOS"></a> 운영 체제를 업그레이드하는 작업 순서 만들기  
  컴퓨터의 운영 체제를 Windows 10으로 업그레이드하려면 작업 순서 만들기 마법사에서 작업 순서를 만들고 **업그레이드 패키지에서 운영 체제 업그레이드** 를 선택합니다. 마법사는 운영 체제를 업그레이드하고, 소프트웨어 업데이트를 적용하고, 응용 프로그램을 설치하는 단계를 추가합니다. 작업 순서를 만들려면 먼저 다음이 준비되어야 합니다.  
 
 -   **필수**  
@@ -91,9 +92,4 @@ System Center Configuration Manager에서 작업 순서를 사용하여 대상 �
 
 ## <a name="folder-and-files-removed-after-computer-restart"></a>컴퓨터 다시 시작 후 폴더 및 파일 제거됨  
  운영 체제를 Windows 10으로 업그레이드하는 작업 순서와 작업 순서의 다른 모든 단계가 완료되어도 컴퓨터를 다시 시작하기 전에는 사후 처리 및 롤백 스크립트가 제거되지 않습니다.  이 스크립트 파일에는 중요한 정보가 들어 있지 않습니다.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

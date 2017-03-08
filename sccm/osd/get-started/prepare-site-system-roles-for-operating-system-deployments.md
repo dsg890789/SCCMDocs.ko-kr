@@ -1,5 +1,5 @@
 ---
-title: "운영 체제 배포를 위한 사이트 시스템 역할 준비 | Configuration Manager"
+title: "운영 체제 배포에 대해 사이트 시스템 역할 준비 | Microsoft 문서"
 description: "System Center Configuration Manager에서 운영 체제를 배포하기 전에 사이트 시스템 역할을 구성합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: a9e682c855d5e1fb26f772b2af5066280e01851f
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 1069a18eecbc5f53b74ad89e166e6f2c7b180693
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -28,12 +29,12 @@ ms.openlocfilehash: a9e682c855d5e1fb26f772b2af5066280e01851f
 
 System Center Configuration Manager에서 운영 체제를 배포하려면 먼저 특정 구성과 고려 사항을 요구하는 다음과 같은 사이트 시스템 역할을 준비해야 합니다.
 
-##  <a name="a-namebkmkdistributionpointsa-distribution-points"></a><a name="BKMK_DistributionPoints"></a> 배포 지점  
+##  <a name="BKMK_DistributionPoints"></a> 배포 지점  
  배포 지점 사이트 시스템 역할에는 클라이언트가 다운로드하는 원본 파일(예: 응용 프로그램 콘텐츠, 소프트웨어 업데이트, 운영 체제 이미지 및 부팅 이미지)이 포함됩니다. 대역폭, 제한 및 예약 옵션을 사용하여 콘텐츠 배포를 제어할 수 있습니다.  
 
  컴퓨터에 대한 운영 체제 배포를 지원할 만큼 충분한 배포 지점이 있어야 하고, 계층 구조에서 이러한 배포 지점의 배치를 계획해야 합니다. 이 계획 정보는 [콘텐츠 및 콘텐츠 인프라 관리](../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)에 대부분 나와 있습니다. 그러나 각 운영 체제 배포에 따라 배포 지점을 계획할 때 추가로 고려할 몇 가지 사항이 있습니다.  
 
-###  <a name="a-namebkmkadditionalplanninga-additional-planning-considerations-for-distribution-points"></a><a name="BKMK_AdditionalPlanning"></a> 배포 지점을 계획할 때 추가로 고려할 사항  
+###  <a name="BKMK_AdditionalPlanning"></a> 배포 지점을 계획할 때 추가로 고려할 사항  
  배포 지점을 계획할 때 추가로 고려할 사항은 다음과 같습니다.  
 
 -   **원치 않는 운영 체제 배포를 방지하는 방법**  
@@ -54,7 +55,7 @@ System Center Configuration Manager에서 운영 체제를 배포하려면 먼�
 
      배포 지점에 운영 체제를 배포할 수 있지만 다른 배포 지점에서 운영 체제 이미지를 받아야 합니다.  
 
-###  <a name="a-namebkmkpxedistributionpointa-configuring-distribution-points-to-accept-pxe-requests"></a><a name="BKMK_PXEDistributionPoint"></a> PXE 요청을 수락하도록 배포 지점 구성  
+###  <a name="BKMK_PXEDistributionPoint"></a> PXE 요청을 수락하도록 배포 지점 구성  
  PXE 부팅 요청을 만드는 Configuration Manager 클라이언트에 운영 체제를 배포하려면 PXE 요청을 수락하도록 하나 이상의 배포 지점을 구성해야 합니다. 구성하고 나면 배포 지점에서 PXE 부팅 요청에 응답하고 수행해야 할 적절한 배포 작업을 결정합니다.
 
 > [!IMPORTANT]  
@@ -97,7 +98,7 @@ System Center Configuration Manager에서 운영 체제를 배포하려면 먼�
 
 11. **확인** 을 클릭하여 배포 지점의 속성을 업데이트합니다.  
 
-###  <a name="a-namebkmkramdisktftpa-customize-the-ramdisk-tftp-block-size-and-window-size-on-pxe-enabled-distribution-points"></a><a name="BKMK_RamDiskTFTP"></a> PXE 사용 배포 지점에서 RamDisk TFTP 블록 크기 및 창 크기 사용자 지정  
+###  <a name="BKMK_RamDiskTFTP"></a> PXE 사용 배포 지점에서 RamDisk TFTP 블록 크기 및 창 크기 사용자 지정  
 RamDisk TFTP 블록 크기를 사용자 지정할 수 있으며 Configuration Manager 버전 1606부터는 PXE를 사용하는 배포 지점에 대한 창 크기를 사용자 지정할 수 있습니다. 네트워크를 사용자 지정한 경우 블록 또는 창 크기가 너무 커서 시간 초과 오류로 인해 부팅 이미지 다운로드가 실패할 수 있습니다. RamDisk TFTP 블록 크기 및 창 크기 사용자 지정을 통해 PXE를 사용하여 특정 네트워크 요구 사항을 충족하는 경우 TFTP 트래픽을 최적화할 수 있습니다.   
 환경에서 사용자 지정된 설정을 테스트하여 가장 효율적인 설정을 결정해야 합니다.  
 
@@ -133,7 +134,7 @@ RamDisk TFTP 블록 크기를 사용자 지정할 수 있으며 Configuration Ma
  기본값은 4096(4k)입니다.  
 
 
-###  <a name="a-namebkmkdpmulticasta-configure-distribution-points-to-support-multicast"></a><a name="BKMK_DPMulticast"></a> 멀티캐스트를 지원하도록 배포 지점 구성  
+###  <a name="BKMK_DPMulticast"></a> 멀티캐스트를 지원하도록 배포 지점 구성  
  멀티캐스트는 여러 클라이언트가 동시에 같은 운영 체제 이미지를 다운로드할 수 있는 경우 배포 지점에서 사용할 수 있는 네트워크 최적화 방법입니다. 멀티캐스트를 사용할 경우 여러 컴퓨터가 배포 지점에서 멀티캐스트되는 운영 체제 이미지를 동시에 다운로드할 수 있으며, 배포 지점은 개별 연결을 통해 데이터 복사본을 각 클라이언트에 전송하지 않습니다. 멀티캐스트를 지원하도록 하나 이상의 배포 지점을 구성해야 합니다. 자세한 내용은 [멀티캐스트를 사용하여 네트워크를 통해 Windows 배포](../deploy-use/use-multicast-to-deploy-windows-over-the-network.md)를 참조하세요.  
 
  운영 체제를 배포하기 전에 멀티캐스트를 지원하도록 배포 지점을 구성해야 합니다. 멀티캐스트를 지원하도록 기존 배포 지점을 수정하려면 다음 절차를 따르십시오. 새로운 배포 지점을 설치하는 방법에 대한 자세한 내용은 [배포 지점 설치 및 구성](../../core/servers/deploy/configure/install-and-configure-distribution-points.md)을 참조하세요.
@@ -176,7 +177,7 @@ RamDisk TFTP 블록 크기를 사용자 지정할 수 있으며 Configuration Ma
 
 6.  **확인**을 클릭합니다.  
 
-##  <a name="a-namebkmkstatemigrationpointsa-state-migration-point"></a><a name="BKMK_StateMigrationPoints"></a> 상태 마이그레이션 지점  
+##  <a name="BKMK_StateMigrationPoints"></a> 상태 마이그레이션 지점  
  상태 마이그레이션 지점에서는 한 컴퓨터에서 캡처된 후 다른 컴퓨터에서 복원된 사용자 상태 데이터를 저장합니다. 그러나 대상 컴퓨터에서 운영 체제를 새로 고치는 배포와 같이 동일한 컴퓨터에서 운영 체제 배포에 대한 사용자 설정을 캡처하는 경우에는 하드 링크를 사용하여 동일한 컴퓨터에 데이터를 저장할지 여부를 선택하거나 상태 마이그레이션 지점을 사용할 수 있습니다. 일부 컴퓨터 배포에 대해 상태 저장소를 만들 경우 Configuration Manager에서 이 상태 저장소와 대상 컴퓨터 간에 자동으로 연결을 만듭니다. 상태 마이그레이션 지점을 계획할 경우 다음 요소를 고려하세요.  
 
 ### <a name="user-state-size"></a>사용자 상태 크기  
@@ -219,9 +220,4 @@ RamDisk TFTP 블록 크기를 사용자 지정할 수 있으며 Configuration Ma
 -   상태 마이그레이션 지점이 사용자 상태 데이터를 복원하는 요청에만 응답하도록 할지 여부. 이 옵션을 사용하면 상태 마이그레이션 지점을 사용하여 사용자 상태 데이터를 저장할 수 없습니다.  
 
  사이트 시스템 역할을 설치하는 단계는 [사이트 시스템 역할 추가](../../core/servers/deploy/configure/add-site-system-roles.md)를 참조하세요.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

@@ -1,8 +1,8 @@
 ---
-title: "Windows 장치를 새 버전으로 업그레이드 | System Center Configuration Manager"
+title: "Windows 장치를 최신 버전으로 업그레이드 | Microsoft 문서"
 description: "Windows 10 Desktop, Windows 10 Mobile 또는 Windows 10 Holographic을 실행하는 장치를 최신 버전으로 자동으로 업그레이드합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 11/18/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 7ee088f6da266742e7836499a7f0e072bf446a62
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: f14dfb77be7b53e74d53e0c1fc7e7f1731952d40
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -35,12 +36,13 @@ System Center Configuration Manager **버전 업그레이드 정책**을 사용�
 - Windows 10 Holographic
 
 지원되는 업그레이드 경로는 다음과 같습니다.
+
 - Windows 10 Pro에서 Windows 10 Enterprise로 업그레이드
 - Windows 10 Home에서 Windows 10 Education으로 업그레이드
 - Windows 10 Mobile에서 Windows 10 Mobile Enterprise로 업그레이드
 - Windows 10 Holographic Pro에서 Windows 10 Holographic Enterprise로 업그레이드
 
-장치는 Microsoft Intune에 등록되어야 합니다. 이 기능은 현재 Configuration Manager 클라이언트 소프트웨어를 실행하는 PC 또는 온-프레미스 MDM에서 관리되는 PC와 호환되지 않습니다.
+장치를 Microsoft Intune에 등록하거나 Configuration Manager 클라이언트 소프트웨어를 실행해야 합니다. 이 정책은 현재 온-프레미스 MDM에서 관리되는 PC와 호환되지 않습니다.
 
 ## <a name="before-you-start"></a>시작하기 전에  
  장치를 최신 버전으로 업그레이드하기 전에 다음 중 하나가 있어야 합니다.  
@@ -78,7 +80,7 @@ System Center Configuration Manager **버전 업그레이드 정책**을 사용�
 
 6.  마법사를 완료합니다.  
 
- 새 정책이 **자산 및 준수** 작업 영역의 **Windows 10 버전 업그레이드** 노드에 표시됩니다.  
+새 정책이 **자산 및 준수** 작업 영역의 **Windows 10 버전 업그레이드** 노드에 표시됩니다.  
 
 ## <a name="deploy-the-edition-upgrade-policy"></a>버전 업그레이드 정책 배포  
 
@@ -86,14 +88,9 @@ System Center Configuration Manager **버전 업그레이드 정책**을 사용�
 
 3.  배포할 Windows 10 버전 업그레이드 정책을 선택한 다음 **홈** 탭의 **배포** 그룹에서 **배포**를 클릭합니다.  
 
-4.  **Windows 10 버전 업그레이드 배포** 대화 상자에서 정책을 배포할 사용자 또는 장치 컬렉션과 정책 평가 일정을 선택한 다음 **확인**을 클릭합니다.  
+4.  **Windows 10 버전 업그레이드 배포** 대화 상자에서 정책을 배포할 컬렉션과 정책 평가 일정을 선택한 다음 **확인**을 클릭합니다. Configuration Manager 클라이언트를 사용하여 관리되는 PC의 경우 장치 컬렉션에 정책을 배포해야 합니다. Intune에 등록된 PC의 경우 사용자 또는 장치 컬렉션에 정책을 배포할 수 있습니다. 
 
- **모니터링** 작업 영역의 **배포** 노드에서 방금 만든 배포를 모니터링할 수 있습니다.  
+**모니터링** 작업 영역의 **배포** 노드에서 방금 만든 배포를 모니터링할 수 있습니다.  
 
- 정책이 대상 Windows PC에 도달하면 2시간 내에 PC가 다시 시작되어 업그레이드를 적용합니다. 정책을 배포할 모든 사용자에게 알리거나 사용자의 근무 시간 외에 정책이 실행되도록 예약해야 합니다.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
+ 정책이 대상 Windows PC에 도달하고 평가되면 2시간 내에 PC가 다시 시작되어 업그레이드를 적용합니다. 정책을 배포할 모든 사용자에게 알리거나 사용자의 근무 시간 외에 정책이 실행되도록 예약해야 합니다.
 

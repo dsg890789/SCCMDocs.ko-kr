@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager 랩 설정"
+title: "System Center Configuration Manager 랩 설정 | Microsoft 문서"
 description: "시뮬레이트된 실제 작업을 사용하여 Configuration Manager를 평가하기 위한 랩을 설정합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: ea084f30a1a6ec731e97cec46448d0ffbfca42e0
+ms.sourcegitcommit: 3bf44f850722afdb8dfe5922c8ceff11c9b56d08
+ms.openlocfilehash: 36e5307449bd843156307598ccdde717b4b59be3
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -28,8 +29,8 @@ ms.openlocfilehash: ea084f30a1a6ec731e97cec46448d0ffbfca42e0
 
 이 항목의 지침을 따라 시뮬레이트된 실제 작업을 사용하여 Configuration Manager 평가를 위해 랩을 설정할 수 있습니다.  
 
-##  <a name="a-namebkmklabcorea-core-components"></a><a name="BKMK_LabCore"></a> 핵심 구성 요소  
- System Center Configuration Manager에 대해 환경을 설정하려면 일부 핵심 구성 요소가 Configuration Manager 설치를 지원해야 합니다.  
+##  <a name="BKMK_LabCore"></a> 핵심 구성 요소  
+ System Center Configuration Manager에 대해 환경을 설정하려면 일부 핵심 구성 요소가 Configuration Manager 설치를 지원해야 합니다.    
 
 -   **랩 환경에서는 Windows Server 2012 R2를 사용**하며, 여기에 System Center Configuration Manager를 설치합니다.  
 
@@ -81,7 +82,7 @@ ms.openlocfilehash: ea084f30a1a6ec731e97cec46448d0ffbfca42e0
 
 이러한 구성 요소를 모두 설치한 후에는 Configuration Manager에 대한 Windows 환경을 구성하기 위해 다음과 같은 추가 단계를 수행해야 합니다.  
 
-###  <a name="a-namebkmklabadprepa-prepare-active-directory-content-for-the-lab"></a><a name="BKMK_LabADPrep"></a> 랩에 대한 Active Directory 콘텐츠 준비  
+###  <a name="BKMK_LabADPrep"></a> 랩에 대한 Active Directory 콘텐츠 준비  
  이 랩에 대해 보안 그룹을 만든 다음 도메인 사용자를 추가합니다.  
 
 -   보안 그룹: **Evaluation**  
@@ -96,7 +97,7 @@ ms.openlocfilehash: ea084f30a1a6ec731e97cec46448d0ffbfca42e0
 
 다음 단계는 Configuration Manager 클라이언트가 사이트 리소스를 찾기 위해 Active Directory Domain Services를 쿼리하도록 하는 데 필요하며 다음 절차에 나열됩니다.  
 
-###  <a name="a-namebkmkcreatesysmgmtlaba-create-the-system-management-container"></a><a name="BKMK_CreateSysMgmtLab"></a> 시스템 관리 컨테이너 만들기  
+###  <a name="BKMK_CreateSysMgmtLab"></a> 시스템 관리 컨테이너 만들기  
  Configuration Manager에서는 스키마를 확장할 때 Active Directory Domain Services에서 필요한 시스템 관리 컨테이너가 자동으로 만들어지지 않습니다. 따라서 랩을 위해 이를 만듭니다. 이 단계를 수행하려면 [ADSI 편집 설치](https://technet.microsoft.com/en-us/library/cc773354\(WS.10\).aspx#BKMK_InstallingADSIEdit)가 필요합니다.  
 
  Active Directory Domain Services의 **시스템** 컨테이너에 대해 **모든 자식 개체 만들기** 권한이 있는 계정으로 로그온해야 합니다.  
@@ -113,7 +114,7 @@ ms.openlocfilehash: ea084f30a1a6ec731e97cec46448d0ffbfca42e0
 
 5.  **마침** 을 클릭하여 절차를 완료합니다.  
 
-###  <a name="a-namebkmksetsecpermlaba-set-security-permissions-for-the-system-management-container"></a><a name="BKMK_SetSecPermLab"></a> 시스템 관리 컨테이너에 대한 보안 권한 설정  
+###  <a name="BKMK_SetSecPermLab"></a> 시스템 관리 컨테이너에 대한 보안 권한 설정  
  사이트 정보를 컨테이너에 게시하는 데 필요한 권한을 사이트 서버의 컴퓨터 계정에 부여합니다. 이 작업에 대해서도 ADSI 편집을 사용합니다.  
 
 > [!IMPORTANT]  
@@ -133,7 +134,7 @@ ms.openlocfilehash: ea084f30a1a6ec731e97cec46448d0ffbfca42e0
 
      이 절차에 대한 자세한 내용은 [System Center Configuration Manager에 대한 Active Directory 스키마 확장](../../core/plan-design/network/extend-the-active-directory-schema.md)을 참조하세요.  
 
-###  <a name="a-namebkmkextadschlaba-extend-the-active-directory-schema-using-extadschexe"></a><a name="BKMK_ExtADSchLab"></a> extadsch.exe를 사용하여 Active Directory 스키마 확장  
+###  <a name="BKMK_ExtADSchLab"></a> extadsch.exe를 사용하여 Active Directory 스키마 확장  
  이 랩에 대해 Active Directory 스키마를 확장하면 최소한의 관리 오버헤드로 모든 Configuration Manager 기능을 사용할 수 있습니다. Active Directory 스키마 확장은 포리스트당 한 번만 수행하는 포리스트 전체 구성입니다. 스키마를 영구적으로 확장하면 기본 Active Directory 구성에서 클래스 및 특성의 집합이 수정됩니다. 이 작업은 되돌릴 수 없습니다. 스키마를 확장하면 Configuration Manager가 랩 환경에서 가장 효과적으로 기능을 수행할 수 있게 하는 구성 요소에 액세스할 수 있습니다.  
 
 > [!IMPORTANT]  
@@ -151,7 +152,7 @@ ms.openlocfilehash: ea084f30a1a6ec731e97cec46448d0ffbfca42e0
 
      이 절차에 대한 자세한 내용은 [System Center Configuration Manager에 대한 Active Directory 스키마 확장](../../core/plan-design/network/extend-the-active-directory-schema.md)을 참조하세요.  
 
-###  <a name="a-namebkmkothertaskslaba-other-required-tasks"></a><a name="BKMK_OtherTasksLab"></a> 기타 필수 작업  
+###  <a name="BKMK_OtherTasksLab"></a> 기타 필수 작업  
  또한 설치하기 전에 다음 작업도 완료해야 합니다.  
 
  **모든 다운로드를 저장할 폴더 만들기**  
@@ -164,7 +165,7 @@ ms.openlocfilehash: ea084f30a1a6ec731e97cec46448d0ffbfca42e0
 
 ##### <a name="to-install-net-and-activate-windows-communication-foundation"></a>.NET을 설치하고 Windows Communication Foundation을 활성화하려면  
 
-1.  **Server Manager**를 연 다음 **관리**로 이동합니다.  **역할 및 기능 추가** 를 클릭하여 **역할 및 기능 추가 Wizard.**를 엽니다.  
+1.  **Server Manager**를 연 다음 **관리**로 이동합니다. **역할 및 기능 추가** 를 클릭하여 **역할 및 기능 추가 Wizard.**를 엽니다.  
 
 2.  **시작하기 전에** 패널에서 제공된 정보를 검토하고 **다음**을 클릭합니다.  
 
@@ -340,11 +341,11 @@ IIS(인터넷 정보 서비스)는 웹에서 서비스를 호스트하는 데 �
 
 2.  **기능 보기** 가 **홈** 화면의 맨 아래에서 선택되었는지 확인합니다. **IIS** 로 이동하고 **요청 필터링**을 엽니다.  
 
-3.   **작업** 창에서 **파일 이름 확장명 허용...**을 클릭합니다.  
+3.  **작업** 창에서 **파일 이름 확장명 허용...**을 클릭합니다.  
 
 4.  대화 상자에 **.msi** 을 입력하고 **확인**을 클릭합니다.  
 
-###  <a name="a-namebkmkinstallcmlaba-installing-configuration-manager"></a><a name="BKMK_InstallCMLab"></a> 구성 관리자 설치  
+###  <a name="BKMK_InstallCMLab"></a> 구성 관리자 설치  
 클라이언트를 직접 관리하기 위해 [기본 사이트를 사용할 시기 결정](../../core/plan-design/hierarchy/design-a-hierarchy-of-sites.md#BKMK_ChoosePriimary)을 만듭니다. 그러면 랩 환경에서 잠재적인 장치의 [사이트 시스템 배율](/sccm/core/plan-design/configs/size-and-scale-numbers)에 대한 관리를 지원할 수 있습니다.  
 또한 이 과정에서 계속 평가 장치를 관리하는 데 사용할 Configuration Manager 콘솔도 설치합니다.  
 
@@ -370,7 +371,7 @@ IIS(인터넷 정보 서비스)는 웹에서 서비스를 호스트하는 데 �
     |15단계: **클라이언트 통신 설정**|**모든 사이트 시스템 역할이 클라이언트로부터의 HTTPS 통신만 수락** 이 선택되지 않은 상태인지 확인합니다.|  
     |16단계: **사이트 시스템 역할**|FQDN을 입력하고 **모든 사이트 시스템 역할이 클라이언트로부터의 HTTPS 통신만 수락** 이 여전히 선택 취소된 상태인지 확인합니다.|  
 
-###  <a name="a-namebkmkenablepublaba-enable-publishing-for-the-configuration-manager-site"></a><a name="BKMK_EnablePubLab"></a> Configuration Manager 사이트에 대해 게시 사용  
+###  <a name="BKMK_EnablePubLab"></a> Configuration Manager 사이트에 대해 게시 사용  
 각 Configuration Manager 사이트에서는 자체 사이트 관련 정보를 Active Directory 스키마의 해당 도메인 파티션 내 System Management 컨테이너에 게시합니다. 이 트래픽을 처리하려면 Active Directory와 Configuration Manager 간의 통신에 대한 양방향 채널이 열려 있어야 합니다. 또한 Active Directory 및 네트워크 인프라의 특정 구성 요소를 확인하려면 포리스트 검색도 사용하도록 설정합니다.  
 
 ##### <a name="to-configure-active-directory-forests-for-publishing"></a>게시를 위한 Active Directory 포리스트를 구성하려면:  
@@ -381,7 +382,7 @@ IIS(인터넷 정보 서비스)는 웹에서 서비스를 호스트하는 데 �
 
 3.  **Active Directory 포리스트 검색** 을 선택하고 **속성**을 클릭합니다.  
 
-4.  **속성** 대화 상자에서 **Active Directory 포리스트 검색 사용**을 선택합니다. 이 옵션이 활성화되면 **Active Directory 사이트 경계가 검색되면 자동으로 만들기**를 선택합니다.  **가능한 한 빨리 전체 검색을 실행하시겠습니까?** **예**를 클릭합니다.  
+4.  **속성** 대화 상자에서 **Active Directory 포리스트 검색 사용**을 선택합니다. 이 옵션이 활성화되면 **Active Directory 사이트 경계가 검색되면 자동으로 만들기**를 선택합니다. **가능한 한 빨리 전체 검색을 실행하시겠습니까?** **예**를 클릭합니다.  
 
 5.  화면 맨 위의 **검색 방법** 그룹에서 **지금 포리스트 검색 실행**을 클릭한 다음 사이드바에서 **Active Directory 포리스트** 로 이동합니다. Active Directory 포리스트가 검색된 포리스트 목록에 표시되어야 합니다.  
 
@@ -398,9 +399,4 @@ IIS(인터넷 정보 서비스)는 웹에서 서비스를 호스트하는 데 �
 3.  **관리** 작업 영역에서 **Active Directory 포리스트**를 클릭합니다.  
 
 4.  사이트 속성의 **게시** 탭에서 연결된 포리스트를 선택한 다음 **확인** 을 클릭하여 구성을 저장합니다.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

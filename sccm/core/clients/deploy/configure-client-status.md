@@ -1,5 +1,5 @@
 ---
-title: "클라이언트 상태 구성 | System Center Configuration Manager"
+title: "클라이언트 상태 구성 | Microsoft 문서"
 description: "System Center Configuration Manager에서 클라이언트 상태 설정을 선택합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -13,12 +13,13 @@ ms.topic: get-started-article
 ms.assetid: a2275ba2-c83d-43e7-90ed-418963a707fe
 caps.latest.revision: 6
 caps.handback.revision: 0
-author: Mtillman
-ms.author: mtillman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 98d78ff0ef641baeef1323243f8f389fa5e95057
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: 22cc286baa72d3e356a07b91ee0a1be646fa8a9e
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -28,7 +29,7 @@ ms.openlocfilehash: 98d78ff0ef641baeef1323243f8f389fa5e95057
 
 System Center Configuration Manager 클라이언트 상태를 모니터링하고 발견되는 문제를 재구성하려면 먼저 사이트를 구성하여 클라이언트를 비활성으로 표시하는 데 사용할 매개 변수를 지정하고 클라이언트 활동이 지정된 임계값 미만으로 떨어질 경우 경고하는 옵션을 구성해야 합니다. 또한 컴퓨터에서 클라이언트 상태를 통해 발견되는 문제를 자동으로 해결하지 않도록 설정할 수 있습니다.  
 
-##  <a name="a-namebkmk1a-to-configure-client-status"></a><a name="BKMK_1"></a> 클라이언트 상태를 구성하려면  
+##  <a name="BKMK_1"></a> 클라이언트 상태를 구성하려면  
 
 1.  Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.  
 
@@ -55,7 +56,7 @@ System Center Configuration Manager 클라이언트 상태를 모니터링하고
 
 5.  **확인** 을 클릭하여 속성을 저장하고 **클라이언트 상태 설정 속성** 대화 상자를 닫습니다.  
 
-##  <a name="a-namebkmkschedulea-to-configure-the-schedule-for-client-status"></a><a name="BKMK_Schedule"></a> 클라이언트 상태에 대한 일정을 구성하려면  
+##  <a name="BKMK_Schedule"></a> 클라이언트 상태에 대한 일정을 구성하려면  
 
 1.  Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.  
 
@@ -66,7 +67,7 @@ System Center Configuration Manager 클라이언트 상태를 모니터링하고
     > [!NOTE]  
     >  클라이언트 상태 업데이트 일정을 변경하는 경우 이전에 구성된 일정에 따라 예약된 다음 번 클라이언트 상태 업데이트까지 업데이트가 적용되지 않습니다.  
 
-##  <a name="a-namebkmk2a-to-configure-alerts-for-client-status"></a><a name="BKMK_2"></a> 클라이언트 상태에 대한 경고를 구성하려면  
+##  <a name="BKMK_2"></a> 클라이언트 상태에 대한 경고를 구성하려면  
 
 1.  Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.  
 
@@ -94,7 +95,7 @@ System Center Configuration Manager 클라이언트 상태를 모니터링하고
 
 7.  **확인**을 클릭하여 *&lt;컬렉션 이름\>***속성** 대화 상자를 닫습니다.  
 
-##  <a name="a-namebkmk3a-to-exclude-computers-from-automatic-remediation"></a><a name="BKMK_3"></a> 컴퓨터를 자동 문제 해결에서 제외하려면  
+##  <a name="BKMK_3"></a> 컴퓨터를 자동 문제 해결에서 제외하려면  
 
 1.  자동 문제 해결을 사용하지 않도록 설정할 클라이언트 컴퓨터에서 레지스트리 편집기를 엽니다.  
 
@@ -112,9 +113,4 @@ System Center Configuration Manager 클라이언트 상태를 모니터링하고
 4.  레지스트리 편집기를 닫습니다.  
 
  또한 CCMSetup **NotifyOnly** 설치 속성을 사용하여 클라이언트를 설치함으로써 자동 문제 해결에서 클라이언트를 제외할 수도 있습니다. 클라이언트 설치 속성에 대한 자세한 내용은 [System Center Configuration Manager의 클라이언트 설치 속성 정보](../../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

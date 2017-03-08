@@ -1,5 +1,5 @@
 ---
-title: "데이터 동기화 | Microsoft Operations Management Suite | System Center Configuration Manager"
+title: "데이터 동기화 | Microsoft 문서 | Microsoft Operations Management Suite "
 description: "System Center Configuration Manager의 데이터를 Microsoft Operations Management Suite에 동기화합니다."
 ms.custom: na
 ms.date: 10/13/2016
@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 33bcf8b3-a6b6-4fc9-bb59-70a9621b2b0d
 caps.latest.revision: 9
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0fbce476b8a9b91a88354fb4abfadfd2526ca5e8
-ms.openlocfilehash: 5786f0734ce186601f5173003b9b133ed6ae8b11
+ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
+ms.openlocfilehash: 0d8944bef9578a41b529a2d53b5a4d0094eaa21c
+ms.lasthandoff: 12/16/2016
 
 ---
 # <a name="sync-data-from-configuration-manager-to-the-microsoft-operations-management-suite"></a>Configuration Manager의 데이터를 Microsoft Operations Management Suite에 동기화합니다.
@@ -51,9 +52,4 @@ Configuration Manager를 OMS에 연결한 후 컬렉션을 추가하거나 제�
 2.  이 페이지에는 다음 두 개의 탭이 있습니다.
   * **Azure Active Directory** 탭에는 **테넌트**, **클라이언트 ID**, **클라이언트 비밀 키 만료**가 표시되며, 만료된 경우 **클라이언트 비밀 키**를 **확인**할 수 있습니다.
   * **OMS 연결 속성** 탭에는 **Azure 구독**, **Azure 리소스 그룹**, **Operations Management Suite 작업 영역**과 **Operations Management Suite에서 데이터를 가져올 수 있는 장치 컬렉션** 목록이 표시됩니다. **추가** 및 **제거** 단추를 사용하여 허용되는 컬렉션을 수정합니다.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

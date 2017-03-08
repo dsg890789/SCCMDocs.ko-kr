@@ -1,5 +1,5 @@
 ---
-title: "Wi-Fi, VPN, 메일 및 인증서 프로필 배포 | System Center Configuration Manager"
+title: "Wi-Fi, VPN, 메일 및 인증서 프로필 배포 | Microsoft 문서"
 description: "System Center Configuration Manager에서 Wi-Fi, VPN, 메일 및 인증서 프로필을 배포하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 7e13c52c135850b1f449cf91bc81425208d16551
+ms.sourcegitcommit: c2e3aef41e9a890d136039f85777ab07284e5c27
+ms.openlocfilehash: 70372d5df13034b48f3e43b766776442f1be5823
+ms.lasthandoff: 12/16/2016
 
 ---
 # <a name="deploy-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager의 프로필 배포
@@ -40,10 +41,10 @@ ms.openlocfilehash: 7e13c52c135850b1f449cf91bc81425208d16551
 > -   [System Center Configuration Manager에서 인증서 프로필을 만드는 방법](create-certificate-profiles.md)    
 
 > [!IMPORTANT]  
->  Wi-Fi 프로필 배포를 제거해도 클라이언트 장치에서 Wi-Fi 프로필이 제거되지 않습니다. 장치에서 프로필을 제거하려면 수동으로 제거해야 합니다.
+>  VPN 프로필 배포를 제거할 경우 클라이언트 장치에서는 VPN 프로필이 제거되지 않습니다. 장치에서 프로필을 제거하려면 수동으로 제거해야 합니다.
 >   
 
-## <a name="deploying-profiles"></a>프로필 배포  
+## <a name="deploying--profiles"></a>프로필 배포  
 
 
 1.  System Center Configuration Manager 콘솔에서 **자산 및 준수**를 선택합니다.  
@@ -72,9 +73,4 @@ ms.openlocfilehash: 7e13c52c135850b1f449cf91bc81425208d16551
 [System Center Configuration Manager에서 Wi-Fi, VPN 및 메일 프로필을 모니터링하는 방법](monitor-wifi-email-vpn-profiles.md)
 
 [System Center Configuration Manager에서 인증서 프로필을 모니터링하는 방법](monitor-certificate-profiles.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

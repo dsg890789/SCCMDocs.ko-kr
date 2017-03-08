@@ -1,5 +1,5 @@
 ---
-title: "UNIX/Linux 클라이언트 구성 요소 서비스 및 명령 | System Center Configuration Manager"
+title: "UNIX/Linux 클라이언트 구성 요소 서비스 및 명령 | Microsoft 문서"
 description: "System Center Configuration Manager의 Linux 및 UNIX 클라이언트 구성 요소 서비스 및 명령에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e5a8c79f-5791-49c5-8055-086d742e5559
 caps.latest.revision: 6
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 92ce5cadc1303fea9dbf828d22fa80e837583e32
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: 4a10d3a59aa6417857abc163dd5416f167049f65
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -43,9 +44,4 @@ ms.openlocfilehash: 92ce5cadc1303fea9dbf828d22fa80e837583e32
 |Solaris 11|시작:<br /><br /> **svcadm enable -s svc:/application/management/omiserver**<br /><br /> **svcadm enable -s svc:/application/management/ccmexecd**<br /><br /> 중지:<br /><br /> **svcadm disable -s svc:/application/management/ccmexecd**<br /><br /> **svcadm disable -s svc:/application/management/omiserver**|  
 |AIX|시작:<br /><br /> **startsrc -s omiserver**<br /><br /> **startsrc -s ccmexec**<br /><br /> 중지:<br /><br /> **stopsrc -s ccmexec**<br /><br /> **stopsrc -s omiserver**|  
 |HP-UX|시작: **/sbin/init.d/ccmexecd start**<br /><br /> 중지: **/sbin/init.d/ccmexecd stop**<br /><br /> 다시 시작: **/sbin/init.d/ccmexecd restart**|  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

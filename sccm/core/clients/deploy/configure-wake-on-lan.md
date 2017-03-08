@@ -1,5 +1,5 @@
 ---
-title: "Wake on LAN 구성 | System Center Configuration Manager"
+title: "Wake on LAN 구성 | Microsoft 문서"
 description: "System Center Configuration Manager의 Wake on LAN 설정을 선택합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b475a0c8-85d6-4cc4-b11f-32c0cc98239e
 caps.latest.revision: 7
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: b8274f9da1ec82aebf43115236f2409995a0052b
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: 09f8bc7ee04ff64934030f825a791bc043341963
+ms.lasthandoff: 12/16/2016
 
 ---
 # <a name="how-to-configure-wake-on-lan-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Wake on LAN을 구성하는 방법
@@ -47,7 +48,7 @@ ms.openlocfilehash: b8274f9da1ec82aebf43115236f2409995a0052b
 1. Configuration Manager 콘솔에서 **관리 > 클라이언트 설정**으로 이동합니다.
 2. **기본 클라이언트 설정**을 클릭한 다음 **속성**을 클릭합니다.
 3. **전원 관리**를 선택한 다음 **절전 모드 해제 프록시 사용**에 대해 **예**를 선택합니다.
-4. 검토하고 필요한 경우 다른 절전 모드 해제 프록시 설정을 구성합니다. 이러한 설정에 대한 자세한 내용은 [전원 관리 설정](../../../core/clients/deploy/about-client-settings.md#BKMK_PowMgmtDeviceSettings)을 참조하세요.
+4. 검토하고 필요한 경우 다른 절전 모드 해제 프록시 설정을 구성합니다. 이러한 설정에 대한 자세한 내용은 [전원 관리 설정](../../../core/clients/deploy/about-client-settings.md#power-management)을 참조하세요.
 5. **확인**을 클릭하여 대화 상자를 닫고 **확인**을 클릭하여 기본 클라이언트 설정 대화 상자를 닫습니다.
 
 다음 Wake On LAN 보고서를 사용하여 절전 모드 해제 프록시의 설치와 구성을 모니터링할 수 있습니다.
@@ -57,9 +58,4 @@ ms.openlocfilehash: b8274f9da1ec82aebf43115236f2409995a0052b
 
 > [!TIP]
 > 절전 모드 해제 프록시가 작동하는지 테스트하려면 절전 모드의 컴퓨터에 테스트 연결합니다. 예를 들어 해당 컴퓨터의 공유 폴더에 연결하거나 원격 데스크톱을 사용하여 컴퓨터에 연결해 봅니다. DirectAccess를 사용하는 경우 현재 인터넷상에 있는 절전 모드의 컴퓨터에 대해 동일한 테스트를 수행하여 IPv6 접두사가 작동하는지 확인합니다.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

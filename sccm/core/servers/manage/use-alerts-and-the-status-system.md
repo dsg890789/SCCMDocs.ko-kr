@@ -1,5 +1,5 @@
 ---
-title: "경고 및 상태 시스템 | System Center Configuration Manager"
+title: "경고 및 상태 시스템 | Microsoft 문서"
 description: "경고를 구성한 후 상태 시스템을 사용하여 Configuration Manager 배포 상태에 대한 최신 정보를 받습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: dda2e3af6ae14a949af5c70f300f8c7c6772e1a8
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: ed692bdea055775890535d2666f09ba5f5c7c4e1
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -28,7 +29,7 @@ ms.openlocfilehash: dda2e3af6ae14a949af5c70f300f8c7c6772e1a8
 경고를 구성한 후 기본 제공 상태 시스템을 사용하여 System Center Configuration Manager 배포 상태에 대한 최신 정보를 받습니다.  
 
 
-##  <a name="a-namebkmkstatusa-status-system"></a><a name="bkmk_Status"></a> 상태 시스템  
+##  <a name="bkmk_Status"></a> 상태 시스템  
  모든 주요 사이트 구성 요소는 사이트 및 계층 구조 작업에 대한 피드백을 제공하는 상태 메시지를 생성합니다.    이 정보를 통해 다양한 사이트 프로세스의 최신 상태를 확인할 수 있습니다. 주의가 필요할 수 있는 다른 문제의 초기 표시 가능성을 증가시키는 동시에 알려진 문제에 대한 노이즈를 무시하도록 경고 시스템을 조정할 수 있습니다.  
 
  기본적으로 Configuration Manager 상태 시스템은 구성 없이 대부분의 환경에 적합한 설정을 사용하여 실행됩니다. 그러나 사용자가 다음을 구성할 수 있습니다.  
@@ -55,7 +56,7 @@ ms.openlocfilehash: dda2e3af6ae14a949af5c70f300f8c7c6772e1a8
 
 상태 시스템에서 사이트별로 별도의 구성이 유지되므로 각 사이트를 개별적으로 편집해야 합니다.  
 
-###  <a name="a-namebkmkconfigstatusa-procedures-for-configuring-the-status-system"></a><a name="bkmk_configstatus"></a> 상태 시스템을 구성하는 절차  
+###  <a name="bkmk_configstatus"></a> 상태 시스템을 구성하는 절차  
 
 ##### <a name="to-configure-status-summarizers"></a>상태 요약 작성기를 구성하려면  
 
@@ -154,7 +155,7 @@ ms.openlocfilehash: dda2e3af6ae14a949af5c70f300f8c7c6772e1a8
 
 4.  **확인**을 클릭합니다.  
 
-###  <a name="a-namebkmkmonitorsystemstatusa-monitor-the-status-system-of-configuration-manager"></a><a name="BKMK_MonitorSystemStatus"></a> Configuration Manager의 상태 시스템 모니터링  
+###  <a name="BKMK_MonitorSystemStatus"></a> Configuration Manager의 상태 시스템 모니터링  
  Configuration Manager의 **시스템 상태**는 사이트의 일반 작업 및 계층 구조의 사이트 서버 작업에 대한 개요를 제공합니다. 또한 사이트 시스템 서버나 구성 요소의 작동 문제를 나타낼 수 있으므로, 시스템 상태를 사용하여 다른 Configuration Manager 작업에 대한 특정 정보를 검토할 수 있습니다. Configuration Manager 콘솔, **모니터링** 작업 영역의 **시스템 상태** 노드에서 시스템 상태를 모니터링합니다.  
 
  대부분의 Configuration Manager 사이트 시스템 역할과 구성 요소는 상태 메시지를 생성합니다. 상태 메시지 정보는 각 구성 요소 작업 로그에 로깅되지만 사이트 데이터베이스로도 전송됩니다. 이 정보는 사이트 데이터베이스에서 각 구성 요소 또는 사이트 시스템 상태의 일반 롤업에 요약되어 표시됩니다. 이러한 상태 메시지 롤업은 정기적인 작업에 대한 세부 정보와 경고 및 오류에 대한 세부 정보를 제공합니다. 경고 또는 오류가 트리거되는 임계값을 구성할 수 있으며, 롤업 정보가 사용자와 관계없는 알려진 문제를 무시하고 조사해야 할 수 있는 서버의 실제 문제나 구성 요소 작업에 집중하도록 시스템을 미세 조정할 수 있습니다.  
@@ -170,19 +171,19 @@ ms.openlocfilehash: dda2e3af6ae14a949af5c70f300f8c7c6772e1a8
 |충돌 레코드|이 노드를 사용하면 충돌 레코드가 있을 수 있는 클라이언트에 대한 상태 메시지를 볼 수 있습니다.<br /><br /> Configuration Manager에서는 하드웨어 ID를 사용하여 중복되었을 수 있는 클라이언트를 식별하고 충돌 레코드에 대해 경고합니다. 예를 들어 컴퓨터를 다시 설치해야 하는 경우 하드웨어 ID는 동일하지만 Configuration Manager에서 사용하는 GUID는 변경될 수 있습니다.|  
 |상태 메시지 쿼리|이 노드를 사용하면 특정 이벤트 및 관련 정보에 대한 상태 메시지를 쿼리할 수 있습니다. 상태 메시지 쿼리를 사용하여 특정 이벤트와 관련된 상태 메시지를 찾을 수 있습니다.<br /><br /> 보통은 특정 구성 요소, 작업 또는 Configuration Manager 개체가 수정된 시간 및 수정하는 데 사용된 계정을 확인하기 위해 상태 메시지 쿼리를 사용할 수 있습니다. 예를 들어 **생성, 수정 또는 삭제된 컬렉션** 에 대한 기본 제공 쿼리를 실행하여 특정 컬렉션을 만든 시간 및 이 컬렉션을 만드는 데 사용된 사용자 계정을 확인할 수 있습니다.|  
 
-####  <a name="a-namebkmkmanagestatusa-manage-site-status-and-component-status"></a><a name="bkmk_managestatus"></a> 사이트 상태 및 구성 요소 상태 관리  
+####  <a name="bkmk_managestatus"></a> 사이트 상태 및 구성 요소 상태 관리  
  사이트 상태와 구성 요소 상태를 관리하려면 다음 정보를 참조하십시오.  
 
 -   상태 시스템의 임계값을 구성하려면 [상태 시스템을 구성하는 절차](#bkmk_configstatus)섹션을 참조하십시오.  
 
 -   Configuration Manager에서 개별 구성 요소를 관리하려면 **Configuration Manager Service Manager**를 사용합니다.  
 
-####  <a name="a-namebkmkviewa-view-status-messages"></a><a name="bkmk_view"></a> 상태 메시지 보기  
+####  <a name="bkmk_view"></a> 상태 메시지 보기  
  개별 사이트 시스템 서버 및 구성 요소의 상태 메시지를 볼 수 있습니다.  
 
  Configuration Manager 콘솔에서 상태 메시지를 보려면 특정 사이트 시스템 서버나 구성 요소를 선택한 다음 **메시지 표시**를 클릭합니다. 메시지를 볼 때 특정 메시지 유형을 보거나 지정된 시간의 메시지를 보도록 선택할 수 있고 상태 메시지 정보에 따라 결과를 필터링할 수 있습니다.  
 
-##  <a name="a-namebkmkalertsa-alerts"></a><a name="bkmk_Alerts"></a> 경고  
+##  <a name="bkmk_Alerts"></a> 경고  
  Configuration Manager 경고는 특정 조건이 발생할 경우 일부 작업에서 생성됩니다.  
 
 -   일반적으로 경고는 해결해야 할 오류가 발생할 경우에 생성됩니다.  
@@ -204,7 +205,7 @@ ms.openlocfilehash: dda2e3af6ae14a949af5c70f300f8c7c6772e1a8
 |경고에 대한 메일 구독 구성|이 항목에서 [Management tasks for alerts](#BKMK_Manage) 섹션을 참조하세요.|  
 |경고 모니터링|이 항목에서 [경고 모니터링](#BKMK_MonitorAlerts)|  
 
-###  <a name="a-namebkmkmanagea-management-tasks-for-alerts"></a><a name="BKMK_Manage"></a> Management tasks for alerts  
+###  <a name="BKMK_Manage"></a> Management tasks for alerts  
 
 ##### <a name="to-manage-general-alerts"></a>일반 경고를 관리하려면  
 
@@ -288,7 +289,7 @@ ms.openlocfilehash: dda2e3af6ae14a949af5c70f300f8c7c6772e1a8
     > [!NOTE]  
     >  **경고** 노드를 확장한 다음 **구독** 노드를 클릭하면 **모니터링** 작업 영역에서 구독을 삭제 및 편집할 수 있습니다.  
 
-###  <a name="a-namebkmkmonitoralertsa-monitor-alerts"></a><a name="BKMK_MonitorAlerts"></a> 경고 모니터링  
+###  <a name="BKMK_MonitorAlerts"></a> 경고 모니터링  
  **모니터링** 작업 영역의 **경고** 노드에서 경고를 볼 수 있습니다. 경고는 다음 경고 상태 중 한 가지 상태가 됩니다.  
 
 -   **트리거되지 않음**: 경고 조건이 충족되지 않았습니다.  
@@ -310,9 +311,4 @@ ms.openlocfilehash: dda2e3af6ae14a949af5c70f300f8c7c6772e1a8
      경고가 활성인 경우에만 경고를 연기할 수 있습니다.  
 
 -   경고에 대해 알고 있음을 다른 관리자가 볼 수 있도록 경고의 **설명** 을 편집할 수 있습니다. 예를 들어 설명에서 조건 해결 방법을 나타내거나, 조건의 현재 상태에 대한 정보를 제공하거나, 경고를 연기한 이유를 설명할 수 있습니다.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

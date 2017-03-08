@@ -1,5 +1,5 @@
 ---
-title: "부팅 가능한 미디어를 사용하여 네트워크를 통해 Windows 배포 | Configuration Manager"
+title: "부팅 가능한 미디어를 사용하여 네트워크를 통해 Windows 배포 | Microsoft 문서"
 description: "System Center Configuration Manager에서 부팅 가능한 미디어 배포를 사용하면 대상 컴퓨터가 시작될 때 운영 체제를 배포할 수 있습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: f5bdba0f609f51b988dbfdc0b0c8b204405f834a
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: beb730efbe4d9bae7c4c97f4e587c8919bd79049
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -49,11 +50,6 @@ System Center Configuration Manager에서 부팅 가능한 미디어 배포를 �
 ## <a name="create-the-bootable-media"></a>부팅 가능한 미디어 만들기  
  부팅 가능한 미디어가 USB 플래시 드라이브인지 아니면 CD/DVD 세트인지를 지정할 수 있습니다. 미디어를 시작하는 컴퓨터는 부팅 가능한 드라이브로 선택하는 옵션을 지원해야 합니다. 자세한 내용은 [부팅 가능한 미디어 만들기](create-bootable-media.md)를 참조하세요.  
 
-##  <a name="a-namebkmkdeploya-install-the-operating-system-from-bootable-media"></a><a name="BKMK_Deploy"></a> 부팅 가능한 미디어에서 운영 체제 설치  
+##  <a name="BKMK_Deploy"></a> 부팅 가능한 미디어에서 운영 체제 설치  
  컴퓨터에서 부팅 가능한 드라이브에 부팅 가능한 미디어를 삽입한 다음 전원을 켜서 운영 체제를 설치합니다.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

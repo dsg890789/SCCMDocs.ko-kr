@@ -1,8 +1,8 @@
 ---
-title: "현재 분기에서 확장된 상호 운용성 클라이언트 사용 | System Center Configuration Manager"
+title: "현재 분기에서 확장된 상호 운용성 클라이언트 사용 | Microsoft 문서"
 description: "현재 분기 사이트에서 Configuration Manager 장기 서비스 분기의 클라이언트를 사용하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/12/2016
+ms.date: 01/04/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,13 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 600086d5-bd9e-4ac1-8ace-c7a62de80dc2
 caps.latest.revision: 0
-author: Brenduns
-ms.author: brenduns
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 Robots: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 45ef4be7bf0b1c2e99f25ac398265bb71489c17e
-ms.openlocfilehash: a97eb7a637611ba269cf8f16635b8165c19283f1
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 30d0177dc7fcc7f39d00c48067130d587435bf2d
+ms.lasthandoff: 12/16/2016
 
 ---
 # <a name="use-the-client-software-from-the-version-1606-baseline-media-for-extended-interoperability-with-future-versions-of-a-current-branch-site"></a>이후 버전의 현재 분기 사이트와 확장된 상호 운용성을 위해 버전 1606 기준 미디어의 클라이언트 소프트웨어 사용
@@ -56,9 +57,4 @@ System Center 2016과 함께 제공된 버전 1606 기준 미디어 DVD 또는 S
 클라이언트에 있는 Configuration Manager 제어판 애플릿의 **일반** 탭에서 클라이언트 버전을 볼 수 있습니다.
 
 애플릿의 **구성 요소** 탭에서 일부 구성 요소는 다른 값을 표시합니다. 예를 들어 클라이언트 버전 8412.1307의 경우 일부 구성 요소가 5.00.8412로.**1000** 또는 5.00.8412.**1006**으로 표시될 수도 있습니다.  일부 구성 요소에서 마지막 4자리가 다른 것은 정상적인 동작이며 구성 요소가 현재 클라이언트 버전으로 업데이트되지 않은 오류를 나타내는 것은 아닙니다.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

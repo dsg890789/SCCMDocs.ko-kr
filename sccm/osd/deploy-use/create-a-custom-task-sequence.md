@@ -1,5 +1,5 @@
 ---
-title: "사용자 지정 작업 순서 만들기 | Configuration Manager"
+title: "사용자 지정 작업 순서 만들기 | Microsoft 문서"
 description: "System Center Configuration Manager에서 사용자 지정 작업 순서를 편집하여 작업 순서에 단계를 추가합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 9e41ba8c0f2aad3eba1cb2a8c4fdbbf6fa558f5e
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 03c844084c72fc52806123d9f4c11a410a3ec775
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -28,7 +29,7 @@ ms.openlocfilehash: 9e41ba8c0f2aad3eba1cb2a8c4fdbbf6fa558f5e
 
 System Center Configuration Manager에서 사용자 지정 작업 순서를 만들 때는 작업 순서 단계가 포함되지 않습니다. 작업 순서를 만든 후에 편집하고 필요한 작업 순서 단계를 추가해야 합니다.  
 
-##  <a name="a-namebkmkcustomtsa-create-a-custom-task-sequence"></a><a name="BKMK_CustomTS"></a> 사용자 지정 작업 순서 만들기  
+##  <a name="BKMK_CustomTS"></a> 사용자 지정 작업 순서 만들기  
  사용자 지정 작업 순서를 만들려면 다음 절차를 사용합니다.  
 
 #### <a name="to-create-a-custom-task-sequence"></a>사용자 지정 작업 순서를 만들려면  
@@ -53,9 +54,4 @@ System Center Configuration Manager에서 사용자 지정 작업 순서를 만�
 
  ## <a name="next-steps"></a>다음 단계
  [작업 순서 배포](manage-task-sequences-to-automate-tasks.md#BKMK_DeployTS)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

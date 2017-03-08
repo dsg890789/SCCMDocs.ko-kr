@@ -1,5 +1,5 @@
 ---
-title: "전원 관리 구성 | System Center Configuration Manager"
+title: "전원 관리 구성 | Microsoft 문서"
 description: "System Center Configuration Manager에서 전원 관리를 설정합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: ca1277ba0c2be68a393da930769151e25e997210
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: e111ac2545dd9e0b96a50c10246bb75d286a737a
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -47,7 +48,7 @@ System Center Configuration Manager에서 전원 관리를 사용하려면 먼�
 
     -   **장치의 전원 관리 허용** – 드롭다운 목록에서 **True** 를 선택하여 전원 관리를 사용하도록 설정합니다.  
 
-7.  필요한 클라이언트 설정을 구성합니다. 구성할 수 있는 전원 관리 클라이언트 설정 목록은 [System Center Configuration Manager의 클라이언트 설정 정보](../../../../core/clients/deploy/about-client-settings.md) 항목의 [전원 관리](../../../../core/clients/deploy/about-client-settings.md#BKMK_PowMgmtDeviceSettings) 섹션을 참조하세요.  
+7.  필요한 클라이언트 설정을 구성합니다. 구성할 수 있는 전원 관리 클라이언트 설정 목록은 [System Center Configuration Manager의 클라이언트 설정 정보](../../../../core/clients/deploy/about-client-settings.md) 항목의 [전원 관리](../../../../core/clients/deploy/about-client-settings.md#power-management) 섹션을 참조하세요.  
 
 8.  **확인** 을 클릭하여 **기본 클라이언트 설정** 대화 상자를 닫습니다.  
 
@@ -85,9 +86,4 @@ System Center Configuration Manager에서 전원 관리를 사용하려면 먼�
 4.  *<컬렉션 이름\>***속성** 대화 상자의 **전원 관리** 탭에서 **이 컬렉션의 컴퓨터에 전원 관리 설정 적용 안 함**을 선택합니다.  
 
 5.  **확인**을 클릭하여 *<컬렉션 이름\>***속성** 대화 상자를 닫고 설정을 저장합니다.  
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 
