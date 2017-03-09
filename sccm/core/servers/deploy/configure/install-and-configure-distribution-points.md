@@ -16,14 +16,15 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f83dc12aab96ad76a62582fc2f2fe3e0b99b3b67
-ms.openlocfilehash: efda1a8f010bb0125ef726d0b960317a4fdc4f28
+ms.sourcegitcommit: 8728d9f2ae63282a8f58b20105e488fb1a5ef55b
+ms.openlocfilehash: 4c94e4de5bbfe621492e8682c9424a48eb38196d
+ms.lasthandoff: 03/03/2017
 
 ---
 # <a name="install-and-configure-distribution-points-for-system-center-configuration-manager"></a>System Center Configuration Manager의 배포 지점 설치 및 구성
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
-
+ 
 장치 및 사용자에게 배포하는 콘텐츠(파일 및 소프트웨어)를 호스트할 System Center Configuration Manager 배포 지점을 설치합니다. 배포 지점을 관리하는 방법 및 배포 지점에 콘텐츠를 배포하는 방법을 간소화하는 배포 지점 그룹을 만들 수도 있습니다.  
 
  *새 배포 지점을 설치*(설치 마법사 사용)하거나 *기존 배포 지점의 속성을 관리*(배포 지점 속성 편집)할 때 대부분의 배포 지점 설정을 구성할 수 있습니다. 몇 가지 설정은 설치 또는 편집 중 한 작업에서만 사용할 수 있습니다.  
@@ -44,7 +45,7 @@ ms.openlocfilehash: efda1a8f010bb0125ef726d0b960317a4fdc4f28
 
     -   **배포 지점에 대한 데이터 전송 일정 구성**  
 
-##  <a name="a-namebkmkinstalla-install-a-distribution-point"></a><a name="bkmk_install"></a> 배포 지점 설치  
+##  <a name="bkmk_install"></a> 배포 지점 설치  
  콘텐츠를 클라이언트 컴퓨터에서 사용할 수 있으려면 먼저 사이트 시스템 서버를 배포 지점으로 지정해야 합니다. 새 사이트 시스템 서버에 배포 지점 사이트 역할을 추가하거나 기존 사이트 시스템 서버에 사이트 역할을 추가할 수 있습니다.  
 
  새 배포 지점을 설치하는 경우 사용 가능한 설정을 단계별로 안내하는 설치 마법사를 사용합니다. 시작하기 전에 다음 사항을 고려합니다.  
@@ -95,7 +96,7 @@ ms.openlocfilehash: efda1a8f010bb0125ef726d0b960317a4fdc4f28
 
 4.  원하는 변경 작업을 마친 후에는 설정을 저장하고 배포 지점 속성을 닫습니다.  
 
-##  <a name="a-namebkmkmanagea-manage-distribution-point-groups"></a><a name="bkmk_manage"></a> 배포 지점 그룹 관리  
+##  <a name="bkmk_manage"></a> 배포 지점 그룹 관리  
  배포 지점 그룹은 콘텐츠 배포를 위해 배포 지점을 논리적으로 그룹화하는 기능을 제공합니다. 이러한 그룹을 사용하면 여러 사이트에 분포된 배포 지점의 콘텐츠를 중앙 위치에서 관리하고 모니터링할 수 있습니다. 다음 사항에 유의하세요.
 
 -   계층에 있는 모든 사이트에서 하나 이상의 배포 지점을 배포 지점 그룹에 추가할 수 있습니다.  
@@ -159,7 +160,7 @@ ms.openlocfilehash: efda1a8f010bb0125ef726d0b960317a4fdc4f28
 
 3.  **사용 가능한 배포 지점 그룹**에서 선택한 배포 지점을 구성원으로 추가할 배포 지점 그룹을 선택한 다음 **확인**을 선택합니다.  
 
-##  <a name="a-namebkmkconfigsa-configure-a-distribution-point"></a><a name="bkmk_configs"></a> 배포 지점 구성  
+##  <a name="bkmk_configs"></a> 배포 지점 구성  
  개별 배포 지점은 다양한 구성을 지원합니다. 그러나 각 배포 지점 유형은 일부 구성만을 지원합니다. 예를 들어 클라우드 기반 배포 지점은 PXE 또는 멀티캐스트용으로 사용되는 콘텐츠 배포를 지원하지 않습니다. 다음 항목에서 특정 제한사항에 대한 정보를 확인할 수 있습니다.  
 
 -   [System Center Configuration Manager에서 클라우드 기반 배포 지점 사용](../../../../core/plan-design/hierarchy/use-a-cloud-based-distribution-point.md)  
@@ -343,9 +344,9 @@ ms.openlocfilehash: efda1a8f010bb0125ef726d0b960317a4fdc4f28
 
 추가 필수 구성 요소:
 
-- 버전 1610 이전에서 **클라이언트가 이 사이트 시스템을 콘텐츠에 대한 대체 원본 위치로 사용하도록 허용** 확인란을 선택하면 이러한 경계 그룹 외부에 있는 클라이언트가 다른 배포 지점을 사용할 수 없는 경우 해당 배포 지점을 대체 원본 위치로 사용할 수 있습니다. 경계 그룹에 대한 자세한 내용은 [버전 1511, 1602 및 1606에 대한 경계 그룹](/sccm/core/servers/deploy/configur/boundary-groups-for-1511-1602-and-1606)을 참조하세요. 기본 배포 지점에 대한 자세한 내용은 [System Center Configuration Manager에서 콘텐츠 관리의 기본 개념](../../../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md)을 참조하세요.
+- 버전 1610 이전에서 **클라이언트가 이 사이트 시스템을 콘텐츠에 대한 대체 원본 위치로 사용하도록 허용** 확인란을 선택하면 이러한 경계 그룹 외부에 있는 클라이언트가 다른 배포 지점을 사용할 수 없는 경우 해당 배포 지점을 대체 원본 위치로 사용할 수 있습니다. 경계 그룹에 대한 자세한 내용은 [버전 1511, 1602 및 1606에 대한 경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups-for-1511-1602-and-1606)을 참조하세요. 기본 배포 지점에 대한 자세한 내용은 [System Center Configuration Manager에서 콘텐츠 관리의 기본 개념](../../../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md)을 참조하세요.
 
-- 버전 1610 이상에서는 클라이언트가 콘텐츠를 찾기 위해 대체할 수 있는 경우 및 경계 그룹을 정의하는 경계 그룹 *관계*를 구성합니다. 자세한 내용은 [경계 그룹](/sccm/core/servers/deploy/configur/define-site-boundaries-and-boundary-groups#boundary-groups)을 참조하세요.
+- 버전 1610 이상에서는 클라이언트가 콘텐츠를 찾기 위해 대체할 수 있는 경우 및 경계 그룹을 정의하는 경계 그룹 *관계*를 구성합니다. 자세한 내용은 [경계 그룹](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#boundary-groups)을 참조하세요.
 
 
 ### <a name="schedule"></a>일정  
@@ -388,9 +389,4 @@ Configuration Manager에서 배포 지점으로 콘텐츠를 전송할 때 사�
 -   **펄스 모드**: 이 옵션은 배포 지점으로 보내는 데이터 블록 크기를 지정합니다. 또한 각 데이터 블록 전송 간의 시간 지연을 지정할 수도 있습니다. 대역폭이 매우 낮은 네트워크 연결을 통해 배포 지점으로 데이터를 전송해야 할 경우 이 옵션을 사용합니다. 예를 들어 지정된 시간의 연결 속도나 사용량과 관계없이 5초마다 1KB의 데이터를 보내야 하는 제약 조건을 설정할 수 있습니다.  
 
 -   **지정한 시간별 최대 전송 속도로 제한**: 사이트에서 배포 지점에 데이터를 보낼 때 구성한 시간 비율만 사용하도록 하려면 이 설정을 지정합니다. 이 옵션을 사용하는 경우 Configuration Manager는 사용할 수 있는 네트워크 대역폭을 확인하지 않고 데이터를 보낼 수 있는 시간을 분할합니다. 그러면 데이터가 짧은 시간 블록 동안 전송된 후 일정 시간 블록 동안 데이터가 전송되지 않습니다. 예를 들어 최대 비율이 **50%**로 설정된 경우 Configuration Manager에서 일정 기간 동안 데이터를 전송하고 그 후 같은 기간 동안 데이터를 전송하지 않습니다. 실제 데이터 크기 또는 데이터 블록 크기는 관리되지 않습니다. 대신 데이터가 전송되는 시간의 길이만 관리됩니다.  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

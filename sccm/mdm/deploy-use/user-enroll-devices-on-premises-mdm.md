@@ -2,7 +2,7 @@
 title: "사용자가 온-프레미스 MDM을 사용하여 장치를 등록하는 방법 - Configuration Manager | Microsoft 문서"
 description: "System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 사용하여 장치를 등록하는 방법을 이해합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
-ms.openlocfilehash: 43a30709473939829d82d822503537d448159a1c
+ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
+ms.openlocfilehash: 7d852843d0d3fe7c9ab0947c4b396cee0a92c754
+ms.lasthandoff: 03/06/2017
 
 
 ---
@@ -45,7 +46,7 @@ System Center Configuration Manager 온-프레미스 모바일 장치 관리에�
 
 -   [장치 등록 확인](#bkmk_verify)  
 
-##  <a name="a-namebkmkenrolldeska-enroll-a-windows-10-computer"></a><a name="bkmk_enrollDesk"></a> Windows 10 컴퓨터 등록  
+##  <a name="bkmk_enrollDesk"></a> Windows 10 컴퓨터 등록  
 
 1.  Windows 10 컴퓨터에서 **설정**으로 이동합니다.  
 
@@ -59,7 +60,7 @@ System Center Configuration Manager 온-프레미스 모바일 장치 관리에�
 
 6.  로그인 정보를 기억하기 위해 **건너뛰기** 를 클릭하면 잠시 후에 장치가 연결됩니다.  
 
-##  <a name="a-namebkmkenrollmoba-enroll-a-windows-10-mobile-device"></a><a name="bkmk_enrollMob"></a> Windows 10 모바일 장치 등록  
+##  <a name="bkmk_enrollMob"></a> Windows 10 모바일 장치 등록  
 
 1.  Windows 10 모바일 장치에서 **설정**으로 이동합니다.  
 
@@ -71,18 +72,10 @@ System Center Configuration Manager 온-프레미스 모바일 장치 관리에�
 
 5.  다음 화면에서 업무용 메일 주소 및 암호를 입력한 다음 **로그인**을 클릭합니다. 잠시 후 장치가 등록됩니다. **완료**를 클릭합니다.  
 
-##  <a name="a-namebkmkverifya-verify-device-enrollment"></a><a name="bkmk_verify"></a> 장치 등록 확인  
+##  <a name="bkmk_verify"></a> 장치 등록 확인  
  Configuration Manager 콘솔에서 장치가 성공적으로 등록되었는지 확인할 수 있습니다.  
 
 1.  Configuration Manager 콘솔을 시작합니다.  
 
 2.  마법사를 종료하려면 **자산 및 준수** > **개요** > **장치**에 필요한 사이트 시스템 역할 간의 신뢰할 수 있는 통신에 필요합니다. 등록된 장치가 목록에 표시됩니다.  
-
-## <a name="see-also"></a>참고 항목  
- [System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 위한 장치 등록](../../mdm/deploy-use/enroll-devices-on-premises-mdm.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

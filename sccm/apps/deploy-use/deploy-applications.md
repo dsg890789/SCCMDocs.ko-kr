@@ -17,8 +17,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 7be9abadeb51d4f9e862f69c332756b19ce3e110
-ms.openlocfilehash: a52bef3c8d12ffe2d9b13dc79cbc8950d3f36aea
+ms.sourcegitcommit: cb42b6f324dc0019c2109be4d91e0eab4dca4d70
+ms.openlocfilehash: 8c54bc455828712c7f9ea297f26c98c41848cf9c
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -84,8 +85,8 @@ ms.openlocfilehash: a52bef3c8d12ffe2d9b13dc79cbc8950d3f36aea
 
     > [!NOTE]
     >  응용 프로그램 승인 요청은 **소프트웨어 라이브러리** 작업 영역의 **응용 프로그램 관리** 아래에 있는 **승인 요청** 노드에 표시됩니다. 45일 이내에 승인되지 않은 요청은 제거됩니다. 또한 Configuration Manager 클라이언트를 다시 설치하면 보류 중인 승인 요청이 취소될 수 있습니다.
-    > 응용 프로그램 설치를 승인한 후 Configuration Manager 콘솔에서 **거부**를 클릭하여 요청을 거부하도록 선택할 수 있습니다(이전에는 승인 후 이 단추가 회색으로 표시됨).
-    > 이 작업을 수행해도 장치에서 응용 프로그램이 제거되지는 않지만 사용자가 소프트웨어 센터에서 응용 프로그램의 새 복사본을 설치할 수 없습니다.
+    >  응용 프로그램 설치를 승인한 후 Configuration Manager 콘솔에서 **거부**를 클릭하여 요청을 거부하도록 선택할 수 있습니다(이전에는 승인 후 이 단추가 회색으로 표시됨).
+    >  이 작업을 수행해도 장치에서 응용 프로그램이 제거되지는 않지만 사용자가 소프트웨어 센터에서 응용 프로그램의 새 복사본을 설치할 수 없습니다.
 
 
 
@@ -116,8 +117,7 @@ ms.openlocfilehash: a52bef3c8d12ffe2d9b13dc79cbc8950d3f36aea
 
 >[!NOTE]
     >  Windows Embedded 장치에 응용 프로그램을 배포하는 경우 장치가 유지 관리 기간이 구성된 컬렉션의 구성원이어야 합니다. Windows Embedded 장치에 응용 프로그램을 배포할 때 유지 관리 기간을 사용하는 방법에 대한 자세한 내용은 [Windows Embedded 응용 프로그램 만들기](../../apps/get-started/creating-windows-embedded-applications.md)를 참조하세요.
-
-    >  The options **Software Installation** and **System restart (if required to complete the installation)** are not used if the deployment purpose is set to **Available**. You can also configure the level of notification a user sees when the application is installed.
+    > 배포 목적이 **사용 가능** 으로 설정된 경우 **소프트웨어 설치** 및 **시스템 다시 시작(설치를 완료하는 데 필요한 경우)**옵션은 사용되지 않습니다. 응용 프로그램이 설치되었을 때 사용자에게 표시되는 알림 수준도 구성할 수 있습니다.
 
 ### <a name="specify-alert-options-for-the-deployment"></a>배포에 대한 경고 옵션 지정
 
@@ -159,9 +159,4 @@ ms.openlocfilehash: a52bef3c8d12ffe2d9b13dc79cbc8950d3f36aea
 ## <a name="for-more-information"></a>자세한 내용을 보려면 다음을 수행하십시오.
 - [높은 위험 수준의 배포를 관리하는 설정](../../protect/understand/settings-to-manage-high-risk-deployments.md)
 - [클라이언트 설정을 구성하는 방법](../../core/clients/deploy/configure-client-settings.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

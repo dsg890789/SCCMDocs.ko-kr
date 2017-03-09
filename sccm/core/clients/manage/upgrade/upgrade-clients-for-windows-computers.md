@@ -1,5 +1,5 @@
 ---
-title: "클라이언트 업그레이드 | Microsoft 문서 | Windows "
+title: "클라이언트 업그레이드 | Microsoft 문서"
 description: "System Center Configuration Manager에서 Windows 컴퓨터용 클라이언트 업그레이드"
 ms.custom: na
 ms.date: 01/01/2017
@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: 6143fd47-48ec-4bca-b53b-5b9b9f067bc3
 caps.latest.revision: 11
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 52d2e088b8db3c2e9a0af640ca3db72b9fd7af60
-ms.openlocfilehash: a35724a5b839b47904c46361709f248e432eff1e
+ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
+ms.openlocfilehash: a5b59a1d31d897473262edcd0912ef0fcbedd100
+ms.lasthandoff: 03/06/2017
 
 
 ---
@@ -98,9 +99,4 @@ Configuration Manager에서 클라이언트 설치 방법 또는 자동 클라�
 8.  클라이언트 설치 패키지를 사전 준비된 콘텐츠에 대해 설정된 배포 지점에 복사하려면 **클라이언트 설치 패키지를 사전 준비된 콘텐츠에 대해 설정된 배포 지점에 자동으로 배포**를 클릭합니다.  
 
 9. **확인** 을 클릭하여 설정을 저장하고 **계층 구조 설정 속성** 대화 상자를 닫습니다. 클라이언트는 다음에 정책을 다운로드할 때 이 설정을 수신합니다.  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 
