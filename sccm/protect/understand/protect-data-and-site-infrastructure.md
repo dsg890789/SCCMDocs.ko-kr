@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2117f786-d521-4790-9e8d-ec096c63c9d7
 caps.latest.revision: 8
-author: Nbigman
-ms.author: nbigman
+author: Robstack
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 593fbd0587d54490246f48ae54f666bac6b7830d
-ms.openlocfilehash: c80750358d64cf87f8a3ce3a4c4f4030a9dfd742
+ms.sourcegitcommit: 8679df3f8a3b692391537bacd6144a4f2fae357b
+ms.openlocfilehash: d527cb4bfb55ca50c8d2a0fed7c427af5747fe99
+ms.lasthandoff: 02/09/2017
 
 
 ---
@@ -30,7 +31,7 @@ ms.openlocfilehash: c80750358d64cf87f8a3ce3a4c4f4030a9dfd742
 
 -   VPN 프로필로 VPN 연결을 사용하도록 설정하면 사용자가 회사 리소스에 손쉽게 연결할 수 있습니다. [System Center Configuration Manager에서 VPN 프로필](../deploy-use/vpn-profiles.md)을 참조하세요.  
 
--   Wi-Fi 프로필은 조직에서 장치에 대한 무선 네트워크 설정을 만들고 배포하고 모니터링하는 데 유용한 도구 및 리소스 집합을 제공합니다. 이러한 설정을 배포하여, 최종 사용자가 회사 무선 네트워크에 쉽게 연결하도록 지원합니다. [System Center Configuration Manager에서 Wi-Fi 프로필](../deploy-use/introduction-to-wifi-profiles.md)을 참조하세요.  
+-   Wi-Fi 프로필은 조직에서 장치에 대한 무선 네트워크 설정을 만들고 배포하고 모니터링하는 데 유용한 도구 및 리소스 집합을 제공합니다. 이러한 설정을 배포하여, 최종 사용자가 회사 무선 네트워크에 쉽게 연결하도록 지원합니다. [System Center Configuration Manager에서 Wi-Fi 프로필](/sccm/protect/deploy-use/create-wifi-profiles)을 참조하세요.  
 
 -   [System Center Configuration Manager의 인증서 프로필](../deploy-use/introduction-to-certificate-profiles.md)에서는 회사 리소스에 연결하는 데 필요한 인증서로 사용자의 장치를 프로비전하는 방법을 설명합니다.  
 
@@ -41,9 +42,4 @@ ms.openlocfilehash: c80750358d64cf87f8a3ce3a4c4f4030a9dfd742
 -   메일 프로필은 장치에서 메일 설정을 만들고, 배포하고, 모니터링하는 데 유용한 도구 및 리소스 집합을 제공합니다. 이를 통해 사용자는 별도의 설정 없이 자신의 개인 장치에서 회사 전자 메일에 액세스할 수 있습니다. [System Center Configuration Manager에서 메일 프로필](../deploy-use/introduction-to-email-profiles.md)을 참조하세요.  
 
 -   Configuration Manager에서는 Active Directory 또는 Azure Active Directory 계정을 사용하여 암호, 스마트 카드 또는 가상 스마트 카드를 대신하는 대체 로그인 방법인 비즈니스용 Windows Hello(이전의 Microsoft Passport for Work)와 통합할 수 있습니다. [System Center Configuration Manager의 비즈니스용 Windows Hello 설정](../deploy-use/windows-hello-for-business-settings.md)을 참조하세요.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

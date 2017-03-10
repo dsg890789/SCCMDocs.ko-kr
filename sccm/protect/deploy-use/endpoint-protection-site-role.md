@@ -4,7 +4,7 @@ description: "Configuration Manager 클라이언트 컴퓨터에서 보안 및 �
 defintion: 
 definition: 
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 02/14/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,8 +18,9 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 9db108fb2d4d16013f416b8ee87a57ff1c91e21f
-ms.openlocfilehash: 25ce24d16bd55366d23a176b21b38ed53aa40644
+ms.sourcegitcommit: 017bd5b899b364fc832c721d63cc7dbad0a11671
+ms.openlocfilehash: 884b5f2ec3f1aa273128dfeaaf88d969c9d8669d
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -60,11 +61,6 @@ ms.openlocfilehash: 25ce24d16bd55366d23a176b21b38ed53aa40644
 
 8.  마법사를 완료합니다.
 
-> [!div class="button"]
-[다음 단계 >](endpoint-configure-alerts.md)
-
-> [!div class="button"]
-[뒤로 >](endpoint-protection-configure.md)
 
 ## <a name="existing-site-system-server"></a>기존 사이트 시스템 서버
 
@@ -89,15 +85,4 @@ ms.openlocfilehash: 25ce24d16bd55366d23a176b21b38ed53aa40644
     >  이 옵션은 기본적으로 사용되는 클라우드 보호 서비스 설정(이전에는 MAPS라고 함)을 구성합니다. 구성한 각 맬웨어 방지 정책에 대한 사용자 지정 설정을 구성할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 Endpoint Protection에 대한 맬웨어 방지 정책을 만들어 배포하는 방법](endpoint-antimalware-policies.md)을 참조하세요.
 
 8.  마법사를 완료합니다.
-
-> [!div class="button"]
-[다음 단계 >](endpoint-configure-alerts.md)
-
-> [!div class="button"]
-[뒤로 >](endpoint-protection-configure.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
