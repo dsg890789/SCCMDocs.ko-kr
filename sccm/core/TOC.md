@@ -176,7 +176,7 @@
 ###  [서비스 연결 도구 사용](servers/manage/use-the-service-connection-tool.md)
 ###  [업데이트 등록 도구 사용](servers/manage/use-the-update-registration-tool-to-import-hotfixes.md)
 ###  [핫픽스 설치 관리자 사용](servers/manage/use-the-hotfix-installer-to-install-updates.md)
-<!-- 
+<!--
 ###  [Checklist for installing update 1702](servers/manage/checklist-for-installing-update-1702.md)
 -->
 ###  [업데이트 1610을 설치하기 위한 검사 목록](servers/manage/checklist-for-installing-update-1610.md)
@@ -185,6 +185,8 @@
 ###  [Checklist for installing update 1602](servers/manage/checklist-for-installing-update-1602.md)
 ###  [Support for current branch versions](servers/manage/current-branch-versions-supported.md)  
 -->
+###  [현재 분기 버전 지원](servers/manage/current-branch-versions-supported.md)  
+
 
 ##   인프라 모니터링
 ###  [경고 및 상태 시스템 사용](servers/manage/use-alerts-and-the-status-system.md)
