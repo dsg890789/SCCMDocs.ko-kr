@@ -1,8 +1,8 @@
 ---
-title: "System Center Configuration Manager용 Technical Preview 1601의 기능 | Microsoft 문서"
+title: "Technical Preview 1601 Configuration Manager의 기능"
 description: "System Center Configuration Manager용 Technical Preview 버전 1601에서 사용 가능한 기능에 대해 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.technology:
 - configmgr-other
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 52d2e088b8db3c2e9a0af640ca3db72b9fd7af60
-ms.openlocfilehash: b250456c92f77bf76a56b32fedafa934096abe2e
+ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
+ms.openlocfilehash: 4da12425382c5d64602b2728e0e661c8cb89a5e4
+ms.lasthandoff: 01/24/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1601-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1601의 기능
@@ -59,7 +60,7 @@ ms.openlocfilehash: b250456c92f77bf76a56b32fedafa934096abe2e
 
 **다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.**  
 
-##  <a name="a-namebkmkhybrid1a-improvements-to-microsoft-intune-integration"></a><a name="bkmk_hybrid1"></a> Microsoft Intune 통합 향상  
+##  <a name="bkmk_hybrid1"></a> Microsoft Intune 통합 향상  
 1601 기술 미리 보기에서는 다음 기능에 대한 지원이 추가되었습니다.  
 
 ### <a name="improvements-to-conditional-access"></a>향상된 조건부 액세스 기능  
@@ -125,7 +126,7 @@ ms.openlocfilehash: b250456c92f77bf76a56b32fedafa934096abe2e
 
      이 옵션을 사용하려면 Exchange 온-프레미스에 대한 **조건부 액세스 정책 구성 마법사**의 **일반** 페이지로 이동합니다.  
 
-##  <a name="a-namebkmkclientstatusa-client-online-status"></a><a name="bkmk_clientStatus"></a> 클라이언트 온라인 상태  
+##  <a name="bkmk_clientStatus"></a> 클라이언트 온라인 상태  
 Technical Preview 1601부터는 Configuration Manager 콘솔에서 클라이언트가 온라인 상태인지 또는 오프라인 상태인지를 쉽게 알아볼 수 있습니다. 콘솔 장치 목록에 업데이트된 아이콘 및 열이 표시되므로 작업 환경의 클라이언트 상태를 평가하여 문제 영역 및 주의해야 할 기타 문제를 파악할 수 있습니다.  
 
 클라이언트가 현재 Configuration Manager 관리 지점 사이트 시스템 역할에 연결되어 있으면 온라인 상태인 것입니다. 관리 지점이 클라이언트에서 ping과 유사한 메시지를 받는 동안은 온라인 상태입니다. 관리 지점에서 5분 정도 메시지를 받지 못하면 클라이언트 상태가 오프라인으로 변경된 것입니다.  
@@ -158,7 +159,7 @@ Technical Preview 1601부터는 Configuration Manager 콘솔에서 클라이언�
 
  클라이언트 상태에 대한 최근 변경 내용을 보려면 콘솔을 새로 고칩니다.  
 
-##  <a name="a-namebkmkappmgmt1601a-improvements-to-application-management"></a><a name="bkmk_appmgmt1601"></a> 응용 프로그램 관리 향상  
+##  <a name="bkmk_appmgmt1601"></a> 응용 프로그램 관리 향상  
  1601 기술 미리 보기에서는 다음 기능에 대한 지원이 추가되었습니다.  
 
 ### <a name="manage-volume-purchased-apps-for-ios-devices"></a>iOS 장치용 대량 구매 앱 관리  
@@ -194,7 +195,7 @@ Technical Preview 1601부터는 Configuration Manager 콘솔에서 클라이언�
 
 -   **소프트웨어 배포** 마법사의 **앱 구성 정책** 페이지에서 만든 앱 구성 정책을 응용 프로그램의 호환 가능한 배포 유형에 연결합니다.  
 
-##  <a name="a-namebkmkcompliance1601a-improvements-to-compliance-settings"></a><a name="bkmk_compliance1601"></a> 향상된 호환성 설정  
+##  <a name="bkmk_compliance1601"></a> 향상된 호환성 설정  
  1601 기술 미리 보기에서는 다음 기능에 대한 지원이 추가되었습니다.  
 
 ### <a name="microsoft-edge-browser-settings"></a>Microsoft Edge 브라우저 설정  
@@ -217,9 +218,4 @@ Technical Preview 1601부터는 Configuration Manager 콘솔에서 클라이언�
  새 설정을 보려면 **구성 항목 만들기** 마법사의 구성 항목 **장치 설정** 페이지에서 **키오스크 모드 - Samsung KNOX**를 선택하세요.  
 
  자세한 내용은 [System Center Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 장치에 대한 구성 항목을 만드는 방법](../../compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)을 참조하세요.  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 
