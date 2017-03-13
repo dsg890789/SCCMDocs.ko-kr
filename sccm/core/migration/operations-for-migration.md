@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 5df6478362499d87038fa4ed2cb444aa8d5b4b7c
 ms.openlocfilehash: fb8a292c4fecbe5744e2cd09bc1442fab11046bc
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -39,7 +40,7 @@ System Center Configuration Manager에서 마이그레이션할 경우 지원되
 
 -   [마이그레이션 완료](#Complete_Migration)  
 
-##  <a name="a-namecreateeditmigrationjobsa-create-and-edit-migration-jobs"></a><a name="Create_Edit_migration_Jobs"></a> 마이그레이션 작업 만들기 및 편집  
+##  <a name="Create_Edit_migration_Jobs"></a> 마이그레이션 작업 만들기 및 편집  
  데이터 마이그레이션 작업을 만들고, 컬렉션 기반 마이그레이션 작업에 대한 제외 목록을 편집하고, 공유 배포 지점을 설정하고, 마이그레이션 작업 일정을 편집하려면 다음 절차를 따르세요.  
 
 > [!NOTE]  
@@ -133,7 +134,7 @@ System Center Configuration Manager에서 마이그레이션할 경우 지원되
 
 10. 설정을 확인하고 마법사를 완료합니다.  
 
-###  <a name="a-namebkmkmodifyexclusionlista-modify-the-exclusion-list-for-migration"></a><a name="BKMK_Modify_Exclusion_List"></a> 마이그레이션에 대한 제외 목록 수정  
+###  <a name="BKMK_Modify_Exclusion_List"></a> 마이그레이션에 대한 제외 목록 수정  
 
 1.  Configuration Manager 콘솔에서 **관리**를 선택합니다.  
 
@@ -167,7 +168,7 @@ System Center Configuration Manager에서 마이그레이션할 경우 지원되
 
 4.  마이그레이션 작업의 속성에서 **설정** 탭을 선택하고 마이그레이션 작업의 실행 시간을 변경한 다음 **확인**을 선택합니다.  
 
-##  <a name="a-namerunmigrationjobsa-run-migration-jobs"></a><a name="Run_Migration_Jobs"></a> 마이그레이션 작업 실행  
+##  <a name="Run_Migration_Jobs"></a> 마이그레이션 작업 실행  
  아직 시작되지 않은 마이그레이션 작업을 실행하려면 다음 절차를 따르십시오.  
 
 
@@ -179,7 +180,7 @@ System Center Configuration Manager에서 마이그레이션할 경우 지원되
 
 4.  **예**를 선택하여 마이그레이션 작업을 시작합니다.  
 
-##  <a name="a-namebkmkprocupgrdssa-upgrade-or-reassign-a-shared-distribution-point"></a><a name="BKMK_ProcUpgrdSS"></a> 공유 배포 지점 업그레이드 또는 다시 할당  
+##  <a name="BKMK_ProcUpgrdSS"></a> 공유 배포 지점 업그레이드 또는 다시 할당  
  Configuration Manager 2007 원본 사이트에서 지원되는 공유 배포 지점을 업그레이드하거나 System Center Configuration Manager 원본 사이트에서 지원되는 공유 배포 지점을 다시 할당하여 대상 계층의 배포 지점이 되도록 할 수 있습니다.  
 
 > [!IMPORTANT]  
@@ -204,7 +205,7 @@ System Center Configuration Manager에서 마이그레이션할 경우 지원되
 
 6.  설정을 확인하고 마법사를 완료합니다.  
 
-##  <a name="a-namemonitormigrationa-monitor-migration-activity-in-the-migration-workspace"></a><a name="Monitor_MIgration"></a> 마이그레이션 작업 영역에서 마이그레이션 작업 모니터링  
+##  <a name="Monitor_MIgration"></a> 마이그레이션 작업 영역에서 마이그레이션 작업 모니터링  
  Configuration Manager 콘솔을 사용하여 마이그레이션을 모니터링합니다.  
 
 1.  Configuration Manager 콘솔에서 **관리**를 선택합니다.  
@@ -215,10 +216,10 @@ System Center Configuration Manager에서 마이그레이션할 경우 지원되
 
 4.  **요약** 및 **작업에 포함된 개체**탭에서 선택한 마이그레이션 작업에 대한 세부 정보와 상태를 확인합니다.  
 
-##  <a name="a-namebkmkmigrateclientsa-migrate-clients"></a><a name="BKMK_MigrateClients"></a> 클라이언트 마이그레이션  
+##  <a name="BKMK_MigrateClients"></a> 클라이언트 마이그레이션  
  계층 구조 간에 클라이언트에 대한 데이터를 마이그레이션한 후 마이그레이션을 완료하기 전에 대상 계층으로 클라이언트를 마이그레이션할 계획을 세웁니다. 계층 간 클라이언트 마이그레이션은 원본 계층에 할당된 컴퓨터에서 Configuration Manager 클라이언트 소프트웨어를 제거한 다음 대상 계층에서 Configuration Manager 클라이언트 소프트웨어를 설치하는 과정으로 이루어집니다. 대상 계층에서 클라이언트를 설치할 때 해당 계층의 기본 사이트에도 클라이언트를 할당합니다. 클라이언트 마이그레이션에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 마이그레이션 전략 계획](../../core/migration/planning-a-client-migration-strategy.md)을 참조하세요.  
 
-##  <a name="a-namecompletemigrationa-finish-migration"></a><a name="Complete_Migration"> 마이그레이션 완료</a>  
+##  <a name="Complete_Migration"></a> 마이그레이션 완료  
  원본 계층에서 마이그레이션을 완료하려면 이 절차를 따르세요.  
 
 1.  Configuration Manager 콘솔에서 **관리**를 선택합니다.  
@@ -238,9 +239,4 @@ System Center Configuration Manager에서 마이그레이션할 경우 지원되
 8.  **마이그레이션 데이터 정리** 대화 상자의 **원본 계층** 드롭다운 목록에서 원본 계층 최상위 사이트의 사이트 코드 및 사이트 서버를 선택한 다음 **확인**을 선택합니다.  
 
 9. **예**를 선택하여 원본 계층에 대한 마이그레이션 프로세스를 완료합니다.  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
