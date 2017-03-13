@@ -2,7 +2,7 @@
 title: "사이트 필수 조건 | Microsoft 문서"
 description: "Windows 컴퓨터를 System Center Configuration Manager 사이트 시스템 서버로 구성하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 12/30/2016
+ms.date: 1/17/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: e2330f116920f381ed10d186e17fdfb301d8a30a
-ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
+ms.sourcegitcommit: 42549b98dd7f418cc3f4543198aaeb90ea8a3efd
+ms.openlocfilehash: 0b1d2d619d6cdaf36cc22ef461ea1505b5cacc41
+ms.lasthandoff: 01/17/2017
 
 ---
 # <a name="site-and-site-system-prerequisites-for-system-center-configuration-manager"></a>System Center Configuration Manager의 사이트 및 사이트 시스템 필수 조건
@@ -33,7 +34,7 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 > [!NOTE]  
 >  2016년 1월에 .NET Framework 4.0, 4.5 및 4.5.1에 대한 지원이 만료되었습니다. 자세한 내용은 support.microsoft.com에서 [Microsoft .NET Framework 지원 기간 정책 FAQ](https://support.microsoft.com/gp/framework_faq?WT.mc_id=azurebg_email_Trans_943_NET452_Update)를 참조하세요.  
 
-## <a name="a-namebkmkgeneralprerewqa-general-site-server-requirements-and-limitations"></a><a name="bkmk_generalprerewq"></a> 일반적인 사이트 서버 요구 사항 및 제한 사항
+## <a name="bkmk_generalprerewq"></a> 일반적인 사이트 서버 요구 사항 및 제한 사항
 **다음 사항은 모든 사이트 시스템 서버에 적용됩니다.**
 
 -   각 사이트 시스템 서버는 64비트 운영 체제를 사용해야 합니다. 단, 일부 32비트 운영 체제 버전에 설치할 수 있는 배포 지점 사이트 시스템 역할의 경우는 예외입니다.  
@@ -54,8 +55,8 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
 -   모든 Configuration Manager 서비스의 시작 유형 또는 다음 사용자로 “로그온” 설정은 변경할 수 없습니다. 이 설정을 변경하면 주요 서비스가 정상적으로 실행되지 않을 수 있습니다.  
 
-##  <a name="a-namebkmk2012prereqa-prerequisites-for-windows-server-2012-and-later-operating-systems"></a><a name="bkmk_2012Prereq"></a> Windows Server 2012 이상 운영 체제의 필수 조건  
-###  <a name="a-namebkmk2012sspreqa-site-server-central-administration-site-and-primary-site"></a><a name="bkmk_2012sspreq"></a> 사이트 서버: 중앙 관리 사이트 및 기본 사이트  
+##  <a name="bkmk_2012Prereq"></a> Windows Server 2012 이상 운영 체제의 필수 조건  
+###  <a name="bkmk_2012sspreq"></a> 사이트 서버: 중앙 관리 사이트 및 기본 사이트  
   **Windows Server 역할 및 기능:**  
 
 -   .NET Framework 3.5 SP1 이상  
@@ -70,7 +71,7 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
     -   Configuration Manager 버전 1511에는 Windows ADK의 Windows 10 RTM(10.0.10240) 버전이 필요합니다.  
 
--   이 요구 사항에 대한 자세한 내용은 운영 체제 배포를 참조하세요.  
+-   이 요구 사항에 대한 자세한 내용은 [운영 체제 배포를 위한 인프라 요구 사항](/sccm/osd/plan-design/infrastructure-requirements-for-operating-system-deployment)을 참조하세요.  
 
 **Visual C++ 재배포 가능 패키지:**  
 
@@ -78,7 +79,7 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
 -   중앙 관리 사이트와 기본 사이트에는 해당하는 재배포 가능 패키지 파일의 x86 및 x64 버전이 모두 필요합니다.  
 
-###  <a name="a-namebkmk2012secpreqa-site-server-secondary-site"></a><a name="bkmk_2012secpreq"></a> 사이트 서버: 보조 사이트  
+###  <a name="bkmk_2012secpreq"></a> 사이트 서버: 보조 사이트  
 **Windows Server 역할 및 기능:**  
 
 -   .NET Framework 3.5 SP1 이상  
@@ -99,7 +100,7 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
 -   보조 사이트 서버는 이러한 사이트 시스템 역할에 대한 필수 구성 요소를 충족해야 합니다.  
 
-###  <a name="a-namebkmk2012dbpreqa-database-server"></a><a name="bkmk_2012dbpreq"></a> 데이터베이스 서버  
+###  <a name="bkmk_2012dbpreq"></a> 데이터베이스 서버  
 **원격 레지스트리 서비스:**  
 
 -   Configuration Manager 사이트를 설치하는 동안 사이트 데이터베이스를 호스트하는 컴퓨터에서 원격 레지스트리 서비스를 사용하도록 설정해야 합니다.  
@@ -112,16 +113,16 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
 -   Configuration Manager에서 보조 사이트 설치의 일부로 SQL Server Express를 설치하도록 선택한 경우 컴퓨터가 SQL Server Express를 실행하기 위한 요구 사항을 충족하는지 확인합니다.  
 
-###  <a name="a-namebkmk2012smsprovpreqa-sms-provider-server"></a><a name="bkmk_2012smsprovpreq"></a> SMS 공급자 서버  
+###  <a name="bkmk_2012smsprovpreq"></a> SMS 공급자 서버  
 **Windows ADK:**  
 
 -   SMS 공급자의 인스턴스를 설치하는 컴퓨터에는 설치하거나 업그레이드 중인 Configuration Manager 버전에서 요구하는 Windows ADK의 필수 버전이 있어야 합니다.  
 
     -   Configuration Manager 버전 1511에는 Windows ADK의 Windows 10 RTM(10.0.10240) 버전이 필요합니다.  
 
--   이 요구 사항에 대한 자세한 내용은 운영 체제 배포를 참조하세요.  
+-   이 요구 사항에 대한 자세한 내용은 [운영 체제 배포를 위한 인프라 요구 사항](/sccm/osd/plan-design/infrastructure-requirements-for-operating-system-deployment)을 참조하세요.  
 
-###  <a name="a-namebkmk2012acwspreqa-application-catalog-website-point"></a><a name="bkmk_2012acwspreq"></a> 응용 프로그램 카탈로그 웹 사이트 지점  
+###  <a name="bkmk_2012acwspreq"></a> 응용 프로그램 카탈로그 웹 사이트 지점  
 **Windows Server 역할 및 기능:**  
 
 -   .NET Framework 3.5 SP1 이상  
@@ -156,7 +157,7 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
     -   IIS 6 메타데이터 호환성  
 
-###  <a name="a-namebkmk2012acwsitepreqa-application-catalog-web-service-point"></a><a name="bkmk_2012ACwsitepreq"></a> 응용 프로그램 카탈로그 웹 서비스 지점  
+###  <a name="bkmk_2012ACwsitepreq"></a> 응용 프로그램 카탈로그 웹 서비스 지점  
 **Windows Server 역할 및 기능:**  
 
 -   .NET Framework 3.5 SP1 이상  
@@ -193,12 +194,12 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
 -   이 요구 사항이 동일하게 적용되는 다른 사이트 시스템 역할과 함께 이 사이트 시스템 역할을 배치해도 컴퓨터에 대한 이 메모리 요구 사항이 증가하지는 않으며 최소값인 5%가 그대로 유지됩니다.  
 
-###  <a name="a-namebkmk2012aipreqa-asset-intelligence-synchronization-point"></a><a name="bkmk_2012AIpreq"></a> Asset Intelligence 동기화 지점  
+###  <a name="bkmk_2012AIpreq"></a> Asset Intelligence 동기화 지점  
 **Windows Server 역할 및 기능:**  
 
 -   .NET Framework 4.5.2  
 
-###  <a name="a-namebkmk2012crppreqa-certificate-registration-point"></a><a name="bkmk_2012crppreq"></a> 인증서 등록 지점  
+###  <a name="bkmk_2012crppreq"></a> 인증서 등록 지점  
 **Windows Server 역할 및 기능:**  
 
 -   .NET Framework 4.5.2:  
@@ -219,7 +220,7 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
     -   IIS 6 WMI 호환성  
 
-###  <a name="a-namebkmk2012dppreqa-distribution-point"></a><a name="bkmk_2012dppreq"></a> 배포 지점  
+###  <a name="bkmk_2012dppreq"></a> 배포 지점  
 **Windows Server 역할 및 기능:**  
 
 -   원격 차등 압축  
@@ -264,12 +265,12 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 > [!NOTE]  
 > 배포 지점 사이트 시스템 역할에는 BITS(Background Intelligent Transfer Service)가 필요하지 않습니다. 배포 지점 컴퓨터에 BITS가 구성되어 있어도 BITS를 사용하는 클라이언트의 콘텐츠 다운로드를 원활하게 진행하기 위해 배포 지점 컴퓨터의 BITS를 사용하지 않습니다.  
 
-###  <a name="a-namebkmk2012epppreqa-endpoint-protection-point"></a><a name="bkmk_2012EPPpreq"></a> Endpoint Protection 지점  
+###  <a name="bkmk_2012EPPpreq"></a> Endpoint Protection 지점  
 **Windows Server 역할 및 기능:**  
 
 -   .NET Framework 3.5 SP1 이상  
 
-###  <a name="a-namebkmk2012enrollpreqa-enrollment-point"></a><a name="bkmk_2012Enrollpreq"></a> 등록 지점  
+###  <a name="bkmk_2012Enrollpreq"></a> 등록 지점  
 **Windows Server 역할 및 기능:**  
 
 -   .NET Framework 3.5 이상  
@@ -309,7 +310,7 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
 -   이 요구 사항이 동일하게 적용되는 다른 사이트 시스템 역할과 함께 이 사이트 시스템 역할을 배치해도 컴퓨터에 대한 이 메모리 요구 사항이 증가하지는 않으며 최소값인 5%가 그대로 유지됩니다.  
 
-###  <a name="a-namebkmk2012enrollproxpreqa-enrollment-proxy-point"></a><a name="bkmk_2012EnrollProxpreq"></a> 등록 프록시 지점  
+###  <a name="bkmk_2012EnrollProxpreq"></a> 등록 프록시 지점  
 **Windows Server 역할 및 기능:**  
 
 -   .NET Framework 3.5 이상  
@@ -350,14 +351,14 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
 -   이 요구 사항이 동일하게 적용되는 다른 사이트 시스템 역할과 함께 이 사이트 시스템 역할을 배치해도 컴퓨터에 대한 이 메모리 요구 사항이 증가하지는 않으며 최소값인 5%가 그대로 유지됩니다.  
 
-###  <a name="a-namebkmk2012fsppreqa-fallback-status-point"></a><a name="bkmk_2012FSPpreq"></a> 대체 상태 지점  
+###  <a name="bkmk_2012FSPpreq"></a> 대체 상태 지점  
 다음 항목이 추가된 기본 IIS 구성이 필요합니다.  
 
 -   IIS 6 관리 호환성:  
 
     -   IIS 6 메타데이터 호환성  
 
-###  <a name="a-namebkmk2012mppreqa-management-point"></a><a name="bkmk_2012MPpreq"></a> 관리 지점  
+###  <a name="bkmk_2012MPpreq"></a> 관리 지점  
 **Windows Server 역할 및 기능:**  
 
 -   .NET Framework 4.5.2  
@@ -380,7 +381,7 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
     -   IIS 6 WMI 호환성  
 
-###  <a name="a-namebkmk2012rspointa-reporting-services-point"></a><a name="bkmk_2012RSpoint"></a> 보고 서비스 지점  
+###  <a name="bkmk_2012RSpoint"></a> 보고 서비스 지점  
 **Windows Server 역할 및 기능:**  
 
 -   .NET Framework 4.5.2  
@@ -393,7 +394,7 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
 -   또한 다른 System Center 제품에 SQL Server 인스턴스 공유 관련 제한이 없는 경우 SQL Server Reporting Services에 사용하는 인스턴스를 다른 System Center 제품과 공유할 수 있습니다.  
 
-###  <a name="a-namebkmkscppreqa-service-connection-point"></a><a name="bkmk_SCPpreq"></a> 서비스 연결 지점  
+###  <a name="bkmk_SCPpreq"></a> 서비스 연결 지점  
 **Windows Server 역할 및 기능:**  
 
 -   .NET Framework 4.5.2  
@@ -406,7 +407,7 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
 -   사이트 시스템 역할에는 x64 버전이 필요합니다.  
 
-###  <a name="a-namebkmk2012suppreqa-software-update-point"></a><a name="bkmk_2012SUPpreq"></a> 소프트웨어 업데이트 지점  
+###  <a name="bkmk_2012SUPpreq"></a> 소프트웨어 업데이트 지점  
 **Windows Server 역할 및 기능:**  
 
 -   .NET Framework 3.5 SP1 이상  
@@ -424,7 +425,7 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 ### <a name="state-migration-point"></a>상태 마이그레이션 지점  
 기본 IIS 구성이 필요합니다.  
 
-##  <a name="a-namebkmk2008a-prerequisites-for-windows-server-2008-r2-and-windows-server-2008"></a><a name="bkmk_2008"></a> Windows Server 2008 R2 및 Windows Server 2008에 대한 필수 조건  
+##  <a name="bkmk_2008"></a> Windows Server 2008 R2 및 Windows Server 2008에 대한 필수 조건  
 [Microsoft 지원 기간](https://support.microsoft.com/lifecycle)에 설명된 대로 Windows Server 2008 및 Windows Server 2008 R2는 현재 추가 지원 상태이며 더 이상 일반 지원에 속하지 않습니다. 향후에 Configuration Manager에서 이러한 운영 체제를 사이트 시스템 서버로 사용할 수 있는지에 대한 자세한 내용은 [System Center Configuration Manager에서 제거되는 기능과 사용되지 않는 기능](../../../core/plan-design/changes/removed-and-deprecated-features.md)을 참조하세요.  
 
 **다음은 모든 .NET Framework 요구 사항에 적용됩니다.**  
@@ -435,7 +436,7 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
 -   사이트 시스템 서버에서 .NET Framework Windows 기능의 일부로 WCF 활성화를 구성할 수 있습니다. 예를 들어 Windows Server 2008 R2에서는 **기능 추가 마법사**를 실행하여 서버에 추가 기능을 설치합니다. **기능 선택** 페이지에서 **.NET Framework 3.5.1 기능**, **WCF 활성화**를 차례로 확장하고 **HTTP 활성화** 및 **비HTTP 활성화**의 확인란을 모두 선택하여 이러한 옵션을 사용하도록 설정합니다.  
 
-###  <a name="a-namebkmk2008sspreqa-site-server-central-administration-site-and-primary-site"></a><a name="bkmk_2008sspreq"></a> 사이트 서버: 중앙 관리 사이트 및 기본 사이트  
+###  <a name="bkmk_2008sspreq"></a> 사이트 서버: 중앙 관리 사이트 및 기본 사이트  
 **.NET Framework:**  
 
 -   .NET Framework 3.5 SP1 이상  
@@ -452,7 +453,7 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
     -   Configuration Manager 버전 1511에는 Windows ADK의 Windows 10 RTM(10.0.10240) 버전이 필요합니다.  
 
--   이 요구 사항에 대한 자세한 내용은 운영 체제 배포를 참조하세요.  
+-   이 요구 사항에 대한 자세한 내용은 [운영 체제 배포를 위한 인프라 요구 사항](/sccm/osd/plan-design/infrastructure-requirements-for-operating-system-deployment)을 참조하세요.  
 
 **Visual C++ 재배포 가능 패키지:**  
 
@@ -460,7 +461,7 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
 -   중앙 관리 사이트와 기본 사이트에는 해당하는 재배포 가능 패키지 파일의 x86 및 x64 버전이 모두 필요합니다.  
 
-###  <a name="a-namebkmk2008secpreqa-site-server-secondary-site"></a><a name="bkmk_2008secpreq"></a> 사이트 서버: 보조 사이트  
+###  <a name="bkmk_2008secpreq"></a> 사이트 서버: 보조 사이트  
 **.NET Framework:**  
 
 -   .NET Framework 3.5 SP1 이상  
@@ -479,7 +480,7 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
 -   보조 사이트 서버는 이러한 사이트 시스템 역할에 대한 필수 구성 요소를 충족해야 합니다.  
 
-###  <a name="a-namebkmk2008dbpreqa-database-server"></a><a name="bkmk_2008dbpreq"></a> 데이터베이스 서버  
+###  <a name="bkmk_2008dbpreq"></a> 데이터베이스 서버  
 **원격 레지스트리 서비스:**  
 
 -   Configuration Manager 사이트를 설치하는 동안 사이트 데이터베이스를 호스트하는 컴퓨터에서 원격 레지스트리 서비스를 사용하도록 설정해야 합니다.  
@@ -492,16 +493,16 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
 -   Configuration Manager에서 보조 사이트 설치의 일부로 SQL Server Express를 설치하도록 선택한 경우 컴퓨터가 SQL Server Express를 실행하기 위한 요구 사항을 충족하는지 확인합니다.  
 
-###  <a name="a-namebkmk2008smsprovpreqa-sms-provider-server"></a><a name="bkmk_2008smsprovpreq"></a> SMS 공급자 서버  
+###  <a name="bkmk_2008smsprovpreq"></a> SMS 공급자 서버  
 **Windows ADK:**  
 
 -   SMS 공급자의 인스턴스를 설치하는 컴퓨터에는 설치하거나 업그레이드 중인 Configuration Manager 버전에서 요구하는 Windows ADK의 필수 버전이 있어야 합니다.  
 
     -   Configuration Manager 버전 1511에는 Windows ADK의 Windows 10 RTM(10.0.10240) 버전이 필요합니다.  
 
--   이 요구 사항에 대한 자세한 내용은 운영 체제 배포를 참조하세요.  
+-   이 요구 사항에 대한 자세한 내용은 [운영 체제 배포를 위한 인프라 요구 사항](/sccm/osd/plan-design/infrastructure-requirements-for-operating-system-deployment)을 참조하세요.  
 
-###  <a name="a-namebkmk2008acwspreqa-application-catalog-website-point"></a><a name="bkmk_2008acwspreq"></a> 응용 프로그램 카탈로그 웹 사이트 지점  
+###  <a name="bkmk_2008acwspreq"></a> 응용 프로그램 카탈로그 웹 사이트 지점  
 **.NET Framework:**  
 
 -   .NET Framework 4.5.2  
@@ -530,7 +531,7 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
     -   IIS 6 메타데이터 호환성  
 
-###  <a name="a-namebkmk2008acwsitepreqa-application-catalog-web-service-point"></a><a name="bkmk_2008ACwsitepreq"></a> 응용 프로그램 카탈로그 웹 서비스 지점  
+###  <a name="bkmk_2008ACwsitepreq"></a> 응용 프로그램 카탈로그 웹 서비스 지점  
 **.NET Framework:**  
 
 -   .NET Framework 3.5 SP1 이상  
@@ -563,12 +564,12 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
 -   이 요구 사항이 동일하게 적용되는 다른 사이트 시스템 역할과 함께 이 사이트 시스템 역할을 배치해도 컴퓨터에 대한 이 메모리 요구 사항이 증가하지는 않으며 최소값인 5%가 그대로 유지됩니다.  
 
-###  <a name="a-namebkmk2008aipreqa-asset-intelligence-synchronization-point"></a><a name="bkmk_2008AIpreq"></a> Asset Intelligence 동기화 지점  
+###  <a name="bkmk_2008AIpreq"></a> Asset Intelligence 동기화 지점  
 **.NET Framework:**  
 
 -   .NET Framework 4.5.2  
 
-###  <a name="a-namebkmk2008crppreqa-certificate-registration-point"></a><a name="bkmk_2008crppreq"></a> 인증서 등록 지점  
+###  <a name="bkmk_2008crppreq"></a> 인증서 등록 지점  
 **.NET Framework:**  
 
 -   .NET Framework 4.5.2  
@@ -585,7 +586,7 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
     -   IIS 6 WMI 호환성  
 
-###  <a name="a-namebkmk2008dppreqa-distribution-point"></a><a name="bkmk_2008dppreq"></a> 배포 지점  
+###  <a name="bkmk_2008dppreq"></a> 배포 지점  
 **IIS 구성:**
 
 기본 IIS 구성 또는 사용자 지정 구성을 사용할 수 있습니다. 사용자 지정 IIS 구성을 사용하려면 IIS에 대해 다음 옵션을 사용하도록 설정해야 합니다.  
@@ -637,12 +638,12 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 > 배포 지점 사이트 시스템 역할에는 BITS(Background Intelligent Transfer Service)가 필요하지 않습니다. 배포 지점 컴퓨터에 BITS가 구성되어 있어도 BITS를 사용하는 클라이언트의 콘텐츠 다운로드를 원활하게 진행하기 위해 배포 지점 컴퓨터의 BITS를 사용하지 않습니다.  
 
 
-###  <a name="a-namebkmk2008epppreqa-endpoint-protection-point"></a><a name="bkmk_2008EPPpreq"></a> Endpoint Protection 지점  
+###  <a name="bkmk_2008EPPpreq"></a> Endpoint Protection 지점  
 **.NET Framework:**  
 
 -   .NET Framework 3.5 SP1 이상  
 
-###  <a name="a-namebkmk2008enrollpreqa-enrollment-point"></a><a name="bkmk_2008Enrollpreq"></a> 등록 지점  
+###  <a name="bkmk_2008Enrollpreq"></a> 등록 지점  
 **.NET Framework:**  
 
 -   .NET Framework 4.5.2  
@@ -671,7 +672,7 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
 -   이 요구 사항이 동일하게 적용되는 다른 사이트 시스템 역할과 함께 이 사이트 시스템 역할을 배치해도 컴퓨터에 대한 이 메모리 요구 사항이 증가하지는 않으며 최소값인 5%가 그대로 유지됩니다.  
 
-###  <a name="a-namebkmk2008enrollproxpreqa-enrollment-proxy-point"></a><a name="bkmk_2008EnrollProxpreq"></a> 등록 프록시 지점  
+###  <a name="bkmk_2008EnrollProxpreq"></a> 등록 프록시 지점  
 **.NET Framework:**  
 
 -   .NET Framework 4.5.2  
@@ -700,7 +701,7 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
 -   이 요구 사항이 동일하게 적용되는 다른 사이트 시스템 역할과 함께 이 사이트 시스템 역할을 배치해도 컴퓨터에 대한 이 메모리 요구 사항이 증가하지는 않으며 최소값인 5%가 그대로 유지됩니다.  
 
-###  <a name="a-namebkmk2008fsppreqa-fallback-status-point"></a><a name="bkmk_2008FSPpreq"></a> 대체 상태 지점  
+###  <a name="bkmk_2008FSPpreq"></a> 대체 상태 지점  
 **IIS 구성:**
 
 다음 항목이 추가된 기본 IIS 구성이 필요합니다.  
@@ -709,7 +710,7 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
     -   IIS 6 메타데이터 호환성  
 
-###  <a name="a-namebkmk2008mppreqa-management-point"></a><a name="bkmk_2008MPpreq"></a> 관리 지점  
+###  <a name="bkmk_2008MPpreq"></a> 관리 지점  
 **.NET Framework:**  
 
 -   .NET Framework 4.5.2  
@@ -750,7 +751,7 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
 -   BITS 서버 확장 및 자동으로 선택된 옵션이나 BITS(Background Intelligent Transfer Services) 및 자동으로 선택된 옵션  
 
-###  <a name="a-namebkmk2008rspointa-reporting-services-point"></a><a name="bkmk_2008RSpoint"></a> 보고 서비스 지점  
+###  <a name="bkmk_2008RSpoint"></a> 보고 서비스 지점  
 **.NET Framework:**  
 
 -   .NET Framework 4.5.2  
@@ -763,7 +764,7 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
 -   또한 다른 System Center 제품에 SQL Server 인스턴스 공유 관련 제한이 없는 경우 SQL Server Reporting Services에 사용하는 인스턴스를 다른 System Center 제품과 공유할 수 있습니다.  
 
-###  <a name="a-namebkmk2008scppreqa-service-connection-point"></a><a name="bkmk_2008SCPpreq"></a> 서비스 연결 지점  
+###  <a name="bkmk_2008SCPpreq"></a> 서비스 연결 지점  
 **.NET Framework:**  
 
 -   .NET Framework 4.5.2  
@@ -776,7 +777,7 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
 -   사이트 시스템 역할에는 x64 버전이 필요합니다.  
 
-###  <a name="a-namebkmk2008suppreqa-software-update-point"></a><a name="bkmk_2008SUPpreq"></a> 소프트웨어 업데이트 지점  
+###  <a name="bkmk_2008SUPpreq"></a> 소프트웨어 업데이트 지점  
 **.NET Framework:**  
 
 -   .NET Framework 3.5 SP1 이상  
@@ -793,13 +794,8 @@ ms.openlocfilehash: 8bce8feffe4f09778d84145198d7e3c186de6ffe
 
 -   자세한 내용은 [System Center Configuration Manager에서 소프트웨어 업데이트 계획](../../../sum/plan-design/plan-for-software-updates.md)을 참조하세요.
 
-###  <a name="a-namebkmk2008smppreqa-state-migration-point"></a><a name="bkmk_2008SMPpreq"></a> 상태 마이그레이션 지점  
+###  <a name="bkmk_2008SMPpreq"></a> 상태 마이그레이션 지점  
 **IIS 구성:**
 
 기본 IIS 구성이 필요합니다.  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
