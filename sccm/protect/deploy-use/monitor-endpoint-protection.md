@@ -2,7 +2,7 @@
 title: "Endpoint Protection 상태 모니터링 | Microsoft 문서"
 description: "System Center Configuration Manager 계층 구조에서 Endpoint Protection을 모니터링하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 12/9/2016
+ms.date: 03/13/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 0fa837c68eb073d2ceaf48c938137a94141a102e
 ms.openlocfilehash: 99e266e44f718d97c2a6e61e8e6816752751ed7b
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.openlocfilehash: 99e266e44f718d97c2a6e61e8e6816752751ed7b
 
 **모니터링** 작업 영역 **보안** 아래의 **Endpoint Protection 상태** 노드, **자산 및 호환성** 작업 영역의 **Endpoint Protection** 노드 및 보고서를 사용하여 Microsoft System Center Configuration Manager 계층에서 Endpoint Protection을 모니터링할 수 있습니다.  
 
-##  <a name="a-namebkmk1a-how-to-monitor-endpoint-protection-by-using-the-endpoint-protection-status-node"></a><a name="BKMK_1"></a> Endpoint Protection 상태 노드를 사용하여 Endpoint Protection을 모니터링하는 방법  
+##  <a name="BKMK_1"></a> Endpoint Protection 상태 노드를 사용하여 Endpoint Protection을 모니터링하는 방법  
 
 1.  Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.  
 
@@ -47,7 +48,7 @@ ms.openlocfilehash: 99e266e44f718d97c2a6e61e8e6816752751ed7b
     > [!IMPORTANT]  
     >  ** 상태** 노드에 표시되는 정보는 Configuration Manager 데이터베이스에서 마지막으로 요약된 데이터를 기반으로 하며 최신 정보가 아닐 수도 있습니다. 최신 데이터를 검색하려는 경우 **홈** 탭에서 **요약 실행**을 클릭하거나 **요약 일정** 을 클릭하여 요약 간격을 조정합니다.  
 
-##  <a name="a-namebkmk2a-how-to-monitor-endpoint-protection-in-the-assets-and-compliance-workspace"></a><a name="BKMK_2"></a> 자산 및 준수 작업 영역에서 Endpoint Protection을 모니터링하는 방법  
+##  <a name="BKMK_2"></a> 자산 및 준수 작업 영역에서 Endpoint Protection을 모니터링하는 방법  
 
 1.  Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.  
 
@@ -59,7 +60,7 @@ ms.openlocfilehash: 99e266e44f718d97c2a6e61e8e6816752751ed7b
 
 3.  *<컬렉션 이름\>* 목록에서 컴퓨터를 선택하고 **맬웨어 세부 정보** 탭을 클릭합니다.  
 
-##  <a name="a-namebkmk3a-how-to-monitor-endpoint-protection-by-using-reports"></a><a name="BKMK_3"></a> 보고서를 사용하여 Endpoint Protection을 모니터링하는 방법  
+##  <a name="BKMK_3"></a> 보고서를 사용하여 Endpoint Protection을 모니터링하는 방법  
  계층 구조의 Endpoint Protection에 대한 정보를 보려면 다음 보고서를 참조하세요. 이러한 보고서를 사용하여 Endpoint Protection 문제를 해결할 수도 있습니다. Configuration Manager에서 보고를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고](../../core/servers/manage/reporting.md) 및 [System Center Configuration Manager의 로그 파일](../../core/plan-design/hierarchy/log-files.md)을 참조하세요. Endpoint Protection 보고서는 Endpoint Protection 폴더에 있습니다.  
 
 |보고서 이름|설명|  
@@ -81,9 +82,4 @@ ms.openlocfilehash: 99e266e44f718d97c2a6e61e8e6816752751ed7b
 |**허용**|관리 사용자 실행 하는 맬웨어를 포함 하는 소프트웨어를 허용 하도록 선택 합니다.|  
 |**작업 없음**|Endpoint Protection에서 맬웨어에 대해 아무 작업도 수행하지 않았습니다. 맬웨어가 검색 되 고 맬웨어가 더 이상 감지; 후 컴퓨터를 다시 시작한 경우 발생할 수 없습니다. 예 매핑된 네트워크 드라이브에 있는 경우 어떤 맬웨어가 검색 되는 다시 연결 되지 컴퓨터를 다시 시작 합니다.|  
 |**차단**|Endpoint Protection에서 맬웨어가 실행되지 않도록 차단했습니다. 이 맬웨어를 포함 하는 컴퓨터의 프로세스에 없는 경우에 발생할 수 있습니다.|
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
