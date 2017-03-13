@@ -2,7 +2,7 @@
 title: "Endpoint Protection에 대한 Windows 방화벽 정책 | Microsoft 문서"
 description: "System Center 2012 Configuration Manager에서 Endpoint Protection에 대한 Windows 방화벽 정책을 만들어 배포하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/07/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
