@@ -19,6 +19,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 45931f60273f3130cca36320770126a36dcc3d1e
 ms.openlocfilehash: 9870ffa6ae5f80db823bfc74a7cc2e67fc8cf21d
+ms.lasthandoff: 01/13/2017
 
 
 ---
@@ -48,7 +49,7 @@ System Center Configuration Manager에서는 원본 사이트에 있는 다른 �
 
 -   [소프트웨어 계량 규칙 사용자 지정 항목 마이그레이션 계획](#Plan_Migrate_SWM_Rules)  
 
-##  <a name="a-nameplanmigratesoftwareupdatesa-plan-to-migrate-software-updates"></a><a name="Plan_migrate_Software_updates">소프트웨어 업데이트 마이그레이션 계획</a>  
+##  <a name="Plan_migrate_Software_updates"></a>소프트웨어 업데이트 마이그레이션 계획  
  소프트웨어 업데이트 개체(예: 소프트웨어 업데이트 패키지 및 소프트웨어 업데이트 배포)를 마이그레이션할 수 있습니다.  
 
  소프트웨어 업데이트 개체를 성공적으로 마이그레이션하려면 먼저 대상 계층 구조를 원본 계층 구조 환경과 일치하는 구성으로 설정해야 합니다. 그렇게 하려면 다음 작업을 수행해야 합니다.  
@@ -79,7 +80,7 @@ Configuration Manager 2007 원본 계층 구조에서 마이그레이션할 때 
 
 System Center 2012 Configuration Manager 또는 System Center Configuration Manager 원본 계층에서 개체를 마이그레이션할 때 소프트웨어 업데이트 개체는 수정되지 않습니다.  
 
-##  <a name="a-nameplanmigratecontenta-plan-to-migrate-content"></a><a name="Plan_Migrate_content"></a> 콘텐츠 마이그레이션 계획  
+##  <a name="Plan_Migrate_content"></a> 콘텐츠 마이그레이션 계획  
  지원되는 원본 계층에서 대상 계층으로 콘텐츠를 마이그레이션할 수 있습니다. Configuration Manager 2007 원본 계층 구조의 경우 이러한 콘텐츠로는 소프트웨어 배포 패키지 및 프로그램과 가상 응용 프로그램(예: Microsoft Application Virtualization(App-V))이 있습니다. System Center 2012 Configuration Manager 및 System Center Configuration Manager 원본 계층 구조의 경우 이러한 콘텐츠에 응용 프로그램 및 App-V 가상 응용 프로그램이 포함됩니다. 계층 구조 간에 콘텐츠를 마이그레이션하는 경우 압축된 원본 파일이 대상 계층 구조로 마이그레이션됩니다.  
 
 ### <a name="packages-and-programs"></a>패키지 및 프로그램  
@@ -121,12 +122,12 @@ System Center 2012 Configuration Manager 또는 System Center Configuration Mana
 ### <a name="applications"></a>응용 프로그램  
  지원되는 System Center 2012 Configuration Manager 또는 System Center Configuration Manager 원본 계층에서 대상 계층으로 응용 프로그램을 마이그레이션할 수 있습니다. 원본 계층에서 대상 계층으로 클라이언트를 재할당하면 클라이언트가 마이그레이션된 응용 프로그램을 다시 실행하지 않도록 이전에 설치한 응용 프로그램 기록을 유지합니다.  
 
-##  <a name="a-namebkmkmigratecollectionsa-plan-to-migrate-collections"></a><a name="BKMK_MigrateCollections"></a> 컬렉션 마이그레이션 계획  
+##  <a name="BKMK_MigrateCollections"></a> 컬렉션 마이그레이션 계획  
  지원되는 System Center 2012 Configuration Manager 또는 System Center Configuration Manager 원본 계층에서 컬렉션 조건을 마이그레이션할 수 있습니다. 이 경우 개체 기반 마이그레이션 작업을 사용할 수 있습니다. 컬렉션을 마이그레이션할 때 컬렉션의 규칙은 마이그레이션하지만 컬렉션의 구성원에 대한 정보나 컬렉션의 구성원과 관련된 정보 또는 개체는 마이그레이션하지 않습니다.  
 
  Configuration Manager 2007 원본 계층에서 마이그레이션할 때 컬렉션 개체는 마이그레이션할 수 없습니다.  
 
-##  <a name="a-nameplanmigrateosda-plan-to-migrate-operating-system-deployments"></a><a name="Plan_migrate_OSD"></a> 운영 체제 배포 마이그레이션 계획  
+##  <a name="Plan_migrate_OSD"></a> 운영 체제 배포 마이그레이션 계획  
 지원되는 원본 계층에서 다음 운영 체제 배포 개체를 마이그레이션할 수 있습니다.  
 
 -   운영 체제 이미지 및 패키지. 부팅 이미지의 원본 경로가 대상 사이트의 Windows AIK(Windows 자동 설치 키트)의 기본 이미지 위치로 업데이트됩니다. 다음은 운영 체제 이미지 및 패키지를 마이그레이션하기 위한 요구 사항 및 제한 사항입니다.  
@@ -144,7 +145,7 @@ System Center 2012 Configuration Manager 또는 System Center Configuration Mana
 
 -   드라이버 및 드라이버 패키지  
 
-##  <a name="a-nameplanmigratecompliancesettingsa-plan-to-migrate-desired-configuration-management"></a><a name="Plan_Migrate_Compliance_settings"></a> 원하는 구성 관리 마이그레이션 계획  
+##  <a name="Plan_Migrate_Compliance_settings"></a> 원하는 구성 관리 마이그레이션 계획  
 구성 항목 및 구성 기준을 마이그레이션할 수 있습니다.  
 
 > [!NOTE]  
@@ -152,14 +153,14 @@ System Center 2012 Configuration Manager 또는 System Center Configuration Mana
 
 Configuration Manager 2007 구성 팩을 가져올 수 있습니다. 가져오기 프로세스에서 구성 팩이 System Center Configuration Manager와 호환되도록 자동으로 변환됩니다.  
 
-##  <a name="a-nameplanmigrateboundariesa-plan-to-migrate-boundaries"></a><a name="Plan_migrate_Boundaries"></a> 경계 마이그레이션 계획  
+##  <a name="Plan_migrate_Boundaries"></a> 경계 마이그레이션 계획  
  계층 간에 경계를 마이그레이션할 수 있습니다. Configuration Manager 2007에서 경계를 마이그레이션하는 경우 원본 사이트의 각 경계가 동시에 마이그레이션되고, 대상 계층에 만들어진 새 경계 그룹에 추가됩니다. System Center 2012 Configuration Manager 또는 System Center Configuration Manager 계층 구조에서 경계를 마이그레이션하는 경우 선택한 각 경계는 대상 계층 구조의 새 경계 그룹에 추가됩니다.  
 
  자동으로 생성된 각 경계 그룹은 콘텐츠 위치에 대해 사용할 수 있지만 사이트 할당에는 사용할 수 없습니다. 이를 통해 원본 계층과 대상 계층 간의 사이트 할당에서 경계가 겹치지 않도록 방지됩니다. Configuration Manager 2007 원본 사이트에서 마이그레이션하면 새로 설치되는 Configuration Manager 2007 클라이언트가 대상 계층 구조에 잘못 할당되는 현상을 방지할 수 있습니다. 기본적으로 System Center Configuration Manager 클라이언트는 Configuration Manager 2007 사이트에 자동으로 할당하지 않습니다.  
 
  마이그레이션하는 동안 대상 계층과 함께 배포 지점을 공유하는 경우 해당 배포와 연결된 모든 경계는 자동으로 대상 계층에 마이그레이션됩니다. 대상 계층에서 마이그레이션은 각 공유 배포 지점에 대해 새로운 읽기 전용 경계 그룹을 만듭니다. 원본 계층의 배포 지점에 대한 경계를 변경하는 경우 대상 계층의 경계 그룹은 다음 데이터 수집 주기 동안 이러한 변경 내용으로 업데이트됩니다.  
 
-##  <a name="a-nameplanmigratereportsa-plan-to-migrate-reports"></a><a name="Plan_Migrate_reports"></a> 보고서 마이그레이션 계획  
+##  <a name="Plan_Migrate_reports"></a> 보고서 마이그레이션 계획  
 Configuration Manager는 보고서 마이그레이션을 지원하지 않습니다. 대신, SQL Server Reporting Services 보고서 작성기를 사용하여 원본 계층에서 보고서를 내보내고 대상 계층으로 다시 가져올 수 있습니다.  
 
 > [!NOTE]  
@@ -167,7 +168,7 @@ Configuration Manager는 보고서 마이그레이션을 지원하지 않습니�
 
 보고에 대한 자세한 내용은 [System Center Configuration Manager에서 보고](../../core/servers/manage/reporting.md)를 참조하세요.  
 
-##  <a name="a-nameplanmigrateorgfoldersa-plan-to-migrate-organizational-and-search-folders"></a><a name="Plan_Migrate_Org_Folders"></a> 조직 폴더 및 검색 폴더의 마이그레이션 계획  
+##  <a name="Plan_Migrate_Org_Folders"></a> 조직 폴더 및 검색 폴더의 마이그레이션 계획  
  지원되는 원본 계층에서 대상 계층으로 조직 폴더 및 검색 폴더를 마이그레이션할 수 있습니다. 또한 System Center 2012 Configuration Manager 또는 System Center Configuration Manager 원본 계층에서 저장된 검색 조건을 대상 계층으로 마이그레이션할 수 있습니다.  
 
  기본적으로 마이그레이션할 때 마이그레이션 프로세스에 개체 및 컬렉션의 검색 폴더 및 관리 폴더 구조가 유지됩니다. 하지만 마이그레이션 작업 만들기 마법사의 **설정** 페이지에서 이 옵션의 확인란을 선택 취소하여 개체의 조직 구조를 마이그레이션하지 않도록 마이그레이션 작업을 설정할 수 있습니다. 컬렉션의 조직 구조는 항상 유지됩니다.  
@@ -176,19 +177,14 @@ Configuration Manager는 보고서 마이그레이션을 지원하지 않습니�
 
  System Center 2012 Configuration Manager 또는 System Center Configuration Manager 원본 계층에서 저장된 검색을 마이그레이션하는 경우 검색 조건이 마이그레이션되며 검색 결과에 대한 정보는 마이그레이션되지 않습니다. 저장된 검색의 마이그레이션은 Configuration Manager 2007 원본 사이트에서 적용되지 않습니다.  
 
-##  <a name="a-nameplanmigrateaia-plan-to-migrate-asset-intelligence-customizations"></a><a name="Plan_Migrate_AI"></a> Asset Intelligence 사용자 지정 항목 마이그레이션 계획  
+##  <a name="Plan_Migrate_AI"></a> Asset Intelligence 사용자 지정 항목 마이그레이션 계획  
  지원되는 원본 계층에서 대상 계층으로 Asset Intelligence 사용자 지정 항목을 마이그레이션할 수 있습니다. Configuration Manager 2007과 System Center Configuration Manager 간에 Asset Intelligence 사용자 지정 항목의 구조는 크게 변경되지 않았습니다.  
 
 > [!NOTE]  
 >  System Center Configuration Manager는 Asset Intelligence Service 2.0(AIS 2.0)을 사용하는 Configuration Manager 2007 사이트에서의 Asset Intelligence 개체 마이그레이션을 지원하지 않습니다.  
 
-##  <a name="a-nameplanmigrateswmrulesa-plan-to-migrate-software-metering-rules-customizations"></a><a name="Plan_Migrate_SWM_Rules"></a> 소프트웨어 계량 규칙 사용자 지정 항목 마이그레이션 계획  
+##  <a name="Plan_Migrate_SWM_Rules"></a> 소프트웨어 계량 규칙 사용자 지정 항목 마이그레이션 계획  
  Configuration Manager 2007과 System Center Configuration Manager 간의 소프트웨어 계량 규칙은 크게 변경되지 않았습니다. 지원되는 원본 계층에서 대상 계층으로 소프트웨어 계량 규칙을 마이그레이션할 수 있습니다.  
 
  기본적으로, 대상 계층으로 마이그레이션하는 소프트웨어 계량 규칙은 대상 계층의 특정 사이트와 연결되는 것이 아니며 대신, 계층의 모든 클라이언트에 적용됩니다. 특정 사이트의 클라이언트에 소프트웨어 계량 규칙을 적용하려면 마이그레이션 이후 계량 규칙을 편집해야 합니다.  
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 
