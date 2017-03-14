@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 168650cca28fe1331e48ea5e8e025e110dda835f
-ms.openlocfilehash: 4ca43db385ea97d5d026c50a799b783096c05d36
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
+ms.openlocfilehash: a60b8c103a303dcae0bd66f3060d5a8f17d1cef9
+ms.lasthandoff: 03/04/2017
 
 
 ---
@@ -306,7 +306,8 @@ IIS를 실행하는 사이트 시스템의 경우 Configuration Manager에서 II
 ##  <a name="BKMK_Security_FSP"></a> 대체 상태 지점에 대한 보안 모범 사례  
  Configuration Manager에 대체 상태 지점을 설치하는 경우 다음 보안 모범 사례를 따르세요.  
 
- 대체 상태 지점 설치와 관련된 보안 고려 사항에 대한 자세한 내용은 [대체 상태 지점 필요 여부 결정](../../../core/clients/deploy/plan/determine-the-site-system-roles-for-clients.md#BKMK_Determine_FSP)을 참조하세요.  
+ 대체 상태 지점 설치와 관련된 보안 고려 사항에 대한 자세한 내용은 [대체 상태 지점 필요 여부 결정](../../../core/clients/deploy/plan/determine-the-site-system-roles-for-clients.md#determine-if-you-need-a-fallback-status-point)을 참조하세요.  
+
 
 **사이트 시스템에서 다른 사이트 시스템 역할을 실행하지 않고 도메인 컨트롤러에 대체 상태 지점을 설치하지 않습니다.**  
 
