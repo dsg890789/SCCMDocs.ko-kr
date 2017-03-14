@@ -2,7 +2,7 @@
 title: "PKI 인증서 요구 사항 | Microsoft 문서"
 description: "System Center Configuration Manager에 필요할 수 있는 PKI 인증서 요구 사항을 찾습니다."
 ms.custom: na
-ms.date: 12/07/2016
+ms.date: 02/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: d6a73e68-57d8-4786-842b-36669541d8ff
 caps.latest.revision: 17
-author: Nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: eff38aafbbbbb077ca63474cde738ee8ec57307a
-ms.openlocfilehash: 186a9f1a58c2c4d123c14a8774999dbc19e77dac
+ms.sourcegitcommit: b90519f6f6e3599cd34f5cf93b476739ec17847b
+ms.openlocfilehash: 64ed5982cfd1de6ec135f02c84b9396266001b42
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -32,9 +33,8 @@ ms.openlocfilehash: 186a9f1a58c2c4d123c14a8774999dbc19e77dac
 -   Windows Server 2008: [Windows Server 2008의 Active Directory 인증서 서비스](http://go.microsoft.com/fwlink/p/?LinkId=115018)  
 
 > [!IMPORTANT]  
->  2017년 1월 1일부터 Windows에서는 SHA-1로 서명된 특정 인증서를 더 이상 신뢰하지 않습니다.  SHA-2(SHA-256 포함)로 서명된 서버 및 클라이언트 인증 인증서를 새로 발급하는 것이 좋습니다.  
->   
->  이 변경 내용과 기한 전에 가능한 업데이트에 대한 자세한 내용은 다음 블로그 게시물을 참조하세요. [Windows Enforcement of Authenticode Code Signing and Timestamping(Windows의 Authenticode 코드 서명 및 타임스탬프 적용)](http://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-authenticode-code-signing-and-timestamping.aspx)  
+>  2017년 2월 14일부터 Windows에서는 SHA-1로 서명된 특정 인증서를 더 이상 신뢰하지 않습니다. 자세한 내용은 [SHA1 인증서의 Windows 적용](http://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx)에서 확인할 수 있습니다. 일반적으로 SHA-2(SHA-256 및 SHA-512 포함)로 서명된 서버 및 클라이언트 인증 인증서를 새로 발급하는 것이 좋습니다.
+> 또한 모든 인터넷 연결 서비스에서 SHA-2 인증서를 사용하는 것이 좋습니다. 예를 들어 클라우드 관리 게이트웨이에서 사용할 공용 인증서를 구입하는 경우 SHA-2 인증서를 구입해야 합니다.
 
  System Center Configuration Manager가 모바일 장치 및 Mac 컴퓨터에 등록하는 클라이언트 인증서, Microsoft Intune에서 모바일 장치를 관리하기 위해 자동으로 만드는 인증서 및 System Center Configuration Manager가 AMT 기반 컴퓨터에 설치하는 인증서를 제외한 다음 인증서는 PKI를 사용하여 만들고, 배포하고, 관리할 수 있습니다. 그러나 Active Directory 인증서 서비스 및 인증서 템플릿을 사용하는 경우 이 Microsoft PKI 솔루션을 사용하면 인증서를 쉽게 관리할 수 있습니다. 인증서 요구 사항에 가장 부합하는 인증서 템플릿을 알아보려면 다음 표의 **사용할 Microsoft 인증서 템플릿** 열을 참조하세요. 템플릿 기반 인증서는 Windows Server 2008 Enterprise 및 Windows Server 2008 Datacenter와 같은 Enterprise Edition 또는 Datacenter Edition의 서버 운영 체제에서 실행되는 엔터프라이즈 인증 기관에서만 발행할 수 있습니다.  
 
@@ -46,7 +46,7 @@ ms.openlocfilehash: 186a9f1a58c2c4d123c14a8774999dbc19e77dac
 
  인증서 요구 사항을 보려면 다음 섹션을 참조하세요.  
 
-##  <a name="a-namebkmkpkicertificatesforserversa-pki-certificates-for-servers"></a><a name="BKMK_PKIcertificates_for_servers"></a> 서버용 PKI 인증서  
+##  <a name="BKMK_PKIcertificates_for_servers"></a> 서버용 PKI 인증서  
 
 |System Center Configuration Manager 구성 요소|인증서 용도|사용할 Microsoft 인증서 템플릿|인증서에 포함되는 정보|System Center Configuration Manager에서 인증서가 사용되는 방식|  
 |-------------------------------------|-------------------------|-------------------------------------------|---------------------------------------------|----------------------------------------------------------|  
@@ -60,7 +60,7 @@ ms.openlocfilehash: 186a9f1a58c2c4d123c14a8774999dbc19e77dac
 |대역 외 서비스 지점|AMT 프로비전|**웹 서버** (수정됨)|**확장된 키 사용** 값에 **서버 인증(1.3.6.1.5.5.7.3.1)** 및 개체 식별자 **2.16.840.1.113741.1.2.3**을 포함해야 합니다.<br /><br /> 주체 이름 필드에 대역 외 서비스 지점을 호스팅하는 서버의 FQDN을 포함해야 합니다.<br /><br /> **참고:** 고유의 내부 CA가 아니라 외부 CA에서 AMT 프로비전 인증서를 요청하는 경우 AMT 프로비전 개체 식별자 2.16.840.1.113741.1.2.3을 지원하지 않으면 인증서 주체 이름의 OU(조직 구성 단위) 특성으로 **Intel(R) Client Setup Certificate**텍스트 문자열을 대신 지정할 수 있습니다. 영어로 된 이 텍스트를 대/소문자 그대로 사용(마침표 제외)해야 하며 대역 외 서비스 지점을 호스팅하는 서버의 FQDN도 포함해야 합니다.<br /><br /> 지원되는 키 길이: 1024 및 2048 AMT 6.0 이상 버전의 경우 4096비트의 키 길이도 지원됩니다.|이 인증서는 대역 외 서비스 지점 사이트 시스템 서버의 컴퓨터 인증서 저장소에 있는 개인 저장소에 있습니다.<br /><br /> 이 AMT 프로비전 인증서는 대역 외 관리를 위해 컴퓨터를 준비하는 데 사용됩니다.<br /><br /> 이 인증서는 AMT 프로비전 인증서를 제공하는 CA에서 요청해야 하며, Intel AMT 기반 컴퓨터의 BIOS 확장 프로그램에서 이 프로비전 인증서에 대해 루트 인증서 손도장(인증서 해시라고도 함)을 사용하도록 구성해야 합니다.<br /><br /> VeriSign은 AMT 프로비전 인증서를 제공하는 외부 CA의 대표적인 예이지만, 고유의 내부 CA를 사용할 수도 있습니다.<br /><br /> 대역 외 서비스 지점을 호스팅하는 서버에 인증서를 설치합니다. 이 대역 외 서비스 지점은 인증서의 루트 CA와 성공적으로 체인을 연결할 수 있어야 합니다. (VeriSign의 루트 CA 인증서 및 중간 CA 인증서는 기본적으로 Windows를 설치할 때 설치됩니다.)|  
 |Microsoft Intune 커넥터를 실행하는 사이트 시스템 서버|클라이언트 인증|해당 없음: Intune에서 이 인증서를 자동으로 만듭니다.|확장된 키 사용 값에 클라이언트 인증(1.3.6.1.5.5.7.3.2)이 포함됩니다.<br /><br /> 3가지 사용자 지정 확장을 통해 고객의 Intune 구독이 고유하게 식별됩니다.<br /><br /> 키 크기는 2048비트이며 SHA-1 해시 알고리즘을 사용합니다.<br /><br /> **참고:** 이러한 설정은 변경할 수 없습니다. 이 정보는 참조용으로만 제공됩니다.|Microsoft Intune을 구독하면 이 인증서가 자동으로 요청되고 Configuration Manager 데이터베이스에 설치됩니다. Microsoft Intune 커넥터를 설치하면 Microsoft Intune 커넥터를 실행하는 사이트 시스템 서버에 이 인증서가 설치됩니다. 컴퓨터 인증서 저장소에 설치됩니다.<br /><br /> 이 인증서는 Microsoft Intune 커넥터를 사용하여 Microsoft Intune에 대해 Configuration Manager 계층 구조를 인증하는 데 사용됩니다. 전송되는 모든 데이터에 SSL(Secure Sockets Layer)이 사용됩니다.|  
 
-###  <a name="a-namebkmkpkicertificatesforproxyserversa-proxy-web-servers-for-internet-based-client-management"></a><a name="BKMK_PKIcertificates_for_proxyservers"></a> 인터넷 기반 클라이언트 관리를 위한 프록시 웹 서버  
+###  <a name="BKMK_PKIcertificates_for_proxyservers"></a> 인터넷 기반 클라이언트 관리를 위한 프록시 웹 서버  
  사이트에서 인터넷 기반 클라이언트 관리를 지원하고 들어오는 Internet 연결에 SSL 종료(브리징)를 사용하여 프록시 웹 서버를 사용하는 경우 프록시 웹 서버에 대한 인증서 요구 사항이 다음 표에 나와 있습니다.  
 
 > [!NOTE]  
@@ -70,7 +70,7 @@ ms.openlocfilehash: 186a9f1a58c2c4d123c14a8774999dbc19e77dac
 |--------------------------------------|-------------------------|-------------------------------------------|---------------------------------------------|----------------------------------------------------------|  
 |인터넷을 통해 클라이언트 연결을 수락하는 프록시 웹 서버|서버 인증 및 클라이언트 인증|1. <br />                        **웹 서버**<br /><br /> 2. <br />                        **워크스테이션 인증**|주체 이름 필드 또는 주체 대체 이름 필드의 인터넷 FQDN(Microsoft 인증서 템플릿을 사용하는 경우 워크스테이션 템플릿에서만 주체 대체 이름을 사용할 수 있음).<br /><br /> SHA-2 해시 알고리즘이 지원됩니다.|이 인증서는 인터넷 클라이언트에 대해 다음 서버를 인증하고, SSL을 사용하여 클라이언트와 이 서버 간에 전송되는 모든 데이터를 암호화하는 데 사용됩니다.<br /><br /> - 인터넷 기반 관리 지점<br /><br /> - 인터넷 기반 배포 지점<br /><br /> - 인터넷 기반 소프트웨어 업데이트 지점<br /><br /> 이 클라이언트 인증은 System Center Configuration Manager 클라이언트와 인터넷 기반 사이트 시스템 간에 클라이언트 연결을 브리징하는 데 사용됩니다.|  
 
-##  <a name="a-namebkmkpkicertificatesforclientsa-pki-certificates-for-clients"></a><a name="BKMK_PKIcertificates_for_clients"></a> 클라이언트에 대한 PKI 인증서  
+##  <a name="BKMK_PKIcertificates_for_clients"></a> 클라이언트에 대한 PKI 인증서  
 
 |System Center Configuration Manager 구성 요소|인증서 용도|사용할 Microsoft 인증서 템플릿|인증서에 포함되는 정보|System Center Configuration Manager에서 인증서가 사용되는 방식|  
 |-------------------------------------|-------------------------|-------------------------------------------|---------------------------------------------|----------------------------------------------------------|  
@@ -83,9 +83,4 @@ ms.openlocfilehash: 186a9f1a58c2c4d123c14a8774999dbc19e77dac
 |Intel AMT 기반 컴퓨터|서버 인증입니다.|**웹 서버** (수정됨)<br /><br /> 주체 이름을 **이 Active Directory 정보로 만듦**으로 구성한 후에, **주체 이름 형식** 에 **일반 이름**을 선택합니다.<br /><br /> 대역 외 관리 구성 요소 속성에서 지정하는 범용 보안 그룹에 **읽기** 및 **등록** 권한을 부여해야 합니다.|**확장된 키 사용** 값에 **서버 인증(1을 참조하세요.3을 참조하세요.6을 참조하세요.1을 참조하세요.5을 참조하세요.5을 참조하세요.7을 참조하세요.3을 참조하세요.1)**을 참조하세요.<br /><br /> 주체 이름에 AMT 기반 컴퓨터의 FQDN이 포함되어야 합니다. 이는 Active Directory Domain Services에서 자동으로 제공됩니다.|이 인증서는 컴퓨터에 있는 관리 컨트롤러의 비휘발성 RAM에 상주하며 Windows 사용자 인터페이스에서 확인할 수 없습니다.<br /><br /> 각 Intel AMT 기반 컴퓨터는 AMT 프로비전 및 후속 업데이트 시에 이 인증서를 요청합니다. 이러한 컴퓨터에서 AMT 프로비전 정보를 제거하면 이 인증서가 해지됩니다.<br /><br /> Intel AMT 기반 컴퓨터에 이 인증서가 설치되면 루트 CA에 대한 인증서 체인도 설치됩니다. AMT 기반 컴퓨터는 키 길이가 2048비트를 초과하는 CA 인증서를 지원할 수 없습니다.<br /><br /> 인증서가 Intel AMT 기반 컴퓨터에 설치된 후에는 이 인증서가 대역 외 서비스 지점 사이트 시스템 서버와 대역 외 관리 콘솔이 실행되는 컴퓨터에 대해 AMT 기반 컴퓨터를 인증하고 TLS(전송 계층 보안)를 사용하여 이들 사이에 전송되는 모든 데이터를 암호화합니다.|  
 |Intel AMT 802.1X 클라이언트 인증서|클라이언트 인증|**워크스테이션 인증**<br /><br /> 주체 이름을 **이 Active Directory 정보로 만듦**으로 구성한 후에 **주체 이름 형식** 에 **일반 이름**을 선택하고, DNS 이름의 선택을 취소하고 대체 주체 이름에 UPN(사용자 계정 이름)을 선택합니다.<br /><br /> 대역 외 관리 구성 요소 속성에서 지정하는 범용 보안 그룹에 이 인증서 템플릿에 대한 **읽기** 및 **등록** 권한을 부여해야 합니다.|**확장된 키 사용** 값에 **클라이언트 인증(1을 참조하세요.3을 참조하세요.6을 참조하세요.1을 참조하세요.5을 참조하세요.5을 참조하세요.7을 참조하세요.3을 참조하세요.2)**을 참조하세요.<br /><br /> 주체 이름 필드에는 AMT 기반 컴퓨터의 FQDN이 포함되고, 주체 대체 이름에는 UPN이 포함되어야 합니다.<br /><br /> 지원되는 최대 키 길이: 2048비트|이 인증서는 컴퓨터에 있는 관리 컨트롤러의 비휘발성 RAM에 상주하며 Windows 사용자 인터페이스에서 확인할 수 없습니다.<br /><br /> 각 Intel AMT 기반 컴퓨터는 AMT 프로비전 시에 이 인증서를 요청할 수 있지만 AMT 프로비전 정보가 제거될 때 이 인증서를 해지하지 않습니다.<br /><br /> AMT 기반 컴퓨터에 인증서가 설치된 후에는 이 인증서를 통해 AMT 기반 컴퓨터에 네트워크 액세스를 허용하도록 RADIUS 서버에 대해 AMT 기반 컴퓨터가 인증됩니다.|  
 |Microsoft Intune에서 등록한 모바일 장치|클라이언트 인증|해당 없음: Intune에서 이 인증서를 자동으로 만듭니다.|확장된 키 사용 값에 클라이언트 인증(1.3.6.1.5.5.7.3.2)이 포함됩니다.<br /><br /> 3가지 사용자 지정 확장을 통해 고객의 Intune 구독이 고유하게 식별됩니다.<br /><br /> 사용자는 등록 시 인증서 주체 값을 제공할 수 있습니다. 그러나 이 값은 Intune에서 장치를 식별하는 데 사용되지 않습니다.<br /><br /> 키 크기는 2048비트이며 SHA-1 해시 알고리즘을 사용합니다.<br /><br /> **참고:** 이러한 설정은 변경할 수 없습니다. 이 정보는 참조용으로만 제공됩니다.|이 인증서는 인증된 사용자가 Microsoft Intune을 사용하여 모바일 장치를 등록할 때 자동으로 요청되고 설치됩니다. 이로 인해 장치에 생성되는 인증서는 컴퓨터 저장소에 저장되어 등록된 모바일 장치를 Intune에 대해 인증합니다. 이후에 이 장치를 관리할 수 있습니다.<br /><br /> 인증서에 포함되는 사용자 지정 확장 때문에 인증이 조직에 설정된 Intune 구독으로 제한됩니다.|
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

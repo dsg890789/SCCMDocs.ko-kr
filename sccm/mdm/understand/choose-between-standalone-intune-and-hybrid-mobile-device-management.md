@@ -2,7 +2,7 @@
 title: "Intune 독립 실행형 또는 하이브리드 MDM 선택 | Microsoft 문서"
 description: "Intune과 Configuration Manager를 사용하는 하이브리드 모바일 장치 관리 배포 또는 Intune 독립 실행형 실행 중에서 선택합니다."
 ms.custom: na
-ms.date: 11/07/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: a5c9e312641d91ff297fbcfa6066a93c2a0e1ee0
-ms.openlocfilehash: 3480484a96e96a191b4f02208fcf838db5cb6ba7
+ms.sourcegitcommit: 84e3896dd05a8c157f4e94625b0eca60aacc11d3
+ms.openlocfilehash: 8f2625aadfd0aed92d9922c7e3c0d3d166a78cdd
+ms.lasthandoff: 02/25/2017
 
 ---
 # <a name="choose-between-microsoft-intune-standalone-and-hybrid-mobile-device-management-with-system-center-configuration-manager"></a>Microsoft Intune 독립 실행형 및 System Center Configuration Manager에서 하이브리드 모바일 장치 관리 선택
@@ -44,16 +45,11 @@ Intune 독립 실행형은 온-프레미스 리소스를 포함하지 않고 전
 
 -   역할 기반 액세스 제어 - 할당된 역할을 기반으로 하여 관리 기능에 대한 액세스를 제한합니다.
 
--   확장성 - 50,000대 이상의 모바일 장치에 배포하고 관리합니다.
+-   확장성 - 100,000대 이상의 모바일 장치에 배포하고 관리합니다.
 
 -   단일 창 - 동일한 콘솔을 사용하여 기존 PC 클라이언트와 Intune에서 관리되는 장치를 둘 다 관리합니다.
 
 현재 Intune 배포 계획을 시작 중이며 파일럿, 수용 테스트 및 배포를 실행할 몇 개월의 기간이 있는 경우 클라우드 서비스에 예정된 업데이트에 더 많은 기능이 포함될 계획이므로 지금 Intune 독립 실행형을 선택하는 것이 좋습니다. 2017년 상반기 동안 Intune 독립 실행형은 Configuration Manager와 하이브리드 배포의 고급 기능을 대부분 제공하는 업데이트를 받게 됩니다. Intune 독립 실행형은 곧 Microsoft Azure 클라우드 플랫폼으로 이동할 예정이며 향상된 확장성, Azure Portal을 통한 역할 기반 액세스, 사용자 지정 보고 및 Azure Graph API를 통한 프로그래밍 방식 액세스를 포함할 것입니다.
 
 하이브리드에서 Intune 독립 실행형으로 전환하거나 독립 실행형에서 하이브리드로 전환할 수 있지만 Microsoft 기술 지원 및 운영 센터의 도움을 받아야 합니다. 또한 관리 기관이 변경된 후 모든 장치의 등록을 취소하고 다시 등록해야 합니다.  Microsoft는 향후 서비스 업데이트에서 구성 전환 경험을 향상시키기 위해 노력하고 있습니다.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

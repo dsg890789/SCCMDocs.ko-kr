@@ -17,8 +17,9 @@ ms.author: andredm
 manager: angrobe
 robots: noindex
 translationtype: Human Translation
-ms.sourcegitcommit: c13c6268fa76ade7feb0981f9c4a6e325e393aca
-ms.openlocfilehash: fd5830fef3759def7806dbbe1802872df19ca939
+ms.sourcegitcommit: b1295fff41d99b0bd6fc00ccab7a4b8bbdb60866
+ms.openlocfilehash: 99d1d14e89903d78167ec2f7d91f8393827bd616
+ms.lasthandoff: 02/27/2017
 
 ---
 # <a name="device-compliance-policies-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 장치 준수 정책 관리
@@ -40,6 +41,7 @@ System Center Configuration Manager의 **준수 정책**은 장치가 조건부 
 -   장치의 무단 해제 또는 루팅 여부  
 
 -   장치의 메일이 Intune 정책으로 관리되는지 여부 또는 장치가 Windows 장치 상태 증명 서비스에서 비정상으로 보고되는지 여부  
+-   장치에 설치할 수 없는 앱
 
 
  준수 정책은 사용자 컬렉션에 배포합니다. 규정 준수 정책을 사용자에게 배포하면 모든 사용자 장치의 규정 준수가 확인됩니다.  
@@ -54,7 +56,8 @@ System Center Configuration Manager의 **준수 정책**은 장치가 조건부 
 |**전자 메일 프로필**|해당 없음|해당 없음|격리됨|해당 없음|  
 |**최소 OS 버전**|격리됨|격리됨|격리됨|격리됨|  
 |**최대 OS 버전**|격리됨|격리됨|격리됨|격리됨|  
-|**장치 상태 증명(1602 업데이트)**|설정은 Windows 8.1에 적용되지 않습니다.<br /><br /> Windows 10 및 Windows 10 Mobile이 격리됩니다.|해당 없음|해당 없음|해당 없음|  
+|**장치 상태 증명(1602 업데이트)**|설정은 Windows 8.1에 적용되지 않습니다.<br /><br /> Windows 10 및 Windows 10 Mobile이 격리됩니다.|해당 없음|해당 없음|해당 없음|
+|**설치할 수 없는 앱**|해당 없음|해당 없음|격리됨|격리됨|
 
  **재구성됨** = 장치 운영 체제에서 준수를 적용하도록 요구합니다. 예를 들어, 사용자는 직접 PIN을 설정해야 합니다.  설정이 비규격인 경우는 없습니다.  
 
@@ -62,16 +65,10 @@ System Center Configuration Manager의 **준수 정책**은 장치가 조건부 
 
 -   사용자가 조건부 액세스 정책의 대상인 장치가 차단됩니다.  
 
--   회사 포털 또는 웹 포털은 모든 규정 준수 문제에 대해 사용자에게 알립니다.  
-
+-   회사 포털 또는 웹 포털은 모든 규정 준수 문제에 대해 사용자에게 알립니다.
 
 ### <a name="next-steps"></a>다음 단계  
 [장치 준수 정책 만들기 및 배포](create-compliance-policy.md)
 ### <a name="see-also"></a>참고 항목  
  [System Center Configuration Manager에서 서비스 액세스 관리](../../protect/deploy-use/manage-access-to-services.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

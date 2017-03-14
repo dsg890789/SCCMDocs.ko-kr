@@ -2,7 +2,7 @@
 title: "Configuration Manager 평가 | Microsoft 문서"
 description: "조직에서 사용할 System Center Configuration Manager를 평가하는 랩 환경을 만듭니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 2/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 35e48666f4d1a2363304650f960531fd0630a291
-ms.openlocfilehash: ad3c849bd3ebfc6c0aa795e5b49a4850371cda47
+ms.sourcegitcommit: 0ea90d3f3bef80b8acf9018a1338ae05fc948af4
+ms.openlocfilehash: d7ea785ab1beee09b9adda735a87f89bc9481620
+ms.lasthandoff: 02/28/2017
 
 
 ---
@@ -26,10 +27,9 @@ ms.openlocfilehash: ad3c849bd3ebfc6c0aa795e5b49a4850371cda47
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-조직에서 사용할 System Center Configuration Manager를 평가하는 랩 환경을 만드는 방법에 알아봅니다.  
+ 조직에서 사용할 System Center Configuration Manager를 평가하는 랩 환경을 만드는 방법에 알아봅니다.  
 
-## <a name="evaluate-system-center-configuration-manager-by-building-your-own-lab-environment"></a>고유한 랩 환경을 구축하여 System Center Configuration Manager 평가  
- System Center Configuration Manager는 사용자, 장치 및 소프트웨어를 관리하는 복잡하고 강력한 도구입니다. 개념적 이해를 바탕으로 실무 연습을 진행할 수 있도록 전체 배포 전에 System Center Configuration Manager에 대한 철저한 평가를 완료하는 것이 좋습니다.  
+ System Center Configuration Manager는 사용자, 장치 및 소프트웨어를 관리하는 복잡하고 강력한 도구입니다. 개념적 이해를 바탕으로 실무 연습을 진행할 수 있도록 전체 배포 전에 System Center Configuration Manager를 철저히 평가하는 것이 좋습니다.  
 
  이 가이드는 주로 기업 환경에서 Configuration Manager의 사용을 평가하는 관리자를 위해 작성되었습니다.  
 
@@ -39,22 +39,22 @@ ms.openlocfilehash: ad3c849bd3ebfc6c0aa795e5b49a4850371cda47
 
 -   온-프레미스 서버 아키텍처의 수직 확장을 관리하려는 관리자  
 
-### <a name="what-this-lab-does"></a>이 랩에서 수행하는 작업  
- 이 환경을 만드는 기본 목표는 Configuration Manager로 작업을 시작하고 수행을 통해 Configuration Manager에 대한 이해를 향상시키기 위한 일반 지식을 제공하는 것입니다. 이 작업은 다음 두 서버를 사용하여 현재 버전의 긴급 Configuration Manager 어셈블리를 통해 수행됩니다.  
+## <a name="what-this-lab-does"></a>이 랩에서 수행하는 작업  
+ 이 랩 환경을 만드는 기본 목표는 Configuration Manager 작업을 시작하고 Configuration Manager에 대한 이해를 높이기 위한 일반적인 지식을 제공하는 것입니다. 다음 두 서버를 사용하여 현재 Configuration Manager 버전의 긴급 어셈블리를 단계별로 살펴보겠습니다.  
 
 -   Active Directory, 도메인 컨트롤러 및 DNS 서버를 호스트하는 서버  
 
--   두 번째 호스팅 Configuration Manager 및 모든 관련된 SQL Server 구성 요소  
+-   Configuration Manager 및 관련된 모든 SQL Server 구성 요소를 호스트하는 서버  
 
--   클라이언트 컴퓨터는 Hyper-V 내에서 설치됩니다. 랩 자체를 단일 서버의 완전 가상화 시스템으로 실행할 수도 있습니다.  
+클라이언트 컴퓨터는 Hyper-V 내에서 설치됩니다. 랩 자체를 단일 서버의 완전 가상화 시스템으로 실행할 수도 있습니다.  
 
-### <a name="what-this-lab-does-not-do"></a>이 랩에서 수행하지 않는 작업  
- 이 랩에서 모든 Configuration Manager 시나리오를 설명하지는 않으며 활성 환경으로 즉시 마이그레이션할 수 있도록 설계되지도 않았습니다.  
+## <a name="what-this-lab-does-not-do"></a>이 랩에서 수행하지 않는 작업  
+ 이 랩에서 모든 Configuration Manager 시나리오를 설명하지는 않으며, 활성 환경으로 즉시 마이그레이션할 수 있도록 설계되지도 않았습니다.  
 
- 이 랩을 구축하면 작업할 수 있는 기능 환경이 구현되게 됩니다. 그러나 이 환경은 시스템 성능, 하드 디스크 공간 관리, SQL Server 저장소 등에 맞게 최적화되지는 않습니다.  
+ 이 랩을 구축하면 작업할 수 있는 기능 환경이 구현되게 됩니다. 그러나 이 환경은 시스템 성능, 하드 디스크 공간 관리, SQL Server 저장소 등의 요소에 대해 최적화되지 않습니다.  
 
-###  <a name="a-namebkmkevalreca-recommended-reading-prior-to-beginning-the-lab"></a><a name="BKMK_EvalRec"></a> 랩 시작 전에 읽어보면 좋은 자료  
- [System Center Configuration Manager에 대한 설명서](http://docs.microsoft.com/sccm/)에는 사용 가능한 풍부한 콘텐츠가 있습니다. 이 라이브러리에는 랩에서 작업하는 모든 관리자가 이러한 연습을 시작하기 전에 읽어보면 좋은 항목들이 포함되어 있어서 선택할 수 있습니다.  
+##  <a name="BKMK_EvalRec"></a> 랩을 빌드하기 전의 권장 자료  
+ [System Center Configuration Manager에 대한 설명서](http://docs.microsoft.com/sccm/)에서 다양한 콘텐츠를 사용할 수 있습니다. 랩 빌드를 시작하기 전에 이 라이브러리에서 다음 항목을 참조하는 것이 좋습니다.  
 
 -   [System Center Configuration Manager 소개](../../core/understand/introduction.md)에서 Configuration Manager 콘솔, 최종 사용자 포털 및 예제 시나리오에 대한 핵심 개념을 알아봅니다.  
 
@@ -64,12 +64,7 @@ ms.openlocfilehash: ad3c849bd3ebfc6c0aa795e5b49a4850371cda47
 
 -   [System Center Configuration Manager의 역할 기반 관리 기본 사항](../../core/understand/fundamentals-of-role-based-administration.md)에서 보안 역할의 중요성을 알아봅니다.  
 
--   이러한 [콘텐츠 관리 관련 개념](../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md)을 이해하면 콘텐츠 관리와 관련된 특정 개념을 제공할 수 있습니다.  
+-   콘텐츠 관리에 대한 자세한 내용은 [콘텐츠 관리 관련 개념](../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md)을 참조하세요.  
 
--   [클라이언트가 System Center Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법 이해](../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)를 통해 배포 전체에서 매일 진행하는 작업을 성공적으로 지원할 수 있습니다.  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
+-   [클라이언트가 System Center Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법 이해](../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)를 통해 배포 전체에서 매일 진행하는 작업을 지원하는 방법을 알아봅니다.  
 

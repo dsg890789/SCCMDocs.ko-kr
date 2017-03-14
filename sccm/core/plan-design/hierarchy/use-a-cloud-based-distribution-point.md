@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 97051d9c65ef5ea28c94468b24863120624e8de0
-ms.openlocfilehash: b78b3b20a8b317a242cd06f9fda6326f41673915
+ms.sourcegitcommit: 3eab8e62ace29c0fcb24d47ec7e398d807347a38
+ms.openlocfilehash: a1d701c77afb4d6317d8a137fdf46422063df085
+ms.lasthandoff: 02/28/2017
 
 
 ---
@@ -62,7 +63,7 @@ ms.openlocfilehash: b78b3b20a8b317a242cd06f9fda6326f41673915
 
 클라우드 기반 배포 지점에는 다음과 같은 제한 사항이 있습니다.  
 
--   클라우드 기반 배포 지점을 사용하여 소프트웨어 업데이트 패키지를 호스트할 수 없습니다.  
+-  버전 1610 및 핫픽스 KB4010155를 사용하기 전에는 클라우드 기반 배포 지점을 사용하여 소프트웨어 업데이트 패키지를 호스트할 수 없습니다. 버전 1610 이후의 다음 현재 분기 버전은 이 수정 프로그램을 설치하지 않아도 이 옵션을 지원합니다.  
 
 -   클라우드 기반 배포 지점을 PXE 또는 멀티캐스트 사용 배포용으로 사용할 수 없습니다.  
 
@@ -76,7 +77,7 @@ ms.openlocfilehash: b78b3b20a8b317a242cd06f9fda6326f41673915
 
 -   클라우드 기반 배포 지점은 풀(pull) 배포 지점으로 구성할 수 없습니다.  
 
-##  <a name="a-namebkmkprereqsclouddpa-prerequisites-for-cloud-based-distribution-points"></a><a name="BKMK_PrereqsCloudDP"></a> 클라우드 기반 배포 지점의 필수 조건  
+##  <a name="BKMK_PrereqsCloudDP"></a> 클라우드 기반 배포 지점의 필수 조건  
  클라우드 기반 배포 지점을 사용하려면 다음과 같은 전제 조건이 충족되어야 합니다.  
 
 -   Azure 구독이 있어야 합니다(이 항목의 [구독 및 인증서 정보](#BKMK_CloudDPCerts) 참조).
@@ -91,7 +92,7 @@ ms.openlocfilehash: b78b3b20a8b317a242cd06f9fda6326f41673915
 
 -   클라이언트에서 클라우드 기반 배포 지점을 사용하려면 인터넷에 액세스할 수 있어야 합니다.  
 
-##  <a name="a-namebkmkclouddpcosta-cost-of-using-cloud-based-distribution"></a><a name="BKMK_CloudDPCost"></a> 클라우드 기반 배포 사용 비용  
+##  <a name="BKMK_CloudDPCost"></a> 클라우드 기반 배포 사용 비용  
  클라우드 기반 배포 지점을 사용할 때는 Configuration Manager 클라이언트가 수행하는 다운로드 전송 및 데이터 저장소의 비용을 계획합니다.  
 
  Configuration Manager에는 비용을 제어하고 데이터 액세스를 모니터링할 수 있는 옵션이 포함됩니다.  
@@ -139,7 +140,7 @@ ms.openlocfilehash: b78b3b20a8b317a242cd06f9fda6326f41673915
 
      클라우드 서비스를 중지하려면 Configuration Manager 콘솔에서 **관리** 작업 영역의 **클라우드 서비스** 아래에 있는 **클라우드 배포 지점** 노드에서 배포 지점을 선택합니다. 다음으로, **서비스 중지**를 선택하여 Azure에서 실행되는 클라우드 서비스를 중지합니다.  
 
-##  <a name="a-namebkmkclouddpcertsa-about-subscriptions-and-certificates-for-cloud-based-distribution-points"></a><a name="BKMK_CloudDPCerts"></a> 클라우드 기반 배포 지점에 대한 구독 및 인증서 정보  
+##  <a name="BKMK_CloudDPCerts"></a> 클라우드 기반 배포 지점에 대한 구독 및 인증서 정보  
  클라우드 기반 배포 지점을 사용할 경우 Configuration Manager가 배포 지점을 호스트하는 클라우드 서비스를 관리하고 클라이언트가 배포 지점의 콘텐츠에 액세스할 수 있도록 인증서가 필요합니다. 다음 정보는 이러한 인증서에 대한 개요를 제공합니다. 자세한 내용은 [System Center Configuration Manager를 위한 PKI 인증서 요구 사항](../../../core/plan-design/network/pki-certificate-requirements.md)을 참조하세요.  
 
  **인증서**  
@@ -163,7 +164,7 @@ ms.openlocfilehash: b78b3b20a8b317a242cd06f9fda6326f41673915
 
    이 인증서의 배포 예제는 [System Center Configuration Manager용 PKI 인증서의 단계별 배포 예제: Windows Server 2008 인증 기관](/sccm/core/plan-design/network/example-deployment-of-pki-certificates) 항목에서 **클라우드 기반 배포 지점용 서비스 인증서 배포** 섹션을 참조하세요.  
 
-##  <a name="a-namebkmktasksa-common-management-tasks-for-cloud-based-distribution-points"></a><a name="bkmk_Tasks"></a> 클라우드 기반 배포 지점에 대한 일반 관리 작업  
+##  <a name="bkmk_Tasks"></a> 클라우드 기반 배포 지점에 대한 일반 관리 작업  
 
 -   **사이트 서버와 클라우드 기반 배포 지점 간 통신**: 클라우드 기반 배포 지점을 설치하는 경우에 클라우드 서비스로의 콘텐츠 전송을 관리할 기본 사이트를 하나 할당해야 합니다. 이 작업은 특정 사이트에 배포 지점 사이트 시스템 역할을 설치하는 작업과 동일합니다.  
 
@@ -185,7 +186,7 @@ ms.openlocfilehash: b78b3b20a8b317a242cd06f9fda6326f41673915
 
 3.  기본 배포 지점 또는 원격 배포 지점을 사용할 수 없는 경우 클라이언트는 대신 클라우드 기반 배포 지점에서 콘텐츠를 가져올 수 있습니다.  
 
-    
+
 
   콘텐츠 위치로 클라우드 기반 배포 지점을 사용하는 클라이언트는 Configuration Manager 액세스 토큰을 사용하여 클라우드 기반 배포 지점에 대해 자신을 인증합니다. 클라이언트에서 Configuration Manager 클라우드 기반 배포 지점 인증서를 신뢰하면 이 클라이언트는 요청한 콘텐츠를 다운로드할 수 있습니다.  
 
@@ -212,9 +213,4 @@ ms.openlocfilehash: b78b3b20a8b317a242cd06f9fda6326f41673915
 -   **클라우드 기반 배포 지점 제거**: 클라우드 기반 배포 지점을 제거하려면 Configuration Manager 콘솔에서 배포 지점을 선택하고 **삭제**를 선택합니다.  
 
     계층 구조에서 클라우드 기반 배포 지점을 삭제하는 경우 Configuration Manager가 Azure의 클라우드 서비스에서 콘텐츠를 제거합니다.  
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

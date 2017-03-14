@@ -1,5 +1,5 @@
 ---
-title: "라이선스 및 분기에 대한 자세한 정보 | System Center Configuration Manager"
+title: "라이선스 및 분기에 대한 자세한 정보 | Microsoft 문서"
 description: "이 항목에서는 현재 분기 버전 1606, LTSB(장기 서비스 분기), 현재 분기의 평가판 설치 등 System Center Configuration Manager의 2016년 10월 릴리스에서 제공되는 설치 옵션에 대한 라이선스 요구 사항을 알아봅니다."
 ms.custom: na
 ms.date: 10/12/2016
@@ -17,8 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 473d4f9a39898ff5a664013f91ab95e58cd6d161
-ms.openlocfilehash: 726c10fc536f9612bdf46090ef653388a5cfc969
+ms.sourcegitcommit: a0d4eb601948aa3abb12409f3475d69cacf4a6aa
+ms.openlocfilehash: 90e16b316872cb370c9c2e645f46ac12afab7107
+ms.lasthandoff: 02/28/2017
 
 ---
 
@@ -26,7 +27,7 @@ ms.openlocfilehash: 726c10fc536f9612bdf46090ef653388a5cfc969
 
 *적용 대상: System Center Configuration Manager(현재 분기), (장기 서비스 분기)*
 
-이 항목에서는 현재 분기 버전 1606, LTSB(장기 서비스 분기), 현재 분기 버전 1606의 평가판 설치 등 System Center Configuration Manager 버전 1606의 2016년 10월 릴리스에서 제공되는 설치 옵션에 대한 라이선스 요구 사항을 알아봅니다.
+이 항목을 사용하여 System Center Configuration Manager 버전 1606의 2016년 10월 릴리스에서 제공되는 설치 옵션에 대한 라이선스 요구 사항을 알아볼 수 있습니다. 이러한 설치 옵션에는 현재 분기 버전 1606, LTSB(장기 서비스 분기) 및 현재 분기 버전 1606의 평가판 설치가 포함됩니다.
 
 **라이선스 개요:**   
 2016년 10월 1일 당시 System Center Configuration Manager 라이선스에 활성 SA(Software Assurance)가 있거나 이와 동등한 구독 권한이 있는 고객은 System Center Configuration Manager의 2016년 10월 버전 1606 릴리스를 사용할 수 있습니다. 2016년 10월 1일 이후에 System Center Configuration Manager에 대한 권한이 있는 고객은 설치 시 현재 분기 및 LTSB(장기 서비스 분기)라는 두 가지 사용이 허가된 옵션을 사용할 수 있습니다.
@@ -42,7 +43,7 @@ ms.openlocfilehash: 726c10fc536f9612bdf46090ef653388a5cfc969
 
 |분기|라이선스|세부 정보|
 |----------------|---------------------|--------------------|
-|현재 분기 | Configuration Manager에 대한 활성 Software Assurance 계약(또는 이와 동등한 권한)이 필요합니다. </br></br> 이 항목에서 [Software Assurance 및 현재 분기](#software-assurance-and-the-current-Branch)를 참조하세요.| Microsoft에서 정기적인 품질 및 기능 업데이트를 수신하려는 프로덕션 환경에서 사용할 수 있습니다. </br></br> 이 분기를 통해 모든 기능과 향상된 기능에 액세스할 수 있습니다. </br></br> 각 버전 업데이트는 릴리스 후 1년 동안 지원되며, 이 기간 내에 [지원](/sccm/core/servers/manage/current-branch-versions-supported)되는 최신 버전으로 업데이트해야 합니다.|
+|현재 분기 | Configuration Manager에 대한 활성 Software Assurance 계약(또는 이와 동등한 권한)이 필요합니다. </br></br> 이 항목에서 [Software Assurance 및 현재 분기](#software-assurance-and-the-current-Branch)를 참조하세요.| Microsoft에서 정기적인 품질 및 기능 업데이트를 수신하려는 프로덕션 환경에서 사용할 수 있습니다. </br></br> 이 분기를 통해 모든 기능과 향상된 기능에 액세스할 수 있습니다. </br></br> 각 버전 업데이트는 릴리스 후&1;년 동안 지원되며, 이 기간 내에 [지원](/sccm/core/servers/manage/current-branch-versions-supported)되는 최신 버전으로 업데이트해야 합니다.|
 |LTSB(장기 서비스 분기)| 릴리스 당시(2016년 10월 1일) Microsoft와 현재 Software Assurance 계약이 있어야 합니다. </br></br> 이 항목에서 [Software Assurance 및 LTSB](#software-assurance-and-the-ltsb)를 참조하세요. | 프로덕션 환경에서 사용할 수 있습니다. Configuration Manager에 대한 SA(Software Assurance) 또는 이와 동등한 구독 권한이 2016년 10월 1일 후에 만료되는 고객을 위한 것입니다. </br></br> 이 분기는 현재 분기에 비해 제한적입니다. </br></br> Configuration Manager에 대한 중요 보안 업데이트는 이 분기에 제공되지만 새로운 기능은 제공되지 않습니다. |
 |현재 분기의 평가판 설치| Microsoft와의 Software Assurance 계약이 필요하지 않습니다. | [평가판 설치](https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection)는 항상 현재 분기이며 180일 동안 사용할 수 있습니다. </br></br> 평가판 설치를 현재 분기의 전체 설치로 업그레이드할 수 있습니다. 평가판 설치를 장기 서비스 분기로 업그레이드할 수는 없습니다.|
 
@@ -51,8 +52,8 @@ ms.openlocfilehash: 726c10fc536f9612bdf46090ef653388a5cfc969
 
 ## <a name="licensed-branches"></a>사용이 허가된 분기
 2016년 10월 1일 당시 System Center Configuration Manager 라이선스에 활성 SA(Software Assurance)가 있거나 이와 동등한 구독 권한이 있는 고객은 System Center Configuration Manager의 2016년 10월 버전 1606 릴리스를 사용할 수 있습니다. 2016년 10월 1일 이후에 System Center Configuration Manager 버전 1606에 대한 권한이 있는 고객은 설치 시 다음 두 가지 사용이 허가된 옵션을 사용할 수 있습니다.
--   **현재 분기**
--   **LTSB(장기 서비스 분기)**
+-    **현재 분기**
+-    **LTSB(장기 서비스 분기)**
 
 
 자세한 내용은 이전 섹션의 표를 참조하세요.
@@ -83,15 +84,15 @@ LTSB는 현재 분기 버전 1606을 기반으로 하며 다음과 같은 제한
 
 
 ### <a name="software-assurance-expiration-date"></a>Software Assurance 만료 날짜
-System Center Configuration Manager에 대한 버전 1606 기준 미디어의 2016년 10월 릴리스부터 Software Assurance 계약의 만료 날짜를 지정할 수 있습니다. 이렇게 하려면 Configuration Manager 콘솔 내에서 Configuration Manager 설치 프로그램을 실행할 때나 그 이후에 편리한 미리 알림으로 지정할 수 있는 선택적 값인 **Software Assurance 만료 날짜**를 사용합니다.
+System Center Configuration Manager에 대한 버전 1606 기준 미디어의 2016년 10월 릴리스부터 Software Assurance 계약의 만료 날짜를 지정할 수 있습니다. **Software Assurance 만료 날짜**는 Configuration Manager 콘솔 내에서 Configuration Manager 설치 프로그램을 실행할 때나 그 이후에 편리한 미리 알림으로 지정할 수 있는 선택적 값입니다.
 
 >  [!NOTE]   
->  Microsoft는 입력된 만료 날짜의 유효성을 검사하지 않으며 이 날짜를 라이선스 유효성 검사에 사용하지 않습니다.  대신, 만료 날짜 미리 알림으로 사용할 수 있습니다. 이 기능은 Configuration Manager가 온라인에서 제공되는 새 소프트웨어 업데이트를 정기적으로 확인하며 이러한 추가 업데이트를 사용할 수 있으려면 Software Assurance 라이선스 상태가 현재여야 하기 때문에 유용합니다.    
+>  Microsoft는 지정한 만료 날짜의 유효성을 검사하지 않으며 이 날짜를 라이선스 유효성 검사에 사용하지 않습니다.  대신, 만료 날짜 미리 알림으로 사용할 수 있습니다. 이 기능은 Configuration Manager가 온라인에서 제공되는 새 소프트웨어 업데이트를 정기적으로 확인하며 이러한 추가 업데이트를 사용할 수 있으려면 Software Assurance 라이선스 상태가 현재여야 하기 때문에 유용합니다.    
 
 **날짜를 지정하려면**
 - System Center Configuration Manager 버전 1606 기준 미디어에서 설치 프로그램을 실행할 때 설치 마법사의 **제품 키** 페이지에서 값을 지정할 수 있습니다.
 
-- Configuration Manager 콘솔에 있는 **계층 설정 속성**의 **라이선스** 탭에서 이 날짜를 지정할 수도 있습니다.
+- Configuration Manager 콘솔, **계층 설정 속성**의 **라이선스** 탭에서 값을 지정할 수 있습니다.
 
 System Center Configuration Manager의 Software Assurance 라이선스 및 현재 분기에 대한 자세한 내용은 [System Center Configuration Manager의 라이선스 및 분기](/sccm/core/understand/learn-more-editions)를 참조하세요.
 
@@ -113,9 +114,4 @@ System Center Configuration Manager의 Software Assurance 라이선스 및 현�
 - 활성 Software Assurance 계약을 조회할 수 있는 위치(약 43초 후부터): [https://www.microsoft.com/showcase/video.aspx?uuid=fe1846cb-1d26-49fc-b064-57b25dcc31a0](https://www.microsoft.com/showcase/video.aspx?uuid=fe1846cb-1d26-49fc-b064-57b25dcc31a0).
 
 - VLSC에 대한 사용 권한을 얻는 방법: [https://www.microsoft.com/showcase/video.aspx?uuid=ac4ed1ca-d0a9-43cd-89fa-74ccb555dec4](https://www.microsoft.com/showcase/video.aspx?uuid=ac4ed1ca-d0a9-43cd-89fa-74ccb555dec4).  조직의 다른 사용자에게 VLSC 읽기 및 쓰기 권한을 위임할 수 있습니다.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

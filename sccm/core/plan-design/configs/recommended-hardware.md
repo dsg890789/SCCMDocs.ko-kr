@@ -2,7 +2,7 @@
 title: "권장 하드웨어 | Microsoft 문서"
 description: "System Center Configuration Manager 환경을 기본 배포 이상으로 확장하는 데 도움이 되는 하드웨어 권장 사항을 확인합니다."
 ms.custom: na
-ms.date: 12/30/2016
+ms.date: 2/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: d61c726d9690a1ec512b8dbab74b0f760012c880
-ms.openlocfilehash: 7caee70c327d84f1e016c689f824d843ccdb3b42
+ms.sourcegitcommit: 63ee782a718cf4a66ffe25b022aa317f3e45784c
+ms.openlocfilehash: 6701d5f21e8511ec9cf4fe7bc5804b3e2fdc4c71
+ms.lasthandoff: 02/28/2017
 
 
 ---
@@ -31,7 +32,7 @@ ms.openlocfilehash: 7caee70c327d84f1e016c689f824d843ccdb3b42
  다음 섹션의 정보는 기본 구성으로 사용 가능한 Configuration Manager 기능을 사용하는 클라이언트와 사이트의 처리 부하를 충족할 수 있는 하드웨어를 계획하기 위한 지침으로 사용하세요.  
 
 
-##  <a name="a-namebkmkscalesiesystemsa-site-systems"></a><a name="bkmk_ScaleSieSystems"></a> 사이트 시스템  
+##  <a name="bkmk_ScaleSieSystems"></a> 사이트 시스템  
  이 섹션에서는 최대 개수의 클라이언트를 지원하고 Configuration Manager 기능을 대부분 또는 모두 사용하는 배포를 위해 Configuration Manager 사이트 시스템에 권장되는 하드웨어 구성을 제공합니다. 최대 개수보다 적은 클라이언트를 지원하고 사용 가능한 모든 기능을 사용하지 않는 배포에서 필요한 컴퓨터 리소스는 더 적을 수 있습니다. 일반적으로 전반적인 시스템의 성능을 제한하는 주요 요인은 나열된 순서대로 다음과 같습니다.  
 
 1.  디스크 I/O 성능  
@@ -42,24 +43,24 @@ ms.openlocfilehash: 7caee70c327d84f1e016c689f824d843ccdb3b42
 
 성능을 최적화하려면 모든 데이터 드라이브 및 1Gbps 이더넷 네트워크에 대해 RAID 10 구성을 사용합니다.  
 
-###  <a name="a-namebkmkscalesiteservera-site-servers"></a><a name="bkmk_ScaleSiteServer"></a> 사이트 서버  
+###  <a name="bkmk_ScaleSiteServer"></a> 사이트 서버  
 
 |독립 실행형 기본 사이트|CPU(코어)|메모리(GB)|SQL Server에 대한 메모리 할당(%)|  
 |-------------------------------|---------------|---------------|----------------------------------------|  
 |동일한 서버에 데이터베이스 사이트 역할이 있는 독립 실행형 기본 사이트 서버<sup>1</sup>|16|96|80|  
 |원격 사이트 데이터베이스가 있는 독립 실행형 기본 사이트 서버|8|16|-|  
 |독립 실행형 기본 사이트에 대한 원격 데이터베이스 서버|16|64개|90|  
-|동일한 서버에 데이터베이스 사이트 역할이 있는 중앙 관리 사이트 서버<sup>1</sup>|16|96|80|  
+|동일한 서버에 데이터베이스 사이트 역할이 있는 중앙 관리 사이트 서버<sup>1</sup>|20|128|80|  
 |원격 사이트 데이터베이스가 있는 중앙 관리 사이트 서버|8|16|-|  
 |중앙 관리 사이트에 대한 원격 데이터베이스 서버|16|96|90|  
 |동일한 서버에 데이터베이스 사이트 역할이 있는 자식 기본 사이트|16|96|80|  
 |원격 사이트 데이터베이스가 포함된 자식 기본 사이트 서버|8|16|-|  
-|자식 기본 사이트에 대한 원격 데이터베이스 서버|16|64개|90|  
+|자식 기본 사이트에 대한 원격 데이터베이스 서버|16|72|90|  
 |보조 사이트 서버|8|16|-|  
 
  <sup>1</sup> 사이트 서버와 SQL Server가 동일한 컴퓨터에 설치된 경우 배포에서 사이트와 클라이언트에 대해 최대 [크기 조정 및 규모 숫자 값](/sccm/core/plan-design/configs/size-and-scale-numbers)을 지원합니다. 그러나 이 구성에서는 SQL Server 클러스터 사용과 같은 [System Center Configuration Manager의 고가용성 옵션](/sccm/protect/understand/high-availability-options)이 제한될 수 있습니다. 또한 동일한 컴퓨터에서 실행할 경우 SQL Server와 Configuration Manager 사이트 서버를 둘 다 지원하기 위해 더 높은 I/O 요구 사항이 필요하기 때문에 대규모 배포를 사용하는 경우 원격 SQL Server 컴퓨터가 포함된 구성을 사용하는 것이 좋습니다.  
 
-###  <a name="a-namebkmkremotesitesystema-remote-site-system-servers"></a><a name="bkmk_RemoteSiteSystem"></a> 원격 사이트 시스템 서버  
+###  <a name="bkmk_RemoteSiteSystem"></a> 원격 사이트 시스템 서버  
  다음 지침은 단일 사이트 시스템 역할을 포함하는 컴퓨터에 적용됩니다. 같은 컴퓨터에 여러 사이트 시스템 역할을 설치할 때는 해당 지침을 조정하세요.  
 
 |사이트 시스템 역할|CPU(코어)|메모리(GB)|디스크 공간(GB)|  
@@ -76,7 +77,7 @@ ms.openlocfilehash: 7caee70c327d84f1e016c689f824d843ccdb3b42
 
 -   **WsusPool 개인 메모리 제한**을 4배로 늘리거나 **0**(무제한)으로 설정합니다.  
 
-###  <a name="a-namebkmkdiskspacea-disk-space-for-site-systems"></a><a name="bkmk_DiskSpace"></a> 사이트 시스템용 디스크 공간  
+###  <a name="bkmk_DiskSpace"></a> 사이트 시스템용 디스크 공간  
  디스크 할당 및 구성은 Configuration Manager 성능에 영향을 줍니다. 각 Configuration Manager 환경이 서로 다르므로 구현하는 값은 다음 지침과 달라질 수 있습니다.  
 
  최적의 성능을 위해서는 각 개체를 별도의 전용 RAID 볼륨에 배치해야 합니다. 모든 데이터 볼륨(Configuration Manager 및 해당 데이터베이스 파일)에 대해 RAID 10을 사용할 때 최적의 성능을 낼 수 있습니다.  
@@ -109,7 +110,7 @@ ms.openlocfilehash: 7caee70c327d84f1e016c689f824d843ccdb3b42
 
     -   SQL Server 2014 Express: 10GB  
 
-##  <a name="a-namebkmkscaleclienta-clients"></a><a name="bkmk_ScaleClient"></a> 클라이언트  
+##  <a name="bkmk_ScaleClient"></a> 클라이언트  
  이 섹션에서는 Configuration Manager 클라이언트 소프트웨어를 사용하여 관리하는 컴퓨터에 대해 권장되는 하드웨어 구성을 제공합니다.  
 
 ### <a name="client-for-windows-computers"></a>Windows 컴퓨터용 클라이언트  
@@ -147,7 +148,7 @@ ms.openlocfilehash: 7caee70c327d84f1e016c689f824d843ccdb3b42
 |디스크 공간|500MB의 사용 가능한 디스크 공간(Configuration Manager 클라이언트 캐시의 경우 5GB 권장)|  
 |네트워크 연결|관리를 수행하려면 Configuration Manager 클라이언트 컴퓨터가 네트워크를 통해 Configuration Manager 사이트 시스템에 연결할 수 있어야 합니다.|  
 
-##  <a name="a-namebkmkscaleconsolea-configuration-manager-console"></a><a name="bkmk_ScaleConsole"></a> Configuration Manager 콘솔  
+##  <a name="bkmk_ScaleConsole"></a> Configuration Manager 콘솔  
  다음 표의 요구 사항은 Configuration Manager 콘솔을 실행하는 각 컴퓨터에 적용됩니다.  
 
  **최소 하드웨어 구성:**  
@@ -176,7 +177,7 @@ ms.openlocfilehash: 7caee70c327d84f1e016c689f824d843ccdb3b42
 PowerShell 외에 WMF(Windows Management Framework) 3.0 및 4.0도 지원됩니다.   
 Configuration Manager 콘솔을 설치하기 전이나 설치한 후에 PowerShell을 설치할 수 있습니다.  
 
-##  <a name="a-namebkmkscalelaba-lab-deployments"></a><a name="bkmk_ScaleLab"></a> 랩 배포  
+##  <a name="bkmk_ScaleLab"></a> 랩 배포  
  Configuration Manager 랩 및 테스트 배포의 경우 다음 최소 하드웨어 권장 사항을 따르세요. 이러한 권장 사항은 모든 사이트 유형, 최대 100개의 클라이언트에 적용됩니다.  
 
 |역할|CPU(코어)|메모리(GB)|디스크 공간(GB)|  
@@ -184,9 +185,4 @@ Configuration Manager 콘솔을 설치하기 전이나 설치한 후에 PowerShe
 |사이트 및 데이터베이스 서버|2 - 4|7 - 12|100|  
 |사이트 시스템 서버|1 - 4|2 - 4|50|  
 |클라이언트|1 - 2|1 - 3|30|  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

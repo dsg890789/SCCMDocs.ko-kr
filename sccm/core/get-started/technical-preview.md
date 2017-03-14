@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager Technical Preview | Microsoft 문서"
 description: "System Center Configuration Manager에서 새로운 기능을 테스트 시험해 볼 수 있는 기술 미리 보기 릴리스에 대해 알아봅니다."
 ms.custom: na
-ms.date: 2/1/2017
+ms.date: 2/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 4b1daa727477b1273cdbee1bc7e3ac8af5911ff0
-ms.openlocfilehash: 4703178c5ce3e23cb9d2e4557466fcec571c2983
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 0d1f8eb9274dde96eb4295c007c0f49036d1a3de
+ms.openlocfilehash: e140ef9daad9fb4105cea543115af19a4378c903
+ms.lasthandoff: 02/27/2017
 
 
 ---
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/22/2017
 
 
 
-##  <a name="a-namebkmkreqsa-requirements-and-limitations-for-the-technical-preview"></a><a name="bkmk_reqs"></a> Technical Preview의 요구 사항 및 제한  
+##  <a name="bkmk_reqs"></a> Technical Preview의 요구 사항 및 제한  
 
 > [!IMPORTANT]     
 >  기술 미리 보기는 랩 환경에서만 사용하도록 허가되었습니다.  Microsoft에서 지원 서비스를 제공하지 않고, 특정 기능은 미리 보기 소프트웨어에서 사용하지 못할 수 있습니다. 또한 상업적으로 제공되는 소프트웨어와 비교했을 때 Preview 소프트웨어의 보안, 개인 정보 보호, 액세스 가능성, 가용성 및 안정성 표준이 낮거나 다를 수 있습니다.  
@@ -77,7 +77,7 @@ ms.lasthandoff: 02/22/2017
 
 -   이 미리 보기 빌드에서 프로덕션 빌드(현재 분기)로 업그레이드할 수 없습니다. 그러나 미리 보기 버전용 업데이트를 사용할 수 있는 경우 Configuration Manager 콘솔의 **업데이트 및 서비스** 노드에서 해당 업데이트를 찾아 설치할 수 있습니다. 콘솔 내 업그레이드 프로세스에 대한 비디오를 보려면 youtube.com에서 [ConfigMgr 업데이트 패키지 설치](https://www.youtube.com/embed/KBd_EGFbUT8) (영문)를 참조하세요.  
 
-##  <a name="a-namebkmkinstalla-install-and-update-the-technical-preview"></a><a name="bkmk_install"></a> 기술 미리 보기 설치 및 업데이트  
+##  <a name="bkmk_install"></a> 기술 미리 보기 설치 및 업데이트  
  System Center Configuration Manager Technical Preview는 현재 릴리스의 System Center Configuration Manager와 다릅니다.  
 
  기술 미리 보기를 사용하려면 먼저 기술 미리 보기 빌드의 **기준선 버전** 을 설치해야 합니다. 기준선 버전을 설치한 후 **콘솔 내 업데이트** 를 사용하여 최근의 미리 보기 버전으로 설치를 업데이트할 수 있습니다.     일반적으로 새 버전의 기술 미리 보기는 매달 사용할 수 있습니다.
@@ -95,7 +95,7 @@ ms.lasthandoff: 02/22/2017
 
 
 
-##  <a name="a-namebkmktpfeedbacka-providing-feedback"></a><a name="BKMK_TPFeedback"></a> 사용자 의견 제공  
+##  <a name="BKMK_TPFeedback"></a> 사용자 의견 제공  
  기술 미리 보기에 대한 여러분의 의견을 보내 주시기 바랍니다. 각 미리 보기의 기능에 대한 의견을 제출하려면 링크를 클릭하여 Microsoft Connect 사이트의 [Configuration Manager 사용자 의견 프로그램](https://connect.microsoft.com/ConfigurationManagervnext/Feedback) 페이지에 있는 사용자 의견 양식으로 이동하세요.  
 
  새로 추가되기를 원하는 기능에 대한 의견을 보내 주셔도 됩니다. 새로운 아이디어를 전송하고 다른 사용자들이 전송한 아이디어에 대해 투표를 하려면 [사용자 의견 페이지를 방문](http://configurationmanager.uservoice.com)하세요.  
@@ -105,11 +105,23 @@ ms.lasthandoff: 02/22/2017
 
 
 
-##  <a name="a-namebkmktpcapsa-capabilities-delivered-in-technical-previews"></a><a name="bkmk_tpCaps"></a> 기술 미리에 포함된 기능  
+##  <a name="bkmk_tpCaps"></a> 기술 미리에 포함된 기능  
  다음에는 각 Configuration Manager 기술 미리 보기 릴리스에 포함된 기능이 나와 있습니다.  기술 미리 보기의 특정 버전에서 사용할 수 있는 기능은 이후 버전에서도 계속 사용할 수 있습니다. 마찬가지로, System Center Configuration Manager 릴리스(현재 분기)에 추가된 기능은 후속 기술 미리 보기에서도 계속 사용할 수 있습니다.  각 미리 보기 버전에 대한 콘텐츠를 클릭하여 특정 기능에 대한 자세한 내용을 알아볼 수 있습니다.  
 
  |기능|기술 미리 보기 버전|현재 분기 버전|  
  |----------------|---------------------|--------------------|
+ |iOS 장치에 대한 새 준수 설정|[Tech Preview 1702](capabilities-in-technical-preview-1702.md#new-compliance-settings-for-ios-devices)|![추가되지 않음](media/Red_X.gif)|
+ |S/MIME을 지원하는 PFX 인증서 만들기|[Tech Preview 1702](capabilities-in-technical-preview-1702.md#create-pfx-certificates-with-s-mime-support)|![추가되지 않음](media/Red_X.gif)|
+ |응용 프로그램을 설치하기 전에 실행 중인 실행 파일 확인|[Tech Preview 1702](capabilities-in-technical-preview-1702.md#check-for-running-executable-files-before-installing-an-application)|![추가되지 않음](media/Red_X.gif)|
+ |Configuration Manager 콘솔에서 피드백 보내기 | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#send-feedback-from-the-configuration-manager-console)    |![추가되지 않음](media/Red_X.gif)  |
+ |업데이트 및 서비스의 변경 내용  | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#changes-for-updates-and-servicing)  |![추가되지 않음](media/Red_X.gif) |
+ |피어 캐시 개선  | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#peer-cache-improvements) |![추가되지 않음](media/Red_X.gif)|
+ |Azure Active Directory 사용  | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#azurediscovery) |![추가되지 않음](media/Red_X.gif)|
+ |조건부 액세스 장치 준수 정책 개선 | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#conditional-access-device-compliance-policy-improvements) |![추가되지 않음](media/Red_X.gif)|
+ |맬웨어 방지 클라이언트 버전 경고 | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#antimalware-client-version-alert) |![추가되지 않음](media/Red_X.gif)|
+ |Windows Update for Business 업데이트에 대한 준수 평가 | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#compliance-assessment-for-windows-update-for-business-updates) |![추가되지 않음](media/Red_X.gif)|
+ |강력한 작업 순서에 대한 소프트웨어 센터 설정 및 알림 메시지 개선| [Tech Preview 1702](capabilities-in-technical-preview-1702.md#improvements-to-software-center-settings-and-notification-messages-for-high-impact-task-sequences) |![추가되지 않음](media/Red_X.gif)|
+ |Android for Work 지원| [Tech Preview 1702](capabilities-in-technical-preview-1702.md#android-for-work-support) |![추가되지 않음](media/Red_X.gif)|
  |소프트웨어 업데이트 지점에 대한 향상된 경계 그룹 | [Tech Preview 1701](capabilities-in-technical-preview-1701.md#boundary-groups-improvements-for-software-update-points)    |![추가되지 않음](media/Red_X.gif)  |
  |하드웨어 인벤토리를 통해 UEFI 정보 수집 | [Tech Preview 1701](capabilities-in-technical-preview-1701.md#hardware-inventory-collects-uefi-information)|![추가되지 않음](media/Red_X.gif)  |
  |운영 체제 배포 향상| [Tech Preview 1701](capabilities-in-technical-preview-1701.md#improvements-to-operating-system-deployment)|![추가되지 않음](media/Red_X.gif)  |

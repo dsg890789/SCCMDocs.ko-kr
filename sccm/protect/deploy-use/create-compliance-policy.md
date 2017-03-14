@@ -17,8 +17,9 @@ ms.author: andredm
 manager: angrobe
 robots: noindex
 translationtype: Human Translation
-ms.sourcegitcommit: c13c6268fa76ade7feb0981f9c4a6e325e393aca
-ms.openlocfilehash: 4cc7148be602367b579d63535a4938919bacf829
+ms.sourcegitcommit: b1295fff41d99b0bd6fc00ccab7a4b8bbdb60866
+ms.openlocfilehash: dda0916fac15cf768ecc2a44fda3b8939bcd048e
+ms.lasthandoff: 02/27/2017
 
 ---
 
@@ -218,12 +219,14 @@ ms.openlocfilehash: 4cc7148be602367b579d63535a4938919bacf829
   - **보안 부팅 사용됨:** 보안 부팅을 사용하도록 설정하면 시스템이 공장에서 신뢰할 수 있는 상태로 강제로 부팅됩니다. 또한 보안 부팅 기능이 활성화되면 컴퓨터를 부팅하는 데 사용되는 핵심 구성 요소에는 장치를 제조한 조직에서 신뢰할 수 있는 올바른 암호화 서명이 있어야 합니다. UEFI 펌웨어에서 컴퓨터를 시작하도록 허용하기 전에 이를 확인합니다. 서명을 손상하여 변조한 파일이 있는 경우 시스템은 부팅되지 않습니다.
   - **맬웨어 방지 프로그램 조기 실행 사용(이 설정은 PC에만 적용됨):** 컴퓨터가 시작될 때, 그리고 타사 드라이버 초기화되기 전에 ELAM(맬웨어 방지 프로그램 조기 실행)에서 네트워크의 컴퓨터를 보호합니다.<br />이 규칙은 기본적으로 꺼져 있습니다.
 
+- **장치에 설치할 수 없는 앱:** 사용자가 관리자 비규격 앱 목록에서 앱을 설치하는 경우 회사 메일에 액세스하려고 하면 차단됩니다. 이 규칙에는 앱 이름이 필요하며, 관리자가 정의한 비규격 목록에 앱을 추가하는 경우 앱 ID가 필요합니다. 앱 게시자를 추가할 수도 있지만 필수는 아닙니다.
+
+  **지원됨:**
+  * iOS 6+
+  * Android 4.0+
+  * Samsung KNOX Standard 4.0 이상
+
   HAS 서비스의 작동 원리에 대한 내용은 [상태 증명 CSP](https://msdn.microsoft.com/library/dn934876.aspx)를 참조하세요.
   **지원됨:**
   * Windows 10 및 Windows 10 Mobile
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

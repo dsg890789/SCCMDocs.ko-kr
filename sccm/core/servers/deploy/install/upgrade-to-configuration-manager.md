@@ -1,8 +1,8 @@
 ---
-title: "System Center Configuration Manager로 업그레이드 | System Center Configuration Manager"
+title: "System Center Configuration Manager로 업그레이드 | Microsoft 문서"
 description: "System Center 2012 Configuration Manager를 실행하는 사이트 및 계층 구조에서 현재 위치 업그레이드를 성공적으로 실행하기 위한 단계를 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 2/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 473d4f9a39898ff5a664013f91ab95e58cd6d161
-ms.openlocfilehash: 7ccf6cb010226c1874fc015af00e0950b4ea63d6
+ms.sourcegitcommit: 30af3326578d39c6d995672071705bcaeb877e4d
+ms.openlocfilehash: 8af2a797ad4e87d870bb27873a7428e96f63b76d
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -29,10 +30,26 @@ ms.openlocfilehash: 7ccf6cb010226c1874fc015af00e0950b4ea63d6
 
  System Center 2012 Configuration Manager에서 업그레이드하기 전에 성공적인 업그레이드에 방해가 되는 특정 구성을 제거하도록 요구하는 사이트를 준비해야 하며, 여러 사이트가 관련된 경우 업그레이드 순서를 따라야 합니다.  
 
+ > [!TIP]
+ > System Center Configuration Manager 사이트 및 계층 인프라를 관리할 때 *업그레이드*, *업데이트* 및 *설치*라는 용어는 세 가지 별도의 개념을 설명하는 데 사용됩니다. 각 용어가 어떻게 사용되는지 알아보려면 [업그레이드, 업데이트 및 설치 정보](/sccm/core/understand/upgrade-update-install)를 참조하세요.
 
-##  <a name="a-namebkmkpatha-in-place-upgrade-paths"></a><a name="bkmk_path"></a> 현재 위치 업그레이드 경로  
- **다음 제품은 System Center Configuration Manager 버전 1511의 정품 버전으로 업그레이드할 수 있습니다.**  
+##  <a name="bkmk_path"></a> 현재 위치 업그레이드 경로  
+**버전 1606으로 업그레이드**  
+2016년 12월 15일에 버전 1606의 기준 미디어가 추가 업그레이드 시나리오에 대한 지원을 추가하기 위해 릴리스되었습니다. 이 새로운 릴리스는 다음 버전을 System Center Configuration Manager 버전 1606의 정품 버전으로 업그레이드하도록 지원합니다.  
+-   System Center Configuration Manager 버전 1606의 평가판 설치
+-   System Center Configuration Manager의 릴리스 후보 설치  
+-   System Center 2012 Configuration Manager 서비스 팩 1  
+-   System Center 2012 Configuration Manager 서비스 팩 2  
+-   System Center 2012 R2 Configuration Manager  
+-   System Center 2012 R2 Configuration Manager 서비스 팩 1  
 
+2016년 12월 15일 전에 다운로드한 버전 1606 기준 미디어를 사용하는 경우에는 다음 버전만 System Center Configuration Manager 버전 1606의 정품 버전으로 업그레이드할 수 있습니다.
+-   System Center Configuration Manager 버전 1606의 평가판 설치
+-   System Center 2012 Configuration Manager 서비스 팩 2
+-   System Center 2012 R2 Configuration Manager 서비스 팩 1
+
+**버전 1511로 업그레이드**  
+버전 1511 기준 미디어가 있는 경우 다음 버전을 System Center Configuration Manager 버전 1511의 정품 버전으로 업그레이드할 수 있습니다.  
 -   System Center Configuration Manager 버전 1511의 평가판 설치
 -   System Center Configuration Manager의 릴리스 후보 설치  
 -   System Center 2012 Configuration Manager 서비스 팩 1  
@@ -40,11 +57,6 @@ ms.openlocfilehash: 7ccf6cb010226c1874fc015af00e0950b4ea63d6
 -   System Center 2012 R2 Configuration Manager  
 -   System Center 2012 R2 Configuration Manager 서비스 팩 1  
 
-**다음 제품은 System Center Configuration Manager 버전 1606의 정품 버전으로 업그레이드할 수 있습니다.**
-
--   System Center Configuration Manager 버전 1606의 평가판 설치
--   System Center 2012 Configuration Manager 서비스 팩 2
--   System Center 2012 R2 Configuration Manager 서비스 팩 1
 
 
 > [!TIP]  
@@ -54,12 +66,11 @@ ms.openlocfilehash: 7ccf6cb010226c1874fc015af00e0950b4ea63d6
 >  -   [System Center Configuration Manager의 CD.Latest 폴더](../../../../core/servers/manage/the-cd.latest-folder.md)  
 
  **다음은 지원되지 않습니다.**  
-
 -   System Center Configuration Manager Technical Preview는 정식 라이선스 설치로 업그레이드할 수 없습니다.  Technical Preview 버전만 Technical Preview의 이후 버전으로 업그레이드할 수 있습니다.  
 
 -   Technical Preview에서 정식 라이선스 버전으로 마이그레이션할 수 없습니다.  
 
-##  <a name="a-namebkmkchecklista-upgrade-checklists"></a><a name="bkmk_checklist"></a> 업그레이드 검사 목록  
+##  <a name="bkmk_checklist"></a> 업그레이드 검사 목록  
  다음 검사 목록은 System Center Configuration Manager로의 성공적인 업그레이드를 계획하는 데 도움이 됩니다.  
 
 ### <a name="before-you-upgrade"></a>업그레이드하기 전에  
@@ -68,7 +79,6 @@ ms.openlocfilehash: 7ccf6cb010226c1874fc015af00e0950b4ea63d6
 사이트 시스템 역할을 호스트하는 데 사용 중인 서버 운영 체제를 검토합니다.  
 
 -   System Center 2012 Configuration Manager에서 지원하던 이전 운영 체제 중 일부는 System Center Configuration Manager에서 지원되지 않으므로, 업그레이드하기 전에 해당 운영 체제의 사이트 시스템 역할을 재배치하거나 제거해야 합니다.  
-
 -   Configuration Manager의 필수 조건 검사기는 사이트 서버 또는 원격 컴퓨터의 사이트 시스템 역할에 대한 필수 조건을 확인하지 않습니다.  
 
 사이트 시스템 역할을 호스트하는 각 컴퓨터에 대한 필수 조건을 검토합니다.  
@@ -79,52 +89,40 @@ ms.openlocfilehash: 7ccf6cb010226c1874fc015af00e0950b4ea63d6
 
 Configuration Manager에서 Windows ADK를 사용하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 운영 체제 배포에 대한 인프라 요구 사항](../../../../osd/plan-design/infrastructure-requirements-for-operating-system-deployment.md)을 참조하세요.  
 
-**사이트 및 계층 상태를 검토하고** 해결되지 않은 문제가 있는지 확인:  
-
+**사이트 및 계층 구조 상태를 검토하고 해결되지 않은 문제가 있는지 확인:**  
 사이트를 업그레이드하기 전에 원격 컴퓨터에 설치된 사이트 서버, 사이트 데이터베이스 서버 및 사이트 시스템 역할의 모든 작동 문제를 해결해야 합니다. 기존 작동 문제로 인해 사이트 업그레이드가 실패할 수 있습니다.  
 
-사이트, 사이트 데이터베이스 서버 및 원격 사이트 시스템 역할을 호스트하는 컴퓨터에 해당되는**모든 중요한 운영 체제 업데이트 설치** :  
-
+**사이트, 사이트 데이터베이스 서버 및 원격 사이트 시스템 역할을 호스트하는 컴퓨터에 해당되는 모든 중요한 운영 체제 업데이트 설치:**  
 사이트를 업그레이드하기 전에 각 해당 사이트 시스템에 대한 중요한 업데이트를 설치합니다. 설치하는 업데이트에 다시 시작이 필요한 경우 서비스 팩 업데이트를 시작하기 전에 해당 컴퓨터를 다시 시작합니다.  
 
-자세한 내용은 [Windows 업데이트](http://go.microsoft.com/fwlink/p/?LinkId=105851)를 참조하세요.  
+자세한 내용은 [Windows Update](http://go.microsoft.com/fwlink/p/?LinkId=105851)를 참조하세요.  
 
-System Center Configuration Manager에서 지원하지 않는 **사이트 시스템 역할을 제거**합니다.  
-
+**System Center Configuration Manager에서 지원하지 않는 사이트 시스템 역할을 제거:**  
 다음 사이트 시스템 역할은 System Center Configuration Manager에서 더 이상 사용되지 않으므로 System Center 2012 Configuration Manager에서 업그레이드하기 전에 제거해야 합니다.  
 
 -   대역 외 관리 지점  
-
 -   서비스 상태 검사기 지점  
 
-기본 사이트의 관리 지점에**데이터베이스 복제본을 사용하지 않도록 설정** :  
-
+**기본 사이트의 관리 지점에 데이터베이스 복제본을 사용하지 않도록 설정:**  
 Configuration Manager에서 관리 지점에 대한 데이터베이스 복제본이 사용하도록 설정된 기본 사이트를 성공적으로 업그레이드할 수 없습니다. 데이터베이스 복제를 사용하지 않도록 설정한 후 다음을 수행합니다.  
 
 -   데이터베이스 업그레이드를 테스트하기 위해 사이트 데이터베이스 백업 만들기  
-
 -   프로덕션 사이트를 System Center Configuration Manager로 업그레이드  
 
 자세한 내용은 다음을 참조하십시오.  
-
 -   System Center 2012 Configuration Manager: [관리 지점에 대한 데이터베이스 복제본 구성](https://technet.microsoft.com/library/hh846234.aspx)  
-
 -   System Center Configuration Manager: [System Center Configuration Manager의 관리 지점용 데이터베이스 복제본](../../../../core/servers/deploy/configure/database-replicas-for-management-points.md)  
 
-**NLB를 사용하는 소프트웨어 업데이트 지점 다시 구성**:  
-
+**NLB를 사용하는 소프트웨어 업데이트 지점 다시 구성:**  
 Configuration Manager에서는 NLB(네트워크 부하 분산) 클러스터를 사용하는 사이트를 소프트웨어 업데이트 지점을 호스트하도록 업그레이드할 수 없습니다.  
 
 소프트웨어 업데이트 지점에 NLB 클러스터를 사용하는 경우 PowerShell을 사용하여 NLB 클러스터를 제거하세요. (System Center 2012 Configuration Manager SP1부터 NLB 클러스터를 구성할 수 있는 옵션이 Configuration Manager 콘솔에 없음)  
 
-해당 사이트를 업그레이드하는 동안 각 사이트에서 **모든 사이트 유지 관리 작업을 사용하지 않도록 설정**:  
-
+**해당 사이트를 업그레이드하는 동안 각 사이트에서 모든 사이트 유지 관리 작업을 사용하지 않도록 설정:**  
 System Center Configuration Manager로 업그레이드하기 전에 업그레이드 프로세스가 활성 상태인 동안 실행될 수 있는 모든 사이트 유지 관리 작업을 사용하지 않도록 설정합니다. 이러한 작업의 일부 예는 다음과 같습니다.  
 
 -   백업 사이트 서버  
-
 -   오래된 클라이언트 작업 삭제  
-
 -   오래된 검색 데이터 삭제  
 
 업그레이드 프로세스 동안 사이트 데이터베이스 유지 관리 작업을 실행하면 사이트 업그레이드에 실패할 수 있습니다.  
@@ -134,29 +132,31 @@ System Center Configuration Manager로 업그레이드하기 전에 업그레이
 사이트 유지 관리 작업에 대한 자세한 내용은 다음을 참조하세요.  
 
 -   System Center 2012 Configuration Manager: [Configuration Manager에 대한 유지 관리 작업 계획](https://technet.microsoft.com/library/gg712686.aspx)  
-
 -   System Center Configuration Manager: [System Center Configuration Manager에 대한 유지 관리 작업 참조](../../../../core/servers/manage/reference-for-maintenance-tasks.md)  
 
 **설치 필수 구성 요소 검사기 실행**:  
+사이트를 업그레이드하기 전에 설치 프로그램과 별개로 **필수 구성 요소 검사기** 를 실행하여 사이트가 필수 조건을 충족하는지 확인합니다. 나중에 사이트를 업그레이드하면 필수 구성 요소 검사기가 다시 실행됩니다.  
 
-사이트를 업그레이드하기 전에 설치 프로그램과 별개로 **필수 구성 요소 검사기** 를 실행하여 사이트가 필수 조건을 충족하는지 확인합니다. 사이트를 업그레이드하면 필수 구성 요소 검사기가 다시 실행됩니다.  
+2016년 10월 릴리스의 버전 1606 기준 미디어를 사용하는 경우 독립적인 필수 구성 요소 검사에서 System Center Configuration Manager의 현재 분기 및 LTSB(장기 서비스 분기) 둘 다로 업그레이드하기 위해 사이트를 평가합니다. 일부 기능은 LTSB에서 지원되지 않으므로 *ConfigMgrPrereq.log*에 다음과 유사한 항목이 표시될 수 있습니다.
+ - 정보: 사이트가 LTSB 버전입니다.
+ - LTSB 버전에 지원되지 않는 사이트 시스템 역할 'Asset Intelligence 동기화 지점'입니다. 오류. Configuration Manager에서 'Asset Intelligence 동기화 지점'이 설치되어 있음을 감지했습니다. Asset Intelligence는 LTSB 버전에서 지원되지 않습니다. 계속하려면 Asset Intelligence 동기화 지점 사이트 시스템 역할을 제거해야 합니다.
 
-자세한 내용은 [필수 조건 검사기](/sccm/core/servers/deploy/install/prerequisite-checker) 및 [System Center Configuration Manager에 대한 필수 조건 검사 목록](/sccm/core/servers/deploy/install/list-of-prerequisite-checks)을 참조하세요.  
+현재 분기로 업그레이드하려는 경우 LTSB 버전에 대한 오류를 무시해도 됩니다. 이러한 오류는 LTSB로 업그레이드하려는 경우에만 적용됩니다.
 
-System Center Configuration Manager를 위한 **필수 조건 파일과 재배포 가능 파일을 다운로드**합니다.  
+나중에 Configuration Manager 설치 프로그램을 실행하여 업그레이드를 수행하는 경우 필수 구성 요소 검사가 다시 실행되며, 설치하도록 선택한 System Center Configuration Manager 분기(현재 분기 또는 LTSB)에 따라 사이트를 평가합니다. 현재 분기로 업그레이드하는 경우 LTSB에서 지원되지 않는 기능에 대한 검사는 실행되지 않습니다.
 
+자세한 내용은 [필수 구성 요소 검사기](/sccm/core/servers/deploy/install/prerequisite-checker) 및 [System Center Configuration Manager에 대한 필수 구성 요소 검사 목록](/sccm/core/servers/deploy/install/list-of-prerequisite-checks)을 참조하세요.  
+
+**System Center Configuration Manager에 대한 필수 조건 파일 및 재배포 가능 파일 다운로드:**    
 **설치 다운로더**를 사용하여 필수 조건 재배포 가능 파일, 언어 팩 및 System Center Configuration Manager의 최신 제품 업데이트를 다운로드합니다.  
 
 자세한 내용은 [설치 다운로더](/sccm/core/servers/deploy/install/setup-downloader)를 참조하세요.  
 
 **서버 및 클라이언트 언어 관리 계획**:  
-
 사이트를 업그레이드할 때 사이트 업그레이드는 업그레이드하는 동안 선택한 언어 팩 버전만 설치합니다.  
 
 -   사이트의 현재 언어 구성이 검토되어 이전에 다운로드한 필수 조건 파일이 저장된 폴더에서 사용 가능한 언어 팩이 식별됩니다.  
-
 -   그런 다음 현재 서버와 클라이언트 언어 팩의 선택을 확인하거나 언어 지원을 추가하거나 제거하여 선택 항목을 변경할 수 있습니다.  
-
 -   설치 프로그램을 실행할 때 사용할 수 있는 언어 팩(다운로드한 필수 조건 파일과 함께 제공)만 선택할 수 있습니다.  
 
 > [!NOTE]  
@@ -165,31 +165,23 @@ System Center Configuration Manager를 위한 **필수 조건 파일과 재배�
 언어 팩에 대한 자세한 내용은 [System Center Configuration Manager의 언어 팩](../../../../core/servers/deploy/install/language-packs.md)을 참조하세요.  
 
 **사이트 업그레이드 고려 사항 검토**:  
-
 사이트를 업그레이드하는 경우 일부 기능과 구성이 기본 구성으로 다시 설정됩니다. 이러한 변경 및 관련 변경을 준비하는 데 도움이 필요한 경우  [업그레이드할 때의 고려 사항](#bkmk_considerations)의 정보를 검토하세요.  
 
-중앙 관리 사이트와 기본 사이트의 사이트 데이터베이스**백업 만들기** :  
-
+**중앙 관리 사이트와 기본 사이트의 사이트 데이터베이스 백업 만들기:**  
 사이트를 업그레이드하기 전에 사이트 데이터베이스를 백업하여 재해 복구에 사용할 백업을 갖추어야 합니다.  
 
 [System Center Configuration Manager 백업 및 복구](../../../../protect/understand/backup-and-recovery.md)를 참조하세요.  
 
 **사용자 지정된 Configuration.mof 파일 백업**:  
-
 사용자 지정된 Configuration.mof 파일을 사용하여 하드웨어 인벤토리와 함께 사용하는 데이터 클래스를 정의하는 경우 사이트를 업그레이드하기 전에 이 파일의 백업을 만듭니다. 업그레이드한 후 사이트에 이 파일을 복원합니다. 이 파일을 사용하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 하드웨어 인벤토리를 확장하는 방법](../../../../core/clients/manage/inventory/extend-hardware-inventory.md)을 참조하세요.  
 
-최신 사이트 데이터베이스 백업의 복사본에서**데이터베이스 업그레이드 프로세스 테스트** :  
-
+**최신 사이트 데이터베이스 백업의 복사본에서 데이터베이스 업그레이드 프로세스 테스트:**  
 Configuration Manager 중앙 관리 사이트 또는 기본 사이트를 업그레이드하기 전에 사이트 데이터베이스 복사본을 사용하여 사이트 데이터베이스 업그레이드 프로세스를 테스트합니다.  
 
 -   사이트를 업그레이드할 때 사이트 데이터베이스가 수정될 수 있기 때문에 사이트 데이터베이스 업그레이드 프로세스를 테스트해야 합니다.  
-
 -   데이터베이스 업그레이드 테스트를 반드시 수행해야 하는 것은 아니지만, 수행할 경우 프로덕션 데이터베이스가 영향을 받기 전에 업그레이드 문제를 파악할 수 있습니다.  
-
 -   사이트 데이터베이스 업그레이드에 실패하면 사이트 데이터베이스가 작동하지 않을 수 있고, 기능을 복원하기 위해 사이트 복구가 필요할 수도 있습니다.  
-
 -   사이트 데이터베이스는 계층 구조의 여러 사이트 간에 공유되지만 사이트를 업그레이드하기 전에 각 해당 사이트에서 데이터베이스를 테스트합니다.  
-
 -   기본 사이트의 관리 지점에 데이터베이스 복제본을 사용할 경우 사이트 데이터베이스 백업을 만들기 전에 복제를 사용하지 않도록 설정합니다.  
 
 Configuration Manager는 보조 사이트의 백업과 보조 사이트의 데이터베이스 업그레이드 테스트를 지원하지 않습니다.  
@@ -198,23 +190,20 @@ Configuration Manager는 보조 사이트의 백업과 보조 사이트의 데�
 
 자세한 내용은 [사이트 데이터베이스 업그레이드 테스트](#bkmk_test)항목을 참조하세요.  
 
-**사이트 서버와 사이트 시스템 역할을 호스트하는 각 컴퓨터를 다시 시작** 하여 최신 업그레이드 설치 또는 필수 구성 요소에서 보류된 작업이 없는지 확인:  
-
-회사별 내부 프로세스입니다.  
+**사이트 서버 및 사이트 시스템 역할을 호스트하는 각 컴퓨터 다시 시작**:  
+이 작업은 최신 업데이트 설치 또는 필수 조건에서 보류 중인 작업이 없는지 확인하며 회사별 내부 프로세스입니다.  
 
 **사이트 업그레이드**:  
-
-**계층 구조의 최상위 사이트부터 시작**하여 System Center Configuration Manager 원본 미디어에서 Setup.exe를 실행합니다.  
+계층 구조의 최상위 사이트부터 시작하여 System Center Configuration Manager 원본 미디어에서 Setup.exe를 실행합니다.  
 
 최상위 사이트 업그레이드 후 각 자식 사이트의 업그레이드를 시작할 수 있습니다. 각 사이트의 업그레이드를 완료한 후에 다음 사이트의 업그레이드를 시작합니다.  
 
 계층 구조의 모든 사이트가 System Center Configuration Manager로 업그레이드될 때까지 계층 구조는 혼합 버전 모드로 작동합니다.  
 
-업그레이드를 실행하는 방법에 대한 자세한 내용은 [사이트 업그레이드](#bkmk_upgrade)항목을 참조하세요.  
+업그레이드를 실행하는 방법에 대한 자세한 내용은 [사이트 업그레이드](#bkmk_upgrade)를 참조하세요.  
 
 ### <a name="after-you-upgrade"></a>업그레이드한 후  
 **독립 실행형 Configuration Manager 콘솔 업그레이드**:  
-
 기본적으로 중앙 관리 사이트 또는 기본 사이트를 업그레이드하면 사이트 서버에 설치된 Configuration Manager 콘솔도 업그레이드됩니다. 그러나 사이트 서버가 아닌 컴퓨터에 설치된 각 콘솔은 수동으로 업그레이드해야 합니다.  
 
 > [!TIP]  
@@ -222,17 +211,14 @@ Configuration Manager는 보조 사이트의 백업과 보조 사이트의 데�
 
 자세한 내용은 [System Center Configuration Manager 콘솔 설치](../../../../core/servers/deploy/install/install-consoles.md)를 참조하세요.  
 
-기본 사이트의 관리 지점에**데이터베이스 복제본 다시 구성** :  
-
+**기본 사이트의 관리 지점에 데이터베이스 복제본 다시 구성:**  
 기본 사이트의 관리 지점에 데이터베이스 복제본을 사용할 경우 사이트를 업그레이드하기 전에 데이터베이스 복제본을 제거해야 합니다. 기본 사이트를 업그레이드한 후에는 관리 지점에 대해 데이터베이스 복제본을 다시 구성합니다.   
 자세한 내용은 [System Center Configuration Manager의 관리 지점용 데이터베이스 복제본](../../../../core/servers/deploy/configure/database-replicas-for-management-points.md)을 참조하세요.  
 
-업그레이드 전에 사용하지 않도록 설정한**데이터베이스 유지 관리 작업 다시 구성** :  
-
+**업그레이드 전에 사용하지 않도록 설정한 데이터베이스 유지 관리 작업 다시 구성:**  
 업그레이드 전에 사이트에서 데이터베이스 유지 관리 작업을 사용하지 않도록 설정한 경우([System Center Configuration Manager에 대한 유지 관리 작업 참조](../../../../core/servers/manage/reference-for-maintenance-tasks.md)) 업그레이드 전에 사용하던 설정과 같은 설정을 사용하여 사이트에서 해당 작업을 다시 구성합니다.  
 
 **클라이언트 업그레이드**:  
-
 모든 사이트를 System Center Configuration Manager로 업그레이드한 후 클라이언트를 업그레이드합니다.  
 
 클라이언트를 업그레이드할 때에는 현재 클라이언트 소프트웨어가 제거되고 새 클라이언트 소프트웨어 버전이 설치됩니다. 클라이언트를 업그레이드하기 위해 Configuration Manager에서 지원하는 모든 방법을 사용할 수 있습니다.  
@@ -242,44 +228,37 @@ Configuration Manager는 보조 사이트의 백업과 보조 사이트의 데�
 
 기존 클라이언트를 업그레이드하는 방법과 새 클라이언트를 설치하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 Windows 컴퓨터용 클라이언트를 업그레이드하는 방법](../../../../core/clients/manage/upgrade/upgrade-clients-for-windows-computers.md)을 참조하세요.  
 
-##  <a name="a-namebkmkconsiderationsa-considerations-for-upgrading"></a><a name="bkmk_considerations"></a> 업그레이드할 때의 고려 사항  
-**자동 작업** - System Center Configuration Manager로 업그레이드하는 경우 다음 작업이 자동으로 수행됩니다.  
+##  <a name="bkmk_considerations"></a> 업그레이드할 때의 고려 사항  
+**자동 작업**:  
+System Center Configuration Manager로 업그레이드하는 경우 다음 작업이 자동으로 수행됩니다.  
 
 -   사이트에서 사이트 다시 설정을 수행합니다. 여기에는 모든 사이트 시스템 역할의 다시 설치가 포함됩니다.  
-
 -   사이트가 계층의 최상위 사이트인 경우 계층의 각 배포 지점에서 클라이언트 설치 패키지를 업데이트합니다. 이 사이트는 Windows 평가 및 배포 키트 10에 포함된 새 Windows PE 버전을 사용하도록 기본 부팅 이미지도 업데이트합니다. 그러나 업그레이드 시 이미지 배포와 함께 사용할 기존 미디어는 업그레이드되지 않습니다.  
-
 -   사이트가 기본 사이트인 경우 해당 사이트에 대한 클라이언트 업그레이드 패키지를 업데이트합니다.  
 
-**업그레이드 후 관리자의 수동 작업** - 사이트를 업그레이드한 후 다음 작업을 수행해야 합니다.  
+**업그레이드 후 관리자의 수동 작업**   
+사이트를 업그레이드한 후에는 다음 작업을 수행해야 합니다.  
 
 -   각 기본 사이트에 할당된 클라이언트에서 새 버전을 위한 클라이언트 소프트웨어를 업그레이드하고 설치하는지 확인합니다.  
-
 -   해당 사이트에 연결되고 사이트 서버에서 원격인 컴퓨터에서 실행되는 각 Configuration Manager 콘솔을 업그레이드합니다.  
-
 -   관리 지점에 데이터베이스 복제본을 사용하는 기본 사이트에서 데이터베이스 복제본을 다시 구성합니다.  
-
 -   사이트 업그레이드 후 CD 및 DVD 또는 USB 플래시 드라이브용 ISO 파일과 같은 실제 미디어 또는 Windows To Go 배포에 사용되거나 하드웨어 공급업체에 제공되는 미리 준비된 미디어를 수동으로 업그레이드해야 합니다. 사이트 업그레이드에서는 기본 부팅 이미지를 업데이트하지만 이러한 미디어 파일 또는 Configuration Manager 외부에서 사용되는 장치를 업그레이드할 수는 없습니다.  
-
 -   원래(구) 버전의 Windows PE가 필요하지 않은 경우 기본이 아닌 부팅 이미지를 업데이트하도록 계획합니다.  
 
-**구성 및 설정에 영향을 주는 작업** - 사이트가 System Center Configuration Manager으로 업그레이드되면 일부 구성 및 설정이 업그레이드 후에 유지되지 않거나 새 기본 구성으로 설정됩니다. 다음 표에서는 유지되지 않거나 변경되는 설정을 소개하고, 사이트 업그레이드 중 이러한 설정에 대한 계획을 세우는 데 도움이 되는 정보를 제공합니다.  
+**구성 및 설정에 영향을 주는 작업**   
+사이트가 System Center Configuration Manager으로 업그레이드되면 일부 구성 및 설정이 업그레이드 후에 유지되지 않거나 새 기본 구성으로 설정됩니다. 다음 표에서는 유지되지 않거나 변경되는 설정을 소개하고, 사이트 업그레이드 중 이러한 설정에 대한 계획을 세우는 데 도움이 되는 정보를 제공합니다.  
 
 -   **소프트웨어 센터:**  
-
     다음 소프트웨어 센터 항목이 기본값으로 다시 설정됩니다.  
-
-    -   **작업 정보** 가 월요일부터 금요일 **오전 5:00** 부터 **오후 10:00** 의 업무 시간으로 다시 설정됩니다.  
-
+    -   **작업 정보** 가 월요일부터 금요일 **오전&5;:00** 부터 **오후&10;:00** 의 업무 시간으로 다시 설정됩니다.  
     -   **컴퓨터 유지 관리** 의 값이 **내 컴퓨터가 프레젠테이션 모드일 때 소프트웨어 센터 활동 일시 중단**으로 설정됩니다.  
-
     -   **원격 제어** 의 값이 컴퓨터에 할당된 클라이언트 설정의 값으로 설정됩니다.  
-
 -   **소프트웨어 업데이트 요약 일정:**  
-
      소프트웨어 업데이트 또는 소프트웨어 업데이트 그룹의 사용자 지정 요약 일정이 기본값인 1시간으로 다시 설정됩니다. 업그레이드가 완료된 후에는 사용자 지정 요약 값을 필요한 주기로 다시 설정합니다.  
 
-##  <a name="a-namebkmktesta-test-the-site-database-upgrade"></a><a name="bkmk_test"></a> 사이트 데이터베이스 업그레이드 테스트  
+##  <a name="bkmk_test"></a> 사이트 데이터베이스 업그레이드 테스트  
+다음 정보는 System Center 2012 Configuration Manager 등의 이전 버전을 System Center Configuration Manager로 업그레이드하는 경우에만 적용됩니다. 사이트에서 이미 System Center Configuration Manager를 실행하고 있고 새 업데이트를 설치 중인 경우 **콘솔 내 업데이트를 설치하기 전에**에서 [2단계: 업데이트를 설치하기 전에 데이터베이스 업그레이드 테스트](/sccm/core/servers/manage/install-in-console-updates#bkmk_step2)를 참조하세요.
+
 사이트를 업그레이드하기 전에 해당 사이트의 데이터베이스 사본으로 업그레이드를 테스트합니다.  
 
 데이터베이스에서 업그레이드를 테스트하려면 먼저 Configuration Manager 사이트를 호스트하지 않는 SQL Server의 인스턴스로 사이트 데이터베이스 사본을 복원합니다. 데이터베이스 사본을 호스팅하는 데 사용되는 SQL Server 버전은 Configuration Manager 버전에서 지원하고 데이터베이스 사본의 원본인 SQL Server 버전이어야 합니다.  
@@ -287,9 +266,7 @@ Configuration Manager는 보조 사이트의 백업과 보조 사이트의 데�
 이제, 사이트 데이터베이스를 복원한 후 SQL Server 컴퓨터에서 **/TESTDBUPGRADE** 명령줄 옵션을 사용하여 System Center Configuration Manager의 원본 미디어 폴더에서 Configuration Manager 설치 프로그램을 실행합니다.  
 
 -   사이트 데이터베이스의 백업을 만들고 복원하는 방법에 대한 자세한 내용은 [설치를 위한 명령줄 옵션](../../../../core/servers/deploy/install/command-line-options-for-setup.md)을 참조하세요.  
-
 -   **/TESTDBUPGRADE** 명령줄 옵션에 대한 자세한 내용은 [설치를 위한 명령줄 옵션](../../../../core/servers/deploy/install/command-line-options-for-setup.md)의 표를 참조하세요.  
-
 -   지원되는 SQL Server의 버전에 대한 자세한 내용은 [System Center Configuration Manager에 대한 SQL Server 버전 지원](../../../../core/plan-design/configs/support-for-sql-server-versions.md)을 참조하세요.  
 
 > [!TIP]  
@@ -317,7 +294,6 @@ Configuration Manager는 보조 사이트의 백업과 보조 사이트의 데�
 3.  데이터베이스 업그레이드 테스트를 실행하는 SQL Server 인스턴스에서 시스템 드라이브 루트에 있는 ConfigMgrSetup.log를 보고 진행률 및 성공 여부를 모니터링합니다.  
 
     -   테스트 업그레이드에 실패하면 사이트 데이터베이스 업그레이드 실패와 관련된 문제를 해결하고, 사이트 데이터베이스의 새 백업을 만든 다음, 사이트 데이터베이스 새 사본의 업그레이드를 테스트합니다.  
-
     -   프로세스가 성공한 후에는 데이터베이스 사본을 삭제할 수 있습니다.  
 
         > [!NOTE]  
@@ -325,7 +301,7 @@ Configuration Manager는 보조 사이트의 백업과 보조 사이트의 데�
 
 사이트 데이터베이스의 사본을 업그레이드한 후에 Configuration Manager 사이트 및 해당 사이트 데이터베이스의 업그레이드를 진행합니다.  
 
-##  <a name="a-namebkmkupgradea-upgrade-sites"></a><a name="bkmk_upgrade"></a> 사이트 업그레이드  
+##  <a name="bkmk_upgrade"></a> 사이트 업그레이드  
 사이트에 대해 업그레이드 전 구성을 완료하고 데이터베이스 사본에 대해 사이트 데이터베이스의 업그레이드를 테스트한 후 설치할 서비스 팩 버전의 필수 조건 파일과 언어 팩을 다운로드하면 Configuration Manager 사이트를 업그레이드할 준비가 완료됩니다.  
 
 계층에서 사이트를 업그레이드하는 경우 먼저 계층의 최상위 사이트를 업그레이드합니다. 이 최상위 사이트는 중앙 관리 사이트나 독립 실행형 기본 사이트 중 하나입니다. 중앙 관리 사이트의 업그레이드를 완료한 후에는 자식 기본 사이트를 원하는 순서대로 업그레이드할 수 있습니다. 기본 사이트를 업그레이드한 후에는 사이트의 하위 보조 사이트를 업그레이드할 수도 있고 보조 사이트를 업그레이드하기 전에 다른 기본 사이트를 업그레이드할 수도 있습니다.  
@@ -341,8 +317,7 @@ Configuration Manager 사이트를 업그레이드하려면 다음 절차를 수
 1.  설치 프로그램을 실행하는 사용자에게 다음 보안 권한이 있는지 확인합니다.  
 
     -   사이트 서버 컴퓨터에 대한 로컬 관리자 권한  
-
-    -   사이트가 원격인 경우 사이트의 원격 사이트 데이터베이스 서버에 대한 로컬 관리자 권한  
+    -   사이트가 원격인 경우 사이트의 원격 사이트 데이터베이스 서버에 대한 로컬 관리자 권한    </br></br>
 
 2.  사이트 서버 컴퓨터에서 Windows 탐색기를 열고 **&lt;Configuration Manager 원본 미디어\>\SMSSETUP\BIN\X64**로 이동합니다.  
 
@@ -362,7 +337,6 @@ Configuration Manager 사이트를 업그레이드하려면 다음 절차를 수
      >  Microsoft는 입력된 만료 날짜의 유효성을 검사하지 않으며 이 날짜를 라이선스 유효성 검사에 사용하지 않습니다.  대신, 만료 날짜 미리 알림으로 사용할 수 있습니다. 이 기능은 Configuration Manager가 온라인에서 제공되는 새 소프트웨어 업데이트를 정기적으로 확인하며 이러한 추가 업데이트를 사용할 수 있으려면 Software Assurance 라이선스 상태가 현재여야 하기 때문에 유용합니다.    
 
      자세한 내용은 [System Center Configuration Manager의 라이선스 및 분기](/sccm/core/understand/learn-more-editions)를 참조하세요.
-
 
 7.  **Microsoft 소프트웨어 사용 조건** 페이지에서 사용 조건을 읽고 동의한 후 **다음**을 클릭합니다.  
 
@@ -394,11 +368,9 @@ Configuration Manager 사이트를 업그레이드하려면 다음 절차를 수
 1.  설치 프로그램을 실행하는 관리자에게 다음 보안 권한이 있는지 확인합니다.  
 
     -   보조 사이트 컴퓨터에 대한 로컬 관리자 권한  
-
     -   상위 기본 사이트에 대한 인프라 관리자 또는 전체 관리자 보안 역할  
-
     -   보조 사이트의 사이트 데이터베이스에 대한 SA(시스템 관리자) 권한  
-
+    </br>
 2.  Configuration Manager 콘솔에서 **관리**를 클릭합니다.  
 
 3.  **관리** 작업 영역에서 **사이트 구성**을 확장하고 **사이트**를 클릭합니다.  
@@ -409,19 +381,11 @@ Configuration Manager 사이트를 업그레이드하려면 다음 절차를 수
 
 보조 사이트 업그레이드는 백그라운드에서 진행됩니다. 업그레이드가 완료된 후에 Configuration Manager 콘솔의 상태를 확인할 수 있습니다. 상태를 확인하려면 보조 사이트 서버를 선택한 다음 **홈** 탭의 **사이트** 그룹에서 **설치 상태 표시**를 클릭합니다.  
 
-##  <a name="a-namebkmkpostupgradea-perform-post-upgrade-tasks"></a><a name="BKMK_PostUpgrade"></a> 업그레이드 후 작업 수행  
+##  <a name="BKMK_PostUpgrade"></a> 업그레이드 후 작업 수행  
 사이트를 새 서비스 팩으로 업그레이드한 후에는 업그레이드를 마치거나 사이트를 다시 구성하기 위해 추가 작업을 완료해야 할 수 있습니다. 이러한 작업으로는 Configuration Manager 클라이언트 또는 Configuration Manager 콘솔을 업그레이드하거나, 관리 지점의 데이터베이스 복제본을 다시 사용하도록 설정하거나, 사용하는 Configuration Manager 기능이지만 서비스 팩 업그레이드 후에 사라진 기능의 설정을 복원하는 작업 등이 있을 수 있습니다.  
 
-**알려진 문제:**  
-보조 사이트:
-- 버전 1511로 업그레이드하는 경우:  
-보조 사이트의 클라이언트가 보조 사이트의 관리 지점(프록시 관리 지점)을 찾을 수 있게 하려면 보조 사이트의 배포 지점도 포함하는 경계 그룹에 관리 지점을 수동으로 추가합니다.
+**보조 사이트에 대한 알려진 문제:**  
+- **버전 1511로 업그레이드하는 경우:** 보조 사이트의 클라이언트가 보조 사이트의 관리 지점(프록시 관리 지점)을 찾을 수 있게 하려면 보조 사이트의 배포 지점도 포함하는 경계 그룹에 관리 지점을 수동으로 추가합니다.  
 
-- 버전 1606 이상으로 업그레이드하는 경우:  
-  프록시 관리 지점은 보조 사이트의 배포 지점을 포함하는 경계 그룹에 자동으로 추가됩니다.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
+- **버전 1606 이상으로 업그레이드하는 경우:** 프록시 관리 지점은 보조 사이트의 배포 지점을 포함하는 경계 그룹에 자동으로 추가됩니다.
 

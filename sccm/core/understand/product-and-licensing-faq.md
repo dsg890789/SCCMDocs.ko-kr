@@ -2,7 +2,7 @@
 title: "제품 및 라이선스 FAQ | Microsoft 문서"
 description: "System Center Configuration Manager에 대한 일반적인 제품 및 라이선스 질문의 대답을 알아봅니다."
 ms.custom: na
-ms.date: 2/17/2017
+ms.date: 2/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 81689631899b626bd33df8853cf82646d7e57afc
-ms.openlocfilehash: 47e35018902c424dc492025bb08bd4df4d81fcbe
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: d8f1a1a5757bbc3e2b0c17b1a89fbd56bbae6019
+ms.openlocfilehash: c1a276ad1ed6d10d286ab389ab3f05ec780c4e58
+ms.lasthandoff: 02/28/2017
 
 
 ---
@@ -32,16 +32,15 @@ ms.lasthandoff: 02/18/2017
 System Center Configuration Manager 기능에 대한 자세한 내용은 Microsoft [System Center Configuration Manager](https://www.microsoft.com/cloud-platform/system-center-configuration-manager) 제품 페이지를 참조하세요.
 
 
-## <a name="details"></a>세부 정보
-System Center Configuration Manager는...
 
-## <a name="faq"></a>FAQ
+
+## <a name="system-center-configuration-manager-licensing-faq"></a>System Center Configuration Manager 라이선스 FAQ
 
 1.    **CB(현재 분기)란?**   
 현재 분기는 활성 서비스 모델을 제공하는 System Center Configuration Manager의 프로덕션 준비 빌드입니다. 이 서비스 모델은 Windows 10 또는 Windows Server 2016 Nano 서버 설치 옵션을 사용하는 환경과 비슷합니다. 이 방법은 "클라우드 주기"로 전환하여 더 빠르게 혁신을 이루려는 고객을 지원합니다. 현재 분기 서비스 모델의 경우 System Center Configuration Manager 고객은 계속 새로운 기능을 수신합니다. 이런 이유로 System Center Configuration Manager 라이선스에 활성 Software Assurance가 있거나 이와 동등한 구독 권한이 있는 고객은 System Center Configuration Manager의 현재 분기를 설치하고 사용할 수 있습니다.
 
 2.    **LTSB(장기 서비스 분기)란?**  
-장기 서비스 분기는 Software Assurance 또는 동등한 구독 권한의 경과를 허용하는 고객을 위한 System Center Configuration Manager의 프로덕션 준비 빌드입니다. 현재 분기에 비해 LTSB는 [축소된 기능](/sccm/core/understand/introduction-to-the-ltsb#features-that-are-not-available-in-the-ltsb-of-configuration-manager)을 갖습니다. Software Assurance 또는 동등한 구독 권한의 경과를 허용하는 고객은 System Center Configuration Manager의 현재 분기를 제거해야 합니다. System Center Configuration Manager에 대한 영구적인 권한이 있는 고객은 경과 당시 최신 버전인 System Center Configuration Manager 버전의 LTSB 빌드를 설치하고 사용할 수 있습니다.
+장기 서비스 분기는 Software Assurance 또는 동등한 구독 권한의 만료를 허용하는 고객을 위한 System Center Configuration Manager의 프로덕션 준비 빌드입니다. 현재 분기에 비해 LTSB는 [축소된 기능](/sccm/core/understand/introduction-to-the-ltsb#features-that-are-not-available-in-the-ltsb-of-configuration-manager)을 갖습니다. Software Assurance 또는 동등한 구독 권한의 만료를 허용하는 고객은 System Center Configuration Manager의 현재 분기를 제거해야 합니다. System Center Configuration Manager에 대한 영구적인 권한이 있는 고객은 만료 당시 최신 버전인 System Center Configuration Manager 버전의 LTSB 빌드를 설치하고 사용할 수 있습니다.
 
 3.    **라이선스 콘텐츠에 사용된 SA 및 L&SA가 표시되었습니다. 이것이 System Center Configuration Manager와 관련하여 어떤 의미인가요?**    
 SA(Software Assurance) L&SA(라이선스 및 Software Assurance)는 System Center Configuration Manager를 사용하는 권한을 부여하는 라이선스 옵션입니다. SA는 이전 계약을 통해 SA 계약 범위를 갱신 하는 고객을 위한 옵션입니다. L&SA는 신규 라이선스 및 SA 계약 범위를 구매하는 고객을 위한 옵션입니다.

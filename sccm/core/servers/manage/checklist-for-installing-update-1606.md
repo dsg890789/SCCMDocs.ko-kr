@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 7847396fa2ec79a6044c41c1b53572a81692ec8e
-ms.openlocfilehash: 8ab8e504c3881c4dc07ffb569a1f440f4318d689
+ms.sourcegitcommit: 30af3326578d39c6d995672071705bcaeb877e4d
+ms.openlocfilehash: b0def6eb962d243a7ea5910b8d56bbb448b3a2e4
+ms.lasthandoff: 02/23/2017
 
 ---
 # <a name="checklist-for-installing-update-1606-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 업데이트 1606을 설치하기 위한 검사 목록
@@ -124,7 +125,7 @@ System Center Configuration Manager 버전 1606의 현재 분기는 버전 1511 
 
 Configuration Manager는 보조 사이트의 백업을 지원하지 않으며, 보조 사이트 데이터베이스의 테스트 업그레이드도 지원하지 않습니다.   
 
-프로덕션 사이트 데이터베이스에서 테스트 데이터베이스 업그레이드를 실행해서는 안 됩니다. 이렇게 하면 사이트 데이터베이스가 업데이트되어 사이트가 작동하지 않을 수 있습니다. 자세한 내용은 [System Center Configuration Manager 업그레이드](../../../core/servers/deploy/install/upgrade-to-configuration-manager.md)의 [사이트 데이터베이스 업그레이드 테스트](../../../core/servers/deploy/install/upgrade-to-configuration-manager.md#bkmk_test) 섹션을 참조하세요.  
+프로덕션 사이트 데이터베이스에서 테스트 데이터베이스 업그레이드를 실행해서는 안 됩니다. 이렇게 하면 사이트 데이터베이스가 업데이트되어 사이트가 작동하지 않을 수 있습니다. 자세한 내용은 **콘솔 내 업데이트를 설치하기 전에**에서 [2단계: 업데이트를 설치하기 전에 데이터베이스 업그레이드 테스트](/sccm/core/servers/manage/install-in-console-updates#bkmk_step2)를 참조하세요.
 
  **클라이언트 파일럿에 대한 계획:** 클라이언트를 업데이트하는 업데이트를 설치할 때 모든 활성 클라이언트를 배포하고 업그레이드하기 전에 사전 프로덕션 환경에서 새로운 클라이언트 업데이트를 테스트할 수 있습니다.   
 
@@ -147,9 +148,4 @@ Configuration Manager는 보조 사이트의 백업을 지원하지 않으며, �
   각 사이트에 대한 일상적인 업무 시간 외(업데이트를 설치하는 프로세스와 사이트 구성 요소 및 사이트 시스템 역할을 다시 설치하는 작업이 비즈니스 운영에 가장 영향을 덜 주는 시기)에 업데이트를 설치하도록 계획하는 것이 좋습니다.
 
 자세한 내용은 [System Center Configuration Manager용 업데이트](../../../core/servers/manage/updates.md)를 참조하세요.  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
