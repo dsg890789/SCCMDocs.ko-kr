@@ -16,9 +16,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: b90519f6f6e3599cd34f5cf93b476739ec17847b
-ms.openlocfilehash: 64ed5982cfd1de6ec135f02c84b9396266001b42
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: dcbcd57b95f304f007e92ebe2b9aeefb4b579662
+ms.openlocfilehash: 991bf551899d810a55a30f1a833de28db6295cf4
+ms.lasthandoff: 03/09/2017
 
 
 ---
@@ -33,8 +33,11 @@ ms.lasthandoff: 02/24/2017
 -   Windows Server 2008: [Windows Server 2008의 Active Directory 인증서 서비스](http://go.microsoft.com/fwlink/p/?LinkId=115018)  
 
 > [!IMPORTANT]  
->  2017년 2월 14일부터 Windows에서는 SHA-1로 서명된 특정 인증서를 더 이상 신뢰하지 않습니다. 자세한 내용은 [SHA1 인증서의 Windows 적용](http://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx)에서 확인할 수 있습니다. 일반적으로 SHA-2(SHA-256 및 SHA-512 포함)로 서명된 서버 및 클라이언트 인증 인증서를 새로 발급하는 것이 좋습니다.
-> 또한 모든 인터넷 연결 서비스에서 SHA-2 인증서를 사용하는 것이 좋습니다. 예를 들어 클라우드 관리 게이트웨이에서 사용할 공용 인증서를 구입하는 경우 SHA-2 인증서를 구입해야 합니다.
+> 2017년 2월 14일부터 Windows에서는 SHA-1로 서명된 특정 인증서를 더 이상 신뢰하지 않습니다. System Center Configuration Manager는 SHA-2 인증서를 지원하며, SHA-2 인증서를 사용하면 보안에 중요한 장점이 생깁니다. 따라서 다음을 권장합니다.
+> - SHA-2(SHA-256 및 SHA-512 포함)로 서명된 서버 및 클라이언트 인증 인증서를 새로 발급하는 것이 좋습니다.
+> - 인터넷에 연결된 모든 서비스에서 SHA-2 인증서를 사용하는 것이 좋습니다. 예를 들어 클라우드 관리 게이트웨이에서 사용할 공용 인증서를 구입하는 경우 SHA-2 인증서를 구입해야 합니다.  
+>
+> 대부분의 경우 SHA-2 인증서로 변경해도 작업에는 영향을 주지 않습니다. 자세한 내용은 [SHA1 인증서의 Windows 적용](http://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx)을 참조하세요.
 
  System Center Configuration Manager가 모바일 장치 및 Mac 컴퓨터에 등록하는 클라이언트 인증서, Microsoft Intune에서 모바일 장치를 관리하기 위해 자동으로 만드는 인증서 및 System Center Configuration Manager가 AMT 기반 컴퓨터에 설치하는 인증서를 제외한 다음 인증서는 PKI를 사용하여 만들고, 배포하고, 관리할 수 있습니다. 그러나 Active Directory 인증서 서비스 및 인증서 템플릿을 사용하는 경우 이 Microsoft PKI 솔루션을 사용하면 인증서를 쉽게 관리할 수 있습니다. 인증서 요구 사항에 가장 부합하는 인증서 템플릿을 알아보려면 다음 표의 **사용할 Microsoft 인증서 템플릿** 열을 참조하세요. 템플릿 기반 인증서는 Windows Server 2008 Enterprise 및 Windows Server 2008 Datacenter와 같은 Enterprise Edition 또는 Datacenter Edition의 서버 운영 체제에서 실행되는 엔터프라이즈 인증 기관에서만 발행할 수 있습니다.  
 

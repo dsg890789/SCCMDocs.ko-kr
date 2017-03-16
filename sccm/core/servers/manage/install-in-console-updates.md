@@ -2,7 +2,7 @@
 title: "콘솔 내 업데이트 | Microsoft 문서"
 description: "System Center Configuration Manager는 Microsoft 클라우드와 동기화하여 콘솔 내에서 설치할 수 있는 업데이트를 가져옵니다."
 ms.custom: na
-ms.date: 2/23/2017
+ms.date: 3/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: a0d4eb601948aa3abb12409f3475d69cacf4a6aa
-ms.openlocfilehash: a2bf28c724f8e07f32a30ab5e0b832b46cf362bb
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
+ms.openlocfilehash: eafa95922485066632a5da522e6c3de69b45050f
+ms.lasthandoff: 03/04/2017
 
 
 ---
@@ -33,7 +33,7 @@ System Center Configuration Manager는 Microsoft 클라우드 서비스와 동�
 
 -   **온라인 모드**에서, 서비스 연결 지점은 Microsoft 클라우드 서비스에 자동으로 연결하고 적용 가능한 업데이트를 다운로드합니다.  
 
-     기본적으로 Configuration Manager는 24시간마다 새 업데이트를 확인합니다. 버전 1602 이상부터 Configuration Manager 콘솔의 **관리** > **Cloud Services** > **업데이트 및 서비스** 노드에서 **업데이트 확인**을 선택하여 즉시 업데이트를 확인할 수도 있습니다.  
+     기본적으로 Configuration Manager는 24시간마다 새 업데이트를 확인합니다. Configuration Manager 콘솔의 **관리** > **Cloud Services** > **업데이트 및 서비스** 노드에서 **업데이트 확인**을 선택하여 즉시 업데이트를 확인할 수도 있습니다.  
 
 -   **오프라인 모드**에서는 서비스 연결 지점이 Microsoft 클라우드 서비스에 연결하지 않습니다. 수동으로 [System Center Configuration Manager의 서비스 연결 도구를 사용](../../../core/servers/manage/use-the-service-connection-tool.md)하여 사용 가능한 업데이트를 다운로드한 후 가져와야 합니다.  
 
@@ -44,7 +44,7 @@ System Center Configuration Manager는 Microsoft 클라우드 서비스와 동�
 
 -   설치하지 않은 업데이트는 **사용 가능**으로 표시됩니다.
 
--   설치한 업데이트는 **설치됨**으로 표시됩니다.  버전 1606부터 가장 최근에 설치된 업데이트만 표시됩니다. 리본에서 **기록** 단추를 선택하여 이전에 설치한 업데이트를 볼 수 있습니다.
+-   설치한 업데이트는 **설치됨**으로 표시됩니다.  가장 최근에 설치된 업데이트만 표시됩니다. 리본에서 **기록** 단추를 선택하여 이전에 설치한 업데이트를 볼 수 있습니다.
 
 
 
@@ -61,7 +61,7 @@ System Center Configuration Manager는 Microsoft 클라우드 서비스와 동�
 -   [순서도 - System Center Configuration Manager의 복제본 업데이트](../../../core/servers/manage/update-replication-flowchart.md)  
 
 ## <a name="assign-permissions-to-view-and-manage-updates-and-features"></a>업데이트 및 기능을 보고 관리할 수 있는 권한 할당
-업데이트 1606을 설치하기 전에 콘솔에서 업데이트를 보려면 권한 그룹 **사이트** 와 보안 범위 **모두**에 **읽기**권한을 포함하는 보안 역할이 사용자에게 할당되어야 합니다. 업데이트 1606부터 **업데이트 패키지**라는 역할 기반 관리 보안 클래스가 Configuration Manager 콘솔에서 업데이트를 보고 관리할 수 있는 액세스 권한을 부여합니다.    
+콘솔에서 업데이트를 보려면 사용자에게 **업데이트 패키지**라는 보안 클래스가 포함된 역할 기반 관리 보안 역할이 할당되어 있어야 합니다. 이 클래스는 Configuration Manager 콘솔에서 업데이트를 보고 업데이트할 수 있는 액세스 권한을 부여합니다.    
 
 **업데이트 패키지 클래스 정보:**  
 기본적으로 **업데이트 패키지** (SMS_CM_Updatepackages)는 다음과 같이 나열된 권한이 있는 기본 제공 보안 역할의 일부입니다.
@@ -95,13 +95,10 @@ System Center Configuration Manager는 Microsoft 클라우드 서비스와 동�
 ###  <a name="bkmk_step1"></a> 1단계: 업데이트 검사 목록 검토  
 업데이트를 시작하기 전에 수행할 작업에 해당하는 업데이트 검사 목록을 검토합니다.
 
--   [System Center Configuration Manager로 업그레이드](../../../core/servers/deploy/install/upgrade-to-configuration-manager.md)에서 1511로 업그레이드합니다.    
+- 1606으로 업데이트: [업데이트 1606을 설치하기 위한 검사 목록](../../../core/servers/manage/checklist-for-installing-update-1606.md)을 참조하세요.  
 
--   1511에서 1602로 업데이트: [업데이트 1602를 설치하기 위한 검사 목록](../../../core/servers/manage/checklist-for-installing-update-1602.md)을 참조하세요.
-
-- 1511 또는 1602에서 1606으로 업데이트: [업데이트 1606을 설치하기 위한 검사 목록](../../../core/servers/manage/checklist-for-installing-update-1606.md)을 참조하세요.  
-
-- 1511, 1602 또는 1606에서 1610으로 업데이트: [업데이트 1610을 설치하기 위한 검사 목록](../../../core/servers/manage/checklist-for-installing-update-1610.md)을 참조하세요.  
+- 1606에서 1610으로 업데이트: [업데이트 1610을 설치하기 위한 검사 목록](../../../core/servers/manage/checklist-for-installing-update-1610.md)을 참조하세요.  
+<!--- Update to 1702 from either 1606 or 1610: See [Checklist for installing update 1702](../../../core/servers/manage/checklist-for-installing-update-1702.md). -->  
 
 ###  <a name="bkmk_step2"></a> 2단계: 업데이트를 설치하기 전에 데이터베이스 업그레이드 테스트  
 이 단계의 정보는 System Center Configuration Manager 사이트에 대한 *업데이트*를 설치하는 경우에만 적용됩니다. System Center 2012 Configuration Manager 사이트를 System Center Configuration Manager로 *업그레이드*하는 경우 [사이트 데이터베이스 업그레이드 테스트](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager#a-namebkmktesta-test-the-site-database-upgrade)를 참조하세요.
@@ -172,7 +169,7 @@ System Center Configuration Manager는 Microsoft 클라우드 서비스와 동�
 
 -   사이트를 업데이트한 후 Configuration Manager 콘솔을 사용하면 콘솔을 업데이트하라는 메시지가 표시됩니다.  
 
--  사이트 서버는 업데이트 설치를 완료한 후 해당하는 사이트 시스템 역할을 자동으로 모두 업데이트합니다.  한 가지 주의할 사항은 배포 지점의 경우입니다. 버전 1606 이상이 이미 실행되고 있는 사이트에 업데이트를 설치하는 경우 더 이상 동시 업데이트를 위해 모든 배포 지점이 오프라인으로 전환되지 않습니다. 대신, 사이트 서버에서 사이트의 콘텐츠 배포 설정을 사용하여 한 번에 하나씩 배포 지점 하위 집합에 업데이트를 배포합니다. 따라서 일부 배포 지점만 업데이트 설치를 위해 오프라인으로 전환됩니다. 이렇게 하면 아직 업데이트가 시작되지 않았거나 업데이트가 완료된 배포 지점은 온라인 상태로 유지되고 클라이언트에 콘텐츠를 제공할 수 있습니다.
+-  사이트 서버는 업데이트 설치를 완료한 후 해당하는 사이트 시스템 역할을 자동으로 모두 업데이트합니다.  한 가지 주의할 사항은 배포 지점의 경우입니다. 업데이트를 설치할 때, 모든 배포 지점이 동시에 다시 설치되어 업데이트를 위해 오프라인으로 전환되지는 않습니다. 대신, 사이트 서버에서 사이트의 콘텐츠 배포 설정을 사용하여 한 번에 하나씩 배포 지점 하위 집합에 업데이트를 배포합니다. 따라서 일부 배포 지점만 업데이트 설치를 위해 오프라인으로 전환됩니다. 이렇게 하면 아직 업데이트가 시작되지 않았거나 업데이트가 완료된 배포 지점은 온라인 상태로 유지되고 클라이언트에 콘텐츠를 제공할 수 있습니다.
 
 
 ###  <a name="bkmk_overview"></a> 콘솔 내 업데이트 설치의 개요  
@@ -185,7 +182,7 @@ System Center Configuration Manager는 Microsoft 클라우드 서비스와 동�
     -   필수 조건 경고도 업데이트 설치를 중지할 수 있습니다. 업데이트 설치를 다시 시도하려면 먼저 경고를 해결해야 합니다. 자세한 내용은 [실패한 업데이트의 설치 다시 시도](#bkmk_retry) 를 참조하세요.  
     -   **누락된 요구 사항과 관계 없이 모든 필수 조건 검사 경고를 무시하고 이 업데이트 설치** 옵션을 선택한 경우 필수 조건 경고를 무시하는 업데이트 설치의 조건을 설정합니다. 이렇게 하면 업데이트 설치를 계속 진행할 수 있습니다. 이 옵션을 선택하지 않으면 경고가 발생할 때 업데이트 설치가 중지됩니다. 이전에 사이트에 대한 필수 조건을 실행하고 해결하지 않았다면 이 옵션을 사용하지 않는 것이 좋습니다.  
 
-      버전 1606부터 **관리** 및 **모니터링** 작업 영역 둘 다에서, 업데이트 및 서비스 노드에 **필수 조건 경고 무시**라는 리본 메뉴 단추가 포함됩니다. 필수 조건 검사 경고로 인해 업데이트 패키지에서 설치를 완료하지 못하는 경우 이 단추를 사용할 수 있습니다. 예를 들어 필수 조건 경고를 무시하는 옵션을 사용하지 않고 업데이트를 설치하는 경우(업데이트 마법사 내에서) 해당 업데이트 설치가 오류 없이 필수 조건 경고 상태로 중지되면 나중에 리본 메뉴에서 **필수 조건 경고 무시**를 선택할 수 있습니다. 그러면 해당 업데이트 설치의 자동 진행을 트리거한 후 필수 조건 경고를 무시합니다. 이 옵션을 사용하면 몇 분 후에 업데이트 설치가 자동으로 진행됩니다.
+      **관리** 및 **모니터링** 작업 영역 둘 다에서 업데이트 및 서비스 노드에 **필수 조건 경고 무시**라는 리본 단추가 포함됩니다. 필수 조건 검사 경고로 인해 업데이트 패키지에서 설치를 완료하지 못하는 경우 이 단추를 사용할 수 있습니다. 예를 들어 필수 조건 경고를 무시하는 옵션을 사용하지 않고 업데이트를 설치하는 경우(업데이트 마법사 내에서) 해당 업데이트 설치가 오류 없이 필수 조건 경고 상태로 중지되면 나중에 리본 메뉴에서 **필수 조건 경고 무시**를 선택할 수 있습니다. 그러면 해당 업데이트 설치의 자동 진행을 트리거한 후 필수 조건 경고를 무시합니다. 이 옵션을 사용하면 몇 분 후에 업데이트 설치가 자동으로 진행됩니다.
 
 
 
@@ -211,7 +208,7 @@ System Center Configuration Manager는 Microsoft 클라우드 서비스와 동�
 
 -   Configuration Manager 콘솔에서 **모니터링** > **개요** > **업데이트 및 서비스 상태** 노드로 이동합니다. 이 노드에는 현재 설치 중인 업데이트 패키지의 설치 상태만 표시됩니다.  
 
-    버전 1606부터 업데이트 팩 설치가 모니터링의 편의를 위해 다음 단계를 통해 분할됩니다. 각 단계에 대한 추가 세부 정보에는 자세한 내용을 확인할 수 있는 로그 파일이 포함됩니다.  
+  업데이트 팩 설치가 모니터링의 편의를 위해 다음 단계를 통해 분할됩니다. 각 단계에 대한 추가 세부 정보에는 자세한 내용을 확인할 수 있는 로그 파일이 포함됩니다.  
     -   **다운로드**(이 단계는 서비스 연결 지점 사이트 시스템 역할이 설치되어 있는 최상위 계층 사이트에만 적용됨)
     -   **복제**
     -   **필수 구성 요소 확인**
@@ -323,36 +320,7 @@ System Center Configuration Manager는 Microsoft 클라우드 서비스와 동�
 기능이 선택 사항이 아닌 경우 해당 기능은 자동으로 설치되며 **기능** 노드에 표시되지 않습니다.  
 
 ##  <a name="bkmk_prerelease"></a> 업데이트에서 시험판 기능 사용
-시험판 기능은 프로덕션 환경의 초기 테스트를 위한 제품에 포함되었지만 이러한 기능은 프로덕션 준비가 된 것으로 간주되지 않아야 합니다. 1606부터 System Center Configuration Manager의 시험판 기능 사용을 선택하고 사용하도록 설정하려면 먼저 해당 기능을 사용한다는 데 동의해야 합니다.  
-
-동의는 실행 취소할 수 없는 계층 구조당 일회성 작업입니다. 동의할 때까지 업데이트 1606 이상 버전에 포함된 새 시험판 기능을 사용하도록 설정할 수 없습니다.
-
-동의하려면 콘솔에서 **관리** > **사이트 구성** > **사이트**로 이동한 다음 **계층 설정**을 선택합니다. **일반** 탭에서 **시험판 기능 사용 동의**를 선택합니다.
-
- > [!NOTE]
- > 업데이트 1606을 설치하기 전에 업데이트 1602에서 시험판 기능을 사용하도록 설정한 경우 시험판 기능을 사용한다는 데 동의하지 않더라도 1606을 설치한 후 이러한 기능은 사용되는 상태로 남아 있습니다.
-
-계층 구조에서 1606 이상이 실행되고 있으며 시험판 기능이 포함된 업데이트를 설치하는 경우 이러한 기능은 업데이트에 포함된 일반 기능과 함께 업데이트 및 서비스 마법사에 표시됩니다.
-  - **동의하는 경우:** 업데이트를 설치하면 업데이트 및 서비스 마법사에서 시험판 기능을 사용할 수 있습니다. 이렇게 하려면 다른 모든 기능에서와 마찬가지로 시험판 기능을 선택합니다.     
-
-    필요한 경우 나중에 콘솔의 **관리** > **클라우드 서비스** > **업데이트 및 서비스** > **기능** 노드에서 시험판 기능을 사용하도록 설정할 수 있습니다. **기능** 노드에서 기능을 선택한 다음 **켜기**를 선택합니다. 이 옵션은 사용자가 동의할 때까지 회색으로 표시됩니다.  
-  -   **동의하지 않은 경우:** 업데이트를 설치할 때 시험판 기능이 업데이트 및 서비스 마법사에 나타나지만, 회색으로 표시되며 사용하도록 설정할 수 없습니다. 업데이트가 설치되면 **기능** 노드에서 해당 기능을 볼 수 있지만 **계층 구조 설정**에서 동의를 제공할 때까지는 사용하도록 설정할 수 없습니다.
-
- > [!TIP]
- > 업데이트 1606을 설치할 때에는 업데이트 1606에 포함된 시험판 기능은 업데이트 및 서비스 마법사에 표시되지 않으며 사용하도록 설정할 수 없습니다. 업데이트 1606을 설치한 후에 해당 업데이트에 포함된 시험판 기능을 **기능** 노드에서 볼 수 있습니다.
-
-독립 실행형 기본 사이트에서 동의를 제공한 다음 새 중앙 관리 사이트를 설치하여 계층 구조를 확장하는 경우 중앙 관리 사이트에서 다시 동의를 제공해야 합니다.
-
-**다음과 같은 시험판 기능을 사용할 수 있습니다.**
-
- |기능                    |시험판으로 추가됨 |전체 기능으로 추가됨 |  
-|----------------------------|---------------------|------------------------|
-| 클라이언트에 콘텐츠 배포를 위한 피어 캐시 |  [버전 1610](/sccm/core/plan-design/hierarchy/client-peer-cache) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
-| 클라우드 관리 게이트웨이 |  [버전 1610](/sccm/core/clients/manage/plan-cloud-management-gateway) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
-| 클라이언트 데이터 원본 대시보드 |  [버전 1610](/sccm/core/servers/deploy/configure/monitor-content-you-have-distributed#client-data-sources-dashboard) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
-| Microsoft Operations Management Suite 커넥터  | [버전 1606](../../../core/clients/manage/sync-data-microsoft-operations-management-suite.md) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
-| 클러스터 인식 컬렉션 서비스 제공(서버 그룹 제공)| [버전 1602](../../../core/get-started/capabilities-in-technical-preview-1605.md#BKMK_ServerGroups)|![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
-|System Center Configuration Manager에서 관리하는 PC에 대한 조건부 액세스 지원 | [버전 1602](../../../protect/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md)     |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)                        |
+시험판 기능은 프로덕션 환경에서의 초기 테스트를 위해 현재 분기에 포함된 기능입니다. 이러한 기능은 프로덕션 환경에서 사용할 수 있지만 프로덕션 준비가 된 것으로 간주해서는 안 됩니다. 시험판 기능에 대해 환경에서 사용하도록 설정하는 방법을 비롯한 자세히 내용을 알아보려면 [시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요.                |
 
 
 ## <a name="known-issues"></a>알려진 문제

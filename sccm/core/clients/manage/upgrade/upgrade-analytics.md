@@ -13,9 +13,9 @@ ms.technology:
 - configmgr-client
 ms.assetid: 68407ab8-c205-44ed-9deb-ff5714451624
 translationtype: Human Translation
-ms.sourcegitcommit: 460089ce58910b68eb0a613bce0166754850844b
-ms.openlocfilehash: 9361c66228cf54eb1daf8138cd03fc8f6139f48d
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: dcbcd57b95f304f007e92ebe2b9aeefb4b579662
+ms.openlocfilehash: 986d0446209f6e7eac1b681066d1b2e2305e1975
+ms.lasthandoff: 03/09/2017
 
 
 ---
@@ -49,7 +49,7 @@ ms.lasthandoff: 03/01/2017
 
 ### <a name="create-the-connection"></a>연결 만들기
 
-1.  Configuration Manager 콘솔에서 **관리** > **클라우드 서비스** > **업그레이드 준비 커넥터** > **업그레이드 준비에 대한 연결 만들기**를 선택하여 **업그레이드 준비 연결 추가 마법사**를 시작합니다.
+1.  Configuration Manager 콘솔에서 **관리** > **클라우드 서비스** > **업그레이드 준비 커넥터** > **Upgrade Analytics에 대한 연결 만들기**를 선택하여 **Upgrade Analytics 연결 추가 마법사**를 시작합니다.
 3.  **Azure Active Directory** 화면에서 **테넌트**, **클라이언트 ID** 및 **클라이언트 비밀 키**를 제공하고 **다음**을 선택합니다.
 4.  **업그레이드 준비** 화면에서 **Azure 구독**, **Azure 리소스 그룹** 및 **Operations Management Suite 작업 영역**에 정보를 입력하여 연결 설정을 제공합니다.
 5.  **요약** 화면에서 연결 설정을 확인하고 **다음**을 선택합니다.

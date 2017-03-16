@@ -16,16 +16,14 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 619899aaf8bde36e2bd62b5ba8a037b8580df198
-ms.openlocfilehash: 58b343aed6ea1d846801aca5e0a95200df1acc94
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: ee7f69bd65152deffb2456d9807e1e8fee8802ec
+ms.openlocfilehash: dd28c8218c77686884bdcff508080185cae97489
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1702-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1702의 기능
 
 *적용 대상: System Center Configuration Manager(Technical Preview)*
-
-
 
 이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1702에서 사용 가능한 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 소개 항목인 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대해 피드백 제공 방법 등에 익숙해져야 합니다.    
 
@@ -323,7 +321,7 @@ Android for Work는 Android와 별도 플랫폼이며, 작업 프로필을 지�
 #### <a name="approve-and-deploy-android-for-work-apps"></a>Android for Work 앱 승인 및 배포
 Play for Work 스토어에서 앱을 승인하고, Configuration Manager 콘솔과 동기화하고, 관리되는 Android for Work 장치에 배포하려면 다음 단계를 따르세요. 사용자의 작업 프로필에 앱을 배포하려면 Play for Work에서 앱을 승인한 다음 Configuration Manager 콘솔과 동기화해야 합니다.
 
-1. 브라우저를 열고 http://www.play.com/work로 이동합니다.
+1. 브라우저를 열고 https://play.google.com/work로 이동합니다.
 2. Intune 테넌트에 바인딩된 Google 관리자 계정을 사용하여 로그인합니다.
 3. 환경에 배포하려는 앱을 찾은 다음 각 앱에 대해 **승인**을 클릭합니다.
 4. Configuration Manager 콘솔에서 **관리자** > **개요** > **Cloud Services** > **Android for Work**로 이동한 다음 **동기화**를 클릭합니다.
