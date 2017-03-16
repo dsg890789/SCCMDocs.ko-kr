@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 5f1efaa776079b21d52b9936273380e9bb8963e9
 ms.openlocfilehash: 862f420c063cb44c419d4904fbb4696efb739758
+ms.lasthandoff: 02/08/2017
 
 
 ---
@@ -40,7 +41,7 @@ ms.openlocfilehash: 862f420c063cb44c419d4904fbb4696efb739758
 |------------|-------------|  
 |역할 기반 관리 구성|관리 할당을 구분하여 Configuration Manager 환경의 여러 개체와 데이터를 보고 관리할 수 있는 관리자를 제어합니다.<br /><br /> 계층 구조의 모든 사이트가 역할 기반 관리의 구성을 공유합니다.   <br/><br/>자세한 내용은 [System Center Configuration Manager용 역할 기반 관리 구성](../../../../core/servers/deploy/configure/configure-role-based-administration.md)을 참조하세요.|  
 |AD DS(Active Directory Domain Services)에 사이트 데이터 게시|클라이언트에서 서비스를 쉽게 찾고 사이트 리소스를 효율적으로 사용하도록 합니다.<br /><br /> 먼저 [System Center Configuration Manager에 대한 Active Directory 스키마를 확장](../../../../core/plan-design/network/extend-the-active-directory-schema.md)한 후 각 사이트를 [System Center Configuration Manager용으로 사이트 데이터를 게시](../../../../core/servers/deploy/configure/publish-site-data.md)하도록 개별적으로 구성해야 합니다.|  
-|서비스 연결 지점 구성|계층 구조의 최상위 계층 사이트에서 서비스 연결 지점 설치 및 구성을 계획해야 합니다. 자세한 내용은 [About the service connection point in System Center Configuration Manager](../../../../core/servers/deploy/configure/about-the-service-connection-point.md)을 참조하십시오.|  
+|서비스 연결 지점 구성|계층 구조의 최상위 계층 사이트에서 서비스 연결 지점 설치 및 구성을 계획해야 합니다. 자세한 내용은 [System Center Configuration Manager의 서비스 연결 지점 정보](../../../../core/servers/deploy/configure/about-the-service-connection-point.md)을 참조하십시오.|  
 |사이트 시스템 역할 추가|개별 사이트의 추가 사이트 시스템 역할을 하나 이상 설치합니다.  자세한 내용은 [Add site system roles for System Center Configuration Manager](../../../../core/servers/deploy/configure/add-site-system-roles.md)섹션을 참조하세요.|  
 |사이트 경계 및 경계 그룹 구성|관리할 장치를 포함할 수 있는 인트라넷의 네트워크 위치를 정의하는 경계를 지정합니다. 그런 다음 해당 네트워크 위치의 클라이언트에서 Configuration Manager 리소스를 찾을 수 있도록 경계 그룹을 구성합니다. 자세한 내용은 [System Center Configuration Manager에 대한 사이트 경계 및 경계 그룹 정의](../../../../core/servers/deploy/configure/define-site-boundaries-and-boundary-groups.md)를 참조하세요.|  
 |배포 지점 그룹 구성|배포를 쉽게 관리할 수 있도록 배포 지점의 논리적 그룹을 구성합니다. 자세한 내용은 [System Center Configuration Manager의 배포 지점 설치 및 구성](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md) 항목의 [배포 지점 그룹 관리](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md#bkmk_manage)를 참조하세요.|  
@@ -52,9 +53,4 @@ ms.openlocfilehash: 862f420c063cb44c419d4904fbb4696efb739758
 |관리 지점에 대한 데이터베이스 복제본 구성|데이터베이스 복제본을 구성하면 클라이언트의 요청을 처리하는 관리 지점이 사이트 데이터베이스 서버에 적용하는 CPU 부하를 줄일 수 있습니다. 자세한 내용은 [System Center Configuration Manager의 관리 지점용 데이터베이스 복제본](../../../../core/servers/deploy/configure/database-replicas-for-management-points.md)을 참조하세요.|  
 |사이트 데이터베이스를 호스트하도록 SQL Server AlwaysOn 가용성 그룹 구성|1602 버전부터, 기본 사이트와 중앙 관리 사이트에서 사이트 데이터베이스를 호스트하기 위한 고가용성 및 재해 복구 솔루션으로 가용성 그룹을 구성합니다. 자세한 내용은 [System Center Configuration Manager용 항상 사용 가능한 사이트 데이터베이스를 위한 SQL Server AlwaysOn](../../../../core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database.md)을 참조하세요.|  
 |사이트 간 복제 수정|[System Center Configuration Manager의 사이트 간 데이터 전송](../../../../core/servers/manage/data-transfers-between-sites.md)에서 다음 주제에 대해 자세히 알아보세요.<br /><br /> 보조 사이트 간에 [파일 기반 복제](../../../../core/servers/manage/data-transfers-between-sites.md#bkmk_fileroute) 구성<br /><br /> [데이터베이스 복제 링크](../../../../core/servers/manage/data-transfers-between-sites.md#bkmk_Dblinks)구성<br /><br /> [분산 보기](../../../../core/servers/manage/data-transfers-between-sites.md#bkmk_distviews)구성|  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
