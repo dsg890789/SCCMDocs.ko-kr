@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 24a233516058e645df2a43623855665b97b041b0
 ms.openlocfilehash: 9c0165212fe34f460be2ce870d0542b616f3bc4d
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -33,10 +34,5 @@ System Center Configuration Manager에 대한 진단 및 사용 현황 데이터
 
 -   **오프라인 모드:** 서비스 연결 도구를 사용하여 진단 및 사용 현황 데이터가 수동으로 전송됩니다. 자세한 내용은 [System Center Configuration Manager의 서비스 연결 도구 사용](../../../core/servers/manage/use-the-service-connection-tool.md)을 참조하세요.  
 
-자세한 내용은 [About the service connection point in System Center Configuration Manager](../../../core/servers/deploy/configure/about-the-service-connection-point.md)을 참조하십시오.  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
+자세한 내용은 [System Center Configuration Manager의 서비스 연결 지점 정보](../../../core/servers/deploy/configure/about-the-service-connection-point.md)을 참조하십시오.  
 
