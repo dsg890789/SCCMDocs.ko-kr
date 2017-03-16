@@ -2,7 +2,7 @@
 title: "클라우드 기반 배포 지점 | Microsoft 문서"
 description: "System Center Configuration Manager에서 클라우드 기반 배포 지점을 사용하기 위한 구성 및 제한 사항을 알아봅니다."
 ms.custom: na
-ms.date: 2/24/2017
+ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 3eab8e62ace29c0fcb24d47ec7e398d807347a38
-ms.openlocfilehash: a1d701c77afb4d6317d8a137fdf46422063df085
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
+ms.openlocfilehash: 489f38d3f88391e42b5271c03151203d22b26d9e
+ms.lasthandoff: 03/04/2017
 
 
 ---
@@ -63,7 +63,7 @@ ms.lasthandoff: 02/28/2017
 
 클라우드 기반 배포 지점에는 다음과 같은 제한 사항이 있습니다.  
 
--  버전 1610 및 핫픽스 KB4010155를 사용하기 전에는 클라우드 기반 배포 지점을 사용하여 소프트웨어 업데이트 패키지를 호스트할 수 없습니다. 버전 1610 이후의 다음 현재 분기 버전은 이 수정 프로그램을 설치하지 않아도 이 옵션을 지원합니다.  
+-  버전 1610 및 핫픽스 KB4010155를 사용하기 전에는 클라우드 기반 배포 지점을 사용하여 소프트웨어 업데이트 패키지를 호스트할 수 없습니다. 이 문제는 1702 이상 버전에서 해결되었습니다.  
 
 -   클라우드 기반 배포 지점을 PXE 또는 멀티캐스트 사용 배포용으로 사용할 수 없습니다.  
 
