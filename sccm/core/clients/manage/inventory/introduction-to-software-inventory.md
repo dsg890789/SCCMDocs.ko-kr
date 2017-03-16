@@ -17,8 +17,9 @@ author: andredm7
 ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 9206b82eca02877c30eebf146d42bcca7290eb42
-ms.openlocfilehash: c9956dd4ef94a1b109d761e44e42f512c42eb8d2
+ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
+ms.openlocfilehash: 969f2d28649853ddc95860fe72597d6d2c9a94e9
+ms.lasthandoff: 03/04/2017
 
 
 ---
@@ -36,7 +37,7 @@ ms.openlocfilehash: c9956dd4ef94a1b109d761e44e42f512c42eb8d2
 
 -   지정된 파일이 포함된 장치를 포함하는 [쿼리 기반 컬렉션](../../../../core/clients/manage/collections/introduction-to-collections.md)을 만듭니다.   
 
--   장치의 파일에 대한 세부 정보를 제공하는 [보고서를 실행합니다](../../../../core/servers/manage/reporting.md). 
+-   장치의 파일에 대한 세부 정보를 제공하는 [보고서를 실행합니다](../../../../core/servers/manage/reporting.md).
 
 -   [리소스 탐색기](../../../../core/clients/manage/inventory/use-resource-explorer-to-view-software-inventory.md)를 사용하여 클라이언트 장치에서 인벤토리에 포함되고 수집된 파일에 대한 자세한 정보를 검사합니다.   
 
@@ -44,27 +45,5 @@ ms.openlocfilehash: c9956dd4ef94a1b109d761e44e42f512c42eb8d2
 
  Configuration Manager에서 이중 부팅 컴퓨터를 검색할 수 있지만 인벤토리 시 활성화되었던 운영 체제의 인벤토리 정보만 반환합니다.  
 
-## <a name="software-inventory-for-mobile-devices-enrolled-with-microsoft-intune"></a>Microsoft Intune에서 등록한 모바일 장치를 위한 소프트웨어 인벤토리  
- 모바일 장치에 설치되는 앱에 대한 인벤토리를 수집할 수 있습니다. 인벤토리에 추가되는 앱은 장치가 회사 소유인지 또는 개인 소유인지에 따라 달라집니다. 개인 장치의 경우 Microsoft Intune에서 관리되는 앱만 인벤토리에 추가됩니다.  
-
-> [!NOTE]  
->  모바일 장치에 설치된 앱의 인벤토리는 [하드웨어 인벤토리](../../../../core/clients/manage/inventory/mobile-device-hardware-inventory-hybrid.md) 프로세스의 일부로 수집됩니다.  
-
- 다음은 개인 소유 또는 회사 소유의 장치에 대해 인벤토리에 포함되는 앱입니다.  
-
-|플랫폼|개인 소유 장치|회사 소유 장치|  
-|--------------|---------------------------------|--------------------------------|  
-|Windows 10(Configuration Manager 클라이언트 없음)|관리되는 앱만|관리되는 앱만| 
-|Windows 8.1(Configuration Manager 클라이언트 없음)|관리되는 앱만|관리되는 앱만|  
-|Windows Phone 8|관리되는 앱만|관리되는 앱만|  
-|Windows RT|관리되는 앱만|관리되는 앱만|  
-|iOS|관리되는 앱만|장치에 설치되는 모든 앱|  
-|Android|관리되는 앱만|장치에 설치되는 모든 앱|  
-
-
-
-
-
-<!--HONumber=Dec16_HO5-->
-
+**모바일 장치의 경우:** 모바일 장치에 설치된 앱에 대한 인벤토리를 수집하는 방법은 [Microsoft Intune에서 등록한 모바일 장치를 위한 소프트웨어 인벤토리](../../../../mdm/deploy-use/software-inventory-mobile-devices.md)를 참조하세요.
 

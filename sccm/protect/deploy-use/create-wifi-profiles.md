@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: 321b19b2-a093-4b8f-995f-41f74b886eb5
 caps.latest.revision: 13
 caps.handback.revision: 0
-author: Nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0fa837c68eb073d2ceaf48c938137a94141a102e
-ms.openlocfilehash: 7d42ec89300d4eb6b02bafb3f83d341f8e3ca0c0
+ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
+ms.openlocfilehash: f1ae976899de1fd3efcbde0c7268f071a5d0218b
+ms.lasthandoff: 03/06/2017
 
 
 ---
@@ -39,15 +40,9 @@ System Center Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의
 
 -   Windows RT 8.1을 실행하는 장치  
 
--   Windows Phone 8.1을 실행하는 장치  
-
 -   Windows 10 Desktop 또는 Mobile을 실행하는 장치  
 
--   iOS 5, iOS 6, iOS 7 및 iOS 8을 실행하는 IPhone 장치  
-
--   iOS 5, iOS 6, iOS 7 및 iOS 8을 실행하는 IPad 장치  
-
--   버전 4 이상을 실행하는 Android 장치
+[모바일 장치에 대한 Wi-Fi 프로필 만들기](../../mdm/deploy-use/create-wifi-profiles.md)에서는 Configuration Manager의 Wi-Fi 프로필을 사용하여 모바일 장치 사용자에게 무선 네트워크 설정을 배포하는 방법을 알아봅니다.
 
 > [!IMPORTANT]  
 >  Android, iOS, Windows Phone 및 등록된 Windows 8.1 이상 장치에 프로필을 배포하려면 이러한 장치를 Microsoft Intune에 등록해야 합니다. 장치를 등록하는 방법은 [Intune에서 관리할 장치 등록](https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune)을 참조하세요.  
@@ -92,7 +87,7 @@ System Center Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의
     >  보안 유형: **WPA2 엔터프라이즈** 또는 **WPA2 개인**  
     > 암호화 유형: **AES** 또는 **TKIP**  
     > EAP 유형: **스마트 카드 또는 기타 인증서** 또는 **PEAP**  
-  
+
     > Android 장치의 경우 **WPA-개인**, **WPA2-개인** 및 **WEP** 보안 유형은 지원되지 않습니다.  
 
 2.  무선 네트워크에 사용되는 암호화 방법을 선택합니다.  
@@ -133,9 +128,4 @@ System Center Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의
 
 ### <a name="next-steps"></a>다음 단계
  Wi-Fi 프로필을 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 Wi-Fi 프로필을 배포하는 방법](deploy-wifi-vpn-email-cert-profiles.md)을 참조하세요.  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

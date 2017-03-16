@@ -2,7 +2,7 @@
 title: "마이그레이션 필수 조건 | Microsoft 문서"
 description: "지원되는 Configuration Manager 버전, 지원되는 원본 사이트 언어 및 마이그레이션을 위한 필수 조건을 이해합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 3/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,9 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6cbb790df47c9a87514b0233e2d0c12dd6f23ee9
-ms.openlocfilehash: 70e2531076abedc1381b6e3bccf15b5afe27b465
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: ee7f69bd65152deffb2456d9807e1e8fee8802ec
+ms.openlocfilehash: cd90f5462ac4bb4c0a2021e6d5dde65161b9c5f6
+ms.lasthandoff: 03/07/2017
 
 
 ---
@@ -48,6 +48,9 @@ ms.lasthandoff: 12/16/2016
     >  마이그레이션 외에도 System Center Configuration Manager에 대해 System Center 2012 Configuration Manager를 실행하는 사이트의 현재 위치 업그레이드를 사용할 수 있습니다.  
 
 -   버전이 같거나 낮은 System Center Configuration Manager의 System Center Configuration Manager 계층 구조  
+
+  예를 들어 System Center Configuration Manager 1606을 실행하는 대상 계층이 있는 경우 마이그레이션을 사용하여 버전 1606 또는 1602를 실행하는 원본 계층에서 데이터를 복사할 수 있습니다. 그러나 1610을 실행하는 원본 계층에서는 데이터를 마이그레이션할 수 없습니다.  
+
 
 ##  <a name="BKMK_SorceSiteLanguage"></a> 마이그레이션에 지원되는 원본 사이트 언어  
  Configuration Manager 계층 구조 간에 데이터를 마이그레이션하면 데이터가 System Center Configuration Manager에 대해 언어 중립적인 형식의 대상 계층에 저장됩니다. Configuration Manager2007에서는 데이터를 언어 중립적인 형식으로 저장하지 않으므로 마이그레이션 프로세스가 Configuration Manager 2007에서 마이그레이션할 때 개체를 이 형식으로 변환해야 합니다. 그러므로 다음 언어로 설치된 Configuration Manager 2007 원본 사이트만 마이그레이션이 가능합니다.  

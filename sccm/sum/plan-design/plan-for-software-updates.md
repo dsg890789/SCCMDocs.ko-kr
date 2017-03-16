@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 01/04/2017
+ms.date: 03/01/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -14,8 +14,9 @@ ms.technology:
 - configmgr-sum
 ms.assetid: d071b0ec-e070-40a9-b7d4-564b92a5465f
 translationtype: Human Translation
-ms.sourcegitcommit: 46c8004afee4b18d5c7a2fcc5dac0f7d0d1f823c
-ms.openlocfilehash: 8a5efdce88127c71547c4f5ef85660a2983aa577
+ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
+ms.openlocfilehash: 505c60409d14a1c5617333ab57caa3cd44195dc6
+ms.lasthandoff: 03/04/2017
 
 
 ---
@@ -29,7 +30,7 @@ System Center Configuration Manager 프로덕션 환경에서 소프트웨어 �
 ## <a name="capacity-planning-recommendations-for-software-updates"></a>소프트웨어 업데이트를 위한 용량 계획 권장 사항  
  해당 조직에 적절한 소프트웨어 업데이트 용량 계획에 대한 정보를 파악할 때 다음 권장 사항을 기준으로 사용할 수 있습니다. 실제 용량 요구 사항은 개별 네트워킹 환경, 소프트웨어 업데이트 지점 사이트 시스템을 호스트하기 위해 사용하는 하드웨어, 설치된 클라이언트 수, 서버에 설치된 사이트 시스템 역할과 같은 조건에 따라 이 항목에 나온 권장 사항과 달라질 수 있습니다.  
 
-###  <a name="a-namebkmksumcapacitya-capacity-planning-for-the-software-update-point"></a><a name="BKMK_SUMCapacity"></a> 소프트웨어 업데이트 지점에 대한 용량 계획  
+###  <a name="BKMK_SUMCapacity"></a> 소프트웨어 업데이트 지점에 대한 용량 계획  
  지원되는 클라이언트 수는 소프트웨어 업데이트 지점에서 실행되는 WSUS(Windows Server Update Services) 버전에 따라 달라지며, 소프트웨어 업데이트 지점 사이트 시스템 역할이 다른 사이트 시스템 역할과 함께 있는지 여부에 따라 달라집니다.  
 
 -   소프트웨어 업데이트 지점 컴퓨터에서 WSUS가 실행되고 소프트웨어 업데이트 지점이 다른 사이트 시스템 역할과 함께 있는 경우 소프트웨어 업데이트 지점은 최대 25,000개의 클라이언트를 지원할 수 있습니다.  
@@ -42,8 +43,7 @@ System Center Configuration Manager 프로덕션 환경에서 소프트웨어 �
 
     소프트웨어 업데이트 지점의 하드웨어 요구 사항에 대한 자세한 내용은 [사이트 시스템용 권장 하드웨어](/sccm/core/plan-design/configs/recommended-hardware#a-namebkmkscalesiesystemsa-site-systems)를 참조하세요.
 
--   기본적으로 Configuration Manager에서는 소프트웨어 업데이트 지점을 NLB 클러스터로 구성할 수 없습니다. 그러나 Configuration Manager SDK를 사용하여 NLB 클러스터에서 최대 4개의 소프트웨어 업데이트 지점을 구성할 수는 있습니다.  
-
+-   기본적으로 Configuration Manager에서는 소프트웨어 업데이트 지점을 NLB 클러스터로 구성할 수 없습니다. Configuration Manager 버전 1702 이전에는 Configuration Manager SDK를 사용하여 NLB 클러스터에서 최대 4개의 소프트웨어 업데이트 지점을 구성할 수 있었습니다. 그러나 Configuration Manager 버전 1702부터는 소프트웨어 업데이트 지점이 NLB 클러스터로 지원되지 않으며, 이 구성이 검색된 경우 Configuration Manager 버전 1702로의 업그레이드가 차단됩니다.
 
 ### <a name="capacity-planning-for-software-updates-objects"></a>소프트웨어 업데이트 개체를 위한 용량 계획  
  소프트웨어 업데이트 개체에 대한 계획을 세울 때에는 다음 용량 정보를 따르십시오.  
@@ -54,8 +54,13 @@ System Center Configuration Manager 프로덕션 환경에서 소프트웨어 �
 
      또한 구성 기준에서 소프트웨어 업데이트 수를 1000개로 제한해야 합니다. 자세한 내용은 [Create configuration baselines](../../compliance/deploy-use/create-configuration-baselines.md)(구성 기준 만들기)를 참조하세요.
 
-##  <a name="a-namebkmksupinfrastructurea-determine-the-software-update-point-infrastructure"></a><a name="BKMK_SUPInfrastructure"></a> 소프트웨어 업데이트 지점 인프라 파악  
- 중앙 관리 사이트와 모든 자식 기본 사이트에는 소프트웨어 업데이트를 배포할 소프트웨어 업데이트 지점이 있어야 합니다. 소프트웨어 업데이트 지점 인프라를 계획할 때는 사이트의 소프트웨어 업데이트 지점을 설치할 위치, 인터넷 기반 클라이언트로부터의 통신을 수락하는 소프트웨어 업데이트 지점이 필요한 사이트, NLB 클러스터로 소프트웨어 업데이트 지점을 구성할지 여부, 보조 사이트에 소프트웨어 업데이트 지점이 필요한지 여부를 비롯한 종속성을 파악해야 합니다. 다음 섹션에서는 소프트웨어 업데이트 지점 인프라를 파악하는 방법을 설명합니다.  
+##  <a name="BKMK_SUPInfrastructure"></a> 소프트웨어 업데이트 지점 인프라 파악  
+ 중앙 관리 사이트와 모든 자식 기본 사이트에는 소프트웨어 업데이트를 배포할 소프트웨어 업데이트 지점이 있어야 합니다. 소프트웨어 업데이트 지점 인프라를 계획할 때에는
+ - 사이트의 소프트웨어 업데이트 지점을 설치할 곳
+ - 인터넷 기반 클라이언트의 통신을 허용하는 소프트웨어 업데이트 지점이 필요한 사이트
+ - 보조 사이트에 소프트웨어 업데이트 지점이 필요한지 여부와 같은 종속성을 확인해야 합니다.
+
+다음 섹션에서는 소프트웨어 업데이트 지점 인프라를 파악하는 방법을 설명합니다.  
 
 > [!IMPORTANT]  
 >  소프트웨어 업데이트에 필요한 내부 및 외부 종속성에 대한 자세한 내용은 [소프트웨어 업데이트에 대한 필수 조건](prerequisites-for-software-updates.md)을 참조하세요.  
@@ -66,21 +71,21 @@ System Center Configuration Manager 프로덕션 환경에서 소프트웨어 �
 
  소프트웨어 업데이트 지점에 오류가 발생했으며 소프트웨어 업데이트 지점이 사이트에 있는 다른 소프트웨어 업데이트 지점의 동기화 원본으로 구성된 경우 오류가 발생한 소프트웨어 업데이트 지점을 수동으로 제거하고 새 소프트웨어 업데이트 지점을 선택하여 동기화 원본으로 사용해야 합니다. 소프트웨어 업데이트 지점을 제거하는 방법에 대한 자세한 내용은 [소프트웨어 업데이트 지점 사이트 시스템 역할 제거](../get-started/remove-a-software-update-point.md)를 참조하세요.  
 
-###  <a name="a-namebkmksuplista-software-update-point-list"></a><a name="BKMK_SUPList"></a> 소프트웨어 업데이트 지점 목록  
+###  <a name="BKMK_SUPList"></a> 소프트웨어 업데이트 지점 목록  
  Configuration Manager에서는 새 클라이언트가 소프트웨어 업데이트를 사용하도록 설정하는 정책을 받거나 클라이언트가 소프트웨어 업데이트 지점에 연결할 수 없어 다른 소프트웨어 업데이트로 전환해야 하는 시나리오에서 소프트웨어 업데이트 지점 목록을 클라이언트에 제공합니다. 클라이언트는 목록에서 소프트웨어 업데이트 지점을 임의로 선택하고 동일한 포리스트에 있는 소프트웨어 업데이트 지점의 우선 순위를 지정합니다. Configuration Manager에서는 클라이언트의 유형에 따라 다른 목록을 클라이언트에 제공합니다.  
 
 -   **인트라넷 기반 클라이언트**: 인트라넷에서만 연결을 허용하도록 구성할 수 있는 소프트웨어 업데이트 지점 목록 또는 인터넷과 인트라넷 클라이언트 연결을 허용하는 소프트웨어 업데이트 지점 목록을 받습니다.  
 
 -   **인터넷 기반 클라이언트:**인터넷에서만 연결을 허용하도록 구성할 수 있는 소프트웨어 업데이트 지점 목록 또는 인터넷과 인트라넷 클라이언트 연결을 허용하는 소프트웨어 업데이트 지점 목록을 받습니다.  
 
-###  <a name="a-namebkmksupswitchinga-software-update-point-switching"></a><a name="BKMK_SUPSwitching"></a> 소프트웨어 업데이트 지점 전환  
+###  <a name="BKMK_SUPSwitching"></a> 소프트웨어 업데이트 지점 전환  
  하나의 사이트에 여러 소프트웨어 업데이트 지점이 있고 한 업데이트 지점이 오류가 발생하거나 사용할 수 없게 될 경우 클라이언트는 다른 소프트웨어 업데이트 지점에 연결하여 최신 소프트웨어 업데이트의 검색을 계속합니다. 클라이언트에 소프트웨어 업데이트 지점이 처음 할당되면 해당 소프트웨어 업데이트 지점에서 소프트웨어 업데이트를 검색하지 못하는 경우를 제외하고 해당 소프트웨어 업데이트 지점이 할당됩니다.  
 
  소프트웨어 업데이트 검색이 실패하고 여러 가지 다시 시도 및 다시 시도 안 함 코드가 표시될 수 있습니다. 다시 시도 오류 코드와 함께 검색이 실패할 경우 클라이언트는 다시 시도 프로세스를 시작하여 소프트웨어 업데이트 지점에서 소프트웨어 업데이트를 검색합니다. 다시 시도 오류 코드가 표시되는 개략적인 조건은 대개 WSUS 서버를 사용할 수 없거나 WSUS 서버가 일시적으로 과부하 상태가 되는 것입니다. 클라이언트는 소프트웨어 업데이트를 검색하지 못할 경우 다음 프로세스를 사용합니다.  
 
 1.  클라이언트가 예약된 시간에 또는 클라이언트에서 제어판을 통해 검색이 시작될 때 또는 SDK를 사용하여 소프트웨어 업데이트를 검색합니다. 검색이 실패할 경우 클라이언트는 30분 기다린 후에 검색을 다시 시도하며, 이때 동일한 소프트웨어 업데이트 지점을 사용합니다.  
 
-2.  클라이언트는 30분 간격으로 최소 네 번 다시 시도합니다. 네 번째 실패 후에는 다시 2분을 기다린 후에 소프트웨어 업데이트 지점 목록에 있는 다음 소프트웨어 업데이트 지점으로 이동합니다.  
+2.  클라이언트는 30분 간격으로 최소 네 번 다시 시도합니다. 네 번째 실패 후에는 다시&2;분을 기다린 후에 소프트웨어 업데이트 지점 목록에 있는 다음 소프트웨어 업데이트 지점으로 이동합니다.  
 
 3.  클라이언트는 새 소프트웨어 업데이트 지점에서 동일한 프로세스를 수행합니다. 성공적으로 검색될 경우 클라이언트가 계속 새 소프트웨어 업데이트 지점에 연결됩니다.
 
@@ -96,10 +101,10 @@ Configuration Manager는 다음 Windows 업데이트 에이전트 오류 코드�
 
 2149842970, 2147954429, 2149859352, 2149859362, 2149859338, 2149859344, 2147954430, 2147747475, 2149842974, 2149859342, 2149859372, 2149859341, 2149904388, 2149859371, 2149859367, 2149859366, 2149859364, 2149859363, 2149859361, 2149859360, 2149859359, 2149859358, 2149859357, 2149859356, 2149859354, 2149859353, 2149859350, 2149859349, 2149859340, 2149859339, 2149859332, 2149859333, 2149859334, 2149859337, 2149859336, 2149859335
 
-오류 코드의 의미를 조회하려면 10진수 오류 코드를 16진수로 변환한 다음 [Windows Update Agent - Error Codes Wiki](https://social.technet.microsoft.com/wiki/contents/articles/15260.windows-update-agent-error-codes.aspx)(Windows 업데이트 에이전트 - 오류 코드 Wiki)와 같은 사이트에서 16진수 값을 검색해야 합니다.
+오류 코드의 의미를 조회하려면&10;진수 오류 코드를&16;진수로 변환한 다음 [Windows Update Agent - Error Codes Wiki](https://social.technet.microsoft.com/wiki/contents/articles/15260.windows-update-agent-error-codes.aspx)(Windows 업데이트 에이전트 - 오류 코드 Wiki)와 같은 사이트에서&16;진수 값을 검색해야 합니다.
 
 
-###  <a name="a-namebkmkmanuallyswitchsupsamanually-switch-clients-to-a-new-software-update-point"></a><a name="BKMK_ManuallySwitchSUPs"></a>수동으로 클라이언트를 새 소프트웨어 업데이트 지점으로 전환
+###  <a name="BKMK_ManuallySwitchSUPs"></a>수동으로 클라이언트를 새 소프트웨어 업데이트 지점으로 전환
 Configuration Manager 버전 1606부터, 활성 소프트웨어 업데이트 지점에 문제가 있는 경우 Configuration Manager 클라이언트가 새로운 소프트웨어 업데이트 지점으로 전환하도록 하는 옵션을 사용할 수 있습니다. 이 옵션을 사용해도 클라이언트가 관리 지점에서 여러 소프트웨어 업데이트 지점을 받는 경우에만 변경이 발생합니다.  
 
 장치 컬렉션이나 선택한 장치 집합에서 이 옵션을 사용하도록 설정합니다. 사용하도록 설정하면 클라이언트가 다음 검사 시 다른 소프트웨어 업데이트 지점을 찾습니다. 새 소프트웨어 업데이트 지점으로 전환하면 WSUS 구성 설정(소프트웨어 업데이트 지점이 WSUS 데이터베이스를 공유하는지 여부, 업데이트 분류, 제품 등)에 따라 추가 네트워크 트래픽이 발생합니다. 따라서 필요한 경우에만 이 옵션을 사용해야 합니다.  
@@ -111,7 +116,7 @@ Configuration Manager 버전 1606부터, 활성 소프트웨어 업데이트 지
 2.  **홈** 탭의 **컬렉션** 그룹에서, **클라이언트 알림**을 클릭하고 **다음 소프트웨어 업데이트 지점으로 전환**을 클릭합니다.  
 
 
-###  <a name="a-namebkmksupcrossforesta-software-update-points-in-an-untrusted-forest"></a><a name="BKMK_SUP_CrossForest"></a> 트러스트되지 않은 포리스트의 소프트웨어 업데이트 지점  
+###  <a name="BKMK_SUP_CrossForest"></a> 트러스트되지 않은 포리스트의 소프트웨어 업데이트 지점  
  트러스트되지 않은 포리스트의 클라이언트를 지원하도록 사이트에서 하나 이상의 소프트웨어 업데이트 지점을 만들 수 있습니다. 다른 포리스트에 소프트웨어 업데이트 지점을 추가하려면 먼저 해당 포리스트에 WSUS 서버를 설치하고 구성해야 합니다. 그런 다음 마법사를 시작하여 소프트웨어 업데이트 지점 사이트 시스템 역할로 Configuration Manager 사이트 서버를 추가합니다. 트러스트되지 않은 포리스트에서 WSUS에 성공적으로 연결하도록 마법사에서 다음 설정을 구성합니다.  
 
 -   포리스트의 WSUS 서버에 액세스할 수 있는 사이트 시스템 설치 계정을 지정합니다.  
@@ -120,26 +125,26 @@ Configuration Manager 버전 1606부터, 활성 소프트웨어 업데이트 지
 
  예를 들어 포리스트 A에 두 개의 소프트웨어 업데이트 지점(SUP01 및 SUP02)이 있는 기본 사이트가 있고, 같은 기본 사이트에 대해 포리스트 B에 두 개의 소프트웨어 업데이트 지점(SUP03 및 SUP04)이 있는 경우, 전환이 발생하면 클라이언트와 동일한 포리스트에 있는 소프트웨어 업데이트 지점에 먼저 우선 순위가 부여됩니다.  
 
-###  <a name="a-namebkmkwsussyncsourcea-use-an-existing-wsus-server-as-the-synchronization-source-at-the-top-level-site"></a><a name="BKMK_WSUSSyncSource"></a> 최상위 사이트에서 동기화 원본으로 기존 WSUS 서버 사용  
+###  <a name="BKMK_WSUSSyncSource"></a> 최상위 사이트에서 동기화 원본으로 기존 WSUS 서버 사용  
  일반적으로 계층의 최상위 사이트는 Microsoft Update와 소프트웨어 업데이트 메타데이터를 동기화하도록 구성됩니다. 회사 보안 정책에 따라 최상위 사이트에서 인터넷에 액세스할 수 있도록 허용되지 않을 경우 최상위 사이트의 동기화 원본이 Configuration Manager 계층 구조에 있지 않은 기존 WSUS 서버를 사용하도록 구성할 수 있습니다. 예를 들어 최상위 사이트에서는 인터넷에 액세스할 수 없지만, 인터넷에 액세스할 수 있는 DMZ에 WSUS 서버가 설치되어 있을 수 있습니다. 이 경우 DMZ의 WSUS 서버를 소프트웨어 업데이트 메타데이터의 동기화 원본으로 구성할 수 있습니다. DMZ의 WSUS 서버가 Configuration Manager 계층 구조에 필요한 조건을 충족하는 소프트웨어 업데이트를 동기화하도록 해야 합니다. 그렇지 않으면 최상위 사이트에서 필요한 소프트웨어 업데이트가 동기화되지 않을 수 있습니다. 소프트웨어 업데이트 지점을 설치할 때에는 DMZ의 WSUS 서버에 액세스할 수 있는 WSUS 연결 계정을 구성하고 방화벽이 해당 포트의 트래픽을 허용하는지 확인합니다. 자세한 내용은 [소프트웨어 업데이트 지점에서 동기화 원본에 사용하는 포트](../../core/plan-design/hierarchy/ports.md#BKMK_PortsSUP-WSUS)를 참조하세요.  
 
-###  <a name="a-namebkmknlbsupsp1a-software-update-point-configured-to-use-an-nlb"></a><a name="BKMK_NLBSUPSP1"></a> NLB를 사용하도록 구성된 소프트웨어 업데이트 지점  
- 소프트웨어 업데이트 지점 전환을 통해 내결함성 요구 사항을 충족할 수 있습니다. 그러나 부하 분산만 고려할 때 NLB가 소프트웨어 업데이트 지점 장애 조치(failover)보다 더 강력하며 NLB는 네트워크의 신뢰성과 성능을 높일 수 있습니다. Configuration Manager 콘솔에는 소프트웨어 업데이트 지점에서 NLB를 사용하도록 구성하는 옵션이 없지만, Set-CMSoftwareUpdatePoint PowerShell cmdlet을 사용해서 NLB를 구성할 수 있습니다. Set-CMSoftwareUpdatePoint PowerShell cmdlet에 대한 자세한 내용은 [Set-CMSoftwareUpdatePoint](http://go.microsoft.com/fwlink/?LinkId=276834)를 참조하세요.
+###  <a name="BKMK_NLBSUPSP1"></a> NLB를 사용하도록 구성된 소프트웨어 업데이트 지점  
+ 소프트웨어 업데이트 지점 전환을 통해 내결함성 요구 사항을 충족할 수 있습니다. 기본적으로 Configuration Manager에서는 소프트웨어 업데이트 지점을 NLB 클러스터로 구성할 수 없습니다. Configuration Manager 버전 1702 이전에는 Configuration Manager SDK를 사용하여 NLB 클러스터에서 최대 4개의 소프트웨어 업데이트 지점을 구성할 수 있었습니다. 그러나 Configuration Manager 버전 1702부터는 소프트웨어 업데이트 지점이 NLB 클러스터로 지원되지 않으며, 이 구성이 검색된 경우 Configuration Manager 버전 1702로의 업그레이드가 차단됩니다. Set-CMSoftwareUpdatePoint PowerShell cmdlet에 대한 자세한 내용은 [Set-CMSoftwareUpdatePoint](http://go.microsoft.com/fwlink/?LinkId=276834)를 참조하세요.
 
-###  <a name="a-namebkmksupsecsitea-software-update-point-on-a-secondary-site"></a><a name="BKMK_SUPSecSite"></a> 보조 사이트의 소프트웨어 업데이트 지점  
+###  <a name="BKMK_SUPSecSite"></a> 보조 사이트의 소프트웨어 업데이트 지점  
  보조 사이트의 소프트웨어 업데이트 지점은 선택 사항입니다. 보조 사이트에 소프트웨어 업데이트 지점을 설치하면 부모 기본 사이트에서 WSUS 데이터베이스가 기본 소프트웨어 업데이트 지점의 복제본으로 구성됩니다. 보조 사이트에는 소프트웨어 업데이트 지점을 하나만 설치할 수 있습니다. 보조 사이트에 소프트웨어 업데이트 지점이 설치되지 않은 경우 보조 사이트에 할당되는 장치가 부모 사이트의 소프트웨어 업데이트 지점을 사용하도록 구성됩니다. 일반적으로 보조 사이트에 할당되는 장치와 부모 기본 사이트의 소프트웨어 업데이트 지점 사이의 네트워크 대역폭이 제한되어 있거나 이 소프트웨어 업데이트 지점이 용량 제한에 도달한 경우 보조 사이트에 소프트웨어 업데이트 지점을 설치합니다. 보조 사이트에서 소프트웨어 업데이트 지점이 성공적으로 설치되고 구성된 후에는 사이트에 할당된 클라이언트 컴퓨터에 대한 사이트 전체 정책이 업데이트되어 클라이언트 컴퓨터에서 새 소프트웨어 업데이트 지점을 사용하기 시작합니다.  
 
-##  <a name="a-namebkmksupinstallationa-plan-for-software-update-point-installation"></a><a name="BKMK_SUPInstallation"></a> 소프트웨어 업데이트 지점 설치 계획  
+##  <a name="BKMK_SUPInstallation"></a> 소프트웨어 업데이트 지점 설치 계획  
  Configuration Manager에서 소프트웨어 업데이트 지점의 사이트 시스템 역할을 만들기 전에는 Configuration Manager 인프라에 따라 몇 가지 고려해야 할 요구 사항이 있습니다. 소프트웨어 업데이트 지점이 SSL을 사용하여 통신하도록 구성하는 경우 계층의 소프트웨어 업데이트 지점이 제대로 작동하기 위해 추가 단계를 수행해야 하므로 이 섹션을 검토하는 것이 특히 중요합니다. 이 섹션에서는 소프트웨어 업데이트 지점 설치를 성공적으로 계획하고 준비하기 위해 수행해야 하는 단계를 설명합니다.  
 
-###  <a name="a-namebkmksupsystemrequirementsa-requirements-for-the-software-update-point"></a><a name="BKMK_SUPSystemRequirements"></a> 소프트웨어 업데이트 지점에 대한 요구 사항  
+###  <a name="BKMK_SUPSystemRequirements"></a> 소프트웨어 업데이트 지점에 대한 요구 사항  
  WSUS의 최소 요구 사항과 Configuration Manager 사이트 시스템의 지원되는 구성을 충족하는 사이트 시스템에 소프트웨어 업데이트 지점 사이트 시스템 역할을 설치해야 합니다.  
 
 -   Windows Server 2012에서 WSUS 서버 역할의 최소 요구 사항에 대한 자세한 내용은 Windows Server 2012 문서 라이브러리에서 [고려 사항 및 시스템 요구 사항 검토](https://technet.microsoft.com/library/hh852344.aspx#BKMK_1.1)를 참조하세요.  
 
 -   Configuration Manager 사이트 시스템에 지원되는 구성에 대한 자세한 내용은 [사이트 및 사이트 시스템 필수 조건](../../core/plan-design/configs/site-and-site-system-prerequisites.md)을 참조하세요.  
 
-###  <a name="a-namebkmkplanningforwsusa-plan-for-wsus-installation"></a><a name="BKMK_PlanningForWSUS"></a> WSUS 설치 계획  
+###  <a name="BKMK_PlanningForWSUS"></a> WSUS 설치 계획  
  소프트웨어 업데이트를 위해서는 소프트웨어 업데이트 지점 사이트 시스템 역할로 구성하는 모든 사이트 시스템 서버에 지원되는 버전의 WSUS가 설치되어 있어야 합니다. 또한 사이트 서버에 소프트웨어 업데이트 지점을 설치하지 않는 경우 사이트 서버 컴퓨터에 WSUS 관리 콘솔(아직 설치되지 않은 경우)을 설치해야 합니다. 이렇게 하면 사이트 서버가 소프트웨어 업데이트 지점에서 실행되는 WSUS와 통신할 수 있습니다.  
 
  Windows Server 2012에서 WSUS를 사용하는 경우 Configuration Manager에서 **WSUS Configuration Manager**가 WSUS에 연결되어 정기 상태 검사를 수행할 수 있도록 추가 권한을 구성해야 합니다. 추가 권한을 구성하려면 다음 옵션 중 하나를 선택합니다.  
@@ -152,23 +157,23 @@ Configuration Manager 버전 1606부터, 활성 소프트웨어 업데이트 지
 
  기본 사이트에서 둘 이상의 소프트웨어 업데이트 지점을 설치하는 경우 동일한 Active Directory 포리스트에 있는 각 소프트웨어 업데이트 지점에 같은 WSUS 데이터베이스를 사용합니다. 같은 데이터베이스를 공유하면 클라이언트가 새 소프트웨어 업데이트 지점으로 전환할 때 발생할 수 있는 클라이언트 및 네트워크 성능 영향이 완전히 없어지지는 않더라도 상당히 줄어듭니다. 클라이언트가 이전 소프트웨어 업데이트 지점과 같은 데이터베이스를 사용하는 새 소프트웨어 업데이트 지점으로 전환하는 경우에도 델타 검사는 이루어지지만 WSUS 서버가 자체 데이터베이스를 갖는 경우보다 검사 규모가 훨씬 작아집니다.  
 
-####  <a name="a-namebkmkcustomwebsitea-configure-wsus-to-use-a-custom-web-site"></a><a name="BKMK_CustomWebSite"></a> 사용자 지정 웹 사이트를 사용하도록 WSUS 구성  
+####  <a name="BKMK_CustomWebSite"></a> 사용자 지정 웹 사이트를 사용하도록 WSUS 구성  
  WSUS를 설치할 때에는 기존 IIS 기본 웹 사이트를 사용하거나 사용자 지정 WSUS 웹 사이트를 만들 수 있습니다. IIS가 다른 Configuration Manager 사이트 시스템 또는 다른 응용 프로그램에서 사용하는 웹 사이트를 공유하지 않고 전용 가상 웹 사이트에 있는 WSUS 서비스를 호스트하도록 하려면 WSUS에 사용자 지정 웹 사이트를 만듭니다. 이는 사이트 서버에 소프트웨어 업데이트 지점 사이트 시스템 역할을 설치하는 경우 특히 해당됩니다. Windows Server 2012에서 WSUS를 실행하는 경우 WSUS가 기본적으로 HTTP에 포트 8530을 사용하고, HTTPS에 포트 8531을 사용하도록 구성됩니다. 사이트에서 소프트웨어 업데이트 지점을 만드는 경우 이러한 포트 설정을 지정해야 합니다.  
 
-####  <a name="a-namebkmkwsusinfrastructurea-use-an-existing-wsus-infrastructure"></a><a name="BKMK_WSUSInfrastructure"></a> 기존 WSUS 인프라 사용  
+####  <a name="BKMK_WSUSInfrastructure"></a> 기존 WSUS 인프라 사용  
  Configuration Manager를 설치하기 전에 현재의 환경에서 활성화 상태였던 WSUS 서버를 사용할 수 있습니다. 소프트웨어 업데이트 지점을 구성할 때는 동기화 설정을 지정해야 합니다. Configuration Manager에서는 소프트웨어 업데이트 지점에서 실행되는 WSUS에 연결하고 동일한 설정으로 WSUS 서버를 구성합니다. WSUS 서버가 사용자가 소프트웨어 업데이트 지점 동기화 설정의 일부로 구성하지 않은 제품 또는 분류와 이전에 동기화된 경우, 해당 제품 및 분류에 대한 소프트웨어 업데이트 메타데이터는 소프트웨어 업데이트 지점에 대한 동기화 설정에 관계없이 WSUS 데이터베이스 내 모든 소프트웨어 업데이트 메타데이터에 대해 동기화됩니다. 이 경우 사이트 데이터베이스에 예기치 않은 소프트웨어 업데이트 메타데이터가 생성될 수 있습니다. WSUS 관리 콘솔에서 제품 또는 분류를 직접 추가한 다음 즉시 동기화를 시작하면 이와 동일한 동작이 발생합니다. 기본적으로 Configuration Manager는 매시간 소프트웨어 업데이트 지점에서 실행되는 WSUS에 연결하고 Configuration Manager 외부에서 수정된 모든 설정을 다시 설정합니다.  
 
  동기화 설정에 지정한 제품 및 분류를 충족하지 않는 소프트웨어 업데이트는 만료된 것으로 설정되며 그런 다음 사이트 데이터베이스에서 제거됩니다.  
 
-####  <a name="a-namebkmkwsusasreplicaa-configure-wsus-as-a-replica-server"></a><a name="BKMK_WSUSAsReplica"></a> 복제 서버로 WSUS 구성  
+####  <a name="BKMK_WSUSAsReplica"></a> 복제 서버로 WSUS 구성  
  기본 사이트 서버에 소프트웨어 업데이트 지점 사이트 시스템 역할을 만들 경우 복제본으로 구성된 WSUS 서버를 사용할 수 없습니다. WSUS 서버가 복제본으로 구성되면 Configuration Manager에서 WSUS 서버 구성에 실패하고 WSUS 동기화도 실패합니다. 소프트웨어 업데이트 지점이 보조 사이트에 만들어지면 Configuration Manager는 WSUS를 부모 기본 사이트의 소프트웨어 업데이트 지점에서 실행되는 WSUS의 복제 서버로 구성합니다. 기본 사이트에 설치하는 첫 번째 소프트웨어 업데이트 지점이 기본 소프트웨어 업데이트 지점이 됩니다. 사이트의 추가 소프트웨어 업데이트 지점은 기본 소프트웨어 업데이트 지점의 복제본으로 구성됩니다.  
 
-####  <a name="a-namebkmkwsusandssla-decide-whether-to-configure-wsus-to-use-ssl"></a><a name="BKMK_WSUSandSSL"></a> SSL을 사용하도록 WSUS를 구성할지 여부 결정  
+####  <a name="BKMK_WSUSandSSL"></a> SSL을 사용하도록 WSUS를 구성할지 여부 결정  
  SSL 프로토콜을 사용하면 소프트웨어 업데이트 지점에서 실행되는 WSUS를 보호할 수 있습니다. WSUS에서는 SSL을 사용하여 클라이언트 컴퓨터 및 다운스트림 WSUS 서버를 WSUS 서버에 대해 인증합니다. 또한 WSUS는 SSL을 사용하여 소프트웨어 업데이트 메타데이터를 암호화합니다. SSL을 사용하여 WSUS를 보호하도록 선택할 경우 소프트웨어 업데이트 지점을 설치하기 전에 WSUS 서버를 준비해야 합니다.  
 
  소프트웨어 업데이트 지점을 설치하고 구성할 경우 **WSUS 서버에 SSL 통신 사용** 설정을 선택해야 합니다. 그러지 않으면 Configuration Manager는 SSL을 사용하지 않도록 WSUS를 구성합니다. 소프트웨어 업데이트 지점에서 실행되는 WSUS에 대해 SSL을 사용하도록 설정하면 모든 자식 사이트의 소프트웨어 업데이트 지점에서 실행되는 WSUS도 SSL을 사용하도록 구성해야 합니다.  
 
-###  <a name="a-namebkmkconfigurefirewallsa-configure-firewalls"></a><a name="BKMK_ConfigureFirewalls"></a> 방화벽 구성  
+###  <a name="BKMK_ConfigureFirewalls"></a> 방화벽 구성  
  Configuration Manager 중앙 관리 사이트의 소프트웨어 업데이트는 소프트웨어 업데이트 지점에서 실행되는 WSUS와 통신하며, 이 WSUS는 다시 동기화 원본과 통신하여 소프트웨어 업데이트 메타데이터를 동기화합니다. 자식 사이트의 소프트웨어 업데이트 지점은 부모 사이트의 소프트웨어 업데이트 지점과 통신합니다. 기본 사이트에 소프트웨어 업데이트 지점이 두 개 이상 있는 경우 추가 소프트웨어 업데이트 지점은 사이트에 설치된 첫 번째 소프트웨어 업데이트 지점(기본 소프트웨어 업데이트 지점)과 통신해야 합니다.  
 
  Configuration Manager 소프트웨어 업데이트 지점 및 인터넷 간에 기업 방화벽이 설치된 경우, 소프트웨어 업데이트 지점과 해당 업스트림 동기화 원본이 있는 경우 또는 추가 소프트웨어 업데이트 지점이 있는 경우에는 WSUS에서 사용하는 HTTP 또는 HTTPS 포트를 수락하도록 방화벽을 구성해야 할 수 있습니다. Microsoft Update 연결은 항상 HTTP용으로 포트 80, HTTPS용으로 포트 443을 사용하도록 구성됩니다. 자식 사이트의 소프트웨어 업데이트 지점에서 실행되는 WSUS 및 부모 사이트의 소프트웨어 업데이트 지점에서 실행되는 WSUS 간 연결에 대해 사용자 지정 포트를 사용할 수 있습니다. 보안 정책에서 연결을 허용하지 않는 경우 내보내기 및 가져오기 동기화 방법을 사용해야 합니다. 자세한 내용은 이 항목에서 [동기화 원본](#BKMK_SyncSource) 섹션을 참조하세요. WSUS에 사용되는 포트에 대한 자세한 내용은 [System Center Configuration Manager에서 WSUS에 사용되는 포트 설정을 확인하는 방법](../get-started/install-a-software-update-point.md#wsus-settings)을 참조하세요.  
@@ -210,10 +215,10 @@ Configuration Manager 버전 1606부터, 활성 소프트웨어 업데이트 지
 
 -   https://<*부모 사이트에 있는 소프트웨어 업데이트 지점의 FQDN*>  
 
-##  <a name="a-namebkmksyncsettingsa-plan-for-synchronization-settings"></a><a name="BKMK_SyncSettings"></a> 동기화 설정에 대한 계획  
+##  <a name="BKMK_SyncSettings"></a> 동기화 설정에 대한 계획  
  Configuration Manager의 소프트웨어 업데이트 동기화는 구성한 기준에 따라 소프트웨어 업데이트 메타데이터를 검색하는 프로세스입니다. 계층 내 최상위 사이트인 중앙 관리 사이트 또는 독립 실행형 기본 사이트는 Microsoft Update에서 소프트웨어 업데이트를 동기화합니다. Configuration Manager 계층 구조 외에서 기존 WSUS 서버와 동기화할 수 있도록 최상위 사이트의 소프트웨어 업데이트 지점을 구성할 수 있는 옵션이 제공됩니다. 자식 기본 사이트는 중앙 관리 사이트의 소프트웨어 업데이트 지점에서 소프트웨어 업데이트 메타데이터를 동기화합니다. 소프트웨어 업데이트 지점을 설치 및 구성하기 전에 이 섹션을 참고하여 동기화 설정을 계획하세요.  
 
-###  <a name="a-namebkmksyncsourcea-synchronization-source"></a><a name="BKMK_SyncSource"></a> 동기화 원본  
+###  <a name="BKMK_SyncSource"></a> 동기화 원본  
  소프트웨어 업데이트 지점에 대한 동기화 원본 설정은 소프트웨어 업데이트 지점이 소프트웨어 업데이트 메타데이터를 검색하는 위치 및 동기화 프로세스 중 WSUS 보고 이벤트가 만들어지는지 여부를 지정합니다.  
 
 -   **동기화 원본:** 최상위 사이트의 소프트웨어 업데이트 지점은 기본적으로 Microsoft 업데이트에 대한 동기화 원본을 구성합니다. 최상위 사이트를 기존 WSUS 서버와 동기화할 수 있는 옵션이 제공됩니다. 자식 기본 사이트의 소프트웨어 업데이트 지점은 동기화 원본을 기본적으로 중앙 관리 사이트의 소프트웨어 업데이트 지점으로 구성합니다.  
@@ -225,7 +230,7 @@ Configuration Manager 버전 1606부터, 활성 소프트웨어 업데이트 지
 
 -   **WSUS 보고 이벤트:** 클라이언트 컴퓨터의 Windows 업데이트 에이전트는 WSUS 보고에 사용되는 이벤트 메시지를 만들 수 있습니다. 이러한 이벤트는 Configuration Manager의 소프트웨어 업데이트에서 사용되지 않으므로 **WSUS 보고 이벤트 생성 안 함** 옵션은 기본적으로 선택되어 있습니다. 이벤트가 만들어지지 않는 경우 클라이언트 컴퓨터가 WSUS 서버에 연결해야 하는 시간은 소프트웨어 업데이트 평가 및 호환성 검사를 실행하는 동안만입니다. 이러한 이벤트가 Configuration Manager의 소프트웨어 업데이트 범위 이외의 보고에 필요한 경우, WSUS 보고 이벤트를 만들도록 이 설정을 수정해야 합니다.  
 
-###  <a name="a-namebkmksyncschedulea-synchronization-schedule"></a><a name="BKMK_SyncSchedule"></a> 동기화 일정  
+###  <a name="BKMK_SyncSchedule"></a> 동기화 일정  
  동기화 일정은 Configuration Manager 계층 구조 내 최상위 사이트의 소프트웨어 업데이트 지점에서만 구성할 수 있습니다. 동기화 일정을 구성하면 소프트웨어 업데이트 지점은 지정한 날짜 및 시간에 따라 동기화 원본과 동기화됩니다. 사용자 지정 일정을 활용하면 WSUS 서버, 사이트 서버 및 네트워크로부터의 요청이 많지 않은 날짜 및 시간(예: 매주 한 번 오전 2시에)에 소프트웨어 업데이트를 동기화할 수 있습니다. Configuration Manager 콘솔의 **모든 소프트웨어 업데이트** 또는 **소프트웨어 업데이트 그룹** 노드에서 **동기화 소프트웨어 업데이트** 작업을 사용하여 최상위 사이트에서 동기화를 시작할 수도 있습니다.  
 
 > [!TIP]  
@@ -233,7 +238,7 @@ Configuration Manager 버전 1606부터, 활성 소프트웨어 업데이트 지
 
  소프트웨어 업데이트 지점에서 동기화가 완료되면 자식 사이트에 동기화 요청이 전송됩니다. 기본 사이트에 추가 소프트웨어 업데이트 지점이 있는 경우 동기화 요청은 각 소프트웨어 업데이트 지점에 전송됩니다. 이 프로세스는 계층 내 모든 사이트에서 반복됩니다.  
 
-###  <a name="a-namebkmkupdateclassificationsa-update-classifications"></a><a name="BKMK_UpdateClassifications"></a> 업데이트 분류  
+###  <a name="BKMK_UpdateClassifications"></a> 업데이트 분류  
  모든 소프트웨어 업데이트는 다양한 유형의 업데이트를 정리하는 데 도움이 되는 업데이트 분류와 함께 정의됩니다. 동기화 프로세스 중에는 지정한 분류에 대한 소프트웨어 업데이트 메타데이터가 동기화됩니다. Configuration Manager에서는 다음 업데이트 분류와 소프트웨어 업데이트를 동기화할 수 있습니다.  
 
 -   **중요 업데이트:** 보안과 관련 없는 중요한 버그를 다루는, 특정 문제에 대해 대폭 릴리스된 업데이트를 지정합니다.  
@@ -257,7 +262,7 @@ Configuration Manager 버전 1606부터, 활성 소프트웨어 업데이트 지
 > [!WARNING]  
 >  소프트웨어 업데이트를 처음 동기화하기 전에 모든 분류를 지우는 것이 좋습니다. 초기 동기화가 완료된 후 소프트웨어 업데이트 지점 구성 요소 속성에서 해당 분류를 선택한 다음 동기화를 다시 시작합니다.  
 
-###  <a name="a-namebkmkupdateproductsa-products"></a><a name="BKMK_UpdateProducts"></a> 제품  
+###  <a name="BKMK_UpdateProducts"></a> 제품  
  각 소프트웨어 업데이트에 대한 메타데이터는 업데이트가 적용되는 하나 이상의 제품을 정의합니다. 제품은 특정 버전의 운영 체제 또는 응용 프로그램입니다. Microsoft Windows Server 2008 등의 제품을 예로 들 수 있습니다. 제품군은 개별 제품이 파생되는 기본 운영 체제 또는 응용 프로그램입니다. 예를 들어 Microsoft Windows는 제품군이며 Microsoft Windows Server 2008은 이 제품군의 구성원입니다. 하나의 제품군 안에 다른 제품군 또는 개별 제품을 지정할 수 있습니다.  
 
  소프트웨어 업데이트를 여러 제품에 적용 가능한 경우 동기화를 위해 제품을 하나 이상 선택하면 일부 제품을 선택하지 않아도 모든 제품이 Configuration Manager 콘솔에 나타납니다. 예를 들어 Windows Server 2012 운영 체제만 구독한 경우 소프트웨어 업데이트가 Windows Server 2012와 Windows Server 2012 Datacenter Edition에 적용된다면 두 제품 모두 사이트 데이터베이스에 포함됩니다.  
@@ -267,7 +272,7 @@ Configuration Manager 버전 1606부터, 활성 소프트웨어 업데이트 지
 > [!IMPORTANT]  
 >  Configuration Manager에는 소프트웨어 업데이트 지점을 처음 설치할 때 선택할 수 있는 제품 및 제품군의 목록이 저장됩니다. Configuration Manager를 릴리스한 후에 릴리스된 제품 및 제품군은 선택 가능한 제품 및 제품군 목록을 업데이트하는 소프트웨어 업데이트 동기화를 완료할 때까지 선택하지 못할 수 있습니다. 처음 소프트웨어 업데이트를 동기화하기 전에 모든 제품을 지우는 것이 가장 좋습니다. 동기화를 처음 수행한 후에 소프트웨어 업데이트 구성 요소 속성에서 제품을 선택한 다음 동기화를 다시 시작하세요.  
 
-###  <a name="a-namebkmksupersedencerulesasupersedence-rules"></a><a name="BKMK_SupersedenceRules"></a>교체 규칙  
+###  <a name="BKMK_SupersedenceRules"></a>교체 규칙  
  일반적으로 다른 소프트웨어 업데이트를 교체하는 소프트웨어 업데이트는 다음 작업 중 하나 이상을 수행합니다.  
 
 -   이전에 릴리스된 업데이트 하나 이상에서 제공한 픽스를 보강하거나, 향상시키거나, 업데이트합니다.  
@@ -284,7 +289,7 @@ Configuration Manager 버전 1606부터, 활성 소프트웨어 업데이트 지
 
 -   교체할 소프트웨어 업데이트가 프로덕션 환경에서 배포하도록 승인되지 않은 경우  
 
-###  <a name="a-namebkmkupdatelanguagesa-languages"></a><a name="BKMK_UpdateLanguages"></a> 언어  
+###  <a name="BKMK_UpdateLanguages"></a> 언어  
  소프트웨어 업데이트 지점의 언어 설정을 사용하면 소프트웨어 업데이트에 대해 요약 정보(소프트웨어 업데이트 메타데이터)를 동기화할 언어 및 소프트웨어 업데이트를 위해 다운로드할 소프트웨어 업데이트 파일 언어를 구성할 수 있습니다.  
 
 #### <a name="software-update-file"></a>소프트웨어 업데이트 파일  
@@ -300,10 +305,10 @@ Configuration Manager 버전 1606부터, 활성 소프트웨어 업데이트 지
 > [!IMPORTANT]  
 >  Configuration Manager 계층 구조에 필요하게 될 요약 정보 언어를 모두 선택해야 합니다. 최상위 사이트의 소프트웨어 업데이트 지점을 동기화 원본과 동기화하면 선택한 요약 정보 언어에 따라 검색되는 소프트웨어 업데이트 메타데이터가 결정됩니다. 동기화를 실행한 후에 요약 정보 언어를 한 번 이상 수정하면 소프트웨어 업데이트 메타데이터가 새 소프트웨어 업데이트나 업데이트된 소프트웨어 업데이트에 대해서만 수정된 요약 정보 언어로 검색됩니다. 이미 동기화된 소프트웨어 업데이트는 동기화 원본의 소프트웨어 업데이트가 변경되지 않는 한 수정된 언어의 새 메타데이터로 업데이트되지 않습니다.  
 
-##  <a name="a-namebkmkmaintenancewindowa-plan-for-a-software-updates-maintenance-window"></a><a name="BKMK_MaintenanceWindow"></a> 소프트웨어 업데이트 유지 관리 기간에 대한 계획  
+##  <a name="BKMK_MaintenanceWindow"></a> 소프트웨어 업데이트 유지 관리 기간에 대한 계획  
  소프트웨어 업데이트 설치만을 위한 유지 관리 기간을 추가할 수 있습니다. 이를 통해 일반 유지 관리 기간과 소프트웨어 업데이트용 유지 관리 기간을 달리 구성할 수 있습니다. 일반 유지 관리 기간과 소프트웨어 업데이트 유지 관리 기간이 모두 구성된 경우 클라이언트는 소프트웨어 업데이트 유지 관리 기간 동안에만 소프트웨어 업데이트를 설치합니다. 유지 관리 기간에 대한 자세한 내용은 [유지 관리 기간을 사용하는 방법](../../core/clients/manage/collections/use-maintenance-windows.md)을 참조하세요.  
 
-##  <a name="a-namebkmkrestartoptionsa-restart-options-for-windows-10-clients-after-software-update-installation"></a><a name="BKMK_RestartOptions"></a> 소프트웨어 업데이트 설치 후 Windows 10 클라이언트의 다시 시작 옵션
+##  <a name="BKMK_RestartOptions"></a> 소프트웨어 업데이트 설치 후 Windows 10 클라이언트의 다시 시작 옵션
 Configuration Manager를 사용하여 다시 시작이 필요한 소프트웨어 업데이트를 배포하고 컴퓨터에 설치한 경우 다시 시작 보류가 예약되고 다시 시작 대화 상자가 표시됩니다.
 
 Configuration Manager 버전 1606부터 Configuration Manager 소프트웨어 업데이트에 대해 보류 중인 다시 시작이 있으면 언제든지 **업데이트 및 다시 시작**과 **업데이트 및 종료** 옵션을 Windows 10 컴퓨터의 Windows 전원 옵션에서 사용할 수 있습니다. 이러한 옵션 중 하나를 사용한 후 컴퓨터를 다시 시작하면 다시 시작 대화 상자가 표시되지 않습니다.
@@ -312,9 +317,4 @@ Configuration Manager 버전 1606부터 Configuration Manager 소프트웨어 �
 
 ## <a name="next-steps"></a>다음 단계
 소프트웨어 업데이트 계획이 완료되면 [소프트웨어 업데이트 관리 준비](../get-started/prepare-for-software-updates-management.md)를 참조하세요.
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

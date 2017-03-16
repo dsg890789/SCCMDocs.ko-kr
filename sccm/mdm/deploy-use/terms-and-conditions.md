@@ -1,8 +1,8 @@
 ---
-title: Terms and Conditions in System Center Configuration Manager
+title: "System Center Configuration Manager의 계약조건 | Microsoft 문서"
 description: "System Center Configuration Manager에서 사용자 그룹에 계약조건을 배포합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,16 +12,17 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4d3f9e6b-4d71-4fc4-9b91-47f1bfbd8c70
 caps.latest.revision: 9
-author: NathBarn
-ms.author: nathbarn
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: a7b99bed3186ab8ff817ef5f420d7a55d60b1c14
+ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
+ms.openlocfilehash: d8235db376fc62a7ac00d6e5a27823710630eca6
+ms.lasthandoff: 03/06/2017
 
 
 ---
-# <a name="terms-and-conditions-in-system-center-configuration-manager"></a>Terms and Conditions in System Center Configuration Manager
+# <a name="add-terms-and-conditions-with-system-center-configuration-manager"></a>System Center Configuration Manager 사용 약관 추가
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -89,7 +90,7 @@ ms.openlocfilehash: a7b99bed3186ab8ff817ef5f420d7a55d60b1c14
 
      배포 상태 화면에서 상태 탭을 선택하여 해당 상태의 사용자를 볼 수 있습니다. **요약 실행** 을 클릭하여 계층 전체에서 데이터를 업데이트할 수 있습니다. 콘솔에서 **새로 고침** 을 클릭하여 데이터를 업데이트합니다.  
 
-## <a name="to-view-a-terms-and-conditions-report"></a>사용 약관 보고서를 보려면  
+## <a name="to-view--a-terms-and-conditions-report"></a>사용 약관 보고서를 보려면  
 
 1.  Configuration Manager 콘솔에서 **모니터링** > **개요** > **보고** > **보고서**로 이동합니다.  
 
@@ -120,8 +121,6 @@ ms.openlocfilehash: a7b99bed3186ab8ff817ef5f420d7a55d60b1c14
 
      사용 약관을 크게 변경할 때마다 버전 번호를 높이고 동의를 요구하는 것이 좋습니다. 오타를 수정하거나 서식을 변경하는 등의 경우에는 현재 버전 번호를 유지합니다.
 
-
-
-<!--HONumber=Nov16_HO1-->
-
+> [!div class="button"]
+ [< 이전 단계](configure-intune-subscription.md)  [다음 단계 >](create-service-connection-point.md)
 

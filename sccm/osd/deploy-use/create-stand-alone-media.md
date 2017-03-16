@@ -17,8 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 66cd6d099acdd9db2bc913a69993aaf5e17237fe
-ms.openlocfilehash: 411ca1d13778521f7fa0dba71980158477cd0735
+ms.sourcegitcommit: ee7f69bd65152deffb2456d9807e1e8fee8802ec
+ms.openlocfilehash: 708525604c3f40cf75b5408c3666193186b7cf50
+ms.lasthandoff: 03/07/2017
 
 
 ---
@@ -36,7 +37,7 @@ Configuration Manager의 독립 실행형 미디어에는 Configuration Manager 
 
  독립 실행형 미디어에는 운영 체제와 부팅 이미지, 운영 체제 이미지, 장치 드라이버 등의 다른 모든 필수 콘텐츠를 설치하는 단계를 자동화하는 작업 순서가 포함됩니다. 독립 실행형 미디어에는 운영 체제 배포에 필요한 모든 항목이 저장되므로 이 미디어에 필요한 디스크 공간은 다른 미디어 유형에 필요한 디스크 공간보다 훨씬 더 큽니다. 중앙 관리 사이트에서 독립 실행형 미디어를 만들 때 클라이언트가 Active Directory에서 할당된 사이트 코드를 검색합니다. 자식 사이트에 생성된 독립 실행형 미디어에서 자동으로 해당 사이트의 사이트 코드를 클라이언트에 할당합니다.  
 
-##  <a name="a-namebkmkcreatestandalonemediaa-create-stand-alone-media"></a><a name="BKMK_CreateStandAloneMedia"></a> 독립 실행형 미디어 만들기  
+##  <a name="BKMK_CreateStandAloneMedia"></a> 독립 실행형 미디어 만들기  
  작업 순서 미디어 만들기 마법사를 사용하여 독립 실행형 미디어를 만들기 전에 다음 조건을 충족해야 합니다.  
 
 ### <a name="create-a-task-sequence-to-deploy-an-operating-system"></a>운영 체제를 배포하는 작업 순서 만들기
@@ -53,115 +54,111 @@ Configuration Manager의 독립 실행형 미디어에는 Configuration Manager 
 - 동적 응용 프로그램은 응용 프로그램 설치 작업을 통해 설치됩니다.
 
 운영 체제를 배포하는 작업 순서에 [패키지 설치](../../osd/understand/task-sequence-steps.md#BKMK_InstallPackage) 단계가 포함되어 있고 중앙 관리 사이트에서 독립 실행형 미디어를 만들면 오류가 발생할 수 있습니다. 중앙 관리 사이트에는 작업 순서를 실행하는 동안 소프트웨어 배포 에이전트를 사용하도록 설정하는 데 필요한 필수 클라이언트 구성 정책이 없습니다. CreateTsMedia.log 파일에 다음 오류가 나타날 수 있습니다.<br /><br /> "WMI 메서드 SMS_TaskSequencePackage.GetClientConfigPolicies가 실패했습니다(0x80041001)."<br /><br /> **패키지 설치** 단계가 포함된 독립 실행형 미디어를 사용할 경우 소프트웨어 배포 에이전트를 사용하도록 설정된 기본 사이트에 독립 실행형 미디어를 만들거나 작업 순서에서 [Windows 및 ConfigMgr 설치](../understand/task-sequence-steps.md#BKMK_SetupWindowsandConfigMgr) 단계와 첫 번째 **패키지 설치** 단계 사이에 [명령줄 실행](../understand/task-sequence-steps.md#BKMK_RunCommandLine) 단계를 추가해야 합니다. **명령줄 실행** 단계에서는 WMIC 명령을 실행하여 첫 번째 패키지 설치 단계가 실행되기 전에 소프트웨어 배포 에이전트를 사용하도록 설정합니다. **명령줄 실행** 작업 순서 단계에서 다음을 사용할 수 있습니다.<br /><br />
-```WMIC /namespace:\\\root\ccm\policy\machine\requestedconfig path ccm_SoftwareDistributionClientConfig CREATE ComponentName="Enable SWDist", Enabled="true", LockSettings="TRUE", PolicySource="local", PolicyVersion="1.0", SiteSettingsKey="1" /NOINTERACTIVE
+```
+WMIC /namespace:\\\root\ccm\policy\machine\requestedconfig path ccm_SoftwareDistributionClientConfig CREATE ComponentName="Enable SWDist", Enabled="true", LockSettings="TRUE", PolicySource="local", PolicyVersion="1.0", SiteSettingsKey="1" /NOINTERACTIVE
 ```
 
-### Distribute all content associated with the task sequence
-You must distribute all content that is required by the task sequence the  to at least one distribution point. This includes the boot image, operating system image, and other associated files. The wizard gathers the information from the distribution point when it creates the stand-alone media. You must have **Read** access rights to the content library on that distribution point.  For details, see [Distribute content referenced by a task sequence](manage-task-sequences-to-automate-tasks.md#BKMK_DistributeTS).
+### <a name="distribute-all-content-associated-with-the-task-sequence"></a>작업 순서와 관련된 모든 콘텐츠 배포
+작업 순서에 필요한 모든 콘텐츠를 하나 이상의 배포 지점에 배포해야 합니다. 여기에는 부팅 이미지, 운영 체제 이미지 및 관련된 기타 파일이 포함됩니다. 마법사가 독립 실행형 미디어를 만들 때 배포 지점에서 정보를 수집합니다. 해당 배포 지점의 콘텐츠 라이브러리에 대한 **읽기** 권한이 있어야 합니다.  자세한 내용은 [작업 순서에서 참조되는 콘텐츠 배포](manage-task-sequences-to-automate-tasks.md#BKMK_DistributeTS)를 참조하세요.
 
-### Prepare the removable USB drive
-*For a removable USB drive:*
+### <a name="prepare-the-removable-usb-drive"></a>이동식 USB 드라이브 준비
+*이동식 USB 드라이브:*
 
-If you are going to use a removable USB drive, the USB  drive must be connected to the computer where the wizard is run and the USB drive must be detectable by Windows as a removal device. The wizard writes directly to the USB drive when it creates the media. Stand-alone media uses a FAT32 file system. You cannot create stand-alone media on a USB flash drive whose content contains a file over 4 GB in size.
+이동식 USB 드라이브를 사용하려는 경우 마법사가 실행되는 컴퓨터에 USB 장치를 연결해야 하며, Windows에서 USB 장치를 이동식 장치로 검색할 수 있어야 합니다. 마법사는 USB 드라이브에 직접 기록하여 미디어를 만듭니다. 독립 실행형 미디어는 FAT32 파일 시스템을 사용합니다. 크기가 4GB 이상인 파일을 포함하는 USB 플래시 드라이브에 독립 실행형 미디어를 만들 수 없습니다.
 
-### Create an output folder
-*For a CD/DVD set:*
+### <a name="create-an-output-folder"></a>출력 폴더 만들기
+*CD/DVD 세트:*
 
-Before you run the Create Task Sequence Media Wizard to create media for a CD or DVD set, you must create a folder for the output files created by the wizard. Media that is created for a CD or DVD set is written as .iso files directly to the folder.
+작업 순서 미디어 만들기 마법사를 실행하여 CD 또는 DVD 세트에 미디어를 만들려면 먼저 마법사에서 생성할 출력 파일의 폴더를 만들어야 합니다. CD 또는 DVD 세트용 미디어를 만드는 경우 해당 폴더에 .iso 파일로 직접 기록됩니다.
 
 
- Use the following procedure to create stand-alone media for a removable USB drive or a CD/DVD set.  
+ 이동식 USB 드라이브 또는 CD/DVD 세트에 독립 실행형 미디어를 만들려면 다음 절차를 따르세요.  
 
-## To create stand-alone media  
+## <a name="to-create-stand-alone-media"></a>독립 실행형 미디어를 만들려면  
 
-1.  In the Configuration Manager console, click **Software Library**.  
+1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리**를 클릭합니다.  
 
-2.  In the **Software Library** workspace, expand **Operating Systems**, and then click **Task Sequences**.  
+2.  **소프트웨어 라이브러리** 작업 영역에서 **운영 체제**를 확장하고 **작업 순서**를 클릭합니다.  
 
-3.  On the **Home** tab, in the **Create** group, click **Create Task Sequence Media** to start the Create Task Sequence Media Wizard.  
+3.  **홈** 탭의 **만들기** 그룹에서 **작업 순서 미디어 만들기** 를 클릭하여 작업 순서 미디어 만들기 마법사를 시작합니다.  
 
-4.  On the **Select Media Type** page, specify the following options, and then click **Next**.  
+4.  **미디어 유형 선택** 페이지에서 다음 옵션을 지정한 후에 **다음**을 클릭합니다.  
 
-    -   Select **Stand-alone media**.  
+    -   **독립 실행형 미디어**를 선택합니다.  
 
-    -   Optionally, if you want to allow the operating system to be deployed without requiring user input, select **Allow unattended operating system deployment**. When you select this option the user is not prompted for network configuration information or for optional task sequences. However, the user is still prompted for a password if the media is configured for password protection.  
+    -   선택적으로, 사용자가 입력할 필요 없이 운영 체제를 배포할 수 있도록 허용하려면 **운영 체제 자동 배포 허용**을 선택합니다. 이 옵션을 선택하는 경우 사용자에게 네트워크 구성 정보나 선택적 작업 순서에 대해 묻지 않습니다. 단, 미디어에 암호 보호를 구성한 경우 사용자가 암호를 입력해야 합니다.  
 
-5.  On the **Media Type** page, specify whether the media is a flash drive or a CD/DVD set, and then click configure the following:  
+5.  **미디어 유형** 페이지에서 미디어가 플래시 드라이브 또는 CD/DVD 세트인지를 지정하고 다음을 구성합니다.  
 
     > [!IMPORTANT]  
-    >  Stand-alone media uses a FAT32 file system. You cannot create stand-alone media on a USB flash drive whose content contains a file over 4 GB in size.  
+    >  독립 실행형 미디어는 FAT32 파일 시스템을 사용합니다. 크기가 4GB 이상인 파일을 포함하는 USB 플래시 드라이브에 독립 실행형 미디어를 만들 수 없습니다.  
 
-    -   If you select **USB flash drive**, specify the drive where you want to store the content.  
+    -   **USB 플래시 드라이브**를 선택하는 경우 콘텐츠를 저장할 드라이브를 지정합니다.  
 
-    -   If you select **CD/DVD set**, specify the capacity of the media and the name and path of the output files. The wizard writes the output files to this location. For example: **\\\servername\folder\outputfile.iso**  
+    -   **CD/DVD 세트**를 선택하는 경우 미디어 용량 및 출력 파일의 이름과 경로를 지정해야 합니다. 마법사에서 출력 파일을 이 위치에 기록합니다. 예: **\\\servername\folder\outputfile.iso**  
 
-         If the capacity of the media is too small to store the entire content, multiple files are created and you must store the content on multiple CDs or DVDs. When multiple media is required, Configuration Manager adds a sequence number to the name of each output file that it creates. In addition, if you deploy an application along with the operating system and the application cannot fit on a single media, Configuration Manager stores the application across multiple media. When the stand-alone media is run, Configuration Manager prompts the user for the next media where the application is stored.  
+         미디어 용량이 부족하여 전체 콘텐츠를 저장하지 못하는 경우 파일이 여러 개 생성되며, 여러 CD 또는 DVD에 콘텐츠를 저장해야 합니다. 여러 미디어가 필요한 경우 Configuration Manager는 생성된 각 출력 파일의 이름에 일련 번호를 추가합니다. 또한 응용 프로그램과 함께 운영 체제를 배포하는 경우 응용 프로그램이 단일 미디어에 맞지 않는 경우 Configuration Manager는 여러 미디어를 사용하여 응용 프로그램을 저장합니다. 독립 실행형 미디어가 실행되는 경우 Configuration Manager는 응용 프로그램이 저장된 그다음 미디어를 삽입하라는 메시지를 표시합니다.  
 
         > [!IMPORTANT]  
-        >  If you select an existing .iso image, the Task Sequence Media Wizard deletes that image from the drive or share as soon as you proceed to the next page of the wizard. The existing image is deleted, even if you then cancel the wizard.  
+        >  기존 .iso 이미지를 선택하는 경우 작업 순서 미디어 만들기 마법사는 다음 페이지로 진행된 후 바로 드라이브나 공유에서 해당 이미지를 삭제합니다. 기존 이미지는 이후에 마법사를 취소하는 경우라도 삭제됩니다.  
 
-     Click **Next**.  
+     **다음**을 클릭합니다.  
 
-6.  On the **Security** page, enter a strong password to help protect the media, and then click **Next**. If you specify a password, the password is required to use the media.  
+6.  **보안** 페이지에서 미디어를 보호할 수 있는 강력한 암호를 입력한 후에 **다음**을 클릭합니다. 암호를 지정한 경우 미디어를 사용하려면 암호가 필요합니다.  
 
     > [!IMPORTANT]  
-    >  On stand-alone media, only the task sequence steps and their variables are encrypted. The remaining content of the media is not encrypted, so do not include any sensitive information in task sequence scripts. Store and implement all sensitive information by using task sequence variables.  
+    >  독립 실행형 미디어에서는 작업 순서 단계 및 관련 변수만 암호화됩니다. 미디어의 나머지 콘텐츠는 암호화되지 않으므로 작업 순서 스크립트에 중요 정보를 포함해서는 안 됩니다. 모든 중요 정보는 작업 순서 변수를 사용하여 저장 및 구현해야 합니다.  
 
-7.  On the **Stand-Alone CD/DVD** page, specify the task sequence that deploys the operating system, and then click **Next**. Choose **Detect associated application dependencies and add them to this media** to add content to the stand-alone media for application dependencies.
+7.  **독립 실행형 CD/DVD** 페이지에서 운영 체제를 배포하는 작업 순서를 지정하고 **다음**을 클릭합니다. **연결된 응용 프로그램 종속성을 검색하고 이 미디어에 추가**를 선택하고 응용 프로그램 종속성에 대한 콘텐츠를 독립 실행형 미디어에 추가합니다.
 > [!TIP]
-> If you do not see expected application dependencies, deselect and then reselect the **Detect associated application dependencies and add them to this media** setting to refresh the list.
+> 필요한 응용 프로그램 종속성이 표시되지 않으면 선택을 취소한 후 **연결된 응용 프로그램 종속성을 검색하고 이 미디어에 추가** 설정을 다시 선택하여 목록을 새로 고칩니다.
 
-The wizard lets you select only those task sequences that are associated with a boot image.  
+그러면 부팅 이미지와 연결된 작업 순서만 선택할 수 있도록 안내됩니다.  
 
-8.  On the **Distribution Points** page, specify the distribution points that contain the content required by the task sequence, and then click **Next**.  
+8.  **배포 지점** 페이지에서 작업 순서에 필요한 콘텐츠가 포함된 배포 지점을 지정한 후 **다음**을 클릭합니다.  
 
-     Configuration Manager will only display distribution points that have the content. You must distribute all of the content associated with the task sequence (boot image, operating system image, etc.) to at least one distribution point before you can continue. After you distribute the content, you can either restart the wizard or remove any distribution points that you already selected  on this page, go to the previous page, and then back to the **Distribution Points** page to refresh the distribution point list. For more information about distributing content, see [Distribute content referenced by a task sequence](manage-task-sequences-to-automate-tasks.md#BKMK_DistributeTS). For more information about distribution points and content management, see [Manage content and content infrastructure for System Center Configuration Manager](../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md).  
+     Configuration Manager는 콘텐츠가 있는 배포 지점만 표시합니다. 계속하기 전에 작업 순서와 연결된 모든 콘텐츠(부팅 이미지, 운영 체제 이미지 등)를 하나 이상의 배포 지점에 배포해야 합니다. 콘텐츠를 배포한 후 마법사를 다시 시작하거나, 이 페이지에서 이미 선택한 배포 지점을 모두 제거하고 이전 페이지로 이동한 다음 **배포 지점** 페이지로 가서 배포 지점 목록을 새로 고칩니다. 콘텐츠를 배포하는 방법에 대한 자세한 내용은 [작업 순서에서 참조되는 콘텐츠 배포](manage-task-sequences-to-automate-tasks.md#BKMK_DistributeTS)를 참조하세요. 배포 지점 및 콘텐츠 관리에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
 
     > [!NOTE]  
-    >  You must have **Read** access rights to the content library on the distribution points.  
+    >  배포 지점의 콘텐츠 라이브러리에 대한 **읽기** 권한이 있어야 합니다.  
 
-9. On the **Customization** page, specify the following information, and then click **Next**.  
+9. **사용자 지정** 페이지에서 다음 정보를 지정한 후에 **다음**을 클릭합니다.  
 
-    -   Specify the variables that the task sequence uses to deploy the operating system.  
+    -   작업 순서에서 운영 체제를 배포하는 데 사용하는 변수를 지정합니다.  
 
-    -   Specify any prestart commands that you want to run before the task sequence. Prestart commands are a script or an executable that can interact with the user in Windows PE before the task sequence runs to install the operating system. For more information about prestart commands for media, see [Prestart commands for task sequence media in System Center Configuration Manager](../understand/prestart-commands-for-task-sequence-media.md).  
+    -   작업 순서 이전에 실행하려는 시작 전 명령을 지정합니다. 시작 전 명령은 작업 순서를 실행하여 운영 체제를 설치하기 전에 Windows PE의 사용자와 상호 작용할 수 있는 스크립트나 실행 파일입니다. 미디어의 시작 전 명령에 대한 자세한 내용은 [System Center Configuration Manager의 작업 순서 미디어에 대한 시작 전 명령](../understand/prestart-commands-for-task-sequence-media.md)을 참조하세요.  
 
-         Optionally, select **Files for the prestart command** to include any required files for the prestart command.  
+         필요에 따라 **시작 전 명령을 위한 파일 포함** 을 선택하여 시작 전 명령의 필수 파일을 포함합니다.  
 
         > [!TIP]  
-        >  During task sequence media creation, the task sequence writes the package ID and prestart command-line, including the value for any task sequence variables, to the CreateTSMedia.log log file on the computer that runs the Configuration Manager console. You can review this log file to verify the value for the task sequence variables.  
+        >  작업 순서 미디어를 만드는 동안 작업 순서는 Configuration Manager 콘솔을 실행하는 컴퓨터의 CreateTSMedia.log 로그 파일에, 모든 작업 순서 변수의 값을 비롯하여 패키지 ID 및 시작 전 명령줄을 기록합니다. 이 로그 파일을 검토하여 작업 순서 변수의 값을 확인할 수 있습니다.  
 
-10. Complete the wizard.  
+10. 마법사를 완료합니다.  
 
- The stand-alone media files (.iso) are created in the destination folder. If you selected **Stand-Alone CD/DVD**, you can now copy the output files to a set of CDs or DVDs.  
+ 독립 실행형 미디어 파일(.iso)이 대상 폴더에 생성됩니다. **독립 실행형 CD/DVD**를 선택한 경우 이제 출력 파일을 CD 또는 DVD 세트에 복사할 수 있습니다.  
 
-##  <a name="BKMK_StandAloneMediaTSExample"></a> Example task sequence for stand-alone media  
- Use the following table as a guide as you create a task sequence to deploy an operating system using stand-alone media. The table will help you decide the general sequence for your task sequence steps and how to organize and structure those task sequence steps into logical groups. The task sequence that you create might vary from this sample and can contain more or fewer task sequence steps and groups.  
+##  <a name="BKMK_StandAloneMediaTSExample"></a> 독립 실행형 미디어에 대한 작업 순서 예  
+ 독립 실행형 미디어를 사용 하 여 운영 체제를 배포 하는 작업 순서를 만들면 다음 표에서 가이드로 사용 합니다. 이 표는 작업 순서 단계에 대한 일반적인 순서 및 해당 작업 순서 단계를 논리 그룹으로 구성하는 방법을 결정하는 데 도움이 됩니다. 작업 순서를 만들면이 샘플에서 다를 수 및 더 많거나 적은 작업 순서 단계 및 그룹을 포함할 수 있습니다.  
 
 > [!NOTE]  
->  You must always use the Task Sequence Media Wizard to create stand-alone media.  
+>  항상 독립 실행형 미디어를 만드는 작업 순서 미디어 마법사를 사용 해야 합니다.  
 
-|Task Sequence Group or Step|Description|  
+|작업 순서 그룹 또는 단계|설명|  
 |---------------------------------|-----------------|  
-|Capture File and Settings - **(New Task Sequence Group)**|Create a task sequence group. A task sequence group keeps similar task sequence steps together for better organization and error control.|  
-|Capture Windows Settings|Use this task sequence step to identify the Microsoft Windows settings that are captured from the existing operating system on the destination computer prior to reimaging. You can capture the computer name, user and organizational information, and the time zone settings.|  
-|Capture Network Settings|Use this task sequence step to capture network settings from the computer that receives the task sequence. You can capture the domain or workgroup membership of the computer and the network adapter setting information.|  
-|Capture User Files and Settings - **(New Task Sequence Sub-Group)**|Create a task sequence group within a task sequence group. This sub-group contains the steps needed to capture user state data from the existing operating system on the destination computer prior to reimaging. Similar to the initial group that you added, this sub-group keeps similar task sequence steps together for better organization and error control.|  
-|Set Local State Location|Use this task sequence step to specify a local location using the protected path task sequence variable. The user state is stored on a protected directory on the hard drive.|  
-|Capture User State|Use this task sequence step to capture the user files and settings you want to migrate to the new operating system.|  
-|Install Operating System - **(New Task Sequence Group)**|Create another task sequence sub-group. This sub-group contains the steps needed to install the operating system.|  
-|Reboot to Windows PE or hard disk|Use this task sequence step to specify restart options for the computer that receives this task sequence. This step will display a message to the user indicating that the computer will be restarted so that the installation can continue.<br /><br /> This step uses the read-only **_SMSTSInWinPE** task sequence variable. If the associated value equals **false** the task sequence step will continue.|  
-|Apply Operating System|Use this task sequence step to install the operating system image onto the destination computer. This step deletes all files on that volume (with the exception of Configuration Manager-specific control files) and then applies all volume images contained in the WIM file to the corresponding sequential disk volume. You can also specify a **sysprep** answer file to configure which disk partition to use for the installation.|  
-|Apply Windows Settings|Use this task sequence step to configure the Windows settings configuration information for the destination computer. The windows settings you can apply are user and organizational information, product or license key information, time zone, and the local administrator password.|  
-|Apply Network Settings|Use this task sequence step to specify the network or workgroup configuration information for the destination computer. You can also specify if the computer uses a DHCP server or you can statically assign the IP address information.|  
-|Apply Driver Package|Use this task sequence step to make all device drivers in a driver package available for use by Windows setup. All necessary device drivers must be contained on the stand-alone media.|  
-|Setup Operating System - **(New Task Sequence Group)**|Create another task sequence sub-group. This sub-group contains the steps needed to install the Configuration Manager client.|  
-|Setup Windows and ConfigMgr|Use this task sequence step to install the Configuration Manager client software. Configuration Manager installs and registers the Configuration Manager client GUID. You can assign the necessary installation parameters in the **Installation properties** window.|  
-|Restore User Files and Settings - **(New Task Sequence Group)**|Create another task sequence sub-group. This sub-group contains the steps needed to restore the user state.|  
-|Restore User State|Use this task sequence step to initiate the User State Migration Tool (USMT) to restore the user state and settings that were captured from the Capture User State Action to the destination computer.|  
-
-
-
-<!--HONumber=Dec16_HO4-->
-
+|파일 및 설정-캡처 **(새 작업 순서 그룹)**|작업 순서 그룹을 만듭니다. 작업 순서 그룹 더 나은 조직 및 오류 제어에 대 한 유사한 작업 순서 단계를 유지합니다.|  
+|Windows 설정 캡처|이 작업 순서 단계를 사용 하 여 이미지로 다시 설치 하기 전에 대상 컴퓨터에 기존 운영 체제에서 캡처되는 Microsoft Windows 설정을 식별 합니다. 컴퓨터 이름, 사용자 및 조직 정보 및 표준 시간대 설정을 캡처할 수 있습니다.|  
+|네트워크 설정 캡처|이 작업 순서 단계를 사용 하 여 작업 순서를 수신 하는 컴퓨터에서 네트워크 설정을 캡처합니다. 컴퓨터와 정보를 설정 하는 네트워크 어댑터의 도메인 또는 작업 그룹 구성원 자격을 캡처할 수 있습니다.|  
+|사용자 파일 및 설정-캡처 **(새 작업 순서 하위 그룹)**|작업 순서 그룹 내에서 작업 순서 그룹을 만듭니다. 이 하위 그룹의 이미지로 다시 설치 하기 전에 대상 컴퓨터에 기존 운영 체제에서 사용자 상태 데이터를 캡처 하는데 필요한 단계를 포함 합니다. 초기 그룹, 오류를 추가 하는이 하위 그룹 유지 비슷합니다 유사한 작업 순서 단계 함께 더 잘 조직 및 오류에 대 한 제어합니다.|  
+|로컬 상태 설정 위치|이 작업 순서 단계를 사용 하 여 보호 된 경로 작업 순서 변수를 사용 하 여 로컬 위치를 지정 합니다. 사용자 상태는 하드 드라이브에 있는 보호 된 디렉터리에 저장 됩니다.|  
+|사용자 상태 캡처|이 작업 순서 단계를 사용 하 여 사용자 파일 및 새 운영 체제로 마이그레이션할 설정을 캡처합니다.|  
+|운영 체제-설치 **(새 작업 순서 그룹)**|다른 작업 시퀀스 하위 그룹을 만듭니다. 이 하위 그룹 운영 체제를 설치 하는데 필요한 단계를 포함 합니다.|  
+|Windows PE 또는 하드 디스크를 다시 부팅|이 작업 순서 단계를 사용 하 여이 작업 순서를 수신 하는 컴퓨터에 대 한 다시 시작 옵션을 지정 합니다. 이 단계는 컴퓨터는 설치를 계속할 수 있도록 다시 시작 될 사용자 나타내는 메시지가 표시 됩니다.<br /><br /> 이 단계에서는 읽기 전용 **_SMSTSInWinPE** 작업 순서 변수입니다. 연결 된 값이 같은 경우 **false** 작업 순서 단계를 계속 합니다.|  
+|운영 체제 적용|이 작업 순서 단계를 사용 하 여 대상 컴퓨터에 운영 체제 이미지를 설치 합니다. 이 단계에서는 Configuration Manager 관련 제어 파일을 제외하고 해당 볼륨에 있는 모든 파일을 삭제한 후 WIM 파일에 포함된 모든 볼륨 이미지를 해당하는 순차적 디스크 볼륨에 적용합니다. 지정할 수 있습니다는 **sysprep** 응답 파일을 설치에 사용할 디스크 파티션을 구성 합니다.|  
+|Windows 설정 적용|이 작업 순서 단계를 사용 하 여 대상 컴퓨터에 대 한 Windows 설정을 구성 정보를 구성 합니다. 적용할 수 있습니다 windows 설정은 사용자 및 조직 정보, 제품 또는 라이선스 키 정보, 표준 시간대 및 로컬 관리자 암호입니다.|  
+|네트워크 설정 적용|이 작업 순서 단계를 사용 하 여 대상 컴퓨터에 대 한 네트워크 또는 작업 그룹 구성 정보를 지정 합니다. 또한 경우 DHCP 서버를 사용 하는 컴퓨터 또는 IP 주소 정보를 정적으로 할당할 수를 지정할 수 있습니다.|  
+|드라이버 패키지 적용|모든 장치 드라이버는 드라이버 패키지에 사용할 수 있도록 사용 하기 위해 Windows 설치 프로그램에서이 작업 순서 단계를 사용 합니다. 모든 필요한 장치 드라이버는 독립 실행형 미디어에 포함 되어야 합니다.|  
+|운영 체제-설치 **(새 작업 순서 그룹)**|다른 작업 시퀀스 하위 그룹을 만듭니다. 이 하위 그룹에는 Configuration Manager 클라이언트를 설치하는 데 필요한 단계가 포함됩니다.|  
+|Windows 및 ConfigMgr 설치|이 작업 순서 단계를 사용하여 Configuration Manager 클라이언트 소프트웨어를 설치할 수 있습니다. Configuration Manager가 설치되고 Configuration Manager 클라이언트 GUID를 등록합니다. **설치 속성** 창에서 필수 설치 매개 변수를 할당할 수 있습니다.|  
+|사용자 파일 및 설정-복원 **(새 작업 순서 그룹)**|다른 작업 시퀀스 하위 그룹을 만듭니다. 이 하위 그룹 사용자 상태를 복원 하는데 필요한 단계를 포함 합니다.|  
+|사용자 상태 복원|USMT(사용자 환경 마이그레이션 도구)를 시작하여 사용자 환경 캡처 작업에서 캡처된 사용자 환경 및 설정을 대상 컴퓨터로 복원할 때 사용하는 작업 순서 단계입니다.|  
 

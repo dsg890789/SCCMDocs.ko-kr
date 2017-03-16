@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager 및 Microsoft Intune에서 Windows 하이브리드 장치 관리 설정 | Microsoft 문서"
 description: "System Center Configuration Manager 및 Microsoft Intune에서 Windows 장치 관리 설정"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 76cb0c41865859fd410a187435d73c6a23b0c57e
-ms.openlocfilehash: 7b53b094eeb1d59d052c63831eeab0e10edb5913
+ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
+ms.openlocfilehash: a4fc4a16c78b0eaa0dcefdd596b049eacf1d255b
+ms.lasthandoff: 03/06/2017
 
 
 ---
@@ -31,7 +32,7 @@ Intune과 Configuration Manager를 사용하여 데스크톱, 노트북 및 Wind
 Windows 등록 옵션은 다음과 같습니다.
 
 - [Azure AD를 사용한 자동 등록](#azure-active-directory-enrollment)
-- [Windows PC](#set-up-windows-device-enrollment)
+- [Windows PC](#configure-windows-pc-enrollment)
 - [Windows 10 Mobile 및 Windows Phone 장치](#enable-windows-phone-devices)
 
 ## <a name="azure-active-directory-enrollment"></a>Azure Active Directory 등록
@@ -118,8 +119,6 @@ Windows 등록 옵션은 다음과 같습니다.
 
   설정한 후에는 사용자에게 장치를 등록하는 방법을 알려 주어야 합니다. [장치 등록에 대해 최종 사용자에게 알릴 내용](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)을 참조하세요. 이 정보는 Microsoft Intune 및 Configuration Manager에서 관리되는 모바일 장치에 적용됩니다.  
 
-
-
-<!--HONumber=Feb17_HO2-->
-
+  > [!div class="button"]
+  [< 이전 단계](create-service-connection-point.md)  [다음 단계 >](set-up-additional-management.md)
 

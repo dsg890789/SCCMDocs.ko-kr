@@ -2,7 +2,7 @@
 title: "유지 관리 작업에 대한 참조 | Microsoft 문서"
 description: "각 System Center Configuration Manager 사이트 유지 관리 작업에 대한 세부 정보와 이러한 작업이 기본적으로 사용되는지 여부를 알아봅니다."
 ms.custom: na
-ms.date: 2/7/2017
+ms.date: 3/8/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6e19d1239cb61b570203fdd13563d5f8c5afc6ad
-ms.openlocfilehash: d2e53e7c0cd0dd1a97d3620a14a15369e1d7e0ec
+ms.sourcegitcommit: dcbcd57b95f304f007e92ebe2b9aeefb4b579662
+ms.openlocfilehash: 92d3c215569916a5557309d7f488aa88f387da92
+ms.lasthandoff: 03/09/2017
 
 
 ---
@@ -52,6 +53,11 @@ ms.openlocfilehash: d2e53e7c0cd0dd1a97d3620a14a15369e1d7e0ec
 -   **기본 사이트**: 사용    
 -   보조 사이트: 사용할 수 없음  
 
+**오래된 클라이언트 다운로드 기록 삭제**: 이 작업을 사용하여 클라이언트에서 사용한 다운로드 원본에 대한 기록 데이터를 삭제합니다. 다운로드 원본 정보는 [클라이언트 데이터 원본 대시보드](/sccm/core/servers/deploy/configure/monitor-content-you-have-distributed#client-data-sources-dashboard)를 채우는 데 사용됩니다.  
+-  중앙 관리 사이트 - 사용할 수 없음
+-     **기본 사이트** - 사용
+-  보조 사이트 - 사용할 수 없음
+
 **오래된 클라이언트 작업 삭제**: 이 작업을 사용하면 클라이언트 작업에 대한 오래된 데이터를 사이트 데이터베이스에서 삭제할 수 있습니다. 예를 들어 오래되거나 만료된 클라이언트 알림(예: 컴퓨터 또는 사용자 정책에 대한 다운로드 요청) 데이터 및 Endpoint Protection에 대한 데이터(예: 검사를 실행하거나 업데이트된 정의를 다운로드하기 위한 클라이언트 관리자의 요청)가 여기에 포함됩니다.
 
 -   **중앙 관리 사이트**: 사용    
@@ -63,6 +69,12 @@ ms.openlocfilehash: d2e53e7c0cd0dd1a97d3620a14a15369e1d7e0ec
 -   **중앙 관리 사이트**: 사용   
 -   **기본 사이트**: 사용    
 -   보조 사이트: 사용할 수 없음  
+
+**오래된 클라우드 관리 게이트웨이 트래픽 데이터 삭제**: 이 작업을 사용하여 [클라우드 관리 게이트웨이](/sccm/core/clients/manage/plan-cloud-management-gateway)를 통과하는 트래픽에 대한 오래된 데이터를 사이트 데이터베이스에서 모두 삭제합니다. 예를 들어 요청 수, 총 요청 바이트, 총 응답 바이트, 실패한 요청 수, 최대 동시 요청 수 등에 대한 데이터를 삭제할 수 있습니다.  
+- **중앙 관리 사이트 서버** - 사용
+- **기본 사이트** - 사용
+- 보조 사이트 - 사용할 수 없음
+
 
 **오래된 수집 파일 삭제**: 이 작업을 사용하면 수집 파일에 대해 오래된 정보를 데이터베이스에서 삭제할 수 있습니다. 또한 이 작업은 선택한 사이트의 사이트 서버 폴더 구조에서 수집 파일을 삭제합니다. 기본적으로 수집된 파일의 복사본이 최신순으로&5;개까지 사이트 서버의 **Inboxes\sinv.box\FileCol** 디렉터리에 저장됩니다. 자세한 내용은 [System Center Configuration Manager의 소프트웨어 인벤토리 소개](/sccm/core/clients/manage/inventory/introduction-to-software-inventory)를 참조하세요.  
 
@@ -227,6 +239,11 @@ ms.openlocfilehash: d2e53e7c0cd0dd1a97d3620a14a15369e1d7e0ec
 -   **기본 사이트**: 사용    
 -   보조 사이트: 사용할 수 없음  
 
+**분리된 클라이언트 배포 상태 레코드 삭제**: 이 작업을 사용하여 클라이언트 배포 상태 정보가 포함된 테이블을 주기적으로 제거합니다. 이 작업은 사용되지 않거나 폐기된 장치와 연결된 레코드를 정리합니다.  
+-   **중앙 관리 사이트**: 사용    
+-   **기본 사이트**: 사용    
+-   보조 사이트: 사용할 수 없음 
+
 **사용되지 않은 응용 프로그램 수정 버전 삭제**: 이 작업을 사용하면 더 이상 참조되지 않는 응용 프로그램 수정 버전을 삭제할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 응용 프로그램을 수정하고 대체하는 방법](../../../apps/deploy-use/revise-and-supersede-applications.md)을 참조하세요.  
 
 -   중앙 관리 사이트: 사용할 수 없음    
@@ -288,9 +305,4 @@ ms.openlocfilehash: d2e53e7c0cd0dd1a97d3620a14a15369e1d7e0ec
 -   중앙 관리 사이트: 사용할 수 없음    
 -   **기본 사이트**: 사용    
 -   보조 사이트: 사용할 수 없음  
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

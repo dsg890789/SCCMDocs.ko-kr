@@ -17,8 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 2dd898c9b022c6f0bc243623835af0eece94128f
-ms.openlocfilehash: 95d1671501f672e1d5abe3f0fbbd7d2dfb21e0a3
+ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
+ms.openlocfilehash: 895b8ae58a9fda3fd22f58d77129053df09c4ccb
+ms.lasthandoff: 03/04/2017
 
 ---
 # <a name="peer-cache-for-configuration-manager-clients"></a>Configuration Manager 클라이언트용 피어 캐시
@@ -28,7 +29,7 @@ ms.openlocfilehash: 95d1671501f672e1d5abe3f0fbbd7d2dfb21e0a3
 System Center Configuration Manager 버전 1610부터는 **피어 캐시**를 사용하여 원격 위치의 클라이언트에 대한 콘텐츠 배포를 관리할 수 있습니다. 피어 캐시는 클라이언트가 로컬 캐시의 콘텐츠를 다른 클라이언트와 직접 공유할 수 있도록 하는 기본 제공 Configuration Manager 솔루션입니다.   
 
 > [!TIP]  
-> 버전 1610의 경우 피어 캐시 및 클라이언트 데이터 원본 대시보드는 시험판 기능입니다. 이러한 기능을 사용하도록 설정하려면 [업데이트에서 시험판 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_prerelease)을 참조하세요.
+> 버전 1610에서 도입된 피어 캐시 및 클라이언트 데이터 원본 대시보드는 시험판 기능입니다. 이러한 기능을 사용하도록 설정하려면 [업데이트에서 시험판 기능 사용](/sccm/core/servers/manage/pre-release-features)을 참조하세요.
 
  -     클라이언트 설정을 사용하여 클라이언트가 피어 캐시를 사용하도록 설정합니다.
  -     콘텐츠를 공유하려면 두 피어 캐시 클라이언트가 모두 콘텐츠를 검색하는 클라이언트의 현재 경계 그룹 구성원이어야 합니다. 클라이언트가 대체 기능을 사용해 인접 경계 그룹의 콘텐츠를 검색할 때 인접 경계 그룹의 피어 캐시 클라이언트는 사용 가능한 콘텐츠 원본 위치 풀에 포함되지 않습니다. 현재 및 인접 경계 그룹에 대한 자세한 내용은 [경계 그룹](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups##a-namebkmkboundarygroupsa-boundary-groups)을 참조하세요.
@@ -66,9 +67,4 @@ System Center Configuration Manager 버전 1610부터는 **피어 캐시**를 �
   -  **피어에서 콘텐츠를 다운로드하기 위한 포트(HTTP/HTTPS)**
 
 피어 캐시를 사용하도록 설정한 각 컴퓨터에서 Windows 방화벽을 사용하고 있는 경우 Configuration Manager는 여기서 구성하는 포트 사용을 허용하도록 방화벽을 구성합니다.
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

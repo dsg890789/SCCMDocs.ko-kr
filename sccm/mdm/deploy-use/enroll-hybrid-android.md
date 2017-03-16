@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager 및 Microsoft Intune으로 Android 하이브리드 장치 관리 설정 | Microsoft 문서"
 description: "Configuration Manager 및 Intune으로 Android 모바일 장치 관리 준비"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: ab892174643e7565ad9a74abc4f83f2f152669bd
+ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
+ms.openlocfilehash: 1eca422bc62f669412732ec70395d7bbf3ad9c7a
+ms.lasthandoff: 03/06/2017
 
 
 ---
@@ -43,8 +44,6 @@ System Center Configuration Manager의 경우 사용자가 Android(Samsung KNOX 
 
  설정한 후에는 사용자에게 장치를 등록하는 방법을 알려 주어야 합니다. [장치 등록에 대해 최종 사용자에게 알릴 내용](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)을 참조하세요. 이 정보는 Microsoft Intune 및 Configuration Manager에서 관리되는 모바일 장치에 적용됩니다.
 
-
-
-<!--HONumber=Dec16_HO3-->
-
+ > [!div class="button"]
+ [< 이전 단계](create-service-connection-point.md)  [다음 단계 >](set-up-additional-management.md)
 

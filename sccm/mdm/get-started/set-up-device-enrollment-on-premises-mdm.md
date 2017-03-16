@@ -1,8 +1,8 @@
 ---
-title: "장치 등록 설정 | Microsoft 문서 | 온-프레미스 MDM"
+title: "장치 등록 설정 | Microsoft Docs"
 description: "System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 위해 장치를 등록할 수 있는 권한을 사용자에게 부여합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
-ms.openlocfilehash: ee2bfd1b0bdd51322819cfef9fb6185642bd8796
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
+ms.openlocfilehash: 1b32d755e23e1b1db2162bb117f45791a95b139b
+ms.lasthandoff: 03/06/2017
 
 
 ---

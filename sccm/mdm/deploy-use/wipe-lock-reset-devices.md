@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager를 사용하여 원격 초기화, 잠금 또는 암호 재설정으로 데이터 보호 | Microsoft 문서"
 description: "System Center Configuration Manager를 사용하여 전체 초기화, 선택적 초기화, 원격 잠금 또는 암호 다시 설정으로 장치 데이터를 보호합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 828e2ac9a3f9bcea1571d24145a1021fdf1091f3
-ms.openlocfilehash: d3dd55b496a124c478f1cf2880a096e2fbdd9145
+ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
+ms.openlocfilehash: 3aa4c2ad3568cc6ced70a65141a2c103af8b740f
+ms.lasthandoff: 03/06/2017
 
 ---
 # <a name="protect-data-with-remote-wipe-lock-or-passcode-reset-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 원격 초기화, 잠금 또는 암호 재설정으로 데이터 보호
@@ -183,7 +184,7 @@ Configuration Manager는 선택적 초기화, 전체 초기화, 원격 잠금 �
 
 -   iOS의 경우 사용자가 iCloud를 사용하여 콘텐츠를 복원할 수 없도록 "iCloud에 백업 허용" 설정을 "허용 안 함"으로 구성합니다.  
 
--   계정이 비활성화된 경우에는 1년이 지난 후 Intune에서 계정의 사용이 중지되고 선택 초기화가 수행됩니다.  
+-   계정이 비활성화된 경우에는&1;년이 지난 후 Intune에서 계정의 사용이 중지되고 선택 초기화가 수행됩니다.  
 
 ##  <a name="passcode-reset"></a>암호 재설정  
  사용자가 암호를 잊은 경우 장치에서 암호를 제거하거나 장치에 대한 새로운 임시 암호를 적용하여 사용자를 도울 수 있습니다. 아래 표에는 여러 모바일 플랫폼에서 암호 재설정이 작동하는 방법이 정리되어 있습니다.  
@@ -241,12 +242,6 @@ Configuration Manager는 선택적 초기화, 전체 초기화, 원격 잠금 �
 
 3.  **장치 그룹** 에서 **원격 장치 작업**을 클릭하고 **원격 잠금 상태 표시**를 선택합니다.  
 
-## <a name="see-also"></a>참고 항목  
+### <a name="see-also"></a>참고 항목  
  [장치 데이터 관리를 위한 Windows 선택적 초기화](http://technet.microsoft.com/library/dn486874.aspx)   
- [System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 MDM(모바일 장치 관리)](../../mdm/understand/hybrid-mobile-device-management.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
