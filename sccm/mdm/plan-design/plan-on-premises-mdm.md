@@ -7,7 +7,7 @@ ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
 ms.technology:
-- configmgr-client
+- configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 02979fb8-ea7e-4ec6-b7e0-ecbfda73e52d
@@ -29,7 +29,7 @@ ms.lasthandoff: 01/21/2017
 
 온\-프레미스 모바일 장치 관리를 처리하기 위해 Configuration Manager 인프라를 준비하기 전에 다음과 같은 요구 사항을 고려하세요.
 
-##  <a name="a-namebkmkdevicesa-supported-devices"></a><a name="bkmk_devices"></a> 지원되는 장치  
+##  <a name="bkmk_devices"></a> 지원되는 장치  
  온-프레미스 모바일 장치 관리에서 장치 운영 체제에 기본 제공된 관리 기능을 사용하여 모바일 장치를 관리할 수 있습니다.  관리 기능은 OMA(Open Mobile Alliance) DM(장치 관리) 표준을 기준으로 하며 많은 장치 플랫폼은 이 표준을 사용하여 장치를 관리할 수 있도록 합니다.  Configuration Manager 클라이언트에서 관리하도록 요구하는 다른 장치와 구분하기 위해 이러한 장치를 **최신 장치**(설명서 및 Configuration Manager 콘솔 사용자 인터페이스에서)로 지칭합니다.  
 
  > [!NOTE]  
@@ -41,7 +41,7 @@ ms.lasthandoff: 01/21/2017
 > -   Windows 10 Mobile  
 > -   Windows 10 Mobile Enterprise   
 
-##  <a name="a-namebkmkintunea-use-of-the--microsoft-intune-subscription"></a><a name="bkmk_intune"></a> Microsoft Intune 구독의 용도  
+##  <a name="bkmk_intune"></a> Microsoft Intune 구독의 용도  
  온\-프레미스 모바일 장치 관리를 사용하기 시작하려면 Microsoft Intune을 구독해야 합니다. 구독은 장치 라이선스를 추적하는 데만 필요하며 장치에 대한 관리 정보를 관리하거나 저장하는 데는 사용되지 않습니다. 모든 관리는 온-프레미스 Configuration Manager 인프라를 사용하여 조직의 엔터프라이즈에서 처리됩니다.  
 
  > [!NOTE]  
@@ -54,7 +54,7 @@ ms.lasthandoff: 01/21/2017
 
  Intune 구독 설정 방법에 대한 내용은 [System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 위해 Microsoft Intune 구독 설정](../../mdm/get-started/set-up-intune-subscription-on-premises-mdm.md)을 참조하세요.  
 
-##  <a name="a-namebkmkrolesa-required-site-system-roles"></a><a name="bkmk_roles"></a> 필수 사이트 시스템 역할  
+##  <a name="bkmk_roles"></a> 필수 사이트 시스템 역할  
  온\-프레미스 모바일 장치 관리에는 다음 각 사이트 시스템 역할 중 하나 이상이 필요합니다.  
 
 -   **등록 프록시 지점** : 등록 요청 지원  
@@ -73,7 +73,7 @@ ms.lasthandoff: 01/21/2017
 
  필요한 사이트 시스템 역할을 추가하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 위한 사이트 시스템 역할 설치](../../mdm/get-started/install-site-system-roles-for-on-premises-mdm.md)를 참조하세요.  
 
-##  <a name="a-namebkmktrustedcomsa-required-trusted-communications"></a><a name="bkmk_trustedComs"></a> 신뢰할 수 있는 필수 통신  
+##  <a name="bkmk_trustedComs"></a> 신뢰할 수 있는 필수 통신  
  온\-프레미스 모바일 장치 관리에서는 HTTPS 통신을 위해 사이트 시스템 역할이 사용되도록 설정되어야 합니다. 사용자의 필요에 따라 엔터프라이즈 CA(인증 기관)를 사용하여 서버와 장치 간에 신뢰할 수 있는 연결을 설정하거나, 공개적으로 사용 가능한 CA를 사용하여 신뢰할 수 있는 기관이 될 수 있습니다.  어떤 방법을 사용하든 필요한 사이트 시스템 역할을 호스트하는 사이트 시스템 서버에서 IIS를 사용해서 웹 서버 인증서를 구성해야 하며, 해당 서버에 연결해야 하는 장치에 설치된 CA의 루트 인증서가 필요합니다.  
 
  엔터프라이즈 CA를 사용하여 신뢰할 수 있는 통신을 설정하는 경우 다음 작업을 수행해야 합니다.  
@@ -106,7 +106,7 @@ ms.lasthandoff: 01/21/2017
 
  자세한 내용은 [System Center Configuration Manager에서 온-프레미스 모바일 장치 관리를 위해 신뢰할 수 있는 통신에 대한 인증서 설정](../../mdm/get-started/set-up-certificates-on-premises-mdm.md)을 참조하세요.  
 
-##  <a name="a-namebkmkenrollmenta-enrollment-considerations"></a><a name="bkmk_enrollment"></a> 등록 시 고려 사항  
+##  <a name="bkmk_enrollment"></a> 등록 시 고려 사항  
  온\-프레미스 모바일 장치 관리에 대한 장치 등록을 사용하도록 설정하려면 사용자는 등록할 수 있는 권한이 있어야 하고 해당 장치는 필요한 사이트 시스템 역할을 호스트하는 사이트 시스템 서버와 신뢰할 수 있는 통신을 수행할 수 있어야 합니다.  
 
  사용자에게 등록 권한을 부여하는 작업은 Configuration Manager 클라이언트 설정에서 등록 프로필을 설정하여 수행할 수 있습니다. 기본 클라이언트 설정을 사용하여 검색된 모든 사용자에게 등록 프로필을 푸시하거나 사용자 지정 클라이언트 설정에서 등록 프로필을 설정하고 해당 설정을 하나 이상의 사용자 컬렉션에 푸시할 수 있습니다.  
