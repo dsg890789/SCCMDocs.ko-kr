@@ -1,8 +1,8 @@
 ---
-title: "준비 단계 | Microsoft 문서 | 온-프레미스 MDM"
+title: "준비 단계 | Microsoft Docs"
 description: "System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 사용하여 장치 관리를 준비합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
-ms.openlocfilehash: a5c9fa5994f9b7bd13fe53edb6998609852b98ca
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
+ms.openlocfilehash: 2ba11c8e2d8214ce9aca7c887fcb539b38da4e84
+ms.lasthandoff: 03/06/2017
 
 
 ---

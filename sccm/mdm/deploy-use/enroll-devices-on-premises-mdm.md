@@ -1,9 +1,9 @@
 ---
 
-title: "장치 등록 | Microsoft 문서 | MDM System Center"
+title: "장치 등록 | Microsoft Docs"
 description: "System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 위해 장치를 등록하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,9 +17,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
-ms.openlocfilehash: 9ecfef871b9082aad4c8f0cf933f963efd57c292
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
+ms.openlocfilehash: 8f9667388c3557a84fc84c742e25f0c3bd2e2a5f
+ms.lasthandoff: 03/06/2017
 
 
 ---
