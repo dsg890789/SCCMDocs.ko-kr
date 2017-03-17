@@ -46,7 +46,7 @@ System Center Configuration Manager 기능에 대한 자세한 내용은 Microso
 SA(Software Assurance) L&SA(라이선스 및 Software Assurance)는 System Center Configuration Manager를 사용하는 권한을 부여하는 라이선스 옵션입니다. SA는 이전 계약을 통해 SA 계약 범위를 갱신 하는 고객을 위한 옵션입니다. L&SA는 신규 라이선스 및 SA 계약 범위를 구매하는 고객을 위한 옵션입니다.
   - SA(Software Assurance): System Center Configuration Manager의 현재 분기 옵션을 설치하고 사용하려면 고객에게 System Center Configuration Manager 라이선스에 활성 SA가 있거나 이와 동등한 구독 권한이 있어야 합니다.    
 
-        -    SA가 일부 Microsoft 제품에 대한 선택 사항이지만, System Center Configuration Manager 현재 분기를 사용하는 권한을 얻을 수 있는 유일한 방법은 SA*(또는 동등한 구독 권한)*를 사용하는 것입니다.  자세한 내용은 https://www.microsoft.com/en-us/licensing/licensing-programs/FAQ-Software-Assurance.aspx를 참조하세요.
+        -    SA가 일부 Microsoft 제품에 대한 선택 사항이지만, System Center Configuration Manager 현재 분기를 사용하는 권한을 얻을 수 있는 유일한 방법은 SA*(또는 동등한 구독 권한)*를 사용하는 것입니다.  자세한 내용은 https://www.microsoft.com/en-us/licensing/licensing-programs/FAQ-Software-Assurance.aspx 를참조하세요.
 
       - Microsoft L&SA(라이선스 및 Software Assurance). System Center Configuration Manager에 대한 새 라이선스를 구매하는 고객은 L&SA(라이선스 및 Software Assurance)를 획득해야 합니다.   
 
@@ -54,7 +54,7 @@ SA(Software Assurance) L&SA(라이선스 및 Software Assurance)는 System Cente
 
        - 그러나 프로그램 SA가 만료되고 System Center Configuration Manager에 대한 라이선스가 여전히 있는 경우 더 이상 현재 분기를 사용할 수 없습니다. 이 FAQ의 6번 ***내 SA가 만료되었지만 L&SA가 있으면 어떻게 되나요?***를 참조하세요.
 
-       Https://www.microsoft.com/licensing/licensing-programs 및 http://www.microsoftvolumelicensing.com/ProductResults.aspx?doc=Product%20Terms,OST&fid=64에서 라이선스 제공 사항에 대한 자세한 내용을 알아보세요.
+       Https://www.microsoft.com/licensing/licensing-programs 및 http://www.microsoftvolumelicensing.com/ProductResults.aspx?doc=Product%20Terms,OST&fid=64 에서라이선스 제공 사항에 대한 자세한 내용을 알아보세요.
 
 4.    **"동등한 구독"이라는 용어를 봤는데 어떤 프로그램을 의미하는 건가요?**   
        동등한 구독은 [EMS(Enterprise Mobility + Security)](http://www.microsoftvolumelicensing.com/ProductResults.aspx?doc=Product%20Terms,OST&fid=51) 또는 [SPE(Secure Productive Enterprise)](https://www.microsoft.com/secure-productive-enterprise/default.aspx)와 같은 프로그램을 의미합니다. 다른 프로그램도 있긴 하지만 이런 프로그램이 가장 일반적입니다. Microsoft 볼륨 라이선스 제품 용어에서 이러한 용어를 관리 라이선스 동등 라이선스라고 합니다.
