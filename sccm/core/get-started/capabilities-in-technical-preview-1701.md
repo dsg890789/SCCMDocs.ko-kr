@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 34dded3a8caf8c2be0313bc012cbd8ad2a909fad
 ms.openlocfilehash: 20bcc1cd909eec13eaca0a6de66806bd496f729d
+ms.lasthandoff: 01/26/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1701-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1701의 기능
@@ -98,7 +99,7 @@ ms.openlocfilehash: 20bcc1cd909eec13eaca0a6de66806bd496f729d
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 
-- **관리 지점에서 온-프레미스 장치 상태 증명 사용**<br>  Configuration Manager 콘솔에서 관리 지점으로 이동하고 **관리 지점 구성 요소 속성**을 연 다음 **고급 옵션** 탭을 클릭합니다. **추가**를 클릭하고 **온-프레미스 장치 상태 증명 서비스 URL**에 대해 온-프레미스 URL(예: https://10.10.10.10)을 지정합니다.
+- **관리 지점에서 온-프레미스 장치 상태 증명 사용**<br>  Configuration Manager 콘솔에서 관리 지점으로 이동하고 **관리 지점 구성 요소 속성**을 연 다음 **고급 옵션** 탭을 클릭합니다. **추가**를 클릭하고 **온-프레미스 장치 상태 증명 서비스 URL**에 대해 온-프레미스 URL (예: https://10.10.10.10) 을 지정합니다.
 - **클라이언트 에이전트에 대해 온-프레미스 관리 지점 상태 증명 보고 사용**<br>Configuration Manager 콘솔에서 **관리** > **클라이언트 설정**을 선택하고 두 번 클릭하거나 새 **사용자 지정 장치 설정**을 만듭니다. **컴퓨터 에이전트**를 선택하고 **온-프레미스 상태 증명 서비스 사용**을 **예**로 설정합니다. **장치 상태 증명 서비스와 통신 사용**이 **예**로 설정되고 **온-프레미스 상태 증명 사용**이 **아니요**로 설정된 경우 관리 지점에서 클라우드 기반 장치 상태 증명 서비스를 사용합니다.
 
 ## <a name="use-the-oms-connector-for-microsoft-azure-government-cloud"></a>Microsoft Azure Government 클라우드용 OMS 커넥터 사용
@@ -157,9 +158,4 @@ ms.openlocfilehash: 20bcc1cd909eec13eaca0a6de66806bd496f729d
 이러한 변경으로 인해 하이브리드 배포에서 새 Configuration Manager 릴리스나 확장 없이 새 Android 및 iOS 버전을 더 빠르게 지원할 수 있습니다. Intune 독립 실행형에서 새 버전이 지원되게 되면 사용자는 모바일 장치를 해당 버전으로 업그레이드할 수 있습니다.
 
 이전 버전의 Configuration Manager에서 업그레이드할 때 문제를 방지하려면 이러한 항목의 속성 페이지에서 모바일 운영 체제 버전을 계속 사용할 수 있습니다. 특정 버전을 대상으로 지정해야 하는 경우 새 항목을 만든 다음 새로 만든 항목의 속성 페이지에서 대상 버전을 지정할 수 있습니다.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
