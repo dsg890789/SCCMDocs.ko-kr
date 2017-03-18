@@ -36,6 +36,7 @@ translation.priority.ht:
 translationtype: Human Translation
 ms.sourcegitcommit: 34a4c3d0d641c4ab03e068c6dad78300057861bd
 ms.openlocfilehash: 4c7717e4f5a20c5c8d20fef21d0c67172b3198bd
+ms.lasthandoff: 03/16/2017
 
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1511-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1511에 대한 진단 사용 현황 데이터 수집의 수준
@@ -47,13 +48,13 @@ System Center Configuration Manager 버전 1511에서는 **기본**, **고급**,
 > [!IMPORTANT]  
 >  Configuration Manager에서는 기본 또는 고급 수준에서 사이트 코드 또는 사이트 이름, IP 주소, 사용자 이름, 컴퓨터 이름, 실제 주소 또는 메일 주소를 수집하지 않습니다. 전체 수준에서 이 정보가 수집되는 경우가 있어도 이는 특별한 목적이 있는 것은 아닙니다(잠재적으로 로그 파일 또는 메모리 스냅숏과 같은 고급 진단 정보에 포함됨). Microsoft에서는 이러한 정보를 사용자 식별, 연락 또는 광고 목적으로 사용하지 않습니다.  
 
-##  <a name="a-namebkmkchangea-how-to-change-the-level"></a><a name="bkmk_change"></a> 수준을 변경하는 방법  
+##  <a name="bkmk_change"></a> 수준을 변경하는 방법  
  **사이트** 개체 클래스에 대한 **수정** 권한이 포함된 역할 기반 관리 범위를 가진 관리자는 Configuration Manager 콘솔의 진단 및 사용 현황 데이터 설정에서 수집된 데이터의 수준을 변경할 수 있습니다.
 
  이렇게 하려면 콘솔에서 Backstage 탭(드롭다운 화살표가 있는 왼쪽 위 탭)으로 이동하고 **사용 현황 데이터**를 선택한 다음 사용할 데이터 수준을 선택합니다.  
 
 
-##  <a name="a-namebkmklevel1a-level-1---basic"></a><a name="bkmk_level1"></a> 수준 1 - 기본  
+##  <a name="bkmk_level1"></a> 수준 1 - 기본  
  기본 수준에는 계층 구조에 대한 데이터, 설치 환경이나 업그레이드 환경을 개선하는 데 필요한 데이터 및 계층 구조에 적용할 수 있는 Configuration Manager 업데이트를 확인할 수 있는 데이터가 포함됩니다.  
 
  System Center Configuration Manager 버전 1511부터 이 수준에는 다음이 포함됩니다.  
@@ -94,7 +95,7 @@ System Center Configuration Manager 버전 1511에서는 **기본**, **고급**,
 
 -   원격 분석 통계(실행, 런타임, 오류 시)  
 
-##  <a name="a-namebkmklevel2a-level-2---enhanced"></a><a name="bkmk_level2"></a> 수준 2 - 고급  
+##  <a name="bkmk_level2"></a> 수준 2 - 고급  
 설정이 완료된 후에는 고급 수준이 기본값입니다. 이 수준은 기본 수준에서 수집한 데이터 외에 기능별 데이터(사용 빈도 및 기간), Configuration Manager 클라이언트 설정(구성 요소 이름, 상태 및 폴링 간격과 같은 특정 설정) 및 소프트웨어 업데이트에 대한 기본 정보를 포함합니다.  
 
 이 수준에 포함된 정보는 Microsoft에서 향후 개선된 제품 및 서비스를 제공하기 위해 필요한 최소한의 데이터로 유용하게 사용할 수 있기 때문에 이 수준을 사용하는 것이 권장됩니다. 이 수준에서는 개체 이름(사이트, 사용자, 컴퓨터 또는 개체), 보안 관련 개체의 세부 정보 또는 소프트웨어 업데이트가 필요한 시스템 개수와 같은 취약성은 수집하지 않습니다.  
@@ -251,7 +252,7 @@ System Center Configuration Manager 버전 1511부터 이 수준에는 다음이
 
     -   유형별 컬렉션 개수  
 
-##  <a name="a-namebkmklevel3a-level-3---full"></a><a name="bkmk_level3"></a> 수준 3 - 전체  
+##  <a name="bkmk_level3"></a> 수준 3 - 전체  
 전체 수준은 기본 및 고급 수준의 모든 데이터를 포함합니다. 또한 Endpoint Protection, 업데이트 준수 비율 및 소프트웨어 업데이트 정보에 대한 추가 정보를 포함합니다. 또한 이 수준은 캡처 시점의 메모리 또는 로그 파일에 있던 개인 정보를 포함할 수도 있는 시스템 파일 및 메모리 스냅숏과 같은 고급 진단 정보를 포함할 수 있습니다.  
 
 System Center Configuration Manager 버전 1511부터 이 수준에는 다음이 포함됩니다.  
@@ -281,9 +282,4 @@ System Center Configuration Manager 버전 1511부터 이 수준에는 다음이
 -   소프트웨어 업데이트 검사 성공 비율  
 
 -   마지막 소프트웨어 업데이트 검사 이후 최소/최대/평균 시간 수  
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
