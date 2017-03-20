@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: a93ea730c39cce9dc46036f5aa6ece4a62679d0f
 ms.openlocfilehash: 0d16d362b798c194645f987088ba8a95a7be3f19
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -28,14 +29,14 @@ ms.openlocfilehash: 0d16d362b798c194645f987088ba8a95a7be3f19
 설치하는 각 System Center Configuration Manager 사이트에는 **사이트 시스템 서버**인 사이트 서버가 포함됩니다. 또한 사이트에는 사이트 서버에 원격인 컴퓨터의 추가 사이트 시스템 서버도 포함될 수 있습니다. 사이트 시스템 서버(사이트 서버 또는 원격 사이트 시스템 서버)에서는 **사이트 시스템 역할**을 지원합니다.
 
 
-##  <a name="a-namebkmksiteserversa-site-system-servers"></a><a name="bkmk_siteservers"></a> 사이트 시스템 서버  
+##  <a name="bkmk_siteservers"></a> 사이트 시스템 서버  
  컴퓨터에 사이트 시스템 역할을 설치하면 해당 컴퓨터가 사이트 시스템 서버가 됩니다. 각 사이트에서 하나 이상의 추가 사이트 시스템 서버를 설치할 수 있습니다. 또한 추가 사이트 시스템 서버를 설치하지 않고 사이트 서버 컴퓨터에서 직접 모든 사이트 시스템 역할을 실행하도록 선택할 수도 있습니다. 각 사이트 시스템 서버는 하나 이상의 사이트 시스템 역할을 지원합니다. 추가 서버는 사이트 시스템 역할이 서버에 지정하는 CPU 처리 부하를 공유하여 사이트의 기능 및 용량을 확장할 수 있습니다.  
 
  사이트 시스템 서버의 추가를 고려하는 경우 서버가 용도에 대한 필수 조건을 충족해야 합니다. 사이트 시스템 서버를 사이트 서버, 도메인 리소스, 클라우드 기반 위치, 사이트 시스템 서버 및 클라이언트 등 예상되는 끝점과 통신할 수 있는 충분한 대역폭을 가진 네트워크 위치에 추가하는 것도 좋습니다.  
 
  사이트 시스템 역할에 사용할 프록시를 사이트 시스템 서버와 함께 구성하는 경우 [프록시 서버를 사용할 수 있는 사이트 시스템 역할](#bkmk_proxy)을 참조하세요.  
 
-##  <a name="a-namebkmkplanrolesa-site-system-roles"></a><a name="bkmk_planroles"></a> 사이트 시스템 역할  
+##  <a name="bkmk_planroles"></a> 사이트 시스템 역할  
  사이트 시스템 역할은 사이트에 추가 기능을 제공하는 컴퓨터에 설치됩니다. 다음과 같은 경우를 예로 들 수 있습니다.  
 
 -   추가 관리 지점. 사이트는 사이트의 최대 지원 용량까지 더 많은 장치를 지원할 수 있습니다.  
@@ -102,7 +103,7 @@ Configuration Manager 사이트마다 다른 사이트 시스템 역할을 지�
 
 -   **보고 서비스 지점.** SQL Server Reporting Services와 통합되어 Configuration Manager용 보고서를 만들고 관리하는 사이트 시스템 역할입니다. 이 역할은 기본 사이트와 중앙 관리 사이트에서 지원되며, 지원되는 사이트에서 이 역할의 여러 인스턴스를 설치할 수 있습니다. 자세한 내용은 [System Center Configuration Manager의 보고 계획](../../../core/servers/manage/planning-for-reporting.md)을 참조하세요.  
 
--   **서비스 연결 지점.** Microsoft Intune 및 온-프레미스 MDM에서 모바일 장치를 관리하는 데 사용하는 사이트 시스템 역할입니다. 이 역할은 사이트의 사용 현황 데이터도 업로드하며, Configuration Manager 콘솔에서 Configuration Manager의 업데이트를 사용하도록 하는 데 필요합니다. 계층에서는 이 역할의 단일 인스턴스만 지원하므로, 이 역할의 인스턴스는 계층의 최상위 계층 사이트(중앙 관리 사이트 또는 독립 실행형 기본 사이트)에 있어야 합니다. 독립 실행형 기본 사이트를 더 큰 계층 구조로 확장하는 경우 기본 사이트에서 이 역할을 제거한 다음 중앙 관리 사이트에서 설치해야 합니다. 자세한 내용은 [About the service connection point in System Center Configuration Manager](../../../core/servers/deploy/configure/about-the-service-connection-point.md)을 참조하십시오.  
+-   **서비스 연결 지점.** Microsoft Intune 및 온-프레미스 MDM에서 모바일 장치를 관리하는 데 사용하는 사이트 시스템 역할입니다. 이 역할은 사이트의 사용 현황 데이터도 업로드하며, Configuration Manager 콘솔에서 Configuration Manager의 업데이트를 사용하도록 하는 데 필요합니다. 계층에서는 이 역할의 단일 인스턴스만 지원하므로, 이 역할의 인스턴스는 계층의 최상위 계층 사이트(중앙 관리 사이트 또는 독립 실행형 기본 사이트)에 있어야 합니다. 독립 실행형 기본 사이트를 더 큰 계층 구조로 확장하는 경우 기본 사이트에서 이 역할을 제거한 다음 중앙 관리 사이트에서 설치해야 합니다. 자세한 내용은 [System Center Configuration Manager의 서비스 연결 지점 정보](../../../core/servers/deploy/configure/about-the-service-connection-point.md)을 참조하십시오.  
 
 -   **소프트웨어 업데이트 지점.** WSUS(Windows Server Update Services)와 통합되어 Configuration Manager 클라이언트에 소프트웨어 업데이트를 제공하는 사이트 시스템 역할입니다. 이 역할은 모든 사이트에서 지원됩니다.  
 
@@ -118,7 +119,7 @@ Configuration Manager 사이트마다 다른 사이트 시스템 역할을 지�
 
 -   **시스템 상태 검사기 지점.** 이 사이트 시스템 역할은 Configuration Manager 콘솔에 계속 표시되지만 더 이상 사용되지 않습니다.  
 
-###  <a name="a-namebkmkproxya-site-system-roles-that-can-use-a-proxy-server"></a><a name="bkmk_proxy"></a> 프록시 서버를 사용할 수 있는 사이트 시스템 역할  
+###  <a name="bkmk_proxy"></a> 프록시 서버를 사용할 수 있는 사이트 시스템 역할  
  일부 Configuration Manager 사이트 시스템 역할은 인터넷에 대한 연결을 필요로 하며, 역할을 호스트하는 사이트 시스템 서버가 구성된 경우에 프록시 서버를 사용합니다. 일반적으로 이 연결은 사이트 시스템 역할이 설치되어 있는 컴퓨터의 **시스템** 컨텍스트에 설정됩니다. 연결에서는 일반 사용자 계정에 대한 프록시 구성을 사용할 수 없습니다. 인터넷 연결을 완료하기 위해 프록시 서버가 필요한 경우 컴퓨터에서 프록시 서버를 사용하도록 설정해야 합니다.  
 
 -   사이트 시스템 역할을 설치하는 경우 프록시 서버를 설정할 수 있습니다.  
@@ -152,9 +153,4 @@ Configuration Manager 사이트마다 다른 사이트 시스템 역할을 지�
  소프트웨어 업데이트 지점에 대한 프록시 서버와 관련된 자세한 내용은 [소프트웨어 업데이트 지점 설치](../../../sum/get-started/install-a-software-update-point.md) 항목의 “프록시 서버 설정” 섹션을 참조하세요.  
 
 -   **서비스 연결 지점.** 온라인 상태(오프라인이 아님)로 설정되면 이 사이트 시스템 역할은 Microsoft Intune과 Microsoft 클라우드 서비스에 연결됩니다.  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
