@@ -19,6 +19,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: a8959c72608a1531fb323176c33a848a4a669b1c
 ms.openlocfilehash: dface33392c2a2a662522656eabf0936b52b28fc
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -42,7 +43,7 @@ ms.openlocfilehash: dface33392c2a2a662522656eabf0936b52b28fc
 
 -   여러 원본 사이트에서 대상 계층 구조 내의 단일 사이트로 데이터를 이동할 수 있습니다.  
 
-##  <a name="a-namebkmkmigrationconceptsa-concepts-for-migration"></a><a name="BKMK_MigrationConcepts"></a> 마이그레이션 관련 개념  
+##  <a name="BKMK_MigrationConcepts"></a> 마이그레이션 관련 개념  
  마이그레이션을 사용할 때 다음과 같은 개념과 용어가 나올 수 있습니다.  
 
 |개념 또는 용어|추가 정보|  
@@ -52,11 +53,11 @@ ms.openlocfilehash: dface33392c2a2a662522656eabf0936b52b28fc
 |대상 계층|원본 계층 구조에서 데이터를 가져오기 위해 마이그레이션을 실행하는 System Center Configuration Manager 계층 구조입니다.|  
 |데이터 수집|원본 계층에서 대상 계층으로 마이그레이션할 수 있는 정보를 확인하는 지속적인 프로세스입니다. Configuration Manager에서는 이전에 마이그레이션했고 대상 계층 구조에서 업데이트하려는 원본 계층 구조 내 정보가 변경되었는지 확인하기 위해 일정에 따라 원본 계층 구조를 검사합니다.<br /><br /> 자세한 내용은 [System Center Configuration Manager에서 원본 계층 전략 계획](../../core/migration/planning-a-source-hierarchy-strategy.md)에서 [데이터 수집](../../core/migration/planning-a-source-hierarchy-strategy.md#BKMK_Data_Gathering)을 참조하세요.|  
 |마이그레이션 작업|마이그레이션할 특정 개체를 구성한 다음 해당 개체를 대상 계층으로 마이그레이션하는 작업을 관리하는 프로세스입니다.<br /><br /> 자세한 내용은 [System Center Configuration Manager에서 마이그레이션 작업 전략 계획](../../core/migration/planning-a-migration-job-strategy.md)을 참조하세요.|  
-|클라이언트 마이그레이션|클라이언트가 원본 사이트의 데이터베이스에서 사용하는 정보를 대상 계층의 데이터베이스로 전송하는 프로세스입니다. 이 데이터 마이그레이션 후에는 장치의 클라이언트 소프트웨어를 대상 계층의 클라이언트 소프트웨어로 업그레이드합니다.<br /><br /> 자세한 내용은 [Planning a client migration strategy in System Center Configuration Manager](../../core/migration/planning-a-client-migration-strategy.md)항목을 참조하세요.|  
+|클라이언트 마이그레이션|클라이언트가 원본 사이트의 데이터베이스에서 사용하는 정보를 대상 계층의 데이터베이스로 전송하는 프로세스입니다. 이 데이터 마이그레이션 후에는 장치의 클라이언트 소프트웨어를 대상 계층의 클라이언트 소프트웨어로 업그레이드합니다.<br /><br /> 자세한 내용은 [System Center Configuration Manager에서 마이그레이션 작업 전략 계획](../../core/migration/planning-a-client-migration-strategy.md)항목을 참조하세요.|  
 |공유 배포 지점|마이그레이션 기간 중 대상 계층과 공유되는 원본 계층의 배포 지점입니다.<br /><br /> 대상 계층의 사이트에 할당된 클라이언트는 마이그레이션 기간 중에 공유 배포 지점에서 콘텐츠를 가져올 수 있습니다.<br /><br /> 자세한 내용은 [System Center Configuration Manager에서 콘텐츠 배포 마이그레이션 전략 계획](../../core/migration/planning-a-content-deployment-migration-strategy.md)에서 [원본 계층과 대상 계층 간에 배포 지점 공유](../../core/migration/planning-a-content-deployment-migration-strategy.md#About_Shared_DPs_in_Migration)를 참조하세요.|  
 |마이그레이션 모니터링|마이그레이션 작업을 모니터링하는 프로세스입니다. 마이그레이션 진행률 및 성공 여부는 **관리** 작업 영역의 **마이그레이션** 노드에서 모니터링할 수 있습니다.<br /><br /> 자세한 내용은 [System Center Configuration Manager에서 마이그레이션 작업 모니터링 계획](../../core/migration/planning-to-monitor-migration-activity.md)을 참조하세요.|  
 |데이터 수집 중지|원본 사이트에서 데이터 수집을 중지하는 프로세스입니다. 더 이상 원본 계층에 마이그레이션할 데이터가 없거나 마이그레이션 관련 작업을 일시 중지하려는 경우 원본 계층에서 데이터 수집을 중지하도록 대상 계층을 구성할 수 있습니다.<br /><br /> 자세한 내용은 [System Center Configuration Manager에서 원본 계층 전략 계획](../../core/migration/planning-a-source-hierarchy-strategy.md)에서 [데이터 수집](../../core/migration/planning-a-source-hierarchy-strategy.md#BKMK_Data_Gathering)을 참조하세요.|  
-|마이그레이션 데이터 정리|대상 계층 데이터베이스에서 마이그레이션에 대한 정보를 제거함으로써 원본 계층으로부터의 마이그레이션을 종료하는 프로세스입니다.<br /><br /> 자세한 내용은 [Planning to complete migration in System Center Configuration Manager](../../core/migration/planning-to-complete-migration.md)항목을 참조하세요.|  
+|마이그레이션 데이터 정리|대상 계층 데이터베이스에서 마이그레이션에 대한 정보를 제거함으로써 원본 계층으로부터의 마이그레이션을 종료하는 프로세스입니다.<br /><br /> 자세한 내용은 [System Center Configuration Manager에서 마이그레이션 완료 계획](../../core/migration/planning-to-complete-migration.md)항목을 참조하세요.|  
 
 ## <a name="typical-workflow-for-migration"></a>일반적인 마이그레이션 워크플로  
 마이그레이션 워크플로를 설정하려면:
@@ -75,7 +76,7 @@ ms.openlocfilehash: dface33392c2a2a662522656eabf0936b52b28fc
 
 현재 환경을 관리하는 데 더 이상 사용하지 않을 Configuration Manager 원본 계층에서 데이터를 마이그레이션한 후 이 원본 계층 및 인프라를 해제할 수 있습니다.  
 
-##  <a name="a-namebkmkmigrationscenariosa-migration-scenarios"></a><a name="BKMK_MigrationScenarios"></a> 마이그레이션 시나리오  
+##  <a name="BKMK_MigrationScenarios"></a> 마이그레이션 시나리오  
  Configuration Manager에서 지원하는 마이그레이션 시나리오는 다음과 같습니다.  
 
 > [!NOTE]  
@@ -110,9 +111,4 @@ ms.openlocfilehash: dface33392c2a2a662522656eabf0936b52b28fc
 
 ## <a name="see-also"></a>참고 항목  
  [System Center Configuration Manager 사용 시작](../../core/servers/deploy/start-using.md)
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
