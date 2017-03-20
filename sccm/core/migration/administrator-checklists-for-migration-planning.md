@@ -19,6 +19,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 5e6e8a18a8fc705c993177b3c5b4113a351a45a4
 ms.openlocfilehash: 36f7c37e4da3f2bce64a25d266dae57d9fe98c36
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -28,7 +29,7 @@ ms.openlocfilehash: 36f7c37e4da3f2bce64a25d266dae57d9fe98c36
 
 다음 관리자 검사 목록을 사용하여 System Center Configuration Manager로의 마이그레이션 전략을 계획할 수 있습니다.
 
-##  <a name="a-namechecklistmigraitonplanninga-administrator-checklist-for-migration-planning"></a><a name="Checklist_Migraiton_Planning"></a> 마이그레이션 계획을 위한 관리자 검사 목록  
+##  <a name="Checklist_Migraiton_Planning"></a> 마이그레이션 계획을 위한 관리자 검사 목록  
  사전 마이그레이션 계획 단계에서는 다음 검사 목록을 사용하십시오.  
 
 -   **현재 환경을 평가합니다.**  
@@ -37,7 +38,7 @@ ms.openlocfilehash: 36f7c37e4da3f2bce64a25d266dae57d9fe98c36
 
 -   **현재 사용 중인 Configuration Manager 버전에서 사용 가능한 기능과 변경 사항을 검토하고 이러한 정보를 활용하여 대상 계층을 설계합니다.**  
 
-    자세한 내용은 [Fundamentals of System Center Configuration Manager](../../core/understand/fundamentals.md) 및 [What's new in System Center Configuration Manager](../../core/plan-design/changes/what-has-changed-from-configuration-manager-2012.md)항목을 참조하세요.  
+    자세한 내용은 [System Center Configuration Manager의 기본 사항](../../core/understand/fundamentals.md) 및 [System Center Configuration Manager의 새로운 기능](../../core/plan-design/changes/what-has-changed-from-configuration-manager-2012.md)항목을 참조하세요.  
 
 
 -   **역할 기반 관리에 대해 사용할 관리 보안 모델을 결정합니다.**  
@@ -76,7 +77,7 @@ ms.openlocfilehash: 36f7c37e4da3f2bce64a25d266dae57d9fe98c36
 
     개체와 클라이언트가 마이그레이션되는 시점을 결정합니다. 마이그레이션이 완료되면 원본 계층에서 사이트 서버의 역할 해제를 계획할 수 있습니다.  
 
-##  <a name="a-namechecklisthierarchyformigrationa-administrator-checklist-for-hierarchy-migration"></a><a name="Checklist_Hierarchy_for_migration"></a> 계층 구조 마이그레이션을 위한 관리자 검사 목록  
+##  <a name="Checklist_Hierarchy_for_migration"></a> 계층 구조 마이그레이션을 위한 관리자 검사 목록  
 다음 검사 목록을 참고하여 마이그레이션을 시작하기 전에 대상 계층에 대해 계획할 수 있습니다.  
 
 -   **대상 계층에서 사용할 컴퓨터를 확인합니다.**  
@@ -113,7 +114,7 @@ ms.openlocfilehash: 36f7c37e4da3f2bce64a25d266dae57d9fe98c36
     -   대상 계층에 설치한 Configuration Manager 클라이언트에서 할당된 사이트와 성공적으로 통신하는지 확인합니다.  
 
 
-##  <a name="a-namechecklisitmigrationa-administrator-checklist-for-migration"></a><a name="Checklisit_Migration"></a> 마이그레이션을 위한 관리자 검사 목록  
+##  <a name="Checklisit_Migration"></a> 마이그레이션을 위한 관리자 검사 목록  
 다음 검사 목록을 참고하여 원본 계층에서 대상 계층으로 데이터를 마이그레이션할 수 있습니다.  
 
 -   **대상 계층에서 마이그레이션을 사용하도록 설정합니다.**  
@@ -164,9 +165,4 @@ ms.openlocfilehash: 36f7c37e4da3f2bce64a25d266dae57d9fe98c36
 -   **마이그레이션을 완료합니다.**  
 
     원본 계층의 모든 사이트에서 데이터와 클라이언트를 마이그레이션하고 해당되는 배포 지점을 업그레이드한 후에는 마이그레이션을 완료할 수 있습니다. 마이그레이션을 완료하려면 원본 계층의 각 원본 사이트에 대해 데이터 수집을 중지해야 합니다. 그런 다음 필요 없는 마이그레이션 정보를 제거하고 원본 계층 인프라의 역할을 해제할 수 있습니다. 자세한 내용은 [Planning to complete migration in System Center Configuration Manager](../../core/migration/planning-to-complete-migration.md)항목을 참조하세요.  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
