@@ -1,7 +1,7 @@
 ---
 title: "Endpoint Protection 계획 | Microsoft 문서"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/07/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,8 +14,9 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
-ms.openlocfilehash: 927732150b99bbe362a3ed36976b49a716efc14c
+ms.sourcegitcommit: 8f4ec982a54cf3cefef310268a54850e70e2e63a
+ms.openlocfilehash: 6c4273dae99ec8db2cf827f463b973e876d0d35b
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -92,11 +93,7 @@ Configuration Manager의 1606 버전부터(현재 분기) Endpoint Protection은
  ![Endpoint Protection 워크플로](../media/Endpoint-Protection-Workflow.gif)
 
 ## <a name="endpoint-protection-client-for-mac-computers-and-linux-servers"></a>Mac 컴퓨터 및 Linux 서버에 대한 Endpoint Protection 클라이언트  
- System Center 2012에는 Linux 및 Mac 컴퓨터용 Endpoint Protection 클라이언트가 포함되어 있습니다. 이러한 클라이언트에는 Configuration Manager가 제공되지 않습니다. 대신, [Microsoft 볼륨 라이선스 서비스 센터](https://www.microsoft.com/licensing/servicecenter/default.aspx)에서 다음 제품을 다운로드해야 합니다.  
-
--   Mac용 System Center 2012 Endpoint Protection  
-
--   Linux용 System Center 2012 Endpoint Protection  
+ System Center에는 Linux 및 Mac 컴퓨터용 Endpoint Protection 클라이언트가 포함되어 있습니다. 이러한 클라이언트에는 Configuration Manager가 제공되지 않습니다. 대신, [Microsoft 볼륨 라이선스 서비스 센터](https://www.microsoft.com/licensing/servicecenter/default.aspx)에서 다음 제품을 다운로드해야 합니다.  
 
 > [!IMPORTANT]  
 >  Linux 및 Mac용 Endpoint Protection 설치 파일을 다운로드하려면 Microsoft 볼륨 라이선스 고객이어야 합니다.  
@@ -114,16 +111,9 @@ Configuration Manager의 1606 버전부터(현재 분기) Endpoint Protection은
  사용자 지정 클라이언트 설정을 구성할 때 다음을 수행할 수 있습니다.  
 
 -   조직의 다른 부분에 대 한 맬웨어 방지 및 보안 설정을 사용자 지정 합니다.  
-
 -   전체 계층 구조에 배포하기 전에 소규모 컴퓨터 그룹에서 Endpoint Protection 실행 결과를 테스트합니다.  
-
 -   점차 더 많은 클라이언트를 컬렉션에 추가하여 Endpoint Protection 클라이언트 배포를 단계별로 실행합니다.  
 
 ### <a name="distributing-definition-updates-by-using-software-updates"></a>소프트웨어 업데이트를 사용 하 여 배포 정의 업데이트  
  Configuration Manager 소프트웨어 업데이트를 사용하여 정의 업데이트를 배포하는 경우 다른 소프트웨어 업데이트가 포함되지 않은 패키지에 정의 업데이트를 포함하는 것이 좋습니다. 이렇게 정의 업데이트 패키지의 크기가 작은 배포 지점에 보다 신속 하 게 복제할 수 있습니다.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

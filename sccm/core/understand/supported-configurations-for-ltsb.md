@@ -2,7 +2,7 @@
 title: "지원되는 LTSB 구성 | Microsoft 문서"
 description: "System Center Configuration Manager의 장기 서비스 분기에서 작동하는 운영 체제 및 종속 제품을 이해합니다."
 ms.custom: na
-ms.date: 1/12/2017
+ms.date: 3/9/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 12aa9f0a1ad4ce8acf0b914e9911bb50ba887919
-ms.openlocfilehash: 5b2ab25d7f645ea9eada81d241ef14168b017304
+ms.sourcegitcommit: 477ffa5d61d2dfaedf8a3a1f5687e2d72698ad28
+ms.openlocfilehash: 78dcbf76f21a286506b9c605e2c176714736935b
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -38,7 +39,7 @@ ms.openlocfilehash: 5b2ab25d7f645ea9eada81d241ef14168b017304
 **Windows:**
 - Windows에 대한 품질 및 보안 업데이트만 지원됩니다.
 - Windows 10의 CB(현재 분기), CBB(비즈니스용 현재 분기) 또는 LTSB에 대한 지원은 추가되지 않습니다.
--   Windows Server의 새로운 주 버전은 지원되지 않습니다.
+-    Windows Server의 새로운 주 버전은 지원되지 않습니다.
 
 **SQL Server:**
 - SQL Server에 대한 품질 및 보안 업데이트나 서비스 팩 등의 부 업그레이드만 지원됩니다.
@@ -51,13 +52,15 @@ LTSB에서는 다음 Windows 컴퓨터 운영 체제를 사이트 시스템으�
 - Windows Server 2016
 - Windows Server 2012(x64): Standard, Datacenter
 - Windows Server 2008 R2 SP1(x64): Standard, Enterprise, Datacenter
-- Windows Server 2008 SP2(x86, x64): Standard, Enterprise, Datacenter
+- Windows Server 2008 SP2(x86, x64): Standard, Enterprise, Datacenter*(참고 1 참조)*
 - Windows 10 Enterprise 2015 LTSB(x86, x64)
 - Windows 10 Enterprise 2016 LTSB(x86, x64)
 - Windows 8.1(x86, x64): Professional, Enterprise
 - Windows 7 SP1(x86, x64): Professional, Enterprise, Ultimate
 - Windows Server 2012의 Server Core 설치
-- Windows Server 2012 R2의 Server Core 설치  
+- Windows Server 2012 R2의 Server Core 설치    
+
+*참고 1*: 배포 지점 및 풀(pull) 배포 지점을 제외하고, 이 운영 체제는 사이트 서버 또는 사이트 시스템 역할에 대해 지원되지 않습니다. 이 지원의 중단이 발표되거나 이 운영 체제의 추가 지원 기간이 만료될 때까지 이 운영 체제를 배포 지점으로 계속 사용할 수 있습니다. 자세한 내용은 [Installation of System Center Configuration Manager CB and LTSB fails on Windows Server 2008](https://support.microsoft.com/help/4015095)(Windows Server 2008에서 System Center Configuration Manager CB 및 LTSB 설치 실패)을 참조하세요.
 
 ## <a name="client-management"></a>클라이언트 관리
 다음 섹션에서는 LTSB를 사용하여 관리할 수 있는 클라이언트 운영 체제를 식별합니다. LTSB에서는 새 운영 체제를 지원되는 클라이언트로 추가할 수 없습니다.
@@ -332,9 +335,4 @@ LTSB는 다음 SQL Server 버전에서 사이트 데이터베이스 및 보고 �
 - [권장 하드웨어](/sccm/core/plan-design/configs/recommended-hardware)
 - [Windows 기능 및 네트워크 지원](/sccm/core/plan-design/configs/support-for-windows-features-and-networks)
 - [가상화 환경 지원](/sccm/core/plan-design/configs/support-for-virtualization-environments)
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

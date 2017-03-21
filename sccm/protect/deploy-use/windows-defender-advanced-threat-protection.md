@@ -2,7 +2,7 @@
 title: "Windows Defender Advanced Threat Protection | Microsoft 문서"
 description: "기업이 고급 공격에 대응하는 데 도움이 되는 새로운 서비스인 Windows Defender Advanced Threat Protection을 관리 및 모니터링하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/07/2017
 ms.prod: configuration-manager
 ms.technology:
 - configmgr-other
@@ -16,8 +16,9 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 299fada2b6587ace44e635c4f26cc7a482d44843
-ms.openlocfilehash: 880ea4fcb0730f0e9adbc9f142262f241f5df9dc
+ms.sourcegitcommit: 8f4ec982a54cf3cefef310268a54850e70e2e63a
+ms.openlocfilehash: 237dc9cbccb973720a633490f096aed4bc16d183
+ms.lasthandoff: 03/13/2017
 
 ---
 # <a name="windows-defender-advanced-threat-protection"></a>Windows Defender Advanced Threat Protection
@@ -110,10 +111,6 @@ Windows Defender ATP는 [Windows 보안 센터](https://securitycenter.windows.c
 > Windows Defender ATP 구성 파일에는 보안을 유지해야 하는 중요한 정보가 포함되어 있습니다.
 
 [Windows Defender Advanced Threat Protection](https://technet.microsoft.com/itpro/windows/keep-secure/windows-defender-advanced-threat-protection)
-[Windows Defender Advanced Threat Protection 온보딩 문제 해결](https://technet.microsoft.com/itpro/windows/keep-secure/troubleshoot-onboarding-windows-defender-advanced-threat-protection)
 
-
-
-<!--HONumber=Dec16_HO3-->
-
+[Windows Defender Advanced Threat Protection 등록 문제 해결](https://technet.microsoft.com/itpro/windows/keep-secure/troubleshoot-onboarding-windows-defender-advanced-threat-protection)
 

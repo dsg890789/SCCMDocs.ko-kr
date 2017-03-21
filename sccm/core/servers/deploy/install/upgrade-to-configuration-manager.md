@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 30af3326578d39c6d995672071705bcaeb877e4d
-ms.openlocfilehash: 8af2a797ad4e87d870bb27873a7428e96f63b76d
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: 8f4ec982a54cf3cefef310268a54850e70e2e63a
+ms.openlocfilehash: 49e3a9d6f4b8e1afbb76fcba33a7fb58e5a6b13f
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -60,7 +60,7 @@ ms.lasthandoff: 02/23/2017
 
 
 > [!TIP]  
->  System Center 2012 Configuration Manager 버전에서 업그레이드하는 경우 업그레이드 프로세스를 효율적으로 수행할 수 있습니다. 자세한 내용은 다음을 참조하십시오.  
+>  System Center 2012 Configuration Manager 버전에서 현재 분기로 업그레이드하는 경우 업그레이드 프로세스를 효율적으로 수행할 수 있습니다. 자세한 내용은 다음을 참조하십시오.  
 >   
 >  -   [System Center Configuration Manager용 업데이트](../../../../core/servers/manage/updates.md)의 [기준 및 업데이트 버전](../../../../core/servers/manage/updates.md#bkmk_Baselines) 섹션  
 >  -   [System Center Configuration Manager의 CD.Latest 폴더](../../../../core/servers/manage/the-cd.latest-folder.md)  

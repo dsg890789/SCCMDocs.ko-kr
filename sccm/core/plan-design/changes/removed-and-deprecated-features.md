@@ -2,7 +2,7 @@
 title: "사용되지 않는 기능 | Microsoft 문서"
 description: "System Center Configuration Manager에서 더 이상 지원되지 않는 기능, 제품 및 운영 체제에 대해 알아봅니다."
 ms.custom: na
-ms.date: 1/5/2017
+ms.date: 3/9/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1948e2914fff91f156dd8956c018ff0fabcda2f9
-ms.openlocfilehash: 3a1edd1b59676e59d4bfcd4c01a23f7a04f91f4f
+ms.sourcegitcommit: 477ffa5d61d2dfaedf8a3a1f5687e2d72698ad28
+ms.openlocfilehash: cb57a8699081415af7e2e9dc29b0a321f100823d
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -58,14 +59,14 @@ ms.openlocfilehash: 3a1edd1b59676e59d4bfcd4c01a23f7a04f91f4f
 
 System Center Configuration Manager 버전 1511 출시와 함께 제거된 기능에 대한 추가 정보:
 
-###  <a name="a-namebkmkamta-out-of-band-management"></a><a name="bkmk_amt"></a> 대역 외 관리  
+###  <a name="bkmk_amt"></a> 대역 외 관리  
  Configuration Manager에서 Configuration Manager 콘솔 내의 AMT 기반 컴퓨터에 대한 기본 지원이 제거되었습니다.  
 
 -   [Microsoft System Center Configuration Manager용 Intel SCS 추가 기능](http://www.intel.com/content/www/us/en/software/setup-configuration-software.html)을 사용하는 경우 AMT 기반 컴퓨터가 완전히 관리되는 상태로 유지됩니다. 추가 기능을 사용하면 AMT를 관리할 최신 기능에 액세스하고 Configuration Manager가 해당 변경 사항을 통합할 수 있을 때까지 도입된 제한 사항을 제거할 수 있습니다.  
 
 -   System Center 2012 Configuration Manager의 대역 외 관리는 이 변경 사항에 의해 영향을 받지 않습니다.  
 
-###  <a name="a-namebkmknapa-network-access-protection"></a><a name="bkmk_nap"></a> 네트워크 액세스 보호  
+###  <a name="bkmk_nap"></a> 네트워크 액세스 보호  
  System Center Configuration Manager에서 네트워크 액세스 보호에 대한 지원이 제거되었습니다. 이 기능은 Windows Server 2012 R2부터 사용되지 않으며 Windows 10에서 제거됩니다.  
 
  네트워크 액세스 보호를 위한 대체 방법은 *네트워크 정책 및 액세스 서비스 개요* 의 [사용되지 않는 기능](https://technet.microsoft.com/library/hh831683.aspx)섹션을 참조하세요.  
@@ -76,10 +77,10 @@ System Center Configuration Manager 버전 1511 출시와 함께 제거된 기�
 
 |**운영 체제**|**처음 중단 발표**|**제거된 지원** |  
 |-|-|-|  
-|Windows Server 2008|2015년 7월 10일|2016년 12월 31일 이후 출시되는 첫 번째 업데이트와 함께 지원 종료(참고 1 참조)|  
+|Windows Server 2008|2015년 7월 10일|1511 </br></br>사이트 시스템으로 지원이 제거됩니다. (참고 1 참조)|  
 |Windows Server 2008 R2|2015년 7월 10일|2016년 12월 31일 이후 출시되는 첫 번째 업데이트와 함께 지원 종료(참고 2 참조)|  
 
--   참고 1: 지원이 종료된 후에 이 운영 체제는 사이트 서버 또는 대부분의 사이트 시스템 역할에 대해 더 이상 지원되지 않습니다. 그러나 이 지원의 중단이 발표되거나 이 운영 체제의 추가 지원 기간이 만료될 때까지 배포 지점 사이트 시스템 역할(풀(pull) 배포 지점 포함)에 대해 계속 지원됩니다.  
+-   참고 1: 배포 지점 및 풀(pull) 배포 지점을 제외하고, 이 운영 체제는 사이트 서버 또는 사이트 시스템 역할에 대해 지원되지 않습니다. 이 지원의 중단이 발표되거나 이 운영 체제의 추가 지원 기간이 만료될 때까지 이 운영 체제를 배포 지점으로 계속 사용할 수 있습니다. 자세한 내용은 [Installation of System Center Configuration Manager CB and LTSB fails on Windows Server 2008](https://support.microsoft.com/help/4015095)(Windows Server 2008에서 System Center Configuration Manager CB 및 LTSB 설치 실패)을 참조하세요. 
 
 -   참고 2: 지원이 종료된 후에 이 운영 체제는 사이트 서버 또는 대부분의 사이트 시스템 역할에 대해 더 이상 지원되지 않습니다. 그러나 이 지원의 중단이 발표되거나 이 운영 체제의 추가 지원 기간이 만료될 때까지 상태 마이그레이션 지점 및 배포 지점 사이트 시스템 역할에 대해(풀(pull) 배포 지점 포함, PXE 및 멀티캐스트에 대해) 계속 지원됩니다. 버전 1602부터, Windows Sever 2008 R2에서 Windows Server 2012 R2로 사이트 서버의 운영 체제에 대해 현재 위치 업그레이드를 수행할 수 있습니다.  
 
@@ -110,9 +111,4 @@ System Center Configuration Manager 버전 1511 출시와 함께 제거된 기�
 |-|-|-|  
 |SQL Server 2008|2015년 7월 10일|버전 1511|  
 |SQL Server 2008 R2|2015년 7월 10일|2016년 12월 31일 이후 출시된 첫 번째 업데이트와 함께 지원 종료|  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

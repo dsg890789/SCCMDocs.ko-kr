@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: ee7f69bd65152deffb2456d9807e1e8fee8802ec
-ms.openlocfilehash: dd28c8218c77686884bdcff508080185cae97489
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 8f4ec982a54cf3cefef310268a54850e70e2e63a
+ms.openlocfilehash: 3bdbcd1a3c64a1d50f2f6219b2a5e17d60979864
+ms.lasthandoff: 03/13/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1702-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1702의 기능
@@ -313,6 +313,10 @@ Android for Work는 Android와 별도 플랫폼이며, 작업 프로필을 지�
   - **모든 장치를 Android로 관리** - (사용 안 함) Android for Work를 지원하는 장치를 포함하여 모든 Android 장치가 기존 Android 장치로 등록됩니다.
   - **지원되는 장치를 Android for Work로 관리** - (사용) Android for Work를 지원하는 모든 장치가 Android for Work로 등록됩니다. Android for Work를 지원하지 않는 Android 장치는 기존 Android 장치로 등록됩니다.
   - **이러한 그룹의 사용자에 대해서만 지원되는 장치를 Android for Work로 관리** - (테스트 중) Android for Work 관리의 대상을 제한된 사용자 집합으로 지정할 수 있습니다. Android for Work를 지원하는 장치를 등록하는 선택된 그룹의 구성원만 Android for Work 장치로 등록됩니다. 다른 모든 장치는 Android 장치로 등록됩니다.
+  
+> [!NOTE]
+> 알려진 문제로 인해 **Manage supported devices for users only in these groups as Android for Work**(이 그룹의 사용자만을 위해 지원되는 장치를 Android for Work로 관리) 옵션이 제대로 작동되지 않습니다. 지정된 Azure AD 그룹의 사용자 장치가 Android for Work 대신 Android로 등록됩니다. Android for Work를 테스트하려면 **Manage all supported devices as Android for Work**(지원되는 장치를 모두 Android for Work로 관리)를 사용해야 합니다.
+
 
   Android for Work 등록을 사용하도록 설정하려면 아래쪽 두 옵션 중 하나를 선택해야 합니다. **이러한 그룹의 사용자에 대해서만 지원되는 장치를 Android for Work로 관리** 옵션을 사용하려면 Azure Active Directory 보안 그룹을 먼저 설정해야 합니다.
 
@@ -350,4 +354,7 @@ Android 6 이상을 실행하는 장치에서는 다음 구성 항목뿐 아니�
 작업 프로필만 관리하기 때문에 Android for Work로 등록된 장치는 선택적 초기화만 가능합니다. 이렇게 하면 개인 프로필이 초기화되지 않도록 보호됩니다. Android for Work 장치에서 선택적 초기화를 수행하면 모든 앱과 데이터를 비롯한 작업 프로필이 제거되고 장치 등록이 취소됩니다.
 
 Android for Work 장치를 선택적으로 초기화하려면 Configuration Manager 콘솔에서 일반적인 [선택적 초기화 프로세스](https://docs.microsoft.com/sccm/mdm/deploy-use/wipe-lock-reset-devices#selective-wipe)를 사용합니다.
+
+#### <a name="known-issues-for-android-for-work"></a>Android for Work의 알려진 문제
+**Android for Work 메일 프로필에 동기화 일정을 구성하면 배포에 실패함** Android for Work 메일 프로필에 대한 ConfigMgr UI의 옵션 중 하나는 "Schedule"(일정)입니다. 다른 플랫폼에서는 관리자가 메일 및 다른 메일 계정 데이터를 배포되는 모바일 장치와 동기화하는 일정을 구성할 수 있습니다. 그러나 Android for Work 메일 프로필에 대해서는 동기화 일정을 구성할 수 없으며, "Not Configured"(구성되지 않음) 외에 다른 옵션을 선택하면 프로필이 장치에 배포되지 않습니다.
 

@@ -2,7 +2,7 @@
 title: "콘텐츠 관리의 기본 사항 | Microsoft 문서"
 description: "System Center Configuration Manager에서 도구와 옵션을 사용하여 배포하는 콘텐츠를 관리합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 3/15/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,9 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 83020f532edd7a640f0087aad40789e026f75913
-ms.openlocfilehash: 00751cd03a3dd49718994e31bc396e4e7d29ed2b
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: 766120f5ca79f279a513b62c35a2374c859b253a
+ms.openlocfilehash: 079be3c97e4239f8c5293bed5a2ce13abfbe7798
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -63,7 +63,7 @@ System Center Configuration Manager에서는 응용 프로그램, 패키지, 소
 -   Configuration Manager는 전체 콘텐츠 집합을 다시 보내기 전에 콘텐츠 집합의 증분 버전을&5;개까지 지원합니다. 5번째 업데이트 이후 콘텐츠 집합에 대해 다음 변경을 수행하면 Configuration Manager에서 새 콘텐츠 집합 버전을 만듭니다. Configuration Manager에서는 새 콘텐츠 집합 버전을 배포하여 이전 집합과 모든 증분 버전을 바꿉니다. 새 콘텐츠 집합이 배포된 후에 원본 파일의 후속 증분 변경 내용은 이진 차등 복제를 통해 다시 복제됩니다.  
 
 
-BDR은 계층 내 각 부모 및 자식 사이트 간에 지원됩니다. 사이트 내에서는 사이트 서버와 해당 배포 지점 간에 BDR이 지원됩니다. 풀(pull) 배포 지점은 지원 대상으로 포함되지만 클라우드 기반 배포 지점은 포함되지 않습니다. 클라우드 기반 배포 지점은 콘텐츠를 전송하는 데 이진 차등 복제를 지원하지 않습니다.  
+BDR은 계층 내 각 부모 및 자식 사이트 간에 지원됩니다. 사이트 내에서는 사이트 서버와 해당 일반 배포 지점 간에 BDR이 지원됩니다. 단, 풀(pull) 배포 지점 및 클라우드 기반 배포 지점은 콘텐츠를 전송하는 데 이진 차등 복제를 지원하지 않습니다. 풀(pull) 배포 지점은 새 파일을 전송하는 파일 수준 델타를 지원하지만 파일 내 블록은 지원하지 않습니다.
 
 응용 프로그램은 항상 이진 차등 복제를 사용합니다. 패키지의 경우 이진 차등 복제는 선택 사항이며 기본적으로 사용하도록 설정되어 있지 않습니다. 패키지에 대해 이진 차등 복제를 사용하려면 각 패키지에 대해 이 기능을 사용하도록 설정해야 합니다. 그러려면 새 패키지를 만드는 경우 또는 패키지 속성의 **데이터 원본** 탭을 편집하는 경우 **이진 차등 복제 사용** 옵션을 선택해야 합니다.  
 
