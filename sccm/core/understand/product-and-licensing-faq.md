@@ -54,7 +54,7 @@ SA(Software Assurance) L&SA(라이선스 및 Software Assurance)는 System Cente
 
        - 그러나 프로그램 SA가 만료되고 System Center Configuration Manager에 대한 라이선스가 여전히 있는 경우 더 이상 현재 분기를 사용할 수 없습니다. 이 FAQ의 6번 ***내 SA가 만료되었지만 L&SA가 있으면 어떻게 되나요?***를 참조하세요.
 
-       Https://www.microsoft.com/licensing/licensing-programs 및 http://www.microsoftvolumelicensing.com/ProductResults.aspx?doc=Product%20Terms,OST&fid=64 에서라이선스 제공 사항에 대한 자세한 내용을 알아보세요.
+       https://www.microsoft.com/licensing/licensing-programs 및 http://www.microsoftvolumelicensing.com/ProductResults.aspx?doc=Product%20Terms,OST&fid=64 에서라이선스 제공 사항에 대한 자세한 내용을 알아보세요.
 
 4.    **"동등한 구독"이라는 용어를 봤는데 어떤 프로그램을 의미하는 건가요?**   
        동등한 구독은 [EMS(Enterprise Mobility + Security)](http://www.microsoftvolumelicensing.com/ProductResults.aspx?doc=Product%20Terms,OST&fid=51) 또는 [SPE(Secure Productive Enterprise)](https://www.microsoft.com/secure-productive-enterprise/default.aspx)와 같은 프로그램을 의미합니다. 다른 프로그램도 있긴 하지만 이런 프로그램이 가장 일반적입니다. Microsoft 볼륨 라이선스 제품 용어에서 이러한 용어를 관리 라이선스 동등 라이선스라고 합니다.
@@ -68,7 +68,7 @@ SA(Software Assurance) L&SA(라이선스 및 Software Assurance)는 System Cente
   2016년 10월 1일 이후에 SA가 만료되었으며 System Center Configuration Manager에 대한 영구 라이선스를 보유하는 경우 지속적으로 사용하기 위한 유일한 방법은 System Center 2012 R2 Configuration Manager 및 사용 가능한 서비스 팩을 설치하고 사용하는 것입니다. SA가 만료되었을 때 현재 분기를 제거해야 하며 이전 버전의 제품을 다시 설치해야 했습니다. System Center Configuration Manager 현재 분기에서 이전 버전의 Configuration Manager로 마이그레이션하거나 다운그레이드할 수는 없습니다.
 
 7. **내가 현재 분기를 “소유”하나요?**   
-  아니요. 활성 SA를 보유하는 동안 현재 분기를 사용하도록 허가됩니다. 예를 들어 *L&SA *를 통해 *SA*가 만료되면 현재 분기를 사용하는 권한이 포함되지 않은 *L(라이선스)* 권한만 보유하게 됩니다. L에서 영구적인 권리를 제공하는 경우 현재 분기 대신 System Center Configuration Manager(또는 2016년 10월 1일 전에 SA가 만료된 경우 System Center 2012 R2 Configuration Manager)를 사용할 수 있습니다.
+  아니요. 활성 SA를 보유하는 동안 현재 분기를 사용하도록 허가됩니다. 예를 들어 *L&SA*를 통해 *SA*가 만료되면 현재 분기를 사용하는 권한이 포함되지 않은 *L(라이선스)* 권한만 보유하게 됩니다. L에서 영구적인 권리를 제공하는 경우 현재 분기 대신 System Center Configuration Manager(또는 2016년 10월 1일 전에 SA가 만료된 경우 System Center 2012 R2 Configuration Manager)를 사용할 수 있습니다.
 
 8. **SA 없이 System Center Configuration Manager 독립 실행형을 구매할 수 있나요?**      
   아니요.  System Center Configuration Manager를 사용하는 권한을 얻을 수 있는 유일한 방법은 SA가 포함된 라이선스를 획득하는 것입니다. System Center Configuration Manager가 개발 및 테스트 용도(프로덕션용이 아닌)로 제공되는 개발자 프로그램(예: MSDN)이 있습니다.
