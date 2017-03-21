@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager를 사용하여 도메인 이름 요구 사항 확인 | Microsoft Docs"
 description: "System Center Configuration Manager를 사용하여 도메인 이름 요구 사항 확인"
 ms.custom: na
-ms.date: 03/05/2017
+ms.date: 03/21/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,8 +13,8 @@ ms.topic: article
 ms.assetid: 522c2e82-20eb-4f38-859b-d55640b24e32
 caps.latest.revision: 18
 caps.handback.revision: 0
-author: mtillman
-ms.author: mtillman
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
@@ -51,6 +51,6 @@ ms.lasthandoff: 03/06/2017
 
      AD FS를 사용하지 않을 경우 각 사용자의 Microsoft Online 암호를 설정해야 합니다.
 
-     > [!div class="button"]
-     [< 이전 단계](create-mdm-collection.md)  [다음 단계 >](configure-intune-subscription.md)
+> [!div class="button"]
+[< 이전 단계](create-mdm-collection.md)  [다음 단계 >](configure-intune-subscription.md)
 
