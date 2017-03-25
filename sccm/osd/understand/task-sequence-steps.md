@@ -1,8 +1,8 @@
 ---
-title: "작업 순서 단계 | Microsoft 문서"
+title: "작업 순서 단계- Configuration Manager | Microsoft 문서"
 description: "Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계를 알아봅니다."
 ms.custom: na
-ms.date: 01/04/2017
+ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 46c8004afee4b18d5c7a2fcc5dac0f7d0d1f823c
-ms.openlocfilehash: 2898afdea131f4114bc645cb11a2c6ffacb42417
+ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
+ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -29,7 +30,7 @@ ms.openlocfilehash: 2898afdea131f4114bc645cb11a2c6ffacb42417
 Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계는 다음과 같습니다. 작업 순서를 편집하는 방법에 대한 자세한 내용은 [작업 순서 편집](../deploy-use/manage-task-sequences-to-automate-tasks.md#BKMK_ModifyTaskSequence)을 참조하세요.  
 
 
-##  <a name="a-namebkmkapplydataimagea-apply-data-image-task-sequence-step"></a><a name="BKMK_ApplyDataImage"></a> 데이터 이미지 적용 작업 순서 단계  
+##  <a name="BKMK_ApplyDataImage"></a> 데이터 이미지 적용 작업 순서 단계  
  **데이터 이미지 적용** 작업 순서 단계를 사용하여 지정한 대상 파티션에 데이터 이미지를 복사할 수 있습니다.  
 
  이 단계는 Windows PE에서만 실행됩니다. 표준 운영 체제에서는 실행되지 않습니다. 이 동작의 작업 순서 변수에 대한 자세한 내용은 [작업 순서 동작 변수](task-sequence-action-variables.md)를 참조하세요.  
@@ -71,7 +72,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
  **이미지를 적용하기 전에 파티션의 모든 내용 삭제**  
  이미지를 설치하기 전에 대상 파티션의 모든 파일을 삭제하도록 지정합니다. 파티션의 내용을 삭제하지 않고 이 단계를 사용하여 이전에 대상으로 지정된 파티션에 추가 내용을 적용할 수 있습니다.  
 
-##  <a name="a-namebkmkapplydriverpackagea-apply-driver-package"></a><a name="BKMK_ApplyDriverPackage"></a> 드라이버 패키지 적용  
+##  <a name="BKMK_ApplyDriverPackage"></a> 드라이버 패키지 적용  
  **드라이버 패키지 적용** 작업 순서 단계를 사용하여 드라이버 패키지의 모든 드라이버를 다운로드하고 Windows 운영 체제에 설치할 수 있습니다.
 
  **드라이버 패키지 적용** 작업 순서 단계를 수행하면 드라이버 패키지의 모든 장치 드라이버를 Windows에서 사용할 수 있습니다. 이 단계를 작업 순서의 **운영 체제 적용**  단계와 **Windows 및 ConfigMgr 설치** 단계 사이에 추가하여 드라이버 패키지의 모든 장치 드라이버를 Windows에서 제공할 수 있습니다. 일반적으로 **드라이버 패키지 적용** 단계는 **드라이버 자동 적용** 작업 순서 단계 뒤에 배치됩니다. **드라이버 패키지 적용** 작업 순서 단계는 독립 실행형 미디어 배포 시나리오에도 유용합니다.  
@@ -114,7 +115,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
  **허용되는 Windows 버전에서 서명되지 않은 드라이버 자동 설치**  
  Windows에서 참조 컴퓨터에 서명되지 않은 드라이버를 설치하도록 허용하려면 이 옵션을 선택합니다.  
 
-##  <a name="a-namebkmkapplynetworksettingsa-apply-network-settings-step"></a><a name="BKMK_ApplyNetworkSettings"></a> 네트워크 설정 단계 적용  
+##  <a name="BKMK_ApplyNetworkSettings"></a> 네트워크 설정 단계 적용  
  **네트워크 설정 적용** 작업 순서 단계를 사용하여 대상 컴퓨터에 대한 네트워크 또는 작업 그룹 구성 정보를 지정합니다. 지정된 값은 **Windows 및 ConfigMgr 설치** 작업 순서 단계가 실행될 때 Windows 설치 프로그램에서 사용하기에 적절한 응답 파일 형식으로 저장됩니다.  
 
  이 작업 순서 단계는 표준 운영 체제 또는 Windows PE에서 실행됩니다. 이 동작의 작업 순서 변수에 대한 자세한 내용은 [네트워크 설정 적용 작업 순서 동작 변수](task-sequence-action-variables.md#BKMK_ApplyNetworkSettings)를 참조하세요.  
@@ -148,7 +149,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
  **어댑터 설정**  
  컴퓨터에 있는 각 네트워크 어댑터에 대한 네트워크 구성을 지정합니다. **새로 만들기** 를 클릭하여 **네트워크 설정** 대화 상자를 열고 네트워크 설정을 지정합니다. 네트워크 설정이 이전 **네트워크 설정 캡처** 작업 순서 단계에서 캡처된 경우에는 이전 설정이 네트워크 어댑터에 적용되며, 이 단계에서 지정한 설정은 적용되지 않습니다. 네트워크 설정이 이전에 캡처되지 않은 경우에는 **네트워크 설정 적용** 단계에서 지정된 설정이 Windows 장치 열거 순서대로 네트워크 어댑터에 적용됩니다.  
 
-##  <a name="a-namebkmkapplyoperatingsystemimagea-apply-operating-system-image"></a><a name="BKMK_ApplyOperatingSystemImage"></a> 운영 체제 이미지 적용  
+##  <a name="BKMK_ApplyOperatingSystemImage"></a> 운영 체제 이미지 적용  
  **운영 체제 이미지 적용** 작업 순서 단계를 사용하여 대상 컴퓨터에 운영 체제를 설치합니다. 이 작업 순서 단계는 운영 체제 이미지를 사용하여 운영 체제를 설치하는지 또는 운영 체제 설치 패키지를 사용하여 운영 체제를 설치하는지에 따라 일련의 동작을 수행합니다.  
 
  **운영 체제 이미지 적용** 단계는 운영 체제 이미지를 사용하는 경우 다음 작업을 수행합니다.  
@@ -231,7 +232,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
 
 -   **변수에 저장된 논리적 드라이브 문자** - Windows PE에서 파티션에 할당된 드라이브 문자를 포함하는 작업 순서 변수를 지정합니다. 이 변수는 일반적으로 **디스크 포맷 및 파티션** 작업 순서 동작에 대한 **파티션 속성** 대화 상자의 고급 섹션에서 설정됩니다.  
 
-##  <a name="a-namebkmkapplywindowssettingsa-apply-windows-settings"></a><a name="BKMK_ApplyWindowsSettings"></a> Windows 설정 적용  
+##  <a name="BKMK_ApplyWindowsSettings"></a> Windows 설정 적용  
  **Windows 설정 적용** 작업 순서 단계를 사용하여 대상 컴퓨터에 대한 Windows 설정을 구성할 수 있습니다. 지정된 값은 **Windows 및 ConfigMgr 설치** 작업 순서 단계가 실행될 때 Windows 설치 프로그램에서 사용하기에 적절한 응답 파일 형식으로 저장됩니다.  
 
  이 작업 순서 단계는 Windows PE에서만 실행됩니다. 표준 운영 체제에서는 실행되지 않습니다. 이 동작의 작업 순서 변수에 대한 자세한 내용은 [Windows 설정 적용 작업 순서 동작 변수](task-sequence-action-variables.md#BKMK_ApplyWindowsSettings)를 참조하세요.  
@@ -277,7 +278,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
  **표준 시간대**  
  대상 컴퓨터에서 구성할 표준 시간대를 지정합니다. 이 값은 **Windows 설정 캡처** 작업 순서 단계에서 캡처된 값으로 재정의될 수 있습니다.  
 
-##  <a name="a-namebkmkautoapplydriversa-auto-apply-drivers"></a><a name="BKMK_AutoApplyDrivers"></a> 드라이버 자동 적용  
+##  <a name="BKMK_AutoApplyDrivers"></a> 드라이버 자동 적용  
  **드라이버 자동 적용** 작업 순서 단계를 사용하여 드라이버를 일치시키고 운영 체제 배포의 일부로 설치할 수 있습니다.  
 
  **드라이버 자동 적용** 작업 순서 단계는 다음 동작을 수행합니다.  
@@ -336,7 +337,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
 > [!IMPORTANT]  
 >  이 옵션은 드라이버 서명 정책을 구성할 수 없는 운영 체제에는 적용되지 않습니다.  
 
-##  <a name="a-namebkmkcapturenetworksettingsa-capture-network-settings"></a><a name="BKMK_CaptureNetworkSettings"></a> 네트워크 설정 캡처  
+##  <a name="BKMK_CaptureNetworkSettings"></a> 네트워크 설정 캡처  
  **네트워크 설정 캡처** 작업 순서 단계를 사용하여 작업 순서를 실행하는 컴퓨터에서 Microsoft 네트워크 설정을 캡처할 수 있습니다. 설정은 작업 순서 변수에 저장되며, **네트워크 설정 적용** 작업 순서 단계에서 구성한 기본 설정을 재정의합니다.  
 
  이 작업 순서 단계는 표준 운영 체제에서만 실행됩니다. Windows PE에서는 실행되지 않습니다. 이 동작의 작업 순서 변수에 대한 자세한 내용은 [네트워크 설정 캡처 작업 순서 동작 변수](task-sequence-action-variables.md#BKMK_CaptureNetworkSettings)를 참조하세요.  
@@ -364,7 +365,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
  **네트워크 어댑터 구성 마이그레이션**  
  대상 컴퓨터의 네트워크 어댑터 구성을 캡처합니다. 캡처되는 정보에는 전역 네트워크 설정, 어댑터 수 및 각 어댑터와 연관된 네트워크 설정이 포함되며, 이러한 설정에는 DNS, WINS, IP 및 포트 필터와 연관된 설정이 포함됩니다.  
 
-##  <a name="a-namebkmkcaptureoperatingsystemimagea-capture-operating-system-image"></a><a name="BKMK_CaptureOperatingSystemImage"></a> 운영 체제 이미지 캡처  
+##  <a name="BKMK_CaptureOperatingSystemImage"></a> 운영 체제 이미지 캡처  
  **운영 체제 이미지 캡처** 작업 순서 단계를 사용하여 참조 컴퓨터에서 하나 이상의 이미지를 캡처하고 지정된 네트워크 공유의 WIM 파일에 저장할 수 있습니다. 그런 다음 운영 체제 이미지 패키지 추가 마법사를 사용하여 이 .WIM 파일을 Configuration Manager로 가져와 이미지 기반 운영 체제 배포에 사용할 수 있습니다.  
 
  참조 컴퓨터의 각 볼륨(드라이브)은 .wim 파일 내 별도의 이미지로 캡처됩니다. 참조된 컴퓨터에 여러 볼륨이 있는 경우에는 결과 WIM 파일에 각 볼륨에 대한 별도의 이미지가 포함됩니다. NTFS 또는 FAT32로 포맷된 볼륨만 캡처됩니다. 다른 형식의 볼륨 및 USB 볼륨은 건너뜁니다.  
@@ -407,7 +408,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
  **운영 체제 이미지 캡처 계정**  
  지정한 네트워크 공유에 대한 권한이 있는 Windows 계정을 입력해야 합니다. **설정** 을 클릭하여 해당 Windows 계정의 이름을 지정합니다.  
 
-##  <a name="a-namebkmkcaptureuserstatea-capture-user-state"></a><a name="BKMK_CaptureUserState"></a> 사용자 상태 캡처  
+##  <a name="BKMK_CaptureUserState"></a> 사용자 상태 캡처  
  **사용자 상태 캡처** 작업 순서 단계를 사용하여 USMT(사용자 환경 마이그레이션 도구)를 통해 작업 순서를 실행하는 컴퓨터에서 사용자 상태 및 설정을 캡처할 수 있습니다. 이 작업 순서 단계는 **사용자 상태 복원** 작업 순서 단계와 함께 사용됩니다. USMT 3.0.1 이상에서 이 옵션은 항상 Configuration Manager에서 생성 및 관리되는 암호화 키를 사용하여 USMT 상태 저장소를 암호화합니다.  
 
  운영 체제를 배포할 때 사용자 상태를 관리하는 방법에 대한 자세한 내용은 [사용자 상태 관리](../get-started/manage-user-state.md)를 참조하세요.  
@@ -473,7 +474,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
  **VSS(Volume Copy Shadow) 서비스를 사용하여 캡처**  
  이 옵션을 사용하면 다른 응용 프로그램에 의해 편집이 잠겨 있는 경우에도 파일을 캡처할 수 있습니다.  
 
-##  <a name="a-namebkmkcapturewindowssettingsa-capture-windows-settings"></a><a name="BKMK_CaptureWindowsSettings"></a> Windows 설정 캡처  
+##  <a name="BKMK_CaptureWindowsSettings"></a> Windows 설정 캡처  
  **Windows 설정 캡처** 작업 순서 단계를 사용하여 작업 순서를 실행하는 컴퓨터에서 Windows 설정을 캡처할 수 있습니다. 설정은 작업 순서 변수에 저장되며, **Windows 설정 적용** 작업 순서 단계에서 구성한 기본 설정을 재정의합니다.  
 
  이 작업 순서 단계는 Windows PE 또는 표준 운영 체제에서 실행됩니다. 이 동작의 작업 순서 변수에 대한 자세한 내용은 [Windows 설정 캡처 작업 순서 동작 변수](task-sequence-action-variables.md#BKMK_CaptureWindowsSettings)를 참조하세요.  
@@ -504,7 +505,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
  **표준 시간대 마이그레이션**  
  컴퓨터에서 표준 시간대 설정을 캡처하려면 이 옵션을 선택합니다.  
 
-##  <a name="a-namebkmkcheckreadinessa-check-readiness"></a><a name="BKMK_CheckReadiness"></a> 준비 확인  
+##  <a name="BKMK_CheckReadiness"></a> 준비 확인  
  **준비 확인** 작업 순서 단계를 사용하여 대상 컴퓨터가 지정된 배포 전제 조건을 충족하는지 확인할 수 있습니다.  
 
 ### <a name="details"></a>세부 정보  
@@ -536,7 +537,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
  **현재 OS 새로 고침 확인**  
  대상 컴퓨터에 설치된 운영 체제가 지정된 요구 사항을 충족하는지 확인하려면 이 설정을 선택합니다. 이 설정은 기본적으로 **클라이언트**값으로 선택됩니다.  
 
-##  <a name="a-namebkmkconnecttonetworkfoldera-connect-to-network-folder"></a><a name="BKMK_ConnectToNetworkFolder"></a> 네트워크 폴더에 연결  
+##  <a name="BKMK_ConnectToNetworkFolder"></a> 네트워크 폴더에 연결  
  **네트워크 폴더에 연결** 작업 순서 동작을 사용하여 공유 네트워크 폴더에 대한 연결을 만들 수 있습니다.  
 
  이 작업 순서 단계는 표준 운영 체제 또는 Windows PE에서 실행됩니다. 이 동작의 작업 순서 변수에 대한 자세한 내용은 [네트워크 폴더에 연결 작업 순서 동작 변수](task-sequence-action-variables.md#BKMK_ConnecttoNetworkFolder)를 참조하세요.  
@@ -552,7 +553,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
 
 -   단계를 실행하기 위해 충족해야 하는 조건 지정  
 
-##  <a name="a-namebkmkconvertdisktodynamica-convert-disk-to-dynamic"></a><a name="BKMK_ConvertDisktoDynamic"></a> 동적 디스크로 변환  
+##  <a name="BKMK_ConvertDisktoDynamic"></a> 동적 디스크로 변환  
  **동적 디스크로 변환** 작업 순서 단계를 사용하여 실제 디스크를 기본 백업 형식에서 동적 디스크 형식으로 변환할 수 있습니다.  
 
  이 단계는 표준 운영 체제 또는 Windows PE에서 실행됩니다. 이 동작의 작업 순서 변수에 대한 자세한 내용은 [동적 디스크로 변환 작업 순서 동작 변수](task-sequence-action-variables.md#BKMK_ConvertDisk)를 참조하세요.  
@@ -577,7 +578,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
  **디스크 번호**  
  변환할 디스크의 실제 디스크 번호입니다.  
 
-##  <a name="a-namebkmkdisablebitlockera-disable-bitlocker"></a><a name="BKMK_DisableBitLocker"></a> BitLocker 사용 안 함  
+##  <a name="BKMK_DisableBitLocker"></a> BitLocker 사용 안 함  
  **BitLocker 사용 안 함** 작업 순서 단계를 사용하여 현재 운영 체제 드라이브 또는 특정 드라이브에서 BitLocker 암호화를 사용하지 않도록 설정할 수 있습니다. 이 동작은 하드 드라이브에서 키 보호기를 일반 텍스트로 표시된 상태로 두고 드라이브의 내용을 해독하지 않습니다. 따라서 이 동작은 거의 즉시 완료됩니다.  
 
 > [!NOTE]  
@@ -610,7 +611,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
  **특정 드라이브**  
  특정 드라이브에서 BitLocker를 사용하지 않도록 설정합니다. 드롭다운 목록을 사용하여 BitLocker를 사용하지 않도록 설정할 드라이브를 지정할 수 있습니다.  
 
-##  <a name="a-namebkmkdownloadpackagecontenta-download-package-content"></a><a name="BKMK_DownloadPackageContent"></a> 패키지 콘텐츠 다운로드  
+##  <a name="BKMK_DownloadPackageContent"></a> 패키지 콘텐츠 다운로드  
  **패키지 콘텐츠 다운로드** 작업 순서 단계를 사용하여 다음 패키지 유형 중 하나를 다운로드합니다.  
 
 -   운영 체제 이미지  
@@ -664,7 +665,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
  **패키지 다운로드가 실패할 경우 목록에 있는 다른 패키지를 계속해서 다운로드**  
  패키지 다운로드가 실패하면 목록의 다음 패키지로 이동하여 다운로드를 시작하도록 지정합니다.  
 
-##  <a name="a-namebkmkenablebitlockera-enable-bitlocker"></a><a name="BKMK_EnableBitLocker"></a> BitLocker 사용  
+##  <a name="BKMK_EnableBitLocker"></a> BitLocker 사용  
  **BitLocker 사용** 작업 순서 단계를 사용하여 하드 드라이브의 둘 이상의 파티션에서 BitLocker 암호화를 사용하도록 설정할 수 있습니다. 첫 번째 활성 파티션에는 Windows 부트스트랩 코드가 포함되고, 다른 파티션에는 운영 체제가 포함됩니다. 부트스트랩 파티션은 암호화되지 않은 상태로 유지해야 합니다.  
 
  **BitLocker 사전 프로비전** 작업 순서 단계를 사용하여 Windows PE에서 작업하는 동안 드라이브에서 BitLocker를 사용하도록 설정할 수 있습니다. 자세한 내용은 이 항목에서 [BitLocker 사전 프로비전](#BKMK_PreProvisionBitLocker) 섹션을 참조하세요.  
@@ -738,7 +739,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
 
  대용량 하드 드라이브를 암호화하는 경우 암호화 프로세스를 완료하는 데 몇 시간이 걸릴 수 있습니다. 이 옵션을 선택하지 않으면 작업 순서가 즉시 계속됩니다.  
 
-##  <a name="a-namebkmkformatandpartitiondiska-format-and-partition-disk"></a><a name="BKMK_FormatandPartitionDisk"></a> 디스크 포맷 및 파티션 만들기  
+##  <a name="BKMK_FormatandPartitionDisk"></a> 디스크 포맷 및 파티션 만들기  
  **디스크 포맷 및 파티션 만들기** 작업 순서 단계를 사용하여 대상 컴퓨터에서 지정된 디스크를 포맷하고 파티션을 만들 수 있습니다.  
 
 > [!IMPORTANT]  
@@ -791,7 +792,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
 
  파티션을 삭제하려면 삭제할 파티션을 선택하고 **삭제**를 클릭합니다.  
 
-##  <a name="a-namebkmkinstallapplicationa-install-application"></a><a name="BKMK_InstallApplication"></a> 응용 프로그램 설치  
+##  <a name="BKMK_InstallApplication"></a> 응용 프로그램 설치  
  **응용 프로그램 설치** 작업 순서 단계를 사용하여 작업 순서의 일부로 응용 프로그램을 설치할 수 있습니다. 이 단계는 작업 순서 단계에서 지정된 응용 프로그램 집합 또는 작업 순서 변수의 동적 목록에서 지정된 응용 프로그램 집합을 설치할 수 있습니다. 이 단계를 실행하면 정책 폴링 간격을 기다리지 않고 응용 프로그램 설치가 즉시 시작됩니다.  
 
  설치 된 응용 프로그램은 다음 조건을 충족해야 합니다.  
@@ -872,7 +873,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
  **응용 프로그램 설치가 실패할 경우 목록의 다른 응용 프로그램 설치 계속**  
  이 설정은 개별 응용 프로그램 설치에 실패한 경우 단계가 계속되도록 지정합니다. 이 설정을 지정하면 반환되는 설치 오류에 상관없이 작업 순서가 계속됩니다. 이 설정을 지정하지 않으면 설치에 실패한 경우 작업 순서 단계가 즉시 종료됩니다.  
 
-##  <a name="a-namebkmkinstalldeploymenttoolsa-install-deployment-tools"></a><a name="BKMK_InstallDeploymentTools"></a> 배포 도구 설치  
+##  <a name="BKMK_InstallDeploymentTools"></a> 배포 도구 설치  
  **배포 도구 설치** 작업 순서 단계를 사용하여 Sysprep 배포 도구가 포함된 Configuration Manager 패키지를 설치할 수 있습니다.  
 
 ### <a name="details"></a>세부 정보  
@@ -901,7 +902,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
 
 -   Windows Server 2003 SP2  
 
-##  <a name="a-namebkmkinstallpackagea-install-package"></a><a name="BKMK_InstallPackage"></a> 패키지 설치
+##  <a name="BKMK_InstallPackage"></a> 패키지 설치
 
  **패키지 설치** 작업 순서 단계를 사용하여 작업 순서의 일부로 소프트웨어를 설치할 수 있습니다. 이 단계를 실행하면 정책 폴링 간격을 기다리지 않고 설치가 즉시 시작됩니다.  
 
@@ -981,7 +982,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
  **소프트웨어 패키지 설치가 실패할 경우 목록의 다른 패키지 설치 계속**  
  이 설정은 개별 소프트웨어 패키지 설치에 실패한 경우 단계가 계속되도록 지정합니다. 이 설정을 지정하면 반환되는 설치 오류에 상관없이 작업 순서가 계속됩니다. 이 설정을 지정하지 않으면 설치에 실패한 경우 작업 순서 단계가 즉시 종료됩니다.  
 
-##  <a name="a-namebkmkinstallsoftwareupdatesa-install-software-updates"></a><a name="BKMK_InstallSoftwareUpdates"></a> 소프트웨어 업데이트 설치  
+##  <a name="BKMK_InstallSoftwareUpdates"></a> 소프트웨어 업데이트 설치  
  **소프트웨어 업데이트 설치** 작업 순서 단계를 사용하여 대상 컴퓨터에 소프트웨어 업데이트를 설치할 수 있습니다. 이 작업 순서 단계가 실행될 때까지 적용 가능한 소프트웨어 업데이트에 대해 대상 컴퓨터가 평가되지 않습니다. 이 작업 순서 단계가 실행되면 다른 모든 Configuration Manager 관리 클라이언트와 마찬가지로 소프트웨어 업데이트에 대해 대상 컴퓨터가 평가됩니다. 특히, 이 단계는 컴퓨터가 현재 속해 있는 컬렉션을 대상으로 하는 소프트웨어 업데이트만 설치합니다.  
 >  [!IMPORTANT]
 >소프트웨어 업데이트 설치 작업 순서 단계를 사용하는 경우 훨씬 더 나은 성능을 위해 Windows Update 에이전트의 최신 버전을 설치하는 것이 좋습니다.
@@ -1027,7 +1028,7 @@ Configuration Manager 버전 1606부터, 캐시된 검사 결과를 사용하는
 새 작업 순서 변수인 SMSTSSoftwareUpdateScanTimeout이 Configuration Manager 버전 1606에 도입되었으므로, 설치 소프트웨어 업데이트 작업 순서 단계 중 소프트웨어 업데이트 검사에 대한 제한 시간을 제어하는 기능을 사용할 수 있습니다. 기본값은 30분입니다. 자세한 내용은 [작업 순서 기본 제공 변수](task-sequence-built-in-variables.md)를 참조하세요.
 
 
-##  <a name="a-namebkmkjoindomainorworkgroupa-join-domain-or-workgroup"></a><a name="BKMK_JoinDomainorWorkgroup"></a> 도메인 또는 작업 그룹 가입  
+##  <a name="BKMK_JoinDomainorWorkgroup"></a> 도메인 또는 작업 그룹 가입  
  **도메인 또는 작업 그룹 가입** 작업 순서 단계를 사용하여 작업 그룹 또는 도메인에 대상 컴퓨터를 추가할 수 있습니다.  
 
  이 작업 순서 단계는 표준 운영 체제에서만 실행됩니다. Windows PE에서는 실행되지 않습니다. 이 작업 순서 동작의 작업 순서 변수에 대한 자세한 내용은 [도메인 또는 작업 그룹 가입 작업 순서 동작 변수](task-sequence-action-variables.md#BKMK_JoinDomainWorkgroup)를 참조하세요.  
@@ -1062,7 +1063,7 @@ Configuration Manager 버전 1606부터, 캐시된 검사 결과를 사용하는
 
  *도메인\계정*  
 
-## <a name="a-namebkmkprepareconfigmgrclientforcapturea-prepare-configmgr-client-for-capture"></a><a name="BKMK_PrepareConfigMgrClientforCapture"></a> ConfigMgr 클라이언트 캡처 준비  
+## <a name="BKMK_PrepareConfigMgrClientforCapture"></a> ConfigMgr 클라이언트 캡처 준비  
 **ConfigMgr 클라이언트 캡처 준비** 단계를 사용하여 Configuration Manager 클라이언트를 제거하거나 이미징 프로세스의 일부로 캡처를 준비하기 위해 참조 컴퓨터에 클라이언트를 구성할 수 있습니다.
 
 Configuration Manager 버전 1610부터 ConfigMgr 클라이언트 준비 단계에서 주요 정보만 제거하는 대신 Configuration Manager 클라이언트를 완전히 제거합니다. 작업 순서에서 운영 체제 캡처 이미지를 배포할 때마다 새 Configuration Manager 클라이언트가 설치됩니다.  
@@ -1100,7 +1101,7 @@ Configuration Manager 버전 1610 이전에는 이 단계에서 다음과 같은
  **설명**  
  이 단계에서 수행되는 동작에 대한 자세한 정보입니다.  
 
-##  <a name="a-namebkmkpreparewindowsforcapturea-prepare-windows-for-capture"></a><a name="BKMK_PrepareWindowsforCapture"></a> Windows 캡처 준비  
+##  <a name="BKMK_PrepareWindowsforCapture"></a> Windows 캡처 준비  
  **Windows 캡처 준비** 작업 순서 단계를 사용하여 참조 컴퓨터에서 운영 체제 이미지를 캡처할 때 사용할 Sysprep 옵션을 지정할 수 있습니다. 이 작업 순서 동작은 Sysprep를 실행한 다음 컴퓨터를 작업 순서에 지정된 Windows PE 부팅 이미지로 다시 부팅합니다. 이 동작을 완료하려면 참조 컴퓨터가 도메인에 가입되어 있지 않아야 합니다.  
 
  이 작업 순서 단계는 표준 운영 체제에서만 실행됩니다. Windows PE에서는 실행되지 않습니다. 이 작업 순서 동작의 작업 순서 변수에 대한 자세한 내용은 [Windows 캡처 준비 작업 순서 동작 변수](task-sequence-action-variables.md#BKMK_PrepareWindowsCapture)를 참조하세요.  
@@ -1128,7 +1129,7 @@ Configuration Manager 버전 1610 이전에는 이 단계에서 다음과 같은
  **활성화 플래그 다시 설정 안 함**  
  Sysprep에서 제품 활성화 플래그를 다시 설정하지 못하도록 하려면 이 옵션을 선택합니다.  
 
-##  <a name="a-namebkmkpreprovisionbitlockera-pre-provision-bitlocker"></a><a name="BKMK_PreProvisionBitLocker"></a> BitLocker 사전 프로비전  
+##  <a name="BKMK_PreProvisionBitLocker"></a> BitLocker 사전 프로비전  
  **BitLocker 사전 프로비전** 작업 순서 단계를 사용하여 Windows PE에서 작업하는 동안 드라이브에서 BitLocker를 사용하도록 설정할 수 있습니다. 사용된 드라이브 공간만 암호화되므로 암호화 속도가 훨씬 빠릅니다. 운영 체제가 설치된 후 [Bitlocker 사용](#BKMK_EnableBitLocker) 작업 순서 단계를 사용하여 키 관리 옵션을 적용합니다. 이 단계는 Windows PE에서만 실행됩니다. 표준 운영 체제에서는 실행되지 않습니다.  
 
 > [!IMPORTANT]  
@@ -1157,7 +1158,7 @@ Configuration Manager 버전 1610 이전에는 이 단계에서 다음과 같은
  **컴퓨터에 TPM이 없거나 TPM이 사용되지 않는 경우 이 단계 건너뛰기**  
  컴퓨터 하드웨어가 TPM을 지원하지 않는 경우 또는 TPM이 사용되지 않는 경우 드라이브 암호화를 건너뛰려면 이 옵션을 선택합니다. 예를 들어 가상 컴퓨터에 운영 체제를 배포할 때 이 옵션을 사용할 수 있습니다.  
 
-##  <a name="a-namebkmkreleasestatestorea-release-state-store"></a><a name="BKMK_ReleaseStateStore"></a> 상태 저장소 해제  
+##  <a name="BKMK_ReleaseStateStore"></a> 상태 저장소 해제  
  **상태 저장소 해제** 작업 순서 단계를 사용하여 상태 마이그레이션 지점에 캡처 또는 복원 동작이 완료되었음을 알릴 수 있습니다. 이 단계는 **상태 저장소 요청**, **사용자 상태 캡처**및 **사용자 상태 복원** 작업 순서 단계와 함께 상태 마이그레이션 지점 및 USMT(사용자 환경 마이그레이션 도구)를 사용하여 사용자 상태 데이터를 마이그레이션하는 데 사용됩니다.  
 
  운영 체제를 배포할 때 사용자 상태를 관리하는 방법에 대한 자세한 내용은 [사용자 상태 관리](../get-started/manage-user-state.md)를 참조하세요.  
@@ -1188,7 +1189,7 @@ Configuration Manager 버전 1610 이전에는 이 단계에서 다음과 같은
  **설명**  
  이 단계에서 수행되는 동작에 대한 자세한 정보입니다.  
 
-##  <a name="a-namebkmkrequeststatestorea-request-state-store"></a><a name="BKMK_RequestStateStore"></a> 상태 저장소 요청  
+##  <a name="BKMK_RequestStateStore"></a> 상태 저장소 요청  
  **상태 저장소 요청** 작업 순서 단계를 사용하여 컴퓨터에서 상태를 캡처하거나 컴퓨터로 상태를 복원할 때 상태 마이그레이션 지점에 대한 액세스를 요청할 수 있습니다.  
 
  운영 체제를 배포할 때 사용자 상태를 관리하는 방법에 대한 자세한 내용은 [사용자 상태 관리](../get-started/manage-user-state.md)를 참조하세요.  
@@ -1236,7 +1237,7 @@ Configuration Manager 버전 1610 이전에는 이 단계에서 다음과 같은
  **컴퓨터 계정에서 상태 저장소에 연결하지 못하는 경우 네트워크 액세스 계정 사용**  
  Configuration Manager 클라이언트에서 컴퓨터 계정을 사용하여 SMP 상태 저장소에 액세스할 수 없는 경우 Configuration Manager 네트워크 액세스 계정 자격 증명을 사용하여 상태 마이그레이션 지점에 연결하도록 지정합니다. 이 옵션은 다른 컴퓨터에서 네트워크 액세스 계정을 사용하여 저장된 상태에 액세스할 수 있기 때문에 안전하지 않지만 대상 컴퓨터가 도메인에 가입하지 않은 경우에는 필요할 수 있습니다.  
 
-##  <a name="a-namebkmkrestartcomputera-restart-computer"></a><a name="BKMK_RestartComputer"></a> 컴퓨터 다시 시작  
+##  <a name="BKMK_RestartComputer"></a> 컴퓨터 다시 시작  
  **컴퓨터 다시 시작** 작업 순서 단계를 사용하여 작업 순서를 실행하는 컴퓨터를 다시 시작할 수 있습니다. 다시 시작 후 컴퓨터는 자동으로 작업 순서의 다음 단계를 계속 진행합니다.  
 
  이 단계는 표준 운영 체제 또는 Windows PE에서 실행될 수 있습니다. 이 작업 순서 동작의 작업 순서 변수에 대한 자세한 내용은 [컴퓨터 다시 시작 작업 순서 동작 변수](task-sequence-action-variables.md#BKMK_RestartComputer)를 참조하세요.  
@@ -1273,7 +1274,7 @@ Configuration Manager 버전 1610 이전에는 이 단계에서 다음과 같은
  **메시지 표시 제한 시간**  
  대상 컴퓨터가 다시 시작되기 전에 사용자에게 주어지는 시간(초)을 지정합니다. 기본 시간은&60;초입니다.  
 
-##  <a name="a-namebkmkrestoreuserstatea-restore-user-state"></a><a name="BKMK_RestoreUserState"></a> 사용자 상태 복원  
+##  <a name="BKMK_RestoreUserState"></a> 사용자 상태 복원  
  **사용자 상태 복원** 작업 순서 단계를 사용하여 대상 컴퓨터로 사용자 상태 및 설정을 복원하는 USMT(사용자 환경 마이그레이션 도구)를 시작할 수 있습니다. 이 작업 순서 단계는 **사용자 상태 캡처** 작업 순서 단계와 함께 사용됩니다.  
 
  운영 체제를 배포할 때 사용자 상태를 관리하는 방법에 대한 자세한 내용은 [사용자 상태 관리](../get-started/manage-user-state.md)를 참조하세요.  
@@ -1322,7 +1323,7 @@ Configuration Manager 버전 1610 이전에는 이 단계에서 다음과 같은
  **자세한 정보 로깅 사용**  
  자세한 로그 파일 정보를 생성하려면 이 옵션을 선택합니다. 상태를 복원할 때 Loadstate.log 로그가 생성되고 기본적으로 \windows\system32\ccm\logs 폴더에 있는 작업 순서 로그 폴더에 저장됩니다.  
 
-##  <a name="a-namebkmkruncommandlinea-run-command-line"></a><a name="BKMK_RunCommandLine"></a> 명령줄 실행  
+##  <a name="BKMK_RunCommandLine"></a> 명령줄 실행  
  **명령줄 실행** 작업 순서 단계를 사용하여 지정된 명령줄을 실행할 수 있습니다.  
 
  이 단계는 표준 운영 체제 또는 Windows PE에서 실행할 수 있습니다. 이 작업 순서 동작의 작업 순서 변수에 대한 자세한 내용은 [명령줄 실행 작업 순서 동작 변수](task-sequence-action-variables.md#BKMK_RunCommand)를 참조하세요.  
@@ -1396,7 +1397,7 @@ Configuration Manager 버전 1610 이전에는 이 단계에서 다음과 같은
 > [!IMPORTANT]  
 >  사용자 계정을 지정하는 **명령줄 실행** 작업 순서 동작이 Windows PE에서 실행된 경우에는 동작이 실패합니다. Windows PE는 도메인에 가입할 수 없기 때문입니다. 이 오류는 smsts.log 파일에 기록됩니다.  
 
-##  <a name="a-namebkmkrunpowershellscripta-run-powershell-script"></a><a name="BKMK_RunPowerShellScript"></a> PowerShell 스크립트 실행  
+##  <a name="BKMK_RunPowerShellScript"></a> PowerShell 스크립트 실행  
  **PowerShell 스크립트 실행** 작업 순서 단계를 사용하여 지정된 PowerShell 스크립트를 실행할 수 있습니다.  
 
  이 단계는 표준 운영 체제 또는 Windows PE에서 실행할 수 있습니다. Windows PE에서 이 단계를 실행하려면 부팅 이미지에서 PowerShell을 사용하도록 설정해야 합니다. 부팅 이미지에 대한 속성의 **선택적 구성 요소** 탭에서 Windows PowerShell(WinPE-PowerShell)을 사용하도록 설정할 수 있습니다. 부팅 이미지를 수정하는 방법에 대한 자세한 내용은 [부팅 이미지 관리](../get-started/manage-boot-images.md)를 참조하세요.  
@@ -1453,7 +1454,7 @@ Configuration Manager 버전 1610 이전에는 이 단계에서 다음과 같은
 > [!IMPORTANT]  
 >  PowerShell 1.0에서는 정의되지 않음 및 무시 실행 정책을 지원하지 않습니다.  
 
-##  <a name="a-namebkmksetdynamicvariablesa-set-dynamic-variables"></a><a name="BKMK_SetDynamicVariables"></a> 동적 변수 설정  
+##  <a name="BKMK_SetDynamicVariables"></a> 동적 변수 설정  
  **동적 변수 설정** 작업 순서 단계를 사용하여 다음을 수행할 수 있습니다.  
 
 1.  컴퓨터 및 해당 컴퓨터가 있는 환경에서 정보를 수집한 다음 이 정보를 사용하여 지정된 작업 순서 변수를 설정합니다.  
@@ -1521,7 +1522,7 @@ true로 평가되는 규칙에 대해 설정할 하나 이상의 변수를 지�
 > [!IMPORTANT]  
 >  동적 변수 설정 단계를 통해 작업 순서를 가져올 경우 변수 값에 대해 **비밀 값** 이 설정되어 있으면 작업 순서를 가져올 때 값이 제거됩니다. 따라서 작업 순서를 가져온 후 동적 변수 값을 다시 입력해야 합니다.  
 
-##  <a name="a-namebkmksettasksequencevariablea-set-task-sequence-variable"></a><a name="BKMK_SetTaskSequenceVariable"></a> 작업 순서 변수 설정  
+##  <a name="BKMK_SetTaskSequenceVariable"></a> 작업 순서 변수 설정  
  **작업 순서 변수 설정** 작업 순서 단계를 사용하여 작업 순서에서 사용되는 변수 값을 설정할 수 있습니다.  
 
  이 단계는 표준 운영 체제 또는 Windows PE에서 실행될 수 있습니다. 작업 순서 변수는 작업 순서 동작에서 읽으며, 이러한 동작을 지정합니다. 특정 작업 순서 변수에 대한 자세한 내용은 [작업 순서 동작 변수](task-sequence-action-variables.md)를 참조하세요.  
@@ -1549,7 +1550,7 @@ true로 평가되는 규칙에 대해 설정할 하나 이상의 변수를 지�
  **값**  
  작업 순서 변수와 연결된 값입니다. 값은 %<varname\>% 구문에서 다른 작업 순서 변수일 수 있습니다.  
 
-##  <a name="a-namebkmksetupwindowsandconfigmgra-setup-windows-and-configmgr"></a><a name="BKMK_SetupWindowsandConfigMgr"></a> Windows 및 ConfigMgr 설치  
+##  <a name="BKMK_SetupWindowsandConfigMgr"></a> Windows 및 ConfigMgr 설치  
  **Windows 및 ConfigMgr 설치** 작업 순서 단계를 사용하여 Windows PE에서 새 운영 체제로 전환할 수 있습니다. 이 작업 순서 단계는 임의의 운영 체제 배포 중 필요합니다. Configuration Manager 클라이언트를 새 운영 체제에 설치하고 새 운영 체제에서 작업 순서를 계속 실행하도록 준비합니다.  
 
  이 단계는 Windows PE에서만 실행됩니다. 표준 운영 체제에서는 실행되지 않습니다. 이 작업 순서 동작의 작업 순서 변수에 대한 자세한 내용은 [Windows 및 ConfigMgr 설정 작업 순서 동작 변수](task-sequence-action-variables.md#BKMK_SetupWindows)를 참조하세요.  
@@ -1629,7 +1630,7 @@ true로 평가되는 규칙에 대해 설정할 하나 이상의 변수를 지�
 
  클라이언트 설치 중에 사용할 명령줄 옵션을 지정할 수 있습니다. 예를 들어 **/skipprereq: silverlight.exe** 를 입력하여 Microsoft Silverlight 필수 조건을 설치하지 않도록 CCMSetup.exe에 알릴 수 있습니다. CCMSetup.exe의 사용 가능한 명령줄 옵션에 대한 자세한 내용은 [클라이언트 설치 속성 정보](../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  
 
-##  <a name="a-namebkmkupgradeosa-upgrade-operating-system"></a><a name="BKMK_UpgradeOS"></a> 운영 체제 업그레이드  
+##  <a name="BKMK_UpgradeOS"></a> 운영 체제 업그레이드  
  **운영 체제 업그레이드** 작업 순서 단계를 사용하여 기존 Windows 7, Windows 8, Windows 8.1 또는 Windows 10 운영 체제를  Windows 10으로 업그레이드합니다.  
 
  이 작업 순서 단계는 표준 운영 체제에서만 실행됩니다. Windows PE에서는 실행되지 않습니다.  
@@ -1693,9 +1694,4 @@ true로 평가되는 규칙에 대해 설정할 하나 이상의 변수를 지�
  설치에서 업데이트 검색, 다운로드 및 설치와 같은 동적 업데이트 작업(/DynamicUpdate 명령줄 옵션에 해당)을 수행할지 여부를 지정합니다. 이 설정은 Configuration Manager 소프트웨어 업데이트와 호환되지 않지만 WSUS(독립 실행형) 또는 Windows 업데이트를 사용하여 업데이트를 처리하는 경우 사용할 수 있습니다.  
 
  **재정의 정책 및 기본 Microsoft 업데이트 사용**: 임시로 로컬 정책을 재정의하여 실시간으로 동적 업데이트 작업을 실행하고 컴퓨터가 Windows 업데이트에서 업데이트를 가져오도록 하려면 이 설정을 선택합니다.  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

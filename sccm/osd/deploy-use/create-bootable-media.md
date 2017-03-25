@@ -1,8 +1,8 @@
 ---
-title: "부팅 가능한 미디어 만들기 | Microsoft 문서"
+title: "부팅 가능한 미디어 만들기 - Configuration Manager | Microsoft 문서"
 description: "Configuration Manager에서 부팅 가능한 미디어를 사용하면 쉽게 새 버전의 Windows를 설치하거나 컴퓨터 및 전송 설정을 바꿀 수 있습니다."
 ms.custom: na
-ms.date: 12/21/2016
+ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 66cd6d099acdd9db2bc913a69993aaf5e17237fe
-ms.openlocfilehash: 0a4c2b41f899f6e243e7eb825082514114226a8f
+ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
+ms.openlocfilehash: 9032698fa12bf453041ea06bf330d3b4687c2a97
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -32,7 +33,7 @@ Configuration Manager의 부팅 가능한 미디어에는 부팅 이미지, 선�
 
 -   [기존 컴퓨터 바꾸기 및 설정 전송](replace-an-existing-computer-and-transfer-settings.md)  
 
-##  <a name="a-namebkmkcreatebootablemediaa-create-bootable-media"></a><a name="BKMK_CreateBootableMedia"></a> 부팅 가능한 미디어 만들기  
+##  <a name="BKMK_CreateBootableMedia"></a> 부팅 가능한 미디어 만들기  
  부팅 가능한 미디어로 부팅하면 대상 컴퓨터가 시작되고 네트워크에 연결한 다음 네트워크에서 지정된 작업 순서, 운영 체제 이미지 및 기타 필수 콘텐츠를 검색합니다. 작업 순서는 이 미디어에 포함되어 있지 않으므로 미디어를 다시 만들지 않고도 작업 순서나 콘텐츠를 변경할 수 있습니다. 부팅 가능한 미디어에서 패키지는 암호화되지 않습니다. 미디어에 암호를 추가하는 방법과 같은 적합한 보안 방법을 활용하여 권한 없는 사용자로부터 패키지 콘텐츠를 보호해야 합니다.  
 
  작업 순서 미디어 만들기 마법사를 사용하여 부팅 가능한 미디어를 만들기 전에 다음 조건을 모두 충족해야 합니다.  
@@ -155,9 +156,4 @@ Configuration Manager의 부팅 가능한 미디어에는 부팅 이미지, 선�
 
 ## <a name="next-steps"></a>다음 단계  
 [부팅 가능한 미디어를 사용하여 네트워크를 통해 Windows 배포](use-bootable-media-to-deploy-windows-over-the-network.md)  
-
-
-
-<!--HONumber=Dec16_HO4-->
-
 

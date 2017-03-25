@@ -1,5 +1,5 @@
 ---
-title: "릴리스 정보 | Microsoft 문서"
+title: "릴리스 정보 - Configuration Manager | Microsoft 문서"
 description: "Microsoft 기술 자료 문서에서 다루지 않거나 제품에서 아직 해결되지 않은 긴급한 문제에 대해서는 이 정보를 참조하세요."
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: c6358d65609605bfef3ac533f4caa0df1cfce0c5
-ms.openlocfilehash: 73208c8e9ec15e96a6caaf20b74c1f94d92a8975
+ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b
+ms.openlocfilehash: 9e853c8fda236125717c3912f6f3cb02d6dd1058
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -142,7 +143,7 @@ System Center Configuration Manager 버전 1511 및 1602에 영향을 주는 이
  -  사이트 데이터베이스가 서비스 연결 지점과 동일한 서버에 있지만 SQL 프로토콜 **공유 메모리**가 사용되지 않는 경우
 
 예외는 다음과 유사합니다.
- - *처리되지 않은 예외: System.Data.SqlClient.SqlException: SQL Server에 대한 연결을 설정하는 동안 네트워크 관련 또는 인스턴스 관련 오류가 발생했습니다. 서버를 찾을 수 없거나 액세스할 수 없습니다. 인스턴스 이름이 올바르고 SQL Server가 원격 연결을 허용하도록 구성되었는지 확인합니다. (공급자: 명명된 파이프 공급자, 오류: 40 - SQL Server에 대한 연결을 열 수 없음) - *
+ - *처리되지 않은 예외: System.Data.SqlClient.SqlException: SQL Server에 대한 연결을 설정하는 동안 네트워크 관련 또는 인스턴스 관련 오류가 발생했습니다. 서버를 찾을 수 없거나 액세스할 수 없습니다. 인스턴스 이름이 올바르고 SQL Server가 원격 연결을 허용하도록 구성되었는지 확인합니다. (공급자: 명명된 파이프 공급자, 오류: 40 - SQL Server에 대한 연결을 열 수 없음) -*
 
 **해결 방법**: 도구를 사용하는 동안 SQL Server 포트에 대한 정보를 포함하도록 서비스 연결 지점을 호스트하는 서버의 레지스트리를 수정해야 합니다.
 
@@ -294,9 +295,4 @@ System Center Configuration Manager 버전 업데이트 1602에 영향을 주는
 이 문제는 업데이트 1602가 설치된 **Exchange 온-프레미스**에 대한 System Center Configuration Manager 조건부 액세스에 영향을 주며, 향후 업데이트에서 해결될 것으로 예상됩니다.  
 
 **해결 방법**: **예외 컬렉션** 페이지에서 **사용자 컬렉션**을 선택하기 전에 **대상 컬렉션** 페이지에 **사용자 컬렉션**을 추가하거나 대상 및 예외 컬렉션 모두에 동일한 **사용자 컬렉션**을 추가하지 않았는지 확인합니다.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager 클라이언트를 사용하여 관리하는 Mac OS X 장치용 구성 항목을 만드는 방법 | Microsoft 문서"
+title: "클라이언트에서 관리하는 Mac용 구성 항목 만들기 - Configuration Manager | Microsoft 문서"
 description: "System Center Configuration Manager Mac OS X 구성 항목을 사용하여 Mac OS X 장치에 대한 설정을 관리할 수 있습니다."
 ms.custom: na
 ms.date: 12/27/2016
@@ -17,8 +17,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 8bbc0d0132fa4276ade8914d5ac3945ef1d12a4b
-ms.openlocfilehash: be7a9464ef4ac6042a46652a325583a355f23846
+ms.sourcegitcommit: 35e48666f4d1a2363304650f960531fd0630a291
+ms.openlocfilehash: 60d147986425e7a3048d57b5b7412feab12efafd
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -54,8 +55,8 @@ System Center Configuration Manager **Mac OS X(사용자 지정)** 구성 항목
 
              예를들어, Safari 웹 브라우저에 대 한 설정을 편집 하려는 경우 사용할 수 있습니다 **com.apple.Safari.plist**.  
 
-        -   **키** – Mac 컴퓨터에서 호환성을 평가 하려는 키의 이름을 지정 합니다. 다음 구문을 사용합니다. 
-        
+        -   **키** – Mac 컴퓨터에서 호환성을 평가 하려는 키의 이름을 지정 합니다. 다음 구문을 사용합니다.
+
             ```
             */<dictionary\>/<keyname\>*.  
             ```     
@@ -174,9 +175,4 @@ System Center Configuration Manager **Mac OS X(사용자 지정)** 구성 항목
 **자산 및 준수** 작업 영역의 **구성 항목** 노드에 새 구성 항목이 표시됩니다.  
 
 이제 이 구성 항목을 구성 기준에 추가하려면 [구성 기준 만들기](../../compliance/deploy-use/create-configuration-baselines.md)를 참조하세요.  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
