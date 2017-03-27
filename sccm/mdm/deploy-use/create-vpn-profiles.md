@@ -17,9 +17,9 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 32190ec39af2cf1568b3d57c2c2f25d9ff2f9e20
-ms.lasthandoff: 03/06/2017
+ms.sourcegitcommit: 8c7bf901caa49c8585a9ed3913d4a5a2aac57013
+ms.openlocfilehash: 82f7db908f83d69a86c82ed97b845ff84e78f8b3
+ms.lasthandoff: 03/21/2017
 
 ---
 # <a name="vpn-profiles-on-mobile-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager의 모바일 장치에 대한 VPN 프로필
@@ -32,8 +32,8 @@ System Center Configuration Manager의 VPN 프로필을 사용하여 조직의 �
 
  VPN 프로필을 만들 때 System Center Configuration Manager 인증서 프로필을 사용하여 프로비전한 서버 유효성 검사 및 클라이언트 인증용 인증서를 포함한 다양한 보안 설정을 포함할 수 있습니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](../../protect/deploy-use/introduction-to-certificate-profiles.md)을 참조하세요.  
 
- ## <a name="vpn-profiles-when-using-configuration-manager-together-with-intune"></a>Configuration Manager 및 Intune을 사용하는 경우의 VPN 프로필 
- 
+ ## <a name="vpn-profiles-when-using-configuration-manager-together-with-intune"></a>Configuration Manager 및 Intune을 사용하는 경우의 VPN 프로필
+
  iOS, Android, Windows Phone 및 Windows 8.1 장치에 프로필을 배포하려면 이러한 장치를 Microsoft Intune에 등록해야 합니다. 다른 플랫폼의 장치를 Intune에 등록할 수도 있습니다. 등록하는 방법에 대한 자세한 내용은 [Microsoft Intune을 사용하여 모바일 장치 관리](https://technet.microsoft.com/en-us/library/dn646962.aspx)를 참조하세요. 이 표에서는 각 장치 플랫폼에 대해 지원되는 연결 형식을 보여 줍니다.  
 
  |연결 유형|iOS 및 Mac OS X|Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop 및 Mobile|  
@@ -91,7 +91,7 @@ System Center Configuration Manager의 VPN 프로필을 사용하여 조직의 �
 
         -   **로그온할 때마다 사용자 자격 증명 기억**: 사용자가 연결할 때마다 자격 증명을 입력할 필요가 없도록 사용자 자격 증명이 기억됩니다.  
 
-        -   **클라이언트 인증을 위해 클라이언트 인증서 선택** - VPN 연결을 인증하는 데 사용할 이전에 만든 클라이언트 [SCEP 인증서](introduction-to-certificate-profiles.md)를 선택합니다.   
+        -   **클라이언트 인증을 위해 클라이언트 인증서 선택** - VPN 연결을 인증하는 데 사용할 이전에 만든 클라이언트 [SCEP 인증서](create-pfx-certificate-profiles.md)를 선택합니다.   
 
             > [!NOTE]  
             >  iOS 장치의 경우 선택하는 SCEP 프로필이 VPN 프로필에 포함됩니다. 다른 플랫폼의 경우에는 인증서가 없거나 호환되지 않는 경우 VPN 프로필이 설치되지 않도록 적용 가능성 규칙이 추가됩니다.  

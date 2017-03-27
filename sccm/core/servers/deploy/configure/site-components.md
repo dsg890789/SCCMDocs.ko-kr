@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 9e170271e1b690289085e80eeff453219bc24010
-ms.openlocfilehash: 9a61162cb992c1947a4ad52b51710740a1b6c4c6
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
+ms.openlocfilehash: 83550fbf0ef1f9adb0bb2c51a4f3c26a7500d352
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -69,7 +69,7 @@ ms.lasthandoff: 02/28/2017
     -   Configuration Manager에서 관리 지점에 지정한 FQDN(정규화된 도메인 이름)에 DNS의 호스트 항목(A 또는 AAA 레코드)이 있어야 합니다.  
 
     > [!WARNING]  
-    >  클라이언트가 DNS에 게시된 관리 지점을 찾으려면 자동 사이트 할당을 사용하는 대신 클라이언트를 특정 사이트에 할당해야 하며, 이러한 클라이언트가 해당 관리 지점의 도메인 접미사가 있는 사이트 코드를 사용하도록 설정합니다. 자세한 내용은 [System Center Configuration Manager에서 사이트에 클라이언트를 할당하는 방법](../../../../core/clients/deploy/assign-clients-to-a-site.md)에서 [관리 지점 찾기](../../../../core/clients/deploy/assign-clients-to-a-site.md#BKMK_LocatingMPs)를 참조하세요.  
+    >  클라이언트가 DNS에 게시된 관리 지점을 찾으려면 자동 사이트 할당을 사용하는 대신 클라이언트를 특정 사이트에 할당해야 하며, 이러한 클라이언트가 해당 관리 지점의 도메인 접미사가 있는 사이트 코드를 사용하도록 설정합니다. 자세한 내용은 [System Center Configuration Manager에서 사이트에 클라이언트를 할당하는 방법](/sccm/core/clients/deploy/assign-clients-to-a-site)에서 [관리 지점 찾기](/sccm/core/clients/deploy/assign-clients-to-a-site#locating-management-points)를 참조하세요.  
 
      Configuration Manager 클라이언트가 Active Directory Domain Services 또는 DNS를 사용하여 인트라넷에서 관리 지점을 찾을 수 없는 경우 [WINS](../../../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md#bkmk_wins)를 사용합니다. 사이트에 설치된 첫 번째 관리 지점은 인트라넷에서 HTTP 클라이언트 연결을 허용하도록 설정된 경우 WINS에 자동으로 게시됩니다.  
 

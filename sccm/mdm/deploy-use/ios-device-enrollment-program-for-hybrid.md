@@ -16,9 +16,9 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
-ms.openlocfilehash: 4222ca27e19ade46d53f8cd4598643ddd4fd5c8f
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
+ms.openlocfilehash: 2ace86cc842d6a3a5b2114c4e4c33c2d65c2f256
+ms.lasthandoff: 03/21/2017
 
 ---
 # <a name="ios-device-enrollment-program-dep-enrollment-for-hybrid-deployments-with-configuration-manager"></a>Configuration Manager에서의 하이브리드 배포를 위한 iOS DEP(장치 등록 프로그램) 등록
@@ -35,7 +35,7 @@ ms.lasthandoff: 01/24/2017
 ###  <a name="enable-dep-enrollment-in-configuration-manager-with-intune"></a>Configuration Manager와 Intune에서 DEP 등록 사용  
 
 1.  **Configuration Manager로 iOS 장치 관리 시작**   
-    iOS DEP(장치 등록 프로그램) 장치를 등록하려면 먼저 [iOS 등록 지원 단계](../deploy-use/setup-hybrid-mdm.md#ios-and-mac-enrollment-setup)를 포함하여 [하이브리드 모바일 장치 관리 설정](../../mdm/deploy-use/setup-hybrid-mdm.md) 단계를 완료해야 합니다.
+    iOS DEP(장치 등록 프로그램) 장치를 등록하려면 먼저 [iOS 등록 지원 단계](../deploy-use/enroll-hybrid-ios-mac.md)를 포함하여 [하이브리드 모바일 장치 관리 설정](../../mdm/deploy-use/setup-hybrid-mdm.md) 단계를 완료해야 합니다.
 
 2.  **DEP 토큰 요청 만들기**   
     Configuration Manager 콘솔의 **관리** 작업 영역에서 **계층 구성**, **클라우드 서비스**를 차례로 확장하고 **Windows Intune 구독**을 클릭합니다. **홈** 탭에서 **DEP 토큰 요청 만들기** 를 클릭하고 **찾아보기** 를 클릭하여 DEP 토큰 요청에 대한 다운로드 위치를 지정한 후에 **다운로드**를 클릭합니다. DEP 토큰 요청(.pem) 파일을 로컬로 저장합니다. .pem 파일은 Apple 장치 등록 프로그램 포털에서 신뢰할 수 있는 토큰(.p7m)을 요청하는 데 사용됩니다.  

@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 3aa9f2e4d3f7210981b5b84942485de11fe15cb2
-ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
+ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
+ms.openlocfilehash: 67441d0c19114f628e8b4308f58165ba67c738df
+ms.lasthandoff: 03/21/2017
 
 ---
 
@@ -66,7 +67,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 > [!NOTE]  
 >  SQL Server AlwaysOn 가용성 그룹을 사용하여 사이트 데이터베이스를 호스트하는 경우 [System Center Configuration Manager용 항상 사용 가능한 사이트 데이터베이스를 위한 SQL Server AlwaysOn](../../core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database.md) 항목의 [SQL Server AlwaysOn 가용성 그룹을 사용하는 경우 백업 및 복구의 변경 내용](../../core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database.md#bkmk_BnR) 섹션에 설명된 대로 백업 및 복구 계획을 수정하세요.  
 
-##  <a name="a-namebkmksitebackupa-back-up-a-configuration-manager-site"></a><a name="BKMK_SiteBackup"></a> Configuration Manager 사이트 백업  
+##  <a name="BKMK_SiteBackup"></a> Configuration Manager 사이트 백업  
  Configuration Manager에는 다음과 같은 백업 유지 관리 작업이 있습니다.  
 
 -   일정에 따라 실행  
@@ -88,7 +89,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 > [!NOTE]  
 >  Configuration Manager는 Configuration Manager 백업 유지 관리 작업 또는 다른 프로세스를 사용하여 만든 사이트 데이터베이스 백업에서 사이트 데이터베이스를 복구할 수 있습니다. 예를 들어 Microsoft SQL Server 유지 관리 계획의 일환으로 만든 백업에서 사이트 데이터베이스를 복원할 수 있습니다. System Center 2012 DPM(Data Protection Manager)을 사용하여 만든 백업에서 사이트 데이터베이스를 복원할 수 있습니다. 자세한 내용은 [Data Protection Manager를 사용하여 사이트 데이터베이스 백업](#BKMK_DPMBackup)을 참조하세요.  
 
-###  <a name="a-namebkmkbackupmaintenancetaska-backup-maintenance-task"></a><a name="BKMK_BackupMaintenanceTask"></a> 백업 유지 관리 작업  
+###  <a name="BKMK_BackupMaintenanceTask"></a> 백업 유지 관리 작업  
  미리 정의된 백업 사이트 서버 유지 관리 작업을 예약하여 Configuration Manager 사이트에 대한 백업을 자동화할 수 있습니다. 중앙 관리 사이트와 기본 사이트를 백업할 수 있지만 보조 사이트 또는 사이트 시스템 서버에 대한 백업은 지원되지 않습니다. Configuration Manager 백업 서비스가 실행될 때 이 서비스는 백업 제어 파일(**&lt;Configuration Manager 설치 폴더\>\Inboxes\Smsbkup.box\Smsbkup.ctl**)에 정의된 지침을 따릅니다. 백업 제어 파일을 수정하여 백업 서비스의 동작을 변경할 수 있습니다. 사이트 백업 상태 정보는 **Smsbkup.log** 파일에 기록됩니다. 이 파일은 백업 사이트 서버 유지 관리 작업 속성에서 지정한 대상 폴더에 만들어집니다.  
 
 
@@ -144,7 +145,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
     > [!TIP]  
     >  백업 유지 관리 작업이 실패할 경우 SMS_SITE_BACKUP 서비스를 중지하고 다시 시작하여 백업 작업을 다시 시작할 수 있습니다.  
 
-###  <a name="a-namebkmkdpmbackupa-using-data-protection-manager-to-back-up-your-site-database"></a><a name="BKMK_DPMBackup"></a> Data Protection Manager를 사용하여 사이트 데이터베이스 백업  
+###  <a name="BKMK_DPMBackup"></a> Data Protection Manager를 사용하여 사이트 데이터베이스 백업  
  System Center 2012 Data Protection Manager(DPM)를 사용하여 사이트 데이터베이스를 백업할 수 있습니다. DPM에서 사이트 데이터베이스 컴퓨터에 대한 새 보호 그룹을 만들어야 합니다. 새 보호 그룹 만들기 마법사의 **그룹 구성원 선택** 페이지에서 데이터 원본 목록으로부터 SMS 작성기 서비스를 선택한 다음 사이트 데이터베이스를 적절한 구성원으로 선택합니다. DPM을 사용하여 사이트 데이터베이스를 백업하는 방법에 대한 자세한 내용은 TechNet의 [Data Protection Manager 문서 라이브러리](http://go.microsoft.com/fwlink/?LinkId=272772) 를 참조하세요.  
 
 > [!IMPORTANT]  
@@ -152,7 +153,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 
  사이트 데이터베이스를 복원한 후에는 설치 프로그램의 단계를 따라 사이트를 복구합니다. Data Protection Manager를 사용하여 복구한 사이트 데이터베이스를 사용하려면 **수동으로 복구된 사이트 데이터베이스 사용** 복구 옵션을 선택합니다.  
 
-###  <a name="a-namebkmkarchivingbackupsnapshota-archiving-the-backup-snapshot"></a><a name="BKMK_ArchivingBackupSnapshot"></a> 백업 스냅숏 보관  
+###  <a name="BKMK_ArchivingBackupSnapshot"></a> 백업 스냅숏 보관  
  백업 사이트 서버 유지 관리 작업이 처음으로 실행될 때 백업 스냅숏이 만들어지며, 장애 시 이를 사용하여 사이트 서버를 복구할 수 있습니다. 이후 주기에서 백업 작업이 다시 실행될 때에는 새 백업 스냅숏이 만들어져 이전 스냅숏을 덮어씁니다. 따라서 사이트에 백업 스냅숏이 하나만 있게 되며 이전 백업 스냅숏을 찾아오는 방법이 없습니다.  
 
  다음과 같은 이유로 백업 스냅숏은 여러 보관본을 유지하는 것이 좋습니다.  
@@ -163,7 +164,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 
 -   백업 사이트 서버 유지 관리 작업이 실패할 경우와 같이 사이트에 백업 스냅숏이 전혀 없을 수도 있습니다. 백업 작업은 현재 데이터의 백업을 시작하기 전에 이전의 백업 스냅숏을 제거하므로, 그와 같은 경우에는 유효한 백업 스냅숏이 존재하지 않을 것입니다.  
 
-###  <a name="a-namebkmkusingafterbackupa-using-the-afterbackupbat-file"></a><a name="BKMK_UsingAfterBackup"></a> AfterBackup.bat 파일 사용  
+###  <a name="BKMK_UsingAfterBackup"></a> AfterBackup.bat 파일 사용  
  사이트를 백업한 후 백업 사이트 서버 작업에서는 AfterBackup.bat라는 파일을 자동으로 실행합니다. AfterBackup.bat 파일은 &lt;Configuration Manager 설치 폴더>\Inboxes\Smsbkup에서 수동으로 만들어야 합니다. AfterBackup.bat 파일이 이미 올바른 폴더 안에 저장되어 있는 경우 백업 작업이 완료된 후 자동으로 실행됩니다. AfterBackup.bat 파일을 활용하면 백업 작업이 끝날 때마다 백업 스냅숏을 보관할 수 있고 백업 사이트 서버 유지 관리 작업에 속하지 않는 기타 백업 후 작업을 자동으로 수행할 수 있습니다. AfterBackup.bat 파일에 의해 보관 및 백업 작업이 통합되므로 새로운 백업 스냅숏은 모두 보관됩니다. AfterBackup.bat 파일이 없으면 백업 작업은 이 파일을 건너뛰며 백업 과정은 아무런 영향도 받지 않습니다. 사이트 백업 작업에서 AfterBackup.bat 파일을 성공적으로 실행했는지 확인하려면 **모니터링** 작업 영역에서 **구성 요소 상태** 노드를 확인하여 SMS_SITE_BACKUP에 대한 상태 메시지를 검토하세요. AfterBackup.bat 명령 파일이 성공적으로 시작된 경우 메시지 ID 5040이 표시됩니다.  
 
 > [!TIP]  
@@ -171,7 +172,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 
  AfterBackup.bat 파일의 용도는 백업 스냅숏을 보관하는 것이지만, 백업 작업이 끝날 때마다 추가 작업을 수행할 목적으로 AfterBackup.bat 파일을 만들 수도 있습니다.  
 
-###  <a name="a-namebkmksupplementalbackupa-supplemental-backup-tasks"></a><a name="BKMK_SupplementalBackup"></a> 추가 백업 작업  
+###  <a name="BKMK_SupplementalBackup"></a> 추가 백업 작업  
  백업 사이트 서버 유지 관리 작업은 사이트 서버 파일 및 사이트 데이터베이스에 대한 백업 스냅숏을 제공하지만, 백업되지 않는 기타 항목도 존재하기 마련이며 이는 백업 전략을 수립할 때 반드시 고려해야 합니다. 다음 섹션의 내용을 사용하여 Configuration Manager 백업 전략을 완료할 수 있습니다.  
 
 #### <a name="back-up-custom-reporting-services-reports"></a>사용자 지정 Reporting Services 보고서 백업  
@@ -241,12 +242,12 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 > [!NOTE]  
 >  데이터베이스 복제본용으로 구성된 사이트 데이터베이스를 복원한 후에, 데이터베이스 복제본을 사용하려면 먼저 게시 및 구독을 모두 다시 만드는 것을 포함해 각 데이터베이스 복제본을 다시 구성해야 합니다.  
 
-###  <a name="a-namebkmkdeterminerecoveryoptionsa-determine-your-recovery-options"></a><a name="BKMK_DetermineRecoveryOptions"></a> 복구 옵션 결정  
+###  <a name="BKMK_DetermineRecoveryOptions"></a> 복구 옵션 결정  
  Configuration Manager 기본 사이트 서버 및 중앙 관리 사이트 복구를 수행하려면 사이트 서버 및 사이트 데이터베이스라는 두 가지 영역을 가장 기본적으로 고려해야 합니다. 다음 섹션에서는 복구 시나리오에서 선택해야 할 옵션을 결정하는 방법에 대해 설명합니다.  
 
 > [!NOTE]  
 
-####  <a name="a-namebkmksiteserverrecoveryoptionsa-site-server-recovery-options"></a><a name="BKMK_SiteServerRecoveryOptions"></a> 사이트 서버 복구 옵션  
+####  <a name="BKMK_SiteServerRecoveryOptions"></a> 사이트 서버 복구 옵션  
  Configuration Manager 설치 폴더 외부에 만든 CD.Latest 폴더의 복사본에서 설치 프로그램을 시작해야 합니다. 그런 다음 **사이트 복구** 옵션을 선택합니다. 설치 프로그램을 실행할 때 실패한 사이트 서버에 대해 다음과 같은 복구 옵션을 사용할 수 있습니다.  
 
 -   **기존 백업을 사용하여 사이트 서버 복구**: 이 옵션은 사이트 오류 전에 **백업 사이트 서버** 유지 관리 작업의 일부로 사이트 서버에 만들어진 Configuration Manager 사이트 서버 백업이 있을 때 사용합니다. 백업된 사이트를 기준으로 사이트가 다시 설치되고 사이트 설정이 구성됩니다.  
@@ -256,7 +257,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 > [!NOTE]  
 >  설치 프로그램이 서버에서 기존 Configuration Manager 사이트를 검색한 경우, 사이트 복구를 시작할 수는 있지만 사이트 서버에 대한 복구 옵션이 제한됩니다. 예를 들어 기존 사이트 서버에서 설치 프로그램을 실행하고 복구를 선택하면, 사이트 데이터베이스 서버를 복구할 수는 있지만 사이트 서버 복구를 위한 옵션은 사용할 수 없습니다.  
 
-####  <a name="a-namebkmksitedatabaserecoveryoptiona-site-database-recovery-options"></a><a name="BKMK_SiteDatabaseRecoveryOption"></a> 사이트 데이터베이스 복구 옵션  
+####  <a name="BKMK_SiteDatabaseRecoveryOption"></a> 사이트 데이터베이스 복구 옵션  
  설치 프로그램을 실행할 때 사이트 데이터베이스에 대해 다음과 같은 복구 옵션을 사용할 수 있습니다.  
 
 -   **백업 집합을 사용하여 사이트 데이터베이스 복구**: 이 옵션은 사이트 데이터베이스 오류 전에 사이트에서 실행된 **백업 사이트 서버** 유지 관리 작업의 일부로 사이트 서버에 만들어진 Configuration Manager 사이트 데이터베이스 백업이 있을 때 사용합니다. 계층이 있을 때 마지막 사이트 데이터베이스 백업 후 사이트 데이터베이스에서 변경된 내용은 기본 사이트에 대해서는 중앙 관리 사이트, 또는 중앙 관리 사이트에 대해서는 참조 기본 사이트에서 검색됩니다. 독립 실행형 기본 사이트에 대한 사이트 데이터베이스를 복구하면 마지막 백업 이후의 사이트 변경 내용은 손실됩니다.  
@@ -275,14 +276,14 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 
 -   **데이터베이스 복구 건너뛰기**: 이 옵션은 Configuration Manager 사이트 데이터베이스 서버에서 데이터 손실이 발생하지 않았을 때 사용합니다. 이 옵션은 사이트 데이터베이스가 현재 복구 중인 사이트 서버가 아닌 다른 컴퓨터에 있는 경우에만 유효합니다.  
 
-####  <a name="a-namebkmksqlretentiona-sql-server-change-tracking-retention-period"></a><a name="bkmk_SQLretention"></a> SQL Server 변경 내용 추적 보존 기간  
+####  <a name="bkmk_SQLretention"></a> SQL Server 변경 내용 추적 보존 기간  
  변경 내용 추적은 SQL Server에서 사이트 데이터베이스에 대해 사용하도록 설정됩니다. Configuration Manager는 변경 내용 추적을 통해 이전 시점 이후에 데이터베이스 테이블에서 변경된 내용에 관한 정보를 쿼리할 수 있습니다. 보존 기간은 변경 내용 추적 정보가 보존되는 기간을 지정합니다. 기본적으로 사이트 데이터베이스는 5일간의 보존 기간을 갖도록 구성됩니다. 사이트 데이터베이스를 복구할 때 백업이 보존 기간 내에 있느냐 없느냐에 따라 복구 프로세스는 다르게 진행됩니다. 예를 들어, 사이트 데이터베이스 서버가 실패하고 마지막 백업이 7일 경과한 경우 이 백업은 보존 기간을 벗어납니다.
 
  SQL Server 변경 내용 추적 내부에 대한 자세한 내용은 SQL Server 팀의 [변경 내용 추적 정리-1부](https://blogs.msdn.microsoft.com/sql_server_team/change-tracking-cleanup-part-1) 및 [변경 내용 추적 정리-2부](https://blogs.msdn.microsoft.com/sql_server_team/change-tracking-cleanup-part-2) 블로그를 참조하세요.
 
 
 
-####  <a name="a-namebkmkreinita-process-to-reinitialize-site-or-global-data"></a><a name="bkmk_reinit"></a> 사이트 또는 글로벌 데이터를 다시 초기화하는 프로세스  
+####  <a name="bkmk_reinit"></a> 사이트 또는 글로벌 데이터를 다시 초기화하는 프로세스  
  사이트 또는 글로벌 데이터를 다시 초기화하는 프로세스는 사이트 데이터베이스 내 기존 데이터를 다른 사이트 데이터베이스의 데이터로 교체합니다. 예를 들어 사이트 ABC에서 사이트 XYZ의 데이터를 다시 초기화하면 다음 단계가 진행됩니다.  
 
 -   데이터가 사이트 XYZ에서 사이트 ABC로 복사됩니다.  
@@ -297,7 +298,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 ##### <a name="example-scenario-2"></a>예제 시나리오 2  
  **중앙 관리 사이트에서 기본 사이트의 사이트 데이터를 다시 초기화**: 복구 프로세스에서 중앙 관리 사이트 데이터베이스에 있는 기본 사이트용 기존 사이트 데이터를 제거하고 해당 데이터를 기본 사이트에서 복사된 사이트 데이터로 교체합니다. 다른 기본 사이트에 대한 사이트 데이터는 영향을 받지 않습니다.  
 
-####  <a name="a-namebkmksitedbrecoveryscenariosa-site-database-recovery-scenarios"></a><a name="BKMK_SiteDBRecoveryScenarios"></a> 사이트 데이터베이스 복구 시나리오  
+####  <a name="BKMK_SiteDBRecoveryScenarios"></a> 사이트 데이터베이스 복구 시나리오  
  사이트 데이터베이스가 백업에서 복원되면 Configuration Manager에서는 마지막 데이터베이스 백업 이후에 사이트 및 글로벌 데이터에서 변경된 내용을 복원하려고 시도합니다. 다음에서는 사이트 데이터베이스가 백업에서 복원된 후에 Configuration Manager에서 시작하는 작업을 설명합니다.  
 
  **복구된 사이트가 중앙 관리 사이트인 경우:**  
@@ -362,7 +363,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 >   
 >  **ALTER QUEUE [dbo].[ConfigMgrDRSSiteQueue] WITH STATUS = ON**  
 
-###  <a name="a-namebkmkunattendedsiterecoverykeysa-unattended-site-recovery-script-file-keys"></a><a name="BKMK_UnattendedSiteRecoveryKeys"></a> 무인 사이트 복구 스크립트 파일 키  
+###  <a name="BKMK_UnattendedSiteRecoveryKeys"></a> 무인 사이트 복구 스크립트 파일 키  
  Configuration Manager 중앙 관리 사이트 또는 기본 사이트의 무인 복구를 수행하려는 경우, 무인 설치 스크립트를 만들고 /script 명령 옵션과 함께 설치 프로그램을 사용하면 됩니다. 이 스크립트는 기본 설정이 없다는 점만 제외하고 설치 마법사에서 요구하는 정보와 동일한 유형의 정보를 제공합니다. 사용 중인 복구 유형에 적용되는 설치 키에 대해 모든 값을 지정해야 합니다.  
 
  초기화 파일을 /script 설치 명령줄 옵션과 함께 사용하면 Configuration Manager 설치 프로그램을 무인 모드로 실행할 수 있습니다. 무인 설치는 Configuration Manager 중앙 관리 사이트 및 기본 사이트의 복구에 대해 지원됩니다. /script 설치 명령줄 옵션을 사용하려면 초기화 파일을 만들고 /script 설치 명령줄 옵션 뒤에 초기화 파일 이름을 지정해야 합니다. 파일 이름은 .ini 파일 이름 확장명만 붙이면 자유롭게 지정해도 됩니다. 명령줄에서 설치 초기화 파일을 참조할 때 파일의 전체 경로를 입력해야 합니다. 예를 들어 이름이 setup.ini인 설치 초기화 파일이 C:\setup 폴더에 저장되어 있는 경우 명령줄은 다음과 같습니다.  
@@ -814,7 +815,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 
     -   **세부 정보:** 기본 사이트가 중앙 관리 사이트에 연결하는 최대 시간 제한 값(분)을 지정합니다. 예를 들어 기본 사이트가 중앙 관리 사이트에 연결하지 못하면 WaitForCASTimeout 기간에 도달할 때까지 기본 사이트는 CASRetryInterval 값에 기반하여 중앙 관리 사이트에 대한 연결을 다시 시도합니다. 값은 0에서 100까지 지정할 수 있습니다.  
 
-###  <a name="a-namebkmkpostrecoverya-post-recovery-tasks"></a><a name="BKMK_PostRecovery"></a> 복구 후 작업  
+###  <a name="BKMK_PostRecovery"></a> 복구 후 작업  
  사이트를 복구한 후에 사이트 복구가 완료되기 전에 고려해야 할 몇 가지 복구 후 작업이 있습니다. 사이트 복구 프로세스를 완료하려면 다음 섹션을 참조하세요.  
 
 #### <a name="re-enter-user-account-passwords"></a>사용자 계정 암호 다시 입력  
@@ -844,7 +845,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
  사이트 서버 복구 후에 사이트 복구 중 테스트용 로드 키가 초기화되므로 사이트에 대해 지정된 Windows 테스트용 로드 키를 다시 입력해야 합니다. 테스트용 로드 키를 다시 입력한 후 Configuration Manager 콘솔에서 Windows 테스트용 로드 키의 **사용된 활성화 수** 열 수가 다시 설정됩니다. 예를 들어 사이트 오류 전에 장치에 **총 활성화 수**가 **100**으로 설정되어 있고 사용된 키의 수에 대한 **사용된 활성화 수**가 **90**이라고 가정해 봅니다. 사이트 복구 후 **총 활성화 수** 열은 여전히 **100**을 표시하지만 **사용된 활성화 수** 열은 값을 **0**으로 잘못 표시합니다. 그러나 10개의 새 장치에서 테스트용 로드 키를 사용한 후에는 남은 테스트용 로드 키가 없으며 다음 장치에서 테스트용 로드 키를 적용하지 못합니다.  
 
 #### <a name="recreate-the-microsoft-intune-subscription"></a>Microsoft Intune 구독 다시 만들기  
- 사이트 서버 컴퓨터를 이미지로 다시 설치한 후에 Configuration Manager 사이트 서버를 복구하는 경우 Microsoft Intune 구독이 복원되지 않습니다. 사이트를 복구한 후 구독을 다시 연결 해야 합니다.  새 APN 요청을 만드는 대신, iOS 관리가 마지막으로 구성 또는 갱신될 때 업로드된 현재 유효한 .pem 파일을 업로드하세요. 자세한 내용은 [Configuring the Microsoft Intune subscription](../../mdm/deploy-use/setup-hybrid-mdm.md#step-3-configure-intune-subscription)을 참조하십시오.  
+ 사이트 서버 컴퓨터를 이미지로 다시 설치한 후에 Configuration Manager 사이트 서버를 복구하는 경우 Microsoft Intune 구독이 복원되지 않습니다. 사이트를 복구한 후 구독을 다시 연결 해야 합니다.  새 APN 요청을 만드는 대신, iOS 관리가 마지막으로 구성 또는 갱신될 때 업로드된 현재 유효한 .pem 파일을 업로드하세요. 자세한 내용은 [Configuring the Microsoft Intune subscription](/sccm/mdm/deploy-use/configure-intune-subscription)을 참조하십시오.  
 
 #### <a name="configure-ssl-for-site-system-roles-that-use-iis"></a>IIS를 사용하는 사이트 시스템 역할에 대해 SSL 구성  
  실패하기 전에 HTTPS에 대해 구성했던 IIS를 실행하는 사이트 시스템을 복구할 때 웹 서버 인증서를 사용하도록 IIS를 다시 구성해야 합니다.  
@@ -888,7 +889,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 #### <a name="update-certificates-used-for-cloud-based-distribution-points"></a>클라우드 기반 배포 지점에 사용되는 인증서 업데이트  
  Configuration Manager에는 클라우드 기반 배포 지점 통신을 위해 사이트 서버에 사용되는 관리 인증서가 필요합니다. 사이트 복구 후에 클라우드 기반 배포 지점에 대한 인증서를 업데이트해야 합니다.  
 
-####  <a name="a-namebkmkrecoversecondarysitea-recover-a-secondary-site"></a><a name="BKMK_RecoverSecondarySite"></a> 보조 사이트 복구  
+####  <a name="BKMK_RecoverSecondarySite"></a> 보조 사이트 복구  
  Configuration Manager에서는 보조 사이트에서의 데이터베이스 백업을 지원하는 것이 아니라 보조 사이트를 다시 설치하여 복구하는 작업을 지원합니다. Configuration Manager 보조 사이트가 실패할 경우 보조 사이트 복구가 필요합니다. Configuration Manager 콘솔의 **사이트** 노드에서 **보조 사이트 복구** 작업을 사용하여 보조 사이트를 복구할 수 있습니다. 중앙 관리 사이트 또는 기본 사이트에 대한 복구와 달리, 보조 사이트에 대한 복구에서는 백업 파일을 사용하지 않고 대신 실패한 보조 사이트 컴퓨터에 보조 사이트 파일을 다시 설치합니다. 그러면 보조 사이트 데이터가 부모 기본 사이트의 데이터로 다시 초기화됩니다. 복구 프로세스 중에 Configuration Manager는 보조 사이트 컴퓨터에 콘텐츠 라이브러리가 존재하고 해당 콘텐츠를 사용할 수 있는지 확인합니다. 해당 콘텐츠가 있으면 보조 사이트에서 기존 콘텐츠 라이브러리를 사용합니다. 그렇지 않은 경우 복구된 보조 사이트의 콘텐츠 라이브러리를 복구하려면 복구된 해당 사이트에 콘텐츠를 다시 배포하거나 사전 준비해야 합니다. 보조 사이트에 없는 배포 지점의 경우 보조 사이트 복구 시 배포 지점을 다시 설치할 필요가 없습니다. 보조 사이트 복구 후에 사이트가 배포 지점과 자동으로 동기화됩니다.  
 
  Configuration Manager 콘솔의 **사이트** 노드에서 **설치 상태 표시** 작업을 사용하여 보조 사이트 복구 상태를 확인할 수 있습니다.  
@@ -899,7 +900,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 > [!IMPORTANT]  
 >  보조 사이트 복구 시에는 컴퓨터에 SQL Server Express가 설치되어 있지 않더라도 Configuration Manager에서 SQL Server Express를 설치하지 않습니다. 따라서 보조 사이트를 복구하기 전에 수동으로 SQL Server Express 또는 SQL Server를 설치해야 합니다. 실패 전 보조 사이트 데이터베이스에 사용한 버전과 인스턴스의 SQL Server를 동일하게 사용해야 합니다.  
 
-##  <a name="a-namebkmksmswriterservicea-sms-writer-service"></a><a name="BKMK_SMSWriterService"></a> SMS 작성기 서비스  
+##  <a name="BKMK_SMSWriterService"></a> SMS 작성기 서비스  
  SMS 작성기는 백업 과정에서 VSS(볼륨 섀도 복사본 서비스)와 상호 작용하는 서비스입니다. Configuration Manager 사이트 백업이 성공적으로 완료되려면 SMS 작성기 서비스가 실행되어야 합니다.  
 
 ### <a name="purpose"></a>용도  
@@ -915,9 +916,4 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 
 ### <a name="volume-shadow-copy-service"></a>볼륨 섀도 복사본 서비스  
  VSS는 시스템의 응용 프로그램이 볼륨에 쓰기를 계속하는 동안 볼륨 백업이 수행될 수 있도록 하는 프레임워크를 구현하는 일련의 COM API입니다. VSS는 디스크에 데이터를 업데이트하는 사용자 응용 프로그램(SMS 작성기 서비스)과 응용 프로그램을 백업하는 사용자 응용 프로그램(백업 관리자 서비스) 간에 조정이 이루어질 수 있도록 일관된 인터페이스를 제공합니다. VSS에 대한 자세한 내용은 Windows Server TechCenter의 [Volume Shadow Copy Service(볼륨 섀도 복사본 서비스)](http://go.microsoft.com/fwlink/p/?LinkId=241968) 항목을 참조하세요.  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

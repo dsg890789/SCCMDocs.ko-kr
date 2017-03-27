@@ -13,12 +13,13 @@ ms.topic: get-started-article
 ms.assetid: c1d71899-308f-49d5-adfa-3a3ec0163ed8
 caps.latest.revision: 10
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: 6e76c3ae104c0561a5c7b178823b7a48761518fe
+ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
+ms.openlocfilehash: 192c3685092df6310b7129877c7fb5dfd9ef7ad5
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -28,7 +29,7 @@ ms.openlocfilehash: 6e76c3ae104c0561a5c7b178823b7a48761518fe
 
 이 문서에는 System Center Configuration Manager에서 클라이언트에 대한 보안 및 개인 정보와 Exchange Server 커넥터에서 관리하는 모바일 장치에 대한 보안 및 개인 정보가 포함되어 있습니다.  
 
-##  <a name="a-namebkmksecuritycliientsa-security-best-practices-for-clients"></a><a name="BKMK_Security_Cliients"></a> 클라이언트에 대한 보안 모범 사례  
+##  <a name="BKMK_Security_Cliients"></a> 클라이언트에 대한 보안 모범 사례  
  Configuration Manager에서 Configuration Manager 클라이언트를 실행하는 장치의 데이터를 허용하면 클라이언트가 사이트를 공격할 위험이 있습니다. 예를 들어 이러한 클라이언트는 잘못된 형식의 인벤토리를 보내거나 사이트 시스템의 오버로드를 시도할 수 있습니다. Configuration Manager 클라이언트는 신뢰할 수 있는 장치에만 배포하세요. 또한 다음 보안 모범 사례를 활용하면 허위 장치 또는 손상된 장치로부터 사이트를 보호하는 데 도움이 됩니다.  
 
  **IIS를 실행하는 사이트 시스템에 대한 클라이언트 통신에 PKI(공개 키 인프라) 인증서 사용:**  
@@ -53,7 +54,7 @@ ms.openlocfilehash: 6e76c3ae104c0561a5c7b178823b7a48761518fe
 
  **클라이언트가 Configuration Manager 계층 구조에 액세스하지 못하도록 막는 데 차단 방식에 의존하지 않음**  
 
- 차단된 클라이언트는 Configuration Manager 인프라에서 거부되므로 사이트 시스템과 통신하여 정책을 다운로드하거나, 인벤토리 데이터를 업로드하거나, 상태 또는 상태 메시지를 보낼 수 없습니다. 그러나 사이트 시스템에서 HTTP 클라이언트 연결을 허용할 경우 Configuration Manager 계층 구조를 신뢰할 수 없는 컴퓨터로부터 보호하기 위해 차단에 의존하면 안 됩니다. 이 시나리오에서 차단된 클라이언트는 새로운 자체 서명된 인증서 및 하드웨어 ID를 사용하여 사이트에 다시 가입할 수 있습니다. 차단은 클라이언트에 운영 체제를 배포할 때 모든 사이트 시스템에서 HTTPS 클라이언트 연결을 허용할 경우 손실되거나 손상된 부팅 미디어를 차단하는 데 사용하도록 만들어졌습니다. PKI를 사용하고 PKI에서 CRL을 지원하는 경우 손상되었을 가능성이 있는 인증서에 대비한 1차 방어선에는 항상 인증서 해지를 배치하는 것이 좋습니다. Configuration Manager에서 클라이언트를 차단하면 계층 구조를 보호하기 위한 이차 방어 수단이 됩니다.  
+ 차단된 클라이언트는 Configuration Manager 인프라에서 거부되므로 사이트 시스템과 통신하여 정책을 다운로드하거나, 인벤토리 데이터를 업로드하거나, 상태 또는 상태 메시지를 보낼 수 없습니다. 그러나 사이트 시스템에서 HTTP 클라이언트 연결을 허용할 경우 Configuration Manager 계층 구조를 신뢰할 수 없는 컴퓨터로부터 보호하기 위해 차단에 의존하면 안 됩니다. 이 시나리오에서 차단된 클라이언트는 새로운 자체 서명된 인증서 및 하드웨어 ID를 사용하여 사이트에 다시 가입할 수 있습니다. 차단은 클라이언트에 운영 체제를 배포할 때 모든 사이트 시스템에서 HTTPS 클라이언트 연결을 허용할 경우 손실되거나 손상된 부팅 미디어를 차단하는 데 사용하도록 만들어졌습니다. PKI를 사용하고 PKI에서 CRL을 지원하는 경우 손상되었을 가능성이 있는 인증서에 대비한&1;차 방어선에는 항상 인증서 해지를 배치하는 것이 좋습니다. Configuration Manager에서 클라이언트를 차단하면 계층 구조를 보호하기 위한 이차 방어 수단이 됩니다.  
 
  자세한 내용은 [Determine whether to block clients in System Center Configuration Manager](../../../../core/clients/deploy/plan/determine-whether-to-block-clients.md)(System Center Configuration Manager에서 클라이언트를 차단할지 여부 결정)를 참조하세요.  
 
@@ -146,7 +147,7 @@ ms.openlocfilehash: 6e76c3ae104c0561a5c7b178823b7a48761518fe
 
  이 클라이언트 설정으로 Configuration Manager 클라이언트는 서명되지 않은 PowerShell 스크립트를 실행할 수 있으며 이 경우 클라이언트 컴퓨터에서 맬웨어가 실행될 수 있습니다. 이 옵션을 선택해야 할 경우 사용자 지정 클라이언트 설정을 사용하고 이 설정을 서명되지 않은 PowerShell 스크립트를 실행해야 하는 클라이언트 컴퓨터에만 할당하세요.  
 
-##  <a name="a-namebkmkmobilea-security-best-practices-for-mobile-devices"></a><a name="bkmk_mobile"></a> 모바일 장치에 대한 보안 모범 사례  
+##  <a name="bkmk_mobile"></a> 모바일 장치에 대한 보안 모범 사례  
  **Configuration Manager에서 등록하고 인터넷에서 지원할 모바일 장치의 경우: 경계 네트워크에 등록 프록시 지점 설치 및 인트라넷에 등록 지점 설치**  
 
  이 역할 구분을 통해 등록 지점을 공격으로부터 보호할 수 있습니다. 등록 지점이 손상되면 공격자는 인증서를 가져와 인증에 사용하고 모바일 장치를 등록한 사용자의 자격 증명을 도용할 수 있습니다.  
@@ -199,7 +200,7 @@ ms.openlocfilehash: 6e76c3ae104c0561a5c7b178823b7a48761518fe
 
  Exchange Server 커넥터에 필요한 최소 cmdlet의 목록은 [System Center Configuration Manager와 Exchange를 사용하여 모바일 장치 관리](../../../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md)를 참조하세요.  
 
-##  <a name="a-namebkmkmacsa-security-best-practices-for-macs"></a><a name="bkmk_macs"></a> Mac에 대한 보안 모범 사례  
+##  <a name="bkmk_macs"></a> Mac에 대한 보안 모범 사례  
  **Mac 컴퓨터의 경우: 보안 위치의 클라이언트 원본 파일에 저장 및 액세스**  
 
  Configuration Manager에서는 Mac 컴퓨터에 클라이언트를 설치하거나 등록하기 전에 이러한 클라이언트 원본 파일이 변조되었는지 확인하지 않습니다. 신뢰할 수 있는 원본에서 이러한 파일을 다운로드한 후 안전하게 저장하고 액세스하세요.  
@@ -208,7 +209,7 @@ ms.openlocfilehash: 6e76c3ae104c0561a5c7b178823b7a48761518fe
 
  무중단 업무를 보장하기 위해 Mac 컴퓨터에 대해 사용하는 인증서의 유효 기간을 모니터링 및 추적합니다. Configuration Manager는 이 인증서의 자동 갱신을 지원하지 않으며 대신 인증서의 만료를 알리는 경고를 보낼 수 있습니다. 일반적인 유효 기간은 1년입니다.  
 
- 인증서를 갱신하는 방법에 대한 자세한 내용은  [Renewing the Mac Client Certificate Manually](../../../../core/clients/deploy/deploy-clients-to-macs.md#BKMK_Man)항목을 참조하세요.  
+ 인증서를 갱신하는 방법에 대한 자세한 내용은  [Renewing the Mac Client Certificate Manually](../../../../core/clients/deploy/deploy-clients-to-macs.md#renewing-the-mac-client-certificate)항목을 참조하세요.  
 
  **Mac 컴퓨터의 경우: 권한 상승을 방지하려면 SSL 프로토콜만 신뢰할 수 있도록 신뢰할 수 있는 루트 CA 인증서 구성 고려**  
 
@@ -237,7 +238,7 @@ ms.openlocfilehash: 6e76c3ae104c0561a5c7b178823b7a48761518fe
 
 6.  대화 상자를 닫고 메시지가 나타나면 관리자 암호를 입력한 다음 **설정 업데이트**를 클릭합니다.  
 
-##  <a name="a-namebkmksecurityissuesclientsa-security-issues-for-configuration-manager-clients"></a><a name="BKMK_SecurityIssues_Clients"></a> Configuration Manager 클라이언트에 대한 보안 문제  
+##  <a name="BKMK_SecurityIssues_Clients"></a> Configuration Manager 클라이언트에 대한 보안 문제  
  다음 보안 문제는 최소화할 수 없습니다.  
 
 -   상태 메시지가 인증되지 않음  
@@ -282,7 +283,7 @@ ms.openlocfilehash: 6e76c3ae104c0561a5c7b178823b7a48761518fe
 
      Windows Embedded 장치가 Windows 7 이전의 운영 체제에서 실행되고 Configuration Manager에서 만들어진 변경 내용을 커밋하기 위해 쓰기 필터가 해제된 동안 사용자가 로그온을 시도하는 경우, 계정이 잠기기 전에 허용되는 잘못된 로그온 시도 횟수는 반으로 축소됩니다. 예를 들어 **계정 잠금 임계값** 이 6으로 구성된 경우 사용자가 암호를 3회 잘못 입력하면 계정이 잠기며 이에 따라 서비스 거부 상황이 발생하게 됩니다.  이 시나리오에서 사용자가 임베디드 장치에 반드시 로그온해야 할 경우 미리 잠금 임계값의 축소에 대해 주의를 주어야 합니다.  
 
-##  <a name="a-namebkmkprivacycliientsa-privacy-information-for-configuration-manager-clients"></a><a name="BKMK_Privacy_Cliients"></a> Configuration Manager 클라이언트에 대한 개인 정보  
+##  <a name="BKMK_Privacy_Cliients"></a> Configuration Manager 클라이언트에 대한 개인 정보  
  Configuration Manager 클라이언트를 배포할 때 Configuration Manager 관리 기능을 사용하도록 클라이언트 설정을 구성할 수 있습니다. 관련 기능을 구성하는 데 사용하는 설정은 해당 클라이언트가 회사 네트워크에 직접 연결되었는지, 원격 세션을 통해 연결되었는지, 또는 인터넷에 연결되었지만 Configuration Manager에서 지원되는지 여부에 관계없이 Configuration Manager 계층 구조 내 모든 클라이언트에 적용될 수 있습니다.  
 
  클라이언트 정보는 Configuration Manager 데이터베이스에 저장되고 Microsoft로 전송되지 않습니다. 정보는 90일마다 반복되는 사이트 유지 관리 작업인 **오래된 검색 데이터 삭제** 에 의해 삭제될 때까지 데이터베이스에 유지됩니다. 삭제 간격은 필요에 따라 구성할 수 있습니다.  
@@ -299,15 +300,10 @@ ms.openlocfilehash: 6e76c3ae104c0561a5c7b178823b7a48761518fe
 
  클라이언트 상태 점검과 함께 Configuration Manager 클라이언트를 설치하기 전에 개인 정보 요구 사항을 고려해야 합니다.  
 
-##  <a name="a-namebkmkprivacyexchangeconnectora-privacy-information-for-mobile-devices-that-are-managed-with-the-exchange-server-connector"></a><a name="BKMK_Privacy_ExchangeConnector"></a> Exchange Server 커넥터를 사용하여 관리하는 모바일 장치에 대한 개인 정보  
+##  <a name="BKMK_Privacy_ExchangeConnector"></a> Exchange Server 커넥터를 사용하여 관리하는 모바일 장치에 대한 개인 정보  
  Exchange Server 커넥터는 ActiveSync 프로토콜을 사용하여 온-프레미스이든 호스트된 버전이든 상관없이 Exchange Server에 연결된 장치를 검색하여 관리합니다. Exchange Server 커넥터로 검색된 레코드는 Configuration Manager 데이터베이스에 저장됩니다. 정보는 Exchange Server에서 수집되며, 여기에는 모바일 장치에서 Exchange Server로 전송된 정보 이외에 다른 추가 정보가 포함되지 않습니다.  
 
  모바일 장치 정보는 Microsoft로 전송되지 않으며, 모바일 장치 정보는 Configuration Manager 데이터베이스에 저장됩니다. 정보는 90일마다 반복되는 사이트 유지 관리 작업인 **오래된 검색 데이터 삭제** 에 의해 삭제될 때까지 데이터베이스에 유지됩니다. 삭제 간격은 필요에 따라 구성할 수 있습니다.  
 
  Exchange Server 커넥터를 설치하고 구성하기 전에 개인 정보 요구 사항을 고려해야 합니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -17,9 +17,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 1cbe1d8f34b0a7482232488e907190a7a9cadf30
-ms.lasthandoff: 03/06/2017
+ms.sourcegitcommit: 8c7bf901caa49c8585a9ed3913d4a5a2aac57013
+ms.openlocfilehash: 74083f65d906fde967081229b244df24e9e08e0a
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -47,7 +47,7 @@ ms.lasthandoff: 03/06/2017
 
  장치에서 전자 메일 계정을 구성하는 것 외에 연락처, 일정 및 작업에 대한 동기화 설정을 구성할 수도 있습니다.  
 
- 메일 프로필을 만들 때 System Center Configuration Manager 인증서 프로필을 사용하여 프로비전한 ID, 암호화 및 서명용 인증서를 비롯하여 다양한 보안 설정을 포함할 수 있습니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](introduction-to-certificate-profiles.md)을 참조하세요.    
+ 메일 프로필을 만들 때 System Center Configuration Manager 인증서 프로필을 사용하여 프로비전한 ID, 암호화 및 서명용 인증서를 비롯하여 다양한 보안 설정을 포함할 수 있습니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](create-pfx-certificate-profiles.md)을 참조하세요.    
 
 
 ## <a name="create-a-new-exchange-activesync-email-profile"></a>새 Exchange ActiveSync 메일 프로필 만들기  
@@ -101,7 +101,7 @@ Exchange ActiveSync 메일 프로필 만들기 마법사 시작
     -   **ID 인증서:** **선택** 을 클릭하고 ID에 사용할 인증서를 선택합니다.  
 
         > [!NOTE]  
-        >  ID 인증서를 선택하려면 먼저 해당 인증서를 SCEP(단순 인증서 등록 프로토콜) 인증서 프로필로 구성해야 합니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](introduction-to-certificate-profiles.md)을 참조하세요.  
+        >  ID 인증서를 선택하려면 먼저 해당 인증서를 SCEP(단순 인증서 등록 프로토콜) 인증서 프로필로 구성해야 합니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](create-pfx-certificate-profiles.md)을 참조하세요.  
 
          이 옵션은 **인증 방법** 에서 **인증서**를 선택한 경우에만 사용할 수 있습니다.  
 
@@ -110,14 +110,14 @@ Exchange ActiveSync 메일 프로필 만들기 마법사 시작
     -   **암호화 인증서:** **선택** 을 클릭하고 암호화에 사용할 인증서를 선택합니다. 이 옵션은 iOS 장치에만 적용됩니다.  
 
         > [!NOTE]  
-        >  암호화 인증서를 선택하려면 먼저 해당 인증서를 SCEP(단순 인증서 등록 프로토콜) 인증서 프로필로 구성해야 합니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](introduction-to-certificate-profiles.md)을 참조하세요.  
+        >  암호화 인증서를 선택하려면 먼저 해당 인증서를 SCEP(단순 인증서 등록 프로토콜) 인증서 프로필로 구성해야 합니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](create-pfx-certificate-profiles.md)을 참조하세요.  
 
          이 옵션은 **S/MIME 사용**을 선택한 경우에만 사용할 수 있습니다.  
 
     -   **서명 인증서:** **선택** 을 클릭하고 서명에 사용할 인증서를 선택합니다. 이 옵션은 iOS 장치에만 적용됩니다.  
 
         > [!NOTE]  
-        >  서명 인증서를 선택하려면 먼저 해당 인증서를 SCEP(단순 인증서 등록 프로토콜) 인증서 프로필로 구성해야 합니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](introduction-to-certificate-profiles.md)을 참조하세요.  
+        >  서명 인증서를 선택하려면 먼저 해당 인증서를 SCEP(단순 인증서 등록 프로토콜) 인증서 프로필로 구성해야 합니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](create-pfx-certificate-profiles.md)을 참조하세요.  
 
          이 옵션은 **S/MIME 사용**을 선택한 경우에만 사용할 수 있습니다.  
 
