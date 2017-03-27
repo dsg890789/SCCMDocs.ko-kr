@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: c1b2057e-b74f-43fa-a293-763a8f866d3d
 caps.latest.revision: 6
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: eafa0d85935c2009cc63d17b06ed83a4666d7fac
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -65,9 +66,4 @@ System Center Configuration Manager의 원격 제어에는 외부 종속성과 �
 |클라이언트에 대해 원격 제어를 사용하도록 설정해야 합니다.|기본적으로 Configuration Manager를 설치할 때 원격 제어가 사용하도록 설정되어 있지 않습니다. 원격 제어를 설정하고 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 원격 제어 구성](../../../../core/clients/manage/remote-control/configuring-remote-control.md)을 참조하세요.|  
 |보고 서비스 지점|원격 제어에 대한 보고서를 실행하려면 보고 서비스 지점 사이트 시스템 역할이 설치되어야 합니다. 자세한 내용은 [System Center Configuration Manager의 보고](../../../../core/servers/manage/reporting.md)를 참조하세요.|  
 |원격 제어를 관리하는 보안 권한|컬렉션 리소스에 액세스하고 Configuration Manager 콘솔에서 원격 제어 세션을 시작하려면: **컬렉션**개체에 대한 **AMT 제어**, **읽기**, **리소스 읽기** 및 **원격 제어** 권한이 필요합니다.<br /><br /> **원격 도구 운영자** 보안 역할에는 Configuration Manager에서 원격 제어를 관리하기 위해 필요한 이러한 권한이 포함됩니다.<br /><br /> 자세한 내용은 [System Center Configuration Manager용 역할 기반 관리 구성](../../../../core/servers/deploy/configure/configure-role-based-administration.md)을 참조하세요.<br /><br /> 또한 **원격 도구** 클라이언트 설정에서 **원격 제어 및 원격 지원의 허용된 뷰어** 옵션을 사용하여 원격 제어가 허용된 보기 목록에 원격 제어 및 원격 지원을 사용할 권한을 주려는 사용자를 추가해야 합니다.|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

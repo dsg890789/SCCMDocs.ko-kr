@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: cf6337a2-700c-47f3-b6f8-5814f9b81e59
 caps.latest.revision: 12
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: c74b553ab76a2b77b0d893151351132da05a640d
 ms.openlocfilehash: 5b75f3296dc20a6766a894f463e958455ca1d65f
+ms.lasthandoff: 01/04/2017
 
 
 ---
@@ -160,10 +161,5 @@ Mac 클라이언트 제거하고 해당 인증서를 갱신하는 절차는 다�
     f.  **변경사항 저장**을 선택하고 **키 집합 접근** 대화 상자를 닫습니다.  
 
 17. Mac 컴퓨터를 다시 시작합니다.  
-
-
-
-
-<!--HONumber=Jan17_HO1-->
 
 

@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: 7d2bb377-1005-4a55-bd1f-b80a6d0b22e1
 caps.latest.revision: 6
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
 ms.openlocfilehash: eea9faaac579ecafd67eaac05dc7ee7ca7819db7
+ms.lasthandoff: 12/19/2016
 
 
 ---
@@ -61,9 +62,4 @@ ms.openlocfilehash: eea9faaac579ecafd67eaac05dc7ee7ca7819db7
      예를 들어 다음 명령줄을 사용하여 스크립트를 실행합니다. **at -f /tmp/upgrade.sh -m now + 5 minutes**  
 
  클라이언트에서 **upgrade.sh** 실행을 예약한 후 소프트웨어 배포가 완료되었음을 나타내는 상태 메시지를 전송합니다. 그러나 실제 클라이언트 설치는 지연 후 컴퓨터에서 관리됩니다. 클라이언트 업그레이드를 완료한 후 클라이언트 컴퓨터의 **/var/opt/microsoft/scxcm.log** 파일을 검토하여 설치 유효성을 검사합니다. 또한 Configuration Manager 콘솔, **자산 및 준수** 작업 영역의 **장치** 노드에서 클라이언트 세부 정보를 통해 클라이언트가 설치되고 사이트와 통신하고 있는지 확인할 수 있습니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

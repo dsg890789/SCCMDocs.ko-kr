@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: 5c975e69-0cc0-4afd-b7fb-b7182162a933
 caps.latest.revision: 5
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: e3082e1d608f60a539fc58b0129132e33c8af833
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -61,9 +62,4 @@ System Center Configuration Manager 보고서를 사용하여 원격 제어에 �
 4.  보고서 **원격 제어 - 모든 원격 제어 정보**를 선택한 다음 **홈** 탭의 **보고서 그룹**에서 **실행** 을 클릭하여 **원격 제어 - 모든 원격 제어 정보** 창을 엽니다.  
 
 5.  보고서의 데이터를 다 확인했으면 보고서 창을 닫습니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

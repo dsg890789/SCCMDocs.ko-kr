@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 10049c89-b37c-472b-b317-ce4f56cd4be7
 caps.latest.revision: 8
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: a650ad8e7b1f9468dd04165a3e43a89387b5d696
 ms.openlocfilehash: b07af49e2fecf6cc41258c87794ca7952206bb8a
+ms.lasthandoff: 01/17/2017
 
 
 ---
@@ -179,9 +180,4 @@ Coho Vineyard & Winery에서는 방문자 센터를 개설할 예정이며 Windo
     -   대화형 프레젠테이션 소프트웨어가 설치되어 있고 자동으로 실행되어 방문자가 사용할 수 있는 상태입니다.  
 
 14. 이 초기 설치 후에 업데이트를 위해 다시 시작이 필요할 경우 방문자 센터가 운영되지 않는 시간에만 이루어집니다.  
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

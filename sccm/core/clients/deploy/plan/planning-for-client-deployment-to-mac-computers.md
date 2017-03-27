@@ -13,12 +13,13 @@ ms.topic: get-started-article
 ms.assetid: 8d15ae3f-de42-461f-a907-c43873da22d2
 caps.latest.revision: 6
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
 ms.openlocfilehash: d8ccfee895f5fd3649fb4bef4a62fd790cce7ea8
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -109,9 +110,4 @@ Mac OS X 운영 체제를 실행하는 Mac 컴퓨터에 Configuration Manager �
 -   클라이언트 상태 클라이언트 검사 및 재구성  
 
  Configuration Manager Mac 클라이언트를 설치하고 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 Mac에 클라이언트를 배포하는 방법](../../../../core/clients/deploy/deploy-clients-to-macs.md)을 참조하세요.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -13,12 +13,13 @@ ms.topic: get-started-article
 ms.assetid: dccf0b73-43bd-4545-8914-114168ebad36
 caps.latest.revision: 5
 caps.handback.revision: 0
-author: Nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 0fa837c68eb073d2ceaf48c938137a94141a102e
 ms.openlocfilehash: bdb7f78480f73bc4559c4ff49ecb7b047581780a
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -40,9 +41,4 @@ System Center Configuration Manager의 메일 프로필에는 외부 및 제품 
 |종속성|추가 정보|  
 |----------------|----------------------|  
 |Active Directory의 메일 특성|사용자의 기본 SMTP 주소를 사용하여 메일 프로필에서 사용자 메일 주소를 생성하려면 이 주소가 Active Directory의 **메일** 특성에 있어야 합니다.<br /><br /> 자세한 내용은 Windows Server 설명서를 참조하세요.|
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

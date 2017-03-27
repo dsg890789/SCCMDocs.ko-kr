@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 74c60941-5eae-4905-9e58-252bdb39df96
 caps.latest.revision: 10
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b
 ms.openlocfilehash: 6bdc5cca01bf5a79a6177d7cf1de96b8ff2c2305
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -64,7 +65,7 @@ System Center Configuration Manager 응용 프로그램을 사용하여 Mac 컴�
 
  Configuration Manager 등록을 사용하지 않고 Configuration Manager와 독립적으로 클라이언트 인증서를 설치하는 경우에는 [업그레이드된 클라이언트가 기존 인증서를 사용하도록 구성](#BKMK_UpgradingClient_MachineEnrollment)을 참조하세요.  
 
-##  <a name="a-namebkmkupgradingclientmachineenrollmenta-configure-the-upgraded-client-to-use-an-existing-certificate"></a><a name="BKMK_UpgradingClient_MachineEnrollment"></a> Configure the upgraded client to use an existing certificate  
+##  <a name="BKMK_UpgradingClient_MachineEnrollment"></a> Configure the upgraded client to use an existing certificate  
  다음 절차를 실행하여 컴퓨터 등록 마법사가 실행되는 것을 방지하고 업그레이드된 클라이언트가 기존 클라이언트 인증서를 사용하도록 구성합니다.  
 
 -   Configuration Manager 콘솔에서 **Mac OS X** 형식의 구성 항목을 만듭니다.  
@@ -102,9 +103,4 @@ System Center Configuration Manager 응용 프로그램을 사용하여 Mac 컴�
 -   구성 기준에 구성 항목을 추가한 후 Configuration Manager와 별도로 인증서를 설치할 모든 Mac 컴퓨터에 해당 구성 기준을 배포합니다.  
 
  Mac 컴퓨터에 대한 구성 항목을 만들고 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager 클라이언트로 관리되는 Mac OS X 장치에 대한 구성 항목을 만드는 방법](../../../../compliance/deploy-use/create-configuration-items-for-mac-os-x-devices-managed-with-the-client.md) 및 [System Center Configuration Manager에서 구성 기준을 배포하는 방법](../../../../compliance/deploy-use/deploy-configuration-baselines.md)을 참조하세요.  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

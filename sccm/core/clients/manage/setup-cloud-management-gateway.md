@@ -1,9 +1,9 @@
 ---
 title: "클라우드 관리 게이트웨이 설정 | Microsoft 문서"
 description: 
-author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.author: nbigman
 ms.date: 12/14/2016
 ms.topic: article
 ms.prod: configuration-manager
@@ -14,6 +14,7 @@ ms.assetid: e0ec7d66-1502-4b31-85bb-94996b1bc66f
 translationtype: Human Translation
 ms.sourcegitcommit: 2bcc5d9dde1f1a2d9c33575d6c463e281ac818e8
 ms.openlocfilehash: 61b8cd8458718b9a54edb129739c619f947ac380
+ms.lasthandoff: 12/16/2016
 
 ---
 
@@ -221,9 +222,4 @@ API Management 인증서는 Configuration Manager에서 Azure API에 액세스�
 ## <a name="next-steps"></a>다음 단계
 
 [클라이언트에서 클라우드 관리 게이트웨이 모니터링](monitor-clients-cloud-management-gateway.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: 272ee86b-d3d9-4fd9-b5c4-73e490e1a1e4
 caps.latest.revision: 6
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: 342a58d2b7439f721381beb43188594b5278043d
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -28,7 +29,7 @@ ms.openlocfilehash: 342a58d2b7439f721381beb43188594b5278043d
 
 이 항목에는 System Center 2012 Configuration Manager에서 원격 제어에 대한 보안 및 개인 정보가 포함되어 있습니다.  
 
-##  <a name="a-namebkmksecurityhardwareinventorya-security-best-practices-for-remote-control"></a><a name="BKMK_Security_HardwareInventory"></a> 원격 제어에 대한 보안 모범 사례  
+##  <a name="BKMK_Security_HardwareInventory"></a> 원격 제어에 대한 보안 모범 사례  
  원격 제어를 사용하여 클라이언트 컴퓨터를 관리하는 경우 다음 보안 모범 사례를 따르세요.  
 
 |보안 모범 사례|추가 정보|  
@@ -54,7 +55,7 @@ ms.openlocfilehash: 342a58d2b7439f721381beb43188594b5278043d
 
      Configuration Manager 콘솔을 설치하는 대신 원격 제어에 대한 이진 파일을 복사한 다음 명령 프롬프트에서 원격 제어를 실행하는 경우 감사 메시지가 전송되지 않습니다.  
 
-##  <a name="a-namebkmkprivacyhardwareinventorya-privacy-information-for-remote-control"></a><a name="BKMK_Privacy_HardwareInventory"></a> 원격 제어에 대한 개인 정보  
+##  <a name="BKMK_Privacy_HardwareInventory"></a> 원격 제어에 대한 개인 정보  
  원격 제어를 사용하면 Configuration Manager 클라이언트 컴퓨터에서 활성 세션을 볼 수 있으며 해당 컴퓨터에 저장된 모든 정보를 잠재적으로 볼 수 있습니다. 기본적으로 원격 제어는 사용하도록 설정되어 있지 않습니다.  
 
  원격 제어 세션을 시작하기 전에 분명하게 알리고 사용자의 동의를 얻도록 원격 제어를 구성할 수 있지만 해당 권한이나 인식 없이 사용자를 모니터링할 수도 있습니다. 원격 제어나 모든 권한에서 아무것도 변경할 수 없도록 보기 전용 액세스 수준을 구성할 수 있습니다. 연결 관리자의 계정이 원격 제어 세션에 표시되므로 사용자는 누가 컴퓨터에 연결되어 있는지 식별할 수 있습니다.  
@@ -62,9 +63,4 @@ ms.openlocfilehash: 342a58d2b7439f721381beb43188594b5278043d
  기본적으로 Configuration Manager에서 로컬 관리자 그룹에 원격 제어 권한을 부여합니다.  
 
  원격 제어를 구성하려면 먼저 개인정보취급방침 요구 사항을 검토하세요.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
