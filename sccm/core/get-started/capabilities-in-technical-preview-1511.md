@@ -15,9 +15,11 @@ caps.latest.revision: 5
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
+robots: noindex,nofollow
 translationtype: Human Translation
 ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
 ms.openlocfilehash: 2e0338267ea9fdc639d57f93adda1e46aea80eec
+ms.lasthandoff: 01/24/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1511-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1511의 기능
@@ -28,7 +30,7 @@ ms.openlocfilehash: 2e0338267ea9fdc639d57f93adda1e46aea80eec
 
 다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.  
 
-##  <a name="a-namebkmkwufba-integration-with-windows-update-for-business-in-windows-10"></a><a name="BKMK_WUfB"></a> Windows 10에서 비즈니스용 Windows 업데이트와 통합  
+##  <a name="BKMK_WUfB"></a> Windows 10에서 비즈니스용 Windows 업데이트와 통합  
  Configuration Manager에서는 WUfB(비즈니스용 Windows 업데이트)를 통해 직접 연결된 Windows 10 컴퓨터와 Windows 10 업데이트 및 업그레이드를 다운로드하기 위해 WSUS에 연결된 컴퓨터를 구별할 수 있습니다.  WUfB를 통해 연결된 컴퓨터의 경우 업데이트와 업그레이드는 관리자가 그룹 정책 또는 MDM 정책을 통해 설정하는 빈도로 관리할 수 있으며, 이러한 업데이트/업그레이드를 WUfB에서 직접 설치할 수 있습니다.    
 WUfB를 통해 연결된 컴퓨터의 경우 Configuration Manager에서 준수 상태를 보고할 수 없습니다(Windows 업데이트 또는 정의 업데이트 포함). 또한 Configuration Manager에서는 이러한 컴퓨터에 Microsoft 업데이트 또는 타사 업데이트를 배포할 수 없습니다.  
 
@@ -52,7 +54,7 @@ WUfB를 통해 연결된 컴퓨터의 경우 Configuration Manager에서 준수 
 
 5.  WUfB를 통해 관리하는 컴퓨터에서 준수 상태가 **알 수 없음** 으로 표시되며, 해당 컴퓨터는 전체 준수 비율의 일부로 계산되지 않습니다.  
 
-##  <a name="a-namebkmkoffice365proplusa-managing-office-365-proplus-client-update-through-system-center-configuration-manager"></a><a name="BKMK_Office365ProPlus"></a> System Center Configuration Manager를 통해 Office 365 ProPlus 클라이언트 업데이트 관리  
+##  <a name="BKMK_Office365ProPlus"></a> System Center Configuration Manager를 통해 Office 365 ProPlus 클라이언트 업데이트 관리  
  이제 Configuration Manager에서는 Configuration Manager 소프트웨어 업데이트 관리 워크플로를 사용하여 Office 365 데스크톱 클라이언트 업데이트를 관리할 수 있습니다.    
 Microsoft가 WSUS(Windows Server Updates Services)를 위한 새로운 Office 365 데스크톱 클라이언트 업데이트를 게시하면 카탈로그 동기화의 일부로 Office 365 업데이트가 구성된 경우 Configuration Manager에서 업데이트를 카탈로그에 동기화할 수 있습니다.  Configuration Manager 사이트 서버에서 Office 365 클라이언트 업데이트를 다운로드하고 패키지를 Configuration Manager 배포 지점에 배포합니다.  그러면 Configuration Manager 클라이언트에서 업데이트를 가져올 위치와 업데이트 설치 프로세스를 시작할 시기를 Office 365 데스크톱 클라이언트에 알립니다.  
 
@@ -71,7 +73,7 @@ Microsoft가 WSUS(Windows Server Updates Services)를 위한 새로운 Office 36
 
  자세한 내용은 [System Center Configuration Manager Technical Preview로 Office 365 클라이언트 업데이트 관리](https://technet.microsoft.com/library/mt628083.aspx)를 참조하세요.  
 
-##  <a name="a-namebkmkalwasyona-support-for-sql-server-alwayson-for-highly-available-databases"></a><a name="BKMK_AlwasyOn"></a> 항상 사용 가능한 데이터베이스에 대한 SQL Server AlwaysOn 지원  
+##  <a name="BKMK_AlwasyOn"></a> 항상 사용 가능한 데이터베이스에 대한 SQL Server AlwaysOn 지원  
  Configuration Manager에서는 이제 SQL Server AlwaysOn 가용성 그룹을 사용하여 사이트 데이터베이스를 호스트할 수 있습니다.  새 사이트를 설치할 때 설치 프로그램이 SQL Server의 일반 인스턴스가 아닌 가용성 그룹을 사용하도록 지정할 수 있습니다.  
 
 > [!NOTE]  
@@ -147,7 +149,7 @@ SQL Server 가용성 그룹을 사용하는 사이트를 설치하려면 다음�
 
 3.  이 정보를 입력한 후 일반적인 프로세스와 구성을 사용하여 설치를 완료합니다.  
 
-##  <a name="a-namebkmkclusterserverupdatesa-service-a--server-cluster"></a><a name="BKMK_ClusterServerUpdates"></a> 서버 클러스터 서비스  
+##  <a name="BKMK_ClusterServerUpdates"></a> 서버 클러스터 서비스  
 이제는 클러스터의 서버를 포함하는 컬렉션을 만든 다음 클러스터에 업데이트를 배포할 때 사용할 클러스터 설정을 구성할 수 있습니다. 지정된 시간에 온라인 상태인 서버의 백분율을 제어할 수 있으며 사용자 지정 작업을 실행하도록 배포 전/배포 후 PowerShell 스크립트를 구성할 수도 있습니다.  
 
 **이 릴리스의 알려진 문제:**  
@@ -205,9 +207,4 @@ SQL Server 가용성 그룹을 사용하는 사이트를 설치하려면 다음�
 1.  서버 클러스터 컬렉션에 [소프트웨어 업데이트를 배포](https://technet.microsoft.com/library/gg712304.aspx)합니다.  
 
 2.  [소프트웨어 업데이트 배포를 모니터링](https://technet.microsoft.com/library/gg712304.aspx)합니다.  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

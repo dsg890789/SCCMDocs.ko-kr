@@ -2,7 +2,7 @@
 title: "진단 데이터 보기 | Microsoft 문서"
 description: "진단 및 사용 현황 데이터를 보고 System Center Configuration Manager 계층 구조에 중요한 정보가 포함되어 있지 않은지 확인합니다."
 ms.custom: na
-ms.date: 12/29/2016
+ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 688e05aae0e0b15b54835f8d64a98487f4d7b64d
 ms.openlocfilehash: fcd7ac43f7b2d2c92d6aadd7c490f198ac99e5e6
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -36,7 +37,7 @@ System Center Configuration Manager 계층 구조에서 진단 및 사용 현황
 
 서비스 연결점이 오프라인 모드인 경우 서비스 연결 도구를 사용하여 현재 진단 및 사용 현황 데이터를 쉼표로 구분된 값(CSV) 파일로 내보낼 수 있습니다. **-Export** 매개 변수가 있는 서비스 연결 지점에서 서비스 연결 도구를 실행합니다.  
 
-##  <a name="a-namebkmkhashesa-one-way-hashes"></a><a name="bkmk_hashes"></a> 단방향 해시  
+##  <a name="bkmk_hashes"></a> 단방향 해시  
 일부 데이터는 임의의 영숫자 문자열로 구성됩니다. Configuration Manager에서는 단방향 해시를 사용하는 SHA-256 알고리즘을 사용하여 잠재적으로 중요한 수집하지 않는지 확인합니다. 이 알고리즘은 데이터를 상관관계 및 비교 목적으로 사용할 수 있는 상태로 유지합니다. 예를 들어 사이트 데이터베이스에서 테이블 이름을 수집하는 대신 각 테이블 이름에 대해 단방향 해시가 캡처됩니다. 이렇게 하면 사용자가 만든 사용자 지정 테이블 이름이나 타사의 제품 추가 기능이 표시되지 않습니다. 사용자는 제품에서 기본적으로 제공되는 SQL 테이블 이름의 동일한 단방향 해시를 사용하고 두 쿼리의 결과를 비교하여 제품 기본값에서 데이터베이스 스키마의 편차를 확인할 수 있습니다. 이 데이터는 SQL 스키마 변경이 필요한 업데이트 개선에 사용됩니다.  
 
 원시 데이터를 볼 때 데이터의 각 행에는 해시된 공통 값이 표시됩니다. 이는 계층 ID입니다. 이 해시된 값은 고객 또는 원본을 식별하지 않고 동일한 계층 구조와 데이터의 상관 관계를 지정하는 데 사용됩니다.  
@@ -66,9 +67,4 @@ System Center Configuration Manager 계층 구조에서 진단 및 사용 현황
     $result = [Convert]::ToBase64String($hashedBytes)    
     return $result   
     ```  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

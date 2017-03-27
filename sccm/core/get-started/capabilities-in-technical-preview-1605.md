@@ -15,10 +15,11 @@ caps.latest.revision: 36
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-robots: noindex,nofollow
 translationtype: Human Translation
 ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
 ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
+ms.lasthandoff: 01/24/2017
+
 
 ---
 # <a name="capabilities-in-technical-preview-1605-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1605의 기능
@@ -35,7 +36,7 @@ ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
 
  **다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.**  
 
-##  <a name="a-namebkmkperappvpna-per-app-vpn-for-windows-10-devices"></a><a name="BKMK_PerAppVPN"></a> Windows 10 장치를 위한 앱당 VPN  
+##  <a name="BKMK_PerAppVPN"></a> Windows 10 장치를 위한 앱당 VPN  
  Intune에서 Configuration Manager를 사용하여 관리되는 Windows 10 장치의 경우, Configuration Manager 관리 콘솔을 통해 구성한 VPN 연결을 자동으로 여는 앱 목록을 추가할 수 있습니다. 이러한 앱에 대한 VPN 트래픽을 제한하는 옵션이 있거나 VPN 연결을 통한 모든 트래픽을 계속 허용할 수 있습니다.  
 
  **요구 사항**:  
@@ -44,17 +45,17 @@ ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
 
 -   하나 이상의 장치에 배포된 Windows 10 VPN 프로필  
 
-##  <a name="a-namebkmkinstallsua-improvements-to-the-install-software-updates-task-sequence"></a><a name="BKMK_InstallSU"></a> 소프트웨어 업데이트 설치 작업 순서의 향상 기능  
+##  <a name="BKMK_InstallSU"></a> 소프트웨어 업데이트 설치 작업 순서의 향상 기능  
  소프트웨어 업데이트 설치 작업 순서가 다음과 같이 향상되었습니다.  
 
 -   새 작업 순서 변수인 SMSTSSoftwareUpdateScanTimeout을 사용하여 소프트웨어 업데이트 설치 작업 순서 단계 중에 소프트웨어 업데이트 검사의 시간 제한을 제어할 수 있습니다. 기본값은 30분입니다.  
 
 -   로깅 기능이 향상되었습니다. smsts.log 로그 파일에 소프트웨어 업데이트 설치 프로세스 중 문제를 해결할 수 있도록 하는 다른 로그 파일을 참조하는 새로운 로그 항목이 포함됩니다.  
 
-##  <a name="a-namebkmkprepareconfigmgrclienta-improvements-to-the-prepare-configmgr-client-for-capture-task-sequence-step"></a><a name="BKMK_PrepareConfigMgrClient"></a> ConfigMgr 클라이언트 캡처 준비 작업 순서 단계의 향상 기능  
+##  <a name="BKMK_PrepareConfigMgrClient"></a> ConfigMgr 클라이언트 캡처 준비 작업 순서 단계의 향상 기능  
  이제 ConfigMgr 클라이언트 준비 단계에서 주요 정보만 제거하는 것이 아니라 Configuration Manager 클라이언트를 완전히 제거합니다. 작업 순서에서 운영 체제 캡처 이미지를 배포할 때마다 새 Configuration Manager 클라이언트가 설치됩니다.  
 
-##  <a name="a-namebkmkgracea-grace-period-for-required-application-deployments"></a><a name="BKMK_Grace"></a> 필수 응용 프로그램 배포를 위한 유예 기간  
+##  <a name="BKMK_Grace"></a> 필수 응용 프로그램 배포를 위한 유예 기간  
  간혹 구성한 마감일 이후에도 필수 응용 프로그램 배포를 설치할 수 있는 시간을 사용자에게 더 제공하고 싶을 경우가 있습니다. 예를 들어 최종 사용자가 휴가에서 막 돌아온 경우 지연된 응용 프로그램 배포를 설치하는 데 너무 오래 기다려야 할 수 있습니다. 하지만 언제든지 응용 프로그램을 즉시 설치할 수 있습니다.  
 
  이 문제를 해결하기 위해 이제 Configuration Manager 클라이언트 설정을 컬렉션에 배포하여 **유예 기간**을 정의할 수 있습니다.  
@@ -71,7 +72,7 @@ ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
 
  소프트웨어 업데이트 배포 마법사, 자동 배포 규칙 마법사 및 속성 페이지에 비슷한 옵션이 추가되었습니다. 하지만 이 Technical Preview에서는 현재 이러한 옵션이 구현되지 않습니다.  
 
-##  <a name="a-namebkmkremotea-new-experience-for-remote-device-actions"></a><a name="BKMK_Remote"></a> 원격 장치 작업을 위한 새로운 환경  
+##  <a name="BKMK_Remote"></a> 원격 장치 작업을 위한 새로운 환경  
  Configuration Manager 콘솔에서 원격 장치 작업을 수행하기 위한 환경이 개선되었습니다.  
 이제 **자산 및 준수** 작업 영역에서 액세스되는 **원격 장치 작업** 메뉴에서 **사용 중지/초기화**, **암호 다시 설정**, **원격 잠금** 및 **활성화 잠금 바이패스** 등의 일반 작업을 찾을 수 있습니다.  
 
@@ -87,7 +88,7 @@ ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
 
  iOS 활성화 잠금 바이패스에 대한 자세한 내용은 [Configuration Manager의 활성화 잠금 바이패스를 사용하여 iOS 장치 보호](/sccm/mdm/deploy-use/manage-ios-activation-lock), 특히 **Configuration Manager Technical Preview의 활성화 잠금 무시에 대해 현재 알려진 문제** 섹션을 참조하세요.  
 
-##  <a name="a-namebkmkwsfba-windows-store-for-business-apps"></a><a name="BKMK_WSFB"></a> 비즈니스용 Windows 스토어 앱  
+##  <a name="BKMK_WSFB"></a> 비즈니스용 Windows 스토어 앱  
  [비즈니스용 Windows 스토어](https://www.microsoft.com/business-store)에서 조직을 위한 앱을 찾아서 개별적으로 또는 대량으로 구매할 수 있습니다. 예를 들어 스토어를 Configuration Manager에 연결하여 Configuration Manager 콘솔에서 대량 구매 앱을 관리할 수 있습니다.  
 
 -   구매한 앱 목록을 Configuration Manager와 동기화할 수 있습니다.  
@@ -158,7 +159,7 @@ ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
 >   
 >  현재 Configuration Manager에서 사용이 허가된 온라인 앱을 배포할 수 없습니다.  
 
-##  <a name="a-namebkmkvpp2a-general-improvements-for-volume-purchased-apps"></a><a name="BKMK_VPP2"></a> 대량 구매 앱의 일반적인 향상 기능  
+##  <a name="BKMK_VPP2"></a> 대량 구매 앱의 일반적인 향상 기능  
 
 -   이 릴리스에서는 비즈니스용 Windows 스토어와 iOS App Store의 대량 구매 앱이 동일한 보기, **스토어 앱에 대한 라이선스 정보**로 통합되었습니다.  
 
@@ -170,14 +171,14 @@ ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
 
 -   Configuration Manager 콘솔에서 대량 구매 앱의 Apple VPP 토큰을 가져오고 업로드하는 데 사용하는 위치가 변경되었습니다. 이제 **클라우드 서비스** > **Apple Volume Purchase Program 토큰** 노드의 **관리자** 작업 영역에서 이 작업을 수행할 수 있습니다.  
 
-##  <a name="a-namebkmkvppa-enterprise-data-protection-edp"></a><a name="BKMK_VPP"></a> EDP(엔터프라이즈 데이터 보호)  
+##  <a name="BKMK_VPP"></a> EDP(엔터프라이즈 데이터 보호)  
  보호된 앱, EDP 보호 수준 및 네트워크에서 엔터프라이즈 데이터를 찾는 방법을 선택하는 항목을 포함하여 EDP(엔터프라이즈 데이터 보호) 정책을 배포할 수 있는 구성 항목을 만들 수 있습니다. EDP에 대한 자세한 내용은 다음 항목을 참조하세요.  
 
 -   [EDP(엔터프라이즈 데이터 보호)를 사용한 엔터프라이즈 데이터 보호](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-edp)  
 
 -   [System Center Configuration Manager를 사용하여 EDP(엔터프라이즈 데이터 보호) 정책 만들기 및 배포](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-sccm)  
 
-##  <a name="a-namebkmkenda-end-users-can-install-apps-from-the-company-portal"></a><a name="BKMK_End"></a> 최종 사용자가 회사 포털에서 앱을 설치할 수 있습니다.  
+##  <a name="BKMK_End"></a> 최종 사용자가 회사 포털에서 앱을 설치할 수 있습니다.  
  System Center Configuration Manager 버전 1511에 온-프레미스 MDM이 도입되었습니다. 이전 버전에서는 온-프레미스 MDM 관리 장치에 대해 **필수** 설치 배포 용도로 MDM 관리 Windows 10 장치에 응용 프로그램을 배포할 수 있었습니다.  
 
  이 릴리스에서는 이제 온-프레미스 MDM 관리 Windows 10 컴퓨터 사용자에게 **사용 가능** 배포 용도로 앱을 배포할 수 있으며, 사용자가 회사 포털에서 이 앱을 스스로 설치할 수 있습니다.
@@ -268,12 +269,12 @@ ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
 
      회사 포털을 연 후 **System Center Configuration Manager**라는 이름의 인증 대화 상자가 나타나면 사용자의 Active Directory 자격 증명(user@domain 또는 domain\user 중 하나)을 지정하여 로그인합니다.  
 
-##  <a name="a-namebkmksw1a-new-tabs-for-updates-and-operating-systems-in-software-center"></a><a name="BKMK_SW1"></a> 소프트웨어 센터의 업데이트 및 운영 체제에 대한 새로운 탭  
+##  <a name="BKMK_SW1"></a> 소프트웨어 센터의 업데이트 및 운영 체제에 대한 새로운 탭  
  이 릴리스에서는 소프트웨어 센터 응용 프로그램의 레이아웃을 개선하기 위해 다음과 같이 변경되었습니다.  
 
 -   **응용 프로그램** 탭이 세 개의 별도 탭(**업데이트**, **운영 체제**(이전에는 둘 다 **필터** 목록에 있었음) 및 **응용 프로그램**)으로 분리되었습니다.  
 
-##  <a name="a-namebkmkservergroupsa-service-a--server-group"></a><a name="BKMK_ServerGroups"></a> 서버 그룹 제공  
+##  <a name="BKMK_ServerGroups"></a> 서버 그룹 제공  
  System Center Configuration Manager용 Technical Preview 버전 1511은 컬렉션을 만드는 기능을 포함하고 있으며 여기서 컬렉션의 모든 장치는 서버 그룹을 구성합니다. 서버 그룹에 소프트웨어 업데이트를 배포할 때 사용할 서버 그룹 설정을 구성하고, 지정된 시간에 업데이트되는 컴퓨터의 백분율을 제어할 수 있으며, 사용자 지정 작업을 실행하도록 배포 전/배포 후 PowerShell 스크립트를 구성할 수 있습니다.  
 
  System Center Configuration Manager용 Technical Preview 버전 1605에서는 정의하는 특정 순서대로 서버 그룹의 컴퓨터를 업데이트하는 기능이 추가되고, 서버 그룹의 컴퓨터 상태를 볼 수 있도록 모니터링 기능이 향상되었으며, 클라이언트가 소프트웨어 업데이트를 설치하지 못하거나 다른 클라이언트가 해당 소프트웨어 업데이트를 설치하지 않도록 하는 경우에 유용한 배포 잠금을 제거하는 기능이 제공됩니다.  
@@ -340,7 +341,7 @@ ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
 
 2.  **홈** 탭의 **배포** 그룹에서 **서버 그룹 배포 잠금 제거**를 클릭합니다. 클라이언트가 소프트웨어 업데이트를 설치하지 못한 경우와 다른 클라이언트가 해당 소프트웨어 업데이트를 설치하지 못하도록 하는 경우 배포 잠금을 수동으로 제거할 수 있습니다.  
 
-##  <a name="a-namebkmkatpa-support-for-windows-defender-advanced-threat-protection-service"></a><a name="BKMK_ATP"></a> Windows Defender Advanced Threat Protection 서비스에 대한 지원  
+##  <a name="BKMK_ATP"></a> Windows Defender Advanced Threat Protection 서비스에 대한 지원  
  Windows Defender ATP(Advanced Threat Protection)는 엔터프라이즈의 검색, 조사 및 네트워크에 대한 고급 공격에 대응하는 데 도움이 되는 새로운 서비스입니다. [Windows Defender ATP](https://blogs.windows.com/windowsexperience/2016/03/01/announcing-windows-defender-advanced-threat-protection)에 대해 자세히 알아봅니다. Configuration Manager는 관리되는 Windows 10 Anniversary Edition 클라이언트 장치를 등록하고 모니터링하는 데 도움이 될 수 있습니다.  
 
 ### <a name="try-it-now"></a>지금 직접 사용해 보세요!  
@@ -407,7 +408,7 @@ ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
 
         -   **온보딩되지 않음** - 정책이 적용되었지만 에이전트가 온보딩된 정책을 보고하지 않음  
 
-##  <a name="a-namebkmkdhaa-on-premises-device-health-attestation"></a><a name="BKMK_DHA"></a> 온-프레미스 장치 상태 증명  
+##  <a name="BKMK_DHA"></a> 온-프레미스 장치 상태 증명  
  이제 온-프레미스 인프라를 사용하여 통신하도록 Windows 10 장치에 대한 상태 증명을 구성할 수 있습니다. 관리자는 보고를 클라우드를 통해 또는 온-프레미스 리소스를 통해 수행할지 여부를 지정할 수 있습니다. 상태 증명 보고를 위해 온-프레미스를 선택한 경우 서비스에 대해 URL을 지정할 수 있습니다. 이를 통해 인터넷에 액세스할 수 없는 클라이언트 PC에서 상태 증명을 사용하여 장치를 활성화하고 관리할 수 있습니다.  
 
 ### <a name="enable-health-attestation-for-on-premises-devices"></a>온-프레미스 장치에 상태 증명 사용  
@@ -417,10 +418,10 @@ ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
 
 2.  **온-프레미스 상태 증명 서비스 URL**을 지정하고 **확인**을 클릭합니다.  
 
-##  <a name="a-namebkmkrestartoptionsa-new-restart-options-for-windows-10-clients-after-software-update-installation"></a><a name="BKMK_RestartOptions"></a> 소프트웨어 업데이트 설치 후 Windows 10 클라이언트의 새로운 다시 시작 옵션  
+##  <a name="BKMK_RestartOptions"></a> 소프트웨어 업데이트 설치 후 Windows 10 클라이언트의 새로운 다시 시작 옵션  
  Configuration Manager를 사용하여 다시 시작이 필요한 소프트웨어 업데이트를 배포하고 컴퓨터에 설치한 경우 다시 시작 보류가 예약되고 다시 시작 대화 상자가 표시됩니다. 현재 Windows 8 이상에서 다시 시작 대화 상자에서가 아니라 Windows 전원 옵션을 사용하여 컴퓨터를 종료하거나 다시 시작하는 경우, 컴퓨터를 다시 시작한 후에도 다시 시작 대화 상자가 계속 남아 있으며 구성된 마감일에 컴퓨터를 다시 시작해야 합니다. 이 Technical Preview에서는 Configuration Manager 소프트웨어 업데이트에 대해 보류 중인 다시 시작이 있으면 언제든지 **업데이트 및 다시 시작**과 **업데이트 및 종료** 옵션을 Windows 10 컴퓨터의 Windows 전원 옵션에서 사용할 수 있습니다. 이러한 옵션 중 하나를 사용한 후 컴퓨터를 다시 시작하면 다시 시작 대화 상자가 표시되지 않습니다.  
 
-##  <a name="a-namebkmkimeia-pre-declare-corporate-owned-devices-with-imei-or-ios-serial-number"></a><a name="BKMK_IMEI"></a> IMEI 또는 iOS 일련 번호로 회사 소유 장치 미리 선언  
+##  <a name="BKMK_IMEI"></a> IMEI 또는 iOS 일련 번호로 회사 소유 장치 미리 선언  
  이제 IMEI(International station Mobile Equipment Identity) 번호를 가져와서 회사 소유 장치를 식별할 수 있습니다. 장치 IMEI 번호를 포함한 쉼표로 구분된 값(.csv) 파일을 업로드하거나 장치 정보를 수동으로 입력할 수 있습니다.  또한 iOS 장치의 일련 번호를 가져올 수 있습니다.  가져온 정보에 따라 "회사"로 등록된 장치의 소유권이 설정됩니다.  서비스에 액세스하는 각 사용자는 Intune 라이선스가 여전히 필요합니다.  
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기  
@@ -469,9 +470,4 @@ ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
      **다음**을 클릭합니다.  
 
 4.  파일 가져오기 결과를 검토합니다. 이전에 가져온 IMEI 또는 일련 번호의 세부 정보는 새로운 세부 정보로 업데이트됩니다.  **다음**을 클릭하여 계속하거나 **뒤로**를 클릭하여 업데이트된 세부 정보를 유지한 다음 마법사를 완료합니다.  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

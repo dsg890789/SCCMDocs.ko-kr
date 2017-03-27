@@ -15,9 +15,11 @@ caps.latest.revision: 6
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
+robots: noindex,nofollow
 translationtype: Human Translation
 ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
 ms.openlocfilehash: 7fff6f2807a679b621b736b8ad0b6561fb37affe
+ms.lasthandoff: 01/24/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1512-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1512의 기능
@@ -28,7 +30,7 @@ ms.openlocfilehash: 7fff6f2807a679b621b736b8ad0b6561fb37affe
 
  다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.  
 
-##  <a name="a-namebkmkdevicehealtha-device-health-attestation"></a><a name="bkmk_devicehealth"></a> 장치 상태 증명  
+##  <a name="bkmk_devicehealth"></a> 장치 상태 증명  
  Technical  Preview 1512부터 관리자는 Configuration Manager 콘솔에서 Windows 10 장치 상태 증명의 상태를 볼 수 있습니다.  이 기능은 Configuration Manager와 Microsoft Intune에서의 Configuration Manager에 사용할 수 있습니다. 장치 상태 증명을 사용하여 관리자는 클라이언트 컴퓨터가 신뢰할 수 있는 BIOS, TPM 및 소프트웨어 구성을 갖는지 확인할 수 있습니다. 장치 상태 증명을 지원하려면 클라이언트 장치에서 TPM 2가 설정된 Win10이 실행되고 있어야 합니다. 장치 상태 증명은 다음 각각에 대해 사용하도록 설정된 장치 수를 표시합니다.  
 
 -   맬웨어 방지 조기 실행  
@@ -43,7 +45,7 @@ ms.openlocfilehash: 7fff6f2807a679b621b736b8ad0b6561fb37affe
 
 장치 상태 증명 보기를 미리 보려면 Configuration Manager에서 **모니터링** 작업 영역으로 이동한 후 **보안** 노드를 클릭하고 **상태 증명**을 클릭합니다.  
 
-##  <a name="a-namebkmkviewtermsa-in-console-monitoring-for-terms-and-conditions"></a><a name="bkmk_viewterms"></a> 콘솔 내 사용 약관 모니터링  
+##  <a name="bkmk_viewterms"></a> 콘솔 내 사용 약관 모니터링  
 Technical  Preview 1512부터 Microsoft Intune에서 Configuration Manager를 통합할 경우 Configuration Manager 콘솔을 사용하여 IT 부서에서 구성한 계약조건에 동의한 사용자와 동의하지 않은 사용자를 볼 수 있습니다.  
 
 **요약 정보를 보려면**  
@@ -56,7 +58,7 @@ Technical  Preview 1512부터 Microsoft Intune에서 Configuration Manager를 �
 
 2.  콘솔의 맨 아래에서 **배포** 탭을 선택하고 배포를 클릭한 후 **상태 보기**를 클릭합니다.  
 
-##  <a name="a-namebkmkeppolicya-improvements-to-endpoint-protection-policy-settings"></a><a name="bkmk_EPpolicy"></a> Endpoint Protection 정책 설정의 향상된 기능  
+##  <a name="bkmk_EPpolicy"></a> Endpoint Protection 정책 설정의 향상된 기능  
 1512 Technical Preview에서 Endpoint Protection 맬웨어 방지 정책에 다음과 같은 새 설정이 추가되었습니다.  
 
 -   실시간 보호: **다운로드 시 및 설치 전에 잠재적으로 원치 않는 응용 프로그램 차단**  
@@ -90,9 +92,4 @@ Technical  Preview 1512부터 Microsoft Intune에서 Configuration Manager를 �
 **Endpoint Protection 정책을 사용하기 위한 필수 조건:**  
 
 Endpoint Protection 정책을 사용하려면 먼저 Endpoint Protection 클라이언트 설정을 사용하여 Endpoint Protection 클라이언트를 설치하고 관리해야 합니다. 이렇게 하려면 Windows 7, Windows 8, Windows 8.1용 System Center Endpoint Protection 클라이언트 또는 관리되는 Windows 10용 Windows Defender를 사용합니다. [System Center Configuration Manager의 Endpoint Protection](../../protect/deploy-use/endpoint-protection.md)을 참조하세요.  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

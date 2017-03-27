@@ -15,9 +15,11 @@ caps.latest.revision: 8
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
+robots: noindex,nofollow
 translationtype: Human Translation
 ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
 ms.openlocfilehash: 1d3adcf3310d88b1266388aa03ae5ea03e23f2a5
+ms.lasthandoff: 01/24/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1603-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1603의 기능
@@ -34,7 +36,7 @@ ms.openlocfilehash: 1d3adcf3310d88b1266388aa03ae5ea03e23f2a5
 
  **다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.**  
 
-##  <a name="a-namebkmksc1603a-improvements-to-software-center"></a><a name="BKMK_SC1603"></a> 소프트웨어 센터 개선  
+##  <a name="BKMK_SC1603"></a> 소프트웨어 센터 개선  
 
 ### <a name="new-tiled-view-for-apps"></a>앱에 대한 바둑판식으로 배열된 새 보기  
  최종 사용자는 이제 소프트웨어 센터의 **응용 프로그램** 탭에서 앱 목록과 앱의 바둑판식된 뷰 보기 사이에서 선택할 수 있습니다.  
@@ -42,7 +44,7 @@ ms.openlocfilehash: 1d3adcf3310d88b1266388aa03ae5ea03e23f2a5
 ### <a name="select-multiple-updates-in-software-center"></a>소프트웨어 센터에서 여러 업데이트 선택  
  소프트웨어 센터의 **업데이트** 탭에서 이제 여러 업데이트를 선택하거나 **모두 업데이트**를 선택하여 여러 업데이트를 동시에 설치할 수 있습니다.  
 
-##  <a name="a-namebkmkrc1603a-improvements-to-remote-control"></a><a name="BKMK_RC1603"></a> 원격 제어의 개선 사항  
+##  <a name="BKMK_RC1603"></a> 원격 제어의 개선 사항  
 
 ### <a name="limit-shared-clipboard-access-in-a-remote-control-session"></a>원격 제어 세션에서 공유 클립보드 액세스 제한  
  이제 새 원격 도구 클라이언트 설정 **공유 클립보드 파일 전송 권한에 대해 사용자에게 확인**을 사용하여 원격 제어 세션에서 공유 클립보드에 대한 액세스를 제한할 수 있습니다.  
@@ -51,7 +53,7 @@ ms.openlocfilehash: 1d3adcf3310d88b1266388aa03ae5ea03e23f2a5
 
  그렇게 하면 이전에, 뷰어에 최종 사용자의 컴퓨터에 대한 모든 권한이 부여된 경우 공유 클립보드를 사용하여 최종 사용자에게 완전히 투명한 방식으로 세션에서 로컬 컴퓨터로 파일을 전송할 수 있었던 것처럼 최종 사용자를 위한 보호 계층이 추가됩니다.  
 
-##  <a name="a-namebkmkramdisktftpa-customize-the-ramdisk-tftp-block-size-and-window-size-on-pxe-enabled-distribution-points"></a><a name="BKMK_RamDiskTFTP"></a> PXE 사용 배포 지점에서 RamDisk TFTP 블록 크기 및 창 크기 사용자 지정  
+##  <a name="BKMK_RamDiskTFTP"></a> PXE 사용 배포 지점에서 RamDisk TFTP 블록 크기 및 창 크기 사용자 지정  
  1603 Technical Preview에서 PXE 사용 배포 지점에 대한 RamDisk TFTP 블록 크기 및 창 크기를 사용자 지정할 수 있습니다. 네트워크를 사용자 지정한 경우 블록 또는 창 크기가 너무 커서 시간 초과 오류로 인해 부팅 이미지 다운로드가 실패할 수 있습니다. RamDisk TFTP 블록 크기 및 창 크기 사용자 지정을 통해 PXE를 사용하여 특정 네트워크 요구 사항을 충족하는 경우 TFTP 트래픽을 최적화할 수 있습니다.   
 환경에서 사용자 지정된 설정을 테스트하여 가장 효율적인 설정을 결정해야 합니다.  
 
@@ -91,9 +93,4 @@ ms.openlocfilehash: 1d3adcf3310d88b1266388aa03ae5ea03e23f2a5
      **값**: &lt;사용자 지정된 블록 크기\>  
 
  기본값은 4096(4k)입니다.  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
