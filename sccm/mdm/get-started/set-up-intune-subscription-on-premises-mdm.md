@@ -1,13 +1,13 @@
 ---
-title: "Intune 구독 설정 | Microsoft 문서 | 온-프레미스"
+title: "Intune 구독 설정 | Microsoft Docs"
 description: "System Center Configuration Manager에서 온-프레미스 모바일 장치 관리에 대한 라이선스를 추적하도록 Microsoft Intune 구독을 설정합니다."
 ms.custom: na
-ms.date: 11/18/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
 ms.technology:
-- configmgr-client
+- configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 1e42b1c1-3d58-481f-8647-5c7ae640c5f5
@@ -17,9 +17,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 828e2ac9a3f9bcea1571d24145a1021fdf1091f3
-ms.openlocfilehash: 2cc9f59d9d32d149aa477ba61afba0094f302fc4
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: 6424fb07802b62820b4dc78a58ab30d3b956abef
+ms.openlocfilehash: 5a81ec06e16992ae1c41b0fc98ebcd07386c5381
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -39,7 +39,7 @@ System Center Configuration Manager 온\-프레미스 모바일 장치 관리를
  온\-프레미스 모바일 장치 관리가 작동하려면 Intune이 필요합니다. 평가판 또는 유료 구독을 [등록](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/)하고 다음 단계로 이동하여 Configuration Manager에 구독을 추가하면 됩니다.  
 
 ##  <a name="add-the-intune-subscription-to-configuration-manager"></a>Configuration Manager에 Intune 구독 추가  
- Configuration Manager에 구독을 추가하려면 Intune을 사용하여 모바일 장치 관리에 대한 구독을 추가할 때와 동일한 기본 단계를 따릅니다. 특정 차이점에 대한 아래의 참고를 읽은 다음 [Microsoft Intune 구독을 만들려면](../deploy-use/setup-hybrid-mdm.md#step-3-configure-intune-subscription)의 지침을 사용합니다.  
+ Configuration Manager에 구독을 추가하려면 Intune을 사용하여 모바일 장치 관리에 대한 구독을 추가할 때와 동일한 기본 단계를 따릅니다. 특정 차이점에 대한 아래의 참고를 읽은 다음 [Intune 구독 구성](../deploy-use/configure-intune-subscription.md)의 지침을 사용합니다.  
 
 > [!NOTE]  
 >  Intune 구독을 추가할 때는 다음 사항에 유의하세요.  

@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager로 업그레이드 | Microsoft 문서"
 description: "System Center 2012 Configuration Manager를 실행하는 사이트 및 계층 구조에서 현재 위치 업그레이드를 성공적으로 실행하기 위한 단계를 알아봅니다."
 ms.custom: na
-ms.date: 2/23/2017
+ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 8f4ec982a54cf3cefef310268a54850e70e2e63a
-ms.openlocfilehash: 49e3a9d6f4b8e1afbb76fcba33a7fb58e5a6b13f
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: 6424fb07802b62820b4dc78a58ab30d3b956abef
+ms.openlocfilehash: ca07b46db0967ca03cc5e858b835d2c2108f1210
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -34,6 +34,7 @@ ms.lasthandoff: 03/13/2017
  > System Center Configuration Manager 사이트 및 계층 인프라를 관리할 때 *업그레이드*, *업데이트* 및 *설치*라는 용어는 세 가지 별도의 개념을 설명하는 데 사용됩니다. 각 용어가 어떻게 사용되는지 알아보려면 [업그레이드, 업데이트 및 설치 정보](/sccm/core/understand/upgrade-update-install)를 참조하세요.
 
 ##  <a name="bkmk_path"></a> 현재 위치 업그레이드 경로  
+
 **버전 1606으로 업그레이드**  
 2016년 12월 15일에 버전 1606의 기준 미디어가 추가 업그레이드 시나리오에 대한 지원을 추가하기 위해 릴리스되었습니다. 이 새로운 릴리스는 다음 버전을 System Center Configuration Manager 버전 1606의 정품 버전으로 업그레이드하도록 지원합니다.  
 -   System Center Configuration Manager 버전 1606의 평가판 설치
@@ -78,8 +79,8 @@ ms.lasthandoff: 03/13/2017
 
 사이트 시스템 역할을 호스트하는 데 사용 중인 서버 운영 체제를 검토합니다.  
 
--   System Center 2012 Configuration Manager에서 지원하던 이전 운영 체제 중 일부는 System Center Configuration Manager에서 지원되지 않으므로, 업그레이드하기 전에 해당 운영 체제의 사이트 시스템 역할을 재배치하거나 제거해야 합니다.  
--   Configuration Manager의 필수 조건 검사기는 사이트 서버 또는 원격 컴퓨터의 사이트 시스템 역할에 대한 필수 조건을 확인하지 않습니다.  
+-   System Center 2012 Configuration Manager에서 지원하던 이전 운영 체제 중 일부는 System Center Configuration Manager에서 지원되지 않으므로, 업그레이드하기 전에 해당 운영 체제의 사이트 시스템 역할을 재배치하거나 제거해야 합니다. [사이트 시스템 서버에 대해 지원되는 운영 체제](../../../../core/plan-design/configs/supported-operating-systems-for-site-system-servers.md) 설명서를 참조하세요.   
+-   Configuration Manager의 필수 조건 검사기는 사이트 서버 또는 원격 사이트 시스템의 사이트 시스템 역할에 대한 필수 조건을 확인하지 않습니다.  
 
 사이트 시스템 역할을 호스트하는 각 컴퓨터에 대한 필수 조건을 검토합니다.  
 

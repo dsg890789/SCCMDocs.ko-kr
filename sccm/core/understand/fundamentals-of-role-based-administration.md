@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: a8cb3c9850b183eec156c37a181c04088b71805e
-ms.openlocfilehash: 40837306816639ff8cea8930fec75b05edc5164a
+ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
+ms.openlocfilehash: ddf2ad1cae51c1e36df5a6d86822e2b9abe604e2
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -65,7 +66,7 @@ Configuration Manager에 대해 관리 보안을 디자인하고 구현할 때�
 > [!IMPORTANT]  
 >  사이트 간 복제 지연으로 인해 사이트에서 역할 기반 관리의 변경 내용을 수신하지 못할 수 있습니다. 사이트 간 데이터베이스 복제를 모니터링하는 방법에 대한 내용은 [System Center Configuration Manager에서 사이트 간 데이터 전송](../../core/servers/manage/data-transfers-between-sites.md) 항목을 참조하세요.  
 
-##  <a name="a-namebkmkplanrolesa-security-roles"></a><a name="bkmk_Planroles"></a> 보안 역할  
+##  <a name="bkmk_Planroles"></a> 보안 역할  
  보안 역할을 사용하여 관리자에게 보안 권한을 부여할 수 있습니다. 보안 역할은 관리자가 관리 작업을 수행할 수 있도록 관리자에게 할당하는 보안 권한을 그룹화한 것입니다. 이러한 보안 권한은 관리자가 수행할 수 있는 관리 작업뿐 아니라 특정 개체 유형에 부여되는 사용 권한을 정의합니다. 보안을 유지하는 가장 좋은 방법으로 최소 사용 권한을 제공하는 보안 역할을 할당하세요.  
 
  Configuration Manager에는 일반적인 관리 작업 그룹을 지원하는 몇 가지 보안 역할을 기본 제공합니다. 하지만 특정 비즈니스 요구 사항을 지원하도록 사용자만의 보안 역할을 사용자 지정하여 만들 수 있습니다. 기본 제공 보안 역할의 예:  
@@ -79,7 +80,7 @@ Configuration Manager에 대해 관리 보안을 디자인하고 구현할 때�
 > [!TIP]  
 >  Configuration Manager 콘솔에서 기본 제공 보안 역할과 사용자가 만든 사용자 지정 보안 역할을 설명과 함께 볼 수 있습니다. 역할을 보려면 **관리** 작업 영역에서 **보안**을 확장하고 **보안 역할**을 선택합니다.  
 
- 각 보안 역할마다 개체 유형별로 다른 사용 권한을 지정합니다. 예를 들어 *응용 프로그램 MMM* 보안 역할에는 응용 프로그램에 대한 승인, 만들기, 삭제, 수정, 폴더 수정, 개체 이동, 읽기/배포 및 보안 범위 설정 권한이 포함됩니다.
+ 각 보안 역할마다 개체 유형별로 다른 사용 권한을 지정합니다. 예를 들어 *응용 프로그램 작성자* 보안 역할에는 응용 프로그램에 대한 승인, 만들기, 삭제, 수정, 폴더 수정, 개체 이동, 읽기, 보고서 실행 및 보안 범위 설정 권한이 포함됩니다.
 
  기본 제공 보안 역할의 사용 권한을 변경할 수 없지만 역할을 복사한 후 변경하여 변경 내용을 새로운 사용자 지정 보안 역할로 저장할 수 있습니다. 또한 다른 계층 구조(예: 테스트 네트워크)에서 내보낸 보안 역할을 가져올 수도 있습니다. 보안 역할과 해당 권한을 검토하여 기본 제공 보안 역할을 사용할지, 아니면 사용자 지정 보안 역할을 만들어야 하는지 결정하세요.  
 
@@ -95,7 +96,7 @@ Configuration Manager에 대해 관리 보안을 디자인하고 구현할 때�
 
 역할 기반 관리용 보안 역할을 만들고 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager용 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md) 항목의 [사용자 지정 보안 역할 만들기](../../core/servers/deploy/configure/configure-role-based-administration.md#BKMK_CreateSecRole) 및 [보안 역할 구성](../../core/servers/deploy/configure/configure-role-based-administration.md#BKMK_ConfigSecRole)을 참조하세요.  
 
-##  <a name="a-namebkmkplancola-collections"></a><a name="bkmk_planCol"></a> 컬렉션  
+##  <a name="bkmk_planCol"></a> 컬렉션  
  컬렉션은 관리자가 보거나 관리할 수 있는 사용자 및 컴퓨터 리소스를 지정합니다. 예를 들어 응용 프로그램을 배포하거나 원격 제어를 실행하는 관리자의 경우 이러한 리소스를 포함하는 컬렉션에 대한 액세스 권한을 부여하는 보안 역할을 할당받아야 합니다. 사용자 또는 장치의 컬렉션을 선택할 수 있습니다.  
 
  컬렉션에 대한 자세한 내용은 [System Center Configuration Manager의 컬렉션 소개](../../core/clients/manage/collections/introduction-to-collections.md)를 참조하세요.  
@@ -112,7 +113,7 @@ Configuration Manager에 대해 관리 보안을 디자인하고 구현할 때�
 
 역할 기반 관리용 컬렉션을 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager용 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md) 항목의 [보안을 관리하도록 컬렉션 구성](../../core/servers/deploy/configure/configure-role-based-administration.md#BKMK_ConfigColl)을 참조하세요.  
 
-##  <a name="a-namebkmkplanscopea-security-scopes"></a><a name="bkmk_PlanScope"></a> 보안 범위  
+##  <a name="bkmk_PlanScope"></a> 보안 범위  
  보안 범위를 사용하여 관리자에게 보안 개체에 대한 액세스 권한을 제공할 수 있습니다. 보안 범위는 관리자에게 그룹으로 할당한 보안 개체의 명명된 집합입니다. 모든 보안 개체를 하나 이상의 보안 범위에 할당해야 합니다. Configuration Manager에는 두 개의 기본 제공 보안 범위가 있습니다.  
 
 -   *모든* 기본 제공 보안 범위는 모든 범위에 대한 액세스 권한을 부여합니다. 이 보안 범위에 개체를 할당할 수 없습니다.  
@@ -212,9 +213,4 @@ Configuration Manager에 대해 관리 보안을 디자인하고 구현할 때�
 -   관리자별로 개체 유형의 일부 인스턴스에 대해 서로 다른 액세스 권한이 필요할 수 있습니다. 예를 들어 한 관리자 그룹에는 특정 소프트웨어 업데이트 그룹에 대해 읽기 권한이 필요하고, 다른 관리자 그룹에는 다른 소프트웨어 업데이트 그룹에 대해 수정 및 삭제 권한이 필요한 경우 해당 소프트웨어 업데이트 그룹에 대해 여러 보안 범위를 만듭니다.  
 
 역할 기반 관리용 보안 범위를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager용 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md#BKMK_ConfigSecScope) 항목의 [개체에 대한 보안 범위 구성](../../core/servers/deploy/configure/configure-role-based-administration.md)을 참조하세요.  
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

@@ -16,9 +16,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: bdd7961d9126dc6f3c1ae1fec1842c862e8a7c6d
-ms.openlocfilehash: 12633a7b9f799ffc74e0ee657e091595ed7eaf67
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 507bad02c6e028f09a8b0c8a566ac55f7c3942a5
+ms.openlocfilehash: 4afba7b7702aa12b1cfcaf454e23b0dfb3274e7f
+ms.lasthandoff: 03/22/2017
 
 ---
 # <a name="supported-operating-systems-for-clients-and-devices-for-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 및 장치에 대해 지원되는 운영 체제
@@ -309,7 +309,7 @@ ms.lasthandoff: 02/22/2017
 -   [Microsoft Intune의 모바일 장치 관리 기능](https://docs.microsoft.com/intune/get-started/choose-how-to-manage-devices)  
 -   [Microsoft Intune의 Windows PC 관리 기능](https://docs.microsoft.com/intune/get-started/windows-pc-management-capabilities-in-microsoft-intune)  
 
-##  <a name="a-namebkmkonpremosa-on-premises-mobile-device-management"></a><a name="bkmk_OnpremOS"></a> 온-프레미스 모바일 장치 관리  
+##  <a name="bkmk_OnpremOS"></a> 온-프레미스 모바일 장치 관리  
  Configuration Manager에는 클라이언트 소프트웨어를 설치하지 않고 온-프레미스의 장치를 관리할 수 있는 기본 제공 기능이 있습니다.  자세한 내용은 [System Center Configuration Manager의 온-프레미스 인프라로 모바일 장치 관리](../../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)를 참조하세요.  
 
  **요구 사항 및 제한 사항:**  
@@ -318,19 +318,21 @@ ms.lasthandoff: 02/22/2017
 
 **지원되는 운영 체제:**  
 
--   **Windows 10 Pro**(x86, x64)  
+- **Windows 10 Pro**(x86, x64)  
 
--   **Windows 10 Pro Enterprise**(x86, x64)  
+- **Windows 10 Pro Enterprise**(x86, x64)  
 
--   **Windows 10 IoT Enterprise**(x86, x64)
+- **Windows 10 IoT Enterprise**(x86, x64)
 
--   **Windows 10 Mobile**  
+- **Windows 10 Mobile**  
 
--   **Windows 10 Mobile Enterprise**  
+- **Windows 10 Mobile Enterprise**  
 
--  **Windows 10 IoT Mobile Enterprise**
+- **Windows 10 IoT Mobile Enterprise**
 
-##  <a name="a-namebkmkexsrvconosa-exchange-server-connector"></a><a name="bkmk_ExSrvConOS"></a> Exchange Server 커넥터  
+- **Windows 10 Team for Surface Hub**
+
+##  <a name="bkmk_ExSrvConOS"></a> Exchange Server 커넥터  
 Configuration Manager에서는 Configuration Manager 클라이언트를 설치하지 않고 Exchange Server에 연결하는 장치에 대한 제한적인 관리를 지원합니다. 자세한 내용은 [System Center Configuration Manager와 Exchange를 사용하여 모바일 장치 관리](../../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md)를 참조하세요.  
 
  **요구 사항 및 제한 사항:**  

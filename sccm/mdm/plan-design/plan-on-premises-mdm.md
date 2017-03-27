@@ -17,9 +17,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: cec595d473ca2459e43a7fa1c70b7668a8a48986
-ms.openlocfilehash: d529a058968cf99dce77997844b33ff5dc7c0004
-ms.lasthandoff: 01/21/2017
+ms.sourcegitcommit: 507bad02c6e028f09a8b0c8a566ac55f7c3942a5
+ms.openlocfilehash: 544c3bea0c7df96887ee1717f061c39c64b82d01
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -35,11 +35,12 @@ ms.lasthandoff: 01/21/2017
  > [!NOTE]  
 >  현재 분기의 Configuration Manager는 다음 운영 체제를 실행하는 장치에 대한 온-프레미스 모바일 장치 관리에서의 등록을 지원합니다.  
 >   
->  -   Windows 10 Enterprise  
+> -  Windows 10 Enterprise  
 > -   Windows 10 Pro  
 > -   Windows 10 Team\(Configuration Manager 버전 1602 이상\)  
 > -   Windows 10 Mobile  
-> -   Windows 10 Mobile Enterprise   
+> -   Windows 10 Mobile Enterprise
+> -   Windows 10 IoT Enterprise   
 
 ##  <a name="bkmk_intune"></a> Microsoft Intune 구독의 용도  
  온\-프레미스 모바일 장치 관리를 사용하기 시작하려면 Microsoft Intune을 구독해야 합니다. 구독은 장치 라이선스를 추적하는 데만 필요하며 장치에 대한 관리 정보를 관리하거나 저장하는 데는 사용되지 않습니다. 모든 관리는 온-프레미스 Configuration Manager 인프라를 사용하여 조직의 엔터프라이즈에서 처리됩니다.  

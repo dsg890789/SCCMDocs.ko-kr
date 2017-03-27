@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
-ms.openlocfilehash: 54fc16c104ab25f3650ad1c38a2044abaee96a31
+ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
+ms.openlocfilehash: 4717e0f8eef01501fb5b5790e855c476c1ca4590
+ms.lasthandoff: 03/21/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1607-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1607의 기능
@@ -29,7 +30,7 @@ ms.openlocfilehash: 54fc16c104ab25f3650ad1c38a2044abaee96a31
 
 **다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.**  
 
-## <a name="a-namedmpeditionaimprovements-to-the-windows-10-edition-upgrade-policy"></a><a name="dmp_edition"></a>Windows 10 버전 업그레이드 정책의 향상 기능
+## <a name="dmp_edition"></a>Windows 10 버전 업그레이드 정책의 향상 기능
 
 이번 릴리스에서 이 정책이 다음과 같이 향상되었습니다.
 
@@ -59,7 +60,7 @@ Configuration Manager 클라이언트 설정에서 **버전 업그레이드**에
 
 2. 응용 프로그램 카탈로그 웹 사이트 지점 사이트 서버 역할이 설치되어 있는 경우 소프트웨어 센터에서 응용 프로그램 카탈로그 웹 사이트 지점 사이트 서버 역할 속성에 지정된 조직 이름 및 색을 표시합니다. 자세한 내용은 [응용 프로그램 카탈로그 웹 사이트 지점에 대한 옵션 구성](../../core/servers/deploy/configure/configuration-options-for-site-system-roles.md#BKMK_ApplicationCatalog_Website)을 참조하세요.
 
-3. Microsoft Intune 구독을 구성하고 Configuration Manager 환경에 연결한 경우 소프트웨어 센터에서 Intune 구독 속성에 지정된 조직 이름, 색 및 회사 로고를 표시합니다. 자세한 내용은 [Configuring the Microsoft Intune subscription](../../mdm/deploy-use/setup-hybrid-mdm.md#step-3-configure-intune-subscription)을 참조하십시오.
+3. Microsoft Intune 구독을 구성하고 Configuration Manager 환경에 연결한 경우 소프트웨어 센터에서 Intune 구독 속성에 지정된 조직 이름, 색 및 회사 로고를 표시합니다. 자세한 내용은 [Microsoft Intune 구독 구성](/mdm/deploy-use/configure-intune-subscription)을 참조하세요.
 
 ## <a name="use-the-same-network-adapter-for-multiple-pxe-initiated-deployments"></a>여러 PXE 시작 배포에 같은 네트워크 어댑터 사용
 Technical Preview 버전 1607에서는 이미지 다중 장치(예: 여러 장치에서 사용하는 USB 이더넷 어댑터)에 이더넷 어댑터를 사용하면 이더넷 어댑터에 대한 하드웨어 식별자를 입력할 수 있는 새 설정을 사용할 수 있습니다. Configuration Manager는 PXE 설치 수행 시 목록의 하드웨어 식별자와 클라이언트 등록을 위한 하드웨어 식별자를 무시합니다.
@@ -76,9 +77,4 @@ Technical Preview 버전 1607에서는 이미지 다중 장치(예: 여러 장�
 2. **홈** 탭의 **사이트** 그룹에서 **계층 설정**을 클릭합니다.
 3. **클라이언트 승인 및 충돌 레코드** 탭으로 이동합니다.
 4. **중복 하드웨어 식별자** 섹션에서 **추가**를 클릭하여 새 하드웨어 식별자를 추가합니다.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

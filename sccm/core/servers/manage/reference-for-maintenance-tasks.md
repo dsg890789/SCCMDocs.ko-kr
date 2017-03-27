@@ -17,9 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: dcbcd57b95f304f007e92ebe2b9aeefb4b579662
-ms.openlocfilehash: 92d3c215569916a5557309d7f488aa88f387da92
-ms.lasthandoff: 03/09/2017
+ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
+ms.openlocfilehash: c3ca3b895d54b6dc886068b92b39d0d95c466de2
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -207,6 +207,11 @@ ms.lasthandoff: 03/09/2017
 -   **기본 사이트**: 사용    
 -   보조 사이트: 사용할 수 없음  
 
+**만료된 MDM 대량 등록 패키지 레코드 삭제**: 이 작업을 사용하면 등록 인증서가 만료된 후 이전 대량 등록 인증서와 해당 프로필을 삭제할 수 있습니다. 자세한 내용은 [인증서 프로필 만들기](/sccm/protect/deploy-use/create-certificate-profiles)를 참조하세요.
+-   **중앙 관리 사이트**: 사용
+-   **기본 사이트**: 사용
+-   보조 사이트: 사용할 수 없음
+
 **비활성 클라이언트 검색 데이터 삭제**: 이 작업을 사용하면 비활성 클라이언트에 대한 검색 데이터를 데이터베이스에서 삭제할 수 있습니다. 클라이언트가 더 이상 사용되지 않는 것으로 플래그가 지정되면 클라이언트 상태에 대한 구성을 통해 비활성으로 표시됩니다.
 
 이 작업은 Configuration Manager 클라이언트 리소스에서만 작동합니다. 이 작업은 오래된 검색 데이터 레코드를 모두 삭제하는 **오래된 검색 데이터 삭제** 작업과는 다릅니다. 사이트 하나에서 이 작업이 실행되면 계층 내 모든 사이트의 데이터베이스에서 데이터가 제거됩니다. 자세한 내용은 [System Center Configuration Manager에서 클라이언트 상태를 구성하는 방법](../../../core/clients/deploy/configure-client-status.md)항목을 참조하세요.  
@@ -242,7 +247,7 @@ ms.lasthandoff: 03/09/2017
 **분리된 클라이언트 배포 상태 레코드 삭제**: 이 작업을 사용하여 클라이언트 배포 상태 정보가 포함된 테이블을 주기적으로 제거합니다. 이 작업은 사용되지 않거나 폐기된 장치와 연결된 레코드를 정리합니다.  
 -   **중앙 관리 사이트**: 사용    
 -   **기본 사이트**: 사용    
--   보조 사이트: 사용할 수 없음 
+-   보조 사이트: 사용할 수 없음
 
 **사용되지 않은 응용 프로그램 수정 버전 삭제**: 이 작업을 사용하면 더 이상 참조되지 않는 응용 프로그램 수정 버전을 삭제할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 응용 프로그램을 수정하고 대체하는 방법](../../../apps/deploy-use/revise-and-supersede-applications.md)을 참조하세요.  
 

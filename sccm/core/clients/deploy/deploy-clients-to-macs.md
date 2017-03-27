@@ -16,9 +16,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: c74b553ab76a2b77b0d893151351132da05a640d
-ms.openlocfilehash: 76ce5f413f406088862fb310bbea24140317ca06
-ms.lasthandoff: 01/04/2017
+ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
+ms.openlocfilehash: 9cab5b91a94e8bf2ad96a8a706f46c58e2a3d712
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 01/04/2017
 
 이 항목에서는 Mac 컴퓨터에 Configuration Manager 클라이언트를 배포 및 유지 관리하는 방법을 설명합니다. 클라이언트를 Mac 컴퓨터에 배포하기 전에 구성해야 하는 내용을 알아보려면 [Mac에 클라이언트 소프트웨어 배포 준비](/sccm/core/clients/deploy/prepare-to-deploy-mac-clients)를 참조하세요.
 
-Mac 컴퓨터용 새 클라이언트를 설치할 때 Configuration Manager 콘솔에서 새 클라이언트 정보를 반영하려면 Configuration Manager 업데이트도 설치해야 할 수 있습니다. 
+Mac 컴퓨터용 새 클라이언트를 설치할 때 Configuration Manager 콘솔에서 새 클라이언트 정보를 반영하려면 Configuration Manager 업데이트도 설치해야 할 수 있습니다.
 
 이러한 절차에는 클라이언트 인증서를 설치할 수 있는 두 가지 옵션이 있습니다. [Mac에 클라이언트 소프트웨어 배포 준비](/sccm/core/clients/deploy/prepare-to-deploy-mac-clients#certificate-requirements)에서 Mac용 클라이언트 인증서에 대해 자세히 읽어보세요.  
 
@@ -84,7 +84,7 @@ Mac 컴퓨터용 새 클라이언트를 설치할 때 Configuration Manager 콘�
 >  Configuration Manager 클라이언트 설정에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../../core/clients/deploy/configure-client-settings.md)을 참조하세요.  
 
 ## <a name="download-the-client-source-files-for-macs"></a>Mac용 클라이언트 원본 파일 다운로드  
-  
+
 1.  Mac OS X 클라이언트 파일 패키지 **ConfigmgrMacClient.msi**를 다운로드하여 Windows를 실행하는 컴퓨터에 저장합니다.  
 
      이 파일은 Configuration Manager 설치 미디어에서 제공되지 않습니다. [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkID=525184)에서 다운로드할 수 있습니다.  
@@ -95,7 +95,7 @@ Mac 컴퓨터용 새 클라이언트를 설치할 때 Configuration Manager 콘�
 
 4.  Mac 컴퓨터에서 Macclient.dmg 파일을 실행하여 로컬 디스크의 폴더에 추출합니다.  
 
-5.  이 폴더에서 Ccmsetup and CMClient.pkg 파일이 추출되어 있고 CMDiagnostics, CMUninstall, CMAppUtil, CMEnroll 도구가 포함된 Tools 폴더가 만들어졌는지 확인합니다. 
+5.  이 폴더에서 Ccmsetup and CMClient.pkg 파일이 추출되어 있고 CMDiagnostics, CMUninstall, CMAppUtil, CMEnroll 도구가 포함된 Tools 폴더가 만들어졌는지 확인합니다.
 
     -  **Ccmsetup**: Mac 컴퓨터에 Configuration Manager 클라이언트를 설치합니다.  
 
@@ -108,7 +108,7 @@ Mac 컴퓨터용 새 클라이언트를 설치할 때 Configuration Manager 콘�
     -   **CMEnroll**: Configuration Manager 클라이언트를 설치할 수 있도록 Mac 컴퓨터에 대한 클라이언트 인증서를 요청하고 설치합니다.   
 
 ## <a name="install-the-client-and-then-enroll-the-client-certificate-on-the-mac"></a>Mac에 클라이언트를 설치한 다음 클라이언트 인증서 등록  
-  
+
 [Mac 컴퓨터 등록 마법사](#enroll-the-client-with-the-mac-computer-enrollment-wizard)를 사용하여 개별 클라이언트를 등록할 수 있습니다.
 
 여러 클라이언트를 등록할 수 있도록 자동화하려면 [CMEnroll 도구](#client-and-certificate-automation-with-cmenroll)를 사용합니다.   
@@ -124,7 +124,7 @@ Mac 컴퓨터용 새 클라이언트를 설치할 때 Configuration Manager 콘�
 
         -   '도메인\이름'. 예를 들면 'contoso\mnorth'와 같습니다.  
 
-        -   'user@domain'를 재정의하려면 선택합니다. 'mnorth@contoso.com'  
+        -   'user@domain'. 예: 'mnorth@contoso.com'  
 
             > [!IMPORTANT]  
             >  메일 주소를 사용하여 **사용자 이름** 필드를 채운 경우 Configuration Manager는 메일 주소의 도메인 이름과 등록 프록시 지점 서버의 기본 이름을 자동으로 사용하여 **서버 이름** 필드를 채웁니다. 이 도메인 이름과 서버 이름이 등록 프록시 지점 서버의 이름과 일치하지 않는 경우 Mac 컴퓨터를 등록할 때 사용할 올바른 이름을 사용자에게 알립니다.  
@@ -156,7 +156,7 @@ CMEnroll 도구를 사용하여 클라이언트 설치를 자동화하고 클라
 
     -   '도메인\이름'. 예를 들면 'contoso\mnorth'와 같습니다.  
 
-    -   'user@domain'를 재정의하려면 선택합니다. 'mnorth@contoso.com'  
+    -   'user@domain'. 예: 'mnorth@contoso.com'  
 
      사용자 이름과 해당 암호는 Mac 클라이언트 인증서 템플릿에 대한 읽기 및 등록 권한이 부여된 Active Directory 사용자 계정과 일치해야 합니다.  
 
@@ -196,12 +196,12 @@ CMEnroll 도구를 사용하여 클라이언트 설치를 자동화하고 클라
 > -   Configuration Manager 클라이언트 설치를 통해 생성된 BOM(제품 구성 정보) 파일 및 속성 목록(.plist) 파일  
 > -   라이브러리/응용 프로그램 지원/Microsoft/CCM/Logs 폴더의 내용  
 >   
->  CmDiagnostics를 통해 수집되는 정보는 이름이 cmdiag-*<호스트 이름\>***-***<날짜 및 시간\>*.zip인 압축 파일에 추가되어 컴퓨터 바탕 화면에 저장됩니다.  
+>  CmDiagnostics를 통해 수집되는 정보는 이름이 cmdiag-*<호스트 이름\>***-***&gt;날짜 및 시간\>*.zip인 압축 파일에 추가되어 컴퓨터 바탕 화면에 저장됩니다.***
 
 
 ##  <a name="use-a-certificate-request-and-installation-method-that-is-independent-from-configuration-manager"></a>Configuration Manager와 별개의 인증서 요청 및 설치 방법 사용  
 
-먼저 [Mac에 클라이언트 소프트웨어 배포 준비](/sccm/core/clients/deploy/prepare-to-deploy-mac-clients)에서 다음과 같은 특정 작업을 수행합니다. 
+먼저 [Mac에 클라이언트 소프트웨어 배포 준비](/sccm/core/clients/deploy/prepare-to-deploy-mac-clients)에서 다음과 같은 특정 작업을 수행합니다.
 
 1. [사이트 시스템 서버에 웹 서버 인증서 배포](/sccm/core/clients/deploy/prepare-to-deploy-mac-clients#deploy-a-web-server-certificate-to-site-system-servers)
 

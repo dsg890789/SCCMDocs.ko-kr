@@ -18,9 +18,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
-ms.openlocfilehash: ef68a9f998ea6ff9628e01f6ac622711de68375d
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: 507bad02c6e028f09a8b0c8a566ac55f7c3942a5
+ms.openlocfilehash: 8e93f6f7b65534d9e3f6b5e46909b076653659a9
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -31,14 +31,15 @@ ms.lasthandoff: 12/16/2016
 
 System Center Configuration Manager 온-프레미스 모바일 장치 관리에서의 대량 등록은 사용자가 장치를 등록하기 위해 자격 증명을 입력해야 하는 사용자 등록에 비해 더 자동화된 장치 등록 방법입니다.  대량 등록은 등록 패키지를 사용하여 등록 중에 장치를 인증합니다. 패키지(.ppkg 파일)에는 인증서 프로필이 포함되어 있으며, 장치가 등록을 지원하기 위해 인트라넷에 연결할 수 있어야 하는 경우 필요에 따라 Wi-Fi 프로필이 포함되어 있습니다.  
 
- > [!NOTE]  
+> [!NOTE]  
 >  현재 분기의 Configuration Manager는 다음 운영 체제를 실행하는 장치에 대한 온-프레미스 모바일 장치 관리에서의 등록을 지원합니다.  
 >   
->  -   Windows 10 Enterprise  
+> -  Windows 10 Enterprise  
 > -   Windows 10 Pro  
 > -   Windows 10 Team\(Configuration Manager 버전 1602 이상\)  
 > -   Windows 10 Mobile  
 > -   Windows 10 Mobile Enterprise
+> -   Windows 10 IoT Enterprise   
 
 다음 작업에서는 온\-프레미스 모바일 장치 관리에 대해 컴퓨터 및 장치를 대량 등록하는 방법을 설명합니다.  
 

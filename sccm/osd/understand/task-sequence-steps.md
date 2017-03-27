@@ -17,9 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
-ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: 79135bcea4b0ed21fe8017045226f393a1e09dac
+ms.openlocfilehash: dd1ccc6ac0e9f4add38f2431c13c6b5a5c8e1357
+ms.lasthandoff: 03/22/2017
 
 
 ---

@@ -16,9 +16,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
-ms.openlocfilehash: 77ac69cecab7aa460001a8d2800e61f20a8565ed
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
+ms.openlocfilehash: 562e81df12e46a2332aa5e4de8b7c9e5819bde80
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -125,10 +125,10 @@ System Center 2012 Configuration Manager의 운영 체제 배포에는 외부 �
  배포 지점을 설치하고 콘텐츠를 관리하는 방법에 대한 자세한 내용은 [콘텐츠 및 콘텐츠 인프라 관리](../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
 
 ### <a name="pxe-enabled-distribution-point"></a>PXE 사용 배포 지점  
- PXE에서 시작한 배포를 배포하려면 배포 지점에서 클라이언트의 PXE 요청을 허용하도록 구성해야 합니다. 배포 지점을 구성하는 방법에 대한 자세한 내용은 [배포 지점 구성](../../core/servers/deploy/configure/install-and-configure-distribution-points.md#a-namebkmkconfigsa-distribution-point-configurations)을 참조하고 표에서 PXE 구성 범주를 찾아보세요.  
+ PXE에서 시작한 배포를 배포하려면 배포 지점에서 클라이언트의 PXE 요청을 허용하도록 구성해야 합니다. 배포 지점을 구성하는 방법에 대한 자세한 내용은 [배포 지점 구성](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points#pxe)을 참조하세요.  
 
 ### <a name="multicast-enabled-distribution-point"></a>멀티캐스트 사용 배포 지점  
- 멀티캐스트를 사용하여 운영 체제 배포를 최적화하려면 배포 지점에서 멀티캐스트를 지원하도록 구성해야 합니다. 배포 지점을 구성하는 방법에 대한 자세한 내용은 [배포 지점 구성](../../core/servers/deploy/configure/install-and-configure-distribution-points.md#a-namebkmkconfigsa-distribution-point-configurations)을 참조하고 표에서 멀티캐스트 구성 범주를 찾아보세요.  
+ 멀티캐스트를 사용하여 운영 체제 배포를 최적화하려면 배포 지점에서 멀티캐스트를 지원하도록 구성해야 합니다. 배포 지점을 구성하는 방법에 대한 자세한 내용은 [배포 지점 구성](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points#multicast)을 참조하세요.   
 
 ### <a name="state-migration-point"></a>상태 마이그레이션 지점  
  사용자 상태 데이터를 동시에 캡처 및 복원하고 배포를 새로 고칠 경우 상태 마이그레이션 지점에서 다른 컴퓨터의 사용자 상태 데이터를 저장하도록 구성해야 합니다.  

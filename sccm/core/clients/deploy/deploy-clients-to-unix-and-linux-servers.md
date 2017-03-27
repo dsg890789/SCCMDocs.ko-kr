@@ -16,9 +16,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: 0e5f65552045e9cef06f5286b0087153751c79b0
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
+ms.openlocfilehash: 0988899047a0e3464e15055fceb5924ee20b0b88
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -39,7 +39,7 @@ System Center Configuration Manager를 사용하여 Linux 또는 UNIX 서버를 
 
  클라이언트를 설치할 때 사용 하면 클라이언트 설치 패키지에 관계 없이 동일한 프로세스 및 명령줄 속성을 사용할 수 있습니다.  
 
- 각 Linux 및 UNIX용 Configuration Manager 클라이언트 릴리스에서 지원하는 운영 체제, 플랫폼 및 클라이언트 설치 패키지에 대한 자세한 내용은 [Linux 및 UNIX 서버](../../plan-design/configs/supported-operating-systems-for-clients-and-devices.md#bkmk_LinuxOS)를 참조하세요.  
+ 각 Linux 및 UNIX용 Configuration Manager 클라이언트 릴리스에서 지원하는 운영 체제, 플랫폼 및 클라이언트 설치 패키지에 대한 자세한 내용은 [Linux 및 UNIX 서버](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices#linux-and-unix-servers)를 참조하세요.  
 
 ##  <a name="BKMK_InstallLnUClient"></a> Linux 및 UNIX 서버에 클라이언트를 설치 합니다.  
  Linux 및 UNIX 용 클라이언트를 설치 하려면 각 Linux 또는 UNIX 컴퓨터에서 스크립트를 실행 합니다. 스크립트 라는 **설치** 설치 동작을 수정 하 고 클라이언트 설치 패키지를 참조 하는 명령줄 속성을 지원 합니다. 설치 스크립트 및 클라이언트 설치 패키지는 클라이언트에 위치 해야 합니다. 클라이언트 설치 패키지에는 특정 Linux 또는 UNIX 운영 체제 및 플랫폼에 대한 Configuration Manager 클라이언트 파일이 들어 있습니다.
@@ -117,7 +117,7 @@ System Center Configuration Manager를 사용하여 Linux 또는 UNIX 서버를 
 
      선택 사항입니다. FQDN, 상태 메시지를 전송 하는 클라이언트를 사용 하는 대체 상태 지점 서버를 지정 합니다.  
 
-     대체 상태 지점에 대한 자세한 내용은 [대체 상태 지점 필요 여부 결정](../../../core/clients/deploy/plan/determine-the-site-system-roles-for-clients.md#BKMK_Determine_FSP)을 참조하세요.  
+     대체 상태 지점에 대한 자세한 내용은 [대체 상태 지점 필요 여부 결정](/sccm/core/clients/deploy/plan/determine-the-site-system-roles-for-clients#determine-if-you-need-a-fallback-status-point)을 참조하세요.  
 
 -   **-dir &lt;디렉터리\>**  
 
@@ -143,9 +143,9 @@ System Center Configuration Manager를 사용하여 Linux 또는 UNIX 서버를 
 
 -   **-UsePKICert &lt;매개 변수\>**  
 
-     선택 사항입니다. 공용 키 인증서 표준 (PKCS #12) 형식에 X.509 PKI 인증서에 전체 경로 파일 이름을 지정합니다. 이 인증서는 클라이언트 인증을 위해 사용 됩니다. 설치 중에 인증서를 지정하지 않았으며 인증서를 추가하거나 변경해야 하는 경우 **certutil** 유틸리티를 사용합니다. certutil에 대한 자세한 내용은 [Linux 및 UNIX용 클라이언트에서 인증서를 관리하는 방법](../../../core/clients/manage/manage-clients-for-linux-and-unix-servers.md#BKMK_ManageLinuxCerts)을 참조하세요.  
+     선택 사항입니다. 공용 키 인증서 표준 (PKCS&#12;) 형식에 X.509 PKI 인증서에 전체 경로 파일 이름을 지정합니다. 이 인증서는 클라이언트 인증을 위해 사용 됩니다. 설치 중에 인증서를 지정하지 않았으며 인증서를 추가하거나 변경해야 하는 경우 **certutil** 유틸리티를 사용합니다. certutil에 대한 자세한 내용은 [Linux 및 UNIX용 클라이언트에서 인증서를 관리하는 방법](../../../core/clients/manage/manage-clients-for-linux-and-unix-servers.md#BKMK_ManageLinuxCerts)을 참조하세요.  
 
-     **-UsePKICert**를 사용하는 경우 **-certpw** 명령줄 매개 변수를 사용하여 PKCS #12 파일과 관련된 암호도 입력해야 합니다.  
+     **-UsePKICert**를 사용하는 경우 **-certpw** 명령줄 매개 변수를 사용하여 PKCS&#12; 파일과 관련된 암호도 입력해야 합니다.  
 
      PKI 인증서를 지정 하려면이 속성을 사용 하지 않는 경우 자체 서명 된 인증서를 사용 하는 클라이언트 및 사이트 시스템에 대 한 모든 통신은 HTTP를 통해.  
 
@@ -158,7 +158,7 @@ System Center Configuration Manager를 사용하여 Linux 또는 UNIX 서버를 
 
 -   **-certpw &lt;매개 변수\>**  
 
-     선택 사항입니다. 지정한 PKCS #12 파일을 사용 하 여 연관 된 암호를 지정 된 **-UsePKICert** 속성입니다.  
+     선택 사항입니다. 지정한 PKCS&#12; 파일을 사용 하 여 연관 된 암호를 지정 된 **-UsePKICert** 속성입니다.  
 
      예: -UsePKICert &lt;전체 경로 및 파일 이름\> -certpw &lt;암호\>  
 
@@ -237,5 +237,5 @@ System Center Configuration Manager를 사용하여 Linux 또는 UNIX 서버를 
 
  Linux 및 UNIX용 Configuration Manager 클라이언트는 클라이언트 설치 시 이 관리 지점에 연결합니다. 클라이언트가 관리 지점에 연결하지 못하면 성공할 때까지 클라이언트 소프트웨어에서 계속 다시 시도합니다.  
 
- 클라이언트가 관리 지점을 찾는 방법에 대한 자세한 내용은 [관리 지점 찾기](../../../core/clients/deploy/assign-clients-to-a-site.md#BKMK_LocatingMPs)를 참조하세요.
+ 클라이언트가 관리 지점을 찾는 방법에 대한 자세한 내용은 [관리 지점 찾기](/sccm/core/clients/deploy/assign-clients-to-a-site#locating-management-points)를 참조하세요.
 

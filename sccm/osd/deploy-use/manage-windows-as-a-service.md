@@ -16,8 +16,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
-ms.openlocfilehash: b3859bc01c37dab04275028585e892f927606025
+ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
+ms.openlocfilehash: 57478d9a9ee5f933000018b47e8a11a80e281252
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.openlocfilehash: b3859bc01c37dab04275028585e892f927606025
 
  Windows as a Service를 관리하려면 다음 섹션을 참조하세요.
 
-##  <a name="a-namebkmkprerequisitesa-prerequisites"></a><a name="BKMK_Prerequisites"></a> 전제 조건  
+##  <a name="BKMK_Prerequisites"></a> 전제 조건  
  Windows 10 서비스 대시보드에 데이터를 보려면 다음을 수행해야 합니다.  
 
 -   Windows 10 컴퓨터는 소프트웨어 업데이트 관리를 위해 WSUS(Windows Server Update Services)에서 Configuration Manager 소프트웨어 업데이트를 사용해야 합니다. 컴퓨터가 소프트웨어 업데이트 관리를 위해 비즈니스용 Windows 업데이트(또는 Windows 참가자)를 사용하는 경우 Windows 10 서비스 계획에서 해당 컴퓨터가 평가되지 않습니다. 자세한 내용은 [Integration with Windows Update for Business in Windows 10](../../sum/deploy-use/integrate-windows-update-for-business-windows-10.md)을 참조하십시오.  
@@ -58,7 +59,7 @@ ms.openlocfilehash: b3859bc01c37dab04275028585e892f927606025
 
 -   소프트웨어 업데이트를 구성하고 동기화해야 합니다. Configuration Manager 콘솔에서 Windows 10 기능 업그레이드를 사용하려면 먼저 **업그레이드** 분류를 선택하고 소프트웨어 업데이트를 동기화해야 합니다. 자세한 내용은 [소프트웨어 업데이트 관리 준비](../../sum/get-started/prepare-for-software-updates-management.md)를 참조하세요.  
 
-##  <a name="a-namebkmkservicingdashboarda-windows-10-servicing-dashboard"></a><a name="BKMK_ServicingDashboard"></a> Windows 10 서비스 대시보드  
+##  <a name="BKMK_ServicingDashboard"></a> Windows 10 서비스 대시보드  
  Windows 10 서비스 대시보드는 작업 환경의 Windows 10 컴퓨터에 대한 정보, 활성 서비스 계획, 준수 정보 등을 제공합니다. Windows 10 서비스 대시보드의 데이터는 서비스 연결 지점의 설치 여부에 따라 좌우됩니다. 이 대시보드에는 다음과 같은 타일에 있습니다.  
 
 -   **Windows 10 사용량 타일**: Windows 10의 공용 빌드 분류 정보를 제공합니다. 사이트에 아직 알려지지 않은 모든 빌드 뿐만 아니라 Windows 참가자 빌드도 **기타** 로 표시됩니다. 서비스 연결 지점은 Windows 빌드에 대해 알려주는 메타데이터를 다운로드하며, 이 데이터는 검색 데이터와 비교됩니다.  
@@ -91,7 +92,7 @@ ms.openlocfilehash: b3859bc01c37dab04275028585e892f927606025
 
  업그레이드가 해당 조건에 부합되면 서비스 계획은 배포 패키지에 업그레이드를 추가하고, 패키지를 배포 지점에 배포하고, 서비스 계획에서 사용자가 구성한 설정을 기준으로 컬렉션으로 업그레이드를 배포합니다.  Windows 10 서비스 대시보드의 서비스 계획 모니터링 타일에서 배포를 모니터링할 수 있습니다. 자세한 내용은 [소프트웨어 업데이트 모니터링](../../sum/deploy-use/monitor-software-updates.md)을 참조하세요.  
 
-##  <a name="a-namebkmkservicingplana-windows-10-servicing-plan"></a><a name="BKMK_ServicingPlan"></a> Windows 10 서비스 계획  
+##  <a name="BKMK_ServicingPlan"></a> Windows 10 서비스 계획  
  Windows 10 CB를 배포할 때 사용자 환경에서 원하는 배포 링을 정의하는 하나 이상의 서비스 계획을 만든 다음 Windows 10 서비스 대시보드에서 모니터링할 수 있습니다.   
 서비스 계획은 Windows 10용 누적 업데이트가 아닌 **업그레이드** 소프트웨어 업데이트 분류만 사용합니다. 해당 업데이트는 소프트웨어 업데이트 워크플로를 사용하여 배포해야 합니다.  서비스 계획에서 구성하는 설정을 비롯하여 서비스 계획을 사용한 최종 사용자 환경은 소프트웨어 업데이트를 사용하는 경우와 같습니다.  
 
@@ -203,7 +204,7 @@ ms.openlocfilehash: b3859bc01c37dab04275028585e892f927606025
 
     4.  **보내기 우선 순위**: 배포 패키지의 보내기 우선 순위를 지정합니다. Configuration Manager는 패키지를 배포 지점에 보낼 때 배포 패키지의 보내기 우선 순위를 사용합니다. 배포 패키지는 높음, 중간 또는 낮음의 우선 순위에 따라 보내집니다. 우선 순위가 서로 같은 패키지들은 만들어진 순서에 따라 보내집니다. 백로그가 없는 경우 패키지는 우선 순위에 관계없이 즉시 처리됩니다.  
 
-11. 배포 지점 페이지에서 업데이트 파일을 호스트할 배포 지점 또는 배포 지점 그룹을 지정합니다. 배포 지점에 대한 자세한 내용은 [Distribution point configurations](../../core/servers/deploy/configure/install-and-configure-distribution-points.md#a-namebkmkconfigsa-distribution-point-configurations)섹션을 참조하세요.  
+11. 배포 지점 페이지에서 업데이트 파일을 호스트할 배포 지점 또는 배포 지점 그룹을 지정합니다. 배포 지점에 대한 자세한 내용은 [배포 지점 구성](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_configs)을 참조하세요.
 
     > [!NOTE]  
     >  이 페이지는 새 소프트웨어 업데이트 배포 패키지를 만드는 경우에만 사용할 수 있습니다.  
@@ -220,7 +221,7 @@ ms.openlocfilehash: b3859bc01c37dab04275028585e892f927606025
 
  마법사를 완료하면 서비스 계획이 실행됩니다. 지정한 기준을 충족하는 업데이트가 소프트웨어 업데이트 그룹에 추가되고, 사이트 서버의 콘텐츠 라이브러리에 업데이트가 다운로드되며, 구성된 배포 지점에 업데이트가 배포된 후 대상 컬렉션의 클라이언트에 소프트웨어 업데이트 그룹이 배포됩니다.  
 
-##  <a name="a-namebkmkmodifyservicingplana-modify-a-servicing-plan"></a><a name="BKMK_ModifyServicingPlan"></a> 서비스 계획 수정  
+##  <a name="BKMK_ModifyServicingPlan"></a> 서비스 계획 수정  
 Windows 10 서비스 대시보드에서 기본 서비스 계획을 만들거나 기존 서비스 계획에 대한 설정을 변경해야 하는 경우 서비스 계획에 대한 속성으로 이동할 수 있습니다.
 
 > [!NOTE]
@@ -274,9 +275,4 @@ Windows 10 서비스 대시보드에서 기본 서비스 계획을 만들거나 
 
     > [!NOTE]  
     >  **소프트웨어 라이브러리** 작업 영역의 **소프트웨어 업데이트** 노드에서 최근 소프트웨어 업데이트 경고를 살펴볼 수 있습니다.  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -15,8 +15,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 4d34a272a93100426cccd2308c5b3b0b0ae94a60
-ms.openlocfilehash: 5fb6bc0bca5ee590000fd30bd46c765871cf5220
+ms.sourcegitcommit: 4c2906c2a963e0ae92e3c0d223afb7a47377526a
+ms.openlocfilehash: 9c614a842fc9e3a01b0128db94fc12bc0be5b52f
+ms.lasthandoff: 03/20/2017
 
 
 ---
@@ -25,12 +26,18 @@ ms.openlocfilehash: 5fb6bc0bca5ee590000fd30bd46c765871cf5220
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 
-
  System Center Configuration Manager 버전 1602부터, SQL Server [AlwaysOn 가용성 그룹](https://msdn.microsoft.com/library/hh510230\(v=sql.120\).aspx) 을 사용하여 기본 사이트와 중앙 관리 사이트에서 사이트 데이터베이스를 고가용성 및 재해 복구 솔루션으로 호스트할 수 있습니다. 가용성 그룹은 온-프레미스 또는 Microsoft Azure에서 호스트될 수 있습니다.  
 
  Microsoft Azure를 사용하여 가용성 그룹을 호스트하는 경우 Azure 가용성 집합과 함께 SQL Server AlwaysOn 가용성 그룹을 사용하여 사이트 데이터베이스의 가용성을 더 늘릴 수 있습니다. Azure 가용성 집합에 대한 자세한 내용은 [가상 컴퓨터의 가용성 관리](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-manage-availability/)를 참조하세요.  
 
- 다음은 가용성 그룹에 대해 지원되는 시나리오입니다.  
+ Configuration Manager에서는 내부 또는 외부 부하 분산 장치 뒤에 있는 SQL 가용성 그룹에 사이트 데이터베이스를 호스트할 수 있습니다. 이를 위해서는 각 복제본에서 방화벽 예외를 구성하는 것 외에 다음 포트에 대해 부하 분산 규칙을 추가해야 합니다.
+  - SQL over TCP: TCP 1433
+  - SQL Server Service Broker: TCP 4022
+  - SMB(서버 메시지 블록): TCP 445
+  - RPC 끝점 매퍼: TCP 135
+
+
+다음은 가용성 그룹에 대해 지원되는 시나리오입니다.  
 
 -   가용성 그룹의 기본 인스턴스로 사이트 데이터베이스를 이동할 수 있습니다.  
 
@@ -78,7 +85,7 @@ ms.openlocfilehash: 5fb6bc0bca5ee590000fd30bd46c765871cf5220
     - **모든 읽기 전용 연결을 허용**
 
 
-##  <a name="a-namebkmkbnra-changes-for-backup-and-recovery-when-you-use-a-sql-server-alwayson-availability-group"></a><a name="bkmk_BnR"></a> SQL Server AlwaysOn 가용성 그룹을 사용하는 경우 백업 및 복구의 변경 내용  
+##  <a name="bkmk_BnR"></a> SQL Server AlwaysOn 가용성 그룹을 사용하는 경우 백업 및 복구의 변경 내용  
  **백업:**  
 
  사이트 데이터베이스가 가용성 그룹에서 실행될 때 기본 제공된 **백업 사이트** 서버 유지 관리 작업을 계속 실행하여 공통 Configuration Manager 설정 및 파일을 백업해야 하지만 해당 백업에서 생성된 .MDF 또는 .LDF 파일을 사용하지 않도록 계획해야 합니다. 대신, SQL Server를 사용하여 사이트 데이터베이스에 대한 직접 백업을 만들도록 계획합니다.  
@@ -93,7 +100,7 @@ ms.openlocfilehash: 5fb6bc0bca5ee590000fd30bd46c765871cf5220
 
  백업 및 복구에 대한 자세한 내용은 [System Center Configuration Manager 백업 및 복구](../../../../protect/understand/backup-and-recovery.md)를 참조하세요.  
 
-##  <a name="a-namebkmkcreatea-configure-an-availability-group-for-use-with-configuration-manager"></a><a name="bkmk_create"></a> Configuration Manager에서 사용하도록 가용성 그룹 구성  
+##  <a name="bkmk_create"></a> Configuration Manager에서 사용하도록 가용성 그룹 구성  
  다음 절차를 시작하기 전에 이 구성을 완료하는 데 필요한 SQL Server 절차와 Configuration Manager에서 사용하도록 구성하는 가용성 그룹에 적용되는 다음 세부 사항을 잘 알고 있어야 합니다.  
 
  **System Center Configuration Manager에서 사용하는 AlwaysOn 가용성 그룹에 대한 요구 사항:**  
@@ -118,8 +125,7 @@ ms.openlocfilehash: 5fb6bc0bca5ee590000fd30bd46c765871cf5220
     >     ALTER DATABASE cm_ABC SET TRUSTWORTHY ON;  
     >     USE cm_ABC  
     >     EXEC sp_changedbowner 'sa'  
-    >     Exec sp_configure 'max text repl size (B)', 2147483647
-    >     reconfigure
+    >     Exec sp_configure 'max text repl size (B)', 2147483647 reconfigure
 
 
 
@@ -185,7 +191,7 @@ ms.openlocfilehash: 5fb6bc0bca5ee590000fd30bd46c765871cf5220
 
 
 
-##  <a name="a-namebkmkdirecta-move-a-site-database-to-an-availability-group"></a><a name="bkmk_direct"></a> 가용성 그룹으로 사이트 데이터베이스 이동  
+##  <a name="bkmk_direct"></a> 가용성 그룹으로 사이트 데이터베이스 이동  
  이전에 설치한 사이트의 사이트 데이터베이스를 가용성 그룹으로 이동할 수 있습니다. 먼저 가용성 그룹을 만든 다음 가용성 그룹에서 작업에 대한 데이터베이스를 구성해야 합니다.  
 
  이 절차를 완료하려면 Configuration Manager 설치 프로그램을 실행하는 사용자 계정은 가용성 그룹의 구성원인 각 컴퓨터에서 **로컬 관리자** 그룹의 구성원이어야 합니다.  
@@ -208,7 +214,7 @@ ms.openlocfilehash: 5fb6bc0bca5ee590000fd30bd46c765871cf5220
 
 5.  새 데이터베이스 위치에 대한 정보를 제공한 후 일반적인 프로세스와 구성을 사용하여 설치 프로그램을 완료합니다.  
 
-##  <a name="a-namebkmkchangea-add-or-remove-members-of-an-active-availability-group"></a><a name="bkmk_change"></a> 현재 가용성 그룹의 구성원 추가 또는 제거  
+##  <a name="bkmk_change"></a> 현재 가용성 그룹의 구성원 추가 또는 제거  
  Configuration Manager가 가용성 그룹에 호스트되는 사이트 데이터베이스를 사용한 후 복제본 구성원을 제거하거나 복제 구성원을 더 추가할 수 있습니다(주 노드 하나와 보조 노드 두 개를 초과하지 않음).  
 
 #### <a name="to-add-a-new-replica-member"></a>새 복제본 구성원을 추가하려면  
@@ -229,7 +235,7 @@ ms.openlocfilehash: 5fb6bc0bca5ee590000fd30bd46c765871cf5220
 
 -   SQL Server 문서의 [가용성 그룹에서 보조 복제본 제거](https://msdn.microsoft.com/library/hh213149\(v=sql.120\).aspx) 에 나와 있는 정보를 사용합니다.  
 
-##  <a name="a-namebkmkremovea-move-the-site-database-from-an-availability-group-back-to-a-single-instance-sql-server"></a><a name="bkmk_remove"></a> 가용성 그룹에서 단일 SQL Server 인스턴스로 사이트 데이터베이스 다시 이동  
+##  <a name="bkmk_remove"></a> 가용성 그룹에서 단일 SQL Server 인스턴스로 사이트 데이터베이스 다시 이동  
  더 이상 사이트 데이터베이스를 가용성 그룹에 호스트하지 않으려는 경우 다음 절차를 따르세요.  
 
 #### <a name="to-move-the-site-database-from-an-availability-group-back-to-a-single-instance-sql-server"></a>사이트 데이터베이스를 가용성 그룹에서 단일 SQL Server 인스턴스를 다시 가용성 그룹에서 단일 SQL Server 인스턴스로 사이트 데이터베이스를 다시 이동하려면  
@@ -262,9 +268,4 @@ ms.openlocfilehash: 5fb6bc0bca5ee590000fd30bd46c765871cf5220
 9. 새 데이터베이스 위치에 대한 정보를 제공한 후 일반적인 프로세스와 구성을 사용하여 설치 프로그램을 완료합니다. 설치가 완료되면 사이트가 다시 시작되고 새 데이터베이스 위치를 사용합니다.  
 
 10. 가용성 그룹의 구성원인 서버를 정리하려면 SQL Server 문서에 있는 [가용성 그룹 제거](https://msdn.microsoft.com/library/ff878113\(v=sql.120\).aspx) 항목의 지침을 따릅니다.
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

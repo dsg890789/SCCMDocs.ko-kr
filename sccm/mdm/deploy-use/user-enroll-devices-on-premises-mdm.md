@@ -17,9 +17,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 7d852843d0d3fe7c9ab0947c4b396cee0a92c754
-ms.lasthandoff: 03/06/2017
+ms.sourcegitcommit: 507bad02c6e028f09a8b0c8a566ac55f7c3942a5
+ms.openlocfilehash: 8c7438c2cc0bc66654eb3e74de10553df53181d9
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -29,14 +29,15 @@ ms.lasthandoff: 03/06/2017
 
 System Center Configuration Manager 온-프레미스 모바일 장치 관리에서, 등록 권한이 부여된 사용자가 장치를 등록할 수 있으며(업데이트된 클라이언트 설정을 통해) 장치에는 필요한 사이트 시스템 역할을 호스트하는 서버와 신뢰할 수 있는 통신을 설정하기 위해 필요한 루트 인증서가 설치됩니다. 등록을 설정하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 위한 장치 등록 설정](../../mdm/get-started/set-up-device-enrollment-on-premises-mdm.md)을 참조하세요.  
 
- > [!NOTE]  
+> [!NOTE]  
 >  현재 분기의 Configuration Manager는 다음 운영 체제를 실행하는 장치에 대한 온-프레미스 모바일 장치 관리에서의 등록을 지원합니다.  
 >   
->  -  Windows 10 Enterprise  
+> -  Windows 10 Enterprise  
 > -   Windows 10 Pro  
 > -   Windows 10 Team\(Configuration Manager 버전 1602 이상\)  
 > -   Windows 10 Mobile  
 > -   Windows 10 Mobile Enterprise
+> -   Windows 10 IoT Enterprise   
 
 다음 작업에서는 온\-프레미스 모바일 장치 관리에 대해 컴퓨터 및 장치를 등록하고 등록을 확인하는 방법을 설명합니다.  
 
