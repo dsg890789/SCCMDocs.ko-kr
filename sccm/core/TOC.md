@@ -25,9 +25,12 @@
 ###  [기능 및 특성](plan-design/changes/features-and-capabilities.md)
 ###  [Configuration Manager 2012에서 변경된 내용](plan-design/changes/what-has-changed-from-configuration-manager-2012.md)
 ###  [증분 버전의 새로운 기능](plan-design/changes/whats-new-incremental-versions.md)
+###  [버전 1702의 새로운 기능](plan-design/changes/whats-new-in-version-1702.md)
 ###  [버전 1610의 새로운 기능](plan-design/changes/whats-new-in-version-1610.md)
 ###  [버전 1606의 새로운 기능](plan-design/changes/whats-new-in-version-1606.md)
-###  [버전 1602의 새로운 기능](plan-design/changes/whats-new-in-version-1602.md)
+<!--
+###  [What's new in version 1602](plan-design/changes/whats-new-in-version-1602.md)
+-->
 ###  [제거되는 기능과 사용되지 않는 기능](plan-design/changes/removed-and-deprecated-features.md)
 
 ##   [지원되는 구성](plan-design/configs/supported-configurations.md)
@@ -52,6 +55,7 @@
 #### [클라우드 기반 배포 지점 사용](plan-design/hierarchy/use-a-cloud-based-distribution-point.md)
 #### [풀(pull) 배포 지점 사용](plan-design/hierarchy/use-a-pull-distribution-point.md)
 #### [콘텐츠 라이브러리](plan-design/hierarchy/the-content-library.md)
+#### [콘텐츠 라이브러리 정리 도구](plan-design/hierarchy/content-library-cleanup-tool.md)
 #### [콘텐츠에 액세스하기 위한 계정 관리](plan-design/hierarchy/manage-accounts-to-access-content.md)
 #### [Configuration Manager 클라이언트에 대한 피어 캐시](plan-design/hierarchy/client-peer-cache.md)
 #### [콘텐츠 원본 위치 시나리오](plan-design/hierarchy/content-source-location-scenarios.md)
@@ -69,10 +73,13 @@
 
 ##   [진단 및 사용 현황 데이터](plan-design/diagnostics/diagnostics-and-usage-data.md)
 ###  [진단 및 사용 현황 데이터 사용 방법](plan-design/diagnostics/how-diagnostics-and-usage-data-is-used.md)
-###  [1511에 대한 진단 데이터](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1511.md)
-###  [1602에 대한 진단 데이터](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1602.md)
-###  [1606에 대한 진단 데이터](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1606.md)
+###  [1702에 대한 진단 데이터](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1702.md) 
 ###  [1610에 대한 진단 데이터](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1610.md)
+###  [1606에 대한 진단 데이터](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1606.md)
+<!--
+###  [Diagnostic data for 1511](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1511.md)
+###  [Diagnostic data for 1602](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1602.md)
+-->
 ###  [진단 및 사용 현황 데이터 수집 방법](plan-design/diagnostics/how-diagnostics-and-usage-data-is-collected.md)
 ###  [진단 및 사용 현황 데이터를 보는 방법](plan-design/diagnostics/view-diagnostics-and-usage-data.md)
 ###  [CEIP(사용자 환경 개선 프로그램)](plan-design/diagnostics/customer-experience-improvement-program-ceip.md)
@@ -102,10 +109,12 @@
 ###  [1605의 기능](get-started/capabilities-in-technical-preview-1605.md)
 ###  [1604의 기능](get-started/capabilities-in-technical-preview-1604.md)
 ###  [1603의 기능](get-started/capabilities-in-technical-preview-1603.md)
-###  [1602의 기능](get-started/capabilities-in-technical-preview-1602.md)
-###  [1601의 기능](get-started/capabilities-in-technical-preview-1601.md)
-###  [1512의 기능](get-started/capabilities-in-technical-preview-1512.md)
-###  [1511의 기능](get-started/capabilities-in-technical-preview-1511.md)
+<!--
+###  [Capabilities in 1602](get-started/capabilities-in-technical-preview-1602.md)
+###  [Capabilities in 1601](get-started/capabilities-in-technical-preview-1601.md)
+###  [Capabilities in 1512](get-started/capabilities-in-technical-preview-1512.md)
+###  [Capabilities in 1511](get-started/capabilities-in-technical-preview-1511.md)
+-->
 
 ##   [계층 구조 간에 데이터 마이그레이션](migration/migrate-data-between-hierarchies.md)
 ###  [마이그레이션 계획](migration/planning-for-migration.md)
@@ -120,7 +129,8 @@
 #### [마이그레이션 모니터링 계획](migration/planning-to-monitor-migration-activity.md)
 #### [마이그레이션 완료 계획](migration/planning-to-complete-migration.md)
 ###  [원본 계층 구조 및 원본 사이트 구성](migration/configuring-source-hierarchies-and-source-sites-for-migration.md)
-###  [마이그레이션을 위한 작업](migration/operations-for-migration.md)###  [마이그레이션에 대한 보안 및 개인 정보](migration/security-and-privacy-for-migration.md)
+###  [마이그레이션을 위한 작업](migration/operations-for-migration.md)
+###  [마이그레이션에 대한 보안 및 개인 정보](migration/security-and-privacy-for-migration.md)
 
 #    [서버 및 역할 배포](servers/deploy/start-using.md)
 
@@ -134,6 +144,7 @@
 #### [사이트 설치를 위한 필수 조건](servers/deploy/install/prerequisites-for-installing-sites.md)
 #### [설치 마법사 사용](servers/deploy/install/use-the-setup-wizard-to-install-sites.md)
 #### [명령줄 사용](servers/deploy/install/use-a-command-line-to-install-sites.md)
+##### [명령줄 옵션](servers/deploy/install/command-line-options-for-setup.md)
 #### [콘솔 설치](servers/deploy/install/install-consoles.md)
 #### [평가판 설치 업그레이드](servers/deploy/install/upgrade-an-evaluation-install-to-a-full-install.md)
 #### [System Center Configuration Manager로 업그레이드](servers/deploy/install/upgrade-to-configuration-manager.md)
@@ -157,6 +168,8 @@
 #### [검색 방법 선택](servers/deploy/configure/select-discovery-methods-to-use.md)
 #### [검색 방법 구성](servers/deploy/configure/configure-discovery-methods.md)
 ###  [사이트 경계 및 경계 그룹](servers/deploy/configure/define-site-boundaries-and-boundary-groups.md)
+#### [경계](servers/deploy/configure/boundaries.md)
+#### [경계 그룹](servers/deploy/configure/boundary-groups.md)
 ###  [SQL Server AlwaysOn 사용](servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database.md)
 ###  [SQL Server 클러스터 사용](servers/deploy/configure/use-a-sql-server-cluster-for-the-site-database.md)
 ###  [데이터베이스 파일에 대한 사용자 지정 위치](servers/deploy/configure/custom-locations-for-site-database-files.md)
@@ -164,6 +177,7 @@
 
 #    인프라 관리
 ##   [유지 관리 작업](servers/manage/maintenance-tasks.md)
+###  [유지 관리 작업에 대한 참조](servers/manage/reference-for-maintenance-tasks.md)
 ##   [인프라 수정](servers/manage/modify-your-infrastructure.md)
 ###  [CD.Latest 폴더](servers/manage/the-cd.latest-folder.md)
 ##   [온-프레미스 인프라 업그레이드](servers/manage/upgrade-on-premises-infrastructure.md)
@@ -176,14 +190,11 @@
 ###  [서비스 연결 도구 사용](servers/manage/use-the-service-connection-tool.md)
 ###  [업데이트 등록 도구 사용](servers/manage/use-the-update-registration-tool-to-import-hotfixes.md)
 ###  [핫픽스 설치 관리자 사용](servers/manage/use-the-hotfix-installer-to-install-updates.md)
-<!--
-###  [Checklist for installing update 1702](servers/manage/checklist-for-installing-update-1702.md)
--->
+###  [업데이트 1702를 설치하기 위한 검사 목록](servers/manage/checklist-for-installing-update-1702.md)
 ###  [업데이트 1610을 설치하기 위한 검사 목록](servers/manage/checklist-for-installing-update-1610.md)
 ###  [업데이트 1606을 설치하기 위한 검사 목록](servers/manage/checklist-for-installing-update-1606.md)
-<!-- Deprecated from Content:
+<!-- Deprecated from Content - still published but out of TOC:
 ###  [Checklist for installing update 1602](servers/manage/checklist-for-installing-update-1602.md)
-###  [Support for current branch versions](servers/manage/current-branch-versions-supported.md)  
 -->
 ###  [현재 분기 버전 지원](servers/manage/current-branch-versions-supported.md)  
 

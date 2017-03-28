@@ -39,6 +39,7 @@
 ### [Windows Phone](deploy-use/create-configuration-items-for-windows-phone-devices-managed-without-the-client.md)
 ### [iOS 및 Mac OS X](deploy-use/create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client.md)
 ### [Android 및 Samsung KNOX Standard](deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client.md)
+### [Android for Work](deploy-use/create-configuration-items-for-android-for-work-devices-managed-without-the-client.md)
 
 ## [Intune에 등록된 장치 동기화](deploy-use/sync-intune-device.md)
 
@@ -71,10 +72,11 @@
 ### [O365 서비스에 대한 PC 액세스 관리](deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md)
 
 ## [위험에 따라 액세스 관리](deploy-use/manage-access-based-on-device-network-app-risk.md)
-### [Lookout 장치 위협 방지 설정](deploy-use/set-up-your-subscription-with-lookout.md)
+### [모바일 위협 방어 설정](deploy-use/set-up-your-subscription-with-lookout.md)
 ### [Intune에서 Lookout 사용](deploy-use/enable-lookout-connection-in-intune.md)
 ### [Lookout for Work 앱 배포](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
 ### [장치 위협 방지 정책 사용](deploy-use/enable-device-threat-protection-rule-compliance-policy.md)
+### [모바일 위협 방어 모니터링](deploy-use/monitor-mobile-threat-defense-compliance.md)
 ### [Lookout 통합 문제 해결](deploy-use/troubleshoot-lookout-integration.md)
 
 # 온-프레미스 MDM(모바일 장치 관리)
