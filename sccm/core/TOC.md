@@ -73,7 +73,7 @@
 
 ##   [진단 및 사용 현황 데이터](plan-design/diagnostics/diagnostics-and-usage-data.md)
 ###  [진단 및 사용 현황 데이터 사용 방법](plan-design/diagnostics/how-diagnostics-and-usage-data-is-used.md)
-###  [1702에 대한 진단 데이터](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1702.md) 
+###  [1702에 대한 진단 데이터](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1702.md)
 ###  [1610에 대한 진단 데이터](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1610.md)
 ###  [1606에 대한 진단 데이터](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1606.md)
 <!--
