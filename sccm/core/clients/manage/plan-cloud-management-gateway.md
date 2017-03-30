@@ -1,7 +1,7 @@
 ---
 title: "클라우드 관리 게이트웨이 계획 | Microsoft 문서"
 description: 
-ms.date: 12/19/2016
+ms.date: 03/28/2017
 ms.prod: configuration-manager
 ms.technology:
 - configmgr-client
@@ -10,9 +10,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1df2d8bcd73633ac1d37cc3ef31343be9c5bc95d
-ms.openlocfilehash: 6e2895565e868eb80a8f4f4b46b8a28eb4961e28
-ms.lasthandoff: 12/19/2016
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: c61769cc97c320452c9ee27a924cb01480e6f33d
+ms.lasthandoff: 03/27/2017
 
 ---
 
@@ -43,7 +43,7 @@ Configuration Manager 콘솔을 사용하여 Azure에 서비스를 배포하고 
 - 클라우드 관리 게이트웨이는 관리 지점 및 소프트웨어 업데이트 지점 역할만 지원합니다.
 -   Configuration Manager의 다음 기능은 현재 클라우드 관리 게이트웨이에 대해 지원되지 않습니다.
 
-    -   클라이언트 강제를 사용하는 클라이언트 배포 및 업그레이드
+    -   클라이언트 배포
     -   자동 사이트 할당
     -   사용자 정책
     -   응용 프로그램 카탈로그(소프트웨어 승인 요청 포함)

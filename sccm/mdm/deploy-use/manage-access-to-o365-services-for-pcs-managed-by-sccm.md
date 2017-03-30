@@ -16,9 +16,9 @@ author: andredm7
 ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: b7c55ce5629565cb1e3aede6680ef1796f56cb20
-ms.lasthandoff: 03/06/2017
+ms.sourcegitcommit: 23b1d24e908d04b64c3bbfa518793a44e696d468
+ms.openlocfilehash: e9028a54e538b4ec987dbaeb5ba1ee22ad091728
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -51,7 +51,7 @@ ms.lasthandoff: 03/06/2017
 
 -   Windows 8.1  
 
--   Windows 10은 아직 완전하게 지원되지 않습니다.  Windows 10 PC에 대한 조건부 액세스로 설정하려는 경우 몇 가지 문제가 발생할 수 있습니다.  자세한 내용은 [알려진 문제](#bkmk_KnownIssues) 를 참조하세요.  
+-   Windows 10 
 
 ## <a name="configure-conditional-access"></a>조건부 액세스 구성  
  조건부 액세스를 설정하려면 먼저 규정 준수 정책을 만들고 조건부 액세스 정책을 구성해야 합니다. PC에 대한 조건부 액세스 정책을 설정할 때 Exchange Online 및 SharePoint Online 서비스에 액세스하기 위해 PC가 준수 정책을 준수하도록 요구할 수 있습니다.  
@@ -135,15 +135,16 @@ ms.lasthandoff: 03/06/2017
 
  비준수로 인해 차단된 최종 사용자는 System Center Configuration Manager 소프트웨어 센터에서 호환성 정보를 확인하고 호환성 문제가 해결되면 새로운 정책 평가를 시작합니다.  
 
-##  <a name="bkmk_KnownIssues"></a> 알려진 문제  
- 이 기능을 사용하는 경우 다음과 같은 문제가 나타날 수 있습니다.  
+<!---
+##  <a name="bkmk_KnownIssues"></a> Known issues  
+ You may see the following issues when using this feature:  
 
--   이 1602 업데이트에서는, 5일 규정 준수가 적용되지 않습니다. 최종 사용자의 장치에 대한 준수 검사가 수행된 후 5일이 지났는데 사용자가 여전히 Office 365 및 SharePoint Online에 액세스할 수 있습니다.  
+-   In this 1602 update,  the 5 day compliance is not enforced. Even if compliance check on the end-user's device has happened more than 5 days ago, users still can access Office 365 and SharePoint online.  
 
--   장치가 규정 준수 정책을 준수하지 않는 경우 이유가 자동으로 표시되지 않습니다. 최종 사용자가 비준수에 대한 이유를 찾으려면 새 소프트웨어 센터로 이동해야 합니다. 이유는 소프트웨어 센터의 장치 준수 섹션에 표시됩니다.  
+-   When a device is not compliant with the compliance policy, the reason is not automatically displayed. The end- user must go to the new Software Center to find the reason for non-compliance. The reason is displayed in the Device compliance section of the Software Center.  
 
--   Windows 10 사용자가 O365 및/또는 SharePoint Online 리소스에 도달하려고 할 때 여러 액세스 오류가 표시될 수 있습니다. Windows 10에서는 조건부 액세스가 완전히 지원되지 않습니다.  
-
+-   Windows 10 users may see multiple access failures when trying to reach O365 and/or SharePoint online resources. Note that conditional access is not fully supported for Windows 10.  
+--->
 ### <a name="see-also"></a>참고 항목  
  [System Center Configuration Manager를 사용하여 데이터 및 사이트 인프라 보호](../../protect/understand/protect-data-and-site-infrastructure.md)
 

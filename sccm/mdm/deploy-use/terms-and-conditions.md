@@ -16,9 +16,9 @@ author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
-ms.openlocfilehash: c27d9129b261b166ad7b21aff468d47eba116d67
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 3b1451edaed69a972551bd060293839aa11ec8b2
+ms.openlocfilehash: 20be68496099a67ad2d475067f073da2cef16c86
+ms.lasthandoff: 03/28/2017
 
 
 ---
@@ -72,7 +72,7 @@ ms.lasthandoff: 03/21/2017
 
 ## <a name="to-monitor-terms-and-conditions"></a>사용 약관을 모니터링하려면  
 
-1.  버전 1602부터, Configuration Manager 콘솔에서 사용 약관 배포를 모니터링할 수 있습니다. Configuration Manager 콘솔에서 **모니터링** > **개요** > **배포**로 이동합니다.  
+1.  Configuration Manager 콘솔에서 사용 약관 배포를 모니터링할 수 있습니다. Configuration Manager 콘솔에서 **모니터링** > **개요** > **배포**로 이동합니다.  
 
 2.  배포의 목록에서 사용 약관 배포를 선택합니다.  
 

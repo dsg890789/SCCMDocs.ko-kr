@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 34dded3a8caf8c2be0313bc012cbd8ad2a909fad
-ms.openlocfilehash: 20bcc1cd909eec13eaca0a6de66806bd496f729d
-ms.lasthandoff: 01/26/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: b330c97a0853d1673f1cf7e0691891b72407fa51
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1701-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1701의 기능
@@ -41,25 +41,25 @@ ms.lasthandoff: 01/26/2017
 - 새 소프트웨어 업데이트 지점을 원하는 클라이언트는 현재 경계 그룹과 연결된 소프트웨어 업데이트 지점을 사용하려고 합니다.
 - 클라이언트는 현재 소프트웨어 업데이트 지점에 연결하지 못하고 현재 경계 그룹에서 소프트웨어 업데이트 지점을 찾을 수 없는 경우 대체 동작을 사용하여 사용할 수 있는 소프트웨어 업데이트 지점 풀을 확장합니다.    
 
-경계 그룹에 대한 자세한 내용은 현재 분기에 대한 콘텐츠에서 [경계 그룹](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#BKMK_BoundaryGroups)을 참조하세요.
+경계 그룹에 대한 자세한 내용은 현재 분기에 대한 콘텐츠에서 [경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups)을 참조하세요.
 
-그러나 이 미리 보기에서는 소프트웨어 업데이트 지점에 대한 경계 그룹이 부분적으로만 구현되었습니다. 소프트웨어 업데이트 지점을 추가하고 소프트웨어 업데이트 지점을 포함하는 인접한 경계 그룹을 구성할 수 있지만 소프트웨어 업데이트 지점에 대한 대체 시간은 아직 지원되지 않으며, 클라이언트가&2;시간 동안 기다려야 대체가 시작됩니다.
+그러나 이 미리 보기에서는 소프트웨어 업데이트 지점에 대한 경계 그룹이 부분적으로만 구현되었습니다. 소프트웨어 업데이트 지점을 추가하고 소프트웨어 업데이트 지점을 포함하는 인접한 경계 그룹을 구성할 수 있지만 소프트웨어 업데이트 지점에 대한 대체 시간은 아직 지원되지 않으며, 클라이언트가 2시간 동안 기다려야 대체가 시작됩니다.
 
 다음은 이 Technical Preview의 소프트웨어 업데이트 지점 동작에 대한 설명입니다.  
 
--   **새 클라이언트는 경계 그룹을 사용하여 소프트웨어 업데이트 지점을 선택합니다.** 버전 1701을 설치한 후 설치하는 클라이언트는 클라이언트의 경계 그룹과 연결된 소프트웨어 업데이트 지점에서 하나를 선택합니다.
+-    **새 클라이언트는 경계 그룹을 사용하여 소프트웨어 업데이트 지점을 선택합니다.** 버전 1701을 설치한 후 설치하는 클라이언트는 클라이언트의 경계 그룹과 연결된 소프트웨어 업데이트 지점에서 하나를 선택합니다.
 
   이 동작은 클라이언트가 클라이언트 포리스트를 공유하는 소프트웨어 업데이트 지점 목록에서 임의로 하나를 선택하는 이전 동작을 대체합니다.   
 
--   **이전에 설치한 클라이언트는 새 소프트웨어 업데이트 지점을 찾도록 대체될 때까지 현재 소프트웨어 업데이트 지점을 계속 사용합니다.**
+-    **이전에 설치한 클라이언트는 새 소프트웨어 업데이트 지점을 찾도록 대체될 때까지 현재 소프트웨어 업데이트 지점을 계속 사용합니다.**
 이전에 설치했으며 이미 소프트웨어 업데이트 지점이 있는 클라이언트는 대체될 때까지 해당 소프트웨어 업데이트 지점을 계속 사용합니다. 여기에는 클라이언트의 현재 경계 그룹과 연결되지 않은 소프트웨어 업데이트 지점도 포함됩니다. 즉시 현재 경계 그룹에서 소프트웨어 업데이트 지점을 찾아서 사용하려고 하지 않습니다.
 
   이미 소프트웨어 업데이트 지점이 있는 클라이언트는 현재 소프트웨어 업데이트 지점에 연결하지 못하여 대체를 시작한 후에만 이 새로운 경계 그룹 동작을 사용하기 시작합니다.
 새 동작으로 전환 시 발생하는 이 지연은 의도적인 것입니다. 이는 소프트웨어 업데이트 지점 변경 시 클라이언트가 새 소프트웨어 업데이트 지점과 데이터를 동기화하면서 네트워크 대역폭이 많이 사용될 수 있기 때문입니다. 전환 시의 지연은 모든 클라이언트가 새 소프트웨어 업데이트 지점으로 동시에 전환할 경우 발생하는 네트워크 혼잡을 방지하는 데 도움이 됩니다.
 
--   **대체 시간 구성:** 클라이언트가 새 소프트웨어 업데이트 지점을 검색하도록 대체를 시작하는 시기에 대한 구성은 이 Technical Preview에서 지원되지 않습니다. 여기에는 다양한 경계 그룹 관계에 대해 구성할 수 있는 **대체 시간(분)** 및 **대체 안 함** 구성이 포함됩니다.
+-    **대체 시간 구성:** 클라이언트가 새 소프트웨어 업데이트 지점을 검색하도록 대체를 시작하는 시기에 대한 구성은 이 Technical Preview에서 지원되지 않습니다. 여기에는 다양한 경계 그룹 관계에 대해 구성할 수 있는 **대체 시간(분)** 및 **대체 안 함** 구성이 포함됩니다.
 
-  대신, 클라이언트가 사용할 수 있는 새 소프트웨어 업데이트 지점을 찾도록 대체를 시작하기 전에&2;시간 동안 현재 소프트웨어 업데이트 지점에 연결을 시도하는 현재 클라이언트 동작은 유지됩니다.
+  대신, 클라이언트가 사용할 수 있는 새 소프트웨어 업데이트 지점을 찾도록 대체를 시작하기 전에 2시간 동안 현재 소프트웨어 업데이트 지점에 연결을 시도하는 현재 클라이언트 동작은 유지됩니다.
 
   클라이언트는 대체를 사용할 때 대체에 대한 경계 그룹 구성을 사용하여 사용 가능한 소프트웨어 업데이트 지점 풀을 만듭니다. 이 풀에는 클라이언트 *현재 경계 그룹*, *인접한 경계 그룹* 및 클라이언트 *사이트 기본 경계 그룹*의 모든 소프트웨어 업데이트 지점이 포함됩니다.
 
@@ -133,9 +133,9 @@ ms.lasthandoff: 01/26/2017
     &lt;setting name="FairFaxAuthorityResource" serializeAs="String">   
     &lt;value>https://login.microsoftonline.com/&lt;/value>
 
-2.  두 가지 사항을 변경하고 파일을 저장한 후 동일한 컴퓨터에서 Configuration Manager 콘솔을 다시 시작하고 해당 콘솔을 사용하여 OMS 커넥터를 설치합니다. 커넥터를 설치하려면 [Configuration Manager의 데이터를 Microsoft Operations Management Suite에 동기화](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite)에 제공된 정보를 사용하고 Microsoft Azure Government 클라우드에 있는 **Operations Management Suite 작업 영역**을 선택합니다.
+2.    두 가지 사항을 변경하고 파일을 저장한 후 동일한 컴퓨터에서 Configuration Manager 콘솔을 다시 시작하고 해당 콘솔을 사용하여 OMS 커넥터를 설치합니다. 커넥터를 설치하려면 [Configuration Manager의 데이터를 Microsoft Operations Management Suite에 동기화](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite)에 제공된 정보를 사용하고 Microsoft Azure Government 클라우드에 있는 **Operations Management Suite 작업 영역**을 선택합니다.
 
-3.  OMS 커넥터가 설치되면 사이트에 연결하는 모든 콘솔에서 Government 클라우드에 대한 연결을 사용할 수 있습니다.
+3.    OMS 커넥터가 설치되면 사이트에 연결하는 모든 콘솔에서 Government 클라우드에 대한 연결을 사용할 수 있습니다.
 
 ## <a name="android-and-ios-versions-are-no-longer-targetable-in-creation-wizards-for-hybrid-mdm"></a>Android 및 iOS 버전은 하이브리드 MDM 만들기 마법사에서 대상 지정이 가능하지 않음
 

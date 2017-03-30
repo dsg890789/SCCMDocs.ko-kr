@@ -16,9 +16,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
-ms.openlocfilehash: 0988899047a0e3464e15055fceb5924ee20b0b88
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: b63367dbaacde60a364e9da6afca65383b635840
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -119,6 +119,7 @@ System Center Configuration Manager를 사용하여 Linux 또는 UNIX 서버를 
 
      대체 상태 지점에 대한 자세한 내용은 [대체 상태 지점 필요 여부 결정](/sccm/core/clients/deploy/plan/determine-the-site-system-roles-for-clients#determine-if-you-need-a-fallback-status-point)을 참조하세요.  
 
+
 -   **-dir &lt;디렉터리\>**  
 
      선택 사항입니다. Configuration Manager 클라이언트 파일을 설치할 대체 위치를 지정합니다.  
@@ -143,9 +144,9 @@ System Center Configuration Manager를 사용하여 Linux 또는 UNIX 서버를 
 
 -   **-UsePKICert &lt;매개 변수\>**  
 
-     선택 사항입니다. 공용 키 인증서 표준 (PKCS&#12;) 형식에 X.509 PKI 인증서에 전체 경로 파일 이름을 지정합니다. 이 인증서는 클라이언트 인증을 위해 사용 됩니다. 설치 중에 인증서를 지정하지 않았으며 인증서를 추가하거나 변경해야 하는 경우 **certutil** 유틸리티를 사용합니다. certutil에 대한 자세한 내용은 [Linux 및 UNIX용 클라이언트에서 인증서를 관리하는 방법](../../../core/clients/manage/manage-clients-for-linux-and-unix-servers.md#BKMK_ManageLinuxCerts)을 참조하세요.  
+     선택 사항입니다. 공용 키 인증서 표준 (PKCS #12) 형식에 X.509 PKI 인증서에 전체 경로 파일 이름을 지정합니다. 이 인증서는 클라이언트 인증을 위해 사용 됩니다. 설치 중에 인증서를 지정하지 않았으며 인증서를 추가하거나 변경해야 하는 경우 **certutil** 유틸리티를 사용합니다. certutil에 대한 자세한 내용은 [Linux 및 UNIX용 클라이언트에서 인증서를 관리하는 방법](../../../core/clients/manage/manage-clients-for-linux-and-unix-servers.md#BKMK_ManageLinuxCerts)을 참조하세요.  
 
-     **-UsePKICert**를 사용하는 경우 **-certpw** 명령줄 매개 변수를 사용하여 PKCS&#12; 파일과 관련된 암호도 입력해야 합니다.  
+     **-UsePKICert**를 사용하는 경우 **-certpw** 명령줄 매개 변수를 사용하여 PKCS #12 파일과 관련된 암호도 입력해야 합니다.  
 
      PKI 인증서를 지정 하려면이 속성을 사용 하지 않는 경우 자체 서명 된 인증서를 사용 하는 클라이언트 및 사이트 시스템에 대 한 모든 통신은 HTTP를 통해.  
 
@@ -158,7 +159,7 @@ System Center Configuration Manager를 사용하여 Linux 또는 UNIX 서버를 
 
 -   **-certpw &lt;매개 변수\>**  
 
-     선택 사항입니다. 지정한 PKCS&#12; 파일을 사용 하 여 연관 된 암호를 지정 된 **-UsePKICert** 속성입니다.  
+     선택 사항입니다. 지정한 PKCS #12 파일을 사용 하 여 연관 된 암호를 지정 된 **-UsePKICert** 속성입니다.  
 
      예: -UsePKICert &lt;전체 경로 및 파일 이름\> -certpw &lt;암호\>  
 

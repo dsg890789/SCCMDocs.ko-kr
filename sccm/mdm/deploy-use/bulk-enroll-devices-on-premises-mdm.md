@@ -18,9 +18,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 507bad02c6e028f09a8b0c8a566ac55f7c3942a5
-ms.openlocfilehash: 8e93f6f7b65534d9e3f6b5e46909b076653659a9
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: 3b1451edaed69a972551bd060293839aa11ec8b2
+ms.openlocfilehash: be9596537e9c80a6d78aa0685d33382bfd242afe
+ms.lasthandoff: 03/28/2017
 
 
 ---
@@ -36,7 +36,7 @@ System Center Configuration Manager 온-프레미스 모바일 장치 관리에�
 >   
 > -  Windows 10 Enterprise  
 > -   Windows 10 Pro  
-> -   Windows 10 Team\(Configuration Manager 버전 1602 이상\)  
+> -   Windows 10 팀  
 > -   Windows 10 Mobile  
 > -   Windows 10 Mobile Enterprise
 > -   Windows 10 IoT Enterprise   
