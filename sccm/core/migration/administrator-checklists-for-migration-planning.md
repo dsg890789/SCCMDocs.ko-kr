@@ -152,7 +152,7 @@ ms.lasthandoff: 12/30/2016
 
     클라이언트를 대상 계층으로 마이그레이션할 때 이 클라이언트는 이전에 같은 대상 계층으로 마이그레이션된 클라이언트 데이터와 연결됩니다.  
 
-    자세한 내용은 [Planning a client migration strategy in System Center Configuration Manager](../../core/migration/planning-a-client-migration-strategy.md)항목을 참조하세요.  
+    자세한 내용은 [System Center Configuration Manager에서 마이그레이션 작업 전략 계획](../../core/migration/planning-a-client-migration-strategy.md)항목을 참조하세요.  
 
 -   **공유 배포 지점을 업그레이드하거나 재할당합니다.**  
 
@@ -164,5 +164,5 @@ ms.lasthandoff: 12/30/2016
 
 -   **마이그레이션을 완료합니다.**  
 
-    원본 계층의 모든 사이트에서 데이터와 클라이언트를 마이그레이션하고 해당되는 배포 지점을 업그레이드한 후에는 마이그레이션을 완료할 수 있습니다. 마이그레이션을 완료하려면 원본 계층의 각 원본 사이트에 대해 데이터 수집을 중지해야 합니다. 그런 다음 필요 없는 마이그레이션 정보를 제거하고 원본 계층 인프라의 역할을 해제할 수 있습니다. 자세한 내용은 [Planning to complete migration in System Center Configuration Manager](../../core/migration/planning-to-complete-migration.md)항목을 참조하세요.  
+    원본 계층의 모든 사이트에서 데이터와 클라이언트를 마이그레이션하고 해당되는 배포 지점을 업그레이드한 후에는 마이그레이션을 완료할 수 있습니다. 마이그레이션을 완료하려면 원본 계층의 각 원본 사이트에 대해 데이터 수집을 중지해야 합니다. 그런 다음 필요 없는 마이그레이션 정보를 제거하고 원본 계층 인프라의 역할을 해제할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 마이그레이션 완료 계획](../../core/migration/planning-to-complete-migration.md)항목을 참조하세요.  
 
