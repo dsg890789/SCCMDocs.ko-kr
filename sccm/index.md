@@ -4,9 +4,9 @@ hide_bc: true
 title: "System Center Configuration Manager 문서"
 description: "System Center Configuration Manager를 사용하는 방법을 알아봅니다."
 translationtype: Human Translation
-ms.sourcegitcommit: 70034213442f4c3d5a28ab65c2ceb51aa64320ad
-ms.openlocfilehash: 93ab707045f5f8de36e3acb862f82239b0eda34c
-ms.lasthandoff: 03/31/2017
+ms.sourcegitcommit: 9b31fab8fa93195c60e9026e2df99311aa6e328f
+ms.openlocfilehash: bc760899e054b60ad6e2f404f0408b2b55cccacd
+ms.lasthandoff: 04/03/2017
 
 ---
 <div id="main" class="v2">
@@ -630,11 +630,11 @@ ms.lasthandoff: 03/31/2017
                 </ul>
             </li>
             <li>
-                <a href="#social">커뮤니티</a>
-                <ul id="social">
+                <a href="#community">커뮤니티</a>
+                <ul id="community">
                     <li>
-                        <a href="#social-all">모두</a>
-                        <ul id="social-all" class="cardsF">
+                        <a href="#community-all">모두</a>
+                        <ul id="community-all" class="cardsF">
                             <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
