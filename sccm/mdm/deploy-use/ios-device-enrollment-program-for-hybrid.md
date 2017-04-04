@@ -25,7 +25,7 @@ ms.lasthandoff: 03/21/2017
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-회사에서 Apple 장비 등록 프로그램을 통해 iOS 장치를 구입한 다음 Microsoft Intune을 사용하여 관리할 수 있습니다. Apple DEP(장치 등록 프로그램)를 사용하여 회사 소유 iOS 장치를 관리하려는 회사에서는 Apple에서 요구하는 단계를 완료하여 프로그램에 참여하고 해당 프로그램을 통해 장치를 가져와야 합니다. 해당 프로세스의 세부 정보는  [https://deploy으로 관리할 수 있습니다.apple으로 관리할 수 있습니다.com](https://deploy.apple.com)으로 관리할 수 있습니다. 이 프로그램의 이점 중 하나는 USB로 각 장치를 컴퓨터에 연결하지 않고도 장치를 자동 설치할 수 있다는 것입니다.  
+회사에서 Apple 장비 등록 프로그램을 통해 iOS 장치를 구입한 다음 Microsoft Intune을 사용하여 관리할 수 있습니다. Apple DEP(장치 등록 프로그램)를 사용하여 회사 소유 iOS 장치를 관리하려는 회사에서는 Apple에서 요구하는 단계를 완료하여 프로그램에 참여하고 해당 프로그램을 통해 장치를 가져와야 합니다. 해당 프로세스의 세부 정보는  [https://deploy.apple.com](https://deploy.apple.com)으로 관리할 수 있습니다. 이 프로그램의 이점 중 하나는 USB로 각 장치를 컴퓨터에 연결하지 않고도 장치를 자동 설치할 수 있다는 것입니다.  
 
  회사 소유 iOS 장치를 DEP에 등록하려면 Apple의 DEP 토큰이 필요합니다. Intune에서는 이 토큰을 통해 회사에서 소유한 DEP 참가 장치에 대한 정보를 동기화할 수 있습니다. 또한 Intune에서 등록 프로필을 Apple에 업로드하고 해당 프로필에 장치를 할당할 수 있게 합니다.  
 

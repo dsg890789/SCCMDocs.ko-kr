@@ -30,7 +30,7 @@ ms.lasthandoff: 12/16/2016
 System Center Configuration Manager에 샘플 보고서 모델이 포함되어 있지만, 고유한 비즈니스 요구 사항에 맞게 보고서 모델을 정의한 다음 Configuration Manager에 보고서 모델을 배포하여 새 모델 기반 보고서를 만들 때 사용할 수 있습니다. 다음 표에는 기본 보고서 모델을 만들고 배포하는 단계가 나와 있습니다.  
 
 > [!NOTE]  
->  더 다양한 고급 보고서 모델을 만드는 단계는 이 항목의 [Steps for Creating an Advanced Report Model in SQL Server Reporting Services](#AdvancedReportModel) 섹션을 참조하십시오.  
+>  더 다양한 고급 보고서 모델을 만드는 단계는 이 항목의 [SQL Server Reporting Services에서 고급 보고서 모델을 만드는 단계](#AdvancedReportModel) 섹션을 참조하십시오.  
 
 |단계|설명|추가 정보|  
 |----------|-----------------|----------------------|  
