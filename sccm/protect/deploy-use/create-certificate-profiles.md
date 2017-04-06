@@ -2,7 +2,7 @@
 title: "SCEP 인증서 프로필을 만드는 방법 | Microsoft 문서"
 description: "인증서 프로필을 사용하여 System Center Configuration Manager에서 관리되는 장치를 필요한 인증서로 프로비전하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 11/22/2016
+ms.date: 03/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,11 +17,13 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0fa837c68eb073d2ceaf48c938137a94141a102e
-ms.openlocfilehash: cb9351fc63e49af611c494ec82a6c8651afae30f
+ms.sourcegitcommit: aa8924a013ebdbee888cab33001fddbe7ad2d67e
+ms.openlocfilehash: 80a716f5a42a81e5550eb1b5c7f14534e14a4fb7
+ms.lasthandoff: 03/30/2017
 
 
 ---
+
 # <a name="create-certificate-profiles"></a>인증서 프로필 만들기
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -56,7 +58,7 @@ Configuration Manager(SCCM)에서 인증서 프로필을 사용하여 관리되�
 
 -   **SCEP(단순 인증서 등록 프로토콜) 설정**: 단순 인증서 등록 프로토콜 및 네트워크 장치 등록 서비스 역할 서비스를 사용하여 장치 또는 사용자의 인증서를 요청하려면 이 인증서 프로필 유형을 선택합니다.
 
--   **개인 정보 교환 PKCS #12(PFX) 설정 가져오기**: PFX 인증서를 가져오려면 이 옵션을 선택합니다. PFX 인증서를 만드는 방법을 자세히 알아보려면 [PFX 인증서 프로필 만들기](../../protect/deploy-use/create-pfx-certificate-profiles.md)를 참조하세요.
+-   **개인 정보 교환 PKCS #12(PFX) 설정 - 가져오기**: PFX 인증서를 가져오려면 이 옵션을 선택합니다. PFX 인증서를 만드는 방법을 자세히 알아보려면 [PFX 인증서 프로필 만들기](../../protect/deploy-use/create-pfx-certificate-profiles.md)를 참조하세요.
 
 
 
@@ -150,7 +152,7 @@ Configuration Manager(SCCM)에서 인증서 프로필을 사용하여 관리되�
 
  -   **인증서 유효 기간**: 발급 CA에 대해 사용자 지정 유효 기간을 허용하는 certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE 명령을 실행한 경우 인증서가 만료될 때까지 남은 기간을 지정할 수 있습니다. 이 명령에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 인프라](../../protect/deploy-use/certificate-infrastructure.md) 항목을 참조하세요.  
 
-   지정된 인증서 템플릿에서 유효 기간보다 작은 값은 지정할 수 있지만 높은 값은 지정할 수 없습니다. 예를 들어 인증서 템플릿의 인증서 유효 기간이&2;년이면 값을&1;년으로 지정할 수는 있어도&5;년으로는 지정할 수 없습니다. 또한 이 값은 발급 CA 인증서의 남은 유효 기간보다 작아야 합니다.  
+   지정된 인증서 템플릿에서 유효 기간보다 작은 값은 지정할 수 있지만 높은 값은 지정할 수 없습니다. 예를 들어 인증서 템플릿의 인증서 유효 기간이 2년이면 값을 1년으로 지정할 수는 있어도 5년으로는 지정할 수 없습니다. 또한 이 값은 발급 CA 인증서의 남은 유효 기간보다 작아야 합니다.  
 
  -   **키 사용**: 인증서에 대한 키 사용 옵션을 지정합니다. 다음 옵션 중에서 선택할 수 있습니다.  
 
@@ -183,10 +185,7 @@ Configuration Manager(SCCM)에서 인증서 프로필을 사용하여 관리되�
 ###  <a name="specify-supported-platforms-for-the-certificate-profile"></a>인증서 프로필에 대해 지원되는 플랫폼 지정  
 
 1. 인증서 프로필 만들기 마법사의 **지원되는 플랫폼** 페이지에서 인증서 프로필을 설치하려는 운영 체제를 선택합니다. 또는 **모두 선택** 을 클릭하여 사용 가능한 모든 운영 체제에 인증서 프로필을 설치합니다.
-2. 마법사의 **요약** 페이지를 검토하고 **마침**을 선택합니다. **자산 및 준수** 작업 영역의 **인증서 프로필** 노드에 새 인증서 프로필이 나타나고, [System Center Configuration Manager에서 프로필을 배포하는 방법](deploy-wifi-vpn-email-cert-profiles.md)에 설명된 대로 사용자나 장치에 배포할 준비가 됩니다.  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
-
+2. 마법사의 **요약** 페이지를 검토하고 **마침**을 선택합니다. 
+ 
+ 
+**자산 및 준수** 작업 영역의 **인증서 프로필** 노드에 새 인증서 프로필이 나타나고, [System Center Configuration Manager에서 프로필을 배포하는 방법](deploy-wifi-vpn-email-cert-profiles.md)에 설명된 대로 사용자나 장치에 배포할 준비가 됩니다.  
