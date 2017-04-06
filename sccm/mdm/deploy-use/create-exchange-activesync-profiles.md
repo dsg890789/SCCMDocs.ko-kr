@@ -2,7 +2,7 @@
 title: "Exchange ActiveSync 메일 프로필 만들기 | Microsoft 문서"
 description: "Microsoft Intune에서 작동하는 System Center Configuration Manager의 메일 프로필을 만들고 구성하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 03/05/2017
+ms.date: 03/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,9 +17,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 8c7bf901caa49c8585a9ed3913d4a5a2aac57013
-ms.openlocfilehash: 74083f65d906fde967081229b244df24e9e08e0a
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: aa8924a013ebdbee888cab33001fddbe7ad2d67e
+ms.openlocfilehash: a0353c49360cd99bc92b4546e12a52c3d13d1d14
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -32,39 +32,37 @@ ms.lasthandoff: 03/21/2017
 
  전자 메일 프로필을 사용하여 구성할 수 있는 장치 유형은 다음과 같습니다.  
 
--   Windows Phone 8을 실행하는 장치  
+- Windows 10
+- Windows Phone 8.1
+- Windows Phone 8.0
+- iOS 5, iOS 6, iOS 7 및 iOS 8을 실행하는 iPhone  
+- iOS 5, iOS 6, iOS 7 및 iOS 8을 실행하는 iPad  
+- Samsung KNOX Standard(4 이상)
+- Android for Work
 
--   Windows Phone 8.1을 실행하는 장치  
+메일 프로필을 장치에 배포하려면 메일 프로필이 Intune에 등록되어 있어야 합니다. 장치를 등록하는 방법에 대한 자세한 내용은 [Microsoft Intune을 사용하여 모바일 장치 관리](https://technet.microsoft.com/en-us/library/dn646962.aspx)를 참조하세요.
 
--   Windows 10 Mobile을 실행하는 장치  
-
--   iOS 5, iOS 6, iOS 7 및 iOS 8을 실행하는 IPhone 장치  
-
--   iOS 5, iOS 6, iOS 7 및 iOS 8을 실행하는 IPad 장치  
-
-> [!IMPORTANT]  
->  iOS, Android Samsung KNOX Standard, Windows Phone 및 Windows 8.1 또는 Windows 10 장치에 프로필을 배포하려면 이러한 장치를 Intune에 등록해야 합니다. 장치를 등록하는 방법에 대한 자세한 내용은 [Microsoft Intune을 사용하여 모바일 장치 관리](https://technet.microsoft.com/en-us/library/dn646962.aspx)를 참조하세요.  
+>[!NOTE]
+>Intune은 Gmail 및 Nine Work 메일 앱 각각에 대해 Android for Work 메일 프로필을 하나씩 제공합니다. 이러한 앱은 Google Play 스토어에서 사용할 수 있으며 Exchange로의 연결을 지원합니다. 메일 연결을 사용하도록 설정하려면 사용자의 장치에 이러한 메일 앱 중 하나를 배포한 다음 적절한 프로필을 만들어 배포합니다. Nine Work과 같은 메일 앱은 무료가 아닐 수도 있습니다. 앱의 라이선스 정보를 검토하거나, 질문이 있으면 앱 회사에 문의하세요.
 
  장치에서 전자 메일 계정을 구성하는 것 외에 연락처, 일정 및 작업에 대한 동기화 설정을 구성할 수도 있습니다.  
 
- 메일 프로필을 만들 때 System Center Configuration Manager 인증서 프로필을 사용하여 프로비전한 ID, 암호화 및 서명용 인증서를 비롯하여 다양한 보안 설정을 포함할 수 있습니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](create-pfx-certificate-profiles.md)을 참조하세요.    
-
+ 메일 프로필을 만들 때 System Center Configuration Manager 인증서 프로필을 사용하여 프로비전한 ID, 암호화 및 서명용 인증서를 비롯하여 다양한 보안 설정을 포함할 수 있습니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](/sccm/protect/deploy-use/introduction-to-certificate-profiles)을 참조하세요.    
 
 ## <a name="create-a-new-exchange-activesync-email-profile"></a>새 Exchange ActiveSync 메일 프로필 만들기  
 
 Exchange ActiveSync 메일 프로필 만들기 마법사 시작  
 
-1.  System Center Configuration Manager 콘솔에서 **자산 및 준수**를 클릭합니다.  
+1.  Configuration Manager 콘솔에서 **자산 및 준수**를 클릭합니다.  
 
 2.  **자산 및 호환성** 작업 영역에서 **호환성 설정**및 **회사 리소스 액세스**를 각각 확장하고 **전자 메일 프로필**을 클릭합니다.  
 
-3.  **홈** 탭의 **만들기** 그룹에서 **Exchange ActiveSync 프로필 만들기**를 클릭합니다.
-
-4.  마법사의 지시를 따릅니다.   
-
-### <a name="to-configure-exchange-activesync-settings-for-the-exchange-activesync-email-profile"></a>Exchange ActiveSync 전자 메일 프로필에 대한 Exchange ActiveSync 설정을 구성하려면  
-
-1.  Exchange ActiveSync 전자 메일 프로필 만들기 마법사의 **Exchange ActiveSync** 페이지에서 다음 정보를 지정합니다.  
+3.  **홈** 탭의 **만들기** 그룹에서 **Exchange ActiveSync 메일 프로필 만들기**를 클릭합니다.
+4.  마법사의 일반 페이지에서 다음을 구성합니다.
+    - **이름** - 메일 프로필에 대한 설명이 포함된 이름을 제공합니다.
+    - **설명** - 선택적으로 Configuration Manager 콘솔에서 메일 프로필을 식별하는 데 도움이 되는 메일 프로필에 대한 설명을 제공합니다.
+    - **이 메일 프로필은 Android for Work용임** - 이 메일 프로필을 Android for Work 장치에 배포할 경우에만 이 옵션을 선택합니다. 이 확인란을 선택하면 **지원되는 플랫폼** 마법사 페이지가 표시되지 않습니다. Android for Work 메일 프로필만 구성됩니다.
+4.  Exchange ActiveSync 전자 메일 프로필 만들기 마법사의 **Exchange ActiveSync** 페이지에서 다음 정보를 지정합니다.  
 
     -   **Exchange ActiveSync 호스트:** Exchange ActiveSync 서비스를 호스트하는 회사 Exchange Server의 호스트 이름을 지정합니다.  
 
@@ -74,7 +72,7 @@ Exchange ActiveSync 메일 프로필 만들기 마법사 시작
 
         -   **사용자 계정 이름** 전체 사용자 계정 이름을 사용하여 Exchange에 로그온합니다.  
 
-        -   **sAMAccountName** 사용  
+        -   **계정 이름** Active Directory의 전체 사용자 계정 이름을 사용합니다.
 
         -   **기본 SMTP 주소** 사용자의 기본 SMTP 주소를 사용하여 Exchange에 로그온합니다.  
 
@@ -101,25 +99,22 @@ Exchange ActiveSync 메일 프로필 만들기 마법사 시작
     -   **ID 인증서:** **선택** 을 클릭하고 ID에 사용할 인증서를 선택합니다.  
 
         > [!NOTE]  
-        >  ID 인증서를 선택하려면 먼저 해당 인증서를 SCEP(단순 인증서 등록 프로토콜) 인증서 프로필로 구성해야 합니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](create-pfx-certificate-profiles.md)을 참조하세요.  
+        >  ID 인증서를 선택하려면 먼저 해당 인증서를 SCEP(단순 인증서 등록 프로토콜) 인증서 프로필로 구성해야 합니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](/sccm/protect/deploy-use/introduction-to-certificate-profiles)을 참조하세요.  
 
          이 옵션은 **인증 방법** 에서 **인증서**를 선택한 경우에만 사용할 수 있습니다.  
 
-    -   **S/MIME 사용** S/MIME 암호화를 사용하여 보내는 전자 메일을 전송합니다. 이 옵션은 iOS 장치에만 적용됩니다.  
+    -   **S/MIME 사용**(iOS 장치에만 해당) - S/MIME 암호화를 사용하여 보내는 메일을 전송합니다. 다음 옵션 중에서 선택 합니다.
 
-    -   **암호화 인증서:** **선택** 을 클릭하고 암호화에 사용할 인증서를 선택합니다. 이 옵션은 iOS 장치에만 적용됩니다.  
 
-        > [!NOTE]  
-        >  암호화 인증서를 선택하려면 먼저 해당 인증서를 SCEP(단순 인증서 등록 프로토콜) 인증서 프로필로 구성해야 합니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](create-pfx-certificate-profiles.md)을 참조하세요.  
+        -   **암호화 인증서:** **선택** 을 클릭하고 암호화에 사용할 인증서를 선택합니다. 이 옵션은 iOS 장치에만 적용됩니다. 암호화 인증서로 사용할 PFX 인증서를 선택해야 합니다.
 
-         이 옵션은 **S/MIME 사용**을 선택한 경우에만 사용할 수 있습니다.  
-
-    -   **서명 인증서:** **선택** 을 클릭하고 서명에 사용할 인증서를 선택합니다. 이 옵션은 iOS 장치에만 적용됩니다.  
+        암호화 인증서와 서명 인증서를 둘 다 선택할 경우 인증서가 둘 다 PFX 형식이어야 합니다.
 
         > [!NOTE]  
-        >  서명 인증서를 선택하려면 먼저 해당 인증서를 SCEP(단순 인증서 등록 프로토콜) 인증서 프로필로 구성해야 합니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](create-pfx-certificate-profiles.md)을 참조하세요.  
+        >  인증서를 선택하려면 먼저 해당 인증서를 SCEP(단순 인증서 등록 프로토콜) 또는 PFX 인증서 프로필로 구성해야 합니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](/sccm/protect/deploy-use/introduction-to-certificate-profiles)을 참조하세요.  
 
-         이 옵션은 **S/MIME 사용**을 선택한 경우에만 사용할 수 있습니다.  
+
+
 
 ###   <a name="configure-synchronization-settings-for-the-exchange-activesync-email-profile"></a>Exchange ActiveSync 전자 메일 프로필에 대한 동기화 설정을 구성합니다.  
 
