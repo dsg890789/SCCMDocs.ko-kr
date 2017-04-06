@@ -17,8 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 59e63cf223424f9930524e3ed3833c30dc9ca9a7
-ms.openlocfilehash: f43764acd13b0257481614fc79aebecac75542d7
+ms.sourcegitcommit: 70034213442f4c3d5a28ab65c2ceb51aa64320ad
+ms.openlocfilehash: 2e624eb2ea061a4eb7d92365410fada335640224
+ms.lasthandoff: 03/31/2017
 
 
 ---
@@ -58,14 +59,9 @@ System Center Configuration Manager의 보고에는 외부 종속성과 제품 �
 |SQL Server Express 2008 R2 SP2|지원 안 됨|  
 |누적 업데이트 2 이상이 설치된 SQL Server 2012<br /><br /> -   Standard<br />-   Enterprise|예|  
 |SP1 및 최소 누적 업데이트가 설치되지 않은 SQL Server 2012<br /><br /> -   Standard<br />-   Enterprise|예|  
-|SQL Server 2016<br /><br /> -   Standard<br />-   Enterprise|예|
+|SQL Server 2014<br /><br /> -   Standard<br />-   Enterprise|예|
 |SQL Server 2016<br /><br /> -   Standard<br />-   Enterprise|예|
 |SQL Server 2016 SP1<br /><br /> -   Standard<br />-   Enterprise|예|
 ## <a name="next-steps"></a>다음 단계
 [보고 작업 및 유지 관리](operations-and-maintenance-for-reporting.md)
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

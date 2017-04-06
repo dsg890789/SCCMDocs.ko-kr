@@ -17,9 +17,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 06cafc8f7934cde738a87ac1a1da585a9d4e2a99
-ms.openlocfilehash: 534a15279bff96d93ffb6564eeac2835f57f5645
-ms.lasthandoff: 02/09/2017
+ms.sourcegitcommit: 3eb48942c1259d2aa1b3c200fad73b39b11c0b8c
+ms.openlocfilehash: 9989ea1bf4cb74a6286ebae9de7614ed622de5b6
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -31,12 +31,12 @@ System Center Configuration Manager(ConfgMgr, SCCM이라고도 함)에서는 PC,
 
 
 ##  <a name="overview-of-device-management-solutions"></a>장치 관리 솔루션의 개요  
- 이 문서에서는 Configuration Manager 클라이언트 응용 프로그램, 온-프레미스 Configuration Manager 인프라, Microsoft Intune 및 Exchange의 네 가지 장치 관리 솔루션을 다룹니다. 이 문서의 마지막에는 각각 [지원되는 모바일 장치 플랫폼](#compare-device-management-solutions-based-on-supported-mobile-device-platforms)과 [관리 기능](#compare-mobile-device-management-solutions-based-on-management-functionality)을 기준으로 하여 관리 솔루션을 비교하는&2;개 표가 나와 있습니다.
+ 이 문서에서는 Configuration Manager 클라이언트 응용 프로그램, 온-프레미스 Configuration Manager 인프라, Microsoft Intune 및 Exchange의 네 가지 장치 관리 솔루션을 다룹니다. 이 문서의 마지막에는 각각 [지원되는 모바일 장치 플랫폼](#compare-device-management-solutions-based-on-supported-mobile-device-platforms)과 [관리 기능](#compare-mobile-device-management-solutions-based-on-management-functionality)을 기준으로 하여 관리 솔루션을 비교하는 2개 표가 나와 있습니다.
 
 
 ###  <a name="manage-devices-with-the-configuration-manager-client"></a>Configuration Manager 클라이언트를 사용하여 장치 관리  
 
-장치에 Configuration Manager 클라이언트 응용 프로그램을 설치해야 하는 이 옵션은 PC, 서버 및 사용자 환경의 기타 장치를 관리하기 위한 기능을 가장 많이 제공합니다. 자세한 내용은 [System Center Configuration Manager의 클라이언트 설치 방법](/sccm/core/client/deploy/plan/client-installation-methods)을 참조하세요.  
+장치에 Configuration Manager 클라이언트 응용 프로그램을 설치해야 하는 이 옵션은 PC, 서버 및 사용자 환경의 기타 장치를 관리하기 위한 기능을 가장 많이 제공합니다. 자세한 내용은 [System Center Configuration Manager의 클라이언트 설치 방법](/sccm/core/clients/deploy/plan/client-installation-methods)을 참조하세요.  
 
 ###  <a name="manage-devices-with-on-premises-configuration-manager-infrastructure"></a>온-프레미스 Configuration Manager 인프라를 사용하여 장치 관리  
 
@@ -76,7 +76,7 @@ System Center Configuration Manager(ConfgMgr, SCCM이라고도 함)에서는 PC,
 
  지원되는 플랫폼의 전체 목록은 [Supported operating systems for clients and devices for System Center Configuration Manager](configs\supported-operating-systems-for-clients-and-devices.md)(System Center Configuration Manager용 클라이언트 및 장치에 대해 지원되는 운영 체제)를 참조하세요.
 
-##  <a name="a-namebkmkcomp2a-compare-mobile-device-management-solutions-based-on-management-functionality"></a><a name="bkmk_comp2"></a> 관리 기능을 기준으로 모바일 장치 관리 솔루션 비교  
+##  <a name="bkmk_comp2"></a> 관리 기능을 기준으로 모바일 장치 관리 솔루션 비교  
 
 |관리 기능|Configuration Manager 클라이언트 사용|Configuration Manager 통합 Microsoft Intune(하이브리드)|온\-프레미스 모바일 장치 관리|Configuration Manager와 Exchange|  
 |------------------------------|-------------------------------------------|-------------------------------------------------------------------|-------------------------------|-----------------------------------------|  
