@@ -2,7 +2,7 @@
 title: "Configuration Manager를 지원하는 하이브리드 MDM의 새로운 기능 | Microsoft 문서"
 description: "Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 장치 관리 기능에 대해 알아봅니다."
 ms.custom: na
-ms.date: 03/16/2017
+ms.date: 03/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 79135bcea4b0ed21fe8017045226f393a1e09dac
-ms.openlocfilehash: fcaead7cbe637fa76d16976f5052cdcd9975b6e8
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: 3c2a07f560e0aa3d2beb7cc50e71c98ac45c27e1
+ms.openlocfilehash: cc3e4055ce6b648e4554773518fc928cfb51c5f3
+ms.lasthandoff: 03/28/2017
 
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 장치 관리의 새로운 기능
@@ -82,6 +82,47 @@ ms.lasthandoff: 03/22/2017
 
   이제 Intune MAM(모바일 응용 프로그램 관리) 기능에 iOS 및 Android용 Microsoft Teams 앱을 사용할 수 있으므로 팀이 여러 장치에서 자유롭게 작업할 수 있도록 하고 언제 어디에서나 대화 및 회사 데이터를 보호할 수 있습니다. 자세한 내용은 Enterprise Mobility + Security 블로그에서 [Microsoft Teams announcement](https://blogs.technet.microsoft.com/enterprisemobility/2017/03/14/microsoft-teams-is-now-generally-available-and-mam-enabled-on-ios-and-android/)(Microsoft Teams 알림)를 참조하세요.
 
+### <a name="new-in-configuration-manager-current-branch"></a>Configuration Manager(현재 분기)의 새로운 기능
+
+이전에 Configuration Manager Technical Preview 릴리스에서 사용할 수 있었던 다음 기능을 이제 Intune과 Configuration Manager(현재 분기) 버전 1702를 포함하는 하이브리드 배포에서 사용할 수 있습니다.
+
+- [Android for Work 지원](/sccm/core/plan-design/changes/whats-new-in-version-1702##android-for-work-support)
+- [비규격 앱 준수 설정](/sccm/core/plan-design/changes/whats-new-in-version-1702#conditional-access-device-compliance-policy-improvements)
+- [PFX 인증서 만들기 및 배포와 S/MIME 지원](/sccm/core/plan-design/changes/whats-new-in-version-1702#improvements-to-certificate-profiles)
+- [Android 및 iOS 버전은 하이브리드 MDM 만들기 마법사에서 대상 지정이 가능하지 않음](/sccm/core/plan-design/changes/whats-new-in-version-1702#android-and-ios-versions-are-no-longer-targetable-in-creation-wizards-for-hybrid-mdm)
+
+Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추가 하이브리드 기능도 포함되어 있습니다.
+
+- **Apple VPP(Volume Purchase Program)에 대한 향상된 지원**
+
+  - 이제 사용이 허가된 앱을 사용자 및 장치에 배포할 수 있습니다. 장치 라이선싱을 지원하는 앱 기능에 따라 앱 배포 시 다음과 같이 적절한 라이선스가 청구됩니다.
+
+    | Configuration Manager 버전 | 앱이 장치 라이선싱을 지원하나요? | 배포 컬렉션 유형 | 청구된 라이선스 |
+    |-|-|-|-|
+    |1702 이전|예|사용자|사용자 라이선스|
+    |1702 이전|아니요|사용자|사용자 라이선스|
+    |1702 이전|예|장치|사용자 라이선스|
+    |1702 이전|아니요|장치|사용자 라이선스|
+    |1702 이상|예|사용자|사용자 라이선스|
+    |1702 이상|아니요|사용자|사용자 라이선스|
+    |1702 이상|예|장치|장치 라이선스|
+    |1702 이상|아니요|장치|사용자 라이선스|
+
+  - 이제 교육용 iOS Volume Purchase Program에서 구매한 앱을 배포하고 추적할 수도 있습니다.
+
+  - 이제 여러 Apple Volume Purchase Program 토큰을 Configuration Manager와 연결할 수 있습니다.
+
+  대량 구매한 iOS 앱에 대한 자세한 내용은 [대량 구매한 iOS 앱 관리](/sccm/mdm/deploy-use/manage-volume-purchased-ios-apps)를 참조하세요.
+
+- **비즈니스용 Windows 스토어의 LOB(기간 업무) 앱 지원**
+
+  이제 비즈니스용 Windows 스토어에서 사용자 지정 LOB(기간 업무) 앱을 동기화할 수 있습니다.
+
+- **새로운 Mobile Threat Defense 모니터링 도구**
+
+    이제 Mobile Threat Defense 서비스 공급자를 통해 준수 상태를 모니터링하는 새로운 방법이 있습니다.
+
+    자세한 내용은 [Mobile Threat Defense 준수를 모니터링하는 방법](/sccm/mdm/deploy-use/monitor-mobile-threat-defense-compliance)을 참조하세요.
 
 ## <a name="new-hybrid-features-in-february-2017"></a>2017년 2월의 새로운 하이브리드 기능
 
@@ -101,15 +142,19 @@ ms.lasthandoff: 03/22/2017
 
 - **Android for Work 지원**
 
-  이제 Configuration Manager Technical Preview 1702를 사용하여 하이브리드 MDM 환경에서 Android for Work를 통해 Android 장치를 관리할 수 있습니다. 이제 지원되는 Android 장치를 Android for Work 장치로 등록할 수 있으며, Play for Work에서 승인된 앱을 배포할 수 있는 장치에 작업 프로필이 생성됩니다. 이러한 장치에 대한 구성 항목, 준수 정책 및 리소스 액세스 프로필을 구성하고 배포할 수도 있습니다.
+  이제 Configuration Manager Technical Preview 1702를 사용하여 하이브리드 MDM 환경에서 Android for Work를 통해 Android 장치를 관리할 수 있습니다. 이제 지원되는 Android 장치를 Android for Work 장치로 등록할 수 있으며, Play for Work에서 승인된 앱을 배포할 수 있는 장치에 작업 프로필이 생성됩니다. 이러한 장치에 대한 구성 항목, 준수 정책 및 리소스 액세스 프로필을 구성하고 배포할 수도 있습니다. 자세한 내용은 [Android for Work 지원](/sccm/core/get-started/capabilities-in-technical-preview-1702#android-for-work-support)을 참조하세요.
 
 - **비규격 앱 준수 설정**
 
-  이제 준수 정책에서 Android 및 iOS 앱에 대한 비규격 앱 규칙을 만들 수 있습니다. 장치에 지정한 응용 프로그램이 설치되어 있으면 "비규격"으로 표시되며, 적용된 조건부 액세스 정책에 따라 회사 리소스에 액세스할 수 없게 됩니다.
+  이제 준수 정책에서 Android 및 iOS 앱에 대한 비규격 앱 규칙을 만들 수 있습니다. 장치에 지정한 응용 프로그램이 설치되어 있으면 "비규격"으로 표시되며, 적용된 조건부 액세스 정책에 따라 회사 리소스에 액세스할 수 없게 됩니다. 자세한 내용은 [조건부 액세스 장치 준수 정책 개선](/sccm/core/get-started/capabilities-in-technical-preview-1702#conditional-access-device-compliance-policy-improvements)을 참조하세요.
 
 - **PFX 인증서 만들기 및 배포와 S/MIME 지원**
 
-  이제 하이브리드 환경에서 PFX 인증서를 만들고 사용자에게 배포할 수 있습니다. 그러면 사용자가 등록한 장치에서 이 인증서를 S/MIME 메일 암호화 및 암호 해독에 사용할 수 있습니다.
+  이제 하이브리드 환경에서 PFX 인증서를 만들고 사용자에게 배포할 수 있습니다. 그러면 사용자가 등록한 장치에서 이 인증서를 S/MIME 메일 암호화 및 암호 해독에 사용할 수 있습니다. 자세한 내용은 [S MIME을 지원하는 PFX 인증서 만들기](/sccm/core/get-started/capabilities-in-technical-preview-1702#create-pfx-certificates-with-s-mime-support)를 참조하세요.
+
+- **추가 iOS 구성 설정에 대한 지원**
+   
+    이제 구성 항목의 일부로 구성할 수 있는 42개의 추가 iOS 설정이 있습니다. 감독된 iOS 장치에 대해 대부분의 설정(전체 중 35개)이 추가되었습니다. 자세한 내용은 [iOS 장치에 대한 새 준수 설정](/sccm/core/get-started/capabilities-in-technical-preview-1702#new-compliance-settings-for-ios-devices)을 참조하세요.
 
 ## <a name="new-hybrid-features-in-january-2017"></a>2017년 1월의 새로운 하이브리드 기능
 

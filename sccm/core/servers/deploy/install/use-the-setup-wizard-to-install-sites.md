@@ -1,7 +1,7 @@
 ---
 title: "설치 마법사 | Microsoft 문서"
 ms.custom: na
-ms.date: 2/28/2017
+ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,9 +15,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 37865f1f3dc959ee8acf8ab06df5cae6e07e4257
-ms.openlocfilehash: 97eb95c1c6ac31ce9bca22df13bcc4f248026298
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 2f1bc62a4695d60dc4679e479797ee84cd4ddee4
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="use-the-setup-wizard-to-install-system-center-configuration-manager-sites"></a>설치 마법사를 사용하여 System Center Configuration Manager 사이트를 설치할 수 있습니다.
@@ -240,7 +240,7 @@ ms.lasthandoff: 03/01/2017
 
 -   **사이트 설치** 페이지에서 독립 실행형 기본 사이트를 확장하는 옵션을 선택합니다.  
 
-독립 실행형 기본 사이트를 확장하려면 이 문서의 앞부분에 있는 *[기본 또는 중앙 관리 사이트를 설치하려면](../../../../core/servers/deploy/install/use-the-setup-wizard-to-install-sites.md#bkmk_installpri)* 절차를 따르세요.
+독립 실행형 기본 사이트를 확장하려면 먼저 [사이트를 확장하기 위한 필수 구성 요소](/sccm/core/servers/deploy/install/prerequisites-for-installing-sites#bkmk_expand)를 참조하고 이 문서의 앞부분에 있는 *[기본 또는 중앙 관리 사이트를 설치하려면](../../../../core/servers/deploy/install/use-the-setup-wizard-to-install-sites.md#bkmk_installpri)* 절차를 따르세요.
 
 
 ## <a name="bkmk_secondary"></a> 보조 사이트 설치
@@ -353,7 +353,7 @@ ms.lasthandoff: 03/01/2017
 
 8.  **드라이브 설정** 페이지에서 보조 사이트 배포 지점에 대한 드라이브 설정을 지정합니다.  
 
-     콘텐츠 라이브러리에 대해 최대&2;개의 디스크 드라이브를, 패키지 공유에 대해&2;개의 디스크 드라이브를 구성할 수 있습니다. 그러나 처음 두 개 드라이브가 구성된 드라이브 예약 공간에 도달하면 Configuration Manager에서 추가 드라이브를 사용할 수 있습니다. **드라이브 설정** 페이지에서는 디스크 드라이브에 대한 우선 순위와 각 디스크 드라이브에 남아야 할 사용 가능한 디스크 공간을 구성합니다.  
+     콘텐츠 라이브러리에 대해 최대 2개의 디스크 드라이브를, 패키지 공유에 대해 2개의 디스크 드라이브를 구성할 수 있습니다. 그러나 처음 두 개 드라이브가 구성된 드라이브 예약 공간에 도달하면 Configuration Manager에서 추가 드라이브를 사용할 수 있습니다. **드라이브 설정** 페이지에서는 디스크 드라이브에 대한 우선 순위와 각 디스크 드라이브에 남아야 할 사용 가능한 디스크 공간을 구성합니다.  
 
     -   **드라이브 공간 예약(MB):** 이 설정에 구성하는 값에 따라 드라이브에 남아 있는 사용 가능한 공간의 양이 결정됩니다. 이 값에 도달하면 Configuration Manager에서 다른 드라이브를 선택하여 해당 드라이브로 복사 프로세스를 계속합니다. 콘텐츠 파일은 여러 드라이브에 걸쳐 있을 수 있습니다.  
 

@@ -2,7 +2,7 @@
 title: "인증서 프로필 소개 | Microsoft 문서"
 description: "System Center Configuration Manager의 인증서 프로필이 Active Directory 인증서 서비스에서 작동하는 방식을 알아봅니다."
 ms.custom: na
-ms.date: 12/28/2016
+ms.date: 03/30/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,12 +16,13 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 8a5dc7361da34f3e6b926acd35c72c0c0767ce70
-ms.openlocfilehash: d51670b47aab77cc4e630a6aeaa0744f916bf3b9
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: ba1d5b04cb0cb0284525e295a6086a3c0ac67e9f
+ms.lasthandoff: 03/27/2017
 
 
 ---
+
 # <a name="introduction-to-certificate-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager의 인증서 프로필 소개
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -49,7 +50,7 @@ ms.lasthandoff: 12/30/2016
 -   **신뢰할 수 있는 CA 인증서** - 장치에서 서버를 인증해야 할 경우 신뢰할 수 있는 루트 CA 또는 중간 CA 인증서를 배포하여 인증서 신뢰 체인을 형성할 수 있습니다.  
 
 -   **SCEP(단순 인증서 등록 프로토콜)** - Windows Server 2012 R2를 실행하는 서버의 네트워크 장치 등록 서비스 및 SCEP 프로토콜을 사용하여 장치 또는 사용자에 대한 인증서를 요청할 수 있습니다.
--   -   **개인 정보 교환(.pfx)** - 장치 또는 사용자에 대한 .pfx(PKCS #12라고도 함) 인증서를 요청할 수 있습니다.
+-   **개인 정보 교환(.pfx)** - 장치 또는 사용자에 대한 .pfx(PKCS #12라고도 함) 인증서를 요청할 수 있습니다.
 
     > [!NOTE]  
     >  **SCEP(단순 인증서 등록 프로토콜)** 인증서 프로필을 만들려면 먼저 **신뢰할 수 있는 CA 인증서** 유형의 인증서 프로필을 만들어야 합니다.  
@@ -100,4 +101,3 @@ System Center Configuration Manager의 일반적인 시나리오는 연결 시 E
 -   장치가 System Center Configuration Manager 계층 구조에서 차단되었습니다.  
 
  인증서를 해지하기 위해 사이트 서버가 발급 인증 기관으로 해지 명령을 보냅니다. 해지의 원인은 **사용 중단**입니다.  
-

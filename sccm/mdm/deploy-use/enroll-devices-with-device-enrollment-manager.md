@@ -2,7 +2,7 @@
 title: "장치 등록 관리자를 사용하여 장치 등록 - Configuration Manager | Microsoft 문서"
 description: "System Center Configuration Manager와 장치 등록 관리자 계정을 사용하여 회사 소유 장치를 등록합니다."
 ms.custom: na
-ms.date: 03/05/2017
+ms.date: 03/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,13 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2905f26e-7859-497d-b995-5ff48261efa2
 caps.latest.revision: 8
-author: mtillman
-ms.author: mtillman
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
-ms.openlocfilehash: b356d2351b8a28bdca78176fdf0ff3c913a36bd3
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: 7573590763c68a4c97d388be1e64054c318da9cc
+ms.openlocfilehash: 8c491636925670732e6af67d8c1c741e4793ef96
+ms.lasthandoff: 03/24/2017
 
 
 ---
@@ -26,27 +26,23 @@ ms.lasthandoff: 01/24/2017
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-조직에서는 System Center Configuration Manager 및 Intune을 사용하여 단일 사용자 계정으로 많은 수의 모바일 장치를 관리할 수 있습니다. *장치 등록 관리자* 계정은&5;개가 넘는 장치를 등록할 수 있는 권한이 있는 특수한 Intune 계정입니다.  
+조직에서는 Intune을 사용하여 단일 사용자 계정으로 많은 수의 모바일 장치를 관리할 수 있습니다. *DEM(장치 등록 관리자)* 계정은 1000개까지 장치를 등록할 수 있는 특수한 사용자 계정입니다. 기존 사용자를 DEM 계정에 추가하여 특수 DEM 기능을 제공합니다. 등록된 각 장치는 단일 라이선스를 사용합니다. 이 계정을 통해 등록한 장치는 개인 전용 장치가 아닌 사용자 선호도가 없는 공유 장치로 사용하는 것이 좋습니다.  
 
 ## <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager"></a>장치 등록 관리자로 회사 소유 장치 등록  
  예를 들어, 저장소 관리자나 감독자에게 장치 등록 관리자 사용자 계정을 할당하여 다음 작업을 수행하도록 할 수 있습니다.  
 
--   관리를 위해 장치 등록  
-
+-   관리를 위해 최대 1000대 장치 등록  
 -   회사 포털 앱을 사용하여 회사 앱 설치  
-
--   소프트웨어 설치 및 제거  
-
 -   회사 데이터에 대한 액세스 구성  
-
 
 장치 등록 관리자 계정을 사용하여 관리되는 장치에 다음과 같은 제한 사항이 적용됩니다.
 
 - 저장소 관리자는 회사 포털에서 장치를 리셋할 수 없습니다.  
--  장치가 작업 영역에 연결되거나 Azure Active Directory에 연결될 수 없습니다. 이렇게 되면 해당 장치가 조건부 액세스를 사용할 수 없습니다.
+- 장치가 작업 영역에 연결되거나 Azure Active Directory에 연결될 수 없습니다. 이렇게 되면 해당 장치가 조건부 액세스를 사용할 수 없습니다.
 -  장치 등록 관리자를 사용하여 관리되는 장치에 회사 앱을 배포하려면 **필수 설치**인 회사 포털 앱을 장치 등록 관리자의 사용자 계정에 배포합니다. 그런 다음 장치 등록 관리자는 회사 포털 앱을 시작하여 추가 앱을 설치할 수 있습니다.
 - 성능 향상을 위해 회사 포털 앱은 로컬 장치만 표시합니다. 다른 DEM 장치의 원격 관리는 Configuration Manager 콘솔에서 관리자만 수행할 수 있습니다.
 - 회사 포털 웹 사이트는 장치 등록 관리자 계정에 사용할 수 없습니다. 회사 포털 앱을 사용합니다.
+- (iOS에만 해당)DEM을 사용하여 iOS 장치를 등록하는 경우 Apple Configurator 또는 Apple DEP(장비 등록 프로그램)를 사용하여 장치를 등록할 수 없습니다.
 
  **장치 등록 관리자 시나리오의 예:**   
 식당에는 서빙 직원을 위한 POS 태블릿과 주방 직원을 위한 주문 모니터가 필요합니다. 직원들이 회사 데이터에 액세스하거나 사용자로 로그온할 필요는 없습니다. Intune 관리자는 장치 등록 관리자 계정을 만들고 해당 계정을 사용하여 회사 소유의 장치를 등록합니다. 또는 관리자는 식당 관리자에게 장치 등록 관리자 자격 증명을 제공하여 장치를 등록하고 관리할 수 있도록 합니다.  

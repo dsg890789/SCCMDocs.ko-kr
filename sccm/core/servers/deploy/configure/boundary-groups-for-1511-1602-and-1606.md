@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 139dcf9bc2a9bd253592b969b6f9d814ffcdfd8e
-ms.openlocfilehash: 6b24d775fe4ca78dfba9645b81096f9228864d99
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 640cdc67f301a81a45bf27f95eb03cbc8754a9aa
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -26,10 +27,10 @@ ms.openlocfilehash: 6b24d775fe4ca78dfba9645b81096f9228864d99
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 이 항목의 정보는 System Center Configuration Manager 버전 1511, 1602 및 1606에서 경계 그룹을 사용하는 경우에 해당합니다.
-버전 1610 이상을 사용하는 경우 다시 디자인된 경계 그룹을 사용하는 방법에 대한 자세한 내용은 *정의 사이트 경계와 bondary 그룹 또는 System Center Configuration Manager*에서 [경계 그룹](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#a-namebkmkboundarygroupsa-boundary-group/)을 참조하세요.  
+버전 1610 이상을 사용할 경우 다시 디자인된 경계 그룹에 대한 자세한 내용은 [경계 그룹 구성](/sccm/core/servers/deploy/configure/boundary-groups)을 참조하세요.  
 
 
-##  <a name="a-namebkmkboundarygroupsa-boundary-groups"></a><a name="BKMK_BoundaryGroups"></a> Boundary groups  
+##  <a name="BKMK_BoundaryGroups"></a> Boundary groups  
  경계 그룹을 만들어 관련 네트워크 위치(경계)를 논리적으로 그룹화하면 인프라를 보다 쉽게 관리할 수 있습니다. 경계 그룹을 사용하기 전에 경계 그룹에 경계를 할당해야 합니다. 클라이언트는 다음 항목에 대해 경계 그룹 구성을 사용합니다.  
 
 -   자동 사이트 할당  
@@ -122,7 +123,7 @@ ms.openlocfilehash: 6b24d775fe4ca78dfba9645b81096f9228864d99
 
  다음 섹션에서는 경계 그룹 구성에 대한 추가 세부 정보를 제공합니다.  
 
-###  <a name="a-namebkmkboundarysiteassignmenta-about-site-assignment"></a><a name="BKMK_BoundarySiteAssignment"></a> 사이트 할당 정보  
+###  <a name="BKMK_BoundarySiteAssignment"></a> 사이트 할당 정보  
  각 경계 그룹에 클라이언트의 할당된 사이트를 설정할 수 있습니다.  
 
 -   자동 사이트 할당을 사용하며 새로 설치된 클라이언트는 클라이언트의 현재 네트워크 위치가 있는 경계 그룹의 할당된 사이트에 연결됩니다.  
@@ -137,7 +138,7 @@ ms.openlocfilehash: 6b24d775fe4ca78dfba9645b81096f9228864d99
 
 클라이언트 사이트 할당에 대한 자세한 내용은 [System Center Configuration Manager에서 사이트에 클라이언트를 할당하는 방법](../../../../core/clients/deploy/assign-clients-to-a-site.md)에서 [컴퓨터에 대한 자동 사이트 할당 사용](../../../../core/clients/deploy/assign-clients-to-a-site.md#BKMK_AutomaticAssignment)을 참조하세요.  
 
-###  <a name="a-namebkmkboundarycontentlocationa-about-content-location"></a><a name="BKMK_BoundaryContentLocation"></a> 콘텐츠 위치 정보  
+###  <a name="BKMK_BoundaryContentLocation"></a> 콘텐츠 위치 정보  
  하나 이상의 배포 지점 및 상태 마이그레이션 지점을 사용하여 각 경계 그룹을 설정할 수 있으며, 같은 배포 지점 및 상태 마이그레이션 지점을 여러 경계 그룹과 연결할 수 있습니다.  
 
 -   **소프트웨어 배포 중에**클라이언트는 배포 콘텐츠의 위치를 요청합니다. Configuration Manager에서는 클라이언트의 현재 네트워크 위치를 포함하는 각 경계 그룹에 연결된 배포 지점 목록을 클라이언트에 보냅니다.  
@@ -146,7 +147,7 @@ ms.openlocfilehash: 6b24d775fe4ca78dfba9645b81096f9228864d99
 
 이 동작을 사용하면 클라이언트에서 콘텐츠나 상태 마이그레이션 정보를 전송할 가장 가까운 서버를 선택할 수 있습니다.  
 
-###  <a name="a-namebkmkpreferredmpa-about-preferred-management-points"></a><a name="BKMK_PreferredMP"></a> 기본 설정 관리 지점 정보  
+###  <a name="BKMK_PreferredMP"></a> 기본 설정 관리 지점 정보  
  기본 설정 관리 지점은 클라이언트가 현재 네트워크 위치(경계)와 연결된 관리 지점을 식별할 수 있도록 합니다.  
 
 -   클라이언트는 할당된 사이트에서 기본 설정 관리 지점으로 설정되지 않은 관리 지점을 사용하기 전에 할당된 사이트의 기본 설정 관리 지점을 사용하려고 시도합니다.  
@@ -158,7 +159,7 @@ ms.openlocfilehash: 6b24d775fe4ca78dfba9645b81096f9228864d99
 > [!NOTE]  
 >  노트북을 원격 사무실 위치로 이동하여 네트워크 위치를 변경할 때와 같이 클라이언트가 로밍할 때, 할당된 사이트의 관리 지점(기본 설정 관리 지점 포함)을 사용하려 하기 전에 로컬 사이트의 관리 지점 또는 프록시 관리 지점을 새 위치로 사용할 수 있습니다.  [클라이언트가 System Center Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법 이해](../../../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)를 참조하세요.  
 
-###  <a name="a-namebkmkboundaryoverlapa-about-overlapping-boundaries"></a><a name="BKMK_BoundaryOverlap"></a> 겹치는 경계 정보  
+###  <a name="BKMK_BoundaryOverlap"></a> 겹치는 경계 정보  
  Configuration Manager에서는 콘텐츠 위치에 대한 겹치는 경계를 구성할 수 있습니다.  
 
 -   **클라이언트에서 콘텐츠를 요청할 때** 클라이언트 네트워크 위치가 여러 경계 그룹에 속해 있으면 Configuration Manager에서 콘텐츠가 있는 모든 배포 지점 목록을 클라이언트로 보냅니다.  
@@ -167,15 +168,10 @@ ms.openlocfilehash: 6b24d775fe4ca78dfba9645b81096f9228864d99
 
 이 동작을 사용하면 클라이언트에서 콘텐츠나 상태 마이그레이션 정보를 전송할 가장 가까운 서버를 선택할 수 있습니다.  
 
-###  <a name="a-namebkmkboudnarynetworkspeeda-about-network-connection-speed"></a><a name="BKMK_BoudnaryNetworkSpeed"></a> 네트워크 연결 속도 정보  
+###  <a name="BKMK_BoudnaryNetworkSpeed"></a> 네트워크 연결 속도 정보  
  경계 그룹의 각 사이트 시스템 서버에 대해 네트워크 연결 속도를 설정할 수 있습니다. 이 설정은 이 경계 그룹 구성을 기준으로 하여 사이트 시스템에 연결하는 클라이언트에 적용됩니다. 서로 다른 여러 경계 그룹에서 동일한 사이트 시스템 서버에 대해 각기 다른 연결 속도를 설정할 수 있습니다.  
 
  기본적으로 네트워크 연결 속도는 **고속**으로 설정되지만, **저속**으로 변경할 수도 있습니다. 네트워크 연결 속도 및 배포 구성에 따라 클라이언트가 연결된 경계 그룹에 있을 때 해당 클라이언트가 배포 지점에서 콘텐츠를 다운로드할 수 있는지 여부를 확인합니다.  
 
  네트워크 연결 속도 구성이 클라이언트가 콘텐츠를 가져오는 방법에 어떤 영향을 주는지에 대한 자세한 내용은 [콘텐츠 원본 위치 시나리오](../../../../core/plan-design/hierarchy/content-source-location-scenarios.md)를 참조하세요.  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

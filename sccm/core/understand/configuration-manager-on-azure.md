@@ -2,7 +2,7 @@
 title: "Azure의 Configuration Manager | Microsoft 문서"
 description: "Azure 환경에서 Configuration Manager를 사용하는 방법에 대한 정보입니다."
 ms.custom: na
-ms.date: 01/30/2017
+ms.date: 03/27/2017
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 264e009952db34a6f4929ecb70dc6857117ce4fe
-ms.openlocfilehash: e8798adc0e479417c682450d181611284c148e6d
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 5276ad999fc871496d79e6efff34d5edc6335380
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="configuration-manager-on-azure---frequently-asked-questions"></a>Azure의 Configuration Manager - 질문과 대답
@@ -39,11 +40,11 @@ ms.openlocfilehash: e8798adc0e479417c682450d181611284c148e6d
 
 ### <a name="what-areas-should-i-pay-attention-to-when-considering-a-move-of-my-configuration-manager-infrastructure-to-azure"></a>Configuration Manager 인프라를 Azure로 이동할 때 주의해야 할 점은 무엇인가요?
 좋은 질문입니다. 이 작업을 수행할 때 가장 중요한 점은 다음과 같으며 각각 이 항목의 별도의 섹션에서 설명합니다.
-1.  네트워킹
-2.  가용성
-3.  성능
-4.  비용
-5.  사용자 환경
+1.    네트워킹
+2.    가용성
+3.    성능
+4.    비용
+5.    사용자 환경
 
 ## <a name="networking"></a>네트워킹
 ### <a name="what-about-networking-requirements-should-i-use-expressroute-or-an-azure-vpn-gateway"></a>네트워킹 요구 사항은 무엇인가요? ExpressRoute 또는 Azure VPN Gateway를 사용해야 하나요?
@@ -145,8 +146,8 @@ Configuration Manager는 Azure 부하 분산 장치에서 테스트되지 않았
 
 사용자의 환경에서 클라우드 관리 게이트웨이를 사용한 다음 제품 개선을 위해 이에 대한 피드백을 제출할 수 있습니다. 시험판 기능에 대한 자세한 내용은 [업데이트에서 시험판 기능 사용](/sccm/core/servers/manage/install-in-console-updates#a-namebkmkprereleasea-use-pre-release-features-from-updates)을 참조하세요.
 
-### <a name="i-also-heard-that-you-have-another-new-feature-called-peer-cache-in-the-technical-preview-version-1604-is-that-different-than-branchcache-which-one-should-i-choose"></a>Technical Preview 버전 1604에 피어 캐시라는 새 기능이 있다고 들었습니다. BranchCache와 다른가요? 어떤 것을 선택해야 하나요?
-예, 전혀 다릅니다. [피어 캐시](/sccm/core/get-started/capabilities-in-technical-preview-1604#bkmk_peercache)는 Configuration Manager의 기본 기술이지만 BranchCache는 Windows 기능입니다. 두 가지 모두 유용합니다. BranchCache는 브로드캐스트를 사용하여 필요한 콘텐츠를 찾는 반면, 피어 캐시는 Configuration Managers 일반 배포 워크플로 및 경계 그룹 설정을 사용합니다.
+### <a name="i-also-heard-that-you-have-another-new-feature-called-peer-cache-introduced-as-a-pre-release-feature-in-version-1610-is-that-different-than-branchcache-which-one-should-i-choose"></a>버전 1610의 시험판 기능으로 추가된 피어 캐시라는 또 다른 새로운 기능이 있다고 들었습니다. BranchCache와 다른가요? 어떤 것을 선택해야 하나요?
+예, 전혀 다릅니다. [피어 캐시](/sccm/core/plan-design/hierarchy/client-peer-cache)는 Configuration Manager의 기본 기술이지만 BranchCache는 Windows 기능입니다. 두 가지 모두 유용합니다. BranchCache는 브로드캐스트를 사용하여 필요한 콘텐츠를 찾는 반면, 피어 캐시는 Configuration Managers 일반 배포 워크플로 및 경계 그룹 설정을 사용합니다.
 
 모든 클라이언트는 피어 캐시 원본으로 구성할 수 있습니다. 그런 다음 관리 지점에서 콘텐츠 원본 위치에 대한 클라이언트 정보를 제공할 때 해당 클라이언트에 필요한 콘텐츠가 있는 모든 피어 캐시 원본 및 배포 지점에 대한 세부 정보를 제공합니다.
 
@@ -179,9 +180,4 @@ Configuration Manager는 Azure 부하 분산 장치에서 테스트되지 않았
  - Express 경로에 대한 자세한 내용: http://azure.microsoft.com/documentation/articles/expressroute-introduction/
 
  
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

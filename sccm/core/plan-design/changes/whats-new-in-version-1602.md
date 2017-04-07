@@ -15,9 +15,11 @@ caps.latest.revision: 3
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
+robots: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: 221228890b12bd6875de51e17a1124303b318201
-ms.openlocfilehash: 0314513bed65457c63508bfe2212e3e52d8d03da
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 9a548f43625a907173e7b967d26356bd80f1c5d9
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="what39s-new-in-version-1602-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1602의 새로운 기능
@@ -38,7 +40,7 @@ System Center Configuration Manager 업데이트 1602는 버전 1511을 실행�
 
 ## <a name="site-infrastructure"></a>사이트 인프라  
 
-###  <a name="a-namebkmkupgradeosa-in-place-upgrade-the-operating-system-of-site-servers-that-run-windows-server-2008-r2"></a><a name="bkmk_UpgradeOS"></a> Windows Server 2008 R2를 실행하는 사이트 서버의 운영 체제에 대한 현재 위치 업그레이드  
+###  <a name="bkmk_UpgradeOS"></a> Windows Server 2008 R2를 실행하는 사이트 서버의 운영 체제에 대한 현재 위치 업그레이드  
  버전 1602 이상을 실행하는 Configuration Manager 사이트에서는 Windows Server 2008 R2에서 Windows Server 2012 R2로 현재 위치에서 사이트 서버 운영 체제를 업그레이드할 수 있습니다.  
 
 > [!WARNING]  
@@ -48,7 +50,7 @@ System Center Configuration Manager 업데이트 1602는 버전 1511을 실행�
 
  서버를 업그레이드하려면 Windows Server 2012 R2 업그레이드 절차를 사용하세요. 업그레이드 후에 Configuration Manager 사이트 서버 복원을 실행할 필요가 없습니다. 업그레이드 절차에 대해서는 Windows Server 문서에서 [Windows Server 2012 R2에 대한 업그레이드 옵션](https://technet.microsoft.com/library/dn303416.aspx)을 참조하세요.  
 
-###  <a name="a-namebkmkaoaga-sql-server-alwayson-availability-groups"></a><a name="bkmk_AOAG"></a> SQL Server AlwaysOn 가용성 그룹  
+###  <a name="bkmk_AOAG"></a> SQL Server AlwaysOn 가용성 그룹  
  SQL Server AlwaysOn 가용성 그룹을 사용하여 기본 사이트와 중앙 관리 사이트에서 사이트 데이터베이스를 고가용성 및 재해 복구 솔루션으로 호스트할 수 있습니다.  
 
  자세한 내용은 [System Center Configuration Manager용 항상 사용 가능한 사이트 데이터베이스를 위한 SQL Server AlwaysOn](../../../core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database.md)을 참조하세요.  
@@ -218,9 +220,4 @@ Configuration Manager에서는 iOS 7.1 이상을 실행하는 감독된/감독�
 -   **비준수**: 사용자가 사용 약관의 버전을 수락했지만 최신 버전이 아닙니다.  
 
 -   **알 수 없음**: 사용자가 등록된 장치가 없는 사용 약관을 비롯하여 사용 약관을 수락하지 않았습니다.  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

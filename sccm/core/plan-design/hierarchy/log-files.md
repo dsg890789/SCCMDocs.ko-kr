@@ -2,7 +2,7 @@
 title: "Configuration Manager에 대한 로그 파일 | Microsoft 문서"
 description: "로그 파일을 사용하여 System Center Configuration Manager 계층 구조의 문제를 해결할 수 있습니다."
 ms.custom: na
-ms.date: 1/12/2017
+ms.date: 3/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: be5fd67e37b6ac7b20903e2e0678c1880715ab07
-ms.openlocfilehash: 1e7706156c9226aacf70e6dedb26a0edc93720d1
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: b991b4ea27e66c233b04f8e65a412404521d89a6
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -114,12 +115,12 @@ System Center Configuration Manager에서는 클라이언트 및 사이트 서�
 
     -   [WSUS 서버](#BKMK_WSUSLog)  
 
-##  <a name="a-namebkmkaboutlogsa-about-configuration-manager-log-files"></a><a name="BKMK_AboutLogs">Configuration Manager 로그 파일 정보</a>  
+##  <a name="BKMK_AboutLogs">Configuration Manager 로그 파일 정보</a>  
  Configuration Manager의 프로세스 대부분은 해당 프로세스 전용 로그 파일에 작업 정보를 기록합니다. 로그 파일은 **.log** 또는 **.lo_** 파일 확장명으로 식별됩니다. Configuration Manager는 로그가 최대 크기에 도달할 때까지 .log 파일에 내용을 기록합니다. 로그가 가득 차면 .log 파일이 이름은 같지만 확장명은 .lo_인 파일에 복사되고 프로세스 또는 구성 요소는 계속 .log 파일에 기록합니다. .log 파일이 다시 최대 크기에 도달하면 .lo_ 파일을 덮어쓰게 되고 프로세스가 반복됩니다. 일부 구성 요소는 날짜 및 시간 스탬프를 로그 파일 이름에 추가하고 .log 확장명을 유지하여 로그 파일 기록을 설정합니다. Linux 및 UNIX용 클라이언트에는 .lo_ 파일의 사용 및 최대 크기가 적용되지 않습니다. Linux 및 UNIX용 클라이언트에서 로그 파일을 사용하는 방법에 대한 자세한 내용은 이 항목에서 [Linux 및 UNIX용 클라이언트의 로그 파일 관리](#BKMK_ManageLinuxLogs)를 참조하세요.  
 
  로그를 보려면 Configuration Manager 로그 뷰어 도구인 CMTrace를 사용하면 됩니다. 이 도구는 Configuration Manager 원본 미디어의 \\SMSSetup\\Tools 폴더에 있습니다. CMTrace 도구는 소프트웨어 라이브러리에 추가된 모든 부팅 이미지에 추가됩니다.  
 
-###  <a name="a-namebkmklogoptionsa-configure-logging-options-by-using-configuration-manager-service-manager"></a><a name="BKMK_LogOptions"></a> Configuration Manager Service Manager를 사용하여 로깅 옵션 구성  
+###  <a name="BKMK_LogOptions"></a> Configuration Manager Service Manager를 사용하여 로깅 옵션 구성  
  Configuration Manager에서 로그 파일이 저장되는 위치 및 로그 파일 크기를 변경할 수 있습니다.  
 
  로그 파일의 크기를 수정하거나, 로그 파일의 이름과 위치를 변경하거나, 여러 구성 요소가 하나의 로그 파일에 기록하도록 하려면 다음 단계를 따르세요.  
@@ -135,13 +136,13 @@ System Center Configuration Manager에서는 클라이언트 및 사이트 서�
 7.  **Configuration Manager 구성 요소 로깅** 대화 상자에서 선택한 구성 요소에 사용할 수 있는 구성 옵션을 완료합니다.  
 8.  **확인**을 선택하여 구성을 저장합니다.  
 
-###  <a name="a-namebkmkloglocationa-find-configuration-manager-logs"></a><a name="BKMK_LogLocation"></a> Configuration Manager 로그 찾기  
+###  <a name="BKMK_LogLocation"></a> Configuration Manager 로그 찾기  
 Configuration Manager 로그 파일은 로그 파일을 만드는 프로세스 및 사이트 시스템의 구성에 따라 여러 위치에 저장됩니다. 컴퓨터의 로그 위치는 달라질 수 있으므로 특정 시나리오의 문제를 해결해야 하는 경우 검색 기능을 사용하여 Configuration Manager 컴퓨터에서 관련 로그 파일을 찾습니다.  
 
-##  <a name="a-namebkmkclientlogsa-configuration-manager-client-logs"></a><a name="BKMK_ClientLogs"></a> Configuration Manager 클라이언트 로그  
+##  <a name="BKMK_ClientLogs"></a> Configuration Manager 클라이언트 로그  
 다음 섹션에는 클라이언트 작업 및 클라이언트 설치와 관련된 로그 파일이 나와 있습니다.  
 
-###  <a name="a-namebkmkclientoplogsa-client-operations"></a><a name="BKMK_ClientOpLogs"></a> 클라이언트 작업  
+###  <a name="BKMK_ClientOpLogs"></a> 클라이언트 작업  
 다음 표에는 Configuration Manager 클라이언트에 있는 로그 파일이 나와 있습니다.  
 
 |로그 이름|설명|  
@@ -204,7 +205,7 @@ Configuration Manager 로그 파일은 로그 파일을 만드는 프로세스 �
 |wakeprxy install.log|클라이언트가 절전 모드 해제 프록시를 켜는 클라이언트 설정 옵션을 받을 경우의 설치 정보를 기록합니다.|  
 |wakeprxy-uninstall.log|이전에 절전 모드 해제 프록시를 켠 경우 클라이언트가 절전 모드 해제 프록시를 끄는 클라이언트 설정 옵션을 받을 경우 절전 모드 해제 프록시 제거에 대한 정보를 기록합니다.|  
 
-###  <a name="a-namebkmkclientinstallloga-client-installation-log-files"></a><a name="BKMK_ClientInstallLog"></a> 클라이언트 설치 로그 파일  
+###  <a name="BKMK_ClientInstallLog"></a> 클라이언트 설치 로그 파일  
  다음 표에는 Configuration Manager 클라이언트의 설치와 관련된 정보가 포함된 로그 파일이 나열되어 있습니다.  
 
 |로그 이름|설명|  
@@ -214,7 +215,7 @@ Configuration Manager 로그 파일은 로그 파일을 만드는 프로세스 �
 |CcmRepair.log|클라이언트 에이전트의 복구 활동을 기록합니다.|  
 |client.msi.log|client.msi를 통해 수행된 설치 작업을 기록합니다. 클라이언트 설치 또는 제거 문제를 해결하는 데 사용할 수 있습니다.|  
 
-###  <a name="a-namebkmklogfilesforlnua-client-for-linux-and-unix"></a><a name="BKMK_LogFilesforLnU"></a> Linux 및 UNIX용 클라이언트  
+###  <a name="BKMK_LogFilesforLnU"></a> Linux 및 UNIX용 클라이언트  
  Linux 및 UNIX용 Configuration Manager 클라이언트는 다음 로그 파일에 정보를 기록합니다.  
 
 > [!TIP]  
@@ -253,14 +254,14 @@ Configuration Manager 로그 파일은 로그 파일을 만드는 프로세스 �
 
 정상 작동 상태에서는 ERROR 로그 수준을 사용합니다. 이 로그 수준이 가장 작은 로그 파일을 만듭니다. 로그 수준을 ERROR에서 WARNING, INFO, TRACE 등으로 올리는 경우 더 많은 데이터가 파일에 기록되므로 더 큰 로그 파일이 생성됩니다.  
 
-####  <a name="a-namebkmkmanagelinuxlogsa-manage-log-files-for-the-linux-and-unix-client"></a><a name="BKMK_ManageLinuxLogs"></a> Linux 및 UNIX 클라이언트용 로그 파일 관리  
+####  <a name="BKMK_ManageLinuxLogs"></a> Linux 및 UNIX 클라이언트용 로그 파일 관리  
 Linux 및 UNIX 클라이언트는 클라이언트 로그 파일의 최대 크기를 제한하지 않고, 클라이언트가 자동으로 해당 .log 파일의 콘텐츠를 다른 파일(예: .lo_ 파일)로 복사하지도 않습니다. 로그 파일의 최대 크기를 제한하려면 Linux 및 UNIX Configuration Manager 클라이언트로부터 독립적인 로그 파일을 관리하는 프로세스를 구현합니다.  
 
 예를 들어 표준 Linux 및 UNIX 명령 **logrotate**를 사용하여 클라이언트 로그 파일의 크기 및 회전을 관리할 수 있습니다. Linux 및 UNIX용 Configuration Manager 클라이언트에는 **logrotate**가 로그 회전 완료 시 클라이언트에 신호를 보내 클라이언트가 로그 파일에 로깅을 다시 시작할 수 있도록 하는 인터페이스가 있습니다.  
 
 **logrotate**에 대한 자세한 내용은 사용 중인 Linux 및 UNIX 배포에 대한 설명서를 참조하세요.  
 
-###  <a name="a-namebkmklogfilesformaca-client-for-mac-computers"></a><a name="BKMK_LogfilesforMac"></a> Mac 컴퓨터용 클라이언트  
+###  <a name="BKMK_LogfilesforMac"></a> Mac 컴퓨터용 클라이언트  
 Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일에 정보를 기록합니다.  
 
 |로그 이름|세부 정보|  
@@ -272,10 +273,10 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 
 사이트 시스템 서버의 SMS_DM.log 로그 파일은 모바일 장치와 Mac 컴퓨터에 설정된 관리 지점과 Mac 컴퓨터 간의 통신도 기록합니다.  
 
-##  <a name="a-namebkmkserverlogsa-configuration-manager-site-server-log-files"></a><a name="BKMK_ServerLogs"></a> Configuration Manager 사이트 서버 로그 파일  
+##  <a name="BKMK_ServerLogs"></a> Configuration Manager 사이트 서버 로그 파일  
  다음 섹션에는 사이트 서버에 있는 로그 파일 또는 특정 사이트 시스템 역할과 관련된 로그 파일이 나와 있습니다.  
 
-###  <a name="a-namebkmksitesiteserverloga-site-server-and-site-system-server-logs"></a><a name="BKMK_SiteSiteServerLog"></a> 사이트 서버 및 사이트 시스템 서버 로그  
+###  <a name="BKMK_SiteSiteServerLog"></a> 사이트 서버 및 사이트 시스템 서버 로그  
  다음 표에는 Configuration Manager 사이트 서버 및 사이트 시스템 서버에 있는 로그 파일이 나와 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -350,7 +351,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |statmgr.log|데이터베이스에 기록된 모든 상태 메시지를 기록합니다.|사이트 서버|  
 |swmproc.log|계량 파일 및 설정의 처리 정보를 기록합니다.|사이트 서버|  
 
-###  <a name="a-namebkmksiteinstallloga-site-server-installation-log-files"></a><a name="BKMK_SiteInstallLog"></a> 사이트 서버 설치 로그 파일  
+###  <a name="BKMK_SiteInstallLog"></a> 사이트 서버 설치 로그 파일  
  다음 표에는 사이트 설치와 관련된 정보가 있는 로그 파일이 정리되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -361,7 +362,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |SMS_BOOTSTRAP.log|시작한 보조 사이트 설치 프로세스의 진행률 정보를 기록합니다. 실제 설치 프로세스에 대한 세부 정보는 ConfigMgrSetup.log에 포함되어 있습니다.|사이트 서버|  
 |smstsvc.log|연결을 시작하는 서버의 컴퓨터 계정을 통해 네트워크 연결과 사이트 간 사용 권한을 테스트하는 데 사용되는 Windows 서비스의 설치, 사용 및 제거에 대한 정보를 기록합니다.|사이트 서버 및 사이트 시스템 서버|  
 
-###  <a name="a-namebkmkfsploga-fallback-status-point-log-files"></a><a name="BKMK_FSPLog"></a> 대체 상태 지점 로그 파일  
+###  <a name="BKMK_FSPLog"></a> 대체 상태 지점 로그 파일  
  다음 표에는 대체 상태 지점과 관련된 정보가 있는 로그 파일이 정리되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -370,7 +371,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |fspMSI.log|대체 상태 지점 설치 시 생성된 메시지를 기록합니다.|사이트 시스템 서버|  
 |fspmgr.log|대체 상태 지점 사이트 시스템 역할의 작업을 기록합니다.|사이트 시스템 서버|  
 
-###  <a name="a-namebkmkmploga-management-point-log-files"></a><a name="BKMK_MPLog"></a> 관리 지점 로그 파일  
+###  <a name="BKMK_MPLog"></a> 관리 지점 로그 파일  
  다음 표에는 관리 지점과 관련된 정보가 있는 로그 파일이 정리되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -395,7 +396,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |mpMSI.log|관리 지점 설치에 대한 세부 정보를 기록합니다.|사이트 서버|  
 |MPSetup.log|관리 지점 설치 래퍼 프로세스를 기록합니다.|사이트 서버|  
 
-###  <a name="a-namebkmksuploga-software-update-point-log-files"></a><a name="BKMK_SUPLog"></a> 소프트웨어 업데이트 지점 로그 파일  
+###  <a name="BKMK_SUPLog"></a> 소프트웨어 업데이트 지점 로그 파일  
  다음 표에는 소프트웨어 업데이트 지점과 관련된 정보가 있는 로그 파일이 정리되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -409,10 +410,10 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |wsyncmgr.log|소프트웨어 업데이트 동기화 프로세스에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|  
 |WUSSyncXML.log|Microsoft 업데이트 동기화 프로세스용 인벤토리 도구에 대한 세부 정보를 기록합니다.|Microsoft 업데이트용 인벤토리 도구에 대한 동기화 호스트로 구성된 클라이언트 컴퓨터|  
 
-##  <a name="a-namebkmkfunctionlogsa-log-files-for-configuration-manager-functionality"></a><a name="BKMK_FunctionLogs"></a> Configuration Manager 기능에 대한 로그 파일  
+##  <a name="BKMK_FunctionLogs"></a> Configuration Manager 기능에 대한 로그 파일  
  다음 섹션에는 Configuration Manager 기능과 관련된 로그 파일이 나와 있습니다.  
 
-###  <a name="a-namebkmkappmanageloga-application-management"></a><a name="BKMK_AppManageLog"></a> 응용 프로그램 관리  
+###  <a name="BKMK_AppManageLog"></a> 응용 프로그램 관리  
  다음 표에는 응용 프로그램 관리와 관련된 정보가 포함된 로그 파일이 나와 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -441,7 +442,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |colleval.log|컬렉션 평가기에서 컬렉션을 만들고 변경하고 삭제한 경우 관련 세부 정보를 기록합니다.|사이트 서버|  
 |execmgr.log|실행하는 패키지 및 작업 순서에 대한 세부 정보를 기록합니다.|클라이언트|  
 
-###  <a name="a-namebkmkailoga-asset-intelligence"></a><a name="BKMK_AILog"></a> Asset intelligence  
+###  <a name="BKMK_AILog"></a> Asset intelligence  
  다음 표에는 Asset Intelligence와 관련된 정보가 포함된 로그 파일이 나열되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -454,7 +455,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |ManagedProvider.log|연결된 소프트웨어 ID 태그로 소프트웨어를 검색하는 데 대한 세부 정보를 기록합니다. 또한 하드웨어 인벤토리와 관련된 활동을 기록합니다.|사이트 시스템 서버|  
 |MVLSImport.log|가져온 라이선스 파일의 처리에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|  
 
-###  <a name="a-namebkmkbnrloga-backup-and-recovery"></a><a name="BKMK_BnRLog"></a> 백업 및 복구  
+###  <a name="BKMK_BnRLog"></a> 백업 및 복구  
  다음 표에는 사이트 다시 설정 및 SMS 공급자의 변경을 포함한 백업 및 복구 작업과 관련된 정보가 포함된 로그 파일이 나와 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -464,7 +465,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |smssqlbkup.log|사이트 서버가 아닌 서버에 SQL Server를 설치할 때 사이트 데이터베이스 백업 프로세스의 결과를 기록합니다.|사이트 데이터베이스 서버|  
 |Smswriter.log|백업 프로세스에서 사용하는 Configuration Manager VSS 작성기의 상태에 대한 정보를 기록합니다.|사이트 서버|  
 
-###  <a name="a-namebkmkcertificateenrollmenta-certificate-enrollment"></a><a name="BKMK_CertificateEnrollment"></a> 인증서 등록  
+###  <a name="BKMK_CertificateEnrollment"></a> 인증서 등록  
  다음 표에는 인증서 등록과 관련된 정보가 포함된 Configuration Manager 로그 파일이 나와 있습니다. 인증서 등록은 네트워크 장치 등록 서비스를 실행하는 서버의 인증서 등록 지점 및 Configuration Manager 정책 모듈을 사용합니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -486,7 +487,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
     > [!NOTE]  
     >  이 파일은 네트워크 장치 등록 서비스 계정 프로필의 폴더(예: C:\Users\SCEPSvc)에 있습니다. 네트워크 장치 등록 서비스에 대한 로깅을 사용하도록 설정하는 방법에 대한 자세한 내용은 TechNet wiki의 AD CS(Active Directory 인증서 서비스) 문서에서 NDES(네트워크 장치 등록 서비스)의 [로깅 사용](http://go.microsoft.com/fwlink/?LinkId=320576) 섹션을 참조하세요.  
 
-###  <a name="a-namebkmkbgba-client-notification"></a><a name="BKMK_BGB"></a> 클라이언트 알림  
+###  <a name="BKMK_BGB"></a> 클라이언트 알림  
  다음 표에는 클라이언트 알림과 관련된 정보가 포함된 로그 파일이 나열되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -502,12 +503,22 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 
 다음 표에는 클라우드 관리 게이트웨이와 관련된 정보가 포함된 로그 파일이 나와 있습니다.
 
-|로그 이름|설명|로그 파일이 있는 컴퓨터|  
-|--------------|-----------------|----------------------------|  
-|CloudMgr.log|클라우드 관리 게이트웨이 서비스 배포, 지속적인 서비스 상태 및 서비스와 연결된 사용 데이터에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|
+||||
+|-|-|-|
+|로그 이름|설명|로그 파일이 있는 컴퓨터|
+|CloudMgr.log|클라우드 관리 게이트웨이 서비스 배포, 지속적인 서비스 상태 및 서비스와 연결된 사용 데이터에 대한 세부 정보를 기록합니다.<br>레지스트리 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SMS\COMPONENTS\SMS_CLOUD_SERVICES_MANAGER\Logging level**을 편집하여 로깅 수준을 구성할 수 있습니다.|사이트 시스템 서버의 **SMS/Logs** 폴더|
+|CMGSetup.log 또는 CMG-*RoleInstanceID*-CMGSetup.log<sup>1</sup>|클라우드 관리 게이트웨이 배포(Azure의 로컬 배포)의 2단계에 대한 세부 정보를 기록합니다.<br>**Azure 포털\Cloud Services 구성** 탭에서 설정 **추적 수준**(**정보**(기본값), **자세한 정보**, **오류**)을 사용하여 로깅 수준을 구성할 수 있습니다.|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
+|CMGHttpHandler.log 또는 CMG-*RoleInstanceID*- CMGHttpHandler.log<sup>1</sup>|Azure에서 인터넷 정보 서비스와 바인딩하는 클라우드 관리 게이트웨이 HTTP 처리기에 대한 세부 정보를 기록합니다.<br>**Azure 포털\클라우드 서비스 구성** 탭에서 설정 **추적 수준**(**정보**(기본값), **자세한 정보**, **오류**)을 사용하여 로깅 수준을 구성할 수 있습니다.|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
+|CMGService.log 또는 CMG-*RoleInstanceID*- CMGService.log<sup>1</sup>|Azure의 클라우드 관리 게이트웨이 핵심 구성 요소에 대한 세부 정보를 기록합니다.<br>**Azure 포털\클라우드 서비스 구성** 탭에서 설정 **추적 수준**(**정보**(기본값), **자세한 정보**, **오류**)을 사용하여 로깅 수준을 구성할 수 있습니다.|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
 |SMS_Cloud_ProxyConnector.log|클라우드 관리 게이트웨이 서비스와 클라우드 관리 게이트웨이 연결 지점 간에 연결을 설정하는 방법에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|
 
-###  <a name="a-namebkmkcompsettingsloga-compliance-settings-and-company-resource-access"></a><a name="BKMK_CompSettingsLog"></a> 준수 설정 및 회사 리소스 액세스  
+<sup>1</sup> 클라우드 서비스 관리자가 5분마다 Azure 저장소에서 동기화하는 로컬 Configuration Manager 로그 파일입니다. 클라우드 관리 게이트웨이는 5분마다 로그를 Azure 저장소로 푸시합니다. 따라서 최대 지연은 10분입니다. 자세한 정보 스위치는 로컬 및 원격 로그에 둘 다 영향을 미칩니다.
+
+- 배포 문제 해결에는 **CloudMgr.log** 및 **CMGSetup.log**를 사용합니다.
+- 서비스 상태 문제 해결에는 **CMGService.log** 및 **SMS_Cloud_ProxyConnector.log**를 사용합니다.
+- 클라이언트 트래픽 문제 해결에는 **CMGHttpHandler.log**, **CMGService.log** 및 **SMS_Cloud_ProxyConnector.log**를 사용합니다.
+
+###  <a name="BKMK_CompSettingsLog"></a> 준수 설정 및 회사 리소스 액세스  
  다음 표에는 호환성 설정 및 회사 리소스 액세스와 관련된 정보가 포함된 로그 파일이 정리되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -518,7 +529,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |DCMReporting.log|구성 항목에 대한 상태 메시지에 정책 플랫폼 결과를 보고하는 작업에 대한 정보를 기록합니다.|클라이언트|  
 |DcmWmiProvider.log|WMI에서 구성 항목 synclet를 읽는 작업에 대한 정보를 기록합니다.|클라이언트|  
 
-###  <a name="a-namebkmkconsoleloga-configuration-manager-console"></a><a name="BKMK_ConsoleLog"></a> Configuration Manager 콘솔  
+###  <a name="BKMK_ConsoleLog"></a> Configuration Manager 콘솔  
  다음 표에는 Configuration Manager 콘솔과 관련된 정보가 포함된 로그 파일이 나열되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -527,7 +538,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |SmsAdminUI.log|Configuration Manager 콘솔의 작업에 대한 정보를 기록합니다.|Configuration Manager 콘솔을 실행하는 컴퓨터|  
 |Smsprov.log|SMS 공급자가 수행한 작업을 기록합니다. Configuration Manager 콘솔 작업은 SMS 공급자를 사용합니다.|사이트 서버 또는 사이트 시스템 서버|  
 
-###  <a name="a-namebkmkcontentloga-content-management"></a><a name="BKMK_ContentLog"></a> 콘텐츠 관리  
+###  <a name="BKMK_ContentLog"></a> 콘텐츠 관리  
  다음 표에는 콘텐츠 관리와 관련된 정보가 포함된 로그 파일이 나열되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -541,7 +552,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |smsdpprov.log|기본 사이트에서 받은 압축 파일의 압축 풀기에 대한 세부 정보를 기록합니다. 이 로그는 원격 배포 지점의 WMI 공급자가 생성합니다.|사이트 서버와 함께 있지 않은 배포 지점 컴퓨터|  
 
 
-###  <a name="a-namebkmkdiscoveryloga-discovery"></a><a name="BKMK_DiscoveryLog"></a> 검색  
+###  <a name="BKMK_DiscoveryLog"></a> 검색  
 다음 표에는 검색과 관련된 정보가 포함된 로그 파일이 나열되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -554,7 +565,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |InventoryAgent.log|클라이언트의 하드웨어 인벤토리, 소프트웨어 인벤토리 및 하트비트 검색 작업에 대한 활동을 기록합니다.|클라이언트|  
 |netdisc.log|네트워크 검색 작업을 기록합니다.|사이트 서버|  
 
-###  <a name="a-namebkmkeploga-endpoint-protection"></a><a name="BKMK_EPLog"></a> Endpoint Protection  
+###  <a name="BKMK_EPLog"></a> Endpoint Protection  
  다음 표에는 Endpoint Protection과 관련된 정보가 포함된 로그 파일이 나열되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -564,7 +575,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |EPMgr.log|Endpoint Protection 사이트 시스템 역할의 상태를 모니터링합니다.|사이트 시스템 서버|  
 |EPSetup.log|Endpoint Protection 사이트 시스템 역할의 설치에 대한 정보를 제공합니다.|사이트 시스템 서버|  
 
-###  <a name="a-namebkmkextensionsa-extensions"></a><a name="BKMK_Extensions"></a> 확장  
+###  <a name="BKMK_Extensions"></a> 확장  
  다음 표에는 확장과 관련된 정보가 포함된 로그 파일이 나와 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -573,7 +584,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |FeatureExtensionInstaller.log|개별 확장이 Configuration Manager 콘솔에서 사용하도록 설정되거나 사용하지 않도록 설정된 경우 해당 확장의 설치 및 제거에 대한 정보를 기록합니다.|Configuration Manager 콘솔을 실행하는 컴퓨터|  
 |SmsAdminUI.log|Configuration Manager 콘솔 작업을 기록합니다.|Configuration Manager 콘솔을 실행하는 컴퓨터|  
 
-###  <a name="a-namebkmkinventoryloga-inventory"></a><a name="BKMK_InventoryLog"></a> 인벤토리  
+###  <a name="BKMK_InventoryLog"></a> 인벤토리  
  다음 표에는 인벤토리 데이터 처리와 관련된 정보가 포함된 로그 파일이 나열되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -582,24 +593,24 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |invproc.log|보조 사이트에서 해당 부모 사이트로 전달된 MIF 파일을 기록합니다.|보조 사이트 서버|  
 |sinvproc.log|사이트 데이터베이스에 대한 소프트웨어 인벤토리 데이터의 처리에 대한 정보를 기록합니다.|사이트 서버|  
 
-###  <a name="a-namebkmkmeteringloga-metering"></a><a name="BKMK_MeteringLog"></a> 계량  
+###  <a name="BKMK_MeteringLog"></a> 계량  
  다음 표에는 계량과 관련된 정보가 포함된 로그 파일이 나열되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
 |--------------|-----------------|----------------------------|  
 |mtrmgr.log|모든 소프트웨어 계량 프로세스를 모니터링합니다.|사이트 서버|  
 
-###  <a name="a-namebkmkmigrationloga-migration"></a><a name="BKMK_MigrationLog"></a> 마이그레이션  
+###  <a name="BKMK_MigrationLog"></a> 마이그레이션  
  다음 표에는 마이그레이션과 관련된 정보가 포함된 로그 파일이 나열되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
 |--------------|-----------------|----------------------------|  
 |migmctrl.log|마이그레이션 작업, 공유 배포 지점 및 배포 지점 업그레이드와 관련된 마이그레이션 작업에 대한 정보를 기록합니다.|Configuration Manager 계층 구조의 최상위 사이트 및 각 하위 기본 사이트.<br /><br /> 기본 사이트가 여러 개인 계층인 경우 중앙 관리 사이트에 만들어진 로그 파일을 사용하세요.|  
 
-###  <a name="a-namebkmkmdmloga-mobile-devices"></a><a name="BKMK_MDMLog"></a> 모바일 장치  
+###  <a name="BKMK_MDMLog"></a> 모바일 장치  
  다음 섹션에는 모바일 장치 관리와 관련된 정보가 포함된 로그 파일이 나열되어 있습니다.  
 
-####  <a name="a-namebkmkenrollmentloga-enrollment"></a><a name="BKMK_EnrollmentLog"></a> 등록  
+####  <a name="BKMK_EnrollmentLog"></a> 등록  
  다음 표에는 모바일 장치 등록과 관련된 정보가 포함된 로그가 나열되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -613,14 +624,14 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |enrollmentservice.log|등록 프록시 지점과 등록 지점 간의 통신을 기록합니다.|사이트 시스템 서버|  
 |SMS_DM.log|모바일 장치, Mac 컴퓨터, 그리고 모바일 장치와 Mac 컴퓨터에 대해 사용하도록 설정된 관리 지점 간의 통신을 기록합니다.|사이트 시스템 서버|  
 
-####  <a name="a-namebkmkexchsrvloga-exchange-server-connector"></a><a name="BKMK_ExchSrvLog"></a> Exchange Server 커넥터  
+####  <a name="BKMK_ExchSrvLog"></a> Exchange Server 커넥터  
  다음 로그에는 Exchange Server 커넥터와 관련된 정보가 포함되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
 |--------------|-----------------|----------------------------|  
 |easdisc.log|Exchange Server 커넥터의 활동과 상태를 기록합니다.|사이트 서버|  
 
-####  <a name="a-namebkmkmdlegloga-mobile-device-legacy"></a><a name="BKMK_MDLegLog"></a> 모바일 장치 기존  
+####  <a name="BKMK_MDLegLog"></a> 모바일 장치 기존  
  다음 표에는 모바일 장치 기존 클라이언트와 관련된 정보가 포함된 로그가 나열되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -644,7 +655,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |DmSvc.log|모바일 장치에 대해 사용하도록 설정된 관리 지점을 대상으로 하는 모바일 장치 기존 클라이언트로부터의 클라이언트 통신을 기록합니다.|클라이언트|  
 |FspIsapi.log|대체 상태 지점과 모바일 장치 기존 클라이언트 및 클라이언트 컴퓨터 간에 수행되는 통신 관련 세부 정보를 기록합니다.|사이트 시스템 서버|  
 
-###  <a name="a-namebkmkosdloga-operating-system-deployment"></a><a name="BKMK_OSDLog"></a> 운영 체제 배포  
+###  <a name="BKMK_OSDLog"></a> 운영 체제 배포  
  다음 표에는 운영 체제 배포와 관련된 정보가 포함된 로그 파일이 나열되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -681,21 +692,21 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |loadstate.log|USMT(사용자 환경 마이그레이션 도구) 및 사용자 상태 데이터 복원에 대한 세부 정보를 기록합니다.|클라이언트|  
 |scanstate.log|USMT(사용자 환경 마이그레이션 도구) 및 사용자 상태 데이터 캡처에 대한 세부 정보를 기록합니다.|클라이언트|  
 
-###  <a name="a-namebkmkpowermgmtloga-power-management"></a><a name="BKMK_PowerMgmtLog"></a> 전원 관리  
+###  <a name="BKMK_PowerMgmtLog"></a> 전원 관리  
  다음 표에는 전원 관리와 관련된 정보가 포함된 로그 파일이 나열되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
 |--------------|-----------------|----------------------------|  
 |Pwrmgmt.log|전원 관리 클라이언트 에이전트에 의한 모니터링 및 설정 적용을 포함한 클라이언트 컴퓨터의 전원 관리 활동에 대한 세부 정보를 기록합니다.|클라이언트|  
 
-###  <a name="a-namebkmkrcloga-remote-control"></a><a name="BKMK_RCLog"></a> 원격 제어  
+###  <a name="BKMK_RCLog"></a> 원격 제어  
  다음 표에는 원격 제어와 관련된 정보가 포함된 로그 파일이 나열되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
 |--------------|-----------------|----------------------------|  
 |CMRcViewer.log|원격 제어 뷰어의 활동에 대한 세부 정보를 기록합니다.|원격 제어 뷰어를 실행하는 컴퓨터의 %temp% 폴더에 있습니다.|  
 
-###  <a name="a-namebkmkreportloga-reporting"></a><a name="BKMK_ReportLog"></a> 보고  
+###  <a name="BKMK_ReportLog"></a> 보고  
  다음 표에는 보고와 관련된 정보가 포함된 Configuration Manager 로그 파일이 나열되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -704,7 +715,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |srsrpMSI.log|MSI 출력에서 제공하는 보고 서비스 지점 설치 프로세스의 자세한 결과를 기록합니다.|사이트 시스템 서버|  
 |srsrpsetup.log|보고 서비스 지점 설치 프로세스의 결과를 기록합니다.|사이트 시스템 서버|  
 
-###  <a name="a-namebkmkrbaloga-role-based-administration"></a><a name="BKMK_RBALog"></a> 역할 기반 관리  
+###  <a name="BKMK_RBALog"></a> 역할 기반 관리  
  다음 표에는 관리 역할 기반 관리와 관련된 정보가 포함된 로그 파일이 나열되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -712,7 +723,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |hman.log|사이트 구성 변경 내용 및 Active Directory Domain Services에 사이트 정보를 게시하는 작업에 대한 정보를 기록합니다.|사이트 서버|  
 |SMSProv.log|사이트 데이터베이스에 대한 WMI 공급자 액세스를 기록합니다.|SMS 공급자가 설치된 컴퓨터|  
 
-###  <a name="a-namebkmkwitloga-service-connection-point"></a><a name="BKMK_WITLog"></a> 서비스 연결 지점  
+###  <a name="BKMK_WITLog"></a> 서비스 연결 지점  
  다음 표에는 서비스 연결 지점과 관련된 정보가 포함된 로그 파일이 나와 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -735,7 +746,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |SrvBoot.log|서비스 연결 지점 설치 관리자 서비스 세부 정보를 기록합니다.|서비스 연결 지점이 있는 컴퓨터|  
 |statesys.log|모바일 장치 관리 메시지의 처리를 기록합니다.|기본 사이트 및 중앙 관리 사이트|  
 
-###  <a name="a-namebkmksunaploga-software-updates"></a><a name="BKMK_SU_NAPLog"></a> 소프트웨어 업데이트  
+###  <a name="BKMK_SU_NAPLog"></a> 소프트웨어 업데이트  
  다음 표에는 소프트웨어 업데이트와 관련된 정보가 포함된 로그 파일이 나와 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -758,7 +769,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |wsyncmgr.log|소프트웨어 업데이트 동기화 프로세스에 대한 세부 정보를 기록합니다.|사이트 서버|  
 |WUAHandler.log|소프트웨어 업데이트가 검색되는 경우 클라이언트의 Windows Update 에이전트 관련 세부 정보를 기록합니다.|클라이언트|  
 
-###  <a name="a-namebkmkwolloga-wake-on-lan"></a><a name="BKMK_WOLLog"></a> Wake On LAN  
+###  <a name="BKMK_WOLLog"></a> Wake On LAN  
  다음 표에는 Wake On LAN 사용과 관련된 정보가 있는 로그 파일이 나와 있습니다.  
 
 > [!NOTE]  
@@ -769,7 +780,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |wolcmgr.log|절전 모드 해제 패킷을 보내야 하는 클라이언트, 전송한 절전 모드 해제 패킷 수, 사용이 중단된 절전 모드 해제 패킷의 수 등에 대한 세부 정보를 기록합니다.|사이트 서버|  
 |wolmgr.log|Wake On LAN에 구성된 배포의 절전 모드를 해제하는 경우와 같이 절전 모드 해제 절차에 대한 세부 정보를 기록합니다.|사이트 서버|  
 
-###  <a name="a-namebkmkwindowsservicinglogawindows-10-servicing"></a><a name="BKMK_WindowsServicingLog"></a> Windows 10 서비스  
+###  <a name="BKMK_WindowsServicingLog"></a> Windows 10 서비스  
  다음 표에는 Windows 10 서비스와 관련된 정보가 포함된 로그 파일이 나와 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -794,23 +805,18 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |wsyncmgr.log|소프트웨어 업데이트 동기화 프로세스에 대한 세부 정보를 기록합니다.|사이트 서버|  
 |WUAHandler.log|소프트웨어 업데이트가 검색되는 경우 클라이언트의 Windows Update 에이전트 관련 세부 정보를 기록합니다.|클라이언트|  
 
-###  <a name="a-namebkmkwuloga-windows-update-agent"></a><a name="BKMK_WULog"></a> Windows 업데이트 에이전트  
+###  <a name="BKMK_WULog"></a> Windows 업데이트 에이전트  
  다음 표에는 Windows Update 에이전트와 관련된 정보가 있는 로그 파일이 정리되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
 |--------------|-----------------|----------------------------|  
 |WindowsUpdate.log|Windows 업데이트 에이전트가 WSUS 서버에 연결하여 준수 평가를 위해 소프트웨어 업데이트를 검색하는 경우에 대한 세부 정보와 에이전트 구성 요소에 대한 업데이트가 있는지 여부에 대한 세부 정보를 기록합니다.|클라이언트|  
 
-###  <a name="a-namebkmkwsusloga-wsus-server"></a><a name="BKMK_WSUSLog"></a> WSUS 서버  
+###  <a name="BKMK_WSUSLog"></a> WSUS 서버  
  다음 표에는 WSUS 서버와 관련된 정보가 있는 로그 파일이 정리되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
 |--------------|-----------------|----------------------------|  
 |Change.log|변경된 WSUS 서버 데이터베이스 정보에 대한 세부 정보를 기록합니다.|WSUS 서버|  
 |SoftwareDistribution.log|구성된 업데이트 원본에서 WSUS 서버 데이터베이스로 동기화된 소프트웨어 업데이트에 대한 세부 정보를 기록합니다.|WSUS 서버|  
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

@@ -2,7 +2,7 @@
 title: "인증서 인프라 구성 | Microsoft 문서"
 description: "System Center Configuration Manager에서 인증서 등록을 구성하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/10/2016
+ms.date: 03/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,36 +17,28 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
-ms.openlocfilehash: 56e0a1923305c5134386623b1e306b8ebd013d53
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 859a8da10f55e314b205b7a4a415a1d2a60a920a
+ms.lasthandoff: 03/27/2017
 
 ---
+
 # <a name="certificate-infrastructure"></a>인증서 인프라
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
+System Center Configuration Manager에서 인증서를 구성하는 단계, 세부 정보 및 방법에 대한 추가 정보는 다음을 참조하세요. 시작하기 전에 [System Center Configuration Manager에서 인증서 프로필에 대한 필수 조건](../../protect/plan-design/prerequisites-for-certificate-profiles.md)에 나열된 모든 필수 조건을 확인합니다.  
 
- System Center Configuration Manager에서 인증서 등록을 구성하는 단계, 세부 정보 및 방법에 대한 추가 정보는 다음을 참조하세요. 시작하기 전에 [System Center Configuration Manager에서 인증서 프로필에 대한 필수 조건](../../protect/plan-design/prerequisites-for-certificate-profiles.md)에 나열된 모든 필수 조건을 확인합니다.  
+이러한 단계를 사용하여 SCEP 또는 PFX 인증서의 인프라를 구성합니다.
 
- 이러한 단계를 완료하고 설치되었는지 확인한 후 인증서 프로필을 구성 및 배포할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 인증서 프로필을 만드는 방법](../../protect/deploy-use/create-certificate-profiles.md)을 참조하세요.  
+## <a name="step-1---install-and-configure-the-network-device-enrollment-service-and-dependencies-for-scep-certificates-only"></a>1단계: 네트워크 장치 등록 서비스 및 종속성 설치 및 구성(SCEP 인증서에만 해당)
 
-
-**1단계:** 네트워크 장치 등록 서비스 및 종속 항목 설치 및 구성 AD CS(Active Directory 인증서 서비스)용 네트워크 장치 등록 서비스 역할 서비스가 Windows Server 2012 R2 운영 체제에서 실행되고 있어야 합니다.
-     **중요:** System Center Configuration Manager에서 네트워크 장치 등록 서비스를 사용하려면 먼저 추가적인 구성 단계를 완료해야 합니다.
-**2단계:** 인증서 등록 지점 설치 및 구성 인증서 등록 지점을 하나 이상 설치해야 합니다. 이 등록 지점은 중앙 관리 사이트 또는 기본 사이트에 있을 수 있습니다.
-**3단계:**: System Center Configuration Manager 정책 모듈 설치 네트워크 장치 등록 서비스를 실행하는 서버에 정책 모듈을 설치합니다.
-
-## <a name="supplemental-procedures-to-configure-certificate-enrollment-in-configuration-manager"></a>Configuration Manager에서 인증서 등록을 구성하기 위한 추가 절차  
- 위의 표에 설명된 단계에 보완 절차가 필요한 경우 다음 정보를 사용하세요.  
-
-###  <a name="step-1-install-and-configure-the-network-device-enrollment-service-and-dependencies"></a>1단계: 네트워크 장치 등록 서비스 및 종속 항목 설치 및 구성  
  AD CS(Active Directory 인증서 서비스)용 네트워크 장치 등록 서비스 역할 서비스를 설치 및 구성하고, 인증서 템플릿에 대한 보안 권한을 변경하고, PKI(공개 키 인프라) 클라이언트 인증 인증서를 배포하고, IIS(인터넷 정보 서비스) 기본 URL 크기 제한을 늘리도록 레지스트리를 편집해야 합니다. 필요한 경우 발급 CA(인증 기관)에서 사용자 지정 유효 기간을 허용하도록 구성해야 합니다.  
 
 > [!IMPORTANT]  
 >  네트워크 장치 등록 서비스와 함께 사용할 수 있도록 System Center Configuration Manager를 구성하기 전에 네트워크 장치 등록 서비스가 설치 및 구성되어 있는지 확인하세요. 이러한 종속 항목이 제대로 작동하지 않는 경우 System Center Configuration Manager를 사용하여 인증서 등록 문제를 해결하는 데 어려움을 겪을 수 있습니다.  
 
-##### <a name="to-install-and-configure-the-network-device-enrollment-service-and-dependencies"></a>네트워크 장치 등록 서비스 및 종속 항목을 설치하고 구성하려면  
+### <a name="to-install-and-configure-the-network-device-enrollment-service-and-dependencies"></a>네트워크 장치 등록 서비스 및 종속 항목을 설치하고 구성하려면  
 
 1.  Windows Server 2012 R2를 실행하는 서버에서 Active Directory 인증서 서비스 서버 역할용 네트워크 장치 등록 서비스 역할 서비스를 설치하고 구성합니다. 자세한 내용은 TechNet의 Active Directory 인증서 서비스 라이브러리에서 [Network Device Enrollment Service Guidance(네트워크 장치 등록 서비스 지침)](http://go.microsoft.com/fwlink/p/?LinkId=309016) 를 참조하세요.  
 
@@ -107,10 +99,12 @@ ms.lasthandoff: 12/16/2016
 
 8.  **https://server.contoso.com/certsrv/mscep/mscep.dll**예제 링크를 사용하여 네트워크 장치 등록 서비스가 작동 중인지 확인합니다. 기본 제공되는 네트워크 장치 등록 서비스 웹 페이지가 나타납니다. 이 웹 페이지에서는 서비스에 대해 설명하고, 네트워크 장치가 인증서 요청을 제출하는 URL을 사용한다는 것을 설명합니다.  
 
- 네트워크 장치 등록 서비스와 종속 항목을 구성했으므로 이제 인증서 등록 지점을 설치 및 구성할 준비가 되었습니다.  
+ 네트워크 장치 등록 서비스와 종속 항목을 구성했으므로 이제 인증서 등록 지점을 설치 및 구성할 준비가 되었습니다.
 
-###  <a name="step-2-install-and-configure-the-certificate-registration-point"></a>2단계: 인증서 등록 지점 설치 및 구성  
- System Center Configuration Manager 계층에 인증서 등록 지점을 하나 이상 설치하고 구성해야 하며, 중앙 관리 사이트 또는 기본 사이트에 이 사이트 시스템 역할을 설치할 수 있습니다.  
+
+## <a name="step-2---install-and-configure-the-certificate-registration-point"></a>2단계 - 인증서 등록 지점 설치 및 구성
+
+System Center Configuration Manager 계층에 인증서 등록 지점을 하나 이상 설치하고 구성해야 하며, 중앙 관리 사이트 또는 기본 사이트에 이 사이트 시스템 역할을 설치할 수 있습니다.  
 
 > [!IMPORTANT]  
 >  인증서 등록 지점을 설치하기 전에 운영 체제 요구 사항 및 인증서 등록 지점의 종속 항목을 다루는 [System Center Configuration Manager에서 지원되는 구성](../../core/plan-design/configs/supported-configurations.md) 항목의 **사이트 시스템 요구 사항** 섹션을 참조하세요.  
@@ -127,18 +121,23 @@ ms.lasthandoff: 12/16/2016
 
 5.  **프록시** 페이지에서 **다음**을 클릭합니다. 인증서 등록 지점은 인터넷 프록시 설정을 사용하지 않습니다.  
 
-6.  **시스템 역할 선택** 페이지의 사용 가능한 역할 목록에서 **인증서 등록 지점** 을 선택하고 **다음**을 클릭합니다.  
+6.  **시스템 역할 선택** 페이지의 사용 가능한 역할 목록에서 **인증서 등록 지점** 을 선택하고 **다음**을 클릭합니다. 
 
-7.  **인증서 등록 지점** 페이지에서 기본 설정을 수락 또는 변경한 후에 **추가**를 클릭합니다.  
+8. **인증서 등록 모드** 페이지에서 이 인증서 등록 지점으로 **SCEP 인증서 요청 처리** 또는 **PFX 인증서 요청 처리**를 수행할지 선택합니다. 인증서 등록 지점은 두 종류의 요청을 모두 처리할 수 없지만 두 가지 인증서 유형을 모두 사용할 경우 여러 인증서 등록 지점을 만들 수 있습니다.
 
+7.  **인증서 등록 지점 설정** 페이지에서 지정하는 설정은 인증서 등록 지점이 처리하는 인증서 유형에 따라 다릅니다.
+    -   **SCEP 인증서 요청 처리**를 선택한 경우 다음을 구성합니다.
+        -   인증서 등록 지점에 대한 **웹 사이트 이름**, **HTTPS 포트 번호** 및 **가상 응용 프로그램 이름**. 이러한 필드는 기본값으로 자동으로 입력됩니다. 
+        -   **네트워크 장치 등록 서비스 및 루트 CA 인증서의 URL** - **추가**를 클릭하고 **URL 및 루트 CA 인증서 추가** 대화 상자에서 다음을 지정합니다.
+            - **네트워크 장치 등록 서비스의 URL**: URL을 https://*<server_FQDN>*/certsrv/mscep/mscep.dll 형식으로 지정합니다. 예를 들어 네트워크 장치 등록 서비스를 실행하는 서버의 FQDN이 server1.contoso.com인 경우 **https://server1.contoso.com/certsrv/mscep/mscep.dll**을 입력합니다.
+            - **루트 CA 인증서**: **1단계: 네트워크 장치 등록 서비스 및 종속성 설치 및 구성**에서 만들어 저장한 인증서(.cer) 파일을 찾아서 선택합니다. 인증서 등록 지점은 이 루트 CA 인증서를 사용하여 System Center Configuration Manager 정책 모듈에 사용될 클라이언트 인증 인증서의 유효성을 검사할 수 있습니다.  
+    - **PFX 인증서 요청 처리**를 선택한 경우 다음을 구성합니다.
+        - **각 CA(인증 기관)에 연결하려면 CA 및 계정 필요** - **추가**를 클릭하고 **인증 기관 및 계정 추가** 대화 상자에서 다음을 지정합니다.
+            - **인증 기관 서버 이름** - 인증 기관 서버의 이름을 입력합니다.
+            - **인증 기관 계정** - **설정**을 클릭하여 인증 기관에서 템플릿에 등록할 권한이 있는 계정을 선택하거나 만듭니다.
+        - **인증서 등록 지점 연결 계정** - 인증 등록 지점을 Configuration Manager 데이터베이스에 연결하는 계정을 선택하거나 만듭니다. 또는 인증서 등록 지점을 호스트하는 컴퓨터의 로컬 컴퓨터 계정을 사용할 수 있습니다.
+        - **Active Directory 인증서 게시 계정** - Active Directory의 사용자 개체에 인증서를 게시하는 데 사용되는 계정을 선택하거나 새로 만듭니다.
 8.  **URL 및 루트 CA 인증서 추가** 대화 상자에서 다음을 지정한 후 **확인**을 클릭합니다.  
-
-    1.  **네트워크 장치 등록 서비스의 URL**: URL을 https://*<server_FQDN>*/certsrv/mscep/mscep.dll 형식으로 지정합니다. 예를 들어 네트워크 장치 등록 서비스를 실행하는 서버의 FQDN이 server1.contoso.com인 경우 **https://server1.contoso.com/certsrv/mscep/mscep.dll**을 입력합니다.  
-
-    2.  **루트 CA 인증서**: **1단계: 네트워크 장치 등록 서비스 및 종속성 설치 및 구성**에서 만들어 저장한 인증서(.cer) 파일을 찾아서 선택합니다. 인증서 등록 지점은 이 루트 CA 인증서를 사용하여 System Center Configuration Manager 정책 모듈에 사용될 클라이언트 인증 인증서의 유효성을 검사할 수 있습니다.  
-
-    > [!NOTE]  
-    >  네트워크 장치 등록 서비스를 실행하는 서버가 둘 이상인 경우 **추가** 를 클릭하고 다른 서버에 대한 세부 정보를 지정합니다.  
 
 9. **다음** 을 클릭하여 마법사를 완료합니다.  
 
@@ -155,10 +154,10 @@ ms.lasthandoff: 12/16/2016
     > [!TIP]  
     >  이 폴더에서 이 인증서를 바로 사용할 수는 없습니다. System Center Configuration Manager에서 파일을 이 위치로 복사할 때까지 어느 정도(예: 30분) 기다려야 할 수 있습니다.  
 
- 인증서 등록 지점을 설치 및 구성했으므로 이제 네트워크 장치 등록 서비스용 System Center Configuration Manager 정책 모듈을 설치할 준비가 되었습니다.  
 
-###  <a name="step-3-install-the-configuration-manager-policy-module"></a>3단계: Configuration Manager 정책 모듈 설치  
- System Center Configuration Manager 정책 모듈을 **2단계: 인증서 등록 지점 설치 및 구성**에서 지정한 각 서버에서 인증서 등록 지점에 대한 속성인 **네트워크 장치 등록 서비스의 URL**로 설치하고 구성해야 합니다.  
+## <a name="step-3----install-the-system-center-configuration-manager-policy-module-for-scep-certificates-only"></a>3단계 - System Center Configuration Manager 정책 모듈 설치(SCEP 인증서에만 해당)
+
+System Center Configuration Manager 정책 모듈을 **2단계: 인증서 등록 지점 설치 및 구성**에서 지정한 각 서버에서 인증서 등록 지점에 대한 속성인 **네트워크 장치 등록 서비스의 URL**로 설치하고 구성해야 합니다.  
 
 ##### <a name="to-install-the-policy-module"></a>정책 모듈을 설치하려면  
 
@@ -168,7 +167,7 @@ ms.lasthandoff: 12/16/2016
 
     -   PolicyModuleSetup.exe  
 
-     또한 설치 미디어에 LanguagePack 폴더가 있는 경우 LanguagePack 폴더와 폴더의 내용을 복사합니다.  
+    또한 설치 미디어에 LanguagePack 폴더가 있는 경우 LanguagePack 폴더와 폴더의 내용을 복사합니다.  
 
 2.  임시 폴더에서 PolicyModuleSetup.exe를 실행하여 System Center Configuration Manager 정책 모듈 설치 마법사를 시작합니다.  
 
@@ -189,7 +188,8 @@ ms.lasthandoff: 12/16/2016
 
 9. **다음** 을 클릭하여 마법사를 완료합니다.  
 
- 네트워크 장치 등록 서비스와 종속 항목, 인증서 등록 지점 및 System Center Configuration Manager 정책 모듈을 설치하는 구성 단계를 완료했으므로 인증서 프로필을 만들어 배포하는 방식으로 사용자와 장치에 인증서를 배포할 준비가 되었습니다. 인증서 프로필을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 인증서 프로필을 만드는 방법](../../protect/deploy-use/create-certificate-profiles.md)을 참조하세요.  
+ System Center Configuration Manager 정책 모듈을 제거하려는 경우 제어판에서 **프로그램 및 기능**을 사용하세요. 
 
- System Center Configuration Manager 정책 모듈을 제거하려는 경우 제어판에서 **프로그램 및 기능**을 사용하세요.  
+ 
+구성 단계를 완료했으므로 인증서 프로필을 만들어 배포하는 방식으로 사용자와 장치에 인증서를 배포할 준비가 되었습니다. 인증서 프로필을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 인증서 프로필을 만드는 방법](../../protect/deploy-use/create-certificate-profiles.md)을 참조하세요.  
 

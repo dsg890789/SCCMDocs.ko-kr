@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1b458284961171f11acc3e84f82749addc1b6afb
-ms.openlocfilehash: 890cc72f7ca0619b48ceae7c3a8c731a62341ef7
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 28593d271603ff9775425327996d844d7ed358cd
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -41,7 +41,7 @@ System Center Configuration Manager의 여러 독립적인 계층 구조를 동�
 
  기존 System Center 2012 Configuration Manager 사이트 또는 계층 구조와 System Center Configuration Manager 사이트 및 계층 구조를 병렬로 배포할 수 있으므로 각 버전의 클라이언트가 다른 버전의 사이트에 연결하지 않도록 계획하는 것이 좋습니다.
 
-예를 들어 둘 이상의 Configuration Manager 계층 구조에 동일한 네트워크 위치를 포함하는 겹치는 경계([겹치는 경계 정보](../../../core/servers/deploy/configure/define-site-boundaries-and-boundary-groups.md#BKMK_BoundaryOverlap) 참조)가 있는 경우 자동 사이트 할당을 사용하지 않고 새 클라이언트를 각각 특정 사이트에 할당하는 것이 좋습니다. System Center 2012 Configuration Manager의 자동 사이트 할당에 대한 자세한 내용은 [System Center Configuration Manager에서 사이트에 클라이언트를 할당하는 방법](../../../core/clients/deploy/assign-clients-to-a-site.md)을 참조하세요.  
+예를 들어 둘 이상의 Configuration Manager 계층 구조에 동일한 네트워크 위치를 포함하는 겹치는 경계([겹치는 경계](/sccm/core/servers/deploy/configure/boundary-groups#overlapping-boundaries) 참조)가 있는 경우 자동 사이트 할당을 사용하지 않고 새 클라이언트를 각각 특정 사이트에 할당하는 것이 좋습니다. System Center 2012 Configuration Manager의 자동 사이트 할당에 대한 자세한 내용은 [System Center Configuration Manager에서 사이트에 클라이언트를 할당하는 방법](../../../core/clients/deploy/assign-clients-to-a-site.md)을 참조하세요.  
 
  또한 System Center Configuration Manager의 사이트 시스템 역할을 호스트하는 컴퓨터에 System Center 2012 Configuration Manager의 클라이언트를 설치하거나, System Center 2012 Configuration Manager의 사이트 시스템 역할을 호스트하는 컴퓨터에 System Center Configuration Manager 클라이언트를 설치할 수 없습니다.  
 

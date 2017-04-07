@@ -2,7 +2,7 @@
 title: "업데이트 등록 도구 | Microsoft 문서"
 description: "업데이트 등록 도구를 사용하여 수동으로 업데이트를 Configuration Manager 콘솔로 가져오는 시기 및 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
-ms.openlocfilehash: c729212d38168acfff3f11ea41f3d52b234c70c8
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 35a4c201f73469fdfaa5bb8629e91886f7ae8751
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -60,15 +60,15 @@ Configuration Manager의 일부 업데이트는 Microsoft 클라우드 서비스
 
     -   **&lt;제품\>-&lt;제품 버전\>-&lt;KB 문서 ID\>-ConfigMgr.Update.exe**  
 
-    핫픽스를 등록하면 콘솔에서 24 시간 내에 새 업데이트로 표시됩니다.  다음 중 하나를 사용하여 프로세스를 가속화할 수 있습니다.  
+    핫픽스를 등록하면 콘솔에서 24 시간 내에 새 업데이트로 표시됩니다.  프로세스를 가속화할 수 있습니다.
 
-    -   버전 1511의 경우: Configuration Manager 콘솔에서 **관리 > Cloud Services > 업데이트 및 서비스**로 이동한 후 **즉시 업데이트 검색 프로세스를 시작합니다.**를 선택합니다.  그러면 등록 프로세스가 완료되는 즉시 핫픽스 가져오기를 시작하여 콘솔에서 사용할 수 있도록 합니다.  
-
-    -   버전 1602 이상의 경우: Configuration Manager 콘솔에서 **관리 > Cloud Services > 업데이트 및 서비스**로 이동한 후 **업데이트 확인**을 클릭합니다.  
+    - Configuration Manager 콘솔을 열고 **관리** > **업데이트 및 서비스**로 이동하고 **업데이트 확인**을 클릭합니다. 버전 1702 이전에는 업데이트 및 서비스가 **관리** > **Cloud Services** 아래에 있었습니다. 
 
     업데이트 등록 도구는 로컬 컴퓨터의 .log 파일에 작업을 로깅합니다. 로그 파일은 hotfix.exe 파일과 이름이 같으며 **%SystemRoot%/Temp** 폴더에 기록됩니다.  
 
      업데이트가 등록된 후 업데이트 등록 도구를 닫을 수 있습니다.  
 
-3.  Configuration Manager 콘솔을 열고 **관리** > **클라우드 서비스** > **업데이트 및 서비스**를 선택합니다. 이제 가져온 핫픽스를 설치할 수 있습니다. 업데이트를 설치하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 콘솔 내 업데이트 설치](../../../core/servers/manage/install-in-console-updates.md)를 참조하세요.  
+3.  Configuration Manager 콘솔을 열고 **관리** > **업데이트 및 서비스**로 이동합니다. 이제 가져온 핫픽스를 설치할 수 있습니다. 버전 1702 이전에는 업데이트 및 서비스가 **관리** > **Cloud Services** 아래에 있었습니다.
+
+ 업데이트를 설치하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 콘솔 내 업데이트 설치](../../../core/servers/manage/install-in-console-updates.md)를 참조하세요.  
 

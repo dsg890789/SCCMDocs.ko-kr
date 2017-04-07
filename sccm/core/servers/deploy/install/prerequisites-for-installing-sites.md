@@ -2,7 +2,7 @@
 title: "사이트 필수 조건 | Microsoft 문서"
 description: "각 유형의 System Center Configuration Manager 사이트를 설치하기 위한 필수 조건을 알아봅니다."
 ms.custom: na
-ms.date: 3/1/2017
+ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: b6c570d8addbe7df5aace461ee725a7df1d35a31
-ms.openlocfilehash: 76c8bb6d0922fad996e27c04a86cb9b4ad32a810
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: ff89d4aea6be871e64e0a788f054ba4cadb3e51d
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="prerequisites-for-installing-system-center-configuration-manager-sites"></a>System Center Configuration Manager 사이트 설치에 대한 필수 조건
@@ -60,14 +60,14 @@ ms.lasthandoff: 03/01/2017
 - 사이트 서버와 사이트 데이터베이스 컴퓨터는 모든 필수 조건 구성을 충족해야 합니다. 설치 프로그램을 시작하기 전에 [필수 조건 검사기를 수동으로 실행](../../../../core/servers/deploy/install/prerequisite-checker.md)하여 문제를 확인하고 해결할 수 있습니다.  
 
 
-### <a name="bkmk_expand"></a> 독립 실행형 기본 사이트 확장
+### <a name="bkmk_expand"></a> 독립 실행형 기본 사이트를 확장하기 위한 필수 구성 요소
 독립 실행형 기본 사이트를 중앙 관리 사이트와 함께 계층 안으로 확장하려면 먼저 다음 필수 구성 요소를 충족해야 합니다.
 
--   **독립 실행형 기본 사이트의 버전과 일치하는 새 중앙 관리 사이트 설치 미디어(소스 파일 포함)를 설치해야 합니다.**
+-   **독립 실행형 기본 사이트의 버전과 일치하는 CD.Latest 폴더의 미디어(소스 파일 포함)를 사용하여 새 중앙 관리 사이트를 설치해야 합니다.**
 
-     버전과 일치하도록 독립 실행형 기본 사이트의 [CD.Latest 폴더](../../../../core/servers/manage/the-cd.latest-folder.md)에 있는 소스 파일을 사용하여 새 사이트를 설치합니다.
+ 버전과 일치하도록 독립 실행형 기본 사이트의 [CD.Latest 폴더](/sccm/core/servers/manage/the-cd.latest-folder)에 있는 원본 파일을 사용합니다.
 
-     다른 사이트를 설치하는 데 사용할 올바른 소스 파일에 대한 자세한 내용은 [사이트를 설치할 준비](../../../../core/servers/deploy/install/prepare-to-install-sites.md) 항목의 [서로 다른 유형의 사이트 설치 옵션](../../../../core/servers/deploy/install/prepare-to-install-sites.md#bkmk_options)을 참조하세요.
+ 다른 사이트를 설치하는 데 사용할 올바른 소스 파일에 대한 자세한 내용은 [사이트를 설치할 준비](../../../../core/servers/deploy/install/prepare-to-install-sites.md) 항목의 [서로 다른 유형의 사이트 설치 옵션](../../../../core/servers/deploy/install/prepare-to-install-sites.md#bkmk_options)을 참조하세요.
 
 
 -   **독립 실행형 기본 사이트는 다른 Configuration Manager 계층 구조의 데이터를 마이그레이션하도록 구성할 수 없습니다.**  

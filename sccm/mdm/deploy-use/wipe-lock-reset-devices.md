@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager를 사용하여 원격 초기화, 잠금 또는 암호 재설정으로 데이터 보호 | Microsoft 문서"
 description: "System Center Configuration Manager를 사용하여 전체 초기화, 선택적 초기화, 원격 잠금 또는 암호 다시 설정으로 장치 데이터를 보호합니다."
 ms.custom: na
-ms.date: 03/05/2017
+ms.date: 03/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,13 +13,13 @@ ms.topic: article
 ms.assetid: 770da7bd-02dd-474a-9604-93ff1ea0c1e4
 caps.latest.revision: 18
 caps.handback.revision: 0
-author: mtillman
-ms.author: mtillman
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 3aa4c2ad3568cc6ced70a65141a2c103af8b740f
-ms.lasthandoff: 03/06/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: ef020a0409c1f1a68f76ecadc9885801e6c1ad4e
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="protect-data-with-remote-wipe-lock-or-passcode-reset-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 원격 초기화, 잠금 또는 암호 재설정으로 데이터 보호
@@ -77,19 +77,22 @@ Configuration Manager는 선택적 초기화, 전체 초기화, 원격 잠금 �
 |관리 에이전트|장치 관리자 권한이 해지됩니다.|장치 관리자 권한이 해지됩니다.|  
 |전자 메일 프로필|해당 없음.|Intune에 의해 프로비전된 메일 프로필의 경우 메일 계정 및 메일이 제거됩니다.|  
 
+**Android for Work**
+
+Android for Work 장치에서 선택적 초기화를 수행하면 해당 장치에 있는 회사 프로필의 모든 데이터, 앱 및 설정과 함께 회사 프로필이 제거됩니다. 이 경우 Configuration Manager 및 Intune을 사용한 관리에서 장치 사용이 중지됩니다. Android for Work에서는 전체 초기화가 지원되지 않습니다.
+
  **Windows 10, Windows 8.1, Windows RT 8.1 및 Windows RT**  
 
-|장치를 사용 중지할 경우 제거되는 콘텐츠|Windows 10, Windows 8.1 및 Windows RT 8.1|Windows RT|  
-|---------------------------------|-------------|-----------|
-|Configuration Manager 및 Intune을 사용하여 설치된 회사 앱 및 관련 데이터|앱이 제거되고 테스트용 로드 키가 제거됩니다. Windows 선택 초기화를 사용하는 앱에서 암호화 키가 해지되고 더 이상 데이터에 액세스할 수 없게 됩니다.|테스트용 로드 키가 제거되지만 앱은 설치된 상태로 남아 있습니다.|  
-|VPN 및 Wi-Fi 프로필|제거됩니다.|해당 없음.|  
-|인증서|제거되고 해지됩니다.|해당 없음.|  
-|설정|요구 사항이 제거됩니다.||  
-|관리 에이전트|해당 없음. 관리 에이전트는 기본 제공됩니다.|해당 없음. 관리 에이전트는 기본 제공됩니다.|  
-|전자 메일 프로필|Windows 메일 및 첨부 파일용 메일 앱을 포함하는 EFS 사용 메일을 제거합니다.|해당 없음.|  
+|장치를 사용 중지할 경우 제거되는 콘텐츠|Windows 10, Windows 8.1 및 Windows RT 8.1|  
+|---------------------------------|-------------|
+|Configuration Manager 및 Intune을 사용하여 설치된 회사 앱 및 관련 데이터|앱이 제거되고 테스트용 로드 키가 제거됩니다. Windows 선택 초기화를 사용하는 앱에서 암호화 키가 해지되고 더 이상 데이터에 액세스할 수 없게 됩니다.|  
+|VPN 및 Wi-Fi 프로필|제거됩니다.|  
+|인증서|제거되고 해지됩니다.|  
+|설정|요구 사항이 제거됩니다.|
+|관리 에이전트|해당 없음. 관리 에이전트는 기본 제공됩니다.|  
+|전자 메일 프로필|Windows 메일 및 첨부 파일용 메일 앱을 포함하는 EFS 사용 메일을 제거합니다.|  
 
- **Windows 10 Mobile, Windows Phone 8.0 및 Windows Phone 8.1**  
-
+ **Windows 10 Mobile, Windows Phone 8.0 및 Windows Phone 8.1**
 
  |장치를 사용 중지할 경우 제거되는 콘텐츠|Windows 10 Mobile, Windows Phone 8 및 Windows Phone 8.1|  
 |-|-|
@@ -102,53 +105,29 @@ Configuration Manager는 선택적 초기화, 전체 초기화, 원격 잠금 �
  Windows 10 Mobile 및 Windows Phone 8.1 장치에서는 다음 설정도 제거됩니다.  
 
 -   모바일 장치의 잠금을 해제하는 데 암호 필요  
-
 -   단순 암호 허용  
-
 -   최소 암호 길이  
-
 -   필수 암호 유형  
-
 -   암호 만료(일)  
-
 -   암호 기록 기억  
-
 -   장치를 초기화하기 전까지 허용되는 로그인 반복 오류 횟수  
-
 -   암호를 요구하기 전까지 비활성 시간(분)  
-
 -   필수 암호 유형 - 최소 문자 집합 수  
-
 -   카메라 허용  
-
 -   모바일 장치 암호화 필요  
-
 -   이동식 저장소 허용  
-
 -   웹 브라우저 허용  
-
 -   앱 스토어 허용  
-
 -   화면 캡처 허용  
-
 -   지리적 위치 허용  
-
 -   Microsoft 계정 허용  
-
 -   복사 및 붙여넣기 허용  
-
 -   Wi-Fi 테더링 허용  
-
 -   무료 Wi-Fi 핫스팟에 자동 연결 허용  
-
 -   Wi-Fi 핫스팟 보고 허용  
-
 -   공장 재설정 허용  
-
 -   Bluetooth 허용  
-
 -   NFC 허용  
-
 -   Wi-Fi 허용  
 
 ### <a name="to-initiate-a-remote-wipe-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 원격 초기화를 시작하려면  
@@ -184,7 +163,7 @@ Configuration Manager는 선택적 초기화, 전체 초기화, 원격 잠금 �
 
 -   iOS의 경우 사용자가 iCloud를 사용하여 콘텐츠를 복원할 수 없도록 "iCloud에 백업 허용" 설정을 "허용 안 함"으로 구성합니다.  
 
--   계정이 비활성화된 경우에는&1;년이 지난 후 Intune에서 계정의 사용이 중지되고 선택 초기화가 수행됩니다.  
+-   계정이 비활성화된 경우에는 1년이 지난 후 Intune에서 계정의 사용이 중지되고 선택 초기화가 수행됩니다.  
 
 ##  <a name="passcode-reset"></a>암호 재설정  
  사용자가 암호를 잊은 경우 장치에서 암호를 제거하거나 장치에 대한 새로운 임시 암호를 적용하여 사용자를 도울 수 있습니다. 아래 표에는 여러 모바일 플랫폼에서 암호 재설정이 작동하는 방법이 정리되어 있습니다.  
@@ -192,10 +171,11 @@ Configuration Manager는 선택적 초기화, 전체 초기화, 원격 잠금 �
 |플랫폼|암호 재설정|  
 |--------------|--------------------|  
 |iOS|장치에서 암호를 제거하도록 지원됩니다. 새로운 임시 암호를 만들지 않습니다.|  
-|Android|지원되며 임시 암호가 생성됩니다.|  
+|Android|지원되며 임시 암호가 생성됩니다.|
+|Android for Work | 지원되지 않음|
 |Windows 10|현재 지원되지 않습니다.|  
 |Windows Phone 8 및 Windows Phone 8.1|지원됨|  
-|Windows RT 8.1 및 Windows RT|지원 안 됨|  
+|Windows RT 8.1 |지원 안 됨|  
 |Windows 8.1|지원 안 됨|  
 
 ### <a name="to-reset-the-passcode-on-a-mobile-device-remotely-in-configuration-manager"></a>Configuration Manager에서 원격으로 모바일 장치의 암호를 재설정하려면  
@@ -223,7 +203,7 @@ Configuration Manager는 선택적 초기화, 전체 초기화, 원격 잠금 �
 |Android|지원됨|  
 |Windows 10|현재 지원되지 않습니다.|  
 |Windows Phone 8 및 Windows Phone 8.1|지원됨|  
-|Windows RT 8.1 및 Windows RT|장치의 현재 사용자가 장치를 등록한 사용자인 경우 지원됨|  
+|Windows RT 8.1 |장치의 현재 사용자가 장치를 등록한 사용자인 경우 지원됨|  
 |Windows 8.1|장치의 현재 사용자가 장치를 등록한 사용자인 경우 지원됨|  
 
 ### <a name="to-lock-a-mobile-device-remotely-through-the-configuration-manager-console"></a>Configuration Manager 콘솔을 통해 원격으로 모바일 장치를 잠그려면  

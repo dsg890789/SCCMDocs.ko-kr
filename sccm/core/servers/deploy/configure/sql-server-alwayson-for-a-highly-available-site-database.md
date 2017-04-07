@@ -15,9 +15,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 4c2906c2a963e0ae92e3c0d223afb7a47377526a
-ms.openlocfilehash: 9c614a842fc9e3a01b0128db94fc12bc0be5b52f
-ms.lasthandoff: 03/20/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: aaaab003ddd22f18160d4be63cfeab3a7e7f6b03
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -44,6 +44,10 @@ ms.lasthandoff: 03/20/2017
 -   사이트 데이터베이스를 호스트하는 가용성 그룹에서 복제 구성원을 추가하거나 제거할 수 있습니다.  
 
 -   독립 실행형 SQL Server의 기본 또는 명명된 인스턴스로 가용성 그룹의 사이트 데이터베이스를 이동할 수 있습니다.  
+
+> [!Important]  
+> Microsoft Intune 및 Configuration Manager를 하이브리드 구성으로 사용할 경우 사이트 데이터베이스를 가용성 그룹으로/으로부터 이동하면 데이터가 클라우드와 다시 동기화됩니다. 이 작업은 피할 수 없습니다. 
+
 
 
 > [!NOTE]  
@@ -110,7 +114,7 @@ ms.lasthandoff: 03/20/2017
 - *Edition*: SQL Server의 Enterprise Edition을 사용해야 합니다.  SQL Server 2016 Standard Edition은 Configuration Manager에서 지원되지 않는 기본 가용성 그룹을 소개합니다.
 
 
--   가용성 그룹에는 주 복제본이 하나 있어야 하며 동기 보조 복제본이&2;개까지 포함될 수 있습니다.  
+-   가용성 그룹에는 주 복제본이 하나 있어야 하며 동기 보조 복제본이 2개까지 포함될 수 있습니다.  
 
 -  가용성 그룹에 데이터베이스를 추가한 후에는 주 복제본을 보조 복제본으로 장애 조치하고(새 주 복제본으로 설정됨) 다음과 같이 데이터베이스를 구성해야 합니다.
     - 신뢰성을 사용하도록 설정: True와 같음

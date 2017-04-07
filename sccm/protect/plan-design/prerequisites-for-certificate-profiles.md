@@ -2,7 +2,7 @@
 title: "인증서 프로필 필수 조건 | Microsoft 문서"
 description: "System Center Configuration Manager의 인증서 프로필과 외부 종속성 및 제품 내 종속성에 대해 알아봅니다."
 ms.custom: na
-ms.date: 11/27/2016
+ms.date: 03/29/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 593fbd0587d54490246f48ae54f666bac6b7830d
-ms.openlocfilehash: 08fb30da2060728142648f13846be737f98f2276
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: 23b1d24e908d04b64c3bbfa518793a44e696d468
+ms.openlocfilehash: fba52ee305fe67418f2fe544bfe94d10467236d0
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 12/16/2016
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 
-System Center Configuration Manager(ConfigMgr 또는 SCCM이라고도 함)의 인증서 프로필에는 외부 종속성과 제품 내 종속성이 있습니다.  
+System Center Configuration Manager의 인증서 프로필에는 외부 종속성과 제품 내 종속성이 있습니다.  
 
 ## <a name="dependencies-external-to-configuration-manager"></a>Configuration Manager 외부 종속성  
 

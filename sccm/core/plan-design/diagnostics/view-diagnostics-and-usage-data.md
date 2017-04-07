@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 688e05aae0e0b15b54835f8d64a98487f4d7b64d
-ms.openlocfilehash: fcd7ac43f7b2d2c92d6aadd7c490f198ac99e5e6
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: 199096db7a23fb14db98b95e75246ed254848ab7
+ms.openlocfilehash: 0932e2b2a4f3e13c35d6b7b0446083f1c233ce03
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -44,7 +44,7 @@ System Center Configuration Manager 계층 구조에서 진단 및 사용 현황
 
 #### <a name="to-see-how-the-one-way-hash-works"></a>단방향 해시가 작동하는 방식을 보려면  
 
-1.  Configuration Manager 데이터베이스에 대해 SQL Management Studio에서 SQL 문 **select [dbo].[fnGetHierarchyID](\)**를 실행하여 계층 구조 ID를 가져옵니다.  
+1.  Configuration Manager 데이터베이스에 대해 SQL Management Studio에서 SQL 문 **select [dbo].[fnGetHierarchyID]\(\)**를 실행하여 계층 구조 ID를 가져옵니다.  
 
 2.  다음 Windows PowerShell 스크립트를 사용하여 데이터베이스에서 가져온 GUID의 단방향 해시를 수행합니다. 이를 원시 데이터의 계층 ID와 비교하여 이 데이터를 가리는 방법을 알아볼 수 있습니다.  
 
@@ -52,12 +52,12 @@ System Center Configuration Manager 계층 구조에서 진단 및 사용 현황
     Param( [Parameter(Mandatory=$True)] [string]$value )  
       $guid = [System.Guid]::NewGuid()  
       if( [System.Guid]::TryParse($value,[ref] $guid) -eq $true ) {  
-         #many of the values we hash are Guids  
-         $bytesToHash = $guid.ToByteArray()  
+      #many of the values we hash are Guids  
+      $bytesToHash = $guid.ToByteArray()  
     } else {  
-         #otherwise hash as string (unicode)  
-         $ue = New-Object System.Text.UnicodeEncoding  
-         $bytesToHash = $ue.GetBytes($value)   
+      #otherwise hash as string (unicode)  
+      $ue = New-Object System.Text.UnicodeEncoding  
+      $bytesToHash = $ue.GetBytes($value)   
     }  
       # Load Hash Provider (https://en.wikipedia.org/wiki/SHA-2)   
     $hashAlgorithm = [System.Security.Cryptography.SHA256Cng]::Create()    

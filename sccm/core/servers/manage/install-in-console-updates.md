@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
-ms.openlocfilehash: eafa95922485066632a5da522e6c3de69b45050f
-ms.lasthandoff: 03/04/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 3b50ada9f63e41d1b6f01009c141b8f361f5180e
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -33,14 +33,14 @@ System Center Configuration Manager는 Microsoft 클라우드 서비스와 동�
 
 -   **온라인 모드**에서, 서비스 연결 지점은 Microsoft 클라우드 서비스에 자동으로 연결하고 적용 가능한 업데이트를 다운로드합니다.  
 
-     기본적으로 Configuration Manager는 24시간마다 새 업데이트를 확인합니다. Configuration Manager 콘솔의 **관리** > **Cloud Services** > **업데이트 및 서비스** 노드에서 **업데이트 확인**을 선택하여 즉시 업데이트를 확인할 수도 있습니다.  
+     기본적으로 Configuration Manager는 24시간마다 새 업데이트를 확인합니다. Configuration Manager 콘솔의 **관리** > **업데이트 및 서비스** 노드에서 **업데이트 확인**을 선택하여 즉시 업데이트를 확인할 수도 있습니다. 버전 1702 이전에는 이 노드가 **관리** > **Cloud Services** 아래에 있었습니다.
 
 -   **오프라인 모드**에서는 서비스 연결 지점이 Microsoft 클라우드 서비스에 연결하지 않습니다. 수동으로 [System Center Configuration Manager의 서비스 연결 도구를 사용](../../../core/servers/manage/use-the-service-connection-tool.md)하여 사용 가능한 업데이트를 다운로드한 후 가져와야 합니다.  
 
 > [!NOTE]  
 >  Microsoft 클라우드 서비스와 동기화할 때 가져오는 업데이트 외에도 [업데이트 등록 도구](http://technet.microsoft.com/library/mt691544.aspx)를 사용하여 설치되는 대역 외 수정을 콘솔에 가져옵니다. 그런 다음 콘솔에서 해당 수정을 설치하도록 선택할 수 있습니다.  
 
-업데이트를 동기화한 후 **관리** > **Cloud Services** > **업데이트 및 서비스** 노드로 이동하여 Configuration Manager 콘솔에서 해당 업데이트를 볼 수 있습니다.  
+업데이트를 동기화한 후 **관리** > **업데이트 및 서비스** 노드로 이동하여 Configuration Manager 콘솔에서 해당 업데이트를 볼 수 있습니다.  
 
 -   설치하지 않은 업데이트는 **사용 가능**으로 표시됩니다.
 
@@ -98,7 +98,8 @@ System Center Configuration Manager는 Microsoft 클라우드 서비스와 동�
 - 1606으로 업데이트: [업데이트 1606을 설치하기 위한 검사 목록](../../../core/servers/manage/checklist-for-installing-update-1606.md)을 참조하세요.  
 
 - 1606에서 1610으로 업데이트: [업데이트 1610을 설치하기 위한 검사 목록](../../../core/servers/manage/checklist-for-installing-update-1610.md)을 참조하세요.  
-<!--- Update to 1702 from either 1606 or 1610: See [Checklist for installing update 1702](../../../core/servers/manage/checklist-for-installing-update-1702.md). -->  
+
+- 1606 또는 1610에서 1702로 업데이트: [업데이트 1702를 설치하기 위한 검사 목록](../../../core/servers/manage/checklist-for-installing-update-1702.md)을 참조하세요.
 
 ###  <a name="bkmk_step2"></a> 2단계: 업데이트를 설치하기 전에 데이터베이스 업그레이드 테스트  
 이 단계의 정보는 System Center Configuration Manager 사이트에 대한 *업데이트*를 설치하는 경우에만 적용됩니다. System Center 2012 Configuration Manager 사이트를 System Center Configuration Manager로 *업그레이드*하는 경우 [사이트 데이터베이스 업그레이드 테스트](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager#a-namebkmktesta-test-the-site-database-upgrade)를 참조하세요.
@@ -146,7 +147,7 @@ System Center Configuration Manager는 Microsoft 클라우드 서비스와 동�
 
 #### <a name="to-run-the-prerequisite-checker-before-installing-an-update"></a>업데이트를 설치하기 전에 필수 조건 검사를 실행하려면  
 
-1.  Configuration Manager 콘솔에서 **관리** > **클라우드 서비스** > **업데이트 및 서비스**로 이동합니다.  
+1.  Configuration Manager 콘솔에서 **관리** > **업데이트 및 서비스**로 이동합니다.   
 
 2.  필수 조건 검사를 실행하는 업데이트 패키지를 마우스 오른쪽 단추로 클릭합니다.  
 
@@ -203,7 +204,7 @@ System Center Configuration Manager는 Microsoft 클라우드 서비스와 동�
 **3. 설치하는 업데이트의 진행률 모니터링**  
 다음을 사용하여 진행률을 모니터링합니다.  
 
--   Configuration Manager 콘솔에서 **관리** > **클라우드 서비스** > **업데이트 및 서비스** 노드로 이동합니다. 이 노드에는 모든 업데이트 패키지의 설치 상태가 표시됩니다.
+-   Configuration Manager 콘솔에서 **관리** > **업데이트 및 서비스** 노드로 이동합니다. 이 노드에는 모든 업데이트 패키지의 설치 상태가 표시됩니다.
 
 
 -   Configuration Manager 콘솔에서 **모니터링** > **개요** > **업데이트 및 서비스 상태** 노드로 이동합니다. 이 노드에는 현재 설치 중인 업데이트 패키지의 설치 상태만 표시됩니다.  
@@ -241,7 +242,7 @@ System Center Configuration Manager는 Microsoft 클라우드 서비스와 동�
 콘솔 업데이트가 완료되면 콘솔 및 사이트 버전이 올바른지 확인할 수 있습니다. 콘솔의 왼쪽 위에 있는 **System Center Configuration Manager 정보**로 이동합니다.  
 
 ###  <a name="bkmk_toptier"></a> 최상위 계층 사이트에서 업데이트 설치를 시작하려면  
-계층 구조의 최상위 계층 사이트에 있는 Configuration Manager 콘솔에서 **관리** > **Cloud Services** > **업데이트 및 서비스**로 이동한 다음 **사용 가능** 업데이트를 선택하고 **업데이트 팩 설치**를 클릭합니다.  
+계층 구조의 최상위 계층 사이트에 있는 Configuration Manager 콘솔에서 **관리** > **업데이트 및 서비스**로 이동한 다음 **사용 가능** 업데이트를 선택하고 **업데이트 팩 설치**를 클릭합니다.  
 
 ###  <a name="bkmk_secondary"></a> 보조 사이트에서 업데이트 설치를 시작하려면  
 보조 사이트 상위 기본 사이트를 업데이트한 후 Configuration Manager 콘솔 내에서 보조 사이트를 업데이트할 수 있습니다.  그렇게 하려면 **보조 사이트 업그레이드 마법사**를 사용합니다.  
@@ -268,7 +269,7 @@ System Center Configuration Manager는 Microsoft 클라우드 서비스와 동�
     -   설치 실패
     -   콘텐츠를 사이트로 복제 실패   
 
-    **관리** > **Cloud Services** > **업데이트 및 서비스**로 이동하고, 다음 중 하나를 선택합니다.  
+    **관리** > **업데이트 및 서비스**로 이동하고, 다음 중 하나를 선택합니다.  
 
     -   **다시 시도** - 이 노드에서 **다시 시도**를 실행하면 업데이트 설치가 다시 시작되고 필수 조건 경고가 자동으로 무시됩니다. 또한 복제가 이전에 실패한 경우 업데이트의 콘텐츠도 다시 복제합니다.
     - **필수 조건 경고 무시** - 버전 1606부터, 경고로 인해 업데이트 설치가 중지되면 **필수 조건 경고 무시**를 선택할 수 있습니다. 이 작업은 몇 분 후 업데이트의 설치를 계속 진행하며 필수 조건 경고를 무시하는 옵션을 사용합니다.   
@@ -315,7 +316,7 @@ System Center Configuration Manager는 Microsoft 클라우드 서비스와 동�
 ##  <a name="bkmk_options"></a> 업데이트에서 선택적 기능 사용  
 하나 이상의 선택적 기능을 포함하는 업데이트를 설치할 때 계층에서 이러한 기능을 사용하도록 설정할 수 있습니다.  업데이트 설치 시 또는 나중에 콘솔로 돌아가 선택적 기능을 사용하도록 설정할 수 있습니다.
 
-사용 가능한 기능 및 해당 상태를 보려면 콘솔에서 **관리** > **클라우드 서비스** > **업데이트 및 서비스** > **기능**으로 이동합니다.
+사용 가능한 기능 및 해당 상태를 보려면 콘솔에서 **관리** > **업데이트 및 서비스** > **기능**으로 이동합니다.
 
 기능이 선택 사항이 아닌 경우 해당 기능은 자동으로 설치되며 **기능** 노드에 표시되지 않습니다.  
 

@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 3c8f968276cb6d412a4a06cb70f1c8e45e91c605
-ms.openlocfilehash: cd53f093056fbaa2ef6fd88d5451b7698f296569
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: bcb14a2be312d4d8a4a9c235652c7bf971a7a976
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1612-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1612의 기능
@@ -182,9 +183,15 @@ Technical Preview 1612를 설치한 후 Technical Preview 사이트 서버의 *%
 
 
 ### <a name="run-the-tool"></a>도구 실행
-도구를 실행하려면 관리 명령 프롬프트를 **ContentLibraryCleanup.exe**가 포함된 폴더로 엽니다.  
+도구를 실행하려면:
+1. 관리 명령 프롬프트를 **ContentLibraryCleanup.exe**가 포함된 폴더로 엽니다.  
+2. 필수 명령줄 스위치와 사용할 선택적 스위치를 포함하는 명령줄을 입력합니다.
 
-필수 명령줄 스위치와 사용할 선택적 스위치를 포함하는 명령줄을 입력합니다.
+**알려진 문제** 도구가 실행되면 패키지 또는 배포가 실패했거나 진행 중인 경우 다음과 같은 오류가 반환될 수 있습니다.
+-  *System.InvalidOperationException: <packageID> 패키지가 완전히 설치되지 않으므로 이 콘텐츠 라이브러리가 바로 정리될 수 없습니다.*
+
+**해결 방법:** 없음 콘텐츠가 진행 중이거나 배포에 실패한 경우 도구는 분리된 파일을 안정적으로 식별할 수 없습니다. 따라서 해당 문제가 해결될 때까지 도구를 통해 콘텐츠를 정리할 수 없습니다.
+
 
 
 ### <a name="command-line-switches"></a>명령줄 스위치  
@@ -314,9 +321,4 @@ Azure 관리자 자격 증명이 필요하므로 Azure 관리자를 사용하여
 ## <a name="change-to-configuring-multi-factor-authentication-for-device-enrollment"></a>장치 등록에 대한 다단계 인증 구성 변경
 
 이제 Azure Portal에서 장치 등록에 MFA(다단계 인증)를 설정할 수 있으므로 Configuration Manager 콘솔에서 MFA 옵션이 제거되었습니다. 등록에 MFA를 설정하는 방법에 대한 자세한 내용은 [이 Microsoft Intune 항목](https://docs.microsoft.com/en-us/intune/deploy-use/multi-factor-authentication-azure-active-directory)을 참조하세요.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

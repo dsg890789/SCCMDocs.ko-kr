@@ -2,7 +2,7 @@
 title: "명령줄 설치 | Microsoft 문서"
 description: "명령 프롬프트에서 여러 사이트 설치에 대해 System Center Configuration Manager 설치 프로그램을 실행하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 3/1/2017
+ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 34e24deb90a39bf655a2e24d16cdbe07528e6193
-ms.openlocfilehash: 0fb8ba4bb3d4abe66f71cc83312281cecbb92c41
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: fefa5f3aa12d82b66a251cf0525475496e1e35cf
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="use-a-command-line-to-install-system-center-configuration-manager-sites"></a>명령줄을 사용하여 System Center Configuration Manager 사이트 설치
@@ -33,7 +33,7 @@ ms.lasthandoff: 03/01/2017
 -   **명령 프롬프트에서 중앙 관리 사이트 또는 기본 사이트 설치**  
   [설치용 명령줄 옵션](../../../../core/servers/deploy/install/command-line-options-for-setup.md) 보기
 
- -  **중앙 관리 사이트 또는 기본 사이트에서 사용 중인 언어 수정**  
+-  **중앙 관리 사이트 또는 기본 사이트에서 사용 중인 언어 수정**  
     명령 프롬프트에서 사이트에 설치된 언어(모바일 장치용 언어 포함)를 수정하려면 다음을 수행해야 합니다.  
 
      -   사이트 서버의 **&lt;Configuration Manager 설치 경로\>\BIN\X64**에서 설치 프로그램 실행
@@ -44,7 +44,7 @@ ms.lasthandoff: 03/01/2017
 
     언어 스크립트 파일을 만들려면 [언어 관리용 명령줄 옵션](../../../../core/servers/deploy/install/command-line-options-for-setup.md#bkmk_Lang)의 정보를 참조하세요.  
 
- -  **무인 사이트 설치 또는 사이트 복구를 위해 설치 스크립트 파일 사용**  
+-  **무인 사이트 설치 또는 사이트 복구를 위해 설치 스크립트 파일 사용**  
     설치 스크립트를 사용하여 명령 프롬프트에서 설치 프로그램을 실행할 수 있으며, 무인 사이트 설치를 실행합니다. 이 옵션을 사용하여 사이트를 복구할 수도 있습니다.    
 
     설치 프로그램에서 스크립트를 사용하려면  
@@ -58,7 +58,7 @@ ms.lasthandoff: 03/01/2017
     -   Identification    
     -   Options    
     -   SQLConfigOptions    
-    -   HierarchyOptions    
+      -   HierarchyOptions    
     -   CloudConnectorOptions   
 
     사이트를 복구하려면 스크립트 파일의 다음 섹션도 포함해야 합니다.  
@@ -66,12 +66,11 @@ ms.lasthandoff: 03/01/2017
     -   Identification  
     -   복구
 
-    백업 및 복구에 대한 자세한 내용은 [Configuration Manager의 백업 및 복구](../../../../protect/understand/backup-and-recovery.md) 항목에서 [무인 사이트 복구 스크립트 파일 키](../../../../protect/understand/backup-and-recovery.md#BKMK_UnattendedSiteRecoveryKeys)를 참조하세요.  
+백업 및 복구에 대한 자세한 내용은 [Configuration Manager의 백업 및 복구](../../../../protect/understand/backup-and-recovery.md) 항목에서 [무인 사이트 복구 스크립트 파일 키](../../../../protect/understand/backup-and-recovery.md#BKMK_UnattendedSiteRecoveryKeys)를 참조하세요.  
 
-    무인 설치 스크립트 파일에서 사용할 키와 값 목록은 [무인 설치 스크립트 파일 키](../../../../core/servers/deploy/install/command-line-options-for-setup.md#bkmk_Unattended)를 참조하세요.  
+무인 설치 스크립트 파일에서 사용할 키와 값 목록은 [무인 설치 스크립트 파일 키](../../../../core/servers/deploy/install/command-line-options-for-setup.md#bkmk_Unattended)를 참조하세요.  
 
 ## <a name="about-the-command-line-script-file"></a>명령줄 스크립트 파일 정보  
-
  Configuration Manager의 무인 설치를 수행하려는 경우 명령줄 옵션 **/SCRIPT**를 사용하여 설치 프로그램을 실행하고 설치 옵션이 포함된 스크립트 파일을 지정할 수 있습니다. 이 방법을 사용하여 수행할 수 있는 작업은 다음과 같습니다.  
 
 -   중앙 관리 사이트 설치  
@@ -81,6 +80,18 @@ ms.lasthandoff: 03/01/2017
 
 > [!NOTE]  
 >  무인 스크립트 파일을 사용하여 Configuration Manager의 평가판 사이트를 라이선스 설치로 업그레이드할 수는 없습니다.  
+
+### <a name="the-cdlatest-key-name"></a>CDLatest 키 이름
+CD.Latest 폴더의 미디어를 사용하여 다음 네 가지 설치 옵션의 스크립팅된 설치를 실행할 경우 스크립트에 **CDLatest** 키와 **1** 값을 포함해야 합니다.
+- 새 중앙 관리 사이트 설치
+- 새 기본 사이트 설치
+- 중앙 관리 사이트 복구
+- 기본 사이트 복구 
+
+Microsoft 볼륨 라이선스 사이트에서 얻은 설치 미디어에는 이 값을 사용할 수 없습니다.
+스크립트 파일에서 이 키 이름을 사용하는 방법에 대한 자세한 내용은 [명령줄 옵션](/sccm/core/servers/deploy/install/command-line-options-for-setup)을 참조하세요.
+
+
 
 ### <a name="create-the-script"></a>스크립트 만들기
 [사용자 인터페이스를 통해 설치 프로그램을 실행하여 사이트를 설치](../../../../core/servers/deploy/install/use-the-setup-wizard-to-install-sites.md)하면 설치 스크립트가 자동으로 생성됩니다.  마법사의 **요약** 페이지에서 설정을 확인하면 다음과 같은 작업이 수행됩니다.  

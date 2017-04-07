@@ -2,7 +2,7 @@
 title: "작업 순서를 관리하여 작업 자동화 | Microsoft 문서"
 description: "System Center Configuration Manager 환경에서 작업 순서 만들기 편집, 배포, 가져오기 및 내보내기를 통해 작업 순서를 관리할 수 있습니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: d04d28bbd5116a841c0872cf3f9ca18783dddc78
-ms.openlocfilehash: 417b31fa1feb6d0f674f14ef9e5c7cebd7013916
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 113fa73bf0bd1b3b8a4754eb1e96549c520d7995
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -29,7 +30,7 @@ System Center Configuration Manager 환경에서 작업 순서를 사용하여 �
 
  작업 순서를 관리하려면 다음 섹션을 참조하세요.
 
-##  <a name="a-namebkmkcreatetasksequencea-create-task-sequences"></a><a name="BKMK_CreateTaskSequence"></a> 작업 순서 만들기  
+##  <a name="BKMK_CreateTaskSequence"></a> 작업 순서 만들기  
  작업 순서 만들기 마법사를 사용하여 작업 순서를 만듭니다. 이 마법사는 다음 유형의 작업 순서를 만들 수 있습니다.  
 
 |작업 순서 유형|추가 정보|  
@@ -41,7 +42,13 @@ System Center Configuration Manager 환경에서 작업 순서를 사용하여 �
 |[가상 하드 디스크를 관리하는 작업 순서](use-a-task-sequence-to-manage-virtual-hard-disks.md)|이 작업 순서 유형에는 Configuration Manager 콘솔에서 System Center VMM(Virtual Machine Manager)에 게시할 수 있는 운영 체제 및 응용 프로그램을 설치하기 위해 포함되는 VHD 생성 단계가 포함됩니다.|  
 |[사용자 지정 작업 순서](create-a-custom-task-sequence.md)|이 작업 순서 유형은 작업 순서에 단계를 추가하지 않습니다. 작업 순서를 만든 후에 작업 순서를 편집하고 작업 순서에 단계를 추가해야 합니다.|  
 
-##  <a name="a-namebkmkmodifytasksequencea-edit-a-task-sequence"></a><a name="BKMK_ModifyTaskSequence"></a> 작업 순서 편집  
+## <a name="return-to-previous-page-when-a-task-sequence-fails"></a>작업 순서가 실패할 경우 이전 페이지로 돌아가기
+Configuration Manager 버전 1702부터 작업 순서를 실행하고 오류가 발생할 때 이전 페이지로 돌아갈 수 있습니다. 이 릴리스 이전에는 오류가 발생할 경우 작업 순서를 다시 시작해야 했습니다. 예를 들어 다음 시나리오에서 **이전** 단추를 사용할 수 있습니다.
+
+- Windows PE에서 컴퓨터를 시작할 경우 작업 순서가 제공되기 전에 작업 순서 부트스트랩 대화 상자가 표시될 수 있습니다. 이 시나리오에서 다음을 클릭하면 사용 가능한 작업 순서가 없다는 메시지와 함께 작업 순서의 최종 페이지가 표시됩니다. 이제 **이전**을 클릭하여 사용 가능한 작업 순서를 다시 검색할 수 있습니다. 작업 순서를 사용할 수 있을 때까지 이 프로세스를 반복할 수 있습니다.
+- 작업 순서를 실행하지만 배포 지점에서 종속 콘텐츠 패키지를 아직 사용할 수 없는 경우 작업 순서가 실패합니다. 이제 누락된 콘텐츠를 배포하거나(아직 배포되지 않은 경우) 배포 지점에서 콘텐츠를 사용할 수 있을 때까지 기다린 다음 **이전**을 클릭하여 작업 순서에서 콘텐츠를 다시 검색하도록 할 수 있습니다.
+
+##  <a name="BKMK_ModifyTaskSequence"></a> 작업 순서 편집  
  작업 순서 단계를 추가 또는 제거하거나, 작업 순서 그룹을 추가 또는 제거하거나, 단계의 순서를 변경하여 작업 순서를 수정할 수 있습니다. 기존 작업 순서를 수정하려면 다음 절차를 수행하세요.  
 
 > [!IMPORTANT]  
@@ -71,7 +78,53 @@ System Center Configuration Manager 환경에서 작업 순서를 사용하여 �
 
  사용 가능한 작업 순서 단계 목록을 보려면 [작업 순서 단계](../understand/task-sequence-steps.md)를 참조하세요.  
 
-##  <a name="a-namebkmkdistributetsa-distribute-content-referenced-by-a-task-sequence"></a><a name="BKMK_DistributeTS"></a> 작업 순서에서 참조되는 콘텐츠 배포  
+## <a name="configure-high-impact-task-sequence-settings"></a>강력한 작업 순서 설정 구성
+Configuration Manager 버전 1702부터 강력한 작업 순서를 설정하고 사용자가 작업 순서를 실행할 때 표시되는 메시지를 사용자 지정할 수 있습니다.
+
+### <a name="set-a-task-sequence-as-a-high-impact-task-sequence"></a>작업 순서를 강력한 작업 순서로 설정
+작업 순서를 강력한 작업 순서로 설정하려면 다음 절차를 따르세요.
+> [!NOTE]
+> 특정 조건을 충족하는 작업 순서는 자동으로 모두 강력한 작업 순서로 정의됩니다. 자세한 내용은 [위험 수준이 높은 배포 관리](http://docs.microsoft.com/sccm/protect/understand/settings-to-manage-high-risk-deployments)를 참조하세요.
+
+1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **운영 체제** > **작업 순서**로 이동합니다.
+2. 편집할 작업 순서를 선택하고 **속성**을 클릭합니다.
+3. **사용자 알림** 탭에서 **강력한 작업 순서임**을 선택합니다.
+
+### <a name="create-a-custom-notification-for-high-risk-deployments"></a>위험 수준이 높은 배포에 대한 사용자 지정 알림 만들기
+다음 절차에 따라 강력한 배포에 대한 사용자 지정 알림을 만듭니다.
+1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **운영 체제** > **작업 순서**로 이동합니다.
+2. 편집할 작업 순서를 선택하고 **속성**을 클릭합니다.
+3. **사용자 알림** 탭에서 **사용자 지정 텍스트 사용**을 선택합니다.
+>  [!NOTE]
+>  **강력한 작업 순서임**이 선택된 경우에만 사용자 알림 텍스트를 설정할 수 있습니다.
+
+4. 다음 설정을 구성합니다(각 텍스트 상자에 최대 255자까지 입력).
+
+  **사용자 알림 헤드라인 텍스트**: 소프트웨어 센터 사용자 알림에 표시되는 파란색 텍스트를 지정합니다. 예를 들어 기본 사용자 알림에서 이 섹션에는 "이 컴퓨터의 운영 체제를 업그레이드할 것인지 확인하세요."와 같은 내용이 포함됩니다.
+
+  **사용자 알림 메시지 텍스트**: 사용자 지정 알림의 본문을 제공하는 텍스트 상자 세 개가 있습니다. 모든 텍스트 상자에는 텍스트를 추가해야 합니다.
+  - 첫 번째 텍스트 상자: 일반적으로 사용자에 대한 지침이 포함된 텍스트의 본문을 지정합니다. 예를 들어 기본 사용자 알림에서 이 섹션에는 "운영 체제를 업그레이드하는 데 시간이 걸리며 컴퓨터가 여러 번 다시 시작될 수 있습니다."와 같은 내용이 포함됩니다.
+  - 두 번째 텍스트 상자: 텍스트의 기본 본문 아래에 표시되는 굵은 텍스트를 지정합니다. 예를 들어 기본 사용자 알림에서 이 섹션에는 "이 현재 위치 업그레이드에서는 새 운영 체제를 설치하고 앱, 데이터 및 설정을 자동으로 마이그레이션합니다."와 같은 내용이 포함됩니다.
+  - 세 번째 텍스트 상자: 굵은 텍스트 아래에 표시되는 텍스트의 마지막 줄을 지정합니다. 예를 들어 기본 사용자 알림에서 이 섹션에는 "시작하려면 [설치]를 클릭하고 그렇지 않으면 [취소]를 클릭하세요."와 같은 내용이 포함됩니다.   
+
+  속성에서 다음과 같은 사용자 지정 알림을 구성한다고 가정해 봅니다.
+
+    ![작업 순서에 대한 사용자 지정 알림](..\media\user-notification.png)
+
+    최종 사용자가 소프트웨어 센터에서 설치를 열면 다음과 같은 알림 메시지가 표시됩니다.
+
+    ![작업 순서에 대한 사용자 지정 알림](..\media\user-notification-enduser.png)
+
+### <a name="configure-software-center-properties"></a>소프트웨어 센터 속성 구성
+소프트웨어 센터에 표시된 작업 순서에 대한 세부 정보를 구성하려면 다음 절차를 따르세요. 이러한 세부 정보는 정보 제공용입니다.  
+1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **운영 체제** > **작업 순서**로 이동합니다.
+2. 편집할 작업 순서를 선택하고 **속성**을 클릭합니다.
+3. **일반** 탭에서 소프트웨어 센터에 대한 다음 설정을 사용할 수 있습니다.
+  - **다시 시작 필요**: 설치하는 동안 다시 시작해야 하는지 여부를 사용자에게 알립니다.
+  - **다운로드 크기(MB)**: 작업 순서에 대해 소프트웨어 센터에 표시되는 메가바이트 수를 지정합니다.  
+  - **예상 실행 시간(분)**: 작업 순서에 대해 소프트웨어 센터에 표시되는 예상 실행 시간(분)을 지정합니다.
+
+##  <a name="BKMK_DistributeTS"></a> 작업 순서에서 참조되는 콘텐츠 배포  
  클라이언트가 콘텐츠를 참조하는 작업 순서를 실행하기 전에 해당 콘텐츠를 배포 지점에 배포해야 합니다. 언제든지 작업 순서를 선택하고 해당 콘텐츠를 배포하여 배포를 위한 새 참조 패키지 목록을 만들 수 있습니다. 작업 순서를 업데이트된 콘텐츠로 변경한 경우 먼저 해당 콘텐츠를 클라이언트에서 사용할 수 있도록 재배포해야 합니다. 작업 순서에서 참조하는 콘텐츠를 배포하려면 다음 절차를 수행하세요.  
 
 #### <a name="to-distribute-referenced-content-to-distribution-points"></a>참조되는 콘텐츠를 배포 지점에 배포하려면  
@@ -97,7 +150,7 @@ System Center Configuration Manager 환경에서 작업 순서를 사용하여 �
 
  작업 순서에서 참조되는 콘텐츠를 사전 준비할 수 있습니다. Configuration Manager에서는 선택한 콘텐츠의 파일, 관련 종속성 및 관련 메타데이터가 포함된 사전 준비된 압축 콘텐츠 파일을 만듭니다. 그런 다음 사이트 서버, 보조 사이트 또는 배포 지점에서 콘텐츠를 수동으로 가져올 수 있습니다. 콘텐츠 파일을 사전 준비하는 방법에 대한 자세한 내용은 [콘텐츠 사전 준비](../../core/servers/deploy/configure/deploy-and-manage-content.md#a-namebkmkprestagea-use-prestaged-content)를 참조하세요.  
 
-##  <a name="a-namebkmkdeploytsa-deploy-a-task-sequence"></a><a name="BKMK_DeployTS"></a> 작업 순서 배포  
+##  <a name="BKMK_DeployTS"></a> 작업 순서 배포  
  컬렉션의 컴퓨터에 작업 순서를 배포하려면 다음 절차를 수행하세요.  
 
 > [!WARNING]  
@@ -230,7 +283,7 @@ System Center Configuration Manager 환경에서 작업 순서를 사용하여 �
 
 11. 마법사를 완료합니다.  
 
-##  <a name="a-namebkmkexportimporta-export-and-import-task-sequences"></a><a name="BKMK_ExportImport"></a> 작업 순서 내보내기 및 가져오기  
+##  <a name="BKMK_ExportImport"></a> 작업 순서 내보내기 및 가져오기  
  작업 순서는 운영 체제 이미지, 부팅 이미지, 클라이언트 에이전트 패키지, 드라이버 패키지 및 종속성이 있는 응용 프로그램 등과 같은 관련 개체의 포함 여부에 상관없이 내보내고 가져올 수 있습니다.  
 
  작업 순서를 내보내고 가져올 때 다음 사항을 고려하세요.  
@@ -297,7 +350,7 @@ System Center Configuration Manager 환경에서 작업 순서를 사용하여 �
 
  작업 순서를 가져온 후 작업 순서를 편집하여 원래 작업 순서에 있던 암호를 지정할 수 있습니다. 보안상의 이유로 암호는 내보내지지 않습니다.  
 
-##  <a name="a-namebkmkcreatetsvariablesa-create-task-sequence-variables-for-computers-and-collections"></a><a name="BKMK_CreateTSVariables"></a> 컴퓨터 및 컬렉션에 대한 작업 순서 변수 만들기  
+##  <a name="BKMK_CreateTSVariables"></a> 컴퓨터 및 컬렉션에 대한 작업 순서 변수 만들기  
  컴퓨터 및 컬렉션에 대해 사용자 지정 작업 순서 변수를 정의할 수 있습니다. 컴퓨터에 정의된 변수는 컴퓨터별 작업 순서 변수라고도 하고, 컬렉션에 정의된 변수는 컬렉션별 작업 순서 변수라고도 합니다. 충돌이 발생하는 경우 컴퓨터별 변수가 컬렉션별 변수보다 우선 적용됩니다. 즉, 특정 컴퓨터에 할당된 작업 순서 변수가 자동으로 컴퓨터가 속한 컬렉션에 할당된 변수보다 높은 우선 순위를 보유합니다.  
 
  예를 들어 컬렉션 ABC에 할당된 변수가 있고, 컬렉션 ABC의 구성원인 컴퓨터 XYZ에 동일한 이름의 변수가 할당된 경우 컴퓨터 XYZ에 할당된 변수가 컬렉션 ABC에 할당된 변수보다 높은 우선 순위를 보유합니다.  
@@ -342,7 +395,7 @@ System Center Configuration Manager 환경에서 작업 순서를 사용하여 �
 
 6.  컬렉션에 모든 변수를 추가한 후 **확인**을 클릭합니다.  
 
-##  <a name="a-namebkmkadditionalactionstsa-additional-actions-to-manage-task-sequences"></a><a name="BKMK_AdditionalActionsTS"></a> 작업 순서를 관리하기 위한 추가 작업  
+##  <a name="BKMK_AdditionalActionsTS"></a> 작업 순서를 관리하기 위한 추가 작업  
  다음 절차에 따라 작업 순서를 선택할 때 추가 작업을 사용하여 작업 순서를 관리할 수 있습니다.  
 
 #### <a name="to-select-a-task-sequence-to-manage"></a>관리할 작업 순서를 선택하려면  
@@ -366,9 +419,4 @@ System Center Configuration Manager 환경에서 작업 순서를 사용하여 �
 
 ## <a name="next-steps"></a>다음 단계
 [엔터프라이즈 운영 체제를 배포하는 시나리오](scenarios-to-deploy-enterprise-operating-systems.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

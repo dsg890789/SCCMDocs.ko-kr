@@ -2,7 +2,7 @@
 title: "IMEI 또는 iOS 일련 번호로 장치 미리 선언 | Microsoft 문서"
 description: "IMEI 또는 iOS 일련 번호로 회사 소유 장치 미리 선언"
 ms.custom: na
-ms.date: 03/05/2017
+ms.date: 03/24/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -12,13 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ddb4c68e-e7f7-475a-89e2-7379a86e44c4
 caps.latest.revision: 3
-author: mtillman
-ms.author: mtillman
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0fd410a6572acce685dc6cdb954c1c2d97d5ed8b
-ms.openlocfilehash: 2aa9c8c65904e573b6a81ac865e09d1cf2458509
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: 7573590763c68a4c97d388be1e64054c318da9cc
+ms.openlocfilehash: 4fe6741481c79ed4e4496846152902d6d8ca1f96
+ms.lasthandoff: 03/24/2017
 
 ---
 # <a name="predeclare-devices-with-imei-or-ios-serial-numbers"></a>IMEI 또는 iOS 일련 번호로 장치 미리 선언
@@ -26,6 +26,8 @@ ms.lasthandoff: 12/16/2016
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 해당 IMEI(International station Mobile Equipment Identity) 번호 또는 iOS 일련 번호를 가져와서 회사 소유의 장치를 식별할 수 있습니다. 장치 IMEI 번호를 포함한 쉼표로 구분된 값(.csv) 파일을 업로드하거나 장치 정보를 수동으로 입력할 수 있습니다.  가져온 정보에 따라 장치 목록에 **회사**로 등록된 장치의 **소유권**이 설정됩니다. 서비스에 액세스하는 각 사용자는 Intune 라이선스가 여전히 필요합니다.  
+
+회사 소유 iOS 장치의 일련 번호를 업로드하면 일련 번호는 회사 등록 프로필과 페어링됩니다. 그 다음에 장치를 회사 소유로 표시하려면 Apple의 DEP(장비 등록 프로그램) 또는 Apple Configurator를 사용하여 장치를 등록해야 합니다. 
 
 ## <a name="how-to-predeclare-corporate-owned-devices"></a>회사 소유 장치를 미리 선언하는 방법
 

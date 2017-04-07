@@ -17,9 +17,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
-ms.openlocfilehash: 3c3725678561c32fce316ed1209ac8fe73a0eed1
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 832be8c9fda727804f57e83768cd8799db722c67
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -37,7 +37,7 @@ ms.lasthandoff: 12/16/2016
 
 -   System Center Configuration Manager 콘솔을 실행하는 계정의 읽기 권한  
 
- 이 보안 권한에 대한 자세한 내용은 [1단계: 네트워크 장치 등록 서비스 및 종속 항목 설치 및 구성](../deploy-use/certificate-infrastructure.md#step-1-install-and-configure-the-network-device-enrollment-service-and-dependencies)을 참조하세요.  
+ 이러한 보안 권한에 대한 자세한 내용은 [인증서 인프라 구성](../deploy-use/certificate-infrastructure.md)을 참조하세요.  
 
  이 기본 구성을 사용하면 사용자 및 장치가 인증서 템플릿에서 직접 인증서를 요청할 수 없고 모든 요청을 네트워크 장치 등록 서비스에서 시작해야 합니다. 이러한 인증서 템플릿은 인증서 주체에 대해 **요청에서 제공** 으로 구성해야 하기 때문에 이 사항은 중요한 제한입니다. 즉, Rogue 사용자 또는 손상된 장치가 인증서를 요청할 경우 가장의 위험이 있습니다. 기본 구성에서 네트워크 장치 등록 서비스가 이러한 요청을 시작해야 합니다. 그러나 네트워크 장치 등록 서비스를 실행하는 서비스가 손상된 경우 가장의 위험이 남아 있습니다. 이러한 위험을 방지하려면 네트워크 장치 등록 서비스 및 이 역할 서비스를 실행하는 컴퓨터와 관련된 모든 보안 모범 사례를 따르십시오.  
 

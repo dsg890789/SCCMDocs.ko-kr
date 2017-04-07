@@ -17,9 +17,9 @@ ms.author: brenduns
 manager: angrobe
 robots: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
-ms.openlocfilehash: fecbdfa9ad99ca36f419cdda19a14b58f9f2b316
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 0286416807656fcf623260c7e95a703e39f6a275
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="support-for-system-center-configuration-manager-current-branch-versions"></a>System Center Configuration Manager 현재 분기 버전에 대한 지원
@@ -42,10 +42,14 @@ Microsoft는 GA(일반 공급) 릴리스 날짜로부터 12개월 동안 지원�
 
 |버전|가용일|지원 종료 날짜|  
 |-------------|-----------------------|----------------------|  
-|1511|12/8/2015|12/8/2016|  
-|1602|3/11/2016|3/11/2017|
-|1606|7/22/2016|7/22/2017|
+|1702|3/27/2017|3/27/2018|
 |1610|2016/11/18|11/18/2017|
+|1606|7/22/2016|7/22/2017|
+|1602|3/11/2016|3/11/2017|
+|1511|12/8/2015|12/8/2016|  
+
+
+
 
 버전 번호와 콘솔 내 업데이트 또는 기준으로 사용 가능성에 대한 자세한 내용은 [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)을 참조하세요.
 

@@ -2,7 +2,7 @@
 title: "진단 및 사용 현황 데이터 | Microsoft 문서"
 description: "System Center Configuration Manager가 수집하는 자체 진단 및 사용 현황 데이터에 대해 알아봅니다."
 ms.custom: na
-ms.date: 12/29/2016
+ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 24a233516058e645df2a43623855665b97b041b0
-ms.openlocfilehash: 54ec4886eaad6999cdf3ffff7411942859f1a5b2
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 4a4b7c9c0d40b6bd3ea2f318e37d744f1a0cc084
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -40,10 +41,14 @@ System Center Configuration Manager에서는 진단 및 사용 현황 데이터�
 -   [System Center Configuration Manager의 진단 및 사용 현황 데이터를 사용하는 방법](../../../core/plan-design/diagnostics/how-diagnostics-and-usage-data-is-used.md)  
 
 -   진단 사용 현황 데이터 수집의 수준:
-    - [1511에 대한 진단 데이터](/sccm/core/plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1511)
-    - [1602에 대한 진단 데이터](/sccm/core/plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1602)
-    - [1606에 대한 진단 데이터](/sccm/core/plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1606)  
+    - [1702에 대한 진단 데이터](/sccm/core/plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1702)      
     - [1610에 대한 진단 데이터](/sccm/core/plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1610)  
+    - [1606에 대한 진단 데이터](/sccm/core/plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1606)    
+
+<!--
+    - [Diagnostic data for 1602](/sccm/core/plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1602)
+    - [Diagnostic data for  1511](/sccm/core/plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1511)
+-->
 
 -   [System Center Configuration Manager에서 진단 및 사용 현황 데이터를 수집하는 방법](../../../core/plan-design/diagnostics/how-diagnostics-and-usage-data-is-collected.md)  
 
@@ -55,9 +60,4 @@ System Center Configuration Manager에서는 진단 및 사용 현황 데이터�
 
 ## <a name="see-also"></a>참고 항목  
  [System Center Configuration Manager의 서비스 연결 지점 정보](../../../core/servers/deploy/configure/about-the-service-connection-point.md)
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

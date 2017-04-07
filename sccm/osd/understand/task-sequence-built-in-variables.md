@@ -2,7 +2,7 @@
 title: "작업 순서 기본 제공 변수 | Microsoft 문서"
 description: "작업 순서 기본 제공 변수는 작업 순서가 실행되고 전체 작업 순서 동안 사용할 수 있는 환경에 대한 정보를 제공합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/26/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,9 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: c9fb0fa46058c773eec6ac23999357d35d9f970f
-ms.openlocfilehash: a75adebfe2bbec8f6fe5206561530a720c0bfbf1
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: a3e6cca8d58055cc2d54aff3cb70a276fb40e829
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -52,7 +52,7 @@ ms.lasthandoff: 12/16/2016
 |_SMSTSMachineName|컴퓨터 이름을 저장하고 지정합니다. 작업 순서에서 모든 상태 메시지를 기록하는데 사용할 컴퓨터의 이름을 저장합니다. 새 운영 체제에서 컴퓨터 이름을 변경하려면 **OSDComputerName** 변수를 사용합니다.<br /><br /> 예:<br /><br /> **ABC**|  
 |_SMSTSMDataPath|SMSTSLocalDataDrive 변수에 의해 정의된 경로를 지정합니다. 작업 순서가 시작되기 전에 컬렉션 변수를 설정하는 등의 방법으로 SMSTSLocalDataDrive를 정의한 경우 Configuration Manager에서 작업 순서가 시작된 후 _SMSTSMDataPath 변수를 정의합니다.|  
 |_SMSTSMediaType|설치를 초기화하는 데 사용되는 미디어 유형을 지정합니다. 미디어 유형의 예에는 부팅 미디어, 완전한 미디어, PXE, 사전 준비된 미디어 등이 있습니다.|  
-|_SMSTSMP|Configuration Manager 관리 지점의 이름 또는 IP 주소를 저장합니다.|  
+|_SMSTSMP|Configuration Manager 관리 지점의 URL 또는 IP 주소를 저장합니다.|  
 |_SMSTSMPPort|Configuration Manager 관리 지점의 관리 지점 포트 번호를 저장합니다.<br /><br /> 예제:<br /><br /> **80**|  
 |_SMSTSOrgName|작업 순서 진행률 사용자 인터페이스 대화 상자에 표시된 브랜딩 제목 이름을 저장합니다.<br /><br /> 예:<br /><br /> **XYZ 조직**|  
 |_SMSTSOSUpgradeActionReturnCode|설정에서 반환된 종료 코드 값을 저장하여 성공 또는 실패를 표시합니다.  이 변수는 작업 순서 단계 운영 체제 업그레이드 작업 순서 단계 중에 설정됩니다. 이 변수는 /Compat Windows 10 설치 프로그램 명령줄 옵션과 함께 사용하면 좋습니다.<br /><br /> 예:<br /><br /> /Compat가 완료되면 실패 또는 성공 종료 코드에 따라 이후 단계에서 조치를 취할 수 있습니다. 성공하면 업그레이드를 시작할 수 있습니다. 또는 업그레이드가 준비되었거나 업그레이드되기 전 조치가 필요한 컴퓨터 컬렉션을 만드는 데 사용할 수 있는 환경에 표식을 설정(예: 파일 추가 또는 레지스트리 키 설정)할 수 있습니다.|  
@@ -80,6 +80,7 @@ ms.lasthandoff: 12/16/2016
 |TSErrorOnWarning|이 변수를 사용하여 작업 순서 엔진에서 응용 프로그램 설치 작업 순서 단계 중에 검색된 경고를 오류로 간주하는지 여부를 지정합니다. 요구 사항이 충족되지 않아 하나 이상의 응용 프로그램 또는 필수 종속성이 설치되지 않은 경우에는 작업 순서에서 _TSAppInstallStatus 변수를 **Warning** 으로 설정합니다. TSErrorOnWarning 변수를 **True** 로 설정하면 _TSAppInstallStatus 변수가 Warning으로 설정되고 오류로 처리됩니다. **False** 값이 기본 동작입니다.|  
 |SMSTSLanguageFolder|이 변수를 사용하여 언어 중립 부팅 이미지의 언어 표시를 변경할 수 있습니다.|  
 |SMSTSLocalDataDrive|작업 순서가 실행되는 동안 임시 파일이 대상 컴퓨터에 저장되는 위치를 지정합니다.<br /><br /> 작업 순서를 시작하기 전에 컬렉션 변수를 설정하는 등의 방법으로 이 변수를 설정해야 합니다. 작업 순서가 시작되면 Configuration Manager에서 _SMSTSMDataPath 변수를 정의합니다.|  
+|SMSTSMP|이 변수를 사용하여 Configuration Manager 관리 지점의 URL 또는 IP 주소를 지정합니다.|  
 |SMSTSMPListRequestTimeout|이 변수를 사용하여, 위치 서비스에서 관리 지점 목록을 검색하지 못한 후 응용 프로그램 또는 소프트웨어 업데이트 설치를 다시 시도하기 전까지 작업 순서가 대기하는 시간(밀리초)을 지정합니다. 기본적으로 작업 순서는 60,000밀리초(60초)를 대기한 후 단계를 다시 시도하며, 최대 다시 시도 횟수는 3회입니다. 이 변수는 응용 프로그램 설치 및 소프트웨어 업데이트 설치 작업 순서 단계에만 적용됩니다.|  
 |SMSTSMPListRequestTimeoutEnabled|클라이언트가 인트라넷에 없는 경우 이 변수를 사용하여 반복된 MPList 요청으로 클라이언트를 새로 고치도록 설정할 수 있습니다. <br />기본적으로 이 변수는 True로 설정됩니다. 클라이언트가 인터넷에 있는 경우에는 불필요한 지연이 발생하지 않도록 이 변수를 False로 설정할 수 있습니다. 이 변수는 응용 프로그램 설치 및 소프트웨어 업데이트 설치 작업 순서 단계에만 적용됩니다.|  
 |SMSTSPeerDownload|이 변수를 사용하여 클라이언트가 Windows PE 피어 캐시를 사용할 수 있도록 합니다.<br /><br /> 예:<br /><br /> SMSTSPeerDownload  = **TRUE** 로 설정하면 이 기능을 사용할 수 있습니다.|  

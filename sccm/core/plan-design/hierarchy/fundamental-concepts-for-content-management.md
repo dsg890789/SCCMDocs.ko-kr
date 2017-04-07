@@ -17,9 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 766120f5ca79f279a513b62c35a2374c859b253a
-ms.openlocfilehash: 079be3c97e4239f8c5293bed5a2ce13abfbe7798
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 238e460885b6490b3744690640f9ff040902b35f
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -60,7 +60,7 @@ System Center Configuration Manager에서는 응용 프로그램, 패키지, 소
 
 -   원본 콘텐츠의 파일이 변경된 경우 Configuration Manager는 새 증분 버전의 콘텐츠 집합을 만들고 변경된 파일만 대상 사이트와 배포 지점에 복제합니다. 파일의 이름이 변경되었거나 파일이 이동된 경우 또는 파일 내용이 변경된 경우 파일이 변경되었다고 간주됩니다. 예를 들어 이전에 여러 사이트에 배포한 운영 체제 배포 패키지에서 단일 드라이버 파일이 바뀐 경우 변경된 드라이버 파일만 해당 대상 사이트에 복제됩니다.  
 
--   Configuration Manager는 전체 콘텐츠 집합을 다시 보내기 전에 콘텐츠 집합의 증분 버전을&5;개까지 지원합니다. 5번째 업데이트 이후 콘텐츠 집합에 대해 다음 변경을 수행하면 Configuration Manager에서 새 콘텐츠 집합 버전을 만듭니다. Configuration Manager에서는 새 콘텐츠 집합 버전을 배포하여 이전 집합과 모든 증분 버전을 바꿉니다. 새 콘텐츠 집합이 배포된 후에 원본 파일의 후속 증분 변경 내용은 이진 차등 복제를 통해 다시 복제됩니다.  
+-   Configuration Manager는 전체 콘텐츠 집합을 다시 보내기 전에 콘텐츠 집합의 증분 버전을 5개까지 지원합니다. 5번째 업데이트 이후 콘텐츠 집합에 대해 다음 변경을 수행하면 Configuration Manager에서 새 콘텐츠 집합 버전을 만듭니다. Configuration Manager에서는 새 콘텐츠 집합 버전을 배포하여 이전 집합과 모든 증분 버전을 바꿉니다. 새 콘텐츠 집합이 배포된 후에 원본 파일의 후속 증분 변경 내용은 이진 차등 복제를 통해 다시 복제됩니다.  
 
 
 BDR은 계층 내 각 부모 및 자식 사이트 간에 지원됩니다. 사이트 내에서는 사이트 서버와 해당 일반 배포 지점 간에 BDR이 지원됩니다. 단, 풀(pull) 배포 지점 및 클라우드 기반 배포 지점은 콘텐츠를 전송하는 데 이진 차등 복제를 지원하지 않습니다. 풀(pull) 배포 지점은 새 파일을 전송하는 파일 수준 델타를 지원하지만 파일 내 블록은 지원하지 않습니다.
@@ -116,7 +116,8 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
 ## <a name="content-library"></a>콘텐츠 라이브러리  
  콘텐츠 라이브러리는 배포하는 콘텐츠의 결합된 본문 전체 크기를 줄이기 위해 Configuration Manager에서 사용하는 콘텐츠의 단일 인스턴스 저장소입니다.  
 
-[콘텐츠 라이브러리](../../../core/plan-design/hierarchy/the-content-library.md)에 대해 자세히 알아봅니다.
+- [콘텐츠 라이브러리](../../../core/plan-design/hierarchy/the-content-library.md)에 대해 자세히 알아봅니다.
+- [콘텐츠 라이브러리 정리 도구](/sccm/core/plan-design/hierarchy/content-library-cleanup-tool)를 사용하여 더 이상 응용 프로그램과 연결되지 않는 콘텐츠를 제거합니다.  
 
 
 ## <a name="distribution-points"></a>배포 지점  

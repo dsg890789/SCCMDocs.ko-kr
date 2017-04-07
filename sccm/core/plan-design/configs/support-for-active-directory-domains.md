@@ -2,7 +2,7 @@
 title: "지원되는 Active Directory 도메인 | Microsoft 문서"
 description: "Active Directory 도메인에서 System Center Configuration Manager 사이트 시스템의 멤버 자격에 대한 요구 사항을 가져옵니다."
 ms.custom: na
-ms.date: 1/3/2017
+ms.date: 3/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: a3da133205506ba0463dd3207da5ceb5a5d1ab49
-ms.openlocfilehash: ea527a7767b33eaf495e78522364d8a7a47712ca
+ms.sourcegitcommit: 3f397efe458fd85124d2a83d4a869642015fd4a5
+ms.openlocfilehash: 2654ab4eaaaf6a4bf3bd7dca9908e7033647dc2c
+ms.lasthandoff: 03/23/2017
 
 
 ---
@@ -43,16 +44,23 @@ ms.openlocfilehash: ea527a7767b33eaf495e78522364d8a7a47712ca
 이러한 항목을 변경하기 전에 사이트 시스템 역할을 제거해야 하며 사이트 서버의 경우 사이트도 제거해야 합니다.  
 
 **다음 도메인 기능 수준의 도메인이 지원됩니다.**  
+- Windows Server 2016
 
--   Windows Server 2008  
+- Windows Server 2012 R2  
 
--   Windows Server 2008 R2  
+- Windows Server 2012
 
--   Windows Server 2012  
+- Windows Server 2008 R2
 
--   Windows Server 2012 R2  
+- Windows Server 2008  
 
-##  <a name="a-namebkmkdisjointa-disjoint-namespace"></a><a name="bkmk_Disjoint"></a> 비연속 네임스페이스  
+
+
+
+
+
+
+##  <a name="bkmk_Disjoint"></a> 비연속 네임스페이스  
 Configuration Manager에서는 비연속 네임스페이스를 포함하는 도메인에 사이트 시스템과 클라이언트를 설치할 수 있습니다.  
 
 비연속 네임스페이스 시나리오는 컴퓨터의 주 DNS(Domain Name System) 접미사가 해당 컴퓨터가 있는 Active Directory DNS 도메인 이름과 일치하지 않는 시나리오 중 하나입니다. 이와 같이 일치하지 않는 주 DNS 접미사를 사용하는 컴퓨터를 비연속 컴퓨터라고 합니다. 비연속 네임스페이스의 또 다른 시나리오로는 도메인 컨트롤러의 NetBIOS 도메인 이름이 Active Directory DNS 도메인 이름과 일치하지 않는 경우를 들 수 있습니다.  
@@ -71,7 +79,7 @@ Configuration Manager에서는 비연속 네임스페이스를 포함하는 도�
 > [!IMPORTANT]  
 >  Configuration Manager에서 컴퓨터를 참조하는 경우 해당 주 DNS 접미사를 사용하여 컴퓨터를 입력합니다. 이 접미사는 Active Directory 도메인에 **dnsHostName** 특성으로 등록되어 있는 정규화된 도메인 이름 및 시스템과 연결된 서비스 사용자 이름과 일치해야 합니다.  
 
-##  <a name="a-namebkmkslda-single-label-domains"></a><a name="bkmk_SLD"></a> 단일 레이블 도메인  
+##  <a name="bkmk_SLD"></a> 단일 레이블 도메인  
  Configuration Manager에서는 다음 기준이 충족될 경우 단일 레이블 도메인의 사이트 시스템 및 클라이언트를 지원합니다.  
 
 -   유효한 최상위 도메인이 있는 비연속 DNS 네임스페이스를 사용하여 Active Directory Domain Services의 단일 레이블 도메인을 구성해야 합니다.  
@@ -79,10 +87,4 @@ Configuration Manager에서는 비연속 네임스페이스를 포함하는 도�
      **예제:** Contoso의 단일 레이블 도메인이 DNS contoso.com에서 비연속 네임스페이스를 포함하도록 구성되어 있습니다. 따라서 Contoso 도메인의 컴퓨터에 대해 Configuration Manager에서 DNS 접미사를 지정할 때는 “Contoso”가 아닌 “Contoso.com”을 지정합니다.  
 
 -   Kerberos 인증을 사용하여 사이트 서버와 시스템 컨텍스트 간의 DCOM(Distributed Component Object Model) 연결을 설정할 수 있어야 합니다.  
-  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

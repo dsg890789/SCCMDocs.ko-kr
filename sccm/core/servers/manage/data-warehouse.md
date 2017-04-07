@@ -2,7 +2,7 @@
 title: "데이터 웨어하우스 | Microsoft Docs"
 description: "System Center Configuration Manager에 대한 데이터 웨어하우스 서비스 지점 및 데이터베이스"
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 3/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
-ms.openlocfilehash: 176d1116c910306f70d9acf934ad90340bcc4fcd
-ms.lasthandoff: 03/04/2017
+ms.sourcegitcommit: 3c2a07f560e0aa3d2beb7cc50e71c98ac45c27e1
+ms.openlocfilehash: 9239f6e749c368835e8594ca2d07378d8555b99e
+ms.lasthandoff: 03/28/2017
 
 
 ---
@@ -54,6 +54,13 @@ ms.lasthandoff: 03/04/2017
   - SQL Server AlwaysOn 가용성 그룹: 이 구성은 지원되지 않습니다.
   - SQL Server 클러스터: SQL Server 장애 조치 클러스터는 지원되지 않습니다. SQL Server 장애 조치 클러스터에서는 데이터 웨어하우스 데이터베이스가 철저히 테스트되지 않았기 때문입니다.
   - 데이터 웨어하우스 데이터베이스가 사이트 서버 데이터베이스에서 원격인 경우 데이터베이스를 호스트하는 SQL Server에 대한 별도의 라이선스가 있어야 합니다.
+
+> [!IMPORTANT]  
+> 데이터 웨어하우스 서비스 지점을 실행하거나 데이터 웨어하우스 데이터베이스를 호스트하는 컴퓨터에서 다음 언어 중 하나를 실행할 경우 데이터 웨어하우스가 지원되지 않습니다.
+> - JPN – 일본어
+> - KOR – 한국어
+> - CHS – 중국어(간체)
+> - CHT – 중국어(번체) 이 문제는 향후 릴리스에서 해결될 예정입니다.
 
 
 ## <a name="install-the-data-warehouse"></a>데이터 웨어하우스 설치

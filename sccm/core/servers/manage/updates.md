@@ -2,7 +2,7 @@
 title: "업데이트 | Microsoft 문서"
 description: "**업데이트 및 서비스**라는 콘솔 내 서비스 메서드에 대해 알아봅니다. 이 방법을 사용하면 권장 업데이트를 간편하게 찾아서 설치할 수 있습니다."
 ms.custom: na
-ms.date: 1/11/2017
+ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 816c6bd33e42b70bbafed0dea7624bc5a5421544
-ms.openlocfilehash: 55d4f1805937405c4101f5b814875818d2aa72c0
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: bd72d17e463cb65e79b78613b631b0267b2b26a0
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -46,8 +47,8 @@ System Center Configuration Manager는 Configuration Manager 인프라에 대한
 Technical Preview 분기를 사용하는 경우 해당 분기와 관련된 추가 정보는 [System Center Configuration Manager Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.
 
 
-##  <a name="a-namebkmkbaselinesa-baseline-and-update-versions"></a><a name="bkmk_Baselines"></a> 기준 및 업데이트 버전  
- System Center Configuration Manager 현재 분기의 초기 릴리스는 버전 1511(기준 버전)이었습니다. 더 최신 버전인 1606이 기준 버전으로 릴리스되었습니다.  
+##  <a name="bkmk_Baselines"></a> 기준 및 업데이트 버전  
+ System Center Configuration Manager 현재 분기의 첫 번째 릴리스는 버전 1511(기준선 버전)이었습니다. 최근 기준선 버전은 1606입니다.
 
 -   새 계층 구조에 새로운 사이트를 설치할 때 최신 기준 버전을 사용합니다.  
 
@@ -73,22 +74,25 @@ Configuration Manager에 대한 일부 업데이트는 기존 인프라에 대�
 
 Configuration Manager의 다음 버전은 기준, 업데이트 또는 두 가지 버전이 모두 제공됩니다.  
 
-|버전|가용일|[지원 종료 날짜](/sccm/core/servers/manage/current-branch-versions-supported) |기준|콘솔 내 업데이트|  
+|버전 |가용일|[지원 종료 날짜](/sccm/core/servers/manage/current-branch-versions-supported) |기준|콘솔 내 업데이트|  
 |-------------|-----------|------------|--------------|------------------------|  
-| 1511 <br /><br /> 5.00.8325.1000|12/8/2015| 12/8/2016|예|아니요|  
-|[1602](/sccm/core/plan-design/changes/whats-new-in-version-1602)<br /><br /> 5.00.8355.1000|3/11/2016| 3/11/2017|아니요|예|
+|[1702](/sccm/core/plan-design/changes/whats-new-in-version-1702)<br /><br /> 5.00.8498.1000|3/27/2017| 3/27/2018|아니요|예|
+|[1610](/sccm/core/plan-design/changes/whats-new-in-version-1610)<br /><br /> 5.00.8458.1000|2016/11/18| 11/18/2017|아니요|예|
 |[1606](/sccm/core/plan-design/changes/whats-new-in-version-1606)<br /><br /> 5.00.8412.1000|7/22/2016| 7/22/2017|아니요|예|
 |[1606](/sccm/core/plan-design/changes/whats-new-in-version-1606) 및 1606 핫픽스 롤업(KB3186654) </br></br>5.00.8412.1307*(참고 1)* |10/12/2016| 7/22/2017|예|아니요|
-|[1610](/sccm/core/plan-design/changes/whats-new-in-version-1610)<br /><br /> 5.00.8458.1000|2016/11/18| 11/18/2017|아니요|예|
+| 1602<br /><br /> 5.00.8355.1000|3/11/2016| 3/11/2017|아니요|예|
+| 1511 <br /><br /> 5.00.8325.1000|12/8/2015| 12/8/2016|예|아니요|  
+
+
 *(참고 1)* 이 1606 기준 미디어는 Microsoft System Center 2016 또는 System Center Configuration Manager(현재 분기 및 장기 서비스 분기 1606) 릴리스의 일부로 제공됩니다.
 
 Configuration Manager 사이트의 버전을 확인하려면, 새 사이트와 콘솔 버전이 표시되는 콘솔의 왼쪽 위 모서리에서 **System Center Configuration Manager 정보** 로 이동합니다.  
 
-##  <a name="a-namebkmkinconsolea-in-console-updates-and-servicing"></a><a name="bkmk_inconsole"></a> 콘솔 내 업데이트 및 서비스  
+##  <a name="bkmk_inconsole"></a> 콘솔 내 업데이트 및 서비스  
  현재 분기라고도 하는, 프로덕션이 준비된 System Center Configuration Manager 설치를 사용하는 경우 사용자가 설치하는 대부분의 업데이트는 업데이트 및 서비스 채널을 사용하여 제공됩니다. 이 메서드는 현재 인프라 버전 및 구성에 해당하는 업데이트를 식별하고, 다운로드하고 사용할 수 있게 만들며, Microsoft에서 모든 고객에게 권장하는 업데이트만 포함시킵니다.   
  여기에는 다음이 포함됩니다.  
 
--   새 버전(예: 버전 1602)  
+-   새 버전(예: 버전 1610)  
 
 -   업데이트(현재 버전에 대한 새로운 기능 포함)  
 
@@ -131,7 +135,7 @@ Configuration Manager는 서비스 연결 지점 사이트 시스템 역할을 M
 > [!NOTE]  
 >  System Center Configuration Manager(현재 분기) 프로덕션 릴리스, Long-Term Servicing Branch 및 System Center Configuration Manager Technical Preview는 서로 다른 릴리스입니다. 따라서 한 분기에 적용되는 업데이트를 다른 분기에 대한 콘솔 내 업데이트로 사용할 수 없습니다. 사용 가능한 분기에 대한 자세한 내용은 [사용해야 하는 Configuration Manager 분기](/sccm/core/understand/which-branch-should-i-use)를 참조하세요.
 
-##  <a name="a-namebkmkoutofbanda-out-of-band-hotfixes"></a><a name="bkmk_outofband"></a> 대역 외 핫픽스  
+##  <a name="bkmk_outofband"></a> 대역 외 핫픽스  
 일부 핫픽스는 특정 문제를 처리할 가능성이 제한된 상태로 릴리스되거나, 모든 고객에게 적용할 수 있지만 콘솔 내 메서드를 사용하여 설치할 수 없습니다. 이러한 수정 프로그램은 대역 외로 제공되며 Microsoft 클라우드 서비스에서 찾을 수 없습니다.  
 
 일반적으로, 대역 외 핫픽스는 Microsoft 고객 지원 서비스, 기술 자료 문서 또는 Configuration Manager 배포 문제를 해결하거나 처리하려는 경우 [System Center Configuration Manager 팀 블로그](https://blogs.technet.microsoft.com/configmgrteam)에서 자세히 알아볼 수 있습니다.  
@@ -145,9 +149,4 @@ Configuration Manager는 서비스 연결 지점 사이트 시스템 역할을 M
 -   **핫픽스 설치 관리자:** 이 도구는 콘솔 내 메서드를 사용하여 설치할 수 없는 핫픽스를 수동으로 설치하는 데 사용됩니다. 이 메서드는 다음과 같은 파일 이름 구조를 사용하는 수정 프로그램에 사용됩니다. **&lt;제품\>-&lt;제품 버전\>-&lt;KB 문서 ID\>-&lt;플랫폼\>-&lt;언어\>.exe**.
 
      자세한 내용은 [핫픽스 설치 관리자를 사용하여 System Center Configuration Manager의 업데이트 설치](../../../core/servers/manage/use-the-hotfix-installer-to-install-updates.md)를 참조하세요.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

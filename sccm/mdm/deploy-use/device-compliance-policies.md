@@ -17,9 +17,9 @@ author: andredm7
 ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: ad9ea7b29e03bb514fe23fdf761b312c85c16714
-ms.lasthandoff: 03/06/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: bcaa2a9b5474e06bf344dc4fd47dbb160ea36297
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="device-compliance-policies-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 장치 준수 정책 관리
@@ -40,22 +40,24 @@ System Center Configuration Manager의 **준수 정책**은 장치가 조건부 
 
 -   장치의 무단 해제 또는 루팅 여부  
 
--   장치의 메일이 Intune 정책으로 관리되는지 여부 또는 장치가 Windows 장치 상태 증명 서비스에서 비정상으로 보고되는지 여부  
+-   장치의 메일이 Intune 정책으로 관리되는지 여부 또는 장치가 Windows 장치 상태 증명 서비스에서 비정상으로 보고되는지 여부
+-   장치에 설치할 수 없는 앱
 
 
  준수 정책은 사용자 컬렉션에 배포합니다. 규정 준수 정책을 사용자에게 배포하면 모든 사용자 장치의 규정 준수가 확인됩니다.  
 
  다음 테이블은 정책을 조건부 액세스 정책과 함께 사용하는 경우 규정 준수 정책에서 지원하는 장치 유형 및 규정에 위반된 설정을 관리하는 방법을 나열합니다.  
 
-|규칙|Windows 8.1 이상|Windows Phone 8.1 이상|iOS 6.0 이상|Android 4.0 이상 Samsung KNOX Standard 4.0 이상|  
+|규칙|Windows 8.1 이상|Windows Phone 8.1 이상|iOS 6.0 이상|Android 4.0 이상, Samsung KNOX Standard 4.0 이상, Android for Work|  
 |----------|---------------------------|---------------------------------|-----------------------|---------------------------|-----------------------------------------|  
 |**PIN 또는 암호 구성**|재구성됨|재구성됨|재구성됨|격리됨|  
-|**장치 암호화**|해당 없음|재구성됨|재구성됨(PIN 설정)|격리됨|  
+|**장치 암호화**|해당 없음|재구성됨|재구성됨(PIN 설정)|격리됨<br>(Android for Work 항상 암호화됨)|  
 |**무단 해제 또는 루팅된 장치**|해당 없음|해당 없음|격리됨(설정 아님)|격리됨(설정 아님)|  
 |**전자 메일 프로필**|해당 없음|해당 없음|격리됨|해당 없음|  
 |**최소 OS 버전**|격리됨|격리됨|격리됨|격리됨|  
 |**최대 OS 버전**|격리됨|격리됨|격리됨|격리됨|  
 |**장치 상태 증명(1602 업데이트)**|설정은 Windows 8.1에 적용되지 않습니다.<br /><br /> Windows 10 및 Windows 10 Mobile이 격리됩니다.|해당 없음|해당 없음|해당 없음|  
+|**설치할 수 없는 앱**|해당 없음|해당 없음|격리됨|격리됨|
 
  **재구성됨** = 장치 운영 체제에서 준수를 적용하도록 요구합니다. 예를 들어, 사용자는 직접 PIN을 설정해야 합니다.  설정이 비규격인 경우는 없습니다.  
 

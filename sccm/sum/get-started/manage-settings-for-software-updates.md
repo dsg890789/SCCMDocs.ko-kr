@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/06/2016
+ms.date: 03/26/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -14,19 +14,20 @@ ms.technology:
 - configmgr-sum
 ms.assetid: 0d484c1a-e903-4bff-9e9b-e452c62e38a8
 translationtype: Human Translation
-ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
-ms.openlocfilehash: 7d37f3c5e398c914482c45ab837fe41d00fce8ea
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: fe4a8f56e0b554e206bcc4503a0268dc761ded81
+ms.lasthandoff: 03/27/2017
 
 
 ---
 
-#  <a name="a-namebkmkmanagesusettingsa-manage-settings-for-software-updates"></a><a name="BKMK_ManageSUSettings"></a> 소프트웨어 업데이트 설정 관리  
+#  <a name="BKMK_ManageSUSettings"></a> 소프트웨어 업데이트 설정 관리  
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 Configuration Manager에서 소프트웨어 업데이트를 동기화한 후 다음 섹션에서 설정을 구성 및 확인합니다.
 
-##  <a name="a-namebkmkclientsettingsa-client-settings-for-software-updates"></a><a name="BKMK_ClientSettings"></a> 소프트웨어 업데이트를 위한 클라이언트 설정  
+##  <a name="BKMK_ClientSettings"></a> 소프트웨어 업데이트를 위한 클라이언트 설정  
 소프트웨어 업데이트 지점을 설치하면 클라이언트에서 기본적으로 소프트웨어 업데이트를 사용할 수 있게 되고 클라이언트 설정의 **소프트웨어 업데이트** 페이지에 나오는 설정에는 기본값이 지정됩니다. 클라이언트 설정은 사이트 전체에 사용되며 소프트웨어 업데이트에서 준수를 검색할 시기 및 클라이언트 컴퓨터에 소프트웨어 업데이트를 설치하는 방법과 시기에 영향을 줍니다. 소프트웨어 업데이트를 배포하기 전에 클라이언트 설정이 사이트의 소프트웨어 업데이트에 적절한지 확인합니다.  
 
 > [!IMPORTANT]  
@@ -36,7 +37,7 @@ Configuration Manager에서 소프트웨어 업데이트를 동기화한 후 다
 
 클라이언트 설정에 대한 자세한 내용은 [클라이언트 설정 정보](../../core/clients/deploy/about-client-settings.md)를 참조하세요.  
 
-##  <a name="a-namebkmkgrouppolicya-group-policy-settings-for-software-updates"></a><a name="BKMK_GroupPolicy"></a> 소프트웨어 업데이트를 위한 그룹 정책 설정  
+##  <a name="BKMK_GroupPolicy"></a> 소프트웨어 업데이트를 위한 그룹 정책 설정  
 소프트웨어 업데이트 지점에서 실행되는 WSUS에 연결하기 위해 클라이언트 컴퓨터의 WUA(Windows Update 에이전트)에서 사용하는 특정 그룹 정책 설정이 있습니다. 이러한 그룹 정책 설정은 소프트웨어 업데이트 준수를 성공적으로 검사하고 소프트웨어 업데이트 및 WUA를 자동으로 업데이트하는 데에도 사용됩니다.
 
 ### <a name="specify-intranet-microsoft-update-service-location-local-policy"></a>인트라넷 Microsoft 업데이트 서비스 위치 지정 로컬 정책  
@@ -65,10 +66,10 @@ Configuration Manager에서 소프트웨어 업데이트를 동기화한 후 다
    > [!NOTE]  
    >  **모든 소프트웨어 업데이트** 노드에서 Configuration Manager는 지난 30일 이내에 배포되고 **위험** 및 **보안**으로 분류된 소프트웨어 업데이트만 표시합니다.  
 
-###  <a name="a-namebkmksoftwareupdatesinformationa-review-software-updates-information"></a><a name="BKMK_SoftwareUpdatesInformation"></a> 소프트웨어 업데이트 정보 검토  
+###  <a name="BKMK_SoftwareUpdatesInformation"></a> 소프트웨어 업데이트 정보 검토  
 소프트웨어 업데이트 속성에서는 소프트웨어 업데이트에 대한 자세한 정보를 검토할 수 있습니다. 둘 이상의 소프트웨어 업데이트를 선택할 경우 자세한 정보가 표시되지 않습니다. 다음 섹션에서는 선택한 소프트웨어 업데이트에 대해 사용할 수 있는 정보를 설명합니다.  
 
-####  <a name="a-namebkmksoftwareupdatedetailsa-software-update-details"></a><a name="BKMK_SoftwareUpdateDetails"></a> 소프트웨어 업데이트 정보  
+####  <a name="BKMK_SoftwareUpdateDetails"></a> 소프트웨어 업데이트 정보  
 **업데이트 세부 정보** 탭에서 선택한 소프트웨어 업데이트에 대한 다음 요약 정보를 볼 수 있습니다.  
 
 - **공지 ID**: 보안 소프트웨어 업데이트와 연결된 공지 ID를 지정합니다. [Microsoft Security Bulletin Search(Microsoft 보안 공지 검색)](http://go.microsoft.com/fwlink/p/?LinkId=58313) 웹 페이지에서 공지 ID를 검색하여 보안 공지 세부 정보를 찾을 수 있습니다.  
@@ -85,7 +86,7 @@ Configuration Manager에서 소프트웨어 업데이트를 동기화한 후 다
 
 - **영향 받는 제품**: 소프트웨어 업데이트가 적용되는 제품을 나열합니다.  
 
-####  <a name="a-namebkmkcontentinformationa-content-information"></a><a name="BKMK_ContentInformation"></a> 콘텐츠 정보  
+####  <a name="BKMK_ContentInformation"></a> 콘텐츠 정보  
 **콘텐츠 정보** 탭에서 선택한 소프트웨어 업데이트와 연결된 콘텐츠에 대해 다음 정보를 검토합니다.  
 
 -   **콘텐츠 ID**: 소프트웨어 업데이트에 대한 콘텐츠 ID를 지정합니다.  
@@ -98,32 +99,32 @@ Configuration Manager에서 소프트웨어 업데이트를 동기화한 후 다
 
 -   **크기(MB)**: 소프트웨어 업데이트 원본 파일의 크기를 지정합니다.  
 
-####  <a name="a-namebkmkcustombundleinformationa-custom-bundle-information"></a><a name="BKMK_CustomBundleInformation"></a> 사용자 지정 번들 정보  
+####  <a name="BKMK_CustomBundleInformation"></a> 사용자 지정 번들 정보  
 **사용자 지정 번들 정보** 탭에서 소프트웨어 업데이트에 대한 사용자 지정 번들 정보를 검토합니다. 선택한 소프트웨어 업데이트가 소프트웨어 업데이트 파일에 포함된 번들 소프트웨어 업데이트를 포함하는 경우 이 번들 소프트웨어 업데이트는 **번들 정보** 섹션에 표시됩니다. 이 탭에는 여러 언어에 대한 업데이트 파일과 같이 **콘텐츠 정보** 탭에 표시되는 번들 소프트웨어 업데이트는 나타나지 않습니다.  
 
-####  <a name="a-namebkmksupersedenceinformationa-supersedence-information"></a><a name="BKMK_SupersedenceInformation"></a> 대체 정보  
+####  <a name="BKMK_SupersedenceInformation"></a> 대체 정보  
 **교체 정보** 탭에서 소프트웨어 업데이트의 교체에 대한 다음 정보를 확인할 수 있습니다.  
 
 - **이 업데이트는 다음 업데이트로 교체됨**: 이 업데이트를 교체하는 소프트웨어 업데이트를 지정합니다. 즉 나열된 업데이트가 더 최신 버전입니다. 대부분의 경우 소프트웨어 업데이트를 교체하는 소프트웨어 업데이트 중 하나를 배포합니다. 목록에 표시되는 소프트웨어 업데이트에는 소프트웨어 업데이트에 대해 더 자세한 정보를 보여 주는 웹 페이지의 하이퍼링크가 포함되어 있습니다. 이 업데이트가 교체되지 않으면 **없음** 이 표시됩니다.  
 
 - **이 업데이트는 다음 업데이트를 교체함**: 이 소프트웨어 업데이트로 교체되는 소프트웨어 업데이트를 지정합니다. 즉 이 소프트웨어 업데이트가 더 최신 버전입니다. 대부분의 경우 교체되는 소프트웨어 업데이트를 바꾸기 위해 이 소프트웨어 업데이트를 배포합니다. 목록에 표시되는 소프트웨어 업데이트에는 소프트웨어 업데이트에 대해 더 자세한 정보를 보여 주는 웹 페이지의 하이퍼링크가 포함되어 있습니다. 이 업데이트로 다른 어느 업데이트도 교체되지 않으면 **없음** 이 표시됩니다.  
 
-###  <a name="a-namebkmksoftwareupdatessettingsa-configure-software-updates-settings"></a><a name="BKMK_SoftwareUpdatesSettings"></a> 소프트웨어 업데이트 설정 구성  
+###  <a name="BKMK_SoftwareUpdatesSettings"></a> 소프트웨어 업데이트 설정 구성  
 속성에서 하나 이상의 소프트웨어 업데이트에 대한 소프트웨어 업데이트 설정을 구성할 수 있습니다. 대부분의 소프트웨어 업데이트 설정은 중앙 관리 사이트 또는 독립 실행형 기본 사이트에서만 구성할 수 있습니다. 다음 섹션에서는 소프트웨어 업데이트에 대한 설정을 구성하는 방법에 대해 설명합니다.  
 
-####  <a name="a-namebkmksetmaxruntimea-set-maximum-run-time"></a><a name="BKMK_SetMaxRunTime"></a> 최대 실행 시간 설정  
+####  <a name="BKMK_SetMaxRunTime"></a> 최대 실행 시간 설정  
 **최대 실행 시간** 탭에서 소프트웨어 업데이트가 클라이언트 컴퓨터에 할당되어 완료되는 최대 시간을 설정합니다. 업데이트가 최대 실행 시간 값보다 더 오래 걸리면 Configuration Manager에서는 상태 메시지를 만들고 소프트웨어 업데이트 설치를 위한 배포에 대해 모니터링을 중지합니다. 이 설정은 중앙 관리 사이트 또는 독립 실행형 기본 사이트에서만 구성할 수 있습니다.  
 
 Configuration Manager에서는 이 설정을 사용하여, 구성된 유지 관리 기간 안에 소프트웨어 업데이트 설치를 시작할 것인지 여부를 결정합니다. 최대 실행 시간 값이 유지 관리 기간 중 남은 가용 기간보다 더 크면 소프트웨어 업데이트 설치는 다음 유지 관리 기간이 시작될 때까지 연기됩니다. 유지 관리 기간이 구성된 클라이언트 컴퓨터에 여러 소프트웨어 업데이트를 설치해야 할 경우 최대 실행 시간이 가장 적은 소프트웨어 업데이트가 먼저 설치되고 최대 실행 시간이 다음으로 적은 소프트웨어 업데이트가 그 후 차례로 설치됩니다. 클라이언트는 각 소프트웨어 업데이트를 설치하기 전에 가용 유지 관리 기간이 소프트웨어 업데이트를 설치하는 데 충분한지 확인합니다. 소프트웨어 업데이트는 설치가 시작되면 유지 관리 기간이 종료된 후에도 계속 설치가 진행됩니다. 유지 관리 기간에 대한 자세한 내용은 [System Center Configuration Manager에서 유지 관리 기간을 사용하는 방법](../../core/clients/manage/collections/use-maintenance-windows.md)을 참조하세요.  
 
 **최대 실행 시간** 탭에서 다음 설정을 확인 및 구성할 수 있습니다.  
 
-- **최대 실행 시간**: Configuration Manager에서 설치 모니터링을 중단하기 전에 소프트웨어 업데이트 설치를 완료할 수 있도록 할당되는 최대 시간(분)을 지정합니다. 이 설정은 유지 관리 기간이 종료되기 전에 업데이트를 설치할 수 있도록 가용 시간이 충분히 남아 있는지 확인하는 데도 사용됩니다. 기본 설정은 서비스 팩의 경우 60분이고 기타 모든 소프트웨어 업데이트 형식의 경우 5분입니다. 이 값의 범위는 5~9999분입니다.  
+- **최대 실행 시간**: Configuration Manager에서 설치 모니터링을 중단하기 전에 소프트웨어 업데이트 설치를 완료할 수 있도록 할당되는 최대 시간(분)을 지정합니다. 이 설정은 유지 관리 기간이 종료되기 전에 업데이트를 설치할 수 있도록 가용 시간이 충분히 남아 있는지 확인하는 데도 사용됩니다. 서비스 팩에 대한 기본 설정은 60분입니다. 기타 소프트웨어 업데이트 유형의 경우 기본값은 Configuration Manager 버전 1511 이상을 새로 설치한 경우 10분이고 이전 버전에서 업그레이드한 경우 5분입니다. 이 값의 범위는 5~9999분입니다.  
 
 > [!IMPORTANT]  
 >  최대 실행 시간 값은 구성된 유지 관리 기간 값보다 작게 설정해야 합니다. 그렇지 않으면 소프트웨어 업데이트 설치는 시작되지 않습니다.  
 
-####  <a name="a-namebkmksetcustomseveritya-set-custom-severity"></a><a name="BKMK_SetCustomSeverity"></a> 사용자 지정 심각도 설정  
+####  <a name="BKMK_SetCustomSeverity"></a> 사용자 지정 심각도 설정  
 소프트웨어 업데이트에 대한 속성에서 **사용자 지정 심각도** 탭을 사용하면 소프트웨어 업데이트에 대한 사용자 지정 심각도 값을 구성할 수 있습니다. 미리 정의된 심각도 값이 특정 요구를 충족하지 못하면 이 작업이 필요할 수 있습니다. 사용자 지정 값은 Configuration Manager 콘솔의 **사용자 지정 심각도** 열에 나열됩니다. 소프트웨어 업데이트를 정의된 사용자 지정 심각도 값에 따라 정렬할 수 있고 이 값을 기준으로 필터링할 수 있는 쿼리 및 보고서를 만들 수도 있습니다. 이 설정은 중앙 관리 사이트 또는 독립 실행형 기본 사이트에서만 구성할 수 있습니다.  
 
 **사용자 지정 심각도** 탭에서 다음 설정을 구성할 수 있습니다.  
@@ -139,9 +140,4 @@ CRL 확인이 사용되는 경우 소프트웨어 업데이트를 처리하는 C
 CRL 확인을 수행하는 컴퓨터에서 제품 DVD를 사용하여 명령 프롬프트에서 **\SMSSETUP\BIN\X64\\**<*언어*>**\UpdDwnldCfg.exe /checkrevocation**을 실행합니다.  
 
 예를 들어 영어(미국)의 경우 **\SMSSETUP\BIN\X64\00000409\UpdDwnldCfg.exe /checkrevocation**을 실행합니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

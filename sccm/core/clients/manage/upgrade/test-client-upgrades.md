@@ -2,7 +2,7 @@
 title: "사전 프로덕션 컬렉션에서 클라이언트 업그레이드 테스트 | Microsoft 문서"
 description: "System Center Configuration Manager의 사전 프로덕션 컬렉션에서 클라이언트 업그레이드를 테스트합니다."
 ms.custom: na
-ms.date: 12/12/2016
+ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,9 +17,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 52d2e088b8db3c2e9a0af640ca3db72b9fd7af60
-ms.openlocfilehash: 250c9312b932670c408554f3968ae43ae4f3dbaa
-ms.lasthandoff: 01/03/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 533c8e8b30519d83b8fc7a9d204d51e76974c4b1
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -48,7 +48,7 @@ ms.lasthandoff: 01/03/2017
 
      **계층 설정 속성** 의 **클라이언트 업그레이드**탭:  
 
-    -    **사전 프로덕션 클라이언트를 사용하여 자동으로 사전 프로덕션 컬렉션에 있는 모든 클라이언트 업그레이드**선택  
+    -   **사전 프로덕션 클라이언트를 사용하여 자동으로 사전 프로덕션 컬렉션에 있는 모든 클라이언트 업그레이드**선택  
 
     -   사전 프로덕션 컬렉션으로 사용하는 컬렉션 이름 입력  
 
@@ -57,7 +57,7 @@ ms.lasthandoff: 01/03/2017
 
 ##  <a name="to-install-a-configuration-manager-update-that-includes-a-new-version-of-the-client"></a>새 버전의 클라이언트가 포함된 Configuration Manager 업데이트를 설치하려면  
 
-1.  Configuration Manager 콘솔에서 **관리** > **Cloud Services** > **업데이트 및 서비스**를 열고 **사용 가능** 업데이트를 선택한 다음 **업데이트 팩 설치**를 선택합니다.  
+1.  Configuration Manager 콘솔에서 **관리** > **업데이트 및 서비스**를 열고 **사용 가능** 업데이트를 선택하고 나서 **업데이트 팩 설치**를 선택합니다. 버전 1702 이전에는 업데이트 및 서비스가 **관리** > **Cloud Services** 아래에 있었습니다.
 
      업데이트 설치에 대한 자세한 내용은 [System Center Configuration Manager용 업데이트](../../../../core/servers/manage/updates.md)를 참조하세요.  
 
@@ -72,7 +72,7 @@ ms.lasthandoff: 01/03/2017
 
 ##  <a name="to-promote-the-new-client-to-production"></a>새 클라이언트를 프로덕션으로 승격하려면  
 
-1.  Configuration Manager 콘솔에서 **관리** > **Cloud Services** > **업데이트 및 서비스**를 열고 **사전 프로덕션 클라이언트 수준 올리기**를 선택합니다.
+1.  Configuration Manager 콘솔에서 **관리** > **업데이트 및 서비스**를 열고 **사전 프로덕션 클라이언트 수준 올리기**를 선택합니다. 버전 1702 이전에는 업데이트 및 서비스가 **관리** > **Cloud Services** 아래에 있었습니다.
 
     > [!TIP]
     > **사전 프로덕션 클라이언트 수준 올리기** 단추는 **모니터링** > **클라이언트 상태** > **사전 프로덕션 클라이언트 배포**에서 콘솔의 클라이언트 배포를 모니터링할 경우에도 사용할 수 있습니다.

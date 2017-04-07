@@ -2,7 +2,7 @@
 title: "CD.Latest 폴더 | Microsoft 문서"
 description: "Configuration Manager 콘솔 내에서 제품 업데이트를 제공하는 새 업데이트 프로세스에 대해 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
-ms.openlocfilehash: dcf56f6b82f89e81d636ea920f36133e245cbb1e
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 9cbda4db3c8fcd0bc039e9bb0f490af519b7d04b
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -41,11 +41,13 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔 내에
 
 -   기본 제공 Configuration Manager 백업 작업을 실행합니다. 지정된 백업 폴더 위치에서 폴더가 생성되거나 업데이트됩니다.  
 
+-  버전 1606부터 기준선 미디어(예: 버전 1606)를 사용하여 새 사이트를 설치할 경우 CD.Latest 폴더가 만들어집니다.
+
 CD.Latest 폴더의 소스 파일은 다음에 대해 지원됩니다.  
 
-1.  **백업 및 복구:** CD.Latest 폴더에는 사이트 복구 과정에서 사이트를 다시 설치하는 데 사용하는 소스 파일이 포함됩니다. Configuration Manager 사이트를 복구하려면 사이트 백업에 CD.Latest 폴더가 포함되어야 합니다. 기본 제공 사이트 백업 작업이 사이트 백업 과정에서 이 폴더를 자동으로 포함합니다.  
+1.  **백업 및 복구:** 사이트를 복구하려면 사용 중인 사이트와 일치하는 CD.Latest 폴더의 원본 파일을 사용해야 합니다. 기본 제공 사이트 백업 작업을 사용하여 사이트 백업을 실행할 경우 CD.Latest 폴더는 백업의 일부로 포함됩니다.
 
-    -   **사이트 복구 과정에서 사이트를 다시 설치하는 경우** 백업에 포함된 CD.Latest 폴더에서 사이트를 설치합니다. 이 경우 사이트 백업 및 사이트 데이터베이스와 일치하는 파일 버전을 사용하여 사이트가 설치됩니다.  
+    -   **사이트 복구 과정에서 사이트를 다시 설치하는 경우** 백업에 포함된 CD.Latest 폴더에서 사이트를 설치합니다. 이 경우 사이트 백업 및 사이트 데이터베이스와 일치하는 파일 버전을 사용하여 사이트가 설치됩니다.  올바른 CD.Latest 폴더 버전에 액세스할 수 없는 경우 랩 환경에 사이트를 설치하고 복구할 버전과 일치하도록 해당 사이트를 업데이트하는 방식으로 올바른 파일 버전이 포함된 CD.Latest 폴더를 얻을 수 있습니다.
 
         > [!IMPORTANT]  
         >  올바른 CD.Latest 폴더와 폴더 내용을 사용할 수 없는 경우에는 사이트를 복구할 수 없으며, 사이트를 다시 설치해야 합니다.  

@@ -2,7 +2,7 @@
 title: "설치 명령줄 옵션 | Microsoft 문서"
 description: "이 문서의 정보를 사용하여 명령줄에서 스크립트를 구성하거나 System Center Configuration Manager를 설치할 수 있습니다."
 ms.custom: na
-ms.date: 13/2017
+ms.date: 03/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 36b1ab794bb1dc80c673bd41dae11f46053f3be3
-ms.openlocfilehash: 55f9fe5c05cd09b9291b6370200c9fbe15699e7d
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 04fe7b3e674287c4255563ab4a308e54d0b6c3aa
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="command-line-options-for-setup-in-system-center-configuration-manager"></a>System Center Configuration Manager 설치를 위한 명령줄 옵션
@@ -27,7 +28,7 @@ ms.openlocfilehash: 55f9fe5c05cd09b9291b6370200c9fbe15699e7d
 
  다음 정보를 사용하여 명령줄에서 스크립트를 구성하거나 System Center Configuration Manager를 설치할 수 있습니다.  
 
-##  <a name="a-namebkmksetupa-command-line-options-for-setup"></a><a name="bkmk_setup"></a> 설치용 명령줄 옵션  
+##  <a name="bkmk_setup"></a> 설치용 명령줄 옵션  
  **/DEINSTALL**  
  사이트를 제거합니다. 사이트 서버 컴퓨터에서 설치 프로그램을 실행해야 합니다.  
 
@@ -68,7 +69,7 @@ ms.openlocfilehash: 55f9fe5c05cd09b9291b6370200c9fbe15699e7d
  **/MANAGELANGS <*언어 스크립트 경로*>**  
  이전에 설치한 사이트에 설치된 언어를 관리합니다. 이 옵션을 사용하려면 사이트 서버의 **<*Configuration Manager 설치 경로*>\BIN\X64**에서 설치 프로그램을 실행하고 언어 설정이 포함된 언어 스크립트 파일의 위치를 지정해야 합니다. 언어 설정 스크립트 파일에서 사용할 수 있는 언어 옵션에 대한 자세한 내용은 이 항목에서 [언어 관리용 명령줄 옵션](#bkmk_Lang)을 참조하세요.  
 
-##  <a name="a-namebkmklanga-command-line-options-to-manage-languages"></a><a name="bkmk_Lang"></a> 언어 관리용 명령줄 옵션  
+##  <a name="bkmk_Lang"></a> 언어 관리용 명령줄 옵션  
  **Identification**  
 
 -   **키 이름:** Action  
@@ -145,7 +146,7 @@ ms.openlocfilehash: 55f9fe5c05cd09b9291b6370200c9fbe15699e7d
 
     -   **세부 정보:** 설치를 위한 필수 파일의 경로를 지정합니다. **PrerequisiteComp** 값에 따라 이 경로는 다운로드한 파일을 저장하는 데 사용되거나 이전에 다운로드한 파일을 찾는 데 사용됩니다.  
 
-##  <a name="a-namebkmkunattendeda-unattended-setup-script-file-keys"></a><a name="bkmk_Unattended"></a> 무인 설치 스크립트 파일 키  
+##  <a name="bkmk_Unattended"></a> 무인 설치 스크립트 파일 키  
  다음 섹션에서는 무인 설치를 위한 스크립트를 생성하는 방법을 설명합니다. 목록에는 사용 가능한 설치 스크립트 키, 해당 값, 필수 여부, 설치 유형, 키에 대한 간략한 설명이 나와 있습니다.  
 
 ### <a name="unattended-install-for-a-central-administration-site"></a>중앙 관리 사이트의 무인 설치  
@@ -160,6 +161,14 @@ ms.openlocfilehash: 55f9fe5c05cd09b9291b6370200c9fbe15699e7d
     -   **값:** InstallCAS  
 
     -   **세부 정보:** 중앙 관리 사이트를 설치합니다.  
+
+-   **키 이름:** CDLatest  
+
+    -   **필수:** 예 – CD.Latest 폴더의 미디어를 사용할 경우에만.    
+
+    -   **값:** 1 1이 아닌 임의 값은 CD.Latest를 사용하지 않는 것으로 간주합니다.
+
+    -   **세부 정보:** 기본 또는 중앙 관리 사이트를 설치하거나 기본 또는 중앙 관리 사이트를 복구할 복적으로 CD.Latest 폴더에 있는 미디어의 설치 프로그램을 실행할 경우 키 및 값을 스크립트에 포함해야 합니다. 이 값은 미디어 양식 CD.Latest가 사용되고 있음을 설치 프로그램에 알립니다.
 
 **Options**  
 
@@ -177,7 +186,7 @@ ms.openlocfilehash: 55f9fe5c05cd09b9291b6370200c9fbe15699e7d
 
     -   **값:** <*사이트 코드*>  
 
-    -   **세부 정보:** 계층에서 사이트를 고유하게 식별하는 영숫자&3;자를 지정합니다.  
+    -   **세부 정보:** 계층에서 사이트를 고유하게 식별하는 영숫자 3자를 지정합니다.  
 
 -   **키 이름:** 사이트 이름  
 
@@ -399,6 +408,14 @@ ms.openlocfilehash: 55f9fe5c05cd09b9291b6370200c9fbe15699e7d
 
     -   **세부 정보:** 기본 사이트를 설치합니다.  
 
+-   **키 이름:** CDLatest  
+
+    -   **필수:** 예 – CD.Latest 폴더의 미디어를 사용할 경우에만.    
+
+    -   **값:** 1 1이 아닌 임의 값은 CD.Latest를 사용하지 않는 것으로 간주합니다.
+
+    -   **세부 정보:** 기본 또는 중앙 관리 사이트를 설치하거나 기본 또는 중앙 관리 사이트를 복구할 복적으로 CD.Latest 폴더에 있는 미디어의 설치 프로그램을 실행할 경우 키 및 값을 스크립트에 포함해야 합니다. 이 값은 미디어 양식 CD.Latest가 사용되고 있음을 설치 프로그램에 알립니다.
+
 **Options**  
 
 -   **키 이름:** ProductID  
@@ -415,7 +432,7 @@ ms.openlocfilehash: 55f9fe5c05cd09b9291b6370200c9fbe15699e7d
 
     -   **값:** <*사이트 코드*>  
 
-    -   **세부 정보:** 계층에서 사이트를 고유하게 식별하는 영숫자&3;자를 지정합니다.  
+    -   **세부 정보:** 계층에서 사이트를 고유하게 식별하는 영숫자 3자를 지정합니다.  
 
 -   **키 이름:** SiteName  
 
@@ -521,7 +538,7 @@ ms.openlocfilehash: 55f9fe5c05cd09b9291b6370200c9fbe15699e7d
 
     -   **필수:** 예  
 
-    -   **값:** EnforceHTTPS *또는 * HTTPorHTTPS  
+    -   **값:** EnforceHTTPS *또는* HTTPorHTTPS  
 
     -   **세부 정보:** 클라이언트의 HTTPS 통신만 수락하도록 모든 사이트 시스템을 구성할지, 아니면 각 사이트 시스템 역할마다 다른 통신 방법을 구성할지를 지정합니다. **EnforceHTTPS**를 선택하는 경우 클라이언트 컴퓨터에 클라이언트 인증을 위해 유효한 PKI(공개 키 인프라) 인증서가 있어야 합니다.  
 
@@ -717,6 +734,14 @@ ms.openlocfilehash: 55f9fe5c05cd09b9291b6370200c9fbe15699e7d
 
     -   **세부 정보:** 중앙 관리 사이트를 복구합니다.  
 
+-   **키 이름:** CDLatest  
+
+    -   **필수:** 예 – CD.Latest 폴더의 미디어를 사용할 경우에만.    
+
+    -   **값:** 1 1이 아닌 임의 값은 CD.Latest를 사용하지 않는 것으로 간주합니다.
+
+    -   **세부 정보:** 기본 또는 중앙 관리 사이트를 설치하거나 기본 또는 중앙 관리 사이트를 복구할 복적으로 CD.Latest 폴더에 있는 미디어의 설치 프로그램을 실행할 경우 키 및 값을 스크립트에 포함해야 합니다. 이 값은 미디어 양식 CD.Latest가 사용되고 있음을 설치 프로그램에 알립니다.
+
 **RecoveryOptions**  
 
 -   **키 이름:** ServerRecoveryOptions  
@@ -799,7 +824,7 @@ ms.openlocfilehash: 55f9fe5c05cd09b9291b6370200c9fbe15699e7d
 
     -   **값:** <*사이트 코드*>  
 
-    -   **세부 정보:** 계층에서 사이트를 고유하게 식별하는 영숫자&3;자를 지정합니다. 장애가 발생하기 전에 사이트에 사용되던 사이트 코드를 지정해야 합니다.
+    -   **세부 정보:** 계층에서 사이트를 고유하게 식별하는 영숫자 3자를 지정합니다. 장애가 발생하기 전에 사이트에 사용되던 사이트 코드를 지정해야 합니다.
 
 -   **키 이름:** SiteName  
 
@@ -979,6 +1004,14 @@ ms.openlocfilehash: 55f9fe5c05cd09b9291b6370200c9fbe15699e7d
 
     -   **세부 정보:** 기본 사이트를 복구합니다.  
 
+-   **키 이름:** CDLatest  
+
+    -   **필수:** 예 – CD.Latest 폴더의 미디어를 사용할 경우에만.    
+
+    -   **값:** 1 1이 아닌 임의 값은 CD.Latest를 사용하지 않는 것으로 간주합니다.
+
+    -   **세부 정보:** 기본 또는 중앙 관리 사이트를 설치하거나 기본 또는 중앙 관리 사이트를 복구할 복적으로 CD.Latest 폴더에 있는 미디어의 설치 프로그램을 실행할 경우 키 및 값을 스크립트에 포함해야 합니다. 이 값은 미디어 양식 CD.Latest가 사용되고 있음을 설치 프로그램에 알립니다.    
+
 **RecoveryOptions**  
 
 -   **키 이름:** ServerRecoveryOptions  
@@ -1051,7 +1084,7 @@ ms.openlocfilehash: 55f9fe5c05cd09b9291b6370200c9fbe15699e7d
 
     -   **값:** <*사이트 코드*>  
 
-    -   **세부 정보:** 계층에서 사이트를 고유하게 식별하는 영숫자&3;자를 지정합니다. 장애가 발생하기 전에 사이트에 사용되던 사이트 코드를 지정해야 합니다.
+    -   **세부 정보:** 계층에서 사이트를 고유하게 식별하는 영숫자 3자를 지정합니다. 장애가 발생하기 전에 사이트에 사용되던 사이트 코드를 지정해야 합니다.
 
 -   **키 이름:** SiteName  
 
@@ -1243,9 +1276,4 @@ ms.openlocfilehash: 55f9fe5c05cd09b9291b6370200c9fbe15699e7d
     -   **값:** <*포트 번호*>  
 
     -   **세부 정보:** 프록시 포트에 사용할 포트 번호를 지정합니다.  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

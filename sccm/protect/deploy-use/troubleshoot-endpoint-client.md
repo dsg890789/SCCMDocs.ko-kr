@@ -17,8 +17,9 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1432568286605d29683416885d7aa522c649016e
-ms.openlocfilehash: fde190f141fb55462755119b533519d05af3f3c3
+ms.sourcegitcommit: 6accec2d356861b273b25ba2b6338d9684a46ff6
+ms.openlocfilehash: 1b096e71f5131214fb4e235e84d0b7f63e566831
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -167,8 +168,7 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 ##  <a name="starting-windows-defender-or-endpoint-protection-service"></a>Windows Defender 또는 Endpoint Protection 서비스 시작  
  **증상**  
 
- **프로그램 서비스가 중지되어 Windows Defender 또는**  
- **Endpoint Protection에서 컴퓨터를 모니터링하고 있지 않습니다. 지금 다시 시작해야 합니다.**  
+ 프로그램 서비스가 중지되어 **Windows Defender 또는 Endpoint Protection에서 컴퓨터를 모니터링하고 있지 않습니다. 지금 다시 시작해야 합니다.**라는 메시지가 표시됩니다. 
 
  **해결 방법**  
 
@@ -176,7 +176,7 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 
 -   모든 응용 프로그램을 종료한 후 컴퓨터를 다시 시작합니다.  
 
-### <a name="step-2-make-sure-the-windows-defender-orbr-------endpoint-protection-service-is-set-to-automatic-and-is-started"></a>2단계: "Windows Defender" 또는<br />      "Endpoint Protection" 서비스가 자동으로 설정되고 시작되었는지 확인  
+### <a name="step-2-make-sure-the-windows-defender-or-endpoint-protection-service-is-set-to-automatic-and-is-started"></a>2단계: "Windows Defender" 또는 "Endpoint Protection" 서비스가 자동으로 설정되고 시작되었는지 확인  
 
 1.  **시작** 을 클릭하고 **services.msc**를 검색한 후 **Enter**키를 누릅니다.  
 
@@ -236,7 +236,7 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 
 2.  케이블 모뎀을 사용하는 경우 모뎀으로의 케이블 연결과 모뎀과 컴퓨터 간의 연결에 문제가 없는지 확인합니다.  
 
-3.  케이블 모뎀 또는 DSL 라우터를 사용하는 경우 라우터 및 컴퓨터에 대한 연결에 문제가 없는지 확인합니다. 라우터 및 모뎀을 뽑은 후 끕니다. 잠시 기다렸다가 먼저 모뎀을 꽂고,&1;분 정도 기다렸다가 라우터를 꽂은 후 컴퓨터를 다시 시작합니다.  
+3.  케이블 모뎀 또는 DSL 라우터를 사용하는 경우 라우터 및 컴퓨터에 대한 연결에 문제가 없는지 확인합니다. 라우터 및 모뎀을 뽑은 후 끕니다. 잠시 기다렸다가 먼저 모뎀을 꽂고, 1분 정도 기다렸다가 라우터를 꽂은 후 컴퓨터를 다시 시작합니다.  
 
 ##  <a name="detected-threat-cant-be-remediated"></a>재구성할 수 없는 위협 감지  
  Windows Defender 또는  
@@ -318,9 +318,4 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
  [Endpoint Protection 클라이언트에 대한 질문과 대답](../../protect/deploy-use/endpoint-protection-client-faq.md)   
 
  [Endpoint Protection 클라이언트 도움말](../../protect/deploy-use/endpoint-protection-client-help.md)
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

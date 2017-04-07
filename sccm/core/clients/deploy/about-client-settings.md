@@ -2,7 +2,7 @@
 title: "클라이언트 설정 | Microsoft 문서"
 description: "System Center Configuration Manager에서 관리 콘솔을 사용하여 클라이언트 설정을 선택합니다."
 ms.custom: na
-ms.date: 12/12/2016
+ms.date: 03/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,9 +17,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 289db441899359f3bf3abe5d38896c7acd2045b6
-ms.openlocfilehash: 5eaca19f2b21b1c62b956d2a44d492d3ddd6d10a
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: bd2cf7b0df4a1f50c006e8280bf59ea91f1b4477
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="about-client-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 설정 정보
@@ -329,11 +329,11 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
     -   NOIDMIF 파일은 Windows\System32\CCM\Inventory\Noidmif 폴더에 있어야 합니다.  
 
     > [!NOTE]  
-    >  이 설정은 기본 클라이언트 설정에서만 사용할 수 있습니다. 
+    >  이 설정은 기본 클라이언트 설정에서만 사용할 수 있습니다.
 
 -   **최대 임의 지연**
 
-    작업이 모든 클라이언트에서 동시에 수행되지 않도록 최대&4;시간마다 하드웨어 정보가 무작위로 수집됩니다. 작업이 수행되는 기간을 제한하기 위해 최대 지연을 설정할 수 있습니다.      
+    작업이 모든 클라이언트에서 동시에 수행되지 않도록 최대 4시간마다 하드웨어 정보가 무작위로 수집됩니다. 작업이 수행되는 기간을 제한하기 위해 최대 지연을 설정할 수 있습니다.      
 
 ##  <a name="metered-internet-connections"></a>데이터 통신 연결  
  Windows 8 클라이언트 컴퓨터에서 데이터 통신 연결을 사용할 경우 해당 컴퓨터가 Configuration Manager 사이트와 통신하는 방식을 관리할 수 있습니다. 때로 인터넷 공급자는 사용자가 요금제 인터넷 연결을 사용할 경우 보내고 받는 데이터 양을 기준으로 요금을 청구하기도 합니다.  
@@ -537,7 +537,7 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
         -   **총 파일 크기(KB)가 다음을 초과하면 파일 컬렉션 중지**: 이를 초과하면 **이름** 아래 지정된 파일이 더 이상 수집되지 않는 파일 크기(KB)를 지정합니다.  
 
           > [!NOTE]  
-          >  사이트 서버에서는 가장 최근에 변경된 버전의 수집된 파일&5;개를 수집하여 *&lt;Configuration Manager 설치 디렉터리\>*\Inboxes\Sinv.box\Filecol 디렉터리에 저장합니다. 마지막 소프트웨어 인벤토리가 수집된 이후로 파일이 변경되지 않은 경우 파일이 다시 수집되지 않습니다.  
+          >  사이트 서버에서는 가장 최근에 변경된 버전의 수집된 파일 5개를 수집하여 *&lt;Configuration Manager 설치 디렉터리\>*\Inboxes\Sinv.box\Filecol 디렉터리에 저장합니다. 마지막 소프트웨어 인벤토리가 수집된 이후로 파일이 변경되지 않은 경우 파일이 다시 수집되지 않습니다.  
           >   
           >  소프트웨어 인벤토리는 20MB보다 큰 파일을 수집하지 않습니다.  
           >   
@@ -601,6 +601,12 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
 -   **보류된 모든 배포도 설치할 기간(최종 기한이 해당 기간 내에 포함되는 경우)**  
 
      이 설정을 사용하여 이전 설정의 기간을 지정할 수 있습니다. 1~23시간 및 1~365일의 값을 입력할 수 있습니다. 기본적으로, 이 설정은 7일로 구성됩니다.  
+
+-   **클라이언트에서 빠른 설치 파일의 설치 사용**
+
+-   **Express 설치 파일 콘텐츠를 다운로드하는 데 사용할 포트**
+
+-   **Office 365 클라이언트 에이전트 관리 사용** 이 설정을 사용하여 Office 365 클라이언트 에이전트의 관리를 사용하도록 설정합니다. 값을 **예**로 설정하면 Office 365 설치 설정을 구성하고, Office CDN(콘텐츠 배달 네트워크)에서 파일을 다운로드하고, Configuration Manager의 응용 프로그램으로 파일을 배포할 수 있습니다.
 
 ##  <a name="user-and-device-affinity"></a>사용자 및 장치 선호도  
 

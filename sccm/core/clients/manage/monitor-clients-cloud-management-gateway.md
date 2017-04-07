@@ -1,17 +1,18 @@
 ---
 title: "클라우드 관리 게이트웨이 모니터링 - Configuration Manager | Microsoft 문서"
 description: 
-ms.date: 11/18/2016
+ms.date: 03/28/2017
 ms.prod: configuration-manager
 ms.technology:
 - configmgr-client
 ms.assetid: 15f72f80-9850-40ce-9c3a-443ba04b6a03
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: ef12c9b966a1b83b61243311b30e1a925c20d2e3
-ms.openlocfilehash: 4475205c37c20631a189e0c315dc48e288c15ba6
+ms.sourcegitcommit: 199096db7a23fb14db98b95e75246ed254848ab7
+ms.openlocfilehash: df32a7d95799d8ae685fd66e2d9ddf25e32b37d0
+ms.lasthandoff: 03/27/2017
 
 ---
 
@@ -49,16 +50,5 @@ Configuration Manager 콘솔을 사용하여 클라우드 관리 게이트웨이
 
 ## <a name="monitor-logs"></a>로그 모니터링
 
-클라우드 관리 게이트웨이 서비스는 다음 로그 파일에 항목을 생성합니다.
-
--   **Cloudmgr.log** – 클라우드 관리 게이트웨이 서비스 배포, 지속적인 서비스 상태 및 서비스와 연결된 사용 현황 데이터에 대한 항목을 포함합니다.
-
--   **SMS\_클라우드\_ProxyConnector.log** – 클라우드 관리 게이트웨이 서비스와 클라우드 관리 게이트웨이 연결 지점 간의 연결 설정에 대한 항목을 포함합니다.
-
-자세한 내용은 [Configuration Manager 로그](/sccm/core/plan-design/hierarchy/log-files)를 참조하세요.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
+클라우드 관리 게이트웨이 서비스는 많은 로그 파일에 항목을 생성합니다. 자세한 내용은 [Configuration Manager 로그](/sccm/core/plan-design/hierarchy/log-files)를 참조하세요.
 

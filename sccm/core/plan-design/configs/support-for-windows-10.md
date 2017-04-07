@@ -2,7 +2,7 @@
 title: "Windows 10에 대한 지원 | Microsoft 문서"
 description: "System Center Configuration Manager 클라이언트를 실행할 수 있는 Windows 10 버전을 알아봅니다."
 ms.custom: na
-ms.date: 2/10/2017
+ms.date: 3/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
-ms.openlocfilehash: eb2092640f7bd68a25e4826cd7f88cda6822a33a
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 6accec2d356861b273b25ba2b6338d9684a46ff6
+ms.openlocfilehash: 188c6b1d7ae7768bb4075688d7d47607ee83be17
+ms.lasthandoff: 03/29/2017
 
 ---
 # <a name="support-for-windows-10-as-a-client-of-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트인 Windows 10에 대한 지원
@@ -31,19 +31,24 @@ ms.lasthandoff: 03/21/2017
 - [클라이언트 및 장치에 대해 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices)를 보완합니다.
 - Configuration Manager의 장기 서비스 분기를 사용하는 경우 [장기 서비스 분기에 대해 지원되는 구성](/sccm/core/understand/supported-configurations-for-ltsb)을 참조하세요.
 
-Configuration Manager에서 Windows 버전이 출시된 후 최대한 빨리 새로운 각 Windows 10 버전을 지원합니다. 제품마다 별도의 개발 및 릴리스 일정이 있으므로 Configuration Manager에서 제공하는 지원은 각 제품의 버전 및 분기가 출시되는 시기에 따라 달라집니다.  
+Configuration Manager에서 Windows 버전이 출시된 후 최대한 빨리 새로운 각 Windows 10 버전을 지원합니다. 제품마다 별도의 개발 및 릴리스 일정이 있으므로 Configuration Manager에서 제공하는 지원은 각 제품의 버전 및 분기가 출시되는 시기에 따라 달라집니다.
+
+예를 들어 Configuration Manager 버전은 [해당 버전의 지원](/sccm/core/servers/manage/current-branch-versions-supported)이 종료되면 매트릭스에서 삭제됩니다. 마찬가지로 Enterprise 2015 LTSB 또는 1607(CBB) 같은 Windows 10 버전의 지원은 Configuration Manager의 지원되는 구성 목록에서 제거되면 매트릭스에서 삭제됩니다. 자세한 내용은 [사용되지 않는 운영 체제](/sccm/core/plan-design/changes/removed-and-deprecated-features#deprecated-operating-systems)를 참조하세요.
 
 
 
-|Windows 10 버전 |Configuration Manager 1602|Configuration Manager 1606|Configuration Manager 1610|
+|Windows 10 버전                    |Configuration Manager 1606          |Configuration Manager 1610          |    Configuration Manager 1702 |
 |---------------------|-----|-----|-----|
-|Enterprise 2015 LTSB |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |
-|1507 <br />Enterprise, Education, Pro | ![지원됨](media/green_check.png)| ![지원됨](media/green_check.png)|![지원됨](media/green_check.png) |
-|1511 <br />Enterprise, Education, Pro <br />(CB) (CBB) |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |
-|Enterprise 2016 LTSB    |![지원되지 않음](media/Red_X.png) |![지원됨](media/green_check.png) | ![지원됨](media/green_check.png)|
-|1607 <br />Enterprise, Education, Pro<br /> (CB)    |![지원되지 않음](media/Red_X.png) |![이전 버전과 호환](media/blue_compat.png) |![지원됨](media/green_check.png) |
-|1607 <br />Enterprise, Education, Pro <br />(CBB)    |![지원되지 않음](media/Red_X.png) |![이전 버전과 호환](media/Red_X.png) |![지원됨](media/green_check.png) |
+|Enterprise 2015 LTSB                   |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |
+|1507 <br />(*버전 참조*)            |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |
+|1511(CB), (CBB)<br />(*버전 참조*) |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |
+|Enterprise 2016 LTSB                   |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |
+|1607(CB)    <br />(*버전 참조*)      |![이전 버전과 호환](media/blue_compat.png) |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |
+|1607(CBB)    <br />(*버전 참조*)      |![지원되지 않음](media/Red_X.png)   |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |
 
+
+
+**버전:** Enterprise, Pro, Education, Pro Education   
 
 |키|
 |--|

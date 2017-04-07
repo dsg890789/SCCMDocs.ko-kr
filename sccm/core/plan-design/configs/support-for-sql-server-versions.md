@@ -2,7 +2,7 @@
 title: "지원되는 SQL Server 버전 | Microsoft 문서"
 description: "System Center Configuration Manager 사이트 데이터베이스를 호스트하기 위한 SQL Server 버전 및 구성 요구 사항을 가져옵니다."
 ms.custom: na
-ms.date: 1/3/2017
+ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 25aa013896ca118f0689b71e5cddcb8baf049c66
-ms.openlocfilehash: 9bf4c1d9ee12da6801470165d33df50b2d08a810
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: ea9edf6392c41e31276900454cd78ce4bc32be7b
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.openlocfilehash: 9bf4c1d9ee12da6801470165d33df50b2d08a810
 
 각 System Center Configuration Manager 사이트에는 사이트 데이터베이스를 호스트할 수 있는 SQL Server 버전 및 구성이 필요합니다.  
 
-##  <a name="a-namebkmkinstancesa-sql-server-instances-and-locations"></a><a name="bkmk_Instances"></a> SQL Server 인스턴스 및 위치  
+##  <a name="bkmk_Instances"></a> SQL Server 인스턴스 및 위치  
  **중앙 관리 사이트 및 기본 사이트**  
 사이트 데이터베이스에서는 SQL Server의 전체 설치를 사용해야 합니다.  
 
@@ -52,10 +53,13 @@ ms.openlocfilehash: 9bf4c1d9ee12da6801470165d33df50b2d08a810
 
  SQL Server는 사이트 서버 컴퓨터에 있어야 합니다.  
 
-##  <a name="a-namebkmksqlversionsa-supported-versions-of-sql-server"></a><a name="bkmk_SQLVersions"></a> 지원되는 SQL Server 버전  
+##  <a name="bkmk_SQLVersions"></a> 지원되는 SQL Server 버전  
  여러 사이트가 있는 계층 구조에서는 사용 중인 SQL Server 버전이 Configuration Manager에서 지원되는 경우 사이트마다 다른 SQL Server 버전을 사용하여 사이트 데이터베이스를 호스트할 수 있습니다.  
 
- 달리 지정되지 않은 경우 다음 버전의 SQL Server는 System Center Configuration Manager 버전 1511 이상에서 지원됩니다.  
+ 별도로 지정되지 않은 경우 다음 버전의 SQL Server는 System Center Configuration Manager의 모든 활성 버전에서 지원됩니다. 새 SQL Server 버전이나 서비스 팩에 대한 지원이 추가되면 해당 지원을 추가하는 Configuration Manager 버전이 표시됩니다. 마찬가지로 더 이상 지원이 제공되지 않는 경우에는 Configuration Manager의 영향받는 버전에 대한 세부 정보를 검색합니다.   
+ 
+누적 업데이트가 기본 서비스 팩 버전으로 돌아가지 않는 한 특정 SQL Server 서비스 팩 지원에는 해당 서비스 팩에 대한 누적 업데이트가 포함됩니다. 서비스 팩 버전이 표시되지 않으면 서비스 팩이 없는 SQL Server의 해당 버전이 지원됩니다. 이후 해당 버전에 대한 서비스 팩이 릴리스된 경우 새 서비스 팩 버전이 지원되기 전에 개별 지원 정보가 선언됩니다.
+
 
 > [!IMPORTANT]  
 >  중앙 관리 사이트의 데이터베이스에 대해 SQL Server Standard를 사용하는 경우에는 계층 구조가 지원할 수 있는 총 클라이언트 수를 제한합니다. [크기 조정 및 규모 숫자 값](../../../core/plan-design/configs/size-and-scale-numbers.md)을 참조하세요.
@@ -109,7 +113,10 @@ ms.openlocfilehash: 9bf4c1d9ee12da6801470165d33df50b2d08a810
 
 
 ### <a name="sql-server-2008-r2-sp3-standard-enterprise-datacenter"></a>SQL Server 2008 R2 SP3: Standard, Enterprise, Datacenter     
-다음에 대한 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
+  [버전 1702부터](/sccm/core/plan-design/changes/removed-and-deprecated-features#deprecated-support-for-sql-server-versions-as-a-site-database) 이 SQL Server 버전이 지원되지 않습니다.  
+ Configuration Manager의 1702 이전 버전을 사용할 경우 이 SQL Server 버전은 계속 지원됩니다.
+
+사용 중인 Configuration Manager 버전에서 지원될 경우 다음에 대한 최소 누적 업데이트 버전 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
 
 -   중앙 관리 사이트  
 -   기본 사이트
@@ -147,7 +154,7 @@ ms.openlocfilehash: 9bf4c1d9ee12da6801470165d33df50b2d08a810
 
 -   보조 사이트  
 
-##  <a name="a-namebkmksqlconfiga-required-configurations-for-sql-server"></a><a name="bkmk_SQLConfig"></a> SQL Server에 대한 필수 구성  
+##  <a name="bkmk_SQLConfig"></a> SQL Server에 대한 필수 구성  
  다음은 사이트 데이터베이스에 사용할 모든 SQL Server 설치(SQL Server Express 포함)에 필요합니다. Configuration Manager에서 보조 사이트 설치의 일부로 SQL Server Express를 설치하는 경우 이러한 구성은 자동으로 만들어집니다.  
 
  **SQL Server 아키텍처 버전:**  
@@ -188,7 +195,7 @@ ms.openlocfilehash: 9bf4c1d9ee12da6801470165d33df50b2d08a810
  **SQL Server CLR 통합**  
   사이트 데이터베이스를 사용하려면 SQL Server CLR(공용 언어 런타임)을 활성화해야 합니다. CLR은 Configuration Manager를 설치할 때 자동으로 사용됩니다. CLR에 대한 자세한 내용은 [SQL Server CLR 통합 소개](https://msdn.microsoft.com/library/ms254498\(v=vs.110\).aspx)를 참조하세요.  
 
-##  <a name="a-namebkmkoptionala-optional-configurations-for-sql-server"></a><a name="bkmk_optional"></a> SQL Server에 대한 선택적 구성  
+##  <a name="bkmk_optional"></a> SQL Server에 대한 선택적 구성  
  전체 SQL Server 설치를 사용하는 각 데이터베이스에 대해 필요한 경우 다음 항목을 구성할 수 있습니다.  
 
  **SQL Server 서비스:**  
@@ -237,8 +244,9 @@ SQL Server를 실행하는 컴퓨터에서 방화벽이 사용하도록 설정�
 
 특정 포트를 사용하도록 SQL Server를 구성하는 방법의 예제는 SQL Server TechNet 라이브러리에서 [방법: 특정 TCP 포트로 수신하도록 서버 구성(SQL Server 구성 관리자)](http://go.microsoft.com/fwlink/p/?LinkID=226349) 을 참조하세요.  
 
-
-
-<!--HONumber=Jan17_HO1-->
-
+## <a name="upgrade-options-for-sql-server"></a>SQL Server 업그레이드 옵션
+SQL Server 버전을 업그레이드해야 할 경우, 쉬운 경우부터 더 복잡한 경우까지 다음 방법을 권장합니다.
+1. [SQL Server 현재 위치 업그레이드](/sccm/core/servers/manage/upgrade-on-premises-infrastructure#a-namebkmksupconfigupgradedbsrva-upgrade-sql-server-on-the-site-database-server)(권장).
+2. SQL Server의 새 버전을 새 컴퓨터에 설치하고 Configuration Manager 설치 프로그램의 [데이터베이스 이동 옵션을 사용](/sccm/core/servers/manage/modify-your-infrastructure#a-namebkmkdbconfiga-modify-the-site-database-configuration)하여 사이트 서버에서 새 SQL Server를 가리킵니다.
+3. [백업 및 복구](/sccm/protect/understand/backup-and-recovery)를 사용합니다.
 

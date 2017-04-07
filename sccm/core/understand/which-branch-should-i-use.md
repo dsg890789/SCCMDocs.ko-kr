@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 26a362b4e5f25414178cae6843869a54eb99028c
-ms.openlocfilehash: b190b6116fba8080ad4e144e4e349e0926d1340b
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: ef044af5f6b32e4161d54c0ab1fb2ef2d245264b
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/28/2017
 >  [!TIP]
 > 현재 분기를 라이선스가 필요하지 않은 평가판으로 설치할 수도 있습니다. 평가판은 180일 동안 사용할 수 있고 현재 분기의 라이선스 버전으로 업그레이드가 지원됩니다.
 
-현재 분기는&1;년 여러 번 새로운 기능으로 업데이트됩니다. 각 업데이트 버전은 릴리스 후&1;년 동안 지원됩니다. 해당&1;년 기간이 만료되기 전에 현재 분기의 최신 버전으로 업데이트해야 합니다. 최신 버전에 대한 업데이트는 콘솔 내 업데이트로 제공됩니다.
+현재 분기는 1년 여러 번 새로운 기능으로 업데이트됩니다. 각 업데이트 버전은 릴리스 후 1년 동안 지원됩니다. 해당 1년 기간이 만료되기 전에 현재 분기의 최신 버전으로 업데이트해야 합니다. 최신 버전에 대한 업데이트는 콘솔 내 업데이트로 제공됩니다.
 
 현재 분기를 새 사이트로 설치하거나 System Center 2012 Configuration Manager 서비스 팩 2 또는 System Center 2012 R2 Configuration Manager 서비스 팩 1에서 업그레이드로 설치하려면 System Cener 2016과 함께 DVD로 제공되거나 System Center Configuration Manager 독립 실행형 릴리스의 일부로 제공되는 System Center Configuration Manager의 [기준 미디어](/sccm/core/servers/manage/updates#baseline-and-update-versions)를 사용합니다. 이 미디어에 대한 액세스는 System Center Configuration Manager 사용이 허가된 방식에 따라 달라집니다.
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 02/28/2017
 - 이전 버전의 Configuration Manager에서 업그레이드를 지원합니다.
 - 평가판으로 설치를 지원하며, 나중에 정식 라이선스 설치로 업그레이드할 수 있습니다.
 
-현재 분기의 초기 릴리스는 버전 1511이었습니다. 후속 업데이트에는 버전 1602, 1606 등이 포함됩니다. 각 버전은&1;년 동안 지원되며, 릴리스 후 즉시 최신 버전으로 업데이트하는 것이 좋습니다. 최신 버전으로 업데이트하기 전에 최대&1;년 동안 기다릴 수 있으며, 사용 가능한 최신 버전을 설치하기 위해 업데이트를 건너뛸 수도 있습니다. 각 버전은 누적되므로 업데이트를 건너뛰고 최신 버전을 설치하는 경우에도 이전 버전의 모든 기능 및 향상된 기능에 액세스할 수 있습니다.
+현재 분기의 초기 릴리스는 버전 1511이었습니다. 후속 업데이트에는 버전 1602, 1606 등이 포함됩니다. 각 버전은 1년 동안 지원되며, 릴리스 후 즉시 최신 버전으로 업데이트하는 것이 좋습니다. 최신 버전으로 업데이트하기 전에 최대 1년 동안 기다릴 수 있으며, 사용 가능한 최신 버전을 설치하기 위해 업데이트를 건너뛸 수도 있습니다. 각 버전은 누적되므로 업데이트를 건너뛰고 최신 버전을 설치하는 경우에도 이전 버전의 모든 기능 및 향상된 기능에 액세스할 수 있습니다.
 
 자세한 내용은 [현재 분기 버전 지원](/sccm/core/servers/manage/current-branch-versions-supported)을 참조하세요.
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 02/28/2017
 ##  <a name="long-term-servicing-branch-of-system-center-configuration"></a>System Center 구성의 장기 서비스 분기
 현재 분기를 사용하며 Configuration Manager SA(Software Assurance) 또는 동등한 구독 권한이 2016년 10월 1일 후에 만료되도록 허용한 Configuration Manager 고객이 프로덕션에서 사용하도록 허가된 분기입니다. Software Assurance 및 라이선스 옵션에 대한 자세한 내용은 [System Center Configuration Manager의 라이선스 및 분기](learn-more-editions.md)를 참조하세요.
 
-LTSB는 새로운 기능을 제공하거나 기존 기능을 업데이트하는 콘솔 내 업데이트를 받지 않습니다. 그러나 중요한 보안 수정이 제공됩니다.
+LTSB는 버전 1606을 기반으로 합니다. 이 분기는 새로운 기능을 제공하거나 기존 기능을 업데이트하는 콘솔 내 업데이트를 받지 않습니다. 그러나 중요한 보안 수정이 제공됩니다. LTSB를 설치하려면 System Center 2016 또는 System Center Configuration Manager와 함께 DVD로 제공되는 버전 1606 [기준선 미디어](/sccm/core/servers/manage/updates#baseline-and-update-versions)를 사용해야 합니다.
 
 LTSB를 새 사이트로 설치하거나 지원되는 Configuration Manager 2012 사이트에서 업그레이드로 설치하려면 System Center 2016 또는 System Center Configuration Manager(현재 분기 및 장기 서비스 분기 1606) 릴리스와 함께 DVD로 제공되는 버전 1606 [기준 미디어](/sccm/core/servers/manage/updates#baseline-and-update-versions)를 사용합니다. 기준 미디어를 사용하여 현재 분기의 버전 1606을 실행하는 새 사이트 또는 장기 서비스 분기를 실행하는 새 사이트를 설치할 수 있습니다.
 

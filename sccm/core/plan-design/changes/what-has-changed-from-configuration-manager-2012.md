@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 52d2e088b8db3c2e9a0af640ca3db72b9fd7af60
-ms.openlocfilehash: de30afa200404d977f56c08d24a9b11e21f9ae88
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 6b1a4584ebcd4dadd983677b714486402c93e190
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -30,29 +31,31 @@ ms.openlocfilehash: de30afa200404d977f56c08d24a9b11e21f9ae88
 
 
 
- System Center Configuration Manager(버전 1511)의 2015년 12월 릴리스는 Microsoft Configuration Manager의 최신 제품 릴리스입니다. 일반적으로 System Center Configuration Manager 현재 분기라고 합니다. *현재 분기*는 제품의 증분 업데이트를 지원하는 버전임을 나타냅니다. 또한 이를 통해 Configuration Manager의 이 릴리스와 이전 릴리스를 구분할 수 있습니다.  
+ System Center Configuration Manager(버전 1511)의 2015년 12월 릴리스는 현재 Microsoft Configuration Manager 제품의 초기 릴리스였습니다. 일반적으로 System Center Configuration Manager 현재 분기라고 합니다. *현재 분기*는 제품의 증분 업데이트를 지원하는 버전임을 나타냅니다. 또한 이를 통해 Configuration Manager의 이 릴리스와 이전 릴리스를 구분할 수 있습니다.  
 
- 이 릴리스에서 System Center Configuration Manager는 다음과 같은 특징이 있습니다.  
+ System Center Configuration Manager:  
 
 -   Configuration Manager 2007, System Center 2012 Configuration Manager 등의 이전 버전과 달리 제품 이름에 연도나 제품 식별자를 사용하지 않습니다.
 
--   업데이트 버전이라고도 하는 증분식 제품 내 업데이트를 지원합니다. 초기 릴리스는 버전 1511입니다. 후속 버전은 버전 1602 또는 1606과 같이 콘솔 내 업데이트로 1년에 여러 번 출시됩니다.
+-   업데이트 버전이라고도 하는 증분식 제품 내 업데이트를 지원합니다. 초기 릴리스는 버전 1511입니다. 후속 버전은 버전 1610과 같이 콘솔 내 업데이트로 1년에 여러 번 출시됩니다.
+-   기준선 버전을 사용하여 설치됩니다. 1511이 원래 기준선 버전이지만 시간이 지나면서 1606 등의 새 기준선 버전이 릴리스됩니다. 기준선 버전을 사용하여 새 System Center Configuration Manager 사이트 및 계층 구조를 설치하거나 Configuration Manager 2012의 지원되는 버전에서 업그레이드할 수 있습니다.
 
 
 
 
-##  <a name="a-namebkmkupdatesa-in-console-updates-for-configuration-manager"></a><a name="bkmk_updates"></a> Configuration Manager의 콘솔 내 업데이트  
+##  <a name="bkmk_updates"></a> Configuration Manager의 콘솔 내 업데이트  
  System Center Configuration Manager는 권장 업데이트를 손쉽게 찾아서 설치할 수 있도록 하는 **업데이트 및 서비스**라는 콘솔 내 서비스 메서드를 사용합니다.  
 
  일부 버전은 기존 사이트에 대한 업데이트로만 사용할 수 있으며(Configuration Manager 콘솔 내에서) 새 Configuration Manager 사이트를 설치하는 데 사용할 수 없습니다.   
-예를 들어 1602 업데이트는 Configuration Manager 콘솔 내에서만 사용할 수 있습니다. 기준선 버전 1511을 실행하는 사이트를 버전 1602로 업데이트하는 데 사용됩니다.  
+예를 들어 1610 업데이트는 Configuration Manager 콘솔 내에서만 사용할 수 있습니다. System Center Configuration Manager 버전을 이미 실행하는 사이트를 업데이트하는 데 사용됩니다.
 
-업데이트 버전이 주기적으로 새로운 기준선 버전(예: 업데이트 1606)으로 릴리스됩니다. 이런 업데이트는 기존 기준선 버전(예: 1511)으로 시작하여 최신 버전으로 업그레이드할 필요 없이 새로운 계층 구조를 설치하는 데 사용할 수 있습니다.
+또한 업데이트 버전이 주기적으로 새로운 기준선 버전(예: 업데이트 1606)으로 릴리스됩니다. 이런 업데이트는 기존 기준선 버전(예: 1511)으로 시작하여 최신 버전으로 업그레이드할 필요 없이 새로운 계층 구조를 설치하는 데 사용할 수 있습니다.
 
 
- 업데이트 사용 방법에 대한 자세한 내용은 [System Center Configuration Manager용 업데이트](../../../core/servers/manage/updates.md)를 참조하세요.  
+업데이트 사용 방법에 대한 자세한 내용은 [System Center Configuration Manager용 업데이트](../../../core/servers/manage/updates.md)를 참조하세요.  
+기준선에 대한 자세한 내용은 [기준선 및 업데이트 버전](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)을 참조하세요.
 
-##  <a name="a-namebkmkservicepointa-new-site-system-role-service-connection-point"></a><a name="bkmk_servicepoint"></a> 새 사이트 시스템 역할: 서비스 연결 지점  
+##  <a name="bkmk_servicepoint"></a> 새 사이트 시스템 역할: 서비스 연결 지점  
  **Microsoft Intune 커넥터**가 추가 기능인 **서비스 연결 지점**을 활성화하는 새 사이트 시스템 역할로 대체됩니다. 서비스 연결 지점은:  
 
 -   System Center Configuration Manager 온-프레미스 모바일 장치 관리와 Intune을 통합할 때 Microsoft Intune 커넥터를 대체합니다.  
@@ -65,19 +68,19 @@ ms.openlocfilehash: de30afa200404d977f56c08d24a9b11e21f9ae88
 
 이 사이트 시스템 역할은 작업의 온라인 및 오프라인 모드를 모두 지원합니다. 자세한 내용은 [About the service connection point in System Center Configuration Manager](../../../core/servers/deploy/configure/about-the-service-connection-point.md)을 참조하십시오.  
 
-##  <a name="a-namebkmkusagea-usage-data-collection"></a><a name="bkmk_usage"></a> 사용 현황 데이터 수집  
+##  <a name="bkmk_usage"></a> 사용 현황 데이터 수집  
  System Center Configuration Manager는 사이트 및 인프라에 대한 사용 현황 데이터를 수집합니다. 이 정보는 서비스 연결 지점을 통해 컴파일되어 Microsoft 클라우드 서비스에 제출됩니다. 사용하는 Configuration Manager의 버전에 적용되는 배포의 업데이트를 다운로드하기 위해 Configuration Manager를 사용하도록 설정하는 데 필요합니다. 서비스 연결 지점을 설정할 때 수집되는 데이터의 액세스 수준과 해당 데이터를 자동으로 제출할지(온라인 모드) 아니면 수동으로 제출할지(오프라인 모드) 여부를 지정할 수 있습니다.  
 
  자세한 내용은 [사용 데이터 수준 및 설정](../../../core/servers/deploy/install/setup-reference.md#bkmk_usage)을 참조하세요.  
 
-##  <a name="a-namebkmkamta-support-for-intel-active-management-technology-amt"></a><a name="bkmk_AMT"></a> Intel AMT(Active Management Technology) 지원  
+##  <a name="bkmk_AMT"></a> Intel AMT(Active Management Technology) 지원  
  System Center Configuration Manager에서 Configuration Manager 콘솔 내의 AMT 기반 컴퓨터에 대한 기본 지원이 제거되었습니다. [Microsoft System Center Configuration Manager용 Intel SCS 추가 기능](http://www.intel.com/content/www/us/en/software/setup-configuration-software.html)을 사용하는 경우 AMT 기반 컴퓨터가 완전히 관리되는 상태로 유지됩니다. 추가 기능을 사용하면 AMT를 관리할 최신 기능에 액세스하고 Configuration Manager가 해당 변경 사항을 통합할 수 있을 때까지 도입된 제한 사항을 제거할 수 있습니다.  
 
 System Center Configuration Manager에 대한 통합 AMT 제거에는 대역 외 관리가 포함됩니다. 대역 외 관리 지점 사이트 시스템 역할은 더 이상 사용되지 않거나 사용할 수 없습니다.  
 
 System Center 2012 Configuration Manager의 대역 외 관리는 이 변경 내용에 의해 영향을 받지 않습니다.
 
-##  <a name="a-namebkmkouta-deprecated-functionality"></a><a name="bkmk_out"></a> 사용되지 않는 기능  
+##  <a name="bkmk_out"></a> 사용되지 않는 기능  
  [Intel AMT(Active Management Technology) 지원 기반 컴퓨터에 대한 기본 지원](#bkmk_AMT)과 같은 일부 기능은 Configuration Manager 콘솔에서 제거됩니다. 네트워크 액세스 보호와 같은 다른 기능은 완전히 제거됩니다. 또한 Windows Vista, Windows Server 2008, SQL Server 2008 등 이전 Microsoft 제품 중 일부는 더 이상 지원되지 않습니다.  
 
  사용되지 않는 기능 목록은 [System Center Configuration Manager에서 제거되는 기능과 사용되지 않는 기능](../../../core/plan-design/changes/removed-and-deprecated-features.md)을 참조하세요.  
@@ -165,9 +168,4 @@ Configuration Manager와 Intune을 사용하는 모바일 장치 관리 기능�
  이제 온-프레미스 Configuration Manager 인프라를 사용하여 모바일 장치를 관리할 수 있습니다. 모든 장치 관리 및 관리 데이터는 온-프레미스에서 처리되며 Microsoft Intune 또는 기타 클라우드 서비스의 일부가 아닙니다. 이 종류의 장치 관리에는 클라이언트 소프트웨어가 필요하지 않습니다. Configuration Manager에서 장치 운영 체제에 기본 제공되는 기능을 사용하여 장치를 관리합니다.  
 
  자세한 내용은 [System Center Configuration Manager의 온-프레미스 인프라로 모바일 장치 관리](../../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)를 참조하세요.
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

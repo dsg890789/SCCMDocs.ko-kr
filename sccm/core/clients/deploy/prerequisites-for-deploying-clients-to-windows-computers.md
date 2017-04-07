@@ -2,7 +2,7 @@
 title: "Windows 클라이언트 배포 필수 조건 | Microsoft 문서"
 description: "System Center Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하기 위한 필수 조건을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/5/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,9 +17,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: cbcffea0fe2b4c8a05d3a835ff1193b528e55762
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 7ed1b9e6802cc20defcb92a8e536983fd757bd29
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -36,7 +36,7 @@ ms.lasthandoff: 12/16/2016
 > [!NOTE]  
 >  이 문서에 표시된 소프트웨어 버전 번호는 필요한 최소 버전 번호만 나타냅니다.  
 
-##  <a name="a-namebkmkprereqscomputersa-prerequisites-for-computer-clients"></a><a name="BKMK_prereqs_computers"></a> 컴퓨터 클라이언트에 대한 필수 조건  
+##  <a name="BKMK_prereqs_computers"></a> 컴퓨터 클라이언트에 대한 필수 조건  
  컴퓨터에 Configuration Manager 클라이언트를 설치할 경우의 필수 조건을 확인하려면 다음 정보를 참조하세요.  
 
 ### <a name="dependencies-external-to-configuration-manager"></a>Configuration Manager 외부 종속성  
@@ -65,9 +65,10 @@ ms.lasthandoff: 12/16/2016
 |Microsoft Silverlight 5.1.41212.0(Configuration Manager 버전 1602부터)|응용 프로그램 카탈로그 웹 사이트 사용자 환경을 지원하는 데 필요합니다.|  
 |Microsoft .NET Framework 버전 4.5.2|클라이언트 작업을 지원하는 데 필요합니다. Microsoft.NET Framework 버전 4.5 이상을 설치하지 않은 경우 자동으로 클라이언트 컴퓨터에 설치됩니다. 자세한 내용은 [Microsoft .NET Framework 버전 4.5.2에 대한 추가 세부 정보](#dotNet)를 참조하세요.|  
 |Microsoft SQL Server Compact 3.5 SP2 구성 요소|클라이언트 작업과 관련된 정보를 저장하는 데 필요합니다.|  
-|Microsoft Windows Imaging 구성 요소|64비트 컴퓨터용 Windows Server 2003 또는 Windows XP SP2의 Microsoft .NET Framework 4.0에 필요합니다.|  
+|Microsoft Windows Imaging 구성 요소|64비트 컴퓨터용 Windows Server 2003 또는 Windows XP SP2의 Microsoft .NET Framework 4.0에 필요합니다.|
+|Microsoft Intune PC 소프트웨어 클라이언트|Intune PC 소프트웨어 클라이언트 및 Configuration Manager 클라이언트를 같은 PC에서 실행할 수 없습니다. Configuration Manager 클라이언트를 설치하기 전에 Intune 클라이언트가 제거되었는지 확인하세요.|
 
-####  <a name="a-namedotneta-additional-details-about-microsoft-net-framework-version-452"></a><a name="dotNet"></a> Microsoft .NET Framework 버전 4.5.2에 대한 추가 세부 정보  
+####  <a name="dotNet"></a> Microsoft .NET Framework 버전 4.5.2에 대한 추가 세부 정보  
 
 > [!NOTE]  
 >  2016년 1월 12일에, .NET 4.0, 4.5 및 4.5.1에 대한 지원이 만료됩니다. 자세한 내용은 support.microsoft.com에서 [Microsoft .NET Framework 지원 기간 정책 FAQ](https://support.microsoft.com/gp/framework_faq?WT.mc_id=azurebg_email_Trans_943_NET452_Update)를 참조하세요.  
@@ -162,7 +163,7 @@ ms.lasthandoff: 12/16/2016
 ### <a name="firewall-requirements"></a>방화벽 요구 사항  
  Configuration Manager 클라이언트를 설치할 컴퓨터와 사이트 시스템 서버 사이에 방화벽이 있는 경우 [System Center Configuration Manager에서 클라이언트용 Windows 방화벽 및 포트 설정](../../../core/clients/deploy/windows-firewall-and-port-settings-for-clients.md)을 참조하세요.  
 
-##  <a name="a-namebkmkprereqsmobiledevicesa-prerequisites-for-mobile-device-clients"></a><a name="BKMK_prereqs_mobiledevices"></a> 모바일 장치 클라이언트에 대한 필수 조건  
+##  <a name="BKMK_prereqs_mobiledevices"></a> 모바일 장치 클라이언트에 대한 필수 조건  
  모바일 장치에 Configuration Manager 클라이언트를 설치하고 Configuration Manager를 사용하여 해당 장치를 등록할 경우의 필수 조건을 확인하려면 다음 정보를 참조하세요.  
 
 ### <a name="dependencies-external-to-configuration-manager"></a>Configuration Manager 외부 종속성  

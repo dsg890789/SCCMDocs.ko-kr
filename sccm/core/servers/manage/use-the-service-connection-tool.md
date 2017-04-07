@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: b4642186e42745640f088b7046e70019616935ea
-ms.openlocfilehash: 9a5cd5ce3ce6868b44768d3cbe7b7c594f44d42c
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 7a9c5bb9890b00cf3485998aa46286c890429cc0
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -149,7 +149,9 @@ Configuration Manager 사이트 시스템 서버가 인터넷에 연결되어 �
 
 8.  가져오기가 완료되면 명령 프롬프트를 닫아도 됩니다. 해당 계층 구조에 대한 업데이트만 가져옵니다.  
 
-9. Configuration Manager 콘솔을 열고 **관리** >**클라우드 서비스** > **업데이트 및 서비스**로 이동합니다. 이제 가져온 업데이트를 설치할 수 있습니다. 업데이트를 설치하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 콘솔 내 업데이트 설치](../../../core/servers/manage/install-in-console-updates.md)를 참조하세요.  
+9. Configuration Manager 콘솔을 열고 **관리** > **업데이트 및 서비스**로 이동합니다. 이제 가져온 업데이트를 설치할 수 있습니다. 버전 1702 이전에는 업데이트 및 서비스가 **관리** > **Cloud Services** 아래에 있었습니다.
+
+ 업데이트를 설치하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 콘솔 내 업데이트 설치](../../../core/servers/manage/install-in-console-updates.md)를 참조하세요.  
 
 ## <a name="bkmk_cmd"></a> 명령줄 옵션  
  서비스 연결 지점 도구에 대한 도움말 정보를 보려면 도구가 포함된 폴더에서 명령 프롬프트를 열고  **serviceconnectiontool.exe**명령을 실행합니다.  
