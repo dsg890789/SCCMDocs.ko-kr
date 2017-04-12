@@ -2,7 +2,7 @@
 title: "릴리스 정보 - Configuration Manager | Microsoft 문서"
 description: "Microsoft 기술 자료 문서에서 다루지 않거나 제품에서 아직 해결되지 않은 긴급한 문제에 대해서는 이 정보를 참조하세요."
 ms.custom: na
-ms.date: 3/27/27
+ms.date: 03/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
