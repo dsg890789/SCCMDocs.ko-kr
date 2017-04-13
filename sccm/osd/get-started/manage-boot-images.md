@@ -17,9 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 4edf7d09d39fa22fb5812aecc88febd763001eba
-ms.openlocfilehash: 369aa062d0f38eedebc0a7c351a7ce67b53d199b
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 0cf2ac6440588ccf4848baa7a195f78e8675447d
+ms.openlocfilehash: c6a1eb9ccaee45eb242fb320cb6b492d1a39d349
+ms.lasthandoff: 04/11/2017
 
 
 ---
@@ -29,19 +29,33 @@ ms.lasthandoff: 02/21/2017
 
 Configuration Manager의 부팅 이미지는 운영 체제 배포 중에 사용되는 [WinPE(Windows PE)](https://msdn.microsoft.com/library/windows/hardware/dn938389%28v=vs.85%29.aspx) 이미지입니다. 부팅 이미지는 Windows 설치용 대상 컴퓨터를 준비하는 제한된 구성 요소 및 서비스가 포함된 최소 운영 체제인 WinPE에서 컴퓨터를 시작하는 데 사용됩니다.  부팅 이미지를 관리하려면 다음 섹션을 참조하세요.
 
-##  <a name="a-namebkmkbootimagedefaulta-default-boot-images"></a><a name="BKMK_BootImageDefault"></a> 기본 부팅 이미지  
- Configuration Manager는 x86 플랫폼을 지원하는 부팅 이미지와 x64 플랫폼을 지원하는 부팅 이미지 등 두 가지 기본 부팅 이미지를 제공합니다. 이러한 이미지는 \\\\*서버 이름*>\SMS_<*사이트 코드*>\osd\boot\\<*x64*> 또는 <*i386*>에 저장됩니다.  
+## <a name="BKMK_BootImageDefault"></a> 기본 부팅 이미지
+Configuration Manager는 x86 플랫폼을 지원하는 부팅 이미지와 x64 플랫폼을 지원하는 부팅 이미지 등 두 가지 기본 부팅 이미지를 제공합니다. 이러한 이미지는 \\\\*서버 이름*>\SMS_<*사이트 코드*>\osd\boot\\<*x64*> 또는 <*i386*>에 저장됩니다. 기본 부팅 이미지는 수행하는 작업에 따라 업데이트되거나 다시 생성됩니다.
 
- 새 버전으로 Configuration Manager를 업그레이드하는 경우 Configuration Manager에서 이 위치의 기본 부팅 이미지와, 기본 부팅 이미지를 기반으로 하는 사용자 지정된 부팅 이미지를 업데이트된 파일로 바꿀 수 있습니다. 드라이버를 포함하여 부팅 이미지를 업데이트하면 사이트의 기본 부팅 이미지에서 구성하는 옵션(예: 선택적 구성 요소)이 전달됩니다. 드라이버 소스 파일을 비롯하여 원본 드라이버 개체가 유효해야 합니다. 그렇지 않으면 사이트의 업데이트된 부팅 이미지에 드라이버가 추가되지 않습니다. 동일한 Windows ADK 버전을 기반으로 하는 경우에도 기본 부팅 이미지를 기반으로 하지 않는 다른 부팅 이미지는 업데이트되지 않습니다. 부팅 이미지가 업데이트된 후 배포 지점에 이를 재배포해야 합니다. 부팅 이미지를 사용하는 모든 미디어를 다시 생성해야 합니다. 사용자 지정된/기본 부팅 이미지를 자동으로 업데이트를 하지 않으려면 다른 위치에 저장해야 합니다.  
+**업데이트 및 설치를 사용하여 최신 버전의 Configuration Manager 설치** 버전 1702부터 Windows ADK 버전을 업그레이드한 다음 업데이트 및 설치를 사용하여 최신 버전의 Configuration Manager를 설치하면 Configuration Manager가 기본 부팅 이미지를 다시 생성합니다. 여기에는 업데이트된 Windows ADK의 새 Window PE 버전, 새 Configuration Manager 클라이언트 버전, 드라이버, 사용자 지정 등이 포함됩니다. 사용자 지정 부팅 이미지는 수정되지 않습니다.
 
- **소프트웨어 라이브러리**에 추가한 모든 부팅 이미지에 Configuration Manager 추적 로그 도구가 추가됩니다. WinPE에 있는 경우 명령 프롬프트에서 **CMTrace**를 입력하여 Configuration Manager 추적 로그 도구를 시작할 수 있습니다.  
+버전 1702 이전 버전의 경우 Configuration Manager는 클라이언트 구성 요소, 드라이버, 사용자 지정 등이 포함된 기존 부팅 이미지(boot.wim)를 업데이트하지만, Windows ADK의 최신 Windows PE 버전을 사용하지 않습니다. 새 Windows ADK 버전을 사용하려면 부팅 이미지를 수동으로 수정해야 합니다.
 
-##  <a name="a-namebkmkbootimagecustoma-customize-a-boot-image"></a><a name="BKMK_BootImageCustom"></a> 부팅 이미지 사용자 지정  
+**Configuration Manager 2012에서 Configuration Manager CB(현재 분기)로 업그레이드** 설치 프로세스를 사용하여 Configuration Manager 2012를 Configuration Manager CB로 업그레이드하면 Configuration Manager가 기본 부팅 이미지를 다시 생성합니다. 여기에는 업데이트된 Windows ADK의 새 Window PE 버전이 포함되며, 새 Configuration Manager 클라이언트 버전 및 모든 사용자 지정은 변경되지 않고 그대로 유지됩니다. 사용자 지정 부팅 이미지는 수정되지 않습니다.
+
+**부팅 이미지를 사용하여 배포 지점 업데이트** Configuration Manager 콘솔의 **부팅 이미지** 노드에서 **배포 지점 업데이트** 작업을 사용하는 경우 Configuration Manager는 클라이언트 구성 요소, 드라이버, 사용자 지정 등이 포함된 기본 부팅 이미지를 업데이트하지만, Windows ADK의 최신 Windows PE 버전을 사용하지 않습니다. 사용자 지정 부팅 이미지는 수정되지 않습니다.
+
+또한 위의 작업에 대해 다음 사항을 고려합니다.
+- 드라이버 소스 파일을 비롯하여 원본 드라이버 개체가 유효해야 합니다. 그렇지 않으면 사이트의 부팅 이미지에 드라이버가 추가되지 않습니다.
+- 같은 Windows PE 버전을 사용하더라도 기본 부팅 이미지를 기반으로 하지 않는 부팅 이미지는 수정되지 않습니다.
+- 수정된 부팅 이미지를 배포 지점에 다시 배포해야 합니다.
+- 수정된 부팅 이미지를 사용하는 모든 미디어를 다시 만들어야 합니다.
+- 사용자 지정된/기본 부팅 이미지를 자동으로 업데이트하지 않으려면 기본 위치에 저장하지 마세요.
+
+> [!NOTE]
+> **소프트웨어 라이브러리**에 추가한 모든 부팅 이미지에 Configuration Manager 추적 로그 도구가 추가됩니다. Windows PE에 있는 경우 명령 프롬프트에서 **CMTrace**를 입력하여 Configuration Manager 추적 로그 도구를 시작할 수 있습니다.  
+
+##  <a name="BKMK_BootImageCustom"></a> 부팅 이미지 사용자 지정  
  지원되는 버전의 Windows ADK에 있는 Windows PE 버전을 기반으로 하는 경우 Configuration Manager 콘솔에서 부팅 이미지를 사용자 지정하거나 [부팅 이미지를 수정](#BKMK_ModifyBootImages)할 수 있습니다. 사이트를 새 버전으로 업그레이드하고 Windows ADK의 새 버전을 설치하는 경우 사용자 지정 부팅 이미지(기본 부팅 이미지의 위치에 없음)는 Windows ADK의 새 버전으로 업데이트되지 않습니다. 이 경우, Configuration Manager 콘솔에서 더 이상 부팅 이미지를 사용자 지정할 수 없습니다. 그러나 업그레이드하기 전과 마찬가지로 계속 작동합니다.  
 
  부팅 이미지가 사이트에 설치된 Windows ADK의 다른 버전을 기반으로 할 때 Windows AIK 및 Windows ADK의 일부인 DISM(배포 이미지 서비스 및 관리) 명령줄 도구 등의 다른 방법을 사용하여 부팅 이미지를 사용자 지정해야 합니다. 자세한 내용은 [부팅 이미지 사용자 지정](customize-boot-images.md)을 참조하세요.  
 
-##  <a name="a-namebkmkaddbootimagesa-add-a-boot-image"></a><a name="BKMK_AddBootImages"></a> 부팅 이미지 추가  
+##  <a name="BKMK_AddBootImages"></a> 부팅 이미지 추가  
 
  사이트 설치 중 Configuration Manager는 지원되는 버전의 Windows ADK에 있는 WinPE 버전을 기반으로 하는 부팅 이미지를 자동으로 추가합니다. Configuration Manager의 버전에 따라 지원되는 버전의 Windows ADK에 있는 다른 WinPE 버전을 기반으로 하는 부팅 이미지를 추가할 수 있습니다.  지원되지 않는 버전의 WinPE를 포함하는 부팅 이미지를 추가하려고 하면 오류가 발생합니다.  
 
@@ -96,7 +110,7 @@ Configuration Manager의 부팅 이미지는 운영 체제 배포 중에 사용�
 > [!NOTE]  
 >  Configuration Manager 콘솔에서 **부팅 이미지** 노드를 선택하면 **크기(KB)** 열에 각 부팅 이미지의 압축 해제된 크기가 표시됩니다. 그러나 Configuration Manager가 네트워크를 통해 부팅 이미지를 전송할 때에는 이미지의 압축된 복사본을 전송하므로, 보통 **크기(KB)** 열에 표시된 크기보다 훨씬 더 작습니다.  
 
-##  <a name="a-namebkmkdistributebootimagesa-distribute-boot-images-to-a-distribution-point"></a><a name="BKMK_DistributeBootImages"></a> 배포 지점에 부팅 이미지 배포  
+##  <a name="BKMK_DistributeBootImages"></a> 배포 지점에 부팅 이미지 배포  
  부팅 이미지는 다른 콘텐츠를 배포하는 것과 같은 방식으로 배포 지점에 배포할 수 있습니다. 대부분의 경우 운영 체제를 배포하고 미디어를 만들기 전에 하나 이상의 배포 지점에 부팅 이미지를 배포해야 합니다.  
 
 > [!NOTE]  
@@ -110,7 +124,7 @@ Configuration Manager의 부팅 이미지는 운영 체제 배포 중에 사용�
 
  부팅 이미지를 배포하는 단계는 [콘텐츠 배포](../../core/servers/deploy/configure/deploy-and-manage-content.md#a-namebkmkdistributea-distribute-content)를 참조하세요.  
 
-##  <a name="a-namebkmkmodifybootimagesa-modify-a-boot-image"></a><a name="BKMK_ModifyBootImages"></a> 부팅 이미지 수정  
+##  <a name="BKMK_ModifyBootImages"></a> 부팅 이미지 수정  
  이미지에 장치 드라이버를 추가 또는 제거하거나 부팅 이미지와 관련된 속성을 편집할 수 있습니다. 추가하거나 제거할 수 있는 장치 드라이버에는 네트워크 어댑터 또는 대용량 저장소 장치 드라이버 등이 있습니다. 부팅 이미지를 수정할 경우 다음 요소를 고려하세요.  
 
 -   부팅 이미지에 추가하려면 먼저 장치 드라이버를 가져오고 장치 드라이버 카탈로그에서 사용하도록 설정해야 합니다.  
@@ -212,7 +226,7 @@ Configuration Manager의 부팅 이미지는 운영 체제 배포 중에 사용�
 
 6.  속성을 구성했으면 **확인**을 클릭합니다.  
 
-##  <a name="a-namebkmkbootimagepxea-configure-a-boot-image-to-deploy-from-a-pxe-enabled-distribution-point"></a><a name="BKMK_BootImagePXE"></a> PXE 사용 배포 지점에서 배포하도록 부팅 이미지 구성  
+##  <a name="BKMK_BootImagePXE"></a> PXE 사용 배포 지점에서 배포하도록 부팅 이미지 구성  
  PXE 운영 체제 배포에 부팅 이미지를 사용하려면 먼저 해당 부팅 이미지를 PXE 사용 배포 지점에서 배포하도록 구성해야 합니다.  
 
 #### <a name="to-configure-a-boot-image-to-deploy-from-a-pxe-enabled-distribution-point"></a>PXE 사용 배포 지점에서 배포하도록 부팅 이미지를 구성하려면  
@@ -232,7 +246,7 @@ Configuration Manager의 부팅 이미지는 운영 체제 배포 중에 사용�
 
 6.  속성을 구성했으면 **확인**을 클릭합니다.  
 
-##  <a name="a-namebkmkbootimagelanguagea-configure-multiple-languages-for-boot-image-deployment"></a><a name="BKMK_BootImageLanguage"></a> 부팅 이미지 배포에 필요한 여러 언어 구성  
+##  <a name="BKMK_BootImageLanguage"></a> 부팅 이미지 배포에 필요한 여러 언어 구성  
  부팅 이미지는 언어 중립적입니다. 따라서 단일 부팅 이미지를 사용하여 작업 순서 텍스트를 여러 언어로 표시할 수 있습니다. 단, WinPE의 경우 Windows PE 선택적 구성 요소에서 적합한 언어 지원을 포함한 경우 적합한 작업 순서 변수를 설정하여 표시할 수 있는 언어를 나타낼 수 있습니다. 배포하는 운영 체제의 언어는 Configuration Manager 버전에 상관없이 WinPE에 표시되는 언어와 독립적입니다. 사용자에게 표시되는 언어는 다음과 같은 방식으로 결정됩니다.  
 
 -   기존 운영 체제에서 작업 순서를 실행하는 경우 Configuration Manager는 사용자에게 구성된 언어를 자동으로 사용합니다. 필수 배포 최종 기한에 도달하여 작업 순서가 자동으로 실행된 경우 Configuration Manager는 운영 체제의 언어를 사용합니다.  
@@ -248,5 +262,5 @@ Configuration Manager의 부팅 이미지는 운영 체제 배포 중에 사용�
 
 1.  부팅 이미지를 업데이트하기 전에 사이트 서버의 해당 언어 폴더에 적합한 작업 순서 리소스 파일(tsres.dll)이 있는지 확인합니다. 예를 들어 영어 리소스 파일은 <*Configuration Manager 설치 폴더*>\OSD\bin\x64\00000409\tsres.dll 위치에 있습니다.  
 
-2.  시작 전 명령의 일부로 SMSTSLanguageFolder 환경 변수를 적합한 언어 ID로 설정합니다. 언어 ID는&16;진수가 아닌&10;진수를 사용하여 지정해야 합니다. 예를 들어 언어 ID를 영어로 설정하려면 폴더 이름에 사용되는 16진수 값인 00000409 대신 10진수 값인 1033을 지정합니다.  
+2.  시작 전 명령의 일부로 SMSTSLanguageFolder 환경 변수를 적합한 언어 ID로 설정합니다. 언어 ID는 16진수가 아닌 10진수를 사용하여 지정해야 합니다. 예를 들어 언어 ID를 영어로 설정하려면 폴더 이름에 사용되는 16진수 값인 00000409 대신 10진수 값인 1033을 지정합니다.  
 
