@@ -2,7 +2,7 @@
 title: "권장 하드웨어 | Microsoft 문서"
 description: "System Center Configuration Manager 환경을 기본 배포 이상으로 확장하는 데 도움이 되는 하드웨어 권장 사항을 확인합니다."
 ms.custom: na
-ms.date: 2/28/2017
+ms.date: 3/30/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,9 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 63ee782a718cf4a66ffe25b022aa317f3e45784c
-ms.openlocfilehash: 6701d5f21e8511ec9cf4fe7bc5804b3e2fdc4c71
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: 8d3791bcf737e63308155787ed23c9cc84e7e99c
+ms.openlocfilehash: fd9f5b25a1e40b5f0df823dcbe9c13a77c534c59
+ms.lasthandoff: 03/31/2017
 
 
 ---
@@ -168,14 +168,12 @@ ms.lasthandoff: 02/28/2017
 
  **PowerShell 지원:**  
 
- Configuration Manager 콘솔을 실행하는 컴퓨터에 PowerShell 지원을 설치하면 해당 컴퓨터에서 PowerShell cmdlet을 실행하여 Configuration Manager를 관리할 수 있습니다. 지원되는 최소 버전은 다음과 같습니다.  
+ Configuration Manager 콘솔을 실행하는 컴퓨터에 PowerShell 지원을 설치하면 해당 컴퓨터에서 PowerShell cmdlet을 실행하여 Configuration Manager를 관리할 수 있습니다.
 
--   PowerShell 3.0  
+ - PowerShell 3.0 이상이 지원됩니다.
 
--   PowerShell 4.0  
+PowerShell 외에 WMF(Windows Management Framework) 버전 3.0 이상이 지원됩니다.   
 
-PowerShell 외에 WMF(Windows Management Framework) 3.0 및 4.0도 지원됩니다.   
-Configuration Manager 콘솔을 설치하기 전이나 설치한 후에 PowerShell을 설치할 수 있습니다.  
 
 ##  <a name="bkmk_ScaleLab"></a> 랩 배포  
  Configuration Manager 랩 및 테스트 배포의 경우 다음 최소 하드웨어 권장 사항을 따르세요. 이러한 권장 사항은 모든 사이트 유형, 최대 100개의 클라이언트에 적용됩니다.  

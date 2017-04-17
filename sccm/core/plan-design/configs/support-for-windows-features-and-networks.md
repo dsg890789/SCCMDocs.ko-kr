@@ -2,7 +2,7 @@
 title: "Windows 기능 지원 | Microsoft 문서"
 description: "System Center Configuration Manager에서 지원하는 Windows 및 네트워킹 기능을 알아봅니다."
 ms.custom: na
-ms.date: 1/3/2017
+ms.date: 3/30/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 086efdd180ba3de12f84cabfa6c2abca1fe57537
-ms.openlocfilehash: 3315098f271a5b365914772943094c33f63f25c4
+ms.sourcegitcommit: 3eb48942c1259d2aa1b3c200fad73b39b11c0b8c
+ms.openlocfilehash: 39361102d77441488bf61c9cbbfb0086774e0c09
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -29,28 +30,30 @@ ms.openlocfilehash: 3315098f271a5b365914772943094c33f63f25c4
 이 항목에서는 일반적인 Windows 및 네트워킹 기능에 대한 System Center Configuration Manager 지원을 식별합니다.  
 
 
-##  <a name="a-namebkmkbranchcachea-branchcache"></a><a name="bkmk_branchcache"></a> BranchCache  
-Windows BranchCache는 Configuration Manager와 통합되어 있습니다. 응용 프로그램의 배포 유형과 패키지 및 작업 순서 배포에 대해 BranchCache 설정을 구성할 수 있습니다.  
+##  <a name="bkmk_branchcache"></a> BranchCache  
+배포 지점에서 BranchCache를 사용하도록 설정하고 분산 캐시 모드에서 BranchCache를 사용하도록 클라이언트를 구성하면 Configuration Manager에서 Windows BranchCache를 사용할 수 있습니다.
 
-BranchCache에 대한 모든 요구 사항이 충족되면 이 기능을 통해 원격 위치의 클라이언트가 콘텐츠의 현재 캐시를 갖는 로컬 클라이언트에서 콘텐츠를 가져올 수 있습니다.  
+응용 프로그램의 배포 유형과 패키지 및 작업 순서 배포에 대해 BranchCache 설정을 구성할 수 있습니다.  
+
+BranchCache에 대한 요구 사항이 충족되면 이 기능을 통해 원격 위치의 클라이언트가 콘텐츠의 현재 캐시가 있는 로컬 클라이언트에서 콘텐츠를 가져올 수 있습니다.  
 
 예를 들어 첫 번째 BranchCache 사용 클라이언트 컴퓨터가 BranchCache 서버로 구성된 배포 지점에서 콘텐츠를 요청할 경우 이 클라이언트 컴퓨터는 콘텐츠를 다운로드하여 캐시합니다. 그런 다음 이 콘텐츠를 요청한 동일한 서브넷의 클라이언트에서 이 콘텐츠를 사용할 수 있습니다.
 
 또한 이러한 클라이언트가 콘텐츠를 캐시합니다. 이러한 방식으로 인해 동일한 서브넷에 있는 후속 클라이언트는 배포 지점에서 콘텐츠를 다운로드하지 않아도 되며 콘텐츠가 여러 클라이언트에 배포되어 이후에 전송됩니다.  
 
-**Configuration Manager를 사용하여 BranchCache를 지원하려면**  
+**Configuration Manager에서 BranchCache를 지원하기 위한 요구 사항:**  
+-   **배포 지점 구성:**  
+    배포 지점으로 구성된 사이트 시스템 서버에 **Windows BranchCache** 기능을 추가합니다.    
 
--   배포 지점으로 구성된 사이트 시스템 서버에 **Windows BranchCache** 기능을 추가합니다.  
-
-    -   BranchCache를 지원하도록 구성된 서버의 배포 지점에서는 추가로 구성을 수행할 필요가 없습니다.  
-
+    -   BranchCache를 지원하도록 구성된 서버의 배포 지점에서는 추가로 구성을 수행할 필요가 없습니다.   
     -   클라우드 기반 배포 지점에 Windows BranchCache를 추가할 수는 없지만 Windows BranchCache용으로 구성된 클라이언트는 클라우드 기반 배포 지점에서 콘텐츠를 다운로드할 수 있습니다.  
 
-**클라이언트가 BranchCache를 사용하도록 설정하려면**  
+-   **클라이언트 구성:**    
+    -   BranchCache를 지원할 수 있는 클라이언트를 BranchCache 분산 캐시 모드에 대해 구성해야 합니다.  
+    -   BranchCache를 지원하려면 BITS 클라이언트 설정용 운영 체제 설정을 사용하도록 설정해야 합니다.   <br /> <br />
+        
+    BranchCache를 지원하도록 클라이언트를 구성하는 방법에 대한 자세한 내용은 [Windows 10 업데이트에 맞게 BranchCache 구성](https://technet.microsoft.com/itpro/windows/manage/waas-branchcache)의 [클라이언트 구성](https://technet.microsoft.com/itpro/windows/manage/waas-branchcache#configure-clients-for-branchcache) 섹션을 참조하세요.
 
--   BranchCache를 지원할 수 있는 클라이언트는 BranchCache 분산 모드용으로 구성해야 합니다.  
-
--   BranchCache를 지원하려면 BITS 클라이언트 설정용 운영 체제 설정을 사용하도록 설정해야 합니다.  
 
 **Configuration Manager는 다음 클라이언트 운영 체제에서 Windows BranchCache를 지원합니다.**  
 
@@ -67,7 +70,7 @@ BranchCache에 대한 모든 요구 사항이 충족되면 이 기능을 통해 
 
  BranchCache에 대한 자세한 내용은 Windows Server 설명서에서 [Windows용 BranchCache](http://go.microsoft.com/fwlink/p/?LinkId=177945) 를 참조하세요.  
 
-##  <a name="a-namebkmkworkgroupsa-computers-in-workgroups"></a><a name="bkmk_Workgroups"></a> 작업 그룹의 컴퓨터  
+##  <a name="bkmk_Workgroups"></a> 작업 그룹의 컴퓨터  
 Configuration Manager는 작업 그룹의 클라이언트를 지원합니다.  
 
 -   Configuration Manager에서는 클라이언트를 작업 그룹에서 도메인으로 이동하거나 도메인에서 작업 그룹으로 이동할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법](../../../core/clients/deploy/deploy-clients-to-windows-computers.md) 항목에서 [작업 그룹 컴퓨터에 Configuration Manager 클라이언트를 설치하는 방법](../../../core/clients/deploy/deploy-clients-to-windows-computers.md#BKMK_ClientWorkgroup)을 참조하세요.  
@@ -76,7 +79,7 @@ Configuration Manager는 작업 그룹의 클라이언트를 지원합니다.
 >  작업 그룹의 클라이언트가 지원되기는 하지만 모든 사이트 시스템은 지원되는 Active Directory 도메인의 구성원이어야 합니다.  
 
 
-##  <a name="a-namebkmmkdatadedupa-data-deduplication"></a><a name="bkmmk_datadedup"></a> 데이터 중복 제거  
+##  <a name="bkmmk_datadedup"></a> 데이터 중복 제거  
 Configuration Manager는 다음 운영 체제의 배포 지점에 대해 데이터 중복 제거를 사용할 수 있도록 지원합니다.  
 
 -   Windows Server 2012  
@@ -88,7 +91,7 @@ Configuration Manager는 다음 운영 체제의 배포 지점에 대해 데이�
 
 자세한 내용은 Configuration Manager 팀 블로그의 [Configuration Manager 배포 지점 및 Windows Server 2012 데이터 중복 제거 ](http://blogs.technet.com/b/configmgrteam/archive/2014/02/18/configuration-manager-distribution-points-and-windows-server-2012-data-deduplication.aspx)와 Windows Server TechNet 라이브러리의 [데이터 중복 제거 개요](http://technet.microsoft.com/library/hh831602.aspx)를 참조하세요.  
 
-##  <a name="a-namebkmkdaa-directaccess"></a><a name="bkmk_DA"></a> DirectAccess  
+##  <a name="bkmk_DA"></a> DirectAccess  
 Configuration Manager에서는 사이트 시스템 서버와 클라이언트 간의 통신을 위해 Windows Server 2008 R2의 DirectAccess 기능을 지원합니다.  
 
 -   DirectAccess에 대한 요구 사항이 모두 충족되면 인터넷의 Configuration Manager 클라이언트가 DirectAccess를 사용하여 인트라넷에 있는 것처럼 할당된 사이트와 통신할 수 있습니다.  
@@ -103,13 +106,13 @@ Configuration Manager에서는 DirectAccess를 통해 다음을 지원하지 않
 
 -   사이트 내 Configuration Manager 사이트 시스템 서버 간의 통신  
 
-##  <a name="a-namebkmkdualboota-dual-boot-computers"></a><a name="bkmk_dualboot"></a> 이중 부팅 컴퓨터  
+##  <a name="bkmk_dualboot"></a> 이중 부팅 컴퓨터  
  Configuration Manager는 단일 컴퓨터에서 둘 이상의 운영 체제를 관리할 수 없습니다. 관리해야 하는 컴퓨터에 둘 이상의 운영 체제가 설치되어 있는 경우 관리해야 하는 운영 체제에만 Configuration Manager 클라이언트가 설치되도록 사용하는 검색 및 설치 방법을 조정합니다.  
 
-##  <a name="a-namebkmkipv6a-internet-protocol-version-6"></a><a name="bkmk_IPv6"></a> 인터넷 프로토콜 버전 6  
+##  <a name="bkmk_IPv6"></a> 인터넷 프로토콜 버전 6  
  Configuration Manager에서는 IPv4(인터넷 프로토콜 버전 4) 외에 IPv6(인터넷 프로토콜 버전 6)도 지원합니다.  
 
-|기능|IPv6 지원에 대한 예외|  
+|기능| IPv6 지원에 대한 예외|  
 |--------------|-------------------------------|  
 |클라우드 기반 배포 지점|Microsoft Azure 및 클라우드 기반 배포 지점을 지원하려면 IPv4를 사용해야 합니다.|  
 |Microsoft Intune 및 Microsoft 서비스 커넥터를 통해 등록된 모바일 장치|Microsoft Intune 및 Microsoft 서비스 커넥터를 통해 등록된 모바일 장치를 지원하려면 IPv4를 사용해야 합니다.|  
@@ -118,10 +121,10 @@ Configuration Manager에서는 DirectAccess를 통해 다음을 지원하지 않
 |절전 모드 해제 프록시 통신|클라이언트 절전 모드 해제 프록시 패킷을 지원하려면 IPv4를 사용해야 합니다.|  
 |Windows CE|Windows CE 장치에서 Configuration Manager 클라이언트를 지원하려면 IPv4를 사용해야 합니다.|  
 
-##  <a name="a-namebkmknata-network-address-translation"></a><a name="bkmk_NAT"></a> Network Address Translation  
+##  <a name="bkmk_NAT"></a> Network Address Translation  
  사이트가 인터넷에 있는 클라이언트를 지원하며 클라이언트가 인터넷에 연결되어 있음을 검색하는 경우가 아니면 NAT(네트워크 주소 변환)는 Configuration Manager에서 지원되지 않습니다. 인터넷 기반 클라이언트 관리에 대한 자세한 내용은 [인터넷 기반 클라이언트 관리 계획](../../../core/clients/deploy/plan/plan-for-managing-internet-based-clients.md)을 참조하세요.  
 
-##  <a name="a-namebkmkstoragea-specialized-storage-technology"></a><a name="bkmk_storage"></a> 특수 저장소 기술  
+##  <a name="bkmk_storage"></a> 특수 저장소 기술  
  Configuration Manager는 Configuration Manager 구성 요소가 설치된 운영 체제 버전에 대해 Windows 하드웨어 호환성 목록에 인증되어 있는 모든 하드웨어에서 작동합니다.
 
 사이트 서버 역할을 사용하려면 디렉터리 및 파일 권한을 설정할 수 있도록 NTFS 파일 시스템이 필요합니다. Configuration Manager는 논리 드라이브에 대한 완전한 소유권을 가진다고 가정하므로 별도의 컴퓨터에서 실행되는 사이트 시스템은 저장소 기술의 논리 파티션을 공유할 수 없습니다. 그러나 각 컴퓨터는 공유 저장소 장치의 같은 실제 파티션에서 별도의 논리 파티션을 사용할 수 있습니다.  
@@ -135,9 +138,4 @@ Configuration Manager에서는 DirectAccess를 통해 다음을 지원하지 않
      또한 Configuration Manager 클라이언트의 캐시는 SIS 지원 볼륨에서 지원되지 않습니다.  
 
 -   **이동식 디스크 드라이브**: Configuration Manager는 이동식 디스크 드라이브에 Configuration Manager 사이트 시스템 또는 클라이언트를 설치하도록 지원하지 않습니다.  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

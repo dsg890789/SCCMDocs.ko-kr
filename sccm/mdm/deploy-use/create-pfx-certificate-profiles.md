@@ -2,7 +2,7 @@
 title: "PFX 인증서 프로필 만들기 | Microsoft 문서"
 description: "System Center Configuration Manager에서 PFX 파일을 사용하여 암호화된 데이터 교환을 지원하기 위한 사용자별 인증서를 생성하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 03/30/2017
+ms.date: 04/04/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,9 +17,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 3b1451edaed69a972551bd060293839aa11ec8b2
-ms.openlocfilehash: 2495cef2442706b343bac6d510946c1226b64cfc
-ms.lasthandoff: 03/28/2017
+ms.sourcegitcommit: 26feb0b166beb7e48cb800a5077d00dbc3eec51a
+ms.openlocfilehash: 27435316c6e47531ff989bc8956ca0c874131a0e
+ms.lasthandoff: 04/04/2017
 
 
 ---
@@ -38,7 +38,7 @@ ms.lasthandoff: 03/28/2017
 - 다른 필수 구성 요소는 [인증서 프로필 필수 구성 요소](../../protect/plan-design/prerequisites-for-certificate-profiles.md)를 참조하세요.
 
 ## <a name="pfx-certificate-profiles"></a>PFX 인증서 프로필
-System Center Configuration Manager에서는 사용자 장치에 개인 정보 교환(.pfx) 파일을 프로비전할 수 있습니다. PFX 파일을 사용하면 암호화된 데이터 교환을 지원하기 위한 사용자별 인증서를 생성할 수 있습니다. PFX 인증서는 Configuration Manager 내에서 만들 수도 있고 가져올 수도 있습니다.
+System Center Configuration Manager를 통해 개인 정보 교환(.pfx) 파일을 가져온 다음 사용자 장치에 프로비전할 수 있습니다. PFX 파일을 사용하면 암호화된 데이터 교환을 지원하기 위한 사용자별 인증서를 생성할 수 있습니다.
 
 > [!TIP]  
 >  이 프로세스를 설명하는 단계별 연습은 [PFX 인증서 프로필을 Configuration Manager에서 만들고 배포하는 방법](http://blogs.technet.com/b/karanrustagi/archive/2015/09/01/how-to-create-and-deploy-pfx-certificate-profiles-in-configuration-manager.aspx)에서 제공됩니다.  
@@ -59,10 +59,10 @@ System Center Configuration Manager에서는 사용자 장치에 개인 정보 �
 
     -   **설명**: 인증서 프로필에 대한 개략적인 정보를 제공하는 설명과 System Center Configuration Manager 콘솔에서 해당 프로필을 식별하는 데 도움이 되는 기타 관련 정보를 입력합니다. 최대 256자까지 사용할 수 있습니다.  
 
-    -   **만들려는 인증서 프로필의 유형을 지정합니다.**: PFX 인증서의 경우 다음 중 하나를 선택합니다.  
+    -   **만들려는 인증서 프로필의 유형 지정**: PFX 인증서의 경우 다음을 선택합니다.  
 
         -   **개인 정보 교환 PKCS #12(PFX) 설정 - 가져오기**: PFX 인증서를 가져오려면 이 옵션을 선택합니다.  
-        -   **개인 정보 교환 PKCS #12(PFX) 설정 - 만들기**: 새 PFX 인증서를 만들려면 이 옵션을 선택합니다.
+       
 
 ### <a name="import-a-pfx-certificate"></a>PFX 인증서 가져오기
 
@@ -107,28 +107,7 @@ PFX 인증서를 가져오려면 Configuration Manager SDK가 필요합니다. �
    -   $ProfileName = PFX 프로필의 이름  
    -   ComputerName = 호스트 컴퓨터의 이름   
 
-### <a name="create-a-new-pfx-certificate"></a>새 PFX 인증서 만들기
 
-PFX 인증서를 만들고 배포할 경우 사용자가 등록하는 모든 장치에 같은 인증서가 설치됩니다.
-
-1. 마법사의 **지원되는 플랫폼** 페이지에서 이 인증서를 설치할 장치 플랫폼을 선택하고 **다음**을 클릭합니다.
-2. 마법사의 **인증 기관** 페이지에서 다음을 구성합니다.
-    - **기본 사이트** - 인증 기관을 선택할 원본 Configuration Manager 기본 사이트를 선택합니다.
-    - **인증 기관** - 기본 사이트를 선택한 후 목록에서 원하는 인증 기관을 선택하고 **다음**을 클릭합니다.
-3. 마법사의 **PFX 인증서** 페이지에서 다음 값을 구성합니다.
-    - **갱신 임계값(%)** - 장치에서 인증서 갱신을 요청하기 전까지 남은 인증서 수명을 백분율로 지정합니다.
-    - **인증서 템플릿 이름** - **찾아보기**를 클릭하여 발급 CA에 추가된 인증서 템플릿의 이름을 선택합니다. 인증서 템플릿을 성공적으로 찾아보려면 Configuration Manager 콘솔을 실행하는 데 사용하는 사용자 계정에 인증서 템플릿에 대한 **읽기** 권한이 있어야 합니다. 또는 인증서 템플릿의 이름을 입력합니다. 
-    - **주체 이름 형식** - 인증서 요청 시 Configuration Manager에서 자동으로 주체 이름을 만드는 방식을 목록에서 선택합니다. 사용자용 인증서인 경우 주체 이름에 사용자의 전자 메일 주소를 포함할 수도 있습니다. **일반 이름** 또는 **정식 고유 이름** 중에서 선택합니다.
-    - **주체 대체 이름** - Configuration Manager에서 인증서 요청의 SAN(주체 대체 이름) 값을 자동으로 만드는 방법을 지정합니다. 예를 들어 사용자 인증서 유형을 선택한 경우 주체 대체 이름에 UPN(사용자 계정 이름)을 포함할 수 있습니다. 다음 중에서 선택합니다.
-        - **메일 주소** 
-        - **UPN(사용자 계정 이름)** 
-    - **인증서 유효 기간** - 
-    - **Windows 키 저장소 공급자**(Windows를 지원되는 플랫폼으로 선택한 경우에만 표시됨) - 
-        -     **있는 경우 TPM(신뢰할 수 있는 플랫폼 모듈)에 설치**  
-        -   **TPM(신뢰할 수 있는 플랫폼 모듈)에 설치, 그렇지 않으면 실패** 
-        -   **비즈니스용 Windows Hello에 설치, 그러지 않으면 실패** 
-        -   **소프트웨어 키 저장소 공급자에 설치** 
-4. **다음**을 클릭합니다.
 
 ### <a name="finish-up"></a>끝내기
 

@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager Technical Preview | Microsoft 문서"
 description: "System Center Configuration Manager에서 새로운 기능을 테스트 시험해 볼 수 있는 기술 미리 보기 릴리스에 대해 알아봅니다."
 ms.custom: na
-ms.date: 3/28/2017
+ms.date: 4/3/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f326eb961be400187c2dcadd564a7e344dc4b175
-ms.openlocfilehash: 66b57ec07ebaffd63791741c0ac038d14ab5f367
-ms.lasthandoff: 03/29/2017
+ms.sourcegitcommit: 9b31fab8fa93195c60e9026e2df99311aa6e328f
+ms.openlocfilehash: 61d4b7017769609caf8fcb8fcdd510f5a0b5b712
+ms.lasthandoff: 04/03/2017
 
 
 ---
@@ -85,15 +85,16 @@ ms.lasthandoff: 03/29/2017
 
  기술 미리 보기를 사용하려면 먼저 기술 미리 보기 빌드의 **기준선 버전** 을 설치해야 합니다. 기준선 버전을 설치한 후 **콘솔 내 업데이트** 를 사용하여 최근의 미리 보기 버전으로 설치를 업데이트할 수 있습니다.     일반적으로 새 버전의 기술 미리 보기는 매달 사용할 수 있습니다.
 
-세 가지 후속 릴리스를 사용할 수 있을 때까지 각 미리 보기 릴리스가 지원됩니다. 즉, 버전 1702가 출시되면 버전 1610이 더 이상 지원되지 않지만 버전 1611, 1612 및 1701은 지원됩니다. 그러나 마지막 기준 버전이 지원되지 않을 경우(예: 버전 1610)에도, 해당 설치를 지원되는 버전으로 업데이트하는 한 새로운 Technical Preview 사이트를 설치할 수 있습니다(새 기준선 버전을 사용할 수 있을 때까지).
+세 가지 후속 릴리스를 사용할 수 있을 때까지 각 미리 보기 릴리스가 지원됩니다. 즉, 버전 1702가 출시되면 버전 1610이 더 이상 지원되지 않지만 버전 1611, 1612 및 1701은 지원됩니다. 기준 버전이 지원되지 않는 경우(예: 버전 1610)에도 해당 설치를 지원되는 버전으로 업데이트하는 한 새로운 Technical Preview 사이트를 설치할 수 있습니다(새 기준 버전을 사용할 수 있을 때까지). 업데이트할 때 콘솔에 사용 가능한 최신 버전이 표시되지 않으면 제공된 최신 버전으로 업데이트한 다음 최신 버전의 Technical Preview를 설치할 수 있을 때까지 해당 프로세스를 반복합니다.
 
 > [!TIP]  
 >  기술 미리 보기에 대한 업데이트를 설치하면 해당 새 기술 미리 보기 버전으로 미리 보기 설치가 업데이트됩니다.    기술 미리 보기 설치에는 현재 분기 설치로 업그레이드하거나 현재 분기 릴리스의 업데이트를 받을 수 있는 옵션이 없습니다.  
 
- **기술 미리 보기의 활성 기준선 버전:**  
- 릴리스 후 최대 1년 동안 기준 버전을 설치할 수 있습니다. 그러나 새 Technical Preview 사이트를 설치할 경우 사용 가능한 최신 기준선 버전을 사용하는 것이 좋습니다.
+**기술 미리 보기의 활성 기준선 버전:**  
+릴리스 후 최대 1년 동안 기준 버전을 설치할 수 있습니다. 그러나 새 Technical Preview 사이트를 설치할 경우 사용 가능한 최신 기준선 버전을 사용하는 것이 좋습니다.
+-  **Technical Preview 1703** - Configuration Manager Technical Preview 1703은 Configuration Manager Technical Preview의 콘솔 내 업데이트와 TechNet Evaluation Center 웹 사이트에서 사용할 수 있는 새 기준 버전으로 제공됩니다.
 
--   **Technical Preview 1610** - Configuration Manager Technical Preview 1610은 Configuration Manager Technical Preview의 콘솔 내 업데이트로, 그리고 [TechNet Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection-technical-preview) 웹 사이트에서 사용할 수 있는 기준선 버전으로 제공됩니다.
+-  **Technical Preview 1610** - Configuration Manager Technical Preview 1610은 Configuration Manager Technical Preview의 콘솔 내 업데이트와 기준 버전으로 제공되었습니다. 1610 설치용 미디어가 있는 경우 대신 버전 1703을 다운로드하고 해당 버전을 설치하는 것이 좋습니다.
 
 
 
@@ -113,6 +114,13 @@ ms.lasthandoff: 03/29/2017
 
  |기능|기술 미리 보기 버전|현재 분기 버전|  
  |----------------|---------------------|--------------------|
+ |장치 컬렉션에 대량 구매한 iOS 앱 배포|[Tech Preview 1703](capabilities-in-technical-preview-1703.md#deploy-volume-purchased-ios-apps-to-device-collections)|[버전 1702](/sccm/mdm/deploy-use/manage-volume-purchased-ios-apps)|
+ |소프트웨어 센터의 응용 프로그램에 대한 직접 링크|[Tech Preview 1703](capabilities-in-technical-preview-1703.md#direct-links-to-applications-in-software-center)|![추가되지 않음](media/Red_X.gif)
+ |Configuration Manager Windows 클라이언트 컴퓨터에 대한 PFX 인증서|[Tech Preview 1703](capabilities-in-technical-preview-1703.md#pfx-certificates-for-configuration-manager-windows-client-computers)|![추가되지 않음](media/Red_X.gif)|
+ |Azure 서비스 구성 마법사|[Tech Preview 1703](capabilities-in-technical-preview-1703.md#configure-azure-services-wizard)|![추가되지 않음](media/Red_X.gif)|
+ |운영 체제 업그레이드 작업 순서에서 BIOS에서 UEFI로 변환| [Tech Preview 1703](capabilities-in-technical-preview-1703.md#convert-from-bios-to-uefi-during-an-in-place-upgrade) |[버전 1702](/sccm/osd/deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion#convert-from-bios-to-uefi-during-an-in-place-upgrade)|
+ |축소 가능한 작업 순서 그룹| [Tech Preview 1703](capabilities-in-technical-preview-1703.md#collapsible-task-sequence-groups) |![추가되지 않음](media/Red_X.gif)|
+ |업그레이드 준비를 위해 Windows Analytics를 구성하기 위한 클라이언트 설정 | [Tech Preview 1703](capabilities-in-technical-preview-1703.md#client-settings-to-configure-windows-analytics-for-upgrade-readiness) |![추가되지 않음](media/Red_X.gif)|
  |iOS 장치에 대한 새 준수 설정|[Tech Preview 1702](capabilities-in-technical-preview-1702.md#new-compliance-settings-for-ios-devices)|[버전 1702](/sccm/mdm/deploy-use/create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client)|
  |S/MIME을 지원하는 PFX 인증서 만들기|[Tech Preview 1702](capabilities-in-technical-preview-1702.md#create-pfx-certificates-with-s-mime-support)|[버전 1702](/sccm/mdm/deploy-use/create-pfx-certificate-profiles)|
  |응용 프로그램을 설치하기 전에 실행 중인 실행 파일 확인|[Tech Preview 1702](capabilities-in-technical-preview-1702.md#check-for-running-executable-files-before-installing-an-application)|[버전 1702](/sccm/apps/deploy-use/deploy-applications)|

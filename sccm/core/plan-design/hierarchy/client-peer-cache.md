@@ -2,7 +2,7 @@
 title: "클라이언트 피어 캐시 | System Center Configuration Manager"
 description: "System Center Configuration Manager를 사용하여 콘텐츠를 배포할 때는 클라이언트 콘텐츠 원본 위치에 대해 피어 캐시를 사용합니다."
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 4/4/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 5298f1c836c1a872862b0e972180ac0c99c59751
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 26feb0b166beb7e48cb800a5077d00dbc3eec51a
+ms.openlocfilehash: dcd05d7d120f8997562da7d92b38c8b52a512357
+ms.lasthandoff: 04/04/2017
 
 ---
 
@@ -70,7 +70,7 @@ System Center Configuration Manager SDK를 사용하는 경우 피어 원본 기
 버전 1702부터 세 가지 보고서를 사용하여 피어 캐시 사용을 확인할 수 있습니다. 콘솔에서 **모니터링** > **보고** > **보고서**로 이동합니다. 보고서는 모두 **소프트웨어 배포 콘텐츠** 유형입니다.
 1.  **피어 캐시 원본 콘텐츠 거부**:  
 이 보고서를 사용하여 경계 그룹의 피어 캐시 원본이 콘텐츠 요청을 거부한 빈도를 이해합니다.
- - **알려진 문제:** *MaxCPULoad* 또는 *MaxDiskIO* 같은 결과를 드릴다운하면 보고서나 세부 정보를 찾을 수 없음을 나타내는 오류가 표시될 수 있습니다. 이 문제를 해결하려면 결과를 직접 표시하는 다음 두 가지 보고서를 사용합니다. 
+ - **알려진 문제:** *MaxCPULoad* 또는 *MaxDiskIO* 같은 결과를 드릴다운하면 보고서나 세부 정보를 찾을 수 없음을 나타내는 오류가 표시될 수 있습니다. 이 문제를 해결하려면 결과를 직접 표시하는 다음 두 가지 보고서를 사용합니다.
 
 2. **조건별 피어 캐시 원본 콘텐츠 거부**:  
 이 보고서를 사용하여 지정된 경계 그룹 또는 거부 유형에 대한 거부 세부 정보를 이해합니다. 지정할 수 있습니다.
@@ -87,9 +87,11 @@ System Center Configuration Manager SDK를 사용하는 경우 피어 원본 기
 
 
 ## <a name="requirements-and-considerations-for-peer-cache"></a>피어 캐시에 대한 요구 사항 및 고려 사항
-- 피어 캐시는 Configuration Manager 클라이언트로 지원되는 모든 Windows 운영 체제에서 지원됩니다. Windows가 아닌 운영 체제는 피어 캐시에 대해 지원되지 않습니다.
+-   피어 캐시는 Configuration Manager 클라이언트로 지원되는 모든 Windows 운영 체제에서 지원됩니다. Windows가 아닌 운영 체제는 피어 캐시에 대해 지원되지 않습니다.
 
-- 클라이언트는 현재 경계 그룹에 포함되어 있는 피어 캐시 클라이언트의 콘텐츠만 전송할 수 있습니다.
+-   클라이언트는 현재 경계 그룹에 포함되어 있는 피어 캐시 클라이언트의 콘텐츠만 전송할 수 있습니다.
+
+-   클라이언트가 피어 캐시를 사용하는 각 사이트는 [네트워크 액세스 계정](/sccm/core/plan-design/hierarchy/manage-accounts-to-access-content#a-namebkmknaaa-network-access-account)으로 구성되어야 합니다. 이 계정은 피어 캐시 원본 컴퓨터가 피어의 다운로드 요청을 인증하는 데 사용되며, 이 목적으로는 도메인 사용자 권한만 필요합니다.
 
 -     피어 캐시 콘텐츠 원본의 현재 경계는 해당 클라이언트의 마지막 하드웨어 인벤토리 제출에 따라 결정되므로, 다른 경계 그룹에 있는 네트워크 위치로 로밍하는 클라이언트는 피어 캐시에서 이전 경계 그룹의 구성원으로 계속 간주될 수 있습니다. 이 경우 직접적으로 속해 있는 네트워크 위치에 있지 않은 피어 캐시 콘텐츠 원본이 클라이언트에 제공될 수 있습니다. 따라서 이러한 구성을 사용할 가능성이 높은 클라이언트는 피어 캐시 원본으로 참여하지 않도록 제외하는 것이 좋습니다.
 
