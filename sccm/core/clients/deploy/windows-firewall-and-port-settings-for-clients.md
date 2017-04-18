@@ -13,8 +13,8 @@ ms.topic: article
 ms.assetid: dce4b640-c92f-401a-9873-ce9aa9262014
 caps.latest.revision: 8
 caps.handback.revision: 0
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
@@ -31,7 +31,7 @@ Windows 방화벽을 실행하는 System Center Configuration Manager의 클라�
 
  이러한 관리 기능을 확인하고 Windows 방화벽에서 이러한 예외를 구성하는 방법에 대한 자세한 내용을 보려면 다음 섹션을 참조하십시오.  
 
-##  <a name="a-namebkmkmodifyingwindowsfirewalla-modifying-the-ports-and-programs-permitted-by-windows-firewall"></a><a name="BKMK_ModifyingWindowsFirewall"></a> Windows 방화벽에서 허용하는 포트 및 프로그램 수정  
+##  <a name="BKMK_ModifyingWindowsFirewall"></a> Windows 방화벽에서 허용하는 포트 및 프로그램 수정  
  Windows 방화벽에서 Configuration Manager 클라이언트에 사용할 포트 및 프로그램을 수정하려면 다음 절차를 따르세요.  
 
 #### <a name="to-modify-the-ports-and-programs-permitted-by-windows-firewall"></a>Windows 방화벽에서 허용하는 포트 및 프로그램을 수정하려면  

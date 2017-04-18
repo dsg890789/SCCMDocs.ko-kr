@@ -12,8 +12,8 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c890fd27-7a8c-4f51-bbe2-f9908af1f42b
 caps.latest.revision: 15
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: a1fc9f2db7c9c2b40d986bb39a0b27d6cc699987
@@ -27,7 +27,7 @@ ms.lasthandoff: 01/05/2017
 
 System Center Configuration Manager CCMSetup.exe 명령을 사용하여 Configuration Manager 클라이언트를 수동으로 설치합니다.  
 
-##  <a name="a-nameaboutccmsetupa-about-ccmsetupexe"></a><a name="aboutCCMSetup"></a> CCMSetup.exe 정보  
+##  <a name="aboutCCMSetup"></a> CCMSetup.exe 정보  
  CCMSetup.exe 명령은 관리 지점이나 원본 위치에서 클라이언트를 설치하는 데 필요한 파일을 다운로드합니다. 이러한 파일에는 다음이 포함될 수 있습니다.  
 
 -   클라이언트 소프트웨어를 설치하는 Windows Installer 패키지 Client.msi  
@@ -167,7 +167,7 @@ CCMSetup이 설치 파일 다운로드를 중지하기 전까지 시도할 시�
 
 ### <a name="usepkicert"></a>/UsePKICert
 
- 이 옵션을 지정하면 클라이언트 인증이 포함된 PKI 인증서를 사용할 수 있는 경우 클라이언트에서 이 인증서를 사용합니다. 유효한 인증서를 찾을 수 없으면 클라이언트가 HTTP 연결 및 자체 서명된 인증서를 사용하고, 이 동작은 .이 속성을 사용하지 않을 때도 나타납니다. 
+ 이 옵션을 지정하면 클라이언트 인증이 포함된 PKI 인증서를 사용할 수 있는 경우 클라이언트에서 이 인증서를 사용합니다. 유효한 인증서를 찾을 수 없으면 클라이언트가 HTTP 연결 및 자체 서명된 인증서를 사용하고, 이 동작은 .이 속성을 사용하지 않을 때도 나타납니다.
 
 > [!NOTE]  
 >  몇 가지 시나리오에서는 클라이언트를 설치할 때 이 속성을 지정할 필요가 없고, 클라이언트 인증서를 계속 사용할 수 있습니다. 이러한 시나리오에는 클라이언트 강제 및 소프트웨어 업데이트 지점 기반 클라이언트 설치를 사용하여 클라이언트를 설치하는 경우가 포함됩니다. 그러나 수동으로 클라이언트를 설치할 때는 언제나 이 속성을 지정해야 하고 **/mp** 속성을 사용하여 HTTPS 클라이언트 연결만 허용하도록 구성된 관리 지점을 지정해야 합니다. CCMALWAYSINF=1 속성(인터넷 기반 관리 지점 및 사이트 코드에 대한 속성과 함께 사용)을 사용하여 인터넷 전용 통신용 클라이언트를 설치할 때도 이 속성을 지정해야 합니다. 인터넷 기반 클라이언트 관리에 대한 자세한 내용은 [System Center Configuration Manager에서 끝점 간의 통신](../../plan-design/hierarchy/communications-between-endpoints.md) [인터넷 또는 신뢰할 수 없는 포리스트에서의 클라이언트 통신에 대한 고려 사항](../../plan-design/hierarchy/communications-between-endpoints.md#BKMK_clientspan)을 참조하세요.  
@@ -186,9 +186,9 @@ CCMSetup이 설치 파일 다운로드를 중지하기 전까지 시도할 시�
 
 ### <a name="configltconfiguration-file"></a>/config:&lt;구성 파일\>
 
-클라이언트 설치 속성이 포함된 텍스트 파일의 이름을 지정합니다. 
+클라이언트 설치 속성이 포함된 텍스트 파일의 이름을 지정합니다.
 
-- **/noservice** CCMSetup 속성을 지정하지 않으면 이 파일은 CCMSetup 폴더(32비트/64비트 운영 체제의 경우 %Windir%\\Ccmsetup)에 있어야 합니다. 
+- **/noservice** CCMSetup 속성을 지정하지 않으면 이 파일은 CCMSetup 폴더(32비트/64비트 운영 체제의 경우 %Windir%\\Ccmsetup)에 있어야 합니다.
 - **/noservice** 속성을 지정하면 이 파일이 CCMSetup.exe를 실행하는 폴더와 같은 폴더에 있어야 합니다.  
 
 예: `CCMSetup.exe /config:&lt;Configuration File Name.txt\>`  
@@ -200,7 +200,7 @@ CCMSetup이 설치 파일 다운로드를 중지하기 전까지 시도할 시�
 ### <a name="skipprereqltfilename"></a>/skipprereq:&lt;파일 이름\>
 
  Configuration Manager 클라이언트를 설치할 때 CCMSetup.exe가 지정된 필수 구성 요소 프로그램을 설치하지 않도록 지정합니다. 이 속성에는 여러 값을 입력할 수 있습니다. 각 값을 구분하려면 세미콜론(;)을 사용합니다.  
- 
+
 
  예: `CCMSetup.exe /skipprereq:silverlight.exe` 또는 `CCMSetup.exe /skipprereq:dotnetfx40_client_x86_x64.exe;Silverlight.exe`  
 
@@ -217,7 +217,7 @@ CCMSetup이 설치 파일 다운로드를 중지하기 전까지 시도할 시�
 > [!NOTE]  
 >  이 릴리스의 경우, **/ExcludeFeatures** 속성에 지원되는 값은 **ClientUI** 뿐입니다.  
 
-##  <a name="a-nameccmsetupreturncodesa-ccmsetupexe-return-codes"></a><a name="ccmsetupReturnCodes"></a> CCMSetup.exe 반환 코드  
+##  <a name="ccmsetupReturnCodes"></a> CCMSetup.exe 반환 코드  
  CCMSetup.exe 명령은 다음과 같은 완료된 반환 코드를 제공합니다. 문제를 해결하려면 클라이언트 컴퓨터의 ccmsetup.log 파일을 검토하여 반환 코드에 대한 컨텍스트 및 추가 세부 정보를 확인합니다.  
 
 |반환 코드|의미|  
@@ -229,7 +229,7 @@ CCMSetup이 설치 파일 다운로드를 중지하기 전까지 시도할 시�
 |9|필수 조건 평가 오류|  
 |10|설치 매니페스트 해시 유효성 검사 오류|  
 
-##  <a name="a-nameclientmsipropsa-clientmsi-properties"></a><a name="clientMsiProps"></a> Client.msi 속성  
+##  <a name="clientMsiProps"></a> Client.msi 속성  
  다음 속성은 client.msi의 설치 동작을 수정할 수 있습니다. 클라이언트 강제 설치 방법을 사용하는 경우에는 **클라이언트 강제 설치 속성** 대화 상자의 **클라이언트** 탭에서 속성을 지정할 수도 있습니다.  
 
 ### <a name="ccmadmins"></a>CCMADMINS  
@@ -563,7 +563,7 @@ Configuration Manager 클라이언트가 사용할 초기 관리 지점을 지�
 
  예: `CCMSetup.exe SMSSITECODE=XZY`  
 
-##  <a name="a-namebkmkattributevaluesa-supported-attribute-values-for-the-pki-certificate-selection-criteria"></a><a name="BKMK_attributevalues"></a> PKI 인증서 선택 기준에 지원되는 특성 값  
+##  <a name="BKMK_attributevalues"></a> PKI 인증서 선택 기준에 지원되는 특성 값  
  Configuration Manager는 PKI 인증서 선택 기준에 다음 특성 값을 지원합니다.  
 
 |OID 특성|고유 이름 특성|특성 정의|  
