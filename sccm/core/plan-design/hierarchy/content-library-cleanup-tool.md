@@ -2,7 +2,7 @@
 title: "콘텐츠 라이브러리 정리 도구 | Microsoft 문서"
 description: "콘텐츠 라이브러리 정리 도구를 사용하여 더 이상 System Center Configuration Manager 배포와 연관이 없는 분리된 콘텐츠를 제거합니다."
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 4/7/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 23b1d24e908d04b64c3bbfa518793a44e696d468
-ms.openlocfilehash: 718e9b9eaa2dace2c72b031c244c72ef5f7e7b2f
-ms.lasthandoff: 03/29/2017
+ms.sourcegitcommit: 32f7fc4ef9c8e8d3c2ec8eeaf9a3174bad992ffb
+ms.openlocfilehash: 76e6772bdd5cbd32d525e728f6ebc988b045da78
+ms.lasthandoff: 04/08/2017
 
 ---
 # <a name="the-content-library-cleanup-tool-for-system-center-configuration-manager"></a>System Center Configuration Manager용 콘텐츠 라이브러리 정리 도구
@@ -74,7 +74,7 @@ ms.lasthandoff: 03/29/2017
 |**/delete**  |**선택 사항** </br> 배포 지점에서 콘텐츠를 삭제하려는 경우 이 스위치를 사용합니다. 콘텐츠를 삭제하기 전에 확인 메시지가 표시됩니다. </br></br> 이 스위치를 사용하지 않으면 도구는 삭제되는 콘텐츠에 대한 결과를 기록하지만 배포 지점에서 콘텐츠를 삭제하지는 않습니다. </br></br> 예: ***ContentLibraryCleanup.exe /dp server1.contoso.com /delete*** |
 | **/q**       |**선택 사항** </br> 이 스위치는 모든 메시지(예: 콘텐츠 삭제 프롬프트)를 표시하지 않는 자동 모드로 도구를 실행하고 자동으로 로그 파일을 열지 않습니다. </br></br> 예: ***ContentLibraryCleanup.exe /q /dp server1.contoso.com*** |
 | **/dp &lt;배포 지점 FQDN>**  | **필수** </br> 정리하려는 배포 지점의 FQDN(정규화된 도메인 이름)을 지정합니다. </br></br> 예: ***ContentLibraryCleanup.exe /dp server1.contoso.com***|
-| **/ps &lt;기본 사이트 FQDN>**       | 기본 사이트의 배포 지점에서 콘텐츠를 정리하는 경우 **선택 사항**입니다.</br>보조 사이트의 배포 지점에서 콘텐츠를 정리하는 경우 **필수**입니다. </br></br> 배포 지점이 속하는 기본 사이트 또는 배포 지점이 보조 사이트에 있는 경우 부모 기본 사이트의 FQDN을 지정합니다. </br></br> 예: ***ContentLibraryCleanup.exe /dp server1.contoso.com /ps siteserver1.contoso.com*** |
+| **/ps &lt;기본 사이트 FQDN>**       | 기본 사이트의 배포 지점에서 콘텐츠를 정리하는 경우 **선택 사항**입니다.</br>보조 사이트의 배포 지점에서 콘텐츠를 정리하는 경우 **필수**입니다. </br></br>이 도구는 부모 기본 사이트에 연결하여 SMS_Provider에 대 한 쿼리를 실행합니다. 이러한 쿼리를 통해 도구에서는 배포 지점에 있어야 할 콘텐츠를 확인하여 분리되어 있고 제거할 수 있는 콘텐츠를 식별할 수 있습니다. 보조 사이트에서 바로 필요한 세부 정보를 이용할 수 없기 때문에 부모 기본 사이트에 대한 이러한 연결은 보조 사이트에서 배포 지점에 대해 이루어져야 합니다.</br></br> 배포 지점이 속하는 기본 사이트 또는 배포 지점이 보조 사이트에 있는 경우 부모 기본 사이트의 FQDN을 지정합니다. </br></br> 예: ***ContentLibraryCleanup.exe /dp server1.contoso.com /ps siteserver1.contoso.com*** |
 | **/sc &lt;기본 사이트 코드>**  | 기본 사이트의 배포 지점에서 콘텐츠를 정리하는 경우 **선택 사항**입니다.</br>보조 사이트의 배포 지점에서 콘텐츠를 정리하는 경우 **필수**입니다. </br></br> 배포 지점이 속하는 기본 사이트 또는 배포 지점이 보조 사이트에 있는 경우 부모 기본 사이트의 사이트 코드를 지정합니다.</br></br> 예: ***ContentLibraryCleanup.exe /dp server1.contoso.com /sc ABC*** |
 | **/log <log file directory>**       |**선택 사항** </br> 도구가 로그 파일을 기록하는 위치를 지정합니다. 로컬 드라이브 또는 네트워크 공유일 수 있습니다.</br></br> 이 스위치를 사용하지 않으면 로그 파일은 도구가 실행되는 컴퓨터에 있는 사용자의 임시 폴더에 저장됩니다.</br></br> 로컬 드라이브의 예: ***ContentLibraryCleanup.exe /dp server1.contoso.com /log C:\Users\Administrator\Desktop*** </br></br>네트워크 공유의 예: ***ContentLibraryCleanup.exe /dp server1.contoso.com /log \\&lt;공유>\&lt;폴더>***|
 

@@ -13,9 +13,9 @@ ms.technology:
 - configmgr-sum
 ms.assetid: b8d8af88-e8ac-4deb-921b-975e2d2afd80
 translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 459ad5a428102b5e040bec2eaf2a70fc89789dff
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: d7b13f3dea5a3ae413ca6b8150ec24e1632a4d4d
+ms.openlocfilehash: fcdcbcde61402b47871d51deba32d23867a78370
+ms.lasthandoff: 04/12/2017
 
 ---
 
@@ -23,7 +23,8 @@ ms.lasthandoff: 03/27/2017
 Configuration Manager 버전 1702부터 Configuration Manager는 Windows 10 업데이트에 대한 빠른 설치 파일을 지원합니다. 지원되는 버전의 Windows 10을 사용하는 경우 Configuration Manager 설정을 사용하여 현재 월의 Windows 10 누적 업데이트와 이전 월의 업데이트 간 변경 내용만 다운로드할 수 있습니다. 빠른 설치 파일이 없으면 Configuration Manager는 전체 Windows 10 누적 업데이트(이전 몇 개월의 모든 업데이트 포함)를 매달 다운로드합니다. 빠른 설치 파일을 사용하면 다운로드 크기가 감소하고 클라이언트에서 설치 시간이 단축됩니다.
 
 > [!IMPORTANT]
-> Configuration Manager 버전 1702에서 빠른 설치 파일의 사용을 지원하는 설정을 사용할 수 있지만 운영 체제 클라이언트 지원은 Windows 업데이트 에이전트의 업데이트가 설치된 Windows 10 버전 1607에서 사용할 수 있습니다. 이 업데이트는 2017년 4월 11일 릴리스되는 업데이트(화요일 패치)에 포함됩니다. <!--For more information about these updates, see [support article 4015217](http://support.microsoft.com/kb/4015217).--> 이후 업데이트에서는 다운로드 크기를 줄이기 위한 빠른 설치 파일을 사용합니다. 업데이트가 설치되지 않은 Windows 10 버전 1607과 이전 버전에서는 빠른 설치 파일이 지원되지 않습니다.
+> Configuration Manager 버전 1702에서 빠른 설치 파일의 사용을 지원하는 설정을 사용할 수 있지만 운영 체제 클라이언트 지원은 Windows 업데이트 에이전트의 업데이트가 설치된 Windows 10 버전 1607에서 사용할 수 있습니다. 이 업데이트는 2017년 4월 11일 릴리스되는 업데이트(화요일 패치)에 포함됩니다. 이러한 업데이트에 대한 자세한 내용은 [지원 문서 4015217](http://support.microsoft.com/kb/4015217)을 참조하세요. 이후 업데이트에서는 다운로드 크기를 줄이기 위한 빠른 설치 파일을 사용합니다. 업데이트가 설치되지 않은 Windows 10 버전 1607과 이전 버전에서는 빠른 설치 파일이 지원되지 않습니다.
+
 
 ### <a name="to-enable-the-download-of-express-installation-files-for-windows-10-updates-on-the-server"></a>서버에서 Windows 10 업데이트에 대한 빠른 설치 파일의 다운로드를 사용하도록 설정하려면
 Windows 10 빠른 설치 파일에 대한 메타데이터 동기화를 시작하려면 소프트웨어 업데이트 지점 속성에서 사용하도록 설정해야 합니다.

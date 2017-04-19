@@ -2,7 +2,7 @@
 title: "시험판 기능 | Microsoft Docs"
 description: "System Center Configuration Manager의 시험판 기능"
 ms.custom: na
-ms.date: 3/29/2017
+ms.date: 4/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6accec2d356861b273b25ba2b6338d9684a46ff6
-ms.openlocfilehash: c1c8cf505bbc5cab1b6dfb7637eda4a87941c722
-ms.lasthandoff: 03/29/2017
+ms.sourcegitcommit: 32f7fc4ef9c8e8d3c2ec8eeaf9a3174bad992ffb
+ms.openlocfilehash: a7ebfea849afcaf236d7e630aad2c7f3f1807a23
+ms.lasthandoff: 04/08/2017
 
 
 ---
@@ -43,6 +43,8 @@ ms.lasthandoff: 03/29/2017
   -   **동의하지 않은 경우:** 업데이트를 설치할 때 시험판 기능이 업데이트 및 서비스 마법사에 나타나지만, 회색으로 표시되며 사용하도록 설정할 수 없습니다. 업데이트가 설치되면 **기능** 노드에서 해당 기능을 볼 수 있지만 **계층 구조 설정**에서 동의를 제공할 때까지는 사용하도록 설정할 수 없습니다.
 
 독립 실행형 기본 사이트에서 동의를 제공한 다음 새 중앙 관리 사이트를 설치하여 계층 구조를 확장하는 경우 중앙 관리 사이트에서 다시 동의를 제공해야 합니다.
+
+ 시험판 기능을 사용하도록 설정하면 Configuration Manager HMAN(계층 구조 관리자)은 해당 기능을 사용할 수 있게 되기 전에 변경 내용을 처리해야 합니다. 변경 내용 처리는 대개 즉시 이루어지지만, HMAN 처리 주기에 따라 완료하는 데 최대 30분까지 걸릴 수 있습니다. 변경 내용이 처리된 후 콘솔을 다시 시작해야만 해당 기능과 관련된 새 UI를 볼 수 있습니다.
 
 **다음과 같은 시험판 기능을 사용할 수 있습니다.**
 

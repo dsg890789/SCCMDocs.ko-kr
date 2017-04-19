@@ -2,7 +2,7 @@
 title: "콘솔 내 업데이트 | Microsoft 문서"
 description: "System Center Configuration Manager는 Microsoft 클라우드와 동기화하여 콘솔 내에서 설치할 수 있는 업데이트를 가져옵니다."
 ms.custom: na
-ms.date: 3/7/2017
+ms.date: 4/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 3b50ada9f63e41d1b6f01009c141b8f361f5180e
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 32f7fc4ef9c8e8d3c2ec8eeaf9a3174bad992ffb
+ms.openlocfilehash: 18c199e78750eadc06b9635fa6104d36c2ac018d
+ms.lasthandoff: 04/08/2017
 
 
 ---
@@ -319,6 +319,10 @@ System Center Configuration Manager는 Microsoft 클라우드 서비스와 동�
 사용 가능한 기능 및 해당 상태를 보려면 콘솔에서 **관리** > **업데이트 및 서비스** > **기능**으로 이동합니다.
 
 기능이 선택 사항이 아닌 경우 해당 기능은 자동으로 설치되며 **기능** 노드에 표시되지 않습니다.  
+
+
+새 기능 또는 시험판 기능을 사용하도록 설정하면 Configuration Manager HMAN(계층 구조 관리자)은 해당 기능을 사용할 수 있게 되기 전에 변경 내용을 처리해야 합니다. 변경 내용 처리는 대개 즉시 이루어지지만, HMAN 처리 주기에 따라 완료하는 데 최대 30분까지 걸릴 수 있습니다. 변경 내용이 처리된 후 콘솔을 다시 시작해야만 해당 기능과 관련된 새 UI를 볼 수 있습니다.
+
 
 ##  <a name="bkmk_prerelease"></a> 업데이트에서 시험판 기능 사용
 시험판 기능은 프로덕션 환경에서의 초기 테스트를 위해 현재 분기에 포함된 기능입니다. 이러한 기능은 프로덕션 환경에서 사용할 수 있지만 프로덕션 준비가 된 것으로 간주해서는 안 됩니다. 시험판 기능에 대해 환경에서 사용하도록 설정하는 방법을 비롯한 자세히 내용을 알아보려면 [시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요.                |

@@ -16,9 +16,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 88a72259bca79f2fa985e86cb57ec7a974bad24d
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: d7b13f3dea5a3ae413ca6b8150ec24e1632a4d4d
+ms.openlocfilehash: e63b639836bc38a030a051e80db4b057ab75a0b0
+ms.lasthandoff: 04/12/2017
 
 
 ---
@@ -74,7 +74,7 @@ System Center Configuration Manager에서 작업 순서를 사용하여 대상 �
 
 
 ## <a name="configure-pre-cache-content"></a>사전 캐시 콘텐츠 구성
-버전 1702부터 사용 가능한 배포 및 작업 순서에 대해 사전 캐시 기능을 사용하도록 선택하여 사용자가 콘텐츠를 설치하기 전에 클라이언트에서 관련 콘텐츠만 다운로드하도록 할 수 있습니다.
+버전 1702부터 작업 순서의 사용 가능한 배포에 대해 사전 캐시 기능을 사용하도록 선택하여 사용자가 콘텐츠를 설치하기 전에 클라이언트에서 관련 콘텐츠만 다운로드하도록 할 수 있습니다.
 > [!TIP]  
 > 버전 1702에 추가된 사전 캐시는 시험판 기능입니다. 사용하도록 설정하려면 [업데이트에서 시험판 기능 사용](/sccm/core/servers/manage/pre-release-features)을 참조하세요.
 

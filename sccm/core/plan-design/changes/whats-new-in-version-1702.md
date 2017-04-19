@@ -2,7 +2,7 @@
 title: "새 버전 1702 | Microsoft 문서"
 description: "System Center Configuration Manager 버전 1702에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다."
 ms.custom: na
-ms.date: 3/28/2017
+ms.date: 3/31/2017
 ms.reviewer: na
 ms.suite: na
 ms.technology:
@@ -14,23 +14,23 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 15debff961c872ed90c1365d4f8e9946fbc70cdc
-ms.openlocfilehash: 10e0c2108594253a8e6cb39bc47f84c72c073e6c
-ms.lasthandoff: 03/29/2017
+ms.sourcegitcommit: d7b13f3dea5a3ae413ca6b8150ec24e1632a4d4d
+ms.openlocfilehash: 3e97184dc923cd3972c23252c1bc001edb73fe3f
+ms.lasthandoff: 04/12/2017
 
 ---
 # <a name="what39s-new-in-version-1702-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1702의 새로운 기능
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 현재 분기의 업데이트 1702는 버전 1606 또는 1610을 실행하는 이전에 설치된 사이트에 대한 콘솔 내 업데이트로 제공됩니다.
+System Center Configuration Manager 현재 분기의 업데이트 1702는 버전 1602, 1606 또는 1610을 실행하는 이전에 설치된 사이트에 대한 콘솔 내 업데이트로 제공됩니다.
 
 > [!TIP]  
 > 새 사이트를 설치하려면 기준 버전의 Configuration Manager를 사용해야 합니다.  
 >  다음에 대해 자세히 알아보세요.    
->  -   [새 사이트 설치](https://technet.microsoft.com/library/mt590197.aspx)  
->  -   [사이트에 업데이트 설치](https://technet.microsoft.com/library/mt607046.aspx)  
->  -   [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)  
+>   - [새 사이트 설치](https://technet.microsoft.com/library/mt590197.aspx)  
+>   - [사이트에 업데이트 설치](https://technet.microsoft.com/library/mt607046.aspx)  
+>   - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)  
 
 다음 섹션에서는 Configuration Manager 버전 1702에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.  
 
@@ -189,7 +189,7 @@ Microsoft Intune에서 제공하는 설정과 일치하도록 iOS 장치에 대�
 - 작업 순서를 실행하지만 배포 지점에서 종속 콘텐츠 패키지를 아직 사용할 수 없는 경우 작업 순서가 실패합니다. 이제 누락된 콘텐츠를 배포하거나(아직 배포되지 않은 경우) 배포 지점에서 콘텐츠를 사용할 수 있을 때까지 기다린 다음 **이전**을 클릭하여 작업 순서에서 콘텐츠를 다시 검색하도록 할 수 있습니다.
 
 ### <a name="pre-cache-content-for-available-deployments-and-task-sequences"></a>사용 가능한 배포 및 작업 순서에 대한 사전 캐시 콘텐츠
-버전 1702부터 사용 가능한 배포 및 작업 순서에 사전 캐시 콘텐츠를 사용할 수 있습니다. 사전 캐시 콘텐츠를 사용하면 클라이언트가 배포를 받는 즉시 해당 콘텐츠만 다운로드할 수 있습니다. 따라서 사용자가 소프트웨어 센터에서 **설치**를 클릭할 때 콘텐츠가 준비되어 있으며, 콘텐츠가 로컬 하드 드라이브에 있으므로 설치가 신속하게 시작됩니다. 자세한 내용은 [사전 캐시 콘텐츠 구성](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content)을 참조하세요.
+버전 1702부터 작업 순서의 사용 가능한 배포에 대해 사전 캐시 콘텐츠를 사용할 수 있습니다. 사전 캐시 콘텐츠를 사용하면 클라이언트가 배포를 받는 즉시 해당 콘텐츠만 다운로드할 수 있습니다. 따라서 사용자가 소프트웨어 센터에서 **설치**를 클릭할 때 콘텐츠가 준비되어 있으며, 콘텐츠가 로컬 하드 드라이브에 있으므로 설치가 신속하게 시작됩니다. 자세한 내용은 [사전 캐시 콘텐츠 구성](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content)을 참조하세요.
 
 ### <a name="convert-from-bios-to-uefi-during-an-in-place-upgrade"></a>현재 위치 업그레이드 중에 BIOS에서 UEFI로 변환
 Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞게 하드 디스크를 다시 분할하는 프로세스를 자동화하는 간단한 변환 도구를 소개하고 Windows 7에서 Windows 10으로의 현재 위치 업그레이드 프로세스에 변환 도구를 통합합니다. 펌웨어를 BIOS에서 UEFI로 변환하는 OEM 도구 및 운영 체제 업그레이드 작업 순서와 이 도구를 결합하면 Windows 10 크리에이터 업데이트로의 현재 위치 업그레이드 중에 BIOS에서 UEFI로 컴퓨터를 변환할 수 있습니다. 자세한 내용은 [BIOS-UEFI 변환을 관리하는 작업 순서 단계](/sccm/osd/deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion#convert-from-bios-to-uefi-during-an-in-place-upgrade)를 참조하세요.
@@ -216,6 +216,8 @@ Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞
 ### <a name="default-boot-image-source-path-can-no-longer-be-changed"></a>기본 부팅 이미지 원본 경로를 더 이상 변경할 수 없음
 기본 부팅 이미지가 Configuration Manager에서 관리되며, 더 이상 Configuration Manager 콘솔이나 Configuration Manager SDK를 사용하여 기본 부팅 이미지 원본 경로를 변경할 수 없습니다. 사용자 지정 부팅 이미지에 대한 사용자 지정 원본 경로는 계속 구성할 수 있습니다.
 
+### <a name="default-boot-images-are-regenerated-after-upgrading-configuration-manager-to-a-new-version"></a>Configuration Manager를 새 버전으로 업그레이드한 후 기본 부팅 이미지가 다시 생성됨
+이 릴리스부터 Windows ADK 버전을 업그레이드한 다음 업데이트 및 설치를 사용하여 최신 버전의 Configuration Manager를 설치하면 Configuration Manager가 기본 부팅 이미지를 다시 생성합니다. 여기에는 업데이트된 Windows ADK의 새 Window PE 버전, 새 Configuration Manager 클라이언트 버전, 드라이버, 사용자 지정 등이 포함됩니다. 사용자 지정 부팅 이미지는 수정되지 않습니다. 자세한 내용은 [부팅 이미지 관리](/sccm/osd/get-started/manage-boot-images#BKMK_BootImageDefault)를 참조하세요.
 
 ## <a name="software-updates"></a>소프트웨어 업데이트
 
@@ -267,16 +269,6 @@ Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞
 - [Android for Work 메일 프로필](/sccm/mdm/deploy-use/create-exchange-activesync-profiles)
 - [Android for Work 준수 정책](/sccm/mdm/deploy-use/create-compliance-policy)
 
-
-### <a name="improvements-to-certificate-profiles"></a>인증서 프로필의 향상된 기능
-
-이제 S/MIME을 지원하는 PFX 인증서 프로필을 만들어 사용자에게 배포할 수 있습니다.  사용자가 등록한 모든 iOS에서 이 인증서를 S/MIME 암호화 및 서명에 사용할 수 있습니다.
-자세한 내용은 [PFX 인증서 프로필을 만드는 방법](/sccm/mdm/deploy-use/create-pfx-certificate-profiles) 및 [Exchange ActiveSync 메일 프로필](/sccm/mdm/deploy-use/create-exchange-activesync-profiles)을 참조하세요.
-
-또한 이제 여러 인증서 등록 지점 사이트 시스템 역할에 여러 CA(인증 기관)를 지정한 다음 인증서 프로필의 일부로 요청을 처리하는 CA를 할당할 수 있습니다.
-자세한 내용은 [인증서 인프라](/sccm/protect/deploy-use/certificate-infrastructure)를 참조하세요.
-
-인증서에 대한 이러한 새로운 기능은 현재 시험판이고 변경될 수 있습니다.
 
 ### <a name="deploy-volume-purchased-ios-apps-to-device-collections"></a>장치 컬렉션에 대량 구매한 iOS 앱 배포
 

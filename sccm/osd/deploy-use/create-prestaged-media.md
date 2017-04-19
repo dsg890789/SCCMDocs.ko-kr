@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager에서 사전 준비된 미디어 만들기 | Microsoft 문서"
 description: "여러 시나리오에서의 Windows 배포를 간소화하기 위해 System Center Configuration Manager에서 사전 준비된 미디어를 만듭니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 04/11/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
-ms.openlocfilehash: 56cfc5837adf986e5d2bf4a73ef9de3b1f60b4f9
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: ae9488a34c6b1e04397c4875de4b3bc607f7116c
+ms.openlocfilehash: 33abf3853d912d423e427db4d35fb4a16167164e
+ms.lasthandoff: 04/11/2017
 
 
 ---
@@ -48,7 +48,7 @@ System Center Configuration Manager의 사전 준비된 미디어는 제조업�
 |대상 컴퓨터의 하드 드라이브|사전 준비된 미디어를 컴퓨터의 하드 드라이브에 준비하기 전에 대상 컴퓨터의 하드 드라이브를 포맷해야 합니다. 미디어를 적용할 때 하드 드라이브가 포맷되어 있지 않으면 운영 체제를 배포하는 작업 순서가 대상 컴퓨터를 시작하려고 할 때 시작할 수 없습니다.|  
 
 > [!NOTE]  
->  작업 순서 미디어 만들기 마법사가 미디어에서 다음 작업 순서 변수 조건 **_SMSTSMedia = OEMMedia**를 설정합니다. 작업 순서에서 이 조건을 사용할 수 있습니다.  
+>  작업 순서 미디어 만들기 마법사가 미디어에서 다음 작업 순서 변수 조건 **_SMSTSMediaType = OEMMedia**를 설정합니다. 작업 순서에서 이 조건을 사용할 수 있습니다.  
 
  사전 준비된 미디어를 만들려면 다음 절차를 수행하세요.  
 
