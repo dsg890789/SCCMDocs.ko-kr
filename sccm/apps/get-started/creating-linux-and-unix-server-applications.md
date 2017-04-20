@@ -2,7 +2,7 @@
 title: "Linux 및 UNIX 서버 응용 프로그램 만들기 | Microsoft 문서"
 description: "Linux 및 Unix 장치용 응용 프로그램을 만들고 배포할 때 고려해야 할 사항을 확인합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 04/13/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: b599a58f25a868c638b7ee00cefff80b2f71244e
-ms.openlocfilehash: f4373c888434aa6cd22e5f9b871e172cc50a7d30
+ms.sourcegitcommit: 4b9261db93c9bf72c492e3c9be5b30f81835134a
+ms.openlocfilehash: 72ebd8bd29b5ecdd817631e447291c04f49d9808
+ms.lasthandoff: 04/13/2017
 
 
 ---
@@ -145,7 +146,7 @@ Linux 및 UNIX 컴퓨터에 패키지와 프로그램을 배포할 때와 Window
 
     -   **제한 기간 내의 최대 전송 속도(Kbps)**  
 
-    -   **제한 기간 내의 최대 전송 속도(Kbps)**  
+    -   **제한 기간 외의 최대 전송 속도(Kbps)**  
 
 Background Intelligent Transfer에 대한 다음 구성은 Linux 및 UNIX용 클라이언트에서 지원하지 않고 무시합니다.  
 
@@ -164,9 +165,4 @@ Background Intelligent Transfer에 대한 다음 구성은 Linux 및 UNIX용 클
 
 > [!TIP]  
 >  배포할 소프트웨어가 Linux 또는 UNIX 서버에서 액세스 가능한 NFS(네트워크 파일 시스템) 공유에 있는 경우 배포 지점을 사용하여 패키지를 다운로드할 필요가 없습니다. 대신 패키지를 만들 때 **이 패키지는 원본 파일을 포함함**확인란을 선택하지 마십시오. 그런 다음 프로그램을 구성할 때 NFS 탑재 지점의 패키지에 직접 액세스하도록 적절한 명령줄을 지정하십시오.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

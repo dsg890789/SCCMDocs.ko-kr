@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: e9d6f53961c4eb410a56774443e357cca7c18dcc
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: dda2f4c01078fbbd174cbcb30357554c24f6abeb
+ms.openlocfilehash: 0fea1dece0768a2b7bcd3fcedc2288ea2d52e73d
+ms.lasthandoff: 04/17/2017
 
 
 ---
@@ -45,7 +45,7 @@ System Center Configuration Manager의 경계는 관리하려는 장치를 포�
 
 **시작하려면:**
 - 먼저 [네트워크 위치를 경계로 정의](/sccm/core/servers/deploy/configure/boundaries)합니다.
-- 그런 다음 계속해서 [경계 그룹을 구성](/sccm/core/servers/deploy/configure/boundary-groups)하여 해당 경계에 있는 클라이언트를 사용 가능한 사이트 시스템 서버에 연결합니다. 
+- 그런 다음 계속해서 [경계 그룹을 구성](/sccm/core/servers/deploy/configure/boundary-groups)하여 해당 경계에 있는 클라이언트를 사용 가능한 사이트 시스템 서버에 연결합니다.
 
 
 
