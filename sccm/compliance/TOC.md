@@ -29,5 +29,5 @@
 
 ## [사용자 데이터 및 프로필 구성 항목 만들기](deploy-use/create-user-data-and-profiles-configuration-items.md)
 ## [원격 연결 프로필 만들기](deploy-use/create-remote-connection-profiles.md)
-## [Windows 장치를 최신 버전으로 업그레이드](deploy-use/upgrade-windows-version.md)
+## [Windows 장치를 새 버전으로 업그레이드](deploy-use/upgrade-windows-version.md)
 ## [준수 설정 모니터링](deploy-use/monitor-compliance-settings.md)

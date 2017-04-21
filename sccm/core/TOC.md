@@ -67,6 +67,7 @@
 
 ##   [네트워크 인프라 계획](plan-design/network/configure-firewalls-ports-domains.md)
 ###  [Active Directory 스키마 준비](plan-design/network/extend-the-active-directory-schema.md)
+#### [스키마 확장](plan-design/network/schema-extensions.md)
 ###  [사이트 시스템을 지원할 Windows 서버 준비](plan-design/network/prepare-windows-servers.md)
 ###  [사이트 시스템 서버용 웹 사이트](plan-design/network/websites-for-site-system-servers.md)
 ###  [PKI 인증서 요구 사항](plan-design/network/pki-certificate-requirements.md)
@@ -138,8 +139,10 @@
 ##   인프라 설치
 ###  [설치 미디어 받기](servers/deploy/install/get-install-media.md)
 ###  설치 프로그램을 실행하기 전에
+#### [설치 참조](servers/deploy/install/setup-reference.md)
 #### [설치 다운로더](servers/deploy/install/setup-downloader.md)
 #### [필수 조건 검사기](servers/deploy/install/prerequisite-checker.md)
+#### [필수 구성 요소 확인](servers/deploy/install/list-of-prerequisite-checks.md)
 ###  [사이트 설치](servers/deploy/install/installing-sites.md)
 #### [사이트를 설치할 준비](servers/deploy/install/prepare-to-install-sites.md)
 #### [사이트 설치를 위한 필수 조건](servers/deploy/install/prerequisites-for-installing-sites.md)
@@ -150,6 +153,7 @@
 #### [평가판 설치 업그레이드](servers/deploy/install/upgrade-an-evaluation-install-to-a-full-install.md)
 #### [System Center Configuration Manager로 업그레이드](servers/deploy/install/upgrade-to-configuration-manager.md)
 #### [설치를 간소화하는 시나리오](servers/deploy/install/scenarios-to-streamline-your-installation.md)
+#### [사이트 및 계층 제거](servers/deploy/install/uninstall-sites-and-hierarchies.md)
 
 ##   [사이트 및 계층 구조 구성](servers/deploy/configure/configure-sites-and-hierarchies.md)
 ###  [사이트 시스템 역할 추가](servers/deploy/configure/add-site-system-roles.md)
@@ -171,10 +175,24 @@
 ###  [사이트 경계 및 경계 그룹](servers/deploy/configure/define-site-boundaries-and-boundary-groups.md)
 #### [경계](servers/deploy/configure/boundaries.md)
 #### [경계 그룹](servers/deploy/configure/boundary-groups.md)
+#### [1610 이전 버전에 대한 경계 그룹](servers/deploy/configure/boundary-groups-for-1511-1602-and-1606.md)
 ###  [SQL Server AlwaysOn 사용](servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database.md)
 ###  [SQL Server 클러스터 사용](servers/deploy/configure/use-a-sql-server-cluster-for-the-site-database.md)
 ###  [데이터베이스 파일에 대한 사용자 지정 위치](servers/deploy/configure/custom-locations-for-site-database-files.md)
 ###  [역할 기반 관리 구성](servers/deploy/configure/configure-role-based-administration.md)
+##   기술 참조
+###  [계정](plan-design/hierarchy/accounts.md)
+###  [끝점 간의 통신](plan-design/hierarchy/communications-between-endpoints.md)
+###  [계층 유지 관리 도구](servers/manage/hierarchy-maintenance-tool-preinst.exe.md)
+###  [다국어 지원](plan-design/hierarchy/international-support.md)
+###  [서로 다른 버전 간의 상호 운용성](plan-design/hierarchy/interoperability-between-different-versions.md)
+###  [언어 팩](servers/deploy/install/language-packs.md)
+###  [로그 파일](plan-design/hierarchy/log-files.md)
+###  [포트](plan-design/hierarchy/ports.md)
+###  [프록시 서버 지원](plan-design/network/proxy-server-support.md)
+###  [릴리스 정보](servers/deploy/install/release-notes.md)
+###  [유니코드 및 ASCII 지원](plan-design/hierarchy/unicode-and-ascii-support.md)
+
 
 #    인프라 관리
 ##   [유지 관리 작업](servers/manage/maintenance-tasks.md)
