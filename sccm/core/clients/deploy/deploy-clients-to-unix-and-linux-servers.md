@@ -2,7 +2,7 @@
 title: "UNIX/Linux 클라이언트 배포 | Microsoft 문서"
 description: "System Center Configuration Manager에서 UNIX 또는 Linux 서버에 클라이언트를 배포하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,8 +12,8 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 15a4e323-9f42-4fea-bb14-f2b905d1f77c
 caps.latest.revision: 9
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9

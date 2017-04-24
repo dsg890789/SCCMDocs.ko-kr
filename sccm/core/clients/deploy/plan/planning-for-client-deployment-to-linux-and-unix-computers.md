@@ -2,7 +2,7 @@
 title: "Linux 및 UNIX 컴퓨터에 클라이언트 배포 계획 | Microsoft 문서"
 description: "System Center Configuration Manager에서 Linux 및 UNIX 컴퓨터에 클라이언트 배포를 계획합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,8 +13,8 @@ ms.topic: get-started-article
 ms.assetid: 44153689-70e8-42ad-9ae8-17ae35f6a2e3
 caps.latest.revision: 9
 caps.handback.revision: 0
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
@@ -47,10 +47,10 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manag
 
  이 문서의 정보를 통해 Linux 및 UNIX용 Configuration Manager 클라이언트 배포를 계획할 수 있습니다.  
 
-##  <a name="a-namebkmkclientdeployprereqforlnua-prerequisites-for-client-deployment-to-linux-and-unix-servers"></a><a name="BKMK_ClientDeployPrereqforLnU"></a> Linux 및 UNIX 서버에 클라이언트 배포에 대한 필수 조건  
+##  <a name="BKMK_ClientDeployPrereqforLnU"></a> Linux 및 UNIX 서버에 클라이언트 배포에 대한 필수 조건  
  Linux 및 UNIX 용 클라이언트를 설치 하는 필수 구성 요소가 있어야 하는 위치에 성공적으로 확인 하려면 다음 정보를 사용 합니다.  
 
-###  <a name="a-namebkmkclientdeployexternalforlnua-dependencies-external-to-configuration-manager"></a><a name="BKMK_ClientDeployExternalforLnU"></a> Configuration Manager 외부 종속성:  
+###  <a name="BKMK_ClientDeployExternalforLnU"></a> Configuration Manager 외부 종속성:  
  다음 표에서는 필수 UNIX 및 Linux 운영 체제 및 패키지 종속 파일을 설명합니다.  
 
  **Red Hat Enterprise Linux ES 릴리스 4**  
@@ -249,15 +249,15 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manag
 
  클라이언트 통신 및 요청 포트에 대한 자세한 내용은 [관리 지점을 찾도록 Linux 및 UNIX용 클라이언트 구성](../../../../core/clients/deploy/deploy-clients-to-unix-and-linux-servers.md#BKMK_ConfigClientMP)을 참조하세요.  
 
-##  <a name="a-namebkmkplanningforcommunicationsforlnua-planning-for-communication-across-forest-trusts-for-linux-and-unix-servers"></a><a name="BKMK_PlanningforCommunicationsforLnU"></a> Linux 및 UNIX 서버에 대한 포리스트 트러스트 간 통신 계획  
+##  <a name="BKMK_PlanningforCommunicationsforLnU"></a> Linux 및 UNIX 서버에 대한 포리스트 트러스트 간 통신 계획  
  Configuration Manager를 사용하여 관리하는 Linux 및 UNIX 서버는 작업 그룹 클라이언트로 작동하며 작업 그룹에 속한 Windows 기반 클라이언트와 유사한 구성이 필요합니다. 작업 그룹에 있는 컴퓨터의 통신에 대한 자세한 내용은 [System Center Configuration Manager에서 끝점 간의 통신](../../../../core/plan-design/hierarchy/communications-between-endpoints.md) 항목의[Active Directory 포리스트 간 통신](../../../../core/plan-design/hierarchy/communications-between-endpoints.md#Plan_Com_X-Forest)을 참조하세요.  
 
-###  <a name="a-namebkmkservicelocationforlnua-service-location-by-the-client-for-linux-and-unix"></a><a name="BKMK_ServiceLocationforLnU"></a> Linux 및 UNIX용 클라이언트에서 서비스 위치  
+###  <a name="BKMK_ServiceLocationforLnU"></a> Linux 및 UNIX용 클라이언트에서 서비스 위치  
  클라이언트에 서비스를 제공 하는 사이트 시스템 서버를 찾는 작업은 서비스 위치 라고 합니다. Windows 기반 클라이언트와 달리 Linux 및 UNIX 용 클라이언트 서비스 위치에 대 한 Active Directory 사용 하지 않습니다. 또한 Linux 및 UNIX용 Configuration Manager 클라이언트는 관리 지점의 도메인 접미사를 지정하는 클라이언트 속성을 지원하지 않습니다. 대신, 클라이언트는 클라이언트 소프트웨어를 설치할 때 할당 된 알려진된 관리 지점에서 클라이언트에 서비스를 제공 하는 추가 사이트 시스템 서버에 대 한 알아냅니다.  
 
  서비스 위치에 대한 자세한 내용은 [클라이언트가 System Center Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법 이해](../../../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md) 항목의 [서비스 위치 및 클라이언트에서 자신의 할당된 관리 지점을 확인하는 방법](../../../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md#BKMK_Plan_Service_Location) 섹션을 참조하세요.  
 
-##  <a name="a-namebkmksecurityforlnua-planning-for-security-and-certificates-for-linux-and-unix-servers"></a><a name="BKMK_SecurityforLnU"></a> Linux 및 UNIX 서버에 대한 보안 및 인증서 계획  
+##  <a name="BKMK_SecurityforLnU"></a> Linux 및 UNIX 서버에 대한 보안 및 인증서 계획  
  Configuration Manager 사이트와의 안전하고 인증된 통신을 위해 Linux 및 UNIX용 Configuration Manager 클라이언트는 Windows용 Configuration Manager 클라이언트와 동일한 통신 모델을 사용합니다.  
 
  Linux 및 UNIX 클라이언트를 설치할 때 HTTPS를 사용하여 Configuration Manager 사이트와 통신할 수 있게 하는 PKI 인증서를 클라이언트에 할당할 수 있습니다. PKI 인증서를 할당 하지 않은 경우 클라이언트 자체 서명 된 인증서를 만들고 HTTP를 통해서만 통신 합니다.  
@@ -270,21 +270,21 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manag
 
  Configuration Manager에서 인증서를 사용하는 방법에 대한 자세한 내용은 [System Center Configuration Manager를 위한 PKI 인증서 요구 사항](../../../../core/plan-design/network/pki-certificate-requirements.md)을 참조하세요.  
 
-###  <a name="a-namebkmkaboutcertsforlnua-about-certificates-for-use-by-linux-and-unix-servers"></a><a name="BKMK_AboutCertsforLnU"></a> Linux 및 UNIX 서버에서 사용할 인증서 정보  
+###  <a name="BKMK_AboutCertsforLnU"></a> Linux 및 UNIX 서버에서 사용할 인증서 정보  
  Linux 및 UNIX용 Configuration Manager 클라이언트는 Windows 기반 클라이언트와 마찬가지로 자체 서명된 인증서 또는 X.509 PKI 인증서를 사용합니다. Linux 및 UNIX 클라이언트를 관리하는 경우에도 Configuration Manager 사이트 시스템에 대한 PKI 요구 사항은 변경되지 않습니다.  
 
  Configuration Manager 사이트 시스템과 통신하는 Linux 및 UNIX 클라이언트에 사용할 인증서는 PKCS(Public Key Certificate Standard) #12 형식이어야 하며 PKI 인증서를 지정할 때 클라이언트에 지정할 수 있도록 암호를 알고 있어야 합니다.  
 
  Linux 및 UNIX용 Configuration Manager 클라이언트는 단일 PKI 인증서를 지원하며 여러 인증서를 지원하지 않습니다. 따라서 Configuration Manager 사이트에 대해 구성하는 인증서 선택 조건은 적용되지 않습니다.  
 
-###  <a name="a-namebkmkconfigcertsforlnua-configuring-certificates-for-linux-and-unix-servers"></a><a name="BKMK_ConfigCertsforLnU"></a> Linux 및 UNIX 서버에 대한 인증서 구성  
+###  <a name="BKMK_ConfigCertsforLnU"></a> Linux 및 UNIX 서버에 대한 인증서 구성  
  HTTPS 통신을 사용하도록 Linux 및 UNIX 서버용 Configuration Manager 클라이언트를 구성하려면 클라이언트를 설치할 때 PKI 인증서를 사용하도록 클라이언트를 구성해야 합니다. 클라이언트 소프트웨어를 설치 하기 전에 인증서를 프로 비전 할 수 없습니다.  
 
  명령줄 매개 변수를 사용 하는 PKI 인증서를 사용 하는 클라이언트를 설치 하면 **-UsePKICert** PKI 인증서가 포함 된 PKCS #12 파일의 이름과 위치를 지정할 수 있습니다. 또한 명령줄 매개 변수를 사용 해야 **-certpw** 인증서에 대 한 암호를 지정 합니다.  
 
  지정 하지 않으면 **-UsePKICert**, 클라이언트는 자체 서명 된 인증서를 생성 하 고만 HTTP를 사용 하 여 사이트 시스템 서버와 통신 하려고 시도 합니다.  
 
-##  <a name="a-namebkmknosha-256a-about-linux-and-unix-operating-systems-that-do-not-support-sha-256"></a><a name="BKMK_NoSHA-256"></a> SHA-256을 지원하지 않는 Linux 및 UNIX 운영 체제 정보  
+##  <a name="BKMK_NoSHA-256"></a> SHA-256을 지원하지 않는 Linux 및 UNIX 운영 체제 정보  
  Configuration Manager용 클라이언트로 지원되는 다음 Linux 및 UNIX 운영 체제는 SHA-256을 지원하지 않는 OpenSSL 버전과 함께 릴리스되었습니다.  
 
 -   Red Hat Enterprise Linux 버전 4 (x86/x64)  

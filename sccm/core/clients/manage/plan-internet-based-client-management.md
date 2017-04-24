@@ -2,7 +2,7 @@
 title: "인터넷 기반 클라이언트 관리 | Microsoft 문서"
 description: "System Center Configuration Manager에서 인터넷 기반 클라이언트 관리 계획을 만듭니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,8 +13,8 @@ ms.topic: get-started-article
 ms.assetid: 83a7c934-3b11-435d-ba22-cbc274951e83
 caps.latest.revision: 7
 caps.handback.revision: 0
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 828e2ac9a3f9bcea1571d24145a1021fdf1091f3

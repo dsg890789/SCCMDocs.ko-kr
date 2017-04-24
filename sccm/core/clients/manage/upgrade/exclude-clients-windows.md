@@ -2,7 +2,7 @@
 title: "클라이언트 업그레이드 제외 | Windows | System Center Configuration Manager"
 description: "System Center Configuration Manager에서 Windows 클라이언트가 업그레이드되지 않도록 제외하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 11/18/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -11,8 +11,8 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4cd6031f-8844-4d0b-8166-b24d6528a94e
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d

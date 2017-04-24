@@ -2,7 +2,7 @@
 title: "원격 제어 | Microsoft 문서"
 description: "System Center Configuration Manager의 원격 제어를 소개합니다."
 ms.custom: na
-ms.date: 12/26/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,8 +13,8 @@ ms.topic: article
 ms.assetid: 29350919-6a25-446b-a0da-05e8914fbb26
 caps.latest.revision: 4
 caps.handback.revision: 0
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 9206b82eca02877c30eebf146d42bcca7290eb42

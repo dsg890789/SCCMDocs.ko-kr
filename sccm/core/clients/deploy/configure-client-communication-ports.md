@@ -2,7 +2,7 @@
 title: "클라이언트 통신 포트 구성 | Microsoft 문서"
 description: "System Center Configuration Manager에서 클라이언트 통신 포트를 설정합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,8 +13,8 @@ ms.topic: get-started-article
 ms.assetid: 406bbdbf-ab4a-4121-a68b-154f96ea14ec
 caps.latest.revision: 5
 caps.handback.revision: 0
-author: arob98
-ms.author: angrobe
+author: robstack
+ms.author: robstackmsft
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d

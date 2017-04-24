@@ -2,7 +2,7 @@
 title: "클라이언트 차단 | Microsoft 문서"
 description: "System Center Configuration Manager를 사용하여 시스템 보안을 위해 클라이언트 액세스를 차단합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,8 +12,8 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 54ef5fbb-521d-4ca5-a1c5-61e6f538d71e
 caps.latest.revision: 8
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d

@@ -2,7 +2,7 @@
 title: "클라이언트 설정 구성 | Microsoft 문서"
 description: "System Center Configuration Manager의 클라이언트 설정을 선택합니다."
 ms.custom: na
-ms.date: 12/12/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,8 +12,8 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 95e9858a-bad4-4651-9e61-2e31dc5050fa
 caps.latest.revision: 5
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 809c7938968b4a6efce6ef37fe7b7baf2c9dd3e7

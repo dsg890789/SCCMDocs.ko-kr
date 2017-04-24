@@ -2,7 +2,7 @@
 title: "사이트에 클라이언트 할당 | Microsoft 문서"
 description: "System Center Configuration Manager에서 사이트에 클라이언트 할당"
 ms.custom: na
-ms.date: 12/16/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,8 +12,8 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: ba9b623f-6e86-4006-93f2-83d563de0cd0
 caps.latest.revision: 10
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 08afca8b422474639cbdb860e555fe0da27361a4
@@ -56,7 +56,7 @@ Configuration Manager 등록 중 모바일 장치 클라이언트를 설치할 �
 > [!NOTE]  
 >  클라이언트 컴퓨터를 존재하지 않는 Configuration Manager 사이트 코드에 수동으로 할당하면 사이트 할당은 실패합니다.   
 
-##  <a name="a-namebkmkautomaticassignmenta-using-automatic-site-assignment-for-computers"></a><a name="BKMK_AutomaticAssignment"></a> 컴퓨터에 대해 자동 사이트 할당 사용  
+##  <a name="BKMK_AutomaticAssignment"></a> 컴퓨터에 대해 자동 사이트 할당 사용  
  자동 사이트 할당은 클라이언트 배포 중 실행되거나 제어판의 **Configuration Manager 속성** 의 **고급** 탭에서 **사이트 찾기** 를 클릭하면 실행할 수 있습니다. Configuration Manager 클라이언트는 자체 네트워크 위치를 Configuration Manager 계층 구조에 구성된 경계와 비교합니다. 클라이언트의 네트워크 위치가 사이트 할당에 대해 설정된 경계 그룹에 속하거나 계층이 대체 사이트를 사용하도록 구성된 경우 클라이언트가 해당 사이트에 자동으로 할당되므로 사이트 코드를 지정할 필요가 없습니다.  
 
  경계를 다음 중 하나 이상의 방법으로 구성할 수 있습니다.  

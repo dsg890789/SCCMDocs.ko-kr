@@ -1,10 +1,10 @@
 ---
 title: "클라우드 관리 게이트웨이 설정 | Microsoft 문서"
 description: 
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 12/14/2016
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 

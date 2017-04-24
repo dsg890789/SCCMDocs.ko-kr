@@ -2,7 +2,7 @@
 title: "클라이언트 모니터링 | Microsoft 문서"
 description: "System Center Configuration Manager에서 클라이언트를 모니터링 및 관리하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 11/27/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,8 +12,8 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 110b65b3-2202-466f-bb5d-e5ee282506fc
 caps.latest.revision: 5
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 593fbd0587d54490246f48ae54f666bac6b7830d

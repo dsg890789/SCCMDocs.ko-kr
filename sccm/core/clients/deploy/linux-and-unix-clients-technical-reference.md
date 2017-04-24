@@ -2,7 +2,7 @@
 title: "UNIX/Linux 클라이언트 구성 요소 서비스 및 명령 | Microsoft 문서"
 description: "System Center Configuration Manager의 Linux 및 UNIX 클라이언트 구성 요소 서비스 및 명령에 대해 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na

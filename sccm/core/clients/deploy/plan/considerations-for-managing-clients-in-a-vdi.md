@@ -2,7 +2,7 @@
 title: "VDI(가상 데스크톱 인프라) 클라이언트 관리 | Microsoft 문서 "
 description: "VDI(가상 데스크톱 인프라)에서 System Center Configuration Manager 클라이언트를 관리합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,8 +13,8 @@ ms.topic: get-started-article
 ms.assetid: abd45393-d84e-4583-bc80-74bbb3709577
 caps.latest.revision: 7
 caps.handback.revision: 0
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d

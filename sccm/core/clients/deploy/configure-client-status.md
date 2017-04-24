@@ -2,7 +2,7 @@
 title: "클라이언트 상태 구성 | Microsoft 문서"
 description: "System Center Configuration Manager에서 클라이언트 상태 설정을 선택합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,8 +13,8 @@ ms.topic: get-started-article
 ms.assetid: a2275ba2-c83d-43e7-90ed-418963a707fe
 caps.latest.revision: 6
 caps.handback.revision: 0
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d

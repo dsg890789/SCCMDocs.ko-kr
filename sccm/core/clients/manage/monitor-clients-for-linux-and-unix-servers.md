@@ -2,7 +2,7 @@
 title: "Linux/UNIX 클라이언트 모니터링 - Configuration Manager | Microsoft 문서"
 description: "System Center Configuration Manager에서 Linux 및 UNIX 서버의 클라이언트 모니터링"
 ms.custom: na
-ms.date: 11/23/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,8 +12,8 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d827cf91-b18f-4ee7-b538-24ba6f003ab9
 caps.latest.revision: 6
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b

@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager에 대한 클라이언트 배포 작업 | Microsoft 문서"
 description: "System Center Configuration Manager에서 클라이언트를 배포 및 구성하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na

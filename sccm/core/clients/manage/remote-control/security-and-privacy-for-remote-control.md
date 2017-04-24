@@ -2,7 +2,7 @@
 title: "원격 제어 보안 및 개인 정보 | Microsoft 문서"
 description: "System Center Configuration Manager에서 원격 제어에 대한 보안 및 개인 정보를 확인합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,8 +13,8 @@ ms.topic: article
 ms.assetid: 272ee86b-d3d9-4fd9-b5c4-73e490e1a1e4
 caps.latest.revision: 6
 caps.handback.revision: 0
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53

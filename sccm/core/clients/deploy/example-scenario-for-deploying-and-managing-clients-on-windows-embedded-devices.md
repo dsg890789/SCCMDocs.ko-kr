@@ -2,7 +2,7 @@
 title: "예제 시나리오 - Windows Embedded 클라이언트 배포 | Microsoft 문서"
 description: "Windows Embedded 장치의 System Center Configuration Manager 클라이언트 배포 및 관리에 대한 예제 시나리오를 참조하세요."
 ms.custom: na
-ms.date: 01/12/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na

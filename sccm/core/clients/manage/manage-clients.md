@@ -2,7 +2,7 @@
 title: "클라이언트 관리 | Microsoft 문서"
 description: "System Center Configuration Manager에서 클라이언트를 관리하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 01/04/2017
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,8 +12,8 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3986a992-c175-4b6f-922e-fc561e3d7cb7
 caps.latest.revision: 17
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 19e111e0cb174f11ad08f98d2516e52c4c183d86
@@ -35,7 +35,7 @@ System Center Configuration Manager 클라이언트를 설치하여 Configuratio
 >   
 >  Configuration Manager 콘솔의 **클라이언트** 열을 사용하여 Configuration Manager 콘솔에서 관리할 수 있도록 Configuration Manager 클라이언트 설치 여부를 결정합니다.  
 
-##  <a name="a-namebkmkmanagingclientsdevicesnodea-manage-clients-from-the-devices-node"></a><a name="BKMK_ManagingClients_DevicesNode"></a> 장치 노드에서 클라이언트 관리  
+##  <a name="BKMK_ManagingClients_DevicesNode"></a> 장치 노드에서 클라이언트 관리  
 
 장치 유형에 따라 이러한 옵션 중 일부를 사용하지 못할 수도 있습니다.  
 
@@ -153,7 +153,7 @@ System Center Configuration Manager 클라이언트를 설치하여 Configuratio
 
          자세한 내용은 [System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 MDM(모바일 장치 관리)](../../../mdm/understand/hybrid-mobile-device-management.md)을 참조하세요.  
 
-##  <a name="a-namebkmkmanagingclientsdevicecollectionsnodea-manage-clients-from-the-device-collections-node"></a><a name="BKMK_ManagingClients_DeviceCollectionsNode"></a> 장치 컬렉션 노드에서 클라이언트 관리  
+##  <a name="BKMK_ManagingClients_DeviceCollectionsNode"></a> 장치 컬렉션 노드에서 클라이언트 관리  
   **장치** 노드의 단일 장치 또는 여러 장치에서 수행할 수 있는 많은 작업은 컬렉션에서 수행할 수 있습니다. 컬렉션에 있는 적격한 모든 장치에 자동으로 작업이 적용됩니다. 이로 인해 네트워크 패킷이 많이 생성되고 사이트 서버에서 CPU 사용량이 증가합니다.  
 
   컬렉션 수준 클라이언트 관리 작업을 수행하기 전에 컬렉션에 있는 장치 수, 대역폭이 낮은 네트워크 연결로 연결되었는지 여부 및 모든 장치에 대해 작업을 완료하는 데 걸리는 시간을 고려하세요. 시작하면 콘솔에서 작업을 중지할 수 없습니다.  
@@ -186,7 +186,7 @@ System Center Configuration Manager 클라이언트를 설치하여 Configuratio
 
          클라이언트 알림 작업은 **모니터링** 작업 영역의 **클라이언트 작업** 노드에 표시됩니다.  
 
-##  <a name="a-namebkmkclientcachea-configure-the-client-cache-for-configuration-manager-clients"></a><a name="BKMK_ClientCache"></a> Configuration Manager 클라이언트에 대한 클라이언트 캐시 구성  
+##  <a name="BKMK_ClientCache"></a> Configuration Manager 클라이언트에 대한 클라이언트 캐시 구성  
 클라이언트에서 응용 프로그램 및 프로그램을 설치할 때 클라이언트 캐시에는 임시 파일이 저장됩니다. 소프트웨어 업데이트도 클라이언트 캐시를 사용하지만 소프트웨어 업데이트는 구성된 캐시 크기의 제한을 받지 않으며 항상 캐시로 다운로드하려고 시도합니다. Configuration Manager 클라이언트를 수동으로 설치할 때나 클라이언트 강제 설치를 사용할 때 또는 클라이언트를 설치한 후에 크기와 위치 같은 클라이언트 캐시 설정을 구성할 수 있습니다.
 
 Configuration Manager 버전 1606부터 Configuration Manager 콘솔에서 클라이언트 설정을 사용하여 캐시 폴더 크기를 지정할 수 있습니다.   
@@ -275,7 +275,7 @@ CCMSetup.exe에서 이러한 명령줄 속성을 사용하는 방법에 대한 �
 
      Configuration Manager 클라이언트에서는 그 다음 클라이언트 정책을 다운로드할 때 이러한 설정으로 캐시 크기를 구성할 수 있습니다.
 
-##  <a name="a-namebkmkuninstalclienta-uninstall-the-configuration-manager-client"></a><a name="BKMK_UninstalClient"></a> Configuration Manager 클라이언트 제거  
+##  <a name="BKMK_UninstalClient"></a> Configuration Manager 클라이언트 제거  
  **/Uninstall** 속성을 통해 **CCMSetup.exe**를 사용하여 Windows Configuration Manager 클라이언트 소프트웨어를 제거할 수 있습니다. 명령 프롬프트에서 개별 컴퓨터에 대해 CCMSetup.exe를 실행하거나 컴퓨터의 컬렉션에 대해 클라이언트를 제거하는 패키지 및 프로그램을 배포합니다.  
 
 > [!WARNING]  
@@ -290,7 +290,7 @@ CCMSetup.exe에서 이러한 명령줄 속성을 사용하는 방법에 대한 �
 > [!NOTE]  
 >  제거 프로세스는 화면에 결과가 표시되지 않습니다. 클라이언트가 제대로 제거되었는지 확인하려면 클라이언트 컴퓨터의 **%windir%\ ccmsetup** 폴더에서 *CCMSetup.log*라는 로그 파일을 검토합니다.  
 
-##  <a name="a-namebkmkconflictingrecordsa-manage-conflicting-records-for-configuration-manager-clients"></a><a name="BKMK_ConflictingRecords"></a> Configuration Manager 클라이언트에 대한 충돌 레코드 관리  
+##  <a name="BKMK_ConflictingRecords"></a> Configuration Manager 클라이언트에 대한 충돌 레코드 관리  
  Configuration Manager에서는 하드웨어 ID를 사용하여 중복되었을 수 있는 클라이언트를 식별하고 충돌 레코드에 대해 경고합니다. 예를 들어 컴퓨터를 다시 설치하면 하드웨어 ID는 동일하지만 Configuration Manager에서 사용하는 GUID는 변경될 수 있습니다.  
 
  Configuration Manager에서 신뢰할 수 있는 원본의 컴퓨터 계정이나 PKI 인증서의 Windows 인증을 사용하여 충돌을 해결할 수 있는 경우에는 충돌이 자동으로 해결됩니다. 그러나 Configuration Manager에서 충돌을 해결할 수 없는 경우 중복된 하드웨어 ID(기본 설정)를 검색할 때 자동으로 레코드를 병합하는 계층 구조 설정을 사용할 수도 있고, 어떠한 경우에 새 클라이언트 레코드를 병합하거나 차단하거나 만들지를 결정할 수도 있습니다. 중복된 레코드를 수동으로 관리하려는 경우 Configuration Manager 콘솔에서 충돌 레코드를 수동으로 해결해야 합니다.  
@@ -326,7 +326,7 @@ Configuration Manager 버전 1610부터 Configuration Manager에서 PXE 부팅 �
 2. **홈** 탭의 **사이트** 그룹에서 **계층 설정**을 선택합니다.
 3. **클라이언트 승인 및 충돌 레코드** 탭에서 **Duplicate hardware identifiers**(중복 하드웨어 식별자) 섹션의 **추가**를 선택하여 새 하드웨어 식별자를 추가합니다.
 
-##  <a name="a-namebkmkpolicyretrievala-initiate-policy-retrieval-for-a-configuration-manager-client"></a><a name="BKMK_PolicyRetrieval"></a> Configuration Manager 클라이언트에 대한 정책 검색 시작  
+##  <a name="BKMK_PolicyRetrieval"></a> Configuration Manager 클라이언트에 대한 정책 검색 시작  
  Windows Configuration Manager 클라이언트는 클라이언트 설정으로 구성한 일정에 따라 클라이언트 정책을 다운로드합니다. 그러나 클라이언트에서 애드혹 정책 검색을 시작하려는 경우(예: 문제 해결 또는 테스트)가 있을 수 있습니다.  
 
 다음을 사용하여 정책 검색을 시작할 수 있습니다.
