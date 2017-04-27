@@ -17,9 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
-ms.openlocfilehash: c3ca3b895d54b6dc886068b92b39d0d95c466de2
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: d94acac84f052a01de9d9c9f65f237c0006c45b8
+ms.openlocfilehash: a2d4420c2274a9b1ceb47ffd267849fdb5a55a61
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -76,7 +76,7 @@ ms.lasthandoff: 03/21/2017
 - 보조 사이트 - 사용할 수 없음
 
 
-**오래된 수집 파일 삭제**: 이 작업을 사용하면 수집 파일에 대해 오래된 정보를 데이터베이스에서 삭제할 수 있습니다. 또한 이 작업은 선택한 사이트의 사이트 서버 폴더 구조에서 수집 파일을 삭제합니다. 기본적으로 수집된 파일의 복사본이 최신순으로&5;개까지 사이트 서버의 **Inboxes\sinv.box\FileCol** 디렉터리에 저장됩니다. 자세한 내용은 [System Center Configuration Manager의 소프트웨어 인벤토리 소개](/sccm/core/clients/manage/inventory/introduction-to-software-inventory)를 참조하세요.  
+**오래된 수집 파일 삭제**: 이 작업을 사용하면 수집 파일에 대해 오래된 정보를 데이터베이스에서 삭제할 수 있습니다. 또한 이 작업은 선택한 사이트의 사이트 서버 폴더 구조에서 수집 파일을 삭제합니다. 기본적으로 수집된 파일의 복사본이 최신순으로 5개까지 사이트 서버의 **Inboxes\sinv.box\FileCol** 디렉터리에 저장됩니다. 자세한 내용은 [System Center Configuration Manager의 소프트웨어 인벤토리 소개](/sccm/core/clients/manage/inventory/introduction-to-software-inventory)를 참조하세요.  
 
 -   중앙 관리 사이트: 사용할 수 없음    
 -   **기본 사이트**: 사용    
@@ -141,13 +141,13 @@ ms.lasthandoff: 03/21/2017
 **오래된 로그 데이터 삭제**: 이 작업을 사용하면 문제 해결에 사용된 오래된 로그 데이터를 데이터베이스에서 삭제할 수 있습니다. 이 데이터는 Configuration Manager 구성 요소 작업과 관련이 없습니다.  
 
 > [!IMPORTANT]  
-> 기본적으로 이 작업은 각 사이트에서 매일 실행됩니다. 이 작업은 중앙 관리 사이트 및 기본 사이트에서 30일이 경과한 데이터를 삭제합니다. 보조 사이트에서 SQL Server Express를 사용할 경우 이 작업은 매일 실행되어야 하고&7;일 동안 비활성 상태인 데이터를 삭제해야 합니다.  
+> 기본적으로 이 작업은 각 사이트에서 매일 실행됩니다. 이 작업은 중앙 관리 사이트 및 기본 사이트에서 30일이 경과한 데이터를 삭제합니다. 보조 사이트에서 SQL Server Express를 사용할 경우 이 작업은 매일 실행되어야 하고 7일 동안 비활성 상태인 데이터를 삭제해야 합니다.  
 
 -   **중앙 관리 사이트**: 사용    
 -   **기본 사이트**: 사용    
 -   **보조 사이트**: 사용  
 
-**오래된 알림 작업 기록 삭제**: 지정한 시간 동안 클라이언트 알림 작업에 대한 정보가 업데이트되지 않은 경우 이 작업을 사용하면 이런 정보를 사이트 데이터베이스에서 삭제할 수 있습니다. 클라이언트 알림에 대한 자세한 내용은 [System Center Configuration Manager에 대한 클라이언트 배포 작업](../../../core/clients/deploy/client-deployment-tasks.md)을 참조하세요.  
+**오래된 알림 작업 기록 삭제**: 지정한 시간 동안 클라이언트 알림 작업에 대한 정보가 업데이트되지 않은 경우 이 작업을 사용하면 이런 정보를 사이트 데이터베이스에서 삭제할 수 있습니다. 클라이언트 알림에 대한 자세한 내용은 [System Center Configuration Manager에 대한 클라이언트 배포 작업](../../../core/clients/manage/monitor-clients.md)을 참조하세요.  
 
 -   중앙 관리 사이트: 사용할 수 없음    
 -   **기본 사이트**: 사용    
@@ -159,7 +159,7 @@ ms.lasthandoff: 03/21/2017
 -   **기본 사이트**: 사용    
 -   **보조 사이트**: 사용  
 
-**오래된 암호 기록 삭제**: 계층 구조의 최상위 사이트에서 이 작업을 사용하면 Android 및 Windows Phone 장치의 오래된 암호 재설정 데이터를 삭제할 수 있습니다. 암호 재설정 데이터는 암호화되지만 장치에 대한 PIN을 포함하고 있습니다. 기본적으로 이 작업은 사용하도록 설정되며&1;일보다 오래된 데이터를 삭제합니다.  
+**오래된 암호 기록 삭제**: 계층 구조의 최상위 사이트에서 이 작업을 사용하면 Android 및 Windows Phone 장치의 오래된 암호 재설정 데이터를 삭제할 수 있습니다. 암호 재설정 데이터는 암호화되지만 장치에 대한 PIN을 포함하고 있습니다. 기본적으로 이 작업은 사용하도록 설정되며 1일보다 오래된 데이터를 삭제합니다.  
 
 -   **중앙 관리 사이트**: 사용    
 -   **기본 사이트**: 사용    

@@ -2,7 +2,7 @@
 title: "컬렉션 관리 | Microsoft 문서"
 description: "System Center Configuration Manager에서 일반적인 컬렉션 관리 작업을 수행합니다."
 ms.custom: na
-ms.date: 2/22/2017
+ms.date: 4/25/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,9 +17,9 @@ author: andredm7
 ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
-ms.openlocfilehash: b41b50c75f1b89c8fc712b53988bd8e24813106d
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: d94acac84f052a01de9d9c9f65f237c0006c45b8
+ms.openlocfilehash: 4d44f98eb0755619cdd2101203a13725186b835b
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -41,7 +41,7 @@ ms.lasthandoff: 12/16/2016
 |---------------------|-------------|----------------------|  
 |**멤버 표시**|**장치** 노드의 임시 노드에 선택한 컬렉션의 멤버인 모든 리소스를 표시합니다.|추가 정보가 없습니다.|  
 |**선택한 항목 추가**|다음 작업 중 하나를 수행하기 위해 다음 옵션을 제공합니다.<br /><br /> - <br />                    **선택한 항목을 기존 장치 컬렉션에 추가** - 선택한 컬렉션의 멤버를 추가하려는 컬렉션을 선택할 수 있는 **컬렉션 선택** 대화 상자를 엽니다. 선택한 컬렉션이 **컬렉션 포함** 멤버 관리 규칙을 사용하여 이 컬렉션에 포함됩니다.<br /><br /> - **선택한 항목을 새 장치 컬렉션에 추가** - 새 컬렉션을 만들 수 있는 **장치 컬렉션 만들기 마법사**를 엽니다. 선택한 컬렉션이 **컬렉션 포함** 멤버 관리 규칙을 사용하여 이 컬렉션에 포함됩니다.|[System Center Configuration Manager에서 컬렉션을 만드는 방법](../../../../core/clients/manage/collections/create-collections.md)|  
-|**클라이언트 설치**|선택한 컬렉션의 모든 컴퓨터에서 Configuration Manager 클라이언트를 설치하기 위해 클라이언트 강제 설치를 사용하는 **클라이언트 설치 마법사**를 엽니다.|[System Center Configuration Manager에 대한 클라이언트 배포 작업](../../../../core/clients/deploy/client-deployment-tasks.md)|  
+|**클라이언트 설치**|선택한 컬렉션의 모든 컴퓨터에서 Configuration Manager 클라이언트를 설치하기 위해 클라이언트 강제 설치를 사용하는 **클라이언트 설치 마법사**를 엽니다.|[Windows 컴퓨터에 클라이언트를 배포하는 방법](../../../../core/clients/deploy/deploy-clients-to-windows-computers.md)|  
 |**선호도 요청 관리**|보류 중인 요청을 승인하거나 거부하여 선택한 컬렉션의 장치에 대해 사용자 장치 선호도를 설정할 수 있는 **사용자 장치 선호도 요청 관리** 대화 상자를 엽니다.|[System Center Configuration Manager에서 사용자 장치 선호도를 사용하여 사용자와 장치 연결](../../../../apps/deploy-use/link-users-and-devices-with-user-device-affinity.md)|  
 |**필수 PXE 배포 지우기**|선택한 컬렉션의 모든 멤버에서 필수 PXE 부팅 배포를 지웁니다.|[운영 체제 배포 소개](../../../../osd/understand/introduction-to-operating-system-deployment.md)|  
 |**멤버 자격 업데이트**|선택한 컬렉션에 대한 멤버 자격을 평가합니다. 멤버가 많은 컬렉션의 경우 이 업데이트를 완료하려면 다소 시간이 걸릴 수 있습니다. 업데이트가 완료된 후 **새로 고침** 작업을 사용하여 새 컬렉션 멤버로 화면 표시를 업데이트합니다.|추가 정보가 없습니다.|  

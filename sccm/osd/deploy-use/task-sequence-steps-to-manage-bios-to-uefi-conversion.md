@@ -15,9 +15,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 6820b6d4423ab0ac250effb4ec1160432de8eaba
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: ae008c91a7387ba76f2bfac13f8feb489a0cc558
+ms.openlocfilehash: 528ce515c86c4e778532290026a90a46476c4576
+ms.lasthandoff: 04/21/2017
 
 
 ---
@@ -36,21 +36,19 @@ Configuration Manager 버전 1610부터 이제 새로운 변수인 TSUEFIDrive�
 1. 파일 및 설정을 캡처하는 단계와 운영 체제 단계 사이에 새 작업 순서 그룹을 만듭니다. 예를 들어 **파일 및 설정 캡처**라는 그룹 뒤에 **BIOS-UEFI**라는 그룹을 만듭니다.
 2. 새 그룹의 **옵션** 탭에서 새 작업 순서 변수를 **_SMSTSBootUEFI**가 **true**와 **같지 않음**인 조건으로 추가합니다. 이렇게 하면 컴퓨터가 이미 UEFI 모드에서 실행 중인 경우 이 그룹의 단계가 실행되지 않습니다.
 
-   ![BIOS-UEFI 그룹](../../core/get-started/media/BIOS-to-UEFI-group.png)
+  ![BIOS-UEFI 그룹](../../core/get-started/media/BIOS-to-UEFI-group.png)
 3. 새 그룹 아래에 **컴퓨터 다시 시작** 작업 순서 단계를 추가합니다. **다시 시작한 후에 실행할 응용 프로그램을 지정하십시오.**에서 **이 작업 순서에 할당된 부팅 이미지**를 선택하여 Windows PE에서 컴퓨터를 시작합니다.  
 4. **옵션** 탭에서 작업 순서 변수를 **_SMSTSInWinPE = false**인 조건으로 추가합니다. 이렇게 하면 컴퓨터가 이미 Windows PE에서 실행 중인 경우 이 단계가 실행되지 않습니다.
 
-    ![컴퓨터 다시 시작 단계](../../core/get-started/media/restart-in-windows-pe.png)
+  ![컴퓨터 다시 시작 단계](../../core/get-started/media/restart-in-windows-pe.png)
 5. 펌웨어를 BIOS에서 UEFI로 변환하는 OEM 도구를 시작하는 단계를 추가합니다. 이 단계는 일반적으로 명령줄을 사용하여 OEM 도구를 시작하는 **명령줄 실행** 작업 순서 단계가 됩니다.
-6.    하드 드라이브의 파티션을 나누고 포맷하는 디스크 포맷 및 파티션 만들기 작업 순서 단계를 추가합니다. 이 단계에서 다음을 수행합니다.
-    1.    운영 체제를 설치하기 전에 UEFI로 변환하는 FAT32 파티션을 만듭니다. **디스크 유형**에 대해 **GPT**를 선택합니다.
-
-       ![디스크 포맷 및 파티션 만들기 단계](../media/format-and-partition-disk.png)
-    2.    FAT32 파티션의 속성으로 이동합니다. **변수** 필드에 **TSUEFIDrive**를 입력합니다. 작업 순서에서 이 변수를 발견하면 컴퓨터를 다시 시작하기 전에 UEFI 변환을 준비합니다.
-
-       ![파티션 속성](../../core/get-started/media/partition-properties.png)
-    3. 작업 순서 엔진이 상태를 저장하고 로그 파일을 저장하는 데 사용할 NTFS 파티션을 만듭니다.
-7.    **컴퓨터 다시 시작** 작업 순서 단계를 추가합니다. **다시 시작한 후에 실행할 응용 프로그램을 지정하십시오.**에서 **이 작업 순서에 할당된 부팅 이미지**를 선택하여 Windows PE에서 컴퓨터를 시작합니다.  
+6. 하드 드라이브의 파티션을 나누고 포맷하는 디스크 포맷 및 파티션 만들기 작업 순서 단계를 추가합니다. 이 단계에서 다음을 수행합니다.
+  1. 운영 체제를 설치하기 전에 UEFI로 변환하는 FAT32 파티션을 만듭니다. **디스크 유형**에 대해 **GPT**를 선택합니다.
+    ![디스크 포맷 및 파티션 만들기 단계](../media/format-and-partition-disk.png)
+  2. FAT32 파티션의 속성으로 이동합니다. **변수** 필드에 **TSUEFIDrive**를 입력합니다. 작업 순서에서 이 변수를 발견하면 컴퓨터를 다시 시작하기 전에 UEFI 변환을 준비합니다.
+    ![파티션 속성](../../core/get-started/media/partition-properties.png)
+  3. 작업 순서 엔진이 상태를 저장하고 로그 파일을 저장하는 데 사용할 NTFS 파티션을 만듭니다.
+7. **컴퓨터 다시 시작** 작업 순서 단계를 추가합니다. **다시 시작한 후에 실행할 응용 프로그램을 지정하십시오.**에서 **이 작업 순서에 할당된 부팅 이미지**를 선택하여 Windows PE에서 컴퓨터를 시작합니다.  
 
 ## <a name="convert-from-bios-to-uefi-during-an-in-place-upgrade"></a>현재 위치 업그레이드 중에 BIOS에서 UEFI로 변환
 Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞게 하드 디스크를 다시 분할하는 프로세스를 자동화하는 간단한 변환 도구를 소개하고 Windows 7에서 Windows 10으로의 현재 위치 업그레이드 프로세스에 변환 도구를 통합합니다. 펌웨어를 BIOS에서 UEFI로 변환하는 OEM 도구 및 운영 체제 업그레이드 작업 순서와 이 도구를 결합하면 Windows 10 크리에이터 업데이트로의 현재 위치 업그레이드 중에 BIOS에서 UEFI로 컴퓨터를 변환할 수 있습니다.
@@ -61,13 +59,10 @@ Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞
 - 컴퓨터의 펌웨어를 BIOS에서 UEFI로 변환하는 OEM 도구
 
 ### <a name="to-convert-from-bios-to-uefi-during-an-in-place-upgrade"></a>현재 위치 업그레이드 중에 BIOS에서 UEFI로 변환하려면
-1.    Windows 10 크리에이터 업데이트로의 현재 위치 업그레이드를 수행하는 운영 체제 업그레이드 작업 순서를 만듭니다.
-2.    작업 순서를 편집합니다. **사후 처리 그룹**에서 다음 작업 순서 단계를 추가합니다.
-    1.    [일반]에서 **명령줄 실행** 단계를 추가합니다. 디스크에서 데이터를 수정하거나 삭제하지 않고 MBR에서 GPT로 디스크를 변환하는 MBR2GPT 도구에 대한 명령줄 도구를 추가합니다. 명령줄에서 다음을 입력합니다. **MBR2GPT /convert /disk:0 /AllowFullOS**.
-        > [!NOTE]  
-           > 전체 운영 체제가 아닌 Windows PE에 있을 때 MBR2GPT.EXE 도구를 실행할 수도 있습니다. 이 작업을 수행하려면 MBR2GPT.EXE 도구를 실행하는 단계 전에 컴퓨터를 WinPE로 다시 시작하는 단계를 추가하고 명령줄에서 /AllowFullOS 옵션을 제거합니다. 도구 및 사용 가능한 옵션에 대한 자세한 내용은 [MBR2GPT.EXE](https://technet.microsoft.com/itpro/windows/deploy/mbr-to-gpt)를 참조하세요.
-
-    2.    펌웨어를 BIOS에서 UEFI로 변환하는 OEM 도구를 시작하는 단계를 추가합니다. 이 단계는 일반적으로 명령줄을 사용하여 OEM 도구를 시작하는 명령줄 실행 작업 순서 단계가 됩니다.
-    3.    [일반]에서 **컴퓨터 다시 시작** 단계를 추가합니다. [다시 시작한 후에 실행할 응용 프로그램을 지정하십시오.]에서 **현재 설치된 기본 운영 체제**를 선택합니다.
-3.    작업 순서를 배포합니다.
+1. Windows 10 크리에이터 업데이트로의 현재 위치 업그레이드를 수행하는 운영 체제 업그레이드 작업 순서를 만듭니다.
+2. 작업 순서를 편집합니다. **사후 처리 그룹**에서 다음 작업 순서 단계를 추가합니다.
+   1. [일반]에서 **명령줄 실행** 단계를 추가합니다. 디스크에서 데이터를 수정하거나 삭제하지 않고 MBR에서 GPT로 디스크를 변환하는 MBR2GPT 도구에 대한 명령줄 도구를 추가합니다. 명령줄에서 다음을 입력합니다. **MBR2GPT /convert /disk:0 /AllowFullOS**. 전체 운영 체제가 아닌 Windows PE에 있을 때 MBR2GPT.EXE 도구를 실행할 수도 있습니다. 이 작업을 수행하려면 MBR2GPT.EXE 도구를 실행하는 단계 전에 컴퓨터를 WinPE로 다시 시작하는 단계를 추가하고 명령줄에서 /AllowFullOS 옵션을 제거합니다. 도구 및 사용 가능한 옵션에 대한 자세한 내용은 [MBR2GPT.EXE](https://technet.microsoft.com/itpro/windows/deploy/mbr-to-gpt)를 참조하세요.
+   2. 펌웨어를 BIOS에서 UEFI로 변환하는 OEM 도구를 시작하는 단계를 추가합니다. 이 단계는 일반적으로 명령줄을 사용하여 OEM 도구를 시작하는 명령줄 실행 작업 순서 단계가 됩니다.
+   3. [일반]에서 **컴퓨터 다시 시작** 단계를 추가합니다. [다시 시작한 후에 실행할 응용 프로그램을 지정하십시오.]에서 **현재 설치된 기본 운영 체제**를 선택합니다.
+3. 작업 순서를 배포합니다.
 
