@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager에서 VPN 프로필을 만드는 방법 | Microsoft 문서"
 description: "System Center Configuration Manager에서 VPN 프로필을 만드는 방법을 알아봅니다."
 ms.custom: 
-ms.date: 12/28/2016
+ms.date: 4/19/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,14 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: f338e4db-73b5-45ff-92f4-1b89a8ded989
 caps.latest.revision: 15
-author: nbigman
+author: lleonard-msft
 caps.handback.revision: 0
-ms.author: nbigman
+ms.author: alleonar
 ms.manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
-ms.openlocfilehash: e3959dc46be225a0edaa94dda73bb4c4ceadf7fe
-ms.lasthandoff: 03/04/2017
+ms.sourcegitcommit: ae008c91a7387ba76f2bfac13f8feb489a0cc558
+ms.openlocfilehash: d4616ce1e0d8f38b74f03b9e7f089feebe2d087d
+ms.lasthandoff: 04/21/2017
 
 
 ---
@@ -40,7 +40,7 @@ ms.lasthandoff: 03/04/2017
 
 1.  **일반** 페이지를 완료합니다. 를 참조하되 다음에 유의하십시오.  
 
-       - VPN 프로필 이름에 \\/:*?<>&#124; 문자나 공백 문자를 사용하지 마세요. 이러한 문자는 Windows Server VPN 프로필에서 지원되지 않습니다.  
+       - VPN 프로필 이름에 \\/:*?&lt;>&#124; 문자나 공백 문자를 사용하지 마세요. 이러한 문자는 Windows Server VPN 프로필에서 지원되지 않습니다.  
 
        -   **파일에서 기존 VPN 프로필 항목 가져오기**를 선택하여 XML 파일로 내보낸 VPN 프로필 정보를 가져옵니다(Windows 8.1 및 Windows RT 운영 체제에만 해당).  
 
@@ -53,20 +53,20 @@ ms.lasthandoff: 03/04/2017
         > [!NOTE]  
         >  iOS를 실행하는 장치에서는 여러 VPN 서버를 사용할 수 없습니다. 여러 VPN 서버를 구성한 후 VPN 프로필을 iOS 장치에 배포하는 경우 기본 서버만 사용됩니다.  
 
-     이 표에서는 연결 형식 옵션을 제공합니다. 자세한 내용은 VPN 서버 설명서를 참조하세요.  
+     이 표에서는 연결 형식 옵션을 제공합니다. 자세한 내용은 VPN 서버 설명서를 참조하세요.
 
-    |옵션|추가 정보|연결 유형|  
-    |------------|----------------------|---------------------|  
-    |**영역**|사용하려는 인증 영역. 인증 영역은 Pulse Secure 연결 유형에서 사용되는 인증 리소스 그룹입니다.|Pulse Secure|  
-    |**역할**|이 연결에 대한 액세스 권한이 있는 사용자 역할.|Pulse Secure|  
-    |**로그인 그룹 또는 도메인**|연결하려는 로그인 그룹 또는 도메인의 이름.|Dell SonicWALL Mobile Connect|  
-    |**지문**|신뢰할 수 있는 VPN 서버를 확인하는 데 사용할 문자열(예: 'Contoso 지문 코드').<br /><br /> 지문은 다음과 같은 작업에 사용할 수 있습니다.<br /><br /> - 연결 시 동일한 지문을 제시하는 서버는 신뢰할 수 있다는 것을 알 수 있도록 클라이언트에 전송됩니다.<br /><br /> - 장치에 지문이 아직 없으면 사용자에게 지문을 보여주면서 연결하려는 VPN 서버를 신뢰할 것인지 묻는 메시지가 표시됩니다. 사용자는 지문을 수동으로 확인한 후 연결 **신뢰**를 선택합니다.|검사점 모바일 VPN|  
-    |**VPN 연결을 통해 모든 네트워크 트래픽 보내기**|이 옵션을 선택하지 않는 경우 연결( **Microsoft SSL(SSTP)**, **Microsoft 자동**, **IKEv2**, **PPTP** 및 **L2TP** 연결 형식의 경우)에 대해 추가 경로를 지정할 수 있습니다. 이러한 경로를 분할 또는 VPN 터널링이라고 합니다.<br /><br /> 회사 네트워크에 대한 연결만 VPN 터널을 통해 보내집니다. VPN 터널링은 인터넷에 있는 리소스에 연결할 경우에는 사용되지 않습니다.|모두|  
-    |**연결별 DNS 접미사**|연결에 대해 연결별 DNS(Domain Name System) 접미사.|- <br />                            Microsoft SSL(SSTP)<br /><br /> - Microsoft 자동<br /><br /> - <br />                            IKEv2<br /><br /> - <br />                            PPTP<br /><br /> - <br />                            L2TP|  
-    |**회사 Wi-Fi 네트워크에 연결된 경우 VPN 무시**|장치가 회사 Wi-Fi 네트워크에 연결된 경우 VPN 연결이 사용되지 않습니다.|- Cisco AnyConnect<br /><br /> - Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - 검사점 모바일 VPN<br /><br /> - Microsoft SSL(SSTP)<br /><br /> - Microsoft 자동<br /><br /> - IKEv2<br /><br /> - L2TP|  
-    |**홈 Wi-Fi 네트워크 연결 시 VPN 건너뛰기**|장치가 가정용 Wi-Fi 네트워크에 연결된 경우 VPN 연결이 사용되지 않습니다.|모두|  
-    |**응용 프로그램 VPN(iOS 7 이상, Mac OS X 10.9 및 이후 버전)당**|앱이 실행될 때 연결이 열리도록 이 VPN 연결을 iOS 앱과 연결합니다. 앱을 배포할 때 VPN 프로필을 앱과 연결할 수 있습니다.|- <br />                        Cisco AnyConnect<br /><br /> - Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - 검사점 모바일 VPN|  
-    |**사용자 지정 XML(선택 사항)**|VPN 연결을 구성하는 사용자 지정 XML 명령을 지정합니다.<br /><br /> 예제:<br /><br /> **Pulse Secure**의 경우:<br /><br /> **<pulse-schema><isSingleSignOnCredential\>true</isSingleSignOnCredential\></pulse-schema>**<br /><br /> **CheckPoint Mobile VPN**의 경우:<br /><br /> **&lt;CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" /\>**<br /><br /> **Dell SonicWALL Mobile Connect**의 경우:<br /><br /> **<MobileConnect\><Compression\>false</Compression\><debugLogging\>True</debugLogging\><packetCapture\>False</packetCapture\></MobileConnect\>**<br /><br /> **F5 Edge Client**의 경우:<br /><br /> **<f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>**<br /><br /> 사용자 지정 XML 명령을 작성하는 방법에 대한 자세한 내용은 각 제조업체의 VPN 설명서를 참조하세요.|- Cisco AnyConnect<br /><br /> - Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - 검사점 모바일 VPN|  
+|옵션          | 추가 정보| 연결 유형|  
+|----------------|----------------------|---------------------|  
+|**영역**     |사용하려는 인증 영역. 인증 영역은 Pulse Secure 연결 유형에서 사용되는 인증 리소스 그룹입니다.|Pulse Secure|    
+|**역할**        |이 연결에 대한 액세스 권한이 있는 사용자 역할. |Pulse Secure|  
+|**로그인 그룹 또는 도메인** |연결하려는 로그인 그룹 또는 도메인의 이름.|Dell SonicWALL Mobile Connect|  
+|**지문**  |신뢰할 수 있는 VPN 서버를 확인하는 데 사용할 문자열(예: 'Contoso 지문 코드').<br /><br /> 지문은 다음과 같은 작업에 사용할 수 있습니다.<br /><br /> - 연결 시 동일한 지문을 제시하는 서버는 신뢰할 수 있다는 것을 알 수 있도록 클라이언트에 전송됩니다.<br /><br /> - 장치에 지문이 아직 없으면 사용자에게 지문을 보여주면서 연결하려는 VPN 서버를 신뢰할 것인지 묻는 메시지가 표시됩니다. 사용자는 지문을 수동으로 확인한 후 연결 **신뢰**를 선택합니다.|검사점 모바일 VPN|  
+|**VPN 연결을 통해 모든 네트워크 트래픽 보내기** |이 옵션을 선택하지 않는 경우 연결( **Microsoft SSL(SSTP)**, **Microsoft 자동**, **IKEv2**, **PPTP** 및 **L2TP** 연결 형식의 경우)에 대해 추가 경로를 지정할 수 있습니다. 이러한 경로를 분할 또는 VPN 터널링이라고 합니다.<br /><br /> 회사 네트워크에 대한 연결만 VPN 터널을 통해 보내집니다. VPN 터널링은 인터넷에 있는 리소스에 연결할 경우에는 사용되지 않습니다. |모두|  
+|**연결별 DNS 접미사** |연결에 대해 연결별 DNS(Domain Name System) 접미사.|- Microsoft SSL(SSTP)<br /><br /> - Microsoft 자동<br /><br /> - IKEv2<br /><br /> - PPTP<br /><br /> - L2TP|  
+|**회사 Wi-Fi 네트워크에 연결된 경우 VPN 무시**  |장치가 회사 Wi-Fi 네트워크에 연결된 경우 VPN 연결이 사용되지 않습니다.|- Cisco AnyConnect<br /><br /> - Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - 검사점 모바일 VPN<br /><br /> - Microsoft SSL(SSTP)<br /><br /> - Microsoft 자동<br /><br /> - IKEv2<br /><br /> - L2TP|  
+|**홈 Wi-Fi 네트워크 연결 시 VPN 건너뛰기**  |장치가 가정용 Wi-Fi 네트워크에 연결된 경우 VPN 연결이 사용되지 않습니다.|모두|  
+|**응용 프로그램 VPN(iOS 7 이상, Mac OS X 10.9 및 이후 버전)당** |앱이 실행될 때 연결이 열리도록 이 VPN 연결을 iOS 앱과 연결합니다. 앱을 배포할 때 VPN 프로필을 앱과 연결할 수 있습니다.|- Cisco AnyConnect<br /><br /> - Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - 검사점 모바일 VPN|  
+|**사용자 지정 XML(선택 사항)** |VPN 연결을 구성하는 사용자 지정 XML 명령을 지정합니다.<br /><br /> 예제:<br /><br /> **Pulse Secure**의 경우:<br /><br /> **&lt;pulse-schema>&lt;isSingleSignOnCredential>true&lt;/isSingleSignOnCredential\>&lt;/pulse-schema>**<br /><br /> **CheckPoint Mobile VPN**의 경우:<br /><br /> **&lt;CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3">**<br /><br /> **Dell SonicWALL Mobile Connect**의 경우:<br /><br /> **&lt;MobileConnect\><br />&nbsp; &nbsp; &lt;Compression\>false&lt;/Compression\><br />&nbsp; &nbsp; &lt;debugLogging\>True&lt;/debugLogging\><br />&nbsp; &nbsp; &lt;packetCapture\>False&lt;/packetCapture\>&lt;/MobileConnect\>**<br /><br /> **F5 Edge Client**의 경우:<br /><br /> **&lt;f5-vpn-conf>&lt;single-sign-on-credential>&lt;/f5-vpn-conf>**<br /><br /> 사용자 지정 XML 명령을 작성하는 방법에 대한 자세한 내용은 각 제조업체의 VPN 설명서를 참조하세요.|- Cisco AnyConnect<br /><br /> - Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - 검사점 모바일 VPN|  
 
 > [!NOTE]  
 >  모바일 장치에 대한 VPN 프로필 만들기에 특정한 정보는 [VPN 프로필 만들기](../../mdm/deploy-use/create-vpn-profiles.md)를 참조하세요.  
