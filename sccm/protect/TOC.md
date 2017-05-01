@@ -54,6 +54,7 @@
 ### [Endpoint Protection 시나리오](deploy-use/scenarios-endpoint-protection.md)
 ### [Endpoint Protection 클라이언트 도움말](deploy-use/endpoint-protection-client-help.md)
 ### [클라이언트 문제 해결](deploy-use/troubleshoot-endpoint-client.md)
+### [Windows Defender FAQ](deploy-use/endpoint-protection-client-faq.md)
 ### [장치 보호 설정](deploy-use/use-device-guard-with-configuration-manager.md)
 
 ## [Wi-Fi, VPN, 메일 및 인증서 프로필 배포](deploy-use/deploy-wifi-vpn-email-cert-profiles.md)

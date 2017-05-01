@@ -5,6 +5,7 @@
 # 계획 및 디자인
 ## [소프트웨어 업데이트 계획](plan-design/plan-for-software-updates.md)
 ## [소프트웨어 업데이트에 대한 필수 조건](plan-design/prerequisites-for-software-updates.md)
+## [소프트웨어 업데이트에 대한 모범 사례](plan-design/software-updates-best-practices.md)
 ## [소프트웨어 업데이트에 대한 보안 및 개인 정보](plan-design/security-and-privacy-for-software-updates.md)
 
 # 시작
@@ -28,10 +29,6 @@
 ## [소프트웨어 업데이트 유지 관리](deploy-use/software-updates-maintenance.md)
 ## [서버 그룹 제공](deploy-use/service-a-server-group.md)
 ## [Office 365 ProPlus 업데이트 관리](deploy-use/manage-office-365-proplus-updates.md)
+## [Windows 10 업데이트에 대한 빠른 설치 파일 관리](deploy-use/manage-express-installation-files-for-windows-10-updates.md)
 ## [Windows 10에서 비즈니스용 Windows 업데이트와 통합](deploy-use/integrate-windows-update-for-business-windows-10.md)
 ## [보안 업데이트를 배포하는 예제 시나리오](deploy-use/example-scenario-deploy-monitor-monthly-security-updates.md)
-
-
-<!--HONumber=Dec16_HO3-->
-
-

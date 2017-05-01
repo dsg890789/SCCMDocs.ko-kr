@@ -58,6 +58,7 @@
 ### [사용자 지정 작업 순서 만들기](deploy-use/create-a-custom-task-sequence.md)
 ### [비운영 체제 배포에 대한 작업 순서 만들기](deploy-use/create-a-task-sequence-for-non-operating-system-deployments.md)
 ### [BIOS-UEFI 변환을 관리하는 작업 순서 단계](deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion.md)
+### [Windows PE에서 BitLocker 사전 프로비전](deploy-use/preprovision-bitlocker-in-windows-pe.md)
 
 ## [작업 순서 미디어 만들기](deploy-use/create-task-sequence-media.md)
 ### [독립 실행형 미디어 만들기](deploy-use/create-stand-alone-media.md)
