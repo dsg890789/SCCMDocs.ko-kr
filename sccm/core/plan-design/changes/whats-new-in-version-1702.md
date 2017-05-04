@@ -2,7 +2,7 @@
 title: "새 버전 1702 | Microsoft 문서"
 description: "System Center Configuration Manager 버전 1702에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다."
 ms.custom: na
-ms.date: 3/31/2017
+ms.date: 05/02/2017
 ms.reviewer: na
 ms.suite: na
 ms.technology:
@@ -14,16 +14,16 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: d7b13f3dea5a3ae413ca6b8150ec24e1632a4d4d
-ms.openlocfilehash: 3e97184dc923cd3972c23252c1bc001edb73fe3f
-ms.lasthandoff: 04/12/2017
+ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
+ms.openlocfilehash: 4616ebb84ae63acbe6af892918aa2dd1a0be4825
+ms.lasthandoff: 05/02/2017
 
 ---
 # <a name="what39s-new-in-version-1702-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1702의 새로운 기능
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 현재 분기의 업데이트 1702는 버전 1602, 1606 또는 1610을 실행하는 이전에 설치된 사이트에 대한 콘솔 내 업데이트로 제공됩니다.
+System Center Configuration Manager 현재 분기의 업데이트 1702는 버전 1602, 1606 또는 1610을 실행하는 이전에 설치된 사이트에 대한 콘솔 내 업데이트로 제공됩니다. 새 배포를 설치할 때 이를 기준선 버전으로 사용할 수도 있습니다.
 
 > [!TIP]  
 > 새 사이트를 설치하려면 기준 버전의 Configuration Manager를 사용해야 합니다.  
