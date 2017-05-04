@@ -14,9 +14,9 @@ ms.technology:
 - configmgr-sum
 ms.assetid: 6d20389a-9de2-4a64-bced-9fc4fa519174
 translationtype: Human Translation
-ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
-ms.openlocfilehash: ea365491dd334980693375fbb7730653af9cd8e4
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: d94acac84f052a01de9d9c9f65f237c0006c45b8
+ms.openlocfilehash: 5df20f3703442de1be6220ca2770e182e330c036
+ms.lasthandoff: 04/26/2017
 
 
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 12/16/2016
  Configuration Manager와 WSUS 데이터베이스가 동일한 SQL Server를 사용하고 동일한 SQL Server 인스턴스를 공유하는 경우 두 응용 프로그램 간의 리소스 사용을 손쉽게 파악할 수 없습니다. Configuration Manager와 WSUS에 서로 다른 SQL Server 인스턴스를 사용하는 경우 각 응용 프로그램에 대해 발생할 수 있는 리소스 사용 문제를 해결하고 진단하기가 더 쉽습니다.  
 
 ### <a name="specify-the-store-updates-locally-setting-for-the-wsus-installation"></a>WSUS 설치에 "로컬로 업데이트 저장" 설정 지정  
- WSUS 3.0을 설치하는 경우 **로컬로 업데이트 저장** 설정을 선택합니다. 이 설정을 선택하면 동기화 중에 소프트웨어 업데이트에 대한 사용 조건이 다운로드되어 WSUS 서버용 로컬 하드 드라이브에 저장됩니다. 이 설정을 선택하지 않으면 클라이언트 컴퓨터가 사용 조건이 있는 소프트웨어 업데이트에 대한 소프트웨어 업데이트 호환성을 검사하지 못할 수 있습니다. 소프트웨어 업데이트 지점을 설치하면 기본적으로 WSUS Synchronization Manager에서 이 설정이 사용되는지 60분마다 확인합니다.  
+ WSUS를 설치할 때는 **업데이트를 로컬에 저장** 설정을 선택합니다. 이 설정을 선택하면 동기화 중에 소프트웨어 업데이트에 대한 사용 조건이 다운로드되어 WSUS 서버용 로컬 하드 드라이브에 저장됩니다. 이 설정을 선택하지 않으면 클라이언트 컴퓨터가 사용 조건이 있는 소프트웨어 업데이트에 대한 소프트웨어 업데이트 호환성을 검사하지 못할 수 있습니다. 소프트웨어 업데이트 지점을 설치하면 기본적으로 WSUS Synchronization Manager에서 이 설정이 사용되는지 60분마다 확인합니다.  
 
 ## <a name="operational-best-practices"></a>작업 모범 사례  
  소프트웨어 업데이트를 사용할 때 따라야 하는 모범 사례는 다음과 같습니다.  

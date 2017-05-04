@@ -2,7 +2,7 @@
 title: "사전 프로덕션 컬렉션에서 클라이언트 업그레이드 테스트 | Microsoft 문서"
 description: "System Center Configuration Manager의 사전 프로덕션 컬렉션에서 클라이언트 업그레이드를 테스트합니다."
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,13 +13,13 @@ ms.topic: article
 ms.assetid: 49ef2ed2-2e15-4637-8b63-1d5b7f9c17e1
 caps.latest.revision: 10
 caps.handback.revision: 0
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 533c8e8b30519d83b8fc7a9d204d51e76974c4b1
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 690d03d9c8c49a815bd318df549d7401a855bc5d
+ms.openlocfilehash: 7edd3e46b4813dd50df7d01b367f8e73bb350a7d
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -54,6 +54,9 @@ ms.lasthandoff: 03/27/2017
 
 ![클라이언트 업그레이드 테스트](media/test-client-upgrades.png)
 
+>[!NOTE]
+>이러한 설정을 변경하려면 계정이 **전체 관리자** 보안 역할 및 **모두** 보안 범위의 구성원이어야 합니다.
+
 
 ##  <a name="to-install-a-configuration-manager-update-that-includes-a-new-version-of-the-client"></a>새 버전의 클라이언트가 포함된 Configuration Manager 업데이트를 설치하려면  
 
@@ -80,4 +83,7 @@ ms.lasthandoff: 03/27/2017
 2.  프로덕션 및 사전 프로덕션의 클라이언트 버전을 검토하고 올바른 사전 프로덕션 컬렉션이 지정되었는지 확인한 다음 **수준 올리기**, **예**를 차례로 클릭합니다.  
 
 3.  대화 상자를 닫으면 계층에서 사용하는 클라이언트 버전이 업데이트된 클라이언트 버전으로 대체됩니다. 그런 다음 전체 사이트에 대해 클라이언트를 업그레이드할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 Windows 컴퓨터용 클라이언트를 업그레이드하는 방법](../../../../core/clients/manage/upgrade/upgrade-clients-for-windows-computers.md)을 참조하세요.  
+
+>[!NOTE]
+>사전 프로덕션 클라이언트를 사용하도록 설정하거나 사전 프로덕션 클라이언트를 프로덕션 클라이언트로 수준을 올리려면 계정이 **업데이트 패키지** 개체에 대한 **읽기** 및 **수정** 권한이 있는 보안 역할의 구성원이어야 합니다.
 

@@ -2,7 +2,7 @@
 title: "클라이언트 모니터링 - Configuration Manager | Microsoft 문서"
 description: "System Center Configuration Manager에서 클라이언트를 모니터링하는 방법에 대한 자세한 지침을 가져옵니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,13 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2c8f57cf-1968-48de-87fb-4897432ed6e0
 caps.latest.revision: 23
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b
-ms.openlocfilehash: 85afe010e734d20ae1f1479b3edd166c54cc8fd2
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: 690d03d9c8c49a815bd318df549d7401a855bc5d
+ms.openlocfilehash: 08a4d9b29871b49e3118aef949572cef64940f96
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -29,7 +29,7 @@ ms.lasthandoff: 01/24/2017
 
  System Center Configuration Manager 클라이언트 응용 프로그램이 사이트의 Windows 컴퓨터 및 장치에 설치되면 Configuration Manager 콘솔에서 해당 상태 및 활동을 모니터링할 수 있습니다.  
 
-##  <a name="a-namebkmkabouta-about-client-status"></a><a name="bkmk_about"></a> 클라이언트 상태에 대한 정보  
+##  <a name="bkmk_about"></a> 클라이언트 상태에 대한 정보  
  Configuration Manager에서는 다음과 같은 정보 유형을 클라이언트 상태로 제공합니다.  
 
 -   **클라이언트 온라인 상태** - Configuration Manager 버전 1602부터, 이 상태는 컴퓨터가 온라인 상태인지 여부를 나타냅니다. 컴퓨터가 할당된 관리 지점에 연결된 경우 온라인인 것으로 간주됩니다.  클라이언트가 온라인 상태인지 여부를 나타내기 위해 관리 지점에 ping과 유사한 메시지를 보냅니다. 관리 지점에서 5분 내에 메시지를 받지 못하면 클라이언트 상태가 오프라인으로 변경된 것입니다.  
@@ -38,11 +38,11 @@ ms.lasthandoff: 01/24/2017
 
 -   **클라이언트 검사** - 이 상태는 Configuration Manager 클라이언트가 컴퓨터에서 실행하는 정기적으로 평가의 성공 여부를 나타냅니다.  평가에서 컴퓨터를 검사하고 검색된 문제를 수정할 수 있습니다. 자세한 내용은 [클라이언트 검사를 통한 검사 및 수정](#BKMK_ClientHealth)을 참조하세요.  
 
-     Windows 7을 실행하는 컴퓨터에서 클라이언트 검사는 예약된 작업으로 실행됩니다. Windows&7; 이후의 운영 체제에서는 Windows 유지 관리 기간 중에 클라이언트 검사가 자동으로 실행됩니다.  
+     Windows 7을 실행하는 컴퓨터에서 클라이언트 검사는 예약된 작업으로 실행됩니다. Windows 7 이후의 운영 체제에서는 Windows 유지 관리 기간 중에 클라이언트 검사가 자동으로 실행됩니다.  
 
      재구성이 업무에 중요한 서버와 같은 특정 컴퓨터에서 실행되지 않도록 구성할 수 있습니다. 또한 평가할 추가 항목이 있는 경우 Configuration Manager 준수 설정을 사용하여 조직 내 컴퓨터의 전체 상태, 활동 및 준수를 모니터링할 수 있는 포괄적인 솔루션을 제공할 수 있습니다. 준수 설정에 대한 자세한 내용은 [System Center Configuration Manager에서 준수 설정 계획 및 구성](../../../compliance/plan-design/plan-for-and-configure-compliance-settings.md)을 참조하세요.  
 
-##  <a name="a-namebkmkindstatusa-monitor-the-status-of-individual-clients"></a><a name="bkmk_indStatus"></a> 개별 클라이언트의 상태 모니터링  
+##  <a name="bkmk_indStatus"></a> 개별 클라이언트의 상태 모니터링  
 
 1.  Configuration Manager 콘솔에서 **자산 및 준수** > **장치**를 클릭하거나 **장치 컬렉션** 아래에서 컬렉션을 선택합니다.  
 
@@ -65,7 +65,7 @@ ms.lasthandoff: 01/24/2017
 
 3.  목록 창의 개별 클라이언트를 클릭해서 클라이언트 활동 및 클라이언트 검사에 대한 정보를 비롯하여 자세한 상태를 세부 정보 창에서 봅니다.  
 
-##  <a name="a-namebkmkallstatusa-monitor-the-status-of-all-clients"></a><a name="bkmk_allStatus"></a> 모든 클라이언트의 상태 모니터링  
+##  <a name="bkmk_allStatus"></a> 모든 클라이언트의 상태 모니터링  
 
 1.  Configuration Manager 콘솔에서 **모니터링** > **클라이언트 상태**를 클릭합니다. 콘솔의 이 페이지에서 전체 사이트에 걸쳐 클라이언트 활동 및 클라이언트 검사에 대한 전체 통계를 검토할 수 있습니다.  또한 여러 컬렉션을 선택하여 정보의 범위를 변경할 수 있습니다.  
 
@@ -77,12 +77,12 @@ ms.lasthandoff: 01/24/2017
 
  클라이언트 검사 결과 또는 클라이언트 활동이 컬렉션 내 지정된 클라이언트 비율(%) 아래로 떨어지거나 지정된 클라이언트 비율(%)에 대해 재구성이 실패할 경우 알림을 보내도록 경고를 구성할 수 있습니다. 클라이언트 상태를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 상태를 구성하는 방법](../../../core/clients/deploy/configure-client-status.md)을 참조하세요.  
 
-##  <a name="a-namebkmkclienthealtha-checks-and-remediations-made-by-client-check"></a><a name="BKMK_ClientHealth"></a> 클라이언트 검사를 통한 검사 및 재구성  
+##  <a name="BKMK_ClientHealth"></a> 클라이언트 검사를 통한 검사 및 재구성  
  다음 검사 및 재구성은 클라이언트 검사를 통해 수행할 수 있습니다.  
 
 |클라이언트 검사|재구성 작업|추가 정보|  
 |------------------|------------------------|----------------------|  
-|클라이언트 검사가 최근에 실행되었는지 확인|클라이언트 검사 실행|지난&3;일간 클라이언트 검사가&1;회 이상 실행되었는지 검사합니다.|  
+|클라이언트 검사가 최근에 실행되었는지 확인|클라이언트 검사 실행|지난 3일간 클라이언트 검사가 1회 이상 실행되었는지 검사합니다.|  
 |클라이언트 필수 구성 요소가 설치되었는지 확인|클라이언트 필수 구성 요소 설치|클라이언트 필수 구성 요소가 설치되었는지 검사합니다. 필수 구성 요소 검색을 위해 클라이언트 설치 폴더에서 ccmsetup.xml 파일을 읽습니다.|  
 |WMI 저장소 무결성 테스트|Configuration Manager 클라이언트 다시 설치|WMI에 Configuration Manager 클라이언트 항목이 있는지 검사합니다.|  
 |클라이언트 서비스가 실행 중인지 확인|클라이언트(SMS 에이전트 호스트) 서비스 시작|추가 정보 없음|  
@@ -110,4 +110,7 @@ ms.lasthandoff: 01/24/2017
 |클라이언트 WMI 공급자가 정상인지 확인|WMI(Windows Management Instrumentation) 서비스를 다시 시작|이 클라이언트 검사의 해결 방법은 Windows Server 2003, Windows XP(64비트) 이하를 실행하는 컴퓨터에서만 수행해야 합니다.|  
 |절전 모드 해제 프록시 서비스(ConfigMgr 절전 모드 해제 프록시)가 실행 중인지 확인|ConfigMgr 절전 모드 해제 프록시 서비스를 시작|이 클라이언트 검사는 지원되는 클라이언트 운영 체제에서 **전원 관리**: **절전 모드 해제 프록시 사용** 클라이언트 설정이 **예** 로 설정된 경우에만 수행됩니다.|  
 |절전 모드 해제 프록시 서비스(ConfigMgr 절전 모드 해제 프록시) 시작 유형이 자동인지 확인|ConfigMgr 절전 모드 해제 프록시 서비스 시작 유형을 '자동'으로 다시 설정|이 클라이언트 검사는 지원되는 클라이언트 운영 체제에서 **전원 관리**: **절전 모드 해제 프록시 사용** 클라이언트 설정이 **예** 로 설정된 경우에만 수행됩니다.|  
+
+## <a name="client-deployment-log-files"></a>클라이언트 배포 로그 파일
+클라이언트 배포 및 관리 작업에 사용되는 로그 파일에 대한 자세한 내용은 [System Center Configuration Manager의 로그 파일](/sccm/core/plan-design/hierarchy/log-files#BKMK_ClientLogs)을 참조하세요.
 

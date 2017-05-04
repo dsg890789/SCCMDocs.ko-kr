@@ -2,7 +2,7 @@
 title: "비즈니스용 Windows Hello 설정 | Microsoft 문서"
 description: "System Center Configuration Manager와 비즈니스용 Windows Hello를 통합하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 03/28/2017
+ms.date: 04/25/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: c9a6842958e6fa3f740caabbaf20aabb9df4e8a8
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 699b79b68440b61904a9053e5004318a2a248bfd
+ms.openlocfilehash: 75def95561feb35f2f060f0daa72291983324d4f
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -28,7 +28,9 @@ ms.lasthandoff: 03/27/2017
 
 System Center Configuration Manager를 통해 Windows 10 장치의 대체 로그인 방법인 비즈니스용 Windows Hello(이전의 Microsoft Passport for Windows)와 통합할 수 있습니다. 비즈니스용 Windows Hello는 Active Directory 또는 Azure Active Directory 계정을 사용하여 암호, 스마트 카드 또는 가상 스마트 카드를 대체합니다.  
 
-비즈니스용 Windows Hello를 통해 암호 대신 **사용자 제스처** 를 사용하여 로그인할 수 있습니다. 사용자 제스처는 단순 PIN, 생체 인식 인증 또는 외부 장치(예: 지문 판독기)일 수 있습니다.  
+비즈니스용 Windows Hello를 통해 암호 대신 **사용자 제스처** 를 사용하여 로그인할 수 있습니다. 사용자 제스처는 단순 PIN, 생체 인식 인증 또는 외부 장치(예: 지문 판독기)일 수 있습니다.
+
+[비즈니스용 Windows Hello에 대해 자세히 알아보기](https://docs.microsoft.com/windows/access-protection/hello-for-business/hello-identity-verification)
 
  Configuration Manager는 다음 두 가지 방법으로 비즈니스용 Windows Hello와 통합됩니다.  
 
@@ -47,7 +49,7 @@ System Center Configuration Manager를 통해 Windows 10 장치의 대체 로그
 
 이 구성뿐 아니라 [인증서 프로필 구성](#configure-a-certificate-profile)에 설명된 대로 인증서 프로필도 배포해야 합니다.
 
-## <a name="recommended-approach----configure-a-windows-hello-for-business-profile"></a>권장 방법 - 비즈니스용 Windows Hello 프로필 구성  
+## <a name="configure-a-windows-hello-for-business-profile"></a>비즈니스용 Windows Hello 프로필 구성  
 
 Configuration Manager 콘솔의 **회사 리소스 액세스** 아래에서 **비즈니스용 Windows Hello 프로필**을 마우스 오른쪽 단추로 클릭하고 **새로 만들기**를 선택하여 프로필 마법사를 시작합니다. 마법사에서 요청된 설정을 제공하고 마지막 페이지에서 설정을 검토 및 확인한 다음 **닫기**를 클릭합니다. 설정이 표시되는 방식의 예는 다음과 같습니다.  
 
@@ -82,7 +84,7 @@ Active Directory 그룹 정책을 사용하여 사용자가 Windows에 로그인
 ## <a name="configure-windows-hello-for-business-by-deploying-a-powershell-script-with-configuration-manager"></a>Configuration Manager로 PowerShell 스크립트를 배포하여 비즈니스용 Windows Hello 구성    
 Configuration Manager 응용 프로그램 관리를 사용하여 다음 PowerShell 스크립트를 만들고 배포할 수 있습니다.    
 
-**powershell.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -Command "& {New-ItemProperty "HKLM:\Software\Policies\Microsoft\PassportForWork" -Name "Enabled" -Value 1 -PropertyType "DWord" -Force}"** 
+**powershell.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -Command "& {New-ItemProperty "HKLM:\Software\Policies\Microsoft\PassportForWork" -Name "Enabled" -Value 1 -PropertyType "DWord" -Force}" ** 
 
 Configuration Manager 응용 프로그램 관리에 대한 자세한 내용은 [System Center Configuration Manager에서 응용 프로그램 관리 소개](/sccm/apps/understand/introduction-to-application-management)를 참조하세요.  
 
@@ -111,8 +113,7 @@ Configuration Manager 응용 프로그램 관리에 대한 자세한 내용은 [
 
  자세한 내용은 [인증서 프로필](introduction-to-certificate-profiles.md)을 참조하세요.  
 
-## <a name="see-also"></a>참고 항목  
- [System Center Configuration Manager를 사용하여 데이터 및 사이트 인프라 보호](../../protect/understand/protect-data-and-site-infrastructure.md)
 
- [비즈니스용 Windows Hello를 사용하여 ID 확인 관리](https://technet.microsoft.com/itpro/windows/keep-secure/manage-identity-verification-using-microsoft-passport)  
+
+
 

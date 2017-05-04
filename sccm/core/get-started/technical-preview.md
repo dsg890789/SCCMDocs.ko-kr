@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 9b31fab8fa93195c60e9026e2df99311aa6e328f
-ms.openlocfilehash: 61d4b7017769609caf8fcb8fcdd510f5a0b5b712
-ms.lasthandoff: 04/03/2017
+ms.sourcegitcommit: ae008c91a7387ba76f2bfac13f8feb489a0cc558
+ms.openlocfilehash: 8ffaee12bd826e2f19653b215ee19423ea672433
+ms.lasthandoff: 04/21/2017
 
 
 ---
@@ -112,8 +112,13 @@ ms.lasthandoff: 04/03/2017
 ##  <a name="bkmk_tpCaps"></a> 기술 미리에 포함된 기능  
  다음에는 각 Configuration Manager 기술 미리 보기 릴리스에 포함된 기능이 나와 있습니다.  기술 미리 보기의 특정 버전에서 사용할 수 있는 기능은 이후 버전에서도 계속 사용할 수 있습니다. 마찬가지로, System Center Configuration Manager 릴리스(현재 분기)에 추가된 기능은 후속 기술 미리 보기에서도 계속 사용할 수 있습니다.  각 미리 보기 버전에 대한 콘텐츠를 클릭하여 특정 기능에 대한 자세한 내용을 알아볼 수 있습니다.  
 
- |기능|기술 미리 보기 버전|현재 분기 버전|  
- |----------------|---------------------|--------------------|
+ |기능 |기술 미리 보기 버전 |현재 분기 버전|  
+|----------------|---------------------|--------------------|
+ |앱 구성 정책을 사용하여 Android 앱 구성  |[Tech Preview 1704](capabilities-in-technical-preview-1704.md#configure-android-apps-with-app-configuration-policies)|![추가되지 않음](media/Red_X.gif)|
+ |하드웨어 인벤토리를 통해 보안 부팅 정보 수집 |[Tech Preview 1704](capabilities-in-technical-preview-1704.md#hardware-inventory-collects-secure-boot-information)|![추가되지 않음](media/Red_X.gif)|
+ |작업 순서에 자식 작업 순서 추가|[Tech Preview 1704](capabilities-in-technical-preview-1704.md#add-child-task-sequences-to-a-task-sequence)|![추가되지 않음](media/Red_X.gif)|
+ |현재 Windows PE 버전을 사용하여 부팅 이미지 다시 로드 |[Tech Preview 1704](capabilities-in-technical-preview-1704.md#reload-boot-images-with-current-windows-pe-version)|![추가되지 않음](media/Red_X.gif)|
+ |운영 체제 배포 향상|[Tech Preview 1704](capabilities-in-technical-preview-1704.md#improvements-to-operating-system-deployment)|![추가되지 않음](media/Red_X.gif)|
  |장치 컬렉션에 대량 구매한 iOS 앱 배포|[Tech Preview 1703](capabilities-in-technical-preview-1703.md#deploy-volume-purchased-ios-apps-to-device-collections)|[버전 1702](/sccm/mdm/deploy-use/manage-volume-purchased-ios-apps)|
  |소프트웨어 센터의 응용 프로그램에 대한 직접 링크|[Tech Preview 1703](capabilities-in-technical-preview-1703.md#direct-links-to-applications-in-software-center)|![추가되지 않음](media/Red_X.gif)
  |Configuration Manager Windows 클라이언트 컴퓨터에 대한 PFX 인증서|[Tech Preview 1703](capabilities-in-technical-preview-1703.md#pfx-certificates-for-configuration-manager-windows-client-computers)|![추가되지 않음](media/Red_X.gif)|
@@ -208,11 +213,11 @@ ms.lasthandoff: 04/03/2017
  |KSP로서 Passport for Work에 대한 지원 |[Tech Preview 1604](capabilities-in-technical-preview-1604.md#bkmk_passport)|[버전 1606](/sccm/protect/deploy-use/create-certificate-profiles)|  
  |온-프레미스 장치 상태 증명|[Tech Preview 1604](capabilities-in-technical-preview-1604.md#bkmk_onpremdha)|[버전 1606](/sccm/core/servers/manage/health-attestation)|  
  |Android 장치에 대한 SmartLock 설정|[Tech Preview 1604](capabilities-in-technical-preview-1604.md#BKMK_Smart)|[버전 1606](/sccm/compliance/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client#android-and-samsung-knox-configuration-item-settings-reference)|  
- |소프트웨어 센터 개선|[Tech Preview 1603](capabilities-in-technical-preview-1603.md#BKMK_SC1603)|[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#application-management)|  
- |원격 제어의 개선 사항|[Tech Preview 1603](capabilities-in-technical-preview-1603.md#BKMK_RC1603)|[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#remote-control)|  
- |PXE 사용 배포 지점에서 RamDisk TFTP 블록 크기 및 창 크기 사용자 지정|[Tech Preview 1603](capabilities-in-technical-preview-1603.md#BKMK_RamDiskTFTP)|[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#operating-system-deployment)|  
-
-
+ <!--  TP 1603 Aged out of support and all features in Current Branch Builds:
+ |Improvements to Software Center|[Tech Preview 1603](capabilities-in-technical-preview-1603.md#BKMK_SC1603)|[Version 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#application-management)|  
+ |Improvements to remote control|[Tech Preview 1603](capabilities-in-technical-preview-1603.md#BKMK_RC1603)|[Version 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#remote-control)|  
+ |Customize the RamDisk TFTP block size and window size on PXE-enabled distribution points|[Tech Preview 1603](capabilities-in-technical-preview-1603.md#BKMK_RamDiskTFTP)|[Version 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#operating-system-deployment)|  
+-->
  기술 미리 보기 릴리스의 모든 기능을 현재 분기의 지원되는 최소 버전으로 사용할 수 있는 경우 해당 미리 보기 버전에 대한 세부 정보는 이 테이블에서 제거 됩니다.
 
 

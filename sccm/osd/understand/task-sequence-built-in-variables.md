@@ -17,9 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: a3e6cca8d58055cc2d54aff3cb70a276fb40e829
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: ae008c91a7387ba76f2bfac13f8feb489a0cc558
+ms.openlocfilehash: f5feccc4f810e1a94bb7dcdd5ad507d84b9c3b4a
+ms.lasthandoff: 04/21/2017
 
 
 ---
@@ -76,6 +76,11 @@ ms.lasthandoff: 03/27/2017
 |SMSTSDownloadProgram|이 변수를 사용하면 대체 콘텐츠 공급자(작업 순서를 위한 콘텐츠를 다운로드하는 데 기본 Configuration Manager 다운로더 대신에 사용하는 다운로더 프로그램)를 지정할 수 있습니다. 콘텐츠 다운로드 프로세스의 일부로, 작업 순서는 지정한 다운로더 프로그램에 대한 변수를 확인합니다. 지정된 경우 작업 순서는 해당 프로그램을 실행하여 다운로드를 수행합니다.|  
 |SMSTSDownloadRetryCount|이 변수를 사용하면 Configuration Manager가 배포 지점의 콘텐츠를 다운로드하기 위해 시도할 횟수를 지정할 수 있습니다. 기본적으로 클라이언트는 **2** 번 다시 시도합니다.|  
 |SMSTSDownloadRetryDelay|이 변수를 사용하면 Configuration Manager가 배포 지점의 콘텐츠를 다시 다운로드하기 전까지 대기하는 시간(초)을 지정할 수 있습니다. 기본적으로는 클라이언트는 **15** 초를 대기한 후 다시 시도합니다.|  
+|SMSTSDriverReceiveTimeOut|이 변수를 사용하면 서버 연결 시간이 초과하기 전까지의 시간(초)을 지정할 수 있습니다.|
+|SMSTSDriverRequestConnectTimeOut|이 변수를 사용하면 드라이버 자동 적용 작업 순서 단계 중에 드라이버 카탈로그를 요청할 때 HTTP 서버 연결을 대기할 시간(초)을 지정할 수 있습니다. 연결이 시간 제한 설정보다 오래 걸리면 요청은 취소됩니다. 시간 제한은 60초로 기본 설정됩니다.|  
+|SMSTSDriverRequestReceiveTimeOut|이 변수를 사용하면 드라이버 자동 적용 작업 순서 단계 중에 드라이버 카탈로그 요청에 대한 응답을 대기할 시간(초)을 지정할 수 있습니다. 연결이 시간 제한 설정보다 오래 걸리면 요청은 취소됩니다. 시간 제한은 480초로 기본 설정됩니다.|
+|SMSTSDriverRequestResolveTimeOut|이 변수를 사용하면 드라이버 자동 적용 작업 순서 단계 중에 드라이버 카탈로그 요청에 대한 HTTP 이름 확인을 대기할 시간(초)을 지정할 수 있습니다. 연결이 시간 제한 설정보다 오래 걸리면 요청은 취소됩니다. 시간 제한은 60초로 기본 설정됩니다.|
+|SMSTSDriverRequestSendTimeOut|이 변수를 사용하면 드라이버 자동 적용 작업 순서 단계 중에 드라이버 카탈로그 요청을 전송할 때 사용할 시간(초)을 지정할 수 있습니다. 요청이 시간 제한 설정보다 오래 걸리면 요청은 취소됩니다. 시간 제한은 60초로 기본 설정됩니다.|
 |SMSTSErrorDialogTimeout|작업 순서에서 오류가 발생한 경우 이 변수에 지정된 시간(초)이 지나면 자동으로 해제되는 대화 상자가 표시됩니다. 기본적으로는 대화 상자는 **900** 초(15 분) 후에 자동으로 해제됩니다.|  
 |TSErrorOnWarning|이 변수를 사용하여 작업 순서 엔진에서 응용 프로그램 설치 작업 순서 단계 중에 검색된 경고를 오류로 간주하는지 여부를 지정합니다. 요구 사항이 충족되지 않아 하나 이상의 응용 프로그램 또는 필수 종속성이 설치되지 않은 경우에는 작업 순서에서 _TSAppInstallStatus 변수를 **Warning** 으로 설정합니다. TSErrorOnWarning 변수를 **True** 로 설정하면 _TSAppInstallStatus 변수가 Warning으로 설정되고 오류로 처리됩니다. **False** 값이 기본 동작입니다.|  
 |SMSTSLanguageFolder|이 변수를 사용하여 언어 중립 부팅 이미지의 언어 표시를 변경할 수 있습니다.|  

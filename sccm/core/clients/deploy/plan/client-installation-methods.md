@@ -2,7 +2,7 @@
 title: "클라이언트 설치 방법 | Microsoft 문서"
 description: "System Center Configuration Manager의 클라이언트 설치 방법을 알아봅니다."
 ms.custom: na
-ms.date: 04/23/2017
+ms.date: 04/25/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,9 +17,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 593fbd0587d54490246f48ae54f666bac6b7830d
-ms.openlocfilehash: a7d5a04cf34c49246f768f9a4757c5da3b4db31a
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: d94acac84f052a01de9d9c9f65f237c0006c45b8
+ms.openlocfilehash: edca31249cc2bb3e0c67265962815c82e3f4711e
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 12/16/2016
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-다양한 방법으로 Configuration Manager(ConfigMgr 또는 SCCM이라고도 함) 클라이언트 소프트웨어를 설치할 수 있습니다. 한 가지 방법이나 여러 방법의 조합을 사용할 수 있습니다. 이 항목에서 각 방법을 살펴보고 조직에 가장 적합한 방법을 확인할 수 있습니다.  
+다양한 방법으로 Configuration Manager 클라이언트 소프트웨어를 설치할 수 있습니다. 한 가지 방법이나 여러 방법의 조합을 사용할 수 있습니다. 이 항목에서 각 방법을 살펴보고 조직에 가장 적합한 방법을 확인할 수 있습니다.  
 
 ## <a name="client-push-installation"></a>클라이언트 강제 설치  
 

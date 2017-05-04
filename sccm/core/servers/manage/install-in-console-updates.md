@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 32f7fc4ef9c8e8d3c2ec8eeaf9a3174bad992ffb
-ms.openlocfilehash: 18c199e78750eadc06b9635fa6104d36c2ac018d
-ms.lasthandoff: 04/08/2017
+ms.sourcegitcommit: d94acac84f052a01de9d9c9f65f237c0006c45b8
+ms.openlocfilehash: 29a55948a1897e1345ba14ec685b9288a844feaa
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -325,7 +325,7 @@ System Center Configuration Manager는 Microsoft 클라우드 서비스와 동�
 
 
 ##  <a name="bkmk_prerelease"></a> 업데이트에서 시험판 기능 사용
-시험판 기능은 프로덕션 환경에서의 초기 테스트를 위해 현재 분기에 포함된 기능입니다. 이러한 기능은 프로덕션 환경에서 사용할 수 있지만 프로덕션 준비가 된 것으로 간주해서는 안 됩니다. 시험판 기능에 대해 환경에서 사용하도록 설정하는 방법을 비롯한 자세히 내용을 알아보려면 [시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요.                |
+시험판 기능은 프로덕션 환경에서의 초기 테스트를 위해 현재 분기에 포함된 기능입니다. 이러한 기능은 프로덕션 환경에서 사용할 수 있지만 프로덕션 준비가 된 것으로 간주해서는 안 됩니다. 시험판 기능 및 사용자 환경에서 해당 기능을 사용하도록 설정하는 방법에 대한 자세한 내용은 [시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요.             
 
 
 ## <a name="known-issues"></a>알려진 문제

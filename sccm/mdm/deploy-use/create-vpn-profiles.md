@@ -13,13 +13,13 @@ ms.topic: article
 ms.assetid: 45388103-2410-4c7e-b4cf-73a1bda485fc
 caps.latest.revision: 18
 caps.handback.revision: 0
-author: mtillman
-ms.author: mtillman
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 8c7bf901caa49c8585a9ed3913d4a5a2aac57013
-ms.openlocfilehash: 82f7db908f83d69a86c82ed97b845ff84e78f8b3
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 699b79b68440b61904a9053e5004318a2a248bfd
+ms.openlocfilehash: 8adc41a30bf12a91a272029db49e50ba003d3e9c
+ms.lasthandoff: 04/25/2017
 
 ---
 # <a name="vpn-profiles-on-mobile-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager의 모바일 장치에 대한 VPN 프로필
@@ -75,10 +75,10 @@ System Center Configuration Manager의 VPN 프로필을 사용하여 조직의 �
 
     -   **인증 방법:** VPN 연결에 사용할 인증 방법을 선택합니다. 사용 가능한 방법은 이 표에 표시된 연결 형식에 따라 달라집니다.  
 
-        |인증 방법|지원되는 연결 형식|  
+        |인증 방법|지원되는&nbsp;연결&nbsp;형식|  
         |---------------------------|--------------------------------|  
-        |**인증서**<br /><br /> **참고:** 클라이언트 인증서가 네트워크 정책 서버와 같은 RADIUS 서버에 인증하는 데 사용되는 경우 인증서의 주체 대체 이름을 사용자 계정 이름으로 설정해야 합니다.|- <br />                            Cisco AnyConnect<br /><br /> - Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - 검사점 모바일 VPN|  
-        |**사용자 이름 및 암호**|- <br />                            Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - 검사점 모바일 VPN|  
+        |**인증서**<br /><br /> **참고:**<br />- 클라이언트 인증서가 네트워크 정책 서버와 같은 RADIUS 서버를 인증하는 경우 인증서의 주체 대체 이름을 사용자 계정 이름으로 설정해야 합니다.<br/><br />- Android 배포의 경우 EKU 식별자 및 인증서 발급자 지문 해시 값을 선택합니다.  이렇게 하지 않으면 사용자가 적절한 인증서를 수동으로 선택해야 합니다.  |- Cisco AnyConnect<br /><br /> - Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - 검사점 모바일 VPN|  
+        |**사용자 이름 및 암호**|- Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - 검사점 모바일 VPN|  
         |**Microsoft EAP-TTLS**|- Microsoft SSL(SSTP)<br /><br /> - Microsoft 자동<br /><br /> - PPTP<br /><br /> - IKEv2<br /><br /> - L2TP|  
         |**Microsoft 보호된 EAP(PEAP)**|- Microsoft SSL(SSTP)<br /><br /> - Microsoft 자동<br /><br /> - IKEv2<br /><br /> - PPTP<br /><br /> - L2TP|  
         |**Microsoft 보안 암호(EAP-MSCHAP v2)**|- Microsoft SSL(SSTP)<br /><br /> - Microsoft 자동<br /><br /> - IKEv2<br /><br /> - PPTP<br /><br /> - L2TP|  
@@ -109,18 +109,15 @@ System Center Configuration Manager의 VPN 프로필을 사용하여 조직의 �
 
          ![VPN에 대한 조건부 액세스 구성](media/vpn-conditional-access.png)
 
+         Configuration Manager를 실행하는 Windows의 버전 _및_ 선택한 권한 부여 방법에서 지원하는 경우 **구성**을 클릭하여 Windows 속성 대화 상자를 열고 인증 방법 속성을 구성할 수 있습니다.  **구성**이 사용하지 않도록 설정되어 있으면 대체 수단을 통해 인증 방법 속성을 구성합니다.
 
-> [!NOTE]  
-> 일부 인증 방법의 경우 **구성**을 클릭하여 Windows 속성 대화 상자를 열고 인증 방법 속성을 구성할 수 있습니다(Configuration Manager 콘솔을 실행 중인 Windows 버전에서 해당 인증 방법을 지원하는 경우).  
-
-
-1.  VPN 연결에 프록시 서버가 사용되는 경우 **VPN 프로필 만들기 마법사** 의 **프록시 설정**페이지에서 **이 VPN 프로필에 대한 프록시 설정 구성** 확인란을 선택합니다. 그런 다음 프록시 서버 정보를 제공합니다. 자세한 내용은 Windows Server 설명서를 참조하세요.  
+2.  VPN 연결에 프록시 서버가 사용되는 경우 **VPN 프로필 만들기 마법사** 의 **프록시 설정**페이지에서 **이 VPN 프로필에 대한 프록시 설정 구성** 확인란을 선택합니다. 그런 다음 프록시 서버 정보를 제공합니다. 자세한 내용은 Windows Server 설명서를 참조하세요.  
 
     > [!NOTE]  
     >  Windows 8.1 컴퓨터에서 VPN 프로필은 해당 컴퓨터를 사용하여 VPN에 연결할 때까지 프록시 정보를 표시하지 않습니다.  
 
 
-2. 필요한 경우 추가 DNS 설정 구성  
+3. 필요한 경우 추가 DNS 설정 구성  
  **자동 VPN 연결 구성** 페이지에서 다음을 구성할 수 있습니다.  
 
     -   **주문형 VPN 사용** – Windows Phone 8.1 장치에 대해 추가 DNS 설정을 구성하려는 경우 사용합니다. 이 설정은 Windows Phone 8.1 장치에만 적용되며 Windows Phone 8.1 장치에 배포하려는 VPN 프로필에만 사용하도록 설정되어야 합니다.
@@ -153,9 +150,9 @@ System Center Configuration Manager의 VPN 프로필을 사용하여 조직의 �
     >  VPN 연결이 분할 터널링을 사용 중인 상태에서 **VPN 연결을 통해 모든 네트워크 트래픽 보내기** 옵션을 선택하지 않는 경우 경로 또는 연결별 DNS 접미사를 구성하면 VPN 연결을 자동으로 열 수 있습니다.  
 
 
-1. **VPN 프로필 만들기 마법사** 의 **지원되는 플랫폼**페이지에서 VPN 프로필을 설치할 운영 체제를 선택하거나, 사용 가능한 모든 운영 체제에 VPN 프로필을 설치하려면 **모두 선택** 을 클릭합니다.  
+4. **VPN 프로필 만들기 마법사** 의 **지원되는 플랫폼**페이지에서 VPN 프로필을 설치할 운영 체제를 선택하거나, 사용 가능한 모든 운영 체제에 VPN 프로필을 설치하려면 **모두 선택** 을 클릭합니다.  
 
-2. 마법사를 완료합니다. 새로운 VPN 프로필이 **자산 및 호환성** 작업 영역의 **VPN 프로필** 노드에 표시됩니다.  
+5. 마법사를 완료합니다. 새로운 VPN 프로필이 **자산 및 호환성** 작업 영역의 **VPN 프로필** 노드에 표시됩니다.  
 
 
 **배포:** VPN 프로필 배포에 대한 자세한 내용은 [Wi-Fi, VPN, 메일 및 인증서 프로필 배포](../../protect/deploy-use/deploy-wifi-vpn-email-cert-profiles.md)를 참조하세요.
