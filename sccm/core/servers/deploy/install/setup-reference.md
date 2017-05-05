@@ -2,7 +2,7 @@
 title: "설치 참조 | Microsoft 문서"
 description: "Configuration Manager 사이트 또는 계층 구조의 설치를 준비하려면 이 참조를 검토합니다."
 ms.custom: na
-ms.date: 2/7/2017
+ms.date: 4/18/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: fc9c8c1e6d57e886e5208d8b8968cb936c269a01
-ms.openlocfilehash: beddcdb0349af4d232cd75ae742f02074abc350d
+ms.sourcegitcommit: 761c3f58f7c57d8f87ee802da37821895062546d
+ms.openlocfilehash: 739461a6cca0fd67431093524c1e8158afd80d0f
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -27,25 +28,21 @@ ms.openlocfilehash: beddcdb0349af4d232cd75ae742f02074abc350d
 
 System Center Configuration Manager 설치 프로그램은 다음 섹션에 자세히 설명된 여러 항목에 대한 링크를 제공합니다. 여기에 있는 정보는 Configuration Manager 사이트 또는 계층 구조의 설치를 준비하고 설치 중에 결정해야 하는 몇 가지 사항을 준비하는 데 도움이 되는 다음 섹션에 대한 링크를 제공합니다.  
 
--   [시작하기 전에](#bkmk_start)  
--   [서버 준비 상태 평가](#bkmk_assess)  
--   [추가 운영 체제에 대한 클라이언트](#bkmk_Addclients)  
--   [System Center Configuration Manager의 진단 및 사용 현황 데이터](../../../../core/plan-design/diagnostics/diagnostics-and-usage-data.md)  
 
-##  <a name="a-namebkmkstarta-before-you-begin"></a><a name="bkmk_start"></a> 시작하기 전에  
+##  <a name="bkmk_start"></a> 시작하기 전에  
 Configuration Manager 사이트를 새로 설치하기 전에 성공적인 배포 디자인을 준비하는 데 유용한 다음 정보를 검토해야 합니다.  
 
 -   [System Center Configuration Manager의 기본 사항](../../../../core/understand/fundamentals.md)  
 -   [System Center Configuration Manager 인프라 계획](../../../plan-design/network/configure-firewalls-ports-domains.md)  
 -   [System Center Configuration Manager 사이트 설치 준비](prepare-to-install-sites.md)  
 
-##  <a name="a-namebkmkassessa-assess-server-readiness"></a><a name="bkmk_assess"></a> 서버 준비 상태 평가  
+##  <a name="bkmk_assess"></a> 서버 준비 상태 평가  
 새 사이트의 설치를 시작하기 전에 사이트 서버와 그 사이트에서 사용할 사이트 시스템 서버(예: 사이트 데이터베이스를 호스트하는 서버)가 모든 필수 조건 구성을 충족하는지 확인합니다. 문서 라이브러리의 다음 항목을 활용할 수 있습니다.  
 
 -   [System Center Configuration Manager에서 지원되는 구성](../../../../core/plan-design/configs/supported-configurations.md)  
 -   [필수 구성 요소 검사기](prerequisite-checker.md)  
 
-##  <a name="a-namebkmkaddclientsa-clients-for-additional-operating-systems"></a><a name="bkmk_Addclients"></a> 추가 운영 체제에 대한 클라이언트  
+##  <a name="bkmk_Addclients"></a> 추가 운영 체제에 대한 클라이언트  
 Microsoft 다운로드 센터에서 다음 운영 체제에 대한 Configuration Manager용 클라이언트 소프트웨어를 다운로드할 수 있습니다.  
 
 -   Mac(Apple)  
@@ -54,12 +51,9 @@ Microsoft 다운로드 센터에서 다음 운영 체제에 대한 Configuration
 
 사용하는 Configuration Manager 버전용 클라이언트를 다운로드하려면 다음 링크를 사용합니다.  
 
--   [System Center Configuration Manager(현재 분기)](http://www.microsoft.com/download/details.aspx?id=47719)  
--   [System Center 2012 R2 Configuration Manager SP1 및 System Center 2012 Configuration Manager SP2](http://go.microsoft.com/fwlink/?LinkID=626550)  
--   [System Center 2012 R2 Configuration Manager](http://go.microsoft.com/fwlink/?LinkID=316448)  
--   [System Center 2012 Configuration Manager SP1](http://www.microsoft.com/en-pk/download/details.aspx?id=36212)  
+-   [Microsoft System Center Configuration Manager - 추가 운영 체제용 클라이언트](http://www.microsoft.com/download/details.aspx?id=47719)를 참조하세요.  
 
-##  <a name="a-namebkmkusagea-usage-data-levels-and-settings"></a><a name="bkmk_usage"></a> 사용 데이터 수준 및 설정  
+##  <a name="bkmk_usage"></a> 사용 데이터 수준 및 설정  
 System Center Configuration Manager 사이트를 처음 설치하는 경우 Configuration Manager가 자동으로 설치되고 사이트 서버에 새 사이트 시스템 역할 **서비스 연결 지점**이 구성됩니다. 서비스 연결 지점의 기본 설정은 다음과 같습니다.  
 
 -   **온라인** 모드(오프라인 모드도 사용 가능)  
@@ -82,10 +76,5 @@ System Center Configuration Manager 사이트를 처음 설치하는 경우 Conf
 
 각 수준별로 수집되는 정보의 공개를 비롯한 자세한 내용은 [System Center Configuration Manager의 진단 및 사용 현황 데이터](../../../../core/plan-design/diagnostics/diagnostics-and-usage-data.md)를 참조하세요.  
 
-[System Center Configuration Manager 개인 정보 취급 방침](http://go.microsoft.com/fwlink/?LinkID=626527)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
+온라인으로 System Center Configuration Manager 개인정보 취급방침을 보려면 [http://go.microsoft.com/fwlink/?LinkID=626527](http://go.microsoft.com/fwlink/?LinkID=626527)로 이동하세요.
 

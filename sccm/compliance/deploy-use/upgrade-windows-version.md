@@ -1,8 +1,8 @@
 ---
-title: "Windows 장치를 최신 버전으로 업그레이드 | Microsoft 문서"
-description: "Windows 10 Desktop, Windows 10 Mobile 또는 Windows 10 Holographic을 실행하는 장치를 최신 버전으로 자동으로 업그레이드합니다."
+title: "Configuration Manager를 사용하여 Windows 장치를 다른 버전으로 업그레이드 | Microsoft Docs"
+description: "Configuration Manager를 사용하여 Windows 10 Desktop, Windows 10 Mobile 또는 Windows 10 Holographic을 실행하는 장치를 최신 버전으로 자동으로 업그레이드합니다."
 ms.custom: na
-ms.date: 11/18/2016
+ms.date: 04/18/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,9 +17,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
-ms.openlocfilehash: f14dfb77be7b53e74d53e0c1fc7e7f1731952d40
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: 4eee9731a4a27328c47c0d15931cab28cf520a18
+ms.openlocfilehash: cfde0a43947013bbd3a1093688cee19fe309fd03
+ms.lasthandoff: 04/18/2017
 
 
 ---
@@ -29,7 +29,7 @@ ms.lasthandoff: 12/16/2016
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 
-System Center Configuration Manager **버전 업그레이드 정책**을 사용하면 다음 Windows 10 버전 중 하나를 실행하는 장치를 최신 버전으로 자동으로 업그레이드할 수 있습니다.
+System Center Configuration Manager **버전 업그레이드 정책**을 사용하면 다음 Windows 10 버전 중 하나를 실행하는 장치를 다른 버전으로 자동으로 업그레이드할 수 있습니다.
 
 - Windows 10 Desktop
 - Windows 10 Mobile

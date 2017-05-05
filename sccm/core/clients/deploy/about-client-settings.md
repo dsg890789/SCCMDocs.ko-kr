@@ -13,13 +13,13 @@ ms.topic: article
 ms.assetid: f7560876-8084-4570-aeab-7fd44f4ba737
 caps.latest.revision: 15
 caps.handback.revision: 0
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: bd2cf7b0df4a1f50c006e8280bf59ea91f1b4477
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 4eee9731a4a27328c47c0d15931cab28cf520a18
+ms.openlocfilehash: d1d2ec7c053d13ebaeb00d0dfeb126716b5f7ae5
+ms.lasthandoff: 04/18/2017
 
 ---
 # <a name="about-client-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 설정 정보
@@ -505,7 +505,7 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
 
     -   **새로 만들기** 아이콘을 선택하여 인벤토리에 새 파일 형식을 추가합니다. 그런 다음 **인벤토리 파일 속성** 대화 상자에서 다음 정보를 지정합니다.  
 
-        -   **이름**: 인벤토리할 파일의 이름을 지정합니다. **\** 문자를 사용하여 모든 텍스트 문자열을 나타내고**?**문자를 사용하여 단일 문자를 나타낼 수 있습니다. 예를 들어 확장명 .doc를 갖는 모든 파일을 인벤토리하려는 경우 파일 이름을**\*.doc**로 지정합니다.  
+        -   **이름**: 인벤토리할 파일의 이름을 지정합니다. **\** 문자를 사용하여 모든 텍스트 문자열을 나타내고 **?** 문자를 사용하여 단일 문자를 나타낼 수 있습니다. 예를 들어 확장명 .doc을 갖는 모든 파일을 인벤토리하려는 경우 파일 이름을 **\*.doc**로 지정합니다.  
 
         -   **위치**: **설정**을 선택하여 **경로 속성** 대화 상자를 엽니다. 모든 클라이언트 하드 디스크에서 지정된 파일을 검색하거나, 지정된 경로(예: **C:\Folder**) 또는 지정된 변수(예: *%windir%*)를 검색하도록 소프트웨어 인벤토리를 구성할 수 있습니다. 지정된 경로 아래의 모든 하위 폴더를 검색할 수도 있습니다.  
 
@@ -528,7 +528,7 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
 
     -   **수집된 파일 속성** 대화 상자에서 다음 정보를 지정합니다.  
 
-        -   **이름**: 수집할 파일의 이름을 지정합니다. **\** 문자를 사용하여 모든 텍스트 문자열을 나타내고**?* 문자를 사용하여 단일 문자를 나타낼 수 있습니다.  
+        -   **이름**: 수집할 파일의 이름을 지정합니다. **\** 문자를 사용하여 모든 텍스트 문자열을 나타내고 **?** 문자를 사용하여 단일 문자를 나타낼 수 있습니다.  
 
         -   **위치**: **설정**을 선택하여 **경로 속성** 대화 상자를 엽니다. 모든 클라이언트 하드 디스크에서 수집할 파일을 검색하거나, 지정된 경로(예: **C:\Folder**) 또는 지정된 변수(예: *%windir%*)를 검색하도록 소프트웨어 인벤토리를 구성할 수 있습니다. 지정된 경로 아래의 모든 하위 폴더를 검색할 수도 있습니다.  
 

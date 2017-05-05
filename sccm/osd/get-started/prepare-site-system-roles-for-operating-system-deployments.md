@@ -17,9 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
-ms.openlocfilehash: 1069a18eecbc5f53b74ad89e166e6f2c7b180693
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: 761c3f58f7c57d8f87ee802da37821895062546d
+ms.openlocfilehash: 11c0f169afebdb071fefb5ce300fd1ae3481a94f
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -116,7 +116,7 @@ RamDisk TFTP 블록 크기를 사용자 지정할 수 있으며 Configuration Ma
 
      **형식**: REG_DWORD  
 
-     **값**: <사용자 지정된 창 크기\>  
+     **값**: &lt;사용자 지정된 창 크기>  
 
  기본값은 1입니다(1 데이터 블록이 창을 채움).  
 
@@ -129,7 +129,7 @@ RamDisk TFTP 블록 크기를 사용자 지정할 수 있으며 Configuration Ma
 
      **형식**: REG_DWORD  
 
-     **값**: <사용자 지정된 블록 크기\>  
+     **값**: &lt;사용자 지정된 블록 크기>  
 
  기본값은 4096(4k)입니다.  
 

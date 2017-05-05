@@ -16,9 +16,9 @@ author: brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 2cdd25343cf68a79067a317b820572491a3633a2
-ms.openlocfilehash: 84d6fdcec2c539f0fd3043f01d18e165da8c52c9
-ms.lasthandoff: 04/12/2017
+ms.sourcegitcommit: db258a09ce21627ffba37eb1f3d521c1ea0341ed
+ms.openlocfilehash: 7df4bde6970b63262eee9e785d983addbeac0908
+ms.lasthandoff: 04/13/2017
 
 ---
 # <a name="support-for-windows-10-as-a-client-of-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트인 Windows 10에 대한 지원
@@ -45,7 +45,7 @@ Configuration Manager에서 Windows 버전이 출시된 후 최대한 빨리 새
 |Enterprise 2016 LTSB                   |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |
 |1607(CB)    <br />1주년 업데이트<br />(*버전 참조*)      |![이전 버전과 호환](media/blue_compat.png) |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |
 |1607(CBB)    <br />1주년 업데이트<br />(*버전 참조*)      |![지원되지 않음](media/Red_X.png)   |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |
-|1703(CBB)    <br />크리에이터 업데이트<br />(*버전 참조*)      |![지원되지 않음](media/Red_X.png)   |![지원되지 않음](media/Red_X.png) |![이전 버전과 호환](media/blue_compat.png) |
+|1703(CB)    <br />크리에이터 업데이트<br />(*버전 참조*)      |![지원되지 않음](media/Red_X.png)   |![지원되지 않음](media/Red_X.png) |![이전 버전과 호환](media/blue_compat.png) |
 
 
 

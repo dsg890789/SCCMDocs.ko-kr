@@ -2,7 +2,7 @@
 title: "필수 구성 요소 검사 | Microsoft 문서"
 description: "System Center Configuration Manager에 사용 가능한 필수 조건 검사를 검토합니다. 보안 권한 검사를 포함합니다."
 ms.custom: na
-ms.date: 3/1/2017
+ms.date: 4/17/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,16 +16,16 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 496c1444822a4601fad67f421115a609e976386d
-ms.openlocfilehash: 5a8f4a84ef5b4ccb4434ca8eb260c1c7899207ab
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: dda2f4c01078fbbd174cbcb30357554c24f6abeb
+ms.openlocfilehash: 14834f62ffaa8fcba5ddb7536a0b76e18b557e53
+ms.lasthandoff: 04/17/2017
 
 ---
 # <a name="list-of-prerequisite-checks-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 필수 조건 검사 목록
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-다음 섹션에서는 사용 가능한 필수 구성 요소 검사에 대해 자세히 설명합니다. 
+다음 섹션에서는 사용 가능한 필수 구성 요소 검사에 대해 자세히 설명합니다.
 
 필수 조건 검사기를 사용하는 방법에 대한 자세한 내용은 [필수 조건 검사기](prerequisite-checker.md)를 참조하세요.  
 
@@ -117,7 +117,7 @@ ms.lasthandoff: 03/01/2017
 |**도메인 멤버 자격**|Configuration Manager에서 컴퓨터가 Windows 도메인의 구성원인지 확인합니다.|오류|중앙 관리 사이트, <br>기본 사이트, <br>보조 사이트, <br>SMS 공급자, <br>SQL Server|
 |**도메인 멤버 자격**|Configuration Manager에서 컴퓨터가 Windows 도메인의 구성원인지 확인합니다.|경고|관리 지점, <br>배포 지점|
 |**사이트 서버의 FAT 드라이브**|디스크 드라이브가 FAT 파일 시스템으로 포맷되었는지 확인합니다. 보안 수준을 높이려면 NTFS 파일 시스템으로 포맷된 디스크 드라이브에 사이트 서버 구성 요소를 설치합니다.|경고|기본 사이트|
-|**사이트 서버의 사용 가능한 디스크 공간**|사이트 서버를 설치하려면 사이트 서버 컴퓨터에서 사용 가능한 디스크 공간이 5GB 이상이어야 합니다. 같은 컴퓨터에 SMS 공급자 사이트 시스템 역할을 설치할 경우 추가로 사용 가능한 디스크 공간이 1GB 있어야 합니다.|오류|중앙 관리 사이트, <br>기본 사이트, <br>보조 사이트|
+|**사이트 서버의 사용 가능한 디스크 공간**|사이트 서버를 설치하려면 사이트 서버 컴퓨터에서 사용 가능한 디스크 공간이 15GB 이상이어야 합니다. 같은 컴퓨터에 SMS 공급자 사이트 시스템 역할을 설치할 경우 추가로 사용 가능한 디스크 공간이 1GB 있어야 합니다.|오류|중앙 관리 사이트, <br>기본 사이트, <br>보조 사이트|
 |**시스템 다시 시작 보류 중**|설치 프로그램을 실행하기 전에 다른 프로그램을 위해 서버를 다시 시작해야 하는지 확인합니다.|오류|중앙 관리 사이트, <br>기본 사이트, <br>보조 사이트, <br>Configuration Manager 콘솔, <br>SMS 공급자, <br>SQL Server, <br>관리 지점, <br>배포 지점|
 |**읽기 전용 도메인 컨트롤러**|RODC(읽기 전용 도메인 컨트롤러)에서는 사이트 데이터베이스 서버 및 보조 사이트 서버가 지원되지 않습니다. 자세한 내용은 Microsoft 기술 자료의 [도메인 컨트롤러에 SQL Server 설치할 때 발생하는 문제](http://go.microsoft.com/fwlink/p/?LinkId=264856)를 참조하세요.|오류|중앙 관리 사이트, <br>기본 사이트, <br>보조 사이트|
 |**스키마 확장**|Active Directory 도메인 서비스 스키마가 확장되었는지 여부 및 확장된 경우 사용된 스키마 확장의 버전은 무엇인지 확인합니다. 사이트 서버를 설치하기 위해 Configuration Manager Active Directory 스키마 확장이 필요하지는 않지만 모든 Configuration Manager 기능을 완전히 활용하려면 스키마를 확장하는 것이 좋습니다. 스키마 확장의 이점에 대한 자세한 내용은 [사이트 게시를 위해 Active Directory 준비](../../../../core/plan-design/network/extend-the-active-directory-schema.md)를 참조하세요.|경고|중앙 관리 사이트, <br>기본 사이트|
