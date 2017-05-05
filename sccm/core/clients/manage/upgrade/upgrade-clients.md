@@ -16,9 +16,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 52d2e088b8db3c2e9a0af640ca3db72b9fd7af60
-ms.openlocfilehash: f369bccb1da6d428fb321455272190e1a0439ec3
-ms.lasthandoff: 01/03/2017
+ms.sourcegitcommit: 690d03d9c8c49a815bd318df549d7401a855bc5d
+ms.openlocfilehash: 4b80e0e688dd6482bc9a7fe111607e258071f45a
+ms.lasthandoff: 05/05/2017
 
 
 ---
