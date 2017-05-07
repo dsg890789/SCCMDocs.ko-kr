@@ -2,7 +2,7 @@
 title: "Configuration Manager를 지원하는 하이브리드 MDM의 새로운 기능 | Microsoft 문서"
 description: "Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 장치 관리 기능에 대해 알아봅니다."
 ms.custom: na
-ms.date: 03/28/2017
+ms.date: 04/21/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 3eb48942c1259d2aa1b3c200fad73b39b11c0b8c
-ms.openlocfilehash: 51560360a0cb7ecb4a2b0d7eaeb4fdd62d6afc13
-ms.lasthandoff: 03/30/2017
+ms.sourcegitcommit: ae008c91a7387ba76f2bfac13f8feb489a0cc558
+ms.openlocfilehash: 0af5ae68353fcf1db846e2e27f3391fe87dcfc42
+ms.lasthandoff: 04/21/2017
 
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 장치 관리의 새로운 기능
@@ -37,11 +37,37 @@ ms.lasthandoff: 03/30/2017
 |**Configuration Manager Technical Preview의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 Technical Preview 릴리스에서만 사용할 수 있습니다. 이러한 기능을 시험해보려면 기능 설명에 지정된 기술 미리 보기 버전을 설치해야 합니다. 자세한 내용은 [System Center Configuration Manager Technical Preview](../../core/get-started/technical-preview.md)를 참조하세요.|
 |**Configuration Manager(현재 분기)의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 버전의 Configuration Manager(현재 분기)(예: 버전 1511 또는 1602)에서만 사용할 수 있습니다. 하이브리드 배포에 이전 버전의 Configuration Manager를 사용하는 경우 기능 설명에 지정된 Configuration Manager(현재 분기) 버전으로 업그레이드해야 합니다. 자세한 내용은 [System Center Configuration Manager 업그레이드](../../core/servers/deploy/install/upgrade-to-configuration-manager.md)를 참조하세요.|
 
-## <a name="new-hybrid-features-in-march-2017"></a>2017년 3월의 새로운 하이브리드 기능
+## <a name="april-2017"></a>2017년 4월
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
-2017년 3월에 도입된 다음 Intune 기능은 하이브리드 배포에서 사용할 수 있습니다.
+- **Managed Browser에 사용 가능한 MyApps**
+
+  이제 Managed Browser에서 Microsoft MyApps의 지원이 향상되었습니다. 관리를 목표로 하지 않는 Managed Browser 사용자가 MyApps 서비스로 직접 연결되므로, 여기에서 관리 프로비저닝된 SaaS 앱에 액세스할 수 있습니다. Intune 관리를 목표로 하는 사용자는 기본 제공되는 Managed Browser 책갈피에서 MyApps에 계속 액세스할 수 있습니다.
+
+- **Managed Browser 및 회사 포털의 새 아이콘**
+
+  Managed Browser는 앱의 Android 및 iOS 버전 모두에서 업데이트된 아이콘을 받습니다. Enterprise Mobility + Security(EM+S)의 다른 앱과 더욱 일관되도록 새 아이콘에는 업데이트된 Intune 배지가 포함됩니다. [Intune 앱 UI 페이지](/intune/whats-new/whats-new-in-intune-app-ui.md)에서 Managed Browser의 새 아이콘을 볼 수 있습니다.
+
+  회사 포털에서는 EM + S에 있는 다른 앱과의 일관성을 향상시키기 위해 Android, iOS 및 Windows 버전의 앱에 대한 업데이트된 아이콘도 받습니다. 이러한 아이콘은 4월부터 5월 말까지 점진적으로 전체 플랫폼에 릴리스됩니다.
+
+- **Android 회사 포털이 로그인 진행 표시기**
+
+  Android 회사 포털 앱 업데이트에서는 사용자가 앱을 시작하거나 다시 시작할 때 로그인 진행 표시기를 보여줍니다. 사용자가 앱에 액세스하도록 허용하기 전에 표시기가 “연결 중...”, “로그인 중...”, “보안 요구 사항 확인 중...”과 같이 새로운 상태로 진행됩니다. [Intune 앱 UI의 새로운 기능 페이지](/intune/whats-new/whats-new-in-intune-app-ui.md)에서 Android용 회사 포털 앱의 새 화면이 표시됩니다.
+
+- **앱이 SharePoint Online에 액세스하지 못하게 차단**
+
+  이제 앱 보호 정책이 적용되지 않은 앱이 [SharePoint Online](/InTune/deploy-use/mam-ca-for-sharepoint-online)에 액세스하지 못하게 차단하는 앱 기반 조건부 액세스 정책을 만들 수 있습니다. 앱 기반 조건부 액세스 시나리오에서 Azure 포털을 사용하여 SharePoint Online에 액세스하게 할 앱을 지정할 수 있습니다.
+
+### <a name="new-in-configuration-manager-technical-preview-1704"></a>Configuration Manager Technical Preview 1704의 새로운 기능
+
+- **앱 구성 정책을 사용하여 Android 앱 구성**
+
+  System Center Configuration Manager(Configuration Manager)에서 앱 구성 정책을 사용하여 사용자가 Android for Work 장치에서 앱을 실행할 때 미리 구성된 설정을 배포할 수 있습니다. Android 앱 구성 정책은 Android for Work를 실행 중인 장치에서만 사용 가능하며 Play for Work 스토어의 승인된 앱에 적용됩니다. 이 기능을 사용해 보는 방법에 대한 자세한 내용은 [앱 구성 정책을 사용하여 Android 앱 구성](/sccm/core/get-started/capabilities-in-technical-preview-1704#configure-android-apps-with-app-configuration-policies)을 참조하세요.
+
+## <a name="march-2017"></a>2017년 3월
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
 - **Android용 회사 포털 앱의 새 사용자 환경**
 
@@ -53,7 +79,7 @@ ms.lasthandoff: 03/30/2017
   - 앱 탐색: **모든 앱** 뷰는 쉽게 탐색할 수 있도록 **추천**, **전체** 및 **범주** 탭으로 구분된 뷰를 표시합니다.
   - 지원: **내 장치** 및 **IT 담당자** 탭이 가독성을 높이기 위해 업데이트되었습니다.
 
-  이러한 변경 사항에 자세한 내용은 [Intune 최종 사용자 앱 UI 업데이트](/intune/enduser/whats-new-in-intune-app-ui)를 참조하세요.
+  이러한 변경 사항에 자세한 내용은 [Intune 최종 사용자 앱 UI 업데이트](/intune/whats-new/whats-new-in-intune-app-ui)를 참조하세요.
 
 - **Windows 10 회사 포털용 서명 스크립트**
 
@@ -134,11 +160,9 @@ Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추�
 
     자세한 내용은 [Mobile Threat Defense 준수를 모니터링하는 방법](/sccm/mdm/deploy-use/monitor-mobile-threat-defense-compliance)을 참조하세요.
 
-## <a name="new-hybrid-features-in-february-2017"></a>2017년 2월의 새로운 하이브리드 기능
+## <a name="february-2017"></a>2017년 2월
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
-
-2017년 2월에 도입된 다음 Intune 기능은 하이브리드 배포에서 사용할 수 있습니다.
 
 - **회사 포털 웹 사이트 현대화**
 
@@ -166,11 +190,9 @@ Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추�
    
     이제 구성 항목의 일부로 구성할 수 있는 42개의 추가 iOS 설정이 있습니다. 감독된 iOS 장치에 대해 대부분의 설정(전체 중 35개)이 추가되었습니다. 자세한 내용은 [iOS 장치에 대한 새 준수 설정](/sccm/core/get-started/capabilities-in-technical-preview-1702#new-compliance-settings-for-ios-devices)을 참조하세요.
 
-## <a name="new-hybrid-features-in-january-2017"></a>2017년 1월의 새로운 하이브리드 기능
+## <a name="january-2017"></a>2017년 1월
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
-
-2017년 1월에 도입된 다음 Intune 기능은 하이브리드 배포에서 사용할 수 있습니다.
 
 - **Android 7.1.1 지원**
 
@@ -187,11 +209,9 @@ Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추�
   하이브리드 MDM(모바일 장치 관리)에 대한 Technical Preview 1701부터 Intune 관리 장치에 대한 새 정책 및 프로필을 만들 때 특정 버전의 Android 및 iOS를 대상으로 지정할 필요가 없습니다. 이러한 변경으로 인해 하이브리드 배포에서 새 Configuration Manager 릴리스나 확장 없이 새 Android 및 iOS 버전을 더 빠르게 지원할 수 있습니다. 자세한 내용은 [Android 및 iOS 버전은 만들기 마법사에서 대상 지정이 가능하지 않음](/sccm/core/get-started/capabilities-in-technical-preview-1701#android-and-ios-versions-are-no-longer-targetable-in-creation-wizards-for-hybrid-mdm)을 참조하세요.
 
 
-## <a name="new-hybrid-features-in-december-2016"></a>2016년 12월의 새로운 하이브리드 기능
+## <a name="december-2016"></a>2016년 12월
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
-
-2016년 12월에 도입될 예정인 다음 Intune 기능은 하이브리드 배포에서 사용할 수 있습니다.
 
 - **등록 시의 MFA(Multi-Factor Authentication) 과정이 Azure Portal로 이전됨**
 
@@ -218,11 +238,9 @@ Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추�
   | 암호 재설정 | | |        
 
 
-## <a name="new-hybrid-features-in-november-2016"></a>2016년 11월의 새로운 하이브리드 기능
+## <a name="november-2016"></a>2016년 11월
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
-
-2016년 11월에 도입된 다음 Intune 기능은 하이브리드 배포에서 사용할 수 있습니다.
 
 - **Windows 10 장치에 사용할 수 있는 새로운 Microsoft Intune 회사 포털**
 

@@ -2,7 +2,7 @@
 title: "시험판 기능 | Microsoft Docs"
 description: "System Center Configuration Manager의 시험판 기능"
 ms.custom: na
-ms.date: 4/7/2017
+ms.date: 4/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,16 +16,16 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 32f7fc4ef9c8e8d3c2ec8eeaf9a3174bad992ffb
-ms.openlocfilehash: a7ebfea849afcaf236d7e630aad2c7f3f1807a23
-ms.lasthandoff: 04/08/2017
+ms.sourcegitcommit: 690d03d9c8c49a815bd318df549d7401a855bc5d
+ms.openlocfilehash: b12fcb3c372c34ee47306a9b536c3d0c4764b8be
+ms.lasthandoff: 04/24/2017
 
 
 ---
 # <a name="pre-release-features-in-system-center-configuration-manager"></a>System Center Configuration Manager의 시험판 기능
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
- 시험판 기능은 프로덕션 환경에서의 초기 테스트를 위해 현재 분기에 포함된 기능입니다. 이러한 기능은 프로덕션 환경에서 사용할 수 있지만 프로덕션 준비가 된 것으로 간주해서는 안 됩니다.
+시험판 기능은 프로덕션 환경에서의 초기 테스트를 위해 현재 분기에 포함된 기능입니다. 이러한 기능은 완전하게 지원되지만 아직 개발 중인 상태이므로 시험판 범주에서 벗어날 때까지는 변경될 수 있습니다.
 
  시험판 기능을 사용하려면 먼저 Configuration Manager 콘솔에서 시험판 기능을 사용한다는 데 동의해야 합니다. 그래야 해당 기능을 선택하고 사용하도록 설정할 수 있습니다.  
 
@@ -50,6 +50,7 @@ ms.lasthandoff: 04/08/2017
 
  |기능          |시험판으로 추가됨 | 전체 기능으로 추가됨|  
 |------------------|---------------------|---------------------|
+| Configuration Manager로 Device Guard 관리 |  [버전 1702](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)|![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
 | 응용 프로그램을 설치하기 전에 실행 중인 실행 파일 확인  |   [버전 1702](/sccm/apps/deploy-use/deploy-applications#how-to-check-for-running-executable-files-before-installing-an-application) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
 | 데이터 웨어하우스 서비스 지점  |  [버전 1702](/sccm/core/servers/manage/data-warehouse) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
 | 클라이언트에 콘텐츠 배포를 위한 피어 캐시 |  [버전 1610](/sccm/core/plan-design/hierarchy/client-peer-cache) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
