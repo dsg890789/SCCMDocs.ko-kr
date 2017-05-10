@@ -16,9 +16,10 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
 ms.openlocfilehash: b991b4ea27e66c233b04f8e65a412404521d89a6
+ms.contentlocale: ko-kr
 ms.lasthandoff: 03/27/2017
 
 
@@ -115,7 +116,7 @@ System Center Configuration Manager에서는 클라이언트 및 사이트 서�
 
     -   [WSUS 서버](#BKMK_WSUSLog)  
 
-##  <a name="BKMK_AboutLogs">Configuration Manager 로그 파일 정보</a>  
+##  <a name="BKMK_AboutLogs"></a> Configuration Manager 로그 파일 정보  
  Configuration Manager의 프로세스 대부분은 해당 프로세스 전용 로그 파일에 작업 정보를 기록합니다. 로그 파일은 **.log** 또는 **.lo_** 파일 확장명으로 식별됩니다. Configuration Manager는 로그가 최대 크기에 도달할 때까지 .log 파일에 내용을 기록합니다. 로그가 가득 차면 .log 파일이 이름은 같지만 확장명은 .lo_인 파일에 복사되고 프로세스 또는 구성 요소는 계속 .log 파일에 기록합니다. .log 파일이 다시 최대 크기에 도달하면 .lo_ 파일을 덮어쓰게 되고 프로세스가 반복됩니다. 일부 구성 요소는 날짜 및 시간 스탬프를 로그 파일 이름에 추가하고 .log 확장명을 유지하여 로그 파일 기록을 설정합니다. Linux 및 UNIX용 클라이언트에는 .lo_ 파일의 사용 및 최대 크기가 적용되지 않습니다. Linux 및 UNIX용 클라이언트에서 로그 파일을 사용하는 방법에 대한 자세한 내용은 이 항목에서 [Linux 및 UNIX용 클라이언트의 로그 파일 관리](#BKMK_ManageLinuxLogs)를 참조하세요.  
 
  로그를 보려면 Configuration Manager 로그 뷰어 도구인 CMTrace를 사용하면 됩니다. 이 도구는 Configuration Manager 원본 미디어의 \\SMSSetup\\Tools 폴더에 있습니다. CMTrace 도구는 소프트웨어 라이브러리에 추가된 모든 부팅 이미지에 추가됩니다.  
