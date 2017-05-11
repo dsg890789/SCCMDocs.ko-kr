@@ -16,10 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 761c3f58f7c57d8f87ee802da37821895062546d
-ms.openlocfilehash: 44338c705e308896c5203be239c160a8220369a8
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 7a6c89254d01f4074e5c170b20338686178ebdd3
+ms.openlocfilehash: 59946d1328be1606ba7c4dab647e814c1b4e638a
+ms.contentlocale: ko-kr
+ms.lasthandoff: 04/28/2017
 
 
 ---
@@ -203,7 +204,7 @@ Windows 및 ConfigMgr 설치 작업 순서 단계를 중지한 후 명령줄 실
 ### <a name="dep-cannot-use-non-alpha-numeric-characters-in-enrollment-profiles"></a>DEP에서 등록 프로필에 영숫자가 아닌 문자를 사용할 수 없습니다.  
 DEP(장치 등록 프로필)가 사용되는 경우 Apple의 DEP와 연결된 등록 프로필의 **이름**, **설명**, **부서** 및 **전화 번호** 필드에서 영숫자가 아닌 문자를 사용할 수 없습니다. 이러한 필드에 영숫자가 아닌 문자를 사용하면 등록 프로필이 만들어지지만 프로필을 Apple에 업로드할 수 없습니다. Apple 서버에서 오류 메시지 또는 경고를 제공하지 않으며 프로필이 DEP 관리 장치에 배포되지 않습니다.  
 
-**해결 방법** :없음
+**해결 방법**:없음
 
 ### <a name="full-wipe-disables-windows-10-devices-with-less-than-4-gb-ram"></a>전체 초기화를 진행하면 RAM이 4GB 미만인 Windows 10 장치를 사용하지 못하게 됩니다.
 
@@ -216,6 +217,12 @@ RAM이 4GB 미만인 Windows 10 RTM 장치(버전 1511보다 이전 버전)에 �
 관리자가 여러 사용자 컬렉션에 사용 약관 집합을 배포하며 사용자가 이러한 컬렉션 중 둘 이상의 멤버인 경우 회사 포털을 열 때 해당 사용자에게 동일한 사용 약관의 여러 복사본이 표시됩니다.  예를 들어 "SampleUser"라는 사용자가 "CompanyEmployeesFTE"와 "CompanyEmployeesNA"라는 두 개의 서로 다른 사용자 컬렉션의 멤버이고, "CompanyTerms"라는 계약조건이 CompanyEmployeesFTE와 CompanyEmployeesNA 모두에 배포된 경우 사용 약관 동의 페이지에서 CompanyTerms의 동일한 집합 두 개가 SampleUser에게 표시됩니다. 사용자는 모든 사용 약관을 수락하거나 거절할 수만 있으므로 사용자가 사용 약관을 수락도 하고 거절도 하게 되는 모호한 동의 상태가 될 위험은 없습니다. 사용 약관 동의 보고서에는 사용자의 각 약관이 단일 행에 표시되므로 보고서에 오류가 나타나지 않습니다. 유일한 영향은 동의 페이지에서 두 개의 사용 약관 집합이 사용자에게 표시된다는 것입니다.  
 
 **해결 방법**: 각 사용자가 사용 약관이 배포된 한 컬렉션에만 포함되어 있는지 확인합니다.  
+
+### <a name="android-for-work-email-profiles-that-use-certificate-authentication-are-not-applied-to-devices"></a>인증서 인증을 사용하는 Android for Work 메일 프로필은 장치에 적용되지 않습니다.
+<!--  487657 -->
+Android for Work 메일 프로필을 만들 때 두 가지 인증 옵션을 사용할 수 있습니다. 하나는 사용자 이름과 암호이고 다른 하나는 인증서입니다. 현재 인증서 옵션은 작동하지 않습니다. 인증 방법이 **인증서**로 설정된 프로필이 작성되면 프로필이 장치에 적용되지 않고 수동으로 메일 계정 세부 정보를 입력하라는 메시지가 표시됩니다.
+
+**해결 방법**: 없음 관리자는 **사용자 이름 및 암호** 옵션을 사용하거나 이 문제가 해결될 때까지 기다려야 합니다.
 
 ## <a name="reports-and-monitoring"></a>보고서 및 모니터링  
 
