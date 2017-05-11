@@ -16,10 +16,11 @@ author: lleonard-msft
 caps.handback.revision: 0
 ms.author: alleonar
 ms.manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: ae008c91a7387ba76f2bfac13f8feb489a0cc558
-ms.openlocfilehash: d4616ce1e0d8f38b74f03b9e7f089feebe2d087d
-ms.lasthandoff: 04/21/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 7a6c89254d01f4074e5c170b20338686178ebdd3
+ms.openlocfilehash: 359fcfd9754fb5c81763bc44cac45376ea3ab0b8
+ms.contentlocale: ko-kr
+ms.lasthandoff: 04/28/2017
 
 
 ---
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/21/2017
 
      이 표에서는 연결 형식 옵션을 제공합니다. 자세한 내용은 VPN 서버 설명서를 참조하세요.
 
-|옵션          | 추가 정보| 연결 유형|  
+| &nbsp;&nbsp;옵션&nbsp;&nbsp; | 추가 정보 | &nbsp;&nbsp;연결&nbsp;유형&nbsp;&nbsp; |  
 |----------------|----------------------|---------------------|  
 |**영역**     |사용하려는 인증 영역. 인증 영역은 Pulse Secure 연결 유형에서 사용되는 인증 리소스 그룹입니다.|Pulse Secure|    
 |**역할**        |이 연결에 대한 액세스 권한이 있는 사용자 역할. |Pulse Secure|  
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/21/2017
 |**회사 Wi-Fi 네트워크에 연결된 경우 VPN 무시**  |장치가 회사 Wi-Fi 네트워크에 연결된 경우 VPN 연결이 사용되지 않습니다.|- Cisco AnyConnect<br /><br /> - Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - 검사점 모바일 VPN<br /><br /> - Microsoft SSL(SSTP)<br /><br /> - Microsoft 자동<br /><br /> - IKEv2<br /><br /> - L2TP|  
 |**홈 Wi-Fi 네트워크 연결 시 VPN 건너뛰기**  |장치가 가정용 Wi-Fi 네트워크에 연결된 경우 VPN 연결이 사용되지 않습니다.|모두|  
 |**응용 프로그램 VPN(iOS 7 이상, Mac OS X 10.9 및 이후 버전)당** |앱이 실행될 때 연결이 열리도록 이 VPN 연결을 iOS 앱과 연결합니다. 앱을 배포할 때 VPN 프로필을 앱과 연결할 수 있습니다.|- Cisco AnyConnect<br /><br /> - Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - 검사점 모바일 VPN|  
-|**사용자 지정 XML(선택 사항)** |VPN 연결을 구성하는 사용자 지정 XML 명령을 지정합니다.<br /><br /> 예제:<br /><br /> **Pulse Secure**의 경우:<br /><br /> **&lt;pulse-schema>&lt;isSingleSignOnCredential>true&lt;/isSingleSignOnCredential\>&lt;/pulse-schema>**<br /><br /> **CheckPoint Mobile VPN**의 경우:<br /><br /> **&lt;CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3">**<br /><br /> **Dell SonicWALL Mobile Connect**의 경우:<br /><br /> **&lt;MobileConnect\><br />&nbsp; &nbsp; &lt;Compression\>false&lt;/Compression\><br />&nbsp; &nbsp; &lt;debugLogging\>True&lt;/debugLogging\><br />&nbsp; &nbsp; &lt;packetCapture\>False&lt;/packetCapture\>&lt;/MobileConnect\>**<br /><br /> **F5 Edge Client**의 경우:<br /><br /> **&lt;f5-vpn-conf>&lt;single-sign-on-credential>&lt;/f5-vpn-conf>**<br /><br /> 사용자 지정 XML 명령을 작성하는 방법에 대한 자세한 내용은 각 제조업체의 VPN 설명서를 참조하세요.|- Cisco AnyConnect<br /><br /> - Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - 검사점 모바일 VPN|  
+|**사용자 지정 XML(선택 사항)** |VPN 연결을 구성하는 사용자 지정 XML 명령을 지정합니다.<br /><br /> 예제:<br /><br /> **Pulse Secure**의 경우:<br /><br /> **&lt;pulse-schema><br /> &nbsp; &lt;isSingleSignOnCredential>true&lt;/isSingleSignOnCredential\><br />&lt;/pulse-schema>**<br /><br /> **CheckPoint Mobile VPN**의 경우:<br /><br /> **&lt;CheckPointVPN <br /> &nbsp; port="443" name="CheckPointSelfhost" <br /> &nbsp; sso="true" <br /> &nbsp; debug="3"<br />/>**<br /><br /> **Dell SonicWALL Mobile Connect**의 경우:<br /><br /> **&lt;MobileConnect\><br />&nbsp; &nbsp; &lt;Compression\>false&lt;/Compression\><br />&nbsp; &nbsp; &lt;debugLogging\>True&lt;/debugLogging\><br />&nbsp; &nbsp; &lt;packetCapture\>False&lt;/packetCapture\><br />&lt;/MobileConnect\>**<br /><br /> **F5 Edge Client**의 경우:<br /><br /> **&lt;f5-vpn-conf>&lt;single-sign-on-credential>&lt;/f5-vpn-conf>**<br /><br /> 사용자 지정 XML 명령을 작성하는 방법에 대한 자세한 내용은 각 제조업체의 VPN 설명서를 참조하세요.|- Cisco AnyConnect<br /><br /> - Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - 검사점 모바일 VPN|  
 
 > [!NOTE]  
 >  모바일 장치에 대한 VPN 프로필 만들기에 특정한 정보는 [VPN 프로필 만들기](../../mdm/deploy-use/create-vpn-profiles.md)를 참조하세요.  

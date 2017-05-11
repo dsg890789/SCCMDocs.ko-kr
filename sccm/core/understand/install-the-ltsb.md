@@ -1,8 +1,8 @@
 ---
 title: "1606 기준 미디어를 사용하여 사이트 설치 | Microsoft 문서"
-description: "1606 기준 미디어를 사용하여 System Center Configuration Manager에 대한 사이트를 설치하거나 업그레이드하는 방법을 알아봅니다."
+description: "System Center Configuration Manager용 LTSB를 설치하거나 업그레이드합니다."
 ms.custom: na
-ms.date: 10/12/2016
+ms.date: 05/01/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,10 +15,11 @@ caps.latest.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 1a3460143628ef297c99c364ded7ebea86d270dd
-ms.openlocfilehash: c266bb753ea69785b674508647c3857b2218cb77
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 31819a1df4e63e1114682490a9b3c3b4e5c99cfa
+ms.openlocfilehash: 39653604ba5fd8e1fe9dd4d42889221d983f9bec
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -26,13 +27,18 @@ ms.lasthandoff: 02/18/2017
 
 *적용 대상: System Center Configuration Manager(현재 분기), (장기 서비스 분기)*
 
-이 항목에서는 Microsoft System Center 2016 또는 System Center Configuration Manager(현재 분기 및 장기 서비스 분기 1606) 릴리스의 버전 1606 기준 미디어를 사용하는 경우 Configuration Manager 설치 프로그램을 실행하는 방법에 대해 알아봅니다. 이 미디어를 사용하여 새 사이트를 설치하거나 System Center 2012 Configuration Manager 서비스 팩 2 또는 System Center 2012 R2 Configuration Manager 서비스 팩 1에서 업그레이드할 수 있습니다. 설치하는 동안 현재 분기 또는 LTSB(장기 서비스 분기)를 설치하도록 선택할 수 있습니다.
+Configuration Manager용 버전 1606 기준 미디어에서 설치 프로그램을 실행하면 System Center Configuration Manager의 장기 서비스 분기 또는 현재 분기 사이트를 설치할 수 있습니다.
+
+기준 미디어는 Microsoft System Center 2016의 일부로 DVD에서 사용하거나 System Center Configuration Manager(현재 분기 및 장기 서비스 분기 1606) 릴리스에서 사용할 수 있습니다. 기준 미디어에 대해 알아보려면 [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#baseline-and-udpate-versions)을 참조하세요.
+
 
 버전 1606 기준선 미디어를 사용하는 경우 설치 또는 업그레이드되는 사이트는 다음과 같습니다.
 - *현재 분기 사이트* - 1511 기준선 미디어를 사용하여 처음 설치된 다음 버전 1606 및 1606 핫픽스 롤업 - KB3186654로 업데이트된 사이트에 해당합니다.
 -    *LTSB 사이트* - 버전 1606 및 1606 핫픽스 롤업 - KB3186654를 실행하는 현재 분기 사이트에 해당합니다. 기준선 미디어에 핫픽스 롤업이 이미 포함되어 있습니다.  그러나 LTSB는 [System Center Configuration Manager의 장기 서비스 분기 소개](introduction-to-the-ltsb.md)에 자세히 설명된 대로 현재 분기에서 사용할 수 있는 일부 기능이나 특성을 지원하지 않습니다.
 
 System Center Configuration Manager의 다양한 분기에 대해 잘 모르겠으면 [사용해야 하는 Configuration Manager 분기](which-branch-should-i-use.md)를 참조하세요.
+
+
 
 
 ## <a name="changes-to-setup-with-the-1606-baseline-media"></a>1606 기준 미디어의 설치 프로그램 변경 내용
@@ -98,6 +104,7 @@ LTSB에서 지원되지 않는 사이트 시스템 역할을 제거합니다.
 1606 기준 미디어를 사용하여 두 분기 중 하나의 새 사이트를 설치하는 경우 [System Center Configuration Manager 사이트 설치](/sccm/core/servers/deploy/install/installing-sites) 항목에 문서화된 사이트 계획, 준비 및 설치 절차와 설치 프로그램에 대한 다음 고려 사항을 추가로 사용합니다.
 
 - 설치하는 동안 설치할 Configuration Manager 분기를 선택해야 하며, Software Assurance 계약에 대한 세부 정보를 지정할 수 있습니다.
+- 동일한 계층 구조의 모든 사이트가 동일한 분기를 실행해야 합니다. 여러 사이트에 LTSB와 현재 분기가 혼합되어 있는 계층 구조는 사용할 수 없습니다.
 -    스크립팅된 새 설치. 자세한 내용은 이 문서의 앞부분에서 "스크립팅된 새 설치 옵션"을 참조하세요.
 
 ## <a name="expand-a-stand-alone-primary-site"></a>독립 실행형 기본 사이트 확장

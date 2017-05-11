@@ -15,10 +15,11 @@ caps.latest.revision: 3
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 7573590763c68a4c97d388be1e64054c318da9cc
-ms.openlocfilehash: 4fe6741481c79ed4e4496846152902d6d8ca1f96
-ms.lasthandoff: 03/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: e6833951db27b227a3ca22925e9d9f4c3fc443fc
+ms.openlocfilehash: e8606b8a9268a0a0668b75070cf35894f4794123
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/04/2017
 
 ---
 # <a name="predeclare-devices-with-imei-or-ios-serial-numbers"></a>IMEI 또는 iOS 일련 번호로 장치 미리 선언
@@ -27,7 +28,7 @@ ms.lasthandoff: 03/24/2017
 
 해당 IMEI(International station Mobile Equipment Identity) 번호 또는 iOS 일련 번호를 가져와서 회사 소유의 장치를 식별할 수 있습니다. 장치 IMEI 번호를 포함한 쉼표로 구분된 값(.csv) 파일을 업로드하거나 장치 정보를 수동으로 입력할 수 있습니다.  가져온 정보에 따라 장치 목록에 **회사**로 등록된 장치의 **소유권**이 설정됩니다. 서비스에 액세스하는 각 사용자는 Intune 라이선스가 여전히 필요합니다.  
 
-회사 소유 iOS 장치의 일련 번호를 업로드하면 일련 번호는 회사 등록 프로필과 페어링됩니다. 그 다음에 장치를 회사 소유로 표시하려면 Apple의 DEP(장비 등록 프로그램) 또는 Apple Configurator를 사용하여 장치를 등록해야 합니다. 
+회사 소유 iOS 장치의 일련 번호를 업로드하면 일련 번호는 회사 등록 프로필과 페어링됩니다. 그 다음에 장치를 회사 소유로 표시하려면 Apple의 DEP(장비 등록 프로그램) 또는 Apple Configurator를 사용하여 장치를 등록해야 합니다.
 
 ## <a name="how-to-predeclare-corporate-owned-devices"></a>회사 소유 장치를 미리 선언하는 방법
 
@@ -61,7 +62,7 @@ ms.lasthandoff: 03/24/2017
 
 ## <a name="format-for-uploading-csv-files"></a>.csv 파일을 업로드하기 위한 형식
 
-IMEI 또는 일련 번호로 장치를 식별하는 데 사용하는 .csv 파일은 다음 형식이어야 합니다(참조용으로만 제공되는 맨 위 행은 제외). 각 행은 IMEI 번호 또는 iOS 일련 번호를 포함해야 합니다. iOS 장치의 일련 번호만 미리 선언할 수 있습니다. 다른 장치 플랫폼에는 IMEI 번호를 사용합니다. 다음 표에 샘플 데이터가 포함되어 있습니다.
+IMEI 또는 일련 번호로 장치를 식별하는 데 사용하는 .csv 파일은 다음 형식이어야 합니다(참조용으로만 제공되는 맨 위 행은 제외). 각 행은 ID 번호(IMEI 번호 또는 iOS 일련 번호)를 포함해야 합니다. 두 가지 모두를 포함할 수 있습니다. IMEI 번호는 Android, iOS 및 Windows 장치에 사용할 수 있습니다. iOS 일련 번호도 지원됩니다.  다음 표에 샘플 데이터가 포함되어 있습니다.
 
 | IMEI #  | iOS 일련 번호 #  | OS | 세부 정보 |
 |------------ |---------------|-----|-----|

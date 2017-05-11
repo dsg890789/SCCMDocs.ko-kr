@@ -2,7 +2,7 @@
 title: "사용해야 하는 분기 | Microsoft 문서"
 description: "사용 가능한 System Center Configuration Manager 분기 간의 차이점을 알아봅니다."
 ms.custom: na
-ms.date: 10/12/2016
+ms.date: 05/02/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,10 +15,11 @@ caps.latest.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: ef044af5f6b32e4161d54c0ab1fb2ef2d245264b
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
+ms.openlocfilehash: f791278b0aa8efc734a894da7dab1704bb567ed0
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -29,16 +30,19 @@ ms.lasthandoff: 03/27/2017
 
 2016년 10월부터, 세 가지 System Center Configuration Manager 분기를 사용할 수 있습니다. 이 항목은 올바른 분기를 선택하는 데 도움이 됩니다.
 
+> [!TIP]  
+> 계층 구조의 모든 사이트가 동일한 분기를 실행해야 합니다. 여러 사이트에 서로 다른 분기가 혼합되어 있는 계층 구조는 사용할 수 없습니다.
+
 ## <a name="current-branch-of-system-center-configuration-manager"></a>System Center Configuration Manager 현재 분기
 최신 기능 및 특성을 가져오는 옵션을 원하는 프로덕션 환경에서 사용하기 위한 사용이 허가된 분기입니다. System Center 데이터 센터, System Center 표준, System Center Configuration Manager 또는 동등한 구독 권한 중 하나가 있을 경우 사용할 분기입니다. Software Assurance 및 라이선스 옵션에 대한 자세한 내용은 [System Center Configuration Manager의 라이선스 및 분기](learn-more-editions.md)를 참조하세요.
 
 
 >  [!TIP]
-> 현재 분기를 라이선스가 필요하지 않은 평가판으로 설치할 수도 있습니다. 평가판은 180일 동안 사용할 수 있고 현재 분기의 라이선스 버전으로 업그레이드가 지원됩니다.
+> 현재 분기를 라이선스가 필요하지 않은 평가판으로 설치할 수 있습니다. 평가판은 180일 동안 사용할 수 있고 현재 분기의 라이선스 버전으로 업그레이드가 지원됩니다.
 
 현재 분기는 1년 여러 번 새로운 기능으로 업데이트됩니다. 각 업데이트 버전은 릴리스 후 1년 동안 지원됩니다. 해당 1년 기간이 만료되기 전에 현재 분기의 최신 버전으로 업데이트해야 합니다. 최신 버전에 대한 업데이트는 콘솔 내 업데이트로 제공됩니다.
 
-현재 분기를 새 사이트로 설치하거나 System Center 2012 Configuration Manager 서비스 팩 2 또는 System Center 2012 R2 Configuration Manager 서비스 팩 1에서 업그레이드로 설치하려면 System Cener 2016과 함께 DVD로 제공되거나 System Center Configuration Manager 독립 실행형 릴리스의 일부로 제공되는 System Center Configuration Manager의 [기준 미디어](/sccm/core/servers/manage/updates#baseline-and-update-versions)를 사용합니다. 이 미디어에 대한 액세스는 System Center Configuration Manager 사용이 허가된 방식에 따라 달라집니다.
+현재 분기를 새 사이트로 설치하거나 System Center 2012 Configuration Manager 서비스 팩 2 또는 System Center 2012 R2 Configuration Manager 서비스 팩 1에서 업그레이드로 설치하려면 System Cener 2016과 함께 DVD로 제공되거나 System Center Configuration Manager 독립 실행형 릴리스의 일부로 제공되는 System Center Configuration Manager의 [기준 미디어](/sccm/core/servers/manage/updates#baseline-and-update-versions)를 사용합니다. 이 미디어에 대한 액세스는 System Center Configuration Manager 사용이 허가된 방식에 따라 달라집니다. 1702와 같은 최신 기준 버전은 LTSB 설치를 지원하지 않습니다.
 
 기준 미디어를 사용하여 현재 분기의 평가판 버전으로 새 사이트를 설치할 수도 있습니다. 평가판만 설치하려는 경우 [TechNet 평가 센터](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) 웹 사이트에서 소프트웨어를 다운로드할 수 있습니다.
 
@@ -139,4 +143,15 @@ LTSB는 현재 분기 버전 1606을 기반으로 하며 다음과 같은 제한
 **업데이트 옵션**
 -    새 기술 미리 보기 버전의 콘솔 내 업데이트를 설치할 수 있습니다.
 -    기술 미리 보기를 현재 분기 또는 LTSB로 변환하는 옵션이 없습니다.
+
+
+## <a name="identify-your-branch-and-version"></a>분기 및 버전 식별
+Configuration Manager 사이트에 대한 버전 정보를 보면 분기도 확인됩니다.
+
+**버전**   
+사이트 버전을 확인하려면 콘솔의 왼쪽 위에 있는 **System Center Configuration Manager 정보**로 이동합니다. 여기에 **사이트 버전**이 표시됩니다. 사이트 버전 목록은 []() 항목을 참조하세요.
+
+**분기**  
+사이트 분기를 LTSB 또는 현재 분기로 확인하려면 콘솔에서 **관리** > **사이트 구성** > **사이트**으로 이동한 다음 **계층 설정**을 엽니다. 현재 분기로 변환하는 옵션이 있고 활성 상태이면 사이트에서 LTSB 버전을 실행합니다. 사이트에서 현재 분기를 실행하는 경우에는 이 옵션이 회색으로 표시됩니다.
+다양한 Configuration Manager 버전에 대한 자세한 내용은 [Configuration Manager용 업데이트](/sccm/core/servers/manage/updates)에서 "기준 및 업데이트 버전"을 참조하세요.
 

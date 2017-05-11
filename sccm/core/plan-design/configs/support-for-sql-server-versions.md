@@ -2,7 +2,7 @@
 title: "지원되는 SQL Server 버전 | Microsoft 문서"
 description: "System Center Configuration Manager 사이트 데이터베이스를 호스트하기 위한 SQL Server 버전 및 구성 요구 사항을 가져옵니다."
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 05/01/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,10 +15,11 @@ caps.latest.revision: 21
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: ea9edf6392c41e31276900454cd78ce4bc32be7b
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: d5a6fdc9a526c4fc3a9027dcedf1dd66a6fff5a7
+ms.openlocfilehash: fa7f232fd385f742bb11c6596c954d87c2da87a8
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/01/2017
 
 
 ---
@@ -54,10 +55,15 @@ ms.lasthandoff: 03/27/2017
  SQL Server는 사이트 서버 컴퓨터에 있어야 합니다.  
 
 ##  <a name="bkmk_SQLVersions"></a> 지원되는 SQL Server 버전  
- 여러 사이트가 있는 계층 구조에서는 사용 중인 SQL Server 버전이 Configuration Manager에서 지원되는 경우 사이트마다 다른 SQL Server 버전을 사용하여 사이트 데이터베이스를 호스트할 수 있습니다.  
+ 여러 사이트가 있는 계층 구조에서 다음과 같은 경우 사이트마다 다른 SQL Server 버전을 사용하여 사이트 데이터베이스를 호스트할 수 있습니다.
+ -  Configuration Manager는 사용하는 SQL Server 버전을 지원합니다.
+ -  사용하는 SQL Server 버전은 Microsoft에서 계속 지원합니다.
+ -  SQL Server는 두 가지 버전의 SQL Server 간 복제를 지원합니다.  예를 들어 [SQL Server는 SQL Server 2008 R2와 SQL Server 2016 간의 복제를 지원하지 않습니다](https://docs.microsoft.com/sql/relational-databases/replication/deprecated-features-in-sql-server-replication).
+
+
 
  별도로 지정되지 않은 경우 다음 버전의 SQL Server는 System Center Configuration Manager의 모든 활성 버전에서 지원됩니다. 새 SQL Server 버전이나 서비스 팩에 대한 지원이 추가되면 해당 지원을 추가하는 Configuration Manager 버전이 표시됩니다. 마찬가지로 더 이상 지원이 제공되지 않는 경우에는 Configuration Manager의 영향받는 버전에 대한 세부 정보를 검색합니다.   
- 
+
 누적 업데이트가 기본 서비스 팩 버전으로 돌아가지 않는 한 특정 SQL Server 서비스 팩 지원에는 해당 서비스 팩에 대한 누적 업데이트가 포함됩니다. 서비스 팩 버전이 표시되지 않으면 서비스 팩이 없는 SQL Server의 해당 버전이 지원됩니다. 이후 해당 버전에 대한 서비스 팩이 릴리스된 경우 새 서비스 팩 버전이 지원되기 전에 개별 지원 정보가 선언됩니다.
 
 

@@ -2,7 +2,7 @@
 title: "Configuration Manager 2012에서 변경된 내용 | Microsoft 문서 "
 description: "System Center Configuration Manger 및 System Center 2012 Configuration Manager의 변경 내용과 새로운 기능을 확인합니다."
 ms.custom: na
-ms.date: 12/30/2016
+ms.date: 05/02/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,10 +15,11 @@ caps.latest.revision: 51
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 6b1a4584ebcd4dadd983677b714486402c93e190
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
+ms.openlocfilehash: 0a3eb93a99533a1569d8f72ca01d6dfcdc75da20
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -38,7 +39,7 @@ ms.lasthandoff: 03/27/2017
 -   Configuration Manager 2007, System Center 2012 Configuration Manager 등의 이전 버전과 달리 제품 이름에 연도나 제품 식별자를 사용하지 않습니다.
 
 -   업데이트 버전이라고도 하는 증분식 제품 내 업데이트를 지원합니다. 초기 릴리스는 버전 1511입니다. 후속 버전은 버전 1610과 같이 콘솔 내 업데이트로 1년에 여러 번 출시됩니다.
--   기준선 버전을 사용하여 설치됩니다. 1511이 원래 기준선 버전이지만 시간이 지나면서 1606 등의 새 기준선 버전이 릴리스됩니다. 기준선 버전을 사용하여 새 System Center Configuration Manager 사이트 및 계층 구조를 설치하거나 Configuration Manager 2012의 지원되는 버전에서 업그레이드할 수 있습니다.
+-   기준선 버전을 사용하여 설치됩니다. 1511이 원래 기준선 버전이지만 시간이 지나면서 1702 등의 새 기준선 버전이 릴리스됩니다. 기준선 버전을 사용하여 새 System Center Configuration Manager 사이트 및 계층 구조를 설치하거나 Configuration Manager 2012의 지원되는 버전에서 업그레이드할 수 있습니다.
 
 
 
@@ -49,7 +50,7 @@ ms.lasthandoff: 03/27/2017
  일부 버전은 기존 사이트에 대한 업데이트로만 사용할 수 있으며(Configuration Manager 콘솔 내에서) 새 Configuration Manager 사이트를 설치하는 데 사용할 수 없습니다.   
 예를 들어 1610 업데이트는 Configuration Manager 콘솔 내에서만 사용할 수 있습니다. System Center Configuration Manager 버전을 이미 실행하는 사이트를 업데이트하는 데 사용됩니다.
 
-또한 업데이트 버전이 주기적으로 새로운 기준선 버전(예: 업데이트 1606)으로 릴리스됩니다. 이런 업데이트는 기존 기준선 버전(예: 1511)으로 시작하여 최신 버전으로 업그레이드할 필요 없이 새로운 계층 구조를 설치하는 데 사용할 수 있습니다.
+또한 업데이트 버전이 주기적으로 새로운 기준선 버전(예: 업데이트 1702)으로 릴리스됩니다. 이런 업데이트는 기존 기준선 버전(예: 1511)으로 시작하여 최신 버전으로 업그레이드할 필요 없이 새로운 계층 구조를 설치하는 데 사용할 수 있습니다.
 
 
 업데이트 사용 방법에 대한 자세한 내용은 [System Center Configuration Manager용 업데이트](../../../core/servers/manage/updates.md)를 참조하세요.  

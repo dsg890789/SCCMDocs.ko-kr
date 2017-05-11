@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
-ms.openlocfilehash: e55883471fde63036c91b315ed6db6dceb315207
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 31819a1df4e63e1114682490a9b3c3b4e5c99cfa
+ms.openlocfilehash: e040c6b3a951d1bdf5a46dd82f1bd92b45c2e71d
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -52,7 +54,7 @@ System Center Configuration Manager **사용자 지정 Windows 데스크톱 및 
 
  Configuration Manager의 검색 방법에는 컴퓨터에 응용 프로그램이 설치되어 있는지를 검색하는 규칙이 포함됩니다. 이 감지 구성 항목은 호환성을 평가 하기 전에 발생 합니다. 응용 프로그램에 대 한 Windows Installer 파일의 존재를 감지할 수 응용 프로그램이 설치 되어 여부를 검색 하려면 사용자 지정 스크립트를 사용 하거나 선택 **항상 응용 프로그램이 설치 되어 있다고 가정** 응용 프로그램 설치 여부에 관계 없이 규정 준수에 대 한 구성 항목을 평가할 수 있습니다.  
 
- 이러한 절차를 사용하여 System Center 2012 Configuration Manager에서 검색 방법을 구성합니다.  
+ 이러한 절차를 사용하여 System Center Configuration Manager에서 검색 방법을 구성합니다.  
 
 ### <a name="to-detect-an-application-installation-by-using-the-windows-installer-file"></a>Windows Installer 파일을 사용 하 여 응용 프로그램 설치를 검색 하려면  
 
@@ -356,9 +358,4 @@ System Center Configuration Manager **사용자 지정 Windows 데스크톱 및 
 
 ## <a name="complete-the-wizard"></a>마법사 완료  
  마법사의 **요약** 페이지에서 수행될 작업을 검토한 다음 마법사를 완료합니다. 새 구성 항목에 표시 되는 **구성 항목** 에서 노드는 **자산 및 호환성** 작업 영역.  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

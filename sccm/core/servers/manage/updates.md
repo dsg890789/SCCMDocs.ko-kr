@@ -2,7 +2,7 @@
 title: "업데이트 | Microsoft 문서"
 description: "**업데이트 및 서비스**라는 콘솔 내 서비스 메서드에 대해 알아봅니다. 이 방법을 사용하면 권장 업데이트를 간편하게 찾아서 설치할 수 있습니다."
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 05/02/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,10 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: bd72d17e463cb65e79b78613b631b0267b2b26a0
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
+ms.openlocfilehash: a33960fb89b71c0f8128e21a5054f5b63cfc6b17
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -48,7 +49,7 @@ Technical Preview 분기를 사용하는 경우 해당 분기와 관련된 추�
 
 
 ##  <a name="bkmk_Baselines"></a> 기준 및 업데이트 버전  
- System Center Configuration Manager 현재 분기의 첫 번째 릴리스는 버전 1511(기준선 버전)이었습니다. 최근 기준선 버전은 1606입니다.
+ System Center Configuration Manager 현재 분기의 첫 번째 릴리스는 버전 1511(기준선 버전)이었습니다. 최신 기준 버전에는 버전 1606 및 1702가 있습니다.
 
 -   새 계층 구조에 새로운 사이트를 설치할 때 최신 기준 버전을 사용합니다.  
 
@@ -76,7 +77,7 @@ Configuration Manager의 다음 버전은 기준, 업데이트 또는 두 가지
 
 |버전 |가용일|[지원 종료 날짜](/sccm/core/servers/manage/current-branch-versions-supported) |기준|콘솔 내 업데이트|  
 |-------------|-----------|------------|--------------|------------------------|  
-|[1702](/sccm/core/plan-design/changes/whats-new-in-version-1702)<br /><br /> 5.00.8498.1000|3/27/2017| 3/27/2018|아니요|예|
+|[1702](/sccm/core/plan-design/changes/whats-new-in-version-1702)<br /><br /> 5.00.8498.1000|3/27/2017| 3/27/2018|예|예|
 |[1610](/sccm/core/plan-design/changes/whats-new-in-version-1610)<br /><br /> 5.00.8458.1000|2016/11/18| 11/18/2017|아니요|예|
 |[1606](/sccm/core/plan-design/changes/whats-new-in-version-1606)<br /><br /> 5.00.8412.1000|7/22/2016| 7/22/2017|아니요|예|
 |[1606](/sccm/core/plan-design/changes/whats-new-in-version-1606) 및 1606 핫픽스 롤업(KB3186654) </br></br>5.00.8412.1307*(참고 1)* |10/12/2016| 7/22/2017|예|아니요|

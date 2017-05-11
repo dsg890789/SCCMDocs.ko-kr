@@ -2,7 +2,7 @@
 title: "1702에 대한 검사 목록 | System Center Configuration Manager"
 description: "System Center Configuration Manager 버전 1702로 업데이트하기 전에 수행할 작업에 대해 알아봅니다."
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 05/02/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -15,10 +15,11 @@ caps.latest.revision: 7
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: dd54a5668f8df73b0724f5c15a1a6a83f8fe8496
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
+ms.openlocfilehash: c4ace452d62d4fa08f4457cb1735718ca4bd016d
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/02/2017
 
 ---
 # <a name="checklist-for-installing-update-1702-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 업데이트 1702를 설치하기 위한 검사 목록
@@ -26,6 +27,9 @@ ms.lasthandoff: 03/27/2017
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 System Center Configuration Manager 현재 분기를 사용하는 경우 버전 1702에 대한 콘솔 내 업데이트를 설치하여 계층 구조를 이전 버전에서 업데이트할 수 있습니다.
+
+> [!TIP]  
+버전 1702는 새로운 계층 구조의 첫 번째 사이트를 설치하는 데 사용할 수 있는 [기준 미디어](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)로도 사용할 수 있습니다.
 
 버전 1702에 대한 업데이트를 가져오려면 계층 구조의 최상위 사이트에서 서비스 연결 지점 사이트 시스템 역할을 사용해야 합니다. 온라인 또는 오프라인 모드에 있을 수 있습니다. 계층 구조에서 Microsoft에서 업데이트 패키지를 다운로드하면 콘솔의 **관리 &gt; 개요 &gt; 클라우드 서비스 &gt; 업데이트 및 서비스**에 표시됩니다.
 

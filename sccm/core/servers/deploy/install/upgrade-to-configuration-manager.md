@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager로 업그레이드 | Microsoft 문서"
 description: "System Center 2012 Configuration Manager를 실행하는 사이트 및 계층 구조에서 현재 위치 업그레이드를 성공적으로 실행하기 위한 단계를 알아봅니다."
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 05/02/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,10 +15,11 @@ caps.latest.revision: 21
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 6424fb07802b62820b4dc78a58ab30d3b956abef
-ms.openlocfilehash: ca07b46db0967ca03cc5e858b835d2c2108f1210
-ms.lasthandoff: 03/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
+ms.openlocfilehash: 057cd079e452321a51c41797e8dd1a8f5b6a5688
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -35,6 +36,15 @@ ms.lasthandoff: 03/17/2017
 
 ##  <a name="bkmk_path"></a> 현재 위치 업그레이드 경로  
 
+**버전 1702로 업그레이드**   
+버전 1702 기준 미디어가 있는 경우 다음 버전을 System Center Configuration Manager 버전 1702의 정품 버전으로 업그레이드할 수 있습니다.   
+-      System Center Configuration Manager 버전 1702의 평가판 설치
+-      System Center Configuration Manager의 릴리스 후보 설치
+-      System Center 2012 Configuration Manager 서비스 팩 1
+-      System Center 2012 Configuration Manager 서비스 팩 2
+-      System Center 2012 R2 Configuration Manager
+-      System Center 2012 R2 Configuration Manager 서비스 팩 1
+
 **버전 1606으로 업그레이드**  
 2016년 12월 15일에 버전 1606의 기준 미디어가 추가 업그레이드 시나리오에 대한 지원을 추가하기 위해 릴리스되었습니다. 이 새로운 릴리스는 다음 버전을 System Center Configuration Manager 버전 1606의 정품 버전으로 업그레이드하도록 지원합니다.  
 -   System Center Configuration Manager 버전 1606의 평가판 설치
@@ -49,15 +59,16 @@ ms.lasthandoff: 03/17/2017
 -   System Center 2012 Configuration Manager 서비스 팩 2
 -   System Center 2012 R2 Configuration Manager 서비스 팩 1
 
-**버전 1511로 업그레이드**  
-버전 1511 기준 미디어가 있는 경우 다음 버전을 System Center Configuration Manager 버전 1511의 정품 버전으로 업그레이드할 수 있습니다.  
--   System Center Configuration Manager 버전 1511의 평가판 설치
--   System Center Configuration Manager의 릴리스 후보 설치  
--   System Center 2012 Configuration Manager 서비스 팩 1  
--   System Center 2012 Configuration Manager 서비스 팩 2  
+<!-- Version 1511 has now dropped out of support
+**Upgrade to version 1511**  
+When you have version 1511 baseline media, you can upgrade the following to a fully licensed  version of System Center Configuration Manager version 1511:  
+-   An evaluation install of System Center Configuration Manager version 1511
+-   A release candidate install of System Center Configuration Manager  
+-   System Center 2012 Configuration Manager with Service Pack 1  
+-   System Center 2012 Configuration Manager with Service Pack 2  
 -   System Center 2012 R2 Configuration Manager  
--   System Center 2012 R2 Configuration Manager 서비스 팩 1  
-
+-   System Center 2012 R2 Configuration Manager with Service Pack 1  
+-->
 
 
 > [!TIP]  
@@ -75,6 +86,9 @@ ms.lasthandoff: 03/17/2017
  다음 검사 목록은 System Center Configuration Manager로의 성공적인 업그레이드를 계획하는 데 도움이 됩니다.  
 
 ### <a name="before-you-upgrade"></a>업그레이드하기 전에  
+
+**System Center 2012 Configuration Manager 환경 검토** 및 KB4018655에 자세히 설명된 문제 해결: [Configuration Manager 클라이언트가 반복되는 재시도 작업때문에 5시간마다 재설치하고 의도치 않게 클라이언트 업그레이드가 초래될 수 있습니다](https://support.microsoft.com/help/4018655).
+
 컴퓨터 환경이 System Center Configuration Manager로 업그레이드하는 데 필요한 **지원되는 구성을 충족하는지 확인**합니다.  
 
 사이트 시스템 역할을 호스트하는 데 사용 중인 서버 운영 체제를 검토합니다.  
@@ -251,7 +265,7 @@ System Center Configuration Manager로 업그레이드하는 경우 다음 작�
 
 -   **소프트웨어 센터:**  
     다음 소프트웨어 센터 항목이 기본값으로 다시 설정됩니다.  
-    -   **작업 정보** 가 월요일부터 금요일 **오전&5;:00** 부터 **오후&10;:00** 의 업무 시간으로 다시 설정됩니다.  
+    -   **작업 정보** 가 월요일부터 금요일 **오전 5:00** 부터 **오후 10:00** 의 업무 시간으로 다시 설정됩니다.  
     -   **컴퓨터 유지 관리** 의 값이 **내 컴퓨터가 프레젠테이션 모드일 때 소프트웨어 센터 활동 일시 중단**으로 설정됩니다.  
     -   **원격 제어** 의 값이 컴퓨터에 할당된 클라이언트 설정의 값으로 설정됩니다.  
 -   **소프트웨어 업데이트 요약 일정:**  

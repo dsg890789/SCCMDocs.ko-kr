@@ -2,7 +2,7 @@
 title: "CD.Latest 폴더 | Microsoft 문서"
 description: "Configuration Manager 콘솔 내에서 제품 업데이트를 제공하는 새 업데이트 프로세스에 대해 알아봅니다."
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 05/02/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,10 +15,11 @@ caps.latest.revision: 6
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: d94acac84f052a01de9d9c9f65f237c0006c45b8
-ms.openlocfilehash: 5fbf1a2605b4915a2f592875a5ac88368160ce87
-ms.lasthandoff: 04/26/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
+ms.openlocfilehash: 5c39e09b44500fa2f356f83579bb2fb2c1d0e937
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -41,7 +42,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔 내에
 
 -   기본 제공 Configuration Manager 백업 작업을 실행합니다. 지정된 백업 폴더 위치에서 폴더가 생성되거나 업데이트됩니다.  
 
--  버전 1606부터 기준선 미디어(예: 버전 1606)를 사용하여 새 사이트를 설치할 경우 CD.Latest 폴더가 만들어집니다.
+-  버전 1606부터 기준선 미디어(예: 버전 1606 또는 1702)를 사용하여 새 사이트를 설치할 경우 CD.Latest 폴더가 만들어집니다.
 
 CD.Latest 폴더의 소스 파일은 다음에 대해 지원됩니다.  
 

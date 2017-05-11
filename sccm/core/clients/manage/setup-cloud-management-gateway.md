@@ -4,17 +4,18 @@ description:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/23/2017
+ms.date: 05/01/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
 ms.technology:
 - configmgr-client
 ms.assetid: e0ec7d66-1502-4b31-85bb-94996b1bc66f
-translationtype: Human Translation
-ms.sourcegitcommit: 2bcc5d9dde1f1a2d9c33575d6c463e281ac818e8
-ms.openlocfilehash: 61b8cd8458718b9a54edb129739c619f947ac380
-ms.lasthandoff: 12/16/2016
+ms.translationtype: Human Translation
+ms.sourcegitcommit: d5a6fdc9a526c4fc3a9027dcedf1dd66a6fff5a7
+ms.openlocfilehash: 97e1bc6585cee0ff433da0ec0b60b9604cb7348f
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/01/2017
 
 ---
 
@@ -24,13 +25,27 @@ ms.lasthandoff: 12/16/2016
 
 1610 버전부터는 Configuration Manager에서 클라우드 관리 게이트웨이를 설정하는 프로세스에 다음 단계가 포함됩니다.
 
-## <a name="step-1-create-a-custom-ssl-certificate"></a>1단계: 사용자 지정 SSL 인증서 만들기
+## <a name="step-1-configure-required-certificates"></a>1단계: 필요한 인증서 구성
 
-클라우드 기반 배포 지점에 대해 수행하는 방법과 동일하게 클라우드 관리 게이트웨이용으로 사용자 지정 SSL 인증서를 만들 수 있습니다. [클라우드 기반 배포 지점용 서비스 인증서 배포](/sccm/core/plan-design/network/example-deployment-of-pki-certificates#BKMK_clouddp2008_cm2012)에 대한 지침을 따르되 다음 사항은 다르게 수행합니다.
+## <a name="option-1-preferred---use-the-server-authentication-certificate-from-a-public-and-globally-trusted-certificate-provider-like-verisign"></a>옵션 1(기본 설정) - 공용 및 전 세계적으로 신뢰할 수 있는 인증서 공급자(예: VeriSign)의 서버 인증 인증서를 사용합니다.
 
--   새 인증서 템플릿 설정 시 Configuration Manager 서버에 대해 설정한 보안 그룹에 **읽기** 및 **등록** 권한을 부여합니다.
+이 방법을 사용하면 클라이언트가 인증서를 자동으로 신뢰하므로 직접 사용자 지정 SSL 인증서를 만들 필요가 없습니다.
 
--  사용자 지정 웹 서버 인증서를 요청할 때는 Azure 공용 클라우드의 클라우드 관리 게이트웨이를 사용하려는 경우 **cloudapp.net**으로 끝나는 인증서 일반 이름의 FQDN을 입력하고, Azure 정부 클라우드를 사용하려는 경우 **usgovcloudapp.net**으로 끝나는 인증서 일반 이름의 FQDN을 입력합니다.
+1. 조직의 공용 DNS(도메인 이름 서비스)에 CNAME(정식 이름 레코드)을 만들어 클라우드 관리 게이트웨이 서비스의 별칭을 공용 인증서에 사용할 친숙한 이름으로 지정합니다.
+예를 들어 Contoso는 Azure에서 **GraniteFalls.CloudApp.Net**인 클라우드 관리 게이트웨이 서비스 **GraniteFalls**의 이름을 지정합니다. Contoso의 공용 DNS contoso.com 네임스페이스에서 DNS 관리자는 실제 호스트 이름인 **GraniteFalls.CloudApp.net**에 대한 새 CNAME 레코드인 **GraniteFalls.Contoso.com**을 만듭니다.
+2. 그런 다음 CNAME 별칭의 CN(일반 이름)을 사용하여 공용 공급자에서 서버 인증 인증서를 요청합니다.
+예를 들어 Contoso는 인증서 CN에 **GraniteFalls.Contoso.com**을 사용합니다.
+3. 이 인증서를 사용하여 Configuration Manager 콘솔에서 클라우드 관리 게이트웨이 서비스를 만듭니다.
+    - 클라우드 관리 게이트웨이 만들기 마법사의 **설정** 페이지에서 이 클라우드 서비스에 대한 서버 인증서를 추가하면(**인증서 파일**에서) 마법사가 인증서 CN에서 호스트 이름을 서비스 이름으로 추출한 다음 Azure에서 서비스를 만들기 위한 서비스 FQDN으로 **cloudapp.net**(또는 Azure US Government 클라우드의 경우 **usgovcloudapp.net**)에 추가합니다.
+예를 들어 Contoso에서 클라우드 관리 게이트웨이를 만들 때 인증서 CN에서 호스트 이름 **GraniteFalls**가 추출되므로 Azure의 실제 서비스가 **GraniteFalls.CloudApp.net**으로 만들어집니다.
+
+### <a name="option-2---create-a-custom-ssl-certificate-for-cloud-management-gateway-in-the-same-way-as-for-a-cloud-based-distribution-point"></a>옵션 2 - 클라우드 기반 배포 지점과 동일한 방식으로 클라우드 관리 게이트웨이에 대한 사용자 지정 SSL 인증서를 만듭니다.
+
+클라우드 기반 배포 지점에 대해 수행하는 방법과 동일하게 클라우드 관리 게이트웨이용으로 사용자 지정 SSL 인증서를 만들 수 있습니다. [클라우드 기반 배포 지점용 서비스 인증서 배포](/sccm/core/plan-design/network/example-deployment-of-pki-certificates)에 대한 지침을 따르되 다음 사항은 다르게 수행합니다.
+
+- 새 인증서 템플릿 설정 시 Configuration Manager 서버에 대해 설정한 보안 그룹에 **읽기** 및 **등록** 권한을 부여합니다.
+- 사용자 지정 웹 서버 인증서를 요청할 때는 Azure 공용 클라우드의 클라우드 관리 게이트웨이를 사용하려는 경우 **cloudapp.net**으로 끝나는 인증서 일반 이름의 FQDN을 입력하고, Azure 정부 클라우드를 사용하려는 경우 **usgovcloudapp.net**으로 끝나는 인증서 일반 이름의 FQDN을 입력합니다.
+
 
 ## <a name="step-2-export-the-client-certificates-root"></a>2단계: 클라이언트 인증서의 루트 내보내기
 
