@@ -438,8 +438,3 @@
 ### [보급 알림 상태를 확인하는 방법](core/servers/manage/how-to-determine-advertisement-status.md)
 
 # [Configuration Manager 참조](reference/configuration-manager-reference.md)
-
-
-<!--HONumber=Jan17_HO3-->
-
-
