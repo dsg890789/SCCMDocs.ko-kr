@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
-ms.openlocfilehash: 057cd079e452321a51c41797e8dd1a8f5b6a5688
+ms.sourcegitcommit: d940fd1bbf96767d44f8c55315e814be55a83897
+ms.openlocfilehash: 9e58ab8dd892adf25429564adfd6f86849ddcbdf
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/02/2017
+ms.lasthandoff: 05/08/2017
 
 
 ---
@@ -39,7 +39,6 @@ ms.lasthandoff: 05/02/2017
 **버전 1702로 업그레이드**   
 버전 1702 기준 미디어가 있는 경우 다음 버전을 System Center Configuration Manager 버전 1702의 정품 버전으로 업그레이드할 수 있습니다.   
 -      System Center Configuration Manager 버전 1702의 평가판 설치
--      System Center Configuration Manager의 릴리스 후보 설치
 -      System Center 2012 Configuration Manager 서비스 팩 1
 -      System Center 2012 Configuration Manager 서비스 팩 2
 -      System Center 2012 R2 Configuration Manager

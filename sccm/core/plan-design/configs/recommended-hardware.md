@@ -2,7 +2,7 @@
 title: "권장 하드웨어 | Microsoft 문서"
 description: "System Center Configuration Manager 환경을 기본 배포 이상으로 확장하는 데 도움이 되는 하드웨어 권장 사항을 확인합니다."
 ms.custom: na
-ms.date: 3/30/2017
+ms.date: 05/04/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,10 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 8d3791bcf737e63308155787ed23c9cc84e7e99c
-ms.openlocfilehash: fd9f5b25a1e40b5f0df823dcbe9c13a77c534c59
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 212628639300e9c361f7cee61b3df6b1cb6874ce
+ms.openlocfilehash: 8dac6df60b07461d6410d305723b3f03fb09fa16
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -49,7 +50,7 @@ ms.lasthandoff: 03/31/2017
 |-------------------------------|---------------|---------------|----------------------------------------|  
 |동일한 서버에 데이터베이스 사이트 역할이 있는 독립 실행형 기본 사이트 서버<sup>1</sup>|16|96|80|  
 |원격 사이트 데이터베이스가 있는 독립 실행형 기본 사이트 서버|8|16|-|  
-|독립 실행형 기본 사이트에 대한 원격 데이터베이스 서버|16|64개|90|  
+|독립 실행형 기본 사이트에 대한 원격 데이터베이스 서버|16|72|90|  
 |동일한 서버에 데이터베이스 사이트 역할이 있는 중앙 관리 사이트 서버<sup>1</sup>|20|128|80|  
 |원격 사이트 데이터베이스가 있는 중앙 관리 사이트 서버|8|16|-|  
 |중앙 관리 사이트에 대한 원격 데이터베이스 서버|16|96|90|  
