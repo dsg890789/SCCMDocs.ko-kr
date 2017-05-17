@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 9555a16d97224a1cf49a426ab225468b07403f60
 ms.openlocfilehash: e28fdeae809cadf78017dd2920e3f1a9484ec8a3
+ms.contentlocale: ko-kr
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -44,7 +46,7 @@ ms.openlocfilehash: e28fdeae809cadf78017dd2920e3f1a9484ec8a3
 
  Linux 및 UNIX를 실행하는 컴퓨터를 위한 컬렉션을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 Linux 및 UNIX 서버용 클라이언트를 관리하는 방법](../../../../core/clients/manage/manage-clients-for-linux-and-unix-servers.md)을 참조하세요.  
 
-##  <a name="a-namebkmk1a-to-create-a-device-collection"></a><a name="BKMK_1"></a> 장치 컬렉션을 만들려면  
+##  <a name="BKMK_1"></a> 장치 컬렉션을 만들려면  
 
 1.  Configuration Manager 콘솔에서 **자산 및 준수** > **장치 컬렉션**을 선택합니다.  
 
@@ -120,7 +122,7 @@ ms.openlocfilehash: e28fdeae809cadf78017dd2920e3f1a9484ec8a3
 > [!NOTE]  
 >  컬렉션 멤버를 확인하려면 Configuration Manager 콘솔을 새로 고치거나 다시 로드해야 합니다. 그러나 첫 번째 예약된 업데이트 후까지 또는 컬렉션에 대해 **멤버 자격 업데이트**를 수동으로 선택한 경우 멤버가 컬렉션에 표시되지 않습니다. 컬렉션 업데이트를 완료하는 데 몇 분 정도 걸릴 수 있습니다.  
 
-##  <a name="a-namebkmk2a-to-create-a-user-collection"></a><a name="BKMK_2"></a> 사용자 컬렉션을 만들려면  
+##  <a name="BKMK_2"></a> 사용자 컬렉션을 만들려면  
 
 1.  Configuration Manager 콘솔에서 **자산 및 준수** > **사용자 컬렉션**을 선택합니다.  
 
@@ -192,7 +194,7 @@ ms.openlocfilehash: e28fdeae809cadf78017dd2920e3f1a9484ec8a3
 > [!NOTE]  
 >  컬렉션 멤버를 확인하려면 Configuration Manager 콘솔을 새로 고치거나 다시 로드해야 합니다. 그러나 첫 번째 예약된 업데이트 후 또는 컬렉션에 대해 **멤버 자격 업데이트** 를 수동으로 선택할 때까지는 멤버가 컬렉션에 표시되지 않습니다. 컬렉션 업데이트를 완료하는 데 몇 분 정도 걸릴 수 있습니다.  
 
-##  <a name="a-namebkmk3a-to-import-a-collection"></a><a name="BKMK_3"></a> 컬렉션을 가져오려면  
+##  <a name="BKMK_3"></a> 컬렉션을 가져오려면  
 
 1.  Configuration Manager 콘솔에서 **자산 및 준수** > **사용자 컬렉션** 또는 **장치 컬렉션**을 선택합니다.  
 
@@ -206,9 +208,4 @@ ms.openlocfilehash: e28fdeae809cadf78017dd2920e3f1a9484ec8a3
     >  가져올 파일은 이와 동일한 버전의 Configuration Manager를 실행하는 사이트에서 내보냈어야 합니다. 컬렉션을 내보내는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 컬렉션을 관리하는 방법](../../../../core/clients/manage/collections/manage-collections.md)을 참조하세요.  
 
 6.  컬렉션을 가져오는 마법사를 완료합니다. 새 컬렉션이 **자산 및 준수** 작업 영역의 **사용자 컬렉션** 또는 **장치 컬렉션** 노드에 표시됩니다. 새로 가져온 컬렉션에 대한 컬렉션 멤버를 확인하려면 Configuration Manager 콘솔을 새로 고치거나 다시 로드합니다.  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

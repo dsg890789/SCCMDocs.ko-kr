@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: 8f3086adac2c6886316a2fd65b3d471acac9077c
+ms.contentlocale: ko-kr
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -41,9 +43,4 @@ System Center Configuration Manager에서 컬렉션에 대한 다음 모범 사�
 
 ## <a name="make-sure-that-maintenance-windows-are-large-enough-to-deploy-critical-software-updates"></a>유지 관리 기간을 중요 소프트웨어 업데이트를 충분히 배포할 수 있을 만큼 설정합니다.  
  Configuration Manager가 장치에 소프트웨어를 설치할 수 있는 횟수를 제한하도록 장치 컬렉션에 대한 유지 관리 기간을 구성할 수 있습니다. 유지 관리 기간을 너무 짧게 구성하면 클라이언트는 중요 소프트웨어 업데이트를 설치하지 못할 수도 있으며, 이 경우 클라이언트는 해당 소프트웨어 업데이트로 방지할 수 있었던 공격에 취약해집니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

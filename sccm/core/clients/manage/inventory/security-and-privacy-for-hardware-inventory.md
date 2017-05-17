@@ -15,9 +15,11 @@ caps.latest.revision: 6
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: b12d4a1592ce4601fa1f0a6cd2a539a3664c0c37
+ms.contentlocale: ko-kr
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -27,7 +29,7 @@ ms.openlocfilehash: b12d4a1592ce4601fa1f0a6cd2a539a3664c0c37
 
 이 항목에는 System Center Configuration Manager에서 하드웨어 인벤토리에 대한 보안 및 개인 정보가 포함되어 있습니다.  
 
-##  <a name="a-namebkmksecurityhardwareinventorya-security-best-practices-for-hardware-inventory"></a><a name="BKMK_Security_HardwareInventory"></a> 하드웨어 인벤토리에 대한 보안 모범 사례  
+##  <a name="BKMK_Security_HardwareInventory"></a> 하드웨어 인벤토리에 대한 보안 모범 사례  
  클라이언트에서 하드웨어 인벤토리 데이터를 수집하는 경우에 대해 다음 보안 모범 사례를 따르세요.  
 
 |보안 모범 사례|추가 정보|  
@@ -48,7 +50,7 @@ ms.openlocfilehash: b12d4a1592ce4601fa1f0a6cd2a539a3664c0c37
 
  하드웨어 인벤토리는 클라이언트 설정으로 기본적으로 사용하도록 설정되어 있습니다.  
 
-##  <a name="a-namebkmkprivacyhardwareinventorya-privacy-information-for-hardware-inventory"></a><a name="BKMK_Privacy_HardwareInventory"></a> 하드웨어 인벤토리에 대한 개인 정보  
+##  <a name="BKMK_Privacy_HardwareInventory"></a> 하드웨어 인벤토리에 대한 개인 정보  
  하드웨어 인벤토리를 사용하면 Configuration Manager 클라이언트의 레지스트리 및 WMI에 저장된 정보를 검색할 수 있습니다. 소프트웨어 인벤토리를 사용하면 지정된 형식의 파일을 검색하거나 지정된 파일을 클라이언트에서 수집할 수 있습니다. Asset Intelligence는 하드웨어 및 소프트웨어 인벤토리를 확장하고 새 라이선스 관리 기능을 추가하여 인벤토리 기능을 향상시킵니다.  
 
  하드웨어 인벤토리는 기본적으로 클라이언트 설정으로 사용하도록 설정되어 있으며 선택하는 옵션에 따라 수집되는 WMI 정보가 결정됩니다. 소프트웨어 인벤토리는 기본적으로 사용하도록 설정되어 있지만 파일은 기본적으로 수집되지 않습니다. 사용하도록 설정할 하드웨어 인벤토리 보고 클래스를 선택할 수 있지만 Asset Intelligence 데이터 컬렉션은 자동으로 사용하도록 설정됩니다.  
@@ -56,9 +58,4 @@ ms.openlocfilehash: b12d4a1592ce4601fa1f0a6cd2a539a3664c0c37
  인벤토리 정보는 Microsoft로 전송되지 않습니다. 인벤토리 정보는 Configuration Manager 데이터베이스에 저장됩니다. 클라이언트가 HTTPS를 사용하여 관리 지점에 연결하는 경우 사이트에 보내는 인벤토리 데이터는 암호화되어 전송됩니다. 클라이언트가 HTTP를 사용하여 관리 지점에 연결되는 경우 인벤토리 암호화를 사용하도록 설정하는 옵션이 있습니다. 인벤토리 데이터는 데이터베이스에 암호화된 형식으로 저장되지 않습니다. 정보는 90일 간격으로 사이트 유지 관리 작업인 **오래된 인벤토리 기록 삭제** 또는 **오래된 수집 파일 삭제** 에서 삭제될 때까지 데이터베이스에 보존됩니다. 삭제 간격은 필요에 따라 구성할 수 있습니다.  
 
  하드웨어 인벤토리, 소프트웨어 인벤토리, 파일 컬렉션 또는 Asset Intelligence 데이터 컬렉션을 구성하기 전에 개인 정보 요구 사항을 고려해야 합니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

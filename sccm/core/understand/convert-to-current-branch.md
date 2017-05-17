@@ -15,9 +15,11 @@ caps.latest.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 60631bc0346bd78d704e7129bb755af504c59b1b
 ms.openlocfilehash: 6e7edc85630d22c5bbba1ff66bd1199903db76db
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 ---
 
@@ -54,9 +56,4 @@ ms.openlocfilehash: 6e7edc85630d22c5bbba1ff66bd1199903db76db
  2. 옵션을 선택하여 현재 분기로 변환한 다음 **적용**을 선택합니다.  
 
 사이트가 현재 분기로 변환되면, 이전에 사용할 수 없었던 기능과 특성을 사용할 수 있게 됩니다.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

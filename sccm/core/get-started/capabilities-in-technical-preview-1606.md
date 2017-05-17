@@ -15,9 +15,11 @@ caps.latest.revision: 31
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
 ms.openlocfilehash: a84d3ab55066d26c3199ea374d8beb472d66f43f
+ms.contentlocale: ko-kr
+ms.lasthandoff: 01/24/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1606-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1606의 기능
@@ -36,7 +38,7 @@ ms.openlocfilehash: a84d3ab55066d26c3199ea374d8beb472d66f43f
 
 **다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.**  
 
-## <a name="a-namedmpcategorya-automatically-categorize-devices-into-collections"></a><a name="dmp_category"></a> 컬렉션으로 장치 자동 분류
+## <a name="dmp_category"></a> 컬렉션으로 장치 자동 분류
 Microsoft Intune에서 Configuration Manager를 사용하는 경우 장치 컬렉션에 장치를 자동으로 배치하는 데 사용할 수 있는 장치 범주를 만들 수 있습니다. 그런 다음 사용자는 Intune에 장치를 등록할 때 장치 범주를 선택해야 합니다. 또한 Configuration Manager 콘솔에서 장치의 범주를 변경할 수 있습니다.
 
 **중요:** 이 기능은 Microsoft Intune의 **2016년 6월** 릴리스에서 작동합니다. 이러한 절차를 시도하기 전에 이 릴리스로 업데이트했는지 확인합니다.
@@ -59,7 +61,7 @@ Microsoft Intune에서 Configuration Manager를 사용하는 경우 장치 컬�
 2.  **장치** 목록에서 장치를 선택한 다음 **홈** 탭의 **장치** 그룹에서 **범주 변경**을 클릭합니다.
 3.  **장치 범주 편집** 대화 상자에서 이 장치에 적용할 범주를 선택한 다음 **확인**을 클릭합니다.
 
-## <a name="a-namedmpgracea-enforcement-grace-period-for-required-application-and-software-update-deployments"></a><a name="dmp_grace"></a> 필수 응용 프로그램 및 소프트웨어 업데이트 배포를 위한 유예 기간 적용
+## <a name="dmp_grace"></a> 필수 응용 프로그램 및 소프트웨어 업데이트 배포를 위한 유예 기간 적용
 
 간혹 구성한 마감일 이후에도 필수 응용 프로그램 배포 또는 소프트웨어 업데이트를 설치할 수 있는 시간을 사용자에게 더 제공하고 싶을 경우가 있습니다. 컴퓨터가 오랫동안 꺼져 있었거나 많은 응용 프로그램 또는 업데이트 배포를 설치해야 할 때 이런 경우가 필요할 수 있습니다.
 예를 들어 최종 사용자가 휴가에서 막 돌아온 경우 지연된 응용 프로그램 배포를 설치하는 데 너무 오래 기다려야 할 수 있습니다.
@@ -76,7 +78,7 @@ Microsoft Intune에서 Configuration Manager를 사용하는 경우 장치 컬�
 유예 기간 적용을 구성하고 확인란을 선택하면 응용 프로그램 설치 마감일에 도달한 후 사용자가 해당 유예 기간에 구성한 첫 번째 업무 외 시간에서 응용 프로그램이 설치됩니다. 하지만 여전히 사용자가 소프트웨어 센터를 열고 언제든지 원하는 응용 프로그램을 설치할 수 있습니다. 유예 기간이 만료되면 지연 배포에 대한 일반적인 동작이 적용됩니다.
 소프트웨어 업데이트 배포 마법사, 자동 배포 규칙 마법사 및 속성 페이지에 비슷한 옵션이 추가되었습니다.
 
-##  <a name="a-namedmpdevgausing-configuration-manager-as-a-managed-installer-with-device-guard"></a><a name="dmp_devg"></a> Device Guard로 Configuration Manager를 관리되는 설치 프로그램으로 사용
+##  <a name="dmp_devg"></a> Device Guard로 Configuration Manager를 관리되는 설치 프로그램으로 사용
 
 Device Guard는 하드웨어 및 소프트웨어 기능을 사용하여 장치에서 실행이 허용되는 사항을 엄격하게 제어하는 Windows 10 기능입니다.
 
@@ -101,7 +103,7 @@ Configuration Manager에서 Device Guard를 사용하는 방법에 대한 추가
 - [Device Guard 인증 및 규정 준수](https://technet.microsoft.com/itpro/windows/keep-secure/device-guard-certification-and-compliance)
 - [Device Guard 배포 가이드](https://technet.microsoft.com/itpro/windows/keep-secure/device-guard-deployment-guide)
 
- ##  <a name="a-namedmponprema-multiple-device-management-points-for-on-premises-mobile-device-management"></a><a name="dmp_onprem"></a> 온-프레미스 모바일 장치 관리에 대한 여러 장치 관리 지점  
+ ##  <a name="dmp_onprem"></a> 온-프레미스 모바일 장치 관리에 대한 여러 장치 관리 지점  
  Technical Preview 1606에서 온\-프레미스 MDM(모바일 장치 관리)은 둘 이상의 장치 관리 지점을 사용할 수 있도록 등록된 장치를 자동으로 구성하는 Windows 10 1주년 업데이트의 새로운 기능을 지원합니다. 이 기능을 통해 장치는 사용 중인 장치 관리 지점을 사용할 수 없게 되면 다른 장치 관리 지점으로 대체할 수 있습니다. 이 기능은 Windows 10 1주년 업데이트가 설치된 PC에서만 작동합니다.  
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기  
@@ -112,7 +114,7 @@ Configuration Manager에서 Device Guard를 사용하는 방법에 대한 추가
 
 사이트 준비 방법 및 온\-프레미스 모바일 장치 관리를 위한 장치 등록 방법은 [System Center Configuration Manager의 온-프레미스 인프라로 모바일 장치 관리](../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)를 참조하세요.  
 
-## <a name="a-namecloudproxyacloud-proxy-service-for-managing-clients-on-the-internet"></a><a name="cloud_proxy"></a>인터넷상의 클라이언트를 관리하기 위한 클라우드 프록시 서비스
+## <a name="cloud_proxy"></a>인터넷상의 클라이언트를 관리하기 위한 클라우드 프록시 서비스
 
 클라우드 프록시 서비스는 인터넷에서 Configuration Manager 클라이언트를 관리할 수 있는 간단한 방법을 제공합니다. Microsoft Azure에 배포되고 Azure 구독이 필요한 서비스는 클라우드 프록시 연결점이라는 새 역할을 사용하여 온-프레미스 Configuration Manager 인프라에 연결합니다. 완전히 배포되고 구성된 클라이언트는 내부 개인 네트워크 또는 인터넷에 연결되었는지 여부에 관계없이 온-프레미스 Configuration Manager 사이트 시스템 역할에 액세스할 수 있습니다.
 
@@ -217,7 +219,7 @@ Azure 관리 인증서는 Configuration Manager에서 Azure API에 액세스하�
 
 클라이언트에서 클라우드 프록시 서비스에 대한 새 위치 정보를 얻은 다음 더 이상 내부 개인 네트워크상에는 없지만 인터넷에 액세스된 클라이언트의 상태를 확인합니다. **관리 > 클라우드 서비스 > 클라우드 프록시 서비스**로 이동하고, 목록 창에서 서비스를 선택하고, 세부 정보 창에서 트래픽 정보를 확인하여 클라우드 프록시 서비스의 트래픽을 모니터링할 수도 있습니다.   
 
-## <a name="a-namemanageo365amanage-the-office-365-client-agent-in-configuration-manager"></a><a name="manage_o365"></a>Configuration Manager에서 Office 365 클라이언트 에이전트 관리  
+## <a name="manage_o365"></a>Configuration Manager에서 Office 365 클라이언트 에이전트 관리  
 
 Technical Preview 1606부터 Configuration Manager 클라이언트 에이전트 설정을 사용하여 그룹 정책 대신 Office 365 클라이언트가 Configuration Manager의 업데이트를 받을 수 있도록 합니다. 이 설정을 구성하고 Office 365 업데이트를 배포한 후 Configuration Manager 클라이언트 에이전트는 Office 365 클라이언트 에이전트와 통신하여 배포 지점에서 Office 365 업데이트를 다운로드하고 설치합니다. Configuration Manager는 또한 클라이언트 에이전트 설정의 인벤토리를 사용합니다.
 
@@ -229,13 +231,13 @@ Technical Preview 1606부터 Configuration Manager 클라이언트 에이전트 
 3. **소프트웨어 업데이트**를 클릭하고 **Office 365 클라이언트 에이전트 관리 사용** 설정에 대해 **예**를 선택합니다.  
 
 
-## <a name="a-nameosdpreservedriveletterathe-osdpreservedriveletter-task-sequence-variable-has-been-deprecated"></a><a name="osdpreservedriveletter"></a>OSDPreserveDriveLetter 작업 순서 변수는 사용되지 않음
+## <a name="osdpreservedriveletter"></a>OSDPreserveDriveLetter 작업 순서 변수는 사용되지 않음
 SDPreserveDriveLetter 작업 순서 변수는 작업 순서에서 운영 체제 이미지를 대상 컴퓨터에 적용할 때 해당 이미지의 WIM 파일에서 캡처된 드라이브 문자를 사용할지 결정합니다.
 - Technical Preview 1606에서는 이 작업 순서 변수가 사용되지 않았습니다.
 
 기본적으로 운영 체제 배포 시 Windows 설치 프로그램이 이제 사용하기에 가장 적합한 드라이브 문자(일반적으로 C:)를 결정합니다. 다른 드라이브를 사용하도록 지정하려면 운영 체제 적용 작업 순서 단계에서 위치를 변경할 수 있습니다. **이 운영 체제를 적용할 위치를 선택하십시오.** 설정으로 이동하여 **특정 논리 드라이브 문자**를 선택하고 사용하려는 드라이브를 선택합니다. 대상 컴퓨터에서 선택한 문자로 할당된 드라이브여야 합니다. 
 
-## <a name="a-nameupdatesandservicingachanges-for-the-updates-and-servicing-node"></a><a name="updatesandservicing"></a>업데이트 및 서비스 노드의 변경 내용
+## <a name="updatesandservicing"></a>업데이트 및 서비스 노드의 변경 내용
 Technical Preview 1606에서는 Configuration Manager 콘솔에서 업데이트 및 서비스에 적용되는 몇 가지 변경 사항이 도입되었습니다.
 - **노드 이름 변경:**
 
@@ -264,9 +266,4 @@ Technical Preview 1606에서는 Configuration Manager 콘솔에서 업데이트 
 -   **이름이 변경된 사전 프로덕션 옵션:**
 
     업데이트 및 서비스 노드에서 **클라이언트 옵션**이라는 이름의 단추가 이제 **사전 프로덕션 클라이언트 수준 올리기**로 변경되었습니다.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

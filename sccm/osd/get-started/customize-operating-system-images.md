@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
 ms.openlocfilehash: 485cb3ca4988f983c1ec71b6c8daf136571bf0ea
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -28,10 +30,10 @@ ms.openlocfilehash: 485cb3ca4988f983c1ec71b6c8daf136571bf0ea
 
 System Center Configuration Manager의 운영 체제 이미지는 WIM 파일이며 컴퓨터에 운영 체제를 성공적으로 설치하고 구성하는 데 필요한 참조 파일 및 폴더의 압축된 컬렉션을 나타냅니다. 사용자 지정 운영 체제 이미지는 필요한 모든 운영 체제 파일, 지원 파일, 소프트웨어 업데이트, 도구 및 기타 소프트웨어 앱을 사용하여 구성된 참조 컴퓨터에서 만들어지고 캡처됩니다. 참조 컴퓨터를 수동으로 구성하는 범위는 사용자가 결정합니다. 빌드를 사용하여 참조 컴퓨터의 구성을 완전히 자동화하고 작업 순서를 캡처하거나, 참조 컴퓨터의 특정 부분을 수동으로 구성한 다음 작업 순서를 사용하여 나머지를 자동화하거나, 작업 순서를 사용하지 않고 수동으로 참조 컴퓨터를 구성할 수 있습니다. 다음 섹션은 운영 체제를 사용자 지정하는 데 사용됩니다.
 
-##  <a name="a-namebkmkpreparereferencecomputera-prepare-for-the--reference-computer"></a><a name="BKMK_PrepareReferenceComputer"></a> 참조 컴퓨터 준비  
+##  <a name="BKMK_PrepareReferenceComputer"></a> 참조 컴퓨터 준비  
  참조 컴퓨터에서 운영 체제 이미지를 캡처하기 전에 고려할 사항이 몇 가지 있습니다.  
 
-###  <a name="a-namebkmkrefcomputerdecidea-decide-between-an-automated-or-manual-configuration"></a><a name="BKMK_RefComputerDecide"></a> 자동 구성 또는 수동 구성을 사용할지 결정  
+###  <a name="BKMK_RefComputerDecide"></a> 자동 구성 또는 수동 구성을 사용할지 결정  
  다음에는 참조 컴퓨터의 자동화된 구성과 수동 구성의 장단점이 나와 있습니다.  
 
 #### <a name="automated-configuration"></a>자동화된 구성  
@@ -66,7 +68,7 @@ System Center Configuration Manager의 운영 체제 이미지는 WIM 파일이�
 
 -   프로세스 내내 적극적으로 개입할 사람이 필요합니다.  
 
-###  <a name="a-namebkmkrefcomputerconsiderationsa-considerations-for-the-reference-computer"></a><a name="BKMK_RefComputerConsiderations"></a> 참조 컴퓨터에 대한 고려 사항  
+###  <a name="BKMK_RefComputerConsiderations"></a> 참조 컴퓨터에 대한 고려 사항  
  다음에는 참조 컴퓨터를 구성할 때 고려할 기본 항목이 나와 있습니다.  
 
 -   **배포할 운영 체제**  
@@ -110,7 +112,7 @@ System Center Configuration Manager의 운영 체제 이미지는 WIM 파일이�
 
      참조 컴퓨터에서 운영 체제 이미지를 캡처할 때 포함할 바탕 화면 사용자 지정 속성으로 참조 컴퓨터를 구성할 수 있습니다. 바탕 화면 속성에는 배경 무늬, 조직 브랜딩 및 표준 기본 사용자 프로필이 있습니다.  
 
-##  <a name="a-namebkmkmanuallybuildreferencea-manually-build-a-reference-computer"></a><a name="BKMK_ManuallyBuildReference"></a> 수동으로 참조 컴퓨터 만들기  
+##  <a name="BKMK_ManuallyBuildReference"></a> 수동으로 참조 컴퓨터 만들기  
  수동으로 참조 컴퓨터를 만들려면 다음 절차를 따르세요.  
 
 > [!NOTE]  
@@ -133,13 +135,8 @@ System Center Configuration Manager의 운영 체제 이미지는 WIM 파일이�
 
  참조 컴퓨터가 준비되면 참조 컴퓨터에서 운영 체제 이미지를 캡처하는 작업 순서를 사용합니다.  자세한 내용은 [기존 참조 컴퓨터에서 운영 체제 이미지 캡처](../deploy-use/create-a-task-sequence-to-capture-an-operating-system.md#BKMK_CaptureExistingRefComputer)를 참조하세요.  
 
-##  <a name="a-namebkmkusetstobuildreferencea-use-a-task-sequence-to-build-a-reference-computer"></a><a name="BKMK_UseTSToBuildReference"></a> 작업 순서를 사용하여 참조 컴퓨터 만들기  
+##  <a name="BKMK_UseTSToBuildReference"></a> 작업 순서를 사용하여 참조 컴퓨터 만들기  
  운영 체제, 드라이버, 응용 프로그램 등에 배포하는 작업 순서를 사용하여 참조 컴퓨터를 만드는 프로세스를 자동화할 수 있습니다.  참조 컴퓨터를 빌드하고 참조 컴퓨터에서 운영 체제 이미지를 캡처하려면 다음 단계를 따르세요.  
 
 -   참조 컴퓨터에서 운영 체제 이미지를 빌드하고 캡처하는 작업 순서를 배포합니다.  자세한 단계는 [작업 순서를 사용하여 참조 컴퓨터 만들기 및 캡처](../deploy-use/create-a-task-sequence-to-capture-an-operating-system.md#BKMK_BuildCaptureTS)를 참조하세요.  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

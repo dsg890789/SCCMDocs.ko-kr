@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 05c27c7aa36e0b4236867766dab36125c31467b3
 ms.openlocfilehash: deed112cca011b3b410c1197b7abf0f36a864f3c
+ms.contentlocale: ko-kr
+ms.lasthandoff: 01/03/2017
 
 
 ---
@@ -48,9 +50,4 @@ ms.openlocfilehash: deed112cca011b3b410c1197b7abf0f36a864f3c
 7.  필요한 다른 [하드웨어 인벤토리 클라이언트 설정](../../../../core/clients/deploy/about-client-settings.md#hardware-inventory)을 구성합니다.  
 
 클라이언트 장치가 다음번에 클라이언트 정책을 다운로드할 때 이러한 설정으로 구성됩니다. 단일 클라이언트에 대한 정책 검색을 시작하려면 [System Center Configuration Manager에서 클라이언트를 관리하는 방법](../../../../core/clients/manage/manage-clients.md)을 참조하세요.  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

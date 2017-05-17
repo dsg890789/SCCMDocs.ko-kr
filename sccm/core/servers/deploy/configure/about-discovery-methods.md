@@ -14,9 +14,11 @@ caps.latest.revision: 8
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 81d7516b814d2db74d4d857871071c8911755754
 ms.openlocfilehash: 6e53f501281e31f2b7df54b9740eac970f108257
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="about-discovery-methods-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 검색 방법 정보
@@ -25,7 +27,7 @@ ms.openlocfilehash: 6e53f501281e31f2b7df54b9740eac970f108257
 
 각 System Center Configuration Manager 검색 방법을 통해 네트워크에서 다양한 장치를 찾거나 Active Directory에서 장치 및 사용자를 찾을 수 있습니다. 검색 방법을 효율적으로 사용하려면 사용 가능한 구성 및 제한 사항을 이해해야 합니다.  
 
-##  <a name="a-namebkmkaboutforesta-active-directory-forest-discovery"></a><a name="bkmk_aboutForest"></a> Active Directory 포리스트 검색  
+##  <a name="bkmk_aboutForest"></a> Active Directory 포리스트 검색  
  **구성 가능 여부:** 예  
 
  **기본값으로 사용 가능:** 아니요  
@@ -78,7 +80,7 @@ Active Directory 포리스트 검색 작업은 다음 로그에 기록됩니다.
 
 이 검색 방법을 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 검색 방법 구성](../../../../core/servers/deploy/configure/configure-discovery-methods.md)을 참조하세요.  
 
-##  <a name="a-namebkmkaboutgroupa-active-directory-group-discovery"></a><a name="bkmk_aboutGroup"></a> Active Directory 그룹 검색  
+##  <a name="bkmk_aboutGroup"></a> Active Directory 그룹 검색  
 **구성 가능 여부:** 예  
 
 **기본값으로 사용 가능:** 아니요  
@@ -120,7 +122,7 @@ Active Directory 그룹 검색 작업은 사이트 서버에 있는 **&lt;Instal
 
 이 검색 방법을 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 검색 방법 구성](../../../../core/servers/deploy/configure/configure-discovery-methods.md)을 참조하세요.  
 
-##  <a name="a-namebkmkaboutsystema-active-directory-system-discovery"></a><a name="bkmk_aboutSystem"></a> Active Directory 시스템 검색  
+##  <a name="bkmk_aboutSystem"></a> Active Directory 시스템 검색  
 **구성 가능 여부:** 예  
 
 **기본값으로 사용 가능:** 아니요  
@@ -158,7 +160,7 @@ Active Directory 시스템 검색 작업은 사이트 서버에 있는 **&lt;Ins
 
 이 검색 방법을 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 검색 방법 구성](../../../../core/servers/deploy/configure/configure-discovery-methods.md)을 참조하세요.  
 
-##  <a name="a-namebkmkaboutusera-active-directory-user-discovery"></a><a name="bkmk_aboutUser"></a> Active Directory 사용자 검색  
+##  <a name="bkmk_aboutUser"></a> Active Directory 사용자 검색  
 **구성 가능 여부:** 예  
 
 **기본값으로 사용 가능:** 아니요  
@@ -188,7 +190,7 @@ Active Directory 사용자 검색 작업은 사이트 서버에 있는 **&lt;Ins
 
 이 검색 방법을 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 검색 방법 구성](../../../../core/servers/deploy/configure/configure-discovery-methods.md)을 참조하세요.  
 
-##  <a name="a-namebkmkaboutheartbeata-heartbeat-discovery"></a><a name="bkmk_aboutHeartbeat"></a> 하트비트 검색  
+##  <a name="bkmk_aboutHeartbeat"></a> 하트비트 검색  
 **구성 가능 여부:** 예  
 
 **기본값으로 사용 가능:** 예  
@@ -224,7 +226,7 @@ Active Directory 사용자 검색 작업은 사이트 서버에 있는 **&lt;Ins
 
 이 검색 방법을 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 검색 방법 구성](../../../../core/servers/deploy/configure/configure-discovery-methods.md)을 참조하세요.  
 
-##  <a name="a-namebkmkaboutnetworka-network-discovery"></a><a name="bkmk_aboutNetwork"></a> 네트워크 검색  
+##  <a name="bkmk_aboutNetwork"></a> 네트워크 검색  
 **구성 가능 여부:** 예  
 
 **기본값으로 사용 가능:** 아니요  
@@ -268,7 +270,7 @@ Active Directory 사용자 검색 작업은 사이트 서버에 있는 **&lt;Ins
 > [!NOTE]  
 >  복잡한 네트워크와 낮은 대역폭으로 구성된 연결로 인해 네트워크 검색의 실행 속도가 느려지고 상당한 네트워크 트래픽이 생성될 수도 있습니다. 네트워크 검색은 검색하려는 리소스를 다른 검색 방법으로는 찾을 수 없는 경우에만 실행하는 것이 좋습니다. 예를 들어 작업 그룹 컴퓨터를 검색해야 할 경우 네트워크 검색을 사용하십시오. 다른 검색 방법으로는 작업 그룹 컴퓨터를 검색할 수 없습니다.  
 
-###  <a name="a-namebkmknetdisclevelsa-levels-of-network-discovery"></a><a name="BKMK_NetDiscLevels"></a> 네트워크 검색 수준  
+###  <a name="BKMK_NetDiscLevels"></a> 네트워크 검색 수준  
 네트워크 검색을 구성할 경우 세 가지 검색 수준 중 하나를 지정해야 합니다.  
 
 |검색 수준|세부 정보|  
@@ -281,7 +283,7 @@ Active Directory 사용자 검색 작업은 사이트 서버에 있는 **&lt;Ins
 
  예를 들어 네트워크 검색을 처음 사용할 때 토폴로지 수준만으로 시작하여 네트워크 인프라를 확인할 수도 있습니다. 그런 다음 개체 및 해당 장치 운영 체제를 검색하도록 네트워크 검색을 다시 구성하면 됩니다. 네트워크 검색을 특정 네트워크 세그먼트 범위로 제한하는 설정을 구성할 수도 있습니다. 이 방법을 사용하면 필요한 네트워크 위치에서 개체를 검색하여 불필요한 네트워크 트래픽을 방지할 수 있고, 가장자리 라우터나 네트워크 외부에서 개체를 검색할 수도 있습니다.  
 
-###  <a name="a-namebkmknetdiscoptionsa-network-discovery-options"></a><a name="BKMK_NetDiscOptions"></a> 네트워크 검색 옵션  
+###  <a name="BKMK_NetDiscOptions"></a> 네트워크 검색 옵션  
 네트워크 검색에서 IP 주소 지정 가능 장치를 검색하도록 설정하려면 장치 쿼리 방법을 지정하는 다음 옵션을 하나 이상 구성해야 합니다.  
 
 > [!NOTE]  
@@ -329,7 +331,7 @@ Active Directory 사용자 검색 작업은 사이트 서버에 있는 **&lt;Ins
 
 -   네트워크 검색에서 장치의 커뮤니티 이름을 사용하도록 구성해야 하며, 그렇지 않으면 장치는 SNMP 기반 쿼리를 거부합니다.  
 
-###  <a name="a-namebkmklimitnetdisca-limiting-network-discovery"></a><a name="BKMK_LimitNetDisc"></a> 네트워크 검색 제한  
+###  <a name="BKMK_LimitNetDisc"></a> 네트워크 검색 제한  
 네트워크 검색에서 네트워크 경계측에 있는 SNMP 장치를 쿼리할 경우 서브넷 관련 정보 및 현재 네트워크 외부에 있는 SNMP 장치에 관한 정보를 확인할 수 있습니다. 다음 정보를 사용하여 검색에서 통신할 수 있는 SNMP 장치를 구성하고 쿼리할 네트워크 세그먼트를 지정하면 네트워크 검색을 제한할 수 있습니다.  
 
 **서브넷:**  
@@ -374,12 +376,12 @@ Active Directory 사용자 검색 작업은 사이트 서버에 있는 **&lt;Ins
 > [!WARNING]  
 >  라우터 홉 수가 하나씩 늘어날 때마다 검색될 수 있는 리소스 수가 상당히 증가하며 네트워크 검색이 사용하는 네트워크 대역폭이 크게 증가할 수 있습니다.  
 
-##  <a name="a-namebkmkaboutservera-server-discovery"></a><a name="bkmk_aboutServer"></a> 서버 검색  
+##  <a name="bkmk_aboutServer"></a> 서버 검색  
 **구성 가능 여부:** 아니요  
 
 사용자 구성 가능 검색 방법 이외에도 Configuration Manager에서는 **서버 검색**(SMS_WINNT_SERVER_DISCOVERY_AGENT)이라는 프로세스를 사용합니다. 이 검색 방법은 관리 지점으로 구성된 컴퓨터와 같이 사이트 시스템인 컴퓨터에 대한 리소스 레코드를 만듭니다.  
 
-##  <a name="a-namebkmkshareda-common-features-of-active-directory-group-discovery-system-discovery-and-user-discovery"></a><a name="bkmk_shared"></a> Active Directory 그룹 검색, 시스템 검색 및 사용자 검색의 일반적인 기능  
+##  <a name="bkmk_shared"></a> Active Directory 그룹 검색, 시스템 검색 및 사용자 검색의 일반적인 기능  
 이 섹션에서는 다음 검색 방법의 일반적인 기능에 대한 정보를 제공합니다.  
 
 -   Active Directory 그룹 검색  
@@ -421,7 +423,7 @@ Active Directory 사용자 검색 작업은 사이트 서버에 있는 **&lt;Ins
 
 -   [사용자 지정된 Active Directory 특성 검색](#bkmk_customAD)  
 
-###  <a name="a-namebkmkdeltaa-delta-discovery"></a><a name="bkmk_delta"></a> 델타 검색  
+###  <a name="bkmk_delta"></a> 델타 검색  
 다음에 대해 사용할 수 있습니다.  
 
 -   Active Directory 그룹 검색  
@@ -450,7 +452,7 @@ Active Directory 사용자 검색 작업은 사이트 서버에 있는 **&lt;Ins
 
 델타 검색은 각 검색 방법에 대한 속성의 **폴링 일정** 탭에서 구성합니다.  
 
-###  <a name="a-namebkmkstalelogona-filter-stale-computer-records-by-domain-logon"></a><a name="bkmk_stalelogon"></a> 도메인 로그온으로 오래된 컴퓨터 레코드 필터링  
+###  <a name="bkmk_stalelogon"></a> 도메인 로그온으로 오래된 컴퓨터 레코드 필터링  
 다음에 대해 사용할 수 있습니다.  
 
 -   Active Directory 그룹 검색  
@@ -472,7 +474,7 @@ Active Directory 사용자 검색 작업은 사이트 서버에 있는 **&lt;Ins
 > [!WARNING]  
 >  이 필터 및 **컴퓨터 암호로 오래된 레코드 필터**를 구성하는 경우 각 필터의 조건을 충족하는 컴퓨터는 검색에서 제외됩니다.  
 
-###  <a name="a-namebkmkstalepassworda-filter-stale-records-by-computer-password"></a><a name="bkmk_stalepassword"></a> 컴퓨터 암호로 오래된 레코드 필터링  
+###  <a name="bkmk_stalepassword"></a> 컴퓨터 암호로 오래된 레코드 필터링  
 다음에 대해 사용할 수 있습니다.  
 
 -   Active Directory 그룹 검색  
@@ -492,7 +494,7 @@ Active Directory 사용자 검색 작업은 사이트 서버에 있는 **&lt;Ins
 > [!WARNING]  
 >  이 필터 및 **도메인 로그온으로 오래된 레코드 필터**를 구성할 때 각 필터의 조건을 충족하는 컴퓨터는 검색에서 제외됩니다.  
 
-###  <a name="a-namebkmkcustomada-search-customized-active-directory-attributes"></a><a name="bkmk_customAD"></a> 사용자 지정된 Active Directory 특성 검색  
+###  <a name="bkmk_customAD"></a> 사용자 지정된 Active Directory 특성 검색  
  다음에 대해 사용할 수 있습니다.  
 
 -   Active Directory 시스템 검색  
@@ -502,9 +504,4 @@ Active Directory 사용자 검색 작업은 사이트 서버에 있는 **&lt;Ins
 각 검색 방법은 검색할 수 있는 고유한 Active Directory 특성 목록을 지원합니다.  
 
 사용자 지정 특성 목록은 **Active Directory 시스템 검색 속성** 및 **Active Directory 사용자 검색 속성** 대화 상자의 **Active Directory 특성** 탭에서 보고 구성할 수 있습니다.  
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

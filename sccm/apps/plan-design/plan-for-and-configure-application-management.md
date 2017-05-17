@@ -15,9 +15,11 @@ caps.latest.revision: 13
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 1c43c4968f93985515249ddb117269f8ed61302a
 ms.openlocfilehash: 46cc3fcfd9516cf1c124e24b50d0aac0cb0025dc
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -225,9 +227,4 @@ ms.openlocfilehash: 46cc3fcfd9516cf1c124e24b50d0aac0cb0025dc
 
 > [!WARNING]  
 >  응용 프로그램 카탈로그 사이트 시스템 역할을 설치한 후에 소프트웨어 센터에서 **응용 프로그램 카탈로그에서 다른 소프트웨어 찾기** 링크를 선택하자마자 바로 응용 프로그램 카탈로그가 표시되지는 않습니다. 응용 프로그램 카탈로그 사이트 시스템 역할을 설치하고 나서 최대 25시간 후나 클라이언트에서 다음에 해당 클라이언트 정책을 다운로드한 후에야 소프트웨어 센터에서 응용 프로그램 카탈로그를 사용할 수 있게 됩니다.  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

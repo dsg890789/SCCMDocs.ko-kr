@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
 ms.openlocfilehash: 5682cacb43af5bf9248446f1c35b08f137bdae9d
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -90,9 +92,4 @@ ms.openlocfilehash: 5682cacb43af5bf9248446f1c35b08f137bdae9d
  이 배포에 대한 준수 통계를 간단히 살펴보려면 **모니터링** 작업 영역에서 **배포**를 클릭합니다. 화면 맨 아래에 **준수 통계** 차트가 표시됩니다.  
 
  구성 기준을 모니터링하는 방법에 대한 자세한 내용은 [Monitor compliance settings](../../compliance/deploy-use/monitor-compliance-settings.md)(준수 설정 모니터링)를 참조하세요.  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

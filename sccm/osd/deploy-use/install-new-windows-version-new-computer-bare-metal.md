@@ -15,9 +15,11 @@ caps.latest.revision: 8
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
 ms.openlocfilehash: 584dad7d8b05a2da9f7a66b73028ae99ff1a594f
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -29,13 +31,13 @@ ms.openlocfilehash: 584dad7d8b05a2da9f7a66b73028ae99ff1a594f
 
 다음 섹션을 사용하여 새 버전의 Windows로 기존 컴퓨터를 새로 고치세요.  
 
-##  <a name="a-namebkmkplana-plan"></a><a name="BKMK_Plan"></a> 계획  
+##  <a name="BKMK_Plan"></a> 계획  
 
 -   **인프라 요구 사항 계획 및 구현**  
 
      Windows ADK, WDS(Windows 배포 서비스), 지원되는 하드 디스크 구성 등 운영 체제를 배포하기 전에 준비해야 하는 몇 가지 인프라 요구 사항이 있습니다. 자세한 내용은 [운영 체제 배포를 위한 인프라 요구 사항](../plan-design/infrastructure-requirements-for-operating-system-deployment.md)을 참조하세요.
 
-##  <a name="a-namebkmkconfigurea-configure"></a><a name="BKMK_Configure"></a> 구성  
+##  <a name="BKMK_Configure"></a> 구성  
 
 1.  **부팅 이미지 준비**  
 
@@ -59,7 +61,7 @@ ms.openlocfilehash: 584dad7d8b05a2da9f7a66b73028ae99ff1a594f
 
      작업 순서를 사용하여 네트워크를 통한 운영 체제 설치를 자동화할 수 있습니다. [운영 체제를 설치하는 작업 순서 만들기](create-a-task-sequence-to-install-an-operating-system.md)의 단계를 수행하여 운영 체제를 배포하는 작업 순서를 만듭니다. 선택한 배포 방법에 따라 작업 순서에 대한 추가적으로 고려해야 할 사항이 있을 수 있습니다.  
 
-##  <a name="a-namebkmkdeploya-deploy"></a><a name="BKMK_Deploy"></a> 배포  
+##  <a name="BKMK_Deploy"></a> 배포  
 
 -   다음 배포 방법 중 하나를 사용하여 운영 체제를 배포합니다.  
 
@@ -78,9 +80,4 @@ ms.openlocfilehash: 584dad7d8b05a2da9f7a66b73028ae99ff1a594f
 -   **작업 순서 배포 모니터링**  
 
      운영 체제를 설치하는 작업 순서 배포를 모니터링하려면 [운영 체제 배포 모니터링](monitor-operating-system-deployments.md)을 참조하세요.  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: dd102603356864add4084c6881c39bebcbd635f2
 ms.openlocfilehash: 9b97dedb5d2be0bd2e47260033e6e4361467dc4e
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -34,7 +36,7 @@ Windows 컴퓨터를 System Center Configuration Manager용 사이트 시스템 
 
 이 문서에서는 Configuration Manager 사이트 시스템 지원에 필요한 Windows 구성 유형에 대한 개요를 제공합니다. 특정 사이트 시스템 역할에 대한 구성 세부 정보는 [사이트 및 사이트 시스템 필수 조건](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)을 참조하세요.
 
-##  <a name="a-namebkmkwinfeaturesa-windows-features-and-roles"></a><a name="BKMK_WinFeatures"></a> Windows 기능 및 역할  
+##  <a name="BKMK_WinFeatures"></a> Windows 기능 및 역할  
  컴퓨터에서 Windows 기능 및 역할을 설정할 때는 해당 구성을 완료하기 위해 컴퓨터를 다시 부팅해야 할 수 있습니다. 따라서 Configuration Manager 사이트 또는 사이트 시스템 서버를 설치하기 전에 특정 사이트 시스템 역할을 호스트할 컴퓨터를 식별해 두는 것이 좋습니다.
 ### <a name="features"></a>기능  
  특정 사이트 시스템 서버에서는 다음 Windows 기능이 필요하며, 해당 컴퓨터에 사이트 시스템 역할을 설치하기 전에 이러한 기능을 설정해야 합니다.  
@@ -98,7 +100,7 @@ Windows 컴퓨터를 System Center Configuration Manager용 사이트 시스템 
 -   **Windows 배포 서비스**: 이 역할은 운영 체제 배포와 함께 사용됩니다.  
 -   **Windows Server Update Services**: 이 역할은 소프트웨어 업데이트를 배포할 때 필요합니다.  
 
-##  <a name="a-namebkmkiisfilteringa-iis-request-filtering-for-distribution-points"></a><a name="BKMK_IISFiltering"></a> 배포 지점에 대한 IIS 요청 필터링  
+##  <a name="BKMK_IISFiltering"></a> 배포 지점에 대한 IIS 요청 필터링  
  기본적으로 IIS는 요청 필터링을 사용하여 HTTP 또는 HTTPS 통신을 통한 여러 파일 이름 확장명 및 폴더 위치 액세스를 차단합니다. 이러한 액세스 차단으로 인해 클라이언트는 배포 지점에서 차단된 확장명이나 폴더 위치가 있는 패키지를 다운로드할 수 없습니다.  
 
  패키지 원본 파일에 요청 필터링 구성에 의해 IIS에서 차단된 확장명이 있는 경우에는 해당 확장명을 허용하도록 요청 필터링을 설정해야 합니다. 이렇게 하려면 배포 지점 컴퓨터의 IIS 관리자에서 [요청 필터링 기능을 편집](https://technet.microsoft.com/library/hh831621.aspx) 합니다.  
@@ -140,9 +142,4 @@ Windows 컴퓨터를 System Center Configuration Manager용 사이트 시스템 
  - PROPFIND
 
 요청 필터링 구성 방법에 대한 자세한 내용은 TechNet의 [IIS에서 요청 필터링 구성](https://technet.microsoft.com/library/hh831621.aspx#Verbs) 또는 관리 지점을 호스트하는 Windows Server 버전에 적용되는 유사한 문서를 참조하세요.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

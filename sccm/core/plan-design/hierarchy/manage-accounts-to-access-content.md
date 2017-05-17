@@ -15,9 +15,11 @@ caps.latest.revision: 4
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: e592a732259147ee71d404a68982c28e5138e243
 ms.openlocfilehash: 0e982d08d54af39b13f553fc531a200f921e94a6
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="manage-accounts-to-access-content-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 콘텐츠에 액세스하기 위한 계정 관리
@@ -34,7 +36,7 @@ System Center Configuration Manager에서 콘텐츠를 배포하기 전에 클�
 
 -   **멀티캐스트 연결 계정** 운영 체제 배포에 사용됩니다.  
 
-##  <a name="a-namebkmknaaa-network-access-account"></a><a name="bkmk_NAA"></a> 네트워크 액세스 계정  
+##  <a name="bkmk_NAA"></a> 네트워크 액세스 계정  
  클라이언트 컴퓨터에서는 배포 지점의 콘텐츠에 액세스하는 데 자체 로컬 컴퓨터 계정을 사용할 수 없는 경우에 네트워크 액세스 계정을 사용합니다. 그 예로 트러스트되지 않은 도메인의 작업 그룹 클라이언트 및 컴퓨터를 들 수 있습니다. 또한 이 계정은 운영 체제를 설치하는 컴퓨터에 아직 도메인의 컴퓨터 계정이 없을 때 운영 체제 배포 과정에서 사용될 수 있습니다.  
 
 -   클라이언트는 네트워크 액세스 계정을 네트워크의 리소스에 액세스하기 위해서만 사용합니다.  
@@ -66,7 +68,7 @@ System Center Configuration Manager에서 콘텐츠를 배포하기 전에 클�
 
 3.  **네트워크 액세스 계정** 탭을 선택합니다. 하나 이상의 계정을 설정하고 **확인**을 선택합니다.  
 
-##  <a name="a-namebkmkpaaa-package-access-accounts"></a><a name="bkmk_Paa"></a> 패키지 액세스 계정  
+##  <a name="bkmk_Paa"></a> 패키지 액세스 계정  
  패키지 액세스 계정을 사용하면 NTFS 파일 시스템 권한을 설정하여 배포 지점의 패키지 콘텐츠에 액세스할 수 있는 사용자와 사용자 그룹을 지정할 수 있습니다. 기본적으로 Configuration Manager에서는 일반 **사용자** 및 **관리자** 계정에만 액세스 권한을 부여합니다. 그러나 추가 Windows 계정 또는 그룹을 사용하면 클라이언트 컴퓨터에 대한 액세스를 제어할 수 있습니다. 모바일 장치에서는 항상 패키지 콘텐츠를 익명으로 검색하므로 패키지 액세스 계정을 사용하지 않습니다.  
 
  기본적으로 Configuration Manager는 패키지의 콘텐츠 파일을 배포 지점에 복사할 때 로컬 **사용자** 그룹에 **읽기** 권한을, 로컬 **관리자** 그룹에는 **모든 권한**을 부여합니다. 실제로 필요한 권한은 패키지에 따라 달라집니다. 작업 그룹 또는 트러스트되지 않은 포리스트에 있는 클라이언트는 네트워크 액세스 계정을 사용하여 패키지 콘텐츠에 액세스합니다. 네트워크 액세스 계정은 정의된 패키지 액세스 계정을 사용하여 패키지에 대한 사용 권한을 가져야 합니다.  
@@ -102,7 +104,7 @@ System Center Configuration Manager에서 콘텐츠를 배포하기 전에 클�
     > [!NOTE]  
     >  계정에 사용자 이름을 추가하는 경우 Configuration Manager에서 해당 이름의 로컬 사용자 계정과 도메인 사용자 계정을 모두 찾으면 Configuration Manager에서 도메인 사용자 계정에 대한 액세스 권한을 설정합니다.  
 
-##  <a name="a-namebkmkmultia-multicast-connection-account"></a><a name="bkmk_multi"></a> 멀티캐스트 연결 계정  
+##  <a name="bkmk_multi"></a> 멀티캐스트 연결 계정  
  멀티캐스트 연결 계정은 사이트 데이터베이스에서 정보를 읽기 위해 멀티캐스트가 설정된 배포 지점에서 사용됩니다.  
 
 -   멀티캐스트를 위한 Configuration Manager 데이터베이스 연결을 설정할 때 사용할 계정을 지정합니다.  
@@ -119,9 +121,4 @@ System Center Configuration Manager에서 콘텐츠를 배포하기 전에 클�
 
 > [!IMPORTANT]  
 >  이 계정에 대화형 로그인 권한을 부여하지 마세요.  
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

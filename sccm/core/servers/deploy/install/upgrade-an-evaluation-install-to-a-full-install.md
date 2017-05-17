@@ -15,9 +15,11 @@ caps.latest.revision: 3
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: d1bf0fdc3e735eb31492476fd46f008620150c0b
 ms.openlocfilehash: 8f951805c2fc25059965c15c94934c0f8546735c
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="upgrade-an-evaluation-installation-of-system-center-configuration-manager-to-a-full-installation"></a>평가판 설치를 System Center Configuration Manager 전체 설치로 업그레이드
@@ -52,9 +54,4 @@ System Center Configuration Manager를 평가판으로 설치하는 경우 180�
 
     > [!NOTE]  
     >  Configuration Manager 콘솔이 업그레이드하는 사이트에 계속 연결되어 있는 경우 해당 사이트를 콘솔에 다시 연결할 때까지는 콘솔의 제목 표시줄에 사이트가 아직 평가판이라고 표시될 수 있습니다.  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

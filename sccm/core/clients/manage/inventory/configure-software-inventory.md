@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: dacfdf02f04c6bd731ca0fc11e5af371b409c8b4
 ms.openlocfilehash: 1cee12d6f9c406e2438a3ed76674c3498fe9abbd
+ms.contentlocale: ko-kr
+ms.lasthandoff: 01/03/2017
 
 
 ---
@@ -57,8 +59,3 @@ ms.openlocfilehash: 1cee12d6f9c406e2438a3ed76674c3498fe9abbd
 
 > [!NOTE]  
 >  클라이언트 컴퓨터의 드라이브에서 이 파일을 삭제하지 않는 한 소프트웨어 인벤토리가 클라이언트 드라이브를 다시 인벤토리에 포함하지 않습니다.
-
-
-<!--HONumber=Jan17_HO1-->
-
-

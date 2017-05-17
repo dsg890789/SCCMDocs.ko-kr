@@ -15,9 +15,11 @@ caps.latest.revision: 5
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: fff93794afdfa9f890b1f06d6c330d8cffc5796c
 ms.openlocfilehash: b4db5d86cc0ed020ed176feb2e8f1f9dc51a2280
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="configuration-options-for-site-system-roles-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 사이트 시스템 역할 구성 옵션
@@ -26,7 +28,7 @@ ms.openlocfilehash: b4db5d86cc0ed020ed176feb2e8f1f9dc51a2280
 
 System Center Configuration Manager 사이트 시스템 역할의 구성 옵션 대부분은 별도의 설명이 필요 없으며 구성할 때 마법사 또는 대화 상자에서 설명됩니다. 다음 섹션에서는 설정에 추가 정보가 필요할 수 있는 사이트 시스템 역할에 대해 설명합니다.  
 
-##  <a name="a-namebkmkapplicationcatalogwebsitea-application-catalog-website-point"></a><a name="BKMK_ApplicationCatalog_Website"></a> 응용 프로그램 카탈로그 웹 사이트 지점  
+##  <a name="BKMK_ApplicationCatalog_Website"></a> 응용 프로그램 카탈로그 웹 사이트 지점  
  응용 프로그램 카탈로그에 대한 응용 프로그램 카탈로그 웹 사이트 지점을 설정하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 응용 프로그램 관리 계획 및 구성](../../../../apps/plan-design/plan-for-and-configure-application-management.md)을 참조하세요.  
 
  **클라이언트 연결**  
@@ -45,7 +47,7 @@ System Center Configuration Manager 사이트 시스템 역할의 구성 옵션 
 
  응용 프로그램 카탈로그에 표시되는 이름을 입력합니다. 이 브랜딩 정보를 통해 이 웹 사이트가 신뢰할 수 있는 원본임을 쉽게 확인할 수 있습니다.  
 
-##  <a name="a-namebkmkapplicationcatalogwebservicea-application-catalog-web-service-point"></a><a name="BKMK_ApplicationCatalog_WebService"></a> 응용 프로그램 카탈로그 웹 서비스 지점  
+##  <a name="BKMK_ApplicationCatalog_WebService"></a> 응용 프로그램 카탈로그 웹 서비스 지점  
  응용 프로그램 카탈로그에 대한 응용 프로그램 카탈로그 웹 서비스 지점을 설정하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 응용 프로그램 관리 계획 및 구성](../../../../apps/plan-design/plan-for-and-configure-application-management.md)을 참조하세요.  
 
  **HTTPS**  
@@ -54,10 +56,10 @@ System Center Configuration Manager 사이트 시스템 역할의 구성 옵션 
 
  서버 인증서 배포 예제와 IIS에서 서버 인증서를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager용 PKI 인증서의 단계별 배포 예제: Windows Server 2008 인증 기관](/sccm/core/plan-design/network/example-deployment-of-pki-certificates)에서 *IIS를 실행하는 사이트 시스템용 웹 서버 인증서 배포* 섹션을 참조하세요.  
 
-##  <a name="a-namebkmkcertificateregistrationpointa-certificate-registration-point"></a><a name="BKMK_CertificateRegistrationPoint"></a> 인증서 등록 지점  
+##  <a name="BKMK_CertificateRegistrationPoint"></a> 인증서 등록 지점  
  인증서 등록 지점을 설정하는 방법에 대한 자세한 내용은 [인증서 프로필 소개](/sccm/protect/deploy-use/introduction-to-certificate-profiles)를 참조하세요.  
 
-##  <a name="a-namebkmkdistributionpointa-distribution-point"></a><a name="BKMK_Distribution_Point"></a> 배포 지점  
+##  <a name="BKMK_Distribution_Point"></a> 배포 지점  
  콘텐츠 배포를 위해 배포 지점을 설정하는 방법에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
 
  PXE 배포를 위해 배포 지점을 설정하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 PXE를 사용하여 네트워크를 통해 Windows 배포](../../../../osd/deploy-use/use-pxe-to-deploy-windows-over-the-network.md)를 참조하세요.  
@@ -97,7 +99,7 @@ System Center Configuration Manager 사이트 시스템 역할의 구성 옵션 
  - **버전 1610 이전**에서 **콘텐츠에 대한 대체 원본 위치를 사용하도록 허용** 확인란을 선택하면 이러한 경계 그룹 외부에 있는 클라이언트가 다른 배포 지점을 사용할 수 없는 경우 해당 배포 지점을 대체 원본 위치로 사용하게 만들 수 있습니다.
  - **버전 1610부터** **콘텐츠에 대한 대체 원본 위치 허용**을 더 이상 구성할 수 없습니다.  대신, 클라이언트가 추가 경계 그룹에서 유효한 콘텐츠 원본 위치 검색을 시작할 수 있는 경우를 확인하는 경계 그룹 간의 관계를 설정합니다.
 
-##  <a name="a-namebkmkenrollmentpointa-enrollment-point"></a><a name="BKMK_Enrollment_Point"></a> 등록 지점  
+##  <a name="BKMK_Enrollment_Point"></a> 등록 지점  
 등록 지점은 Mac 컴퓨터를 설치하고 온-프레미스 모바일 장치 관리를 통해 관리하고 있는 장치를 등록하는 데 사용됩니다. 자세한 내용은 다음을 참조하십시오.  
 
 -   [System Center Configuration Manager에서 Mac에 클라이언트를 배포하는 방법](../../../../core/clients/deploy/deploy-clients-to-macs.md)  
@@ -109,7 +111,7 @@ System Center Configuration Manager 사이트 시스템 역할의 구성 옵션 
 
  서버 인증서 배포 예제와 IIS에서 서버 인증서를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager용 PKI 인증서의 단계별 배포 예제: Windows Server 2008 인증 기관](/sccm/core/plan-design/network/example-deployment-of-pki-certificates)에서 *IIS를 실행하는 사이트 시스템용 웹 서버 인증서 배포* 섹션을 참조하세요.  
 
-##  <a name="a-namebkmkenrollmentproxypointa-enrollment-proxy-point"></a><a name="BKMK_Enrollment_Proxy_Point"></a> 등록 프록시 지점  
+##  <a name="BKMK_Enrollment_Proxy_Point"></a> 등록 프록시 지점  
 모바일 장치를 위해 등록 프록시 지점을 설정하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 사용하여 장치를 등록하는 방법](../../../../mdm/deploy-use/user-enroll-devices-on-premises-mdm.md)을 참조하세요.  
 
 **클라이언트 연결**  
@@ -117,7 +119,7 @@ System Center Configuration Manager 사이트 시스템 역할의 구성 옵션 
 
  서버 인증서 배포 예제와 IIS에서 서버 인증서를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager용 PKI 인증서의 단계별 배포 예제: Windows Server 2008 인증 기관](/sccm/core/plan-design/network/example-deployment-of-pki-certificates)에서 *IIS를 실행하는 사이트 시스템용 웹 서버 인증서 배포* 섹션을 참조하세요.  
 
-##  <a name="a-namebkmkfallbackstatuspointa-fallback-status-point"></a><a name="BKMK_Fallback_Status_Point"></a> 대체 상태 지점  
+##  <a name="BKMK_Fallback_Status_Point"></a> 대체 상태 지점  
 **상태 메시지 수** 및 **제한 간격(초)**  
 대부분의 경우 이러한 옵션의 기본 설정(10,000개의 상태 메시지 및 3,600초의 제한 간격)이면 충분하지만, 다음 두 조건에 모두 해당하면 설정을 변경해야 할 수도 있습니다.  
 
@@ -152,9 +154,4 @@ Configuration Manager 클라이언트를 설치할 수 없거나 할당할 수 �
 -   현재 제한 설정으로 인해 사이트 서버의 CPU 사용률이 높아지는 것으로 확인됨  
 
 대체 상태 지점 제한 설정을 변경하는 것에 따른 결과를 잘 알고 설정을 변경해야 합니다. 예를 들어 제한 설정을 높게 늘릴 경우 사이트 서버의 CPU 사용률이 높게 증가하여 모든 사이트 작업이 느려질 수 있습니다.  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

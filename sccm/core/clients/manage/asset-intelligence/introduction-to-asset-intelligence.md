@@ -16,9 +16,10 @@ caps.handback.revision: 0
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: 6a851ddfeee78574fbb0b1eff0c7cc518a7bb598
+ms.contentlocale: ko-kr
 ms.lasthandoff: 12/16/2016
 
 

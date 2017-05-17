@@ -15,9 +15,11 @@ caps.latest.revision: 8
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
 ms.openlocfilehash: 2012ab5e55da8d707fd668e0163b42fe7d56c72f
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -110,9 +112,4 @@ ms.openlocfilehash: 2012ab5e55da8d707fd668e0163b42fe7d56c72f
 6.  마법사를 완료하여 구성 항목을 만듭니다.  
 
  이제 [구성 기준 만들기 및 배포에 대한 일반 작업](../../compliance/plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md) 항목의 내용을 참조하여, 만든 구성을 장치에 쉽게 배포할 수 있습니다.  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

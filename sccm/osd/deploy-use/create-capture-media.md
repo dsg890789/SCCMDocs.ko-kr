@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
 ms.openlocfilehash: 5acf800ff5aebd849e294393337755145a60cca5
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -30,7 +32,7 @@ Configuration Manager의 미디어 캡처를 사용하면 참조 컴퓨터에서
 
 -   [운영 체제를 캡처하는 작업 순서 만들기](create-a-task-sequence-to-capture-an-operating-system.md)  
 
-##  <a name="a-namebkmkcreatecapturemediaa-how-to-create-capture-media"></a><a name="BKMK_CreateCaptureMedia"></a> 미디어 캡처를 만드는 방법  
+##  <a name="BKMK_CreateCaptureMedia"></a> 미디어 캡처를 만드는 방법  
  미디어 캡처를 사용하여 참조 컴퓨터에서 운영 체제 이미지를 캡처할 수 있습니다. 미디어 캡처에는 참조 컴퓨터를 시작하는 부팅 이미지와, 운영 체제 이미지를 캡처하는 작업 순서가 포함되어 있습니다.
 
 미디어 캡처는 작업 순서 미디어 만들기 마법사를 사용하여 만듭니다. 마법사를 실행하기 전에 다음 모든 조건이 충족되어야 합니다.  
@@ -80,9 +82,4 @@ Configuration Manager의 미디어 캡처를 사용하면 참조 컴퓨터에서
         >  배포 지점의 콘텐츠 라이브러리에 대한 읽기 액세스 권한이 있어야 합니다.  
 
 7.  마법사를 완료합니다.  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

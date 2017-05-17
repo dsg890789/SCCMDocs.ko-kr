@@ -15,9 +15,11 @@ caps.latest.revision: 4
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 8370e3b102afed518e8154d4944ab420188faccf
 ms.openlocfilehash: 76b070f8e203cc0c751f35e5a4b4904504786c04
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="install-site-system-roles-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 사이트 시스템 역할 설치
@@ -38,7 +40,7 @@ System Center Configuration Manager 콘솔에는 사이트 시스템 역할을 �
 
 -   Configuration Manager에서 **사이트 시스템 설치 계정**을 사용하여 사이트 시스템 역할을 설치합니다. 적절한 마법사를 실행하여 새 사이트 시스템 서버를 만들거나 기존 사이트 시스템 서버에 사이트 시스템 역할을 추가할 때 이 계정을 지정합니다. 기본적으로 이 계정은 사이트 서버 컴퓨터의 로컬 시스템 계정이지만, 사이트 시스템 설치 계정으로 사용할 도메인 사용자 계정을 지정할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에 사용된 계정](../../../../core/plan-design/hierarchy/accounts.md)을 참조하세요.  
 
-##  <a name="a-namebkmkinstalla-to-install-site-system-roles-on-an-existing-site-system-server"></a><a name="bkmk_Install"></a> 기존 사이트 시스템 서버에 사이트 시스템 역할을 설치하려면  
+##  <a name="bkmk_Install"></a> 기존 사이트 시스템 서버에 사이트 시스템 역할을 설치하려면  
 
 1.  Configuration Manager 콘솔에서 **관리**를 클릭합니다.  
 
@@ -81,9 +83,4 @@ System Center Configuration Manager 콘솔에는 사이트 시스템 역할을 �
 
 > [!TIP]  
 >  Windows PowerShell cmdlet인 New-CMSiteSystemServer는 이 절차와 동일한 기능을 수행합니다. 자세한 내용은 System Center 2012 Configuration Manager SP1 Cmdlet 참조 문서에서 [New-CMSiteSystemServer](http://go.microsoft.com/fwlink/p/?LinkID=271414)를 참조하세요.  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

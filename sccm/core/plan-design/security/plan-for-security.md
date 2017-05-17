@@ -16,9 +16,10 @@ caps.handback.revision: 0
 author: arob98
 ms.author: angrobe
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: af06fb10d905e3fe447c6cd6ed35dac10488161f
 ms.openlocfilehash: 1bf519ad4593f6a08d7dc393f9fab91c70b51b25
+ms.contentlocale: ko-kr
 ms.lasthandoff: 01/05/2017
 
 
@@ -27,7 +28,7 @@ ms.lasthandoff: 01/05/2017
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-##  <a name="a-namebkmkplanningforcertificatesa-plan-for-certificates-self-signed-and-pki"></a><a name="BKMK_PlanningForCertificates"></a> 인증서(자체 서명 및 PKI) 계획  
+##  <a name="BKMK_PlanningForCertificates"></a> 인증서(자체 서명 및 PKI) 계획  
  Configuration Manager에서는 자체 서명된 인증서와 PKI(공개 키 인프라) 인증서를 결합하여 사용합니다.  
 
  보안 모범 사례에 따라 가능한 경우 항상 PKI 인증서를 사용하는 것이 좋습니다. PKI 인증서 요구 사항에 대한 자세한 내용은 [System Center Configuration Manager를 위한 PKI 인증서 요구 사항](../../../core/plan-design/network/pki-certificate-requirements.md)을 참조하세요. 모바일 장치를 등록하거나 Intel AMT(Active Management Technology)를 프로비전하는 경우와 같이 Configuration Manager에서 PKI 인증서를 요구하는 경우 Active Directory Domain Services와 엔터프라이즈 인증 기관을 사용해야 합니다. 다른 모든 PKI 인증서의 경우 Configuration Manager와 별개로 인증서를 배포하고 관리해야 합니다.  
@@ -61,7 +62,7 @@ ms.lasthandoff: 01/05/2017
 
 3.  CCMSetup.exe로 Client.msi 속성 **SMSSIGNCERT=***&lt;전체 경로 및 파일 이름\>*을 사용하여 클라이언트를 설치합니다.  
 
-###  <a name="a-namebkmkplanningforcrlsa-plan-for-pki-certificate-revocation"></a><a name="BKMK_PlanningForCRLs"></a> PKI 인증서 해지 계획  
+###  <a name="BKMK_PlanningForCRLs"></a> PKI 인증서 해지 계획  
 Configuration Manager에 PKI 인증서를 사용하는 경우 클라이언트와 서버가 연결하는 컴퓨터에서 인증서를 확인하기 위해 CRL(인증서 해지 목록)을 사용할지 여부와 사용하는 방식을 계획해야 합니다. CRL은 CA가 만들고 서명하는 파일이고 CA(인증 기관)가 발급했지만 해지한 인증서 목록을 포함합니다. 예를 들어 발급된 인증서가 손상된 것으로 파악되거나 의심될 경우 CA 관리자가 인증서를 해지할 수 있습니다.  
 
 > [!IMPORTANT]  
@@ -79,7 +80,7 @@ Configuration Manager 클라이언트에서 CRL을 확인할지 여부를 결정
 
 -   PKI 인증서를 사용하도록 구성된 사이트 시스템에 연결할 때마다 CRL을 확인해야 하는 것은 클라이언트에서 더 빠르게 연결하고 효율적으로 처리해야 하는 것과 클라이언트가 CRL을 찾을 수 없어 서버에 연결하지 못하는 위험보다 더 중요합니다.  
 
-###  <a name="a-namebkmkplanningforrootcasa-plan-for-the-pki-trusted-root-certificates-and-the-certificate-issuers-list"></a><a name="BKMK_PlanningForRootCAs"></a> PKI 신뢰할 수 있는 루트 인증서 및 인증서 발급자 목록 계획  
+###  <a name="BKMK_PlanningForRootCAs"></a> PKI 신뢰할 수 있는 루트 인증서 및 인증서 발급자 목록 계획  
 IIS 사이트 시스템이 HTTP를 통한 클라이언트 인증과 HTTPS를 통한 클라이언트 인증 및 암호화에 PKI 클라이언트 인증서를 사용하는 경우 루트 CA 인증서를 사이트 속성으로 가져와야 할 수 있습니다. 다음은 두 가지 시나리오입니다.  
 
 -   Configuration Manager를 사용하여 운영 체제를 배포합니다. 그러면 관리 지점에서 HTTPS 클라이언트 연결만 수락합니다.  
@@ -101,7 +102,7 @@ Configuration Manager에 루트 CA 인증서를 가져와야 하는 경우 발�
 
 또한 사이트 구성과는 별도로 모바일 장치를 등록하고, Mac 컴퓨터를 등록하고, 무선 네트워크에 Intel AMT 기반 컴퓨터를 설정할 때 루트 CA 인증서를 가져와야 할 수 있습니다.  
 
-###  <a name="a-namebkmkplanningforclientcertificateselectiona-plan-for-pki-client-certificate-selection"></a><a name="BKMK_PlanningForClientCertificateSelection"></a> PKI 클라이언트 인증서 선택 계획  
+###  <a name="BKMK_PlanningForClientCertificateSelection"></a> PKI 클라이언트 인증서 선택 계획  
  IIS 사이트 시스템이 HTTP를 통한 클라이언트 인증과 HTTPS를 통한 클라이언트 인증 및 암호화에 PKI 클라이언트 인증서를 사용하는 경우 Windows 클라이언트가 Configuration Manager에 사용할 인증서를 선택하는 방식을 계획해야 합니다.  
 
 > [!NOTE]  
@@ -175,7 +176,7 @@ Configuration Manager에 루트 CA 인증서를 가져와야 하는 경우 발�
 
 클라이언트 인증서 설정을 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 보안 구성](../../../core/plan-design/security/configure-security.md) 문서에서 [클라이언트 PKI 인증서의 설정 구성](../../../core/plan-design/security/configure-security.md#BKMK_ConfigureClientPKI) 섹션을 참조하세요.  
 
-###  <a name="a-namebkmkplanningforpkitransitiona-plan-a-transition-strategy-for-pki-certificates-and-internet-based-client-management"></a><a name="BKMK_PlanningForPKITransition"></a> PKI 인증서에 대한 전환 전략 및 인터넷 기반 클라이언트 관리 계획  
+###  <a name="BKMK_PlanningForPKITransition"></a> PKI 인증서에 대한 전환 전략 및 인터넷 기반 클라이언트 관리 계획  
 Configuration Manager의 유연한 구성 옵션을 사용하면 클라이언트 및 사이트에서 PKI 인증서를 사용하도록 단계적으로 전환하여 안전한 클라이언트 끝점을 구현할 수 있습니다. PKI 인증서를 활용하면 보안을 강화하고 인터넷 클라이언트를 관리할 수 있습니다.  
 
 Configuration Manager에서 선택할 수 있는 구성 옵션은 다양하므로 모든 클라이언트가 HTTPS 연결을 사용하도록 사이트를 전환할 수 있는 단 하나의 방식은 존재하지 않습니다. 그러나 다음 단계를 지침으로 활용할 수 있습니다.  
@@ -223,7 +224,7 @@ Configuration Manager에서 선택할 수 있는 구성 옵션은 다양하므�
 
  이 계획에 따라 PKI 인증서를 단계적으로 채택하면, 즉 먼저 HTTP를 통한 인증에만 사용하고 그다음에는 HTTPS를 통한 인증 및 암호화에 사용하면 관리되지 않는 클라이언트가 발생할 위험성은 줄어듭니다. 또한 Configuration Manager에서 지원하는 최상의 보안으로 이점을 얻을 수 있습니다.  
 
-##  <a name="a-namebkmkplanningforrtka-plan-for-the-trusted-root-key"></a><a name="BKMK_PlanningForRTK"></a> 신뢰할 수 있는 루트 키 계획  
+##  <a name="BKMK_PlanningForRTK"></a> 신뢰할 수 있는 루트 키 계획  
 Configuration Manager의 신뢰할 수 있는 루트 키에서 제공하는 메커니즘을 통해 Configuration Manager 클라이언트가 사이트 시스템이 해당 계층 구조에 속하는지 확인할 수 있습니다. 모든 사이트 서버는 다른 사이트와 통신하기 위한 사이트 교환 키를 생성합니다. 계층 내 최상위 사이트의 사이트 교환 키는 신뢰할 수 있는 루트 키라고 합니다.  
 
 Configuration Manager에 있는 신뢰할 수 있는 루트 키의 기능은 신뢰할 수 있는 루트 키의 개인 키에서 서명된 모든 항목은 계층 내 하부 수준에서도 신뢰할 수 있다는 점에서 공개 키 인프라의 루트 인증서와 유사합니다. 예를 들어, 신뢰할 수 있는 루트 키 쌍의 개인 키로 관리 지점 인증서를 서명하고 신뢰할 수 있는 루트 키 쌍의 공개 키 사본을 클라이언트에서 사용할 수 있도록 설정하면 클라이언트는 자체 계층 구조에 있는 관리 지점과 자체 계층 구조에 없는 관리 지점을 서로 구별할 수 있습니다. 클라이언트에서는 WMI(Windows Management Instrumentation)를 사용하여 신뢰할 수 있는 루트 키 사본을 **root\ccm\locationservices** 네임스페이스에 저장합니다.  
@@ -295,7 +296,7 @@ CCMSetup.exe를 통해 Client.msi 속성 **RESETKEYINFORMATION = TRUE**를 사�
 
 9. **TrustedRootKey=@용 개체 편집기** 대화 상자의 **속성** 섹션에서 **TrustedRootKey CIM_STRING**으로 스크롤합니다. 오른쪽 열에 있는 문자열이 신뢰할 수 있는 루트 키입니다. 이 문자열이 *&lt;Configuration Manager 디렉터리\>***\bin\mobileclient.tcf** 파일의 **SMSPublicRootKey** 값과 일치하는지 확인합니다.  
 
-##  <a name="a-namebkmkplanningforsigningencryptiona-plan-for-signing-and-encryption"></a><a name="BKMK_PlanningForSigningEncryption"></a> 서명 및 암호화 계획  
+##  <a name="BKMK_PlanningForSigningEncryption"></a> 서명 및 암호화 계획  
  모든 클라이언트 통신에 대해 PKI 인증서를 사용하는 경우 클라이언트 데이터 통신의 보안을 위해 서명 및 암호화를 계획할 필요가 없습니다. 그러나 IIS를 실행하는 사이트 시스템에서 HTTP 클라이언트 연결을 허용하도록 설정할 경우 사이트에 대한 클라이언트 통신을 보호할 방법을 결정해야 합니다.  
 
  클라이언트가 관리 지점에 보내는 데이터를 보호하려면 해당 데이터를 서명해야 합니다. 또한 HTTP를 사용하는 서명된 모든 클라이언트 데이터는 SHA-256 알고리즘을 사용하여 서명되도록 할 수 있습니다. 이 설정이 더 안전하기는 하지만, 모든 클라이언트가 SHA-256을 지원하는 경우가 아니면 이 옵션을 사용하도록 설정하지 마세요. 대부분의 운영 체제는 기본적으로 SHA-256을 지원하지만 이전 버전 운영 체제의 경우에는 업데이트나 핫픽스를 설치해야 할 수도 있습니다. 예를 들어 Windows Server 2003 SP2를 실행하는 컴퓨터는 [기술 자료 문서 938397](http://go.microsoft.com/fwlink/p/?LinkId=226666)에 언급된 핫픽스를 설치해야 합니다.  
@@ -304,7 +305,7 @@ CCMSetup.exe를 통해 Client.msi 속성 **RESETKEYINFORMATION = TRUE**를 사�
 
  서명 및 암호화 설정을 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보안 구성](../../../core/plan-design/security/configure-security.md) 문서의 [서명 및 암호화 구성](../../../core/plan-design/security/configure-security.md#BKMK_ConfigureSigningEncryption) 섹션을 참조하세요.  
 
-##  <a name="a-namebkmkplanningforrbaa-plan-for-role-based-administration"></a><a name="BKMK_PlanningForRBA"></a> 역할 기반 관리 계획  
+##  <a name="BKMK_PlanningForRBA"></a> 역할 기반 관리 계획  
  자세한 내용은 [System Center Configuration Manager의 역할 기반 관리 기본 사항](../../../core/understand/fundamentals-of-role-based-administration.md)을 참조하세요.  
 
 ### <a name="see-also"></a>참고 항목

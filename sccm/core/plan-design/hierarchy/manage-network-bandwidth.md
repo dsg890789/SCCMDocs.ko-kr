@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 37e4f27fcea0bbdd39c9fd3ab38aa46e3059f73a
 ms.openlocfilehash: d9dff97126c34a726677de60dd7647370c553b6e
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -26,7 +28,7 @@ ms.openlocfilehash: d9dff97126c34a726677de60dd7647370c553b6e
 # <a name="manage-network-bandwidth-for-content"></a>콘텐츠의 네트워크 대역폭 관리
 System Center Configuration Manager의 콘텐츠 관리 프로세스에 사용되는 네트워크 대역폭을 관리하려는 경우 일정 및 제한용 기본 제공 컨트롤을 사용할 수 있습니다. 사전 준비된 콘텐츠를 사용할 수도 있습니다. 다음 섹션에서는 이러한 옵션을 더 자세히 설명합니다.
 
-##  <a name="a-namebkmkplanningforthrottlingascheduling-and-throttling"></a><a name="BKMK_PlanningForThrottling"></a> 일정 및 제한  
+##  <a name="BKMK_PlanningForThrottling"></a> 일정 및 제한  
 
  패키지를 만들거나, 콘텐츠의 원본 경로를 변경하거나, 배포 지점의 콘텐츠를 업데이트하는 경우 원본 경로에서 사이트 서버의 콘텐츠 라이브러리로 파일이 복사됩니다. 그런 다음 콘텐츠가 사이트 서버의 콘텐츠 라이브러리에서 배포 지점의 콘텐츠 라이브러리로 복사됩니다. 콘텐츠 원본 파일이 업데이트되고 원본 파일이 이미 배포된 경우 Configuration Manager는 새로운 파일이나 업데이트된 파일만 가져와서 배포 지점에 전송합니다.
 
@@ -41,7 +43,7 @@ System Center Configuration Manager의 콘텐츠 관리 프로세스에 사용�
 
 자세한 내용은 [System Center Configuration Manager의 배포 지점 설치 및 구성](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points)을 참조하세요.  
 
-##  <a name="a-namebkmkprestagingcontentaprestaged-content"></a><a name="BKMK_PrestagingContent"></a>사전 준비된 콘텐츠  
+##  <a name="BKMK_PrestagingContent"></a>사전 준비된 콘텐츠  
  콘텐츠를 사전 준비하여 콘텐츠를 배포하기 전에 사이트 서버 또는 배포 지점의 콘텐츠 라이브러리에 콘텐츠 파일을 추가할 수 있습니다. 콘텐츠 파일은 콘텐츠 라이브러리에 이미 있기 때문에 콘텐츠를 배포할 때 네트워크를 통해 전송되지 않습니다. 응용 프로그램과 패키지의 콘텐츠 파일을 사전 준비할 수 있습니다.  
 
 Configuration Manager 콘솔에서 사전 준비할 콘텐츠를 선택한 다음 **사전 준비된 콘텐츠 파일 만들기 마법사**를 사용합니다. 그러면 파일과 콘텐츠 관련 메타데이터가 들어 있는 사전 준비된 압축 파일이 생성됩니다. 그런 다음 사이트 서버 또는 배포 지점에서 콘텐츠를 수동으로 가져올 수 있습니다. 다음 사항에 유의하세요.  
@@ -58,7 +60,7 @@ Configuration Manager 콘솔에서 사전 준비할 콘텐츠를 선택한 다�
 
 -   패키지의 콘텐츠에 대해 항상 표준 콘텐츠 배포 프로세스 사용  
 
-###  <a name="a-namebkmkdeterminetoprestagecontentadetermine-whether-to-prestage-content"></a><a name="BKMK_DetermineToPrestageContent"></a>콘텐츠의 사전 준비 여부 결정  
+###  <a name="BKMK_DetermineToPrestageContent"></a>콘텐츠의 사전 준비 여부 결정  
  다음 경우에 응용 프로그램과 패키지의 콘텐츠를 사전 준비하는 것을 고려하세요.  
 
 -   **사이트 서버에서 배포 지점으로의 네트워크 대역폭이 제한되는 문제를 해결하려는 경우.** 일정 및 제한만으로는 대역폭에 관한 문제가 해결되지 않을 경우, 배포 지점에서 콘텐츠를 사전 준비하는 것이 좋을 수도 있습니다. 배포 지점 속성에서 각 배포 지점에 대해 **사전 준비된 콘텐츠에 이 배포 지점 사용** 설정을 선택할 수 있습니다. 이 옵션을 사용하도록 설정하면 배포 지점이 사전 준비된 배포 지점으로 식별되며 패키지별로 콘텐츠를 관리하는 방법을 선택할 수 있습니다.  
@@ -75,9 +77,4 @@ Configuration Manager 콘솔에서 사전 준비할 콘텐츠를 선택한 다�
     >  위의 옵션들은 패키지별로 적용되며 배포 지점이 사전 준비된 것으로 확인되는 경우에만 사용됩니다. 사전 준비된 것으로 확인되지 않은 배포 지점에서는 이러한 설정을 무시합니다. 이 경우, 콘텐츠는 항상 네트워크를 통해 사이트 서버에서 배포 지점으로 배포됩니다.  
 
 -   **사이트 서버에서 콘텐츠 라이브러리 복원.** 사이트 서버에 오류가 발생할 경우 콘텐츠 라이브러리에 포함된 패키지와 응용 프로그램에 대한 정보가 복원 과정 중 사이트 데이터베이스로 복원되지만 콘텐츠 라이브러리 파일은 이 과정에서 복원되지 않습니다. 콘텐츠 라이브러리를 복원할 파일 시스템 백업이 없는 경우에는 필요한 패키지와 응용 프로그램을 보유한 다른 사이트에서 사전 준비된 콘텐츠 파일을 만들 수 있습니다. 그런 다음 사전 준비된 콘텐츠 파일을 복구된 사이트 서버에 추출할 수 있습니다. 사이트 서버 백업 및 복구에 대한 자세한 내용은 [System Center Configuration Manager 백업 및 복구](/sccm/protect/understand/backup-and-recovery)를 참조하세요.  
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

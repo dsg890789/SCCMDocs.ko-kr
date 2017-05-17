@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 05c27c7aa36e0b4236867766dab36125c31467b3
 ms.openlocfilehash: c0b4fcda6599ed91fe2393b97bdcec6cdfba9b7c
+ms.contentlocale: ko-kr
+ms.lasthandoff: 01/03/2017
 
 
 ---
@@ -70,9 +72,4 @@ ms.openlocfilehash: c0b4fcda6599ed91fe2393b97bdcec6cdfba9b7c
 7.  **다음에 이 일정 적용** 드롭다운 목록에서 선택합니다.  
 
 8.  **확인**을 선택하고 **&lt;컬렉션 이름\> 속성** 대화 상자를 닫습니다.  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

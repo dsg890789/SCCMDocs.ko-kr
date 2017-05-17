@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 7b6674f331c82cc7899b8661cf38b9d3022cf21b
 ms.openlocfilehash: 647826e9d340d3ef97abab0dba51041a3727dedc
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -64,7 +66,7 @@ System Center Configuration Manager에서 하나 이상의 검색 방법을 사�
 
 -   클라이언트 설정 및 관련 구성 배포
 
-##  <a name="a-namebkmkddrsa-about-discovery-data-records"></a><a name="BKMK_DDRs"></a> 검색 데이터 기록 정보  
+##  <a name="BKMK_DDRs"></a> 검색 데이터 기록 정보  
  DDR은 검색 방법으로 만든 파일입니다. Configuration Manager에서 관리할 수 있는 컴퓨터, 사용자와 같은 리소스(경우에 따라 네트워크 인프라도 포함)에 대한 정보가 포함되어 있습니다. DDR은 기본 사이트 또는 중앙 관리 사이트에서 처리됩니다. DDR의 리소스 정보가 데이터베이스에 입력된 후에는 DDR이 삭제되고 해당 정보가 글로벌 데이터로 해당 계층의 모든 사이트에 복제됩니다.  
 
  DDR이 처리되는 사이트는 DDR에 포함된 정보에 따라 달라집니다.  
@@ -87,9 +89,4 @@ DDR 파일은 .ddr 확장명으로 식별되며 일반적으로 약 1KB의 크�
 -   [System Center Configuration Manager에 사용할 검색 방법 선택](../../../../core/servers/deploy/configure/select-discovery-methods-to-use.md)  
 
 사용할 방법을 알고 있는 경우 [System Center Configuration Manager에 사용할 검색 방법 구성](../../../../core/servers/deploy/configure/configure-discovery-methods.md)에서 각 방법의 설정에 관한 지침을 찾아보세요.  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

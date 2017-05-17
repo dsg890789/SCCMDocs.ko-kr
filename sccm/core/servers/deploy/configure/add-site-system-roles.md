@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 7fa191ce37a68f604673fe9b9724f76c3ff10032
 ms.openlocfilehash: 1ad4abf1f06ed24bd1d505648280b5e5d80220c7
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -50,9 +52,4 @@ Configuration Manager는 한 사이트 시스템 서버에서 여러 사이트�
 -   [System Center Configuration Manager에 대한 사이트 시스템 역할 구성 옵션](../../../../core/servers/deploy/configure/configuration-options-for-site-system-roles.md)  
 
      일부 사이트 시스템 역할은 사용자 인터페이스서 설명할 수 있는 것보다 더 자세한 정보를 필요로 하는 구성을 지원합니다. 이 항목에서 세부 정보를 제공합니다.  
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

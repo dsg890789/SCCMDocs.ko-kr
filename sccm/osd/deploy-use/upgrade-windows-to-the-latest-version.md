@@ -15,9 +15,11 @@ caps.latest.revision: 13
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 288a4c649f371d9701fe7249449356aa222bf372
 ms.openlocfilehash: 35f04e237efffbdb12893f658950a99dc0b98b85
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -37,7 +39,7 @@ ms.openlocfilehash: 35f04e237efffbdb12893f658950a99dc0b98b85
 
  작업 순서를 사용하여 네트워크를 통해 운영 체제를 배포하려면 다음 섹션을 사용하세요.  
 
-##  <a name="a-namebkmkplana-plan"></a><a name="BKMK_Plan"></a> 계획  
+##  <a name="BKMK_Plan"></a> 계획  
 
 -   **운영 체제를 업그레이드하는 작업 순서에 대한 제한 사항 검토**  
 
@@ -59,7 +61,7 @@ ms.openlocfilehash: 35f04e237efffbdb12893f658950a99dc0b98b85
 
      업그레이드 시나리오에 대한 유일한 필수 구성 요소는 운영 체제 업그레이드 패키지 및 작업 순서에 포함된 기타 패키지에 사용할 수 있는 배포 지점입니다. 자세한 내용은 [배포 지점 설치 또는 수정](../../core/servers/deploy/configure/install-and-configure-distribution-points.md)을 참조하세요.
 
-##  <a name="a-namebkmkconfigurea-configure"></a><a name="BKMK_Configure"></a> 구성  
+##  <a name="BKMK_Configure"></a> 구성  
 
 1.  **운영 체제 업그레이드 패키지 준비**  
 
@@ -75,7 +77,7 @@ ms.openlocfilehash: 35f04e237efffbdb12893f658950a99dc0b98b85
     > [!NOTE]  
     >  일반적으로 [운영 체제를 업그레이드하는 작업 순서 만들기](create-a-task-sequence-to-upgrade-an-operating-system.md)의 단계를 사용하여 운영 체제를 Windows 10으로 업그레이드하는 작업 순서를 만듭니다. 작업 순서에는 운영 체제 업그레이드 단계와 종단 간 업그레이드 프로세스를 처리하기 위한 추가적인 권장 단계 및 그룹이 포함됩니다. 그렇지만 사용자 지정 작업 순서를 만들고 [운영 체제 업그레이드](../understand/task-sequence-steps.md#BKMK_UpgradeOS) 작업 순서 단계를 추가하여 운영 체제를 업그레이드할 수 있습니다. 이것이 운영 체제를 Windows 10으로 업그레이드하는 데 필요한 유일한 단계입니다. 이 방법을 선택하는 경우 운영 체제 업그레이드 단계 다음에 [컴퓨터 다시 시작](../understand/task-sequence-steps.md#a-namebkmkrestartcomputera-restart-computer) 단계를 추가하여 업그레이드를 완료합니다. **현재 설치된 기본 운영 체제** 설정을 사용하여 컴퓨터를 Windows PE가 아닌 설치된 운영 체제로 다시 시작해야 합니다.  
 
-##  <a name="a-namebkmkdeploya-deploy"></a><a name="BKMK_Deploy"></a> 배포  
+##  <a name="BKMK_Deploy"></a> 배포  
 
 -   다음 배포 방법 중 하나를 사용하여 운영 체제를 배포합니다.  
 
@@ -88,9 +90,4 @@ ms.openlocfilehash: 35f04e237efffbdb12893f658950a99dc0b98b85
 -   **작업 순서 배포 모니터링**  
 
      운영 체제를 업그레이드하는 작업 순서 배포를 모니터링하려면 [운영 체제 배포 모니터링](monitor-operating-system-deployments.md)을 참조하세요.  
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

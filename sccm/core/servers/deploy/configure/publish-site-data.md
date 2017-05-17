@@ -15,9 +15,11 @@ caps.latest.revision: 8
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: e7629fdf7fdf615fa27894158c3d101432c95a04
 ms.openlocfilehash: bcfb002c503485f03ba27d7346acb61d0d3c6087
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -71,9 +73,4 @@ System Center Configuration Manager의 Active Directory 스키마를 확장한 �
     >  사이트에서 포리스트에 게시할 수 있도록 설정한 경우에는 Configuration Manager의 해당 포리스트에 대한 Active Directory 스키마를 확장해야 합니다. Active Directory 포리스트 계정에는 해당 포리스트의 시스템 컨테이너에 대한 모든 권한이 있어야 합니다.  
 
 5.  Active Directory 포리스트 검색을 사용하도록 이 포리스트의 구성을 완료한 후에는 **OK** 를 클릭하여 구성을 저장합니다.  
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 8a5dc7361da34f3e6b926acd35c72c0c0767ce70
 ms.openlocfilehash: 27566be49a673bebca6ac3621e692fad65523ca4
+ms.contentlocale: ko-kr
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -39,7 +41,7 @@ Asset Intelligence는 소프트웨어 라이선스 사용을 인벤토리에 포
 - **6단계**: [Asset Intelligence 유지 관리 작업을 구성](#BKMK_ConfigureMaintenanceTasks)합니다. 
 
 
-###  <a name="a-namebkmkenableassetintelligencea-enable-asset-intelligence-hardware-inventory-reporting-classes"></a><a name="BKMK_EnableAssetIntelligence"></a> Enable Asset Intelligence hardware inventory reporting classes  
+###  <a name="BKMK_EnableAssetIntelligence"></a> Enable Asset Intelligence hardware inventory reporting classes  
  Configuration Manager 사이트에 Asset Intelligence를 사용하도록 설정하려면 Asset Intelligence 하드웨어 인벤토리 보고 클래스를 하나 이상 사용하도록 설정해야 합니다. **Asset Intelligence** 홈페이지 또는 **관리** 작업 영역, **클라이언트 설정** 노드, 클라이언트 설정 속성에서 클래스를 사용하도록 설정할 수 있습니다. 다음 절차 중 하나를 수행하십시오.  
 
 ##### <a name="to-enable-asset-intelligence-hardware-inventory-reporting-classes-from-the-asset-intelligence-home-page"></a>Asset Intelligence 홈페이지에서 Asset Intelligence 하드웨어 인벤토리 보고 클래스를 사용하도록 설정하려면  
@@ -70,7 +72,7 @@ Asset Intelligence는 소프트웨어 라이선스 사용을 인벤토리에 포
     >  이 절차를 사용하여 사용하도록 설정한 하드웨어 인벤토리 클래스에 종속된 Asset Intelligence 보고서는 클라이언트가 데이터를 검색하여 하드웨어 인벤토리로 반환할 때까지 데이터를 표시하지 않습니다.  
   
 
-###  <a name="a-namebkmkinstallassetintelligencesynchronizationpointa-install-an-asset-intelligence-synchronization-point"></a><a name="BKMK_InstallAssetIntelligenceSynchronizationPoint"></a> Install an Asset Intelligence Synchronization Point  
+###  <a name="BKMK_InstallAssetIntelligenceSynchronizationPoint"></a> Install an Asset Intelligence Synchronization Point  
 
 Asset Intelligence 동기화 지점 사이트 시스템 역할은 Configuration Manager 사이트를 System Center Online에 연결하여 Asset Intelligence 카탈로그 정보를 동기화하는 데 사용됩니다. Asset Intelligence 동기화 지점은 Configuration Manager 계층 구조의 최상위 사이트에 위치한 사이트 시스템에만 설치할 수 있으며 TCP 포트 443을 사용하여 System Center Online과 동기화하는 인터넷 액세스가 필요합니다.
 
@@ -110,7 +112,7 @@ Asset Intelligence 동기화 지점 사이트 시스템 역할은 Configuration 
 
 10. 마법사 완료 
 
-###  <a name="a-namebkmkenablesuccesslogoneventsa-enable-auditing-of-success-logon-events"></a><a name="BKMK_EnableSuccessLogonEvents"></a> Enable auditing of success logon events  
+###  <a name="BKMK_EnableSuccessLogonEvents"></a> Enable auditing of success logon events  
  네 가지 Asset Intelligence 보고서에 클라이언트 컴퓨터의 Windows 보안 이벤트 로그에서 수집된 정보가 표시됩니다. 다음은 성공 로그온 이벤트의 감사를 사용하도록 컴퓨터 보안 정책 로그온 설정을 구성하는 방법입니다.  
 
 ##### <a name="to-enable-success-logon-event-logging-by-using-a-local-security-policy"></a>로컬 보안 정책을 사용하여 성공 로그온 이벤트 로깅을 사용하도록 설정하려면  
@@ -129,7 +131,7 @@ Asset Intelligence 동기화 지점 사이트 시스템 역할은 Configuration 
 
 3.  결과 창에서 **로그온 이벤트 감사**를 두 번 클릭하고 **성공** 확인란이 선택되었는지 확인한 다음 **확인**을 선택합니다.  
 
-###  <a name="a-namebkmkimportsoftwarelicenseinformationa-import-software-license-information"></a><a name="BKMK_ImportSoftwareLicenseInformation"></a> Import software license information  
+###  <a name="BKMK_ImportSoftwareLicenseInformation"></a> Import software license information  
  다음 섹션에서는 소프트웨어 라이선스 가져오기 마법사를 사용하여 Microsoft 및 일반 소프트웨어 라이선스 정보를 Configuration Manager 사이트 데이터베이스로 가져오는 데 필요한 절차에 대해 설명합니다. 소프트웨어 라이선스 정보를 라이선스 계정 파일에서 사이트 데이터베이스로 가져올 때 사이트 서버 컴퓨터 계정은 소프트웨어 라이선스 정보를 가져오는 데 사용되는 파일 공유에 대한 NTFS 파일 시스템의 **모든 권한** 권한이 필요합니다.  
 
 > [!IMPORTANT]  
@@ -153,7 +155,7 @@ Asset Intelligence 동기화 지점 사이트 시스템 역할은 Configuration 
 
 6. 마법사를 완료합니다.  
 
-###  <a name="a-namebkmkcreategenerallicensestatementa-create-a-general-license-statement-information-file-for-import"></a><a name="BKMK_CreateGeneralLicenseStatement"></a> Create a general license statement information file for import  
+###  <a name="BKMK_CreateGeneralLicenseStatement"></a> Create a general license statement information file for import  
  일반 라이선스 계정은 쉼표로 구분된(.csv) 파일 형식으로 수동으로 만든 라이선스 가져오기 파일을 사용하여 Asset Intelligence 카탈로그에 가져올 수도 있습니다.  
 
 > [!NOTE]  
@@ -209,7 +211,7 @@ Asset Intelligence는 일반 라이선스 계정에서 지정하는 제품을 �
 |SupportExpirationDate|다음 형식의 날짜 값: MM/DD/YYYY|아니요|구매한 지원의 종료 날짜|  
 |설명|최대 255자|아니요|선택적 설명|  
 
-###  <a name="a-namebkmkconfiguremaintenancetasksa-configure-asset-intelligence-maintenance-tasks"></a><a name="BKMK_ConfigureMaintenanceTasks"></a> Configure Asset Intelligence maintenance tasks  
+###  <a name="BKMK_ConfigureMaintenanceTasks"></a> Configure Asset Intelligence maintenance tasks  
  다음 유지 관리 작업을 Asset Intelligence에 사용할 수 있습니다.  
 
 -   **인벤토리 정보를 사용하여 응용 프로그램 타이틀 확인**: 소프트웨어 인벤토리에 보고된 소프트웨어 타이틀이 Asset Intelligence 카탈로그 내 소프트웨어 타이틀과 일치하는지 확인합니다. 기본적으로 이 작업은 사용하도록 설정되어 있으며 토요일 오전 12시 이후부터 오전 5시 이전 사이에 실행되도록 예약되어 있습니다. 이 유지 관리 작업은 Configuration Manager 계층 구조의 최상위 사이트에서만 사용할 수 있습니다.  
@@ -232,9 +234,4 @@ Asset Intelligence는 일반 라이선스 계정에서 지정하는 제품을 �
 
     > [!NOTE]  
     >  처음 작업을 실행할 때 실패하는 경우 Configuration Manager가 작업을 성공적으로 실행할 때까지 또는 작업이 실행할 수 있는 기간까지 작업을 다시 실행하려고 시도합니다.  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

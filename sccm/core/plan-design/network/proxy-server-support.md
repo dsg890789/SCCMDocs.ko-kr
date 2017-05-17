@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: c4f30e4839709722b216262b21d7b51c07d24d1e
 ms.openlocfilehash: dc36be47310d2c2178c974a2b503d0b5f9f6e2ec
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -85,9 +87,4 @@ Microsoft Azure에서 클라우드 기반 배포 지점에 프록시 서버를 �
 3.  사이트 시스템 속성에서 **프록시** 탭을 선택한 다음 이 기본 사이트 서버에 프록시 설정을 구성합니다.  
 
 4.  **확인**을 클릭하여 새 프록시 서버 구성을 저장합니다.  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

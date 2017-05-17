@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 72263ec5e7104924a1ca46dc2000be9f8568599f
 ms.openlocfilehash: a776667cc9f24bd4a468afea76e466c34ce66864
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -344,9 +346,4 @@ Configuration Manager에서는 소프트웨어 인벤토리를 통해 수집한 
 >  계정 범위를 제한해야 합니다. 예를 들어 각 작업 순서마다 서로 다른 작업 순서 실행 계정을 만들어, 한 계정이 손상되는 경우 해당 계정에 액세스하는 클라이언트 컴퓨터만 손상되도록 할 수 있습니다.  
 >   
 >  컴퓨터에서 명령줄에 관리 권한이 필요한 경우에는 작업 순서를 실행할 모든 컴퓨터에 작업 순서 실행 계정 전용으로 사용할 로컬 관리자 계정을 만드는 것이 좋습니다. 계정이 더 이상 필요하지 않은 경우 즉시 삭제합니다.  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

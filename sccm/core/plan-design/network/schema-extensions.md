@@ -17,9 +17,11 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: noindex
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 7479e54b5db2eff893bf9fbaf52c104836cda519
 ms.openlocfilehash: 5b5540c35c02df6e3d06e4aa9269b8da3238233e
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -149,9 +151,4 @@ System Center Configuration Manager의 스키마를 확장하는 경우 다음 �
 > -   Class: cn=MS-SMS-Server-Locator-Point  
 
 System Center Configuration Manager 설치 미디어의 **\SMSSETUP\BIN\x64** 폴더에 있는 **ConfigMgr_ad_schema.LDF** 파일을 보면 위의 목록이 최신 상태인지 확인할 수 있습니다.  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

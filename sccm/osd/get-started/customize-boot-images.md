@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
 ms.openlocfilehash: ab2ecb64c9c80b4effed79ba08769c99473db0c4
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -300,9 +302,4 @@ Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deploy
     3.  3단계에서 확인한 부팅 이미지를 클릭합니다.  
 
     4.  **홈** 탭의 **배포** 그룹에서 **배포 지점 업데이트**를 클릭합니다.  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

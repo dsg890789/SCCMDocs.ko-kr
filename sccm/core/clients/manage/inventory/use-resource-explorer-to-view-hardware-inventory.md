@@ -15,9 +15,11 @@ caps.latest.revision: 7
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 05c27c7aa36e0b4236867766dab36125c31467b3
 ms.openlocfilehash: 6265ee70b70a715862b1651d2f3760bef096ee8a
+ms.contentlocale: ko-kr
+ms.lasthandoff: 01/03/2017
 
 
 ---
@@ -49,10 +51,5 @@ System Center Configuration Manager의 리소스 탐색기를 사용하여 계�
 3.  보려는 인벤토리가 포함된 컴퓨터를 선택한 다음 **홈** 탭 > **장치** 그룹에서 **시작** >  **리소스 탐색기**를 선택합니다.   
 
 4.  **리소스 탐색기** 창의 오른쪽 창에 있는 항목을 마우스 오른쪽 단추로 클릭하고 **속성**을 선택하여 수집된 인벤토리 정보를 좀 더 읽기 쉬운 형식으로 볼 수 있는 *<항목 이름\>***속성** 대화 상자를 엽니다.  
-
-
-
-
-<!--HONumber=Jan17_HO1-->
 
 

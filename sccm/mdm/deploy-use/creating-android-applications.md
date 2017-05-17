@@ -15,10 +15,11 @@ caps.latest.revision: 6
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 27a92dc1c3710ff55f0b145386319dda371533d9
 ms.openlocfilehash: d3b20a59a9147e09e58f04f83f97fd72ebfef5a1
-ms.lasthandoff: 04/07/2017
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="create-android-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 Android 응용 프로그램 만들기

@@ -13,14 +13,16 @@ ms.service:
 ms.technology:
 - configmgr-sum
 ms.assetid: 57184274-5fea-4d79-a2b4-22e08ed26daf
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 78524abd4c45f0b7402d6f1e85afc60bb72ab0ee
 ms.openlocfilehash: d736715f1f2c92b4c91f156ecb8abe3513811a34
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
 
-#  <a name="a-namebkmkmanualdeploya-manually-deploy-software-updates"></a><a name="BKMK_ManualDeploy"></a> 소프트웨어 업데이트 수동 배포  
+#  <a name="BKMK_ManualDeploy"></a> 소프트웨어 업데이트 수동 배포  
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -28,7 +30,7 @@ ms.openlocfilehash: d736715f1f2c92b4c91f156ecb8abe3513811a34
 
  다음 섹션에서는 소프트웨어 업데이트를 수동으로 배포하는 단계를 제공합니다.  
 
-##  <a name="a-namebkmk1searchcriteriaa-step-1-specify-search-criteria-for-software-updates"></a><a name="BKMK_1SearchCriteria"></a> 1단계: 소프트웨어 업데이트에 대한 검색 조건 지정  
+##  <a name="BKMK_1SearchCriteria"></a> 1단계: 소프트웨어 업데이트에 대한 검색 조건 지정  
  Configuration Manager 콘솔에는 수천 개의 소프트웨어 업데이트가 표시될 수 있습니다. 소프트웨어 업데이트 수동 배포를 위한 워크플로의 첫 단계는 배포할 소프트웨어 업데이트를 확인하는 것입니다. 예를 들어 50개 이상의 클라이언트 장치에 필요하고 **보안** 또는 **위험** 소프트웨어 업데이트 분류에 속하는 모든 소프트웨어 업데이트를 검색하는 기준을 제공할 수 있습니다.  
 
 > [!IMPORTANT]  
@@ -54,7 +56,7 @@ ms.openlocfilehash: d736715f1f2c92b4c91f156ecb8abe3513811a34
     > [!TIP]  
     >  선택적으로 **검색** 탭과 **저장** 그룹에 필터 기준을 저장할 수 있습니다.  
 
-##  <a name="a-namebkmk2updategroupa-step-2-create-a-software-update-group-that-contains-the-software-updates"></a><a name="BKMK_2UpdateGroup"></a> 2단계: 소프트웨어 업데이트를 포함하는 소프트웨어 업데이트 그룹 만들기  
+##  <a name="BKMK_2UpdateGroup"></a> 2단계: 소프트웨어 업데이트를 포함하는 소프트웨어 업데이트 그룹 만들기  
  소프트웨어 업데이트 그룹을 활용하면 배포 준비 과정에서 소프트웨어 업데이트를 효과적으로 구성할 수 있습니다. 소프트웨어 업데이트를 소프트웨어 업데이트 그룹에 수동으로 추가하거나 Configuration Manager를 통해 ADR을 사용하면 소프트웨어 업데이트를 새로운 또는 기존 소프트웨어 업데이트 그룹에 자동으로 추가할 수 있습니다. 새 소프트웨어 업데이트 그룹에 소프트웨어 업데이트를 수동으로 추가하려면 다음 절차를 따르세요.  
 
 #### <a name="to-manually-add-software-updates-to-a-new-software-update-group"></a>새 소프트웨어 업데이트 그룹에 소프트웨어 업데이트를 수동으로 추가하려면  
@@ -73,7 +75,7 @@ ms.openlocfilehash: d736715f1f2c92b4c91f156ecb8abe3513811a34
 
 7.  소프트웨어 업데이트 그룹을 선택하고 **홈** 탭의 **업데이트** 그룹에서 **구성원 표시** 를 클릭하여 그룹에 포함된 소프트웨어 업데이트의 목록을 표시합니다.  
 
-##  <a name="a-namebkmk3downloadcontenta-step-3-download-the-content-for-the-software-update-group"></a><a name="BKMK_3DownloadContent"></a> 3단계: 소프트웨어 업데이트 그룹에 대한 콘텐츠 다운로드  
+##  <a name="BKMK_3DownloadContent"></a> 3단계: 소프트웨어 업데이트 그룹에 대한 콘텐츠 다운로드  
  소프트웨어 업데이트를 배포하기 전에 선택적으로 소프트웨어 업데이트 그룹에 포함된 소프트웨어 업데이트의 콘텐츠를 다운로드할 수 있습니다. 소프트웨어 업데이트를 배포하기 전에 배포 지점에서 해당 콘텐츠를 사용할 수 있는지 확인하려면 이 작업을 선택하면 됩니다. 이렇게 하면 콘텐츠 제공과 관련해 발생할 수 있는 예기치 않은 문제를 최소화할 수 있습니다. 이 단계는 건너뛸 수 있습니다. 그 다음에는 콘텐츠가 배포 프로세스의 일부로 배포 지점에 다운로드되고 복사됩니다. 소프트웨어 업데이트 그룹에 소프트웨어 업데이트에 대한 콘텐츠를 다운로드하려면 다음 절차를 따르세요.  
 
 
@@ -160,7 +162,7 @@ ms.openlocfilehash: d736715f1f2c92b4c91f156ecb8abe3513811a34
 
 4. **홈** 탭의 **콘텐츠** 그룹에서 **상태 보기**를 클릭합니다.  
 
-##  <a name="a-namebkmk4deployupdategroupa-step-4-deploy-the-software-update-group"></a><a name="BKMK_4DeployUpdateGroup"></a> 4단계: 소프트웨어 업데이트 그룹 배포  
+##  <a name="BKMK_4DeployUpdateGroup"></a> 4단계: 소프트웨어 업데이트 그룹 배포  
  배포할 소프트웨어 업데이트를 결정하고 이 소프트웨어 업데이트를 소프트웨어 업데이트 그룹에 추가하고나면 소프트웨어 업데이트 그룹에서 이 소프트웨어 업데이트를 수동으로 배포할 수 있습니다. 소프트웨어 업데이트 그룹에서 소프트웨어 업데이트를 수동으로 배포하려면 다음 절차를 따르세요.  
 
 #### <a name="to-manually-deploy-the-software-updates-in-a-software-update-group"></a>소프트웨어 업데이트 그룹에서 소프트웨어 업데이트를 수동으로 배포하려면  
@@ -315,9 +317,4 @@ ms.openlocfilehash: d736715f1f2c92b4c91f156ecb8abe3513811a34
 
 ## <a name="next-steps"></a>다음 단계
 [소프트웨어 업데이트 모니터링](monitor-software-updates.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

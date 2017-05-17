@@ -15,9 +15,11 @@ caps.latest.revision: 6
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: cb1ac4f33b9ef291050a3406291b8cc1f112b586
+ms.contentlocale: ko-kr
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -44,7 +46,7 @@ Linux 및 UNIX용 System Center Configuration Manager 클라이언트는 하드�
 > [!TIP]  
 >  **운영 체제** 클래스에 **캡션** 값을 사용하여 쿼리 및 컬렉션에서 다양한 Linux 및 UNIX 운영 체제를 식별할 수 있습니다.  
 
-##  <a name="a-namebkmkconfighardwareforlnua-configuring-hardware-inventory-for-linux-and-unix-servers"></a><a name="BKMK_ConfigHardwareforLnU"></a> Linux 및 UNIX 서버에 대한 하드웨어 인벤토리 구성  
+##  <a name="BKMK_ConfigHardwareforLnU"></a> Linux 및 UNIX 서버에 대한 하드웨어 인벤토리 구성  
  기본 클라이언트 설정을 사용하거나 사용자 지정 클라이언트 장치 설정을 만들어 하드웨어 인벤토리를 구성할 수 있습니다. 사용자 지정 클라이언트 장치 설정을 사용하면 Linux 및 UNIX 서버에서만 수집하려는 클래스 및 속성을 구성할 수 있습니다. Linux 및 UNIX 서버에서 전체 및 델타 인벤토리를 수집할 시기에 대한 사용자 지정 일정을 지정할 수도 있습니다.  
 
  Linux 및 UNIX용 클라이언트에서는 다음과 같이 Linux 및 UNIX 서버에서 사용할 수 있는 하드웨어 인벤토리 클래스를 지원합니다.  
@@ -75,7 +77,7 @@ Linux 및 UNIX용 System Center Configuration Manager 클라이언트는 하드�
 
  이러한 인벤토리 클래스의 일부 속성은 Configuration Manager에서 Linux 및 UNIX 컴퓨터에 사용할 수 없습니다.  
 
-##  <a name="a-namebkmkoperationsforhardwareforlnua-operations-for-hardware-inventory"></a><a name="BKMK_OperationsforHardwareforLnU"></a> 하드웨어 인벤토리에 대한 작업  
+##  <a name="BKMK_OperationsforHardwareforLnU"></a> 하드웨어 인벤토리에 대한 작업  
  Linux 및 UNIX 서버에서 하드웨어 인벤토리를 수집한 후에는 다른 컴퓨터에서 수집한 인벤토리를 보는 것과 같은 방식으로 해당 정보를 보고 사용할 수 있습니다.  
 
 -   리소스 탐색기를 사용하면 Linux 및 UNIX 서버의 하드웨어 인벤토리에 대한 세부 정보를 볼 수 있습니다.  
@@ -92,7 +94,7 @@ Linux 및 UNIX용 System Center Configuration Manager 클라이언트는 하드�
 
  하드웨어 인벤토리에 대한 작업은 클라이언트 로그 파일인 **scxcm.log**에 입력됩니다.  
 
-##  <a name="a-namebkmkcustomhinvforlinuxa-how-to-use-open-management-infrastructure-to-create-custom-hardware-inventory"></a><a name="BKMK_CustomHINVforLinux"></a> 개방형 관리 인프라를 사용하여 사용자 지정 하드웨어 인벤토리를 만드는 방법  
+##  <a name="BKMK_CustomHINVforLinux"></a> 개방형 관리 인프라를 사용하여 사용자 지정 하드웨어 인벤토리를 만드는 방법  
  Linux 및 UNIX용 클라이언트는 OMI(개방형 관리 인프라)를 사용하여 만들 수 있는 사용자 지정 하드웨어 인벤토리를 지원합니다. 이렇게 하려면 다음 단계를 사용합니다.  
 
 1.  OMI 원본을 사용하여 사용자 지정 인벤토리 공급자 만들기  
@@ -101,12 +103,12 @@ Linux 및 UNIX용 System Center Configuration Manager 클라이언트는 하드�
 
 3.  새 공급자를 지원하기 위해 Configuration Manager를 사용하도록 설정  
 
-###  <a name="a-namebkmklinuxprovidera-create-a-custom-hardware-inventory-provider-for-linux-and-unix-computers"></a><a name="BKMK_LinuxProvider"></a> Linux 및 UNIX 컴퓨터에 대한 사용자 지정 하드웨어 인벤토리 공급자 만들기  
+###  <a name="BKMK_LinuxProvider"></a> Linux 및 UNIX 컴퓨터에 대한 사용자 지정 하드웨어 인벤토리 공급자 만들기  
  Linux 및 UNIX용 Configuration Manager 클라이언트에 대한 사용자 지정 하드웨어 인벤토리 공급자를 만들려면 **OMI Source - v.1.0.6**을 사용하고 OMI 시작 가이드에 있는 다음 지침을 따릅니다. 이 프로세스에는 새 공급자의 스키마를 정의하는 MOF(Managed Object Format) 파일 만들기가 포함됩니다. 나중에 MOF 파일을 Configuration Manager로 가져와서 새 사용자 지정 인벤토리 클래스를 지원할 수 있습니다.  
 
  OMI Source v.1.0.6, 및 OMI 시작 가이드 모두 [Open Group](http://go.microsoft.com/fwlink/p/?LinkId=262317) 웹 사이트에서 다운로드할 수 있습니다. 이 다운로드는 OpenGroup.org 웹 사이트의 **OMI(개방형 관리 인프라)** 웹 페이지에 있는 [문서](http://go.microsoft.com/fwlink/p/?LinkId=286805)탭에 있습니다.  
 
-###  <a name="a-namebkmkaddprovidertolinuxa-configure-each-computer-that-runs-linux-or-unix-with-the-custom-hardware-inventory-provider"></a><a name="BKMK_AddProvidertoLinux"></a> 사용자 지정 하드웨어 인벤토리 공급자를 사용하여 Linux 또는 UNIX를 실행하는 각 컴퓨터 구성  
+###  <a name="BKMK_AddProvidertoLinux"></a> 사용자 지정 하드웨어 인벤토리 공급자를 사용하여 Linux 또는 UNIX를 실행하는 각 컴퓨터 구성  
  사용자 지정 인벤토리 공급자를 만든 후에는 수집할 인벤토리가 있는 각 컴퓨터에 공급자 라이브러리 파일을 복사하고 등록해야 합니다.  
 
 1.  공급자 라이브러리를 인벤토리를 수집하려는 각 Linux 및 UNIX 컴퓨터에 복사합니다. 공급자 라이브러리의 이름은 **XYZ_MyProvider.so**와 유사합니다.  
@@ -120,13 +122,8 @@ Linux 및 UNIX용 System Center Configuration Manager 클라이언트는 하드�
 > [!TIP]  
 >  소프트웨어 배포를 사용하여 사용자 지정 공급자를 배포하고 각 Linux 및 UNIX 클라이언트 컴퓨터에 사용자 지정 공급자를 등록합니다.  
 
-###  <a name="a-namebkmkaddlinuxprovidertocma-enable-the-new-inventory-class-in-configuration-manager"></a><a name="BKMK_AddLinuxProvidertoCM"></a> Configuration Manager에서 새 인벤토리 클래스 사용  
+###  <a name="BKMK_AddLinuxProvidertoCM"></a> Configuration Manager에서 새 인벤토리 클래스 사용  
  Linux 및 UNIX 컴퓨터에서 새 공급자가 보고하는 인벤토리에 대해 Configuration Manager로 보고하려면 먼저 사용자 지정 공급자의 스키마를 정의하는 MOF(Managed Object Format) 파일을 가져와야 합니다.  
 
  사용자 지정 MOF 파일을 Configuration Manager로 가져오려면 [System Center Configuration Manager에서 하드웨어 인벤토리를 구성하는 방법](../../../../core/clients/manage/inventory/configure-hardware-inventory.md)을 참조하세요.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

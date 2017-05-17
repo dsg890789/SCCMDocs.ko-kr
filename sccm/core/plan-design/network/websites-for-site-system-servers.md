@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 26bbec1e8d6c53ce297689ba4390b9347229eb15
 ms.openlocfilehash: 886ff3b8e867fc340c79648a57feae81653b0ccd
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -34,7 +36,7 @@ ms.openlocfilehash: 886ff3b8e867fc340c79648a57feae81653b0ccd
 
 
 
-##  <a name="a-namebkmkwhat2knowa-what-to-know-before-choosing-to-use-custom-websites"></a><a name="BKMK_What2Know"></a> 사용자 지정 웹 사이트를 사용하도록 선택하기 전에 확인할 사항  
+##  <a name="BKMK_What2Know"></a> 사용자 지정 웹 사이트를 사용하도록 선택하기 전에 확인할 사항  
  기본적으로 사이트 시스템 역할은 IIS에서 **기본 웹 사이트**를 사용합니다. 기본 웹 사이트는 사이트 시스템 역할을 설치할 때 자동으로 설정됩니다. 그러나 기본 사이트에서는 사용자 지정 웹 사이트를 대신 사용하도록 선택할 수 있습니다. 사용자 지정 웹 사이트를 사용하는 경우  
 
 -   사용자 지정 웹 사이트는 개별 사이트 시스템 서버가 아닌 전체 사이트에 대해 사용하도록 설정됩니다.  
@@ -132,9 +134,4 @@ ms.openlocfilehash: 886ff3b8e867fc340c79648a57feae81653b0ccd
     2.  **SMSWEB** 웹 사이트를 시작합니다.  
 
     3.  사이트의 사이트 서버에서 **SMS_SITE_COMPONENT_MANAGER** 서비스를 다시 시작합니다.  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

@@ -15,9 +15,11 @@ caps.latest.revision: 15
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 017bd5b899b364fc832c721d63cc7dbad0a11671
 ms.openlocfilehash: b88bc5f734b85527b81e5848deb0617db4c8dfbc
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -263,9 +265,4 @@ Windows Defender에서 검색된 사용자 동의 없이 설치되거나 컴퓨�
  [Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결](troubleshoot-endpoint-client.md)   
 
  [Endpoint Protection 클라이언트 도움말](endpoint-protection-client-help.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

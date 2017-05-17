@@ -15,9 +15,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 1defe96163f1bb70f586619ad89098c6f0e6c665
 ms.openlocfilehash: 3eea3a6e5f23808570ded4be3bd7412954518b96
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -44,7 +46,7 @@ System Center Configuration Manager의 역할 기반 관리에서는 각 관리�
 
 -   [관리자의 관리 범위 수정](#BKMK_ModAdminUser)  
 
-##  <a name="a-namebkmkcreatesecrolea-create-custom-security-roles"></a><a name="BKMK_CreateSecRole"></a> 사용자 지정 보안 역할 만들기  
+##  <a name="BKMK_CreateSecRole"></a> 사용자 지정 보안 역할 만들기  
  Configuration Manager에서는 몇 가지 기본 제공 보안 역할을 제공합니다. 다른 보안 역할이 필요하면 기존 보안 역할의 사본을 만든 다음 이 사본을 수정하여 사용자 지정 보안 역할을 만들 수 있습니다. 사용자 지정 보안 역할을 만들어 관리자에게 현재 할당된 보안 역할에 포함되지 않은 다른 보안 권한을 부여할 수도 있습니다. 사용자 지정 보안 역할을 사용하면 필요한 권한만 부여할 수 있고 필요한 권한 이상의 권한을 부여하는 보안 역할을 할당하지 않을 수 있습니다.  
 
  기존 보안 역할을 템플릿으로 사용하여 새 보안 역할을 만들려면 다음 절차를 수행하십시오.  
@@ -83,7 +85,7 @@ System Center Configuration Manager의 역할 기반 관리에서는 각 관리�
             > [!NOTE]  
             >  보안 역할을 가져온 후에는 보안 역할 속성을 편집하여 해당 보안 역할과 연결된 개체 권한을 변경할 수 있습니다.  
 
-##  <a name="a-namebkmkconfigsecrolea-configure-security-roles"></a><a name="BKMK_ConfigSecRole"></a> 보안 역할 구성  
+##  <a name="BKMK_ConfigSecRole"></a> 보안 역할 구성  
  보안 역할에 정의된 보안 권한 그룹을 보안 작업 할당이라고 합니다. 보안 작업 할당은 개체 유형과 각 개체 유형에 사용할 수 있는 작업의 조합을 나타냅니다. 사용자 지정 보안 역할에 대해서는 사용 가능한 보안 작업을 수정할 수 있지만 Configuration Manager에서 제공하는 기본 제공 보안 역할은 수정할 수 없습니다.  
 
  보안 역할의 보안 작업을 수정하려면 다음 절차를 수행하십시오.  
@@ -109,7 +111,7 @@ System Center Configuration Manager의 역할 기반 관리에서는 각 관리�
 
 8.  보안 작업 할당 구성을 마쳤으면 **확인**을 선택하여 새 보안 역할을 저장합니다.  
 
-##  <a name="a-namebkmkconfigsecscopea-configure-security-scopes-for-an-object"></a><a name="BKMK_ConfigSecScope"></a> 개체에 대한 보안 범위 구성  
+##  <a name="BKMK_ConfigSecScope"></a> 개체에 대한 보안 범위 구성  
  개체에 대한 보안 범위의 연결은 보안 범위가 아니라 개체에서 관리합니다. 보안 범위에서 직접 구성할 수 있는 것은 보안 범위의 이름과 설명을 변경하는 것뿐입니다. 보안 범위 속성을 볼 때 보안 범위의 이름과 설명을 변경하려면 **보안 범위** 보안 개체에 대한 **수정** 권한이 있어야 합니다.  
 
  Configuration Manager에서 새 개체를 만들면 개체를 만드는 데 사용된 계정의 보안 역할이 **만들기** 권한이나 **보안 범위 설정** 권한을 제공하는 경우 새 개체는 해당 보안 역할과 연결된 각 보안 범위에 연결됩니다. 개체가 생성된 후 해당 개체와 연결된 보안 범위만 변경할 수 있습니다.  
@@ -131,14 +133,14 @@ System Center Configuration Manager의 역할 기반 관리에서는 각 관리�
     > [!NOTE]  
     >  새 개체를 만들 때 개체를 여러 보안 범위에 할당할 수 있습니다. 개체에 연결된 보안 범위 수를 수정하려면 개체를 만든 후에 이 할당을 변경해야 합니다.  
 
-##  <a name="a-namebkmkconfigcolla-configure-collections-to-manage-security"></a><a name="BKMK_ConfigColl"></a> 보안을 관리할 컬렉션 구성  
+##  <a name="BKMK_ConfigColl"></a> 보안을 관리할 컬렉션 구성  
  역할 기반 관리를 위해 컬렉션을 구성하는 절차는 없습니다. 컬렉션에는 역할 기반 관리 구성이 없습니다. 대신 관리자를 구성할 때 관리자에게 컬렉션을 할당합니다. 사용자에게 할당된 보안 역할에서 사용할 수 있는 컬렉션 보안 작업에 따라 컬렉션 및 컬렉션 리소스(컬렉션 구성원)에 대한 관리자의 권한이 결정됩니다.  
 
  관리자에게 한 컬렉션에 대한 권한이 있으면 컬렉션에 대한 권한도 해당 컬렉션으로 제한됩니다. 예를 들어 조직에서 '모든 데스크톱'이라는 컬렉션을 사용하고 '모든 데스크톱' 컬렉션으로 제한된 '모든 북미 데스크톱'이라는 컬렉션이 있는 경우, 관리자에게 '모든 데스크톱'에 대한 권한이 있으면 '모든 북미 데스크톱' 컬렉션에 대해서도 동일한 권한을 갖게 됩니다.
 
  또한 관리자는 직접 할당된 컬렉션에서는 **삭제** 또는 **수정** 권한을 사용할 수 없습니다. 그러나 해당 컬렉션에서만 사용하도록 제한된 이러한 권한을 컬렉션에 사용할 수 있습니다. 이전 예에서 보면 관리자가 '모든 북미 데스크톱' 컬렉션은 삭제하거나 수정할 수 있지만 '모든 데스크톱' 컬렉션은 삭제하거나 수정할 수 없습니다.  
 
-##  <a name="a-namebkmkcreateadminusera-create-a-new-administrative-user"></a><a name="BKMK_Create_AdminUser"></a> 새 관리자 만들기  
+##  <a name="BKMK_Create_AdminUser"></a> 새 관리자 만들기  
  개인 또는 보안 그룹의 구성원에게 Configuration Manager를 관리할 수 있는 권한을 부여하려면 Configuration Manager에서 관리자를 만들고 사용자 또는 사용자 그룹의 Windows 계정을 지정합니다. Configuration Manager의 각 관리자에게는 보안 역할과 보안 범위를 하나 이상 할당해야 합니다. 관리자의 관리 범위를 제한하는 컬렉션을 할당할 수도 있습니다.  
 
  새 관리자를 만들려면 다음 절차를 수행하십시오.  
@@ -173,7 +175,7 @@ System Center Configuration Manager의 역할 기반 관리에서는 각 관리�
 
     -   **지정한 보안 범위 또는 컬렉션의 보안 개체만**을 선택한 경우 **추가**를 선택하여 다른 컬렉션과 보안 범위를 선택할 수 있습니다. 또는 목록에서 하나 이상의 개체를 선택한 다음 **제거**를 선택하여 제거합니다. **확인**을 선택하여 이 절차를 완료합니다.  
 
-##  <a name="a-namebkmkmodadminusera-modify-the-administrative-scope-of-an-administrative-user"></a><a name="BKMK_ModAdminUser"></a> 관리자의 관리 범위 수정  
+##  <a name="BKMK_ModAdminUser"></a> 관리자의 관리 범위 수정  
  사용자와 연결된 보안 역할, 보안 범위 및 컬렉션을 추가하거나 제거하여 관리자의 관리 범위를 수정할 수 있습니다. 각 관리자는 각각 하나 이상의 보안 역할과 보안 범위에 연결해야 합니다. 사용자의 관리 범위에 하나 이상의 컬렉션을 할당해야 할 수도 있습니다. 대부분의 보안 역할은 컬렉션과 상호 작용하며 할당된 컬렉션이 없으면 제대로 작동하지 않습니다.  
 
  관리자를 수정할 때 할당된 보안 역할에 보안 개체를 연결하는 동작을 변경할 수 있습니다. 선택할 수 있는 동작은 다음 세 가지입니다.  
@@ -300,9 +302,4 @@ System Center Configuration Manager의 역할 기반 관리에서는 각 관리�
 
     > [!CAUTION]  
     >  보안 역할이 관리자에게 컬렉션 배포 권한을 부여할 경우 해당 관리자가 개체 **읽기** 권한을 갖고 있는 보안 범위에서 개체를 배포할 수 있습니다. 이 보안 범위가 다른 보안 역할에 연결된 경우에도 마찬가지입니다.  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

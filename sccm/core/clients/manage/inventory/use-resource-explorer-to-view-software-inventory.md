@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 9206b82eca02877c30eebf146d42bcca7290eb42
 ms.openlocfilehash: 6189726bbcade8229e0b2e929ebedeefdbf266a4
+ms.contentlocale: ko-kr
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -53,9 +55,4 @@ System Center Configuration Manager의 리소스 탐색기를 사용하여 계�
 
 4.  리소스 탐색기 창의 오른쪽 창에 있는 항목을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 선택하여 수집된 인벤토리 정보를 좀 더 읽기 쉬운 형식으로 볼 수 있습니다.  
  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

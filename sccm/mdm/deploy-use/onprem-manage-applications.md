@@ -16,10 +16,11 @@ caps.handback.revision: 0
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
 ms.openlocfilehash: 4085b007f006a4cfaeaef802d750b03018d6a683
-ms.lasthandoff: 03/06/2017
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="manage-applications-for-on-premises-mobile-device-management"></a>온-프레미스 모바일 장치 관리를 사용하여 응용 프로그램 관리

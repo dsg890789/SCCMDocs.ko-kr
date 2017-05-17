@@ -13,9 +13,11 @@ ms.service:
 ms.technology:
 - configmgr-sum
 ms.assetid: 1a997c30-8e71-4be5-89ee-41efb2c8d199
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
 ms.openlocfilehash: fd9c1e9418ff1956c6ef98753e23a293440179be
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 
@@ -108,9 +110,4 @@ ms.openlocfilehash: fd9c1e9418ff1956c6ef98753e23a293440179be
 처음으로 소프트웨어 업데이트를 동기화한 후 또는 새 분류나 제품을 사용할 수 있게 되면 [새 분류 및 제품을 구성](configure-classifications-and-products.md)하여 소프트웨어 업데이트를 새 기준과 동기화해야 합니다.
 
 소프트웨어 업데이트를 필요한 기준과 동기화한 후 [소프트웨어 업데이트에 대한 설정을 관리](manage-settings-for-software-updates.md)합니다.  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -15,9 +15,11 @@ caps.latest.revision: 5
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 860815010068422f2d8854ed2d574c24cc386891
 ms.openlocfilehash: 63a3c2ef66c80d1da9b50e67166a2196cf1b081b
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="configure-discovery-methods-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 검색 방법 구성
@@ -44,7 +46,7 @@ ms.openlocfilehash: 63a3c2ef66c80d1da9b50e67166a2196cf1b081b
 4.  **확인**을 선택하여 구성을 저장합니다.  
 
 
-##  <a name="a-namebkmkconfigadforestdisca-configure-active-directory-forest-discovery"></a><a name="BKMK_ConfigADForestDisc"></a> Active Directory 포리스트 검색 구성  
+##  <a name="BKMK_ConfigADForestDisc"></a> Active Directory 포리스트 검색 구성  
 Active Directory 포리스트 검색 구성을 완료하려면 다음 두 위치에서 설정을 구성해야 합니다.  
 
 -   **검색 방법** 노드에서 다음과 같이 할 수 있습니다.
@@ -98,7 +100,7 @@ Active Directory 포리스트 검색을 사용하도록 설정하고 Active Dire
 
 4.  Active Directory 포리스트 검색에 사용하도록 이 포리스트의 구성을 완료한 후에는 **확인**을 선택하여 구성을 저장합니다.  
 
-##  <a name="a-namebkmkconfigaddiscgenerala-configure-active-directory-discovery-for-computers-users-or-groups"></a><a name="BKMK_ConfigADDiscGeneral"></a> 컴퓨터, 사용자 또는 그룹에 대해 Active Directory 검색 구성  
+##  <a name="BKMK_ConfigADDiscGeneral"></a> 컴퓨터, 사용자 또는 그룹에 대해 Active Directory 검색 구성  
  컴퓨터, 사용자 또는 그룹의 검색을 구성하려면 다음 섹션의 정보를 참조하세요. 아래와 같은 검색 방법을 사용하게 됩니다.  
 
 -   Active Directory 그룹 검색  
@@ -210,7 +212,7 @@ Active Directory 포리스트 검색을 사용하도록 설정하고 Active Dire
 
 8.  이 사이트의 Active Directory 사용자 검색 구성을 마쳤으면 **확인**을 선택하여 구성을 저장합니다.  
 
-##  <a name="a-namebkmkconfighbdisca-configure-heartbeat-discovery"></a><a name="BKMK_ConfigHBDisc"></a> 하트비트 검색 구성  
+##  <a name="BKMK_ConfigHBDisc"></a> 하트비트 검색 구성  
  기본적으로 하트비트 검색은 Configuration Manager 기본 사이트를 설치하면 사용하도록 설정됩니다. 그러므로 기본 옵션인&7;일을 사용하고 싶지 않은 경우 클라이언트가 하트비트 DDR(검색 데이터 기록)을 관리 지점에 보내는 일정만 구성하면 됩니다.  
 
 > [!NOTE]  
@@ -226,10 +228,10 @@ Active Directory 포리스트 검색을 사용하도록 설정하고 Active Dire
 
 4.  클라이언트에서 하트비트 DDR(검색 데이터 기록)을 제출할 빈도를 구성한 다음 **확인**을 선택하여 구성을 저장합니다.  
 
-##  <a name="a-namebkmkconfignetworkdisca-configure-network-discovery"></a><a name="BKMK_ConfigNetworkDisc"></a> 네트워크 검색 구성  
+##  <a name="BKMK_ConfigNetworkDisc"></a> 네트워크 검색 구성  
  네트워크 검색을 구성하려면 다음 섹션의 정보를 참조하십시오.  
 
-###  <a name="a-namebkmkaboutconfignetworkdisca-about-configuring-network-discovery"></a><a name="BKMK_AboutConfigNetworkDisc"></a> 네트워크 검색 구성 정보  
+###  <a name="BKMK_AboutConfigNetworkDisc"></a> 네트워크 검색 구성 정보  
  네트워크 검색을 구성하기 전에 다음 사항을 알아 두어야 합니다.  
 
 -   사용 가능한 네트워크 검색 수준  
@@ -244,14 +246,14 @@ Active Directory 포리스트 검색을 사용하도록 설정하고 Active Dire
 
  예를 들어 특정 SNMP 커뮤니티 이름을 사용하는 모든 SNMP(Simple Network Management Protocol)를 검색할 수 있습니다. 그리고, 동일한 검색을 실행하는 동안 특정 서브넷에서 검색을 사용하지 않도록 설정할 수도 있습니다. 네트워크 검색을 실행하면 사용하지 않도록 설정된 서브넷에서는 지정된 커뮤니티 이름을 사용하는 SNMP 장치를 검색하지 않습니다.  
 
-####  <a name="a-namebkmkdeterminenettopologya-determine-your-network-topology"></a><a name="BKMK_DetermineNetTopology"></a> 네트워크 토폴로지 결정  
+####  <a name="BKMK_DetermineNetTopology"></a> 네트워크 토폴로지 결정  
  토폴로지 전용 검색을 사용하면 네트워크를 매핑할 수 있습니다. 이 검색 유형은 잠재적 클라이언트는 검색하지 않습니다. 토폴로지 전용 네트워크 검색은 SNMP에 의존합니다.  
 
  네트워크 토폴로지를 매핑할 경우 **네트워크 검색 속성** 대화 상자의 **SNMP** 탭에서 **최대 홉 수**를 구성해야 합니다. 단 몇 회의 홉만을 통해 검색 실행 시 사용되는 네트워크 대역폭을 제어할 수 있습니다. 네트워크에서 더 많은 항목을 검색함에 따라 홉 수를 증가시켜 네트워크 토폴로지에 대해 더 자세히 파악할 수 있습니다.  
 
  네트워크 토폴로지를 파악한 후에는, 네트워크 검색에서 검색되는 네트워크 세그먼트를 제한하기 위해 관련 구성을 사용하는 동시에 네트워크 검색의 추가 속성을 구성하여 잠재적 클라이언트 및 해당 운영 체제를 검색할 수 있습니다.  
 
-####  <a name="a-namebkmklimitbysubneta-limit-searches-by-using-subnets"></a><a name="BKMK_LimitBySubnet"></a> 서브넷을 사용하여 검색 제한  
+####  <a name="BKMK_LimitBySubnet"></a> 서브넷을 사용하여 검색 제한  
  검색 실행 시 특정 서브넷을 검색하도록 네트워크 검색을 구성할 수 있습니다. 기본적으로 네트워크 검색은 검색을 실행하는 서버의 서브넷을 검색합니다. 구성하고 사용하도록 설정하는 모든 추가 서브넷은 SNMP 및 DHCP(Dynamic Host Configuration Protocol) 검색 옵션에만 적용됩니다. 네트워크 검색에서 도메인을 검색할 때 이 작업은 서브넷 구성에 의해 제한되지 않습니다.  
 
  **네트워크 검색 속성** 대화 상자의 **서브넷** 탭에서 하나 이상의 서브넷을 지정한 경우 **사용** 으로 표시된 서브넷만 검색됩니다.  
@@ -264,7 +266,7 @@ Active Directory 포리스트 검색을 사용하도록 설정하고 Active Dire
 
 -   도메인 기반 쿼리는 서브넷에 배치된 리소스를 검색할 수 있습니다.  
 
-####  <a name="a-namebkmksearchbydomaina-search-a-specific-domain"></a><a name="BKMK_SearchByDomain"></a> 특정 도메인 검색  
+####  <a name="BKMK_SearchByDomain"></a> 특정 도메인 검색  
  검색 실행 시 특정 도메인 또는 도메인 집합을 검색하도록 네트워크 검색을 구성할 수 있습니다. 기본적으로 네트워크 검색은 검색을 실행하는 서버의 로컬 도메인을 검색합니다.  
 
  **네트워크 검색 속성** 대화 상자의 **도메인** 탭에서 하나 이상의 도메인을 지정한 경우 **사용** 으로 표시된 도메인만 검색됩니다.  
@@ -277,7 +279,7 @@ Active Directory 포리스트 검색을 사용하도록 설정하고 Active Dire
 
 -   DHCP 서버는 도메인에 배치된 리소스의 목록과 함께 계속 응답 가능합니다.  
 
-####  <a name="a-namebkmklimitbysnmpnamea-limit-searches-by-using-snmp-community-names"></a><a name="BKMK_LimitBySNMPname"></a> SNMP 커뮤니티 이름을 사용하여 검색 제한  
+####  <a name="BKMK_LimitBySNMPname"></a> SNMP 커뮤니티 이름을 사용하여 검색 제한  
  검색 실행 시 특정 SNMP 커뮤니티 또는 커뮤니티 집합을 검색하도록 네트워크 검색을 구성할 수 있습니다. 기본적으로 **public** 이라는 커뮤니티 이름이 구성되어 사용됩니다.  
 
  네트워크 검색에서는 커뮤니티 이름을 사용하여 SNMP 장치인 라우터에 대한 액세스 권한을 얻습니다. 라우터는 네트워크 검색에 다른 라우터에 대한 정보 및 첫 번째 라우터에 연결된 서브넷에 대한 정보를 제공할 수 있습니다.  
@@ -290,7 +292,7 @@ Active Directory 포리스트 검색을 사용하도록 설정하고 Active Dire
 > [!NOTE]  
 >  SNMP 커뮤니티 이름을 사용하는 것 외에도 특정 SNMP 장치의 IP 주소 또는 확인 가능 이름을 지정할 수 있습니다. 이 작업은 **네트워크 검색 속성** 대화 상자의 **SNMP 장치** 탭에서 수행합니다.  
 
-####  <a name="a-namebkmksearchbydhcpa-search-a-specific-dhcp-server"></a><a name="BKMK_SearchByDHCP"></a> 특정 DHCP 서버 검색  
+####  <a name="BKMK_SearchByDHCP"></a> 특정 DHCP 서버 검색  
  검색 실행 시 특정 DHCP 서버 또는 여러 서버를 사용하여 DHCP 클라이언트를 검색하도록 네트워크 검색을 구성할 수 있습니다.  
 
  네트워크 검색에서는 **네트워크 검색 속성** 대화 상자의 **DHCP** 탭에 지정한 각 DHCP 서버를 검색합니다. 검색을 실행하는 서버가 DHCP 서버에서 IP 주소를 임대할 경우 **사이트 서버에 사용하도록 구성된 DHCP 서버 포함** 확인란을 선택하면 해당 DHCP 서버를 검색하도록 구성할 수 있습니다.  
@@ -298,7 +300,7 @@ Active Directory 포리스트 검색을 사용하도록 설정하고 Active Dire
 > [!NOTE]  
 >  네트워크 검색에 DHCP 서버를 성공적으로 구성하려면 해당 환경에서 IPv4를 지원해야 합니다. 네트워크 검색은 네이티브 IPv6 환경의 DHCP 서버를 사용하도록 구성할 수 없습니다.  
 
-###  <a name="a-namebkmkhowtoconfignetdisca-how-to-configure-network-discovery"></a><a name="BKMK_HowToConfigNetDisc"></a> 네트워크 검색을 구성하는 방법  
+###  <a name="BKMK_HowToConfigNetDisc"></a> 네트워크 검색을 구성하는 방법  
  다음 절차에 따라 먼저 네트워크 토폴로지만 검색한 다음, 하나 이상의 사용 가능한 네트워크 검색 옵션을 사용하여 네트워크 검색에서 잠재적 클라이언트를 검색하도록 구성합니다.  
 
 ##### <a name="to-determine-your-network-topology"></a>네트워크 토폴로지를 확인하려면  
@@ -407,7 +409,7 @@ Active Directory 포리스트 검색을 사용하도록 설정하고 Active Dire
 
 12. **확인**을 선택하여 구성을 저장합니다.  
 
-###  <a name="a-namebkmkhowtoverifynetdisca-how-to-verify-that-network-discovery-has-finished"></a><a name="BKMK_HowToVerifyNetDisc"></a> 네트워크 검색이 완료되었는지 확인하는 방법  
+###  <a name="BKMK_HowToVerifyNetDisc"></a> 네트워크 검색이 완료되었는지 확인하는 방법  
  네트워크 검색을 완료하는 데 필요한 시간은 여러 요소에 따라 달라질 수 있습니다. 이러한 요소는 다음과 같습니다.  
 
 -   네트워크의 크기  
@@ -454,9 +456,4 @@ Active Directory 포리스트 검색을 사용하도록 설정하고 Active Dire
     -   설명: **이 구성 요소가 시작되었습니다.**  
 
     이 정보를 통해 네트워크 검색이 시작되었음을 확인할 수 있습니다. 이 정보가 나타나지 않는 경우 네트워크 검색 일정을 다시 지정하십시오.  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

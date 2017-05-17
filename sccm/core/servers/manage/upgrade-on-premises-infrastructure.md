@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 2e711cce2435957f3e85dad08f17260e1a224fc2
 ms.openlocfilehash: c6448932e91a02984ca57cef0b75c10ea3f43fa1
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -32,7 +34,7 @@ ms.openlocfilehash: c6448932e91a02984ca57cef0b75c10ea3f43fa1
 
 - System Center Configuration Manager 인프라를 새 버전으로 업데이트하려면 [System Center Configuration Manager용 업데이트](/sccm/core/servers/manage/updates)를 참조하세요.
 
-##  <a name="a-namebkmksupconfigupgradesitesrva-upgrade-the-operating-system-of-site-systems"></a><a name="BKMK_SupConfigUpgradeSiteSrv"></a> 사이트 시스템의 운영 체제 업그레이드  
+##  <a name="BKMK_SupConfigUpgradeSiteSrv"></a> 사이트 시스템의 운영 체제 업그레이드  
  Configuration Manager는 다음과 같은 상황에서 사이트 서버를 호스트하는 서버의 운영 체제 및 사이트 시스템 역할을 호스트하는 원격 서버의 현재 위치 업그레이드를 지원합니다.  
 
 -   업그레이드 후 Windows의 서비스 팩 수준이 Configuration Manager에서 계속 지원되는 경우 상위 Windows Server 서비스 팩으로의 현재 위치 업그레이드  
@@ -148,7 +150,7 @@ ms.openlocfilehash: c6448932e91a02984ca57cef0b75c10ea3f43fa1
 
 
 
-##  <a name="a-namebkmksupconfigupgradeclienta-upgrade-the-operating-system-of-configuration-manager-clients"></a><a name="BKMK_SupConfigUpgradeClient"></a> Configuration Manager 클라이언트의 운영 체제 업그레이드  
+##  <a name="BKMK_SupConfigUpgradeClient"></a> Configuration Manager 클라이언트의 운영 체제 업그레이드  
  Configuration Manager는 다음과 같은 상황에서 Configuration Manager 클라이언트의 운영 체제 현재 위치 업그레이드를 지원합니다.  
 
 -   업그레이드 후의 서비스 팩 수준이 Configuration Manager에서 계속 지원되는 경우 상위 Windows 서비스 팩으로의 현재 위치 업그레이드  
@@ -157,7 +159,7 @@ ms.openlocfilehash: c6448932e91a02984ca57cef0b75c10ea3f43fa1
 
 -   Windows 10의 빌드 간 서비스 업그레이드.  자세한 내용은 [System Center Configuration Manager를 사용하여 Windows as a Service 관리](../../../osd/deploy-use/manage-windows-as-a-service.md)를 참조하세요.  
 
-##  <a name="a-namebkmksupconfigupgradedbsrva-upgrade-sql-server-on-the-site-database-server"></a><a name="BKMK_SupConfigUpgradeDBSrv"></a> 사이트 데이터베이스 서버에서 SQL Server 업그레이드  
+##  <a name="BKMK_SupConfigUpgradeDBSrv"></a> 사이트 데이터베이스 서버에서 SQL Server 업그레이드  
   Configuration Manager는 사이트 데이터베이스 서버에서 지원되는 SQL 버전의 SQL Server 현재 위치 업그레이드를 지원합니다. 이 섹션의 SQL Server 업그레이드 시나리오는 Configuration Manager에서 지원되며 각 시나리오에 대한 요구 사항이 포함되어 있습니다.
 
  Configuration Manager에서 지원하는 SQL Server 버전에 대한 자세한 내용은 [System Center Configuration Manager에 대한 SQL Server 버전 지원](../../../core/plan-design/configs/support-for-sql-server-versions.md)을 참조하세요.  
@@ -210,9 +212,4 @@ SQL Server에 대한 자세한 내용은 TechNet에서 SQL Server 설명서를 �
 
 > [!NOTE]  
 >  중앙 관리 사이트에서 사용 중인 SQL Server 버전을 Standard Edition에서 Datacenter 또는 Enterprise Edition으로 변경할 때 계층의 클라이언트 수를 제한하는 데이터베이스 파티션은 변경되지 않습니다.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

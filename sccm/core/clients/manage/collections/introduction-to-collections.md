@@ -15,9 +15,11 @@ caps.latest.revision: 8
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 05c27c7aa36e0b4236867766dab36125c31467b3
 ms.openlocfilehash: fd4c6fd85d12592b3d4f57a48cf6da6c7a668615
+ms.contentlocale: ko-kr
+ms.lasthandoff: 01/03/2017
 
 
 ---
@@ -63,10 +65,5 @@ ms.openlocfilehash: fd4c6fd85d12592b3d4f57a48cf6da6c7a668615
 
 ### <a name="custom-collections"></a>사용자 지정 컬렉션  
  Configuration Manager에서 사용자 지정 컬렉션을 만드는 경우 해당 컬렉션의 멤버 자격은 [System Center Configuration Manager에서 컬렉션을 만드는 방법](../../../../core/clients/manage/collections/create-collections.md)에서 설명하는 것처럼 하나 이상의 컬렉션 규칙에 의해 결정됩니다. 
-
-
-
-
-<!--HONumber=Jan17_HO1-->
 
 

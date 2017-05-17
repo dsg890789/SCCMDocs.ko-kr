@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
 ms.openlocfilehash: 87ab9925717a307cbda3cea1f2e470ae012fa067
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -28,10 +30,10 @@ ms.openlocfilehash: 87ab9925717a307cbda3cea1f2e470ae012fa067
 
 System Center Configuration Manager는 현재 Configuration Manager 환경에서 Windows 장치 드라이버를 관리하는 데 사용할 수 있는 드라이버 카탈로그를 제공합니다. 드라이버 카탈로그를 사용하여 장치 드라이버를 Configuration Manager로 가져와서 패키지로 그룹화하고 이 패키지를 운영 체제를 배포할 때 액세스할 수 있는 배포 지점에 배포할 수 있습니다. 장치 드라이버는 대상 컴퓨터에 전체 운영 체제를 설치할 경우와 부팅 이미지를 사용하여 Windows PE를 설치할 경우에 사용할 수 있습니다. Windows 장치 드라이버는 INF(설치 정보 파일) 파일과 장치를 지원하는 데 필요한 추가 파일로 구성됩니다. Configuration Manager는 운영 체제가 배포될 때 INF 파일에서 장치에 대한 하드웨어 및 플랫폼 정보를 가져옵니다. 다음을 사용하여 Configuration Manager 환경에서 드라이버를 관리할 수 있습니다.
 
-##  <a name="a-namebkmkdrivercategoriesa-device-driver-categories"></a><a name="BKMK_DriverCategories"></a> 장치 드라이버 범주  
+##  <a name="BKMK_DriverCategories"></a> 장치 드라이버 범주  
  장치 드라이버를 가져올 때 각 장치 드라이버를 범주에 할당할 수 있습니다. 장치 드라이버 범주를 사용하면 서로 비슷하게 사용되는 장치 드라이버를 드라이버 카탈로그에 함께 그룹화할 수 있습니다. 예를 들어 모든 네트워크 어댑터 장치 드라이버를 특정 범주에 할당할 수 있습니다. 그런 다음 [드라이버 자동 적용](../understand/task-sequence-steps.md#BKMK_AutoApplyDrivers) 단계를 포함하는 작업 순서를 만들 때 장치 드라이버의 특정 범주를 지정할 수 있습니다. Configuration Manager에서 하드웨어를 검사하여 Windows 설치 프로그램이 사용할 수 있도록 시스템에서 준비할 해당 드라이버를 이 범주에서 선택합니다.  
 
-##  <a name="a-namebkmkmanagingdriverpackagesa-driver-packages"></a><a name="BKMK_ManagingDriverPackages"></a> 드라이버 패키지  
+##  <a name="BKMK_ManagingDriverPackages"></a> 드라이버 패키지  
  운영 체제 배포를 간소화하기 위해 패키지에서 비슷한 장치 드라이버를 그룹화할 수 있습니다. 예를 들어 네트워크에 있는 각 컴퓨터의 제조업체에 대한 드라이버 패키지를 만들 수도 있습니다. **드라이버 패키지** 노드에서 직접 드라이버를 드라이버 카탈로그로 가져오는 동안 드라이버 패키지를 만들 수 있습니다. 드라이버 패키지가 만들어지면 이 패키지는 Configuration Manager 클라이언트 컴퓨터가 필요에 따라 드라이버를 설치할 수 있는 배포 지점에 배포해야 합니다. 다음 사항을 고려합니다.  
 
 -   드라이버 패키지를 만들 경우 패키지의 원본 위치는 다른 드라이버 패키지에서 사용되지 않은 비어 있는 네트워크 공유를 가리켜야 하고 SMS 공급자에는 해당 위치에 대한 읽기 및 쓰기 권한이 있어야 합니다.  
@@ -42,7 +44,7 @@ System Center Configuration Manager는 현재 Configuration Manager 환경에서
 
  다음 섹션에서는 드라이버 패키지를 만들고 관리합니다.  
 
-###  <a name="a-namecreatingdriverpackagesa-create-a-driver-package"></a><a name="CreatingDriverPackages"></a> 드라이버 패키지 만들기  
+###  <a name="CreatingDriverPackages"></a> 드라이버 패키지 만들기  
  새 드라이버 패키지를 만들려면 다음 절차를 따르십시오.  
 
 > [!IMPORTANT]  
@@ -74,7 +76,7 @@ System Center Configuration Manager는 현재 Configuration Manager 환경에서
 
  **드라이버 패키지** 노드에 여러 패키지가 포함되어 있는 경우 노드에 폴더를 추가하여 패키지를 논리적 그룹으로 구분할 수 있습니다.  
 
-###  <a name="a-namebkmkpackageactionsa-additional-actions-for-driver-packages"></a><a name="BKMK_PackageActions"></a> 드라이버 패키지에 대한 추가 작업  
+###  <a name="BKMK_PackageActions"></a> 드라이버 패키지에 대한 추가 작업  
  **드라이버 패키지** 노드에서 하나 이상의 드라이버 패키지를 선택할 때 드라이버 패키지 관리를 위한 추가 작업을 수행할 수 있습니다. 이러한 작업은 다음과 같습니다.  
 
 |작업|설명|  
@@ -87,10 +89,10 @@ System Center Configuration Manager는 현재 Configuration Manager 환경에서
 |**배포 지점 업데이트**|패키지가 저장된 모든 배포 지점에서 장치 드라이버 패키지를 업데이트합니다. 이 작업은 패키지가 마지막으로 배포된 이후 변경된 콘텐츠만 복사합니다.|  
 |**데이터 액세스**|장치 드라이브의 콘텐츠와 속성을 검토하고 변경할 수 있는 **속성** 대화 상자를 엽니다. 예를 들어 장치 드라이버의 이름과 설명을 변경하고, 장치 드라이버를 사용하도록 설정하고, 장치 드라이버가 실행될 수 있는 플랫폼을 지정할 수 있습니다.|  
 
-##  <a name="a-namebkmkdevicedriversa-device-drivers"></a><a name="BKMK_DeviceDrivers"></a> 장치 드라이버  
+##  <a name="BKMK_DeviceDrivers"></a> 장치 드라이버  
  장치 드라이버를 배포 중인 운영 체제 이미지에 포함하지 않고 대상 컴퓨터에 설치할 수 있습니다. Configuration Manager에서는 Configuration Manager로 가져오는 모든 장치 드라이버에 대한 참조를 포함하는 드라이버 카탈로그를 제공합니다. 드라이버 카탈로그는 **소프트웨어 라이브러리** 작업 영역에 있으며 **드라이버** 와 **드라이버 패키지**의 두 노드로 구성되어 있습니다. **드라이버** 노드에는 드라이버 카탈로그로 가져온 모든 드라이버가 나열됩니다. 이 노드를 사용하여 가져온 각 드라이버에 대한 자세한 정보를 검색하고, 드라이버 패키지 또는 부팅 이미지의 드라이버를 수정하고, 드라이버를 사용하거나 사용하지 않도록 설정하는 등 다양한 작업을 수행할 수 있습니다.  
 
-###  <a name="a-namebkmkimportdriversa-import-device-drivers-into-the-driver-catalog"></a><a name="BKMK_ImportDrivers"></a> 드라이버 카탈로그에 장치 드라이버 가져오기  
+###  <a name="BKMK_ImportDrivers"></a> 드라이버 카탈로그에 장치 드라이버 가져오기  
  운영 체제를 배포할 때 장치 드라이버는 먼저 드라이버 카탈로그로 가져온 후에 사용할 수 있습니다. 장치 드라이버를 효율적으로 관리하려면 운영 체제 배포의 일부로 설치할 장치 드라이버만 가져오는 것이 좋습니다. 그러나 또한 드라이버 카탈로그에 여러 버전의 장치 드라이버를 저장해 두면 네트워크에서 하드웨어 장치 요구 사항이 변경될 경우 기존 장치 드라이버를 좀더 쉽게 업그레이드할 수 있습니다.  
 
  장치 드라이버를 가져오는 프로세스의 일환으로 Configuration Manager에서는 장치에 연결된 공급자, 클래스, 버전, 서명, 지원되는 하드웨어 및 지원되는 플랫폼 정보를 읽습니다. 기본적으로 드라이버는 드라이버가 지원하는 첫 번째 하드웨어 장치를 따라 이름이 지정됩니다. 그러나 나중에 장치 드라이버의 이름을 바꿀 수 있습니다. 지원되는 플랫폼 목록은 드라이버의 INF 파일에 포함된 정보에 따릅니다. 이 정보의 정확성은 달라질 수 있으므로 장치 드라이버를 드라이버 카탈로그에 가져온 후 장치 드라이버가 지원되는지 수동으로 확인해야 합니다.  
@@ -166,7 +168,7 @@ System Center Configuration Manager는 현재 Configuration Manager 환경에서
 
 8.  마법사를 완료합니다.  
 
-###  <a name="a-namebkmkmodifydriverpackagea-manage-device-drivers-in-a-driver-package"></a><a name="BKMK_ModifyDriverPackage"></a> 드라이버 패키지에서 장치 드라이버 관리  
+###  <a name="BKMK_ModifyDriverPackage"></a> 드라이버 패키지에서 장치 드라이버 관리  
  드라이버 패키지와 부팅 이미지를 수정하려면 다음 절차를 따르십시오. 장치 드라이버를 추가하거나 제거하려면 **드라이버** 노드에서 드라이버를 찾은 다음 선택한 드라이버가 연결된 패키지 또는 부팅 이미지를 편집합니다.  
 
 #### <a name="to-modify-the-device-drivers-in-a-driver-package"></a>드라이버 패키지에서 장치 드라이버를 수정하려면  
@@ -187,7 +189,7 @@ System Center Configuration Manager는 현재 Configuration Manager 환경에서
 
      **확인**을 클릭합니다.  
 
-###  <a name="a-namebkmkmanagedriversbootimagea-manage-device-drivers-in-a-boot-image"></a><a name="BKMK_ManageDriversBootImage"></a> 부팅 이미지에서 장치 드라이버 관리  
+###  <a name="BKMK_ManageDriversBootImage"></a> 부팅 이미지에서 장치 드라이버 관리  
  드라이버 카탈로그로 가져온 Windows 장치 드라이버를 부팅 이미지에 추가할 수 있습니다. 부팅 이미지에 장치 드라이버를 추가할 경우 다음 지침을 참조하십시오.  
 
 -   대용량 저장소 및 네트워크 어댑터 장치 드라이버만 부팅 이미지에 추가하는 것이 좋습니다. 보통 다른 유형의 드라이버는 필요하지 않기 때문입니다. 필요하지 않은 드라이버는 부팅 이미지의 크기만 불필요하게 늘릴 뿐입니다.  
@@ -228,7 +230,7 @@ System Center Configuration Manager는 현재 Configuration Manager 환경에서
 
 7.  **확인**을 클릭합니다.  
 
-###  <a name="a-namebkmkdriveractionsa-additional-actions-for-device-drivers"></a><a name="BKMK_DriverActions"></a> 장치 드라이버에 대한 추가 작업  
+###  <a name="BKMK_DriverActions"></a> 장치 드라이버에 대한 추가 작업  
  **드라이버** 노드에서 하나 이상의 장치 드라이버를 선택할 때 장치 관리를 위한 추가 작업을 수행할 수 있습니다. 이러한 작업은 다음과 같습니다.  
 
 |작업|설명|  
@@ -240,7 +242,7 @@ System Center Configuration Manager는 현재 Configuration Manager 환경에서
 |**이동**|장치 드라이버를 **드라이버** 노드의 다른 폴더로 이동합니다.|  
 |**데이터 액세스**|장치 드라이버의 속성을 검토하고 변경할 수 있는 **속성** 대화 상자를 엽니다. 예를 들어 장치 드라이버의 이름과 설명을 변경하고, 장치 드라이버를 사용하도록 설정하고, 장치 드라이버를 실행할 수 있는 플랫폼을 지정할 수 있습니다.|  
 
-##  <a name="a-namebkmktsdriversa-use-task-sequences-to-install-device-drivers"></a><a name="BKMK_TSDrivers"></a> 작업 순서를 사용하여 장치 드라이버 설치  
+##  <a name="BKMK_TSDrivers"></a> 작업 순서를 사용하여 장치 드라이버 설치  
  작업 순서를 사용하여 운영 체제의 배포 방법을 자동화할 수 있습니다. 작업 순서의 각 단계에서는 장치 드라이버 설치와 같은 특정 작업을 수행할 수 있습니다. 다음 두 개의 작업 순서 단계를 수행하면 운영 체제를 배포할 때 장치 드라이버를 설치할 수 있습니다.  
 
 -   [Auto Apply Drivers](../understand/task-sequence-steps.md#BKMK_AutoApplyDrivers): 운영 체제 배포 과정에서 장치 드라이버를 자동으로 일치시키고 설치할 수 있습니다. 작업 순서 단계를 검색된 각 하드웨어 장치에 가장 적합한 드라이버만 설치하도록 구성하거나 검색된 각 하드웨어 장치에 호환 가능한 모든 드라이버를 설치하도록 지정할 수 있습니다. 후자의 경우 나중에 Windows 설치에서 최적의 드라이버를 선택합니다. 또한 이 단계에서 사용 가능한 드라이버를 제한하기 위해 장치 드라이버 범주를 지정할 수 있습니다.  
@@ -249,7 +251,7 @@ System Center Configuration Manager는 현재 Configuration Manager 환경에서
 
  이 작업 순서 단계를 사용할 때 운영 체제를 배포할 컴퓨터에 장치 드라이버를 설치하는 방식도 지정할 수 있습니다. 자세한 내용은 [작업을 자동화하는 작업 순서 관리](../deploy-use/manage-task-sequences-to-automate-tasks.md)를 참조하세요.  
 
-##  <a name="a-namebkmkinstallingdevicediriverstsa-use-task-sequences-to-install-device-drivers-on-computers"></a><a name="BKMK_InstallingDeviceDiriversTS"></a> 작업 순서를 사용하여 컴퓨터에 장치 드라이버 설치  
+##  <a name="BKMK_InstallingDeviceDiriversTS"></a> 작업 순서를 사용하여 컴퓨터에 장치 드라이버 설치  
  운영 체제 배포의 일부로 장치 드라이버를 설치하려면 다음 절차를 사용하십시오.  
 
 #### <a name="use-a-task-sequence-to-install-device-drivers"></a>작업 순서를 사용하여 장치 드라이버 설치  
@@ -273,11 +275,6 @@ System Center Configuration Manager는 현재 Configuration Manager 환경에서
 
  운영 체제를 설치하는 작업 순서를 만드는 방법에 대한 자세한 내용은 [운영 체제를 설치하는 작업 순서 만들기](../deploy-use/create-a-task-sequence-to-install-an-operating-system.md)를 참조하세요.  
 
-##  <a name="a-namebkmkdriverreportsa-driver-management-reports"></a><a name="BKMK_DriverReports"></a> 드라이버 관리 보고서  
+##  <a name="BKMK_DriverReports"></a> 드라이버 관리 보고서  
  **드라이버 관리** 보고서 범주에 속한 몇 가지 보고서를 사용하여 드라이버 카탈로그의 장치 드라이버에 대한 일반적인 정보를 확인할 수 있습니다. 보고서에 대한 자세한 내용은 [보고](../../core/servers/manage/reporting.md)를 참조하세요.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

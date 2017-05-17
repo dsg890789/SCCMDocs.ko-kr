@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 88649111ea3a38c027efb4952211546afd0bf27e
 ms.openlocfilehash: 58beef440db8e019a06ce7c4c8eaabc8e85ce954
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -110,9 +112,4 @@ Configuration Manager의 스키마를 확장하려면:
  컨테이너를 설정하고 권한을 부여했으며 Configuration Manager 기본 사이트를 설치한 후에는 Active Directory에 데이터를 게시하도록 해당 사이트를 설정할 수 있습니다.  
 
  게시에 대한 자세한 내용은 [System Center Configuration Manager용으로 사이트 데이터 게시](../../../core/servers/deploy/configure/publish-site-data.md)를 참조하세요.  
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

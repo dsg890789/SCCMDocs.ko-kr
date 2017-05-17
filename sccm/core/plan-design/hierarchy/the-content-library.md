@@ -15,9 +15,11 @@ caps.latest.revision: 4
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: d31fecdb71b498864df2bce7403a4290ea9700ae
 ms.openlocfilehash: 0fa9f431c00476d71b2b08f92f914d76636d1a27
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="the-content-library-in-system-center-configuration-manager"></a>System Center Configuration Manager의 콘텐츠 라이브러리
@@ -64,9 +66,4 @@ Configuration Manager에서는 콘텐츠 파일을 복사할 때 드라이브에
 -   콘텐츠 라이브러리가 특정 드라이브에 설치되지 않도록 하려면 콘텐츠 라이브러리를 만들기 전에 **no_sms_on_drive.sms**라는 빈 파일을 만든 다음 이를 드라이브의 루트 폴더로 복사합니다.  
 
 -   콘텐츠 라이브러리가 만들어진 후에는 System Center 2012 R2 Configuration Manager Toolkit의 **콘텐츠 라이브러리 전송 도구**를 사용하여 콘텐츠 라이브러리의 위치를 관리합니다. [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkId=279566)에서 이 도구 키트를 다운로드할 수 있습니다.  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

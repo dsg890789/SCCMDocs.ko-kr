@@ -14,9 +14,10 @@ caps.latest.revision: 21
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
 ms.openlocfilehash: f562bf051e4561053b45bef5363eb960d83bbdd1
+ms.contentlocale: ko-kr
 ms.lasthandoff: 12/16/2016
 
 
