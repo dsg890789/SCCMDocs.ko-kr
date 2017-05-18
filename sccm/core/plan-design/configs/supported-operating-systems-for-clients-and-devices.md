@@ -15,10 +15,11 @@ caps.latest.revision: 5
 author: arob98
 ms.author: angrobe
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 507bad02c6e028f09a8b0c8a566ac55f7c3942a5
-ms.openlocfilehash: 4afba7b7702aa12b1cfcaf454e23b0dfb3274e7f
-ms.lasthandoff: 03/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: d5166b16ffbe46af561b1ce98c0494cc4aaa72a8
+ms.openlocfilehash: cd7b8bf35aeb26c8b7b37f6faa51c9a09138fdb9
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="supported-operating-systems-for-clients-and-devices-for-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 및 장치에 대해 지원되는 운영 체제
@@ -67,7 +68,7 @@ ms.lasthandoff: 03/22/2017
 -   **Windows 7 SP1**(x86, x64): Professional, Enterprise, Ultimate    
 
 -   **Windows Server 2016의 Server Core 설치**(x64) <sup>2</sup>
-  - 이 운영 체제는 KB3186654의 핫픽스 롤업이 포함된 1606 버전(또는 2016년 10월에 릴리스된 1606의 기준 버전)부터 지원됩니다. 그러나 이 운영 체제에서는 Endpoint Protection 사용을 지원하지 않습니다.
+  - 이 운영 체제는 KB3186654의 핫픽스 롤업이 포함된 1606 버전(또는 2016년 10월에 릴리스된 1606의 기준 버전)부터 지원됩니다. 
 
 
 -   **Windows Server 2012 R2의 Server Core 설치**(x64) <sup>2</sup>    
