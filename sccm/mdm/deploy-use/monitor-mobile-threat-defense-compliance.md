@@ -15,10 +15,11 @@ caps.latest.revision:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: fa5919b72114d71e1fbad74418c662d199827690
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 212628639300e9c361f7cee61b3df6b1cb6874ce
+ms.openlocfilehash: 8edf83a0f761dfc16274ce49c3aa2b878c7fe6cd
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -75,3 +76,4 @@ Mobile Threat Defense 상태를 모니터링하려면:
 
 > [!TIP] 
 > 장치의 Mobile Threat Defense 준수 상태에 대한 자세한 정보를 확인하려면 **기본적으로 표시**되지 않는 열을 사용하도록 설정해야 합니다.
+

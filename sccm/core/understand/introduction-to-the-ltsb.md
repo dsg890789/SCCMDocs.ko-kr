@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 31819a1df4e63e1114682490a9b3c3b4e5c99cfa
-ms.openlocfilehash: 90ba9937cf4ea708a3b5fa69c5975fdf906feeaa
+ms.sourcegitcommit: d940fd1bbf96767d44f8c55315e814be55a83897
+ms.openlocfilehash: 91c1ca860069c6ebe0d20230c4620bf3f68735a2
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/02/2017
+ms.lasthandoff: 05/08/2017
 
 
 ---
@@ -32,6 +32,8 @@ System Center Configuration Manager의 LTSB(장기 서비스 분기)는 모든 �
 
 Configuration Manager 버전 1606을 기준으로 Configuration Manager의 현재 분기와 비교할 때 LTSB의 기능이 감소되었습니다.
 
+ > [!TIP]   
+ > **Windows Server**의 분기에 대한 자세한 내용은 [Windows Server 2016 new Current Branch for Business servicing option]( https://blogs.technet.microsoft.com/windowsserver/2016/07/12/windows-server-2016-new-current-branch-for-business-servicing-option/)(Windows Server 2016 새 비즈니스용 현재 분기 서비스 옵션)을 참조하세요.
 
 ## <a name="features-that-are-not-available-in-the-ltsb-of-configuration-manager"></a>Configuration Manager의 LTSB에서 사용할 수 없는 기능
 Configuration Manager의 현재 분기는 LTSB에서는 사용할 수 없는 다음 기능을 지원합니다.

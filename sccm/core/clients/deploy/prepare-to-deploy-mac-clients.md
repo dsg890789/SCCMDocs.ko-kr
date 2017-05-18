@@ -2,7 +2,7 @@
 title: "Mac에 클라이언트 소프트웨어 배포 준비 | Microsoft 문서"
 description: "Mac에 Configuration Manager 클라이언트를 배포하기 전 구성 작업입니다."
 ms.custom: na
-ms.date: 04/23/2017
+ms.date: 05/04/2017
 ms.prod: configuration-manager
 ms.reviewer: aaroncz
 ms.suite: na
@@ -15,10 +15,11 @@ caps.latest.revision: 12
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 0900e45115f02861c33fe2abdb046d11fdef3474
-ms.openlocfilehash: 9f51c15adaa850eb8343601ddcd13046480fc9c0
-ms.lasthandoff: 01/03/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c6a6137fa978e1ea28aefea2aea4e29ba661efd6
+ms.openlocfilehash: b3bb72f81812705b4654e268025074402e89a7cb
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -100,6 +101,9 @@ Mac 클라이언트는 해당 클라이언트를 관리하는 Configuration Mana
  관리 지점에 대한 클라이언트 인증서를 만들고 설치하는 배포의 예는 [Windows 컴퓨터용 클라이언트 인증서 배포](../../plan-design/network/example-deployment-of-pki-certificates.md#BKMK_client2008_cm2012)를 참조하세요.  
 
  배포 지점에 대한 클라이언트 인증서를 만들고 설치하는 배포의 예는 [배포 지점용 클라이언트 인증서 배포](../../plan-design/network/example-deployment-of-pki-certificates.md#BKMK_clientdistributionpoint2008_cm2012)를 참조하세요.  
+
+>[!IMPORTANT]
+>  macOS Sierra를 실행하는 장치에 클라이언트를 배포하려면 관리 지점 인증서의 주체 이름을 관리 지점 서버의 FQDN 등을 사용하여 올바로 구성해야 합니다.
 
 ## <a name="prepare-the-client-certificate-template-for-macs"></a>Mac용 클라이언트 인증서 템플릿 준비  
 

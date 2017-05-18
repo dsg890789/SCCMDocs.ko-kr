@@ -2,7 +2,7 @@
 title: "콘텐츠 관리의 기본 사항 | Microsoft 문서"
 description: "System Center Configuration Manager에서 도구와 옵션을 사용하여 배포하는 콘텐츠를 관리합니다."
 ms.custom: na
-ms.date: 3/15/2017
+ms.date: 05/04/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,10 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 238e460885b6490b3744690640f9ff040902b35f
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 212628639300e9c361f7cee61b3df6b1cb6874ce
+ms.openlocfilehash: f73dde64e0e8a0fc49f45b3afb3b8f00c926a820
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -29,9 +30,12 @@ ms.lasthandoff: 03/27/2017
 
 System Center Configuration Manager에서는 응용 프로그램, 패키지, 소프트웨어 업데이트 및 운영 체제 배포로 배포하는 콘텐츠를 관리하기 위한 강력한 도구 및 옵션 시스템을 지원합니다.  
 
- 배포하는 콘텐츠는 사이트 서버와 배포 지점 사이트 시스템 서버 둘 다에 저장됩니다. 이 콘텐츠를 위치 간에 전송할 때는 네트워크 대역폭이 많이 필요할 수 있습니다. 콘텐츠 관리 인프라를 효율적으로 계획하고 사용하려면 사용 가능한 옵션 및 구성을 파악한 다음, 현재 사용 중인 네트워킹 환경과 콘텐츠 배포 요구에 가장 적합하게 사용하는 방법을 고려하는 것이 좋습니다.  
+배포하는 콘텐츠는 사이트 서버와 배포 지점 사이트 시스템 서버 둘 다에 저장됩니다. 이 콘텐츠를 위치 간에 전송할 때는 네트워크 대역폭이 많이 필요할 수 있습니다. 콘텐츠 관리 인프라를 효율적으로 계획하고 사용하려면 사용 가능한 옵션 및 구성을 파악한 다음, 현재 사용 중인 네트워킹 환경과 콘텐츠 배포 요구에 가장 적합하게 사용하는 방법을 고려하는 것이 좋습니다.  
 
-다음은 콘텐츠 관리를 위한 주요 개념입니다. 추가 정보나 복잡한 정보를 파악해야 하는 개념의 경우 해당하는 세부 정보를 확인할 수 있도록 링크가 제공됩니다.  
+> [!TIP]    
+> 콘텐츠 배포 프로세스에 대한 자세한 내용을 알아보고 일반적인 콘텐츠 배포 문제를 진단하고 해결하는 데 필요한 도움말을 찾을 수 있습니다. support.microsoft.com에서 [Understanding and Troubleshooting Content Distribution in Microsoft Configuration Manager](https://support.microsoft.com/help/4000401/content-distribution-in-mcm)(Microsoft Configuration Manager에서 콘텐츠 배포 이해 및 문제 해결)를 참조하세요.
+
+다음은 콘텐츠 관리를 위한 주요 개념입니다. 추가 정보나 복잡한 정보를 파악해야 하는 개념의 경우 해당하는 세부 정보를 확인할 수 있도록 링크가 제공됩니다.
 
 ## <a name="accounts-used-for-content-management"></a>콘텐츠 관리에 사용되는 계정  
  콘텐츠 관리에는 다음과 같은 계정을 사용할 수 있습니다.  

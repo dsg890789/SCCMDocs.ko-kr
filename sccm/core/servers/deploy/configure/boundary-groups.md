@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
-ms.openlocfilehash: cb5c8f8f91857bf5f9377a9f871f0d9d9b0cc939
+ms.sourcegitcommit: d940fd1bbf96767d44f8c55315e814be55a83897
+ms.openlocfilehash: 5684fd4fbfd0ffb8f3ffbcfa122eef3dafd77327
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/02/2017
+ms.lasthandoff: 05/08/2017
 
 
 ---
@@ -111,7 +111,7 @@ System Center Configuration Manager에서 경계 그룹을 사용하여 관련 �
 ## <a name="software-update-points"></a>소프트웨어 업데이트 지점
 버전 1702부터 클라이언트는 경계 그룹을 사용하여 새 소프트웨어 업데이트 지점을 찾습니다. 클라이언트가 찾을 수 있는 서버를 제어하기 위해 개별 소프트웨어 업데이트 지점을 다른 경계 그룹에 추가할 수 있습니다.
 
-1702 이전 버전에서 업데이트할 경우 모든 기존 소프트웨어 업데이트 지점이 각 사이트의 기본 사이트 경계 그룹에 추가됩니다. 이렇게 하면 클라이언트가 계층 구조에 대해 구성한 사용 가능한 소프트웨어 업데이트 지점 풀에서 소프트웨어 업데이트 지점을 선택하는 업데이트 전 동작이 유지됩니다.  이 동작은 제어된 선택 및 대체 동작을 통해 다른 경계 그룹에 개별 소프트웨어 업데이트 지점을 추가하도록 선택할 때까지 유지됩니다.
+1702 이전 버전에서 업데이트할 경우 모든 기존 소프트웨어 업데이트 지점이 각 사이트의 기본 사이트 경계 그룹에 추가됩니다. 이렇게 하면 클라이언트가 계층 구조에 대해 구성한 사용 가능한 소프트웨어 업데이트 지점 풀에서 소프트웨어 업데이트 지점을 선택하는 업데이트 전 동작이 유지됩니다.  이 동작은 제어된 선택 및 대체 동작에 대해 다른 경계 그룹에 개별 소프트웨어 업데이트 지점을 추가하도록 선택할 때까지 유지됩니다.
 
 버전 1702 이상을 실행하는 새 사이트를 설치하는 경우 클라이언트에서 이를 찾아서 사용하려면 먼저 소프트웨어 업데이트 지점을 경계 그룹에 할당해야 합니다.
 

@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 96bfa443cd2894bb1c46322cd5f984071916d9a6
-ms.openlocfilehash: 6942f4d74303d8ade8add6cc81da872648f208be
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c5a58d79f81ccdf19ad88dc932e3a52eac2c18ab
+ms.openlocfilehash: 80c43ab93ee5a2de6bf8d7993dfd46f0005d2df8
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/09/2017
 
 
 ---
@@ -37,7 +39,7 @@ System Center Configuration Manager 환경으로 데이터를 마이그레이션
 
 -   [원본 계층의 추가 원본 사이트 식별](#BKBM_ConfigSrcSites)  
 
-##  <a name="a-namebkbmconfigsrchierarchya-specify-a-source-hierarchy-for-migration"></a><a name="BKBM_ConfigSrcHierarchy"></a> 마이그레이션할 원본 계층 지정  
+##  <a name="BKBM_ConfigSrcHierarchy"></a> 마이그레이션할 원본 계층 지정  
  대상 계층으로 데이터를 마이그레이션하려면 마이그레이션할 데이터가 포함된 지원되는 원본 계층을 지정해야 합니다. 기본적으로 해당 계층의 최상위 사이트가 원본 계층의 원본 사이트가 됩니다. Configuration Manager 2007 계층 구조에서 마이그레이션하는 경우 첫 번째 원본 사이트에서 데이터를 수집한 다음 마이그레이션할 추가 원본 사이트를 설정할 수 있습니다. System Center 2012 Configuration Manager 또는 System Center Configuration Manager 계층 구조에서 마이그레이션하는 경우 원본 계층에서 데이터를 마이그레이션하기 위해 추가 원본 사이트를 설정할 필요가 없습니다. 이러한 버전의 Configuration Manager에서는 원본 계층의 최상위 사이트에서 사용할 수 있는 공유 데이터베이스를 사용하기 때문입니다. 공유 데이터베이스에는 마이그레이션할 수 있는 모든 정보가 포함되어 있습니다.  
 
  마이그레이션할 원본 계층을 지정하고 Configuration Manager 2007 계층 구조에서 추가 원본 사이트를 식별하려면 다음 절차를 수행합니다.  
@@ -58,7 +60,7 @@ System Center Configuration Manager 환경으로 데이터를 마이그레이션
 
 6.  다음 권한이 있는 원본 사이트 액세스 계정을 지정합니다.  
 
-    -   원본 사이트 계정: 원본 계층의 지정된 최상위 사이트에 대한 SMS 공급자 **읽기** 권한  
+    -   원본 사이트 계정: 원본 계층의 지정된 최상위 사이트에 대한 SMS 공급자 **읽기** 권한 배포 지점 공유 및 업그레이드에는 소스 계층 구조의 사이트에 대한 **수정** 및 **삭제** 권한이 필요합니다.
 
     -   원본 사이트 데이터베이스 계정: 원본 계층의 지정된 최상위 사이트에 대한 SQL Server 데이터베이스 **읽기** 및 **실행** 권한  
 
@@ -70,7 +72,7 @@ System Center Configuration Manager 환경으로 데이터를 마이그레이션
 
 9. 데이터 수집을 마치면 **닫기** 를 클릭하여 **데이터 수집 상태** 대화 상자를 닫고 구성을 완료합니다.  
 
-##  <a name="a-namebkbmconfigsrcsitesa-identify-additional-source-sites-of-the-source-hierarchy"></a><a name="BKBM_ConfigSrcSites"></a> 원본 계층의 추가 원본 사이트 식별  
+##  <a name="BKBM_ConfigSrcSites"></a> 원본 계층의 추가 원본 사이트 식별  
  지원되는 원본 계층을 구성하면 해당 계층의 최상위 사이트가 자동으로 원본 사이트로 구성되고 해당 사이트에서 자동으로 데이터가 수집됩니다. 수행할 다음 작업은 원본 계층에서 실행하는 Configuration Manager의 버전에 따라 다릅니다.  
 
 -   Configuration Manager 2007 원본 계층의 경우 첫 번째 원본 사이트에 대해 데이터 수집을 완료한 후에 해당 첫 번째 원본 사이트에서 마이그레이션을 시작하거나 원본 계층에서 추가 원본 사이트를 설정할 수 있습니다. 자식 사이트에서만 사용할 수 있는 데이터를 마이그레이션하려면 Configuration Manager 2007 계층 구조의 추가 원본 사이트를 설정합니다. 예를 들어 마이그레이션할 콘텐츠를 원본 계층의 자식 사이트에서 만들었고 원본 계층의 최상위 사이트에서 사용할 수 없는 경우에 해당 콘텐츠에 대한 데이터를 수집하도록 추가 원본 사이트를 구성할 수 있습니다.  
@@ -93,7 +95,7 @@ Configuration Manager 2007 원본 계층에 대한 추가 원본 사이트를 �
 
 5.  **원본 사이트 자격 증명** 대화 상자에서 원본 사이트 액세스 계정에 대해 다음 권한이 있는 계정을 지정합니다.  
 
-    -   원본 사이트 계정: 원본 계층의 지정된 최상위 사이트에 대한 SMS 공급자 **읽기** 권한  
+    -   원본 사이트 계정: 원본 계층의 지정된 최상위 사이트에 대한 SMS 공급자 **읽기** 권한 배포 지점 공유 및 업그레이드에는 소스 계층 구조의 사이트에 대한 **수정** 및 **삭제** 권한이 필요합니다.  
 
     -   원본 사이트 데이터베이스 계정: 원본 계층의 지정된 최상위 사이트에 대한 SQL Server 데이터베이스 **읽기** 및 **실행** 권한  
 
@@ -104,9 +106,4 @@ Configuration Manager 2007 원본 계층에 대한 추가 원본 사이트를 �
 7. **확인** 을 클릭하여 구성을 저장합니다. 그러면 **데이터 수집 상태** 대화 상자가 열리고 자동으로 데이터 수집이 시작됩니다.  
 
 8.  데이터 수집을 마치면 **닫기** 를 클릭하여 구성을 완료합니다.  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

@@ -2,7 +2,7 @@
 title: "Mac 클라이언트 배포 | Microsoft 문서"
 description: "System Center Configuration Manager에서 Mac 컴퓨터에 클라이언트를 배포하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 04/23/2017
+ms.date: 05/04/2017
 ms.prod: configuration-manager
 ms.reviewer: aaroncz
 ms.suite: na
@@ -15,10 +15,11 @@ caps.latest.revision: 12
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
-ms.openlocfilehash: 9cab5b91a94e8bf2ad96a8a706f46c58e2a3d712
-ms.lasthandoff: 03/21/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c6a6137fa978e1ea28aefea2aea4e29ba661efd6
+ms.openlocfilehash: 6ce212c6745b70a47553891e5dbc124b4c4e50fa
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -34,7 +35,10 @@ Mac 컴퓨터용 새 클라이언트를 설치할 때 Configuration Manager 콘�
 
 -   [CMEnroll 도구](#install-the-client-and-then-enroll-the-client-certificate-on-the-mac)를 사용하여 Configuration Manager 등록을 사용합니다. 등록 프로세스는 자동 인증서 갱신을 지원하지 않으므로 설치된 인증서가 만료되기 전에 Mac 컴퓨터를 다시 등록해야 합니다.    
 
--   [Configuration Manager와 별개의 인증서 요청 및 설치 방법을 사용합니다](#use-a-certificate-request-and-installation-method-that-is-independent-from-configuration-manager).  
+-   [Configuration Manager와 별개의 인증서 요청 및 설치 방법을 사용합니다](#use-a-certificate-request-and-installation-method-that-is-independent-from-configuration-manager). 
+
+>[!IMPORTANT]
+>  macOS Sierra를 실행하는 장치에 클라이언트를 배포하려면 관리 지점 인증서의 주체 이름을 관리 지점 서버의 FQDN 등을 사용하여 올바로 구성해야 합니다.
 
 
 ## <a name="configure-client-settings-for-enrollment"></a>등록을 위한 클라이언트 설정 구성  
@@ -299,7 +303,7 @@ CMEnroll 도구를 사용하여 클라이언트 설치를 자동화하고 클라
 
     -   **선택한 설정:** **찾아보기**를 선택하고 이전에 지정한 검색 스크립트를 선택합니다.  
 
-    -   **다음 값** 필드에 **The domain/default pair of (com.microsoft.ccmclient, SMSID) does not exist**를 입력합니다.  
+    -   **다음 값** 필드에 **(com.microsoft.ccmclient, SMSID)의 도메인/기본값 쌍이 존재하지 않음**를 입력합니다.  
 
     -   **이 설정이 규칙과 호환되지 않는 경우 지정한 재구성 스크립트 실행**옵션을 사용하도록 설정합니다.  
 
@@ -322,7 +326,7 @@ CMEnroll 도구를 사용하여 클라이언트 설치를 자동화하고 클라
 17. 다시 시작.  
 
 
-### <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 항목
 
 [Mac 클라이언트 유지 관리](/sccm/core/clients/manage/maintain-mac-clients)
 
