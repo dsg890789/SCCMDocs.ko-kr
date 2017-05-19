@@ -19,7 +19,7 @@ ms.translationtype: Human Translation
 ms.sourcegitcommit: e6833951db27b227a3ca22925e9d9f4c3fc443fc
 ms.openlocfilehash: e8606b8a9268a0a0668b75070cf35894f4794123
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="predeclare-devices-with-imei-or-ios-serial-numbers"></a>IMEI 또는 iOS 일련 번호로 장치 미리 선언
