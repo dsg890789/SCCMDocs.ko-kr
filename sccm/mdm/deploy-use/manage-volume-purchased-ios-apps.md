@@ -2,7 +2,7 @@
 title: "대량 구매한 iOS 앱 관리 | Microsoft 문서"
 description: "iOS App Store를 통해 구입한 앱의 라이선스를 배포, 관리 및 추적합니다."
 ms.custom: na
-ms.date: 03/28/2017
+ms.date: 05/03/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,10 +16,11 @@ caps.handback.revision: 0
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 3c2a07f560e0aa3d2beb7cc50e71c98ac45c27e1
-ms.openlocfilehash: a63acf0d80edba1e965ba8ea99fe90edb8aa2faf
-ms.lasthandoff: 03/28/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c6a6137fa978e1ea28aefea2aea4e29ba661efd6
+ms.openlocfilehash: 55f1204b088a7b636a90561f20aa41c7de72bc05
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/04/2017
 
 ---
 # <a name="manage-volume-purchased-ios-apps-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 대량 구매한 iOS 앱 관리
@@ -112,7 +113,7 @@ System Center Configuration Manager 1702부터 이제 사용이 허가된 앱을
 
  **스토어 앱에 대한 라이선스 정보** 노드에서 앱을 만들면 앱은 선택한 앱에 대한 토큰의 라이선스와 연결됩니다.  예를 들어 노드에 같은 앱의 두 가지 버전이 표시될 수 있습니다. 이는 앱의 각 버전이 서로 다른 Apple VPP 토큰과 연결되기 때문입니다.  이후 각 토큰에서 앱을 만들고 개별적으로 배포할 수 있습니다.
 
- 라이선스를 회수하려면 배포 작업을 **제거**로 변경해야 합니다. 앱을 제거하면 라이선스가 회수됩니다.  
+ 라이선스를 회수하려면 배포 작업을 **제거**로 해서 앱의 새 배포를 만들어야 합니다. 원래 배포의 배포 작업은 변경할 수 없습니다. 앱을 제거하면 라이선스가 회수됩니다.  
 
 ## <a name="step-3---monitor-ios-vpp-apps"></a>3단계 - iOS VPP 앱 모니터링  
  **소프트웨어 라이브러리** 작업 영역의 **스토어 앱에 대한 라이선스 정보** 노드에는 대량 구매한 iOS 앱에 대한 정보가 표시됩니다. 이 정보에는 각 앱에 대해 소유한 총 라이선스 수, 배포된 개수 등이 포함됩니다. 또한 보기에는 앱이 연결된 VPP 토큰 및 토큰 유형이 표시됩니다.
