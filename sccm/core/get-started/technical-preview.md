@@ -15,10 +15,11 @@ caps.latest.revision: 157
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: ae008c91a7387ba76f2bfac13f8feb489a0cc558
-ms.openlocfilehash: 8ffaee12bd826e2f19653b215ee19423ea672433
-ms.lasthandoff: 04/21/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f809c9327db9f298168674add2d09820fdecd1b8
+ms.openlocfilehash: 3a7370fedee417588d219dc7bff46205faf42929
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -45,23 +46,7 @@ ms.lasthandoff: 04/21/2017
 
 -   각 설치는 90일 동안 활성 상태로 유지된 후에 비활성화됩니다.  
 
--   지원되는 언어는 영어뿐입니다.  
-
--   독립 실행형 기본 사이트만 지원됩니다. 중앙 관리 사이트, 여러 기본 사이트 또는 보조 사이트는 지원되지 않습니다.  
-
--   다음 SQL Server 버전만 지원됩니다.  
-
-    -   SQL Server 2016(서비스 팩 없음 버전 이상)
-    -   SQL Server 2014(서비스 팩 없음 버전 이상)
-    -   SQL Server 2012 SP2(서비스 팩 2 이상)
-
-
--   사이트는 최대 10개 클라이언트를 지원하며, 이러한 클라이언트는 다음 운영 체제 중 하나를 실행해야 합니다.  
-
-      -   Windows 10  
-      -   Windows 8.1  
-      -   Windows 8  
-      -   Windows 7  
+-   지원되는 언어는 영어뿐입니다.
 
 
 -   다음 설치 플래그(스위치)만 지원됩니다.  
@@ -79,6 +64,23 @@ ms.lasthandoff: 04/21/2017
 -   이 미리 보기 빌드로 업그레이드할 수는 없습니다.  
 
 -   이 미리 보기 빌드에서 프로덕션 빌드(현재 분기)로 업그레이드할 수 없습니다. 그러나 미리 보기 버전용 업데이트를 사용할 수 있는 경우 Configuration Manager 콘솔의 **업데이트 및 서비스** 노드에서 해당 업데이트를 찾아 설치할 수 있습니다. 콘솔 내 업그레이드 프로세스에 대한 비디오를 보려면 youtube.com에서 [ConfigMgr 업데이트 패키지 설치](https://www.youtube.com/embed/KBd_EGFbUT8) (영문)를 참조하세요.  
+-   독립 실행형 기본 사이트만 지원됩니다. 중앙 관리 사이트, 여러 기본 사이트 또는 보조 사이트는 지원되지 않습니다.  
+
+다음 제품 및 기술은 이 Configuration Manager 분기에서 지원됩니다. 그러나 이 내용에 포함되었다고 해서 개별 지원 주기가 끝난 제품 또는 버전의 지원 연장을 의미하지는 않습니다. 즉, 지원 주기가 끝난 제품은 Configuration Manager에서 사용할 수 없습니다. Microsoft 지원 주기에 대한 자세한 내용은 [Microsoft 지원 주기](http://go.microsoft.com/fwlink/p/?LinkId=208270) 웹 사이트를 참조하세요.  
+
+-   다음 SQL Server 버전만 지원됩니다.  
+
+    -   SQL Server 2016(서비스 팩 없음 버전 이상)
+    -   SQL Server 2014(서비스 팩 1 이상)
+    -   SQL Server 2012(서비스 팩 3 이상)
+
+
+-   사이트는 최대 10개 클라이언트를 지원하며, 이러한 클라이언트는 다음 운영 체제 중 하나를 실행해야 합니다.  
+
+      -   Windows 10  
+      -   Windows 8.1  
+      -   Windows 8  
+      -   Windows 7  
 
 ##  <a name="bkmk_install"></a> 기술 미리 보기 설치 및 업데이트  
  System Center Configuration Manager Technical Preview는 현재 릴리스의 System Center Configuration Manager와 다릅니다.  

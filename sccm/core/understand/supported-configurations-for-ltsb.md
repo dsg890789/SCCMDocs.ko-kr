@@ -2,7 +2,7 @@
 title: "지원되는 LTSB 구성 | Microsoft 문서"
 description: "System Center Configuration Manager의 장기 서비스 분기에서 작동하는 운영 체제 및 종속 제품을 이해합니다."
 ms.custom: na
-ms.date: 3/9/2017
+ms.date: 5/10/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,10 +15,11 @@ caps.latest.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 477ffa5d61d2dfaedf8a3a1f5687e2d72698ad28
-ms.openlocfilehash: 78dcbf76f21a286506b9c605e2c176714736935b
-ms.lasthandoff: 03/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f809c9327db9f298168674add2d09820fdecd1b8
+ms.openlocfilehash: ec33d5febcbf7b57e220f7fe27db9671080fecff
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -30,7 +31,7 @@ ms.lasthandoff: 03/10/2017
 이 항목이나 LTSB 관련 항목에서 달리 명시되지 않은 경우 현재 분기 버전 1606에 적용되는 것과 동일한 구성 및 제한 사항이 LTSB에 적용됩니다.  충돌이 발생하는 경우 사용 중인 버전에 적용되는 정보를 사용합니다. 일반적으로 LTSB가 현재 분기보다 좀 더 제한적입니다.
 
 ## <a name="general-statement-of-support"></a>일반적인 지원 정보
-다음 섹션에서 자세히 설명하는 제품 및 기술은 Configuration Manager에서 지원됩니다. 그러나 이 내용에 포함되었다고 해서 개별 지원 주기가 끝난 제품의 지원이 명시적으로 확장되지는 않습니다. 즉, 지원 주기가 끝난 제품은 Configuration Manager에서 사용할 수 없습니다. 자세한 내용은 [Microsoft 지원 주기](http://go.microsoft.com/fwlink/p/?LinkId=208270) 웹 사이트 및 [Microsoft 지원 주기 정책 FAQ](http://go.microsoft.com/fwlink/p/?LinkId=31976)를 참조하세요.
+다음 제품 및 기술은 이 Configuration Manager 분기에서 지원됩니다. 그러나 이 내용에 포함되었다고 해서 개별 지원 주기가 끝난 제품 또는 버전의 지원이 명시적으로 확장되지는 않습니다. 즉, 지원 주기가 끝난 제품은 Configuration Manager에서 사용할 수 없습니다. 자세한 내용은 [Microsoft 지원 주기](http://go.microsoft.com/fwlink/p/?LinkId=208270) 웹 사이트 및 [Microsoft 지원 주기 정책 FAQ](http://go.microsoft.com/fwlink/p/?LinkId=31976)를 참조하세요.
 
 또한 다음 항목에 나열되지 않은 제품 및 제품 버전은 [Enterprise Mobility + Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/)(Enterprise Mobility + 보안 블로그)에서 공지되지 않은 경우 지원되지 않습니다.
 
@@ -310,13 +311,11 @@ LTSB는 다음 SQL Server 버전에서 사이트 데이터베이스 및 보고 �
 - SQL Server 2014 SP2: Standard, Enterprise
 - SQL Server 2014 SP1: Standard, Enterprise
 - SQL Server 2012 SP3: Standard, Enterprise
-- SQL Server 2012 SP2: Standard, Enterprise
 - SQL Server 2008 R2 SP3: Standard, Enterprise, Datacenter
 - SQL Server 2016 Express
 - SQL Server 2014 Express SP2
 - SQL Server 2014 Express SP1
 - SQL Server 2012 Express SP3
-- SQL Server 2012 Express SP2
 
 ## <a name="support-for-active-directory-domains"></a>Active Directory 도메인 지원
 모든 LTSB 사이트 시스템은 지원되는 Windows Active Directory 도메인의 구성원이어야 합니다. Active Directory 도메인 지원은 [Active Directory 도메인 지원](/sccm/core/plan-design/configs/support-for-active-directory-domains)에 표시되는 것과 동일한 요구 사항 및 제한 사항을 갖지만 다음 도메인 기능 수준으로 제한됩니다.

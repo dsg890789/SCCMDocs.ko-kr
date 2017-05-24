@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 4eee9731a4a27328c47c0d15931cab28cf520a18
-ms.openlocfilehash: d1d2ec7c053d13ebaeb00d0dfeb126716b5f7ae5
+ms.sourcegitcommit: ae60eb25383f4bd07faaa1265185a471ee79b1e9
+ms.openlocfilehash: 3d90f16eac59b7069ff2f33170eba85d2cde65ef
 ms.contentlocale: ko-kr
 ms.lasthandoff: 05/17/2017
 
@@ -215,9 +215,9 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
 
      컴퓨터에 BitLocker PIN 항목이 구성된 경우 이 옵션을 사용하면 소프트웨어 설치 후 컴퓨터가 다시 시작할 때 PIN을 입력해야 하는 요구 사항을 무시할 수 있습니다.  
 
-    -   **항상**: Configuration Manager는 다시 시작이 필요한 소프트웨어를 설치하고 컴퓨터를 다시 시작한 후 PIN을 입력해야 하는 BitLocker 요구 사항을 일시적으로 중단합니다. 이 설정은 Configuration Manager에서 시작한 컴퓨터 다시 시작에만 적용되며 사용자가 컴퓨터를 다시 시작할 때 BitLocker PIN을 입력해야 하는 요구 사항은 일시 중단하지 않습니다. BitLocker PIN 항목 요구 사항은 Windows 시작 후 다시 시작됩니다.  
+    -   **항상**: Configuration Manager는 다시 시작이 필요한 소프트웨어를 설치하고 컴퓨터를 다시 시작한 후 BitLocker 요구 사항을 일시적으로 중단합니다. 이 설정은 Configuration Manager에서 시작한 컴퓨터 다시 시작에만 적용되며 사용자가 컴퓨터를 다시 시작할 때 BitLocker PIN을 입력해야 하는 요구 사항은 일시 중단하지 않습니다. BitLocker PIN 항목 요구 사항은 Windows 시작 후 다시 시작됩니다.
 
-    -   **안 함**: Configuration Manager는 다시 시작이 필요한 소프트웨어를 설치한 후 다음 컴퓨터 시작 시 PIN을 입력해야 하는 BitLocker 요구 사항을 일시 중단하지 않습니다. 이 시나리오에서 소프트웨어 설치는 사용자가 PIN을 입력하여 표준 시작 프로세스를 완료하고 Windows를 로드할 때까지 완료되지 않습니다.  
+    -   **안 함**: Configuration Manager는 다시 시작이 필요한 소프트웨어를 설치한 후 다음 컴퓨터 시작 시 BitLocker 요구 사항을 일시 중단하지 않습니다. 이 시나리오에서 소프트웨어 설치는 사용자가 PIN을 입력하여 표준 시작 프로세스를 완료하고 Windows를 로드할 때까지 완료되지 않습니다.
 
 -   **추가 소프트웨어로 응용 프로그램 및 소프트웨어 업데이트 배포 관리**  
 

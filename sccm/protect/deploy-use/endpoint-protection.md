@@ -15,9 +15,11 @@ caps.latest.revision: 11
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 4688b4b12a7afa5fcfdc0e42f984271d98f10316
-ms.openlocfilehash: 90e6d82e7fd1ff0ad4f1d616cc23201769fe26e2
+ms.translationtype: Human Translation
+ms.sourcegitcommit: ae60eb25383f4bd07faaa1265185a471ee79b1e9
+ms.openlocfilehash: 3c31271f3e3ae7aa45da03b3d75fd78242330646
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -33,21 +35,15 @@ System Center Configuration Manager의 Endpoint Protection을 사용하면 Confi
  Configuration Manager에서 Endpoint Protection을 사용하면 다음과 같은 이점이 있습니다.  
 
 -   선택한 컴퓨터 그룹에 대해 맬웨어 방지 정책 및 Windows 방화벽 설정을 구성하고 Windows Defender Advanced Threat Protection을 관리합니다.  
-
 -   Configuration Manager 소프트웨어 업데이트를 통해 최신 맬웨어 방지 정의 파일을 다운로드하여 클라이언트 컴퓨터를 최신 상태로 유지  
-
 -   메일 알림을 보내거나, 콘솔 내 모니터링을 사용하거나, 보고서를 확인하여 클라이언트 컴퓨터에서 맬웨어가 검색되면 관리자에게 알림  
 
-Windows 10 및 Windows Server 2016부터는 컴퓨터에 끝점 보호 관리를 위한 추가 클라이언트가 필요하지 않습니다. Windows 8.1 이하 버전의 컴퓨터에서 Endpoint Protection은 Configuration Manager 클라이언트뿐만 아니라 자체 클라이언트를 설치합니다. Endpoint Protection 클라이언트에는 다음과 같은 기능이 있습니다.  
+Windows 10 및 Windows Server 2016 컴퓨터부터, Windows Defender가 이미 설치되어 있습니다. 이러한 운영 체제의 경우 Configuration Manager 클라이언트를 설치할 때 Windows Defender용 관리 클라이언트가 설치됩니다. Windows 8.1 이하 버전의 컴퓨터에서는 Configuration Manager 클라이언트와 함께 Endpoint Protection 클라이언트가 설치됩니다. indows Defender 및 Endpoint Protection 클라이언트에는 다음과 같은 기능이 있습니다.  
 
 -   맬웨어 및 스파이웨어 검색 및 수정  
-
 -   루트킷 검색 및 수정  
-
 -   중요 취약성 평가와 정의 및 엔진 자동 업데이트  
-
 -   네트워크 검사 시스템을 통해 네트워크 취약성 검색  
-
 -   맬웨어를 Microsoft에 보고하도록 클라우드 보호 서비스와 통합 이 서비스에 가입하면 컴퓨터에서 식별되지 않은 맬웨어가 검색될 때 Endpoint Protection 클라이언트 또는 Windows Defender가 맬웨어 보호 센터에서 최신 정의를 다운로드할 수 있습니다.  
 
 > [!NOTE]  
@@ -116,13 +112,8 @@ Mac 컴퓨터와 Linux 서버에 대한 Endpoint Protection 클라이언트 소�
 3. **System Center Endpoint Protection(현재 분기)** 제품을 필터링합니다.
 4. **다운로드** 링크를 클릭합니다.
 5. 
-              **Continue(계속)**를 클릭합니다. **System Center Endpoint Protection (current branch - version 1606) for Linux OS and Macintosh OS Multilanguage   32/64 bit   1507 MB ISO** 파일을 포함하여 여러 개의 파일이 표시됩니다.
+              **Continue(계속)**를 클릭합니다. **System Center Endpoint Protection (current branch - version 1606) for Linux OS and Macintosh OS Multilanguage   32/64 bit   1507 MB    ISO** 파일을 포함하여 여러 개의 파일이 표시됩니다.
 6. 화살표 아이콘을 클릭하여 파일을 다운로드합니다. 파일 이름은 **SW_DVD5_Sys_Ctr_Endpnt_Prtctn_1606_MultiLang_EptProt_Lin_Mac_MLF_X21-30777.ISO**입니다.
 
  Linux 및 Mac 컴퓨터용 Endpoint Protection 클라이언트를 설치 및 관리하는 방법에 대한 자세한 내용은 **설명서** 폴더에 있는 해당 제품의 설명서를 참조하세요.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

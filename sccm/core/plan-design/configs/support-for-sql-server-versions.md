@@ -2,7 +2,7 @@
 title: "지원되는 SQL Server 버전 | Microsoft 문서"
 description: "System Center Configuration Manager 사이트 데이터베이스를 호스트하기 위한 SQL Server 버전 및 구성 요구 사항을 가져옵니다."
 ms.custom: na
-ms.date: 05/01/2017
+ms.date: 05/10/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d5a6fdc9a526c4fc3a9027dcedf1dd66a6fff5a7
-ms.openlocfilehash: fa7f232fd385f742bb11c6596c954d87c2da87a8
+ms.sourcegitcommit: f809c9327db9f298168674add2d09820fdecd1b8
+ms.openlocfilehash: 4166560602edf6eb299511c8b59dc3903e3bfffc
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/01/2017
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -45,14 +45,19 @@ ms.lasthandoff: 05/01/2017
 -   SQL Server 클러스터. [SQL Server 클러스터를 사용하여 사이트 데이터베이스 호스트](../../../core/servers/deploy/configure/use-a-sql-server-cluster-for-the-site-database.md)를 참조하세요.
 -   SQL Server AlwaysOn 가용성 그룹. 이 옵션을 사용하려면 Configuration Manager 버전 1602 이상이 필요합니다. 자세한 내용은 [System Center Configuration Manager용 항상 사용 가능한 사이트 데이터베이스를 위한 SQL Server AlwaysOn](../../../core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database.md)을 참조하세요.
 
-> [!NOTE]  
->  NLB(네트워크 부하 분산) 클러스터 구성의 SQL Server 클러스터는 지원되지 않습니다. 또한 SQL Server 데이터베이스 미러링 기술과 피어 투 피어 복제가 지원되지 않습니다. SQL Server 표준 트랜잭션 복제는 [데이터베이스 복제본](https://technet.microsoft.com/library/mt608546.aspx)을 사용하도록 구성된 관리 지점에 개체를 복제하는 데에만 사용할 수 있습니다.  
-
 
  **보조 사이트:**  
  사이트 데이터베이스에서는 전체 설치된 SQL Server 또는 SQL Server Express의 기본 인스턴스를 사용할 수 있습니다.  
 
  SQL Server는 사이트 서버 컴퓨터에 있어야 합니다.  
+
+ **지원 제한 사항:**   
+ 다음 구성은 지원되지 않습니다.
+ -   NLB(네트워크 부하 분산) 클러스터 구성의 SQL Server 클러스터
+ -   CSV(클러스터 공유 볼륨)의 SQL Server 클러스터
+ -   SQL Server 데이터베이스 미러링 기술과 피어 투 피어 복제
+
+SQL Server 트랜잭션 복제는 [데이터베이스 복제본](https://technet.microsoft.com/library/mt608546.aspx)을 사용하도록 구성된 관리 지점에 개체를 복제하는 데에만 사용할 수 있습니다.  
 
 ##  <a name="bkmk_SQLVersions"></a> 지원되는 SQL Server 버전  
  여러 사이트가 있는 계층 구조에서 다음과 같은 경우 사이트마다 다른 SQL Server 버전을 사용하여 사이트 데이터베이스를 호스트할 수 있습니다.
@@ -109,14 +114,14 @@ ms.lasthandoff: 05/01/2017
 -   기본 사이트  
 -   보조 사이트  
 
+<!-- Support for this service pack version has been dropped by Microsoft    
+### SQL Server 2012 SP2: Standard, Enterprise   
+ You can use this version of SQL Server with no minimum cumulative update version for the following:  
 
-### <a name="sql-server-2012-sp2-standard-enterprise"></a>SQL Server 2012 SP2: Standard, Enterprise   
- 다음에 대한 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
-
--   중앙 관리 사이트  
--   기본 사이트  
--   보조 사이트  
-
+-   A central administration site  
+-   A primary site  
+-   A secondary site  
+-->
 
 ### <a name="sql-server-2008-r2-sp3-standard-enterprise-datacenter"></a>SQL Server 2008 R2 SP3: Standard, Enterprise, Datacenter     
   [버전 1702부터](/sccm/core/plan-design/changes/removed-and-deprecated-features#deprecated-support-for-sql-server-versions-as-a-site-database) 이 SQL Server 버전이 지원되지 않습니다.  
@@ -155,10 +160,13 @@ ms.lasthandoff: 05/01/2017
 
 -   보조 사이트  
 
-### <a name="sql-server-2012-express-sp2"></a>SQL Server 2012 Express SP2   
- 다음에 대한 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
+<!-- Support for this service pack version has been dropped by Microsoft   
+### SQL Server 2012 Express SP2   
+ You can use this version of SQL Server with no minimum cumulative update version for the following:  
 
--   보조 사이트  
+-   A secondary site  
+-->
+
 
 ##  <a name="bkmk_SQLConfig"></a> SQL Server에 대한 필수 구성  
  다음은 사이트 데이터베이스에 사용할 모든 SQL Server 설치(SQL Server Express 포함)에 필요합니다. Configuration Manager에서 보조 사이트 설치의 일부로 SQL Server Express를 설치하는 경우 이러한 구성은 자동으로 만들어집니다.  

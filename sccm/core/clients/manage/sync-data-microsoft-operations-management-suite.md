@@ -15,10 +15,11 @@ caps.latest.revision: 9
 author: arob98
 ms.author: angrobe
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
 ms.openlocfilehash: 3acfaa2cf8c64ece5cef65b80372067336d6a815
-ms.lasthandoff: 03/27/2017
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 ---
 
@@ -68,7 +69,7 @@ Microsoft OMS(Operations Management Suite) 커넥터를 사용하여 System Cent
 Configuration Manager를 OMS에 연결한 후 컬렉션을 추가하거나 제거하고 OMS 연결의 속성을 볼 수 있습니다.
 
 ## <a name="verify-the-oms-connector-properties"></a>OMS 커넥터 속성 확인
-1.    Configuration Manager 콘솔에서 **관리** > **Cloud Services**로 이동하고 **OMS 커넥터**를 선택하여 **OMS 연결** 페이지를 선택합니다**.
+1.    Configuration Manager 콘솔에서 **관리** > **Cloud Services**로 이동하고 **OMS 커넥터**를 선택하여 **OMS 연결 ** 페이지**를 선택합니다.
 2.    이 페이지에는 다음 두 개의 탭이 있습니다.
   - **Azure Active Directory:**   
     이 탭에는 **테넌트**, **클라이언트 ID**, **클라이언트 비밀 키 만료**가 표시되며, 만료된 경우 클라이언트 비밀 키를 확인할 수 있습니다.
@@ -96,12 +97,10 @@ Configuration Manager를 OMS에 연결한 후 컬렉션을 추가하거나 제�
 
   설정 이름 *FairFaxAuthorityResource*의 값을 "https://login.microsoftonline.com/"으로 변경합니다.
 
-  - **원래 값:**
-    &lt;setting name="FairFaxAuthorityResource" serializeAs="String">   
+  - **원래 값:** &lt;setting name="FairFaxAuthorityResource" serializeAs="String">   
     &lt;value>&lt;/value>
 
-    - **편집된 값:**
-    &lt;setting name="FairFaxAuthorityResource" serializeAs="String">   
+    - **편집된 값:** &lt;setting name="FairFaxAuthorityResource" serializeAs="String">   
     &lt;value>https://login.microsoftonline.com/&lt;/value>
 
 2.    두 가지 사항을 변경하고 파일을 저장한 후 동일한 컴퓨터에서 Configuration Manager 콘솔을 다시 시작하고 해당 콘솔을 사용하여 OMS 커넥터를 설치합니다. 커넥터를 설치하려면 [Configuration Manager의 데이터를 Microsoft Operations Management Suite에 동기화](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite)에 제공된 정보를 사용하고 Microsoft Azure Government 클라우드에 있는 **Operations Management Suite 작업 영역**을 선택합니다.

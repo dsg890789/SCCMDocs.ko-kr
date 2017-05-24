@@ -15,9 +15,11 @@ caps.latest.revision: 2
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
 ms.openlocfilehash: 5e77ebbfd3f3d573d903fe58024a22feb9884e4a
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1611-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1611의 기능
@@ -37,7 +39,7 @@ ms.openlocfilehash: 5e77ebbfd3f3d573d903fe58024a22feb9884e4a
 
 - ***PowerShell***: Configuration Manager 콘솔에서 Windows PowerShell에 연결하는 경우 다음 오류가 발생할 수 있습니다. **Microsoft.ConfigurationManagement.PowerShell.Types.ps1xml이 디지털 서명되어 있지 않습니다**.  
 
-   특정 파일을 버전 1610의 서명된 버전으로 대체하여 이 문제를 해결할 수 있습니다. 버전 1610 설치의 **&lt;설치 디렉터리>\AdminConsole\bin\** 폴더에서 다음 확장명을 가진 파일을 모두 복사합니다. **.psd1**, **.ps1xml** 및 **.psm1**. Technical Preview 1611 설치의 **&lt;설치 디렉터리>\AdminConsole\bin\** 폴더에 이 파일을 붙여넣어 1611 버전의 파일을 덮어씁니다.
+   특정 파일을 버전 1610의 서명된 버전으로 대체하여 이 문제를 해결할 수 있습니다. 버전 1610 설치의 **&lt;설치 디렉터리>\AdminConsole\bin\** 폴더에서 확장명이 **.psd1**, **.ps1xml** 및 **.psm1**인 파일을 모두 복사합니다. Technical Preview 1611 설치의 **&lt;설치 디렉터리>\AdminConsole\bin\** 폴더에 이 파일을 붙여넣어 1611 버전의 파일을 덮어씁니다.
 
 
 **다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.**  
@@ -75,9 +77,4 @@ ms.openlocfilehash: 5e77ebbfd3f3d573d903fe58024a22feb9884e4a
 
 ## <a name="see-also"></a>참고 항목
 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

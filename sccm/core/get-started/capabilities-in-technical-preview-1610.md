@@ -15,9 +15,11 @@ caps.latest.revision: 2
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
 ms.openlocfilehash: 59633ce68e2bb2d722900215751f345d6d098721
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1610-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1610의 기능
@@ -63,19 +65,19 @@ ms.openlocfilehash: 59633ce68e2bb2d722900215751f345d6d098721
 #### <a name="try-it-out"></a>기능 직접 사용해 보기
 승인된 응용 프로그램 요청을 거부하려면:
 
-1.  Configuration Manager 콘솔에서 승인이 필요한 [응용 프로그램을 만들고 배포합니다](https://docs.microsoft.com/en-us/sccm/apps/deploy-use/create-applications).
-2.  클라이언트 컴퓨터에서 소프트웨어 센터를 열고 응용 프로그램에 대한 요청을 제출합니다.
-3.  Configuration Manager 콘솔에서 응용 프로그램 요청을 승인합니다.
-4.  승인된 응용 프로그램 요청 거부: Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **개요** > **응용 프로그램 관리** > **승인 요청**으로 이동한 다음 거부할 응용 프로그램 요청을 선택합니다.  리본에서 **거부**를 클릭합니다.
+1.    Configuration Manager 콘솔에서 승인이 필요한 [응용 프로그램을 만들고 배포합니다](https://docs.microsoft.com/en-us/sccm/apps/deploy-use/create-applications).
+2.    클라이언트 컴퓨터에서 소프트웨어 센터를 열고 응용 프로그램에 대한 요청을 제출합니다.
+3.    Configuration Manager 콘솔에서 응용 프로그램 요청을 승인합니다.
+4.    승인된 응용 프로그램 요청 거부: Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **개요** > **응용 프로그램 관리** > **승인 요청**으로 이동한 다음 거부할 응용 프로그램 요청을 선택합니다.  리본에서 **거부**를 클릭합니다.
 
 ## <a name="exclude-clients-from-automatic-upgrade"></a>자동 업그레이드에서 클라이언트 제외
 Technical Preview 1610에는 업데이트된 클라이언트 버전을 자동으로 설치하지 않도록 제외할 클라이언트 컬렉션을 지정할 수 있는 설정이 새로 추가되었습니다.  이 설정은 자동 업그레이드 및 소프트웨어 업데이트 기반 업그레이드, 로그온 스크립트 및 그룹 정책 등에 적용됩니다. 클라이언트를 업그레이드할 때 주의가 필요한 컴퓨터 컬렉션에 이 설정을 사용할 수 있습니다. 제외된 컬렉션에 있는 클라이언트는 업데이트된 클라이언트 소프트웨어 설치 요청을 무시합니다.
 
 ### <a name="configure-exclusion-from-automatic-upgrade"></a>자동 업그레이드 작업의 제외 구성
 자동 업그레이드 제외를 구성하려면:
-1.  Configuration Manager 콘솔에서 **관리 > 사이트 구성 > 사이트** 아래의 **계층 설정**을 열고 **클라이언트 업그레이드** 탭을 선택합니다.
-2.  **Exclude specified clients from upgrade**(지정된 클라이언트를 업그레이드에서 제외)의 확인란을 선택하고 **Exclusion collection**(제외 컬렉션)에서 제외할 컬렉션을 선택합니다. 제외할 컬렉션은 하나만 선택할 수 있습니다.
-3.  **확인**을 클릭하여 구성을 닫고 저장합니다. 그러면 클라이언트가 정책을 업데이트한 후 제외된 컬렉션의 클라이언트가 클라이언트 소프트웨어에 대한 업데이트를 더 이상 자동으로 설치하지 않습니다.
+1.    Configuration Manager 콘솔에서 **관리 > 사이트 구성 > 사이트** 아래의 **계층 설정**을 열고 **클라이언트 업그레이드** 탭을 선택합니다.
+2.    **Exclude specified clients from upgrade**(지정된 클라이언트를 업그레이드에서 제외)의 확인란을 선택하고 **Exclusion collection**(제외 컬렉션)에서 제외할 컬렉션을 선택합니다. 제외할 컬렉션은 하나만 선택할 수 있습니다.
+3.    **확인**을 클릭하여 구성을 닫고 저장합니다. 그러면 클라이언트가 정책을 업데이트한 후 제외된 컬렉션의 클라이언트가 클라이언트 소프트웨어에 대한 업데이트를 더 이상 자동으로 설치하지 않습니다.
 
   ![자동 업그레이드 제외에 대한 설정](media/automatic_upgrade_exclusion.png)
 
@@ -128,13 +130,13 @@ Technical Preview 1610에는 업데이트된 클라이언트 버전을 자동으
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 
-1.  Configuration Manager 콘솔에서 **자산 및 호환성** > **개요** > **준수 설정** > **구성 항목**으로 이동한 다음 새 **구성 항목**을 만듭니다.
-2.  이름을 입력하고 **Configuration Manager 클라이언트를 사용하지 않고 관리되는 장치에 대한 설정**에서 **Windows 8.1 및 Windows 10**을 선택하고 **다음**을 클릭합니다.
-3.  **지원되는 플랫폼** 페이지에서 **모든 Windows 10(64비트)** 및 **모든 Windows 10(32비트)**가 선택되었는지 확인하고 **다음**을 클릭합니다.
-4.  **Windows Defender** 설정 그룹을 선택하고 **다음**을 클릭합니다.
-5.  이 페이지에서 원하는 설정을 구성하고 **다음**을 클릭합니다.
-6.  마법사를 완료합니다.
-7.  구성 기준에 이 구성 항목을 추가하고 Windows 10 11월 업데이트(1511) 이상을 실행하는 컴퓨터에 이 기준을 배포합니다.
+1.    Configuration Manager 콘솔에서 **자산 및 호환성** > **개요** > **준수 설정** > **구성 항목**으로 이동한 다음 새 **구성 항목**을 만듭니다.
+2.    이름을 입력하고 **Configuration Manager 클라이언트를 사용하지 않고 관리되는 장치에 대한 설정**에서 **Windows 8.1 및 Windows 10**을 선택하고 **다음**을 클릭합니다.
+3.    **지원되는 플랫폼** 페이지에서 **모든 Windows 10(64비트)** 및 **모든 Windows 10(32비트)**가 선택되었는지 확인하고 **다음**을 클릭합니다.
+4.    **Windows Defender** 설정 그룹을 선택하고 **다음**을 클릭합니다.
+5.    이 페이지에서 원하는 설정을 구성하고 **다음**을 클릭합니다.
+6.    마법사를 완료합니다.
+7.    구성 기준에 이 구성 항목을 추가하고 Windows 10 11월 업데이트(1511) 이상을 실행하는 컴퓨터에 이 기준을 배포합니다.
 
 > [!NOTE]
 > 구성 기준을 배포할 때 **비호환 설정 재구성** 확인란을 선택해야 합니다.
@@ -145,10 +147,10 @@ Technical Preview 1610에는 업데이트된 클라이언트 버전을 자동으
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 
-1.  Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > 장치로 이동합니다.
-2.  **원격 장치 작업** 메뉴에서 **동기화 요청 보내기**를 선택합니다.
+1.    Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > 장치로 이동합니다.
+2.    **원격 장치 작업** 메뉴에서 **동기화 요청 보내기**를 선택합니다.
 
-동기화는&5;~10분 정도 걸릴 수 있습니다. 정책의 모든 변경 내용이 장치에 동기화됩니다. **장치** 보기의 **원격 동기화 상태** 열이나 장치의 **속성** 대화 상자에서 동기화 요청 상태를 추적할 수 있습니다.
+동기화는 5~10분 정도 걸릴 수 있습니다. 정책의 모든 변경 내용이 장치에 동기화됩니다. **장치** 보기의 **원격 동기화 상태** 열이나 장치의 **속성** 대화 상자에서 동기화 요청 상태를 추적할 수 있습니다.
 
 ## <a name="additional-security-role-support"></a>추가 보안 역할 지원
 
@@ -162,9 +164,4 @@ Technical Preview 1610에는 업데이트된 클라이언트 버전을 자동으
 
 ## <a name="see-also"></a>참고 항목
 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -15,10 +15,11 @@ caps.latest.revision: 5
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 3eb48942c1259d2aa1b3c200fad73b39b11c0b8c
-ms.openlocfilehash: d497bd5a2971315eecdc0900f735ab2cd8b2e7bc
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f4cb711f369698fe8e045f8c83dd96ec6fb29d70
+ms.openlocfilehash: bb1b96a56db68dcea22270855b899ba3a90afd0d
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1703-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1703의 기능
@@ -141,28 +142,24 @@ Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞
 
 
 ## <a name="client-settings-to-configure-windows-analytics-for-upgrade-readiness"></a>업그레이드 준비를 위해 Windows Analytics를 구성하기 위한 클라이언트 설정
-이 버전부터 Configuration Manager에서 [업그레이드 준비](/sccm/core/clients/manage/upgrade/upgrade-analytics)를 사용할 때 장치 클라이언트 설정을 사용하여 Windows Analytics의 구성을 간소화할 수 있습니다. Windows Analytics에서는 Configuration Manager 클라이언트에 대한 원격 분석 데이터를 수집하여 OMS(Operations Manager 제품군) 작업 영역에 보고합니다. 수집하는 원격 분석 데이터는 관리 장치의 Windows 업그레이드에 대한 결정의 우선 순위를 지정하는 데 도움이 될 수 있습니다.
-
-Configuration Manager가 수집하는 원격 분석 데이터는 ETW(Windows용 이벤트 추적) 로그 파일 형식입니다. 이러한 로그 파일은 클라이언트가 하드웨어 인벤토리를 제출할 때 Configuration Manager 사이트에 제출됩니다. 그런 다음 이러한 파일은 OMS 작업 영역으로 전송됩니다. 로그가 OMS로 전송된 후 로그 파일 및 해당 데이터는 Configuration Manager 사이트에서 제거됩니다.
+이 버전부터 장치 클라이언트 설정을 사용하여 Configuration Manager에서 [업그레이드 준비](/sccm/core/clients/manage/upgrade/upgrade-analytics)와 같은 [Windows Analytics](https://www.microsoft.com/en-us/WindowsForBusiness/windows-analytics) 솔루션을 사용하는 데 필요한 Windows 원격 분석의 구성을 간소화할 수 있습니다. Configuration Manager는 클라이언트 컴퓨터에서 보고한 Windows 원격 분석 데이터를 기준으로 사용자 환경의 현재 상태에 대한 귀중한 정보를 제공할 수 있는 데이터를 Windows Analytics에서 검색할 수 있습니다. 클라이언트 컴퓨터에서 Windows 원격 분석 서비스에 Windows 원격 분석 데이터를 보고하면 관련 데이터가 조직의 OMS 작업 영역 중 하나에서 호스트되는 Windows Analytics 솔루션으로 전송됩니다. 업그레이드 준비는 관리되는 장치의 Windows 업그레이드에 대한 결정 우선 순위를 지정하는 데 도움이 될 수 있는 Windows Analytics 솔루션입니다.
 
 Windows 원격 분석 설정에 대한 자세한 내용은 [조직에서 Windows 원격 분석 구성](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization)을 참조하세요.
 
 ### <a name="prerequisites"></a>전제 조건
-- OMS 업그레이드 준비에서 Log Analytics를 사용하여 사이트를 구성한 상태여야 합니다. 자세한 내용은 현재 분기에 대한 콘텐츠 라이브러리의 [업그레이드 준비](/sccm/core/clients/manage/upgrade/upgrade-analytics)를 참조하세요.
-- 클라이언트는 하드웨어 인벤토리를 사용하여 원격 분석 데이터를 제출해야 합니다.
+- 업그레이드 준비 클라우드 서비스를 사용하도록 사이트를 구성해야 합니다. 자세한 내용은 [업그레이드 준비](/sccm/core/clients/manage/upgrade/upgrade-analytics)를 참조하세요.
 
 ### <a name="configure-windows-analytics-client-settings"></a>Windows Analytics 클라이언트 설정 구성
-Windows Analytics를 구성하려면 Configuration Manager 콘솔에서 **관리** > **클라이언트 설정**으로 이동하고 **기본 클라이언트 설정**을 두 번 클릭한 다음 **Windows Analytics**를 선택합니다.  
+Windows Analytics를 구성하려면 Configuration Manager 콘솔에서 **관리** > **클라이언트 설정**으로 이동하고 **사용자 지정 장치 클라이언트 설정 만들기**를 두 번 클릭한 다음 **Windows Analytics**를 클릭합니다.  
 
-그런 후 다음을 구성합니다.
+**Windows Analytics** 설정 탭으로 이동한 후 다음을 구성합니다.
 - **상업용 ID**  
-상업용 ID는 관리하는 장치의 정보를 OMS 작업 영역에 매핑합니다. Configuration Manager에서 사용할 업그레이드 준비에 사용하기 위한 상업용 ID를 이미 구성한 경우 해당 ID를 사용합니다. 아직 상업용 ID가 없는 경우 [Generate your commercial ID key]( https://technet.microsoft.com /itpro/windows/deploy/upgrade-readiness-get-started#generate-your-commercial-id-key)(상업용 ID 키 생성)를 참조하세요.
+상업용 ID 키는 관리하는 장치의 정보를 조직의 Windows Analytics 데이터를 호스트하는 OMS 작업 영역으로 매핑합니다. 업그레이드 준비에 사용하기 위한 상업용 ID 키를 이미 구성한 경우 해당 ID를 사용합니다. 아직 상업용 ID 키가 없는 경우 [상업용 ID 키 생성]( https://technet.microsoft.com /itpro/windows/deploy/upgrade-readiness-get-started#generate-your-commercial-id-key)을 참조하세요.
 
 - **Windows 10 장치에 대한 원격 분석 수준**  설정  
-각 Windows 10 원격 분석 수준에서 수집되는 항목에 대한 자세한 내용은 Windows 온라인 설명서의 [원격 분석 수준]( https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#telemetry-levels)을 참조하세요.
+각 Windows 10 원격 분석 수준에서 수집되는 항목에 대한 자세한 내용은 Windows 온라인 설명서의 [조직에서 Windows 원격 분석 구성]( https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#telemetry-levels)을 참조하세요.
 
 - **Windows 7, 8 및 8.1 장치에서 상용 데이터 수집에 옵트인**  선택  
 옵트인할 경우 이러한 운영 체제에서 수집되는 데이터에 대한 자세한 내용을 보려면 Microsoft에서 [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965)(Windows 7, Windows 8 및 Windows 8.1 appraiser 원격 분석 이벤트 및 필드) pdf 파일을 다운로드하세요.
 
-- **Internet Explorer 데이터 수집 구성**
-
+- **Internet Explorer 데이터 수집 구성** Windows 8.1 또는 이전 버전을 실행하는 장치에서 Internet Explorer 데이터 수집을 수행하면 업그레이드 준비 기능을 통해 Windows 10으로의 원활한 업그레이드에 방해가 될 수 있는 웹앱 비호환성 문제를 감지할 수 있습니다. Internet Explorer 데이터 수집은 인터넷 영역별로 사용 가능하게 설정할 수 있습니다. 인터넷 영역에 대한 자세한 내용은 [URL 보안 영역 정보](https://msdn.microsoft.com/en-us/library/ms537183(v=vs.85).aspx)를 참조하세요.

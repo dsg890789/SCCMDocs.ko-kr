@@ -15,10 +15,11 @@ caps.latest.revision: 3
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
 ms.openlocfilehash: 04fe7b3e674287c4255563ab4a308e54d0b6c3aa
-ms.lasthandoff: 03/27/2017
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="command-line-options-for-setup-in-system-center-configuration-manager"></a>System Center Configuration Manager 설치를 위한 명령줄 옵션
@@ -538,7 +539,7 @@ ms.lasthandoff: 03/27/2017
 
     -   **필수:** 예  
 
-    -   **값:** EnforceHTTPS *또는* HTTPorHTTPS  
+    -   **값:** EnforceHTTPS *또는*  HTTPorHTTPS  
 
     -   **세부 정보:** 클라이언트의 HTTPS 통신만 수락하도록 모든 사이트 시스템을 구성할지, 아니면 각 사이트 시스템 역할마다 다른 통신 방법을 구성할지를 지정합니다. **EnforceHTTPS**를 선택하는 경우 클라이언트 컴퓨터에 클라이언트 인증을 위해 유효한 PKI(공개 키 인프라) 인증서가 있어야 합니다.  
 

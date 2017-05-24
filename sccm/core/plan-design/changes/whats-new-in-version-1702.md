@@ -13,10 +13,11 @@ ms.assetid: 409e26e1-7716-4f1d-a0ee-34feabf20792
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
-ms.openlocfilehash: 4616ebb84ae63acbe6af892918aa2dd1a0be4825
-ms.lasthandoff: 05/02/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f4cb711f369698fe8e045f8c83dd96ec6fb29d70
+ms.openlocfilehash: a2954b3c6f9a09b7246347e780c4cfc49ba39ca1
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="what39s-new-in-version-1702-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1702의 새로운 기능
@@ -172,8 +173,8 @@ Microsoft Intune에서 제공하는 설정과 일치하도록 iOS 장치에 대�
 ### <a name="hardware-inventory-collects-uefi-information"></a>하드웨어 인벤토리를 통해 UEFI 정보 수집
 새 하드웨어 인벤토리 클래스(**SMS_Firmware**) 및 속성(**UEFI**)을 사용하여 컴퓨터를 UEFI 모드로 시작할지 여부를 결정할 수 있습니다. 컴퓨터를 UEFI 모드로 시작하는 경우 **UEFI** 속성을 **TRUE**로 설정합니다. 하드웨어 인벤토리에서 기본적으로 사용됩니다. 하드웨어 인벤토리에 대한 자세한 내용은 [하드웨어 인벤토리를 구성하는 방법](/sccm/core/clients/manage/inventory/configure-hardware-inventory)을 참조하세요.
 
-### <a name="improvements-to-software-center-settings-and-notification-messages-for-high-impact-task-sequences"></a>영향력이 큰 작업 순서에 대한 소프트웨어 센터 설정 및 알림 메시지 개선
-이 릴리스에는 영향력이 큰 배포 작업 순서에 대한 소프트웨어 센터 설정 및 알림 메시지와 관련해서 다음과 같은 개선 사항이 포함되어 있습니다.
+### <a name="improvements-to-software-center-warning-messages-for-high-impact-task-sequences"></a>영향력이 큰 작업 순서에 대한 소프트웨어 센터 경고 메시지 개선
+이 릴리스에는 영향력이 큰 배포 작업 순서에 대한 소프트웨어 센터 경고 메시지와 관련해서 다음과 같은 개선 사항이 포함되어 있습니다.
 
 - 이제 작업 순서 속성에서 비운영 체제 작업 순서를 비롯한 모든 작업 순서를 높은 위험 수준 배포로 구성할 수 있습니다. 특정 조건을 충족하는 작업 순서는 자동으로 모두 강력한 작업 순서로 정의됩니다. 자세한 내용은 [위험 수준이 높은 배포 관리](/sccm/protect/understand/settings-to-manage-high-risk-deployments)를 참조하세요.
 - 작업 순서 속성에서 기본 알림 메시지를 사용하거나 강력한 배포에 대한 고유한 사용자 지정 알림 메시지를 만들 수 있습니다.

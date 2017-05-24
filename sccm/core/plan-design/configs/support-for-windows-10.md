@@ -16,13 +16,13 @@ author: brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 065b1fcb25d7c7845b6f26e757b36e7fb97ce013
-ms.openlocfilehash: 2ec25e9b093d9451d8880ba36f4d022ec4bad001
+ms.sourcegitcommit: f809c9327db9f298168674add2d09820fdecd1b8
+ms.openlocfilehash: ed5efcf7b305f8bee6e99e00c5285f6ae7033d82
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 05/17/2017
 
 ---
-# <a name="support-for-windows-10-for-system-center-configuration-manager"></a>System Center Configuration Manager의 Windows 10에 대한 지원
+# <a name="support-for-windows-10-for-system-center-configuration-manager"></a>System Center Configuration Manager의 Windows 10에 대한 지원  
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -64,7 +64,7 @@ Configuration Manager로 운영 체제를 배포할 때 [Windows ADK는 필요�
 
 다음 표에는 여러 버전의 Configuration Manager에서 사용할 수 있는 Windows 10 ADK 버전이 나와 있습니다.
 
-|Windows 10 버전 |Configuration Manager 1606 |Configuration Manager 1610  |Configuration Manager 1702 |
+|Windows 10 ADK 버전 |Configuration Manager 1606 |Configuration Manager 1610  |Configuration Manager 1702 |
 |--------------------|-----|-----|-----|
 |1507  |![지원되지 않음](media/Red_X.png)         |![지원되지 않음](media/Red_X.png)  |![지원되지 않음](media/Red_X.png)|
 |1511  |![이전 버전과 호환](media/blue_compat.png)|![지원되지 않음](media/Red_X.png)  |![지원되지 않음](media/Red_X.png)|

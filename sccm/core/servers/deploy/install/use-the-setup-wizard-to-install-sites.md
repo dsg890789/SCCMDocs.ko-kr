@@ -14,10 +14,11 @@ caps.latest.revision: 3
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 2f1bc62a4695d60dc4679e479797ee84cd4ddee4
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f809c9327db9f298168674add2d09820fdecd1b8
+ms.openlocfilehash: 14b4172ad713a3981b8a5abe182405e271d78c26
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="use-the-setup-wizard-to-install-system-center-configuration-manager-sites"></a>설치 마법사를 사용하여 System Center Configuration Manager 사이트를 설치할 수 있습니다.
@@ -310,7 +311,7 @@ ms.lasthandoff: 03/27/2017
     > [!IMPORTANT]  
     > Configuration Manager는 SQL Server Express를 설치할 때 서비스 팩이 포함되지 않은 SQL Server Express 2012를 설치합니다.  
 
-    > -   보조 사이트를 지원하려면 해당 사이트를 설치한 후 서비스 팩 2 이상을 설치하여 SQL Server Express 2012를 업그레이드해야 합니다.
+    > -   보조 사이트를 지원하려면 해당 사이트를 설치한 후 SQL Server Express 2012를 [지원되는 버전](/sccm/core/plan-design/configs/support-for-sql-server-versions#bkmk_SQLVersions)으로 업그레이드해야 합니다.
     > -   또한 SQL Server Express 2012 설치를 먼저 완료하지 않으면 새 보조 사이트 설치를 완료할 수 없는 경우 해당 SQL Server Express 인스턴스를 먼저 업데이트해야 Configuration Manager에서 보조 사이트 설치를 정상적으로 다시 시도할 수 있습니다.  
 
      **기존 SQL Server 인스턴스 사용**  

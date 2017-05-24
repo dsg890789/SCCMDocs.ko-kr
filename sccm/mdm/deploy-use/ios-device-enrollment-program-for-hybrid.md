@@ -16,8 +16,8 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 4eee9731a4a27328c47c0d15931cab28cf520a18
-ms.openlocfilehash: 555da7187b505a926731350d16787bc02d28dad3
+ms.sourcegitcommit: ae60eb25383f4bd07faaa1265185a471ee79b1e9
+ms.openlocfilehash: 5b5eadd7b4026eae59acceaef43cdacd7a33d3ac
 ms.contentlocale: ko-kr
 ms.lasthandoff: 05/17/2017
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 05/17/2017
     iOS DEP(장치 등록 프로그램) 장치를 등록하려면 먼저 [iOS 등록 지원 단계](../deploy-use/enroll-hybrid-ios-mac.md)를 포함하여 [하이브리드 모바일 장치 관리 설정](../../mdm/deploy-use/setup-hybrid-mdm.md) 단계를 완료해야 합니다.
 
 2.  **DEP 토큰 요청 만들기**   
-    Configuration Manager 콘솔의 **관리** 작업 영역에서 **계층 구성**, **클라우드 서비스**를 차례로 확장하고 **Windows Intune 구독**을 클릭합니다. **홈** 탭에서 **DEP 토큰 요청 만들기** 를 클릭하고 **찾아보기** 를 클릭하여 DEP 토큰 요청에 대한 다운로드 위치를 지정한 후에 **다운로드**를 클릭합니다. DEP 토큰 요청(.pem) 파일을 로컬로 저장합니다. .pem 파일은 Apple 장치 등록 프로그램 포털에서 신뢰할 수 있는 토큰(.p7m)을 요청하는 데 사용됩니다.  
+    Configuration Manager 콘솔의 **관리** 작업 영역에서 **계층 구성**, **클라우드 서비스**를 차례로 확장하고 **Microsoft Intune 구독**을 클릭합니다. **홈** 탭에서 **DEP 토큰 요청 만들기** 를 클릭하고 **찾아보기** 를 클릭하여 DEP 토큰 요청에 대한 다운로드 위치를 지정한 후에 **다운로드**를 클릭합니다. DEP 토큰 요청(.pem) 파일을 로컬로 저장합니다. .pem 파일은 Apple 장치 등록 프로그램 포털에서 신뢰할 수 있는 토큰(.p7m)을 요청하는 데 사용됩니다.  
 
 3.  **장치 등록 프로그램 토큰 가져오기**   
     [장치 등록 프로그램 포털](https://deploy.apple.com) (https://deploy.apple.com) 로 이동하고 회사 Apple ID로 로그인합니다. 나중에 DEP 토큰을 갱신하려면 이 Apple ID를 사용해야 합니다.  
