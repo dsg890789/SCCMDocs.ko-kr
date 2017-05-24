@@ -2,7 +2,7 @@
 title: "릴리스 정보 - Configuration Manager | Microsoft 문서"
 description: "Microsoft 기술 자료 문서에서 다루지 않거나 제품에서 아직 해결되지 않은 긴급한 문제에 대해서는 이 정보를 참조하세요."
 ms.custom: na
-ms.date: 03/27/2017
+ms.date: 05/11/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,10 +17,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 7a6c89254d01f4074e5c170b20338686178ebdd3
-ms.openlocfilehash: 59946d1328be1606ba7c4dab647e814c1b4e638a
+ms.sourcegitcommit: d5166b16ffbe46af561b1ce98c0494cc4aaa72a8
+ms.openlocfilehash: 9da6f9678a7fb5c76f365a3522f5e5e0fdfec037
 ms.contentlocale: ko-kr
-ms.lasthandoff: 04/28/2017
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -145,9 +145,16 @@ ConfigMgrSetup.log:
 -->
 
 
-<!-- No current  Client deployment and upgrade relenotes
-## Client deployment and upgrade  
--->
+
+## <a name="client-deployment-and-upgrade"></a>클라이언트 배포 및 업그레이드  
+
+### <a name="client-installation-fails-with-error-code-0x8007064c"></a>오류 코드 0x8007064c를 나타내며 클라이언트 설치가 실패합니다.
+<!--- SMS 486973 -->
+
+Windows 컴퓨터에 클라이언트를 배포할 때 설치가 실패합니다. ccmsetup.log 파일에는 "파일 'C:\WINDOWS\ccmsetup\Silverlight.exe'가 실패 종료 코드 1612를 반환했습니다. 설치가 실패합니다.”와 “InstallFromManifest가 0x8007064c를 나타내며 실패했습니다.” 항목이 포함됩니다.
+
+**해결 방법** 이 문제는 이전에 설치된 Silverlight 버전이 손상되었기 때문에 발생합니다. 이 문제를 해결하려면 영향을 받는 컴퓨터에서 다음 도구를 실행할 수 있습니다. [https://support.microsoft.com/help/17588/fix-problems-that-block-programs-from-being-installed-or-removed](https://support.microsoft.com/help/17588/fix-problems-that-block-programs-from-being-installed-or-removed) 
+
 
 
 
@@ -247,5 +254,5 @@ System Center Configuration Manager 버전 업데이트 1602에 영향을 주는
 ### <a name="antimalware-policy-fails-to-apply-on-windows-server-2016-core"></a>Windows Server 2016 Core에서 맬웨어 방지 정책 적용 실패
 Windows Server 2016 Core에서 맬웨어 방지 정책을 적용하는 데 실패합니다.  오류 코드는 0x80070002입니다.  ConfigSecurityPolicy.exe에 대한 종속성이 누락되어 있습니다.
 
-**해결 방법:**  없습니다.  관리자로서 그룹 정책을 사용하여 Windows Server 2016 Core의 설정을 관리할 수 있습니다.
+**해결 방법:** 이 문제는 2017년 5월 9일에 발표된 [기술 자료 문서 4019472](https://support.microsoft.com/help/4019472/windows-10-update-kb4019472)를 통해 해결됩니다. 
 

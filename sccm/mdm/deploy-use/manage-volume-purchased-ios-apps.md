@@ -2,7 +2,7 @@
 title: "대량 구매한 iOS 앱 관리 | Microsoft 문서"
 description: "iOS App Store를 통해 구입한 앱의 라이선스를 배포, 관리 및 추적합니다."
 ms.custom: na
-ms.date: 05/03/2017
+ms.date: 05/12/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,10 +17,10 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: c6a6137fa978e1ea28aefea2aea4e29ba661efd6
-ms.openlocfilehash: 55f1204b088a7b636a90561f20aa41c7de72bc05
+ms.sourcegitcommit: f4cb711f369698fe8e045f8c83dd96ec6fb29d70
+ms.openlocfilehash: ce706e938f558406044f7890c80bb7156c3b262b
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="manage-volume-purchased-ios-apps-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 대량 구매한 iOS 앱 관리
@@ -58,6 +58,7 @@ ms.lasthandoff: 05/04/2017
       **동기화**를 선택하여 수동 동기화를 수행하는 경우 항상 전체 동기화가 수행됩니다.  
 -   Configuration Manager 데이터베이스를 복구하거나 복원해야 하는 경우 나중에 수동 동기화를 수행하여 동기화된 라이선스 데이터를 최신 상태로 유지하는 것이 좋습니다.  
 -   또한 앱 배포를 비롯한 iOS 장치를 관리할 수 있도록 Apple에서 유효한 APNs(Apple Push Notification Service) 인증서를 가져온 상태여야 합니다. 자세한 내용은 [iOS 하이브리드 장치 관리 설정](enroll-hybrid-ios-mac.md)을 참조하세요.  
+-   Configuration Manager는 최대 3000개의 VPP 토큰을 추가하도록 지원합니다.
 
 System Center Configuration Manager 1702부터 이제 사용이 허가된 앱을 사용자 및 장치에 배포할 수 있습니다. 장치 라이선싱을 지원하는 앱 기능에 따라 앱 배포 시 다음과 같이 적절한 라이선스가 청구됩니다.
 

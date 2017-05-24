@@ -16,10 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 3eb48942c1259d2aa1b3c200fad73b39b11c0b8c
-ms.openlocfilehash: 39361102d77441488bf61c9cbbfb0086774e0c09
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: d5166b16ffbe46af561b1ce98c0494cc4aaa72a8
+ms.openlocfilehash: e040552dab21ba9a71e06a78f6acc2ffe1b0eb61
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -92,7 +93,7 @@ Configuration Manager는 다음 운영 체제의 배포 지점에 대해 데이�
 자세한 내용은 Configuration Manager 팀 블로그의 [Configuration Manager 배포 지점 및 Windows Server 2012 데이터 중복 제거 ](http://blogs.technet.com/b/configmgrteam/archive/2014/02/18/configuration-manager-distribution-points-and-windows-server-2012-data-deduplication.aspx)와 Windows Server TechNet 라이브러리의 [데이터 중복 제거 개요](http://technet.microsoft.com/library/hh831602.aspx)를 참조하세요.  
 
 ##  <a name="bkmk_DA"></a> DirectAccess  
-Configuration Manager에서는 사이트 시스템 서버와 클라이언트 간의 통신을 위해 Windows Server 2008 R2의 DirectAccess 기능을 지원합니다.  
+Configuration Manager에서는 클라이언트와 사이트 시스템 서버 간 통신을 위해 Windows Server 2008 R2 이상의 DirectAccess 기능을 지원합니다.  
 
 -   DirectAccess에 대한 요구 사항이 모두 충족되면 인터넷의 Configuration Manager 클라이언트가 DirectAccess를 사용하여 인트라넷에 있는 것처럼 할당된 사이트와 통신할 수 있습니다.  
 
