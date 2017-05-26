@@ -16,9 +16,10 @@ caps.handback.revision: 0
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: fdfbdd1acb1190ca7de9cff2b4b7f916d8dc1272
+ms.contentlocale: ko-kr
 ms.lasthandoff: 12/16/2016
 
 
@@ -139,7 +140,7 @@ System Center Configuration Manager 작업 순서를 사용하여 현재 운영 
     -   복원한 프로필에 새 암호를 제공하려면 **로컬 컴퓨터 사용자 프로필 복원** 을 선택합니다. 로컬 프로필에 대한 암호를 마이그레이션할 수 없습니다.  
 
         > [!NOTE]  
-        >  로컬 사용자 계정이 있는 경우 [사용자 상태 캡처](../understand/task-sequence-steps.md#BKMK_CaptureUserState) 단계를 사용하고 ****를 선택하면 [사용자 상태 복원](../understand/task-sequence-steps.md#BKMK_RestoreUserState) 단계에서 **로컬 컴퓨터 사용자 프로필 복원** 설정을 선택해야 합니다. 선택하지 않으면 작업 순서가 실패합니다.  
+        >  로컬 사용자 계정이 있는 경우 [사용자 상태 캡처](../understand/task-sequence-steps.md#BKMK_CaptureUserState) 단계를 사용하고를 선택하면 [사용자 상태 복원](../understand/task-sequence-steps.md#BKMK_RestoreUserState) 단계에서 **로컬 컴퓨터 사용자 프로필 복원** 설정을 선택해야 합니다. 선택하지 않으면 작업 순서가 실패합니다. ****  
 
     -   파일을 복원할 수 없는 경우라도 **사용자 상태 복원** 단계를 계속 진행하려면 **일부 파일을 복원할 수 없는 경우 계속** 을 선택합니다.  
 

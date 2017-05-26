@@ -15,9 +15,10 @@ caps.latest.revision: 10
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
 ms.openlocfilehash: ed692bdea055775890535d2666f09ba5f5c7c4e1
+ms.contentlocale: ko-kr
 ms.lasthandoff: 12/16/2016
 
 
@@ -215,7 +216,7 @@ ms.lasthandoff: 12/16/2016
 
 |관리 작업|세부 정보|  
     |---------------------|-------------|  
-    |****|선택한 경고의 이름, 심각도 및 임계값을 수정할 수 있는 *&lt;경고 이름*\>**속성** 대화 상자를 엽니다. 경고의 심각도를 변경하는 경우 이 구성은 Configuration Manager 콘솔에서 경고가 표시되는 방식에 영향을 줍니다.|  
+    |**구성**|선택한 경고의 이름, 심각도 및 임계값을 수정할 수 있는 *&lt;경고 이름*\>**속성** 대화 상자를 엽니다. 경고의 심각도를 변경하는 경우 이 구성은 Configuration Manager 콘솔에서 경고가 표시되는 방식에 영향을 줍니다.|  
     |**설명 편집**|선택한 경고에 대한 설명을 입력합니다. 이러한 설명은 Configuration Manager 콘솔에서 경고와 함께 표시됩니다.|  
     |**연기**|지정된 날짜까지 경고 모니터링을 일시 중단합니다. 그때 경고 상태가 업데이트됩니다.<br /><br /> 사용하도록 설정된 경우에만 경고를 연기할 수 있습니다.|  
     |**구독 만들기**|선택한 경고에 대한 메일 구독을 만들 수 있는 **새 구독** 대화 상자를 엽니다.|  
