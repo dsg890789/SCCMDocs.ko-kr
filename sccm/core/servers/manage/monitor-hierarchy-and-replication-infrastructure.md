@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
 ms.openlocfilehash: 132803a1aa9aad5c5462686bd656688418e47d07
+ms.contentlocale: ko-kr
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -55,7 +57,7 @@ System Center Configuration Manager에서 인프라 및 작업을 모니터링�
 
 
 
-##  <a name="a-namebkmkmonintormgmttasksa-monitor--common-management-tasks-for-configuration-manager"></a><a name="BKMK_MonintorMgmtTasks"></a> Configuration Manager의 일반 관리 작업 모니터링  
+##  <a name="BKMK_MonintorMgmtTasks"></a> Configuration Manager의 일반 관리 작업 모니터링  
  Configuration Manager는 Configuration Manager 콘솔 내에서 기본 제공 모니터링을 제공합니다. 소프트웨어 업데이트, 전원 관리 및 계층 전체에 콘텐츠 배포와 관련된 작업을 포함한 여러 작업을 모니터링할 수 있습니다.  
 
  일반적인 Configuration Manager 작업을 모니터링하려면 다음 정보를 참조하세요.  
@@ -87,10 +89,10 @@ System Center Configuration Manager에서 인프라 및 작업을 모니터링�
  [System Center Configuration Manager에서 소프트웨어 업데이트 모니터링](../../../sum/deploy-use/monitor-software-updates.md)을 참조하세요.  
 
 
-##  <a name="a-namebkmkmonitorinfrastructurea-monitor-hierarchy-infrastructure-for-configuration-manager"></a><a name="BKMK_MonitorInfrastructure"></a> Configuration Manager의 계층 인프라 모니터링  
+##  <a name="BKMK_MonitorInfrastructure"></a> Configuration Manager의 계층 인프라 모니터링  
 Configuration Manager에서는 여러 가지 방법으로 계층 구조의 상태와 작업을 모니터링할 수 있습니다. 계층 전체에 있는 사이트의 시스템 상태를 확인하고, 사이트 계층 또는 지리적 위치 보기에서 사이트 간 복제를 모니터링하고, 데이터베이스 복제를 위한 사이트 간 복제 링크를 모니터링하고, Replication Link Analyzer 툴을 사용하여 복제 문제를 해결할 수 있습니다.  
 
-###  <a name="a-namebkmkshnodea-about-the-site-hierarchy-node"></a><a name="BKMK_SH_Node"></a> 사이트 계층 노드 정보  
+###  <a name="BKMK_SH_Node"></a> 사이트 계층 노드 정보  
 **모니터링** 작업 영역의 **사이트 계층** 노드에서는 Configuration Manager 계층 구조 및 사이트 간 링크의 개요를 제공합니다. 두 가지 보기를 사용할 수 있습니다.  
 
 -   **계층 다이어그램**: 이 보기는 중요한 정보만 표시하는 단순화된 토폴로지 맵으로 계층을 표시합니다.  
@@ -126,13 +128,13 @@ Configuration Manager에서는 여러 가지 방법으로 계층 구조의 상�
 
      위치를 지정할 때에는 **위치** 상자를 사용하여 계층의 특정 사이트를 검색할 수 있습니다. 사이트가 선택된 상태에서 **위치** 열에 위치를 구/군/시 이름 또는 주소로 입력합니다. Configuration Manager에서는 Bing 지도를 사용하여 위치를 확인합니다.  
 
-###  <a name="a-namebkmkmonitorreplinksandstatussa-how-to-monitor-database-replication-links-and-replication-status"></a><a name="BKMK_MonitorRepLinksAndStatuss"></a> 데이터베이스 복제 링크 및 복제 상태를 모니터링하는 방법  
+###  <a name="BKMK_MonitorRepLinksAndStatuss"></a> 데이터베이스 복제 링크 및 복제 상태를 모니터링하는 방법  
  **모니터링** 작업 영역의 **사이트 계층** 노드에서 액세스할 수 있는 높은 수준의 세부 정보 외에 **모니터링** 작업 영역에서 **데이터베이스 복제** 를 사용하는 경우 데이터베이스 복제에 대한 세부 정보도 모니터링할 수 있습니다. **데이터베이스 복제**에서 사이트 간 복제 링크의 상태와 Configuration Manager 콘솔이 연결되는 사이트에 있는 복제 그룹의 초기화 정보 및 복제 정보를 모니터링할 수 있습니다.  
 
 > [!TIP]  
 >  **관리** 작업 영역의 **계층 구성** 노드 아래에도 **데이터베이스 복제** 노드가 나타나지만 이 위치에서는 데이터베이스 복제 링크의 복제 상태를 확인할 수 없습니다.  
 
-####  <a name="a-namebkmkmonitorreplicationlinksa-replication-link-status"></a><a name="BKMK_MonitorReplicationLinks"></a> 복제 링크 상태  
+####  <a name="BKMK_MonitorReplicationLinks"></a> 복제 링크 상태  
 사이트 간 데이터베이스 복제 시에는 복제 그룹이라는 여러 정보 집합의 복제가 이루어집니다. 각 복제 그룹은 서로 다른 복제 우선 순위를 가지고 복제됩니다. 기본적으로 복제 그룹에 포함되는 데이터와 복제 빈도는 수정할 수 없습니다.  
 
  복제 링크가 활성화되어 있고 실패 또는 저하됨 상태를 갖지 않는 경우 모든 복제 그룹이 적시에 복제됩니다. 하나 이상의 복제 그룹이 예상 기간 내에 복제를 완료하지 못할 경우 링크가 저하됨으로 표시됩니다. 저하된 링크는 여전히 작동할 수 있지만 모니터링을 통해 활성 상태로 복귀되는 것을 확인하거나, 조사를 통해 추가 저하 또는 복제 실패가 발생하지 않도록 해야 합니다.  
@@ -149,7 +151,7 @@ Configuration Manager에서는 여러 가지 방법으로 계층 구조의 상�
 
  부모 사이트에서 새 서비스 팩으로의 업그레이드를 진행 중일 때 자식 사이트에서 링크 상태를 보면 링크 상태가 활성화된 것으로 표시됩니다. 업그레이드 후에 자식 사이트가 부모 사이트와 동일한 서비스 팩을 사용할 때까지는 부모 사이트에서 볼 때 링크 상태가 활성화된 것으로 표시되고, 자식 사이트에서 볼 때는 링크 상태가 구성 중인 것으로 표시됩니다.  
 
-####  <a name="a-namebkmkmonitorreplicationstatusa-replication-status"></a><a name="BKMK_MonitorReplicationStatus"></a> 복제 상태  
+####  <a name="BKMK_MonitorReplicationStatus"></a> 복제 상태  
  **모니터링** 작업 영역의 **데이터베이스 복제** 노드를 사용하여 복제 링크의 복제 상태를 확인하고 복제 링크의 각 사이트에 있는 사이트 데이터베이스에 대한 세부 정보를 볼 수 있습니다. 복제 그룹에 대한 세부 정보도 볼 수 있습니다. 세부 정보를 보려면 복제 링크를 선택한 후에 확인할 복제 상태의 해당 탭을 선택합니다. 다음에는 복제 상태와 관련한 여러 탭에 대한 자세한 정보가 나와 있습니다.  
 
  **요약**  
@@ -190,7 +192,7 @@ Configuration Manager에서는 여러 가지 방법으로 계층 구조의 상�
 > [!TIP]  
 >  사이트 데이터의 복제 그룹은 자식 사이트에서 부모 사이트로만 전송됩니다. 글로벌 데이터의 복제 그룹은 두 방향으로 모두 복제됩니다.  
 
-###  <a name="a-namebkmkrlaa-about-the-replication-link-analyzer"></a><a name="BKMK_RLA"></a> Replication Link Analyzer 정보  
+###  <a name="BKMK_RLA"></a> Replication Link Analyzer 정보  
  Configuration Manager에는 복제 문제를 분석하고 복구하는 데 사용하는 **Replication Link Analyzer**가 포함되어 있습니다. Replication Link Analyzer를 사용하면 복제가 실패했을 때와 복제가 중지되었지만 아직 실패된 것으로 보고되지는 않았을 때 복제 링크 오류를 재구성할 수 있습니다. Replication Link Analyzer는 Configuration Manager 계층 구조의 다음 컴퓨터 간의 복제 문제를 해결하는 데 사용할 수 있습니다(복제 오류의 방향은 중요하지 않음).  
 
 -   사이트 서버와 사이트 데이터베이스 서버 간  
@@ -229,7 +231,7 @@ Replication Link Analyzer가 재구성을 완료하지 못하면 사이트 서�
 
 -   System Center Configuration Manager 버전 1511 릴리스에서 Replication Link Analyzer가 System Center 2012 Configuration Manager에서 업그레이드된 기본 사이트에 대해 SQL Server Service Broker 인증서 오류를 생성합니다. 이는 Replication Link Analyzer가 아직 업데이트되지 않은 1511 버전으로 지정한 인증서의 이름이 변경되었기 때문입니다. 이러한 오류는 무시해도 됩니다.  
 
-###  <a name="a-namebkmkprocsformonitoringreplicationa-procedures-for-monitoring-database-replication"></a><a name="BKMK_ProcsforMonitoringReplication"></a> 데이터베이스 복제 모니터링 절차  
+###  <a name="BKMK_ProcsforMonitoringReplication"></a> 데이터베이스 복제 모니터링 절차  
 
 ##### <a name="to-monitor-high-level-site-to-site-database-replication-status"></a>상위 사이트 간 데이터베이스 복제 상태를 모니터링하려면    
 1.  Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.  
@@ -242,9 +244,4 @@ Replication Link Analyzer가 재구성을 완료하지 못하면 사이트 서�
 1.  Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.  
 
 2.  **모니터링** 작업 영역에서 **데이터베이스 복제**를 클릭한 다음 모니터링할 링크의 복제 링크를 선택합니다. 그런 다음 작업 영역에서 적절한 탭을 선택하여 해당 링크의 복제 상태에 대한 여러 가지 서로 다른 정보를 봅니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
