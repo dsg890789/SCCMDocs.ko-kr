@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 468673581e0464fab21397c472b76708b8a5438b
 ms.openlocfilehash: 25619d91522193178e0415f649ca4b34c94ecc89
+ms.contentlocale: ko-kr
+ms.lasthandoff: 12/31/2016
 
 
 ---
@@ -52,7 +54,7 @@ System Center Configuration Manager 대상 계층으로 데이터를 마이그�
 
 -   [콘텐츠 마이그레이션 시 콘텐츠 소유권](#About_Migrating_Content)  
 
-##  <a name="a-nameaboutshareddpsinmigrationa-share-distribution-points-between-source-and-destination-hierarchies"></a><a name="About_Shared_DPs_in_Migration"></a> 원본 계층 구조와 대상 계층 구조 간에 배포 지점 공유  
+##  <a name="About_Shared_DPs_in_Migration"></a> 원본 계층 구조와 대상 계층 구조 간에 배포 지점 공유  
 마이그레이션 중에 원본 계층의 배포 지점을 대상 계층과 공유할 수 있습니다. 공유된 배포 지점을 사용하면 원본 계층에서 마이그레이션한 콘텐츠를 대상 계층의 클라이언트에서 바로 사용할 수 있도록 만들 수 있으므로, 해당 콘텐츠를 다시 만든 다음 대상 계층의 새 배포 지점에 배포할 필요가 없습니다. 대상 계층의 클라이언트가 공유된 배포 지점에 배포되는 콘텐츠를 요청하면 공유 배포 지점을 유효한 콘텐츠 위치로 클라이언트에 제공할 수 있습니다.  
 
  원본 계층에서 마이그레이션하는 작업이 활성 상태로 유지되는 동안 대상 계층에서 클라이언트의 유효한 콘텐츠 위치로 사용될 뿐 아니라, 배포 지점을 업그레이드하거나 대상 계층에 재할당할 수 있습니다. Configuration Manager 2007 공유 배포 지점을 업그레이드하고 System Center 2012 Configuration Manager 공유 배포 지점을 재할당할 수 있습니다. 공유 배포 지점을 업그레이드하거나 재할당하면 배포 지점이 원본 계층에서 제거되고 대상 계층의 배포 지점이 됩니다. 공유 대상 계층을 업그레이드하거나 재할당하면 원본 계층에서 마이그레이션을 완료한 후에 대상 계층의 배포 지점을 계속 사용할 수 있습니다. 공유 배포 지점을 업그레이드하는 방법에 대한 자세한 내용은 [Configuration Manager 2007 공유 배포 지점 업그레이드 계획](#Planning_to_Upgrade_DPs)을 참조하세요. 공유 배포 지점을 재할당하는 방법에 대한 자세한 내용은 [System Center Configuration Manager 배포 지점 재할당 계획](#BKMK_ReassignDistPoint)을 참조하세요.  
@@ -91,7 +93,7 @@ System Center Configuration Manager 대상 계층으로 데이터를 마이그�
 
 배포 지점을 공유한 후에는 원본 계층에서 공유 배포 지점의 구성을 변경할 수 있습니다. 배포 지점의 구성 변경 사항은 다음 데이터 수집 주기가 끝난 후 대상 계층에 반영됩니다. 공유 조건에 맞게 업데이트된 배포 지점은 자동으로 공유되지만 더 이상 조건에 맞지 않는 배포 지점은 배포 지점 공유가 중단됩니다. 예를 들어 인트라넷 FQDN으로 설정되지 않아 처음에 대상 계층과 공유되지 않은 배포 지점이 있을 수 있습니다. 이 배포 지점의 FQDN을 설정한 후에 다음 데이터 수집 주기에서 이 구성을 확인하면 이 배포 지점이 대상 계층과 공유됩니다.  
 
-##  <a name="a-nameplanningtoupgradedpsa-plan-to-upgrade-configuration-manager-2007-shared-distribution-points"></a><a name="Planning_to_Upgrade_DPs"></a> Configuration Manager 2007 공유 배포 지점 업그레이드 계획  
+##  <a name="Planning_to_Upgrade_DPs"></a> Configuration Manager 2007 공유 배포 지점 업그레이드 계획  
 Configuration Manager 2007 원본 계층에서 마이그레이션할 때 공유 배포 지점을 업그레이드하여 System Center Configuration Manager 배포 지점으로 만들 수 있습니다. 기본 사이트와 보조 사이트에서 배포 지점을 업그레이드할 수 있습니다. 업그레이드 프로세스는 Configuration Manager 2007 계층에서 배포 지점을 제거하고 대상 계층에서 이 배포 지점을 사이트 시스템 서버로 만듭니다. 이 프로세스는 배포 지점에 있는 기존 콘텐츠를 배포 지점 컴퓨터의 새 위치로도 복사합니다. 그러면 업그레이드 프로세스에서 콘텐츠의 사본을 수정하여 대상 계층에서 콘텐츠 배포와 함께 사용할 단일 인스턴스 저장소를 만듭니다. 그러므로 배포 지점을 업그레이드할 때, 마이그레이션되어 Configuration Manager 2007 배포 지점에 호스트된 콘텐츠를 재배포할 필요가 없습니다.  
 
 Configuration Manager에서 콘텐츠를 단일 인스턴스 저장소로 변환하고 나면 Configuration Manager는 배포 지점 컴퓨터에서 원래 원본 콘텐츠를 삭제하여 디스크 공간을 확보합니다. Configuration Manager에서는 원래 원본 콘텐츠 위치를 사용하지 않습니다.  
@@ -118,7 +120,7 @@ Configuration Manager 콘솔의 **원본 계층** 노드에서 업그레이드�
 
 Configuration Manager 2007 보조 사이트 서버에 설치된 배포 지점을 업그레이드할 경우 보조 사이트가 원본 계층에서 제거됩니다. 이 시나리오의 명칭은 보조 사이트 업그레이드이지만 배포 지점 사이트 시스템 역할에만 적용됩니다. 따라서 보조 사이트는 업그레이드되지 않고 그 대신 제거됩니다. 이에 따라 보조 사이트 서버였던 컴퓨터에는 대상 계층의 배포 지점이 남게 됩니다. 보조 사이트에서 배포 지점을 업그레이드하려고 계획하는 경우 이 항목에서 [Configuration Manager 2007 보조 사이트 업그레이드 계획](#BKMK_UpgradeSS)을 참조하세요.  
 
-###  <a name="a-namebkimkupgradeprocessa-distribution-point-upgrade-process"></a><a name="BKIMK_UpgradeProcess"></a> 배포 지점 업그레이드 프로세스  
+###  <a name="BKIMK_UpgradeProcess"></a> 배포 지점 업그레이드 프로세스  
 Configuration Manager 콘솔을 사용하여 대상 계층 구조와 공유하는 Configuration Manager 2007 배포 지점을 업그레이드할 수 있습니다. 공유 배포 지점을 업그레이드할 경우 해당 배포 지점이 Configuration Manager 2007 사이트에서 제거됩니다. 그런 다음, 대상 계층에서 지정한 기본 또는 보조 사이트에 연결된 배포 지점으로 설치됩니다. 업그레이드 프로세스는 배포 지점에 저장되는 마이그레이션된 콘텐츠의 복사본을 만든 다음 이 복사본을 단일 인스턴스 콘텐츠 저장소로 변환합니다. Configuration Manager는 패키지를 단일 인스턴스 콘텐츠 저장소로 변환할 때 패키지에 **배포 지점에서 프로그램 실행**으로 설정된 하나 이상의 보급 알림이 포함되지 않으면 배포 지점 컴퓨터의 SMSPKG 공유에서 이 패키지를 삭제합니다.  
 
 배포 지점을 업그레이드하기 위해 Configuration Manager는 원본 사이트의 SMS 공급자에서 데이터를 수집하도록 설정된 **원본 사이트 액세스 계정**을 사용합니다. 이 계정으로 원본 사이트에서 데이터를 수집하려면 사이트 개체에 대한 **읽기** 권한만 있으면 되지만, 업그레이드하는 동안 Configuration Manager 2007 사이트에서 배포 지점을 제거하려면 **사이트** 클래스에 대한 **삭제** 및 **수정** 권한도 있어야 합니다.  
@@ -152,7 +154,7 @@ Configuration Manager 콘솔에서 **관리** 작업 영역의 **마이그레이
 
 공유 배포 지점을 업그레이드하지 않기로 결정한 경우 대상 계층의 배포 지점을 이전 Configuration Manager 2007 배포 지점에 계속 설치할 수 있습니다. 새 배포 지점을 설치하려면 먼저 배포 지점 컴퓨터에서 모든 Configuration Manager 2007 사이트 시스템 역할을 제거해야 합니다. 여기에는 해당 컴퓨터가 사이트 서버 컴퓨터인 경우 Configuration Manager 2007 사이트도 포함됩니다. Configuration Manager 2007 배포 지점을 제거할 때 배포 지점에 배포된 콘텐츠는 컴퓨터에서 삭제되지 않습니다.  
 
-###  <a name="a-namebkmkupgradessa-plan-to-upgrade-configuration-manager-2007-secondary-sites"></a><a name="BKMK_UpgradeSS"></a> Configuration Manager 2007 보조 사이트 업그레이드 계획  
+###  <a name="BKMK_UpgradeSS"></a> Configuration Manager 2007 보조 사이트 업그레이드 계획  
  Configuration Manager 2007 보조 사이트 서버에서 호스트되는 공유 배포 지점을 마이그레이션을 통해 업그레이드할 경우 Configuration Manager에서는 배포 지점 사이트 시스템 역할을 대상 계층의 배포 지점으로 업그레이드합니다. 또한 원본 계층에서 보조 사이트도 제거합니다. 따라서 보조 사이트 없이 System Center Configuration Manager 배포 지점이 만들어집니다.  
 
  사이트 서버 컴퓨터에 있는 배포 지점의 업그레이드가 가능하려면 Configuration Manager로 해당 컴퓨터에 있는 각 사이트 시스템 역할과 보조 사이트를 제거할 수 있어야 합니다. 일반적으로 Configuration Manager 2007 서버 공유의 공유 배포 지점은 업그레이드가 가능합니다. 그러나 서버 공유가 보조 사이트 서버에 있는 경우 보조 사이트와 이 컴퓨터의 공유 배포 지점은 업그레이드할 수 없습니다. 이는 프로세스에서 보조 사이트를 제거하려고 할 때 서버 공유는 추가 사이트 시스템 개체로 처리되고 프로세스에서 이 개체를 제거할 수 없기 때문입니다. 이 시나리오에서는 보조 사이트 서버에서 표준 배포 지점을 사용하도록 설정한 다음 콘텐츠를 이 표준 배포 지점에 재배포하면 됩니다. 이 프로세스에서는 네트워크 대역폭을 사용하지 않습니다. 또한 작업이 완료되면 서버 공유에서 배포 지점을 제거하고 서버 공유를 제거한 다음, 배포 지점과 보조 사이트를 업그레이드할 수 있습니다.  
@@ -166,11 +168,11 @@ Configuration Manager 콘솔에서 **관리** 작업 영역의 **마이그레이
 
  보조 사이트 서버의 공유 배포 지점을 업그레이드하는 프로세스는 다른 공유 배포 지점 업그레이드와 동일합니다. 콘텐츠는 대상 계층에서 사용 중인 단일 인스턴스 저장소로 복사된 후 변환됩니다. 그러나 보조 사이트 서버에 있는 공유 배포 지점을 업그레이드할 때도 업그레이드 프로세스에서 관리 지점(있는 경우)을 제거한 다음 보조 사이트를 서버에서 제거합니다. 따라서 보조 사이트는 Configuration Manager 2007 계층 구조에서 제거됩니다. 보조 사이트를 제거할 때 Configuration Manager는 원본 사이트에서 데이터를 수집하도록 설정된 계정을 사용합니다.  
 
- 업그레이드 중에 Configuration Manager 2007 보조 사이트가 제거될 때부터 대상 계층에서 배포 지점 설치가 시작될 때까지는 지연 시간이 발생합니다. 이 지연 시간은 데이터 수집 주기에 따라 결정되며 최대 시간은&4;시간입니다. 지연 시간은 새 배포 지점 설치가 시작될 때까지 보조 사이트가 제거될 수 있는 시간을 제공합니다.  
+ 업그레이드 중에 Configuration Manager 2007 보조 사이트가 제거될 때부터 대상 계층에서 배포 지점 설치가 시작될 때까지는 지연 시간이 발생합니다. 이 지연 시간은 데이터 수집 주기에 따라 결정되며 최대 시간은 4시간입니다. 지연 시간은 새 배포 지점 설치가 시작될 때까지 보조 사이트가 제거될 수 있는 시간을 제공합니다.  
 
  공유 배포 지점을 업그레이드하는 방법에 대한 자세한 내용은 [Configuration Manager 2007 공유 배포 지점 업그레이드 계획](#Planning_to_Upgrade_DPs)을 참조하세요.  
 
-##  <a name="a-namebkmkreassigndistpointa-plan-to-reassign-system-center-configuration-manager-distribution-points"></a><a name="BKMK_ReassignDistPoint"></a> System Center Configuration Manager 배포 지점 재할당 계획  
+##  <a name="BKMK_ReassignDistPoint"></a> System Center Configuration Manager 배포 지점 재할당 계획  
  지원되는 System Center 2012 Configuration Manager 버전에서 같은 버전의 계층으로 마이그레이션할 경우 원본 계층의 공유 배포 지점을 대상 계층 내의 사이트에 재할당할 수 있습니다. 이것은 Configuration Manager 2007 배포 지점을 업그레이드하여 대상 계층의 배포 지점으로 만드는 개념과 비슷합니다. 기본 사이트와 보조 사이트에서 배포 지점을 재할당할 수 있습니다. 배포 지점을 재할당하면 원본 계층에서 배포 지점이 제거되고 컴퓨터 및 해당 배포 지점이 사용자가 대상 계층에서 선택한 사이트의 사이트 시스템 서버가 됩니다.  
 
  배포 지점을 재할당할 경우에는 원본 사이트 배포 지점에서 호스트했던 마이그레이션된 콘텐츠는 재배포할 필요가 없습니다. 또한 배포 지점을 재할당할 때는 Configuration Manager 2007 배포 지점의 업그레이드와 달리 배포 지점 컴퓨터에 추가 디스크 공간이 필요하지 않습니다. System Center 2012 Configuration Manager부터 배포 지점에서 콘텐츠에 대해 단일 인스턴스 저장소 형식을 사용합니다. 계층 구조 간에 배포 지점을 재할당할 때 배포 지점 컴퓨터의 콘텐츠를 변환할 필요가 없습니다.  
@@ -183,7 +185,7 @@ Configuration Manager 콘솔에서 **관리** 작업 영역의 **마이그레이
 
 Configuration Manager 콘솔의 **원본 계층** 노드에서 재할당할 수 있는 배포 지점을 확인하려면 원본 사이트를 선택한 다음 **공유 배포 지점** 탭을 선택합니다. 재할당 가능한 배포 지점의 경우 **재할당 가능 열**에 **예**가 표시됩니다. System Center 2012 R2 Configuration Manager 이전 버전에서 이 열 이름은 **업그레이드 가능**이었습니다.  
 
-###  <a name="a-namebkmkreassignprocessa-distribution-point-reassignment-process"></a><a name="BKMK_ReassignProcess"></a> 배포 지점 재할당 프로세스  
+###  <a name="BKMK_ReassignProcess"></a> 배포 지점 재할당 프로세스  
  Configuration Manager 콘솔을 사용하여 활성 원본 계층에서 공유 배포 지점을 재할당할 수 있습니다. 공유 배포 지점을 재할당할 경우 해당 배포 지점은 원본 사이트에서 제거된 다음 대상 계층에 지정한 기본 또는 보조 사이트에 연결되는 배포 지점으로 설치됩니다.  
 
  배포 지점을 재할당하기 위해 대상 계층에서는 원본 사이트의 SMS 공급자에서 데이터를 수집하도록 설정된 원본 사이트 액세스 계정을 사용합니다. 필요한 권한과 추가 필수 조건에 대한 자세한 내용은 [System Center Configuration Manager에서 마이그레이션을 수행하기 위한 필수 조건](../../core/migration/prerequisites-for-migration.md)을 참조하세요.  
@@ -203,15 +205,10 @@ Configuration Manager 콘솔의 **원본 계층** 노드에서 재할당할 수 
 - Configuration Manager SDK를 사용하는 경우 **SharedDPImportThreadLimit**를 변경하여 Configuration Manager에서 병렬로 처리할 수 있는 재할당된 배포 지점 수를 조정할 수 있습니다.
 
 
-##  <a name="a-nameaboutmigratingcontenta-assign-content-ownership-when-migrating-content"></a><a name="About_Migrating_Content"></a> 콘텐츠 마이그레이션 시 콘텐츠 소유권 할당  
+##  <a name="About_Migrating_Content"></a> 콘텐츠 마이그레이션 시 콘텐츠 소유권 할당  
  배포할 콘텐츠를 마이그레이션하는 경우 콘텐츠 개체를 대상 계층 내 사이트에 할당해야 합니다. 그러면 이 사이트는 대상 계층에서 해당 콘텐츠의 소유자가 됩니다. 대상 계층의 최상위 사이트는 콘텐츠의 메타데이터를 마이그레이션하는 사이트지만 네트워크를 통해 콘텐츠의 원래 원본 파일을 사용하는 사이트는 할당된 사이트입니다.  
 
  콘텐츠를 마이그레이션할 때 사용되는 네트워크 대역폭을 최소화하려면 네트워크에서 원본 계층의 콘텐츠 위치에 가까운 대상 계층의 사이트로 콘텐츠 소유권을 이전하는 것이 좋습니다. 대상 계층의 콘텐츠에 대한 정보는 전체에서 공유되므로 모든 사이트에서 사용할 수 있습니다.  
 
  콘텐츠 관련 정보는 데이터베이스 복제를 통해 모든 사이트에 공유되지만 기본 사이트에 할당한 후 다른 기본 사이트의 배포 지점에 배포한 콘텐츠는 파일 기반 복제를 통해 전송됩니다. 이 전송은 중앙 관리 사이트를 경유한 다음 다른 기본 사이트로 라우팅됩니다. 사이트를 콘텐츠 소유자로 할당하는 경우 마이그레이션 전이나 도중에 여러 기본 사이트에 배포할 패키지를 중앙에서 관리하면 대역폭이 낮은 네트워크를 통한 데이터 전송을 줄일 수 있습니다.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: cb5f7bf52a53935ca61b0e1b66822919b17d33e2
 ms.openlocfilehash: 0619de32f859f512ee1c9f5a9c83ef8d04a256ca
+ms.contentlocale: ko-kr
+ms.lasthandoff: 01/04/2017
 
 
 ---
@@ -28,7 +30,7 @@ ms.openlocfilehash: 0619de32f859f512ee1c9f5a9c83ef8d04a256ca
 
 System Center Configuration Manager 환경에서 마이그레이션 작업을 설정하려면 먼저 원본 계층을 구성하고 이 계층 구조에 있는 하나 이상의 원본 사이트에서 데이터를 수집해야 합니다. 다음 섹션을 사용하여 원본 계층 및 원본 사이트를 구성하는 방법과 Configuration Manager를 통해 원본 계층의 원본 사이트에서 정보를 수집하는 방법에 대해 계획합니다. 
 
-##  <a name="a-namebkmksourcehierarchiesa-source-hierarchies"></a><a name="BKMK_Source_Hierarchies"></a> 원본 계층 구조  
+##  <a name="BKMK_Source_Hierarchies"></a> 원본 계층 구조  
 원본 계층은 마이그레이션할 데이터가 포함된 Configuration Manager 계층 구조입니다. 마이그레이션을 설정하고 원본 계층을 지정할 때 원본 계층의 최상위 사이트를 지정합니다. 이 사이트를 원본 사이트라고도 합니다. 원본 계층에서 데이터를 마이그레이션할 수 있는 추가 사이트 또한 원본 사이트라고 합니다.  
 
 -   Configuration Manager 2007 원본 계층에서 데이터를 마이그레이션하는 마이그레이션 작업을 설정할 경우 원본 계층의 특정 원본 사이트 하나 이상에서 데이터를 마이그레이션하도록 구성합니다.  
@@ -62,7 +64,7 @@ System Center Configuration Manager 환경에서 마이그레이션 작업을 �
 
 원본 계층을 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager로 마이그레이션할 원본 계층 및 원본 사이트 구성](../../core/migration/configuring-source-hierarchies-and-source-sites-for-migration.md)을 참조하세요.  
 
-##  <a name="a-namebkmksourcesitesa-source-sites"></a><a name="BKMK_Source_Sites"></a> 원본 사이트  
+##  <a name="BKMK_Source_Sites"></a> 원본 사이트  
  원본 사이트는 마이그레이션할 데이터가 포함된 원본 계층 내 사이트입니다. 원본 계층의 최상위 사이트는 항상 첫 번째 원본 사이트가 됩니다. 마이그레이션하는 동안 새 원본 계층의 첫 번째 원본 사이트에서 데이터가 수집될 때 해당 계층의 추가 사이트에 대한 정보도 검색됩니다.  
 
  초기 원본 사이트에 대해 데이터 수집이 완료된 후 다음에 수행할 작업은 원본 계층의 제품 버전에 따라 달라집니다.  
@@ -82,10 +84,10 @@ System Center Configuration Manager 환경에서 마이그레이션 작업을 �
 
  데이터를 수집할 액세스 계정을 설정할 경우 원본 계층의 여러 컴퓨터에 액세스할 수 있는 **원본 사이트 SMS 공급자 계정** 권한을 부여해야 할 수 있습니다. 원본 사이트가 각기 다른 컴퓨터에 있는 SMS 공급자의 여러 인스턴스를 지원하는 경우 이 권한이 필요할 수 있습니다. 데이터 수집이 시작되면 대상 계층의 최상위 사이트는 원본 계층의 최상위 사이트에 연결하여 사이트에 대한 SMS 공급자의 위치를 확인합니다. 이 경우 SMS 공급자의 첫 번째 인스턴스만 확인됩니다. 데이터 수집 프로세스에서 확인된 위치에 있는 SMS 공급자에 액세스할 수 없는 경우 프로세스는 실패하고 사이트에 대한 SMS 공급자의 인스턴스를 실행하는 추가 컴퓨터에 연결을 시도하지 않습니다.  
 
-##  <a name="a-namebkmkdatagatheringa-data-gathering"></a><a name="BKMK_Data_Gathering"></a> 데이터 수집  
+##  <a name="BKMK_Data_Gathering"></a> 데이터 수집  
  Configuration Manager가 원본 사이트에서 데이터를 수집하기 시작하는 시점은 원본 계층을 지정하거나, 원본 계층의 각 추가 원본 사이트에 대해 자격 증명을 설정하거나, 원본 사이트에 대한 배포 지점을 공유한 직후입니다.  
 
- 데이터 수집 프로세스는 단순 일정에 따라 자동으로 반복되어 원본 사이트 내 데이터의 변경 내용에 대해 동기화 상태를 유지합니다. 기본적으로 이 프로세스는&4;시간마다 반복됩니다. 원본 사이트의 **속성**을 편집하면 이 주기에 대한 일정을 변경할 수 있습니다. 초기 데이터 수집 프로세스는 Configuration Manager 데이터베이스의 모든 개체를 검토하므로 완료하는 데 오랜 시간이 걸릴 수 있습니다. 이후의 데이터 수집 프로세스는 데이터의 변경 내용만 확인하므로 더 적은 시간이 소요됩니다.  
+ 데이터 수집 프로세스는 단순 일정에 따라 자동으로 반복되어 원본 사이트 내 데이터의 변경 내용에 대해 동기화 상태를 유지합니다. 기본적으로 이 프로세스는 4시간마다 반복됩니다. 원본 사이트의 **속성**을 편집하면 이 주기에 대한 일정을 변경할 수 있습니다. 초기 데이터 수집 프로세스는 Configuration Manager 데이터베이스의 모든 개체를 검토하므로 완료하는 데 오랜 시간이 걸릴 수 있습니다. 이후의 데이터 수집 프로세스는 데이터의 변경 내용만 확인하므로 더 적은 시간이 소요됩니다.  
 
  대상 계층의 최상위 사이트는 데이터를 수집하기 위해 원본 사이트의 SMS 공급자와 사이트 데이터베이스에 연결한 후 개체 및 배포 지점의 목록을 검색합니다. 이 연결에서 원본 사이트 액세스 계정이 사용됩니다. 데이터 수집을 위한 필수 구성에 대한 자세한 내용은 [System Center Configuration Manager에서 마이그레이션을 수행하기 위한 필수 조건](../../core/migration/prerequisites-for-migration.md)을 참조하세요.  
 
@@ -107,9 +109,4 @@ System Center Configuration Manager 환경에서 마이그레이션 작업을 �
  각 원본 사이트에서 데이터 수집을 중지하려면 최하위 계층 원본 사이트에서 **데이터 수집 중지**를 실행한 다음 각 부모 사이트에서 이 프로세스를 반복해야 합니다. 원본 계층의 최상위 사이트는 데이터 수집을 중지하는 마지막 사이트가 되어야 합니다. 부모 사이트에서 이 작업을 수행하기 전에 각 자식 사이트에서 데이터 수집을 중지해야 합니다. 일반적으로 마이그레이션 프로세스를 완료할 준비가 된 경우에만 데이터 수집을 중지합니다.  
 
  원본 사이트에 대해 데이터 수집을 중지한 후에 사이트의 개체 및 컬렉션에 대해 이전에 수집된 정보는 새 마이그레이션 작업을 설정할 때 계속 사용할 수 있습니다. 그러나 새 개체나 새 컬렉션은 볼 수 없으며 기존 개체에 적용된 변경 내용도 볼 수 없습니다. 원본 사이트를 다시 구성하고 데이터 수집을 다시 시작하면 이전에 마이그레이션된 개체에 대한 정보 및 상태를 볼 수 있습니다.  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

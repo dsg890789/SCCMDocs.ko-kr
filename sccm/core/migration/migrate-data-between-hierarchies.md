@@ -16,9 +16,10 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a8959c72608a1531fb323176c33a848a4a669b1c
 ms.openlocfilehash: dface33392c2a2a662522656eabf0936b52b28fc
+ms.contentlocale: ko-kr
 ms.lasthandoff: 12/30/2016
 
 
@@ -66,7 +67,7 @@ ms.lasthandoff: 12/30/2016
 
 2.  데이터 수집을 설정합니다. Configuration Manager에서 데이터 수집을 통해 원본 계층 구조에서 마이그레이션할 수 있는 데이터에 대한 정보를 수집할 수 있습니다.  
 
-     Configuration Manager의 데이터 수집 프로세스는 사용자가 중지하기 전까지 단순 일정에 따라 자동으로 반복됩니다. 기본적으로 데이터 수집 프로세스는&4;시간마다 반복되므로 마이그레이션할 원본 계층 구조 내 데이터의 변경 내용을 Configuration Manager에서 확인할 수 있습니다. 데이터 수집은 원본 계층에서 대상 계층으로 배포 지점을 공유하기 위해서도 필요합니다.  
+     Configuration Manager의 데이터 수집 프로세스는 사용자가 중지하기 전까지 단순 일정에 따라 자동으로 반복됩니다. 기본적으로 데이터 수집 프로세스는 4시간마다 반복되므로 마이그레이션할 원본 계층 구조 내 데이터의 변경 내용을 Configuration Manager에서 확인할 수 있습니다. 데이터 수집은 원본 계층에서 대상 계층으로 배포 지점을 공유하기 위해서도 필요합니다.  
 
 3.  원본 계층 및 대상 계층 사이에서 데이터를 마이그레이션하려면 마이그레이션 작업을 만드십시오.  
 

@@ -15,9 +15,11 @@ caps.latest.revision: 4
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: f9c43e26758d5171a6ef56e827b4b054ebc8a5e5
 ms.openlocfilehash: c7ad33339e65e6e00e88f98d6e13baceb98dae77
+ms.contentlocale: ko-kr
+ms.lasthandoff: 12/31/2016
 
 ---
 # <a name="size-and-scale-numbers-for-system-center-configuration-manager"></a>System Center Configuration Manager의 크기 조정 및 규모 숫자 값
@@ -35,9 +37,9 @@ ms.openlocfilehash: c7ad33339e65e6e00e88f98d6e13baceb98dae77
 -   [사이트 및 사이트 시스템 필수 조건](../../../core/plan-design/configs/site-and-site-system-prerequisites.md)
 
 
-이 문서의 이러한 지원 숫자 값은 Configuration Manager의 권장 하드웨어 사용 및 모든 사용 가능한 Configuration Manager 기능의 기본 설정을 기반으로 합니다. 권장 하드웨어를 사용하지 않거나 더 적극적인 사용자 지정 설정(예: 기본값인&7;일에 한 번보다 더 자주 하드웨어 또는 소프트웨어 인벤토리 실행)을 사용할 경우 사이트 시스템의 성능이 저하되고 명시된 지원 수준을 충족하지 못할 수 있습니다.
+이 문서의 이러한 지원 숫자 값은 Configuration Manager의 권장 하드웨어 사용 및 모든 사용 가능한 Configuration Manager 기능의 기본 설정을 기반으로 합니다. 권장 하드웨어를 사용하지 않거나 더 적극적인 사용자 지정 설정(예: 기본값인 7일에 한 번보다 더 자주 하드웨어 또는 소프트웨어 인벤토리 실행)을 사용할 경우 사이트 시스템의 성능이 저하되고 명시된 지원 수준을 충족하지 못할 수 있습니다.
 
-##  <a name="a-namebkmksitesystemscalea-site-types"></a><a name="bkmk_SiteSystemScale"></a> 사이트 유형  
+##  <a name="bkmk_SiteSystemScale"></a> 사이트 유형  
  **중앙 관리 사이트:**  
 
 -   중앙 관리 사이트는 최대 25개의 자식 기본 사이트를 지원합니다.  
@@ -67,7 +69,7 @@ ms.openlocfilehash: c7ad33339e65e6e00e88f98d6e13baceb98dae77
 
     -   이 사이트 시스템 역할의 각 인스턴스는 계층 구조에서 지원되는 최대 클라이언트 수를 지원합니다.  
 
-## <a name="a-namebkmkrolesa-site-system-roles"></a><a name="bkmk_roles"></a> 사이트 시스템 역할    
+## <a name="bkmk_roles"></a> 사이트 시스템 역할    
 
 **응용 프로그램 카탈로그 웹 서비스 지점:**  
 
@@ -123,23 +125,23 @@ ms.openlocfilehash: c7ad33339e65e6e00e88f98d6e13baceb98dae77
 
 -   원격 컴퓨터가 클라이언트 수를 지원하기 위한 WSUS(Windows Server Update Services) 요구 사항을 충족하는 경우 사이트 서버에서 원격인 소프트웨어 업데이트 지점이 최대 150,000대의 클라이언트를 지원할 수 있습니다.  
 
--   기본적으로 Configuration Manager에서는 소프트웨어 업데이트 지점을 NLB(네트워크 부하 분산) 클러스터로 구성할 수 없습니다. 그러나 Configuration Manager SDK를 사용하여 NLB 클러스터에서 최대&4;개의 소프트웨어 업데이트 지점을 구성할 수는 있습니다.  
+-   기본적으로 Configuration Manager에서는 소프트웨어 업데이트 지점을 NLB(네트워크 부하 분산) 클러스터로 구성할 수 없습니다. 그러나 Configuration Manager SDK를 사용하여 NLB 클러스터에서 최대 4개의 소프트웨어 업데이트 지점을 구성할 수는 있습니다.  
 
-##  <a name="a-namebkmkclientnumbersa-client-numbers-for-sites-and-hierarchies"></a><a name="bkmk_clientnumbers"></a> 사이트 및 계층 구조에 대한 클라이언트 수  
+##  <a name="bkmk_clientnumbers"></a> 사이트 및 계층 구조에 대한 클라이언트 수  
  다음 정보를 활용하면 사이트 또는 계층 구조에서 지원할 수 있는 클라이언트 수 및 유형을 확인할 수 있습니다.  
 
-###  <a name="a-namebkmkcasa-hierarchy-with-a-central-administration-site"></a><a name="bkmk_cas"></a> 중앙 관리 사이트가 있는 계층 구조  
+###  <a name="bkmk_cas"></a> 중앙 관리 사이트가 있는 계층 구조  
 중앙 관리 사이트는 다음과 같은 세 그룹에 대해 나열된 장치 수까지 포함하는 총 장치 수를 지원합니다.  
 
--   데스크톱(Windows, Linux 및 UNIX를 실행하는 컴퓨터)&700;,000대  
+-   데스크톱(Windows, Linux 및 UNIX를 실행하는 컴퓨터) 700,000대  
 
 -   Mac 및 Windows CE 7.0을 실행하는 장치 25,000대  
 
 -   배포에서 MDM(모바일 장치 관리)을 지원하는 방법에 따라 수치는 다음 중 하나입니다.  
 
-    -   온-프레미스 MDM을 사용하여 관리하는 장치&100;,000대  
+    -   온-프레미스 MDM을 사용하여 관리하는 장치 100,000대  
 
-    -   클라우드 기반 장치&300;,000대  
+    -   클라우드 기반 장치 300,000대  
 
  예를 들어 Microsoft Intune을 통합한 경우 계층 구조에서 데스크톱 700,000대, Mac 및 Windows CE 7.0 최대 25,000대, 클라우드 기반 장치 최대 300,000대로 총 1,025,000대 장치를 지원할 수 있습니다. 온-프레미스 MDM으로 관리하는 장치를 지원하는 경우 계층 구조의 총 수는 825,000대 장치입니다.  
 
@@ -147,50 +149,45 @@ ms.openlocfilehash: c7ad33339e65e6e00e88f98d6e13baceb98dae77
 >  중앙 관리 사이트가 SQL Server Standard Edition을 사용하는 계층 구조에서, 계층 구조는 최대 50,000대의 데스크톱 및 장치를 지원합니다. 독립 실행형 기본 사이트에서 사용 중인 SQL Server의 버전은 명시된 클라이언트 수까지 지원하도록 해당 사이트 용량을 제한하지 않습니다.  
 
 
-###  <a name="a-namebkmkchipria-child-primary-site"></a><a name="bkmk_chipri"></a> 자식 기본 사이트  
+###  <a name="bkmk_chipri"></a> 자식 기본 사이트  
 중앙 관리 사이트가 있는 계층의 각 자식 기본 사이트에서는 다음을 지원합니다.  
 
--   계층 구조에 대해 지원되는 수를 초과하지 않는 한 특정 그룹 또는 유형으로 제한되지 않는 총 클라이언트 및 장치&150;,000대.  
+-   계층 구조에 대해 지원되는 수를 초과하지 않는 한 특정 그룹 또는 유형으로 제한되지 않는 총 클라이언트 및 장치 150,000대.  
 
 예를 들어 Mac 및 Windows CE 7.0을 실행하는 25,000대(계층 구조의 제한)의 컴퓨터를 지원하는 기본 사이트는 추가로 125,000대의 데스크톱 컴퓨터를 지원할 수 있습니다. 따라서 지원되는 장치의 총수는 지원되는 하위 기본 사이트의 최대 제한인 150,000대가 됩니다.
 
-###  <a name="a-namebkmkpria-stand-alone-primary-site"></a><a name="bkmk_pri"></a> 독립 실행형 기본 사이트  
+###  <a name="bkmk_pri"></a> 독립 실행형 기본 사이트  
 독립 실행형 기본 사이트는 다음과 같은 장치 수를 지원합니다.  
 
--   총 클라이언트 및 장치 수는&175;,000대이지만 다음을 초과하지 않습니다.  
+-   총 클라이언트 및 장치 수는 175,000대이지만 다음을 초과하지 않습니다.  
 
-    -   데스크톱(Windows, Linux 및 UNIX를 실행하는 컴퓨터)&150;,000대  
+    -   데스크톱(Windows, Linux 및 UNIX를 실행하는 컴퓨터) 150,000대  
 
     -   Mac 및 Windows CE 7.0을 실행하는 장치 25,000대
 
     -   배포에서 모바일 장치 관리를 지원하는 방법에 따라 수치는 다음 중 하나입니다.  
 
-        -   온-프레미스 MDM을 사용하여 관리하는 장치&50;,000대  
+        -   온-프레미스 MDM을 사용하여 관리하는 장치 50,000대  
 
-        -   클라우드 기반 장치&150;,000  
+        -   클라우드 기반 장치 150,000  
 
 예를 들어 15,0000대 데스크톱 및 10,000대 Mac 또는 Windows CE 7.0을 지원하는 독립 실행형 기본 사이트에서는 15,000대의 추가 장치만 지원할 수 있습니다. 이러한 장치는 클라우드 기반이거나 온-프레미스 MDM을 사용하여 관리될 수 있습니다.  
 
-###  <a name="a-namebkmkseca-secondary-sites"></a><a name="bkmk_sec"></a> 보조 사이트  
+###  <a name="bkmk_sec"></a> 보조 사이트  
 보조 사이트에서는 다음을 지원합니다.  
 
--   데스크톱(Windows, Linux 및 UNIX를 실행하는 컴퓨터)&15;,000대  
+-   데스크톱(Windows, Linux 및 UNIX를 실행하는 컴퓨터) 15,000대  
 
-###  <a name="a-namebkmkmpa-management-points"></a><a name="bkmk_mp"></a> 관리 지점  
+###  <a name="bkmk_mp"></a> 관리 지점  
 각 관리 지점에서는 다음과 같은 장치 수를 지원할 수 있습니다.  
 
--   총 클라이언트 및 장치 수는&25;,000대이지만 다음을 초과하지 않습니다.  
+-   총 클라이언트 및 장치 수는 25,000대이지만 다음을 초과하지 않습니다.  
 
-    -   데스크톱(Windows, Linux 및 UNIX를 실행하는 컴퓨터)&25;,000대  
+    -   데스크톱(Windows, Linux 및 UNIX를 실행하는 컴퓨터) 25,000대  
 
     -   다음 중 하나입니다(둘 다는 될 수 없음).  
 
-        -   온-프레미스 MDM을 사용하여 관리하는 장치&10;,000대  
+        -   온-프레미스 MDM을 사용하여 관리하는 장치 10,000대  
 
         -   Mac 및 Windows CE 7.0 클라이언트를 실행하는 장치 10,000대
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

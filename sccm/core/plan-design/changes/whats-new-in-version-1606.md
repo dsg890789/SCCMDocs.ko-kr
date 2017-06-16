@@ -15,9 +15,11 @@ caps.latest.revision: 40
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 34809ddf7819eab5deb3995cd8138c7b38cd2f9a
 ms.openlocfilehash: 9fdff6049d6e5cde1032864e5d7aa8df71e53686
+ms.contentlocale: ko-kr
+ms.lasthandoff: 12/31/2016
 
 ---
 # <a name="what39s-new-in-version-1606-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1606의 새로운 기능
@@ -35,7 +37,7 @@ System Center Configuration Manager 업데이트 1606은 버전 1511 또는 1602
 
 
 
-## <a name="a-nameupdatesandservicingaupdates-and-servicing"></a><a name="updatesandservicing"></a>업데이트 및 서비스
+## <a name="updatesandservicing"></a>업데이트 및 서비스
 
 ### <a name="changes-for-the-updates-and-servicing-node"></a>업데이트 및 서비스 노드의 변경 내용
 다음은 Configuration Manager 콘솔의 업데이트 및 서비스 노드에 대한 변경 내용입니다.
@@ -81,10 +83,10 @@ System Center Configuration Manager 업데이트 1606은 버전 1511 또는 1602
 
 
 
-## <a name="a-nameaccessibilitya-accessibility"></a><a name="accessibility"></a> 접근성
+## <a name="accessibility"></a> 접근성
 작업 영역의 다른 노드로 이동하려면 이제 노드 이름의 첫 글자를 입력하면 됩니다. 키를 누를 때마다 해당 문자로 시작하는 다음 노드로 커서가 이동합니다. 화면 읽기 프로그램을 사용하는 사용자의 경우 읽기 프로그램이 해당 노드의 이름을 읽어냅니다. 접근성 옵션에 대한 자세한 내용은 [System Center Configuration Manager의 접근성 기능](../../../core/understand/accessibility-features.md)을 참조하세요.
 
-## <a name="a-nameadministrationaadministration"></a><a name="administration"></a>관리
+## <a name="administration"></a>관리
 다음은 Configuration Manager 콘솔의 관리에 대한 변경 내용입니다.
 ### <a name="oms-connector"></a>OMS 커넥터
 
@@ -121,7 +123,7 @@ Configuration Manager를 사용하여 대량 구매 iOS 앱을 관리하고 배�
 
 소프트웨어 센터 사용자 인터페이스가 검색하기 쉽도록 간소화되었습니다.
 *  **설치 상태** 및 **설치된 소프트웨어** 탭이 하나의 **설치 상태** 탭으로 결합되었습니다.
-*  **업데이트**, **운영 체제** 및 **응용 프로그램**이&3;개의 개별 탭으로 구분되었습니다.
+*  **업데이트**, **운영 체제** 및 **응용 프로그램**이 3개의 개별 탭으로 구분되었습니다.
 * 이제 한 번에 설치하기 위해 여러 업데이트를 선택하거나, **모두 설치**를 클릭하여 한 번에 모든 업데이트를 설치할 수 있습니다.
 
 ### <a name="content-status-links"></a>콘텐츠 상태 링크
@@ -225,9 +227,4 @@ Microsoft Intune에서 Configuration Manager를 사용하는 경우 장치 컬�
 
 ## <a name="remote-control"></a>원격 제어
 원격 제어 세션에서 공유 클립보드의 콘텐츠를 전송하기 전에 사용자에게 파일 전송을 수락하거나 거부할 기회를 허용합니다. 사용자는 세션당 한 번만 사용 권한을 부여하면 되며, 조회자는 파일 전송을 진행할 수 있는 권한을 자신에게 부여할 수 없습니다. **관리** 작업 영역에서 이 새로운 설정을 찾을 수 있습니다. **클라이언트 설정**으로 이동하고 **기본 설정**에서 **원격 도구** 패널을 엽니다.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
