@@ -36,7 +36,7 @@ ms.lasthandoff: 05/17/2017
  이 방법을 사용하려면 등록을 미리 구성하도록 관리자가 Apple Configurator를 실행하는 Mac 컴퓨터에 iOS 장치를 USB로 연결해야 합니다. 그런 다음 장치는 설치 도우미 프로세스를 실행하는 사용자에게 제공되어 회사 또는 학교 자격 증명을 사용하여 장치를 구성하고 등록 프로세스를 완료합니다. [Configuration Manager와 Apple Configurator를 사용하여 iOS 하이브리드 등록](../../mdm/deploy-use/ios-hybrid-enrollment-using-apple-configurator.md)을 참조하세요.  
 
 ## <a name="device-enrollment-manager"></a>장치 등록 관리자  
- 조직에서는 Intune을 사용하여 장치 등록 관리자 계정이라는 단일 사용자 계정으로 많은 수의 모바일 장치를 관리할 수 있습니다. 장치 등록 관리자 계정을 만든 후 해당 계정은 관리자가 일반 사용자에게 기본적으로 허용하는&5;개의 표준 장치보다 많은 장치를 등록하는 데 사용할 수 있습니다. 특정 사용자가 사용하지 않는 장치에만 장치 등록 관리자를 사용하여 장치를 등록할 수 있습니다. 이러한 장치는 예를 들면 POS(point-of-sale) 또는 유틸리티 앱에는 좋으나 메일 또는 회사 리소스에 액세스해야 하는 사용자에게는 좋지 않습니다. [Configuration Manager와 장치 등록 관리자를 사용하여 장치 등록](../../mdm/deploy-use/enroll-devices-with-device-enrollment-manager.md)을 참조하세요.  
+ 조직에서는 Intune을 사용하여 장치 등록 관리자 계정이라는 단일 사용자 계정으로 많은 수의 모바일 장치를 관리할 수 있습니다. 장치 등록 관리자 계정을 만든 후 해당 계정은 관리자가 일반 사용자에게 기본적으로 허용하는 5개의 표준 장치보다 많은 장치를 등록하는 데 사용할 수 있습니다. 특정 사용자가 사용하지 않는 장치에만 장치 등록 관리자를 사용하여 장치를 등록할 수 있습니다. 이러한 장치는 예를 들면 POS(point-of-sale) 또는 유틸리티 앱에는 좋으나 메일 또는 회사 리소스에 액세스해야 하는 사용자에게는 좋지 않습니다. [Configuration Manager와 장치 등록 관리자를 사용하여 장치 등록](../../mdm/deploy-use/enroll-devices-with-device-enrollment-manager.md)을 참조하세요.  
 
 ## <a name="user-affinity-for-managed-devices"></a>관리 장치에 대한 사용자 선호도  
  회사 소유 장치의 프로필을 구성할 때 관리자는 장치로 특정 사용자를 식별하는 *사용자 선호도*를 관리 장치가 지원할지 여부를 지정할 수 있습니다. **사용자 선호도**로 구성한 장치에서 회사 포털 앱을 설치하고 실행하여 앱을 다운로드하고 장치를 관리할 수 있습니다. [Configuration Manager의 하이브리드 관리 장치에 대한 사용자 선호도](../../mdm/deploy-use/user-affinity-for-hybrid-managed-devices.md)를 참조하세요.  

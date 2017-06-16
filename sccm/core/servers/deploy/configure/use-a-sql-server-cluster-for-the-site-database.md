@@ -40,7 +40,7 @@ ms.lasthandoff: 05/17/2017
 
  Configuration Manager 설치 중에 Windows 볼륨 섀도 복사본 서비스 작성기가 Microsoft Windows Server 클러스터의 각 물리적 컴퓨터 노드에 설치됩니다. 이 경우 **백업 사이트 서버** 유지 관리 작업이 지원됩니다.  
 
- 사이트가 설치된 후 Configuration Manager는&1;시간마다 클러스터 노드 변경 내용을 확인하고, 확인된 변경 내용 중 Configuration Manager 구성 요소 설치에 영향을 주는 변경 내용(예: 노드 장애 조치(Failover) 또는 SQL Server 클러스터에 새 노드 추가)을 자동으로 관리합니다.  
+ 사이트가 설치된 후 Configuration Manager는 1시간마다 클러스터 노드 변경 내용을 확인하고, 확인된 변경 내용 중 Configuration Manager 구성 요소 설치에 영향을 주는 변경 내용(예: 노드 장애 조치(Failover) 또는 SQL Server 클러스터에 새 노드 추가)을 자동으로 관리합니다.  
 
 ## <a name="supported-options-for-using-a-sql-server-failover-cluster"></a>SQL Server 장애 조치(Failover) 클러스터 사용을 위해 지원되는 옵션은 다음과 같습니다.
 

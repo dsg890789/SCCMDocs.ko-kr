@@ -94,7 +94,7 @@ ms.lasthandoff: 01/24/2017
 5.  편집한 프로필 URL을 저장합니다. [다음 섹션](#step-4-prepare-the-device-with-apple-configurator)에서 이 URL을 사용하여 Apple Configurator에서 등록 프로필 URL을 추가합니다.  
 
 > [!NOTE]
-> 등록 프로필 URL은 내보낸 후&2;주 동안 유효합니다. 2주 후에는 iOS 장치를 등록할 새 URL을 내보내야 합니다.
+> 등록 프로필 URL은 내보낸 후 2주 동안 유효합니다. 2주 후에는 iOS 장치를 등록할 새 URL을 내보내야 합니다.
 
 ## <a name="step-4-prepare-the-device-with-apple-configurator"></a>4단계: Apple Configurator를 사용하여 장치 준비
 

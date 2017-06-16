@@ -92,7 +92,7 @@ Microsoft가 WSUS(Windows Server Updates Services)를 위한 새로운 Office 36
 
 -   Configuration Manager를 설치하기 전에 SQL Server 가용성 그룹을 만들고 구성해야 합니다.  
 
--   가용성 그룹에는 주 복제본이 하나 있어야 하며 동기 보조 복제본이&2;개까지 포함될 수 있습니다.  
+-   가용성 그룹에는 주 복제본이 하나 있어야 하며 동기 보조 복제본이 2개까지 포함될 수 있습니다.  
 
 -   가용성 그룹에는 끝점이 하나 이상 있어야 합니다.  
 
@@ -117,9 +117,9 @@ Microsoft가 WSUS(Windows Server Updates Services)를 위한 새로운 Office 36
 #### <a name="to-create-a-sql-server-alwayson-availability-group"></a>SQL Server AlwaysOn 가용성 그룹을 만들려면  
 [SQL Server 가용성 그룹 만들기](https://technet.microsoft.com/library/ff878265\(v=sql.120\).aspx) 프로세스는 SQL Server 문서 라이브러리에 설명되어 있습니다.  가용성 그룹을 만들 때는 Configuration Manager와 함께 가용성 그룹을 사용하기 위한 다음 요구 사항을 충족하는지 확인합니다.  
 
--   최대&3;개 구성원:  
+-   최대 3개 구성원:  
 
-    -   주 복제본&1;개/보조 복제본 최대&2;개  
+    -   주 복제본 1개/보조 복제본 최대 2개  
 
     -   보조 복제본은 동기 복제본이어야 함  
 
