@@ -39,7 +39,7 @@ Coho Vineyard & Winery에서는 방문자 센터를 개설할 예정이며 Windo
 
      자세한 내용은 [System Center Configuration Manager에서 Windows Embedded 장치에 클라이언트 배포 계획](../../../core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)을 참조하세요.  
 
-2.  Configuration Manager 클라이언트를 설치하기 전에 Jane은 Windows Embedded 장치를 위한 새로운 쿼리 기반 장치 컬렉션을 만듭니다. 회사에서는 표준 명명 형식을 사용하여 컴퓨터를 식별하기 때문에 Jane은 컴퓨터 이름의 첫&6;자로 Windows Embedded 장치를 고유하게 식별할 수 있습니다. **WEMDVC** Jane은 다음 WQL 쿼리를 사용하여 이 컬렉션을 만듭니다. **select SMS_R_System.NetbiosName from SMS_R_System where SMS_R_System.NetbiosName like "WEMDVC%"**  
+2.  Configuration Manager 클라이언트를 설치하기 전에 Jane은 Windows Embedded 장치를 위한 새로운 쿼리 기반 장치 컬렉션을 만듭니다. 회사에서는 표준 명명 형식을 사용하여 컴퓨터를 식별하기 때문에 Jane은 컴퓨터 이름의 첫 6자로 Windows Embedded 장치를 고유하게 식별할 수 있습니다. **WEMDVC** Jane은 다음 WQL 쿼리를 사용하여 이 컬렉션을 만듭니다. **select SMS_R_System.NetbiosName from SMS_R_System where SMS_R_System.NetbiosName like "WEMDVC%"**  
 
      이 컬렉션을 통해 다른 장치와 다른 구성 옵션을 갖는 Windows Embedded 장치를 관리할 수 있습니다. Jane은 이 컬렉션을 사용하여 다시 시작을 제어하고, 클라이언트 설정을 갖는 Endpoint Protection을 배포하고, 대화형 프레젠테이션 응용 프로그램을 배포하게 됩니다.  
 
