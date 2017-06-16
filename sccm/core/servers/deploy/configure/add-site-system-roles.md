@@ -39,7 +39,7 @@ Configuration Manager는 한 사이트 시스템 서버에서 여러 사이트�
 
 -   [System Center Configuration Manager에 대한 사이트 시스템 역할 설치](../../../../core/servers/deploy/configure/install-site-system-roles.md)  
 
-     이 항목에서는 새 사이트 시스템 역할을 설치하는 데 사용할 수 있는&2;개의 콘솔 내 마법사를 사용하는 방법에 대한 기본 지침을 제공합니다.  
+     이 항목에서는 새 사이트 시스템 역할을 설치하는 데 사용할 수 있는 2개의 콘솔 내 마법사를 사용하는 방법에 대한 기본 지침을 제공합니다.  
 
 -   [Microsoft Azure에서 System Center Configuration Manager에 대한 클라우드 기반 배포 지점 설치](../../../../core/servers/deploy/configure/install-cloud-based-distribution-points-in-microsoft-azure.md)  
 
