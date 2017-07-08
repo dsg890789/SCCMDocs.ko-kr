@@ -2,7 +2,7 @@
 title: "Updates Publisher 설치 | Microsoft 문서"
 description: "환경에 System Center Updates Publisher 설치"
 ms.custom: na
-ms.date: 4/29/2017
+ms.date: 07/03/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,10 +17,10 @@ ms.author: brenduns
 manager: angrobe
 robots: NOINDEX, NOFOLLOW
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
-ms.openlocfilehash: 996766d0bd9ab2a3acb1970414f0ae511d97fbff
+ms.sourcegitcommit: 70772ba7d08560aa66abcce29dc6cc6334aa2032
+ms.openlocfilehash: 63ea0383497a3f06870c0907c732010259d1a809
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/03/2017
 
 ---
 # <a name="install-updates-publisher"></a>Updates Publisher 설치
@@ -119,7 +119,7 @@ Updates Publisher를 설치하려면 *필수 조건*을 충족하는 컴퓨터�
 설치가 완료되면 *UpdatesPublisher* 폴더에서 **UpdatesPublisher.exe**를 실행하여 Updates Publisher를 시작합니다.
 
 ## <a name="next-steps"></a>다음 단계
- Updates Publisher를 설치한 후에는 Updates Publisher에 대한 [옵션을 구성](/tools/updates-publisher-options)하는 것이 좋습니다. Updates Publisher의 일부 기능을 사용하려면 일부 옵션을 구성해야 합니다.
+ Updates Publisher를 설치한 후에는 Updates Publisher에 대한 [옵션을 구성](updates-publisher-options.md)하는 것이 좋습니다. Updates Publisher의 일부 기능을 사용하려면 일부 옵션을 구성해야 합니다.
 
- 그러나 기본값을 사용하고 업데이트 서버 또는 관리 장치에 업데이트를 배포하지 않으려면 [소프트웨어 업데이트 카탈로그 관리](/tools/updates-publisher-catalogs)로 바로 이동하거나, [소프트웨어 업데이트를 만들고](/tools/create-updates-with-updates-publisher) 업데이트 카탈로그를 직접 만듭니다.
+ 그러나 기본값을 사용하고 업데이트 서버 또는 관리 장치에 업데이트를 배포하지 않으려면 [소프트웨어 업데이트 카탈로그 관리](updates-publisher-catalogs.md)로 바로 이동하거나, [소프트웨어 업데이트를 만들고](create-updates-with-updates-publisher.md) 업데이트 카탈로그를 직접 만듭니다.
 
