@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: f809c9327db9f298168674add2d09820fdecd1b8
-ms.openlocfilehash: ec33d5febcbf7b57e220f7fe27db9671080fecff
+ms.sourcegitcommit: b0ba955aa7f854c3fa2c06ccf9ccd8ed354758b0
+ms.openlocfilehash: 31bddee83b2365cfa903077ffaa1d7116b194378
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/12/2017
 
 
 ---
@@ -40,7 +40,7 @@ ms.lasthandoff: 05/17/2017
 **Windows:**
 - Windows에 대한 품질 및 보안 업데이트만 지원됩니다.
 - Windows 10의 CB(현재 분기), CBB(비즈니스용 현재 분기) 또는 LTSB에 대한 지원은 추가되지 않습니다.
--    Windows Server의 새로운 주 버전은 지원되지 않습니다.
+-   Windows Server의 새로운 주 버전은 지원되지 않습니다.
 
 **SQL Server:**
 - SQL Server에 대한 품질 및 보안 업데이트나 서비스 팩 등의 부 업그레이드만 지원됩니다.
@@ -51,6 +51,7 @@ LTSB에서는 다음 Windows 컴퓨터 운영 체제를 사이트 시스템으�
 
 **지원되는 운영 체제:**
 - Windows Server 2016
+- Windows Server 2012 R2(x64): Standard, Datacenter
 - Windows Server 2012(x64): Standard, Datacenter
 - Windows Server 2008 R2 SP1(x64): Standard, Enterprise, Datacenter
 - Windows Server 2008 SP2(x86, x64): Standard, Enterprise, Datacenter*(참고 1 참조)*
