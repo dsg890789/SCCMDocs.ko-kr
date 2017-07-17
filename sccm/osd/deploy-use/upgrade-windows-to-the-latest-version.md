@@ -15,27 +15,29 @@ caps.latest.revision: 13
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 288a4c649f371d9701fe7249449356aa222bf372
-ms.openlocfilehash: 35f04e237efffbdb12893f658950a99dc0b98b85
+ms.translationtype: HT
+ms.sourcegitcommit: 1035dbbf944a3a467d637a4a948a75b0946eb711
+ms.openlocfilehash: 026d61113a918e43ac4395ef092b1931f33f16d3
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.lasthandoff: 07/11/2017
 
 ---
-# <a name="upgrade-windows-to-the-latest-version-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows를 최신 버전으로 업그레이드
+# System Center Configuration Manager를 사용하여 Windows를 최신 버전으로 업그레이드
+<a id="upgrade-windows-to-the-latest-version-with-system-center-configuration-manager" class="xliff"></a>
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-이 항목에서는 System Center Configuration Manager에서 컴퓨터의 Windows 7 이상 운영 체제를 Windows 10으로 업그레이드하는 단계를 제공합니다. 독립 실행형 미디어 또는 소프트웨어 센터와 같은 여러 다양한 배포 방법 중에서 선택할 수 있습니다. Windows 10의 전체 업그레이드 시나리오:  
+이 항목에서는 System Center Configuration Manager에서 컴퓨터 운영 체제를 Windows 7 이상에서 Windows 10으로 업그레이드하거나 대상 컴퓨터의 운영 체제를 Windows Server 2012에서 Windows Server 2016으로 업그레이드하는 단계를 제공합니다. 독립 실행형 미디어 또는 소프트웨어 센터와 같은 여러 다양한 배포 방법 중에서 선택할 수 있습니다. 전체 업그레이드 시나리오:  
 
--   현재 Windows 7, Windows 8 또는 Windows 8.1을 실행하는 컴퓨터의 운영 체제를 업그레이드합니다. Windows 10의 빌드 간 업그레이드를 수행할 수도 있습니다. 예를 들어 Windows 10 RTM을 Windows 10, 1511 버전으로 업그레이드할 수 있습니다.  
+-   현재 다음을 실행하는 컴퓨터의 운영 체제를 업그레이드합니다.
+    - Windows 7, Windows 8 또는 Windows 8.1. Windows 10의 빌드 간 업그레이드를 수행할 수도 있습니다. 예를 들어 Windows 10 RTM을 Windows 10, 1511 버전으로 업그레이드할 수 있습니다.  
+    - Windows Server 2012. Windows Server 2016의 빌드 간 업그레이드를 수행할 수도 있습니다. 지원되는 업그레이드 경로에 대한 자세한 내용은 [지원되는 업그레이드 경로](https://docs.microsoft.com/windows-server/get-started/supported-upgrade-paths#upgrading-previous-retail-versions-of-windows-server-to-windows-server-2016)를 참조하세요.    
 
 -   컴퓨터의 응용 프로그램, 설정 및 사용자 데이터는 그대로 유지됩니다.  
 
 -   Windows ADK와 같은 외부 종속성이 없습니다.  
 
--   일반적으로 기존의 운영 체제 배포에 비해 속도가 빠르고 복원성도 뛰어납니다.  
+-   기존의 운영 체제 배포에 비해 속도가 빠르고 복원성도 뛰어납니다.  
 
  작업 순서를 사용하여 네트워크를 통해 운영 체제를 배포하려면 다음 섹션을 사용하세요.  
 
@@ -71,11 +73,11 @@ ms.lasthandoff: 05/17/2017
 
      운영 체제 업그레이드를 자동화하려면 [운영 체제를 업그레이드하는 작업 순서 만들기](create-a-task-sequence-to-upgrade-an-operating-system.md)의 단계를 따르세요.  
 
-    > [중요] 독립 실행형 미디어를 사용할 경우 부팅 이미지를 작업 순서 미디어 마법사에서 사용할 수 있도록 작업 순서에 포함해야 합니다.
-
+    > [!IMPORTANT]
+    > 독립 실행형 미디어를 사용할 경우 부팅 이미지를 작업 순서 미디어 마법사에서 사용할 수 있도록 작업 순서에 포함해야 합니다.
 
     > [!NOTE]  
-    >  일반적으로 [운영 체제를 업그레이드하는 작업 순서 만들기](create-a-task-sequence-to-upgrade-an-operating-system.md)의 단계를 사용하여 운영 체제를 Windows 10으로 업그레이드하는 작업 순서를 만듭니다. 작업 순서에는 운영 체제 업그레이드 단계와 종단 간 업그레이드 프로세스를 처리하기 위한 추가적인 권장 단계 및 그룹이 포함됩니다. 그렇지만 사용자 지정 작업 순서를 만들고 [운영 체제 업그레이드](../understand/task-sequence-steps.md#BKMK_UpgradeOS) 작업 순서 단계를 추가하여 운영 체제를 업그레이드할 수 있습니다. 이것이 운영 체제를 Windows 10으로 업그레이드하는 데 필요한 유일한 단계입니다. 이 방법을 선택하는 경우 운영 체제 업그레이드 단계 다음에 [컴퓨터 다시 시작](../understand/task-sequence-steps.md#a-namebkmkrestartcomputera-restart-computer) 단계를 추가하여 업그레이드를 완료합니다. **현재 설치된 기본 운영 체제** 설정을 사용하여 컴퓨터를 Windows PE가 아닌 설치된 운영 체제로 다시 시작해야 합니다.  
+    > 일반적으로 [운영 체제를 업그레이드하는 작업 순서 만들기](create-a-task-sequence-to-upgrade-an-operating-system.md)의 단계를 사용하여 운영 체제를 Windows 10으로 업그레이드하는 작업 순서를 만듭니다. 작업 순서에는 운영 체제 업그레이드 단계와 종단 간 업그레이드 프로세스를 처리하기 위한 추가적인 권장 단계 및 그룹이 포함됩니다. 그렇지만 사용자 지정 작업 순서를 만들고 [운영 체제 업그레이드](../understand/task-sequence-steps.md#BKMK_UpgradeOS) 작업 순서 단계를 추가하여 운영 체제를 업그레이드할 수 있습니다. 이것이 운영 체제를 Windows 10으로 업그레이드하는 데 필요한 유일한 단계입니다. 이 방법을 선택하는 경우 운영 체제 업그레이드 단계 다음에 [컴퓨터 다시 시작](../understand/task-sequence-steps.md#a-namebkmkrestartcomputera-restart-computer) 단계를 추가하여 업그레이드를 완료합니다. **현재 설치된 기본 운영 체제** 설정을 사용하여 컴퓨터를 Windows PE가 아닌 설치된 운영 체제로 다시 시작해야 합니다.  
 
 ##  <a name="BKMK_Deploy"></a> 배포  
 
@@ -85,7 +87,8 @@ ms.lasthandoff: 05/17/2017
 
     -   [독립 실행형 미디어를 사용하여 네트워크를 사용하지 않고 Windows 배포](use-stand-alone-media-to-deploy-windows-without-using-the-network.md)  
 
-## <a name="monitor"></a>모니터  
+## 모니터
+<a id="monitor" class="xliff"></a>  
 
 -   **작업 순서 배포 모니터링**  
 

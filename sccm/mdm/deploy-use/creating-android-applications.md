@@ -15,14 +15,15 @@ caps.latest.revision: 6
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 27a92dc1c3710ff55f0b145386319dda371533d9
-ms.openlocfilehash: d3b20a59a9147e09e58f04f83f97fd72ebfef5a1
+ms.translationtype: HT
+ms.sourcegitcommit: 344b55aecd72479b759b40e8252e64a06c5eaba0
+ms.openlocfilehash: 3bfb7364c3de5264a5fa8a684965d9aebeb84719
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/13/2017
 
 ---
-# <a name="create-android-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 Android 응용 프로그램 만들기
+# System Center Configuration Manager에서 Android 응용 프로그램 만들기
+<a id="create-android-applications-with-system-center-configuration-manager" class="xliff"></a>
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -36,7 +37,8 @@ System Center Configuration Manager 응용 프로그램에는 장치에 소프�
 
 Configuration Manager 응용 프로그램 및 배포 유형을 만드는 데 필요한 단계는 [응용 프로그램 만들기 마법사 시작](../../apps/deploy-use/create-applications.md#start-the-create-application-wizard)을 참조하세요. 또한 Android 장치용 응용 프로그램을 만들고 배포할 때는 다음 사항을 고려하세요.  
 
-## <a name="general-considerations-for-android-apps"></a>Android 앱에 대한 일반적인 고려 사항
+## Android 앱에 대한 일반적인 고려 사항
+<a id="general-considerations-for-android-apps" class="xliff"></a>
 
 Configuration Manager는 다음과 같은 Android용 앱 유형의 배포를 지원합니다.
 
@@ -48,9 +50,11 @@ Configuration Manager는 다음과 같은 Android용 앱 유형의 배포를 지
 
 |장치 유형|지원되는 작업|
 |-|-|
-|Android|**사용 가능**, **필수**. 사용자가 설치 및 제거에 모두 동의해야 합니다.
+|Android|**사용 가능**, **필수** 사용자가 설치 및 제거에 모두 동의해야 합니다.|
+|Android for Work | **필수** |
 
-## <a name="approve-and-deploy-android-for-work-apps"></a>Android for Work 앱 승인 및 배포
+## Android for Work 앱 승인 및 배포
+<a id="approve-and-deploy-android-for-work-apps" class="xliff"></a>
 Configuration Manager 관리자는 [Play for Work 웹 사이트](https://play.google.com/work)에서 앱을 승인 및 배포하고 해당 앱을 관리되는 Android for Work 장치에 배포할 수도 있습니다.
 
 Play for Work 스토어에서 앱을 승인하고, Configuration Manager 콘솔과 동기화하고, 관리되는 Android for Work 장치에 배포하려면 다음 단계를 따르세요. 사용자의 작업 프로필에 앱을 배포하려면 Play for Work에서 앱을 승인한 다음 Configuration Manager 콘솔과 동기화해야 합니다.
