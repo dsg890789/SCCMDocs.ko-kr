@@ -1,6 +1,6 @@
 ---
 title: "업데이트 | Microsoft 문서"
-description: "**업데이트 및 서비스**라는 콘솔 내 서비스 메서드에 대해 알아봅니다. 이 방법을 사용하면 권장 업데이트를 간편하게 찾아서 설치할 수 있습니다."
+description: "**업데이트 및 서비스**라는 콘솔 내 서비스 메서드에 대해 알아봅니다. 이 방법을 사용하면 권장 업데이트를 손쉽게 찾아서 업데이트할 수 있습니다."
 ms.custom: na
 ms.date: 05/02/2017
 ms.prod: configuration-manager
@@ -17,10 +17,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
-ms.openlocfilehash: a33960fb89b71c0f8128e21a5054f5b63cfc6b17
+ms.sourcegitcommit: f4c46bfab9b40b29654f4e883817a5508ab25b74
+ms.openlocfilehash: 4bc076bba4672d0be0032ec785da20e60b11a6c4
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/28/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/17/2017
 
 System Center Configuration Manager는 Configuration Manager 인프라에 대한 권장 업데이트를 손쉽게 찾아서 설치할 수 있도록 하는 **업데이트 및 서비스**라는 콘솔 내 서비스 메서드를 사용합니다. 콘솔 내 서비스 메서드에는 대역 외 업데이트(예: 고객 환경 특유의 문제를 해결해야 하는 고객을 위한 핫픽스)가 추가로 제공됩니다.  
 
-> [!TIP]
+> [!TIP]  
 > System Center Configuration Manager 사이트 및 계층 인프라를 관리할 때 *업그레이드*, *업데이트* 및 *설치*라는 용어는 세 가지 별도의 개념을 설명하는 데 사용됩니다. 각 용어가 어떻게 사용되는지 알아보려면 [업그레이드, 업데이트 및 설치 정보](/sccm/core/understand/upgrade-update-install)를 참조하세요.
 
 
@@ -85,7 +85,7 @@ Configuration Manager의 다음 버전은 기준, 업데이트 또는 두 가지
 | 1511 <br /><br /> 5.00.8325.1000|12/8/2015| 12/8/2016|예|아니요|  
 
 
-*(참고 1)* 이 1606 기준 미디어는 Microsoft System Center 2016 또는 System Center Configuration Manager(현재 분기 및 장기 서비스 분기 1606) 릴리스의 일부로 제공됩니다.
+*(참고 1)* 이 1606 및 1702 기준 미디어는 [VLSC](https://www.microsoft.com/Licensing/servicecenter/Downloads/DownloadsAndKeys.aspx)(볼륨 라이선스 서비스 센터)에서 Microsoft System Center 2016 또는 System Center Configuration Manager(현재 분기 및 장기 서비스 분기) 릴리스의 일부로 제공됩니다. 예를 들어 VLSC에서 *System Center Config Mgr(현재 분기 및 LTSB)*을 검색할 수 있으며 1606 및 1702 버전 기준 미디어가 반환되고 다운로드할 수 있습니다.
 
 Configuration Manager 사이트의 버전을 확인하려면, 새 사이트와 콘솔 버전이 표시되는 콘솔의 왼쪽 위 모서리에서 **System Center Configuration Manager 정보** 로 이동합니다.  
 

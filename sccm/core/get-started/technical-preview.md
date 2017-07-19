@@ -1,8 +1,8 @@
 ---
-title: "System Center Configuration Manager Technical Preview | Microsoft 문서"
+title: Configuration Manager Technical Preview | Microsoft Docs
 description: "System Center Configuration Manager에서 새로운 기능을 테스트 시험해 볼 수 있는 기술 미리 보기 릴리스에 대해 알아봅니다."
 ms.custom: na
-ms.date: 4/3/2017
+ms.date: 06/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: f809c9327db9f298168674add2d09820fdecd1b8
-ms.openlocfilehash: 3a7370fedee417588d219dc7bff46205faf42929
+ms.sourcegitcommit: 6f9e6e93fce95666503907010a5c253158c5de7c
+ms.openlocfilehash: 736e5a04d3d5f2a3825ed4e801308fd5699ea86e
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/07/2017
 
 
 ---
@@ -94,7 +94,7 @@ ms.lasthandoff: 05/17/2017
 
 **기술 미리 보기의 활성 기준선 버전:**  
 릴리스 후 최대 1년 동안 기준 버전을 설치할 수 있습니다. 그러나 새 Technical Preview 사이트를 설치할 경우 사용 가능한 최신 기준선 버전을 사용하는 것이 좋습니다.
--  **Technical Preview 1703** - Configuration Manager Technical Preview 1703은 Configuration Manager Technical Preview의 콘솔 내 업데이트와 TechNet Evaluation Center 웹 사이트에서 사용할 수 있는 새 기준 버전으로 제공됩니다.
+-  **Technical Preview 1703** - Configuration Manager Technical Preview 1703은 Configuration Manager Technical Preview의 콘솔 내 업데이트와 [TechNet Evaluation Center 웹 사이트에서 사용할 수 있는](http://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection-technical-preview) 새 기준 버전으로 제공됩니다.
 
 -  **Technical Preview 1610** - Configuration Manager Technical Preview 1610은 Configuration Manager Technical Preview의 콘솔 내 업데이트와 기준 버전으로 제공되었습니다. 1610 설치용 미디어가 있는 경우 대신 버전 1703을 다운로드하고 해당 버전을 설치하는 것이 좋습니다.
 
@@ -111,11 +111,45 @@ ms.lasthandoff: 05/17/2017
 
 
 
-##  <a name="bkmk_tpCaps"></a> 기술 미리에 포함된 기능  
+##  <a name="bkmk_tpCaps"></a> 가장 최근의 Technical Preview에 포함된 기능  
  다음에는 각 Configuration Manager 기술 미리 보기 릴리스에 포함된 기능이 나와 있습니다.  기술 미리 보기의 특정 버전에서 사용할 수 있는 기능은 이후 버전에서도 계속 사용할 수 있습니다. 마찬가지로, System Center Configuration Manager 릴리스(현재 분기)에 추가된 기능은 후속 기술 미리 보기에서도 계속 사용할 수 있습니다.  각 미리 보기 버전에 대한 콘텐츠를 클릭하여 특정 기능에 대한 자세한 내용을 알아볼 수 있습니다.  
 
  |기능 |기술 미리 보기 버전 |현재 분기 버전|  
-|----------------|---------------------|--------------------|
+ |----------------|---------------------|--------------------|
+ |새 모바일 응용 프로그램 관리 정책 설정|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#new-mobile-application-management-policy-settings)|![추가되지 않음](media/Red_X.gif)|
+ |소프트웨어 업데이트 지점에 대한 향상된 경계 그룹|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#improved-boundary-groups-for-software-update-points)|![추가되지 않음](media/Red_X.gif)|
+ |사이트 서버 역할 고가용성|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#site-server-role-high-availability) |![추가되지 않음](media/Red_X.gif)|
+ |특정 파일 및 폴더에 대한 트러스트를 Device Guard 정책에 포함|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#include-trust-for-specific-files-and-folders-in-a-device-guard-policy)|![추가되지 않음](media/Red_X.gif)|
+ |작업 순서 진행률 숨기기|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#hide-task-sequence-progress)|![추가되지 않음](media/Red_X.gif)|
+ |설치 콘텐츠 및 제거 콘텐츠에 대해 다른 콘텐츠 위치 지정|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#specify-a-different-content-location-for-install-content-and-uninstall-content)|![추가되지 않음](media/Red_X.gif)|
+ |향상된 접근성 기능 |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#accessibility-improvements)|![추가되지 않음](media/Red_X.gif)|
+ |업그레이드 준비 상태에 대한 Azure 서비스 마법사 지원 |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#changes-to-the-azure-services-wizard-to-support-upgrade-readiness)|![추가되지 않음](media/Red_X.gif)|
+ |클라우드 서비스에 대한 새 클라이언트 설정|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#new-client-settings-for-cloud-services)|![추가되지 않음](media/Red_X.gif)|
+ |Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#create-and-run-powershell-scripts-from-the-configuration-manager-console)|![추가되지 않음](media/Red_X.gif)|
+ |IPv6에 대한 PXE 네트워크 부팅 지원 |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#pxe-network-boot-support-for-ipv6)|![추가되지 않음](media/Red_X.gif)|
+ |Microsoft Surface 드라이버 업데이트 관리 |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#manage-microsoft-surface-driver-updates)|![추가되지 않음](media/Red_X.gif)|
+ |비즈니스용 Windows 업데이트 지연 정책 구성 |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#configure-windows-update-for-business-deferral-policies)|![추가되지 않음](media/Red_X.gif)|
+ |Android 및 iOS 등록 제한|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#android-and-ios-enrollment-restrictions)|![추가되지 않음](media/Red_X.gif)|
+ |복사-붙여넣기에 대한 Android for Work 응용 프로그램 관리 정책|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#android-for-work-application-management-policy-for-copy-paste)|![추가되지 않음](media/Red_X.gif)|
+ |새 Windows 구성 항목 설정|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#new-windows-configuration-item-settings)|![추가되지 않음](media/Red_X.gif)|
+ |새 장치 준수 정책 규칙|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#new-device-compliance-policy-rules)|![추가되지 않음](media/Red_X.gif)|
+ |조건부 액세스의 준수 정책에 대한 장치 상태 증명 평가|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#device-health-attestation-assessment-for-compliance-policies-for-conditional-access)|![추가되지 않음](media/Red_X.gif)|
+ |Entrust 인증 기관에 대한 지원|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#support-for-entrust-certification-authorities)|![추가되지 않음](media/Red_X.gif)|
+ |macOS VPN 프로필에 대한 Cisco(IPSec) 지원|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#cisco-ipsec-support-for-macos-vpn-profiles)|![추가되지 않음](media/Red_X.gif)|
+
+## <a name="capabilities-delivered-in-previous-technical-previews"></a>이전 Technical Preview에 포함된 기능
+ Technical Preview 릴리스의 모든 기능을 현재 분기의 지원되는 최소 버전으로 사용할 수 있는 경우 해당 미리 보기 버전에 대한 세부 정보는 다음 표에서 제거됩니다.  
+
+ |기능 |기술 미리 보기 버전 |현재 분기 버전|  
+ |----------------|---------------------|--------------------|
+  |Azure AD 및 클라우드 관리에 대한 새로운 기능|[Tech Preview 1705](capabilities-in-technical-preview-1705.md#new-capabilities-for-azure-ad-and-cloud-management)|![추가되지 않음](media/Red_X.gif)|
+ |Windows Defender Application Guard 정책 구성 및 배포|[Tech Preview 1705](capabilities-in-technical-preview-1705.md#configure-and-deploy-windows-defender-application-guard-policies)|![추가되지 않음](media/Red_X.gif)|
+ |업데이트 다시 설정 도구  |[Tech Preview 1705](capabilities-in-technical-preview-1705.md#update-reset-tool)|![추가되지 않음](media/Red_X.gif)|
+ |높은 DPI 콘솔 지원  |[Tech Preview 1705](capabilities-in-technical-preview-1705.md#high-dpi-console-support)|![추가되지 않음](media/Red_X.gif)|
+ |피어 캐시 개선  |[Tech Preview 1705](capabilities-in-technical-preview-1705.md#peer-cache-improvements) |![추가되지 않음](media/Red_X.gif)|
+ |SQL Server Always On 가용성 그룹에 대한 향상된 기능 |[Tech Preview 1705](capabilities-in-technical-preview-1705.md#improvements-for-sql-server-always-on-availability-groups) |![추가되지 않음](media/Red_X.gif)|
+ |Office 365 업데이트에 대한 향상된 사용자 알림|[Tech Preview 1705](capabilities-in-technical-preview-1705.md#improved-user-notifications-for-office-365-updates) |![추가되지 않음](media/Red_X.gif)|
+ |Azure 서비스 마법사를 사용하여 OMS에 대한 연결 구성|[Tech Preview 1705](capabilities-in-technical-preview-1705.md#use-azure-services-wizard-to-configure-a-connection-to-oms) |![추가되지 않음](media/Red_X.gif)|
  |앱 구성 정책을 사용하여 Android 앱 구성  |[Tech Preview 1704](capabilities-in-technical-preview-1704.md#configure-android-apps-with-app-configuration-policies)|![추가되지 않음](media/Red_X.gif)|
  |하드웨어 인벤토리를 통해 보안 부팅 정보 수집 |[Tech Preview 1704](capabilities-in-technical-preview-1704.md#hardware-inventory-collects-secure-boot-information)|![추가되지 않음](media/Red_X.gif)|
  |작업 순서에 자식 작업 순서 추가|[Tech Preview 1704](capabilities-in-technical-preview-1704.md#add-child-task-sequences-to-a-task-sequence)|![추가되지 않음](media/Red_X.gif)|
@@ -208,19 +242,20 @@ ms.lasthandoff: 05/17/2017
  |소프트웨어 업데이트 설치 후 Windows 10 클라이언트의 다시 시작 옵션|[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_RestartOptions)|[버전 1606](/sccm/sum/plan-design/plan-for-software-updates#restart-options-for-Windows-10-clients-after-software-update-installation)|  
  |온-프레미스 장치 상태 증명 |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_DHA)|[버전 1606](/sccm/core/servers/manage/health-attestation)|  
  |IMEI 또는 iOS 일련 번호로 회사 소유 장치 미리 선언|[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_IMEI)|[버전 1606](/sccm/mdm/deploy-use/predeclare-devices-with-hardware-id)|  
- |비즈니스용 Windows 스토어에서 대량 구매 앱 관리| [Tech Preview 1604](capabilities-in-technical-preview-1604.md#BKMK_WindowsVPP)|[버전 1606](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)|  
- |Microsoft Passport for Work 관리의 개선 사항|[Tech Preview 1604](capabilities-in-technical-preview-1604.md#BKMK_PFW)|[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#device-configuration-and-protection)|  
- |클라이언트에서 새 소프트웨어 업데이트 지점으로 전환하는 옵션|[Tech Preview 1604](capabilities-in-technical-preview-1604.md#bkmk_switchsup)|[버전 1606](/sccm/sum/plan-design/plan-for-software-updates#BKMK_ManuallySwitchSUPs)|  
- |클라이언트 캐시 설정 및 클라이언트 피어 캐시를 관리하는 클라이언트 설정 |[Tech Preview 1604](capabilities-in-technical-preview-1604.md#bkmk_peercache)|클라이언트 설정: [버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#administration)<br/>피어 캐시: [버전 1610](/sccm/core/plan-design/hierarchy/client-peer-cache)|  
- |KSP로서 Passport for Work에 대한 지원 |[Tech Preview 1604](capabilities-in-technical-preview-1604.md#bkmk_passport)|[버전 1606](/sccm/protect/deploy-use/create-certificate-profiles)|  
- |온-프레미스 장치 상태 증명|[Tech Preview 1604](capabilities-in-technical-preview-1604.md#bkmk_onpremdha)|[버전 1606](/sccm/core/servers/manage/health-attestation)|  
- |Android 장치에 대한 SmartLock 설정|[Tech Preview 1604](capabilities-in-technical-preview-1604.md#BKMK_Smart)|[버전 1606](/sccm/compliance/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client#android-and-samsung-knox-configuration-item-settings-reference)|  
- <!--  TP 1603 Aged out of support and all features in Current Branch Builds:
+
+ <!--  TP 1604 and earlier has aged out of support and all features are in Current Branch builds:
+ |Manage volume-purchased apps from the Windows Store for Business| [Tech Preview 1604](capabilities-in-technical-preview-1604.md#BKMK_WindowsVPP)|[Version 1606](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)|  
+ |Improvements to Microsoft Passport for Work management|[Tech Preview 1604](capabilities-in-technical-preview-1604.md#BKMK_PFW)|[Version 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#device-configuration-and-protection)|  
+ |Option for clients to switch to a new software update point|[Tech Preview 1604](capabilities-in-technical-preview-1604.md#bkmk_switchsup)|[Version 1606](/sccm/sum/plan-design/plan-for-software-updates#BKMK_ManuallySwitchSUPs)|  
+ |Client settings to manage Client Cache Settings and client Peer Cache |[Tech Preview 1604](capabilities-in-technical-preview-1604.md#bkmk_peercache)|Client Settings: [Version 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#administration)<br/>Peer Cache: [Version 1610](/sccm/core/plan-design/hierarchy/client-peer-cache)|  
+ |Support for Passport for Work as a KSP |[Tech Preview 1604](capabilities-in-technical-preview-1604.md#bkmk_passport)|[Version 1606](/sccm/protect/deploy-use/create-certificate-profiles)|  
+ |On-premises Device Health Attestation|[Tech Preview 1604](capabilities-in-technical-preview-1604.md#bkmk_onpremdha)|[Version 1606](/sccm/core/servers/manage/health-attestation)|  
+ |SmartLock setting for Android devices|[Tech Preview 1604](capabilities-in-technical-preview-1604.md#BKMK_Smart)|[Version 1606](/sccm/compliance/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client#android-and-samsung-knox-configuration-item-settings-reference)|  
  |Improvements to Software Center|[Tech Preview 1603](capabilities-in-technical-preview-1603.md#BKMK_SC1603)|[Version 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#application-management)|  
  |Improvements to remote control|[Tech Preview 1603](capabilities-in-technical-preview-1603.md#BKMK_RC1603)|[Version 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#remote-control)|  
  |Customize the RamDisk TFTP block size and window size on PXE-enabled distribution points|[Tech Preview 1603](capabilities-in-technical-preview-1603.md#BKMK_RamDiskTFTP)|[Version 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#operating-system-deployment)|  
 -->
- 기술 미리 보기 릴리스의 모든 기능을 현재 분기의 지원되는 최소 버전으로 사용할 수 있는 경우 해당 미리 보기 버전에 대한 세부 정보는 이 테이블에서 제거 됩니다.
+
 
 
 ## <a name="see-also"></a>참고 항목  

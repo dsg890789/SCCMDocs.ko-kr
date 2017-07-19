@@ -17,10 +17,10 @@ author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 27a92dc1c3710ff55f0b145386319dda371533d9
-ms.openlocfilehash: 0e93cd55ce49afb6395dcbe758c933bf509dd367
+ms.sourcegitcommit: 86620254897aa9a775dc433de7010b5814c1ec3e
+ms.openlocfilehash: af6fa2dfae5549e89c46d05d0cef1e24342558f9
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/06/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 05/17/2017
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-이 항목에서 IT 관리자는 Android 및 Android for Work 장치의 하이브리드 등록을 사용하도록 설정할 수 있습니다. 그런 다음 IT 관리자는 System Center Configuration Manger를 사용하여 구성된 Microsoft Intune 구독을 통해 장치를 관리할 수 있습니다. Google Play에서 사용자는 Android(Samsung KNOX Standard 포함) 및 Android for Work 장치를 등록할 수 있는 Android 회사 포털 앱을 다운로드할 수 있습니다. 
+이 항목에서 IT 관리자는 Android 및 Android for Work 장치의 하이브리드 등록을 사용하도록 설정할 수 있습니다. 그런 다음 IT 관리자는 System Center Configuration Manger를 사용하여 구성된 Microsoft Intune 구독을 통해 장치를 관리할 수 있습니다. Google Play에서 사용자는 Android(Samsung KNOX Standard 포함) 및 Android for Work 장치를 등록할 수 있는 Android 회사 포털 앱을 다운로드할 수 있습니다.
 
 Configuration Manager 관리자는 준수 설정을 관리하고, Android 장치를 초기화 또는 삭제하고, 앱을 배포하고, 소프트웨어 및 하드웨어 인벤토리를 수집할 수 있습니다. Android 회사 포털 앱이 Android 장치에 설치되지 않은 경우 인벤토리 및 준수 설정과 같은 일부 관리 기능을 사용할 수 없지만 Android 장치에 앱을 계속 배포할 수 있습니다.  
 
@@ -43,7 +43,7 @@ Configuration Manager 관리자는 준수 설정을 관리하고, Android 장치
  설정한 후에는 사용자에게 장치를 등록하는 방법을 알려 주어야 합니다. [장치 등록에 대해 최종 사용자에게 알릴 내용](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)을 참조하세요. 이 정보는 Microsoft Intune 및 Configuration Manager에서 관리되는 모바일 장치에 적용됩니다.
 
 ## <a name="enable-android-for-work-enrollment"></a>Android for Work 등록 사용
-다음 단계를 수행하면 Configuration Manager가 회사 프로필 없이 Android 장치를 관리할 수 있습니다("클래식 Android" 등록).
+다음 단계를 수행하면 Configuration Manager에서 회사 프로필을 사용하여 Android 장치를 관리할 수 있습니다.
 
 1. https://accounts.google.com/SignUp에서 Google 계정을 만들어 Android for Work 관리자 계정으로 사용합니다. 또는 이 Intune 테넌트에 대해 모든 Android for Work 관리 작업과 연결되는 계정으로 로그인합니다. 이 계정은 Android 장치를 관리하는 관리자 간에 공유되는 Google 계정일 수 있습니다. 또한 조직이 Play for Work 콘솔에서 앱을 관리하고 게시하는 데 사용하는 Google 계정입니다. 이 계정을 사용하여 Play for Work 스토어에서 앱을 승인하므로 계정 이름과 암호를 추적합니다.
 2. Configuration Manager에서 관리되는 Intune 테넌트에 Google 계정을 바인딩하여 Android 등록을 사용하도록 설정합니다.
@@ -64,7 +64,7 @@ Configuration Manager 관리자는 준수 설정을 관리하고, Android 장치
 
 설정한 후에는 사용자에게 장치를 등록하는 방법을 알려 주어야 합니다. [장치 등록에 대해 최종 사용자에게 알릴 내용](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)을 참조하세요. 이 정보는 Microsoft Intune 및 Configuration Manager에서 관리되는 모바일 장치에 적용됩니다.
 
-바인딩이 완료되면 계정 이름 및 조직 이름이 Intune 포털에 표시되며, 이제 두 브라우저를 닫아도 됩니다.
+바인딩이 완료되면 계정 이름 및 조직 이름이 Intune 포털에 표시됩니다. 그러면 두 브라우저를 닫아도 됩니다.
 
 ### <a name="enroll-an-android-for-work-device"></a>Android for Work 장치 등록
 사용자가 Android for Work 장치를 등록하는 방법은 Android 등록과 비슷합니다. 사용자는 모바일 장치에서 Android용 회사 포털 앱을 다운로드하여 설치할 수 있습니다. 앱에서 등록 프로세스의 일부로 회사 프로필을 만들라는 메시지를 표시합니다. 회사 프로필을 만든 후 사용자는 관리되는 버전의 회사 포털로 전환해야 합니다. 관리되는 회사 포털은 오른쪽 아래에 작은 주황색 서류 가방이 태그로 지정되어 있습니다.

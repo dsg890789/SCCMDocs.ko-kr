@@ -17,10 +17,10 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 071d758f1015d16217a54fe26df5f8f948c818a3
+ms.sourcegitcommit: 6f9e6e93fce95666503907010a5c253158c5de7c
+ms.openlocfilehash: f648d7626af50d95fbaa5a7a2abd821a9c47f5d1
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/07/2017
 
 
 ---
@@ -629,6 +629,9 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
 
 -   해당 드라이버 패키지를 동적으로 다운로드하려면 각 드라이버 패키지에 대해 적합한 하드웨어 종류를 검색하는 조건을 포함하는 두 가지 **패키지 콘텐츠 다운로드** 단계를 사용합니다. 같은 변수 및 **운영 체제 업그레이드** 단계의 드라이버 섹션에서 **준비된 콘텐츠** 값에 대한 변수를 사용하여 각 **패키지 콘텐츠 다운로드** 단계를 구성합니다.  
 
+> [!NOTE]    
+> 패키지 콘텐츠 다운로드 단계를 포함하는 작업 순서를 배포할 경우 소프트웨어 배포 마법사의 **배포 지점** 페이지에서 **배포 옵션**으로 **작업 순서를 시작하기 전에 로컬로 모든 콘텐츠 다운로드**를 선택하지 않도록 합니다.  
+
 이 단계는 표준 운영 체제 또는 Windows PE에서 실행됩니다. 그러나 Configuration Manager 클라이언트 캐시에 패키지를 저장하는 옵션은 WinPE에서 지원되지 않습니다.
 
 ### <a name="details"></a>세부 정보  
@@ -654,11 +657,11 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
  **다음 위치에 배치**  
  다음 위치 중 하나에 패키지를 저장하려면 선택합니다.  
 
--   **작업 순서 작업 디렉터리**  
+ -   **작업 순서 작업 디렉터리**  
 
--   **Configuration Manager 클라이언트 캐시**: 클라이언트 캐시에 콘텐츠를 저장하려면 이 옵션을 사용합니다. 그러면 클라이언트가 다른 피어 캐시 클라이언트의 피어 캐시 원본 역할을 할 수 있습니다. 자세한 내용은 [WAN 트래픽을 줄이기 위해 Windows PE 피어 캐시 준비](../get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic.md)를 참조하세요.  
+ -   **Configuration Manager 클라이언트 캐시**: 클라이언트 캐시에 콘텐츠를 저장하려면 이 옵션을 사용합니다. 그러면 클라이언트가 다른 피어 캐시 클라이언트의 피어 캐시 원본 역할을 할 수 있습니다. 자세한 내용은 [WAN 트래픽을 줄이기 위해 Windows PE 피어 캐시 준비](../get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic.md)를 참조하세요.  
 
--   **사용자 지정 경로**  
+ -   **사용자 지정 경로**  
 
  **변수로 경로 저장**  
  다른 작업 순서 단계에서 사용할 수 있는 변수로 경로를 저장할 수 있습니다. Configuration Manager에서 변수 이름에 숫자 접미사를 추가합니다. 예를 들어 사용자 지정 변수로 %*mycontent*% 변수를 지정하는 경우 모든 참조된 콘텐츠가 저장된 위치(여러 패키지일 수 있음)의 루트입니다. 변수를 참조하는 경우 변수에 숫자 접미사를 추가합니다. 예를 들어 첫 번째 패키지의 경우 %*mycontent01*% 변수를 참조합니다. 운영 업그레이드와 같은 후속 단계에서 변수를 참조할 경우 %*mycontent02*% 또는 %*mycontent03*%를 사용합니다. 여기서 숫자는 단계에서 패키지가 나열되는 순서에 해당합니다.  

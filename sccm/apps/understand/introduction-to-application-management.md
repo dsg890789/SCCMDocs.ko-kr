@@ -15,11 +15,11 @@ caps.latest.revision: 18
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-experimental: true
-experiment_id: rob-table-161101
-translationtype: Human Translation
-ms.sourcegitcommit: 5aef08865b232ff2dacec6906098bebf4e42e6b1
-ms.openlocfilehash: 699adb5fac0c625c321db011af6989cc4c0778ec
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f4c46bfab9b40b29654f4e883817a5508ab25b74
+ms.openlocfilehash: 959a36413d06bb225f260bd44c1d3d59efd44e69
+ms.contentlocale: ko-kr
+ms.lasthandoff: 06/28/2017
 
 
 ---
@@ -37,11 +37,11 @@ ms.openlocfilehash: 699adb5fac0c625c321db011af6989cc4c0778ec
 
  장치에 응용 프로그램을 배포할 때 **요구 사항** 에 따라 장치에 설치되는 배포 유형이 결정됩니다.  
 
- 물론, 응용 프로그램으로 수행할 수 있는 작업은 훨씬 더 많으며 이 가이드를 통해 알아보겠습니다. 다음 표에서는 자세히 살펴보기 전에 알아야 할 몇 가지 개념을 소개합니다. 만든 모든 응용 프로그램에 이러한 개념이 모두 필요하지는 않습니다.  
+ 응용 프로그램으로 더 많은 작업을 수행할 수 있습니다. 이 가이드를 읽으면 이러한 기능에 대해 자세히 알아볼 수 있습니다. 다음 표에서는 자세히 살펴보기 전에 알아야 할 몇 가지 개념을 소개합니다.  
 
 |개념|설명|    
 |-|-|  
-|**Requirements**|이전 버전의 Configuration Manager에서는 대체로 응용 프로그램을 배포하려는 장치가 포함된 컬렉션을 만듭니다. 이 작업도 가능하지만 응용 프로그램이 설치되는 조건을 훨씬 더 세부적으로 지정하면 필요한 요구 사항이 줄어듭니다.<br /><br /> 예를 들어 Windows 10을 실행하는 장치에만 응용 프로그램을 설치할 수 있도록 지정할 수 있습니다. 그런 다음 모든 장치에 응용 프로그램을 배포할 수 있지만 Windows 10을 실행하는 장치에만 설치됩니다.<br /><br /> Configuration Manager는 요구 사항을 평가하여 응용 프로그램과 해당 배포 유형을 설치할 것인지 여부를 결정합니다. 그런 다음 응용 프로그램을 설치할 올바른 배포 유형을 결정합니다. 기본적으로 요구 사항 규칙은 클라이언트 설정 **배포의 재평가 일정**에 따라 7일마다 재평가되어 호환성이 유지됩니다.<br /><br /> 자세한 내용은 [응용 프로그램 만들기 및 배포](../../apps/get-started/create-and-deploy-an-application.md)를 참조하세요.|  
+|**Requirements**|이전 버전의 Configuration Manager에서는 대체로 응용 프로그램을 배포하려는 장치가 포함된 컬렉션을 만듭니다. 컬렉션을 여전히 만들 수 있지만 필요한 경우 응용 프로그램 배포에 대해 좀 더 자세한 조건을 지정할 수 있습니다.<br /><br /> 예를 들어 Windows 10을 실행하는 장치에만 응용 프로그램을 설치할 수 있도록 지정할 수 있습니다. 그런 다음 장치에 응용 프로그램을 배포할 수 있지만 Windows 10을 실행하는 장치에만 설치됩니다.<br /><br /> Configuration Manager는 요구 사항을 평가하여 응용 프로그램과 해당 배포 유형을 설치할 것인지 여부를 결정합니다. 그런 다음 응용 프로그램을 설치할 올바른 배포 유형을 결정합니다. 기본적으로 요구 사항 규칙은 클라이언트 설정 **배포의 재평가 일정**에 따라 7일마다 재평가되어 호환성이 유지됩니다.<br /><br /> 자세한 내용은 [응용 프로그램 만들기 및 배포](../../apps/get-started/create-and-deploy-an-application.md)를 참조하세요.|  
 |**글로벌 조건**|요구 사항은 단일 응용 프로그램의 특정 배포 유형에 사용되지만 글로벌 조건을 만들 수도 있습니다. 글로벌 조건은 모든 응용 프로그램 및 배포 유형에 사용할 수 있는 미리 정의된 요구 사항의 라이브러리입니다.<br /><br /> Configuration Manager에는 기본 제공 글로벌 조건 집합이 포함되어 있으며, 직접 만들 수도 있습니다.<br /><br /> 자세한 내용은 [글로벌 조건 만들기](../../apps/deploy-use/create-global-conditions.md)를 참조하세요.|  
 |**시뮬레이트된 배포**|요구 사항, 검색 방법 및 응용 프로그램에 대한 종속성을 평가합니다. 이 배포에서는 응용 프로그램을 실제로 설치하지는 않고 결과를 보고합니다.<br /><br /> 자세한 내용은 [응용 프로그램 배포 시뮬레이션](../../apps/deploy-use/simulate-application-deployments.md)을 참조하세요.|  
 |**배포 작업**|배포하는 응용 프로그램을 설치할지 아니면 제거할지를(지원되는 경우) 지정합니다.<br /><br /> 자세한 내용은 [응용 프로그램 배포](../../apps/deploy-use/deploy-applications.md)를 참조하세요.|  
@@ -110,9 +110,4 @@ ms.openlocfilehash: 699adb5fac0c625c321db011af6989cc4c0778ec
 -   되풀이 일정에서 실행되고 전역 평가를 사용할 수 없는 스크립트
 
  자세한 내용은 [패키지 및 프로그램](../../apps/deploy-use/packages-and-programs.md)을 참조하세요.  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
