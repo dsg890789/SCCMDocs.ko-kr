@@ -1,5 +1,4 @@
 ---
-
 title: "동기화할 분류 및 제품 구성 | Microsoft 문서"
 description: "다음 단계에 따라 Configuration Manager 콘솔에서 동기화할 분류 및 제품을 구성하세요."
 keywords: 
@@ -13,12 +12,11 @@ ms.service:
 ms.technology:
 - configmgr-sum
 ms.assetid: 5ddde4e6-d553-4182-b752-6bc8b4a26745
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
 ms.openlocfilehash: 6add66e625c790b65edf64216c2262a5d082f820
+ms.contentlocale: ko-kr
 ms.lasthandoff: 12/16/2016
-
-
 
 ---
 #  <a name="configure-classifications-and-products-to-synchronize"></a>동기화할 분류 및 제품 구성  
