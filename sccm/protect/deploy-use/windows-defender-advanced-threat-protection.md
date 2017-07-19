@@ -16,10 +16,10 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 8f4ec982a54cf3cefef310268a54850e70e2e63a
-ms.openlocfilehash: 237dc9cbccb973720a633490f096aed4bc16d183
+ms.sourcegitcommit: 0ebda27c0f3848615346c2ecf1ab8b9bb9ab6f0d
+ms.openlocfilehash: 6c3b67278fa587c137a29e174e277fb0f15872c8
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 05/26/2017
 
 ---
 # <a name="windows-defender-advanced-threat-protection"></a>Windows Defender Advanced Threat Protection
@@ -33,8 +33,8 @@ Windows Defender ATP는 [Windows 보안 센터](https://securitycenter.windows.c
  **전제 조건**  
 
 -   Windows Defender Advanced Threat Protection 온라인 서비스에 대한 구독  
-
--   Windows 10 버전 1607 이상을 실행하는 클라이언트  
+-   Windows 10 버전 1607 이상을 실행하는 클라이언트 컴퓨터  
+-   Configuration Manager 1610 이상 버전의 클라이언트 에이전트를 실행하는 클라이언트 컴퓨터
 
 ## <a name="how-to-create-an-onboarding-configuration-file"></a>온보딩 구성 파일을 만드는 방법  
 

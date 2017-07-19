@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
-ms.openlocfilehash: f791278b0aa8efc734a894da7dab1704bb567ed0
+ms.sourcegitcommit: 662901e850566756759fcfc61c58f3c0e56bc5aa
+ms.openlocfilehash: 26356a80bd8c78d4517253bae73e53d8d8f3a73a
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/03/2017
 
 
 ---
@@ -81,7 +81,7 @@ LTSB를 새 사이트로 설치하거나 지원되는 Configuration Manager 2012
 > [!TIP]  
 > System Center 2016에 대한 자세한 내용은 [System Center 2016 설명서](https://technet.microsoft.com/system-center-docs/system-center)를 참조하세요. 이 설명서에서는 Microsoft 사용권 계약 또는 유사한 권한이 필요한 System Center 2016을 다운로드하는 방법도 설명합니다.
 
-> VLSC(볼륨 라이선스 서비스 센터)에서 System Center Configuration Manager 버전 1606을 찾으려면 [VLSC](https://www.microsoft.com/Licensing/servicecenter/Downloads/DownloadsAndKeys.aspx)의 **다운로드 및 키** 탭으로 이동하고 "system center config"를 검색한 다음 **System Center Config Mgr(현재 분기 및 LTSB 1606)**을 선택합니다.
+> VLSC(볼륨 라이선스 서비스 센터)에서 System Center Configuration Manager 버전 1606을 찾으려면 [VLSC](https://www.microsoft.com/Licensing/servicecenter/Downloads/DownloadsAndKeys.aspx)의 **다운로드 및 키** 탭으로 이동하고 "system center config"를 검색한 다음 **System Center Config Mgr(현재 분기 및 LTSB)**을 선택합니다.
 
 > [TechNet 평가 센터](https://www.microsoft.com/evalcenter/evaluate-system-center-technical-preview)에서 System Center 2016 평가판을 다운로드할 수도 있습니다.
 

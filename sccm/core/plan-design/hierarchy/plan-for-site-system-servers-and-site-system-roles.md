@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a93ea730c39cce9dc46036f5aa6ece4a62679d0f
-ms.openlocfilehash: 0d16d362b798c194645f987088ba8a95a7be3f19
+ms.sourcegitcommit: 0ebda27c0f3848615346c2ecf1ab8b9bb9ab6f0d
+ms.openlocfilehash: 0a3704a2d3b75ed7e0a7f718b681448ab6fc078d
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 05/26/2017
 
 
 ---
@@ -81,7 +81,7 @@ Configuration Manager 사이트마다 다른 사이트 시스템 역할을 지�
 
 -   **배포 지점.** 클라이언트가 다운로드하는 원본 파일(예: 응용 프로그램 콘텐츠, 소프트웨어 패키지, 소프트웨어 업데이트, 운영 체제 이미지 및 부팅 이미지)을 포함하는 사이트 시스템 역할입니다. 기본적으로 이 역할은 사이트가 설치될 때 새로운 기본 및 보조 사이트의 사이트 서버 컴퓨터에 설치됩니다. 이 역할은 중앙 관리 사이트에서 지원되지 않습니다. 지원되는 사이트에 그리고 동일한 계층 내 여러 사이트에 이 역할의 인스턴스를 여러 개 설치할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 콘텐츠 관리의 기본 개념](../../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md) 및 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
 
--   **대체 상태 지점.** 클라이언트 설치를 모니터링하고, 관리 지점과 통신할 수 없기 때문에 관리되지 않는 클라이언트를 파악하는 데 도움이 되는 사이트 시스템 역할입니다. 이 역할은 기본 사이트에서만 지원되지만, 한 사이트에 그리고 동일한 계층의 여러 사이트에 이 역할의 여러 인스턴스를 설치할 수 있습니다. 자세한 내용은 [Content source location scenarios](../../../core/plan-design/hierarchy/content-source-location-scenarios.md)을 참조하세요.
+-   **대체 상태 지점.** 클라이언트 설치를 모니터링하고, 관리 지점과 통신할 수 없기 때문에 관리되지 않는 클라이언트를 파악하는 데 도움이 되는 사이트 시스템 역할입니다. 이 역할은 기본 사이트에서만 지원되지만, 한 사이트 및 동일한 계층의 여러 사이트에 이 역할의 여러 인스턴스를 설치할 수 있습니다.     
 
 
 -   **Endpoint Protection 지점.** Configuration Manager가 Endpoint Protection 사용 조건에 동의하고 클라우드 보호 서비스의 기본 멤버 자격을 구성하는 데 사용하는 사이트 시스템 역할입니다. 계층에서는 이 역할의 단일 인스턴스만 지원하므로, 이 역할의 인스턴스는 계층의 최상위 계층 사이트(중앙 관리 사이트 또는 독립 실행형 기본 사이트)에 있어야 합니다. 독립 실행형 기본 사이트를 더 큰 계층 구조로 확장하는 경우 기본 사이트에서 이 역할을 제거한 다음 중앙 관리 사이트에서 설치해야 합니다. 자세한 내용은 [System Center Configuration Manager의 Endpoint Protection](../../../protect/deploy-use/endpoint-protection.md)을 참조하세요.  

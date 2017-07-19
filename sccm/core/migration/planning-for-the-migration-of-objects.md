@@ -16,10 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 45931f60273f3130cca36320770126a36dcc3d1e
-ms.openlocfilehash: 9870ffa6ae5f80db823bfc74a7cc2e67fc8cf21d
-ms.lasthandoff: 01/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c6ee0ed635ab81b5e454e3cd85637ff3e20dbb34
+ms.openlocfilehash: 17f3955aa7c63a13bab03b46002f7de0b0ec38fe
+ms.contentlocale: ko-kr
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -143,7 +144,7 @@ System Center 2012 Configuration Manager 또는 System Center Configuration Mana
     > [!NOTE]  
     >  작업 순서를 마이그레이션할 때 Configuration Manager에서 대상 계층에 필요 없는 개체를 마이그레이션할 수 있습니다. 이러한 개체에는 부팅 이미지와 Configuration Manager 2007 클라이언트 설치 패키지가 포함됩니다.  
 
--   드라이버 및 드라이버 패키지  
+-   드라이버 및 드라이버 패키지 드라이버 패키지를 마이그레이션할 때 대상 계층에 있는 SMS 공급자의 컴퓨터 계정은 패키지 원본에 대해 모든 권한을 갖고 있어야 합니다.
 
 ##  <a name="Plan_Migrate_Compliance_settings"></a> 원하는 구성 관리 마이그레이션 계획  
 구성 항목 및 구성 기준을 마이그레이션할 수 있습니다.  

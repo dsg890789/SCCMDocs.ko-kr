@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
-ms.openlocfilehash: 489f38d3f88391e42b5271c03151203d22b26d9e
+ms.sourcegitcommit: c6ee0ed635ab81b5e454e3cd85637ff3e20dbb34
+ms.openlocfilehash: 8caf3319d93b98680ed4a719a8db714c7e4e96ce
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -35,7 +35,7 @@ ms.lasthandoff: 05/17/2017
 ## <a name="plan-to-use-a-cloud-based-distribution-point"></a>클라우드 기반 배포 지점 사용 계획
 클라우드 기반 배포 지점을 사용할 때는 다음을 수행합니다.  
 
--   사용자와 장치가 콘텐츠에 액세스할 수 있도록**클라이언트 설정을 구성** 합니다.  
+-   사용자와 장치가 콘텐츠에 액세스할 수 있도록 **클라이언트 설정을 구성** 합니다.  
 
 -   배포 지점으로의 **콘텐츠 전송을 관리할 기본 사이트를 지정**합니다.  
 

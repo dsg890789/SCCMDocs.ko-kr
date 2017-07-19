@@ -15,9 +15,11 @@ caps.latest.revision: 4
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
-ms.openlocfilehash: 479a7e902ff19b8ec501ff01c8e56565fd69f51b
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 2087badc9dd1d216352dce232b145a786783ac89
+ms.openlocfilehash: 44f454d2f7c9d317d1ad99ba724931b4631bd11e
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/18/2017
 
 
 ---                     
@@ -27,7 +29,7 @@ ms.openlocfilehash: 479a7e902ff19b8ec501ff01c8e56565fd69f51b
 
 System Center Configuration Manager의 쿼리는 사용자가 지정하는 기준에 따라 사이트 데이터베이스의 정보를 반환합니다. 쿼리를 사용하여 사이트의 리소스 또는 인벤토리 데이터와 상태 메시지에 대한 정보를 검색할 수 있습니다.  
 
-## <a name="queries-topics"></a>쿼리 항목  
+## <a name="topics-about-using-queries-in-configuration-manager"></a>Configuration Manager의 쿼리 사용에 대한 항목  
  다음 항목을 참조하면 Configuration Manager에서 쿼리를 사용하는 데 도움이 됩니다.  
 
 -   [System Center Configuration Manager의 쿼리 소개](../../../core/servers/manage/introduction-to-queries.md)  
@@ -35,9 +37,4 @@ System Center Configuration Manager의 쿼리는 사용자가 지정하는 기�
 -   [System Center Configuration Manager의 쿼리 작업 및 유지 관리](../../../core/servers/manage/operations-and-maintenance-for-queries.md)  
 
 -   [System Center Configuration Manager에서 쿼리에 대한 보안 및 개인 정보](../../../core/servers/manage/security-and-privacy-for-queries.md)  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

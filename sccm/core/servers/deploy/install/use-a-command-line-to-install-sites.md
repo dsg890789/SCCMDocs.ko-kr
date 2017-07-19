@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: fefa5f3aa12d82b66a251cf0525475496e1e35cf
+ms.sourcegitcommit: f7cd9c71287d62c9f5d36e2f032bc2a6065572ae
+ms.openlocfilehash: 8ff48b08d1abb7481592c0ea076d4efa15c3d8ee
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/06/2017
 
 ---
 # <a name="use-a-command-line-to-install-system-center-configuration-manager-sites"></a>명령줄을 사용하여 System Center Configuration Manager 사이트 설치
@@ -67,7 +67,7 @@ ms.lasthandoff: 05/17/2017
     -   Identification  
     -   복구
 
-백업 및 복구에 대한 자세한 내용은 [Configuration Manager의 백업 및 복구](../../../../protect/understand/backup-and-recovery.md) 항목에서 [무인 사이트 복구 스크립트 파일 키](../../../../protect/understand/backup-and-recovery.md#BKMK_UnattendedSiteRecoveryKeys)를 참조하세요.  
+자세한 내용은 [Configuration Manager에 대한 무인 사이트 복구](/sccm/protect/understand/unattended-recovery)를 참조하세요.  
 
 무인 설치 스크립트 파일에서 사용할 키와 값 목록은 [무인 설치 스크립트 파일 키](../../../../core/servers/deploy/install/command-line-options-for-setup.md#bkmk_Unattended)를 참조하세요.  
 
@@ -87,7 +87,7 @@ CD.Latest 폴더의 미디어를 사용하여 다음 네 가지 설치 옵션의
 - 새 중앙 관리 사이트 설치
 - 새 기본 사이트 설치
 - 중앙 관리 사이트 복구
-- 기본 사이트 복구 
+- 기본 사이트 복구
 
 Microsoft 볼륨 라이선스 사이트에서 얻은 설치 미디어에는 이 값을 사용할 수 없습니다.
 스크립트 파일에서 이 키 이름을 사용하는 방법에 대한 자세한 내용은 [명령줄 옵션](/sccm/core/servers/deploy/install/command-line-options-for-setup)을 참조하세요.

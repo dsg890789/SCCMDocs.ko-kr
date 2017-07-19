@@ -16,10 +16,10 @@ author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: e6833951db27b227a3ca22925e9d9f4c3fc443fc
-ms.openlocfilehash: e8606b8a9268a0a0668b75070cf35894f4794123
+ms.sourcegitcommit: 5eed004bd38a567dfdd4e392300be656a7abe3f7
+ms.openlocfilehash: c692fad43807e54cecbd7ab60284ea740d60617d
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 05/25/2017
 
 ---
 # <a name="predeclare-devices-with-imei-or-ios-serial-numbers"></a>IMEI 또는 iOS 일련 번호로 장치 미리 선언
@@ -62,7 +62,7 @@ ms.lasthandoff: 05/17/2017
 
 ## <a name="format-for-uploading-csv-files"></a>.csv 파일을 업로드하기 위한 형식
 
-IMEI 또는 일련 번호로 장치를 식별하는 데 사용하는 .csv 파일은 다음 형식이어야 합니다(참조용으로만 제공되는 맨 위 행은 제외). 각 행은 ID 번호(IMEI 번호 또는 iOS 일련 번호)를 포함해야 합니다. 두 가지 모두를 포함할 수 있습니다. IMEI 번호는 Android, iOS 및 Windows 장치에 사용할 수 있습니다. iOS 일련 번호도 지원됩니다.  다음 표에 샘플 데이터가 포함되어 있습니다.
+IMEI 또는 iOS 일련 번호로 장치를 식별하는 데 사용하는 .csv 파일은 다음 형식이어야 합니다(참조용으로만 제공되는 맨 위 행은 제외). 각 행은 ID 번호(IMEI 번호 또는 iOS 일련 번호)를 포함해야 합니다. iOS 장치의 경우 둘 다 포함할 수 있습니다. IMEI 번호는 Android, iOS 및 Windows 장치에 사용할 수 있습니다. 다음 표에 샘플 데이터가 포함되어 있습니다.
 
 | IMEI 번호  | iOS 일련 번호  | OS | 세부 정보 |
 |------------ |---------------|-----|-----|

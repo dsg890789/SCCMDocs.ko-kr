@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager로 업그레이드 | Microsoft 문서"
 description: "System Center 2012 Configuration Manager를 실행하는 사이트 및 계층 구조에서 현재 위치 업그레이드를 성공적으로 실행하기 위한 단계를 알아봅니다."
 ms.custom: na
-ms.date: 05/02/2017
+ms.date: 6/6/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d940fd1bbf96767d44f8c55315e814be55a83897
-ms.openlocfilehash: 9e58ab8dd892adf25429564adfd6f86849ddcbdf
+ms.sourcegitcommit: 3619a73d3a39659de927e1711a7ec81de9918064
+ms.openlocfilehash: 1166b739e1e8d667172d97883f484fdbc3a142c1
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -38,11 +38,11 @@ ms.lasthandoff: 05/17/2017
 
 **버전 1702로 업그레이드**   
 버전 1702 기준 미디어가 있는 경우 다음 버전을 System Center Configuration Manager 버전 1702의 정품 버전으로 업그레이드할 수 있습니다.   
--      System Center Configuration Manager 버전 1702의 평가판 설치
--      System Center 2012 Configuration Manager 서비스 팩 1
--      System Center 2012 Configuration Manager 서비스 팩 2
--      System Center 2012 R2 Configuration Manager
--      System Center 2012 R2 Configuration Manager 서비스 팩 1
+-     System Center Configuration Manager 버전 1702의 평가판 설치
+-     System Center 2012 Configuration Manager 서비스 팩 1
+-     System Center 2012 Configuration Manager 서비스 팩 2
+-     System Center 2012 R2 Configuration Manager
+-     System Center 2012 R2 Configuration Manager 서비스 팩 1
 
 **버전 1606으로 업그레이드**  
 2016년 12월 15일에 버전 1606의 기준 미디어가 추가 업그레이드 시나리오에 대한 지원을 추가하기 위해 릴리스되었습니다. 이 새로운 릴리스는 다음 버전을 System Center Configuration Manager 버전 1606의 정품 버전으로 업그레이드하도록 지원합니다.  
@@ -115,7 +115,7 @@ Configuration Manager에서 Windows ADK를 사용하는 방법에 대한 자세�
 다음 사이트 시스템 역할은 System Center Configuration Manager에서 더 이상 사용되지 않으므로 System Center 2012 Configuration Manager에서 업그레이드하기 전에 제거해야 합니다.  
 
 -   대역 외 관리 지점  
--   서비스 상태 검사기 지점  
+-   시스템 상태 검사기 지점  
 
 **기본 사이트의 관리 지점에 데이터베이스 복제본을 사용하지 않도록 설정:**  
 Configuration Manager에서 관리 지점에 대한 데이터베이스 복제본이 사용하도록 설정된 기본 사이트를 성공적으로 업그레이드할 수 없습니다. 데이터베이스 복제를 사용하지 않도록 설정한 후 다음을 수행합니다.  
@@ -271,7 +271,7 @@ System Center Configuration Manager로 업그레이드하는 경우 다음 작�
      소프트웨어 업데이트 또는 소프트웨어 업데이트 그룹의 사용자 지정 요약 일정이 기본값인 1시간으로 다시 설정됩니다. 업그레이드가 완료된 후에는 사용자 지정 요약 값을 필요한 주기로 다시 설정합니다.  
 
 ##  <a name="bkmk_test"></a> 사이트 데이터베이스 업그레이드 테스트  
-다음 정보는 System Center 2012 Configuration Manager 등의 이전 버전을 System Center Configuration Manager로 업그레이드하는 경우에만 적용됩니다. 사이트에서 이미 System Center Configuration Manager를 실행하고 있고 새 업데이트를 설치 중인 경우 **콘솔 내 업데이트를 설치하기 전에**에서 [2단계: 업데이트를 설치하기 전에 데이터베이스 업그레이드 테스트](/sccm/core/servers/manage/install-in-console-updates#bkmk_step2)를 참조하세요.
+다음 정보는 System Center 2012 Configuration Manager 등의 이전 버전을 System Center Configuration Manager로 업그레이드하는 경우에만 적용됩니다.
 
 사이트를 업그레이드하기 전에 해당 사이트의 데이터베이스 사본으로 업그레이드를 테스트합니다.  
 
