@@ -5,7 +5,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 03/24/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -13,10 +13,10 @@ ms.technology:
 - configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
 ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 016580dc6ee3c5268833db941d42416a976d201c
+ms.sourcegitcommit: dc221ddf547c43ab1f25ff83c3c9bb603297ece6
+ms.openlocfilehash: 744bcb603a02bc7d237ffb3a7f925037b94a23ba
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/01/2017
 
 ---
 
@@ -142,6 +142,9 @@ Office 365가 설치되지 않은 클라이언트에는 Office 365 업데이트�
 4. **클라이언트 설정 가져오기** 페이지에서, 기존 XML 구성 파일에서 Office 365 클라이언트 설정을 가져올지 아니면 설정을 수동으로 지정할지 여부를 지정하고 **다음**을 클릭합니다.  
 
     기존 구성 파일이 있는 경우 해당 파일의 위치를 입력하고 7단계로 건너뜁니다. 위치는 &#92;&#92;*server*&#92;*share*&#92;*filename*.XML 형식으로 지정해야 합니다.
+    > [!IMPORTANT]    
+    > XML 구성 파일은 [Office 365 ProPlus 클라이언트에서 지원하는 언어](https://technet.microsoft.com/library/cc179219&#40;v=office.16&#41;.aspx)만 포함해야 합니다.
+
 5. **클라이언트 제품** 페이지에서 사용할 Office 365 제품군을 선택하고, 포함할 응용 프로그램을 선택하고, 포함할 추가 Office 제품을 선택한 후 **다음**을 클릭합니다.
 6. **클라이언트 설정** 페이지에서 포함할 설정을 선택하고 **다음**을 클릭합니다.
 7. **배포** 페이지에서 응용 프로그램을 배포할지 여부를 선택하고 **다음**을 클릭합니다.  

@@ -2,7 +2,7 @@
 title: "사용자 환경을 캡처 및 복원하는 작업 순서 만들기 | Microsoft 문서"
 description: "System Center Configuration Manager 작업 순서를 사용하여 운영 체제 배포 시나리오에서 사용자 상태 데이터를 캡처 및 복원할 수 있습니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 06/07/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,10 +17,10 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
-ms.openlocfilehash: fdfbdd1acb1190ca7de9cff2b4b7f916d8dc1272
+ms.sourcegitcommit: c6ee0ed635ab81b5e454e3cd85637ff3e20dbb34
+ms.openlocfilehash: 4b3668094d576b1b8710f08b384aa2f7c5eb0cca
 ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -82,7 +82,7 @@ System Center Configuration Manager 작업 순서를 사용하여 현재 운영 
 
         -   모든 사용자 프로필을 캡처하려면 **표준 옵션을 사용하여 모든 사용자 프로필 캡처** 를 클릭합니다.  
 
-        -   캡처할 사용자 프로필을 개별적으로 지정하려면 **사용자 프로필 캡처 방식을 사용자 지정** 을 클릭합니다.  
+        -   캡처할 사용자 프로필을 개별적으로 지정하려면 **사용자 프로필 캡처 방식을 사용자 지정** 을 클릭합니다. 사용자 프로필 정보를 포함하는 구성 파일(miguser.xml, migsys.xml 또는 migapp.xml)을 선택합니다. 여기서는 config.xml 구성 파일을 사용할 수 없지만 OSDMigrageAdditionalCaptureOptions 및 OSDMigrateAdditionalRestoreOptions 변수를 사용하여 USMT 명령줄에 수동으로 추가할 수 있습니다.
 
     -   오류가 발생하는 경우 로그 파일에 기록할 정보 수준을 지정하려면 **자세한 정보 로깅 사용** 을 선택합니다.  
 
@@ -135,7 +135,7 @@ System Center Configuration Manager 작업 순서를 사용하여 현재 운영 
 
         -   모든 사용자 프로필을 복원하려면 **캡처된 모든 사용자 프로필을 표준 옵션으로 복원** 을 클릭합니다.  
 
-        -   개별 사용자 프로필을 복원하려면 **사용자 프로필 캡처 방식을 사용자 지정** 을 클릭합니다.  
+        -   개별 사용자 프로필을 복원하려면 **사용자 프로필 복원 사용자 지정**을 클릭합니다. 사용자 프로필 정보를 포함하는 구성 파일(miguser.xml, migsys.xml 또는 migapp.xml)을 선택합니다. 여기서는 config.xml 구성 파일을 사용할 수 없지만 OSDMigrageAdditionalCaptureOptions 및 OSDMigrateAdditionalRestoreOptions 변수를 사용하여 USMT 명령줄에 수동으로 추가할 수 있습니다.
 
     -   복원한 프로필에 새 암호를 제공하려면 **로컬 컴퓨터 사용자 프로필 복원** 을 선택합니다. 로컬 프로필에 대한 암호를 마이그레이션할 수 없습니다.  
 

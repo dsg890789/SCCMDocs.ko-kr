@@ -2,7 +2,7 @@
 title: "사이트 계층 설계 - Configuration Manager | Microsoft 문서"
 description: "사이트 계층 구조를 계획할 수 있도록 System Center Configuration Manager에 대한 사용 가능한 토폴로지 및 관리 옵션을 이해합니다."
 ms.custom: na
-ms.date: 1/3/2017
+ms.date: 6/16/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,10 +17,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 35e48666f4d1a2363304650f960531fd0630a291
-ms.openlocfilehash: e346e83b0ae0dc7a612cef7a7b9fb1fdb42236bc
+ms.sourcegitcommit: db673277d1cc2d24e8dba2439b2b1891c883ebd0
+ms.openlocfilehash: 4710b1b89eb50cb7bcf4c4ee50c12a96b6561bc9
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/16/2017
 
 
 ---
@@ -66,7 +66,7 @@ System Center Configuration Manager 계층 구조의 첫 번째 사이트를 설
 
 -   중앙 관리 사이트는 계층의 최상위 사이트입니다.  
 
--   기본 사이트가 둘 이상 있는 계층을 구성하는 경우 중앙 관리 사이트를 반드시 설치해야 하며, 중앙 관리 사이트가 설치하는 첫 번째 사이트여야 합니다.  
+-   기본 사이트가 둘 이상 있는 계층을 구성하는 경우 중앙 관리 사이트를 반드시 설치해야 합니다. 둘 이상의 기본 사이트가 즉시 필요한 경우 중앙 관리 사이트를 먼저 설치합니다. 이미 기본 사이트가 있고 중앙 관리 사이트를 설치하려는 경우 [독립 실행형 기본 사이트를 확장](/sccm/core/servers/deploy/install/prerequisites-for-installing-sites#bkmk_expand)하여 중앙 관리 사이트를 설치합니다. 
 
 -   중앙 관리 사이트는 기본 사이트를 자식 사이트로서만 지원합니다.  
 

@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager를 사용하여 Intune 구독 구성 | Microsoft Docs"
 description: "System Center Configuration Manager를 사용하여 Intune 구독 구성"
 ms.custom: na
-ms.date: 03/05/2017
+ms.date: 06/02/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,10 +17,10 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 10cc64ae7e4d91f53201c2896b359e77ef04d32d
+ms.sourcegitcommit: 662901e850566756759fcfc61c58f3c0e56bc5aa
+ms.openlocfilehash: 22d890c972d3166f9c7b583d8d3fa917c1897880
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/03/2017
 
 ---
 # <a name="configure-your-intune-subscription-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하여 Intune 구독 구성
@@ -53,7 +53,7 @@ Intune 구독은 다음을 수행합니다.
 5.  **구독** 페이지에서 **로그인** 을 클릭하고 회사 또는 학교 계정을 사용하여 로그인합니다. **모바일 장치 관리 기관 설정** 대화 상자에서 Configuration Manager 콘솔을 통해 Configuration Manager를 사용하는 방법으로만 모바일 장치를 관리하려면 확인란을 선택합니다. 구독을 계속하려면 이 옵션을 선택해야 합니다.
 
     > [!IMPORTANT]
-    >  Configuration Manager를 관리 기관으로 선택한 후에는 향후에 관리 기관을 Microsoft Intune으로 변경할 수 없습니다.
+    >  Configuration Manager를 관리 기관으로 선택하는 경우 Microsoft 지원 서비스에 연락하지 않고, 기존의 관리 장치를 등록 취소했다가 다시 등록하지 않고도, Configuration Manager 버전 1610 이상 및 Microsoft Intune 버전 1705에서 관리 기관을 Microsoft Intune으로 변경할 수 있습니다. 자세한 내용은 [MDM 기관 변경](/sccm/mdm/deploy-use/change-mdm-authority)을 참조하세요.
 
 6.  개인 정보 취급 방침 링크를 클릭하여 검토하고 **다음**을 클릭합니다.
 

@@ -2,7 +2,7 @@
 title: "1702에 대한 검사 목록 | System Center Configuration Manager"
 description: "System Center Configuration Manager 버전 1702로 업데이트하기 전에 수행할 작업에 대해 알아봅니다."
 ms.custom: na
-ms.date: 05/02/2017
+ms.date: 6/6/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
-ms.openlocfilehash: c4ace452d62d4fa08f4457cb1735718ca4bd016d
+ms.sourcegitcommit: 3619a73d3a39659de927e1711a7ec81de9918064
+ms.openlocfilehash: 355dfb361a1ab3e1bd436dae1df8a416bf79c6c8
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/13/2017
 
 ---
 # <a name="checklist-for-installing-update-1702-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 업데이트 1702를 설치하기 위한 검사 목록
@@ -108,10 +108,7 @@ ADK를 업데이트하기 전에 사이트를 업데이트할 경우 부팅 이�
 **사이트, 사이트 데이터베이스 서버 및 원격 사이트 시스템 역할을 호스트하는 컴퓨터에서 해당하는 모든 중요한 운영 체제 업데이트 설치:** Configuration Manager에 대한 업데이트를 설치하기 전에 해당하는 각 사이트 시스템에 대한 모든 중요 업데이트를 설치합니다. 설치하는 업데이트에서 다시 시작하도록 요구하는 경우 업그레이드를 시작하기 전에 해당 컴퓨터를 다시 시작합니다.
 
 **기본 사이트의 관리 지점에 데이터베이스 복제본을 사용하지 않도록 설정:**   
-Configuration Manager에서 관리 지점에 대한 데이터베이스 복제본이 사용하도록 설정된 기본 사이트를 성공적으로 업데이트할 수 없습니다. 데이터베이스 복제를 사용하지 않도록 설정한 후 다음을 수행합니다.
-
--   데이터베이스 업그레이드를 테스트하기 위해 사이트 데이터베이스 백업 만들기
--   Configuration Manager에 대한 업데이트 설치
+Configuration Manager에서 관리 지점에 대한 데이터베이스 복제본이 사용하도록 설정된 기본 사이트를 성공적으로 업데이트할 수 없습니다. Configuration Manager용 업데이트를 설치하기 전에 데이터베이스 복제를 사용하지 않도록 설정합니다.
 
 자세한 내용은 [System Center Configuration Manager의 관리 지점용 데이터베이스 복제본](/sccm/core/servers/deploy/configure/database-replicas-for-management-points)을 참조하세요.
 
@@ -139,21 +136,24 @@ Configuration Manager에서는 NLB(네트워크 부하 분산) 클러스터를 �
 
 자세한 내용은 [System Center Configuration Manager 백업 및 복구](/sccm/protect/understand/backup-and-recovery)를 참조하세요.
 
-**최신 사이트 데이터베이스 백업의 복사본에서 데이터베이스 업그레이드 테스트:** System Center Configuration Manager 중앙 관리 사이트 또는 기본 사이트를 업데이트하기 전에 사이트 데이터베이스의 복사본에서 사이트 데이터베이스 업그레이드 프로세스를 테스트할 수 있습니다.
+<!-- Removed from update guidance 6/6/2017
+**Test the database upgrade on a copy of the most recent site database backup:** 
+Before you update a System Center Configuration Manager central administration site or primary site, you can test the site database upgrade process on a copy of the site database.
 
--   사이트를 업그레이드할 때 사이트 데이터베이스가 수정될 수 있기 때문에 사이트 데이터베이스 업그레이드 프로세스를 테스트하는 것이 좋습니다.
+-   We recommend that you test the site database upgrade process because when you upgrade a site, the site database might be modified.
 
--   데이터베이스 업그레이드 테스트를 반드시 수행해야 하는 것은 아니지만, 수행할 경우 프로덕션 데이터베이스가 영향을 받기 전에 업그레이드 문제를 파악할 수 있습니다.
+-   Although a test database upgrade is not required, it can identify problems for the upgrade before your production database is affected.
 
--   사이트 데이터베이스 업그레이드가 실패하면 사이트 데이터베이스가 작동 불가능해질 수 있고 기능을 복원하기 위해 사이트 복구가 필요할 수 있습니다.
+-   A failed site database upgrade can render your site database inoperable and might require a site recovery to restore functionality.
 
--   사이트 데이터베이스는 계층의 여러 사이트 간에 공유되지만 사이트를 업그레이드하기 전에 각 해당 사이트에서 데이터베이스를 테스트하세요.
+-   Although the site database is shared between sites in a hierarchy, plan to test the database at each applicable site before you upgrade that site.
 
--   기본 사이트의 관리 지점에 데이터베이스 복제본을 사용할 경우 사이트 데이터베이스 백업을 만들기 전에 복제본을 사용하지 않도록 설정합니다.
+-   If you use database replicas for management points at a primary site, disable replication before you create the backup of the site database.
 
-Configuration Manager는 보조 사이트의 백업을 지원하지 않으며, 보조 사이트 데이터베이스의 테스트 업그레이드도 지원하지 않습니다.
+Configuration Manager does not support the backup of secondary sites nor does it support the test upgrade of a secondary site database.
 
-프로덕션 사이트 데이터베이스에서 테스트 데이터베이스 업그레이드를 실행해서는 안 됩니다. 이렇게 하면 사이트 데이터베이스가 업데이트되어 사이트가 작동하지 않을 수 있습니다. 자세한 내용은 **콘솔 업데이트를 설치하기 전에**에서 [2단계: 업데이트를 설치하기 전에 데이터베이스 업그레이드 테스트](/sccm/core/servers/manage/install-in-console-updates#bkmk_step2)를 참조하세요.
+Do not run a test database upgrade on the production site database. Doing so updates the site database and could render your site inoperable. For more information, see [Step 2: Test the database upgrade before installing an update](/sccm/core/servers/manage/install-in-console-updates#bkmk_step2) from **Before you install an in-console update**.
+-->
 
 **클라이언트 파일럿에 대한 계획:**   
 클라이언트를 업데이트하는 업데이트를 설치할 때 모든 활성 클라이언트를 배포하고 업그레이드하기 전에 사전 프로덕션 환경에서 새로운 클라이언트 업데이트를 테스트할 수 있습니다.
@@ -186,11 +186,11 @@ Configuration Manager는 보조 사이트의 백업을 지원하지 않으며, �
 
 ## <a name="post-update-checklist"></a>업데이트 후 검사 목록
 업데이트 설치가 완료된 후 수행할 다음 작업을 검토합니다.
-1.    사이트 간 복제가 활성화되었는지 확인합니다. 콘솔에서 **모니터링** > **사이트 계층 구조** 및 **모니터링** > **데이터베이스 복제**를 표시하여 문제가 있거나 복제 링크가 활성화되었는지 확인합니다.
-2.    각 사이트 서버 및 사이트 시스템 역할이 버전 1702로 업데이트되었는지 확인합니다. 콘솔에서 선택적 열 **버전**을 **사이트** 및 **배포 지점**과 같은 일부 노드 표시에 추가할 수 있습니다.
+1.  사이트 간 복제가 활성화되었는지 확인합니다. 콘솔에서 **모니터링** > **사이트 계층 구조** 및 **모니터링** > **데이터베이스 복제**를 표시하여 문제가 있거나 복제 링크가 활성화되었는지 확인합니다.
+2.  각 사이트 서버 및 사이트 시스템 역할이 버전 1702로 업데이트되었는지 확인합니다. 콘솔에서 선택적 열 **버전**을 **사이트** 및 **배포 지점**과 같은 일부 노드 표시에 추가할 수 있습니다.
 
  필요한 경우 사이트 시스템 역할이 새 버전에 대한 업데이트를 자동으로 다시 설치합니다. 제대로 업데이트되지 않은 원격 사이트 시스템을 다시 시작하는 것이 좋습니다.
-3.    업데이트를 시작하기 전에 사용하지 않도록 설정한 기본 사이트에서 관리 지점의 데이터베이스 복제본을 다시 구성합니다.
+3.  업데이트를 시작하기 전에 사용하지 않도록 설정한 기본 사이트에서 관리 지점의 데이터베이스 복제본을 다시 구성합니다.
 4.  업데이트를 시작하기 전에 사용하지 않도록 설정한 데이터베이스 유지 관리 작업을 다시 구성합니다.
-5.    업데이트를 설치하기 전에 클라이언트 파일럿을 구성한 경우 직접 만든 계획에 따라 클라이언트를 업그레이드합니다.
+5.  업데이트를 설치하기 전에 클라이언트 파일럿을 구성한 경우 직접 만든 계획에 따라 클라이언트를 업그레이드합니다.
 

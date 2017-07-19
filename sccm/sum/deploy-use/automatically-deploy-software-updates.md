@@ -12,19 +12,21 @@ ms.service:
 ms.technology:
 - configmgr-sum
 ms.assetid: b27682de-adf8-4edd-9572-54886af8f7fb
-translationtype: Human Translation
-ms.sourcegitcommit: 78524abd4c45f0b7402d6f1e85afc60bb72ab0ee
-ms.openlocfilehash: 34b0819957ffcc3711ee354a5b821d78fa7445cb
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c6ee0ed635ab81b5e454e3cd85637ff3e20dbb34
+ms.openlocfilehash: 804a9d7a32cfbdb498c6748c5d99a1874261c231
+ms.contentlocale: ko-kr
+ms.lasthandoff: 06/08/2017
 
 ---
 
-#  <a name="a-namebkmkautodeploya-automatically-deploy-software-updates"></a><a name="BKMK_AutoDeploy"></a> 소프트웨어 업데이트 자동 배포  
+#  <a name="BKMK_AutoDeploy"></a> 소프트웨어 업데이트 자동 배포  
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
  새 소프트웨어 업데이트를 활성 배포와 관련된 업데이트 그룹에 추가하거나 ADR(자동 배포 규칙)을 사용할 수 있으면 소프트웨어 업데이트를 자동으로 배포할 수 있습니다. 일반적으로 ADR을 사용하여 월별 소프트웨어 업데이트(일반적으로 화요일 패치 업데이트라고 함)를 배포하고 정의 업데이트를 관리합니다. 적합한 배포 방법을 확인하려면 [소프트웨어 업데이트 배포](deploy-software-updates.md)를 참조하세요.
 
-##  <a name="a-namebkmkaddupdatestoexistinggroupa-add-software-updates-to-a-deployed-update-group"></a><a name="BKMK_AddUpdatesToExistingGroup"></a> 배포된 업데이트 그룹에 소프트웨어 업데이트 추가  
+##  <a name="BKMK_AddUpdatesToExistingGroup"></a> 배포된 업데이트 그룹에 소프트웨어 업데이트 추가  
 소프트웨어 업데이트 그룹을 만들어 배포한 후 이 업데이트 그룹에 소프트웨어 업데이트를 추가할 수 있으며 이를 통해 소프트웨어 업데이트가 자동으로 배포됩니다.  
 
 > [!IMPORTANT]  
@@ -46,7 +48,7 @@ ms.openlocfilehash: 34b0819957ffcc3711ee354a5b821d78fa7445cb
 
 6.  소프트웨어 업데이트 그룹을 클릭하고 **홈** 탭의 **업데이트** 그룹에서 **구성원 표시** 를 클릭하여 그룹에 있는 소프트웨어 업데이트의 목록을 표시합니다.  
 
-##  <a name="a-namebkmkcreateautomaticdeploymentrulea-create-an-automatic-deployment-rule-adr"></a><a name="BKMK_CreateAutomaticDeploymentRule"></a> ADR(자동 배포 규칙) 만들기  
+##  <a name="BKMK_CreateAutomaticDeploymentRule"></a> ADR(자동 배포 규칙) 만들기  
 ADR을 사용하면 소프트웨어 업데이트를 자동으로 승인하고 배포할 수 있습니다. 규칙을 실행할 때마다 소프트웨어 업데이트를 새 소프트웨어 업데이트 그룹에 추가하거나, 소프트웨어 업데이트를 기존 그룹에 추가하도록 규칙을 지정할 수 있습니다. 소프트웨어 업데이트를 기존 그룹에 추가하는 규칙을 실행한 경우 이 규칙은 모든 소프트웨어 업데이트를 그룹에서 제거한 다음 정의한 조건을 충족하는 소프트웨어 업데이트를 그룹에 추가합니다. 예를 들어 매일 새로 릴리스된 소프트웨어 업데이트를 찾아서 클라이언트에 배포하는 ADR을 실행하려면 소프트웨어 업데이트를 기존 그룹에 추가하는 대신 새 소프트웨어 업데이트 그룹을 만드는 옵션을 선택해야 합니다.  
 
 > [!WARNING]  
@@ -167,15 +169,15 @@ ADR을 사용하면 소프트웨어 업데이트를 자동으로 승인하고 �
 
 10. 다운로드 설정 페이지에서 다음 설정을 구성합니다.  
 
-    -   저속 네트워크에 연결되어 있거나 대체 콘텐츠 위치를 사용 중인 클라이언트에서 소프트웨어 업데이트를 다운로드 및 설치할지 여부를 지정합니다.  
+    - 저속 네트워크에 연결되어 있거나 대체 콘텐츠 위치를 사용 중인 클라이언트에서 소프트웨어 업데이트를 다운로드 및 설치할지 여부를 지정합니다.  
 
-    -   기본 배포 지점에서 소프트웨어 업데이트의 콘텐츠를 사용할 수 없을 때 클라이언트가 대체 배포 지점에서 소프트웨어 업데이트를 다운로드 및 설치할지 여부를 지정합니다.  
+    - 기본 배포 지점에서 소프트웨어 업데이트의 콘텐츠를 사용할 수 없을 때 클라이언트가 대체 배포 지점에서 소프트웨어 업데이트를 다운로드 및 설치할지 여부를 지정합니다.  
 
-    -   **클라이언트가 동일한 서브넷에 있는 다른 클라이언트와 콘텐츠를 공유하도록 허용**: 콘텐츠 다운로드를 위해 BranchCache를 사용할지 여부를 지정합니다. BranchCache에 대한 자세한 내용은 [Concepts for content management](../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md#branchcache)을 참조하세요.  
+    - **클라이언트가 동일한 서브넷에 있는 다른 클라이언트와 콘텐츠를 공유하도록 허용**: 콘텐츠 다운로드를 위해 BranchCache를 사용할지 여부를 지정합니다. BranchCache에 대한 자세한 내용은 [Concepts for content management](../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md#branchcache)을 참조하세요.  
 
-    -   배포 지점에서 소프트웨어 업데이트를 사용할 수 없는 경우 인트라넷에 연결된 클라이언트가 Microsoft 업데이트에서 소프트웨어 업데이트를 다운로드할지 여부를 지정합니다.  
+    - **현재, 인접 또는 사이트 경계 그룹의 배포 지점에서 소프트웨어 업데이트를 사용할 수 없는 경우 Microsoft 업데이트에서 콘텐츠를 다운로드합니다.**: 배포 지점에서 소프트웨어 업데이트를 사용할 수 없는 경우 인트라넷에 연결된 클라이언트가 Microsoft 업데이트에서 소프트웨어 업데이트를 다운로드하도록 하려면 이 설정을 선택합니다. 인터넷 기반 클라이언트는 항상 Microsoft 업데이트로 가서 소프트웨어 업데이트 콘텐츠를 가져올 수 있습니다.
 
-    -   은 설치 최종 기한에 도달한 후 클라이언트에서 요금제 인터넷 연결을 사용하여 콘텐츠를 다운로드하도록 허용할지 여부를 지정합니다. 때로 인터넷 공급자는 사용자가 요금제 인터넷 연결을 사용할 경우 보내고 받는 데이터 양을 기준으로 요금을 청구하기도 합니다.  
+    - 설치 최종 기한에 도달한 후 클라이언트에서 요금제 인터넷 연결을 사용하여 콘텐츠를 다운로드하도록 허용할지 여부를 지정합니다. 때로 인터넷 공급자는 사용자가 요금제 인터넷 연결을 사용할 경우 보내고 받는 데이터 양을 기준으로 요금을 청구하기도 합니다.  
 
     > [!NOTE]  
     >  클라이언트는 배포 내 소프트웨어 업데이트에 대해 관리 지점에서 콘텐츠 위치를 요청합니다. 다운로드 동작은 배포 지점, 배포 패키지 및 이 페이지의 설정 등을 어떻게 구성했는지에 따라 달라집니다. 자세한 내용은 [Content source location scenarios](../../core/plan-design/hierarchy/content-source-location-scenarios.md)을 참조하세요.  
@@ -221,7 +223,7 @@ ADR을 사용하면 소프트웨어 업데이트를 자동으로 승인하고 �
 
  마법사를 완료하면 ADR이 실행됩니다. 지정한 기준을 충족하는 소프트웨어 업데이트가 소프트웨어 업데이트 그룹에 추가되고, 사이트 서버의 콘텐츠 라이브러리에 소프트웨어 업데이트가 다운로드되며, 구성된 배포 지점에 소프트웨어 업데이트가 배포된 후 대상 컬렉션의 클라이언트에 소프트웨어 업데이트 그룹이 배포됩니다.  
 
-##  <a name="a-namebkmkadddeploymenttoadra-add-a-new-deployment-to-an-existing-adr"></a><a name="BKMK_AddDeploymentToADR"></a> 기존 ADR에 새 배포를 추가합니다.  
+##  <a name="BKMK_AddDeploymentToADR"></a> 기존 ADR에 새 배포를 추가합니다.  
  ADR을 만든 후에 규칙에 배포를 더 추가할 수 있습니다. 따라서 컬렉션마다 각기 다른 업데이트를 배포해야 하는 복잡한 작업을 관리할 수 있습니다. 각각의 새 배포는 모든 기능 및 배포 모니터링 환경을 포함합니다.  
 
 #### <a name="to-add-a-new-deployment-to-an-existing-adr"></a>기존 ADR에 새 배포를 추가하려면  
@@ -299,26 +301,21 @@ ADR을 사용하면 소프트웨어 업데이트를 자동으로 승인하고 �
 
 8. 다운로드 설정 페이지에서 다음 설정을 구성합니다.  
 
-    -   저속 네트워크에 연결되어 있거나 대체 콘텐츠 위치를 사용 중인 클라이언트에서 소프트웨어 업데이트를 다운로드 및 설치할지 여부를 지정합니다.  
+    - 저속 네트워크에 연결되어 있거나 대체 콘텐츠 위치를 사용 중인 클라이언트에서 소프트웨어 업데이트를 다운로드 및 설치할지 여부를 지정합니다.  
 
-    -   기본 배포 지점에서 소프트웨어 업데이트의 콘텐츠를 사용할 수 없을 때 클라이언트가 대체 배포 지점에서 소프트웨어 업데이트를 다운로드 및 설치할지 여부를 지정합니다.  
+    - 기본 배포 지점에서 소프트웨어 업데이트의 콘텐츠를 사용할 수 없을 때 클라이언트가 대체 배포 지점에서 소프트웨어 업데이트를 다운로드 및 설치할지 여부를 지정합니다.  
 
-    -   **클라이언트가 동일한 서브넷에 있는 다른 클라이언트와 콘텐츠를 공유하도록 허용**: 콘텐츠 다운로드를 위해 BranchCache를 사용할지 여부를 지정합니다. BranchCache에 대한 자세한 내용은 [Concepts for content management](../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md#branchcache)을 참조하세요.  
+    - **클라이언트가 동일한 서브넷에 있는 다른 클라이언트와 콘텐츠를 공유하도록 허용**: 콘텐츠 다운로드를 위해 BranchCache를 사용할지 여부를 지정합니다. BranchCache에 대한 자세한 내용은 [Concepts for content management](../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md#branchcache)을 참조하세요.  
 
-    -   배포 지점에서 소프트웨어 업데이트를 사용할 수 없는 경우 인트라넷에 연결된 클라이언트가 Microsoft 업데이트에서 소프트웨어 업데이트를 다운로드할지 여부를 지정합니다.  
+    - **현재, 인접 또는 사이트 경계 그룹의 배포 지점에서 소프트웨어 업데이트를 사용할 수 없는 경우 Microsoft 업데이트에서 콘텐츠를 다운로드합니다.**: 배포 지점에서 소프트웨어 업데이트를 사용할 수 없는 경우 인트라넷에 연결된 클라이언트가 Microsoft 업데이트에서 소프트웨어 업데이트를 다운로드하도록 하려면 이 설정을 선택합니다. 인터넷 기반 클라이언트는 항상 Microsoft 업데이트로 가서 소프트웨어 업데이트 콘텐츠를 가져올 수 있습니다.
 
-    -   은 설치 최종 기한에 도달한 후 클라이언트에서 요금제 인터넷 연결을 사용하여 콘텐츠를 다운로드하도록 허용할지 여부를 지정합니다. 때로 인터넷 공급자는 사용자가 요금제 인터넷 연결을 사용할 경우 보내고 받는 데이터 양을 기준으로 요금을 청구하기도 합니다.  
+    - 설치 최종 기한에 도달한 후 클라이언트에서 요금제 인터넷 연결을 사용하여 콘텐츠를 다운로드하도록 허용할지 여부를 지정합니다. 때로 인터넷 공급자는 사용자가 요금제 인터넷 연결을 사용할 경우 보내고 받는 데이터 양을 기준으로 요금을 청구하기도 합니다.  
 
     > [!NOTE]  
-    >  클라이언트는 배포 내 소프트웨어 업데이트에 대해 관리 지점에서 콘텐츠 위치를 요청합니다. 다운로드 동작은 배포 지점, 배포 패키지 및 이 페이지의 설정 등을 어떻게 구성했는지에 따라 달라집니다. 자세한 내용은 [Content source location scenarios](../../core/plan-design/hierarchy/content-source-location-scenarios.md)을 참조하세요.  
+    > 클라이언트는 배포 내 소프트웨어 업데이트에 대해 관리 지점에서 콘텐츠 위치를 요청합니다. 다운로드 동작은 배포 지점, 배포 패키지 및 이 페이지의 설정 등을 어떻게 구성했는지에 따라 달라집니다. 자세한 내용은 [Content source location scenarios](../../core/plan-design/hierarchy/content-source-location-scenarios.md)을 참조하세요.  
 
 배포 프로세스에 대한 자세한 내용은 [Software update deployment process](../../sum/understand/software-updates-introduction.md#BKMK_DeploymentProcess)(소프트웨어 업데이트 배포 프로세스)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 [소프트웨어 업데이트 모니터링](monitor-software-updates.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

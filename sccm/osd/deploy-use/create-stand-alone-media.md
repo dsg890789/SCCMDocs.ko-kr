@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager에서 독립 실행형 미디어 만들기 | Microsoft 문서"
 description: "독립 실행형 미디어를 사용하여 Configuration Manager 사이트나 네트워크에 연결하지 않고 컴퓨터에 운영 체제를 배포합니다."
 ms.custom: na
-ms.date: 03/24/2017
+ms.date: 06/07/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,10 +17,10 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: d4689545ce2be5c16a65b24489f30028a0f90f94
+ms.sourcegitcommit: c6ee0ed635ab81b5e454e3cd85637ff3e20dbb34
+ms.openlocfilehash: 98f902429ad1b9965a0dc4cc2e1bd071ad5c0779
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -36,10 +36,10 @@ Configuration Manager의 독립 실행형 미디어에는 Configuration Manager 
 
 -   [최신 버전으로 Windows 업그레이드](upgrade-windows-to-the-latest-version.md)  
 
- 독립 실행형 미디어에는 운영 체제와 부팅 이미지, 운영 체제 이미지, 장치 드라이버 등의 다른 모든 필수 콘텐츠를 설치하는 단계를 자동화하는 작업 순서가 포함됩니다. 독립 실행형 미디어에는 운영 체제 배포에 필요한 모든 항목이 저장되므로 이 미디어에 필요한 디스크 공간은 다른 미디어 유형에 필요한 디스크 공간보다 훨씬 더 큽니다. 중앙 관리 사이트에서 독립 실행형 미디어를 만들 때 클라이언트가 Active Directory에서 할당된 사이트 코드를 검색합니다. 자식 사이트에 생성된 독립 실행형 미디어에서 자동으로 해당 사이트의 사이트 코드를 클라이언트에 할당합니다.  
+독립 실행형 미디어에는 운영 체제와 부팅 이미지, 운영 체제 이미지, 장치 드라이버 등의 다른 모든 필수 콘텐츠를 설치하는 단계를 자동화하는 작업 순서가 포함됩니다. 독립 실행형 미디어에는 운영 체제 배포에 필요한 모든 항목이 저장되므로 이 미디어에 필요한 디스크 공간은 다른 미디어 유형에 필요한 디스크 공간보다 훨씬 더 큽니다. 중앙 관리 사이트에서 독립 실행형 미디어를 만들 때 클라이언트가 Active Directory에서 할당된 사이트 코드를 검색합니다. 자식 사이트에 생성된 독립 실행형 미디어에서 자동으로 해당 사이트의 사이트 코드를 클라이언트에 할당합니다.  
 
 ##  <a name="BKMK_CreateStandAloneMedia"></a> 독립 실행형 미디어 만들기  
- 작업 순서 미디어 만들기 마법사를 사용하여 독립 실행형 미디어를 만들기 전에 다음 조건을 충족해야 합니다.  
+작업 순서 미디어 만들기 마법사를 사용하여 독립 실행형 미디어를 만들기 전에 다음 조건을 충족해야 합니다.  
 
 ### <a name="create-a-task-sequence-to-deploy-an-operating-system"></a>운영 체제를 배포하는 작업 순서 만들기
 독립 실행형 미디어의 일부로 운영 체제를 배포하는 작업 순서를 지정해야 합니다. 새 작업 순서를 만드는 단계는 [System Center Configuration Manager에서 운영 체제를 설치하는 작업 순서 만들기](create-a-task-sequence-to-install-an-operating-system.md)를 참조하세요.
@@ -54,10 +54,19 @@ Configuration Manager의 독립 실행형 미디어에는 Configuration Manager 
 - 동적 패키지는 패키지 설치 작업을 통해 설치됩니다.
 - 동적 응용 프로그램은 응용 프로그램 설치 작업을 통해 설치됩니다.
 
-운영 체제를 배포하는 작업 순서에 [패키지 설치](../../osd/understand/task-sequence-steps.md#BKMK_InstallPackage) 단계가 포함되어 있고 중앙 관리 사이트에서 독립 실행형 미디어를 만들면 오류가 발생할 수 있습니다. 중앙 관리 사이트에는 작업 순서를 실행하는 동안 소프트웨어 배포 에이전트를 사용하도록 설정하는 데 필요한 필수 클라이언트 구성 정책이 없습니다. CreateTsMedia.log 파일에 다음 오류가 나타날 수 있습니다.<br /><br /> "WMI 메서드 SMS_TaskSequencePackage.GetClientConfigPolicies가 실패했습니다(0x80041001)."<br /><br /> **패키지 설치** 단계가 포함된 독립 실행형 미디어를 사용할 경우 소프트웨어 배포 에이전트를 사용하도록 설정된 기본 사이트에 독립 실행형 미디어를 만들거나 작업 순서에서 [Windows 및 ConfigMgr 설치](../understand/task-sequence-steps.md#BKMK_SetupWindowsandConfigMgr) 단계와 첫 번째 **패키지 설치** 단계 사이에 [명령줄 실행](../understand/task-sequence-steps.md#BKMK_RunCommandLine) 단계를 추가해야 합니다. **명령줄 실행** 단계에서는 WMIC 명령을 실행하여 첫 번째 패키지 설치 단계가 실행되기 전에 소프트웨어 배포 에이전트를 사용하도록 설정합니다. **명령줄 실행** 작업 순서 단계에서 다음을 사용할 수 있습니다.<br /><br />
-```
-WMIC /namespace:\\\root\ccm\policy\machine\requestedconfig path ccm_SoftwareDistributionClientConfig CREATE ComponentName="Enable SWDist", Enabled="true", LockSettings="TRUE", PolicySource="local", PolicyVersion="1.0", SiteSettingsKey="1" /NOINTERACTIVE
-```
+> [!NOTE]    
+> 운영 체제를 배포하는 작업 순서에 [패키지 설치](../../osd/understand/task-sequence-steps.md#BKMK_InstallPackage) 단계가 포함되어 있고 중앙 관리 사이트에서 독립 실행형 미디어를 만들면 오류가 발생할 수 있습니다. 중앙 관리 사이트에는 작업 순서를 실행하는 동안 소프트웨어 배포 에이전트를 사용하도록 설정하는 데 필요한 필수 클라이언트 구성 정책이 없습니다. CreateTsMedia.log 파일에 다음 오류가 나타날 수 있습니다.    
+>     
+> "WMI 메서드 SMS_TaskSequencePackage.GetClientConfigPolicies가 실패했습니다(0x80041001)."    
+> 
+> **패키지 설치** 단계가 포함된 독립 실행형 미디어를 사용할 경우 소프트웨어 배포 에이전트를 사용하도록 설정된 기본 사이트에 독립 실행형 미디어를 만들거나 작업 순서에서 [Windows 및 ConfigMgr 설치](../understand/task-sequence-steps.md#BKMK_SetupWindowsandConfigMgr) 단계와 첫 번째 **패키지 설치** 단계 사이에 [명령줄 실행](../understand/task-sequence-steps.md#BKMK_RunCommandLine) 단계를 추가해야 합니다. **명령줄 실행** 단계에서는 WMIC 명령을 실행하여 첫 번째 패키지 설치 단계가 실행되기 전에 소프트웨어 배포 에이전트를 사용하도록 설정합니다. **명령줄 실행** 작업 순서 단계에서 다음을 사용할 수 있습니다.    
+>    
+> *WMIC /namespace:\\\root\ccm\policy\machine\requestedconfig path ccm_SoftwareDistributionClientConfig CREATE ComponentName="Enable SWDist", Enabled="true", LockSettings="TRUE", PolicySource="local", PolicyVersion="1.0", SiteSettingsKey="1" /NOINTERACTIVE*
+
+
+> [!IMPORTANT]    
+> 운영 체제 작업 순서에서 **Windows 및 ConfigMgr 설치** 작업 순서 단계를 사용할 때는 독립 실행형 미디어에 대해 **사용 가능한 경우 사전 프로덕션 클라이언트 패키지 사용** 설정을 선택하지 마세요. 이 설정을 선택했으며 사전 프로덕션 클라이언트 패키지를 사용할 수 있는 경우 독립 실행형 미디어에서 사용됩니다. 이것은 지원되지 않습니다. 이 설정에 대한 자세한 내용은 [Windows 및 ConfigMgr 설치](/sccm/osd/understand/task-sequence-steps#BKMK_SetupWindowsandConfigMgr)를 참조하세요.
+
 
 ### <a name="distribute-all-content-associated-with-the-task-sequence"></a>작업 순서와 관련된 모든 콘텐츠 배포
 작업 순서에 필요한 모든 콘텐츠를 하나 이상의 배포 지점에 배포해야 합니다. 여기에는 부팅 이미지, 운영 체제 이미지 및 관련된 기타 파일이 포함됩니다. 마법사가 독립 실행형 미디어를 만들 때 배포 지점에서 정보를 수집합니다. 해당 배포 지점의 콘텐츠 라이브러리에 대한 **읽기** 권한이 있어야 합니다.  자세한 내용은 [작업 순서에서 참조되는 콘텐츠 배포](manage-task-sequences-to-automate-tasks.md#BKMK_DistributeTS)를 참조하세요.

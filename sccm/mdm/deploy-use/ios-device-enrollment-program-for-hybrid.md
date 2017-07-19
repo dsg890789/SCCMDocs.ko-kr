@@ -16,10 +16,10 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: ae60eb25383f4bd07faaa1265185a471ee79b1e9
-ms.openlocfilehash: 5b5eadd7b4026eae59acceaef43cdacd7a33d3ac
+ms.sourcegitcommit: 255249332350843ba0b78128423482e260974521
+ms.openlocfilehash: 1ea0360b5b182b92e11ea9dfe78b5a3552ae4845
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="ios-device-enrollment-program-dep-enrollment-for-hybrid-deployments-with-configuration-manager"></a>Configuration Manager에서의 하이브리드 배포를 위한 iOS DEP(장치 등록 프로그램) 등록
@@ -123,6 +123,9 @@ ms.lasthandoff: 05/17/2017
 
 3.  **DEP 관리 장치 동기화**   
     **자산 및 준수** 작업 영역에서 **회사가 소유한 모든 장치** > **미리 선언된 장치**로 이동합니다. **홈** 탭에서 **DEP 동기화**를 클릭합니다. 동기화 요청이 Apple에 전송됩니다. 동기화가 완료되고 나면 DEP에서 관리하는 장치가 표시됩니다.
+
+> [!NOTE]
+> 하이브리드 구성에서 Configuration Manager의 **DEP 동기화**를 클릭하여 DEP 동기화 작업이 수동으로 트리거됩니다.
 
 4.  **DEP 프로필 할당**<br>**자산 및 준수** 작업 영역에서 **회사가 소유한 모든 장치** > **iOS** > **등록 프로필**로 이동합니다. DEP 등록 프로필을 선택한 다음 **홈** 탭에서 **장치에 할당**을 클릭합니다. 이 등록 프로필을 사용할 장치를 선택하고 **추가**를 클릭한 다음 **확인**을 클릭합니다.   
      ![iOS 장치에 DEP 프로필 할당 스크린샷](../media/dep-assign-profile.png)

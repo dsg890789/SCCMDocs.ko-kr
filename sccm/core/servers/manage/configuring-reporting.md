@@ -15,10 +15,11 @@ caps.latest.revision: 6
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
-ms.openlocfilehash: aed95333b6509b0aa7061f23969381f1ce8aff7f
-ms.lasthandoff: 12/16/2016
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f62d969dd49fb00b688602128df74b28ff551135
+ms.openlocfilehash: 7ae6bac23e585d6f61aff0f3155d050f1b537620
+ms.contentlocale: ko-kr
+ms.lasthandoff: 06/07/2017
 
 
 ---
@@ -80,8 +81,11 @@ System Center Configuration Manager 콘솔에서 보고서를 만들고 수정�
 > [!IMPORTANT]  
 >  보고 서비스 지점을 설치할 사이트를 선택할 때 보고서에 액세스할 사용자가 보고 서비스 지점이 설치되는 사이트와 동일한 보안 범위에 있어야 한다는 점에 유의하십시오.  
 
-> [!IMPORTANT]  
+> [!NOTE]  
 >  사이트 시스템에 보고 서비스 지점을 설치한 후에는 보고 서버의 URL을 변경하지 마십시오. 예를 들어 보고 서비스 지점을 만든 후에 Reporting Services Configuration Manager에서 보고서 서버의 URL을 수정할 경우 Configuration Manager 콘솔이 이전 URL을 계속 사용하므로 콘솔에서 보고서를 실행하거나 편집하거나 만들 수 없습니다. URL 보고서 서버를 변경해야 하는 경우 보고 서비스 지점을 제거하고 URL을 변경한 후에 보고 서비스 지점을 다시 설치하십시오.  
+
+> [!IMPORTANT]    
+> 보고 서비스 지점을 설치할 때 Reporting Services 지점 계정을 지정해야 합니다. 나중에 다른 도메인의 사용자가 보고서를 실행하려고 할 경우 도메인 간에 양방향 트러스트가 설정되지 않았으면 보고서를 실행할 수 없습니다.
 
  보고 서비스 지점을 설치하려면 다음 절차를 따르십시오.  
 
@@ -127,7 +131,7 @@ System Center Configuration Manager 콘솔에서 보고서를 만들고 수정�
 
     -   **보고 서비스 지점 계정**: **설정**을 클릭한 후에 보고 서비스 지점의 SQL Server Reporting Services가 보고서에 표시되는 데이터를 검색하기 위해 Configuration Manager 사이트 데이터베이스에 연결할 때 사용할 계정을 선택합니다. **기존 계정**을 선택하여 이전에 Configuration Manager 계정으로 구성된 Windows 사용자 계정을 지정하거나 **새 계정**을 선택하여 현재 Configuration Manager 계정으로 구성되어 있지 않은 Windows 사용자 계정을 지정합니다. Configuration Manager에서는 사이트 데이터베이스에 대해 지정된 사용자 액세스 권한을 자동으로 부여합니다. 이 사용자는 **관리** 작업 영역에 있는 **보안** 노드의 **계정** 하위 폴더에 **ConfigMgr 보고 서비스 지점** 계정 이름으로 표시됩니다.  
 
-         Reporting Services를 실행하는 계정은 도메인 로컬 보안 그룹인 **Windows Authorization Access Group**에 속해 있어야 하며, **tokenGroupsGlobalAndUniversal 읽기** 권한이 **허용**으로 설정되어야 합니다.  
+         Reporting Services를 실행하는 계정은 도메인 로컬 보안 그룹인 **Windows Authorization Access Group**에 속해 있어야 하며, **tokenGroupsGlobalAndUniversal 읽기** 권한이 **허용**으로 설정되어야 합니다. 보고서를 성공적으로 실행하려면 Reporting Services 지점 계정과는 다른 도메인에서 사용자에 대해 양방향 트러스트 관계가 설정되어 있어야 합니다.
 
          지정된 Windows 사용자 계정과 암호는 암호화되어 보고 서비스 데이터베이스에 저장됩니다. 보고 서비스는 이 계정과 암호를 사용하여 사이트 데이터베이스에서 보고서에 대한 데이터를 검색합니다.  
 

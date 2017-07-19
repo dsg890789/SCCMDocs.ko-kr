@@ -15,9 +15,11 @@ caps.latest.revision: 5
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
-ms.openlocfilehash: f5a58ba9ecd9b0998c2859b6d3f45e493d7ef3cb
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f62d969dd49fb00b688602128df74b28ff551135
+ms.openlocfilehash: df572cd0c64c82e25164430a53e1b893b3ba3cf5
+ms.contentlocale: ko-kr
+ms.lasthandoff: 06/07/2017
 
 
 ---
@@ -27,10 +29,10 @@ ms.openlocfilehash: f5a58ba9ecd9b0998c2859b6d3f45e493d7ef3cb
 
 System Center Configuration Manager에서 보고용 인프라가 준비된 후 보고서 및 보고서 구독을 관리하기 위해 일반적으로 수행하는 작업이 여러 가지가 있습니다.  
 
-##  <a name="a-namebkmkmanagereportsa-manage-configuration-manager-reports"></a><a name="BKMK_ManageReports"></a> Configuration Manager 보고서 관리  
+##  <a name="BKMK_ManageReports"></a> Configuration Manager 보고서 관리  
  Configuration Manager는 조직 내의 사용자, 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 업데이트, 응용 프로그램, 사이트 상태, 기타 Configuration Manager 작업 등에 대한 정보를 수집, 구성 및 제공하는 미리 정의된 보고서를 400개 이상 제공합니다. 미리 정의된 보고서는 그대로 사용할 수도 있고 요구 사항에 맞게 수정할 수도 있습니다. 또한 요구 사항에 따라 사용자 지정 모델 기반 보고서 및 SQL 기반 보고서를 만들 수도 있습니다. 다음 섹션을 사용하여 Configuration Manager 보고서를 관리할 수 있습니다.  
 
-###  <a name="a-namebkmkrunreporta-run-a-configuration-manager-report"></a><a name="BKMK_RunReport"></a> Configuration Manager 보고서 실행  
+###  <a name="BKMK_RunReport"></a> Configuration Manager 보고서 실행  
  보고서 구성 관리자에서 SQL Server Reporting Services에 저장 되며 및 보고서에서 렌더링 된 데이터는 Configuration Manager 사이트 데이터베이스에서 검색 됩니다. Configuration Manager 콘솔에서 또는 웹 브라우저에서 액세스 하는 보고서 관리자를 사용 하 여 보고서에 액세스할 수 있습니다. SQL Server Reporting Services를 실행하는 컴퓨터에 액세스할 수 있는 모든 컴퓨터에서 보고서를 열 수 있습니다. 단, 보고서를 볼 수 있는 충분한 권한이 있어야 합니다. 보고서를 실행하면 보고서 제목, 설명, 범주 등이 해당 로컬 운영 체제의 언어로 표시됩니다.  
 
 > [!NOTE]  
@@ -38,6 +40,9 @@ System Center Configuration Manager에서 보고용 인프라가 준비된 후 �
 
 > [!WARNING]  
 >  보고서를 실행하려면 **사이트** 에 대해 **읽기** 권한뿐 아니라 해당 개체에 구성된 **보고서 실행** 권한이 있어야 합니다.  
+
+> [!IMPORTANT]    
+> 보고서를 성공적으로 실행하려면 Reporting Services 지점 계정과는 다른 도메인에서 사용자에 대해 양방향 트러스트 관계가 설정되어 있어야 합니다.
 
 > [!NOTE]  
 >  보고서 관리자는 웹 기반의 보고서 액세스 및 관리 도구이며, 이를 사용하여 HTTP 연결을 통해 원격 위치에서 단일 보고서 서버 인스턴스를 관리할 수 있습니다. 보고서 보기, 보고서 속성 수정, 연결된 보고서 구독 관리 등의 운영 작업을 수행하는 데 보고서 관리자를 사용할 수 있습니다. 이 항목에서는 보고서 관리자에서 보고서를 확인하고 보고서 속성을 수정하는 단계를 설명하며, 보고서 관리자에 제공되는 기타 옵션에 대한 자세한 내용은 SQL Server 2008 온라인 설명서의 [보고서 관리자](http://go.microsoft.com/fwlink/p/?LinkId=224916) 를 참조하십시오.  
@@ -73,7 +78,7 @@ System Center Configuration Manager에서 보고용 인프라가 준비된 후 �
 
 4.  필수 매개 변수가 있는 경우 매개 변수를 지정하고 **보고서 보기**를 클릭합니다.  
 
-###  <a name="a-namebkmkmodifyreportpropertiesa-modify-the-properties-for-a-configuration-manager-report"></a><a name="BKMK_ModifyReportProperties"></a> Configuration Manager 보고서의 속성 수정  
+###  <a name="BKMK_ModifyReportProperties"></a> Configuration Manager 보고서의 속성 수정  
  Configuration Manager 콘솔에서 보고서 이름, 설명 등의 보고서 속성을 볼 수는 있지만 보고서 속성을 변경하려면 보고서 관리자를 사용해야 합니다. 다음 절차를 사용하여 Configuration Manager 보고서의 속성을 수정합니다.  
 
 #### <a name="to-modify-report-properties-in-report-manager"></a>보고서 관리자에서 보고서 속성을 수정하려면  
@@ -91,7 +96,7 @@ System Center Configuration Manager에서 보고용 인프라가 준비된 후 �
 
 5.  마쳤으면 **적용**을 클릭합니다. 보고서 속성은 보고서 서버에 저장되며 Configuration Manager 콘솔은 보고서의 업데이트된 보고서 속성을 검색합니다.  
 
-###  <a name="a-namebkmkeditreporta-edit-a-configuration-manager-report"></a><a name="BKMK_EditReport"></a> Configuration Manager 보고서 편집  
+###  <a name="BKMK_EditReport"></a> Configuration Manager 보고서 편집  
  기존 Configuration Manager 보고서에서 필요한 정보가 검색되지 않거나 원하는 레이아웃이나 디자인을 제공하지 않는 경우 보고서 작성기에서 보고서를 편집할 수 있습니다.  
 
 > [!NOTE]  
@@ -115,7 +120,7 @@ System Center Configuration Manager에서 보고용 인프라가 준비된 후 �
 
 4.  보고서 작성기에서 적합한 보고서 설정을 수정한 다음 **저장** 을 클릭하여 보고서를 보고서 서버에 저장합니다.  
 
-###  <a name="a-namebkmkcreatemodelbasedreporta-create-a-model-based-report"></a><a name="BKMK_CreateModelBasedReport"></a> 모델 기반 보고서 만들기  
+###  <a name="BKMK_CreateModelBasedReport"></a> 모델 기반 보고서 만들기  
  모델 기반 보고서를 사용하면 보고서에 포함하려는 항목을 대화식으로 선택할 수 있습니다. 보고서 모델을 만드는 방법에 대한 자세한 내용은 [SQL Server Reporting Services에서 System Center Configuration Manager에 대한 사용자 지정 보고서 모델 만들기](creating-custom-report-models-in-sql-server-reporting-services.md)를 참조하세요.  
 
 > [!IMPORTANT]  
@@ -157,7 +162,7 @@ System Center Configuration Manager에서 보고용 인프라가 준비된 후 �
 
 10. **저장** 을 클릭하여 보고서를 보고서 서버에 저장합니다. **모니터링** 작업 영역의 **보고서** 노드에서 새 보고서를 실행하고 수정할 수 있습니다.  
 
-###  <a name="a-namebkmkcreatesqlbasedreporta-create-a-sql-based-report"></a><a name="BKMK_CreateSQLBasedReport"></a> SQL 기반 보고서 만들기  
+###  <a name="BKMK_CreateSQLBasedReport"></a> SQL 기반 보고서 만들기  
  SQL 기반 보고서를 사용하면 보고서 SQL 문을 기반으로 데이터를 검색할 수 있습니다.  
 
 > [!IMPORTANT]  
@@ -200,10 +205,10 @@ System Center Configuration Manager에서 보고용 인프라가 준비된 후 �
 
 9. **저장** 을 클릭하여 보고서를 보고서 서버에 저장합니다. **모니터링** 작업 영역의 **보고서** 노드에서 새 보고서를 실행할 수 있습니다.  
 
-##  <a name="a-namebkmkmanagereportsubscriptionsa-manage-report-subscriptions"></a><a name="BKMK_ManageReportSubscriptions"></a> 보고서 구독 관리  
+##  <a name="BKMK_ManageReportSubscriptions"></a> 보고서 구독 관리  
  SQL Server Reporting Services의 보고서 구독을 사용하면 예약된 간격으로 지정한 보고서를 전자 메일로 자동 배달하거나 파일 공유에 자동 배달하도록 구성할 수 있습니다. 보고서 구독을 구성하려면 System Center 2012 Configuration Manager의 **구독 만들기 마법사**를 사용합니다.  
 
-###  <a name="a-namebkmkreportsubscriptionfilesharea-create-a-report-subscription-to-deliver-a-report-to-a-file-share"></a><a name="BKMK_ReportSubscriptionFileShare"></a> 보고서를 파일 공유에 배달하는 보고서 구독 만들기  
+###  <a name="BKMK_ReportSubscriptionFileShare"></a> 보고서를 파일 공유에 배달하는 보고서 구독 만들기  
  파일 공유에 보고서를 제공하는 보고서 구독을 만드는 경우 보고서는 지정한 형식으로 지정한 파일 공유에 복사됩니다. 한 번에 한 보고서만 구독 및 배달 요청할 수 있습니다.  
 
  보고서 서버에서 호스트 및 관리되는 보고서와는 달리, 공유 폴더에 배달되는 보고서는 정적 파일입니다. 보고서에 정의된 대화식 기능은 파일 시스템에서 파일로 저장된 보고서에서는 작동하지 않습니다. 대화식 기능은 정적 요소로 나타납니다. 보고서에 차트가 포함되어 있는 경우 차트의 기본 표현이 사용됩니다. 다른 보고서로 연결된 보고서의 경우 링크가 정적 텍스트로 렌더링됩니다. 배달된 보고서에 대화식 기능을 유지하려면 전자 메일 배달을 대신 사용하십시오. 메일 배달에 대한 자세한 내용은 이 항목 뒷부분에서 [보고서를 메일로 배달하는 보고서 구독 만들기](#BKMK_ReportSubscriptionEmail) 섹션을 참조하세요.  
@@ -284,7 +289,7 @@ System Center Configuration Manager에서 보고용 인프라가 준비된 후 �
 
 8.  **완료** 페이지에서 **닫기** 를 클릭하여 마법사를 종료합니다. 보고서 구독이 성공적으로 만들어졌는지 확인합니다. **모니터링** 작업 영역의 **보고** 에 있는 **구독** 노드에서 보고서 구독을 확인하고 수정할 수 있습니다.  
 
-###  <a name="a-namebkmkreportsubscriptionemaila-create-a-report-subscription-to-deliver-a-report-by-email"></a><a name="BKMK_ReportSubscriptionEmail"></a> 보고서를 메일로 배달하는 보고서 구독 만들기  
+###  <a name="BKMK_ReportSubscriptionEmail"></a> 보고서를 메일로 배달하는 보고서 구독 만들기  
  전자 메일로 보고서를 배달하는 보고서 구독을 만드는 경우 전자 메일은 구성한 받는 사람에게 전송되고 보고서는 첨부 파일로 포함됩니다. 보고서 서버는 전자 메일 주소의 유효성을 검증하지 않으며, 전자 메일 서버에서 전자 메일 주소를 가져오지 않습니다. 사용하려는 전자 메일 주소를 사전에 알고 있어야 합니다. 기본적으로, 조직 내/외부의 유효한 전자 메일 계정으로 보고서를 보낼 수 있습니다. 다음 전자 메일 배달 옵션 중 하나 또는 둘 모두를 선택할 수 있습니다.  
 
 -   생성된 보고서에 대한 알림과 하이퍼링크를 보냅니다.  
@@ -358,9 +363,4 @@ System Center Configuration Manager에서 보고용 인프라가 준비된 후 �
 -   **요약** 페이지에서 보고서 구독 설정을 검토합니다. 설정을 변경하려면 **이전** 을 클릭하고 보고서 구독을 만들려면 **다음** 을 클릭합니다.  
 
 -   **완료** 페이지에서 **닫기** 를 클릭하여 마법사를 종료합니다. 보고서 구독이 성공적으로 만들어졌는지 확인합니다. **모니터링** 작업 영역의 **보고** 에 있는 **구독** 노드에서 보고서 구독을 확인하고 수정할 수 있습니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

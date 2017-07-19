@@ -1,7 +1,7 @@
 ---
 title: "클라우드 관리 게이트웨이 계획 | Microsoft Docs"
 description: 
-ms.date: 05/16/2017
+ms.date: 06/07/2017
 ms.prod: configuration-manager
 ms.technology:
 - configmgr-client
@@ -10,10 +10,10 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: ae60eb25383f4bd07faaa1265185a471ee79b1e9
-ms.openlocfilehash: b1295891a5567e64b901c79100c2971e526dc874
+ms.sourcegitcommit: c6ee0ed635ab81b5e454e3cd85637ff3e20dbb34
+ms.openlocfilehash: a7380ae781447880ffcba0778694ea62e10c4889
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
@@ -22,6 +22,9 @@ ms.lasthandoff: 05/17/2017
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 버전 1610부터 클라우드 관리 게이트웨이는 인터넷에서 Configuration Manager 클라이언트를 관리할 수 있는 간단한 방법을 제공합니다. 클라우드 관리 게이트웨이 서비스의 경우 Microsoft Azure에 배포되고 Azure 구독이 필요합니다. 이 서비스는 클라우드 관리 게이트웨이 연결점이라는 새 역할을 사용하여 온-프레미스 Configuration Manager 인프라에 연결합니다. 배포되고 구성된 클라이언트는 내부 개인 네트워크 또는 인터넷에 연결되었는지 여부에 관계없이 온-프레미스 Configuration Manager 사이트 시스템 역할에 액세스할 수 있습니다.
+
+> [!TIP]  
+> 버전 1610에 도입된 클라우드 관리 게이트웨이는 시험판 기능입니다. 사용하도록 설정하려면 [업데이트에서 시험판 기능 사용](/sccm/core/servers/manage/pre-release-features)을 참조하세요.
 
 Configuration Manager 콘솔을 사용하여 Azure에 서비스를 배포하고 클라우드 관리 게이트웨이 연결점 역할을 추가하고 클라우드 관리 게이트웨이 트래픽을 허용하도록 사이트 시스템 역할을 구성합니다. 클라우드 관리 게이트웨이는 현재 관리 지점 및 소프트웨어 업데이트 지점 역할만 지원합니다.
 
@@ -93,11 +96,6 @@ Configuration Manager 콘솔을 사용하여 Azure에 서비스를 배포하고 
 
     - 자세한 내용은 [클라우드 기반 배포](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point#cost-of-using-cloud-based-distribution) 사용에 대한 비용 계획을 참조하세요.
 
-## <a name="next-steps"></a>다음 단계
-
-[클라우드 관리 게이트웨이 설정](setup-cloud-management-gateway.md)
-
-
 ## <a name="frequently-asked-questions-about-the-cloud-management-gateway-cmg"></a>CMG(클라우드 관리 게이트웨이)에 대한 FAQ(질문과 대답)
 
 ### <a name="why-use-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이를 사용하는 이유
@@ -122,7 +120,7 @@ Configuration Manager 콘솔을 사용하여 Azure에 서비스를 배포하고 
 
 CMG를 보호하려면 다음 인증서가 필요합니다.
 
-- **관리 인증서** - 자체 서명된 인증서를 포함하는 어떤 인증서도 될 수 있습니다. Azure AD에 업로드된 공용 인증서 또는 Configuration Manager로 가져온 [개인 키와 PFX](/sccm/mdm/deploy-use/create-pfx-certificate-profiles)를 사용하여 Azure AD에서 인증을 받을 수 있습니다. 
+- **관리 인증서** - 자체 서명된 인증서를 포함하는 어떤 인증서도 될 수 있습니다. Azure AD에 업로드된 공용 인증서 또는 Configuration Manager로 가져온 [개인 키와 PFX](/sccm/mdm/deploy-use/create-pfx-certificate-profiles)를 사용하여 Azure AD에서 인증을 받을 수 있습니다.
 - **웹 서비스 인증서** - 공용 CA 인증서를 사용하여 클라이언트의 네이티브 신뢰를 얻는 것이 좋습니다. 공용 DNS 등록자에서 CName을 만들 수 있어야 합니다. 와일드카드 인증서는 지원되지 않습니다.
 - **CMG에 업로드된 루트/SubCA 인증서** - CMG는 클라이언트 PKI 인증서에 대해 전체 체인 유효성 검사를 수행해야 합니다. 클라이언트 PKI 인증서를 발급하기 위해 엔터프라이즈 CA를 사용하며 해당 루트 또는 하위 CA를 인터넷에서 사용할 수 없는 경우 CMG로 업로드해야 합니다.
 
@@ -159,15 +157,17 @@ CMG는 다음과 같은 방법으로 보안을 보장하는 데 도움이 됩니
 
 - 관리 지점과 같이 게시하는 끝점 Configuration Manager 클라이언트 연결 역할과 클라이언트 요청을 처리하기 위한 IIS의 소프트웨어 업데이트 지점 호스트 끝점을 보호합니다. CMG에 게시된 모든 끝점에는 URL 매핑이 있습니다.
 외부 URL은 클라이언트에서 CMG와 통신하기 위해 사용합니다.
-내부 URL은 내부 서버에 요청을 전달하는 데 사용되는 CMG 연결 지점입니다. 
+내부 URL은 내부 서버에 요청을 전달하는 데 사용되는 CMG 연결 지점입니다.
 
 #### <a name="example"></a>예:
 관리 지점에서 CMG 트래픽을 사용하도록 설정하면 Configuration Manager는 ccm_system, ccm_incoming, sms_mp 같은 각 관리 지점 서버에 대해 내부적으로 URL 매핑 집합을 만듭니다.
-관리 지점 ccm_system 끝점에 대한 외부 URL은 **https://<CMG service name>/CCM_Proxy_MutualAuth/<MP Role ID>/CCM_System**과 같습니다. URL은 각 관리 지점에 대해 고유합니다. 그런 후 Configuration Manager 클라이언트 **<CMG service name>/CCM_Proxy_MutualAuth/<MP Role ID>** 같은 CMG 지원 MP 이름을 인터넷 관리 지점 목록에 추가합니다. 게시된 모든 외부 URL은 CMG에 자동으로 업로드되고, CMG에서 URL 필터링을 수행할 수 있게 됩니다. 모든 URL 매핑은 CMG 연결 지점에 복제되므로 외부 URL을 요청하는 클라이언트에 따라 내부 서버에 전달될 수 있습니다.
+관리 지점 ccm_system 끝점에 대한 외부 URL은 **https://<CMG service name>/CCM_Proxy_MutualAuth/<MP Role ID>/CCM_System**과 같습니다.
+URL은 각 관리 지점에 대해 고유합니다. 그런 후 Configuration Manager 클라이언트 **<CMG service name>/CCM_Proxy_MutualAuth/<MP Role ID>** 같은 CMG 지원 MP 이름을 인터넷 관리 지점 목록에 추가합니다.
+게시된 모든 외부 URL은 CMG에 자동으로 업로드되고, CMG에서 URL 필터링을 수행할 수 있게 됩니다. 모든 URL 매핑은 CMG 연결 지점에 복제되므로 외부 URL을 요청하는 클라이언트에 따라 내부 서버에 전달될 수 있습니다.
 
-### <a name="what-ports-are-used-by-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이에 사용되는 포트 
+### <a name="what-ports-are-used-by-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이에 사용되는 포트
 
-- 온-프레미스 네트워크에 필요한 인바운드 포트는 없습니다. CMG를 배포하면 CMG 집합이 자동으로 만들어집니다. 
+- 온-프레미스 네트워크에 필요한 인바운드 포트는 없습니다. CMG를 배포하면 CMG 집합이 자동으로 만들어집니다.
 - 443 외에, CMG 연결 지점에 일부 아웃바운드 포트가 필요합니다.
 
 |||||
@@ -182,7 +182,7 @@ CMG는 다음과 같은 방법으로 보안을 보장하는 데 도움이 됩니
 
 - 가능한 경우 동일한 네트워크 영역에 CMG, CMG 연결 지점 및 Configuration Manager 사이트 서버를 구성하여 대기 시간을 줄입니다.
 - 현재 Configuration Manager 클라이언트와 CMG 간의 연결은 영역을 인식하지 않습니다.
-- 고가용성을 확보하려면 사이트당 CMG의 가상 인스턴스 2개 이상과 CMG 연결 지점 2개 이상을 유지하는 것이 좋습니다. 
+- 고가용성을 확보하려면 사이트당 CMG의 가상 인스턴스 2개 이상과 CMG 연결 지점 2개 이상을 유지하는 것이 좋습니다.
 - VM 인스턴스를 더 추가하여 더 많은 클라이언트를 지원하도록 CMG를 확장할 수 있습니다. Azure AD 부하 분산 장치를 통해 부하가 분산됩니다.
 - 부하를 분산하기 위해 CMG 연결 지점을 추가로 만듭니다. CMG는 연결하는 CMG 연결 지점으로 트래픽을 ‘라운드 로빈’합니다.
 - CMG VM 인스턴스당 지원 클라이언트 수는 1702 릴리스에서 6,000입니다. CMG 채널 부하가 높은 경우 요청은 계속 처리되지만 평소보다 오래 걸릴 수 있습니다.
@@ -195,4 +195,7 @@ CMG는 다음과 같은 방법으로 보안을 보장하는 데 도움이 됩니
 
 모든 CMG 관련 로그 파일 목록을 보려면 [Configuration Manager의 로그 파일](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files#cloud-management-gateway)을 참조하세요.
 
+## <a name="next-steps"></a>다음 단계
+
+[클라우드 관리 게이트웨이 설정](setup-cloud-management-gateway.md)
 

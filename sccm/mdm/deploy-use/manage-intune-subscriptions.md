@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager와 연결된 Intune 구독 관리 | Microsoft Docs"
 description: "System Center Configuration Manager와 연결된 Intune 구독 관리"
 ms.custom: na
-ms.date: 03/05/2017
+ms.date: 06/02/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,10 +17,10 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 2e0b3cd1070d0f8adb1219acd33c3126d2758a49
+ms.sourcegitcommit: 662901e850566756759fcfc61c58f3c0e56bc5aa
+ms.openlocfilehash: 2cb4d724c8b78657458a30c0bb020f67c6b62795
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/03/2017
 
 ---
 # <a name="manage-an-intune-subscription-associated-with-system-center-configuration-manager"></a>System Center Configuration Manager와 연결된 Intune 구독 관리
@@ -55,6 +55,5 @@ Microsoft Intune(평가판 구독 또는 유료 구독)을 Configuration Manager
 이제 새 서비스 연결 지점을 만들고, 새 Intune 구독을 Configuration Manager에 추가하고, Configuration Manager를 MDM 기관으로 설정할 수 있습니다.
 
 ## <a name="how-to-change-mdm-authority-to-intune"></a>MDM 기관을 Intune으로 변경하는 방법
-
-버전 1610부터 MDM 기관을 Configuration Manager에서 Intune으로 전환할 수 있습니다. 이 기능에 대한 정보는 곧 제공될 예정입니다.
+Configuration Manager 버전 1610 및 Microsoft Intune 버전 1705부터, Microsoft 지원에 문의하지 않고 기존의 관리 장치를 등록 취소했다가 다시 등록하지 않고도, MDM 기관을 변경할 수 있습니다. 자세한 내용은 [MDM 기관 변경](/sccm/mdm/deploy-use/change-mdm-authority)을 참조하세요.
 

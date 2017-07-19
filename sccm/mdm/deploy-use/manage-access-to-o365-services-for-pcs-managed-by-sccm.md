@@ -16,10 +16,10 @@ author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 23b1d24e908d04b64c3bbfa518793a44e696d468
-ms.openlocfilehash: e9028a54e538b4ec987dbaeb5ba1ee22ad091728
+ms.sourcegitcommit: c8717925dba42451b1e241a7c2f59e43896d7d99
+ms.openlocfilehash: e78fe989b7ff445717c8320c4eae3900eb46baea
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/19/2017
 
 
 ---
@@ -27,31 +27,25 @@ ms.lasthandoff: 05/17/2017
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-
-
- Configuration Manager 버전 1602부터 System Center Configuration Manager에서 관리되는 PC에 대한 조건부 액세스를 구성할 수 있습니다.  
+Configuration Manager 버전 1602부터 System Center Configuration Manager에서 관리되는 PC에 대한 조건부 액세스를 구성할 수 있습니다.  
 
 > [!IMPORTANT]  
->  이 기능은 업데이트 1602, 업데이트 1606 및 업데이트 1610에서 사용할 수 있는 시험판 기능입니다. 시험판 기능은 프로덕션 환경의 초기 테스트를 위한 제품에 포함되었지만 이러한 기능은 프로덕션 준비가 된 것으로 간주되지 않아야 합니다. 자세한 내용은 [업데이트에서 시험판 기능 사용](../../core/servers/manage/install-in-console-updates.md#bkmk_prerelease)을 참조하세요.
+> 이 기능은 업데이트 1602, 업데이트 1606 및 업데이트 1610에서 사용할 수 있는 시험판 기능입니다. 시험판 기능은 프로덕션 환경의 초기 테스트를 위한 제품에 포함되었지만 이러한 기능은 프로덕션 준비가 된 것으로 간주되지 않아야 합니다. 자세한 내용은 [업데이트에서 시험판 기능 사용](../../core/servers/manage/install-in-console-updates.md#bkmk_prerelease)을 참조하세요.
 > - 업데이트 1602를 설치하면 기능 유형이 시험판 버전임에도 출시됨으로 표시됩니다.
 > - 그런 다음 1602에서 1606으로 업데이트하면 기능 유형이 여전히 시험판인 경우에도 출시됨으로 표시됩니다.
 > - 버전 1511에서 1606으로 바로 업데이트하면 기능 유형이 시험판으로 표시됩니다.
 
- Intune을 통해 등록하여 관리하는 장치 또는 도메인에 가입되었으며 준수 여부가 평가되지 않은 PC에 대한 조건부 액세스를 구성하는 방법에 관한 자세한 내용을 원하는 경우 [System Center Configuration Manager에서 서비스에 대한 액세스 관리](../../protect/deploy-use/manage-access-to-services.md)를 참조하세요.  
-
+Intune을 통해 등록하여 관리하는 장치 또는 도메인에 가입되었으며 준수 여부가 평가되지 않은 PC에 대한 조건부 액세스를 구성하는 방법에 관한 자세한 내용을 원하는 경우 [System Center Configuration Manager에서 서비스에 대한 액세스 관리](../../protect/deploy-use/manage-access-to-services.md)를 참조하세요.
 
 ## <a name="supported-services"></a>지원되는 서비스  
 
--   Exchange Online  
-
--   SharePoint Online  
+-   Exchange Online
+-   SharePoint Online
 
 ## <a name="supported-pcs"></a>지원되는 PC  
 
--   Windows 7  
-
--   Windows 8.1  
-
+-   Windows 7
+-   Windows 8.1
 -   Windows 10 
 
 ## <a name="configure-conditional-access"></a>조건부 액세스 구성  
@@ -61,7 +55,7 @@ ms.lasthandoff: 05/17/2017
 
 -   ADFS 동기화 및 O365 구독. O365 구독은 Exchange Online 및 SharePoint Online을 설정하는 데 사용됩니다.  
 
--   Microsoft Intune 구독 Microsoft Intune 구독은 Configuration Manager 콘솔에서 구성해야 합니다. 이 경우 여전히 하이브리드 배포에 있어야 합니다.  
+-   Microsoft Intune 구독 Microsoft Intune 구독은 Configuration Manager 콘솔에서 구성해야 합니다. Intune 구독은 장치 준수 상태를 Azure Active Directory에 릴레이하고 사용자 사용을 허가하는 데 사용됩니다.  
 
  PC는 다음과 같은 요구 사항을 충족해야 합니다.  
 
@@ -146,6 +140,8 @@ ms.lasthandoff: 05/17/2017
 
 -   Windows 10 users may see multiple access failures when trying to reach O365 and/or SharePoint online resources. Note that conditional access is not fully supported for Windows 10.  
 --->
-### <a name="see-also"></a>참고 항목  
- [System Center Configuration Manager를 사용하여 데이터 및 사이트 인프라 보호](../../protect/understand/protect-data-and-site-infrastructure.md)
+## <a name="see-also"></a>참고 항목
+
+- [System Center Configuration Manager를 사용하여 데이터 및 사이트 인프라 보호](../../protect/understand/protect-data-and-site-infrastructure.md)
+- [Configuration Manager에 대한 조건부 액세스 문제 해결 순서도](https://gallery.technet.microsoft.com/Conditional-access-fd747c1a?redir=0)
 

@@ -2,7 +2,7 @@
 title: "데이터 웨어하우스 | Microsoft Docs"
 description: "System Center Configuration Manager에 대한 데이터 웨어하우스 서비스 지점 및 데이터베이스"
 ms.custom: na
-ms.date: 3/28/2017
+ms.date: 5/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 3c2a07f560e0aa3d2beb7cc50e71c98ac45c27e1
-ms.openlocfilehash: 9239f6e749c368835e8594ca2d07378d8555b99e
+ms.sourcegitcommit: dc221ddf547c43ab1f25ff83c3c9bb603297ece6
+ms.openlocfilehash: f11a53bbc85b40077b3909568db5ae5552b0456c
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/01/2017
 
 
 ---
@@ -51,6 +51,7 @@ ms.lasthandoff: 05/17/2017
 - 사이트 시스템 역할을 설치한 컴퓨터의 컴퓨터 계정은 데이터 웨어하우스 데이터베이스와 데이터를 동기화하는 데 사용됩니다. 이 계정에는 다음 권한이 있어야 합니다.  
   - 데이터 웨어하우스 데이터베이스를 호스트할 컴퓨터의 **Administrator**
   - 데이터 웨어하우스 데이터베이스에 대한 **DB_owner** 권한
+  - 최상위 계층 사이트의 사이트 데이터베이스에 대한 **DB_reader** 및 **실행** 권한
 -    데이터 웨어하우스 데이터베이스는 SQL Server 2012 이상의 기본 또는 명명된 인스턴스에서 지원됩니다. 버전은 Enterprise 또는 Datacenter여야 합니다.
   - SQL Server AlwaysOn 가용성 그룹: 이 구성은 지원되지 않습니다.
   - SQL Server 클러스터: SQL Server 장애 조치 클러스터는 지원되지 않습니다. SQL Server 장애 조치 클러스터에서는 데이터 웨어하우스 데이터베이스가 철저히 테스트되지 않았기 때문입니다.
