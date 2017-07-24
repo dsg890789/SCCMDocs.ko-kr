@@ -15,11 +15,11 @@ caps.latest.revision: 40
 author: Mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6f9e6e93fce95666503907010a5c253158c5de7c
-ms.openlocfilehash: b9777e8cfa63eda77512e4837de17b99c792a036
+ms.translationtype: HT
+ms.sourcegitcommit: 1035dbbf944a3a467d637a4a948a75b0946eb711
+ms.openlocfilehash: a9e03d4c5b290886bda87fae41e4df362eca1b71
 ms.contentlocale: ko-kr
-ms.lasthandoff: 07/07/2017
+ms.lasthandoff: 07/11/2017
 
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 장치 관리의 새로운 기능
@@ -37,6 +37,14 @@ ms.lasthandoff: 07/07/2017
 |**Microsoft Intune의 새로운 기능** | 일반적으로 이 범주 아래에 나열된 모든 기능은 Intune 서비스만 필요하고 Configuration Manager의 추가 기능이 필요하지 않으므로 System Center 2012 R2 Configuration Manager 릴리스를 비롯한 모든 Configuration Manager 릴리스에서 사용할 수 있어야 합니다.|
 |**Configuration Manager Technical Preview의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 Technical Preview 릴리스에서만 사용할 수 있습니다. 이러한 기능을 시험해보려면 기능 설명에 지정된 기술 미리 보기 버전을 설치해야 합니다. 자세한 내용은 [System Center Configuration Manager Technical Preview](../../core/get-started/technical-preview.md)를 참조하세요.|
 |**Configuration Manager(현재 분기)의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 버전의 Configuration Manager(현재 분기)(예: 버전 1511 또는 1602)에서만 사용할 수 있습니다. 하이브리드 배포에 이전 버전의 Configuration Manager를 사용하는 경우 기능 설명에 지정된 Configuration Manager(현재 분기) 버전으로 업그레이드해야 합니다. 자세한 내용은 [System Center Configuration Manager 업그레이드](../../core/servers/deploy/install/upgrade-to-configuration-manager.md)를 참조하세요.|
+
+## <a name="july-2017"></a>2017년 7월
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+- **Android 지원 버전에 대한 알림 추가됨**
+
+    Android 지원 버전에 대한 새 알림이 추가되었습니다. 자세한 내용은 [Android 4.3 이하에 대한 지원 종료](#notices)를 참조하세요.
 
 ## <a name="june-2017"></a>2017년 6월
 
@@ -58,9 +66,9 @@ ms.lasthandoff: 07/07/2017
 
   사용자의 의견에 따라 Android용 회사 포털 앱에는 장치에서 회사 포털 제거를 시작하기 위한 새 메뉴 작업이 추가되었습니다. 이 작업은 사용자가 장치에서 앱을 제거할 수 있도록 Intune 관리에서 장치를 제거합니다. 이러한 변경 내용은 [앱 UI의 새로운 기능](/intune/whats-new-app-ui) 페이지 및 [Android 최종 사용자 설명서](/intune-user-help/unenroll-your-device-from-intune-android)에서 확인할 수 있습니다.
 
-- **Windows 10 크리에이터 업데이트와의 앱 동기화 개선**
+- **Windows 10 크리에이터스 업데이트와의 앱 동기화 개선**
 
-  이제 Windows 10용 회사 포털 앱에서는 Windows 10 크리에이터 업데이트(버전 1703)와의 장치에 대한 앱 설치 요청 동기화가 자동으로 시작됩니다. 이렇게 하면 "동기화 보류 중" 상태일 때 앱 설치가 중단되는 문제가 줄어듭니다. 또한 사용자는 앱 내에서 수동으로 동기화를 시작할 수 있습니다. [앱 UI의 새로운 기능](/intune/whats-new-app-ui) 페이지에서 이러한 변경 내용을 확인할 수 있습니다.
+  이제 Windows 10용 회사 포털 앱에서는 Windows 10 크리에이터스 업데이트(버전 1703)와의 장치에 대한 앱 설치 요청 동기화가 자동으로 시작됩니다. 따라서 “동기화 보류 중” 상태일 때 앱 설치가 중단되는 문제가 줄어듭니다. 사용자는 앱 내에서 수동으로 동기화를 시작할 수도 있습니다. [앱 UI의 새로운 기능](/intune/whats-new-app-ui) 페이지에서 이러한 변경 내용을 확인할 수 있습니다.
 
 - **Windows 10 회사 포털에 대한 새로운 단계별 환경**
 
@@ -98,7 +106,7 @@ ms.lasthandoff: 07/07/2017
 
 - **Android 및 iOS 등록 제한** <!-- 1290826 -->      
 
-  관리자는 이제 사용자가 하이브리드 환경에서 개인 Android 또는 iOS 장치를 등록할 수 었도록 지정할 수 있습니다. 이렇게 하면 등록된 장치를 미리 선언된 회사 소유 장치 또는 장치 등록 프로그램에 등록된 iOS 장치으로 제한할 수 있습니다. 자세한 내용은 [Android 및 iOS 등록 제한](/sccm/core/get-started/capabilities-in-technical-preview-1706#android-and-ios-enrollment-restrictions)을 참조하세요.
+  관리자는 이제 사용자가 하이브리드 환경에서 개인 Android 또는 iOS 장치를 등록할 수 었도록 지정할 수 있습니다. 이렇게 하면 등록된 장치를 미리 선언된 회사 소유 장치 또는 장치 등록 프로그램에 등록된 iOS 장치로만 제한할 수 있습니다. 자세한 내용은 [Android 및 iOS 등록 제한](/sccm/core/get-started/capabilities-in-technical-preview-1706#android-and-ios-enrollment-restrictions)을 참조하세요.
 
 - **Entrust 인증 기관에 대한 지원** <!-- 1350740 -->     
 
@@ -127,9 +135,9 @@ ms.lasthandoff: 07/07/2017
 
   회사 포털에서는 EM + S에 있는 다른 앱과의 일관성을 향상시키기 위해 Android, iOS 및 Windows 버전의 앱에 대한 업데이트된 아이콘도 받습니다. 이러한 아이콘은 4월부터 5월 말까지 점진적으로 전체 플랫폼에 릴리스됩니다.
 
-- **Android 회사 포털이 로그인 진행 표시기**
+- **Android 회사 포털의 로그인 진행률 표시기**
 
-  Android 회사 포털 앱 업데이트에서는 사용자가 앱을 시작하거나 다시 시작할 때 로그인 진행 표시기를 보여줍니다. 사용자가 앱에 액세스하도록 허용하기 전에 표시기가 “연결 중...”, “로그인 중...”, “보안 요구 사항 확인 중...”과 같이 새로운 상태로 진행됩니다. [Intune 앱 UI의 새로운 기능 페이지](/intune/whats-new/whats-new-in-intune-app-ui.md)에서 Android용 회사 포털 앱의 새 화면이 표시됩니다.
+  Android 회사 포털 앱 업데이트에서는 사용자가 앱을 시작하거나 다시 시작할 때 로그인 진행률 표시기를 보여 줍니다. 사용자가 앱에 액세스하도록 허용하기 전에 표시기가 “연결 중...”, “로그인 중...”, “보안 요구 사항 확인 중...”과 같이 새로운 상태로 진행됩니다. [Intune 앱 UI의 새로운 기능 페이지](/intune/whats-new/whats-new-in-intune-app-ui.md)에서 Android용 회사 포털 앱의 새 화면이 표시됩니다.
 
 - **앱이 SharePoint Online에 액세스하지 못하게 차단**
 
@@ -159,7 +167,7 @@ ms.lasthandoff: 07/07/2017
 
 - **Windows 10 회사 포털용 서명 스크립트**
 
-  Windows 10 회사 포털 앱을 다운로드하고 사이드로드해야 하는 경우 이제 스크립트를 사용하여 조직의 앱 서명 프로세스를 간소화할 수 있습니다.  스크립트와 스크립트 사용 지침을 다운로드하려면 TechNet 갤러리의 [Microsoft Intune Signing Script for Windows 10 Company Portal](https://aka.ms/win10cpscript)(Windows 10 회사 포털용 Microsoft Intune 서명 스크립트)을 참조하세요. 이 알림에 대한 자세한 내용은 Intune 지원 팀 블로그에서 [Updating your Windows 10 Company Portal app](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/)(Windows 10 회사 포털 앱 업데이트)을 참조하세요.
+  Windows 10 회사 포털 앱을 다운로드하고 사이드로드해야 하는 경우 이제 스크립트를 사용하여 조직의 앱 서명 프로세스를 간소화할 수 있습니다.  스크립트와 스크립트 사용 지침을 다운로드하려면 TechNet 갤러리의 [Microsoft Intune Signing Script for Windows 10 Company Portal](https://aka.ms/win10cpscript)(Windows 10 회사 포털용 Microsoft Intune 서명 스크립트)을 참조하세요. 이 알림에 대한 자세한 내용은 Intune 지원 팀 블로그의 [Updating your Windows 10 Company Portal app](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/)(Windows 10 회사 포털 앱 업데이트)을 참조하세요.
 
 - **중국에 있는 Android 사용자에 대한 지원 향상**
 
@@ -190,7 +198,7 @@ ms.lasthandoff: 07/07/2017
 
    Technical Preview 1703부터 이제 다음과 같은 VPP(Volume Purchase Program) 시나리오가 지원됩니다.
 
-   - 장치 라이선스 - 장치 라이선스를 지원하고 장치 컬렉션에 배포되는 앱은 장치당 하나의 라이선스만 필요로 합니다.  이전에는 장치의 각 사용자에 대해 라이선스를 사용해야 했습니다. 자세한 내용은 [장치 컬렉션에 대량 구매한 iOS 앱 배포](/sccm/core/get-started/capabilities-in-technical-preview-1703#deploy-volume-purchased-ios-apps-to-device-collections)를 참조하세요.
+   - 장치 라이선스 - 장치 라이선스를 지원하고 장치 컬렉션에 배포되는 앱은 이제 장치당 라이선스가 하나만 있으면 됩니다.  이전에는 장치의 각 사용자에 대해 라이선스를 사용해야 했습니다. 자세한 내용은 [장치 컬렉션에 대량 구매한 iOS 앱 배포](/sccm/core/get-started/capabilities-in-technical-preview-1703#deploy-volume-purchased-ios-apps-to-device-collections)를 참조하세요.
    - 두 토큰이 모두 VPP 앱 관리에 사용되는 단일 하이브리드 테넌트에 여러 VPP 토큰을 사용합니다.
    - 비즈니스 토큰과 교육 토큰을 구분하는 기능으로 VPP 교육 토큰을 사용합니다.
 
@@ -207,7 +215,7 @@ Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추�
 
 - **Apple VPP(Volume Purchase Program)에 대한 향상된 지원**
 
-  - 이제 사용이 허가된 앱을 사용자 및 장치에 배포할 수 있습니다. 장치 라이선싱을 지원하는 앱 기능에 따라 앱 배포 시 다음과 같이 적절한 라이선스가 청구됩니다.
+  - 이제 사용이 허가된 앱을 사용자 및 장치에 배포할 수 있습니다. 장치 라이선스를 지원하는 앱 기능에 따라 앱 배포 시 다음과 같이 적절한 라이선스가 청구됩니다.
 
     | Configuration Manager 버전 | 앱이 장치 라이선싱을 지원하나요? | 배포 컬렉션 유형 | 청구된 라이선스 |
     |-|-|-|-|
@@ -226,13 +234,13 @@ Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추�
 
   대량 구매한 iOS 앱에 대한 자세한 내용은 [대량 구매한 iOS 앱 관리](/sccm/mdm/deploy-use/manage-volume-purchased-ios-apps)를 참조하세요.
 
-- **비즈니스용 Windows 스토어의 LOB(기간 업무) 앱 지원**
+- **비즈니스용 Windows 스토어의 기간 업무 앱 지원**
 
-  이제 비즈니스용 Windows 스토어에서 사용자 지정 LOB(기간 업무) 앱을 동기화할 수 있습니다.
+  이제 비즈니스용 Windows 스토어에서 사용자 지정 기간 업무 앱을 동기화할 수 있습니다.
 
 - **새로운 Mobile Threat Defense 모니터링 도구**
 
-    이제 Mobile Threat Defense 서비스 공급자를 통해 준수 상태를 모니터링하는 새로운 방법이 있습니다.
+    이제 Mobile Threat Defense 서비스 공급자를 통해 준수 상태를 모니터링하는 새로운 방법을 사용할 수 있습니다.
 
     자세한 내용은 [Mobile Threat Defense 준수를 모니터링하는 방법](/sccm/mdm/deploy-use/monitor-mobile-threat-defense-compliance)을 참조하세요.
 
@@ -256,7 +264,7 @@ Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추�
 
 - **비규격 앱 준수 설정**
 
-  이제 준수 정책에서 Android 및 iOS 앱에 대한 비규격 앱 규칙을 만들 수 있습니다. 장치에 지정한 응용 프로그램이 설치되어 있으면 "비규격"으로 표시되며, 적용된 조건부 액세스 정책에 따라 회사 리소스에 액세스할 수 없게 됩니다. 자세한 내용은 [조건부 액세스 장치 준수 정책 개선](/sccm/core/get-started/capabilities-in-technical-preview-1702#conditional-access-device-compliance-policy-improvements)을 참조하세요.
+  이제 준수 정책에서 Android 및 iOS 앱에 대한 비규격 앱 규칙을 만들 수 있습니다. 장치에 지정한 응용 프로그램이 설치되어 있으면 “비규격”으로 표시되며, 적용된 조건부 액세스 정책에 따라 회사 리소스에 액세스할 수 없게 됩니다. 자세한 내용은 [조건부 액세스 장치 준수 정책 개선](/sccm/core/get-started/capabilities-in-technical-preview-1702#conditional-access-device-compliance-policy-improvements)을 참조하세요.
 
 - **PFX 인증서 만들기 및 배포와 S/MIME 지원**
 
@@ -287,8 +295,14 @@ Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추�
 
 ## <a name="notices"></a>알림
 
-### <a name="system-center-2012-configuration-sp1-and-system-center-2012-r2-configuration-manager-rtm-support-for-hybrid-mobile-device-management-ending-on-april-10-2017"></a>System Center 2012 Configuration SP1 및 System Center 2012 R2 Configuration Manager(RTM): 하이브리드 모바일 장치 관리에 대한 지원이 2017년 4월 10일에 종료됩니다.
+### <a name="end-of-support-for-android-43-and-lower"></a>Android 4.3 이하에 대한 지원 종료
+<!---1171127--->
+*2017년 7월 6일*
 
+Android용 회사 포털 앱과 관리되는 앱이 회사 리소스에 액세스하려면 Android 4.4 이상이 필요합니다. 10월이 시작되기 전에 업데이트되지 않은 장치는 더 이상 회사 포털 또는 이러한 앱에 액세스할 수 없습니다. 12월까지 등록된 모든 장치는 12월에 강제 사용 중지되며, 따라서 회사 리소스에 액세스할 수 없게 됩니다. MDM 없이 앱 보호 정책을 사용 중인 경우 앱이 업데이트를 받지 못하며 해당 환경 품질이 시간이 흐름에 따라 저하됩니다.
+
+
+### <a name="system-center-2012-configuration-sp1-and-system-center-2012-r2-configuration-manager-rtm-support-for-hybrid-mobile-device-management-ending-on-april-10-2017"></a>System Center 2012 Configuration SP1 및 System Center 2012 R2 Configuration Manager(RTM): 하이브리드 모바일 장치 관리에 대한 지원이 2017년 4월 10일에 종료됩니다.
 *2017년 1월 11일*
 
 System Center 2012 Configuration Manager SP1 및 System Center 2012 R2 Configuration Manager RTM에 대한 지원이 2016년 7월 12일에 종료됩니다. 그 이후 Microsoft Intune 서비스에 연결하는 이러한 릴리스의 하이브리드 MDM에 대한 지원이 2017년 4월 10일에 종료됩니다. 이 날짜 이후에는 이러한 릴리스에서 하이브리드 MDM의 작동이 중지됩니다. Intune 커넥터가 더 이상 Intune 서비스에 연결되지 않으므로 관리되는 장치는 기본적으로 관리되지 않습니다. 업그레이드가 발생할 때까지 Configuration Manager 데이터(예: 정책 및 응용 프로그램)가 Intune으로 이동하지 않으며 관리되는 장치 데이터가 Configuration Manager로 이동하지 않습니다.
