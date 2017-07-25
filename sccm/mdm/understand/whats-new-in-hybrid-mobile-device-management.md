@@ -16,10 +16,10 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 ms.translationtype: HT
-ms.sourcegitcommit: 1035dbbf944a3a467d637a4a948a75b0946eb711
-ms.openlocfilehash: a9e03d4c5b290886bda87fae41e4df362eca1b71
+ms.sourcegitcommit: 94dc0335dab74bec7989753343418fae49b3ebe9
+ms.openlocfilehash: ab011cb06b43b06fc6e2a89e2f413d35a541a111
 ms.contentlocale: ko-kr
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 07/14/2017
 
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 장치 관리의 새로운 기능
@@ -42,9 +42,9 @@ ms.lasthandoff: 07/11/2017
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
-- **Android 지원 버전에 대한 알림 추가됨**
+- **Android 및 Windows Phone에 대한 지원 알림 종료**
 
-    Android 지원 버전에 대한 새 알림이 추가되었습니다. 자세한 내용은 [Android 4.3 이하에 대한 지원 종료](#notices)를 참조하세요.
+    Android 및 Windows Phone 버전에 대한 지원 종료 새 알림이 추가되었습니다. 자세한 내용은 [알림](#notices)을 참조하세요.
 
 ## <a name="june-2017"></a>2017년 6월
 
@@ -294,6 +294,16 @@ Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추�
 
 
 ## <a name="notices"></a>알림
+
+### <a name="platform-support-reminder-windows-phone-81-mainstream-support-ended-july-11-2017"></a>플랫폼 지원 알림: Windows Phone 8.1 기본 지원은 2017년 7월 11일에 종료됩니다.
+<!-- 1327781 -->
+*2017년 7월 11일*
+
+Windows Phone 8.1 플랫폼 기본 지원이 종료되어 갑니다. Windows 8.1 PC 지원은 영향을 받지 않습니다.
+
+하이브리드 MDM에 등록된 장치를 포함하여 Intune 서비스가 관리하는 Windows Phone 8.1 장치에는 즉각적인 영향이 없습니다. 등록된 장치는 계속 작동하며 모든 정책, 구성 및 앱은 예상대로 계속 작동합니다. Intune 서비스 내의 Windows Phone 8.1 플랫폼과 Windows Phone 8.1 회사 포털 앱을 대상으로 하는 향상된 기능은 없습니다.
+
+가능하면 빨리 적합한 Windows Phone 8.1 장치를 Windows 10 Mobile로 업그레이드하는 것이 좋습니다.  
 
 ### <a name="end-of-support-for-android-43-and-lower"></a>Android 4.3 이하에 대한 지원 종료
 <!---1171127--->

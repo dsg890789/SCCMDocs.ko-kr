@@ -15,12 +15,11 @@ caps.latest.revision: 15
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c8717925dba42451b1e241a7c2f59e43896d7d99
-ms.openlocfilehash: e78fe989b7ff445717c8320c4eae3900eb46baea
+ms.translationtype: HT
+ms.sourcegitcommit: 5ebdd12672fecc633321a66738a0978f94ba0aa4
+ms.openlocfilehash: aede531a0406c3d30c9cca957896e002ed22ae51
 ms.contentlocale: ko-kr
-ms.lasthandoff: 06/19/2017
-
+ms.lasthandoff: 07/20/2017
 
 ---
 # <a name="manage-access-to-o365-services-for-pcs-managed-by-system-center-configuration-manager"></a>System Center Configuration Manager에서 관리되는 PC용 O365 서비스에 대한 액세스 관리
@@ -46,7 +45,17 @@ Intune을 통해 등록하여 관리하는 장치 또는 도메인에 가입되�
 
 -   Windows 7
 -   Windows 8.1
--   Windows 10 
+-   Windows 10
+
+## <a name="supported-windows-servers"></a>지원되는 Windows 서버
+
+-   2008 R2
+-   2012
+-   2012 R2
+-   2016
+
+    > [!IMPORTANT]
+    > 여러 사용자가 동시에 로그인할 수 있는 Windows 서버의 경우 동일한 조건부 액세스 정책이 로그인하는 모든 사용자에게 배포되어야 합니다.
 
 ## <a name="configure-conditional-access"></a>조건부 액세스 구성  
  조건부 액세스를 설정하려면 먼저 규정 준수 정책을 만들고 조건부 액세스 정책을 구성해야 합니다. PC에 대한 조건부 액세스 정책을 설정할 때 Exchange Online 및 SharePoint Online 서비스에 액세스하기 위해 PC가 준수 정책을 준수하도록 요구할 수 있습니다.  
