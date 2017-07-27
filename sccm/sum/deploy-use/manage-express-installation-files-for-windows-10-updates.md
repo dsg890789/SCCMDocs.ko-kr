@@ -20,23 +20,20 @@ ms.lasthandoff: 07/11/2017
 
 ---
 
-# Windows 10 업데이트에 대한 빠른 설치 파일 관리
-<a id="manage-express-installation-files-for-windows-10-updates" class="xliff"></a>
+# <a name="manage-express-installation-files-for-windows-10-updates"></a>Windows 10 업데이트에 대한 빠른 설치 파일 관리
 Configuration Manager 버전 1702부터 Configuration Manager는 Windows 10 업데이트에 대한 빠른 설치 파일을 지원합니다. 지원되는 버전의 Windows 10을 사용하는 경우 Configuration Manager 설정을 사용하여 현재 월의 Windows 10 누적 업데이트와 이전 월의 업데이트 간 변경 내용만 다운로드할 수 있습니다. 빠른 설치 파일이 없으면 Configuration Manager는 전체 Windows 10 누적 업데이트(이전 몇 개월의 모든 업데이트 포함)를 매달 다운로드합니다. 빠른 설치 파일을 사용하면 다운로드 크기가 감소하고 클라이언트에서 설치 시간이 단축됩니다.
 
 > [!IMPORTANT]
 > Configuration Manager 버전 1702에서 빠른 설치 파일의 사용을 지원하는 설정을 사용할 수 있지만 운영 체제 클라이언트 지원은 Windows 업데이트 에이전트의 업데이트가 설치된 Windows 10 버전 1607에서 사용할 수 있습니다. 이 업데이트는 2017년 4월 11일 릴리스되는 업데이트(화요일 패치)에 포함됩니다. 이러한 업데이트에 대한 자세한 내용은 [지원 문서 4015217](http://support.microsoft.com/kb/4015217)을 참조하세요. 이후 업데이트에서는 다운로드 크기를 줄이기 위한 빠른 설치 파일을 사용합니다. 업데이트가 설치되지 않은 Windows 10 버전 1607과 이전 버전에서는 빠른 설치 파일이 지원되지 않습니다.
 
 
-### Windows 10 업데이트에 대한 빠른 설치 파일의 다운로드를 사용하도록 설정하려면
-<a id="to-enable-the-download-of-express-installation-files-for-windows-10-updates" class="xliff"></a>
+### <a name="to-enable-the-download-of-express-installation-files-for-windows-10-updates"></a>Windows 10 업데이트에 대한 빠른 설치 파일의 다운로드를 사용하도록 설정하려면
 Windows 10 빠른 설치 파일에 대한 메타데이터 동기화를 시작하려면 소프트웨어 업데이트 지점 속성에서 사용하도록 설정해야 합니다.
 1.  Configuration Manager 콘솔에서 **관리** > **사이트 구성** > **사이트**로 이동합니다.
 2.  중앙 관리 사이트나 독립 실행형 기본 사이트를 선택합니다.
 3.  **홈** 탭의 **설정** 그룹에서 **사이트 구성 요소 구성**과 **소프트웨어 업데이트 지점**을 차례로 클릭합니다. **업데이트 파일** 탭에서 **승인된 모든 업데이트에 대한 전체 파일 및 Windows 10용 빠른 설치 파일 다운로드**를 선택합니다.
 
-### 클라이언트가 빠른 설치 파일을 다운로드 및 설치할 수 있는 지원을 사용하려면
-<a id="to-enable-support-for-clients-to-download-and-install-express-installation-files" class="xliff"></a>
+### <a name="to-enable-support-for-clients-to-download-and-install-express-installation-files"></a>클라이언트가 빠른 설치 파일을 다운로드 및 설치할 수 있는 지원을 사용하려면
 클라이언트에서 빠른 설치 파일 지원을 사용하려면 클라이언트 설정의 소프트웨어 업데이트 섹션을 통해 빠른 설치 파일을 사용하도록 설정해야 합니다. 이렇게 하면 지정한 포트에서 빠른 설치 파일을 다운로드하는 요청을 수신 대기하는 새 HTTP 수신기가 생성됩니다.
 
 > [!NOTE]    

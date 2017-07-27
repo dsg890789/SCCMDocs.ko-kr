@@ -22,8 +22,7 @@ ms.contentlocale: ko-kr
 ms.lasthandoff: 07/11/2017
 
 ---
-# System Center Configuration Manager에서 운영 체제를 업그레이드하는 작업 순서 만들기
-<a id="create-a-task-sequence-to-upgrade-an-operating-system-in-system-center-configuration-manager" class="xliff"></a>
+# <a name="create-a-task-sequence-to-upgrade-an-operating-system-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 운영 체제를 업그레이드하는 작업 순서 만들기
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -43,8 +42,7 @@ System Center Configuration Manager에서 작업 순서를 사용하여 대상 �
 
     -   Configuration Manager 콘솔에 [응용 프로그램](../../apps/deploy-use/create-applications.md)을 추가해야 합니다.  
 
-#### 운영 체제를 업그레이드하는 작업 순서를 만들려면
-<a id="to-create-a-task-sequence-that-upgrades-an-operating-system" class="xliff"></a>  
+#### <a name="to-create-a-task-sequence-that-upgrades-an-operating-system"></a>운영 체제를 업그레이드하는 작업 순서를 만들려면  
 
 1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리**를 클릭합니다.  
 
@@ -78,8 +76,7 @@ System Center Configuration Manager에서 작업 순서를 사용하여 대상 �
 
 
 
-## 사전 캐시 콘텐츠 구성
-<a id="configure-pre-cache-content" class="xliff"></a>
+## <a name="configure-pre-cache-content"></a>사전 캐시 콘텐츠 구성
 버전 1702부터 작업 순서의 사용 가능한 배포에 대해 사전 캐시 기능을 사용하도록 선택하여 사용자가 콘텐츠를 설치하기 전에 클라이언트에서 관련 콘텐츠만 다운로드하도록 할 수 있습니다.
 > [!TIP]  
 > 버전 1702에 추가된 사전 캐시는 시험판 기능입니다. 사용하도록 설정하려면 [업데이트에서 시험판 기능 사용](/sccm/core/servers/manage/pre-release-features)을 참조하세요.
@@ -88,8 +85,7 @@ System Center Configuration Manager에서 작업 순서를 사용하여 대상 �
 
 사전 캐시 콘텐츠를 사용하면 클라이언트가 배포를 받는 즉시 해당 콘텐츠만 다운로드할 수 있습니다. 따라서 사용자가 소프트웨어 센터에서 **설치**를 클릭할 때 콘텐츠가 준비되어 있으며, 콘텐츠가 로컬 하드 드라이브에 있으므로 설치가 신속하게 시작됩니다.
 
-### 사전 캐시 기능을 구성하려면
-<a id="to-configure-the-pre-cache-feature" class="xliff"></a>
+### <a name="to-configure-the-pre-cache-feature"></a>사전 캐시 기능을 구성하려면
 
 1. 특정 아키텍처 및 언어에 대한 운영 체제 업그레이드 패키지를 만듭니다. 패키지의 **데이터 원본** 탭에서 아키텍처 및 언어를 지정합니다. 언어에 대해 10진수 변환을 사용합니다(예: 1033은 영어의 10진수이고, 0x0409는 동등한 16진수임). 자세한 내용은 [운영 체제를 업그레이드하는 작업 순서 만들기](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)를 참조하세요.
 
@@ -107,16 +103,14 @@ System Center Configuration Manager에서 작업 순서를 사용하여 대상 �
     - **배포 지점** 탭에서 **배포 옵션** 설정을 구성합니다. 사용자가 설치를 시작하기 전에 클라이언트에서 콘텐츠가 사전 캐시되지 않은 경우 이러한 설정이 사용됩니다.
 
 
-### 사용자 환경
-<a id="user-experience" class="xliff"></a>
+### <a name="user-experience"></a>사용자 환경
 - 클라이언트가 배포 정책을 받으면 콘텐츠 사전 캐시를 시작합니다. 여기에는 참조된 모든 콘텐츠(다른 패키지 형식) 및 작업 순서에서 설정한 조건에 따라 클라이언트와 일치하는 운영 체제 업그레이드 패키지만 포함됩니다.
 - 배포가 사용자에게 제공되면(배포의 **일정** 탭에서 설정) 사용자에게 배포를 알리는 알림이 표시되고 소프트웨어 센터에 배포가 표시됩니다. 사용자가 소프트웨어 센터로 이동한 다음 **설치**를 클릭하여 설치를 시작합니다.
 - 콘텐츠가 완전히 사전 캐시되지 않은 경우 배포의 **배포 옵션** 탭에서 지정된 설정을 사용합니다. 클라이언트가 콘텐츠를 사전 캐시하기에 충분한 시간이 있도록 배포를 만든 시간과 배포가 사용자에게 제공되는 시간 사이에 충분한 간격을 두는 것이 좋습니다.
 
 
 
-## 패키지 콘텐츠 작업 순서 단계 다운로드
-<a id="download-package-content-task-sequence-step" class="xliff"></a>  
+## <a name="download-package-content-task-sequence-step"></a>패키지 콘텐츠 작업 순서 단계 다운로드  
  [패키지 콘텐츠 다운로드](../understand/task-sequence-steps.md#BKMK_DownloadPackageContent) 단계는 다음 시나리오에서 **운영 체제 업그레이드** 단계 이전에 사용할 수 있습니다.  
 
 -   x86 및 x64 플랫폼에서 둘 다 사용 가능한 단일 업그레이드 작업 순서를 사용하는 경우. 이렇게 하려면 클라이언트 아키텍처를 검색하여 적합한 운영 체제 업그레이드 패키지만 다운로드하는 조건을 포함하는 두 가지 **패키지 콘텐츠 다운로드** 단계를 **업그레이드 준비** 그룹에 포함합니다. 각 **패키지 콘텐츠 다운로드** 단계가 같은 변수를 사용하도록 구성하고 **운영 체제 업그레이드** 단계에서 미디어 경로에 대해 변수를 사용합니다.  
@@ -126,18 +120,15 @@ System Center Configuration Manager에서 작업 순서를 사용하여 대상 �
    > [!NOTE]
    > 둘 이상의 패키지가 있는 경우 Configuration Manager에서 변수 이름에 숫자 접미사를 추가합니다. 예를 들어 사용자 지정 변수로 %mycontent% 변수를 지정하는 경우 이는 모든 참조된 콘텐츠가 저장된 위치(여러 패키지일 수 있음)의 루트입니다. 운영 체제 업그레이드와 같은 하위 시퀀스 단계에서 변수를 참조하는 경우 숫자 접미사와 함께 사용됩니다. 이 예제에서는 %mycontent01% 또는 %mycontent02%이고, 숫자는 패키지가 이 단계에서 나열되는 순서에 해당합니다.
 
-## 선택적 사후 처리 작업 순서 단계
-<a id="optional-post-processing-task-sequence-steps" class="xliff"></a>  
+## <a name="optional-post-processing-task-sequence-steps"></a>선택적 사후 처리 작업 순서 단계  
  작업 순서를 만든 후에는 알려진 호환성 문제가 있는 응용 프로그램을 제거하는 단계 등의 단계를 더 추가하거나, 컴퓨터가 다시 시작되고 Windows 10으로 정상적으로 업그레이드한 후에 실행할 사후 처리 작업을 추가할 수 있습니다. 작업 순서의 사후 처리 그룹에 이러한 단계를 더 추가합니다.  
 
 > [!NOTE]  
 >  이 작업 순서는 선형이 아니므로 클라이언트 컴퓨터가 정상적으로 업그레이드되는지 아니면 업그레이드를 시작했던 운영 체제 버전으로 클라이언트 컴퓨터를 롤백해야 하는지에 따라 작업 순서 결과에 영향을 주는 단계에 대한 조건이 있습니다.  
 
-## 선택적 롤백 작업 순서 단계
-<a id="optional-rollback-task-sequence-steps" class="xliff"></a>  
+## <a name="optional-rollback-task-sequence-steps"></a>선택적 롤백 작업 순서 단계  
  컴퓨터를 다시 시작한 후 업그레이드 프로세스에 문제가 발생하는 경우 설치 프로그램은 업그레이드를 이전 운영 체제로 롤백하며 작업 순서는 롤백 그룹의 단계를 계속 진행합니다. 작업 순서를 만든 후에 롤백 그룹에 선택적 단계를 추가할 수 있습니다.  
 
-## 컴퓨터 다시 시작 후 폴더 및 파일 제거됨
-<a id="folder-and-files-removed-after-computer-restart" class="xliff"></a>  
+## <a name="folder-and-files-removed-after-computer-restart"></a>컴퓨터 다시 시작 후 폴더 및 파일 제거됨  
  운영 체제를 Windows 10으로 업그레이드하는 작업 순서와 작업 순서의 다른 모든 단계가 완료되어도 컴퓨터를 다시 시작하기 전에는 사후 처리 및 롤백 스크립트가 제거되지 않습니다.  이 스크립트 파일에는 중요한 정보가 들어 있지 않습니다.  
 

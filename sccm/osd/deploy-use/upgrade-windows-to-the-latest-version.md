@@ -22,8 +22,7 @@ ms.contentlocale: ko-kr
 ms.lasthandoff: 07/11/2017
 
 ---
-# System Center Configuration Manager를 사용하여 Windows를 최신 버전으로 업그레이드
-<a id="upgrade-windows-to-the-latest-version-with-system-center-configuration-manager" class="xliff"></a>
+# <a name="upgrade-windows-to-the-latest-version-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows를 최신 버전으로 업그레이드
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -87,8 +86,7 @@ ms.lasthandoff: 07/11/2017
 
     -   [독립 실행형 미디어를 사용하여 네트워크를 사용하지 않고 Windows 배포](use-stand-alone-media-to-deploy-windows-without-using-the-network.md)  
 
-## 모니터
-<a id="monitor" class="xliff"></a>  
+## <a name="monitor"></a>모니터  
 
 -   **작업 순서 배포 모니터링**  
 
