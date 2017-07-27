@@ -16,7 +16,6 @@ ms.openlocfilehash: b80fec937b50dca3ab995be281c44c3145300f9f
 ms.contentlocale: ko-kr
 ms.lasthandoff: 06/03/2017
 
-
 ---
 # <a name="change-your-mdm-authority"></a>MDM 기관 변경
 Configuration Manager 버전 1610 및 Microsoft Intune 버전 1705부터, Microsoft 지원에 문의하지 않고 기존의 관리 장치를 등록 취소했다가 다시 등록하지 않고도, MDM 기관을 변경할 수 있습니다.
@@ -39,7 +38,8 @@ Configuration Manager 버전 1610 및 Microsoft Intune 버전 1705부터, Micros
 - Configuration Manager 콘솔에서 모든 장치 등록 관리자 역할을 제거합니다. **관리** > **클라우드 서비스** > **Microsoft Intune 구독**으로 이동한 후 Microsoft Intune 구독을 선택하고 **속성**을 클릭한 후 **장치 등록 관리자** 탭을 클릭하고 모든 장치 등록 관리자 역할을 제거합니다.
 - Configuration Manager 콘솔에서 기존 장치 범주를 제거합니다. **자산 및 준수** > **개요** > **장치 컬렉션**으로 이동한 후 **장치 범주 관리**를 선택하고 기존 장치 범주를 제거합니다.
 - MDM 기관 변경 동안 최종 사용자에게 눈에 띌만한 영향은 발생하지 않습니다. 그러나 사용자가 장치를 켜고 변경 즉시 서비스에 연결하도록 이러한 변경 사항을 사용자에게 알릴 수 있습니다. 이렇게 하면 최대한 많은 장치가 가능한 한 빨리 새 기관을 통해 서비스에 연결되고 등록될 수 있게 됩니다.
-- MDM 기관 변경 전에 Configuration Manager(하이브리드 테넌트)를 사용하여 iOS 장치를 관리하는 경우 이전에 Configuration Manager에서 사용했던 동일한 APNs(Apple Push Notification Service) 인증서가 갱신되고 Intune 독립 실행형에서 테넌트를 다시 설정하는 데 사용되도록 해야 합니다.    
+- MDM 기관 변경 전에 Configuration Manager(하이브리드 테넌트)를 사용하여 iOS 장치를 관리하는 경우 이전에 Configuration Manager에서 사용했던 동일한 APNs(Apple Push Notification Service) 인증서가 갱신되고 Intune 독립 실행형에서 테넌트를 다시 설정하는 데 사용되도록 해야 합니다.
+
     > [!IMPORTANT]  
     > Intune 독립 실행형에 다른 APNs 인증서가 사용되면 이전에 등록된 모든 iOS 장치가 등록 취소되므로 다시 등록하는 과정을 진행해야 합니다. MDM 기관 변경 전에 Configuration Manager에서 iOS 장치를 관리하는 데 사용된 APNs 인증서를 정확히 알고 있어야 합니다. Apple Push Certificates 포털(https://identity.apple.com)에 나열된 동일한 인증서를 찾고, 해당 Apple ID가 원래 APNs 인증서를 만드는 데 사용된 사용자를 식별한 후 새 MDM 기관 변경의 일부로 동일한 APNs 인증서를 갱신하는 데 이 인증서를 사용할 수 있도록 합니다.  
 
@@ -52,15 +52,15 @@ MDM 기관을 Intune 독립 실행형으로 변경하는 프로세스는 다음�
 - 다음 번에 장치가 서비스에 연결되면 새 MDM 기관과 동기화되어 새 설정을 받습니다.
 
 #### <a name="to-change-the-mdm-authority-to-intune-standalone"></a>MDM 기관을 Intune 독립 실행형으로 변경하려면
-1.    Configuration Manager 콘솔에서 **관리** &gt; **개요** &gt; **Cloud Services** &gt; **Microsoft Intune 구독**으로 이동한 후 기존 Intune 구독을 삭제합니다.
-2.    **MDM 기관을 Microsoft Intune으로 변경**을 클릭하고 **다음**을 클릭합니다.
+1.  Configuration Manager 콘솔에서 **관리** &gt; **개요** &gt; **Cloud Services** &gt; **Microsoft Intune 구독**으로 이동한 후 기존 Intune 구독을 삭제합니다.
+2.  **MDM 기관을 Microsoft Intune으로 변경**을 클릭하고 **다음**을 클릭합니다.
 
     ![APNs 인증서 요청 다운로드](/sccm/mdm/deploy-use/media/mdm-change-delete-subscription.png)
-3.    Configuration Manager에서 MDM 기관을 설정할 때 사용했던 Intune 테넌트에 로그인합니다.
-4.    **다음** 을 클릭하여 마법사를 완료합니다.
-5.    이제 MDM 기관이 다시 설정되었습니다. Intune 구독은 Configuration Manager 콘솔의 Microsoft Intune 구독 노드에 더 이상 표시되지 않습니다.
-6.    이전에 사용한 동일한 Intune 테넌트를 사용하여 [Microsoft Intune 관리 콘솔](http://manage.microsoft.com)에 로그인합니다.
-7.    MDM 기관이 다시 설정되었는지 확인하고 MDM 기관을 **Microsoft Intune**으로 설정합니다. MDM 기관을 변경하면 콘솔에 반영되어야 합니다. 자세한 내용은 [MDM 기관 설정 방법](https://docs.microsoft.com/en-us/intune/deploy-use/prerequisites-for-enrollment#step-2-set-mdm-authority)을 참조하세요.
+3.  Configuration Manager에서 MDM 기관을 설정할 때 사용했던 Intune 테넌트에 로그인합니다.
+4.  **다음** 을 클릭하여 마법사를 완료합니다.
+5.  이제 MDM 기관이 다시 설정되었습니다. Intune 구독은 Configuration Manager 콘솔의 Microsoft Intune 구독 노드에 더 이상 표시되지 않습니다.
+6.  이전에 사용한 동일한 Intune 테넌트를 사용하여 [Microsoft Intune 관리 콘솔](http://manage.microsoft.com)에 로그인합니다.
+7.  MDM 기관이 다시 설정되었는지 확인하고 MDM 기관을 **Microsoft Intune**으로 설정합니다. MDM 기관을 변경하면 콘솔에 반영되어야 합니다. 자세한 내용은 [MDM 기관 설정 방법](https://docs.microsoft.com/en-us/intune/deploy-use/prerequisites-for-enrollment#step-2-set-mdm-authority)을 참조하세요.
 <!-- [Azure portal](https://docs.microsoft.com/en-us/intune-azure/enroll-devices/set-mdm-authority) -->
 
 
@@ -68,7 +68,7 @@ MDM 기관을 Intune 독립 실행형으로 변경하는 프로세스는 다음�
 iOS 장치가 있는 경우 Intune에서 APNs 인증서를 구성해야 합니다.
 
 #### <a name="to-configure-the-apns-certificate"></a>APNs 인증서를 구성하려면
-1.    APNs 인증서 요청을 다운로드합니다.
+1.  APNs 인증서 요청을 다운로드합니다.
     <!--The process is different depending on how you connect to Intune:
     **Azure portal**   
     In the [Azure portal](https://azure.portal.com), choose **More Services** &gt; **Monitoring + Management** &gt; **Intune**. On the **Intune** blade, choose **Device enrollment** &gt; **Apple Enrollment** &gt; **Apple MDM Push Certificate**, and then select **Download your CSR** to download and save the .csr file locally.   
@@ -80,22 +80,22 @@ iOS 장치가 있는 경우 Intune에서 APNs 인증서를 구성해야 합니�
 
     ![APNs 인증서 요청 다운로드](/sccm/mdm/deploy-use/media/mdm-change-download-apns-certificate.png)
 
-2.    [Apple Push Certificates 포털](http://go.microsoft.com/fwlink/?LinkId=269844)로 이동한 후 Configuration Manager(하이브리드)에서 사용했던 APNs 인증서를 이전에 만들고 갱신하는 데 사용한 **동일한** Apple ID로 로그인합니다.
+2.  [Apple Push Certificates 포털](http://go.microsoft.com/fwlink/?LinkId=269844)로 이동한 후 Configuration Manager(하이브리드)에서 사용했던 APNs 인증서를 이전에 만들고 갱신하는 데 사용한 **동일한** Apple ID로 로그인합니다.
 
     ![Apple Push Certificates 포털 로그인 페이지](/sccm/mdm/deploy-use/media/mdm-change-apns-portal.png)
 
-3.    Configuration Manager(하이브리드)에서 사용했던 APNs 인증서를 선택하고 **갱신**을 클릭합니다.   
+3.  Configuration Manager(하이브리드)에서 사용했던 APNs 인증서를 선택하고 **갱신**을 클릭합니다.   
 
     ![APNs 갱신 대화 상자](/sccm/mdm/deploy-use/media/mdm-change-renew-apns.png)
 
-4.    로컬로 다운로드한 APNs 인증서 서명 요청(.csr) 파일을 선택한 다음 **업로드**를 클릭합니다.
+4.  로컬로 다운로드한 APNs 인증서 서명 요청(.csr) 파일을 선택한 다음 **업로드**를 클릭합니다.
 
     ![Apple Push Certificates 포털 로그인 페이지](/sccm/mdm/deploy-use/media/mdm-change-renew-apns-upload.png)  
-5.    동일한 APNs를 선택하고 **다운로드**를 클릭합니다. APNs(.pem) 인증서를 다운로드하고 파일을 로컬로 저장합니다.  
+5.  동일한 APNs를 선택하고 **다운로드**를 클릭합니다. APNs(.pem) 인증서를 다운로드하고 파일을 로컬로 저장합니다.  
 
     ![Apple Push Certificates 포털 로그인 페이지](/sccm/mdm/deploy-use/media/mdm-change-renew-apns-download.png)
 
-6.    이전에 사용한 것과 같은 Apple ID를 사용하여 갱신된 APNs 인증서를 Intune 테넌트에 업로드합니다.
+6.  이전에 사용한 것과 같은 Apple ID를 사용하여 갱신된 APNs 인증서를 Intune 테넌트에 업로드합니다.
 <!--The process is different depending on how to connect to Intune:  
     **Azure portal**   
     In the [Azure portal](https://azure.portal.com), choose **More Services** &gt; **Monitoring + Management** &gt; **Intune**. On the **Intune** blade, choose **Device enrollment** &gt; **Apple Enrollment**  &gt; **Apple MDM Push Certificate**, enter your Apple ID in step 3, select the certificate (.pem) file in step 4, and then click **Upload**.     
@@ -171,13 +171,13 @@ MDM 기관을 Configuration Manager(하이브리드)로 변경하는 프로세�
 - 다음 번에 장치가 서비스에 연결되면 새 MDM 기관과 동기화되어 새 설정을 받습니다.
 
 #### <a name="to-change-the-mdm-authority-to-configuration-manager"></a>MDM 기관을 Configuration Manager로 변경하려면
-1.    Configuration Manager 콘솔에서 **관리** &gt; **개요** &gt; **Cloud Services** &gt; **Microsoft Intune 구독**으로 이동한 후 Intune 구독을 추가하도록 선택합니다.
-2.    Intune에서 MDM 기관을 설정할 때 사용했던 Intune 테넌트에 로그인하고 **다음**을 클릭합니다.
-3.    **내 MDM 기관을 Configuration Manager로 변경**을 선택하고 **다음**을 클릭합니다.
+1.  Configuration Manager 콘솔에서 **관리** &gt; **개요** &gt; **Cloud Services** &gt; **Microsoft Intune 구독**으로 이동한 후 Intune 구독을 추가하도록 선택합니다.
+2.  Intune에서 MDM 기관을 설정할 때 사용했던 Intune 테넌트에 로그인하고 **다음**을 클릭합니다.
+3.  **내 MDM 기관을 Configuration Manager로 변경**을 선택하고 **다음**을 클릭합니다.
 4.  계속해서 새 하이브리드 MDM 기관으로 관리할 모든 사용자가 포함될 사용자 컬렉션을 선택합니다.
 5.  **다음** 을 클릭하여 마법사를 완료합니다.  
-5.    이제 MDM 기관이 **Configuration Manager**로 변경됩니다.
-6.    동일한 Intune 테넌트를 사용하여 [Microsoft Intune 관리 콘솔](http://manage.microsoft.com)에 로그인하고 MDM 기관이 **Configuration Manager로 설정**으로 변경되었는지 확인합니다.
+5.  이제 MDM 기관이 **Configuration Manager**로 변경됩니다.
+6.  동일한 Intune 테넌트를 사용하여 [Microsoft Intune 관리 콘솔](http://manage.microsoft.com)에 로그인하고 MDM 기관이 **Configuration Manager로 설정**으로 변경되었는지 확인합니다.
 
 
 ### <a name="enable-ios-enrollment"></a>iOS 등록을 사용하도록 설정합니다.
@@ -194,22 +194,22 @@ iOS 장치가 있는 경우 Configuration Manager에서 APNs 인증서를 구성
     > [!IMPORTANT]
     > 새 인증서 서명 요청을 다운로드해야 합니다. 기존 파일은 사용하지 않습니다. 이 파일을 사용하면 실패합니다.  
 
-2.    [Apple Push Certificates 포털](http://go.microsoft.com/fwlink/?LinkId=269844)로 이동한 후 Intune 독립 실행형에서 사용했던 APNs 인증서를 이전에 만들고 갱신하는 데 사용한 **동일한** Apple ID로 로그인합니다.
+2.  [Apple Push Certificates 포털](http://go.microsoft.com/fwlink/?LinkId=269844)로 이동한 후 Intune 독립 실행형에서 사용했던 APNs 인증서를 이전에 만들고 갱신하는 데 사용한 **동일한** Apple ID로 로그인합니다.
 
     ![Apple Push Certificates 포털 로그인 페이지](/sccm/mdm/deploy-use/media/mdm-change-apns-portal.png)
 
-3.    Intune 독립 실행형에서 사용했던 APNs 인증서를 선택하고 **갱신**을 클릭합니다.   
+3.  Intune 독립 실행형에서 사용했던 APNs 인증서를 선택하고 **갱신**을 클릭합니다.   
 
     ![APNs 갱신 대화 상자](/sccm/mdm/deploy-use/media/mdm-change-renew-apns.png)
 
-4.    로컬로 다운로드한 APNs 인증서 서명 요청(.csr) 파일을 선택한 다음 **업로드**를 클릭합니다.
+4.  로컬로 다운로드한 APNs 인증서 서명 요청(.csr) 파일을 선택한 다음 **업로드**를 클릭합니다.
 
     ![Apple Push Certificates 포털 로그인 페이지](/sccm/mdm/deploy-use/media/mdm-change-renew-apns-upload.png)  
-5.    동일한 APNs를 선택하고 **다운로드**를 클릭합니다. APNs(.pem) 인증서를 다운로드하고 파일을 로컬로 저장합니다.  
+5.  동일한 APNs를 선택하고 **다운로드**를 클릭합니다. APNs(.pem) 인증서를 다운로드하고 파일을 로컬로 저장합니다.  
 
     ![Apple Push Certificates 포털 로그인 페이지](/sccm/mdm/deploy-use/media/mdm-change-renew-apns-download.png)
 
-6.    이전에 사용한 것과 같은 Apple ID를 사용하여 갱신된 APNs 인증서를 하이브리드 테넌트에 업로드합니다.
+6.  이전에 사용한 것과 같은 Apple ID를 사용하여 갱신된 APNs 인증서를 하이브리드 테넌트에 업로드합니다.
 
     1.  Configuration Manager 콘솔에서 **관리** &gt; **Cloud Services** &gt; **Microsoft Intune 구독**으로 이동한 후 **플랫폼 구성** &gt; **iOS**를 선택합니다.  
     2.  **Microsoft Intune 구독 속성** 대화 상자에서 **APNs 인증서** 탭을 선택하고 **iOS 및 Mac OS X(MDM) 등록 사용** 확인란을 클릭하여 선택합니다.  
