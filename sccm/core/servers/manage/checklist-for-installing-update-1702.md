@@ -2,7 +2,7 @@
 title: "1702에 대한 검사 목록 | System Center Configuration Manager"
 description: "System Center Configuration Manager 버전 1702로 업데이트하기 전에 수행할 작업에 대해 알아봅니다."
 ms.custom: na
-ms.date: 6/6/2017
+ms.date: 06/06/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager

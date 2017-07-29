@@ -21,11 +21,11 @@ ms.openlocfilehash: 640cdc67f301a81a45bf27f95eb03cbc8754a9aa
 ms.contentlocale: ko-kr
 ms.lasthandoff: 05/17/2017
 
-
 ---
 # <a name="boundary-groups-for-system-center-configuration-manager-version-1511-1602-and-1606"></a>System Center Configuration Manager 버전 1511, 1602 및 1606에 대한 경계 그룹
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
+<!-- This topic drops from TOC with the release of version 1706 -->
 
 이 항목의 정보는 System Center Configuration Manager 버전 1511, 1602 및 1606에서 경계 그룹을 사용하는 경우에 해당합니다.
 버전 1610 이상을 사용할 경우 다시 디자인된 경계 그룹에 대한 자세한 내용은 [경계 그룹 구성](/sccm/core/servers/deploy/configure/boundary-groups)을 참조하세요.  
