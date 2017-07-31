@@ -2,7 +2,7 @@
 title: "비즈니스용 Windows 스토어에서 앱 관리 | Microsoft 문서"
 description: "System Center Configuration Manager를 사용하여 비즈니스용 Windows 스토어에서 앱을 관리 및 배포합니다."
 ms.custom: na
-ms.date: 3/29/2017
+ms.date: 7/25/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,16 +15,16 @@ caps.latest.revision: 11
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6accec2d356861b273b25ba2b6338d9684a46ff6
-ms.openlocfilehash: f2d9da1c584f78e27e84b7f55e7ffe4dd052a27c
+ms.translationtype: HT
+ms.sourcegitcommit: ef42d1483053e9a6c502f4ebcae5a231aa6ba727
+ms.openlocfilehash: 93e767c9a115b30d68871baece670977165f55f4
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/26/2017
 
 ---
 
 # <a name="manage-apps-from-the-windows-store-for-business-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 비즈니스용 Windows 스토어에서 앱 관리
-[비즈니스용 Windows 스토어](https://www.microsoft.com/business-store)에서 조직을 위한 Windows 앱을 찾아서 개별적으로 또는 대량으로 구매할 수 있습니다. 저장소를 Configuration Manager에 연결하면 구입한 앱 목록을 Configuration Manager와 동기화하고 Configuration Manager 콘솔에서 해당 앱을 보고 다른 앱처럼 배포할 수 있습니다.
+[비즈니스용 Windows 스토어](https://www.microsoft.com/business-store)에서 조직을 위한 Windows 앱을 찾아서 개별적으로 또는 대량으로 구매할 수 있습니다. 스토어를 Configuration Manager에 연결하면 구매한 앱 목록을 Configuration Manager와 동기화할 수 있습니다. 동기화한 후에는 Configuration Manager 콘솔에서 앱 목록을 보고 다른 앱을 배포하는 것과 마찬가지로 배포할 수 있습니다.
 
 
 ## <a name="online-and-offline-apps"></a>온라인 및 오프라인 앱
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/17/2017
 비즈니스용 Windows 스토어에서는 다음 두 가지 유형의 앱을 지원합니다.
 
 - **온라인** - 이 라이선스 유형에서는 사용자와 장치가 저장소에 연결하여 앱과 해당 라이선스를 가져와야 합니다. Windows 10 장치는 Azure Active Directory 도메인에 가입된 장치여야 합니다.
-- **오프라인** - 조직에서 저장소에 연결하거나 인터넷에 연결하지 않고도 앱과 라이선스를 캐시하여 온-프레미스 네트워크 내에 직접 배포할 수 있습니다.
+- **오프라인** - 저장소에 연결하거나 인터넷에 연결하지 않고도 앱과 라이선스를 캐시하여 온-프레미스 네트워크 내에 직접 배포할 수 있습니다.
 
 비즈니스용 Windows 스토어에 대해 [자세히 알아보세요](https://technet.microsoft.com/itpro/windows/whats-new/windows-store-for-business-overview?f=255&MSPPError=-2147217396).
 
@@ -79,13 +79,13 @@ Configuration Manager 클라이언트를 통해 사용이 허가된 온라인 �
 #### <a name="further-notes-for-pcs-running-earlier-versions-of-windows-10"></a>Windows 10의 이전 버전을 실행하는 PC에 대한 추가 노트:
 
 - 비즈니스용 Windows 스토어에서 LOB(기간 업무) 앱을 배포할 수 없습니다.
-- 스토어에서 유료 앱을 배포할 경우 최종 사용자는 스토어에 로그인하고 직접 앱을 구매하도록 요청됩니다.
+- 스토어에서 유료 앱을 배포할 경우 최종 사용자는 스토어에 로그인하고 직접 앱을 구매해야 합니다.
 - Windows 스토어의 소비자 버전에 대한 액세스를 사용하지 않는 그룹 정책을 배포한 경우에는 비즈니스용 Windows 스토어가 사용되더라도 비즈니스용 Windows 스토어를 통한 배포가 작동하지 않습니다.
 
 
 ## <a name="set-up-windows-store-for-business-synchronization"></a>비즈니스용 Windows 스토어 동기화 설정
 
-**Azure Active Directory에서 Configuration Manager를 "웹 응용 프로그램 및/또는 웹 API" 관리 도구로 등록합니다. 이렇게 하면 나중에 필요한 클라이언트 ID가 제공됩니다.**
+**Azure Active Directory에서 Configuration Manager를 "웹 응용 프로그램 및/또는 웹 API" 관리 도구로 등록합니다. 이 작업으로 나중에 필요한 클라이언트 ID를 알 수 있습니다.**
 1. [https://manage.windowsazure.com](https://manage.windowsazure.com)의 Active Directory 노드에서 Azure Active Directory를 선택한 후 **응용 프로그램** > **추가**를 클릭합니다.
 2.  **조직에서 개발 중인 응용 프로그램 추가**를 클릭합니다.
 3.  응용 프로그램의 이름을 입력하고, **웹 응용 프로그램** 및/또는 **웹 API**를 선택한 후 **다음** 화살표를 클릭합니다.
@@ -93,15 +93,15 @@ Configuration Manager 클라이언트를 통해 사용이 허가된 온라인 �
 5.  마법사를 완료합니다.
 
 **Azure Active Directory에서 등록된 관리 도구에 대한 클라이언트 키를 만듭니다.**
-1.  방금 만든 응용 프로그램을 강조 표시하고 **구성**을 클릭합니다.
-2.  **키** 아래의 목록에서 기간을 선택하고 **저장**을 클릭합니다. 그러면 새 클라이언트 키가 생성됩니다. 비즈니스용 Windows 스토어를 Configuration Manager에 성공적으로 등록할 때까지 이 페이지에서 이동하지 마세요.
+1.  만든 응용 프로그램을 강조 표시하고 **구성**을 클릭합니다.
+2.  **키** 아래의 목록에서 기간을 선택하고 **저장**을 클릭합니다. 이 작업은 새 클라이언트 키를 만듭니다. 비즈니스용 Windows 스토어를 Configuration Manager에 성공적으로 등록할 때까지 이 페이지에서 이동하지 마세요.
 
 **비즈니스용 Windows 스토어에서 Configuration Manager를 저장소 관리 도구로 구성**
 1.  [https://businessstore.microsoft.com/en-us/managementtools](https://businessstore.microsoft.com/en-us/managementtools)를 열고 메시지가 표시되면 로그인합니다.
 2.  필요한 경우 사용 약관에 동의합니다.
 3.  **관리 도구**에서 **관리 도구 추가**를 클릭합니다.
 4.  **이름별 도구 검색**에서 이전에 AAD에서 만든 응용 프로그램의 이름을 입력한 후 **추가**를 클릭합니다.
-5.  방금 가져온 응용 프로그램 옆에 있는 **활성화**를 클릭합니다.
+5.  가져온 응용 프로그램 옆에 있는 **활성화**를 클릭합니다.
 6.  오프라인 사용이 허가된 앱을 구매할 수 있도록 허용하려면 **관리 > 계정 정보** 페이지에서 **오프라인 사용이 허가된 앱 표시**를 선택합니다.
 
 **Configuration Manager에 스토어 계정 추가**
@@ -116,10 +116,11 @@ Configuration Manager 클라이언트를 통해 사용이 허가된 온라인 �
 1.  Configuration Manager 콘솔의 **소프트웨어 라이브러리** 작업 영역에서 **응용 프로그램 관리**를 확장한 다음 **스토어 앱에 대한 라이선스 정보**를 클릭합니다.
 2.  배포하려는 앱을 선택한 후 **홈** 탭의 **만들기** 그룹에서 **응용 프로그램 만들기**를 클릭합니다.
 비즈니스용 Windows 스토어 앱을 포함하여 Configuration Manager 응용 프로그램이 만들어집니다. 그런 다음 이 응용 프로그램을 원하는 Configuration Manager 응용 프로그램으로 배포 및 모니터링할 수 있습니다.
+
 > [!IMPORTANT]
 > Intune에 등록된 장치의 경우 원래 장치를 등록한 사용자만 배포된 앱을 사용할 수 있습니다. 다른 사용자는 앱에 액세스할 수 없습니다.
 
-## <a name="monitor-windows-store-for-business-apps"></a>비즈니스용 Windows 스토어 앱 모니터링
+## <a name="next-steps"></a>다음 단계
 
 **소프트웨어 라이브러리** 작업 영역에서 **응용 프로그램 관리**를 확장한 다음 **스토어 앱에 대한 라이선스 정보**를 클릭합니다.
 

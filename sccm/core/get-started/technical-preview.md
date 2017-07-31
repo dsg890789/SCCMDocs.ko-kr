@@ -15,12 +15,11 @@ caps.latest.revision: 157
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6f9e6e93fce95666503907010a5c253158c5de7c
-ms.openlocfilehash: 736e5a04d3d5f2a3825ed4e801308fd5699ea86e
+ms.translationtype: HT
+ms.sourcegitcommit: 1f57c63ceeb13c7f7d760d7ecfb48df749da6770
+ms.openlocfilehash: 4644928acbb1ae3d7d72f877565589fae435a96b
 ms.contentlocale: ko-kr
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="technical-preview-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview
@@ -116,6 +115,17 @@ ms.lasthandoff: 07/07/2017
 
  |기능 |기술 미리 보기 버전 |현재 분기 버전|  
  |----------------|---------------------|--------------------|
+ |Windows 10 및 Office 365에 대한 고속 설치 파일을 위한 클라이언트 피어 캐시 지원|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#client-peer-cache-support-for-express-installation-files-for-windows-10-and-office-365)|![추가되지 않음](media/Red_X.gif)|
+ |Surface 장치 대시보드|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#surface-device-dashboard)|![추가되지 않음](media/Red_X.gif)|
+ |Windows Defender Application Guard 정책 구성 및 배포|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#configure-and-deploy-windows-defender-application-guard-policies)|![추가되지 않음](media/Red_X.gif)|
+ |Configuration Manager에서 PowerShell 스크립트를 배포할 때 매개 변수 추가|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#add-parameters-when-you-deploy-powershell-scripts-from-configuration-manager)|![추가되지 않음](media/Red_X.gif)|
+
+
+## <a name="capabilities-delivered-in-previous-technical-previews"></a>이전 Technical Preview에 포함된 기능
+ Technical Preview 릴리스의 모든 기능을 현재 분기의 지원되는 최소 버전으로 사용할 수 있는 경우 해당 미리 보기 버전에 대한 세부 정보는 다음 표에서 제거됩니다.  
+
+ |기능 |기술 미리 보기 버전 |현재 분기 버전|  
+ |----------------|---------------------|--------------------|
  |새 모바일 응용 프로그램 관리 정책 설정|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#new-mobile-application-management-policy-settings)|![추가되지 않음](media/Red_X.gif)|
  |소프트웨어 업데이트 지점에 대한 향상된 경계 그룹|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#improved-boundary-groups-for-software-update-points)|![추가되지 않음](media/Red_X.gif)|
  |사이트 서버 역할 고가용성|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#site-server-role-high-availability) |![추가되지 않음](media/Red_X.gif)|
@@ -136,13 +146,7 @@ ms.lasthandoff: 07/07/2017
  |조건부 액세스의 준수 정책에 대한 장치 상태 증명 평가|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#device-health-attestation-assessment-for-compliance-policies-for-conditional-access)|![추가되지 않음](media/Red_X.gif)|
  |Entrust 인증 기관에 대한 지원|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#support-for-entrust-certification-authorities)|![추가되지 않음](media/Red_X.gif)|
  |macOS VPN 프로필에 대한 Cisco(IPSec) 지원|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#cisco-ipsec-support-for-macos-vpn-profiles)|![추가되지 않음](media/Red_X.gif)|
-
-## <a name="capabilities-delivered-in-previous-technical-previews"></a>이전 Technical Preview에 포함된 기능
- Technical Preview 릴리스의 모든 기능을 현재 분기의 지원되는 최소 버전으로 사용할 수 있는 경우 해당 미리 보기 버전에 대한 세부 정보는 다음 표에서 제거됩니다.  
-
- |기능 |기술 미리 보기 버전 |현재 분기 버전|  
- |----------------|---------------------|--------------------|
-  |Azure AD 및 클라우드 관리에 대한 새로운 기능|[Tech Preview 1705](capabilities-in-technical-preview-1705.md#new-capabilities-for-azure-ad-and-cloud-management)|![추가되지 않음](media/Red_X.gif)|
+ |Azure AD 및 클라우드 관리에 대한 새로운 기능|[Tech Preview 1705](capabilities-in-technical-preview-1705.md#new-capabilities-for-azure-ad-and-cloud-management)|![추가되지 않음](media/Red_X.gif)|
  |Windows Defender Application Guard 정책 구성 및 배포|[Tech Preview 1705](capabilities-in-technical-preview-1705.md#configure-and-deploy-windows-defender-application-guard-policies)|![추가되지 않음](media/Red_X.gif)|
  |업데이트 다시 설정 도구  |[Tech Preview 1705](capabilities-in-technical-preview-1705.md#update-reset-tool)|![추가되지 않음](media/Red_X.gif)|
  |높은 DPI 콘솔 지원  |[Tech Preview 1705](capabilities-in-technical-preview-1705.md#high-dpi-console-support)|![추가되지 않음](media/Red_X.gif)|

@@ -2,7 +2,7 @@
 title: "사이트 필수 조건 | Microsoft 문서"
 description: "각 유형의 System Center Configuration Manager 사이트를 설치하기 위한 필수 조건을 알아봅니다."
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 7/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ caps.latest.revision: 5
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: ff89d4aea6be871e64e0a788f054ba4cadb3e51d
+ms.translationtype: HT
+ms.sourcegitcommit: 5945abb49fe06c59355805aa94b04d0d445ecbc3
+ms.openlocfilehash: d46a8b66ace45d25da9d86f2e91b19ae1d6875ab
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/24/2017
 
 ---
 # <a name="prerequisites-for-installing-system-center-configuration-manager-sites"></a>System Center Configuration Manager 사이트 설치에 대한 필수 조건
@@ -100,6 +100,19 @@ ms.lasthandoff: 05/17/2017
 -   **독립 실행형 기본 사이트와 중앙 관리 사이트를 설치할 컴퓨터 간에 SQL SSB(Server Service Broker)의 포트를 열어야 합니다.**  
 
      중앙 관리 사이트와 기본 사이트 간에 데이터를 성공적으로 복제하려면 Configuration Manager에서 두 사이트 간에 SSB가 사용할 포트가 열려 있어야 합니다. 중앙 관리 사이트를 설치하고 독립 실행형 기본 사이트를 확장하면 필수 조건 검사에서 SSB용으로 지정한 포트가 기본 사이트에서 열리도록 확인하지 않습니다.  
+
+**Azure 서비스 구성 시 알려진 문제:**  
+Configuration Manager에서 다음 Azure 서비스 중 하나를 사용하고 사이트를 확장할 계획인 경우 사이트 확장 후 반드시 해당 서비스 연결을 삭제한 후 다시 만들어야 합니다.
+
+서비스:  
+-       [Operations Manager 도구 모음](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite)(OMS)
+-       [업그레이드 준비](/sccm/core/clients/manage/upgrade/upgrade-analytics)
+-       [비즈니스용 Windows 스토어](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+
+이 문제를 해결하려면 다음 단계를 따르십시오.
+ 1.    Configuration Manager 콘솔에서 Azure 서비스 노드의 Azure 서비스를 삭제합니다.
+ 2.    Azure Portal에서 Azure Active Directory 테넌트 노드의 서비스와 연결된 테넌트를 삭제합니다.  서비스와 연결된 Azure AD 웹앱도 삭제됩니다.  
+ 3.   Configuration Manager와 함께 사용할 Azure 서비스를 다시 구성합니다.
 
 
 ## <a name="bkmk_secondary"></a> 보조 사이트

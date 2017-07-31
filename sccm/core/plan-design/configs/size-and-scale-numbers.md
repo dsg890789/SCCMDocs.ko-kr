@@ -2,7 +2,7 @@
 title: "크기 조정 및 규모 | Microsoft 문서"
 description: "System Center Configuration Manager 환경에서 장치를 지원하기 위해 필요한 사이트 시스템 역할 및 사이트 수를 확인합니다."
 ms.custom: na
-ms.date: 12/30/2016
+ms.date: 07/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ caps.latest.revision: 4
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f9c43e26758d5171a6ef56e827b4b054ebc8a5e5
-ms.openlocfilehash: c7ad33339e65e6e00e88f98d6e13baceb98dae77
+ms.translationtype: HT
+ms.sourcegitcommit: 5945abb49fe06c59355805aa94b04d0d445ecbc3
+ms.openlocfilehash: f539e2d282b56e56a9c58c773788325b27ea6b37
 ms.contentlocale: ko-kr
-ms.lasthandoff: 12/31/2016
+ms.lasthandoff: 07/24/2017
 
 ---
 # <a name="size-and-scale-numbers-for-system-center-configuration-manager"></a>System Center Configuration Manager의 크기 조정 및 규모 숫자 값
@@ -133,7 +133,7 @@ ms.lasthandoff: 12/31/2016
 ###  <a name="bkmk_cas"></a> 중앙 관리 사이트가 있는 계층 구조  
 중앙 관리 사이트는 다음과 같은 세 그룹에 대해 나열된 장치 수까지 포함하는 총 장치 수를 지원합니다.  
 
--   데스크톱(Windows, Linux 및 UNIX를 실행하는 컴퓨터) 700,000대  
+-   데스크톱(Windows, Linux 및 UNIX를 실행하는 컴퓨터) 700,000대 또한 [임베디드 장치](#embedded) 지원을 참조하세요.
 
 -   Mac 및 Windows CE 7.0을 실행하는 장치 25,000대  
 
@@ -152,7 +152,7 @@ ms.lasthandoff: 12/31/2016
 ###  <a name="bkmk_chipri"></a> 자식 기본 사이트  
 중앙 관리 사이트가 있는 계층의 각 자식 기본 사이트에서는 다음을 지원합니다.  
 
--   계층 구조에 대해 지원되는 수를 초과하지 않는 한 특정 그룹 또는 유형으로 제한되지 않는 총 클라이언트 및 장치 150,000대.  
+-   계층 구조에 대해 지원되는 수를 초과하지 않는 한 특정 그룹 또는 유형으로 제한되지 않는 총 클라이언트 및 장치 150,000대. 또한 [임베디드 장치](#embedded) 지원을 참조하세요.
 
 예를 들어 Mac 및 Windows CE 7.0을 실행하는 25,000대(계층 구조의 제한)의 컴퓨터를 지원하는 기본 사이트는 추가로 125,000대의 데스크톱 컴퓨터를 지원할 수 있습니다. 따라서 지원되는 장치의 총수는 지원되는 하위 기본 사이트의 최대 제한인 150,000대가 됩니다.
 
@@ -161,7 +161,7 @@ ms.lasthandoff: 12/31/2016
 
 -   총 클라이언트 및 장치 수는 175,000대이지만 다음을 초과하지 않습니다.  
 
-    -   데스크톱(Windows, Linux 및 UNIX를 실행하는 컴퓨터) 150,000대  
+    -   데스크톱(Windows, Linux 및 UNIX를 실행하는 컴퓨터) 150,000대 또한 [임베디드 장치](#embedded) 지원을 참조하세요.
 
     -   Mac 및 Windows CE 7.0을 실행하는 장치 25,000대
 
@@ -171,7 +171,11 @@ ms.lasthandoff: 12/31/2016
 
         -   클라우드 기반 장치 150,000  
 
+
 예를 들어 15,0000대 데스크톱 및 10,000대 Mac 또는 Windows CE 7.0을 지원하는 독립 실행형 기본 사이트에서는 15,000대의 추가 장치만 지원할 수 있습니다. 이러한 장치는 클라우드 기반이거나 온-프레미스 MDM을 사용하여 관리될 수 있습니다.  
+
+### <a name="embedded"></a>기본 사이트와 Windows Embedded 장치
+기본 사이트가 FBWF(파일 기반 쓰기 필터)를 사용할 수 있는 Windows Embedded 장치를 지원합니다. 임베디드 장치에서 쓰기 필터를 사용할 수 없는 경우 기본 사이트는 임베디드 장치를 해당 사이트에 대해 허용되는 장치 수까지 지원할 수 있습니다. [Windows Embedded 장치에 클라이언트 배포 계획](/sccm/core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices)에 나와 있는 예외가 적용되도록 장치가 구성되어 있는 경우, 기본 장치가 지원하는 총 장치 수 중에서 최대 10,000개는 Windows Embedded 장치일 수 있습니다. EWF를 사용할 수 있으며 예외가 적용되도록 구성되어 있지 않은 Windows Embedded 장치의 경우 기본 사이트에서 3,000개만 지원됩니다.
 
 ###  <a name="bkmk_sec"></a> 보조 사이트  
 보조 사이트에서는 다음을 지원합니다.  

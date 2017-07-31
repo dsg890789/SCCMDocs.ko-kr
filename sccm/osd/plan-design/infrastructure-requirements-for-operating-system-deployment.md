@@ -12,15 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 1dc74219-7ff5-4e3b-b4f6-5aad663bb75b
 caps.latest.revision: 24
-author: Dougeby
-ms.author: dougeby
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 065b1fcb25d7c7845b6f26e757b36e7fb97ce013
-ms.openlocfilehash: ef4536578456c13de5afaa5cd1977d2e6b4b6bd1
+ms.translationtype: HT
+ms.sourcegitcommit: 1f57c63ceeb13c7f7d760d7ecfb48df749da6770
+ms.openlocfilehash: 167e639cdb9995fd743787cc9fbf364ec70f6ed9
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/10/2017
-
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="infrastructure-requirements-for-operating-system-deployment-in-system-center-configuration-manager"></a>System Center Configuration Manager의 운영 체제 배포에 대한 인프라 요구 사항
@@ -41,7 +40,9 @@ System Center 2012 Configuration Manager의 운영 체제 배포에는 외부 �
 
 -   Windows 배포 도구  
 
--   Windows PE(Windows 사전 설치 환경)  
+-   Windows PE(Windows 사전 설치 환경)
+
+여러 버전의 Configuration Manager에서 사용할 수 있는 Windows 10 ADK 버전 목록은 [Windows 10 클라이언트 지원](https://docs.microsoft.com/en-us/sccm/core/plan-design/configs/support-for-windows-10#windows-10-adk)을 참조하세요.
 
  <sup>1</sup> SMS 공급자 사이트 시스템 서버에는 USMT가 필요하지 않습니다.  
 
@@ -171,7 +172,7 @@ System Center 2012 Configuration Manager의 운영 체제 배포에는 외부 �
  WDS(Windows 배포 서비스)는 PXE 또는 멀티캐스트를 지원하기 위해 구성한 배포 지점과 동일한 서버에 설치해야 합니다. WDS가 서버 운영 체제에 포함되어 있습니다. PXE 배포를 실행할 때 WDS는 PXE 부팅을 수행하는 서비스입니다. 배포 지점이 설치되고 이 배포 지점이 PXE를 사용하도록 설정되면 Configuration Manager에서는 WDS PXE 부팅 기능을 사용하는 공급자를 WDS에 설치합니다.  
 
 > [!NOTE]  
->  서버를 다시 시작해야 할 경우 WDS 설치는 실패할 수도 있습니다.  
+>  서버를 다시 시작해야 할 경우 WDS 설치는 실패할 수도 있습니다. 
 
  그 밖에 고려해야 할 다른 WDS 구성은 다음과 같습니다.  
 

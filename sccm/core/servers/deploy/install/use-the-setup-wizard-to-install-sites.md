@@ -1,7 +1,7 @@
 ---
 title: "설치 마법사 | Microsoft 문서"
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 7/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision: 3
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f809c9327db9f298168674add2d09820fdecd1b8
-ms.openlocfilehash: 14b4172ad713a3981b8a5abe182405e271d78c26
+ms.translationtype: HT
+ms.sourcegitcommit: 5945abb49fe06c59355805aa94b04d0d445ecbc3
+ms.openlocfilehash: 678f1b35fe6f7649dacb766f7c671f4ec8ea1435
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/24/2017
 
 ---
 # <a name="use-the-setup-wizard-to-install-system-center-configuration-manager-sites"></a>설치 마법사를 사용하여 System Center Configuration Manager 사이트를 설치할 수 있습니다.
@@ -140,7 +140,9 @@ ms.lasthandoff: 05/17/2017
 
 12. **데이터베이스 정보** 페이지에서 다음 정보를 지정합니다.  
 
-    -   **SQL Server 이름(FQDN):** 이 이름은 기본적으로 사이트 서버 컴퓨터로 설정됩니다.  
+    -   **SQL Server 이름(FQDN):** 이 이름은 기본적으로 사이트 서버 컴퓨터로 설정됩니다.
+
+     사용자 지정 포트를 사용하는 경우 SQL Server의 FQDN에 해당 포트를 추가합니다. 후속 서버의 FQDN 뒤에 쉼표, 포트 번호를 추가하면 됩니다.   예를 들어 *SQLServer1.fabrikam.com* 서버의 경우 다음을 사용하여 포트 *1551*을 지정합니다.  **SQLServer1.fabrikam.com,1551**
 
     -   **인스턴스 이름:** 이 이름은 기본적으로 비어 있으며 사이트 서버 컴퓨터의 기본 SQL 인스턴스를 사용합니다.  
 
