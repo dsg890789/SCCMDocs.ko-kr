@@ -12,9 +12,10 @@ ms.service:
 ms.technology:
 - configmgr-sum
 ms.assetid: fdf05118-162a-411e-b72e-386b9dc9a5e1
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
 ms.openlocfilehash: 179f076f228daa5adf612275a822cd379b0ce1e3
+ms.contentlocale: ko-kr
 ms.lasthandoff: 12/16/2016
 
 
@@ -84,7 +85,7 @@ ms.lasthandoff: 12/16/2016
 ### <a name="reporting-services-point"></a>보고 서비스 지점  
  보고 서비스 지점 사이트 시스템 역할에서는 소프트웨어 업데이트에 대한 보고서를 표시할 수 있습니다. 이 역할은 선택 사항이지만 설치하는 것이 좋습니다. 보고 서비스 지점을 만드는 방법에 대한 자세한 내용은 [보고 구성](../../core/servers/manage/configuring-reporting.md)을 참조하세요.  
 
-##  <a name="a-namebkmkrecoverupgradesa-recover-from-synchronizing-the-upgrades-category-before-you-install-kb-3095113"></a><a name="BKMK_RecoverUpgrades"></a> KB 3095113을 설치하기 전에 업그레이드 범주 동기화에서 복구  
+##  <a name="BKMK_RecoverUpgrades"></a> KB 3095113을 설치하기 전에 업그레이드 범주 동기화에서 복구  
  **업그레이드** 분류를 동기화하기 전에 소프트웨어 업데이트 지점 및 사이트 서버에 WSUS용 [핫픽스 3095113](https://support.microsoft.com/kb/3095113)을 설치해야 합니다. **업그레이드** 분류를 사용하도록 설정할 때 핫픽스가 설치되어 있지 않으면 연결된 패키지를 제대로 다운로드하여 배포할 수 없는 경우에도 WSUS에서 Windows 10 빌드 1511 기능 업그레이드를 표시합니다. 먼저 [핫픽스 3095113](https://support.microsoft.com/kb/3095113)을 설치하지 않고 업그레이드를 동기화하는 경우 WSUS 데이터베이스(SUSDB) 업그레이드가 사용할 수 없는 데이터로 채워집니다. 이러한 데이터는 업그레이드를 제대로 배포하기 위해 지워야 합니다.  이 문제를 해결하려면 다음 절차를 따르세요.  
 
 #### <a name="to-recover-from-synchronizing-the-upgrades-classification-before-you-install-kb-3095113"></a>KB 3095113을 설치하기 전에 업그레이드 분류 동기화에서 복구하려면  
