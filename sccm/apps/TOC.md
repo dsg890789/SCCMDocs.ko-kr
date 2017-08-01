@@ -20,6 +20,7 @@
 
 ## 응용 프로그램 배포
 ### [응용 프로그램 배포](deploy-use/deploy-applications.md)
+### [응용 프로그램 공유](deploy-use/share-applications.md)
 ### [응용 프로그램 배포 시뮬레이트](deploy-use/simulate-application-deployments.md)
 ### [App-V 가상 응용 프로그램 배포](get-started/deploying-app-v-virtual-applications.md)
 
@@ -37,3 +38,5 @@
 ### [응용 프로그램 업데이트 및 사용 중지](deploy-use/update-and-retire-applications.md)
 ### [응용 프로그램 수정 및 대체](deploy-use/revise-and-supersede-applications.md)
 ### [응용 프로그램 제거](deploy-use/uninstall-applications.md)
+
+## [스크립트 실행 및 관리](deploy-use/create-deploy-scripts.md)
