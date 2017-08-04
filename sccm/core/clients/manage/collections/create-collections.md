@@ -16,12 +16,11 @@ caps.handback.revision: 0
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9555a16d97224a1cf49a426ab225468b07403f60
-ms.openlocfilehash: e28fdeae809cadf78017dd2920e3f1a9484ec8a3
+ms.translationtype: HT
+ms.sourcegitcommit: 5f1412fb132e3a074742e11f1142b2594146cbe1
+ms.openlocfilehash: 44b4707b1a40624c51decf548d23ddd2164c5833
 ms.contentlocale: ko-kr
-ms.lasthandoff: 12/30/2016
-
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-create-collections-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 컬렉션을 만드는 방법
@@ -57,65 +56,65 @@ ms.lasthandoff: 12/30/2016
 5.  **장치 컬렉션 만들기 마법사**의 **멤버 관리 규칙** 페이지에 있는 **규칙 추가** 목록에서 이 컬렉션에 사용하려는 멤버 관리 규칙의 유형을 선택합니다. 각 컬렉션에 대해 여러 규칙을 구성할 수 있습니다.  
 
         
-        ##### To configure a direct rule  
+##### <a name="to-configure-a-direct-rule"></a>직접 규칙을 구성하려면  
 
-        1.  **직접 멤버 관리 규칙 만들기 마법사** 의 **리소스 검색**페이지에서 다음 정보를 지정합니다.  
+1.  **직접 멤버 관리 규칙 만들기 마법사** 의 **리소스 검색**페이지에서 다음 정보를 지정합니다.  
 
-            -   **리소스 클래스**: 검색하여 컬렉션에 추가하려는 리소스의 유형을 선택합니다. 클라이언트 컴퓨터에서 반환된 인벤토리 데이터를 검색하려면 **시스템 리소스** 값에서 선택하거나 알 수 없는 컴퓨터에서 반환된 값에서 선택하려면 **알 수 없는 컴퓨터** 를 선택합니다.  
+-   **리소스 클래스**: 검색하여 컬렉션에 추가하려는 리소스의 유형을 선택합니다. 클라이언트 컴퓨터에서 반환된 인벤토리 데이터를 검색하려면 **시스템 리소스** 값에서 선택하거나 알 수 없는 컴퓨터에서 반환된 값에서 선택하려면 **알 수 없는 컴퓨터** 를 선택합니다.  
 
-            -   **특성 이름**: 검색할 선택된 리소스 클래스와 연결된 특성을 선택합니다. 예를 들어 NetBIOS 이름으로 컴퓨터를 선택하려는 경우 **리소스 클래스** 목록에서 **시스템 리소스** 를 선택하고 **특성 이름** 목록에서 **NetBIOS 이름** 을 선택합니다.  
+-   **특성 이름**: 검색할 선택된 리소스 클래스와 연결된 특성을 선택합니다. 예를 들어 NetBIOS 이름으로 컴퓨터를 선택하려는 경우 **리소스 클래스** 목록에서 **시스템 리소스** 를 선택하고 **특성 이름** 목록에서 **NetBIOS 이름** 을 선택합니다.  
 
-            -   **사용되지 않음으로 표시된 리소스 제외** - 클라이언트 컴퓨터가 사용되지 않음으로 표시되는 경우 검색 결과에 이 값을 포함하지 마세요.  
+-   **사용되지 않음으로 표시된 리소스 제외** - 클라이언트 컴퓨터가 사용되지 않음으로 표시되는 경우 검색 결과에 이 값을 포함하지 마세요.  
 
-            -   **Configuration Manager 클라이언트가 설치되지 않은 리소스 제외** - 검색 결과에 표시되지 않습니다.  
+-   **Configuration Manager 클라이언트가 설치되지 않은 리소스 제외** - 검색 결과에 표시되지 않습니다.  
 
-            -   **값:** 선택한 특성 이름을 검색하려는 값을 입력합니다. 백분율 문자 **%** 를 와일드 카드로 사용할 수 있습니다. 예를 들어 "M"으로 시작하는 NetBIOS 이름을 가진 컴퓨터를 검색하려면 이 필드에 **M%**를 입력합니다.  
+-   **값:** 선택한 특성 이름을 검색하려는 값을 입력합니다. 백분율 문자 **%** 를 와일드 카드로 사용할 수 있습니다. 예를 들어 "M"으로 시작하는 NetBIOS 이름을 가진 컴퓨터를 검색하려면 이 필드에 **M%**를 입력합니다.  
 
-        2.  **리소스 선택** 페이지의 **리소스** 목록에서 컬렉션에 추가하려는 리소스를 선택하고 **다음**을 선택합니다.  
+2.  **리소스 선택** 페이지의 **리소스** 목록에서 컬렉션에 추가하려는 리소스를 선택하고 **다음**을 선택합니다.  
 
 
-        ##### To configure a query rule  
+##### <a name="to-configure-a-query-rule"></a>쿼리 규칙을 구성하려면  
 
-        1.  **쿼리 규칙 속성** 대화 상자에서 다음 정보를 지정합니다.  
+1.  **쿼리 규칙 속성** 대화 상자에서 다음 정보를 지정합니다.  
 
-            -   **이름**: 고유 이름을 지정합니다.  
+-   **이름**: 고유 이름을 지정합니다.  
 
-            -   **쿼리 문 가져오기** – 컬렉션에 대한 쿼리 규칙으로 사용할 [Configuration Manager 쿼리](../../../../core/servers/manage/create-queries.md)를 선택할 수 있는 **쿼리 찾아보기** 대화 상자를 엽니다.   
+-   **쿼리 문 가져오기** – 컬렉션에 대한 쿼리 규칙으로 사용할 [Configuration Manager 쿼리](../../../../core/servers/manage/create-queries.md)를 선택할 수 있는 **쿼리 찾아보기** 대화 상자를 엽니다.   
 
-            -   **리소스 클래스**: 목록에서 검색하여 컬렉션에 추가하려는 리소스의 유형을 선택합니다. 클라이언트 컴퓨터에서 반환된 인벤토리 데이터를 검색하려면 **시스템 리소스** 값에서 값을 선택하거나 알 수 없는 컴퓨터에서 반환된 값에서 선택하려면 **알 수 없는 컴퓨터** 를 선택합니다.  
+-   **리소스 클래스**: 목록에서 검색하여 컬렉션에 추가하려는 리소스의 유형을 선택합니다. 클라이언트 컴퓨터에서 반환된 인벤토리 데이터를 검색하려면 **시스템 리소스** 값에서 값을 선택하거나 알 수 없는 컴퓨터에서 반환된 값에서 선택하려면 **알 수 없는 컴퓨터** 를 선택합니다.  
 
-            -   **쿼리 문 편집** – 컬렉션에 대한 규칙으로 사용할 쿼리를 작성할 수 있는 **쿼리 문 속성** 대화 상자를 엽니다. 쿼리에 대한 자세한 내용은 [System Center Configuration Manager에 대한 쿼리 기술 참조](../../../../core/servers/manage/queries-technical-reference.md)를 참조하세요.  
+-   **쿼리 문 편집** – 컬렉션에 대한 규칙으로 사용할 쿼리를 작성할 수 있는 **쿼리 문 속성** 대화 상자를 엽니다. 쿼리에 대한 자세한 내용은 [System Center Configuration Manager에 대한 쿼리 기술 참조](../../../../core/servers/manage/queries-technical-reference.md)를 참조하세요.  
 
     
-        ##### To configure an include collection rule  
+##### <a name="to-configure-an-include-collection-rule"></a>포함 컬렉션 규칙을 구성하려면  
 
-        In the **Select Collections** dialog box, select the collections you want to include in the new collection, then choose **OK**.  
+**컬렉션 선택** 대화 상자에서 새 컬렉션에 포함하려는 컬렉션을 선택하고 **확인**을 선택합니다.  
 
-        ##### To configure an exclude collection rule  
+##### <a name="to-configure-an-exclude-collection-rule"></a>제외 컬렉션 규칙을 구성하려면  
 
-        In the **Select Collections** dialog box, select the collections you want to exclude from the new collection, then choose **OK**.  
+**컬렉션 선택** 대화 상자에서 새 컬렉션에서 제외하려는 컬렉션을 선택하고 **확인**을 선택합니다.  
 
-    -   **이 컬렉션에 대한 증분 업데이트 사용** – 전체 컬렉션 평가와 별개로 이전 컬렉션 평가에서 새로 추가되거나 변경된 리소스만 주기적으로 검색 및 업데이트하려면 이 옵션을 선택합니다. 증분 업데이트는 10분 간격으로 발생합니다.  
+-   **이 컬렉션에 대한 증분 업데이트 사용** – 전체 컬렉션 평가와 별개로 이전 컬렉션 평가에서 새로 추가되거나 변경된 리소스만 주기적으로 검색 및 업데이트하려면 이 옵션을 선택합니다. 증분 업데이트는 10분 간격으로 발생합니다.  
 
-        > [!IMPORTANT]  
-        >  다음 클래스를 사용하는 쿼리 규칙으로 구성된 컬렉션은 증분 업데이트를 지원하지 않습니다.  
-        >   
-        >  -   SMS_G_System_CollectedFile  
-        > -   SMS_G_System_LastSoftwareScan  
-        > -   SMS_G_System_AppClientState  
-        > -   SMS_G_System_DCMDeploymentState  
-        > -   SMS_G_System_DCMDeploymentErrorAssetDetails  
-        > -   SMS_G_System_DCMDeploymentCompliantAssetDetails  
-        > -   SMS_G_System_DCMDeploymentNonCompliantAssetDetails  
-        > -   SMS_G_User_DCMDeploymentCompliantAssetDetails(사용자 컬렉션 전용)  
-        > -   SMS_G_User_DCMDeploymentNonCompliantAssetDetails(사용자 컬렉션 전용)  
-        > -   SMS_G_System_SoftwareUsageData  
-        > -   SMS_G_System_CI_ComplianceState  
-        > -   SMS_G_System_EndpointProtectionStatus  
-        > -   SMS_GH_System_*  
-        > -   SMS_GEH_System_*  
+> [!IMPORTANT]  
+>  다음 클래스를 사용하는 쿼리 규칙으로 구성된 컬렉션은 증분 업데이트를 지원하지 않습니다.  
+>   
+> -   SMS_G_System_CollectedFile  
+> -   SMS_G_System_LastSoftwareScan  
+> -   SMS_G_System_AppClientState  
+> -   SMS_G_System_DCMDeploymentState  
+> -   SMS_G_System_DCMDeploymentErrorAssetDetails  
+> -   SMS_G_System_DCMDeploymentCompliantAssetDetails  
+> -   SMS_G_System_DCMDeploymentNonCompliantAssetDetails  
+> -   SMS_G_User_DCMDeploymentCompliantAssetDetails(사용자 컬렉션 전용)  
+> -   SMS_G_User_DCMDeploymentNonCompliantAssetDetails(사용자 컬렉션 전용)  
+> -   SMS_G_System_SoftwareUsageData  
+> -   SMS_G_System_CI_ComplianceState  
+> -   SMS_G_System_EndpointProtectionStatus  
+> -   SMS_GH_System_*  
+> -   SMS_GEH_System_*  
 
-    -   **이 컬렉션에 대한 전체 업데이트 예약** – 컬렉션 멤버 자격에 대한 정규 전체 평가를 예약합니다.  
+-   **이 컬렉션에 대한 전체 업데이트 예약** – 컬렉션 멤버 자격에 대한 정규 전체 평가를 예약합니다.  
 
 6.  새 컬렉션을 만드는 마법사를 완료합니다. 새 컬렉션이 **자산 및 준수** 작업 영역의 **장치 컬렉션** 노드에 표시됩니다.  
 
@@ -134,60 +133,60 @@ ms.lasthandoff: 12/30/2016
 
     -   **규칙 추가** 목록에서 이 컬렉션에 대해 사용하려는 멤버 관리 규칙의 유형을 선택합니다. 각 컬렉션에 대해 여러 규칙을 구성할 수 있습니다.  
 
-         ##### <a name="to-configure-a-direct-rule"></a>직접 규칙을 구성하려면  
+##### <a name="to-configure-a-direct-rule"></a>직접 규칙을 구성하려면  
 
-        1.  **직접 멤버 관리 규칙 만들기** 마법사의 **리소스 검색** 페이지에서 다음을 지정합니다.  
+1.  **직접 멤버 관리 규칙 만들기** 마법사의 **리소스 검색** 페이지에서 다음을 지정합니다.  
 
-            -   **리소스 클래스**: 검색하여 컬렉션에 추가하려는 리소스의 유형을 선택합니다. Configuration Manager에서 수집된 사용자 정보를 검색하도록 **사용자 리소스** 값에서 선택하거나 Configuration Manager에서 수집된 사용자 그룹 정보를 검색하도록 **사용자 그룹 리소스**를 선택합니다.  
+-   **리소스 클래스**: 검색하여 컬렉션에 추가하려는 리소스의 유형을 선택합니다. Configuration Manager에서 수집된 사용자 정보를 검색하도록 **사용자 리소스** 값에서 선택하거나 Configuration Manager에서 수집된 사용자 그룹 정보를 검색하도록 **사용자 그룹 리소스**를 선택합니다.  
 
-            -   **특성 이름**: 목록에서 검색할 리소스 클래스와 연결된 특성을 선택합니다. 예를 들어 사용자를 OU(조직 구성 단위) 이름으로 선택하려는 경우 **리소스 클래스** 목록의 **사용자 리소스** 를 선택하고 **특성 이름** 목록의 **사용자 OU 이름** 을 선택합니다.  
+-   **특성 이름**: 목록에서 검색할 리소스 클래스와 연결된 특성을 선택합니다. 예를 들어 사용자를 OU(조직 구성 단위) 이름으로 선택하려는 경우 **리소스 클래스** 목록의 **사용자 리소스** 를 선택하고 **특성 이름** 목록의 **사용자 OU 이름** 을 선택합니다.  
 
-            -   **값:** 검색하려는 값을 입력합니다. 백분율 문자 **%** 를 와일드 카드로 사용할 수 있습니다. 예를 들어 Contoso OU에서 사용자를 검색하려면 이 필드에 **Contoso**를 입력합니다.  
+-   **값:** 검색하려는 값을 입력합니다. 백분율 문자 **%** 를 와일드 카드로 사용할 수 있습니다. 예를 들어 Contoso OU에서 사용자를 검색하려면 이 필드에 **Contoso**를 입력합니다.  
 
-        2.  **리소스 선택** 페이지의 **리소스** 목록에서 컬렉션에 추가하려는 리소스를 선택합니다.  
+2.  **리소스 선택** 페이지의 **리소스** 목록에서 컬렉션에 추가하려는 리소스를 선택합니다.  
 
-        ##### <a name="to-configure-a-query-rule"></a>쿼리 규칙을 구성하려면  
+##### <a name="to-configure-a-query-rule"></a>쿼리 규칙을 구성하려면  
 
-        1.  **쿼리 규칙 속성** 대화 상자에 다음을 입력합니다.  
+1.  **쿼리 규칙 속성** 대화 상자에 다음을 입력합니다.  
 
-            -   **이름**: 고유 이름입니다.  
+-   **이름**: 고유 이름입니다.  
 
-            -   **쿼리 문 가져오기** – 컬렉션에 대한 쿼리 규칙으로 사용할 [Configuration Manager 쿼리](../../../../core/servers/manage/queries-technical-reference.md)를 선택할 수 있는 **쿼리 찾아보기** 대화 상자를 엽니다.  
+-   **쿼리 문 가져오기** – 컬렉션에 대한 쿼리 규칙으로 사용할 [Configuration Manager 쿼리](../../../../core/servers/manage/queries-technical-reference.md)를 선택할 수 있는 **쿼리 찾아보기** 대화 상자를 엽니다.  
 
-            -   **리소스 클래스**: 검색하여 컬렉션에 추가하려는 리소스의 유형을 선택합니다. Configuration Manager에서 수집된 사용자 정보를 검색하도록 **사용자 리소스** 값에서 선택하거나 Configuration Manager에서 수집된 사용자 그룹 정보를 검색하도록 **사용자 그룹 리소스**를 선택합니다.  
+-   **리소스 클래스**: 검색하여 컬렉션에 추가하려는 리소스의 유형을 선택합니다. Configuration Manager에서 수집된 사용자 정보를 검색하도록 **사용자 리소스** 값에서 선택하거나 Configuration Manager에서 수집된 사용자 그룹 정보를 검색하도록 **사용자 그룹 리소스**를 선택합니다.  
 
-            -   **쿼리 문 편집** – 컬렉션에 대한 규칙으로 사용할 [쿼리를 작성](../../../../core/servers/manage/queries-technical-reference.md)할 수 있는 **쿼리 문 속성** 대화 상자를 엽니다.  
+-   **쿼리 문 편집** – 컬렉션에 대한 규칙으로 사용할 [쿼리를 작성](../../../../core/servers/manage/queries-technical-reference.md)할 수 있는 **쿼리 문 속성** 대화 상자를 엽니다.  
 
-        ##### <a name="to-configure-an-include-collection-rule"></a>포함 컬렉션 규칙을 구성하려면  
+##### <a name="to-configure-an-include-collection-rule"></a>포함 컬렉션 규칙을 구성하려면  
 
-        **컬렉션 선택** 대화 상자에서 새 컬렉션에 포함하려는 컬렉션을 선택하고 **확인**을 선택합니다.  
+**컬렉션 선택** 대화 상자에서 새 컬렉션에 포함하려는 컬렉션을 선택하고 **확인**을 선택합니다.  
 
-        ##### <a name="to-configure-an-exclude-collection-rule"></a>제외 컬렉션 규칙을 구성하려면  
+##### <a name="to-configure-an-exclude-collection-rule"></a>제외 컬렉션 규칙을 구성하려면  
 
-        **컬렉션 선택** 대화 상자에서 새 컬렉션에서 제외하려는 컬렉션을 선택하고 **확인**을 선택합니다.  
+**컬렉션 선택** 대화 상자에서 새 컬렉션에서 제외하려는 컬렉션을 선택하고 **확인**을 선택합니다.  
 
 
-    -   **이 컬렉션에 대한 증분 업데이트 사용** – 전체 컬렉션 평가와 별개로 이전 컬렉션 평가에서 새로 추가되거나 변경된 리소스만 주기적으로 검색 및 업데이트하려면 이 옵션을 선택합니다. 증분 업데이트는 10분 간격으로 발생합니다.  
+-   **이 컬렉션에 대한 증분 업데이트 사용** – 전체 컬렉션 평가와 별개로 이전 컬렉션 평가에서 새로 추가되거나 변경된 리소스만 주기적으로 검색 및 업데이트하려면 이 옵션을 선택합니다. 증분 업데이트는 10분 간격으로 발생합니다.  
 
-        > [!IMPORTANT]  
-        >  다음 클래스를 사용하는 쿼리 규칙으로 구성된 컬렉션은 증분 업데이트를 지원하지 않습니다.  
-        >   
-        >  -   SMS_G_System_CollectedFile  
-        > -   SMS_G_System_LastSoftwareScan  
-        > -   SMS_G_System_AppClientState  
-        > -   SMS_G_System_DCMDeploymentState  
-        > -   SMS_G_System_DCMDeploymentErrorAssetDetails  
-        > -   SMS_G_System_DCMDeploymentCompliantAssetDetails  
-        > -   SMS_G_System_DCMDeploymentNonCompliantAssetDetails  
-        > -   SMS_G_User_DCMDeploymentCompliantAssetDetails(사용자 컬렉션 전용)  
-        > -   SMS_G_User_DCMDeploymentNonCompliantAssetDetails(사용자 컬렉션 전용)  
-        > -   SMS_G_System_SoftwareUsageData  
-        > -   SMS_G_System_CI_ComplianceState  
-        > -   SMS_G_System_EndpointProtectionStatus  
-        > -   SMS_GH_System_*  
-        > -   SMS_GEH_System_*  
+> [!IMPORTANT]  
+>  다음 클래스를 사용하는 쿼리 규칙으로 구성된 컬렉션은 증분 업데이트를 지원하지 않습니다.  
+>   
+> -   SMS_G_System_CollectedFile  
+> -   SMS_G_System_LastSoftwareScan  
+> -   SMS_G_System_AppClientState  
+> -   SMS_G_System_DCMDeploymentState  
+> -   SMS_G_System_DCMDeploymentErrorAssetDetails  
+> -   SMS_G_System_DCMDeploymentCompliantAssetDetails  
+> -   SMS_G_System_DCMDeploymentNonCompliantAssetDetails  
+> -   SMS_G_User_DCMDeploymentCompliantAssetDetails(사용자 컬렉션 전용)  
+> -   SMS_G_User_DCMDeploymentNonCompliantAssetDetails(사용자 컬렉션 전용)  
+> -   SMS_G_System_SoftwareUsageData  
+> -   SMS_G_System_CI_ComplianceState  
+> -   SMS_G_System_EndpointProtectionStatus  
+> -   SMS_GH_System_*  
+> -   SMS_GEH_System_*  
 
-    -   **이 컬렉션에 대한 전체 업데이트 예약** – 컬렉션 멤버 자격에 대한 정규 전체 평가를 예약합니다.  
+-   **이 컬렉션에 대한 전체 업데이트 예약** – 컬렉션 멤버 자격에 대한 정규 전체 평가를 예약합니다.  
 
 6.  마법사를 완료합니다. 새 컬렉션이 **자산 및 준수** 작업 영역의 **사용자 컬렉션** 노드에 표시됩니다.  
 

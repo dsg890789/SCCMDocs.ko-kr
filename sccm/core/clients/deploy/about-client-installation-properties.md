@@ -15,11 +15,11 @@ caps.latest.revision: 15
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a1fc9f2db7c9c2b40d986bb39a0b27d6cc699987
-ms.openlocfilehash: 454828d64b5643e57da4cff3aa3f671e8cd157b1
+ms.translationtype: HT
+ms.sourcegitcommit: afe0ecc4230733fa76e41bf08df5ccfb221da7c8
+ms.openlocfilehash: fef330a14ad2a1f75d520eac0706a376953993e8
 ms.contentlocale: ko-kr
-ms.lasthandoff: 01/05/2017
+ms.lasthandoff: 08/04/2017
 
 ---
 # <a name="about-client-installation-properties-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 설치 속성 정보
@@ -528,8 +528,6 @@ Configuration Manager 클라이언트가 사용할 초기 관리 지점을 지�
 
 > [!IMPORTANT]  
 >  관리 지점에서 HTTPS를 통한 클라이언트 연결만 수락하는 경우 관리 지점 이름 앞에 https://를 붙여야 합니다.  
-
-예: `CCMSetup.exe SMSMP=smsmp01.contoso.com`  
 
 예: `CCMSetup.exe SMSMP=smsmp01.contoso.com`
 

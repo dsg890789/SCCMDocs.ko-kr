@@ -16,11 +16,11 @@ caps.handback.revision: 0
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 74f4dd44089d4a13526c981589e1f497f0e10290
+ms.translationtype: HT
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: 50c137f159b0ef631f7173b8eec190182ce41cee
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/29/2017
 
 ---
 # <a name="protect-apps-using-mobile-application-management-policies-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 모바일 응용 프로그램 관리 정책을 사용하여 앱 보호
@@ -43,12 +43,12 @@ System Center Configuration Manager 응용 프로그램 관리 정책을 사용�
 
 앱에 제한을 적용하려면 Microsoft Intune 앱 SDK(소프트웨어 개발 키트)를 통합해야 합니다. 이러한 유형의 앱은 두 가지 방법으로 얻을 수 있습니다.  
 
--   **정책 관리 앱 사용**(Android 및 iOS): 이러한 앱에는 앱 SDK가 기본으로 제공됩니다. 이 유형의 앱을 추가하려면 iTunes 스토어, Google Play 등의 앱 스토어에 있는 앱의 링크를 지정합니다. 이러한 앱 유형은 추가로 처리할 필요가 없습니다. iOS 및 Android 장치에 대해 사용 가능한 정책 관리 앱의 목록은 [Microsoft Intune 모바일 응용 프로그램 관리 정책용 관리되는 앱](https://technet.microsoft.com/en-us/library/dn708489.aspx)을 참조하세요.  
+-   **정책 관리 앱 사용**(Android 및 iOS): 이러한 앱에는 앱 SDK가 기본으로 제공됩니다. 이 유형의 앱을 추가하려면 iTunes 스토어, Google Play 등의 앱 스토어에 있는 앱의 링크를 지정합니다. 이러한 앱 유형은 추가로 처리할 필요가 없습니다. iOS 및 Android 장치에 대해 사용 가능한 정책 관리 앱의 목록은 [Microsoft Intune 모바일 응용 프로그램 관리 정책용 관리되는 앱](https://technet.microsoft.com/library/dn708489.aspx)을 참조하세요.  
 
 -   **"래핑된" 앱 사용**(Android 및 iOS): 이러한 앱은 **Microsoft Intune 앱 래핑 도구**를 사용하여 앱 SDK를 포함하도록 다시 패키지됩니다. 이 도구는 일반적으로 사내에서 작성된 회사 앱을 처리하는 데 사용되며, 앱 스토어에서 다운로드한 앱을 처리하는 데 사용할 수는 없습니다. 자세한 내용은 다음 문서를 참조하세요.
-    - [Microsoft Intune 앱 래핑 도구를 사용하여 모바일 응용 프로그램 관리용 iOS 앱 준비](https://technet.microsoft.com/en-us/library/dn878028.aspx)
+    - [Microsoft Intune 앱 래핑 도구를 사용하여 모바일 응용 프로그램 관리용 iOS 앱 준비](https://technet.microsoft.com/library/dn878028.aspx)
 
-    - [Microsoft Intune 앱 래핑 도구를 사용하여 모바일 응용 프로그램 관리용 Android 앱 준비](https://technet.microsoft.com/en-us/library/mt147413.aspx)  
+    - [Microsoft Intune 앱 래핑 도구를 사용하여 모바일 응용 프로그램 관리용 Android 앱 준비](https://technet.microsoft.com/library/mt147413.aspx)  
 
 ## <a name="create-and-deploy-an-app-with-a-mobile-application-management-policy"></a>모바일 응용 프로그램 관리 정책을 사용하여 앱 만들기 및 배포  
 
@@ -58,7 +58,7 @@ System Center Configuration Manager 응용 프로그램 관리 정책을 사용�
 
      예를 들어 iPad용 Microsoft Word 앱의 URL은 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**입니다.  
 
--   **래핑된 앱을 만들려면**: [Microsoft Intune 앱 래핑 도구를 사용한 모바일 응용 프로그램 관리를 위해 iOS 앱 준비](https://technet.microsoft.com/en-us/library/dn878028.aspx) 및 [Microsoft Intune 앱 래핑 도구를 사용한 모바일 응용 프로그램 관리를 위해 Android 앱 준비](https://technet.microsoft.com/en-us/library/mt147413.aspx) 항목의 정보에 따라 래핑된 앱을 만듭니다.  
+-   **래핑된 앱을 만들려면**: [Microsoft Intune 앱 래핑 도구를 사용한 모바일 응용 프로그램 관리를 위해 iOS 앱 준비](https://technet.microsoft.com/library/dn878028.aspx) 및 [Microsoft Intune 앱 래핑 도구를 사용한 모바일 응용 프로그램 관리를 위해 Android 앱 준비](https://technet.microsoft.com/library/mt147413.aspx) 항목의 정보에 따라 래핑된 앱을 만듭니다.  
 
      이 도구는 처리된 앱 및 연결된 매니페스트 파일을 만듭니다. 앱을 포함하는 Configuration Manager 응용 프로그램을 만들 때 이러한 파일을 사용합니다.  
 
@@ -178,5 +178,5 @@ System Center Configuration Manager 응용 프로그램 관리 정책을 사용�
 -   장치에 아직 배포된 정책이 없는 상태에서 충돌하는 두 설정이 배포되면 장치에서 기본 제공되는 설정이 사용됩니다.  
 
 ##  <a name="see-a-list-of-available-policy-managed-apps"></a>사용 가능한 정책으로 관리되는 앱 목록 참조  
- iOS 및 Android 장치에 대해 사용 가능한 정책 관리 앱의 목록은 [Microsoft Intune 응용 프로그램 파트너](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners)를 참조하세요.  
+ iOS 및 Android 장치에 대해 사용 가능한 정책 관리 앱의 목록은 [Microsoft Intune 응용 프로그램 파트너](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)를 참조하세요.  
 
