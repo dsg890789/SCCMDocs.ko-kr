@@ -51,7 +51,7 @@ System Center Configuration Manager CCMSetup.exe 명령을 사용하여 Configur
 
  명령 프롬프트에서 CCMSetup.exe 명령은 다음 형식을 사용합니다.  
 
- `CCMSetup.exe [&lt;Ccmsetup properties\>] [&lt;client.msi setup properties>]`  
+ `CCMSetup.exe [<Ccmsetup properties>] [<client.msi setup properties>]`  
 
  예제:  
 
