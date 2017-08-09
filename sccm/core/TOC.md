@@ -15,6 +15,7 @@
 ### [장기 서비스 분기 관리](understand/manage-the-ltsb.md)
 ### [장기 서비스 분기를 현재 분기로 업그레이드](understand/convert-to-current-branch.md)
 ##  [사용해야 하는 Configuration Manager 분기](understand/which-branch-should-i-use.md)
+##  [확장된 상호 운용성 클라이언트](understand/interoperability-client.md)
 ##  [System Center Configuration Manager 라이선스](understand/learn-more-editions.md)
 ##  [클라우드 서비스 사용](understand/use-cloud-services.md)
 ### [Azure의 Configuration Manager](understand/configuration-manager-on-azure.md)
