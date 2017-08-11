@@ -123,3 +123,4 @@ Updates Publisher를 설치하려면 *필수 조건*을 충족하는 컴퓨터�
 
  그러나 기본값을 사용하고 업데이트 서버 또는 관리 장치에 업데이트를 배포하지 않으려면 [소프트웨어 업데이트 카탈로그 관리](updates-publisher-catalogs.md)로 바로 이동하거나, [소프트웨어 업데이트를 만들고](create-updates-with-updates-publisher.md) 업데이트 카탈로그를 직접 만듭니다.
 
+
