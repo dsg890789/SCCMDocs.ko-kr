@@ -16,12 +16,11 @@ caps.handback.revision: 0
 author: Nbigman
 ms.author: nbigman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: aa8924a013ebdbee888cab33001fddbe7ad2d67e
-ms.openlocfilehash: 80a716f5a42a81e5550eb1b5c7f14534e14a4fb7
+ms.translationtype: HT
+ms.sourcegitcommit: c0d94b8e6ca6ffd82e879b43097a9787e283eb6d
+ms.openlocfilehash: 1e00804d27ecef2aadd8bfa395db1919c46243ee
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.lasthandoff: 08/02/2017
 
 ---
 
@@ -34,10 +33,16 @@ Configuration Manager(SCCM)에서 인증서 프로필을 사용하여 관리되�
 
 이 항목에서는 신뢰할 수 있는 루트 인증서 및 SCEP 인증서 프로필을 만드는 방법을 설명합니다. PFX 인증서 프로필을 만들려는 경우 [PFX 인증서 프로필 만들기](../../protect/deploy-use/create-pfx-certificate-profiles.md)를 참조하세요.
 
+인증서 프로필을 만들려면
 
-## <a name="create-a-new-certificate-profile"></a>새 인증서 프로필 만들기  
+1.  인증서 프로필 만들기 마법사를 시작합니다.
+1.  인증서에 대한 일반 정보를 제공합니다.
+1.  신뢰할 수 있는 CA(인증 기관) 인증서를 구성합니다.  
+1.  SCEP 인증서 정보를 구성합니다(SCEP 인증서에만 해당).  
+1.  인증서 프로필에 대해 지원되는 플랫폼을 지정합니다.
 
-### <a name="start-the-create-certificate-profile-wizard"></a>인증서 프로필 만들기 마법사 시작  
+
+## <a name="start-the-create-certificate-profile-wizard"></a>인증서 프로필 만들기 마법사 시작  
 
 1.  System Center Configuration Manager 콘솔에서 **자산 및 준수**를 클릭합니다.  
 
@@ -45,7 +50,7 @@ Configuration Manager(SCCM)에서 인증서 프로필을 사용하여 관리되�
 
 3.  **홈** 탭의 **만들기** 그룹에서 **인증서 프로필 만들기**를 클릭합니다.  
 
-### <a name="provide-general-information-about-the-certificate-profile"></a>인증서 프로필에 대한 일반 정보 제공  
+## <a name="provide-general-information-about-the-certificate-profile"></a>인증서 프로필에 대한 일반 정보 제공  
 
 인증서 프로필 만들기 마법사의 **일반** 페이지에서 다음 정보를 지정합니다.  
 
@@ -59,11 +64,12 @@ Configuration Manager(SCCM)에서 인증서 프로필을 사용하여 관리되�
 
 -   **SCEP(단순 인증서 등록 프로토콜) 설정**: 단순 인증서 등록 프로토콜 및 네트워크 장치 등록 서비스 역할 서비스를 사용하여 장치 또는 사용자의 인증서를 요청하려면 이 인증서 프로필 유형을 선택합니다.
 
--   **개인 정보 교환 PKCS #12(PFX) 설정 - 가져오기**: PFX 인증서를 가져오려면 이 옵션을 선택합니다. PFX 인증서를 만드는 방법을 자세히 알아보려면 [PFX 인증서 프로필 만들기](../../protect/deploy-use/create-pfx-certificate-profiles.md)를 참조하세요.
+-   **개인 정보 교환 PKCS #12(PFX) 설정 - 가져오기**: PFX 인증서를 가져오려면 이 옵션을 선택합니다. PFX 인증서를 만드는 방법을 자세히 알아보려면 [PFX 인증서 프로필 가져오기](/sccm/mdm/deploy-use/import-pfx-certificate-profiles.md)를 참조하세요.
+
+-   **개인 정보 교환 PKCS #12(PFX) 설정 - 만들기**: 이를 선택하여 인증 기관을 통해 PFX 인증서를 처리합니다. PFX 인증서를 만드는 방법을 자세히 알아보려면 [PFX 인증서 프로필 만들기](/sccm/mdm/deploy-use/create-pfx-certificate-profiles.md)를 참조하세요.
 
 
-
-### <a name="configure-a-trusted-ca-certificate"></a>신뢰할 수 있는 CA 인증서 구성  
+## <a name="configure-a-trusted-ca-certificate"></a>신뢰할 수 있는 CA 인증서 구성  
 
 > [!IMPORTANT]  
 >  SCEP 인증서 프로필을 만들려면 먼저 신뢰할 수 있는 CA 인증서 프로필을 하나 이상 구성해야 합니다.    
@@ -89,7 +95,7 @@ Configuration Manager(SCCM)에서 인증서 프로필을 사용하여 관리되�
 2.  **인증서 지문** 값을 사용하여 올바른 인증서를 가져왔는지 확인합니다.  
 
 
-### <a name="configure-scep-certificate-information-only-for-scep-certificates"></a>SCEP 인증서 정보 구성(SCEP 인증서에만 해당)  
+## <a name="configure-scep-certificate-information-only-for-scep-certificates"></a>SCEP 인증서 정보 구성(SCEP 인증서에만 해당)  
 
 1.  인증서 프로필 만들기 마법사의 **SCEP 서버** 페이지에서 SCEP를 통해 인증서를 발급할 NDES 서버의 URL을 지정합니다. 인증서 등록 지점 사이트 시스템 서버의 구성에 따라 NDES URL을 자동으로 지정하거나 URL을 수동으로 추가하도록 선택할 수 있습니다.  
 
@@ -183,7 +189,7 @@ Configuration Manager(SCCM)에서 인증서 프로필을 사용하여 관리되�
    >  사용자 또는 장치에 배포되지 않은 루트 CA 인증서를 지정할 경우 System Center Configuration Manager는 이 인증서 프로필에서 구성 중인 인증서 요청을 시작하지 않습니다.  
 
 
-###  <a name="specify-supported-platforms-for-the-certificate-profile"></a>인증서 프로필에 대해 지원되는 플랫폼 지정  
+##  <a name="specify-supported-platforms-for-the-certificate-profile"></a>인증서 프로필에 대해 지원되는 플랫폼 지정  
 
 1. 인증서 프로필 만들기 마법사의 **지원되는 플랫폼** 페이지에서 인증서 프로필을 설치하려는 운영 체제를 선택합니다. 또는 **모두 선택** 을 클릭하여 사용 가능한 모든 운영 체제에 인증서 프로필을 설치합니다.
 2. 마법사의 **요약** 페이지를 검토하고 **마침**을 선택합니다. 

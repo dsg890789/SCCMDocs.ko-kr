@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager의 VPN 프로필 | Microsoft 문서"
 description: "System Center Configuration Manager의 모바일 장치에 대한 VPN 프로필"
 ms.custom: na
-ms.date: 03/05/2017
+ms.date: 07/26/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,11 +16,11 @@ caps.handback.revision: 0
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d5166b16ffbe46af561b1ce98c0494cc4aaa72a8
-ms.openlocfilehash: aacd11708f9f9bd5b0a2d1b1cd6db3c60a7c0c28
+ms.translationtype: HT
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: e4a53caab7d76b604a3fee7dcfc4dc48f22b0fb0
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/29/2017
 
 ---
 # <a name="vpn-profiles-on-mobile-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager의 모바일 장치에 대한 VPN 프로필
@@ -39,7 +39,8 @@ System Center Configuration Manager의 VPN 프로필을 사용하여 조직의 �
 
  |연결 유형|iOS 및 macOS X|Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop 및 Mobile|  
  |---------------------|----------------------|-------------|-----------------|----------------|--------------------|-----------------------|-----------------------------------|  
- |Cisco AnyConnect|예|예|아니요|아니요|아니요|아니요|예(OMA-URI)|  
+ |Cisco AnyConnect|예|예|아니요|아니요|아니요|아니요|예(OMA-URI)|
+ |Cisco(IPsec)|iOS에만 해당|아니요|아니요|아니요|아니요|아니요|아니요|  
  |Pulse Secure|예|예|예|아니요|예|예|예|  
  |F5 Edge Client|예|예|예|아니요|예|예|예|  
  |Dell SonicWALL Mobile Connect|예|예|예|아니요|예|예|예|  
@@ -106,7 +107,7 @@ System Center Configuration Manager의 VPN 프로필을 사용하여 조직의 �
             - 장치 준수에 대해 VPN 인증 인증서 이외의 인증서를 선택하려면 **대체 인증서로 SSO(Single Sign-On) 사용**을 선택합니다. 이 옵션을 선택하는 경우 VPN 클라이언트가 찾아야 하는 올바른 인증서의 **EKU**(쉼표로 구분된 목록) 및 **발급자 해시**를 제공합니다.
 
          - **Windows Information Protection** - 엔터프라이즈에서 관리되는 회사 ID를 제공합니다. 일반적으로 조직의 기본 도메인(예: *contoso.com*)입니다. "|" 문자로 구분하여 조직에서 소유하는 여러 도메인을 지정할 수 있습니다. 예를 들어 *contoso.com|newcontoso.com*입니다.   
-              Windows Information Protection에 대한 자세한 내용은 [Microsoft Intune을 사용하여 WIP(Windows Information Protection) 정책 만들기](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/create-wip-policy-using-intune)를 참조하세요.   
+            Windows Information Protection에 대한 자세한 내용은 [Microsoft Intune을 사용하여 WIP(Windows Information Protection) 정책 만들기](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/create-wip-policy-using-intune)를 참조하세요.   
 
          ![VPN에 대한 조건부 액세스 구성](media/vpn-conditional-access.png)
 

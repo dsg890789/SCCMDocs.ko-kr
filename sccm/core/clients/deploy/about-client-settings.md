@@ -2,7 +2,7 @@
 title: "클라이언트 설정 | Microsoft 문서"
 description: "System Center Configuration Manager에서 관리 콘솔을 사용하여 클라이언트 설정을 선택합니다."
 ms.custom: na
-ms.date: 03/24/2017
+ms.date: 08/01/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,11 +16,11 @@ caps.handback.revision: 0
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c8717925dba42451b1e241a7c2f59e43896d7d99
-ms.openlocfilehash: 4a169098f30e4a9d708e41ee25c6a400d5ff0e85
+ms.translationtype: HT
+ms.sourcegitcommit: c0d94b8e6ca6ffd82e879b43097a9787e283eb6d
+ms.openlocfilehash: a8233c361e1a78b14a02f328da445814624e38d8
 ms.contentlocale: ko-kr
-ms.lasthandoff: 06/19/2017
+ms.lasthandoff: 08/02/2017
 
 ---
 # <a name="about-client-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 설정 정보
@@ -63,9 +63,25 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
 
   버전 1606부터 [BranchCache](/sccm/core/plan-design/configs/support-for-windows-features-and-networks#branchcache)를 사용하도록 클라이언트 컴퓨터를 설정하려면 이 설정을 사용합니다. 클라이언트에 대해 BranchCache 캐싱을 허용하려면 **BranchCache 사용**을 **예**로 설정합니다.
 
+- **BranchCache 사용**
+
+클라이언트 컴퓨터에서 BranchCache를 사용하도록 설정합니다.
+
+- **최대 BranchCache 캐시 크기(디스크의 비율)**
+
 - **클라이언트 캐시 크기 구성**
 
-  Windows 컴퓨터의 클라이언트 캐시에서 응용 프로그램 및 프로그램 설치에 사용되는 임시 파일이 저장됩니다. **최대 캐시 크기**(MB 또는 디스크의 백분율)를 지정하려면 **예**를 선택합니다. 클라이언트 캐시 크기는 MB 또는 디스크에 대한 백분율 최대값(**둘 중 더 작은 크기**)으로 확장될 수 있습니다. 이 옵션이 **아니요**인 경우 기본 크기는 5,120MB입니다.
+  Windows 컴퓨터의 클라이언트 캐시에서 응용 프로그램 및 프로그램 설치에 사용되는 임시 파일이 저장됩니다. **예**를 선택하고 다음을 지정합니다.
+    - **최대 캐시 크기**(메가바이트) 
+    - **최대 캐시 크기**(디스크의 비율)
+클라이언트 캐시 크기는 MB 또는 디스크에 대한 백분율 최대값(**둘 중 더 작은 크기**)으로 확장될 수 있습니다. 이 옵션이 **아니요**인 경우 기본 크기는 5,120MB입니다.
+
+- **콘텐츠를 공유하도록 정품 OS에서 Configuration Manager 클라이언트 사용**
+
+Configuration Manager 클라이언트에 대한 피어 캐시를 사용하도록 설정합니다. 그런 다음 클라이언트가 피어 컴퓨터와 통신하는 데 사용하는 포트 정보를 지정합니다. Configuration Manager는 이 트래픽을 허용하도록 자동으로 Windows 방화벽 규칙을 구성합니다. 다른 방화벽을 사용하는 경우 이 트래픽을 허용하도록 수동으로 포트를 구성해야 합니다.
+
+
+
 
 ## <a name="client-policy"></a>클라이언트 정책  
 
@@ -140,7 +156,7 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
 
      -   클라이언트에 대한 가장 가까운 서버를 수동으로 구성하거나 느린 네트워크 연결을 사용하는 서버에 연결하지 않으려고 합니다.  
 
-     -   각 서버에 연결되는 클라이언트를 제어하려고 합니다. 테스트, 성능 또는 비즈니스 사유로 이렇게 할 수 있습니다.  
+     -   각 서버에 연결되는 클라이언트를 제어하려고 합니다. 이 구성은 테스트, 성능 또는 비즈니스 사유로 사용할 수 있습니다.  
 
      -   최대 25시간을 기다리거나 다른 응용 프로그램 카탈로그 웹 사이트 지점을 사용하여 클라이언트에 대한 네트워크 변경이 구성되는 것을 기다리길 원하지 않습니다.  
 

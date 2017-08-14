@@ -1,7 +1,7 @@
 ---
 title: "검색 방법 | Microsoft 문서"
 ms.custom: na
-ms.date: 2/3/2017
+ms.date: 07/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision: 8
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 81d7516b814d2db74d4d857871071c8911755754
-ms.openlocfilehash: 6e53f501281e31f2b7df54b9740eac970f108257
+ms.translationtype: HT
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: 442e5e1fbddd00248819a8de79adc78929474fc0
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/29/2017
 
 ---
 # <a name="about-discovery-methods-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 검색 방법 정보
@@ -189,6 +189,27 @@ Active Directory 시스템 검색 작업은 사이트 서버에 있는 **&lt;Ins
 Active Directory 사용자 검색 작업은 사이트 서버에 있는 **&lt;InstallationPath\>\LOGS** 폴더의 **adusrdis.log** 파일에 기록됩니다.  
 
 이 검색 방법을 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 검색 방법 구성](../../../../core/servers/deploy/configure/configure-discovery-methods.md)을 참조하세요.  
+
+## <a name="azureaddisc"></a> Active Directory 사용자 검색
+버전 1706부터 Azure 서비스를 사용하도록 환경을 구성할 때 Azure AD(Azure Active Directory) 사용자 검색을 사용할 수 있습니다.
+이 검색 방법을 사용하여 Azure AD 인스턴스에서 인증을 받은 사용자를 Azure AD에서 검색하고 다음 특성을 찾습니다.  
+-   objectId
+-   displayName
+-   mail
+-   mailNickname
+-   onPremisesSecurityIdentifier
+-   userPrincipalName
+-   AAD tenantID
+
+이 메서드는 Azure AD의 사용자 데이터 전체 동기화 및 델타 동기화를 지원합니다. 이러한 동기화가 수행된 후에는 이 정보를 다른 검색 방법으로 수집한 검색 데이터와 함께 사용할 수 있습니다.
+
+Azure AD 사용자 검색에 대한 작업은 계층 구조에서 최상위 계층 사이트 서버에 있는 SMS_AZUREAD_DISCOVERY_AGENT.log 파일에 기록됩니다.
+
+Azure AD 사용자 검색을 구성하려면 Azure 서비스 마법사를 사용합니다.  이 검색 방법을 구성하는 방법에 대한 자세한 내용은 [Azure AD 사용자 검색 구성](/sccm/core/servers/deploy/configure/configure-discovery-methods)을 참조하세요.
+
+
+
+
 
 ##  <a name="bkmk_aboutHeartbeat"></a> 하트비트 검색  
 **구성 가능 여부:** 예  
@@ -407,7 +428,7 @@ Active Directory 사용자 검색 작업은 사이트 서버에 있는 **&lt;Ins
 
 검색은 지정된 위치에서 개체를 찾은 다음 이러한 개체에 대한 정보를 수집합니다. 리소스에 대한 충분한 정보가 파악되면 DDR이 만들어집니다. 필요한 정보는 사용되는 검색 방법에 따라 달라집니다.  
 
-서로 다른 Configuration Manager 사이트에서 동일한 검색 방법을 실행하여 로컬 Active Directory 서버 쿼리를 활용하도록 구성하는 경우 각 사이트에 고유한 검색 옵션 집합을 구성할 수 있습니다. 계층의 각 사이트에서 검색 데이터가 공유되므로 각 리소스를 한 번에 효율적으로 검색하려면 이러한 구성 간에 겹치지 않도록 해야 합니다. 
+서로 다른 Configuration Manager 사이트에서 동일한 검색 방법을 실행하여 로컬 Active Directory 서버 쿼리를 활용하도록 구성하는 경우 각 사이트에 고유한 검색 옵션 집합을 구성할 수 있습니다. 계층의 각 사이트에서 검색 데이터가 공유되므로 각 리소스를 한 번에 효율적으로 검색하려면 이러한 구성 간에 겹치지 않도록 해야 합니다.
 
 소규모 환경의 경우 관리 부담과 여러 검색 작업으로 동일한 리소스를 재검색할 가능성을 줄이도록 계층의 한 사이트에서만 각 검색 방법을 실행하는 것이 좋을 수 있습니다. 검색을 실행하는 사이트의 수를 최소화하면서 검색에서 사용하는 전체 네트워크 대역폭을 줄일 수 있습니다. 생성되어 사이트 서버에서 처리해야 할 DDR의 전체 수도 줄일 수 있습니다.  
 

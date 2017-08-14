@@ -2,7 +2,7 @@
 title: "접근성 | Microsoft 문서"
 description: "장애가 있는 사용자가 System Center Configuration Manager에 액세스할 수 있도록 하는 기능에 대해 알아봅니다."
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 7/31/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -15,11 +15,11 @@ caps.latest.revision: 6
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 98599b3c188c9e9b508fea79ecf9a2b2348e9288
+ms.translationtype: HT
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: ca518796477dda149a9f4c0ebd65f0a082eab806
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/29/2017
 
 ---
 # <a name="accessibility-features-in-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 내게 필요한 옵션 기능
@@ -31,14 +31,38 @@ System Center Configuration Manager에는 장애가 있는 사용자가 액세�
 
 
 ## <a name="bkmk_aconsole"></a> Configuration Manager 콘솔에 대한 접근성 기능  
--   작업 영역에 액세스하려면 다음 키보드 바로 가기 키를 사용합니다.  
 
-|작업 영역|키보드 바로 가기 키|  
-|------|--------|  
-|자산 및 호환성|Ctrl+1|  
-|소프트웨어 라이브러리|Ctrl+2|  
-|모니터링|Ctrl+3|  
-|관리|Ctrl+4|  
+**버전 1706 이상의 바로 가기 및 향상된 기능**
+
+|키보드 바로 가기 키|  용도|
+|--------|--------|  
+|Ctrl+M|주(가운데) 창에 포커스를 설정합니다.|
+|Ctrl+T|탐색 창에서 최상위 노드에 포커스를 설정합니다. 포커스가 이미 해당 창에 있는 경우 포커스는 마지막으로 방문한 노드로 설정됩니다.|
+|Ctrl+I|리본 메뉴 바로 아래의 이동 경로 탐색 막대로 포커스를 설정합니다.|
+|Ctrl+L|사용 가능한 경우 **검색** 필드로 포커스를 설정합니다.|
+|Ctrl+D|사용 가능한 경우 세부 정보 창으로 포커스를 설정합니다.|
+|Alt     |포커스를 리본 메뉴 안 및 밖으로 변경합니다.|
+
+
+- 노드 이름의 문자를 입력할 때 탐색 창의 탐색이 개선되었습니다.
+- 주 보기 및 리본 메뉴 간의 키보드 탐색이 순환됩니다.
+- 세부 정보 창의 키보드 탐색이 순환됩니다. 이전 개체 또는 창으로 돌아가려면 Ctrl+D를 누른 다음 Shift+탭을 누릅니다.
+- 작업 영역 보기를 새로 고치면 포커스가 작업 영역의 주 창으로 설정됩니다.
+- 화면 판독기에서 목록 항목의 이름이 표시되는 문제가 수정되었습니다.
+- 화면 판독기에 중요한 정보를 표시할 수 있도록 하는 페이지의 여러 컨트롤에 대한 액세스 가능 이름이 추가되었습니다.
+
+
+**다음 바로 가기 키는 모든 버전에 사용할 수 있습니다.**
+
+- 작업 영역에 액세스하려면 다음 키보드 바로 가기 키를 사용합니다.  
+
+|키보드 바로 가기 키| 작업 영역|
+|--------|--------|  
+|Ctrl + 1| 자산 및 호환성|
+|Ctrl + 2|  소프트웨어 라이브러리|
+|Ctrl + 3|  모니터링|
+|Ctrl + 4|  관리|
+
 
 -   작업 영역 메뉴에 액세스하려면 키를 선택하여 확장/축소 아이콘으로 이동합니다. 그런 다음 아래쪽 화살표 키를 선택하여 작업 영역 메뉴에 액세스합니다.  
 

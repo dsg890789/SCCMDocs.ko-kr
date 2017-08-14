@@ -2,7 +2,7 @@
 title: "검색 구성 | Microsoft 문서"
 description: "네트워크 인프라 및 Active Directory에서 관리할 수 있는 리소스를 찾기 위해 Configuration Manager 사이트에서 실행할 검색 방법을 구성합니다."
 ms.custom: na
-ms.date: 2/17/2017
+ms.date: 7/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ caps.latest.revision: 5
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 860815010068422f2d8854ed2d574c24cc386891
-ms.openlocfilehash: 63a3c2ef66c80d1da9b50e67166a2196cf1b081b
+ms.translationtype: HT
+ms.sourcegitcommit: 0663ba84762c44a5c303562548499f195bae9e1c
+ms.openlocfilehash: 34a539ceaea6b070f81a28d2c0a9ce388e26cfeb
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="configure-discovery-methods-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 검색 방법 구성
@@ -33,7 +33,9 @@ ms.lasthandoff: 05/17/2017
 
 -   서버 검색은 사이트 시스템으로 사용하는 컴퓨터를 찾는 자동 검색 방법입니다. 이를 구성하거나 사용하지 않도록 설정할 수 없습니다.  
 
-**모든 구성 가능한 검색 방법을 사용하도록 설정하려면:**  
+**구성 가능한 검색 방법을 사용하도록 설정하려면**  
+ > [!NOTE]  
+ > 다음 정보는 Azure Active Directory 사용자 검색에는 적용되지 않습니다. 대신 이 항목 뒷부분에 나오는 [Azure AD 사용자 검색 구성](#azureaadisc)을 참조하세요.
 
 1.  Configuration Manager 콘솔에서 **관리** > **계층 구성**을 선택한 다음 **검색 방법**을 선택합니다.  
 
@@ -211,6 +213,14 @@ Active Directory 포리스트 검색을 사용하도록 설정하고 Active Dire
 7.  필요한 경우 **Active Directory 특성** 탭에서 검색할 컴퓨터에 대한 다른 Active Directory 특성을 구성할 수 있습니다. 기본 개체 특성도 나열됩니다.  
 
 8.  이 사이트의 Active Directory 사용자 검색 구성을 마쳤으면 **확인**을 선택하여 구성을 저장합니다.  
+
+## <a name="azureaadisc"></a> Azure AD 사용자 검색 구성
+버전 1706부터 Configuration Manager를 [Azure 구독 및 Azure Active Directory](/sccm/core/servers/deploy/configure/azure-services-wizard)에 연결할 때 Azure Active Directory 사용자 검색을 구성할 수 있습니다.
+
+Azure AD 사용자 검색은 *클라우드 관리*의 일부로 구성됩니다. 이렇게 하기 위한 절차는 *Configuration Manager에서 사용하도록 Azure 서비스 구성* 항목의 [Configuration Manager에서 사용하기 위해 Azure Web App 만들기](/sccm/core/servers/deploy/configure/Azure-services-wizard#webapp)에 자세히 나와 있습니다.
+
+
+
 
 ##  <a name="BKMK_ConfigHBDisc"></a> 하트비트 검색 구성  
  기본적으로 하트비트 검색은 Configuration Manager 기본 사이트를 설치하면 사용하도록 설정됩니다. 그러므로 기본 옵션인 7일을 사용하고 싶지 않은 경우 클라이언트가 하트비트 DDR(검색 데이터 기록)을 관리 지점에 보내는 일정만 구성하면 됩니다.  

@@ -1,8 +1,8 @@
 ---
-title: "인증서 인프라 구성 | Microsoft 문서"
+title: "인증서 인프라 구성 | Microsoft Docs"
 description: "System Center Configuration Manager에서 인증서 등록을 구성하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 03/28/2017
+ms.date: 07/25/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,22 +13,22 @@ ms.topic: get-started-article
 ms.assetid: 29ae59b7-2695-4a0f-a9ff-4f29222f28b3
 caps.latest.revision: 7
 caps.handback.revision: 0
-author: arob98
-ms.author: angrobe
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 859a8da10f55e314b205b7a4a415a1d2a60a920a
+ms.translationtype: HT
+ms.sourcegitcommit: c0d94b8e6ca6ffd82e879b43097a9787e283eb6d
+ms.openlocfilehash: 640eb1df9d53fc83d93c39a7ecbaf2668e176805
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 08/02/2017
 
 ---
 
-# <a name="certificate-infrastructure"></a>인증서 인프라
+# <a name="configure-certificate-infrastructure"></a>인증서 인프라 구성
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager에서 인증서를 구성하는 단계, 세부 정보 및 방법에 대한 추가 정보는 다음을 참조하세요. 시작하기 전에 [System Center Configuration Manager에서 인증서 프로필에 대한 필수 조건](../../protect/plan-design/prerequisites-for-certificate-profiles.md)에 나열된 모든 필수 조건을 확인합니다.  
+System Center Configuration Manager에서 인증서 인프라를 구성하는 방법을 알아봅니다. 시작하기 전에 [System Center Configuration Manager에서 인증서 프로필에 대한 필수 조건](../../protect/plan-design/prerequisites-for-certificate-profiles.md)에 나열된 모든 필수 조건을 확인합니다.  
 
 이러한 단계를 사용하여 SCEP 또는 PFX 인증서의 인프라를 구성합니다.
 
@@ -124,21 +124,37 @@ System Center Configuration Manager 계층에 인증서 등록 지점을 하나 
 
 6.  **시스템 역할 선택** 페이지의 사용 가능한 역할 목록에서 **인증서 등록 지점** 을 선택하고 **다음**을 클릭합니다. 
 
-8. **인증서 등록 모드** 페이지에서 이 인증서 등록 지점으로 **SCEP 인증서 요청 처리** 또는 **PFX 인증서 요청 처리**를 수행할지 선택합니다. 인증서 등록 지점은 두 종류의 요청을 모두 처리할 수 없지만 두 가지 인증서 유형을 모두 사용할 경우 여러 인증서 등록 지점을 만들 수 있습니다.
+7. **인증서 등록 모드** 페이지에서 이 인증서 등록 지점으로 **SCEP 인증서 요청 처리** 또는 **PFX 인증서 요청 처리**를 수행할지 선택합니다. 인증서 등록 지점은 두 종류의 요청을 모두 처리할 수 없지만 두 가지 인증서 유형을 모두 사용할 경우 여러 인증서 등록 지점을 만들 수 있습니다.
 
-7.  **인증서 등록 지점 설정** 페이지에서 지정하는 설정은 인증서 등록 지점이 처리하는 인증서 유형에 따라 다릅니다.
+   PFX 인증서를 처리하는 경우 Microsoft 또는 Entrust 인증 기관을 선택해야 합니다.
+
+8.  **인증서 등록 지점 설정** 페이지는 인증서 유형에 따라 다릅니다.
     -   **SCEP 인증서 요청 처리**를 선택한 경우 다음을 구성합니다.
         -   인증서 등록 지점에 대한 **웹 사이트 이름**, **HTTPS 포트 번호** 및 **가상 응용 프로그램 이름**. 이러한 필드는 기본값으로 자동으로 입력됩니다. 
         -   **네트워크 장치 등록 서비스 및 루트 CA 인증서의 URL** - **추가**를 클릭하고 **URL 및 루트 CA 인증서 추가** 대화 상자에서 다음을 지정합니다.
             - **네트워크 장치 등록 서비스의 URL**: URL을 https://*<server_FQDN>*/certsrv/mscep/mscep.dll 형식으로 지정합니다. 예를 들어 네트워크 장치 등록 서비스를 실행하는 서버의 FQDN이 server1.contoso.com인 경우 **https://server1.contoso.com/certsrv/mscep/mscep.dll**을 입력합니다.
             - **루트 CA 인증서**: **1단계: 네트워크 장치 등록 서비스 및 종속성 설치 및 구성**에서 만들어 저장한 인증서(.cer) 파일을 찾아서 선택합니다. 인증서 등록 지점은 이 루트 CA 인증서를 사용하여 System Center Configuration Manager 정책 모듈에 사용될 클라이언트 인증 인증서의 유효성을 검사할 수 있습니다.  
-    - **PFX 인증서 요청 처리**를 선택한 경우 다음을 구성합니다.
-        - **각 CA(인증 기관)에 연결하려면 CA 및 계정 필요** - **추가**를 클릭하고 **인증 기관 및 계정 추가** 대화 상자에서 다음을 지정합니다.
+
+    - **PFX 인증서 요청 처리**를 선택한 경우 선택한 인증 기관에 대한 연결 정보 및 자격 증명을 구성합니다.
+
+        - Microsoft를 인증 기관으로 사용하려면 **추가**를 클릭하고 **인증 기관 및 계정 추가** 대화 상자에서 다음을 지정합니다.
             - **인증 기관 서버 이름** - 인증 기관 서버의 이름을 입력합니다.
             - **인증 기관 계정** - **설정**을 클릭하여 인증 기관에서 템플릿에 등록할 권한이 있는 계정을 선택하거나 만듭니다.
-        - **인증서 등록 지점 연결 계정** - 인증 등록 지점을 Configuration Manager 데이터베이스에 연결하는 계정을 선택하거나 만듭니다. 또는 인증서 등록 지점을 호스트하는 컴퓨터의 로컬 컴퓨터 계정을 사용할 수 있습니다.
-        - **Active Directory 인증서 게시 계정** - Active Directory의 사용자 개체에 인증서를 게시하는 데 사용되는 계정을 선택하거나 새로 만듭니다.
-8.  **URL 및 루트 CA 인증서 추가** 대화 상자에서 다음을 지정한 후 **확인**을 클릭합니다.  
+            - **인증서 등록 지점 연결 계정** - 인증 등록 지점을 Configuration Manager 데이터베이스에 연결하는 계정을 선택하거나 만듭니다. 또는 인증서 등록 지점을 호스트하는 컴퓨터의 로컬 컴퓨터 계정을 사용할 수 있습니다.
+            - **Active Directory 인증서 게시 계정** - Active Directory의 사용자 개체에 인증서를 게시하는 데 사용되는 계정을 선택하거나 새로 만듭니다.
+
+            - **네트워크 장치 등록 URL 및 루트 CA 인증서** 대화 상자에서 다음을 지정한 후 **확인**을 클릭합니다.  
+
+        - 인증 기관으로 Entrust를 사용하려면 다음을 지정합니다.
+
+           - **MDM 웹 서비스 URL**
+           - URL에 대한 사용자 이름 및 암호 자격 증명
+
+           MDM API를 사용하여 Entrust 웹 서비스 URL을 정의할 경우 다음 샘플과 같이 버전 9 이상의 API를 사용해야 합니다.
+
+           `https://entrust.contoso.com:19443/mdmws/services/AdminServiceV9`
+
+           이전 버전의 API는 Entrust를 지원하지 않습니다.
 
 9. **다음** 을 클릭하여 마법사를 완료합니다.  
 

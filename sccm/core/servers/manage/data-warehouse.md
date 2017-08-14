@@ -2,7 +2,7 @@
 title: "데이터 웨어하우스 | Microsoft Docs"
 description: "System Center Configuration Manager에 대한 데이터 웨어하우스 서비스 지점 및 데이터베이스"
 ms.custom: na
-ms.date: 5/31/2017
+ms.date: 7/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: HT
-ms.sourcegitcommit: ef42d1483053e9a6c502f4ebcae5a231aa6ba727
-ms.openlocfilehash: c421c3495f56503d5cbda7b1a5ab5350a168912d
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: eedbf12d3bf628666efc90c85a8dfab37e4dc9ab
 ms.contentlocale: ko-kr
-ms.lasthandoff: 07/26/2017
+ms.lasthandoff: 07/29/2017
 
 ---
 #  <a name="the-data-warehouse-service-point-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 데이터 웨어하우스 서비스 지점
@@ -27,11 +27,12 @@ ms.lasthandoff: 07/26/2017
 
 버전 1702부터 데이터 웨어하우스 서비스 지점을 사용하여 Configuration Manager 배포에 대한 장기 기록 데이터를 저장하고 보고할 수 있습니다.
 
-> [!TIP]  
-> 버전 1702에 도입된 데이터 웨어하우스 서비스 지점은 시험판 기능입니다. 사용하도록 설정하려면 [시험판 기능 사용](/sccm/core/servers/manage/pre-release-features)을 참조하세요.
+> [!TIP]
+> 데이터 웨어하우스 서비스 지점은 버전 1702에 도입된 시험판 기능입니다. 사용하도록 설정하려면 [시험판 기능 사용](/sccm/core/servers/manage/pre-release-features)을 참조하세요.
 
-데이터 웨어하우스는 최대 2TB의 데이터를 지원하며 변경 내용 추적을 위한 타임스탬프가 있습니다. 데이터 저장은 Configuration Manager 사이트 데이터베이스에서 데이터 웨어하우스 데이터베이스로의 자동화된 동기화를 통해 수행됩니다. 이 정보는 보고 서비스 지점에서 액세스할 수 있습니다.
+> 버전 1706 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.
 
+데이터 웨어하우스는 최대 2TB의 데이터를 지원하며 변경 내용 추적을 위한 타임스탬프가 있습니다. 데이터 저장은 Configuration Manager 사이트 데이터베이스에서 데이터 웨어하우스 데이터베이스로의 자동화된 동기화를 통해 수행됩니다. 이 정보는 보고 서비스 지점에서 액세스할 수 있습니다. 데이터 웨어하우스 데이터베이스와 동기화된 데이터는 3년 동안 보존됩니다. 주기적으로 기본 제공 작업은 3년보다 오래된 데이터를 제거합니다.
 
 동기화되는 데이터에는 전역 데이터 및 사이트 데이터 그룹의 다음 항목이 포함됩니다.
 - 인프라 상태
@@ -46,15 +47,22 @@ ms.lasthandoff: 07/26/2017
 
 
 ## <a name="prerequisites-for-the-data-warehouse-service-point"></a>데이터 웨어하우스 서비스 지점에 대한 필수 구성 요소
+- 이러한 데이터 웨어하우스 사이트 시스템 역할은 계층의 최상위 계층 사이트에서만 지원됩니다. (중앙 관리 사이트 또는 독립 기본 사이트)
 - 사이트 시스템 역할을 설치하는 컴퓨터에 .NET Framework 4.5.2 이상 버전이 필요합니다.
 - 사이트 시스템 역할을 설치한 컴퓨터의 컴퓨터 계정은 데이터 웨어하우스 데이터베이스와 데이터를 동기화하는 데 사용됩니다. 이 계정에는 다음 권한이 있어야 합니다.  
   - 데이터 웨어하우스 데이터베이스를 호스트할 컴퓨터의 **Administrator**
   - 데이터 웨어하우스 데이터베이스에 대한 **DB_owner** 권한
   - 최상위 계층 사이트의 사이트 데이터베이스에 대한 **DB_reader** 및 **실행** 권한
--   데이터 웨어하우스 데이터베이스는 SQL Server 2012 이상의 기본 또는 명명된 인스턴스에서 지원됩니다. 버전은 Enterprise 또는 Datacenter여야 합니다.
-  - SQL Server AlwaysOn 가용성 그룹: 이 구성은 지원되지 않습니다.
-  - SQL Server 클러스터: SQL Server 장애 조치 클러스터는 지원되지 않습니다. SQL Server 장애 조치 클러스터에서는 데이터 웨어하우스 데이터베이스가 철저히 테스트되지 않았기 때문입니다.
-  - 데이터 웨어하우스 데이터베이스가 사이트 서버 데이터베이스에서 원격인 경우 데이터베이스를 호스트하는 SQL Server에 대한 별도의 라이선스가 있어야 합니다.
+- 데이터 웨어하우스 데이터베이스에는 SQL Server 2012 이상이 필요합니다. 해당 버전은 Standard, Enterprise 또는 Datacenter일 수 있습니다.
+- 웨어하우스 데이터베이스를 호스트하는 데 다음 SQL Server 구성이 지원됩니다.  
+  - 기본 인스턴스
+  - 명명된 인스턴스
+  - SQL Server Always On 가용성 그룹
+  - SQL Server 장애 조치(failover) 클러스터
+-   데이터 웨어하우스 데이터베이스가 사이트 서버 데이터베이스에서 원격인 경우 데이터베이스를 호스트하는 각 SQL Server에 대한 별도의 라이선스가 있어야 합니다.
+- [분산 보기](/sccm/core/servers/manage/data-transfers-between-sites#bkmk_distviews)를 사용하는 경우 데이터 웨어하우스 서비스 지점 사이트 시스템 역할은 중앙 관리 사이트의 사이트 데이터베이스를 호스트하는 동일한 서버에 설치되어야 합니다.
+
+
 
 > [!IMPORTANT]  
 > 데이터 웨어하우스 서비스 지점을 실행하거나 데이터 웨어하우스 데이터베이스를 호스트하는 컴퓨터에서 다음 언어 중 하나를 실행할 경우 데이터 웨어하우스가 지원되지 않습니다.
@@ -65,9 +73,7 @@ ms.lasthandoff: 07/26/2017
 
 
 ## <a name="install-the-data-warehouse"></a>데이터 웨어하우스 설치
-데이터 웨어하우스 사이트 시스템 역할은 계층 구조의 최상위 계층 사이트(중앙 관리 사이트 또는 독립 실행형 기본 사이트)에만 설치할 수 있습니다.
-
-각 계층 구조는 이 역할의 단일 인스턴스를 지원하므로 해당 최상위 계층 사이트의 사이트 시스템에 있을 수 있습니다. 웨어하우스에 대한 데이터베이스를 호스트하는 SQL Server는 사이트 시스템 역할에 로컬이거나 원격일 수 있습니다. 데이터 웨어하우스는 동일한 사이트에 설치된 보고 서비스 지점과 함께 작동하지만 두 사이트 시스템 역할을 동일한 서버에 설치할 필요는 없습니다.   
+각 계층 구조는 해당 최상위 계층 사이트의 사이트 시스템에서 이 역할의 단일 인스턴스를 지원합니다. 웨어하우스에 대한 데이터베이스를 호스트하는 SQL Server는 사이트 시스템 역할에 로컬이거나 원격일 수 있습니다. 데이터 웨어하우스는 동일한 사이트에 설치된 보고 서비스 지점과 함께 작동하지만 두 사이트 시스템 역할을 동일한 서버에 설치할 필요는 없습니다.   
 
 역할을 설치하려면 **사이트 시스템 역할 추가 마법사** 또는 **사이트 시스템 서버 만들기 마법사**를 사용합니다. 자세한 내용은 [사이트 시스템 역할 설치](/sccm/core/servers/deploy/configure/install-site-system-roles)를 참조하세요.  
 
@@ -83,7 +89,8 @@ ms.lasthandoff: 07/26/2017
  - **SQL Server 인스턴스 이름(적용되는 경우)**:   
  SQL Server의 기본 인스턴스를 사용하지 않는 경우 인스턴스를 지정해야 합니다.
  - **데이터베이스 이름**:   
- 데이터 웨어하우스 데이터베이스의 이름을 지정합니다.  Configuration Manager는 이 이름으로 데이터 웨어하우스 데이터베이스를 만듭니다. SQL Server 인스턴스에 이미 존재하는 데이터베이스 이름을 지정하면 Configuration Manager는 해당 데이터베이스를 사용합니다.
+ 데이터 웨어하우스 데이터베이스의 이름을 지정합니다. 데이터베이스의 이름은 10자를 초과할 수 없습니다. (향후 릴리스에서는 지원되는 이름 길이가 늘어날 예정입니다.)
+ Configuration Manager는 이 이름으로 데이터 웨어하우스 데이터베이스를 만듭니다. SQL Server 인스턴스에 이미 존재하는 데이터베이스 이름을 지정하면 Configuration Manager는 해당 데이터베이스를 사용합니다.
  - **연결에 사용되는 SQL Server 포트**:   
  데이터 웨어하우스 데이터베이스를 호스트하는 SQL Server용으로 구성된 TCP/IP 포트 번호를 지정합니다. 이 포트는 데이터 웨어하우스 동기화 서비스에서 데이터 웨어하우스 데이터베이스에 연결하는 데 사용됩니다.  
 
@@ -125,7 +132,7 @@ ms.lasthandoff: 07/26/2017
 ## <a name="move-the-data-warehouse-database"></a>데이터 웨어하우스 데이터베이스 이동
 데이터 웨어하우스 데이터베이스를 새 SQL Server로 이동하려면 다음 단계를 사용합니다.
 
-1.  SQL Server Management Studio를 사용하여 데이터 웨어하우스 데이터베이스를 백업한 다음 데이터 웨어하우스를 호스트할 새 컴퓨터에서 해당 데이터베이스를 SQL Server로 복원합니다.   
+1.  SQL Server Management Studio를 사용하여 데이터 웨어하우스 데이터베이스를 백업합니다. 그런 다음 데이터 웨어하우스를 호스트하는 새 컴퓨터의 SQL Server에 해당 데이터베이스를 복원합니다.   
 > [!NOTE]     
 > 데이터베이스를 새 서버로 복원한 후 새 데이터 웨어하우스 데이터베이스의 데이터베이스 액세스 권한이 원래 데이터 웨어하우스 데이터베이스와 동일한지 확인합니다.  
 
@@ -146,7 +153,7 @@ ms.lasthandoff: 07/26/2017
 
 
 **알려진 동기화 문제**:   
-*Microsoft.ConfigMgrDataWarehouse.log*에서 **"스키마 개체를 채우지 못했습니다"** 오류로 인해 동기화에 실패합니다.  
+*Microsoft.ConfigMgrDataWarehouse.log*에서 **"스키마 개체를 채우지 못했습니다"** 메시지를 나타내며 동기화가 실패합니다.  
  - **해결 방법**:  
     사이트 시스템 역할을 호스트하는 컴퓨터의 컴퓨터 계정이 데이터 웨어하우스 데이터베이스에 대한 **db_owner**인지 확인합니다.
 
@@ -167,7 +174,7 @@ ms.lasthandoff: 07/26/2017
     2. **SQL Server 구성 관리자**를 열고 **SQL Server 네트워크 구성**에서 **MSSQLSERVER 용 프로토콜** 아래의 **속성**을 마우스 오른쪽 단추로 클릭하여 선택합니다. 그런 다음 **인증서** 탭에서 **데이터 웨어하우스 SQL Server 식별 인증서**를 인증서로 선택하고 변경 내용을 저장합니다.  
     3. **SQL Server 구성 관리자**를 열고 **SQL Server 서비스**에서 **SQL Server 서비스** 및 **보고 서비스**를 다시 시작합니다.
     4.  MMC(Microsoft Management Console)를 열고 **인증서**에 대한 스냅인을 추가한 후 로컬 컴퓨터의 **컴퓨터 계정**에 대한 인증서를 관리하도록 선택합니다. 그런 다음 MMC에서 **개인** 폴더 > **인증서**를 확장하고 **데이터 웨어하우스 SQL Server 식별 인증서**를 **DER로 인코딩된 바이너리 X.509(.CER)** 파일로 내보냅니다.    
-  2.    SQL Server Reporting Services를 호스트하는 컴퓨터에서 MMC를 열고 **인증서**에 대한 스냅인을 추가한 후 **컴퓨터 계정**에 대한 인증서를 관리하도록 선택합니다. **신뢰할 수 있는 루트 인증 기관** 폴더에서 **데이터 웨어하우스 SQL Server 식별 인증서**를 가져옵니다.
+  2.    SQL Server Reporting Services를 호스트하는 컴퓨터에서 MMC를 열고 **인증서**에 대한 스냅인을 추가합니다. 그런 후 **컴퓨터 계정**에 대한 인증서를 관리하도록 선택합니다. **신뢰할 수 있는 루트 인증 기관** 폴더에서 **데이터 웨어하우스 SQL Server 식별 인증서**를 가져옵니다.
 
 
 ## <a name="data-warehouse-dataflow"></a>데이터 웨어하우스 데이터 흐름   

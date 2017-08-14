@@ -2,7 +2,7 @@
 title: "Intune을 사용하여 관리되는 Windows 8.1 및 Windows 10 장치에 대한 구성 항목 만들기 | Microsoft Docs"
 description: "System Center Configuration Manager Windows 10 구성 항목을 사용하여 Windows 10 컴퓨터에 대한 설정을 관리할 수 있습니다."
 ms.custom: na
-ms.date: 03/05/2017
+ms.date: 07/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,18 +16,15 @@ caps.handback.revision: 0
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: f75bac7887772119f30654fe15c16a8f993cad75
+ms.translationtype: HT
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: cbfc5f178e72b40526a4cb540f962a3b82203699
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.lasthandoff: 07/29/2017
 
 ---
 # <a name="how-to-create-configuration-items-for-windows-81-and-windows-10-devices-managed-without-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 장치에 대한 구성 항목을 만드는 방법
-||  
-|-|  
-|이 문서에서는 System Center Configuration Manager \(현재 분기\)의 [버전 1602에 추가된 새로운 기능](https://technet.microsoft.com/library/mt622084.aspx)에 대한 정보를 제공합니다. 새 기능을 사용하려면 [1602 업데이트를 설치](https://technet.microsoft.com/library/mt607046.aspx)해야 합니다. 최신 버전의 Configuration Manager로 업데이트하지 않은 경우 TechNet 갤러리에서 [현재 사용 중인 버전에 대한 설명서를 다운로드](https://gallery.technet.microsoft.com/Documentation-for-System-ea90eaf1)할 수 있습니다.|  
+
   
  System Center Configuration Manager **Windows 8.1 및 Windows 10** 구성 항목을 사용하여 Configuration Manager에서 온-프레미스로 관리되거나 Microsoft Intune에 등록된 Windows 8.1 및 Windows 10 장치에 대한 설정을 관리할 수 있습니다.  
   
@@ -85,12 +82,13 @@ ms.lasthandoff: 05/17/2017
 |**장치에 암호 설정 필요**|지원되는 장치에는 암호가 필요합니다.|  
 |**최소 암호 길이(문자 수)**|암호의 최소 길이입니다.|  
 |**다음 기간 후 암호 만료(일)**|암호를 변경해야 할 때까지의 기간(일)입니다.|  
-|**저장한 암호 수**|이전에 사용한 암호를 다시 사용하지 못하도록 설정합니다.|  
+|**저장한 암호 수**|이전에 사용한 암호의 재사용을 제한합니다.|  
 |**다음 로그온 실패 횟수 후 장치 초기화**|이 횟수만큼 로그인에 실패하면 장치를 초기화합니다.|  
 |**다음 유휴 시간 후 장치 잠그기**|장치가 잠기기 전까지 유휴 상태(사용자 입력이 없음)로 있을 수 있는 시간을 지정합니다.|  
 |**암호 복잡도**|'1234' 등의 PIN을 지정할 수 있는지 아니면 강력한 암호를 입력해야 하는지를 선택합니다.|  
 |**암호 품질**|필요한 암호 복잡도 수준과 생체 인식 장치 사용 가능 여부를 선택합니다.|  
-|**Exchange Server에 암호 복구 PIN 전송**||  
+|**Exchange Server에 암호 복구 PIN 전송**|-|
+|**장치 암호화**|대상 장치에서 암호화를 사용하도록 설정합니다.|  
   
 ###  <a name="device"></a>장치  
   
@@ -108,6 +106,11 @@ ms.lasthandoff: 05/17/2017
 |**음성 녹음**|장치의 녹음 기능을 사용할 수 있습니다.<br /><br /> (Windows 10만 해당)|
 |**Cortana**|Cortana 음성 지원을 사용할 수 있습니다.<br /><br /> (Windows 10만 해당)|
 |**알림 센터 알림**|Windows 10에서 알림 창을 사용하거나 사용하지 않도록 설정합니다. <br /><br /> (Windows 10만 해당)|
+|**지역 설정 수정(데스크톱만 해당)**|최종 사용자가 장치에서 지역 설정을 변경할 수 없도록 합니다.|
+|**전원 및 절전 모드 설정 수정(데스크톱만 해당)**|최종 사용자가 장치에서 전원 및 절전 모드 설정을 변경할 수 없도록 합니다.|
+|**언어 설정 수정(데스크톱만 해당)**|사용자가 장치에서 언어 설정을 변경할 수 없도록 합니다.|
+|**시스템 시간 수정**|최종 사용자가 장치 날짜 및 시간을 변경할 수 없도록 합니다.|
+|**장치 이름 수정**|최종 사용자가 장치 이름을 변경할 수 없도록 합니다.|
   
 ### <a name="email-management"></a>전자 메일 관리  
  다음 설정은 Windows 8.1 및 Windows 10을 실행하는 장치에 적용됩니다.  
@@ -131,7 +134,10 @@ ms.lasthandoff: 05/17/2017
 |-------------|-------------|  
 |**앱 스토어**|장치에서 앱 스토어에 액세스할 수 있습니다.|  
 |**앱 스토어에 액세스하려면 암호 입력**|앱 스토어에 액세스하려는 사용자는 암호를 입력해야 합니다.|  
-|**앱에서 바로 구매**|사용자가 앱에서 바로 구매를 진행할 수 있습니다.|  
+|**앱에서 바로 구매**|사용자가 앱에서 바로 구매를 진행할 수 있습니다.|
+|**스토어에서 앱 자동 업데이트**|Windows 스토어에서 설치된 앱이 자동으로 업데이트되도록 합니다.|
+|**개인 저장소만 사용**|최종 사용자가 개인 스토어에서만 앱을 다운로드하도록 허용하려면 이 옵션을 사용하도록 설정합니다.|
+|**스토어에서 시작된 앱 시작**|장치에 미리 설치되었거나 Windows 스토어에서 다운로드한 모든 앱을 사용하지 않도록 설정하는 데 사용합니다.|
   
 ### <a name="browser"></a>브라우저  
  다음 설정은 Windows 8.1 및 Windows 10을 실행하는 장치에 적용됩니다.  
@@ -228,8 +234,8 @@ ms.lasthandoff: 05/17/2017
 |**무선 네트워크 연결**|장치 Wi-Fi 기능을 사용하거나 사용하지 않도록 설정합니다.|  
 |**Wi-Fi 테더링**|사용자가 장치를 모바일 핫스팟으로 사용할 수 있습니다.|  
 |**가능한 경우 Wi-Fi로 데이터 오프로드**|가능한 경우 장치에서 Wi-Fi 연결을 사용하려면이 옵션을 구성합니다.|  
-|**Wi-Fi 핫스팟 보고**||  
-|**Wi-Fi 수동 구성**||  
+|**Wi-Fi 핫스팟 보고**|-|  
+|**Wi-Fi 수동 구성**|-|  
   
 #### <a name="to-configure-a-wireless-network-connection"></a>무선 네트워크 연결을 구성하려면  
   
@@ -316,11 +322,11 @@ ms.lasthandoff: 05/17/2017
   
  같은 구성 항목에서 호환 앱과 비호환 앱을 모두 지정할 수는 없습니다.  
   
-#### <a name="to-specify-apps-that-will-be-allowed-or-blocked"></a>허용하거나 차단할 앱을 지정하려면  
+#### <a name="to-specify-apps-that-are-allowed-or-blocked"></a>허용하거나 차단할 앱을 지정하려면  
   
-1.  **허용된 앱 및 차단된 앱 목록** 페이지에서 다음 정보를 지정합니다.  
+**허용된 앱 및 차단된 앱 목록** 페이지에서 다음 정보를 지정합니다.  
   
-    |설정|추가 정보|  
+|설정|추가 정보|  
     |-------------|----------------------|  
     |**차단되는 앱 목록**|사용자가 설치할 수 없는 앱 목록을 지정하려면 이 옵션을 선택합니다.|  
     |**허용되는 앱 목록**|사용자가 설치할 수 있는 앱 목록을 지정하려면 이 옵션을 선택합니다. 다른 모든 앱이 설치에서 차단됩니다.|  
@@ -357,7 +363,8 @@ Configuration Manager로 엔터프라이즈 데이터 보호를 구성하는 방
 다음 설정은 Windows 10 이상을 실행하는 장치에 적용됩니다.  
   
 |설정 이름|세부 정보|  
-|------------------|-------------|  
+|------------------|-------------| 
+|Microsoft Edge|장치에서 Edge 웹 브라우저를 사용할 수 있습니다.| 
 |**주소 표시줄에 검색 제안 허용**|검색 구문을 입력하면 검색 엔진에서 사이트를 제안할 수 있습니다.|  
 |**Internet Explorer로 인트라넷 트래픽 보내기 허용**||  
 |**Do Not Track 허용**|Do Not Track은 사이트 방문을 추적하지 말 것을 웹 사이트에 알립니다.|  
@@ -366,7 +373,14 @@ Configuration Manager로 엔터프라이즈 데이터 보호를 구성하는 방
 |**쿠키 허용**|쿠키를 허용하거나 사용하지 않도록 설정합니다.|  
 |**자동 채우기 허용**|Edge 브라우저의 자동 채우기 기능을 사용하도록 허용합니다.|  
 |**암호 관리자 허용**|Edge 브라우저의 암호 관리자 기능을 사용하도록 허용합니다.|  
-|**엔터프라이즈 모드 사이트 목록 위치**|엔터프라이즈 모드에서 열 웹 사이트 목록을 찾을 위치를 지정합니다. 사용자는 이 목록을 편집할 수 없습니다.|  
+|**엔터프라이즈 모드 사이트 목록 위치**|엔터프라이즈 모드에서 열 웹 사이트 목록을 찾을 위치를 지정합니다. 사용자는 이 목록을 편집할 수 없습니다.|
+|**플래그에 대한 액세스 차단**|최종 사용자가 개발자 및 실험 설정이 포함된 Edge의 about:flags 페이지에 액세스하지 못하게 합니다.|
+|**SmartScreen 프롬프트 재정의**|최종 사용자가 잠재적으로 악의적인 웹 사이트에 대한 SmartScreen 필터 경고를 무시할 수 있도록 합니다.|
+|**파일에 대한 SmartScreen 프롬프트 재정의**|최종 사용자가 잠재적으로 악의적인 파일 다운로드에 대한 SmartScreen 필터 경고를 무시할 수 있도록 합니다.|
+|**WebRTC 로컬 호스트 IP 주소**|웹 RTC 프로토콜을 사용하여 전화를 걸 때 사용자의 localhost IP 주소를 차단합니다.|
+|**기본 검색 엔진**|사용할 기본 검색 엔진을 지정합니다. 최종 사용자는 언제든지 이 값을 변경할 수 있습니다.|
+|**OpenSearch XML URL**|OpenSearch XML 파일을 사용하여 Microsoft Edge에 대한 검색 서비스를 만들 수 있습니다.<br>자세한 내용은 [OpenSearch](https://msdn.microsoft.com/library/windows/desktop/dd940337)를 참조하세요.|
+|**홈페이지(데스크톱만 해당)**|Edge 브라우저에서 홈페이지로 사용할 사이트의 목록을 추가합니다(데스크톱에만 해당).|  
 
 
 ### <a name="windows-defender"></a>Windows Defender
@@ -392,7 +406,7 @@ Configuration Manager로 엔터프라이즈 데이터 보호를 구성하는 방
 |**네트워크 공유 폴더에서 열린 파일 검사**|Defender가 UNC 경로에서 액세스한 파일 등 공유 네트워크 드라이브의 파일을 검사할 수 있습니다.<br>드라이브의 파일이 읽기 전용인 경우 Defender는 해당 파일에서 발견된 맬웨어를 제거할 수 없습니다.|
 |**서명 업데이트 간격**|Defender가 새 서명 파일을 확인하도록 할 간격을 지정합니다.
 |**클라우드 보호 허용**|사용자가 관리하는 장치의 맬웨어 활동에 대한 정보를 Microsoft 활성 보호 서비스가 수신하도록 허용하거나 차단합니다. 이 정보는 향후 서비스를 개선하는 데 사용됩니다.|
-|**사용자에게 샘플 제출 확인**|악의적 파일인지 여부를 확인하기 위해 Microsoft에서 추가로 분석해야 할 수도 있는 파일을 Microsoft에 자동으로 전송할지 여부를 제어합니다.|
+|**사용자에게 샘플 제출 확인**|악의적 파일인지 여부를 확인하기 위해 추가로 분석해야 할 수도 있는 파일을 Microsoft에 자동으로 전송할지 여부를 제어합니다.|
 |**사용자 동의 없이 설치된 응용 프로그램 검색**|Windows Defender에서 사용자 동의 없이 설치된 것으로 분류한 소프트웨어가 실행되지 않도록 등록된 Windows 데스크톱 장치를 보호합니다. 이러한 응용 프로그램이 실행되지 않도록 장치를 보호하거나, 감사 모드를 사용하여 응용 프로그램이 사용자 동의 없이 설치될 때 보고할 수 있습니다.|
 |**파일 및 폴더 제외**|C:\Path 또는 %ProgramFiles%\Path\filename.exe와 같은 파일 및 폴더를 제외 목록에 하나 이상 추가합니다. 이러한 파일과 폴더는 실시간 또는 예약된 검색에 포함되지 않습니다.|
 |**파일 확장명 제외**|jpg 또는 txt와 같은 파일 확장명을 제외 목록에 하나 이상 추가합니다. 이러한 확장명의 파일은 실시간 또는 예약된 검색에 포함되지 않습니다.|
