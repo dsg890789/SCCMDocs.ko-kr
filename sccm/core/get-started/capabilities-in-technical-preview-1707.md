@@ -2,7 +2,7 @@
 title: Technical Preview 1707 | Microsoft Docs
 description: "System Center Configuration Manager용 Technical Preview 버전 1707에서 사용 가능한 기능에 대해 알아봅니다."
 ms.custom: na
-ms.date: 06/30/2017
+ms.date: 07/28/2017
 ms.prod: configuration-manager
 ms.technology:
 - configmgr-other
@@ -15,8 +15,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: HT
-ms.sourcegitcommit: 1f57c63ceeb13c7f7d760d7ecfb48df749da6770
-ms.openlocfilehash: 118f20768ffc99364eb9e8cf2074d7a23f4dc572
+ms.sourcegitcommit: 6e890862fd02786b675e2b7abaca7ede7c0e977a
+ms.openlocfilehash: 91fd850f055a7e892a54487307109a291e336696
 ms.contentlocale: ko-kr
 ms.lasthandoff: 07/28/2017
 
@@ -62,7 +62,7 @@ Surface 장치 대시보드는 사용자 환경에 있는 Surface 장치에 대�
 ## <a name="configure-and-deploy-windows-defender-application-guard-policies"></a>Windows Defender Application Guard 정책 구성 및 배포
 <!-- 1351960 -->
 
-[Windows Defender Application Guard](https://blogs.windows.com/msedgedev/2016/09/27/application-guard-microsoft-edge/#XLxEbcpkuKcFebrw.97)는 운영 체제의 다른 부분에서 액세스할 수 없는 보안 격리된 컨테이너에서 신뢰할 수 없는 웹 사이트를 열어 사용자를 보호하는 새로운 Windows 기능입니다. 이 Technical Preview에서는 구성하는 Configuration Manager 준수 설정을 사용하여 이 기능을 구성한 다음 컬렉션에 배포하기 위한 지원이 추가되었습니다. 이 기능은 64비트 버전의 Windows 10 크리에이터 업데이트(코드명: RS2)에 대한 미리 보기에 릴리스될 예정입니다 . 이 기능을 지금 테스트하려면 이 업데이트의 미리 보기 버전을 사용하고 있어야 합니다.
+[Windows Defender Application Guard](https://blogs.windows.com/msedgedev/2016/09/27/application-guard-microsoft-edge/#XLxEbcpkuKcFebrw.97)는 운영 체제의 다른 부분에서 액세스할 수 없는 보안 격리된 컨테이너에서 신뢰할 수 없는 웹 사이트를 열어 사용자를 보호하는 새로운 Windows 기능입니다. 이 Technical Preview에서는 구성하는 Configuration Manager 준수 설정을 사용하여 이 기능을 구성한 다음 컬렉션에 배포하기 위한 지원이 추가되었습니다. 이 기능은 64비트 버전의 Windows 10 Fall Creator Update(코드명: RS3)에 대한 미리 보기에 릴리스될 예정입니다 . 이 기능을 지금 테스트하려면 이 업데이트의 미리 보기 버전을 사용하고 있어야 합니다.
 
 ### <a name="before-you-start"></a>시작하기 전에
 
@@ -87,12 +87,12 @@ Windows Defender Application Guard에 대한 자세한 내용은 [이 블로그 
 
 <!-- 1236459 --->
 
-지난 기술 미리 보기에서 [Configuration Manager 콘솔에서 PowerShell 스크립트를 작성하고 실행]( /core/get-started/capabilities-in-technical-preview-1706#create-and-run-powershell-scripts-from-the-configuration-manager-console)할 수 있는 새로운 기능을 도입했습니다.
+지난 기술 미리 보기에서 [Configuration Manager 콘솔에서 PowerShell 스크립트를 작성하고 실행](/sccm/core/get-started/capabilities-in-technical-preview-1706#create-and-run-powershell-scripts-from-the-configuration-manager-console)할 수 있는 새로운 기능을 도입했습니다.
 이 기술 미리 보기에서는 이 기능을 확장했습니다. 이제 Configuration Manager가 PowerShell 스크립트를 읽고 스크립트 만들기 마법사에서 매개 변수를 표시합니다. 마법사에서 매개 변수에 대해 스크립트 실행 시 사용할 값을 입력할 수 있습니다. 또는 매개 변수를 비워 둘 수 있습니다. 비워 둘 경우 스크립트를 실행할 때 매개 변수 값을 입력해야 합니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 
-1. 지침에 따라 [Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행]( /core/get-started/capabilities-in-technical-preview-1706#create-and-run-powershell-scripts-from-the-configuration-manager-console)을 수행하세요.
+1. 지침에 따라 [Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행](/sccm/core/get-started/capabilities-in-technical-preview-1706#create-and-run-powershell-scripts-from-the-configuration-manager-console)을 수행하세요. 
 2. **스크립트 만들기 마법사**의 새 **스크립트 매개 변수** 페이지에서 **편집**을 클릭합니다.
 3. 선택한 매개 변수에 대한 값을 입력하고 **확인**을 클릭합니다.
 4. 마법사를 완료합니다.

@@ -2,7 +2,7 @@
 title: "Windows 컴퓨터 원격 관리 | Microsoft 문서"
 description: "System Center Configuration Manager를 사용하여 원격 Windows 클라이언트 컴퓨터를 관리합니다."
 ms.custom: na
-ms.date: 04/23/2017
+ms.date: 07/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,12 +16,11 @@ caps.handback.revision: 0
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 08afca8b422474639cbdb860e555fe0da27361a4
-ms.openlocfilehash: dd794de867e1d0db47be9dc21a6d494087f76bc1
+ms.translationtype: HT
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: aecc4ccfec98932f3988f1ca1fcdc898cd417933
 ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
-
+ms.lasthandoff: 07/29/2017
 
 ---
 # <a name="how-to-remotely-administer-a-windows-client-computer-by-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows 클라이언트 컴퓨터를 원격으로 관리하는 방법
@@ -91,12 +90,11 @@ ms.lasthandoff: 12/16/2016
 
 -   Windows 명령 프롬프트에 *<Configuration Manager 설치 폴더\>***\AdminConsole\Bin\x64\CmRcViewer.exe**를 입력합니다.  
 
-    > [!NOTE]  
-    >  CmRcViewer.exe에서 다음 명령줄 옵션을 지원합니다.  
-    >   
-    >  -   *<주소\>* - NetBIOS 이름, FQDN(정규화된 도메인 이름) 또는 연결할 클라이언트 컴퓨터의 IP 주소를 지정합니다.  
-    > -   *<사이트 서버 이름\>* - 원격 제어 세션과 관련된 상태 메시지를 보낼 System Center Configuration Manager 사이트 서버의 이름을 지정합니다.  
-    > -   **/?** – 원격 제어 뷰어에 대한 명령줄 옵션을 표시합니다.  
-    >   
-    >  **예:CmRcViewer.exe** *<주소\>* *<\\\사이트 서버 이름 >*  
+CmRcViewer.exe에서 다음 명령줄 옵션을 지원합니다.  
+
+- *주소* - NetBIOS 이름, FQDN(정규화된 도메인 이름) 또는 연결할 클라이언트 컴퓨터의 IP 주소를 지정합니다.
+- *사이트 서버 이름* - 원격 제어 세션과 관련된 상태 메시지를 보낼 System Center Configuration Manager 사이트 서버의 이름을 지정합니다.
+- **/?** – 원격 제어 뷰어에 대한 명령줄 옵션을 표시합니다.  
+     
+**예:CmRcViewer.exe** *<주소\>* *<\\\사이트 서버 이름 >*  
 

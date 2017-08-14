@@ -2,7 +2,7 @@
 title: "Exchange ActiveSync 메일 프로필 만들기 | Microsoft 문서"
 description: "Microsoft Intune에서 작동하는 System Center Configuration Manager의 메일 프로필을 만들고 구성하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 03/28/2017
+ms.date: 07/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,12 +16,11 @@ caps.handback.revision: 0
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 761c3f58f7c57d8f87ee802da37821895062546d
-ms.openlocfilehash: bcf337d2abbcd5aad0f99098f6afd4a73ada3a0b
+ms.translationtype: HT
+ms.sourcegitcommit: c0d94b8e6ca6ffd82e879b43097a9787e283eb6d
+ms.openlocfilehash: 7434c98f2217cf63fdcd250b91e772de72daaea9
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.lasthandoff: 08/02/2017
 
 ---
 
@@ -48,7 +47,7 @@ Microsoft Intune 및 Exchange ActiveSync를 사용하여 장치에 메일 프로
 
  장치에서 메일 계정을 구성하는 것 외에 연락처, 일정 및 작업에 대한 동기화 설정을 구성할 수 있습니다.  
 
- 메일 프로필을 만들 경우 광범위한 보안 설정을 포함할 수 있습니다. 이러한 설정에는 System Center Configuration Manager 인증서 프로필을 사용하여 설정된 서명, 암호화 및 ID의 인증서가 포함되어 있습니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](/sccm/protect/deploy-use/introduction-to-certificate-profiles)을 참조하세요.    
+ 메일 프로필을 만들 경우 광범위한 보안 설정을 포함할 수 있습니다. 이러한 설정에는 System Center Configuration Manager 인증서 프로필을 사용하여 설정된 서명, 암호화 및 ID의 인증서가 포함되어 있습니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](/sccm/protect/deploy-use/introduction-to-certificate-profiles.md)을 참조하세요.    
 
 ## <a name="create-an-exchange-activesync-email-profile"></a>Exchange ActiveSync 메일 프로필 만들기  
 
@@ -104,19 +103,21 @@ Microsoft Intune 및 Exchange ActiveSync를 사용하여 장치에 메일 프로
 
     -   **ID 인증서**. **선택**을 선택한 다음 ID에 사용할 인증서를 선택합니다.  
 
-        > [!NOTE]  
-        > 서명 인증서를 선택하려면 먼저 해당 인증서를 SCEP(단순 인증서 등록 프로토콜) 인증서 프로필로 구성해야 합니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](/sccm/protect/deploy-use/introduction-to-certificate-profiles)을 참조하세요.  
+         ID 인증서는 SCEP 인증서여야 합니다. PFX 인증서는 사용할 수 없습니다.  자세한 내용은 [Configuration Manager의 인증서 프로필](/sccm/protect/deploy-use/introduction-to-certificate-profiles)을 참조하세요.  
 
          이 옵션은 **인증 방법** 에서 **인증서**를 선택한 경우에만 사용할 수 있습니다.  
 
     -   **S/MIME 사용**. S/MIME 암호화를 사용하여 발신 메일을 전송합니다. 이 옵션은 iOS 장치에만 적용됩니다. 다음 옵션 중에서 선택 합니다.
 
+        -   **서명 인증서**.  **선택**을 선택한 다음 암호화에 사용할 인증서 프로필을 선택합니다.  
+
+            프로필은 SCEP 또는 PFX 인증서일 수 있습니다.  그러나 서명 및 암호화를 둘 다 사용하는 경우 서명 및 암호화 *둘 다*에 대해 PFX 인증서 프로필을 선택해야 합니다.
+
         -   **암호화 인증서**. **선택**을 선택한 다음 암호화에 사용할 인증서를 선택합니다. 암호화 인증서로 사용할 PFX 인증서를 선택해야 합니다.
 
-        암호화 인증서와 서명 인증서를 둘 다 선택할 경우 인증서가 둘 다 PFX 형식이어야 합니다.
+        -   iOS 장치에서 모든 메일 메시지를 암호화하려면 **암호화 필요** 확인란을 선택합니다.    
 
-        > [!NOTE]  
-        > 인증서를 선택하려면 먼저 해당 인증서를 SCEP 또는 PFX 인증서 프로필로 구성해야 합니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](/sccm/protect/deploy-use/introduction-to-certificate-profiles)을 참조하세요.  
+         여기서 선택하려면 먼저 인증서 프로필을 만들어야 합니다.  자세한 내용은 [Configuration Manager의 인증서 프로필](/sccm/protect/deploy-use/introduction-to-certificate-profiles)을 참조하세요.  
 
 ## <a name="configure-synchronization-settings-for-the-exchange-activesync-email-profile"></a>Exchange ActiveSync 메일 프로필에 대한 동기화 설정을 구성합니다.  
 

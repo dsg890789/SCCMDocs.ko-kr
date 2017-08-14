@@ -2,7 +2,7 @@
 title: "클라이언트 피어 캐시 | System Center Configuration Manager"
 description: "System Center Configuration Manager를 사용하여 콘텐츠를 배포할 때는 클라이언트 콘텐츠 원본 위치에 대해 피어 캐시를 사용합니다."
 ms.custom: na
-ms.date: 7/3/2017
+ms.date: 7/31/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -15,11 +15,11 @@ caps.latest.revision: 3
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ed6b65a1a5aabc0970cd0333cb033405cf6d2aea
-ms.openlocfilehash: 94802680747a3d371716c1b345b2cba098150716
+ms.translationtype: HT
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: 89fcd16887ae77299f9d18472ee6a1ba56794eca
 ms.contentlocale: ko-kr
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/29/2017
 
 ---
 
@@ -94,7 +94,9 @@ System Center Configuration Manager SDK를 사용하는 경우 피어 원본 기
 
 -   클라이언트는 현재 경계 그룹에 포함되어 있는 피어 캐시 클라이언트의 콘텐츠만 전송할 수 있습니다.
 
--   클라이언트가 피어 캐시를 사용하는 각 사이트는 [네트워크 액세스 계정](/sccm/core/plan-design/hierarchy/manage-accounts-to-access-content#a-namebkmknaaa-network-access-account)으로 구성되어야 합니다. 이 계정은 피어 캐시 원본 컴퓨터가 피어의 다운로드 요청을 인증하는 데 사용되며, 이 목적으로는 도메인 사용자 권한만 필요합니다.
+-   버전 1706 전에 클라이언트가 피어 캐시를 사용하는 각 사이트는 [네트워크 액세스 계정](/sccm/core/plan-design/hierarchy/manage-accounts-to-access-content#a-namebkmknaaa-network-access-account)으로 구성되어야 합니다. 버전 1706부터 한 가지 경우를 제외하고, 해당 계정이 더 이상 필요하지 않습니다.  예외는 클라이언트가 피어 캐시를 사용해서 소프트웨어 센터에서 작업 순서를 가져와 실행하고 해당 작업 순서가 클라이언트를 WinPE로 다시 부팅하는 경우입니다.  이 시나리오에서 클라이언트는 피어 캐시 소스에 액세스하여 콘텐츠를 가져올 수 있도록 WinPE에서도 네트워크 액세스 계정이 있어야 합니다.
+
+    필요한 경우 네트워크 액세스 계정은 피어 캐시 원본 컴퓨터가 피어의 다운로드 요청을 인증하는 데 사용되며, 이 목적으로는 도메인 사용자 권한만 필요합니다.
 
 -   피어 캐시 콘텐츠 원본의 현재 경계는 해당 클라이언트의 마지막 하드웨어 인벤토리 제출에 따라 결정되므로, 다른 경계 그룹에 있는 네트워크 위치로 로밍하는 클라이언트는 피어 캐시에서 이전 경계 그룹의 구성원으로 계속 간주될 수 있습니다. 이 경우 직접적으로 속해 있는 네트워크 위치에 있지 않은 피어 캐시 콘텐츠 원본이 클라이언트에 제공될 수 있습니다. 따라서 이러한 구성을 사용할 가능성이 높은 클라이언트는 피어 캐시 원본으로 참여하지 않도록 제외하는 것이 좋습니다.
 

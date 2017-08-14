@@ -16,12 +16,11 @@ caps.handback.revision: 0
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6f9e6e93fce95666503907010a5c253158c5de7c
-ms.openlocfilehash: f648d7626af50d95fbaa5a7a2abd821a9c47f5d1
+ms.translationtype: HT
+ms.sourcegitcommit: b7461f89f483314bd07248bbc9d5dde85ca6b6c2
+ms.openlocfilehash: e0726febc4c36a26c5e067914734838bf2681e6c
 ms.contentlocale: ko-kr
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 # <a name="task-sequence-steps-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업 순서 단계
@@ -1527,9 +1526,9 @@ true로 평가되는 규칙에 대해 설정할 하나 이상의 변수를 지�
 >  동적 변수 설정 단계를 통해 작업 순서를 가져올 경우 변수 값에 대해 **비밀 값** 이 설정되어 있으면 작업 순서를 가져올 때 값이 제거됩니다. 따라서 작업 순서를 가져온 후 동적 변수 값을 다시 입력해야 합니다.  
 
 ##  <a name="BKMK_SetTaskSequenceVariable"></a> 작업 순서 변수 설정  
- **작업 순서 변수 설정** 작업 순서 단계를 사용하여 작업 순서에서 사용되는 변수 값을 설정할 수 있습니다.  
+**작업 순서 변수 설정** 작업 순서 단계를 사용하여 작업 순서에서 사용되는 변수 값을 설정할 수 있습니다.  
 
- 이 단계는 표준 운영 체제 또는 Windows PE에서 실행될 수 있습니다. 작업 순서 변수는 작업 순서 동작에서 읽으며, 이러한 동작을 지정합니다. 특정 작업 순서 변수에 대한 자세한 내용은 [작업 순서 동작 변수](task-sequence-action-variables.md)를 참조하세요.  
+이 단계는 표준 운영 체제 또는 Windows PE에서 실행될 수 있습니다. 작업 순서 변수는 작업 순서 동작에서 읽으며, 이러한 동작을 지정합니다. 특정 작업 순서 변수에 대한 자세한 내용은 [작업 순서 동작 변수](task-sequence-action-variables.md)를 참조하세요.  
 
 ### <a name="details"></a>세부 정보  
  이 단계에 대한 **속성** 탭에서 이 섹션에 설명된 설정을 구성할 수 있습니다.  
@@ -1553,6 +1552,16 @@ true로 평가되는 규칙에 대해 설정할 하나 이상의 변수를 지�
 
  **값**  
  작업 순서 변수와 연결된 값입니다. 값은 %<varname\>% 구문에서 다른 작업 순서 변수일 수 있습니다.  
+
+## <a name="hide-task-sequence-progress"></a>작업 순서 진행률 숨기기
+<!-- 1354291 -->
+1706 릴리스에서는 새 변수를 사용하여 최종 사용자에게 작업 순서 진행률이 표시되는 시기를 제어할 수 있습니다. 작업 순서에서 **작업 순서 변수 설정** 단계를 사용하여 작업 순서 진행률을 표시하거나 숨기도록 **TSDisableProgressUI** 변수의 값을 설정합니다. 한 작업 순서에서 작업 순서 변수 설정 단계를 여러 번 사용하여 변수 값을 변경할 수 있습니다. 이렇게 하면 작업 순서 진행률을 작업 순서의 여러 섹션에서 숨기거나 표시할 수 있습니다.
+
+ - **작업 순서 진행률을 숨기려면**  
+작업 순서 진행률을 숨기려면 작업 순서 편집기에서 [작업 순서 변수 설정](#BKMK_SetTaskSequenceVariable) 단계를 사용하여 **TSDisableProgressUI** 변수를 **True**로 설정합니다.
+
+ - **작업 순서 진행률을 표시하려면**  
+작업 순서 진행률을 표시하려면 작업 순서 편집기에서 [작업 순서 변수 설정](#BKMK_SetTaskSequenceVariable) 단계를 사용하여 **TSDisableProgressUI** 변수를 **False**로 설정합니다.
 
 ##  <a name="BKMK_SetupWindowsandConfigMgr"></a> Windows 및 ConfigMgr 설치  
  **Windows 및 ConfigMgr 설치** 작업 순서 단계를 사용하여 Windows PE에서 새 운영 체제로 전환할 수 있습니다. 이 작업 순서 단계는 임의의 운영 체제 배포 중 필요합니다. Configuration Manager 클라이언트를 새 운영 체제에 설치하고 새 운영 체제에서 작업 순서를 계속 실행하도록 준비합니다.  

@@ -16,12 +16,11 @@ caps.handback.revision: 0
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ae008c91a7387ba76f2bfac13f8feb489a0cc558
-ms.openlocfilehash: f5feccc4f810e1a94bb7dcdd5ad507d84b9c3b4a
+ms.translationtype: HT
+ms.sourcegitcommit: b7461f89f483314bd07248bbc9d5dde85ca6b6c2
+ms.openlocfilehash: 32b24b3637dfafe401ea1d9f51b3769aa749f544
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 # <a name="task-sequence-built-in-variables-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업 순서 기본 제공 변수
@@ -83,7 +82,8 @@ ms.lasthandoff: 05/17/2017
 |SMSTSDriverRequestResolveTimeOut|이 변수를 사용하면 드라이버 자동 적용 작업 순서 단계 중에 드라이버 카탈로그 요청에 대한 HTTP 이름 확인을 대기할 시간(초)을 지정할 수 있습니다. 연결이 시간 제한 설정보다 오래 걸리면 요청은 취소됩니다. 시간 제한은 60초로 기본 설정됩니다.|
 |SMSTSDriverRequestSendTimeOut|이 변수를 사용하면 드라이버 자동 적용 작업 순서 단계 중에 드라이버 카탈로그 요청을 전송할 때 사용할 시간(초)을 지정할 수 있습니다. 요청이 시간 제한 설정보다 오래 걸리면 요청은 취소됩니다. 시간 제한은 60초로 기본 설정됩니다.|
 |SMSTSErrorDialogTimeout|작업 순서에서 오류가 발생한 경우 이 변수에 지정된 시간(초)이 지나면 자동으로 해제되는 대화 상자가 표시됩니다. 기본적으로는 대화 상자는 **900** 초(15 분) 후에 자동으로 해제됩니다.|  
-|TSErrorOnWarning|이 변수를 사용하여 작업 순서 엔진에서 응용 프로그램 설치 작업 순서 단계 중에 검색된 경고를 오류로 간주하는지 여부를 지정합니다. 요구 사항이 충족되지 않아 하나 이상의 응용 프로그램 또는 필수 종속성이 설치되지 않은 경우에는 작업 순서에서 _TSAppInstallStatus 변수를 **Warning** 으로 설정합니다. TSErrorOnWarning 변수를 **True** 로 설정하면 _TSAppInstallStatus 변수가 Warning으로 설정되고 오류로 처리됩니다. **False** 값이 기본 동작입니다.|  
+| TSDisableProgressUI | 이 변수를 사용하여 작업 순서 진행률을 작업 순서의 여러 섹션에서 숨기거나 표시할 수 있습니다. | 
+|TSErrorOnWarning|이 변수를 사용하여 작업 순서 엔진에서 응용 프로그램 설치 작업 순서 단계 중에 검색된 경고를 오류로 간주하는지 여부를 지정합니다. 요구 사항이 충족되지 않아 하나 이상의 응용 프로그램 또는 필수 종속성이 설치되지 않은 경우에는 작업 순서에서 _TSAppInstallStatus 변수를 **Warning** 으로 설정합니다. TSErrorOnWarning 변수를 **True** 로 설정하면 _TSAppInstallStatus 변수가 Warning으로 설정되고 오류로 처리됩니다. **False** 값이 기본 동작입니다.| 
 |SMSTSLanguageFolder|이 변수를 사용하여 언어 중립 부팅 이미지의 언어 표시를 변경할 수 있습니다.|  
 |SMSTSLocalDataDrive|작업 순서가 실행되는 동안 임시 파일이 대상 컴퓨터에 저장되는 위치를 지정합니다.<br /><br /> 작업 순서를 시작하기 전에 컬렉션 변수를 설정하는 등의 방법으로 이 변수를 설정해야 합니다. 작업 순서가 시작되면 Configuration Manager에서 _SMSTSMDataPath 변수를 정의합니다.|  
 |SMSTSMP|이 변수를 사용하여 Configuration Manager 관리 지점의 URL 또는 IP 주소를 지정합니다.|  

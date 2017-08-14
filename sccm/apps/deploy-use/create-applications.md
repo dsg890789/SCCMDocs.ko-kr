@@ -16,12 +16,11 @@ caps.handback.revision: 0
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
-ms.openlocfilehash: da86fc2f61ce8229fb0d3f58a4f8a24d1514b30e
+ms.translationtype: HT
+ms.sourcegitcommit: b7461f89f483314bd07248bbc9d5dde85ca6b6c2
+ms.openlocfilehash: 4d048d4f9ab01b28e6c21a38cca4d82c85030618
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 # <a name="create-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 만들기
@@ -198,6 +197,14 @@ Configuration Manager 콘솔의 **응용 프로그램** 노드에 새 응용 프
 
         > [!IMPORTANT]  
         >  사이트 서버 컴퓨터의 시스템 계정에는 지정한 콘텐츠 위치에 대한 권한이 있어야 합니다.  
+
+    -   **제거 콘텐츠 설정**--다음 옵션 중 하나를 지정합니다.
+        - **설치 콘텐츠와 같음**--설치 및 제거 콘텐츠가 같은 경우 이 옵션을 선택합니다. 이것이 기본 동작입니다.
+        - **설치 콘텐츠 없음**--응용 프로그램에 제거용 콘텐츠가 필요하지 않는 경우 이 옵션을 선택합니다.
+        - **설치 콘텐츠와 다름**--제거 콘텐츠가 설치 콘텐츠와 다른 경우 이 옵션을 선택합니다.
+
+4. **설치 콘텐츠와 다름**을 선택한 경우 응용 프로그램을 제거하는 데 사용할 응용 프로그램 콘텐츠의 위치를 찾아 이동하거나 입력합니다.
+5. **확인**을 클릭하여 배포 유형 속성 대화 상자를 닫습니다.
 
     -   **클라이언트 캐시에 콘텐츠 보관** - 클라이언트 컴퓨터가 이미 실행된 경우에도 콘텐츠를 클라이언트 컴퓨터의 캐시에 무한정 보관할지 여부를 지정하려면 이 옵션을 선택합니다. 이 옵션은 일부 배포 유형(예: 업데이트를 적용할 때 사용할 수 있는 로컬 원본 사본이 필요한 Windows Installer 기반 소프트웨어)과 함께 사용하면 유용하지만 사용 가능한 캐시 공간이 줄어듭니다. 이 옵션을 선택하면 캐시에 사용 가능한 공간이 충분하지 않을 경우 나중에 대용량 배포에 실패할 수 있습니다.  
 

@@ -2,7 +2,7 @@
 title: SQL Server Always On | Microsoft Docs
 description: "SCCM에서 SQL Server Always On 가용성 그룹 사용 계획"
 ms.custom: na
-ms.date: 5/26/2017
+ms.date: 7/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,12 +15,11 @@ caps.latest.revision: 16
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dc221ddf547c43ab1f25ff83c3c9bb603297ece6
-ms.openlocfilehash: 188ae877368a6cb2ec9998bff74259b4e5b5e7ce
+ms.translationtype: HT
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: c746365238e1255d73387a9496521bb03a56b21b
 ms.contentlocale: ko-kr
-ms.lasthandoff: 06/01/2017
-
+ms.lasthandoff: 07/29/2017
 
 ---
 # <a name="prepare-to-use-sql-server-always-on-availability-groups-with-configuration-manager"></a>Configuration Manager에서 SQL Server Always On 가용성 그룹 사용 준비
@@ -43,7 +42,9 @@ Microsoft Azure에서 가용성 그룹을 사용할 경우 *Azure 가용성 집�
 
 -      [Configuration Manager에서 사용하기 위해 가용성 그룹 만들기](/sccm/core/servers/deploy/configure/configure-aoag#create-and-configure-an-availability-group).
 -     [가용성 그룹을 사용하도록 사이트 구성](/sccm/core/servers/deploy/configure/configure-aoag#configure-a-site-to-use-the-database-in-the-availability-group)
--     [사이트 데이터베이스를 호스트하는 가용성 그룹에서 복제 구성원 추가 또는 제거](/sccm/core/servers/deploy/configure/configure-aoag#add-and-remove-replica-members).
+-     [사이트 데이터베이스를 호스트하는 가용성 그룹에서 동기 복제 구성원 추가 또는 제거](/sccm/core/servers/deploy/configure/configure-aoag#add-and-remove-synchronous-replica-members)
+-     [비동기 커밋 복제본 구성](/sccm/core/servers/deploy/configure/configure-aoag#configure-an-asynchronous-commit-repilca)(Configuration Manager 버전 1706 이상 필요)
+-     [비동기 커밋 복제본에서 사이트 복구](/sccm/core/servers/deploy/configure/configure-aoag#use-the-asynchronous-replica-to-recover-your-site)(Configuration Manager 버전 1706 이상 필요)
 -     [독립 실행형 SQL Server의 기본 또는 명명된 인스턴스로 가용성 그룹의 사이트 데이터베이스 이동](/sccm/core/servers/deploy/configure/configure-aoag#stop-using-an-availability-group).
 
 
@@ -62,31 +63,35 @@ Microsoft Azure에서 가용성 그룹을 사용할 경우 *Azure 가용성 집�
 SQL Server의 *Enterprise* Edition을 사용해야 합니다.
 
 **계정:**  
-SQL Server의 각 인스턴스는 도메인 사용자 계정(**서비스 계정**) 또는 **로컬 시스템**에서 실행될 수 있습니다. 그룹의 각 복제본은 구성이 다를 수 있습니다. [SQL Server 모범 사례](/sql/sql-server/install/security-considerations-for-a-sql-server-installation#before-installing-includessnoversionincludesssnoversion-mdmd)에 따라, 가장 낮은 사용자 권한을 가진 계정을 사용합니다.
+SQL Server의 각 인스턴스는 도메인 사용자 계정(**서비스 계정**) 또는 비도메인 계정에서 실행될 수 있습니다. 그룹의 각 복제본은 구성이 다를 수 있습니다. [SQL Server 모범 사례](/sql/sql-server/install/security-considerations-for-a-sql-server-installation#before-installing-includessnoversionincludesssnoversion-mdmd)에 따라, 가장 낮은 사용자 권한을 가진 계정을 사용합니다.
 
-예를 들어 SQL Server 2016에 대한 서비스 계정 및 사용 권한을 구성하려면 MSDN의 [Windows 서비스 계정 및 권한 구성](/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)을 참조하세요.
+-   SQL Server 2016에 대한 서비스 계정 및 사용 권한을 구성하려면 MSDN의 [Windows 서비스 계정 및 권한 구성](/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)을 참조하세요.
+-   비도메인 계정을 사용하려면 인증서를 사용해야 합니다. 자세한 내용은 [데이터베이스 미러링 끝점에 인증서 사용(Transact SQL)](https://docs.microsoft.com/sql/database-engine/database-mirroring/use-certificates-for-a-database-mirroring-endpoint-transact-sql)을 참조하세요.
 
-  **로컬 시스템**을 사용하여 복제본을 실행하는 경우 끝점 인증을 구성해야 합니다. 여기에는 복제본 서버 끝점에 대한 연결을 사용하도록 설정하기 위한 권한 위임이 포함됩니다.
-  -     각 SQL Server의 컴퓨터 계정을 노드의 다른 SQL Server에 대한 로그인으로 추가하고 해당 계정에 SA 권한을 부여하여 SQL Server 권한을 위임합니다.  
-  -     각 복제본에서 다음 스크립트를 실행하여 로컬 끝점의 각 원격 서버에 끝점 권한을 위임합니다.    
-
-              GRANT CONNECT ON endpoint::[endpoint_name]  
-              TO [domain\servername$]
 
 자세한 내용은 [Always On 가용성 그룹에 대한 데이터베이스 미러링 끝점 만들기](/sql/database-engine/availability-groups/windows/database-mirroring-always-on-availability-groups-powershell)를 참조하세요.
 
 ### <a name="availability-group-configurations"></a>가용성 그룹 구성
 **복제 구성원:**  
-가용성 그룹에는 주 복제본이 하나 있어야 하며 동기 보조 복제본이 2개까지 포함될 수 있습니다.  각 복제 구성원은 다음을 수행해야 합니다.
+-   가용성 그룹에는 하나의 기본 복제본이 있어야 합니다.
+-   버전 1706 이전에서는 최대 2개의 동기 보조 복제본을 사용할 수 있습니다.
+-   버전 1706부터 사용 중인 SQL Server 버전에서 지원하는 것과 같은 개수 및 유형의 복제본을 가용성 그룹에서 사용할 수 있습니다.
+
+    비동기 커밋 복제본을 사용하여 동기 복제본을 복구할 수 있습니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 백업 및 복구 항목에서 [사이트 데이터베이스 복구 옵션]( /sccm/protect/understand/backup-and-recovery#BKMK_SiteDatabaseRecoveryOption)을 참조하세요.
+    > [!CAUTION]  
+    > Configuration Manager에서는 비동기 커밋 복제본을 사이트 데이터베이스로 사용하기 위한 장애 조치를 지원하지 않습니다.
+Configuration Manager는 비동기 커밋 복제본의 상태가 현재 상태인지 확인하지 않으며 [의도적으로 이러한 복제본은 동기화되지 않을 수 있으므로]( https://msdn.microsoft.com/library/ff877884(SQL.120).aspx(d=robot)#Availability%20Modes) 비동기 커밋 복제본을 사이트 데이터베이스로 사용하면 사이트와 데이터의 무결성이 손상될 수 있습니다.
+
+각 복제 구성원은 다음을 수행해야 합니다.
 -   **기본 인스턴스**를 사용해야 합니다.  
     *버전 1702부터* ***명명된 인스턴스***를 사용할 수 있습니다.
 
--      **주 역할의 연결**을 **예**로 설정합니다.
--      **읽기 가능한 보조**를 **예**로 설정합니다.  
--      **수동 장애 조치**가 설정되어야 합니다.       
+-     **주 역할의 연결**을 **예**로 설정합니다.
+-     **읽기 가능한 보조**를 **예**로 설정합니다.  
+-     **수동 장애 조치**가 설정되어야 합니다.      
 
     >  [!TIP]
-    >  Configuration Manager에서는 **자동 장애 조치**로 설정된 가용성 그룹 복제본을 사용할 수 있습니다. 그러나 다음 경우에는 **수동 장애 조치**를 설정해야 합니다.
+    >  Configuration Manager에서는 **자동 장애 조치**로 설정된 가용성 그룹 동기 복제본을 사용할 수 있습니다. 그러나 다음 경우에는 **수동 장애 조치**를 설정해야 합니다.
     >  -  설치 프로그램을 실행하여 가용성 그룹의 사이트 데이터베이스 사용을 지정합니다.
     >  -  Configuration Manager에 모든 업데이트를 설치합니다(사이트 데이터베이스에 적용되는 업데이트만이 아님).  
 
@@ -95,15 +100,15 @@ SQL Server의 각 인스턴스는 도메인 사용자 계정(**서비스 계정*
 
 Azure에서 가용성 그룹을 설정하고, 해당 그룹이 내부 또는 외부 부하 분산 장치 뒤에 있는 경우 설치 프로그램이 각 복제본에 액세스할 수 있도록 하기 위해 열어야 하는 기본 포트는 다음과 같습니다.   
 
--      RPC 끝점 매퍼 - **TCP 135**   
--      서버 메시지 블록 – **TCP 445**  
+-     RPC 끝점 매퍼 - **TCP 135**   
+-     서버 메시지 블록 – **TCP 445**  
     *데이터베이스 이동을 완료한 후 이 포트를 제거할 수 있습니다. 버전 1702부터는 이 포트가 더 이상 필요하지 않습니다.*
--      SQL Server Service Broker -  **TCP 4022**
--      SQL over TCP – **TCP 1433**   
+-     SQL Server Service Broker -  **TCP 4022**
+-     SQL over TCP – **TCP 1433**   
 
 설치가 완료된 후에도 다음 포트에는 계속 액세스할 수 있어야 합니다.
--      SQL Server Service Broker -  **TCP 4022**
--      SQL over TCP – **TCP 1433**
+-     SQL Server Service Broker -  **TCP 4022**
+-     SQL over TCP – **TCP 1433**
 
 버전 1702부터 이러한 구성에 사용자 지정 포트를 사용할 수 있습니다. 같은 포트를 끝점 및 가용성 그룹의 모든 복제본에서 사용해야 합니다.
 
@@ -119,25 +124,25 @@ Configuration Manager 설치 프로그램을 실행하여 가용성 그룹의 �
 설치 프로그램을 사용하여 가용성 그룹에서 데이터베이스 인스턴스를 지정하는 동안에만 보조 복제본 서버에 이 파일 경로가 필요합니다. 설치 프로그램이 가용성 그룹의 사이트 데이터베이스 구성을 완료한 후 보조 데이터베이스에서 사용되지 않는 경로를 삭제할 수 있습니다.
 
 예를 들어 다음 시나리오를 고려할 수 있습니다.
--    3개의 SQL Server를 사용하는 가용성 그룹을 만듭니다.
+-   3개의 SQL Server를 사용하는 가용성 그룹을 만듭니다.
 
--    주 복제본 서버는 SQL Server 2014의 새로운 설치입니다. 기본적으로 데이터베이스 .MDF 및 .LDF 파일은 C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA에 저장됩니다.
+-   주 복제본 서버는 SQL Server 2014의 새로운 설치입니다. 기본적으로 데이터베이스 .MDF 및 .LDF 파일은 C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA에 저장됩니다.
 
--    보조 복제본 서버 둘 다를 이전 버전에서 SQL Server 2014로 업그레이드하고 데이터베이스 파일을 저장하는 원래 파일 경로인 C:\Program Files\Microsoft SQL Server\MSSQL10.MSSQLSERVER\MSSQL\DATA를 유지합니다.
+-   보조 복제본 서버 둘 다를 이전 버전에서 SQL Server 2014로 업그레이드하고 데이터베이스 파일을 저장하는 원래 파일 경로인 C:\Program Files\Microsoft SQL Server\MSSQL10.MSSQLSERVER\MSSQL\DATA를 유지합니다.
 
--    이 가용성 그룹으로 사이트 데이터베이스를 이동하기 전에 각 보조 복제본 서버에서 보조 복제본이 다음 파일 위치를 사용하지 않는 경우에도 다음 파일 경로를 만들어야 합니다. C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA(주 복제본에서 사용되는 경로와 동일함)
+-   이 가용성 그룹으로 사이트 데이터베이스를 이동하기 전에 각 보조 복제본 서버에서 보조 복제본이 다음 파일 위치를 사용하지 않는 경우에도 다음 파일 경로를 만들어야 합니다. C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA(주 복제본에서 사용되는 경로와 동일함)
 
--    그런 후 각 보조 복제본의 SQL Server 서비스 계정에 해당 서버에서 새로 생성된 파일 위치에 대한 모든 권한을 부여합니다.
+-   그런 후 각 보조 복제본의 SQL Server 서비스 계정에 해당 서버에서 새로 생성된 파일 위치에 대한 모든 권한을 부여합니다.
 
--    이제 Configuration Manager 설치 프로그램을 성공적으로 실행하여 사이트에 가용성 그룹의 사이트 데이터베이스를 사용하도록 구성할 수 있습니다.
+-   이제 Configuration Manager 설치 프로그램을 성공적으로 실행하여 사이트에 가용성 그룹의 사이트 데이터베이스를 사용하도록 구성할 수 있습니다.
 
 **새 복제본에서 데이터베이스 구성:**   
  각 복제본의 데이터베이스를 다음과 같이 설정해야 합니다.
--     **CLR 통합**은 *사용*으로 설정해야 합니다.
--      **Max text repl size**는 *2147483647*이어야 합니다.
--      데이터베이스 소유자는 *SA 계정*이어야 합니다.
--      **신뢰**는 **설정**이어야 합니다.
--      **Service Broker**는 *사용*이어야 합니다.
+-   **CLR 통합**은 *사용*으로 설정해야 합니다.
+-     **Max text repl size**는 *2147483647*이어야 합니다.
+-     데이터베이스 소유자는 *SA 계정*이어야 합니다.
+-     **신뢰**는 **설정**이어야 합니다.
+-     **Service Broker**는 *사용*이어야 합니다.
 
 이러한 구성은 기본 복제본에서만 수행할 수 있습니다. 보조 복제본을 구성하려면 먼저 기본 복제본을 보조 복제본으로 장애 조치하여 보조 복제본을 새로운 기본 복제본으로 만들어야 합니다.   
 
@@ -213,7 +218,7 @@ SQL Server 2016 Standard Edition에 도입된 [기본 가용성 그룹](https://
 **추가 가용성 그룹을 호스트하는 SQL Server:**   
 Configuration Manager 버전 1610 이전에서는 SQL Server의 가용성 그룹이 Configuration Manager에 사용하는 그룹 외에, 하나 이상의 가용성 그룹을 호스트할 경우 이러한 추가 가용성 그룹의 각 복제본은 Configuration Manager 설치 프로그램을 실행하거나 Configuration Manager 업데이트를 설치할 때 다음과 같은 구성이 설정되어 있어야 합니다.
 -   **수동 장애 조치**
--     **모든 읽기 전용 연결을 허용**
+-   **모든 읽기 전용 연결을 허용**
 
 **지원되지 않는 데이터베이스 사용:**
 -   **Configuration Manager는 가용성 그룹에서 사이트 데이터베이스에만 지원합니다.** 다음은 지원되지 않습니다.

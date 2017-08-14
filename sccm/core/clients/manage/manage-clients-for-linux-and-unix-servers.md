@@ -16,12 +16,11 @@ caps.handback.revision: 0
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9206b82eca02877c30eebf146d42bcca7290eb42
-ms.openlocfilehash: 7a5ff0e75b8cdac68e3854c4f5aba01a7d423e9b
+ms.translationtype: HT
+ms.sourcegitcommit: afe0ecc4230733fa76e41bf08df5ccfb221da7c8
+ms.openlocfilehash: 506df4f7c7baa5f0586a1ddf0cb02b3de9f4d076
 ms.contentlocale: ko-kr
-ms.lasthandoff: 12/30/2016
-
+ms.lasthandoff: 08/04/2017
 
 ---
 # <a name="how-to-manage-clients-for-linux-and-unix-servers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Linux 및 UNIX 서버용 클라이언트를 관리하는 방법
@@ -31,7 +30,7 @@ ms.lasthandoff: 12/30/2016
 System Center Configuration Manager에서 Linux 및 UNIX 서버를 관리하는 경우 서버를 관리할 수 있도록 컬렉션, 유지 관리 기간 및 클라이언트 설정을 구성할 수 있습니다. 또한 Linux 및 UNIX용 Configuration Manager 클라이언트에 사용자 인터페이스가 없어도 클라이언트가 수동으로 클라이언트 정책을 강제로 폴링할 수 있습니다.
 
 ##  <a name="BKMK_CollectionsforLnU"></a> Collections of Linux and UNIX servers  
- 컬렉션을 사용하여 다른 클라이언트 형식을 관리하는 것과 같은 방식으로 Linux 및 UNIX 서버 그룹을 관리합니다. 컬렉션은 클라이언트 운영 체제, 하드웨어 구성 또는 사이트 데이터베이스에 저장된 클라이언트의 다른 세부 정보를 식별하는 쿼리 기반 컬렉션 또는 직접 멤버 자격 컬렉션일 수 있습니다. 예를 들어 Linux 및 UNIX 서버를 포함하는컬렉션을 사용하여 다음을 관리할 수 있습니다.  
+ 컬렉션을 사용하여 다른 클라이언트 형식을 관리하는 것과 같은 방식으로 Linux 및 UNIX 서버 그룹을 관리합니다. 컬렉션은 직접 멤버 자격 컬렉션 또는 쿼리 기반 컬렉션일 수 있습니다. 쿼리 기반 컬렉션은 클라이언트 운영 체제, 하드웨어 구성 또는 사이트 데이터베이스에 저장된 클라이언트의 다른 세부 정보를 식별합니다. 예를 들어 Linux 및 UNIX 서버를 포함하는 컬렉션을 사용하여 다음 설정을 관리할 수 있습니다.  
 
 -   클라이언트 설정  
 
@@ -43,9 +42,9 @@ System Center Configuration Manager에서 Linux 및 UNIX 서버를 관리하는 
 
  하드웨어 인벤토리에 대한 기본 클라이언트 설정에는 클라이언트 컴퓨터의 운영 체제에 대한 정보가 포함됩니다. **운영 체제** 클래스의 **캡션** 속성을 사용하여 Linux 또는 UNIX 서버의 운영 체제를 식별할 수 있습니다.  
 
- Configuration Manager 콘솔에 있는 자산 및 준수 작업 영역의 장치 노드에서 Linux 및 UNIX용 Configuration Manager 클라이언트를 실행하는 컴퓨터에 대한 세부 정보를 볼 수 있습니다. Configuration Manager 콘솔의 자산 및 준수 작업 영역에 있는 **운영 체제** 열에서 각 컴퓨터 운영 체제의 이름을 볼 수 있습니다.  
+ Configuration Manager 콘솔에 있는 **자산 및 준수** 작업 영역의 **장치** 노드에서 Linux 및 UNIX용 Configuration Manager 클라이언트를 실행하는 컴퓨터에 대한 세부 정보를 볼 수 있습니다. Configuration Manager 콘솔의 **자산 및 준수** 작업 영역에 있는 **운영 체제** 열에서 각 컴퓨터 운영 체제의 이름을 볼 수 있습니다.  
 
- 기본적으로 Linux 및 UNIX 서버는 **모든 시스템** 컬렉션의 멤버입니다. Linux 및 UNIX 서버 또는 그 하위 집합만을 포함하는 사용자 지정 컬렉션을 빌드하는 것이 좋습니다. 이 옵션을 사용하면 소프트웨어 배포 또는 유사 컴퓨터 그룹에 클라이언트 설정 할당과 같은 작업을 관리할 수 있으므로 배포에 성공했는지 정확히 측정할 수 있습니다.   
+ 기본적으로 Linux 및 UNIX 서버는 **모든 시스템** 컬렉션의 멤버입니다. Linux 및 UNIX 서버 또는 그 하위 집합만을 포함하는 사용자 지정 컬렉션을 빌드하는 것이 좋습니다. 사용자 지정 컬렉션을 사용하면 소프트웨어 배포 또는 유사 컴퓨터 그룹에 클라이언트 설정 할당과 같은 작업을 관리할 수 있으므로 배포에 성공했는지 정확히 측정할 수 있습니다.   
 
  Linux 및 UNIX 서버용 사용자 지정 컬렉션을 빌드할 때 운영 체제 특성에 대해 캡션 특성을 포함하는 멤버 관리 규칙 쿼리를 포함시킵니다. 컬렉션을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 컬렉션을 만드는 방법](../../../core/clients/manage/collections/create-collections.md)을 참조하세요.  
 

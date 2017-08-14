@@ -15,12 +15,11 @@ caps.latest.revision: 36
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3619a73d3a39659de927e1711a7ec81de9918064
-ms.openlocfilehash: 34ddb646137aaf1160d850ba7c1e0109f467225d
+ms.translationtype: HT
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: 2bbc8935bee306ed0bc312cc43b8f5374a8df7ff
 ms.contentlocale: ko-kr
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/29/2017
 
 ---
 # <a name="install-in-console-updates-for-system-center-configuration-manager"></a>System Center Configuration Manager의 콘솔 내 업데이트 설치
@@ -289,6 +288,9 @@ System Center Configuration Manager는 Microsoft 클라우드 서비스와 동�
 
 ##  <a name="bkmk_retry"></a> 실패한 업데이트의 설치 다시 시도  
 업데이트를 설치하지 못하는 경우 콘솔 내 피드백을 검토하여 경고 및 오류가 해결되었는지 확인합니다. 또한 자세한 내용은 사이트 서버의 ConfigMgrPrereq.log에서 확인할 수 있습니다. 업데이트 설치를 다시 시도하기 전에 오류를 수정하고 경고를 해결해야 합니다.  
+
+> [!TIP]  
+> 업데이트를 다운로드하거나 복제하는 데 문제가 있는 경우 [업데이트 다시 설정 도구](/sccm/core/servers/manage/update-reset-tool)를 사용할 수 있습니다. 이 도구는 버전 1706 이상을 실행하는 사이트에서 사용할 수 있습니다. 
 
 업데이트 설치를 다시 시도할 준비가 되면 실패한 업데이트를 선택한 후 해당 옵션을 선택합니다. 업데이트 설치 다시 시도 동작은 다시 시도를 시작하는 노드와 사용하는 다시 시도 옵션에 따라 다릅니다.  
 

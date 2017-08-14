@@ -2,7 +2,7 @@
 title: "Android 응용 프로그램 만들기 | Microsoft 문서"
 description: "Android 장치용 응용 프로그램을 만들고 배포할 때 고려해야 할 사항을 확인합니다."
 ms.custom: na
-ms.date: 03/27/2017
+ms.date: 07/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,18 +16,17 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.translationtype: HT
-ms.sourcegitcommit: 344b55aecd72479b759b40e8252e64a06c5eaba0
-ms.openlocfilehash: 3bfb7364c3de5264a5fa8a684965d9aebeb84719
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: 3a89abc81cd70f4e499bf4e3087fd53915377c44
 ms.contentlocale: ko-kr
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 07/29/2017
 
 ---
-# System Center Configuration Manager에서 Android 응용 프로그램 만들기
-<a id="create-android-applications-with-system-center-configuration-manager" class="xliff"></a>
+# <a name="create-android-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 Android 응용 프로그램 만들기
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 응용 프로그램에는 장치에 소프트웨어를 배포하는 데 필요한 설치 파일과 정보로 구성된 배포 유형이 하나 이상 포함되어 있습니다. 또한 배포 유형에는 소프트웨어 배포 시점 및 방법을 지정하는 규칙이 포함됩니다.  
+System Center Configuration Manager 응용 프로그램에는 하나 이상의 배포 유형이 있습니다. 배포 유형은 장치에 소프트웨어를 배포하는 데 필요한 설치 파일 및 정보로 구성됩니다. 또한 배포 유형에는 소프트웨어 배포 시점 및 방법을 지정하는 규칙이 포함됩니다.  
 
  다음 방법을 사용하여 응용 프로그램을 만들 수 있습니다.  
 
@@ -37,8 +36,7 @@ System Center Configuration Manager 응용 프로그램에는 장치에 소프�
 
 Configuration Manager 응용 프로그램 및 배포 유형을 만드는 데 필요한 단계는 [응용 프로그램 만들기 마법사 시작](../../apps/deploy-use/create-applications.md#start-the-create-application-wizard)을 참조하세요. 또한 Android 장치용 응용 프로그램을 만들고 배포할 때는 다음 사항을 고려하세요.  
 
-## Android 앱에 대한 일반적인 고려 사항
-<a id="general-considerations-for-android-apps" class="xliff"></a>
+## <a name="general-considerations-for-android-apps"></a>Android 앱에 대한 일반적인 고려 사항
 
 Configuration Manager는 다음과 같은 Android용 앱 유형의 배포를 지원합니다.
 
@@ -53,9 +51,8 @@ Configuration Manager는 다음과 같은 Android용 앱 유형의 배포를 지
 |Android|**사용 가능**, **필수** 사용자가 설치 및 제거에 모두 동의해야 합니다.|
 |Android for Work | **필수** |
 
-## Android for Work 앱 승인 및 배포
-<a id="approve-and-deploy-android-for-work-apps" class="xliff"></a>
-Configuration Manager 관리자는 [Play for Work 웹 사이트](https://play.google.com/work)에서 앱을 승인 및 배포하고 해당 앱을 관리되는 Android for Work 장치에 배포할 수도 있습니다.
+## <a name="approve-and-deploy-android-for-work-apps"></a>Android for Work 앱 승인 및 배포
+Configuration Manager 관리자는 [Play for Work 웹 사이트](https://play.google.com/work)에서 앱을 승인하고 해당 앱을 관리되는 Android for Work 장치에 배포할 수도 있습니다.
 
 Play for Work 스토어에서 앱을 승인하고, Configuration Manager 콘솔과 동기화하고, 관리되는 Android for Work 장치에 배포하려면 다음 단계를 따르세요. 사용자의 작업 프로필에 앱을 배포하려면 Play for Work에서 앱을 승인한 다음 Configuration Manager 콘솔과 동기화해야 합니다.
 

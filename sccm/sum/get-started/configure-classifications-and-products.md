@@ -12,11 +12,11 @@ ms.service:
 ms.technology:
 - configmgr-sum
 ms.assetid: 5ddde4e6-d553-4182-b752-6bc8b4a26745
-ms.translationtype: Human Translation
-ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
-ms.openlocfilehash: 6add66e625c790b65edf64216c2262a5d082f820
+ms.translationtype: HT
+ms.sourcegitcommit: afe0ecc4230733fa76e41bf08df5ccfb221da7c8
+ms.openlocfilehash: 2da61e6e06850b36543b9fd41bd9a7d2368006fb
 ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
+ms.lasthandoff: 08/04/2017
 
 ---
 #  <a name="configure-classifications-and-products-to-synchronize"></a>동기화할 분류 및 제품 구성  
@@ -50,9 +50,13 @@ ms.lasthandoff: 12/16/2016
     > - **도구**: 하나 이상의 작업을 완료하는 데 도움이 되는 유틸리티 또는 기능을 지정합니다.  
     > - **업데이트 롤업**: 간편한 배포를 위해 하나로 패키지된 누적 핫픽스 집합을 지정합니다. 이러한 핫픽스로는 보안 업데이트, 중요 업데이트, 업데이트 등이 있습니다. 업데이트 롤업은 일반적으로 보안 또는 제품 구성 요소 등과 같은 특정 영역을 다룹니다.  
     > - **업데이트**: 현재 설치된 응용 프로그램 또는 파일에 대한 업데이트를 지정합니다.  
-    > - **업그레이드**: Windows 10 기능에 대한 업그레이드를 지정합니다.  
-    >   
-    >      **업그레이드** 분류를 가져오려면 소프트웨어 업데이트 지점 및 사이트에서 [핫픽스 3095113](https://support.microsoft.com/kb/3095113)이 있는 최소 WSUS 4.0을 실행해야 합니다.  
+    > - **업그레이드**: Windows 10 기능에 대한 업그레이드를 지정합니다. **업그레이드** 분류를 가져오려면 소프트웨어 업데이트 지점 및 사이트에서 [핫픽스 3095113](https://support.microsoft.com/kb/3095113)이 있는 최소 WSUS 4.0을 실행해야 합니다.    
+    >       
+
+    > [!NOTE]    
+    > Configuration Manager 버전 1706부터 **Microsoft Surface 드라이버 및 펌웨어 업데이트 포함** 확인란을 선택하여 Microsoft Surface 드라이버를 동기화할 수도 있습니다. Surface 드라이버를 성공적으로 동기화하려면 모든 소프트웨어 업데이트 지점에서 Windows Server 2016을 실행해야 합니다.     
+    >    
+    > 이는 시험판 기능입니다. 시험판 기능은 프로덕션 환경의 초기 테스트를 위한 제품에 포함되었지만 이러한 기능은 프로덕션 준비가 된 것으로 간주되지 않아야 합니다. 이 기능을 사용하려면 사용자가 설정해야 합니다. 자세한 내용은 [업데이트에서 시험판 기능 사용](https://docs.microsoft.com/sccm/core/servers/manage/install-in-console-updates#bkmk_prerelease)을 참조하세요.
 
 5.  **제품** 탭에서 소프트웨어 업데이트를 동기화할 제품을 지정한 다음 **닫기**를 클릭합니다.  
 
@@ -63,7 +67,6 @@ ms.lasthandoff: 12/16/2016
 
     > [!IMPORTANT]  
     >  Configuration Manager에는 소프트웨어 업데이트 지점을 처음 설치할 때 선택할 수 있는 제품 및 제품군의 목록이 저장됩니다. Configuration Manager를 릴리스한 후에 릴리스된 제품 및 제품군은 선택 가능한 제품 및 제품군 목록을 업데이트하는 소프트웨어 업데이트 동기화를 완료할 때까지 선택하지 못할 수 있습니다.  
-
 
 ## <a name="next-steps"></a>다음 단계
 소프트웨어 업데이트 동기화를 시작하여 새 기준을 기반으로 소프트웨어 업데이트를 검색합니다. 자세한 내용은 [소프트웨어 업데이트 동기화](synchronize-software-updates.md)를 참조하세요.

@@ -1,5 +1,4 @@
 ---
-
 title: "소프트웨어 업데이트 계획 | Microsoft 문서"
 description: "System Center Configuration Manager 프로덕션 환경에서 소프트웨어 업데이트를 사용하기 전에 소프트웨어 업데이트 지점 인프라에 대한 계획이 반드시 필요합니다."
 keywords: 
@@ -13,12 +12,11 @@ ms.service:
 ms.technology:
 - configmgr-sum
 ms.assetid: d071b0ec-e070-40a9-b7d4-564b92a5465f
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f4c46bfab9b40b29654f4e883817a5508ab25b74
-ms.openlocfilehash: b5a2fd9f15992c9e5ef8aede64af5446b6852b1a
+ms.translationtype: HT
+ms.sourcegitcommit: afe0ecc4230733fa76e41bf08df5ccfb221da7c8
+ms.openlocfilehash: 8b739a01a6bb5cacf0f7109e2e6fa3b31dd666d3
 ms.contentlocale: ko-kr
-ms.lasthandoff: 06/28/2017
-
+ms.lasthandoff: 08/04/2017
 
 ---
 
@@ -109,11 +107,15 @@ Configuration Manager는 다음 Windows 업데이트 에이전트 오류 코드�
 
 
 ###  <a name="BKMK_ManuallySwitchSUPs"></a>수동으로 클라이언트를 새 소프트웨어 업데이트 지점으로 전환
-Configuration Manager 버전 1606부터, 활성 소프트웨어 업데이트 지점에 문제가 있는 경우 Configuration Manager 클라이언트가 새로운 소프트웨어 업데이트 지점으로 전환하도록 하는 옵션을 사용할 수 있습니다. 이 옵션을 사용해도 클라이언트가 관리 지점에서 여러 소프트웨어 업데이트 지점을 받는 경우에만 변경이 발생합니다.  
+Configuration Manager 버전 1606부터, 활성 소프트웨어 업데이트 지점에 문제가 있는 경우 Configuration Manager 클라이언트가 새로운 소프트웨어 업데이트 지점으로 전환하도록 하는 옵션을 사용할 수 있습니다. 이 옵션을 사용해도 클라이언트가 관리 지점에서 여러 소프트웨어 업데이트 지점을 받는 경우에만 변경이 발생합니다.
 
-장치 컬렉션이나 선택한 장치 집합에서 이 옵션을 사용하도록 설정합니다. 사용하도록 설정하면 클라이언트가 다음 검사 시 다른 소프트웨어 업데이트 지점을 찾습니다. 새 소프트웨어 업데이트 지점으로 전환하면 WSUS 구성 설정(소프트웨어 업데이트 지점이 WSUS 데이터베이스를 공유하는지 여부, 업데이트 분류, 제품 등)에 따라 추가 네트워크 트래픽이 발생합니다. 따라서 필요한 경우에만 이 옵션을 사용해야 합니다.  
+> [!IMPORTANT]    
+> 장치를 새 서버를 사용하도록 전환하면 장치는 대체(fallback)를 사용하여 해당 새 서버에 찾습니다. 따라서 경계 그룹 구성을 검토하고 이 변경을 시작하기 전에 소프트웨어 업데이트 지점이 올바른 경계 그룹에 있는지 확인하세요. 자세한 내용은 [소프트웨어 업데이트 지점](/sccm/core/servers/deploy/configure/boundary-groups#software-update-points)을 참조하세요.
+>
+> 새 소프트웨어 업데이트 지점으로 전환하면 추가 네트워크 트래픽이 생성됩니다. 트래픽 양은 업데이트 분류, 제품, 소프트웨어 업데이트 지점이 WSUS 데이터베이스를 공유하는지 여부 등 WSUS 구성 설정에 따라 달라집니다. 여러 장치를 전환하려는 경우 유지 관리 기간 동안 이러한 작업을 수행하여 새 소프트웨어 업데이트 지점 서버와 동기화하는 동안 네트워크에 미치는 영향을 줄이는 것이 좋습니다.
 
 #### <a name="to-enable-the-option-to-switch-software-update-points"></a>소프트웨어 업데이트 지점을 전환하는 옵션을 활성화하려면  
+장치 컬렉션이나 선택한 장치 집합에서 이 옵션을 사용하도록 설정합니다. 사용하도록 설정하면 클라이언트가 다음 검사 시 다른 소프트웨어 업데이트 지점을 찾습니다.
 
 1.  Configuration Manager 콘솔에서 **자산 및 호환성 > 개요 > 장치 컬렉션**으로 이동합니다.  
 
@@ -295,8 +297,8 @@ Configuration Manager 버전 1606부터, 활성 소프트웨어 업데이트 지
 -   교체할 소프트웨어 업데이트가 프로덕션 환경에서 배포하도록 승인되지 않은 경우  
 
     > [!NOTE]  
-    >  Configuration Manager는 교체된 소프트웨어 업데이트를 **만료됨**으로 설정할 때 WSUS에서는 해당 업데이트를 **만료됨**으로 설정하지 않습니다. 그러나 WSUS 정리 작업 실행될 때 Configuration Manager에서 **만료됨**으로 설정된 업데이트는 WSUS 서버에서 **거부됨**으로 설정되고, 컴퓨터의 Windows 업데이트 에이전트는 더 이상 이러한 업데이트를 검색하지 않습니다. 즉, 클라이언트는 정리 작업이 실행될 때까지 만료된 업데이트를 계쏙 검색합니다. WSUS 정리 작업에 대한 자세한 내용은 [소프트웨어 업데이트 유지 관리](/sccm/sum/deploy-use/software-updates-maintenance)를 참조하세요.
-    
+    > Configuration Manager는 교체된 소프트웨어 업데이트를 **만료됨**으로 설정할 때 WSUS에서는 해당 업데이트를 **거부됨**으로 설정하지 않습니다. 그러나 WSUS 정리 작업 실행될 때 Configuration Manager에서 **만료됨**으로 설정된 업데이트는 WSUS 서버에서 **거부됨**으로 설정되고, 컴퓨터의 Windows 업데이트 에이전트는 더 이상 이러한 업데이트를 검색하지 않습니다. 즉, 클라이언트는 정리 작업이 실행될 때까지 만료된 업데이트를 계쏙 검색합니다. WSUS 정리 작업에 대한 자세한 내용은 [소프트웨어 업데이트 유지 관리](/sccm/sum/deploy-use/software-updates-maintenance)를 참조하세요.
+
 ###  <a name="BKMK_UpdateLanguages"></a> 언어  
  소프트웨어 업데이트 지점의 언어 설정을 사용하면 소프트웨어 업데이트에 대해 요약 정보(소프트웨어 업데이트 메타데이터)를 동기화할 언어 및 소프트웨어 업데이트를 위해 다운로드할 소프트웨어 업데이트 파일 언어를 구성할 수 있습니다.  
 

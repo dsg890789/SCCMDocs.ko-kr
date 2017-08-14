@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager 및 Microsoft Intune으로 Android 하이브리드 장치 관리 설정 | Microsoft 문서"
 description: "Configuration Manager 및 Intune으로 Android 모바일 장치 관리 준비"
 ms.custom: na
-ms.date: 03/27/2017
+ms.date: 07/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,12 +16,11 @@ caps.handback.revision: 0
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 86620254897aa9a775dc433de7010b5814c1ec3e
-ms.openlocfilehash: af6fa2dfae5549e89c46d05d0cef1e24342558f9
+ms.translationtype: HT
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: b47ecd1754a623b1b57dc5c5ecb42a6b0b64404e
 ms.contentlocale: ko-kr
-ms.lasthandoff: 07/06/2017
-
+ms.lasthandoff: 07/29/2017
 
 ---
 # <a name="set-up-android-hybrid-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune으로 Android 하이브리드 장치 관리 설정
@@ -39,6 +38,9 @@ Configuration Manager 관리자는 준수 설정을 관리하고, Android 장치
 2. Configuration Manager 콘솔의 **관리** 작업 영역에서 **개요** > **Cloud Services** > **Microsoft Intune 구독**을 선택하고 Intune 구독을 선택합니다.  
 3. **홈** 탭의 **구독** 그룹에서 **플랫폼 구성** > **Android**를 선택합니다.  
 4. **Microsoft Intune 구독 속성** 대화 상자에서 **Android** 탭을 선택하고 **Android 등록 사용** 확인란을 선택합니다.  
+
+> [!NOTE]
+>  **개인적으로 소유한 장치 차단** 기능은 현재 사용할 수 없습니다. 
 
  설정한 후에는 사용자에게 장치를 등록하는 방법을 알려 주어야 합니다. [장치 등록에 대해 최종 사용자에게 알릴 내용](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)을 참조하세요. 이 정보는 Microsoft Intune 및 Configuration Manager에서 관리되는 모바일 장치에 적용됩니다.
 

@@ -16,12 +16,11 @@ caps.handback.revision: 0
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 0cf2ac6440588ccf4848baa7a195f78e8675447d
-ms.openlocfilehash: c6a1eb9ccaee45eb242fb320cb6b492d1a39d349
+ms.translationtype: HT
+ms.sourcegitcommit: 0663ba84762c44a5c303562548499f195bae9e1c
+ms.openlocfilehash: cc678c1133b1944f55bcad309cf9ede9f0660b57
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="manage-boot-images-with-system-center-configuration-manager"></a>System Center Configuration Manager로 부팅 이미지 관리
@@ -33,15 +32,7 @@ Configuration Manager의 부팅 이미지는 운영 체제 배포 중에 사용�
 ## <a name="BKMK_BootImageDefault"></a> 기본 부팅 이미지
 Configuration Manager는 x86 플랫폼을 지원하는 부팅 이미지와 x64 플랫폼을 지원하는 부팅 이미지 등 두 가지 기본 부팅 이미지를 제공합니다. 이러한 이미지는 \\\\*서버 이름*>\SMS_<*사이트 코드*>\osd\boot\\<*x64*> 또는 <*i386*>에 저장됩니다. 기본 부팅 이미지는 수행하는 작업에 따라 업데이트되거나 다시 생성됩니다.
 
-**업데이트 및 설치를 사용하여 최신 버전의 Configuration Manager 설치** 버전 1702부터 Windows ADK 버전을 업그레이드한 다음 업데이트 및 설치를 사용하여 최신 버전의 Configuration Manager를 설치하면 Configuration Manager가 기본 부팅 이미지를 다시 생성합니다. 여기에는 업데이트된 Windows ADK의 새 Window PE 버전, 새 Configuration Manager 클라이언트 버전, 드라이버, 사용자 지정 등이 포함됩니다. 사용자 지정 부팅 이미지는 수정되지 않습니다.
-
-버전 1702 이전 버전의 경우 Configuration Manager는 클라이언트 구성 요소, 드라이버, 사용자 지정 등이 포함된 기존 부팅 이미지(boot.wim)를 업데이트하지만, Windows ADK의 최신 Windows PE 버전을 사용하지 않습니다. 새 Windows ADK 버전을 사용하려면 부팅 이미지를 수동으로 수정해야 합니다.
-
-**Configuration Manager 2012에서 Configuration Manager CB(현재 분기)로 업그레이드** 설치 프로세스를 사용하여 Configuration Manager 2012를 Configuration Manager CB로 업그레이드하면 Configuration Manager가 기본 부팅 이미지를 다시 생성합니다. 여기에는 업데이트된 Windows ADK의 새 Window PE 버전이 포함되며, 새 Configuration Manager 클라이언트 버전 및 모든 사용자 지정은 변경되지 않고 그대로 유지됩니다. 사용자 지정 부팅 이미지는 수정되지 않습니다.
-
-**부팅 이미지를 사용하여 배포 지점 업데이트** Configuration Manager 콘솔의 **부팅 이미지** 노드에서 **배포 지점 업데이트** 작업을 사용하는 경우 Configuration Manager는 클라이언트 구성 요소, 드라이버, 사용자 지정 등이 포함된 기본 부팅 이미지를 업데이트하지만, Windows ADK의 최신 Windows PE 버전을 사용하지 않습니다. 사용자 지정 부팅 이미지는 수정되지 않습니다.
-
-또한 위의 작업에 대해 다음 사항을 고려합니다.
+다음 섹션에 설명된 동작 중 하나에 대해 다음을 고려합니다.
 - 드라이버 소스 파일을 비롯하여 원본 드라이버 개체가 유효해야 합니다. 그렇지 않으면 사이트의 부팅 이미지에 드라이버가 추가되지 않습니다.
 - 같은 Windows PE 버전을 사용하더라도 기본 부팅 이미지를 기반으로 하지 않는 부팅 이미지는 수정되지 않습니다.
 - 수정된 부팅 이미지를 배포 지점에 다시 배포해야 합니다.
@@ -50,6 +41,21 @@ Configuration Manager는 x86 플랫폼을 지원하는 부팅 이미지와 x64 �
 
 > [!NOTE]
 > **소프트웨어 라이브러리**에 추가한 모든 부팅 이미지에 Configuration Manager 추적 로그 도구가 추가됩니다. Windows PE에 있는 경우 명령 프롬프트에서 **CMTrace**를 입력하여 Configuration Manager 추적 로그 도구를 시작할 수 있습니다.  
+
+### <a name="use-updates-and-servicing-to-install-the-latest-version-of-configuration-manager"></a>업데이트 및 서비스를 사용하여 최신 버전의 Configuration Manager 설치
+버전 1702부터 Windows ADK 버전을 업그레이드한 다음 업데이트 및 설치를 사용하여 최신 버전의 Configuration Manager를 설치하면 Configuration Manager가 기본 부팅 이미지를 다시 생성합니다. 여기에는 업데이트된 Windows ADK의 새 Window PE 버전, 새 Configuration Manager 클라이언트 버전, 드라이버, 사용자 지정 등이 포함됩니다. 사용자 지정 부팅 이미지는 수정되지 않습니다.
+
+버전 1702 이전 버전의 경우 Configuration Manager는 클라이언트 구성 요소, 드라이버, 사용자 지정 등이 포함된 기존 부팅 이미지(boot.wim)를 업데이트하지만, Windows ADK의 최신 Windows PE 버전을 사용하지 않습니다. 새 Windows ADK 버전을 사용하려면 부팅 이미지를 수동으로 수정해야 합니다.
+
+### <a name="upgrade-from-configuration-manager-2012-to-configuration-manager-current-branch-cb"></a>Configuration Manager 2012에서 Configuration Manager CB(현재 분기)로 업그레이드
+설치 프로세스를 사용하여 Configuration Manager 2012를 Configuration Manager CB로 업그레이드하면 Configuration Manager가 기본 부팅 이미지를 다시 생성합니다. 여기에는 업데이트된 Windows ADK의 새 Window PE 버전이 포함되며, 새 Configuration Manager 클라이언트 버전 및 모든 사용자 지정은 변경되지 않고 그대로 유지됩니다. 사용자 지정 부팅 이미지는 수정되지 않습니다.
+
+### <a name="update-distribution-points-with-the-boot-image"></a>부팅 이미지를 사용하여 배포 지점 업데이트
+Configuration Manager 콘솔의 **부팅 이미지** 노드에서 **배포 지점 업데이트** 작업을 사용하는 경우 Configuration Manager는 클라이언트 구성 요소, 드라이버, 사용자 지정 등이 포함된 기본 부팅 이미지를 업데이트합니다.    
+
+Configuration Manager 버전 1706부터 부팅 이미지의 Windows ADK 설치 디렉터리에서 최신 Windows PE 버전을 다시 로드하도록 선택할 수 있습니다. 업데이트 배포 지점 마법사의 **일반** 페이지에서는 사이트 서버에 설치된 Windows ADK 버전, 부팅 이미지에서 Windows PE가 사용된 Windows ADK 버전 및 Configuration Manager 클라이언트 버전에 대한 정보를 제공합니다. 이 정보를 통해 부팅 이미지를 다시 로드할지를 결정할 수 있습니다. 또한 **부팅 이미지** 노드에서 부팅 이미지를 볼 때 새로운 열(**클라이언트 버전**)이 추가되므로 각 부팅 이미지에서 사용하는 Configuration Manager의 버전을 확인할 수 있습니다.    
+
+사용자 지정 부팅 이미지는 수정되지 않습니다.
 
 ##  <a name="BKMK_BootImageCustom"></a> 부팅 이미지 사용자 지정  
  지원되는 버전의 Windows ADK에 있는 Windows PE 버전을 기반으로 하는 경우 Configuration Manager 콘솔에서 부팅 이미지를 사용자 지정하거나 [부팅 이미지를 수정](#BKMK_ModifyBootImages)할 수 있습니다. 사이트를 새 버전으로 업그레이드하고 Windows ADK의 새 버전을 설치하는 경우 사용자 지정 부팅 이미지(기본 부팅 이미지의 위치에 없음)는 Windows ADK의 새 버전으로 업데이트되지 않습니다. 이 경우, Configuration Manager 콘솔에서 더 이상 부팅 이미지를 사용자 지정할 수 없습니다. 그러나 업그레이드하기 전과 마찬가지로 계속 작동합니다.  
@@ -123,7 +129,7 @@ Configuration Manager는 x86 플랫폼을 지원하는 부팅 이미지와 x64 �
 >   
 >  PXE를 사용하여 운영 체제를 배포하는 방법에 대한 자세한 내용은 [PXE를 사용하여 네트워크를 통해 Windows 배포](../deploy-use/use-pxe-to-deploy-windows-over-the-network.md)를 참조하세요.  
 
- 부팅 이미지를 배포하는 단계는 [콘텐츠 배포](../../core/servers/deploy/configure/deploy-and-manage-content.md#a-namebkmkdistributea-distribute-content)를 참조하세요.  
+ 부팅 이미지를 배포하는 단계는 [콘텐츠 배포](/sccm/core/servers/deploy/configure/deploy-and-manage-content#bkmk_distribute)를 참조하세요.  
 
 ##  <a name="BKMK_ModifyBootImages"></a> 부팅 이미지 수정  
  이미지에 장치 드라이버를 추가 또는 제거하거나 부팅 이미지와 관련된 속성을 편집할 수 있습니다. 추가하거나 제거할 수 있는 장치 드라이버에는 네트워크 어댑터 또는 대용량 저장소 장치 드라이버 등이 있습니다. 부팅 이미지를 수정할 경우 다음 요소를 고려하세요.  
@@ -132,7 +138,7 @@ Configuration Manager는 x86 플랫폼을 지원하는 부팅 이미지와 x64 �
 
 -   부팅 이미지를 수정하는 경우 부팅 이미지에서 참조하는 관련 패키지는 변경되지 않습니다.  
 
--   부팅 이미지를 변경한 후에는 부팅 이미지가 이미 포함되어 있는 배포 지점에서 부팅 이미지를 **업데이트** 하여 최신 부팅 이미지 버전을 사용할 수 있도록 해야 합니다. 자세한 내용은 [배포한 콘텐츠 관리](../../core/servers/deploy/configure/deploy-and-manage-content.md#a-namebkmkmanagea-manage-the-content-you-have-distributed)를 참조하세요.  
+-   부팅 이미지를 변경한 후에는 부팅 이미지가 이미 포함되어 있는 배포 지점에서 부팅 이미지를 **업데이트** 하여 최신 부팅 이미지 버전을 사용할 수 있도록 해야 합니다. 자세한 내용은 [배포한 콘텐츠 관리](/sccm/core/servers/deploy/configure/deploy-and-manage-content#bkmk_manage)를 참조하세요.  
 
  부팅 이미지를 수정하려면 다음 절차를 따르세요.  
 
@@ -213,7 +219,7 @@ Configuration Manager는 x86 플랫폼을 지원하는 부팅 이미지와 x64 �
         -   사전 준비된 콘텐츠에 사용되는 배포 지점에 부팅 이미지를 배포할 방법을 지정하려면 **사전 준비된 배포 지점 설정** 을 설정합니다.  
 
             > [!NOTE]  
-            >  사전 준비된 콘텐츠에 대한 자세한 내용은 [콘텐츠 사전 준비](../../core/servers/deploy/configure/deploy-and-manage-content.md#a-namebkmkprestagea-use-prestaged-content)를 참조하세요.  
+            >  사전 준비된 콘텐츠에 대한 자세한 내용은 [콘텐츠 사전 준비](/sccm/core/servers/deploy/configure/deploy-and-manage-content#bkmk_prestage)를 참조하세요.  
 
     -   **콘텐츠 위치** 탭에서 배포 지점 또는 배포 지점 그룹을 선택하고 다음 작업 중 필요한 작업을 수행합니다.  
 

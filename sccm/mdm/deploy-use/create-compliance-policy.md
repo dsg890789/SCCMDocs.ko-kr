@@ -16,11 +16,11 @@ author: andredm7
 ms.author: andredm
 manager: angrobe
 robots: noindex
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 216d288aa7b7f2b98df86f59355d879366dcd44d
-ms.openlocfilehash: 4baa6e0fe009f5f7dc33f5ab4adb1ec5e5c5271b
+ms.translationtype: HT
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: 6630d0170df22f46f14df241ffd8d48266c69263
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/29/2017
 
 ---
 
@@ -277,6 +277,31 @@ ms.lasthandoff: 05/17/2017
       * iOS 6+
       * Android 4.0+
       * Samsung KNOX Standard 4.0 이상
+<br></br>
+* **필수 암호 유형** 사용자가 영숫자 암호를 만들어야 할지, 아니면 숫자 암호를 만들어야 할지를 지정합니다. 영숫자 암호의 경우 암호에 포함해야 할 각 문자 집합의 최소 수도 지정합니다. 문자 집합으로는 소문자, 대문자, 기호, 숫자 등 4가지가 있습니다.
+
+    **지원됨:**
+    * Windows Phone 8+
+    * Windows 8.1+
+    * iOS 6+
+<br></br>
+* **장치에서 USB 디버깅 차단** USB 디버깅은 Android for Work 장치에서 이미 사용되지 않도록 설정되어 있으므로 구성할 필요가 없습니다.
+
+    **지원됨:**
+    * Android 4.0+
+    * Samsung KNOX Standard 4.0 이상
+<br></br>
+* **알 수 없는 출처의 앱 차단** 장치가 알 수 없는 소스의 앱 설치를 방지해야 합니다. Android for Work 장치는 알 수 없는 출처의 설치를 하상 제한하므로 이 설정은 구성할 필요가 없습니다.
+
+    **지원됨:**
+    * Android 4.0+
+    * Samsung KNOX Standard 4.0 이상
+<br></br>
+* **앱에서 위협 검색 필요** 이 설정은 장치에서 앱 확인 기능이 사용되도록 구성되어 있음을 지정합니다. 
+
+    **지원됨:**
+    * Android 4.2 ~ 4.4
+    * Samsung KNOX Standard 4.0 이상
 
 ### <a name="find-an-app-id"></a>앱 ID 찾기
 

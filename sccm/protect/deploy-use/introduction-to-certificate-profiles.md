@@ -2,7 +2,7 @@
 title: "인증서 프로필 소개 | Microsoft 문서"
 description: "System Center Configuration Manager의 인증서 프로필이 Active Directory 인증서 서비스에서 작동하는 방식을 알아봅니다."
 ms.custom: na
-ms.date: 03/30/2017
+ms.date: 07/25/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,15 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 41dcc259-f147-4420-bff2-b65bdf8cff77
 caps.latest.revision: 7
-author: arob98
-ms.author: angrobe
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: ba1d5b04cb0cb0284525e295a6086a3c0ac67e9f
+ms.translationtype: HT
+ms.sourcegitcommit: c0d94b8e6ca6ffd82e879b43097a9787e283eb6d
+ms.openlocfilehash: 7b1c0e449f3d1ef42e279e8707df6bf1df163b3f
 ms.contentlocale: ko-kr
-ms.lasthandoff: 03/27/2017
-
+ms.lasthandoff: 08/02/2017
 
 ---
 
@@ -51,17 +50,24 @@ ms.lasthandoff: 03/27/2017
 -   **신뢰할 수 있는 CA 인증서** - 장치에서 서버를 인증해야 할 경우 신뢰할 수 있는 루트 CA 또는 중간 CA 인증서를 배포하여 인증서 신뢰 체인을 형성할 수 있습니다.  
 
 -   **SCEP(단순 인증서 등록 프로토콜)** - Windows Server 2012 R2를 실행하는 서버의 네트워크 장치 등록 서비스 및 SCEP 프로토콜을 사용하여 장치 또는 사용자에 대한 인증서를 요청할 수 있습니다.
+
+    **SCEP(단순 인증서 등록 프로토콜)** 인증서 프로필을 만들려면 먼저 **신뢰할 수 있는 CA 인증서** 인증서 프로필을 만듭니다.
+
 -   **개인 정보 교환(.pfx)** - 장치 또는 사용자에 대한 .pfx(PKCS #12라고도 함) 인증서를 요청할 수 있습니다.
 
-    > [!NOTE]  
-    >  **SCEP(단순 인증서 등록 프로토콜)** 인증서 프로필을 만들려면 먼저 **신뢰할 수 있는 CA 인증서** 유형의 인증서 프로필을 만들어야 합니다.  
+    기존 인증서에서 [자격 증명을 가져오거나](/sccm/mdm/deploy-use/import-pfx-certificate-profiles.md) 요청을 처리할 [인증서 기관을 정의](/sccm/mdm/deploy-use/create-pfx-certificate-profiles.md)하여 PFX 인증서 프로필을 만들 수 있습니다.
+
+    릴리스 1706부터 Microsoft 또는 Entrust를 **개인 정보 교환(.pfx)** 인증서의 인증 기관으로 사용할 수 있습니다.
+
 
 ## <a name="requirements-and-supported-platforms"></a>요구 사항 및 지원되는 플랫폼  
- SCEP를 사용하는 인증서 프로필을 배포하려면 중앙 관리 사이트나 기본 사이트의 사이트 시스템 서버에 인증서 등록 지점을 설치해야 합니다. 작동 중인 NDES(인증서를 요구하는 장치에 액세스 가능) 및 Active Directory 인증서 서비스 역할과 함께 Windows Server 2012 R2를 실행하는 서버에 NDES용 정책 모듈인, Configuration Manager 정책 모듈도 설치해야 합니다. Microsoft Intune에서 등록된 장치의 경우 NDES를 인터넷(예: DMZ라고도 하는 스크린된 서브넷)에서 액세스할 수 있어야 합니다.  
+SCEP를 사용하는 인증서 프로필을 배포하려면 중앙 관리 사이트나 기본 사이트의 사이트 시스템 서버에 인증서 등록 지점을 설치해야 합니다. 작동 중인 NDES(인증서를 요구하는 장치에 액세스 가능) 및 Active Directory 인증서 서비스 역할과 함께 Windows Server 2012 R2를 실행하는 서버에 NDES용 정책 모듈인, Configuration Manager 정책 모듈도 설치해야 합니다. Microsoft Intune에서 등록된 장치의 경우 NDES를 인터넷(예: DMZ라고도 하는 스크린된 서브넷)에서 액세스할 수 있어야 합니다.  
 
- Configuration Manager가 인증서를 배포할 수 있도록 네트워크 장치 등록 서비스에서 정책 모듈을 지원하는 방법에 대한 자세한 내용은 [네트워크 장치 등록 서비스와 함께 정책 모듈 사용](http://go.microsoft.com/fwlink/p/?LinkId=328657)을 참조하세요.  
+또한 PFX 인증서를 사용하려면 중앙 관리 사이트 또는 기본 사이트의 사이트 시스템 서버에 인증서 등록 지점이 있어야 합니다.  또한 인증서에 대한 CA(인증 기관)를 지정하고 관련 액세스 자격 증명을 지정해야 합니다.  버전 1706부터 Microsoft 또는 Entrust를 인증 기관으로 지정할 수 있습니다.  
 
- Configuration Manager에서는 요구 사항, 장치 유형 및 운영 체제에 따라 여러 인증서 저장소에 인증서를 배포할 수 있습니다. 다음 장치 및 운영 체제가 지원됩니다.  
+Configuration Manager가 인증서를 배포할 수 있도록 네트워크 장치 등록 서비스에서 정책 모듈을 지원하는 방법에 대한 자세한 내용은 [네트워크 장치 등록 서비스와 함께 정책 모듈 사용](http://go.microsoft.com/fwlink/p/?LinkId=328657)을 참조하세요.  
+
+Configuration Manager에서는 요구 사항, 장치 유형 및 운영 체제에 따라 여러 인증서 저장소에 인증서를 배포할 수 있습니다. 다음 장치 및 운영 체제가 지원됩니다.  
 
 -   Windows RT 8.1  
 
