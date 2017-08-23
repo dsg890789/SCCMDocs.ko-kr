@@ -1,64 +1,57 @@
 ---
-title: "업그레이드, 업데이트 및 설치 정보 | Microsoft 문서"
-description: "Configuration Manager 인프라를 관리할 때 설치, 업데이트 및 업그레이드라는 용어 간의 차이점을 알아봅니다."
+title: O uaktualnienie, aktualizacji i instalacji | Dokumentacja firmy Microsoft
+description: "Różnice między warunki instalacji, aktualizacji i uaktualnień, podczas zarządzania infrastrukturą programu Configuration Manager."
 ms.custom: na
 ms.date: 1/11/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 17fab17f-304d-4f6a-87c7-30ab4f5521ed
-caps.latest.revision: 0
-caps.handback.revision: 0
+caps.latest.revision: "0"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 0d0735c170820259ac8bb6706aac7cc5569a1628
 ms.openlocfilehash: 6bd6cd7ea3c41fa1d70e17a1290c9f1f74cc9e37
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 08/07/2017
 ---
+# <a name="about-upgrade-update-and-install-for-site-and-hierarchy-infrastructure"></a>O uaktualnienie aktualizacji i zainstalować infrastruktury lokacji i hierarchii
 
-# <a name="about-upgrade-update-and-install-for-site-and-hierarchy-infrastructure"></a>사이트 및 계층 인프라에 대한 업그레이드, 업데이트 및 설치 정보
-
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*Dotyczy: Program System Center Configuration Manager (Current Branch)*
 
 
-System Center Configuration Manager 사이트 및 계층 인프라를 관리할 때 *업그레이드*, *업데이트* 및 *설치*라는 용어는 세 가지 별도의 개념을 설명하는 데 사용됩니다.
+Podczas zarządzania w lokacji programu System Center Configuration Manager i infrastruktury hierarchii, warunki *uaktualnienia*, *aktualizacji*, i *zainstalować* służą do opisywania trzy oddzielne pojęcia.
 
 ## <a name="upgrade"></a>Upgrade
-*업그레이드* 또는 *전체 업그레이드*는 Configuration Manager 2012 사이트 또는 계층을 System Center Configuration Manager를 실행하는 사이트 또는 계층으로 변환하는 데 사용됩니다.
-System Center 2012 Configuration Manager를 System Center Configuration Manager로 업그레이드한 경우 사이트 및 사이트 서버를 호스트하는 데 계속해서 동일한 서버가 사용되며 Configuration Manager에 대한 기존 데이터 및 구성이 그대로 유지됩니다.  이는 새 하드웨어에 설치된 새 System Center Configuration Manager 사이트를 사용하면서 관리되는 장치에 대한 구성 및 데이터를 유지하는 방법인 [마이그레이션](/sccm/core/migration/migrate-data-between-hierarchies)과 다릅니다.
+*Uaktualnij* lub *uaktualnienia w miejscu*, jest używany podczas konwertowania lokacji programu Configuration Manager 2012 lub hierarchii do wersji, która uruchamia System Center Configuration Manager.
+Po uaktualnieniu programu System Center 2012 Configuration Manager do programu System Center Configuration Manager, będziesz nadal używać tych samych serwerów do hostowania witryn i serwerów lokacji i zachować istniejące dane i konfiguracje programu Configuration Manager.  Różni się to od [migracji](/sccm/core/migration/migrate-data-between-hierarchies) czyli sposób zachowania podczas korzystania z nowych lokacji programu System Center Configuration Manager zainstalowana na nowy sprzęt sieci konfiguracje i dane dotyczące zarządzanych urządzeń.
 
-자세한 내용은 [System Center Configuration Manager로 업그레이드](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager)를 참조하세요.
-
-
-
-## <a name="update"></a>업데이트
-*업데이트*는 System Center Configuration Manager에 대한 콘솔 내 업데이트 설치 및 Configuration Manager 콘솔 내에서 배달할 수 없는 업데이트인 대역 외 업데이트에 사용됩니다. 콘솔 내 업데이트는 상위 버전을 실행할 수 있도록 현재 분기 사이트(또는 기술 미리 보기 사이트)의 버전을 수정할 수 있습니다. 예를 들어 사이트에서 버전 1606을 실행하는 경우 버전 1610에 대한 업데이트를 설치할 수 있습니다. 또한 사이트 버전을 수정하지 않고 업데이트에서 알려진 문제에 대한 수정 프로그램을 설치할 수 있습니다.      
-
-일반적으로 업데이트는 기존 배포에 보안 수정 프로그램, 품질 개선 및 새로운 기능을 추가합니다. 기술 미리 보기 분기를 사용하는 경우 업데이트를 통해 기술 미리 보기의 최신 버전을 설치할 수 있습니다.
--   콘솔 내 업데이트를 설치할 시기는 계층의 최상위 계층 사이트부터 선택합니다.
-- 콘솔 내에서 사용할 수 있는 모든 업데이트를 설치할 수 있습니다. 예를 들어 사이트에서 버전 1602를 실행하고 1606과 1610이 둘 다 제공된 경우 버전 1610을 설치하는 것이 좋습니다. 각 버전에는 이전에 릴리스된 버전에서 처음으로 제공된 기능이 포함되어 있기 때문입니다.
-- 최상위 계층 사이트에서 새 업데이트 설치가 완료되면 자식 기본 사이트에서 업데이트 프로세스가 자동으로 시작됩니다. 그러나 [서비스 기간](/sccm/core/servers/manage/install-in-console-updates#a-namebkmkservicewindowa-service-windows-for-site-servers)을 설정하여 업데이트 시기를 제어할 수 있습니다.
-- 보조 사이트에는 업데이트가 자동으로 설치되지 않습니다. 대신 Configuration Manager 콘솔 내에서 수동으로 업데이트를 시작해야 합니다.
-
-자세한 내용은 [System Center Configuration Manager용 업데이트](/sccm/core/servers/manage/updates) 및 [System Center Configuration Manager Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.
+Aby uzyskać więcej informacji, zobacz [uaktualnienia do programu System Center Configuration Manager](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager).
 
 
 
-## <a name="install"></a>설치
-*설치*는 새 Configuration Manager 계층을 처음부터 만들거나 기존 계층에 추가 사이트를 추가할 때 사용됩니다.  
+## <a name="update"></a>Aktualizacja
+*Aktualizacja* jest używany do instalowania aktualizacji w konsoli programu System Center Configuration Manager, a aktualizacje poza pasmem, które są aktualizacje, które nie może być dostarczone z poziomu konsoli programu Configuration Manager. Aktualizacje w konsoli można zmodyfikować wersji Current Branch lokacji (lub lokacji Technical Preview), aby został uruchomiony w nowszej wersji. Możesz na przykład, jeśli w lokalizacji uruchomiono wersję 1606, można zainstalować aktualizację dla wersji 1610. Aktualizacje można również zainstalować poprawki dla znany problem, bez konieczności modyfikacji wersji lokacji.      
 
-새 기본 사이트 또는 중앙 관리 사이트를 설치하는 경우 사용되는 setup.exe 및 관련 소스 파일의 위치는 설치 시나리오에 따라 다릅니다.
+Zazwyczaj aktualizacje Dodaj poprawki zabezpieczeń, poprawa jakości i nowe funkcje do istniejącego wdrożenia. Jeśli używasz gałęzi Technical Preview, aktualizację można zainstalować nowszej wersji Technical Preview.
+-   Można wybrać podczas instalowania aktualizacji w konsoli, zaczynając od lokacji najwyższego poziomu w hierarchii.
+- Można zainstalować żadnych aktualizacji, które są dostępne za pośrednictwem konsoli. Na przykład jeśli witryna będzie używana wersja 1602, zarówno 1606 i 1610 są oferowane należy rozważyć zainstalowanie wersji 1610, ponieważ każda wersja zawiera funkcje, które zostały po raz pierwszy udostępniona w wydanych wersji.
+- Po zakończeniu instalacji w lokacji najwyższego poziomu nową aktualizację podrzędne Lokacje główne automatycznie uruchomić proces aktualizacji. Jednak można ustawić [usługi Windows](/sccm/core/servers/manage/install-in-console-updates#a-namebkmkservicewindowa-service-windows-for-site-servers) do kontrolowania czasu aktualizacji.
+- Lokacje dodatkowe nie instalują automatycznie aktualizacji. Zamiast tego należy ręcznie uruchomić aktualizacji z poziomu konsoli programu Configuration Manager.
 
-자세한 내용은 [사이트 설치 준비](/sccm/core/servers/deploy/install/prepare-to-install-sites)를 참조하세요.
+Aby uzyskać więcej informacji, zobacz [aktualizacji dla programu System Center Configuration Manager](/sccm/core/servers/manage/updates), i [Technical Preview programu System Center Configuration Manager](/sccm/core/get-started/technical-preview).
 
 
 
-<!--HONumber=Jan17_HO2-->
+## <a name="install"></a>Zainstaluj
+*Zainstaluj* jest używane podczas tworzenia nowej hierarchii programu Configuration Manager od początku lub dodanie dodatkowych lokacji do istniejącej hierarchii.  
 
+Podczas instalowania nowej lokacji głównej lub centralnej lokacji administracyjnej, lokalizację setup.exe i jego pliki źródłowe powiązanych, których używasz zależy od danego scenariusza instalacji.
 
+Aby uzyskać więcej informacji, zobacz [przygotowaniu się do zainstalowania lokacji](/sccm/core/servers/deploy/install/prepare-to-install-sites).

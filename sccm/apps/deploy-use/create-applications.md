@@ -1,480 +1,477 @@
 ---
-title: "응용 프로그램 만들기 | Microsoft 문서"
-description: "System Center Configuration Manager를 사용하여 응용 프로그램 및 배포 유형을 만들고 배포합니다."
+title: Tworzenie aplikacji | Dokumentacja firmy Microsoft
+description: "Tworzenie i wdrażanie aplikacji i typów wdrożeń w programie System Center Configuration Manager."
 ms.custom: na
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: cc230ff4-7056-4339-a0a6-6a44cdbb2857
-caps.latest.revision: 14
-caps.handback.revision: 0
+caps.latest.revision: "14"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: b7461f89f483314bd07248bbc9d5dde85ca6b6c2
 ms.openlocfilehash: 4d048d4f9ab01b28e6c21a38cca4d82c85030618
-ms.contentlocale: ko-kr
-ms.lasthandoff: 08/03/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 08/07/2017
 ---
-# <a name="create-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 만들기
+# <a name="create-applications-with-system-center-configuration-manager"></a>Tworzenie aplikacji w programie System Center Configuration Manager
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*Dotyczy: Program System Center Configuration Manager (Current Branch)*
 
-System Center Configuration Manager 응용 프로그램에는 장치에 소프트웨어를 배포하는 데 필요한 파일과 정보가 포함되어 있습니다. 응용 프로그램에는 소프트웨어 설치에 필요한 설치 파일과 정보로 구성된 배포 유형이 하나 이상 포함되어 있습니다. 또한 배포 유형에는 소프트웨어 배포 시점 및 방법을 지정하는 규칙이 포함됩니다.  
+Aplikacji programu System Center Configuration Manager zawiera pliki i informacje, które są wymagane do wdrożenia oprogramowania na urządzeniu. Aplikacja ma co najmniej jeden typ wdrożenia obejmujący pliki instalacyjne i informacje niezbędne do zainstalowania oprogramowania. Typ wdrożenia ma również zasady określające, kiedy i jak oprogramowanie zostanie wdrożone.  
 
- 다음 방법을 사용하여 응용 프로그램을 만들 수 있습니다.  
+ Aplikacje można utworzyć przy użyciu następujących metod:  
 
--   응용 프로그램 설치 파일을 읽어 자동으로 응용 프로그램 및 배포 유형을 만듭니다.  
+-   Automatyczne tworzenie aplikacji i typów wdrożenia przez odczytanie plików instalacyjnych aplikacji.  
 
--   수동으로 응용 프로그램을 만든 다음 나중에 배포 유형을 추가합니다.  
+-   ręczne utworzenie aplikacji, a następnie dodanie typów wdrożenia.  
 
--   파일에서 응용 프로그램을 가져옵니다.  
+-   Zaimportowanie aplikacji z pliku.  
 
 > [!NOTE]  
->  [모바일 장치용 응용 프로그램 만들기](../../mdm/deploy-use/create-applications.md)에서는 iOS, Windows Phone 및 Android 응용 프로그램을 만드는 방법에 대한 자세한 정보를 제공합니다.  
+>  [Tworzenie aplikacji dla urządzeń przenośnych](../../mdm/deploy-use/create-applications.md) zawiera szczegółowe informacje dotyczące tworzenia systemu iOS, Windows Phone i aplikacji systemu Android.  
 
-Configuration Manager 응용 프로그램 및 배포 유형을 만들려면 다음 단계를 따르세요.  
+Poniższe kroki umożliwiają utworzenie aplikacji programu Configuration Manager i typów wdrożeń.  
 
-## <a name="start-the-create-application-wizard"></a>응용 프로그램 만들기 마법사 시작  
+## <a name="start-the-create-application-wizard"></a>Uruchom Kreatora tworzenia aplikacji  
 
-1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **응용 프로그램**을 선택합니다.  
+1.  W konsoli programu Configuration Manager wybierz **Biblioteka oprogramowania** > **Zarządzanie aplikacjami** > **aplikacji**.  
 
-3.  **홈** 탭의 **만들기** 그룹에서 **응용 프로그램 만들기**를 선택합니다.  
+3.  Na **Home** karcie **Utwórz** grupy, wybierz **tworzenie aplikacji**.  
 
-## <a name="specify-whether-you-want-to-automatically-detect-application-information-or-manually-define-the-information"></a>자동으로 응용 프로그램 정보를 검색할지 아니면 수동으로 정보를 정의할지 지정  
+## <a name="specify-whether-you-want-to-automatically-detect-application-information-or-manually-define-the-information"></a>Określ, czy chcesz automatycznie Wykryj informacje o aplikacji, lub ręcznie zdefiniować informacji o  
 
--   종속성이나 요구 사항이 없는 Windows Installer 파일처럼 단일 배포 유형의 간단한 응용 프로그램을 만들려면 응용 프로그램 정보를 자동으로 검색합니다. 이 절차에 따라 응용 프로그램을 만든 후에 배포 유형을 추가하거나 변경하고, 검색 방법, 종속성 또는 요구 사항을 추가하기 위해 필요한 대로 편집할 수 있습니다.  
+-   Automatycznie wykryj informacje o aplikacji, jeśli chcesz utworzyć prostą aplikację z pojedynczym typem wdrożenia, takich jak plik Instalatora Windows, który nie ma zależności ani wymagań. Po utworzeniu aplikacji przy użyciu tej procedury można ją edytować w miarę potrzeby, aby dodawać lub zmieniać typy wdrożeń oraz dodawać metody wykrywania, zależności lub wymagania.  
 
--   여러 배포 유형, 종속성, 검색 방법 또는 요구 사항으로 더 복잡한 응용 프로그램을 만들려면 응용 프로그램 정보를 수동으로 지정합니다.  
+-   Ręcznie określ informacje o aplikacji do tworzenia bardziej złożone aplikacje mające wiele typów wdrożeń, zależności, metod wykrywania lub wymagań.  
 
-### <a name="automatically-detect-application-information"></a>응용 프로그램 정보 자동 검색  
+### <a name="automatically-detect-application-information"></a>Automatycznie wykryj informacje o aplikacji  
 
-1.  응용 프로그램 만들기 마법사의 **일반** 페이지에서 **설치 파일에서 이 응용 프로그램에 대한 정보 자동 검색**을 선택합니다.  
+1.  Na **ogólne** strony kreatora tworzenia aplikacji wybierz **automatycznie Wykryj informacje o tej aplikacji z plików instalacyjnych**.  
 
-2.  **유형** 드롭다운 목록에서 응용 프로그램 정보를 검색하는 데 사용할 응용 프로그램 설치 파일 유형을 선택합니다. 사용 가능한 설치 유형에 대한 자세한 내용은 이 항목에서 [Configuration Manager에서 지원하는 배포 유형](/sccm/apps/deploy-use/create-applications#deployment-types-supported-by-configuration-manager)을 참조하세요.  
+2.  W **typu** listy rozwijanej, wybierz typ pliku instalacyjnego aplikacji którego chcesz użyć do wykrywania informacji o aplikacji. Informacje o dostępnych typach instalacji znajdują się w sekcji [Typy wdrożeń obsługiwane przez program Configuration Manager](/sccm/apps/deploy-use/create-applications#deployment-types-supported-by-configuration-manager) w tym temacie.  
 
-3.  **위치** 상자에서 *\\\\서버\\공유\\\파일 이름* 형식의 UNC 경로를 지정하거나 응용 프로그램 정보를 검색하는 데 사용할 응용 프로그램 설치 파일의 스토어 링크를 지정합니다. 또는 **찾아보기** 를 클릭하여 설치 파일을 찾습니다.  
+3.  W **lokalizacji** Określ ścieżkę UNC (w postaci  *\\ \\serwera\\udostępnianie\\\filename*) lub łącze do pliku instalacyjnego aplikacji, które chcesz użyć do wykrywania informacji o aplikacji magazynu. Można też kliknąć przycisk **Przeglądaj**, aby przejść do lokalizacji pliku instalacyjnego.  
 
     > [!IMPORTANT]  
-    >  응용 프로그램 유형으로 **Windows Installer(\*.msi 파일)**를 선택하면 지정한 폴더의 모든 파일과 응용 프로그램을 가져와서 배포 지점으로 보냅니다. 지정한 폴더에는 응용 프로그램을 설치하는 데 필요한 파일만 있어야 합니다. Configuration Manager는 응용 프로그램 패키지의 응용 프로그램 파일을 최대 20,000개까지 지원하는 것으로 확인되었습니다. 응용 프로그램에 이보다 많은 파일이 포함되어 있으면 더 적은 개수의 파일로 여러 응용 프로그램을 만드는 것이 좋습니다.  
+    >  Po wybraniu **Instalatora Windows (\*pliku .msi)** w ustawieniu typu aplikacji wszystkie pliki w folderze określonym przez użytkownika zostaną zaimportowane z aplikacją i będą wysyłane do punktów dystrybucji. Upewnij się, że folder zostanie zawiera tylko pliki, które są niezbędne do zainstalowania aplikacji. Menedżer konfiguracji został sprawdzony pod kątem obsługi maksymalnie 20 000 plików aplikacji w pakiecie aplikacji. Jeśli aplikacja ma więcej plików, należy rozważyć utworzenie wielu aplikacji zawierających mniejszą liczbę plików.  
 
-    >  응용 프로그램이 포함된 UNC 경로와 응용 프로그램 콘텐츠가 포함된 하위 폴더에 대한 액세스 권한이 있어야 합니다.  
+    >  Musi mieć dostęp do ścieżki UNC, do której ma aplikacji i wszelkich podfolderów z zawartością aplikacji.  
 
-4.  응용 프로그램 만들기 마법사의 **정보 가져오기** 페이지에서 가져온 정보를 검토하고 **다음**을 선택합니다. 필요한 경우 **이전**을 선택하여 뒤로 돌아가서 오류를 수정할 수 있습니다.  
+4.  Na **Importuj informacje** strony kreatora tworzenia aplikacji przejrzyj informacje, które zostały zaimportowane, a następnie wybierz pozycję **dalej**. Jeśli to konieczne, możesz wybrać **Wstecz** aby wrócić do poprzedniej strony i poprawić błędy.  
 
-5.  응용 프로그램 만들기 마법사의 **일반 정보** 페이지에서 다음 정보를 지정합니다.  
+5.  Na **ogólne informacje** strony kreatora tworzenia aplikacji Podaj następujące informacje:  
 
     > [!NOTE]  
-    >  응용 프로그램 설치 파일에서 자동으로 가져온 경우 이 정보 중 일부가 이미 채워져 있을 수 있습니다. 또한 표시되는 옵션은 사용자가 만드는 응용 프로그램 유형에 따라 다를 수 있습니다.  
+    >  Niektóre z tych informacji mogą już być podane, jeśli zostały uzyskane automatycznie z plików instalacyjnych aplikacji. Wyświetlane opcje mogą się ponadto różnić w zależności od typu tworzonej aplikacji.  
 
-    -   응용 프로그램에 대한 일반 정보(예: 응용 프로그램 이름, 설명, 버전, 그리고 Configuration Manager 콘솔에서 응용 프로그램을 찾는 데 도움이 되는 선택적 참조)입니다.  
+    -   Ogólne informacje o aplikacji, takie jak nazwa aplikacji, komentarze, wersja i opcjonalne informacje w celu znalezienia aplikacji w konsoli programu Configuration Manager.  
 
-    -   **설치 프로그램** – 응용 프로그램 배포 유형을 설치하는 데 필요한 설치 프로그램 및 필수 속성을 지정합니다.  
+    -   **Program instalacyjny**— Określ program instalacyjny oraz wszelkie wymagane właściwości, które są niezbędne do zainstalowania typu wdrożenia aplikacji.  
 
         > [!TIP]  
-        >  설치 프로그램이 표시되지 않는 경우 **찾아보기**를 선택하여 설치 프로그램 위치를 찾습니다.  
+        >  Jeśli program instalacyjny nie jest wyświetlana, wybierz **Przeglądaj** i przejdź do lokalizacji programu instalacyjnego.  
 
-    -   **설치 동작** - 응용 프로그램 배포 유형을 현재 로그온한 사용자용으로만 설치할지 아니면 모든 사용자용으로 설치할지 지정합니다. 또한, 배포 유형을 장치 하나에 배포하는 경우 모든 사용자용으로 설치하고, 사용자 한 명에게 배포하는 경우 특정 사용자용으로만 설치하도록 지정할 수도 있습니다.  
+    -   **Zachowanie podczas instalowania**— Określ, czy typ wdrożenia aplikacji zostanie zainstalowany tylko dla obecnie zalogowanego użytkownika lub dla wszystkich użytkowników. Można również określić, że typ wdrożenia zostanie zainstalowany dla wszystkich użytkowników, jeśli Jeśli jest wdrażana dla użytkownika jest wdrożony na urządzeniu lub tylko do określonego użytkownika.  
 
-    -   **자동 VPN 연결 사용(구성된 경우)** - 앱을 실행하는 장치에 VPN 프로필이 배포된 경우 앱을 시작할 때 VPN 연결을 시작합니다(Windows 8.1 및 Windows Phone 8.1에만 해당).  
+    -   **Użyj automatycznego połączenia VPN (jeśli jest skonfigurowane)**— Jeśli profil sieci VPN został wdrożony na urządzeniu, na którym uruchomiono aplikację, uruchom połączenie sieci VPN po uruchomieniu aplikacji (Windows 8.1 i Windows Phone 8.1 tylko).  
 
-         Windows Phone 8.1 장치에서는 둘 이상의 VPN 프로필이 장치에 배포된 경우 자동 VPN 연결이 지원되지 않습니다.  
+         Na urządzeniach Windows Phone 8.1 automatyczne połączenia VPN nie są obsługiwane, jeśli więcej niż jeden profil sieci VPN został wdrożony na urządzeniu.  
 
-         VPN 프로필에 대한 자세한 내용은 [VPN 프로필](../../protect/deploy-use/vpn-profiles.md)을 참조하세요.  
+         Aby uzyskać więcej informacji na temat profilów sieci VPN, zobacz [profilów sieci VPN](../../protect/deploy-use/vpn-profiles.md).  
 
-6.  **다음**을 선택하고 **요약** 페이지에서 응용 프로그램 정보를 검토한 다음 응용 프로그램 만들기 마법사를 완료합니다.  
+6.  Wybierz **dalej**, przejrzyj informacje o aplikacji na **Podsumowanie** strony, a następnie Zakończ pracę Kreatora tworzenia aplikacji.  
 
-Configuration Manager 콘솔의 **응용 프로그램** 노드에 새 응용 프로그램이 표시되며, 이제 응용 프로그램 만들기를 완료한 것입니다. 응용 프로그램에 배포 유형을 더 추가하려면 이 항목에서 [응용 프로그램의 배포 유형 만들기](/sccm/apps/deploy-use/create-applications#create-deployment-types-for-the-application)를 참조하세요.  
+Nowa aplikacja pojawi się w **aplikacji** węzła konsoli programu Configuration Manager, i ukończeniu tworzenia aplikacji. Informacje o dodawaniu większej liczby typów wdrożenia do aplikacji znajdują się w sekcji [Tworzenie typów wdrożenia aplikacji](/sccm/apps/deploy-use/create-applications#create-deployment-types-for-the-application) w tym temacie.  
 
-### <a name="manually-specify-application-information"></a>응용 프로그램 정보 수동 지정  
+### <a name="manually-specify-application-information"></a>Ręcznie określ informacje o aplikacji  
 
-1.  응용 프로그램 만들기 마법사의 **일반** 페이지에서 **응용 프로그램 정보 수동 지정**을 선택하고 **다음**을 선택합니다.  
+1.  Na **ogólne** strony kreatora tworzenia aplikacji wybierz **ręcznie określ informacje o aplikacji**, a następnie wybierz pozycję **dalej**.  
 
-2.  응용 프로그램에 대한 일반 정보(예: 응용 프로그램 이름, 설명, 버전, 그리고 Configuration Manager 콘솔에서 응용 프로그램을 찾는 데 도움이 되는 선택적 참조)를 지정합니다.  
+2.  Określ ogólne informacje o aplikacji, takie jak nazwa aplikacji, komentarze, wersja i opcjonalne informacje w celu znalezienia aplikacji w konsoli programu Configuration Manager.  
 
-3.  응용 프로그램 만들기 마법사의 **응용 프로그램 카탈로그** 페이지에서 다음 정보를 지정합니다.  
+3.  Na **katalogu aplikacji** strony kreatora tworzenia aplikacji Podaj następujące informacje:  
 
-    -   **선택한 언어** – 드롭다운 목록에서 설정할 응용 프로그램의 언어 버전을 선택합니다. 이 응용 프로그램의 언어를 더 설정하려면 **추가/제거**를 선택합니다.  
+    -   **Wybrany język**— z listy rozwijanej wybierz wersję językową aplikacji, którą chcesz skonfigurować. Wybierz **Dodaj lub usuń** Aby skonfigurować więcej języków aplikacji.  
 
-    -   **지역화된 응용 프로그램 이름** – **선택한 언어** 드롭다운 목록에서 선택한 언어로 응용 프로그램 이름을 지정합니다.  
+    -   **Nazwa zlokalizowanej aplikacji**— Określ nazwę aplikacji w języku wybranym **wybrany język** listy rozwijanej.  
 
         > [!IMPORTANT]  
-        >  설정하는 각 언어 버전의 지역화된 응용 프로그램 이름을 지정해야 합니다.  
+        >  Podaj zlokalizowaną nazwę aplikacji dla każdej skonfigurowanej wersji.  
 
-    -   **사용자 범주** – **편집**을 선택하여 **선택한 언어** 드롭다운 목록에서 선택한 언어로 응용 프로그램 범주를 지정합니다. 소프트웨어 센터의 사용자는 선택한 이 범주를 사용하여 사용 가능한 응용 프로그램을 필터링하고 정렬할 수 있습니다.  
+    -   **Kategorie użytkowników**— wybierz **Edytuj** Aby określić kategorie aplikacji w języku wybranym **wybrany język** listy rozwijanej. Użytkownicy Centrum oprogramowania można używać owych wybranych kategorii do filtrowania i sortowania dostępnych aplikacji.  
 
-    -   **사용자용 설명 문서** - **찾아보기**를 선택하여 소프트웨어 센터의 사용자가 이 응용 프로그램에 대해 자세한 정보를 얻기 위해 읽을 수 있는 파일의 URL 또는 UNC 경로 및 파일 이름을 지정합니다.  
+    -   **Dokumentacja użytkownika**— wybierz **Przeglądaj** Aby określić adres URL lub ścieżkę UNC i plik nazwę pliku, który użytkownicy Centrum oprogramowania mogą odczytać w celu uzyskania dodatkowych informacji o tej aplikacji.  
 
-    -   **링크 텍스트** - 응용 프로그램에 대한 URL 대신 표시할 텍스트를 지정합니다.  
+    -   **Tekst łącza**— Określ tekst, który będzie wyświetlany zamiast adresu URL aplikacji.  
 
-    -   **응용 프로그램 개인정보취급방침 URL** - 응용 프로그램에 대한 개인정보취급방침에 연결되는 URL을 지정합니다.  
+    -   **Adres URL aplikacji prywatności**— Określ adres URL prowadzący do zasad zachowania poufności informacji dla aplikacji.  
 
-    -   **지역화된 설명** – **선택한 언어** 드롭다운 목록에서 선택한 언어로 이 응용 프로그램의 설명을 입력합니다.  
+    -   **Zlokalizowany opis**— wprowadź opis dla tej aplikacji w języku wybranym **wybrany język** listy rozwijanej.  
 
-    -   **키워드** – **선택한 언어** 드롭다운 목록에서 선택한 언어로 키워드 목록을 입력합니다. 이러한 키워드를 통해 소프트웨어 센터의 사용자가 응용 프로그램을 검색할 수 있습니다.  
+    -   **Słowa kluczowe**— wprowadź listę słów kluczowych w języku wybranym **wybrany język** listy rozwijanej. Słowa kluczowe ułatwią użytkownikom Centrum oprogramowania wyszukiwanie aplikacji.  
 
-    -   **아이콘** – **찾아보기**를 선택하여 사용 가능한 아이콘에서 이 응용 프로그램의 아이콘을 선택합니다. 아이콘을 지정하지 않으면 이 응용 프로그램에 기본 아이콘이 사용됩니다.  
+    -   **Ikona**— wybierz **Przeglądaj** aby wybrać ikonę tej aplikacji spośród dostępnych ikon. Jeśli nie określisz ikony, ikona domyślna będzie używany dla tej aplikacji.  
 
-    -   **회사 포털에서 이 항목을 추천 앱 및 하이라이트로 표시** - 이 옵션을 선택하면 앱이 회사 포털에서 강조되어 표시됩니다.  
+    -   **Wyświetlaj jako polecaną aplikację i wyróżnij w portalu firmy**— wybierz tę opcję, aby wyróżnić aplikację w portalu firmy.  
 
-4.  응용 프로그램 만들기 마법사의 **배포 유형** 페이지에서 **추가**를 선택하여 새 배포 유형을 만듭니다.  
+4.  Na **typy wdrożeń** strony kreatora tworzenia aplikacji wybierz **Dodaj** do utworzenia nowego typu wdrożenia.  
 
- 자세한 내용은 [응용 프로그램의 배포 유형 만들기](/sccm/apps/deploy-use/create-applications#create-deployment-types-for-the-application)를 참조하세요.  
+ Aby uzyskać więcej informacji, zobacz [tworzenia typów wdrożenia dla aplikacji](/sccm/apps/deploy-use/create-applications#create-deployment-types-for-the-application).  
 
-5.  **다음**을 선택하고 **요약** 페이지에서 응용 프로그램 정보를 검토한 다음 응용 프로그램 만들기 마법사를 완료합니다.  
+5.  Wybierz **dalej**, przejrzyj informacje o aplikacji na **Podsumowanie** strony, a następnie Zakończ pracę Kreatora tworzenia aplikacji.  
 
-Configuration Manager 콘솔의 **응용 프로그램** 노드에 새 응용 프로그램이 표시됩니다.  
+Nowa aplikacja pojawi się w **aplikacji** węzła konsoli programu Configuration Manager.  
 
-##  <a name="create-deployment-types-for-the-application"></a>응용 프로그램의 배포 유형 만들기  
- 배포 유형 만들기 마법사의 **일반** 페이지에서 **설치 파일에서 이 배포 유형에 대한 정보 자동 확인**을 선택한 경우에는 다음 절차의 일부 단계를 완료하지 않아도 됩니다.  
+##  <a name="create-deployment-types-for-the-application"></a>Tworzenie typów wdrożenia dla aplikacji  
+ W przypadku wybrania **automatycznie Zidentyfikuj informacje o tym typie wdrożenia z plików instalacyjnych** na **ogólne** strony kreatora tworzenia typu wdrożenia nie należy zakończyć niektórych czynności następujących procedur.  
 
-## <a name="start-the-create-deployment-type-wizard"></a>배포 유형 만들기 마법사 시작  
+## <a name="start-the-create-deployment-type-wizard"></a>Uruchomienie Kreatora tworzenia typu wdrożenia  
 
-1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **응용 프로그램**을 선택합니다.  
+1.  W konsoli programu Configuration Manager wybierz **Biblioteka oprogramowania** > **Zarządzanie aplikacjami** > **aplikacji**.  
 
-3.  응용 프로그램을 선택한 다음 **홈** 탭의 **응용 프로그램** 그룹에서 **배포 유형 만들기**를 선택합니다.  
+3.  Wybierz aplikację, a następnie na **Home** karcie **aplikacji** grupy, wybierz **Utwórz typ wdrożenia**.  
 
 > [!TIP]  
->  또한 응용 프로그램 만들기 마법사와 *<응용 프로그램 이름\>* **속성** 대화 상자의 **배포 유형** 탭에서 배포 유형 만들기 마법사를 시작할 수도 있습니다.  
+>  Można również uruchomić Kreatora tworzenia typu wdrożenia z Kreatora tworzenia aplikacji i **typy wdrożeń** karcie *< nazwa aplikacji\>*  **właściwości** okno dialogowe.  
 
-## <a name="specify-whether-you-want-to-automatically-detect-deployment-type-information-or-manually-set-up-the-information"></a>배포 유형 정보를 자동으로 검색할지, 아니면 수동으로 정보를 설정할지 지정  
- 배포 유형 정보를 자동으로 검색하거나 수동으로 설정하려면 다음 절차 중 하나를 따르세요.  
+## <a name="specify-whether-you-want-to-automatically-detect-deployment-type-information-or-manually-set-up-the-information"></a>Określ, czy mają być automatycznie Wykryj informacje o typie wdrożenia, lub ręcznie skonfigurować informacje  
+ Użyj jednej z następujących procedur, aby wykrywać automatycznie lub ręcznie skonfigurować informacje o typie wdrożenia.  
 
-### <a name="automatically-detect-deployment-type-information"></a>배포 유형 정보 자동 검색  
+### <a name="automatically-detect-deployment-type-information"></a>Automatycznie wykryj informacje o typie wdrożenia  
 
-1.  배포 유형 만들기 마법사의 **일반** 페이지에서 **설치 파일에서 이 배포 유형에 대한 정보 자동 확인**을 선택합니다.  
+1.  Na **ogólne** strony kreatora tworzenia typu wdrożenia wybierz **automatycznie Zidentyfikuj informacje o tym typie wdrożenia z plików instalacyjnych**.  
 
-2.  **유형** 상자에서 배포 유형 정보를 검색하는 데 사용할 응용 프로그램 설치 파일 형식을 선택합니다.  
+2.  W **typu** wybierz typ pliku instalacyjnego aplikacji, którego chcesz użyć do wykrywania informacji o typie wdrożenia.  
 
-3.  **위치** 상자에서 *\\\\서버\\공유\\파일 이름* 형식의 UNC 경로를 지정하거나, 배포 유형 정보를 검색하는 데 사용할 응용 프로그램 설치 파일 및 콘텐츠에 대한 스토어 링크를 지정합니다. 또한 **찾아보기**를 선택하여 설치 파일을 찾을 수도 있습니다.  
-
-    > [!NOTE]  
-    >  응용 프로그램이 포함된 UNC 경로와 응용 프로그램 콘텐츠가 포함된 하위 폴더에 대한 액세스 권한이 있어야 합니다.  
-
-4.  배포 유형 만들기 마법사의 **정보 가져오기** 페이지에서 가져온 정보를 검토하고 **다음**을 선택합니다. **이전**을 선택하여 뒤로 돌아가서 오류를 수정할 수도 있습니다.  
-
-5.  배포 유형 만들기 마법사의 **일반 정보** 페이지에서 다음 정보를 지정합니다.  
+3.  W **lokalizacji** Określ ścieżkę UNC (w postaci  *\\ \\serwera\\udostępnianie\\filename*) lub określić linku do plików instalacyjnych aplikacji oraz zawartość, której chcesz użyć do wykrywania informacji o typie wdrożenia w sklepie. Można również wybrać **Przeglądaj** aby wskazać plik instalacyjny.  
 
     > [!NOTE]  
-    >  응용 프로그램 설치 파일에서 배포 유형 정보 중 일부를 읽은 경우 이미 해당 정보가 표시되어 있을 수 있습니다. 또한 표시되는 옵션은 사용자가 만드는 배포 유형에 따라 다를 수 있습니다.  
+    >  Musi mieć dostęp do ścieżki UNC, do której ma aplikacji i wszelkich podfolderów z zawartością aplikacji.  
 
-    -   이름, 관리자 설명, 사용 가능한 언어 등 배포 유형에 대한 일반 정보입니다.  
+4.  Na **Importuj informacje** strony kreatora tworzenia typu wdrożenia Przejrzyj informacje, które zostały zaimportowane, a następnie wybierz pozycję **dalej**. Można również wybrać **Wstecz** aby wrócić do poprzedniej strony i poprawić błędy.  
 
-    -   **설치 프로그램** - 설치 프로그램을 지정하고, 배포 유형을 설치하는 데 필요한 필수 속성을 지정합니다.  
+5.  Na **ogólne informacje** strony kreatora tworzenia typu wdrożenia Podaj następujące informacje:  
 
-    -   **설치 동작** - 현재 사용자용으로, 아니면 모든 사용자용으로 배포 유형을 설치할지를 지정합니다. 배포 유형을 장치 하나에 배포하는 경우 모든 사용자용으로 설치하거나, 사용자 한 명에게 배포하는 경우 해당 사용자용으로만 설치하도록 지정할 수도 있습니다.  
+    > [!NOTE]  
+    >  Niektóre informacje o typie wdrożenia mogą już być obecne, jeśli zostały odczytane z plików instalacyjnych aplikacji. Ponadto wyświetlane opcje mogą się różnić w zależności od tworzonego typu wdrożenia.  
 
-    -   **자동 VPN 연결 사용(구성된 경우)** - 앱을 실행하는 장치에 VPN 프로필이 배포된 경우 앱을 시작할 때 VPN 연결을 시작합니다(Windows 8.1 및 Windows Phone 8.1에만 해당). Windows 8.1 장치에 여러 VPN 프로필이 배포된 경우에는 첫 번째 배포된 VPN 프로필이 기본적으로 사용됩니다.  
+    -   Ogólne informacje o typie wdrożenia, takie jak nazwa, komentarze administratora oraz dostępne języki.  
 
-         Windows Phone 8.1 장치에서는 둘 이상의 VPN 프로필이 장치에 배포된 경우 자동 VPN 연결이 지원되지 않습니다.  
+    -   **Program instalacyjny**— Określ program instalacyjny oraz wszelkie właściwości niezbędne do zainstalowania typu wdrożenia.  
 
-         VPN 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 VPN 프로필](../../protect/deploy-use/vpn-profiles.md)을 참조하세요.  
+    -   **Zachowanie podczas instalowania**— Określ, czy do zainstalowania typu wdrożenia dla bieżącego użytkownika lub dla wszystkich użytkowników. Można również określić, czy do zainstalowania typu wdrożenia dla wszystkich użytkowników, jeśli jest wdrażana na urządzeniu, lub czy zainstalować wdrożenia wpisz do użytkownika tylko wtedy, gdy jest wdrożony dla użytkownika.  
 
-6.  **다음**을 선택하고 [배포 유형의 콘텐츠 옵션 지정](/sccm/apps/deploy-use/create-applications#specify-content-options-for-the-deployment-type)에서 계속 진행합니다.  
+    -   **Użyj automatycznego połączenia VPN (jeśli jest skonfigurowane)**— Jeśli profil sieci VPN został wdrożony na urządzeniu, na którym uruchomiono aplikację, uruchom połączenie sieci VPN po uruchomieniu aplikacji (Windows 8.1 i Windows Phone 8.1 tylko). Jeśli wiele profilów sieci VPN zostały wdrożone na urządzeniu Windows 8.1, pierwszy wdrożonego profilu sieci VPN jest używany domyślnie.  
 
-### <a name="manually-set-up-the-deployment-type-information"></a>배포 유형 정보 수동 설정  
+         Na urządzeniach Windows Phone 8.1 automatyczne połączenia VPN nie są obsługiwane, jeśli więcej niż jeden profil sieci VPN został wdrożony na urządzeniu.  
 
-1.  배포 유형 만들기 마법사의 **일반** 페이지에서 **배포 유형 정보 수동 지정**을 선택합니다.  
+         Aby uzyskać więcej informacji na temat profilów sieci VPN, zobacz [profilów sieci VPN w programie System Center Configuration Manager](../../protect/deploy-use/vpn-profiles.md).  
 
-2.  **유형** 상자에서 배포 유형 정보를 검색하는 데 사용할 응용 프로그램 설치 파일 형식을 선택합니다. 배포 유형 정보를 자동으로 검색할 때 사용하는 설치 유형과 같은 설치 유형을 선택할 수 있으며, 배포 유형을 설치할 스크립트도 지정할 수 있습니다.  
+6.  Wybierz **dalej**, a następnie przejdź do [określenie opcji zawartości typu wdrożenia](/sccm/apps/deploy-use/create-applications#specify-content-options-for-the-deployment-type).  
 
-3.  배포 유형 만들기 마법사의 **일반 정보** 페이지에서 배포 유형의 이름, 설명(선택 사항) 및 배포 유형을 사용할 언어를 지정한 후 **다음**을 선택합니다.  
+### <a name="manually-set-up-the-deployment-type-information"></a>Ręcznie skonfigurować informacje o typie wdrożenia  
 
-4.  [배포 유형의 콘텐츠 옵션 지정](/sccm/apps/deploy-use/create-applications#specify-content-options-for-the-deployment-type)에서 계속 진행합니다.  
+1.  Na **ogólne** strony kreatora tworzenia typu wdrożenia wybierz **ręcznie określ informacje o typie wdrożenia**.  
 
-##  <a name="specify-content-options-for-the-deployment-type"></a>배포 유형의 콘텐츠 옵션 지정  
+2.  W **typu** , wybierz typ pliku instalacyjnego aplikacji, którego chcesz użyć do wykrywania informacji o typie wdrożenia. Można wybrać typy instalacji używane w przypadku automatycznego wykrywania informacji o typie wdrożenia, a można też określić skrypt instalacji typu wdrożenia.  
 
-1.  배포 유형 만들기 마법사의 **콘텐츠** 페이지에서 다음 정보를 지정합니다.  
+3.  Na **ogólne informacje** strony kreatora tworzenia typu wdrożenia Określ nazwę typu wdrożenia, opcjonalny opis oraz języki, w których chcesz udostępnić ten typ wdrożenia, a następnie wybierz **dalej**.  
 
-    -   **콘텐츠 위치** – 이 배포 유형의 콘텐츠 위치를 지정하거나, **찾아보기**를 선택하여 배포 유형 콘텐츠 폴더를 선택합니다.  
+4.  Przejdź do sekcji [Określenie opcji zawartości typu wdrożenia](/sccm/apps/deploy-use/create-applications#specify-content-options-for-the-deployment-type).  
+
+##  <a name="specify-content-options-for-the-deployment-type"></a>Określenie opcji zawartości typu wdrożenia  
+
+1.  Na **zawartości** strony kreatora tworzenia typu wdrożenia Podaj następujące informacje:  
+
+    -   **Lokalizacja zawartości**— Określ lokalizację zawartości dla tego typu wdrożenia, lub wybierz **Przeglądaj** wybrać folder zawartości typu wdrożenia.  
 
         > [!IMPORTANT]  
-        >  사이트 서버 컴퓨터의 시스템 계정에는 지정한 콘텐츠 위치에 대한 권한이 있어야 합니다.  
+        >  Konto System na komputerze serwera lokacji musi mieć uprawnienia do określonej lokalizacji zawartości.  
 
-    -   **제거 콘텐츠 설정**--다음 옵션 중 하나를 지정합니다.
-        - **설치 콘텐츠와 같음**--설치 및 제거 콘텐츠가 같은 경우 이 옵션을 선택합니다. 이것이 기본 동작입니다.
-        - **설치 콘텐츠 없음**--응용 프로그램에 제거용 콘텐츠가 필요하지 않는 경우 이 옵션을 선택합니다.
-        - **설치 콘텐츠와 다름**--제거 콘텐츠가 설치 콘텐츠와 다른 경우 이 옵션을 선택합니다.
+    -   **Odinstaluj ustawienia zawartości**— określ jedną z następujących opcji:
+        - **Taka sama, jak zainstalować zawartość**— wybierz tę opcję, jeśli instalowania i odinstalowywania zawartości są takie same. Jest to zachowanie domyślne.
+        - **Nie odinstalowania zawartości**— wybierz tę opcję, jeśli aplikacja nie wymaga zawartości do odinstalowania.
+        - **Inna niż instalacja zawartości**— wybierz tę opcję, jeśli zawartość Odinstaluj różni się od instalacji zawartości.
 
-4. **설치 콘텐츠와 다름**을 선택한 경우 응용 프로그램을 제거하는 데 사용할 응용 프로그램 콘텐츠의 위치를 찾아 이동하거나 입력합니다.
-5. **확인**을 클릭하여 배포 유형 속성 대화 상자를 닫습니다.
+4. W przypadku wybrania **różne od instalacji zawartości**, przejdź do, lub wprowadź lokalizację zawartości aplikacji, który służy do odinstalowania aplikacji.
+5. Kliknij przycisk **OK** aby zamknąć okno dialogowe właściwości typu wdrożenia.
 
-    -   **클라이언트 캐시에 콘텐츠 보관** - 클라이언트 컴퓨터가 이미 실행된 경우에도 콘텐츠를 클라이언트 컴퓨터의 캐시에 무한정 보관할지 여부를 지정하려면 이 옵션을 선택합니다. 이 옵션은 일부 배포 유형(예: 업데이트를 적용할 때 사용할 수 있는 로컬 원본 사본이 필요한 Windows Installer 기반 소프트웨어)과 함께 사용하면 유용하지만 사용 가능한 캐시 공간이 줄어듭니다. 이 옵션을 선택하면 캐시에 사용 가능한 공간이 충분하지 않을 경우 나중에 대용량 배포에 실패할 수 있습니다.  
+    -   **Utrwal zawartość w pamięci podręcznej klienta**— wybierz tę opcję, aby określić, czy zawartość powinna być przechowywana w pamięci podręcznej na komputerze klienckim przez czas nieokreślony, nawet jeśli została już uruchomiona. Mimo że ta opcja może być przydatne w przypadku niektórych wdrożeń, takich jak Instalator Windows — oprogramowania wymagającego kopii lokalnej był dostępny do zastosowania aktualizacji, zmniejsza ilości dostępnej pamięci podręcznej. Wybierz tę opcję, może spowodować dużego wdrożenia Niepowodzenie w późniejszym czasie, jeśli pamięć podręczna nie ma wystarczająco dużo miejsca.  
 
-    -   **클라이언트가 동일한 서브넷에 있는 다른 클라이언트와 콘텐츠를 공유하도록 허용** - 클라이언트가 콘텐츠를 이미 다운로드하고 캐시한 네트워크상의 다른 로컬 클라이언트에서 콘텐츠를 다운로드하도록 허용하여 네트워크 로드를 줄이려면 이 옵션을 선택합니다. 이 옵션은 Windows BranchCache 기술을 활용합니다.  
+    -   **Zezwalaj klientom na współużytkowanie zawartości z innymi klientami w tej samej podsieci**— wybierz tę opcję, aby zmniejszyć obciążenie sieci, zezwalając klientom na pobieranie zawartości z innych klientów lokalnych w sieci, w których znajduje się już pobrana zawartość w pamięci podręcznej. Ta opcja korzysta z technologii Windows BranchCache.  
 
-    -   **설치 프로그램** - 설치 프로그램의 이름과 모든 필수 설치 매개 변수를 지정하거나 **찾아보기**를 선택하여 설치 파일을 찾습니다.  
+    -   **Program instalacyjny**— Określ nazwę programu instalacyjnego oraz wszelkie wymagane parametry instalacji lub wybierz **Przeglądaj** aby wskazać plik instalacyjny.  
 
-    -   **설치 시작 지점** - 선택적으로 해당 배포 유형에 대한 설치 프로그램이 포함된 폴더를 지정합니다. 이 폴더는 클라이언트상의 절대 경로 또는 설치 파일이 포함된 배포 지점 폴더의 경로가 될 수 있습니다.  
+    -   **Instalacja rozpocznie się za**— Opcjonalnie określ folder zawierający program instalacyjny typu wdrożenia. Ten folder może być ścieżką bezwzględną na kliencie lub ścieżką do folderu punktu dystrybucji, który zawiera pliki instalacyjne.  
 
-    -   **제거 프로그램** - 선택적으로 제거 프로그램의 이름 및 필수 매개 변수를 지정하거나 **찾아보기**를 선택하여 찾습니다.  
+    -   **Program dezinstalacyjny**— Opcjonalnie określ nazwę programu dezinstalacyjnego oraz wszelkie wymagane parametry, lub wybierz **Przeglądaj** ich wyszukanie.  
 
-    -   **제거 시작 지점** - 선택적으로 해당 배포 유형에 대한 제거 프로그램이 포함된 폴더를 지정합니다. 이 폴더는 클라이언트상의 절대 경로 또는 패키지가 포함된 배포 지점 폴더의 상대 경로가 될 수 있습니다.  
+    -   **Dezinstalacja rozpocznie się za**— Opcjonalnie określ folder zawierający program dezinstalacyjny typu wdrożenia. Ten folder może być ścieżką bezwzględną na kliencie lub ścieżką względną wobec folderu punktu dystrybucji, który zawiera pakiet.  
 
-    -   **설치 및 제거 프로그램을 64비트 클라이언트에서 32비트 프로세스로 실행합니다.** - Windows 기반 컴퓨터에서 32비트 파일 및 레지스트리 위치를 사용하여 배포 유형의 설치 프로그램을 실행합니다.  
+    -   **Uruchom program instalacyjny i dezinstalacyjny jako proces 32-bitowy na klientach 64-bitowych**— Użyj 32-bitowych lokalizacje plików i rejestru na komputerach z systemem Windows, aby uruchomić program instalacyjny typu wdrożenia.  
 
-2.  **다음**을 선택합니다.  
+2.  Wybierz **dalej**.  
 
-## <a name="set-up-detection-methods-to-indicate-the-presence-of-the-deployment-type-windows-pcs-only"></a>배포 유형이 있는지 나타내는 검색 방법 설정(Windows PC만)  
- 다음 절차에서는 배포 유형이 이미 설치되었는지 여부를 나타내는 검색 방법을 설정합니다.  
+## <a name="set-up-detection-methods-to-indicate-the-presence-of-the-deployment-type-windows-pcs-only"></a>Konfigurowanie metod wykrywania obecności typu wdrożenia (tylko komputery z systemem Windows)  
+ Ta procedura konfiguruje metodę wykrywania, która wskazuje, czy typ wdrożenia jest już zainstalowany.  
 
-1.  배포 유형 만들기 마법사의 **검색 방법** 페이지에서 **이 배포 유형이 있는지 검색할 규칙 구성**을 선택한 후 **절 추가**를 선택합니다.  
+1.  Na **metody wykrywania** strony kreatora tworzenia typu wdrożenia wybierz **Konfiguruj reguły do wykrycia obecności tego typu wdrożenia**, a następnie wybierz pozycję **Dodaj klauzulę**.  
 
     > [!NOTE]  
-    >  **사용자 지정 스크립트를 사용하여 이 배포 유형이 있는지 검색**을 선택할 수도 있습니다. 자세한 내용은 [사용자 지정 스크립트를 사용하여 배포 유형이 있는지 확인](/sccm/apps/deploy-use/create-applications#Use-a-custom-script-to-check-for-the-presence-of-a-deployment-type)을 참조하세요.  
+    >  Można również wybrać opcję **Użyj skryptu niestandardowego do wykrycia obecności tego typu wdrożenia**. Aby uzyskać więcej informacji, zobacz [Użyj niestandardowego skryptu w celu sprawdzenia obecności typu wdrożenia](/sccm/apps/deploy-use/create-applications#Use-a-custom-script-to-check-for-the-presence-of-a-deployment-type).  
 
-2.  **검색 규칙** 대화 상자의 **설정 유형** 드롭다운 목록에서 배포 유형이 있는지 검색하는 데 사용할 방법을 선택합니다. 선택할 수 있는 사용 가능한 방법은 다음과 같습니다.  
+2.  W oknie dialogowym **Reguła wykrywania** z listy rozwijanej **Typ ustawienia** wybierz metodę, której chcesz używać do wykrywania obecności typu wdrożenia. Można wybrać jedną z następujących metod:  
 
-    -   **파일 시스템** - 이 방법을 사용하여 지정된 파일 또는 폴더가 클라이언트 장치에 있는지 여부와 그에 따라 응용 프로그램이 설치되었는지 여부를 검색할 수 있습니다.  
+    -   **System plików**— ta metoda służy do wykrywania, czy określony plik lub folder istnieje na urządzeniu klienckim, co wskazuje, że aplikacja jest zainstalowana.  
 
         > [!NOTE]  
-        >  **파일 시스템** 설정 유형을 사용할 경우 경로 필드에서 UNC 경로를 네트워크 공유로 지정할 수 없습니다. 클라이언트 장치에 있는 로컬 경로만 지정할 수 있습니다.  
+        >  **System plików** typ nie obsługuje określania w polu Ścieżka ścieżki UNC do udziału sieciowego. Na urządzeniu klienta można określić wyłącznie ścieżkę lokalną.  
         >   
-        >  지정된 파일 또는 폴더에 대한 32비트 파일 위치를 확인하려면 **이 파일 또는 폴더가 64비트 시스템에서 32비트 응용 프로그램과 연결되어 있습니다.** 옵션을 선택합니다. 파일 또는 폴더를 찾을 수 없으면 64비트 위치가 검색됩니다.  
+        >  Aby sprawdzić lokalizacje plików 32-bitowych pod kątem określonego pliku lub folderu, wybierz opcję **ten plik lub folder jest skojarzony z aplikacją 32-bitowych na 64-bitowym** pierwszy. Jeśli plik lub folder nie zostaną znalezione, zostaną przeszukane lokalizacje plików 64-bitowych.  
 
-    -   **레지스트리** - 이 방법을 사용하여 지정된 레지스트리 키 또는 레지스트리 값이 클라이언트 장치에 있는지 여부와 그에 따라 응용 프로그램이 설치되었는지 여부를 검색할 수 있습니다.  
+    -   **Rejestru**— ta metoda służy do wykrywania, czy określony klucz rejestru lub wartość rejestru istnieje na urządzeniu klienckim, co wskazuje, że aplikacja jest zainstalowana.  
 
         > [!NOTE]  
-        >  지정된 레지스트리 키에 대한 32비트 레지스트리 위치를 확인하려면 **이 레지스트리 키는 64비트 시스템에서 32비트 응용 프로그램과 연결됨** 옵션을 선택합니다. 레지스트리 키를 찾을 수 없으면 64비트 위치가 검색됩니다.  
+        >  Aby sprawdzić lokalizacje 32-bitowego rejestru pod kątem obecności określonego klucza rejestru, wybierz opcję **ten klucz rejestru jest skojarzony z aplikacją 32-bitowych na 64-bitowym** pierwszy. Jeśli klucz rejestru nie zostaną znaleziony, zostaną przeszukane lokalizacje plików 64-bitowych.  
 
-    -   **Windows Installer** - 이 방법을 사용하여 지정된 Windows Installer 파일이 클라이언트 장치에 있는지 여부와 그에 따라 응용 프로그램이 설치되었는지 여부를 검색할 수 있습니다.  
+    -   **Instalator Windows**— ta metoda służy do wykrywania, czy określony plik Instalatora Windows istnieje na urządzeniu klienckim, co wskazuje, że aplikacja jest zainstalowana.  
 
-3.  이 배포 유형이 설치되었는지 검색하는 데 사용할 항목에 대한 세부 정보를 지정합니다. 예를 들어 파일, 폴더, 레지스트리 키, 레지스트리 값 또는 Windows Installer 제품 코드를 사용할 수 있습니다.  
+3.  Określ informacje szczegółowe dotyczące pozycji, której chcesz użyć do wykrywania, czy ten typ wdrożenia został zainstalowany. Możesz na przykład użyć pliku, folderu, klucza rejestru, wartości rejestru lub kodu produktu Instalatora Windows.  
 
-4.  해당 배포 유형이 설치되었는지 검색하는 데 사용할 항목에 대해 평가할 값과 관련해 세부 정보를 지정합니다. 예를 들어 파일을 사용하여 배포 유형의 설치 여부를 확인할 경우 **이 응용 프로그램이 있는지 표시하려면 파일 시스템 설정이 대상 시스템에 있어야 함**을 선택하면 됩니다.  
+4.  Określ szczegóły dotyczące wartości, którą chcesz ocenić na podstawie pozycji użytej do wykrycia, czy dany typ wdrożenia został zainstalowany. Na przykład, jeśli używany plik, aby sprawdzić, czy dany typ wdrożenia został zainstalowany, możesz wybrać **aby wskazywanie obecności tej aplikacji w systemie docelowym musi istnieć ustawienie systemu plików**.  
 
-5.  **다음**을 선택하여 **검색 규칙** 대화 상자를 닫습니다.  
+5.  Wybierz **dalej** zamknąć **reguły wykrywania** okno dialogowe.  
 
-###  <a name="use-a-custom-script-to-check-for-the-presence-of-a-deployment-type"></a>사용자 지정 스크립트를 사용하여 배포 유형이 있는지 확인  
+###  <a name="use-a-custom-script-to-check-for-the-presence-of-a-deployment-type"></a>Użyj niestandardowego skryptu w celu sprawdzenia obecności typu wdrożenia  
 
-1.  배포 유형 만들기 마법사의 **검색 방법** 페이지에서 **사용자 지정 스크립트를 사용하여 이 배포 유형이 있는지 검색** 확인란을 선택한 후 **편집**을 선택합니다.  
+1.  Na **metody wykrywania** strony kreatora tworzenia typu wdrożenia wybierz **Użyj skryptu niestandardowego do wykrycia obecności tego typu wdrożenia** polu, a następnie wybierz pozycję **Edytuj**.  
 
-2.  **스크립트 편집기** 대화 상자의 **스크립트 유형** 드롭다운 목록에서 배포 유형을 검색하는 데 사용할 스크립트 언어를 선택합니다.  
+2.  W oknie dialogowym **Edytor skryptów** z listy rozwijanej **Typ skryptu** wybierz język skryptu, którego chcesz używać do wykrywania obecności typu wdrożenia.  
 
-3.  **스크립트 콘텐츠** 상자에 사용할 스크립트를 입력합니다. 이 필드에 기존 스크립트의 내용을 붙여넣거나 **열기**를 선택하여 기존에 저장한 스크립트를 찾을 수도 있습니다. Configuration Manager는 표준 출력(STDOUT) 출력 스트림, 표준 오류(STDERR) 출력 스트림에 기록된 값과 스크립트의 종료 코드를 읽어 스크립트의 결과를 확인합니다. 종료 코드가 0이 아닌 값이면 스크립트는 실패했고 응용 프로그램 검색 상태는 알 수 없음 상태인 것입니다. 종료 코드가 0이고 STDOUT에 데이터가 포함되어 있으면 응용 프로그램 검색 상태는 설치됨 상태인 것입니다.  
+3.  W **skryptu zawartość** wprowadź skrypt, którego chcesz użyć. Możesz również wkleić w tym polu zawartość istniejącego skryptu lub wybrać **Otwórz** aby przejść do istniejącego zapisanego skryptu. Program Configuration Manager sprawdza wyniki skryptu, odczytując wartości zapisane w strumieniu wyjściowym Standard Out (STDOUT), w strumieniu wyjściowym Standard Error (STDERR) oraz kod zakończenia ze skryptu. Jeśli kod zakończenia ma wartość niezerową, oznacza to, że działanie skryptu zakończyło się niepowodzeniem, a stan wykrywania aplikacji jest nieznany. Jeśli kod zakończenia to zero, a STDOUT zawiera dane, stan wykrywania aplikacji jest zainstalowany.  
 
- 다음 표를 참조하면 스크립트의 출력을 통해 응용 프로그램의 설치 여부를 확인하는 방법을 알 수 있습니다.  
+ Skorzystaj z poniższej tabeli, aby zobaczyć sposób użycia dane wyjściowe skryptu, aby sprawdzić, czy aplikacja jest zainstalowana.  
 
-|스크립트 종료 코드|세부 정보|
+|Kod zakończenia skryptu|Szczegóły|
 |--------------------------------|-----------------|
-|0|**STDOUT에서 읽은 데이터** - 비어 있음<br /><br /> **STDERR에서 읽은 데이터** - 비어 있음<br /><br /> **스크립트 결과** - 성공<br /><br /> **응용 프로그램 검색 상태** - 설치 안 됨|  
-|0|**STDOUT에서 읽은 데이터** - 비어 있음<br /><br /> **STDERR에서 읽은 데이터** - 비어 있지 않음<br /><br /> **스크립트 결과** - 실패<br /><br /> **응용 프로그램 검색 상태** - 알 수 없음|  
-|0|**STDOUT에서 읽은 데이터** - 비어 있지 않음<br /><br /> **STDERR에서 읽은 데이터** - 비어 있음<br /><br /> **스크립트 결과** - 성공<br /><br /> **응용 프로그램 검색 상태** - 설치됨|  
-|0|**STDOUT에서 읽은 데이터** - 비어 있지 않음<br /><br /> **STDERR에서 읽은 데이터** - 비어 있지 않음<br /><br /> **스크립트 결과** - 성공<br /><br /> **응용 프로그램 검색 상태** - 설치됨|  
-|0이 아닌 값|**STDOUT에서 읽은 데이터** - 비어 있음<br /><br /> **STDERR에서 읽은 데이터** - 비어 있음<br /><br /> **스크립트 결과** - 실패<br /><br /> **응용 프로그램 검색 상태** - 알 수 없음|  
-|0이 아닌 값|**STDOUT에서 읽은 데이터** - 비어 있음<br /><br /> **STDERR에서 읽은 데이터** - 비어 있지 않음<br /><br /> **스크립트 결과** - 실패<br /><br /> **응용 프로그램 검색 상태** - 알 수 없음|  
-|0이 아닌 값|**STDOUT에서 읽은 데이터** - 비어 있지 않음<br /><br /> **STDERR에서 읽은 데이터** - 비어 있음<br /><br /> **스크립트 결과** - 실패<br /><br /> **응용 프로그램 검색 상태** - 알 수 없음|  
-|0이 아닌 값|**STDOUT에서 읽은 데이터** - 비어 있지 않음<br /><br /> **STDERR에서 읽은 데이터** - 비어 있지 않음<br /><br /> **스크립트 결과** - 실패<br /><br /> **응용 프로그램 검색 상태** - 알 수 없음|  
+|0|**Dane odczytane ze strumienia wyjściowego STDOUT**— pusty<br /><br /> **Dane odczytane ze strumienia wyjściowego STDERR**— pusty<br /><br /> **Wynik skryptu**— Powodzenie<br /><br /> **Stan wykrywania aplikacji**— nie jest zainstalowany|  
+|0|**Dane odczytane ze strumienia wyjściowego STDOUT**— pusty<br /><br /> **Dane odczytane ze strumienia wyjściowego STDERR**— niepuste<br /><br /> **Wynik skryptu**— błąd<br /><br /> **Stan wykrywania aplikacji**— nieznany|  
+|0|**Dane odczytane ze strumienia wyjściowego STDOUT**— niepuste<br /><br /> **Dane odczytane ze strumienia wyjściowego STDERR**— pusty<br /><br /> **Wynik skryptu**— Powodzenie<br /><br /> **Stan wykrywania aplikacji**— zainstalowany|  
+|0|**Dane odczytane ze strumienia wyjściowego STDOUT**— niepuste<br /><br /> **Dane odczytane ze strumienia wyjściowego STDERR**— niepuste<br /><br /> **Wynik skryptu**— Powodzenie<br /><br /> **Stan wykrywania aplikacji**— zainstalowany|  
+|Wartość niezerowa|**Dane odczytane ze strumienia wyjściowego STDOUT**— pusty<br /><br /> **Dane odczytane ze strumienia wyjściowego STDERR**— pusty<br /><br /> **Wynik skryptu**— błąd<br /><br /> **Stan wykrywania aplikacji**— nieznany|  
+|Wartość niezerowa|**Dane odczytane ze strumienia wyjściowego STDOUT**— pusty<br /><br /> **Dane odczytane ze strumienia wyjściowego STDERR**— niepuste<br /><br /> **Wynik skryptu**— błąd<br /><br /> **Stan wykrywania aplikacji**— nieznany|  
+|Wartość niezerowa|**Dane odczytane ze strumienia wyjściowego STDOUT**— niepuste<br /><br /> **Dane odczytane ze strumienia wyjściowego STDERR**— pusty<br /><br /> **Wynik skryptu**— błąd<br /><br /> **Stan wykrywania aplikacji**— nieznany|  
+|Wartość niezerowa|**Dane odczytane ze strumienia wyjściowego STDOUT**— niepuste<br /><br /> **Dane odczytane ze strumienia wyjściowego STDERR**— niepuste<br /><br /> **Wynik skryptu**— błąd<br /><br /> **Stan wykrywania aplikacji**— nieznany|  
 
-다음 표에는 고유한 응용 프로그램 검색 스크립트를 작성하는 데 사용할 수 있는 Microsoft Visual Basic(VB) 샘플 스크립트가 나와 있습니다.  
+Poniższa tabela zawiera Microsoft Visual Basic (VB) przykładowe skrypty, które służy do pisania własnych skryptów wykrywania aplikacji.  
 
-|Visual Basic 예제 스크립트|설명|  
+|Przykładowy skrypt Visual Basic|Opis|  
 |--------------------------------|-----------------|  
-|**WScript.Quit(1)**|0이 아닌 종료 코드를 반환하며 이는 실행 실패를 나타냅니다. 이 경우 응용 프로그램 검색 상태는 알 수 없음입니다.|  
-|**WScript.StdErr.Write "스크립트가 실패했습니다."**<br /><br /> **WScript.Quit(0)**|종료 코드 0을 반환하지만 STDERR 값이 비어 있지 않습니다. 이는 스크립트의 실행 실패를 나타냅니다. 이 경우 응용 프로그램 검색 상태는 알 수 없음입니다.|  
-|**WScript.Quit(0)**|종료 코드 0을 반환하며 이는 실행 성공을 나타냅니다. 그러나 STDOUT의 값이 비어 있으며 이는 응용 프로그램이 설치되지 않았음을 나타냅니다.|  
-|**WScript.StdOut.Write "응용 프로그램이 설치되었습니다."**<br /><br /> **WScript.Quit(0)**|종료 코드 0을 반환하며 이는 실행 성공을 나타냅니다. STDOUT의 값이 비어 있지 않으며 이는 응용 프로그램이 설치되었음을 나타냅니다.|  
-|**WScript.StdOut.Write "응용 프로그램이 설치되었습니다."**<br /><br /> **WScript.StdErr.Write "완료되었습니다."**<br /><br /> **WScript.Quit(0)**|종료 코드 0을 반환하며 이는 실행 성공을 나타냅니다. STDOUT 및 STDERR의 값이 비어 있지 않으며 이는 응용 프로그램이 설치되었음을 나타냅니다.|  
+|**WScript.Quit(1)**|Skrypt zwraca kod zakończenia o wartości innej niż zero, co oznacza, że jego niepomyślne wykonanie. W takiej sytuacji stan wykrywania aplikacji będzie nieznany.|  
+|**WScript.StdErr.Write "Skrypt nie powiodło się"**<br /><br /> **WScript.Quit(0)**|Skrypt zwraca kod zakończenia o wartości wynoszącej zero, jednak wartość strumienia wyjściowego STDERR nie będzie pusta, co oznacza niepomyślne wykonanie skryptu. W takiej sytuacji stan wykrywania aplikacji będzie nieznany.|  
+|**WScript.Quit(0)**|Skrypt zwraca kod zakończenia o wartości zero, co oznacza jego pomyślne wykonanie. Wartość strumienia wyjściowego STDOUT jest jednak pusta, co oznacza, że aplikacja nie jest zainstalowana.|  
+|**WScript.StdOut.Write "aplikacja jest zainstalowane"**<br /><br /> **WScript.Quit(0)**|Skrypt zwraca kod zakończenia o wartości zero, co oznacza jego pomyślne wykonanie. Wartość strumienia wyjściowego STDOUT nie jest pusta, co oznacza, że aplikacja jest zainstalowana.|  
+|**WScript.StdOut.Write "aplikacja jest zainstalowane"**<br /><br /> **WScript.StdErr.Write "Ukończone"**<br /><br /> **WScript.Quit(0)**|Skrypt zwraca kod zakończenia o wartości zero, co oznacza jego pomyślne wykonanie. Wartości strumieni wyjściowych STDOUT i STDERR nie są puste, co oznacza, że aplikacja jest zainstalowana.|  
 
  > [!NOTE]  
- >  스크립트에 사용할 수 있는 최대 크기는 32KB입니다.  
+ >  Maksymalny rozmiar skryptu, jakiego można użyć, to 32 kilobajty (KB).  
 
-4.  **확인**을 선택하여 **스크립트 편집기** 대화 상자를 닫습니다.  
+4.  Wybierz **OK** zamknąć **Edytor skryptów** okno dialogowe.  
 
-## <a name="specify-user-experience-options-for-the-deployment-type"></a>배포 유형에 대한 사용자 환경 옵션 지정  
- 이러한 설정은 응용 프로그램이 장치에 설치되는 방법 및 사용자에게 표시되는 항목을 지정합니다.  
+## <a name="specify-user-experience-options-for-the-deployment-type"></a>Określenie opcji czynności użytkownika dotyczących typu wdrożenia  
+ Te ustawienia określają, jak aplikacja zostanie zainstalowana na urządzeniach i jakie użytkownik będzie widział.  
 
-1.  배포 유형 만들기 마법사의 **사용자 환경** 페이지에서 다음 정보를 지정합니다.  
+1.  Na **środowisko użytkownika** strony kreatora tworzenia typu wdrożenia Podaj następujące informacje:  
 
-    -   **설치 동작** - 드롭다운 목록에서 다음 옵션 중 하나를 선택합니다.  
+    -   **Zachowanie podczas instalacji**— z listy rozwijanej wybierz jedną z następujących opcji:  
 
-        -   **사용자용 설치** - 응용 프로그램을 배포할 사용자를 위해서만 설치합니다.  
+        -   **Zainstaluj dla użytkownika**— aplikacja zostanie zainstalowana tylko dla użytkownika, do której aplikacja jest wdrażana.  
 
-        -   **시스템용 설치** - 응용 프로그램을 한 번만 설치하고 모든 사용자가 이 응용 프로그램을 사용할 수 있습니다.  
+        -   **Zainstaluj dla systemu**— aplikacja zostanie zainstalowana tylko raz i będzie dostępna dla wszystkich użytkowników.  
 
-        -   **해당 리소스가 장치인 경우 시스템용으로 설치하고 그렇지 않으면 사용자용으로 설치합니다.** - 응용 프로그램이 장치에 배포되는 경우 모든 사용자용으로 설치됩니다. 응용 프로그램이 사용자에게 배포되는 경우 해당 사용자용으로만 설치됩니다.  
+        -   **Zainstaluj dla systemu, jeśli zasób jest urządzeniem; w przeciwnym razie zainstaluj dla użytkownika**— Jeśli aplikacja jest wdrażana na urządzeniu, zostanie zainstalowany dla wszystkich użytkowników. Jeśli aplikacja jest wdrażana dla użytkownika, zostanie zainstalowana tylko dla tego użytkownika.  
 
-    -   **로그온 요구 사항** - 다음 옵션 중에서 이 배포 유형에 대한 로그온 요구 사항을 지정합니다.  
+    -   **Wymagane zalogowanie**— Określ wymagania dotyczące logowania dla tego typu wdrożenia przy użyciu następujących opcji:  
 
-        -   **사용자가 로그온했을 때만**  
+        -   **Tylko wtedy, gdy użytkownik jest zalogowany**  
 
-        -   **사용자의 로그온 여부에 상관없이**  
+        -   **Określa, czy użytkownik jest zalogowany**  
 
-        -   **로그온한 사용자가 없는 경우에만**  
-
-        > [!NOTE]  
-        >  이 옵션의 기본값은 **사용자가 로그온했을 때만**이며 이 값은 **설치 동작** 드롭다운 목록에서 **사용자용 설치** 를 선택한 경우 변경할 수 없습니다.  
-
-    -   **설치 프로그램 표시 여부** - 클라이언트 장치에서 배포 유형이 실행되는 모드를 지정합니다. 다음 옵션을 사용할 수 있습니다.  
-
-        -   **최대화** - 배포 유형이 클라이언트 장치에서 최대화된 상태로 실행됩니다. 사용자가 모든 설치 작업을 볼 수 있습니다.  
-
-        -   **보통** - 배포 유형이 시스템 및 프로그램 기본값에 따라 보통 모드로 실행됩니다. 이 옵션은 기본 모드입니다.  
-
-        -   **최소화** - 배포 유형이 클라이언트 장치에서 최소화된 상태로 실행됩니다. 사용자는 알림 영역 또는 작업 표시줄에서 설치 작업을 볼 수 있습니다.  
-
-        -   **숨김** - 배포 유형이 클라이언트 장치에서 숨김 상태로 실행되고 사용자는 설치 작업을 볼 수 없습니다.  
-
-    -   **사용자가 프로그램 설치를 보고 사용할 수 있음** - 사용자가 배포 유형 설치를 조작하여 설치 옵션을 설정할 수 있는지 여부를 지정합니다.  
+        -   **Tylko wtedy, gdy użytkownik nie jest zalogowany**  
 
         > [!NOTE]  
-        >  이 옵션은 **설치 동작** 드롭다운 목록에서 **사용자용 설치** 옵션을 선택한 경우 기본값으로 사용 가능합니다.  
+        >  Domyślnie ta opcja **tylko, gdy użytkownik jest zalogowany**, i nie można zmienić, jeśli wybrano **zainstaluj dla użytkownika** w **zachowanie podczas instalacji** listy rozwijanej.  
 
-    -   **최대 허용 실행 시간(분)** - 프로그램이 클라이언트 컴퓨터에서 실행될 최대 시간을 지정합니다. 이 설정을 0보다 큰 정수로 지정할 수 있습니다. 기본 설정은 120분입니다.  
+    -   **Widoczność programu instalacyjnego**— Określ tryb, w którym typ wdrażania będzie uruchamiany na urządzeniach klienckich. Dostępne są następujące opcje:  
 
-         이 값을 사용하여 다음을 수행합니다.  
+        -   **Zmaksymalizowane**— typ wdrożenia zostanie uruchomiony w trybie zmaksymalizowanym na urządzeniach klienckich. Użytkownicy będą widzieć wszystkie działania instalacyjne.  
 
-        -   배포 유형의 결과를 모니터링합니다.  
+        -   **Normalny**— typ wdrożenia zostanie uruchomiony w trybie normalnym na podstawie ustawień domyślnych systemu i programu. Jest to tryb domyślny.  
 
-        -   클라이언트 장치에 유지 관리 기간이 정의된 경우 배포 유형을 설치할지 여부를 확인합니다. 유지 관리 기간이 시작되면 프로그램은 유지 관리 기간에 **최대 허용 실행 시간** 설정을 수용할 만큼 충분한 시간이 있는 경우에만 시작됩니다.  
+        -   **Zminimalizowany**— typ wdrożenia zostanie uruchomiony w trybie zminimalizowanym na urządzeniach klienckich. Użytkownicy będą widzieć działanie instalacji w obszarze powiadomień lub na pasku zadań.  
+
+        -   **Ukryte**— typ wdrożenia zostanie ukryta na urządzeniach klienckich, a użytkownicy nie będą widzieć żadnych działań instalacyjnych.  
+
+    -   **Zezwalaj użytkownikom na wyświetlanie i interakcji z instalacją programu**— Określ, czy użytkownik może interakcyjnie przeprowadzić instalację typu wdrożenia, aby skonfigurować opcje instalacji.  
+
+        > [!NOTE]  
+        >  Ta opcja jest włączona domyślnie w przypadku wybrania **zainstaluj dla użytkownika** opcji **zachowanie podczas instalacji** listy rozwijanej.  
+
+    -   **Maksymalny dozwolony czas wykonywania (w minutach)**— Podaj maksymalny czas, który program powinien być wykonywany na komputerze klienckim. To ustawienie musi być liczbą całkowitą większą niż zero. Domyślne ustawienie to 120 minut.  
+
+         Ta wartość jest używana do:  
+
+        -   Monitorowania wyników typu wdrożenia.  
+
+        -   Sprawdź, czy typ wdrożenia zostanie zainstalowany, gdy na urządzeniach klienckich są zdefiniowane okna obsługi. Jeśli okno obsługi, program zostanie uruchomiony tylko wtedy, gdy jest wystarczająco dużo czasu jest dostępna w oknie obsługi, aby pomieścić **maksymalny dozwolony czas wykonywania** ustawienie.  
 
         > [!IMPORTANT]  
-        >  **최대 허용 실행 시간** 이 예약된 유지 관리 기간보다 더 긴 경우 충돌이 발생할 수 있습니다. 사용자가 최대 실행 시간을 사용 가능한 유지 관리 기간의 길이보다 더 길게 설정한 경우 해당 배포 유형은 실행되지 않습니다.  
+        >  Może wystąpić konflikt, jeśli **maksymalny dozwolony czas wykonywania** jest większa od czasu zaplanowanego okna obsługi. Jeśli maksymalny czas wykonywania ustawiony przez użytkownika będzie większy od długości każdego z dostępnych okien obsługi, typ wdrożenia nie zostanie uruchomiony.  
 
-2.  **예상 설치 시간(분)** - 배포 유형 설치에 걸리는 예상 시간을 지정합니다. 이는 소프트웨어 센터의 사용자에게 표시됩니다.  
+2.  **Szacowany czas instalacji (w minutach)**— Określ szacowany czas trwania instalacji typu wdrożenia. Ta informacja będzie wyświetlana użytkownikom Centrum oprogramowania.  
 
-## <a name="specify-requirements-for-the-deployment-type"></a>배포 유형의 요구 사항 지정  
+## <a name="specify-requirements-for-the-deployment-type"></a>Określenie wymagań dotyczących typu wdrożenia  
 
-1.  배포 유형 만들기 마법사의 **요구 사항** 페이지에서 **추가**를 선택하여 **요구 사항 만들기** 대화 상자를 열고 새 요구 사항을 추가합니다.  
+1.  Na **wymagania** strony kreatora tworzenia typu wdrożenia wybierz **Dodaj** otworzyć **tworzenie wymagania** okna dialogowego i Dodaj nowe wymaganie.  
 
     > [!NOTE]  
-    >  또한 *<배포 유형 이름\>* **속성** 대화 상자의 **요구 사항** 탭에서 새 요구 사항을 추가할 수도 있습니다.  
+    >  Możesz także dodać nowe wymagania na **wymagania** karcie *< Nazwa typu wdrożenia\>*  **właściwości** okno dialogowe.  
 
-2.  **범주** 드롭다운 목록에서 이 요구 사항이 장치용인지 또는 사용자용인지 선택하거나 **사용자 지정** 을 선택하여 이전에 만든 글로벌 조건을 사용합니다. 또한 **사용자 지정**을 선택하면 **만들기**를 선택하여 새 글로벌 조건을 만들 수 있습니다. 글로벌 조건에 대한 자세한 내용은 [글로벌 조건을 만드는 방법](../../apps/deploy-use/create-global-conditions.md)을 참조하세요.  
+2.  Z listy rozwijanej **Kategoria** wybierz, czy wymaganie dotyczy urządzenia, czy użytkownika, lub wybierz opcję **Niestandardowe**, aby użyć poprzednio utworzonego warunku globalnego. Po wybraniu **niestandardowy**, można także **Utwórz** Aby utworzyć nowy warunek globalny. Aby uzyskać więcej informacji o warunkach globalnych, zobacz [tworzenie warunków globalnych](../../apps/deploy-use/create-global-conditions.md).  
 
     > [!IMPORTANT]  
-    >  응용 프로그램을 장치 컬렉션에 배포하는 경우 **사용자** 범주 및 **기본 장치** 조건의 요구 사항은 무시됩니다.  
+    >  Wszystkie wymagania należącego do kategorii **użytkownika** i warunku **urządzenie podstawowe** zostanie zignorowana, jeśli wdrożysz aplikację w kolekcji urządzeń.  
     >   
-    >  System Center 2012 R2 Configuration Manager SP1을 사용하여 요구 사항으로 Windows 10이 포함된 Windows 패키지 및 프로그램 또는 작업 순서를 만든 후 System Center Configuration Manager로 업그레이드한 경우 Windows 10의 요구 사항이 제거될 수 있습니다. 이 문제를 해결하려면 요구 사항을 다시 지정해야 합니다. 요구 사항 표시에서 요구 사항이 제거되었지만 여전히 장치에서 제대로 처리됩니다.  
+    >  Jeśli utworzono pakiet systemu Windows oraz program lub sekwencję zadań wymagającą systemu Windows 10 przy użyciu programu System Center 2012 R2 Configuration Manager SP1, a następnie dokonano aktualizacji programu System Center Configuration Manager, wymagania dotyczące systemu Windows 10 mogą zostać usunięte. Aby rozwiązać ten problem, należy ponownie określić wymagania. Należy pamiętać, że chociaż wymaganie został usunięty z wyświetlania wymagania, są nadal przetwarzane prawidłowo na urządzeniach.  
 
-3.  **조건** 드롭다운 목록에서 사용자 또는 장치가 설치 요구 사항을 충족하는지 여부를 평가하는 데 사용할 조건을 선택합니다. 이 목록의 콘텐츠는 선택한 범주에 따라 달라집니다.  
+3.  W **warunku** listy rozwijanej wybierz warunek, którego chcesz użyć do oceny, czy użytkownik lub urządzenie spełnia wymagania instalacyjne. Zawartość tej listy różni się w zależności od wybranej kategorii.  
 
-4.  **연산자** 드롭다운 목록에서, 사용자 또는 장치가 설치 요구 사항을 충족하는지 여부를 평가하기 위해 선택된 조건을 지정된 값과 비교하는 데 사용할 연산자를 선택합니다. 사용할 수 있는 연산자는 선택한 조건에 따라 달라집니다.  
+4.  W **Operator** listy rozwijanej wybierz operator, który zostanie użyty do porównania wybranego warunku z podaną wartością w celu oceny, czy użytkownik lub urządzenie spełnia wymagania instalacyjne. Dostępni operatorzy różnią się w zależności od wybranego warunku.  
 
     > [!IMPORTANT]  
-    >  사용할 수 있는 요구 사항은 배포 유형에서 사용되는 장치 유형에 따라 달라집니다.  
+    >  Dostępne wymagania będą się różnić w zależności od typu urządzenia, która używa typu wdrożenia.  
 
-5.  **값** 상자에서 사용자 또는 장치가 규칙 요구 사항을 충족하는지 여부를 평가하기 위해 선택한 조건 및 연산자와 함께 사용할 값을 지정합니다. 사용할 수 있는 값은 선택한 조건과 연산자에 따라 달라집니다.  
+5.  W **wartość** określ wartości, które będą używane z wybranym warunkiem i Operator służący do oceny, czy użytkownik lub urządzenie spełnia wymagania instalacyjne. Dostępne wartości różnią się w zależności od wybranych warunku i operatora.  
 
-6.  **확인**을 선택하여 요구 사항을 저장하고 **요구 사항 만들기** 대화 상자를 닫습니다.  
+6.  Wybierz **OK** Aby zapisać wymaganie i zamknąć **tworzenie wymagania** okno dialogowe.  
 
-## <a name="specify-dependencies-for-the-deployment-type"></a>배포 유형에 대한 종속성 지정  
- 종속성은 다른 배포 유형이 설치되기 전에 먼저 설치해야 할 하나 이상의 배포 유형(다른 응용 프로그램의 배포 유형)을 정의합니다. 배포 유형이 설치되기 전에 종속 배포 유형을 자동으로 설치하도록 설정할 수 있습니다.  
+## <a name="specify-dependencies-for-the-deployment-type"></a>Określenie zależności dotyczących typu wdrożenia  
+ Zależności definiują jeden lub więcej typów wdrożeń z innej aplikacji, którą należy zainstalować przed zainstalowaniem typu wdrożenia. Można ustawić zależnych typów wdrożeń można automatycznie zainstalować przed zainstalowaniem typu wdrożenia.  
 
 > [!IMPORTANT]  
->  경우에 따라 배포 유형은 종속성이 있는 배포 유형에도 종속됩니다. 체인에 지원되는 최대 종속성 수는 5개입니다.  
+>  W niektórych przypadkach typ wdrożenia jest zależny od typu wdrożenia, który również ma zależności. Maksymalna liczba obsługiwanych zależności w łańcuchu wynosi pięć.  
 
-1.  배포 유형 만들기 마법사의 **종속성** 페이지에서 이 배포 유형이 설치되기 위해 먼저 설치해야 할 배포 유형을 지정하려면 **추가**를 선택합니다.  
+1.  Na **zależności** strony kreatora tworzenia typu wdrożenia wybierz **Dodaj** Jeśli chcesz określić typy wdrożeń, które należy zainstalować przed zainstalowaniem tego typu wdrożenia.  
 
     > [!IMPORTANT]  
-    >  또한 *<배포 유형 이름\>* **속성** 대화 상자의 **종속성** 탭에서 새 종속성을 추가할 수도 있습니다.  
+    >  Można także dodać nowe zależności na **zależności** karcie *< Nazwa typu wdrożenia\>*  **właściwości** okno dialogowe.  
 
-2.  **종속성 추가** 대화 상자에서 **추가**를 선택합니다.  
+2.  W **Dodawanie zależności** oknie dialogowym wybierz **Dodaj**.  
 
-3.  **필수 응용 프로그램 지정** 대화 상자에서 기존 응용 프로그램 하나와 종속성으로 사용할 응용 프로그램 배포 유형 하나를 선택합니다.  
+3.  W **Określ wymaganą aplikację** okno dialogowe, wybierz istniejącą aplikację i jedno wdrożenie aplikacji typów do użycia jako zależność.  
 
     > [!TIP]  
-    >  **보기**를 선택하면 선택한 응용 프로그램 또는 배포 유형의 속성을 볼 수 있습니다.  
+    >  Możesz wybrać **widoku** Aby wyświetlić właściwości wybranej aplikacji lub typu wdrożenia.  
 
-4.  **확인**을 선택하여 **필수 응용 프로그램 지정** 대화 상자를 닫습니다.  
+4.  Wybierz **OK** zamknąć **Określ wymaganą aplikację** okno dialogowe.  
 
-5.  종속된 응용 프로그램을 자동으로 설치하려면 종속된 응용 프로그램 옆의 **자동 설치** 를 선택합니다.  
+5.  Jeśli chcesz, aby aplikacja zależna była instalowana automatycznie, wybierz opcję **automatyczna instalacja** obok aplikacji.  
 
     > [!NOTE]  
-    >  종속된 응용 프로그램은 자동 설치를 위해 배포할 필요가 없습니다.  
+    >  Aplikacja zależna nie trzeba wdrażać była instalowana automatycznie.  
 
-6.  **종속성 추가** 대화 상자의 **종속성 그룹 이름** 아래에 이 응용 프로그램 종속성 그룹을 나타내는 이름을 입력합니다.  
+6.  W **Dodawanie zależności** okno dialogowe, w obszarze **Nazwa grupy zależności**, wprowadź nazwę umożliwiającą odwoływanie się do tej grupy zależności aplikacji.  
 
-7.  선택적으로 **우선 순위 높이기** 및 **우선 순위 낮추기** 단추를 사용하여 각 종속성이 평가되는 순서를 변경할 수 있습니다.  
+7.  Można też użyć **Zwiększ priorytet** i **Zmniejsz priorytet** przycisków, aby zmienić kolejność, w jakiej są oceniane poszczególne zależności.  
 
-8.  **확인**을 선택하여 **종속성 추가** 대화 상자를 닫습니다.  
+8.  Wybierz **OK** zamknąć **Dodawanie zależności** okno dialogowe.  
 
-## <a name="confirm-the-deployment-type-settings-and-finish-the-wizard"></a>배포 유형 설정을 확인하고 마법사 완료  
+## <a name="confirm-the-deployment-type-settings-and-finish-the-wizard"></a>Potwierdzenie ustawień typu wdrożenia i Zakończ pracę kreatora  
 
-1.  배포 유형 만들기 마법사의 **요약** 페이지에서 마법사가 수행하는 작업을 검토합니다. **다음**을 선택하여 배포 유형을 만들거나 **이전**을 선택하여 이전 단계로 이동한 후 배포 유형 설정을 변경합니다.  
+1.  Na **Podsumowanie** strony kreatora tworzenia typu wdrożenia Przejrzyj akcje wykonywane przez kreatora. Wybierz **dalej** do utworzenia typu wdrożenia, lub wybierz **Wstecz** aby wrócić i zmienić ustawienia typu wdrożenia.  
 
-2.  **진행률** 페이지가 완료되면 수행된 작업을 검토한 다음 **닫기**를 선택하여 마법사를 완료합니다.  
+2.  Po **postępu** Przejrzyj akcje wykonane przez kreatora, a następnie wybierz pozycję zakończenie, **Zamknij** aby zakończyć pracę kreatora.  
 
-3.  응용 프로그램 만들기 마법사에서 배포 유형 만들기 마법사를 시작한 경우 응용 프로그램 만들기 마법사의 **배포 유형** 페이지로 돌아가게 됩니다.  
+3.  Jeśli Kreator tworzenia typu wdrożenia został uruchomiony z Kreatora tworzenia aplikacji, nastąpi powrót do **typy wdrożeń** strony kreatora tworzenia aplikacji.  
 
-## <a name="set-up-additional-options-for-deployment-types-that-contain-virtual-applications"></a>가상 응용 프로그램을 포함하는 배포 유형을 위한 추가 옵션 설정  
- 가상 응용 프로그램을 포함하는 배포 유형을 위한 추가 옵션을 설정하려면 다음 절차를 따르세요.  
+## <a name="set-up-additional-options-for-deployment-types-that-contain-virtual-applications"></a>Konfigurowanie dodatkowych opcji typów wdrożeń zawierających aplikacje wirtualne  
+ Poniższe procedury umożliwiają konfigurowanie dodatkowych opcji typów wdrożeń zawierających aplikacje wirtualne.  
 
-### <a name="set-up-content-options-for-application-virtualization-app-v-deployment-types"></a>Application Virtualization(App-V) 배포 유형에 대한 콘텐츠 옵션 설정  
+### <a name="set-up-content-options-for-application-virtualization-app-v-deployment-types"></a>Ustaw opcje zawartości dla typów wdrożeń Application Virtualization (App-V)  
 
-1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램**을 선택합니다.  
+1.  W konsoli programu Configuration Manager wybierz **Biblioteka oprogramowania** > **aplikacji**.  
 
-2.  **응용 프로그램** 목록에서 App-V 배포 유형이 포함된 응용 프로그램을 선택합니다. 그런 다음 **홈** 탭의 **속성** 그룹에서 **속성**을 선택합니다.  
+2.  W **aplikacji** listy, wybierz aplikację, która ma typ wdrożenia programu App-V. Następnie na **Home** karcie **właściwości** grupy, wybierz **właściwości**.  
 
-3.  *<응용 프로그램 이름\>* **속성** 대화 상자의 **배포 유형** 탭에서 App-V 배포 유형을 선택하고 **편집**을 선택합니다.  
+3.  W *< nazwa aplikacji\>*  **właściwości** na okna dialogowego **typy wdrożeń** karcie, wybierz typ wdrożenia programu App-V, a następnie wybierz **Edytuj**.  
 
-4.  필요한 경우 *<배포 유형 이름\>* **속성** 대화 상자의 **콘텐츠** 탭에서 다음 옵션을 설정합니다.  
+4.  W *< Nazwa typu wdrożenia\>*  **właściwości** na okna dialogowego **zawartości** kartę, skonfiguruj następujące opcje, jeśli jest to wymagane:  
 
-    -   **클라이언트 캐시에 콘텐츠 보관** – 이 배포 유형의 콘텐츠를 Configuration Manager 클라이언트 캐시에서 삭제하지 않으려면 이 옵션을 선택합니다.  
+    -   **Utrwal zawartość w pamięci podręcznej klienta**— wybierz tę opcję, aby upewnić się, że zawartość dla tego typu wdrożenia nie zostanie usunięta z pamięci podręcznej klienta programu Configuration Manager.  
 
-    -   **시작 전에 App-V 캐시로 콘텐츠 로드** – 응용 프로그램을 시작하기 전에 App-V 캐시로 가상 응용 프로그램의 모든 콘텐츠를 로드하려면 이 옵션을 선택합니다. 또한 이 옵션을 선택하면 응용 프로그램 콘텐츠가 캐시에 고정되지 않으므로 필요한 경우 삭제할 수 있습니다.  
+    -   **Załaduj zawartość do pamięci podręcznej programu App-V przed uruchomieniem**— wybierz tę opcję, aby upewnić się, że cała zawartość dla aplikacji wirtualnej zostanie załadowana do pamięci podręcznej programu App-V przed uruchomieniem aplikacji. Zaznaczenie tej opcji gwarantuje również, że zawartość aplikacji nie jest przypięty w pamięci podręcznej i można je usunąć zgodnie z wymaganiami.  
 
-5.  **확인**을 선택하여 *<배포 유형 이름\>* **속성** 대화 상자를 닫습니다.  
+5.  Wybierz **OK** zamknąć *< Nazwa typu wdrożenia\>*  **właściwości** okno dialogowe.  
 
-6.  **확인**을 선택하여 *<응용 프로그램 이름\>* **속성** 대화 상자를 닫습니다.  
+6.  Wybierz **OK** zamknąć *< nazwa aplikacji\>*  **właściwości** okno dialogowe.  
 
-### <a name="set-up-publishing-options-for-app-v-deployment-types"></a>App-V 배포 유형에 대한 게시 옵션 설정  
+### <a name="set-up-publishing-options-for-app-v-deployment-types"></a>Ustawianie opcji typów wdrożeń App-V publikowania  
 
-1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램**을 선택합니다.  
+1.  W konsoli programu Configuration Manager wybierz **Biblioteka oprogramowania** > **aplikacji**.  
 
-3.  **응용 프로그램** 목록에서 App-V 배포 유형이 포함된 응용 프로그램을 선택합니다. 그런 다음 **홈** 탭의 **속성** 그룹에서 **속성**을 선택합니다.  
+3.  W **aplikacji** listy, wybierz aplikację, która ma typ wdrożenia programu App-V. Następnie na **Home** karcie **właściwości** grupy, wybierz **właściwości**.  
 
-4.  *<응용 프로그램 이름\>* **속성** 대화 상자의 **배포 유형** 탭에서 App-V 배포 유형을 선택하고 **편집**을 선택합니다.  
+4.  W *< nazwa aplikacji\>*  **właściwości** na okna dialogowego **typy wdrożeń** karcie, wybierz typ wdrożenia programu App-V, a następnie wybierz **Edytuj**.  
 
-5.  *<배포 유형 이름\>* **속성** 대화 상자의 **게시** 탭에서 게시하려는 가상 응용 프로그램의 항목을 선택합니다.  
+5.  W *< Nazwa typu wdrożenia\>*  **właściwości** na okna dialogowego **publikowania** , a następnie wybierz elementy aplikacji wirtualnej, który chcesz opublikować.  
 
-6.  **확인**을 선택하여 *<배포 유형 이름\>* **속성** 대화 상자를 닫습니다.  
+6.  Wybierz **OK** zamknąć *< Nazwa typu wdrożenia\>*  **właściwości** okno dialogowe.  
 
-7.  **확인**을 선택하여 *<응용 프로그램 이름\>* **속성** 대화 상자를 닫습니다.  
+7.  Wybierz **OK** zamknąć *< nazwa aplikacji\>*  **właściwości** okno dialogowe.  
 
-## <a name="import-an-application"></a>응용 프로그램 가져오기  
- 다음 절차를 사용하여 Configuration Manager로 응용 프로그램을 가져올 수 있습니다. 응용 프로그램을 내보내는 방법에 대한 자세한 내용은 [System Center Configuration Manager 응용 프로그램에 대한 관리 작업](../../apps/deploy-use/management-tasks-applications.md)을 참조하세요.  
+## <a name="import-an-application"></a>Importuj aplikację  
+ Użyj poniższej procedury, aby zaimportować aplikację do programu Configuration Manager. Aby uzyskać informacje o sposobie eksportowania aplikacji, zobacz [zadania zarządzania dla aplikacji programu System Center Configuration Manager](../../apps/deploy-use/management-tasks-applications.md).  
 
-1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **응용 프로그램**을 선택합니다.   
+1.  W konsoli programu Configuration Manager wybierz **Biblioteka oprogramowania** > **Zarządzanie aplikacjami** > **aplikacji**.   
 
-3.  **홈** 탭의 **만들기** 그룹에서 **응용 프로그램 가져오기**를 선택합니다.  
+3.  Na **Home** karcie **Utwórz** grupy, wybierz **Importuj aplikację**.  
 
-4.  **응용 프로그램 가져오기 마법사**의 **일반** 페이지에서 **찾아보기**를 선택한 후 가져오려는 응용 프로그램이 포함된 .zip 파일의 UNC 경로를 지정합니다.  
+4.  Na **ogólne** strony **Kreatora importowania aplikacji**, wybierz **Przeglądaj**, a następnie określ ścieżkę UNC do pliku zip, który ma aplikacji do zaimportowania.  
 
-5.  **파일 콘텐츠** 페이지에서 가져올 응용 프로그램이 기존 응용 프로그램과 중복되는 경우 수행할 작업을 선택합니다. 새 응용 프로그램을 만들거나, 중복을 무시하고 기존 응용 프로그램에 새 수정 버전을 추가할 수 있습니다.  
+5.  Na **zawartość pliku** wybierz akcję, która będzie wykonywana, gdy aplikację, którą próbowano zaimportować jest duplikatem istniejącej aplikacji. Możesz utworzyć nową aplikację lub zignorować duplikat i dodać nową poprawkę do istniejącej aplikacji.  
 
-6.  **요약** 페이지에서 수행할 작업을 검토한 후 마법사를 완료합니다.  
+6.  Na **Podsumowanie** Przejrzyj akcje wykonywane, a następnie Zakończ pracę kreatora.  
 
- **응용 프로그램** 노드에 새 응용 프로그램이 나타납니다.  
+ Nowa aplikacja pojawi się w węźle **Aplikacje**.  
 
 > [!TIP]  
->  Windows PowerShell cmdlet인 **Import-CMApplication**이 이 절차와 동일한 기능을 수행합니다. 자세한 내용은 Microsoft System Center 2012 Configuration Manager SP1 Cmdlet 참조에서 [Import-CMApplication](https://technet.microsoft.com/library/jj821738.aspx)을 참조하세요.  
+>  Polecenia cmdlet programu Windows PowerShell **Export-CMApplication** ma taką samą funkcję jak tej procedury. Aby uzyskać więcej informacji, zobacz [Export-CMApplication](https://technet.microsoft.com/library/jj821738.aspx) w Microsoft System Center 2012 Configuration Manager z dodatkiem SP1 Cmdlet Reference.  
 
-##  <a name="deployment-types-supported-by-configuration-manager"></a>Configuration Manager에서 지원하는 배포 유형  
+##  <a name="deployment-types-supported-by-configuration-manager"></a>Typy wdrożeń obsługiwane przez program Configuration Manager  
 
-|배포 유형 이름|추가 정보|  
+|Nazwa typu wdrożenia|Więcej informacji|  
 |--------------------------|----------------------|  
-|**Windows Installer(\*.msi 파일)**|Windows Installer 파일에서 배포 유형을 만듭니다.|  
-|**Windows 앱 패키지(\*.appx, \*.appxbundle)**|Windows 앱 번들 패키지 또는 Windows 앱 패키지 파일에서 Windows 8, Windows RT 이상에 대한 배포 유형을 만듭니다.|  
-|**Windows 앱 패키지(Windows 스토어)**|Windows 스토어에서 앱에 대한 링크를 지정하거나 스토어를 검색하여 필요한 앱을 선택하는 방식으로 Windows 8, Windows RT 이상에 대한 배포 유형을 만듭니다.<br /><br /> Windows 스토어에 대한 링크로 앱을 배포하려면 **스토어 앱 끄기** 라는 그룹 정책 설정을 **사용 안 함** 또는 **구성되지 않음**으로 설정해야 합니다. 이 설정을 사용하면 클라이언트에서 응용 프로그램을 다운로드하고 설치하기 위해 Windows 스토어에 연결할 수 없습니다.<br /><br /> 저장소에 대한 링크를 사용하는 Windows 8 배포 유형은 우선 순위와 관계없이 다른 배포 유형 전에 항상 먼저 평가됩니다.|  
-|**스크립트 설치 관리자**|콘텐츠를 설치하거나 작업을 수행하기 위해 클라이언트 장치에서 실행되는 스크립트를 지정하는 배포 유형을 만듭니다.|  
-|**Microsoft Application Virtualization 4**|Microsoft Application Virtualization 4 매니페스트에서 배포 유형 만들기|  
-|**Microsoft Application Virtualization 5**|Microsoft Application Virtualization 5 패키지 파일에서 배포 유형을 만듭니다.|  
-|**Windows Phone 앱 패키지(\*.xap 파일)**|Windows Phone 앱 패키지 파일에서 배포 유형을 만듭니다.|  
-|**Windows Phone 앱 패키지(Windows Phone 스토어)**|Windows Phone 스토어의 앱에 대한 링크를 지정하여 배포 유형을 만듭니다.|  
-|**Windows Mobile 캐비닛**|Windows Mobile 캐비닛(CAB) 파일에서 Windows Mobile 장치에 대한 배포 유형을 만듭니다.|  
-|**iOS용 앱 패키지(\*.ipa 파일)**|iOS 앱 패키지 파일에서 배포 유형을 만듭니다.|  
-|**App Store의 iOS용 앱 패키지**|App Store의 iOS 앱에 대한 링크를 지정하여 배포 유형을 만듭니다.|  
-|**Android용 앱 패키지(\*.apk 파일)**|Android 앱 패키지 파일에서 배포 유형을 만듭니다.|  
-|**Google Play의 Android용 앱 패키지**|Google Play의 앱에 대한 링크를 지정하여 배포 유형을 만듭니다.|  
-|**Mac OS X**|CMAppUtil 도구를 사용하여 만든 .cmmac 파일에서 Mac 컴퓨터의 배포 유형을 만듭니다.<br /><br /> Configuration Manager 클라이언트를 실행하는 Mac 컴퓨터에만 적용됩니다.|  
-|**웹 응용 프로그램**|웹 응용 프로그램에 대한 링크를 지정하는 배포 유형을 만듭니다. 배포 유형은 사용자 장치의 웹 응용 프로그램에 대한 바로 가기를 설치합니다.<br /><br /> iOS 또는 Android 장치에 Intune 관리 브라우저를 설치한 경우 앱을 여는 데 관리 브라우저만을 사용하도록 할 수 있습니다. 이렇게 하려면 앱에 대한 링크를 지정할 때 **http:**를 **http intunemam:**으로 바꾸거나 **https:**를 **https intunemam:**으로 바꿔서 다음 형식 중 하나를 사용합니다.<br /><br /> - **http-intunemam://<웹앱의 경로\>**<br /><br /> - **https-intunemam://<웹앱의 경로\>**<br /><br /> Configuration Manager 응용 프로그램 요구 사항을 사용하여 Managed Browser와 연결하려는 앱이 iOS 및 Android 장치에만 설치되도록 할 수 있습니다.<br /><br /> Intune Managed Browser에 대한 자세한 내용은 [Managed Browser 정책을 사용하여 인터넷 액세스 관리](../../apps/deploy-use/manage-internet-access-using-managed-browser-policies.md)를 참조하세요.|  
-|**MDM(\*.msi)을 사용하는 Windows Installer**|이 설치 관리자 유형을 사용하면 Windows Installer 기반 앱을 만들어 Windows 10이 실행되는 PC에 배포할 수 있습니다.<br /><br /> 이 설치 관리자 유형을 사용하는 경우에 고려해야 하는 사항은 다음과 같습니다.<br><br>- 확장명이 .msi인 파일 하나만 업로드할 수 있습니다.<br /><br /> - 파일의 제품 코드와 제품 버전을 앱 검색에 사용합니다.<br /><br /> - 앱의 기본 다시 시작 동작이 사용됩니다. Configuration Manager에서는 이 기능을 제어하지 못합니다.<br /><br /> - 단일 사용자에 대해 사용자별 MSI 패키지가 설치됩니다.<br /><br /> - 장치의 모든 사용자에 대해 컴퓨터별 MSI 패키지가 설치됩니다.<br /><br /> - 이중 모드 MSI 패키지는 현재 장치의 모든 사용자에 대해서만 설치됩니다.<br /><br /> - 각 버전의 MSI 제품 코드가 동일하면 앱 업데이트가 지원됩니다.|  
-
+|**Instalator systemu Windows (\*pliku .msi)**|Tworzy typ wdrożenia na podstawie pliku Instalatora systemu Windows.|  
+|**Pakiet aplikacji systemu Windows (\*appx, \*.appxbundle)**|Tworzy typ wdrożenia dla systemu operacyjnego Windows 8 lub Windows RT albo nowszego na podstawie pliku pakietu aplikacji systemu Windows lub pakietu zbioru aplikacji systemu Windows.|  
+|**Pakiet aplikacji systemu Windows (w Sklepie Windows)**|Tworzy typ wdrożenia dla systemu Windows 8, Windows RT lub nowszego przez określenie linku do aplikacji w Sklepie Windows lub przejrzenie sklepu i wskazanie wymaganej aplikacji, które są wymagane.<br /><br /> Jeśli chcesz wdrożyć aplikację jako łącze do Sklepu Windows, upewnij się, że ustawienie zasad grupy **Wyłącz aplikację sklep** ustawiono **wyłączone** lub **nieskonfigurowane**. Jeśli to ustawienie jest włączone, klienci nie będą mogli połączyć się ze Sklepem Windows w celu pobrania i zainstalowania aplikacji.<br /><br /> Typy wdrożeń systemu Windows 8 korzystające z linku do sklepu są zawsze oceniane przed innymi typami wdrożeń, niezależnie od ich priorytetu.|  
+|**Instalator skryptowy**|Tworzy typ wdrożenia określający skrypt uruchamiany na urządzeniach klienckich w celu zainstalowania zawartości lub wykonaj akcję.|  
+|**Microsoft Application Virtualization 4**|Tworzy typ wdrożenia na podstawie manifestu aplikacji Microsoft Application Virtualization 4|  
+|**Microsoft Application Virtualization 5**|Tworzy typ wdrożenia na podstawie pliku pakietu aplikacji Microsoft Application Virtualization 5.|  
+|**Pakiet aplikacji Windows Phone (\*plik xap)**|Tworzy typ wdrożenia na podstawie pliku pakietu aplikacji systemu Windows Phone.|  
+|**Pakiet aplikacji Windows Phone (w Sklepie Windows Phone)**|Tworzy typ wdrożenia przez określenie linku do aplikacji w sklepie Windows Phone Store.|  
+|**Przenośne pliku Cabinet systemu Windows**|Tworzy typ wdrożenia dla urządzeń z systemem Windows Mobile na podstawie pliku cabinet systemu Windows Mobile (CAB).|  
+|**Pakiet aplikacji dla systemu iOS (\*plik IPA)**|Tworzy typ wdrożenia na podstawie pliku pakietu aplikacji dla systemu iOS.|  
+|**Pakiet aplikacji dla systemu iOS ze sklepu z aplikacjami**|Tworzy typ wdrożenia za pośrednictwem łącza do aplikacji dla systemu iOS ze sklepu App Store.|  
+|**Pakiet aplikacji dla systemu Android (\*pliku apk)**|Tworzy typ wdrożenia na podstawie pliku pakietu aplikacji dla systemu Android.|  
+|**Pakiet aplikacji dla systemu Android w witrynie Google Play**|Tworzy typ wdrożenia za pośrednictwem łącza do aplikacji w witrynie Google Play.|  
+|**Mac OS X**|Tworzy typ wdrożenia dla komputerów Mac na podstawie pliku *.cmmac, który został utworzony przy użyciu narzędzia CMAppUtil.<br /><br /> Dotyczy tylko na komputerach Mac, na którym jest uruchomiony klient programu Configuration Manager.|  
+|**Aplikacja sieci Web**|Tworzy typ wdrożenia określający łącze do aplikacji sieci web. Typ wdrożenia instaluje skrót do aplikacji sieci web na urządzeniu użytkownika.<br /><br /> Po zainstalowaniu programu Intune managed browser dla systemu iOS lub urządzeń z systemem Android, którymi zarządzasz, można zapewnić, że użytkowników tylko przy użyciu programu managed browser do otwarcia aplikacji. Aby to zrobić, należy użyć jednej z następujących formatów wystarczy podać link do aplikacji przez zastąpienie **http:** z **http-intunemam:** lub **https:** z **https-intunemam:**<br /><br /> - **http-intunemam: / / < ścieżka do aplikacji sieci web\>**<br /><br /> - **HTTPS-intunemam: / / < ścieżka do aplikacji sieci web\>**<br /><br /> Aby upewnić się, że aplikacje, które chcesz skojarzyć z przeglądarką zarządzaną są instalowane tylko na urządzeń iOS i Android, można użyć wymagań aplikacji programu Configuration Manager.<br /><br /> Aby uzyskać więcej informacji o usłudze Intune managed browser, zobacz [Zarządzanie Internetu dostępu za pomocą zasad programu managed browser](../../apps/deploy-use/manage-internet-access-using-managed-browser-policies.md).|  
+|**Instalator Windows korzystający z zarządzania urządzeniami Przenośnymi (\*.msi)**|Ten typ Instalatora umożliwia tworzenie i wdrażanie aplikacji opartych na Instalatorze Windows na komputerach z systemem Windows 10.<br /><br /> W przypadku korzystania z instalatora tego typu należy wziąć pod uwagę następujące kwestie:<br><br>-Należy przekazać tylko pojedynczy plik z rozszerzeniem msi.<br /><br /> Kod produktu i wersja produktu pliku są używane do wykrywania aplikacji.<br /><br /> Domyślne zachowanie ponownego uruchamiania aplikacji będą używane. Menedżer konfiguracji nie jest to kontrolowane.<br /><br /> -Dla pojedynczego użytkownika zostaną zainstalowane pakiety MSI poszczególnych użytkowników.<br /><br /> Dla wszystkich użytkowników urządzenia zostaną zainstalowane pakiety MSI na maszynach.<br /><br /> -Pakiety MSI podwójne obecnie instalować tylko dla wszystkich użytkowników na urządzeniu.<br /><br /> — Aktualizacje aplikacji są obsługiwane, jeśli kod produktu MSI dla każdej wersji jest taki sam.|  

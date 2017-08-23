@@ -1,469 +1,466 @@
 ---
-title: "검색 구성 | Microsoft 문서"
-description: "네트워크 인프라 및 Active Directory에서 관리할 수 있는 리소스를 찾기 위해 Configuration Manager 사이트에서 실행할 검색 방법을 구성합니다."
+title: Konfigurowanie odnajdywania | Dokumentacja firmy Microsoft
+description: "Skonfiguruj metody odnajdywania w lokacji programu Configuration Manager w celu odnalezienia zasobów, którymi można zarządzać z infrastruktury sieci i usługi Active Directory."
 ms.custom: na
 ms.date: 7/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 49505eb1-d44d-4121-8712-e0f3d8b15bf5
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 0663ba84762c44a5c303562548499f195bae9e1c
 ms.openlocfilehash: 34a539ceaea6b070f81a28d2c0a9ce388e26cfeb
-ms.contentlocale: ko-kr
-ms.lasthandoff: 08/01/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 08/07/2017
 ---
-# <a name="configure-discovery-methods-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 검색 방법 구성
+# <a name="configure-discovery-methods-for-system-center-configuration-manager"></a>Skonfiguruj metody odnajdywania dla programu System Center Configuration Manager
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*Dotyczy: Program System Center Configuration Manager (Current Branch)*
 
 
-네트워크 인프라 및 Active Directory에서 관리할 수 있는 리소스를 찾기 위해 System Center Configuration Manager 사이트에서 실행할 검색 방법을 구성합니다. 이렇게 하려면 환경을 검색할 때 사용할 각 방법을 사용하도록 설정하고 구성해야 합니다. 또한 방법을 사용하도록 설정할 때와 동일한 절차를 사용하여 해당 방법을 사용하지 않도록 설정할 수 있습니다.  단, 하트비트 검색 및 서버 검색은 예외입니다.  
+Możesz skonfigurować metod odnajdywania do uruchamiania w witrynie System Center Configuration Manager, aby znaleźć zasoby, które można zarządzać za pomocą infrastruktury sieci i usługi Active Directory. Należy włączyć, a następnie skonfiguruj każdej metody, która ma być używany do wyszukiwania środowiska. (Można również wyłączyć metodę przy użyciu tej samej procedury, która umożliwia ją włączyć.)  Jedynym wyjątkiem od tej są odnajdywania pulsu i odnajdowanie serwera:  
 
--   기본적으로 하트비트 검색은 Configuration Manager 기본 사이트를 설치할 때 이미 사용하도록 설정되며 기본 일정에 따라 실행되도록 구성됩니다. 하트비트 검색은 장치에 대한 DDR(검색 데이터 기록)을 최신 상태로 유지하므로 계속 사용하도록 설정되어 있는 것이 좋습니다. 하트비트 검색에 대한 자세한 내용은 [하트비트 검색 정보](../../../../core/servers/deploy/configure/about-discovery-methods.md#bkmk_aboutHeartbeat)를 참조하세요.  
+-   Domyślnie odnajdywanie pulsu jest już włączona po zainstalowaniu lokacji głównej programu Configuration Manager i skonfigurowane do uruchamiania na podstawowe harmonogramu. Należy dobrze jest włączone, ponieważ zapewnia, że rekordy danych odnajdywania (DDR) dla urządzeń są aktualne odnajdywanie pulsu warto pozostawić. Aby uzyskać więcej informacji dotyczących odnajdywania pulsu, zobacz [o odnajdywaniu pulsu](../../../../core/servers/deploy/configure/about-discovery-methods.md#bkmk_aboutHeartbeat).  
 
--   서버 검색은 사이트 시스템으로 사용하는 컴퓨터를 찾는 자동 검색 방법입니다. 이를 구성하거나 사용하지 않도록 설정할 수 없습니다.  
+-   Odnajdowanie serwera jest metodę automatycznego wykrywania, która umożliwia znalezienie komputerów, które używają jako systemy lokacji. Nie można skonfigurować lub go wyłączyć.  
 
-**구성 가능한 검색 방법을 사용하도록 설정하려면**  
+**Aby włączyć metodę odnajdywania można skonfigurować:**  
  > [!NOTE]  
- > 다음 정보는 Azure Active Directory 사용자 검색에는 적용되지 않습니다. 대신 이 항목 뒷부분에 나오는 [Azure AD 사용자 검색 구성](#azureaadisc)을 참조하세요.
+ > Następujące informacje nie dotyczą odnajdywania użytkownika usługi Azure Active Directory. Zamiast tego zobacz [odnajdywania Skonfiguruj użytkownika programu Azure AD](#azureaadisc) dalszej części tego tematu.
 
-1.  Configuration Manager 콘솔에서 **관리** > **계층 구성**을 선택한 다음 **검색 방법**을 선택합니다.  
+1.  W konsoli programu Configuration Manager wybierz **administracji** > **Konfiguracja hierarchii**, a następnie wybierz pozycję **metod odnajdywania**.  
 
-2.  검색을 사용하도록 설정할 사이트의 검색 방법을 선택합니다.  
+2.  Wybierz metodę odnajdywania dla lokacji, w której chcesz włączyć odnajdywanie.  
 
-3.  **홈** 탭의 **속성** 그룹에서 **속성**을 선택한 다음 **일반** 탭에서 &lt;검색 방법\> **사용** 확인란을 선택합니다.  
+3.  Na **Home** karcie **właściwości** grupy, wybierz **właściwości**, a następnie na **ogólne** karcie wyboru **włączyć&lt;metody odnajdywania\>**  pole.  
 
-     이 확인란이 이미 선택된 경우에는 확인란의 선택을 해제하여 검색 방법을 사용하지 않도록 설정할 수 있습니다.  
+     Jeśli to pole jest już zaznaczone, można wyłączyć metodę odnajdywania, usuwając zaznaczenie pola wyboru pole.  
 
-4.  **확인**을 선택하여 구성을 저장합니다.  
+4.  Wybierz **OK** Aby zapisać konfigurację.  
 
 
-##  <a name="BKMK_ConfigADForestDisc"></a> Active Directory 포리스트 검색 구성  
-Active Directory 포리스트 검색 구성을 완료하려면 다음 두 위치에서 설정을 구성해야 합니다.  
+##  <a name="BKMK_ConfigADForestDisc"></a>Konfigurowanie odnajdywania lasu usługi Active Directory  
+Aby ukończyć konfigurację odnajdywania lasu usługi Active Directory, należy skonfigurować ustawienia w dwóch miejscach:  
 
--   **검색 방법** 노드에서 다음과 같이 할 수 있습니다.
+-   W **metod odnajdywania** węzła, można wykonywać następujące czynności:
 
-    - 이 검색 방법을 사용하도록 설정합니다.
-    - 폴링 일정을 설정합니다.
-    - 검색하는 Active Directory 사이트 및 서브넷에 대한 경계를 검색에서 자동으로 생성하는지 여부를 선택합니다.  
+    - Włączenie tej metody odnajdywania.
+    - Ustaw harmonogram sondowania.
+    - Wybierz, czy odnajdywanie ma automatycznie tworzyć granice lokacji usługi Active Directory i podsieci, które wykryje.  
 
--   **Active Directory 포리스트** 노드에서 다음과 같이 할 수 있습니다.
+-   W **lasy usługi Active Directory** węzła, można wykonywać następujące czynności:
 
-    - 검색할 포리스트를 추가합니다.
-    - 해당 포리스트에서 Active Directory 사이트 및 서브넷의 검색을 사용하도록 설정합니다.
-    - Configuration Manager 사이트가 해당 사이트 정보를 포리스트에 게시할 수 있도록 하는 설정을 구성합니다.
-    - 각 포리스트의 Active Directory 포리스트 계정으로 사용할 계정을 할당합니다.  
+    - Dodać lasy, które chcesz odnajdywać.
+    - Włącz odnajdywanie lokacji usługi Active Directory i podsieci, w tym lesie.
+    - Skonfiguruj ustawienia, które umożliwiają Lokacje programu Configuration Manager do publikowania swoich informacji o lokacji w lesie.
+    - Przypisywanie konta do użycia jako konto lasu usługi Active Directory dla każdego lasu.  
 
-Active Directory 포리스트 검색을 사용하도록 설정하고 Active Directory 포리스트 검색에 사용할 개별 포리스트를 구성하려면 다음 절차를 수행하세요.  
+Użyj poniższych procedur, aby włączyć odnajdowanie lasu usługi Active Directory oraz do skonfigurowania poszczególnych lasów na użytek z odnajdywaniem lasu usługi Active Directory.  
 
-#### <a name="to-enable-active-directory-forest-discovery"></a>Active Directory 포리스트 검색을 사용하도록 설정하려면  
+#### <a name="to-enable-active-directory-forest-discovery"></a>Aby włączyć odnajdowanie lasu usługi Active Directory  
 
-1.  Configuration Manager 콘솔에서 **관리** > **계층 구성**을 선택한 다음 **검색 방법**을 선택합니다.  
+1.  W konsoli programu Configuration Manager wybierz **administracji** > **Konfiguracja hierarchii**, a następnie wybierz pozycję **metod odnajdywania**.  
 
-2.  검색을 구성할 사이트에 대해 Active Directory 포리스트 검색 방법을 선택합니다.  
+2.  Wybierz metodę odnajdywania lasu usługi Active Directory dla lokacji, w której chcesz skonfigurować odnajdywanie.  
 
-3.  **홈** 탭의 **속성** 그룹에서 **속성**을 선택합니다.  
+3.  Na **Home** karcie **właściwości** grupy, wybierz **właściwości**.  
 
-4.  **일반** 탭에서 확인란을 선택하여 검색을 사용하도록 설정합니다. 또는 지금 검색을 구성한 다음 나중에 돌아가서 검색을 사용하도록 설정할 수 있습니다.  
+4.  Na **ogólne** karcie, pole wyboru, aby włączyć odnajdywanie. Lub skonfigurować odnajdywanie teraz, a następnie włączyć je później.  
 
-5.  검색된 위치의 사이트 경계를 만드는 옵션을 지정합니다.  
+5.  Określ opcje dotyczące tworzenia granic lokacji dla odnajdywanych lokalizacji.  
 
-6.  검색을 실행할 일정을 지정합니다.  
+6.  Określ harmonogram uruchamiania odnajdywania.  
 
-7.  이 사이트의 Active Directory 포리스트 검색 구성을 마쳤으면 **확인**을 선택하여 구성을 저장합니다.  
+7.  Po zakończeniu konfigurowania odnajdywania lasu usługi Active Directory dla tej lokacji, wybierz **OK** Aby zapisać konfigurację.  
 
-#### <a name="to-configure-a-forest-for-active-directory-forest-discovery"></a>Active Directory 포리스트 검색용 포리스트를 구성하려면  
+#### <a name="to-configure-a-forest-for-active-directory-forest-discovery"></a>Aby skonfigurować las dla odnajdywania lasu usługi Active Directory  
 
-1.  **관리** 작업 영역에서 **Active Directory 포리스트**를 선택합니다. 이전에 Active Directory 포리스트 검색을 실행한 경우 검색된 각 포리스트가 결과 창에 표시됩니다. Active Directory 포리스트 검색을 실행하면 로컬 포리스트 및 트러스트된 모든 포리스트가 검색됩니다. 트러스트되지 않은 포리스트만 수동으로 추가해야 합니다.  
+1.  W **administracji** obszaru roboczego wybierz **lasy usługi Active Directory**. Jeśli odnajdywanie lasu za pomocą usługi Active Directory było wcześniej uruchamiane, wszystkie odnalezione lasy zostaną wyświetlone w okienku wyników. Uruchomienie odnajdywania lasu za pomocą usługi Active Directory powoduje odnalezienie lasu lokalnego oraz wszystkich lasów zaufanych. Ręcznie należy dodać tylko lasy niezaufane.  
 
-    -   이전에 검색된 포리스트를 구성하려면 결과 창에서 포리스트를 선택합니다. 그 후에 **홈** 탭의 **속성** 그룹에서 **속성**을 선택하여 포리스트 속성을 엽니다. 계속해서 3단계를 진행합니다.  
+    -   W celu skonfigurowania poprzednio odnalezionego lasu wybierz go w okienku wyników. Następnie na **Home** karcie **właściwości** grupy, wybierz **właściwości** aby otworzyć właściwości lasu. Przejdź do kroku 3.  
 
-    -   목록에 없는 새 포리스트를 구성하려면 **홈** 탭의 **만들기** 그룹에서 **포리스트 추가**를 선택하여 **포리스트 추가** 대화 상자를 엽니다. 계속해서 3단계를 진행합니다.  
+    -   Do skonfigurowania nowego lasu, który nie ma na liście, na **Home** karcie **Utwórz** grupy, wybierz **Dodaj las** otworzyć **Dodawanie lasów** okno dialogowe. Przejdź do kroku 3.  
 
-2.  **일반** 탭에서 검색할 포리스트의 구성을 완료하고 **Active Directory 포리스트 계정**을 지정합니다.  
-
-    > [!NOTE]  
-    >  트러스트되지 않은 포리스트를 검색하고 게시하려면 Active Directory 포리스트 검색에서 글로벌 계정을 사용해야 합니다. 사이트 서버의 컴퓨터 계정을 사용하지 않는 경우 글로벌 계정만 선택할 수 있습니다.  
-
-3.  사이트에서 이 포리스트에 사이트 데이터를 게시할 수 있도록 하려면 **게시** 탭에서 이 포리스트에 게시할 수 있도록 구성을 완료합니다.  
+2.  Na **ogólne** pozycję Zakończ konfigurację lasu, który chcesz odnaleźć i określ **konto lasu usługi Active Directory**.  
 
     > [!NOTE]  
-    >  사이트에서 포리스트에 게시할 수 있도록 하는 경우에는 Configuration Manager에 대해 해당 포리스트의 Active Directory 스키마를 확장해야 합니다. Active Directory 포리스트 계정에는 해당 포리스트의 시스템 컨테이너에 대한 모든 권한이 있어야 합니다.  
+    >  Aby odnajdywać lasy niezaufane i w nich publikować, odnajdywanie lasu usługi Active Directory wymaga konta globalnego. Jeśli nie używasz konta komputera serwera lokacji, można wybrać tylko konto globalne.  
 
-4.  Active Directory 포리스트 검색에 사용하도록 이 포리스트의 구성을 완료한 후에는 **확인**을 선택하여 구성을 저장합니다.  
+3.  Jeśli zamierzasz umożliwić publikowanie danych lokacji w tym lesie na Lokacje **publikowania** pozycję Zakończ konfigurację publikowania w tym lesie.  
 
-##  <a name="BKMK_ConfigADDiscGeneral"></a> 컴퓨터, 사용자 또는 그룹에 대해 Active Directory 검색 구성  
- 컴퓨터, 사용자 또는 그룹의 검색을 구성하려면 다음 섹션의 정보를 참조하세요. 아래와 같은 검색 방법을 사용하게 됩니다.  
+    > [!NOTE]  
+    >  Jeśli umożliwisz lokacji publikowanie w lesie, należy rozszerzyć schemat usługi Active Directory tego lasu dla programu Configuration Manager. Konto lasu usługi Active Directory musi mieć uprawnienia pełnej kontroli do kontenera systemu w tym lesie.  
 
--   Active Directory 그룹 검색  
+4.  Po zakończeniu konfiguracji tego lasu do stosowania z odnajdywaniem lasu usługi Active Directory, wybierz **OK** Aby zapisać konfigurację.  
 
--   Active Directory 시스템 검색  
+##  <a name="BKMK_ConfigADDiscGeneral"></a>Konfigurowanie odnajdywania usługi Active Directory dla komputerów, użytkowników lub grup  
+ Skorzystaj z informacji w poniższych sekcjach, aby skonfigurować odnajdywanie komputerów, użytkowników lub grup. Użyjesz tych metod odnajdywania:  
 
--   Active Directory 사용자 검색  
+-   Odnajdywanie grupy usługi Active Directory  
+
+-   Odnajdywanie systemu usługi Active Directory  
+
+-   odnajdywanie użytkownika usługi Active Directory  
 
 > [!NOTE]  
->  이 섹션의 정보는 Active Directory 포리스트 검색에 적용되지 않습니다.  
+>  Informacje przedstawione w tej sekcji nie dotyczą odnajdywania lasu usługi Active Directory.  
 
- 이러한 각 검색 방법은 서로 독립적이지만 비슷한 옵션을 공유합니다. 이러한 구성 옵션에 대한 자세한 내용은 [Shared options for Group, System, and User discovery](../../../../core/servers/deploy/configure/about-discovery-methods.md#bkmk_shared)(그룹, 시스템 및 사용자 검색을 위한 공유 옵션)을 참조하세요.  
+ Mimo że każda z tych metod odnajdywania jest niezależna od innych, mają podobne opcje. Aby uzyskać więcej informacji o tych opcjach konfiguracji, zobacz [udostępniane opcje odnajdywania grupy, systemu i użytkownika](../../../../core/servers/deploy/configure/about-discovery-methods.md#bkmk_shared).  
 
 > [!WARNING]  
->  이러한 각 검색 방법에 의한 Active Directory 폴링은 커다란 네트워크 트래픽을 생성할 수 있습니다. 이러한 네트워크 트래픽이 업무의 네트워크 사용에 부정적인 영향을 주지 않는 시간에 각 검색 방법을 실행하도록 예약하는 것이 좋습니다.  
+>  Sondowanie usługi Active Directory każdą z tych metod odnajdywania może powodować znaczne obciążenie sieci. Warto pomyśleć o zaplanowaniu każdej metody odnajdywania w czasie, gdy ruch sieciowy nie wpływa na firm korzystanie z sieci.  
 
-#### <a name="to-configure-active-directory-group-discovery"></a>Active Directory 그룹 검색을 구성하려면  
+#### <a name="to-configure-active-directory-group-discovery"></a>Aby skonfigurować odnajdywanie grupy usługi Active Directory  
 
-1.  Configuration Manager 콘솔에서 **관리** > **계층 구성**을 선택한 다음 **검색 방법**을 선택합니다.  
+1.  W konsoli programu Configuration Manager wybierz **administracji** > **Konfiguracja hierarchii**, a następnie wybierz pozycję **metod odnajdywania**.  
 
-2.  검색을 구성할 사이트에 대해 **Active Directory 그룹 검색** 방법을 선택합니다.  
+2.  Wybierz **odnajdowanie grup usługi Active Directory** metodę dla lokacji, w której chcesz skonfigurować odnajdywanie.  
 
-3.  **홈** 탭의 **속성** 그룹에서 **속성**을 선택합니다.  
+3.  Na **Home** karcie **właściwości** grupy, wybierz **właściwości**.  
 
-4.  **일반** 탭에서 확인란을 선택하여 검색을 사용하도록 설정합니다. 또는 지금 검색을 구성한 다음 나중에 돌아가서 검색을 사용하도록 설정할 수 있습니다.  
+4.  Na **ogólne** karcie, pole wyboru, aby włączyć odnajdywanie. Lub skonfigurować odnajdywanie teraz, a następnie włączyć je później.  
 
-5.  **추가**를 선택하여 검색 범위를 구성하고 **그룹** 또는 **위치**를 선택한 다음 **그룹 추가** 또는 **Active Directory 위치 추가** 대화 상자에서 다음 구성을 완료합니다.  
+5.  Wybierz **Dodaj** do skonfigurowania zakresu odnajdywania, wybierz **grup** lub **lokalizacji**i Zakończ następujące konfiguracje w **Dodawanie grup** lub **Dodawanie lokalizacji usługi Active Directory** okno dialogowe:  
 
-    1.  이 검색 범위의 **이름** 을 지정합니다.  
+    1.  Określ **nazwa** dla tego zakresu odnajdywania.  
 
-    2.  검색할 **Active Directory 도메인** 또는 **위치** 를 지정합니다.  
+    2.  Określ **domeny usługi Active Directory** lub **lokalizacji** do wyszukania:  
 
-        -   **그룹**을 선택했으면 검색할 Active Directory 그룹을 하나 이상 지정합니다.  
+        -   Jeśli została wybrana opcja **grup**, określ jedną lub więcej grup usługi Active Directory do odnalezienia.  
 
-        -   **위치**를 선택했으면 Active Directory 컨테이너를 검색할 위치로 지정합니다. 이 위치에 대해 Active Directory 자식 컨테이너의 재귀 검색을 사용하도록 설정할 수도 있습니다.  
+        -   Jeśli została wybrana opcja **lokalizacji**, określ kontener usługi Active Directory jako lokalizację do odnalezienia. Można również włączyć wyszukiwanie cykliczne we wszystkich kontenerach podrzędnych usługi Active Directory dla tej lokalizacji.  
 
-    3.  이 검색 범위를 검색하는 데 사용되는 **Active Directory 그룹 검색 계정** 을 지정합니다.  
+    3.  Określ **konto odnajdywania grup usługi Active Directory** używane do przeszukiwania tego zakresu odnajdywania.  
 
-    4.  **확인**을 선택하여 검색 범위 구성을 저장합니다.  
+    4.  Wybierz **OK** Aby zapisać konfigurację zakresu odnajdywania.  
 
-6.  정의할 각 추가 검색 범위마다 6단계를 반복합니다.  
+6.  Powtórz krok 6 dla każdego dodatkowego zakresu odnajdywania, który chcesz zdefiniować.  
 
-7.  **폴링 일정** 탭에서 전체 검색 폴링 일정과 델타 검색을 모두 구성합니다.  
+7.  Na **harmonogram sondowania** skonfiguruj zarówno sondowania pełnego odnajdywania, harmonogram i odnajdywanie zmian.  
 
-8.  필요한 경우 **옵션** 탭에서 오래된 컴퓨터 레코드를 검색되지 않도록 필터로 걸러내거나 제외하는 옵션 및 배포 그룹의 멤버 자격을 검색하는 옵션을 구성할 수 있습니다.  
+8.  Opcjonalna metoda polega na **opcji** kartę, można skonfigurować opcje odfiltrowywania, czyli wykluczania starych rekordów z procesu odnajdywania i odnajdywania członkostwa w grupach dystrybucyjnych.  
 
     > [!NOTE]  
-    >  기본적으로 Active Directory 그룹 검색은 보안 그룹의 멤버 자격만 검색합니다.  
+    >  Domyślnie odnajdywanie grupy usługi Active Directory odnajduje tylko członkostwo grup zabezpieczeń.  
 
-9. 이 사이트의 Active Directory 그룹 검색 구성을 마쳤으면 **확인**을 선택하여 구성을 저장합니다.  
+9. Po zakończeniu konfigurowania odnajdywania grupy usługi Active Directory dla tej lokacji wybrać **OK** Aby zapisać konfigurację.  
 
-#### <a name="to-configure-active-directory-system-discovery"></a>Active Directory 시스템 검색을 구성하려면  
+#### <a name="to-configure-active-directory-system-discovery"></a>Aby skonfigurować odnajdywanie systemu usługi Active Directory  
 
-1.  Configuration Manager 콘솔에서 **관리** > **계층 구성**을 선택한 다음 **검색 방법**을 선택합니다.  
+1.  W konsoli programu Configuration Manager wybierz **administracji** > **Konfiguracja hierarchii**, a następnie wybierz pozycję **metod odnajdywania**.  
 
-2.  검색을 구성할 사이트의 방법을 선택합니다.  
+2.  Wybierz metodę dla lokacji, w której chcesz skonfigurować odnajdywanie.  
 
-3.  **홈** 탭의 **속성** 그룹에서 **속성**을 선택합니다.  
+3.  Na **Home** karcie **właściwości** grupy, wybierz **właściwości**.  
 
-4.  **일반** 탭에서 확인란을 선택하여 검색을 사용하도록 설정합니다. 또는 지금 검색을 구성한 다음 나중에 돌아가서 검색을 사용하도록 설정할 수 있습니다.  
+4.  Na **ogólne** karcie, pole wyboru, aby włączyć odnajdywanie. Lub skonfigurować odnajdywanie teraz, a następnie włączyć je później.  
 
-5.  **새로 만들기** 아이콘 ![새 아이콘](media/Disc_new_Icon.gif)을 선택하여 새 Active Directory 컨테이너를 지정합니다. **Active Directory 컨테이너** 대화 상자에서 다음 구성을 완료합니다.  
+5.  Wybierz **nowy** ikona ![nową ikonę](media/Disc_new_Icon.gif) Aby określić nowy kontener usługi Active Directory. W **kontener usługi Active Directory** okna dialogowego pozycję Zakończ następujące konfiguracje:  
 
-    1.  검색할 위치를 하나 이상 지정합니다.  
+    1.  Określ co najmniej jedna lokalizacja do wyszukiwania.  
 
-    2.  각 위치에 대해 검색 동작을 변경하는 옵션을 지정합니다.  
+    2.  Dla każdej lokalizacji określ opcje, które należy zmienić to zachowanie wyszukiwania.  
 
-    3.  각 위치에 대해 **Active Directory 검색 계정**으로 사용할 계정을 지정합니다.  
+    3.  Dla każdej lokalizacji określ konto do użycia jako **konto odnajdywania usługi Active Directory**.  
 
         > [!TIP]  
-        >  지정하는 각 위치에 대해 검색 옵션 집합 및 고유한 Active Directory 검색 계정을 구성할 수 있습니다.  
+        >  Dla każdej lokalizacji można skonfigurować zestaw opcji odnajdywania i unikatowe konto odnajdywania Active Directory.  
 
-    4.  **확인**을 선택하여 Active Directory 컨테이너 구성을 저장합니다.  
+    4.  Wybierz **OK** Aby zapisać konfigurację kontenera usługi Active Directory.  
 
-6.  **폴링 일정** 탭에서 전체 검색 폴링 일정과 델타 검색을 모두 구성합니다.  
+6.  Na **harmonogram sondowania** skonfiguruj zarówno sondowania pełnego odnajdywania, harmonogram i odnajdywanie zmian.  
 
-7.  필요한 경우 **Active Directory 특성** 탭에서 검색할 컴퓨터에 대한 다른 Active Directory 특성을 구성할 수 있습니다. 기본 개체 특성도 나열됩니다.  
+7.  Opcjonalna metoda polega na **atrybuty usługi Active Directory** kartę, można skonfigurować dodatkowe atrybuty usługi Active Directory dla komputerów, które chcesz odnajdywać. Są także wyświetlane domyślne atrybuty obiektów.  
 
-8.  필요한 경우 **옵션** 탭에서 오래된 컴퓨터 레코드를 검색되지 않도록 필터로 걸러내거나 제외하는 옵션을 구성할 수 있습니다.  
+8.  Opcjonalna metoda polega na **opcji** kartę, można skonfigurować opcje odfiltrowywania, czyli wykluczania starych rekordów z procesu odnajdywania.  
 
-9. 이 사이트의 Active Directory 시스템 검색 구성을 마쳤으면 **확인**을 선택하여 구성을 저장합니다.  
+9. Po zakończeniu konfigurowania odnajdywania systemu usługi Active Directory dla tej lokacji wybrać **OK** Aby zapisać konfigurację.  
 
-#### <a name="to-configure-active-directory-user-discovery"></a>Active Directory 사용자 검색을 구성하려면  
+#### <a name="to-configure-active-directory-user-discovery"></a>Aby skonfigurować odnajdowanie użytkowników usługi Active Directory  
 
-1.  Configuration Manager 콘솔에서 **관리** > **계층 구성**을 선택한 다음 **검색 방법**을 선택합니다.  
+1.  W konsoli programu Configuration Manager wybierz **administracji** > **Konfiguracja hierarchii**, a następnie wybierz pozycję **metod odnajdywania**.  
 
-2.  검색을 구성할 사이트에 대해 **Active Directory 사용자 검색** 방법을 선택합니다.  
+2.  Wybierz **odnajdywania użytkownika usługi Active Directory** metodę dla lokacji, w której chcesz skonfigurować odnajdywanie.  
 
-3.  **홈** 탭의 **속성** 그룹에서 **속성**을 선택합니다.  
+3.  Na **Home** karcie **właściwości** grupy, wybierz **właściwości**.  
 
-4.  **일반** 탭에서 확인란을 선택하여 검색을 사용하도록 설정합니다. 또는 지금 검색을 구성한 다음 나중에 돌아가서 검색을 사용하도록 설정할 수 있습니다.  
+4.  Na **ogólne** karcie, pole wyboru, aby włączyć odnajdywanie. Lub skonfigurować odnajdywanie teraz, a następnie włączyć je później.  
 
-5.  **새로 만들기** 아이콘 ![새 아이콘](media/Disc_new_Icon.gif)을 선택하여 새 Active Directory 컨테이너를 지정합니다. **Active Directory 컨테이너** 대화 상자에서 다음 구성을 완료합니다.  
+5.  Wybierz **nowy** ikona ![nową ikonę](media/Disc_new_Icon.gif) Aby określić nowy kontener usługi Active Directory. W **kontener usługi Active Directory** okna dialogowego pozycję Zakończ następujące konfiguracje:  
 
-    1.  검색할 위치를 하나 이상 지정합니다.  
+    1.  Określ co najmniej jedna lokalizacja do wyszukiwania.  
 
-    2.  각 위치에 대해 검색 동작을 변경하는 옵션을 지정합니다.  
+    2.  Dla każdej lokalizacji określ opcje, które należy zmienić to zachowanie wyszukiwania.  
 
-    3.  각 위치에 대해 **Active Directory 검색 계정**으로 사용할 계정을 지정합니다.  
+    3.  Dla każdej lokalizacji określ konto do użycia jako **konto odnajdywania usługi Active Directory**.  
 
         > [!NOTE]  
-        >  지정하는 각 위치에 대해 고유한 검색 옵션 집합 및 고유한 Active Directory 검색 계정을 구성할 수 있습니다.  
+        >  Dla każdej lokalizacji można skonfigurować unikatowy zestaw opcji odnajdywania i unikatowe konto odnajdywania Active Directory.  
 
-    4.  **확인**을 선택하여 Active Directory 컨테이너 구성을 저장합니다.  
+    4.  Wybierz **OK** Aby zapisać konfigurację kontenera usługi Active Directory.  
 
-6.  **폴링 일정** 탭에서 전체 검색 폴링 일정과 델타 검색을 모두 구성합니다.  
+6.  Na **harmonogram sondowania** skonfiguruj zarówno sondowania pełnego odnajdywania, harmonogram i odnajdywanie zmian.  
 
-7.  필요한 경우 **Active Directory 특성** 탭에서 검색할 컴퓨터에 대한 다른 Active Directory 특성을 구성할 수 있습니다. 기본 개체 특성도 나열됩니다.  
+7.  Opcjonalna metoda polega na **atrybuty usługi Active Directory** kartę, można skonfigurować dodatkowe atrybuty usługi Active Directory dla komputerów, które chcesz odnajdywać. Są także wyświetlane domyślne atrybuty obiektów.  
 
-8.  이 사이트의 Active Directory 사용자 검색 구성을 마쳤으면 **확인**을 선택하여 구성을 저장합니다.  
+8.  Po zakończeniu konfigurowania odnajdywania użytkownika usługi Active Directory dla tej lokacji wybrać **OK** Aby zapisać konfigurację.  
 
-## <a name="azureaadisc"></a> Azure AD 사용자 검색 구성
-버전 1706부터 Configuration Manager를 [Azure 구독 및 Azure Active Directory](/sccm/core/servers/deploy/configure/azure-services-wizard)에 연결할 때 Azure Active Directory 사용자 검색을 구성할 수 있습니다.
+## <a name="azureaadisc"></a>Konfigurowanie odnajdywania użytkownika usługi Azure AD
+Począwszy od wersji 1706, można skonfigurować odnajdowanie użytkowników usługi Active Directory Azure podczas łączenia programu Configuration Manager do Twojej [subskrypcji platformy Azure i usługi Azure Active Directory](/sccm/core/servers/deploy/configure/azure-services-wizard).
 
-Azure AD 사용자 검색은 *클라우드 관리*의 일부로 구성됩니다. 이렇게 하기 위한 절차는 *Configuration Manager에서 사용하도록 Azure 서비스 구성* 항목의 [Configuration Manager에서 사용하기 위해 Azure Web App 만들기](/sccm/core/servers/deploy/configure/Azure-services-wizard#webapp)에 자세히 나와 있습니다.
-
-
+Odnajdowanie użytkowników usługi Azure AD jest skonfigurowany jako część *zarządzania chmurą*. Procedury w tym celu została szczegółowo opisana w [tworzenie aplikacji sieci web platformy Azure do użytku w programie Configuration Manager](/sccm/core/servers/deploy/configure/Azure-services-wizard#webapp) w temacie *usług Azure skonfigurować do użytku z programem Configuration Manager*.
 
 
-##  <a name="BKMK_ConfigHBDisc"></a> 하트비트 검색 구성  
- 기본적으로 하트비트 검색은 Configuration Manager 기본 사이트를 설치하면 사용하도록 설정됩니다. 그러므로 기본 옵션인 7일을 사용하고 싶지 않은 경우 클라이언트가 하트비트 DDR(검색 데이터 기록)을 관리 지점에 보내는 일정만 구성하면 됩니다.  
 
-> [!NOTE]  
->  동일한 사이트에서 클라이언트 강제 설치와 **설치 플래그 지우기** 를 위한 사이트 유지 관리 작업을 모두 사용하도록 설정한 경우 하트비트 검색 일정을 **설치 플래그 지우기** 사이트 유지 관리 작업의 **클라이언트 다시 검색 기간** 보다 짧게 설정하십시오. 사이트 유지 관리 작업에 대한 자세한 내용은 [System Center Configuration Manager에 대한 유지 관리 작업](../../../../core/servers/manage/maintenance-tasks.md)을 참조하세요.  
 
-#### <a name="to-configure-the-heartbeat-discovery-schedule"></a>하트비트 검색 일정을 구성하려면  
-
-1.  Configuration Manager 콘솔에서 **관리** > **계층 구성**을 선택한 다음 **검색 방법**을 선택합니다.  
-
-2.  하트비트 검색을 구성할 사이트에 대해 **하트비트 검색**을 선택합니다.  
-
-3.  **홈** 탭의 **속성** 그룹에서 **속성**을 선택합니다.  
-
-4.  클라이언트에서 하트비트 DDR(검색 데이터 기록)을 제출할 빈도를 구성한 다음 **확인**을 선택하여 구성을 저장합니다.  
-
-##  <a name="BKMK_ConfigNetworkDisc"></a> 네트워크 검색 구성  
- 네트워크 검색을 구성하려면 다음 섹션의 정보를 참조하십시오.  
-
-###  <a name="BKMK_AboutConfigNetworkDisc"></a> 네트워크 검색 구성 정보  
- 네트워크 검색을 구성하기 전에 다음 사항을 알아 두어야 합니다.  
-
--   사용 가능한 네트워크 검색 수준  
-
--   사용 가능한 네트워크 검색 옵션  
-
--   네트워크에서 네트워크 검색 제한  
-
-자세한 내용은 [네트워크 검색 정보](../../../../core/servers/deploy/configure/about-discovery-methods.md#bkmk_aboutNetwork)를 참조하세요.  
-
- 다음 섹션에서는 네트워크 검색의 일반적인 구성에 대한 정보를 제공합니다. 이러한 구성 중에서 동일한 검색을 실행하는 동안 사용할 구성을 하나 이상 구성할 수 있습니다. 여러 구성을 사용하는 경우 검색 결과에 영향을 줄 수 있는 상호 작용에 대해 계획해야 합니다.  
-
- 예를 들어 특정 SNMP 커뮤니티 이름을 사용하는 모든 SNMP(Simple Network Management Protocol)를 검색할 수 있습니다. 그리고, 동일한 검색을 실행하는 동안 특정 서브넷에서 검색을 사용하지 않도록 설정할 수도 있습니다. 네트워크 검색을 실행하면 사용하지 않도록 설정된 서브넷에서는 지정된 커뮤니티 이름을 사용하는 SNMP 장치를 검색하지 않습니다.  
-
-####  <a name="BKMK_DetermineNetTopology"></a> 네트워크 토폴로지 결정  
- 토폴로지 전용 검색을 사용하면 네트워크를 매핑할 수 있습니다. 이 검색 유형은 잠재적 클라이언트는 검색하지 않습니다. 토폴로지 전용 네트워크 검색은 SNMP에 의존합니다.  
-
- 네트워크 토폴로지를 매핑할 경우 **네트워크 검색 속성** 대화 상자의 **SNMP** 탭에서 **최대 홉 수**를 구성해야 합니다. 단 몇 회의 홉만을 통해 검색 실행 시 사용되는 네트워크 대역폭을 제어할 수 있습니다. 네트워크에서 더 많은 항목을 검색함에 따라 홉 수를 증가시켜 네트워크 토폴로지에 대해 더 자세히 파악할 수 있습니다.  
-
- 네트워크 토폴로지를 파악한 후에는, 네트워크 검색에서 검색되는 네트워크 세그먼트를 제한하기 위해 관련 구성을 사용하는 동시에 네트워크 검색의 추가 속성을 구성하여 잠재적 클라이언트 및 해당 운영 체제를 검색할 수 있습니다.  
-
-####  <a name="BKMK_LimitBySubnet"></a> 서브넷을 사용하여 검색 제한  
- 검색 실행 시 특정 서브넷을 검색하도록 네트워크 검색을 구성할 수 있습니다. 기본적으로 네트워크 검색은 검색을 실행하는 서버의 서브넷을 검색합니다. 구성하고 사용하도록 설정하는 모든 추가 서브넷은 SNMP 및 DHCP(Dynamic Host Configuration Protocol) 검색 옵션에만 적용됩니다. 네트워크 검색에서 도메인을 검색할 때 이 작업은 서브넷 구성에 의해 제한되지 않습니다.  
-
- **네트워크 검색 속성** 대화 상자의 **서브넷** 탭에서 하나 이상의 서브넷을 지정한 경우 **사용** 으로 표시된 서브넷만 검색됩니다.  
-
- 사용하지 않도록 설정되는 서브넷은 검색에서 제외되고 다음 조건이 적용됩니다.  
-
--   SNMP 기반 쿼리는 서브넷에서 실행되지 않습니다.  
-
--   DHCP 서버는 서브넷에 배치된 리소스의 목록과 함께 응답하지 않습니다.  
-
--   도메인 기반 쿼리는 서브넷에 배치된 리소스를 검색할 수 있습니다.  
-
-####  <a name="BKMK_SearchByDomain"></a> 특정 도메인 검색  
- 검색 실행 시 특정 도메인 또는 도메인 집합을 검색하도록 네트워크 검색을 구성할 수 있습니다. 기본적으로 네트워크 검색은 검색을 실행하는 서버의 로컬 도메인을 검색합니다.  
-
- **네트워크 검색 속성** 대화 상자의 **도메인** 탭에서 하나 이상의 도메인을 지정한 경우 **사용** 으로 표시된 도메인만 검색됩니다.  
-
- 사용하지 않도록 설정되는 도메인은 검색에서 제외되고 다음 조건이 적용됩니다.  
-
--   네트워크 검색은 해당 도메인에 있는 도메인 컨트롤러를 쿼리하지 않습니다.  
-
--   SNMP 기반 쿼리는 도메인의 서브넷에서 계속 실행 가능합니다.  
-
--   DHCP 서버는 도메인에 배치된 리소스의 목록과 함께 계속 응답 가능합니다.  
-
-####  <a name="BKMK_LimitBySNMPname"></a> SNMP 커뮤니티 이름을 사용하여 검색 제한  
- 검색 실행 시 특정 SNMP 커뮤니티 또는 커뮤니티 집합을 검색하도록 네트워크 검색을 구성할 수 있습니다. 기본적으로 **public** 이라는 커뮤니티 이름이 구성되어 사용됩니다.  
-
- 네트워크 검색에서는 커뮤니티 이름을 사용하여 SNMP 장치인 라우터에 대한 액세스 권한을 얻습니다. 라우터는 네트워크 검색에 다른 라우터에 대한 정보 및 첫 번째 라우터에 연결된 서브넷에 대한 정보를 제공할 수 있습니다.  
+##  <a name="BKMK_ConfigHBDisc"></a>Konfigurowanie odnajdywania pulsu  
+ Domyślnie odnajdywanie pulsu jest włączane podczas instalowania lokacji głównej programu Configuration Manager. W związku z tym wystarczy tylko skonfigurować harmonogram jak często klienci wysyłania danych odnajdywania pulsu rekordów z punktem zarządzania, jeśli nie chcesz użyć wartości domyślnej co siedem dni.  
 
 > [!NOTE]  
->  SNMP 커뮤니티 이름은 암호와 비슷합니다. 네트워크 검색은 커뮤니티 이름이 지정된 SNMP 장치에서만 정보를 가져올 수 있습니다. 각 SNMP 장치는 고유 커뮤니티 이름을 보유할 수 있지만 여러 장치 간에 같은 커뮤니티 이름을 공유하는 경우도 흔히 있습니다. 또한 대부분의 SNMP 장치는 **public**이라는 기본 커뮤니티 이름을 갖습니다. 그러나 일부 조직에서는 보안 예방 조치로서 장치에서 **public** 커뮤니티 이름을 삭제합니다.  
+>  Jeśli zarówno wypychana instalacja klienta, jak i obsługi lokacji zadanie **Wyczyść flagę instalacji** są włączone w tej samej lokacji, ustawić harmonogram odnajdywania pulsu należy mniejszej niż **okres ponownego odnajdywania klienta** z **Wyczyść flagę instalacji** zadanie obsługi lokacji. Aby uzyskać więcej informacji na temat zadań konserwacji lokacji, zobacz [zadania konserwacji programu System Center Configuration Manager](../../../../core/servers/manage/maintenance-tasks.md).  
 
- **네트워크 검색 속성** 대화 상자의 **SNMP** 탭에 여러 SNMP 커뮤니티가 표시되는 경우 네트워크 검색은 표시된 순서에 따라 SNMP 커뮤니티를 검색합니다. 여러 이름을 사용하여 장치에 연결할 때 생성되는 네트워크 트래픽을 최소화하려면 가장 자주 사용되는 이름이 목록 맨 위에 있어야 합니다.  
+#### <a name="to-configure-the-heartbeat-discovery-schedule"></a>Aby skonfigurować harmonogram odnajdywania pulsu  
+
+1.  W konsoli programu Configuration Manager wybierz **administracji** > **Konfiguracja hierarchii**, a następnie wybierz pozycję **metod odnajdywania**.  
+
+2.  Wybierz **odnajdywania pulsu** dla witryny, w której chcesz skonfigurować odnajdywanie pulsu.  
+
+3.  Na **Home** karcie **właściwości** grupy, wybierz **właściwości**.  
+
+4.  Skonfiguruj częstotliwość, z jaką klienci przesłali rekordu danych odnajdywania pulsu, a następnie wybierz **OK** Aby zapisać konfigurację.  
+
+##  <a name="BKMK_ConfigNetworkDisc"></a>Konfigurowanie odnajdywania sieci  
+ Skorzystaj z informacji w poniższych sekcjach ułatwiają konfigurowanie odnajdywania sieci.  
+
+###  <a name="BKMK_AboutConfigNetworkDisc"></a>Informacje o konfigurowaniu odnajdywania sieci  
+ Przed rozpoczęciem konfigurowania odnajdywania sieci, należy zrozumieć następujące kwestie:  
+
+-   Dostępne poziomy odnajdywania sieci  
+
+-   Dostępne opcje odnajdywania sieci  
+
+-   Ograniczanie odnajdywania sieci w sieci  
+
+Aby uzyskać więcej informacji, zobacz [o odnajdywania sieci](../../../../core/servers/deploy/configure/about-discovery-methods.md#bkmk_aboutNetwork).  
+
+ Poniższe sekcje zawierają informacje o popularnych konfiguracjach odnajdywania sieci. Można skonfigurować jeden lub więcej z tych konfiguracji do użycia podczas odnajdowania tego samego uruchomienia. Jeśli używasz wielu konfiguracji należy zaplanować interakcje, które mogą wpłynąć na wyniki odnajdywania.  
+
+ Na przykład możesz chcieć odnaleźć wszystkie urządzenia zarządzania protokołu SNMP (Simple Network), używające określonej nazwy wspólnoty SNMP. Ponadto na tym samym uruchomieniu odnajdywania można wyłączyć odnajdywanie w określonej podsieci. Podczas odnajdywania odnajdywania sieci nie odnajdzie urządzeń SNMP o określonej nazwie Wspólnoty w podsieci, która została wyłączona.  
+
+####  <a name="BKMK_DetermineNetTopology"></a>Ustalenie topologii sieci  
+ Odnajdowanie tylko topologii służy do mapowania sieci. Ten rodzaj odnajdywania nie odnajduje potencjalnych klientów. Tylko topologii odnajdowania sieci korzysta z protokołu SNMP.  
+
+ W przypadku mapowania topologii sieci, należy skonfigurować **maksymalna liczba przeskoków** na **SNMP** karcie **odnajdowanie sieci: właściwości** okno dialogowe. Wystarczy kilka przeskoków, aby pomóc kontroli przepustowości sieci, który jest używany podczas odnajdywania. W miarę odnajdywania dalszych obszarów sieci, można zwiększyć liczbę przeskoków w celu uzyskania lepszej orientacji w topologii sieci.  
+
+ Po zidentyfikowaniu topologii sieci można skonfigurować dodatkowe właściwości odnajdywania sieci w celu odnalezienia potencjalnych klientów i ich systemy operacyjne, podczas używania dostępnych konfiguracji do ograniczania segmentów sieci, które odnajdywanie sieci może przeszukiwać.  
+
+####  <a name="BKMK_LimitBySubnet"></a>Ograniczanie wyszukiwań za pomocą podsieci  
+ Można skonfigurować odnajdywanie sieci w celu przeszukiwania określonych podsieci podczas odnajdywania. Domyślnie funkcja odnajdowania sieci przeszukuje podsieć serwera, na którym działa odnajdywanie. Dodatkowe podsieci, które można skonfigurować i włączyć mają zastosowanie tylko do protokołu SNMP protokołu dynamicznej konfiguracji hosta (DHCP) opcje wyszukiwania. Gdy funkcja odnajdowania sieci przeszukuje domeny, nie jest ograniczone konfiguracjami dotyczącymi podsieci.  
+
+ W przypadku określenia co najmniej jednej podsieci **podsieci** karcie **odnajdowanie sieci: właściwości** okno dialogowe, tylko podsieci oznaczone jako **włączone** są przeszukiwane.  
+
+ Po wyłączeniu podsieci jest ona wykluczana z odnajdywania i mają zastosowanie następujące warunki:  
+
+-   W podsieci nie są uruchamiane zapytania oparte na protokole SNMP.  
+
+-   Serwery DHCP nie odpowiadają wyświetleniem listy zasobów znajdujących się w podsieci.  
+
+-   Zapytania oparte na domenie umożliwia odnalezienie zasobów, które znajdują się w podsieci.  
+
+####  <a name="BKMK_SearchByDomain"></a>Przeszukiwanie określonej domeny  
+ Można skonfigurować odnajdywanie sieci w celu przeszukania określonej domeny lub zestawu domen podczas pracy odnajdywania. Domyślnie funkcja odnajdowania sieci przeszukuje lokalną domenę serwera, na którym działa odnajdywanie.  
+
+ Po określeniu jednej lub kilku domen na **domen** karcie **odnajdowanie sieci: właściwości** okno dialogowe, tylko domeny oznaczone jako **włączone** są przeszukiwane.  
+
+ Po wyłączeniu domeny jest wykluczana z odnajdywania i mają zastosowanie następujące warunki:  
+
+-   Odnajdywania sieci nie odpytuje kontrolerów domeny w tej domenie.  
+
+-   Zapytania oparte na protokole SNMP mogą nadal działać w podsieci w domenę.  
+
+-   Serwery DHCP nadal mogą odpowiedzieć listę zasobów znajdujących się w domenie.  
+
+####  <a name="BKMK_LimitBySNMPname"></a>Ograniczanie wyszukiwań za pomocą nazw wspólnot SNMP  
+ Możesz skonfigurować odnajdywanie sieci w celu przeszukania określonej Wspólnoty SNMP lub zestawów Wspólnot podczas pracy odnajdywania. Domyślnie nazwa Wspólnoty **publicznego** jest skonfigurowana do użycia.  
+
+ Funkcja odnajdowania sieci korzysta z nazw Wspólnot w celu uzyskania dostępu do routerów, które są urządzeniami SNMP. Router może udostępnić funkcji odnajdowania sieci informacje o innych routerach i podsieciach połączonych z pierwszym routerem.  
 
 > [!NOTE]  
->  SNMP 커뮤니티 이름을 사용하는 것 외에도 특정 SNMP 장치의 IP 주소 또는 확인 가능 이름을 지정할 수 있습니다. 이 작업은 **네트워크 검색 속성** 대화 상자의 **SNMP 장치** 탭에서 수행합니다.  
+>  Nazwy wspólnot SNMP przypominają hasła. Funkcja odnajdowania sieci informacji można uzyskać tylko z urządzenia SNMP, dla którego określono nazwę Wspólnoty. Każde urządzenie SNMP może mieć własną nazwę Wspólnoty, ale często jest udostępniany tej samej nazwy Wspólnoty korzysta kilka urządzeń. Ponadto większość urządzeń SNMP ma domyślną nazwę Wspólnoty **publicznego**. Niektóre organizacje usuwania **publicznego** nazwę Wspólnoty ze swoich urządzeń w celu zapewnienia bezpieczeństwa.  
 
-####  <a name="BKMK_SearchByDHCP"></a> 특정 DHCP 서버 검색  
- 검색 실행 시 특정 DHCP 서버 또는 여러 서버를 사용하여 DHCP 클라이언트를 검색하도록 네트워크 검색을 구성할 수 있습니다.  
-
- 네트워크 검색에서는 **네트워크 검색 속성** 대화 상자의 **DHCP** 탭에 지정한 각 DHCP 서버를 검색합니다. 검색을 실행하는 서버가 DHCP 서버에서 IP 주소를 임대할 경우 **사이트 서버에 사용하도록 구성된 DHCP 서버 포함** 확인란을 선택하면 해당 DHCP 서버를 검색하도록 구성할 수 있습니다.  
+ Jeśli kilka Wspólnot SNMP są pokazywane na **SNMP** karcie **odnajdowanie sieci: właściwości** okno dialogowe, funkcja odnajdowania sieci przeszukuje je w kolejności, w którym są wyświetlane. Aby zminimalizować ruch sieciowy, który jest generowany przez próby połączenia z urządzeniem przy użyciu różnych nazw, upewnij się, że najczęściej używane nazwy znajdowały się u góry listy.  
 
 > [!NOTE]  
->  네트워크 검색에 DHCP 서버를 성공적으로 구성하려면 해당 환경에서 IPv4를 지원해야 합니다. 네트워크 검색은 네이티브 IPv6 환경의 DHCP 서버를 사용하도록 구성할 수 없습니다.  
+>  Oprócz przy użyciu nazwy wspólnoty SNMP, możesz określić adres IP lub rozpoznawalną nazwę urządzenia SNMP. Możesz to zrobić na **urządzeń SNMP** karcie **odnajdowanie sieci: właściwości** okno dialogowe.  
 
-###  <a name="BKMK_HowToConfigNetDisc"></a> 네트워크 검색을 구성하는 방법  
- 다음 절차에 따라 먼저 네트워크 토폴로지만 검색한 다음, 하나 이상의 사용 가능한 네트워크 검색 옵션을 사용하여 네트워크 검색에서 잠재적 클라이언트를 검색하도록 구성합니다.  
+####  <a name="BKMK_SearchByDHCP"></a>Przeszukiwanie określonego serwera DHCP  
+ Można skonfigurować odnajdywania sieci do używania określonego serwera DHCP lub wiele serwerów do odnajdywania klientów DHCP podczas pracy odnajdywania.  
 
-##### <a name="to-determine-your-network-topology"></a>네트워크 토폴로지를 확인하려면  
+ Funkcja odnajdowania sieci przeszukuje każdy serwer DHCP, który określisz na **DHCP** karcie **odnajdowanie sieci: właściwości** okno dialogowe. Jeśli serwer, na którym działa odnajdywanie wydzierżawi swój adres IP od serwera DHCP, można skonfigurować odnajdywanie do przeszukania tego serwera DHCP, zaznaczając **Dołącz serwer DHCP, który serwer lokacji jest skonfigurowany do użycia** pole.  
 
-1.  Configuration Manager 콘솔에서 **관리** > **계층 구성**을 선택한 다음 **검색 방법**을 선택합니다.  
+> [!NOTE]  
+>  Aby pomyślnie skonfigurować serwer DHCP w ramach odnajdywania sieci, środowisko musi obsługiwać protokół IPv4. Nie można skonfigurować odnajdowania sieci w celu korzystania z serwera DHCP w macierzystym środowisku IPv6.  
 
-2.  네트워크 검색을 실행할 사이트에 대해 **네트워크 검색**을 선택합니다.  
+###  <a name="BKMK_HowToConfigNetDisc"></a>Jak skonfigurować odnajdywanie sieci  
+ Poniższe procedury umożliwiają najpierw wykrycie tylko topologii sieci, a następnie skonfigurowanie funkcji odnajdowania sieci w celu odnalezienia potencjalnych klientów przy użyciu co najmniej jeden z dostępnych opcji odnajdowania sieci.  
 
-3.  **홈** 탭의 **속성** 그룹에서 **속성**을 선택합니다.  
+##### <a name="to-determine-your-network-topology"></a>Ustalenie topologii sieci  
 
-    -   **일반** 탭에서 **네트워크 검색 사용** 확인란을 선택한 다음 **검색 유형** 옵션에서 **토폴로지**를 선택합니다.  
+1.  W konsoli programu Configuration Manager wybierz **administracji** > **Konfiguracja hierarchii**, a następnie wybierz pozycję **metod odnajdywania**.  
 
-    -   **서브넷** 탭에서 **로컬 서브넷 검색** 확인란을 선택합니다.  
+2.  Wybierz **odnajdywania sieci** dla lokacji, na którym chcesz uruchomić odnajdowanie sieci.  
+
+3.  Na **Home** karcie **właściwości** grupy, wybierz **właściwości**.  
+
+    -   Na **ogólne** karcie wyboru **Włącz odnajdowanie sieci** polu, a następnie wybierz pozycję **topologii** z **typ odnajdowania** opcje.  
+
+    -   Na **podsieci** karcie wyboru **przeszukiwania podsieci lokalnej** pole.  
 
         > [!TIP]  
-        >  네트워크를 구성하는 특정 서브넷을 알고 있는 경우 **로컬 서브넷 검색** 확인란을 선택 취소하고 **새로 만들기** 아이콘 ![새 아이콘](media/Disc_new_Icon.gif)을 사용하여 검색할 특정 서브넷을 추가할 수 있습니다. 대규모 네트워크의 경우 네트워크 대역폭의 사용을 최소화하기 위해 한 번에 1~2개의 서브넷만 검색하는 것이 좋습니다.  
+        >  Jeśli znasz określonych podsieci, które tworzą używaną sieć, można usunąć zaznaczenie **przeszukiwania podsieci lokalnej** polu i użyj **nowy** ikona ![nową ikonę](media/Disc_new_Icon.gif) można dodać podsieci do przeszukania. W przypadku dużych sieci warto często przeszukiwania tylko jednego lub dwóch podsieci naraz w celu zminimalizowania użycia przepustowości sieci.  
 
-    -   **도메인** 탭에서 **로컬 도메인 검색** 확인란을 선택합니다.  
+    -   Na **domen** karcie wyboru **Przeszukaj domenę lokalną** pole.  
 
-    -   **SNMP** 탭에서 **최대 홉 수** 드롭다운 목록을 사용하여 네트워크 검색이 토폴로지 매핑 작업에서 지원할 수 있는 라우터 홉 수를 지정합니다.  
+    -   Na **SNMP** użyj **maksymalna liczba przeskoków** listy rozwijanej, aby określić liczbę przeskoków odnajdowania sieci może wykonać podczas mapowania topologii.  
 
         > [!TIP]  
-        >  네트워크 토폴로지를 처음 매핑할 때 네트워크 대역폭 사용을 최소화하기 위해 라우터 홉을 적게 구성합니다.  
+        >  Przed pierwszym mapowaniem topologii sieci, należy skonfigurować tylko kilka przeskoków, aby zminimalizować wykorzystanie przepustowości sieci.  
 
-4.  **일정** 탭에서 **새로 만들기** 아이콘 ![새 아이콘](media/Disc_new_Icon.gif)을 선택하여 네트워크 검색 실행을 위한 일정을 설정합니다.  
-
-    > [!NOTE]  
-    >  각 네트워크 검색 일정에 서로 다른 검색 구성을 할당할 수 없습니다. 네트워크 검색이 실행될 때마다 현재의 검색 구성이 사용됩니다.  
-
-5.  **확인**을 선택하여 구성을 적용합니다. 이제 네트워크 검색은 예약된 시간에 실행됩니다.  
-
-##### <a name="to-configure-network-discovery"></a>네트워크 검색을 구성하려면  
-
-1.  Configuration Manager 콘솔에서 **관리** > **계층 구성**을 선택한 다음 **검색 방법**을 선택합니다.  
-
-2.  네트워크 검색을 실행할 사이트에 대해 **네트워크 검색**을 선택합니다.  
-
-3.  **홈** 탭의 **속성** 그룹에서 **속성**을 선택합니다.  
-
-4.  **일반** 탭에서 **네트워크 검색 사용** 확인란을 선택한 다음 **검색 유형** 옵션에서 실행할 검색 유형을 선택합니다.  
-
-5.  서브넷을 검색하도록 구성하려면 **서브넷** 탭을 선택하고 다음 옵션을 하나 이상 구성합니다.  
-
-    -   검색을 실행하는 컴퓨터의 로컬에 있는 서브넷에서 검색을 실행하려면 **로컬 서브넷 검색** 확인란을 선택합니다.  
-
-    -   특정 서브넷을 검색하려면 해당 서브넷이 **검색 할 서브넷**에 나열되고 **검색** 값은 **사용**이어야 합니다.  
-
-        1.  서브넷이 나열되어 있지 않으면 **새로 만들기** 아이콘 ![새 아이콘](media/Disc_new_Icon.gif)을 선택합니다. **새 서브넷 할당** 대화 상자에서 **서브넷** 및 **마스크** 정보를 입력한 다음 **확인**을 선택합니다. 기본적으로 새 서브넷은 검색에 대해 사용되도록 설정됩니다.  
-
-        2.  나열된 서브넷에 대해 **검색** 값을 변경하려면 해당 서브넷을 선택한 다음 **설정/해제** 아이콘을 선택하여 **사용 안 함** 및 **사용** 간에 값을 전환합니다.  
-
-6.  도메인을 검색하도록 구성하려면 **도메인** 탭을 선택하고 다음 옵션을 하나 이상 구성합니다.  
-
-    -   검색을 실행하는 컴퓨터의 도메인에서 검색을 실행하려면 **로컬 도메인 검색** 확인란을 선택합니다.  
-
-    -   특정 도메인을 검색하려면 도메인이 **도메인**에 나열되어 있고 **검색** 값은 **사용**이어야 합니다.  
-
-        1.  도메인이 나열되어 있지 않으면 **새로 만들기** 아이콘 ![새 아이콘](media/Disc_new_Icon.gif)을 선택합니다. **도메인 속성** 대화 상자에 **도메인** 정보를 입력한 다음 **확인**을 선택합니다. 기본적으로 새 도메인은 검색에 대해 사용되도록 설정됩니다.  
-
-        2.  나열된 도메인에 대해 **검색** 값을 변경하려면 해당 도메인을 선택한 다음 **설정/해제** 아이콘을 선택하여 **사용 안 함** 및 **사용** 간에 값을 전환합니다.  
-
-7.  SNMP 장치에 대한 특정 SNMP 커뮤니티 이름을 검색하도록 구성하려면 **SNMP** 탭을 선택하고 다음 옵션을 하나 이상 구성합니다.  
-
-    -   SNMP 커뮤니티 이름을 **SNMP 커뮤니티 이름** 목록에 추가하려면 **새로 만들기** 아이콘 ![새 아이콘](media/Disc_new_Icon.gif)을 선택합니다. **새 SNMP 커뮤니티 이름** 대화 상자에서 SNMP 커뮤니티 **이름**을 지정한 다음 **확인**을 선택합니다.  
-
-    -   SNMP 커뮤니티 이름을 제거하려면 해당 커뮤니티 이름을 선택한 다음 **삭제** 아이콘 ![삭제 아이콘](media/Disc_delete_Icon.gif)을 선택합니다.  
-
-    -   SNMP 커뮤니티 이름의 검색 순서를 조정하려면 커뮤니티 이름을 선택한 다음 **위로 항목 이동** 아이콘 ![위로 이동 아이콘](media/Disc_moveUp_Icon.gif) 또는 **아래로 항목 이동** 아이콘 ![아래로 이동 아이콘](media/Disc_moveDown_Icon.gif)을 선택합니다. 검색이 실행되면 커뮤니티 이름은 위쪽에서 아래쪽 순서로 검색됩니다. 다음 사항에 유의하세요.
-
-        > [!NOTE]  
-        >  네트워크 검색에서는 SNMP 커뮤니티 이름을 사용하여 SNMP 장치인 라우터에 대한 액세스 권한을 얻습니다. 라우터는 네트워크 검색에 다른 라우터에 대한 정보 및 첫 번째 라우터에 연결된 서브넷에 대한 정보를 알릴 수 있습니다.  
-
-        -   SNMP 커뮤니티 이름은 암호와 비슷합니다.  
-
-        -   네트워크 검색은 커뮤니티 이름이 지정된 SNMP 장치에서만 정보를 가져올 수 있습니다.  
-
-        -   각 SNMP 장치는 고유 커뮤니티 이름을 보유할 수 있지만 여러 장치 간에 같은 커뮤니티 이름을 공유하는 경우도 흔히 있습니다.  
-
-        -   대부분의 SNMP 장치는 **public**이라는 기본 커뮤니티 이름을 갖습니다. 이 이름은 다른 커뮤니티 이름을 모르는 경우 사용할 수 있습니다. 그러나 일부 조직에서는 보안 예방 조치로서 장치에서 **public** 커뮤니티 이름을 삭제합니다.  
-
-8.  SNMP 검색에 사용될 최대 라우터 홉 수를 구성하려면 **SNMP** 탭을 선택한 후 **최대 홉 수** 드롭다운 목록에서 홉 수를 선택합니다.  
-
-9. SNMP 장치를 구성하려면 **SNMP 장치** 탭을 선택합니다. 장치가 여기에 나열되어 있지 않은 경우 **새로 만들기** 아이콘 ![새 아이콘](media/Disc_new_Icon.gif)을 선택합니다. **새 SNMP 장치** 대화 상자에서 SNMP 장치의 IP 주소 또는 장치 이름을 지정한 다음 **확인**을 선택합니다.  
+4.  Na **harmonogram** , wybierz pozycję **nowy** ikona ![nową ikonę](media/Disc_new_Icon.gif) Aby ustawić harmonogram uruchamiania funkcji odnajdowania sieci.  
 
     > [!NOTE]  
-    >  장치 이름을 지정하는 경우 Configuration Manager에서 NetBIOS 이름을 IP 주소로 확인할 수 있어야 합니다.  
+    >  Nie można przypisać różnych konfiguracji odnajdywania do oddzielnych harmonogramów funkcji odnajdowania sieci. Każdym uruchomieniu funkcja odnajdowania sieci korzysta z bieżącej konfiguracji odnajdywania.  
 
-10. 검색에서 DHCP 클라이언트에 대한 특정 DHCP 서버를 쿼리하도록 구성하려면 **DHCP** 탭을 선택하고 다음 옵션을 하나 이상 구성합니다.  
+5.  Wybierz **OK** aby zaakceptować konfiguracje. Funkcja odnajdywania sieci działa w zaplanowanym terminie.  
 
-    -   검색을 실행하는 컴퓨터에서 DHCP 서버를 쿼리하려면 **항상 사이트 서버의 DHCP 서버 사용** 확인란을 선택합니다.  
+##### <a name="to-configure-network-discovery"></a>Aby skonfigurować odnajdywanie sieci  
+
+1.  W konsoli programu Configuration Manager wybierz **administracji** > **Konfiguracja hierarchii**, a następnie wybierz pozycję **metod odnajdywania**.  
+
+2.  Wybierz **odnajdywania sieci** dla lokacji, na którym chcesz uruchomić odnajdowanie sieci.  
+
+3.  Na **Home** karcie **właściwości** grupy, wybierz **właściwości**.  
+
+4.  Na **ogólne** karcie wyboru **Włącz odnajdowanie sieci** , a następnie wybierz typ odnajdywania, która ma zostać uruchomione z **typ odnajdowania** opcje.  
+
+5.  Aby skonfigurować odnajdywanie w celu przeszukiwania podsieci, wybierz **podsieci** karcie, a następnie skonfiguruj jedną lub więcej z następujących opcji:  
+
+    -   Aby uruchomić odnajdywanie w podsieciach lokalnych dla komputera, na którym działa odnajdywanie, zaznacz **przeszukiwania podsieci lokalnej** pole.  
+
+    -   Aby przeszukać określoną podsieć, upewnij się, że podsieci jest wymieniony w **podsieci do przeszukania** i ma **wyszukiwania** wartość **włączone**:  
+
+        1.  Jeżeli podsieć nie jest widoczna na liście, wybierz **nowy** ikona ![nową ikonę](media/Disc_new_Icon.gif). W **nowe przypisanie podsieci** okna dialogowego wprowadź **podsieci** i **maski** informacje, a następnie wybierz pozycję **OK**. Domyślnie nowa podsieć jest włączona do przeszukiwania.  
+
+        2.  Aby zmienić **wyszukiwania** wartość dla podsieci widocznej na liście, wybierz podsieć, a następnie wybierz **Przełącz** ikonę, aby przełączyć między wartością **wyłączone** i **włączone**.  
+
+6.  Aby skonfigurować odnajdywanie w celu przeszukiwania domen, należy wybrać **domen** karcie, a następnie skonfiguruj jedną lub więcej z następujących opcji:  
+
+    -   Aby uruchomić odnajdywanie w domenie komputera, na którym działa odnajdowanie, zaznacz **Przeszukaj domenę lokalną** pole.  
+
+    -   Aby przeszukać określoną domenę, upewnij się, że domeny jest wymieniony w **domen** i ma **wyszukiwania** wartość **włączone**:  
+
+        1.  Jeśli domena nie jest widoczna na liście, wybierz **nowy** ikona ![nową ikonę](media/Disc_new_Icon.gif). W **właściwości domeny** okna dialogowego wprowadź **domeny** informacje, a następnie wybierz pozycję **OK**. Domyślnie nowa domena jest włączona do przeszukiwania.  
+
+        2.  Aby zmienić **wyszukiwania** wartość dla domeny widocznej na liście, wybierz domenę, a następnie wybierz pozycję **Przełącz** ikonę, aby przełączyć między wartością **wyłączone** i **włączone**.  
+
+7.  Aby skonfigurować odnajdywanie w celu przeszukiwania nazw wspólnot SNMP dla urządzeń SNMP, wybierz **SNMP** karcie, a następnie skonfiguruj jedną lub więcej z następujących opcji:  
+
+    -   Aby dodać nazwę wspólnoty SNMP do listy **nazw wspólnot SNMP**, wybierz **nowy** ikona ![nową ikonę](media/Disc_new_Icon.gif). W **Nowa nazwa wspólnoty SNMP** oknie dialogowym Określ **nazwa** Wspólnoty SNMP, a następnie wybierz pozycję **OK**.  
+
+    -   Aby usunąć nazwę wspólnoty SNMP, wybierz nazwę Wspólnoty, a następnie wybierz pozycję **usunąć** ikona ![ikonę Usuń](media/Disc_delete_Icon.gif).  
+
+    -   Aby dostosować kolejność przeszukiwania nazw wspólnot SNMP, wybierz nazwę Wspólnoty, a następnie wybierz pozycję **Przenieś element w górę** ikona ![Przenieś ikonę](media/Disc_moveUp_Icon.gif) lub **Przenieś element w dół** ikona ![Przenieś ikonę](media/Disc_moveDown_Icon.gif). Po uruchomieniu odnajdywania nazwy Wspólnot są przeszukiwane w kolejności od góry do dołu. Następujące kwestie należy wziąć pod uwagę.
 
         > [!NOTE]  
-        >  이 옵션을 사용하려면 서버는 DHCP 서버에서 IP 주소를 임대해야 하고 정적 IP 주소는 사용할 수 없습니다.  
+        >  Funkcja odnajdowania sieci korzysta z nazw wspólnot SNMP do uzyskania dostępu do routerów, które są urządzeniami SNMP. Router może przekazać funkcji odnajdowania sieci o innych routerach i podsieciach połączonych z pierwszym routerem.  
 
-    -   특정 DHCP 서버를 쿼리하려면 **새로 만들기** 아이콘 ![새 아이콘](media/Disc_new_Icon.gif)을 선택합니다. **새 DHCP 서버** 대화 상자에서 DHCP 서버의 IP 주소 또는 서버 이름을 지정한 다음 **확인**을 선택합니다.  
+        -   Nazwy wspólnot SNMP przypominają hasła.  
 
-        > [!NOTE]  
-        >  서버 이름을 지정하는 경우 Configuration Manager에서 NetBIOS 이름을 IP 주소로 확인할 수 있어야 합니다.  
+        -   Funkcja odnajdowania sieci informacji można uzyskać tylko z urządzenia SNMP, dla którego określono nazwę Wspólnoty.  
 
-11. 검색이 실행되는 경우를 구성하려면 **일정** 탭을 선택한 다음 **새로 만들기** 아이콘 ![새 아이콘](media/Disc_new_Icon.gif)을 선택하여 네트워크 검색을 실행하는 일정을 설정합니다.  
+        -   Każde urządzenie SNMP może mieć własną nazwę Wspólnoty, ale często jest udostępniany tej samej nazwy Wspólnoty korzysta kilka urządzeń.  
 
-     여러 반복 일정 및 반복 없는 여러 일정을 구성할 수 있습니다.  
+        -   Większość urządzeń SNMP ma domyślną nazwę Wspólnoty **publicznego**. Można go używać, jeśli nie znasz inne nazwy Wspólnot. Jednak niektóre organizacje usunąć **publicznego** nazwę Wspólnoty ze swoich urządzeń w celu zapewnienia bezpieczeństwa.  
+
+8.  Aby skonfigurować maksymalną liczbę przeskoków między routerami używany przez wyszukiwania SNMP, wybierz **SNMP** , a następnie wybierz liczbę przeskoków z **maksymalna liczba przeskoków** listy rozwijanej.  
+
+9. Aby skonfigurować urządzenia SNMP, wybierz **urządzeń SNMP** kartę. Jeśli urządzenie nie znajduje się tam, wybierz **nowy** ikona ![nową ikonę](media/Disc_new_Icon.gif). W **nowe urządzenie SNMP** okno dialogowe, określ adres IP lub urządzenie nazwę urządzenia SNMP, a następnie wybierz **OK**.  
 
     > [!NOTE]  
-    >  **일정** 탭에 여러 일정이 동시에 표시되면 구성된 대로 일정에 지정된 시간에 모든 일정에 의해 네트워크 검색이 실행됩니다. 이는 반복 일정에도 해당됩니다.  
+    >  Określenia nazwy urządzenia, programu Configuration Manager musi być w stanie rozpoznać nazwę NetBIOS na adres IP.  
 
-12. **확인**을 선택하여 구성을 저장합니다.  
+10. Aby skonfigurować odnajdywanie w celu odpytywania określonych serwerów DHCP dla klientów DHCP, wybierz **DHCP** karcie, a następnie skonfiguruj jedną lub więcej z następujących opcji:  
 
-###  <a name="BKMK_HowToVerifyNetDisc"></a> 네트워크 검색이 완료되었는지 확인하는 방법  
- 네트워크 검색을 완료하는 데 필요한 시간은 여러 요소에 따라 달라질 수 있습니다. 이러한 요소는 다음과 같습니다.  
+    -   Aby odpytać serwer DHCP na komputerze, na którym działa odnajdowanie, zaznacz **zawsze używaj serwer DHCP serwera lokacji** pole.  
 
--   네트워크의 크기  
+        > [!NOTE]  
+        >  Aby użyć tej opcji, serwer musi wydzierżawić swój adres IP od serwera DHCP i nie może używać statycznego adresu IP.  
 
--   네트워크의 토폴로지  
+    -   Aby odpytać określony serwer DHCP, należy wybrać **nowy** ikona ![nową ikonę](media/Disc_new_Icon.gif). W **nowy serwer DHCP** okno dialogowe, określ adres IP lub serwera nazwę serwera DHCP, a następnie wybierz **OK**.  
 
--   네트워크 내 라우터 검색을 위해 구성된 최대 홉 수  
+        > [!NOTE]  
+        >  Jeśli określono nazwę serwera, programu Configuration Manager musi być w stanie rozpoznać nazwę NetBIOS na adres IP.  
 
--   실행 중인 검색 유형  
+11. Aby skonfigurować czas uruchamiania wyszukiwania, wybierz **harmonogram** karcie, a następnie wybierz pozycję **nowy** ikona ![nową ikonę](media/Disc_new_Icon.gif) Aby ustawić harmonogram uruchamiania funkcji odnajdowania sieci.  
 
-네트워크 검색에서는 검색 완료를 알리는 메시지를 생성하지 않으므로 검색 완료를 확인하려면 다음 절차를 따라야 합니다.  
+     Można skonfigurować kilka harmonogramów cyklicznych i kilka harmonogramów bez cyklu.  
 
-##### <a name="to-verify-that-network-discovery-has-finished"></a>네트워크 검색 완료를 확인하려면  
+    > [!NOTE]  
+    >  Jeśli wiele harmonogramów są pokazywane na **harmonogram** kartę w tym samym czasie wszystkich harmonogramów odnajdowania sieci działa dla zgodnie z konfiguracją o godzinie określonej w harmonogramie. Dotyczy to również harmonogramów cyklicznych.  
 
-1.  Configuration Manager 콘솔에서 **모니터링**을 선택합니다.  
+12. Wybierz **OK** Aby zapisać konfiguracje.  
 
-2.  **모니터링** 작업 영역에서 **시스템 상태**를 확장한 다음 **상태 메시지 쿼리**를 선택합니다.  
+###  <a name="BKMK_HowToVerifyNetDisc"></a>Jak sprawdzić, czy odnajdywanie sieci zostało zakończone  
+ Czas odnajdowania sieci wymaga, aby zakończyć zależy od różnych czynników. Czynniki te mogą obejmować co najmniej jeden z następujących czynności:  
 
-3.  **모든 상태 메시지**를 선택합니다.  
+-   Rozmiar sieci  
 
-4.  **홈** 탭의 **상태 메시지 쿼리** 그룹에서 **메시지 표시**를 선택합니다.  
+-   Topologia sieci  
 
-5.  **날짜 및 시간 선택** 드롭다운 목록에서 검색이 시작된 후 경과한 시간을 포함하는 값을 선택한 다음 **확인**을 선택하여 **Configuration Manager 상태 메시지 뷰어**를 엽니다.  
+-   Maksymalna liczba przeskoków skonfigurowanych do znalezienia routerów w sieci  
+
+-   Typ odnajdywania, które zostało uruchomione  
+
+Ponieważ funkcja odnajdowania sieci nie tworzy komunikatów powiadamiających o zakończeniu odnajdowania, służy poniższej procedury można zweryfikować, czy odnajdowanie zostało zakończone.  
+
+##### <a name="to-verify-that-network-discovery-has-finished"></a>Aby sprawdzić, czy odnajdywanie sieci zostało zakończone  
+
+1.  W konsoli programu Configuration Manager wybierz **monitorowanie**.  
+
+2.  W **monitorowanie** obszaru roboczego, rozwiń węzeł **stan systemu**, a następnie wybierz pozycję **kwerendy komunikatów o stanie**.  
+
+3.  Wybierz **wszystkie komunikaty o stanie**.  
+
+4.  Na **Home** karcie **kwerendy komunikatów o stanie** grupy, wybierz **Pokaż komunikaty**.  
+
+5.  W **wybierz datę i godzinę** listy rozwijanej, wybierz wartość zawierającą czas przed rozpoczęto odnajdowanie, a następnie wybierz **OK** otworzyć **Podgląd komunikatów o stanie Menedżera konfiguracji**.  
 
     > [!TIP]  
-    >  **날짜 및 시간 지정** 옵션을 사용하여 검색을 실행한 특정 날짜와 시간을 선택할 수도 있습니다. 이 옵션은 특정 날짜에 네트워크 검색을 실행했으며 해당 날짜의 메시지만 검색하려는 경우에 유용합니다.  
+    >  Można również użyć **Określ datę i godzinę** opcję, aby wybrać daną datę i godzinę uruchomienia odnajdowania. Ta opcja jest przydatne w przypadku uruchomienia odnajdowania sieci danego dnia i chcesz pobierać wiadomości z tylko tej daty.  
 
-6.  네트워크 검색을 마쳤는지 확인하려면 다음 정보가 있는 상태 메시지를 검색합니다.  
+6.  Aby sprawdzić, czy odnajdywanie sieci zostało zakończone, wyszukaj komunikat o stanie zawierający następujące informacje:  
 
-    -   메시지 ID: **502**  
+    -   Identyfikator komunikatu: **502**  
 
-    -   구성 요소: **SMS_NETWORK_DISCOVERY**  
+    -   Składnik: **SMS_NETWORK_DISCOVERY**  
 
-    -   설명: **이 구성 요소가 중지되었습니다.**  
+    -   Opis: **Ten składnik został zatrzymany**  
 
-    이 상태 메시지가 나타나지 않으면 네트워크 검색을 마치지 않은 것입니다.  
+    Jeśli ten komunikat o stanie nie jest obecny, funkcja odnajdywania sieci nie zostało ukończone.  
 
-7.  네트워크 검색이 시작었는지 확인하려면 다음 정보가 있는 상태 메시지를 검색합니다.  
+7.  Aby sprawdzić, gdy uruchomienie funkcji odnajdowania sieci, wyszukaj komunikat o stanie zawierający następujące informacje:  
 
-    -   메시지 ID: **500**  
+    -   Identyfikator komunikatu: **500**  
 
-    -   구성 요소: **SMS_NETWORK_DISCOVERY**  
+    -   Składnik: **SMS_NETWORK_DISCOVERY**  
 
-    -   설명: **이 구성 요소가 시작되었습니다.**  
+    -   Opis: **Ten składnik został rozpoczęty**  
 
-    이 정보를 통해 네트워크 검색이 시작되었음을 확인할 수 있습니다. 이 정보가 나타나지 않는 경우 네트워크 검색 일정을 다시 지정하십시오.  
-
+    Te informacje oznaczają uruchomienie funkcji odnajdowania sieci. Jeśli te informacje nie jest obecny, harmonogram odnajdywania sieci.  

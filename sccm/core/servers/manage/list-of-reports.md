@@ -1,794 +1,791 @@
 ---
-title: "보고서 목록 | Microsoft 문서"
-description: "Configuration Manager와 함께 제공되는 보고서 목록을 검토합니다. 보고서는 다양한 범주에서 표시됩니다."
+title: "Lista raportów | Dokumentacja firmy Microsoft"
+description: "Przejrzyj listę raportów dostępnych w programie Configuration Manager. Należą one do różnych kategorii."
 ms.custom: na
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b7332ed3-8003-454b-bb12-1fdf8721425c
-caps.latest.revision: 10
-caps.handback.revision: 0
+caps.latest.revision: "10"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
 ms.openlocfilehash: 1480c38a6a3afef76b2e8759eaafd47d28f978f4
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 08/07/2017
 ---
-# <a name="list-of-reports-in-system-center-configuration-manager"></a>System Center Configuration Manager의 보고서 목록
+# <a name="list-of-reports-in-system-center-configuration-manager"></a>Lista raportów w programie System Center Configuration Manager.
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*Dotyczy: Program System Center Configuration Manager (Current Branch)*
 
-System Center Configuration Manager에서는 수행하려는 대부분의 보고 작업에 사용할 수 있는 다양한 보고서가 기본적으로 제공됩니다. 이러한 보고서에서 SQL 문을 사용하여 보고서를 직접 작성할 수도 있습니다. 이 항목의 정보를 참조하여 Configuration Manager에서 제공되는 보고서에 대해 알아볼 수 있습니다.  
+Wiele wbudowanych raportów są dostarczane z System Center Configuration Manager, obejmujące wiele zadań raportowania, które można wykonywać. W tych raportach można również używać instrukcji SQL, co pozwoli na tworzenie własnych raportów. Skorzystaj z informacji w tym temacie, aby dowiedzieć się więcej na temat raportów dostępnych w programie Configuration Manager.  
 
-## <a name="list-of-built-in-configuration-manager-reports"></a>기본 제공 Configuration Manager 보고서 목록  
- Configuration Manager에는 다음 보고서가 포함되어 있습니다. 보고서는 다양한 범주에서 표시됩니다.  
+## <a name="list-of-built-in-configuration-manager-reports"></a>Lista wbudowanych raportów programu Configuration Manager  
+ Następujące raporty są uwzględnione w programie Configuration Manager. Należą one do różnych kategorii.  
 
-### <a name="administrative-security"></a>관리 보안  
- **관리 보안** 범주에는 다음과 같은 보고서가 나열됩니다.  
+### <a name="administrative-security"></a>Zabezpieczenia administracyjne  
+ Następujące raporty są wyświetlane w obszarze **zabezpieczenia administracyjne** kategorii.  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**관리 활동 로그**|관리자, 보안 역할, 보안 범위 및 컬렉션에 대해 관리자가 수행한 변경 내용의 레코드가 표시됩니다.|  
-|**관리자 보안 할당**|관리자, 관리자와 연결된 보안 역할 및 각 사용자의 개별 보안 역할과 연결된 보안 범위가 표시됩니다.|  
-|**단일 보안 범위에서 보안되는 개체**|지정된 보안 범위를 통해 보안되며 해당 보안 범위에만 할당되는 개체가 표시됩니다. 둘 이상의 보안 범위에 연결된 개체는 이 보고서에 표시되지 않습니다.|  
-|**특정 또는 여러 Configuration Manager 개체에 대한 보안**|보안 개체, 해당 개체와 연결된 보안 범위 및 개체에 대한 권한을 가지는 관리자가 표시됩니다.|  
-|**보안 역할 요약**|보안 역할 및 각 역할과 연결된 Configuration Manager 관리자가 표시됩니다.|  
-|**보안 범위 요약**|보안 범위 및 각 범위와 연결된 Configuration Manager 관리자와 보안 그룹이 표시됩니다.|  
+|**Dziennik działań administracyjnych**|Przedstawia rekord zmian administracyjnych wprowadzonych w przypadku użytkowników administracyjnych, ról zabezpieczeń, zakresów zabezpieczeń oraz kolekcji.|  
+|**Przydziały zabezpieczeń użytkowników administracyjnych**|Przedstawia dane użytkowników administracyjnych, skojarzone z nimi role zabezpieczeń oraz zakresy zabezpieczeń skojarzone z każdą rolą zabezpieczeń dla każdego użytkownika.|  
+|**Obiekty zabezpieczane w ramach pojedynczego zakresu zabezpieczeń**|Przedstawia obiekty zabezpieczane w ramach określonego zakresu zabezpieczeń i przypisane tylko do tego zakresu zabezpieczeń. Ten raport nie zawiera obiektów skojarzonych z więcej niż jednym zakresem zabezpieczeń.|  
+|**Zabezpieczenia określonych lub wielu obiektów programu Configuration Manager**|Przedstawia obiekty możliwe do zabezpieczenia, zakresy zabezpieczeń skojarzone z obiektami i użytkowników administracyjnych z uprawnieniami do obiektów.|  
+|**Podsumowanie ról zabezpieczeń**|Wyświetla role zabezpieczeń i administratorów programu Configuration Manager skojarzonych z poszczególnymi rolami.|  
+|**Podsumowanie zakresów zabezpieczeń**|Przedstawia zakresy zabezpieczeń oraz użytkowników administracyjnych programu Configuration Manager i grupy zabezpieczeń skojarzonych z każdym zakresem.|  
 
-### <a name="alerts"></a>경고  
+### <a name="alerts"></a>Alerty  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**경고 성과 기록표**|지정된 시작 날짜와 완료 날짜 사이에 생성되었으며 연기된 모든 경고의 요약이 표시됩니다.|  
-|**가장 자주 생성된 경고**|지정된 기능 영역에 대해 현재 날짜부터 지정된 날짜까지 가장 자주 생성된 경고의 요약이 표시됩니다.|  
+|**Ocena alertu**|Przedstawia podsumowanie wszystkich przełożonych alertów, które zostały wygenerowane między określonymi datami rozpoczęcia i zakończenia.|  
+|**Alerty generowane najczęściej**|Przedstawia podsumowanie alertów, które były najczęściej generowane w okresie od określonej daty do daty bieżącej dla określonego obszaru funkcji.|  
 
-### <a name="asset-intelligence"></a>Asset Intelligence  
+### <a name="asset-intelligence"></a>Analiza zasobów  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**하드웨어 01A - 특정 컬렉션에서 컴퓨터의 요약 정보**|지정한 컬렉션에 있는 컴퓨터의 Asset Intelligence 요약 보기가 표시됩니다.|  
-|**하드웨어 03A - 기본 컴퓨터 사용자**|사용자 및 해당 사용자가 기본 사용자인 컴퓨터의 수가 표시됩니다.|  
-|**하드웨어 03B - 특정 기본 콘솔 사용자의 컴퓨터**|지정한 사용자가 기본 콘솔 사용자인 모든 컴퓨터가 표시됩니다.|  
-|**하드웨어 04A - 여러 사용자를 포함하는 컴퓨터(공유됨)**|단일 사용자의 콘솔 로그인 시간 비율이 66%를 초과하여 기본 사용자가 없는 컴퓨터가 표시됩니다.|  
-|**하드웨어 05A - 특정 컴퓨터의 콘솔 사용자**|지정한 컴퓨터의 모든 콘솔 사용자가 표시됩니다.|  
-|**하드웨어 06A - 콘솔 사용자를 확인할 수 없는 컴퓨터**|관리자가 보안 로깅을 설정해야 하는 컴퓨터를 식별하는 데 도움이 되는 정보가 표시됩니다.|  
-|**하드웨어 07A - 제조업체별 USB 장치**|제조업체별로 그룹화된 USB 장치가 표시됩니다.|  
-|**하드웨어 07B - 제조업체 및 설명별 USB 장치**|제조업체와 설명별로 그룹화된 USB 장치가 표시됩니다.|  
-|**하드웨어 07C - 특정 USB 장치를 포함하는 컴퓨터**|지정한 USB 장치를 포함하는 모든 컴퓨터가 표시됩니다.|  
-|**하드웨어 07D - 특정 컴퓨터의 USB 장치**|지정한 컴퓨터의 모든 USB 장치가 표시됩니다.|  
-|**하드웨어 08A - 소프트웨어 업그레이드 준비가 되지 않은 하드웨어**|최소 하드웨어 요구 사항을 충족하지 않는 하드웨어가 표시됩니다.|  
-|**하드웨어 09A - 컴퓨터 검색**|컴퓨터 이름, Configuration Manager 사이트, 도메인, 상위 콘솔 사용자, 운영 체제, 제조업체 또는 모델에 대한 키워드 필터와 일치하는 컴퓨터의 자산 관리자 요약이 표시됩니다.|  
-|**하드웨어 10A - 지정된 기간에 변경된 지정된 컬렉션의 컴퓨터**|지정된 기간 동안 하드웨어 클래스가 변경된 지정한 컬렉션 내의 컴퓨터 목록이 표시됩니다.|  
-|**하드웨어 10B - 지정된 기간에 지정된 컴퓨터의 변경**|지정된 기간 내에 지정한 컴퓨터에서 변경된 클래스가 표시됩니다.|  
-|**라이선스 01A - Microsoft 라이선스 계정에 대한 Microsoft Volume License 원장**|Microsoft Volume Licensing 프로그램에서 제공되는 모든 Microsoft 소프트웨어 타이틀의 인벤토리가 표시됩니다.|  
-|**라이선스 01B - 판매 채널별 Microsoft Volume License 원장 항목**|인벤토리에 포함된 Microsoft Volume License 소프트웨어에 대한 판매 채널이 식별되어 표시됩니다.|  
-|**라이선스 01C - 특정 Microsoft Volume License 원장 항목 및 판매 채널을 포함하는 컴퓨터**|Microsoft Volume License 원장에서 지정된 항목을 포함하는 컴퓨터가 식별되어 표시됩니다.|  
-|**라이선스 01D - 특정 컴퓨터의 Microsoft Volume License 원장 제품**|지정된 컴퓨터의 모든 Microsoft Volume License 원장 항목이 식별되어 표시됩니다.|  
-|**라이선스 02A - 시간 범위 내에서 만료가 가까운 라이선스 수**|지정된 시간 범위 내에서 만료가 가까운 라이선스 수가 표시됩니다. 소프트웨어 라이선스 서비스를 통해 라이선스가 관리되는 제품이 표시됩니다.|  
-|**라이선스 02B - 라이선스 만료가 가까운 컴퓨터**|라이선스 만료가 가까운 지정된 컴퓨터가 표시됩니다.|  
-|**라이선스 02C - 특정 컴퓨터의 라이선스 정보**|소프트웨어 라이선스 서비스를 통해 라이선스가 관리되는 지정된 컴퓨터의 제품이 표시됩니다.|  
-|**라이선스 03A - 라이선스 상태별 라이선스 수**|소프트웨어 라이선스 서비스를 통해 라이선스가 관리되는 제품이 라이선스 상태별로 표시됩니다.|  
-|**라이선스 03B - 특정 라이선스 상태의 컴퓨터**|소프트웨어 라이선스 서비스를 통해 라이선스가 관리되는 지정된 라이선스 상태의 제품이 표시됩니다.|  
-|**라이선스 04A - 사용 허가된 소프트웨어에서 관리하는 제품 수**|소프트웨어 라이선스 서비스를 통해 라이선스가 관리되는 제품의 수가 표시됩니다.|  
-|**라이선스 04B - 소프트웨어 라이선스 서비스에서 관리하는 특정 제품을 포함하는 컴퓨터**|소프트웨어 라이선스를 통해 관리되며 지정된 제품을 포함하는 컴퓨터가 표시됩니다.|  
-|**라이선스 05A - 키 관리 서비스를 제공하는 컴퓨터**|키 관리 서버 역할을 하는 컴퓨터가 표시됩니다.|  
-|**라이선스 06A - 프로세서별 사용 허가된 제품의 프로세서 수**|프로세서별 라이선스를 지원하는 Microsoft 제품을 사용 중인 컴퓨터의 프로세서 수가 표시됩니다.|  
-|**라이선스 06B - 프로세서별 라이선스를 지원하는 특정 제품의 컴퓨터**|프로세서별 라이선스를 지원하는 지정된 Microsoft 제품이 설치되어 있는 컴퓨터의 목록이 표시됩니다.|  
-|**라이선스 14A - Microsoft Volume Licensing 조정 보고서**|Microsoft Volume License 계약을 통해 구매한 소프트웨어 라이선스에 대한 조정 및 실제 인벤토리 수가 표시됩니다.|  
-|**라이선스 14B - MVLS에서 찾을 수 없는 Microsoft 소프트웨어 인벤토리 목록**|이 보고서에는 Microsoft Volume License 계약에서 찾을 수 없는 Microsoft 소프트웨어 타이틀이 표시됩니다.|  
-|**라이선스 15A - 일반 라이선스 조정 보고서**|구매한 일반 소프트웨어 라이선스에 대한 조정 및 실제 인벤토리 수가 표시됩니다.|  
-|**라이선스 15B - 컴퓨터별 일반 라이선스 조정 보고서**|지정된 버전의 사용이 허가된 제품을 설치한 컴퓨터가 표시됩니다.|  
-|**소프트웨어 01A - 특정 컬렉션에서 설치된 소프트웨어의 요약 정보**|설치된 소프트웨어의 요약이 인벤토리에서 확인된 인스턴스 수를 기준으로 정렬되어 표시됩니다.|  
-|**소프트웨어 02A - 특정 컬렉션의 제품군**|지정한 컬렉션의 제품군 및 해당 제품군의 소프트웨어 수가 표시됩니다.|  
-|**소프트웨어 02B - 특정 제품군의 소프트웨어 범주**|지정한 제품군의 제품 범주 및 해당 범주 내의 소프트웨어 수가 표시됩니다.|  
-|**소프트웨어 02C - 특정 제품군 및 범주의 소프트웨어**|지정한 제품군 및 범주에 있는 모든 소프트웨어가 표시됩니다.|  
-|**소프트웨어 02D - 특정 소프트웨어가 설치된 컴퓨터**|지정한 소프트웨어가 설치된 모든 컴퓨터가 표시됩니다.|  
-|**소프트웨어 02E - 특정 컴퓨터에 설치된 소프트웨어**|지정한 컴퓨터에 설치된 모든 소프트웨어가 표시됩니다.|  
-|**소프트웨어 03A - 분류되지 않은 소프트웨어**|알 수 없음으로 분류되었거나 분류가 없는 소프트웨어가 표시됩니다.|  
-|**소프트웨어 04A - 컴퓨터에서 자동 실행되도록 구성된 소프트웨어**|컴퓨터에서 자동 실행되도록 구성된 소프트웨어의 목록이 표시됩니다.|  
-|**소프트웨어 04B - 특정 소프트웨어가 자동 실행되도록 구성된 컴퓨터**|특정 소프트웨어가 자동 실행되도록 구성된 모든 컴퓨터가 표시됩니다.|  
-|**소프트웨어 04C - 특정 컴퓨터에서 자동 실행되도록 구성된 소프트웨어**|지정한 컴퓨터에서 자동 실행되도록 구성된 설치되어 있는 소프트웨어가 표시됩니다.|  
-|**소프트웨어 05A - 브라우저 도우미 개체**|지정한 컬렉션에 있는 컴퓨터에 설치된 브라우저 도우미 개체가 표시됩니다.|  
-|**소프트웨어 05B - 특정 브라우저 도우미 개체를 포함하는 컴퓨터**|지정한 브라우저 도우미 개체를 사용하는 모든 컴퓨터가 표시됩니다.|  
-|**소프트웨어 05C - 특정 컴퓨터의 브라우저 도우미 개체**|지정한 컴퓨터의 모든 브라우저 도우미 개체가 표시됩니다.|  
-|**소프트웨어 06A - 설치된 소프트웨어 검색**|이 보고서는 제품 이름, 게시자 또는 버전에 대한 검색 기준에 따라 인스턴스 수별로 정렬된 설치되어 있는 소프트웨어의 요약을 제공합니다.|  
-|**소프트웨어 06B - 제품 이름별 소프트웨어**|설치된 소프트웨어의 요약이 지정한 제품 이름에 따라 인스턴스 수별로 정렬되어 표시됩니다.|  
-|**소프트웨어 07A - 컴퓨터 수별 최근 사용된 실행 프로그램**|최근 사용된 실행 프로그램이 사용되었던 컴퓨터 수와 함께 표시됩니다. 이 보고서를 보려면 이 사이트에 대해 소프트웨어 계량을 사용하도록 설정해야 합니다.|  
-|**소프트웨어 07B - 지정된 실행 프로그램을 최근 사용한 컴퓨터**|소프트웨어 계량 클라이언트 설정을 사용하도록 설정하는 경우 지정한 실행 프로그램을 최근에 사용한 컴퓨터가 표시됩니다.|  
-|**소프트웨어 07C - 지정된 컴퓨터에서 최근 사용된 실행 프로그램**|소프트웨어 계량 클라이언트 설정을 사용하도록 설정하는 경우 지정한 컴퓨터에서 최근 사용된 실행 파일이 표시됩니다.|  
-|**소프트웨어 08A - 사용자 수별 최근 사용된 실행 프로그램**|소프트웨어 계량 클라이언트 설정을 사용하도록 설정하는 경우 최근 사용된 실행 프로그램과 해당 프로그램을 가장 최근에 사용한 사용자 수가 표시됩니다.|  
-|**소프트웨어 08B - 지정된 실행 프로그램을 최근 사용한 사용자**|소프트웨어 계량 클라이언트 설정을 사용하도록 설정하는 경우 지정된 실행 프로그램을 가장 최근에 사용한 사용자가 표시됩니다.|  
-|**소프트웨어 08C - 지정된 사용자가 최근 사용한 실행 프로그램**|소프트웨어 계량 클라이언트 설정을 사용하도록 설정하는 경우 지정된 사용자가 최근 사용한 실행 프로그램이 표시됩니다.|  
-|**소프트웨어 09A - 사용 빈도가 적은 소프트웨어**|지정된 기간 동안 사용하지 않은 소프트웨어 타이틀이 표시됩니다.|  
-|**소프트웨어 09B - 사용 빈도가 적은 소프트웨어가 설치된 컴퓨터**|지정된 기간 동안 사용하지 않는 소프트웨어가 설치된 컴퓨터가 표시됩니다. 지정되는 기간은 ‘소프트웨어 09A - 사용 빈도가 적은 소프트웨어’ 보고서에 지정된 값을 기준으로 합니다.|  
-|**소프트웨어 10A - 특정 사용자 지정 레이블이 여러 개 정의된 소프트웨어 타이틀**|지정한 모든 사용자 지정 레이블 기준과의 일치를 기준으로 하여 소프트웨어 타이틀이 표시됩니다. 사용자 지정 레이블을 3개까지 선택하여 소프트웨어 타이틀 검색을 구체화할 수 있습니다.|  
-|**소프트웨어 10B - 특정 사용자 지정 레이블이 정의되어 있는 소프트웨어 타이틀이 설치된 컴퓨터**|지정한 사용자 지정 레이블 소프트웨어 타이틀이 설치된 이 컬렉션의 모든 컴퓨터가 표시됩니다.|  
-|**소프트웨어 11A - 특정 사용자 지정 레이블이 정의된 소프트웨어 타이틀**|지정한 사용자 지정 레이블 기준 하나 이상과의 일치를 기준으로 하여 소프트웨어 타이틀이 표시됩니다.|  
-|**소프트웨어 12A - 사용자 지정 레이블이 없는 소프트웨어 타이틀**|사용자 지정 레이블이 정의되어 있지 않은 모든 소프트웨어 타이틀이 표시됩니다.|  
-|**소프트웨어 14A - 소프트웨어 ID 태그 사용 소프트웨어 검색**|소프트웨어 ID 태그가 사용하도록 설정된 설치되어 있는 소프트웨어 수가 표시됩니다.|  
-|**소프트웨어 14B - 특정 소프트웨어 ID 태그 사용 소프트웨어가 설치된 컴퓨터**|지정한 소프트웨어 ID 태그가 사용하도록 설정된 소프트웨어가 설치되어 있는 모든 컴퓨터가 표시됩니다.|  
-|**소프트웨어 14C - 특정 컴퓨터의 설치된 소프트웨어 ID 태그 사용 소프트웨어**|지정한 컴퓨터에서 지정된 소프트웨어 ID 태그가 사용하도록 설정된 설치되어 있는 모든 소프트웨어가 표시됩니다.|  
+|**Sprzęt 01A - podsumowanie komputerów w określonej kolekcji**|Przedstawia widok podsumowania analizy zasobów dla komputerów w określonej kolekcji.|  
+|**Sprzęt 03A — użytkownicy podstawowi komputerów**|Przedstawia użytkowników oraz liczbę komputerów, na których dana osoba jest użytkownikiem podstawowym.|  
+|**Sprzęt 03B - komputery określonego użytkownika podstawowego konsoli**|Przedstawia wszystkie komputery, dla których określony użytkownik jest użytkownikiem podstawowym konsoli.|  
+|**Oprogramowanie 04A - komputery z wieloma użytkownikami (współużytkowane)**|Przedstawia komputery, które nie mają użytkownika podstawowego, ponieważ procent czasu logowania do konsoli dla żadnego z użytkowników nie przekracza 66%.|  
+|**Sprzęt 05A - użytkownicy konsoli na określonym komputerze**|Przedstawia wszystkich użytkowników konsoli na określonym komputerze.|  
+|**Sprzęt 06A - komputery dla których konsoli nie można ustalić użytkowników**|Pomaga użytkownikom administracyjnym w identyfikowaniu komputerów, na których należy włączyć rejestrowanie zabezpieczeń.|  
+|**Sprzęt 07b - urządzenia USB według producenta**|Przedstawia urządzenia USB pogrupowane według producenta.|  
+|**Sprzęt 07B - urządzenia USB według producenta i opisu**|Przedstawia urządzenia USB pogrupowane według producenta i opisu.|  
+|**Sprzęt 07C - komputery z określonym urządzeniem USB**|Przedstawia wszystkie komputery z określonym urządzeniem USB.|  
+|**Sprzęt 07D - urządzenia USB na określonym komputerze**|Przedstawia wszystkie urządzenia USB na określonym komputerze.|  
+|**Sprzęt 08A - sprzęt który nie jest gotowy do aktualizacji oprogramowania**|Przedstawia sprzęt, który nie spełnia minimalnych wymagań sprzętowych.|  
+|**Sprzęt 09A - wyszukiwanie komputerów**|Wyświetla podsumowanie Menedżera zasobów dotyczące komputerów spełniających kryteria filtrów słów kluczowych dotyczących nazwy komputera, lokacji programu Configuration Manager, domeny, najczęstszego użytkownika konsoli, systemu operacyjnego, producenta lub modelu.|  
+|**Sprzęt 10A - komputery w określonej kolekcji które uległy zmianie w określonym przedziale czasu**|Przedstawia listę komputerów w określonej kolekcji, dla których klasa sprzętu została zmieniona w określonym przedziale czasu.|  
+|**Sprzęt 10B - zmiany na określonym komputerze w określonym przedziale czasu**|Przedstawia klasy, które zostały zmienione na określonym komputerze w określonym przedziale czasu.|  
+|**Licencja 01A - Księga licencji zbiorczych firmy Microsoft dla deklaracje licencyjne firmy Microsoft**|Przedstawia spis wszystkich tytułów oprogramowania firmy Microsoft, które są dostępne w ramach programu licencjonowania zbiorowego firmy Microsoft.|  
+|**Licencja 01B — elementy księgi licencji grupowych Microsoft wg kanału sprzedaży**|Identyfikuje i przedstawia kanał sprzedaży dla uwzględnionego w spisie oprogramowania z licencją zbiorczą firmy Microsoft.|  
+|**Licencja 01C - komputery z określonym licencjonowania zbiorowego firmy Microsoft księgi elementu i kanałem sprzedaży**|Identyfikuje i przedstawia komputery z określonym elementem księgi licencji zbiorczych firmy Microsoft.|  
+|**Licencja 01D - produkty w księdze licencji grupowych Microsoft na określonym komputerze**|Identyfikuje i przedstawia wszystkie elementy księgi licencji zbiorczych firmy Microsoft na określonym komputerze.|  
+|**Licencja 02A — liczba licencji wygasną, według przedziałów czasu**|Przedstawia liczbę licencji, które wkrótce wygasną, według określonego przedziału czasu. Są w nim wyświetlane produkty, których licencje są zarządzane przez usługę licencjonowania oprogramowania.|  
+|**Licencja 02B - komputery z licencjami bliskimi wygaśnięcia**|Przedstawia określone komputery z licencjami, które wkrótce wygasną.|  
+|**Licencja 02C - informacje dotyczące licencji na określonym komputerze**|Przedstawia produkty na określonym komputerze, których licencje są zarządzane przez usługę licencjonowania oprogramowania.|  
+|**Licencja 03A - liczba licencji według stanu licencji**|Przedstawia produkty, których licencje są zarządzane przez usługę licencjonowania oprogramowania, uporządkowane według stanu licencji.|  
+|**Licencja 03B - komputery z określonym stanem licencji**|Przedstawia produkty, których licencje są zarządzane przez usługę licencjonowania oprogramowania, z określonym stanem licencji.|  
+|**Licencja 04A - liczba produktów zarządzanych przez usługę licencjonowania oprogramowania**|Przedstawia liczbę produktów, których licencje są zarządzane przez usługę licencjonowania oprogramowania.|  
+|**Licencja 04B - komputery z określonym produktem zarządzanym przez usługę licencjonowania oprogramowania**|Przedstawia komputery zarządzane przez usługę licencjonowania oprogramowania, które zawierają określony produkt.|  
+|**Licencja 05A - komputery z usługą zarządzania kluczami**|Przedstawia komputery, które działają jako serwery zarządzania kluczami.|  
+|**Licencja 06A - liczba procesorów dla produktów licencjonowanych na procesor**|Przedstawia liczbę procesorów komputerów z produktami firmy Microsoft, które obsługują licencjonowanie w trybie na procesor.|  
+|**Licencja 06B — komputery z określonym produktem obsługującym licencję w trybie na procesor**|Przedstawia listę komputerów, na których zainstalowano określony produkt firmy Microsoft obsługujący licencjonowanie w trybie na procesor.|  
+|**Licencja 14A - raport dotyczący uzgodnienia programu licencjonowania zbiorowego firmy Microsoft**|Przedstawia uzgodnienia związane z licencjami oprogramowania zakupionymi za pośrednictwem umowy licencjonowania zbiorowego firmy Microsoft oraz rzeczywistą liczbę ze spisu.|  
+|**Licencja 14B - listy nie można odnaleźć w MVLS spisu oprogramowania firmy Microsoft**|Ten raport przedstawia tytuły oprogramowania firmy Microsoft w użyciu, których nie znaleziono w umowie licencji zbiorowych firmy Microsoft.|  
+|**Licencja 15A - raport uzgadniania ogólnych licencji**|Przedstawia uzgadnianie dotyczące zakupionych ogólnych licencji oprogramowania oraz rzeczywistą liczbę ze spisu.|  
+|**Licencja 15B - ogólny raport uzgadniania licencji według komputera**|Przedstawia komputery, na których zainstalowano licencjonowany produkt w określonej wersji.|  
+|**Oprogramowanie 01A - podsumowanie zainstalowanego oprogramowania w określonej kolekcji**|Przedstawia podsumowanie zainstalowanego oprogramowania uporządkowane według liczby wystąpień w spisie.|  
+|**Oprogramowanie 02A - rodziny produktów dla określonej kolekcji**|Przedstawia rodziny produktów i liczbę programów w rodzinie dla określonej kolekcji.|  
+|**Oprogramowanie 02B - kategorie produktów w określonej rodzinie produktów**|Przedstawia kategorie produktów w określonej rodzinie produktów oraz liczbę programów w kategorii.|  
+|**Oprogramowanie 02C - oprogramowanie w określonej rodzinie i kategorii produktów**|Przedstawia wszystkie programy, które należą do określonej kategorii i rodziny produktów.|  
+|**Oprogramowanie 02D - komputery z zainstalowanym określonym oprogramowaniem**|Przedstawia wszystkie komputery, na których zainstalowano określone oprogramowanie.|  
+|**Oprogramowanie 02E - oprogramowanie zainstalowane na określonym komputerze**|Przedstawia wszystkie programy zainstalowane na określonym komputerze.|  
+|**Oprogramowanie 03A — oprogramowanie bez kategorii**|Przedstawia oprogramowanie skategoryzowane jako nieznane lub nienależące do żadnej kategorii.|  
+|**Oprogramowanie 04A - oprogramowanie skonfigurowane do automatycznego uruchamiania na komputerach**|Przedstawia listę programów skonfigurowanych do automatycznego uruchamiania na komputerach.|  
+|**Oprogramowanie 04B - komputery z określonym oprogramowaniem skonfigurowanym do automatycznego uruchamiania**|Przedstawia wszystkie komputery z określonym oprogramowaniem skonfigurowanym do automatycznego uruchamiania.|  
+|**Oprogramowanie 04C - oprogramowanie skonfigurowane do automatycznego uruchamiania na określonym komputerze**|Przedstawia zainstalowane oprogramowanie skonfigurowane do automatycznego uruchamiania na określonym komputerze.|  
+|**Oprogramowanie 05A - obiekty Pomocnik przeglądarki**|Przedstawia obiekty pomocnicze przeglądarki zainstalowane na komputerach w określonej kolekcji.|  
+|**Oprogramowanie 05B - komputery z określonym obiektem Pomocnik przeglądarki**|Przedstawia wszystkie komputery z określonym obiektem pomocniczym przeglądarki.|  
+|**Oprogramowanie 05C - obiekty Pomocnik przeglądarki na określonym komputerze**|Przedstawia wszystkie obiekty pomocnicze przeglądarki na określonym komputerze.|  
+|**Oprogramowanie 06A - wyszukiwanie zainstalowanego oprogramowania**|Ten raport przedstawia podsumowanie zainstalowanego oprogramowania uporządkowane według liczby wystąpień na podstawie kryteriów wyszukiwania dla nazwy produktu, wydawcy lub wersji.|  
+|**Oprogramowanie 06B - oprogramowanie według nazwy produktu**|Przedstawia podsumowanie zainstalowanego oprogramowania uporządkowane według liczby wystąpień na podstawie określonej nazwy produktu.|  
+|**Oprogramowanie 07A - ostatnio używane programy wykonywalne według liczby komputerów**|Przedstawia programy wykonywalne, które były ostatnio używane, oraz liczbę komputerów, na których ich używano. Aby wyświetlanie tego raportu było możliwe, w tej lokacji należy włączyć pomiar użytkowania oprogramowania.|  
+|**Oprogramowanie 07B — komputery których ostatnio używany określony program wykonywalny**|Przedstawia komputery, na których ostatnio używano określonego programu wykonywalnego po włączeniu ustawienia klienta dotyczącego pomiaru użytkowania oprogramowania.|  
+|**Oprogramowanie 07C - ostatnio używane programy wykonywalne na określonym komputerze**|Przedstawia pliki wykonywalne, których ostatnio używano na określonym komputerze po włączeniu ustawienia klienta dotyczącego pomiaru użytkowania oprogramowania.|  
+|**Oprogramowanie 08A - ostatnio używane programy wykonywalne według liczby użytkowników**|Przedstawia ostatnio używane programy wykonywalne oraz liczbę użytkowników, którzy ostatnio z nich korzystali po włączeniu ustawienia klienta dotyczącego pomiaru użytkowania oprogramowania.|  
+|**Oprogramowanie 08B - użytkownicy którzy używali ostatnio określonego programu wykonywalnego**|Przedstawia użytkowników, którzy ostatnio używali określonego programu wykonywalnego po włączeniu ustawienia klienta dotyczącego pomiaru użytkowania oprogramowania.|  
+|**Oprogramowanie 08C - ostatnio używane programy wykonywalne według określonego użytkownika**|Przedstawia programy wykonywalne ostatnio używane przez określonego użytkownika po włączeniu ustawienia klienta dotyczącego pomiaru użytkowania oprogramowania.|  
+|**Oprogramowanie 09A - rzadko używane oprogramowanie**|Przedstawia tytuły oprogramowania, które nie były używane w określonym przedziale czasu.|  
+|**Oprogramowanie 09B - komputery z rzadko używanym oprogramowaniem**|Przedstawia komputery z zainstalowanym oprogramowaniem, które nie było używane w określonym przedziale czasu. Określony przedział czasu opiera się na wartości podanej w raporcie „Oprogramowanie 09A — rzadko używane oprogramowanie”.|  
+|**Oprogramowane 10A - tytuły oprogramowania z określonymi zdefiniowanymi wieloma etykietami niestandardowymi**|Przedstawia tytuły oprogramowania w oparciu o dopasowanie wszystkich określonych kryteriów etykiet niestandardowych. Aby zawęzić wyniki wyszukiwania tytułu oprogramowania, można wybrać maksymalnie trzy etykiety niestandardowe.|  
+|**Oprogramowanie 10B - komputery z zainstalowanym tytułem oprogramowania z etykietą niestandardową określonych**|Przedstawia wszystkie komputery w tej kolekcji, na których zainstalowano tytuł oprogramowania z określoną etykietą niestandardową.|  
+|**Oprogramowanie 11A - tytuły oprogramowania ze zdefiniowaną określoną etykietą niestandardową**|Przedstawia tytuły oprogramowania w oparciu o dopasowanie co najmniej jednego określonego kryterium etykiet niestandardowych.|  
+|**Oprogramowanie 12A - tytuły oprogramowania bez etykiety niestandardowej**|Przedstawia wszystkie tytuły oprogramowania, które nie mają zdefiniowanej etykiety niestandardowej.|  
+|**Oprogramowanie 14A - Search for tagiem identyfikacji oprogramowania z włączonym**|Przedstawia liczbę zainstalowanych programów z włączonym znacznikiem identyfikacji programu.|  
+|**Oprogramowanie 14B - komputery z określonym znacznikiem identyfikacji włączonym zainstalowanego oprogramowania**|Przedstawia wszystkie komputery, na których zainstalowano oprogramowanie z włączonym znacznikiem identyfikacji programu.|  
+|**Oprogramowanie 14C - identyfikator tagu włączone oprogramowanie zainstalowane na określonym komputerze**|Przedstawia wszystkie programy z określonym włączonym znacznikiem identyfikacji programu, które zainstalowano na określonym komputerze.|  
 
-### <a name="client-push"></a>클라이언트 강제  
+### <a name="client-push"></a>Wypychane przez klienta  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**클라이언트 강제 설치 상태 세부 정보**|모든 사이트에 대한 클라이언트 강제 설치 프로세스 관련 정보가 표시됩니다.|  
-|**지정된 사이트에 대한 클라이언트 강제 설치 상태 세부 정보**|지정된 사이트에 대한 클라이언트 강제 설치 프로세스 관련 정보가 표시됩니다.|  
-|**클라이언트 강제 설치 상태 요약**|모든 사이트에 대한 클라이언트 강제 설치 상태의 요약 보기가 표시됩니다.|  
-|**지정된 사이트에 대한 클라이언트 강제 설치 상태 요약**|지정된 사이트에 대한 클라이언트 강제 설치 상태의 요약 보기가 표시됩니다.|  
+|**Szczegóły stanu instalacji wypychanych klienta**|Przedstawia informacje na temat procesu wypychanej instalacji klienta dla wszystkich lokacji.|  
+|**Szczegóły stanu instalacji wypychanych klienta dla określonej lokacji**|Przedstawia informacje na temat procesu wypychanej instalacji klienta dla określonej lokacji.|  
+|**Podsumowanie stanu instalacji wypychanych klienta**|Przedstawia widok podsumowania stanu wypychanej instalacji klienta dla wszystkich lokacji.|  
+|**Podsumowanie dla określonej lokacji stanu instalacji wypychanych klienta**|Przedstawia widok podsumowania stanu wypychanej instalacji klienta dla określonej lokacji.|  
 
-### <a name="client-status"></a>클라이언트 상태  
+### <a name="client-status"></a>Stan klienta  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**클라이언트 재구성 세부 정보**|지정한 컬렉션에 대한 클라이언트 재구성 작업의 세부 정보가 표시됩니다.|  
-|**클라이언트 재구성 요약**|지정된 컬렉션에 대한 클라이언트 재구성 작업의 요약이 표시됩니다.|  
-|**클라이언트 상태 기록**|사이트의 전반적인 클라이언트 상태에 대한 기록 보기가 표시됩니다.|  
-|**클라이언트 상태 요약**|지정된 컬렉션에 대한 활성 클라이언트의 클라이언트 검사 결과가 표시됩니다.|  
-|**정책을 요청하는 클라이언트 시간**|지난 30일 동안 정책을 한 번 이상 요청한 클라이언트의 백분율이 표시됩니다. 각 날짜는 주기의 첫날 이후 정책을 요청한 총 클라이언트 백분율을 나타냅니다.|  
-|**클라이언트 검사가 실패한 클라이언트 세부 정보**|지정된 컬렉션에 대한 클라이언트 검사가 실패한 클라이언트 관련 세부 정보가 표시됩니다.|  
-|**비활성 클라이언트 세부 정보**|지정된 컬렉션에 대한 비활성 클라이언트의 세부 목록이 표시됩니다.|  
+|**Szczegóły korygowania klienta**|Przedstawia szczegóły akcji korygowania klienta dla określonej kolekcji.|  
+|**Podsumowanie korygowania klienta**|Przedstawia podsumowanie akcji korygowania klienta dla określonej kolekcji.|  
+|**Historia stanu klienta**|Przedstawia widok historycznych danych dotyczących ogólnego stanu klienta w lokacji.|  
+|**Podsumowanie stanu klienta**|Przedstawia wyniki sprawdzania aktywnych klientów dla danej kolekcji.|  
+|**Czas klienta na zażądanie zasady**|Przedstawia odsetek klientów, którzy zażądali zasad co najmniej raz w ciągu ostatnich 30 dni. Każdy dzień reprezentuje procent łącznej liczby klientów, którzy zażądali zasad od pierwszego dnia cyklu.|  
+|**Klienci w których nie powiodło się sprawdzenie szczegółów**|Przedstawia szczegółowe informacje dotyczące klientów, dla których wystąpiły błędy sprawdzania klienta dla określonej kolekcji.|  
+|**Szczegóły nieaktywnych klientów**|Przedstawia szczegółową listę nieaktywnych klientów dla danej kolekcji.|  
 
-### <a name="company-resource-access"></a>회사 리소스 액세스  
+### <a name="company-resource-access"></a>Dostęp do zasobów firmy  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**인증서 발급 기록**|지정한 날짜 범위에 사용자와 장치에 대해 인증서 등록 지점에서 발급한 인증서의 기록이 표시됩니다.|  
-|**인증서 발급 상태별 자산 목록**|지정한 인증서 프로필 평가 이후 지정된 인증서 발급 상태의 장치나 사용자가 표시됩니다.|  
-|**만료 날짜에 가까운 인증서와 자산 목록**|지정한 날짜 또는 그 이전에 만료되는 인증서를 소유한 장치나 사용자가 표시됩니다.|  
+|**Historia wystawiania certyfikatów**|Przedstawia historię certyfikatów, które zostały wystawione przez punkt rejestracji certyfikatu dla użytkowników i urządzeń w określonym przedziale czasu.|  
+|**Lista zasobów według stanu wystawienia certyfikatu**|Przedstawia urządzenia lub użytkowników w określonym stanie wystawiania certyfikatu po dokonaniu oceny określonego profilu certyfikatu.|  
+|**Lista zasobów z certyfikatami bliskimi wygaśnięcia**|Przedstawia urządzenia lub użytkowników z certyfikatami wygasającymi w określonym dniu lub wcześniej.|  
 
-### <a name="compliance-and-settings-management"></a>호환 및 설정 관리  
+### <a name="compliance-and-settings-management"></a>Zarządzanie zgodnością i ustawieniami  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**구성 기준의 호환 기록**|지정한 날짜 범위에 구성 기준과 호환되는 변경 내용의 기록이 표시됩니다.|  
-|**구성 항목의 호환 기록**|지정한 날짜 범위에 구성 항목과 호환되는 변경 내용의 기록이 표시됩니다.|  
-|**자산의 구성 기준에서 구성 항목의 호환 규칙에 대한 세부 정보**|지정한 장치나 사용자에 대해 지정된 구성 항목과 호환되는 것으로 평가된 규칙에 대한 정보가 표시됩니다.|  
-|**자산의 구성 기준에서 구성 항목의 충돌하는 규칙에 대한 세부 정보**|지정한 사용자나 장치에 배포된 구성 항목의 규칙 중 같거나 다른 배포된 구성 항목에 포함되어 있는 다른 규칙과 충돌하는 규칙에 대한 정보가 표시됩니다.|  
-|**자산의 구성 기준에서 구성 항목의 자세한 오류 정보**|지정한 장치나 사용자에 대해 지정된 구성 항목에서 생성한 오류에 대한 정보가 표시됩니다.|  
-|**자산의 구성 기준에서 구성 항목의 호환되지 않는 규칙에 대한 세부 정보**|지정한 장치나 사용자에 대해 지정된 구성 항목과 호환되지 않는 것으로 평가된 규칙에 대한 정보가 표시됩니다.|  
-|**자산의 구성 기준에서 구성 항목의 수정된 규칙에 대한 세부 정보**|지정한 장치나 사용자에 대해 지정된 구성 항목에서 재구성한 규칙에 대한 정보가 표시됩니다.|  
-|**구성 기준에서 구성 항목의 호환 상태별 자산 목록**|지정한 구성 항목 평가 이후 지정된 호환 상태의 장치나 사용자가 표시됩니다.|  
-|**구성 기준의 호환 상태별 자산 목록**|지정한 구성 기준 평가 이후 지정된 호환 상태의 장치나 사용자가 표시됩니다.|  
-|**자산의 지정된 규칙과 충돌하는 규칙 목록**|지정한 장치에 배포된 구성 항목의 지정된 규칙과 충돌하는 규칙의 목록이 표시됩니다.|  
-|**구성 기준에 대한 알 수 없는 자산 목록**|지정한 구성 기준에 대해 호환 데이터를 아직 보고하지 않은 장치나 사용자의 목록이 표시됩니다.|  
-|**구성 항목에 대한 알 수 없는 자산 목록**|지정한 구성 항목에 대해 호환 데이터를 아직 보고하지 않은 장치나 사용자의 목록이 표시됩니다.|  
-|**자산의 구성 기준에서 구성 항목의 규칙 및 오류 요약 정보**|지정한 장치나 시용자에 배포된 지정한 구성 항목에 대한 규칙 호환 상태 및 설정 오류의 요약이 표시됩니다.|  
-|**구성 기준별 호환 요약 정보**|계층에서 배포된 구성 기준의 전반적인 호환 요약이 표시됩니다.|  
-|**구성 기준에 대한 구성 항목별 호환 요약 정보**|지정한 구성 기준의 구성 항목 호환 요약이 표시됩니다.|  
-|**구성 정책별 호환성 요약**|구성 정책 호환의 요약이 표시됩니다.|  
-|**컬렉션에 대한 구성 기준의 호환 요약 정보**|지정한 컬렉션에 배포된 지정한 구성 기준의 전반적인 호환 요약이 표시됩니다.|  
-|**지정한 사용자에 대한 호환되지 않는 앱 및 장치 목록**|지정한 정책과 호환되지 않는 앱을 설치한 장치 및 사용자에 대한 정보가 표시됩니다.|  
-|**호환되지 않는 앱을 설치한 사용자 요약**|지정한 정책과 호환되지 않는 앱을 설치한 사용자에 대한 정보가 표시됩니다.|  
-|**계약조건 동의**|사용 약관 항목 및 각 사용자가 동의한 버전이 표시됩니다.|  
+|**Historia zgodności linii bazowej konfiguracji**|Przedstawia historię zmian zgodności linii bazowej konfiguracji dla określonego przedziału dat.|  
+|**Historia zgodności elementu konfiguracji**|Przedstawia historię zmian zgodności elementu konfiguracji dla określonego przedziału dat.|  
+|**Szczegóły zgodnych reguł elementów konfiguracji w linii bazowej konfiguracji dla zasobu**|Przedstawia informacje o regułach, które zostały ocenione jako zgodne dla określonego elementu konfiguracji oraz dla określonego urządzenia lub użytkownika.|  
+|**Szczegóły będących w konflikcie reguł elementów konfiguracji w linii bazowej konfiguracji dla zasobu**|Przedstawia informacje o regułach w elemencie konfiguracji wdrożonym do określonego użytkownika lub urządzenia, które powodują konflikt z innymi regułami zawartymi w tym samym wdrożonym elemencie konfiguracji.|  
+|**Szczegóły błędów elementów konfiguracji w linii bazowej konfiguracji dla zasobu**|Przedstawia informacje o błędach wygenerowanych przez określony element konfiguracji dla określonego urządzenia lub użytkownika.|  
+|**Szczegóły niezgodnych reguł elementów konfiguracji w linii bazowej konfiguracji dla zasobu**|Przedstawia informacje o regułach, które zostały ocenione jako niezgodne dla określonego elementu konfiguracji oraz dla określonego urządzenia lub użytkownika.|  
+|**Szczegóły skorygowanych reguł elementów konfiguracji w linii bazowej konfiguracji dla zasobu**|Przedstawia informacje o regułach skorygowanych przez określony element konfiguracji dla określonego urządzenia lub użytkownika.|  
+|**Lista zasobów według stanu zgodności elementu konfiguracji w linii bazowej konfiguracji**|Przedstawia urządzenia lub użytkowników w określonym stanie zgodności po dokonaniu oceny określonego elementu konfiguracji.|  
+|**Lista zasobów według stanu zgodności dla linii bazowej konfiguracji**|Przedstawia urządzenia lub użytkowników w określonym stanie zgodności po dokonaniu oceny określonej linii bazowej konfiguracji.|  
+|**Lista reguł w konflikcie z określoną regułą zasobu**|Przedstawia listę reguł, które powodują konflikt z określoną regułą dla elementu konfiguracji wdrożonego do określonego urządzenia.|  
+|**Lista nieznanych zasobów linii bazowej konfiguracji**|Przedstawia listę urządzeń lub użytkowników, którzy nie zgłosili jeszcze żadnych danych zgodności dla określonej linii bazowej konfiguracji.|  
+|**Lista nieznanych zasobów pozycji bazowej konfiguracji**|Przedstawia listę urządzeń lub użytkowników, którzy nie zgłosili jeszcze żadnych danych zgodności dla określonego elementu konfiguracji.|  
+|**Reguł i błędów elementów konfiguracji w linii bazowej konfiguracji dla zasobu podsumowania**|Przedstawia podsumowanie stanu zgodności reguł i wszelkich błędów ustawień dla określonego elementu konfiguracji wdrożonego do określonego urządzenia lub użytkownika.|  
+|**Podsumowanie zgodności według linii bazowej konfiguracji**|Przedstawia podsumowanie ogólnej zgodności wdrożonych linii bazowych konfiguracji w hierarchii.|  
+|**Podsumowanie zgodności według elementów konfiguracji dla linii bazowej konfiguracji**|Przedstawia podsumowanie zgodności elementów konfiguracji w określonej linii bazowej konfiguracji.|  
+|**Podsumowanie zgodności według zasad konfiguracji**|Przedstawia podsumowanie zgodności zasad konfiguracji.|  
+|**Podsumowanie zgodności linii bazowej konfiguracji dla kolekcji**|Przedstawia podsumowanie ogólnej zgodności określonej linii bazowej konfiguracji wdrożonej w określonej kolekcji.|  
+|**Lista niezgodnych aplikacji i urządzeń dla określonego użytkownika**|Zawiera informacje o użytkownikach i urządzeniach z zainstalowanymi aplikacjami niezgodnymi z wybranymi zasadami.|  
+|**Podsumowanie użytkowników z niezgodnymi aplikacjami**|Zawiera informacje o użytkownikach z zainstalowanymi aplikacjami niezgodnymi z wybranymi zasadami.|  
+|**Akceptacja warunków i postanowień**|Zawiera elementy warunków i postanowień oraz ich wersje zaakceptowane przez każdego użytkownika.|  
 
-### <a name="device-management"></a>장치 관리  
+### <a name="device-management"></a>Zarządzanie urządzeniami  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**모든 모바일 장치 클라이언트**|모든 모바일 장치 클라이언트에 대한 정보가 표시됩니다. Exchange Server 커넥터를 통해 관리되는 장치는 포함되지 않습니다.|  
-|**Windows CE용 Configuration Manager 클라이언트에서 관리하며 정상이 아닌 모바일 장치에서 발생하는 인증서 문제**|Windows CE용 Configuration Manager 클라이언트에서 관리하는 모바일 장치에서 발생하는 인증서 문제에 대한 자세한 정보가 표시됩니다.|  
-|**Windows CE용 Configuration Manager 클라이언트에서 관리하는 모바일 장치에서 발생하는 클라이언트 배포 실패**|Windows CE용 Configuration Manager 클라이언트에서 관리하는 모바일 장치에서 발생하는 배포 실패에 대한 자세한 정보가 표시됩니다.|  
-|**Windows CE용 Configuration Manager 클라이언트에서 관리하는 모바일 장치의 클라이언트 배포 상태 세부 정보**|Windows CE용 Configuration Manager 클라이언트에서 관리하는 모바일 장치의 상태에 대한 정보가 표시됩니다.|  
-|**Windows CE용 Configuration Manager 클라이언트에서 관리하는 모바일 장치에서 발생하는 클라이언트 배포 성공**|Windows CE용 Configuration Manager 클라이언트에서 관리하는 모바일 장치에서 발생하는 배포 성공에 대한 자세한 정보가 표시됩니다.|  
-|**Windows CE용 Configuration Manager 클라이언트에서 관리하며 정상이 아닌 모바일 장치에서 발생하는 통신 문제**|이 보고서는 Windows CE용 Configuration Manager 클라이언트에서 관리하는 모바일 장치에서 발생하는 통신 문제에 대한 자세한 정보를 포함합니다.|  
-|**Exchange Server 커넥터에서 관리하는 모바일 장치의 호환성 상태**|Exchange Server 커넥터에서 관리하는 모바일 장치의 기본 Exchange ActiveSync 사서함 정책과 함께 호환 상태 요약이 표시됩니다.|  
-|**디스플레이 구성별 모바일 장치 수**|이 보고서에는 디스플레이 설정별 모바일 장치의 수가 표시됩니다.|  
-|**운영 체제별 모바일 장치 수**|운영 체제별 모바일 장치의 수가 표시됩니다.|  
-|**프로그램 메모리별 모바일 장치 수**|프로그램 메모리별 모바일 장치의 수가 표시됩니다.|  
-|**저장소 메모리 구성별 모바일 장치 수**|저장소 메모리 구성별 모바일 장치 수|  
-|**Windows CE용 Configuration Manager 클라이언트에서 관리하는 모바일 장치에 대한 상태 정보**|Windows CE용 Configuration Manager 클라이언트에서 관리하는 모바일 장치에 대한 자세한 상태 정보가 표시됩니다.|  
-|**Windows CE용 Configuration Manager 클라이언트에서 관리하는 모바일 장치에 대한 상태 요약 정보**|Windows CE용 Configuration Manager 클라이언트에서 관리하는 모바일 장치에 대한 상태 요약이 표시됩니다.|  
-|**Exchange Server 커넥터에서 관리하는 비활성 모바일 장치**|Exchange Server 커넥터에서 관리하며 지정한 기간(일) 동안 Exchange Server에 연결하지 않은 모바일 장치가 표시됩니다.|  
-|**Microsoft Intune에 사용자별로 등록된 장치 목록**|사용자가 Microsoft Intune에 등록한 모든 장치가 표시됩니다.|  
-|**조건부 액세스 상태별 장치 목록**|장치의 현재 호환 및 조건부 액세스 상태에 대한 정보가 표시됩니다. 이 보고서를 조건부 액세스 정책과 함께 사용할 수 있습니다. 이 보고서는 Configuration Manager 버전 1602부터 사용할 수 있습니다.|  
-|**사용자용 조건부 액세스 호환성**|장치 이름 및 플랫폼, 장치가 규격 상태인지 여부, 장치가 마지막으로 평가된 시기 등 특정 사용자에 대한 자세한 조건부 액세스 규정 준수 정보를 제공합니다. 이 보고서는 Configuration Manager 버전 1602부터 사용할 수 있습니다.|  
-|**Windows CE용 Configuration Manager 클라이언트에서 관리하며 정상 상태가 아닌 모바일 장치에서 발생하는 로컬 클라이언트 문제**|이 보고서는 Windows CE용 Configuration Manager 클라이언트에서 관리하는 모바일 장치에서 발생하는 로컬 클라이언트 문제에 대한 자세한 정보를 포함합니다.|  
-|**모바일 장치 클라이언트 정보**|Configuration Manager 클라이언트가 설치되어 있는 모바일 장치에 대한 정보가 표시됩니다. 이 보고서를 사용하여 관리 지점과 정상적으로 통신할 수 있는 모바일 장치를 확인할 수 있습니다.|  
-|**Exchange Server 커넥터에 대한 모바일 장치 호환 세부 정보**|Exchange Server 커넥터를 사용하여 구성된 기본 Exchange ActiveSync 사서함 정책의 모바일 장치 호환 세부 정보가 표시됩니다.|  
-|**운영 체제별 모바일 장치**|운영 체제별 모바일 장치가 표시됩니다.|  
-|**탈옥 또는 루팅 상태의 장치인 모바일 장치**|탈옥 또는 루팅 상태의 장치인 모바일 장치가 표시됩니다.|  
-|**등록되었지만 사이트에 할당되지 못했으므로 관리되지 않는 모바일 장치**|Configuration Manager 등록을 완료했으며 인증서가 있지만 사이트 할당은 완료하지 못한 모바일 장치가 표시됩니다.|  
-|**지정된 크기의 사용 가능한 프로그램 메모리를 포함하는 모바일 장치**|지정된 크기의 사용 가능한 프로그램 메모리를 포함하는 모든 모바일 장치가 표시됩니다.|  
-|**지정된 크기의 사용 가능한 이동식 저장소 메모리를 포함하는 모바일 장치**|지정된 크기의 사용 가능한 이동식 저장소 메모리를 포함하는 모든 모바일 장치가 표시됩니다.|  
-|**인증서 갱신 문제가 있는 모바일 장치**|인증서를 갱신하지 못한 등록된 모바일 장치가 표시됩니다. 만료 기간 전에 인증서를 갱신하지 않으면 모바일 장치가 관리되지 않습니다.|  
-|**사용 가능한 프로그램 메모리가 작은 모바일 장치(지정된 사용 가능한 KB 미만)**|프로그램 메모리가 지정한 크기(KB)보다 작은 모바일 장치가 표시됩니다.|  
-|**사용 가능한 이동식 저장소 메모리가 작은 모바일 장치(지정된 사용 가능한 KB 미만)**|이동식 저장소 메모리가 지정한 크기(KB)보다 작은 모바일 장치가 표시됩니다.|  
-|**Windows Intune에 사용자별로 등록된 장치 수**|이 보고서는 Microsoft Intune 구독에 대해 사용 설정된 사용자와 각 사용자의 등록된 총 장치 수를 표시합니다.|  
-|**모바일 장치에서 보류 중인 초기화 요청**|모바일 장치에서 보류 중인 초기화 요청이 표시됩니다.|  
-|**최근 등록 및 할당된 모바일 장치**|최근에 Configuration Manager에 등록되었으며 사이트에 할당된 모바일 장치가 표시됩니다.|  
-|**최근 초기화된 모바일 장치**|최근 정상적으로 초기화된 모바일 장치의 목록이 표시됩니다.|  
-|**Exchange Server 커넥터에서 관리하는 모바일 장치의 설정 요약 정보**|Exchange Server에서 관리하는 각 기본 Exchange ActiveSync 사서함 정책에 대한 설정을 적용하는 모바일 장치의 수가 표시됩니다.|  
-|**Windows RT 테스트용 로드 키 상세 상태**|지정한 Windows RT 테스트용 로드 키에 대한 세부 상태 정보가 표시됩니다.|  
-|**Windows RT 테스트용 로드 키 요약**|Windows RT 테스트용 로드 키의 상태가 표시됩니다.|  
+|**Wszyscy klienci urządzeń przenośnych**|Przedstawia informacje o wszystkich klientach urządzeń przenośnych. Urządzenia zarządzane przez łącznik serwera programu Exchange nie są uwzględniane.|  
+|**Problemy z certyfikatami na urządzeniach przenośnych, które są zarządzane przez klienta programu Configuration Manager dla systemu Windows CE, które nie są w dobrej kondycji**|Wyświetla szczegółowe informacje dotyczące problemów z certyfikatami na urządzeniach przenośnych, które są zarządzane przez klienta programu Configuration Manager dla systemu Windows CE.|  
+|**Niepowodzenie wdrożenia klienta dla urządzeń przenośnych, które są zarządzane przez klienta programu Configuration Manager dla systemu Windows CE**|Wyświetla szczegółowe informacje dotyczące niepowodzenia wdrożenia na urządzeniach przenośnych, które są zarządzane przez klienta programu Configuration Manager dla systemu Windows CE.|  
+|**Szczegóły stanu wdrażania klienta dla urządzeń przenośnych, które są zarządzane przez klienta programu Configuration Manager dla systemu Windows CE**|Wyświetla informacje o stanie urządzeń przenośnych, które są zarządzane przez klienta programu Configuration Manager dla systemu Windows CE.|  
+|**Powodzenie wdrożenia klienta dla urządzeń przenośnych, które są zarządzane przez klienta programu Configuration Manager dla systemu Windows CE**|Wyświetla szczegółowe informacje dotyczące powodzenia wdrożenia na urządzeniach przenośnych, które są zarządzane przez klienta programu Configuration Manager dla systemu Windows CE.|  
+|**Problemy z komunikacją na urządzeniach przenośnych, które są zarządzane przez klienta programu Configuration Manager dla systemu Windows CE, które nie są w dobrej kondycji**|Ten raport zawiera szczegółowe informacje dotyczące problemów z komunikacją na urządzeniach przenośnych, które są zarządzane przez klienta programu Configuration Manager dla systemu Windows CE.|  
+|**Stan zgodności dla urządzeń przenośnych, które są zarządzane przez łącznik serwera Exchange**|Przedstawia podsumowanie stanu zgodności z domyślnymi zasadami skrzynki pocztowej programu Exchange ActiveSync dla urządzeń przenośnych zarządzanych przez łącznik serwera programu Exchange.|  
+|**Liczba urządzeń przenośnych według ustawień wyświetlania**|Przedstawia liczbę urządzeń przenośnych według ustawień wyświetlania.|  
+|**Liczba urządzeń przenośnych według systemu operacyjnego**|Przedstawia liczbę urządzeń przenośnych według systemu operacyjnego.|  
+|**Liczba urządzeń przenośnych według pamięci programu**|Przedstawia liczbę urządzeń przenośnych według pamięci programu.|  
+|**Liczba urządzeń przenośnych według konfiguracji pamięci magazynu**|Liczba urządzeń przenośnych według konfiguracji pamięci magazynu|  
+|**Informacje o kondycji urządzeń przenośnych, które są zarządzane przez klienta programu Configuration Manager dla systemu Windows CE**|Wyświetla szczegółowe informacje o kondycji urządzeń przenośnych, które są zarządzane przez klienta programu Configuration Manager dla systemu Windows CE.|  
+|**Podsumowanie kondycji urządzeń przenośnych, zarządzanych przez klienta programu Configuration Manager dla systemu Windows CE**|Wyświetla informacje podsumowania kondycji urządzeń przenośnych, które są zarządzane przez klienta programu Configuration Manager dla systemu Windows CE.|  
+|**Nieaktywne urządzenia przenośne, które są zarządzane przez łącznik serwera Exchange**|Przedstawia urządzenia przenośne zarządzane przez łącznik serwera programu Exchange, które nie łączyły się z serwerem programu Exchange w ciągu określonej liczby dni.|  
+|**Lista urządzeń zarejestrowanych przez użytkownika w programie Microsoft Intune**|Wyświetla wszystkie urządzenia, które użytkownik zarejestrował w usłudze Microsoft Intune.|  
+|**Lista urządzeń uporządkowana według stanu dostępu warunkowego**|Zawiera informacje o bieżącym stanie zgodności i dostępu warunkowego urządzeń. Tego raportu można używać z zasadami dostępu warunkowego. Ten raport jest dostępny od wersji 1602 programu Configuration Manager.|  
+|**Zgodność z dostępem warunkowym dla użytkownika**|Zawiera on szczegółowe informacje na temat zgodności z dostępem warunkowym dla określonego użytkownika, łącznie z nazwą urządzenia i platformą, stanem zgodności urządzenia i datą ostatniej oceny urządzenia. Ten raport jest dostępny od wersji 1602 programu Configuration Manager.|  
+|**Problemy z klientami lokalnymi na urządzeniach przenośnych, które są zarządzane przez klienta programu Configuration Manager dla systemu Windows CE, które nie są w dobrej kondycji**|Ten raport zawiera szczegółowe informacje na temat problemów z klientami lokalnymi na urządzeniach przenośnych, które są zarządzane przez klienta programu Configuration Manager dla systemu Windows CE.|  
+|**Informacje o kliencie urządzenia przenośnego**|Wyświetla informacje o urządzeniach przenośnych, które mają zainstalowanego klienta programu Configuration Manager. Z tego raportu można skorzystać, aby sprawdzić, które urządzenia przenośne mogą się pomyślnie komunikować z punktem zarządzania.|  
+|**Szczegóły zgodności urządzeń przenośnych dotyczące łącznika serwera Exchange**|Przedstawia szczegóły zgodności urządzenia przenośnego dla domyślnych zasad skrzynki pocztowej programu Exchange ActiveSync, które zostały skonfigurowane przy użyciu łącznika serwera programu Exchange.|  
+|**Urządzenia przenośne według systemu operacyjnego**|Przedstawia urządzenia przenośne według systemu operacyjnego.|  
+|**Urządzenia przenośne ze złamanymi ograniczeniami lub z odblokowanym**|Przedstawia urządzenia przenośne ze złamanymi ograniczeniami lub z odblokowanym dostępem.|  
+|**Urządzenia przenośne, które nie są zarządzane ponieważ mimo zarejestrowania nie zostały przypisane do lokacji**|Przedstawia urządzenia przenośne, które ukończyły rejestrację w programie Configuration Manager i mają certyfikat, ale nie można ukończyć przypisywanie lokacji.|  
+|**Urządzenia przenośne z określoną ilością wolnej pamięci programu**|Przedstawia wszystkie urządzenia przenośne z określoną ilością wolnej pamięci programu.|  
+|**Urządzenia przenośne z określoną ilością wolnej wymiennej pamięci magazynu**|Przedstawia wszystkie urządzenia przenośne z określoną ilością wolnej pamięci magazynu wymiennego.|  
+|**Urządzenia przenośne z problemami dotyczącymi odnowienia certyfikatu**|Przedstawia zarejestrowane urządzenia przenośne, którym nie udało się odnowić certyfikatu. Jeśli certyfikat nie zostanie odnowiony przed upływem okresu wygaśnięcia, urządzenie przenośne będzie niezarządzane.|  
+|**Urządzenia przenośne z niewielką ilością wolnej pamięci (poniżej wielkości określonej w KB) programu**|Przedstawia urządzenia przenośne, dla których pamięć programu jest mniejsza niż określony rozmiar w KB.|  
+|**Urządzenia przenośne z niskim wolnej wymiennej pamięci magazynu (poniżej wielkości określonej w KB)**|Przedstawia urządzenia przenośne, dla których pamięć magazynu wymiennego jest mniejsza niż określony rozmiar w KB.|  
+|**Liczba urządzeń zarejestrowanych przez użytkownika w usłudze Windows Intune**|Ten raport przedstawia użytkowników subskrypcję Microsoft Intune i z łączną liczbą urządzeń zarejestrowanych dla każdego użytkownika.|  
+|**Oczekujące żądania czyszczenia dla urządzeń przenośnych**|Przedstawia oczekujące żądania czyszczenia danych dla urządzeń przenośnych.|  
+|**Ostatnio zarejestrowane i przypisane urządzenia przenośne**|Przedstawia urządzenia przenośne, które ostatnio zarejestrowane w programie Configuration Manager i przypisane do lokacji.|  
+|**Ostatnio wyczyszczone urządzenia przenośne**|Przedstawia listę urządzeń przenośnych, które zostały ostatnio pomyślnie wyczyszczone.|  
+|**Ustawienia podsumowania dla urządzeń przenośnych, które są zarządzane przez łącznik serwera Exchange**|Przedstawia liczbę urządzeń przenośnych, na których zastosowano ustawienia poszczególnych zasad domyślnych skrzynek pocztowych Exchange ActiveSync, które są zarządzane przez łącznik serwera programu Exchange.|  
+|**Szczegółowy stan kluczy ładowania bezpośredniego systemu Windows RT**|Przedstawia szczegółowe informacje o stanie dla określonego klucza ładowania bezpośredniego w systemie Windows RT.|  
+|**Podsumowanie kluczy ładowania bezpośredniego systemu Windows RT**|Przedstawia stan kluczy ładowania bezpośredniego w systemie Windows RT.|  
 
-### <a name="driver-management"></a>드라이버 관리  
+### <a name="driver-management"></a>Zarządzanie sterownikami  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**모든 드라이버**|모든 드라이버의 목록이 표시됩니다.|  
-|**특정 플랫폼에 대한 모든 드라이버**|지정된 플랫폼에 대한 모든 드라이버가 표시됩니다.|  
-|**특정 부팅 이미지의 모든 드라이버**|지정된 부팅 이미지의 모든 드라이버가 표시됩니다.|  
-|**특정 범주의 모든 드라이버**|지정된 범주의 모든 드라이버가 표시됩니다.|  
-|**특정 패키지의 모든 드라이버**|지정한 패키지의 모든 드라이버가 표시됩니다.|  
-|**특정 드라이버의 범주**|지정된 드라이버의 범주가 표시됩니다.|  
-|**특정 컬렉션의 드라이버 설치에 실패한 컴퓨터**|지정된 컬렉션에 대해 드라이버 설치에 실패한 컴퓨터가 표시됩니다.|  
-|**특정 컬렉션에 대한 드라이버 카탈로그 일치 보고서**|지정된 컬렉션에 대한 드라이버 카탈로그 일치 보고서가 표시됩니다.|  
-|**특정 컴퓨터에 대한 드라이버 카탈로그 일치 보고서**|지정된 컴퓨터에 대한 드라이버 카탈로그 일치 보고서가 표시됩니다.|  
-|**특정 컴퓨터의 특정 장치에 대한 드라이버 카탈로그 일치 보고서**|지정된 컴퓨터의 지정된 장치에 대한 드라이버 카탈로그 일치 보고서가 표시됩니다.|  
-|**특정 장치가 포함된 특정 컬렉션의 컴퓨터에 대한 드라이버 카탈로그 일치 보고서**|지정한 장치가 포함된 지정한 컬렉션의 컴퓨터에 대한 드라이버 카탈로그 일치 보고서가 표시됩니다.|  
-|**특정 컴퓨터에서 설치에 실패한 드라이버**|지정된 컴퓨터에서 설치에 실패한 드라이버가 표시됩니다.|  
-|**특정 드라이버의 지원 플랫폼**|지정된 드라이버의 지원 플랫폼이 표시됩니다.|  
+|**Wszystkie sterowniki**|Przedstawia listę wszystkich sterowników.|  
+|**Wszystkie sterowniki dla określonej platformy**|Przedstawia wszystkie sterowniki dla określonej platformy.|  
+|**Wszystkie sterowniki w określonym obrazie rozruchowym**|Przedstawia wszystkie sterowniki w określonym obrazie rozruchowym.|  
+|**Wszystkie sterowniki określonej kategorii**|Przedstawia wszystkie sterowniki w określonej kategorii.|  
+|**Wszystkie sterowniki określonego pakietu**|Przedstawia wszystkie sterowniki w określonym pakiecie.|  
+|**Kategorie określonego sterownika**|Przedstawia kategorie dla określonego sterownika.|  
+|**Komputery, których nie powiodła się instalacja sterowników dla określonej kolekcji**|Przedstawia komputery, na których nie można zainstalować sterowników dla określonej kolekcji.|  
+|**Raport dla określonej kolekcji dopasowania katalogu sterowników**|Przedstawia raport dopasowania wykazu sterowników dla określonej kolekcji.|  
+|**Raport dla określonego komputera dopasowania katalogu sterowników**|Przedstawia raport dopasowania wykazu sterowników dla określonego komputera.|  
+|**Raport dla określonego urządzenia na określonym komputerze dopasowania katalogu sterowników**|Przedstawia raport dopasowania wykazu sterowników dla określonego urządzenia na określonym komputerze.|  
+|**Sterownik raport dopasowania wykazu dla komputerów w określonej kolekcji z określonym urządzeniem**|Przedstawia raport dopasowania wykazu sterowników dla komputerów w określonej kolekcji z określonym urządzeniem.|  
+|**Sterowniki, których nie można zainstalować na określonym komputerze**|Przedstawia sterowniki, których nie można zainstalować na określonym komputerze.|  
+|**Obsługiwane platformy dla określonego sterownika**|Przedstawia obsługiwane platformy dla określonego sterownika.|  
 
-### <a name="endpoint-protection"></a>Endpoint Protection  
+### <a name="endpoint-protection"></a>Program Endpoint Protection  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**맬웨어 방지 활동 보고서**|맬웨어 방지 활동 개요가 표시됩니다.|  
-|**맬웨어 방지 전체 상태 및 기록**|맬웨어 방지 전체 상태 및 기록이 표시됩니다.|  
-|**컴퓨터 맬웨어 세부 정보**|지정한 컴퓨터에 대한 세부 정보와 해당 컴퓨터에서 발견된 맬웨어의 목록이 표시됩니다.|  
-|**감염된 컴퓨터**|지정한 위협이 검색된 컴퓨터의 목록이 표시됩니다.|  
-|**위협별 상위 사용자**|가장 많은 위협이 검색된 사용자의 목록이 표시됩니다.|  
-|**사용자 위협 목록**|지정한 사용자 계정에 대해 발견된 위협의 목록이 표시됩니다.|  
+|**Raport aktywności ochrony przed złośliwym oprogramowaniem**|Przedstawia omówienie działania oprogramowania chroniącego przed złośliwym kodem.|  
+|**Ogólny stan ochrony przed złośliwym oprogramowaniem i historii**|Przedstawia ogólny stan i historię oprogramowania chroniącego przed złośliwym kodem.|  
+|**Szczegóły złośliwego oprogramowania na komputerze**|Przedstawia szczegółowe informacje dotyczące określonego komputera oraz listę zainstalowanego na nim złośliwego oprogramowania.|  
+|**Zainfekowane komputery**|Przedstawia listę komputerów, na których wykryto określone zagrożenie.|  
+|**Użytkownicy z największą liczbą zagrożeń**|Przedstawia listę użytkowników z największą liczbą wykrytych zagrożeń.|  
+|**Lista zagrożeń użytkownika**|Przedstawia listę zagrożeń znalezionych na określonym koncie użytkownika.|  
 
-### <a name="hardware---cd-rom"></a>하드웨어 - CD-ROM  
+### <a name="hardware---cd-rom"></a>Sprzęt — CD-ROM  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**특정 컴퓨터의 CD-ROM 정보**|지정한 컴퓨터의 CD-ROM 드라이브에 대한 정보가 표시됩니다.|  
-|**특정 CD-ROM 제조업체의 컴퓨터**|지정한 제조업체에서 만든 CD-ROM이 포함된 컴퓨터의 목록이 표시됩니다.|  
-|**제조업체별 CD-ROM 드라이브 수**|제조업체별 인벤토리에 포함된 CD-ROM의 수가 표시됩니다.|  
-|**기록 - 특정 컴퓨터의 CD-ROM 기록**|지정한 컴퓨터의 CD-ROM 드라이브에 대한 인벤토리 기록이 표시됩니다.|  
+|**Informacje o napędach CD-ROM dla określonego komputera**|Przedstawia informacje o napędach CD-ROM na określonym komputerze.|  
+|**Komputery dla określonego producenta napędów CD-ROM**|Przedstawia listę komputerów z napędem CD-ROM od określonego producenta.|  
+|**Liczba napędów CD-ROM według producentów**|Przedstawia liczbę napędów CD-ROM na producenta uwzględnionych w spisie.|  
+|**Historia - Historia napędów CD-ROM dla określonego komputera**|Przedstawia historię spisu napędów CD-ROM na określonym komputerze.|  
 
-### <a name="hardware---disk"></a>하드웨어 - 디스크  
+### <a name="hardware---disk"></a>Sprzęt — dysk  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**특정 하드 디스크 크기의 컴퓨터**|지정한 크기의 하드 디스크가 있는 컴퓨터의 목록이 표시됩니다.|  
-|**사용 가능한 디스크 공간이 부족한 컴퓨터(사용 가능한 공간으로 지정한 백분율(%) 미만)**|사용 가능한 디스크 공간이 지정된 크기보다 작은 지정된 컬렉션 내의 컴퓨터 목록이 표시됩니다.|  
-|**사용 가능한 디스크 공간이 부족한 컴퓨터(지정된 사용 가능한 MB 미만)**|디스크 공간이 부족한 컴퓨터 및 디스크 목록이 표시됩니다. 확인할 사용 가능한 디스크 공간의 양은 MB 단위로 지정됩니다.|  
-|**실제 디스크 구성 수**|인벤토리에 포함된 하드 디스크의 수가 디스크 용량을 기준으로 표시됩니다.|  
-|**특정 컴퓨터의 디스크 정보 - 논리 디스크**|지정한 컴퓨터의 논리 디스크에 대한 요약 정보가 표시됩니다.|  
-|**특정 컴퓨터의 디스크 정보 - 파티션**|지정한 컴퓨터의 디스크 파티션에 대한 요약 정보가 표시됩니다.|  
-|**특정 컴퓨터의 디스크 정보 - 실제 디스크**|지정한 컴퓨터의 실제 디스크에 대한 요약 정보가 표시됩니다.|  
-|**기록 - 특정 컴퓨터의 논리 디스크 공간 기록**|지정한 컴퓨터의 논리 디스크 드라이브에 대한 인벤토리 기록이 표시됩니다.|  
+|**Komputery z dyskami twardymi określonego rozmiaru**|Przedstawia listę komputerów z dyskami twardymi o określonym rozmiarze.|  
+|**Komputery z niewielką ilością wolnego miejsca (mniej niż określony %) na dysku**|Przedstawia listę komputerów w określonej kolekcji, które mają mniej wolnego miejsca na dysku niż określona wartość.|  
+|**Komputery z mało wolnego miejsca na dysku (mniejszą niż określona liczba MB)**|Przedstawia listę komputerów i dysków z małą ilością wolnego miejsca. Ilość wolnego miejsca do sprawdzenia jest wyrażona w megabajtach.|  
+|**Liczba konfiguracji dysku fizycznego**|Przedstawia liczbę dysków twardych w spisie uporządkowanych według pojemności dysku.|  
+|**Informacje o dyskach dla określonego komputera - dyski logiczne**|Przedstawia podsumowanie informacji o dyskach logicznych na określonym komputerze.|  
+|**Informacje o dyskach dla określonego komputera - partycje**|Przedstawia podsumowanie informacji o partycjach dysków na określonym komputerze.|  
+|**Informacje o dyskach dla określonego komputera - dyski fizyczne**|Przedstawia podsumowanie informacji o dyskach fizycznych na określonym komputerze.|  
+|**Historia - Historia miejsca na dyskach logicznych dla określonego komputera**|Przedstawia historię spisu napędów dysków logicznych na określonym komputerze.|  
 
-### <a name="hardware---general"></a>하드웨어 - 일반  
+### <a name="hardware---general"></a>Sprzęt — ogólne  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**특정 컴퓨터의 컴퓨터 정보**|지정한 컴퓨터에 대한 요약 정보가 표시됩니다.|  
-|**특정 작업 그룹 또는 도메인의 컴퓨터**|지정한 작업 그룹 또는 도메인의 컴퓨터 목록이 표시됩니다.|  
-|**특정 컬렉션에 할당된 인벤토리 클래스**|지정한 컬렉션에 할당된 인벤토리 클래스가 표시됩니다.|  
-|**특정 컴퓨터에서 지원하는 인벤토리 클래스**|지정한 컴퓨터에서 지원되는 인벤토리 클래스가 표시됩니다.|  
+|**Informacje dotyczące określonego komputera**|Przedstawia podsumowanie informacji o określonym komputerze.|  
+|**Komputery w określonej grupie roboczej lub domenie**|Przedstawia listę komputerów w określonej grupie roboczej lub domenie.|  
+|**Klasy spisu przypisane do określonej kolekcji**|Przedstawia klasy spisu przypisane do określonej kolekcji.|  
+|**Klasy spisu włączone na określonym komputerze**|Przedstawia klasy spisu włączone na określonym komputerze.|  
 
-### <a name="hardware---memory"></a>하드웨어 - 메모리  
+### <a name="hardware---memory"></a>Sprzęt — pamięć  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**실제 메모리가 변경된 컴퓨터**|마지막 인벤토리 주기 이후 RAM의 양이 변경된 컴퓨터의 목록이 표시됩니다.|  
-|**특정 메모리를 보유한 컴퓨터**|지정된 양의 RAM을 보유한 컴퓨터의 목록이 표시됩니다(총 실제 메모리를 가장 가까운 MB 단위 값으로 반올림함).|  
-|**메모리가 부족한 컴퓨터(지정된 MB 이하)**|메모리가 부족한 컴퓨터의 목록이 표시됩니다. 확인할 메모리의 양은 MB 단위로 지정됩니다.|  
-|**메모리 구성 수**|인벤토리에 포함된 컴퓨터의 수가 RAM의 양을 기준으로 표시됩니다.|  
-|**특정 컴퓨터의 메모리 정보**|지정한 컴퓨터의 메모리에 대한 요약 정보가 표시됩니다.|  
+|**Komputery których pamięć fizyczna uległa zmianie**|Przedstawia listę komputerów, na których ilość pamięci RAM zmieniła się od ostatniego cyklu spisu.|  
+|**Komputery z określoną ilością pamięci**|Przedstawia listę komputerów, które mają określoną ilość pamięci RAM (całkowita ilość pamięci fizycznej zaokrąglona do najbliższego MB).|  
+|**Komputery z niewielką ilością wolnej pamięci (mniejszą lub równą określonej w MB)**|Przedstawia listę komputerów z małą ilością pamięci. Ilość pamięci do sprawdzenia jest wyrażona w megabajtach.|  
+|**Liczba konfiguracji pamięci**|Przedstawia liczbę komputerów w spisie uporządkowanych według ilości pamięci RAM.|  
+|**Informacje o pamięci dla określonego komputera**|Przedstawia podsumowanie informacji o pamięci na określonym komputerze.|  
 
-### <a name="hardware---modem"></a>하드웨어 - 모뎀  
+### <a name="hardware---modem"></a>Sprzęt — Modem  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**특정 모뎀 제조업체의 컴퓨터**|지정한 제조업체에서 만든 모뎀이 포함된 컴퓨터 목록이 표시됩니다.|  
-|**제조업체별 모뎀 수**|각 모뎀 제조업체에 대해 인벤토리에 포함된 모뎀 수가 표시됩니다.|  
-|**특정 컴퓨터의 모뎀 정보**|지정한 컴퓨터의 모뎀에 대한 요약 정보가 표시됩니다.|  
+|**Komputery dla określonego producenta modemu**|Przedstawia listę komputerów z modemem oferowanym przez określonego producenta.|  
+|**Liczba modemów według producenta**|Przedstawia liczbę modemów w spisie dla każdego producenta modemów.|  
+|**Informacje dotyczące modemu dla pojedynczego komputera**|Przedstawia podsumowanie informacji o modemie na określonym komputerze.|  
 
-### <a name="hardware---network-adapter"></a>하드웨어 - 네트워크 어댑터  
+### <a name="hardware---network-adapter"></a>Sprzęt — karta sieciowa  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**특정 네트워크 어댑터를 포함하는 컴퓨터**|지정된 네트워크 어댑터를 포함하는 컴퓨터의 목록이 표시됩니다.|  
-|**유형별 네트워크 어댑터 수**|인벤토리에 포함된 각 유형의 네트워크 어댑터 카드 수가 표시됩니다.|  
-|**특정 컴퓨터의 네트워크 어댑터 정보**|지정한 컴퓨터에 설치되어 있는 네트워크 어댑터에 대한 정보가 표시됩니다.|  
+|**Komputery z określoną kartą sieciową**|Przedstawia listę komputerów z określoną kartą sieciową.|  
+|**Liczba kart sieciowych według typu**|Przedstawia liczbę kart sieciowych w spisie uporządkowanych według typu.|  
+|**Informacje dotyczące karty sieciowej dla określonego komputera**|Przedstawia informacje o kartach sieciowych zainstalowanych na określonym komputerze.|  
 
-### <a name="hardware---processor"></a>하드웨어 - 프로세서  
+### <a name="hardware---processor"></a>Sprzęt — procesor  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**특정 프로세서 속도의 컴퓨터**|지정한 속도의 프로세서가 있는 컴퓨터의 목록이 표시됩니다.|  
-|**고속 프로세서를 포함하는 컴퓨터(지정된 클럭 속도 이상)**|지정된 속도보다 빠른 프로세서가 있는 컴퓨터의 목록이 표시됩니다.|  
-|**저속 프로세서를 포함하는 컴퓨터(지정된 클럭 속도 이하)**|지정된 클럭 속도 이하로 실행되는 프로세서가 있는 컴퓨터의 목록이 표시됩니다.|  
-|**프로세서 속도 수**|인벤토리에 포함된 컴퓨터의 수가 프로세서 속도를 기준으로 표시됩니다.|  
-|**특정 컴퓨터의 프로세서 정보**|지정한 컴퓨터에 설치되어 있는 프로세서에 대한 정보가 표시됩니다.|  
+|**Komputery z procesorem o określonej szybkości**|Przedstawia listę komputerów z procesorem o określonej szybkości.|  
+|**Komputery wyposażone w szybkie procesory (większe niż lub równej określonej szybkości zegara)**|Przedstawia listę komputerów z procesorami o szybkości większej niż określona.|  
+|**Komputery wyposażone w wolne procesory (o szybkości mniejszej lub równej określonej szybkości zegara)**|Przedstawia listę komputerów z procesorami działającymi z określoną szybkością zegara lub wolniej.|  
+|**Liczba szybkości procesora**|Przedstawia liczbę komputerów w spisie uporządkowanych według szybkości procesora.|  
+|**Informacje dotyczące procesora dla pojedynczego komputera**|Przedstawia informacje o procesorach zainstalowanych na określonym komputerze.|  
 
-### <a name="hardware---scsi"></a>하드웨어 - SCSI  
+### <a name="hardware---scsi"></a>Sprzęt — SCSI  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**특정 SCSI 카드 유형을 포함하는 컴퓨터**|지정된 SCSI 카드가 설치되어 있는 컴퓨터의 목록이 표시됩니다.|  
-|**SCSI 카드 유형 수**|인벤토리에 포함된 SCSCI 카드의 수가 카드 유형을 기준으로 표시됩니다.|  
-|**특정 컴퓨터의 SCSI 카드 정보**|지정한 컴퓨터에 설치되어 있는 SCSI 카드에 대한 정보가 표시됩니다.|  
+|**Komputery z określoną kartą SCSI typem**|Przedstawia listę komputerów z zainstalowaną określoną kartą SCSI.|  
+|**Liczba typów kart SCSI**|Przedstawia liczbę kart SCSI w spisie uporządkowanych według typu karty.|  
+|**Informacje dotyczące karty SCSI dla pojedynczego komputera**|Przedstawia informacje o kartach SCSI zainstalowanych na określonym komputerze.|  
 
-### <a name="hardware---sound-card"></a>하드웨어 - 사운드 카드  
+### <a name="hardware---sound-card"></a>Sprzęt — karta dźwiękowa  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**특정 사운드 카드를 포함하는 컴퓨터**|지정한 사운드 카드를 포함하는 컴퓨터의 목록이 표시됩니다.|  
-|**사운드 카드 수**|인벤토리에 포함된 컴퓨터의 수가 각 사운드 카드 유형을 기준으로 표시됩니다.|  
-|**특정 컴퓨터의 사운드 카드 정보**|지정한 컴퓨터의 사운드 카드에 대한 요약 정보가 표시됩니다.|  
+|**Komputery z określoną kartą dźwiękową**|Przedstawia listę komputerów z określoną kartą dźwiękową.|  
+|**Liczba kart dźwiękowych**|Przedstawia liczbę komputerów w spisie uporządkowanych według typu karty dźwiękowej.|  
+|**Informacje o karty dźwiękowej dla pojedynczego komputera**|Przedstawia podsumowanie informacji o karcie dźwiękowej na określonym komputerze.|  
 
-### <a name="hardware---video-card"></a>하드웨어 - 비디오 카드  
+### <a name="hardware---video-card"></a>Sprzęt — karta wideo  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**특정 비디오 카드를 포함하는 컴퓨터**|지정된 비디오 카드를 포함하는 컴퓨터의 목록이 표시됩니다.|  
-|**유형별 비디오 카드 수**|컴퓨터에 설치되어 있는 모든 비디오 카드의 목록과 각 비디오 카드 유형의 수가 표시됩니다.|  
-|**특정 컴퓨터의 비디오 카드 정보**|지정한 컴퓨터에 설치되어 있는 비디오 카드에 대한 요약 정보가 표시됩니다.|  
+|**Komputery z określoną kartą graficzną**|Przedstawia listę komputerów z określoną kartą wideo.|  
+|**Liczba kart graficznych według typu**|Przedstawia listę wszystkich kart wideo zainstalowanych na komputerach oraz liczbę kart wideo każdego typu.|  
+|**Informacje dotyczące karty graficznej dla pojedynczego komputera**|Przedstawia informacje o kartach wideo zainstalowanych na określonym komputerze.|  
 
-### <a name="migration"></a>마이그레이션  
+### <a name="migration"></a>Migracja  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**제외 목록의 클라이언트**|마이그레이션에서 제외되는 클라이언트가 표시됩니다.|  
-|**Configuration Manager 컬렉션에 대한 종속성**|원본 계층의 컬렉션에 종속된 개체가 표시됩니다.|  
-|**마이그레이션 작업 속성**|이 보고서에는 지정한 마이그레이션 작업의 내용이 표시됩니다.|  
-|**마이그레이션 작업**|이 보고서에는 마이그레이션 작업의 목록이 표시됩니다.|  
-|**마이그레이션에 실패한 개체**|마지막 시도에서 마이그레이션에 실패한 개체의 목록이 표시됩니다.|  
+|**Klienci na liście wykluczeń**|Przedstawia klientów wykluczonych z migracji.|  
+|**Zależność od kolekcji programu Configuration manager**|Przedstawia obiekty zależne od kolekcji hierarchii źródłowej.|  
+|**Właściwości zadania migracji**|Przedstawia zawartość określonego zadania migracji.|  
+|**Zadania migracji**|Przedstawia listę zadań migracji.|  
+|**Obiekty niezmigrowane**|Przedstawia listę obiektów, dla których ostatnia próba migracji zakończyła się niepowodzeniem.|  
 
-### <a name="network"></a>네트워크  
+### <a name="network"></a>Sieć  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**서브넷별 IP 주소 수**|각 IP 서브넷에 대해 인벤토리에 포함된 IP 주소의 수가 표시됩니다.|  
-|**IP - 서브넷 마스크별 모든 서브넷**|IP 서브넷 및 서브넷 마스크의 목록이 표시됩니다.|  
-|**IP - 특정 서브넷의 컴퓨터**|지정된 IP 서브넷에 대한 IP 정보 및 컴퓨터 목록이 표시됩니다.|  
-|**IP - 특정 컴퓨터의 정보**|지정한 컴퓨터의 IP에 대한 요약 정보가 표시됩니다.|  
-|**IP - 특정 IP 주소의 정보**|지정한 IP 주소에 대한 요약 정보가 표시됩니다.|  
-|**MAC - 특정 MAC 주소의 컴퓨터**|지정한 MAC 주소를 사용하는 컴퓨터 이름 및 컴퓨터의 IP 주소가 표시됩니다.|  
+|**Liczba adresów IP według podsieci**|Przedstawia liczbę adresów IP w spisie dla każdej podsieci IP.|  
+|**IP - wszystkie podsieci według maski podsieci**|Przedstawia listę podsieci i masek podsieci IP.|  
+|**IP — komputery w określonej podsieci**|Przedstawia listę komputerów i informacje o adresie IP dla określonej podsieci IP.|  
+|**IP - informacje dotyczące określonego komputera**|Przedstawia podsumowanie informacji na temat adresu IP na określonym komputerze.|  
+|**IP - informacje dotyczące określonego adresu IP**|Przedstawia podsumowanie informacji na temat określonego adresu IP.|  
+|**MAC - komputery z określonym adresem MAC**|Przedstawia nazwę komputera i adres IP dla komputerów z określonym adresem MAC.|  
 
-### <a name="network-access-protection"></a>네트워크 액세스 보호  
+### <a name="network-access-protection"></a>Ochrona dostępu do sieci  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**소프트웨어 업데이트 배포 및 NAP 재구성에서 설치한 소프트웨어 업데이트의 비교 정보**|소프트웨어 업데이트 배포 및 NAP 재구성에서 설치한 소프트웨어 업데이트의 비교 요약이 표시됩니다.|  
-|**지정된 기간에 컴퓨터가 재구성되는 빈도**|이 보고서에는 지정한 기간 동안 컴퓨터가 재구성된 빈도가 표시됩니다.|  
-|**지정된 기간에 재구성을 통해 특정 소프트웨어 업데이트를 설치한 컴퓨터의 목록**|지정된 기간(일) 동안 재구성을 통해 지정된 소프트웨어 업데이트를 설치한 컴퓨터가 표시됩니다.|  
-|**선택한 소프트웨어 업데이트를 기반으로 하여 호환되지 않는 컴퓨터의 목록**|선택한 소프트웨어 업데이트에 기반하여 호환되지 않는 각 컴퓨터가 표시됩니다.|  
-|**NAP 서비스를 검색할 수 없는 컴퓨터의 목록**|NAP 서비스를 검색할 수 없는 컴퓨터의 목록이 표시됩니다.|  
-|**NAP 사용 가능 컴퓨터 목록**|NAP 서비스가 실행되고 있지 않거나 서비스 상태를 알 수 없는 컴퓨터의 목록이 표시됩니다.|  
-|**네트워크 액세스 보호 정책의 목록**|네트워크 액세스 보호 정책이 적용 날짜와 함께 표시됩니다.|  
-|**마지막 폴링 간격에서 재구성에 포함된 호환되지 않는 컴퓨터의 목록**|재구성에 포함된 호환되지 않는 컴퓨터의 목록이 마지막으로 확인된 평가 시간과 함께 표시됩니다.|  
-|**지정된 기간에 재구성에서 호환되지 않는 컴퓨터의 목록**|지정된 기간에 재구성에서 호환되지 않는 컴퓨터의 목록이 표시됩니다.|  
-|**지정된 기간에 재구성 실패 목록**|지정된 기간(일)의 재구성 실패 목록이 표시됩니다.|  
-|**재구성을 통해 설치된 소프트웨어 업데이트 목록**|지정된 기간 동안 재구성을 통해 설치된 소프트웨어 업데이트가 표시됩니다.|  
-|**마지막 폴링 간격에서 재구성에 포함된 호환되지 않는 컴퓨터의 요약 정보**|마지막 폴링 간격에서 재구성에 포함된 호환되지 않는 컴퓨터의 요약이 표시됩니다.|  
-|**지정된 기간에 재구성에 포함된 호환되지 않는 컴퓨터의 요약 정보**|지정된 기간에 재구성에 포함된 호환되지 않는 컴퓨터의 요약이 표시됩니다.|  
+|**Porównanie aktualizacji oprogramowania zainstalowanych przez wdrożenia aktualizacji oprogramowania i korygowanie translatora adresów SIECIOWYCH.**|Przedstawia podsumowanie porównania aktualizacji oprogramowania zainstalowanych w ramach wdrożeń aktualizacji oprogramowania i korekty ochrony dostępu do sieci.|  
+|**Częstotliwość komputer był podlegających korygowaniu w określonym przedziale czasu**|Przedstawia częstotliwość, z którą komputer był korygowany w określonym przedziale czasu.|  
+|**Lista komputerów które zainstalowana określona aktualizacja oprogramowania przy użyciu funkcji korygowania w określonym przedziale czasu**|Przedstawia listę komputerów, na których zainstalowano określoną aktualizację oprogramowania przy użyciu funkcji korygowania w określonym przedziale czasu (w dniach).|  
+|**Lista komputerów które będą niezgodne na podstawie wybranych aktualizacji oprogramowania**|Przedstawia listę komputerów, które będą niezgodne na podstawie wybranych aktualizacji oprogramowania.|  
+|**Lista komputerów, których nie można wykryć usługi translatora adresów SIECIOWYCH**|Przedstawia listę komputerów, na których nie można wykryć usługi ochrony dostępu do sieci.|  
+|**Lista komputerów uprawnionych ochrony dostępu do sieci**|Przedstawia listę komputerów, na których usługa ochrony dostępu do sieci nie została uruchomiona lub jej stan jest nieznany.|  
+|**Lista zasad translatora adresów sieciowych**|Przedstawia zasady ochrony dostępu do sieci oraz ich daty obowiązywania.|  
+|**Lista niezgodnych komputerów podlegających korygowaniu od ostatniego interwału sondowania**|Przedstawia listę niezgodnych komputerów podlegających korygowaniu oraz ich ostatnich znanych czasów oceny.|  
+|**Lista niezgodnych komputerów podlegających korygowaniu w określonym przedziale czasu**|Przedstawia listę niezgodnych komputerów podlegających korygowaniu w określonym przedziale czasu.|  
+|**Lista błędów korygowania w określonym przedziale czasu**|Przedstawia listę błędów korygowania dla określonej liczby dni.|  
+|**Lista aktualizacji oprogramowania zainstalowanych przy użyciu funkcji korygowania**|Przedstawia aktualizacje oprogramowania zainstalowane przy użyciu funkcji korygowania w określonym przedziale czasu.|  
+|**Podsumowanie niezgodnych komputerów podlegających korygowaniu od ostatniego interwału sondowania**|Przedstawia podsumowanie niezgodnych komputerów podlegających korygowaniu od ostatniego interwału sondowania.|  
+|**Podsumowanie niezgodnych komputerów podlegających korygowaniu w określonym przedziale czasu**|Przedstawia podsumowanie niezgodnych komputerów podlegających korygowaniu w określonym przedziale czasu.|  
 
-### <a name="operating-system"></a>운영 체제  
+### <a name="operating-system"></a>System operacyjny  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**컴퓨터 운영 체제 버전 기록**|지정한 컴퓨터의 운영 체제에 대한 인벤토리 기록이 표시됩니다.|  
-|**특정 운영 체제를 설치한 컴퓨터**|지정된 운영 체제를 설치한 컴퓨터가 표시됩니다.|  
-|**특정 운영 체제 및 서비스 팩을 설치한 컴퓨터**|지정된 운영 체제 및 서비스 팩을 설치한 컴퓨터가 표시됩니다.|  
-|**운영 체제 버전 수**|인벤토리에 포함된 컴퓨터의 수가 운영 체제를 기준으로 표시됩니다.|  
-|**운영 체제 및 서비스 팩 수**|인벤토리에 포함된 컴퓨터의 수가 운영 체제 및 서비스 팩 조합을 기준으로 표시됩니다.|  
-|**서비스 - 특정 서비스를 실행하는 컴퓨터**|지정된 서비스를 실행하는 컴퓨터의 목록이 표시됩니다.|  
-|**서비스 - 원격 액세스 서버를 실행하는 컴퓨터**|원격 액세스 서버를 실행하는 컴퓨터의 목록이 표시됩니다.|  
-|**서비스 - 특정 컴퓨터의 서비스 정보**|지정한 컴퓨터의 서비스에 대한 요약 정보가 표시됩니다.|  
-|**Windows Server 컴퓨터**|Windows Server 운영 체제를 실행하는 컴퓨터의 목록이 표시됩니다.|  
+|**Historia wersji systemu operacyjnego na komputerze**|Przedstawia historię spisu dla systemu operacyjnego na określonym komputerze.|  
+|**Komputery z określonym systemem operacyjnym**|Przedstawia komputery z określonym systemem operacyjnym.|  
+|**Komputery z określonym systemem operacyjnym i dodatkiem service pack**|Przedstawia komputery z określonym systemem operacyjnym i dodatkiem Service Pack.|  
+|**Liczba wersji systemu operacyjnego**|Przedstawia liczbę komputerów w spisie uporządkowanych według systemu operacyjnego.|  
+|**Liczba systemów operacyjnych i dodatków service pack**|Przedstawia liczbę komputerów w spisie uporządkowanych według kombinacji systemu operacyjnego i dodatku Service Pack.|  
+|**Usługi - komputery z uruchomioną określoną usługą**|Przedstawia listę komputerów z uruchomioną określoną usługą.|  
+|**Usługi - komputery z uruchomionym serwerem dostępu zdalnego**|Przedstawia listę komputerów z uruchomionym serwerem dostępu zdalnego.|  
+|**Usługi - informacje dotyczące określonego komputera usług**|Przedstawia podsumowanie informacji o usługach na określonym komputerze.|  
+|**Komputery z systemem Windows Server**|Przedstawia listę komputerów z systemem operacyjnym Windows Server.|  
 
-### <a name="out-of-band-management"></a>대역 외 관리  
+### <a name="out-of-band-management"></a>Zarządzanie poza pasmem  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**대역 외 관리 컨트롤러를 포함하는 컴퓨터**|대역 외 관리 컨트롤러를 포함하는 컴퓨터의 목록이 표시됩니다.|  
-|**대역 외 관리 콘솔 활동**|대역 외 관리 콘솔 활동을 식별하는 상태 메시지 목록이 표시됩니다.|  
-|**대역 외 관리로 프로비전된 클라이언트 상태**|대역 외 관리로 프로비전된 컴퓨터의 목록이 표시됩니다.|  
+|**Komputery z kontrolerami zarządzania poza pasmem**|Przedstawia listę komputerów z kontrolerami zarządzania poza pasmem.|  
+|**Poza aktywność konsoli zarządzania poza pasmem**|Przedstawia listę komunikatów o stanie identyfikujących aktywność konsoli zarządzania poza pasmem.|  
+|**Stan zainicjowania klientem poza pasmem zarządzania**|Przedstawia listę komputerów, których obsługa administracyjna została zainicjowana na potrzeby zarządzania poza pasmem.|  
 
-### <a name="power-management"></a>전원 관리  
+### <a name="power-management"></a>Zarządzanie energią  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**전원 관리 - 컴퓨터 활동**|지정한 기간 동안 지정된 컬렉션에 대한 모니터, 컴퓨터 및 사용자 활동을 보여 주는 그래프가 표시됩니다.|  
-|**전원 관리 - 컴퓨터별 컴퓨터 활동**|지정한 날짜의 지정된 컴퓨터에 대한 모니터, 컴퓨터 및 사용자 활동을 보여 주는 그래프가 표시됩니다.|  
-|**전원 관리 - 컴퓨터 활동 세부 정보**|지정한 날짜와 시간에 대한 지정된 컬렉션 내 컴퓨터의 절전 모드 및 절전 모드 해제 기능 목록이 표시됩니다.|  
-|**전원 관리 - 컴퓨터 세부 정보**|지정한 컴퓨터에 적용되는 전원 기능, 전원 설정 및 전원 관리 옵션에 대한 세부 정보가 표시됩니다.|  
-|**전원 관리 - 컴퓨터가 세부 정보를 보고하지 않음**|지정한 날짜와 시간에 전원 활동을 보고하지 않은 컴퓨터의 목록이 표시됩니다.|  
-|**전원 관리 - 제외된 컴퓨터**|전원 관리 옵션에서 제외되는 컴퓨터의 목록이 표시됩니다.|  
-|**전원 관리 - 전원 계획이 여러 개인 컴퓨터**|서로 충돌하는 여러 전원 설정이 적용된 컴퓨터의 목록이 표시됩니다.|  
-|**전원 관리 - 에너지 소비량**|지정한 기간 동안 지정된 컬렉션에 대한 총 월별 에너지 소비량(kWh)을 표시합니다.|  
-|**전원 관리 - 일별 에너지 소비량**|지난 31일 동안 지정된 컬렉션의 총 에너지 소비량(kWh)이 표시됩니다.|  
-|**전원 관리 - 에너지 비용**|지정한 기간 동안 지정된 컬렉션의 총 월별 에너지 소비 비용이 표시됩니다.|  
-|**전원 관리 - 일별 에너지 비용**|지난 31일 동안 지정된 컬렉션의 총 에너지 소비 비용이 표시됩니다.|  
-|**전원 관리 - 환경 효과**|지정한 기간 동안 지정된 컬렉션에서 생성된 CO2 방출량을 보여 주는 그래프가 표시됩니다.|  
-|**전원 관리 - 일별 환경 효과**|지난 31일 동안 지정된 컬렉션에서 생성된 CO2 방출량을 보여 주는 그래프가 표시됩니다.|  
-|**전원 관리 - 절전 모드 불가 컴퓨터 세부 정보**|지정한 기간 동안 절전 모드 또는 최대 절전 모드로 전환되지 않은 컴퓨터에 대한 세부 정보가 표시됩니다.|  
-|**전원 관리 - 절전 모드 불가 보고서**|컴퓨터가 절전 모드 또는 최대 절전 모드로 전환하지 못한 일반적인 이유 목록과 지정한 기간 동안 각 원인의 영향을 받은 컴퓨터의 수가 표시됩니다.|  
-|**전원 관리 - 전원 기능**|지정된 컬렉션에 포함된 컴퓨터의 전원 관리 기능이 표시됩니다.|  
-|**전원 관리 - 전원 설정**|지정된 컬렉션에 포함된 컴퓨터에서 사용하는 전원 설정의 집계된 목록이 표시됩니다.|  
-|**전원 관리 - 전원 설정 세부 정보**|**전원 관리 - 전원 설정** 보고서에 지정된 컴퓨터에 대한 추가 정보를 표시하는 데 사용됩니다.|  
+|**Zarządzanie energią - aktywność komputera**|Przedstawia wykres aktywności monitora, komputera i użytkownika dla określonej kolekcji w określonym przedziale czasu.|  
+|**Zarządzanie energią - aktywność komputera według komputera**|Przedstawia wykres aktywności monitora, komputera i użytkownika dla określonego komputera w określonym dniu.|  
+|**Zarządzanie energią - szczegóły aktywności komputera**|Przedstawia listę możliwości uśpienia i przebudzenia komputerów w określonej kolekcji w określonym dniu i o określonej godzinie.|  
+|**Zarządzanie energią — szczegóły komputera**|Przedstawia szczegółowe informacje na temat możliwości zasilania, ustawień zasilania i planów zasilania zastosowanych na określonym komputerze.|  
+|**Zarządzanie energią - szczegóły komputerów bez zgłoszeń**|Przedstawia listę komputerów niezgłaszających żadnej aktywności związanej z zasilaniem dla określonej daty i godziny.|  
+|**Zarządzanie energią — wykluczone komputery**|Przedstawia listę komputerów wykluczonych z planu zasilania.|  
+|**Zarządzanie energią - komputery z wieloma planami zasilania**|Przedstawia listę komputerów, na których zastosowano wiele ustawień zasilania powodujących konflikt.|  
+|**Zarządzanie energią - pobór energii**|Przedstawia całkowite miesięczne zużycie energii (w kWh) dla określonej kolekcji w określonym przedziale czasu.|  
+|**Zarządzanie energią - pobór energii wg dnia**|Przedstawia całkowite zużycie energii (w kWh) dla określonej kolekcji w ciągu ostatnich 31 dni.|  
+|**Zarządzanie energią - koszt energii**|Przedstawia całkowity miesięczny koszt zużycia energii dla określonej kolekcji w określonym przedziale czasu.|  
+|**Zarządzanie energią - koszt energii wg dnia**|Przedstawia całkowity koszt zużycia energii dla określonej kolekcji w ciągu ostatnich 31 dni.|  
+|**Zarządzanie energią — wpływ na środowisko**|Przedstawia wykres emisji dwutlenku węgla (CO2) generowanego przez określoną kolekcję w określonym przedziale czasu.|  
+|**Zarządzanie energią — wpływ na środowisko wg dnia**|Przedstawia wykres emisji dwutlenku węgla (CO2) generowanego przez określoną kolekcję w ciągu ostatnich 31 dni.|  
+|**Zarządzanie energią - szczegóły braku usypiania komputera**|Przedstawia szczegółowe informacje dotyczące komputerów, które nie były wprowadzane w stan uśpienia ani hibernacji w określonym przedziale czasu.|  
+|**Zarządzanie energią — raport o braku usypiania**|Przedstawia listę typowych przyczyn, które uniemożliwiały włączanie stanu uśpienia i hibernacji na komputerach, oraz liczbę komputerów, których te przyczyny dotyczyły, w określonym przedziale czasu.|  
+|**Zarządzanie energią — możliwości zasilania**|Przedstawia możliwości zarządzania energią dla komputerów w określonej kolekcji.|  
+|**Zarządzanie energią — ustawienia zasilania**|Przedstawia zagregowaną listę ustawień zasilania używanych na komputerach w określonej kolekcji.|  
+|**Zarządzanie energią - szczegóły ustawień zasilania**|Używane, aby wyświetlić więcej informacji o komputerach, które zostały określone w **zarządzanie energią — ustawienia zasilania** raportu.|  
 
-### <a name="replication-traffic"></a>복제 트래픽  
+### <a name="replication-traffic"></a>Ruch związany z replikacją  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**링크당 전역 데이터 복제 트래픽(꺾은선형 차트)**|지정한 기간(일) 동안의 지정된 링크에 대한 총 전역 데이터 복제 트래픽이 표시됩니다.|  
-|**링크당 전체 데이터 복제 트래픽(원형 차트)**|지정한 기간(일) 동안의 지정된 링크에 대한 총 전역 데이터 복제 트래픽이 표시됩니다.|  
-|**링크별 계층 복제 트래픽**|지정한 기간(일) 동안 계층의 각 링크에 대한 총 복제 트래픽이 표시됩니다.|  
-|**링크당 계층 상위 10개 복제 그룹의 트래픽(원형 차트)**|링크를 통해 식별된 전체 계층의 상위 10개 복제 그룹에 대한 복제 트래픽이 표시됩니다.|  
-|**링크 복제 트래픽**|지정한 기간(일) 동안의 모든 데이터에 대한 총 복제 트래픽이 표시됩니다.|  
-|**링크당 복제 그룹 트래픽**|지정한 기간(일) 동안의 지정된 데이터베이스 복제 링크에 대한 복제 그룹 네트워크 트래픽이 표시됩니다.|  
-|**링크당 사이트 데이터 복제 트래픽(꺾은선형 차트)**|지정한 기간(일) 동안의 지정된 링크에 대한 총 사이트 데이터 복제 트래픽이 표시됩니다.|  
-|**링크당 사이트 데이터 복제 트래픽(원형 차트)**|지정한 기간(일) 동안의 지정된 링크에 대한 총 사이트 데이터 복제 트래픽이 표시됩니다.|  
-|**총 계층 복제 트래픽(꺾은선형 차트)**|지정한 기간(일) 동안 모든 링크의 각 방향에 대한 계층 집계 전역 및 사이트 데이터 복제가 표시됩니다.|  
-|**총 계층 복제 트래픽(원형 차트)**|지정한 기간(일) 동안 모든 링크의 각 방향에 대한 계층 집계 전역 및 사이트 데이터 복제가 표시됩니다.|  
+|**Globalny danych replikacji ruchu na jedno łącze (wykres liniowy)**|Przedstawia całkowity ruch związany z replikacją danych globalnych za pomocą określonego linku dla określonej liczby dni.|  
+|**Globalny danych replikacji ruchu na jedno łącze (wykres kołowy)**|Przedstawia całkowity ruch związany z replikacją danych globalnych za pomocą określonego linku dla określonej liczby dni.|  
+|**Ruch związany z replikacją hierarchii według łącza**|Przedstawia całkowity ruch związany z replikacją dla każdego linku w hierarchii w ciągu określonej liczby dni.|  
+|**Hierarchii pierwszych dziesięciu replikacji grupy ruchu na jedno łącze (wykres kołowy)**|Przedstawia ruch związany z replikacją dla dziesięciu najczęściej używanych grup replikacji w całej hierarchii, które są identyfikowane za pomocą linku.|  
+|**Ruch związany z replikacją łącza**|Przedstawia całkowity ruch związany z replikacją dla wszystkich danych w ciągu określonej liczby dni.|  
+|**Ruch związany z grupami replikacji na jedno łącze**|Przedstawia ruch sieciowy związany z grupami replikacji dla określonego linku replikacji bazy danych w ciągu określonej liczby dni.|  
+|**Witryna danych replikacji ruchu na jedno łącze (wykres liniowy)**|Przedstawia całkowity ruch związany z replikacją danych lokacji za pomocą określonego linku w ciągu określonej liczby dni.|  
+|**Witryna danych replikacji ruchu na jedno łącze (wykres kołowy)**|Przedstawia całkowity ruch związany z replikacją danych lokacji za pomocą określonego linku w ciągu określonej liczby dni.|  
+|**Całkowita liczba replikacją hierarchii (wykres liniowy)**|Przedstawia replikację zagregowanych danych hierarchii — lokacji i globalnych — w każdym kierunku linku w ciągu określonej liczby dni.|  
+|**Całkowita liczba replikacją hierarchii (wykres kołowy)**|Przedstawia replikację zagregowanych danych hierarchii — lokacji i globalnych — w każdym kierunku linku w ciągu określonej liczby dni.|  
 
-### <a name="site---client-information"></a>사이트 - 클라이언트 정보  
+### <a name="site---client-information"></a>Lokacja — informacje o kliencie  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**클라이언트 할당 세부 상태 보고서**|클라이언트 할당 상태에 대한 세부 정보가 표시됩니다.|  
-|**클라이언트 할당 실패 세부 정보**|클라이언트 할당 실패에 대한 세부 정보가 표시됩니다.|  
-|**클라이언트 할당 상태 세부 정보**|클라이언트 할당 상태에 대한 개요 정보가 표시됩니다.|  
-|**클라이언트 할당 성공 세부 정보**|정상적으로 할당된 클라이언트에 대한 세부 정보가 표시됩니다.|  
-|**클라이언트 배포 실패 보고서**|배포에 실패한 클라이언트에 대한 세부 정보가 표시됩니다.|  
-|**클라이언트 배포 상태 세부 정보**|클라이언트 설치 상태에 대한 요약 정보가 표시됩니다.|  
-|**클라이언트 배포 성공 보고서**|정상적으로 배포된 클라이언트에 대한 세부 정보가 표시됩니다.|  
-|**HTTPS 통신이 불가능한 클라이언트**|HTTPS Communication Readiness Tool을 실행했으며 HTTPS에서 통신이 불가능하다고 보고된 사이트의 각 클라이언트에 대한 세부 정보가 표시됩니다.|  
-|**할당되었지만 특정 사이트에 설치되지 않은 컴퓨터**|지정한 사이트에 할당되었지만 해당 사이트에 보고는 하지 않는 컴퓨터의 목록이 표시됩니다.|  
-|**특정 Configuration Manager 클라이언트 버전을 포함하는 컴퓨터**|Configuration Manager 클라이언트 소프트웨어의 지정된 버전을 실행하는 컴퓨터의 목록이 표시됩니다.|  
-|**통신에 사용되는 프로토콜 및 클라이언트 수**|클라이언트가 사용하는 통신 방법(HTTP 또는 HTTPS)의 요약이 표시됩니다.|  
-|**각 사이트에 할당 및 설치된 클라이언트 수**|각 사이트에 대해 할당 및 설치된 컴퓨터의 수가 표시됩니다. 네트워크 위치가 여러 사이트에 연결된 클라이언트는 해당 사이트에 보고하는 경우에만 설치된 클라이언트로 계산됩니다.|  
-|**HTTPS 통신이 가능한 클라이언트 수**|HTTPS Communication Readiness Tool을 실행했으며 HTTPS에서 통신이 가능하거나 불가능하다고 보고된 사이트의 각 클라이언트에 대한 세부 정보가 표시됩니다.|  
-|**각 사이트에 대한 클라이언트 수**|사이트 코드로 설치된 Configuration Manager 클라이언트 수가 표시됩니다.|  
-|**클라이언트 버전별 Configuration Manager 클라이언트 수**|검색된 컴퓨터 수가 Configuration Manager 클라이언트 버전을 기준으로 표시됩니다.|  
-|**지정된 컬렉션의 대체 상태 지점에 보고된 문제 세부 정보**|지정한 컬렉션 내 클라이언트에 대체 상태 지점이 할당된 경우 해당 클라이언트가 보고한 문제에 대한 세부 정보가 표시됩니다.|  
-|**지정된 사이트의 대체 상태 지점에 보고된 문제 세부 정보**|지정한 사이트 내 클라이언트에 대체 상태 지점이 할당된 경우 해당 클라이언트가 보고한 문제에 대한 세부 정보가 표시됩니다.|  
-|**대체 상태 지점에 보고된 문제의 요약 정보**|클라이언트에 대체 상태 지점이 할당된 경우 해당 클라이언트가 보고한 모든 문제에 대한 정보가 표시됩니다.|  
-|**지정된 컬렉션의 대체 상태 지점에 보고된 문제의 요약 정보**|지정한 컬렉션 내 클라이언트에 대체 상태 지점이 할당된 경우 해당 클라이언트가 보고한 문제에 대한 요약 정보가 표시됩니다.|  
+|**Raport o stanie szczegółowym przypisywania klienta**|Przedstawia szczegółowe informacje na temat stanu przypisywania klientów.|  
+|**Szczegóły niepowodzenia przypisywania klienta**|Przedstawia szczegółowe informacje na temat niepowodzeń przypisywania klientów.|  
+|**Szczegóły stanu przypisywania klientów**|Przedstawia omówienie stanu przypisywania klientów.|  
+|**Szczegóły powodzenia przypisywania klienta**|Przedstawia szczegółowe informacje na temat pomyślnie przypisanych klientów.|  
+|**Raport niepowodzeń wdrażania klientów**|Przedstawia szczegółowe informacje na temat klientów, których nie można było wdrożyć.|  
+|**Szczegóły stanu wdrożenia klienta**|Przedstawia podsumowanie informacji na temat stanu instalacji klientów.|  
+|**Raport powodzeń wdrażania klientów**|Przedstawia szczegółowe informacje na temat klientów, którzy zostali pomyślnie wdrożeni.|  
+|**Klienci bez możliwości komunikacji protokołu HTTPS**|Przedstawia szczegółowe informacje na temat każdego klienta w lokacji, dla którego uruchomiono narzędzie sprawdzania gotowości do komunikacji przy użyciu protokołu HTTPS i który został zgłoszony jako klient bez możliwości komunikacji przy użyciu protokołu HTTPS.|  
+|**Komputery przypisane, ale niezainstalowane dla określonej lokacji**|Przedstawia listę komputerów, które zostały przypisane do określonej lokacji, ale raportowanie nie odbywa się w tej lokacji.|  
+|**Komputery z określoną wersją klienta programu Configuration Manager**|Wyświetla listę komputerów z określoną wersją oprogramowania klienckiego programu Configuration Manager.|  
+|**Liczba klientów i protokół używany do komunikacji**|Przedstawia podsumowanie metod komunikacji używanych przez klientów (protokół HTTP lub HTTPS).|  
+|**Liczba klientów przypisanych i zainstalowanych dla każdej lokacji**|Przedstawia liczbę komputerów przypisanych i zainstalowanych w każdej lokacji. Klienci z lokalizacją sieciową skojarzoną z wieloma lokacjami są traktowani jako zainstalowani, jeśli ich raportowanie dotyczy tej lokacji.|  
+|**Liczba klientów z obsługą komunikacji protokołu HTTPS**|Przedstawia szczegółowe informacje na temat każdego klienta w lokacji, dla którego uruchomiono narzędzie sprawdzania gotowości do komunikacji przy użyciu protokołu HTTPS i który został zgłoszony jako klient z możliwością komunikacji przy użyciu protokołu HTTPS lub bez tej możliwości.|  
+|**Liczba klientów dla każdej lokacji**|Wyświetla liczbę klientów programu Configuration Manager zainstalowane według kodu lokacji.|  
+|**Klientów liczba programu Configuration Manager według wersji klienta**|Wyświetla liczbę komputerów wykrytych przez wersję klienta programu Configuration Manager.|  
+|**Szczegóły problemu raportowanego do punktu stanu powrotu dla określonej kolekcji**|Przedstawia szczegółowe informacje na temat problemów zgłoszonych przez klientów w określonej kolekcji, jeśli przypisano do nich rezerwowy punkt stanu.|  
+|**Szczegóły problemu raportowanego do punktu stanu powrotu dla określonej lokacji**|Przedstawia szczegółowe informacje na temat problemów zgłoszonych przez klientów w określonej lokacji, jeśli przypisano do nich rezerwowy punkt stanu.|  
+|**Podsumowanie problemów raportowanych do punktu stanu powrotu**|Przedstawia informacje na temat wszystkich problemów zgłoszonych przez klientów, jeśli przypisano do nich rezerwowy punkt stanu.|  
+|**Podsumowanie problemów raportowanych do punktu stanu powrotu dla określonej kolekcji**|Przedstawia podsumowanie informacji na temat problemów zgłoszonych przez klientów w określonej kolekcji, jeśli przypisano do nich rezerwowy punkt stanu.|  
 
-### <a name="site---discovery-and-inventory-information"></a>사이트 - 검색 및 인벤토리 정보  
+### <a name="site---discovery-and-inventory-information"></a>Lokacja — odnajdywania i informacje o spisie  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**최근에 보고하지 않은 클라이언트(지정된 기간(일) 내)**|지정한 기간(일) 동안 검색 데이터, 하드웨어 인벤토리 또는 소프트웨어 인벤토리를 보고하지 않은 클라이언트의 목록이 표시됩니다.|  
-|**특정 사이트에서 검색된 컴퓨터**|지정한 사이트에서 검색된 모든 컴퓨터의 목록과 가장 최근 검색의 날짜가 표시됩니다.|  
-|**검색 방법으로 최근 검색된 컴퓨터**|지정한 기간(일) 이내에 검색된 컴퓨터의 목록과 해당 컴퓨터를 검색한 에이전트의 목록이 표시됩니다. 여러 에이전트에서 검색한 컴퓨터는 목록에 두 번 이상 표시될 수 있습니다.|  
-|**최근 검색되지 않은 컴퓨터(지정된 기간(일) 내)**|최근에 검색되지 않은 컴퓨터의 목록과 해당 컴퓨터가 검색된 이후 경과된 기간(일)이 표시됩니다.|  
-|**최근 인벤토리에 포함되지 않은 컴퓨터(지정된 기간(일) 내)**|최근에 인벤토리에 포함되지 않은 컴퓨터의 목록과 해당 컴퓨터가 마지막으로 인벤토리에 포함된 시간이 표시됩니다.|  
-|**동일한 Configuration Manager 고유 식별자를 공유할 수 있는 컴퓨터**|이름이 변경된 컴퓨터의 목록이 표시됩니다. 다른 컴퓨터와 Configuration Manager 고유 식별자를 공유하는 컴퓨터의 경우 이름 변경 증상이 나타날 수 있습니다.|  
-|**중복 MAC 주소의 컴퓨터**|MAC 주소를 공유하는 컴퓨터가 표시됩니다.|  
-|**리소스 도메인 또는 작업 그룹에 있는 컴퓨터 수**|각 리소스 도메인 또는 작업 그룹의 컴퓨터 수가 표시됩니다.|  
-|**특정 컴퓨터의 검색 정보**|지정한 컴퓨터를 검색한 에이전트와 사이트의 목록이 표시됩니다.|  
-|**특정 컴퓨터의 인벤토리 날짜**|지정한 컴퓨터에서 인벤토리를 마지막으로 실행한 날짜와 시간이 표시됩니다.|  
+|**Klienci, którzy nie zgłosili się ostatnio (w ciągu określonej liczby dni)**|Przedstawia listę klientów, którzy nie raportowali danych odnajdowania, spisu sprzętu ani spisu oprogramowania w ciągu określonej liczby dni.|  
+|**Komputery odnalezione przez określoną lokację**|Przedstawia listę wszystkich komputerów wykrytych według określonej lokacji i daty ostatniego odnajdowania.|  
+|**Komputery odnalezione ostatnio według metody odnajdywania**|Przedstawia listę komputerów, które zostały odnalezione w ciągu określonej liczby dni, oraz listę agentów, którzy je odnaleźli. Komputer może pojawić się więcej niż jeden raz na liście, jeśli został odnaleziony przez wielu agentów.|  
+|**Komputery nieodnalezione ostatnio (w ciągu określonej liczby dni)**|Przedstawia listę komputerów, które nie zostały ostatnio odnalezione, i liczbę dni od momentu ich odnalezienia.|  
+|**Komputery niespisane ostatnio (w ciągu określonej liczby dni)**|Przedstawia liczbę komputerów, które nie były ostatnio umieszczane w spisie, oraz czas ich ostatniego umieszczenia w spisie.|  
+|**Komputery, które mogą współdzielić sam Unikatowy identyfikator programu Configuration Manager**|Przedstawia listę komputerów, których nazwy zostały zmienione. Zmiana nazwy jest możliwym objawem dwa komputera identyfikatora unikatowego programu Configuration Manager z innego komputera.|  
+|**Komputery ze zduplikowanymi adresami MAC**|Przedstawia komputery korzystające z tego samego adresu MAC.|  
+|**Liczba komputerów w domenach zasobów lub grupach roboczych**|Przedstawia liczbę komputerów w każdej grupie roboczej lub domenie zasobów.|  
+|**Informacje dotyczące odnajdywania określonego komputera**|Przedstawia listę agentów i lokacji, przy użyciu których odnaleziono określony komputer.|  
+|**Daty spisu dla określonego komputera**|Przedstawia datę i godzinę ostatniego uruchomienia spisu na określonym komputerze.|  
 
-### <a name="site---general"></a>사이트 - 일반  
+### <a name="site---general"></a>Lokacja — ogólne  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**특정 사이트의 컴퓨터**|지정한 사이트의 클라이언트 컴퓨터 목록이 표시됩니다.|  
-|**계층의 사이트 상태**|계층의 사이트 목록이 사이트 버전 및 사이트 상태 정보와 함께 표시됩니다.|  
-|**계층 내 Configuration Manager 업데이트의 상태**|계층 구조의 Configuration Manager 사이트 업데이트에 대한 정보가 표시됩니다.|  
+|**Komputery w określonej lokacji**|Przedstawia listę komputerów w określonej lokacji.|  
+|**Stan lokacji w hierarchii**|Przedstawia listę lokacji w hierarchii oraz informacje na temat wersji i stanu lokacji.|  
+|**Stan aktualizacji programu Configuration Manager w hierarchii**|Wyświetla informacje o aktualizacji lokacji programu Configuration Manager w hierarchii.|  
 
-### <a name="site---server-information"></a>사이트 - 서버 정보  
+### <a name="site---server-information"></a>Lokacja — informacje o serwerze  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**특정 사이트의 사이트 시스템 역할 및 사이트 시스템 서버**|지정된 사이트에 대한 사이트 시스템 서버 및 해당 사이트 시스템 역할 목록이 표시됩니다.|  
+|**Role systemu lokacji i serwery systemu lokacji dla określonej lokacji**|Przedstawia listę serwerów systemu lokacji i ich ról systemu lokacji dla określonej lokacji.|  
 
-### <a name="software---companies-and-products"></a>소프트웨어 - 회사 및 제품  
+### <a name="software---companies-and-products"></a>Oprogramowanie — firmy i produkty  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**특정 소프트웨어 회사의 인벤토리에 포함된 모든 제품**|지정한 소프트웨어 회사의 인벤토리에 포함된 소프트웨어 제품 및 버전 목록이 표시됩니다.|  
-|**모든 소프트웨어 회사**|인벤토리에 포함된 소프트웨어를 제조하는 모든 회사의 목록이 표시됩니다.|  
-|**모든 Windows 앱**|설치된 Windows 앱의 요약이 응용 프로그램 이름, 아키텍처 또는 게시자에 대한 검색 기준에 따라 인스턴스 수를 기준으로 정렬되어 표시됩니다.|  
-|**특정 제품이 있는 컴퓨터**|지정한 제품이 인벤토리에 포함된 컴퓨터 및 해당 제품의 버전 목록이 표시됩니다.|  
-|**특정 제품 이름과 버전의 컴퓨터**|지정한 버전의 제품이 인벤토리에 포함된 컴퓨터의 목록이 표시됩니다.|  
-|**프로그램 추가 제거에 특정 소프트웨어가 등록된 컴퓨터**|지정한 소프트웨어가 프로그램 추가/제거 또는 프로그램 및 기능에 등록된 모든 컴퓨터의 요약이 표시됩니다.|  
-|**인벤토리에 포함된 모든 제품 및 버전 수**|인벤토리에 포함된 소프트웨어 제품 및 버전의 목록과 각 소프트웨어가 설치되어 있는 컴퓨터의 수가 표시됩니다.|  
-|**인벤토리에 포함된 제품 및 특정 제품의 버전 수**|지정한 제품의 인벤토리에 포함된 버전 목록과 각 제품이 설치되어 있는 컴퓨터의 수가 표시됩니다.|  
-|**프로그램 추가 제거에 등록된 소프트웨어의 모든 인스턴스 수**|지정한 컬렉션 내에서 설치되었으며 프로그램 추가/제거 또는 프로그램 및 기능에 등록된 모든 소프트웨어 인스턴스의 요약이 표시됩니다.|  
-|**프로그램 추가 제거에 등록된 특정 소프트웨어의 인스턴스 수**|설치되어 있고 프로그램 추가/제거 또는 프로그램 및 기능에 등록된 지정한 소프트웨어 패키지의 인스턴스 수가 표시됩니다.|  
-|**지정한 Windows 앱 설치**|이 보고서에는 지정한 Windows 앱이 설치되어 있는 모든 컴퓨터의 목록이 표시됩니다.|  
-|**특정 컴퓨터의 제품**|지정한 컴퓨터에서 인벤토리에 포함된 소프트웨어 제품 및 해당 제조업체의 요약이 표시됩니다.|  
-|**특정 컴퓨터에서 프로그램 추가 제거에 등록된 소프트웨어**|지정한 컴퓨터에 설치되었으며 프로그램 추가/제거 또는 프로그램 및 기능에 등록된 소프트웨어의 요약이 표시됩니다.|  
-|**지정된 사용자에게 설치된 Windows 앱**|지정된 사용자에게 설치된 모든 Windows 앱이 표시됩니다.|  
+|**Wszystkie spisane produkty określonego producenta oprogramowania**|Przedstawia listę produktów programowych i ich wersji oferowanych przez określonego producenta oprogramowania.|  
+|**Wszyscy producenci oprogramowania**|Przedstawia listę wszystkich firm produkujących oprogramowanie uwzględnione w spisie.|  
+|**Wszystkie aplikacje systemu Windows**|Przedstawia podsumowanie zainstalowanych aplikacji systemu Windows uporządkowanych według liczby wystąpień na podstawie kryteriów wyszukiwania dla nazwy aplikacji, architektury lub wydawcy.|  
+|**Komputery z określonym produktem**|Przedstawia listę komputerów, na których znajduje się określony produkt uwzględniony w spisie, wraz z wersją tego produktu.|  
+|**Komputery z określonym produktem nazwa i wersja**|Przedstawia listę komputerów, na których znajduje się określona wersja produktu uwzględniona w spisie.|  
+|**Komputery z określonym oprogramowaniem zarejestrowanym w aplecie Dodaj Usuń programy**|Przedstawia podsumowanie wszystkich komputerów z określonym oprogramowaniem zarejestrowanym w aplecie Dodaj/Usuń programy lub Programy i funkcje.|  
+|**Liczba wszystkich spisanych produktów i ich wersji**|Przedstawia listę programów i wersji uwzględnionych w spisie oraz liczbę komputerów, na których zainstalowano każdy z nich.|  
+|**Liczba spisanych produktów i wersji określonego produktu**|Przedstawia listę wersji określonego produktu uwzględnionych w spisie oraz liczbę komputerów, na których zainstalowano każdą z nich.|  
+|**Liczba wszystkich wystąpień oprogramowania zarejestrowanego w aplecie Dodaj / Usuń programy**|Przedstawia podsumowanie wszystkich wystąpień oprogramowania zainstalowanego i zarejestrowanego przy użyciu apletu Dodaj/Usuń programy lub Programy i funkcje na komputerach w określonej kolekcji.|  
+|**Liczba wystąpień określonego oprogramowania zarejestrowanego w aplecie Dodaj / Usuń programy**|Przedstawia liczbę wystąpień dla określonych pakietów oprogramowania zainstalowanych i zarejestrowanych w aplecie Dodaj/Usuń programy lub Programy i funkcje.|  
+|**Instalacje określonych aplikacji systemu Windows**|Przedstawia listę wszystkich komputerów z określoną aplikacją systemu Windows.|  
+|**Produkty na określonym komputerze**|Przedstawia podsumowanie programów uwzględnionych w spisie i ich producentów na określonym komputerze.|  
+|**Oprogramowanie zarejestrowane w aplecie Dodaj Usuń programy na określonym komputerze**|Przedstawia podsumowanie wszystkich programów zainstalowanych na określonym komputerze, które zarejestrowano w aplecie Dodaj/Usuń programy lub Programy i funkcje.|  
+|**Aplikacje systemu Windows zainstalowane dla określonego użytkownika.**|Przedstawia wszystkie aplikacje systemu Windows zainstalowane dla określonego użytkownika.|  
 
-### <a name="software---files"></a>소프트웨어 - 파일  
+### <a name="software---files"></a>Oprogramowanie — pliki  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**특정 제품에 대한 인벤토리에 포함된 모든 파일**|지정한 소프트웨어 제품과 연결되어 있는 인벤토리에 포함된 파일의 요약이 표시됩니다.|  
-|**특정 컴퓨터에서 인벤토리에 포함된 모든 파일**|지정한 컴퓨터에서 인벤토리에 포함된 모든 파일의 요약이 표시됩니다.|  
-|**두 컴퓨터에서 소프트웨어 인벤토리 비교**|지정한 두 컴퓨터에 대해 보고된 소프트웨어 인벤토리 간의 차이가 표시됩니다.|  
-|**특정 파일을 포함하는 컴퓨터**|지정한 파일 이름에 대해 소프트웨어 인벤토리를 수집한 컴퓨터의 목록이 표시됩니다. 파일 복사본을 여러 개 포함하는 컴퓨터는 목록에 두 번 이상 표시될 수 있습니다.|  
-|**특정 파일 이름을 포함하는 컴퓨터 수**|지정한 파일에 대해 소프트웨어 인벤토리를 수집한 컴퓨터의 수가 표시됩니다.|  
+|**Wszystkie spisane pliki określonego produktu**|Przedstawia podsumowanie plików uwzględnionych w spisie i skojarzonych z określonym programem.|  
+|**Wszystkie spisane pliki na określonym komputerze**|Przedstawia podsumowanie wszystkich plików uwzględnionych w spisie i przechowywanych na określonym komputerze.|  
+|**Porównanie spisu oprogramowania na dwóch komputerach**|Przedstawia różnice między spisami oprogramowania zgłoszonymi dla dwóch określonych komputerów.|  
+|**Komputery z określonym plikiem**|Przedstawia listę komputerów, na których zgromadzono dane spisu oprogramowania dla określonej nazwy pliku. Komputer może pojawić się więcej niż jeden raz na liście, jeśli zawiera wiele kopii pliku.|  
+|**Liczba komputerów z określoną nazwą pliku**|Przedstawia liczbę komputerów, na których zgromadzono dane spisu oprogramowania dla określonego pliku.|  
 
-### <a name="software-distribution---application-monitoring"></a>소프트웨어 배포 - 응용 프로그램 모니터링  
+### <a name="software-distribution---application-monitoring"></a>Dystrybucja oprogramowania — monitorowanie aplikacji  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**모든 응용 프로그램 배포(고급)**|모든 응용 프로그램 배포에 대한 세부 요약 정보가 표시됩니다.|  
-|**모든 응용 프로그램(기본)**|모든 응용 프로그램 배포에 대한 요약 정보가 표시됩니다.|  
-|**응용 프로그램 호환**|지정한 컬렉션 내의 지정된 응용 프로그램에 대한 호환 정보가 표시됩니다.|  
-|**자산별 응용 프로그램 배포**|지정한 장치나 사용자에게 배포된 응용 프로그램이 표시됩니다.|  
-|**응용 프로그램 인프라 오류**|응용 프로그램 인프라 오류가 표시됩니다.  여기에는 내부 인프라 오류와 잘못된 요구 사항 규칙으로 인한 오류가 포함될 수 있습니다.|  
-|**응용 프로그램 사용량 세부 상태**|설치된 응용 프로그램에 대한 사용량 세부 정보가 표시됩니다.|  
-|**응용 프로그램 사용량 요약 상태**|설치된 응용 프로그램에 대한 사용량 요약이 표시됩니다.|  
-|**응용 프로그램을 포함하는 작업 순서 배포**|지정한 응용 프로그램을 설치하는 작업 순서 배포가 표시됩니다.|  
-|**Android 응용 프로그램에 대한 사용자 요청**|Android 응용 프로그램 설치를 요청한 사용자가 표시됩니다.|  
-|**배포에 실패한 iOS 앱(앱이 이미 설치됨)**|모바일 응용 프로그램 관리 정책과 관련된 '앱 스토어의 iOS용 앱 패키지'로 배포하여 선택한 iOS 앱에 대해 준수 정보를 표시합니다. 이 보고서는 사용자가 이미 수동으로 설치했기 때문에 앱이 설치하지 못한 사용자 및 장치를 표시하는 데 사용됩니다.|  
+|**Wszystkie wdrożenia aplikacji (zaawansowane)**|Przedstawia szczegółowe podsumowanie informacji na temat wszystkich wdrożeń aplikacji.|  
+|**Wszystkie wdrożenia aplikacji (basic)**|Przedstawia podsumowanie informacji na temat wszystkich wdrożeń aplikacji.|  
+|**Zgodność aplikacji**|Przedstawia informacje na temat zgodności dla określonej aplikacji w określonej kolekcji.|  
+|**Wdrożenia aplikacji na zasób**|Przedstawia aplikacje wdrożone do określonego urządzenia lub użytkownika.|  
+|**Szczegóły błędów infrastruktury aplikacji**|Przedstawia błędy infrastruktury aplikacji.  Mogą być to zarówno wewnętrzne błędy infrastruktury, jak i błędy wynikające z nieprawidłowych reguł dotyczących wymagań.|  
+|**Szczegółowy stan użytkowania aplikacji**|Przedstawia szczegóły użycia zainstalowanych aplikacji.|  
+|**Podsumowanie stanu użycia aplikacji**|Przedstawia podsumowanie użycia zainstalowanych aplikacji.|  
+|**Wdrożenia sekwencji zadań zawierające aplikację**|Przedstawia wdrożenia sekwencji zadań, które umożliwiają zainstalowanie określonej aplikacji.|  
+|**Żądania użytkowników dla aplikacji systemu Android**|Przedstawia użytkowników, którzy zażądali zainstalowania aplikacji systemu Android.|  
+|**aplikacje systemu iOS z nieudanymi wdrożeniami (aplikacja jest już zainstalowana)**|Zawiera informacje o zgodności wybranej aplikacji systemu iOS wdrożonej jako „Pakiet aplikacji dla systemu iOS ze sklepu App Store”, który został skojarzony z zasadami zarządzania aplikacjami mobilnymi. Ten raport zawiera informacje o użytkownikach i urządzeniach, dla których instalacja aplikacji nie powiodła się, ponieważ aplikacja została już ręcznie zainstalowana przez użytkownika.|  
 
-### <a name="software-distribution---collections"></a>소프트웨어 배포 - 컬렉션  
+### <a name="software-distribution---collections"></a>Dystrybucja oprogramowania — kolekcje  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**모든 컬렉션**|계층의 모든 컬렉션이 표시됩니다.|  
-|**특정 컬렉션의 모든 리소스**|지정된 컬렉션의 모든 리소스가 표시됩니다.|  
-|**지정된 클라이언트에서 사용 가능한 유지 관리 기간**|지정된 클라이언트에 적용되는 모든 유지 관리 기간이 표시됩니다.|  
+|**Wszystkie kolekcje**|Przedstawia wszystkie kolekcje w hierarchii.|  
+|**Wszystkie zasoby w określonej kolekcji**|Przedstawia wszystkie zasoby w określonej kolekcji.|  
+|**Okna obsługi dostępne dla określonego klienta**|Przedstawia wszystkie okna obsługi, które można zastosować do określonego klienta.|  
 
-### <a name="software-distribution---content"></a>소프트웨어 배포 - 콘텐츠  
+### <a name="software-distribution---content"></a>Dystrybucja oprogramowania — zawartość  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**모든 활성 콘텐츠 배포**|콘텐츠를 현재 설치하거나 제거하고 있는 모든 배포 지점이 표시됩니다.|  
-|**모든 콘텐츠**|사이트에 있는 모든 응용 프로그램과 패키지가 표시됩니다.|  
-|**특정 배포 지점의 모든 콘텐츠**|현재 지정된 배포 지점에 설치된 모든 콘텐츠가 표시됩니다.|  
-|**모든 배포 지점**|각 사이트의 배포 지점에 대한 정보가 표시됩니다.|  
-|**특정 배포 지점의 특정 패키지에 대한 모든 상태 메시지**|지정된 배포 지점의 지정한 패키지에 대한 모든 상태 메시지가 표시됩니다.|  
-|**응용 프로그램 콘텐츠 배포 상태**|응용 프로그램 콘텐츠의 배포 상태에 대한 정보가 표시됩니다.|  
-|**배포 지점 그룹을 대상으로 하는 응용 프로그램**|지정한 배포 지점 그룹에 배포된 응용 프로그램 콘텐츠에 대한 정보가 표시됩니다.|  
-|**지정된 배포 지점 그룹에서 동기화되지 않은 응용 프로그램**|연결된 콘텐츠 파일이 지정한 배포 지점 그룹의 최신 버전으로 업데이트되지 않은 응용 프로그램이 표시됩니다.|  
-|**배포 지점 그룹**|지정한 배포 지점 그룹에 대한 정보가 표시됩니다.|  
-|**배포 지점 사용량 요약**|각 배포 지점의 배포 지점 사용량 요약이 표시됩니다.|  
-|**지정된 패키지의 배포 상태**|각 배포 지점의 지정한 패키지 콘텐츠에 대한 배포 상태가 표시됩니다.|  
-|**배포 지점 그룹을 대상으로 하는 패키지**|지정한 배포 지점 그룹을 대상으로 하는 패키지에 대한 정보가 표시됩니다.|  
-|**지정된 배포 지점 그룹에서 동기화되지 않은 패키지**|지정한 배포 지점 그룹에서 최신 버전으로 업데이트 되지 않은 연결된 콘텐츠 파일에 대한 패키지가 표시됩니다.|  
+|**Wszystkie aktywne dystrybucje zawartości**|Przedstawia wszystkie punkty dystrybucji, w których zawartość jest obecnie instalowana lub usuwana.|  
+|**Cała zawartość**|Przedstawia wszystkie aplikacje i pakiety w lokacji.|  
+|**Cała zawartość w określonym punkcie dystrybucji**|Przedstawia całą zawartość aktualnie instalowaną w określonym punkcie dystrybucji.|  
+|**Wszystkie punkty dystrybucji**|Przedstawia informacje na temat punktów dystrybucji dla każdej lokacji.|  
+|**Wszystkie komunikaty o stanie dla określonego pakietu w określonym punkcie dystrybucji**|Przedstawia wszystkie komunikaty o stanie dla określonego pakietu w określonym punkcie dystrybucji.|  
+|**Stan dystrybucji zawartości aplikacji**|Przedstawia informacje na temat stanu dystrybucji zawartości aplikacji.|  
+|**Aplikacje przeznaczone dla grupy punktów dystrybucji**|Przedstawia informacje na temat zawartości aplikacji, która została wdrożona do określonej grupy punktów dystrybucji.|  
+|**Aplikacje niezsynchronizowane w dystrybucji określonej grupie punktów**|Przedstawia aplikacje, dla których skojarzone pliki zawartości nie zostały zaktualizowane do najnowszej wersji w określonej grupie punktów dystrybucji.|  
+|**Grupy punktów dystrybucji**|Przedstawia informacje na temat określonej grupy punktów dystrybucji.|  
+|**Podsumowanie użycia punktu dystrybucji**|Przedstawia podsumowanie użycia każdego z punktów dystrybucji.|  
+|**Stan dystrybucji określonego pakietu**|Przedstawia stan dystrybucji zawartości określonego pakietu w każdym punkcie dystrybucji.|  
+|**Pakiety przeznaczone do grupy punktów dystrybucji**|Przedstawia informacje na temat pakietów przeznaczonych dla określonej grupy punktów dystrybucji.|  
+|**Pakiety niezsynchronizowane w dystrybucji określonej grupie punktów**|Przedstawia pakiety, dla których skojarzone pliki zawartości nie zostały zaktualizowane do najnowszej wersji w określonej grupie punktów dystrybucji.|  
 
-### <a name="software-distribution---package-and-program-deployment"></a>소프트웨어 배포 - 패키지 및 프로그램 배포  
+### <a name="software-distribution---package-and-program-deployment"></a>Dystrybucja oprogramowania - wdrażanie pakietów i programów  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**지정된 패키지 및 프로그램의 모든 배포**|지정한 패키지 및 프로그램의 모든 배포에 대한 정보가 표시됩니다.|  
-|**모든 패키지 및 프로그램 배포**|이 사이트의 모든 패키지 및 프로그램 배포가 표시됩니다.|  
-|**지정된 컬렉션에 대한 모든 패키지 및 프로그램 배포**|지정한 컬렉션에 대한 모든 패키지 및 프로그램 배포가 표시됩니다.|  
-|**지정된 컴퓨터에 대한 모든 패키지 및 프로그램 배포**|지정한 컴퓨터에 적용되는 모든 패키지 및 프로그램 배포가 표시됩니다.|  
-|**지정된 사용자에 대한 모든 패키지 및 프로그램 배포**|지정한 사용자에 대한 모든 패키지 및 프로그램 배포가 표시됩니다.|  
+|**Wszystkie wdrożenia określonego pakietu lub programu**|Przedstawia informacje na temat wszystkich wdrożeń określonego pakietu i programu.|  
+|**Wszystkie wdrożenia pakietów i programów**|Przedstawia wszystkie wdrożenia pakietów i programów w danej lokacji.|  
+|**Wszystkie wdrożenia pakietów i programów w określonej kolekcji**|Przedstawia wszystkie wdrożenia pakietów i programów do określonej kolekcji.|  
+|**Wszystkie wdrożenia pakietów i programów na określonym komputerze**|Przedstawia wszystkie wdrożenia pakietów i programów zastosowane na określonym komputerze.|  
+|**Wszystkie wdrożenia pakietów i programów dla określonego użytkownika**|Przedstawia wszystkie wdrożenia pakietów i programów do określonego użytkownika.|  
 
-### <a name="software-distribution---package-and-program-deployment-status"></a>소프트웨어 배포 - 패키지 및 프로그램 배포 상태  
+### <a name="software-distribution---package-and-program-deployment-status"></a>Dystrybucja oprogramowania — stan pakietów i programów wdrożenia  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**상태와 함께 모든 시스템 리소스 패키지 및 프로그램 배포**|사이트에 대한 모든 패키지 및 프로그램 배포와 각 배포의 요약 상태가 표시됩니다.|  
-|**지정된 패키지 및 프로그램 배포에 대해 지정된 상태의 모든 시스템 리소스**|지정한 패키지 및 프로그램 배포에 대해 지정된 상태의 리소스 목록이 표시됩니다.|  
-|**차트 - 매시간 패키지 및 프로그램 배포 완료 상태**|패키지 및 프로그램 배포를 만든 이후 매시간 패키지를 정상적으로 설치한 컴퓨터의 백분율이 표시됩니다. 이 보고서를 사용하여 패키지 및 프로그램 배포의 평균 시간을 추적할 수 있습니다.|  
-|**지정된 클라이언트 및 배포에 대한 패키지 및 프로그램 배포 상태**|지정한 컴퓨터와 패키지 및 프로그램 배포에 대해 보고된 상태 메시지가 표시됩니다.|  
-|**지정된 패키지 및 프로그램 배포의 상태**|지정한 패키지 및 프로그램 배포의 상태 요약이 표시됩니다.|  
+|**Wszystkie wdrożenia zasobów systemu pakietów i programów o stanie**|Przedstawia wszystkie wdrożenia pakietów i programów dla lokacji oraz podsumowanie stanu każdego wdrożenia.|  
+|**Wszystkie zasoby systemu dla określonego wdrożenia pakietu i programu w określonym stanie**|Przedstawia listę zasobów w określonym stanie dla określonego wdrożenia pakietu i programu.|  
+|**Wykres - godzinny stan o wykonania wdrożenia pakietu i programu**|Przedstawia wartość procentową liczby komputerów, na których pomyślnie zainstalowano pakiet, dla każdej godziny od momentu utworzenia wdrożenia pakietu i programu. W tym raporcie można śledzić średni czas wdrażania pakietu i programu.|  
+|**Stan wdrażania pakietów i programów dla określonego klienta i wdrożenia**|Przedstawia komunikaty o stanie zgłoszone dla określonego komputera oraz wdrożenia pakietu i programu.|  
+|**Stan określonego wdrożenia pakietu i programu**|Przedstawia podsumowanie stanu określonego wdrożenia pakietu i programu.|  
 
-### <a name="software-metering"></a>소프트웨어 계량  
+### <a name="software-metering"></a>Pomiar użytkowania oprogramowania  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**이 사이트에 적용되는 모든 소프트웨어 계량 규칙**|사이트의 모든 소프트웨어 계량 규칙 목록이 표시됩니다.|  
-|**계량된 프로그램이 설치되었지만 지정된 날짜 이후 프로그램을 실행하지 않은 컴퓨터**|소프트웨어 인벤토리에서 보고된 지정한 계량된 응용 프로그램이 설치되었지만 지정한 날짜 이후 프로그램을 실행하지 않은 모든 컴퓨터가 표시됩니다.|  
-|**계량된 특정 소프트웨어 프로그램을 실행하는 컴퓨터**|지정한 년/월 이내에 지정된 소프트웨어 계량 규칙과 일치하는 프로그램을 실행한 컴퓨터의 목록이 표시됩니다.|  
-|**계량된 모든 소프트웨어 프로그램의 동시 사용량**|지정한 년/월 이내에 계량된 각 소프트웨어 프로그램을 동시에 실행한 최대 사용자 수가 표시됩니다.|  
-|**계량된 특정 소프트웨어 프로그램의 동시 사용량 추세 분석**|지난 해의 각 월에 지정한 계량된 소프트웨어 프로그램을 동시에 실행한 최대 사용자 수가 표시됩니다.|  
-|**계량된 모든 소프트웨어 프로그램의 설치 기반**|소프트웨어 인벤토리에서 보고한 계량된 소프트웨어 프로그램이 설치되어 있는 컴퓨터의 수가 표시됩니다. 이 보고서를 사용하려면 계량된 컴퓨터에서 소프트웨어 인벤토리를 수집해야 합니다.|  
-|**소프트웨어 계량 요약 진행 상황**|사이트 서버에서 가장 최근 요약된 계량 데이터가 처리된 시간이 표시됩니다.  이 날짜 이전에 처리된 계량 데이터만 소프트웨어 계량 보고서에 반영됩니다.|  
-|**계량된 특정 소프트웨어 프로그램의 시간별 사용량 요약 정보**|지난 90일 동안 특정 프로그램의 평균 사용량이 일/시간별로 분할되어 표시됩니다.|  
-|**계량된 모든 소프트웨어 프로그램의 총 사용량**|지정한 년/월 이내에 각 소프트웨어 계량 규칙과 일치하는 프로그램을 로컬로 실행했거나 터미널 서비스를 사용하여 실행한 사용자의 수가 표시됩니다.|  
-|**Windows 터미널 서버에서 계량된 모든 소프트웨어 프로그램의 총 사용량**|지정한 년/월 이내에 각 소프트웨어 계량 규칙과 일치하는 프로그램을 터미널 서비스를 사용하여 실행한 사용자의 수가 표시됩니다.|  
-|**계량된 특정 소프트웨어 프로그램의 총 사용량 추세 분석**|지난 해의 각 월에 지정한 소프트웨어 계량 규칙과 일치하는 프로그램을 로컬로 실행했거나 터미널 서비스를 사용하여 실행한 사용자의 수가 표시됩니다.|  
-|**Windows 터미널 서버에서 계량된 특정 소프트웨어 프로그램의 총 사용량 추세 분석**|지난 해의 각 월에 지정한 소프트웨어 계량 규칙과 일치하는 프로그램을 터미널 서비스를 사용하여 실행한 사용자의 수가 표시됩니다.|  
-|**계량된 특정 소프트웨어 프로그램을 실행하는 사용자**|지정한 년/월 이내에 지정된 소프트웨어 계량 규칙과 일치하는 프로그램을 실행한 사용자의 목록이 표시됩니다.|  
+|**Wszystkie reguły zliczania oprogramowania zastosowanie do tej lokacji**|Przedstawia listę wszystkich reguł pomiaru użytkowania oprogramowania w lokacji.|  
+|**Komputery, które mierzonym programem, ale program ten nie został uruchomiony od określonej daty**|Przedstawia wszystkie komputery z zainstalowaną określoną mierzoną aplikacją zgłoszoną w spisie oprogramowania, która nie była uruchamiana od określonej daty.|  
+|**Komputery które uruchomiły określony zliczany program**|Przedstawia listę komputerów, na których uruchamiano programy zgodne z określoną regułą pomiaru użytkowania oprogramowania w określonym miesiącu i roku.|  
+|**Współbieżne użycie wszystkich zliczanych programów**|Przedstawia maksymalną liczbę użytkowników, którzy jednocześnie uruchamiali każdy mierzony program w określonym miesiącu i roku.|  
+|**Analiza trendu współbieżnego użycia określonego zliczanego programu**|Przedstawia maksymalną liczbę użytkowników, którzy jednocześnie uruchamiali określony mierzony program w każdym miesiącu ostatniego roku.|  
+|**Zainstaluj podstawa dla wszystkich zliczanych programów**|Przedstawia liczbę komputerów z zainstalowanymi mierzonymi programami zgłoszonymi w spisie oprogramowania. Ten raport wymaga przeprowadzania spisu oprogramowania na mierzonych komputerach.|  
+|**Postęp podsumowania zliczania oprogramowania**|Przedstawia czas ostatniego przetwarzania zbiorczych danych pomiarów użytkowania na serwerze lokacji.  Tylko dane pomiarów użytkowania przetworzone przed tymi datami zostaną uwzględnione w raportach pomiaru użytkowania oprogramowania.|  
+|**Godzina Podsumowanie użycia określonego zliczanego programu**|Przedstawia średnią liczbę użyć określonego programu w ciągu ostatnich 90 dni z podziałem na godziny i dni.|  
+|**Całkowite użycie wszystkich zliczanych programów**|Przedstawia liczbę użytkowników, którzy uruchamiali programy pasujące do każdej reguły pomiaru użytkowania oprogramowania lokalnie lub za pomocą usług terminalowych w określonym miesiącu i roku.|  
+|**Całkowite użycie wszystkich zliczanych programów na serwerach terminali systemu Windows**|Przedstawia liczbę użytkowników, którzy uruchamiali programy pasujące do każdej reguły pomiaru użytkowania oprogramowania za pomocą usług terminalowych w określonym miesiącu i roku.|  
+|**Analiza trendu łącznego użycia określonego zliczanego programu**|Przedstawia liczbę użytkowników, którzy uruchamiali programy pasujące do określonej reguły pomiaru użytkowania oprogramowania lokalnie lub za pomocą usług terminalowych w każdym miesiącu przez ostatni rok.|  
+|**Analiza trendu łącznego użycia określonego zliczanego programu na serwerach terminali systemu Windows**|Przedstawia liczbę użytkowników, którzy uruchamiali programy pasujące do określonej reguły pomiaru użytkowania oprogramowania za pomocą usług terminalowych w każdym miesiącu przez ostatni rok.|  
+|**Użytkownicy którzy uruchomili określony zliczany program**|Przedstawia listę użytkowników, którzy uruchamiali programy zgodne z określoną regułą pomiaru użytkowania oprogramowania w określonym miesiącu i roku.|  
 
-### <a name="software-updates---a-compliance"></a>소프트웨어 업데이트 – A 호환성  
+### <a name="software-updates---a-compliance"></a>Aktualizacje oprogramowania — zgodność  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**호환 1 - 전반적인 호환**|소프트웨어 업데이트 그룹의 전반적인 호환 데이터가 표시됩니다.|  
-|**호환 2 - 특정 소프트웨어 업데이트**|지정한 소프트웨어 업데이트의 호환 데이터가 표시됩니다.|  
-|**호환 3 - 업데이트 그룹(업데이트당)**|소프트웨어 업데이트 그룹에 정의된 소프트웨어 업데이트의 호환 데이터가 표시됩니다.|  
-|**호환 4 - 월 연도별 공급업체의 업데이트**|지정한 년/월에 특정 공급업체가 출시한 소프트웨어 업데이트의 호환 데이터가 표시됩니다.|  
-|**호환 5 - 특정 컴퓨터**|이 보고서는 지정한 컴퓨터의 소프트웨어 업데이트 호환 데이터를 반환합니다.  반환되는 정보의 양을 제한하려면 공급업체 및 소프트웨어 업데이트 분류를 지정하면 됩니다.|  
-|**호환 6 - 특정 소프트웨어 업데이트 상태(보조)**|지정한 소프트웨어 업데이트에 대한 각 호환 상태의 컴퓨터 수와 백분율이 표시됩니다.|  
-|**호환 7 - 업데이트 그룹에서 특정 호환 상태의 컴퓨터(보조)**|소프트웨어 업데이트 그룹에 대해 컬렉션 내에서 지정된 전반적인 호환 상태의 모든 컴퓨터가 표시됩니다.|  
-|**호환 8 - 업데이트에서 특정 호환 상태의 컴퓨터(보조)**|소프트웨어 업데이트에 대해 컬렉션 내에서 지정된 호환 상태의 모든 컴퓨터가 표시됩니다.|  
+|**Zgodność 1 - zgodność ogólna**|Przedstawia ogólne dane zgodności dla grupy aktualizacji oprogramowania.|  
+|**Zgodność 2 - określona aktualizacja oprogramowania**|Przedstawia dane zgodności określonej aktualizacji oprogramowania.|  
+|**Zgodność 3 - grupa aktualizacji (według aktualizacji)**|Przedstawia dane zgodności aktualizacji oprogramowania zdefiniowanych w ramach grupy aktualizacji oprogramowania.|  
+|**Zgodność 4 - aktualizacje według dostawcy miesiąca i roku**|Przedstawia dane zgodności aktualizacji oprogramowania wydawanych przez dostawcę w określonym miesiącu i roku.|  
+|**Zgodność 5 — określony komputer**|Ten raport zwraca dane zgodności aktualizacji oprogramowania dla określonego komputera.  Aby ograniczyć ilość zwracanych informacji, można określić dostawcę i klasyfikację aktualizacji oprogramowania.|  
+|**Zgodność 6 - stany określonej aktualizacji oprogramowania (pomocniczy)**|Przedstawia liczbę i procent komputerów w każdym stanie zgodności dla określonej aktualizacji oprogramowania.|  
+|**Zgodność 7 - komputery z określonym stanem zgodności dla grupy aktualizacji (pomocniczy)**|Przedstawia wszystkie komputery w kolekcji, które mają określony ogólny stan zgodności względem grupy aktualizacji oprogramowania.|  
+|**Zgodność 8 - komputery w określonym stanie zgodności dla aktualizacji (pomocniczy)**|Przedstawia wszystkie komputery w kolekcji, które mają określony ogólny stan zgodności dla aktualizacji oprogramowania.|  
 
-### <a name="software-updates---b-deployment-management"></a>소프트웨어 업데이트 – B 배포 관리  
+### <a name="software-updates---b-deployment-management"></a>Aktualizacje oprogramowania — Zarządzanie wdrażaniem B  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**관리 1 - 업데이트 그룹의 배포**|지정한 소프트웨어 업데이트 그룹에 정의된 모든 소프트웨어 업데이트를 포함하는 모든 배포가 표시됩니다.|  
-|**관리 2 - 필요하지만 배포되지 않은 업데이트**|클라이언트에 필요한 것으로 검색되었지만 지정한 컬렉션에 배포되지는 않은 모든 공급업체별 소프트웨어 업데이트가 표시됩니다.|  
-|**관리 3 - 배포의 업데이트**|지정한 배포에 포함된 소프트웨어 업데이트가 표시됩니다.|  
-|**관리 4 - 컬렉션을 대상으로 하는 배포**|지정된 컬렉션을 대상으로 하는 모든 소프트웨어 업데이트 배포가 표시됩니다.|  
-|**관리 5 - 컴퓨터를 대상으로 하는 배포**|지정한 컴퓨터에 배포된 모든 소프트웨어 업데이트 배포가 표시됩니다.|  
-|**관리 6 - 특정 업데이트를 포함하는 배포**|지정한 소프트웨어 업데이트를 포함하는 모든 배포와 배포에 연결된 대상 컬렉션이 표시됩니다.|  
-|**관리 7 - 콘텐츠가 누락된 배포의 업데이트**|연결된 모든 콘텐츠가 검색되지 않은 지정된 배포의 소프트웨어 업데이트가 표시됩니다. 이 경우 클라이언트는 업데이트를 설치할 수 없고 배포의 100% 호환성을 달성하지 못합니다.|  
-|**관리 8 - 콘텐츠가 누락된 컴퓨터(보조)**|배포 지점에서 프로비전되지 않은 지정한 배포에 포함된 지정한 소프트웨어 업데이트가 필요한 모든 컴퓨터가 표시됩니다.|  
+|**Zarządzanie 1 - wdrożenia grupy aktualizacji**|Przedstawia wszystkie wdrożenia, które zawierają wszystkie aktualizacje oprogramowania zdefiniowane w określonej grupie aktualizacji oprogramowania.|  
+|**Zarządzanie 2 - aktualizacje wymagane lecz Niewdrożone**|Przedstawia wszystkie aktualizacje oprogramowania dla określonego dostawcy, które zostały wykryte jako wymagane na komputerach klienckich, ale które nie zostały wdrożone do określonej kolekcji.|  
+|**Zarządzanie 3 - aktualizacje we wdrożeniu**|Przedstawia aktualizacje oprogramowania, które znajdują się w określonym wdrożeniu.|  
+|**Zarządzanie 4 - wdrożenia przeznaczone dla kolekcji**|Przedstawia wszystkie wdrożenia aktualizacji oprogramowania, które są przeznaczone dla określonej kolekcji.|  
+|**Zarządzanie 5 - wdrożenia przeznaczone dla komputera**|Przedstawia wszystkie wdrożenia aktualizacji oprogramowania, które są przeznaczone dla określonego komputera.|  
+|**Zarządzanie 6 - wdrożenia zawierające określoną aktualizację**|Przedstawia wszystkie wdrożenia zawierające określoną aktualizację oprogramowania i skojarzoną kolekcję docelową dla wdrożenia.|  
+|**Zarządzanie 7 - aktualizacje wdrożenia z niepełną zawartością**|Przedstawia aktualizacje oprogramowania w określonym wdrożeniu, dla których nie pobrano całej powiązanej zawartości, co uniemożliwiło klientom zainstalowanie aktualizacji i osiągnięcie 100% zgodności wdrożenia.|  
+|**Zarządzanie 8 - komputery z niepełną zawartością (pomocniczy)**|Przedstawia wszystkie komputery, które wymagają określonej aktualizacji oprogramowania zawartej w określonym wdrożeniu, którego obsługa administracyjna nie jest inicjowana w punkcie dystrybucji.|  
 
-### <a name="software-updates---c-deployment-states"></a>소프트웨어 업데이트 - C 배포 상태  
+### <a name="software-updates---c-deployment-states"></a>Aktualizacje oprogramowania — stany wdrożeń C  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**상태 1 - 배포의 적용 상태**|지정한 소프트웨어 업데이트 배포의 적용 상태가 표시됩니다. 일반적으로 배포 평가의 두 번째 단계에 해당합니다.|  
-|**상태 2 - 배포의 평가 상태**|지정한 소프트웨어 업데이트 배포의 평가 상태가 표시됩니다. 일반적으로 배포 평가의 첫 번째 단계에 해당합니다.|  
-|**상태 3 - 배포 및 컴퓨터의 상태**|지정된 컴퓨터에 대한 지정된 배포의 모든 소프트웨어 업데이트 상태가 표시됩니다.|  
-|**상태 4 - 배포에서 특정 상태의 컴퓨터(보조)**|소프트웨어 업데이트 배포에 대한 지정된 상태의 모든 컴퓨터가 표시됩니다.|  
-|**상태 5 - 배포에서 업데이트의 상태(보조)**|지정한 배포의 대상으로 지정된 지정한 소프트웨어 업데이트의 상태 요약이 표시됩니다.|  
-|**상태 6 - 업데이트에서 특정 적용 상태의 컴퓨터(보조)**|지정한 소프트웨어 업데이트에 대해 지정된 적용 상태의 모든 컴퓨터가 표시됩니다.|  
+|**Stany 1 - stany wymuszenia wdrożenia**|Przedstawia stany wymuszania dla określonego wdrożenia aktualizacji oprogramowania. Zwykle jest to drugi etap oceny wdrożenia.|  
+|**Stany 2 - stany oceny wdrożenia**|Przedstawia stany oceniania dla określonego wdrożenia aktualizacji oprogramowania. Zwykle jest to pierwszy etap oceny wdrożenia.|  
+|**Stany 3 — stany wdrożenia i komputera**|Przedstawia stany wszystkich aktualizacji oprogramowania określonego wdrożenia dla określonego komputera.|  
+|**Stany 4 - komputery z określonym stanem wdrożenia (pomocniczy)**|Przedstawia wszystkie komputery w określonym stanie dla wdrożenia aktualizacji oprogramowania.|  
+|**Stany 5 - stany aktualizacji we wdrożeniu (pomocniczy)**|Przedstawia podsumowanie stanów dla aktualizacji oprogramowania związanej z określonym wdrożeniem.|  
+|**Stany 6 — komputery z określonym stanem wymuszenia dla aktualizacji (pomocniczy)**|Przedstawia wszystkie komputery w określonym stanie wymuszania dla określonej aktualizacji oprogramowania.|  
 
-### <a name="software-updates---d-scan"></a>소프트웨어 업데이트 - D 검사  
+### <a name="software-updates---d-scan"></a>Aktualizacje oprogramowania — skanowanie D  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**검사 1 - 컬렉션별 마지막 검사 상태**|마지막 호환 검사 중에 클라이언트가 반환한 각 호환 검사 상태인 지정한 컬렉션의 컴퓨터 수가 표시됩니다.|  
-|**검사 2 - 사이트별 마지막 검사 상태**|마지막 호환 검사 중에 클라이언트가 반환한 각 호환 검사 상태이며 지정한 사이트에 할당된 컴퓨터 수가 표시됩니다.|  
-|**검사 3 - 특정 상태를 보고하는 컬렉션의 클라이언트(보조)**|마지막 호환 검사 중에 지정된 호환 검사 상태를 보고한 지정한 컬렉션의 모든 컴퓨터가 표시됩니다.|  
-|**검사 4 - 특정 상태를 보고하는 사이트의 클라이언트(보조)**|마지막 호환 검사 중에 지정된 호환 검사 상태를 보고한 지정한 사이트에 할당된 모든 컴퓨터가 표시됩니다.|  
+|**Skanowanie 1 - ostatnie stany skanowania według kolekcji**|Przedstawia liczbę komputerów dla określonej kolekcji w każdym stanie skanowania zgodności zwróconym przez klientów podczas ostatniego skanowania pod kątem zgodności.|  
+|**Skanowanie 2 — stany ostatniego skanowania według lokacji**|Przedstawia liczbę komputerów przypisanych do określonej lokacji w każdym stanie skanowania zgodności zwróconym przez klientów podczas ostatniego skanowania pod kątem zgodności.|  
+|**Skanowanie 3 - klienci w kolekcji raportujący określony stan (pomocniczy)**|Przedstawia wszystkie komputery dla określonej kolekcji i określonego stanu skanowania zgodności podczas ich ostatniego skanowania pod kątem zgodności.|  
+|**Skanowanie 4 — klienci w lokacji raportujący określony stan (pomocniczy)**|Przedstawia wszystkie komputery przypisane do określonej lokacji i z określonym stanem skanowania zgodności podczas ich ostatniego skanowania pod kątem zgodności.|  
 
-### <a name="software-updates---e-troubleshooting"></a>소프트웨어 업데이트 - E 문제 해결  
+### <a name="software-updates---e-troubleshooting"></a>Aktualizacje oprogramowania — Rozwiązywanie problemów E  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**문제 해결 1 - 검사 오류**|사이트의 검사 오류 및 각 오류가 발생한 컴퓨터의 수가 표시됩니다.|  
-|**문제 해결 2 - 배포 오류**|사이트의 배포 오류 및 각 오류가 발생한 컴퓨터의 수가 표시됩니다.|  
-|**문제 해결 3 - 특정 검사 오류로 인해 실패한 컴퓨터(보조)**|지정한 오류로 인해 검사에 실패한 컴퓨터의 목록이 표시됩니다.|  
-|**문제 해결 4 - 특정 배포 오류로 인해 실패한 컴퓨터(보조)**|지정한 오류로 인해 업데이트 배포가 실패하는 컴퓨터의 목록이 표시됩니다.|  
+|**Rozwiązywanie problemów 1 — błędy skanowania**|Przedstawia błędy skanowania w lokacji oraz liczbę komputerów, na których występuje każdy z błędów.|  
+|**Rozwiązywanie problemów 2 – błędy wdrożenia**|Przedstawia błędy wdrożenia w lokacji oraz liczbę komputerów, na których występuje każdy z błędów.|  
+|**Rozwiązywanie problemów 3 - komputery z niepowodzeniem skanowania z powodu określonego błędu (pomocniczy)**|Przedstawia listę komputerów, których skanowanie nie powiodło się z powodu określonego błędu.|  
+|**Rozwiązywanie problemów 4 - komputery z niepowodzeniem z powodu określonego błędu wdrożenia (pomocniczy)**|Przedstawia listę komputerów, na których wdrażanie aktualizacji nie powiodło się z powodu określonego błędu.|  
 
-### <a name="state-migration"></a>상태 마이그레이션  
+### <a name="state-migration"></a>Migracja stanu  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**특정 원본 컴퓨터의 상태 마이그레이션 정보**|지정한 컴퓨터의 상태 마이그레이션 정보가 표시됩니다.|  
-|**특정 상태 마이그레이션 지점의 상태 마이그레이션 정보**|지정한 상태 마이그레이션 지점의 상태 마이그레이션 정보가 표시됩니다.|  
-|**특정 사이트의 상태 마이그레이션 지점**|지정한 사이트의 상태 마이그레이션 지점이 표시됩니다.|  
+|**Informacje o migracji stanu dla określonego komputera źródłowego**|Przedstawia informacje na temat migracji stanu dla określonego komputera.|  
+|**Informacje o migracji stanu dla określonego punktu migracji stanu**|Przedstawia informacje na temat migracji stanu dla określonego punktu migracji stanu.|  
+|**Punkty migracji stanu dla określonej lokacji**|Przedstawia punkty migracji stanu dla określonej lokacji.|  
 
-### <a name="status-messages"></a>상태 메시지  
+### <a name="status-messages"></a>Komunikaty o stanie  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**특정 메시지 ID의 모든 메시지**|지정한 메시지 ID가 설정된 상태 메시지 목록이 표시됩니다.|  
-|**지난 12시간 동안 특정 사이트에서 오류를 보고한 클라이언트**|지난 12시간 동안 오류를 보고한 컴퓨터 및 구성 요소의 목록과 보고된 오류 수가 표시됩니다.|  
-|**지난 12시간 동안 생성된 구성 요소 메시지**|지정한 사이트 코드, 컴퓨터 및 구성 요소에 대한 지난 12시간 동안의 구성 요소 메시지 목록이 표시됩니다.|  
-|**지난 1시간 동안 생성된 구성 요소 메시지**|지정한 Configuration Manager 사이트의 지정된 컴퓨터에서 지정한 구성 요소가 지난 1시간 동안 생성한 상태 메시지의 목록이 표시됩니다.|  
-|**지난 1시간 동안 특정 사이트에서 생성된 구성 요소 메시지 수**|지정한 사이트에서 지난 1시간 동안 보고된 상태 메시지의 수가 구성 요소 및 심각도를 기준으로 표시됩니다.|  
-|**지난 12시간 동안 생성된 오류 수**|지난 12시간 동안의 서버 구성 요소 오류 상태 메시지 수가 표시됩니다.|  
-|**오류(구성 요소별)**|오류를 보고하는 컴퓨터의 목록이 구성 요소를 기준으로 표시됩니다.|  
-|**오류(컴퓨터 이름별)**|오류를 보고하는 컴퓨터의 목록이 컴퓨터 이름을 기준으로 표시됩니다.|  
-|**특정 컴퓨터에서 지난 1000개의 메시지(오류 및 경고)**|지정한 컴퓨터에 대한 최근 1,000개 오류 및 경고 구성 요소 상태 메시지의 요약이 표시됩니다.|  
-|**특정 컴퓨터에서 지난 1000개의 메시지(오류 경고 정보용)**|지정한 컴퓨터에 대한 최근 1,000개 오류, 경고 및 정보 구성 요소 상태 메시지의 요약이 표시됩니다.|  
-|**특정 컴퓨터에서 지난 1000개의 메시지(오류)**|지정한 컴퓨터에 대한 최근 1,000개 오류 서버 구성 요소 상태 메시지의 요약이 표시됩니다.|  
-|**특정 서버 구성 요소의 최근 1000개 메시지**|지정한 서버 구성 요소의 가장 최근 1,000개 상태 메시지 요약이 표시됩니다.|  
+|**Wszystkie komunikaty z określonym Identyfikatorem komunikatu**|Przedstawia listę komunikatów o stanie z określonym identyfikatorem komunikatu.|  
+|**Klienci raportujący błędy w ciągu ostatnich 12 godzin dla określonej lokacji**|Przedstawia listę komputerów i składników zgłaszających błędy w ciągu ostatnich 12 godzin oraz liczbę zgłoszonych błędów.|  
+|**Komunikaty składników z ostatnich 12 godzin**|Przedstawia listę komunikatów składników z ostatnich 12 godzin dla określonego kodu lokacji, komputera i składnika.|  
+|**Komunikaty składników z ostatniej godziny**|Wyświetla listę komunikatów o stanie utworzonych w ciągu ostatniej godziny przez określony składnik na określonym komputerze w określonej lokacji programu Configuration Manager.|  
+|**Liczba komunikatów składników z ostatniej godziny dla określonej lokacji**|Przedstawia liczbę komunikatów o stanie zgłoszonych w ciągu ostatniej godziny w określonej lokacji i uporządkowanych według składnika i ważności.|  
+|**Liczba błędów w ciągu ostatnich 12 godzin**|Przedstawia liczbę komunikatów o stanie błędów składników serwera w ciągu ostatnich 12 godzin.|  
+|**Błędy krytyczne (według składnika)**|Przedstawia listę komputerów zgłaszających błędy krytyczne uporządkowaną według składnika.|  
+|**Błędy krytyczne (według nazwy komputera)**|Przedstawia listę komputerów zgłaszających błędy krytyczne uporządkowaną według nazwy komputera.|  
+|**Ostatnie 1000 komunikatów dla określonego komputera (błędy i ostrzeżenia)**|Przedstawia podsumowanie ostatniego 1000 komunikatów o stanie składnika wskazujących na błąd i ostrzeżenie dla określonego komputera.|  
+|**Ostatnie 1000 komunikatów dla określonego komputera (błędy ostrzeżenia i informacje)**|Przedstawia podsumowanie ostatniego 1000 komunikatów o stanie składnika wskazujących na błąd, ostrzeżenie i informacje dla określonego komputera.|  
+|**Ostatnie 1000 komunikatów dla określonego komputera (błędy)**|Przedstawia podsumowanie ostatniego 1000 komunikatów o stanie składnika wskazujących na błąd dla określonego komputera.|  
+|**Ostatnie 1000 komunikatów dla określonego składnika serwera**|Przedstawia podsumowanie ostatniego 1000 komunikatów o stanie dla określonego składnika serwera.|  
 
-### <a name="status-messages---audit"></a>상태 메시지 – 감사  
+### <a name="status-messages---audit"></a>Komunikaty o stanie — inspekcja  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**특정 사용자의 모든 감사 메시지**|지정된 사용자에 대한 모든 감사 상태 메시지 요약이 표시됩니다. 감사 메시지는 Configuration Manager 콘솔에서 수행하는 Configuration Manager의 개체를 추가하거나 수정하거나 삭제하는 작업을 설명합니다.|  
-|**원격 제어 - 특정 사용자가 원격으로 제어하는 모든 컴퓨터**|지정된 사용자의 클라이언트 컴퓨터 원격 제어를 나타내는 상태 메시지 요약이 표시됩니다.|  
-|**원격 제어 - 모든 원격 제어 정보**|클라이언트 컴퓨터의 원격 제어와 관련된 상태 메시지 요약이 표시됩니다.|  
+|**Wszystkie komunikaty audytu dla określonego użytkownika**|Przedstawia podsumowanie wszystkich komunikatów inspekcji dla określonego użytkownika. Komunikaty inspekcji opisują akcje wykonywane w konsoli programu Configuration Manager, które dodawania, modyfikowania i usuwania obiektów w programie Configuration Manager.|  
+|**Sterowanie zdalne - wszystkie komputery zdalnie sterowane przez określonego użytkownika**|Przedstawia podsumowanie komunikatów o stanie wskazujących na zdalne sterowanie komputerami klienckimi przez określonego użytkownika.|  
+|**Sterowanie zdalne - wszystkie informacje dotyczące sterowania zdalnego**|Przedstawia podsumowanie komunikatów o stanie powiązanych ze zdalnym sterowaniem komputerami klienckimi.|  
 
-### <a name="task-sequence---deployment-status"></a>작업 순서 - 배포 상태  
+### <a name="task-sequence---deployment-status"></a>Sekwencja zadań — stan wdrożenia  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**특정 상태에 해당하는 작업 순서 배포의 모든 시스템 리소스**|지정한 작업 순서 배포에 대해 지정한 배포 상태의 대상 컴퓨터 목록이 표시됩니다.|  
-|**특정 상태에 해당하며 알 수 없는 컴퓨터에서 사용 가능한 작업 순서 배포의 모든 시스템 리소스**|지정한 작업 순서 배포에 대해 지정한 배포 상태인 대상 컴퓨터 목록이 표시됩니다.|  
-|**작업 순서 배포가 할당되었지만 아직 실행되지 않은 시스템 리소스 수**|작업 순서를 수락했지만 실행하지는 않은 컴퓨터의 수가 표시됩니다.|  
-|**컴퓨터에서 작업 순서 배포의 기록**|지정한 대상 컴퓨터에서 지정된 작업 순서 배포의 각 단계 상태가 표시됩니다. 레코드가 반환되지 않으면 컴퓨터에서 작업 순서가 시작되지 않은 것입니다.|  
-|**작업 순서 배포를 실행하도록 지정된 시간을 초과한 컴퓨터의 목록**|작업 순서를 실행할 지정된 시간을 초과한 대상 컴퓨터의 목록이 표시됩니다.|  
-|**특정 대상 컴퓨터에서 특정 작업 순서 배포에 걸리는 실행 시간**|지정한 컴퓨터에서 지정된 작업 순서를 정상적으로 완료하는 데 걸린 총 시간이 표시됩니다.|  
-|**특정 대상 컴퓨터에서 작업 순서 배포의 각 단계에 걸리는 실행 시간**|지정한 대상 컴퓨터에서 지정된 작업 순서 배포의 각 단계를 완료하는 데 걸린 시간이 표시됩니다.|  
-|**특정 컴퓨터에서 특정 작업 순서 배포의 상태**|지정한 컴퓨터에서 지정된 작업 순서 배포의 상태 요약이 표시됩니다.|  
-|**알 수 없는 대상 컴퓨터에서 작업 순서 배포의 상태**|지정한 알 수 없는 대상 컴퓨터에서 지정된 작업 순서 배포의 상태가 표시됩니다.|  
-|**특정 작업 순서 배포의 상태 요약 정보**|배포의 대상으로 지정된 모든 리소스의 상태 요약이 표시됩니다.|  
-|**알 수 없는 컴퓨터에서 사용 가능한 특정 작업 순서 배포의 상태 요약 정보**|알 수 없는 컴퓨터를 포함하는 컬렉션에서 사용 가능한 지정된 배포 대상에 해당하는 모든 리소스의 상태 요약이 표시됩니다.|  
+|**Wszystkie zasoby systemowe dla wdrożenia sekwencji zadań w określonym stanie**|Przedstawia listę komputerów docelowych dla określonego wdrożenia sekwencji zadań w określonym stanie wdrożenia.|  
+|**Wszystkie zasoby systemowe dla wdrożenia sekwencji zadań, który znajduje się w określonym stanie i że jest dostępne dla nieznanych komputerów**|Przedstawia listę komputerów docelowych dla określonego wdrożenia sekwencji zadań w określonym stanie wdrożenia.|  
+|**Liczba zasobów systemowych, które mają wdrożenia sekwencji zadań przypisane, ale nie został jeszcze uruchomiony**|Przedstawia liczbę komputerów z zaakceptowanymi sekwencjami zadań, dla których nie uruchomiono sekwencji zadań.|  
+|**Historia wdrożenia sekwencji zadań na komputerze**|Przedstawia stan każdego kroku wdrożenia sekwencji zadań na określonym komputerze docelowym. Jeśli żadne rekordy nie zostaną zwrócone, sekwencja zadań nie została uruchomiona na komputerze.|  
+|**Lista komputerów które został przekroczony czas uruchamiania wdrożenia sekwencji zadań**|Przedstawia listę komputerów, dla których czas uruchamiania sekwencji zadań jest dłuższy niż określona wartość.|  
+|**Czas wykonywania dla określonego wdrożenia sekwencji zadań na określonym komputerze docelowym**|Przedstawia całkowity czas pomyślnego wykonywania określonej sekwencji zadań na określonym komputerze.|  
+|**Uruchom czasu dla każdego kroku wdrożenia sekwencji zadań na określonym komputerze docelowym**|Przedstawia czas wykonywania każdego kroku określonego wdrożenia sekwencji zadań na określonym komputerze docelowym.|  
+|**Stan określonego wdrożenia sekwencji zadań dla określonego komputera**|Przedstawia podsumowanie stanu określonego wdrożenia sekwencji zadań na określonym komputerze.|  
+|**Stan wdrożenia sekwencji zadań na nieznanym komputerze docelowym**|Przedstawia stan określonego wdrożenia sekwencji zadań na określonym nieznanym komputerze docelowym.|  
+|**Podsumowanie stanu określonego wdrożenia sekwencji zadań**|Przedstawia podsumowanie stanu wszystkich zasobów przeznaczonych do użycia we wdrożeniu.|  
+|**Podsumowanie stanu określonego wdrożenia sekwencji zadań dostępne dla nieznanych komputerów**|Przedstawia podsumowanie stanu wszystkich zasobów przeznaczonych do użycia w określonym wdrożeniu dostępnym dla kolekcji zawierającej nieznane komputery.|  
 
-### <a name="task-sequence---deployments"></a>작업 순서 - 배포  
+### <a name="task-sequence---deployments"></a>Sekwencja zadań — wdrożenia  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**현재 특정 작업 순서 배포의 특정 그룹 또는 단계에 존재하는 모든 시스템 리소스**|현재 지정된 작업 순서 배포의 지정된 그룹이나 단계에서 실행 중인 컴퓨터의 목록이 표시됩니다.|  
-|**특정 그룹 또는 단계에서 작업 순서 배포에 실패한 모든 시스템 리소스**|지정된 작업 순서 배포의 지정된 그룹/단계 내에서 실패한 컴퓨터의 목록이 표시됩니다.|  
-|**모든 작업 순서 배포**|현재 사이트에서 시작된 모든 작업 순서 배포의 세부 정보가 표시됩니다.|  
-|**알 수 없는 컴퓨터에서 사용 가능한 모든 작업 순서 배포**|사이트에서 시작되었으며 알 수 없는 컴퓨터를 포함하는 컬렉션에 배포된 모든 작업 순서 배포의 세부 정보가 표시됩니다.|  
-|**특정 작업 순서의 각 단계 또는 그룹에서 발생한 실패 수**|지정한 작업 순서의 각 단계 또는 그룹에서 발생한 실패 수가 표시됩니다.|  
-|**특정 작업 순서 배포의 각 단계 또는 그룹에서 발생한 실패 수**|지정한 작업 순서 배포의 각 단계 또는 그룹에서 발생한 실패 수가 표시됩니다.|  
-|**모든 작업 순서 배포의 배포 상태**|모든 작업 순서 배포의 전반적인 진행 상황이 표시됩니다.|  
-|**실행 중인 작업 순서의 진행 상황**|지정한 작업 순서의 진행 상황이 표시됩니다.|  
-|**실행 중인 작업 순서 배포의 진행 상황**|지정한 작업 순서 배포의 요약 정보가 표시됩니다.|  
-|**특정 작업 순서에 대한 모든 배포의 진행 상황**|지정한 작업 순서에 대한 모든 배포의 진행 상황이 표시됩니다.|  
-|**작업 순서 배포에 대한 요약 보고서**|지정한 작업 순서 배포의 요약 정보가 표시됩니다.|  
+|**Wszystkie zasoby systemowe obecnie w określonej grupie lub fazie określonego wdrożenia sekwencji zadań**|Przedstawia listę komputerów, które obecnie działają w ramach określonej grupy lub fazy określonego wdrożenia sekwencji zadań.|  
+|**Wszystkie zasoby systemowe, których wdrożenie sekwencji zadań w określonej grupie lub fazie zakończyło się niepowodzeniem**|Przedstawia listę komputerów, na których wystąpiły błędy w ramach określonej grupy lub fazy określonego wdrożenia sekwencji zadań.|  
+|**Wszystkie wdrożenia sekwencji zadań**|Przedstawia szczegóły wszystkich wdrożeń sekwencji zadań inicjowanych w bieżącej lokacji.|  
+|**Wszystkie wdrożenia sekwencji zadań dostępne dla nieznanych komputerów**|Przedstawia szczegóły wszystkich wdrożeń sekwencji zadań inicjowanych z lokacji, które zostały wdrożone w kolekcjach zawierających nieznane komputery.|  
+|**Liczba niepowodzeń w każdej fazie lub grupie określonej sekwencji zadań**|Przedstawia liczbę błędów w każdej fazie lub grupie określonej sekwencji zadań.|  
+|**Liczba niepowodzeń w każdej fazie lub grupie określonego wdrożenia sekwencji zadań**|Przedstawia liczbę błędów w każdej fazie lub grupie określonego wdrożenia sekwencji zadań.|  
+|**Stan wdrożenia wszystkich wdrożeń sekwencji zadań**|Przedstawia ogólny postęp wszystkich wdrożeń sekwencji zadań.|  
+|**Postęp wykonywanej sekwencji zadań**|Przedstawia postęp określonej sekwencji zadań.|  
+|**Postęp wykonywanego wdrożenia sekwencji zadań**|Przedstawia podsumowanie informacji na temat określonego wdrożenia sekwencji zadań.|  
+|**Postęp wszystkich wdrożeń dla określonej sekwencji zadań**|Przedstawia postęp wszystkich wdrożeń określonej sekwencji zadań.|  
+|**Raport podsumowania wdrożenia sekwencji zadań**|Przedstawia podsumowanie informacji na temat określonego wdrożenia sekwencji zadań.|  
 
-### <a name="task-sequence---progress"></a>작업 순서 - 진행률  
+### <a name="task-sequence---progress"></a>Sekwencja zadań — postęp  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**차트 - 작업 순서의 매주 진행 상황**|배포 날짜부터 시작하여 작업 순서의 매주 진행 상황이 표시됩니다.|  
-|**작업 순서의 진행 상황**|지정한 작업 순서의 진행 상황이 표시됩니다.|  
-|**모든 작업 순서의 진행 상황**|모든 작업 순서의 진행 상황 요약이 표시됩니다.|  
-|**운영 체제 배포에 대한 작업 순서의 진행 상황**|운영 체제를 배포하는 모든 작업 순서의 진행 상황이 표시됩니다.|  
-|**알 수 없는 모든 컴퓨터의 상태**|작업 순서 배포를 실행할 때 상태를 알 수 없었던 컴퓨터의 목록과 해당 컴퓨터가 현재는 알려진 컴퓨터인지 여부가 표시됩니다.|  
+|**Wykres - tygodniowy postęp sekwencji zadań**|Przedstawia tygodniowy postęp sekwencji zadań od daty wdrożenia.|  
+|**Postęp sekwencji zadań**|Przedstawia postęp określonej sekwencji zadań.|  
+|**Postęp wszystkich sekwencji zadań**|Przedstawia podsumowanie postępu wszystkich sekwencji zadań.|  
+|**Postęp sekwencji zadań wdrożeń systemu operacyjnego**|Przedstawia postęp wszystkich sekwencji zadań powodujących wdrażanie systemów operacyjnych.|  
+|**Stan wszystkich nieznanych komputerów**|Przedstawia listę komputerów, które były nieznane podczas uruchamiania na nich wdrożenia sekwencji zadań, oraz informacje wskazujące, czy komputery są teraz znane.|  
 
-### <a name="task-sequences---references"></a>작업 순서 - 참조  
+### <a name="task-sequences---references"></a>Sekwencje zadań — odwołania  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**특정 작업 순서가 참조하는 콘텐츠**|지정된 작업 순서가 참조하는 콘텐츠가 표시됩니다.|  
+|**Zawartość z odwołaniami określonej sekwencji zadań**|Przedstawia zawartość, do której odwołuje się sekwencja zadań.|  
 
-### <a name="upgrade-assessment"></a>업그레이드 평가  
+### <a name="upgrade-assessment"></a>Ocena uaktualnienia  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**특정 컴퓨터의 응용 프로그램 상태**|지정한 운영 체제에 대해 컴퓨터에 설치된 응용 프로그램의 호환성이 표시됩니다.|  
-|**특정 컬렉션의 컴퓨터에 대한 응용 프로그램 상태**|각 컴퓨터의 응용 프로그램을 기반으로 지정된 운영 체제에 대한 업그레이드를 평가할 수 있도록 컬렉션에 포함된 컴퓨터의 전체 상태가 표시됩니다. 운영 체제를 배포하기 전에 이 보고서를 사용하면 호환 응용 프로그램이 설치된 컴퓨터를 확인할 수 있습니다.|  
-|**응용 프로그램 상태 요약**|지정된 운영 체제의 응용 프로그램 상태 요약이 표시됩니다. 운영 체제를 배포하기 전에 이 보고서를 사용하면 응용 프로그램 호환성을 확인할 수 있습니다.|  
-|**특정 응용 프로그램이 설치된 컴퓨터**|지정한 응용 프로그램이 설치된 컴퓨터가 표시됩니다.|  
-|**특정 하드웨어 장치가 있는 컴퓨터**|특정 하드웨어 장치가 있는 컴퓨터가 표시됩니다.|  
-|**특정 컴퓨터에 대한 하드웨어 장치 상태**|지정한 컴퓨터에서 확인된 지정한 운영 체제에 대한 하드웨어 장치의 호환성 상태가 표시됩니다.|  
-|**특정 컬렉션의 컴퓨터에 대한 하드웨어 장치 상태**|지정한 컬렉션에 포함된 컴퓨터의 지정된 운영 체제에 대한 하드웨어 장치의 전체 상태가 표시됩니다. 운영 체제를 배포하기 전에 이 보고서를 사용하면 하드웨어 호환성을 확인할 수 있습니다.|  
-|**하드웨어 장치 상태 요약**|지정된 운영 체제의 하드웨어 장치 상태 요약이 표시됩니다. 운영 체제를 배포하기 전에 이 보고서를 사용하면 하드웨어 장치 호환성을 확인할 수 있습니다.|  
-|**운영 체제 하드웨어 요구 사항**|운영 체제에 대한 최소 및 권장 하드웨어 조건이 표시됩니다.|  
-|**특정 컬렉션의 컴퓨터에 대한 운영 체제 요구 사항 상태**|지정한 컬렉션에 포함된 컴퓨터의 지정된 운영 체제에 대한 운영 체제 요구 사항 상태가 표시됩니다. 이 보고서를 사용하면 컴퓨터가 CPU 프로세서 속도, 메모리 크기 및 하드 디스크 공간에 대한 지정된 운영 체제 요구 사항을 충족하는지를 확인할 수 있습니다.|  
-|**업그레이드 평가 요약**|업그레이드 평가 요약이 표시됩니다. 이 보고서를 사용하면 업그레이드 호환성의 전체 상태를 평가할 수 있습니다.|  
+|**Stan aplikacji dla określonego komputera**|Przedstawia zgodność aplikacji zainstalowanych na komputerze dla określonego systemu operacyjnego.|  
+|**Status aplikacji dla komputerów w określonej kolekcji**|Przedstawia stan ogólny dla komputerów w kolekcji, co pozwala na ich ocenę pod względem uaktualniania do określonego systemu operacyjnego w oparciu o aplikacje na każdym komputerze. Ten raport służy do określania, które komputery mają zgodne aplikacje przed wdrożeniem systemu operacyjnego.|  
+|**Podsumowanie stanu aplikacji**|Przedstawia podsumowanie stanu aplikacji dla określonego systemu operacyjnego. Ten raport służy do określania zgodności aplikacji przed wdrożeniem systemu operacyjnego.|  
+|**Komputery z zainstalowaną określoną aplikacją**|Przedstawia komputery z zainstalowaną określoną aplikacją.|  
+|**Komputery z określonym urządzeniem**|Przedstawia komputery z określonym urządzeniem sprzętowym.|  
+|**Stan urządzenia sprzętowego dla określonego komputera**|Przedstawia stan zgodności urządzeń sprzętowych, które znajdują się na określonym komputerze, dla określonego systemu operacyjnego.|  
+|**Stan urządzenia sprzętowego dla komputerów w określonej kolekcji**|Przedstawia stan ogólny urządzeń sprzętowych dla określonego systemu operacyjnego dla komputerów w określonej kolekcji. Ten raport służy do określania zgodności sprzętu przed wdrożeniem systemu operacyjnego.|  
+|**Podsumowanie stanu urządzeń sprzętowych**|Przedstawia podsumowanie stanu urządzeń sprzętowych dla określonego systemu operacyjnego. Ten raport służy do określania zgodności urządzeń sprzętowych przed wdrożeniem systemu operacyjnego.|  
+|**Wymagania sprzętowe systemu operacyjnego**|Przedstawia minimalne i zalecane kryteria dotyczące sprzętu dla systemów operacyjnych.|  
+|**Status wymagań systemu operacyjnego dla komputerów w określonej kolekcji**|Przedstawia stan wymagań systemu operacyjnego dla określonego systemu operacyjnego dla komputerów w określonej kolekcji. Ten raport służy do określania, czy komputer spełnia określone wymagania systemu operacyjnego dotyczące szybkości procesora CPU, rozmiaru pamięci i miejsca na dysku twardym.|  
+|**Podsumowanie oceny uaktualnienia**|Przedstawia podsumowanie oceny uaktualnienia. Ten raport służy do oceniania ogólnego stanu na potrzeby zgodności uaktualniania.|  
 
-### <a name="user---device-affinity"></a>사용자 - 장치 선호도  
+### <a name="user---device-affinity"></a>Użytkownik — koligacja urządzenia  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**컬렉션별 보류 중인 사용자 장치 선호도 연결**|이 보고서에는 컬렉션 구성원에 대해 사용량 데이터를 기준으로 하여 보류 중인 모든 사용자 장치 선호도 할당이 표시됩니다.|  
-|**컬렉션별 사용자 장치 선호도 연결**|지정한 컬렉션의 모든 사용자 장치 연결이 표시되며 결과가 컬렉션 유형(예: 사용자 또는 장치)별로 그룹화됩니다.|  
+|**Powiązania koligacji urządzeń użytkownika oczekujące według kolekcji**|Przedstawia wszystkie oczekujące przypisania koligacji urządzenia użytkownika w oparciu o dane użycia dla elementów członkowskich kolekcji.|  
+|**Powiązania koligacji urządzeń użytkownika na kolekcję**|Przedstawia wszystkie skojarzenia urządzenia użytkownika dla określonej kolekcji, a następnie grupuje wyniki według typu kolekcji (np. użytkownik lub urządzenie).|  
 
-### <a name="user-data-and-profiles-health"></a>사용자 데이터 및 프로필 상태  
+### <a name="user-data-and-profiles-health"></a>Kondycja profili i danych użytkownika  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**폴더 리디렉션 상태 보고서 - 세부 정보**|지정된 사용자에 대해 리디렉션된 각 폴더별 폴더 리디렉션 성능 상태의 세부 정보가 표시됩니다.|  
-|**로밍 사용자 프로필 상태 보고서 - 세부 정보**|지정된 사용자에 대한 로밍 사용자 프로필 성능 상태의 세부 정보가 표시됩니다.|  
-|**사용자 데이터 및 프로필 상태 보고서 - 세부 정보**|요약 보고서에서 개수를 드릴다운할 때 폴더 리디렉션 또는 로밍 사용자 프로필에 대한 오류나 경고 세부 정보가 표시됩니다.|  
-|**사용자 데이터 및 프로필 상태 보고서 - 요약**|폴더 리디렉션 및 로밍 사용자 프로필에 대한 성능 상태의 요약이 표시됩니다.|  
+|**Raport kondycji przekierowania folderów — szczegóły**|Przedstawia szczegóły stanu kondycji przekierowania folderu dla każdego z przekierowanych folderów dla danego użytkownika.|  
+|**Mobilnego raport o kondycji profilu użytkownika — szczegóły**|Przedstawia szczegóły stanu kondycji profilu użytkownika mobilnego dla określonego użytkownika.|  
+|**Raport dane użytkownika i kondycja profilów - szczegóły**|Przedstawia szczegóły błędu lub ostrzeżenia dotyczącego przekierowania folderu lub profilu użytkownika mobilnego po przejściu do szczegółów liczby z raportu podsumowania.|  
+|**Dane użytkownika raport i kondycja profilów - podsumowanie**|Przedstawia podsumowanie stanów kondycji przekierowania folderu i profili użytkowników mobilnych.|  
 
-### <a name="users"></a>사용자  
+### <a name="users"></a>Użytkownicy  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**특정 사용자 이름의 컴퓨터**|지정된 사용자가 사용한 컴퓨터의 목록이 표시됩니다.|  
-|**도메인별 사용자 수**|각 도메인의 사용자 수가 표시됩니다.|  
-|**특정 도메인의 사용자**|지정한 도메인의 사용자 및 컴퓨터 목록이 표시됩니다.|  
+|**Komputery z określoną nazwą użytkownika**|Przedstawia listę komputerów, które były używane przez określonego użytkownika.|  
+|**Liczba użytkowników według domeny**|Przedstawia liczbę użytkowników w każdej domenie.|  
+|**Użytkownicy w określonej domenie**|Przedstawia listę użytkowników i ich komputerów w określonej domenie.|  
 
-### <a name="virtual-applications"></a>가상 응용 프로그램  
+### <a name="virtual-applications"></a>Aplikacje wirtualne  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**App-V 가상 환경 결과**|지정한 컬렉션에 대해 지정된 상태의 지정된 가상 환경에 대한 정보가 표시됩니다.|  
-|**자산에 대한 App-V 가상 환경 결과**|지정된 자산의 지정된 가상 환경에 대한 정보와 지정된 가상 환경의 배포 유형이 표시됩니다.|  
-|**App-V 가상 환경 상태**|지정된 컬렉션의 지정된 가상 환경에 대한 호환성 정보가 표시됩니다.|  
-|**특정 가상 응용 프로그램을 포함하는 컴퓨터**|Application Virtualization Management Sequencer를 사용하여 만든, 지정된 App-V 응용 프로그램 바로 가기를 포함하는 컴퓨터의 요약이 표시됩니다.|  
-|**특정 가상 응용 프로그램 패키지를 포함하는 컴퓨터**|지정한 App-V 응용 프로그램 패키지를 포함하는 컴퓨터의 요약이 표시됩니다.|  
-|**모든 가상 응용 프로그램 패키지 인스턴스 수**|검색된 App-V 응용 프로그램 패키지의 수가 표시됩니다.|  
-|**모든 가상 응용 프로그램 인스턴스 수**|검색된 App-V 응용 프로그램의 수가 표시됩니다.|  
+|**Wyniki środowiska wirtualnego App-V**|Przedstawia informacje o określonym środowisku wirtualnym, które znajduje się w określonym stanie względem wybranej kolekcji.|  
+|**Wyniki środowiska wirtualnego App-V dla zasobu**|Przedstawia informacje o określonym środowisku wirtualnym przy określonym zasobie i dowolnym typie wdrożenia tego środowiska.|  
+|**Status środowiska wirtualnego App-V**|Przedstawia informacje na temat zgodności określonego środowiska wirtualnego z określoną kolekcją.|  
+|**Komputery z określoną aplikacją wirtualną**|Przedstawia podsumowanie komputerów z określonym skrótem aplikacji App-V utworzonym przy użyciu aplikacji Application Virtualization Management Sequencer.|  
+|**Komputery z określonym pakietem aplikacji wirtualnych**|Przedstawia listę komputerów z określonym pakietem aplikacji App-V.|  
+|**Liczba wszystkich wystąpień pakietów aplikacji wirtualnych**|Przedstawia liczbę wykrytych pakietów aplikacji App-V.|  
+|**Liczba wszystkich wystąpień aplikacji wirtualnych**|Przedstawia liczbę wykrytych aplikacji App-V.|  
 
 ### <a name="wake-on-lan"></a>Wake On LAN  
 
-|보고서 이름|설명|  
+|Nazwa raportu|Opis|  
 |-----------------|-----------------|  
-|**Wake On LAN 활동 대상에 해당하는 모든 컴퓨터**|지정한 유형의 배포 중에 Wake on LAN 활동의 대상으로 지정된 컴퓨터의 목록이 표시됩니다.|  
-|**부팅 활동이 보류 중인 모든 개체**|절전 모드 해제가 예약된 개체가 표시됩니다.|  
-|**Wake On LAN을 지원하는 모든 사이트**|Wake On LAN을 지원하는 계층 내 모든 사이트의 목록이 표시됩니다.|  
-|**정의된 기간에 부팅 패킷을 보내는 중에 오류 발생**|정의된 기간에 컴퓨터로 절전 모드 해제 패킷을 보내는 중에 수신된 오류가 표시됩니다.|  
-|**Wake On LAN 활동 기록**|특정 기간 이후에 발생한 절전 모드 해제 활동의 기록이 표시됩니다.|  
-|**절전 모드 해제 프록시 배포 상태 정보**|지정한 컬렉션에 포함된 각 장치의 절전 모드 해제 프록시 배포 상태에 대한 정보가 표시됩니다.|  
-|**절전 모드 해제 프록시 배포 상태 요약**|지정한 컬렉션의 절전 모드 해제 프록시 배포 상태 요약이 표시됩니다.|  
-
+|**Wszystkie komputery ustawione na aktywność funkcji Wake On LAN**|Przedstawia listę komputerów przeznaczonych do użycia na potrzeby działania Wake On LAN podczas wdrażania określonego typu.|  
+|**Wszystkie obiekty oczekujące na wznowienie**|Przedstawia obiekty zaplanowane do wznowienia.|  
+|**Wszystkie lokacje z włączoną funkcją Wake On LAN**|Przedstawia listę wszystkich lokacji w hierarchii, które zostały włączone dla działania Wake On LAN.|  
+|**Błędy otrzymane podczas wysyłania pakietów wznowienia w określonym przedziale czasu**|Przedstawia błędy odebrane podczas wysyłania pakietów do komputerów w zdefiniowanym okresie.|  
+|**Historia aktywności funkcji Wake On LAN**|Przedstawia historię działania wznawiania w danym okresie.|  
+|**Szczegóły stanu wdrażania serwera Proxy wznawiania**|Przedstawia informacje na temat stanu wdrożenia serwera proxy wznawiania dla każdego urządzenia w określonej kolekcji.|  
+|**Podsumowanie stanu wdrażania serwera Proxy wznawiania**|Przedstawia podsumowanie stanu wdrożenia serwera proxy wznawiania w określonej kolekcji.|  

@@ -1,1280 +1,1277 @@
 ---
-title: "설치 명령줄 옵션 | Microsoft 문서"
-description: "이 문서의 정보를 사용하여 명령줄에서 스크립트를 구성하거나 System Center Configuration Manager를 설치할 수 있습니다."
+title: Opcje wiersza polecenia Instalatora | Dokumentacja firmy Microsoft
+description: "Aby skonfigurować skrypty lub do zainstalowania programu System Center Configuration Manager z wiersza polecenia, użyj informacji w tym artykule."
 ms.custom: na
 ms.date: 03/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0da167f1-52cf-4dfd-8f73-833ca3eb8478
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
 ms.openlocfilehash: 04fe7b3e674287c4255563ab4a308e54d0b6c3aa
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 08/07/2017
 ---
-# <a name="command-line-options-for-setup-in-system-center-configuration-manager"></a>System Center Configuration Manager 설치를 위한 명령줄 옵션
+# <a name="command-line-options-for-setup-in-system-center-configuration-manager"></a>Opcje wiersza polecenia instalacji w programie System Center Configuration Manager
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*Dotyczy: Program System Center Configuration Manager (Current Branch)*
 
 
- 다음 정보를 사용하여 명령줄에서 스크립트를 구성하거나 System Center Configuration Manager를 설치할 수 있습니다.  
+ Skorzystaj z poniższych informacji, aby skonfigurować skrypty lub do zainstalowania programu System Center Configuration Manager z wiersza polecenia.  
 
-##  <a name="bkmk_setup"></a> 설치용 명령줄 옵션  
- **/DEINSTALL**  
- 사이트를 제거합니다. 사이트 서버 컴퓨터에서 설치 프로그램을 실행해야 합니다.  
+##  <a name="bkmk_setup"></a>Opcje wiersza polecenia dla Instalatora  
+ **/ DEINSTALL**  
+ Powoduje odinstalowanie lokacji. Należy uruchomić Instalatora z komputera serwera lokacji.  
 
- **/DONTSTARTSITECOMP**  
- 사이트를 설치하지만 Site Component Manager 서비스가 시작되지 않도록 합니다. Site Component Manager 서비스가 시작될 때까지 사이트는 활성화되지 않습니다. Site Component Manager는 SMS_Executive 서비스와 사이트의 추가 프로세스를 설치하고 시작합니다. 사이트 설치가 완료된 후에 Site Component Manager 서비스를 시작하면 SMS_Executive 서비스와 사이트 작동에 필요한 추가 프로세스가 설치됩니다.  
+ **/ DONTSTARTSITECOMP**  
+ Instaluje witrynę, lecz zapobiega uruchomieniu usługi Menedżer składników lokacji. Do czasu uruchamiania usługi Menedżer składników lokacji, lokacji nie jest aktywne. Menedżer składników lokacji jest odpowiedzialny za instalację i uruchomienie usługi SMS_Executive oraz dodatkowych procesów w lokacji. Po zakończeniu instalacji lokacji, po uruchomieniu usługi Menedżer składników lokacji, instaluje usługę SMS_Executive oraz dodatkowych procesów, które są niezbędne do funkcjonowania lokacji.  
 
- **/HIDDEN**  
- 설치하는 동안 사용자 인터페이스를 숨깁니다. 이 옵션은 **/SCRIPT** 옵션과 함께 사용해야 합니다. 무인 스크립트 파일에 필요한 모든 옵션을 지정해야 합니다. 지정하지 않으면 설치가 실패합니다.  
+ **/ UKRYTE**  
+ Powoduje ukrycie interfejsu użytkownika podczas instalacji. Użyj tej opcji tylko w połączeniu z **/SCRIPT** opcji. Plik skryptu instalacji nienadzorowanej musi zawierać wszystkie wymagane opcje lub instalacja zakończy się niepowodzeniem.  
 
- **/NOUSERINPUT**  
- 설치 시 사용자 입력을 사용하지 않도록 설정하지만 설치 마법사를 표시합니다. 이 옵션은 **/SCRIPT** 옵션과 함께 사용해야 합니다. 무인 스크립트 파일에 필요한 모든 옵션을 지정해야 합니다. 지정하지 않으면 설치가 실패합니다.  
+ **/ NOUSERINPUT**  
+ Wyłącza dane wejściowe użytkownika podczas instalacji, ale wyświetla Kreatora instalacji. Użyj tej opcji tylko w połączeniu z **/SCRIPT** opcji. Plik skryptu instalacji nienadzorowanej musi zawierać wszystkie wymagane opcje lub instalacja zakończy się niepowodzeniem.  
 
- **/RESETSITE**  
- 사이트의 데이터베이스 및 서비스 계정을 다시 설정하는 사이트 다시 설정을 수행합니다. 사이트 서버의 **<*Configuration Manager 설치 경로*>\BIN\X64**에서 설치 프로그램을 실행해야 합니다. 사이트 다시 설정에 대한 자세한 내용은 [System Center Configuration Manager 인프라 수정](../../../../core/servers/manage/modify-your-infrastructure.md)의 [사이트 다시 설정 실행](../../../../core/servers/manage/modify-your-infrastructure.md#bkmk_reset) 섹션을 참조하세요.  
+ **/ RESETSITE**  
+ Przeprowadza lokacji resetowania, która służy do resetowania konta bazy danych i usługi dla tej lokacji. Należy uruchomić Instalatora z  **<* ścieżki instalacji programu Configuration Manager*> \BIN\X64** na serwerze lokacji. Aby uzyskać więcej informacji na temat resetowania lokacji, zobacz [uruchamiania resetowania lokacji](../../../../core/servers/manage/modify-your-infrastructure.md#bkmk_reset) sekcji [modyfikowanie infrastruktury programu System Center Configuration Manager](../../../../core/servers/manage/modify-your-infrastructure.md).  
 
- **/TESTDBUPGRADE <*인스턴스 이름*>\\<*데이터베이스 이름*>**  
- 데이터베이스의 업그레이드 가능성을 확인하기 위해 사이트 데이터베이스의 백업에 대한 테스트를 수행합니다. 사이트 데이터베이스의 인스턴스 이름과 데이터베이스 이름을 지정해야 합니다. 데이터베이스 이름만 지정하면 설치 프로그램이 기본 인스턴스 이름을 사용합니다.  
+ **/ TESTDBUPGRADE <*nazwa wystąpienia*>\\<*Nazwa bazy danych*>**  
+ Wykonuje test na kopii zapasowej bazy danych lokacji, aby upewnić się, że bazy danych jest zdolny do uaktualnienia. Należy podać nazwę wystąpienia i nazwę bazy danych dla bazy danych lokacji. Jeśli określisz tylko nazwa bazy danych Instalator użyje nazwa wystąpienia domyślnego.  
 
 > [!IMPORTANT]  
->  프로덕션 사이트 데이터베이스에서는 이 명령줄 옵션을 실행하지 마세요. 프로덕션 사이트 데이터베이스에서 이 명령줄 옵션을 실행하면 사이트 데이터베이스가 업그레이드되어 사이트가 작동하지 않을 수 있습니다.  
+>  Nie wolno uruchamiać tej opcji wiersza polecenia w produkcyjnej bazie danych lokacji. Uruchomienie tej opcji wiersza polecenia w produkcyjnej bazie danych lokacji uaktualniania bazy danych lokacji i może uniemożliwić korzystanie z witryny.  
 
- **/UPGRADE**  
- 사이트의 자동 업그레이드를 실행합니다. **/UPGRADE**를 사용하는 경우 대시(-)를 포함하여 제품 키를 지정해야 합니다. 또한 이전에 다운로드한 설치 필수 구성 요소 파일의 경로를 지정해야 합니다.  
+ **/ UPGRADE**  
+ Uruchamia do przeprowadzenia nienadzorowanego uaktualnienia lokacji. Jeśli używasz **/UPGRADE**, należy określić klucz produktu, łącznie z myślnikami (-). Ponadto należy określić ścieżkę do uprzednio pobranych plików wymagań wstępnych Instalatora.  
 
- 예: `setupwpf.exe /UPGRADE xxxxx-xxxxx-xxxxx-xxxxx-xxxxx <path to external component files>`  
+ Przykład: `setupwpf.exe /UPGRADE xxxxx-xxxxx-xxxxx-xxxxx-xxxxx <path to external component files>`  
 
- 설치 필수 구성 요소 파일에 대한 자세한 내용은 [설치 다운로더](setup-downloader.md)를 참조하세요.  
+ Aby uzyskać więcej informacji na temat plików wymagań wstępnych instalacji, zobacz [Narzędzie pobierania Instalatora](setup-downloader.md).  
 
- **/SCRIPT <*설치 스크립트 경로*>**  
- 무인 설치를 수행합니다. **/SCRIPT** 옵션을 사용하는 경우 설치 초기화 파일이 필요합니다. 무인 설치를 실행하는 방법에 대한 자세한 내용은 [명령줄을 사용하여 System Center Configuration Manager 사이트 설치](../../../../core/servers/deploy/install/use-a-command-line-to-install-sites.md)를 참조하세요.  
+ **/ SCRIPT <*ścieżka skryptu konfiguracji*>**  
+ Wykonuje instalacji nienadzorowanej. Plik inicjujący Instalatora jest wymagany, gdy używasz **/SCRIPT** opcji. Aby uzyskać więcej informacji na temat uruchamiania instalacji nienadzorowanej, zobacz [instalowanie lokacji za pomocą wiersza polecenia](../../../../core/servers/deploy/install/use-a-command-line-to-install-sites.md).  
 
- **/SDKINST <*SMS 공급자 FQDN*>**  
- 지정된 컴퓨터에서 SMS 공급자를 설치합니다. SMS 공급자 컴퓨터의 FQDN(정규화된 도메인 이름)을 입력해야 합니다. SMS 공급자에 대한 자세한 내용은 [System Center Configuration Manager용 SMS 공급자에 대한 계획](../../../../core/plan-design/hierarchy/plan-for-the-sms-provider.md)을 참조하세요.  
+ **/ SDKINST <*dostawcy programu SMS w pełni kwalifikowaną nazwę domeny*>**  
+ Zainstalowany dostawca programu SMS na określonym komputerze. Należy podać pełną nazwę domeny (FQDN) komputera dostawcy programu SMS. Aby uzyskać więcej informacji na temat dostawcy programu SMS, zobacz [planowanie dostawcy programu SMS dla programu System Center Configuration Manager](../../../../core/plan-design/hierarchy/plan-for-the-sms-provider.md).  
 
- **/SDKDEINST <*SMS 공급자 FQDN*>**  
- 지정된 컴퓨터에서 SMS 공급자를 제거합니다. SMS 공급자 컴퓨터의 FQDN을 입력해야 합니다.  
+ **/ SDKDEINST <*dostawcy programu SMS w pełni kwalifikowaną nazwę domeny*>**  
+ Odinstalowuje dostawcy programu SMS na określonym komputerze. Należy podać nazwę FQDN komputera dostawcy programu SMS.  
 
- **/MANAGELANGS <*언어 스크립트 경로*>**  
- 이전에 설치한 사이트에 설치된 언어를 관리합니다. 이 옵션을 사용하려면 사이트 서버의 **<*Configuration Manager 설치 경로*>\BIN\X64**에서 설치 프로그램을 실행하고 언어 설정이 포함된 언어 스크립트 파일의 위치를 지정해야 합니다. 언어 설정 스크립트 파일에서 사용할 수 있는 언어 옵션에 대한 자세한 내용은 이 항목에서 [언어 관리용 명령줄 옵션](#bkmk_Lang)을 참조하세요.  
+ **/ MANAGELANGS <*ścieżka skryptu języka*>**  
+ Służy do zarządzania językami zainstalowanymi w uprzednio zainstalowanej lokacji. Aby użyć tej opcji, należy uruchomić Instalatora z  **<* ścieżki instalacji programu Configuration Manager*> \BIN\X64** na serwerze lokacji i podać lokalizację pliku skryptu języka zawierającego ustawienia języka. Aby uzyskać więcej informacji na temat dostępnych opcji języka w pliku skryptu Instalatora języka, zobacz [opcji wiersza polecenia do zarządzania językami](#bkmk_Lang) w tym temacie.  
 
-##  <a name="bkmk_Lang"></a> 언어 관리용 명령줄 옵션  
- **Identification**  
+##  <a name="bkmk_Lang"></a>Opcje wiersza polecenia do zarządzania językami  
+ **Identyfikacja**  
 
--   **키 이름:** Action  
+-   **Nazwa klucza:** Akcja  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** ManageLanguages  
+    -   **Wartości:** ManageLanguages  
 
-    -   **세부 정보:** 사이트의 서버, 클라이언트 및 모바일 클라이언트 언어 지원을 관리합니다.  
+    -   **Szczegóły:** Zarządza serwer, klient i obsługa języków klientów urządzeń przenośnych w lokacji.  
 
-**Options**  
+**Opcje**  
 
--   **키 이름:** AddServerLanguages  
+-   **Nazwa klucza:** AddServerLanguages  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **Wartości:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK lub ZHH  
 
-    -   **세부 정보:** Configuration Manager 콘솔, 보고서 및 Configuration Manager 개체에 대해 사용할 수 있는 서버 언어를 지정합니다. 영어는 기본적으로 사용할 수 있습니다.  
+    -   **Szczegóły:** Określa języki serwera, które będą dostępne dla konsoli programu Configuration Manager, raportach ani obiektach programu Configuration Manager. Język angielski jest dostępny domyślnie.  
 
--   **키 이름:** AddClientLanguages  
+-   **Nazwa klucza:** AddClientLanguages  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **Wartości:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK lub ZHH  
 
-    -   **세부 정보:** 클라이언트 컴퓨터에 사용할 수 있는 언어를 지정합니다. 영어는 기본적으로 사용할 수 있습니다.  
+    -   **Szczegóły:** Określa języki, które będą dostępne na komputerach klienckich. Język angielski jest dostępny domyślnie.  
 
--   **키 이름:** DeleteServerLanguages  
+-   **Nazwa klucza:** DeleteServerLanguages  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **Wartości:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK lub ZHH  
 
-    -   **세부 정보:** 제거할 언어를 지정합니다. 해당 언어는 Configuration Manager 콘솔, 보고서 및 Configuration Manager 개체에 대해 더 이상 사용할 수 없습니다. 영어는 기본적으로 사용할 수 있으며 제거할 수 없습니다.  
+    -   **Szczegóły:** Określa języki do usunięcia, które nie będą dostępne dla konsoli programu Configuration Manager, raportach ani obiektach programu Configuration Manager. Język angielski jest dostępny domyślnie i nie można usunąć.  
 
--   **키 이름:** DeleteClientLanguages  
+-   **Nazwa klucza:** DeleteClientLanguages  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **Wartości:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK lub ZHH  
 
-    -   **세부 정보:** 제거할 언어를 지정합니다. 해당 언어는 클라이언트 컴퓨터에서 더 이상 사용할 수 없습니다. 영어는 기본적으로 사용할 수 있으며 제거할 수 없습니다.  
+    -   **Szczegóły:** Określa języki do usunięcia, które nie będą dostępne na komputerach klienckich. Język angielski jest dostępny domyślnie i nie można usunąć.  
 
--   **키 이름:** MobileDeviceLanguage  
+-   **Nazwa klucza:** MobileDeviceLanguage  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 설치 안 함  
+         0 = nie instaluj  
 
-         1 = 설치  
+         1 = install  
 
-    -   **세부 정보:** 모바일 장치 클라이언트 언어의 설치 여부를 지정합니다.  
+    -   **Szczegóły:** Określa, czy mają zostać zainstalowane języki klienta urządzenia przenośnego.  
 
--   **키 이름:** PrerequisiteComp  
+-   **Nazwa klucza:** PrerequisiteComp  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 다운로드  
+         0 = pobierania  
 
-         1 = 이미 다운로드됨  
+         1 = już pobrane  
 
-    -   **:** 설치를 위한 필수 파일이 이미 다운로드되었는지 여부를 지정합니다. 예를 들어 **0**값을 사용하는 경우 파일이 다운로드됩니다.  
+    -   **Szczegóły:** Określa, czy pliki wymagań wstępnych Instalatora zostały już pobrane. Na przykład, jeśli używasz wartość **0**, Instalator pobierze pliki.  
 
--   **키 이름:** PrerequisitePath  
+-   **Nazwa klucza:** PrerequisitePath  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*설치 필수 구성 요소 파일 경로*>  
+    -   **Wartości:** <*ścieżkę do plików wymagań wstępnych Instalatora*>  
 
-    -   **세부 정보:** 설치를 위한 필수 파일의 경로를 지정합니다. **PrerequisiteComp** 값에 따라 이 경로는 다운로드한 파일을 저장하는 데 사용되거나 이전에 다운로드한 파일을 찾는 데 사용됩니다.  
+    -   **Szczegóły:** Określa ścieżkę do plików wymagań wstępnych Instalatora. W zależności od wartości **PrerequisiteComp** Instalator używa tej ścieżki do przechowywania pobranych plików lub lokalizowania wcześniej pobranych plików.  
 
-##  <a name="bkmk_Unattended"></a> 무인 설치 스크립트 파일 키  
- 다음 섹션에서는 무인 설치를 위한 스크립트를 생성하는 방법을 설명합니다. 목록에는 사용 가능한 설치 스크립트 키, 해당 값, 필수 여부, 설치 유형, 키에 대한 간략한 설명이 나와 있습니다.  
+##  <a name="bkmk_Unattended"></a>Klucze plików skryptu instalacji nienadzorowanej  
+ Użyj następujące sekcje zawierają informacje pomocne w tworzeniu skryptu instalacji nienadzorowanej. Przedstawiono dostępnych kluczy skryptu instalacji, ich wartości, czy są one wymagane, jakiego typu instalację są używane do i krótki opis klucza.  
 
-### <a name="unattended-install-for-a-central-administration-site"></a>중앙 관리 사이트의 무인 설치  
- 다음에서는 무인 설치 스크립트 파일을 사용하여 중앙 관리 사이트를 설치하는 방법을 설명합니다.  
+### <a name="unattended-install-for-a-central-administration-site"></a>Instalacja nienadzorowana centralnej lokacji administracyjnej  
+ Następujące dane należy zainstalować centralną lokację administracyjną przy użyciu pliku skryptu instalacji nienadzorowanej.  
 
-**Identification**  
+**Identyfikacja**  
 
--   **키 이름:** Action  
+-   **Nazwa klucza:** Akcja  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** InstallCAS  
+    -   **Wartości:** InstallCAS  
 
-    -   **세부 정보:** 중앙 관리 사이트를 설치합니다.  
+    -   **Szczegóły:** Instaluje centralną lokację administracyjną.  
 
--   **키 이름:** CDLatest  
+-   **Nazwa klucza:** CDLatest  
 
-    -   **필수:** 예 – CD.Latest 폴더의 미디어를 사용할 경우에만.    
+    -   **Wymagane:** Tak — tylko w przypadku używania nośnika z dysku CD. Najnowszy folder.    
 
-    -   **값:** 1 1이 아닌 임의 값은 CD.Latest를 사용하지 않는 것으로 간주합니다.
+    -   **Wartości:** 1 wartości innej niż 1 jest uważana za nie można przy użyciu dysku CD. Najnowsze.
 
-    -   **세부 정보:** 기본 또는 중앙 관리 사이트를 설치하거나 기본 또는 중앙 관리 사이트를 복구할 복적으로 CD.Latest 폴더에 있는 미디어의 설치 프로그램을 실행할 경우 키 및 값을 스크립트에 포함해야 합니다. 이 값은 미디어 양식 CD.Latest가 사용되고 있음을 설치 프로그램에 알립니다.
+    -   **Szczegóły:** Skrypt musi zawierać ten klucz i wartość po uruchomieniu Instalatora z nośnika na dysku CD. Najnowszy folder na potrzeby instalowania lokacji głównej lub centralnej administracji lub lokacji głównej lub centralnej administracji odzyskiwania. Ta wartość informuje Instalatora czy multimediów tworzą dysku CD. Jest używana najnowsza.
 
-**Options**  
+**Opcje**  
 
--   **키 이름:** ProductID  
+-   **Nazwa klucza:** Identyfikator produktu  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*xxxxx-xxxxx-xxxxx-xxxxx-xxxxx*> *또는* Eval  
+    -   **Wartości:** <*xxxxx-xxxxx-xxxxx-xxxxx-xxxxx*> *lub* Eval  
 
-    -   **세부 정보:** 대시를 포함하여 Configuration Manager 설치 제품 키를 지정합니다. Configuration Manager의 평가 버전을 설치하려면 **Eval**을 입력합니다.  
+    -   **Szczegóły:** Określa klucz produktu instalacji programu Configuration Manager, wraz z kreskami. Wprowadź **Eval** Aby zainstalować wersję ewaluacyjną programu Configuration Manager.  
 
--   **키 이름:** SiteCode  
+-   **Nazwa klucza:** Kod lokacji  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*사이트 코드*>  
+    -   **Wartości:** <*kod lokacji*>  
 
-    -   **세부 정보:** 계층에서 사이트를 고유하게 식별하는 영숫자 3자를 지정합니다.  
+    -   **Szczegóły:** Określa trzy znaki alfanumeryczne, które jednoznacznie identyfikują lokację w hierarchii.  
 
--   **키 이름:** 사이트 이름  
+-   **Nazwa klucza:** Nazwa witryny  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*사이트 이름*>  
+    -   **Wartości:** <*Nazwa lokacji*>  
 
-    -   **세부 정보:** 이 사이트의 이름을 지정합니다.  
+    -   **Szczegóły:** Określa nazwę dla tej lokacji.  
 
--   **키 이름:** SMSInstallDir  
+-   **Nazwa klucza:** SMSInstallDir  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*Configuration Manager 설치 경로*>  
+    -   **Wartości:** <*ścieżki instalacji programu Configuration Manager*>  
 
-    -   **세부 정보:** Configuration Manager 프로그램 파일의 설치 폴더를 지정합니다.  
+    -   **Szczegóły:** Określa folder instalacji plików programu Configuration Manager.  
 
--   **키 이름:** SDKServer  
+-   **Nazwa klucza:** SDKServer  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*SMS 공급자 FQDN*>  
+    -   **Wartości:** <*dostawcy programu SMS w pełni kwalifikowaną nazwę domeny*>  
 
-    -   **세부 정보:** SMS 공급자를 호스트할 서버의 FQDN을 지정합니다. 초기 설치 후 사이트에 대해 다른 SMS 공급자를 구성할 수 있습니다.  
+    -   **Szczegóły:** Określa nazwę FQDN serwera, który będzie hostował dostawcę programu SMS. Po instalacji początkowej możesz skonfigurować dodatkowych dostawców programu SMS dla lokacji.  
 
--   **키 이름:** PrerequisiteComp  
+-   **Nazwa klucza:** PrerequisiteComp  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 다운로드  
+         0 = pobierania  
 
-         1 = 이미 다운로드됨  
+         1 = już pobrane  
 
-    -   **:** 설치를 위한 필수 파일이 이미 다운로드되었는지 여부를 지정합니다. 예를 들어 **0** 값을 사용하면 설치 프로그램이 파일을 다운로드합니다.  
+    -   **Szczegóły:** Określa, czy pliki wymagań wstępnych Instalatora zostały już pobrane. Na przykład, jeśli używasz wartość **0**, Instalator pobierze pliki.  
 
--   **키 이름:** PrerequisitePath  
+-   **Nazwa klucza:** PrerequisitePath  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*설치 필수 구성 요소 파일 경로*>  
+    -   **Wartości:** <*ścieżkę do plików wymagań wstępnych Instalatora*>  
 
-    -   **세부 정보:** 설치를 위한 필수 파일의 경로를 지정합니다. **PrerequisiteComp** 값에 따라 이 경로는 다운로드한 파일을 저장하는 데 사용되거나 이전에 다운로드한 파일을 찾는 데 사용됩니다.  
+    -   **Szczegóły:** Określa ścieżkę do plików wymagań wstępnych Instalatora. W zależności od wartości **PrerequisiteComp** Instalator używa tej ścieżki do przechowywania pobranych plików lub lokalizowania wcześniej pobranych plików.  
 
--   **키 이름:** AdminConsole  
+-   **Nazwa klucza:** AdminConsole  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 설치 안 함  
+         0 = nie instaluj  
 
-         1 = 설치  
+         1 = install  
 
-    -   **세부 정보:** Configuration Manager 콘솔 설치 여부를 지정합니다.  
+    -   **Szczegóły:** Określa, czy instalować konsolę programu Configuration Manager.  
 
--   **키 이름:** JoinCEIP  
+-   **Nazwa klucza:** JoinCEIP  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 참여 안 함  
+         0 = nie dołączaj  
 
-         1 = 참여  
+         1 = sprzężenia  
 
-    -   **세부 정보:** CEIP(사용자 환경 개선 프로그램)에 참여할지 여부를 지정합니다.  
+    -   **Szczegóły:** Określa, czy dołączyć do programu poprawy jakości obsługi klienta (CEIP).  
 
--   **키 이름:** AddServerLanguages  
+-   **Nazwa klucza:** AddServerLanguages  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **Wartości:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK lub ZHH  
 
-    -   **세부 정보:** Configuration Manager 콘솔, 보고서 및 Configuration Manager 개체에 대해 사용할 수 있는 서버 언어를 지정합니다. 영어는 기본적으로 사용할 수 있습니다.  
+    -   **Szczegóły:** Określa języki serwera, które będą dostępne dla konsoli programu Configuration Manager, raportach ani obiektach programu Configuration Manager. Język angielski jest dostępny domyślnie.  
 
--   **키 이름:** AddClientLanguages  
+-   **Nazwa klucza:** AddClientLanguages  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **Wartości:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK lub ZHH  
 
-    -   **세부 정보:** 클라이언트 컴퓨터에 사용할 수 있는 언어를 지정합니다. 영어는 기본적으로 사용할 수 있습니다.  
+    -   **Szczegóły:** Określa języki, które będą dostępne na komputerach klienckich. Język angielski jest dostępny domyślnie.  
 
--   **키 이름:** DeleteServerLanguages  
+-   **Nazwa klucza:** DeleteServerLanguages  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **Wartości:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK lub ZHH  
 
-    -   **세부 정보:** 사이트를 설치한 후 사이트를 수정합니다. 제거할 언어를 지정합니다. 해당 언어는 Configuration Manager 콘솔, 보고서 및 Configuration Manager 개체에 대해 더 이상 사용할 수 없습니다. 영어는 기본적으로 사용할 수 있으며 제거할 수 없습니다.  
+    -   **Szczegóły:** Modyfikuje lokację po jej zainstalowaniu. Określa języki do usunięcia, które nie będą dostępne dla konsoli programu Configuration Manager, raportach ani obiektach programu Configuration Manager. Język angielski jest dostępny domyślnie i nie można usunąć.  
 
--   **키 이름:** DeleteClientLanguages  
+-   **Nazwa klucza:** DeleteClientLanguages  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **Wartości:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK lub ZHH  
 
-    -   **세부 정보:** 사이트를 설치한 후 사이트를 수정합니다. 제거할 언어를 지정합니다. 해당 언어는 클라이언트 컴퓨터에서 더 이상 사용할 수 없습니다. 영어는 기본적으로 사용할 수 있으며 제거할 수 없습니다.  
+    -   **Szczegóły:** Modyfikuje lokację po jej zainstalowaniu. Określa języki do usunięcia, które nie będą dostępne na komputerach klienckich. Język angielski jest dostępny domyślnie i nie można usunąć.  
 
--   **키 이름:** MobileDeviceLanguage  
+-   **Nazwa klucza:** MobileDeviceLanguage  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 설치 안 함  
+         0 = nie instaluj  
 
-         1 = 설치  
+         1 = install  
 
-    -   **세부 정보:** 모바일 장치 클라이언트 언어의 설치 여부를 지정합니다.  
+    -   **Szczegóły:** Określa, czy mają zostać zainstalowane języki klienta urządzenia przenośnego.  
 
 **SQLConfigOptions**  
 
--   **키 이름:** SQLServerName  
+-   **Nazwa klucza:** SQLServerName  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*SQL Server 이름*>  
+    -   **Wartości:** <*nazwa serwera SQL*>  
 
-    -   **세부 정보:** 사이트 데이터베이스를 호스트할 SQL Server가 실행 중인 클러스터된 인스턴스 또는 서버의 이름을 지정합니다.  
+    -   **Szczegóły:** Określa nazwę serwera lub klastrowanego wystąpienia, w którym jest uruchomiony program SQL Server i który będzie hostem bazy danych lokacji.  
 
--   **키 이름:** DatabaseName  
+-   **Nazwa klucza:** DatabaseName  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*사이트 데이터베이스 이름*> 또는 <*인스턴스 이름*>\\<*사이트 데이터베이스 이름*>  
+    -   **Wartości:** <*Nazwa bazy danych lokacji*> lub <*nazwa wystąpienia*>\\<*Nazwa bazy danych lokacji*>  
 
-    -   **세부 정보:** 중앙 관리 사이트 데이터베이스를 설치할 때 사용하거나 만들 SQL Server 데이터베이스의 이름을 지정합니다.  
+    -   **Szczegóły:** Określa nazwę bazy danych programu SQL Server do utworzenia lub bazy danych programu SQL Server do użycia podczas instalowania bazy danych witryny Administracja centralna.  
 
         > [!IMPORTANT]  
-        >  기본 인스턴스를 사용하지 않는 경우 인스턴스 이름과 사이트 데이터베이스 이름을 지정해야 합니다.  
+        >  Jeżeli nie używasz domyślnego wystąpienia, należy określić nazwy wystąpienia i lokacji.  
 
--   **키 이름:** SQLSSBPort  
+-   **Nazwa klucza:** SQLSSBPort  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** <*SSB 포트 번호*>  
+    -   **Wartości:** <*numer portu SSB*>  
 
-    -   **세부 정보:** SQL Server가 사용하는 SSB(SQL Server Service Broker) 포트를 지정합니다. 일반적으로 SSB는 TCP 포트 4022를 사용하도록 구성되지만 다른 포트를 사용할 수도 있습니다.  
+    -   **Szczegóły:** Określa port usługi SQL Server Service Broker (SSB) używany przez program SQL Server. SSB jest zazwyczaj skonfigurowany do używania portu TCP 4022, ale można użyć innego portu.  
 
--   **키 이름:** SQLDataFilePath  
+-   **Nazwa klucza:** SQLDataFilePath  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** <*데이터베이스 .mdb 파일 경로*>  
+    -   **Wartości:** <*ścieżka do pliku MDB bazy danych*>  
 
-    -   **세부 정보:** 데이터베이스 .mdb 파일을 만들 대체 위치를 지정합니다.  
+    -   **Szczegóły:** Określa alternatywną lokalizację, aby utworzyć plik mdb bazy danych.  
 
--   **키 이름:** SQLLogFilePath  
+-   **Nazwa klucza:** SQLLogFilePath  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** <*데이터베이스 .ldf 파일 경로*>  
+    -   **Wartości:** <*ścieżka do pliku ldf bazy danych*>  
 
-    -   **세부 정보:** 데이터베이스 .ldf 파일을 만들 대체 위치를 지정합니다.  
+    -   **Szczegóły:** Określa alternatywną lokalizację, aby utworzyć plik ldf bazy danych.  
 
 **CloudConnectorOptions**  
 
--   **키 이름:** CloudConnector  
+-   **Nazwa klucza:** CloudConnector  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 설치 안 함  
+         0 = nie instaluj  
 
-         1 = 설치  
+         1 = install  
 
-    -   **세부 정보:** 이 사이트에 서비스 연결 지점을 설치할지 여부를 지정합니다. 서비스 연결 지점은 계층 구조의 최상위 계층 사이트에만 설치할 수 있으므로 이 값은 자식 기본 사이트에 대해 **0**이어야 합니다.  
+    -   **Szczegóły:** Określa, czy zainstalować punktu połączenia usługi w tej lokacji. Ponieważ punktu połączenia usługi można zainstalować tylko w lokacji najwyższego poziomu w hierarchii, ta wartość musi być **0** dla podrzędnej lokacji głównej.  
 
--   **키 이름:** CloudConnectorServer  
+-   **Nazwa klucza:** CloudConnectorServer  
 
-    -   **필수:** **CloudConnector**가 1인 경우에 필수입니다.  
+    -   **Wymagane:** Wymagany, gdy **CloudConnector** jest równa 1  
 
-    -   **값:** <*서비스 연결 지점 서버 FQDN*>  
+    -   **Wartości:** <*nazwa FQDN serwera punktu połączenia usługi*>  
 
-    -   **세부 정보:** 서비스 연결 지점 사이트 시스템 역할을 호스트하는 서버의 FQDN을 지정합니다.  
+    -   **Szczegóły:** Określa nazwę FQDN serwera, który będzie hostem roli systemu lokacji punktu połączenia usługi.  
 
--   **키 이름:** UseProxy  
+-   **Nazwa klucza:** UseProxy  
 
-    -   **필수:** **CloudConnector**가 1인 경우에 필수입니다.  
+    -   **Wymagane:** Wymagany, gdy **CloudConnector** jest równa 1  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 설치 안 함  
+         0 = nie instaluj  
 
-         1 = 설치  
+         1 = install  
 
-    -   **세부 정보:** 서비스 연결 지점에서 프록시 서버를 사용할지 여부를 지정합니다.  
+    -   **Szczegóły:** Określa, czy punkt połączenia usługi będzie używać serwera proxy.  
 
--   **키 이름:** ProxyName  
+-   **Nazwa klucza:** ProxyName  
 
-    -   **필수:** **UseProxy**가 1인 경우에 필수입니다.  
+    -   **Wymagane:** Wymagany, gdy **UseProxy** jest równa 1  
 
-    -   **값:** <*프록시 서버 FQDN*>  
+    -   **Wartości:** <*nazwa FQDN serwera Proxy*>  
 
-    -   **세부 정보:** 서비스 연결 지점 사이트 시스템 역할에서 사용할 프록시 서버의 FQDN을 지정합니다.  
+    -   **Szczegóły:** Określa nazwę FQDN serwera proxy, który będzie używany przez rolę systemu lokacji punktu połączenia usługi.  
 
--   **키 이름:** ProxyPort  
+-   **Nazwa klucza:** ProxyPort  
 
-    -   **필수:** **UseProxy**가 1인 경우에 필수입니다.  
+    -   **Wymagane:** Wymagany, gdy **UseProxy** jest równa 1  
 
-    -   **값:** <*포트 번호*>  
+    -   **Wartości:** <*numer portu*>  
 
-    -   **세부 정보:** 프록시 포트에 사용할 포트 번호를 지정합니다.  
+    -   **Szczegóły:** Określa numer portu na potrzeby port serwera proxy.  
 
-### <a name="unattended-install-for-a-primary-site"></a>기본 사이트의 무인 설치  
-다음에서는 무인 설치 스크립트 파일을 사용하여 기본 사이트를 설치하는 방법을 설명합니다.  
+### <a name="unattended-install-for-a-primary-site"></a>Instalacja nienadzorowana lokacji głównej  
+Następujące dane należy zainstalować lokacji głównej przy użyciu pliku skryptu instalacji nienadzorowanej.  
 
-**Identification**  
+**Identyfikacja**  
 
--   **키 이름:** Action  
+-   **Nazwa klucza:** Akcja  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** InstallPrimarySite  
+    -   **Wartości:** InstallPrimarySite  
 
-    -   **세부 정보:** 기본 사이트를 설치합니다.  
+    -   **Szczegóły:** Instaluje lokację główną.  
 
--   **키 이름:** CDLatest  
+-   **Nazwa klucza:** CDLatest  
 
-    -   **필수:** 예 – CD.Latest 폴더의 미디어를 사용할 경우에만.    
+    -   **Wymagane:** Tak — tylko w przypadku używania nośnika z dysku CD. Najnowszy folder.    
 
-    -   **값:** 1 1이 아닌 임의 값은 CD.Latest를 사용하지 않는 것으로 간주합니다.
+    -   **Wartości:** 1 wartości innej niż 1 jest uważana za nie można przy użyciu dysku CD. Najnowsze.
 
-    -   **세부 정보:** 기본 또는 중앙 관리 사이트를 설치하거나 기본 또는 중앙 관리 사이트를 복구할 복적으로 CD.Latest 폴더에 있는 미디어의 설치 프로그램을 실행할 경우 키 및 값을 스크립트에 포함해야 합니다. 이 값은 미디어 양식 CD.Latest가 사용되고 있음을 설치 프로그램에 알립니다.
+    -   **Szczegóły:** Skrypt musi zawierać ten klucz i wartość po uruchomieniu Instalatora z nośnika na dysku CD. Najnowszy folder na potrzeby instalowania lokacji głównej lub centralnej administracji lub lokacji głównej lub centralnej administracji odzyskiwania. Ta wartość informuje Instalatora czy multimediów tworzą dysku CD. Jest używana najnowsza.
 
-**Options**  
+**Opcje**  
 
--   **키 이름:** ProductID  
+-   **Nazwa klucza:** Identyfikator produktu  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*xxxxx-xxxxx-xxxxx-xxxxx-xxxxx*> *또는* Eval  
+    -   **Wartości:** <*xxxxx-xxxxx-xxxxx-xxxxx-xxxxx*> *lub* Eval  
 
-    -   **세부 정보:** 대시를 포함하여 Configuration Manager 설치 제품 키를 지정합니다. Configuration Manager의 평가 버전을 설치하려면 **Eval**을 입력합니다.  
+    -   **Szczegóły:** Określa klucz produktu instalacji programu Configuration Manager, wraz z kreskami. Wprowadź **Eval** Aby zainstalować wersję ewaluacyjną programu Configuration Manager.  
 
--   **키 이름:** SiteCode  
+-   **Nazwa klucza:** Kod lokacji  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*사이트 코드*>  
+    -   **Wartości:** <*kod lokacji*>  
 
-    -   **세부 정보:** 계층에서 사이트를 고유하게 식별하는 영숫자 3자를 지정합니다.  
+    -   **Szczegóły:** Określa trzy znaki alfanumeryczne, które jednoznacznie identyfikują lokację w hierarchii.  
 
--   **키 이름:** SiteName  
+-   **Nazwa klucza:** Nazwa witryny  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*사이트 이름*>  
+    -   **Wartości:** <*Nazwa lokacji*>  
 
-    -   **세부 정보:** 이 사이트의 이름을 지정합니다.  
+    -   **Szczegóły:** Określa nazwę dla tej lokacji.  
 
--   **키 이름:** SMSInstallDir  
+-   **Nazwa klucza:** SMSInstallDir  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*Configuration Manager 설치 경로*>
+    -   **Wartości:** <*ścieżki instalacji programu Configuration Manager*>
 
-    -   **세부 정보:** Configuration Manager 프로그램 파일의 설치 폴더를 지정합니다.  
+    -   **Szczegóły:** Określa folder instalacji plików programu Configuration Manager.  
 
--   **키 이름:** SDKServer  
+-   **Nazwa klucza:** SDKServer  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*SMS 공급자 FQDN*>  
+    -   **Wartości:** <*dostawcy programu SMS w pełni kwalifikowaną nazwę domeny*>  
 
-    -   **세부 정보:** SMS 공급자를 호스트할 서버의 FQDN을 지정합니다. 초기 설치 후 사이트에 대해 다른 SMS 공급자를 구성할 수 있습니다.  
+    -   **Szczegóły:** Określa nazwę FQDN serwera, który będzie hostował dostawcę programu SMS. Po instalacji początkowej możesz skonfigurować dodatkowych dostawców programu SMS dla lokacji.  
 
--   **키 이름:** PrerequisiteComp  
+-   **Nazwa klucza:** PrerequisiteComp  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 다운로드  
+         0 = pobierania  
 
-         1 = 이미 다운로드됨  
+         1 = już pobrane  
 
-    -   **:** 설치를 위한 필수 파일이 이미 다운로드되었는지 여부를 지정합니다. 예를 들어 **0** 값을 사용하면 설치 프로그램이 파일을 다운로드합니다.  
+    -   **Szczegóły:** Określa, czy pliki wymagań wstępnych Instalatora zostały już pobrane. Na przykład, jeśli używasz wartość **0**, Instalator pobierze pliki.  
 
--   **키 이름:** PrerequisitePath  
+-   **Nazwa klucza:** PrerequisitePath  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*설치 필수 구성 요소 파일 경로*>  
+    -   **Wartości:** <*ścieżkę do plików wymagań wstępnych Instalatora*>  
 
-    -   **세부 정보:** 설치를 위한 필수 파일의 경로를 지정합니다. **PrerequisiteComp** 값에 따라 이 경로는 다운로드한 파일을 저장하는 데 사용되거나 이전에 다운로드한 파일을 찾는 데 사용됩니다.  
+    -   **Szczegóły:** Określa ścieżkę do plików wymagań wstępnych Instalatora. W zależności od wartości **PrerequisiteComp** Instalator używa tej ścieżki do przechowywania pobranych plików lub lokalizowania wcześniej pobranych plików.  
 
--   **키 이름:** AdminConsole  
+-   **Nazwa klucza:** AdminConsole  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 설치 안 함  
+         0 = nie instaluj  
 
-         1 = 설치  
+         1 = install  
 
-    -   **세부 정보:** Configuration Manager 콘솔 설치 여부를 지정합니다.  
+    -   **Szczegóły:** Określa, czy instalować konsolę programu Configuration Manager.  
 
--   **키 이름:** JoinCEIP  
+-   **Nazwa klucza:** JoinCEIP  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 참여 안 함  
+         0 = nie dołączaj  
 
-         1 = 참여  
+         1 = sprzężenia  
 
-    -   **세부 정보:** CEIP에 참여할지 여부를 지정합니다.  
+    -   **Szczegóły:** Określa, czy do dołączenia do programu CEIP.  
 
--   **키 이름:** ManagementPoint  
+-   **Nazwa klucza:** ManagementPoint  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** <*관리 지점 사이트 서버 FQDN*>  
+    -   **Wartości:** <*nazwa FQDN serwera lokacji punktu zarządzania*>  
 
-    -   **세부 정보:** 관리 지점 사이트 시스템 역할을 호스트할 서버의 FQDN을 지정합니다.  
+    -   **Szczegóły:** Określa nazwę FQDN serwera, który będzie obsługiwać rolę systemu lokacji punktu zarządzania.  
 
--   **키 이름:** ManagementPointProtocol  
+-   **Nazwa klucza:** ManagementPointProtocol  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** HTTPS *또는* HTTP  
+    -   **Wartości:** HTTPS *lub* HTTP  
 
-    -   **세부 정보:** 관리 지점에 사용할 프로토콜을 지정합니다.  
+    -   **Szczegóły:** Określa protokół do użycia w punkcie zarządzania.  
 
--   **키 이름:** DistributionPoint  
+-   **Nazwa klucza:** W Krakowie  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** <*배포 지점 사이트 서버 FQDN*>  
+    -   **Wartości:** <*nazwa FQDN serwera lokacji punktu dystrybucji*>  
 
-    -   **세부 정보:** 배포 지점에 사용할 프로토콜을 지정합니다.  
+    -   **Szczegóły:** Określa protokół do użycia w punkcie dystrybucji.  
 
--   **키 이름:** DistributionPointProtocol  
+-   **Nazwa klucza:** DistributionPointProtocol  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** HTTPS *또는* HTTP  
+    -   **Wartości:** HTTPS *lub* HTTP  
 
-    -   **세부 정보:** 배포 지점에 사용할 프로토콜을 지정합니다.  
+    -   **Szczegóły:** Określa protokół do użycia w punkcie dystrybucji.  
 
--   **키 이름:** RoleCommunicationProtocol  
+-   **Nazwa klucza:** RoleCommunicationProtocol  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** EnforceHTTPS *또는*  HTTPorHTTPS  
+    -   **Wartości:** EnforceHTTPS *lub* HTTPorHTTPS  
 
-    -   **세부 정보:** 클라이언트의 HTTPS 통신만 수락하도록 모든 사이트 시스템을 구성할지, 아니면 각 사이트 시스템 역할마다 다른 통신 방법을 구성할지를 지정합니다. **EnforceHTTPS**를 선택하는 경우 클라이언트 컴퓨터에 클라이언트 인증을 위해 유효한 PKI(공개 키 인프라) 인증서가 있어야 합니다.  
+    -   **Szczegóły:** Określa, czy skonfigurować wszystkie systemy lokacji, aby akceptowały wyłącznie komunikację HTTPS od klientów lub metoda komunikacji ma być skonfigurowana dla poszczególnych ról systemu lokacji. Po wybraniu do **EnforceHTTPS**, komputer kliencki musi mieć prawidłową infrastruktury kluczy publicznych (PKI) certyfikatu uwierzytelniania klienta.  
 
--   **키 이름:** ClientsUsePKICertificate  
+-   **Nazwa klucza:** ClientsUsePKICertificate  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 사용 안 함  
+         0 = nie używaj  
 
-         1 = 사용  
+         1 = użyj  
 
-    -   **세부 정보:** 클라이언트가 클라이언트 PKI 인증서를 사용하여 사이트 시스템 역할과 통신할지 여부를 지정합니다.  
+    -   **Szczegóły:** Określa, czy klienci będą używać certyfikatu PKI klienta do komunikacji z rolami systemu lokacji.  
 
--   **키 이름:** AddServerLanguages  
+-   **Nazwa klucza:** AddServerLanguages  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **Wartości:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK lub ZHH  
 
-    -   **세부 정보:** Configuration Manager 콘솔, 보고서 및 Configuration Manager 개체에 대해 사용할 수 있는 서버 언어를 지정합니다. 영어는 기본적으로 사용할 수 있습니다.  
+    -   **Szczegóły:** Określa języki serwera, które będą dostępne dla konsoli programu Configuration Manager, raportach ani obiektach programu Configuration Manager. Język angielski jest dostępny domyślnie.  
 
--   **키 이름:** AddClientLanguages  
+-   **Nazwa klucza:** AddClientLanguages  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **Wartości:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK lub ZHH  
 
-    -   **세부 정보:** 클라이언트 컴퓨터에 사용할 수 있는 언어를 지정합니다. 영어는 기본적으로 사용할 수 있습니다.  
+    -   **Szczegóły:** Określa języki, które będą dostępne na komputerach klienckich. Język angielski jest dostępny domyślnie.  
 
--   **키 이름:** DeleteServerLanguages  
+-   **Nazwa klucza:** DeleteServerLanguages  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **Wartości:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK lub ZHH  
 
-    -   **세부 정보:** 사이트를 설치한 후 사이트를 수정합니다. 제거할 언어를 지정합니다. 해당 언어는 Configuration Manager 콘솔, 보고서 및 Configuration Manager 개체에 대해 더 이상 사용할 수 없습니다. 영어는 기본적으로 사용할 수 있으며 제거할 수 없습니다.  
+    -   **Szczegóły:** Modyfikuje lokację po jej zainstalowaniu. Określa języki do usunięcia, które nie będą dostępne dla konsoli programu Configuration Manager, raportach ani obiektach programu Configuration Manager. Język angielski jest dostępny domyślnie i nie można usunąć.  
 
--   **키 이름:** DeleteClientLanguages  
+-   **Nazwa klucza:** DeleteClientLanguages  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **Wartości:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK lub ZHH  
 
-    -   **세부 정보:** 사이트를 설치한 후 사이트를 수정합니다. 제거할 언어를 지정합니다. 해당 언어는 클라이언트 컴퓨터에서 더 이상 사용할 수 없습니다. 영어는 기본적으로 사용할 수 있으며 제거할 수 없습니다.  
+    -   **Szczegóły:** Modyfikuje lokację po jej zainstalowaniu. Określa języki do usunięcia, które nie będą dostępne na komputerach klienckich. Język angielski jest dostępny domyślnie i nie można usunąć.  
 
--   **키 이름:** MobileDeviceLanguage  
+-   **Nazwa klucza:** MobileDeviceLanguage  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 설치 안 함  
+         0 = nie instaluj  
 
-         1 = 설치  
+         1 = install  
 
-    -   **세부 정보:** 모바일 장치 클라이언트 언어의 설치 여부를 지정합니다.  
+    -   **Szczegóły:** Określa, czy mają zostać zainstalowane języki klienta urządzenia przenośnego.  
 
 **SQLConfigOptions**  
 
--   **키 이름:** SQLServerName  
+-   **Nazwa klucza:** SQLServerName  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*SQL Server 이름*>  
+    -   **Wartości:** <*nazwa serwera SQL*>  
 
-    -   **세부 정보:** 사이트 데이터베이스를 호스트할 SQL Server가 실행 중인 클러스터된 인스턴스 또는 서버의 이름을 지정합니다.  
+    -   **Szczegóły:** Określa nazwę serwera lub klastrowanego wystąpienia, w którym jest uruchomiony program SQL Server i który będzie hostem bazy danych lokacji.  
 
--   **키 이름:** DatabaseName  
+-   **Nazwa klucza:** DatabaseName  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*사이트 데이터베이스 이름*> 또는 <*인스턴스 이름*>\\<*사이트 데이터베이스 이름*>  
+    -   **Wartości:** <*Nazwa bazy danych lokacji*> lub <*nazwa wystąpienia*>\\<*Nazwa bazy danych lokacji*>  
 
-    -   **세부 정보:** 기본 사이트 데이터베이스를 설치할 때 사용하거나 만들 SQL Server 데이터베이스의 이름을 지정합니다.  
+    -   **Szczegóły:** Określa nazwę bazy danych programu SQL Server, aby utworzyć lub bazy danych programu SQL Server do użycia podczas instalowania bazy danych lokacji głównej.  
 
         > [!IMPORTANT]  
-        >  기본 인스턴스를 사용하지 않는 경우 인스턴스 이름과 사이트 데이터베이스 이름을 지정해야 합니다.  
+        >  Jeżeli nie używasz domyślnego wystąpienia, należy określić nazwy wystąpienia i lokacji.  
 
--   **키 이름:** SQLSSBPort  
+-   **Nazwa klucza:** SQLSSBPort  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** <*SSB 포트 번호*>  
+    -   **Wartości:** <*numer portu SSB*>  
 
-    -   **세부 정보:** SQL Server가 사용하는 SSB 포트를 지정합니다. 일반적으로 SSB는 TCP 포트 4022를 사용하도록 구성되지만 다른 포트를 사용할 수도 있습니다.  
+    -   **Szczegóły:** Określa port SBB, który używa programu SQL Server. SSB jest zazwyczaj skonfigurowany do używania portu TCP 4022, ale można użyć innego portu.  
 
--   **키 이름:** SQLDataFilePath  
+-   **Nazwa klucza:** SQLDataFilePath  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** <*데이터베이스 .mdb 파일 경로*>  
+    -   **Wartości:** <*ścieżka do pliku MDB bazy danych*>  
 
-    -   **세부 정보:** 데이터베이스 .mdb 파일을 만들 대체 위치를 지정합니다.  
+    -   **Szczegóły:** Określa alternatywną lokalizację, aby utworzyć plik mdb bazy danych.  
 
--   **키 이름:** SQLLogFilePath  
+-   **Nazwa klucza:** SQLLogFilePath  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** <*데이터베이스 .ldf 파일 경로*>  
+    -   **Wartości:** <*ścieżka do pliku ldf bazy danych*>  
 
-    -   **세부 정보:** 데이터베이스 .ldf 파일을 만들 대체 위치를 지정합니다.  
+    -   **Szczegóły:** Określa alternatywną lokalizację, aby utworzyć plik ldf bazy danych.  
 
 **HierarchyExpansionOption**  
 
--   **키 이름:** CCARSiteServer  
+-   **Nazwa klucza:** CCARSiteServer  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** <*중앙 관리 사이트 FQDN*>  
+    -   **Wartości:** <*centralnej lokacji administracyjnej FQDN*>  
 
-    -   **세부 정보:** 기본 사이트가 Configuration Manager 계층 구조에 가입할 때 연결할 중앙 관리 사이트를 지정합니다. 중앙 관리 사이트는 설치하는 동안 지정해야 합니다.  
+    -   **Szczegóły:** Określa lokację administracji centralnej, który będzie dołączać lokacja główna po dołączeniu do hierarchii programu Configuration Manager. Należy określić podczas instalacji centralnej lokacji administracyjnej.  
 
--   **키 이름:** CASRetryInterval  
+-   **Nazwa klucza:** CASRetryInterval  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** <*간격*>  
+    -   **Wartości:** <*Interval*>  
 
-    -   **세부 정보:** 연결에 실패한 후 중앙 관리 사이트를 연결하려고 다시 시도하는 간격(분)을 지정합니다. 예를 들어 중앙 관리 사이트에 연결하지 못한 기본 사이트는 **CASRetryInterval** 값으로 지정된 시간(분) 동안 기다린 다음 연결을 다시 시도합니다.  
+    -   **Szczegóły:** Określa interwał ponawiania prób (w minutach) prób połączenia z lokacją administracji centralnej po niepowodzeniu. Na przykład, jeśli nie może nawiązać połączenia z lokacją administracji centralnej, lokacji głównej czeka liczbę minut, które określają dla **CASRetryInterval** wartość, a następnie ponowne próby nawiązania połączenia.  
 
--   **키 이름:** WaitForCASTimeout  
+-   **Nazwa klucza:** WaitForCASTimeout  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** <*시간 제한*>  
+    -   **Wartości:** <*Timeout*>  
 
-         **0**~**100** 값  
+         Wartość **0** do **100**  
 
-    -   **세부 정보:** 기본 사이트가 중앙 관리 사이트에 연결하는 최대 시간 제한 값(분)을 지정합니다. 예를 들어 기본 사이트가 중앙 관리 사이트에 연결하지 못하면 **WaitForCASTimeout** 기간에 도달할 때까지 기본 사이트는 **CASRetryInterval** 값을 기반으로 중앙 관리 사이트에 연결하려고 다시 시도합니다. **0**~**100** 값을 지정할 수 있습니다.  
+    -   **Szczegóły:** Określa maksymalną wartość limitu czasu (w minutach) dla lokacji głównej połączyć się z witryną Administracja centralna. Na przykład, jeśli w lokacji głównej nie może połączyć się z centralną lokacją administracyjną, lokacja główna ponowi próbę połączenia centralnej lokacji administracyjnej na podstawie **CASRetryInterval** wartości do **WaitForCASTimeout** upływem czasu. Można określić wartość **0** do **100**.  
 
 **CloudConnectorOptions**  
 
--   **키 이름:** CloudConnector  
+-   **Nazwa klucza:** CloudConnector  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 설치 안 함  
+         0 = nie instaluj  
 
-         1 = 설치  
+         1 = install  
 
-    -   **세부 정보:** 이 사이트에 서비스 연결 지점을 설치할지 여부를 지정합니다. 서비스 연결 지점은 계층 구조의 최상위 계층 사이트에만 설치할 수 있으므로 이 값은 자식 기본 사이트에 대해 **0**이어야 합니다.  
+    -   **Szczegóły:** Określa, czy zainstalować punktu połączenia usługi w tej lokacji. Ponieważ punktu połączenia usługi można zainstalować tylko w lokacji najwyższego poziomu w hierarchii, ta wartość musi być **0** dla podrzędnej lokacji głównej.  
 
--   **키 이름:** CloudConnectorServer  
+-   **Nazwa klucza:** CloudConnectorServer  
 
-    -   **필수:** **CloudConnector**가 1인 경우에 필수입니다.  
+    -   **Wymagane:** Wymagany, gdy **CloudConnector** jest równa 1  
 
-    -   **값:** <*서비스 연결 지점 서버 FQDN*\>  
+    -   **Wartości:** <*nazwa FQDN serwera punktu połączenia usługi*\>  
 
-    -   **세부 정보:** 서비스 연결 지점 사이트 시스템 역할을 호스트하는 서버의 FQDN을 지정합니다.  
+    -   **Szczegóły:** Określa nazwę FQDN serwera, który będzie hostem roli systemu lokacji punktu połączenia usługi.  
 
--   **키 이름:** UseProxy  
+-   **Nazwa klucza:** UseProxy  
 
-    -   **필수:** **CloudConnector**가 1인 경우에 필수입니다.  
+    -   **Wymagane:** Wymagany, gdy **CloudConnector** jest równa 1  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 설치 안 함  
+         0 = nie instaluj  
 
-         1 = 설치  
+         1 = install  
 
-    -   **세부 정보:** 서비스 연결 지점에서 프록시 서버를 사용할지 여부를 지정합니다.  
+    -   **Szczegóły:** Określa, czy punkt połączenia usługi będzie używać serwera proxy.  
 
--   **키 이름:** ProxyName  
+-   **Nazwa klucza:** ProxyName  
 
-    -   **필수:** **UseProxy**가 1인 경우에 필수입니다.  
+    -   **Wymagane:** Wymagany, gdy **UseProxy** jest równa 1  
 
-    -   **값:** <*프록시 서버 FQDN*>  
+    -   **Wartości:** <*nazwa FQDN serwera Proxy*>  
 
-    -   **세부 정보:** 서비스 연결 지점 사이트 시스템 역할에서 사용할 프록시 서버의 FQDN을 지정합니다.  
+    -   **Szczegóły:** Określa nazwę FQDN serwera proxy, który będzie używany przez rolę systemu lokacji punktu połączenia usługi.  
 
--   **키 이름:** ProxyPort  
+-   **Nazwa klucza:** ProxyPort  
 
-    -   **필수:** **UseProxy**가 1인 경우에 필수입니다.  
+    -   **Wymagane:** Wymagany, gdy **UseProxy** jest równa 1  
 
-    -   **값:** <*포트 번호*>  
+    -   **Wartości:** <*numer portu*>  
 
-    -   **세부 정보:** 프록시 포트에 사용할 포트 번호를 지정합니다.  
+    -   **Szczegóły:** Określa numer portu na potrzeby port serwera proxy.  
 
-### <a name="unattended-recovery-for-a-central-administration-site"></a>중앙 관리 사이트의 무인 복구  
- 다음에서는 무인 설치 스크립트 파일을 사용하여 중앙 관리 사이트를 복구하는 방법에 대해 설명합니다.  
+### <a name="unattended-recovery-for-a-central-administration-site"></a>Odzyskiwanie nienadzorowane centralnej lokacji administracyjnej  
+ Użyj poniższe szczegóły służą do odzyskiwania centralnej lokacji administracyjnej przy użyciu pliku skryptu instalacji nienadzorowanej.  
 
-**Identification**  
+**Identyfikacja**  
 
--   **키 이름:** Action  
+-   **Nazwa klucza:** Akcja  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** RecoverCCAR  
+    -   **Wartości:** RecoverCCAR  
 
-    -   **세부 정보:** 중앙 관리 사이트를 복구합니다.  
+    -   **Szczegóły:** Odzyskuje centralną lokację administracyjną.  
 
--   **키 이름:** CDLatest  
+-   **Nazwa klucza:** CDLatest  
 
-    -   **필수:** 예 – CD.Latest 폴더의 미디어를 사용할 경우에만.    
+    -   **Wymagane:** Tak — tylko w przypadku używania nośnika z dysku CD. Najnowszy folder.    
 
-    -   **값:** 1 1이 아닌 임의 값은 CD.Latest를 사용하지 않는 것으로 간주합니다.
+    -   **Wartości:** 1 wartości innej niż 1 jest uważana za nie można przy użyciu dysku CD. Najnowsze.
 
-    -   **세부 정보:** 기본 또는 중앙 관리 사이트를 설치하거나 기본 또는 중앙 관리 사이트를 복구할 복적으로 CD.Latest 폴더에 있는 미디어의 설치 프로그램을 실행할 경우 키 및 값을 스크립트에 포함해야 합니다. 이 값은 미디어 양식 CD.Latest가 사용되고 있음을 설치 프로그램에 알립니다.
+    -   **Szczegóły:** Skrypt musi zawierać ten klucz i wartość po uruchomieniu Instalatora z nośnika na dysku CD. Najnowszy folder na potrzeby instalowania lokacji głównej lub centralnej administracji lub lokacji głównej lub centralnej administracji odzyskiwania. Ta wartość informuje Instalatora czy multimediów tworzą dysku CD. Jest używana najnowsza.
 
 **RecoveryOptions**  
 
--   **키 이름:** ServerRecoveryOptions  
+-   **Nazwa klucza:** ServerRecoveryOptions  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** 1, 2 또는 4  
+    -   **Wartości:** 1, 2 lub 4  
 
-         1 = 사이트 서버와 SQL Server 복구  
+         1 = odzyskiwanie serwera lokacji i programu SQL Server.  
 
-         2 = 사이트 서버만 복구  
+         2 = odzyskiwanie tylko serwera lokacji.  
 
-         4 = SQL Server만 복구  
+         4 = odzyskiwanie tylko programu SQL Server.  
 
-    -   **세부 정보:** 설치 프로그램이 복구할 대상(사이트 서버, SQL Server, 둘 다)을 지정합니다. **ServerRecoveryOptions** 설정에 대해 다음 값을 설정하는 경우 연결된 키는 필수입니다.  
+    -   **Szczegóły:** Określa, czy Instalator będzie przeprowadzał odzyskiwanie serwera lokacji i programu SQL Server. Skojarzone klucze są wymagane podczas ustawiania poniższej wartości dla **ServerRecoveryOptions** ustawienia:  
 
-        -   값 = 1: 사이트 백업을 사용하여 사이트를 복구할 수 있도록 **SiteServerBackupLocation** 키 값을 지정하는 옵션이 있습니다. 값을 지정하지 않으면 사이트는 백업 집합으로부터 복원되지 않고 다시 설치됩니다.  
+        -   Wartość = 1: Użytkownik może określić wartość dla **SiteServerBackupLocation** klawisz, aby odzyskiwać lokację przy użyciu kopii zapasowej lokacji. Jeżeli nie określisz wartości, lokacja zostanie ponownie zainstalowana bez przywracania jej z zestawu kopii zapasowych.  
 
-        -   값 = 2: 사이트 백업을 사용하여 사이트를 복구할 수 있도록 **SiteServerBackupLocation** 키 값을 지정하는 옵션이 있습니다. 값을 지정하지 않으면 사이트는 백업 집합으로부터 복원되지 않고 다시 설치됩니다.  
+        -   Wartość = 2: Użytkownik może określić wartość dla **SiteServerBackupLocation** klawisz, aby odzyskiwać lokację przy użyciu kopii zapasowej lokacji. Jeżeli nie określisz wartości, lokacja zostanie ponownie zainstalowana bez przywracania jej z zestawu kopii zapasowych.  
 
-        -   값 = 4: **DatabaseRecoveryOptions** 키 값을 **10** 으로 구성하여 백업에서 사이트 데이터베이스를 복원하는 경우 **BackupLocation** 키는 필수입니다.  
+        -   Wartość = 4: Klucz **BackupLocation** jest wymagany w przypadku skonfigurowania dla klucza **DatabaseRecoveryOptions** wartości **10** , która umożliwia przywracanie bazy danych lokacji z kopii zapasowej.  
 
--   **키 이름:** DatabaseRecoveryOptions  
+-   **Nazwa klucza:** DatabaseRecoveryOptions  
 
-    -   **필수:** **ServerRecoveryOptions** 설정 값이 **1** 또는 **4**인 경우 이 키는 필수입니다.  
+    -   **Wymagane:** Ten klucz jest wymagany, gdy ustawienie **ServerRecoveryOptions** ma wartość **1** lub **4**.  
 
-    -   **값:** 10, 20, 40 또는 80  
+    -   **Wartości:** 10, 20, 40 lub 80  
 
-         10 = 백업에서 사이트 데이터베이스 복구  
+         10 = przywracanie bazy danych lokacji z kopii zapasowej.  
 
-         20 = 다른 방법을 사용하여 수동으로 복구된 사이트 데이터베이스 사용  
+         20 = korzystanie z bazy danych lokacji, która została ręcznie odzyskana przy użyciu innej metody.  
 
-         40 = 사이트에 새 데이터베이스 만들기. 사이트 데이터베이스 백업을 사용할 수 없는 경우 이 옵션을 사용하세요. 글로벌 데이터 및 사이트 데이터는 다른 사이트를 복제하여 복구됩니다.  
+         40 = tworzenie nowej bazy danych lokacji. Użyj tej opcji, gdy nie ma dostępnej kopii zapasowej bazy danych lokacji. Odzyskiwanie danych globalnych i danych lokacji przebiega przy użyciu replikacji z innych lokacji.  
 
-         80 = 데이터베이스 복구 건너뛰기  
+         80 = pomijanie odzyskiwania bazy danych.  
 
-    -   **세부 정보:** SQL Server의 사이트 데이터베이스를 복구하는 방법을 지정합니다.  
+    -   **Szczegóły:** Określa sposób odzyskiwania bazy danych lokacji w programie SQL Server.  
 
--   **키 이름:** ReferenceSite  
+-   **Nazwa klucza:** ReferenceSite  
 
-    -   **필수:** **DatabaseRecoveryOptions** 설정 값이 **40**인 경우 이 키는 필수입니다.  
+    -   **Wymagane:** Ten klucz jest wymagany, gdy ustawienie **DatabaseRecoveryOptions** ma wartość **40**.  
 
-    -   **값:** <*참조 사이트 FQDN*>  
+    -   **Wartości:** <*nazwa FQDN lokacji odniesienia*>  
 
-    -   **세부 정보:** 데이터베이스 백업이 변경 내용 추적 보존 기간보다 오래 되었거나 백업 없이 사이트를 복구할 경우 중앙 관리 사이트에서 글로벌 데이터를 복구하는 데 사용하는 참조 기본 사이트를 지정합니다.  
+    -   **Szczegóły:** Określa lokację główną odniesienia używaną przez centralną lokację administracyjną do odzyskiwania danych globalnych, jeśli kopia zapasowa bazy danych jest starsza od okresu przechowywania śledzenia zmian lub w przypadku odzyskiwania lokacji bez kopii zapasowej.  
 
-         참조 사이트를 지정하지 않았는데 백업이 변경 추적 보존 기간보다 오래된 경우 모든 기본 사이트는 중앙 관리 사이트에서 복원된 데이터로 다시 초기화됩니다.  
+         Jeśli nie określisz lokacji odniesienia i tworzenia kopii zapasowej jest starsza od okresu przechowywania śledzenia zmian, wszystkie lokacje główne zostaną zainicjowane ponownie przy użyciu danych przywróconych z centralnej lokacji administracyjnej.  
 
-         참조 사이트를 지정하지 않았지만 백업이 변경 추적 보존 기간 내에 있는 경우 백업 이후 적용된 변경 내용만 기본 사이트에 복제됩니다. 서로 다른 기본 사이트 간에 충돌하는 변경 내용이 있으면 중앙 관리 사이트에서는 가장 먼저 수신한 변경 내용을 사용합니다.  
+         Jeśli nie zostanie określona lokacja odniesienia i kopia zapasowa pochodzi okresu przechowywania śledzenia zmian, tylko zmiany wprowadzone po kopii zapasowej są replikowane w lokacjach głównych. W przypadku wystąpienia konfliktu między zmianami z różnych lokacji głównych centralna lokacja administracyjna użyje danych otrzymanych w pierwszej kolejności.  
 
--   **키 이름:** SiteServerBackupLocation  
+-   **Nazwa klucza:** SiteServerBackupLocation  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** <*사이트 서버 백업 집합 경로*>  
+    -   **Wartości:** <*ścieżka do zestawu kopii zapasowych serwera lokacji*>  
 
-    -   **세부 정보:** 사이트 서버 백업 집합의 경로를 지정합니다. **ServerRecoveryOptions** 설정 값이 **1** 또는 **2**인 경우 이 키는 옵션입니다. 사이트 백업을 사용하여 사이트를 복구할 수 있도록 **SiteServerBackupLocation** 키의 값을 지정합니다. 값을 지정하지 않으면 사이트는 백업 집합으로부터 복원되지 않고 다시 설치됩니다.  
+    -   **Szczegóły:** Określa ścieżkę do zestawu kopii zapasowych serwera lokacji. Ten klucz jest opcjonalny, gdy ustawienie **ServerRecoveryOptions** ma wartość **1** lub **2**. Określ wartość dla klucza **SiteServerBackupLocation** , aby odzyskiwać lokację przy użyciu kopii zapasowej lokacji. Jeżeli nie określisz wartości, lokacja zostanie ponownie zainstalowana bez przywracania jej z zestawu kopii zapasowych.  
 
--   **키 이름:** BackupLocation  
+-   **Nazwa klucza:** BackupLocation  
 
-    -   **필수:** **ServerRecoveryOptions** 키 값을 **1** 또는 **4**로 구성하고 **DatabaseRecoveryOptions** 키 값을 **10**으로 구성하는 경우 이 키는 필수입니다.  
+    -   **Wymagane:** Ten klucz jest wymagany w przypadku skonfigurowania wartości **1** lub **4** dla **ServerRecoveryOptions** klucza i skonfigurować wartość **10** dla **DatabaseRecoveryOptions** klucza.  
 
-    -   **값:** <*사이트 데이터베이스 백업 집합 경로*>  
+    -   **Wartości:** <*ścieżka do zestawu kopii zapasowych bazy danych lokacji*>  
 
-    -   **세부 정보:** 사이트 데이터베이스 백업 집합의 경로를 지정합니다.  
+    -   **Szczegóły:** Określa ścieżkę do zestawu kopii zapasowych bazy danych lokacji.  
 
-**Options**  
+**Opcje**  
 
--   **키 이름:** ProductID  
+-   **Nazwa klucza:** Identyfikator produktu  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*xxxxx-xxxxx-xxxxx-xxxxx-xxxxx*> *또는* Eval  
+    -   **Wartości:** <*xxxxx-xxxxx-xxxxx-xxxxx-xxxxx*> *lub* Eval  
 
-    -   **세부 정보:** 대시를 포함하여 Configuration Manager 설치 제품 키를 지정합니다. Configuration Manager의 평가 버전을 설치하려면 **Eval**을 입력합니다.  
+    -   **Szczegóły:** Określa klucz produktu instalacji programu Configuration Manager, wraz z kreskami. Wprowadź **Eval** Aby zainstalować wersję ewaluacyjną programu Configuration Manager.  
 
--   **키 이름:** SiteCode  
+-   **Nazwa klucza:** Kod lokacji  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*사이트 코드*>  
+    -   **Wartości:** <*kod lokacji*>  
 
-    -   **세부 정보:** 계층에서 사이트를 고유하게 식별하는 영숫자 3자를 지정합니다. 장애가 발생하기 전에 사이트에 사용되던 사이트 코드를 지정해야 합니다.
+    -   **Szczegóły:** Określa trzy znaki alfanumeryczne, które jednoznacznie identyfikują lokację w hierarchii. Należy określić kod lokacji używany przed awarią.
 
--   **키 이름:** SiteName  
+-   **Nazwa klucza:** Nazwa witryny  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** <*사이트 이름*>  
+    -   **Wartości:** <*Nazwa lokacji*>  
 
-    -   **세부 정보:** 이 사이트의 이름을 지정합니다.  
+    -   **Szczegóły:** Określa nazwę dla tej lokacji.  
 
--   **키 이름:** SMSInstallDir  
+-   **Nazwa klucza:** SMSInstallDir  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*Configuration Manager 설치 경로*>  
+    -   **Wartości:** <*ścieżki instalacji programu Configuration Manager*>  
 
-    -   **세부 정보:** Configuration Manager 프로그램 파일의 설치 폴더를 지정합니다.  
+    -   **Szczegóły:** Określa folder instalacji plików programu Configuration Manager.  
 
--   **키 이름:** SDKServer  
+-   **Nazwa klucza:** SDKServer  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*SMS 공급자 FQDN*>  
+    -   **Wartości:** <*dostawcy programu SMS w pełni kwalifikowaną nazwę domeny*>  
 
-    -   **세부 정보:** SMS 공급자를 호스트할 서버의 FQDN을 지정합니다. 장애가 발생하기 전에 SMS 공급자를 호스트하던 서버를 지정해야 합니다.  
+    -   **Szczegóły:** Określa nazwę FQDN serwera, który będzie hostował dostawcę programu SMS. Należy określić serwer, który hostował dostawcę programu SMS przed awarią.  
 
-         초기 설치 후 사이트에 대해 다른 SMS 공급자를 구성할 수 있습니다. SMS 공급자에 대한 자세한 내용은 [System Center Configuration Manager용 SMS 공급자에 대한 계획](../../../../core/plan-design/hierarchy/plan-for-the-sms-provider.md)을 참조하세요.  
+         Po instalacji początkowej możesz skonfigurować dodatkowych dostawców programu SMS dla lokacji. Aby uzyskać więcej informacji na temat dostawcy programu SMS, zobacz [planowanie dostawcy programu SMS dla programu System Center Configuration Manager](../../../../core/plan-design/hierarchy/plan-for-the-sms-provider.md).  
 
--   **키 이름:** PrerequisiteComp  
+-   **Nazwa klucza:** PrerequisiteComp  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 다운로드  
+         0 = pobierania  
 
-         1 = 이미 다운로드됨  
+         1 = już pobrane  
 
-    -   **:** 설치를 위한 필수 파일이 이미 다운로드되었는지 여부를 지정합니다. 예를 들어 **0**값을 사용하는 경우 파일이 다운로드됩니다.  
+    -   **Szczegóły:** Określa, czy pliki wymagań wstępnych Instalatora zostały już pobrane. Na przykład, jeśli używasz wartość **0**, Instalator pobierze pliki.  
 
--   **키 이름:** PrerequisitePath  
+-   **Nazwa klucza:** PrerequisitePath  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*설치 필수 구성 요소 파일 경로*>  
+    -   **Wartości:** <*ścieżkę do plików wymagań wstępnych Instalatora*>  
 
-    -   **세부 정보:** 설치를 위한 필수 파일의 경로를 지정합니다. **PrerequisiteComp** 값에 따라 이 경로는 다운로드한 파일을 저장하는 데 사용되거나 이전에 다운로드한 파일을 찾는 데 사용됩니다.  
+    -   **Szczegóły:** Określa ścieżkę do plików wymagań wstępnych Instalatora. W zależności od wartości **PrerequisiteComp** Instalator używa tej ścieżki do przechowywania pobranych plików lub lokalizowania wcześniej pobranych plików.  
 
--   **키 이름:** AdminConsole  
+-   **Nazwa klucza:** AdminConsole  
 
-    -   **필수:** **ServerRecoveryOptions** 설정 값이 **4**인 경우를 제외하고 이 키는 필수입니다.  
+    -   **Wymagane:** Ten klucz jest wymagany, chyba że ustawienie **ServerRecoveryOptions** ma wartość **4**.  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 설치 안 함  
+         0 = nie instaluj  
 
-         1 = 설치  
+         1 = install  
 
-    -   **세부 정보:** Configuration Manager 콘솔 설치 여부를 지정합니다.  
+    -   **Szczegóły:** Określa, czy instalować konsolę programu Configuration Manager.  
 
--   **키 이름:** JoinCEIP  
+-   **Nazwa klucza:** JoinCEIP  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 참여 안 함  
+         0 = nie dołączaj  
 
-         1 = 참여  
+         1 = sprzężenia  
 
-    -   **세부 정보:** CEIP에 참여할지 여부를 지정합니다.  
+    -   **Szczegóły:** Określa, czy do dołączenia do programu CEIP.  
 
 **SQLConfigOptions**  
 
--   **키 이름:** SQLServerName  
+-   **Nazwa klucza:** SQLServerName  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*SQL Server 이름*>  
+    -   **Wartości:** <*nazwa serwera SQL*>  
 
-    -   **세부 정보:** 사이트 데이터베이스를 호스트할 SQL Server가 실행 중인 클러스터된 인스턴스 또는 서버의 이름을 지정합니다. 실패하기 전에 사이트 데이터베이스를 호스팅했던 서버를 지정해야 합니다.  
+    -   **Szczegóły:** Określa nazwę serwera lub klastrowanego wystąpienia, w którym jest uruchomiony program SQL Server i który będzie hostem bazy danych lokacji. Należy określić serwer, który hostował bazę danych lokacji przed awarią.  
 
--   **키 이름:** DatabaseName  
+-   **Nazwa klucza:** DatabaseName  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*사이트 데이터베이스 이름*> 또는 <*인스턴스 이름*>\\<*사이트 데이터베이스 이름*>  
+    -   **Wartości:** <*Nazwa bazy danych lokacji*> lub <*nazwa wystąpienia*>\\<*Nazwa bazy danych lokacji*>  
 
-    -   **세부 정보:** 중앙 관리 사이트 데이터베이스를 설치할 때 사용하거나 만들 SQL Server 데이터베이스의 이름을 지정합니다. 실패하기 전에 사용되던 동일한 데이터베이스 이름을 지정해야 합니다.  
+    -   **Szczegóły:** Określa nazwę bazy danych programu SQL Server do utworzenia lub bazy danych programu SQL Server do użycia podczas instalowania bazy danych witryny Administracja centralna. Należy określić nazwę bazy danych, która była używana przed awarią.  
 
         > [!IMPORTANT]  
-        >  기본 인스턴스를 사용하지 않는 경우 인스턴스 이름과 사이트 데이터베이스 이름을 지정해야 합니다.  
+        >  Jeżeli nie używasz domyślnego wystąpienia, należy określić nazwy wystąpienia i lokacji.  
 
--   **키 이름:** SQLSSBPort  
+-   **Nazwa klucza:** SQLSSBPort  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*SSB 포트 번호*>  
+    -   **Wartości:** <*numer portu SSB*>  
 
-    -   **세부 정보:** SQL Server가 사용하는 SSB 포트를 지정합니다. 일반적으로 SSB는 TCP 포트 4022를 사용하도록 구성됩니다. 실패하기 전에 사용했던 SSB 포트를 지정해야 합니다.  
+    -   **Szczegóły:** Określa port SBB, który używa programu SQL Server. SSB jest zazwyczaj skonfigurowany do używania portu TCP 4022. Należy określić ten sam port SBB, który był używany przed awarią.  
 
--   **키 이름:** SQLDataFilePath  
+-   **Nazwa klucza:** SQLDataFilePath  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** <*데이터베이스 .mdb 파일 경로*>  
+    -   **Wartości:** <*ścieżka do pliku MDB bazy danych*>  
 
-    -   **세부 정보:** 데이터베이스 .mdb 파일을 만들 대체 위치를 지정합니다.  
+    -   **Szczegóły:** Określa alternatywną lokalizację, aby utworzyć plik mdb bazy danych.  
 
--   **키 이름:** SQLLogFilePath  
+-   **Nazwa klucza:** SQLLogFilePath  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** <*데이터베이스 .ldf 파일 경로*>  
+    -   **Wartości:** <*ścieżka do pliku ldf bazy danych*>  
 
-    -   **세부 정보:** 데이터베이스 .ldf 파일을 만들 대체 위치를 지정합니다.  
+    -   **Szczegóły:** Określa alternatywną lokalizację, aby utworzyć plik ldf bazy danych.  
 
 **CloudConnectorOptions**  
 
--   **키 이름:** CloudConnector  
+-   **Nazwa klucza:** CloudConnector  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 설치 안 함  
+         0 = nie instaluj  
 
-         1 = 설치  
+         1 = install  
 
-    -   **세부 정보:** 이 사이트에 서비스 연결 지점을 설치할지 여부를 지정합니다. 서비스 연결 지점은 계층 구조의 최상위 계층 사이트에만 설치할 수 있으므로 이 값은 자식 기본 사이트에 대해 **0**이어야 합니다.  
+    -   **Szczegóły:** Określa, czy zainstalować punktu połączenia usługi w tej lokacji. Ponieważ punktu połączenia usługi można zainstalować tylko w lokacji najwyższego poziomu w hierarchii, ta wartość musi być **0** dla podrzędnej lokacji głównej.  
 
--   **키 이름:** CloudConnectorServer  
+-   **Nazwa klucza:** CloudConnectorServer  
 
-    -   **필수:** **CloudConnector**가 1인 경우에 필수입니다.  
+    -   **Wymagane:** Wymagany, gdy **CloudConnector** jest równa 1  
 
-    -   **값:** <*서비스 연결 지점 서버 FQDN*>  
+    -   **Wartości:** <*nazwa FQDN serwera punktu połączenia usługi*>  
 
-    -   **세부 정보:** 서비스 연결 지점 사이트 시스템 역할을 호스트하는 서버의 FQDN을 지정합니다.  
+    -   **Szczegóły:** Określa nazwę FQDN serwera, który będzie hostem roli systemu lokacji punktu połączenia usługi.  
 
--   **키 이름:** UseProxy  
+-   **Nazwa klucza:** UseProxy  
 
-    -   **필수:** **CloudConnector**가 1인 경우에 필수입니다.  
+    -   **Wymagane:** Wymagany, gdy **CloudConnector** jest równa 1  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 설치 안 함  
+         0 = nie instaluj  
 
-         1 = 설치  
+         1 = install  
 
-    -   **세부 정보:** 서비스 연결 지점에서 프록시 서버를 사용할지 여부를 지정합니다.  
+    -   **Szczegóły:** Określa, czy punkt połączenia usługi będzie używać serwera proxy.  
 
--   **키 이름:** ProxyName  
+-   **Nazwa klucza:** ProxyName  
 
-    -   **필수:** **CloudConnector**가 1인 경우에 필수입니다.  
+    -   **Wymagane:** Wymagany, gdy **CloudConnector** jest równa 1  
 
-    -   **값:** <*프록시 서버 FQDN*>  
+    -   **Wartości:** <*nazwa FQDN serwera Proxy*>  
 
-    -   **세부 정보:** 서비스 연결 지점 사이트 시스템 역할에서 사용할 프록시 서버의 FQDN을 지정합니다.  
+    -   **Szczegóły:** Określa nazwę FQDN serwera proxy, który będzie używany przez rolę systemu lokacji punktu połączenia usługi.  
 
--   **키 이름:** ProxyPort  
+-   **Nazwa klucza:** ProxyPort  
 
-    -   **필수:** **CloudConnector**가 1인 경우에 필수입니다.  
+    -   **Wymagane:** Wymagany, gdy **CloudConnector** jest równa 1  
 
-    -   **값:** <*포트 번호*>  
+    -   **Wartości:** <*numer portu*>  
 
-    -   **세부 정보:** 프록시 포트에 사용할 포트 번호를 지정합니다.  
+    -   **Szczegóły:** Określa numer portu na potrzeby port serwera proxy.  
 
-### <a name="unattended-recovery-for-a-primary-site"></a>기본 사이트의 무인 복구  
- 다음에서는 무인 설치 스크립트 파일을 사용하여 기본 사이트를 복구하는 방법을 설명합니다.  
+### <a name="unattended-recovery-for-a-primary-site"></a>Odzyskiwanie nienadzorowane lokacji głównej  
+ Użyj poniższe szczegóły służą do odzyskiwania lokacji głównej przy użyciu pliku skryptu instalacji nienadzorowanej.  
 
-**Identification**  
+**Identyfikacja**  
 
--   **키 이름:** Action  
+-   **Nazwa klucza:** Akcja  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*RecoverPrimarySite*>  
+    -   **Wartości:** <*RecoverPrimarySite*>  
 
-    -   **세부 정보:** 기본 사이트를 복구합니다.  
+    -   **Szczegóły:** Odzyskuje lokację główną.  
 
--   **키 이름:** CDLatest  
+-   **Nazwa klucza:** CDLatest  
 
-    -   **필수:** 예 – CD.Latest 폴더의 미디어를 사용할 경우에만.    
+    -   **Wymagane:** Tak — tylko w przypadku używania nośnika z dysku CD. Najnowszy folder.    
 
-    -   **값:** 1 1이 아닌 임의 값은 CD.Latest를 사용하지 않는 것으로 간주합니다.
+    -   **Wartości:** 1 wartości innej niż 1 jest uważana za nie można przy użyciu dysku CD. Najnowsze.
 
-    -   **세부 정보:** 기본 또는 중앙 관리 사이트를 설치하거나 기본 또는 중앙 관리 사이트를 복구할 복적으로 CD.Latest 폴더에 있는 미디어의 설치 프로그램을 실행할 경우 키 및 값을 스크립트에 포함해야 합니다. 이 값은 미디어 양식 CD.Latest가 사용되고 있음을 설치 프로그램에 알립니다.    
+    -   **Szczegóły:** Skrypt musi zawierać ten klucz i wartość po uruchomieniu Instalatora z nośnika na dysku CD. Najnowszy folder na potrzeby instalowania lokacji głównej lub centralnej administracji lub lokacji głównej lub centralnej administracji odzyskiwania. Ta wartość informuje Instalatora czy multimediów tworzą dysku CD. Jest używana najnowsza.    
 
 **RecoveryOptions**  
 
--   **키 이름:** ServerRecoveryOptions  
+-   **Nazwa klucza:** ServerRecoveryOptions  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** 1, 2 또는 4  
+    -   **Wartości:** 1, 2 lub 4  
 
-         1 = 사이트 서버와 SQL Server 복구  
+         1 = odzyskiwanie serwera lokacji i programu SQL Server.  
 
-         2 = 사이트 서버만 복구  
+         2 = odzyskiwanie tylko serwera lokacji.  
 
-         4 = SQL Server만 복구  
+         4 = odzyskiwanie tylko programu SQL Server.  
 
-    -   **세부 정보:** 설치 프로그램이 복구할 대상(사이트 서버, SQL Server, 둘 다)을 지정합니다. **ServerRecoveryOptions** 설정에 대해 다음 값을 설정하는 경우 연결된 키는 필수입니다.  
+    -   **Szczegóły:** Określa, czy Instalator będzie przeprowadzał odzyskiwanie serwera lokacji i programu SQL Server. Skojarzone klucze są wymagane podczas ustawiania poniższej wartości dla **ServerRecoveryOptions** ustawienia:  
 
-        -   값 = 1: 사이트 백업을 사용하여 사이트를 복구할 수 있도록 **SiteServerBackupLocation** 키 값을 지정하는 옵션이 있습니다. 값을 지정하지 않으면 사이트는 백업 집합으로부터 복원되지 않고 다시 설치됩니다.  
+        -   Wartość = 1: Użytkownik może określić wartość dla **SiteServerBackupLocation** klawisz, aby odzyskiwać lokację przy użyciu kopii zapasowej lokacji. Jeżeli nie określisz wartości, lokacja zostanie ponownie zainstalowana bez przywracania jej z zestawu kopii zapasowych.  
 
-        -   값 = 2: 사이트 백업을 사용하여 사이트를 복구할 수 있도록 **SiteServerBackupLocation** 키 값을 지정하는 옵션이 있습니다. 값을 지정하지 않으면 사이트는 백업 집합으로부터 복원되지 않고 다시 설치됩니다.  
+        -   Wartość = 2: Użytkownik może określić wartość dla **SiteServerBackupLocation** klawisz, aby odzyskiwać lokację przy użyciu kopii zapasowej lokacji. Jeżeli nie określisz wartości, lokacja zostanie ponownie zainstalowana bez przywracania jej z zestawu kopii zapasowych.  
 
-        -   값 = 4: **DatabaseRecoveryOptions** 키 값을 **10** 으로 구성하여 백업에서 사이트 데이터베이스를 복원하는 경우 **BackupLocation** 키는 필수입니다.  
+        -   Wartość = 4: Klucz **BackupLocation** jest wymagany w przypadku skonfigurowania dla klucza **DatabaseRecoveryOptions** wartości **10** , która umożliwia przywracanie bazy danych lokacji z kopii zapasowej.  
 
--   **키 이름:** DatabaseRecoveryOptions  
+-   **Nazwa klucza:** DatabaseRecoveryOptions  
 
-    -   **필수:** **ServerRecoveryOptions** 설정 값이 **1** 또는 **4**인 경우 이 키는 필수입니다.  
+    -   **Wymagane:** Ten klucz jest wymagany, gdy ustawienie **ServerRecoveryOptions** ma wartość **1** lub **4**.  
 
-    -   **값:** 10, 20, 40 또는 80  
+    -   **Wartości:** 10, 20, 40 lub 80  
 
-         10 = 백업에서 사이트 데이터베이스 복구  
+         10 = przywracanie bazy danych lokacji z kopii zapasowej.  
 
-         20 = 다른 방법을 사용하여 수동으로 복구된 사이트 데이터베이스 사용  
+         20 = korzystanie z bazy danych lokacji, która została ręcznie odzyskana przy użyciu innej metody.  
 
-         40 = 사이트에 새 데이터베이스 만들기. 사이트 데이터베이스 백업을 사용할 수 없는 경우 이 옵션을 사용하세요. 글로벌 데이터 및 사이트 데이터는 다른 사이트를 복제하여 복구됩니다.  
+         40 = tworzenie nowej bazy danych lokacji. Użyj tej opcji, gdy nie ma dostępnej kopii zapasowej bazy danych lokacji. Odzyskiwanie danych globalnych i danych lokacji przebiega przy użyciu replikacji z innych lokacji.  
 
-         80 = 데이터베이스 복구 건너뛰기  
+         80 = pomijanie odzyskiwania bazy danych.  
 
-    -   **세부 정보:** SQL Server의 사이트 데이터베이스를 복구하는 방법을 지정합니다.  
+    -   **Szczegóły:** Określa sposób odzyskiwania bazy danych lokacji w programie SQL Server.  
 
--   **키 이름:** SiteServerBackupLocation  
+-   **Nazwa klucza:** SiteServerBackupLocation  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** <*사이트 서버 백업 집합 경로*>  
+    -   **Wartości:** <*ścieżka do zestawu kopii zapasowych serwera lokacji*>  
 
-    -   **세부 정보:**  
+    -   **Szczegóły:**  
 
-         사이트 서버 백업 집합의 경로를 지정합니다. **ServerRecoveryOptions** 설정 값이 **1** 또는 **2**인 경우 이 키는 옵션입니다. 사이트 백업을 사용하여 사이트를 복구할 수 있도록 **SiteServerBackupLocation** 키의 값을 지정합니다. 값을 지정하지 않으면 사이트는 백업 집합으로부터 복원되지 않고 다시 설치됩니다.  
+         Określa ścieżkę do zestawu kopii zapasowych serwera lokacji. Ten klucz jest opcjonalny, gdy ustawienie **ServerRecoveryOptions** ma wartość **1** lub **2**. Określ wartość dla klucza **SiteServerBackupLocation** , aby odzyskiwać lokację przy użyciu kopii zapasowej lokacji. Jeżeli nie określisz wartości, lokacja zostanie ponownie zainstalowana bez przywracania jej z zestawu kopii zapasowych.  
 
--   **키 이름:** BackupLocation  
+-   **Nazwa klucza:** BackupLocation  
 
-    -   **필수:** **ServerRecoveryOptions** 키 값을 **1** 또는 **4**로 구성하고 **DatabaseRecoveryOptions** 키 값을 **10**으로 구성하는 경우 이 키는 필수입니다.  
+    -   **Wymagane:** Ten klucz jest wymagany w przypadku skonfigurowania wartości **1** lub **4** dla **ServerRecoveryOptions** klucza i wartości **10** dla **DatabaseRecoveryOptions** klucza.  
 
-    -   **값:** <*사이트 데이터베이스 백업 집합 경로*>  
+    -   **Wartości:** <*ścieżka do zestawu kopii zapasowych bazy danych lokacji*>  
 
-    -   **세부 정보:** 사이트 데이터베이스 백업 집합의 경로를 지정합니다.  
+    -   **Szczegóły:** Określa ścieżkę do zestawu kopii zapasowych bazy danych lokacji.  
 
-**Options**  
+**Opcje**  
 
--   **키 이름:** ProductID  
+-   **Nazwa klucza:** Identyfikator produktu  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** *xxxxx-xxxxx-xxxxx-xxxxx-xxxxx* 또는 *Eval*  
+    -   **Wartości:** *xxxxx-xxxxx-xxxxx-xxxxx-xxxxx* lub *Eval*  
 
-    -   **세부 정보:** 대시를 포함하여 Configuration Manager 설치 제품 키를 지정합니다. Configuration Manager의 평가 버전을 설치하려면 **Eval**을 입력합니다.  
+    -   **Szczegóły:** Określa klucz produktu instalacji programu Configuration Manager, wraz z kreskami. Wprowadź **Eval** Aby zainstalować wersję ewaluacyjną programu Configuration Manager.  
 
--   **키 이름:** SiteCode  
+-   **Nazwa klucza:** Kod lokacji  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*사이트 코드*>  
+    -   **Wartości:** <*kod lokacji*>  
 
-    -   **세부 정보:** 계층에서 사이트를 고유하게 식별하는 영숫자 3자를 지정합니다. 장애가 발생하기 전에 사이트에 사용되던 사이트 코드를 지정해야 합니다.
+    -   **Szczegóły:** Określa trzy znaki alfanumeryczne, które jednoznacznie identyfikują lokację w hierarchii. Należy określić kod lokacji używany przed awarią.
 
--   **키 이름:** SiteName  
+-   **Nazwa klucza:** Nazwa witryny  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** <*사이트 이름*>  
+    -   **Wartości:** <*Nazwa lokacji*>  
 
-    -   **세부 정보:** 이 사이트의 이름을 지정합니다.  
+    -   **Szczegóły:** Określa nazwę dla tej lokacji.  
 
--   **키 이름:** SMSInstallDir  
+-   **Nazwa klucza:** SMSInstallDir  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*Configuration Manager 설치 경로*>  
+    -   **Wartości:** <*ścieżki instalacji programu Configuration Manager*>  
 
-    -   **세부 정보:** Configuration Manager 프로그램 파일의 설치 폴더를 지정합니다.  
+    -   **Szczegóły:** Określa folder instalacji plików programu Configuration Manager.  
 
--   **키 이름:** SDKServer  
+-   **Nazwa klucza:** SDKServer  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*SMS 공급자 FQDN*>  
+    -   **Wartości:** <*dostawcy programu SMS w pełni kwalifikowaną nazwę domeny*>  
 
-    -   **세부 정보:** SMS 공급자를 호스트할 서버의 FQDN을 지정합니다. 장애가 발생하기 전에 SMS 공급자를 호스트하던 서버를 지정해야 합니다. 초기 설치 후 사이트에 대해 다른 SMS 공급자를 구성할 수 있습니다. SMS 공급자에 대한 자세한 내용은 [System Center Configuration Manager용 SMS 공급자에 대한 계획](../../../../core/plan-design/hierarchy/plan-for-the-sms-provider.md)을 참조하세요.  
+    -   **Szczegóły:** Określa nazwę FQDN serwera, który będzie hostował dostawcę programu SMS. Należy określić serwer, który hostował dostawcę programu SMS przed awarią. Po instalacji początkowej możesz skonfigurować dodatkowych dostawców programu SMS dla lokacji. Aby uzyskać więcej informacji na temat dostawcy programu SMS, zobacz [planowanie dostawcy programu SMS dla programu System Center Configuration Manager](../../../../core/plan-design/hierarchy/plan-for-the-sms-provider.md).  
 
--   **키 이름:** PrerequisiteComp  
+-   **Nazwa klucza:** PrerequisiteComp  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 다운로드  
+         0 = pobierania  
 
-         1 = 이미 다운로드됨  
+         1 = już pobrane  
 
-    -   **:** 설치를 위한 필수 파일이 이미 다운로드되었는지 여부를 지정합니다. 예를 들어 **0**값을 사용하는 경우 파일이 다운로드됩니다.  
+    -   **Szczegóły:** Określa, czy pliki wymagań wstępnych Instalatora zostały już pobrane. Na przykład, jeśli używasz wartość **0**, Instalator pobierze pliki.  
 
--   **키 이름:** PrerequisitePath  
+-   **Nazwa klucza:** PrerequisitePath  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*설치 필수 구성 요소 파일 경로*>  
+    -   **Wartości:** <*ścieżkę do plików wymagań wstępnych Instalatora*>  
 
-    -   **세부 정보:** 설치를 위한 필수 파일의 경로를 지정합니다. **PrerequisiteComp** 값에 따라 이 경로는 다운로드한 파일을 저장하는 데 사용되거나 이전에 다운로드한 파일을 찾는 데 사용됩니다.  
+    -   **Szczegóły:** Określa ścieżkę do plików wymagań wstępnych Instalatora. W zależności od wartości **PrerequisiteComp** Instalator używa tej ścieżki do przechowywania pobranych plików lub lokalizowania wcześniej pobranych plików.  
 
--   **키 이름:** AdminConsole  
+-   **Nazwa klucza:** AdminConsole  
 
-    -   **필수:** **ServerRecoveryOptions** 설정 값이 **4**인 경우를 제외하고 이 키는 필수입니다.  
+    -   **Wymagane:** Ten klucz jest wymagany, chyba że ustawienie **ServerRecoveryOptions** ma wartość **4**.  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 설치 안 함  
+         0 = nie instaluj  
 
-         1 = 설치  
+         1 = install  
 
-    -   **세부 정보:** Configuration Manager 콘솔 설치 여부를 지정합니다.  
+    -   **Szczegóły:** Określa, czy instalować konsolę programu Configuration Manager.  
 
--   **키 이름:** JoinCEIP  
+-   **Nazwa klucza:** JoinCEIP  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 참여 안 함  
+         0 = nie dołączaj  
 
-         1 = 참여  
+         1 = sprzężenia  
 
-    -   **세부 정보:** CEIP에 참여할지 여부를 지정합니다.  
+    -   **Szczegóły:** Określa, czy do dołączenia do programu CEIP.  
 
 **SQLConfigOptions**  
 
--   **키 이름:** SQLServerName  
+-   **Nazwa klucza:** SQLServerName  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*SQL Server 이름*>  
+    -   **Wartości:** <*nazwa serwera SQL*>  
 
-    -   **세부 정보:** 사이트 데이터베이스를 호스트할 SQL Server가 실행 중인 클러스터된 인스턴스 또는 서버의 이름을 지정합니다. 실패하기 전에 사이트 데이터베이스를 호스팅했던 서버를 지정해야 합니다.  
+    -   **Szczegóły:** Określa nazwę serwera lub klastrowanego wystąpienia, w którym jest uruchomiony program SQL Server i który będzie hostem bazy danych lokacji. Należy określić serwer, który hostował bazę danych lokacji przed awarią.  
 
--   **키 이름:** DatabaseName  
+-   **Nazwa klucza:** DatabaseName  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:**  <*사이트 데이터베이스 이름*> 또는 <*인스턴스 이름*>\\<*사이트 데이터베이스 이름*>
+    -   **Wartości:**  <*Nazwa bazy danych lokacji*> lub <*nazwa wystąpienia*>\\<*Nazwa bazy danych lokacji*>
 
-    -   **세부 정보:**  
+    -   **Szczegóły:**  
 
-         중앙 관리 사이트 데이터베이스를 설치할 때 사용하거나 만들 SQL Server 데이터베이스의 이름을 지정합니다. 실패하기 전에 사용되던 동일한 데이터베이스 이름을 지정해야 합니다.  
+         Określa nazwę bazy danych programu SQL Server do utworzenia lub bazy danych programu SQL Server do użycia podczas instalowania bazy danych witryny Administracja centralna. Należy określić nazwę bazy danych, która była używana przed awarią.  
 
         > [!IMPORTANT]  
-        >  기본 인스턴스를 사용하지 않는 경우 인스턴스 이름과 사이트 데이터베이스 이름을 지정해야 합니다.  
+        >  Jeżeli nie używasz domyślnego wystąpienia, należy określić nazwy wystąpienia i lokacji.  
 
--   **키 이름:** SQLSSBPort  
+-   **Nazwa klucza:** SQLSSBPort  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** <*SSB 포트 번호*>  
+    -   **Wartości:** <*numer portu SSB*>  
 
-    -   **세부 정보:** SQL Server가 사용하는 SSB 포트를 지정합니다. 일반적으로 SSB는 TCP 포트 4022를 사용하도록 구성됩니다. 실패하기 전에 사용했던 SSB 포트를 지정해야 합니다.  
+    -   **Szczegóły:** Określa port SBB, który używa programu SQL Server. Zazwyczaj SSB jest skonfigurowana do używania portu TCP 4022. Należy określić ten sam port SBB, który był używany przed awarią.  
 
--   **키 이름:** SQLDataFilePath  
+-   **Nazwa klucza:** SQLDataFilePath  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** <*데이터베이스 .mdb 파일 경로*>  
+    -   **Wartości:** <*ścieżka do pliku MDB bazy danych*>  
 
-    -   **세부 정보:** 데이터베이스 .mdb 파일을 만들 대체 위치를 지정합니다.  
+    -   **Szczegóły:** Określa alternatywną lokalizację, aby utworzyć plik mdb bazy danych.  
 
--   **키 이름:** SQLLogFilePath  
+-   **Nazwa klucza:** SQLLogFilePath  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** <*데이터베이스 .ldf 파일 경로*>  
+    -   **Wartości:** <*ścieżka do pliku ldf bazy danych*>  
 
-    -   **세부 정보:** 데이터베이스 .ldf 파일을 만들 대체 위치를 지정합니다.  
+    -   **Szczegóły:** Określa alternatywną lokalizację, aby utworzyć plik ldf bazy danych.  
 
 **HierarchyExpansionOptions**  
 
--   **키 이름:** CCARSiteServer  
+-   **Nazwa klucza:** CCARSiteServer  
 
-    -   **필수:** 세부 정보를 참조하세요.  
+    -   **Wymagane:** Zobacz szczegółowe informacje.  
 
-    -   **값:** <*중앙 관리 사이트의 사이트 코드*>  
+    -   **Wartości:** <*kod centralnej lokacji administracyjnej lokacji*>  
 
-    -   **세부 정보:** 기본 사이트가 Configuration Manager 계층에 가입할 때 연결할 중앙 관리 사이트를 지정합니다. 실패하기 전에 기본 사이트가 중앙 관리 사이트에 연결되었던 경우 이 설정은 필수입니다. 실패하기 전에 중앙 관리 사이트에 사용했던 사이트 코드를 지정해야 합니다.  
+    -   **Szczegóły:** Określa lokację administracji centralnej, z którą połączy się lokacja główna po dołączeniu do hierarchii programu Configuration Manager. To ustawienie jest wymagane, jeśli lokacja główna była połączona z centralną lokacją administracyjną przed awarią. Należy określić kod lokacji używany w odniesieniu do centralnej lokacji administracyjnej przed awarią.  
 
--   **키 이름:** CASRetryInterval  
+-   **Nazwa klucza:** CASRetryInterval  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** <*간격*>  
+    -   **Wartości:** <*Interval*>  
 
-    -   **세부 정보:** 연결에 실패한 후 중앙 관리 사이트를 연결하려고 다시 시도하는 간격(분)을 지정합니다. 예를 들어 중앙 관리 사이트에 연결하지 못한 기본 사이트는 **CASRetryInterval** 값으로 지정된 시간(분) 동안 기다린 다음 연결을 다시 시도합니다.  
+    -   **Szczegóły:** Określa interwał ponawiania prób (w minutach) prób połączenia z lokacją administracji centralnej po niepowodzeniu. Na przykład, jeśli nie może nawiązać połączenia z lokacją administracji centralnej, lokacji głównej czeka liczbę minut, które określają dla **CASRetryInterval** wartość, a następnie próbuje ponownie nawiązać połączenie.  
 
--   **키 이름:** WaitForCASTimeout  
+-   **Nazwa klucza:** WaitForCASTimeout  
 
-    -   **필수:** 아니요  
+    -   **Wymagane:** Nie  
 
-    -   **값:** <*시간 제한*>  
+    -   **Wartości:** <*Timeout*>  
 
-    -   **세부 정보:** 기본 사이트가 중앙 관리 사이트에 연결하는 최대 시간 제한 값(분)을 지정합니다. 예를 들어 기본 사이트가 중앙 관리 사이트에 연결하지 못하면 **WaitForCASTimeout** 기간에 도달할 때까지 기본 사이트는 **CASRetryInterval** 값을 기반으로 중앙 관리 사이트에 연결하려고 다시 시도합니다. **0**~**100** 값을 지정할 수 있습니다.  
+    -   **Szczegóły:** Określa maksymalną wartość limitu czasu (w minutach) dla lokacji głównej połączyć się z witryną Administracja centralna. Na przykład, jeśli w lokacji głównej nie może połączyć się z centralną lokacją administracyjną, lokacja główna ponowi próbę połączenia centralnej lokacji administracyjnej na podstawie **CASRetryInterval** wartości do **WaitForCASTimeout** upływem czasu. Można określić wartość **0** do **100**.  
 
 **CloudConnectorOptions**  
 
--   **키 이름:** CloudConnector  
+-   **Nazwa klucza:** CloudConnector  
 
-    -   **필수:** 예  
+    -   **Wymagane:** Tak  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 설치 안 함  
+         0 = nie instaluj  
 
-         1 = 설치  
+         1 = install  
 
-    -   **세부 정보:** 이 사이트에 서비스 연결 지점을 설치할지 여부를 지정합니다. 서비스 연결 지점은 계층 구조의 최상위 계층 사이트에만 설치할 수 있으므로 이 값은 자식 기본 사이트에 대해 **0**이어야 합니다.  
+    -   **Szczegóły:** Określa, czy zainstalować punktu połączenia usługi w tej lokacji. Ponieważ punktu połączenia usługi można zainstalować tylko w lokacji najwyższego poziomu w hierarchii, ta wartość musi być **0** dla podrzędnej lokacji głównej.  
 
--   **키 이름:** CloudConnectorServer  
+-   **Nazwa klucza:** CloudConnectorServer  
 
-    -   **필수:** **CloudConnector**가 1인 경우에 필수입니다.  
+    -   **Wymagane:** Wymagany, gdy **CloudConnector** jest równa 1  
 
-    -   **값:** <*서비스 연결 지점 서버 FQDN*>  
+    -   **Wartości:** <*nazwa FQDN serwera punktu połączenia usługi*>  
 
-    -   **세부 정보:** 서비스 연결 지점 사이트 시스템 역할을 호스트하는 서버의 FQDN을 지정합니다.  
+    -   **Szczegóły:** Określa nazwę FQDN serwera, który będzie hostem roli systemu lokacji punktu połączenia usługi.  
 
--   **키 이름:** UseProxy  
+-   **Nazwa klucza:** UseProxy  
 
-    -   **필수:** **CloudConnector**가 1인 경우에 필수입니다.  
+    -   **Wymagane:** Wymagany, gdy **CloudConnector** jest równa 1  
 
-    -   **값:** 0 또는 1  
+    -   **Wartości:** 0 lub 1  
 
-         0 = 설치 안 함  
+         0 = nie instaluj  
 
-         1 = 설치  
+         1 = install  
 
-    -   **세부 정보:** 서비스 연결 지점에서 프록시 서버를 사용할지 여부를 지정합니다.  
+    -   **Szczegóły:** Określa, czy punkt połączenia usługi będzie używać serwera proxy.  
 
--   **키 이름:** ProxyName  
+-   **Nazwa klucza:** ProxyName  
 
-    -   **필수:** **CloudConnector**가 1인 경우에 필수입니다.  
+    -   **Wymagane:** Wymagany, gdy **CloudConnector** jest równa 1  
 
-    -   **값:** <*프록시 서버 FQDN*>  
+    -   **Wartości:** <*nazwa FQDN serwera Proxy*>  
 
-    -   **세부 정보:** 서비스 연결 지점 사이트 시스템 역할에서 사용할 프록시 서버의 FQDN을 지정합니다.  
+    -   **Szczegóły:** Określa nazwę FQDN serwera proxy, który będzie używany przez rolę systemu lokacji punktu połączenia usługi.  
 
--   **키 이름:** ProxyPort  
+-   **Nazwa klucza:** ProxyPort  
 
-    -   **필수:** **CloudConnector**가 1인 경우에 필수입니다.  
+    -   **Wymagane:** Wymagany, gdy **CloudConnector** jest równa 1  
 
-    -   **값:** <*포트 번호*>  
+    -   **Wartości:** <*numer portu*>  
 
-    -   **세부 정보:** 프록시 포트에 사용할 포트 번호를 지정합니다.  
-
+    -   **Szczegóły:** Określa numer portu na potrzeby port serwera proxy.  

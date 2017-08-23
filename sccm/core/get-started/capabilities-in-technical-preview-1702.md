@@ -1,361 +1,358 @@
 ---
-title: "Technical Preview 1702 Configuration Manager의 기능"
-description: "System Center Configuration Manager용 Technical Preview 버전 1702에서 사용 가능한 기능에 대해 알아봅니다."
+title: Funkcje w wersji zapoznawczej Technical Preview 1702 programu Configuration Manager
+description: "Dowiedz się więcej o funkcjach dostępnych w wersji zapoznawczej Technical Preview programu System Center Configuration Manager, wersja 1702."
 ms.custom: na
 ms.date: 02/24/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: aedd608d-6db3-4ea5-851d-70f2dcda6bb5
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8f4ec982a54cf3cefef310268a54850e70e2e63a
 ms.openlocfilehash: 3bdbcd1a3c64a1d50f2f6219b2a5e17d60979864
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 08/07/2017
 ---
-# <a name="capabilities-in-technical-preview-1702-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1702의 기능
+# <a name="capabilities-in-technical-preview-1702-for-system-center-configuration-manager"></a>Funkcje w wersji Technical Preview 1702 programu System Center Configuration Manager
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*Dotyczy: System Center Configuration Manager (wersja zapoznawcza Technical Preview)*
 
-이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1702에서 사용 가능한 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 소개 항목인 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대해 피드백 제공 방법 등에 익숙해져야 합니다.    
-
-
-**다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.**  
-
-##  <a name="send-feedback-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 피드백 보내기
-
-이 미리 보기에는 Configuration Manager 콘솔에 새 피드백 옵션이 도입되었습니다. 피드백 옵션을 사용하면 Configuration Manager UserVoice 피드백 웹 사이트를 통해 개발 팀에 직접 피드백을 보낼 수 있습니다.  
-
->**피드백** 옵션은 다음 위치에서 찾을 수 있습니다.
--  리본에서 각 노드의 홈 탭 맨 왼쪽  
-   ![리본](./media/feedback-home.png)
-
--  콘솔에서 아무 개체나 마우스 오른쪽 단추로 클릭할 때   
-    ![마우스 오른쪽 단추 클릭 옵션](./media/feedback-option.png)   
-
-**피드백**을 선택하면 브라우저에서 Configuration Manager UserVoice 피드백 웹 사이트(https://configurationmanager.uservoice.com/forums/300492-ideas)가 열립니다.
-##  <a name="changes-for-updates-and-servicing"></a>업데이트 및 서비스의 변경 내용
-이 미리 보기에서 도입된 내용은 다음과 같습니다.
-
-**보다 간단한 업데이트 선택**  
-다음에 인프라에 둘 이상의 업데이트를 사용할 수 있는 경우 최신 업데이트만 다운로드됩니다. 예를 들어 현재 사이트 버전이 사용할 수 있는 가장 최근 버전보다 두 버전 이상 이전인 경우 가장 최근 업데이트 버전만 자동으로 다운로드됩니다.  
-
-가장 최근 버전이 아닌 경우에도 다른 사용 가능한 업데이트를 다운로드하여 설치할 수 있습니다. 그러나 업데이트가 최신 버전으로 바뀌었다는 경고를 받게 됩니다. *다운로드 가능*한 업데이트를 다운로드하려면 콘솔에서 업데이트를 선택하고 **다운로드**를 클릭합니다.
-
-**이전 업데이트 정리 개선**   
-사이트 서버의 'EasySetupPayload' 폴더에서 불필요한 다운로드를 삭제하는 자동 정리 기능이 추가되었습니다.  
+W tym artykule przedstawiono funkcje, które są dostępne w wersji Technical Preview programu System Center Configuration Manager, wersja 1702. Można zainstalować tę wersję, aby zaktualizować i dodać nowe funkcje do lokacji programu Configuration Manager technical preview. Przed zainstalowaniem tej wersji technical Preview, przejrzyj temat wprowadzający [Technical Preview programu System Center Configuration Manager](../../core/get-started/technical-preview.md), aby zapoznać się z ogólne wymagania i ograniczenia dotyczące używania wersji technical preview, jak zaktualizować między wersjami i sposobu wyrazić swoją opinię na temat funkcji w wersji technical preview.    
 
 
-## <a name="peer-cache-improvements"></a>피어 캐시 개선
-이 릴리스부터 피어 캐시 원본 컴퓨터가 다음 조건 중 하나라도 충족할 경우 피어 캐시 원본 컴퓨터는 콘텐츠 요청을 거부합니다.  
- -     배터리 부족 모드에 있는 경우
- -  콘텐츠를 요청 시 CPU 로드가 80%를 초과하는 경우
- -  디스크 I/O에 10을 초과하는 *AvgDiskQueueLength*가 있는 경우
- -  컴퓨터에 대한 연결을 더 이상 사용할 수 없는 경우   
+**Poniżej przedstawiono nowe funkcje, które można wypróbować z tą wersją.**  
 
-System Center Configuration Manager SDK를 사용하는 경우 피어 원본 기능에 대한 클라이언트 에이전트 구성 클래스(*SMS_WinPEPeerCacheConfig*)를 사용하여 이러한 설정을 구성할 수 있습니다.
+##  <a name="send-feedback-from-the-configuration-manager-console"></a>Wyślij opinię z konsoli programu Configuration Manager
 
-컴퓨터가 콘텐츠 요청을 거부하는 경우 요청하는 컴퓨터는 사용 가능한 콘텐츠 원본 위치 풀에서 콘텐츠 폼 대체 원본을 계속 검색합니다.   
+Ta wersja zapoznawcza wprowadza nowe opcje opinii w konsoli programu Configuration Manager. Opcje opinii umożliwia wysyłanie opinii bezpośrednio do zespół deweloperów i opinie UserVoice Menedżera konfiguracji witryny sieci Web.  
 
-## <a name="azurediscovery"></a> Azure Active Directory Domain Services를 사용하여 장치, 사용자 및 그룹 관리
+>Można znaleźć **opinii** opcji:
+-  Na Wstążce, w lewym karcie Narzędzia główne w każdym węźle.  
+   ![Wstążka](./media/feedback-home.png)
 
-이 기술 미리 보기 버전에서는 Azure AD(Active Directory) Domain Services 관리되는 도메인에 가입된 장치를 관리할 수 있습니다. 또한 다양한 Configuration Manager 검색 방법으로 해당 도메인에서 장치, 사용자 및 그룹을 검색할 수 있습니다.
+-  Po kliknięciu prawym przyciskiem myszy dowolnego obiektu w konsoli.   
+    ![Kopiowanie kliknięcia](./media/feedback-option.png)   
 
-기술 미리 보기 사이트 인프라, 클라이언트 및 Azure AD Domain Services 도메인은 모두 Azure에서 실행되어야 합니다.
+Wybieranie **opinii** Otwiera przeglądarkę, aby UserVoice programu Configuration Manager feedback witryny sieci Web, https://configurationmanager.uservoice.com/forums/300492-ideas.
+##  <a name="changes-for-updates-and-servicing"></a>Zmiany dotyczące aktualizacji i obsługi
+Poniżej zostały wprowadzone w tej wersji zapoznawczej.
 
+**Prostsze opcje aktualizacji**  
+Przy następnym infrastruktury kwalifikuje się w przypadku aktualizacji co najmniej dwa pobrać tylko najnowszą aktualizację. Na przykład, jeśli bieżąca wersja lokacji jest dwa lub więcej starsze niż najnowszej wersji, która jest dostępna, tylko że najnowsza wersja aktualizacji jest pobierany automatycznie.  
 
-### <a name="set-up-configuration-manager-to-use-azure-ad"></a>Azure AD를 사용하도록 Configuration Manager 설정
-Configuration Manager에서 Azure AD를 사용하려면 다음이 필요합니다.
--    Azure 구독
--    Azure AD 및 DS(Domain Services)
--    Azure AD에 가입된 Azure VM에서 실행되는 Configuration Manager 사이트
--    동일한 Azure AD 환경에서 실행되는 Configuration Manager 클라이언트
+Masz opcję, aby pobrać i zainstalować inne dostępne aktualizacje, nawet wtedy, gdy nie są one najbardziej aktualnej wersji. Jednak zostanie wyświetlone ostrzeżenie, że aktualizacja została zastąpiona nowszą. Aby pobrać aktualizację, która jest *dostępne do pobrania*, wybierz aktualizację, w konsoli, a następnie kliknij przycisk **Pobierz**.
 
-Azure AD Domain Services를 구성하려면 [Azure AD Domain Services 시작](https://docs.microsoft.com/azure/active-directory-domain-services/active-directory-ds-getting-started)을 참조하세요.
-
-### <a name="discover-resources"></a>리소스 검색
-Azure AD에서 실행되도록 Configuration Manager를 설정하면 다음 Active Directory 검색 방법을 사용하여 Azure AD에서 리소스를 검색할 수 있습니다.  
-- Active Directory 시스템 검색
-- Active Directory 사용자 검색
-- Active Directory 그룹 검색  
-
-사용하는 각 방법에 대해 온-프레미스 Active Directory에 일반적인 컨테이너 대신 Azure AD OU 구조를 검색하도록 LDAP 쿼리를 편집합니다. 이렇게 하려면 Azure 구독에서 Active Directory를 검색하도록 쿼리를 지정해야 합니다.  
-
-다음 예제에서는 Azure AD *contoso.onmicrosoft.com*을 사용합니다.
- - **시스템 복구**   
-Azure AD는 **AADDC 컴퓨터** OU 아래에 장치를 저장합니다.  다음을 구성 합니다.  
-  -    *LDAP://OU=AADDC Computers,DC=contoso,DC=onmicrosoft,DC=com*  
+**Ulepszone czyszczenie starszych aktualizacji**   
+Dodano funkcję automatycznego czyszczenia, która usuwa zbędne pobrane pliki z folderu "EasySetupPayload" na serwerze lokacji.  
 
 
-- **사용자 검색** AAD는 **AADDC 사용자** OU 아래에 사용자를 저장합니다.  다음을 구성 합니다.
-  - *LDAP://OU=AADDC Users,DC= contoso,DC=onmicrosoft,DC=com*
+## <a name="peer-cache-improvements"></a>Ulepszenia pamięci podręcznej elementów równorzędnych
+Począwszy od tej wersji, komputerze źródła równorzędnej pamięci podręcznej żądania zawartości podczas odrzuci komputer źródłowy równorzędnej pamięci podręcznej spełnia żadnego z następujących warunków:  
+ -  Jest w trybie niskim poziomie naładowania baterii.
+ -  Obciążenie procesora CPU przekracza 80% w czasie żądanej zawartości.
+ -  We/Wy dysku ma *AvgDiskQueueLength* przekraczający 10.
+ -  Brak dostępnego połączenia z tym komputerem.   
+
+Można skonfigurować te ustawienia przy użyciu klasy konfiguracji agenta klienta dla funkcji źródło elementu równorzędnego (*SMS_WinPEPeerCacheConfig*) gdy używasz zestawu SDK System Center Configuration Manager.
+
+Gdy komputer odrzuci zawartości, komputera wysyłającego żądanie będzie wyszukiwać źródła alternatywne zawartości formularza w puli lokalizacji źródła zawartości.   
+
+## <a name="azurediscovery"></a>Azure Active Directory Domain Services umożliwia zarządzanie urządzeniami, użytkownikami i grupami
+
+Z tej wersji technical preview można zarządzać urządzeniami, które są przyłączone do usług domenowych w usłudze Azure Active Directory (AD) w wersji zarządzane domeny. Umożliwia również odnajdywanie urządzeń, użytkowników i grup w domenie z różnych metod odnajdywania programu Configuration Manager.
+
+Infrastruktura lokacji wersji zapoznawczej technical preview, klientów i domeny usług domenowych Azure AD musi uruchomić na platformie Azure.
 
 
-- **그룹 검색**  
-Azure AD에는 그룹을 저장하는 OU가 없습니다. 대신, 시스템 또는 사용자 쿼리와 동일한 일반적인 구조를 사용하고 검색할 그룹을 포함하는 OU를 가리키도록 LDAP 쿼리를 구성합니다.
+### <a name="set-up-configuration-manager-to-use-azure-ad"></a>Ustaw Konfigurowanie programu Configuration Manager przy użyciu usługi Azure AD
+Aby korzystać z usługi Azure AD z programem Configuration Manager, będą potrzebne następujące czynności:
+-   Subskrypcja platformy Azure.
+-   Azure AD z usługami domenowymi (DS).
+-   Lokacja programu Configuration Manager, która działa na maszynie Wirtualnej platformy Azure, w której jest dołączony do usługi Azure AD.
+-   Klientów programu Configuration Manager, które są uruchamiane w tym samym środowisku usługi Azure AD.
 
-Azure AD에 대한 자세한 내용은 다음을 참조하세요.  
- - azure.microsoft.com의 [Azure Active Directory Domain Services](https://azure.microsoft.com/en-us/services/active-directory-ds)
- - docs.microsoft.com의 [Active Directory Domain Services 설명서](https://docs.microsoft.com/azure/active-directory-domain-services)
+Aby skonfigurować usługi domenowe Azure AD, zobacz [wprowadzenie do usług domenowych Azure AD](https://docs.microsoft.com/azure/active-directory-domain-services/active-directory-ds-getting-started).
 
-## <a name="conditional-access-device-compliance-policy-improvements"></a>조건부 액세스 장치 준수 정책 개선
+### <a name="discover-resources"></a>Odnajdywanie zasobów
+Po ustawieniu konfiguracji programu Configuration Manager do uruchamiania w usłudze Azure AD umożliwia następujących metod odnajdywania usługi Active Directory wyszukiwania usługi Azure AD dla zasobów:  
+- Odnajdywanie systemu usługi Active Directory
+- odnajdywanie użytkownika usługi Active Directory
+- Odnajdywanie grupy usługi Active Directory  
 
-새 장치 준수 정책 규칙을 사용하면 사용자가 비규격 앱 목록에 포함된 앱을 사용하는 경우 조건부 액세스를 지원하는 회사 리소스에 대한 액세스를 차단할 수 있습니다. 비규격 앱 목록은 관리자가 새 준수 규칙 **설치할 수 없는 앱**을 추가할 때 정의할 수 있습니다. 이 규칙을 사용하려면 관리자가 비규격 목록에 앱을 추가할 때 **앱 이름**, **앱 ID** 및 **앱 게시자**(선택 사항)를 입력해야 합니다. 이 설정은 iOS 및 Android 장치에만 적용됩니다.
+Dla każdej używanej metody Edytuj zapytanie LDAP do wyszukiwania struktury jednostek organizacyjnych programu Azure AD, zamiast kontenerów, które są typowe dla lokalnej usługi Active Directory. Teraz należy skierować zapytanie wyszukiwania usługi Active Directory w ramach subskrypcji platformy Azure.  
 
-또한 이렇게 하면 조직에서 보안되지 않은 앱을 통한 데이터 누출을 완화하고 특정 앱을 통한 과도한 데이터 사용을 방지할 수 있습니다.
+W poniższych przykładach użyto usługi Azure AD z *contoso.onmicrosoft.com*:
+ - **Odnajdywanie systemu**   
+Usługi Azure AD przechowuje urządzeń bez względu na **komputerów AADDC** jednostki Organizacyjnej.  Skonfiguruj następujące ustawienia:  
+  - *Komputery LDAP://OU=AADDC, DC = contoso, DC = onmicrosoft, DC = com*  
 
-- 자세한 내용은 [장치 준수 정책의 작동 방식](https://docs.microsoft.com/sccm/protect/deploy-use/device-compliance-policies)을 참조하세요.
-- 자세한 내용은 [장치 준수 정책을 만드는 방법](https://docs.microsoft.com/sccm/protect/deploy-use/create-compliance-policy)을 참조하세요.
 
-### <a name="try-it-out"></a>기능 직접 사용해 보기
+- **Odnajdowanie użytkowników** AAD przechowuje użytkowników w obszarze **użytkowników AADDC** jednostki Organizacyjnej.  Skonfiguruj następujące ustawienia:
+  - *Użytkownicy LDAP://OU=AADDC, DC = contoso, DC = onmicrosoft, DC = com*
 
-**시나리오:** 회사 데이터를 회사 외부로 전송하여 데이터 누출을 초래할 가능성이 있거나 과도한 데이터 사용을 초래하는 앱을 식별하고, 이러한 앱을 비규격 앱 목록에 추가하는 [조건부 액세스 장치 준수 정책을 만듭니다](https://docs.microsoft.com/sccm/protect/deploy-use/create-compliance-policy). 이렇게 하면 사용자가 차단된 앱을 제거할 수 있을 때까지 조건부 액세스를 지원하는 회사 리소스에 대한 액세스가 차단됩니다.
 
-## <a name="antimalware-client-version-alert"></a>맬웨어 방지 클라이언트 버전 경고
-이 미리 보기 버전부터 만료된 버전의 맬웨어 방지 클라이언트(예: Windows Defender 또는 Endpoint Protection 클라이언트)를 사용하는 관리되는 클라이언트가 20%(기본값)를 초과할 경우 Configuration Manager Endpoint Protection에서 경고를 제공합니다.
+- **Odnajdywanie grupy**  
+Usługi Azure AD nie ma jednostkę Organizacyjną, która przechowuje grup. Zamiast tego należy używać tej samej struktury ogólne jako System lub użytkownik zapytania i skonfiguruj zapytanie LDAP do punktu z jednostką organizacyjną, która zawiera grupy, czy ma zostać przeprowadzone odnajdywanie.
 
-### <a name="try-it-out"></a>기능 직접 사용해 보기
-클라이언트 설정 정책을 사용하는 모든 데스크톱 및 서버 클라이언트에서 Endpoint Protection이 사용되도록 설정되었는지 확인합니다. 이제 **자산 및 호환성** > **개요** > **장치** > **모든 데스크톱 및 클라이언트 역할**로 이동하여 **맬웨어 방지 클라이언트 버전** 및 **Endpoint Protection 배포 상태**를 확인할 수 있습니다. 경고를 확인하려면 **모니터링** 작업 영역에서 **경고**를 봅니다. 만료된 버전의 맬웨어 방지 소프트웨어를 실행하는 관리되는 클라이언트가 20%를 초과할 경우 [맬웨어 방지 클라이언트 버전이 오래되었습니다.] 경고가 표시됩니다. 이 경고는 **모니터링** > **개요** 탭에 표시되지 않습니다. 만료된 맬웨어 방지 클라이언트를 업데이트하려면 맬웨어 방지 클라이언트에 대한 소프트웨어 업데이트를 사용하도록 설정합니다.
+Zobacz następujące tematy, aby uzyskać więcej informacji na temat usługi Azure AD:  
+ - [Azure Active Directory Domain Services](https://azure.microsoft.com/en-us/services/active-directory-ds) w witrynie azure.microsoft.com.
+ - [Dokumentacja usługi domenowe Active Directory](https://docs.microsoft.com/azure/active-directory-domain-services) w witrynie docs.microsoft.com.
 
-경고가 생성되는 백분율을 구성하려면 **모니터링** > **경고** > **모든 경고**를 확장하고 **맬웨어 방지 클라이언트가 오래됨**을 두 번 클릭한 다음 **오래된 버전의 맬웨어 방지 클라이언트로 관리되는 클라이언트의 비율이 다음 이상인 경우 경고 생성** 옵션을 수정합니다.
+## <a name="conditional-access-device-compliance-policy-improvements"></a>Ulepszenia zasad zgodności urządzenia dostępu warunkowego
 
-## <a name="compliance-assessment-for-windows-update-for-business-updates"></a>Windows Update for Business 업데이트에 대한 준수 평가
-이제 조건부 액세스 평가의 일부로 Windows Update for Business 평가 결과를 포함하도록 준수 정책 업데이트 규칙을 구성할 수 있습니다.
+Dostępny jest nowy reguły zasad zgodności urządzenia możesz zablokować dostęp do zasobów firmy, które obsługują dostęp warunkowy, gdy użytkownicy korzystają z aplikacji, które są częścią listę niezgodnych aplikacji. Lista niezgodnych aplikacji można definiować przez administratora podczas dodawania nowej reguły zgodne **aplikacji, których nie można zainstalować**. Ta zasada wymaga administratora, aby wprowadzić **Nazwa aplikacji**, **identyfikator aplikacji**i **wydawcę aplikacji** (opcjonalnie), podczas dodawania do listy niezgodnych aplikacji. To ustawienie dotyczy tylko urządzeń iOS i Android.
+
+Ponadto pomaga organizacjom ograniczyć wycieku danych za pośrednictwem niezabezpieczonej aplikacji i zapobiec zużycie nadmiernej ilości danych za pośrednictwem niektórych aplikacji.
+
+- Dowiedz się więcej [sposób działania zasad zgodności urządzenia](https://docs.microsoft.com/sccm/protect/deploy-use/device-compliance-policies).
+- Dowiedz się więcej [jak utworzyć zasady zgodności urządzeń](https://docs.microsoft.com/sccm/protect/deploy-use/create-compliance-policy).
+
+### <a name="try-it-out"></a>Podczas próby
+
+**Scenariusz:** Określenie aplikacji, które mogą być przyczyną wyciekowi danych przez wysyłanie danych firmowych poza firmę lub który powodują nadmiernej ilości danych użycia, następnie [Tworzenie zasad zgodności urządzeń dostępu warunkowego](https://docs.microsoft.com/sccm/protect/deploy-use/create-compliance-policy) dodaje te aplikacje do listy niezgodnych aplikacji. Spowoduje to zablokowanie dostępu do zasobów firmy, które obsługują dostęp warunkowy, dopóki użytkownik może usunąć zablokowanych aplikacji.
+
+## <a name="antimalware-client-version-alert"></a>Alert wersji klienta ochrony przed złośliwym oprogramowaniem
+Począwszy od tej wersji zapoznawczej, ochrony punktu końcowego Menedżera konfiguracji zawiera alert, jeśli więcej niż 20% (ustawienie domyślne) zarządzanych klientów są przy użyciu wygasłe wersji klienta ochrony przed złośliwym kodem (tj. klient usługi Windows Defender lub program Endpoint Protection).
+
+### <a name="try-it-out"></a>Podczas próby
+Upewnij się, że program Endpoint Protection jest włączony na wszystkich klientach stacjonarnych i serwerów za pomocą zasad ustawień klienta. Możesz teraz przeglądać **wersji klienta ochrony przed złośliwym kodem** i **stan wdrożenia programu Endpoint Protection** przechodząc **zasoby i zgodność** > **omówienie** > **urządzeń** > **wszystkie komputery stacjonarne i klienci służą**. Aby sprawdzić, czy alert, Wyświetl **alerty** w **monitorowanie** obszaru roboczego. W przypadku więcej niż 20% zarządzanych klientów używana wygasła wersja ochrony przed złośliwym oprogramowaniem, wersja klienta ochrony przed złośliwym kodem jest nieaktualna zostanie wyświetlony alert. Ten alert nie jest wyświetlany na **monitorowanie** > **omówienie** kartę. Aby zaktualizować klientów wygasłe ochrony przed złośliwym kodem, Włącz aktualizacje oprogramowania dla klientów ochrony przed złośliwym oprogramowaniem.
+
+Aby skonfigurować wartość procentowa, o której alert jest generowany, rozwiń węzeł **monitorowanie** > **alerty** > **wszystkie alerty**, kliknij dwukrotnie **klienci ochrony przed złośliwym kodem nieaktualny** i zmodyfikuj **Zgłoś alert, jeśli wartość procentowa zarządzanych klientów z nieaktualną wersją klienta ochrony przed złośliwym kodem jest więcej niż** opcji.
+
+## <a name="compliance-assessment-for-windows-update-for-business-updates"></a>Oceny zgodności dla usługi Windows Update dla firm aktualizacji
+Można teraz skonfigurować reguły zgodności zasad aktualizacji do uwzględnienia Windows Update dla firm oceny wyniku częścią oceny dostępu warunkowego.
 > [!IMPORTANT]
-> Windows Update for Business 업데이트에 대한 준수 평가를 사용하려면 Windows 10 Insider Preview 빌드 15019 이상이 있어야 합니다.
+> Musi mieć system Windows 10 niejawnego kompilacji w wersji zapoznawczej 15019 lub nowszym używane do oceny zgodności dla usługi Windows Update dla firm aktualizacji.
 
-### <a name="allow-windows-update-for-business-to-manage-windows-10-updates"></a>Windows Update for Business에서 Windows 10 업데이트를 관리할 수 있도록 허용
-Windows Update for Business 업데이트에 대한 준수 평가 정보를 수집하려면 다음 절차에 따라 Windows Update for Business에서 Windows 10 업데이트를 관리할 수 있도록 명시적으로 허용하는 클라이언트 에이전트 설정을 구성합니다.
-1. Configuration Manager 콘솔에서 **관리** > **클라이언트 설정**으로 이동합니다.
-2. 클라이언트 설정의 속성에서 **소프트웨어 업데이트**로 이동한 다음 **Windows Update for Business를 통해 Windows 10 업데이트 관리** 설정에 대해 **예**를 선택합니다.
+### <a name="allow-windows-update-for-business-to-manage-windows-10-updates"></a>Zezwalaj na Windows Update dla firm w celu zarządzania aktualizacjami systemu Windows 10
+Aby zebrać informacji o oceny zgodności dla usługi Windows Update dla firm aktualizacje, umożliwia skonfigurowanie ustawień jawnie zezwolić na aktualizacje systemu Windows dla firm w celu zarządzania aktualizacjami systemu Windows 10 agenta klienta poniższej procedury.
+1. W konsoli programu Configuration Manager przejdź do obszaru **Administracja** > **Ustawienia klienta**.
+2. We właściwościach ustawień klienta, przejdź do **aktualizacji oprogramowania**i wybierz **tak** dla **aktualizuje Zarządzanie systemem Windows 10 z usługą Windows Update dla firm** ustawienie.
 
-### <a name="create-a-compliance-policy-for-windows-update-for-business-assessment"></a>Windows Update for Business 평가에 대한 준수 정책 만들기
-1. Configuration Manager 콘솔에서 **자산 및 준수** > **준수 설정** > **준수 정책**으로 이동합니다.
-2. **준수 정책 만들기**를 클릭하거나 수정할 기존 준수 정책을 선택합니다.
-3. 일반 페이지에서 이름 및 설명을 입력하고 **Configuration Manager 클라이언트를 사용하여 관리되는 장치에 대한 준수 규칙**을 선택한 다음 보고할 비준수 심각도를 설정하고 **다음**을 클릭합니다.
-4. 지원되는 플랫폼 페이지에서 **Windows 10**을 선택하고 **다음**을 클릭합니다.
-5. 규칙 페이지에서 **새로 만들기...**를 클릭한 다음 **조건**에 대해 **Windows Update for Business 준수 필요**를 선택합니다. **값** 설정이 자동으로 **True**로 설정됩니다.
+### <a name="create-a-compliance-policy-for-windows-update-for-business-assessment"></a>Tworzenie zasad zgodności dla usługi Windows Update dla firm oceny
+1. W konsoli programu Configuration Manager, przejdź do **zasoby i zgodność** > **ustawień zgodności** > **zasady zgodności**.
+2. Kliknij przycisk **Utwórz zasady zgodności** lub wybierz istniejące zasady zgodności, aby zmodyfikować.
+3. Na stronie Ogólne Podaj nazwę i opis, wybierz **reguły zgodności dla urządzeń zarządzanych za pomocą klienta programu Configuration Manager**, Ustaw ważność niezgodności dla raportowania i kliknij przycisk **dalej**.
+4. Na stronie obsługiwane platformy wybierz **systemu Windows 10**, a następnie kliknij przycisk **dalej**.
+5. Na stronie reguły kliknij **nowy...** , a następnie **warunku** wybierz **wymagają usługi Windows Update dla firm zgodności**. **Wartość** automatycznie mają ustawioną wartość **True**.
 
-새 정책이 **자산 및 준수** 작업 영역의 **준수 정책** 노드에 표시됩니다.
+Nowe zasady zostaną wyświetlone w węźle **Zasady zgodności** w obszarze roboczym **Zasoby i zgodność** .
 
-### <a name="deploy-a-compliance-policy"></a>준수 정책 배포
-1. Configuration Manager 콘솔에서 **자산 및 준수** > **준수 설정**으로 이동한 다음 **준수 정책**을 클릭합니다.
-2. **홈** 탭의 **배포** 그룹에서 **배포**를 클릭합니다.
-3. **규정 준수 정책 배포** 대화 상자에서 **찾아보기** 를 클릭하여 정책을 배포할 사용자 컬렉션을 선택합니다.
-   정책 미준수 시 경고를 생성하는 옵션과 이 정책의 준수 여부를 평가할 일정을 구성하는 옵션을 선택할 수도 있습니다.
-4. 작업이 끝나면 **확인**을 클릭합니다.
+### <a name="deploy-a-compliance-policy"></a>Wdrażanie zasad zgodności
+1. W konsoli programu Configuration Manager, przejdź do **zasoby i zgodność** > **ustawień zgodności**, a następnie kliknij przycisk **zasady zgodności**.
+2. Na karcie **Narzędzia główne** w grupie **Wdrażanie** kliknij przycisk **Wdróż**.
+3. W oknie dialogowym **Wdrażanie zasad zgodności** kliknij przycisk **Przeglądaj** , aby wybrać kolekcję użytkowników, dla której chcesz wdrożyć zasady.
+   Ponadto można wybrać opcje generowania alertów w przypadku niezgodności zasad, a także skonfigurować harmonogram oceny zasad pod kątem zgodności.
+4. Gdy wszystko będzie gotowe, kliknij przycisk **OK**.
 
-### <a name="monitor-the-compliance-policy"></a>규정 준수 정책 모니터링
-준수 정책을 만든 후 Configuration Manager 콘솔에서 준수 결과를 모니터링할 수 있습니다. 자세한 내용은 [준수 정책 모니터링](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/create-compliance-policy#monitor-the-compliance-policy)을 참조하세요.
+### <a name="monitor-the-compliance-policy"></a>Monitorowanie zasad zgodności
+Po utworzeniu zasad zgodności można monitorować wyniki zgodności w konsoli programu Configuration Manager. Aby uzyskać więcej informacji, zobacz [monitorowanie zasad zgodności](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/create-compliance-policy#monitor-the-compliance-policy).
 
 
-## <a name="improvements-to-software-center-settings-and-notification-messages-for-high-impact-task-sequences"></a>영향력이 큰 작업 순서에 대한 소프트웨어 센터 설정 및 알림 메시지 개선
-이 릴리스에는 영향력이 큰 배포 작업 순서에 대한 소프트웨어 센터 설정 및 알림 메시지와 관련해서 다음과 같은 개선 사항이 포함되어 있습니다.
+## <a name="improvements-to-software-center-settings-and-notification-messages-for-high-impact-task-sequences"></a>Ulepszenia w ustawieniach Centrum oprogramowania i komunikaty powiadomień dla sekwencji zadań o dużym wpływie na działanie
+Ta wersja zawiera następujące ulepszenia w ustawieniach Centrum oprogramowania i komunikaty powiadomień poważnych wdrożenia sekwencji zadań:
 
-- 이제 작업 순서 속성에서 비운영 체제 작업 순서를 비롯한 모든 작업 순서를 높은 위험 수준 배포로 구성할 수 있습니다. 특정 조건을 충족하는 작업 순서는 자동으로 모두 강력한 작업 순서로 정의됩니다. 자세한 내용은 [위험 수준이 높은 배포 관리](http://docs.microsoft.com/sccm/protect/understand/settings-to-manage-high-risk-deployments)를 참조하세요.
-- 작업 순서 속성에서 기본 알림 메시지를 사용하거나 강력한 배포에 대한 고유한 사용자 지정 알림 메시지를 만들 수 있습니다.
-- 작업 순서 속성에서 다시 시작을 필수로 설정, 작업 순서의 다운로드 크기 및 예상 실행 시간을 포함하는 소프트웨어 센터 속성을 구성할 수 있습니다.
-- 이제 현재 위치 업그레이드에 대한 강력한 배포 기본 메시지에 앱, 데이터 및 설정이 자동으로 마이그레이션된다고 표시됩니다. 이전에는 모든 운영 체제 설치에 대한 기본 메시지에 모든 앱, 데이터 및 설정이 손실된다고 표시되었으며, 이는 현재 위치 업그레이드에 적용되지 않습니다.
+- W oknie właściwości dla sekwencji zadań można teraz skonfigurować wszystkie sekwencje zadań, w tym sekwencji zadań systemu operacyjnego jako wdrożenie wysokiego ryzyka. Wszystkie sekwencje zadań, która spełnia określone warunki automatycznie jest zdefiniowany jako dużym znaczeniu. Aby uzyskać więcej informacji, zobacz [zarządzania wdrożeniami o wysokim ryzyku](http://docs.microsoft.com/sccm/protect/understand/settings-to-manage-high-risk-deployments).
+- W oknie właściwości dla sekwencji zadań można użyć domyślnego komunikatu powiadomienia lub utworzyć własne niestandardowe powiadomienie w przypadku wdrożeń o dużym znaczeniu.
+- We właściwościach sekwencji zadań można skonfigurować właściwości, które obejmują upewnij ponownego uruchomienia wymaganych, Centrum oprogramowania rozmiar pobierania sekwencji zadań i szacowany czas wykonywania.
+- W komunikacie wdrożenia poważnych domyślne w miejscu uaktualnia teraz stanów automatycznie migracji aplikacji, danych i ustawień. Wcześniej, domyślną wiadomość do wszelkich instalacji systemu operacyjnego wskazuje, że wszystkie aplikacje, dane i ustawienia, może spowodować utratę, który nie jest spełniony dla uaktualnienia w miejscu.
 
-### <a name="set-a-task-sequence-as-a-high-impact-task-sequence"></a>작업 순서를 강력한 작업 순서로 설정
-작업 순서를 강력한 작업 순서로 설정하려면 다음 절차를 따르세요.
+### <a name="set-a-task-sequence-as-a-high-impact-task-sequence"></a>Ustawianie sekwencji zadań za pomocą sekwencji zadań o dużym wpływie na działanie
+Użyj poniższej procedury, aby ustawić sekwencji zadań jako dużym znaczeniu.
 > [!NOTE]
-> 특정 조건을 충족하는 작업 순서는 자동으로 모두 강력한 작업 순서로 정의됩니다. 자세한 내용은 [위험 수준이 높은 배포 관리](http://docs.microsoft.com/sccm/protect/understand/settings-to-manage-high-risk-deployments)를 참조하세요.
+> Wszystkie sekwencje zadań, która spełnia określone warunki automatycznie jest zdefiniowany jako dużym znaczeniu. Aby uzyskać więcej informacji, zobacz [zarządzania wdrożeniami o wysokim ryzyku](http://docs.microsoft.com/sccm/protect/understand/settings-to-manage-high-risk-deployments).
 
-1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **운영 체제** > **작업 순서**로 이동합니다.
-2. 편집할 작업 순서를 선택하고 **속성**을 클릭합니다.
-3. **사용자 알림** 탭에서 **강력한 작업 순서임**을 선택합니다.
+1. W konsoli programu Configuration Manager, przejdź do **Biblioteka oprogramowania** > **systemów operacyjnych** > **sekwencje zadań**.
+2. Wybierz sekwencję zadań do edycji, a następnie kliknij przycisk **właściwości**.
+3. Na **powiadomienie użytkownika** wybierz opcję **to sekwencję zadań poważnych**.
 
-### <a name="create-a-custom-notification-for-high-risk-deployments"></a>위험 수준이 높은 배포에 대한 사용자 지정 알림 만들기
-1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **운영 체제** > **작업 순서**로 이동합니다.
-2. 편집할 작업 순서를 선택하고 **속성**을 클릭합니다.
-3. **사용자 알림** 탭에서 **사용자 지정 텍스트 사용**을 선택합니다.
+### <a name="create-a-custom-notification-for-high-risk-deployments"></a>Utwórz niestandardowe powiadomienie w przypadku wdrożeń o wysokim ryzyku
+1. W konsoli programu Configuration Manager, przejdź do **Biblioteka oprogramowania** > **systemów operacyjnych** > **sekwencje zadań**.
+2. Wybierz sekwencję zadań do edycji, a następnie kliknij przycisk **właściwości**.
+3. Na **powiadomienie użytkownika** wybierz opcję **używać tekstu niestandardowego**.
 >  [!NOTE]
->  **강력한 작업 순서임**이 선택된 경우에만 사용자 알림 텍스트를 설정할 수 있습니다.
+>  Tekst powiadomienia użytkownika można ustawić tylko podczas **to sekwencję zadań poważnych** jest zaznaczone.
 
-4. 다음 설정을 구성합니다(각 텍스트 상자에 최대 255자까지 입력).
+4. Skonfiguruj następujące ustawienia (maksymalnie 255 znaków dla każdego pola tekstowego):
 
-   **사용자 알림 헤드라인 텍스트**: 소프트웨어 센터 사용자 알림에 표시되는 파란색 텍스트를 지정합니다. 예를 들어 기본 사용자 알림에서 이 섹션에는 "이 컴퓨터의 운영 체제를 업그레이드할 것인지 확인하세요."와 같은 내용이 포함됩니다.
+   **Tekst nagłówka powiadomienia użytkownika**: Określa niebieski tekst wyświetlany na powiadomienie użytkownika Centrum oprogramowania. Na przykład w domyślnie powiadomienie użytkownika, ta sekcja zawiera przypominać "Potwierdź do uaktualnienia systemu operacyjnego na tym komputerze".
 
-   **사용자 알림 메시지 텍스트**: 사용자 지정 알림의 본문을 제공하는 텍스트 상자 세 개가 있습니다.
-   - 첫 번째 텍스트 상자: 일반적으로 사용자에 대한 지침이 포함된 텍스트의 본문을 지정합니다. 예를 들어 기본 사용자 알림에서 이 섹션에는 "운영 체제를 업그레이드하는 데 시간이 걸리며 컴퓨터가 여러 번 다시 시작될 수 있습니다."와 같은 내용이 포함됩니다.
-   - 두 번째 텍스트 상자: 텍스트의 기본 본문 아래에 표시되는 굵은 텍스트를 지정합니다. 예를 들어 기본 사용자 알림에서 이 섹션에는 "이 현재 위치 업그레이드에서는 새 운영 체제를 설치하고 앱, 데이터 및 설정을 자동으로 마이그레이션합니다."와 같은 내용이 포함됩니다.
-   - 세 번째 텍스트 상자: 굵은 텍스트 아래에 표시되는 텍스트의 마지막 줄을 지정합니다. 예를 들어 기본 사용자 알림에서 이 섹션에는 "시작하려면 [설치]를 클릭하고 그렇지 않으면 [취소]를 클릭하세요."와 같은 내용이 포함됩니다.   
+   **Tekst komunikatu powiadomienia użytkownika**: Istnieją trzy pola tekstowe zawierających treść niestandardowe powiadomienie.
+   - 1. pole tekstowe: Określa główną część tekstu, zwykle zawierającego instrukcje dla użytkownika. Na przykład w domyślnie powiadomienie użytkownika, ta sekcja zawiera coś takie jak "Uaktualnianie systemu operacyjnego zajmie trochę czasu i komputer może być kilka razy ponownie."
+   - pole tekstowe 2: Określa pogrubioną w głównej części tekstu. Na przykład w domyślnie powiadomienie użytkownika, ta sekcja zawiera coś takie jak "to uaktualnienie w miejscu instaluje nowy system operacyjny i automatycznie przeprowadzanie migracji aplikacji, danych i ustawień".
+   - pole tekstowe 3: Określa ostatni wiersz tekstu w polu pogrubiony tekst. Na przykład w domyślnie powiadomienie użytkownika, ta sekcja zawiera przypominać "kliknij przycisk Instaluj, aby rozpocząć. W przeciwnym razie kliknij przycisk Anuluj."   
 
-   속성에서 다음과 같은 사용자 지정 알림을 구성한다고 가정해 봅니다.
+   Załóżmy, że możesz skonfigurować następujące powiadomienie niestandardowych we właściwościach.
 
-   ![작업 순서에 대한 사용자 지정 알림](.\media\user-notification.png)
+   ![Niestandardowe powiadomienie w sekwencji zadań](.\media\user-notification.png)
 
-   최종 사용자가 소프트웨어 센터에서 설치를 열면 다음과 같은 알림 메시지가 표시됩니다.
+   Pojawi się następujący komunikat powiadomienia, gdy użytkownik końcowy otworzy instalacji w programie Software Center.
 
-   ![작업 순서에 대한 사용자 지정 알림](.\media\user-notification-enduser.png)
+   ![Niestandardowe powiadomienie w sekwencji zadań](.\media\user-notification-enduser.png)
 
-### <a name="configure-software-center-properties"></a>소프트웨어 센터 속성 구성
-소프트웨어 센터에 표시된 작업 순서에 대한 세부 정보를 구성하려면 다음 절차를 따르세요. 이러한 세부 정보는 정보 제공용입니다.  
-1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **운영 체제** > **작업 순서**로 이동합니다.
-2. 편집할 작업 순서를 선택하고 **속성**을 클릭합니다.
-3. **일반** 탭에서 소프트웨어 센터에 대한 다음 설정을 사용할 수 있습니다.
-  - **다시 시작 필요**: 설치하는 동안 다시 시작해야 하는지 여부를 사용자에게 알립니다.
-  - **다운로드 크기(MB)**: 작업 순서에 대해 소프트웨어 센터에 표시되는 메가바이트 수를 지정합니다.  
-  - **예상 실행 시간(분)**: 작업 순서에 대해 소프트웨어 센터에 표시되는 예상 실행 시간(분)을 지정합니다.
-
-
-## <a name="check-for-running-executable-files-before-installing-an-application"></a>응용 프로그램을 설치하기 전에 실행 중인 실행 파일 확인
-
-이제 [설치 동작] 탭에 있는 배포 유형의 *<deployment type name>* **속성** 대화 상자에서 배포 유형의 설치를 차단하는 실행 파일(실행 중일 경우)을 하나 이상 지정할 수 있습니다. 사용자가 실행 중인 실행 파일을 닫아야(또는 필수 용도의 배포를 위해 자동으로 닫힐 수 있음) 배포 유형을 설치할 수 있습니다.
-
-### <a name="try-it-out"></a>직접 시도해 보세요.
-
-1.    Configuration Manager 배포 유형의 속성에서 **설치 동작** 탭을 선택합니다.
-2.    **추가**를 선택하여 확인할 실행 파일 이름을 하나 이상 추가합니다. 사용자가 목록에서 응용 프로그램을 식별하기 쉽도록 표시 이름을 추가할 수도 있습니다.
-3.    배포 용도가 필수인 경우 소프트웨어 배포 마법사에서 필요에 따라 **배포 유형 속성 대화 상자의 설치 동작 탭에 지정한 모든 실행 중인 실행 파일 자동으로 닫기**를 선택할 수 있습니다.
-
-응용 프로그램이 **사용 가능**으로 배포된 경우 최종 사용자가 응용 프로그램을 설치하려고 하면 지정된 실행 중인 실행 파일을 닫아야 설치를 계속할 수 있다는 메시지가 표시됩니다.
-
-응용 프로그램이 **필수**로 배포되었으며 **배포 유형 속성 대화 상자의 설치 동작 탭에 지정한 모든 실행 중인 실행 파일 자동으로 닫기** 옵션이 선택된 경우 응용 프로그램 설치 최종 기한에 도달하면 지정된 실행 파일이 자동으로 닫힌다고 알리는 대화 상자가 표시됩니다. **클라이언트 설정** > **컴퓨터 에이전트**에서 이러한 대화 상자를 예약할 수 있습니다. 이러한 메시지를 최종 사용자에게 표시하지 않으려면 배포 속성의 **사용자 환경** 탭에서 **소프트웨어 센터에 모든 알림 숨기기**를 선택합니다.
-
-응용 프로그램이 **필수**로 배포되었으며 **배포 유형 속성 대화 상자의 설치 동작 탭에 지정한 모든 실행 중인 실행 파일 자동으로 닫기** 옵션이 선택되지 않은 경우 지정된 응용 프로그램 중 하나 이상이 실행 중이면 앱 설치에 실패합니다.
-
-## <a name="create-pfx-certificates-with-s-mime-support"></a>S MIME을 지원하는 PFX 인증서 만들기
-
-이제 S/MIME을 지원하는 PFX 인증서 프로필을 만들어 사용자에게 배포할 수 있습니다.  그러면 사용자가 등록한 장치 전체에서 이 인증서를 S/MIME 암호화 및 암호 해독에 사용할 수 있습니다.
-
-또한 이제 여러 인증서 등록 지점 사이트 시스템 역할에 여러 CA(인증 기관)를 지정한 다음 인증서 프로필의 일부로 요청을 처리하는 CA를 할당할 수 있습니다.
-
-iOS 장치의 경우 PFX 인증서 프로필을 메일 프로필에 연결하고 S/MIME 암호화를 사용하도록 설정할 수 있습니다.  이렇게 하면 iOS의 네이티브 메일 클라이언트에서 S/MIME이 사용되고 올바른 S/MIME 암호화 인증서가 연결됩니다.
-
-Configuration Manager의 인증서에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필 소개]( https://docs.microsoft.com/sccm/protect/deploy-use/introduction-to-certificate-profiles)를 참조하세요.
+### <a name="configure-software-center-properties"></a>Skonfiguruj właściwości Centrum oprogramowania
+Poniższa procedura umożliwia skonfigurowanie szczegóły sekwencji zadań wyświetlana w Centrum oprogramowania. Te informacje są wyłącznie w celach informacyjnych.  
+1. W konsoli programu Configuration Manager, przejdź do **Biblioteka oprogramowania** > **systemów operacyjnych** > **sekwencje zadań**.
+2. Wybierz sekwencję zadań do edycji, a następnie kliknij przycisk **właściwości**.
+3. Na **ogólne** kartę, dostępne są następujące ustawienia w programie Software Center:
+  - **Wymagane jest ponowne uruchomienie**: Umożliwia użytkownikowi wiedzieć, czy ponowne uruchomienie jest wymagane podczas instalacji.
+  - **Pobierz rozmiar (MB)**: Określa, ile megabajtów jest wyświetlana w Centrum oprogramowania dla sekwencji zadań.  
+  - **Szacowany czas wykonywania (minuty)**: Określa szacowany czas wykonywania w minutach, które jest wyświetlane w Centrum oprogramowania dla sekwencji zadań.
 
 
-## <a name="new-compliance-settings-for-ios-devices"></a>iOS 장치에 대한 새 준수 설정
+## <a name="check-for-running-executable-files-before-installing-an-application"></a>Sprawdź, czy uruchamianie plików wykonywalnych przed zainstalowaniem aplikacji
 
-iOS 장치에 대한 구성 항목에서 사용할 수 있는 새 설정이 추가되었습니다. 이러한 설정은 이전에 Microsoft Intune의 독립 실행형 구성에 있던 설정이며 이제 Intune과 Configuration Manager를 사용할 때 제공됩니다. 이러한 설정에 대한 도움이 필요하면 [Microsoft Intune의 iOS 정책 설정](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)을 참조하세요.
+W  *<deployment type name>*  **właściwości** okno dialogowe typu wdrożenia, na karcie zachowanie instalacji można teraz określić jedną więcej pliki wykonywalne, jeśli uruchomiony, blokuje instalację typu wdrożenia. Użytkownik musi zamknąć plik wykonywalny uruchomiona (lub może zostać zamknięty w automatycznie w przypadku wdrożeń z celem wymagane) przed wdrożeniem można było zainstalować typ.
 
-- **관리되는 앱에서 데이터를 iCloud와 동기화**
-- **다른 디바이스에서 작업을 계속하도록 핸드오프**
-- **iCloud 사진 공유**
-- **iCloud 사진 라이브러리**
-- **새로운 엔터프라이즈 앱 작성자 신뢰**
-- **사용자가 iBook 스토어에서 'Erotica'로 플래그가 지정된 콘텐츠를 다운로드하도록 허용**(감독 모드인 경우에만)
-- **페어링된 Apple Watch에서 강제로 손목 감지를 사용하도 지정**
-- **AirPlay 발신 요청 암호**
-- **계정 설정 수정**(감독 모드인 경우에만)
-- **앱 셀룰러 데이터 사용량 설정 변경**(감독 모드인 경우에만)
-- **모든 콘텐츠 및 설정 지우기**(감독 모드인 경우에만)
-- **장치에 대한 제한 구성** (감독된 모드에만 해당)
-- **호스트 페어링을 사용하여 iOS 장치에서 페어링할 수 있는 장치 제어**(감독 모드인 경우에만)
-- **구성 프로필 및 인증서 설치**(감독 모드인 경우에만)
-- **장치 이름 수정**(감독 모드인 경우에만)
-- **암호 수정**(감독 모드인 경우에만)
-- **Apple Watch 페어링**(감독 모드인 경우에만)
-- **알림 설정 수정**(감독 모드인 경우에만)
-- **배경 화면 수정**(감독 모드인 경우에만)
-- **진단 전송 설정 수정**(감독 모드인 경우에만)
-- **Bluetooth 수정**(감독 모드인 경우에만)
-- **AirDrop**(감독 모드인 경우에만)
-- **Siri를 사용하여 인터넷에서 사용자 생성 콘텐츠 쿼리**(감독 모드인 경우에만)
-- **Siri 욕설 필터**(감독 모드인 경우에만)
-- **Spotlight 검색에서 인터넷 검색 결과 반환**(감독 모드인 경우에만)
-- **단어 정의 조회**(감독 모드인 경우에만)
-- **자동 완성 키보드**(감독 모드인 경우에만)
-- **자동 수정**(감독 모드인 경우에만)
-- **키보드 맞춤법 검사**(감독 모드인 경우에만)
-- **바로 가기 키**(감독 모드인 경우에만)
+### <a name="try-it-out"></a>Wypróbować jej możliwości.
+
+1.  We właściwościach typu wdrożenia programu Configuration Manager wybierz **zainstalować zachowanie** kartę.
+2.  Wybierz **Dodaj** można dodać co najmniej jedną nazwę pliku wykonywalnego chcesz wyszukać. Można również dodać nazwę wyświetlaną, aby ułatwić użytkownikom identyfikację aplikacje na liście.
+3.  Jeśli wdrożenie ma cel w Kreatorze wdrażania oprogramowania wymagane Opcjonalnie możesz **automatycznie Zamknij wszystkie uruchomione pliki wykonywalne określone na karcie zachowanie instalacji okna dialogowego właściwości typu wdrożenia**.
+
+Jeśli aplikacja została wdrożona jako **dostępne**i użytkownik końcowy próbuje zainstalować aplikację, będą oni musieli podać do Zamknij wszystkie uruchomione pliki wykonywalne określona zanim można kontynuować instalacji.
+
+Jeśli aplikacja została wdrożona jako **wymagane**wraz z opcją **automatycznie Zamknij wszystkie uruchomione pliki wykonywalne określone na karcie zachowanie instalacji okna dialogowego właściwości typu wdrożenia** jest zaznaczone, zobaczą okno dialogowe, które informuje, że pliki wykonywalne określonego zostaną automatycznie zamknięte po osiągnięciu ostatecznego terminu instalacji aplikacji. Można zaplanować tych okien dialogowych w **ustawień klienta** > **Agent komputera**. Jeśli nie chcesz, aby użytkownik końcowy, aby wyświetlić te komunikaty, wybierz **Ukryj w programie Software Center i wszystkie powiadomienia** na **środowisko użytkownika** we właściwościach wdrożenia.
+
+Jeśli aplikacja została wdrożona jako **wymagane** wraz z opcją **automatycznie Zamknij wszystkie uruchomione pliki wykonywalne określone na karcie zachowanie instalacji okna dialogowego właściwości typu wdrożenia** nie jest zaznaczone, a następnie instalacja aplikacji zakończy się niepowodzeniem, jeśli jeden lub więcej określonych aplikacji jest uruchomione.
+
+## <a name="create-pfx-certificates-with-s-mime-support"></a>Tworzenie certyfikatów PFX z obsługą S MIME
+
+Teraz możesz utworzyć profil certyfikatu PFX, który obsługuje szyfrowanie S/MIME i wdrażanie dla użytkowników.  Ten certyfikat może następnie używane S/MIME szyfrowania i odszyfrowywania na urządzeniach zarejestrowanych przez użytkownika.
+
+Ponadto można określić wiele urzędów certyfikacji (CA) na wiele ról systemu lokacji punktu rejestracji certyfikatu i przypisywane żądaniach procesu urzędów certyfikacji jako część profilu certyfikatu.
+
+Dla urządzeń z systemem iOS można skojarzyć profil certyfikatu PFX do profilu poczty e-mail i włączenia szyfrowania S/MIME.  Następnie to umożliwi S/MIME w klienta natywnego poczty e-mail w systemie iOS i kojarzy prawidłowy certyfikat szyfrowania S/MIME do niego.
+
+Aby uzyskać więcej informacji na temat certyfikatów w programie Configuration Manager, zobacz [wprowadzenie do profilów certyfikatów w programie System Center Configuration Manager]( https://docs.microsoft.com/sccm/protect/deploy-use/introduction-to-certificate-profiles).
+
+
+## <a name="new-compliance-settings-for-ios-devices"></a>Nowe ustawienia zgodności dla urządzeń z systemem iOS
+
+Dodano nowe ustawienia, których można używać we wszystkich elementach konfiguracji dla urządzeń z systemem iOS. Są to ustawienia, które wcześniej były dostępne w programie Microsoft Intune w konfiguracji autonomicznej i są teraz dostępne podczas korzystania z usługi Intune z programem Configuration Manager. Jeśli potrzebujesz pomocy z dowolnymi spośród tych ustawień, zobacz [ustawienia zasad systemu iOS w programie Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune).
+
+- **Synchronizowanie danych z zarządzanych aplikacji usługi iCloud**
+- **Programowi handoff na kontynuowanie działań na innym urządzeniu**
+- **Udostępnianie zdjęć w ramach usługi iCloud**
+- **Biblioteka zdjęć w usłudze iCloud**
+- **Zaufania nowych autorów aplikacji przedsiębiorstwa**
+- **Zezwalaj użytkownikom na pobieranie zawartości ze sklepu iBook oznaczonej jako "Erotyka"** (tylko tryb nadzorowany)
+- **Wymuś łączyć obserwowanie firmy Apple, aby korzystać z nadgarstka wykrywania**
+- **Hasło dla wychodzących żądań funkcji AirPlay**
+- **Zmodyfikuj ustawienia konta** (tylko tryb nadzorowany)
+- **Zmiany ustawień użycia danych komórkowych aplikacji** (tylko tryb nadzorowany)
+- **ERASE całej zawartości i wszystkich ustawień** (tylko tryb nadzorowany)
+- **Konfigurowanie ograniczeń urządzenia** (tylko tryb nadzorowany)
+- **Użyj parowanie hostów w celu kontrolowania urządzenia może być sparowane urządzenie iOS** (tylko tryb nadzorowany)
+- **Instalowanie profilów konfiguracji i certyfikatów** (tylko tryb nadzorowany)
+- **Zmiana nazwy urządzenia** (tylko tryb nadzorowany)
+- **Modyfikowanie kodu dostępu** (tylko tryb nadzorowany)
+- **Parowanie Apple Watch** (tylko tryb nadzorowany)
+- **Modyfikacja ustawień powiadomień** (tylko tryb nadzorowany)
+- **Wallpaper modyfikacji** (tylko tryb nadzorowany)
+- **Modyfikacja ustawień diagnostyki przesyłanie** (tylko tryb nadzorowany)
+- **Modyfikacja Bluetooth** (tylko tryb nadzorowany)
+- **AirDrop** (tylko tryb nadzorowany)
+- **Użyj programowi siri na wykonywanie zapytań o zawartość wygenerowaną przez użytkowników z Internetu** (tylko tryb nadzorowany)
+- **Używanie programu Siri niestosownych wyrażeń filtru** (tylko tryb nadzorowany)
+- **Zwracania wyników z Internetu w przez wyszukiwanie Spotlight** (tylko tryb nadzorowany)
+- **Word definicji wyszukiwania** (tylko tryb nadzorowany)
+- **Klawiatury predykcyjnej** (tylko tryb nadzorowany)
+- **Korekty automatycznej** (tylko tryb nadzorowany)
+- **Klawiatura sprawdzanie** (tylko tryb nadzorowany)
+- **Skróty klawiaturowe** (tylko tryb nadzorowany)
 <!--- - **Enterprise app trust settings modification** --->
-- **Apple Configurator 및 iTunes를 사용한 앱 설치만**(감독 모드인 경우에만)
-- **자동 앱 다운로드**(감독 모드인 경우에만)
-- **Find My Friends 앱 설정 변경**(감독 모드인 경우에만)
-- **iBooks 스토어 액세스**(감독 모드인 경우에만)
-- **메시지 앱**(감독 모드인 경우에만)
-- **팟캐스트**(감독 모드인 경우에만)
-- **Apple Music**(감독 모드인 경우에만)
-- **iTunes Radio**(감독 모드인 경우에만)
-- **Apple News**(감독 모드인 경우에만)
-- **Game Center**(감독 모드인 경우에만)
-- **Airdrop을 관리되지 않는 대상으로 처리**
+- **Instalowanie aplikacji przy użyciu programu Apple Configurator i tylko iTunes** (tylko tryb nadzorowany)
+- **Pobieranie aplikacji automatyczne** (tylko tryb nadzorowany)
+- **Zmiany ustawień aplikacji Find My Friends** (tylko tryb nadzorowany)
+- **Dostęp do sklepu iBooks** (tylko tryb nadzorowany)
+- **Komunikaty aplikacji** (tylko tryb nadzorowany)
+- **Podkasty** (tylko tryb nadzorowany)
+- **Muzyka Apple** (tylko tryb nadzorowany)
+- **iTunes radiowych** (tylko tryb nadzorowany)
+- **Grupy dyskusyjne firmy Apple** (tylko tryb nadzorowany)
+- **Centrum gier** (tylko tryb nadzorowany)
+- **Traktuj AirDrop jako niezarządzane miejsca docelowego**
 
-## <a name="android-for-work-support"></a>Android for Work 지원
+## <a name="android-for-work-support"></a>Android obsługę pracy
 
-Technical Preview 버전 1702부터 Google 계정을 하이브리드 MDM 테넌트에 바인딩할 수 있습니다. 이렇게 하면 다음을 수행할 수 있습니다.
+Począwszy od wersji Technical Preview 1702 można powiązać z konta Google dzierżawy hybrydowego zarządzania urządzeniami Przenośnymi. Dzięki temu można wykonać następujące czynności:
 
-- [지원되는 Android 장치](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012)를 Android for Work로 등록하고 이러한 등록된 장치에 작업 프로필 만들기
-- Play for Work 스토어에서 앱을 승인하고, Configuration Manager 콘솔과 동기화한 다음 장치의 작업 프로필에 배포
-- 구성 항목을 만들고 배포하여 해당 장치에 대한 작업 프로필 및 암호 설정 구성
-- Android 장치에 대해 이미 수행하는 것처럼 Android for Work 장치에 대한 준수 정책 항목과 리소스 액세스 프로필 만들기 및 배포
-- Android for Work 장치에서 선택적 초기화 수행
+- Rejestrowanie [obsługiwane urządzenia z systemem Android](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) jako Android for Work, tworzenie profili pracy na tych zarejestrowanych urządzeń
+- Zatwierdź aplikacji w Play pracy magazynu, zsynchronizować je z konsoli programu Configuration Manager, a następnie wdrożyć je w profilach pracy urządzeń
+- Tworzenie i wdrażanie elementów konfiguracji, aby skonfigurować ustawienia profilu i hasło pracy dla tych urządzeń
+- Tworzenie i wdrażanie elementów zasad zgodności i profilów dostępu do zasobów dla systemu Android dla urządzeń z pracy, jak już dla urządzeń z systemem Android
+- Przeprowadzić selektywne czyszczenie danych w systemie Android pracy urządzeń
 
-장치를 Android for Work로 등록하면 Intune에서 관리할 수 있는 장치에 작업 프로필이 생성됩니다. 이 작업 프로필은 Android 장치의 개인 프로필과 나란히 존재합니다. 사용자는 작업 프로필 앱과 개인 프로필 앱 간에 쉽게 전환할 수 있습니다. 개인 프로필에서 항목을 관리할 수 없습니다. 개인 앱과 데이터는 관리되지 않는 상태로 유지됩니다. Configuration Manager는 작업 프로필 및 해당 내용에 대한 모든 권한을 가지며 장치에서 제거할 수 있습니다.
+Po zarejestrowaniu urządzenia jako Android for Work tworzy profil pracy na urządzeniu które Intune można zarządzać. Ten profil pracy istnieje side-by-side z osobistego profilu na urządzeniu z systemem Android. Użytkownicy mogą łatwo przełączać pracy profilu aplikacji oraz osobiste profilu aplikacji. Nie można zarządzać elementów w profilu osobistego. Aplikacje osobiste i dane pozostają niezarządzane. Configuration Manager ma pełną kontrolę nad profilu pracy i jego zawartość i można go usunąć z urządzenia.
 
-Android for Work는 Android와 별도 플랫폼이며, 작업 프로필을 지원하는 Android 장치에 사용할 관리 형식을 결정해야 합니다.
+Android for Work to platforma oddzielne z systemem Android, a następnie należy zdecydować, który formularz Zarządzanie dla urządzeń z systemem Android, które obsługują profile pracy.
 
-### <a name="try-it-out"></a>기능 직접 사용해 보기
-다음 섹션에서는 Android for Work 관리에 대해 설명합니다.
+### <a name="try-it-out"></a>Wypróbuj
+W poniższych sekcjach opisano systemu Android do zarządzania pracą.
 
-#### <a name="enable-android-for-work-management"></a>Android for Work 관리 사용
-1. 이 Intune 테넌트에 대한 모든 Android for Work 관리 작업과 연결할 Android for Work 관리자 계정으로 사용할 Google 계정을 https://accounts.google.com/SignUp에서 만듭니다. 이 Google 계정은 Android 장치를 관리하는 관리자 간에 공유될 수 있습니다. 또한 조직이 Play for Work 콘솔에서 앱을 관리하고 게시하는 데 사용하는 Google 계정입니다. 이 계정을 사용하여 Play for Work 스토어에서 앱을 승인하므로 계정 이름과 암호를 추적합니다.
-2. Configuration Manager에서 관리되는 Intune 테넌트에 Google 계정을 바인딩하여 Android 등록을 사용하도록 설정합니다.
-  1. **관리** > **개요** > **Cloud Services** > **Microsoft Intune 구독**으로 이동한 다음 Intune 구독을 선택합니다.
-  2. 리본에서 **플랫폼 구성** > **Android**를 클릭하고 **Android 등록 사용**이 선택되었는지 확인합니다.
-  3. 리본에서 **플랫폼 구성** > **Android for Work**를 클릭합니다.
-  4. 대화 상자에서 **Intune 콘솔에서 Android for Work 구성**을 클릭합니다. Intune 콘솔이 웹 브라우저에서 열립니다.
-  5. Intune 관리자 자격 증명을 사용하여 Intune 포털에 로그인합니다.
-  6. **구성**을 클릭하여 Google Play의 Android for Work 웹 사이트를 엽니다.
-  7. Google의 로그인 페이지에서 1단계의 Google 계정 자격 증명을 입력한 다음 회사 정보를 제공합니다.
-3. Intune 포털로 돌아오면 Android for Work이 사용되며, Android for Work 장치에 대한 세 가지 등록 옵션이 있습니다.
-  - **모든 장치를 Android로 관리** - (사용 안 함) Android for Work를 지원하는 장치를 포함하여 모든 Android 장치가 기존 Android 장치로 등록됩니다.
-  - **지원되는 장치를 Android for Work로 관리** - (사용) Android for Work를 지원하는 모든 장치가 Android for Work로 등록됩니다. Android for Work를 지원하지 않는 Android 장치는 기존 Android 장치로 등록됩니다.
-  - **이러한 그룹의 사용자에 대해서만 지원되는 장치를 Android for Work로 관리** - (테스트 중) Android for Work 관리의 대상을 제한된 사용자 집합으로 지정할 수 있습니다. Android for Work를 지원하는 장치를 등록하는 선택된 그룹의 구성원만 Android for Work 장치로 등록됩니다. 다른 모든 장치는 Android 장치로 등록됩니다.
+#### <a name="enable-android-for-work-management"></a>Włącz systemu Android do zarządzania pracą
+1. Utwórz konto Google na https://accounts.google.com/SignUp do użycia jako dla systemu Android dla konta administratora pracy, która zostanie skojarzona z wszystkich systemu Android dla zadania zarządzania dla tej dzierżawy usługi Intune. Może to być konto Google współużytkowane przez administratorów, którzy zarządzają urządzeń z systemem Android. To jest konto Google, używana do zarządzania i publikowanie aplikacji w Play dla konsoli pracy w organizacji. Aby zatwierdzić aplikacji w Play pracy magazynu, aby zachować informacje o nazwę konta i hasło będą używają tego konta.
+2. Włączanie rejestracji systemu Android przez powiązanie konto Google do dzierżawy usługi Intune zarządzane w programie Configuration Manager:
+  1. Przejdź do **administracji** > **omówienie** > **usługi w chmurze** > **subskrypcje usługi Microsoft Intune** i wybierz swoją subskrypcję usługi Intune.
+  2. Na wstążce kliknij **Konfiguruj platformy** > **Android** i upewnij się, że **włączyć Android rejestracji** jest zaznaczony.
+  3. Na wstążce kliknij **Konfiguruj platformy** > **Android for Work**.
+  4. W oknie dialogowym kliknij **skonfigurować Android for Work, w konsoli usługi Intune**. W przeglądarce sieci web zostanie otwarta konsola usługi Intune.
+  5. Poświadczenia administratora usługi Intune można używać do logowania do portalu usługi Intune.
+  6. Kliknij przycisk **Konfiguruj** otworzyć Android ze sklepu Google Play pracy witryny sieci Web.
+  7. W witrynie firmy Google logowania wprowadź poświadczenia konta Google z kroku 1, a następnie podaj informacje o Twojej firmie.
+3. Po powrocie do portalu usługi Intune Android for Work jest włączony i ma trzy opcje rejestracji dla systemu Android dla pracy urządzeń:
+  - **Zarządzanie wszystkimi urządzeniami jako Android** — (wyłączony) wszystkich urządzeń z systemem Android urządzeń, które obsługują Android for Work, w tym zostanie zarejestrowane jako urządzenia z konwencjonalnej systemem Android
+  - **Zarządzanie urządzeniami obsługiwane jako Android for Work** — (włączone) zarejestrowane wszystkie urządzenia Android for Work jako systemu Android dla urządzeń w pracy. Urządzenia Android, która nie obsługuje Android for Work jest zarejestrowany jako urządzenie Android konwencjonalnych.
+  - **Zarządzanie urządzenia obsługiwane przez użytkowników tylko w tych grupach jako Android for Work** -(testowanie) umożliwia target Android do zarządzania pracą do określonych użytkowników. Tylko członkowie wybranych grup, którzy rejestrują urządzenia obsługującego Android for Work są rejestrowane jako systemu Android dla urządzeń w pracy. Wszystkie inne zarejestrowane jako urządzenia z systemem Android.
   
 > [!NOTE]
-> 알려진 문제로 인해 **Manage supported devices for users only in these groups as Android for Work**(이 그룹의 사용자만을 위해 지원되는 장치를 Android for Work로 관리) 옵션이 제대로 작동되지 않습니다. 지정된 Azure AD 그룹의 사용자 장치가 Android for Work 대신 Android로 등록됩니다. Android for Work를 테스트하려면 **Manage all supported devices as Android for Work**(지원되는 장치를 모두 Android for Work로 관리)를 사용해야 합니다.
+> Zapobiega to znany problem **Zarządzaj obsługiwanych urządzeniach użytkowników tylko w tych grupach jako Android for Work** opcję działać zgodnie z oczekiwaniami. Urządzenia użytkowników w określonej usłudze Azure AD grupy będą rejestrowane jako Android zamiast Android for Work. Aby przetestować Android for Work, należy użyć **Zarządzanie wszystkich obsługiwanych urządzeń jako Android for Work**.
 
 
-  Android for Work 등록을 사용하도록 설정하려면 아래쪽 두 옵션 중 하나를 선택해야 합니다. **이러한 그룹의 사용자에 대해서만 지원되는 장치를 Android for Work로 관리** 옵션을 사용하려면 Azure Active Directory 보안 그룹을 먼저 설정해야 합니다.
+  Aby włączyć Android rejestracji pracy, musi wybierz jedną z opcji dolnej dwa. **Zarządzaj obsługiwanych urządzeniach użytkowników tylko w tych grupach jako Android for Work** opcji musi mieć należy najpierw zdefiniować grupy zabezpieczeń usługi Azure Active Directory.
 
-바인딩이 완료되면 계정 이름 및 조직 이름이 Intune 포털에 표시되며, 이제 두 브라우저를 닫아도 됩니다.
+Zobaczysz nazwę konta i nazwę organizacji w portalu usługi Intune po zakończeniu wiązania; w tym momencie możesz zamknąć obie przeglądarki.
 
-#### <a name="approve-and-deploy-android-for-work-apps"></a>Android for Work 앱 승인 및 배포
-Play for Work 스토어에서 앱을 승인하고, Configuration Manager 콘솔과 동기화하고, 관리되는 Android for Work 장치에 배포하려면 다음 단계를 따르세요. 사용자의 작업 프로필에 앱을 배포하려면 Play for Work에서 앱을 승인한 다음 Configuration Manager 콘솔과 동기화해야 합니다.
+#### <a name="approve-and-deploy-android-for-work-apps"></a>Zatwierdzanie i wdrażanie systemu Android dla aplikacji służbowych
+Wykonaj poniższe kroki zatwierdzania aplikacji w Play pracy magazynu, zsynchronizować je z konsoli programu Configuration Manager i wdrażać je dla Android zarządzanych urządzeń w pracy. Wdrażanie aplikacji na profilach pracy użytkowników, musisz zatwierdzić aplikacji w Play do pracy, a następnie synchronizacji aplikacji za pomocą konsoli programu Configuration Manager.
 
-1. 브라우저를 열고 https://play.google.com/work로 이동합니다.
-2. Intune 테넌트에 바인딩된 Google 관리자 계정을 사용하여 로그인합니다.
-3. 환경에 배포하려는 앱을 찾은 다음 각 앱에 대해 **승인**을 클릭합니다.
-4. Configuration Manager 콘솔에서 **관리자** > **개요** > **Cloud Services** > **Android for Work**로 이동한 다음 **동기화**를 클릭합니다.
-5. 앱이 동기화될 때까지 최대 10분 정도 기다린 다음 **소프트웨어 라이브러리** > **개요** > **응용 프로그램 관리** > **스토어 앱에 대한 라이선스 정보**로 이동합니다.
-6. Android for Work에서 동기화된 앱을 클릭한 다음 **응용 프로그램 만들기**를 클릭합니다.
-7. 마법사를 완료하고 **닫기**를 클릭합니다.
-8. **소프트웨어 라이브러리** > **개요** > **응용 프로그램 관리** > **응용 프로그램**으로 이동한 다음 Android for Work 앱을 선택하여 평소대로 배포합니다.
+1. Otwórz przeglądarkę i przejdź do: https://play.google.com/work.
+2. Zaloguj się przy użyciu konta administratora usługi Google, związana z dzierżawy usługi Intune.
+3. Przeglądanie w poszukiwaniu aplikacji, które chcesz wdrożyć w środowisku i kliknij przycisk **Zatwierdź** dla każdego z nich.
+4. W konsoli programu Configuration Manager, przejdź do **administratora** > **omówienie** > **usługi w chmurze** > **Android for Work** i kliknij przycisk **synchronizacji**.
+5. Poczekaj, aż do 10 minut zsynchronizować aplikacje, a następnie przejdź **Biblioteka oprogramowania** > **omówienie** > **Zarządzanie aplikacjami** > **informacji o licencji dla aplikacji ze sklepu**.
+6. Kliknij aplikację synchronizowane z Play do pracy, a następnie kliknij przycisk **tworzenie aplikacji**.
+7. Zakończ pracę kreatora i kliknij przycisk **Zamknij**.
+8. Przejdź do **Biblioteka oprogramowania** > **omówienie** > **Zarządzanie aplikacjami** > **aplikacji**, wybierz systemu Android dla aplikacji służbowych i wdrażanie w zwykły sposób.
 
-Android for Work 앱을 Configuration Manager와 동기화하려면 Android for Work 웹 사이트에서 앱을 하나 이상 승인해야 합니다.
+Aby zsynchronizować Play dla aplikacji do pracy z programem Configuration Manager, należy go zatwierdzić co najmniej jedną aplikację na Play pracy witryny sieci Web.
 
-#### <a name="enroll-an-android-for-work-device"></a>Android for Work 장치 등록
-Android for Work 장치를 등록하는 방법은 Android 등록과 비슷합니다. 모바일 장치에서 Android용 회사 포털 앱을 다운로드하여 실행합니다. 등록 프로세스의 일부로 작업 프로필을 만들라는 메시지가 나타납니다.  작업 프로필을 만든 후 관리되는 버전의 회사 포털로 전환해야 합니다. 관리되는 회사 포털은 오른쪽 아래에 작은 주황색 서류 가방이 태그로 지정되어 있습니다.
+#### <a name="enroll-an-android-for-work-device"></a>Rejestrowanie dla systemu Android dla pracy urządzenia
+Jak rejestrować systemu Android dla urządzeń pracy jest podobny do rejestracji dla systemu Android. Pobierz i uruchom aplikację Portal firmy dla systemu Android na swoim urządzeniu przenośnym. Pojawi się monit można utworzyć profilu pracy w ramach procesu rejestracji.  Po utworzeniu profilu pracy, musisz przełączyć się do zarządzanej wersji portalu firmy. Zarządzane Portal firmy jest oznaczane małych Aktówki pomarańczowy w prawym dolnym rogu.
 
-#### <a name="create-and-deploy-a-configuration-item"></a>구성 항목 만들기 및 배포
-Android for Work에는 구성 항목에 대한 다음 두 가지 설정 그룹이 있습니다.
-- 암호
-- 작업 프로필
+#### <a name="create-and-deploy-a-configuration-item"></a>Tworzenie i wdrażanie elementu konfiguracji
+Android for Work ma dwie grupy ustawienie pozycji konfiguracji:
+- Hasło
+- Profil pracy
 
-Android 6 이상을 실행하는 장치에서는 다음 구성 항목뿐 아니라 작업 프로필 간에 콘텐츠 공유를 구성할 수 있습니다.
-- 특정 사용 권한을 요청하는 앱에 대한 동작
-- 작업 프로필 내의 응용 프로그램에 대한 알림이 잠금 화면에 표시되는지 여부
+Można skonfigurować treści współużytkują profili pracy, a także następujące elementy konfiguracji na urządzeniach z systemem Android 6 lub nowszy:
+- Zachowanie aplikacji z prośbą o określonych uprawnień
+- Określa, czy powiadomienia do aplikacji w obrębie profilu pracy są widoczne na ekranie blokady
 
-이 동작을 시도하려면 표준 워크플로를 통해 구성 항목을 만들고, **일반** 페이지에서 **Android for Work**를 선택하고, 기준에 구성 항목을 추가한 다음 평소대로 배포하여 각 설정 그룹에 대한 설정을 구성합니다. 이러한 설정은 Android for Work로 등록된 장치에만 적용되고 Android로 등록된 장치에는 적용되지 않습니다.
+To spróbować utworzyć element konfiguracji, za pomocą standardowych przepływu pracy, wybierz **Android for Work** na **ogólne** strony i skonfiguruj ustawienia dla każdej grupy ustawień, Dodawanie elementu konfiguracji do linii bazowej i wdrażanie w zwykły sposób. Te ustawienia zostaną zastosowane tylko na urządzeniach zarejestrowanych jako systemu Android do pracy oraz nie te, które zarejestrowane jako Android.
 
-#### <a name="perform-selective-wipe"></a>선택적 초기화 수행
-작업 프로필만 관리하기 때문에 Android for Work로 등록된 장치는 선택적 초기화만 가능합니다. 이렇게 하면 개인 프로필이 초기화되지 않도록 보호됩니다. Android for Work 장치에서 선택적 초기화를 수행하면 모든 앱과 데이터를 비롯한 작업 프로필이 제거되고 장치 등록이 취소됩니다.
+#### <a name="perform-selective-wipe"></a>Przeprowadzić selektywne czyszczenie danych
+Urządzenia zarejestrowane jako Android for Work tylko można selektywnie wyczyścić ponieważ tylko Zarządzanie profilu pracy. Chroni to ten profil z spowoduje wyczyszczenie urządzenia. Wykonywanie czyszczenia selektywnego w systemie Android pracy urządzenia powoduje usunięcie profilu pracy, w tym wszystkie aplikacje i dane i wyrejestrowanie urządzenia.
 
-Android for Work 장치를 선택적으로 초기화하려면 Configuration Manager 콘솔에서 일반적인 [선택적 초기화 프로세스](https://docs.microsoft.com/sccm/mdm/deploy-use/wipe-lock-reset-devices#selective-wipe)를 사용합니다.
+Aby selektywnie wyczyścić Android pracy urządzenia, użyj normalnych [selektywnego czyszczenia urządzenia](https://docs.microsoft.com/sccm/mdm/deploy-use/wipe-lock-reset-devices#selective-wipe) w konsoli programu Configuration Manager.
 
-#### <a name="known-issues-for-android-for-work"></a>Android for Work의 알려진 문제
-**Android for Work 메일 프로필에 동기화 일정을 구성하면 배포에 실패함** Android for Work 메일 프로필에 대한 ConfigMgr UI의 옵션 중 하나는 "Schedule"(일정)입니다. 다른 플랫폼에서는 관리자가 메일 및 다른 메일 계정 데이터를 배포되는 모바일 장치와 동기화하는 일정을 구성할 수 있습니다. 그러나 Android for Work 메일 프로필에 대해서는 동기화 일정을 구성할 수 없으며, "Not Configured"(구성되지 않음) 외에 다른 옵션을 선택하면 프로필이 장치에 배포되지 않습니다.
-
+#### <a name="known-issues-for-android-for-work"></a>Znane problemy dotyczące Android for Work
+**Konfigurowanie synchronizacji harmonogramu Android o przyczynach profile poczty e-mail pracy je, aby nie można wdrożyć** jedną z opcji w interfejsie użytkownika programu ConfigMgr dla systemu Android dla profilów poczty e-mail pracy jest "Harmonogram". Na innych platformach dzięki temu administrator, aby skonfigurować harmonogram do synchronizowania poczty e-mail i innych danych konta poczty e-mail do wdrożonej w urządzeniach przenośnych. Jednak nie działać pracy profilów poczty e-mail dla systemu Android i wybranie opcji dowolnego innego niż "Nie skonfigurowano" spowoduje, że profil nie można wdrożyć na żadnych urządzeniach.

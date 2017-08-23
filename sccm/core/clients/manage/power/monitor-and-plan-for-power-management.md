@@ -1,632 +1,625 @@
 ---
-title: "전원 관리 모니터링 및 계획 | Microsoft 문서"
-description: "System Center Configuration Manager에서 전원 관리를 모니터링하고 계획하는 방법을 알아봅니다."
+title: "Monitorować i planować zarządzanie energią | Dokumentacja firmy Microsoft"
+description: "Dowiedz się, jak monitorować i planowanie w programie System Center Configuration Manager zarządzanie energią."
 ms.custom: na
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 507bf676-2679-4e4d-8831-3ffc9cf8557e
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 08/07/2017
 ---
-# <a name="how-to-monitor-and-plan-for-power-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 전원 관리를 모니터링하고 계획하는 방법
+# <a name="how-to-monitor-and-plan-for-power-management-in-system-center-configuration-manager"></a>Jak monitorować i planować zarządzanie energią w programie System Center Configuration Manager
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*Dotyczy: Program System Center Configuration Manager (Current Branch)*
 
-다음 정보를 사용하여 System Center Configuration Manager에서 전원 관리를 모니터링하고 계획할 수 있습니다.  
+Skorzystaj z poniższych informacji, aby monitorować i planować zarządzanie energią w programie System Center Configuration Manager.  
 
-##  <a name="a-namebkmkhowtousereportsa-how-to-use-reports-for-power-management"></a><a name="BKMK_How_to_use_reports"></a> 전원 관리에 대한 보고서를 사용하는 방법  
- Configuration Manager의 전원 관리에는 조직의 전력 소비 및 컴퓨터 전원 설정을 분석할 수 있는 여러 보고서가 포함됩니다. 보고서는 문제를 해결하기 위해서도 사용할 수 있습니다.  
+##  <a name="BKMK_How_to_use_reports"></a> Jak używać raportów do zarządzania energią  
+ Zarządzanie energią w programie Configuration Manager udostępnia kilka raportów, które ułatwiają analizowanie zasilania zużycia i ustawień zasilania komputerów w organizacji. Te raporty mogą być pomocne podczas rozwiązywania problemów.  
 
- 전원 관리 보고서를 사용하려면 먼저 계층에 대한 보고를 구성해야 합니다. Configuration Manager에서 보고하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 보고](../../../../core/servers/manage/reporting.md)를 참조하세요.  
+ Aby móc korzystać z raportów dotyczących zarządzania energią, należy skonfigurować raportowanie dla swojej hierarchii. Aby uzyskać więcej informacji o raportach w programie Configuration Manager, zobacz [raportowania w programie System Center Configuration Manager](../../../../core/servers/manage/reporting.md).  
 
 > [!NOTE]  
->  일일 보고서에 사용된 전원 관리 정보는 31일간 Configuration Manager 사이트 데이터베이스에 보존됩니다.  
->           월별 보고서에 사용된 전원 관리 정보는 13개월간 Configuration Manager 사이트 데이터베이스에 보존됩니다.  
+>  Informacje dotyczące zarządzania energią używane w codziennych raportach są przechowywane w bazie danych lokacji programu Configuration Manager przez 31 dni.  
+>           Informacje dotyczące zarządzania energią używane w miesięcznych raportach są przechowywane w bazie danych lokacji programu Configuration Manager przez 13 miesięcy.  
 >   
->  전원 관리의 모니터링, 계획 및 준수 단계 중 보고서를 실행할 때 나중에 해당 결과가 Configuration Manager에서 제거된 경우 비교할 수 있도록 데이터를 보존하려는 보고서에서 결과를 저장하거나 내보냅니다.  
+>  Podczas uruchamiania raportów podczas fazy monitorowania i zapewniania zgodności zarządzania energią, Zapisz lub wyeksportuj wyniki wszystkich raportów, które mają być przechowywane dane późniejszego porównania na wypadek, gdyby zostały później usunięte przez program Configuration Manager.  
 
-## <a name="list-of-power-management-reports"></a>전원 관리 보고서의 목록  
- 다음 목록에서는 Configuration Manager에서 사용할 수 있는 전원 관리 보고서를 설명합니다.  
-
-> [!NOTE]  
->  전원 관리 보고서에는 선택한 컬렉션에 있는 물리적 컴퓨터의 수 및 가상 컴퓨터의 수가 표시됩니다. 그러나 물리적 컴퓨터의 전원 관리 정보만 전원 관리 보고서에 표시됩니다.  
-
-###  <a name="a-namebkmkactivitya-computer-activity-report"></a><a name="BKMK_Activity"></a> 컴퓨터 활동 보고서  
- **컴퓨터 활동** 보고서에는 지정된 기간 동안 지정된 컬렉션에 대한 다음 활동을 보여 주는 그래프가 표시됩니다.  
-
--   **컴퓨터 켜짐** – 컴퓨터가 켜져 있습니다.  
-
--   **모니터 켜짐** – 모니터가 켜져 있습니다.  
-
--   **사용자 활성** – 컴퓨터 마우스, 컴퓨터 키보드 또는 컴퓨터에 대한 원격 데스크톱 연결에서 활동이 감지되었습니다.  
-
- 이 보고서는 24시간 동안 컴퓨터 활동, 모니터 활동 및 사용자 활동 간의 맞춤을 파악할 수 있도록 모니터링, 계획 및 적용 단계 중 사용됩니다. 보고서를 일정 기간 동안 실행하면 이 기간 동안의 데이터가 집계됩니다. 이 보고서를 통해 선택한 컬렉션에 대한 일반적인 업무(사용량 증가 시) 및 업무 외(사용량 감소 시) 시간을 확인할 수 있으므로 구성된 전원 관리 계획을 적용할 시기를 결정할 수 있습니다.  
-
- 그래프에는 컴퓨터가 켜져 있는 기간은 표시되지만 사용자 활동은 없습니다. 켜져 있지만 사용하지 않는 컴퓨터의 전원 비용을 절약하려면 이 기간 동안 더 제한적인 전원 설정을 적용하는 것이 좋습니다. 그래프에 표시된 시간에 대해 1분 이상 컴퓨터, 사용자 또는 모니터 활동이 있는 경우 컴퓨터가 활성화된 것으로 간주됩니다. 컴퓨터에서 전원 관리 데이터를 보고하지 않는 경우 해당 컴퓨터는 **컴퓨터 활동** 보고서에 포함되지 않습니다.  
-
- 이 보고서를 구성하려면 다음 매개 변수를 사용합니다.  
-
-#### <a name="required-report-parameters"></a>필수 보고서 매개 변수  
- 이 보고서를 실행하려면 다음 매개 변수를 지정해야 합니다.  
-
-|매개 변수 이름|설명|  
-|--------------------|-----------------|  
-|**시작 날짜**|드롭다운 목록에서 이 보고서에 대한 시작 날짜를 선택합니다.|  
-|**종료 날짜(선택 사항)**|드롭다운 목록에서 이 보고서에 대한 종료 날짜(선택 사항)를 선택합니다.|  
-|**컬렉션 이름**|드롭다운 목록에서 이 보고서에 사용할 컬렉션을 선택합니다.|  
-|**장치 유형**|드롭다운 목록에서 보고서를 원하는 컴퓨터 종류를 선택합니다. 유효한 값은 **모두**(데스크톱 및 휴대용 컴퓨터), **데스크톱**(데스크톱 컴퓨터만) 및 **랩톱**(휴대용 컴퓨터만)입니다.|  
-
-#### <a name="hidden-report-parameters"></a>숨겨진 보고서 매개 변수  
- 이 보고서에는 설정할 수 있는 숨겨진 매개 변수가 없습니다.  
-
-#### <a name="report-links"></a>보고서 링크  
- **종료 날짜(선택 사항)** 에 대한 값을 지정하지 않는 경우 이 보고서에는 추가 정보를 제공하는 다음 보고서에 대한 링크가 포함됩니다.  
-
-|보고서 이름|세부 정보|  
-|-----------------|-------------|  
-|**컴퓨터 활동 세부 정보**|지정한 날짜에 대한 활성, 비활성 및 보고되지 않은 컴퓨터 목록을 확인하려면 **자세한 정보를 보려면 클릭** 링크를 클릭합니다.<br /><br /> 자세한 내용은 이 항목의 [Computer Activity Details Report](#BKMK_Activity_Details) 를 참조하십시오.|  
-
-###  <a name="a-namebkmkcompactivitybycomputera-computer-activity-by-computer-report"></a><a name="BKMK_Comp_Activity_by_computer"></a> 컴퓨터별 컴퓨터 활동 보고서  
- **컴퓨터별 컴퓨터 활동** 보고서에는 지정된 날짜의 지정된 컴퓨터에 대한 다음 활동을 보여 주는 그래프가 표시됩니다.  
-
--   **컴퓨터 켜짐** – 컴퓨터가 켜져 있습니다.  
-
--   **모니터 켜짐** – 모니터가 켜져 있습니다.  
-
--   **사용자 활성** – 컴퓨터 마우스, 컴퓨터 키보드 또는 컴퓨터에 대한 원격 데스크톱 연결에서 활동이 감지되었습니다.  
-
- 이 보고서는 독립적으로 실행하거나 **컴퓨터 활동 세부 정보** 보고서에서 호출할 수 있습니다.  
+## <a name="list-of-power-management-reports"></a>Lista raportów dotyczących zarządzania energią  
+ Poniższa lista zawiera szczegóły dotyczące raportów zarządzania energią, które są dostępne w programie Configuration Manager.  
 
 > [!NOTE]  
->  컴퓨터 활동에 대한 정보는 클라이언트 컴퓨터에서 하드웨어 인벤토리 중 수집됩니다. 하드웨어 인벤토리가 실행되는 시간에 따라, 적용된 사용량 증가 시 또는 사용량 감소 시 전원 계획 동안의 활동이 수집될 수도 있습니다.  
+>  W raportach dotyczących zarządzania energią jest wyświetlana liczba fizycznych komputerów i wirtualnych komputerów w wybranej kolekcji. Jednak w raportach dotyczących zarządzania energią pokazywane są tylko informacje związane z zarządzaniem energią dla komputerów fizycznych.  
 
- 이 보고서를 구성하려면 다음 매개 변수를 사용합니다.  
+###  <a name="BKMK_Activity"></a> Raport Aktywność komputera  
+ W raporcie **Aktywność komputera** przedstawiony jest wykres następujących działań komputera dla określonej kolekcji w określonym przedziale czasu:  
 
-#### <a name="required-report-parameters"></a>필수 보고서 매개 변수  
- 이 보고서를 실행하려면 다음 매개 변수를 지정해야 합니다.  
+-   **Komputer — włączony** : komputer został włączony.  
 
-|매개 변수 이름|설명|  
+-   **Monitor — włączony** : monitor został włączony.  
+
+-   **Użytkownik — aktywny** : wykryto aktywność, której źródłem jest mysz lub klawiatura albo połączenie pulpitu zdalnego z komputerem.  
+
+ Ten raport jest używany na etapach monitorowania, planowania i wymuszania w celu ułatwienia zrozumienia powiązania między aktywnością komputera, aktywnością monitora i aktywnością użytkownika w okresie 24 godzin. Jeśli raport jest uruchamiany dla kilku dni, dane z tego okresu są agregowane. Ten raport może pomóc w ustaleniu typowych godzin pracy (szczyt) i czasu poza godzinami pracy (poza szczytem) dla wybranej kolekcji w celu łatwiejszego podjęcia decyzji dotyczącej godzin, w których mają być stosowane skonfigurowane plany zarządzania energią.  
+
+ Wykres przedstawia okresy, w których komputer może być włączony, ale nie występuje żadna aktywność użytkownika. Należy rozważyć zastosowanie bardziej restrykcyjnych ustawień zasilania w tym czasie w celu zmniejszenia kosztów energii zużywanej przez komputery, które są włączone, ale nie są używane. Komputer jest uznawany za aktywny w przypadku aktywności komputera, użytkownika lub monitora trwającej co najmniej minutę podczas godziny wyświetlanej na wykresie. Jeśli komputer nie zgłasza danych zarządzania energią, nie zostanie uwzględniony w raporcie **Aktywność komputera** .  
+
+ Skonfiguruj ten raport przy użyciu następujących parametrów.  
+
+#### <a name="required-report-parameters"></a>Wymagane parametry raportu  
+ Aby uruchomić ten raport, należy określić następujące parametry.  
+
+|Nazwa parametru|Opis|  
 |--------------------|-----------------|  
-|**보고서 날짜**|드롭다운 목록에서 이 보고서에 대한 날짜를 선택합니다.|  
-|**컴퓨터 이름**|보고서를 원하는 컴퓨터 이름을 입력합니다.|  
+|**Data rozpoczęcia**|Z listy rozwijanej wybierz datę rozpoczęcia dla tego raportu.|  
+|**Data zakończenia (opcjonalnie)**|Z listy rozwijanej wybierz opcjonalną datę zakończenia dla tego raportu.|  
+|**Nazwa kolekcji**|Z listy rozwijanej wybierz kolekcję, która ma być używana w tym raporcie.|  
+|**Typ urządzenia**|Z listy rozwijanej wybierz typ komputera, dla którego chcesz utworzyć raport. Prawidłowe wartości to **wszystkie** (komputerów stacjonarnych i przenośnych) **pulpitu** (tylko komputerów stacjonarnych), i **Laptop** (tylko w przypadku komputerów przenośnych).|  
 
-#### <a name="hidden-report-parameters"></a>숨겨진 보고서 매개 변수  
- 이 보고서에는 설정할 수 있는 숨겨진 매개 변수가 없습니다.  
+#### <a name="hidden-report-parameters"></a>Ukryte parametry raportu  
+ Ten raport nie ma ukrytych parametrów, które można ustawić.  
 
-#### <a name="report-links"></a>보고서 링크  
- 이 보고서에는 선택한 항목에 대한 추가 정보를 제공하는 다음 보고서에 대한 링크가 들어 있습니다.  
+#### <a name="report-links"></a>Linki do raportów  
+ Jeśli nie określono wartości parametru **Data zakończenia (opcjonalnie)** , ten raport zawiera link do następującego raportu, który zawiera dalsze informacje.  
 
-|보고서 이름|세부 정보|  
+|Nazwa raportu|Szczegóły|  
 |-----------------|-------------|  
-|**컴퓨터 세부 정보**|선택한 컴퓨터에 대한 전원 기능, 전원 설정 및 적용된 전원 계획을 확인하려면 **자세한 정보를 보려면 클릭** 링크를 클릭합니다.|  
+|**Szczegóły aktywności komputera**|Użyj linku **Kliknij, aby uzyskać dodatkowe informacje** , aby wyświetlić listę aktywnych, nieaktywnych i niezgłaszających informacji komputerów dla określonej daty.<br /><br /> Aby uzyskać więcej informacji, zobacz [Computer Activity Details Report](#BKMK_Activity_Details) w tym temacie.|  
 
-###  <a name="a-namebkmkactivitydetailsa-computer-activity-details-report"></a><a name="BKMK_Activity_Details"></a> Computer Activity Details report  
- **컴퓨터 활동 세부 정보** 보고서에는 절전 모드 및 절전 모드 해제 기능이 있는 활성 또는 비활성 컴퓨터의 목록이 표시됩니다. 이 보고서는 [Computer Activity Report](#BKMK_Activity) 에서 호출되며 사이트 관리자가 직접 실행하도록 설계되지 않았습니다.  
+###  <a name="BKMK_Comp_Activity_by_computer"></a> Raport Aktywność komputera według komputera  
+ W raporcie **Aktywność komputera według komputerów** przedstawiony jest wykres następujących aktywności określonego komputera w wybranym dniu:  
 
- 이 보고서를 구성하려면 다음 매개 변수를 사용합니다.  
+-   **Komputer — włączony** : komputer został włączony.  
 
-#### <a name="required-report-parameters"></a>필수 보고서 매개 변수  
- 이 보고서를 실행하려면 다음 매개 변수를 지정해야 합니다.  
+-   **Monitor — włączony** : monitor został włączony.  
 
-|매개 변수 이름|설명|  
-|--------------------|-----------------|  
-|**컬렉션 이름**|드롭다운 목록에서 이 보고서에 사용할 컬렉션을 선택합니다.|  
-|**보고서 날짜**|드롭다운 목록에서 이 보고서에 사용할 날짜를 선택합니다.|  
-|**보고서 시간**|드롭다운 목록에서 이 보고서를 실행할 지정된 날짜에서 한 시간을 선택합니다. 유효한 값은 **오전 12시** 에서 **오후 11시**사이입니다.|  
-|**컴퓨터 상태**|드롭다운 목록에서 이 보고서를 실행할 컴퓨터 상태를 선택합니다. 유효한 값은 **모두**(켜져 있거나 꺼져 있는 컴퓨터), **켜기**(켜져 있는 컴퓨터) 및 **끄기**(꺼져 있거나, 절전 모드 또는 최대 절전 모드에 있는 컴퓨터)입니다. 이러한 값은 선택한 보고 기간에 대해서만 반환됩니다.|  
-|**장치 유형**|드롭다운 목록에서 보고서를 원하는 컴퓨터 종류를 선택합니다. 유효한 값은 **모두**(데스크톱 및 휴대용 컴퓨터), **데스크톱**(데스크톱 컴퓨터만) 및 **랩톱**(휴대용 컴퓨터만)입니다. 이러한 값은 선택한 보고 기간에 대해서만 반환됩니다.|  
-|**절전 모드 지원**|드롭다운 목록에서 보고서에 절전 모드가 지원되는 컴퓨터를 표시하려면 선택합니다. 유효한 값은 **모두**(두 컴퓨터가 모두 절전 모드로 전환할 수 있거나 둘 다 전환할 수 없음), **아니요**(절전 모드로 전환할 수 없는 컴퓨터) 및 **예**(절전 모드로 전환할 수 있는 컴퓨터)입니다.|  
-|**절전 모드에서 절전 모드 해제 지원**|드롭다운 목록에서 보고서에 절전 모드에서 절전 모드 해제가 지원되는 컴퓨터를 표시하려면 선택합니다. 유효한 값은 **모두**(두 컴퓨터가 모두 절전 모드에서 해제할 수 있거나 둘 다 해제할 수 없음), **아니요**(절전 모드에서 해제할 수 없는 컴퓨터) 및 **예**(절전 모드에서 해제할 수 있는 컴퓨터)입니다.|  
-|**전원 계획**|드롭다운 목록에서 보고서에 표시하려는 전원 계획 유형을 선택합니다. 유효한 값은 **모두**(전원 관리 계획이 적용되지 않은 컴퓨터, 전원 관리 계획이 적용된 컴퓨터, 전원 관리 계획에서 제외된 컴퓨터), **지정되지 않음**(전원 관리 계획이 적용되지 않은 컴퓨터), **정의됨**(전원 관리 계획이 적용된 컴퓨터) 및 **제외됨**(전원 관리에서 제외된 컴퓨터)입니다.|  
-|**운영 체제**|드롭다운 목록에서 보고서에 표시하려는 컴퓨터 운영 체제를 선택하거나 **모두** 를 선택하여 모든 운영 체제를 표시합니다.|  
+-   **Użytkownik — aktywny** : wykryto aktywność, której źródłem jest mysz lub klawiatura komputera albo połączenie pulpitu zdalnego z komputerem.  
 
-#### <a name="hidden-report-parameters"></a>숨겨진 보고서 매개 변수  
- 이 보고서에는 설정할 수 있는 숨겨진 매개 변수가 없습니다.  
-
-#### <a name="report-links"></a>보고서 링크  
- 이 보고서에는 선택한 항목에 대한 추가 정보를 제공하는 다음 보고서에 대한 링크가 들어 있습니다.  
-
-|보고서 이름|세부 정보|  
-|-----------------|-------------|  
-|**컴퓨터별 컴퓨터 활동**|컴퓨터 이름을 클릭하여 선택한 보고 기간 동안 해당 컴퓨터에 대한 특정 작업을 확인합니다. 이러한 작업에는 **컴퓨터 켜기**(컴퓨터를 켰는지 여부), **모니터 켜기**(모니터를 켰는지 여부) 및 **사용자 활성**(컴퓨터의 마우스, 키보드 또는 원격 데스크톱 연결에서 작업이 검색되었는지 여부)이 포함됩니다.<br /><br /> 자세한 내용은 이 항목의 [Computer Activity by Computer Report](#BKMK_Comp_Activity_by_computer) 를 참조하십시오.|  
-
-###  <a name="a-namebkmkcomputerdetailsa-computer-details-report"></a><a name="BKMK_Computer_Details"></a> 컴퓨터 세부 정보 보고서  
- **컴퓨터 세부 정보** 보고서에는 지정한 컴퓨터에 적용되는 전원 기능, 전원 설정 및 전원 관리 옵션에 대한 세부 정보가 표시됩니다. 이 보고서는 **컴퓨터별 컴퓨터 활동** 보고서, **전원 계획이 여러 개인 컴퓨터** 보고서, **전원 기능** 보고서 및 **전원 설정 세부 정보** 보고서에서 호출됩니다. 사이트 관리자가 직접 실행하도록 설계되지 않았습니다.  
-
-#### <a name="required-report-parameters"></a>필수 보고서 매개 변수  
- 이 보고서를 실행하려면 다음 매개 변수를 지정해야 합니다.  
-
-|매개 변수 이름|설명|  
-|--------------------|-----------------|  
-|**컴퓨터 이름**|보고서를 원하는 컴퓨터 이름을 입력합니다.|  
-|**전원 모드**|드롭다운 목록에서 보고서 결과에 표시하려는 전원 설정의 유형을 선택합니다. 컴퓨터가 전원에 연결된 경우에 대해 구성된 전원 설정을 보려면 **전원 사용** 을 선택하고 컴퓨터가 배터리 전원으로 실행 중인 경우에 대해 구성된 전원 설정을 보려면 **배터리 사용** 을 선택합니다.|  
-
-#### <a name="hidden-report-parameters"></a>숨겨진 보고서 매개 변수  
- 이 보고서에는 설정할 수 있는 숨겨진 매개 변수가 없습니다.  
-
-#### <a name="report-links"></a>보고서 링크  
- 이 보고서는 다른 전원 관리 보고서에 연결되지 않습니다.  
-
-###  <a name="a-namebkmknotreportinga-computer-not-reporting-details-report"></a><a name="BKMK_Not_Reporting"></a> 컴퓨터가 세부 정보를 보고하지 않음 보고서  
- **컴퓨터가 세부 정보를 보고하지 않음** 보고서는 지정된 날짜와 시간에 전원 활동을 보고하지 않은 지정된 컬렉션의 컴퓨터 목록을 표시합니다. 이 보고서는 **Computer Activity Report** 에서 호출되며 사이트 관리자가 직접 실행하도록 설계되지 않았습니다.  
+ Ten raport może zostać uruchomiony niezależnie lub wywołany przez raport **Szczegóły aktywności komputera** .  
 
 > [!NOTE]  
->  컴퓨터는 하드웨어 인벤토리 일정의 일부로 전원 관리 정보를 보고합니다. 컴퓨터가 보고하지 않는다고 간주하기 전에 먼저 하드웨어 인벤토리를 보고했는지 확인합니다.  
+>  Informacje o aktywności komputera są zbierane z komputerów klienckich podczas spisu sprzętu. Zależnie od godziny, o której uruchamiany jest spis sprzętu, mogą być zbierane informacje o aktywności dotyczące zastosowanego szczytowego planu zasilania lub planu zasilania bez szczytów.  
 
- 이 보고서를 구성하려면 다음 매개 변수를 사용합니다.  
+ Skonfiguruj ten raport przy użyciu następujących parametrów.  
 
-#### <a name="required-report-parameters"></a>필수 보고서 매개 변수  
- 이 보고서를 실행하려면 다음 매개 변수를 지정해야 합니다.  
+#### <a name="required-report-parameters"></a>Wymagane parametry raportu  
+ Aby uruchomić ten raport, należy określić następujące parametry.  
 
-|매개 변수 이름|설명|  
+|Nazwa parametru|Opis|  
 |--------------------|-----------------|  
-|**컬렉션 이름**|드롭다운 목록에서 이 보고서에 사용할 컬렉션을 선택합니다.|  
-|**보고서 날짜**|드롭다운 목록에서 이 보고서에 대한 날짜를 선택합니다.|  
-|**보고서 시간**|드롭다운 목록에서 이 보고서를 실행할 지정된 날짜에서 한 시간을 선택합니다. 유효한 값은 **오전 12시** 에서 **오후 11시**사이입니다.|  
-|**장치 유형**|드롭다운 목록에서 보고서를 원하는 컴퓨터 종류를 선택합니다. 유효한 값은 **모두**(데스크톱 및 휴대용 컴퓨터), **데스크톱**(데스크톱 컴퓨터만) 및 **랩톱**(휴대용 컴퓨터만)입니다. 이러한 값은 선택한 보고 기간에 대해서만 반환됩니다.|  
+|**Data raportu**|Z listy rozwijanej wybierz datę dla tego raportu.|  
+|**Nazwa komputera**|Wprowadź nazwę komputera, dla którego chcesz utworzyć raport.|  
 
-#### <a name="hidden-report-parameters"></a>숨겨진 보고서 매개 변수  
- 이 보고서에는 설정할 수 있는 숨겨진 매개 변수가 없습니다.  
+#### <a name="hidden-report-parameters"></a>Ukryte parametry raportu  
+ Ten raport nie ma ukrytych parametrów, które można ustawić.  
 
-#### <a name="report-links"></a>보고서 링크  
- 이 보고서는 다른 전원 관리 보고서에 연결되지 않습니다.  
+#### <a name="report-links"></a>Linki do raportów  
+ Ten raport zawiera linki do następującego raportu, który zapewnia dodatkowe informacje na temat wybranej pozycji.  
 
-###  <a name="a-namebkmkexcludeda-computers-excluded"></a><a name="BKMK_Excluded"></a> 제외된 컴퓨터  
- **제외된 컴퓨터** 보고서는 Configuration Manager 전원 관리에서 제외된 지정된 컬렉션의 컴퓨터 목록을 표시합니다.  
-
- 이 보고서를 구성하려면 다음 매개 변수를 사용합니다.  
-
-#### <a name="required-report-parameters"></a>필수 보고서 매개 변수  
- 이 보고서를 실행하려면 다음 매개 변수를 지정해야 합니다.  
-
-|매개 변수 이름|설명|  
-|--------------------|-----------------|  
-|**수집**|드롭다운 목록에서 이 보고서에 대한 컬렉션을 선택합니다.|  
-|**이유**|드롭다운 목록에서 컴퓨터가 전원 관리에서 제외된 이유를 선택합니다. **모두**(제외된 모든 컴퓨터), **관리자에 의해 제외됨**(관리자가 제외한 컴퓨터만) 및 **사용자에 의해 제외됨**(소프트웨어 센터의 사용자가 제외한 컴퓨터만)입니다.|  
-
-#### <a name="hidden-report-parameters"></a>숨겨진 보고서 매개 변수  
- 이 보고서에는 설정할 수 있는 숨겨진 매개 변수가 없습니다.  
-
-#### <a name="report-links"></a>보고서 링크  
- 이 보고서에는 선택한 항목에 대한 추가 정보를 제공하는 다음 보고서에 대한 링크가 들어 있습니다.  
-
-|보고서 이름|세부 정보|  
+|Nazwa raportu|Szczegóły|  
 |-----------------|-------------|  
-|**전원 컴퓨터 세부 정보**|선택한 컴퓨터에 대한 전원 기능, 전원 설정 및 적용된 전원 계획을 확인하려면 컴퓨터 이름을 클릭합니다.<br /><br /> 자세한 내용은 이 항목의 [Computer Details Report](#BKMK_Computer_Details) 를 참조하십시오.|  
+|**Szczegóły komputera**|Użyj linku **Kliknij, aby uzyskać dodatkowe informacje** , aby wyświetlić wszystkie możliwości zasilania, ustawienia zasilania i zastosowane plany zasilania dla wybranego komputera.|  
 
-###  <a name="a-namebkmkmultiplea-computers-with-multiple-power-plans"></a><a name="BKMK_Multiple"></a> 전원 계획이 여러 개인 컴퓨터  
- **전원 계획이 여러 개인 컴퓨터** 보고서는 각각 다른 전원 계획을 적용하는 여러 컬렉션의 멤버인 컴퓨터 목록을 표시합니다. 잠재적으로 충돌하는 전원 설정이 있는 각 컴퓨터의 경우 보고서에 컴퓨터 이름과 해당 컴퓨터가 멤버인 각 컬렉션에 적용되고 있는 전원 계획이 표시됩니다.  
+###  <a name="BKMK_Activity_Details"></a> Computer Activity Details report  
+ W raporcie **Szczegóły aktywności komputera** wyświetlana jest lista aktywnych i nieaktywnych komputerów oraz możliwości ich usypiania i budzenia. Ten raport jest wywoływany przez [Computer Activity Report](#BKMK_Activity) i nie jest przeznaczony do uruchamiania bezpośrednio przez administratora lokacji.  
+
+ Skonfiguruj ten raport przy użyciu następujących parametrów.  
+
+#### <a name="required-report-parameters"></a>Wymagane parametry raportu  
+ Aby uruchomić ten raport, należy określić następujące parametry.  
+
+|Nazwa parametru|Opis|  
+|--------------------|-----------------|  
+|**Nazwa kolekcji**|Z listy rozwijanej wybierz kolekcję, która ma być używana w tym raporcie.|  
+|**Data raportu**|Z listy rozwijanej wybierz datę dla tego raportu.|  
+|**Godzina raportu**|Z listy rozwijanej wybierz godzinę w określonym dniu, o której ten raport ma zostać uruchomiony. Prawidłowe wartości należą do zakresu od **00:00** do **23:00**.|  
+|**Stan komputera**|Z listy rozwijanej wybierz stan komputera, dla którego ten raport ma zostać uruchomiony. Prawidłowe wartości to **wszystkie** (komputerów, które były włączone lub wyłączone), **na** (komputerów, które zostały włączone), i **poza** (wyłączone w trybie uśpienia, komputery, które były włączone lub w hibernacji). Te wartości są zwracane tylko dla wybranego okresu raportowania.|  
+|**Typ urządzenia**|Z listy rozwijanej wybierz typ komputera, dla którego chcesz utworzyć raport. Prawidłowe wartości to **wszystkie** (komputerów stacjonarnych i przenośnych) **pulpitu** (tylko komputerów stacjonarnych), i **Laptop** (tylko w przypadku komputerów przenośnych). Te wartości są zwracane tylko dla wybranego okresu raportowania.|  
+|**Możliwość uśpienia**|Z listy rozwijanej wybierz odpowiednią opcję, jeśli chcesz, aby w raporcie były wyświetlane komputery z możliwością uśpienia. Prawidłowe wartości to **wszystkie** (zarówno komputery z możliwością i bez możliwości uśpienia), **nr** (komputerów, które mogą przejść w stan uśpienia), i **tak** (komputery, które są w stanie uśpienia).|  
+|**Możliwość wybudzenia z uśpienia**|Z listy rozwijanej wybierz odpowiednią opcję, jeśli chcesz, aby w raporcie były wyświetlane komputery z możliwością wybudzenia z uśpienia. Prawidłowe wartości to **wszystkie** (zarówno komputery z możliwością i bez możliwości wybudzenia z uśpienia), **nr** (komputerów będących bez możliwości wybudzenia z uśpienia) i **tak** (komputery z możliwością wybudzenia z uśpienia).|  
+|**Plan zasilania**|Z listy rozwijanej wybierz typy planów zasilania, które mają być wyświetlane w raporcie. Prawidłowe wartości to **wszystkie** (energii komputery, które nie mają zastosowane plany zarządzania, komputerów, na których zastosowano plan zarządzania energią; komputery wykluczone z zarządzania energią), **nie określono** (komputery, których nie zastosowano plan zarządzania energią), **zdefiniowane** (komputery, których zastosowano plan zarządzania energią), i **wykluczone** (komputery, które zostały wykluczone z zarządzania energią).|  
+|**System operacyjny**|Z listy rozwijanej wybierz systemy operacyjne komputerów, które mają być wyświetlane w raporcie, lub wybierz pozycję **Wszystkie** w celu wyświetlenia wszystkich systemów operacyjnych.|  
+
+#### <a name="hidden-report-parameters"></a>Ukryte parametry raportu  
+ Ten raport nie ma ukrytych parametrów, które można ustawić.  
+
+#### <a name="report-links"></a>Linki do raportów  
+ Ten raport zawiera linki do następującego raportu, który zapewnia dodatkowe informacje na temat wybranej pozycji.  
+
+|Nazwa raportu|Szczegóły|  
+|-----------------|-------------|  
+|**Aktywność komputera według komputerów**|Kliknij nazwę komputera, aby zobaczyć określonego działania dla tego komputera za pośrednictwem wybranego okresu raportowania. Działania te obejmują **komputera na** (komputer został włączony?), **monitorowania na** (monitor został włączony?), i **aktywnej użytkownika** (Wykryto aktywność komputera myszy, klawiatury lub połączeń usług pulpitu zdalnego).<br /><br /> Aby uzyskać więcej informacji, zobacz [Computer Activity by Computer Report](#BKMK_Comp_Activity_by_computer) w tym temacie.|  
+
+###  <a name="BKMK_Computer_Details"></a> Raport Szczegóły komputera  
+ Raport **Szczegóły komputera** przedstawia szczegółowe informacje na temat możliwości zasilania, ustawień zasilania i planów zasilania zastosowanych na określonym komputerze. Ten raport jest wywoływany przez raport **Aktywność komputera według komputerów** , raport **Komputery z wieloma planami zasilania** , raport **Możliwości zasilania** i raport **Szczegóły ustawień zasilania** . Ten raport nie jest przeznaczony do uruchamiania bezpośrednio przez administratora lokacji.  
+
+#### <a name="required-report-parameters"></a>Wymagane parametry raportu  
+ Aby uruchomić ten raport, należy określić następujące parametry.  
+
+|Nazwa parametru|Opis|  
+|--------------------|-----------------|  
+|**Nazwa komputera**|Wprowadź nazwę komputera, dla którego chcesz utworzyć raport.|  
+|**Tryb zasilania**|Z listy rozwijanej wybierz typ ustawień zasilania, które mają być wyświetlane w raporcie. Wybierz pozycję **Podłączony** , aby wyświetlić ustawienia zasilania skonfigurowane dla sytuacji, w której komputer jest podłączony, i pozycję **Zasilany z baterii** , aby wyświetlić ustawienia zasilania skonfigurowane dla komputera zasilanego z baterii.|  
+
+#### <a name="hidden-report-parameters"></a>Ukryte parametry raportu  
+ Ten raport nie ma ukrytych parametrów, które można ustawić.  
+
+#### <a name="report-links"></a>Linki do raportów  
+ Ten raport nie zawiera linków do innych raportów zarządzania energią.  
+
+###  <a name="BKMK_Not_Reporting"></a> Raport Szczegóły komputerów bez zgłoszeń  
+ Raport **Szczegóły komputerów bez zgłoszeń** przedstawia listę komputerów należących do określonej kolekcji, dla których nie zgłoszono żadnej aktywności dotyczącej zasilania w określonym dniu i godzinie. Ten raport jest wywoływany przez **Computer Activity Report** i nie jest przeznaczony do uruchamiania bezpośrednio przez administratora lokacji.  
+
+> [!NOTE]  
+>  Komputery zgłaszają informacje dotyczące zarządzania energią w ramach harmonogramu spisu sprzętu. Przed uznaniem komputera za niezgłaszający należy upewnić się, że zgłasza on spis sprzętu.  
+
+ Skonfiguruj ten raport przy użyciu następujących parametrów.  
+
+#### <a name="required-report-parameters"></a>Wymagane parametry raportu  
+ Aby uruchomić ten raport, należy określić następujące parametry.  
+
+|Nazwa parametru|Opis|  
+|--------------------|-----------------|  
+|**Nazwa kolekcji**|Z listy rozwijanej wybierz kolekcję, która ma być używana w tym raporcie.|  
+|**Data raportu**|Z listy rozwijanej wybierz datę dla tego raportu.|  
+|**Godzina raportu**|Z listy rozwijanej wybierz godzinę w określonym dniu, o której ten raport ma zostać uruchomiony. Prawidłowe wartości należą do zakresu od **00:00** do **23:00**.|  
+|**Typ urządzenia**|Z listy rozwijanej wybierz typ komputera, dla którego chcesz utworzyć raport. Prawidłowe wartości to **wszystkie** (komputerów stacjonarnych i przenośnych) **pulpitu** (tylko komputerów stacjonarnych), i **Laptop** (tylko w przypadku komputerów przenośnych). Te wartości są zwracane tylko dla wybranego okresu raportowania.|  
+
+#### <a name="hidden-report-parameters"></a>Ukryte parametry raportu  
+ Ten raport nie ma ukrytych parametrów, które można ustawić.  
+
+#### <a name="report-links"></a>Linki do raportów  
+ Ten raport nie zawiera linków do innych raportów zarządzania energią.  
+
+###  <a name="BKMK_Excluded"></a> Wykluczone komputery  
+ **Wykluczone komputery** raport wyświetla listę komputerów w określonej kolekcji, które zostały wykluczone z zarządzania energią w programie Configuration Manager.  
+
+ Skonfiguruj ten raport przy użyciu następujących parametrów.  
+
+#### <a name="required-report-parameters"></a>Wymagane parametry raportu  
+ Aby uruchomić ten raport, należy określić następujące parametry.  
+
+|Nazwa parametru|Opis|  
+|--------------------|-----------------|  
+|**Kolekcja**|Z listy rozwijanej wybierz kolekcję dla tego raportu.|  
+|**Przyczyna**|Z listy rozwijanej wybierz przyczynę wykluczenia komputerów z zarządzania energią. Można wyświetlić **wszystkie** (wszystkie wykluczone komputery), **wykluczone przez administratora** (tylko komputery wykluczone przez użytkownika administracyjnego), i **wykluczone przez użytkownika** (tylko komputery wykluczone przez użytkownika w programie Software Center).|  
+
+#### <a name="hidden-report-parameters"></a>Ukryte parametry raportu  
+ Ten raport nie ma ukrytych parametrów, które można ustawić.  
+
+#### <a name="report-links"></a>Linki do raportów  
+ Ten raport zawiera linki do następującego raportu, który zapewnia dodatkowe informacje na temat wybranej pozycji.  
+
+|Nazwa raportu|Szczegóły|  
+|-----------------|-------------|  
+|**Szczegóły zasilania komputera**|Kliknij nazwę komputera, aby wyświetlić wszystkie możliwości zasilania, ustawienia zasilania i zastosowane plany zasilania dla wybranego komputera.<br /><br /> Aby uzyskać więcej informacji, zobacz [Computer Details Report](#BKMK_Computer_Details) w tym temacie.|  
+
+###  <a name="BKMK_Multiple"></a> Komputery z wieloma planami zasilania  
+ Raport **Komputery z wieloma planami zasilania** wyświetla listę komputerów należących do wielu kolekcji, w których stosowane są różne plany zasilania. Dla każdego komputera mającego ustawienia zasilania, które mogą powodować konflikt, w tym raporcie wyświetlana jest nazwa komputera i zastosowany plan zasilania dla każdej kolekcji, do której należy komputer.  
 
 > [!IMPORTANT]  
->  한 컴퓨터가 여러 컬렉션의 구성원이고 각 컬렉션에 서로 다른 전원 계획이 있는 경우 가장 덜 제한적인 전원 계획이 적용됩니다.  
+>  Jeśli komputer jest członkiem wielu kolekcji, gdzie każda kolekcja ma różne plany zasilania, najmniej restrykcyjny plan zasilania zostaną zastosowane.  
 >   
->  한 컴퓨터가 여러 컬렉션의 구성원이고 각 컬렉션에 서로 다른 절전 모드 해제 시간이 있는 경우 자정에 가장 가까운 시간이 사용됩니다.  
+>  Jeśli komputer jest członkiem wielu kolekcji, gdzie każda kolekcja ma godzin wznowienia różnych, będzie można użyć godzina najbliższa północy.  
 
- 이 보고서를 구성하려면 다음 매개 변수를 사용합니다.  
+ Skonfiguruj ten raport przy użyciu następujących parametrów.  
 
-#### <a name="required-report-parameters"></a>필수 보고서 매개 변수  
- 이 보고서를 실행하려면 다음 매개 변수를 지정해야 합니다.  
+#### <a name="required-report-parameters"></a>Wymagane parametry raportu  
+ Aby uruchomić ten raport, należy określić następujące parametry.  
 
-|매개 변수 이름|설명|  
+|Nazwa parametru|Opis|  
 |--------------------|-----------------|  
-|**컬렉션 이름**|드롭다운 목록에서 이 보고서에 대한 컬렉션을 선택합니다.|  
+|**Nazwa kolekcji**|Z listy rozwijanej wybierz kolekcję dla tego raportu.|  
 
-#### <a name="hidden-report-parameters"></a>숨겨진 보고서 매개 변수  
- 이 보고서에는 설정할 수 있는 숨겨진 매개 변수가 없습니다.  
+#### <a name="hidden-report-parameters"></a>Ukryte parametry raportu  
+ Ten raport nie ma ukrytych parametrów, które można ustawić.  
 
-#### <a name="report-links"></a>보고서 링크  
- 이 보고서에는 선택한 항목에 대한 추가 정보를 제공하는 다음 보고서에 대한 링크가 들어 있습니다.  
+#### <a name="report-links"></a>Linki do raportów  
+ Ten raport zawiera linki do następującego raportu, który zapewnia dodatkowe informacje na temat wybranej pozycji.  
 
-|보고서 이름|세부 정보|  
+|Nazwa raportu|Szczegóły|  
 |-----------------|-------------|  
-|**전원 컴퓨터 세부 정보**|선택한 컴퓨터에 대한 전원 기능, 전원 설정 및 적용된 전원 계획을 확인하려면 컴퓨터 이름을 클릭합니다.<br /><br /> 자세한 내용은 이 항목의 [Computer Details Report](#BKMK_Computer_Details) 를 참조하십시오.|  
+|**Szczegóły zasilania komputera**|Kliknij nazwę komputera, aby wyświetlić wszystkie możliwości zasilania, ustawienia zasilania i zastosowane plany zasilania dla wybranego komputera.<br /><br /> Aby uzyskać więcej informacji, zobacz [Computer Details Report](#BKMK_Computer_Details) w tym temacie.|  
 
-###  <a name="a-namebkmkconsumptiona-energy-consumption-report"></a><a name="BKMK_Consumption"></a> 에너지 소비량 보고서  
- **에너지 소비량** 보고서에는 다음 정보가 표시됩니다.  
+###  <a name="BKMK_Consumption"></a> Raport Zużycie energii  
+ Raport **Zużycie energii** zawiera następujące informacje:  
 
--   지정된 기간 동안 지정된 컬렉션에 있는 컴퓨터의 총 월별 전력 소비량(kWh)를 보여 주는 그래프  
+-   Wykres przedstawiający całkowite miesięczne zużycie energii przez komputery w kilowatach na godzinę (kWh) w określonej kolekcji i w określonym okresie.  
 
--   지정된 기간 동안 지정된 컬렉션에 있는 각 컴퓨터의 평균 전력 소비량(kWh)을 보여 주는 그래프  
+-   Wykres przedstawiający średnie miesięczne zużycie energii w kilowatach na godzinę (kWh) przez poszczególne komputery w określonej kolekcji i w określonym okresie.  
 
--   지정된 기간 동안 지정된 컬렉션에 있는 컴퓨터의 총 월별 전력 소비량(kWh) 및 평균 전력 소비량을 보여 주는 표  
+-   Tabelę przedstawiającą całkowite miesięczne zużycie energii w kilowatach na godzinę (kWh) oraz średnie zużycie energii przez komputery w określonej kolekcji i w określonym okresie.  
 
- 이 정보는 환경의 전력 소비 추세를 파악하는 데 사용할 수 있습니다. 선택한 컬렉션의 컴퓨터에 전원 계획을 적용한 후에는 컴퓨터의 전력 소비량이 감소해야 합니다.  
+ Te informacje mogą ułatwić zrozumienie trendów zużycia energii w Twoim środowisku. Po zastosowaniu planu zasilania do komputerów w wybranej kolekcji zużycie energii przez komputery powinno ulec zmniejszeniu.  
 
 > [!NOTE]  
->  전원 계획을 적용한 후 컬렉션에 멤버를 추가하거나 제거하면 **에너지 소비량** 보고서에 표시되는 결과에 영향을 주게 되므로 모니터링 및 계획 단계와 적용 단계의 결과를 비교하기가 더 어려울 수도 있습니다.  
+>  Dodanie lub usunięcie elementów członkowskich z kolekcji po zastosowaniu planu zasilania będzie mieć wpływ na wyniki wyświetlane w raporcie **Zużycie energii** i może utrudnić porównanie wyników z fazy monitorowania i planowania oraz fazy wymuszania.  
 
- 이 보고서를 구성하려면 다음 매개 변수를 사용합니다.  
+ Skonfiguruj ten raport przy użyciu następujących parametrów.  
 
-#### <a name="required-report-parameters"></a>필수 보고서 매개 변수  
- 이 보고서를 실행하려면 다음 매개 변수를 지정해야 합니다.  
+#### <a name="required-report-parameters"></a>Wymagane parametry raportu  
+ Aby uruchomić ten raport, należy określić następujące parametry.  
 
-|매개 변수 이름|설명|  
+|Nazwa parametru|Opis|  
 |--------------------|-----------------|  
-|**시작 날짜**|드롭다운 목록에서 이 보고서에 대한 시작 날짜를 선택합니다.|  
-|**종료 날짜**|드롭다운 목록에서 이 보고서에 대한 종료 날짜를 선택합니다.|  
-|**컬렉션 이름**|드롭다운 목록에서 이 보고서에 대한 컬렉션을 선택합니다.|  
-|**장치 유형**|드롭다운 목록에서 보고서를 원하는 컴퓨터 종류를 선택합니다. 유효한 값은 **모두**(데스크톱 및 휴대용 컴퓨터), **데스크톱**(데스크톱 컴퓨터만) 및 **랩톱**(휴대용 컴퓨터만)입니다. 이러한 값은 선택한 보고 기간에 대해서만 반환됩니다.|  
+|**Data rozpoczęcia**|Z listy rozwijanej wybierz datę rozpoczęcia dla tego raportu.|  
+|**Data zakończenia**|Z listy rozwijanej wybierz datę zakończenia dla tego raportu.|  
+|**Nazwa kolekcji**|Z listy rozwijanej wybierz kolekcję dla tego raportu.|  
+|**Typ urządzenia**|Z listy rozwijanej wybierz typ komputera, dla którego chcesz utworzyć raport. Prawidłowe wartości to **wszystkie** (komputerów stacjonarnych i przenośnych) **pulpitu** (tylko komputerów stacjonarnych), i **Laptop** (tylko w przypadku komputerów przenośnych). Te wartości są zwracane tylko dla wybranego okresu raportowania.|  
 
-#### <a name="hidden-report-parameters"></a>숨겨진 보고서 매개 변수  
- 다음 숨겨진 매개 변수는 이 보고서의 동작을 변경하도록 선택적으로 지정할 수 있습니다.  
+#### <a name="hidden-report-parameters"></a>Ukryte parametry raportu  
+ Opcjonalnie można określić następujące ukryte parametry w celu zmiany zachowania tego raportu.  
 
-|매개 변수 이름|설명|  
+|Nazwa parametru|Opis|  
 |--------------------|-----------------|  
-|**데스크톱 컴퓨터 켜짐**|켜졌을 때 데스크톱 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.07** kW입니다.|  
-|**랩톱 컴퓨터 켜짐**|켜졌을 때 휴대용 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.02** kW입니다.|  
-|**데스크톱 컴퓨터 절전 모드**|절전 모드로 전환된 데스크톱 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.003** kW입니다.|  
-|**랩톱 컴퓨터 절전 모드**|절전 모드로 전환된 휴대용 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.001** kW입니다.|  
-|**데스크톱 컴퓨터 꺼짐**|꺼졌을 때 데스크톱 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0** kW입니다.|  
-|**랩톱 컴퓨터 꺼짐**|꺼졌을 때 휴대용 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0** kW입니다.|  
-|**데스크톱 모니터 켜짐**|켜졌을 때 데스크톱 컴퓨터 모니터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.028** kW입니다.|  
-|**랩톱 모니터 켜짐**|켜졌을 때 휴대용 컴퓨터 모니터의 전력 소비량을 지정합니다. 기본값은 시간당 **0** kW입니다.|  
+|**Komputer stacjonarny jest włączony**|Określ zużycie energii przez włączony komputer stacjonarny. Domyślna wartość to **0,07** kW na godzinę.|  
+|**Komputer przenośny jest włączony**|Określ zużycie energii przez włączony komputer przenośny. Domyślna wartość to **0,02** kW na godzinę.|  
+|**Komputer stacjonarny jest uśpiony**|Określ zużycie energii przez komputer stacjonarny wprowadzony w stan uśpienia. Domyślna wartość to **0,003** kW na godzinę.|  
+|**Komputer przenośny jest uśpiony**|Określ zużycie energii przez komputer przenośny wprowadzony w stan uśpienia. Domyślna wartość to **0,001** kW na godzinę.|  
+|**Komputer stacjonarny jest wyłączony**|Określ zużycie energii przez wyłączony komputer stacjonarny. Domyślna wartość to **0** kW na godzinę.|  
+|**Komputer przenośny jest wyłączony**|Określ zużycie energii przez wyłączony komputer przenośny. Domyślna wartość to **0** kW na godzinę.|  
+|**Monitor komputera stacjonarnego jest włączony**|Określ zużycie energii przez włączony monitor komputera stacjonarnego. Domyślna wartość to **0,028** kW na godzinę.|  
+|**Monitor komputera przenośnego jest włączony**|Określ zużycie energii przez włączony monitor komputera przenośnego. Domyślna wartość to **0** kW na godzinę.|  
 
-#### <a name="report-links"></a>보고서 링크  
- 이 보고서는 다른 전원 관리 보고서에 연결되지 않습니다.  
+#### <a name="report-links"></a>Linki do raportów  
+ Ten raport nie zawiera linków do innych raportów zarządzania energią.  
 
-###  <a name="a-namebkmkconsumptionbydaya-energy-consumption-by-day-report"></a><a name="BKMK_Consumption_by_Day"></a> 일별 에너지 소비량 보고서  
- **일별 에너지 소비량** 보고서에는 다음 정보가 표시됩니다.  
+###  <a name="BKMK_Consumption_by_Day"></a> Raport Dzienne zużycie energii  
+ Raport **Dzienne zużycie energii** zawiera następujące informacje:  
 
--   지난 31일 동안 지정된 컬렉션에 있는 컴퓨터의 총 일별 전력 소비량(kWh)을 보여 주는 그래프  
+-   Wykres przedstawiający całkowite dzienne zużycie energii przez komputery w kilowatach na godzinę (kWh) w określonej kolekcji w ciągu ostatnich 31 dni.  
 
--   지난 31일 동안 지정된 컬렉션에 있는 각 컴퓨터의 평균 일별 전력 소비량(kWh)을 보여 주는 그래프  
+-   Wykres przedstawiający średnie dzienne zużycie energii w kilowatach na godzinę (kWh) przez poszczególne komputery w określonej kolekcji w ciągu ostatnich 31 dni.  
 
--   지난 31일 동안 지정된 컬렉션에 있는 컴퓨터의 총 일별 전력 소비량(kWh) 및 평균 일별 전력 소비량을 보여 주는 표  
+-   Tabelę przedstawiającą całkowite dzienne zużycie energii w kilowatach na godzinę (kWh) oraz średnie zużycie energii przez komputery w określonej kolekcji w ciągu ostatnich 31 dni.  
 
- 이 정보는 환경의 전력 소비 추세를 파악하는 데 사용할 수 있습니다. 선택한 컬렉션의 컴퓨터에 전원 계획을 적용한 후에는 컴퓨터의 전력 소비량이 감소해야 합니다.  
+ Te informacje mogą ułatwić zrozumienie trendów zużycia energii w Twoim środowisku. Po zastosowaniu planu zasilania do komputerów w wybranej kolekcji zużycie energii przez komputery powinno ulec zmniejszeniu.  
 
 > [!NOTE]  
->  전원 계획을 적용한 후 컬렉션에 멤버를 추가하거나 제거하면 **에너지 소비량** 보고서에 표시되는 결과에 영향을 주게 되므로 모니터링 및 계획 단계와 적용 단계의 결과를 비교하기가 더 어려울 수도 있습니다.  
+>  Dodanie lub usunięcie elementów członkowskich z kolekcji po zastosowaniu planu zasilania będzie mieć wpływ na wyniki wyświetlane w raporcie **Zużycie energii** i może utrudnić porównanie wyników z fazy monitorowania i planowania oraz fazy wymuszania.  
 
- 이 보고서를 구성하려면 다음 매개 변수를 사용합니다.  
+ Skonfiguruj ten raport przy użyciu następujących parametrów.  
 
-#### <a name="required-report-parameters"></a>필수 보고서 매개 변수  
- 이 보고서를 실행하려면 다음 매개 변수를 지정해야 합니다.  
+#### <a name="required-report-parameters"></a>Wymagane parametry raportu  
+ Aby uruchomić ten raport, należy określić następujące parametry.  
 
-|매개 변수 이름|설명|  
+|Nazwa parametru|Opis|  
 |--------------------|-----------------|  
-|**수집**|드롭다운 목록에서 이 보고서에 대한 컬렉션을 선택합니다.|  
-|**Device Type**|드롭다운 목록에서 보고하려는 컴퓨터 종류를 선택합니다. 유효한 값은 **모두**(데스크톱 및 휴대용 컴퓨터), **데스크톱**(데스크톱 컴퓨터만) 및 **랩톱**(휴대용 컴퓨터만)입니다. 이러한 값은 선택한 보고 기간에 대해서만 반환됩니다.|  
+|**Kolekcja**|Z listy rozwijanej wybierz kolekcję dla tego raportu.|  
+|**Device Type**|Z listy rozwijanej wybierz typ komputera, dla którego chcesz utworzyć raport. Prawidłowe wartości to **wszystkie** (komputerów stacjonarnych i przenośnych) **pulpitu** (tylko komputerów stacjonarnych), i **Laptop** (tylko w przypadku komputerów przenośnych). Te wartości są zwracane tylko dla wybranego okresu raportowania.|  
 
-#### <a name="hidden-report-parameters"></a>숨겨진 보고서 매개 변수  
- 다음 숨겨진 매개 변수는 이 보고서의 동작을 변경하도록 선택적으로 지정할 수 있습니다.  
+#### <a name="hidden-report-parameters"></a>Ukryte parametry raportu  
+ Opcjonalnie można określić następujące ukryte parametry w celu zmiany zachowania tego raportu.  
 
-|매개 변수 이름|설명|  
+|Nazwa parametru|Opis|  
 |--------------------|-----------------|  
-|**데스크톱 컴퓨터 켜짐**|켜졌을 때 데스크톱 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.07** kW입니다.|  
-|**랩톱 컴퓨터 켜짐**|켜졌을 때 휴대용 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.02** kW입니다.|  
-|**데스크톱 컴퓨터 절전 모드**|절전 모드로 전환된 데스크톱 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.003** kW입니다.|  
-|**랩톱 컴퓨터 절전 모드**|절전 모드로 전환된 휴대용 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.001** kW입니다.|  
-|**데스크톱 컴퓨터 꺼짐**|꺼졌을 때 데스크톱 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0** kW입니다.|  
-|**랩톱 컴퓨터 꺼짐**|꺼졌을 때 휴대용 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0** kW입니다.|  
-|**데스크톱 모니터 켜짐**|켜졌을 때 데스크톱 컴퓨터 모니터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.028** kW입니다.|  
-|**랩톱 모니터 켜짐**|켜졌을 때 휴대용 컴퓨터 모니터의 전력 소비량을 지정합니다. 기본값은 시간당 **0** kW입니다.|  
+|**Komputer stacjonarny jest włączony**|Określ zużycie energii przez włączony komputer stacjonarny. Domyślna wartość to **0,07** kW na godzinę.|  
+|**Komputer przenośny jest włączony**|Określ zużycie energii przez włączony komputer przenośny. Domyślna wartość to **0,02** kW na godzinę.|  
+|**Komputer stacjonarny jest uśpiony**|Określ zużycie energii przez komputer stacjonarny wprowadzony w stan uśpienia. Domyślna wartość to **0,003** kW na godzinę.|  
+|**Komputer przenośny jest uśpiony**|Określ zużycie energii przez komputer przenośny wprowadzony w stan uśpienia. Domyślna wartość to **0,001** kW na godzinę.|  
+|**Komputer stacjonarny jest wyłączony**|Określ zużycie energii przez wyłączony komputer stacjonarny. Domyślna wartość to **0** kW na godzinę.|  
+|**Komputer przenośny jest wyłączony**|Określ zużycie energii przez wyłączony komputer przenośny. Domyślna wartość to **0** kW na godzinę.|  
+|**Monitor komputera stacjonarnego jest włączony**|Określ zużycie energii przez włączony monitor komputera stacjonarnego. Domyślna wartość to **0,028** kW na godzinę.|  
+|**Monitor komputera przenośnego jest włączony**|Określ zużycie energii przez włączony monitor komputera przenośnego. Domyślna wartość to **0** kW na godzinę.|  
 
-#### <a name="report-links"></a>보고서 링크  
- 이 보고서는 다른 전원 관리 보고서에 연결되지 않습니다.  
+#### <a name="report-links"></a>Linki do raportów  
+ Ten raport nie zawiera linków do innych raportów zarządzania energią.  
 
-###  <a name="a-namebkmkcosta-energy-cost-report"></a><a name="BKMK_Cost"></a> 에너지 비용 보고서  
- **에너지 비용** 보고서에는 다음 정보가 표시됩니다.  
+###  <a name="BKMK_Cost"></a> Raport Koszt energii  
+ Raport **Koszt energii** zawiera następujące informacje:  
 
--   지정된 기간 동안 지정된 컬렉션의 컴퓨터에 대한 총 월별 전원 비용을 보여 주는 그래프  
+-   Wykres przedstawiający całkowity miesięczny koszt energii zużytej przez komputery w określonej kolekcji i w określonym okresie.  
 
--   지정된 기간 동안 지정된 컬렉션의 각 컴퓨터에 대한 평균 월별 전원 비용을 보여 주는 그래프  
+-   Wykres przedstawiający średni miesięczny koszt energii zużytej przez poszczególne komputery w określonej kolekcji i w określonym okresie.  
 
--   지난 31일 동안 지정된 컬렉션의 컴퓨터에 대한 총 월별 전원 비용 및 평균 월별 전원 비용을 보여 주는 표  
+-   Tabelę przedstawiającą całkowity miesięczny koszt oraz średni miesięczny koszt energii zużytej przez komputery w określonej kolekcji w ciągu ostatnich 31 dni.  
 
- 이 정보는 사용자 환경의 전원 비용 추세를 파악하는 데 사용할 수 있습니다. 선택한 컬렉션의 컴퓨터에 전원 계획을 적용한 후에는 컴퓨터에 대한 전원 비용이 감소해야 합니다.  
+ Te informacje mogą ułatwić zrozumienie trendów kosztów energii w środowisku. Po zastosowaniu planu zasilania do komputerów w wybranej kolekcji koszt energii zużywanej przez komputery powinien ulec zmniejszeniu.  
 
- 이 보고서를 구성하려면 다음 매개 변수를 사용합니다.  
+ Skonfiguruj ten raport przy użyciu następujących parametrów.  
 
-#### <a name="required-report-parameters"></a>필수 보고서 매개 변수  
- 이 보고서를 실행하려면 다음 매개 변수를 지정해야 합니다.  
+#### <a name="required-report-parameters"></a>Wymagane parametry raportu  
+ Aby uruchomić ten raport, należy określić następujące parametry.  
 
-|매개 변수 이름|설명|  
+|Nazwa parametru|Opis|  
 |--------------------|-----------------|  
-|**시작 날짜**|드롭다운 목록에서 이 보고서에 대한 시작 날짜를 선택합니다.|  
-|**종료 날짜**|드롭다운 목록에서 이 보고서에 대한 종료 날짜를 선택합니다.|  
-|**KwH의 비용**|전기의 kWh당 비용을 지정합니다. 기본값은 **0.09**입니다.<br /><br /> 숨겨진 매개 변수 섹션에서 이 보고서에서 사용되는 통화의 단위를 수정할 수 있습니다.|  
-|**컬렉션 이름**|드롭다운 목록에서 이 보고서에 사용할 컬렉션을 선택합니다.|  
-|**장치 유형**|드롭다운 목록에서 보고하려는 컴퓨터 종류를 선택합니다. 유효한 값은 **모두**(데스크톱 및 휴대용 컴퓨터), **데스크톱**(데스크톱 컴퓨터만) 및 **랩톱**(휴대용 컴퓨터만)입니다. 이러한 값은 선택한 보고 기간에 대해서만 반환됩니다.|  
+|**Data rozpoczęcia**|Z listy rozwijanej wybierz datę rozpoczęcia dla tego raportu.|  
+|**Data zakończenia**|Z listy rozwijanej wybierz datę zakończenia dla tego raportu.|  
+|**Koszt kWh**|Określ koszt kWh energii elektrycznej. Wartość domyślna to **0,09**.<br /><br /> Jednostkę waluty używaną w tym raporcie można zmienić w sekcji parametrów ukrytych.|  
+|**Nazwa kolekcji**|Z listy rozwijanej wybierz kolekcję, która ma być używana w tym raporcie.|  
+|**Typ urządzenia**|Z listy rozwijanej wybierz typ komputera, dla którego chcesz utworzyć raport. Prawidłowe wartości to **wszystkie** (komputerów stacjonarnych i przenośnych) **pulpitu** (tylko komputerów stacjonarnych), i **Laptop** (tylko w przypadku komputerów przenośnych). Te wartości są zwracane tylko dla wybranego okresu raportowania.|  
 
-#### <a name="hidden-report-parameters"></a>숨겨진 보고서 매개 변수  
- 다음 숨겨진 매개 변수는 이 보고서의 동작을 변경하도록 선택적으로 지정할 수 있습니다.  
+#### <a name="hidden-report-parameters"></a>Ukryte parametry raportu  
+ Opcjonalnie można określić następujące ukryte parametry w celu zmiany zachowania tego raportu.  
 
-|매개 변수 이름|설명|  
+|Nazwa parametru|Opis|  
 |--------------------|-----------------|  
-|**데스크톱 컴퓨터 켜짐**|켜졌을 때 데스크톱 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.07** kW입니다.|  
-|**랩톱 컴퓨터 켜짐**|켜졌을 때 휴대용 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.02** kW입니다.|  
-|**데스크톱 컴퓨터 절전 모드**|절전 모드로 전환된 데스크톱 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.003** kW입니다.|  
-|**랩톱 컴퓨터 절전 모드**|절전 모드로 전환된 휴대용 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.001** kW입니다.|  
-|**데스크톱 컴퓨터 꺼짐**|꺼졌을 때 데스크톱 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0** kW입니다.|  
-|**랩톱 컴퓨터 꺼짐**|꺼졌을 때 휴대용 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0** kW입니다.|  
-|**데스크톱 모니터 켜짐**|켜졌을 때 데스크톱 컴퓨터 모니터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.028** kW입니다.|  
-|**랩톱 모니터 켜짐**|켜졌을 때 휴대용 컴퓨터 모니터의 전력 소비량을 지정합니다. 기본값은 시간당 **0** kW입니다.|  
-|**통화**|이 보고서에 사용할 통화 레이블을 지정합니다. 기본값은 **USD($)**입니다.|  
+|**Komputer stacjonarny jest włączony**|Określ zużycie energii przez włączony komputer stacjonarny. Domyślna wartość to **0,07** kW na godzinę.|  
+|**Komputer przenośny jest włączony**|Określ zużycie energii przez włączony komputer przenośny. Domyślna wartość to **0,02** kW na godzinę.|  
+|**Komputer stacjonarny jest uśpiony**|Określ zużycie energii przez komputer stacjonarny wprowadzony w stan uśpienia. Domyślna wartość to **0,003** kW na godzinę.|  
+|**Komputer przenośny jest uśpiony**|Określ zużycie energii przez komputer przenośny wprowadzony w stan uśpienia. Domyślna wartość to **0,001** kW na godzinę.|  
+|**Komputer stacjonarny jest wyłączony**|Określ zużycie energii przez wyłączony komputer stacjonarny. Domyślna wartość to **0** kW na godzinę.|  
+|**Komputer przenośny jest wyłączony**|Określ zużycie energii przez wyłączony komputer przenośny. Domyślna wartość to **0** kW na godzinę.|  
+|**Monitor komputera stacjonarnego jest włączony**|Określ zużycie energii przez włączony monitor komputera stacjonarnego. Domyślna wartość to **0,028** kW na godzinę.|  
+|**Monitor komputera przenośnego jest włączony**|Określ zużycie energii przez włączony monitor komputera przenośnego. Domyślna wartość to **0** kW na godzinę.|  
+|**Waluta**|Określ etykietę waluty, która ma być używana w tym raporcie. Wartość domyślna to **USD ($)**.|  
 
-#### <a name="report-links"></a>보고서 링크  
- 이 보고서는 다른 전원 관리 보고서에 연결되지 않습니다.  
+#### <a name="report-links"></a>Linki do raportów  
+ Ten raport nie zawiera linków do innych raportów zarządzania energią.  
 
-###  <a name="a-namebkmkcostbydaya-energy-cost-by-day-report"></a><a name="BKMK_Cost_by_Day"></a> 일별 에너지 비용 보고서  
- **일별 에너지 비용** 보고서에는 다음 정보가 표시됩니다.  
+###  <a name="BKMK_Cost_by_Day"></a> Raport Dzienny koszt energii  
+ Raport **Dzienny koszt energii** zawiera następujące informacje:  
 
--   지난 31일 동안 지정된 컬렉션의 컴퓨터에 대한 총 일별 전원 비용을 보여 주는 그래프  
+-   Wykres przedstawiający całkowity dzienny koszt energii zużytej przez komputery w określonej kolekcji w ciągu ostatnich 31 dni.  
 
--   지난 31일 동안 지정된 컬렉션의 각 컴퓨터에 대한 평균 일별 전원 비용을 보여 주는 그래프  
+-   Wykres przedstawiający średni dzienny koszt energii zużytej przez poszczególne komputery w określonej kolekcji w ciągu ostatnich 31 dni.  
 
--   지난 31일 동안 지정된 컬렉션의 컴퓨터에 대한 총 일별 전원 비용 및 평균 일별 전원 비용을 보여 주는 표  
+-   Tabelę przedstawiającą całkowity dzienny koszt oraz średni dzienny koszt energii zużytej przez komputery w określonej kolekcji w ciągu ostatnich 31 dni.  
 
- 이 정보는 사용자 환경의 전원 비용 추세를 파악하는 데 사용할 수 있습니다. 선택한 컬렉션의 컴퓨터에 전원 계획을 적용한 후에는 컴퓨터에 대한 전원 비용이 감소해야 합니다.  
+ Te informacje mogą ułatwić zrozumienie trendów kosztów energii w środowisku. Po zastosowaniu planu zasilania do komputerów w wybranej kolekcji koszt energii zużywanej przez komputery powinien ulec zmniejszeniu.  
 
- 이 보고서를 구성하려면 다음 매개 변수를 사용합니다.  
+ Skonfiguruj ten raport przy użyciu następujących parametrów.  
 
-#### <a name="required-report-parameters"></a>필수 보고서 매개 변수  
- 이 보고서를 실행하려면 다음 매개 변수를 지정해야 합니다.  
+#### <a name="required-report-parameters"></a>Wymagane parametry raportu  
+ Aby uruchomić ten raport, należy określić następujące parametry.  
 
-|매개 변수 이름|설명|  
+|Nazwa parametru|Opis|  
 |--------------------|-----------------|  
-|**컬렉션 이름**|드롭다운 목록에서 이 보고서에 사용할 컬렉션을 선택합니다.|  
-|**장치 유형**|드롭다운 목록에서 보고하려는 컴퓨터 종류를 선택합니다. 유효한 값은 **모두**(데스크톱 및 휴대용 컴퓨터), **데스크톱**(데스크톱 컴퓨터만) 및 **랩톱**(휴대용 컴퓨터만)입니다. 이러한 값은 선택한 보고 기간에 대해서만 반환됩니다.|  
-|**KwH의 비용**|전기의 kWh당 비용을 지정합니다. 기본값은 **0.09**입니다.<br /><br /> 숨겨진 매개 변수 섹션에서 이 보고서에서 사용되는 통화의 단위를 수정할 수 있습니다.|  
+|**Nazwa kolekcji**|Z listy rozwijanej wybierz kolekcję, która ma być używana w tym raporcie.|  
+|**Typ urządzenia**|Z listy rozwijanej wybierz typ komputera, dla którego chcesz utworzyć raport. Prawidłowe wartości to **wszystkie** (komputerów stacjonarnych i przenośnych) **pulpitu** (tylko komputerów stacjonarnych), i **Laptop** (tylko w przypadku komputerów przenośnych). Te wartości są zwracane tylko dla wybranego okresu raportowania.|  
+|**Koszt kWh**|Określ koszt kWh energii elektrycznej. Wartość domyślna to **0,09**.<br /><br /> Jednostkę waluty używaną w tym raporcie można zmienić w sekcji parametrów ukrytych.|  
 
-#### <a name="hidden-report-parameters"></a>숨겨진 보고서 매개 변수  
- 다음 숨겨진 매개 변수는 이 보고서의 동작을 변경하도록 선택적으로 지정할 수 있습니다.  
+#### <a name="hidden-report-parameters"></a>Ukryte parametry raportu  
+ Opcjonalnie można określić następujące ukryte parametry w celu zmiany zachowania tego raportu.  
 
-|매개 변수 이름|설명|  
+|Nazwa parametru|Opis|  
 |--------------------|-----------------|  
-|**데스크톱 컴퓨터 켜짐**|켜졌을 때 데스크톱 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.07** kW입니다.|  
-|**랩톱 컴퓨터 켜짐**|켜졌을 때 휴대용 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.02** kW입니다.|  
-|**데스크톱 컴퓨터 절전 모드**|절전 모드로 전환된 데스크톱 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.003** kW입니다.|  
-|**랩톱 컴퓨터 절전 모드**|절전 모드로 전환된 휴대용 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.001** kW입니다.|  
-|**데스크톱 컴퓨터 꺼짐**|꺼졌을 때 데스크톱 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0** kW입니다.|  
-|**랩톱 컴퓨터 꺼짐**|꺼졌을 때 휴대용 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0** kW입니다.|  
-|**데스크톱 모니터 켜짐**|켜졌을 때 데스크톱 컴퓨터 모니터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.028** kW입니다.|  
-|**랩톱 모니터 켜짐**|켜졌을 때 휴대용 컴퓨터 모니터의 전력 소비량을 지정합니다. 기본값은 시간당 **0** kW입니다.|  
-|**통화**|이 보고서에 사용할 통화 레이블을 지정합니다. 기본값은 **USD($)**입니다.|  
+|**Komputer stacjonarny jest włączony**|Określ zużycie energii przez włączony komputer stacjonarny. Domyślna wartość to **0,07** kW na godzinę.|  
+|**Komputer przenośny jest włączony**|Określ zużycie energii przez włączony komputer przenośny. Domyślna wartość to **0,02** kW na godzinę.|  
+|**Komputer stacjonarny jest uśpiony**|Określ zużycie energii przez komputer stacjonarny wprowadzony w stan uśpienia. Domyślna wartość to **0,003** kW na godzinę.|  
+|**Komputer przenośny jest uśpiony**|Określ zużycie energii przez komputer przenośny wprowadzony w stan uśpienia. Domyślna wartość to **0,001** kW na godzinę.|  
+|**Komputer stacjonarny jest wyłączony**|Określ zużycie energii przez wyłączony komputer stacjonarny. Domyślna wartość to **0** kW na godzinę.|  
+|**Komputer przenośny jest wyłączony**|Określ zużycie energii przez wyłączony komputer przenośny. Domyślna wartość to **0** kW na godzinę.|  
+|**Monitor komputera stacjonarnego jest włączony**|Określ zużycie energii przez włączony monitor komputera stacjonarnego. Domyślna wartość to **0,028** kW na godzinę.|  
+|**Monitor komputera przenośnego jest włączony**|Określ zużycie energii przez włączony monitor komputera przenośnego. Domyślna wartość to **0** kW na godzinę.|  
+|**Waluta**|Określ etykietę waluty, która ma być używana w tym raporcie. Wartość domyślna to **USD ($)**.|  
 
-#### <a name="report-links"></a>보고서 링크  
- 이 보고서는 다른 전원 관리 보고서에 연결되지 않습니다.  
+#### <a name="report-links"></a>Linki do raportów  
+ Ten raport nie zawiera linków do innych raportów zarządzania energią.  
 
-###  <a name="a-namebkmkenvironmentalimpacta-environmental-impact-report"></a><a name="BKMK_Environmental_Impact"></a> 환경 영향 보고서  
- **환경 영향** 보고서에는 다음 정보가 표시됩니다.  
+###  <a name="BKMK_Environmental_Impact"></a> Raport Wpływ na środowisko  
+ Raport **Wpływ na środowisko** zawiera następujące informacje:  
 
--   지정된 기간 동안 지정된 컬렉션의 컴퓨터에 대해 생성된 총 월별 CO2(톤)를 보여 주는 그래프  
+-   Wykres przedstawiający Całkowity miesięczny CO2 generowaną miesięcznie (w tonach) przez komputery w określonej kolekcji w określonym przedziale czasu.  
 
--   지정된 기간 동안 지정된 컬렉션의 각 컴퓨터에 대해 생성된 평균 월별 CO2(톤)를 보여 주는 그래프  
+-   Wykres przedstawiający średnie miesięczne CO2 generowaną miesięcznie (w tonach) przez poszczególne komputery w określonej kolekcji w określonym przedziale czasu.  
 
--   지정된 기간 동안 지정된 컬렉션의 컴퓨터에 대해 생성된 총 월별 CO2 및 생성된 평균 월별 CO2를 보여 주는 표  
+-   Tabelę przedstawiającą Całkowity miesięczny CO2 wygenerowany oraz średni miesięczny CO2 generowany dla komputerów w określonej kolekcji w określonym przedziale czasu.  
 
- **환경 영향** 보고서는 컴퓨터 또는 모니터가 24시간 중 켜져 있는 시간을 사용하여 생성된 CO2 양을 계산합니다.  
+ **Wpływ na środowisko** raportu oblicza ilość CO2 wygenerowanego (w tonach) na podstawie czasu, przez który komputer lub monitor był włączony w okresie 24 godzin.  
 
- 이 보고서를 구성하려면 다음 매개 변수를 사용합니다.  
+ Skonfiguruj ten raport przy użyciu następujących parametrów.  
 
-#### <a name="required-report-parameters"></a>필수 보고서 매개 변수  
- 이 보고서를 실행하려면 다음 매개 변수를 지정해야 합니다.  
+#### <a name="required-report-parameters"></a>Wymagane parametry raportu  
+ Aby uruchomić ten raport, należy określić następujące parametry.  
 
-|매개 변수 이름|설명|  
+|Nazwa parametru|Opis|  
 |--------------------|-----------------|  
-|**보고서 시작 날짜**|드롭다운 목록에서 이 보고서에 대한 시작 날짜를 선택합니다.|  
-|**보고서 종료 날짜**|드롭다운 목록에서 이 보고서에 대한 종료 날짜를 선택합니다.|  
-|**컬렉션 이름**|드롭다운 목록에서 이 보고서에 대한 컬렉션을 선택합니다.|  
-|**장치 유형**|드롭다운 목록에서 보고서를 원하는 컴퓨터 종류를 선택합니다. 유효한 값은 **모두**(데스크톱 및 휴대용 컴퓨터), **데스크톱**(데스크톱 컴퓨터만) 및 **랩톱**(휴대용 컴퓨터만)입니다. 이러한 값은 선택한 보고 기간에 대해서만 반환됩니다.|  
+|**Data rozpoczęcia raportu**|Z listy rozwijanej wybierz datę rozpoczęcia dla tego raportu.|  
+|**Data zakończenia raportu**|Z listy rozwijanej wybierz datę zakończenia dla tego raportu.|  
+|**Nazwa kolekcji**|Z listy rozwijanej wybierz kolekcję dla tego raportu.|  
+|**Typ urządzenia**|Z listy rozwijanej wybierz typ komputera, dla którego chcesz utworzyć raport. Prawidłowe wartości to **wszystkie** (komputerów stacjonarnych i przenośnych) **pulpitu** (tylko komputerów stacjonarnych), i **Laptop** (tylko w przypadku komputerów przenośnych). Te wartości są zwracane tylko dla wybranego okresu raportowania.|  
 
-#### <a name="hidden-report-parameters"></a>숨겨진 보고서 매개 변수  
- 다음 숨겨진 매개 변수는 이 보고서의 동작을 변경하도록 선택적으로 지정할 수 있습니다.  
+#### <a name="hidden-report-parameters"></a>Ukryte parametry raportu  
+ Opcjonalnie można określić następujące ukryte parametry w celu zmiany zachowania tego raportu.  
 
-|매개 변수 이름|설명|  
+|Nazwa parametru|Opis|  
 |--------------------|-----------------|  
-|**데스크톱 컴퓨터 켜짐**|켜졌을 때 데스크톱 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.07** kW입니다.|  
-|**랩톱 컴퓨터 켜짐**|켜졌을 때 휴대용 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.02** kW입니다.|  
-|**데스크톱 컴퓨터 절전 모드**|절전 모드로 전환된 데스크톱 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.003** kW입니다.|  
-|**랩톱 컴퓨터 절전 모드**|절전 모드로 전환된 휴대용 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.001** kW입니다.|  
-|**데스크톱 컴퓨터 꺼짐**|꺼졌을 때 데스크톱 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0** kW입니다.|  
-|**랩톱 컴퓨터 꺼짐**|꺼졌을 때 휴대용 컴퓨터의 전력 소비량을 지정합니다. 기본값은 시간당 **0** kW입니다.|  
-|**데스크톱 모니터 켜짐**|켜졌을 때 데스크톱 컴퓨터 모니터의 전력 소비량을 지정합니다. 기본값은 시간당 **0.028** kW입니다.|  
-|**랩톱 모니터 켜짐**|켜졌을 때 휴대용 컴퓨터 모니터의 전력 소비량을 지정합니다. 기본값은 시간당 **0** kW입니다.|  
-|**탄소 비율(톤/kWh)** (CO2Mix)|전력 회사에서 일반적으로 얻을 수 있는 탄소 비율(톤/kWh)에 대한 값을 지정합니다. 기본값은 kWH당 **0.0015** 톤입니다.|  
+|**Komputer stacjonarny jest włączony**|Określ zużycie energii przez włączony komputer stacjonarny. Domyślna wartość to **0,07** kW na godzinę.|  
+|**Komputer przenośny jest włączony**|Określ zużycie energii przez włączony komputer przenośny. Domyślna wartość to **0,02** kW na godzinę.|  
+|**Komputer stacjonarny jest uśpiony**|Określ zużycie energii przez komputer stacjonarny wprowadzony w stan uśpienia. Domyślna wartość to **0,003** kW na godzinę.|  
+|**Komputer przenośny jest uśpiony**|Określ zużycie energii przez komputer przenośny wprowadzony w stan uśpienia. Domyślna wartość to **0,001** kW na godzinę.|  
+|**Komputer stacjonarny jest wyłączony**|Określ zużycie energii przez wyłączony komputer stacjonarny. Domyślna wartość to **0** kW na godzinę.|  
+|**Komputer przenośny jest wyłączony**|Określ zużycie energii przez wyłączony komputer przenośny. Domyślna wartość to **0** kW na godzinę.|  
+|**Monitor komputera stacjonarnego jest włączony**|Określ zużycie energii przez włączony monitor komputera stacjonarnego. Domyślna wartość to **0,028** kW na godzinę.|  
+|**Monitor komputera przenośnego jest włączony**|Określ zużycie energii przez włączony monitor komputera przenośnego. Domyślna wartość to **0** kW na godzinę.|  
+|**Współczynnik emisji dwutlenku węgla (w tonach/kWh)** (mieszanka CO2)|Określ wartość współczynnika emisji dwutlenku węgla (w tonach/kWh), którą można zwykle uzyskać od dostawcy energii elektrycznej. Wartość domyślna to **0,0015** ton na kWh.|  
 
-#### <a name="report-links"></a>보고서 링크  
- 이 보고서는 다른 전원 관리 보고서에 연결되지 않습니다.  
+#### <a name="report-links"></a>Linki do raportów  
+ Ten raport nie zawiera linków do innych raportów zarządzania energią.  
 
-###  <a name="a-namebkmkenvironmentalimpactbydaya-environmental-impact-by-day-report"></a><a name="BKMK_Environmental_Impact_by_Day"></a> 일별 환경 영향 보고서  
- **일별 환경 영향** 보고서에는 다음 정보가 표시됩니다.  
+###  <a name="BKMK_Environmental_Impact_by_Day"></a> Raport Dzienny wpływ na środowisko  
+ Raport **Dzienny wpływ na środowisko** zawiera następujące informacje:  
 
--   지난 31일 동안 지정된 컬렉션의 컴퓨터에 대해 생성된 총 일별 CO2(톤)를 보여 주는 그래프  
+-   Wykres przedstawiający całkowity dzienny CO2 generowaną miesięcznie (w tonach) przez komputery w określonej kolekcji w ciągu ostatnich 31 dni.  
 
--   지난 31일 동안 지정된 컬렉션의 각 컴퓨터에 대해 생성된 평균 일별 CO2(톤)를 보여 주는 그래프  
+-   Wykres przedstawiający średni dzienny CO2 generowaną miesięcznie (w tonach) przez poszczególne komputery w określonej kolekcji w ciągu ostatnich 31 dni.  
 
--   지난 31일 동안 지정된 컬렉션의 컴퓨터에 대해 생성된 총 일별 CO2 및 평균 일별 CO2를 보여 주는 표  
+-   Tabelę przedstawiającą całkowita codzienne CO2 generowany i średnie dzienne CO2 generowaną dziennie przez komputery w określonej kolekcji w ciągu ostatnich 31 dni.  
 
- **일별 환경 영향** 보고서에서는 컴퓨터 또는 모니터가 24시간 중 켜져 있는 시간을 사용하여 생성된 CO2 양을 계산합니다.  
+ **Dzienny wpływ na** raportu oblicza ilość CO2 wygenerowanego (w tonach) na podstawie czasu, przez który komputer lub monitor był włączony w okresie 24 godzin.  
 
-#### <a name="required-report-parameters"></a>필수 보고서 매개 변수  
- 이 보고서를 실행하려면 다음 매개 변수를 지정해야 합니다.  
+#### <a name="required-report-parameters"></a>Wymagane parametry raportu  
+ Aby uruchomić ten raport, należy określić następujące parametry.  
 
-|매개 변수 이름|설명|  
+|Nazwa parametru|Opis|  
 |--------------------|-----------------|  
-|**컬렉션 이름**|드롭다운 목록에서 이 보고서에 대한 컬렉션을 선택합니다.|  
-|**장치 유형**|드롭다운 목록에서 보고하려는 컴퓨터 종류를 선택합니다. 유효한 값은 **모두**(데스크톱 및 휴대용 컴퓨터), **데스크톱**(데스크톱 컴퓨터만) 및 **랩톱**(휴대용 컴퓨터만)입니다. 이러한 값은 선택한 보고 기간에 대해서만 반환됩니다.|  
+|**Nazwa kolekcji**|Z listy rozwijanej wybierz kolekcję dla tego raportu.|  
+|**Typ urządzenia**|Z listy rozwijanej wybierz typ komputera, dla którego chcesz utworzyć raport. Prawidłowe wartości to **wszystkie** (komputerów stacjonarnych i przenośnych) **pulpitu** (tylko komputerów stacjonarnych), i **Laptop** (tylko w przypadku komputerów przenośnych). Te wartości są zwracane tylko dla wybranego okresu raportowania.|  
 
-#### <a name="hidden-report-parameters"></a>숨겨진 보고서 매개 변수  
- 다음 숨겨진 매개 변수는 이 보고서의 동작을 변경하도록 선택적으로 지정할 수 있습니다.  
+#### <a name="hidden-report-parameters"></a>Ukryte parametry raportu  
+ Opcjonalnie można określić następujące ukryte parametry w celu zmiany zachowania tego raportu.  
 
-|매개 변수 이름|설명|  
+|Nazwa parametru|Opis|  
 |--------------------|-----------------|  
-|**데스크톱 컴퓨터 켜짐**|켜졌을 때 데스크톱 컴퓨터의 전력 소비량을 지정합니다. 기본값은 **0.07** kWh입니다.|  
-|**랩톱 컴퓨터 켜짐**|켜졌을 때 휴대용 컴퓨터의 전력 소비량을 지정합니다. 기본값은 **0.02** kWh입니다.|  
-|**데스크톱 컴퓨터 꺼짐**|꺼졌을 때 데스크톱 컴퓨터의 전력 소비량을 지정합니다. 기본값은 **0** kWh입니다.|  
-|**랩톱 컴퓨터 꺼짐**|꺼졌을 때 휴대용 컴퓨터의 전력 소비량을 지정합니다. 기본값은 **0** kWh입니다.|  
-|**데스크톱 컴퓨터 절전 모드**|절전 모드로 전환된 데스크톱 컴퓨터의 전력 소비량을 지정합니다. 기본값은 **0.003** kWh입니다.|  
-|**랩톱 컴퓨터 절전 모드**|절전 모드로 전환된 휴대용 컴퓨터의 전력 소비량을 지정합니다. 기본값은 **0.001** kWh입니다.|  
-|**데스크톱 모니터 켜짐**|켜졌을 때 데스크톱 컴퓨터 모니터의 전력 소비량을 지정합니다. 기본값은 **0.028** kWh입니다.|  
-|**랩톱 모니터 켜짐**|켜졌을 때 휴대용 컴퓨터 모니터의 전력 소비량을 지정합니다. 기본값은 **0** kWh입니다.|  
-|**탄소 비율(톤/kWh)** (CO2Mix)|전력 회사에서 일반적으로 얻을 수 있는 탄소 비율(톤/kWh)에 대한 값을 지정합니다. 기본값은 kWH당 **0.0015** 톤입니다.|  
+|**Komputer stacjonarny jest włączony**|Określ zużycie energii przez włączony komputer stacjonarny. Wartość domyślna to **0,07** kWh.|  
+|**Komputer przenośny jest włączony**|Określ zużycie energii przez włączony komputer przenośny. Wartość domyślna to **0,02** kWh.|  
+|**Komputer stacjonarny jest wyłączony**|Określ zużycie energii przez wyłączony komputer stacjonarny. Wartość domyślna to **0** kWh.|  
+|**Komputer przenośny jest wyłączony**|Określ zużycie energii przez wyłączony komputer przenośny. Wartość domyślna to **0** kWh.|  
+|**Komputer stacjonarny jest uśpiony**|Określ zużycie energii przez komputer stacjonarny wprowadzony w stan uśpienia. Wartość domyślna to **0,003** kWh.|  
+|**Komputer przenośny jest uśpiony**|Określ zużycie energii przez komputer przenośny wprowadzony w stan uśpienia. Wartość domyślna to **0,001** kWh.|  
+|**Monitor komputera stacjonarnego jest włączony**|Określ zużycie energii przez włączony monitor komputera stacjonarnego. Wartość domyślna to **0,028** kWh.|  
+|**Monitor komputera przenośnego jest włączony**|Określ zużycie energii przez włączony monitor komputera przenośnego. Wartość domyślna to **0** kWh.|  
+|**Współczynnik emisji dwutlenku węgla (w tonach/kWh)** (mieszanka CO2)|Określ wartość współczynnika emisji dwutlenku węgla (w tonach/kWh), którą można zwykle uzyskać od dostawcy energii elektrycznej. Wartość domyślna to **0,0015** ton na kWh.|  
 
-#### <a name="report-links"></a>보고서 링크  
- 이 보고서는 다른 전원 관리 보고서에 연결되지 않습니다.  
+#### <a name="report-links"></a>Linki do raportów  
+ Ten raport nie zawiera linków do innych raportów zarządzania energią.  
 
-###  <a name="a-namebkmkinsomniacomputerdetailsa-insomnia-computer-details-report"></a><a name="BKMK_Insomnia_Computer_Details"></a> 절전 모드 불가 컴퓨터 세부 정보 보고서  
- **절전 모드 불가 컴퓨터 세부 정보** 보고서에는 지정된 기간 내에 특정 이유로 절전 모드 또는 최대 절전 모드로 전환되지 않은 컴퓨터 목록이 표시됩니다. 이 보고서는 **절전 모드 불가 보고서** 에서 호출되며 사이트 관리자가 직접 실행하도록 설계되지 않았습니다.  
+###  <a name="BKMK_Insomnia_Computer_Details"></a> Raport Szczegóły braku usypiania zasilania na komputerze  
+ Raport **Szczegóły braku usypiania zasilania na komputerze** zawiera listę komputerów, które nie zostały wprowadzone w tryb uśpienia lub hibernacji z określonego powodu w określonym przedziale czasu. Ten raport jest wywoływany przez **Raport o braku usypiania zasilania na komputerze** i nie jest przeznaczony do uruchamiania bezpośrednio przez administratora lokacji.  
 
- **절전 모드 불가 보고서** 는 컴퓨터가 지정된 전체 보고 간격 동안 절전 모드로 전환되지 않고 켜져 있는 경우 컴퓨터를 **지원되는 절전 모드 없음** 으로 표시합니다. 보고서는 컴퓨터가 지정된 전체 보고 간격 동안 최대 절전 모드로 전환되지 않고 켜져 있는 경우 컴퓨터를 **지원되는 최대 절전 모드 없음** 으로 표시합니다.  
+ **Raport o braku usypiania** wyświetla komputery jako **Bez możliwości uśpienia** , gdy nie można wprowadzić ich w tryb uśpienia i pozostawały włączone przez cały określony przedział czasu raportu. Raport wyświetla komputery jako **Bez możliwości hibernacji** , gdy nie można wprowadzić ich w tryb hibernacji i pozostawały włączone przez cały określony przedział czasu raportu.  
 
 > [!NOTE]  
->  전원 관리는 Windows 7 또는 Windows Server 2008 R2를 실행하는 컴퓨터에서 컴퓨터가 절전 모드 또는 최대 절전 모드로 전환하지 못하는 원인만 수집할 수 있습니다.  
+>  Funkcja zarządzania energią może gromadzić informacje o przyczynach uniemożliwiających komputerom przejście w tryb uśpienia lub hibernacji tylko w przypadku komputerów z systemem Windows 7 lub Windows Server 2008 R2.  
 
- 이 보고서를 구성하려면 다음 매개 변수를 사용합니다.  
+ Skonfiguruj ten raport przy użyciu następujących parametrów.  
 
-#### <a name="required-report-parameters"></a>필수 보고서 매개 변수  
- 이 보고서를 실행하려면 다음 매개 변수를 지정해야 합니다.  
+#### <a name="required-report-parameters"></a>Wymagane parametry raportu  
+ Aby uruchomić ten raport, należy określić następujące parametry.  
 
-|매개 변수 이름|설명|  
+|Nazwa parametru|Opis|  
 |--------------------|-----------------|  
-|**컬렉션 이름**|드롭다운 목록에서 이 보고서에 사용할 컬렉션을 선택합니다.|  
-|**보고 간격(일)**|보고할 일 수를 지정합니다. 기본값은 **7** 일입니다.|  
-|**절전 모드 불가 원인**|드롭다운 목록에서 컴퓨터가 절전 모드 또는 최대 절전 모드로 전환하지 못하는 원인 중 하나를 선택합니다.|  
+|**Nazwa kolekcji**|Z listy rozwijanej wybierz kolekcję, która ma być używana w tym raporcie.|  
+|**Interwał raportowania (dni)**|Określ liczbę dni, które mają zostać objęte raportem. Domyślna wartość to **7** dni.|  
+|**Przyczyna bezsenności**|Z listy rozwijanej wybierz jedną z przyczyn, która może uniemożliwiać komputerom przejście w tryb uśpienia lub hibernacji.|  
 
-#### <a name="hidden-report-parameters"></a>숨겨진 보고서 매개 변수  
- 이 보고서에는 설정할 수 있는 숨겨진 매개 변수가 없습니다.  
+#### <a name="hidden-report-parameters"></a>Ukryte parametry raportu  
+ Ten raport nie ma ukrytych parametrów, które można ustawić.  
 
-#### <a name="report-links"></a>보고서 링크  
- 이 보고서에는 선택한 항목에 대한 추가 정보를 제공하는 다음 보고서에 대한 링크가 들어 있습니다.  
+#### <a name="report-links"></a>Linki do raportów  
+ Ten raport zawiera linki do następującego raportu, który zapewnia dodatkowe informacje na temat wybranej pozycji.  
 
-|보고서 이름|세부 정보|  
+|Nazwa raportu|Szczegóły|  
 |-----------------|-------------|  
-|**컴퓨터 세부 정보**|선택한 컴퓨터에 대한 전원 기능, 전원 설정 및 적용된 전원 계획을 확인하려면 **자세한 정보를 보려면 클릭** 링크를 클릭합니다.<br /><br /> 자세한 내용은 이 항목의 [Computer Details Report](#BKMK_Computer_Details) 를 참조하십시오.|  
+|**Szczegóły komputera**|Użyj linku **Kliknij, aby uzyskać dodatkowe informacje** , aby wyświetlić wszystkie możliwości zasilania, ustawienia zasilania i zastosowane plany zasilania dla wybranego komputera.<br /><br /> Aby uzyskać więcej informacji, zobacz [Computer Details Report](#BKMK_Computer_Details) w tym temacie.|  
 
-###  <a name="a-namebkmkinsomniaa-insomnia-report"></a><a name="BKMK_Insomnia"></a> Insomnia report  
- **절전 모드 불가 보고서** 에는 컴퓨터가 절전 모드 또는 최대 절전 모드로 전환하지 못한 일반적인 이유 목록과 지정한 기간 동안 각 원인의 영향을 받은 컴퓨터의 수가 표시됩니다. 컴퓨터에서 프로세스 실행, 원격 데스크톱 세션 열림 또는 컴퓨터에서 절전 또는 최대 절전 모드가 지원되지 않는 등 컴퓨터가 절전 모드 또는 최대 절전 모드로 전환하지 못하는 다양한 이유가 있습니다. 이 보고서에서 **절전 모드 불가 컴퓨터 세부 정보** 보고서를 열 수 있으며, 컴퓨터가 절전 모드 또는 최대 절전 모드가 되지 않는 각 원인에 의해 영향을 받는 컴퓨터 목록이 표시됩니다.  
+###  <a name="BKMK_Insomnia"></a> Insomnia report  
+ **Raport o braku usypiania** przedstawia listę typowych przyczyn, które uniemożliwiały włączanie stanu uśpienia i hibernacji na komputerach, oraz liczbę komputerów, których te przyczyny dotyczyły, w określonym przedziale czasu. Istnieje wiele przyczyn, które mogą uniemożliwiać wprowadzenie komputera w stan uśpienia lub hibernacji, takich jak proces uruchomiony na komputerze, otwarta sesja pulpitu zdalnego albo brak zdolności do przechodzenia w tryb uśpienia lub hibernacji. Z poziomu tego raportu można otworzyć raport **Szczegóły braku usypiania zasilania na komputerze** , który wyświetla listę komputerów, których dotyczyły poszczególne przyczyny uniemożliwiające przejście komputerów w tryb uśpienia lub hibernacji.  
 
- 전원 절전 모드 불가 보고서는 지정된 전체 보고 간격 동안 컴퓨터가 절전 모드로 전환되지 않고 켜져 있는 경우 컴퓨터를 **지원되는 절전 모드 없음** 으로 표시합니다. 보고서는 컴퓨터가 지정된 전체 보고 간격 동안 최대 절전 모드로 전환되지 않고 켜져 있는 경우 컴퓨터를 **지원되는 최대 절전 모드 없음** 으로 표시합니다.  
+ Raport dotyczący braku usypiania wyświetla komputery jako **Bez możliwości uśpienia** , gdy nie można wprowadzić ich w tryb uśpienia i pozostawały włączone przez cały określony przedział czasu raportu. Raport wyświetla komputery jako **Bez możliwości hibernacji** , gdy nie można wprowadzić ich w tryb hibernacji i pozostawały włączone przez cały określony przedział czasu raportu.  
 
 > [!NOTE]  
->  전원 관리는 Windows 7 또는 Windows Server 2008 R2를 실행하는 컴퓨터에서 컴퓨터가 절전 모드 또는 최대 절전 모드로 전환하지 못하는 원인만 수집할 수 있습니다.  
+>  Funkcja zarządzania energią może gromadzić informacje o przyczynach uniemożliwiających komputerom przejście w tryb uśpienia lub hibernacji tylko w przypadku komputerów z systemem Windows 7 lub Windows Server 2008 R2.  
 
- 이 보고서를 구성하려면 다음 매개 변수를 사용합니다.  
+ Skonfiguruj ten raport przy użyciu następujących parametrów.  
 
-#### <a name="required-report-parameters"></a>필수 보고서 매개 변수  
- 이 보고서를 실행하려면 다음 매개 변수를 지정해야 합니다.  
+#### <a name="required-report-parameters"></a>Wymagane parametry raportu  
+ Aby uruchomić ten raport, należy określić następujące parametry.  
 
-|매개 변수 이름|설명|  
+|Nazwa parametru|Opis|  
 |--------------------|-----------------|  
-|**컬렉션 이름**|드롭다운 목록에서 이 보고서에 사용할 컬렉션을 선택합니다.|  
-|**보고 간격(일)**|보고할 일 수를 지정합니다. 기본값은 **7** 일입니다. 최대값은 **365** 일입니다. 오늘에 대한 보고서를 실행하려면 **0** 을 지정합니다.|  
+|**Nazwa kolekcji**|Z listy rozwijanej wybierz kolekcję, która ma być używana w tym raporcie.|  
+|**Interwał raportowania (dni)**|Określ liczbę dni, które mają zostać objęte raportem. Domyślna wartość to **7** dni. Wartość maksymalna to **365** dni. Określ wartość **0** , aby raport został uruchomiony dziś.|  
 
-#### <a name="hidden-report-parameters"></a>숨겨진 보고서 매개 변수  
- 이 보고서에는 설정할 수 있는 숨겨진 매개 변수가 없습니다.  
+#### <a name="hidden-report-parameters"></a>Ukryte parametry raportu  
+ Ten raport nie ma ukrytych parametrów, które można ustawić.  
 
-#### <a name="report-links"></a>보고서 링크  
- 이 보고서에는 선택한 항목에 대한 추가 정보를 제공하는 다음 보고서에 대한 링크가 들어 있습니다.  
+#### <a name="report-links"></a>Linki do raportów  
+ Ten raport zawiera linki do następującego raportu, który zapewnia dodatkowe informacje na temat wybranej pozycji.  
 
-|보고서 이름|세부 정보|  
+|Nazwa raportu|Szczegóły|  
 |-----------------|-------------|  
-|**절전 모드 불가 컴퓨터 세부 정보**|선택한 원인으로 인해 절전 모드 또는 최대 절전 모드로 전환할 수 없는 컴퓨터 목록을 확인하려면 **관련 컴퓨터** 열에서 숫자를 클릭합니다.<br /><br /> 자세한 내용은 이 항목의 [Insomnia Computer Details Report](#BKMK_Insomnia_Computer_Details) 를 참조하십시오.|  
+|**Szczegóły braku usypiania zasilania na komputerze**|Kliknij liczbę w kolumnie **Odnośne komputery** , aby wyświetlić listę komputerów, które nie mogły zostać wprowadzone w tryb uśpienia lub hibernacji ze względu na wybraną przyczynę.<br /><br /> Aby uzyskać więcej informacji, zobacz [Insomnia Computer Details Report](#BKMK_Insomnia_Computer_Details) w tym temacie.|  
 
-###  <a name="a-namebkmkcapabilitesa-power-capabilities-report"></a><a name="BKMK_Capabilites"></a> 전원 기능 보고서  
- **전원 기능** 보고서는 지정된 컬렉션에 있는 컴퓨터의 전원 관리 하드웨어 기능을 표시합니다. 이 보고서는 일반적으로 조직 내 컴퓨터의 전원 관리 기능을 확인하기 위해 전원 관리의 모니터링 단계에서 사용합니다. 그런 다음 보고서에 표시된 정보는 전원 계획을 적용하거나 전원 관리에서 제외할 컴퓨터 컬렉션을 만드는 데 사용할 수 있습니다. 이 보고서에 표시되는 전원 관리 기능은 다음과 같습니다.  
+###  <a name="BKMK_Capabilites"></a> Raport Możliwości zarządzania energią  
+ Raport **Możliwości zarządzania energią** przedstawia możliwości sprzętowe zarządzania energią dla komputerów w określonej kolekcji. Ten raport jest zwykle używany w fazie monitorowania zarządzania energią w celu określenia możliwości zarządzania energią dla komputerów w organizacji. Informacje wyświetlane w tym raporcie mogą następnie służyć do tworzenia kolekcji komputerów, do których mają zostać zastosowane plany zasilania, lub komputerów wykluczonych z zarządzania energią. W tym raporcie są wyświetlane następujące możliwości zarządzania energią:  
 
--   **절전 모드 지원** - 컴퓨터가 절전 모드로 전환할 수 있도록 구성된 경우 해당 컴퓨터에 그렇게 할 수 있는지 여부를 나타냅니다.  
+-   **Możliwość uśpienia** — Wskazuje, czy komputer ma możliwość przejścia w tryb uśpienia, jeśli jest odpowiednio skonfigurowany.  
 
--   **최대 절전 모드 가능** – 컴퓨터가 최대 절전 모드로 전환할 수 있도록 구성된 경우 해당 컴퓨터가 그렇게 할 수 있는지 여부를 나타냅니다.  
+-   **Możliwość hibernacji** — Wskazuje, czy komputer ma możliwość przejścia w tryb hibernacji, jeśli jest odpowiednio skonfigurowany.  
 
--   **절전 모드 해제** – 컴퓨터가 절전 모드에서 해제될 수 있도록 구성된 경우 해당 컴퓨터가 그렇게 할 수 있는지 여부를 나타냅니다.  
+-   **Możliwość przebudzenia z uśpienia** — Wskazuje, czy komputer ma możliwość wybudzenia z uśpienia, jeśli jest odpowiednio skonfigurowany.  
 
--   **최대 절전 모드 해제** – 컴퓨터가 최대 절전 모드에서 해제될 수 있도록 구성된 경우 해당 컴퓨터가 그렇게 할 수 있는지 여부를 나타냅니다.  
+-   **Możliwość przebudzenia z hibernacji** — Wskazuje, czy komputer ma możliwość wybudzenia z hibernacji, jeśli jest odpowiednio skonfigurowany.  
 
- **전원 기능** 보고서에서 보고된 값은 Windows에서 보고된 것처럼 컴퓨터의 절전 및 최대 절전 모드 기능을 나타냅니다. 그러나 보고된 값은 Windows 또는 BIOS 설정이 이러한 기능을 작동하지 못하도록 하는 경우를 반영하지 않습니다.  
+ Wartości wyświetlane w raporcie **Możliwości zasilania** wskazują obsługę trybu uśpienia i hibernacji przez komputery zgłaszaną przez system Windows. Jednak zgłoszone wartości nie odzwierciedlają przypadków, w których ustawienia systemu Windows lub systemu BIOS uniemożliwiają działanie tych funkcji.  
 
- 이 보고서를 구성하려면 다음 매개 변수를 사용합니다.  
+ Skonfiguruj ten raport przy użyciu następujących parametrów.  
 
-#### <a name="required-report-parameters"></a>필수 보고서 매개 변수  
- 이 보고서를 실행하려면 다음 매개 변수를 지정해야 합니다.  
+#### <a name="required-report-parameters"></a>Wymagane parametry raportu  
+ Aby uruchomić ten raport, należy określić następujące parametry.  
 
-|매개 변수 이름|설명|  
+|Nazwa parametru|Opis|  
 |--------------------|-----------------|  
-|**수집**|드롭다운 목록에서 이 보고서에 대한 컬렉션을 선택합니다.|  
-|**표시 필터**|절전 모드, 최대 절전 모드, 절전 모드 해제 또는 최대 절전 모드 해제가 지원되지 않는 지정된 컬렉션의 컴퓨터만 표시하려면 드롭다운 목록에서 **지원되지 않음**을 선택합니다. 지정된 컬렉션의 모든 컴퓨터를 표시하려면 **모두 표시**를 선택합니다.|  
+|**Kolekcja**|Z listy rozwijanej wybierz kolekcję dla tego raportu.|  
+|**Wyświetl filtr**|Z listy rozwijanej wybierz **nieobsługiwane** do wyświetla tylko komputery w określonej kolekcji, które mogą przejść w stan uśpienia, hibernacji, wybudzenia z uśpienia lub wybudzenia z hibernacji. Wybierz **Pokaż wszystko** Aby wyświetlić wszystkie komputery w określonej kolekcji.|  
 
-#### <a name="hidden-report-parameters"></a>숨겨진 보고서 매개 변수  
- 이 보고서에는 설정할 수 있는 숨겨진 매개 변수가 없습니다.  
+#### <a name="hidden-report-parameters"></a>Ukryte parametry raportu  
+ Ten raport nie ma ukrytych parametrów, które można ustawić.  
 
-#### <a name="report-links"></a>보고서 링크  
- 이 보고서에는 선택한 항목에 대한 추가 정보를 제공하는 다음 보고서에 대한 링크가 들어 있습니다.  
+#### <a name="report-links"></a>Linki do raportów  
+ Ten raport zawiera linki do następującego raportu, który zapewnia dodatkowe informacje na temat wybranej pozycji.  
 
-|보고서 이름|세부 정보|  
+|Nazwa raportu|Szczegóły|  
 |-----------------|-------------|  
-|**컴퓨터 세부 정보**|선택한 컴퓨터에 대한 전원 기능, 전원 설정 및 적용된 전원 계획을 확인하려면 컴퓨터 이름을 클릭합니다.<br /><br /> 자세한 내용은 이 항목의 [Computer Details Report](#BKMK_Computer_Details) 를 참조하십시오.|  
+|**Szczegóły komputera**|Kliknij nazwę komputera, aby wyświetlić wszystkie możliwości zasilania, ustawienia zasilania i zastosowane plany zasilania dla wybranego komputera.<br /><br /> Aby uzyskać więcej informacji, zobacz [Computer Details Report](#BKMK_Computer_Details) w tym temacie.|  
 
-###  <a name="a-namebkmksettingsa-power-settings-report"></a><a name="BKMK_Settings"></a> 전원 설정 보고서  
- **전원 설정** 보고서에는 지정된 컬렉션에 포함된 컴퓨터에서 사용하는 전원 설정의 집계된 목록이 표시됩니다. 각 전원 설정에 대해 가능한 전원 모드, 값 및 단위가 이러한 값을 사용하는 컴퓨터의 개수와 함께 표시됩니다. 이 보고서는 관리자가 사이트의 컴퓨터에서 사용하는 기존 전원 설정을 파악하고 전원 관리 계획을 사용하여 적용할 최적의 전원 설정을 계획할 수 있도록 전원 관리의 모니터링 단계에서 사용할 수 있습니다. 보고서는 전원 설정이 올바르게 적용되도록 문제를 해결할 때에도 유용합니다.  
+###  <a name="BKMK_Settings"></a> Raport Ustawienia zasilania  
+ Raport **Ustawienia zasilania** przedstawia zagregowaną listę ustawień zasilania używanych na komputerach w określonej kolekcji. Dla każdego ustawienia zasilania są wyświetlane dostępne tryby zasilania, wartości i jednostki wraz z liczbą komputerów, które używają tych wartości. Ten raport może być używany w fazie monitorowania zarządzania energią w celu ułatwienia administratorowi zrozumienia istniejących ustawień zasilania używanych przez komputery w lokacji oraz zaplanowania optymalnych ustawień zasilania, które mają zostać zastosowane przy użyciu planu zarządzania energią. Ten raport jest również przydatny podczas rozwiązywania problemów do sprawdzania poprawności zastosowania ustawień zasilania.  
 
 > [!NOTE]  
->  표시되는 설정은 하드웨어 인벤토리 중 클라이언트 컴퓨터에서 수집됩니다. 하드웨어 인벤토리가 실행되는 시간에 따라, 적용된 사용량 증가 또는 사용랑 감소 시 전원 계획의 설정이 수집될 수도 있습니다.  
+>  Wyświetlane ustawienia są zbierane z komputerów klienckich podczas tworzenia spisu sprzętu. Zależnie od godziny, o której uruchamiany jest spis sprzętu, mogą być zbierane informacje o ustawieniach dotyczące zastosowanego szczytowego planu zasilania lub planu zasilania bez szczytów.  
 
- 이 보고서를 구성하려면 다음 매개 변수를 사용합니다.  
+ Skonfiguruj ten raport przy użyciu następujących parametrów.  
 
-#### <a name="required-report-parameters"></a>필수 보고서 매개 변수  
- 이 보고서를 실행하려면 다음 매개 변수를 지정해야 합니다.  
+#### <a name="required-report-parameters"></a>Wymagane parametry raportu  
+ Aby uruchomić ten raport, należy określić następujące parametry.  
 
-|매개 변수 이름|설명|  
+|Nazwa parametru|Opis|  
 |--------------------|-----------------|  
-|**컬렉션 이름**|드롭다운 목록에서 이 보고서에 대한 컬렉션을 선택합니다.|  
+|**Nazwa kolekcji**|Z listy rozwijanej wybierz kolekcję dla tego raportu.|  
 
-#### <a name="hidden-report-parameters"></a>숨겨진 보고서 매개 변수  
- 다음 숨겨진 매개 변수는 이 보고서의 동작을 변경하도록 선택적으로 지정할 수 있습니다.  
+#### <a name="hidden-report-parameters"></a>Ukryte parametry raportu  
+ Opcjonalnie można określić następujące ukryte parametry w celu zmiany zachowania tego raportu.  
 
-|매개 변수 이름|설명|  
+|Nazwa parametru|Opis|  
 |--------------------|-----------------|  
-|**numberOfLocalizations**|클라이언트 컴퓨터에서 보고되는 전원 설정 이름을 보려는 언어의 수를 지정합니다. 가장 널리 쓰이는 언어만 보려면 이 설정을 기본값인 **1**로 유지합니다. 모든 언어를 보려면 이 값을 **0**으로 설정합니다.|  
+|**Liczba lokalizacji**|Określ liczbę języków, w których mają być wyświetlane nazwy ustawień zasilania zgłaszane przez komputery klienckie. Aby był wyświetlany najpopularniejszy język, pozostaw wartość domyślną **1**. Aby wyświetlić wszystkie języki, ustaw tę wartość na **0**.|  
 
-#### <a name="report-links"></a>보고서 링크  
- 이 보고서에는 선택한 항목에 대한 추가 정보를 제공하는 다음 보고서에 대한 링크가 들어 있습니다.  
+#### <a name="report-links"></a>Linki do raportów  
+ Ten raport zawiera linki do następującego raportu, który zapewnia dodatkowe informacje na temat wybranej pozycji.  
 
-|보고서 이름|세부 정보|  
+|Nazwa raportu|Szczegóły|  
 |-----------------|-------------|  
-|**전원 설정 세부 정보**|해당 행의 전원 설정을 사용하는 모든 컴퓨터 목록을 확인하려면 **컴퓨터** 열에서 컴퓨터의 수를 클릭합니다.<br /><br /> 자세한 내용은 이 항목의 [Power Settings Details Report](#BKMK_Settings_Details) 를 참조하십시오.|  
+|**Szczegóły ustawień zasilania**|Kliknij liczbę komputerów w kolumnie **Komputery** , aby wyświetlić listę wszystkich komputerów, które używają ustawień zasilania w tym wierszu.<br /><br /> Aby uzyskać więcej informacji, zobacz [Power Settings Details Report](#BKMK_Settings_Details) w tym temacie.|  
 
-###  <a name="a-namebkmksettingsdetailsa-power-settings-details-report"></a><a name="BKMK_Settings_Details"></a> Power Settings Details report  
- **전원 설정 세부 정보** 보고서는 **전원 설정** 보고서에서 선택한 컴퓨터에 대한 추가 정보를 표시합니다. 이 보고서는 **전원 설정** 보고서에서 호출되며 사이트 관리자가 직접 실행하도록 설계되지 않았습니다.  
+###  <a name="BKMK_Settings_Details"></a> Power Settings Details report  
+ Raport **Szczegóły ustawień zasilania** zawiera dodatkowe informacje o komputerach wybranych w raporcie **Ustawienia zasilania** . Ten raport jest wywoływany przez raport **Ustawienia zasilania** i nie jest przeznaczony do uruchamiania bezpośrednio przez administratora lokacji.  
 
-#### <a name="required-report-parameters"></a>필수 보고서 매개 변수  
- 이 보고서를 실행하려면 다음 매개 변수를 지정해야 합니다.  
+#### <a name="required-report-parameters"></a>Wymagane parametry raportu  
+ Aby uruchomić ten raport, należy określić następujące parametry.  
 
-|매개 변수 이름|설명|  
+|Nazwa parametru|Opis|  
 |--------------------|-----------------|  
-|**수집**|드롭다운 목록에서 이 보고서에 사용할 컬렉션을 선택합니다.|  
-|**전원 설정 GUID**|드롭다운 목록에서 보고하려는 전원 설정 GUID를 선택합니다. 모든 전원 설정 및 해당 용도 목록을 보려면 [System Center Configuration Manager에서 전원 계획을 만들고 적용하는 방법](../../../../core/clients/manage/power/create-and-apply-power-plans.md) 항목에서 [사용 가능한 전원 관리 계획 설정](../../../../core/clients/manage/power/create-and-apply-power-plans.md#BKMK_Plans)을 참조하세요.|  
-|**Power Mode**|드롭다운 목록에서 보고서 결과에 표시하려는 전원 설정의 유형을 선택합니다. 컴퓨터가 전원에 연결된 경우에 대해 구성된 전원 설정을 보려면 **전원 사용** 을 선택하고 컴퓨터가 배터리 전원으로 실행 중인 경우에 대해 구성된 전원 설정을 보려면 **배터리 사용** 을 선택합니다.|  
-|**인덱스 설정**|드롭다운 목록에서 보고하려는 선택된 전원 설정 이름에 대한 값을 선택합니다. 예를 들어 **다음 시간 이후에 하드 디스크 끄기** 설정이 **10** 분으로 설정된 모든 컴퓨터를 표시하려면 **전원 설정 이름** 에는 **다음 시간 이후에 하드 디스크 끄기** 를 선택하고 **인덱스 설정** 에는 **10**을 선택합니다.|  
+|**Kolekcja**|Z listy rozwijanej wybierz kolekcję, która ma być używana w tym raporcie.|  
+|**Identyfikator GUID ustawień zasilania**|Z listy rozwijanej wybierz identyfikator GUID ustawień zasilania, dla którego chcesz utworzyć raport. Aby uzyskać listę wszystkich ustawień zasilania i ich zastosowań, zobacz [ustawienia planu zarządzania energią dostępne](../../../../core/clients/manage/power/create-and-apply-power-plans.md#BKMK_Plans) w temacie [tworzenie i stosowanie planów zasilania w programie System Center Configuration Manager](../../../../core/clients/manage/power/create-and-apply-power-plans.md).|  
+|**Power Mode**|Z listy rozwijanej wybierz typ ustawień zasilania, które mają być wyświetlane w raporcie. Wybierz pozycję **Podłączony** , aby wyświetlić ustawienia zasilania skonfigurowane dla sytuacji, w której komputer jest podłączony, i pozycję **Zasilany z baterii** , aby wyświetlić ustawienia zasilania skonfigurowane dla komputera zasilanego z baterii.|  
+|**Indeks ustawień**|Z listy rozwijanej wybierz wartość nazwy wybranego ustawienia zasilania, dla której chcesz utworzyć raport. Aby na przykład wyświetlić wszystkie komputery, dla których ustawienie **Wyłącz dysk twardy po** ustawiono na **10** minut, wybierz pozycję **Wyłącz dysk twardy po** z listy rozwijanej **Nazwa ustawienia zasilania** i **10** z listy rozwijanej **Indeks ustawień**.|  
 
-#### <a name="hidden-report-parameters"></a>숨겨진 보고서 매개 변수  
- 다음 숨겨진 매개 변수는 이 보고서의 동작을 변경하도록 선택적으로 지정할 수 있습니다.  
+#### <a name="hidden-report-parameters"></a>Ukryte parametry raportu  
+ Opcjonalnie można określić następujące ukryte parametry w celu zmiany zachowania tego raportu.  
 
-|매개 변수 이름|설명|  
+|Nazwa parametru|Opis|  
 |--------------------|-----------------|  
-|**numberOfLocalizations**|클라이언트 컴퓨터에서 보고되는 전원 설정 이름을 보려는 언어의 수를 지정합니다. 가장 널리 쓰이는 언어만 보려면 이 설정을 기본값인 **1**로 유지합니다. 모든 언어를 보려면 이 값을 **0**으로 설정합니다.|  
+|**Liczba lokalizacji**|Określ liczbę języków, w których mają być wyświetlane nazwy ustawień zasilania zgłaszane przez komputery klienckie. Aby był wyświetlany najpopularniejszy język, pozostaw wartość domyślną **1**. Aby wyświetlić wszystkie języki, ustaw tę wartość na **0**.|  
 
-#### <a name="report-links"></a>보고서 링크  
- 이 보고서에는 선택한 항목에 대한 추가 정보를 제공하는 다음 보고서에 대한 링크가 들어 있습니다.  
+#### <a name="report-links"></a>Linki do raportów  
+ Ten raport zawiera linki do następującego raportu, który zapewnia dodatkowe informacje na temat wybranej pozycji.  
 
-|보고서 이름|세부 정보|  
+|Nazwa raportu|Szczegóły|  
 |-----------------|-------------|  
-|**컴퓨터 세부 정보**|선택한 컴퓨터에 대한 전원 기능, 전원 설정 및 적용된 전원 계획을 확인하려면 컴퓨터 이름을 클릭합니다.<br /><br /> 자세한 내용은 이 항목의 [Computer Details Report](#BKMK_Computer_Details) 를 참조하십시오.|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-
+|**Szczegóły komputera**|Kliknij nazwę komputera, aby wyświetlić wszystkie możliwości zasilania, ustawienia zasilania i zastosowane plany zasilania dla wybranego komputera.<br /><br /> Aby uzyskać więcej informacji, zobacz [Computer Details Report](#BKMK_Computer_Details) w tym temacie.|  

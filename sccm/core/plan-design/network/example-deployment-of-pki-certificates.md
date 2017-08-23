@@ -1,781 +1,777 @@
 ---
-title: "배포 PKI 인증서 | Microsoft 문서"
-description: "단계별 예제에 따라 System Center Configuration Manager에서 사용하는 PKI 인증서를 만들고 배포하는 방법을 알아봅니다."
+title: "Wdrożenie certyfikatów PKI | Dokumentacja firmy Microsoft"
+description: "Wykonaj krok przykładowy sposób tworzenia i wdrażania certyfikatów infrastruktury kluczy publicznych, których używa System Center Configuration Manager."
 ms.custom: na
 ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 3417ff88-7177-4a0d-8967-ab21fe7eba17
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2a62ef64bf4e08d7027d10827d35d648bdbbeefe
-ms.openlocfilehash: 21fe718835bbbaa6382e0f0a87784e01e4c35283
-ms.contentlocale: ko-kr
-ms.lasthandoff: 02/14/2017
-
-
+ms.openlocfilehash: b15f85b4483bbae2444d4e73d2e2aa0b3979d9ab
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 08/07/2017
 ---
-# <a name="step-by-step-example-deployment-of-the-pki-certificates-for-system-center-configuration-manager-windows-server-2008-certification-authority"></a>System Center Configuration Manager용 PKI 인증서의 단계별 배포 예제: Windows Server 2008 인증 기관
+# <a name="step-by-step-example-deployment-of-the-pki-certificates-for-system-center-configuration-manager-windows-server-2008-certification-authority"></a>Krok po kroku Przykładowe wdrożenie certyfikatów PKI dla programu System Center Configuration Manager: Urząd certyfikacji systemu Windows Server 2008
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*Dotyczy: Program System Center Configuration Manager (Current Branch)*
 
-Windows Server 2008 CA(인증 기관)를 사용하는 이 단계별 배포 예에서는 System Center Configuration Manager에서 사용하는 PKI(공개 키 인프라) 인증서를 만들고 배포하는 방법을 보여 주는 절차를 제공합니다. 이러한 절차에서는 엔터프라이즈 CA(인증 기관)와 인증서 템플릿을 사용합니다. 이러한 단계는 개념 증명으로 테스트 네트워크에만 사용하는 것이 적절합니다.  
+To przykładowe krok wdrożenie, która używa urząd certyfikacji (CA) systemu Windows Server 2008, ma procedur pokazujących, sposobu tworzenia i wdrażania certyfikatów infrastruktury kluczy publicznych (PKI), których używa System Center Configuration Manager. W procedurach korzysta się z urzędu certyfikacji przedsiębiorstwa i z szablonów certyfikatów. Kroki procedur są właściwe tylko na użytek sieci testowej, jako weryfikacja koncepcji.  
 
- 필요한 인증서를 배포하는 방법에는 여러 가지가 있으므로 해당 PKI 배포 문서에서 프로덕션 환경의 필수 인증서를 배포하는 데 필요한 절차와 모범 사례를 참조하세요. 인증서 요구 사항에 대한 자세한 내용은 [System Center Configuration Manager를 위한 PKI 인증서 요구 사항](../../../core/plan-design/network/pki-certificate-requirements.md)을 참조하세요.  
+ Ponieważ nie ma jednej właściwej metody wdrażania wymaganych certyfikatów, można znaleźć w dokumentacji konkretnego wdrożenia infrastruktury kluczy publicznych dla wymaganych procedur i najlepszych praktyk wdrażania wymaganych certyfikatów w środowisku produkcyjnym. Aby uzyskać więcej informacji na temat wymagań dotyczących certyfikatów, zobacz [wymagania dotyczące certyfikatu PKI dla programu System Center Configuration Manager](../../../core/plan-design/network/pki-certificate-requirements.md).  
 
 > [!TIP]  
->  테스트 네트워크 요구 사항 섹션에 설명되지 않은 운영 체제에 대해 이 항목의 지침을 적용할 수 있습니다. 그러나 Windows Server 2012에서 발급 CA를 실행하는 경우 인증서 템플릿 버전을 묻는 메시지가 나타나지 않을 수 있습니다. 대신 템플릿 속성의 **호환성** 탭에서 이 버전을 다음과 같이 지정하세요.  
+>  Istnieje możliwość dostosowania instrukcje w tym temacie dla systemów operacyjnych, które nie są udokumentowane w sekcji wymagania dotyczące sieci testowej. Niemniej jednak w przypadku uruchamiania urzędu certyfikacji wystawiającego certyfikat w systemie Windows Server 2012 nie jest wyświetlany monit o wersję szablonu certyfikatu. Zamiast tego należy określić to na **zgodności** właściwości szablonu:  
 >   
->  -   **인증 기관**: **Windows Server 2003**  
-> -   **인증서 받는 사람**: **Windows XP / Server 2003**  
+>  -   **Urząd certyfikacji**: **Windows Server 2003**  
+> -   **Odbiorca certyfikatu**: **Windows XP / Server 2003**  
 
-## <a name="in-this-section"></a>이 섹션의 내용  
- 다음 섹션에는 System Center Configuration Manager와 함께 사용할 수 있는 다음과 같은 인증서를 만들어 배포하기 위한 단계별 지침 예가 나와 있습니다.  
+## <a name="in-this-section"></a>W tej sekcji  
+ W poniższych sekcjach zawarto przykładowe instrukcje krok po kroku dotyczące tworzenia i wdrażania następujących certyfikatów, które mogą być używane z System Center Configuration Manager:  
 
- [테스트 네트워크 요구 사항](#BKMK_testnetworkenvironment)  
+ [Wymagania dotyczące sieci testowej](#BKMK_testnetworkenvironment)  
 
- [인증서 개요](#BKMK_overview2008)  
+ [Przegląd certyfikatów](#BKMK_overview2008)  
 
- [IIS를 실행하는 사이트 시스템용 웹 서버 인증서 배포](#BKMK_webserver2008_cm2012)  
+ [Wdrażanie certyfikatu serwera sieci web dla systemów lokacji z usługami IIS](#BKMK_webserver2008_cm2012)  
 
- [클라우드 기반 배포 지점용 서비스 인증서 배포](#BKMK_clouddp2008_cm2012)  
+ [Wdrażanie certyfikatu usługi dla punktów dystrybucji w chmurze](#BKMK_clouddp2008_cm2012)  
 
- [Windows 컴퓨터용 클라이언트 인증서 배포](#BKMK_client2008_cm2012)  
+ [Wdrażanie certyfikatu klienta dla komputerów z systemem Windows](#BKMK_client2008_cm2012)  
 
- [배포 지점용 클라이언트 인증서 배포](#BKMK_clientdistributionpoint2008_cm2012)  
+ [Wdrażanie certyfikatu klienta dla punktów dystrybucji](#BKMK_clientdistributionpoint2008_cm2012)  
 
- [모바일 장치용 등록 인증서 배포](#BKMK_mobiledevices2008_cm2012)  
+ [Wdrażanie certyfikatu rejestracji dla urządzeń przenośnych](#BKMK_mobiledevices2008_cm2012)  
 
- [AMT용 인증서 배포](#BKMK_AMT2008_cm2012)  
+ [Wdrażanie certyfikatów dla AMT](#BKMK_AMT2008_cm2012)  
 
- [Mac 컴퓨터용 클라이언트 인증서 배포](#BKMK_MacClient_SP1)  
+ [Wdrażanie certyfikatu klienta dla komputerów Mac](#BKMK_MacClient_SP1)  
 
-##  <a name="BKMK_testnetworkenvironment"></a> 테스트 네트워크 요구 사항  
- 이 단계별 지침은 다음과 같은 요구 사항을 갖습니다.  
+##  <a name="BKMK_testnetworkenvironment"></a>Wymagania dotyczące sieci testowej  
+ Z instrukcjami krok po kroku wiążą się następujące wymagania:  
 
--   테스트 네트워크가 Windows Server 2008과 Active Directory Domain Services를 실행하고 있고 단일 도메인, 단일 포리스트로 설치되어 있습니다.  
+-   W sieci testowej działają usługi domenowe Active Directory z systemem Windows Server 2008; instalacja to pojedyncza domena, pojedynczy las.  
 
--   Active Directory 인증서 서비스 역할이 설치된 Windows Server 2008 Enterprise Edition을 실행하는 구성원 서버가 있고 이 서버가 엔터프라이즈 루트 CA(인증 기관)로 설정되어 있습니다.  
+-   Masz serwer członkowski z systemem Windows Server 2008 Enterprise Edition, który ma na nim zainstalowany roli usług certyfikatów Active Directory i jest on skonfigurowany jako główny urząd certyfikacji przedsiębiorstwa (CA).  
 
--   Windows Server 2008(Standard Edition 또는 Enterprise Edition R2 이상)이 설치되고 구성원 서버로 지정된 컴퓨터가 있으며, 이 컴퓨터에 IIS(인터넷 정보 서비스)가 설치되어 있습니다. 인터넷에서 System Center Configuration Manager 및 클라이언트에 의해 등록된 모바일 장치를 지원해야 하는 경우 이 컴퓨터는 인트라넷에서 클라이언트 연결을 지원할 인트라넷 FQDN(정규화된 도메인 이름)과 인터넷 FQDN으로 구성할 System Center Configuration Manager 사이트 시스템 서버가 됩니다.  
+-   Istnieje jeden komputer z systemem Windows Server 2008 (Standard Edition lub Enterprise Edition, wersja R2 lub nowszy) na nim zainstalowany tego komputera jest wyznaczony jako serwer członkowski, a Internet Information Services (IIS) jest na nim zainstalowany. Ten komputer będzie serwer systemu lokacji programu System Center Configuration Manager, który skonfigurujesz z intranetu pełną nazwę domeny (FQDN) do obsługi połączeń klienckich w sieci intranet i internetowej nazwy FQDN, jeśli zachodzi potrzeba obsługi urządzeń przenośnych zarejestrowanych w programie System Center Configuration Manager i klienci w Internecie.  
 
--   최신 서비스 팩이 설치된 Windows Vista 클라이언트가 있으며 이 컴퓨터는 ASCII 문자로 이루어진 컴퓨터 이름으로 설정되어 있고 도메인에 가입되어 있습니다. 이 컴퓨터가 System Center Configuration Manager 클라이언트 컴퓨터가 됩니다.  
+-   Jeden klient systemu Windows Vista z najnowszego dodatku service pack zainstalowany, a ten komputer jest skonfigurowany przy użyciu nazwy komputera, by zawierała znaki ASCII, który jest przyłączony do domeny. Ten komputer będzie komputer kliencki System Center Configuration Manager.  
 
--   루트 도메인 관리자 계정이나 엔터프라이즈 도메인 관리자 계정으로 로그인하고 이 배포 예의 모든 절차에 이 계정을 사용할 수 있습니다.  
+-   Możesz zalogować się przy użyciu konta administratora domeny głównej lub konta administratora domeny przedsiębiorstwa i wykorzystać to konto do wszystkich procedur tego przykładowego wdrożenia.  
 
-##  <a name="BKMK_overview2008"></a> 인증서 개요  
- 다음 표에서 System Center Configuration Manager에 필요할 수 있는 PKI 인증서의 유형을 나열하고 사용 방법을 설명합니다.  
+##  <a name="BKMK_overview2008"></a>Przegląd certyfikatów  
+ W poniższej tabeli wymieniono typy certyfikatów PKI, które mogą być wymagane dla programu System Center Configuration Manager i opisano sposób użycia.  
 
-|인증서 요구 사항|인증서 설명|  
+|Wymagany certyfikat|Opis certyfikatu|  
 |-----------------------------|-----------------------------|  
-|IIS를 실행하는 사이트 시스템용 웹 서버 인증서|이 인증서는 데이터를 암호화하고 클라이언트에 대해 서버를 인증하는 데 사용됩니다. 이는 IIS(인터넷 정보 서비스)를 실행하고 HTTPS를 사용하도록 System Center Configuration Manager에서 설정된 사이트 시스템 서버에서 System Center Configuration Manager의 외부에 설치해야 합니다.<br /><br /> 이 인증서를 설정하고 설치하는 단계는 이 항목에서 [IIS를 실행하는 사이트 시스템용 웹 서버 인증서 배포](#BKMK_webserver2008_cm2012)를 참조하세요.|  
-|클라이언트에서 클라우드 기반 배포 지점에 연결하기 위한 서비스 인증서|이 인증서를 구성하고 설치하는 단계는 이 항목에서 [클라우드 기반 배포 지점용 서비스 인증서 배포](#BKMK_clouddp2008_cm2012)를 참조하세요.<br /><br /> **중요** : 이 인증서는 Microsoft Azure 관리 인증서와 함께 사용됩니다. 관리 인증서에 대한 자세한 내용은 MSDN 라이브러리의 Microsoft Azure 플랫폼 섹션에서 [관리 인증서를 만드는 방법](http://go.microsoft.com/fwlink/p/?LinkId=220281) 및 [Microsoft Azure 구독에 관리 인증서를 추가하는 방법](http://go.microsoft.com/fwlink/?LinkId=241722)을 참조하세요.|  
-|Windows 컴퓨터용 클라이언트 인증서|이 인증서는 HTTPS를 사용하도록 설정된 사이트 시스템에 대해 System Center Configuration Manager 클라이언트 컴퓨터를 인증하는 데 사용됩니다. 또한 HTTPS를 사용하도록 설정된 관리 지점과 상태 마이그레이션 지점에서 작업 상태를 모니터링하는 데 사용할 수 있습니다. 컴퓨터에 있는 System Center Configuration Manager의 외부에 설치해야 합니다.<br /><br /> 이 인증서를 설정하고 설치하는 단계는 이 항목에서 [Windows 컴퓨터용 클라이언트 인증서 배포](#BKMK_client2008_cm2012)를 참조하세요.|  
-|배포 지점용 클라이언트 인증서|이 인증서는 다음 두 가지 용도로 사용됩니다.<br /><br /> 이 인증서는 배포 지점에서 상태 메시지를 전송하기 전에 HTTPS 사용 관리 지점에 대해 배포 지점을 인증하는 데 사용됩니다.<br /><br /> **클라이언트에 대해 PXE 지원 사용** 배포 지점 옵션을 선택할 경우 인증서가 PXE 부팅을 수행하는 컴퓨터로 전송되어 이러한 컴퓨터에서 운영 체제 배포 시 HTTPS 사용 관리 지점에 연결할 수 있습니다.<br /><br /> 이 인증서를 설정하고 설치하는 단계는 이 항목의 [배포 지점용 클라이언트 인증서 배포](#BKMK_clientdistributionpoint2008_cm2012)를 참조하세요.|  
-|모바일 장치용 인증서 등록|이 인증서는 HTTPS를 사용하도록 설정된 사이트 시스템에 대해 System Center Configuration Manager 모바일 장치 클라이언트를 인증하는 데 사용됩니다. 이 인증서는 System Center Configuration Manager에서 모바일 장치를 등록하는 과정에서 설치해야 하며, 구성된 인증서 템플릿을 모바일 장치 클라이언트 설정으로 선택해야 합니다.<br /><br /> 이러한 인증서를 설정하는 단계는 이 항목에서 [모바일 장치용 등록 인증서 배포](#BKMK_mobiledevices2008_cm2012)를 참조하세요.|  
-|Intel AMT용 인증서|Intel AMT 기반 컴퓨터의 대역 외 관리와 관련된 세 가지 인증서:<ul><li>AMT(Active Management Technology) 프로비전 인증서</li><li>AMT 웹 서버 인증서</li><li>필요에 따라, 802.1X 유선 또는 무선 네트워크용 클라이언트 인증 인증서</li></ul>AMT 프로비전 인증서는 대역 외 서비스 지점 컴퓨터에서 System Center Configuration Manager 외부에 설치해야 하며, 대역 외 서비스 지점 속성에서 설치된 인증서를 선택해야 합니다. AMT 웹 서버 인증서와 클라이언트 인증 인증서는 AMT 프로비전 및 관리 시 설치되며, 대역 외 관리 구성 요소 속성에서 구성된 인증서 템플릿을 선택해야 합니다.<br /><br /> 이러한 인증서를 설정하는 단계는 이 항목의 [AMT용 인증서 배포](#BKMK_AMT2008_cm2012)를 참조하세요.|  
-|Mac 컴퓨터용 클라이언트 인증서|System Center Configuration Manager 등록을 사용할 때 Mac 컴퓨터에서 이 인증서를 요청하고 설치할 수 있으며 구성된 인증서 템플릿을 모바일 장치 클라이언트 설정으로 선택할 수 있습니다.<br /><br /> 이러한 인증서를 설정하는 단계는 이 항목에서 [Mac 컴퓨터용 클라이언트 인증서 배포](#BKMK_MacClient_SP1)를 참조하세요.|  
+|Certyfikat serwera sieci Web dla systemów lokacji z usługami IIS|Ten certyfikat służy do szyfrowania danych i uwierzytelniania serwera wobec klientów. Należy instalować go zewnętrznie z programu System Center Configuration Manager na serwerach systemów lokacji z systemem Internet Information Services (IIS), które są skonfigurowane w programie System Center Configuration Manager do używania protokołu HTTPS.<br /><br /> Aby uzyskać instrukcje dotyczące konfigurowania i instalowania tego certyfikatu, zobacz [wdrażania certyfikatu serwera sieci web dla systemów lokacji z usługami IIS](#BKMK_webserver2008_cm2012) w tym temacie.|  
+|Certyfikat usługi dla klientów do łączenia się z chmurowymi punktami dystrybucji|Aby uzyskać instrukcje dotyczące konfigurowania i instalowania tego certyfikatu, zobacz [wdrożenia certyfikatu usługi dla punktów dystrybucji w chmurze](#BKMK_clouddp2008_cm2012) w tym temacie.<br /><br /> **Ważne:** Ten certyfikat jest używany w połączeniu z certyfikatem zarządzania platformy Microsoft Azure. Aby uzyskać więcej informacji o certyfikacie zarządzania, zobacz [jak utworzyć certyfikat zarządzania](http://go.microsoft.com/fwlink/p/?LinkId=220281) i [jak dodać certyfikat zarządzania do subskrypcji systemu Windows Azure](http://go.microsoft.com/fwlink/?LinkId=241722) w sekcji platformy Windows Azure w bibliotece MSDN.|  
+|Certyfikat klienta dla komputerów z systemem Windows|Ten certyfikat służy do uwierzytelniania komputerów klienckich programu System Center Configuration Manager do systemów lokacji, które są skonfigurowane do używania protokołu HTTPS. Również umożliwia dla punktów zarządzania i punktów migracji stanu do monitorowania stanu operacyjnego, gdy są one skonfigurowane do używania protokołu HTTPS. Należy instalować go zewnętrznie z programu System Center Configuration Manager na komputerach.<br /><br /> Aby uzyskać instrukcje dotyczące konfigurowania i instalowania tego certyfikatu, zobacz [wdrażanie certyfikatu klienta dla komputerów z systemem Windows](#BKMK_client2008_cm2012) w tym temacie.|  
+|Certyfikat klienta dla punktów dystrybucji|Ten certyfikat ma dwa cele:<br /><br /> Certyfikat służy do uwierzytelniania punktu dystrybucji wobec punktu zarządzania z włączonym protokołem HTTPS przed wysłaniem przez dany punkt dystrybucji komunikatów o stanie.<br /><br /> Po wybraniu w punkcie dystrybucji opcji **Włącz obsługę środowiska PXE dla klientów** certyfikat zostanie wysłany do komputerów przeprowadzających rozruch w środowisku PXE, aby umożliwić im połączenie z punktem zarządzania z włączoną obsługą HTTPS podczas wdrażania systemu operacyjnego.<br /><br /> Aby uzyskać instrukcje dotyczące konfigurowania i instalowania tego certyfikatu, zobacz [wdrażanie certyfikatu klienta dla punktów dystrybucji](#BKMK_clientdistributionpoint2008_cm2012) w tym temacie.|  
+|Certyfikat rejestracji dla urządzeń przenośnych|Ten certyfikat służy do uwierzytelniania klientów urządzeń przenośnych programu System Center Configuration Manager do systemów lokacji, które są skonfigurowane do używania protokołu HTTPS. Musi być zainstalowany w ramach rejestracji urządzeń przenośnych w programie System Center Configuration Manager, a następnie wybierz skonfigurowany szablon certyfikatu jako ustawienie klienta urządzenia przenośnego.<br /><br /> Aby uzyskać instrukcje dotyczące konfigurowania tego certyfikatu, zobacz [wdrażanie certyfikatu rejestracji dla urządzeń przenośnych](#BKMK_mobiledevices2008_cm2012) w tym temacie.|  
+|Certyfikaty dla komputerów Intel AMT|Trzy certyfikaty odnoszą się do zarządzania poza pasmem komputerami opartymi na technologii Intel AMT:<ul><li>Certyfikat udostępniania technologii zarządzania aktywnego (AMT)</li><li>Certyfikat serwera sieci web AMT</li><li>Opcjonalnie certyfikat uwierzytelniania klienta dla 802.1 X sieci przewodowej lub bezprzewodowej</li></ul>Certyfikat udostępniania AMT musi być zainstalowany zewnętrznie z programu System Center Configuration Manager na komputerze punktu Usługi poza pasmem, a następnie wybierz certyfikat zainstalowany we właściwościach punktu Usługi poza pasmem. Certyfikat serwera sieci web AMT i certyfikat uwierzytelniania klienta są instalowane podczas udostępniania AMT i zarządzania i wybierz szablony certyfikatów skonfigurowane we właściwościach składnika zarządzania poza pasmem.<br /><br /> Aby uzyskać instrukcje dotyczące konfigurowania tych certyfikatów, zobacz [wdrożyć certyfikaty dla AMT](#BKMK_AMT2008_cm2012) w tym temacie.|  
+|Certyfikat klienta dla komputerów Mac|Można zażądać oraz instalacji tego certyfikatu z komputera Mac, użyj rejestracji za pomocą programu System Center Configuration Manager i wybrać jako ustawienie klienta urządzenia przenośnego skonfigurowany szablon certyfikatu.<br /><br /> Aby uzyskać instrukcje dotyczące konfigurowania tego certyfikatu, zobacz [wdrażanie certyfikatu klienta dla komputerów Mac](#BKMK_MacClient_SP1) w tym temacie.|  
 
-##  <a name="BKMK_webserver2008_cm2012"></a> IIS를 실행하는 사이트 시스템용 웹 서버 인증서 배포  
- 이 인증서 배포 절차는 다음과 같습니다.  
+##  <a name="BKMK_webserver2008_cm2012"></a>Wdrażanie certyfikatu serwera sieci web dla systemów lokacji z usługami IIS  
+ Wdrożenie tego certyfikatu jest objęte następującymi procedurami:  
 
--   인증 기관에서 웹 서버 인증서 템플릿 만들기 및 발급  
+-   Utworzyć i wystawić szablon certyfikatu w urzędzie certyfikacji serwera sieci web  
 
--   웹 서버 인증서 요청  
+-   Żądanie certyfikatu serwera sieci web  
 
--   웹 서버 인증서를 사용하도록 IIS 구성  
+-   Skonfiguruj usługi IIS do używania certyfikatu serwera sieci web  
 
-###  <a name="BKMK_webserver22008"></a> 인증 기관에서 웹 서버 인증서 템플릿 만들기 및 발급  
- 이 절차는 System Center Configuration Manager 사이트 시스템용 인증서 템플릿을 만들고 이를 인증 기관에 추가합니다.  
+###  <a name="BKMK_webserver22008"></a>Utworzyć i wystawić szablon certyfikatu w urzędzie certyfikacji serwera sieci web  
+ Ta procedura powoduje utworzenie szablonu certyfikatu dla systemów lokacji programu System Center Configuration Manager i dodaje go do urzędu certyfikacji.  
 
-##### <a name="to-create-and-issue-the-web-server-certificate-template-on-the-certification-authority"></a>인증 기관에서 웹 서버 인증서 템플릿을 만들고 발급하려면  
+##### <a name="to-create-and-issue-the-web-server-certificate-template-on-the-certification-authority"></a>Aby utworzyć i wystawić szablon certyfikatu serwera sieci Web w urzędzie certyfikacji  
 
-1.  IIS를 실행할 System Center Configuration Manager 사이트 시스템을 설치할 구성원 서버가 포함된 **ConfigMgr IIS Servers**라는 보안 그룹을 만듭니다.  
+1.  Utwórz grupę zabezpieczeń o nazwie **serwery IIS programu ConfigMgr** zawierającej serwery Członkowskie do zainstalowania systemów lokacji programu System Center Configuration Manager, z uruchomionymi usługami IIS.  
 
-2.  인증서 서비스가 설치된 구성원 서버에서, 인증 기관 콘솔에서 **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고 **관리**를 선택하여 **인증서 템플릿** 콘솔을 로드합니다.  
+2.  Na serwerze członkowskim z usługami certyfikatów zainstalowane, w konsoli Urząd certyfikacji kliknij prawym przyciskiem myszy **szablonów certyfikatów** , a następnie wybierz **Zarządzaj** załadować **szablonów certyfikatów** konsoli.  
 
-3.  결과 창에서 **템플릿 표시 이름** 열에 **웹 서버**가 있는 항목을 마우스 오른쪽 단추로 클릭하고 **중복된 템플릿**을 선택합니다.  
+3.  W okienku wyników kliknij prawym przyciskiem myszy wpis **serwera sieci Web** w **Nazwa wyświetlana szablonu** kolumny, a następnie wybierz pozycję **Duplikuj szablon**.  
 
-4.  **중복된 템플릿** 대화 상자에서 **Windows 2003 Server, Enterprise Edition**이 선택되어 있는지 확인하고 **확인**을 선택합니다.  
+4.  W **Duplikuj szablon** okna dialogowego Sprawdź, czy **systemu Windows Server 2003, Enterprise Edition** jest zaznaczone, a następnie wybierz pozycję **OK**.  
 
     > [!IMPORTANT]  
-    >  **Windows 2008 Server, Enterprise Edition**은 선택하지 마십시오.  
+    >  Nie wybieraj systemu **Windows 2008 Server, Enterprise Edition**.  
 
-5.  **새 템플릿의 속성** 대화 상자의 **일반** 탭에서 Configuration Manager 사이트 시스템에서 사용할 웹 인증서를 생성하는 템플릿 이름(예: **ConfigMgr Web Server Certificate**)을 입력합니다.  
+5.  W **właściwości nowego szablonu** na okna dialogowego **ogólne** wprowadź nazwę szablonu, takie jak **certyfikat serwera sieci Web programu ConfigMgr**, w celu wygenerowania certyfikatów sieci web, które będą używane w systemach lokacji programu Configuration Manager.  
 
-6.  **주체 이름** 탭을 선택하고 **요청에서 제공** 이 선택되어 있는지 확인합니다.  
+6.  Wybierz **nazwa podmiotu** karcie i upewnij się, że **Dostarcz w żądaniu** jest zaznaczone.  
 
-7.  **보안** 탭을 선택하고 **Domain Admins** 및 **Enterprise Admins** 보안 그룹에서 **등록** 권한을 제거합니다.  
+7.  Wybierz **zabezpieczeń** karcie, a następnie usuń **Zarejestruj** zgody **Administratorzy domeny** i **Administratorzy przedsiębiorstwa** grup zabezpieczeń.  
 
-8.  **추가**를 선택하고 텍스트 상자에 **ConfigMgr IIS Servers**를 입력한 후 **확인**을 선택합니다.  
+8.  Wybierz **Dodaj**, wprowadź **serwery IIS programu ConfigMgr** w tekście polu, a następnie wybierz pozycję **OK**.  
 
-9. 이 그룹에 대한 **등록** 권한을 선택하고, **읽기** 권한을 해제하지 않습니다.  
+9. Wybierz **Zarejestruj** dla tej grupy uprawnienie i nie usuwaj **odczytu** uprawnienia.  
 
-10. **확인**을 선택한 다음 **인증서 템플릿 콘솔**을 닫습니다.  
+10. Wybierz **OK**, a następnie Zamknij **konsolę Szablony certyfikatów**.  
 
-11. 인증 기관 콘솔에서 **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고 **새로 만들기**를 선택한 다음 **발급할 인증서 템플릿**을 선택합니다.  
+11. W konsoli Urząd certyfikacji kliknij prawym przyciskiem myszy **szablonów certyfikatów**, wybierz **nowy**, a następnie wybierz pozycję **szablon certyfikatu do wystawienia**.  
 
-12. **인증서 템플릿 사용** 대화 상자에서 방금 만든 새 템플릿 **ConfigMgr Web Server Certificate**를 선택하고 **확인**을 선택합니다.  
+12. W **Włączanie szablonu certyfikatu** okno dialogowe Nowy szablon, który właśnie utworzony, wybierz pozycję **certyfikat serwera sieci Web programu ConfigMgr**, a następnie wybierz pozycję **OK**.  
 
-13. 인증서를 더 만들고 발급할 필요가 없으면 **인증 기관**을 닫습니다.  
+13. Jeśli nie ma potrzeby tworzenia i wystawiania certyfikatów więcej, Zamknij **urzędu certyfikacji**.  
 
-###  <a name="BKMK_webserver32008"></a> 웹 서버 인증서 요청  
- 이 절차를 통해 사이트 시스템 서버 속성에서 설정할 인트라넷 및 인터넷 FQDN 값을 지정하고 IIS를 실행하는 구성원 서버에 웹 서버 인증서를 설치할 수 있습니다.  
+###  <a name="BKMK_webserver32008"></a>Żądanie certyfikatu serwera sieci web  
+ Ta procedura pozwala określić wartości intranetowej i internetowej nazwy FQDN wartości, które będą skonfigurowane we właściwościach serwera systemu lokacji, a następnie instaluje certyfikat serwera sieci web na serwerze członkowskim z uruchomionymi usługami IIS.  
 
-##### <a name="to-request-the-web-server-certificate"></a>웹 서버 인증서를 요청하려면  
+##### <a name="to-request-the-web-server-certificate"></a>Aby zażądać certyfikatu serwera sieci Web  
 
-1.  IIS를 실행하는 구성원 서버를 다시 시작하여, 컴퓨터에서 구성된 **읽기** 및 **등록** 권한을 사용하여 만들어진 인증서 템플릿에 액세스할 수 있는지 확인합니다.  
+1.  Uruchom ponownie serwer członkowski z uruchomionymi usługami IIS, aby upewnić się, że komputer ma dostęp do szablonu certyfikatu, który został utworzony za pomocą **odczytu** i **Zarejestruj** skonfigurowanych uprawnień.  
 
-2.  **시작**을 선택하고 **실행**을 선택한 다음 **mmc.exe**를 입력합니다. 비어 있는 콘솔에서 **파일**을 선택한 후 **스냅인 추가/제거**를 선택합니다.  
+2.  Wybierz **Start**, wybierz **Uruchom**, a następnie wpisz **mmc.exe.** W pustej konsoli wybierz **pliku**, a następnie wybierz pozycję **Dodaj/Usuń przystawkę**.  
 
-3.  **스냅인 추가/제거** 대화 상자의 **사용 가능한 스냅인** 목록에서 **인증서**를 선택하고 **추가**를 선택합니다.  
+3.  W **Dodawanie lub usuwanie przystawek** oknie dialogowym wybierz **certyfikaty** z listy **dostępne przystawki**, a następnie wybierz pozycję **Dodaj**.  
 
-4.  **인증서 스냅인** 대화 상자에서 **컴퓨터 계정**을 선택한 후에 **다음**을 선택합니다.  
+4.  W **certyfikatów przystawki** okno dialogowe Wybierz **konto komputera**, a następnie wybierz pozycję **dalej**.  
 
-5.  **컴퓨터 선택** 대화 상자에서 **로컬 컴퓨터:(이 콘솔이 실행되고 있는 컴퓨터)**가 선택되어 있는지 확인한 다음 **마침**을 선택합니다.  
+5.  W **Wybieranie komputera** okna dialogowego Sprawdź, czy **komputer lokalny: (komputer ten jest uruchomiona konsola)** jest zaznaczone, a następnie wybierz pozycję **Zakończ**.  
 
-6.  **스냅인 추가/제거** 대화 상자에서 **확인**을 선택합니다.  
+6.  W **Dodawanie lub usuwanie przystawek** oknie dialogowym wybierz **OK**.  
 
-7.  콘솔에서 **인증서(로컬 컴퓨터)**를 확장하고 **개인**을 선택합니다.  
+7.  W konsoli rozwiń węzeł **certyfikaty (komputer lokalny)**, a następnie wybierz pozycję **osobistych**.  
 
-8.  **인증서**를 마우스 오른쪽 단추로 클릭하고 **모든 작업**을 선택한 후에 **새 인증서 요청**을 선택합니다.  
+8.  Kliknij prawym przyciskiem myszy **certyfikaty**, wybierz **wszystkie zadania**, a następnie wybierz pozycję **Żądaj nowego certyfikatu**.  
 
-9. **시작하기 전에** 페이지에서 **다음**을 선택합니다.  
+9. Na **przed rozpoczęciem** wybierz pozycję **dalej**.  
 
-10. **인증서 등록 정책 선택** 페이지가 표시되면 **다음**을 선택합니다.  
+10. Jeśli widzisz **wybierz zasady rejestracji certyfikatu** wybierz pozycję **dalej**.  
 
-11. **인증서 요청** 페이지의 사용 가능한 인증서 목록에서 **ConfigMgr Web Server Certificate**를 확인한 후 **이 인증서를 등록하려면 추가 정보가 필요합니다. 설정을 구성하려면 여기를 클릭 하십시오**를 클릭합니다.  
+11. Na **żądania certyfikatów** Znajdź **certyfikat serwera sieci Web programu ConfigMgr** z listy dostępnych certyfikatów, a następnie wybierz pozycję **do zarejestrowania tego certyfikatu jest wymaganych więcej informacji. Kliknij tutaj, aby skonfigurować ustawienia**.  
 
-12. **인증서 속성** 대화 상자의 **주체** 탭에서 **주체 이름**에 대해 아무 것도 변경하지 않고 그대로 둡니다. 즉, **주체 이름** 섹션의 **값** 상자가 비어 있는 채로 둡니다. 대신 **대체 이름** 섹션에서 **유형** 드롭다운 목록을 선택하고 **DNS**를 선택합니다.  
+12. W **właściwości certyfikatu** okna dialogowego, **podmiotu** karcie, nie należy wprowadzać żadnych zmian do **nazwa podmiotu**. Inaczej mówiąc, pole **Wartość** w sekcji **Nazwa podmiotu** pozostanie puste. Zamiast tego w **alternatywnej nazwy** wybierz **typu** listy rozwijanej liście, a następnie wybierz pozycję **DNS**.  
 
-13. **값** 상자에 System Center Configuration Manager 사이트 시스템 속성에서 지정할 FQDN 값을 지정하고 **확인**을 선택하여 **인증서 속성** 대화 상자를 닫습니다.  
+13. W **wartość** określ te wartości nazw FQDN, które będą określonym we właściwościach systemu lokacji programu System Center Configuration Manager, a następnie wybierz pozycję **OK** zamknąć **właściwości certyfikatu** okno dialogowe.  
 
-     예제:  
+     Przykłady:  
 
-    -   사이트 시스템이 인트라넷에서만 클라이언트 연결을 수락하고 사이트 시스템 서버의 인트라넷 FQDN이 **server1.internal.contoso.com**일 경우: **server1.internal.contoso.com**을 입력하고 **추가**를 선택합니다.  
+    -   Jeśli system lokacji przyjmuje tylko połączenia klienckie z intranetu, a intranetowa nazwa FQDN serwera systemu lokacji to **server1.internal.contoso.com**, wprowadź **server1.internal.contoso.com**, a następnie wybierz pozycję **Dodaj**.  
 
-    -   사이트 시스템이 인트라넷과 인터넷에서 클라이언트 연결을 수락하며 사이트 시스템 서버의 인트라넷 FQDN이 **server1.internal.contoso.com** 이고 사이트 시스템 서버의 인터넷 FQDN이 **server.contoso.com**일 경우:  
+    -   Jeśli system lokacji przyjmuje połączenia klienckie i z intranetu, i z Internetu, przy czym intranetowa nazwa FQDN serwera systemu lokacji to **server1.internal.contoso.com** , a internetowa nazwa FQDN serwera systemu lokacji to **server.contoso.com**:  
 
-        1.  **server1.internal.contoso.com**을 입력하고 **추가**를 선택합니다.  
+        1.  Wprowadź **server1.internal.contoso.com**, a następnie wybierz pozycję **Dodaj**.  
 
-        2.  **server.contoso.com**을 입력하고 **추가**를 선택합니다.  
+        2.  Wprowadź **server.contoso.com**, a następnie wybierz pozycję **Dodaj**.  
 
         > [!NOTE]  
-        >  System Center Configuration Manager에 대한 FQDN은 아무 순서로나 지정할 수 있습니다. 그러나 모바일 장치와 프록시 웹 서버를 비롯한 인증서를 사용할 모든 장치에서 인증서 SAN(주체 대체 이름)을 사용하고 SAN에 여러 값을 사용할 수 있는지 확인해야 합니다. 장치가 인증서에서 SAN 값을 제한적으로 지원할 경우 FQDN의 순서를 변경하거나 대신 주체 값을 사용해야 할 수 있습니다.  
+        >  Można określić nazwy FQDN dla programu System Center Configuration Manager w dowolnej kolejności. Należy jednak sprawdzić, czy wszystkie urządzenia, które będą używać certyfikatu, takie jak urządzenia przenośne i serwerów proxy sieci web, można użyć nazwy alternatywnej podmiotu (SAN) certyfikatu oraz wielu wartości w sieci SAN. Jeśli urządzenia obsługują ograniczoną liczbę wartości SAN w certyfikatach, może zajść potrzeba zmiany kolejności nazw FQDN lub użycia zamiast nich wartości Podmiot.  
 
-14. **인증서 요청** 페이지의 사용 가능한 인증서 목록에서 **ConfigMgr Web Server Certificate**를 선택하고 **등록**을 선택합니다.  
+14. Na **żądania certyfikatów** wybierz pozycję **certyfikat serwera sieci Web programu ConfigMgr** z listy dostępnych certyfikatów, a następnie wybierz pozycję **Zarejestruj**.  
 
-15. **인증서 설치 결과** 페이지에서 인증서가 설치될 때까지 기다렸다가 **마침**을 선택합니다.  
+15. Na **wyniki instalacji certyfikatów** strony, poczekaj, aż certyfikat został zainstalowany, a następnie wybierz **Zakończ**.  
 
-16. **인증서(로컬 컴퓨터)**를 닫습니다.  
+16. Zamknij konsolę **Certyfikaty (komputer lokalny)**.  
 
-###  <a name="BKMK_webserver42008"></a> 웹 서버 인증서를 사용하도록 IIS 구성  
- 이 절차는 설치된 인증서를 IIS **기본 웹 사이트**에 바인딩합니다.  
+###  <a name="BKMK_webserver42008"></a>Skonfiguruj usługi IIS do używania certyfikatu serwera sieci web  
+ Ta procedura wiąże zainstalowany certyfikat z **Domyślną witryną sieci Web**usług IIS.  
 
-##### <a name="to-set-up-iis-to-use-the-web-server-certificate"></a>웹 서버 인증서를 사용하도록 IIS를 설정하려면  
+##### <a name="to-set-up-iis-to-use-the-web-server-certificate"></a>Aby skonfigurować usługi IIS do używania certyfikatu serwera sieci web  
 
-1.  IIS가 설치된 구성원 서버에서 **시작**, **프로그램**, **관리 도구**, **IIS(인터넷 정보 서비스) 관리자**를 차례로 선택합니다.  
+1.  Na serwerze członkowskim, na którym są zainstalowane usługi IIS, wybierz **Start**, wybierz **programy**, wybierz **narzędzia administracyjne**, a następnie wybierz pozycję **Internet Information Services (IIS) Manager**.  
 
-2.  **사이트**를 확장하고 **기본 웹 사이트**를 마우스 오른쪽 단추로 클릭한 후에 **바인딩 편집**을 선택합니다.  
+2.  Rozwiń węzeł **witryny**, kliknij prawym przyciskiem myszy **domyślna witryna sieci Web**, a następnie wybierz pozycję **Edytuj powiązania**.  
 
-3.  **https** 항목을 선택하고 **편집**을 선택합니다.  
+3.  Wybierz **https** wpis, a następnie wybierz pozycję **Edytuj**.  
 
-4.  **사이트 바인딩 편집** 대화 상자에서 ConfigMgr 웹 서버 인증서 템플릿을 사용하여 요청한 인증서를 선택하고 **확인**을 선택합니다.  
+4.  W **edytowanie powiązań witryny** okno dialogowe, wybierz certyfikat, którego zażądano za pomocą szablonu certyfikat serwera sieci Web programu ConfigMgr, a następnie **OK**.  
 
     > [!NOTE]  
-    >  올바른 인증서가 어느 것인지 확실하지 않은 경우 인증서를 하나 선택하고 **보기**를 선택합니다. 그러면 선택한 인증서 세부 정보를 인증서 스냅인의 인증서와 비교할 수 있습니다. 예를 들어 인증서 스냅인에는 인증서를 요청하는 데 사용된 인증서 템플릿이 표시됩니다. 그런 다음 ConfigMgr 웹 서버 인증서 템플릿을 사용하여 요청된 인증서의 인증서 지문을 **사이트 바인딩 편집** 대화 상자에서 현재 선택된 인증서의 인증서 지문과 비교할 수 있습니다.  
+    >  Jeśli nie masz pewności, który certyfikat jest tym właściwym, wybierz jedną, a następnie wybierz **widoku**. Pozwala to porównać szczegóły wybranego certyfikatu do certyfikatów w przystawce Certyfikaty. Na przykład przystawki Certyfikaty zawiera szablon certyfikatu, który został użyty do żądania certyfikatu. Możesz następnie porównać odcisk palca certyfikatu, którego zażądano za pomocą szablonu certyfikat serwera sieci Web programu ConfigMgr do odcisk palca certyfikatu aktualnie wybranego w **edytowanie powiązań witryny** okno dialogowe.  
 
-5.  **사이트 바인딩 편집** 대화 상자에서 **확인**을 선택하고 **닫기**를 선택합니다.  
+5.  Wybierz **OK** w **edytowanie powiązań witryny** okna dialogowego polu, a następnie wybierz pozycję **Zamknij**.  
 
-6.  **IIS(인터넷 정보 서비스) 관리자**를 닫습니다.  
+6.  Zamknij **Menedżera internetowych usług informacyjnych (IIS)**.  
 
- 이제 구성원 서버가 System Center Configuration Manager 웹 서버 인증서를 사용하여 설정됩니다.  
+ Serwer członkowski jest skonfigurowane przy użyciu certyfikatu serwera sieci web programu System Center Configuration Manager.  
 
 > [!IMPORTANT]  
->  이 컴퓨터에 System Center Configuration Manager 사이트 시스템을 설치하는 경우 인증서를 요청할 때 지정한 것과 동일한 FQDN을 사이트 시스템 속성에 지정해야 합니다.  
+>  Po zainstalowaniu serwera systemu lokacji programu System Center Configuration Manager na tym komputerze, upewnij się, określ tej samej nazwy FQDN we właściwościach systemu lokacji, jak określono podczas żądania certyfikatu.  
 
-##  <a name="BKMK_clouddp2008_cm2012"></a> 클라우드 기반 배포 지점용 서비스 인증서 배포  
+##  <a name="BKMK_clouddp2008_cm2012"></a>Wdrażanie certyfikatu usługi dla punktów dystrybucji w chmurze  
 
-이 인증서 배포 절차는 다음과 같습니다.  
+Wdrożenie tego certyfikatu jest objęte następującymi procedurami:  
 
--   [인증 기관에서 사용자 지정 웹 서버 인증서 템플릿 만들기 및 발급](#BKMK_clouddpcreating2008)  
+-   [Utworzyć i wydać szablon certyfikatu w urzędzie certyfikacji serwera sieci web niestandardowego](#BKMK_clouddpcreating2008)  
 
--   [사용자 지정 웹 서버 인증서 요청](#BKMK_clouddprequesting2008)  
+-   [Żądanie certyfikatu serwera sieci web niestandardowego](#BKMK_clouddprequesting2008)  
 
--   [클라우드 기반 배포 지점용 사용자 지정 웹 서버 인증서 내보내기](#BKMK_clouddpexporting2008)  
+-   [Eksportowanie certyfikatu serwera sieci web niestandardowego dla punktów dystrybucji w chmurze](#BKMK_clouddpexporting2008)  
 
-###  <a name="BKMK_clouddpcreating2008"></a> 인증 기관에서 사용자 지정 웹 서버 인증서 템플릿 만들기 및 발급  
- 이 절차는 웹 서버 인증서 템플릿을 기반으로 하는 사용자 지정 인증서 템플릿을 만듭니다. 인증서는 System Center Configuration Manager 클라우드 기반 배포 지점용이며 개인 키를 내보낼 수 있어야 합니다. 인증서 템플릿이 만들어진 후에는 인증 기관에 추가됩니다.  
+###  <a name="BKMK_clouddpcreating2008"></a>Utworzyć i wydać szablon certyfikatu w urzędzie certyfikacji serwera sieci web niestandardowego  
+ Ta procedura powoduje utworzenie niestandardowego szablonu certyfikatu opartego na szablonie certyfikatu serwera sieci web. Certyfikat jest przeznaczony dla punktów dystrybucji w chmurze programu System Center Configuration Manager i klucz prywatny musi być możliwy do eksportu. Po utworzeniu szablon certyfikatu jest dodawany do urzędu certyfikacji.  
 
 > [!NOTE]  
->  이 절차는 IIS를 실행하는 사이트 시스템에 대해 만든 웹 서버 인증서 템플릿과 다른 인증서 템플릿을 사용합니다. 두 인증서 모두 서버 인증 기능이 필요하지만 클라우드 기반 배포 지점용 인증서의 경우 주체 이름에 대해 사용자 지정 값을 입력해야 하고 개인 키를 내보내야 합니다. 이 구성이 필요한 경우를 제외하고 개인 키를 내보낼 수 있도록 인증서 템플릿을 설정하지 않는 것이 보안상 좋습니다. 클라우드 기반 배포 지점의 경우 인증서를 인증서 저장소에서 선택하지 않고 파일로 가져와야 하므로 이 구성이 필요합니다.  
+>  Ta procedura wykorzystuje inny szablon certyfikatu z utworzonego szablonu certyfikatu serwera sieci web dla systemów lokacji z usługami IIS. Mimo że certyfikaty wymagają funkcji uwierzytelniania serwera, certyfikat dla punktów dystrybucji w chmurze wymaga wprowadzenia niestandardowej wartości w polu Nazwa podmiotu i można wyeksportować klucza prywatnego. Zabezpieczeń najlepszym rozwiązaniem, czy nie Konfigurowanie szablonów certyfikatów, dzięki czemu można można wyeksportować klucza prywatnego, chyba że taka konfiguracja jest wymagana. Punkt dystrybucji w chmurze wymaga tej konfiguracji, ponieważ należy zaimportować certyfikat jako plik, zamiast wybierz go z magazynu certyfikatów.  
 >   
->  이 인증서에 대한 새 인증서 템플릿을 만들면 개인 키를 내보낼 수 있는, 인증서를 요청할 수 있는 컴퓨터를 제한할 수 있습니다. 프로덕션 네트워크에서는 이 인증서에 대해 다음과 같은 변경 내용을 추가하는 것도 고려해야 할 수 있습니다.  
+>  Podczas tworzenia nowego szablonu certyfikatu dla tego certyfikatu, można ograniczyć komputerów, które może zażądać certyfikatu, którego klucz prywatny można eksportować. W sieci produkcyjnej można także rozważyć wprowadzenie następujących zmian dla tego certyfikatu:  
 >   
->  -   승인이 있어야 인증서를 설치할 수 있도록 하여 보안 강화  
-> -   인증서 유효 기간 연장. 만료 전에 매번 인증서를 내보내고 가져와야 하므로 유효 기간을 늘리면 이 절차를 반복하는 횟수가 줄어듭니다. 그러나 유효 기간을 늘리면 공격자가 개인 키를 해독하여 인증서를 도용할 수 있는 시간이 늘어나므로 인증서 보안이 약화됩니다.  
-> -   인증서 SAN(주체 대체 이름)에 사용자 지정 값을 사용하여 IIS를 통해 사용하는 표준 웹 서버 인증서에서 이 인증서를 식별할 수 있도록 합니다.  
+>  -   Wymaganie zatwierdzenia instalacji certyfikatu w celu zapewnienia dodatkowych zabezpieczeń.  
+> -   Wydłużenie okresu ważności certyfikatu. Ponieważ należy wyeksportować i zaimportować certyfikat każdorazowo przed jego wygaśnięciem, zwiększenia okresu ważności zmniejsza częstotliwość należy powtórzyć całą procedurę. Jednak wzrost okresu ważności również zmniejszenie bezpieczeństwa certyfikatu, ponieważ zawiera więcej czasu osobie atakującej do odszyfrowania klucza prywatnego i kradzież certyfikatu.  
+> -   Użycie niestandardowej wartości nazwa alternatywnej podmiotu (SAN) w celu łatwiejszego odróżnienia tego certyfikatu od standardowych certyfikatów serwera sieci Web używanego z programem IIS.  
 
-##### <a name="to-create-and-issue-the-custom-web-server-certificate-template-on-the-certification-authority"></a>인증 기관에서 사용자 지정 웹 서버 인증서 템플릿을 만들고 발급하려면  
+##### <a name="to-create-and-issue-the-custom-web-server-certificate-template-on-the-certification-authority"></a>Aby utworzyć i wystawić szablon certyfikatu w urzędzie certyfikacji serwera sieci web niestandardowego  
 
-1.  구성원 서버가 있는 **ConfigMgr Site Servers**라는 보안 그룹을 만들어 클라우드 기반 배포 지점을 관리할 System Center Configuration Manager 기본 사이트 서버를 설치합니다.  
+1.  Utwórz grupę zabezpieczeń o nazwie **serwerów lokacji programu ConfigMgr** zawierającej serwery Członkowskie do zainstalowania serwerów lokacji podstawowej programu System Center Configuration Manager, które będą zarządzać punktami dystrybucji w chmurze.  
 
-2.  인증 기관 콘솔을 실행하는 구성원 서버에서 **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고 **관리**를 선택하여 인증서 템플릿 관리 콘솔을 로드합니다.  
+2.  Na serwerze członkowskim, na którym uruchomiona jest Konsola urzędu certyfikacji, kliknij prawym przyciskiem myszy **szablonów certyfikatów**, a następnie wybierz pozycję **Zarządzaj** aby załadować Konsolę zarządzania szablony certyfikatów.  
 
-3.  결과 창에서 **템플릿 표시 이름** 열에 **웹 서버**가 있는 항목을 마우스 오른쪽 단추로 클릭하고 **중복된 템플릿**을 선택합니다.  
+3.  W okienku wyników kliknij prawym przyciskiem myszy wpis **serwera sieci Web** w **Nazwa wyświetlana szablonu** kolumny, a następnie wybierz pozycję **Duplikuj szablon**.  
 
-4.  **중복된 템플릿** 대화 상자에서 **Windows 2003 Server, Enterprise Edition**이 선택되어 있는지 확인하고 **확인**을 선택합니다.  
+4.  W **Duplikuj szablon** okna dialogowego Sprawdź, czy **systemu Windows Server 2003, Enterprise Edition** jest zaznaczone, a następnie wybierz pozycję **OK**.  
 
     > [!IMPORTANT]  
-    >  **Windows 2008 Server, Enterprise Edition**은 선택하지 마십시오.  
+    >  Nie wybieraj systemu **Windows 2008 Server, Enterprise Edition**.  
 
-5.  **새 템플릿의 속성** 대화 상자의 **일반** 탭에서 클라우드 기반 배포 지점용 웹 서버 인증서를 생성할 템플릿 이름(예: **ConfigMgr Cloud-Based Distribution Point Certificate**)을 입력합니다.  
+5.  W **właściwości nowego szablonu** na okna dialogowego **ogólne** wprowadź nazwę szablonu, takie jak **certyfikat punktu dystrybucji w chmurze programu ConfigMgr**, w celu wygenerowania certyfikatu serwera sieci web dla punktów dystrybucji w chmurze.  
 
-6.  **요청 처리** 탭을 선택하고 **개인 키를 내보낼 수 있음**을 선택합니다.  
+6.  Wybierz **obsługiwanie żądań** karcie, a następnie wybierz pozycję **Zezwalaj na eksportowanie klucza prywatnego**.  
 
-7.  **보안** 탭을 선택하고 **Enterprise Admins** 보안 그룹에서 **등록** 권한을 제거합니다.  
+7.  Wybierz **zabezpieczeń** karcie, a następnie usuń **Zarejestruj** zgody **Administratorzy przedsiębiorstwa** grupy zabezpieczeń.  
 
-8.  **추가**를 선택하고 텍스트 상자에 **ConfigMgr Site Servers**를 입력한 후 **확인**을 선택합니다.  
+8.  Wybierz **Dodaj**, wprowadź **serwerów lokacji programu ConfigMgr** w tekście polu, a następnie wybierz pozycję **OK**.  
 
-9. 이 그룹에 대한 **등록** 권한을 선택하고, **읽기** 권한을 해제하지 않습니다.  
+9. Wybierz dla tej grupy uprawnienie **Rejestracja** i nie usuwaj zaznaczenia uprawnienia **Odczyt** .  
 
-10. **확인**을 선택한 다음 **인증서 템플릿 콘솔**을 닫습니다.  
+10. Wybierz **OK**, a następnie Zamknij **konsolę Szablony certyfikatów**.  
 
-11. 인증 기관 콘솔에서 **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고 **새로 만들기**를 선택한 다음 **발급할 인증서 템플릿**을 선택합니다.  
+11. W konsoli Urząd certyfikacji kliknij prawym przyciskiem myszy **szablonów certyfikatów**, wybierz **nowy**, a następnie wybierz pozycję **szablon certyfikatu do wystawienia**.  
 
-12. **인증서 템플릿 사용** 대화 상자에서 방금 만든 새 템플릿 **ConfigMgr Cloud-Based Distribution Point Certificate**을 선택하고 **확인**을 선택합니다.  
+12. W **Włączanie szablonu certyfikatu** okno dialogowe Nowy szablon, który właśnie utworzony, wybierz pozycję **certyfikat punktu dystrybucji w chmurze programu ConfigMgr**, a następnie wybierz pozycję **OK**.  
 
-13. 인증서를 더 만들고 발급할 필요가 없으면 **인증 기관**을 닫습니다.  
+13. Jeśli nie masz do tworzenia i wystawiania certyfikatów więcej, Zamknij **urzędu certyfikacji**.  
 
-###  <a name="BKMK_clouddprequesting2008"></a> 사용자 지정 웹 서버 인증서 요청  
- 이 절차는 사용자 지정 웹 서버 인증서를 요청하고 사이트 서버를 실행하는 구성원 서버에 설치합니다.  
+###  <a name="BKMK_clouddprequesting2008"></a>Żądanie certyfikatu serwera sieci web niestandardowego  
+ Ta procedura żądań, a następnie instaluje certyfikat serwera sieci web niestandardowego na serwerze członkowskim, który będzie uruchamiany na serwerze lokacji.  
 
-##### <a name="to-request-the-custom-web-server-certificate"></a>사용자 지정 웹 서버 인증서를 요청하려면  
+##### <a name="to-request-the-custom-web-server-certificate"></a>Aby zażądać niestandardowego certyfikatu serwera sieci Web  
 
-1.  컴퓨터에서 구성한 **읽기** 및 **등록** 권한을 사용하여 만든 인증서 템플릿에 액세스할 수 있도록 **ConfigMgr Site Servers** 보안 그룹을 만들고 구성한 후에 구성원 서버를 다시 시작합니다.  
+1.  Uruchom ponownie serwer członkowski po utworzeniu i skonfigurowaniu **serwerów lokacji programu ConfigMgr** grupy zabezpieczeń, aby upewnić się, że komputer ma dostęp do szablonu certyfikatu, który został utworzony za pomocą **odczytu** i **Zarejestruj** skonfigurowanych uprawnień.  
 
-2.  **시작**을 선택하고 **실행**을 선택한 다음 **mmc.exe**를 입력합니다. 비어 있는 콘솔에서 **파일**을 선택한 후 **스냅인 추가/제거**를 선택합니다.  
+2.  Wybierz **Start**, wybierz **Uruchom**, a następnie wprowadź **mmc.exe.** W pustej konsoli wybierz **pliku**, a następnie wybierz pozycję **Dodaj/Usuń przystawkę**.  
 
-3.  **스냅인 추가/제거** 대화 상자의 **사용 가능한 스냅인** 목록에서 **인증서**를 선택하고 **추가**를 선택합니다.  
+3.  W **Dodawanie lub usuwanie przystawek** oknie dialogowym wybierz **certyfikaty** z listy **dostępne przystawki**, a następnie wybierz pozycję **Dodaj**.  
 
-4.  **인증서 스냅인** 대화 상자에서 **컴퓨터 계정**을 선택한 후에 **다음**을 선택합니다.  
+4.  W **certyfikatów przystawki** okno dialogowe Wybierz **konto komputera**, a następnie wybierz pozycję **dalej**.  
 
-5.  **컴퓨터 선택** 대화 상자에서 **로컬 컴퓨터:(이 콘솔이 실행되고 있는 컴퓨터)**가 선택되어 있는지 확인한 다음 **마침**을 선택합니다.  
+5.  W **Wybieranie komputera** okna dialogowego Sprawdź, czy **komputer lokalny: (komputer ten jest uruchomiona konsola)** jest zaznaczone, a następnie wybierz pozycję **Zakończ**.  
 
-6.  **스냅인 추가/제거** 대화 상자에서 **확인**을 선택합니다.  
+6.  W **Dodawanie lub usuwanie przystawek** oknie dialogowym wybierz **OK**.  
 
-7.  콘솔에서 **인증서(로컬 컴퓨터)**를 확장하고 **개인**을 선택합니다.  
+7.  W konsoli rozwiń węzeł **certyfikaty (komputer lokalny)**, a następnie wybierz pozycję **osobistych**.  
 
-8.  **인증서**를 마우스 오른쪽 단추로 클릭하고 **모든 작업**을 선택한 후에 **새 인증서 요청**을 선택합니다.  
+8.  Kliknij prawym przyciskiem myszy **certyfikaty**, wybierz **wszystkie zadania**, a następnie wybierz pozycję **Żądaj nowego certyfikatu**.  
 
-9. **시작하기 전에** 페이지에서 **다음**을 선택합니다.  
+9. Na **przed rozpoczęciem** wybierz pozycję **dalej**.  
 
-10. **인증서 등록 정책 선택** 페이지가 표시되면 **다음**을 선택합니다.  
+10. Jeśli widzisz **wybierz zasady rejestracji certyfikatu** wybierz pozycję **dalej**.  
 
-11. **인증서 요청** 페이지의 사용 가능한 인증서 목록에서 **ConfigMgr Cloud-Based Distribution Point Certificate**를 확인한 후 **More information is required to enroll for this certificate. choose here to configure settings**(이 인증서를 등록하려면 추가 정보가 필요합니다. 설정을 구성하려면 여기를 선택하세요.)를 선택합니다.  
+11. Na **żądania certyfikatów** Znajdź **certyfikat punktu dystrybucji w chmurze programu ConfigMgr** z listy dostępnych certyfikatów, a następnie wybierz pozycję **więcej informacji jest wymagany do zarejestrowania dla tego certyfikatu. Wybierz tutaj Konfigurowanie ustawień**.  
 
-12. **인증서 속성** 대화 상자의 **주체** 탭에서 **주체 이름**의 **유형**으로 **일반 이름**을 선택합니다.  
+12. W **właściwości certyfikatu** okna dialogowego, **podmiotu** karcie dla **nazwa podmiotu**, wybierz **nazwa pospolita** jako **typu**.  
 
-13. **값** 상자에서 FQDN 형식을 사용하여 원하는 서비스 이름과 도메인 이름을 지정합니다. **clouddp1.contoso.com**등을 지정할 수 있습니다.  
-
-    > [!NOTE]  
-    >  네임스페이스에서 서비스 이름을 고유하게 만드세요. DNS를 사용하여 별칭(CNAME 레코드)을 만들고 이 서비스 이름을 자동으로 생성된 식별자(GUID)와 Windows Azure IP 주소에 매핑하게 됩니다.  
-
-14. **추가**를 선택하고 **확인**을 선택하여 **인증서 속성** 대화 상자를 닫습니다.  
-
-15. **인증서 요청** 페이지의 사용 가능한 인증서 목록에서 **ConfigMgr Cloud-Based Distribution Point Certificate**를 선택하고 **등록**을 선택합니다.  
-
-16. **인증서 설치 결과** 페이지에서 인증서가 설치될 때까지 기다렸다가 **마침**을 선택합니다.  
-
-17. **인증서(로컬 컴퓨터)**를 닫습니다.  
-
-###  <a name="BKMK_clouddpexporting2008"></a> 클라우드 기반 배포 지점용 사용자 지정 웹 서버 인증서 내보내기  
- 이 절차는 클라우드 기반 배포 지점을 만들 때 가져올 수 있도록 사용자 지정 웹 서버 인증서를 파일로 내보냅니다.  
-
-##### <a name="to-export-the-custom-web-server-certificate-for-cloud-based-distribution-points"></a>클라우드 기반 배포 지점용 사용자 지정 웹 서버 인증서를 내보내려면  
-
-1.  **인증서(로컬 컴퓨터)** 콘솔에서 방금 설치한 인증서를 마우스 오른쪽 단추로 클릭하고 **모든 작업**을 선택한 후에 **내보내기**를 선택합니다.  
-
-2.  인증서 내보내기 마법사에서 **다음**을 선택합니다.  
-
-3.  **개인 키 내보내기** 페이지에서 **예, 개인 키를 내보냅니다**를 선택하고 **다음**을 선택합니다.  
+13. W polu **Wartość** określ wybór nazwy usługi i nazwy domeny, używając formatu FQDN. Na przykład: **clouddp1.contoso.com**.  
 
     > [!NOTE]  
-    >  이 옵션을 사용할 수 없는 경우 개인 키를 내보내는 옵션 없이 인증서가 만들어진 것입니다. 이 시나리오에서는 필요한 형식으로 인증서를 내보낼 수 없습니다. 개인 키를 내보낼 수 있도록 인증서 템플릿을 설정한 후에 인증서를 다시 요청해야 합니다.  
+    >  Nazwa usługi należy unikatowa w danym obszarze nazw. Zostanie użyty system DNS w celu utworzenia aliasu (rekordu CNAME) i odwzorowania tej nazwy usługi na automatycznie generowany identyfikator (GUID) i adres IP z usługi Windows Azure.  
 
-4.  **파일 내보내기 형식** 페이지에서 **개인 정보 교환 - PKCS #12(.PFX)** 옵션이 선택되어 있는지 확인합니다.  
+14. Wybierz **Dodaj**, a następnie wybierz pozycję **OK** zamknąć **właściwości certyfikatu** okno dialogowe.  
 
-5.  **암호** 페이지에서 개인 키를 사용하여 내보내는 인증서를 보호하도록 강력한 암호를 지정하고 **다음**을 선택합니다.  
+15. Na **żądania certyfikatów** wybierz pozycję **certyfikat punktu dystrybucji w chmurze programu ConfigMgr** z listy dostępnych certyfikatów, a następnie wybierz pozycję **Zarejestruj**.  
 
-6.  **내보낼 파일** 페이지에서 내보낼 파일의 이름을 지정하고 **다음**을 선택합니다.  
+16. Na **wyniki instalacji certyfikatów** strony, poczekaj, aż certyfikat został zainstalowany, a następnie wybierz **Zakończ**.  
 
-7.  마법사를 닫으려면 **인증서 내보내기 마법사** 페이지에서 **마침**을 선택하고 확인 대화 상자에서 **확인**을 선택합니다.  
+17. Zamknij konsolę **Certyfikaty (komputer lokalny)**.  
 
-8.  **인증서(로컬 컴퓨터)**를 닫습니다.  
+###  <a name="BKMK_clouddpexporting2008"></a>Eksportowanie certyfikatu serwera sieci web niestandardowego dla punktów dystrybucji w chmurze  
+ Ta procedura umożliwia wyeksportowanie niestandardowego certyfikatu serwera sieci Web do pliku, aby można go było zaimportować po utworzeniu chmurowego punktu dystrybucji.  
 
-9. 파일을 안전하게 저장하고 System Center Configuration Manager 콘솔에서 액세스할 수 있는지 확인합니다.  
+##### <a name="to-export-the-custom-web-server-certificate-for-cloud-based-distribution-points"></a>Aby wyeksportować niestandardowy certyfikat serwera sieci Web dla chmurowych punktów dystrybucji  
 
- 이제 클라우드 기반 배포 지점을 만들 때 인증서를 가져올 수 있습니다.  
+1.  W **certyfikaty (komputer lokalny)** konsoli, kliknij prawym przyciskiem myszy certyfikat, który został właśnie zainstalowany, wybierz **wszystkie zadania**, a następnie wybierz pozycję **wyeksportować**.  
 
-##  <a name="BKMK_client2008_cm2012"></a> Windows 컴퓨터용 클라이언트 인증서 배포  
- 이 인증서 배포 절차는 다음과 같습니다.  
+2.  W Kreatorze eksportu certyfikatów wybierz **dalej**.  
 
--   인증 기관에서 워크스테이션 인증 인증서 템플릿 만들기 및 발급  
+3.  Na **eksportowanie klucza prywatnego** wybierz pozycję **tak, Eksportuj klucz prywatny**, a następnie wybierz pozycję **dalej**.  
 
--   그룹 정책을 사용하여 워크스테이션 인증 템플릿의 자동 등록 구성  
+    > [!NOTE]  
+    >  Jeżeli ta opcja nie jest dostępna, certyfikat został utworzony bez opcji eksportu klucza prywatnego. W tym scenariuszu nie można wyeksportować certyfikatu w wymaganym formacie. Należy skonfigurować szablon certyfikatu, aby klucz prywatny można wyeksportować, a następnie zażądać certyfikatu ponownie.  
 
--   워크스테이션 인증 인증서 자동 등록 및 컴퓨터에서 설치 확인  
+4.  Na **Format pliku eksportu** strony, upewnij się, że **wymiana informacji osobistych — PKCS #12 (. PFX)** opcja jest zaznaczona.  
 
-###  <a name="BKMK_client02008"></a> 인증 기관에서 워크스테이션 인증 인증서 템플릿 만들기 및 발급  
- 이 절차에서는 System Center Configuration Manager 클라이언트 컴퓨터용 인증서 템플릿을 만들고 이를 인증 기관에 추가합니다.  
+5.  Na **hasło** Określ silne hasło, aby zabezpieczyć wyeksportowany certyfikat kluczem prywatnym, a następnie wybierz pozycję **dalej**.  
 
-##### <a name="to-create-and-issue-the-workstation-authentication-certificate-template-on-the-certification-authority"></a>인증 기관에서 워크스테이션 인증 인증서 템플릿을 만들고 발급하려면  
+6.  Na **Eksport pliku** strony, określ nazwę pliku, który chcesz wyeksportować, a następnie wybierz pozycję **dalej**.  
 
-1.  인증 기관 콘솔을 실행하는 구성원 서버에서 **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고 **관리**를 선택하여 인증서 템플릿 관리 콘솔을 로드합니다.  
+7.  Aby zamknąć kreatora, należy wybrać **Zakończ** w **Kreatora eksportu certyfikatów** strony, a następnie wybierz pozycję **OK** w oknie dialogowym potwierdzenia.  
 
-2.  결과 창에서 **템플릿 표시 이름** 열의 **워크스테이션 인증**이 있는 항목을 마우스 오른쪽 단추로 클릭하고 **중복된 템플릿**을 선택합니다.  
+8.  Zamknij konsolę **Certyfikaty (komputer lokalny)**.  
 
-3.  **중복된 템플릿** 대화 상자에서 **Windows 2003 Server, Enterprise Edition**이 선택되어 있는지 확인하고 **확인**을 선택합니다.  
+9. Zapisz plik w bezpiecznym miejscu i upewnij się, że można do niego dostęp z konsoli programu System Center Configuration Manager.  
+
+ Certyfikat jest teraz gotowy do zaimportowania po utworzeniu chmurowego punktu dystrybucji.  
+
+##  <a name="BKMK_client2008_cm2012"></a>Wdrażanie certyfikatu klienta dla komputerów z systemem Windows  
+ Wdrożenie tego certyfikatu jest objęte następującymi procedurami:  
+
+-   Utworzyć i wydać szablon certyfikatu uwierzytelniania stacji roboczej w urzędzie certyfikacji  
+
+-   Konfigurowanie automatycznej rejestracji szablonu uwierzytelniania stacji roboczej za pomocą zasad grupy  
+
+-   Automatyczne rejestrowanie certyfikatu uwierzytelniania stacji roboczej i zweryfikować jego instalację na komputerach  
+
+###  <a name="BKMK_client02008"></a>Utworzyć i wydać szablon certyfikatu uwierzytelniania stacji roboczej w urzędzie certyfikacji  
+ Ta procedura powoduje utworzenie szablonu certyfikatu dla klienta programu System Center Configuration Manager z komputerów i dodaje go do urzędu certyfikacji.  
+
+##### <a name="to-create-and-issue-the-workstation-authentication-certificate-template-on-the-certification-authority"></a>Aby utworzyć i wydać szablon certyfikatu uwierzytelniania stacji roboczej w urzędzie certyfikacji  
+
+1.  Na serwerze członkowskim, na którym uruchomiona jest Konsola urzędu certyfikacji, kliknij prawym przyciskiem myszy **szablonów certyfikatów**, a następnie wybierz pozycję **Zarządzaj** aby załadować Konsolę zarządzania szablony certyfikatów.  
+
+2.  W okienku wyników kliknij prawym przyciskiem myszy wpis **Uwierzytelnianie stacji roboczej** w **Nazwa wyświetlana szablonu** kolumny, a następnie wybierz pozycję **Duplikuj szablon**.  
+
+3.  W **Duplikuj szablon** okna dialogowego Sprawdź, czy **systemu Windows Server 2003, Enterprise Edition** jest zaznaczone, a następnie wybierz pozycję **OK**.  
 
     > [!IMPORTANT]  
-    >  **Windows 2008 Server, Enterprise Edition**은 선택하지 마십시오.  
+    >  Nie wybieraj systemu **Windows 2008 Server, Enterprise Edition**.  
 
-4.  **새 템플릿의 속성** 대화 상자의 **일반** 탭에서 Configuration Manager 클라이언트 컴퓨터에서 사용할 클라이언트 인증서를 생성할 템플릿 이름(예: **ConfigMgr Client Certificate**)을 입력합니다.  
+4.  W **właściwości nowego szablonu** na okna dialogowego **ogólne** wprowadź nazwę szablonu, takie jak **certyfikat klienta programu ConfigMgr**, w celu wygenerowania certyfikatów klienta, które zostaną użyte na komputerach klienckich programu Configuration Manager.  
 
-5.  **보안** 탭을 선택하고 **도메인 컴퓨터** 그룹을 선택한 후에 추가 권한으로 **읽기** 및 **자동 등록**을 선택합니다. **등록**을 선택 취소하지 마십시오.  
+5.  Wybierz **zabezpieczeń** wybierz opcję **komputery domeny** , a następnie wybierz dodatkowe uprawnienia **odczytu** i **Autorejestrowanie**. Nie usuwaj zaznaczenia opcji **Rejestracja**.  
 
-6.  **확인**을 선택한 다음 **인증서 템플릿 콘솔**을 닫습니다.  
+6.  Wybierz **OK**, a następnie Zamknij **konsolę Szablony certyfikatów**.  
 
-7.  인증 기관 콘솔에서 **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고 **새로 만들기**를 선택한 다음 **발급할 인증서 템플릿**을 선택합니다.  
+7.  W konsoli Urząd certyfikacji kliknij prawym przyciskiem myszy **szablonów certyfikatów**, wybierz **nowy**, a następnie wybierz pozycję **szablon certyfikatu do wystawienia**.  
 
-8.  **인증서 템플릿 사용** 대화 상자에서 방금 만든 새 템플릿 **ConfigMgr Client Certificate**를 선택하고 **확인**을 선택합니다.  
+8.  W **Włączanie szablonu certyfikatu** okno dialogowe Nowy szablon, który właśnie utworzony, wybierz pozycję **certyfikat klienta programu ConfigMgr**, a następnie wybierz pozycję **OK**.  
 
-9. 인증서를 더 만들고 발급할 필요가 없으면 **인증 기관**을 닫습니다.  
+9. Jeśli nie ma potrzeby tworzenia i wystawiania certyfikatów więcej, Zamknij **urzędu certyfikacji**.  
 
-###  <a name="BKMK_client12008"></a> 그룹 정책을 사용하여 워크스테이션 인증 템플릿의 자동 등록 구성  
- 이 절차는 컴퓨터에서 클라이언트 인증서를 자동으로 등록하도록 그룹 정책을 설정합니다.  
+###  <a name="BKMK_client12008"></a>Konfigurowanie automatycznej rejestracji szablonu uwierzytelniania stacji roboczej za pomocą zasad grupy  
+ Ta procedura konfiguruje zasady grupy do autorejestrowania certyfikatu klienta na komputerach.  
 
-##### <a name="to-set-up-autoenrollment-of-the-workstation-authentication-template-by-using-group-policy"></a>그룹 정책을 사용하여 워크스테이션 인증 템플릿의 자동 등록을 설정하려면  
+##### <a name="to-set-up-autoenrollment-of-the-workstation-authentication-template-by-using-group-policy"></a>Aby skonfigurować autorejestrację szablonu uwierzytelniania stacji roboczej za pomocą zasad grupy  
 
-1.  도메인 컨트롤러에서 **시작**, **관리 도구**, **그룹 정책 관리**를 차례로 선택합니다.  
+1.  Na kontrolerze domeny, wybierz **Start**, wybierz **narzędzia administracyjne**, a następnie wybierz pozycję **Zarządzanie zasadami grupy**.  
 
-2.  도메인으로 이동하여 마우스 오른쪽 단추로 클릭하고 **이 도메인에서 GPO를 만들어 여기에 연결**을 선택합니다.  
-
-    > [!NOTE]  
-    >  이 단계는 Active Directory Domain Services와 함께 설치되는 기본 도메인 정책을 편집하지 않고 사용자 지정 설정을 위한 새 그룹 정책을 만드는 모범 사례를 사용합니다. 도메인 수준에서 이 그룹 정책을 할당하면 도메인의 모든 컴퓨터에 그룹 정책을 적용하게 됩니다. 프로덕션 환경에서 선택한 컴퓨터에만 등록되도록 자동 등록을 제한할 수 있습니다. 조직 구성 단위 수준에서 그룹 정책을 할당할 수 있거나 그룹의 컴퓨터에만 적용되도록 보안 그룹으로 도메인 그룹 정책을 필터링할 수 있습니다. 자동 등록을 제한하는 경우 관리 지점으로 설정된 서버를 포함해야 합니다.  
-
-3.  **새 GPO** 대화 상자에 새 그룹 정책의 이름(예: **Autoenroll Certificates**)을 입력하고 **확인**을 선택합니다.  
-
-4.  결과 창의 **연결된 그룹 정책 개체** 탭에서 새 그룹 정책을 마우스 오른쪽 단추로 클릭하고 **편집**을 선택합니다.  
-
-5.  **그룹 정책 관리 편집기**에서 **컴퓨터 구성** 아래의 **정책**을 확장한 다음 **Windows 설정** / **보안 설정** / **공개 키 정책**으로 이동합니다.  
-
-6.  **인증서 서비스 클라이언트 – 자동 등록**이라는 개체 형식을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 선택합니다.  
-
-7.  **구성 모델** 드롭다운 목록에서 **사용**, **만료된 인증서 갱신, 보류 중인 인증서 업데이트, 해지된 인증서 제거**, **인증서 템플릿을 사용하는 인증서 업데이트**를 차례로 선택한 후에 **확인**을 선택합니다.  
-
-8.  **그룹 정책 관리**를 닫습니다.  
-
-###  <a name="BKMK_client22008"></a> 워크스테이션 인증 인증서 자동 등록 및 컴퓨터에서 설치 확인  
- 이 절차는 컴퓨터에 클라이언트 인증서를 설치하고 설치를 확인합니다.  
-
-##### <a name="to-automatically-enroll-the-workstation-authentication-certificate-and-verify-its-installation-on-the-client-computer"></a>워크스테이션 인증 인증서를 자동으로 등록하고 클라이언트 컴퓨터에서 설치를 확인하려면  
-
-1.  워크스테이션 컴퓨터를 다시 시작하고 몇 분 기다렸다가 다시 로그인합니다.  
+2.  Przejdź do domeny, kliknij prawym przyciskiem myszy domenę, a następnie wybierz pozycję **Utwórz obiekt GPO w tej domenie i umieść tu łącze**.  
 
     > [!NOTE]  
-    >  컴퓨터를 다시 시작하는 것이 인증서를 자동으로 등록하기 위한 가장 안정적인 방법입니다.  
+    >  W tym kroku wykorzystano najlepsze rozwiązanie dotyczące tworzenia nowej zasady grupy dla ustawień niestandardowych zamiast edycji domyślnych zasad domeny instalowanych za pomocą usług domenowych w usłudze Active Directory. Po przypisaniu zasad grupy na poziomie domeny spowoduje zastosować je do wszystkich komputerów w domenie. W środowisku produkcyjnym można ograniczyć autorejestrację tak, aby dotyczyła ona tylko wybranych komputerów. Można przypisać zasady grupy na poziomie jednostki organizacyjnej lub zasad grupy z grupą zabezpieczeń domeny można filtrować, że jest ona stosowana tylko do komputerów w grupie. Jeśli przypadku ograniczenia autorejestracji należy pamiętać o uwzględnieniu serwera, który jest skonfigurowany jako punkt zarządzania.  
 
-2.  관리자 권한이 있는 계정으로 로그인합니다.  
+3.  W **nowy obiekt zasad grupy** okna dialogowego wprowadź nazwę, jak **autorejestrowanie certyfikatów**, nowe zasady grupy, a następnie wybierz pozycję **OK**.  
 
-3.  검색 상자에 **mmc.exe**를 입력한 후 **Enter** 키를 누릅니다.  
+4.  W okienku wyników na **powiązane obiekty zasad grupy** karcie, kliknij prawym przyciskiem myszy nową zasadę grupy, a następnie wybierz **Edytuj**.  
 
-4.  비어 있는 관리 콘솔에서 **파일**을 선택한 후 **스냅인 추가/제거**를 선택합니다.  
+5.  W **Edytor zarządzania zasadami grupy**, rozwiń węzeł **zasady** w obszarze **Konfiguracja komputera**, a następnie przejdź do **ustawienia systemu Windows** / **ustawienia zabezpieczeń** / **zasady kluczy publicznych**.  
 
-5.  **스냅인 추가/제거** 대화 상자의 **사용 가능한 스냅인** 목록에서 **인증서**를 선택하고 **추가**를 선택합니다.  
+6.  Kliknij prawym przyciskiem myszy typ obiektu o nazwie **klient usług certyfikatów — automatyczna rejestracja**, a następnie wybierz pozycję **właściwości**.  
 
-6.  **인증서 스냅인** 대화 상자에서 **컴퓨터 계정**을 선택한 후에 **다음**을 선택합니다.  
+7.  Z **Model konfiguracji** listy rozwijanej wybierz pozycję **włączone**, wybierz **Odnów wygasłe certyfikaty, aktualizuj oczekujące certyfikaty, usuń odwołane certyfikaty**, wybierz **Aktualizuj certyfikaty, które używają szablonów certyfikatów**, a następnie wybierz pozycję **OK**.  
 
-7.  **컴퓨터 선택** 대화 상자에서 **로컬 컴퓨터:(이 콘솔이 실행되고 있는 컴퓨터)**가 선택되어 있는지 확인한 다음 **마침**을 선택합니다.  
+8.  Zamknij okno **Zarządzanie zasadami grupy**.  
 
-8.  **스냅인 추가/제거** 대화 상자에서 **확인**을 선택합니다.  
+###  <a name="BKMK_client22008"></a>Automatyczne rejestrowanie certyfikatu uwierzytelniania stacji roboczej i zweryfikować jego instalację na komputerach  
+ Ta procedura powoduje zainstalowanie certyfikatu klienta na komputerach i weryfikację instalacji.  
 
-9. 콘솔에서 **인증서(로컬 컴퓨터)**를 확장하고 **개인**을 확장한 후에 **인증서**를 선택합니다.  
+##### <a name="to-automatically-enroll-the-workstation-authentication-certificate-and-verify-its-installation-on-the-client-computer"></a>Aby automatycznie zarejestrować certyfikat uwierzytelniania stacji roboczej i zweryfikować jego instalację na komputerze klienckim  
 
-10. 결과 창에서, 인증서의 **용도** 열에 **클라이언트 인증**이 있는지 확인하고 **ConfigMgr Client Certificate**가 **인증서 템플릿** 열에 있는지 확인합니다.  
+1.  Uruchom ponownie stację roboczą i poczekaj kilka minut przed zalogowaniem.  
 
-11. **인증서(로컬 컴퓨터)**를 닫습니다.  
+    > [!NOTE]  
+    >  Ponowne uruchomienie komputera to najbardziej niezawodna metoda zapewnienia pomyślnej autorejestracji certyfikatu.  
 
-12. 구성원 서버에 대해 1~11단계를 반복하여 관리 지점으로 설정될 서버에도 클라이언트 인증서가 있는지 확인합니다.  
+2.  Zaloguj się przy użyciu konta z uprawnieniami administratora.  
 
- 이제 컴퓨터는 System Center Configuration Manager 클라이언트 인증서를 사용하여 설정됩니다.  
+3.  W polu wyszukiwania wprowadź **mmc.exe.**, a następnie naciśnij klawisz **Enter**.  
 
-##  <a name="BKMK_clientdistributionpoint2008_cm2012"></a> 배포 지점용 클라이언트 인증서 배포  
+4.  W pustej konsoli zarządzania, wybierz **pliku**, a następnie wybierz pozycję **Dodaj/Usuń przystawkę**.  
+
+5.  W **Dodawanie lub usuwanie przystawek** oknie dialogowym wybierz **certyfikaty** z listy **dostępne przystawki**, a następnie wybierz pozycję **Dodaj**.  
+
+6.  W **certyfikatów przystawki** okno dialogowe Wybierz **konto komputera**, a następnie wybierz pozycję **dalej**.  
+
+7.  W **Wybieranie komputera** okna dialogowego Sprawdź, czy **komputer lokalny: (komputer ten jest uruchomiona konsola)** jest zaznaczone, a następnie wybierz pozycję **Zakończ**.  
+
+8.  W **Dodawanie lub usuwanie przystawek** oknie dialogowym wybierz **OK**.  
+
+9. W konsoli rozwiń węzeł **certyfikaty (komputer lokalny)**, rozwiń węzeł **osobistych**, a następnie wybierz pozycję **certyfikaty**.  
+
+10. W okienku wyników sprawdź, czy certyfikat ma **uwierzytelnianie klienta** w **zamierzony cel** kolumny, a **certyfikat klienta programu ConfigMgr** w **szablonu certyfikatu** kolumny.  
+
+11. Zamknij konsolę **Certyfikaty (komputer lokalny)**.  
+
+12. Powtórz kroki od 1 do 11 dla serwera członkowskiego, aby sprawdzić, czy serwer, który będzie można skonfigurować jako punkt zarządzania również jest certyfikat klienta.  
+
+ Komputer jest skonfigurowany z certyfikatem klienta programu System Center Configuration Manager.  
+
+##  <a name="BKMK_clientdistributionpoint2008_cm2012"></a>Wdrażanie certyfikatu klienta dla punktów dystrybucji  
 
 > [!NOTE]  
->  인증서 요구 사항이 동일하기 때문에 PXE 부팅을 사용하지 않는 미디어 이미지에도 이 인증서를 사용할 수 있습니다.  
+>  Tego certyfikatu można także użyć dla obrazów nośników, które nie używają rozruchu PXE, ponieważ wymagania dotyczące certyfikatu są takie same.  
 
- 이 인증서 배포 절차는 다음과 같습니다.  
+ Wdrożenie tego certyfikatu jest objęte następującymi procedurami:  
 
--   인증 기관에서 사용자 지정 워크스테이션 인증 인증서 템플릿 만들기 및 발급  
+-   Utworzyć i wydać niestandardowy szablon certyfikatu uwierzytelniania stacji roboczej w urzędzie certyfikacji  
 
--   사용자 지정 워크스테이션 인증 인증서 요청  
+-   Żądanie niestandardowego certyfikatu uwierzytelniania stacji roboczej  
 
--   배포 지점용 클라이언트 인증서 내보내기  
+-   Wyeksportuj certyfikat klienta dla punktów dystrybucji  
 
-###  <a name="BKMK_clientdistributionpoint02008"></a> 인증 기관에서 사용자 지정 워크스테이션 인증 인증서 템플릿 만들기 및 발급  
- 이 절차는 개인 키를 내보낼 수 있도록 System Center Configuration Manager 배포 지점용 사용자 지정 인증서 템플릿을 만들고 인증 기관에 인증서 템플릿을 추가합니다.  
+###  <a name="BKMK_clientdistributionpoint02008"></a>Utworzyć i wydać niestandardowy szablon certyfikatu uwierzytelniania stacji roboczej w urzędzie certyfikacji  
+ Ta procedura powoduje utworzenie niestandardowego szablonu certyfikatu dla punktów dystrybucji programu System Center Configuration Manager, aby klucz prywatny można eksportować i dodanie szablonu certyfikatu do urzędu certyfikacji.  
 
 > [!NOTE]  
->  이 절차는 클라이언트 컴퓨터에 대해 만든 인증서 템플릿과 다른 인증서 템플릿을 사용합니다. 두 인증서 모두 클라이언트 인증 기능이 필요하지만 배포 지점용 인증서는 개인 키를 내보내야 합니다. 이 구성이 필요한 경우를 제외하고 개인 키를 내보낼 수 있도록 인증서 템플릿을 설정하지 않는 것이 보안상 좋습니다. 배포 지점의 경우 인증서를 인증서 저장소에서 선택하지 않고 파일로 가져와야 하므로 이 구성이 필요합니다.  
+>  Ta procedura wykorzystuje inny szablon certyfikatu z utworzonego szablonu certyfikatu dla komputerów klienckich. Mimo że oba certyfikaty wymagają możliwości uwierzytelniania klienta, certyfikat dla punktów dystrybucji wymaga wyeksportowania klucza prywatnego. Zabezpieczeń najlepszym rozwiązaniem, czy nie Konfigurowanie szablonów certyfikatów, więc klucz prywatny można eksportować, chyba że taka konfiguracja jest wymagana. Punkt dystrybucji wymaga tej konfiguracji, ponieważ należy zaimportować certyfikat jako plik zamiast wybierz go z magazynu certyfikatów.  
 >   
->  이 인증서에 대한 새 인증서 템플릿을 만들면 개인 키를 내보낼 수 있는, 인증서를 요청할 수 있는 컴퓨터를 제한할 수 있습니다. 이 배포 예에서는 이것이 IIS를 실행하는 System Center Configuration Manager 사이트 시스템 서버에 대해 이전에 만든 보안 그룹이 됩니다. IIS 사이트 시스템 역할을 배포하는 프로덕션 네트워크에서는 이러한 사이트 시스템 서버로만 인증서를 제한할 수 있도록 배포 지점을 실행하는 서버에 대한 새 보안 그룹을 만들어 보십시오. 또한 이 인증서를 다음과 같이 수정하는 것을 고려해야 할 수 있습니다.  
+>  Podczas tworzenia nowego szablonu certyfikatu dla tego certyfikatu, można ograniczyć komputerów, które może zażądać certyfikatu, którego klucz prywatny można eksportować. W naszym przykładowym wdrożeniu będzie to grupy zabezpieczeń utworzonej wcześniej dla serwerów systemu lokacji programu System Center Configuration Manager z usługami IIS. W używanej sieci, która dystrybuuje role systemu lokacji usług IIS, należy rozważyć utworzenie nowej grupy zabezpieczeń dla serwerów, na których działają punkty dystrybucji, aby można było ograniczyć certyfikaty tylko do tych serwerów systemu lokacji. Można także rozważyć wprowadzenie następujących modyfikacji certyfikatu:  
 >   
->  -   승인이 있어야 인증서를 설치할 수 있도록 하여 보안 강화  
-> -   인증서 유효 기간 연장. 만료 전에 매번 인증서를 내보내고 가져와야 하므로 유효 기간을 늘리면 이 절차를 반복하는 횟수가 줄어듭니다. 그러나 유효 기간을 늘리면 공격자가 개인 키를 해독하여 인증서를 도용할 수 있는 시간이 늘어나므로 인증서 보안이 약화됩니다.  
-> -   표준 클라이언트 인증서에서 이 인증서를 식별할 수 있도록 인증서 주체 필드 또는 주체 대체 이름에 사용자 지정 값 사용. 여러 배포 지점에 대해 동일한 인증서를 사용할 경우 이것이 특히 유용할 수 있습니다.  
+>  -   Wymaganie zatwierdzenia instalacji certyfikatu w celu zapewnienia dodatkowych zabezpieczeń.  
+> -   Wydłużenie okresu ważności certyfikatu. Ponieważ należy wyeksportować i zaimportować certyfikat każdorazowo przed jego wygaśnięciem, zwiększenia okresu ważności zmniejsza częstotliwość należy powtórzyć całą procedurę. Jednak wzrost okresu ważności również zmniejszenie bezpieczeństwa certyfikatu, ponieważ zawiera więcej czasu osobie atakującej do odszyfrowania klucza prywatnego i kradzież certyfikatu.  
+> -   Użycie niestandardowej wartości w polu Podmiot certyfikatu lub nazwy alternatywnej podmiotu (SAN), aby ułatwić odróżnienie tego certyfikatu od standardowych certyfikatów klientów. Może to być szczególnie przydatne, jeżeli ten sam certyfikat jest używany dla kilku punktów dystrybucji.  
 
-##### <a name="to-create-and-issue-the-custom-workstation-authentication-certificate-template-on-the-certification-authority"></a>인증 기관에서 사용자 지정 워크스테이션 인증 인증서 템플릿을 만들고 발급하려면  
+##### <a name="to-create-and-issue-the-custom-workstation-authentication-certificate-template-on-the-certification-authority"></a>Aby utworzyć i wydać niestandardowy szablon certyfikatu uwierzytelniania stacji roboczej w urzędzie certyfikacji  
 
-1.  인증 기관 콘솔을 실행하는 구성원 서버에서 **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고 **관리**를 선택하여 인증서 템플릿 관리 콘솔을 로드합니다.  
+1.  Na serwerze członkowskim, na którym uruchomiona jest Konsola urzędu certyfikacji, kliknij prawym przyciskiem myszy **szablonów certyfikatów**, a następnie wybierz pozycję **Zarządzaj** aby załadować Konsolę zarządzania szablony certyfikatów.  
 
-2.  결과 창에서 **템플릿 표시 이름** 열의 **워크스테이션 인증**이 있는 항목을 마우스 오른쪽 단추로 클릭하고 **중복된 템플릿**을 선택합니다.  
+2.  W okienku wyników kliknij prawym przyciskiem myszy wpis **Uwierzytelnianie stacji roboczej** w **Nazwa wyświetlana szablonu** kolumny, a następnie wybierz pozycję **Duplikuj szablon**.  
 
-3.  **중복된 템플릿** 대화 상자에서 **Windows 2003 Server, Enterprise Edition**이 선택되어 있는지 확인하고 **확인**을 선택합니다.  
+3.  W **Duplikuj szablon** okna dialogowego Sprawdź, czy **systemu Windows Server 2003, Enterprise Edition** jest zaznaczone, a następnie wybierz pozycję **OK**.  
 
     > [!IMPORTANT]  
-    >  **Windows 2008 Server, Enterprise Edition**은 선택하지 마십시오.  
+    >  Nie wybieraj systemu **Windows 2008 Server, Enterprise Edition**.  
 
-4.  **새 템플릿의 속성** 대화 상자의 **일반** 탭에서 배포 지점용 클라이언트 인증 인증서를 생성할 템플릿 이름(예: **ConfigMgr Client Distribution Point Certificate**)을 입력합니다.  
+4.  W **właściwości nowego szablonu** na okna dialogowego **ogólne** wprowadź nazwę szablonu, takie jak **certyfikat punktu dystrybucji klienta programu ConfigMgr**, aby wygenerować certyfikat uwierzytelniania klienta dla punktów dystrybucji.  
 
-5.  **요청 처리** 탭을 선택하고 **개인 키를 내보낼 수 있음**을 선택합니다.  
+5.  Wybierz **obsługiwanie żądań** karcie, a następnie wybierz pozycję **Zezwalaj na eksportowanie klucza prywatnego**.  
 
-6.  **보안** 탭을 선택하고 **Enterprise Admins** 보안 그룹에서 **등록** 권한을 제거합니다.  
+6.  Wybierz **zabezpieczeń** karcie, a następnie usuń **Zarejestruj** zgody **Administratorzy przedsiębiorstwa** grupy zabezpieczeń.  
 
-7.  **추가**를 선택하고 텍스트 상자에 **ConfigMgr IIS Servers**를 입력한 후 **확인**을 선택합니다.  
+7.  Wybierz **Dodaj**, wprowadź **serwery IIS programu ConfigMgr** w tekście polu, a następnie wybierz pozycję **OK**.  
 
-8.  이 그룹에 대한 **등록** 권한을 선택하고, **읽기** 권한을 해제하지 않습니다.  
+8.  Wybierz dla tej grupy uprawnienie **Rejestracja** i nie usuwaj zaznaczenia uprawnienia **Odczyt** .  
 
-9. **확인**을 선택한 다음 **인증서 템플릿 콘솔**을 닫습니다.  
+9. Wybierz **OK**, a następnie Zamknij **konsolę Szablony certyfikatów**.  
 
-10. 인증 기관 콘솔에서 **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고 **새로 만들기**를 선택한 다음 **발급할 인증서 템플릿**을 선택합니다.  
+10. W konsoli Urząd certyfikacji kliknij prawym przyciskiem myszy **szablonów certyfikatów**, wybierz **nowy**, a następnie wybierz pozycję **szablon certyfikatu do wystawienia**.  
 
-11. **인증서 템플릿 사용** 대화 상자에서 방금 만든 새 템플릿 **ConfigMgr Client Distribution Point Certificate**를 선택하고 **확인**을 선택합니다.  
+11. W **Włączanie szablonu certyfikatu** okno dialogowe Nowy szablon, który właśnie utworzony, wybierz pozycję **certyfikat punktu dystrybucji klienta programu ConfigMgr**, a następnie wybierz pozycję **OK**.  
 
-12. 인증서를 더 만들고 발급할 필요가 없으면 **인증 기관**을 닫습니다.  
+12. Jeśli nie masz do tworzenia i wystawiania certyfikatów więcej, Zamknij **urzędu certyfikacji**.  
 
-###  <a name="BKMK_clientdistributionpoint12008"></a> 사용자 지정 워크스테이션 인증 인증서 요청  
- 이 절차는 IIS를 실행하며 배포 지점으로 설정될 구성원 서버에 사용자 지정 클라이언트 인증서를 요청하고 설치합니다.  
+###  <a name="BKMK_clientdistributionpoint12008"></a>Żądanie niestandardowego certyfikatu uwierzytelniania stacji roboczej  
+ Ta procedura żądań, a następnie instalację niestandardowego certyfikatu klienta na serwerze członkowskim, na którym działają usługi IIS i który zostanie skonfigurowany jako punkt dystrybucji.  
 
-##### <a name="to-request-the-custom-workstation-authentication-certificate"></a>사용자 지정 워크스테이션 인증 인증서를 요청하려면  
+##### <a name="to-request-the-custom-workstation-authentication-certificate"></a>Aby zażądać niestandardowego certyfikatu uwierzytelniania stacji roboczej  
 
-1.  **시작**을 선택하고 **실행**을 선택한 다음 **mmc.exe**를 입력합니다. 비어 있는 콘솔에서 **파일**을 선택한 후 **스냅인 추가/제거**를 선택합니다.  
+1.  Wybierz **Start**, wybierz **Uruchom**, a następnie wprowadź **mmc.exe.** W pustej konsoli wybierz **pliku**, a następnie wybierz pozycję **Dodaj/Usuń przystawkę**.  
 
-2.  **스냅인 추가/제거** 대화 상자의 **사용 가능한 스냅인** 목록에서 **인증서**를 선택하고 **추가**를 선택합니다.  
+2.  W **Dodawanie lub usuwanie przystawek** oknie dialogowym wybierz **certyfikaty** z listy **dostępne przystawki**, a następnie wybierz pozycję **Dodaj**.  
 
-3.  **인증서 스냅인** 대화 상자에서 **컴퓨터 계정**을 선택한 후에 **다음**을 선택합니다.  
+3.  W **certyfikatów przystawki** okno dialogowe Wybierz **konto komputera**, a następnie wybierz pozycję **dalej**.  
 
-4.  **컴퓨터 선택** 대화 상자에서 **로컬 컴퓨터:(이 콘솔이 실행되고 있는 컴퓨터)**가 선택되어 있는지 확인한 다음 **마침**을 선택합니다.  
+4.  W **Wybieranie komputera** okna dialogowego Sprawdź, czy **komputer lokalny: (komputer ten jest uruchomiona konsola)** jest zaznaczone, a następnie wybierz pozycję **Zakończ**.  
 
-5.  **스냅인 추가/제거** 대화 상자에서 **확인**을 선택합니다.  
+5.  W **Dodawanie lub usuwanie przystawek** oknie dialogowym wybierz **OK**.  
 
-6.  콘솔에서 **인증서(로컬 컴퓨터)**를 확장하고 **개인**을 선택합니다.  
+6.  W konsoli rozwiń węzeł **certyfikaty (komputer lokalny)**, a następnie wybierz pozycję **osobistych**.  
 
-7.  **인증서**를 마우스 오른쪽 단추로 클릭하고 **모든 작업**을 선택한 후에 **새 인증서 요청**을 선택합니다.  
+7.  Kliknij prawym przyciskiem myszy **certyfikaty**, wybierz **wszystkie zadania**, a następnie wybierz pozycję **Żądaj nowego certyfikatu**.  
 
-8.  **시작하기 전에** 페이지에서 **다음**을 선택합니다.  
+8.  Na **przed rozpoczęciem** wybierz pozycję **dalej**.  
 
-9. **인증서 등록 정책 선택** 페이지가 표시되면 **다음**을 선택합니다.  
+9. Jeśli widzisz **wybierz zasady rejestracji certyfikatu** wybierz pozycję **dalej**.  
 
-10. **인증서 요청** 페이지의 사용 가능한 인증서 목록에서 **ConfigMgr Client Distribution Point Certificate**를 선택하고 **등록**을 선택합니다.  
+10. Na **żądania certyfikatów** wybierz pozycję **certyfikat punktu dystrybucji klienta programu ConfigMgr** z listy dostępnych certyfikatów, a następnie wybierz pozycję **Zarejestruj**.  
 
-11. **인증서 설치 결과** 페이지에서 인증서가 설치될 때까지 기다렸다가 **마침**을 선택합니다.  
+11. Na **wyniki instalacji certyfikatów** strony, poczekaj, aż certyfikat został zainstalowany, a następnie wybierz **Zakończ**.  
 
-12. 결과 창에서, 인증서의 **용도** 열에 **클라이언트 인증**이 있는지 확인하고 **ConfigMgr Client Distribution Point Certificate**가 **인증서 템플릿** 열에 있는지 확인합니다.  
+12. W okienku wyników sprawdź, czy certyfikat ma **uwierzytelnianie klienta** w **zamierzony cel** kolumny i że **certyfikat punktu dystrybucji klienta programu ConfigMgr** w **szablonu certyfikatu** kolumny.  
 
-13. **인증서(로컬 컴퓨터)**를 닫지 마십시오.  
+13. Nie zamykaj konsoli **Certyfikaty (komputer lokalny)**.  
 
-###  <a name="BKMK_exportclientdistributionpoint22008"></a> 배포 지점용 클라이언트 인증서 내보내기  
- 이 절차는 배포 지점 속성에서 가져올 수 있도록 사용자 지정 워크스테이션 인증 인증서를 파일로 내보냅니다.  
+###  <a name="BKMK_exportclientdistributionpoint22008"></a>Wyeksportuj certyfikat klienta dla punktów dystrybucji  
+ Ta procedura eksportuje niestandardowego certyfikatu uwierzytelniania stacji roboczej do pliku, aby można było importować we właściwościach punktu dystrybucji.  
 
-##### <a name="to-export-the-client-certificate-for-distribution-points"></a>배포 지점에 대한 클라이언트 인증서를 내보내려면  
+##### <a name="to-export-the-client-certificate-for-distribution-points"></a>Aby wyeksportować certyfikat klienta dla punktów dystrybucji  
 
-1.  **인증서(로컬 컴퓨터)** 콘솔에서 방금 설치한 인증서를 마우스 오른쪽 단추로 클릭하고 **모든 작업**을 선택한 후에 **내보내기**를 선택합니다.  
+1.  W **certyfikaty (komputer lokalny)** konsoli, kliknij prawym przyciskiem myszy certyfikat, który został właśnie zainstalowany, wybierz **wszystkie zadania**, a następnie wybierz pozycję **wyeksportować**.  
 
-2.  인증서 내보내기 마법사에서 **다음**을 선택합니다.  
+2.  W Kreatorze eksportu certyfikatów wybierz **dalej**.  
 
-3.  **개인 키 내보내기** 페이지에서 **예, 개인 키를 내보냅니다**를 선택하고 **다음**을 선택합니다.  
+3.  Na **eksportowanie klucza prywatnego** wybierz pozycję **tak, Eksportuj klucz prywatny**, a następnie wybierz pozycję **dalej**.  
 
     > [!NOTE]  
-    >  이 옵션을 사용할 수 없는 경우 개인 키를 내보내는 옵션 없이 인증서가 만들어진 것입니다. 이 시나리오에서는 필요한 형식으로 인증서를 내보낼 수 없습니다. 개인 키를 내보낼 수 있도록 인증서 템플릿을 설정한 후에 인증서를 다시 요청해야 합니다.  
+    >  Jeżeli ta opcja nie jest dostępna, certyfikat został utworzony bez opcji eksportu klucza prywatnego. W tym scenariuszu nie można wyeksportować certyfikatu w wymaganym formacie. Należy skonfigurować szablon certyfikatu, aby klucz prywatny można eksportować i zażądać certyfikatu ponownie.  
 
-4.  **파일 내보내기 형식** 페이지에서 **개인 정보 교환 - PKCS #12(.PFX)** 옵션이 선택되어 있는지 확인합니다.  
+4.  Na **Format pliku eksportu** strony, upewnij się, że **wymiana informacji osobistych — PKCS #12 (. PFX)** opcja jest zaznaczona.  
 
-5.  **암호** 페이지에서 개인 키를 사용하여 내보내는 인증서를 보호하도록 강력한 암호를 지정하고 **다음**을 선택합니다.  
+5.  Na **hasło** Określ silne hasło, aby zabezpieczyć wyeksportowany certyfikat kluczem prywatnym, a następnie wybierz pozycję **dalej**.  
 
-6.  **내보낼 파일** 페이지에서 내보낼 파일의 이름을 지정하고 **다음**을 선택합니다.  
+6.  Na **Eksport pliku** strony, określ nazwę pliku, który chcesz wyeksportować, a następnie wybierz pozycję **dalej**.  
 
-7.  마법사를 닫으려면 **인증서 내보내기 마법사** 페이지에서 **마침**을 선택하고 확인 대화 상자에서 **확인**을 선택합니다.  
+7.  Aby zamknąć kreatora, należy wybrać **Zakończ** na **Kreatora eksportu certyfikatów** stronie, a następnie wybierz **OK** w oknie dialogowym potwierdzenia.  
 
-8.  **인증서(로컬 컴퓨터)**를 닫습니다.  
+8.  Zamknij konsolę **Certyfikaty (komputer lokalny)**.  
 
-9. 파일을 안전하게 저장하고 System Center Configuration Manager 콘솔에서 액세스할 수 있는지 확인합니다.  
+9. Zapisz plik w bezpiecznym miejscu i upewnij się, że można do niego dostęp z konsoli programu System Center Configuration Manager.  
 
- 이제 배포 지점을 설정할 때 이 인증서를 가져올 수 있습니다.  
+ Certyfikat jest teraz gotowy do zaimportowania podczas konfigurowania punktu dystrybucji.  
 
 > [!TIP]  
->  이제 PXE 부팅을 사용하지 않는 운영 체제 배포에 대해 미디어 이미지를 설정할 때 동일한 인증서 파일을 사용할 수 있으며, 이미지를 설치하기 위한 작업 순서가 HTTPS 클라이언트 연결이 필요한 관리 지점에 연결해야 합니다.  
+>  Można użyć tego samego pliku certyfikatu, konfigurując obrazy nośników do wdrożenia systemu operacyjnego, które nie są używane w środowisku PXE i sekwencji zadań umożliwia zainstalowanie obrazu musisz skontaktować się z punktem zarządzania, który wymaga połączeń klienckich HTTPS.  
 
-##  <a name="BKMK_mobiledevices2008_cm2012"></a> 모바일 장치용 등록 인증서 배포  
- 이 인증서 배포는 단일 절차로 인증 기관에서 등록 인증서 템플릿을 만들고 발급합니다.  
+##  <a name="BKMK_mobiledevices2008_cm2012"></a>Wdrażanie certyfikatu rejestracji dla urządzeń przenośnych  
+ W tym wdrożeniu certyfikatu zarówno utworzenie, jak i wystawienie szablonu certyfikatu rejestracji w urzędzie certyfikacji jest objęte tą samą procedurą.  
 
-### <a name="create-and-issue-the-enrollment-certificate-template-on-the-certification-authority"></a>인증 기관에서 등록 인증서 템플릿 만들기 및 발급  
- 이 절차에서는 System Center Configuration Manager 모바일 장치용 등록 인증서 템플릿을 만들고 인증 기관에 추가합니다.  
+### <a name="create-and-issue-the-enrollment-certificate-template-on-the-certification-authority"></a>Utworzyć i wydać szablon certyfikatu rejestracji w urzędzie certyfikacji  
+ Ta procedura powoduje utworzenie szablonu certyfikatu rejestracji dla urządzeń przenośnych w programie System Center Configuration Manager i dodaje go do urzędu certyfikacji.  
 
-##### <a name="to-create-and-issue-the-enrollment-certificate-template-on-the-certification-authority"></a>인증 기관에서 등록 인증서 템플릿을 만들고 발급하려면  
+##### <a name="to-create-and-issue-the-enrollment-certificate-template-on-the-certification-authority"></a>Aby utworzyć i wystawić szablon certyfikatu rejestracji w urzędzie certyfikacji  
 
-1.  System Center Configuration Manager에 모바일 장치를 등록할 사용자를 포함하는 보안 그룹을 만듭니다.  
+1.  Utwórz grupę zabezpieczeń, która zawiera użytkowników, którzy będą rejestrować urządzenia przenośne w programie System Center Configuration Manager.  
 
-2.  인증서 서비스가 설치된 구성원 서버에서, 인증 기관 콘솔에서 **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고 **관리**를 선택하여 인증서 템플릿 관리 콘솔을 로드합니다.  
+2.  Na serwerze członkowskim z usługami certyfikatów zainstalowane, w konsoli Urząd certyfikacji kliknij prawym przyciskiem myszy **szablonów certyfikatów**, a następnie wybierz pozycję **Zarządzaj** aby załadować Konsolę zarządzania szablony certyfikatów.  
 
-3.  결과 창에서 **템플릿 표시 이름** 열에 **인증된 세션**이 있는 항목을 마우스 오른쪽 단추로 클릭하고 **중복된 템플릿**을 선택합니다.  
+3.  W okienku wyników kliknij prawym przyciskiem myszy wpis **sesja uwierzytelniona** w **Nazwa wyświetlana szablonu** kolumny, a następnie wybierz pozycję **Duplikuj szablon**.  
 
-4.  **중복된 템플릿** 대화 상자에서 **Windows 2003 Server, Enterprise Edition**이 선택되어 있는지 확인하고 **확인**을 선택합니다.  
+4.  W **Duplikuj szablon** okna dialogowego Sprawdź, czy **systemu Windows Server 2003, Enterprise Edition** jest zaznaczone, a następnie wybierz pozycję **OK**.  
 
     > [!IMPORTANT]  
-    >  **Windows 2008 Server, Enterprise Edition**은 선택하지 마십시오.  
+    >  Nie wybieraj systemu **Windows 2008 Server, Enterprise Edition**.  
 
-5.  **새 템플릿의 속성** 대화 상자의 **일반** 탭에서 System Center Configuration Manager로 관리할 모바일 장치용 등록 인증서를 생성하기 위한 템플릿 이름(예: **ConfigMgr Mobile Device Enrollment Certificate**)을 입력합니다.  
+5.  W **właściwości nowego szablonu** na okna dialogowego **ogólne** wprowadź nazwę szablonu, takie jak **certyfikat rejestracji urządzeń przenośnych programu ConfigMgr**, w celu wygenerowania certyfikatów rejestracji dla urządzeń przenośnych, które mają być zarządzane przez program System Center Configuration Manager.  
 
-6.  **주체 이름** 탭에서 **이 Active Directory 정보로 만듦**이 선택되어 있는지 확인하고 **주체 이름 형식:**으로 **일반 이름**을 선택한 후에 **대체 주체 이름에 이 정보 포함**에서 **UPN(사용자 계정 이름)**의 선택을 취소합니다.  
+6.  Wybierz **nazwa podmiotu** karcie, upewnij się, że **Konstruuj z tej informacji usługi Active Directory** jest wybrany, wybierz pozycję **nazwa pospolita** dla **format nazwy podmiotu:**, a następnie wyczyść **główna nazwa użytkownika (UPN)** z **Dołącz tę informację do alternatywnej nazwy podmiotu**.  
 
-7.  **보안** 탭을 선택하고 등록할 모바일 장치의 사용자가 포함된 보안 그룹을 선택한 후에 추가 권한으로 **등록**을 선택합니다. **읽기**의 선택을 취소하지 마십시오.  
+7.  Wybierz **zabezpieczeń** karcie, wybierz grupę zabezpieczeń, która zawiera użytkowników z urządzeniami przenośnymi do zarejestrowania i wybierz uprawnienie dodatkowe **Zarejestruj**. Nie usuwaj zaznaczenia opcji **Odczyt**.  
 
-8.  **확인**을 선택한 다음 **인증서 템플릿 콘솔**을 닫습니다.  
+8.  Wybierz **OK**, a następnie Zamknij **konsolę Szablony certyfikatów**.  
 
-9. 인증 기관 콘솔에서 **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고 **새로 만들기**를 선택한 다음 **발급할 인증서 템플릿**을 선택합니다.  
+9. W konsoli Urząd certyfikacji kliknij prawym przyciskiem myszy **szablonów certyfikatów**, wybierz **nowy**, a następnie wybierz pozycję **szablon certyfikatu do wystawienia**.  
 
-10. **인증서 템플릿 사용** 대화 상자에서 방금 만든 새 템플릿 **ConfigMgr Mobile Device Enrollment Certificate**를 선택하고 **확인**을 선택합니다.  
+10. W **Włączanie szablonu certyfikatu** okno dialogowe Nowy szablon, który właśnie utworzony, wybierz pozycję **certyfikat rejestracji urządzeń przenośnych programu ConfigMgr**, a następnie wybierz pozycję **OK**.  
 
-11. 인증서를 더 만들고 발급할 필요가 없으면 인증 기관 콘솔을 닫습니다.  
+11. Jeśli nie ma potrzeby tworzenia i wystawiania certyfikatów więcej, zamknij konsolę Urząd certyfikacji.  
 
- 이제 클라이언트 설정에서 모바일 장치 등록 프로필을 설정할 때 모바일 장치 등록 인증서 템플릿을 선택할 수 있습니다.  
+ Szablon certyfikatu rejestracji urządzeń przenośnych jest teraz gotowy do wybrania podczas konfigurowania profilu rejestracji urządzenia przenośnego w ustawieniach klienta.  
 
-##  <a name="BKMK_AMT2008_cm2012"></a> AMT용 인증서 배포  
- 이 인증서 배포 절차는 다음과 같습니다.  
+##  <a name="BKMK_AMT2008_cm2012"></a>Wdrażanie certyfikatów dla AMT  
+ Wdrożenie tego certyfikatu jest objęte następującymi procedurami:  
 
--   AMT 프로비전 인증서 만들기, 발급 및 설치  
+-   Tworzenia, wystawiania i instalowanie certyfikatu udostępniania AMT  
 
--   AMT 기반 컴퓨터용 웹 서버 인증서 만들기 및 발급  
+-   Utworzyć i wystawić certyfikat serwera sieci web dla komputerów opartych na technologii AMT  
 
--   802.1X AMT 기반 컴퓨터용 클라이언트 인증 인증서 만들기 및 발급  
+-   Utworzyć i wydać certyfikaty uwierzytelniania 802.1 X AMT, na komputerach klienta  
 
-###  <a name="BKMK_AMTprovisioning2008"></a> AMT 프로비전 인증서 만들기, 발급 및 설치  
- 내부 루트 CA의 인증서 지문을 사용하여 AMT 기반 컴퓨터를 설정한 경우 내부 CA를 사용하여 프로비전 인증서를 만듭니다. 이 경우가 아니고 외부 인증 기관을 사용해야 하는 경우, AMT 프로비전 인증서를 발급한 회사의 지침을 따릅니다. 대개 회사의 공공 웹 사이트에서 인증서를 요청해야 합니다. [Intel vPro Expert Center: Microsoft vPro Manageability 웹 사이트](http://go.microsoft.com/fwlink/?LinkId=132001)에서 선택한 외부 CA에 대한 자세한 지침을 찾을 수도 있습니다.  
+###  <a name="BKMK_AMTprovisioning2008"></a>Tworzenia, wystawiania i instalowanie certyfikatu udostępniania AMT  
+ Z wewnętrznego urzędu certyfikacji należy utworzyć certyfikat udostępniania, gdy komputery oparte na technologii AMT są skonfigurowane z odcisk palca certyfikatu z wewnętrznego głównego urzędu certyfikacji. Jeśli nie jest to i musi użyć zewnętrznego urzędu certyfikacji, postępuj zgodnie z instrukcjami firmy, który wystawił certyfikat udostępniania AMT, który często pociąga za sobą żądanie certyfikatu za pośrednictwem publicznej witryny sieci web firmy. Można także znaleźć szczegółowe instrukcje dotyczące wybranego zewnętrznego urzędu certyfikacji na [Intel vPro Expert Center: Witrynie sieci web firmy Microsoft vPro możliwości zarządzania](http://go.microsoft.com/fwlink/?LinkId=132001).  
 
 > [!IMPORTANT]  
->  외부 CA가 Intel AMT 프로비전 개체 식별자를 지원하지 않을 수도 있습니다. 이 경우 **Intel(R) Client Setup Certificate** OU 특성을 제공합니다.  
+>  Zewnętrzne urzędy certyfikacji mogą nie obsługiwać identyfikatora obiektu udostępniania Intel AMT. W takim przypadku należy podać **Intel(R) Client Setup Certificate** atrybut jednostki Organizacyjnej.  
 
- 외부 CA에서 AMT 프로비전 인증서를 요청하는 경우 대역 외 서비스 지점을 호스트하는 구성원 서버의 컴퓨터 개인 인증서 저장소에 인증서를 설치합니다.  
+ W przypadku żądania certyfikatu udostępniania AMT od zewnętrznego urzędu certyfikacji, należy zainstalować certyfikat w magazynie certyfikatów osobistych komputera na serwerze członkowskim, który będzie hostem punktu Usługi poza pasmem.  
 
-##### <a name="to-request-and-issue-the-amt-provisioning-certificate"></a>AMT 프로비전 인증서를 요청 및 발급하려면  
+##### <a name="to-request-and-issue-the-amt-provisioning-certificate"></a>Aby zażądać certyfikatu udostępniania AMT i go wystawić  
 
-1.  대역 외 서비스 지점을 실행하는 사이트 시스템 서버의 컴퓨터 계정이 포함된 보안 그룹을 만듭니다.  
+1.  Utwórz grupę zabezpieczeń, która ma kont komputerów serwerów systemu lokacji, które będą uruchamiane punktu Usługi poza pasmem.  
 
-2.  인증서 서비스가 설치된 구성원 서버에서, 인증 기관 콘솔에서 **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고 **관리**를 선택하여 **인증서 템플릿** 콘솔을 로드합니다.  
+2.  Na serwerze członkowskim z usługami certyfikatów zainstalowane, w konsoli Urząd certyfikacji kliknij prawym przyciskiem myszy **szablonów certyfikatów**, a następnie wybierz pozycję **Zarządzaj** załadować **szablonów certyfikatów** konsoli.  
 
-3.  결과 창에서 **템플릿 표시 이름** 열에 **웹 서버**가 있는 항목을 마우스 오른쪽 단추로 클릭하고 **중복된 템플릿**을 선택합니다.  
+3.  W okienku wyników kliknij prawym przyciskiem myszy wpis **serwera sieci Web** w **Nazwa wyświetlana szablonu** kolumny, a następnie wybierz pozycję **Duplikuj szablon**.  
 
-4.  **중복된 템플릿** 대화 상자에서 **Windows 2003 Server, Enterprise Edition**이 선택되어 있는지 확인하고 **확인**을 선택합니다.  
+4.  W **Duplikuj szablon** okna dialogowego Sprawdź, czy **systemu Windows Server 2003, Enterprise Edition** jest zaznaczone, a następnie wybierz pozycję **OK**.  
 
     > [!IMPORTANT]  
-    >  **Windows 2008 Server, Enterprise Edition**은 선택하지 마십시오.  
+    >  Nie wybieraj systemu **Windows 2008 Server, Enterprise Edition**.  
 
-5.  **새 템플릿의 속성** 대화 상자의 **일반** 탭에 AMT 프로비전 인증서 템플릿의 템플릿 이름(예: **ConfigMgr AMT Provisioning**)을 입력합니다.  
+5.  W **właściwości nowego szablonu** na okna dialogowego **ogólne** wprowadź nazwę szablonu, takie jak **udostępniania AMT programu ConfigMgr**, dla szablonu certyfikatu udostępniania AMT.  
 
-6.  **주체 이름** 탭을 선택하고 **이 Active Directory 정보로 만듦**을 선택하고 **일반 이름**을 선택합니다.  
+6.  Wybierz **nazwa podmiotu** , wybierz pozycję **Konstruuj z tej informacji usługi Active Directory**, a następnie wybierz pozycję **nazwa pospolita**.  
 
-7.  **확장** 탭에서 **응용 프로그램 정책**을 선택하고 **편집**을 선택합니다.  
+7.  Wybierz **rozszerzenia** karcie, upewnij się, że **zasady aplikacji** jest zaznaczone, a następnie wybierz pozycję **Edytuj**.  
 
-8.  **응용 프로그램 정책 확장 편집** 대화 상자에서 **추가**를 선택합니다.  
+8.  W **Edytowanie rozszerzenia zasad aplikacji** oknie dialogowym wybierz **Dodaj**.  
 
-9. **응용 프로그램 정책 추가** 대화 상자에서 **새로 만들기**를 선택합니다.  
+9. W **Dodawanie zasady aplikacji** oknie dialogowym wybierz **nowy**.  
 
-10. **새 응용 프로그램 정책** 대화 상자에서 **이름** 필드에 **AMT Provisioning**을 입력하고 **개체 식별자**:에 **2.16.840.1.113741.1.2.3** 숫자를 입력합니다.  
+10. W **Nowa zasada aplikacji** okna dialogowego wprowadź **udostępniania AMT** w **nazwa** , a następnie wprowadź następujący ciąg liczb w **identyfikator obiektu**: **2.16.840.1.113741.1.2.3**.  
 
-11. **확인**을 선택한 후에 **응용 프로그램 정책 추가** 대화 상자에서 **확인**을 선택합니다.  
+11. Wybierz **OK**, a następnie wybierz pozycję **OK** w **Dodawanie zasady aplikacji** okno dialogowe.  
 
-12. **응용 프로그램 정책 확장 편집** 대화 상자에서 **확인**을 선택합니다.  
+12. Wybierz **OK** w **Edytowanie rozszerzenia zasad aplikacji** okno dialogowe.  
 
-13. **새 템플릿의 속성** 대화 상자에 **응용 프로그램 정책** 설명으로 **서버 인증** 및 **AMT 프로비전**이 표시되어 있습니다.  
+13. W **właściwości nowego szablonu** następujące okno dialogowe, jest wymienione jako **zasady aplikacji** opis: **Uwierzytelnianie serwera** i **udostępniania AMT**.  
 
-14. **보안** 탭을 선택하고 **Domain Admins** 및 **Enterprise Admins** 보안 그룹에서 **등록** 권한을 제거합니다.  
+14. Wybierz **zabezpieczeń** karcie, a następnie usuń **Zarejestruj** zgody **Administratorzy domeny** i **Administratorzy przedsiębiorstwa** grup zabezpieczeń.  
 
-15. **추가**를 선택하고 대역 외 서비스 지점 사이트 시스템 역할의 컴퓨터 계정이 포함된 보안 그룹의 이름을 입력한 후에 **확인**을 선택합니다.  
+15. Wybierz **Dodaj**, wprowadź nazwę grupy zabezpieczeń zawierającej konto komputera dla roli systemu lokacji punktu Usługi poza pasmem, a następnie wybierz pozycję **OK**.  
 
-16. 이 그룹에 대한 **등록** 권한을 선택하고, **읽기** 권한을 해제하지 않습니다.  
+16. Wybierz **Zarejestruj** dla tej grupy uprawnienie i nie usuwaj **odczytu** uprawnienia...  
 
-17. **확인**을 선택한 다음 **인증서 템플릿 콘솔**을 닫습니다.  
+17. Wybierz **OK**, a następnie Zamknij **szablonów certyfikatów** konsoli.  
 
-18. **인증 기관**에서 **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고 **새로 만들기**를 선택한 다음 **발급할 인증서 템플릿**을 선택합니다.  
+18. W **urzędu certyfikacji**, kliknij prawym przyciskiem myszy **szablonów certyfikatów**, wybierz **nowy**, a następnie wybierz pozycję **szablon certyfikatu do wystawienia**.  
 
-19. **인증서 템플릿 사용** 대화 상자에서 방금 만든 새 템플릿 **ConfigMgr AMT Provisioning**을 선택하고 **확인**을 선택합니다.  
+19. W **Włączanie szablonu certyfikatu** okno dialogowe Nowy szablon, który właśnie utworzony, wybierz pozycję **udostępniania AMT programu ConfigMgr**, a następnie wybierz pozycję **OK**.  
 
     > [!NOTE]  
-    >  18단계 또는 19단계를 완료할 수 없으면 Windows Server 2008 Enterprise Edition을 사용 중인지 확인합니다. Windows Server Standard Edition 및 인증서 서비스를 사용하여 템플릿을 설정할 수는 있지만, Windows Server 2008 Enterprise Edition을 사용하지 않는 경우 수정된 인증서 템플릿을 사용하여 인증서를 배포할 수 없습니다.  
+    >  Jeśli nie możesz ukończyć kroku 18 lub 19, sprawdź, czy na pewno korzystasz z systemu Windows Server 2008 w wersji Enterprise Edition. Mimo że można skonfigurować szablony z systemu Windows Server Standard Edition i usług certyfikatów, nie można wdrażać certyfikatów przy użyciu zmodyfikowanych szablonów certyfikatów, chyba że używasz Enterprise Edition systemu Windows Server 2008.  
 
-20. **인증 기관**을 닫지 마십시오.  
+20. Nie zamykaj konsoli **Urząd certyfikacji**.  
 
- 이제 내부 CA의 AMT 프로비전 인증서를 대역 외 서비스 지점 컴퓨터에 설치할 수 있습니다.  
+ Certyfikat udostępniania AMT z wewnętrznego urzędu certyfikacji jest teraz gotowe do zainstalowania na komputerze punktu Usługi poza pasmem.  
 
-##### <a name="to-install-the-amt-provisioning-certificate"></a>AMT 프로비전 인증서를 설치하려면  
+##### <a name="to-install-the-amt-provisioning-certificate"></a>Aby zainstalować certyfikat udostępniania AMT  
 
-1.  IIS를 실행하는 구성원 서버를 다시 시작하여 구성된 권한으로 인증서 템플릿에 액세스할 수 있는지 확인합니다.  
+1.  Uruchom ponownie serwer członkowski z uruchomionymi usługami IIS, aby upewnić się, że można uzyskać dostęp do szablonu certyfikatu dzięki skonfigurowanemu uprawnieniu.  
 
-2.  **시작**을 선택하고 **실행**을 선택한 다음 **mmc.exe**를 입력합니다. 비어 있는 콘솔에서 **파일**을 선택한 후 **스냅인 추가/제거**를 선택합니다.  
+2.  Wybierz **Start**, wybierz **Uruchom**, a następnie wprowadź **mmc.exe.** W pustej konsoli wybierz **pliku**, a następnie wybierz pozycję **Dodaj/Usuń przystawkę**.  
 
-3.  **스냅인 추가/제거** 대화 상자의 **사용 가능한 스냅인** 목록에서 **인증서**를 선택하고 **추가**를 선택합니다.  
+3.  W **Dodawanie lub usuwanie przystawek** oknie dialogowym wybierz **certyfikaty** z listy **dostępne przystawki**, a następnie wybierz pozycję **Dodaj**.  
 
-4.  **인증서 스냅인** 대화 상자에서 **컴퓨터 계정**을 선택한 후에 **다음**을 선택합니다.  
+4.  W **certyfikatów przystawki** okno dialogowe Wybierz **konto komputera**, a następnie wybierz pozycję **dalej**.  
 
-5.  **컴퓨터 선택** 대화 상자에서 **로컬 컴퓨터:(이 콘솔이 실행되고 있는 컴퓨터)**가 선택되어 있는지 확인한 다음 **마침**을 선택합니다.  
+5.  W **Wybieranie komputera** okna dialogowego Sprawdź, czy **komputer lokalny: (komputer ten jest uruchomiona konsola)** jest zaznaczone, a następnie wybierz pozycję **Zakończ**.  
 
-6.  **스냅인 추가/제거** 대화 상자에서 **확인**을 선택합니다.  
+6.  W **Dodawanie lub usuwanie przystawek** oknie dialogowym wybierz **OK**.  
 
-7.  콘솔에서 **인증서(로컬 컴퓨터)**를 확장하고 **개인**을 선택합니다.  
+7.  W konsoli rozwiń węzeł **certyfikaty (komputer lokalny)**, a następnie wybierz pozycję **osobistych**.  
 
-8.  **인증서**를 마우스 오른쪽 단추로 클릭하고 **모든 작업**을 선택한 후에 **새 인증서 요청**을 선택합니다.  
+8.  Kliknij prawym przyciskiem myszy **certyfikaty**, wybierz **wszystkie zadania**, a następnie wybierz pozycję **Żądaj nowego certyfikatu**.  
 
-9. **시작하기 전에** 페이지에서 **다음**을 선택합니다.  
+9. Na **przed rozpoczęciem** wybierz pozycję **dalej**.  
 
-10. **인증서 등록 정책 선택** 페이지가 표시되면 **다음**을 선택합니다.  
+10. Jeśli widzisz **wybierz zasady rejestracji certyfikatu** wybierz pozycję **dalej**.  
 
-11. **인증서 요청** 페이지의 사용 가능한 인증서 목록에서 **AMT 프로비전**을 선택하고 **등록**을 선택합니다.  
+11. Na **żądania certyfikatów** wybierz pozycję **udostępniania AMT** z listy dostępnych certyfikatów, a następnie wybierz pozycję **Zarejestruj**.  
 
-12. **인증서 설치 결과** 페이지에서 인증서가 설치될 때까지 기다렸다가 **마침**을 선택합니다.  
+12. Na **wyniki instalacji certyfikatów** strony, poczekaj, aż certyfikat został zainstalowany, a następnie wybierz **Zakończ**.  
 
-13. **인증서(로컬 컴퓨터)**를 닫습니다.  
+13. Zamknij konsolę **Certyfikaty (komputer lokalny)**.  
 
- 이제 내부 CA의 AMT 프로비전 인증서를 대역 외 서비스 지점 속성에서 선택할 수 있습니다.  
+ Certyfikat udostępniania AMT z wewnętrznego urzędu certyfikacji jest teraz zainstalowany i jest gotowy do wybrania we właściwościach punktu obsługi poza pasmem.  
 
-### <a name="create-and-issue-the-web-server-certificate-for-amt-based-computers"></a>AMT 기반 컴퓨터용 웹 서버 인증서 만들기 및 발급  
- AMT 기반 컴퓨터용 웹 서버 인증서를 준비하려면 다음 절차를 따르십시오.  
+### <a name="create-and-issue-the-web-server-certificate-for-amt-based-computers"></a>Utworzyć i wystawić certyfikat serwera sieci web dla komputerów opartych na technologii AMT  
+ Użyj poniższej procedury, aby przygotować certyfikaty serwera sieci Web dla komputerów opartych na technologii AMT.  
 
-##### <a name="to-create-and-issue-the-web-server-certificate-template"></a>웹 서버 인증서 템플릿 만들기 및 발급  
+##### <a name="to-create-and-issue-the-web-server-certificate-template"></a>Aby utworzyć i wystawić szablon certyfikatu serwera sieci web  
 
-1.  System Center Configuration Manager에서 AMT 프로비전 중 만드는 AMT 컴퓨터 계정을 포함하는 빈 보안 그룹을 만듭니다.  
+1.  Utwórz grupy zabezpieczeń pusta, która zawiera konta komputerów AMT tworzone podczas udostępniania AMT System Center Configuration Manager.  
 
-2.  인증서 서비스가 설치된 구성원 서버에서, 인증 기관 콘솔에서 **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고 **관리**를 선택하여 **인증서 템플릿** 콘솔을 로드합니다.  
+2.  Na serwerze członkowskim z usługami certyfikatów zainstalowane, w konsoli Urząd certyfikacji kliknij prawym przyciskiem myszy **szablonów certyfikatów**, a następnie wybierz pozycję **Zarządzaj** załadować **szablonów certyfikatów** konsoli.  
 
-3.  결과 창에서 **템플릿 표시 이름** 열에 **웹 서버**가 있는 항목을 마우스 오른쪽 단추로 클릭하고 **중복된 템플릿**을 선택합니다.  
+3.  W okienku wyników kliknij prawym przyciskiem myszy wpis **serwera sieci Web** w **Nazwa wyświetlana szablonu** kolumny, a następnie wybierz pozycję **Duplikuj szablon**.  
 
-4.  **중복된 템플릿** 대화 상자에서 **Windows 2003 Server, Enterprise Edition**이 선택되어 있는지 확인하고 **확인**을 선택합니다.  
-
-    > [!IMPORTANT]  
-    >  **Windows 2008 Server, Enterprise Edition.**  
-
-5.  **새 템플릿의 속성** 대화 상자의 **일반** 탭에서 AMT 컴퓨터의 대역 외 관리에 사용할 웹 인증서를 생성하기 위한 템플릿 이름(예: **ConfigMgr AMT Web Server Certificate**)을 입력합니다.  
-
-6.  **주체 이름** 탭에서 **이 Active Directory 정보로 만듦**을 선택하고 **주체 이름 형식**에 **일반 이름**을 선택한 후에 대체 주체 이름에서 **UPN(사용자 계정 이름)**의 선택을 취소합니다.  
-
-7.  **보안** 탭을 선택하고 **Domain Admins** 및 **Enterprise Admins** 보안 그룹에서 **등록** 권한을 제거합니다.  
-
-8.  **추가**를 선택하고 AMT 프로비전을 위해 만든 보안 그룹의 이름을 입력한 다음 **확인**을 선택합니다.  
-
-9. 이 보안 그룹에 대해 다음과 같은 **허용** 권한을 선택합니다. **읽기** 및 **등록**  
-
-10. **확인**을 선택한 다음 **인증서 템플릿 콘솔**을 닫습니다.  
-
-11. **인증 기관** 콘솔에서 **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고 **새로 만들기**를 선택한 다음 **발급할 인증서 템플릿**을 선택합니다.  
-
-12. **인증서 템플릿 사용** 대화 상자에서 방금 만든 새 템플릿 **ConfigMgr AMT Web Server Certificate**를 선택하고 **확인**을 선택합니다.  
-
-13. 인증서를 더 만들고 발급할 필요가 없으면 **인증 기관**을 닫습니다.  
-
- 이제 AMT 웹 서버 템플릿에서 웹 서버 인증서를 사용하여 AMT 기반 컴퓨터를 설정할 수 있습니다. 대역 외 관리 구성 요소 속성에서 이 인증서 템플릿을 선택합니다.  
-
-### <a name="create-and-issue-the-client-authentication-certificates-for-8021x-amt-based-computers"></a>802.1X AMT 기반 컴퓨터용 클라이언트 인증 인증서 만들기 및 발급  
- AMT 기반 컴퓨터가 802.1X 인증 유/무선 네트워크에 클라이언트 인증서를 사용하는 경우 다음 절차를 따르십시오.  
-
-##### <a name="to-create-and-issue-the-client-authentication-certificate-template-on-the-ca"></a>CA에서 클라이언트 인증 인증서 템플릿을 만들고 발급하려면  
-
-1.  인증서 서비스가 설치된 구성원 서버에서, 인증 기관 콘솔에서 **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고 **관리**를 선택하여 **인증서 템플릿** 콘솔을 로드합니다.  
-
-2.  결과 창에서 **템플릿 표시 이름** 열의 **워크스테이션 인증**이 있는 항목을 마우스 오른쪽 단추로 클릭하고 **중복된 템플릿**을 선택합니다.  
+4.  W **Duplikuj szablon** okna dialogowego Sprawdź, czy **systemu Windows Server 2003, Enterprise Edition** jest zaznaczone, a następnie wybierz pozycję **OK**.  
 
     > [!IMPORTANT]  
-    >  **Windows 2008 Server, Enterprise Edition.**  
+    >  Nie wybieraj systemu **Windows 2008 Server, Enterprise Edition.**  
 
-3.  **새 템플릿의 속성** 대화 상자의 **일반** 탭에서 AMT 컴퓨터의 대역 외 관리에 사용할 클라이언트 인증서를 생성하기 위한 템플릿 이름(예: **ConfigMgr AMT 802.1X Client Authentication Certificate**)을 입력합니다.  
+5.  W **właściwości nowego szablonu** na okna dialogowego **ogólne** wprowadź nazwę szablonu, takie jak **certyfikat serwera sieci Web AMT programu ConfigMgr**, w celu wygenerowania certyfikatów sieci web, które będą używane do zarządzania poza pasmem na komputerach AMT.  
 
-4.  **주체 이름** 탭을 선택하고 **이 Active Directory 정보로 만듦**을 선택한 후에 **주체 이름 형식**에 **일반 이름**을 선택합니다. 대체 주체 이름에서 **DNS 이름**의 선택을 취소하고 **UPN(사용자 계정 이름)**을 선택합니다.  
+6.  Wybierz **nazwa podmiotu** , wybierz pozycję **Konstruuj z tej informacji usługi Active Directory**, wybierz **nazwa pospolita** dla **format nazwy podmiotu**, a następnie wyczyść **główna nazwa użytkownika (UPN)** dla ustawienia alternatywnej nazwy podmiotu.  
 
-5.  **보안** 탭을 선택하고 **Domain Admins** 및 **Enterprise Admins** 보안 그룹에서 **등록** 권한을 제거합니다.  
+7.  Wybierz **zabezpieczeń** karcie, a następnie usuń **Zarejestruj** zgody **Administratorzy domeny** i **Administratorzy przedsiębiorstwa** grup zabezpieczeń.  
 
-6.  **추가**를 선택하고 대역 외 관리 구성 요소 속성에서 AMT 기반 컴퓨터의 컴퓨터 계정을 포함하도록 지정할 보안 그룹의 이름을 입력한 다음 **확인**을 선택합니다.  
+8.  Wybierz **Dodaj**i wprowadź nazwę grupy zabezpieczeń utworzonej dla udostępniania AMT, a następnie wybierz **OK**.  
 
-7.  이 보안 그룹에 대해 다음과 같은 **허용** 권한을 선택합니다. **읽기** 및 **등록**  
+9. Wybierz następujące **Zezwalaj** uprawnienia dla tej grupy zabezpieczeń: **Odczyt** i **zarejestrować**.  
 
-8.  **확인**을 선택하여 **인증서 템플릿** 관리 콘솔, **certtmpl – [인증서 템플릿]**을 닫습니다.  
+10. Wybierz **OK**, a następnie Zamknij **szablonów certyfikatów** konsoli.  
 
-9. **인증 기관** 관리 콘솔에서 **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고 **새로 만들기**를 선택한 다음 **발급할 인증서 템플릿**을 선택합니다.  
+11. W **urzędu certyfikacji** konsoli, kliknij prawym przyciskiem myszy **szablonów certyfikatów**, wybierz **nowy**, a następnie wybierz pozycję **szablon certyfikatu do wystawienia**.  
 
-10. **인증서 템플릿 사용** 대화 상자에서 방금 만든 새 템플릿 **ConfigMgr AMT 802.1X Client Authentication Certificate**를 선택하고 **확인**을 선택합니다.  
+12. W **Włączanie szablonu certyfikatu** okno dialogowe Nowy szablon, który właśnie utworzony, wybierz pozycję **certyfikat serwera sieci Web AMT programu ConfigMgr**, a następnie wybierz pozycję **OK**.  
 
-11. 인증서를 더 만들고 발급할 필요가 없으면 **인증 기관**을 닫습니다.  
+13. Jeśli nie masz do tworzenia i wystawiania certyfikatów więcej, Zamknij **urzędu certyfikacji**.  
 
- 이제 클라이언트 인증 인증서 템플릿으로 802.1X 클라이언트 인증에 사용할 수 있는 AMT 기반 컴퓨터에 대한 인증서를 발급할 수 있습니다. 대역 외 관리 구성 요소 속성에서 이 인증서 템플릿을 선택합니다.  
+ Szablon serwera sieci Web AMT jest teraz gotowy do konfigurowania komputerów opartych na technologii AMT certyfikatów serwera sieci web. Wybierz ten szablon certyfikatu we właściwościach składnika zarządzania poza pasmem.  
 
-##  <a name="BKMK_MacClient_SP1"></a> Mac 컴퓨터용 클라이언트 인증서 배포  
+### <a name="create-and-issue-the-client-authentication-certificates-for-8021x-amt-based-computers"></a>Utworzyć i wydać certyfikaty uwierzytelniania 802.1 X AMT, na komputerach klienta  
+ Użyj poniższej procedury, jeśli komputery oparte na technologii AMT będą używać certyfikatów klienta dla uwierzytelnianych sieci przewodowych i bezprzewodowych 802.1X.  
 
-이 인증서 배포는 단일 절차로 인증 기관에서 등록 인증서 템플릿을 만들고 발급합니다.  
+##### <a name="to-create-and-issue-the-client-authentication-certificate-template-on-the-ca"></a>Aby utworzyć i wydać szablon certyfikatu uwierzytelniania klienta w urzędzie certyfikacji  
 
-###  <a name="BKMK_MacClient_CreatingIssuing"></a> 인증 기관에서 Mac 클라이언트 인증서 템플릿 만들기 및 발급  
- 이 절차는 System Center Configuration Manager Mac 컴퓨터용 사용자 지정 인증서 템플릿을 만들고 인증 기관에 인증서 템플릿을 추가합니다.  
+1.  Na serwerze członkowskim z usługami certyfikatów zainstalowane, w konsoli Urząd certyfikacji kliknij prawym przyciskiem myszy **szablonów certyfikatów**, a następnie wybierz pozycję **Zarządzaj** załadować **szablonów certyfikatów** konsoli.  
+
+2.  W okienku wyników kliknij prawym przyciskiem myszy wpis **Uwierzytelnianie stacji roboczej** w **Nazwa wyświetlana szablonu** kolumny, a następnie wybierz pozycję **Duplikuj szablon**.  
+
+    > [!IMPORTANT]  
+    >  Nie wybieraj systemu **Windows 2008 Server, Enterprise Edition.**  
+
+3.  W **właściwości nowego szablonu** na okna dialogowego **ogólne** wprowadź nazwę szablonu, takie jak **certyfikat uwierzytelniania klienta programu ConfigMgr AMT 802.1 X**, w celu wygenerowania certyfikatów klienta, które będzie służyć do zarządzania poza pasmem na komputerach AMT.  
+
+4.  Wybierz **nazwa podmiotu** , wybierz pozycję **Konstruuj z tej informacji usługi Active Directory**, a następnie wybierz pozycję **nazwa pospolita** dla **format nazwy podmiotu**. Wyczyść **nazwy DNS** dla alternatywnej podmiotu nazwy, a następnie wybierz pozycję **główna nazwa użytkownika (UPN)**.  
+
+5.  Wybierz **zabezpieczeń** karcie, a następnie usuń **Zarejestruj** zgody **Administratorzy domeny** i **Administratorzy przedsiębiorstwa** grup zabezpieczeń.  
+
+6.  Wybierz **Dodaj**, wprowadź nazwę grupy zabezpieczeń, który będzie określić we właściwościach składnika zarządzania poza pasmem, aby obejmować konta komputerów opartych na technologii AMT, a następnie wybierz **OK**.  
+
+7.  Wykonaj następujące czynności **Zezwalaj** uprawnienia dla tej grupy zabezpieczeń: **Odczyt** i **zarejestrować**.  
+
+8.  Wybierz **OK**, a następnie Zamknij **szablonów certyfikatów** konsoli zarządzania **certtmpl - [szablony certyfikatów]**.  
+
+9. W **urzędu certyfikacji** konsoli zarządzania kliknij prawym przyciskiem myszy **szablonów certyfikatów**, wybierz **nowy**, a następnie wybierz pozycję **szablon certyfikatu do wystawienia**.  
+
+10. W **Włączanie szablonu certyfikatu** okno dialogowe Nowy szablon, który właśnie utworzony, wybierz pozycję **certyfikat uwierzytelniania klienta programu ConfigMgr AMT 802.1 X**, a następnie wybierz pozycję **OK**.  
+
+11. Jeśli nie ma potrzeby tworzenia i wystawiania certyfikatów więcej, Zamknij **urzędu certyfikacji**.  
+
+ Szablon certyfikatu uwierzytelniania klienta jest teraz gotowy do wystawiania komputerom opartym na technologii AMT certyfikatów, których można będzie użyć do uwierzytelniania klientów 802.1X. Wybierz ten szablon certyfikatu we właściwościach składnika zarządzania poza pasmem.  
+
+##  <a name="BKMK_MacClient_SP1"></a>Wdrażanie certyfikatu klienta dla komputerów Mac  
+
+W tym wdrożeniu certyfikatu zarówno utworzenie, jak i wystawienie szablonu certyfikatu rejestracji w urzędzie certyfikacji jest objęte tą samą procedurą.  
+
+###  <a name="BKMK_MacClient_CreatingIssuing"></a>Utworzyć i wydać szablon certyfikatu w urzędzie certyfikacji klienta na komputery Mac  
+ Ta procedura powoduje utworzenie niestandardowego szablonu certyfikatu dla komputerów Mac programu System Center Configuration Manager i dodanie szablonu certyfikatu do urzędu certyfikacji.  
 
 > [!NOTE]  
->  이 인증서는 Windows 클라이언트 컴퓨터 또는 배포 지점용으로 만든 인증서 템플릿과 다른 인증서 템플릿을 사용합니다.  
+>  Ta procedura korzysta z innego szablonu certyfikatu niż szablony certyfikatów, które być może utworzono wcześniej dla klientów z systemem Windows lub dla punktów dystrybucji.  
 >   
->  이 인증서에 대한 새 인증서 템플릿을 만들면 인증서 요청을 인증된 사용자로 제한할 수 있습니다.  
+>  Podczas tworzenia nowego szablonu certyfikatu dla tego certyfikatu, można ograniczyć żądanie certyfikatu do autoryzowanych użytkowników.  
 
-##### <a name="to-create-and-issue-the-mac-client-certificate-template-on-the-certification-authority"></a>인증 기관에서 Mac 클라이언트 인증서 템플릿을 만들고 발급하려면  
+##### <a name="to-create-and-issue-the-mac-client-certificate-template-on-the-certification-authority"></a>Aby utworzyć i wydać szablon certyfikatu klienta Mac w urzędzie certyfikacji  
 
-1.  System Center Configuration Manager를 사용하여 Mac 컴퓨터에서 인증서를 등록할 관리자의 사용자 계정이 포함된 보안 그룹을 만듭니다.  
+1.  Utwórz grupę zabezpieczeń, która zawiera konta użytkowników dla użytkowników administracyjnych, którzy będą rejestrowali ten certyfikat na komputerze Mac za pomocą programu System Center Configuration Manager.  
 
-2.  인증 기관 콘솔을 실행하는 구성원 서버에서 **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고 **관리**를 선택하여 인증서 템플릿 관리 콘솔을 로드합니다.  
+2.  Na serwerze członkowskim, na którym uruchomiona jest Konsola urzędu certyfikacji, kliknij prawym przyciskiem myszy **szablonów certyfikatów**, a następnie wybierz pozycję **Zarządzaj** aby załadować Konsolę zarządzania szablony certyfikatów.  
 
-3.  결과 창에서 **템플릿 표시 이름** 열에 **인증된 세션**을 표시하는 항목을 마우스 오른쪽 단추로 클릭하고 **중복된 템플릿**을 선택합니다.  
+3.  W okienku wyników kliknij prawym przyciskiem myszy wpis opisany **sesja uwierzytelniona** w **Nazwa wyświetlana szablonu** kolumny, a następnie wybierz pozycję **Duplikuj szablon**.  
 
-4.  **중복된 템플릿** 대화 상자에서 **Windows 2003 Server, Enterprise Edition**이 선택되어 있는지 확인하고 **확인**을 선택합니다.  
+4.  W **Duplikuj szablon** okna dialogowego Sprawdź, czy **systemu Windows Server 2003, Enterprise Edition** jest zaznaczone, a następnie wybierz pozycję **OK**.  
 
     > [!IMPORTANT]  
-    >  **Windows 2008 Server, Enterprise Edition**은 선택하지 마십시오.  
+    >  Nie wybieraj systemu **Windows 2008 Server, Enterprise Edition**.  
 
-5.  **새 템플릿의 속성** 대화 상자의 **일반** 탭에 Mac 클라이언트 인증서를 생성하기 위한 템플릿 이름(예: **ConfigMgr Mac Client Certificate**)을 입력합니다.  
+5.  W **właściwości nowego szablonu** na okna dialogowego **ogólne** wprowadź nazwę szablonu, takie jak **certyfikat klienta Mac ConfigMgr**, aby wygenerować certyfikat klienta Mac.  
 
-6.  **주체 이름** 탭에서 **이 Active Directory 정보로 만듦**이 선택되어 있는지 확인하고 **주체 이름 형식:**으로 **일반 이름**을 선택한 후에 **대체 주체 이름에 이 정보 포함**에서 **UPN(사용자 계정 이름)**의 선택을 취소합니다.  
+6.  Wybierz **nazwa podmiotu** karcie, upewnij się, że **Konstruuj z tej informacji usługi Active Directory** jest wybrana, wybierz **nazwa pospolita** dla **format nazwy podmiotu:**, a następnie wyczyść **główna nazwa użytkownika (UPN)** z **Dołącz tę informację do alternatywnej nazwy podmiotu**.  
 
-7.  **보안** 탭을 선택하고 **Domain Admins** 및 **Enterprise Admins** 보안 그룹에서 **등록** 권한을 제거합니다.  
+7.  Wybierz **zabezpieczeń** karcie, a następnie usuń **Zarejestruj** zgody **Administratorzy domeny** i **Administratorzy przedsiębiorstwa** grup zabezpieczeń.  
 
-8.  **추가**를 선택하고 1단계에서 만든 보안 그룹을 지정한 후에 **확인**을 선택합니다.  
+8.  Wybierz **Dodaj**, określ grupę zabezpieczeń utworzoną w pierwszym kroku, a następnie wybierz pozycję **OK**.  
 
-9. 이 그룹에 대한 **등록** 권한을 선택하고, **읽기** 권한을 해제하지 않습니다.  
+9. Wybierz **Zarejestruj** dla tej grupy uprawnienie i nie usuwaj **odczytu** uprawnienia.  
 
-10. **확인**을 선택한 다음 **인증서 템플릿 콘솔**을 닫습니다.  
+10. Wybierz **OK**, a następnie Zamknij **konsolę Szablony certyfikatów**.  
 
-11. 인증 기관 콘솔에서 **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고 **새로 만들기**를 선택한 다음 **발급할 인증서 템플릿**을 선택합니다.  
+11. W konsoli Urząd certyfikacji kliknij prawym przyciskiem myszy **szablonów certyfikatów**, wybierz **nowy**, a następnie wybierz pozycję **szablon certyfikatu do wystawienia**.  
 
-12. **인증서 템플릿 사용** 대화 상자에서 방금 만든 새 템플릿 **ConfigMgr Mac Client Certificate**를 선택하고 **확인**을 선택합니다.  
+12. W **Włączanie szablonu certyfikatu** okno dialogowe Nowy szablon, który właśnie utworzony, wybierz pozycję **certyfikat klienta Mac ConfigMgr**, a następnie wybierz pozycję **OK**.  
 
-13. 인증서를 더 만들고 발급할 필요가 없으면 **인증 기관**을 닫습니다.  
+13. Jeśli nie masz do tworzenia i wystawiania certyfikatów więcej, Zamknij **urzędu certyfikacji**.  
 
- 이제 등록을 위한 클라이언트 설정을 설정할 때 Mac 클라이언트 인증서 템플릿을 선택할 수 있습니다.
-
+ Szablon certyfikatu klienta Mac jest teraz gotowy do wybrania podczas konfigurowania ustawień klienta do rejestracji.

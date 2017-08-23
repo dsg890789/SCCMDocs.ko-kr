@@ -1,81 +1,77 @@
 ---
-title: "장기 서비스 분기 소개 | Microsoft 문서"
-description: "System Center Configuration Manager의 장기 서비스 분기에 대해 알아봅니다."
+title: "Wprowadzenie do długoterminowego gałęzi obsługi | Dokumentacja firmy Microsoft"
+description: "Więcej informacji na temat długoterminowej gałęzi obsługi programu System Center Configuration Manager."
 ms.custom: na
 ms.date: 05/01/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 694bc29f-a7fd-4e06-815a-1a9c5e9ac563
-caps.latest.revision: 0
+caps.latest.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d940fd1bbf96767d44f8c55315e814be55a83897
 ms.openlocfilehash: 91c1ca860069c6ebe0d20230c4620bf3f68735a2
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/18/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 08/07/2017
 ---
-# <a name="introduction-to-the-long-term-servicing-branch-of-system-center-configuration-manager"></a>System Center Configuration Manager의 장기 서비스 분기 소개
+# <a name="introduction-to-the-long-term-servicing-branch-of-system-center-configuration-manager"></a>Wprowadzenie do długoterminowego gałęzi obsługi programu System Center Configuration Manager
 
-*적용 대상: System Center Configuration Manager(장기 서비스 분기)*
+*Dotyczy: System Center Configuration Manager (długoterminowej obsługi oddziału)*
 
-System Center Configuration Manager의 LTSB(장기 서비스 분기)는 모든 고객이 사용할 수 있는 설치 옵션으로 설계된 Configuration Manager의 고유한 분기입니다. 그러나 Configuration Manager에 대한 SA(Software Assurance) 또는 이와 동등한 구독 권한이 없는 고객에게는 유일한 옵션입니다.
+Długoterminowe Servicing Branch (LTSB) programu System Center Configuration Manager jest gałęzią różne Menedżera konfiguracji, który został zaprojektowany jako opcji do zainstalowania dostępne dla wszystkich klientów. Jednak jest jedyną opcją dla klientów, którzy let wygaśnięcie ich Software Assurance (SA) lub prawa równoważne subskrypcji programu Configuration Manager.
 
 
-Configuration Manager 버전 1606을 기준으로 Configuration Manager의 현재 분기와 비교할 때 LTSB의 기능이 감소되었습니다.
+W oparciu o 1606 wersji programu Configuration Manager, LTSB ma ograniczone funkcje w porównaniu do bieżącej gałęzi programu Configuration Manager.
 
  > [!TIP]   
- > **Windows Server**의 분기에 대한 자세한 내용은 [Windows Server 2016 new Current Branch for Business servicing option]( https://blogs.technet.microsoft.com/windowsserver/2016/07/12/windows-server-2016-new-current-branch-for-business-servicing-option/)(Windows Server 2016 새 비즈니스용 현재 분기 서비스 옵션)을 참조하세요.
+ > Jeśli szukasz informacji na temat oddziały **systemu Windows Server**, zobacz [systemu Windows Server 2016 nowe Current Branch dla firm opcji obsługi]( https://blogs.technet.microsoft.com/windowsserver/2016/07/12/windows-server-2016-new-current-branch-for-business-servicing-option/).
 
-## <a name="features-that-are-not-available-in-the-ltsb-of-configuration-manager"></a>Configuration Manager의 LTSB에서 사용할 수 없는 기능
-Configuration Manager의 현재 분기는 LTSB에서는 사용할 수 없는 다음 기능을 지원합니다.
+## <a name="features-that-are-not-available-in-the-ltsb-of-configuration-manager"></a>Funkcje, które nie są dostępne w LTSB Configuration Manager
+Bieżąca gałąź programu Configuration Manager obsługuje następujące funkcje, które jest niedostępne, gdy używasz LTSB:
 
--   새로운 기능과 개선 사항을 추가하는 콘솔 내 업데이트
--   사이트 서버 및 클라이언트로 사용하기 위해 새로 릴리스된 운영 체제에 대한 지원
--   Microsoft Intune 구독을 사용하여 다음 지원:
-    -   하이브리드 MDM(모바일 장치 관리) 구성에서 Intune을 사용할 수 없음
-    -   온-프레미스 MDM을 사용할 수 없음
--   최신 Windows 10 CB(현재 분기) 및 CBB(비즈니스용 현재 분기) 버전에 대한 지원을 포함한 Windows 10 서비스 대시보드 및 서비스 계획  
--   Windows Server 및 Windows 10 LTSB의 향후 릴리스에 대한 지원
--   Asset Intelligence
--   클라우드 기반 배포 지점
--   Exchange Connector로 사용되는 Exchange Online    
+-   W konsoli aktualizacji dodawać nowe funkcje i ulepszenia.
+-   Obsługa nowo wydanego systemów operacyjnych do użycia jako serwery lokacji i klientów.
+-   Korzystanie z subskrypcji usługi Microsoft Intune do obsługi.
+    -   Usługa Intune w konfiguracji zarządzania urządzeniami Przenośnymi hybrydowych urządzeń przenośnych
+    -   Lokalne zarządzanie urządzeniami Przenośnymi
+-   Nawigacyjnym obsługi systemu Windows 10 i plany obsługi, w tym obsługę najnowszych systemu Windows 10 Current Branch (CB) i Current Branch dla wersji Business (CBB).  
+-   Obsługa w przyszłych wersjach systemu Windows Server i Windows 10 LTSB
+-   Analiza zasobów
+-   Chmurowe punkty dystrybucji
+-   Usługi Exchange Online jako łącznik programu Exchange    
 
-LTSB에서는 이러한 기능에 대한 지원을 사용할 수 없어도 일부 기능은 Configuration Manager 콘솔에 계속 표시됩니다. 하지만 선택하거나 사용할 수 없습니다.
-
-
-## <a name="find-documentation-for-the-ltsb"></a>LTSB에 대한 문서 찾기
-LTSB는 현재 분기 버전 1606을 기반으로 합니다. 제품 설명서는 [현재 분기 설명서](https://docs.microsoft.com/sccm/)를 사용하며 여기에는 LTSB에만 해당하는 주의 사항과 제한 사항이 있습니다. 이러한 주의 사항과 제한 사항은 다음 온라인 항목에서 확인할 수 있습니다.
-
--      [장기 서비스 분기 소개](introduction-to-the-ltsb.md): (이 항목)
--      [장기 서비스 분기 설치](install-the-ltsb.md)
--      [장기 서비스 분기를 현재 분기로 업그레이드](convert-to-current-branch.md)
--      [장기 서비스 분기에 대해 지원되는 구성](supported-configurations-for-ltsb.md)
--   [Configuration Manager의 장기 서비스 분기 관리](manage-the-ltsb.md)
-
-LTSB에 대한 현재 분기 설명서를 참조할 때 버전 1606에 적용되는 세부 정보가 LTSB에도 적용됩니다. 버전 1610 이상에 소개된 기능이나 세부 정보는 LTSB에서 지원하지 않습니다.
+Mimo że obsługi dla tych funkcji nie są dostępne z LTSB, niektóre funkcje są widoczne w konsoli programu Configuration Manager, ale nie zostanie wybrana lub używane.
 
 
-## <a name="licensing-overview-for-the-ltsb"></a>LTSB에 대한 라이선스 개요   
-2016년 10월 1일 당시 System Center Configuration Manager 라이선스에 활성 SA(Software Assurance)가 있거나 이와 동등한 구독 권한이 있는 고객은 System Center Configuration Manager의 2016년 10월 버전 1606 릴리스를 사용할 수 있습니다. 2016년 10월 1일 이후에 System Center Configuration Manager에 대한 권한이 있는 고객은 설치 시 현재 분기 및 LTSB(장기 서비스 분기)라는 두 가지 사용이 허가된 옵션을 사용할 수 있습니다.
+## <a name="find-documentation-for-the-ltsb"></a>Znajdź dokumentację dotyczącą LTSB
+LTSB jest oparty na wersji Current Branch 1606. Dokumentacja produktu, użyj [dokumentacji Current Branch](https://docs.microsoft.com/sccm/), ostrzeżenia i ograniczenia, które są specyficzne dla LTSB. Te zastrzeżenia i ograniczenia są identyfikowane w następujących tematach online:
 
-System Center Configuration Manager에 대한 영구적인 권한이 있거나 10월 1일 이후에 SA 또는 구독 경과를 허용하는 고객은 경과 당시 최신 버전인 System Center Configuration Manager LTSB 버전을 설치할 수 있습니다.
+-     [Wprowadzenie do długoterminowego gałęzi obsługi](introduction-to-the-ltsb.md): (W tym temacie)
+-     [Zainstaluj długoterminowej gałęzi obsługi](install-the-ltsb.md)
+-     [Uaktualnij długoterminowej obsługi gałęzi do bieżącej gałęzi](convert-to-current-branch.md)
+-     [Obsługiwane konfiguracje dla wersji Long-Term Servicing Branch](supported-configurations-for-ltsb.md)
+-   [Zarządzanie długoterminowej gałęzi obsługi programu Configuration Manager](manage-the-ltsb.md)
 
-[Microsoft 볼륨 라이선스 프로그램을 통해 구입하는 제품에 대한 전체 계약조건은 여기서 확인할 수 있습니다](http://go.microsoft.com/fwlink/?LinkId=800052).
+Podając odniesienie Current Branch dokumentacji LTSB szczegółowe informacje, które dotyczą wersji 1606 dotyczą również LTSB. Funkcje lub szczegóły, które są wprowadzane z wersją 1610 lub nowsze nie są obsługiwane przez LTSB.
 
-Configuration Manager 분기용 라이선스에 대한 자세한 내용은 [System Center Configuration Manager의 라이선스 및 분기](learn-more-editions.md)를 참조하세요.
 
-## <a name="next-steps"></a>다음 단계
+## <a name="licensing-overview-for-the-ltsb"></a>Omówienie licencji dla LTSB   
+Klienci z active Software Assurance (SA) licencji programu System Center Configuration Manager lub z prawami równoważne subskrypcji, począwszy od 1 do października 2016 r. mają prawa do korzystania z tego wydania wersji 1606 października 2016 programu System Center Configuration Manager. Klienci z uprawnieniami do programu System Center Configuration Manager na lub po 1 października 2016 r., będą dostępne dwa opcje licencjonowanego podczas instalacji: Bieżąca gałąź i długoterminowych obsługi Branch (LTSB).
 
-Configuration Manager LTSB가 사용자 환경에 맞는 분기인지 확인한 경우 [새 LTSB](/sccm/core/understand/install-the-ltsb#install-a-new-site) 사이트를 새 계층의 일부로 설치하거나, [System Center 2012 Configuration Manager 사이트](/sccm/core/understand/install-the-ltsb#upgrade-from-system-center-2012-configuration-manager) 및 계층 구조로 업그레이드합니다.
+Klienci, które mają prawa bezterminowo do programu System Center Configuration Manager lub zezwalające na SA lub subskrypcji wygaśnięcie po 1 października można zainstalować wersji programu System Center Configuration Manager LTSB są aktualne w momencie wygaśnięcia.
 
-설치 미디어가 없는 경우 [System Center 2016 설명서](https://technet.microsoft.com/system-center-docs/system-center)에서 System Center Configuration Manager LTSB를 설치하는 데 사용할 수 있는 미디어가 포함된 System Center 2016을 가져오는 방법에 대해 참조하세요.  
+[Zakończenie warunki i postanowienia dla produktów można zakupić za pośrednictwem programów licencjonowania zbiorowego firmy Microsoft można znaleźć tutaj](http://go.microsoft.com/fwlink/?LinkId=800052).
 
+Zobacz [licencji programu System Center Configuration Manager i gałęzie](learn-more-editions.md) Aby uzyskać więcej informacji na temat licencjonowania dla gałęzi programu Configuration Manager.
+
+## <a name="next-steps"></a>Następne kroki
+
+Jeśli zdecydujesz, że LTSB programu Configuration Manager jest poprawne gałęzie w danym środowisku [zainstalować nowy LTSB](/sccm/core/understand/install-the-ltsb#install-a-new-site) lokacji w ramach nowej hierarchii, lub [uaktualniania lokacji programu System Center 2012 Configuration Manager](/sccm/core/understand/install-the-ltsb#upgrade-from-system-center-2012-configuration-manager) i hierarchii.
+
+Jeśli nie masz nośnika instalacyjnego, zobacz [dokumentacji programu System Center 2016](https://technet.microsoft.com/system-center-docs/system-center) Aby uzyskać informacje dotyczące sposobu uzyskania programu System Center 2016, w tym nośnika można użyć do zainstalowania LTSB System Center Configuration Manager.  
