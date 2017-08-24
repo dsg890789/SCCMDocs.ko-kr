@@ -6,23 +6,20 @@ ms.date: 3/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ec976930-7467-4d3c-b33c-991bf408a74a
-caps.latest.revision: 10
-caps.handback.revision: 0
+caps.latest.revision: "10"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ee7f69bd65152deffb2456d9807e1e8fee8802ec
 ms.openlocfilehash: cd90f5462ac4bb4c0a2021e6d5dde65161b9c5f6
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="prerequisites-for-migration-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 마이그레이션을 수행하기 위한 필수 조건
 
@@ -128,4 +125,3 @@ System Center 2012 Configuration Manager 또는 System Center Configuration Mana
     -   System Center 2012 Configuration Manager 또는 System Center Configuration Manager 배포 지점을 재할당하려면 계정에 원본 사이트의 **사이트** 개체에 대한 **수정** 권한이 있어야 합니다. 역할 기반 관리를 사용하여 계정에 이 권한을 부여합니다. 역할 기반 관리를 사용하는 방법에 대한 자세한 내용은 [Fundamentals of role-based administration for System Center Configuration Manager](../../core/understand/fundamentals-of-role-based-administration.md)항목을 참조하세요.  
 
      배포 지점을 업그레이드하거나 새 계층에 재할당하려면 원본 계층에서 배포 지점을 관리하는 사이트에서 클라이언트 요청에 대해 구성한 포트가 배포 지점을 관리할 대상 사이트에서 클라이언트 요청에 대해 구성한 포트와 일치해야 합니다. 클라이언트 요청 포트에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 통신 포트를 구성하는 방법](../../core/clients/deploy/configure-client-communication-ports.md)을 참조하세요.  
-

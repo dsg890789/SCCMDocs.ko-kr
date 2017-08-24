@@ -6,22 +6,19 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 78a0aecc-f775-451e-aa05-56377ec91b1f
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 9b94330221548da15cda8423c2a47568fd22342e
-ms.contentlocale: ko-kr
-ms.lasthandoff: 03/06/2017
-
-
+ms.openlocfilehash: 7ab9042a525e07b8e3107479cedeec6b99f7bc86
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-configure-hardware-inventory-for-mobile-devices-enrolled-by-microsoft-intune-and-system-center-configuration-manager"></a>Microsoft Intune 및 System Center Configuration Manager에서 등록한 모바일 장치의 하드웨어 인벤토리 구성 방법
 
@@ -140,4 +137,3 @@ Configuration Manager에서 Microsoft Intune 커넥터를 사용하여 iOS, Andr
  <sup>1</sup> 전화번호는 마지막 4자리를 제외하고 모두 *로 마스킹됩니다.  
 
  전화 번호를 수집하는 인벤토리의 경우, 장치에 SIM 카드가 삽입되어 있어야 하고 통신 회사에서 해당 SIM에 프로비전한 전화 번호가 있어야 합니다.  
-

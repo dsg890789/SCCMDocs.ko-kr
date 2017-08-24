@@ -6,23 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 727bca0d-6458-48dc-9a63-3b66d9799ddb
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2087badc9dd1d216352dce232b145a786783ac89
 ms.openlocfilehash: 44f454d2f7c9d317d1ad99ba724931b4631bd11e
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/18/2017
-
-
----                     
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
+---
 # <a name="queries-technical-reference-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 쿼리 기술 참조
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -37,4 +34,3 @@ System Center Configuration Manager의 쿼리는 사용자가 지정하는 기�
 -   [System Center Configuration Manager의 쿼리 작업 및 유지 관리](../../../core/servers/manage/operations-and-maintenance-for-queries.md)  
 
 -   [System Center Configuration Manager에서 쿼리에 대한 보안 및 개인 정보](../../../core/servers/manage/security-and-privacy-for-queries.md)  
-

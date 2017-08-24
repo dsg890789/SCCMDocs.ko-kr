@@ -6,22 +6,19 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 1ef60106-8f31-46d6-95a6-25a6495f22c7
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: Mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 2ba11c8e2d8214ce9aca7c887fcb539b38da4e84
-ms.contentlocale: ko-kr
-ms.lasthandoff: 03/06/2017
-
-
+ms.openlocfilehash: 85bdadaaaeed9a42cfa5165d2b9f0f3ef434dc03
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="preparation-steps-for-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 위한 준비 단계
 
@@ -46,4 +43,3 @@ System Center Configuration Manager 온\-프레미스 모바일 장치 관리를
 -   [System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 위한 장치 등록 설정](../../mdm/get-started/set-up-device-enrollment-on-premises-mdm.md)  
 
      이 작업에서는 사용자에게 컴퓨터 및 장치를 등록할 수 있는 권한을 부여하고, 장치(일반적으로 도메인에 가입되지 않은 장치)에 신뢰할 수 있는 루트 인증서를 설치하여 사이트 시스템 서버에 대한 HTTPS 연결을 허용합니다.  
-

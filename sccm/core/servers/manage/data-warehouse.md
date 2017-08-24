@@ -6,8 +6,7 @@ ms.date: 7/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: aaf43e69-68b4-469a-ad58-9b66deb29057
@@ -15,12 +14,11 @@ caps.latest.revision:
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
 ms.openlocfilehash: eedbf12d3bf628666efc90c85a8dfab37e4dc9ab
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/29/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 #  <a name="the-data-warehouse-service-point-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 데이터 웨어하우스 서비스 지점
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -194,4 +192,3 @@ ms.lasthandoff: 07/29/2017
 | **A**  |  사용자는 기본 제공 보고서를 사용하여 데이터를 요청합니다. 이 요청은 SQL Server Reporting Services를 통해 보고 서비스 지점에 전달됩니다. |  
 | **B**  |      대부분의 보고서는 현재 정보에 대한 것이며, 사이트 데이터베이스에 대해 이러한 요청이 실행됩니다. |  
 | **C**  | 보고서에서 기록 데이터를 요청하는 경우 *범주*가 **데이터 웨어하우스**인 보고서 중 하나를 사용하여 데이터 웨어하우스 데이터베이스에 대해 요청이 실행됩니다.   |  
-

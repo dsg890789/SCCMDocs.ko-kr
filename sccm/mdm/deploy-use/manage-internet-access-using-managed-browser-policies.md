@@ -6,23 +6,20 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8e25e00c-c9a8-473f-bcb7-ea989f6ca3c5
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 7c8d38ad6bdfece5432d4886f60ff98b8d3bd342
-ms.contentlocale: ko-kr
-ms.lasthandoff: 03/06/2017
-
-
+ms.openlocfilehash: d2dd2c25a2714851ba1e71414cabcef38d3ce014
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-system-center-configuration-manager"></a>System Center Configuration Manager를 통해 관리 브라우저 정책을 사용하여 인터넷 액세스 관리
 
@@ -153,4 +150,3 @@ System Center Configuration Manager에서는 Intune Managed Browser(웹 검색 �
 -   장치가 처음으로 관리 브라우저 정책을 받고 있는데 두 정책이 충돌하면 해당 장치에 URL이 적용되지 않습니다. **정책** 작업 영역의 **정책 충돌** 노드를 사용하여 충돌을 볼 수 있습니다.  
 
 -   장치가 관리 브라우저 정책을 이미 받았는데 두 번째 정책이 충돌하는 설정을 가지고 배포되는 경우 원래 설정은 해당 장치에 유지됩니다. **정책** 작업 영역의 **정책 충돌** 노드를 사용하여 충돌을 볼 수 있습니다.  
-

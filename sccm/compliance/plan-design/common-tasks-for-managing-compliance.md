@@ -6,21 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 915f866e-7559-4c9c-aee2-f9ca92e637b3
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
 ms.openlocfilehash: f62ae116f6f397e7de1da622eea0d9828dd220df
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="common-tasks-for-managing-compliance-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하는 준수 관리를 위한 일반 작업
 
@@ -36,4 +34,3 @@ ms.lasthandoff: 12/16/2016
 
 ## <a name="scenarios-for-creating-and-deploying-configuration-baselines"></a>구성 기준 만들기 및 배포에 대한 시나리오  
  [System Center Configuration Manager에서 구성 기준을 만들고 배포하기 위한 일반 작업](../../compliance/plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md)  
-

@@ -6,23 +6,20 @@ ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: cf014eb0-f8c2-4d37-b8d7-368d63a10b89
-caps.latest.revision: 11
-caps.handback.revision: 0
+caps.latest.revision: "11"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a8959c72608a1531fb323176c33a848a4a669b1c
 ms.openlocfilehash: dface33392c2a2a662522656eabf0936b52b28fc
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/30/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="migrate-data-between-hierarchies-in-system-center-configuration-manager"></a>System Center Configuration Manager의 계층 구조 간에 데이터 마이그레이션
 
@@ -112,4 +109,3 @@ ms.lasthandoff: 12/30/2016
 
 ## <a name="see-also"></a>참고 항목  
  [System Center Configuration Manager 사용 시작](../../core/servers/deploy/start-using.md)
-

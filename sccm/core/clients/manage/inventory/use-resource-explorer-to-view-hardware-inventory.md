@@ -6,22 +6,19 @@ ms.date: 01/03/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 375912f5-436d-4315-bdbe-d77afee6c9f3
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9c5d1e48b76392beaf54b5377c69b648537e86f8
 ms.openlocfilehash: e39fa60a5d215fa1b0a98d4463058497e63a4d4f
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/29/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-use-resource-explorer-to-view-hardware-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 하드웨어 인벤토리를 보기 위해 리소스 탐색기를 사용하는 방법
 
@@ -51,5 +48,4 @@ System Center Configuration Manager의 리소스 탐색기를 사용하여 계�
 3.  보려는 인벤토리가 포함된 컴퓨터를 선택한 다음 **홈** 탭 > **장치** 그룹에서 **시작** >  **리소스 탐색기**를 선택합니다.   
 
 4.  **리소스 탐색기** 창의 오른쪽 창에 있는 항목을 마우스 오른쪽 단추로 클릭하고 **속성**을 선택하여 수집된 인벤토리 정보를 좀 더 읽기 쉬운 형식으로 볼 수 있는 *<항목 이름\>***속성** 대화 상자를 엽니다.  
-
 

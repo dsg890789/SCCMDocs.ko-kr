@@ -6,20 +6,19 @@ ms.date: 12/30/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2e27b0b7-7bd3-45cd-bc99-9c991606c637
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: ac4576035fda943e38d960dd425d44b7a6ef6a01
 ms.openlocfilehash: b52ca4059dfeed08cabf1f75319da40d6499622f
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="plan-a-client-migration-strategy-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트 마이그레이션 전략 계획
 
@@ -35,7 +34,7 @@ ms.openlocfilehash: b52ca4059dfeed08cabf1f75319da40d6499622f
 
 -   [마이그레이션 중에 인벤토리 및 준수 데이터 계획](#Planning_for_Inventory_data_migration)  
 
-##  <a name="a-nameplanningforclientagentmigrationa-plan-to-migrate-clients-to-the-destination-hierarchy"></a><a name="Planning_for_Client_Agent_Migration"></a> 클라이언트를 대상 계층 구조로 마이그레이션하도록 계획  
+##  <a name="Planning_for_Client_Agent_Migration"></a> 클라이언트를 대상 계층 구조로 마이그레이션하도록 계획  
  원본 계층의 클라이언트를 마이그레이션하면 클라이언트 컴퓨터의 클라이언트 소프트웨어가 업그레이드되어 대상 계층의 제품 버전과 일치하게 됩니다.  
 
 -   **Configuration Manager 2007 원본 계층:** 지원되는 Configuration Manager 버전을 실행하는 원본 계층의 클라이언트를 마이그레이션하면 클라이언트 소프트웨어가 대상 계층의 클라이언트 버전으로 업그레이드됩니다.  
@@ -69,7 +68,7 @@ Configuration Manager 콘솔에 있는 **관리** 작업 영역의 **마이그�
 
 클라이언트를 대상 계층으로 마이그레이션한 후에는 더 이상 원본 계층을 사용하여 해당 장치를 관리할 수 없으며 원본 계층에서 클라이언트를 제거하는 것이 좋습니다. 계층을 마이그레이션할 때 필수 요구 사항은 아니지만, 원본 계층 보고서에 마이그레이션된 클라이언트가 표시되지 않도록 하거나 마이그레이션 중에 두 계층 간의 리소스 수가 잘못 표시되지 않도록 할 수 있습니다. 예를 들어 마이그레이션된 클라이언트가 원본 사이트 데이터베이스에 남아 있으면 이제 대상 계층에서 관리되는 컴퓨터를 관리되지 않는 리소스로 잘못 식별하는 소프트웨어 업데이트 보고서를 실행할 수 있습니다.  
 
-##  <a name="a-nameplanningforclientdatamigrationa-plan-to-handle-data-maintained-on-clients-during-migration"></a><a name="Planning_for_Client_Data_Migration"></a> 마이그레이션 중에 클라이언트에 유지 관리되는 데이터를 처리하도록 계획  
+##  <a name="Planning_for_Client_Data_Migration"></a> 마이그레이션 중에 클라이언트에 유지 관리되는 데이터를 처리하도록 계획  
 원본 계층에서 대상 계층으로 클라이언트를 마이그레이션하면 일부 정보는 장치에 보존되지만 일부 다른 정보는 마이그레이션 후에 장치에서 사용할 수 없게 됩니다.  
 
 다음 정보는 클라이언트 장치에 보존됩니다.  
@@ -98,13 +97,7 @@ Configuration Manager 콘솔에 있는 **관리** 작업 영역의 **마이그�
 
 또한, 일부 응용 프로그램은 다시 설치해야 할 수 있습니다.  
 
-##  <a name="a-nameplanningforinventorydatamigrationa-plan-for--inventory-and-compliance-data-during-migration"></a><a name="Planning_for_Inventory_data_migration"></a> 마이그레이션 중에 인벤토리 및 준수 데이터 계획  
+##  <a name="Planning_for_Inventory_data_migration"></a> 마이그레이션 중에 인벤토리 및 준수 데이터 계획  
 클라이언트를 대상 계층으로 마이그레이션할 때 클라이언트 인벤토리 및 호환 데이터는 저장되지 않습니다. 대신 이 정보는 클라이언트에서 할당된 사이트에 해당 정보를 처음 보낼 때 대상 계층에서 다시 만들어집니다. 그로 인한 네트워크 대역폭 요구 사항 및 서버 처리를 줄이려면 한 번에 많은 클라이언트를 마이그레이션하는 것보다 적은 수의 클라이언트를 단계적으로 마이그레이션하는 것이 좋습니다.  
 
  또한, 하드웨어 인벤토리의 사용자 지정은 원본 계층에서 마이그레이션할 수 없습니다. 이러한 설정은 마이그레이션과 별도로 대상 계층에 적용해야 합니다. 하드웨어 인벤토리 확장에 대한 자세한 내용은 [System Center Configuration Manager에서 하드웨어 인벤토리를 구성하는 방법](../../core/clients/manage/inventory/configure-hardware-inventory.md)을 참조하세요.  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
-

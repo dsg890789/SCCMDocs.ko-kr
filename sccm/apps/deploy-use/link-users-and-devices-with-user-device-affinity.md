@@ -6,22 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 5b30b0d5-722d-4d4b-9ed7-5a43de315461
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 6b1393b2a329bcd017dc961366afb09fa7a77899
 ms.openlocfilehash: 4e8e677851ad9ae7d027ab685e842a8ff5e35573
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="link-users-and-devices-with-user-device-affinity-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사용자 장치 선호도를 사용하여 사용자와 장치 연결
 
@@ -139,4 +137,3 @@ System Center Configuration Manager(Configuration Manager)의 사용자 장치 �
 3.  **홈** 탭의 **컬렉션** 그룹에서 **선호도 요청 관리**를 선택합니다.  
 
 4.  **사용자 장치 선호도 요청 관리** 대화 상자에서 선호도 요청을 선택한 후에 **승인** 또는 **거부**를 선택합니다.  
-

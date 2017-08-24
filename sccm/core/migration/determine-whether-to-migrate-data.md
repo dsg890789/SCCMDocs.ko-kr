@@ -6,21 +6,20 @@ ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 99222dc8-0e1e-4513-8302-7a1acf671e9b
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: d37261c03fddc3d576fcef73fabd7189e4c46d38
 ms.openlocfilehash: 9dc5f6c9f58e1fc33b2dc9dd76737ae23af81993
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="determine-whether-to-migrate-data-to-system-center-configuration-manager"></a>System Center Configuration Manager로 데이터를 마이그레이션할지 여부 결정
 
@@ -50,7 +49,7 @@ System Center Configuration Manager에서 마이그레이션은 지원되는 버
 
 -   [System Center Configuration Manager로 마이그레이션할 수 없는 데이터](#Cannot_migrate)  
 
-##  <a name="a-namecanmigratea-data-that-you-can-migrate-to-system-center-configuration-manager"></a><a name="Can_Migrate"></a> System Center Configuration Manager로 마이그레이션할 수 있는 데이터  
+##  <a name="Can_Migrate"></a> System Center Configuration Manager로 마이그레이션할 수 있는 데이터  
  지원되는 Configuration Manager 계층 구조 간에는 대부분의 개체를 마이그레이션할 수 있습니다. 지원되는 버전의 Configuration Manager 2007에서 마이그레이션된 일부 개체의 인스턴스는 System Center 2012 Configuration Manager 스키마 및 개체 형식에 맞게 수정해야 합니다.
 
 이렇게 수정한 내용은 원본 사이트 데이터베이스의 데이터에 영향을 주지 않습니다. 지원되는 버전의 System Center 2012 Configuration Manager 또는 System Center Configuration Manager에서 마이그레이션된 개체는 수정할 필요가 없습니다.  
@@ -161,7 +160,7 @@ System Center Configuration Manager에서 마이그레이션은 지원되는 버
 
 -   가상 응용 프로그램 패키지  
 
-##  <a name="a-namecannotmigratea-data-that-you-cannot-migrate-to-system-center-configuration-manager"></a><a name="Cannot_migrate"></a> System Center Configuration Manager로 마이그레이션할 수 없는 데이터  
+##  <a name="Cannot_migrate"></a> System Center Configuration Manager로 마이그레이션할 수 없는 데이터  
  다음과 같은 유형의 개체는 마이그레이션할 수 없습니다.  
 
 -   AMT 클라이언트 프로비전 정보  
@@ -187,9 +186,3 @@ System Center Configuration Manager에서 마이그레이션은 지원되는 버
     -   보안 역할  
 
     -   보안 범위  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
-

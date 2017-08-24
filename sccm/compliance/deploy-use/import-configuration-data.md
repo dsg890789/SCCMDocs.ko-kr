@@ -6,22 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 309b9a09-a611-4ba2-90ab-dde51582cf87
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
 ms.openlocfilehash: 60d0642618a3074fc50a848f1189f4d6559ca916
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="import-configuration-data-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 구성 데이터 가져오기
 
@@ -60,4 +58,3 @@ System Center Configuration Manager 콘솔에서 구성 기준 및 구성 항목
 5.  **요약** 페이지에서 수행될 작업을 검토한 다음 마법사를 완료합니다.  
 
 가져온 구성 데이터가 **자산 및 준수** 작업 영역의 **준수 설정** 노드에 표시됩니다.  
-

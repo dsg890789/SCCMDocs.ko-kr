@@ -1,5 +1,4 @@
 ---
-
 title: "소프트웨어 업데이트 유지 관리 | Microsoft 문서"
 description: "Configuration Manager에서 업데이트를 유지 관리하려면 WSUS 정리 태스크를 예약하거나 수동으로 실행할 수 있습니다."
 keywords: 
@@ -10,16 +9,13 @@ ms.date: 10/06/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: 4b0e2e90-aac7-4d06-a707-512eee6e576c
-translationtype: Human Translation
-ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
 ms.openlocfilehash: 1590c623f7bc2f42a8617f110de5321212732a03
-ms.lasthandoff: 12/16/2016
-
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="software-updates-maintenance"></a>소프트웨어 업데이트 유지 관리
 
@@ -34,4 +30,3 @@ Configuration Manager 콘솔에서 WSUS 정리 태스크를 예약 및 실행하
 2.  **설정** 그룹에서 **사이트 구성 요소 구성** 을 클릭하고 **소프트웨어 업데이트 지점** 을 클릭하여 소프트웨어 업데이트 지점 구성 요소 속성을 엽니다.  
 
 3.  **대체 규칙** 탭을 클릭하고, **WSUS 정리 마법사 실행**을 선택하고, **확인**을 클릭합니다.
-

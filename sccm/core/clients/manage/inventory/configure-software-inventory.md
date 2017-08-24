@@ -6,23 +6,20 @@ ms.date: 02/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: f86559de-092a-4ce8-9b43-5d7530e0b763
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dacfdf02f04c6bd731ca0fc11e5af371b409c8b4
-ms.openlocfilehash: 1cee12d6f9c406e2438a3ed76674c3498fe9abbd
-ms.contentlocale: ko-kr
-ms.lasthandoff: 01/03/2017
-
-
+ms.openlocfilehash: e60cec71c425e5e42d450cbeee366528d4b42405
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-configure-software-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 인벤토리를 구성하는 방법
 

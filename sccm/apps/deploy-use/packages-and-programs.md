@@ -1,6 +1,6 @@
 ---
-title: Pakiety i programy | Dokumentacja firmy Microsoft
-description: "Obsługują wdrożeń, które używają pakiety i programy lub aplikacje z System Center Configuration Manager."
+title: "패키지 및 프로그램 | Microsoft 문서"
+description: "패키지 및 프로그램을 사용하는 배포 또는 System Center Configuration Manager의 응용 프로그램을 사용하는 배포를 지원합니다."
 ms.custom: na
 ms.date: 10/06/2016
 ms.prod: configuration-manager
@@ -17,349 +17,349 @@ ms.author: robstack
 manager: angrobe
 ms.openlocfilehash: 6146bcf4e5aa9df6fe0b8cf71898e488ecf217cc
 ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
-ms.translationtype: MT
-ms.contentlocale: pl-PL
+ms.translationtype: HT
+ms.contentlocale: ko-KR
 ms.lasthandoff: 08/07/2017
 ---
-# <a name="packages-and-programs-in-system-center-configuration-manager"></a>Pakiety i programy w programie System Center Configuration Manager
+# <a name="packages-and-programs-in-system-center-configuration-manager"></a>System Center Configuration Manager의 패키지 및 프로그램
 
-*Dotyczy: Program System Center Configuration Manager (Current Branch)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager nadal obsługuje pakiety i programy, które były używane w programie Configuration Manager 2007. Wdrożenie korzystające z pakietów i programów może być odpowiedniejsze od wdrożenia korzystającego z aplikacji, gdy wdraża się poniższe elementy:  
+System Center Configuration Manager는 Configuration Manager 2007에서 사용된 패키지 및 프로그램을 계속 지원합니다. 다음 스크립트를 배포하는 경우 패키지 및 프로그램을 사용하여 배포하는 것이 응용 프로그램을 사용하여 배포하는 것보다 적합할 수 있습니다.  
 
-- Aplikacje na serwerach Linux i UNIX
-- Skrypty nieinstalujące aplikacji na komputerze, na przykład skrypt defragmentacji dysku komputera.
-- „Jednorazowe” skrypty, które nie muszą być stale monitorowane.  
-- Skrypty uruchamiane zgodnie z cyklicznym harmonogramem, które nie mogą korzystać z globalnej ewaluacji.
+- Linux 및 UNIX 서버용 응용 프로그램
+- 컴퓨터에 응용 프로그램을 설치하지 않는 스크립트(예: 컴퓨터 디스크 드라이브를 조각 모음하는 스크립트)
+- 지속적으로 모니터링하지 않아도 되는 "일회용" 스크립트  
+- 되풀이 일정에서 실행되고 전역 평가를 사용할 수 없는 스크립트
 
-W trakcie migracji pakietów z wcześniejszej wersji programu Configuration Manager, można je wdrożyć w hierarchii programu Configuration Manager. Po zakończeniu migracji pakiety są widoczne w węźle **Pakiety** w obszarze roboczym **Biblioteka oprogramowania**.
+이전 버전의 Configuration Manager에서 패키지를 마이그레이션하는 경우 Configuration Manager 계층 구조의 패키지를 배포할 수 있습니다. 마이그레이션이 완료된 후 패키지가 **소프트웨어 라이브러리** 작업 영역의 **패키지** 노드에 표시됩니다.
 
-Można modyfikować i wdrażać te pakiety w taki sam sposób jak w przypadku przy użyciu funkcji dystrybucji oprogramowania. **Importuj pakiet w Kreatorze definicji** pozostaje w programie Configuration Manager można importować pakiety ze starszych wersji. Anonse są konwertowane na wdrożenia podczas migracji z programu Configuration Manager 2007 do hierarchii programu Configuration Manager.  
+소프트웨어 배포를 사용할 때와 같은 방식으로 이러한 패키지를 수정하고 배포할 수 있습니다. 레거시 패키지를 가져올 수 있도록 **정의에서 패키지 가져오기 마법사**가 Configuration Manager에 남아 있습니다. 보급 알림은 Configuration Manager 2007에서 Configuration Manager 계층 구조에 마이그레이션될 때 배포로 변환됩니다.  
 
 > [!NOTE]  
->  Microsoft System Center Configuration Manager Package Conversion Manager można użyć w celu skonwertowania pakietów i programów do aplikacji programu Configuration Manager.  
+>  Microsoft System Center Configuration Manager Package Conversion Manager를 사용하면 패키지와 프로그램을 Configuration Manager 응용 프로그램으로 변환할 수 있습니다.  
 >   
->  Aby uzyskać więcej informacji, zobacz [Configuration Manager Package Conversion Manager](https://technet.microsoft.com/library/hh531519.aspx).  
+>  자세한 내용은 [Configuration Manager Package Conversion Manager](https://technet.microsoft.com/library/hh531519.aspx)를 참조하세요.  
 
-Pakiety mogą korzystać z niektórych nowych funkcji programu Configuration Manager, w tym grup punktów dystrybucji i monitorowania. Aplikacje Microsoft Application Virtualization (App-V) nie mogą być dystrybuowane za pomocą pakietów i programów w programie Configuration Manager. Aby dystrybuować aplikacje wirtualne, należy utworzyć je jako aplikacje programu Configuration Manager.  
+패키지는 배포 지점 그룹 및 모니터링을 비롯한 Configuration Manager의 새 기능 중 일부를 사용할 수 있습니다. Microsoft Application Virtualization(App-V) 응용 프로그램을 Configuration Manager의 패키지 및 프로그램을 사용하여 배포할 수 없습니다. 가상 응용 프로그램을 배포하려면 App-V 응용 프로그램을 Configuration Manager 응용 프로그램으로 만들어야 합니다.  
 
-##  <a name="create-a-package-and-program"></a>Tworzenie pakietów i programów  
- Użyj jednej z tych procedur ułatwiających tworzenie lub importowaniu pakietów i programów.  
+##  <a name="create-a-package-and-program"></a>패키지 및 프로그램 만들기  
+ 다음 절차 중 하나를 사용하여 패키지 및 프로그램을 만들거나 가져올 수 있습니다.  
 
-### <a name="create-a-package-and-program-using-the-create-package-and-program-wizard"></a>Tworzenie pakietu i programu za pomocą Kreatora tworzenia pakietu i programu.  
+### <a name="create-a-package-and-program-using-the-create-package-and-program-wizard"></a>패키지 및 프로그램 만들기 마법사를 사용하여 패키지와 프로그램을 만듭니다.  
 
-1.  W konsoli programu Configuration Manager wybierz **Biblioteka oprogramowania** > **Zarządzanie aplikacjami** > **pakiety**.  
+1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **패키지**를 선택합니다.  
 
-3.  W **Home** karcie **Utwórz** grupy, wybierz **tworzenia pakietu**.  
+3.  **홈** 탭의 **만들기** 그룹에서 **패키지 만들기**를 선택합니다.  
 
-4.  Na **pakietu** strony **Kreatora tworzenia pakietu i programu**, podaj następujące informacje:  
+4.  에 **패키지** 의 페이지는 **만들 패키지 및 프로그램 마법사**, 다음 정보를 지정 합니다.  
 
-    -   **Nazwa**: Określ nazwę pakietu składającą się z maksymalnie 50 znaków.  
+    -   **이름**: 패키지 이름을 최대 50자로 지정합니다.  
 
-    -   **Opis elementu**: Określ opis dla tego pakietu składającą się z maksymalnie 128 znaków.  
+    -   **설명**: 이 패키지에 대한 설명을 최대 128자로 지정합니다.  
 
-    -   **Producent** (opcjonalnie): Podaj nazwę producenta, która pomoże identyfikować pakiet w konsoli programu Configuration Manager. Ta nazwa może się składać z maksymalnie 32 znaków.
+    -   **제조업체**(선택 사항): Configuration Manager 콘솔에서 패키지를 식별할 수 있도록 제조업체 이름을 지정합니다. 이 이름은 최대 32자입니다.
 
-    -   **Język** (opcjonalnie): Podaj wersję językową pakietu, maksymalnie 32 znaki.  
+    -   **언어**(선택 사항): 패키지의 언어 버전을 최대 32자로 지정합니다.  
 
-    -   **Wersja** (opcjonalnie):  Określ numer wersji pakietu, maksymalnie 32 znaki.
+    -   **버전**(선택 사항): 패키지의 버전 번호를 최대 32자로 지정합니다.
 
-    -   **Ten pakiet zawiera pliki źródłowe**: To ustawienie wskazuje, czy pakiet wymaga plików źródłowych znajdować się na urządzeniach klienckich. Domyślnie to pole wyboru jest wyczyszczone, a Menedżer konfiguracji nie używa punktów dystrybucji dla pakietu. Gdy to pole wyboru jest zaznaczone, punkty dystrybucji są używane.  
+    -   **이 패키지는 원본 파일을 포함함**: 이 설정은 패키지가 원본 파일이 클라이언트 장치에 있을 것을 요구하는지 여부를 나타냅니다. 기본적으로 이 확인란의 선택을 취소하고 Configuration Manager 패키지에 대한 배포 지점을 사용하지 않습니다. 이 확인란을 선택하면 배포 지점이 사용됩니다.  
 
-    -   **Folder źródłowy**: Jeśli pakiet zawiera pliki źródłowe, wybierz **Przeglądaj** otworzyć **Ustawianie folderu źródłowego** okna dialogowego, a następnie określ lokalizację plików źródłowych pakietu.  
+    -   **원본 폴더**: 패키지에 원본 파일이 있는 경우 **찾아보기**를 선택하여 **원본 폴더 설정** 대화 상자를 열고 패키지의 원본 파일 위치를 지정합니다.  
 
         > [!NOTE]  
-        >  Konto komputera serwera lokacji musi mieć uprawnienia dostępu Odczyt we wskazanym folderze źródłowym.  
+        >  사이트 서버의 컴퓨터 계정에 지정한 원본 폴더에 대한 읽기 권한이 있어야 합니다.  
 
-5.  Na **typu programu** strony **Kreatora tworzenia pakietu i programu**, wybierz typ programu do tworzenia, a następnie wybierz pozycję **dalej**. Można utworzyć program dla komputera lub urządzenia albo pominąć ten krok i utworzyć program później.  
+5.  **패키지 및 프로그램 만들기** 마법사의 **프로그램 형식** 페이지에서 만들려는 프로그램의 형식을 선택하고 **다음**을 선택합니다. 컴퓨터 또는 장치에 대한 프로그램을 만들 수 있거나 이 단계를 건너뛰어 나중에 프로그램을 만들 수도 있습니다.  
 
     > [!TIP]  
-    >  Aby utworzyć nowy program dla istniejącego pakietu, należy najpierw wybrać pakiet. Następnie w **Home** karcie **pakietu** grupy, wybierz **Utwórz Program** otworzyć **Kreatora tworzenia programu**.  
+    >  기존 패키지에 대한 새 프로그램을 만들려면 먼저 패키지를 선택합니다. 그런 다음 **홈** 탭의 **패키지** 그룹에서 **프로그램 만들기**를 선택하여 **프로그램 만들기 마법사**를 엽니다.  
 
-6.  Użyj jednej z następujących procedur, aby utworzyć program standardowy lub program urządzenia.  
+6.  표준 프로그램 또는 장치 프로그램을 만들려면 다음 절차 중 하나를 따르세요.  
 
-    #### <a name="create-a-standard-program"></a>Utworzyć program standardowy  
+    #### <a name="create-a-standard-program"></a>표준 프로그램 만들기  
 
-  1.  Na **typu programu** strony **Kreatora tworzenia pakietu i programu**, wybierz **Program standardowy**, a następnie wybierz pozycję **dalej**.     
+  1.  **패키지 및 프로그램 만들기 마법사**의 **프로그램 형식** 페이지에서 **표준 프로그램**을 선택하고 **다음**을 선택합니다.     
 
-    2.  Na **Program standardowy** Podaj następujące informacje:  
+    2.  **표준 프로그램** 페이지에서 다음 정보를 지정합니다.  
 
-        -   **Nazwa:** Określ nazwę programu składającą się z maksymalnie 50 znaków.  
+        -   **이름:** 최대 50 자 프로그램에 대 한 이름을 지정 합니다.  
 
             > [!NOTE]  
-            >  Nazwa programu musi być unikatowa w ramach pakietu. Po utworzeniu programu nie można zmodyfikować jego nazwy.  
+            >  프로그램 이름은 패키지 내에서 고유 해야 합니다. 프로그램을 만든 후에는 해당 이름을 수정할 수 없습니다.  
 
-        -   **Wiersz polecenia**: Wprowadź wiersz polecenia, można użyć do uruchamiania tego programu lub wybierz **Przeglądaj** aby przejść do lokalizacji pliku.  
+        -   **명령줄**: 사용할 명령줄을 입력하여 이 프로그램을 시작하거나 **찾아보기**를 선택하여 파일 위치를 찾습니다.  
 
-            Jeśli nazwa pliku nie ma określonego rozszerzenia, programu Configuration Manager próbuje użyć .com, .exe i .bat jako możliwych rozszerzeń.  
+            파일 이름에 지정된 확장명이 없는 경우 Configuration Manager는 .com, .exe 및 .bat를 가능한 확장명으로 사용하려고 시도합니다.  
 
-             Gdy program jest uruchamiany na kliencie, programu Configuration Manager najpierw szuka nazwy pliku wiersza polecenia w pakiecie szuka go w lokalnym folderze systemu Windows i przeszukuje lokalną *% path %*. Jeśli pliku nie uda się znaleźć, działanie programu zakończy się niepowodzeniem.  
+             프로그램이 클라이언트에서 실행되면 Configuration Manager는 명령줄 파일 이름을 먼저 패키지 안에서 검색하고 로컬 Windows 폴더에서 검색한 다음 로컬 *%path%*에서 검색합니다. 파일을 찾을 수 없는 경우 프로그램이 실패합니다.  
 
-        -   **Folder początkowy** (opcjonalnie): Określ folder, w którym program będzie uruchamiany, maksymalnie 127 znaków. Ten folder może być ścieżką bezwzględną na kliencie lub ścieżką względną wobec folderu punktu dystrybucji zawierającego pakiet.
+        -   **시작 폴더**(선택 사항): 이 필드를 사용하여 프로그램이 실행되는 폴더를 최대 127자로 지정합니다. 이 폴더는 클라이언트상의 절대 경로 또는 패키지가 포함된 배포 지점 폴더의 상대 경로가 될 수 있습니다.
 
-        -   **Uruchom**: Określ tryb, w którym program będzie uruchamiany na komputerach klienckich. Wybierz jedną z poniższych opcji:  
+        -   **실행**: 프로그램이 클라이언트 컴퓨터에서 실행되는 모드를 지정합니다. 다음 중 하나를 선택합니다.  
 
-            -   **Normalny**: Program jest uruchamiany w trybie normalnym na podstawie ustawień domyślnych systemu i programu. Jest to tryb domyślny.  
+            -   **보통**: 프로그램이 시스템 및 프로그램 기본값에 따라 보통 모드로 실행됩니다. 이 옵션은 기본 모드입니다.  
 
-            -   **Zminimalizowany**: Program będzie uruchamiany w trybie zminimalizowanym na urządzeniach klienckich. Użytkownicy będą widzieć działanie instalacji w obszarze powiadomień lub na pasku zadań.  
+            -   **최소화**: 프로그램이 클라이언트 장치에서 최소화된 상태로 실행됩니다. 사용자가 알림 영역 또는 작업 표시줄에서 설치 작업을 볼 수 있습니다.  
 
-            -   **Zmaksymalizowane**: Program będzie uruchamiany w trybie zmaksymalizowanym na urządzeniach klienckich. Użytkownicy widzą wszystkie działania instalacyjne.  
+            -   **최대화**: 프로그램이 클라이언트 장치에서 최대화된 상태로 실행됩니다. 사용자가 모든 설치 작업을 볼 수 있습니다.  
 
-            -   **Ukryte**: Program będzie uruchamiany ukryte na urządzeniach klienckich. Użytkownicy nie widzieć żadnego działania instalacyjnego.  
+            -   **숨김**: 프로그램이 클라이언트 장치에서 숨겨진 상태로 실행됩니다. 사용자는 설치 작업을 전혀 볼 수 없습니다.  
 
-        -   **Program można uruchomić**: Określ, czy program ma być uruchamiany tylko wtedy, gdy użytkownik jest zalogowany, tylko wtedy, gdy żaden użytkownik nie jest podpisany w lub niezależnie od tego, czy użytkownik jest zalogowany na komputerze klienckim.  
+        -   **프로그램을 실행할 수 있는 조건** - 프로그램을 클라이언트 컴퓨터에 사용자가 로그인한 경우에만 실행할지, 로그인한 사용자가 없는 경우에만 실행할지 또는 사용자의 로그인 여부에 관계없이 실행할지를 지정합니다.  
 
-        -   **Tryb uruchamiania**: Określ, czy program ma być uruchamiany z uprawnieniami administracyjnymi czy uprawnieniami użytkownika, który jest aktualnie zalogowany.  
+        -   **실행 모드**: 프로그램을 관리자 권한으로 실행할지 또는 현재 로그인한 사용자의 권한으로 실행할지를 지정합니다.  
 
-        -   **Zezwalaj użytkownikom na wyświetlanie i interakcji z instalacją programu**: Użyj tego ustawienia, jeśli jest dostępne określić, czy zezwalać użytkownikom na interakcję z instalacją programu. To pole wyboru jest dostępne tylko wtedy, gdy **tylko wtedy, gdy użytkownik nie jest zalogowany** lub **czy użytkownik jest zalogowany** został wybrany do **Program można uruchomić** i kiedy **Uruchom z prawami administracyjnymi** został wybrany do **tryb uruchamiania**.  
+        -   **사용자가 프로그램 설치를 보고 사용할 수 있음**: 사용 가능한 경우 이 설정을 사용하여 사용자가 프로그램 설치를 조작할 수 있도록 할지 여부를 지정합니다. 이 확인란은 **프로그램을 실행할 수 있는 조건**에 대해 **로그온한 사용자가 없는 경우에만** 또는 **사용자의 로그온 여부에 상관없이**가 선택되고 **실행 모드**에 대해 **관리 권한으로 실행**이 선택된 경우에만 사용할 수 있습니다.  
 
-        -   **Tryb dysku**: Określ informacje o sposobie ten program jest uruchamiany w sieci. Wybierz jedną z następujących opcji:  
+        -   **드라이브 모드**: 이 프로그램이 네트워크에서 실행되는 방식에 대한 정보를 지정합니다. 다음 중 하나를 선택합니다.  
 
-            -   **Jest uruchamiany z nazwą UNC**: Określ, czy program ma być uruchamiany z nazwą Universal Naming Convention (UNC). To jest ustawienie domyślne.  
+            -   **UNC 이름으로 실행**: 프로그램이 UNC(범용 명명 규칙) 이름으로 실행되도록 지정합니다. 이것이 기본 설정입니다.  
 
-            -   **Wymaga litery dysku**: Określ, czy program wymaga litery dysku do pełnej kwalifikacji jego lokalizacji. Dla tego ustawienia programu Configuration Manager można używać dowolnej litery dysku na kliencie.  
+            -   **드라이브 문자 필요**: 프로그램에 해당 위치를 정규화하기 위한 드라이브 문자가 필요하도록 지정합니다. 이 설정의 경우 Configuration Manager가 클라이언트에서 사용 가능한 모든 드라이브 문자를 사용할 수 있습니다.  
 
-            -   **Wymaga określonej litery dysku** : Określ, czy program wymaga określonej litery dysku określanej przez użytkownika do pełnej kwalifikacji jego lokalizacji (na przykład **Z:**). Jeśli określona litera dysku będzie już używana na kliencie, program nie zostanie uruchomiony.  
+            -   **특정 드라이브 문자 필요**: 프로그램에 해당 위치를 정규화하기 위해 지정한 특정 드라이브 문자(예: **Z:**)가 필요하도록 지정합니다. 지정한 드라이브 문자는 클라이언트에서 이미 사용 하는 경우에 프로그램이 실행 되지 않습니다.  
 
-        -   **Ponowne łączenie się z punktem dystrybucji po zalogowaniu w**: Użyj tego pola wyboru wskazująca, czy komputer kliencki z punktem dystrybucji po zalogowaniu użytkownika. To pole wyboru jest domyślnie wyczyszczone.  
+        -   **로그온 시 배포 지점에 다시 연결**: 이 확인란을 사용하여 사용자가 로그인할 때 클라이언트 컴퓨터가 배포 지점에 다시 연결할지 여부를 나타냅니다. 기본적으로이 확인란의 선택을 취소 합니다.  
 
-  3.  Na **wymagania** strony **Kreatora programu, tworzenia pakietu i** Podaj następujące informacje:  
+  3.  **패키지 및 프로그램 만들기 마법사**의 **요구 사항** 페이지에서 다음 정보를 지정합니다.  
 
-        -   **Uruchom najpierw inny program**: Użyj tego ustawienia można identyfikować pakiet i program, który jest uruchamiany przed uruchomieniem tego pakietu i programu.  
+        -   **다른 프로그램을 먼저 실행** – 이 설정을 사용하여 이 패키지 및 프로그램이 실행되기 전에 실행할 패키지 및 프로그램을 식별할 수 있습니다.  
 
-        -   **Wymagania dotyczące platformy**: Wybierz **ten program można uruchomić na dowolnej platformie** lub **ten program można uruchomić tylko na określonych platformach**, a następnie wybierz systemy operacyjne, które muszą być uruchomione klientów, aby można było zainstalować pakiet i program.  
+        -   **플랫폼 요구 사항**: **모든 플랫폼에서 이 프로그램 실행** 또는 **지정된 플랫폼에서만 이 프로그램 실행**을 선택한 다음 클라이언트가 패키지 및 프로그램의 설치를 위해 실행해야 하는 운영 체제를 선택합니다.  
 
-        -   **Szacowane miejsce na dysku**: Określ ilość miejsca na dysku, który program wymaga, aby uruchomić na komputerze. Dla tego ustawienia można wybrać opcję **Unknown** (ustawienie domyślne) lub ustawić liczbę całkowitą nie mniejszą od zera. Jeśli zostanie podana wartość, należy wskazać dla niej jednostkę.  
+        -   **예상 디스크 공간**: 컴퓨터에서 소프트웨어 프로그램을 실행하는 데 필요한 디스크 공간의 크기를 지정합니다. 이로 지정할 수 있습니다 **알 수 없는** (기본 설정) 또는 0 보다 크거나 정수입니다. 값을 지정하면 값 단위도 지정해야 합니다.  
 
-        -   **Maksymalny dozwolony czas wykonywania (w minutach)**: Określ maksymalny czas, który program powinien być wykonywany na komputerze klienckim. Dla tego ustawienia można wybrać opcję **Unknown** (ustawienie domyślne) lub ustawić liczbę całkowitą większą od zera.  
+        -   **최대 허용 실행 시간(분)**: 클라이언트 컴퓨터에서 이 프로그램이 실행되는 최대 시간을 지정합니다. 이로 지정할 수 있습니다 **알 수 없는** (기본 설정) 또는 0 보다 큰 정수입니다.  
 
-             Wartością domyślną jest 120 minut.  
+             기본적으로 이 값은 120분으로 설정되어 있습니다.  
 
             > [!IMPORTANT]  
-            >  Jeśli używasz okna obsługi dla kolekcji, na którym działa ten program, może wystąpić konflikt, jeśli **maksymalny dozwolony czas wykonywania** jest większa od czasu zaplanowanego okna obsługi. Jednak jeśli maksymalny czas wykonywania jest ustawiony na **nieznany**, program zaczyna być uruchamiana podczas okna obsługi i kontynuuje uruchamianie w razie potrzeby po zamknięciu okna obsługi. Jeżeli użytkownik ustawi maksymalnego czasu działania do określonego okresu, który przekracza długość dowolnej z dostępnych okien obsługi, program nie działa.  
+            >  이 프로그램이 실행되는 컬렉션에 대해 유지 관리 기간을 사용하는 경우 **최대 허용 실행 시간**이 예약된 유지 관리 기간보다 길면 충돌이 발생할 수 있습니다. 그러나 최대 실행 시간이 **알 수 없음**으로 설정된 경우 프로그램이 유지 관리 기간 중에 실행되기 시작하고 필요한 경우 유지 관리 기간이 끝나도 계속 실행됩니다. 사용자가 최대 실행 시간을 사용 가능한 유지 관리 기간의 길이를 초과한 특정 기간으로 설정하면 해당 프로그램은 실행되지 않습니다.  
 
-             Jeśli wartość jest równa **nieznany**, programu Configuration Manager Ustawia maksymalny dozwolony czas wykonywania na 12 godzin (720 minut).  
-
-            > [!NOTE]  
-            >  Jeśli zostanie przekroczona maksymalna dozwolonego czasu wykonywania (ustawionego przez użytkownika lub jako wartość domyślna), programu Configuration Manager zatrzymuje program, jeśli **Uruchom z prawami administracyjnymi** jest zaznaczone i **Zezwalaj użytkownikom na wyświetlanie i interakcji z instalacją programu** nie jest zaznaczone.  
-
-  4.  Wybierz **dalej**.  
-
-    #### <a name="create-a-device-program"></a>Utworzyć program urządzenia  
-
-  1.  Na **typu programu** strony **Kreatora tworzenia pakietu i programu**, wybierz pozycję **Program dla urządzenia**, a następnie wybierz pozycję **dalej**.  
-
-  2.  Na **Program dla urządzenia** strony, podaj następujące informacje:  
-
-        -   **Nazwa**: Określ nazwę programu składającą się z maksymalnie 50 znaków.  
+             이 값이 **알 수 없음**으로 설정된 경우 Configuration Manager에서 최대 허용 실행 시간이 12시간(720분)으로 설정됩니다.  
 
             > [!NOTE]  
-            >  Nazwa programu musi być unikatowa w ramach pakietu. Po utworzeniu programu nie można zmodyfikować jego nazwy.  
+            >  **관리 권한으로 실행**은 선택하고 **사용자가 프로그램 설치를 보고 조작할 수 있음**은 선택하지 않으면 최대 실행 시간(사용자가 설정한 값 또는 기본값)을 초과하는 경우 Configuration Manager에서 프로그램을 중지합니다.  
 
-        -   **Komentarz** (opcjonalnie): Podaj komentarz dla tego programu urządzenia składający się z maksymalnie 127 znaków.  
+  4.  **다음**을 선택합니다.  
 
-        -   **Folder pobierania**: Określ nazwę folderu na urządzeniu z systemem Windows CE, w którym będą przechowywane pliki źródłowe pakietu. Wartość domyślna to **\Temp\\\**.  
+    #### <a name="create-a-device-program"></a>장치 프로그램 만들기  
 
-        -   **Wiersz polecenia**: Wprowadź wiersz polecenia, można użyć do uruchamiania tego programu lub wybierz **Przeglądaj** aby przejść do lokalizacji pliku.  
+  1.  **패키지 및 프로그램 만들기 마법사**의 **프로그램 형식** 페이지에서 **장치의 프로그램**을 선택하고 **다음**을 선택합니다.  
 
-        -   **Uruchom wiersz polecenia w folderze pobierania**: Wybierz tę opcję, aby uruchomić program z wcześniej wskazanego folderu pobierania.  
+  2.  **장치의 프로그램** 페이지에서 다음을 지정합니다.  
 
-        -   **Uruchom wiersz polecenia z tego folderu**: Wybierz tę opcję, aby określić inny folder, z którego ma zostać uruchomiony program.  
+        -   **이름**: 프로그램의 이름을 최대 50자로 지정합니다.  
 
-    3.  Na **wymagania** strony, podaj następujące informacje:  
+            > [!NOTE]  
+            >  프로그램 이름은 패키지 내에서 고유해야 합니다. 프로그램을 만든 후에는 해당 이름을 수정할 수 없습니다.  
 
-        -   **Szacowane miejsce na dysku**: Określ ilość miejsca na dysku wymaganego oprogramowania. Jest on wyświetlany użytkownikom urządzeń przenośnych przed zainstalowaniem programu.  
+        -   **주석**(선택 사항): 이 장치 프로그램에 대한 주석을 최대 127자로 지정합니다.  
 
-        -   **Pobierz program**: Podaj informacje na temat kiedy ten program może być pobierany na urządzenia przenośne. Do wyboru są następujące opcje: **Jak najszybciej**, **Tylko przez szybką sieć** i **Tylko gdy urządzenie jest zadokowane**.  
+        -   **다운로드 폴더**: Windows CE 장치에서 패키지 원본 파일이 저장될 폴더의 이름을 지정합니다. 기본값은 **\Temp\\**입니다.  
 
-        -   **Dodatkowe wymagania**: Określ wszelkie dodatkowe wymagania dotyczące tego programu. Są one wyświetlane użytkownikom przed zainstalowaniem oprogramowania. Na przykład można powiadamiać użytkowników, że przed uruchomieniem tego programu trzeba zamknąć wszystkie inne aplikacje.  
+        -   **명령줄**: 사용할 명령줄을 입력하여 이 프로그램을 시작하거나 **찾아보기**를 선택하여 파일 위치를 찾습니다.  
 
-  4.  Wybierz **dalej**.  
+        -   **다운로드 폴더에서 명령줄 실행**: 이전에 지정한 다운로드 폴더에서 프로그램을 실행하려면 이 옵션을 선택합니다.  
 
-  7.  Na **Podsumowanie** Przejrzyj akcje, które zostaną wykonane, a następnie Zakończ pracę kreatora.  
+        -   **이 폴더에서 명령줄 실행**: 프로그램을 실행할 다른 폴더를 지정하려면 이 옵션을 선택합니다.  
 
- Sprawdź, czy nowy pakiet i program są wyświetlane w **pakiety** węzła **Biblioteka oprogramowania** obszaru roboczego.  
+    3.  **요구 사항** 페이지에서 다음을 지정합니다.  
 
-## <a name="create-a-package-and-program-from-a-package-definition-file"></a>Tworzenie pakietu i programu na podstawie pliku definicji pakietu  
+        -   **예상 디스크 공간**: 소프트웨어에 필요한 디스크 공간의 크기를 지정합니다. 이는 프로그램을 설치하기 전에 모바일 장치의 사용자에게 표시됩니다.  
 
-1.  W konsoli programu Configuration Manager wybierz **Biblioteka oprogramowania** > **Zarządzanie aplikacjami** > **pakiety**.  
+        -   **프로그램 다운로드**: 이 프로그램을 모바일 장치에 다운로드할 수 있는 시점에 관한 정보를 지정합니다. **가능한 한 빨리**, **고속 네트워크에서만**또는 **장치가 고정된 경우에만**중에서 지정할 수 있습니다.  
 
-3.  Na **Home** karcie **Utwórz** grupy, wybierz **Utwórz pakiet z definicji**.  
+        -   **추가 요구 사항**: 이 프로그램에 대한 추가 요구 사항을 지정합니다. 이는 소프트웨어를 설치하기 전에 사용자에게 표시됩니다. 예, 프로그램을 실행 하기 전에 다른 모든 응용 프로그램을 닫으십시오 해야 하는 사용자에 알릴 수 있습니다.  
 
-4.  Na **definicja pakietu** strony **Utwórz pakiet w Kreatorze definicji**, wybierz istniejący plik definicji pakietu lub **Przeglądaj** aby otworzyć nowy plik definicji pakietu. Po określeniu nowego pliku definicji pakietu wybierz go z **definicja pakietu** listy, a następnie wybierz pozycję **dalej**.  
+  4.  **다음**을 선택합니다.  
 
-5.  Na **pliki źródłowe** strony, podaj informacje o wszelkich wymaganych plikach źródłowych dla pakietu i programu, a następnie wybierz **dalej**.  
+  7.  **요약** 페이지에서 수행될 작업을 검토한 다음 마법사를 완료합니다.  
 
-6.  Jeśli pakiet wymaga plików źródłowych na **Folder źródłowy** Określ lokalizację, z którego pliki źródłowe mają można uzyskać, a następnie wybierz pozycję **dalej**.  
+ 새 패키지 및 프로그램이 **소프트웨어 라이브러리** 작업 영역의 **패키지** 노드에 표시되는지 확인합니다.  
 
-7.  Na **Podsumowanie** Przejrzyj akcje, które zostaną wykonane, a następnie Zakończ pracę kreatora. Nowy pakiet i program są wyświetlane w **pakiety** węzła **Biblioteka oprogramowania** obszaru roboczego.  
+## <a name="create-a-package-and-program-from-a-package-definition-file"></a>패키지 정의 파일에서 패키지 및 프로그램 만들기  
 
- Aby uzyskać więcej informacji na temat plików definicji pakietu, zobacz [o formacie pliku definicji pakietu](/sccm/apps/deploy-use/packages-and-programs#about-the-package-definition-file-format) w tym temacie.  
+1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **패키지**를 선택합니다.  
 
-##  <a name="deploy-packages-and-programs"></a>Wdrażanie pakietów i programów  
+3.  **홈** 탭의 **만들기** 그룹에서 **정의에서 패키지 만들기**를 선택합니다.  
 
-1.  W konsoli programu Configuration Manager wybierz **Biblioteka oprogramowania** > **Zarządzanie aplikacjami** > **pakiety**.  
+4.  **정의에서 패키지 만들기 마법사**의 **패키지 정의** 페이지에서 기존 패키지 정의 파일을 선택하거나 **찾아보기**를 선택하여 새 패키지 정의 파일을 엽니다. 새 패키지 정의 파일을 지정한 후 **패키지 정의** 목록에서 선택하고 **다음**을 선택합니다.  
 
-2.  Wybierz pakiet, który chcesz wdrożyć, a następnie w **Home** karcie **wdrożenia** grupy, wybierz **Wdróż**.  
+5.  **원본 파일** 페이지에서 패키지 및 프로그램을 위해 필요한 원본 파일에 대한 정보를 지정하고 **다음**을 선택합니다.  
 
-3.  Na **ogólne** strony **Kreatora wdrażania oprogramowania**, określ nazwę pakietu i programu, można wdrożyć, do której chcesz wdrożyć pakiet i program oraz opcjonalne komentarze dotyczące wdrażania kolekcji.  
+6.  패키지가 원본 파일을 요구하는 경우 **원본 폴더** 페이지에서 원본 파일을 가져올 위치를 지정하고 **다음**을 선택합니다.  
 
-     Wybierz opcję **Użyj domyślnych grup punktów dystrybucji powiązanych z tą kolekcją**, jeśli chcesz umieścić zawartość pakietu w domyślnej grupie punktów dystrybucji kolekcji. Jeśli wybrana Kolekcja nie została skojarzona z grupą punktów dystrybucji, ta opcja jest niedostępna.  
+7.  **요약** 페이지에서 수행될 작업을 검토한 다음 마법사를 완료합니다. 새 패키지 및 프로그램이 **소프트웨어 라이브러리** 작업 영역의 **패키지** 노드에 표시됩니다.  
 
-4.  Na **zawartości** wybierz pozycję **Dodaj**, a następnie wybierz punkty dystrybucji lub grupy punktów dystrybucji, do których chcesz wdrożyć zawartość, która jest skojarzona z tym pakietem i programem.  
+ 패키지 정의 파일에 대한 자세한 내용은 이 항목의 [패키지 정의 파일 형식 정보](/sccm/apps/deploy-use/packages-and-programs#about-the-package-definition-file-format)를 참조하세요.  
 
-5.  Na **ustawienia wdrażania** strony, wybierz cel wdrożenia i określ opcje dla pakietów wznawiania i połączeń taryfowych:  
+##  <a name="deploy-packages-and-programs"></a>패키지 및 프로그램 배포  
 
-    -   **Cel**: Wybierz spośród opcji:  
+1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **패키지**를 선택합니다.  
 
-        -   **Dostępne**: Jeśli aplikacja jest wdrażana dla użytkownika, użytkownik będzie widział opublikowany pakiet i program w wykazie aplikacji i może zainstalować ją na żądanie. Jeśli pakiet i program są wdrażane na urządzeniu, użytkownik będzie ją widział w Centrum oprogramowania i zainstalować ją na żądanie.  
+2.  배포하려는 패키지를 선택한 다음 **배포** 그룹의 **홈** 탭에서 **배포**를 선택합니다.  
 
-        -   **Wymagane**: Pakiet i program są wdrażane automatycznie zgodnie ze skonfigurowanym harmonogramem. Użytkownik może jednak śledzić stan wdrożenia pakietu i programu oraz zainstalować je przed upływem ostatecznego terminu przy użyciu Centrum oprogramowania.  
+3.  **소프트웨어 배포 마법사**의 **일반** 페이지에서 배포하려는 패키지 및 프로그램의 이름, 패키지 및 프로그램을 배포하려는 컬렉션 및 배포에 대한 선택적 설명을 지정합니다.  
 
-    -   **Wyślij pakiety wznawiania**: Jeśli dla celu wdrożenia wybrano opcję **wymagane** i ta opcja jest zaznaczona, jest wysłany pakiet wznawiania do komputerów, przed zainstalowaniem wdrożenia do wznawiania w ostatecznym terminie instalacji. Aby użyć tej opcji, należy skonfigurować komputery do używania funkcji Wake On LAN.  
+     선택 **이 컬렉션에 연결 된 기본 배포 지점 그룹을 사용 하 여** 컬렉션 기본 배포 지점 그룹에 패키지 콘텐츠를 저장 하려는 경우. 선택한 컬렉션을 배포 지점 그룹과 연결하지 않은 경우 이 옵션을 사용할 수 없게 됩니다.  
 
-    -  **Zezwalaj klientom mierzonego połączenia internetowego na pobieranie zawartości po upływie ostatecznego terminu instalacji, co może pociągnąć za sobą dodatkowe koszty**: Zaznacz tę opcję, jeśli są wymagane.  
+4.  **콘텐츠** 페이지에서 **추가**를 선택하고 이 패키지 및 프로그램과 연결된 콘텐츠를 배포할 배포 지점 또는 배포 지점 그룹을 선택합니다.  
+
+5.  **배포 설정** 페이지에서 이 배포에 대한 용도를 선택하고 절전 모드 해제 패킷 및 데이터 통신 연결에 대한 옵션을 지정합니다.  
+
+    -   **용도**: 다음 중에서 선택합니다.  
+
+        -   **사용 가능**: 응용 프로그램이 사용자에게 배포되면 사용자가 응용 프로그램 카탈로그에서 게시된 패키지 및 프로그램을 보고 필요 시 요청할 수 있습니다. 패키지 및 프로그램이 장치에 배포되면 사용자가 소프트웨어 센터에서 응용 프로그램을 보고 필요 시 설치할 수 있습니다.  
+
+        -   **필수**: 구성된 일정에 따라 자동으로 패키지 및 프로그램이 배포됩니다. 그러나 사용자는 패키지 및 프로그램 배포 상태를 추적 하 고 소프트웨어 센터를 사용 하 여 최종 기한 전에 설치할 수 있습니다.  
+
+    -   **절전 모드 해제 패킷 보내기**: 배포 목적이 **필수**로 설정된 경우 이 옵션을 선택하면 설치 최종 기한 시간에 컴퓨터의 절전 모드를 해제하기 위해 배포를 설치하기 전에 컴퓨터에 절전 모드 해제 패킷이 전송됩니다. 이 옵션을 사용 하려면 먼저 Wake On LAN에 대 한 컴퓨터를 구성 해야 합니다.  
+
+    -  **설치 최종 기한에 도달한 후 클라이언트에서 요금제 인터넷 연결을 사용하여 콘텐츠를 다운로드하도록 허용(추가 비용이 발생할 수 있음)**: 필요한 경우 이 옵션을 선택합니다.  
 
     > [!NOTE]  
-    >  Opcja **Wykonaj wstępne wdrożenie oprogramowania na główne urządzenie użytkownika** nie jest dostępna podczas wdrażania pakietów i programów.  
+    >  **사용자의 기본 장치에 소프트웨어 미리 배포** 옵션은 패키지 및 프로그램을 배포할 때 사용할 수 없습니다.  
 
-6.  Na **Planowanie** strony, skonfiguruj, kiedy ten pakiet i program zostaną wdrożone lub udostępnione na urządzeniach klienckich.  
+6.  **일정** 페이지에서 이 패키지 및 프로그램이 배포되거나 클라이언트 장치에서 사용할 수 있게 되는 시기를 구성합니다.  
 
-     Opcje na tej stronie będą się różnić w zależności od tego, czy ustawiono akcję wdrożenia **dostępne** lub **wymagane**.  
+     이 페이지의 옵션은 배포 작업을 **사용 가능**으로 설정하는지 또는 **필수**로 설정하는지에 따라 다릅니다.  
 
-7.  Jeśli dla celu wdrożenia wybrano opcję **wymagane**, skonfiguruj zachowanie ponownego uruchamiania dla programu **zachowanie ponownego uruchamiania** menu rozwijanego. Wybierz jedną z następujących opcji:  
+7.  배포 목적이 **필수**로 설정된 경우 **다시 실행 동작** 드롭다운 메뉴에서 프로그램에 대한 다시 실행 동작을 구성합니다. 다음 옵션 중에서 선택 합니다.  
 
-    |Zachowanie ponownego uruchamiania|Więcej informacji|  
+    |다시 실행 동작|추가 정보|  
     |--------------------|----------------------|  
-    |Nigdy nie uruchamiaj ponownie wdrożonego programu|Program nie będzie można ponownie uruchomić na komputerze klienckim, nawet jeśli program zakończyło się niepowodzeniem lub zostały zmienione pliki programu.|  
-    |Zawsze uruchamiaj ponownie program|Program będzie zawsze uruchamiana ponownie na kliencie, gdy wdrożenie jest zaplanowane, nawet jeśli program został już uruchomiony pomyślnie. Może to być przydatne w przypadku używania wdrożeń cyklicznych, w ramach których program jest aktualizowany, na przykład o oprogramowanie antywirusowe.|  
-    |Uruchom ponownie, jeśli poprzednia próba nie powiodła się|Program jest uruchamiany ponownie, gdy wdrożenie jest zaplanowane tylko wtedy, gdy nie powiodła się poprzednia próba uruchomienia.|  
-    |Uruchom ponownie, jeśli poprzednia próba powiodła się|Program jest uruchomiony ponownie tylko wtedy, gdy wcześniej został uruchomiony pomyślnie na kliencie. To ustawienie jest przydatne w przypadku używania cyklicznych anonsów, w których program jest cyklicznie aktualizowany, gdy każda aktualizacja wymaga pomyślnego zainstalowania poprzedniej aktualizacji.|  
+    |배포 된 프로그램은 다시 실행 안함|클라이언트에서 프로그램이 다시 실행되지 않으며, 프로그램이 원래 실패했거나 프로그램 파일이 변경된 경우에도 그렇습니다.|  
+    |항상 프로그램을 다시 실행|배포가 예약된 시간에 프로그램이 클라이언트에서 항상 다시 실행되며, 프로그램이 이미 성공적으로 실행된 경우에도 그렇습니다. 이 프로그램은 업데이트 되, 예 바이러스 백신 소프트웨어와 함께 하는 되풀이 배포를 사용 하는 경우에 유용할 수 있습니다.|  
+    |이전 시도가 실패 한 경우 다시 실행|이전 실행 시도가 실패한 경우에만 프로그램이 배포가 예약된 시간에 다시 실행됩니다.|  
+    |이전 시도에서 성공한 경우 다시 실행|이전에 성공적으로 클라이언트에서 실행된 경우에만 프로그램이 다시 실행됩니다. 이 설정은 프로그램이 일상적으로 업데이트되고 각 업데이트가 이전 업데이트의 성공적인 설치를 필요로 하는 되풀이 보급 알림을 사용할 경우 유용합니다.|  
 
-8. Na stronie **Środowisko użytkownika** określ następujące informacje:  
+8. **사용자 환경** 페이지에서 다음 정보를 지정합니다.  
 
-    -   **Zezwalaj użytkownikom na uruchamianie programu niezależnie od przypisań**: Jeśli opcja jest włączona, użytkownicy mogą instalować to oprogramowanie z Centrum oprogramowania niezależnie od wszelkich zaplanowanych czasów instalacji.  
+    -   **사용자가 할당과 별개로 프로그램을 실행할 수 있도록 허용**: 설정되면 사용자는 예약된 설치 시간에 관계없이 소프트웨어 센터에서 이 소프트웨어를 설치할 수 있습니다.  
 
-    -   **Instalacja oprogramowania**: Umożliwia zainstalowanie poza skonfigurowanymi oknami obsługi oprogramowania.  
+    -   **소프트웨어 설치**: 구성된 유지 관리 기간을 벗어난 시간에 소프트웨어를 설치할 수 있도록 허용합니다.  
 
-    -   **Ponowne uruchomienie systemu (Jeśli wymagane w celu ukończenia instalacji)**: Jeśli instalacji oprogramowania wymagane jest ponowne uruchomienie urządzenia, aby zakończyć, Zezwalaj na to poza skonfigurowanymi oknami obsługi.  
+    -   **시스템 다시 시작(설치 완료에 필요한 경우)**: 소프트웨어 설치를 위해 장치 다시 시작을 완료해야 하는 경우 구성된 유지 관리 기간이 아니어도 이 작업이 발생하는 것을 허용합니다.  
 
-    -   **Urządzenia osadzone**: Podczas wdrażania pakietów i programów na urządzeniach Windows Embedded, które mają włączoną filtru zapisu, można określić, że pakiety i programy zostanie zainstalowany na tymczasowej nakładce oraz zatwierdzić zmiany później. Alternatywnie możesz zatwierdzić zmiany, w ostatecznym terminie instalacji bądź w oknie konserwacji. Po zatwierdzeniu zmian w ostatecznym terminie instalacji bądź w oknie obsługi, wymagane jest ponowne uruchomienie i trwale zapisać zmiany na urządzeniu.  
+    -   **Embedded 장치** - 쓰기 필터를 사용하는 Windows Embedded 장치에 패키지 및 프로그램을 배포할 때 임시 오버레이에 패키지 및 프로그램을 설치하고 나중에 변경 내용을 커밋하도록 지정할 수 있습니다. 또는 설치 최종 기한에 또는 유지 관리 기간 동안 변경 내용을 커밋합니다. 유지 관리 기간 동안이나 설치 최종 기한에 변경 내용을 커밋하는 경우 장치를 다시 시작해야 하며 변경 내용이 장치에 유지됩니다.  
 
         > [!NOTE]  
-        >  Po wdrożeniu pakietu lub programu na urządzeniu z systemem Windows Embedded upewnij się, że urządzenie należy do kolekcji ze skonfigurowanym oknem obsługi. Aby uzyskać więcej informacji o sposobie oknach obsługi używanych podczas wdrażania pakietów i programów na urządzeniach Windows Embedded, zobacz [aplikacji tworzenia systemu Windows Embedded](../../apps/get-started/creating-windows-embedded-applications.md).  
+        >  Windows Embedded 장치에 패키지 또는 프로그램을 배포할 때에 장치 구성 된 유지 관리 기간이 된 컬렉션의 구성원 인지 확인 합니다. Windows Embedded 장치에 패키지 및 프로그램을 배포할 때 유지 관리 기간을 사용하는 방법에 대한 자세한 내용은 [Windows Embedded 응용 프로그램 만들기](../../apps/get-started/creating-windows-embedded-applications.md)를 참조하세요.  
 
-9. Na stronie **Punkty dystrybucji** określ następujące informacje:  
+9. **배포 지점** 페이지에서 다음 정보를 지정합니다.  
 
-    -   **Opcje wdrażania**: Określ akcje, które klient powinien wykonać, aby uruchomić zawartość programu. Można określić zachowanie klienta znajdującego się w granicach szybkiej sieci lub wolnej bądź zawodnej sieci.  
+    -   **배포 옵션**: 클라이언트가 프로그램 콘텐츠 실행을 위해 수행해야 하는 작업을 지정합니다. 클라이언트는 고속 네트워크 경계 또는 속도가 느리거나 불안정 한 네트워크 경계에 있을 때 동작을 지정할 수 있습니다.  
 
-    -   **Zezwalaj klientom na współużytkowanie zawartości z innymi klientami w tej samej podsieci**: Wybierz tę opcję, aby zmniejszyć obciążenie sieci, zezwalając klientom na pobieranie zawartości z innymi klientami w sieci, na których już pobrana zawartość w pamięci podręcznej. Ta opcja korzysta z usługi Windows BranchCache i jest dostępna na komputerach z systemem operacyjnym Windows Vista SP2 lub nowszym.  
+    -   **클라이언트가 동일한 서브넷에 있는 다른 클라이언트와 콘텐츠를 공유하도록 허용**: 클라이언트가 콘텐츠를 이미 다운로드하고 캐시한 네트워크상의 다른 클라이언트에서 콘텐츠를 다운로드하도록 허용하여 네트워크 로드를 줄이려면 이 옵션을 선택합니다. 이 옵션은 Windows BranchCache를 활용을 이상 및 Windows Vista s p 2를 실행 하는 컴퓨터에서 사용 될 수 있습니다.  
 
-    -   **Zezwalaj klientom na użycie rezerwowej lokalizacji źródła zawartości**:  
+    -   **클라이언트가 콘텐츠에 대한 대체 원본 위치를 사용하도록 허용**:  
 
-        -  **W wersji wcześniejszej niż 1610**: Możesz wybrać **Zezwalaj na rezerwową lokalizację źródła zawartości pola wyboru** aby umożliwić klientom spoza granic grupy, aby wrócić i skorzystać z dystrybucji punktów jako lokalizacji źródłowej zawartości podczas preferowane punkty dystrybucji nie są dostępne.
+        -  **1610 이전 버전**: **콘텐츠에 대한 대체 원본 위치를 사용하도록 허용** 확인란을 선택하면 이러한 경계 그룹 외부에 있는 클라이언트가 다른 배포 지점을 사용할 수 없는 경우 해당 배포 지점을 대체 원본 위치로 사용할 수 있습니다.
 
-        - **Wersja 1610 i nowsze**: Nie można skonfigurować **Zezwalaj na rezerwową lokalizację źródła zawartości**.  Zamiast tego należy skonfigurować relacje między grupami granic, które określania, kiedy klient można rozpocząć wyszukiwanie grup dodatkowe granic dla lokalizacji poprawne źródło zawartości.
+        - **버전 1610 이상**: **콘텐츠에 대한 대체 원본 위치 허용**을 더 이상 구성할 수 없습니다.  대신, 클라이언트가 추가 경계 그룹에서 유효한 콘텐츠 원본 위치 검색을 시작할 수 있는 경우를 결정하는 경계 그룹 간의 관계를 구성합니다.
 
-10. Na **Podsumowanie** Przejrzyj akcje, które zostaną wykonane, a następnie Zakończ pracę kreatora.  
+10. **요약** 페이지에서 수행될 작업을 검토한 다음 마법사를 완료합니다.  
 
-     Wdrożenia można obejrzeć w węźle **Wdrożenia** obszaru roboczego **Monitorowanie** i w okienku szczegółów na karcie wdrożenia pakietu po wybraniu wdrożenia. Aby uzyskać więcej informacji, zobacz [monitorować pakiety i programy](/sccm/apps/deploy-use/packages-and-programs#monitor-packages-and-programs) w tym temacie.  
+     배포를 선택하는 경우 패키지 배포 탭의 세부 정보 창 및 **모니터링** 작업 영역의 **배포** 노드에서 해당 배포를 볼 수 있습니다. 자세한 내용은 이 항목의 [패키지 및 프로그램을 모니터링하는 방법](/sccm/apps/deploy-use/packages-and-programs#monitor-packages-and-programs)을 참조하세요.  
 
 > [!IMPORTANT]  
->  Jeśli została skonfigurowana opcja **Uruchom program z punktu dystrybucji** na **punktów dystrybucji** strony **Kreatora wdrażania oprogramowania**, nie czyść zaznaczenia opcji **skopiuj zawartość tego pakietu do udziału pakietu w punktach dystrybucji** , ponieważ umożliwia to uruchamianie pakietu z punktów dystrybucji.  
+>  **소프트웨어 배포 마법사**의 **배포 지점** 페이지에서 **배포 지점에서 프로그램 실행** 옵션을 구성한 경우 **배포 지점의 패키지 공유에 이 패키지의 콘텐츠 복사** 옵션의 선택을 취소하지 마세요. 취소하면 배포 지점에서 패키지를 사용할 수 없게 됩니다.  
 
-##  <a name="monitor-packages-and-programs"></a>Monitor pakiety i programy  
- Aby monitorować wdrożenia pakietów i programów, należy użyć tych samych procedur, które służą do monitorowania aplikacji zgodnie z opisem w [monitorowania aplikacji](/sccm/apps/deploy-use/monitor-applications-from-the-console).  
+##  <a name="monitor-packages-and-programs"></a>패키지 및 프로그램 모니터링  
+ 패키지 및 프로그램 배포를 모니터링하려면 [응용 프로그램 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)에서 자세히 설명한 것처럼 응용 프로그램 모니터링에 사용하는 동일한 절차를 사용합니다.  
 
- Pakiety i programy zawierają także szereg wbudowanych raportów, które umożliwiają monitorowanie informacji o stanie wdrożenia pakietów i programów. Te raporty mają kategorię **Dystrybucja oprogramowania — pakiety i programy** oraz **Dystrybucja oprogramowania — stan wdrażania pakietów i programów**.  
+ 또한 패키지 및 프로그램에는 패키지와 프로그램의 배포 상태에 대한 정보를 모니터링할 수 있도록 하는 많은 기본 제공 보고서가 포함되어 있습니다. 이러한 보고서의 보고서 범주에는 **소프트웨어 배포-패키지 및 프로그램** 및 **소프트웨어 배포-패키지 및 프로그램 배포 상태**.  
 
- Aby uzyskać więcej informacji o sposobie konfiguracji raportowania w programie Configuration Manager, zobacz [raportowania w programie System Center Configuration Manager](../../core/servers/manage/reporting.md).  
+ Configuration Manager에서 보고를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고](../../core/servers/manage/reporting.md)를 참조하세요.  
 
-##  <a name="manage-packages-and-programs"></a>Zarządzać pakietami i programami  
- W **Biblioteka oprogramowania** obszaru roboczego, rozwiń węzeł **Zarządzanie aplikacjami**, wybierz **pakiety**, wybierz pakiet, którym chcesz zarządzać, a następnie wybierz zadanie zarządzania z poniższej tabeli:  
+##  <a name="manage-packages-and-programs"></a>패키지 및 프로그램 관리  
+ **소프트웨어 라이브러리** 작업 영역에서 **응용 프로그램 관리**를 확장하고 **패키지**를 선택한 다음 관리하려는 패키지를 선택하고 다음 표에서 관리 작업을 선택합니다.  
 
-|Zadanie|Więcej informacji|  
+|작업|추가 정보|  
 |----------|----------------------|  
-|**Utwórz wstępnie przygotowany plik zawartości**|Otwiera **Tworzenie kreatora przygotowanego pliku zawartości**, co pozwala utworzyć plik, który zawiera zawartości pakietu, które mogą być importowane ręcznie do innej lokacji. Przydaje się to, gdy przepustowość sieci między serwerem lokacji i punktem dystrybucji jest mała.|  
-|**Utwórz Program**|Otwiera **Kreatora tworzenia programu**, co pozwala utworzyć nowy program dla tego pakietu.|  
-|**Eksportowanie**|Otwiera **Kreatora eksportowania pakietu**, który pozwala wyeksportować wybrany pakiet i jego zawartość do pliku.<br /><br /> Aby uzyskać informacje o sposobie importowania pakietów i programów, zobacz [tworzyć pakiety i programy](/sccm/apps/deploy-use/packages-and-programs#create-packages-and-programs) w tym temacie.|  
-|**Wdrażanie**|Otwiera **Kreatora wdrażania oprogramowania**, co umożliwia wdrożenie wybranego pakietu i programu w kolekcji. Aby uzyskać więcej informacji, zobacz [wdrażać pakiety i programy](/sccm/apps/deploy-use/packages-and-programs#deploy-packages-and-programs) w tym temacie.|  
-|**Dystrybuuj zawartość**|Otwiera **kreatora dystrybucji zawartości**, co umożliwia wysyłanie zawartości skojarzonej z pakietem i programem do wybranych punktów dystrybucji lub grup punktów dystrybucji.|  
-|**Aktualizuj punkty dystrybucji**|Aktualizuje punkty dystrybucji o najnowszą zawartość dla wybranego pakietu i programu.|  
+|**사전 준비된 콘텐츠 파일 만들기**|다른 사이트에 수동으로 가져올 수 있는 패키지 콘텐츠가 있는 파일을 만들 수 있도록 하는 **사전 준비된 콘텐츠 파일 만들기 마법사**를 엽니다. 사이트 서버와 배포 지점간 낮은 네트워크 대역폭 있는 경우에 유용 합니다.|  
+|**프로그램 만들기**|이 패키지에 대한 새 프로그램을 만들 수 있는 **프로그램 만들기 마법사**를 엽니다.|  
+|**내보내기**|선택한 패키지 및 해당 콘텐츠를 파일에 내보낼 수 있는 **패키지 내보내기 마법사**를 엽니다.<br /><br /> 패키지 및 프로그램을 가져오는 방법에 대한 자세한 내용은 이 항목에서 [패키지 및 프로그램 만들기](/sccm/apps/deploy-use/packages-and-programs#create-packages-and-programs)를 참조하세요.|  
+|**배포**|선택한 패키지 및 프로그램을 컬렉션에 배포할 수 있는 **소프트웨어 배포 마법사**를 엽니다. 자세한 내용은 이 항목의 [패키지 및 프로그램 배포](/sccm/apps/deploy-use/packages-and-programs#deploy-packages-and-programs)를 참조하세요.|  
+|**콘텐츠 배포**|패키지 및 프로그램과 연관된 콘텐츠를 선택한 배포 지점 또는 배포 지점 그룹에 보낼 수 있는 **콘텐츠 배포 마법사**를 엽니다.|  
+|**배포 지점 업데이트**|선택한 패키지 및 프로그램에 대한 최신 콘텐츠를 사용하여 배포 지점을 업데이트합니다.|  
 
-##  <a name="about-the-package-definition-file-format"></a>O formacie pliku definicji pakietu  
- Pliki definicji pakietów to skrypty, których można użyć w celu automatyzacji tworzenia pakietów i programów z programu Configuration Manager. Udostępniają one wszystkie informacje programu Configuration Manager potrzebuje do utworzenia pakietu i programu, z wyjątkiem lokalizacji plików źródłowych pakietu. Każdy plik definicji pakietu to plik tekstu ASCII lub UTF-8 używającą z formatem pliku .ini i zawiera następujące sekcje:  
+##  <a name="about-the-package-definition-file-format"></a>패키지 정의 파일 형식 정보  
+ 패키지 정의 파일은 Configuration Manager에서 패키지 및 프로그램 만들기를 자동화하는 데 사용할 수 있는 스크립트입니다. 이 스크립트는 Configuration Manager에서 패키지 및 프로그램을 만들기 위해 필요한 모든 정보(패키지 원본 파일의 위치 제외)를 제공합니다. 각 패키지 정의 파일은 .ini 파일 형식을 사용하며 다음 섹션을 포함하는 ASCII 또는 UTF-8 텍스트 파일입니다.  
 
 ###  <a name="pdf"></a>[PDF]  
- W tej sekcji wskazywany jest plik definicji pakietu. Zawiera ona następujące informacje:  
+ 이 섹션의 파일 패키지 정의 파일을 식별합니다. 다음 정보를 포함 합니다.  
 
--   **Wersja**: Określ wersję formatu pliku definicji pakietu, który jest używany przez plik. Odpowiada to wersji programu System Management Server (SMS) lub programu Configuration Manager, dla której plik został zapisany. Ten wpis jest wymagany.  
+-   **Version**: 파일에서 사용되는 패키지 정의 파일 형식의 버전을 지정합니다. 이는 SMS(System Management Server)가 작성된 Configuration Manager 또는 SMS의 버전에 해당합니다. 필수이 항목이입니다.  
 
-###  <a name="package-definition"></a>[Package Definition]  
- Określ właściwości pakietów i programów. Udostępnia ona następujące informacje:  
+###  <a name="package-definition"></a>[패키지 정의]  
+ 패키지와 프로그램의 속성을 지정합니다. 다음 정보를 제공합니다.  
 
--   **Nazwa**: Nazwa pakietu, maksymalnie 50 znaków.  
+-   **이름**: 최대 50 자, 패키지의 이름입니다.  
 
--   **Wersja** (opcjonalnie): Wersja pakietu, maksymalnie 32 znaki.  
+-   **Version**(선택 사항): 최대 32자의 패키지 버전입니다.  
 
--   **Ikona** (opcjonalnie): Plik zawierający ikonę do używania tego pakietu. Jeśli jest określony, ta ikona zastąpi domyślną ikonę pakietu w konsoli programu Configuration Manager.
+-   **Icon**(선택 사항): 이 패키지에 사용할 아이콘이 있는 파일입니다. 지정된 경우 Configuration Manager 콘솔의 기본 패키지 아이콘이 이 아이콘으로 교체됩니다.
 
--   **Wydawca**: Wydawca pakietu, maksymalnie 32 znaki.
+-   **게시자**: 최대 32 자까지 패키지의 게시자입니다.
 
--   **Język**: Wersja językowa pakietu, maksymalnie 32 znaki.
+-   **언어**: 최대 32 자까지 패키지의 언어 버전입니다.
 
--   **Komentarz** (opcjonalnie): Komentarz dotyczący pakietu, maksymalnie 127 znaków.
+-   **Comment**(선택 사항): 패키지에 대한 최대 127자의 주석입니다.
 
--   **ContainsNoFiles**: Ten wpis wskazuje, czy źródło jest skojarzony z pakietem.  
+-   **ContainsNoFiles**: 이 항목을 원본 패키지와 연결 인지 여부를 나타냅니다.  
 
--   **Programy**: Programy, które są zdefiniowane dla tego pakietu. Każda nazwa programu odpowiada sekcji **[Program]** w tym pliku definicji pakietu.  
+-   **Programs**: 이 패키지에 대해 정의된 프로그램입니다. 각 프로그램 이름에 해당 하는 **[프로그램]** 이 패키지 정의 파일의 섹션입니다.  
 
-     Przykład:  
+     예제:  
 
      `Programs=Typical, Custom, Uninstall`  
 
--   **MIFFileName**: Nazwa pliku Management Information Format (MIF), który zawiera stan pakietu, maksymalnie 50 znaków.  
+-   **MIFFileName**: 최대 50 자는 패키지 상태를 포함 하는 관리 정보 형식 (MIF) 파일의 이름입니다.  
 
--   **MIFName**: Nazwa pakietu (do dopasowania formatu MIF), maksymalnie 50 znaków.  
+-   **MIFName**: 최대 50 자 (일치에 대 한 MIF), 패키지의 이름입니다.  
 
--   **MIFVersion**: Numer wersji pakietu (do dopasowania formatu MIF), maksymalnie 32 znaki.  
+-   **MIFVersion**: 최대 32 자 (일치에 대 한 MIF), 패키지의 버전 번호입니다.  
 
--   **MIFPublisher**: Wydawca oprogramowania pakietu (do dopasowania formatu MIF), maksymalnie 32 znaki.  
+-   **MIFPublisher**: 최대 32 자 (일치에 대 한 MIF), 패키지의 소프트웨어 게시자입니다.  
 
-###  <a name="program"></a>[Program]  
- Dla każdego programu określonego w **programy** wpis w **[Package Definition]** sekcja pliku definicji pakietu musi zawierać sekcję [Program] z definicją tego programu. Każda sekcja Program zawiera następujące informacje:  
+###  <a name="program"></a>[프로그램]  
+ **[Package Definition]** 섹션의 **Programs** 항목에서 지정된 각 프로그램의 경우 패키지 정의 파일에는 해당 프로그램을 정의하는 [Program] 섹션이 있어야 합니다. 각 프로그램 섹션에서 다음 정보를 제공합니다.  
 
--   **Nazwa**: Nazwa programu, maksymalnie 50 znaków. Ten wpis musi być unikatowy w ramach pakietu. Ta nazwa jest używana podczas definiowania anonsów. Na komputerach klienckich nazwa programu jest pokazywana w obszarze **Uruchom programy anonsowane** w Panelu sterowania.  
+-   **이름**: 최대 50 자 프로그램의 이름입니다. 이 항목은 패키지 내에서 고유 해야 합니다. 이 이름은 광고를 정의할 때 사용 됩니다. 클라이언트 컴퓨터에서 프로그램의 이름에 표시 되어 **보급 프로그램 실행** 제어판에 있습니다.  
 
--   **Ikona** (opcjonalnie): Określ plik zawierający ikonę do używania tego programu. Jeśli jest określony, ta ikona zastąpi domyślną ikonę programu w konsoli programu Configuration Manager i jest wyświetlana na komputerach klienckich podczas anonsowania programu.
+-   **Icon**(선택 사항): 이 프로그램에 사용할 아이콘이 있는 파일을 지정합니다. 지정된 경우 Configuration Manager 콘솔의 기본 프로그램 아이콘이 이 아이콘으로 교체되고 프로그램이 보급될 때 클라이언트 컴퓨터에 표시됩니다.
 
--   **Komentarz** (opcjonalnie): Komentarz dotyczący programu, maksymalnie 127 znaków.
+-   **Comment**(선택 사항): 프로그램에 대한 최대 127자의 주석입니다.
 
--   **CommandLine**: Określ wiersz polecenia dla programu, maksymalnie 127 znaków. To polecenie jest względne wobec folderu źródłowego pakietu.
+-   **CommandLine**: 프로그램에 대한 최대 127자의 명령줄을 지정합니다. 패키지 원본 폴더를 기준으로 명령이입니다.
 
--   **StartIn**: Określ folder roboczy dla programu, maksymalnie 127 znaków. Ten wpis może być ścieżką bezwzględną na komputerze klienckim lub ścieżką względną wobec folderu źródłowego pakietu.
+-   **StartIn**: 프로그램의 작업 폴더를 최대 127자로 지정합니다. 이 항목은 클라이언트 컴퓨터의 절대 경로이거나 패키지 원본 폴더의 상대 경로일 수 있습니다.
 
--   **Uruchom**: Określ tryb, w którym program będzie uruchamiany. Można określić wartość **Minimized**, **Maximized** lub **Hidden**. Jeśli tego wpisu nie będzie, program będzie uruchamiany w trybie normalnym.  
+-   **Run**: 프로그램이 실행되는 프로그램 모드를 지정합니다. 지정할 수 있습니다 **최소화**, **최대화**, 또는 **숨김**. 이 항목이 포함되지 않은 경우 프로그램이 표준 모드에서 실행됩니다.  
 
--   **AfterRunning**: Określ dowolną akcję specjalną, która występuje po pomyślnym zakończeniu działania programu. Dostępne opcje to **SMSRestart**, **ProgramRestart** i **SMSLogoff**. Jeśli tego wpisu nie będzie, program nie wykonuje akcji specjalnej.  
+-   **AfterRunning**: 프로그램이 성공적으로 완료된 후 발생하는 특별한 동작을 지정합니다. 사용 가능한 옵션은 **SMSRestart**, **ProgramRestart**, 또는 **SMSLogoff**. 이 항목이 포함되지 않은 경우 프로그램이 특별한 동작을 실행하지 않습니다.  
 
--   **EstimatedDiskSpace**: Określ ilość miejsca na dysku, który program wymaga, aby uruchomić na komputerze. Dla tego ustawienia można wybrać opcję **Unknown** (ustawienie domyślne) lub ustawić liczbę całkowitą nie mniejszą od zera. Jeśli zostanie podana wartość, należy wskazać dla niej jednostkę.  
+-   **EstimatedDiskSpace**: 컴퓨터에서 소프트웨어 프로그램을 실행하는 데 필요한 디스크 공간의 크기를 지정합니다. 이로 지정할 수 있습니다 **알 수 없는** (기본 설정) 또는 0 보다 크거나 정수입니다. 값을 지정 하는 경우에는 값의 단위를 지정 합니다.  
 
-     Przykład:  
+     예제:  
 
      `EstimatedDiskSpace=38MB`  
 
--   **EstimatedRunTime**: Określ szacowany czas (w minutach), jaki program powinien być wykonywany na komputerze klienckim. Dla tego ustawienia można wybrać opcję **Unknown** (ustawienie domyślne) lub ustawić liczbę całkowitą większą od zera.  
+-   **EstimatedRunTime**: 클라이언트 컴퓨터에서 프로그램이 실행될 예상 기간(분)을 지정합니다. 이로 지정할 수 있습니다 **알 수 없는** (기본 설정) 또는 0 보다 큰 정수입니다.  
 
-     Przykład:  
+     예제:  
 
      `EstimatedRunTime=25`  
 
--   **SupportedClients**: Określ procesory i systemy operacyjne, na których ten program będzie uruchamiany. Podawane platformy muszą być rozdzielane przecinkami. Jeśli tego wpisu nie będzie, sprawdzanie obsługiwanych platform jest wyłączone dla tego programu.  
+-   **SupportedClients**: 이 프로그램이 실행되는 프로세서 및 운영 체제를 지정합니다. 지정 된 플랫폼을 쉼표로 구분 되어야 합니다. 이 항목이 포함되지 않은 경우 이 프로그램에 대해 지원되는 플랫폼 검사를 사용할 수 없습니다.  
 
--   **SupportedClientMinVersionX**, **SupportedClientMaxVersionX**: Określ zakres numerów wersji systemów operacyjnych, które są określone w jego początek i koniec **SupportedClients** wpisu.  
+-   **SupportedClientMinVersionX**, **SupportedClientMaxVersionX**: **SupportedClients** 항목에서 지정된 운영 체제에 대한 버전 번호의 시작-끝 범위를 지정합니다.  
 
-     Przykład:  
+     예제:  
 
     ```  
     SupportedClients=Win NT (I386),Win NT (IA64),Win NT (x64)  
@@ -385,29 +385,29 @@ Pakiety mogą korzystać z niektórych nowych funkcji programu Configuration Man
     Win NT (x64) MaxVersion4=6.00.9999.9999   
     ```  
 
--   **AdditionalProgramRequirements** (opcjonalnie): Podaj inne informacje i wymagania dotyczące komputerów klienckich, maksymalnie 127 znaków.
+-   **AdditionalProgramRequirements**(선택 사항): 클라이언트 컴퓨터에 대한 다른 정보 또는 요구 사항을 최대 127자로 제공합니다.
 
--   **CanRunWhen**: Określ stan użytkownika, którego program wymaga, aby uruchomić na komputerze klienckim. Dostępne wartości to **UserLoggedOn**, **NoUserLoggedOn** i **AnyUserStatus**. Wartość domyślna to **UserLoggedOn**.  
+-   **CanRunWhen**: 클라이언트 컴퓨터에서 프로그램을 실행하는 데 필요한 사용자 상태를 지정합니다. 사용 가능한 값은 **UserLoggedOn**, **NoUserLoggedOn**, 또는 **AnyUserStatus**. 기본값은 **UserLoggedOn**.  
 
--   **UserInputRequired**: Określ, czy program wymaga interakcji z użytkownikiem. Dostępne wartości to **True** i **False**. Wartość domyślna to **True**. Ten wpis jest ustawiony na wartość **False**, jeśli wpis **CanRunWhen** nie jest ustawiony na wartość **UserLoggedOn**.  
+-   **UserInputRequired**: 프로그램에 사용자의 조작이 필요한지 여부를 지정합니다. 사용 가능한 값은 **True** 또는 **False**. 기본값은 **True**. 이 항목으로 설정 됩니다 **False** 경우 **CanRunWhen** 로 설정 되지 않은 **UserLoggedOn**.  
 
--   **AdminRightsRequired**: Określ, czy program wymaga poświadczeń administracyjnych na komputerze do uruchomienia. Dostępne wartości to **True** i **False**. Wartość domyślna to **False**. Ten wpis jest ustawiony na wartość **True**, jeśli wpis **CanRunWhen** nie jest ustawiony na wartość **UserLoggedOn**.  
+-   **AdminRightsRequired**: 컴퓨터에서 프로그램을 실행하는 데 관리자 자격 증명이 필요한지 여부를 지정합니다. 사용 가능한 값은 **True** 또는 **False**. 기본값은 **False**. 이 항목으로 설정 됩니다 **True** 경우 **CanRunWhen** 로 설정 되지 않은 **UserLoggedOn**.  
 
--   **UseInstallAccount**: Określ, czy program używa konta instalacji oprogramowania klienta, gdy jest uruchamiany na komputerach klienckich. Wartością domyślną jest **False**. Ten wpis jest też ustawiony na wartość **False**, jeśli wpis **CanRunWhen** jest ustawiony na wartość **UserLoggedOn**.  
+-   **UseInstallAccount**: 클라이언트 컴퓨터에서 프로그램을 실행할 때 클라이언트 소프트웨어 설치 계정을 사용할지 여부를 지정합니다. 이 값은 기본적으로 **False**. 또한이 값은 **False** 경우 **CanRunWhen** 로 설정 된 **UserLoggedOn**.  
 
--   **DriveLetterConnection**: Określ, czy program wymaga połączenia z literą dysku do plików pakietu, które znajdują się w punkcie dystrybucji. Można określić wartość **True** lub **False**. Wartość domyślna to **False**, co pozwala programowi na używanie połączenia Universal Naming Convention (UNC). Jeśli ta wartość jest równa **True**, następna dostępna litera dysku jest użyta (począwszy od Z: Wstecz).  
+-   **DriveLetterConnection**: 프로그램에서 배포 지점에 있는 패키지 파일에 대한 드라이브 문자 연결이 필요한지 여부를 지정합니다. 지정할 수 있습니다 **True** 또는 **False**. 기본값은 **False**이며, 이는 프로그램이 UNC(범용 명명 규칙) 연결을 사용할 수 있도록 합니다. 이 값이 **True**로 설정된 경우 사용 가능한 다음 드라이브 문자가 사용됩니다(Z:로 시작해서 역방향으로 진행).  
 
--   **SpecifyDrive** (opcjonalnie): Określ literę dysku, którego program wymaga, aby nawiązać połączenie plików pakietu w punkcie dystrybucji. Określenie tej wartości wymusza stosowanie wskazanej litery dysku w połączeniach klienta z punktami dystrybucji.
+-   **SpecifyDrive**(선택 사항): 프로그램이 배포 지점에서 패키지 파일에 연결하는 데 필요한 드라이브 문자를 지정합니다. 이 사양에는 배포 지점에 대 한 클라이언트 연결에 대 한 지정한 드라이브 문자 사용이 되도록 합니다.
 
--   **ReconnectDriveAtLogon**: Określ, czy komputer kliencki z punktem dystrybucji po zalogowaniu użytkownika. Dostępne wartości to **True** i **False**. Wartość domyślna to **False**.  
+-   **ReconnectDriveAtLogon**: 사용자가 로그온할 때 컴퓨터가 배포 지점에 다시 연결할지 여부를 지정합니다. 사용 가능한 값은 **True** 또는 **False**. 기본값은 **False**입니다.  
 
--   **DependentProgram**: Określ program, w tym pakiecie, który musi zostać uruchomiony przed bieżącym programem. Ten wpis ma format **DependentProgram**=<**nazwa_programu>**, gdzie **<nazwa_programu\>** to wpis **Name** dla danego programu w pliku definicji pakietu. Jeśli nie ma żadnych programów zależnych, ten wpis należy pozostawić pusty.  
+-   **DependentProgram**: 현재 프로그램 전에 실행해야 하는 이 패키지의 프로그램을 지정합니다. 이 항목은 **DependentProgram**=<**프로그램 이름>** 형식을 사용하며, 여기서 **<프로그램 이름\>**은 패키지 정의 파일의 해당 프로그램에 대한 **이름** 항목입니다. 종속 프로그램 없는 경우에이 항목을 빈 둡니다.  
 
-     Przykład:  
+     예제:  
 
-     DependentProgram=Admin  
-    DependentProgram=  
+     DependentProgram Admin =  
+    DependentProgram =  
 
--   **Przypisanie**: Określ, w jaki sposób program jest przypisywany użytkownikom. Ta wartość może być: **FirstUser** (tylko pierwszy użytkownik, który loguje się do klienta, uruchamia program) lub **EveryUser** (każdy użytkownik, który się zaloguje, uruchamia program). Gdy wpis **CanRunWhen** nie jest ustawiony na wartość **UserLoggedOn**, ten wpis jest ustawiony na wartość **FirstUser**.  
+-   **Assignment**: 프로그램을 사용자에게 할당하는 방법을 지정합니다. 이 값은 클라이언트에 로그인한 첫 번째 사용자만 프로그램을 실행하도록 하는 **FirstUser** 또는 로그인한 모든 사용자가 프로그램을 실행하도록 하는 **EveryUser**일 수 있습니다. 때 **CanRunWhen** 로 설정 되지 않은 **UserLoggedOn**, 이 항목으로 설정 됩니다 **FirstUser**.  
 
--   **Wyłączone**: Określ, czy ten program może być anonsowany dla klientów. Dostępne wartości to **True** i **False**. Wartość domyślna to **False**.  
+-   **Disabled**: 이 프로그램이 클라이언트에 보급될 수 있는지 여부를 지정합니다. 사용 가능한 값은 **True** 또는 **False**. 기본값은 **False**입니다.  

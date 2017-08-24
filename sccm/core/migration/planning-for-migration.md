@@ -6,21 +6,20 @@ ms.date: 1/12/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b2bf493e-1e10-496f-a139-2646522703ed
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: a2405bc04889bd6ae46069fe447228149bbaf468
 ms.openlocfilehash: fffef1e95e1dfa03971f140a6e5a7fff9bfe5e27
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="plan-for-migration-to-system-center-configuration-manager"></a>System Center Configuration Manager로 마이그레이션 계획
 
@@ -58,9 +57,3 @@ System Center Configuration Manager 대상 계층 구조로 데이터를 마이�
 -   [System Center Configuration Manager에서 마이그레이션 작업 모니터링 계획](../../core/migration/planning-to-monitor-migration-activity.md)  
 
 -   [System Center Configuration Manager에서 마이그레이션 완료 계획](../../core/migration/planning-to-complete-migration.md)  
-
-
-
-<!--HONumber=Jan17_HO2-->
-
-

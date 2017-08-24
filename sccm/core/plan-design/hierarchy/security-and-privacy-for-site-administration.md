@@ -6,22 +6,19 @@ ms.date: 3/1/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1d58176e-abc0-4087-8583-ce70deb4dcf5
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
 ms.openlocfilehash: a60b8c103a303dcae0bd66f3060d5a8f17d1cef9
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-site-administration-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사이트 관리를 위한 보안 및 개인 정보
 
@@ -367,4 +364,3 @@ IIS를 실행하는 사이트 시스템의 경우 Configuration Manager에서 II
  검색 정보는 Microsoft로 전송되지 않습니다. 대신, Configuration Manager 데이터베이스에 저장됩니다. 정보는 90일마다 반복되는 사이트 유지 관리 작업인 **오래된 검색 데이터 삭제**에 의해 삭제될 때까지 데이터베이스에 유지됩니다.  
 
  추가 검색 방법을 구성하거나 Active Directory 검색을 확장하기 전에 개인 정보 보호 요구 사항을 고려해야 합니다.  
-

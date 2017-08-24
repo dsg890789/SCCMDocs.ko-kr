@@ -4,24 +4,22 @@ description: "System Center Configuration Manager용 Technical Preview 버전 15
 ms.custom: na
 ms.date: 01/23/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 69473706-21b3-498b-a67e-670fdc988f0d
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: noindex,nofollow
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
-ms.openlocfilehash: 2e0338267ea9fdc639d57f93adda1e46aea80eec
-ms.contentlocale: ko-kr
-ms.lasthandoff: 01/24/2017
-
+ms.openlocfilehash: d0bde2c085cc9b330bc772e68081d629ca9e2f11
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="capabilities-in-technical-preview-1511-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1511의 기능
 
@@ -208,4 +206,3 @@ SQL Server 가용성 그룹을 사용하는 사이트를 설치하려면 다음�
 1.  서버 클러스터 컬렉션에 [소프트웨어 업데이트를 배포](https://technet.microsoft.com/library/gg712304.aspx)합니다.  
 
 2.  [소프트웨어 업데이트 배포를 모니터링](https://technet.microsoft.com/library/gg712304.aspx)합니다.  
-

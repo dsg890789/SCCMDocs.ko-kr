@@ -6,21 +6,19 @@ ms.date: 7/31/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b57acf0b-05b7-46af-ad4c-f3e707bd3861
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: c0d94b8e6ca6ffd82e879b43097a9787e283eb6d
 ms.openlocfilehash: 043c9521f4a94ea2df5cebb4ca1c0b1127f0edbc
-ms.contentlocale: ko-kr
-ms.lasthandoff: 08/02/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="whats-new-in-system-center-configuration-manager-incremental-versions"></a>System Center Configuration Manager 증분 버전의 새로운 기능
 
@@ -44,4 +42,3 @@ ms.lasthandoff: 08/02/2017
 
 
  각 업데이트 버전은 릴리스 후 1년 동안 지원됩니다. 가능하면 최근 업데이트 버전으로 최신 상태를 유지하는 것이 좋습니다. 자세한 내용은 [System Center Configuration Manager 현재 분기 버전 지원](../../../core/servers/manage/current-branch-versions-supported.md)을 참조하세요.  
-

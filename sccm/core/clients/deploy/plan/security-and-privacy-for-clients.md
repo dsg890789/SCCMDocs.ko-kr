@@ -6,23 +6,20 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: c1d71899-308f-49d5-adfa-3a3ec0163ed8
-caps.latest.revision: 10
-caps.handback.revision: 0
+caps.latest.revision: "10"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
-ms.openlocfilehash: 192c3685092df6310b7129877c7fb5dfd9ef7ad5
-ms.contentlocale: ko-kr
-ms.lasthandoff: 03/21/2017
-
-
+ms.openlocfilehash: 1d871b0e1a2897c236d17211a23c9c7d93e42313
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트에 대한 보안 및 개인 정보
 
@@ -307,4 +304,3 @@ ms.lasthandoff: 03/21/2017
  모바일 장치 정보는 Microsoft로 전송되지 않으며, 모바일 장치 정보는 Configuration Manager 데이터베이스에 저장됩니다. 정보는 90일마다 반복되는 사이트 유지 관리 작업인 **오래된 검색 데이터 삭제** 에 의해 삭제될 때까지 데이터베이스에 유지됩니다. 삭제 간격은 필요에 따라 구성할 수 있습니다.  
 
  Exchange Server 커넥터를 설치하고 구성하기 전에 개인 정보 요구 사항을 고려해야 합니다.  
-

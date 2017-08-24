@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 784c295c-b8b8-4202-ab9f-665908d49d6d
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: fd7ea34b605d70f2ba9bd40384eb566ec3a87430
 ms.openlocfilehash: 42d21d10489bffe32b875384f8801686239a0ba4
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="monitor-applications-from-the-system-center-configuration-manager-console"></a>System Center Configuration Manager 콘솔에서 응용 프로그램 모니터링
 
@@ -91,9 +90,3 @@ System Center Configuration Manager에서 소프트웨어 업데이트, 준수 �
 3. **상태 요약 작성기** 대화 상자에서 **응용 프로그램 배포 요약 작성기**를 선택한 다음 **편집**을 선택합니다.  
 
 4. **응용 프로그램 배포 요약 작성기 속성** 대화 상자에서 필요한 요약 간격을 구성한 다음 **확인**을 선택합니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

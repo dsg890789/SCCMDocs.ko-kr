@@ -5,21 +5,19 @@ ms.date: 07/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ed931751-18f2-4230-a09e-a0a329fbfa1c
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
 ms.openlocfilehash: 442e5e1fbddd00248819a8de79adc78929474fc0
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/29/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="about-discovery-methods-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 검색 방법 정보
 
@@ -525,4 +523,3 @@ Azure AD 사용자 검색을 구성하려면 Azure 서비스 마법사를 사용
 각 검색 방법은 검색할 수 있는 고유한 Active Directory 특성 목록을 지원합니다.  
 
 사용자 지정 특성 목록은 **Active Directory 시스템 검색 속성** 및 **Active Directory 사용자 검색 속성** 대화 상자의 **Active Directory 특성** 탭에서 보고 구성할 수 있습니다.  
-

@@ -6,22 +6,21 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a70bfbd4-757a-4468-9312-1c3b373ef9fc
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: noindex
-translationtype: Human Translation
-ms.sourcegitcommit: cc0c1075af370b6190cbb269665d4a09e756ab4e
 ms.openlocfilehash: 4c83540db763bea039a92633a1d1a808e60e27ad
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="plan-a-migration-job-strategy-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 마이그레이션 작업 전략 계획
 
@@ -47,7 +46,7 @@ ms.openlocfilehash: 4c83540db763bea039a92633a1d1a808e60e27ad
 
 -   [이전에 마이그레이션한 개체 마이그레이션 작업 계획](#About_Object_Migrations)  
 
-##  <a name="a-nametypesofmigrationa-types-of-migration-jobs"></a><a name="Types_of_Migration"></a> 마이그레이션 작업 유형  
+##  <a name="Types_of_Migration"></a> 마이그레이션 작업 유형  
  Configuration Manager에서 지원하는 마이그레이션 작업 유형은 다음과 같습니다. 각 작업 유형은 해당 작업에 포함할 수 있는 개체를 정의할 수 있도록 되어 있습니다.  
 
  **컬렉션 마이그레이션**(Configuration Manager 2007 SP2에서 마이그레이션하는 경우에만 지원됨): 선택하는 컬렉션과 관련된 개체를 마이그레이션합니다. 기본적으로 컬렉션 마이그레이션에는 컬렉션의 구성원과 연결된 모든 개체가 포함됩니다. 컬렉션 마이그레이션 작업을 사용할 때 특정 개체 인스턴스를 제외할 수 있습니다.  
@@ -56,7 +55,7 @@ ms.openlocfilehash: 4c83540db763bea039a92633a1d1a808e60e27ad
 
  **이전에 마이그레이션된 개체 마이그레이션**: 이전에 마이그레이션된 개체가 마지막으로 마이그레이션된 후 원본 계층에서 업데이트되면 해당 개체를 마이그레이션합니다.  
 
-###  <a name="a-nameobjectsthatcanmigratea-objects-that-you-can-migrate"></a><a name="Objects_that_can_migrate"></a> 마이그레이션할 수 있는 개체  
+###  <a name="Objects_that_can_migrate"></a> 마이그레이션할 수 있는 개체  
  특정 유형의 마이그레이션 작업에서는 일부 개체만 마이그레이션할 수 있습니다. 다음에는 각 마이그레이션 작업 유형으로 마이그레이션할 수 있는 개체 유형이 나와 있습니다.  
 
 > [!NOTE]  
@@ -212,7 +211,7 @@ ms.openlocfilehash: 4c83540db763bea039a92633a1d1a808e60e27ad
     > [!IMPORTANT]  
     >  개체 마이그레이션을 사용하면 가상 응용 프로그램 패키지를 마이그레이션할 수 있지만 **이전에 마이그레이션된 개체 마이그레이션**이라는 마이그레이션 작업 유형을 사용하면 이 패키지를 마이그레이션할 수 없습니다. 대신 대상 사이트에서 마이그레이션된 가상 응용 프로그램 패키지를 삭제한 다음 새 마이그레이션 작업을 만들어 가상 응용 프로그램을 마이그레이션해야 합니다.  
 
-##  <a name="a-nameaboutmigrationjobsa-general-planning-for-all-migration-jobs"></a><a name="About_Migration_Jobs"></a> 모든 마이그레이션 작업에 대한 일반적인 계획  
+##  <a name="About_Migration_Jobs"></a> 모든 마이그레이션 작업에 대한 일반적인 계획  
  마이그레이션 작업 만들기 마법사를 사용하면 대상 계층에 개체를 마이그레이션하는 마이그레이션 작업을 만들 수 있습니다. 만드는 마이그레이션 작업 유형에 따라 마이그레이션할 수 있는 개체가 결정됩니다. 여러 마이그레이션 작업을 만들고 사용하여 동일한 원본 사이트나 여러 원본 사이트에서 데이터를 마이그레이션할 수 있습니다. 한 가지 유형의 마이그레이션 작업을 사용할 경우 다른 유형의 마이그레이션 작업을 사용할 수 없는 것은 아닙니다.  
 
  마이그레이션 작업을 성공적으로 실행하면 상태가 **완료됨** 으로 표시되어 다시 실행할 수 없습니다. 그러나 새 마이그레이션 작업을 만들어 원래 작업으로 마이그레이션했던 개체를 마이그레이션할 수 있으며, 새 마이그레이션 작업에 다른 개체도 추가할 수 있습니다. 추가 마이그레이션 작업을 만들면 이전에 마이그레이션된 개체는 **마이그레이션됨** 상태가 표시됩니다. 이러한 개체를 선택하여 다시 마이그레이션할 수는 있지만, 원본 계층에서 개체가 업데이트되지 않으면 이러한 개체를 다시 마이그레이션할 필요가 없습니다. 원본 계층에서 개체를 업데이트한 경우 **마이그레이션 후 수정된 개체**라는 마이그레이션 작업 유형을 사용하면 해당 개체를 식별할 수 있습니다.  
@@ -258,7 +257,7 @@ ms.openlocfilehash: 4c83540db763bea039a92633a1d1a808e60e27ad
 ### <a name="specify-conflict-resolution-for-migrated-data"></a>마이그레이션된 데이터에 대한 충돌 해결 지정  
  이전에 대상 데이터베이스로 마이그레이션된 데이터를 건너뛰거나 덮어쓰도록 마이그레이션 작업을 구성하지 않으면 기본적으로 마이그레이션 작업은 대상 데이터베이스의 데이터를 덮어쓰지 않습니다.  
 
-##  <a name="a-nameaboutcollectionmigration-a-plan-for-collection-migration-jobs"></a><a name="About_Collection_Migration "></a> 컬렉션 마이그레이션 작업 계획  
+##  <a name="About_Collection_Migration "></a> 컬렉션 마이그레이션 작업 계획  
  컬렉션 마이그레이션 작업은 지원되는 버전의 Configuration Manager 2007을 실행하는 원본 계층에서 데이터를 마이그레이션하는 경우에만 사용할 수 있습니다. 컬렉션별로 마이그레이션할 때 마이그레이션할 컬렉션을 하나 이상 지정해야 합니다. 지정한 각 컬렉션별로 마이그레이션 작업 시 모든 마이그레이션 관련 개체가 자동으로 선택됩니다. 예를 들어 특정 사용자 컬렉션을 선택하는 경우 컬렉션 구성원이 식별된 후 해당 컬렉션과 연결된 배포를 마이그레이션할 수 있습니다. 선택적으로, 해당 구성원에 연결된 다른 배포 개체를 마이그레이션하도록 선택할 수 있습니다. 이러한 선택한 모든 항목이 마이그레이션할 개체 목록에 추가됩니다.  
 
  컬렉션을 마이그레이션할 때 System Center Configuration Manager는 유지 관리 기간 및 컬렉션 변수를 포함하는 컬렉션 설정도 마이그레이션하지만 AMT 클라이언트 프로비전에 대한 컬렉션 설정은 마이그레이션할 수 없습니다.  
@@ -308,12 +307,12 @@ ms.openlocfilehash: 4c83540db763bea039a92633a1d1a808e60e27ad
 
  마이그레이션 이후 프로그램을 사용하도록 설정하려면 프로그램 속성의 **고급** 탭에서 **배포된 컴퓨터에서 이 프로그램 사용 안 함**의 선택을 취소합니다.  
 
-##  <a name="a-nameaboutobjectmigrationa-plan-for-object-migration-jobs"></a><a name="About_Object_Migration"></a> 개체 마이그레이션 작업 계획  
+##  <a name="About_Object_Migration"></a> 개체 마이그레이션 작업 계획  
  컬렉션 마이그레이션과 달리, 마이그레이션하려는 각 개체와 개체 인스턴스를 선택해야 합니다. Configuration Manager 2007 계층 구조의 보급 알림, System Center 2012 Configuration Manager 또는 System Center Configuration Manager 계층 구조의 게시 등 개별 개체를 선택하여 특정 마이그레이션 작업의 마이그레이션할 개체 목록에 추가할 수 있습니다. 마이그레이션 목록에 추가하지 않은 개체는 개체 마이그레이션 작업을 통해 대상 사이트로 마이그레이션되지 않습니다.  
 
  개체 기반 마이그레이션 작업에는 모든 마이그레이션 작업에 적용되는 구성 이외에 계획해야 할 추가 구성이 없습니다.  
 
-##  <a name="a-nameaboutobjectmigrationsa-plan-for-previously-migrated-object-migration-jobs"></a><a name="About_Object_Migrations"></a> 이전에 마이그레이션한 개체 마이그레이션 작업 계획  
+##  <a name="About_Object_Migrations"></a> 이전에 마이그레이션한 개체 마이그레이션 작업 계획  
  대상 계층으로 이미 마이그레이션한 개체가 원본 계층에서 업데이트된 경우 **마이그레이션 후 수정된 개체** 작업 유형을 사용하여 해당 개체를 다시 마이그레이션할 수 있습니다. 예를 들어 원본 계층에서 패키지의 이름을 변경하거나 원본 파일을 업데이트하는 경우 원본 계층에서 패키지 버전 번호가 증가합니다. 패키지 버전 번호가 증가한 후 패키지는 이러한 작업 유형에서 마이그레이션할 수 있도록 식별됩니다.  
 
  이러한 작업 유형은 개체 마이그레이션 유형과 유사하며, 마이그레이션할 개체를 선택하는 경우 이전 마이그레이션 작업에서 마이그레이션된 후 업데이트가 수행된 개체만 선택할 수 있다는 차이점만 있습니다.   
@@ -322,9 +321,3 @@ ms.openlocfilehash: 4c83540db763bea039a92633a1d1a808e60e27ad
 
 > [!NOTE]  
 >  이 마이그레이션 작업은 원본 계층에서 자동으로 업데이트된 개체와 관리자가 업데이트한 개체를 식별할 수 있습니다.  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
-

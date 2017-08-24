@@ -6,23 +6,20 @@ ms.date: 2/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6230a6e5-a1f6-459b-84f1-07fbde0e70f0
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
-ms.openlocfilehash: d1e320c6498e034307557e8a182c36cef2de640b
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: f280e06f34c0ed355b7c2652c571e36eb6684c59
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="example-validation-state-transitions-for-asset-intelligence-in-system-center-configuration-manager"></a>Asset Intelligence System Center Configuration Manager에서 Asset Intelligence에 대한 유효성 검사 상태 전환 예제
 
@@ -83,4 +80,3 @@ System Center Configuration Manager의 Asset Intelligence 유효성 검사 상�
 
 > [!NOTE]  
 >  System Center Online에서 가져온 분류 정보는 데이터베이스에 저장되어 삭제할 수 없으므로 관리자가 System Center Online 분류로 나중에 되돌아갈 수 있습니다.  
-

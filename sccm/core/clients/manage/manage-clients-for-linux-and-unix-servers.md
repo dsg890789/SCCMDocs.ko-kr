@@ -6,22 +6,20 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 948664f2-239d-47a8-92fc-f8efeebd5796
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: afe0ecc4230733fa76e41bf08df5ccfb221da7c8
 ms.openlocfilehash: 506df4f7c7baa5f0586a1ddf0cb02b3de9f4d076
-ms.contentlocale: ko-kr
-ms.lasthandoff: 08/04/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-manage-clients-for-linux-and-unix-servers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Linux 및 UNIX 서버용 클라이언트를 관리하는 방법
 
@@ -80,4 +78,3 @@ System Center Configuration Manager에서 Linux 및 UNIX 서버를 관리하는 
 |importPFX|클라이언트에서 현재 사용 중인 인증서를 대체할 인증서를 지정하려면 이 옵션을 사용합니다.<br /><br /> **-importPFX**를 사용하는 경우 **-password** 명령줄 매개 변수도 사용하여 PKCS#12 파일과 관련된 암호를 입력해야 합니다.<br /><br /> **-rootcerts** 를 사용하여 추가 루트 인증서 요구 사항을 지정합니다.<br /><br /> 예: **certutil -importPFX &lt;PKCS#12 인증서 경로> -password &lt;인증서 암호\> [-rootcerts &lt;쉼표로 구분된 인증서 목록>]**|  
 |-importsitecert|관리 서버의 사이트 서버 서명 인증서를 업데이트하려면 이 옵션을 사용합니다.<br /><br /> 예: **certutil importsitecert &lt;DER 인증서 경로\>**|  
 |-importcrl|클라이언트에서 하나 이상의 CRL 파일 경로로 CRL을 업데이트하려면 이 옵션을 사용합니다.<br /><br /> 예: **certutil importcrl &lt;쉼표로 구분된 CRL 파일 경로\>**|  
-

@@ -6,21 +6,19 @@ ms.date: 3/1/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: bda87fc5-2e4c-4992-98a4-01770365038c
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 34e24deb90a39bf655a2e24d16cdbe07528e6193
 ms.openlocfilehash: b72148ecc16141843178cbd220fe021fab8be992
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="setup-downloader-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 설치 다운로더
 
@@ -95,4 +93,3 @@ ms.lasthandoff: 05/17/2017
         -   설치 다운로더가 시작되면 다운로드 폴더의 경로를 지정해야 합니다. **확인**을 클릭하면 설치 다운로드가 다운로드 폴더의 파일을 확인합니다.  
 
 3.  다운로드 결과를 검토하려면 C 드라이브의 루트 디렉터리에 있는 **ConfigMgrSetup.log** 파일을 엽니다.
-

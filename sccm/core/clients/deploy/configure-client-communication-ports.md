@@ -6,23 +6,20 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 406bbdbf-ab4a-4121-a68b-154f96ea14ec
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: robstack
 ms.author: robstackmsft
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: 12e7b8e96dc29a97dc9f81b43618fd7d0faeb1bb
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 63e033fdb436930ac5f37e7408ca9292bc444560
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-configure-client-communication-ports-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트 통신 포트를 구성하는 방법
 
@@ -77,4 +74,3 @@ System Center Configuration Manager 클라이언트가 통신용으로 HTTP 및 
 7.  **확인** 을 클릭하여 사이트의 속성 대화 상자를 닫습니다.  
 
  계층의 모든 기본 사이트에 대해 이 절차를 반복합니다.
-

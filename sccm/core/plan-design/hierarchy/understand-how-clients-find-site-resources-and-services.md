@@ -6,22 +6,19 @@ ms.date: 2/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ae72df4b-5f5d-4e19-9052-bda28edfbace
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a181171cc1a92ec4519f4e4b34ca3274a0aa0440
 ms.openlocfilehash: 1c9e7ada6a8aa228b30e58865baae0f6e529e6af
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="learn-how-clients-find-site-resources-and-services-for-system-center-configuration-manager"></a>클라이언트가 System Center Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법
 
@@ -251,4 +248,3 @@ DNS에 게시할 인트라넷의 각 관리 지점에 대해 이러한 단계를
 기본적으로 기본 사이트는 HTTP용으로 구성된 사이트의 첫 번째 관리 지점과 HTTPS용으로 구성된 첫 번째 관리 지점을 WINS에 게시합니다.  
 
 클라이언트가 WINS에서 HTTP 관리 지점을 검색하지 않도록 설정하려면 클라이언트에 CCMSetup.exe Client.msi 속성 **SMSDIRECTORYLOOKUP=NOWINS**를 구성합니다.  
-

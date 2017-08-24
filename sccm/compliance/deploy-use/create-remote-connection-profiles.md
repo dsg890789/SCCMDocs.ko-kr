@@ -6,24 +6,21 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8c6eabc4-5dda-4682-b03e-3a450e6ef65a
-caps.latest.revision: 8
-caps.handback.revision: 0
+caps.latest.revision: "8"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
 ms.openlocfilehash: 72fc94c6449649656a7e8b81659c2b5cc2551107
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="remote-connection-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager의 원격 연결 프로필
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -184,4 +181,3 @@ System Center Configuration Manager 원격 연결 프로필을 사용하면 사�
 >  호환성 설정 보고서에서 **장치 필터** 및 **사용자 필터** 매개 변수를 사용할 경우 와일드카드(%) 문자를 사용해야 합니다.  
 
  Configuration Manager에서 보고를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고](/sccm/core/servers/manage/reporting)를 참조하세요.  
-

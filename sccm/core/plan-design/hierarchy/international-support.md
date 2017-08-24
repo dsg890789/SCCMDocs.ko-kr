@@ -6,23 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 46dd9cb2-a812-4b6a-a747-b840f92fef8b
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 40e018084dd2703327ff653f962f488432b1ec98
 ms.openlocfilehash: 3bab51be96445f766e8f5bbf54eee854e5d09cee
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="international-support-in-system-center-configuration-manager"></a>System Center Configuration Manager의 다국어 기능 지원
 
@@ -45,4 +42,3 @@ ms.lasthandoff: 05/17/2017
     >  이러한 데이터베이스 정렬은 [System Center Configuration Manager에 대한 SQL Server 버전 지원](../../../core/plan-design/configs/support-for-sql-server-versions.md)에 설명된 요구 사항에 대한 예외입니다.  
 
 -   계층에 있는 각 사이트 서버 컴퓨터 시스템 볼륨의 루트 폴더에 **GB18030.SMS** 라는 이름의 파일을 배치해야 합니다. 이 파일은 이 요구 사항을 충족하도록 이름이 지정된, 데이터가 없이 비어 있는 텍스트 파일일 수 있습니다.  
-

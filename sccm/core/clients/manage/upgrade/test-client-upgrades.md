@@ -6,23 +6,20 @@ ms.date: 05/04/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 49ef2ed2-2e15-4637-8b63-1d5b7f9c17e1
-caps.latest.revision: 10
-caps.handback.revision: 0
+caps.latest.revision: "10"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 212628639300e9c361f7cee61b3df6b1cb6874ce
 ms.openlocfilehash: 572ef13883f7930e69ec1f1f53c9bfe029898c81
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/18/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-test-client-upgrades-in-a-pre-production-collection-in-system-center-configuration-manager"></a>System Center Configuration Manager의 사전 프로덕션 컬렉션에서 클라이언트 업그레이드를 테스트하는 방법
 
@@ -88,4 +85,3 @@ ms.lasthandoff: 05/18/2017
 >[!NOTE]
 >사전 프로덕션 클라이언트를 사용하도록 설정하거나 사전 프로덕션 클라이언트를 프로덕션 클라이언트로 수준을 올리려면 계정이 **업데이트 패키지** 개체에 대한 **읽기** 및 **수정** 권한이 있는 보안 역할의 구성원이어야 합니다.
 >클라이언트 업그레이드는 사용자가 구성한 Configuration Manager 유지 관리 기간을 준수합니다.
-

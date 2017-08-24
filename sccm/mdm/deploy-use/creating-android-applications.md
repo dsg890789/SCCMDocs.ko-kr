@@ -6,21 +6,19 @@ ms.date: 07/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e025c48c-1514-4ab7-836c-e0635aaa993a
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
 ms.openlocfilehash: 3a89abc81cd70f4e499bf4e3087fd53915377c44
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/29/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-android-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 Android 응용 프로그램 만들기
 
@@ -66,4 +64,3 @@ Play for Work 스토어에서 앱을 승인하고, Configuration Manager 콘솔�
 8. **소프트웨어 라이브러리** > **개요** > **응용 프로그램 관리** > **응용 프로그램**으로 이동한 다음 Android for Work 앱을 선택하여 평소대로 배포합니다.
 
 Play for Work 앱을 Configuration Manager와 동기화하려면 먼저 Play for Work 웹 사이트에서 앱을 하나 이상 승인해야 합니다.
-

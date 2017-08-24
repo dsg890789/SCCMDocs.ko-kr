@@ -6,23 +6,20 @@ ms.date: 2/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 08e0382d-de05-4a76-ba5c-7223173f7066
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8a5dc7361da34f3e6b926acd35c72c0c0767ce70
-ms.openlocfilehash: 27566be49a673bebca6ac3621e692fad65523ca4
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/30/2016
-
-
+ms.openlocfilehash: d2704e0f93ad9748f7eb06d714b3754463cb3bdb
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="configure-asset-intelligence-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Asset Intelligence 구성
 
@@ -226,7 +223,7 @@ Asset Intelligence는 일반 라이선스 계정에서 지정하는 제품을 �
 
 4.  **홈** 탭의 **설정** 그룹에서 **사이트 유지 관리**를 선택합니다. 작업을 선택하고 **편집**을 선택하여 설정을 수정합니다. 
 
-      사이트의 사용량이 적은 시간대로 기간을 설정하는 것이 좋습니다. 기간은 작업을 실행할 수 있는 시간 간격입니다. **작업 속성** 대화 상자에서 지정한 **Start after** (다음 이후 시작) 및 **가장 늦은 시작 시간** 으로 정의됩니다.  
+    사이트의 사용량이 적은 시간대로 기간을 설정하는 것이 좋습니다. 기간은 작업을 실행할 수 있는 시간 간격입니다. **작업 속성** 대화 상자에서 지정한 **Start after** (다음 이후 시작) 및 **가장 늦은 시작 시간** 으로 정의됩니다.  
 
     현재 날짜를 선택하고 **Start after** (다음 이후 시작) 시간을 현재 시간 이후 몇 분 후로 설정하여 작업을 바로 시작할 수 있습니다.  
 
@@ -234,4 +231,3 @@ Asset Intelligence는 일반 라이선스 계정에서 지정하는 제품을 �
 
     > [!NOTE]  
     >  처음 작업을 실행할 때 실패하는 경우 Configuration Manager가 작업을 성공적으로 실행할 때까지 또는 작업이 실행할 수 있는 기간까지 작업을 다시 실행하려고 시도합니다.  
-

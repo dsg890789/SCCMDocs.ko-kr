@@ -6,22 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7341cc6e-9e08-41e4-bcc6-6c1ff12e85ca
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
 ms.openlocfilehash: ed692bdea055775890535d2666f09ba5f5c7c4e1
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="use-alerts-and-the-status-system-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 경고 및 상태 시스템 사용
 
@@ -312,4 +309,3 @@ ms.lasthandoff: 12/16/2016
      경고가 활성인 경우에만 경고를 연기할 수 있습니다.  
 
 -   경고에 대해 알고 있음을 다른 관리자가 볼 수 있도록 경고의 **설명** 을 편집할 수 있습니다. 예를 들어 설명에서 조건 해결 방법을 나타내거나, 조건의 현재 상태에 대한 정보를 제공하거나, 경고를 연기한 이유를 설명할 수 있습니다.  
-

@@ -6,21 +6,19 @@ ms.date: 2/8/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: dec1e0d7-5864-43a8-9f56-413923b3914e
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 640cdc67f301a81a45bf27f95eb03cbc8754a9aa
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.openlocfilehash: 311606b8d52645d3ca89642be4cc341b8a64ec56
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="boundary-groups-for-system-center-configuration-manager-version-1511-1602-and-1606"></a>System Center Configuration Manager 버전 1511, 1602 및 1606에 대한 경계 그룹
 
@@ -175,4 +173,3 @@ ms.lasthandoff: 05/17/2017
  기본적으로 네트워크 연결 속도는 **고속**으로 설정되지만, **저속**으로 변경할 수도 있습니다. 네트워크 연결 속도 및 배포 구성에 따라 클라이언트가 연결된 경계 그룹에 있을 때 해당 클라이언트가 배포 지점에서 콘텐츠를 다운로드할 수 있는지 여부를 확인합니다.  
 
  네트워크 연결 속도 구성이 클라이언트가 콘텐츠를 가져오는 방법에 어떤 영향을 주는지에 대한 자세한 내용은 [콘텐츠 원본 위치 시나리오](../../../../core/plan-design/hierarchy/content-source-location-scenarios.md)를 참조하세요.  
-

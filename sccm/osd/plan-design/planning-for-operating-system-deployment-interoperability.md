@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: e327ce38-6c07-4a27-b6eb-7e5bf74ed04b
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: 50a4b75b8c8c1cb6f7a8e696abad285f99080fcd
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="planning-for-operating-system-deployment-interoperability-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 운영 체제 배포 상호 운용성 계획
 
@@ -71,9 +70,3 @@ ms.openlocfilehash: 50a4b75b8c8c1cb6f7a8e696abad285f99080fcd
  중앙 관리 사이트를 최신 버전의 Configuration Manager로 업그레이드한 경우 다음 단계를 수행하여 이전 Configuration Manager 사이트(최신 버전의 Configuration Manager로 업그레이드하지 않은)에 할당된 클라이언트에 배포한 운영 체제 배포 작업 순서가 해당 클라이언트를 관리되지 않는 상태로 남겨 두지 않았는지 확인해야 합니다.  
 
 -   Configuration Manager 사이트의 클라이언트에만 배포하는 데 사용할 작업 순서를 만듭니다. 마찬가지로, 최신 버전의 Configuration Manager 사이트에 있는 클라이언트에 배포하는 데 사용할 작업 순서의 사본을 만든 다음, 작업 순서를 수정하면 이전 Configuration Manager 사이트의 클라이언트에 배포하지 마세요. 그런 다음, 이전 Configuration Manager 클라이언트 설치 원본을 사용하도록 사용자 지정 패키지를 업데이트해야 합니다. 이전 Configuration Manager 클라이언트 설치 원본을 참조하는 사용자 지정 클라이언트 설치 패키지가 아직 없는 경우 수동으로 만들어야 합니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

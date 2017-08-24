@@ -6,23 +6,20 @@ ms.date: 02/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4564ebcb-41a8-4eb0-afdb-2e1f0795cfa2
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 05c27c7aa36e0b4236867766dab36125c31467b3
-ms.openlocfilehash: c0b4fcda6599ed91fe2393b97bdcec6cdfba9b7c
-ms.contentlocale: ko-kr
-ms.lasthandoff: 01/03/2017
-
-
+ms.openlocfilehash: fa67cf597c73bab47209c9b98539f97e174ae70b
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-use-maintenance-windows-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 유지 관리 기간을 사용하는 방법
 
@@ -72,4 +69,3 @@ ms.lasthandoff: 01/03/2017
 7.  **다음에 이 일정 적용** 드롭다운 목록에서 선택합니다.  
 
 8.  **확인**을 선택하고 **&lt;컬렉션 이름\> 속성** 대화 상자를 닫습니다.  
-

@@ -6,19 +6,19 @@ ms.date: 1/3/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d39c201f-d364-4e7b-bde4-faa76d747f33
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: b6b47fd1f56780a40c96b5e228046b41fe3a9a47
 ms.openlocfilehash: 88ecbc48fd03ce988f04408d0378844cbed1de2b
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="install-the-system-center-configuration-manager-console"></a>System Center Configuration Manager 콘솔 설치
 
@@ -95,9 +95,3 @@ ms.openlocfilehash: 88ecbc48fd03ce988f04408d0378844cbed1de2b
   -  **consolesetup.exe /q LangPackDir=C:\Downloads\ConfigMgr TargetDir="D:\Program Files\ConfigMgr" Console EnableSQM=1 DefaultSiteServerName=MyServer.Contoso.com**  
 
   -  **consolesetup.exe /uninstall /q**  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
-

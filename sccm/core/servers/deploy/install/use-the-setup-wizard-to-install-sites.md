@@ -5,21 +5,19 @@ ms.date: 7/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1f703376-5f2c-4fd2-8209-7028c931ddc7
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 5945abb49fe06c59355805aa94b04d0d445ecbc3
 ms.openlocfilehash: 678f1b35fe6f7649dacb766f7c671f4ec8ea1435
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/24/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="use-the-setup-wizard-to-install-system-center-configuration-manager-sites"></a>설치 마법사를 사용하여 System Center Configuration Manager 사이트를 설치할 수 있습니다.
 
@@ -391,4 +389,3 @@ ms.lasthandoff: 07/24/2017
 
     > [!TIP]  
     > 한 번에 둘 이상의 보조 사이트를 설치하는 경우 필수 조건 검사기는 한 번에 하나의 사이트에 대해 실행되며, 한 사이트에 대한 검사를 완료해야 다음 사이트에 대한 검사가 시작됩니다.  
-

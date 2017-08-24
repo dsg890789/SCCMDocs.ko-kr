@@ -1,5 +1,4 @@
 ---
-
 title: "소프트웨어 업데이트 지점 설치 및 구성 | Microsoft 문서"
 description: "소프트웨어 업데이트 준수 평가를 수행하고 클라이언트에 소프트웨어 업데이트를 배포하려면 중앙 관리 사이트에 기본 사이트에 대한 소프트웨어 업데이트 지점이 있어야 합니다."
 keywords: 
@@ -10,20 +9,14 @@ ms.date: 05/30/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: b099a645-6434-498f-a408-1d438e394396
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dc221ddf547c43ab1f25ff83c3c9bb603297ece6
 ms.openlocfilehash: 7d369384d133c90a15e01df50ac53992d61f3873
-ms.contentlocale: ko-kr
-ms.lasthandoff: 06/01/2017
-
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
-
 # <a name="install-and-configure-a-software-update-point"></a>소프트웨어 업데이트 지점 설치 및 구성  
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -156,4 +149,3 @@ ms.lasthandoff: 06/01/2017
 Configuration Manager 계층 구조의 최상위 사이트부터 시작하여 소프트웨어 업데이트 지점을 설치했습니다. 하위 사이트에 소프트웨어 업데이트 지점을 설치하려면 이 항목의 절차를 반복합니다.
 
 소프트웨어 업데이트 지점을 설치했으면 [소프트웨어 업데이트 동기화](synchronize-software-updates.md)로 이동합니다.
-

@@ -6,23 +6,20 @@ ms.date: 2/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e8159bd9-5c2b-4d25-82f9-78fcfd732ba9
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
-ms.openlocfilehash: 6bfbfbcce6ef5c38164e161d197f5a3fb4b4e353
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 17168e26f13340847928f6e3623115cd4b55997b
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-use-asset-intelligence-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Asset Intelligence를 사용하는 방법
 
@@ -338,4 +335,3 @@ ms.lasthandoff: 12/16/2016
     -   **Overwrite the locally edited catalog information value with the downloaded System Center Online value**(다운로드한 System Center Online 값으로 로컬로 편집한 카탈로그 정보 값 덮어쓰기): 기존 Asset Intelligence 카탈로그 소프트웨어 분류 정보를 System Center 온라인에서 가져온 새 정보로 덮어써 소프트웨어 세부 정보 충돌을 해결합니다. 이 설정을 선택하면 소프트웨어 타이틀 상태가 **업데이트 가능** 에서 **유효성 확인됨**으로 변경됩니다.  
 
      **확인** 을 클릭하여 충돌 해결을 저장합니다.  
-

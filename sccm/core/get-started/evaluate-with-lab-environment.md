@@ -6,23 +6,20 @@ ms.date: 2/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 01b30260-f03a-4851-a549-d1b76e8cfc69
-caps.latest.revision: 25
-caps.handback.revision: 0
+caps.latest.revision: "25"
+caps.handback.revision: "0"
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 0ea90d3f3bef80b8acf9018a1338ae05fc948af4
 ms.openlocfilehash: d7ea785ab1beee09b9adda735a87f89bc9481620
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="evaluate-system-center-configuration-manager-by-building-your-own-lab-environment"></a>고유한 랩 환경을 구축하여 System Center Configuration Manager 평가
 
@@ -68,4 +65,3 @@ ms.lasthandoff: 05/17/2017
 -   콘텐츠 관리에 대한 자세한 내용은 [콘텐츠 관리 관련 개념](../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md)을 참조하세요.  
 
 -   [클라이언트가 System Center Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법 이해](../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)를 통해 배포 전체에서 매일 진행하는 작업을 지원하는 방법을 알아봅니다.  
-

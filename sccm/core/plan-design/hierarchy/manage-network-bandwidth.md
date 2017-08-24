@@ -6,25 +6,21 @@ ms.date: 2/6/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e80d1151-91db-4a27-8411-a957297b67d0
-caps.latest.revision: 15
-caps.handback.revision: 0
+caps.latest.revision: "15"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 37e4f27fcea0bbdd39c9fd3ab38aa46e3059f73a
 ms.openlocfilehash: d9dff97126c34a726677de60dd7647370c553b6e
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="manage-network-bandwidth-for-content"></a>콘텐츠의 네트워크 대역폭 관리
 System Center Configuration Manager의 콘텐츠 관리 프로세스에 사용되는 네트워크 대역폭을 관리하려는 경우 일정 및 제한용 기본 제공 컨트롤을 사용할 수 있습니다. 사전 준비된 콘텐츠를 사용할 수도 있습니다. 다음 섹션에서는 이러한 옵션을 더 자세히 설명합니다.
 
@@ -77,4 +73,3 @@ Configuration Manager 콘솔에서 사전 준비할 콘텐츠를 선택한 다�
     >  위의 옵션들은 패키지별로 적용되며 배포 지점이 사전 준비된 것으로 확인되는 경우에만 사용됩니다. 사전 준비된 것으로 확인되지 않은 배포 지점에서는 이러한 설정을 무시합니다. 이 경우, 콘텐츠는 항상 네트워크를 통해 사이트 서버에서 배포 지점으로 배포됩니다.  
 
 -   **사이트 서버에서 콘텐츠 라이브러리 복원.** 사이트 서버에 오류가 발생할 경우 콘텐츠 라이브러리에 포함된 패키지와 응용 프로그램에 대한 정보가 복원 과정 중 사이트 데이터베이스로 복원되지만 콘텐츠 라이브러리 파일은 이 과정에서 복원되지 않습니다. 콘텐츠 라이브러리를 복원할 파일 시스템 백업이 없는 경우에는 필요한 패키지와 응용 프로그램을 보유한 다른 사이트에서 사전 준비된 콘텐츠 파일을 만들 수 있습니다. 그런 다음 사전 준비된 콘텐츠 파일을 복구된 사이트 서버에 추출할 수 있습니다. 사이트 서버 백업 및 복구에 대한 자세한 내용은 [System Center Configuration Manager 백업 및 복구](/sccm/protect/understand/backup-and-recovery)를 참조하세요.  
-

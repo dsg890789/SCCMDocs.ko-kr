@@ -6,22 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9be8aaf3-075e-4acd-abd2-7459254e16e2
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
 ms.openlocfilehash: 9c9e6b7780c7c10c20a60dbbbf506e916031eb88
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-deploy-configuration-baselines-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 구성 기준을 배포하는 방법
 
@@ -58,4 +56,3 @@ ms.lasthandoff: 12/16/2016
     >  구성 기준이 컴퓨터에 배포되면 예약한 시작 시간의 2시간 이내에 준수 여부가 평가됩니다. 사용자에게 배포된 경우 사용자가 로그온할 때 준수 여부가 평가됩니다.  
 
 9. **확인** 을 클릭하여 **구성 기준 배포** 대화 상자를 닫고 배포를 만듭니다. 배포를 모니터링하는 방법에 대한 자세한 내용은 [Monitor compliance settings](/sccm/compliance/deploy-use/monitor-compliance-settings)(준수 설정 모니터링)를 참조하세요.  
-

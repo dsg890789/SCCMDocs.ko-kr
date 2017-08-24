@@ -6,21 +6,19 @@ ms.date: 03/05/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b5d520a7-e9e5-40ee-91f9-f2684214beb6
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: 74dcc0f4e680893db804956615248b7e1230d2b5
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
-
+ms.openlocfilehash: d039792a88b9e7704f37718a88f841dd9216d1b1
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="user-affinity-for-hybrid-managed-devices-in-configuration-manager"></a>Configuration Manager의 하이브리드 관리 장치에 대한 사용자 선호도
 
@@ -55,4 +53,3 @@ ms.lasthandoff: 12/16/2016
 
 ##  <a name="BKMK_noUA"></a> 사용자 선호도가 없는 관리 장치  
  **사용자 선호도 없음**으로 구성된 장치에서는 회사 포털을 지원하지 않으므로 앱을 설치하지 않아야 합니다. 회사 포털은 회사 자격 증명을 갖고 있으며 개인 설정된 회사 리소스(예: 메일)에 대한 액세스 권한이 필요한 사용자를 위해 설계되었습니다. **사용자 선호도 없음** 으로 등록된 장치의 경우에는 전용 사용자가 로그인할 필요가 없습니다. 키오스크, POS(Point of Sale) 또는 공유 유틸리티 장치는 사용자 선호도 없음으로 등록된 장치에 대한 일반적인 사용 사례입니다. 사용자 선호도가 필요한 경우 장치를 등록하기 전에 장치의 등록 프로필에서 **사용자 선호도** 가 선택되어 있어야 합니다. 장치에 대한 선호도 상태를 변경하려면 장치를 사용 중지한 후 다시 등록해야 합니다.
-

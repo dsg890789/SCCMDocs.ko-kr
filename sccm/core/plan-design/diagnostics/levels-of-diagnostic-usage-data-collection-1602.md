@@ -6,12 +6,11 @@ ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1210a1ca-78c7-4d17-81cf-ac1bc5c5cf3e
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
@@ -34,12 +33,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ebbc2b250d651aa8befd7f2458d67bf0f4a8ff10
-ms.openlocfilehash: e54ed320ce95876d29e6dd889dcba2f1f964164c
-ms.contentlocale: ko-kr
-ms.lasthandoff: 02/08/2017
-
+ms.openlocfilehash: 3e50327678d29fa2c1fed4ac0fd63738e65776cb
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1602-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1602에 대한 진단 사용 현황 데이터 수집의 수준
 
@@ -65,13 +63,13 @@ System Center Configuration Manager 버전 1602에서는 **기본**, **고급**,
 
 
  -   설정 정보:
-     - 빌드, 설치 유형, 언어 팩, 사용하도록 설정한 기능  
+    - 빌드, 설치 유형, 언어 팩, 사용하도록 설정한 기능  
 
-     - ***[업데이트된 기능]*** 업데이트 팩 배포 상태 및 오류, 다운로드 진행률 및 필수 구성 요소 오류     
+    - ***[업데이트된 기능]*** 업데이트 팩 배포 상태 및 오류, 다운로드 진행률 및 필수 구성 요소 오류     
 
-     - ***[새로운 기능]*** 업그레이드 후 스크립트의 버전
+    - ***[새로운 기능]*** 업그레이드 후 스크립트의 버전
 
-     - ***[새로운 기능]*** 업데이트 빠른 링 사용
+    - ***[새로운 기능]*** 업데이트 빠른 링 사용
 
 -   데이터베이스 성능 메트릭(복제 처리 정보, 디스크 사용 현황 및 프로세서에 따른 상위 SQL Server 저장 프로시저)
 
@@ -316,4 +314,3 @@ System Center Configuration Manager 버전 1602부터 이 수준에는 다음이
 -   ***[새로운 기능]*** 준수 설정: SCEP, VPN, Wi-Fi 및 준수 정책 템플릿 구성 정보
 
 -   ***[새로운 기능]*** Intune 관리 장치에 대한 EAS 조건부 액세스 정책 유형(차단 또는 격리)
-

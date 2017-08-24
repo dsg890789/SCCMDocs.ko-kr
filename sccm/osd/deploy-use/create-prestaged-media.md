@@ -6,22 +6,19 @@ ms.date: 04/11/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ff6e7267-302a-4563-815e-cdc0d1a4b60f
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ae9488a34c6b1e04397c4875de4b3bc607f7116c
 ms.openlocfilehash: 33abf3853d912d423e427db4d35fb4a16167164e
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-prestaged-media-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 사전 준비된 미디어 만들기
 
@@ -145,4 +142,3 @@ System Center Configuration Manager의 사전 준비된 미디어는 제조업�
 
 ## <a name="next-steps"></a>다음 단계
 [엔터프라이즈 운영 체제를 배포하는 시나리오](scenarios-to-deploy-enterprise-operating-systems.md)
-

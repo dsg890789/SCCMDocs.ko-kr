@@ -6,22 +6,19 @@ ms.date: 6/16/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 999b5409-7e72-48d2-8554-4d44427ce383
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: mattbriggs
 ms.author: mattbriggs
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f4c46bfab9b40b29654f4e883817a5508ab25b74
 ms.openlocfilehash: 9b20e5e2a66d92038033e816e6fc701581c48a7f
-ms.contentlocale: ko-kr
-ms.lasthandoff: 06/28/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="use-bootable-media-to-deploy-windows-over-the-network-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 부팅 가능한 미디어를 사용하여 네트워크를 통해 Windows 배포
 
@@ -53,4 +50,3 @@ ms.lasthandoff: 06/28/2017
 
 ##  <a name="BKMK_Deploy"></a> 부팅 가능한 미디어에서 운영 체제 설치  
 컴퓨터에서 부팅 가능한 드라이브에 부팅 가능한 미디어를 삽입한 다음 전원을 켜서 운영 체제를 설치합니다.
-

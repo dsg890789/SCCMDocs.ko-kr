@@ -1,6 +1,6 @@
 ---
-title: "Podstawy zarządzania urządzeniami | Dokumentacja firmy Microsoft"
-description: "Dowiedz się, jak używać programu System Center Configuration Manager do zarządzania urządzeniami."
+title: "장치 관리의 기본 사항 | Microsoft 문서"
+description: "System Center Configuration Manager를 사용하여 장치를 관리하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 12/04/2016
 ms.prod: configuration-manager
@@ -16,85 +16,85 @@ ms.author: angrobe
 manager: angrobe
 ms.openlocfilehash: 45d84122a86da880268c93ecd994250df6b76c8a
 ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
-ms.translationtype: MT
-ms.contentlocale: pl-PL
+ms.translationtype: HT
+ms.contentlocale: ko-KR
 ms.lasthandoff: 08/07/2017
 ---
-# <a name="fundamentals-of-managing-devices-with-system-center-configuration-manager"></a>Podstawy zarządzania urządzeniami w programie System Center Configuration Manager
+# <a name="fundamentals-of-managing-devices-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 장치 관리의 기본 사항
 
-*Dotyczy: Program System Center Configuration Manager (Current Branch)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager można zarządzać dwie szerokie kategorie urządzeń:
+넓은 의미에서 볼 때 System Center Configuration Manager는 다음 두 가지 범주의 장치를 관리할 수 있습니다.
 
--   *Klienci* są urządzeniami, takimi jak stacje robocze, laptopy, serwerów i urządzeń przenośnych, w którym instalować oprogramowanie klienta programu Configuration Manager. Niektóre funkcje zarządzania, takie jak spis sprzętu, wymagają tego oprogramowania klienta.  
+-   *클라이언트*는 Configuration Manager 클라이언트 소프트웨어를 설치하는 워크스테이션, 랩톱, 서버, 모바일 장치 등의 장치입니다. 하드웨어 인벤토리 등의 일부 관리 기능을 사용하려면 이 클라이언트 소프트웨어가 필요합니다.  
 
--   *Zarządzane urządzenia* mogą obejmować *klientów*, ale zazwyczaj to urządzenie przenośne, których nie zainstalowano oprogramowania klienckiego programu Configuration Manager. Tego rodzaju urządzenia można zarządzać za pomocą usługi Intune lub wbudowanego na lokalnego zarządzania urządzeniami przenośnymi w programie Configuration Manager.
+-   *관리되는 장치*는 *클라이언트*를 포함할 수 있지만 일반적으로 Configuration Manager 클라이언트 소프트웨어가 설치되지 않은 모바일 장치입니다. 이런 장치에서는 Intune 또는 Configuration Manager의 기본 제공 온-프레미스 모바일 장치 관리를 사용하여 관리합니다.
 
-Można również grupować i zidentyfikować urządzenia, na podstawie użytkownika, a nie tylko od typu klienta.
+클라이언트 유형뿐 아니라 사용자를 기준으로 하여 장치를 그룹화하고 식별할 수도 있습니다.
 
-## <a name="managing-devices-with-the-configuration-manager-client"></a>Zarządzanie urządzeniami z klientem programu Configuration Manager
+## <a name="managing-devices-with-the-configuration-manager-client"></a>Configuration Manager 클라이언트를 사용하여 장치 관리
 
-Istnieją dwa sposoby zarządzać urządzeniem za pomocą oprogramowania klienckiego programu Configuration Manager. Pierwszym sposobem jest wykrywanie urządzenia w sieci, a następnie wdrożyć oprogramowanie klienckie na tym urządzeniu. Innym sposobem jest ręcznie zainstaluj oprogramowanie klienckie na nowym komputerze, a następnie dołącz lokacji po dołączeniu go do sieci komputera. W celu odnalezienia urządzeń, których nie zainstalowano oprogramowania klienckiego, uruchom co najmniej jednego z wbudowanych metod odnajdywania. Po odnalezieniu urządzenia użyj jednej z kilku metod instalowania oprogramowania klienckiego. Aby uzyskać informacje na temat korzystania z funkcji odnajdywania, zobacz [Uruchamianie odnajdywania dla programu System Center Configuration Manager](../../core/servers/deploy/configure/run-discovery.md).  
+Configuration Manager 클라이언트 소프트웨어를 사용하여 장치를 관리하는 방법에는 두 가지가 있습니다. 첫 번째 방법은 네트워크에서 장치를 검색한 다음 해당 장치에 클라이언트 소프트웨어를 배포하는 것입니다. 다른 방법은 클라이언트 소프트웨어를 새 컴퓨터에 수동으로 설치한 다음 해당 컴퓨터가 네트워크에 연결할 때 사이트에 가입시키는 것입니다. 클라이언트 소프트웨어가 설치되지 않은 장치를 검색하려면 기본 제공 검색 방법 중 하나 이상을 실행합니다. 장치를 검색한 후에는 몇 가지 방법 중 하나를 사용하여 클라이언트 소프트웨어를 설치합니다. 검색에 대한 자세한 내용은 [System Center Configuration Manager에 대한 검색 실행](../../core/servers/deploy/configure/run-discovery.md)을 참조하세요.  
 
- Po odnajdywania urządzeń, które można uruchomić oprogramowanie klienta programu Configuration Manager, można użyć jednej z kilku metod instalowania oprogramowania. Gdy oprogramowanie zostanie zainstalowane, a klient przypisany do lokacji głównej, możesz rozpocząć zarządzanie urządzeniem.  Typowe metody instalacji to:
+ Configuration Manager 클라이언트 소프트웨어를 실행할 수 있는 장치를 검색한 후 여러 방법 중 하나를 사용하여 소프트웨어를 설치할 수 있습니다. 소프트웨어를 설치하여 클라이언트를 기본 사이트에 할당한 후에는 장치 관리를 시작할 수 있습니다.  일반적인 설치 방법은 다음과 같습니다.
 
- - Wypychana instalacja klienta.
+ - 클라이언트 강제 설치
 
- - Instalacja oparta na aktualizacji oprogramowania.
+ - 소프트웨어 업데이트 기반 설치
 
- - Zasady grupy.
+ - 그룹 정책
 
- - Instalacja ręczna na komputerze.
- - W tym klienta jako części wdrażanego obrazu systemu operacyjnego.  
-
-
- Po zainstalowaniu klienta możesz uprościć zadania związane z zarządzaniem urządzeniami, używając kolekcji. Kolekcje są grupami urządzeń lub użytkowników, którzy tworzenia, aby zarządzać nimi grupowo. Na przykład możesz zainstalować aplikację dla urządzeń przenośnych na wszystkich urządzeniach przenośnych, które rejestruje programu Configuration Manager. Jeśli jest to możliwe, należy użyć kolekcji wszystkie urządzenia przenośne.  
-
- Aby uzyskać więcej informacji zobacz następujące tematy:  
-
--   [Wybieranie rozwiązania do zarządzania urządzeniami programu System Center Configuration Manager](../../core/plan-design/choose-a-device-management-solution.md)  
-
--   [Metody instalacji klientów w programie System Center Configuration Manager](../../core/clients/deploy/plan/client-installation-methods.md)  
-
--   [Wprowadzenie do kolekcji w programie System Center Configuration Manager](../../core/clients/manage/collections/introduction-to-collections.md)  
-
-### <a name="client-settings"></a>Ustawienia klienta  
- Podczas pierwszej instalacji programu Configuration Manager, wszyscy klienci w hierarchii są skonfigurowane przy użyciu domyślnych ustawień klienta, które można zmienić. Ustawienia klienta obejmują następujące opcje konfiguracji:
-
- -  Jak często urządzenia komunikują się z lokacją.
-
- -  Czy klient jest skonfigurowana dla aktualizacji oprogramowania i innych operacji zarządzania.
-
- -  Czy użytkownicy mogą rejestrować swoje urządzenia przenośne tak, że są one zarządzane przez program Configuration Manager.  
-
-Można tworzyć niestandardowe ustawienia klienta i przypisać je do kolekcji.  Członkowie kolekcji są konfigurowane z niestandardowymi ustawieniami, a następnie można utworzyć wielu klientów niestandardowych ustawień, które są stosowane w określonej kolejności (w kolejności liczbowej).  Jeśli występują konflikty ustawień, ustawienie o najniższej liczbie porządkowej zastępuje pozostałe ustawienia.  
-
-Na poniższym diagramie przedstawiono przykład sposobu tworzenia i stosowania niestandardowych ustawień klienta.  
-
- ![Ustawienia klienta](media/ClientSettings.gif)  
-
- Aby dowiedzieć się więcej na temat ustawień klientów, zobacz  
-                [Jak skonfigurować ustawienia klienta w programie System Center Configuration Manager](../../core/clients/deploy/configure-client-settings.md) i [Informacje o ustawieniach klienta w programie System Center Configuration Manager](../../core/clients/deploy/about-client-settings.md).
-
-## <a name="managing-devices-without-the-configuration-manager-client"></a>Zarządzanie urządzeniami bez klienta programu Configuration Manager  
- Program Configuration Manager obsługuje zarządzanie niektórych urządzeń, których nie zainstalowano oprogramowania klienckiego, a nie są zarządzane przez usługę Intune. Aby uzyskać więcej informacji, zobacz [zarządzanie urządzeniami przenośnymi za pomocą infrastruktury lokalnej w programie System Center Configuration Manager](../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md) i [zarządzanie urządzeniami przenośnymi za pomocą programu System Center Configuration Manager i Exchange](../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md).  
-
-## <a name="user-based-management"></a>Zarządzanie oparte na użytkownika  
- Program Configuration Manager obsługuje kolekcji użytkowników usług domenowych w usłudze Active Directory. Gdy używasz kolekcji użytkowników, można zainstalować oprogramowania na wszystkich komputerach, że członkowie użycia kolekcji. Aby upewnić się, że wdrażanego oprogramowania instalowany tylko na urządzeniach, które są określone jako główne urządzenie użytkownika, należy skonfigurować koligację urządzenia użytkownika. Każdy użytkownik może mieć przynajmniej jedno urządzenie podstawowe.  
-
- Jednym ze sposobów, że użytkownicy mogą zarządzać wdrażaniem oprogramowania jest użycie **Centrum oprogramowania** interfejsu klienta. **Centrum oprogramowania** jest automatycznie instalowany na komputerach klienckich i jest uruchamiany z **Start** menu. **Centrum oprogramowania** pozwala użytkownikom na zarządzanie oprogramowaniem i wykonaj następujące czynności:  
-
--   Zainstaluj oprogramowanie.  
-
--   Zaplanowanie automatycznej instalacji poza godzinami pracy oprogramowania.  
-
--   Skonfiguruj kiedy podczas programu Configuration Manager może instalować oprogramowanie na urządzeniu.  
-
--   Konfigurowanie ustawień dostępu do zdalnego sterowania, jeśli zdalne sterowanie jest skonfigurowana w programie Configuration Manager.  
-
--   Skonfiguruj opcje zarządzania energią, jeśli administrator konfiguruje tę opcję.  
+ - 컴퓨터에 수동 설치
+ - 배포하는 운영 체제 이미지의 일부로 클라이언트 포함  
 
 
- Łącza w **Centrum oprogramowania** umożliwia użytkownikom łączenie się **katalogu aplikacji**, gdzie mogą Przeglądaj w poszukiwaniu, zainstaluj oraz żądań oprogramowania. **Katalogu aplikacji** służy również do konfigurowania ustawień preferencji, czyszczenie urządzeń przenośnych, a jeśli je skonfigurowano, podaj urządzeniem podstawowym koligacji urządzeń użytkownika.   
+ 클라이언트를 설치한 후에 컬렉션을 사용하여 장치 관리의 작업을 간소화할 수 있습니다. 컬렉션은 그룹으로 관리할 수 있도록 만드는 장치나 사용자의 그룹입니다. 예를 들어 Configuration Manager가 등록하는 모든 모바일 장치에 모바일 장치 응용 프로그램을 설치할 수 있습니다. 이 경우 모든 모바일 장치 컬렉션을 사용할 수 있습니다.  
 
- Użytkownicy mogą również uzyskać dostęp **katalogu aplikacji** za pośrednictwem przeglądarki, intranetu lub Internetu sesji.  
+ 자세한 내용은 다음 항목을 참조하세요.  
+
+-   [System Center Configuration Manager에 대한 장치 관리 솔루션 선택](../../core/plan-design/choose-a-device-management-solution.md)  
+
+-   [System Center Configuration Manager의 클라이언트 설치 방법](../../core/clients/deploy/plan/client-installation-methods.md)  
+
+-   [System Center Configuration Manager의 컬렉션 소개](../../core/clients/manage/collections/introduction-to-collections.md)  
+
+### <a name="client-settings"></a>클라이언트 설정  
+ Configuration Manager를 처음 설치하면 계층의 모든 클라이언트가 기본 클라이언트 설정을 사용하여 구성됩니다. 기본 클라이언트 설정은 사용자가 변경할 수 있습니다. 이러한 클라이언트 설정에는 다음 구성 옵션이 포함됩니다.
+
+ -  장치가 사이트와 통신하는 빈도
+
+ -  클라이언트가 소프트웨어 업데이트 및 기타 관리 작업에 대해 설정되는지 여부
+
+ -  사용자가 Configuration Manager에서 관리되도록 모바일 장치를 등록할 수 있는지 여부  
+
+사용자 지정 클라이언트 설정을 만든 다음 컬렉션에 할당할 수 있습니다.  컬렉션의 멤버는 사용자 지정 설정을 갖도록 구성되며, 지정하는 순서대로(번호 순서대로) 적용된 여러 사용자 지정 클라이언트 설정을 만들 수 있습니다.  충돌하는 설정이 있는 경우 순서 번호가 가장 낮은 설정이 다른 설정을 재정의합니다.  
+
+다음 다이어그램은 사용자 지정 클라이언트 설정을 만들고 적용하는 방법의 예를 보여 줍니다.  
+
+ ![클라이언트 설정](media/ClientSettings.gif)  
+
+ 클라이언트 설정에 대한 자세한 내용은 다음을 참조하세요.  
+                [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../core/clients/deploy/configure-client-settings.md) 및 [System Center Configuration Manager의 클라이언트 설정 정보](../../core/clients/deploy/about-client-settings.md)
+
+## <a name="managing-devices-without-the-configuration-manager-client"></a>Configuration Manager 클라이언트 없이 장치 관리  
+ Configuration Manager는 클라이언트 소프트웨어를 설치하지 않았으며 Intune을 통해 관리되지 않는 일부 장치를 관리할 수 있습니다. 자세한 내용은 [System Center Configuration Manager의 온-프레미스 인프라로 모바일 장치 관리](../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md) 및 [System Center Configuration Manager와 Exchange를 사용하여 모바일 장치 관리](../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md)를 참조하세요.  
+
+## <a name="user-based-management"></a>사용자 기반 관리  
+ Configuration Manager는 Active Directory Domain Services 사용자의 컬렉션을 지원합니다. 사용자 컬렉션을 사용하면 컬렉션의 멤버가 사용하는 모든 컴퓨터에 소프트웨어를 설치할 수 있습니다. 배포하는 소프트웨어가 사용자의 기본 장치로 지정된 장치에만 설치되도록 하려면 사용자 장치 선호도를 설정합니다. 사용자는 기본 장치를 하나 이상 사용할 수 있습니다.  
+
+ 사용자가 소프트웨어 배포 환경을 제어할 수는 방법 중 하나는 **소프트웨어 센터** 클라이언트 인터페이스를 사용하는 것입니다. **소프트웨어 센터**는 클라이언트 컴퓨터에 자동으로 설치되며 **시작** 메뉴에서 실행할 수 있습니다. **소프트웨어 센터**를 사용하면 사용자가 자신의 소프트웨어를 관리하고 다음 작업을 수행할 수 있습니다.  
+
+-   소프트웨어를 설치합니다.  
+
+-   근무 외 시간에 자동으로 소프트웨어를 설치하도록 예약합니다.  
+
+-   Configuration Manager가 장치에 소프트웨어를 설치할 수 있는 시간을 구성합니다.  
+
+-   Configuration Manager에서 원격 제어가 설정된 경우 원격 제어의 액세스 설정을 구성합니다.  
+
+-   관리자가 전원 관리 옵션을 설정하는 경우 이 옵션을 구성합니다.  
+
+
+ **소프트웨어 센터**의 링크를 사용하면 사용자가 소프트웨어를 탐색, 설치, 요청할 수 있는 **응용 프로그램 카탈로그**에 연결할 수 있습니다. **응용 프로그램 카탈로그**는 기본 설정을 구성하고, 모바일 장치를 초기화하고, 설정된 경우 사용자 장치 선호도에 대한 기본 장치를 지정하는 데에도 사용합니다.   
+
+ 또한 사용자가 브라우저 인트라넷이나 인터넷 세션을 통해 **응용 프로그램 카탈로그**에 액세스할 수도 있습니다.  

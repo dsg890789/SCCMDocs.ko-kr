@@ -6,22 +6,19 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ff633013-5313-4cd3-949c-56d45e777280
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 22bfae0509a5ce0b52763ea3eda7b8d6891431ed
-ms.contentlocale: ko-kr
-ms.lasthandoff: 03/06/2017
-
-
+ms.openlocfilehash: 349fcf335e7faddbcbd2ffe0ece7e711465f28df
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-ios-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 iOS 응용 프로그램 만들기
 
@@ -54,4 +51,3 @@ Configuration Manager 응용 프로그램 및 배포 유형을 만드는 데 필
 
 > [!IMPORTANT]  
 >  현재 최종 사용자는 iOS용 Microsoft Intune 회사 포털 앱에서 회사 앱을 설치할 수 없습니다. 이는 iOS 앱 스토어에 게시된 앱에 적용되는 제약 조건이 있기 때문입니다(앱 스토어 검토 지침, 섹션 2 참조). 사용자는 자신의 장치에서 Intune 웹 포털(portal.manage.microsoft.com)로 이동하여, 관리되는 앱 스토어 앱과 기간 업무 앱 패키지를 비롯한 회사 앱을 설치할 수 있습니다. Intune 회사 포털 앱을 사용하여 설정할 수 있는 모바일 관리 기능에 대한 자세한 내용은 [Microsoft Intune의 등록된 장치 관리 기능](https://technet.microsoft.com/library/dn600287.aspx)을 참조하세요.  
-

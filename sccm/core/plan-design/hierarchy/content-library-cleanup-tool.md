@@ -6,21 +6,19 @@ ms.date: 4/7/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 226cbbb2-9afa-4e2e-a472-be989c0f0e11
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 32f7fc4ef9c8e8d3c2ec8eeaf9a3174bad992ffb
 ms.openlocfilehash: 76e6772bdd5cbd32d525e728f6ebc988b045da78
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="the-content-library-cleanup-tool-for-system-center-configuration-manager"></a>System Center Configuration Manager용 콘텐츠 라이브러리 정리 도구
 
@@ -49,7 +47,7 @@ ms.lasthandoff: 05/17/2017
     **/delete** 스위치와 함께 도구를 실행하면 도구가 삭제 모드에서 실행됩니다.
 
      - 이 모드에서 실행될 경우 지정된 배포 지점에 있는 분리된 콘텐츠가 배포 지점의 콘텐츠 라이브러리에서 삭제될 수 있습니다.
-     -     각 파일을 삭제하기 전에 파일이 삭제되어야 하는지 확인해야 합니다.  **Y**(예) 또는 **N**(아니요)을 선택하거나, 추가 메시지를 건너뛰고 분리된 콘텐츠를 모두 삭제하려면 **모두 예**를 선택할 수 있습니다.  
+     -  각 파일을 삭제하기 전에 파일이 삭제되어야 하는지 확인해야 합니다.  **Y**(예) 또는 **N**(아니요)을 선택하거나, 추가 메시지를 건너뛰고 분리된 콘텐츠를 모두 삭제하려면 **모두 예**를 선택할 수 있습니다.  
      </br>
 
 도구가 어느 모드에서 실행되든 도구가 실행되는 모드를 포함하는 이름, 배포 지점 이름 및 작업 날짜/시간이 포함된 로그가 자동으로 생성됩니다. 도구가 완료되면 로그 파일이 자동으로 열립니다.
@@ -78,4 +76,3 @@ ms.lasthandoff: 05/17/2017
 | **/ps &lt;기본 사이트 FQDN>**       | 기본 사이트의 배포 지점에서 콘텐츠를 정리하는 경우 **선택 사항**입니다.</br>보조 사이트의 배포 지점에서 콘텐츠를 정리하는 경우 **필수**입니다. </br></br>이 도구는 부모 기본 사이트에 연결하여 SMS_Provider에 대 한 쿼리를 실행합니다. 이러한 쿼리를 통해 도구에서는 배포 지점에 있어야 할 콘텐츠를 확인하여 분리되어 있고 제거할 수 있는 콘텐츠를 식별할 수 있습니다. 보조 사이트에서 바로 필요한 세부 정보를 이용할 수 없기 때문에 부모 기본 사이트에 대한 이러한 연결은 보조 사이트에서 배포 지점에 대해 이루어져야 합니다.</br></br> 배포 지점이 속하는 기본 사이트 또는 배포 지점이 보조 사이트에 있는 경우 부모 기본 사이트의 FQDN을 지정합니다. </br></br> 예: ***ContentLibraryCleanup.exe /dp server1.contoso.com /ps siteserver1.contoso.com*** |
 | **/sc &lt;기본 사이트 코드>**  | 기본 사이트의 배포 지점에서 콘텐츠를 정리하는 경우 **선택 사항**입니다.</br>보조 사이트의 배포 지점에서 콘텐츠를 정리하는 경우 **필수**입니다. </br></br> 배포 지점이 속하는 기본 사이트 또는 배포 지점이 보조 사이트에 있는 경우 부모 기본 사이트의 사이트 코드를 지정합니다.</br></br> 예: ***ContentLibraryCleanup.exe /dp server1.contoso.com /sc ABC*** |
 | **/log <log file directory>**       |**선택 사항** </br> 도구가 로그 파일을 기록하는 위치를 지정합니다. 로컬 드라이브 또는 네트워크 공유일 수 있습니다.</br></br> 이 스위치를 사용하지 않으면 로그 파일은 도구가 실행되는 컴퓨터에 있는 사용자의 임시 폴더에 저장됩니다.</br></br> 로컬 드라이브의 예: ***ContentLibraryCleanup.exe /dp server1.contoso.com /log C:\Users\Administrator\Desktop*** </br></br>네트워크 공유의 예: ***ContentLibraryCleanup.exe /dp server1.contoso.com /log \\&lt;공유>\&lt;폴더>***|
-

@@ -6,21 +6,20 @@ ms.date: 12/28/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ef3ab519-9cf7-47fc-8831-d400e0e96df8
-caps.latest.revision: 4
-caps.handback.revision: 0
+caps.latest.revision: "4"
+caps.handback.revision: "0"
 author: Nbigman
 ms.author: nbigman
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 8a5dc7361da34f3e6b926acd35c72c0c0767ce70
 ms.openlocfilehash: 6d1d0a393a2ce614ae5f819475bd47b05e699b45
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-wi-fi-and-vpn-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Wi-Fi 및 VPN 프로필에 대한 보안 및 개인 정보
 
@@ -39,9 +38,3 @@ ms.openlocfilehash: 6d1d0a393a2ce614ae5f819475bd47b05e699b45
  기본적으로 장치는 Wi-Fi 및 VPN 프로필을 평가하지 않습니다. 또한 프로필을 구성한 다음 사용자에게 배포해야 합니다.  
 
  Wi-Fi 및 VPN 프로필을 구성하려면 먼저 개인 정보 요구 사항을 고려합니다.  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
-

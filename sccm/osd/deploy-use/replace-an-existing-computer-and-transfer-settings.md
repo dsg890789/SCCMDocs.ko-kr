@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d28f4363-9e8a-4c54-9cb7-0594fabfff26
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: 243433980e1720fd468d52a4a61f2c3a8e3659b5
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="replace-an-existing-computer-and-transfer-settings-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 기존 컴퓨터 바꾸기 및 설정 전송
 
@@ -29,7 +28,7 @@ ms.openlocfilehash: 243433980e1720fd468d52a4a61f2c3a8e3659b5
 
  다음 섹션을 사용하여 새 버전의 Windows로 기존 컴퓨터를 새로 고치세요.  
 
-##  <a name="a-namebkmkplana-plan"></a><a name="BKMK_Plan"></a> 계획  
+##  <a name="BKMK_Plan"></a> 계획  
 
 -   **인프라 요구 사항 계획 및 구현**  
 
@@ -39,7 +38,7 @@ ms.openlocfilehash: 243433980e1720fd468d52a4a61f2c3a8e3659b5
 
      기존 컴퓨터에서 설정을 캡처한 다음 설정을 새 운영 체제로 복원하려는 경우 상태 마이그레이션 지점을 설치해야 합니다. 자세한 내용은 [상태 마이그레이션 지점](../get-started/prepare-site-system-roles-for-operating-system-deployments.md#BKMK_StateMigrationPoints)을 참조하세요.  
 
-##  <a name="a-namebkmkconfigurea-configure"></a><a name="BKMK_Configure"></a> 구성  
+##  <a name="BKMK_Configure"></a> 구성  
 
 1.  **부팅 이미지 준비**  
 
@@ -66,7 +65,7 @@ ms.openlocfilehash: 243433980e1720fd468d52a4a61f2c3a8e3659b5
     > [!NOTE]  
     >  이 시나리오에서 사용자 설정 및 파일을 캡처 및 복원하는 경우 상태 마이그레이션 지점을 사용하거나 파일을 로컬로 저장하도록 선택할 수 있습니다. 자세한 내용은 [사용자 상태 관리](../get-started/manage-user-state.md)를 참조하세요.  
 
-##  <a name="a-namebkmkdeploya-deploy"></a><a name="BKMK_Deploy"></a> 배포  
+##  <a name="BKMK_Deploy"></a> 배포  
 
 -   다음 배포 방법 중 하나를 사용하여 운영 체제를 배포합니다.  
 
@@ -83,9 +82,3 @@ ms.openlocfilehash: 243433980e1720fd468d52a4a61f2c3a8e3659b5
 -   **작업 순서 배포 모니터링**  
 
      운영 체제를 설치하는 작업 순서 배포를 모니터링하려면 [운영 체제 배포 모니터링](monitor-operating-system-deployments.md)을 참조하세요.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

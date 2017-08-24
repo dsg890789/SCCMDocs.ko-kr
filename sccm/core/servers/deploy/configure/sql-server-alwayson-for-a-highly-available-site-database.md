@@ -6,21 +6,19 @@ ms.date: 7/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 58d52fdc-bd18-494d-9f3b-ccfc13ea3d35
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
 ms.openlocfilehash: c746365238e1255d73387a9496521bb03a56b21b
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/29/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="prepare-to-use-sql-server-always-on-availability-groups-with-configuration-manager"></a>Configuration Manager에서 SQL Server Always On 가용성 그룹 사용 준비
 
@@ -259,4 +257,3 @@ Configuration Manager 버전 1610 이전에서는 SQL Server의 가용성 그룹
 
 ## <a name="next-steps"></a>다음 단계
 가용성 그룹을 사용할 때 필요한 필수 구성 요소, 제한 사항 및 일반 작업에 대한 변경 내용을 이해한 후에는 [Configuration Manager에 대한 가용성 그룹 구성](/sccm/core/servers/deploy/configure/configure-aoag)에서 가용성 그룹을 사용하도록 사이트를 설정 및 구성하기 위한 절차를 참조하세요.
-

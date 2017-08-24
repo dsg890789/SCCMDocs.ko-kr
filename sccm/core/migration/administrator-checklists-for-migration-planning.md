@@ -6,22 +6,20 @@ ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 295fdf07-93cc-490c-acdd-ce3ee88cb36f
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 5e6e8a18a8fc705c993177b3c5b4113a351a45a4
 ms.openlocfilehash: 36f7c37e4da3f2bce64a25d266dae57d9fe98c36
-ms.lasthandoff: 12/30/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="administrator-checklists-for-migration-planning-in-system-center-configuration-manager"></a>System Center Configuration Manager의 마이그레이션 계획에 대한 관리자 검사 목록
 
@@ -165,4 +163,3 @@ ms.lasthandoff: 12/30/2016
 -   **마이그레이션을 완료합니다.**  
 
     원본 계층의 모든 사이트에서 데이터와 클라이언트를 마이그레이션하고 해당되는 배포 지점을 업그레이드한 후에는 마이그레이션을 완료할 수 있습니다. 마이그레이션을 완료하려면 원본 계층의 각 원본 사이트에 대해 데이터 수집을 중지해야 합니다. 그런 다음 필요 없는 마이그레이션 정보를 제거하고 원본 계층 인프라의 역할을 해제할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 마이그레이션 완료 계획](../../core/migration/planning-to-complete-migration.md)항목을 참조하세요.  
-

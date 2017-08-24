@@ -6,22 +6,19 @@ ms.date: 04/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: d6a73e68-57d8-4786-842b-36669541d8ff
-caps.latest.revision: 17
+caps.latest.revision: "17"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 690d03d9c8c49a815bd318df549d7401a855bc5d
 ms.openlocfilehash: a99b58acef7448af2c9576bfa0ec2635f5a4f86f
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="pki-certificate-requirements-for-system-center-configuration-manager"></a>System Center Configuration Manager를 위한 PKI 인증서 요구 사항
 
@@ -89,4 +86,3 @@ ms.lasthandoff: 05/17/2017
 |Intel AMT 기반 컴퓨터|서버 인증입니다.|**웹 서버** (수정됨)<br /><br /> 주체 이름을 **이 Active Directory 정보로 만듦**으로 구성한 후에, **주체 이름 형식** 에 **일반 이름**을 선택합니다.<br /><br /> 대역 외 관리 구성 요소 속성에서 지정하는 범용 보안 그룹에 **읽기** 및 **등록** 권한을 부여해야 합니다.|**확장된 키 사용** 값에 **서버 인증(1을 참조하세요.3을 참조하세요.6을 참조하세요.1을 참조하세요.5을 참조하세요.5을 참조하세요.7을 참조하세요.3을 참조하세요.1)**을 참조하세요.<br /><br /> 주체 이름에 AMT 기반 컴퓨터의 FQDN이 포함되어야 합니다. 이는 Active Directory Domain Services에서 자동으로 제공됩니다.|이 인증서는 컴퓨터에 있는 관리 컨트롤러의 비휘발성 RAM에 상주하며 Windows 사용자 인터페이스에서 확인할 수 없습니다.<br /><br /> 각 Intel AMT 기반 컴퓨터는 AMT 프로비전 및 후속 업데이트 시에 이 인증서를 요청합니다. 이러한 컴퓨터에서 AMT 프로비전 정보를 제거하면 이 인증서가 해지됩니다.<br /><br /> Intel AMT 기반 컴퓨터에 이 인증서가 설치되면 루트 CA에 대한 인증서 체인도 설치됩니다. AMT 기반 컴퓨터는 키 길이가 2,048비트를 초과하는 CA 인증서를 지원할 수 없습니다.<br /><br /> 인증서가 Intel AMT 기반 컴퓨터에 설치된 후에는 이 인증서가 대역 외 서비스 지점 사이트 시스템 서버와 대역 외 관리 콘솔이 실행되는 컴퓨터에 대해 AMT 기반 컴퓨터를 인증하고 TLS(전송 계층 보안)를 사용하여 이들 사이에 전송되는 모든 데이터를 암호화합니다.|  
 |Intel AMT 802.1X 클라이언트 인증서|클라이언트 인증|**워크스테이션 인증**<br /><br /> 주체 이름을 **이 Active Directory 정보로 만듦**으로 설정한 후에 **주체 이름 형식** 에 **일반 이름**을 선택하고, DNS 이름의 선택을 취소하고 대체 주체 이름에 UPN(사용자 계정 이름)을 선택합니다.<br /><br /> 대역 외 관리 구성 요소 속성에서 지정하는 범용 보안 그룹에 이 인증서 템플릿에 대한 **읽기** 및 **등록** 권한을 부여해야 합니다.|**확장된 키 사용** 값에 **클라이언트 인증(1을 참조하세요.3을 참조하세요.6을 참조하세요.1을 참조하세요.5을 참조하세요.5을 참조하세요.7을 참조하세요.3을 참조하세요.2)**을 참조하세요.<br /><br /> 주체 이름 필드에는 AMT 기반 컴퓨터의 FQDN이 포함되고, 주체 대체 이름에는 UPN이 포함되어야 합니다.<br /><br /> 지원되는 최대 키 길이: 2,048비트|이 인증서는 컴퓨터에 있는 관리 컨트롤러의 비휘발성 RAM에 상주하며 Windows 사용자 인터페이스에서 확인할 수 없습니다.<br /><br /> 각 Intel AMT 기반 컴퓨터는 AMT 프로비전 시에 이 인증서를 요청할 수 있지만 AMT 프로비전 정보가 제거될 때 컴퓨터에서 이 인증서를 해지하지 않습니다.<br /><br /> AMT 기반 컴퓨터에 인증서가 설치된 후에는 이 인증서를 통해 AMT 기반 컴퓨터에 네트워크 액세스를 허용하도록 RADIUS 서버에 대해 AMT 기반 컴퓨터가 인증됩니다.|  
 |Microsoft Intune에서 등록한 모바일 장치|클라이언트 인증|해당 없음: Intune에서 이 인증서를 자동으로 만듭니다.|**확장된 키 사용** 값에 **클라이언트 인증(1.3.6.1.5.5.7.3.2)**이 포함됩니다.<br /><br /> 3가지 사용자 지정 확장을 통해 고객의 Intune 구독이 고유하게 식별됩니다.<br /><br /> 사용자는 등록 시 인증서 주체 값을 제공할 수 있습니다. 그러나 Intune에서 이 값을 사용하여 장치를 식별하지 않습니다.<br /><br /> 키 크기는 2,048비트이며 SHA-1 해시 알고리즘을 사용합니다.<br /><br /> **참고:** 이러한 설정은 변경할 수 없습니다. 이 정보는 정보 제공용으로만 제공됩니다.|이 인증서는 인증된 사용자가 Microsoft Intune을 사용하여 모바일 장치를 등록할 때 자동으로 요청되고 설치됩니다. 이로 인해 장치에 생성되는 인증서는 컴퓨터 저장소에 저장되어 등록된 모바일 장치를 Intune에 대해 인증합니다. 이후에 이 장치를 관리할 수 있습니다.<br /><br /> 인증서에 포함되는 사용자 지정 확장 때문에 인증이 조직에 설정된 Intune 구독으로 제한됩니다.|
-

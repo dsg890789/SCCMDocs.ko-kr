@@ -6,8 +6,7 @@ ms.date: 6/5/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 19539f4d-1667-4b4c-99a1-9995f12cf5f7
@@ -15,14 +14,12 @@ caps.latest.revision:
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f7cd9c71287d62c9f5d36e2f032bc2a6065572ae
 ms.openlocfilehash: 49eea15ea2888f8f93c33eb771c09147ba21529e
-ms.contentlocale: ko-kr
-ms.lasthandoff: 06/06/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 #  <a name="recover-a-configuration-manager-site"></a>Configuration Manager 사이트 복구
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -244,4 +241,3 @@ CD.Latest 폴더의 복사본에서 Configuration Manager 설치 마법사를 �
 보조 사이트에 없는 배포 지점의 경우 보조 사이트 복구 시 배포 지점을 다시 설치할 필요가 없습니다. 보조 사이트 복구 후에 사이트가 배포 지점과 자동으로 동기화됩니다.
 
 Configuration Manager 콘솔의 **사이트** 노드에서 **설치 상태 표시** 작업을 사용하여 보조 사이트 복구 상태를 확인할 수 있습니다.
-

@@ -6,22 +6,20 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8adbe2e2-de26-4a80-8bbd-a5f34b8bac79
-caps.latest.revision: 18
-caps.handback.revision: 0
+caps.latest.revision: "18"
+caps.handback.revision: "0"
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
 ms.openlocfilehash: bc7bb99bc526ed0bbaaad15fc9af39fa8b7c3893
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-applications-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 관리
 
@@ -56,4 +54,3 @@ System Center Configuration Manager에서 응용 프로그램을 배포하고 �
 ### <a name="next-steps"></a>다음 단계
 
 나중에 응용 프로그램을 변경하거나, 응용 프로그램을 제거하거나, 이미 배포된 응용 프로그램을 새 응용 프로그램으로 대체할 수 있습니다. 이러한 기능은 [System Center Configuration Manager를 사용하여 응용 프로그램 업데이트 및 사용 중지](../../apps/deploy-use/update-and-retire-applications.md)를 참조하세요.
-

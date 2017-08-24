@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ab1aecdd-d943-44f5-b0a9-e8fe7439e5d6
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: ba45f36c517114f7a8d2be8d9056e1b2a800dd4f
 ms.openlocfilehash: ffd66a4047ec253704e9772e2c3e3a4d9db7c46f
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-mac-computer-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 Mac 컴퓨터 응용 프로그램 만들기
 
@@ -214,9 +213,3 @@ Configuration Manager로 관리되는 Mac 컴퓨터용 응용 프로그램을 �
  Windows 컴퓨터에 대한 응용 프로그램 배포를 모니터링하는 것과 동일한 프로세스를 사용하여 Mac 컴퓨터에 대한 응용 프로그램 배포를 모니터링할 수 있습니다.  
 
  자세한 내용은 [응용 프로그램 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)을 참조하세요.  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
-

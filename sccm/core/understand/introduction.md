@@ -6,22 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3343eccf-bf09-41cd-9e68-03e893c7f904
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 916aac9a8f724e37044884cd73de5fea1f1a8f97
 ms.openlocfilehash: 76f907b17df0dd2f102e34ca3cfb3ffc813c0004
-ms.contentlocale: ko-kr
-ms.lasthandoff: 01/03/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="introduction-to-system-center-configuration-manager"></a>System Center Configuration Manager 소개
 
@@ -221,4 +218,3 @@ Configuration Manager에 대한 자세한 내용은 다음 항목과 이 항목�
 -   System Center Configuration Manager에 대한 개략적인 기술 개요는 [System Center Configuration Manager의 기본 사항](../../core/understand/fundamentals.md)을 참조하세요.  
 
 기본 개념에 대해 잘 알고 있으면 Configuration Manager를 배포하고 사용하는 데 도움이 되는 System Center Configuration Manager 문서를 사용합니다.  
-

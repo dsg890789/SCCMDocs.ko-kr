@@ -1,6 +1,6 @@
 ---
-title: "Konta używane przez program Configuration Manager | Dokumentacja firmy Microsoft"
-description: "Identyfikowania i zarządzania nim grup systemu Windows oraz kont w programie System Center Configuration Manager."
+title: "Configuration Manager에서 사용되는 계정 | Microsoft 문서"
+description: "System Center Configuration Manager에서 Windows 그룹과 계정을 식별하고 관리합니다."
 ms.custom: na
 ms.date: 2/9/2016
 ms.prod: configuration-manager
@@ -17,329 +17,329 @@ ms.author: brenduns
 manager: angrobe
 ms.openlocfilehash: a776667cc9f24bd4a468afea76e466c34ce66864
 ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
-ms.translationtype: MT
-ms.contentlocale: pl-PL
+ms.translationtype: HT
+ms.contentlocale: ko-KR
 ms.lasthandoff: 08/07/2017
 ---
-# <a name="accounts-used-in-system-center-configuration-manager"></a>Konta używane w programie System Center Configuration Manager
+# <a name="accounts-used-in-system-center-configuration-manager"></a>System Center Configuration Manager에 사용된 계정
 
-*Dotyczy: Program System Center Configuration Manager (Current Branch)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
-Poniższe informacje umożliwiają poznanie grup systemu Windows oraz kont używanych w programie System Center Configuration Manager, sposobu ich używania i wszystkich wymagań.  
+다음 정보를 사용하면 System Center Configuration Manager에서 사용하는 Windows 그룹과 계정, 사용 방법 및 요구 사항을 확인할 수 있습니다.  
 
-## <a name="windows-groups-that-configuration-manager-creates-and-uses"></a>Grupy systemu Windows tworzone i używane w programie Configuration Manager  
- Menedżer konfiguracji automatycznie tworzy, a w wielu przypadkach również automatycznie obsługuje, następujące grupy systemu Windows.  
+## <a name="windows-groups-that-configuration-manager-creates-and-uses"></a>Configuration Manager에서 만들고 사용하는 Windows 그룹  
+ Configuration Manager에서는 다음 Windows 그룹이 자동으로 만들어지고 대부분의 경우 자동으로 유지 관리됩니다.  
 
 > [!NOTE]  
->  W przypadku programu Configuration Manager tworzy grupę na komputerze, który jest członkiem domeny, grupa jest lokalną grupą zabezpieczeń. Jeżeli komputer jest kontrolerem domeny, grupa jest lokalną grupą domeny udostępnianą między wszystkimi kontrolerami w domenie.  
+>  Configuration Manager에서 도메인 구성원인 컴퓨터에 그룹을 만들면 이 그룹은 로컬 보안 그룹이 됩니다. 컴퓨터가 도메인 컨트롤러인 경우 이 그룹은 도메인의 모든 도메인 컨트롤러 간에 공유되는 도메인 로컬 그룹이 됩니다.  
 
 
 ### <a name="configmgrcollectedfilesaccess"></a>ConfigMgr_CollectedFilesAccess  
-Program Configuration Manager używa tej grupy, aby udzielić dostępu do wyświetlania plików zebranych w zapasach oprogramowania.  
+Configuration Manager에서는 소프트웨어 인벤토리를 통해 수집한 파일을 볼 수 있는 액세스 권한을 부여하는 데 이 그룹을 사용합니다.  
 
-Poniższa tabela zawiera listę dodatkowych szczegółów dotyczących tej grupy:  
+다음 표에는 이 그룹에 대한 추가 세부 정보가 나와 있습니다.  
 
-|Szczegóły|Więcej informacji|  
+|세부 정보|추가 정보|  
 |------------|----------------------|  
-|Typ i lokalizacja|Ta grupa jest lokalną grupą zabezpieczeń utworzoną na serwerze lokacji głównej.<br /><br /> Po odinstalowaniu lokacji ta grupa nie zostanie automatycznie usunięta. Należy go ręcznie usunąć.|  
-|Członkostwo|Menedżer konfiguracji automatycznie zarządza członkostwem grupy. Członkostwo obejmuje użytkowników administracyjnych z uprawnieniem **Wyświetl zgromadzone pliki** w zabezpieczanym obiekcie **Kolekcja** za pośrednictwem przypisanej roli zabezpieczeń.|  
-|Uprawnienia|Domyślnie ta grupa ma **odczytu** uprawnienia do folderu na serwerze lokacji: **%path%\Microsoft Configuration Manager\sinv.box\FileCol**.|  
+|유형 및 위치|이 그룹은 기본 사이트 서버에 만들어지는 로컬 보안 그룹입니다.<br /><br /> 사이트를 제거해도 이 그룹은 자동으로 제거되지 않습니다. 수동으로 이 그룹을 삭제해야 합니다.|  
+|Membership|Configuration Manager는 자동으로 그룹 멤버 자격을 관리합니다. 멤버 자격에는 할당된 보안 역할의 **컬렉션** 보안 개체에 대한 **수집된 파일 보기** 권한이 부여된 관리자가 포함됩니다.|  
+|사용 권한|기본적으로 이 그룹에는 사이트 서버의 **Read** 폴더에 대한 **%path%\Microsoft Configuration Manager\sinv.box\FileCol**권한이 있습니다.|  
 
 ### <a name="configmgrdviewaccess"></a>ConfigMgr_DViewAccess  
- Ta grupa jest lokalną grupą zabezpieczeń tworzącą na serwerze bazy danych lokacji lub serwerze repliki bazy danych programu Configuration Manager. Nie jest obecnie używany, ale jest zarezerwowany do użytku w przyszłości.  
+ 이 그룹은 Configuration Manager가 사이트 데이터베이스 서버 또는 데이터베이스 복제 서버에 만드는 로컬 보안 그룹입니다. 현재 사용되지는 않지만 나중에 사용하도록 예약되어 있습니다.  
 
-### <a name="configmgr-remote-control-users"></a>Użytkownicy funkcji zdalnego sterowania programu ConfigMgr  
- Narzędzia zdalne programu Configuration Manager użycie tej grupy do przechowywania kont i grup, które można skonfigurować na liście dozwolonych osób przeglądających, który jest przypisany do każdego klienta.  
+### <a name="configmgr-remote-control-users"></a>ConfigMgr 원격 제어 사용자  
+ Configuration Manager 원격 도구에서 이 그룹을 사용하여 각 클라이언트에 할당되는 허용된 뷰어 목록에서 설정한 계정과 그룹을 저장합니다.  
 
- Poniższa tabela zawiera listę dodatkowych szczegółów dotyczących tej grupy:  
+ 다음 표에는 이 그룹에 대한 추가 세부 정보가 나와 있습니다.  
 
-|Szczegóły|Więcej informacji|  
+|세부 정보|추가 정보|  
 |------------|----------------------|  
-|Typ i lokalizacja|Ta grupa jest lokalną grupą zabezpieczeń utworzoną w kliencie programu Configuration Manager po otrzymaniu przez klienta zasad, włączenia narzędzi zdalnych.<br /><br /> Po wyłączeniu narzędzi zdalnych na kliencie ta grupa nie zostanie automatycznie usunięta. Należy go ręcznie usunąć z każdego komputera klienckiego.|  
-|Członkostwo|Domyślnie w tej grupie nie ma żadnych członków. Użytkownicy zostaną automatycznie dodani do tej grupy po dodaniu ich do listy dozwolonych osób przeglądających.<br /><br /> Za pomocą listy dozwolonych osób przeglądających można zarządzać członkostwem w tej grupie bez konieczności bezpośredniego dodawania do niej użytkowników ani grup.<br /><br /> Oprócz dopuszczonych podglądów, użytkownik administracyjny musi mieć **zdalnego sterowania** uprawnienia do **kolekcji** obiektu. To uprawnienie można przypisać za pomocą roli zabezpieczeń zdalnego operatora narzędzi.|  
-|Uprawnienia|Domyślnie ta grupa nie ma uprawnień do dowolnej lokalizacji na komputerze. Jest on używany tylko do przechowywania listy dozwolonych osób przeglądających.|  
+|유형 및 위치|이 그룹은 클라이언트에서 원격 도구를 사용하는 정책을 받을 때 Configuration Manager 클라이언트에 만들어지는 로컬 보안 그룹입니다.<br /><br /> 원격 도구를 클라이언트에 사용하지 않도록 설정한 후에도 이 그룹은 자동으로 제거되지 않습니다. 각 클라이언트 컴퓨터에서 수동으로 삭제해야 합니다.|  
+|Membership|기본적으로 이 그룹에는 구성원이 없습니다. 허용된 뷰어 목록에 사용자를 추가하면 해당 사용자가 자동으로 이 그룹에 추가됩니다.<br /><br /> 이 그룹에 직접 사용자 또는 그룹을 추가하지 않고 허용된 뷰어 목록을 사용하여 이 그룹의 멤버 자격을 관리할 수 있습니다.<br /><br /> 관리자는 허용된 뷰어가 되어야 할 뿐 아니라 **컬렉션** 개체에 대한 **원격 제어** 권한도 있어야 합니다. 이 권한은 원격 도구 운영자 보안 역할을 사용하여 할당할 수 있습니다.|  
+|사용 권한|기본적으로 이 그룹에는 컴퓨터의 어떠한 위치에 대한 권한도 없습니다. 이 그룹은 허용된 뷰어 목록을 보유하는 데만 사용됩니다.|  
 
-### <a name="sms-admins"></a>Administratorzy programu SMS  
- Program Configuration Manager używa tej grupy, aby udzielić dostępu do dostawcy programu SMS za pomocą Instrumentacji zarządzania Windows (WMI). Dostęp do dostawcy programu SMS jest wymagany do wyświetlania i modyfikowania obiektów w konsoli programu Configuration Manager.  
+### <a name="sms-admins"></a>SMS Admins  
+ Configuration Manager는 이 그룹을 사용하여 WMI(Windows Management Instrumentation)를 통해 SMS 공급자에 대한 액세스 권한을 부여합니다. Configuration Manager 콘솔에서 개체를 보고 변경하려면 SMS 공급자에 대한 액세스 권한이 필요합니다.  
 
 > [!NOTE]  
->  Konfiguracja administracji opartej na rolach użytkownicy administracyjni Określa, które obiekty mogą wyświetlać i zarządzać nimi przy użyciu konsoli programu Configuration Manager.  
+>  관리자의 역할 기반 관리 구성에 따라 Configuration Manager 콘솔을 사용할 때 보고 관리할 수 있는 개체가 결정됩니다.  
 
- Poniższa tabela zawiera listę dodatkowych szczegółów dotyczących tej grupy:  
+ 다음 표에는 이 그룹에 대한 추가 세부 정보가 나와 있습니다.  
 
-|Szczegóły|Więcej informacji|  
+|세부 정보|추가 정보|  
 |------------|----------------------|  
-|Typ i lokalizacja|Ta grupa jest lokalną grupą zabezpieczeń utworzoną na każdym komputerze, który ma dostawcę programu SMS.<br /><br /> Po odinstalowaniu lokacji ta grupa nie zostanie automatycznie usunięta. Należy go ręcznie usunąć.|  
-|Członkostwo|Menedżer konfiguracji automatycznie zarządza członkostwem grupy. Domyślnie każdy użytkownik administracyjny w hierarchii oraz konto komputera serwera lokacji należą do grupy administratorów programu SMS na każdym komputerze dostawcy programu SMS w lokacji.|  
-|Uprawnienia|Prawa i uprawnienia administratorów programu SMS są ustawiane w przystawce MMC sterowania usługą WMI. Domyślnie grupa Administratorzy SMS ma przyznane uprawnienia **włączanie konta** i **Włączanie zdalne** w przestrzeni nazw Root\SMS. Użytkownicy uwierzytelnieni mają **wykonywanie metod**, **zapis dostawcy**, i **włączanie konta**.<br /><br /> Użytkownicy administracyjni używający zdalnej konsoli programu Configuration Manager wymagają uprawnień modelu DCOM zdalnej aktywacji na komputerze serwera lokacji oraz komputerze dostawcy programu SMS. W celu ułatwienia administracji zaleca się przyznanie tych uprawnień administratorom programu SMS, a nie bezpośrednio użytkownikom lub grupom. Aby uzyskać więcej informacji, zobacz sekcję [Konfigurowanie uprawnień modelu DCOM dotyczących zdalnych konsol programu Configuration Manager](../../../core/servers/manage/modify-your-infrastructure.md#BKMK_ConfigDCOMforRemoteConsole) w temacie [Modyfikowanie infrastruktury programu System Center Configuration Manager](../../../core/servers/manage/modify-your-infrastructure.md).|  
+|유형 및 위치|이 그룹은 SMS 공급자가 있는 각 컴퓨터에 만들어지는 로컬 보안 그룹입니다.<br /><br /> 사이트를 제거해도 이 그룹은 자동으로 제거되지 않습니다. 수동으로 이 그룹을 삭제해야 합니다.|  
+|Membership|Configuration Manager는 자동으로 그룹 멤버 자격을 관리합니다. 기본적으로 계층의 각 관리자와 사이트 서버 컴퓨터 계정이 사이트에 있는 각 SMS 공급자 컴퓨터에 대한 SMS Admins 그룹의 구성원입니다.|  
+|사용 권한|SMS Admins 권한은 WMI 컨트롤 MMC 스냅인에서 설정됩니다. 기본적으로 SMS Admins 그룹에는 Root\SMS 네임스페이스에 대한 **Enable Account** 및 **Remote Enable** 권한이 부여됩니다. 인증된 사용자에게는 **Execute Methods**, **Provider Write** 및 **Enable Account** 권한이 있습니다.<br /><br /> 원격 Configuration Manager 콘솔을 사용할 관리자에게는 사이트 서버 컴퓨터와 SMS 공급자 컴퓨터 모두에 대한 원격 활성화 DCOM 권한이 필요합니다. 이러한 권한을 사용자 또는 그룹에 직접 부여하지 않고 SMS Admins에 부여하여 관리를 단순화하는 것이 가장 좋습니다. 자세한 내용은 [Modify your System Center Configuration Manager infrastructure](../../../core/servers/manage/modify-your-infrastructure.md)(System Center Configuration Manager 인프라 수정) 항목의 [Configure DCOM permissions for remote Configuration Manager consoles](../../../core/servers/manage/modify-your-infrastructure.md#BKMK_ConfigDCOMforRemoteConsole)(원격 Configuration Manager 콘솔에 대한 DCOM 권한 구성) 섹션을 참조하세요.|  
 
-### <a name="smssitesystemtositeserverconnectionmpltsitecode"></a>SMS_SiteSystemToSiteServerConnection_MP_&lt;kod_lokacji\>  
- Punkty zarządzania programu Configuration Manager, sterowane zdalnie z serwera lokacji używają tej grupy do łączenia z bazą danych lokacji. Ta grupa umożliwia punktowi zarządzania dostęp do folderów skrzynki odbiorczej na serwerze lokacji i w bazie danych lokacji.  
+### <a name="smssitesystemtositeserverconnectionmpltsitecode"></a>SMS_SiteSystemToSiteServerConnection_MP_&lt;sitecode\>  
+ 사이트 서버에서 원격인 Configuration Manager 관리 지점은 이 그룹을 사용하여 사이트 데이터베이스에 연결합니다. 이 그룹은 사이트 서버 및 사이트 데이터베이스의 수신함 폴더에 대한 액세스 권한을 관리 지점에 제공합니다.  
 
- Poniższa tabela zawiera listę dodatkowych szczegółów dotyczących tej grupy:  
+ 다음 표에는 이 그룹에 대한 추가 세부 정보가 나와 있습니다.  
 
-|Szczegóły|Więcej informacji|  
+|세부 정보|추가 정보|  
 |------------|----------------------|  
-|Typ i lokalizacja|Ta grupa jest lokalną grupą zabezpieczeń utworzoną na każdym komputerze, który ma dostawcę programu SMS.<br /><br /> Po odinstalowaniu lokacji ta grupa nie zostanie automatycznie usunięta. Należy go ręcznie usunąć.|  
-|Członkostwo|Menedżer konfiguracji automatycznie zarządza członkostwem grupy. Domyślnie członkostwo obejmuje konta komputerów zdalnych, na których znajduje się punkt zarządzania dla danej lokacji.|  
-|Uprawnienia|Domyślnie ta grupa ma **odczytu**, **odczytu & wykonać**, i **wyświetlanie zawartości folderu** uprawnienia do **%path%\Microsoft Configuration Manager\inboxes** folderu na serwerze lokacji. Ta grupa ma dodatkowe uprawnienie **zapisu** w podfolderach należących do **skrzynek odbiorczych** w których punkt zarządzania zapisuje dane klienta.|  
+|유형 및 위치|이 그룹은 SMS 공급자가 있는 각 컴퓨터에 만들어지는 로컬 보안 그룹입니다.<br /><br /> 사이트를 제거해도 이 그룹은 자동으로 제거되지 않습니다. 수동으로 이 그룹을 삭제해야 합니다.|  
+|Membership|Configuration Manager는 자동으로 그룹 멤버 자격을 관리합니다. 기본적으로 사이트에 대한 관리 지점이 있는 원격 컴퓨터의 컴퓨터 계정이 멤버 자격에 포함됩니다.|  
+|사용 권한|기본적으로 이 그룹에는 사이트 서버의 **%path%\Microsoft Configuration Manager\inboxes** 폴더에 대한 **읽기**, **읽기 및 실행** 및 **폴더 내용 보기** 권한이 있습니다. 이 그룹은 관리 지점에서 클라이언트 데이터를 쓰는 **inboxes** 아래의 하위 폴더에 대한 추가 **쓰기** 권한도 갖습니다.|  
 
-### <a name="smssitesystemtositeserverconnectionsmsprovltsitecode"></a>SMS_SiteSystemToSiteServerConnection_SMSProv_&lt;kod_lokacji\>  
- Sterowane zdalnie z serwera lokacji komputery dostawcy programu SMS programu Configuration Manager, użyj tej grupy do łączenia się z serwerem lokacji.  
+### <a name="smssitesystemtositeserverconnectionsmsprovltsitecode"></a>SMS_SiteSystemToSiteServerConnection_SMSProv_&lt;sitecode\>  
+ 사이트 서버에서 원격인 Configuration Manager SMS 공급자 컴퓨터는 이 그룹을 사용하여 사이트 서버에 연결합니다.  
 
- Poniższa tabela zawiera listę dodatkowych szczegółów dotyczących tej grupy:  
+ 다음 표에는 이 그룹에 대한 추가 세부 정보가 나와 있습니다.  
 
-|Szczegóły|Więcej informacji|  
+|세부 정보|추가 정보|  
 |------------|----------------------|  
-|Typ i lokalizacja|Ta grupa jest lokalną grupą zabezpieczeń utworzoną na serwerze lokacji.<br /><br /> Po odinstalowaniu lokacji ta grupa nie zostanie automatycznie usunięta. Należy go ręcznie usunąć.|  
-|Członkostwo|Menedżer konfiguracji automatycznie zarządza członkostwem grupy. Domyślnie członkostwo obejmuje konto komputera lub konto użytkownika domeny, który służy do łączenia się z serwerem lokacji z każdego komputera zdalnego, z zainstalowanym dostawcą programu SMS dla lokacji.|  
-|Uprawnienia|Domyślnie ta grupa ma **odczytu**, **odczytu & wykonać**, i **wyświetlanie zawartości folderu** uprawnienia do **%path%\Microsoft Configuration Manager\inboxes** folderu na serwerze lokacji. Ta grupa ma dodatkowe uprawnienie **zapisu** lub uprawnienia **zapisu** i **Modyfikuj** w podfolderach należących do **skrzynek odbiorczych** do których dostawca programu SMS wymaga dostępu.<br /><br /> Ta grupa ma również **odczytu**, **odczytu & wykonać**, **wyświetlanie zawartości folderu**, **zapisu**, i **Modyfikuj** uprawnienia do folderów poniżej **%path%\Microsoft Configuration Manager\OSD\boot** i **odczytu** uprawnienia do folderów poniżej **%path%\Microsoft Configuration Manager\OSD\Bin** na serwerze lokacji.|  
+|유형 및 위치|이 그룹은 사이트 서버에 만들어지는 로컬 보안 그룹입니다.<br /><br /> 사이트를 제거해도 이 그룹은 자동으로 제거되지 않습니다. 수동으로 이 그룹을 삭제해야 합니다.|  
+|Membership|Configuration Manager는 자동으로 그룹 멤버 자격을 관리합니다. 기본적으로 사이트의 SMS 공급자가 설치된 각 원격 컴퓨터에서 사이트 서버에 연결하는 데 사용되는 컴퓨터 계정이나 도메인 사용자 계정이 멤버 자격에 포함됩니다.|  
+|사용 권한|기본적으로 이 그룹에는 사이트 서버의 **%path%\Microsoft Configuration Manager\inboxes** 폴더에 대한 **읽기**, **읽기 및 실행** 및 **폴더 내용 보기** 권한이 있습니다. 이 그룹에는 SMS 공급자가 액세스해야 하는 **inboxes** 아래의 하위 폴더에 대한 **쓰기** 및 **수정** 권한이나 **쓰기** 추가 권한이 있습니다.<br /><br /> 이 그룹에는 **%path%\Microsoft Configuration Manager\OSD\boot** 아래의 폴더에 대한 **읽기**, **읽기 및 실행**, **폴더 내용 보기**, **쓰기** 및 **수정** 권한과, 사이트 서버의 **%path%\Microsoft Configuration Manager\OSD\Bin** 아래에 있는 폴더에 대한 **읽기** 권한도 있습니다.|  
 
-### <a name="smssitesystemtositeserverconnectionstatltsitecode"></a>SMS_SiteSystemToSiteServerConnection_Stat_&lt;kod_lokacji\>  
- Menedżer wysyłania plików na komputerach systemu zdalnego lokacji programu Configuration Manager używa tej grupy do łączenia się z serwerem lokacji.  
+### <a name="smssitesystemtositeserverconnectionstatltsitecode"></a>SMS_SiteSystemToSiteServerConnection_Stat_&lt;sitecode\>  
+ Configuration Manager 원격 사이트 시스템 컴퓨터의 파일 발송 관리자에서 이 그룹을 사용하여 사이트 서버에 연결합니다.  
 
- Poniższa tabela zawiera listę dodatkowych szczegółów dotyczących tej grupy:  
+ 다음 표에는 이 그룹에 대한 추가 세부 정보가 나와 있습니다.  
 
-|Szczegóły|Więcej informacji|  
+|세부 정보|추가 정보|  
 |------------|----------------------|  
-|Typ i lokalizacja|Ta grupa jest lokalną grupą zabezpieczeń utworzoną na serwerze lokacji.<br /><br /> Po odinstalowaniu lokacji ta grupa nie zostanie automatycznie usunięta. Należy go ręcznie usunąć.|  
-|Członkostwo|Menedżer konfiguracji automatycznie zarządza członkostwem grupy. Domyślnie członkostwo obejmuje konto komputera lub konto użytkownika domeny używane do łączenia się z serwerem lokacji z każdego komputera zdalnego systemu lokacji z uruchomionym Menedżerem wysyłania plików.|  
-|Uprawnienia|Domyślnie ta grupa ma **odczytu**, **odczytu & wykonać**, i **wyświetlanie zawartości folderu** uprawnienia do **%path%\Microsoft Configuration Manager\inboxes** folderze i jego podfolderach należących do tej lokalizacji na serwerze lokacji. Ta grupa ma dodatkowe uprawnienia **zapisu** i **Modyfikuj** do **%path%\Microsoft Configuration Manager\inboxes\statmgr.box** folderu na serwerze lokacji.|  
+|유형 및 위치|이 그룹은 사이트 서버에 만들어지는 로컬 보안 그룹입니다.<br /><br /> 사이트를 제거해도 이 그룹은 자동으로 제거되지 않습니다. 수동으로 이 그룹을 삭제해야 합니다.|  
+|Membership|Configuration Manager는 자동으로 그룹 멤버 자격을 관리합니다. 기본적으로 파일 발송 관리자를 실행하는 각 원격 사이트 시스템 컴퓨터에서 사이트 서버에 연결하는 데 사용되는 컴퓨터 계정이나 도메인 사용자 계정이 멤버 자격에 포함됩니다.|  
+|사용 권한|기본적으로 이 그룹에는 사이트 서버의 **%path%\Microsoft Configuration Manager\inboxes** 폴더 및 해당 위치 아래의 하위 폴더에 대한 **읽기**, **읽기 및 실행** 및 **폴더 내용 보기** 권한이 있습니다. 이 그룹에는 사이트 서버의 **%path%\Microsoft Configuration Manager\inboxes\statmgr.box** 폴더에 대한 **쓰기** 및 **수정** 추가 권한이 있습니다.|  
 
-### <a name="smssitetositeconnectionltsitecode"></a>SMS_SiteToSiteConnection_&lt;kod_lokacji\>  
- Configuration Manager używa tej grupy, aby włączyć replikację opartą na plikach między lokacjami w hierarchii. Dla każdej lokacji zdalnej, która bezpośrednio przesyła pliki do tej witryny, ta grupa ma konta skonfigurowane jako **konta replikacji plików**.  
+### <a name="smssitetositeconnectionltsitecode"></a>SMS_SiteToSiteConnection_&lt;sitecode\>  
+ Configuration Manager에서 이 그룹을 사용하여 계층의 사이트 간에 파일 기반 복제를 사용하도록 설정합니다. 이 사이트로 직접 파일을 전송하는 각 원격 사이트에 대한 **파일 복제 계정**으로 설정된 계정이 이 그룹에 포함됩니다.  
 
- Poniższa tabela zawiera listę dodatkowych szczegółów dotyczących tej grupy:  
+ 다음 표에는 이 그룹에 대한 추가 세부 정보가 나와 있습니다.  
 
-|Szczegóły|Więcej informacji|  
+|세부 정보|추가 정보|  
 |------------|----------------------|  
-|Typ i lokalizacja|Ta grupa jest lokalną grupą zabezpieczeń utworzoną na serwerze lokacji.|  
-|Członkostwo|Po zainstalowaniu nowej lokacji podrzędnej względem innej lokacji programu Configuration Manager automatycznie dodaje konto komputera nowej lokacji do grupy na serwerze lokacji nadrzędnej. Menedżer konfiguracji również dodaje konto komputera lokacji nadrzędnej do grupy na serwerze nowej lokacji. Jeśli określisz inne konto transferów opartych na plikach, należy dodać to konto do grupy na docelowym serwerze lokacji.<br /><br /> Po odinstalowaniu lokacji ta grupa nie zostanie automatycznie usunięta. Należy go ręcznie usunąć.|  
-|Uprawnienia|Domyślnie ta grupa ma **Pełna kontrola** do **%path%\Microsoft Configuration Manager\inboxes\despoolr.box\receive** folderu.|  
+|유형 및 위치|이 그룹은 사이트 서버에 만들어지는 로컬 보안 그룹입니다.|  
+|Membership|새 사이트를 다른 사이트의 자식으로 설치하면 Configuration Manager에서 자동으로 새 사이트의 컴퓨터 계정을 부모 사이트 서버의 그룹에 추가합니다. Configuration Manager는 또한 부모 사이트의 컴퓨터 계정을 새 사이트 서버의 그룹에 추가합니다. 파일 기반 전송을 위해 다른 계정을 지정하는 경우 해당 계정을 대상 사이트 서버의 이 그룹에 추가하세요.<br /><br /> 사이트를 제거해도 이 그룹은 자동으로 제거되지 않습니다. 수동으로 이 그룹을 삭제해야 합니다.|  
+|사용 권한|기본적으로 이 그룹에는 사이트 서버의 **%path%\Microsoft Configuration Manager\inboxes\despoolr.box\receive** 폴더에 대한 **모든 권한** 이 있습니다.|  
 
-## <a name="accounts-that-configuration-manager-uses"></a>Konta używane w programie Configuration Manager  
- Można skonfigurować następujące konta programu Configuration Manager.  
+## <a name="accounts-that-configuration-manager-uses"></a>Configuration Manager에서 사용하는 계정  
+ Configuration Manager에 대한 다음 계정을 설정할 수 있습니다.  
 
-### <a name="active-directory-group-discovery-account"></a>Konto odnajdywania grup usługi Active Directory  
- **Konto odnajdywania grup usługi Active Directory** służy do odnajdywania lokalnych, globalnych i uniwersalnych grup zabezpieczeń, członkostwa w tych grupach oraz członkostwa w grupach dystrybucyjnych z określonych lokalizacji w usługach domenowych w usłudze Active Directory. Grupy dystrybucyjne nie są odnajdywane jako zasoby grupy.  
+### <a name="active-directory-group-discovery-account"></a>Active Directory 그룹 검색 계정  
+ **Active Directory 그룹 검색 계정**은 Active Directory Domain Services의 지정된 위치에서 로컬, 글로벌 및 유니버설 보안 그룹과 이러한 그룹 내의 멤버 자격, 그리고 배포 그룹 내의 멤버 자격을 검색하는 데 사용됩니다. 배포 그룹은 그룹 리소스로 검색되지 않습니다.  
 
- To konto może być kontem komputera serwera lokacji, który przeprowadza odnajdywanie, lub kontem użytkownika systemu Windows. Musi mieć uprawnienie dostępu **Odczyt** do lokalizacji usługi Active Directory określonych do odnajdywania.  
+ 이 계정은 검색을 실행하는 사이트 서버의 컴퓨터 계정이나 Windows 사용자 계정 중 하나일 수 있습니다. 이 계정에는 검색을 위해 지정된 Active Directory 위치에 대한 **읽기** 액세스 권한이 있어야 합니다.  
 
-### <a name="active-directory-system-discovery-account"></a>Konto odnajdywania systemu usługi Active Directory  
- **Konto odnajdywania systemu usługi Active Directory** służy do odnajdywania komputerów z określonych lokalizacji w Usługach domenowych Active Directory.  
+### <a name="active-directory-system-discovery-account"></a>Active Directory 시스템 검색 계정  
+ **Active Directory 시스템 검색 계정** 은 Active Directory Domain Services의 지정된 위치에서 컴퓨터를 검색하는 데 사용됩니다.  
 
- To konto może być kontem komputera serwera lokacji, który przeprowadza odnajdywanie, lub kontem użytkownika systemu Windows. Musi mieć uprawnienie dostępu **Odczyt** do lokalizacji usługi Active Directory określonych do odnajdywania.  
+ 이 계정은 검색을 실행하는 사이트 서버의 컴퓨터 계정이나 Windows 사용자 계정 중 하나일 수 있습니다. 이 계정에는 검색을 위해 지정된 Active Directory 위치에 대한 **읽기** 액세스 권한이 있어야 합니다.  
 
-### <a name="active-directory-user-discovery-account"></a>Konto odnajdywania użytkowników usługi Active Directory  
- **Konto odnajdywania użytkowników usługi Active Directory** służy do odnajdywania kont użytkowników z określonych lokalizacji w usługach domenowych Active Directory.  
+### <a name="active-directory-user-discovery-account"></a>Active Directory 사용자 검색 계정  
+ **Active Directory 사용자 검색 계정** 은 Active Directory Domain Services의 지정된 위치에서 사용자 계정을 검색하는 데 사용됩니다.  
 
- To konto może być kontem komputera serwera lokacji, który przeprowadza odnajdywanie, lub kontem użytkownika systemu Windows. Musi mieć uprawnienie dostępu **Odczyt** do lokalizacji usługi Active Directory określonych do odnajdywania.  
+ 이 계정은 검색을 실행하는 사이트 서버의 컴퓨터 계정이나 Windows 사용자 계정 중 하나일 수 있습니다. 이 계정에는 검색을 위해 지정된 Active Directory 위치에 대한 **읽기** 액세스 권한이 있어야 합니다.  
 
-### <a name="active-directory-forest-account"></a>Konto lasu usługi Active Directory  
- **Konto lasu usługi Active Directory** służy do odnajdywania infrastruktury sieci z lasów usługi Active Directory. Centralne Lokacje administracyjne i lokacje główne również używać do publikowania danych lokacji w usługach domenowych Active Directory dla lasu.  
+### <a name="active-directory-forest-account"></a>Active Directory 포리스트 계정  
+ **Active Directory 포리스트 계정**은 Active Directory 포리스트에서 네트워크 인프라를 검색하는 데 사용됩니다. 중앙 관리 사이트와 기본 사이트에서도 포리스트에 대한 Active Directory Domain Services에 사이트 데이터를 게시하는 데 이 계정을 사용합니다.  
 
 > [!NOTE]  
->  Lokacje dodatkowe zawsze publikują dane w usłudze Active Directory przy użyciu konta komputera serwera lokacji dodatkowej.  
+>  보조 사이트에서는 Active Directory에 게시하는 데 항상 보조 사이트 서버 컴퓨터 계정을 사용합니다.  
 
 > [!NOTE]  
->  Konto lasu usługi Active Directory musi być kontem globalnym do odnajdywania i publikowania w niezaufanych lasach. Jeśli nie używasz konta komputera serwera lokacji, można wybrać tylko konto globalne.  
+>  신뢰할 수 없는 포리스트를 검색하고 게시하려면 Active Directory 포리스트 계정이 글로벌 계정이어야 합니다. 사이트 서버의 컴퓨터 계정을 사용하지 않는 경우 글로벌 계정만 선택할 수 있습니다.  
 
- To konto musi mieć uprawnienia do **odczytu** w każdym lesie usługi Active Directory, w którym ma zostać przeprowadzone odnajdywanie infrastruktury sieci.  
+ 이 계정은 네트워크 인프라를 검색할 각 Active Directory 포리스트에 대해 **읽기** 권한이 있어야 합니다.  
 
- To konto musi mieć uprawnienia **Pełna kontrola** w kontenerze zarządzania systemem oraz wszystkie jego obiekty podrzędne w każdym lesie usługi Active Directory, w którym będą publikowane dane lokacji.  
+ 또한, 사이트 데이터를 게시할 각 Active Directory 포리스트의 System Management 컨테이너와 해당 컨테이너의 모든 자식 개체에 대해 **모든 권한** 이 있어야 합니다.  
 
-### <a name="asset-intelligence-synchronization-point-proxy-server-account"></a>Konto serwera proxy punktu synchronizacji analizy zasobów  
- Punkt synchronizacji analizy zasobów używa **konto synchronizacji Asset Intelligence punktu serwera Proxy serwera** dostęp do Internetu za pośrednictwem serwera proxy serwera lub zapory wymagających dostępu uwierzytelnionego.  
+### <a name="asset-intelligence-synchronization-point-proxy-server-account"></a>Asset Intelligence 동기화 지점 프록시 서버 계정  
+ Asset Intelligence 동기화 지점에서는 **Asset Intelligence 동기화 지점 프록시 서버 계정**을 사용하여 프록시 서버를 통하거나 인증된 액세스가 필요한 방화벽을 통해 인터넷에 액세스합니다.  
 
 > [!IMPORTANT]  
->  Określ konto, które ma najniższe możliwe uprawnienia do wymaganego serwera proxy lub zapory.  
+>  필요한 프록시 서버나 방화벽에 대해 최소한의 권한이 있는 계정을 지정합니다.  
 
-### <a name="certificate-registration-point-account"></a>Konto punktu rejestracji certyfikatu  
- **Konto punktu rejestracji certyfikatu** łączy punkt rejestracji certyfikatu z bazą danych programu Configuration Manager. Domyślnie jest używane konto komputera serwera punktu rejestracji certyfikatu, ale można skonfigurować konto użytkownika zamiast tego. Konto użytkownika należy zawsze określić, gdy punkt rejestracji certyfikatu znajduje się w niezaufanej domenie na serwerze lokacji. To konto wymaga jedynie **odczytu** dostęp do bazy danych lokacji, ponieważ systemu komunikatów o stanie obsługuje zadania zapisu.  
+### <a name="certificate-registration-point-account"></a>인증서 등록 지점 계정  
+ **인증서 등록 지점 계정**에서 인증 등록 지점을 Configuration Manager 데이터베이스에 연결합니다. 기본적으로 인증서 등록 지점 서버의 컴퓨터 계정이 사용되지만 대신 사용자 계정을 설정할 수 있습니다. 인증서 등록 지점이 사이트 서버에서 트러스트되지 않은 도메인 안에 있는 경우에는 사용자 계정을 지정해야 합니다. 쓰기 작업은 상태 메시지 시스템에서 처리하므로 이 계정에는 사이트 데이터베이스에 대한 **읽기** 권한만 필요합니다.  
 
-### <a name="capture-operating-system-image-account"></a>Konto przechwytywania obrazu systemu operacyjnego  
- Program Configuration Manager używa **konta przechwytywania obrazu systemu operacyjnego** dostępu do folderu, w którym są przechowywane obrazy przechwycone podczas wdrażania systemów operacyjnych. To konto jest wymagane w przypadku dodania do sekwencji zadań kroku **Przechwyć obraz systemu operacyjnego**.  
+### <a name="capture-operating-system-image-account"></a>운영 체제 이미지 캡처 계정  
+ Configuration Manager는 **운영 체제 이미지 캡처 계정**을 사용하여 운영 체제를 배포할 때 캡처된 이미지가 저장된 폴더에 액세스합니다. 이 계정은 **운영 체제 이미지 캡처** 단계를 작업 순서에 추가하는 경우에 필요합니다.  
 
- Konto musi mieć uprawnienia **Odczyt** i **Zapis** w udziale sieciowym, w którym jest przechowywany przechwycony obraz.  
+ 이 계정에는 캡처된 이미지가 저장되는 네트워크 공유에 대한 **읽기** 및 **쓰기** 권한이 있어야 합니다.  
 
- Jeśli hasło do konta zostanie zmienione w systemie Windows, należy zaktualizować sekwencję zadań przy użyciu nowego hasła. Klienta programu Configuration Manager odbierze nowe hasło, przy następnym pobraniu zasad klienta.  
+ Windows에서 계정 암호가 변경되면 새 암호로 작업 순서를 업데이트해야 합니다. Configuration Manager 클라이언트는 다음에 클라이언트 정책을 다운로드할 때 새 암호를 받습니다.  
 
- W przypadku używania tego konta można utworzyć jedno konto użytkownika domeny z minimalnymi uprawnienia dostępu do wymaganych zasobów sieciowych i używać go w ramach wszystkich kont sekwencji zadań.  
+ 이 계정을 사용하는 경우 필요한 네트워크 리소스에 액세스하고 모든 작업 순서 계정에 사용할 수 있도록 최소 권한이 있는 단일 도메인 사용자 계정을 생성할 수 있습니다.  
 
 > [!IMPORTANT]  
->  Nie należy przypisywać interaktywnych uprawnień logowania do tego konta.  
+>  이 계정에 대화형 로그인 권한을 할당하지 마세요.  
 >   
->  Nie używaj na tym koncie konta dostępu do sieci.  
+>  이 계정에 대해 네트워크 액세스 계정을 사용하지 마세요.  
 
-### <a name="client-push-installation-account"></a>Konto instalacji wypychanej klienta  
- **Konta instalacji wypychanej klienta** służy do łączenia się z komputerami i zainstaluj oprogramowanie klienta programu Configuration Manager, jeżeli wdrażanie klientów przy użyciu instalacji wypychanej klienta. Jeśli takie konto nie zostanie określone, do zainstalowania oprogramowania klienta będzie używane konto serwera lokacji.  
+### <a name="client-push-installation-account"></a>클라이언트 강제 설치 계정  
+ **클라이언트 강제 설치 계정**은 클라이언트 강제 설치를 사용하여 클라이언트를 배포하는 경우 컴퓨터에 연결하고 Configuration Manager 클라이언트 소프트웨어를 설치하는 데 사용됩니다. 이 계정이 지정되지 않으면 클라이언트 소프트웨어를 설치하는 데 사이트 서버 계정이 사용됩니다.  
 
- To konto musi należeć do lokalnej **Administratorzy** na komputerach, na którym zostanie zainstalowana oprogramowanie klienta programu Configuration Manager. To konto nie wymaga **administratora domeny** praw.  
+ 이 계정은 Configuration Manager 클라이언트 소프트웨어가 설치될 컴퓨터에서 로컬 **관리자** 그룹의 구성원이어야 합니다. 이 계정에는 **도메인 관리자** 권한이 필요하지 않습니다.  
 
- Można określić co najmniej jeden Push konta instalacji klienta, które programu Configuration Manager kolejno próbuje użyć aż do znalezienia właściwego konta.  
+ 클라이언트 강제 설치 계정은 하나 이상 지정할 수 있으며, Configuration Manager에서 하나의 계정이 성공할 때까지 차례로 사용됩니다.  
 
 > [!TIP]  
->  Aby bardziej wydajnie zarządzać aktualizacjami konta w dużych wdrożeniach usługi Active Directory, Utwórz nowe konto o innej nazwie, a następnie dodaj nowe konto do listy konta instalacji wypychanej klienta w programie Configuration Manager. Należy przewidzieć czas wystarczający dla usług domenowych Active Directory na replikację nowego konta, a następnie usuń stare konto z programu Configuration Manager i usługi domenowe Active Directory.  
+>  대규모 Active Directory 배포에서 계정 업데이트를 더욱 효과적으로 구성하려면 다른 이름으로 새 계정을 만든 다음 이 계정을 Configuration Manager에서 클라이언트 강제 설치 계정의 목록에 추가합니다. 충분한 시간을 두고 Active Directory Domain Services에서 새 계정을 복제할 때까지 기다린 다음 Configuration Manager 및 Active Directory Domain Services에서 이전 계정을 제거합니다.  
 
 > [!IMPORTANT]  
->  Nie przyznawaj temu kontu w prawo, aby zalogować się lokalnie.  
+>  이 계정에 로컬 로그인 권한을 부여하지 마세요.  
 
-### <a name="enrollment-point-connection-account"></a>Konto połączenia punktu rejestracyjnego  
- **Konto połączenia punktu rejestracyjnego** łączy punkt rejestracyjny z bazą danych lokacji programu Configuration Manager. Domyślnie jest używane konto komputera punktu rejestracyjnego, ale można skonfigurować konto użytkownika zamiast tego. Konto użytkownika należy zawsze określić, gdy punkt rejestracyjny znajduje się w niezaufanej domenie na serwerze lokacji. To konto wymaga **odczytu** i **zapisu** dostęp do bazy danych lokacji.  
+### <a name="enrollment-point-connection-account"></a>등록 지점 연결 계정  
+ **등록 지점 연결 계정**을 사용하여 등록 지점을 Configuration Manager 사이트 데이터베이스에 연결합니다. 기본값으로 등록 지점의 컴퓨터 계정이 사용되지만 대신 사용자 계정을 설정할 수도 있습니다. 등록 지점이 사이트 서버에서 트러스트되지 않은 도메인 안에 있는 경우에는 사용자 계정을 지정해야 합니다. 이 계정에는 사이트 데이터베이스에 대한 **읽기** 및 **쓰기** 권한이 필요합니다.  
 
-### <a name="exchange-server-connection-account"></a>Konto połączenia serwera Exchange  
- **Konto połączenia serwera Exchange** łączy serwer lokacji z określonym komputerem serwera Exchange w celu znalezienia urządzeń przenośnych łączących się z tym serwerem i zarządzania nimi. To konto wymaga poleceń cmdlet środowiska PowerShell w ramach serwera Exchange, które zapewniają wymagane uprawnienia na komputerze serwera Exchange. Aby uzyskać więcej informacji na temat poleceń cmdlet, zobacz [Zarządzanie urządzeniami przenośnymi za pomocą programu System Center Configuration Manager i Exchange](../../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md).  
+### <a name="exchange-server-connection-account"></a>Exchange Server 연결 계정  
+ **Exchange Server 연결 계정** 은 사이트 서버를 지정된 Exchange Server 컴퓨터에 연결하여 Exchange Server에 연결되는 모바일 장치를 검색 및 관리합니다. 이 계정에는 Exchange Server 컴퓨터에 대한 필수 권한을 제공하는 Exchange PowerShell cmdlet이 필요합니다. cmdlet에 대한 자세한 내용은 [System Center Configuration Manager와 Exchange를 사용하여 모바일 장치 관리](../../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md)를 참조하세요.  
 
-### <a name="exchange-server-connector-proxy-server-account"></a>Konto serwera proxy łącznika serwera Exchange  
- Łącznik serwera Exchange używa **konta serwera Proxy łącznika serwera Exchange** dostęp do Internetu za pośrednictwem serwera proxy serwera lub zapory wymagających dostępu uwierzytelnionego.  
-
-> [!IMPORTANT]  
->  Określ konto, które ma najniższe możliwe uprawnienia do wymaganego serwera proxy lub zapory.  
-
-### <a name="management-point-connection-account"></a>Konto połączenia punktu zarządzania  
- **Konto połączenia punktu zarządzania** służy do łączenia punktu zarządzania z bazą danych lokacji programu Configuration Manager, dzięki czemu umożliwia wysyłanie i pobieranie informacji dotyczących klientów. Domyślnie jest używane konto komputera punktu zarządzania, ale można skonfigurować konto użytkownika zamiast tego. Konto użytkownika należy zawsze określić, gdy punkt zarządzania znajduje się w niezaufanej domenie na serwerze lokacji.  
-
- Utwórz konto z niskimi uprawnieniami, konta lokalnego na komputerze z uruchomionym programem Microsoft SQL Server.  
+### <a name="exchange-server-connector-proxy-server-account"></a>Exchange Server 커넥터 프록시 서버 계정  
+ Exchange Server 커넥터는 **Exchange Server 커넥터 프록시 서버 계정**을 사용하여 프록시 서버를 통하거나 인증된 액세스가 필요한 방화벽을 통해 인터넷에 액세스합니다.  
 
 > [!IMPORTANT]  
->  Udziela praw interakcyjne logowanie do tego konta.  
+>  필요한 프록시 서버나 방화벽에 대해 최소한의 권한이 있는 계정을 지정합니다.  
 
-### <a name="multicast-connection-account"></a>Konto połączenia multiemisji  
- Punkty dystrybucji, które są skonfigurowane do użycia multiemisji **konto połączenia multiemisji** odczytać informacji z bazy danych lokacji. Domyślnie jest używane konto komputera punktu dystrybucji, ale można skonfigurować konto użytkownika zamiast tego. Konto użytkownika należy zawsze określić, gdy baza danych lokacji znajduje się w niezaufanym lesie. Jeżeli na przykład centrum danych ma sieć obwodową w lesie innym niż serwer lokacji i baza danych lokacji, tego konta można używać do odczytywania informacji o multiemisji z bazy danych lokacji.  
+### <a name="management-point-connection-account"></a>관리 지점 연결 계정  
+ **관리 지점 연결 계정**은 관리 지점을 Configuration Manager 사이트 데이터베이스에 연결하여 클라이언트 관련 정보를 보내고 검색할 수 있도록 하는 데 사용됩니다. 기본값으로 관리 지점의 컴퓨터 계정이 사용되지만 대신 사용자 계정을 설정할 수도 있습니다. 관리 지점이 사이트 서버에서 트러스트되지 않은 도메인 안에 있는 경우에는 사용자 계정을 지정해야 합니다.  
 
- Jeśli tworzysz konto, należy go utworzyć jako z niskimi uprawnieniami, konta lokalnego na komputerze z uruchomionym programem Microsoft SQL Server.  
+ 이 계정은 Microsoft SQL Server를 실행하는 컴퓨터에서 낮은 권한의 로컬 계정으로 만들어야 합니다.  
 
 > [!IMPORTANT]  
->  Udziela praw interakcyjne logowanie do tego konta.  
+>  이 계정에 대화형 로그인 권한을 부여 하지 마세요.  
 
-### <a name="network-access-account"></a>Konto dostępu do sieci  
- Używane przez komputery klienckie **konta dostępu do sieci** kiedy nie mogą użyć lokalnego konta komputera na dostęp do zawartości w punktach dystrybucji. Dotyczy to na przykład komputerów i klientów grupy roboczej z niezaufanych domen. To konto może być również podczas wdrażania systemu operacyjnego, gdy komputer, który jest instalowany system operacyjny nie ma jeszcze konta komputera w domenie.  
+### <a name="multicast-connection-account"></a>멀티캐스트 연결 계정  
+ 멀티캐스트용으로 설정된 배포 지점에서는 **멀티캐스트 연결 계정**을 사용하여 사이트 데이터베이스의 정보를 읽습니다. 기본값으로 배포 지점의 컴퓨터 계정이 사용되지만 대신 사용자 계정을 설정할 수도 있습니다. 사이트 데이터베이스가 트러스트되지 않은 포리스트 안에 있는 경우에는 사용자 계정을 지정해야 합니다. 예를 들어 데이터 센터에 사이트 서버 및 사이트 데이터베이스와는 다른 포리스트에 경계 네트워크가 있는 경우, 이 계정을 사용하여 사이트 데이터베이스에서 멀티캐스트 정보를 읽을 수 있습니다.  
+
+ 이 계정을 만들려면 Microsoft SQL Server를 실행하는 컴퓨터에서 낮은 권한의 로컬 계정으로 만들어야 합니다.  
+
+> [!IMPORTANT]  
+>  이 계정에 대화형 로그인 권한을 부여 하지 마세요.  
+
+### <a name="network-access-account"></a>네트워크 액세스 계정  
+ 클라이언트 컴퓨터에서는 배포 지점의 콘텐츠에 액세스하는 데 자체 로컬 컴퓨터 계정을 사용할 수 없는 경우에 **네트워크 액세스 계정**을 사용합니다. 그 예로 트러스트되지 않은 도메인의 작업 그룹 클라이언트 및 컴퓨터를 들 수 있습니다. 또한 이 계정은 운영 체제를 설치하는 컴퓨터에 아직 도메인의 컴퓨터 계정이 없을 때 운영 체제 배포 과정에서 사용될 수 있습니다.  
 
 > [!NOTE]  
->  Konto dostępu do sieci nigdy nie jest używana jako kontekst zabezpieczeń do uruchamiania programów, instalowania aktualizacji oprogramowania lub uruchamiania sekwencji zadań. Jest on używany tylko w przypadku uzyskiwania dostępu do zasobów w sieci.  
+>  네트워크 액세스 계정은 프로그램을 실행하거나 소프트웨어 업데이트를 설치하거나 작업 순서를 실행하기 위한 보안 컨텍스트로 절대 사용되지 않습니다. 이 계정은 네트워크의 리소스를 액세스하기 위한 목적으로만 사용됩니다.  
 
- Przyznaj temu kontu najniższe odpowiednie uprawnienia w zawartości wymaganej przez klienta w celu uzyskania dostępu do oprogramowania. Konto musi mieć uprawnienie **Uzyskiwanie dostępu do tego komputera z sieci** w punkcie dystrybucji lub na innym serwerze z zawartością pakietu. Można skonfigurować maksymalnie 10 kont dostępu do sieci na lokację.  
+ 이 계정에 클라이언트가 소프트웨어에 액세스하는 데 필요한 수준으로 콘텐츠에 대한 적절한 최소 권한을 부여합니다. 이 계정에는 패키지 콘텐츠가 저장된 배포 지점 또는 다른 서버에 대한 **네트워크에서 이 컴퓨터 액세스** 권한이 있어야 합니다. 각 사이트에 대해 최대 10개의 네트워크 액세스 계정을 구성할 수 있습니다.  
 
 > [!WARNING]  
->  Gdy program Configuration Manager próbuje pobrać zawartość przy użyciu konta o nazwie computername$ i operacja nie powiedzie się, automatycznie ponownie próbuje użyć konta dostępu do sieci, nawet jeśli poprzednia próba zakończyła się niepowodzeniem.  
+>  Configuration Manager는 computername$ 계정을 사용하여 콘텐츠를 다운로드하는 데 실패하면 자동으로 네트워크 액세스 계정으로 다시 시도하며, 이는 이전에 시도했으나 실패한 경우에도 마찬가지입니다.  
 
- Utwórz konto w dowolnej domenie, która zapewni wymagany dostęp do zasobów. Konto dostępu do sieci zawsze musi zawierać nazwę domeny. Przekazywanych zabezpieczeń nie jest obsługiwana dla tego konta. Jeżeli punkty dystrybucji znajdują się w wielu domenach, należy utworzyć konto w zaufanej domenie.  
-
-> [!TIP]  
->  Aby uniknąć blokad konta, nie należy zmieniać hasła w istniejącym koncie dostępu do sieci. Zamiast tego należy utworzyć nowe konto i skonfigurować nowe konto w programie Configuration Manager. Po upłynięciu wystarczającego czasu na pobranie szczegółów nowego konta przez wszystkich klientów należy usunąć stare konto z udostępnianych folderów sieciowych, a następnie usunąć konto całkowicie.  
-
-> [!IMPORTANT]  
->  Udziela praw interakcyjne logowanie do tego konta.
->   
->  Nie należy przyznawać temu kontu uprawnienia do dołączania komputerów do domeny. Jeżeli musisz dołączyć komputery do domeny podczas sekwencji zadań, użyj konta dołączania do domeny edytora sekwencji zadań.  
-
-### <a name="package-access-account"></a>Konto dostępu do pakietu  
- A **konta dostępu do pakietu** pozwala ustawić uprawnień NTFS w celu określenia użytkowników i grup użytkowników, którzy mają dostęp do folderu pakietu w punktach dystrybucji. Domyślnie program Configuration Manager przypisuje dostęp tylko do ogólnych kont dostępu **użytkowników** i **Administratorzy**. Można sterować dostępem dla komputerów klienckich przy użyciu dodatkowych kont systemu Windows lub grup. Urządzenia przenośne zawsze pobierają zawartość pakietów anonimowo, więc nie używają kont dostępu do pakietów.  
-
- Domyślnie, gdy programu Configuration Manager utworzy udział pakietu w punkcie dystrybucji, domyślnie przyzna **odczytu** dostęp do lokalnego **użytkowników** grupy i **Pełna kontrola** do lokalnej **Administratorzy** grupy. Rzeczywiste wymagane uprawnienia są uzależnione od pakietu. Klienci w grupach roboczych lub lasach niezaufanych uzyskują dostęp do zawartości pakietu przy użyciu konta dostępu do sieci. Należy się upewnić, że konto dostępu do sieci dysponuje uprawnieniami dostępu do pakietu przy użyciu zdefiniowanych kont dostępu do pakietów.  
-
- Należy użyć kont w domenie mającej dostęp do punktów dystrybucji. Jeśli utworzysz lub zmienić konto, po utworzeniu pakietu ponownej dystrybucji pakietu. Aktualizacja pakietu nie zmienia uprawnień systemu plików NTFS w pakiecie.  
-
- Nie ma konieczności dodawania konta dostępu do sieci jako konta dostępu do pakietu, ponieważ zostanie ono dodane automatycznie w ramach członkostwa grupie Użytkownicy. Ograniczenie konta dostępu do pakietu wyłącznie do konta dostępu do sieci nie uniemożliwi klientom uzyskania dostępu do pakietu.  
-
-### <a name="reporting-services-point-account"></a>Konto punktu usług raportowania  
- SQL Server Reporting Services używa **konta punktu usług raportowania** do pobierania danych dla raportów programu Configuration Manager z bazy danych lokacji. Określone konto użytkownika systemu Windows i hasło są szyfrowane oraz przechowywane w bazie danych usług SQL Server Reporting Services.  
-
-### <a name="remote-tools-permitted-viewer-accounts"></a>Konta dopuszczonych poglądów narzędzi zdalnych  
- Konta określone jako **Dopuszczone podglądy** w ramach zdalnego sterowania stanowią listę użytkowników mogących korzystać z funkcji narzędzi zdalnych na klientach.  
-
-### <a name="site-system-installation-account"></a>Konto instalacji systemu lokacji  
- Serwer lokacji używa **konta instalacji systemu lokacji** do zainstalowania, zainstaluj ponownie, odinstalowywania i konfigurowania systemów lokacji. W przypadku skonfigurowania systemu lokacji aby wymagał serwera lokacji do nawiązania połączenia z tym systemem lokacji programu Configuration Manager również używa tego konta do pobierania danych z komputera systemu lokacji po zainstalowaniu systemu lokacji i ewentualnych ról systemu lokacji. Każdy system lokacji może mieć różne konta instalacji systemu lokacji, ale można skonfigurować tylko jedno konto instalacji systemu lokacji, aby zarządzać wszystkie role systemu lokacji, w tym systemie lokacji.  
-
- To konto wymaga lokalnych uprawnień administracyjnych, na które administratorzy będą Instalowanie i konfigurowanie systemów lokacji. Ponadto to konto musi mieć **dostęp do tego komputera z sieci** w zasadach zabezpieczeń w systemach lokacji, które administratorzy będą zainstalować i skonfigurować.  
+ 임의의 도메인에서 리소스에 대한 필수 액세스를 제공하는 계정을 만듭니다. 네트워크 액세스 계정에는 항상 도메인 이름이 포함되어야 합니다. 통과 보안은 이 계정에 대해 지원되지 않습니다. 여러 도메인에 배포 지점이 있는 경우 트러스트된 도메인에 계정을 만드세요.  
 
 > [!TIP]  
->  Jeśli masz wiele kontrolerów domeny, a konta te będą używane między domenami, sprawdź, czy konta zostały zreplikowane przed skonfigurowaniem systemu lokacji.  
+>  계정 잠금을 방지하려면 기존 네트워크 액세스 계정에서 암호를 변경하지 마세요. 대신 새 계정을 만들고 Configuration Manager에서 새 계정을 설정합니다. 모든 클라이언트가 새 계정 정보를 받을 수 있을 만큼 충분한 시간이 지나면 네트워크 공유 폴더에서 이전 계정을 제거하고 계정을 삭제합니다.  
+
+> [!IMPORTANT]  
+>  이 계정에 대화형 로그인 권한을 부여 하지 마세요.
 >   
->  Konfiguracja z określonym kontem lokalnym w każdym zarządzanym systemie lokacji jest bezpieczniejsza niż używanie kont domeny, ponieważ ogranicza ryzyko uszkodzeń spowodowanych przez osoby atakujące w razie złamania zabezpieczeń konta. Jednak konta domeny są łatwiejsze w zarządzaniu. Należy rozważyć kompromis między bezpieczeństwem a efektywną administracją.  
+>  이 계정에 컴퓨터를 도메인에 가입시킬 수 있는 권한을 부여하지 마세요. 작업 순서 도중에 컴퓨터를 도메인에 가입시켜야 하는 경우 작업 순서 편집기 도메인 가입 계정을 사용하세요.  
 
-### <a name="smtp-server-connection-account"></a>Konto połączenia serwera SMTP  
- Serwer lokacji używa **konta połączenia serwera SMTP** do wysyłania alertów e-mail gdy serwer SMTP wymaga dostępu uwierzytelnionego.  
+### <a name="package-access-account"></a>패키지 액세스 계정  
+ **패키지 액세스 계정**을 통해 배포 지점의 패키지 폴더에 액세스할 수 있는 사용자 및 사용자 그룹을 지정할 수 있는 NTFS 권한을 설정합니다. 기본적으로 Configuration Manager에서는 일반 액세스 계정인 **사용자** 및 **관리자**에게만 액세스 권한을 부여합니다. 클라이언트 컴퓨터에 대한 액세스는 추가 Windows 계정 또는 그룹을 사용하여 제어할 수 있습니다. 모바일 장치에서는 항상 패키지 콘텐츠를 익명으로 검색하므로 패키지 액세스 계정을 사용하지 않습니다.  
+
+ 기본적으로 Configuration Manager는 배포 지점에 패키지 공유를 만들 때 로컬 **사용자** 그룹에 **읽기** 권한을, 로컬 **관리자** 그룹에는 **모든 권한**을 부여합니다. 필요한 실제 권한은 패키지에 따라 달라집니다. 작업 그룹 또는 트러스트되지 않은 포리스트에 있는 클라이언트는 네트워크 액세스 계정을 사용하여 패키지 콘텐츠에 액세스합니다. 네트워크 액세스 계정에는 패키지에 대한 권한이 있어야 하므로 정의된 패키지 액세스 계정이 사용되어야 합니다.  
+
+ 배포 지점에 액세스할 수 있는 도메인의 계정을 사용합니다. 패키지가 만들어진 후 계정을 만들거나 변경하면 해당 패키지를 다시 배포해야 합니다. 패키지를 업데이트해도 패키지에 대한 NTFS 권한은 변경되지 않습니다.  
+
+ 사용자 그룹의 멤버 자격에서 자동으로 추가하므로 네트워크 액세스 계정을 패키지 액세스 계정으로 추가해서는 안 됩니다. 패키지 액세스 계정을 네트워크 액세스 계정으로만 제한하면 클라이언트가 패키지를 액세스하지 못하도록 막지 않습니다.  
+
+### <a name="reporting-services-point-account"></a>보고 서비스 지점 계정  
+ SQL Server Reporting Services에서는 **보고 서비스 지점 계정**을 사용하여 사이트 데이터베이스의 Configuration Manager 보고서 데이터를 검색합니다. 지정한 Windows 사용자 계정 및 암호는 암호화되어 SQL Server Reporting Services 데이터베이스에 저장됩니다.  
+
+### <a name="remote-tools-permitted-viewer-accounts"></a>원격 도구 허용된 뷰어 계정  
+ 원격 제어에 대해 **허용된 뷰어** 로 지정한 계정은 클라이언트에서 원격 도구 기능을 사용하도록 허용한 사용자들입니다.  
+
+### <a name="site-system-installation-account"></a>사이트 시스템 설치 계정  
+ 사이트 서버에서는 **사이트 시스템 설치 계정**을 사용하여 사이트 시스템을 설치, 다시 설치, 제거 및 설정합니다. 사이트 서버를 사용하여 사이트 시스템으로의 연결을 시작하도록 사이트 시스템을 설정하는 경우 사이트 시스템 및 사이트 시스템 역할이 설치된 후 Configuration Manager는 또한 이 계정을 사용하여 사이트 시스템 컴퓨터로부터 데이터를 가져옵니다. 각 사이트 시스템에는 다른 사이트 시스템 설치 계정이 있지만 오직 단일 사이트 시스템 설치 계정만 해당 사이트 시스템의 모든 사이트 시스템 역할을 관리하도록 설정할 수 있습니다.  
+
+ 이 계정에는 관리자가 설치 및 설정하는 사이트 시스템에 로컬 관리 권한이 필요합니다. 또한 이 계정에는 관리자가 설치 및 설정하는 사이트 시스템에서 보안 정책의 **네트워크에서 이 컴퓨터 액세스**가 있어야 합니다.  
+
+> [!TIP]  
+>  여러 도메인 컨트롤러가 있고 이러한 계정이 여러 도메인에서 사용되면 사이트 시스템을 설정하기 전에 계정이 복제되었는지 확인해야 합니다.  
+>   
+>  각 사이트 시스템에서 관리할 로컬 계정을 지정한 경우 계정이 손상되면 공격자가 입힐 수 있는 손상을 제한할 수 있으므로 이 구성은 도메인 계정을 사용하는 것보다 안전합니다. 하지만 도메인 계정은 관리하기가 더 쉽습니다. 보안과 효과적인 관리 간의 적당한 균형을 고려합니다.  
+
+### <a name="smtp-server-connection-account"></a>SMTP 서버 연결 계정  
+ SMTP 서버에 인증된 액세스가 필요한 경우 사이트 서버에서는 **SMTP 서버 연결 계정**을 사용하여 메일 경고를 보냅니다.  
 
 > [!IMPORTANT]  
->  Określ konto, które ma najniższe możliwe uprawnienia do wysyłania wiadomości e-mail.  
+>  전자 메일을 보낼 수 있는 최소한의 권한이 있는 계정을 지정합니다.  
 
-### <a name="software-update-point-connection-account"></a>Konto połączenia punktu aktualizacji oprogramowania  
- Serwer lokacji używa **konto połączenia punktu aktualizacji oprogramowania** dla następujących dwóch usług aktualizacji oprogramowania:  
+### <a name="software-update-point-connection-account"></a>소프트웨어 업데이트 지점 연결 계정  
+ 사이트 서버에서는 다음 두 소프트웨어 업데이트 서비스에 대해 **소프트웨어 업데이트 지점 연결 계정**을 사용합니다.  
 
--   Menedżer konfiguracji systemu Windows Server Update Services (WSUS), który konfiguruje ustawienia, takie jak produktu definicje, klasyfikacje i ustawienia nadrzędne.  
+-   WSUS(Windows Server Update Services) Configuration Manager - 제품 정의, 분류, 업스트림 설정 등 설정을 설정합니다.  
 
--   Menedżer synchronizacji programu WSUS, który wysyła do nadrzędnego serwera programu WSUS lub usługi Microsoft Update żądania synchronizacji.  
+-   WSUS Synchronization Manager - 업스트림 WSUS 서버 또는 Microsoft Update에 대한 동기화를 요청합니다.  
 
-Konto instalacji systemu lokacji można instalować składniki w ramach aktualizacji oprogramowania, ale nie może wykonywać funkcji specyficznych dla aktualizacji oprogramowania w punkcie aktualizacji oprogramowania. Jeżeli punkt aktualizacji oprogramowania znajduje się w niezaufanym lesie i nie można użyć konta komputera serwera lokacji w ramach tej funkcji, należy określić to konto oprócz konta instalacji systemu lokacji.  
+사이트 시스템 설치 계정은 소프트웨어 업데이트의 구성 요소를 설치하지만 소프트웨어 업데이트 지점에서 소프트웨어 업데이트 관련 기능은 수행할 수 없습니다. 소프트웨어 업데이트 지점이 신뢰할 수 없는 포리스트에 속하기 때문에 이 기능에 대해 사이트 서버 컴퓨터 계정을 사용할 수 없는 경우 사이트 시스템 설치 계정과 함께 이 계정을 지정해야 합니다.  
 
-To konto musi być administratorem lokalnym na komputerze, na którym zainstalowano program WSUS. Należy również częścią lokalnej grupy administratorów programu WSUS.  
+이 계정은 WSUS가 설치된 컴퓨터에서 로컬 관리자여야 합니다. 또한 로컬 WSUS 관리자 그룹의 일부여야 합니다.  
 
-### <a name="software-update-point-proxy-server-account"></a>Konto serwera proxy punktu aktualizacji oprogramowania  
- Punkt aktualizacji oprogramowania używa **konto punktu aktualizacji oprogramowania serwera Proxy serwera** dostęp do Internetu za pośrednictwem serwera proxy serwera lub zapory wymagających dostępu uwierzytelnionego.  
+### <a name="software-update-point-proxy-server-account"></a>소프트웨어 업데이트 지점 프록시 서버 계정  
+ 소프트웨어 업데이트 지점에서는 **소프트웨어 업데이트 지점 프록시 서버 계정**을 사용하여 인증된 액세스 권한을 필요로 하는 프록시 서버나 방화벽을 통해 인터넷에 액세스합니다.  
 
 > [!IMPORTANT]  
->  Określ konto, które ma najniższe możliwe uprawnienia do wymaganego serwera proxy lub zapory.  
+>  필요한 프록시 서버나 방화벽에 대해 최소한의 권한이 있는 계정을 지정합니다.  
 
-### <a name="source-site-account"></a>Konto lokacji źródłowej  
- Proces migracji **konto lokacji źródłowej** dostępu do dostawcy programu SMS lokacji źródłowej. To konto wymaga uprawnień dostępu **Odczyt** w obiektach lokacji źródłowej w celu zbierania danych dotyczących zadań migracji.  
+### <a name="source-site-account"></a>원본 사이트 계정  
+ 마이그레이션 프로세스에서는 **원본 사이트 계정**을 사용하여 원본 사이트의 SMS 공급자에 액세스합니다. 마이그레이션 작업용 데이터를 수집할 수 있도록 이 계정에는 원본 사이트에 있는 사이트 개체에 대한 **읽기** 권한이 있어야 합니다.  
 
- Jeśli możesz uaktualnić punkty dystrybucji programu Configuration Manager 2007 lub Lokacje dodatkowe, które mają punkty dystrybucji kolokowane do punktów dystrybucji programu System Center Configuration Manager, to konto musi mieć również **usunąć** uprawnień do **lokacji** pomyślne usunięcie punktu dystrybucji z lokacji programu Configuration Manager 2007 podczas uaktualniania.  
+ Configuration Manager 2007 배포 지점 또는 공동 배치된 배포 지점이 있는 보조 사이트를 System Center Configuration Manager 배포 지점으로 업그레이드하는 경우, 업그레이드 중에 Configuration Manager 2007 사이트에서 배포 지점을 성공적으로 제거하려면 이 계정에 **Site** 클래스에 대한 **삭제** 권한도 있어야 합니다.  
 
 > [!NOTE]  
->  Zarówno konto lokacji źródłowej, jak i konto bazy danych lokacji źródłowej mają zdefiniowany **Menedżera migracji** w **kont** węzła **administracji** obszaru roboczego w konsoli programu Configuration Manager.  
+>  원본 사이트 계정 및 원본 사이트 데이터베이스 계정은 모두 Configuration Manager 콘솔의 **관리** 작업 영역 **계정** 노드에서 **마이그레이션 관리자**로 식별됩니다.  
 
-### <a name="source-site-database-account"></a>Konto bazy danych lokacji źródłowej  
- Proces migracji **konto bazy danych lokacji źródłowej** dostępu do bazy danych programu SQL Server dla lokacji źródłowej. Aby zebrać dane z bazy danych programu SQL Server lokacji źródłowej, konto bazy danych lokacji źródłowej musi mieć **odczytu** i **Execute** uprawnień do bazy danych programu SQL Server lokacji źródłowej.  
-
-> [!NOTE]  
->  Jeśli używasz konta komputera programu System Center Configuration Manager, upewnij się, że spełnione są wszystkie poniższe:  
->   
-> -   Jest elementem członkowskim grupy zabezpieczeń **Użytkownicy DCOM** w domenie, w której znajduje się lokacja programu Configuration Manager 2007.  
-> -   To konto jest członkiem grupy zabezpieczeń **Administratorzy programu SMS**.  
-> -   Ma ona **odczytu** uprawnienia do wszystkich obiektów programu Configuration Manager 2007.  
+### <a name="source-site-database-account"></a>원본 사이트 데이터베이스 계정  
+ 마이그레이션 프로세스에서는 **원본 사이트 데이터베이스 계정**을 사용하여 원본 사이트의 SQL Server 데이터베이스에 액세스합니다. 원본 사이트의 SQL Server 데이터베이스에서 데이터를 수집할 수 있도록 원본 사이트 데이터베이스 계정에는 원본 사이트의 SQL Server 데이터베이스에 대한 **읽기** 및 **실행** 권한이 있어야 합니다.  
 
 > [!NOTE]  
->  Zarówno konto lokacji źródłowej, jak i konto bazy danych lokacji źródłowej mają zdefiniowany **Menedżera migracji** w **kont** węzła **administracji** obszaru roboczego w konsoli programu Configuration Manager.  
+>  System Center Configuration Manager 컴퓨터 계정을 사용하는 경우 이 계정은 다음의 모든 사항이 충족되어야 합니다.  
+>   
+> -   Configuration Manager 2007 사이트가 있는 도메인에서 보안 그룹 **Distributed COM Users**의 구성원이어야 합니다.  
+> -   **SMS Admins** 보안 그룹의 구성원이어야 합니다.  
+> -   모든 Configuration Manager 2007 개체에 대한 **읽기** 권한이 있습니다.  
 
-### <a name="task-sequence-editor-domain-joining-account"></a>Konto dołączania do domeny edytora sekwencji zadań  
- **Konto dołączania do domeny edytora sekwencji zadań** pozwala w sekwencji zadań przyłączać do domeny komputery, w których przypadku utworzono nowe obrazy. To konto jest wymagane w przypadku dodania do sekwencji zadań kroku **Przyłącz do domeny lub grupy roboczej**, a następnie wybrania kroku **Przyłącz do domeny**. To konto można również łączyć po dodaniu kroku **Zastosuj ustawienia sieci** do zadania sekwencji, ale nie jest wymagana.  
+> [!NOTE]  
+>  원본 사이트 계정 및 원본 사이트 데이터베이스 계정은 모두 Configuration Manager 콘솔의 **관리** 작업 영역 **계정** 노드에서 **마이그레이션 관리자**로 식별됩니다.  
 
- To konto wymaga uprawnienia **Przyłącz do domeny** względem domeny, do której będzie przyłączany komputer.  
+### <a name="task-sequence-editor-domain-joining-account"></a>작업 순서 편집기 도메인 가입 계정  
+ **작업 순서 편집기 도메인 가입 계정** 은 새롭게 생성된 컴퓨터 이미지를 도메인에 가입시키는 작업 순서에 사용됩니다. **도메인 또는 작업 그룹 가입** 단계를 작업 순서에 추가하고 **도메인 가입**을 선택하는 경우 이 계정이 필요합니다. 또한 **네트워크 설정 적용** 단계를 작업 순서에 추가하는 경우 이 계정이 설정되지만 반드시 필요한 것은 아닙니다.  
+
+ 이 계정에는 컴퓨터가 가입할 도메인에 **도메인 가입** 권한이 필요합니다.  
 
 > [!TIP]  
->  Jeśli potrzebujesz tego konta w sekwencjach zadań, możesz utworzyć jedno konto użytkownika domeny z minimalnymi uprawnieniami dostępu do wymaganych zasobów sieciowych i użyć go w odniesieniu do wszystkich kont sekwencji zadań.  
+>  작업 순서를 실행하기 위해 이 계정이 필요한 경우 필요한 네트워크 리소스에 액세스하고 모든 작업 순서 계정에 사용할 수 있도록 최소 권한이 있는 단일 도메인 사용자 계정을 생성할 수 있습니다.  
 
 > [!IMPORTANT]  
->  Nie należy przypisywać interaktywnych uprawnień logowania do tego konta.  
+>  이 계정에 대화형 로그인 권한을 할당하지 마세요.  
 >   
->  Nie używaj na tym koncie konta dostępu do sieci.  
+>  이 계정에 대해 네트워크 액세스 계정을 사용하지 마세요.  
 
-### <a name="task-sequence-editor-network-folder-connection-account"></a>Konto łączenia z folderem sieciowym edytora sekwencji zadań  
- Sekwencja zadań używa **konto połączenia folderem sieciowym edytora sekwencji zadań** nawiązać połączenia z folderem udostępnionym w sieci. To konto jest wymagane w przypadku dodania do sekwencji zadań kroku **Połącz z folderem sieciowym**.  
+### <a name="task-sequence-editor-network-folder-connection-account"></a>작업 순서 편집기 네트워크 폴더 연결 계정  
+ 작업 순서에서는 **작업 순서 편집기 네트워크 폴더 연결 계정**을 사용하여 네트워크의 공유 폴더에 연결합니다. 이 계정은 **네트워크 폴더에 연결** 단계를 작업 순서에 추가하는 경우 필요합니다.  
 
- To konto wymaga uprawnienia dostępu w podanym folderze udostępnionym. Należy konto użytkownika domeny.  
+ 이 계정에는 지정된 공유 폴더에 액세스할 수 있는 권한이 필요합니다. 이 계정은 사용자 도메인 계정이어야 합니다.  
 
 > [!TIP]  
->  Jeśli potrzebujesz tego konta w sekwencjach zadań, możesz utworzyć jedno konto użytkownika domeny z minimalnymi uprawnieniami dostępu do wymaganych zasobów sieciowych i użyć go w odniesieniu do wszystkich kont sekwencji zadań.  
+>  작업 순서를 실행하기 위해 이 계정이 필요한 경우 필요한 네트워크 리소스에 액세스하고 모든 작업 순서 계정에 사용할 수 있도록 최소 권한이 있는 단일 도메인 사용자 계정을 생성할 수 있습니다.  
 
 > [!IMPORTANT]  
->  Nie należy przypisywać interaktywnych uprawnień logowania do tego konta.  
+>  이 계정에 대화형 로그인 권한을 할당하지 마세요.  
 >   
->  Nie używaj na tym koncie konta dostępu do sieci.  
+>  이 계정에 대해 네트워크 액세스 계정을 사용하지 마세요.  
 
-### <a name="task-sequence-run-as-account"></a>Konto Uruchom jako w sekwencji zadań  
- **Konto Uruchom jako w sekwencji zadań** pozwala uruchamiać wiersze poleceń w sekwencjach zadań oraz korzystać z poświadczeń innych niż poświadczenia konta systemu lokalnego. To konto jest wymagane, jeśli Dodaj krok **Uruchom wiersz polecenia** sekwencji zadań, ale nie chcesz, aby sekwencja zadań była uruchamiana z uprawnieniami konta systemu lokalnego na zarządzanym komputerze.  
+### <a name="task-sequence-run-as-account"></a>작업 순서 실행 계정  
+ **작업 순서 실행 계정** 은 작업 순서의 명령줄을 실행하는 데 사용되며, 작업 순서 실행 계정으로는 로컬 시스템 계정 이외의 자격 증명이 사용됩니다. 이 계정은 **명령줄 실행** 단계를 작업 순서에 추가하되 관리 컴퓨터에서 로컬 시스템 계정 권한으로 작업 순서가 실행되기를 원하지 않는 경우에 필요합니다.  
 
- Zdefiniuj konto ma minimalne uprawnienia wymagane do uruchomienia wiersza polecenia, który jest określony w sekwencji zadań. Konto wymaga praw interakcyjnego logowania i zwykle wymaga możliwości instalowania oprogramowania i dostępu do zasobów sieciowych.  
+ 작업 순서에 지정된 명령줄을 실행하는 데 필요한 최소 사용 권한이 있는 계정을 설정해야 합니다. 계정에는 대화형 로그인 권한이 필요하며 주로 소프트웨어를 설치하고 네트워크 리소스에 액세스할 수 있는 권한이 있어야 합니다.  
 
 > [!IMPORTANT]  
->  Nie używaj na tym koncie konta dostępu do sieci.  
+>  이 계정에 대해 네트워크 액세스 계정을 사용하지 마세요.  
 >   
->  Nie należy wprowadzać konta administratora domeny.  
+>  계정을 도메인 관리자 계정으로 만들면 안 됩니다.  
 >   
->  Nigdy nie skonfigurowano profile mobilne dla tego konta. Po uruchomieniu sekwencji zadań, pobierze profil mobilny dla konta. Spowoduje to pozostawienie profil narażony na dostęp do komputera lokalnego.  
+>  이 계정에 대해 로밍 프로필을 설정하면 안 됩니다. 작업 순서가 실행되는 경우 계정에 대한 로밍 프로필을 다운로드합니다. 이렇게 하면 프로필이 로컬 컴퓨터의 액세스에 대해 취약해집니다.  
 >   
->  Ogranicz zakres konta. Utwórz na przykład różne konta Uruchom jako dla poszczególnych sekwencji zadań. W przypadku złamania zabezpieczeń jednego konta zostaną złamane wyłącznie zabezpieczenia komputerów klienckich, do których to konto ma dostęp.  
+>  계정 범위를 제한해야 합니다. 예를 들어 각 작업 순서마다 서로 다른 작업 순서 실행 계정을 만들어, 한 계정이 손상되는 경우 해당 계정에 액세스하는 클라이언트 컴퓨터만 손상되도록 할 수 있습니다.  
 >   
->  Jeśli wiersz polecenia wymaga dostępu administracyjnego na komputerze, należy rozważyć możliwość tworzenia konta administratora lokalnego przeznaczone wyłącznie na potrzeby zadania konta Uruchom jako sekwencji na wszystkich komputerach, który będzie uruchamiana sekwencja zadań. Usuń konto, gdy nie są już potrzebne.  
+>  컴퓨터에서 명령줄에 관리 권한이 필요한 경우에는 작업 순서를 실행할 모든 컴퓨터에 작업 순서 실행 계정 전용으로 사용할 로컬 관리자 계정을 만드는 것이 좋습니다. 계정이 더 이상 필요하지 않은 경우 즉시 삭제합니다.  

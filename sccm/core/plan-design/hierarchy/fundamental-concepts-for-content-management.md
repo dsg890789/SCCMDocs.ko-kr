@@ -6,23 +6,20 @@ ms.date: 05/04/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c201be2a-692c-4d67-ac95-0a3afa5320fe
-caps.latest.revision: 28
-caps.handback.revision: 0
+caps.latest.revision: "28"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 212628639300e9c361f7cee61b3df6b1cb6874ce
 ms.openlocfilehash: f73dde64e0e8a0fc49f45b3afb3b8f00c926a820
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/18/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="fundamental-concepts-for-content-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 콘텐츠 관리의 기본 개념
 
@@ -256,4 +253,3 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
  콘텐츠 사전 준비는 Configuration Manager를 사용하여 네트워크 전체에 콘텐츠를 배포하지 않고 배포 지점에 콘텐츠를 전송하는 프로세스입니다.  
 
  자세한 내용은 [네트워크 대역폭 관리](/sccm/core/plan-design/hierarchy/manage-network-bandwidth)를 참조하세요.
-

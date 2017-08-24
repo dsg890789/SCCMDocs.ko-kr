@@ -6,21 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0212b023-804a-4f84-b880-7a59cdb49c67
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: f77af4b8fcb193ed44511c0e5eea7290f55dbbf8
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="use-a-task-sequence-to-manage-virtual-hard-disks-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업 순서를 사용하여 가상 하드 디스크 관리
 
@@ -329,4 +327,3 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
     -   **암호화되지 않은 전송 사용**: 암호화를 사용하지 않고 VHD 파일을 VMM 관리 서버에 전송하려면 이 옵션을 선택합니다.  
 
 5.  요약 페이지에서 설정을 확인하고 마법사를 완료합니다. VHD를 업로드하는 시간은 VHD 파일 크기와 VMM 관리 서버로의 네트워크 대역폭에 따라 달라집니다.  
-

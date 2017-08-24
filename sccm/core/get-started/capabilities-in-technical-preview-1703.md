@@ -4,23 +4,21 @@ description: "System Center Configuration Manager용 Technical Preview 버전 17
 ms.custom: na
 ms.date: 03/24/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2e801f8c-d331-41ee-8f27-908448fc0951
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f4cb711f369698fe8e045f8c83dd96ec6fb29d70
 ms.openlocfilehash: bb1b96a56db68dcea22270855b899ba3a90afd0d
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="capabilities-in-technical-preview-1703-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1703의 기능
 
@@ -61,12 +59,12 @@ ms.lasthandoff: 05/17/2017
 
 ### <a name="how-to-get-the-application-identifier-of-an-application"></a>응용 프로그램의 응용 프로그램 식별자를 가져오는 방법
 
-1.    Configuration Manager 콘솔에서 **소프트웨어 라이브러리**를 클릭합니다.
-2.    소프트웨어 라이브러리 작업 영역에서 **응용 프로그램 관리**를 확장한 다음 **응용 프로그램**을 클릭합니다.
-3.    **응용 프로그램** 보기에서 열 머리글 중 하나를 마우스 오른쪽 단추로 클릭한 다음 목록에서 **CI 고유 ID**를 선택합니다. 이제 목록에 각 응용 프로그램의 고유 ID가 표시됩니다.
-4.    링크를 제공할 응용 프로그램의 **CI 고유 ID**를 확인합니다(예: **ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f/2**).
-5.    그런 다음 응용 프로그램 GUID 뒤에 있는 모든 텍스트를 제거합니다(이 경우 **/2**). 그러면 응용 프로그램 식별자가 남습니다.
-6.    마지막으로 링크 구성을 마치려면 링크 앞에 **Softwarecenter:SoftwareID=**을 붙입니다. 위 예제를 사용할 경우 최종 링크는 **Softwarecenter:SoftwareId= ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f**가 됩니다.
+1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리**를 클릭합니다.
+2.  소프트웨어 라이브러리 작업 영역에서 **응용 프로그램 관리**를 확장한 다음 **응용 프로그램**을 클릭합니다.
+3.  **응용 프로그램** 보기에서 열 머리글 중 하나를 마우스 오른쪽 단추로 클릭한 다음 목록에서 **CI 고유 ID**를 선택합니다. 이제 목록에 각 응용 프로그램의 고유 ID가 표시됩니다.
+4.  링크를 제공할 응용 프로그램의 **CI 고유 ID**를 확인합니다(예: **ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f/2**).
+5.  그런 다음 응용 프로그램 GUID 뒤에 있는 모든 텍스트를 제거합니다(이 경우 **/2**). 그러면 응용 프로그램 식별자가 남습니다.
+6.  마지막으로 링크 구성을 마치려면 링크 앞에 **Softwarecenter:SoftwareID=**을 붙입니다. 위 예제를 사용할 경우 최종 링크는 **Softwarecenter:SoftwareId= ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f**가 됩니다.
 
 이 링크를 사용하여 최종 사용자는 지정된 응용 프로그램에 대한 소프트웨어 센터를 직접 열 수 있습니다.
 
@@ -86,17 +84,17 @@ Technical Preview 1703에는 **Azure 서비스 구성** 마법사가 도입되�
 
 Technical Preview 1703에서는 WSfB(비즈니스용 Windows 스토어)만 이 마법사를 사용하여 구성됩니다.  다른 클라우드 서비스는 별도의 워크플로를 사용하여 구성됩니다.
 
--    이 Preview 항목의 정보를 사용하여 현재 분기 항목 [System Center Configuration Manager를 사용하여 비즈니스용 Windows 스토어에서 앱 관리](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)의 [비즈니스용 Windows 스토어 동기화 설정](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business#set-up-windows-store-for-business-synchronization) 섹션에 있는 구성 단계를 바꿉니다.
+-   이 Preview 항목의 정보를 사용하여 현재 분기 항목 [System Center Configuration Manager를 사용하여 비즈니스용 Windows 스토어에서 앱 관리](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)의 [비즈니스용 Windows 스토어 동기화 설정](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business#set-up-windows-store-for-business-synchronization) 섹션에 있는 구성 단계를 바꿉니다.
 
--    웹앱에 대한 자세한 내용은 [Azure App Service의 인증 및 권한 부여](https://docs.microsoft.com/azure/app-service/app-service-authentication-overview) 및 [Web Apps 개요](https://docs.microsoft.com/azure/app-service-web/app-service-web-overview)를 참조하세요.
+-   웹앱에 대한 자세한 내용은 [Azure App Service의 인증 및 권한 부여](https://docs.microsoft.com/azure/app-service/app-service-authentication-overview) 및 [Web Apps 개요](https://docs.microsoft.com/azure/app-service-web/app-service-web-overview)를 참조하세요.
 
 ### <a name="prerequisites-and-planning"></a>필수 조건 및 계획
 Configuration Manager와 비즈니스용 Windows 스토어 간의 연결을 설정하는 경우 스토어에서 동기화된 앱 콘텐츠를 보관할 폴더를 제공해야 합니다. 이 폴더가 안전하고 해당 콘텐츠를 장치에 배포할 수 있도록 다음 사용 권한을 지정해야 합니다.
--    서비스 연결 지점 사이트 시스템 역할(계층 구조의 최상위 사이트)를 설치하는 컴퓨터에는 **Computer$** 계정을 사용할 때 지정한 폴더에 대한 읽기 및 쓰기 권한이 있어야 합니다.  
+-   서비스 연결 지점 사이트 시스템 역할(계층 구조의 최상위 사이트)를 설치하는 컴퓨터에는 **Computer$** 계정을 사용할 때 지정한 폴더에 대한 읽기 및 쓰기 권한이 있어야 합니다.  
 
--    앱 작성자에게 지정한 폴더에 대한 읽기 권한이 있어야 합니다.  
+-   앱 작성자에게 지정한 폴더에 대한 읽기 권한이 있어야 합니다.  
 
--    SMS 공급자 인스턴스를 호스트하는 각 컴퓨터의 **Computer$** 계정이 지정한 폴더를 사용할 수 있어야 합니다.
+-   SMS 공급자 인스턴스를 호스트하는 각 컴퓨터의 **Computer$** 계정이 지정한 폴더를 사용할 수 있어야 합니다.
 
 Azure Active Directory에서 Configuration Manager를 웹 응용 프로그램 또는 Web API 관리 도구로 등록합니다. 그러면 나중에 필요한 클라이언트 ID가 만들어집니다.
 
@@ -112,8 +110,8 @@ Azure Active Directory에서 Configuration Manager를 웹 응용 프로그램 �
 
 5. **서버 앱** 창에서 사용할 서버 앱을 선택한 다음 **확인**을 클릭합니다.
 서버 앱은 테넌트 ID, 클라이언트 ID 및 클라이언트의 비밀 키를 비롯한 Azure 계정에 대한 구성을 포함하는 Azure 웹앱입니다. 사용 가능한 서버 앱이 없는 경우 다음 중 하나를 사용합니다.
-  -    **만들기**: 새 서버 앱을 만들려면 **만들기**를 클릭합니다. 앱 및 테넌트의 이름을 입력합니다. 그런 다음 Azure에 로그인하면 Configuration Manager가 Azure에서 사용자를 위해 웹앱을 만듭니다(웹앱에 사용할 클라이언트 ID 및 비밀 키 포함). 나중에 Azure Portal에서 이러한 내용을 확인할 수 있습니다.
-  -    **가져오기**: Azure 구독에 이미 있는 웹앱을 사용하려면 **가져오기**를 클릭합니다. 앱 및 테넌트의 이름을 입력한 다음 테넌트 ID, 클라이언트 ID 및 Configuration Manager에서 사용하도록 할 Azure 웹앱의 비밀 키를 지정합니다. 정보를 **확인**한 후 **확인**을 클릭하여 계속합니다.  </br></br>
+  - **만들기**: 새 서버 앱을 만들려면 **만들기**를 클릭합니다. 앱 및 테넌트의 이름을 입력합니다. 그런 다음 Azure에 로그인하면 Configuration Manager가 Azure에서 사용자를 위해 웹앱을 만듭니다(웹앱에 사용할 클라이언트 ID 및 비밀 키 포함). 나중에 Azure Portal에서 이러한 내용을 확인할 수 있습니다.
+  - **가져오기**: Azure 구독에 이미 있는 웹앱을 사용하려면 **가져오기**를 클릭합니다. 앱 및 테넌트의 이름을 입력한 다음 테넌트 ID, 클라이언트 ID 및 Configuration Manager에서 사용하도록 할 Azure 웹앱의 비밀 키를 지정합니다. 정보를 **확인**한 후 **확인**을 클릭하여 계속합니다.  </br></br>
 
 6. **정보** 페이지를 검토하고 지시에 따라 추가 단계 및 구성을 완료합니다. 이러한 구성은 Configuration Manager를 통해 서비스를 사용하는 데 필요합니다.
 예를 들어 WSfB를 구성하려면:

@@ -6,22 +6,20 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c72612d4-0b3d-4e71-b3c9-35782701b78a
-caps.latest.revision: 18
-caps.handback.revision: 0
+caps.latest.revision: "18"
+caps.handback.revision: "0"
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 6c6f56dd2b68b8c87d87842ab2b0f782e16c7f9c
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.openlocfilehash: 362bcbd368fd49979c554cd009b3ba72f20d5fbd
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-create-wi-fi-profiles-for-mobile-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 모바일 장치에 대한 Wi-Fi 프로필을 만드는 방법
 
@@ -47,4 +45,3 @@ Wi-Fi 프로필로 다음 모바일 장치 유형을 구성할 수 있습니다.
 [Wi-Fi 프로필 만들기](../../protect/deploy-use/create-wifi-profiles.md#create-a-wi-fi-profile)에서는 Configuration Manager의 Wi-Fi 프로필을 사용하여 사용자에게 무선 네트워크 설정을 배포하는 방법을 알아봅니다.
 
 Wi-Fi 프로필 배포에 대한 자세한 내용은 [Wi-Fi, VPN, 메일 및 인증서 프로필 배포](../../protect/deploy-use/deploy-wifi-vpn-email-cert-profiles.md)를 참조하세요.
-

@@ -6,21 +6,20 @@ ms.date: 12/28/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 601e3a8d-e9e7-456f-a844-f19c3dae12a9
-caps.latest.revision: 3
-caps.handback.revision: 0
+caps.latest.revision: "3"
+caps.handback.revision: "0"
 author: Nbigman
 ms.author: nbigman
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 8a5dc7361da34f3e6b926acd35c72c0c0767ce70
 ms.openlocfilehash: 17707f931a4fa58b225ce14f04c2a19648585bc4
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-email-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 메일 프로필에 대한 보안 및 개인 정보
 
@@ -37,9 +36,3 @@ ms.openlocfilehash: 17707f931a4fa58b225ce14f04c2a19648585bc4
  기본적으로 장치는 전자 메일 프로필을 평가하지 않습니다. 그리고 전자 메일 프로필을 구성한 다음 사용자에게 배포해야 합니다.  
 
  전자 메일 프로필을 구성하려면 먼저 개인 정보 취급 방침 요구 사항을 검토하세요.  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
-

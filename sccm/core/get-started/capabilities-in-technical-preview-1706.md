@@ -1,6 +1,6 @@
 ---
-title: Technical Preview 1706 | Dokumentacja firmy Microsoft
-description: "Dowiedz się więcej o funkcjach dostępnych w wersji zapoznawczej Technical Preview 1706 programu System Center Configuration Manager."
+title: Technical Preview 1706 | Microsoft Docs
+description: "System Center Configuration Manager용 Technical Preview 버전 1706에서 사용 가능한 기능에 대해 알아봅니다."
 ms.custom: na
 ms.date: 06/30/2017
 ms.prod: configuration-manager
@@ -15,15 +15,15 @@ ms.author: brenduns
 manager: angrobe
 ms.openlocfilehash: d45f504dfe0a4c7852b0e2c8ff60d54005346c02
 ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
-ms.translationtype: MT
-ms.contentlocale: pl-PL
+ms.translationtype: HT
+ms.contentlocale: ko-KR
 ms.lasthandoff: 08/07/2017
 ---
-# <a name="capabilities-in-technical-preview-1706-for-system-center-configuration-manager"></a>Funkcje w wersji Technical Preview 1706 programu System Center Configuration Manager
+# <a name="capabilities-in-technical-preview-1706-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1706의 기능
 
-*Dotyczy: System Center Configuration Manager (wersja zapoznawcza Technical Preview)*
+*적용 대상: System Center Configuration Manager(Technical Preview)*
 
-W tym artykule przedstawiono funkcje, które są dostępne w wersji Technical Preview programu System Center Configuration Manager, wersja 1706. Można zainstalować tę wersję, aby zaktualizować i dodać nowe funkcje do lokacji programu Configuration Manager technical preview. Przed zainstalowaniem tej wersji technical Preview, przejrzyj [Technical Preview programu System Center Configuration Manager](../../core/get-started/technical-preview.md) zapoznać się z ogólne wymagania i ograniczenia dotyczące używania wersji technical preview, jak zaktualizować między wersjami i sposobu wyrazić swoją opinię na temat funkcji w wersji technical preview.     
+이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1706에서 사용 가능한 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대해 피드백 제공 방법 등에 익숙해져야 합니다.     
 
 
 <!--  Known Issues Template   
@@ -31,17 +31,17 @@ W tym artykule przedstawiono funkcje, które są dostępne w wersji Technical Pr
 -   **Issue Name**. Details
     Workaround details.
 -->
-**Znane problemy w tej wersji Technical Preview:**
+**이 Technical Preview의 알려진 문제:**
 
--   **Przenieś punkt dystrybucji** — nie można użyć opcji w konsoli, aby przenieść punkt dystrybucji między lokacjami w tej wersji z powodu ograniczenia wersji zapoznawczej technical preview z jednej lokacji głównej.
+-   **배포 지점 이동** - 사이트 간에 배포 지점을 이동하기 위한 콘솔의 옵션은 단일 기본 사이트의 Technical Preview 제한으로 인해 이 릴리스에서 사용할 수 없습니다.
 
--   **Ustawienia zgodności urządzeń** -przeciwną zachowanie mogą wystąpić przy użyciu dwa nowe ustawienia zgodności urządzeń:
-    - **Blokuj debugowanie USB na urządzeniu**
-    - **Blokuj aplikacji z nieznanych źródeł**
+-   **장치 준수 설정** - 새 장치 준수 설정 중 다음 2가지를 사용할 경우 반대 동작이 발생할 수 있습니다.
+    - **장치에서 USB 디버깅 차단**
+    - **알 수 없는 출처의 앱 차단**
 
-        Na przykład, jeśli ustawiona Administratorzy **debugowanie USB bloku na urządzeniu** do **true**, wszystkie urządzenia, które nie mają włączonej obsługi debugowania USB są oznaczone jako niezgodne.
+        예를 들어 관리자가 **장치에서 USB 디버깅 차단**을 **true**로 설정하면 USB 디버깅이 사용되도록 설정되지 않은 모든 장치가 비규격으로 표시됩니다.
 
-**Poniżej przedstawiono nowe funkcje, które można wypróbować z tą wersją.**  
+**다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.**  
 
 <!--  Rough Section Template
 ##  FEATURE
@@ -53,530 +53,530 @@ W tym artykule przedstawiono funkcje, które są dostępne w wersji Technical Pr
  -  Task 2              
 -->
 
-## <a name="improved-boundary-groups-for-software-update-points"></a>Grupy granic ulepszone dla punktów aktualizacji oprogramowania
+## <a name="improved-boundary-groups-for-software-update-points"></a>소프트웨어 업데이트 지점에 대한 향상된 경계 그룹
 <!-- 1324591 -->
-Ta wersja zawiera ulepszenia działania punktów aktualizacji oprogramowania z grupy granic. Poniżej przedstawiono podsumowanie nowe działanie rezerwowe:
--   Używane dla punktów aktualizacji oprogramowania używa teraz można skonfigurować czas powrotu do grup granic sąsiada, minimalny czas 120 minut.
+이 릴리스에서는 소프트웨어 업데이트 지점이 경계 그룹과 작동하는 방식이 개선되었습니다. 다음은 새로운 대체 동작을 요약해서 설명합니다.
+-   이제 소프트웨어 업데이트 지점에 대한 대체는 인접 경계 그룹으로의 대체에 대해 구성 가능한 시간(최소 시간 120분)을 사용합니다.
 
--   Niezależne od konfiguracji rezerwowej, klient próbuje osiągnąć ostatniego punktu aktualizacji oprogramowania używanych przez 120 minut. Po nieudanym do tego serwera na 120 minut, klient sprawdzi puli punktów aktualizacji oprogramowania, aby umożliwić znalezienie nowy.
+-   대체 구성과 관계 없이, 클라이언트는 사용한 마지막 소프트웨어 업데이트 지점에 120분 이내에 도달하려고 합니다. 120분 내에 해당 서버에 도달하지 못하면 클라이언트는 사용 가능한 소프트웨어 업데이트 지점 풀을 확인하여 새 서버를 찾으려고 합니다.
 
-  -   Wszystkie punkty aktualizacji oprogramowania w bieżącej grupie granic klienta są dodawane do puli klienta natychmiast.
+  -   클라이언트의 현재 경계 그룹의 모든 소프트웨어 업데이트 지점이 클라이언트의 풀에 즉시 추가됩니다.
 
-  -   Ponieważ klient próbuje użyć oryginalnego serwera na 120 minut przed znalezienia nowy, żadne dodatkowe serwery kontaktować się ze dopiero po upływie dwóch godzin.
+  -   클라이언트를 새 서버를 검색하기 전에 120분 동안 원본 서버로 사용하려고 하기 때문에 2시간이 지날 때까지 추가 서버에 연결되지 않습니다.
 
-  -   Jeśli powrotu do grupy sąsiada jest skonfigurowana co najmniej 120 minut, punkty aktualizacji oprogramowania z tej grupy granic sąsiada będzie częścią puli klienta dostępnych serwerów.
+  -   인접 그룹에 대한 대체가 최소 120분으로 구성된 경우 해당 인접 경계 그룹에서의 소프트웨어 업데이트 지점은 사용 가능한 서버의 클라이언트의 풀에 포함됩니다.
 
--   Po awarii do oryginalnego serwera przez 2 godziny, klient przełącza się do krótszej cykl w celu kontaktowania się nowego punktu aktualizacji oprogramowania.
+-   2시간 내에 원래 서버에 도달하지 못하면 클라이언트는 새 소프트웨어 업데이트 지점에 연결하기 위해 더 짧은 주기로 전환합니다.
 
-    Oznacza to, jeśli klient nie może nawiązać połączenia z nowym serwerze, szybko wybiera kolejny serwer z puli serwerów dostępnych i próbuje skontaktować się z co.
+    즉, 클라이언트가 새 서버에 연결하지 못할 경우 사용 가능한 서버 풀의 다음 서버를 빠르게 선택하고 해당 서버에 연결하려고 합니다.
 
-  -   Ten cykl będzie wykonywany do momentu klient łączy się oprogramowania może użyć punktu aktualizacji.
-  -   Dopóki klient znajdzie punkt aktualizacji oprogramowania, dodatkowe serwery są dodawane do puli serwerów dostępnych po spełnieniu rezerwowy czasu dla każdej grupy granic sąsiedniego.
+  -   이 주기는 클라이언트가 사용할 수 있는 소프트웨어 연결 지점에 연결할 때까지 계속됩니다.
+  -   클라이언트가 소프트웨어 업데이트 지점을 찾을 때까지 각 인접 경계 그룹에 대한 대체 시간 범위 내에서 추가 서버가 사용 가능한 서버 풀에 추가됩니다.
 
-Aby uzyskać więcej informacji, zobacz [punktów aktualizacji oprogramowania](/sccm/core/servers/deploy/configure/boundary-groups#software-update-points) w temacie grup granic dla bieżącej gałęzi.
+자세한 내용은 현재 분기에 대한 경계 그룹 항목에서 [소프트웨어 업데이트 지점](/sccm/core/servers/deploy/configure/boundary-groups#software-update-points)을 참조하세요.
 
 
-## <a name="site-server-role-high-availability"></a>Wysoką dostępność roli serwera lokacji
+## <a name="site-server-role-high-availability"></a>사이트 서버 역할 고가용성
 <!-- 1128774 -->
-Wysoka dostępność dla roli serwera lokacji jest rozwiązania na podstawie programu Configuration Manager do zainstalowania serwera lokacji głównej w *pasywnym* tryb. Serwer lokacji w trybie pasywnym jest dodatkowo do istniejącego serwera lokacji głównej w *Active* tryb. W trybie pasywnym serwera lokacji jest dostępna do użycia, w razie potrzeby.
+사이트 서버 역할에 대한 고가용성은 추가 기본 사이트 서버를 *수동* 모드에서 설치하기 위한 Configuration Manager 기반 솔루션입니다. 수동 모드 사이트 서버는 *활성* 모드의 기존의 기본 사이트 서버 외의 추가 서버입니다. 수동 모드 사이트 서버는 필요할 때 즉시 사용할 수 있습니다.
 
-Serwer lokacji podstawowej w trybie pasywnym:
--   Używa tej samej bazy danych lokacji, co serwer aktywnej lokacji.
--   Odbiera kopii aktywnej lokacji serwery biblioteki zawartości, który jest przechowywany następnie zsynchronizowany.
--   Nie zapisuje dane do bazy danych lokacji, tak długo, jak jest w trybie pasywnym.
--   Nie obsługuje instalacji lub usunięcia opcjonalne role systemu lokacji tak długo, jak jest w trybie pasywnym.
+수동 모드의 기본 사이트 서버:
+-   활성 사이트 서버와 동일한 사이트 데이터베이스를 사용합니다.
+-   활성 사이트 서버의 콘텐츠 라이브러리의 복사본을 검색합니다. 이 복사본은 동기화된 상태로 유지됩니다.
+-   수동 모드에서는 사이트 데이터베이스에 데이터를 쓰지 않습니다.
+-   수동 모드에서는 선택적 사이트 시스템 역할의 설치 또는 제거가 지원되지 않습니다.
 
-Aby serwer lokacji w trybie pasywnym aktywny tryb serwera lokacji, należy ręcznie Podwyższ go. Przełącza się na serwer aktywnej lokacji serwer lokacji pasywnych. Role systemu lokacji, które są dostępne na oryginalnym serwerze w trybie aktywnym pozostają dostępne pod warunkiem, że komputer jest dostępny. Rola serwera lokacji przełączania między trybem aktywnych i pasywnych.
+수동 모드 사이트 서버를 활성 모드 사이트 서버로 지정하려면 수동으로 수준을 올립니다. 이렇게 하면 활성 사이트 서버가 수동 사이트 서버로 전환됩니다. 원래 활성 모드인 서버에서 사용할 수 있는 사이트 시스템 역할은 컴퓨터에 액세스할 수 있기만 하면 사용 가능한 상태로 유지됩니다. 사이트 서버 역할만 활성 모드와 수동 모드 간에 전환됩니다.
 
-Aby zainstalować serwer lokacji w trybie pasywnym, należy użyć **lokacji Kreator tworzenia serwera systemu** do skonfigurowania nowego serwera lokacji z typem **serwera lokacji głównej** i tryb **pasywnym**. Następnie Kreator uruchamia Instalator programu Configuration Manager na określonym serwerze, aby zainstalować nowy serwer lokacji w trybie pasywnym. Po zakończeniu instalacji serwera lokacji w trybie aktywnym zachowuje w trybie pasywnym serwera lokacji i jej do biblioteki zawartości zsynchronizowane z zmiany lub konfiguracje, które można wprowadzić na serwerze aktywnej lokacji.
+수동 모드 사이트 서버를 설치하려면 **사이트 시스템 서버 만들기 마법사**를 사용하여 유형이 **기본 사이트 서버**이고 모드가 **수동**인 새 사이트 서버를 구성합니다. 그러면 마법사는 지정된 서버에서 Configuration Manager 설치 프로그램을 실행하여 수동 모드에서 새 사이트 서버를 설치합니다. 설치가 완료되면 활성 모드 사이트 서버는 수동 모드 사이트 서버로 유지되고 해당 콘텐츠 라이브러리는 활성 사이트 서버에 대해 수행한 변경 또는 구성 내용과 동기화된 상태로 유지됩니다.
 
-### <a name="prerequisites-and-limitations"></a>Wymagania wstępne i ograniczenia
--   Jednym serwerze lokacji w trybie pasywnym jest obsługiwane w każdej lokacji głównej.
+### <a name="prerequisites-and-limitations"></a>필수 구성 요소 및 제한 사항
+-   수동 모드의 단일 사이트 서버는 각 기본 사이트에서 지원됩니다.
 
--   Serwer lokacji w trybie pasywnym może być lokalnym lub w chmurze na platformie Azure.
+-   수동 모드의 사이트 서버는 Azure에서 온-프레미스 또는 클라우드 기반일 수 있습니다.
 
--   Zarówno w trybie aktywnym, jak i serwerów lokacji w trybie pasywnym musi być w tej samej domenie.
+-   활성 모드 및 수동 모드 사이트 서버 둘 다 동일한 도메인에 있어야 합니다.
 
--   Zarówno w trybie aktywnym, jak i serwerów lokacji w trybie pasywnym musi używać tej samej bazy danych lokacji, który musi być zdalnego z komputerów wszystkich serwerów lokacji.
+-   활성 모드 및 수동 모드 사이트 서버 둘 다 각 사이트 서버 컴퓨터에서 원격 위치에 있는 동일한 사이트 데이터베이스를 사용해야 합니다.
 
-    -   SQL Server obsługującym bazę danych można użyć domyślnego wystąpienia o nazwie wystąpienia klastra programu SQL Server i zawsze włączonej grupy dostępności.
+    -   데이터베이스를 호스트하는 SQL Server는 기본 인스턴스, 명명된 인스턴스, SQL Server 클러스터 또는 Always On 가용성 그룹을 사용할 수 있습니다.
 
-    -   Aby użyć tej samej bazy danych lokacji jako aktywny tryb serwera lokacji jest skonfigurowany serwer lokacji, w trybie pasywnym. Jednak serwer lokacji w trybie pasywnym nie używa tej bazy danych do czasu po jest podwyższany do aktywnego trybu.
+    -   수동 모드의 사이트 서버는 활성 모드 사이트 서버와 동일한 사이트 데이터베이스를 사용하도록 구성됩니다. 그러나 수동 모드 사이트 서버는 활성 모드로 수준을 올릴 때까지 해당 데이터베이스를 사용하지 않습니다.
 
--   Komputer, który zostanie uruchomiony w trybie pasywnym serwera lokacji:
+-   수동 모드 사이트 서버를 실행하는 컴퓨터에는 다음이 적용됩니다.
 
-    -   Musi spełniać [wymagania wstępne dotyczące instalowania lokacji głównej](https://docs.microsoft.com/en-us/sccm/core/servers/deploy/install/prerequisites-for-installing-sites#primary-sites-and-the-central-administration-site).
+    -   [기본 사이트를 설치하기 위한 필수 구성 요소](https://docs.microsoft.com/en-us/sccm/core/servers/deploy/install/prerequisites-for-installing-sites#primary-sites-and-the-central-administration-site)를 충족해야 합니다.
 
-    -   Instaluje przy użyciu plików źródłowych odpowiadających wersji serwera lokacji w trybie aktywnym.
+    -   활성 모드 사이트 서버의 버전과 일치하는 원본 파일을 사용하여 설치됩니다.
 
-    -   Nie może mieć roli systemu lokacji z dowolnej lokacji przed zainstalowaniem lokacji w trybie pasywnym.
+    -   수동 모드 사이트를 설치하기 전에는 어떤 사이트의 사이트 시스템 역할도 가질 수 없습니다.
 
--   Komputerach serwera lokacji w trybie aktywnym i pasywnym można uruchomić w różnych systemach operacyjnych lub wersji dodatku service pack, tak długo, jak mogą w dalszym ciągu obsługiwany przez używaną wersję programu Configuration Manager.
+-   활성 및 수동 모드 사이트 서버 컴퓨터는 사용 중인 Configuration Manager 버전에서 지원될 경우 다른 운영 체제 또는 서비스 팩 버전을 실행할 수 있습니다.
 
--   Podwyższanie poziomu serwera lokacji w trybie pasywnym trybie aktywnym serwerem jest ręcznie. Nie ma żadnych automatycznej pracy awaryjnej.
+-   활성 모드 사이트 서버에서 수동 모드 서버로의 수준 올리기는 수동으로 수행됩니다. 자동 장애 조치(failover)는 없습니다.
 
--   Role systemu lokacji można zainstalować tylko na serwerze lokacji, który jest w trybie aktywnym.
+-   활성 모드에 있는 사이트 서버에만 사이트 시스템 역할을 설치할 수 있습니다.
 
-    -   Serwer lokacji w trybie aktywnym obsługuje wszystkie role systemu lokacji. Nie można zainstalować role systemu lokacji na serwerze, gdy jest on w trybie pasywnym.
+    -   활성 모드의 사이트 서버는 모든 사이트 시스템 역할을 지원합니다. 수동 모드일 때는 서버에서 사이트 시스템 역할을 설치할 수 없습니다.
 
-    -   Role systemu lokacji, które używają bazy danych (na przykład punkt raportowania) musi mieć tej bazy danych na serwerze, na którym znajduje się poza zarówno aktywny tryb i serwery lokacji w trybie pasywnym.
+    -   데이터베이스를 사용하는 사이트 시스템 역할(예: 보고 지점)의 경우 활성 모드 및 수동 모드 사이트 서버 둘 다에서 원격인 서버에 해당 데이터베이스가 있어야 합니다.
 
-    -   Element SMS_Provider nie spowoduje zainstalowania na serwerze lokacji w trybie pasywnym. Należy nawiązać połączenie SMS_Provider witryny na ręczne podwyższenie poziomu serwera lokacji w trybie pasywnym na tryb aktywny, dlatego zaleca się [zainstalowanie co najmniej jednego dodatkowego wystąpienia dostawcy](/sccm/core/plan-design/hierarchy/plan-for-the-sms-provider) na dodatkowych komputerach.
+    -   SMS_Provider는 수동 모드로 사이트 서버에 설치되지 않습니다. 사이트에서 수동 모드 사이트 서버를 수동으로 활성 모드로 수준을 올리려면 SMS_Provider에 연결해야 하므로 추가 컴퓨터에 [공급자의 추가 인스턴스를 하나 이상 설치](/sccm/core/plan-design/hierarchy/plan-for-the-sms-provider)하는 것이 좋습니다.
 
-**Znany problem**:   
-W tej wersji **stan** dla następujące warunki są wyświetlane w konsoli jako wartości liczbowe zamiast tekstu do odczytu:
--   131071 — nie można zainstalować serwera lokacji
--   720895 — Dezinstalacja roli serwera lokacji nie powiodła się
--   851967 — trybu Failover nie powiodła się.
+**알려진 문제**:   
+이 릴리스에서 다음 조건에 대한 **상태**가 읽을 수 있는 텍스트 대신 숫자 값으로 콘솔에 표시됩니다.
+-   131071 – 사이트 서버 설치 실패
+-   720895 – 사이트 서버 역할 제거 실패
+-   851967 – 장애 조치(failover) 실패
 
-### <a name="add-a-site-server-in-passive-mode"></a>Dodawanie serwera lokacji w trybie pasywnym
-1.  W konsoli przejdź do **administracji** > **konfiguracja lokacji** > **witryny** i uruchomić [lokacji Kreator dodawania ról systemu](/sccm/core/servers/deploy/configure/install-site-system-roles). Można również użyć **lokacji Kreator tworzenia serwera systemu**.
+### <a name="add-a-site-server-in-passive-mode"></a>수동 모드로 사이트 서버 추가
+1.  콘솔에서 **관리** > **사이트 구성** > **사이트**로 이동한 후 [사이트 시스템 역할 추가 마법사](/sccm/core/servers/deploy/configure/install-site-system-roles)를 시작합니다. **사이트 시스템 서버 만들기 마법사**를 사용할 수도 있습니다.
 
-2.  Na **ogólne** Określ serwer, który będzie hostować serwer lokacji w trybie pasywnym. Serwer, z którym określisz nie może obsługiwać wszystkie role systemu lokacji, przed zainstalowaniem serwera lokacji w trybie pasywnym.
+2.  **일반** 페이지에서 수동 모드 사이트 서버를 호스트하는 서버를 지정합니다. 지정한 서버는 수동 모드에서 사이트 서버를 설치하기 전에는 사이트 시스템 역할을 호스트할 수 없습니다.
 
-3.  Na **Wybór roli systemu** wybierz tylko **serwera lokacji głównej w trybie pasywnym**.
+3.  **시스템 역할 선택** 페이지에서 **수동 모드의 기본 사이트 서버**만 선택합니다.
 
-4.  Aby ukończyć pracę kreatora, należy podać następujące informacje, które służy do uruchamiania Instalatora i zainstaluj rolę serwera lokacji na określonym serwerze:
-    -   Skopiuj pliki instalacyjne z serwera aktywnej lokacji do nowego serwera lokacji w trybie pasywnym, lub określ ścieżkę do lokalizacji, która zawiera zawartość serwera aktywnej lokacji **dysku CD. Najnowsze** folderu.
+4.  마법사를 완료하려면 설치 프로그램을 실행하고 지정된 서버에서 사이트 서버 역할을 설치하는 데 사용되는 다음 정보를 제공해야 합니다.
+    -   활성 사이트 서버에서 새 수동 모드 사이트 서버로 설치 파일을 복사하거나 활성 사이트 서버의 **CD.Latest** 폴더 콘텐츠를 포함하는 위치의 경로를 지정합니다.
 
-    -   Określ tego samego serwera bazy danych lokacji i nazwa bazy danych używane przez serwer lokacji w trybie aktywnym.
+    -   활성 모드 사이트 서버에서 사용되는 것과 동일한 사이트 데이터베이스 서버 및 데이터베이스 이름을 지정합니다.
 
-5.  Configuration Manager instaluje serwer lokacji w trybie pasywnym na określonym serwerze.
+5.  그러면 Configuration Manager는 수동 모드에서 사이트 서버를 지정된 서버에 설치합니다.
 
-Stan instalacji szczegółowe, przejdź do **administracji** > **konfiguracja lokacji** > **witryny**.
--   Wyświetla stan serwera lokacji w trybie pasywnym jako **instalowanie**.
+자세한 설치 상태에 대해 알아보려면 **관리** > **사이트 구성** > **사이트**로 이동합니다.
+-   수동 모드의 사이트 서버 상태는 **설치 중**으로 표시됩니다.
 
--   Wybierz serwer, a następnie kliknij przycisk **Pokaż stan** otworzyć **stan instalacji serwera lokacji** więcej szczegółowych informacji.
-
-
-
-### <a name="promote-the-passive-mode-site-server-to-active-mode"></a>Serwer lokacji w trybie pasywnym na tryb aktywny
-Jeśli chcesz zmienić serwer w trybie pasywnym na tryb aktywny, możesz to zrobić z **węzłów** okienka w **administracji** > **konfiguracja lokacji** > **witryny**. Tak długo, jak można uzyskać dostęp do wystąpienia element SMS_Provider, można uzyskać dostępu do witryny, aby wprowadzić tę zmianę.
-1.  W **węzłów** okienku konsoli programu Configuration Manager, wybierz serwer lokacji w trybie pasywnym, a następnie na Wstążce wybierz **Podnieś poziom aktywny**.
-
-2.  Prosty **stan** dla serwera podwyższasz wyświetla w **węzłów** okienko jako **promowanie**.
-
-3.  Po zakończeniu podwyższenia poziomu **stan** przedstawia kolumny **OK** dla obu nowego *Active* tryb serwera lokacji i nowy *pasywnym* tryb serwera lokacji.
-
-4.  W **administracji** > **konfiguracja lokacji** > **witryny**, nazwę serwera lokacji głównej zawiera teraz nazwę nowej *Active* tryb serwera lokacji.
-Aby uzyskać szczegółowe informacje o tym, **monitorowanie** > **stan serwera lokacji**.
-    -   **Tryb** kolumny identyfikuje serwer, który jest *Active* lub *pasywnym*.
-
-    -   Podczas podwyższania poziomu serwera w trybie pasywnym na tryb aktywny, wybierz serwer lokacji, które są podwyższania poziomu aktywny, a następnie wybierz **Pokaż stan** na Wstążce. Spowoduje to otwarcie **stan podwyższania poziomu serwera lokacji** okna dodatkowych szczegółów na temat procesu.
-
-Serwer lokacji w trybie aktywnym przełącza na tryb pasywny, się pasywnym Rola systemu lokacji. Wszystkie inne role systemu lokacji zainstalowanych na tym komputerze pozostają aktywne i dostępne dla klientów.
+-   자세한 내용을 보려면 서버를 선택한 다음 **상태 표시**를 클릭하여 **사이트 서버 설치 상태**를 엽니다.
 
 
-### <a name="daily-monitoring"></a>Codziennie monitorowania
-Jeśli masz lokacji głównej w trybie pasywnym, należy go monitorować codziennie, aby upewnić się, że pozostaje w trybie aktywnym serwera lokacji i gotowe do użycia. Aby to zrobić, przejdź do **monitorowanie** > **stan serwera lokacji**. W tym miejscu można wyświetlić zarówno w trybie aktywnym, jak i serwerów lokacji w trybie pasywnym.
 
-**Podsumowanie** karty:
--   **Tryb** kolumny identyfikuje serwer, który jest aktywny i pasywne.
--   **Stan** kolumny list **OK** gdy serwer w trybie pasywnym jest zsynchronizowane z serwerem trybie aktywnym.
--   Aby wyświetlić dodatkowe informacje o stanie synchronizacji zawartości, kliknij przycisk **Pokaż stan** ze stanu synchronizacji zawartości. Spowoduje to otwarcie karty Biblioteka zawartości, której możesz spróbować rozwiązać problemy z synchronizacją zawartości.
+### <a name="promote-the-passive-mode-site-server-to-active-mode"></a>수동 모드 사이트 서버를 활성 모드로 수준 올리기
+수동 모드 사이트 서버를 활성 모드로 변경하려는 경우 **관리** > **사이트 구성** > **사이트**의 **노드** 창에서 수행합니다. SMS_Provider의 인스턴스에 액세스할 수만 있으면 해당 사이트에 액세스하여 이러한 변경을 수행할 수 있습니다.
+1.  Configuration Manager 콘솔의 **노드** 창에서 수동 모드의 사이트 서버를 선택한 다음 리본에서 **활성으로 수준 올리기**를 선택합니다.
 
-**Biblioteki zawartości** karty:
--   Widok **stanu** zawartości, który jest synchronizowany z serwera lokacji aktywny na serwerze lokacji w trybie pasywnym.
--   Można wybrać zawartości ze stanem ****, a następnie wybierz pozycję **Synchronizuj wybrane elementy** na Wstążce. Ta akcja próbuje ponownie zsynchronizować tę zawartość ze źródła zawartości na serwerze lokacji w trybie pasywnym. Podczas odzyskiwania, stan jest wyświetlany jako **w toku**, i gdy jest ona zsynchronizowana, wyświetlane jako **Powodzenie**.
+2.  수준을 올리려는 서버의 간단한 **상태**가 **노드** 창에서 **수준 올리기**로 표시됩니다.
 
-### <a name="try-it-out"></a>Wypróbuj
-Spróbuj wykonać następujące zadania, a następnie wyślij do nas **opinii** z **Home** kartę na Wstążce, aby poinformować nas, jak Ci poszło:
--   Lokację główną można zainstalować w trybie pasywnym.
--   I podwyższyć poziom serwera lokacji w trybie pasywnym, aby stał się aktywny tryb serwera lokacji przy użyciu konsoli i Potwierdź zmianę stanu dla obu serwerów lokacji.
+3.  수준 올리기가 끝나면 새 *활성* 모드 사이트 서버 및 새 *수동* 모드 사이트 서버 둘 다의 **상태** 열에 **확인**이 표시됩니다.
+
+4.  **관리** > **사이트 구성** > **사이트**에서 이제 기본 사이트 서버의 이름에 새 *활성* 모드 사이트 서버의 이름이 표시됩니다.
+자세한 상태를 보려면 **모니터링** > **사이트 서버 상태**로 이동합니다.
+    -   **모드** 열에는 *활성* 또는 *수동* 서버가 식별됩니다.
+
+    -   수동 모드에서 활성 모드로 서버의 수준을 올리는 경우 활성으로 수준을 올리려는 사이트 서버를 선택하고 리본에서 **상태 표시**를 선택합니다. 이렇게 하면 프로세스에 대한 추가 세부 정보를 표시하는 **사이트 서버 수준 올리기 상태** 창이 열립니다.
+
+활성 모드의 사이트 서버가 수동 모드로 전환될 경우 사이트 시스템 역할만 수동으로 지정됩니다. 해당 컴퓨터에 설치된 다른 모든 사이트 시스템은 활성 상태를 유지하며 클라이언트에서 액세스할 수 있습니다.
 
 
-## <a name="include-trust-for-specific-files-and-folders-in-a-device-guard-policy"></a>Obejmują zaufania dla określonych plików i folderów w zasadach ochrony urządzeń
+### <a name="daily-monitoring"></a>일별 모니터링
+기본 사이트가 수동 모드인 경우 매일 모니터링하여 활성 모드 사이트 서버와 동기화된 상태로 유지하고 사용할 수 있는 상태가 되도록 합니다. 이렇게 하려면 **모니터링** > **사이트 서버 상태**로 이동합니다. 여기서 활성 모드 및 수동 모드 사이트 서버 둘 다를 확인할 수 있습니다.
+
+**요약** 탭:
+-   **모드** 열에는 활성 또는 수동 서버가 식별됩니다.
+-   수동 모드 서버가 활성 모드 서버와 동기화되면 **상태** 열에는 목록을 **확인**이 표시됩니다.
+-   콘텐츠 동기화 상태에 대한 추가 세부 정보를 보려면 콘텐츠 동기화 상태에서 **상태 표시**를 클릭합니다. 이렇게 하면 콘텐츠 동기화 문제를 해결할 수 있는 콘텐츠 라이브러리 탭이 열립니다.
+
+**콘텐츠 라이브러리** 탭에서 다음을 수행합니다.
+-   활성 사이트 서버에서 수동 모드 사이트 서버로 동기화되는 콘텐츠의 **상태**를 봅니다.
+-   상태가 **실패**인 콘텐츠를 선택하고 리본 메뉴에서 **선택한 항목 동기화**를 선택할 수 있습니다. 이렇게 하면 콘텐츠 원본에서 해당 콘텐츠를 수동 모드 사이트 서버와 다시 동기화하려고 시도합니다. 복구 동안에는 상태가 **진행 중**으로 표시되고, 동기화된 후에는 **성공**으로 표시됩니다.
+
+### <a name="try-it-out"></a>기능 직접 사용해 보기
+다음 작업을 완료한 다음 리본 메뉴의 **홈** 탭에서 **사용자 의견**을 전송하여 작동 상황을 알려주세요.
+-   기본 사이트는 수동 모드로 설치할 수 없습니다.
+-   콘솔을 사용하여 수동 모드 사이트 서버를 활성 모드 사이트 서버로 수준을 올릴 수 있으며 두 사이트 서버의 상태 변경 결과를 확인할 수 있습니다.
+
+
+## <a name="include-trust-for-specific-files-and-folders-in-a-device-guard-policy"></a>특정 파일 및 폴더에 대한 트러스트를 Device Guard 정책에 포함
 <!-- 1324676 -->
-W tej wersji dodano więcej możliwości [ochrony urządzeń](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager) Zarządzanie zasadami
+이 릴리스에서는 [Device Guard](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager) 정책 관리에 기능이 추가되었습니다.
 
-Teraz można opcjonalnie dodawać zaufania dla określonych plików, folderów w zasadach ochrony urządzeń. Dzięki temu można:
+이제 Device Guard 정책에서 필요에 따라 폴더의 특정 파일에 대해 트러스트를 추가할 수 있습니다. 이를 통해 다음을 수행할 수 있습니다.
 
-1.  Rozwiązać problemy za pomocą zachowań zarządzanych Instalatora
-2.  Zaufanie aplikacji z biznesowych, których nie można wdrożyć z programu Configuration Manager
-3.  Zaufanie aplikacji, które są objęte obrazu wdrożenia systemu operacyjnego.
+1.  관리되는 설치 관리자 동작 문제 해결
+2.  Configuration Manager로 배포할 수 없는 LOB(기간 업무) 앱 신뢰
+3.  운영 체제 배포 이미지에 포함된 앱 신뢰
 
-### <a name="try-it-out"></a>Wypróbuj
+### <a name="try-it-out"></a>기능 직접 사용해 보기
 
-1.  Podczas tworzenia zasad ochrony urządzeń, na karcie dołączenia Kreatora zasad tworzenia ochrony urządzeń, kliknij przycisk **Dodaj**.
-2.  W **Dodawanie zaufanego pliku lub folderu** okna dialogowego wprowadź informacje o pliku lub folderu, który ma zostać zaufania. Można określić ścieżkę lokalną pliku lub folderu lub połączyć do zdalnego urządzenia, do którego masz uprawnienia do połączenia i określ ścieżkę pliku lub folderu na tym urządzeniu.
-3.  Ukończ pracę kreatora.
+1.  Device Guard 정책을 만드는 동안 Device Guard 정책 만들기 마법사의 포함 탭에서 **추가**를 클릭합니다.
+2.  **신뢰할 수 있는 파일 또는 폴더 추가** 대화 상자에서 신뢰하려는 파일 또는 폴더에 대한 정보를 지정합니다. 로컬 파일 또는 폴더 경로를 지정하거나 연결할 수 잇는 권한이 있는 원격 장치에 연결한 후 해당 장치의 파일 또는 폴더 경로를 지정할 수 있습니다.
+3.  마법사를 완료합니다.
 
 
-## <a name="hide-task-sequence-progress"></a>Ukryj postęp sekwencji zadań
+## <a name="hide-task-sequence-progress"></a>작업 순서 진행률 숨기기
 <!-- 1354291 -->
-W tej wersji możesz kontrolować termin jego postęp sekwencji zadań jest wyświetlana dla użytkowników końcowych za pomocą nowej zmiennej. W sekwencji zadań, użyj **Ustaw zmienną sekwencji zadań** krok, aby ustawić wartość **TSDisableProgressUI** zmiennej, aby ukryć lub wyświetlić postęp sekwencji zadań. Służy Ustaw zmienną sekwencji zadań krok wiele razy w sekwencji zadań można zmienić wartości dla zmiennej. Dzięki temu można ukrywać lub wyświetlać postęp sekwencji zadań w różne sekcje sekwencji zadań.
+이 릴리스에서는 새 변수를 사용하여 최종 사용자에게 작업 순서 진행률이 표시되는 시기를 제어할 수 있습니다. 작업 순서에서 **작업 순서 변수 설정** 단계를 사용하여 작업 순서 진행률을 표시하거나 숨기도록 **TSDisableProgressUI** 변수의 값을 설정합니다. 한 작업 순서에서 작업 순서 변수 설정 단계를 여러 번 사용하여 변수 값을 변경할 수 있습니다. 이렇게 하면 작업 순서 진행률을 작업 순서의 여러 섹션에서 숨기거나 표시할 수 있습니다.
 
-#### <a name="to-hide-task-sequence-progress"></a>Aby ukryć postęp sekwencji zadań
-W edytorze sekwencji zadań, użyj [Ustaw zmienną sekwencji zadań](/sccm/osd/understand/task-sequence-steps#BKMK_SetTaskSequenceVariable) krok, aby ustawić wartość **TSDisableProgressUI** zmienną **True** ukrycia postęp sekwencji zadań.
+#### <a name="to-hide-task-sequence-progress"></a>작업 순서 진행률을 숨기려면
+작업 순서 진행률을 숨기려면 작업 순서 편집기에서 [작업 순서 변수 설정](/sccm/osd/understand/task-sequence-steps#BKMK_SetTaskSequenceVariable) 단계를 사용하여 **TSDisableProgressUI** 변수를 **True**로 설정합니다.
 
-#### <a name="to-display-task-sequence-progress"></a>Aby wyświetlić postęp sekwencji zadań
-W edytorze sekwencji zadań, użyj [Ustaw zmienną sekwencji zadań](/sccm/osd/understand/task-sequence-steps#BKMK_SetTaskSequenceVariable) krok, aby ustawić wartość **TSDisableProgressUI** zmienną **False** Aby wyświetlić postęp sekwencji zadań.
+#### <a name="to-display-task-sequence-progress"></a>작업 순서 진행률을 표시하려면
+작업 순서 진행률을 표시하려면 작업 순서 편집기에서 [작업 순서 변수 설정](/sccm/osd/understand/task-sequence-steps#BKMK_SetTaskSequenceVariable) 단계를 사용하여 **TSDisableProgressUI** 변수를 **False**로 설정합니다.
 
-## <a name="specify-a-different-content-location-for-install-content-and-uninstall-content"></a>Określ inną lokalizację zawartości dla zawartości instalacji i odinstalowywania zawartości
+## <a name="specify-a-different-content-location-for-install-content-and-uninstall-content"></a>설치 콘텐츠 및 제거 콘텐츠에 대해 다른 콘텐츠 위치 지정
 <!-- 1097546 -->
-W programie Configuration Manager dzisiaj, można określić lokalizacji instalacji, który zawiera pliki instalacyjne aplikacji. Po określeniu lokalizacji instalacji to również służy jako lokalizacji Odinstaluj zawartości aplikacji.
-Na podstawie opinii, gdy chcesz odinstalować wdrożonej aplikacji i zawartość aplikacji nie znajduje się na komputerze klienckim, następnie klient pobierze wszystkie pliki instalacyjne aplikacji ponownie, zanim aplikacja zostanie odinstalowana.
-Aby rozwiązać ten problem, można teraz określić zarówno instalację zawartości, lokalizacji i opcjonalnie odinstalować lokalizacji zawartości. Ponadto można nie określić lokalizację zawartości Odinstaluj.
+이제 Configuration Manager에서 앱에 대한 설치 파일을 포함하는 설치 위치를 지정합니다. 설치 위치를 지정하면 응용 프로그램 콘텐츠에 대한 제거 위치로도 사용됩니다.
+사용자 의견에 따르면 배포된 응용 프로그램을 제거하려고 하고 앱 콘텐츠가 클라이언트 컴퓨터에 없는 경우 클라이언트가 응용 프로그램이 제거되기 전에 모든 앱 설치 파일을 다시 다운로드됩니다.
+이 문제를 해결하기 위해 이제 설치 콘텐츠 위치 및 선택적 제거 콘텐츠 위치를 둘 다 지정할 수 있습니다. 또한 제거 콘텐츠 위치를 지정하지 않도록 선택할 수도 있습니다.
 
-### <a name="try-it-out"></a>Wypróbuj
+### <a name="try-it-out"></a>기능 직접 사용해 보기
 
-1. We właściwościach typu wdrożenia aplikacji, kliknij przycisk **zawartości** kartę.
-2. Skonfiguruj **zainstalować lokalizacji zawartości** normalnego.
-3. Aby uzyskać **odinstalować ustawienia zawartości**, wybierz jedną z następujących czynności:
-    - **Taka sama, jak zainstalować zawartość** — tej samej lokalizacji zawartości będzie używany niezależnie od tego, czy podczas instalowania lub odinstalowywania aplikacji.
-    - **Brak zawartości Odinstaluj** — wybierz tę opcję, jeśli nie chcesz podać Odinstaluj lokalizacji zawartości dla aplikacji.
-    - **Inna niż instalacja zawartości** — wybierz tę opcję, jeśli chcesz określić Odinstaluj lokalizacji zawartości, która różni się od lokalizacji instalacji zawartości.
-5. W przypadku wybrania **różne od instalacji zawartości**, przejdź do, lub wprowadź lokalizację zawartości aplikacji, która będzie służyć do odinstalowania aplikacji.
-6. Kliknij przycisk **OK** aby zamknąć okno dialogowe właściwości typu wdrożenia.
+1. 응용 프로그램의 배포 유형 속성에서 **콘텐츠** 탭을 클릭합니다.
+2. 평소처럼 **설치 콘텐츠 위치**를 구성합니다.
+3. **제거 콘텐츠 설정**에서 다음 중 하나를 선택합니다.
+    - **설치 콘텐츠와 같음** - 응용 프로그램을 설치하든, 제거하든 관계없이, 동일한 콘텐츠 위치가 사용됩니다.
+    - **제거 콘텐츠 없음** - 응용 프로그램에 대해 제거 콘텐츠 위치는 제공하지 않으려면 이 옵션을 선택합니다.
+    - **설치 콘텐츠와 다름** - 설치 콘텐츠 위치와 다른 제거 콘텐츠 위치를 지정하려면 이 옵션을 선택합니다.
+5. **설치 콘텐츠와 다름**을 선택한 경우 응용 프로그램을 제거하는 데 사용할 응용 프로그램 콘텐츠의 위치를 찾아 이동하거나 입력합니다.
+6. **확인**을 클릭하여 배포 유형 속성 대화 상자를 닫습니다.
 
 
-## <a name="accessibility-improvements"></a>Ulepszenia ułatwień dostępu  
+## <a name="accessibility-improvements"></a>향상된 접근성 기능  
 <!--1253000 -->
-Tej wersji zapoznawczej wprowadzono kilka ulepszeń [funkcje ułatwień dostępu](/sccm/core/understand/accessibility-features) w konsoli programu Configuration Manager. Należą do nich następujące elementy:     
+이 미리 보기에서는 Configuration Manager 콘솔의 [접근성 기능](/sccm/core/understand/accessibility-features)이 일부 개선되었습니다. 여기에는 다음이 포함됩니다.     
 
-**Nowe skróty klawiaturowe do przenoszenia konsoli:**
--   CTRL + M - zestawy skupić się w okienku głównym (centralna).
--   CTRL + T - ustawia okno górny węzeł w okienku nawigacji. Jeśli fokus znajduje się już w tym okienku, fokus jest ustawiona na ostatni węzeł odwiedzonych.
--   CTRL + I - zestawy fokus na pasek stron nadrzędnych poniżej Wstążki.
--   CTRL + L - ustawia okno **wyszukiwania** pola, jeśli jest dostępna.
--   CTRL + D - fokus zestawów do okienka szczegółów, jeśli jest dostępna.
--   ALT — zmiany fokusu i Wstążki.
+**콘솔에서 이동하기 위한 새 바로 가기 키:**
+-   Ctrl+M - 주(가운데) 창에 포커스를 설정합니다.
+-   Ctrl+T - 탐색 창에서 최상위 노드에 포커스를 설정합니다. 포커스가 이미 해당 창에 있는 경우 포커스는 마지막으로 방문한 노드로 설정됩니다.
+-   Ctrl+I - 리본 메뉴 바로 아래의 이동 경로 탐색 막대로 포커스를 설정합니다.
+-   Ctrl+L - 사용 가능한 경우 **검색** 필드로 포커스를 설정합니다.
+-   Ctrl+D - 사용 가능한 경우 세부 정보 창으로 포커스를 설정합니다.
+-   Alt - 포커스를 리본 메뉴 안 및 밖으로 변경합니다.
 
-**Ogólne ulepszenia:**
--   Ulepszona nawigacji w okienku nawigacji po wpisaniu liter nazwy węzła.
--   Nawigacji klawiatury za pośrednictwem widoku głównego i wstążki są teraz cykliczne.
--   Nawigacji klawiatury w okienku szczegółów jest teraz cykliczne. Aby powrócić do poprzedniego obiektu lub okienko, użyj klawiszy Ctrl + D, a następnie Shift + TAB.
--   Po odświeżeniu widoku obszaru roboczego, fokus jest ustawiony w okienku głównym tego obszaru roboczego.
--   Rozwiązano problem umożliwiające czytników ekranu zawiera informacje o nazwach elementów listy.
--   Dodano nazw dostępnych dla wielu formantów strony, który umożliwia czytników ekranu zawiera informacje o ważnych informacji.
+**일반적인 개선 사항:**
+-   노드 이름의 문자를 입력할 때 탐색 창의 탐색이 개선되었습니다.
+-   주 보기 및 리본 메뉴 간의 키보드 탐색이 순환됩니다.
+-   세부 정보 창의 키보드 탐색이 순환됩니다. 이전 개체 또는 창으로 돌아가려면 Ctrl+D를 누른 다음 Shift+탭을 누릅니다.
+-   작업 영역 보기를 새로 고치면 포커스가 작업 영역의 주 창으로 설정됩니다.
+-   화면 판독기에서 목록 항목의 이름이 표시되는 문제가 수정되었습니다.
+-   화면 판독기에 중요한 정보를 표시할 수 있도록 하는 페이지의 여러 컨트롤에 대한 액세스 가능 이름이 추가되었습니다.
 
 
-## <a name="changes-to-the-azure-services-wizard-to-support-upgrade-readiness"></a>Zmiany w Kreatorze usług Azure do obsługi gotowości do uaktualnienia
+## <a name="changes-to-the-azure-services-wizard-to-support-upgrade-readiness"></a>업그레이드 준비 상태를 지원하기 위한 Azure 서비스 마법사 변경
 <!-- 1353331 -->
-Począwszy od tej wersji, użyj Kreatora usługi Azure do skonfigurowania połączenia z programu Configuration Manager do [gotowości do uaktualnienia](/sccm/core/clients/manage/upgrade/upgrade-analytics). Użyj Kreatora upraszcza konfigurację łącznika, za pomocą Kreatora wspólne dla usług Azure powiązane.   
+이 릴리스부터 Azure 서비스 마법사를 사용하여 Configuration Manager에서 [업그레이드 준비 상태](/sccm/core/clients/manage/upgrade/upgrade-analytics)로의 연결을 구성할 수 있습니다. 이 마법사를 사용하면 관련 Azure 서비스에 대한 공통 마법사를 사용하여 커넥터의 구성을 간소화할 수 있습니다.   
 
-Mimo że zmieniono metodę, aby skonfigurować połączenie, wymagania wstępne dotyczące połączenia i sposobie korzystania z gotowości do uaktualnienia pozostają niezmienione.   
+연결을 구성하는 방법이 변경되었으나 연결의 필수 구성 요소 및 업그레이드 준비 상태를 사용하는 방법은 동일합니다.   
 
-### <a name="prerequisites-for-upgrade-readiness"></a>Wymagania wstępne dotyczące gotowości do uaktualnienia
-Wymagania wstępne dotyczące [połączenie gotowości do uaktualnienia](/sccm/core/clients/manage/upgrade/upgrade-analytics#create-a-connection-to-upgrade-readiness) uległy zmianie w porównaniu szczegółowe dla bieżącej gałęzi programu Configuration Manager. Są one powtarzane tutaj dla wygody:  
+### <a name="prerequisites-for-upgrade-readiness"></a>업그레이드 준비 상태에 대한 필수 구성 요소
+[업그레이드 준비 상태에 연결](/sccm/core/clients/manage/upgrade/upgrade-analytics#create-a-connection-to-upgrade-readiness)하기 위한 필수 구성 요소는 Configuration Manager의 현재 분기에 대한 필수 구성 요소에서 달라지지 않았습니다. 여기에서는 편의를 위해 반복해서 설명됩니다.  
 
-**Wymagania wstępne**
--   Aby dodać połączenie, najpierw należy skonfigurować środowiska programu Configuration Manager [punkt połączenia z usługą](/sccm/core/servers/deploy/configure/about-the-service-connection-point) w [trybu online](/sccm/core/servers/deploy/configure/about-the-service-connection-point#a-namebkmkmodesa-modes-of-operation). Po dodaniu połączenia ze środowiskiem go spowoduje także zainstalowanie programu Microsoft Monitoring Agent na komputerze, na którym działa ta rola systemu lokacji.
--   Zarejestruj programu Configuration Manager jako narzędzie do zarządzania "API sieci Web i/lub aplikacji sieci Web" oraz możliwość uzyskania [identyfikator klienta z tej rejestracji](https://azure.microsoft.com/documentation/articles/active-directory-integrating-applications/).
--   Utwórz klucz klienta dla zarejestrowanego narzędzia do zarządzania w usłudze Azure Active Directory.
--   W portalu zarządzania Azure, podaj aplikacji sieci web w zarejestrowany z uprawnieniami do OMS, zgodnie z opisem w [Podaj programu Configuration Manager z uprawnieniami do OMS](https://azure.microsoft.com/documentation/articles/log-analytics-sccm/#provide-configuration-manager-with-permissions-to-oms).
+**전제 조건**
+-   연결을 추가하려면 Configuration Manager 환경에서 먼저 [서비스 연결 지점](/sccm/core/servers/deploy/configure/about-the-service-connection-point)을 [온라인 모드](/sccm/core/servers/deploy/configure/about-the-service-connection-point#a-namebkmkmodesa-modes-of-operation)로 구성해야 합니다. 사용자 환경에 연결을 추가하면 이 사이트 시스템 역할을 실행하는 컴퓨터에 Microsoft Monitoring Agent도 설치됩니다.
+-   Configuration Manager를 "웹 응용 프로그램 및/또는 Web API" 관리 도구로 등록하고 [이 등록의 클라이언트 ID](https://azure.microsoft.com/documentation/articles/active-directory-integrating-applications/)를 받습니다.
+-   Azure Active Directory에서 등록된 관리 도구에 대한 클라이언트 키를 만듭니다.
+-   Azure 관리 포털에서 [Configuration Manager에 OMS에 대한 사용 권한 제공](https://azure.microsoft.com/documentation/articles/log-analytics-sccm/#provide-configuration-manager-with-permissions-to-oms)에 설명된 대로 OMS에 액세스할 수 있는 권한을 등록된 웹앱에 제공합니다.
 
 > [!IMPORTANT]       
-> Podczas konfigurowania uprawnień dostępu OMS, należy wybrać **współautora** roli i przypisz mu uprawnienia do grupy zasobów w zarejestrowany aplikacji.
+> OMS에 액세스할 수 있는 권한을 구성하는 경우 **참가자** 역할을 선택하고 등록된 앱의 리소스 그룹에 사용 권한을 할당해야 합니다.
 
-Po skonfigurowaniu wymagań wstępnych, można przystąpić do utworzenia połączenia za pomocą kreatora.
+필수 구성 요소를 구성한 후에는 마법사를 사용하여 연결을 만들 수 있습니다.
 
-### <a name="use-the-azure-services-wizard-to-configure-upgrade-readiness"></a>Użyj kreatora usług Azure, aby skonfigurować gotowości do uaktualnienia
-1.  W konsoli przejdź do **administracji** > **omówienie** > **usługi w chmurze** > **usług Azure**, a następnie wybierz **Konfigurowanie usług Azure** z **Home** karty wstążki, aby uruchomić **Kreator usług Azure**.
+### <a name="use-the-azure-services-wizard-to-configure-upgrade-readiness"></a>Azure 서비스 마법사를 사용하여 업그레이드 준비 상태 구성
+1.  콘솔에서 **관리** > **개요** > **클라우드 서비스** > **Azure 서비스**로 이동한 후 리본 메뉴의 **홈** 탭에서 **Azure 서비스 구성**을 선택하여 **Azure 서비스 마법사**를 시작합니다.
 
-2.  Na **usług Azure** wybierz pozycję **uaktualnienia łącznik gotowości**, a następnie kliknij przycisk **dalej**.
+2.  **Azure 서비스** 페이지에서 **업그레이드 준비 커넥터**를 선택한 후 **다음**을 클릭합니다.
 
-3.  Na **aplikacji** Określ Twojej **środowiska platformy Azure** (wersja zapoznawcza technical preview obsługuje tylko chmury publicznej). Następnie kliknij przycisk **importu** otworzyć **importowania aplikacji** okna.
+3.  **앱** 페이지에서 **Azure 환경**(기술 미리 보기는 공용 클라우드만 지원함)을 지정합니다. 그런 후 **가져오기**를 클릭하여 **앱 가져오기** 창을 엽니다.
 
-4.  W **importowania aplikacji** okna, określ szczegóły dla aplikacji sieci web, która już istnieje w usługi Azure AD.
-    -   Podaj przyjazną nazwę dla nazwy dzierżawy Azure AD. Następnie należy określić identyfikator dzierżawcy, nazwa aplikacji, Identyfikatora klienta, klucz tajny dla aplikacji sieci web platformy Azure i identyfikator URI aplikacji.
-    -   Kliknij przycisk **Sprawdź**, a jeśli to się powiedzie, kliknij przycisk **OK** aby kontynuować.
+4.  **앱 가져오기** 창에서 Azure AD에 이미 존재하는 웹앱에 대한 세부 정보를 지정합니다.
+    -   Azure AD 테넌트 이름을 입력합니다. 그런 다음 테넌트 ID, 응용 프로그램 이름, 클라이언트 ID, Azure Web App의 비밀 키, 앱 ID URI를 지정합니다.
+    -   **확인**을 클릭하고 성공하면 **확인**을 클릭하여 계속합니다.
 
-5.   Na **konfiguracji** Określ subskrypcji, grupy zasobów i mają być używane dla tego połączenia, aby uaktualnić gotowości obszaru roboczego analizy systemu Windows.  
+5.   **구성** 페이지에서 업그레이드 준비 상태에 대한 이 연결에 사용하려는 구독, 리소스 그룹 및 Windows Analytics 작업 영역을 지정합니다.  
 
-6.  Kliknij przycisk **dalej** można przejść do **Podsumowanie** strony, a następnie Ukończ pracę kreatora, aby utworzyć połączenie.
+6.  **다음**을 클릭하여 **요약** 페이지로 이동한 후 마법사를 완료하여 연결을 생성합니다.
 
 
-## <a name="new-client-settings-for-cloud-services"></a>Nowe ustawienia klienta dla usługi w chmurze
+## <a name="new-client-settings-for-cloud-services"></a>클라우드 서비스에 대한 새 클라이언트 설정
 <!-- 1319883 -->
 
-W tej wersji dodano dwa nowe ustawienia klienta programu Configuration Manager. Znajdują się one w **usługi w chmurze** sekcji.  Te ustawienia zapewniają następujące możliwości:
+이 릴리스에서는 두 개의 새 클라이언트 설정을 Configuration Manager에 추가했습니다. 이러한 설정은 **클라우드 서비스** 섹션에 포함되어 있습니다.  이러한 설정은 다음과 같은 기능을 제공합니다.
 
-- Formant klientów programu Configuration Manager, które mogą uzyskiwać dostęp do bramy zarządzania skonfigurowanym chmury.
-- Automatyczne rejestrowanie klientów programu Configuration Manager przyłączonych do domeny systemu Windows 10 w usłudze Azure Active Directory.
+- 구성된 클라우드 관리 게이트웨이에 액세스할 수 있는 Configuration Manager 클라이언트를 제어합니다.
+- Windows 10 도메인에 연결된 Configuration Manger 클라이언트를 Azure Active Directory에 자동으로 등록합니다.
 
-Te nowe ustawienia ułatwić wykonywanie funkcji opisanych w [Technical Preview programu Configuration Manager 1705](/sccm/core/get-started/capabilities-in-technical-preview-1705#new-capabilities-for-azure-ad-and-cloud-management).
+이러한 새 설정은 [Configuration Manager 1705 Technical Preview](/sccm/core/get-started/capabilities-in-technical-preview-1705#new-capabilities-for-azure-ad-and-cloud-management)에 설명된 기능을 완료하는 데 도움이 됩니다.
 
-### <a name="before-you-start"></a>Przed rozpoczęciem
+### <a name="before-you-start"></a>시작하기 전에
 
-Musi mieć zainstalowane i skonfigurowane Azure AD Connect między lokalnymi usługi Active Directory i dzierżawy usługi Azure AD.
+온-프레미스 Active Directory와 Azure AD 테넌트 간에 Azure AD Connect를 설치하고 구성해야 합니다.
 
-Jeśli usuniesz połączenia urządzenia nie są wyrejestrowane, ale zarejestruje żadnych nowych urządzeń.
+연결을 제거하는 경우 장치는 등록 취소되지 않지만 새 장치는 등록되지 않습니다.
 
-### <a name="try-it-out"></a>Wypróbuj
+### <a name="try-it-out"></a>기능 직접 사용해 보기
 
-1. Skonfiguruj w poniższej sekcji (znalezione w usługach chmury) ustawienia klienta, korzystając z informacji w [sposób konfigurowania ustawień klienta](/sccm/core/clients/deploy/configure-client-settings).
-    -   **Automatycznego rejestrowania nowych urządzeń przyłączonych do domeny systemu Windows 10 w usłudze Azure Active Directory** — ustawioną **tak** (ustawienie domyślne) lub **nr**.
-    -   **Umożliwia klientom używać bramy zarządzania chmury** — ustawioną **tak** (ustawienie domyślne) lub **nr**.
-2.  Wdróż ustawienia klienta w wymaganej kolekcji urządzeń.
+1. [클라이언트 설정 구성 방법](/sccm/core/clients/deploy/configure-client-settings)의 정보를 사용하여 다음 클라이언트 설정(클라우드 서비스에 있음) 섹션을 구성합니다.
+    -   **Azure Active Directory에 새 Windows 10 도메인에 연결된 장치를 자동으로 등록** – **예**(기본값) 또는 **아니요**로 설정합니다.
+    -   **클라이언트가 클라우드 관리 게이트웨이를 사용하도록 설정** – **예**(기본값) 또는 **아니요**로 설정합니다.
+2.  필요한 장치 컬렉션에 클라이언트 설정을 배포합니다.
 
-Aby upewnić się, że urządzenie jest dołączane do usługi Azure AD, uruchom polecenie **/status dsregcmd.exe** w oknie wiersza polecenia. **AzureAdjoined** pole w wynikach **tak** Jeśli urządzenie jest usługi Azure AD przyłączony.
+장치가 Azure AD에 연결되어 있는지 확인하려면 명령 프롬프트 창에서 명령 **dsregcmd.exe /status**를 실행합니다. 결과의 **AzureAdjoined** 필드는 장치가 Azure AD에 연결된 경우 **예**를 표시합니다.
 
-## <a name="create-and-run-powershell-scripts-from-the-configuration-manager-console"></a>Tworzenie i uruchamianie skryptów programu PowerShell z poziomu konsoli programu Configuration Manager
+## <a name="create-and-run-powershell-scripts-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행
 <!-- 1236459 -->
 
-W programie Configuration Manager można wdrożyć skryptów na urządzeniach klienckich przy użyciu pakietów i programów. W tej wersji technical preview dodaliśmy nowe funkcje, które można wykonać następujące czynności:
+Configuration Manager에서 패키지 및 프로그램을 사용하여 클라이언트 장치에 스크립트를 배포할 수 있습니다. 이 Technical Preview에서는 다음 작업을 수행할 수 있는 새 기능을 추가했습니다.
 
-- Importuj skryptów programu PowerShell dla programu Configuration Manager
-- Edytowanie skryptów z poziomu konsoli programu Configuration Manager (w przypadku niepodpisanych skryptów tylko)
-- Skrypty Oznacz jako zatwierdzone lub zabroniona, zwiększające bezpieczeństwo
-- Uruchamianie skryptów w kolekcji komputerom klienckim z systemem Windows oraz lokalnych zarządzanych komputerów z systemem Windows. Nie można wdrożyć skrypty, zamiast tego są uruchamiane w najbliższym czasie rzeczywistym na urządzeniach klienckich.
-- Zbadanie wyników zwróconych przez skrypt w konsoli programu Configuration Manager.
-
-
-### <a name="prerequisites"></a>Wymagania wstępne
-
-Używać skryptów, użytkownik musi należeć do odpowiedniej roli zabezpieczeń programu Configuration Manager.
-
-- **Do zaimportowania, a także tworzenie skryptów** -Twoje konto musi mieć **Utwórz** uprawnienia dla **skryptów programu SMS** w **Menedżer ustawień zgodności** roli zabezpieczeń.
-- **Do zatwierdzenia lub odmowy skrypty** -Twoje konto musi mieć **Zatwierdź** uprawnienia dla **skryptów programu SMS** w **Menedżer ustawień zgodności** roli zabezpieczeń.
-- **Do uruchamiania skryptów** -Twoje konto musi mieć **Uruchom skrypt** uprawnienia dla **kolekcje** w **Menedżer ustawień zgodności** roli zabezpieczeń.
-
-Aby uzyskać więcej informacji na temat ról zabezpieczeń programu Configuration Manager, zobacz [podstawowe informacje dotyczące administrowania opartego na rolach](/sccm/core/understand/fundamentals-of-role-based-administration).
-
-Domyślnie użytkownicy nie można zatwierdzić skryptu, który one utworzone przez użytkownika. Ponieważ skrypty są wydajne, elastyczne i można wdrożyć na wielu urządzeniach, dodaliśmy nowe podejście daje możliwość rozdzielić role między osoby autorom tego skryptu i osoby, które zatwierdza skryptu. Zapewnia dodatkowy poziom zabezpieczeń przed uruchomieniem skryptu bez nadzoru. Można wyłączyć tego dodatkowej zatwierdzenia, aby ułatwić testowanie, szczególnie w wersji Technical Preview.
-
-Aby umożliwić użytkownikom zatwierdzać własnych skryptów:
-
-1. W konsoli programu Configuration Manager kliknij przycisk **Administracja**.
-2. W obszarze roboczym **Administracja** rozwiń węzeł **Konfiguracja lokacji**, a następnie kliknij przycisk **Lokacje**.
-3. Na liście witryn, wybierz witryny, a następnie na **Home** karcie **witryny** kliknij przycisk **ustawienia hierarchii**.
-4. Na **ogólne** karcie **właściwości ustawień hierarchii** okna dialogowego polu, wyczyść pole wyboru **nie zezwalaj na skryptu autorzy mogą zatwierdzać własnych skryptów**.
+- Configuration Manager에 PowerShell 스크립트 가져오기
+- Configuration Manager 콘솔에서 스크립트 편집(서명되지 않은 스크립트만 해당)
+- 스크립트를 승인 또는 거부로 표시하여 보안 강화
+- Windows 클라이언트 PC 및 온-프레미스 관리 Windows PC 컬렉션에 대해 스크립트를 실행합니다. 스크립트는 배포하지 않아도 됩니다. 클라이언트 장치에서 거의 실시간으로 실행됩니다.
+- Configuration Manager 콘솔에서 스크립트에 의해 반환된 결과를 검토합니다.
 
 
-### <a name="try-it-out"></a>Wypróbuj
+### <a name="prerequisites"></a>전제 조건
 
-#### <a name="import-and-edit-a-script"></a>Importowanie i edytowanie skryptu
+스크립트를 사용하려면 해당 Configuration Manager 보안 역할의 구성원이어야 합니다.
 
-1. W konsoli programu Configuration Manager kliknij przycisk **Biblioteka oprogramowania**.
-2. W **Biblioteka oprogramowania** obszaru roboczego kliknij **skryptów**.
-3. Na **Home** karcie **Utwórz** kliknij przycisk **Tworzenie skryptu**.
-4. Na **skryptu** strony **Tworzenie skryptu** kreatora skonfiguruj następujące opcje:
-    - **Nazwa skryptu** — wprowadź nazwę skryptu. Mimo że można tworzyć wiele skryptów o takiej samej nazwie, to zostanie utrudnić wyszukiwanie skryptów, które są potrzebne w konsoli programu Configuration Manager.
-    - **Język skryptów** — obecnie tylko **PowerShell** skrypty są obsługiwane.
-    - **Importuj** — importowanie skrypt programu PowerShell do konsoli. Skrypt jest wyświetlany w **skryptu** pola.
-    - **Wyczyść** — usuwa bieżący skrypt z **skryptu** pola.
-    - **Skrypt** -wyświetla skrypt aktualnie zaimportowany. Skrypt w tym polu, w razie potrzeby można edytować.
-5. Ukończ pracę kreatora. Nowy skrypt jest wyświetlany w **skryptu** liście ze stanem **oczekiwanie na zatwierdzenie**. Zanim można było uruchomić ten skrypt na urządzeniach klienckich, należy ją zatwierdzić.
+- **스크립트를 가져오고 작성하려면** - 계정의 **준수 설정 관리자** 보안 역할에 **SMS 스크립트**에 대한 **만들기** 권한이 있어야 합니다.
+- **스크립트를 승인하거나 거부하려면** - 계정의 **준수 설정 관리자** 보안 역할에 **SMS 스크립트**에 대한 **승인** 권한이 있어야 합니다.
+- **스크립트를 실행하려면** - 계정의 **준수 설정 관리자** 보안 역할에 **컬렉션**에 대한 **스크립트 실행** 권한이 있어야 합니다.
+
+Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반 관리 기본 사항](/sccm/core/understand/fundamentals-of-role-based-administration)을 참조하세요.
+
+기본적으로 사용자는 작성한 스크립트를 승인할 수 없습니다. 스크립트는 강력하고 다양한 기능을 제공하며 여러 장치에 배포할 수 있으므로 스크립트를 작성하는 사용자와 스크립트를 승인하는 사용자 간에 역할을 분리하는 기능을 제공하는 새로운 개념을 도입했습니다. 이를 통해 감독 없이 스크립트를 실행할 때도 추가적으로 보안을 강화하는 효과를 얻을 수 있습니다. Technical Preview 릴리스 동안 특히 용이한 테스트를 위해 이러한 보조 승인을 해제할 수 있습니다.
+
+사용자가 자신의 스크립트를 승인하도록 허용하려면
+
+1. Configuration Manager 콘솔에서 **관리**를 클릭합니다.
+2. **관리** 작업 영역에서 **사이트 구성**을 확장하고 **사이트**를 클릭합니다.
+3. 사이트 목록에서 사이트를 선택한 후 **홈** 탭의 **사이트** 그룹에서 **계층 설정**을 클릭합니다.
+4. **계층 구조 설정 속성** 대화 상자의 **일반** 탭에서 **스크립트 작성자가 스크립트를 승인하도록 허용 안 함** 확인란을 선택 취소합니다.
 
 
-#### <a name="approve-or-deny-a-script"></a>Zatwierdzanie lub odrzucanie skryptu
+### <a name="try-it-out"></a>기능 직접 사용해 보기
+
+#### <a name="import-and-edit-a-script"></a>스크립트 가져오기 및 편집
+
+1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리**를 클릭합니다.
+2. **소프트웨어 라이브러리** 작업 영역에서 **스크립트**를 클릭합니다.
+3. **홈** 탭의 **만들기** 그룹에서 **스크립트 만들기**를 클릭합니다.
+4. **스크립트 만들기** 마법사의 **스크립트** 페이지에서 다음을 구성합니다.
+    - **스크립트 이름** - 스크립트의 이름을 입력합니다. 여러 스크립트를 같은 이름으로 만들 수 있지만 Configuration Manager 콘솔에서 필요한 스크립트를 찾는 것이 더 어려워집니다.
+    - **스크립트 언어** - 현재 **PowerShell** 스크립트만 지원됩니다.
+    - **가져오기** - 콘솔로 PowerShell 스크립트를 가져옵니다. 스크립트는 **스크립트** 필드에 표시됩니다.
+    - **지우기** - **스크립트** 필드에서 현재 스크립트를 제거합니다.
+    - **스크립트** - 현재 가져온 스크립트를 표시합니다. 필요에 따라 이 필드에서 스크립트를 편집할 수 있습니다.
+5. 마법사를 완료합니다. 새 스크립트가 **승인 대기 중** 상태로 **스크립트** 목록에 표시됩니다. 클라이언트 장치에서 이 스크립트를 실행하려면 먼저 승인해야 합니다.
+
+
+#### <a name="approve-or-deny-a-script"></a>스크립트 승인 또는 거부
 
 
 
-Przed uruchomieniem skryptu, musi być zatwierdzony. Aby zatwierdzić skryptu:
+스크립트를 실행하려면 먼저 승인을 받아야 합니다. 스크립트를 승인하려면
 
-1. W konsoli programu Configuration Manager kliknij przycisk **Biblioteka oprogramowania**.
-2. W **Biblioteka oprogramowania** obszaru roboczego kliknij **skryptów**.
-3. W **skryptu** wybierz skrypt, aby zaakceptować lub odrzucić, a następnie na **Home** karcie **skryptu** kliknij przycisk **Zatwierdź/Deny**.
-4. W **Zatwierdź lub odmówić skryptu** okno dialogowe **Zatwierdź**, lub **Odmów** skryptu i opcjonalnie wprowadź komentarz dotyczący decyzji. Jeśli użytkownik zezwoli na skryptu, nie można uruchomić na urządzeniach klienckich.
-5. Ukończ pracę kreatora. W **skryptu** listy, zobaczysz **stan zatwierdzenia** zmiany kolumny w zależności od akcja została wykonana.
+1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리**를 클릭합니다.
+2. **소프트웨어 라이브러리** 작업 영역에서 **스크립트**를 클릭합니다.
+3. **스크립트** 목록에서 승인 또는 거부하려는 스크립트를 선택한 후 **홈** 탭의 **스크립트** 그룹에서 **승인/거부**를 클릭합니다.
+4. **스크립트 승인 또는 거부** 대화 상자에서 스크립트를 **승인** 또는 **거부**한 다음, 필요에 따라 이와 같은 결정에 대한 설명을 입력합니다. 스크립트를 거부하는 경우 클라이언트 장치에서 실행할 수 없습니다.
+5. 마법사를 완료합니다. **스크립트** 목록에서 **승인 상태** 열이 수행한 작업에 따라 변경됩니다.
 
-#### <a name="run-a-script"></a>Uruchom skrypt
+#### <a name="run-a-script"></a>스크립트 실행
 
-Po zatwierdzeniu skryptu, mogą być uruchamiane na kolekcję, którą wybierzesz.
+스크립트가 승인되면 선택한 컬렉션에 대해 실행할 수 있습니다.
 
-1. W konsoli programu Configuration Manager kliknij przycisk **Zasoby i zgodność**.
-2. W obszarze roboczym **Zasoby i zgodność** kliknij przycisk **Kolekcje urządzeń**.
-3. W **kolekcje urządzeń** kliknij kolekcję urządzeń, na których chcesz uruchomić skrypt.
-3. Na **Home** karcie **wszystkie systemy** kliknij przycisk **Uruchom skrypt**.
-4. Na **skryptu** strony **Uruchom skrypt** kreatora wybierz skrypt z listy. Wyświetlane są tylko zatwierdzone skrypty. Kliknij przycisk **dalej**, a następnie Zakończ pracę kreatora.
+1. Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.
+2. **자산 및 호환성** 작업 영역에서 **장치 컬렉션**을 클릭합니다.
+3. **장치 컬렉션** 목록에서 스크립트를 실행하려는 장치 컬렉션을 클릭합니다.
+3. **홈** 탭의 **모든 시스템** 그룹에서 **스크립트 실행**을 클릭합니다.
+4. **스크립트 실행** 마법사의 **스크립트** 페이지에서 목록에 있는 스크립트를 선택합니다. 승인된 스크립트만 표시됩니다. **다음**을 클릭하여 마법사를 완료합니다.
 
-#### <a name="monitor-a-script"></a>Monitor skryptu
+#### <a name="monitor-a-script"></a>스크립트 모니터링
 
-Po uruchomieniu skryptu na urządzeniach klienckich, użyj tej procedury, aby monitorować powodzenie operacji.
+클라이언트 장치에 대해 스크립트를 실행한 후 다음 절차를 사용하여 작업의 성공 여부를 모니터링합니다.
 
-1. W konsoli programu Configuration Manager kliknij **monitorowanie**.
-2. W **monitorowanie** obszaru roboczego kliknij **wyniki skryptu**.
-3. W **wyniki skryptu** listy, wyświetlania wyników dla każdego skryptu uruchomionego na urządzeniach klienckich. Kod zakończenia skryptu **0**, zwykle wskazuje, czy skrypt został uruchomiony pomyślnie.
+1. Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.
+2. **모니터링** 작업 영역에서 **스크립트 결과**를 클릭합니다.
+3. **스크립트 결과** 목록에서 클라이언트 장치에서 실행한 각 스크립트에 대한 결과를 확인합니다. 스크립트 종료 코드 **0**은 일반적으로 스크립트가 성공적으로 실행되었음을 나타냅니다.
 
-## <a name="pxe-network-boot-support-for-ipv6"></a>Obsługa rozruchu środowiska PXE sieci IPv6
+## <a name="pxe-network-boot-support-for-ipv6"></a>IPv6에 대한 PXE 네트워크 부팅 지원
 <!-- 1269793 -->
-Można teraz włączyć obsługę rozruchu środowiska PXE sieci dla protokołu IPv6 uruchomić wdrożenia systemu operacyjnego sekwencji zadań. Po wybraniu tego ustawienia, punkty dystrybucji z włączoną obsługą środowiska PXE będzie obsługiwać protokoły IPv4 i IPv6. Ta opcja nie wymaga usług wdrażania systemu Windows i zatrzymać usług wdrażania systemu Windows, jeśli jest obecny.
+이제 IPv6에 대한 PXE 네트워크 부팅 지원을 사용하도록 설정하여 작업 순서 운영 체제 배포를 시작할 수 있습니다. 이 설정을 사용하는 경우 PXE 사용 배포 지점은 IPv4 및 IPv6를 둘 다 지원합니다. 이 옵션은 WDS가 필요하지 않으며 WDS가 있으면 중지합니다.
 
-#### <a name="to-enable-pxe-boot-support-for-ipv6"></a>Aby włączyć obsługę rozruchu środowiska PXE dla protokołu IPv6
-Poniższa procedura umożliwia włączenie opcji do obsługi protokołu IPv6 dla środowiska PXE.
+#### <a name="to-enable-pxe-boot-support-for-ipv6"></a>IPv6에 대한 PXE 부팅 지원을 사용하도록 설정하려면
+다음 절차에 따라 PXE에 대한 IPv6 지원 옵션을 사용하도록 설정합니다.
 
-1. W konsoli programu Configuration Manager, przejdź do **administracji** > **omówienie** > **punktów dystrybucji**i kliknij przycisk **właściwości** dla punktów dystrybucji z włączoną obsługą środowiska PXE.
-2. Na **PXE** wybierz opcję **obsługuje protokół IPv6** włączyć IPv6 obsługę środowiska PXE.
+1. Configuration Manager 콘솔에서 **관리** > **개요** > **배포 지점**으로 이동한 후 PXE 사용 배포 지점에 대한 **속성**을 클릭합니다.
+2. **PXE** 탭에서 **IPv6 지원**을 선택하여 PXE에 대한 IPv6 지원을 사용하도록 설정합니다.
 
-## <a name="manage-microsoft-surface-driver-updates"></a>Zarządzanie aktualizacjami sterownik Microsoft Surface
+## <a name="manage-microsoft-surface-driver-updates"></a>Microsoft Surface 드라이버 업데이트 관리
 <!-- 1098490 -->
-Można teraz używać programu Configuration Manager do zarządzania aktualizacjami sterownik Microsoft Surface.
+이제 Configuration Manager를 사용하여 Microsoft Surface 드라이버 업데이트를 관리할 수 있습니다.
 
-### <a name="prerequisites"></a>Wymagania wstępne
-Wszystkie punkty aktualizacji oprogramowania, należy uruchomić system Windows Server 2016.
+### <a name="prerequisites"></a>전제 조건
+모든 소프트웨어 업데이트 지점에서 Windows Server 2016이 실행되어야 합니다.
 
-### <a name="try-it-out"></a>Wypróbuj
-Spróbuj wykonać następujące zadania, a następnie wyślij do nas **opinii** z **Home** kartę na Wstążce, aby poinformować nas, jak Ci poszło:
-1. Włącz synchronizację dla Microsoft Surface sterowników. Użyj procedury [Konfigurowanie klasyfikacji i produktów](/sccm/sum/get-started/configure-classifications-and-products) i wybierz **obejmują Microsoft Surface sterowniki i aktualizacje oprogramowania układowego** na **klasyfikacje** kartę, aby włączyć sterowniki powierzchni.
-2. [Synchronizuj sterowniki Microsoft Surface](/sccm/sum/get-started/synchronize-software-updates.md).
-3. [Wdrażanie zsynchronizowane Microsoft Surface sterowniki](/sccm/sum/deploy-use/deploy-software-updates)
+### <a name="try-it-out"></a>기능 직접 사용해 보기
+다음 작업을 완료한 다음 리본 메뉴의 **홈** 탭에서 **사용자 의견**을 전송하여 작동 상황을 알려주세요.
+1. Microsoft Surface 드라이버에 대한 동기화를 사용하도록 설정합니다. [분류 및 제품 구성](/sccm/sum/get-started/configure-classifications-and-products)의 절차를 사용하고 **분류** 탭에서 **Microsoft Surface 드라이버 및 펌웨어 업데이트 포함**을 선택하여 Surface 드라이버를 사용하도록 설정합니다.
+2. [Microsoft Surface 드라이버를 동기화](/sccm/sum/get-started/synchronize-software-updates.md)합니다.
+3. [동기화된 Microsoft Surface 드라이버를 배포](/sccm/sum/deploy-use/deploy-software-updates)합니다.
 
-## <a name="configure-windows-update-for-business-deferral-policies"></a>Konfigurowanie usługi Windows Update dla zasad wykluczenia biznesowych
+## <a name="configure-windows-update-for-business-deferral-policies"></a>비즈니스용 Windows 업데이트 지연 정책 구성
 <!-- 1290890 -->
-Można teraz skonfigurować zasady odroczenia urządzeń aktualizacje funkcji systemu Windows 10 lub jakości aktualizacji dla systemu Windows 10 zarządzane bezpośrednio przez usługę Windows Update dla firm. Zasadami odroczenia można zarządzać w nowym **Windows Update dla firm, zasady** węźle **Biblioteka oprogramowania** > **obsługi systemu Windows 10**.
+이제 비즈니스용 Windows 업데이트에서 직접 관리되는 Windows 10 장치에 대한 Windows 10 기능 업데이트 또는 품질 업데이트의 지연 정책을 구성할 수 있습니다. **소프트웨어 라이브러리** > **Windows 10 서비스** 아래의 새 **비즈니스용 Windows 업데이트 정책** 노드에서 지연 정책을 관리할 수 있습니다.
 
-### <a name="prerequisites"></a>Wymagania wstępne
-Urządzenia z systemem Windows 10 zarządzane przez usługę Windows Update dla firm musi mieć połączenie z Internetem.
+### <a name="prerequisites"></a>전제 조건
+비즈니스용 Windows 업데이트에서 관리되는 Windows 10 장치는 인터넷에 연결되어 있어야 합니다.
 
-#### <a name="to-create-a-windows-update-for-business-deferral-policy"></a>Aby utworzyć Windows Update dla firm, zasady odroczenia
-1. W **Biblioteka oprogramowania** > **obsługi systemu Windows 10** > **usługi Windows Update dla firm zasad**
-2. Na **Home** karcie **Utwórz** grupy wybierz **tworzenia usługi Windows Update dla firm zasady** otworzyć utworzyć Windows Update dla firm Kreatora zasad.
-3. Na **ogólne** Podaj nazwę i opis zasad.
-4. Na **zasady odroczenia** skonfiguruj, czy mają być odroczone lub wstrzymać aktualizacje funkcji.    
-    Aktualizacje funkcji są zazwyczaj nowe funkcje w systemie Windows. Po skonfigurowaniu **gałąź gotowości poziom** ustawienie, można zdefiniować czy i jak długo ma być odroczenie odbieranie aktualizacje funkcji po ich dostępności firmy Microsoft.
-    - **Gałąź gotowości poziom**: Ustaw gałąź w przypadku którego urządzenia będzie odbierać aktualizacje systemu Windows (Current Branch lub Current Branch for Business).
-    - **Okres odroczenia (dni)**:  Określ liczbę dni, dla których aktualizacje funkcji zostanie opóźnione. W przypadku opóźnienia, otrzymywać te aktualizacje funkcji na okres 180 dni od ich wydania.
-    - **Uruchamianie funkcji aktualizacji Wstrzymaj**: Określ, czy można wstrzymać urządzeń z otrzymywania aktualizacji funkcji na okres maksymalnie 60 dni od czasu w przypadku wstrzymania aktualizacji. Po upływie maksymalna liczba dni, automatycznie wygaśnie funkcji Wstrzymaj i urządzenia rozpocznie skanowanie aktualizacji do zastosowania aktualizacji systemu Windows. Po tym skanowanie w przypadku wstrzymania aktualizacji ponownie. Aktualizacje funkcji można wznowić, usuwając zaznaczenie pola wyboru.   
-5. Określ, czy mają być odroczone lub wstrzymać aktualizacje jakości.     
-    Jakość aktualizacji są zwykle poprawki i ulepszenia istniejących funkcji systemu Windows i zwykle są publikowane pierwszy wtorek każdego miesiąca, jednak może być zwolnione w dowolnym momencie przez firmę Microsoft. Można określić, czy i jak długo ma być odroczenie pobiera jakość aktualizacje po ich dostępności.
-    - **Okres odroczenia (dni)**: Określ liczbę dni, dla których aktualizacje funkcji zostanie opóźnione. W przypadku opóźnienia, otrzymywać te aktualizacje funkcji na okres 180 dni od ich wydania.
-    - **Wstrzymaj aktualizacje jakości uruchamianie**: Określ, czy można wstrzymać urządzeniom otrzymywanie aktualizacji jakości przez okres do 35 dni od czasu w przypadku wstrzymania aktualizacji. Po upływie maksymalna liczba dni, automatycznie wygaśnie funkcji Wstrzymaj i urządzenia rozpocznie skanowanie aktualizacji do zastosowania aktualizacji systemu Windows. Po tym skanowanie w przypadku wstrzymania aktualizacji ponownie. Można wznowić jakości aktualizacji, usuwając zaznaczenie pola wyboru.
-6. Wybierz **instalować aktualizacje z innymi Products Microsoft** Aby włączyć ustawienie zasad grupy, która odroczenia ustawienia mające zastosowanie do witryny Microsoft Update, a także aktualizacje systemu Windows.
-7. Wybierz **zawierają sterowniki z witryny Windows Update** do automatycznego aktualizowania sterowników z aktualizacji systemu Windows. Jeśli wyczyścisz to ustawienie, aktualizacji sterownika nie można pobrać z witryny Windows Update.
-8. Ukończ pracę kreatora, aby utworzyć nowe zasady opóźnienia.
+#### <a name="to-create-a-windows-update-for-business-deferral-policy"></a>비즈니스용 Windows 업데이트 지연 정책을 만들려면
+1. **소프트웨어 라이브러리** > **Windows 10 서비스** > **비즈니스용 Windows 업데이트 정책**으로 이동합니다.
+2. **홈** 탭의 **만들기** 그룹에서 **비즈니스용 Windows 업데이트 정책 만들기**를 선택하여 비즈니스용 Windows 업데이트 정책 만들기 마법사를 엽니다.
+3. **일반** 페이지에서 정책의 이름 및 설명을 제공합니다.
+4. **지연 정책** 페이지에서 기능 업데이트를 연기할지 또는 일시 중지할지를 구성합니다.    
+    기능 업데이트는 일반적으로 새로운 Windows용 기능입니다. **분기 준비 수준** 설정을 구성한 후에 Microsoft에서 출시한 후에 기능 업데이트 수신을 연기할지 여부 및 연기 기간을 정의할 수 있습니다.
+    - **분기 준비 상태 수준**: 장치가 Windows 업데이트(현재 분기 또는 비즈니스용 현재 분기)를 받을 분기를 설정합니다.
+    - **지연 기간(일)**: 기능 업데이트를 연기할 일 수를 지정합니다. 이러한 기능 업데이트는 출시되고 180일 동안 수신을 연기할 수 있습니다.
+    - **기능 업데이트 시작 일시 중지**: 기능 업데이트를 일시 중지하고 최대 60일 내에 장치에서 기능 업데이트를 받지 못하도록 일시 중지할지 여부를 선택합니다. 최대 기간이 경과되면 일시 중지 기능은 자동으로 만료되고 장치는 Windows 업데이트에서 적용 가능한 업데이트가 있는지 검색합니다. 이 검색 후에 업데이트를 다시 일시 중지할 수 있습니다. 이 확인란을 선택 취소하여 기능 업데이트 일시 중지를 해제할 수 있습니다.   
+5. 품질 업데이트를 연기할지 또는 일시 중지할지를 선택합니다.     
+    품질 업데이트는 일반적으로 기존 Windows 기능에 대한 수정 내용 및 향상된 기능이며, 매월 첫째 화요일에 게시되는 것이 보통입니다. 물론 Microsoft는 언제든지 이러한 업데이트를 출시할 수 있습니다. 출시된 후에 품질 업데이트 수신을 연기할지 여부 및 연기할 기간을 정의할 수 있습니다.
+    - **지연 기간(일)**: 기능 업데이트를 연기할 일 수를 지정합니다. 이러한 기능 업데이트는 출시되고 180일 동안 수신을 연기할 수 있습니다.
+    - **품질 업데이트 시작 일시 중지**: 품질 업데이트를 일시 중지하고 최대 35일 내에 장치에서 기능 업데이트를 받지 못하도록 일시 중지할지 여부를 선택합니다. 최대 기간이 경과되면 일시 중지 기능은 자동으로 만료되고 장치는 Windows 업데이트에서 적용 가능한 업데이트가 있는지 검색합니다. 이 검색 후에 업데이트를 다시 일시 중지할 수 있습니다. 이 확인란을 선택 취소하여 품질 업데이트 일시 중지를 해제할 수 있습니다.
+6. **다른 Microsoft 제품에 대한 업데이트 설치**를 선택하여 지연 설정이 Windows 업데이트 뿐만 아니라 Microsoft 업데이트에도 적용될 수 있게 하는 그룹 정책 설정을 사용하도록 설정합니다.
+7. Windows 업데이트에서 드라이버를 자동으로 업데이트하려면 **Windows 업데이트에 드라이버 포함**을 선택합니다. 이 설정을 선택 취소하면 드라이버 업데이트가 Windows 업데이트에서 다운로드되지 않습니다.
+8. 마법사를 완료하여 새 지연 정책을 만듭니다.
 
-#### <a name="to-deploy-a-windows-update-for-business-deferral-policy"></a>Do wdrażania aktualizacji systemu Windows dla firm, zasady odroczenia
-1. W **Biblioteka oprogramowania** > **obsługi systemu Windows 10** > **usługi Windows Update dla firm zasad**
-2. Na **Home** karcie **wdrożenia** grupy wybierz **wdrażania usługi Windows Update dla firm zasady**.
-3. Skonfiguruj następujące ustawienia:
-    - **Zasady konfiguracji do wdrożenia**: Wybierz usługi Windows Update dla firm zasady, którą chcesz wdrożyć.
-    - **Kolekcja**: Kliknij przycisk **Przeglądaj** aby wybrać kolekcję, w której chcesz wdrożyć zasady.
-    - **Koryguj niezgodne reguły, jeśli są obsługiwane**: Zaznacz, aby automatycznie korygować wszystkie reguły, które są niezgodne dla Instrumentacji zarządzania Windows (WMI), rejestru, skrypty i wszystkich ustawień dla urządzeń przenośnych, które są zarejestrowane przez program Configuration Manager.
-    - **Zezwalaj na korygowanie poza oknem obsługi**: Jeśli okno obsługi zostało skonfigurowane dla kolekcji, w której wdrażasz zasady, Włącz tę opcję, aby pozwolić na korygowanie poza oknem obsługi wartości przy użyciu ustawień zgodności. Aby uzyskać więcej informacji dotyczących okien obsługi, zobacz [używanie okien obsługi](/sccm/core/clients/manage/collections/use-maintenance-windows).
-    - **Generuj alert**: Konfiguruje alert jest generowany, gdy zgodności linii bazowej konfiguracji jest mniejsza niż określony procent określonej daty i godziny. Możesz również określić, czy chcesz wysyłać alert do programu System Center Operations Manager.
-    - **Opóźnienie losowe (godziny)**: Określa okno opóźnienia, aby uniknąć nadmiernego przetwarzania w usłudze rejestracji urządzeń sieciowych. Wartość domyślna to 64 godzin.
-    - **Harmonogram**: Określ harmonogram oceny zgodności oceny wdrożonego profilu na komputerach klienckich. Harmonogram może być prosty lub niestandardowy. Klienci oceniają profile po zalogowaniu się użytkownika.
-4.  Ukończ pracę kreatora, aby wdrożyć profil.
+#### <a name="to-deploy-a-windows-update-for-business-deferral-policy"></a>비즈니스용 Windows 업데이트 지연 정책을 배포하려면
+1. **소프트웨어 라이브러리** > **Windows 10 서비스** > **비즈니스용 Windows 업데이트 정책**으로 이동합니다.
+2. **홈** 탭의 **배포** 그룹에서 **비즈니스용 Windows 업데이트 정책 배포**를 선택합니다.
+3. 다음 설정을 구성합니다.
+    - **배포할 구성 정책**: 배포하려는 비즈니스용 Windows 업데이트 정책을 선택합니다.
+    - **컬렉션**: **찾아보기**를 클릭하여 프로필을 배포할 컬렉션을 선택합니다.
+    - **지원되는 경우 비규격 규칙 재구성**: Configuration Manager에서 등록된 모바일 장치의 레지스트리, 스크립트 및 모든 설정, WMI(Windows Management Instrumentation)에 대해 규격을 준수하지 않는 규칙을 자동으로 수정하도록 선택합니다.
+    - **유지 관리 기간을 벗어나도 수정 허용**: 정책을 배포할 컬렉션에 대해 유지 관리 기간이 구성된 경우 유지 관리 기간 외의 기간에 준수 설정이 값을 수정할 수 있도록 하려면 이 옵션을 사용하도록 설정합니다. 유지 관리 기간에 대한 자세한 내용은 [유지 관리 기간을 사용하는 방법](/sccm/core/clients/manage/collections/use-maintenance-windows)을 참조하세요.
+    - **경고 생성**: 지정된 날짜 및 시간을 기준으로 구성 기준 준수가 지정된 비율에 못 미치는 경우에 생성되는 경고를 구성합니다. 경고를 System Center Operations Manager로 전송할지 여부도 지정할 수 있습니다.
+    - **임의 지연(시)**: 네트워크 장치 등록 서비스의 과도한 처리를 방지하기 위해 지연 기간을 지정합니다. 기본값은 64시간입니다.
+    - **일정**: 클라이언트 컴퓨터에서 배포된 프로필이 평가되는 준수 평가 일정을 지정합니다. 단순 일정 또는 사용자 지정 일정 중에서 지정할 수 있습니다. 사용자가 로그온해 있을 때 클라이언트 컴퓨터에서 프로필을 평가합니다.
+4.  마법사를 완료하여 프로필을 배포합니다.
 
 
 
-## <a name="support-for-entrust-certification-authorities"></a>Obsługa Entrust urzędów certyfikacji
+## <a name="support-for-entrust-certification-authorities"></a>Entrust 인증 기관에 대한 지원
 <!-- 1350740 -->
-Program Configuration Manager obsługuje teraz Entrust urzędów certyfikacji; Dzięki temu dostarczania certyfikatów PFX na urządzeniach zarejestrowanych w programie Microsoft Intune.
+Configuration Manager는 이제 Entrust 인증 기관을 지원합니다. 따라서 Microsoft Intune에 등록된 장치에 PFX 인증서를 전달할 수 있습니다.
 
-Podczas dodawania roli punktu rejestracji certyfikatu w programie Configuration Manager, można skonfigurować Entrust jako urząd certyfikacji. Podczas dodawania nowego profilu certyfikatu, który wystawia certyfikaty PFX, możesz wybrać Microsoft lub Entrust urzędu certyfikacji.
+Configuration Manager에서 인증서 등록 지점 역할을 추가할 때 Entrust를 인증 기관으로 구성할 수 있습니다. PFX 인증서를 발급하는 새 인증서 프로필을 추가할 때는 Microsoft 또는 Entrust 인증 기관을 선택할 수 있습니다.
 
-**Znany problem**: W 1706 technical preview certyfikaty PFX nie są wystawiane na potrzeby urzędów certyfikacji firmy Microsoft. Nie dotyczy to profilów SCEP lub importowanych certyfikatów PFX.
+**알려진 문제**: 1706 Technical Preview에서는 PFX 인증서가 Microsoft 인증 기관에 대해 발급되지 않습니다. 이러한 문제는 가져온 PFX 인증서 또는 SCEP 프로필에는 영향을 주지 않습니다.
 
 
-## <a name="cisco-ipsec-support-for-macos-vpn-profiles"></a>Obsługa Cisco (IPsec) macOS profilów sieci VPN
+## <a name="cisco-ipsec-support-for-macos-vpn-profiles"></a>macOS VPN 프로필에 대한 Cisco(IPSec) 지원
 <!-- 1321367 -->
 
-Można utworzyć macOS profil sieci VPN z Cisco (IPsec) jako typ połączenia. Aby uzyskać więcej informacji, zobacz [tworzenie profilów sieci VPN](https://docs.microsoft.com/en-us/sccm/mdm/deploy-use/create-vpn-profiles#create-vpn-profiles).
+연결 유형으로 Cisco(IPsec)를 사용하여 macOS VPN 프로필을 만들 수 있습니다. 자세한 내용은 [VPN 프로필 만들기](https://docs.microsoft.com/en-us/sccm/mdm/deploy-use/create-vpn-profiles#create-vpn-profiles)를 참조하세요.
 
 
-## <a name="new-windows-configuration-item-settings"></a>Nowe ustawienia elementu konfiguracji systemu Windows
+## <a name="new-windows-configuration-item-settings"></a>새 Windows 구성 항목 설정
 <!-- 1354715 -->
 
-W tej wersji dodano następujące nowe ustawienia, których można użyć w elementach konfiguracji systemu Windows:
+이 릴리스에서는 Windows 구성 항목에서 사용할 수는 다음과 같은 새 설정이 추가되었습니다.
 
-### <a name="password"></a>Hasło
+### <a name="password"></a>암호
 
-- **Szyfrowanie urządzenia**
+- **장치 암호화**
 
-### <a name="device"></a>Urządzenie
+### <a name="device"></a>장치
 
-- **Modyfikacja ustawień regionie (tylko wersja desktop)**
-- **Modyfikacja ustawień zasilania i uśpienia**
-- **Modyfikacja ustawień języka**
-- **System czas modyfikacji**
-- **Zmiana nazwy urządzenia**
+- **지역 설정 수정(데스크톱만 해당)**
+- **전원 및 절전 모드 설정 수정**
+- **언어 설정 수정**
+- **시스템 시간 수정**
+- **장치 이름 수정**
 
-### <a name="store"></a>Magazyn
+### <a name="store"></a>스토어
 
-- **Automatyczna aktualizacja aplikacji ze sklepu**
-- **Użyj tylko prywatnego magazynu**
-- **Uruchamianie aplikacji zdalnych magazynu**
+- **스토어에서 앱 자동 업데이트**
+- **개인 저장소만 사용**
+- **스토어에서 시작된 앱 시작**
 
 ### <a name="microsoft-edge"></a>Microsoft Edge
 
-- **Blokowanie dostępu do informacji o: flagi**
-- **Filtr SmartScreen monitu o zastąpienie**
-- **Filtr SmartScreen monitu o zastąpienie plików**
-- **Adres IP hosta lokalnego WebRTC**
-- **Domyślny aparat wyszukiwania**
-- **Adres URL OpenSearch XML**
-- **Strony główne (tylko wersja desktop)**
+- **플래그에 대한 액세스 차단**
+- **SmartScreen 프롬프트 재정의**
+- **파일에 대한 SmartScreen 프롬프트 재정의**
+- **WebRTC 로컬 호스트 IP 주소**
+- **기본 검색 엔진**
+- **OpenSearch XML URL**
+- **홈페이지(데스크톱만 해당)**
 
-Aby uzyskać więcej informacji na temat ustawień zgodności, zobacz [zapewnianie zgodności urządzeń](/sccm/compliance/understand/ensure-device-compliance).
+준수 설정에 대한 자세한 내용은 [장치 준수 확인](/sccm/compliance/understand/ensure-device-compliance)을 참조하세요.
 
 
-## <a name="new-device-compliance-policy-rules"></a>Nowe reguły zasad zgodności urządzenia
+## <a name="new-device-compliance-policy-rules"></a>새 장치 준수 정책 규칙
 
-* **Wymagany typ hasła**. Określ, czy użytkownik muszą utworzyć hasła alfanumerycznego i numeryczne hasła. Alfanumeryczne haseł również określić minimalną liczbę zestawów znaków, które muszą mieć hasłem. Są cztery zestawy znaków: Małe litery, wielkie litery, symbole i cyfry.
+* **필수 암호 유형** 사용자가 영숫자 암호를 만들어야 할지, 아니면 숫자 암호를 만들어야 할지를 지정합니다. 영숫자 암호의 경우 암호에 포함해야 할 각 문자 집합의 최소 수도 지정합니다. 문자 집합으로는 소문자, 대문자, 기호, 숫자 등 4가지가 있습니다.
 
-    **Obsługiwane na:**
+    **지원됨:**
     * Windows Phone 8+
-    * Windows 8.1 +
+    * Windows 8.1+
     * iOS 6+
 <br></br>
-* **Debugowanie USB bloku na urządzeniu**. Nie masz ustawień jako debugowanie USB już jest wyłączona w systemie Android pracy urządzeń.
+* **장치에서 USB 디버깅 차단** USB 디버깅은 Android for Work 장치에서 이미 사용되지 않도록 설정되어 있으므로 구성할 필요가 없습니다.
 
-    **Obsługiwane na:**
+    **지원됨:**
     * Android 4.0+
-    * Samsung Knox Standard 4.0+
+    * Samsung KNOX Standard 4.0 이상
 <br></br>
-* **Blokowanie aplikacji z nieznanych źródeł**. Wymagaj, aby urządzenia uniemożliwiały instalację aplikacji z nieznanych źródeł. Nie masz Skonfiguruj to ustawienie, jak Android pracy urządzeń zawsze ograniczyć instalacja z nieznanych źródeł.
+* **알 수 없는 출처의 앱 차단** 장치가 알 수 없는 소스의 앱 설치를 방지해야 합니다. Android for Work 장치는 알 수 없는 출처의 설치를 하상 제한하므로 이 설정은 구성할 필요가 없습니다.
 
-    **Obsługiwane na:**
+    **지원됨:**
     * Android 4.0+
-    * Samsung Knox Standard 4.0+
+    * Samsung KNOX Standard 4.0 이상
 <br></br>
-* **Wymagaj skanowania zagrożeń na aplikacje**. To ustawienie określa, że funkcja aplikacji Sprawdź, czy jest włączona na urządzeniu.
+* **앱에서 위협 검색 필요** 이 설정은 장치에서 앱 확인 기능이 사용되도록 구성되어 있음을 지정합니다.
 
-    **Obsługiwane na:**
-    * System android 4.2 za pośrednictwem 4.4
-    * Samsung Knox Standard 4.0+
+    **지원됨:**
+    * Android 4.2 ~ 4.4
+    * Samsung KNOX Standard 4.0 이상
 
-Zobacz [tworzenie i wdrażanie zasad zgodności urządzenia](https://docs.microsoft.com/sccm/mdm/deploy-use/create-compliance-policy) próby nowe reguły zgodności urządzenia.
+새 장치 준수 규칙을 사용해 보려면 [장치 규정 준수 정책 만들기 및 배포](https://docs.microsoft.com/sccm/mdm/deploy-use/create-compliance-policy)를 참조하세요.
 
-## <a name="new-mobile-application-management-policy-settings"></a>Nowe ustawienia zasad zarządzania aplikacjami mobilnymi
-Począwszy od tej wersji, można użyć trzech nowe ustawienia zasad zarządzania aplikacjami mobilnymi:
+## <a name="new-mobile-application-management-policy-settings"></a>새 모바일 응용 프로그램 관리 정책 설정
+이 릴리스부터 3개의 새 MAM(모바일 응용 프로그램 관리) 정책 설정을 사용할 수 있습니다.
 
-- **Zablokuj Przechwytywanie ekranu (tylko urządzenia z systemem Android):** Określa, że możliwości przechwytywania ekranu urządzenia są blokowane podczas korzystania z tej aplikacji.
+- **화면 캡처 차단(Android 장치만 해당):** 이 앱을 사용할 때 장치의 화면 캡처 기능을 차단하도록 지정합니다.
 
-- **Wyłącz synchronizację kontaktów:** Aplikacja uniemożliwia zapisywania danych do aplikacji natywnej kontaktów na urządzeniu.
+- **연락처 동기화 사용 안 함:** 앱에서 장치의 네이티브 연락처 앱에 데이터를 저장하는 것을 방지합니다.
 
-- **Wyłącz drukowanie:** Zapobiega aplikacji z drukowaniem pracy lub szkoły danych.
+- **인쇄 사용 안 함:** 앱에서 회사 또는 학교 데이터를 인쇄하는 것을 방지합니다.
 
-Zobacz [ochrona aplikacji przy użyciu zasad ochrony aplikacji w programie Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/protect-apps-using-mam-policies) próby nowe ustawienia zasad ochrony aplikacji.
+새로운 앱 보호 정책 설정을 사용하려면 [Configuration Manager에서 앱 보호 정책을 사용하여 앱 보호](https://docs.microsoft.com/sccm/mdm/deploy-use/protect-apps-using-mam-policies)를 참조하세요.
 
-## <a name="android-and-ios-enrollment-restrictions"></a>Android i iOS ograniczenia rejestracji
+## <a name="android-and-ios-enrollment-restrictions"></a>Android 및 iOS 등록 제한
 <!-- 1290826 -->
-Począwszy od tej wersji, Administratorzy mogą teraz określić czy użytkowników nie można zarejestrować urządzeń osobistych Android lub iOS w środowisku hybrydowym. Dzięki temu limit zarejestrowane urządzenia do predeclared, urządzenia należące do firmy lub zarejestrowane w usłudze Device Enrollment Program tylko urządzeń z systemem iOS.
+이번 릴리스부터, 관리자는 이제 사용자가 하이브리드 환경에서 개인 Android 또는 iOS 장치를 등록할 수 었도록 지정할 수 있습니다. 이렇게 하면 등록된 장치를 미리 선언된 회사 소유 장치 또는 장치 등록 프로그램에 등록된 iOS 장치으로 제한할 수 있습니다.
 
-### <a name="try-it-out"></a>Podczas próby
-1. W konsoli programu Configuration Manager, w obszarze roboczym **Administracja** , wybierz pozycję **Usługi w chmurze** > **Subskrypcja usługi Microsoft Intune**.
-2. Na **Home** karcie **subskrypcji** grupy, wybierz **Konfiguruj platformy** , a następnie wybierz **Android** lub **iOS**.
-3. Wybierz **osobiście urządzenia należące do bloku**.
+### <a name="try-it-out"></a>기능 직접 사용해 보기
+1. Configuration Manager 콘솔의 **관리 작업** 영역에서 **클라우드 서비스** > **Microsoft Intune 구독**으로 이동합니다.
+2. **홈** 탭의 **구독** 그룹에서 **플랫폼 구성**을 선택하고 **Android** 또는 **iOS**를 선택합니다.
+3. **Intune에서 미리 선언된 장치만 등록 허용**을 선택합니다.
 
-## <a name="android-for-work-application-management-policy-for-copy-paste"></a>Android pracy zasad zarządzania aplikacjami do kopiowania i wklejania
-Zaktualizowaliśmy opisy ustawień dla systemu Android dla elementów roboczych konfiguracji dla **Zezwalaj na udostępnianie między pracą a profilu osobistego danych**.
+## <a name="android-for-work-application-management-policy-for-copy-paste"></a>복사-붙여넣기에 대한 Android for Work 응용 프로그램 관리 정책
+Android for Work 구성 항목 **회사 프로필과 개인 프로필 간의 데이터 공유 허용**에 대한 설정 설명을 업데이트했습니다.
 
-|Przed 1706 Technical Preview | Nowa nazwa opcji | Zachowanie|
+|1706 Technical Preview 이전 | 새 옵션 이름 | 동작|
 |-|-|-|
-|Zapobieganie udostępnianiu wszelkie bariery| Domyślne ograniczenia udostępniania| Pracy na osobistych: Domyślne (Oczekiwano zablokowanie we wszystkich wersjach) <br>Osobiste do pracy: Domyślne (dozwolone w 6.x+, zablokowane na 5.x)|
-|Bez ograniczeń|   Aplikacje w profilu osobistego może obsłużyć żądania z profilu pracy udostępniania| Pracy na osobistych: Dozwolone  <br>Osobiste do pracy: Dozwolone|
-|Aplikacje w profilu pracy może obsłużyć żądania z osobistego udostępniania |Aplikacje w profilu pracy może obsłużyć żądania z osobistego udostępniania |Pracy na osobistych: Domyślny<br>Osobiste do pracy: Dozwolone<br>(Tylko na 5.x przydatne w przypadku, gdy osobiste do pracy jest zablokowana)|
+|경계를 넘은 공유 방지| 기본 공유 제한 사항| 회사-개인: 기본값(모든 버전에서 차단) <br>개인-회사: 기본값(6.x+에서 허용, 5.x에서 차단)|
+|제한 없음|   개인 프로필의 앱에서 회사 프로필의 공유 요청을 처리할 수 있음| 회사-개인: 허용  <br>개인-회사: 허용|
+|회사 프로필의 앱에서 개인 프로필의 공유 요청을 처리할 수 있음 |회사 프로필의 앱에서 개인 프로필의 공유 요청을 처리할 수 있음 |회사-개인: 기본값<br>개인-회사: 허용<br>(개인-회사가 차단된 경우 5.x에서만 유용)|
 
-Żadna z tych opcji bezpośrednio zapobiec kopiowania i wklejania. Dodaliśmy niestandardową wartość ustawienia usługi i aplikacji Portal firmy w 1704, które można skonfigurować w celu zapobieżenia kopiowania i wklejania. Można to skonfigurować w niestandardowy identyfikator URI.
+이러한 어떤 옵션도 복사-붙여넣기 동작을 직접 차단하지 않습니다. 복사-붙여넣기를 방지하도록 구성할 수 있는 1704의 서비스 및 회사 포털 앱에 사용자 지정 설정을 추가했습니다. 이 설정은 사용자 지정 URI를 통해 지정할 수 있습니다.
 
--   OMA-URI: ./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste
--   Typ wartości: Boolean
+-   OMA-URI:  ./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste
+-   값 형식: 부울
 
-Ustawienie DisallowCrossProfileCopyPaste true zapobiega zachowanie kopiowania i wklejania między Android for Work osobistych i profili pracy.
+DisallowCrossProfileCopyPaste을 true로 설정하면 Android for Work 개인 및 회사 프로필 간에 복사-붙여넣기 동작이 방지됩니다.
 
-### <a name="try-it-out"></a>Podczas próby
-1. W konsoli programu Configuration Manager wybierz **zasoby i zgodność** > **omówienie** > **ustawień zgodności** > **elementy konfiguracji**.
-2. Wybierz **Utwórz** Aby utworzyć nowy element konfiguracji oraz określić **nazwa** i **Android for Work**.
-3. Grupy do konfigurowania ustawień urządzenia, wybierz **profilu pracy**i wybierz polecenie **dalej**.
-4. Wybierz wartość dla **Zezwalaj na udostępnianie między pracą a Profile osobiste danych**, a następnie Zakończ pracę kreatora.
+### <a name="try-it-out"></a>기능 직접 사용해 보기
+1. Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > **준수 설정** > **구성 항목**을 선택합니다.
+2. **만들기**를 선택하여 새 구성 항목을 만들고 **이름** 및 **Android for Work**를 지정합니다.
+3. 구성할 장치 설정 그룹에서 **작업 프로필**을 선택하고 **다음**을 선택합니다.
+4. **회사 프로필과 개인 프로필 간의 데이터 공유 허용**에 대한 값을 선택하고 마법사를 완료합니다.
 
-## <a name="device-health-attestation-assessment-for-compliance-policies-for-conditional-access"></a>Ocena zaświadczania o kondycji urządzenia dla zasady zgodności dla dostępu warunkowego
+## <a name="device-health-attestation-assessment-for-compliance-policies-for-conditional-access"></a>조건부 액세스의 준수 정책에 대한 장치 상태 증명 평가
 <!-- 1097546 -->
-Począwszy od tej wersji możesz użyć stan zaświadczania o kondycji jako reguły zasad zgodności dla warunkowego dostępu do zasobów firmy.
+이 릴리스부터 회사 리소스에 대한 조건부 액세스를 위해 장치 상태 증명 상태를 준수 정책 규칙으로 사용할 수 있습니다.
 
-### <a name="try-it-out"></a>Podczas próby
-Wybierz regułę zaświadczania o kondycji w ramach oceny zasad zgodności.
+### <a name="try-it-out"></a>기능 직접 사용해 보기
+장치 상태 증명 규칙을 준수 정책 평가의 일부로 선택합니다.

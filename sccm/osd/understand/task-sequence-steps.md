@@ -6,22 +6,20 @@ ms.date: 03/26/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7c888a6f-8e37-4be5-8edb-832b218f266d
-caps.latest.revision: 26
-caps.handback.revision: 0
+caps.latest.revision: "26"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: b7461f89f483314bd07248bbc9d5dde85ca6b6c2
 ms.openlocfilehash: e0726febc4c36a26c5e067914734838bf2681e6c
-ms.contentlocale: ko-kr
-ms.lasthandoff: 08/03/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="task-sequence-steps-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업 순서 단계
 
@@ -1707,4 +1705,3 @@ true로 평가되는 규칙에 대해 설정할 하나 이상의 변수를 지�
  설치에서 업데이트 검색, 다운로드 및 설치와 같은 동적 업데이트 작업(/DynamicUpdate 명령줄 옵션에 해당)을 수행할지 여부를 지정합니다. 이 설정은 Configuration Manager 소프트웨어 업데이트와 호환되지 않지만 WSUS(독립 실행형) 또는 Windows 업데이트를 사용하여 업데이트를 처리하는 경우 사용할 수 있습니다.  
 
  **재정의 정책 및 기본 Microsoft 업데이트 사용**: 임시로 로컬 정책을 재정의하여 실시간으로 동적 업데이트 작업을 실행하고 컴퓨터가 Windows 업데이트에서 업데이트를 가져오도록 하려면 이 설정을 선택합니다.  
-

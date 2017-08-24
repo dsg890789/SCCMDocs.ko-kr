@@ -6,21 +6,20 @@ ms.date: 11/23/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: d2dacb2d-ab3b-42a2-8dc8-94da31f993c2
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: Nbigman
 ms.author: nbigman
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 31b68ede677df8b86412a334d1d100041a0e659e
 ms.openlocfilehash: 309b0363f9b3ec4a31b8323b9e64c9f73060c281
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="prerequisites-for-wi-fi-and-vpn-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Wi-Fi 및 VPN 프로필에 대한 필수 조건
 
@@ -51,9 +50,3 @@ System Center Configuration Manager의 Wi-Fi 및 VPN 프로필에는 제품 내 
 -   Wi-Fi 프로필을 만들고 관리하려면: **Wi-Fi 프로필**개체에 대한 **작성자 정책**, **보고서 수정**, **읽기** 및 **보고서 실행** 권한이 필요합니다.  
 
  **회사 리소스 액세스 관리자** 보안 역할에는 System Center Configuration Manager에서 Wi-Fi 프로필을 관리하는 데 필요한 이와 같은 권한이 포함됩니다. 자세한 내용은 [Configure security in System Center Configuration Manager](../../core/plan-design/security/configure-security.md)항목을 참조하세요.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

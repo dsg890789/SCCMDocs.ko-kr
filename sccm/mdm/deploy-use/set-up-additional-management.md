@@ -6,22 +6,20 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4877d674-6bbc-4e16-810c-daad70c74daa
-caps.latest.revision: 18
-caps.handback.revision: 0
+caps.latest.revision: "18"
+caps.handback.revision: "0"
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
 ms.openlocfilehash: 947d2a85f2ac68c7ccaf9a1237fd60e89e7d1d10
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="set-up-additional-management-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 추가 관리 설정
 
@@ -53,4 +51,3 @@ ms.lasthandoff: 05/17/2017
 
 > [!div class="button"]
 [< 이전 단계](enable-platform-enrollment.md)  [다음 단계 >](verify-mdm-configuration.md)
-

@@ -6,23 +6,20 @@ ms.date: 2/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 23ab4f94-7bfe-436e-8a6a-029409a2730c
-caps.latest.revision: 10
-caps.handback.revision: 0
+caps.latest.revision: "10"
+caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
-ms.openlocfilehash: 156d6679817b81ca27fbd2b8836431396e1e6b23
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 2bcc6dd84b236187ea9cbfa0b85c25e7ec25719c
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="prerequisites-for-asset-intelligence-in-system-center-configuration-manager"></a>System Center Configuration Manager의 Asset Intelligence에 대한 필수 조건
 
@@ -50,4 +47,3 @@ System Center Configuration Manager의 Asset Intelligence에는 외부 종속성
 |소프트웨어 계량 클라이언트 에이전트 종속성|다양한 Asset Intelligence 소프트웨어 보고서는 데이터에 대한 소프트웨어 계량 클라이언트 에이전트에 따라 달라집니다. 소프트웨어 계량 클라이언트 에이전트를 사용하도록 설정하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 소프트웨어 계량을 사용하여 앱 사용 모니터링](../../../../apps/deploy-use/monitor-app-usage-with-software-metering.md)을 참조하세요.<br /><br /> 다음 Asset Intelligence 보고서는 데이터를 제공하는 소프트웨어 계량 클라이언트 에이전트에 따라 달라집니다.<br /><br /> -   소프트웨어 07A - 컴퓨터 수별 최근 사용된 실행 파일<br />-   소프트웨어 07B - 지정된 실행 파일을 최근 사용한 컴퓨터<br />-   소프트웨어 07C - 특정 컴퓨터에서 최근 사용된 실행 파일<br />-   소프트웨어 08A - 사용자 수별 최근 사용된 실행 파일<br />-   소프트웨어 08B - 지정된 실행 파일을 최근 사용한 사용자<br />-   소프트웨어 08C - 지정된 사용자가 최근 사용한 실행 파일|  
 |Asset Intelligence 하드웨어 인벤토리 보고 클래스 필수 조건|Configuration Manager의 Asset Intelligence 보고서는 특정 하드웨어 인벤토리 보고 클래스에 따라 달라집니다. 하드웨어 인벤토리 보고 클래스가 사용하도록 설정되고 클라이언트가 이러한 클래스를 기반으로 하는 하드웨어 인벤토리를 보고할 때까지 관련된 Asset Intelligence 보고서에는 데이터가 포함되지 않습니다. Asset Intelligence 보고 요구 사항을 지원하도록 다음 하드웨어 인벤토리 보고 클래스를 사용하도록 설정할 수 있습니다.<br /><br /> -   SMS_SystemConsoleUsage<sup>1</sup><br />-   SMS_SystemConsoleUser<sup>1</sup><br />-   SMS_InstalledSoftware<br />-   SMS_AutoStartSoftware<br />-   SMS_BrowserHelperObject<br />-   Win32_USBDevice<br />-   SMS_InstalledExecutable<br />-   SMS_SoftwareShortcut<br />-   SoftwareLicensingService<br />-   SoftwareLicensingProduct<br />-   SMS_SoftwareTag<br /><br /> <sup>1</sup> 기본적으로 **SMS_SystemConsoleUsage** 및 **SMS_SystemConsoleUser** Asset Intelligence 하드웨어 인벤토리 보고 클래스는 사용하도록 설정되어 있습니다.<br /><br /> **Asset Intelligence** 노드를 클릭하면 **자산 및 준수** 작업 영역의 Configuration Manager 콘솔에서 하드웨어 인벤토리 보고 클래스를 편집할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 Asset Intelligence 구성](../../../../core/clients/manage/asset-intelligence/configuring-asset-intelligence.md) 항목의 [Asset Intelligence 하드웨어 인벤토리 보고 클래스를 사용하도록 설정](../../../../core/clients/manage/asset-intelligence/configuring-asset-intelligence.md#BKMK_EnableAssetIntelligence) 섹션을 참조하세요.|  
 |보고 서비스 지점|소프트웨어 업데이트 보고서가 표시되려면 먼저 보고 서비스 지점 사이트 시스템 역할이 설치되어 있어야 합니다. 보고 서비스 지점을 만드는 방법에 대한 자세한 내용은 [Configuration Manager에서 보고 구성](http://go.microsoft.com/fwlink/p/?LinkId=232661)을 참조하세요.|  
-

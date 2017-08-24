@@ -6,23 +6,20 @@ ms.date: 7/03/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c1ff371e-b0ad-4048-aeda-02a9ff08889e
-caps.latest.revision: 9
-caps.handback.revision: 0
+caps.latest.revision: "9"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5e1bc0063ab3d34410f7dbc773a5eacdd5eb6d2f
 ms.openlocfilehash: 28597cf1cb269fff0872c7f79ef961496aea32ab
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/05/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="log-files-in-system-center-configuration-manager"></a>System Center Configuration Manager의 로그 파일
 
@@ -820,4 +817,3 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |--------------|-----------------|----------------------------|  
 |Change.log|변경된 WSUS 서버 데이터베이스 정보에 대한 세부 정보를 기록합니다.|WSUS 서버|  
 |SoftwareDistribution.log|구성된 업데이트 원본에서 WSUS 서버 데이터베이스로 동기화된 소프트웨어 업데이트에 대한 세부 정보를 기록합니다.|WSUS 서버|  
-

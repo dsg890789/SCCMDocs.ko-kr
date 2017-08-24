@@ -6,21 +6,19 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 52ee82b2-0b91-4829-89df-80a6abc0e63a
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: 12ee719a6a8b072fab27d083aeb2b8439484058d
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
-
+ms.openlocfilehash: 20f595a5b0634a627dff9ba6feeb848754615f2c
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="plan-how-to-wake-up-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트의 절전 모드 해제 계획
 
@@ -98,4 +96,3 @@ ms.lasthandoff: 12/16/2016
 
 > [!WARNING]  
 >  서브넷 지향 브로드캐스트와 관련된 보안 위험이 있습니다. 공격자가 위조된 원본 주소에서 지정된 브로드캐스트 주소로 ICMP(Internet Control Message Protocol) 에코 요청의 스트림을 지속적으로 보낼 수 있으며, 이 경우 모든 호스트는 해당 원본 주소에 응답하게 됩니다. 이러한 유형의 서비스 거부 공격은 일반적으로 스머프 공격이라고 하며 보통 서브넷 지향 브로드캐스트를 설정하지 않으면 위험을 최소화할 수 있습니다.
-

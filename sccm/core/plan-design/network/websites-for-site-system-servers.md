@@ -6,23 +6,20 @@ ms.date: 2/8/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 681f0893-e83b-476e-9ec0-a5dc7c9deeb6
-caps.latest.revision: 15
-caps.handback.revision: 0
+caps.latest.revision: "15"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 26bbec1e8d6c53ce297689ba4390b9347229eb15
 ms.openlocfilehash: 886ff3b8e867fc340c79648a57feae81653b0ccd
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="websites-for-site-system-servers-in-system-center-configuration-manager"></a>System Center Configuration Manager의 사이트 시스템 서버용 웹 사이트
 
@@ -134,4 +131,3 @@ ms.lasthandoff: 05/17/2017
     2.  **SMSWEB** 웹 사이트를 시작합니다.  
 
     3.  사이트의 사이트 서버에서 **SMS_SITE_COMPONENT_MANAGER** 서비스를 다시 시작합니다.  
-

@@ -6,22 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 90498b4b-6a9b-43cd-b465-1d6c9a52df1c
-caps.latest.revision: 8
-caps.handback.revision: 0
+caps.latest.revision: "8"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: bd5448d70c2d465347de840cb197d4c33075c90a
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-task-sequence-media-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업 순서 미디어 만들기
 
@@ -70,4 +68,3 @@ ms.lasthandoff: 12/16/2016
 -   미디어를 동적 미디어로 구성하려면 모든 기본 사이트에 미디어를 만드는 데 사용한 사이트의 루트 CA가 있어야 합니다. 계층 내 모든 기본 사이트에 루트 CA를 가져올 수 있습니다.  
 
 -   Configuration Manager 계층 구조 내의 기본 사이트에서 서로 다른 루트 CA를 사용할 경우 각 사이트에 사이트 기반 미디어를 사용해야 합니다.  
-

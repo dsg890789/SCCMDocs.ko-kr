@@ -6,23 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3fab4d67-8d2a-45ce-8b06-471280102cf6
-caps.latest.revision: 11
-caps.handback.revision: 0
+caps.latest.revision: "11"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
 ms.openlocfilehash: 132803a1aa9aad5c5462686bd656688418e47d07
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="monitor-hierarchy-and-replication-infrastructure-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 계층 및 복제 인프라 모니터링
 
@@ -244,4 +241,3 @@ Replication Link Analyzer가 재구성을 완료하지 못하면 사이트 서�
 1.  Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.  
 
 2.  **모니터링** 작업 영역에서 **데이터베이스 복제**를 클릭한 다음 모니터링할 링크의 복제 링크를 선택합니다. 그런 다음 작업 영역에서 적절한 탭을 선택하여 해당 링크의 복제 상태에 대한 여러 가지 서로 다른 정보를 봅니다.  
-

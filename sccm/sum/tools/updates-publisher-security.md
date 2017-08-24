@@ -6,22 +6,20 @@ ms.date: 4/29/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a7f91e63-4750-402e-9970-dd14be7f76a3
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: NOINDEX, NOFOLLOW
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 31819a1df4e63e1114682490a9b3c3b4e5c99cfa
 ms.openlocfilehash: c43af95a539a9284e4e49822b284783e02f9fa21
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-certificates-and-security-for-updates-publisher"></a>Updates Publisher의 인증서 및 보안 관리
 
@@ -101,4 +99,3 @@ ms.lasthandoff: 05/17/2017
 3.  콘솔 트리에서 선택한 정책 설정, **컴퓨터 구성**, **관리 템플릿**, **Windows 구성 요소**를 차례로 확장하고 **Windows 업데이트**를 클릭합니다.
 
 4.  결과 창에서 **인트라넷 Microsoft 업데이트 서비스 위치의 서명된 콘텐츠 허용**을 마우스 오른쪽 단추로 클릭하고 **속성**, **사용**, **확인**을 차례로 클릭합니다.
-

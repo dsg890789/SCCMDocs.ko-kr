@@ -6,24 +6,20 @@ ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: e63f2394-6eb1-4a33-bec5-8377fc62a34e
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
-ms.openlocfilehash: 2d7ec9cc626f3ccfded990cf8ba392c4979adfee
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 1488aaa465fb9810bc1b641d41dad95189d37418
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="configure-custom-client-settings-for-endpoint-protection"></a>Endpoint Protection에 대한 사용자 지정 클라이언트 설정 구성
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -175,4 +171,3 @@ Configuration Manager에서 운영 체제 배포에 대한 자세한 내용은 [
 앞의 단계를 완료한 후 참조 컴퓨터에서 이미징을 준비할 수 있습니다. Configuration Manager에서 운영 체제 배포에 대한 자세한 내용은 [System Center Configuration Manager에서 운영 체제 이미지 관리](/sccm/osd/get-started/manage-operating-system-images)를 참조하세요.
 
 Endpoint Protection 클라이언트 소프트웨어를 포함하는 이미지가 배포될 때 Endpoint Protection 클라이언트가 컴퓨터가 할당되어 있는 Configuration Manager 사이트에 자동으로 정보를 보고하고 클라이언트 컴퓨터에 적용 가능한 정책이 다운로드되어 적용됩니다.
-

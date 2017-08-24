@@ -9,17 +9,14 @@ ms.date: 7/31/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.assetid: 68407ab8-c205-44ed-9deb-ff5714451624
-ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
 ms.openlocfilehash: b1f4cd4a6f19a02d2b2dc3f9a841aeeb2a1403dd
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/29/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="integrate-upgrade-readiness-with-system-center-configuration-manager"></a>업그레이드 준비를 System Center Configuration Manager와 통합
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -143,4 +140,3 @@ Configuration Manager의 1706 분기 전에는 업그레이드 준비에 대한 
 
     > [!NOTE]
     > 계층 구조의 최상위 계층 사이트에 업그레이드 준비를 연결해야 합니다. 업그레이드 준비를 독립 실행형 기본 사이트에 연결한 다음 사용자 환경에 중앙 관리 사이트를 추가하는 경우 OMS 연결을 삭제하고 새 계층 구조 내에서 다시 만들어야 합니다.
-

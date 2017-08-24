@@ -6,22 +6,19 @@ ms.date: 05/02/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a3be4f8f-3d44-4e3c-9fa1-e85f30a36e72
-caps.latest.revision: 0
+caps.latest.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 662901e850566756759fcfc61c58f3c0e56bc5aa
 ms.openlocfilehash: 26356a80bd8c78d4517253bae73e53d8d8f3a73a
-ms.contentlocale: ko-kr
-ms.lasthandoff: 06/03/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="which-branch-of-configuration-manager-should-i-use"></a>사용해야 하는 Configuration Manager 분기
 
@@ -86,7 +83,7 @@ LTSB를 새 사이트로 설치하거나 지원되는 Configuration Manager 2012
 > [TechNet 평가 센터](https://www.microsoft.com/evalcenter/evaluate-system-center-technical-preview)에서 System Center 2016 평가판을 다운로드할 수도 있습니다.
 
 **LTSB의 기능**
--    중요한 보안 수정을 제공하는 콘솔 내 업데이트를 받습니다.
+-   중요한 보안 수정을 제공하는 콘솔 내 업데이트를 받습니다.
 - Configuration Manager에 대한 SA 계약 또는 이와 동등한 권한이 만료된 경우의 설치 옵션을 제공합니다.
 - Configuration Manager에 대한 현재 SA 계약 또는 이와 동등한 권한이 있는 경우 현재 분기로 업그레이드(변환)를 지원합니다.
 
@@ -96,14 +93,14 @@ LTSB는 현재 분기 버전 1606을 기반으로 하며 다음과 같은 제한
 - 서버 및 클라이언트 운영 체제와 관련 기술(예: SQL Server 버전)의 제한된 집합 목록을 지원합니다. 이 분기에서 지원되는 사항에 대한 자세한 내용은 [장기 서비스 분기에 대해 지원되는 구성](supported-configurations-for-ltsb.md)을 참조하세요.
 - 새로운 기능에 대한 업데이트를 받지 않습니다.
 - Microsoft Intune 구독 추가를 지원하지 않으며, 이로 인해 다음을 사용할 수 없습니다.
-  -    하이브리드 MDM 구성에서 Intune을 사용할 수 없음
+  - 하이브리드 MDM 구성에서 Intune을 사용할 수 없음
  - 온-프레미스 MDM을 사용할 수 없음
--    Windows 10 서비스 대시보드, 서비스 계획, Windows 10 CB(현재 분기) 또는 CBB(비즈니스용 현재 분기)의 사용을 지원하지 않습니다.
+-   Windows 10 서비스 대시보드, 서비스 계획, Windows 10 CB(현재 분기) 또는 CBB(비즈니스용 현재 분기)의 사용을 지원하지 않습니다.
 - Windows 10 LTSB 및 Windows Server의 이후 릴리스를 지원하지 않습니다.
--    Asset Intelligence를 지원하지 않습니다.
--    클라우드 기반 배포 지점을 지원하지 않습니다.
--    Exchange Online을 Exchange 커넥터로 지원하지 않습니다.
--    모든 시험판 기능을 지원하지 않습니다.
+-   Asset Intelligence를 지원하지 않습니다.
+-   클라우드 기반 배포 지점을 지원하지 않습니다.
+-   Exchange Online을 Exchange 커넥터로 지원하지 않습니다.
+-   모든 시험판 기능을 지원하지 않습니다.
 
 
 
@@ -115,7 +112,7 @@ LTSB는 현재 분기 버전 1606을 기반으로 하며 다음과 같은 제한
   - [System Center Configuration Manager의 라이선스 및 분기](learn-more-editions.md)
   - [Configuration Manager용 업데이트](/sccm/core/servers/manage/updates)에서 [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#baseline-and-update-versions)
 - LTSB를 기술 미리 보기로 변환하는 옵션은 없습니다. 기술 미리 보기는 라이선스가 필요하지 않은 별도 설치입니다.
--    현재 분기의 평가판을 LTSB 설치로 업그레이드할 수 없습니다.
+-   현재 분기의 평가판을 LTSB 설치로 업그레이드할 수 없습니다.
 
 
 ## <a name="technical-preview-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview
@@ -141,8 +138,8 @@ LTSB는 현재 분기 버전 1606을 기반으로 하며 다음과 같은 제한
 자세한 내용은 [System Center Configuration Manager Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.
 
 **업데이트 옵션**
--    새 기술 미리 보기 버전의 콘솔 내 업데이트를 설치할 수 있습니다.
--    기술 미리 보기를 현재 분기 또는 LTSB로 변환하는 옵션이 없습니다.
+-   새 기술 미리 보기 버전의 콘솔 내 업데이트를 설치할 수 있습니다.
+-   기술 미리 보기를 현재 분기 또는 LTSB로 변환하는 옵션이 없습니다.
 
 
 ## <a name="identify-your-branch-and-version"></a>분기 및 버전 식별
@@ -154,4 +151,3 @@ Configuration Manager 사이트에 대한 버전 정보를 보면 분기도 확�
 **분기**  
 사이트 분기를 LTSB 또는 현재 분기로 확인하려면 콘솔에서 **관리** > **사이트 구성** > **사이트**으로 이동한 다음 **계층 설정**을 엽니다. 현재 분기로 변환하는 옵션이 있고 활성 상태이면 사이트에서 LTSB 버전을 실행합니다. 사이트에서 현재 분기를 실행하는 경우에는 이 옵션이 회색으로 표시됩니다.
 다양한 Configuration Manager 버전에 대한 자세한 내용은 [Configuration Manager용 업데이트](/sccm/core/servers/manage/updates)에서 "기준 및 업데이트 버전"을 참조하세요.
-

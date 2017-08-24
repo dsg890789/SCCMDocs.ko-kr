@@ -6,22 +6,19 @@ ms.date: 02/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1026d616-2a20-4fb2-8604-d331763937f8
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
-ms.openlocfilehash: cb1ac4f33b9ef291050a3406291b8cc1f112b586
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: b6776fbe0cfca23244d767cffd554a2ef4567a2d
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="hardware-inventory-for-linux-and-unix-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Linux 및 UNIX에 대한 하드웨어 인벤토리
 
@@ -126,4 +123,3 @@ Linux 및 UNIX용 System Center Configuration Manager 클라이언트는 하드�
  Linux 및 UNIX 컴퓨터에서 새 공급자가 보고하는 인벤토리에 대해 Configuration Manager로 보고하려면 먼저 사용자 지정 공급자의 스키마를 정의하는 MOF(Managed Object Format) 파일을 가져와야 합니다.  
 
  사용자 지정 MOF 파일을 Configuration Manager로 가져오려면 [System Center Configuration Manager에서 하드웨어 인벤토리를 구성하는 방법](../../../../core/clients/manage/inventory/configure-hardware-inventory.md)을 참조하세요.  
-

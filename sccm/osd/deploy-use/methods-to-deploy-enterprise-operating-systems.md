@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3646d62d-355a-43fc-8569-c08dc2257ee5
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: 6cec9275009ac19ad65a03792c1bc4d0c528ea4c
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="methods-to-deploy-enterprise-operating-systems-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 엔터프라이즈 운영 체제를 배포하는 방법
 
@@ -40,9 +39,3 @@ System Center Configuration Manager 환경에서 운영 체제를 배포하는 �
 -   [팩터리 또는 로컬 저장소에 OEM에 대한 이미지 만들기](create-an-image-for-an-oem-in-factory-or-a-local-depot.md)  
 
 -   [Windows to Go 배포](deploy-windows-to-go.md)  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

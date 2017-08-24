@@ -6,22 +6,19 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 15a4e323-9f42-4fea-bb14-f2b905d1f77c
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: b63367dbaacde60a364e9da6afca65383b635840
-ms.contentlocale: ko-kr
-ms.lasthandoff: 03/27/2017
-
-
+ms.openlocfilehash: d61d53daa5ef3d9c986cba8791d4471fea94d29d
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-deploy-clients-to-unix-and-linux-servers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 UNIX 및 Linux 서버에 클라이언트를 배포하는 방법
 
@@ -240,4 +237,3 @@ System Center Configuration Manager를 사용하여 Linux 또는 UNIX 서버를 
  Linux 및 UNIX용 Configuration Manager 클라이언트는 클라이언트 설치 시 이 관리 지점에 연결합니다. 클라이언트가 관리 지점에 연결하지 못하면 성공할 때까지 클라이언트 소프트웨어에서 계속 다시 시도합니다.  
 
  클라이언트가 관리 지점을 찾는 방법에 대한 자세한 내용은 [관리 지점 찾기](/sccm/core/clients/deploy/assign-clients-to-a-site#locating-management-points)를 참조하세요.
-

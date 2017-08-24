@@ -6,8 +6,7 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3f62b763-4347-453d-b0a7-1f4a0d1d4105
@@ -15,13 +14,11 @@ caps.latest.revision:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 1d9cac06b266fb9ff991e3714240c2ea1bbb3f17
-ms.contentlocale: ko-kr
-ms.lasthandoff: 03/06/2017
-
-
+ms.openlocfilehash: 59f43c922d1d3bc64625733014b0def1e42c4d2d
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="configure-and-deploy-lookout-for-work-apps"></a>Lookout for Work 앱 구성 및 배포
 
@@ -91,4 +88,3 @@ Lookout 앱을 사용자 장치에 설치하도록 요구하려면 **필수 설�
 
 ## <a name="next-steps"></a>다음 단계
 * [준수 정책에서 장치 위협 방지 규칙 사용](enable-device-threat-protection-rule-compliance-policy.md)
-

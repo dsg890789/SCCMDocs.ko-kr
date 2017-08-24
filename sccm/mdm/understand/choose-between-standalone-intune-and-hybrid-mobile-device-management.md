@@ -6,21 +6,19 @@ ms.date: 07/18/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 73ff9bb9-e605-4b68-92a1-487684fed42d
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: dougeby
 ms.author: dougeby
 manager: angrobe
+ms.openlocfilehash: 26c36df77c21254c7ad2b8a45906bd3706f9ec65
+ms.sourcegitcommit: 06aef618f72c700f8a716a43fb8eedf97c62a72b
 ms.translationtype: HT
-ms.sourcegitcommit: 648bc6b96aa5ccc834442a962e6d5b5125f88bb5
-ms.openlocfilehash: ddb6d47e5dba4fddd6fa811d83b1bf0c91ad26f9
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/19/2017
-
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="choose-between-microsoft-intune-standalone-and-hybrid-mobile-device-management-with-system-center-configuration-manager"></a>Microsoft Intune 독립 실행형 및 System Center Configuration Manager에서 하이브리드 모바일 장치 관리 선택
 
@@ -51,8 +49,7 @@ Intune 독립 실행형은 Microsoft의 권장되는 배포 토폴로지입니�
 
 
 ## <a name="changing-the-mdm-authority-setting"></a>MDM 기관 설정 변경
-MDM 기관 설정을 변경해야 하는 경우 Microsoft 지원에 문의하지 않고 기존의 관리 장치를 등록 취소했다가 다시 등록하지 않고도 변경할 수 있습니다. 자세한 내용은 [MDM 기관 변경](/sccm/mdm/deploy-use/change-mdm-authority.md)을 참조하세요.
+MDM 기관 설정을 변경해야 하는 경우 Microsoft 지원에 문의하지 않고 기존의 관리 장치를 등록 취소했다가 다시 등록하지 않고도 변경할 수 있습니다. 자세한 내용은 [MDM 기관 변경](../deploy-use/change-mdm-authority.md)을 참조하세요.
 
 > [!NOTE]    
 > MDM 기관을 Intune 독립 실행형으로 변경하려면 Configuration Manager 버전 1610 이상이 있어야 합니다. Configuration Manager의 이전 버전을 사용하는 경우 MDM 기관을 변경할 수는 있지만 Microsoft 기술 지원 및 운영 센터의 도움을 받아야 합니다. 또한 MDM 기관을 변경한 후 모든 장치를 등록 취소했다가 다시 등록해야 합니다.  
-

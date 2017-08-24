@@ -6,21 +6,20 @@ ms.date: 1/11/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ca4886d4-7173-46be-8dcd-1657d5b0deb9
-caps.latest.revision: 4
-caps.handback.revision: 0
+caps.latest.revision: "4"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 0d0735c170820259ac8bb6706aac7cc5569a1628
 ms.openlocfilehash: d06a2a955ff59fa84bb844033fe31874fc735087
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 #  <a name="service-windows-for-site-servers"></a>사이트 서버에 대한 서비스 기간
 
@@ -43,9 +42,3 @@ ms.openlocfilehash: d06a2a955ff59fa84bb844033fe31874fc735087
 1.  Configuration Manager 콘솔에서 **관리** > **사이트 구성** > **사이트**를 열고 서비스 기간을 구성할 사이트 서버를 선택합니다.  
 
 2.  이제, 사이트 서버 **속성** 을 편집하고 **서비스 기간** 탭을 선택한 다음 해당 사이트 서버의 서비스 기간을 하나 이상 설정할 수 있습니다.  
-
-
-
-<!--HONumber=Jan17_HO2-->
-
-

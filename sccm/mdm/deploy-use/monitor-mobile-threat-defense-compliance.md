@@ -6,8 +6,7 @@ ms.date: 03/21/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 408190da-bea6-4122-9dd6-f90155040e88
@@ -15,15 +14,12 @@ caps.latest.revision:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 212628639300e9c361f7cee61b3df6b1cb6874ce
 ms.openlocfilehash: 8edf83a0f761dfc16274ce49c3aa2b878c7fe6cd
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/18/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="monitor-mobile-threat-defense-compliance"></a>**Mobile Threat Defense 준수 모니터링**
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -76,4 +72,3 @@ Mobile Threat Defense 상태를 모니터링하려면:
 
 > [!TIP] 
 > 장치의 Mobile Threat Defense 준수 상태에 대한 자세한 정보를 확인하려면 **기본적으로 표시**되지 않는 열을 사용하도록 설정해야 합니다.
-

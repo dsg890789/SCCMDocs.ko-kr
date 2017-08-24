@@ -6,21 +6,19 @@ ms.date: 10/06/2016
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 500a9aa6-68aa-44eb-bf49-350c1314a697
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5e5155aa8c03b7e0c200d083024c8fa386f97aa7
 ms.openlocfilehash: cfac2c03c1b71b40c68d8acd5fbd96c5e98caaa9
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="custom-locations-for-system-center-configuration-manager-site-database-files"></a>System Center Configuration Manager 사이트 데이터베이스 파일에 대한 사용자 지정 위치
 
@@ -44,4 +42,3 @@ ms.lasthandoff: 05/17/2017
 -   SQL Server 버전의 설명서에서 사용자 데이터베이스를 이동하는 방법을 확인합니다. 예를 들어 SQL Server 2014를 사용하는 경우 TechNet에서 [사용자 데이터베이스 이동](https://technet.microsoft.com/library/ms345483\(v=sql.120\).aspx) 을 참조하세요.  
 
 -   데이터베이스 파일 이동을 완료한 후 Configuration Manager 사이트 서버에서 **SMS_Executive** 서비스를 다시 시작합니다.  
-

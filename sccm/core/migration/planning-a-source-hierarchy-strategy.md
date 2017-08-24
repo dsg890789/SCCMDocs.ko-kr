@@ -6,23 +6,20 @@ ms.date: 1/3/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4800a800-66c8-4c35-aebe-e413a23790c1
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: cb5f7bf52a53935ca61b0e1b66822919b17d33e2
 ms.openlocfilehash: 0619de32f859f512ee1c9f5a9c83ef8d04a256ca
-ms.contentlocale: ko-kr
-ms.lasthandoff: 01/04/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="plan-a-source-hierarchy-strategy-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 원본 계층 전략 계획
 
@@ -109,4 +106,3 @@ System Center Configuration Manager 환경에서 마이그레이션 작업을 �
  각 원본 사이트에서 데이터 수집을 중지하려면 최하위 계층 원본 사이트에서 **데이터 수집 중지**를 실행한 다음 각 부모 사이트에서 이 프로세스를 반복해야 합니다. 원본 계층의 최상위 사이트는 데이터 수집을 중지하는 마지막 사이트가 되어야 합니다. 부모 사이트에서 이 작업을 수행하기 전에 각 자식 사이트에서 데이터 수집을 중지해야 합니다. 일반적으로 마이그레이션 프로세스를 완료할 준비가 된 경우에만 데이터 수집을 중지합니다.  
 
  원본 사이트에 대해 데이터 수집을 중지한 후에 사이트의 개체 및 컬렉션에 대해 이전에 수집된 정보는 새 마이그레이션 작업을 설정할 때 계속 사용할 수 있습니다. 그러나 새 개체나 새 컬렉션은 볼 수 없으며 기존 개체에 적용된 변경 내용도 볼 수 없습니다. 원본 사이트를 다시 구성하고 데이터 수집을 다시 시작하면 이전에 마이그레이션된 개체에 대한 정보 및 상태를 볼 수 있습니다.  
-

@@ -6,23 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 0ef5f3ce-b0e4-4775-b5c2-b245e45b4194
-caps.latest.revision: 11
-caps.handback.revision: 0
+caps.latest.revision: "11"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 761c3f58f7c57d8f87ee802da37821895062546d
 ms.openlocfilehash: 11c0f169afebdb071fefb5ce300fd1ae3481a94f
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="prepare-site-system-roles-for-operating-system-deployments-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 운영 체제 배포를 위한 사이트 시스템 역할 준비
 
@@ -60,7 +57,7 @@ System Center Configuration Manager에서 운영 체제를 배포하려면 먼�
  PXE 부팅 요청을 만드는 Configuration Manager 클라이언트에 운영 체제를 배포하려면 PXE 요청을 수락하도록 하나 이상의 배포 지점을 구성해야 합니다. 구성하고 나면 배포 지점에서 PXE 부팅 요청에 응답하고 수행해야 할 적절한 배포 작업을 결정합니다.
 
 > [!IMPORTANT]  
-> 모든 PXE 사용 배포 지점에  [Windows 배포 서비스](../plan-design/infrastructure-requirements-for-operating-system-deployment.md#BKMK_WDS)를 설치해야 합니다.  
+>  모든 PXE 사용 배포 지점에 [Windows 배포 서비스](../plan-design/infrastructure-requirements-for-operating-system-deployment.md#BKMK_WDS)를 설치해야 합니다.  
 
  PXE 요청을 수락할 수 있도록 기존 배포 지점을 수정하려면 다음 절차를 수행하세요. 새로운 배포 지점을 설치하는 방법에 대한 자세한 내용은 [배포 지점 설치 또는 수정](../../core/servers/deploy/configure/install-and-configure-distribution-points.md)을 참조하세요.  
 
@@ -221,4 +218,3 @@ RamDisk TFTP 블록 크기를 사용자 지정할 수 있으며 Configuration Ma
 -   상태 마이그레이션 지점이 사용자 상태 데이터를 복원하는 요청에만 응답하도록 할지 여부. 이 옵션을 사용하면 상태 마이그레이션 지점을 사용하여 사용자 상태 데이터를 저장할 수 없습니다.  
 
  사이트 시스템 역할을 설치하는 단계는 [사이트 시스템 역할 추가](../../core/servers/deploy/configure/add-site-system-roles.md)를 참조하세요.  
-

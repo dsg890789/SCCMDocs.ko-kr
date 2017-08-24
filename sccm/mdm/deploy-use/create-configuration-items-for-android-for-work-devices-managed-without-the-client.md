@@ -1,17 +1,16 @@
 ---
 title: "Intune으로 관리되는 Android for Work 장치에 대한 구성 항목을 만드는 방법"
 ms.custom: na
-ms.date: 2017-07-31T00:00:00.000Z
+ms.date: 2017-07-31
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ab6784fd-8c57-4be9-858f-50fe39f2ff5f
-caps.latest.revision: 17
-caps.handback.revision: 0
+caps.latest.revision: "17"
+caps.handback.revision: "0"
 author: robstackmsft
 translation.priority.ht:
 - cs-cz
@@ -32,12 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
 ms.openlocfilehash: 87b34f0a3cce87f6e2ba813957a69b743648c1ca
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/29/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-create-configuration-items-for-android-for-work-devices-managed-with-intune"></a>Intune으로 관리되는 Android for Work 장치에 대한 구성 항목을 만드는 방법
 
@@ -122,4 +120,3 @@ DisallowCrossProfileCopyPaste을 true로 설정하면 Android for Work 개인 �
 
 ## <a name="see-also"></a>참고 항목  
  [System Center Configuration Manager 클라이언트 없이 관리되는 장치에 대한 구성 항목](../../compliance/deploy-use/configuration-items-for-devices-managed-without-the-client.md)
-

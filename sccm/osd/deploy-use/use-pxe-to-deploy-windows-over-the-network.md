@@ -6,23 +6,20 @@ ms.date: 06/15/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: da5f8b61-2386-4530-ad54-1a5c51911f07
-caps.latest.revision: 19
-caps.handback.revision: 0
+caps.latest.revision: "19"
+caps.handback.revision: "0"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f4c46bfab9b40b29654f4e883817a5508ab25b74
 ms.openlocfilehash: b88ab3799027c78a8c605e934b247097b31e1d21
-ms.contentlocale: ko-kr
-ms.lasthandoff: 06/28/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="use-pxe-to-deploy-windows-over-the-network-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 PXE를 사용하여 네트워크를 통해 Windows 배포
 
@@ -107,4 +104,3 @@ Configuration Manager 컬렉션 또는 컴퓨터에 할당된 마지막 PXE 배�
 3. 2단계에서 찾은 작업 순서 목록에서 Configuration Manager는 부팅하려는 클라이언트의 아키텍처와 일치하는 부팅 이미지를 찾습니다. 동일한 아키텍처를 가진 부팅 이미지가 있으면 해당 부팅 이미지가 사용됩니다.
 
 4. 동일한 아키텍처를 가진 부팅 이미지가 없으면 Configuration Manager는 클라이언트의 아키텍처와 호환되는 부팅 이미지를 찾습니다. 즉, 2단계에서 찾은 작업 순서 목록에서 찾습니다. 예를 들어 64비트 클라이언트는 32비트 및 64비트 부팅 이미지와 호환됩니다. 32비트 클라이언트는 32비트 부팅 이미지하고만 호환됩니다. UEFI 클라이언트는 64비트 부팅 이미지와만 호환됩니다.
-

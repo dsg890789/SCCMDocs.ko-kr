@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 738eddaa-52e2-467f-b453-821ef2884d47
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: de81da31b524cebe8e820766a64ecc5fdb7e4771
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-create-and-apply-power-plans-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 전원 계획을 만들고 적용하는 방법
 
@@ -89,7 +88,7 @@ System Center Configuration Manager에서 전원 관리를 사용하면 Configur
 
 10. **확인**을 클릭하여 *<컬렉션 이름\>***설정** 대화 상자를 닫고 전원 계획을 적용합니다.  
 
-##  <a name="a-namebkmkplansa-available-power-management-plan-settings"></a><a name="BKMK_Plans"></a> Available power management plan settings  
+##  <a name="BKMK_Plans"></a> Available power management plan settings  
  다음 표에는 Configuration Manager에서 사용 가능한 전원 관리 설정이 나와 있습니다. 컴퓨터가 연결되어 있거나 배터리 전원을 사용하는 경우에 대해 별도의 설정을 구성할 수 있습니다. 사용 중인 Windows 버전에 따라 일부 설정을 구성하지 못할 수도 있습니다.  
 
 > [!NOTE]  
@@ -112,9 +111,3 @@ System Center Configuration Manager에서 전원 관리를 사용하면 Configur
 |**절전 모드 동작에서 대기 상태 허용**|**켜기** 또는 **끄기** 값을 선택하면 컴퓨터를 대기 상태로 설정할 수 있습니다. 이 경우 일부 전력이 계속 소비되지만 컴퓨터의 절전 모드를 더 빨리 해제할 수 있습니다. 이 설정이 **꺼짐**으로 설정되어 있으면 컴퓨터는 최대 절전 모드 또는 끄기만 사용할 수 있습니다.|  
 |**절전 상태로 전환하기 위해 유휴 상태 필요(%)**|컴퓨터가 절전 모드로 전환하는 데 필요한 유휴 시간의 백분율을 컴퓨터 프로세서 시간에서 지정합니다. Windows 7을 실행하는 컴퓨터에서는 이 값이 항상 **0**으로 설정됩니다.|  
 |**데스크톱 컴퓨터용 Windows 절전 모드 해제 타이머 사용**|**사용** 또는 **사용 안 함** 값을 선택하면 전원 관리에서 기본 제공 Windows 타이머를 사용하여 데스크톱 컴퓨터의 절전 모드를 해제할 수 있습니다. Windows 절전 모드 해제 타이머를 사용하여 데스크톱 컴퓨터가 절전 모드에서 해제된 경우 컴퓨터에서 모든 업데이트를 설치하거나 정책을 받기 위해 기본적으로 10분 동안 절전 모드 해제 상태를 유지합니다.<br /><br /> 전원에 연결되어 있지 않았을 때 절전 모드가 해제되는 상황을 방지하기 위해 휴대용 컴퓨터에서는 절전 모드 해제 타이머가 지원되지 않습니다.|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

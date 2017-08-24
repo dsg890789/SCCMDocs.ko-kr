@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 16acfd63-0c40-424c-82f4-8c63f7f1c30b
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 557888d1f1f899e3198c430bbe5ccdd44178f824
 ms.openlocfilehash: cb0c22f3060ba654778dca958d620f1e1725b93c
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-windows-embedded-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows Embedded 응용 프로그램 만들기
 
@@ -50,9 +49,3 @@ ms.openlocfilehash: cb0c22f3060ba654778dca958d620f1e1725b93c
 또한 Configuration Manager에서 소프트웨어 설치 및 업데이트를 위해 변경 내용을 커밋하는 경우 권한이 낮은 사용자는 유지 관리 기간 동안 로그온할 수 없습니다. 이 기간 동안에는 장치가 서비스되고 있으므로 사용할 수 없음을 알리는 메시지가 표시됩니다.  
 
 **사용자가 사용 조건에 동의해야 응용 프로그램을 사용할 수 있는 경우에는 쓰기 필터를 사용하도록 설정된Windows Embedded 장치에 응용 프로그램을 배포하지 마세요.** Configuration Manager에서 임베디드 장치에 소프트웨어를 설치할 수 있도록 쓰기 필터를 사용하지 않도록 설정하면 권한이 낮은 사용자는 장치에 로그온할 수 없습니다. 설치를 위해 사용자가 사용 조건에 동의해야 하는 경우에는 설치가 불가능하여 설치에 실패합니다. 설치를 위해 사용자 작업이 필요한 경우에는 Windows Embedded 장치에 소프트웨어를 배포하지 않도록 합니다. 적용되는 플랫폼 목록을 사용하면 이러한 운영 체제를 필터링할 수 있습니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

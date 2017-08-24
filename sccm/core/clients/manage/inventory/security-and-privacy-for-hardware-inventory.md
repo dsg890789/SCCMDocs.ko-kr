@@ -6,22 +6,19 @@ ms.date: 2/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 62e20d86-db6d-4a1f-b14a-905a9de31698
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
-ms.openlocfilehash: b12d4a1592ce4601fa1f0a6cd2a539a3664c0c37
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: ec182ec3102e0f4ae8bcf3d1ef843b25510b6ce6
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-hardware-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 하드웨어 인벤토리에 대한 보안 및 개인 정보
 
@@ -58,4 +55,3 @@ ms.lasthandoff: 12/16/2016
  인벤토리 정보는 Microsoft로 전송되지 않습니다. 인벤토리 정보는 Configuration Manager 데이터베이스에 저장됩니다. 클라이언트가 HTTPS를 사용하여 관리 지점에 연결하는 경우 사이트에 보내는 인벤토리 데이터는 암호화되어 전송됩니다. 클라이언트가 HTTP를 사용하여 관리 지점에 연결되는 경우 인벤토리 암호화를 사용하도록 설정하는 옵션이 있습니다. 인벤토리 데이터는 데이터베이스에 암호화된 형식으로 저장되지 않습니다. 정보는 90일 간격으로 사이트 유지 관리 작업인 **오래된 인벤토리 기록 삭제** 또는 **오래된 수집 파일 삭제** 에서 삭제될 때까지 데이터베이스에 보존됩니다. 삭제 간격은 필요에 따라 구성할 수 있습니다.  
 
  하드웨어 인벤토리, 소프트웨어 인벤토리, 파일 컬렉션 또는 Asset Intelligence 데이터 컬렉션을 구성하기 전에 개인 정보 요구 사항을 고려해야 합니다.  
-

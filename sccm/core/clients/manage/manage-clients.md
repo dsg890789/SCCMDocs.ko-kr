@@ -6,22 +6,19 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3986a992-c175-4b6f-922e-fc561e3d7cb7
-caps.latest.revision: 17
+caps.latest.revision: "17"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 19e111e0cb174f11ad08f98d2516e52c4c183d86
-ms.openlocfilehash: a079824ba96897bbd3f9475efcaea81804858171
-ms.contentlocale: ko-kr
-ms.lasthandoff: 01/05/2017
-
-
+ms.openlocfilehash: 3a86924b2e5db3ac16eeda78b95ae6747ffd656f
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-manage-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트를 관리하는 방법
 
@@ -410,4 +407,3 @@ Configuration Manager 버전 1610부터 Configuration Manager에서 PXE 부팅 �
     -   명령 프롬프트를 열고 **cscript &lt;경로\파일 이름.vbs>**를 입력합니다.  
 
 5.  **Windows 스크립트 호스트** 대화 상자에서 **확인**을 선택합니다.  
-

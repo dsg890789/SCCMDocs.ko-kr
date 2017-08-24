@@ -6,23 +6,20 @@ ms.date: 11/27/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c0f094f1-852e-4606-91db-97846d8f0772
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
-ms.openlocfilehash: c11440556abc11d2c19ee0ff3c2bc9e518951e49
-ms.contentlocale: ko-kr
-ms.lasthandoff: 03/04/2017
-
-
+ms.openlocfilehash: e07a80c1a59043b74cda7219f78c5fef66989ba8
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="vpn-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager의 VPN 프로필
 
@@ -61,4 +58,3 @@ System Center Configuration Manager(ConfigMgr 또는 SCCM이라고도 함)의 VP
 -   [System Center Configuration Manager에서 VPN 프로필에 대한 필수 조건](../plan-design/prerequisites-for-wifi-vpn-profiles.md)  
 
 -   [System Center Configuration Manager에서 VPN 프로필에 대한 보안 및 개인 정보](../plan-design/security-and-privacy-for-wifi-vpn-profiles.md)
-

@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 6c64f276-b88c-4b1e-8073-331876a03038
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: 814c6133a30b1116d05aaeafddb0dfb7fe2a390e
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="prepare-windows-pe-peer-cache-to-reduce-wan-traffic-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 WAN 트래픽을 줄이기 위해 Windows PE 피어 캐시 준비
 
@@ -35,7 +34,7 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
 
 다음 섹션을 사용하여 피어 캐시를 관리합니다.
 
-##  <a name="a-namebkmkpeercacheobjectsa-objects-stored-on-a-peer-cache-source"></a><a name="BKMK_PeerCacheObjects"></a> 피어 캐시 원본에 저장된 개체  
+##  <a name="BKMK_PeerCacheObjects"></a> 피어 캐시 원본에 저장된 개체  
  Windows PE 피어 캐시를 사용하도록 구성된 작업 순서는 Windows PE에서 실행되는 동안 다음과 같은 콘텐츠 개체를 가져올 수 있습니다.  
 
 -   운영 체제 이미지  
@@ -52,17 +51,17 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
 
 -   소프트웨어 업데이트  
 
-##  <a name="a-namebkmkpeercacheworka-how-does--windows-pe-peer-cache-work"></a><a name="BKMK_PeerCacheWork"></a> Windows PE 피어 캐시 작동 방식  
+##  <a name="BKMK_PeerCacheWork"></a> Windows PE 피어 캐시 작동 방식  
  배포 지점은 없으며 여러 클라이언트가 Windows PE 피어 캐시를 사용할 수 있도록 설정된 지점 시나리오를 고려해 보겠습니다. 피어 캐시를 사용하도록 구성된 작업 순서를 피어 캐시 원본의 일부가 되도록 구성된 여러 클라이언트에 배포합니다. 작업 순서를 실행하는 첫 번째 클라이언트는 콘텐츠를 포함하여 피어에 대한 요청을 브로드캐스트합니다. 해당 콘텐츠를 찾지 못하므로 WAN을 통해 배포 지점에서 콘텐츠를 가져옵니다. 클라이언트는 새 이미지를 설치하고 다른 클라이언트에 대한 피어 캐시 원본 역할을 할 수 있도록 해당 Configuration Manager 클라이언트 캐시에 콘텐츠를 저장합니다. 다음 클라이언트는 작업 순서를 실행할 때 피어 캐시 원본에 대해 서브넷에서 요청을 브로드캐스트하며, 그러면 첫 번째 클라이언트가 응답하여 캐시된 콘텐츠를 제공합니다.  
 
-##  <a name="a-namebkmkpeercachedeterminea-determine-what--clients-will-be-part-of-the-windows-pe-peer-cache-source"></a><a name="BKMK_PeerCacheDetermine"></a> Windows PE 피어 캐시 원본의 일부가 될 클라이언트 확인  
+##  <a name="BKMK_PeerCacheDetermine"></a> Windows PE 피어 캐시 원본의 일부가 될 클라이언트 확인  
  Windows PE 피어 캐시 원본으로 선택할 컴퓨터를 확인하는 데 도움이 되도록 고려해야 할 몇 가지 사항이 다음에 설명되어 있습니다.  
 
 -   Windows PE 피어 캐시 원본은 항상 전원이 켜져 있고 피어 캐시 클라이언트에서 사용할 수 있는 데스크톱 컴퓨터여야 합니다.  
 
 -   Windows PE 피어 캐시에는 이미지를 저장할 만큼 충분한 크기의 클라이언트 캐시가 있어야 합니다.  
 
-##  <a name="a-namebkmkpeercacherequirementsa-requirements-for-a-client-to-use-a--windows-pe-peer-cache-source"></a><a name="BKMK_PeerCacheRequirements"></a> Windows PE 피어 캐시 원본을 사용하기 위한 클라이언트 요구 사항  
+##  <a name="BKMK_PeerCacheRequirements"></a> Windows PE 피어 캐시 원본을 사용하기 위한 클라이언트 요구 사항  
  클라이언트에서 Windows PE 피어 캐시 원본을 사용하려면 다음 요구 사항을 충족해야 합니다.  
 
 -   Configuration Manager 클라이언트가 네트워크의 다음 포트를 통해 통신할 수 있어야 합니다.  
@@ -78,7 +77,7 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
 
 -   작업 순서 배포를 위한 배포 옵션을 작업 순서를 실행하기 전에 콘텐츠를 로컬에 다운로드로 구성해야 합니다.  
 
-##  <a name="a-namebkmkpeercacheconfigurea-configure-windows-pe-peer-cache"></a><a name="BKMK_PeerCacheConfigure"></a> Windows PE 피어 캐시 구성  
+##  <a name="BKMK_PeerCacheConfigure"></a> Windows PE 피어 캐시 구성  
  다음과 같은 방법을 사용하면 특정 클라이언트가 피어 캐시 원본 역할을 할 수 있도록 피어 캐시 콘텐츠를 프로비전할 수 있습니다.  
 
 -   콘텐츠를 보유하고 있는 피어 캐시 원본을 찾을 수 없는 피어 캐시 클라이언트는 배포 지점에서 콘텐츠를 다운로드합니다.  작업 순서가 캐시된 콘텐츠를 보존하도록 구성되어 있으면 피어 캐시를 사용하도록 설정하는 클라이언트 설정을 수신하는 클라이언트가 피어 캐시 원본이 됩니다.  
@@ -112,7 +111,7 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
 
  이 설정 개체를 사용하여 구성한 장치는 피어 캐시 원본으로 작동하도록 구성됩니다. 필요한 포트와 프로토콜을 구성하려면 이러한 설정을 잠재적 피어 캐시 클라이언트에 배포해야 합니다.  
 
-###  <a name="a-namebkmkpeercacheconfiguretsa-configure-a-task-sequence-for-windows-pe-peer-cache"></a><a name="BKMK_PeerCacheConfigureTS"></a> Windows PE 피어 캐시에 대해 작업 순서 구성  
+###  <a name="BKMK_PeerCacheConfigureTS"></a> Windows PE 피어 캐시에 대해 작업 순서 구성  
  작업 순서를 구성할 때는 다음 작업 순서 변수를 작업 순서 배포 대상 컬렉션에 대한 컬렉션 변수로 사용합니다.  
 
 -   **SMSTSPeerDownload**  
@@ -135,15 +134,9 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
 
  자세한 내용은 [작업 순서 기본 제공 변수](../understand/task-sequence-built-in-variables.md)를 참조하세요.  
 
-###  <a name="a-namebkmkpeercachevalidatea-validate-the-success-of-using-windows-pe-peer-cache"></a><a name="BKMK_PeerCacheValidate"></a> Windows PE 피어 캐시 정상 사용 여부 확인  
+###  <a name="BKMK_PeerCacheValidate"></a> Windows PE 피어 캐시 정상 사용 여부 확인  
  Windows PE 피어 캐시를 사용하여 작업 순서를 배포 및 설치한 후에는 작업 순서를 실행한 클라이언트에서 **smsts.log** 를 확인하여 프로세스에서 피어 캐시를 정상적으로 사용했는지 확인할 수 있습니다.  
 
  이 로그에서 다음과 같은 항목을 찾습니다. 여기서 <*SourceServerName*>은 클라이언트가 콘텐츠를 가져온 컴퓨터를 식별합니다. 이 컴퓨터는 배포 지점 서버가 아닌 피어 캐시 원본이어야 합니다. 기타 세부 정보는 로컬 환경 및 구성에 따라 달라집니다.  
 
 -   *<![LOG[Downloaded file from http:// <SourceServerName\>:8003/SCCM_BranchCache$/SS10000C/sccm?/install.wim to C:\\_SMSTaskSequence\Packages\SS10000C\install.wim ]LOG]!><time="14:24:33.329+420" date="06-26-2015" component="ApplyOperatingSystem" context="" type="1" thread="1256" file="downloadcontent.cpp:1626">*  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

@@ -6,24 +6,21 @@ ms.date: 4/29/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3cf0c2cd-397a-4622-b11c-961f334fb7d7
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: NOINDEX, NOFOLLOW
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 31819a1df4e63e1114682490a9b3c3b4e5c99cfa
 ms.openlocfilehash: 2925abda07abaa46ad56b9b433ce003c22aede5e
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="manage-applicability-rules-in-updates-publisher"></a>Updates Publisher의 적용 가능성 규칙 관리
 
 *적용 대상: System Center Updates Publisher*
@@ -94,4 +91,3 @@ Updates Publisher의 두 위치에 규칙을 만들 수 있습니다.
 저장된 적용 가능성 규칙을 삭제하려면 **규칙 작업 영역**에서 **My saved rules**(내 저장된 규칙) 목록에 있는 규칙 또는 규칙 집합을 선택한 다음 리본 메뉴에서 **삭제**를 선택합니다. 이렇게 하면 저장된 규칙 또는 규칙 집합이 Updates Publisher에서 제거됩니다.
 
 특정 업데이트에서 규칙을 삭제하려면 [업데이트를 편집](/sccm/sum/tools/manage-updates-with-updates-publisher#edit-updates-and-bundles)해야 합니다.
-

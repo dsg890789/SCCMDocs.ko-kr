@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1a38421d-24c1-4fef-bf6c-42fce53109ac
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
 ms.openlocfilehash: d3e9afb90cdc85bc7299626b642c52be659e3bdf
-ms.lasthandoff: 12/16/2016
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="high-availability-options-for-system-center-configuration-manager"></a>System Center Configuration Manager의 고가용성 옵션
 
@@ -262,4 +261,3 @@ ms.lasthandoff: 12/16/2016
 
 ### <a name="see-also"></a>참고 항목  
  [System Center Configuration Manager에서 지원되는 구성](../../core/plan-design/configs/supported-configurations.md)
-

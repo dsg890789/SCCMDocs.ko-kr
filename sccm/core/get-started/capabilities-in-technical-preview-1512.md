@@ -4,24 +4,22 @@ description: "System Center Configuration Manager용 Technical Preview 버전 15
 ms.custom: na
 ms.date: 01/23/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e4d9e414-1346-4ed4-85d0-64d602b68731
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: noindex,nofollow
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
-ms.openlocfilehash: 7fff6f2807a679b621b736b8ad0b6561fb37affe
-ms.contentlocale: ko-kr
-ms.lasthandoff: 01/24/2017
-
+ms.openlocfilehash: 5cf8d54fbaa98a75ac2a875a23a43b1d3e5be0dd
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="capabilities-in-technical-preview-1512-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1512의 기능
 
@@ -93,4 +91,3 @@ Technical  Preview 1512부터 Microsoft Intune에서 Configuration Manager를 �
 **Endpoint Protection 정책을 사용하기 위한 필수 조건:**  
 
 Endpoint Protection 정책을 사용하려면 먼저 Endpoint Protection 클라이언트 설정을 사용하여 Endpoint Protection 클라이언트를 설치하고 관리해야 합니다. 이렇게 하려면 Windows 7, Windows 8, Windows 8.1용 System Center Endpoint Protection 클라이언트 또는 관리되는 Windows 10용 Windows Defender를 사용합니다. [System Center Configuration Manager의 Endpoint Protection](../../protect/deploy-use/endpoint-protection.md)을 참조하세요.  
-

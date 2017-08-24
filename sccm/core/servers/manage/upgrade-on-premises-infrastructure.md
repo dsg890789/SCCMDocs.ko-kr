@@ -6,23 +6,20 @@ ms.date: 06/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8ca970dd-e71c-404f-9435-d36e773a0db2
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 0564cb678200d17d97c0f1d111c0b4b41d8ba40e
 ms.openlocfilehash: 188b7f2537dd0e569a5c00995620124512cf311b
-ms.contentlocale: ko-kr
-ms.lasthandoff: 06/30/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="upgrade-on-premises-infrastructure-that-supports-system-center-configuration-manager"></a>System Center Configuration Manager를 지원하는 온-프레미스 인프라 업그레이드
 
@@ -212,4 +209,3 @@ SQL Server에 대한 자세한 내용은 TechNet에서 SQL Server 설명서를 �
 
 > [!NOTE]  
 >  중앙 관리 사이트에서 사용 중인 SQL Server 버전을 Standard Edition에서 Datacenter 또는 Enterprise Edition으로 변경할 때 계층의 클라이언트 수를 제한하는 데이터베이스 파티션은 변경되지 않습니다.
-

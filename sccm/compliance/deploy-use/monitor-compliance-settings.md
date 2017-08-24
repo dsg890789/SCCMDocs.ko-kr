@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 92c1ccca-a748-44cd-a52e-e41d34bf981d
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
 ms.openlocfilehash: 75cd7e811262633d81d978265f21ec7ed3b61a58
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="monitor-compliance-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 준수 설정 모니터링
 
@@ -110,9 +109,3 @@ ms.openlocfilehash: 75cd7e811262633d81d978265f21ec7ed3b61a58
 5.  사용자 또는 장치에 배포된 구성 항목인지 여부에 따라 **사용자 컬렉션 만들기 마법사** 또는 **장치 컬렉션 만들기 마법사** 가 열립니다. 마법사가 컬렉션을 만들기 위해 자동으로 올바른 값을 채우지만 이러한 값은 편집할 수 있습니다.  
 
 6.  마법사를 완료한 후 컬렉션이 **자산 및 준수** 작업 영역의 **사용자 컬렉션** 또는 **장치 컬렉션** 노드에 표시됩니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

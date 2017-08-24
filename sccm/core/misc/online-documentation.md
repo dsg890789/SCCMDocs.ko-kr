@@ -8,19 +8,17 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.assetid: 6d665cef-fc67-4686-bcb3-0572c0a3760c
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
 ms.openlocfilehash: 73bb5d4236469746102fd4893c53f20aaee122d5
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="online-documentation-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 온라인 설명서
 
@@ -103,4 +101,3 @@ TechNet의 다음 가이드에서 온라인 설명서를 볼 수 있습니다.
 **내게 필요한 옵션:** 장애가 있는 사용자가 Configuration Manager를 더욱 쉽게 이용할 수 있도록 지원하는 기능, 제품 및 서비스에 대해서는 [Configuration Manager의 내게 필요한 옵션 기능](http://go.microsoft.com/fwlink/p/?LinkId=258586)을 참조하세요.  
 
 **다운로드 가능한 설명서:** [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkId=253643)와 동일합니다. 최신 정보는 온라인 TechNet 라이브러리에서 확인하세요.
-

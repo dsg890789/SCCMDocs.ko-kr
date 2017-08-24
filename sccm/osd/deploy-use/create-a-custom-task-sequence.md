@@ -6,22 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b9800a66-7541-47ca-8276-da8ef6cb6d1b
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: 03c844084c72fc52806123d9f4c11a410a3ec775
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-a-custom-task-sequence-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 사용자 지정 작업 순서 만들기
 
@@ -54,4 +52,3 @@ System Center Configuration Manager에서 사용자 지정 작업 순서를 만�
 
  ## <a name="next-steps"></a>다음 단계
  [작업 순서 배포](manage-task-sequences-to-automate-tasks.md#BKMK_DeployTS)
-

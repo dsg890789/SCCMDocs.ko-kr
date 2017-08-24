@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b48c693c-d2b0-4707-a5dd-fe92172c49fe
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
 ms.openlocfilehash: 1a6084834384e695b49a71fe23833049c86f8dbc
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-configuration-data-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 구성 데이터 관리
 
@@ -58,9 +57,3 @@ System Center Configuration Manager에서 구성 항목 및 구성 기준을 만
 |**복사**|지정한 이름을 사용하여 선택한 구성 기준의 복사본을 만듭니다. 새 구성 기준이 원본 구성 기준에 대한 관계를 유지하지 않습니다.|  
 |**삭제**|이 구성 기준에 대한 참조를 검토할 수 있는 **구성 기준 삭제** 대화 상자를 엽니다.<br /><br /> 구성 기준을 삭제하려면 먼저 구성 기준에 대한 모든 참조를 제거해야 합니다.|  
 |**배포:**|하나 이상의 구성 기준을 계층의 장치에 배포할 수 있는 **구성 기준 배포** 대화 상자를 엽니다.<br /><br /> 자세한 내용은 [구성 기준 배포](../../compliance/deploy-use/deploy-configuration-baselines.md)를 참조하세요.|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

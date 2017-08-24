@@ -6,22 +6,20 @@ ms.date: 4/29/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: cd64994c-b426-4465-96cd-54b0edc2778d
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: NOINDEX, NOFOLLOW
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
 ms.openlocfilehash: 1d6c3b1db14867bdbc5cae8ded099d9024a79549
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-software-updates-in-updates-publisher"></a>Updates Publisher에서 소프트웨어 업데이트 관리
 
@@ -138,4 +136,3 @@ Updates Publisher 리포지토리에서 업데이트 및 번들을 내보내서 
 
 ## <a name="view-the-xml-of-an-update-or-bundle"></a>업데이트 또는 번들의 XML 보기
 **업데이트 작업 영역**에서 단일 업데이트 또는 번들을 선택한 다음 XML **보기**를 선택하여 해당 업데이트의 XML 구조를 표시할 수 있습니다. XML 구조를 직접 편집할 수 있는 옵션은 없습니다.
-

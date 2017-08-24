@@ -6,22 +6,19 @@ ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 54aa20d5-791e-4416-9db4-5aaea472c0b7
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dda2f4c01078fbbd174cbcb30357554c24f6abeb
 ms.openlocfilehash: 0fea1dece0768a2b7bcd3fcedc2288ea2d52e73d
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="define-site-boundaries-and-boundary-groups-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 사이트 경계 및 경계 그룹 정의
 
@@ -65,4 +62,3 @@ System Center Configuration Manager의 경계는 관리하려는 장치를 포�
     -   다른 사이트 할당을 포함하는 서로 다른 두 경계 그룹의 구성원인 경계의 클라이언트는 연결할 사이트를 임의로 선택하는데 이 사이트는 클라이언트가 연결하도록 할 사이트가 아닐 수 있습니다.  이러한 구성을 겹치는 경계라고 합니다.  
 
      겹치는 경계는 콘텐츠 위치 측면에서는 문제가 되지 않으며 클라이언트가 사용할 수 있는 리소스 또는 콘텐츠 위치를 추가로 제공하는 적절한 구성인 경우가 많습니다.  
-

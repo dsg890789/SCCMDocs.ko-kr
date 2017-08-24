@@ -6,22 +6,19 @@ ms.date: 04/13/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 79cd131a-1a24-4751-87c8-7f275e45d847
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 4b9261db93c9bf72c492e3c9be5b30f81835134a
 ms.openlocfilehash: 72ebd8bd29b5ecdd817631e447291c04f49d9808
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-linux-and-unix-server-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Linux 및 UNIX 서버 응용 프로그램 만들기
 
@@ -166,4 +163,3 @@ Background Intelligent Transfer에 대한 다음 구성은 Linux 및 UNIX용 클
 
 > [!TIP]  
 >  배포할 소프트웨어가 Linux 또는 UNIX 서버에서 액세스 가능한 NFS(네트워크 파일 시스템) 공유에 있는 경우 배포 지점을 사용하여 패키지를 다운로드할 필요가 없습니다. 대신 패키지를 만들 때 **이 패키지는 원본 파일을 포함함**확인란을 선택하지 마십시오. 그런 다음 프로그램을 구성할 때 NFS 탑재 지점의 패키지에 직접 액세스하도록 적절한 명령줄을 지정하십시오.  
-

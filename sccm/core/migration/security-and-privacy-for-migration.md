@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6893fce1-7ad5-4151-9ba9-3096871e8e4a
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 5e3d3f4194b06442e34c10988a20fe9ca40ac5d7
 ms.openlocfilehash: 8aa6971d75924ab5bcacd70c330913097ecf8717
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-migration-to-system-center-configuration-manager"></a>System Center Configuration Manager로의 마이그레이션에 대한 보안 및 개인 정보
 
@@ -64,9 +63,3 @@ ms.openlocfilehash: 8aa6971d75924ab5bcacd70c330913097ecf8717
 마이그레이션은 기본적으로 활성화되지 않으며 몇 개의 구성 단계를 거쳐야 실행할 수 있습니다. 마이그레이션 정보는 Microsoft로 전송되지 않습니다.  
 
 원본 계층에서 데이터를 마이그레이션하려면 먼저 개인 정보 취급 방침 요구 사항을 검토하십시오.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

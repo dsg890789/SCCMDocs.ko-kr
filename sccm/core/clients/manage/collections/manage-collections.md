@@ -6,23 +6,20 @@ ms.date: 4/25/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e102fd1a-76df-4d8e-b1b0-10ee18318f67
-caps.latest.revision: 8
-caps.handback.revision: 0
+caps.latest.revision: "8"
+caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d94acac84f052a01de9d9c9f65f237c0006c45b8
 ms.openlocfilehash: 4d44f98eb0755619cdd2101203a13725186b835b
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-manage-collections-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 컬렉션을 관리하는 방법
 
@@ -87,4 +84,3 @@ ms.lasthandoff: 05/17/2017
 |**배포 지점 그룹**|선택한 컬렉션의 멤버에 하나 이상의 배포 지점 그룹을 연결할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.|  
 |**보안**|연결된 역할 및 보안 범위에서 선택한 컬렉션에 대한 권한이 있는 관리자를 표시합니다.|  
 |**모니터**|클라이언트 상태와 Endpoint Protection에 대해 경고가 생성되는 때를 구성할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 클라이언트 상태를 구성하는 방법](../../../../core/clients/deploy/configure-client-status.md) 및 [System Center Configuration Manager에서 Endpoint Protection을 모니터링하는 방법](../../../../protect/deploy-use/monitor-endpoint-protection.md)을 참조하세요.|  
-

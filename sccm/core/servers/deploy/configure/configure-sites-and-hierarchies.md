@@ -6,22 +6,19 @@ ms.date: 2/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 9efb4061-f642-48bd-8332-3357ff5b3118
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5f1efaa776079b21d52b9936273380e9bb8963e9
 ms.openlocfilehash: 862f420c063cb44c419d4904fbb4696efb739758
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="configure-sites-and-hierarchies-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 사이트 및 계층 구조 구성
 
@@ -54,4 +51,3 @@ ms.lasthandoff: 05/17/2017
 |관리 지점에 대한 데이터베이스 복제본 구성|데이터베이스 복제본을 구성하면 클라이언트의 요청을 처리하는 관리 지점이 사이트 데이터베이스 서버에 적용하는 CPU 부하를 줄일 수 있습니다. 자세한 내용은 [System Center Configuration Manager의 관리 지점용 데이터베이스 복제본](../../../../core/servers/deploy/configure/database-replicas-for-management-points.md)을 참조하세요.|  
 |사이트 데이터베이스를 호스트하도록 SQL Server AlwaysOn 가용성 그룹 구성|1602 버전부터, 기본 사이트와 중앙 관리 사이트에서 사이트 데이터베이스를 호스트하기 위한 고가용성 및 재해 복구 솔루션으로 가용성 그룹을 구성합니다. 자세한 내용은 [System Center Configuration Manager용 항상 사용 가능한 사이트 데이터베이스를 위한 SQL Server AlwaysOn](../../../../core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database.md)을 참조하세요.|  
 |사이트 간 복제 수정|[System Center Configuration Manager의 사이트 간 데이터 전송](../../../../core/servers/manage/data-transfers-between-sites.md)에서 다음 주제에 대해 자세히 알아보세요.<br /><br /> 보조 사이트 간에 [파일 기반 복제](../../../../core/servers/manage/data-transfers-between-sites.md#bkmk_fileroute) 구성<br /><br /> [데이터베이스 복제 링크](../../../../core/servers/manage/data-transfers-between-sites.md#bkmk_Dblinks)구성<br /><br /> [분산 보기](../../../../core/servers/manage/data-transfers-between-sites.md#bkmk_distviews)구성|  
-

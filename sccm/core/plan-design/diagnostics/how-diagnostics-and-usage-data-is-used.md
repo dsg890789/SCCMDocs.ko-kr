@@ -6,20 +6,19 @@ ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a8021bc8-2799-41f4-83c2-e27d1242028c
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 24a233516058e645df2a43623855665b97b041b0
 ms.openlocfilehash: 9864f6ba7b9a2211c99b1a5d9ebd582e01ccfeb6
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-diagnostics-and-usage-data-is-used-for-system-center-configuration-manager"></a>System Center Configuration Manager의 진단 및 사용 현황 데이터 사용 방법
 
@@ -43,7 +42,7 @@ System Center Configuration Manager가 수집한 진단 및 사용 현황 데이
 
 -   기능 사용 또는 지리적 위치(표준 시간대)와 같은 사용 가능한 데이터를 기반으로 하는 광고  
 
-##  <a name="a-namebkmkimprovea-examples-of-how-diagnostics-and-usage-data-improves-the-product"></a><a name="bkmk_improve"></a> 진단 및 사용 현황 데이터는 제품을 개선하는 방법의 예  
+##  <a name="bkmk_improve"></a> 진단 및 사용 현황 데이터는 제품을 개선하는 방법의 예  
 Microsoft에서는 사용 가능한 데이터를 사용하여 제품을 개선합니다. 다음은 몇 가지 예입니다.  
 
 -   **이전 서버 운영 체제에 대한 수정된 지원:**  
@@ -53,9 +52,3 @@ Microsoft에서는 사용 가능한 데이터를 사용하여 제품을 개선�
 -   **개선된 필수 구성 요소 확인:**  
 
      사용 현황 데이터에 따라 업데이트를 설치하여 기존 규칙을 제거하고, 추가 사례를 확인하고, 경우에 따라 몇 가지 문제를 자동 해결하기 위한 필수 조건 검사를 개선했습니다.  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
-

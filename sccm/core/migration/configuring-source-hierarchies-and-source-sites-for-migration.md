@@ -6,23 +6,20 @@ ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ccce7cb5-e18f-4337-8adf-2018edca3c00
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c5a58d79f81ccdf19ad88dc932e3a52eac2c18ab
 ms.openlocfilehash: 80c43ab93ee5a2de6bf8d7993dfd46f0005d2df8
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/18/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="configure-source-hierarchies-and-source-sites-for-migration-to-system-center-configuration-manager"></a>System Center Configuration Manager로 마이그레이션할 원본 계층 및 원본 사이트 구성
 
@@ -106,4 +103,3 @@ Configuration Manager 2007 원본 계층에 대한 추가 원본 사이트를 �
 7. **확인** 을 클릭하여 구성을 저장합니다. 그러면 **데이터 수집 상태** 대화 상자가 열리고 자동으로 데이터 수집이 시작됩니다.  
 
 8.  데이터 수집을 마치면 **닫기** 를 클릭하여 구성을 완료합니다.  
-

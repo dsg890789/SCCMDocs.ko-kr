@@ -1,6 +1,6 @@
 ---
-title: Definiowanie grup granic | Dokumentacja firmy Microsoft
-description: "Zrozumienie grup granic, połączonych klientów z systemami lokacji w programie System Center Configuration Manager."
+title: "경계 그룹 정의 | Microsoft 문서"
+description: "System Center Configuration Manager에서 사이트 시스템에 클라이언트를 연결하는 경계 그룹을 이해합니다."
 ms.custom: na
 ms.date: 7/31/2017
 ms.prod: configuration-manager
@@ -16,345 +16,345 @@ ms.author: brenduns
 manager: angrobe
 ms.openlocfilehash: 5debc6559f4b1c213e8ca513d685941c9e669063
 ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
-ms.translationtype: MT
-ms.contentlocale: pl-PL
+ms.translationtype: HT
+ms.contentlocale: ko-KR
 ms.lasthandoff: 08/07/2017
 ---
-# <a name="configure-boundary-groups-for-system-center-configuration-manager"></a>Konfigurowanie grup granic dla programu System Center Configuration Manager
+# <a name="configure-boundary-groups-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 경계 그룹 구성
 
 
-*Dotyczy: Program System Center Configuration Manager (Current Branch)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
-Używasz grup granic w programie System Center Configuration Manager do logicznego pogrupowania powiązanych lokalizacji sieciowych ([granice](/sccm/core/servers/deploy/configure/boundaries)) aby ułatwić zarządzanie infrastrukturą. Granice można przypisać do grup granic, zanim będzie możliwe użycie grupy granic.
+System Center Configuration Manager에서 경계 그룹을 사용하여 관련 네트워크 위치([경계](/sccm/core/servers/deploy/configure/boundaries))를 논리적으로 그룹화하면 인프라를 보다 쉽게 관리할 수 있습니다. 경계 그룹을 사용하기 전에 경계 그룹에 경계를 할당해야 합니다.
 
-Domyślnie program Configuration Manager tworzy domyślną grupę granic lokacji w każdej lokacji.
+기본적으로 Configuration Manager는 각 사이트에서 기본 사이트 경계 그룹을 만듭니다.
 
 > [!IMPORTANT]  
->  **Informacje przedstawione w tej sekcji grupy granic i jego sekcje podrzędnych dotyczy wersji 1610 lub nowszej.** Ta zawartość została zmieniona jest specyficzny dla zmian projektowych wprowadzonych w grupach granic w tej wersji aktualizacji.
+>  **이 경계 그룹 섹션 및 해당 자식 섹션의 정보는 버전 1610 이상에 적용됩니다.** 이 콘텐츠는 이 업데이트 버전에서 경계 그룹에 도입된 설계 변경 사항에 맞게 수정되었습니다.
 >
-> **Jeśli używasz wersji przed 1610**, zobacz [grup granic dla programu System Center Configuration Manager w wersji 1511, 1602 i 1606](/sccm/core/servers/deploy/configure/boundary-groups-for-1511-1602-and-1606) informacji na temat użycia i konfigurowania grup granic z tymi wersjami produktu.
+> **1610 이전 버전을 사용하는 경우**, 해당 제품 버전에서 경계 그룹을 사용 및 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager 버전 1511, 1602 및 1606에 대한 경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups-for-1511-1602-and-1606)을 참조하세요.
 
-Aby skonfigurować grupy granic, należy skojarzyć granic (lokalizacje sieciowe) i role systemu lokacji, takich jak punkty dystrybucji do grupy granic. Dzięki temu można skojarzyć klientów na serwerach systemu lokacji, takich jak punkty dystrybucji, które znajdują się w pobliżu klientów w sieci.
+경계 그룹을 구성하려면 경계(네트워크 위치)와 사이트 시스템 역할(예: 배포 지점)을 경계 그룹에 연결합니다. 그러면 네트워크에서 클라이언트 근처에 있는 배포 지점과 같이 사이트 시스템 서버에 클라이언트를 연결할 수 있습니다.
 
-Należy przypisać tej samej granicy do wielu grup granic, a tej samej lokacji serwery systemu, takich jak punkty dystrybucji do wielu grup granic zwiększa dostępność systemów lokacji dla szerszej grupy lokalizacji sieciowych.
+동일한 경계를 여러 경계 그룹에 할당하고 배포 지점 같이 동일한 사이트 시스템 서버를 여러 경계 그룹에 할당할 경우 더 광범위한 네트워크 위치에 대한 사이트 시스템 가용성이 증가합니다.
 
-Klienci używają grupę granic:  
+클라이언트에서는 다음에 대해 경계 그룹을 사용합니다.  
 
--   Automatycznego przypisywania lokacji  
--   Aby znaleźć serwer systemu lokacji, która może zapewnić usługę, w tym:
-    - Punkty dystrybucji dla lokalizacji zawartości
-    -   Punkty aktualizacji oprogramowania (począwszy od wersji 1702)
-    - Punkty migracji stanu
-    - Preferowanych punktów zarządzania (Jeśli używasz preferowane punkty zarządzania, należy włączyć tę opcję dla hierarchii, a nie za pomocą konfiguracji grupy granic. Zobacz [umożliwia korzystanie z preferowanych punktów zarządzania](#to-enable-use-of-preferred-management-points) w tym temacie.)
+-   자동 사이트 할당  
+-   다음을 포함한 서비스를 제공할 수 있는 사이트 시스템 서버를 찾으려면:
+    - 콘텐츠 파일의 배포 지점
+    -   소프트웨어 업데이트 지점(버전 1702부터)
+    - 상태 마이그레이션 지점
+    - 기본 관리 지점. 기본 관리 지점을 사용하는 경우에는 경계 그룹 구성 내가 아닌 계층 구조에 대해 이 옵션을 사용하도록 설정해야 합니다. 이 항목에서 [기본 관리 지점을 사용하도록 설정하려면](#to-enable-use-of-preferred-management-points)을 참조하세요.
 
-##  <a name="boundary-groups-and-relationships"></a>Grupy granic i relacje
-Dla każdej grupy granic w hierarchii można przypisać:
+##  <a name="boundary-groups-and-relationships"></a>경계 그룹 및 관계
+계층 구조의 각 경계 그룹에 대해 다음을 할당할 수 있습니다.
 
--  Co najmniej jedną granicę. Kiedy klient znajduje się w lokalizacji sieciowej, która jest zdefiniowana jako granicę przypisane do określonej grupy, która jest wywoływana **bieżącego** grupy granic. Klient może mieć więcej niż jednej grupy granic bieżącej.
-- Jeden lub więcej ról systemu lokacji.  Klienci mogą zawsze używać ról systemu lokacji skojarzone z ich bieżącą grupę granic. W zależności od dodatkowe konfiguracje mogą one można używać w grupach granic dodatkowe role systemu lokacji.  
+-  하나 이상의 경계. 클라이언트가 특정 경계 그룹에 할당된 경계로 정의되는 네트워크 위치에 있을 경우 이를 **현재** 경계 그룹이라고 합니다. 클라이언트에는 두 개 이상의 경계 그룹이 포함될 수 있습니다.
+- 하나 이상의 사이트 시스템 역할.  클라이언트에는 항상 현재 경계 그룹과 연결된 사이트 시스템 역할이 사용됩니다. 추가 구성에 따라 추가 경계 그룹에서 사이트 시스템 역할을 사용할 수 있습니다.  
 
-Dla każdej grupy granic, które możesz utworzyć można skonfigurować jednokierunkowe łącze do innej grupy granic. Łącze jest nazywany **relacji**. Łącze do grupy granic są nazywane **sąsiada** grup granic. Grupa granic może mieć wiele relacji, każdy z grupą granic określonych sąsiedniego.
+직접 만든 각 경계 그룹에서 또 다른 경계 그룹에 대한 단방향 링크를 구성할 수 있습니다. 이 링크를 **관계**라고 합니다. 연결할 경계 그룹을 **인접** 경계 그룹이라고 합니다. 경계 그룹에는 여러 관계가 포함될 수 있고 각 관계는 특정 인접 경계 그룹과 연결됩니다.
 
-Konfiguracja każdej relacji określa, kiedy klient, który zakończy się niepowodzeniem, aby dowiedzieć się, że serwer systemu lokacji dostępne w jego bieżącej grupy granic można rozpocząć wyszukiwania sąsiada grupy granic można znaleźć systemu lokacji. To wyszukiwanie dodatkowych grup jest nazywany **rezerwowy**.
+각 관계의 구성에 따라 현재 경계 그룹에서 사용 가능한 사이트 시스템 서버를 찾지 못하는 클라이언트가 인접 경계 그룹에서 사용 가능한 사이트 시스템을 검색하기 시작할 수 있는 시기가 결정됩니다. 이 추가 그룹 검색을 **대체**라고 합니다.
 
-## <a name="fallback"></a>Opcja rezerwowa
-Aby zapobiec problemom dla klientów, gdy system lokacji dostępny nie znajduje się w ich bieżącej grupy granic, należy zdefiniować relacji między grupami granic, które definiuje zachowanie rezerwowego. Rezerwa umożliwia klienta rozwiń wyszukiwanie do grup granic dodatkowe można znaleźć systemu lokacji.
+## <a name="fallback"></a>대체
+현재 경계 그룹에서 사용 가능한 사이트 시스템을 찾을 수 없는 경우 클라이언트의 문제를 방지하려면 대체 동작을 정의하는 경계 그룹 간 관계를 정의합니다. 클라이언트에서는 대체를 통해 추가 경계 그룹으로 검색을 확장하여 사용 가능한 사이트 시스템을 찾습니다.
 
-Relacje są skonfigurowane na właściwości grupy granic **relacje** kartę. Po skonfigurowaniu relacji z grupą granic sąsiada należy zdefiniować łącza. Dla każdego typu Rola systemu lokacji, która jest obsługiwana można skonfigurować niezależnie od ustawień powrotu do tej grupy granic sąsiedniego. Na przykład po skonfigurowaniu relacji z grupą granic określonych można ustawić rezerwowy dla punktów dystrybucji zostać przeprowadzone po upływie 20 minut, zamiast domyślnej 120. Zobacz [przykład za pomocą grup granic](#example-of-using-boundary-groups) szerszej np.
+관계는 경계 그룹 속성 **관계** 탭에서 구성됩니다. 관계를 구성할 때 인접 경계 그룹에 대한 링크를 정의합니다. 지원되는 사이트 시스템 역할 유형별로 해당 인접 경계 그룹으로 대체하기 위한 개별 설정을 구성할 수 있습니다. 예를 들어 특정 경계 그룹에 대한 관계를 구성할 경우 기본값 120분이 아닌 20분 후에 수행되도록 배포 지점에 대한 대체를 설정할 수 있습니다. 추가 확장 예제는 [경계 그룹 사용 예제](#example-of-using-boundary-groups)를 참조하세요.
 
-Jeśli klient nie może znaleźć dostępna Rola systemu lokacji w jego bieżącej grupy granic, klient używa rezerwowej czas w minutach do określenia po jak długo można rozpocząć wyszukiwania system lokacji dostępny, który jest skojarzony z tej grupy granic sąsiedniego.  
+클라이언트가 현재 경계 그룹에서 사용 가능한 사이트 시스템 역할을 찾지 못하면 클라이언트에서는 대체 시간(분)을 사용하여 해당 인접 경계 그룹과 연결된 사용 가능한 사이트 시스템을 검색하기 시작할 때까지 대기할 시간을 확인합니다.  
 
-Gdy klient nie może znaleźć system lokacji dostępny i rozpocznie się wyszukiwanie w lokalizacjach od sąsiada grup granic, zwiększa puli systemy lokacji dostępne, które mogą być używane w taki sposób, który jest zdefiniowany w bieżącej konfiguracji grupy granic i ich relacji.
+클라이언트가 사용 가능한 사이트 시스템을 찾을 수 없고 인접 경계 그룹에서 위치를 검색하기 시작하면 클라이언트에서는 경계 그룹 및 관계의 구성을 통해 정의된 방식으로 사용 가능한 사이트 시스템의 풀을 늘립니다.
 
-- Grupa granic może mieć więcej niż jedną relację. Relacje wiele można skonfigurować używane dla każdego typu systemu lokacji z różnych sąsiadów występuje po różnych okresach czasu.    
-- Klienci tylko powrotu do grupy granic, która jest bezpośrednio sąsiada ich bieżącej grupy granic.
-- Gdy klient jest członkiem wielu grup granic, bieżącą grupę granic jest zdefiniowany jako Unii całkowicie grup granic klienta. Klient może następnie powrotu do sąsiadów któregokolwiek z tych oryginalnego grup granic.
+- 경계 그룹에 둘 이상의 관계를 구성할 수 있습니다. 여러 관계가 있는 경우 서로 다르게 지정된 시간이 지난 후 사이트 시스템 유형별로 다른 인접으로 대체되도록 구성할 수 있습니다.    
+- 클라이언트는 현재 경계 그룹의 직접 인접인 경계 그룹으로만 대체합니다.
+- 클라이언트가 여러 경계 그룹의 구성원인 경우 현재 경계 그룹이 모든 클라이언트 경계 그룹의 연합으로 정의됩니다. 그러면 해당 클라이언트가 이러한 원래 경계 그룹의 인접으로 대체할 수 있습니다.
 
-### <a name="the-default-site-boundary-group"></a>Domyślna grupa granic lokacji
-Oprócz grup granic, które możesz utworzyć każda lokacja ma domyślne grupy granic lokacji jest tworzony przez program Configuration Manager. Ta grupa ma nazwę ***domyślna--grupy granic lokacji&lt;kod lokacji >***. Na przykład, czy nazwę grupy w lokacji ABC *domyślna--grupy granic lokacji —&lt;ABC >.*
+### <a name="the-default-site-boundary-group"></a>기본 사이트 경계 그룹
+직접 만든 경계 그룹 외에 각 사이트에는 Configuration Manager에서 생성된 기본 사이트 경계 그룹이 있습니다. 이 그룹의 이름은 ***Default-Site-Boundary-Group&lt;sitecode>***로 지정됩니다. 예를 들어 사이트 ABC의 그룹 이름은 *Default-Site-Boundary-Group&lt;ABC>*로 지정됩니다.
 
-Dla każdej grupy granic tworzonych programu Configuration Manager automatycznie tworzy domniemanych łącze do każdej grupy granic lokacji domyślnej w hierarchii.
--   Dorozumiany łącze jest domyślne opcji rezerwowej z bieżącej grupy granic do domyślnej grupy granic lokacji rezerwowego czasu domyślne 120 minut.
--   Klienci, którzy nie znajdują się na granicy skojarzony z żadną inną grupą granic w hierarchii umożliwia domyślnej grupy granic lokacji w przypisanej lokacji zidentyfikowanie role systemu lokacji prawidłowy, którego mogą używać.
+직접 만든 각 경계 그룹에서는 Configuration Manager가 자동으로 구조 계층에 있는 각 기본 사이트 경계 그룹에 대한 암시적 링크를 만듭니다.
+-   암시적 링크는 현재 경계 그룹에서 기본 대체 시간이 120분인 사이트 기본 경계 그룹으로 대체되는 기본 대체 옵션입니다.
+-   계층 구조의 경계 그룹과 연결된 경계에 있지 않은 클라이언트에서는 할당된 사이트의 기본 사이트 경계 그룹을 통해 사용할 수 있는 유효한 사이트 시스템 역할을 식별합니다.
 
-Aby zarządzać powrotu do domyślnej grupy granic lokacji:
-- Można przejść do właściwości grupy granic domyślnej witryny i zmień wartości w **domyślne zachowanie** kartę. Zmiany wprowadzone w tym miejscu dotyczą *wszystkie* niejawnego łącza do tej grupy granic. Te ustawienia mogą zostać zastąpione podczas konfigurowania jawne łącze do tej grupy granic lokacji domyślnej z innej grupy granic.
-- Przejdź do okna właściwości grupy granic utworzonej i zmień wartości jawne łącza, który jest przesyłany do domyślnej grupy granic lokacji. Po ustawieniu nowego czas w minutach, powrotu lub bloku powrotu tej wpływa tylko łącze, które są konfigurowane. Konfiguracje wyraźnego związku przesłaniają akcje na **domyślne zachowanie** kartę domyślne grupy granic lokacji.
-
-
-## <a name="site-assignment"></a>Przypisanie lokacji  
- Do każdej grupy granic można wprowadzić przypisaną lokację do klientów.  
-
--   Nowo zainstalowanego klienta, który używa automatycznego przypisania lokacji łączy przypisanej lokacji grupę granic zawierającą bieżącą lokalizację sieciową klienta.  
--   Po przypisaniu do lokacji klient nie zmienia przypisania lokacji, gdy zmienia lokalizację sieciową. Na przykład, jeśli klient przejdzie do nowej lokalizacji sieciowej, która jest reprezentowana przez granicę w grupie granic z innym przypisaniem lokacji, klienta przypisanej lokacji pozostaną bez zmian.  
--   Kiedy funkcja odnajdowania systemu usługi Active Directory odnajdzie nowy zasób, informacje o sieci odnalezionego zasobu zostaną ocenione względem granic w grupach granic. Ten proces powoduje skojarzenie nowego zasobu z przypisaną lokacją w celu użycia przez metodę instalacji klienta w trybie wypychania.  
--   Gdy granicy do wielu grup granic, które mają przypisane różne lokacje, klientów losowo wybierać jedną z lokacji.  
--   Zmiany lokacji przypisanej do grup granic dotyczą tylko nowych akcji przypisania lokacji. Klienci, którzy wcześniej przypisani do lokacji, nie obliczyć ponownie przypisania lokacji na podstawie zmian w konfiguracji grupy granic (lub do lokalizacji sieciowej).  
-
-Aby uzyskać więcej informacji o przypisywaniu lokacji klienta, zobacz [przy użyciu automatycznego przypisania lokacji komputerów](../../../../core/clients/deploy/assign-clients-to-a-site.md#BKMK_AutomaticAssignment) w [jak przypisać klientów do lokacji w programie System Center Configuration Manager](../../../../core/clients/deploy/assign-clients-to-a-site.md).  
-
-## <a name="distribution-points"></a>Punkty dystrybucji
-
-Gdy klient żąda lokalizacji punktu dystrybucji, programu Configuration Manager wysyła klientowi listę, która obejmuje systemy lokacji odpowiedniego typu, które są skojarzone z każdą grupą granic, co obejmuje także bieżącą lokalizację sieciową klientów:
-
--   **Podczas dystrybucji oprogramowania**, klient żąda lokacji wdrożenia zawartości, która jest dostępna z punktem dystrybucji lub innych poprawne źródło zawartości (na przykład klient skonfigurowany na potrzeby równorzędnej pamięci podręcznej).
-
--   **Podczas wdrażania systemu operacyjnego**, klienci żądają lokalizacji do wysłania lub odebrania informacji o migracji stanu.  
-
-Podczas wdrażania zawartości Jeśli klient żąda zawartości, który nie jest dostępny ze źródła w jego bieżącej grupy granic, klient w dalszym ciągu zażądać tej zawartości do momentu osiągnięcia okres rezerwowy dla grupy granic sąsiada lub domyślna grupa granic lokacji w trakcie różnych źródeł zawartości w jego bieżącej grupy granic. Jeśli klient nie odnalazł jeszcze zawartość, następnie rozwija wyszukiwanie źródeł zawartości uwzględnić sąsiada grupy granic.
-
-Jednak jeśli zawartość będzie rozmieszczona na żądanie i nie jest dostępna w punkcie dystrybucji, gdy żądany przez klienta, rozpoczyna proces transferu zawartości do tego punktu dystrybucji i jest możliwe, klient będzie znaleźć ten serwer jako źródła zawartości przed powrotem do używania grupy granic sąsiedniego.
-
-## <a name="software-update-points"></a>Punkty aktualizacji oprogramowania
-Począwszy od wersji 1702, klienci używają grup granic do znajdowania punktu aktualizacji oprogramowania. Punkty aktualizacji oprogramowania można dodać do różnych grup granic do serwerów, które klient można znaleźć formantu.
-
-Po aktualizacji z wersji przed 1702 wszystkie istniejące punkty aktualizacji oprogramowania są dodawane do domyślnej grupy granic lokacji w każdej lokacji. Zapewnia to dostępność zachowanie przed aktualizacją, gdzie klienci wybierają punkt aktualizacji oprogramowania z puli punktów aktualizacji oprogramowania dostępne, które zostały skonfigurowane dla danej hierarchii.  To zachowanie jest zachowywana do momentu dodania do różnych grup granic zaznaczenia kontrolowane i działanie rezerwowe punkty aktualizacji oprogramowania.
-
-W przypadku instalowania nowej lokacji, na którym działa wersja 1702 lub później, punkty aktualizacji oprogramowania nie są dodawane do domyślnej grupy granic lokacji. Przypisać punkty aktualizacji oprogramowania do grupy granic, tak aby klienci mogą znaleźć i używać ich.
-
-### <a name="fallback-for-software-update-points"></a>Używane dla punktów aktualizacji oprogramowania
-Używane dla punktów aktualizacji oprogramowania jest skonfigurowane tak jak inne role systemu lokacji, ale ma następujące ostrzeżenia:
-- **Nowi klienci używają grup granic, aby wybrać punkty aktualizacji oprogramowania.** Po zainstalowaniu wersji 1702 nowych klientów, które można zainstalować, wybierz punkt aktualizacji oprogramowania z skojarzonych z grupami granic, które zostały skonfigurowane. Spowoduje to zastąpienie poprzedniego zachowanie, gdy klienci wybierają punkt aktualizacji oprogramowania losowo z listy osób, które współużytkują lesie klienta.
-
-- **Klienci w dalszym ciągu korzystać punktu aktualizacji oprogramowania dobrej Ostatnia znana do nich rezerwowy można znaleźć nową.** Klienci, którzy już mają punkt aktualizacji oprogramowania w dalszym ciągu używać tego punktu aktualizacji oprogramowania, dopóki nie może uzyskać dostępu do tego serwera.  Dotyczy to również dalsze używanie punkt aktualizacji oprogramowania, który nie jest skojarzony z bieżącą grupę granic klienta.
-
-  Dalsze używanie istniejącego punktu aktualizacji oprogramowania nawet wtedy, gdy ten serwer nie jest w bieżącej grupie granic klienta jest zamierzone. Jest to spowodowane Zmiana punktu aktualizacji oprogramowania może spowodować duże wykorzystanie przepustowości sieci, jak klient synchronizuje dane z nowego punktu aktualizacji oprogramowania. Opóźnienie w przejście może pomóc uniknąć nasycenia sieci, jeśli wszystkich klientów przełącznik nowe oprogramowanie punktu aktualizacji w tym samym czasie.
-
-- **Klient zawsze próbuje nawiązać połączenie jego ostatnim punktem aktualizacji oprogramowania znanego dobrego na 120 minut przed uruchomieniem rezerwowego.** Po 120 minut Jeśli klient nie ma nawiązać kontaktu, następnie rozpoczyna powrotu. Po uruchomieniu rezerwowe, klient odbierze listę wszystkich punktów aktualizacji oprogramowania z jego bieżącej grupy granic. Dodatkowe punkty aktualizacji oprogramowania od sąsiada grupy granic i grupy granic lokacji domyślne dostępnych konfiguracji rezerwowego.
-
-### <a name="fallback-configurations-for-software-update-points"></a>Konfiguracje rezerwowy dla punktów aktualizacji oprogramowania
-#### <a name="beginning-with-version-1706"></a>Począwszy od wersji 1706   
-Można skonfigurować **powrotu czas (w minutach)** na aktualizacji oprogramowania punktów za mniej niż 120 minut. Jednak klient musi nadal próbują uzyskać dostęp jego oryginalnej punktu aktualizacji oprogramowania na 120 minut przed rozszerza on wyszukiwania do dodatkowych serwerów. Ponieważ razy rezerwowy grupy granic uruchomić, gdy klient nie dokona najpierw do oryginalnego serwera, tych grup granic, które są skonfigurowane do 120 minut są dostarczane do klienta podczas rozszerza on wyszukiwanie po awarii do oryginalnego serwera na 120 minut.
-
-Można skonfigurować **nigdy rezerwowy** blok rezerwowy dla oprogramowania punktu z grupą granic sąsiada aktualizacji.
-
-Po awarii do oryginalnego serwera przez 2 godziny, klient używa następnie wywołania skrócenie cyklu nawiązanie połączenia punktu aktualizacji oprogramowania. Dzięki temu klientowi szybko przeszukiwać rosnącą listę potencjalnych punktów aktualizacji oprogramowania.
-
- -  **Przykład powrotu:**  
-    Bieżącą grupę granic klienta jest używane dla punktów aktualizacji oprogramowania, które są skonfigurowane jako *10* minut dla grupy granic *A*, i *130* minut dla grupy granic *B*. Gdy klient nie może nawiązać jego ostatnim punktem aktualizacji oprogramowania znanego dobrego:
-    -   Klient próbuje osiągnąć jego oryginalny serwer dalej 120 minut.  Po 10 minutach punktów z grupą granic, są dodawane do puli serwerów dostępnych aktualizacji oprogramowania. Klient nie może jednak próbę skontaktowania się z ich lub na innym serwerze przed upływem okresu wstępnego 120 minut połączyć się ponownie z oryginalnego serwera.
-    -   Po próbuje zlokalizować tego oryginalnego punktu aktualizacji oprogramowania na 120 minut, klient może rozszerzyć poszukiwania. W tym czasie serwerów w bieżącej grupie granic klienta i wszelkie sąsiada grup granic, które są skonfigurowane do 120 minut lub mniej, są dodawane do dostępnej puli punktów aktualizacji oprogramowania. Dotyczy to serwery A grupy granic, które zostały wcześniej dodane do puli dostępnych serwerów.
-    -       Po 10 minutach (130 minut całkowity czas po klient najpierw nie może połączyć się jego ostatnim punktem aktualizacji oprogramowania znanego dobrego) klient rozszerza wyszukiwania w celu uwzględnienia punktów aktualizacji oprogramowania z grupy granic B.  
-
-#### <a name="prior-to-version-1706"></a>Przed wersją 1706
-Poprzedzające wersję 1706 rezerwowej konfiguracji punktów aktualizacji oprogramowania nie obsługują można skonfigurować czas w minutach. Zamiast tego zachowania alternatywnego jest ograniczona do:
-
-  - **Rezerwowy czas (w minutach):**  Ta opcja jest niedostępny dla punktów aktualizacji oprogramowania i nie można skonfigurować. Jest ustawiona na 120 minut.
-  -     **Nigdy nie rezerwowej:** Możesz zablokować używane dla punktu aktualizacji oprogramowania do grupy granic sąsiada używania tej konfiguracji.
-
-Gdy klient, który ma już punkt aktualizacji oprogramowania nie można uzyskać do niej dostęp, klient może następnie powrotu można znaleźć innego. Korzystając z metody rezerwowej, klient odbiera listę wszystkich punktów aktualizacji oprogramowania z jego bieżącej grupy granic. W przypadku niepowodzenia można znaleźć dostępnego serwera na 120 minut zostanie następnie powrotu do jego grupę granic sąsiada i domyślnej grupy granic lokacji. Powrót do obu grup granic odbywa się w tym samym czasie, ponieważ punkty rezerwowy czas sąsiada grup jest ustawiona na 120 minut i nie można zmienić aktualizacji oprogramowania. 120 minut jest również domyślny okres używane powrotu do domyślnej grupy granic lokacji. Gdy klient powraca do obu sąsiada i domyślnej grupy granic lokacji, klient próbuje skontaktować się z punktów aktualizacji oprogramowania z grupy granic sąsiada przed podjęciem próby użycia jednej z domyślnej grupy granic lokacji.
-
-### <a name="manually-switch-to-a-new-software-update-point"></a>Ręcznie przełączać się do nowego punktu aktualizacji oprogramowania
-Oprócz używania rezerwowego, można użyć *powiadomienie klienta* ręcznie wymusić urządzenia, aby przełączyć się do nowego punktu aktualizacji oprogramowania.
-
-Przełączenie do nowego serwera urządzenia używają rezerwowego do znajdowania ten nowy serwer. W związku z tym Przejrzyj konfiguracji grupy granic i upewnij się, że punkty aktualizacji oprogramowania znajdują się w grupach granic poprawne przed rozpoczęciem tej zmiany.
-
-Aby uzyskać więcej informacji, zobacz [ręcznie przełączać klientów do nowego punktu aktualizacji oprogramowania](/sccm/sum/plan-design/plan-for-software-updates#manually-switch-clients-to-a-new-software-update-point).
+기본 사이트 경계 그룹으로의 대체를 관리하려면:
+- 사이트 기본 경계 그룹의 속성으로 이동하고 **기본 동작** 탭에서 값을 변경합니다. 여기서 변경한 내용은 이 경계 그룹에 대한 *모든* 암시적 링크에 적용됩니다. 또 다른 경계 그룹에서 이 기본 사이트 경계 그룹에 대한 명시적 링크를 구성할 때 이러한 설정을 재정의할 수 있습니다.
+- 직접 만든 경계 그룹의 속성으로 이동하고 기본 사이트 경계 그룹으로 이동하는 암시적 링크의 값을 변경할 수 있습니다. 대체 또는 대체 차단에 대한 시간(분)을 새로 설정하면 변경 내용은 구성 중인 링크에만 적용됩니다. 암시적 링크의 구성은 기본 사이트 경계 그룹의 **기본 동작** 탭에 있는 구성을 재정의합니다.
 
 
-## <a name="preferred-management-points"></a>Preferowane punkty zarządzania
+## <a name="site-assignment"></a>사이트 할당  
+ 클라이언트의 할당된 사이트로 각 경계 그룹을 구성할 수 있습니다.  
 
- Preferowane punkty zarządzania umożliwiają klientom identyfikowanie punktów zarządzania skojarzonych z ich bieżącą lokalizacją sieciową (granicą).  
+-   자동 사이트 할당을 사용하는 새로 설치된 클라이언트는 클라이언트의 현재 네트워크 위치가 포함된 경계 그룹의 할당된 사이트에 연결됩니다.  
+-   사이트에 할당된 클라이언트는 네트워크 위치를 변경할 때 사이트 할당을 변경하지 않습니다. 예를 들어 클라이언트가 다른 사이트 할당이 지정된 경계 그룹의 경계가 표시하는 새 네트워크 위치로 로밍할 경우 이 클라이언트의 할당된 사이트는 변경되지 않고 그대로 유지됩니다.  
+-   Active Directory 시스템 검색이 새 리소스를 검색하면 검색된 리소스의 네트워크 정보는 경계 그룹의 경계를 기준으로 평가됩니다. 이 프로세스는 클라이언트 강제 설치 방법에서 사용하도록 할당된 사이트에 새 리소스를 연결합니다.  
+-   경계가 서로 다른 할당된 사이트를 포함하는 여러 경계 그룹의 구성원이면 클라이언트는 사이트 중 하나를 임의로 선택합니다.  
+-   경계 그룹 할당된 사이트에 대한 변경 내용은 새 사이트 할당 작업에만 적용됩니다. 이전에 사이트에 할당된 클라이언트는 경계 그룹의 구성 또는 고유 네트워크 위치의 변경 내용을 기준으로 사이트 할당을 다시 평가하지 않습니다.  
 
--   Klienci podejmują próbę użycia preferowanego punktu zarządzania z przypisanej do niego lokacji, zanim użyją punktów zarządzania z przypisanej lokacji, który nie jest skonfigurowany jako preferowane.  
--   Aby użyć tej opcji, możesz ją włączyć w hierarchii, a następnie skonfiguruj grup granic w poszczególnych lokacjach głównych w celu uwzględnienia punktów zarządzania, które powinny być skojarzone ze skojarzonymi granicami tej grupy granic.  
--   Gdy preferowane punkty zarządzania są skonfigurowane, a klient organizuje swoją listę punktów zarządzania, klient umieszcza preferowane punkty zarządzania u góry listy przypisanych punktów zarządzania (zawierającej wszystkie punkty zarządzania z przypisanej lokacji klienta).  
+클라이언트 사이트 할당에 대한 자세한 내용은 [System Center Configuration Manager에서 사이트에 클라이언트를 할당하는 방법](../../../../core/clients/deploy/assign-clients-to-a-site.md)에서 [컴퓨터에 대한 자동 사이트 할당 사용](../../../../core/clients/deploy/assign-clients-to-a-site.md#BKMK_AutomaticAssignment)을 참조하세요.  
+
+## <a name="distribution-points"></a>배포 지점
+
+클라이언트가 배포 지점의 위치를 요청할 경우 Configuration Manager에서는 클라이언트의 현재 네트워크 위치가 포함된 각 경계 그룹과 연결된 적절한 유형의 사이트 시스템이 포함된 목록을 클라이언트에 보냅니다.
+
+-   **소프트웨어를 배포하는 동안** 클라이언트는 배포 지점에서 사용 가능한 배포 콘텐츠의 위치 또는 기타 유효한 콘텐츠 원본(예: 피어 캐시에 대해 구성된 클라이언트)을 요청합니다.
+
+-   **운영 체제를 배포하는 동안** 클라이언트는 상태 마이그레이션 정보를 보내거나 받을 위치를 요청합니다.  
+
+콘텐츠를 배포하는 동안 클라이언트가 현재 경계 그룹의 원본에서 사용할 수 없는 콘텐츠를 요청할 경우 클라이언트는 인접 경계 그룹 또는 기본 사이트 경계 그룹에 대한 대체 기간에 도달할 때까지 현재 경계 그룹의 다른 콘텐츠 원본을 시도하여 해당 콘텐츠를 계속 요청합니다. 클라이언트가 콘텐츠를 찾지 못한 경우 콘텐츠 원본 검색을 확장하여 인접 경계 그룹을 포함합니다.
+
+하지만 콘텐츠가 요청 시 배포되고 클라이언트가 요청할 때 배포 지점에서 사용할 수 없으면 콘텐츠를 해당 배포 지점으로 전송하는 프로세스가 시작되고 클라이언트는 인접 경계 그룹을 사용하도록 대체되기 전에 해당 서버를 콘텐츠 원본으로 찾을 수 있습니다.
+
+## <a name="software-update-points"></a>소프트웨어 업데이트 지점
+버전 1702부터 클라이언트는 경계 그룹을 사용하여 새 소프트웨어 업데이트 지점을 찾습니다. 클라이언트가 찾을 수 있는 서버를 제어하기 위해 개별 소프트웨어 업데이트 지점을 다른 경계 그룹에 추가할 수 있습니다.
+
+1702 이전 버전에서 업데이트할 경우 모든 기존 소프트웨어 업데이트 지점이 각 사이트의 기본 사이트 경계 그룹에 추가됩니다. 이렇게 하면 클라이언트가 계층 구조에 대해 구성한 사용 가능한 소프트웨어 업데이트 지점 풀에서 소프트웨어 업데이트 지점을 선택하는 업데이트 전 동작이 유지됩니다.  이 동작은 제어된 선택 및 대체 동작에 대해 다른 경계 그룹에 개별 소프트웨어 업데이트 지점을 추가하도록 선택할 때까지 유지됩니다.
+
+버전 1702 이상을 실행하는 새 사이트를 설치하는 경우 소프트웨어 업데이트 지점은 기본 사이트 경계 그룹에 추가되지 않습니다. 클라이언트가 찾아서 사용할 수 있도록 소프트웨어 업데이트 지점을 경계 그룹에 할당합니다.
+
+### <a name="fallback-for-software-update-points"></a>소프트웨어 업데이트 지점 대체
+소프트웨어 업데이트 지점 대체는 다른 사이트 시스템 역할처럼 구성되지만 다음과 같은 주의 사항이 있습니다.
+- **새 클라이언트는 경계 그룹을 사용하여 소프트웨어 업데이트 지점을 선택합니다.** 버전 1702를 설치한 후에는 설치할 새 클라이언트는 구성한 경계 그룹과 연결된 위치에서 소프트웨어 업데이트 지점을 선택합니다. 이렇게 하면 클라이언트가 클라이언트 포리스트를 공유하는 위치 목록에서 임의로 소프트웨어 업데이트 지점을 선택하는 이전 동작이 바뀝니다.
+
+- **클라이언트는 새 소프트웨어 업데이트 지점을 찾도록 대체될 때까지 마지막으로 성공한 소프트웨어 업데이트 지점을 계속 사용합니다.** 이미 소프트웨어 업데이트 지점이 있는 클라이언트는 해당 서버에 도달할 수 없을 때까지 해당 소프트웨어 업데이트 지점을 계속 사용합니다.  여기에는 클라이언트의 현재 경계 그룹과 연결되지 않은 소프트웨어 업데이트 지점을 계속 사용하는 것이 포함됩니다.
+
+  해당 서버가 클라이언트의 현재 경계 그룹에 없는 경우에도 기존 소프트웨어 업데이트 지점을 계속 사용하는 것은 의도적입니다. 이는 소프트웨어 업데이트 지점 변경 시 클라이언트가 새 소프트웨어 업데이트 지점과 데이터를 동기화하면서 네트워크 대역폭이 많이 사용될 수 있기 때문입니다. 전환 시의 지연은 모든 클라이언트가 새 소프트웨어 업데이트 지점으로 동시에 전환할 경우 발생하는 네트워크 혼잡을 방지하는 데 도움이 됩니다.
+
+- **클라이언트는 항상 대체를 시작하기 전에 120분 동안 마지막으로 성공한 소프트웨어 업데이트 지점에 도달하려고 합니다.** 120분 후에도 연결을 설정하지 못하면 클라이언트는 대체를 시작합니다. 대체가 시작되면 클라이언트는 현재 경계 그룹에서 모든 소프트웨어 업데이트 지점 목록을 받습니다. 인접 경계 그룹 및 사이트 기본 경계 그룹의 추가 소프트웨어 업데이트 지점은 대체 구성에 따라 사용할 수 있습니다.
+
+### <a name="fallback-configurations-for-software-update-points"></a>소프트웨어 업데이트 지점에 대한 대체 구성
+#### <a name="beginning-with-version-1706"></a>버전 1706부터 시작   
+소프트웨어 업데이트 지점에 대해 **대체(fallback) 시간(분):**을 120분보다 작게 구성할 수 있습니다. 그러나 클라이언트는 120분 동안 원래 소프트웨어 업데이트 지점에 도달하려고 계속 시도하다가 실패하면 추가 서버를 검색하도록 확장됩니다. 클라이언트가 원래 서버에 도달하지 못하고 처음 실패할 때 경계 그룹 대체 시간이 시작되므로 120분 이내로 구성된 경계 그룹은 120분 동안 원래 서버에 도달하지 못하면 검색이 확장되면서 클라이언트로 제공됩니다.
+
+인접 경계 그룹으로의 소프트웨어 업데이트 지점 대체를 차단하도록 **대체 안 함**을 구성할 수 있습니다.
+
+2시간 내에 원래 서버에 도달하지 못하면 클라이언트는 더 짧은 주기를 사용해서 새 소프트웨어 업데이트 지점에 대한 연결을 설정합니다. 이를 통해 클라이언트는 잠재적인 소프트웨어 업데이트 지점의 확장 목록을 빠르게 검색할 수 있습니다.
+
+ -  **대체(fallback)의 예:**  
+    클라이언트의 현재 경계 그룹은 경계 그룹 *A*에 대해 *10*분, 경계 그룹 *B*에 대해 *130*분으로 구성된 소프트웨어 업데이트 지점에 대해 대체(fallback)가 지정되어 있습니다. 클라이언트가 마지막으로 성공한 소프트웨어 업데이트 지점에 연결하지 못할 경우:
+    -   클라이언트는 다음 120분 동안 원래 서버로만 도달하려고 합니다.  10분 후에 경계 그룹 A에서의 소프트웨어 업데이트 지점이 사용할 수 있는 서버 풀에 추가됩니다. 그러나 클라이언트는 원래 서버와 다시 연결하기 위한 초기 120분 기간이 겅과할 때까지 서버 풀의 서버 또는 다른 서버에 대한 연결을 시도할 수 없습니다.
+    -   클라이언트는 120분 동안 원래 소프트웨어 업데이트 지점을 찾으려고 시도한 후에 검색 범위를 확장할 수 있습니다. 이 시점에서 120분 이하로 구성된 클라이언트의 현재 경계 그룹 및 인접 항목 경계 그룹의 서버가 소프트웨어 업데이트 지점의 사용 가능한 풀에 추가됩니다. 여기에는 사용 가능한 서버 풀에 이전에 추가된 경계 그룹 A의 서버가 포함됩니다.
+    -       10분이 더 경과된 후에(클라이언트가 마지막으로 성공한 소프트웨어 업데이트 지점에 도달하는 데 실패하고 130분 후) 클라이언트는 경계 그룹 B의 소프트웨어 업데이트 지점을 포함하도록 검색 범위를 확장합니다.  
+
+#### <a name="prior-to-version-1706"></a>버전 1706 이전
+버전 1706 이전에 소프트웨어 업데이트 지점에 대한 대체 구성은 구성 가능한 시간(분)을 지원하지 않습니다. 대신, 대체 동작은 다음으로 제한됩니다.
+
+  - **대체 시간(분):** 이 옵션은 소프트웨어 업데이트 지점에 대해 회색으로 표시되고 구성될 수 없습니다. 120분으로 설정됩니다.
+  -     **대체 안 함:** 이 구성을 사용할 때 소프트웨어 업데이트 지점이 인접 경계 그룹으로 대체되는 것을 차단할 수 있습니다.
+
+기존 소프트웨어 업데이트 지점이 있는 클라이언트가 서버에 도달하지 못하면 클라이언트는 다른 지점을 찾도록 대체될 수 있습니다. 대체를 사용할 경우 클라이언트는 현재 경계 그룹에서 모든 소프트웨어 업데이트 지점 목록을 받습니다. 120분 동안 사용 가능한 서버를 찾지 못하면 인접 경계 그룹 및 기본 사이트 경계 그룹으로 대체됩니다. 인접 그룹에 대한 소프트웨어 업데이트 지점 대체 시간은 120분으로 설정되고 변경될 수 없으므로 두 경계 그룹으로의 대체는 동시에 이루어집니다. 120분은 기본 사이트 경계 그룹으로의 대체에 사용되는 기본 기간입니다. 클라이언트가 인접 및 기본 사이트 경계 그룹으로 둘 다 대체되는 경우 클라이언트는 기본 사이트 경계 그룹의 지점을 사용하기 전에 인접 경계 그룹의 소프트웨어 업데이트 지점에 접속하려고 합니다.
+
+### <a name="manually-switch-to-a-new-software-update-point"></a>새 소프트웨어 업데이트 지점으로 수동 전환
+대체(fallback)를 사용하는 것 외에 *클라이언트 알림*을 사용하여 강제로 장치가 새 소프트웨어 업데이트 지점으로 전환되도록 할 수 있습니다.
+
+새 서버로 전환되면 장치는 대체(fallback)를 사용하여 해당 새 서버에 찾습니다. 따라서 경계 그룹 구성을 검토하고 이 변경을 시작하기 전에 소프트웨어 업데이트 지점이 올바른 경계 그룹에 있는지 확인하세요.
+
+자세한 내용은 [수동으로 클라이언트를 새 소프트웨어 업데이트 지점으로 전환](/sccm/sum/plan-design/plan-for-software-updates#manually-switch-clients-to-a-new-software-update-point)을 참조하세요.
+
+
+## <a name="preferred-management-points"></a>기본 설정 관리 지점
+
+ 기본 설정 관리 지점은 클라이언트가 현재 네트워크 위치(경계)와 연결된 관리 지점을 식별할 수 있도록 합니다.  
+
+-   클라이언트는 할당된 사이트에서 기본 설정 관리 지점으로 구성되지 않은 관리 지점을 사용하기 전에 할당된 사이트의 기본 설정 관리 지점을 사용하려고 시도합니다.  
+-   이 옵션을 사용하려면 계층 구조에 대해 이 옵션을 사용하도록 설정해야 하며, 경계 그룹에 연결된 경계와 연결해야 하는 관리 지점을 포함하도록 개별 기본 사이트에서 경계 그룹을 구성해야 합니다.  
+-   기본 설정 관리 지점이 구성되어 있으면 클라이언트는 관리 지점 목록을 구성할 때 할당된 관리 지점 목록 맨 위에 기본 설정 관리 지점을 표시합니다. 할당된 관리 지점 목록에는 클라이언트의 할당된 사이트에 있는 모든 관리 지점이 포함됩니다.  
 
 > [!NOTE]  
->  Gdy klient przemieszcza się (co oznacza, że zmienia lokalizację sieciową, np. laptop pojawia się w lokalizacji biura zdalnego), może w nowej lokalizacji używać punktu zarządzania (lub punktu zarządzania serwera proxy) z lokacji lokalnej przed podjęciem próby użycia punktu zarządzania z przypisanej lokacji (która obejmuje preferowane punkty zarządzania).  Zobacz [zrozumieć, jak klienci znajdują zasoby i usługi programu System Center Configuration Manager lokacji](../../../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md) Aby uzyskać więcej informacji.  
+>  클라이언트는 로밍 시, 즉 노트북을 원격 사무실 위치로 이동할 때와 같이 클라이언트의 네트워크 위치가 변경될 때 할당된 사이트의 관리 지점(기본 설정 관리 지점 포함)을 사용하려고 시도하기 전에 로컬 사이트의 관리 지점 또는 프록시 관리 지점을 새 위치로 사용할 수 있습니다.  [클라이언트가 System Center Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법 이해](../../../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)를 참조하세요.  
 
-### <a name="overlapping-boundaries"></a>Nakładanie się granic  
- Program Configuration Manager obsługuje nakładających się granic konfiguracje lokalizacji zawartości:  
+### <a name="overlapping-boundaries"></a>겹치는 경계  
+ Configuration Manager에서는 콘텐츠 위치에 대한 겹치는 경계를 구성할 수 있습니다.  
 
--   **Gdy klient żąda zawartości**, a lokalizacja sieciowa klienta należy do wielu grup granic, programu Configuration Manager wysyła klientowi listę wszystkich punktów dystrybucji zawierających daną zawartość.  
--   **Gdy klient żąda serwera, aby wysłać lub odebrać informacje o migracji stanu**, a lokalizacja sieciowa klienta należy do wielu grup granic, programu Configuration Manager wysyła klientowi listę punktów migracji stanu skojarzonych z grupą granic zawierającą bieżącą lokalizację sieciową klienta.  
+-   **클라이언트에서 콘텐츠를 요청할 때** 클라이언트 네트워크 위치가 여러 경계 그룹에 속해 있으면 Configuration Manager에서 콘텐츠가 있는 모든 배포 지점 목록을 클라이언트로 보냅니다.  
+-   **클라이언트가 서버에 해당 상태 마이그레이션 정보 전송 또는 수신을 요청할 때** 클라이언트 네트워크 위치가 여러 경계 그룹에 속해 있으면 Configuration Manager에서 클라이언트의 현재 네트워크 위치가 포함된 경계 그룹에 연결된 모든 상태 마이그레이션 지점 목록을 클라이언트로 보냅니다.  
 
-Pozwala to klientowi na wybranie najbliższego serwera, z którego można przetransferować zawartość lub informacje o migracji stanu.  
+클라이언트는 이 동작을 통해 콘텐츠나 상태 마이그레이션 정보를 전송할 가장 가까운 서버를 선택할 수 있습니다.  
 
 
 
-## <a name="example-of-using-boundary-groups"></a>Przykład użycia grup granic
-W poniższym przykładzie użyto wyszukiwanie zawartości z punktu dystrybucji klienta. W tym przykładzie można zastosować do innych ról systemu lokacji, które używają grup granic. Jednak ponieważ dotyczy punktów aktualizacji oprogramowania, należy pamiętać, punktów aktualizacji oprogramowania nie obsługuje konfiguracji czas w minutach powrotu do grupy sąsiada czy należy zawsze używać 120 minut.
+## <a name="example-of-using-boundary-groups"></a>경계 그룹 사용 예제
+다음 예제에서는 배포 지점에서 콘텐츠를 검색하는 클라이언트를 사용합니다. 이 예제는 경계 그룹을 사용하는 다른 사이트 시스템 역할에 적용될 수 있습니다. 하지만 소프트웨어 업데이트 지점에 적용될 경우 소프트웨어 업데이트 지점은 인접 그룹으로 대체에 대한 시간(분)의 구성을 지원하지 않고 항상 120분 기간을 사용한다는 것에 유의하세요.
 
-Możesz tworzyć trzech grup granic, które nie udostępniają granic lub serwerów systemu lokacji:
--   Grupy BG_A z punktami dystrybucji DP_A1 i DP_A2 skojarzonego z grupy
--   Grupy BG_B z punktami dystrybucji DP_B1 i DP_B2 skojarzonego z grupy
--   Grupy BG_C z punktami dystrybucji DP_C1 i DP_C2 skojarzonego z grupy
+경계 또는 사이트 시스템 서버를 공유하지 않는 세 가지 경계 그룹을 만듭니다.
+-   배포 지점 DP_A1 및 DP_A2가 연결된 그룹 BG_A
+-   배포 지점 DP_B1 및 DP_B2가 연결된 그룹 BG_B
+-   배포 지점 DP_C1 및 DP_C2가 연결된 그룹 BG_C
 
-Dodawanie lokalizacje sieciowe klientów jako granic tylko grupy granic BG_A, i można następnie skonfigurować relacje z tej grupy granic do innych grup granic dwóch:
--   Konfigurowanie punktów dystrybucji w pierwszym *sąsiada* grupy (BG_B) do użycia po 10 minutach. Ta grupa zawiera punkty dystrybucji DP_B1 i DP_B2. Oba są dobrze połączonych do pierwszej grupy lokalizacje granic.
--   Skonfiguruj drugi *sąsiada* grupy (BG_C) do użycia po upływie 20 minut. Ta grupa zawiera punkty dystrybucji DP_C1 i DP_C2. Są w sieci WAN z innych grup granic dwa.
--   Można również dodać dodatkowe punkt dystrybucji znajdującego się na serwerze lokacji do grupy granic lokacji domyślnej witryny. Jest to najmniej preferowanych lokalizacji źródła zawartości, ale jest on umieszczony centralnie do grup granic.
+클라이언트의 네트워크 위치를 BG_A 경계 그룹에만 경계로 추가한 다음 해당 경계 그룹에서 다른 두 경계 그룹으로의 관계를 구성합니다.
+-   10분 후 사용할 첫 번째 *인접* 그룹(BG_B)에 대한 배포 지점을 구성합니다. 이 그룹에는 배포 지점 DP_B1 및 DP_B2가 포함됩니다. 둘 다 첫 번째 그룹 경계 위치에 연결됩니다.
+-   20분 후에 사용할 두 번째 *인접* 그룹(BG_C)을 구성합니다. 이 그룹에는 배포 지점 DP_C1 및 DP_C2가 포함됩니다. 둘 다 다른 두 경계 그룹에서 WAN을 통해 연결됩니다.
+-   또한 사이트 서버에 있는 추가 배포 지점을 사이트 기본 사이트 경계 그룹에 추가합니다. 이 위치는 가장 선호되지 않는 콘텐츠 원본 위치이지만 모든 경계 그룹 중앙에 위치합니다.
 
-    Przykład grupy granic i rezerwowy razy:
+    경계 그룹 및 대체 시간 예제:
 
      ![BG_Fallack](media/BG_Fallback.png)
 
 
-W tej konfiguracji:
--   Klient rozpocznie się wyszukiwanie zawartości z punktów dystrybucji w jego *bieżącego* grupy granic (BG_A), wyszukiwanie każdego dystrybucji punkt dla dwóch minut przed przełączeniem do następnego punktu dystrybucji w grupie granic. Pula klientów lokalizacji poprawne źródło zawartości zawiera DP_A1 i DP_A2.
--   Jeśli klient nie można odnaleźć zawartości z jego *bieżącego* grupy granic po przeszukaniu przez 10 minut, następnie dodaje punkty dystrybucji z grupy granic BG_B do jego wyszukiwania. Następnie kontynuuje do wyszukiwania zawartości z punktu dystrybucji w jego Scalonej puli punktów dystrybucji, która zawiera teraz od BG_A i BG_B grup granic. Klient w dalszym ciągu do kontaktowania się z poszczególnych punktów dystrybucji dla dwóch minut przed przełączeniem do następnego punktu dystrybucji z puli. Pula klientów lokalizacji poprawne źródło zawartości zawiera DP_A1, DP_A2 DP_B1 i DP_B2.
--   Po 10 minutach dodatkowe (całkowita liczba 20 minut), jeśli klient nadal nie odnalazł do punktu dystrybucji z zawartością, zostanie on rozszerzony puli dostępnych punktów dystrybucji te od drugiego *sąsiada* grupy, grupa granic BG_C. Klient teraz ma 6 punktów dystrybucji do wyszukiwania (DP_A1, DP_A2 DP_B2, DP_B2, DP_C1 i DP_C2) i kontynuuje wprowadzanie zmian do nowego punktu dystrybucji co dwie minuty, aż do znalezienia zawartości.
--   Jeśli klient nie odnalazł zawartości po łącznie 120 minut, jego powraca do uwzględnienia *domyślnej grupy granic lokacji* jako część jej ciągłego wyszukiwania. Pula punktów dystrybucji zawiera teraz wszystkie punkty dystrybucji z trzech skonfigurowanych grup granic i punktu końcowego dystrybucji znajdujących się na komputerze serwera lokacji.  Klient kontynuuje wyszukiwanie zawartości, zmiana co dwie minuty, aż do znalezienia zawartości w punktach dystrybucji.
+이 구성을 사용하면:
+-   클라이언트는 *현재* 경계 그룹(BG_A)의 배포 지점에서 콘텐츠 검색을 시작하고 각 배포 지점에서 2분 동안 검색한 다음 경계 그룹의 다음 배포 지점으로 전환합니다. 올바른 콘텐츠 원본 위치의 클라이언트 풀에는 DP_A1 및 DP_A2가 포함됩니다.
+-   클라이언트가 *현재* 경계 그룹에서 10분 동안 콘텐츠를 찾지 못하면 BG_B 경계 그룹의 배포 지점이 해당 검색에 추가됩니다. 그런 다음 이제 두 BG_A와 BG_B 경계 그룹의 배포 지점을 포함하는 결합된 배포 지점 풀에 있는 배포 지점에서 콘텐츠를 검색합니다. 클라이언트는 각 배포 지점을 2분 동안 연결한 다음 해당 풀의 다음 배포 지점으로 전환합니다. 올바른 콘텐츠 원본 위치의 클라이언트 풀에는 DP_A1, DP_A2, DP_B1 및 DP_B2가 포함됩니다.
+-   그 후 10분 뒤(총 20분)에도 클라이언트가 콘텐츠가 있는 배포 지점을 찾지 못하면 두 번째 *인접* 그룹인 경계 그룹 BG_C의 배포 지점을 포함하도록 사용 가능한 배포 지점 풀을 확장합니다. 이제 클라이언트는 검색할 배포 지점이 총 6개(DP_A1, DP_A2, DP_B2, DP_B2, DP_C1 및 DP_C2)이며 콘텐츠를 찾을 때까지 2분 간격으로 새 배포 지점으로 변경합니다.
+-   총 120분 후 클라이언트가 콘텐츠를 찾지 못하면 *기본 사이트 경계 그룹*을 연속 검색의 일부로 포함하도록 대체합니다. 이제 배포 지점 풀에는 3개의 구성된 경계 그룹의 모든 배포 지점과 사이트 서버 컴퓨터에 있는 최종 배포 지점이 포함됩니다.  클라이언트는 콘텐츠를 계속 검색하고 콘텐츠를 찾을 때까지 2분마다 배포 지점을 변경합니다.
 
-Konfigurując grupy różnych sąsiada mają być dostępne w różnych momentach kontrolować woluminowi konkretnych punktów dystrybucji jako lokalizacji źródła zawartości i gdy lub jeśli klient używa powrotu do domyślnej grupy granic lokacji zabezpieczenie na zawartość, która nie jest dostępna w innej lokalizacji.
-
-
+서로 다른 시간에 사용할 수 있는 여러 인접 그룹을 구성하여 특정 배포 지점이 콘텐츠 원본 위치로 추가되는 시기를 제어하고, 클라이언트가 기본 사이트 경계 그룹을 다른 위치에서 사용할 수 없는 콘텐츠를 위한 안전망으로 대체할지 여부 또는 그 시기를 제어합니다.
 
 
 
 
-### <a name="update-existing-boundary-groups-to-the-new-model"></a>Aktualizowanie istniejących grup granic do nowego modelu
-Podczas aktualizacji do wersji przed 1610 następujące konfiguracje zostaną zastosowane automatycznie. Są one przeznaczone do upewnij się, że Twoje bieżące działanie rezerwowe pozostaje dostępna, dopóki nie skonfigurujesz nowych grup granic i relacje.
-
--   Grupy granic lokacji domyślnej jest tworzona dla każdej lokacji głównej, nazwa jest ***domyślna--grupy granic lokacji —&lt;kod lokacji >.***
-  - Punkty dystrybucji z *Zezwalaj na rezerwową lokalizację źródła zawartości* zaznaczone i punktów migracji stanu w lokacjach głównych są dodawane do *domyślna--grupy granic lokacji&lt;kod lokacji >* grupy granic w tej lokacji.
-  - Począwszy od wersji 1702, punkty aktualizacji oprogramowania są dodawane do każdej lokacji *domyślna--grupy granic lokacji&lt;kod lokacji >*.
--   Kopia składa się z każdej istniejącej grupy granic, która obejmuje serwer lokacji skonfigurowany z wolnego połączenia. Nazwa nowej grupy jest *** &lt;oryginalna nazwa grupy granic >-&lt;pierwotny identyfikator grupy granic >***:  
-    -   Systemy lokacji, które mają szybkiego połączenia są pozostawiane w oryginalnej grupy granic.
-    -   Kopię systemy lokacji (punkty dystrybucji, punkty zarządzania), które mają wolne połączenia są dodawane do kopii grupy granic. Systemy lokacji oryginalnej skonfigurowana jako niska pozostają w jego oryginalnej grup granic w celu zgodności z poprzednimi wersjami, ale nie są używane z tych grup granic.
-    - Ta kopia grupy granic nie ma granicach skojarzonych z nim. Jednak tworzone jest połączenie rezerwowy między oryginalnej grupy i nową kopię grupy granic o czasie rezerwowy ustawić na zero.  
 
 
-- **Specyficzne dla dodatkowej lokacji:**
-  - Grupy granic jest tworzony, jeśli Lokacja pomocnicza ma co najmniej jeden punkt z dystrybucji *Zezwalaj na rezerwową lokalizację źródła zawartości* punktu migracji zaznaczone lub stanu. Nazwa grupy granic to ***pomocniczy-witryny-sąsiada — Tmp&lt;kod lokacji >.***
-  - Punkty dystrybucji wszystkich z *Zezwalaj na rezerwową lokalizację źródła zawartości* zaznaczone i punktów migracji stanu zostaną dodane do tej grupy granic nowo utworzony lokacji dodatkowej.
-  - Tworzone jest połączenie rezerwowy między oryginalnej grupy granic i grupy granic sąsiada nowo utworzony i czas rezerwowego jest ustawiony na zero.
+### <a name="update-existing-boundary-groups-to-the-new-model"></a>기존 경계 그룹을 새 모델로 업데이트
+1610 이전 버전으로 업데이트하면 다음 구성이 자동으로 만들어집니다. 그 이유는 새 경계 그룹 및 관계를 구성할 때까지 현재 대체 동작을 계속 사용할 수 있도록 하기 위해서입니다.
+
+-   각 기본 사이트에 대해 기본 사이트 경계 그룹이 만들어지며, 이름은 ***Default-Site-Boundary-Group&lt;사이트 코드>***입니다.
+  - *콘텐츠에 대한 대체 원본 위치 허용*이 선택된 배포 지점 및 기본 사이트의 상태 마이그레이션 지점이 해당 사이트의 *Default-Site-Boundary-Group&lt;사이트 코드>* 경계 그룹에 추가됩니다.
+  - 버전 1702부터 소프트웨어 업데이트 지점은 각 사이트 *Default-Site-Boundary-Group&lt;sitecode>*에 추가됩니다.
+-   느린 연결로 구성된 사이트 서버가 포함된 각각의 기존 경계 그룹 복사본이 만들어집니다. 새 그룹의 이름은 ***&lt;원래 경계 그룹 이름>-&lt;원래 경계 그룹 ID>***입니다.  
+    -   빠른 연결이 있는 사이트 시스템은 원래 경계 그룹에 남아 있습니다.
+    -   느린 연결이 있는 사이트 시스템(배포 지점, 관리 지점)의 복사본이 경계 그룹 복사본에 추가됩니다. 느린 연결로 구성된 원래 사이트 시스템은 이전 버전과의 호환성을 위해 원래 경계 그룹에 남아 있지만 해당 경계 그룹에서 사용되지 않습니다.
+    - 이 경계 그룹에는 연결된 경계가 없습니다. 그러나 원래 그룹과 대체 시간이 0으로 설정된 새 경계 그룹 복사본 사이에 대체 링크가 만들어집니다.  
 
 
- W poniższej tabeli przedstawiono nowe działanie rezerwowe można spodziewać się z kombinacji oryginalne ustawienia wdrożenia i punktu dystrybucji konfiguracje:
+- **보조 사이트 관련:**
+  - 보조 사이트에 *콘텐츠에 대한 대체 원본 위치 허용*이 선택된 배포 지점 또는 상태 마이그레이션 지점이 하나 이상 있는 경우 경계 그룹이 만들어집니다. 경계 그룹의 이름은 ***Secondary-Site-Neighbor--Tmp&lt;사이트 코드>***입니다.
+  - *콘텐츠에 대한 대체 원본 위치 허용*이 선택된 배포 지점 및 상태 마이그레이션 지점이 새로 만든 이 보조 사이트 경계 그룹에 모두 추가됩니다.
+  - 원래 경계 그룹과 새로 만든 인접 경계 그룹 간에 대체(fallback) 링크가 생성되며 대체(fallback) 시간이 0으로 설정됩니다.
 
-Oryginalna konfiguracja wdrożenia "Nie należy uruchamiać program" w wolnej sieci  |Punkt dystrybucji oryginalnej konfiguracji "Client Zezwalaj na użycie rezerwowej lokalizacji źródła zawartości"  |Nowe działanie rezerwowe  
+
+ 다음 표에서는 원래 배포 설정과 배포 지점 구성의 조합에서 사용할 수 있는 새 대체 동작을 식별합니다.
+
+느린 네트워크의 "프로그램 실행 안 함"에 대한 원래 배포 구성  |"클라이언트에서 콘텐츠에 대한 대체 원본 위치를 사용하도록 허용"에 대한 원래 배포 지점 구성  |새 대체 동작  
 ---------|---------|---------
-Wybrane     |  Wybrane    |  **Rezerwowe nie** -punktów dystrybucji należy używać tylko w bieżącej grupie granic       
-Wybrane     |  Nie wybrano|  **Rezerwowe nie** -punktów dystrybucji należy używać tylko w bieżącej grupie granic       
-Nie wybrano |  Nie wybrano|  **Powrót do sąsiada** — używać punktów dystrybucji w bieżącej grupie granic, a następnie dodaj punkty dystrybucji z grupy granic sąsiedniego. Chyba że jawne łącze do domyślnej grupy granic lokacji jest skonfigurowany, klienci nie będą powrotu do tej grupy.    
-Nie wybrano | Wybrane     |   **Normalne powrotu** -używać punktów dystrybucji w bieżącej grupie granic, a następnie od sąsiada i lokacji domyślnych grup granic
+선택됨     |  선택됨    |  **대체 없음** - 현재 경계 그룹에 있는 배포 지점만 사용합니다.       
+선택됨     |  선택되지 않음|  **대체 없음** - 현재 경계 그룹에 있는 배포 지점만 사용합니다.       
+선택되지 않음 |  선택되지 않음|  **인접으로 대체** - 현재 경계 그룹의 배포 지점을 사용한 다음 인접 경계 그룹의 배포 지점을 추가합니다. 기본 사이트 경계 그룹에 대한 명시적 링크를 구성하지 않으면 클라이언트가 해당 그룹으로 대체하지 않습니다.    
+선택되지 않음 | 선택됨     |   **기본 대체** - 현재 경계 그룹의 배포 지점을 사용한 다음 인접 및 사이트 기본 경계 그룹의 배포 지점을 사용합니다.
 
- Wszystkie konfiguracje wdrożenia powoduje **normalne powrotu**.  
-
-
+ 다른 모든 배포 구성은 **일반 대체**가 됩니다.  
 
 
-## <a name="changes-from-prior-versions-for-ui-and-behavior-for-content-locations"></a>Zmiany z wcześniejszych wersji interfejsu użytkownika i zachowanie dla lokalizacji zawartości
-Poniżej przedstawiono zmiany klucza do grupy granic i jak klienci znajdują zawartości. Zmiany zostaną wprowadzone w wersji 1610. Wiele z tych zmian i pojęcia współdziałają ze sobą.
 
 
--   **Konfiguracje dla Fast lub wolno zostaną usunięte:** Można już konfigurować poszczególne punkty dystrybucji można dużą lub małą.  Zamiast tego jest traktowany każdego systemu lokacji skojarzone z grupą granic takie same. Z powodu tej zmiany **odwołania** na karcie właściwości grupy granic już nie obsługuje konfiguracji Fast lub niska.
--   **Nową grupę granic domyślne w każdej lokacji:**  Każda lokacja główna ma nowej grupy granic domyślny o nazwie ***domyślna--grupy granic lokacji&lt;kod lokacji >***.  Gdy klient nie jest w lokalizacji sieciowej, która jest przypisana do grupy granic, klient użyje systemy lokacji skojarzone z domyślnej grupy z przypisanej lokacji. Zaplanuj użycie tej grupy granic w zastępstwie koncepcję rezerwowej lokalizacji zawartości.      
- -  **"Zezwalaj na lokalizacji rezerwowej dla zawartości"** zostaną usunięte: Nie jest już jawnie skonfigurować punkt dystrybucji do użycia jako metody rezerwowej i opcji, aby ustawić to są usuwane z interfejsu użytkownika.
-
-    Ponadto wynik ustawienie **Zezwalaj klientom na użycie rezerwowej lokalizacji źródła zawartości** w ramach wdrożenia zmienił się typ dla aplikacji. To ustawienie w typie wdrożenia teraz umożliwia klienta do używania domyślnej grupy granic lokacji jako lokalizacji źródła zawartości.
-
- -  **Relacje grupy granic:** Każda grupa granic może odnosić się do co najmniej jednej grupy granic dodatkowe. Łącza te tworzą relacje, które są skonfigurowane na karcie właściwości nowej grupy granic o nazwie **relacje**:
-    -   Każdą grupą granic, klient jest bezpośrednio z którym skojarzony jest nazywany **bieżącego** grupy granic.  
-    -   Żadną inną grupą granic klient może korzystać z powodu skojarzenia między tego klienta *bieżącego* nosi nazwę grupy granic i innej grupy **sąsiada** grupy granic.
-    -  Znajduje się na **relacje** kartę Dodaj grupy granic, które mogą być używane jako *sąsiada* grupy granic. Można również skonfigurować czas w minutach, które określa, kiedy klient, który nie może odnaleźć zawartości z punktu dystrybucji w *bieżącego* grupy rozpocznie się wyszukiwanie lokalizacji zawartości od tych *sąsiada* grup granic.
-
-        Podczas dodawania lub zmienić konfigurację grupy granic, konieczne będzie opcja powrotu do tej grupy granic określone z bieżącej grupy, który jest konfigurowany bloku.
-
-    Aby korzystać z nowej konfiguracji, zdefiniować jawnej skojarzenia (linki) z jednej grupy granic i skonfiguruj wszystkie punkty dystrybucji w tej grupie skojarzony z tym samym czasie w minutach. Określa czas, należy skonfigurować, gdy klient, który nie uda się znaleźć źródła zawartości z jego *bieżącego* grupy granic można rozpocząć wyszukiwanie źródła zawartości z tej grupy granic sąsiedniego.
-
-    Oprócz grup granic, które jawnie skonfigurować każdą grupą granic ma domniemanych łącze do domyślnej grupy granic lokacji. To łącze staje się aktywny po 120 minut po tym czasie domyślnej grupy granic lokacji staje się sąsiada grupy granic, która umożliwia klientom korzystanie z punktów dystrybucji skojarzone z daną grupą granic jako lokalizacji źródła zawartości.
-
-    To zachowanie zastępuje, co zostało wcześniej określone jako metody rezerwowej dla zawartości.  Można zastąpić to domyślne zachowanie 120 minut, kojarząc jawnie domyślnej grupy granic lokacji do *bieżącego* grupy i ustawienie określony czas w minutach lub blokuje powrotu całkowicie uniemożliwić korzystanie z niego.
+## <a name="changes-from-prior-versions-for-ui-and-behavior-for-content-locations"></a>콘텐츠 위치의 UI 및 동작에 대해 이전 버전에서 변경된 내용
+다음은 경계 그룹 및 클라이언트에서 콘텐츠를 검색하는 방법에 대한 주요 변경 내용입니다. 이러한 변경 내용은 버전 1610에서 추가되었습니다. 이러한 많은 변경 내용 및 개념은 함께 작동합니다.
 
 
--   **Klienci próbują pobrać zawartości z poszczególnych punktów dystrybucji przez maksymalnie 2 minuty:** Gdy klient wyszukuje lokalizacji źródła zawartości, próbuje uzyskiwać dostęp do poszczególnych punktów dystrybucji dla dwóch minut przed podjęciem próby następnie innego punktu dystrybucji. Jest to zmiana z poprzednich wersji, której klienci nastąpiła próba połączenia do punktu dystrybucji przez maksymalnie 2 godziny.
+-   **빠름 또는 느림 구성 제거됨:** 개별 배포 지점을 더 이상 빠름 또는 느림으로 구성하지 않습니다.  대신 경계 그룹과 연결된 각 사이트 시스템이 동일하게 처리됩니다. 이러한 변경으로 인해 경계 그룹 속성의 **참조** 탭에서 더 이상 빠름 또는 느림 구성을 지원하지 않습니다.
+-   **각 사이트의 새 기본 경계 그룹:** 각 기본 사이트에는 ***Default-Site-Boundary-Group&lt;sitecode>***라는 새 기본 경계 그룹이 있습니다.  경계 그룹에 지정된 네트워크 위치에 없는 클라이언트는 지정된 사이트의 기본 그룹과 연결된 사이트 시스템을 사용합니다. 이 경계 그룹을 대체 콘텐츠 위치의 개념 대신 사용합니다.      
+ -  **‘콘텐츠에 대해 대체 원본 위치 허용’** 제거됨: 더 이상 대체에 사용할 배포 지점을 명시적으로 구성하지 않으며 이 기능을 설정하는 옵션이 UI에서 제거되었습니다.
 
-    - Pierwszy punkt dystrybucji, który klient próbuje użyć jest wybierane losowo z puli dostępnych punktów dystrybucji na komputerze klienckim *bieżącego* grupy granic (lub grupy).
+    또한 응용 프로그램의 배포 유형에서 **클라이언트가 콘텐츠에 대한 대체 원본 위치를 사용하도록 허용** 설정의 결과가 변경되었습니다. 이제 배포 유형에서 이 설정을 사용하면 클라이언트가 기본 사이트 경계 그룹을 콘텐츠 원본 위치로 사용할 수 있습니다.
 
-    - Po dwóch minut Jeśli klient nie odnalazł zawartości, go przełącza się do nowego punktu dystrybucji i próbuje pobrać zawartość z tego serwera. Ten proces jest powtarzany co dwie minuty, aż do klienta znajduje się zawartość lub osiągnie ostatni serwer w jego puli.
+ -  **경계 그룹 관계:** 각 경계 그룹은 하나 이상의 추가 경계 그룹에 연결할 수 있습니다. 이러한 링크는 **관계**라는 새 경계 그룹 속성 탭에서 관계를 구성합니다.
+    -   클라이언트가 직접 연결된 각 경계 그룹을 **현재** 경계 그룹이라고 합니다.  
+    -   클라이언트의 *현재* 경계 그룹과 다른 그룹 간의 연결로 클라이언트에서 사용할 수 있는 경계 그룹을 **인접** 경계 그룹이라고 합니다.
+    -  *인접* 경계 그룹으로 사용할 수 있는 경계 그룹을 추가하려면 **관계** 탭을 사용합니다. *현재* 그룹의 배포 지점에서 콘텐츠를 찾지 못한 클라이언트가 이러한 *인접* 경계 그룹에서 콘텐츠 위치 검색을 시작할 시간(분)을 구성할 수도 있습니다.
 
-    - Jeśli klient nie może znaleźć lokalizację poprawne źródło zawartości z jego *bieżącego* puli przed okresem powrotu do *sąsiada* osiągnięciu grupy granic, klient następnie dodaje punktów dystrybucji niż *sąsiada* grupy w celu jego bieżącej listy i będzie wyszukiwać rozwiniętej grupy lokalizacje źródłowe zawiera punkty dystrybucji z obu tych grup granic.
+        경계 그룹 구성을 추가하거나 변경할 때 현재 구성 중인 그룹이 해당 경계 그룹으로 대체되지 않도록 차단할 수 있습니다.
+
+    새 구성을 사용하려면 한 경계 그룹에서 다른 경계 그룹으로 명시적 연결(링크)을 정의하고 연결된 그룹의 모든 배포 지점을 동일한 시간(분)으로 구성합니다. 구성하는 시간에 따라 *현재* 경계 그룹에서 콘텐츠 원본을 찾지 못한 클라이언트가 해당 인접 경계 그룹에서 콘텐츠 원본을 검색하기 시작하는 시간이 결정됩니다.
+
+    각 경계 그룹에는 명시적으로 구성한 경계 그룹 외에도 기본 사이트 경계 그룹에 대한 암시적 링크가 있습니다. 기본 사이트 경계 그룹이 인접 경계 그룹이 되면 120분 뒤에 이 링크가 활성화됩니다. 그러면 클라이언트에서 해당 경계 그룹과 연결된 배포 지점을 콘텐츠 원본 위치로 사용할 수 있습니다.
+
+    이 동작을 이전에는 콘텐츠 대체라고 했습니다.  기본 사이트 경계 그룹을 *현재* 그룹에 명시적으로 연결하고 특정 시간(분)을 설정하거나 대체를 완전히 차단하여 사용하지 못하도록 설정하여 이 기본 동작(120분)을 재정의할 수 있습니다.
+
+
+-   **클라이언트가 최대 2분 동안 각 배포 지점에서 콘텐츠 가져오기 시도:** 클라이언트는 콘텐츠 원본 위치를 검색할 때 각 배포 지점을 2분 동안 액세스한 다음 다른 배포 지점을 검색합니다. 이전 버전에서는 클라이언트가 최대 2시간 동안 배포 지점 연결을 시도했습니다.
+
+    - 클라이언트가 사용하려는 첫 번째 배포 지점은 클라이언트의 *현재* 경계 그룹에서 사용 가능한 배포 지점 풀 중에서 임의로 선택됩니다.
+
+    - 2분 후 클라이언트가 콘텐츠를 찾지 못하면 새 배포 지점으로 전환하여 해당 서버에서 콘텐츠 가져오기를 시도합니다. 이 프로세스는 클라이언트가 콘텐츠를 찾거나 해당 풀의 마지막 서버에 도달할 때까지 2분마다 반복됩니다.
+
+    - 클라이언트가 *인접* 경계 그룹으로 대체되는 기간 전에 *현재* 풀에서 유효한 콘텐츠 원본 위치를 찾지 못하면 해당 *인접* 그룹의 배포 지점을 현재 목록의 끝에 추가한 다음 두 경계 그룹의 배포 지점을 포함하는 확장된 원본 위치 그룹을 검색합니다.
 
         > [!TIP]  
-        > Podczas tworzenia wyraźnego związku z bieżącej grupy granic do domyślnej grupy granic lokacji i rezerwowy czasu, która jest mniejsza niż rezerwowy czasu dla łącza do grupy granic sąsiada, klienci rozpocznie się wyszukiwanie źródła lokalizacji do domyślnej grupy granic lokacji przed dołączeniem grupy sąsiedniego.
+        > 현재 경계 그룹에서 기본 사이트 경계 그룹으로 명시적 링크를 만들고 인접 경계 그룹에 대한 링크의 대체 시간보다 짧게 대체 시간을 정의하면 클라이언트가 인접 그룹을 포함하기 전에 기본 사이트 경계 그룹에서 원본 위치 검색을 시작합니다.
 
-    - Gdy klient nie można pobrać zawartości z ostatniego serwera w puli, rozpoczyna proces ponownie.
-
-
-## <a name="procedures-for-boundary-groups"></a>Procedury dotyczące grup granic
-Poniższe procedury dotyczą wersji 1610 lub nowszej. Jeśli używasz wersji przed 1610, zapoznaj się z procedurami w [grup granic dla programu System Center Configuration Manager w wersji 1511, 1602 i 1606](/sccm/core/servers/deploy/configure/boundary-groups-for-1511-1602-and-1606).
+    - 클라이언트가 풀의 마지막 서버에서 콘텐츠를 가져올 수 없으면 프로세스가 다시 시작됩니다.
 
 
-### <a name="to-create-a-boundary-group"></a>Aby utworzyć grupę granic  
-1.  W konsoli programu Configuration Manager kliknij **administracji** > **Konfiguracja hierarchii** >  **grup granic**.  
-
-2.  Na karcie **Narzędzia główne** w grupie **Tworzenie** kliknij przycisk **Utwórz grupę granicę**.  
-
-3.  W oknie dialogowym **Utwórz grupę granicę** wybierz kartę **Ogólne** i określ **nazwę** tej grupy granic.  
-
-4.  Kliknij przycisk **OK** , aby zapisać nową grupę granic.  
+## <a name="procedures-for-boundary-groups"></a>경계 그룹에 대한 절차
+다음 절차는 버전 1610 이상에 적용됩니다. 1610 이전 버전을 사용하는 경우 [System Center Configuration Manager 버전 1511, 1602 및 1606에 대한 경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups-for-1511-1602-and-1606)의 절차를 참조하세요.
 
 
-### <a name="to-configure-a-boundary-group"></a>Aby skonfigurować grupę granic  
- 1.  W konsoli programu Configuration Manager kliknij **administracji** > **Konfiguracja hierarchii** >  **grup granic**.  
+### <a name="to-create-a-boundary-group"></a>경계 그룹을 만들려면  
+1.  Configuration Manager 콘솔에서 **관리** > **계층 구조 구성** >  **경계 그룹**을 클릭합니다.  
 
- 2.  Wybierz grupę granic, którą chcesz zmodyfikować.  
+2.  **홈** 탭의 **만들기** 그룹에서 **경계 그룹 만들기**를 클릭합니다.  
 
- 3.  Na karcie **Narzędzia główne** w grupie **Właściwości** kliknij przycisk **Właściwości**.  
+3.  **경계 그룹 만들기** 대화 상자에서 **일반** 탭을 선택하고 이 경계 그룹의 **이름** 을 지정합니다.  
 
- 4.  W oknie dialogowym **Właściwości** dla grupy granic wybierz kartę **Ogólne** , aby zmodyfikować granice należące do tej grupy granic:  
+4.  **확인** 을 클릭하여 새 경계 그룹을 저장합니다.  
 
-     -   Aby dodać granice, kliknij przycisk **Dodaj**, zaznacz pole wyboru przynajmniej jednej granicy, a następnie kliknij przycisk **OK**.  
 
-     -   Aby usunąć granicę, wybierz granicę i kliknij przycisk **Usuń**.  
+### <a name="to-configure-a-boundary-group"></a>경계 그룹을 구성하려면  
+ 1.  Configuration Manager 콘솔에서 **관리** > **계층 구조 구성** >  **경계 그룹**을 클릭합니다.  
 
- 5.  Wybierz kartę **Odwołania** , aby zmodyfikować konfigurację przypisania lokacji i konfigurację skojarzonego serwera systemu lokacji:  
+ 2.  수정할 경계 그룹을 선택합니다.  
 
-     -   Aby umożliwić użycie tej grupy granic przez klientów do przypisania lokacji, zaznacz pole wyboru **Użyj tej grupy granic do przypisania lokacji**, a następnie wypisz lokację z listy rozwijanej **Przypisana lokacja** .  
+ 3.  **홈** 탭의 **속성** 그룹에서 **속성**을 클릭합니다.  
 
-     -   Aby skonfigurować dostępne serwery systemu lokacji, które będą skojarzone z tą grupą granic:  
+ 4.  경계 그룹의 **속성** 대화 상자에서 **일반** 탭을 선택하여 이 경계 그룹에 속한 경계를 수정합니다.  
 
-     1.  Kliknij przycisk **Dodaj**, a następnie zaznacz pole wyboru dla przynajmniej jednego serwera. Serwery zostaną dodane jako skojarzone serwery systemu lokacji dla tej grupy granic. Dostępne będą tylko serwery, na których zainstalowano obsługiwaną rolę systemu lokacji.  
+     -   이 경계를 추가하려면 **추가**를 클릭하고 경계 그룹 하나 이상의 확인란을 선택한 다음 **확인**을 클릭합니다.  
 
-         > [!NOTE]  
-         >  Można wybrać dowolną kombinację dostępnych systemów lokacji z dowolnej lokacji w hierarchii. Wybrane systemy lokacji są wyświetlane na karcie **Systemy lokacji** we właściwościach wszystkich granic należących do tej grupy granic.  
+     -   경계를 제거하려면 경계를 선택하고 **제거**를 클릭합니다.  
 
-     2.  Aby usunąć serwer z grupy granic, wybierz serwer i kliknij przycisk **Usuń**.  
+ 5.  사이트 할당 및 연결된 사이트 시스템 서버 구성을 수정하려면 **참조** 탭을 선택합니다.  
+
+     -   클라이언트에서 사이트 할당에 이 경계 그룹을 사용하도록 하려면 **사이트 할당에 대해 이 경계 그룹 사용**확인란을 선택한 다음 **할당된 사이트** 드롭다운 상자에서 사이트를 선택합니다.  
+
+     -   이 경계 그룹에 연결되는 사용 가능한 사이트 시스템 서버를 구성하려면  
+
+     1.  **추가**를 클릭한 다음 서버 하나 이상의 확인란을 선택합니다. 서버가 이 경계 그룹에 대해 연결된 사이트 시스템 서버로 추가됩니다. 지원되는 사이트 시스템 역할이 설치되어 있는 서버만 사용 가능합니다.  
 
          > [!NOTE]  
-         >  Aby przestać używać tej grupy granic na potrzeby kojarzenia systemów lokacji, należy usunąć wszystkie serwery wyświetlane jako skojarzone serwery systemu lokacji.  
+         >  계층의 모든 사이트에서 사용 가능한 사이트 시스템 조합을 선택할 수 있습니다. 선택한 사이트 시스템은 이 경계 그룹의 구성원인 각 경계의 속성에서 **사이트 시스템** 탭에 나열됩니다.  
 
- 6.  Wybierz **relacje** kartę, aby skonfigurować działanie rezerwowe:  
+     2.  이 경계 그룹에서 서버를 제거하려면 해당 서버를 선택하고 **제거**를 클릭합니다.  
 
-     - Kliknij przycisk **Dodaj**, a następnie wybierz grupę granic, w której chcesz skonfigurować.
+         > [!NOTE]  
+         >  사이트 시스템을 연결하는 데 이 경계 그룹을 더 이상 사용하지 않으려면 연결된 사이트 시스템 서버로 나열되어 있는 모든 서버를 제거해야 합니다.  
 
-     - Ustaw czas rezerwowy dla punktów dystrybucji. Po tym okresie klienci w grupie granic, konfigurowanej relacji, będzie można rozpocząć wyszukiwanie zawartości z punktów dystrybucji do grupy granic, który dodajesz.
+ 6.  **관계** 탭을 선택하여 대체(fallback) 동작을 구성합니다.  
 
-     - Aby zapobiec powrotu do określonej grupy, łącznie z *domyślnej grupy granic lokacji* jest domyślnie skonfigurowany, wybierz grupę granic, a następnie zaznacz pole wyboru, aby uzyskać **nigdy rezerwowy**.   
+     - **추가**를 클릭한 다음 구성할 경계 그룹을 선택합니다.
 
- 7.  Kliknij przycisk **OK** , aby zamknąć właściwości grupy granic i zapisać konfigurację.  
+     - 배포 지점에 대한 대체(fallback) 시간을 설정합니다. 이 기간 후에 관계를 구성하는 경계 그룹의 클라이언트는 추가하는 경계 그룹의 배포 지점에서 콘텐츠 검색을 시작할 수 있습니다.
 
-#### <a name="to-associate-a-site-systme-server-with-a-boundary-group"></a>Aby skojarzyć z grupą granic serwera systemu lokacji  
- 1.  W konsoli programu Configuration Manager kliknij **administracji** > **Konfiguracja hierarchii** >  **grup granic**.  
+     - 기본적으로 구성되는 *기본 사이트 경계 그룹*을 비롯한 특정 경계 그룹으로 대체(fallback)를 방지하려면 경계 그룹을 선택한 다음 **대체(fallback) 안 함** 확인란을 선택합니다.   
 
- 2.  Wybierz grupę granic, którą chcesz zmodyfikować.  
+ 7.  **확인** 을 클릭하여 경계 그룹 속성을 닫고 구성을 저장합니다.  
 
- 3.  Na karcie **Narzędzia główne** w grupie **Właściwości** kliknij przycisk **Właściwości**.  
+#### <a name="to-associate-a-site-systme-server-with-a-boundary-group"></a>사이트 시스템 서버를 경계 그룹과 연결하려면  
+ 1.  Configuration Manager 콘솔에서 **관리** > **계층 구조 구성** >  **경계 그룹**을 클릭합니다.  
 
- 4.  W oknie dialogowym **Właściwości** dla grupy granic wybierz kartę **Odwołania** .  
+ 2.  수정할 경계 그룹을 선택합니다.  
 
- 5.  W sekcji **Wybierz serwery systemu lokacji**kliknij przycisk **Dodaj**, zaznacz pola wyboru dla serwerów systemu lokacji, które chcesz skojarzyć z tą grupą granic, a następnie kliknij przycisk **OK**.  
+ 3.  **홈** 탭의 **속성** 그룹에서 **속성**을 클릭합니다.  
 
- 6.  Kliknij przycisk **OK** , aby zamknąć okno dialogowe i zapisać konfigurację grupy granic.  
+ 4.  경계 그룹의 **속성** 대화 상자에서 **참조** 탭을 선택합니다.  
+
+ 5.  **사이트 시스템 서버 선택**아래에서 **추가**를 클릭하고 이 경계 그룹에 연결할 사이트 시스템 서버의 확인란을 선택한 다음 **확인**을 클릭합니다.  
+
+ 6.  **확인** 을 클릭하여 대화 상자를 닫고 경계 그룹 구성을 저장합니다.  
 
 
-#### <a name="to-configure-a-fallback-site-for-automatic-site-assignment"></a>Aby skonfigurować lokację rezerwową na użytek automatycznego przypisywania lokacji  
+#### <a name="to-configure-a-fallback-site-for-automatic-site-assignment"></a>자동 사이트 할당을 위한 대체 사이트를 구성하려면  
 
-  1.  W konsoli programu Configuration Manager kliknij **administracji** > **konfiguracja lokacji** >  **witryny**.  
+  1.  Configuration Manager 콘솔에서 **관리** > **사이트 구성** >  **사이트**를 클릭합니다.  
 
-  2.  Na karcie **Narzędzia główne** w grupie **Lokacje** kliknij przycisk **Ustawienia hierarchii**.  
+  2.  **홈** 탭의 **사이트** 그룹에서 **계층 설정**을 클릭합니다.  
 
-  3.  Na karcie **Ogólne** zaznacz pole wyboru **Użyj lokacji rezerwowej**, a następnie wybierz lokację z listy rozwijanej **Lokacja rezerwowa** .  
+  3.  **일반** 탭에서 **대체 사이트 사용**확인란을 선택한 다음 **대체 사이트** 드롭다운 목록에서 사이트를 선택합니다.  
 
-  4.  Kliknij przycisk **OK** , aby zapisać konfigurację.  
+  4.  **확인** 을 클릭하여 구성을 저장합니다.  
 
-#### <a name="to-enable-use-of-preferred-management-points"></a>Aby włączyć korzystanie z preferowanych punktów zarządzania  
+#### <a name="to-enable-use-of-preferred-management-points"></a>기본 관리 지점을 사용하도록 설정하려면  
 
- 1.  W konsoli programu Configuration Manager kliknij **administracji** > **konfiguracja lokacji** > **witryny**, a następnie na **Home** wybierz pozycję **ustawienia hierarchii**.  
+ 1.  Configuration Manager 콘솔에서 **관리** > **사이트 구성** > **사이트**를 클릭하고 **홈** 탭에서 **계층 구조 설정**을 선택합니다.  
 
- 2.  Na karcie **Ogólne** w obszarze Ustawienia hierarchii wybierz pozycję **Klienci wolą używać punktów zarządzania określonych w grupach granic**.  
+ 2.  계층 구조 설정의 **일반** 탭에서 **클라이언트가 경계 그룹에 지정된 관리 지점 사용을 선호**를 선택합니다.  
 
- 3.  Kliknij przycisk **OK** , aby zamknąć okno dialogowe i zapisać konfigurację.  
+ 3.  **확인** 을 클릭하여 대화 상자를 닫고 구성을 저장합니다.  

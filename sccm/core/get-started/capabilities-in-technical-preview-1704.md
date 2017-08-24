@@ -4,8 +4,7 @@ description: "System Center Configuration Manager용 Technical Preview 버전 17
 ms.custom: na
 ms.date: 4/21/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,12 +13,11 @@ ms.assetid: e318e705-20f2-417d-8cde-7dfe661b2fa7
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ae008c91a7387ba76f2bfac13f8feb489a0cc558
 ms.openlocfilehash: d7caee47ca74064630e09c1bdb94187af256d4b4
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="capabilities-in-technical-preview-1704-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1704의 기능
 
@@ -73,4 +71,3 @@ Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응�
 - [운영 체제 이미지용 새 **OS 버전** 열](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/17558407-add-a-column-to-the-operating-system-images-node-f): **운영 체제 이미지** 및 **운영 체제 업그레이드 패키지** 노드의 정보를 확인할 때 새롭게 추가된 **OS 버전** 열에 이미지의 운영 체제 버전이 표시됩니다. .WIM의 첫 번째 인덱스 버전만 표시됩니다. 이미지의 **세부 정보** 탭으로 이동하면 다른 인덱스의 운영 체제 버전을 검토할 수 있습니다.
 
 - [보다 효율적인 방식으로 Smsts.log에 로깅](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/16791919-stop-filling-smsts-log-with-useless):이 버전부터는 CCM_CIVersionInfo.PolicyID 정보에 대한 항목이 smsts.log 파일에 더 이상 기록되지 않습니다. 이전 버전에서는 해당 정보를 포함하는 항목이 매우 많은 경우가 있어서 로그 파일에서 관련성이 높은 정보를 찾기가 어려웠습니다.
-

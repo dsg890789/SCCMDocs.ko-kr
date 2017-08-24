@@ -6,23 +6,20 @@ ms.date: 02/16/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ddcad9f2-a542-4079-83ca-007d7cb44995
-caps.latest.revision: 11
-caps.handback.revision: 0
+caps.latest.revision: "11"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c73373e6f2f28f8ddc197695e4b4e3488c9c1f5b
 ms.openlocfilehash: 0808edbb9a0433dd658d37e8d005c89a4778735c
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="deploy-app-v-virtual-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 App-V 가상 응용 프로그램 배포
 
@@ -214,4 +211,3 @@ Configuration Manager는 App-V 5 공유 콘텐츠 저장소 기능을 지원합�
 Configuration Manager는 가상 응용 프로그램 배포에 대한 정보를 로그 파일에 기록합니다. 가상 응용 프로그램 및 Configuration Manager 응용 프로그램 관리에서 사용하는 로그 파일에 대한 자세한 내용은 [System Center Configuration Manager의 로그 파일](../../core/plan-design/hierarchy/log-files.md)을 참조하세요.  
 
 Windows Vista, Windows 7 및 Windows 8의 경우 App-V 클라이언트의 로그는 C:\ProgramData\Microsoft\Application Virtualization Client에 있습니다.  
-

@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7a555e06-e6d7-4ebb-8252-412b7c5ad1c1
-caps.latest.revision: 4
-caps.handback.revision: 0
+caps.latest.revision: "4"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
 ms.openlocfilehash: 50ef8b761533bfdd5e8d23abc7791beb4c7d0b11
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 보고 기능에 대한 보안 및 개인 정보
 
@@ -31,9 +30,3 @@ ms.openlocfilehash: 50ef8b761533bfdd5e8d23abc7791beb4c7d0b11
  Configuration Manager 보고서는 표준 Configuration Manager 관리 작업 동안 수집된 정보를 표시합니다. 예를 들어 검색 또는 인벤토리에서 수집된 정보에 대한 보고서를 표시할 수 있습니다. 또한 보고서에는 소프트웨어 배포 및 호환성 확인 등과 같은 클라이언트 관리 작업에 대한 현재 상태 정보가 포함될 수 있습니다.  
 
  보고서에 표시되는 데이터를 생성하는 Configuration Manager 작업과 관련된 보안 모범 사례 및 개인 정보에 대한 자세한 내용은 [System Center Configuration Manager의 보안 모범 사례 및 개인 정보](../../plan-design/security/security-best-practices-and-privacy-information.md)를 참조하세요.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

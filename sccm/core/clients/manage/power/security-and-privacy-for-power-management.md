@@ -6,23 +6,20 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 469ff35f-59a1-484d-902b-107dd6070baf
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
-ms.openlocfilehash: f72059973057e707f58cb6b7aa495226b6c1962c
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 94d5418c364c318dba92dc9f9066f54d1130aa34
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-power-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 전원 관리에 대한 보안 및 개인 정보
 
@@ -39,4 +36,3 @@ ms.lasthandoff: 12/16/2016
  전원 사용 정보는 Configuration Manager 데이터베이스에 저장되며 Microsoft로 전송되지 않습니다. 세부 정보는 31일, 요약 정보는 13개월 동안 데이터베이스에 보존됩니다. 삭제 간격을 구성할 수 없습니다.  
 
  전원 관리를 구성하기 전에 개인 정보 요구 사항을 확인합니다.  
-

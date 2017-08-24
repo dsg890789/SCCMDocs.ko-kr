@@ -6,21 +6,19 @@ ms.date: 06/06/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b587779e-1bd3-4ee3-8146-8e31f53499bd
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3619a73d3a39659de927e1711a7ec81de9918064
-ms.openlocfilehash: 355dfb361a1ab3e1bd436dae1df8a416bf79c6c8
-ms.contentlocale: ko-kr
-ms.lasthandoff: 06/13/2017
-
+ms.openlocfilehash: 0c2e685961ceed920611bb9b8e611ba8512b2e6f
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="checklist-for-installing-update-1702-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 업데이트 1702를 설치하기 위한 검사 목록
 
@@ -193,4 +191,3 @@ Do not run a test database upgrade on the production site database. Doing so upd
 3.  업데이트를 시작하기 전에 사용하지 않도록 설정한 기본 사이트에서 관리 지점의 데이터베이스 복제본을 다시 구성합니다.
 4.  업데이트를 시작하기 전에 사용하지 않도록 설정한 데이터베이스 유지 관리 작업을 다시 구성합니다.
 5.  업데이트를 설치하기 전에 클라이언트 파일럿을 구성한 경우 직접 만든 계획에 따라 클라이언트를 업그레이드합니다.
-

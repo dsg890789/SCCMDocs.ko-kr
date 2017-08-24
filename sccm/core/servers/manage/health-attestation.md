@@ -6,22 +6,19 @@ ms.date: 03/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 91f9de33-b277-4500-acd6-e7d90a2947c9
-caps.latest.revision: 17
+caps.latest.revision: "17"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 23b1d24e908d04b64c3bbfa518793a44e696d468
 ms.openlocfilehash: 54b3433a002b8ef29059bab04458138348f95d66
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="health-attestation-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 상태 증명
 
@@ -83,4 +80,3 @@ Configuration Manager 장치 상태 증명에는 다음이 표시됩니다.
 -   **가장 많이 누락되는 상태 증명 설정** - 상태 증명 설정이 누락된 장치의 수를 표시합니다(설정별로 나열됨).
 
 클라이언트 장치 상태 증명 상태를 사용하여 Microsoft Intune과 함께 Configuration Manager에서 관리하는 장치에 대한 준수 정책에서 조건부 액세스에 대한 규칙을 정의할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 장치 규정 준수 정책 관리](/sccm/protect/deploy-use/device-compliance-policies)를 참조하세요.  
-

@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e562e2a0-8df8-4952-952f-e8c38461c612
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
 ms.openlocfilehash: 738dcf0b52f18b38b732bf8ca5d7a87369b1c468
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-manage-queries-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 쿼리를 관리하는 방법
 
@@ -44,9 +43,3 @@ ms.openlocfilehash: 738dcf0b52f18b38b732bf8ca5d7a87369b1c468
 
 ## <a name="see-also"></a>참고 항목  
  [System Center Configuration Manager의 쿼리 작업 및 유지 관리](../../../core/servers/manage/operations-and-maintenance-for-queries.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

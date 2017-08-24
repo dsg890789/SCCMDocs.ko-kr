@@ -6,23 +6,20 @@ ms.date: 2/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 2aca914f-641e-4bc8-98d4-bbf0a2a5276f
-caps.latest.revision: 10
-caps.handback.revision: 0
+caps.latest.revision: "10"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dd102603356864add4084c6881c39bebcbd635f2
 ms.openlocfilehash: 9b97dedb5d2be0bd2e47260033e6e4361467dc4e
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="prepare-windows-servers-to-support-system-center-configuration-manager"></a>System Center Configuration Manager 지원을 위해 Windows 서버 준비
 
@@ -142,4 +139,3 @@ Windows 컴퓨터를 System Center Configuration Manager용 사이트 시스템 
  - PROPFIND
 
 요청 필터링 구성 방법에 대한 자세한 내용은 TechNet의 [IIS에서 요청 필터링 구성](https://technet.microsoft.com/library/hh831621.aspx#Verbs) 또는 관리 지점을 호스트하는 Windows Server 버전에 적용되는 유사한 문서를 참조하세요.
-

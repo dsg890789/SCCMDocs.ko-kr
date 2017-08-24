@@ -1,6 +1,6 @@
 ---
-title: "Operacje i Obsługa raportowania | Dokumentacja firmy Microsoft"
-description: "Dowiedz się, szczegółowe informacje o zarządzaniu raportami i subskrypcjami raportów w programie System Center Configuration Manager."
+title: "보고에 대한 운영 및 유지 관리 | Microsoft 문서"
+description: "System Center Configuration Manager에서 보고서 및 보고서 구독 관리의 세부 정보에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
 ms.prod: configuration-manager
@@ -16,347 +16,347 @@ ms.author: dougeby
 manager: angrobe
 ms.openlocfilehash: df572cd0c64c82e25164430a53e1b893b3ba3cf5
 ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
-ms.translationtype: MT
-ms.contentlocale: pl-PL
+ms.translationtype: HT
+ms.contentlocale: ko-KR
 ms.lasthandoff: 08/07/2017
 ---
-# <a name="operations-and-maintenance-for-reporting-in-system-center-configuration-manager"></a>Operacje i Obsługa raportowania w programie System Center Configuration Manager
+# <a name="operations-and-maintenance-for-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 보고 작업 및 유지 관리
 
-*Dotyczy: Program System Center Configuration Manager (Current Branch)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
-Po odpowiedniej infrastruktury w celu raportowania w programie System Center Configuration Manager, istnieje wiele operacji wykonywanych zwykle do zarządzania raportami i subskrypcjami raportów.  
+System Center Configuration Manager에서 보고용 인프라가 준비된 후 보고서 및 보고서 구독을 관리하기 위해 일반적으로 수행하는 작업이 여러 가지가 있습니다.  
 
-##  <a name="BKMK_ManageReports"></a>Zarządzanie raportami programu Configuration Manager  
- Configuration Manager udostępnia ponad 400 wstępnie zdefiniowanych raportów, które ułatwiają gromadzić, organizować i prezentować informacje o użytkownikach, sprzętu i spisu oprogramowania, aktualizacje oprogramowania, aplikacje, stan lokacji i innych operacji programu Configuration Manager w organizacji. Za pomocą wstępnie zdefiniowanych raportów, ponieważ są one lub zmodyfikować raport, zgodnie z wymaganiami. Można również tworzyć niestandardowe modelu\-na podstawie i SQL\-na podstawie raportów zgodnie z wymaganiami. Poniższe sekcje umożliwiają pomocne w zarządzaniu raportami programu Configuration Manager.  
+##  <a name="BKMK_ManageReports"></a> Configuration Manager 보고서 관리  
+ Configuration Manager는 조직 내의 사용자, 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 업데이트, 응용 프로그램, 사이트 상태, 기타 Configuration Manager 작업 등에 대한 정보를 수집, 구성 및 제공하는 미리 정의된 보고서를 400개 이상 제공합니다. 미리 정의된 보고서는 그대로 사용할 수도 있고 요구 사항에 맞게 수정할 수도 있습니다. 또한 요구 사항에 따라 사용자 지정 모델 기반 보고서 및 SQL 기반 보고서를 만들 수도 있습니다. 다음 섹션을 사용하여 Configuration Manager 보고서를 관리할 수 있습니다.  
 
-###  <a name="BKMK_RunReport"></a>Uruchamianie raportu programu Configuration Manager  
- Raporty w programie Configuration Manager są przechowywane w usługach SQL Server Reporting Services, a dane renderowane w raporcie są pobierane z bazy danych lokacji programu Configuration Manager. Dostępne raporty w konsoli programu Configuration Manager lub za pomocą Menedżera raportów, otwieranego w przeglądarce sieci web. Możesz otworzyć raporty na dowolnym komputerze, który ma dostęp do komputera, na którym działa program SQL Server Reporting Services, a musi mieć wystarczające uprawnienia do wyświetlania raportów. Po uruchomieniu raportu, tytuł, opis i kategoria są wyświetlane w języku lokalnego systemu operacyjnego.  
+###  <a name="BKMK_RunReport"></a> Configuration Manager 보고서 실행  
+ 보고서 구성 관리자에서 SQL Server Reporting Services에 저장 되며 및 보고서에서 렌더링 된 데이터는 Configuration Manager 사이트 데이터베이스에서 검색 됩니다. Configuration Manager 콘솔에서 또는 웹 브라우저에서 액세스 하는 보고서 관리자를 사용 하 여 보고서에 액세스할 수 있습니다. SQL Server Reporting Services를 실행하는 컴퓨터에 액세스할 수 있는 모든 컴퓨터에서 보고서를 열 수 있습니다. 단, 보고서를 볼 수 있는 충분한 권한이 있어야 합니다. 보고서를 실행하면 보고서 제목, 설명, 범주 등이 해당 로컬 운영 체제의 언어로 표시됩니다.  
 
 > [!NOTE]  
->  W niektórych z systemem innym niż\-angielski języków, znaki mogą być wyświetlane prawidłowo w raportach.  W takim przypadku raporty można wyświetlać przy użyciu sieci web\-na podstawie Menedżera raportów lub za pośrednictwem zdalnej konsoli administratora.  
+>  영어 외 일부 언어에서, 문자가 보고서에 올바르게 표시되지 않을 수 있습니다.  이런 경우 웹 기반 보고서 관리자를 사용하거나 원격 관리자 콘솔을 통해 보고서를 볼 수 있습니다.  
 
 > [!WARNING]  
->  Aby uruchamiać raporty, musisz mieć **odczytu** prawa dla **lokacji** uprawnień i **Uruchom raport** skonfigurowane pod kątem konkretnych obiektów.  
+>  보고서를 실행하려면 **사이트** 에 대해 **읽기** 권한뿐 아니라 해당 개체에 구성된 **보고서 실행** 권한이 있어야 합니다.  
 
 > [!IMPORTANT]    
-> Musi istnieć zaufanie dwukierunkowe dla użytkowników z innej domeny niż konto punktu Servicies raportowania do pomyślnego uruchomienia raportów.
+> 보고서를 성공적으로 실행하려면 Reporting Services 지점 계정과는 다른 도메인에서 사용자에 대해 양방향 트러스트 관계가 설정되어 있어야 합니다.
 
 > [!NOTE]  
->  Menedżer raportów to sieci web\-narzędzia dostępu i zarządzania raport, który służy do administrowania pojedynczym wystąpieniem serwera raportów w zdalnej lokalizacji za pośrednictwem połączenia HTTP. Służy Menedżer raportów do zadań operacyjnych, na przykład do wyświetlania raportów, modyfikowania właściwości raportu i zarządzanie subskrypcjami raportów skojarzone. W tym temacie przedstawiono procedury wyświetlania raportu i modyfikowania właściwości raportu w Menedżerze raportów, ale więcej informacji o innych opcjach dostępnych w Menedżerze raportów znajduje, zobacz [Menedżera raportów](http://go.microsoft.com/fwlink/p/?LinkId=224916) w dokumentacji SQL Server 2008 — książki Online.  
+>  보고서 관리자는 웹 기반의 보고서 액세스 및 관리 도구이며, 이를 사용하여 HTTP 연결을 통해 원격 위치에서 단일 보고서 서버 인스턴스를 관리할 수 있습니다. 보고서 보기, 보고서 속성 수정, 연결된 보고서 구독 관리 등의 운영 작업을 수행하는 데 보고서 관리자를 사용할 수 있습니다. 이 항목에서는 보고서 관리자에서 보고서를 확인하고 보고서 속성을 수정하는 단계를 설명하며, 보고서 관리자에 제공되는 기타 옵션에 대한 자세한 내용은 SQL Server 2008 온라인 설명서의 [보고서 관리자](http://go.microsoft.com/fwlink/p/?LinkId=224916) 를 참조하십시오.  
 
- Użyj poniższych procedur do uruchamiania raportu programu Configuration Manager.  
+ Configuration Manager 보고서를 실행 하려면 다음 절차를 따르십시오.  
 
-##### <a name="to-run-a-report-in-the-configuration-manager-console"></a>Aby uruchomić raport w konsoli programu Configuration Manager  
+##### <a name="to-run-a-report-in-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 보고서를 실행 하려면  
 
-1.  W konsoli programu Configuration Manager kliknij **monitorowanie**.  
+1.  Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.  
 
-2.  W **monitorowanie** obszaru roboczego, rozwiń węzeł **raportowania**, a następnie kliknij przycisk **raporty** Aby wyświetlić listę dostępnych raportów.  
+2.  **모니터링** 작업 영역에서 **보고**를 확장한 후 **보고서** 를 클릭하여 사용할 수 있는 보고서를 나열합니다.  
 
     > [!IMPORTANT]  
-    >  W tej wersji programu Configuration Manager **całą zawartość** wyświetlają tylko pakiety, nie aplikacje.  
+    >  이 버전의 Configuration Manager에서 **모든 콘텐츠** 보고서는 응용 프로그램이 아닌 패키지만 표시합니다.  
 
     > [!TIP]  
-    >  Jeśli nie są wyświetlane żadne raporty, sprawdź, czy punkt usług raportowania jest zainstalowana i skonfigurowana. Aby uzyskać więcej informacji, zobacz [konfigurowanie raportowania](configuring-reporting.md).  
+    >  나열된 보고서가 없는 경우 보고 서비스 지점이 설치 및 구성되어 있는지 확인하십시오. 자세한 내용은 [보고 구성](configuring-reporting.md)을 참조하세요.  
 
-3.  Wybierz raport, który chcesz uruchomić, a następnie na **Home** karcie **Grupa raportów** , kliknij przycisk **Uruchom** aby otworzyć raport.  
+3.  실행하려는 보고서를 선택한 다음 **홈** 탭의 **보고서 그룹** 섹션에서 **실행** 을 클릭하여 보고서를 엽니다.  
 
-4.  Gdy są wymagane jakieś parametry, określ parametry, a następnie kliknij przycisk **Wyświetl raport**.  
+4.  필수 매개 변수가 있는 경우 매개 변수를 지정하고 **보고서 보기**를 클릭합니다.  
 
-#### <a name="to-run-a-report-in-a-web-browser"></a>Aby uruchomić raport w przeglądarce sieci web  
+#### <a name="to-run-a-report-in-a-web-browser"></a>웹 브라우저에서 보고서를 실행하려면  
 
-1.  W przeglądarce sieci web wprowadź adres URL Menedżera raportów, na przykład **http:\/\/serwer1\/raporty**. Adres URL Menedżera raportów możesz ustalić na **adres URL Menedżera raportów** strony w Reporting Services Configuration Manager.  
+1.  웹 브라우저에서 보고서 관리자 URL(예: **http:\/\/Server1\/Reports**)을 입력합니다. 보고서 관리자 URL을 확인할 수는 **보고서 관리자 URL** 페이지에 Reporting Services 구성 관리자입니다.  
 
-2.  W Menedżerze raportów kliknij folder raportów dla programu Configuration Manager, na przykład **ConfigMgr\_urzędów certyfikacji**.  
-
-    > [!TIP]  
-    >  Jeśli nie są wyświetlane żadne raporty, sprawdź, czy punkt usług raportowania jest zainstalowana i skonfigurowana. Aby uzyskać więcej informacji, zobacz [konfigurowanie raportowania](configuring-reporting.md).  
-
-3.  Kliknij kategorię raportu, który chcesz uruchomić, a następnie kliknij łącze raportu. Raport zostanie otwarty w Menedżerze raportów.  
-
-4.  Gdy są wymagane jakieś parametry, określ parametry, a następnie kliknij przycisk **Wyświetl raport**.  
-
-###  <a name="BKMK_ModifyReportProperties"></a>Modyfikowanie właściwości raportu programu Configuration Manager  
- W konsoli programu Configuration Manager można wyświetlać właściwości raportu, takie jak nazwa i opis, ale aby zmienić właściwości, należy użyć Menedżera raportów. Użyj poniższej procedury można zmodyfikować właściwości raportu programu Configuration Manager.  
-
-#### <a name="to-modify-report-properties-in-report-manager"></a>Aby zmodyfikować właściwości raportu w Menedżerze raportów  
-
-1.  W przeglądarce sieci web wprowadź adres URL Menedżera raportów, na przykład **http:\/\/serwer1\/raporty**. Adres URL Menedżera raportów możesz ustalić na **adres URL Menedżera raportów** strony w Reporting Services Configuration Manager.  
-
-2.  W Menedżerze raportów kliknij folder raportów dla programu Configuration Manager, na przykład **ConfigMgr\_urzędów certyfikacji**.  
+2.  보고서 관리자에서 Configuration Manager용 보고서 폴더(예: **ConfigMgr\_CAS**)를 클릭합니다.  
 
     > [!TIP]  
-    >  Jeśli nie są wyświetlane żadne raporty, sprawdź, czy punkt usług Reporting Services jest zainstalowana i skonfigurowana. Aby uzyskać więcej informacji, zobacz [konfigurowanie raportowania](configuring-reporting.md)  
+    >  나열된 보고서가 없는 경우 보고 서비스 지점이 설치 및 구성되어 있는지 확인하십시오. 자세한 내용은 [보고 구성](configuring-reporting.md)을 참조하세요.  
 
-3.  Kliknij kategorię raportu, dla której chcesz zmodyfikować właściwości raportu, a następnie kliknij łącze raportu. Raport zostanie otwarty w Menedżerze raportów.  
+3.  실행하려는 보고서의 보고서 범주를 클릭하고 보고서의 링크를 클릭합니다. 보고서 관리자에서 보고서가 열립니다.  
 
-4.  Kliknij przycisk **właściwości** kartę. Nazwa i opis można zmodyfikować.  
+4.  필수 매개 변수가 있는 경우 매개 변수를 지정하고 **보고서 보기**를 클릭합니다.  
 
-5.  Gdy skończysz, kliknij przycisk **Zastosuj**. Właściwości raportu zostają zapisane na serwerze raportów i konsoli programu Configuration Manager pobiera zaktualizowane właściwości raportu.  
+###  <a name="BKMK_ModifyReportProperties"></a> Configuration Manager 보고서의 속성 수정  
+ Configuration Manager 콘솔에서 보고서 이름, 설명 등의 보고서 속성을 볼 수는 있지만 보고서 속성을 변경하려면 보고서 관리자를 사용해야 합니다. 다음 절차를 사용하여 Configuration Manager 보고서의 속성을 수정합니다.  
 
-###  <a name="BKMK_EditReport"></a>Edytowanie raportu programu Configuration Manager  
- Jeśli istniejący raport programu Configuration Manager nie pobiera informacje, które muszą mieć albo nie oferuje układu lub struktury, która ma, można edytować raportu w programie Report Builder.  
+#### <a name="to-modify-report-properties-in-report-manager"></a>보고서 관리자에서 보고서 속성을 수정하려면  
+
+1.  웹 브라우저에서 보고서 관리자 URL(예: **http:\/\/Server1\/Reports**)을 입력합니다. 보고서 관리자 URL을 확인할 수는 **보고서 관리자 URL** 페이지에 Reporting Services 구성 관리자입니다.  
+
+2.  보고서 관리자에서 Configuration Manager용 보고서 폴더(예: **ConfigMgr\_CAS**)를 클릭합니다.  
+
+    > [!TIP]  
+    >  나열된 보고서가 없는 경우 보고 서비스 지점이 설치 및 구성되어 있는지 확인하십시오. 자세한 내용은 [보고 구성](configuring-reporting.md)을 참조하세요.  
+
+3.  속성을 수정하려는 보고서의 보고서 범주를 클릭하고 보고서의 링크를 클릭합니다. 보고서 관리자에서 보고서가 열립니다.  
+
+4.  **속성** 탭을 클릭합니다. 보고서 이름 및 설명을 수정할 수 있습니다.  
+
+5.  마쳤으면 **적용**을 클릭합니다. 보고서 속성은 보고서 서버에 저장되며 Configuration Manager 콘솔은 보고서의 업데이트된 보고서 속성을 검색합니다.  
+
+###  <a name="BKMK_EditReport"></a> Configuration Manager 보고서 편집  
+ 기존 Configuration Manager 보고서에서 필요한 정보가 검색되지 않거나 원하는 레이아웃이나 디자인을 제공하지 않는 경우 보고서 작성기에서 보고서를 편집할 수 있습니다.  
 
 > [!NOTE]  
->  Istnieje również możliwość Sklonowanie istniejącego raportu, otwierając go w celu edycji, a następnie klikając polecenie **Zapisz jako** ją zapisać jako nowy raport.  
+>  또한 기존 보고서를 편집을 위해 열고 **다른 이름으로 저장** 을 클릭하여 새 보고서로 저장해서 복제하도록 선택할 수도 있습니다.  
 
 > [!IMPORTANT]  
->  Konto użytkownika musi mieć **modyfikacja lokacji** uprawnień i **modyfikowanie raportu** uprawnienia do konkretnych obiektów skojarzonych z raportem, który chcesz zmodyfikować.  
+>  사용자 계정에는 수정하려는 보고서와 연결된 특정 개체에 대한 **사이트 수정** 권한 및 **보고서 수정** 권한이 있어야 합니다.  
 
 > [!IMPORTANT]  
->  Po uaktualnieniu programu Configuration Manager do nowszej wersji, nowe raporty zastępują raporty wstępnie zdefiniowane. W przypadku zmodyfikowanego wstępnie zdefiniowanego raportu należy wykonać kopię raportu przed zainstalowanie nowej wersji, a potem Przywróć raport w usługach Reporting Services. Jeśli są istotne zmiany wstępnie zdefiniowanych raportów, należy wziąć pod uwagę zamiast tworzenia nowego raportu. Nowe raporty utworzone przed uaktualniania lokacji nie zostaną zastąpione.  
+>  Configuration Manager를 최신 버전으로 업그레이드하는 경우 새 보고서가 미리 정의된 보고서를 덮어씁니다. 미리 정의된 보고서를 수정한 경우 새 버전을 설치하기 전에 보고서를 백업한 다음 Reporting Services에서 보고서를 복원해야 합니다. 미리 정의된 보고서를 상당히 많이 변경한 경우 대신 새 보고서를 만드는 것이 좋습니다. 사이트를 업그레이드하기 전에 만든 새 보고서는 덮어써지지 않습니다.  
 
- Użyj poniższej procedury, aby edytować właściwości raportu programu Configuration Manager.  
+ 다음 절차를 사용하여 Configuration Manager 보고서의 속성을 편집합니다.  
 
-#### <a name="to-edit-report-properties"></a>Aby edytować właściwości raportu  
+#### <a name="to-edit-report-properties"></a>보고서 속성을 편집하려면  
 
-1.  W konsoli programu Configuration Manager kliknij **monitorowanie**.  
+1.  Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.  
 
-2.  W **monitorowanie** obszaru roboczego, rozwiń węzeł **raportowania**, a następnie kliknij przycisk **raporty** Aby wyświetlić listę dostępnych raportów.  
+2.  **모니터링** 작업 영역에서 **보고**를 확장한 후 **보고서** 를 클릭하여 사용할 수 있는 보고서를 나열합니다.  
 
-3.  Wybierz raport, który chcesz zmodyfikować, a następnie na **Home** karcie **Grupa raportów** , kliknij przycisk **Edytuj**. Wprowadź konto użytkownika i hasło, jeśli są monitowani o, a następnie kliknij przycisk **OK**. Jeśli na komputerze nie zainstalowano programu Report Builder, są monit o jej zainstalowanie. Kliknij przycisk **Uruchom** Aby zainstalować program Report Builder, który jest wymagany do modyfikowania i tworzenia raportów.  
+3.  수정하려는 보고서를 선택한 다음 **홈** 탭의 **보고서 그룹** 섹션에서 **편집**을 클릭하여 보고서를 엽니다. 메시지가 나타나는 경우 사용자 계정 및 암호를 입력하고 **확인**을 클릭합니다. 보고서 작성기가 컴퓨터에 설치되어 있지 않으면 설치할 것인지 묻는 메시지가 나타납니다. 보고서를 수정하고 만들려면 필요하므로 **실행** 을 클릭하여 보고서 작성기를 설치합니다.  
 
-4.  W programie Report Builder zmodyfikuj odpowiednie ustawienia raportu, a następnie kliknij przycisk **zapisać** Aby zapisać raport na serwerze raportów.  
+4.  보고서 작성기에서 적합한 보고서 설정을 수정한 다음 **저장** 을 클릭하여 보고서를 보고서 서버에 저장합니다.  
 
-###  <a name="BKMK_CreateModelBasedReport"></a>Tworzenie modelu\-na podstawie raportu  
- Model\-na podstawie raportu pozwala interaktywnie wybierać elementy mają zostać uwzględnione w raporcie. Aby uzyskać więcej informacji o tworzeniu niestandardowych modeli raportów, zobacz [Tworzenie niestandardowych modeli raportów programu System Center Configuration Manager w SQL Server Reporting Services](creating-custom-report-models-in-sql-server-reporting-services.md).  
-
-> [!IMPORTANT]  
->  Konto użytkownika musi mieć **modyfikacja lokacji** uprawnienia do tworzenia nowego raportu. Użytkownik może utworzyć raport tylko w folderach, do których użytkownik ma **modyfikowanie raportu** uprawnienia.  
-
- Poniższa procedura umożliwia utworzenie modelu\-na podstawie raportu programu Configuration Manager.  
-
-#### <a name="to-create-a-model-based-report"></a>Aby utworzyć model\-na podstawie raportu  
-
-1.  W konsoli programu Configuration Manager kliknij **monitorowanie**.  
-
-2.  W **monitorowanie** obszaru roboczego, rozwiń węzeł **raportowania** i kliknij przycisk **raporty**.  
-
-3.  Na **Home** karcie **Utwórz** , kliknij przycisk **Utwórz raport** otworzyć **Kreatora tworzenia raportu**.  
-
-4.  Na **informacji** skonfiguruj następujące ustawienia:  
-
-    -   **Typ**: Wybierz **modelu\-na podstawie raportu** Aby utworzyć raport w programie Report Builder z wykorzystaniem modelu usług Reporting Services.  
-
-    -   **Nazwa**: Określ nazwę dla raportu.  
-
-    -   **Opis elementu**: Określ opis raportu.  
-
-    -   **Serwer**: Wyświetla nazwę serwera raportów, na którym jest tworzony dany raport.  
-
-    -   **Ścieżka**: Kliknij przycisk **Przeglądaj** Aby określić folder, w którym mają być przechowywane w raporcie.  
-
-     Kliknij przycisk **Dalej**.  
-
-5.  Na **wybór modelu** stronie, wybierz dostępny model z listy używanej do tworzenia tego raportu. Kiedy wybierzesz model raportu **Podgląd** wyświetlą się widoki programu SQL Server i jednostek, które są udostępniane przez wybrany model raportu.  
-
-6.  Na stronie **Podsumowanie** przejrzyj ustawienia. Kliknij przycisk **Wstecz** Aby zmienić ustawienia, lub kliknij przycisk **dalej** Aby utworzyć raport w programie Configuration Manager.  
-
-7.  Na **potwierdzenie** kliknij przycisk **Zamknij** aby zakończyć pracę kreatora, a następnie otwórz program Report Builder, aby skonfigurować ustawienia raportu. Wprowadź konto użytkownika i hasło, jeśli są monitowani o, a następnie kliknij przycisk **OK**. Jeśli na komputerze nie zainstalowano programu Report Builder, są monit o jej zainstalowanie. Kliknij przycisk **Uruchom** Aby zainstalować program Report Builder, który jest wymagany do modyfikowania i tworzenia raportów.  
-
-8.  W programie Microsoft Report Builder Utwórz układ raportu, wybierz dane w dostępnych widokach programu SQL Server Dodaj do raportu parametry i tak dalej. Aby uzyskać więcej informacji na temat do utworzenia nowego raportu przy użyciu programu Report Builder zobacz temat Pomocy programu Report Builder.  
-
-9. Kliknij przycisk **Uruchom** do uruchomienia raportu. Sprawdź, czy raport podaje oczekiwane informacje. Kliknij przycisk **projekt** aby powrócić do widoku projektu i zmodyfikować raport, jeśli to konieczne.  
-
-10. Kliknij przycisk **zapisać** Aby zapisać raport na serwerze raportów. Mogą uruchamiać i modyfikować nowy raport w **raporty** w węźle **monitorowanie** obszaru roboczego.  
-
-###  <a name="BKMK_CreateSQLBasedReport"></a>Utwórz SQL\-na podstawie raportu  
- SQL\-na podstawie raportu pozwala pobierać dane oparte na instrukcji SQL raportu.  
+###  <a name="BKMK_CreateModelBasedReport"></a> 모델 기반 보고서 만들기  
+ 모델 기반 보고서를 사용하면 보고서에 포함하려는 항목을 대화식으로 선택할 수 있습니다. 보고서 모델을 만드는 방법에 대한 자세한 내용은 [SQL Server Reporting Services에서 System Center Configuration Manager에 대한 사용자 지정 보고서 모델 만들기](creating-custom-report-models-in-sql-server-reporting-services.md)를 참조하세요.  
 
 > [!IMPORTANT]  
->  Podczas tworzenia instrukcji SQL dla raportu niestandardowego, nie należy bezpośrednio odwoływać tabel programu SQL Server. Zamiast tego należy odwoływać raportowania widoki programu SQL Server \(wyświetlić nazwy zaczynające się od v\_ \) z bazy danych lokacji. Można także odwoływać się do publicznych procedur składowanych \(przechowywane procedury o nazwach zaczynających sp\_ \) z bazy danych lokacji.  
+>  새 보고서를 만들려면 사용자 계정에 **사이트 수정** 권한이 있어야 합니다. 사용자는 **보고서 수정** 권한을 가진 폴더에만 보고서를 만들 수 있습니다.  
+
+ 다음 절차를 사용하여 모델 기반 Configuration Manager 보고서를 실행합니다.  
+
+#### <a name="to-create-a-model-based-report"></a>모델 기반 보고서를 만들려면  
+
+1.  Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.  
+
+2.  **모니터링** 작업 영역에서 **보고** 를 확장한 후 **보고서**를 클릭합니다.  
+
+3.  **홈** 탭의 **만들기** 섹션에서 **보고서 만들기** 를 클릭하여 **보고서 만들기 마법사**를 엽니다.  
+
+4.  **정보** 페이지에서 다음 설정을 구성합니다.  
+
+    -   **형식:** Reporting Services 모델을 사용하여 보고서 작성기에서 보고서를 만들려면 **모델 기반 보고서**를 선택합니다.  
+
+    -   **이름**: 보고서의 이름을 지정합니다.  
+
+    -   **설명**: 보고서의 설명을 지정합니다.  
+
+    -   **서버**: 보고서를 만들고 있는 보고서 서버의 이름을 표시합니다.  
+
+    -   **경로**: 보고서를 저장하려는 폴더를 지정하려면 **찾아보기** 를 클릭합니다.  
+
+     **다음**을 클릭합니다.  
+
+5.  **모델 선택** 페이지에서 이 보고서를 만드는 데 사용할 수 있는 모델을 목록에서 선택합니다. 보고서 모델을 선택하는 경우 선택한 보고서 모델로 사용할 수 있는 SQL Server 보기 및 엔터티가 **미리 보기** 섹션에 표시됩니다.  
+
+6.  **요약** 페이지에서 설정을 검토합니다. 설정을 변경하려면 **이전**을 클릭하고 Configuration Manager에서 보고서를 만들려면**다음**을 클릭합니다.  
+
+7.  **확인** 페이지에서 **닫기** 를 클릭하여 마법사를 종료한 후 보고서 작성기를 열어 보고서 설정을 구성합니다. 메시지가 나타나는 경우 사용자 계정 및 암호를 입력하고 **확인**을 클릭합니다. 보고서 작성기가 컴퓨터에 설치되어 있지 않으면 설치할 것인지 묻는 메시지가 나타납니다. 보고서를 수정하고 만들려면 필요하므로 **실행** 을 클릭하여 보고서 작성기를 설치합니다.  
+
+8.  Microsoft 보고서 작성기에서 보고서 레이아웃을 만들고, 사용할 수 있는 SQL Server 보기에서 데이터를 선택하고, 보고서에 매개 변수를 추가하는 작업 등을 수행합니다. 보고서 작성기를 사용하여 새 보고서를 만드는 방법에 대한 자세한 내용은 보고서 작성기 도움말을 참조하십시오.  
+
+9. **실행** 을 클릭하여 보고서를 실행합니다. 보고서가 필요한 정보를 제공하는지 확인합니다. 필요한 경우 **디자인** 을 클릭하여 디자인 보기로 돌아가 보고서를 수정합니다.  
+
+10. **저장** 을 클릭하여 보고서를 보고서 서버에 저장합니다. **모니터링** 작업 영역의 **보고서** 노드에서 새 보고서를 실행하고 수정할 수 있습니다.  
+
+###  <a name="BKMK_CreateSQLBasedReport"></a> SQL 기반 보고서 만들기  
+ SQL 기반 보고서를 사용하면 보고서 SQL 문을 기반으로 데이터를 검색할 수 있습니다.  
 
 > [!IMPORTANT]  
->  Konto użytkownika musi mieć **modyfikacja lokacji** uprawnienia do tworzenia nowego raportu. Użytkownik może utworzyć raport tylko w folderach, do których użytkownik ma **modyfikowanie raportu** uprawnienia.  
+>  사용자 지정 보고서에 대해 SQL 문을 만드는 경우 SQL Server 테이블을 직접 참조해서는 안 됩니다. 대신, 사이트 데이터베이스에서 보고 SQL Server 뷰\(이름이 v\_로 시작하는 뷰\)를 참조하세요. 데이터베이스에서 공용 저장 프로시저\(이름이 sp\_로 시작하는 저장 프로시저\)를 참조할 수도 있습니다.  
 
- Poniższa procedura umożliwia utworzenie SQL\-na podstawie raportu programu Configuration Manager.  
+> [!IMPORTANT]  
+>  새 보고서를 만들려면 사용자 계정에 **사이트 수정** 권한이 있어야 합니다. 사용자는 **보고서 수정** 권한을 가진 폴더에만 보고서를 만들 수 있습니다.  
 
-#### <a name="to-create-a-sql-based-report"></a>Aby utworzyć SQL\-na podstawie raportu  
+ 다음 절차를 사용하여 SQL 기반 Configuration Manager 보고서를 만듭니다.  
 
-1.  W konsoli programu Configuration Manager kliknij **monitorowanie**.  
+#### <a name="to-create-a-sql-based-report"></a>SQL 기반 보고서를 만들려면  
 
-2.  W obszarze roboczym **Monitorowanie** rozwiń węzeł **Raportowanie**, a następnie kliknij przycisk **Raporty**.  
+1.  Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.  
 
-3.  Na **Home** karcie **Utwórz** , kliknij przycisk **Utwórz raport** otworzyć **Kreatora tworzenia raportu**.  
+2.  **모니터링** 작업 영역에서 **보고**를 확장한 후 **보고서**를 클릭합니다.  
 
-4.  Na **informacji** skonfiguruj następujące ustawienia:  
+3.  **홈** 탭의 **만들기** 섹션에서 **보고서 만들기** 를 클릭하여 **보고서 만들기 마법사**를 엽니다.  
 
-    -   **Typ**: Wybierz **SQL\-na podstawie raportu** Aby utworzyć raport w programie Report Builder z wykorzystaniem instrukcji SQL.  
+4.  **정보** 페이지에서 다음 설정을 구성합니다.  
 
-    -   **Nazwa**: Określ nazwę dla raportu.  
+    -   **유형**: SQL 문을 사용하여 보고서 작성기에서 보고서를 만들려면 **SQL 기반 보고서**를 선택합니다.  
 
-    -   **Opis elementu**: Określ opis raportu.  
+    -   **이름**: 보고서의 이름을 지정합니다.  
 
-    -   **Serwer**: Wyświetla nazwę serwera raportów, na którym jest tworzony dany raport.  
+    -   **설명**: 보고서의 설명을 지정합니다.  
 
-    -   **Ścieżka**: Kliknij przycisk **Przeglądaj** Aby określić folder, w którym mają być przechowywane w raporcie.  
+    -   **서버**: 보고서를 만들고 있는 보고서 서버의 이름을 표시합니다.  
 
-     Kliknij przycisk **Dalej**.  
+    -   **경로**: 보고서를 저장하려는 폴더를 지정하려면 **찾아보기** 를 클릭합니다.  
 
-5.  Na stronie **Podsumowanie** przejrzyj ustawienia. Kliknij przycisk **Wstecz** Aby zmienić ustawienia, lub kliknij przycisk **dalej** Aby utworzyć raport w programie Configuration Manager.  
+     **다음**을 클릭합니다.  
 
-6.  Na **potwierdzenie** kliknij przycisk **Zamknij** aby zakończyć działanie kreatora i Otwórz program Report Builder, aby skonfigurować ustawienia raportu. Wprowadź konto użytkownika i hasło, jeśli są monitowani o, a następnie kliknij przycisk **OK**. Jeśli na komputerze nie zainstalowano programu Report Builder, są monit o jej zainstalowanie. Kliknij przycisk **Uruchom** Aby zainstalować program Report Builder, który jest wymagany do modyfikowania i tworzenia raportów.  
+5.  **요약** 페이지에서 설정을 검토합니다. 설정을 변경하려면 **이전**을 클릭하고 Configuration Manager에서 보고서를 만들려면**다음**을 클릭합니다.  
 
-7.  W programie Microsoft Report Builder Podaj instrukcję SQL dla raportu lub Skonstruuj instrukcję SQL przy użyciu kolumn w dostępnych widokach programu SQL Server, Dodaj do raportu parametry i tak dalej.  
+6.  **확인** 페이지에서 **닫기** 를 클릭하여 마법사를 종료하고, 보고서 작성기를 열어 보고서 설정을 구성합니다. 메시지가 나타나는 경우 사용자 계정 및 암호를 입력하고 **확인**을 클릭합니다. 보고서 작성기가 컴퓨터에 설치되어 있지 않으면 설치할 것인지 묻는 메시지가 나타납니다. 보고서를 수정하고 만들려면 필요하므로 **실행** 을 클릭하여 보고서 작성기를 설치합니다.  
 
-8.  Kliknij przycisk **Uruchom** do uruchomienia raportu. Sprawdź, czy raport podaje oczekiwane informacje. Kliknij przycisk **projekt** aby powrócić do widoku projektu i zmodyfikować raport, jeśli to konieczne.  
+7.  Microsoft 보고서 작성기에서 보고서에 SQL 문을 제공하거나, 사용할 수 있는 SQL Server 보기의 열을 사용하여 SQL 문을 작성하고, 보고서에 매개 변수를 추가하는 작업 등을 수행합니다.  
 
-9. Kliknij przycisk **zapisać** Aby zapisać raport na serwerze raportów. Nowy raport możesz uruchamiać **raporty** w węźle **monitorowanie** obszaru roboczego.  
+8.  **실행** 을 클릭하여 보고서를 실행합니다. 보고서가 필요한 정보를 제공하는지 확인합니다. 필요한 경우 **디자인** 을 클릭하여 디자인 보기로 돌아가 보고서를 수정합니다.  
 
-##  <a name="BKMK_ManageReportSubscriptions"></a>Zarządzanie subskrypcjami raportów  
- Subskrypcje raportów w usługach SQL Server Reporting Services pozwalają skonfigurować automatyczne dostarczanie określonych raportów pocztą e-mail lub do udziału plików w zaplanowanych odstępach czasu. Użyj **Kreatora tworzenia subskrypcji** w System Center 2012 Configuration Manager do konfigurowania subskrypcji raportów.  
+9. **저장** 을 클릭하여 보고서를 보고서 서버에 저장합니다. **모니터링** 작업 영역의 **보고서** 노드에서 새 보고서를 실행할 수 있습니다.  
 
-###  <a name="BKMK_ReportSubscriptionFileShare"></a>Tworzenie subskrypcji raportów w celu dostarczania raportu do udziału plików  
- Podczas tworzenia subskrypcji raportów w celu dostarczania raportu do udziału plików raport jest kopiowany do określonego udziału plików w określonym formacie. Można subskrybować i żądanie dostarczania dla tylko jednego raportu naraz.  
+##  <a name="BKMK_ManageReportSubscriptions"></a> 보고서 구독 관리  
+ SQL Server Reporting Services의 보고서 구독을 사용하면 예약된 간격으로 지정한 보고서를 전자 메일로 자동 배달하거나 파일 공유에 자동 배달하도록 구성할 수 있습니다. 보고서 구독을 구성하려면 System Center 2012 Configuration Manager의 **구독 만들기 마법사**를 사용합니다.  
 
- W przeciwieństwie do raportów, które są obsługiwane i zarządzane przez serwer raportów raporty, które są dostarczane do folderu udostępnionego są plikami statycznymi. Są zdefiniowane dla raportu funkcje interaktywne nie działają w przypadku raportów, które są przechowywane jako pliki w systemie plików. Funkcje interakcji są reprezentowane jako elementy statyczne. Jeśli raport zawiera wykresy, jest używany domyślny sposób ich prezentacji. Jeśli raport zawiera łącza do innego raportu, łącze jest renderowane jako tekst statyczny. Jeśli chcesz zachować funkcje interaktywne, aby w dostarczanym raporcie, należy użyć dostarczania poczty e-mail. Aby uzyskać więcej informacji o dostarczaniu pocztą e-mail, zobacz [Tworzenie subskrypcji raportów w celu dostarczenia raportu pocztą e-mail](#BKMK_ReportSubscriptionEmail) później w tym temacie.  
+###  <a name="BKMK_ReportSubscriptionFileShare"></a> 보고서를 파일 공유에 배달하는 보고서 구독 만들기  
+ 파일 공유에 보고서를 제공하는 보고서 구독을 만드는 경우 보고서는 지정한 형식으로 지정한 파일 공유에 복사됩니다. 한 번에 한 보고서만 구독 및 배달 요청할 수 있습니다.  
 
- Podczas tworzenia subskrypcji, która używa dostarczania udziału pliku należy określić istniejący folder jako folder docelowy. Serwer raportów nie tworzy folderów w systemie plików. Folder, w którym można określić muszą być dostępne za pośrednictwem połączenia sieciowego. Po określeniu folder docelowy w ramach subskrypcji, użyć ścieżki UNC i końcowych ukośników odwrotnych w ścieżce folderu. Na przykład jest prawidłowa ścieżka UNC do folderu docelowego: \\ \\ &lt;servername\>\\reportfiles\\operacji\\2011.  
+ 보고서 서버에서 호스트 및 관리되는 보고서와는 달리, 공유 폴더에 배달되는 보고서는 정적 파일입니다. 보고서에 정의된 대화식 기능은 파일 시스템에서 파일로 저장된 보고서에서는 작동하지 않습니다. 대화식 기능은 정적 요소로 나타납니다. 보고서에 차트가 포함되어 있는 경우 차트의 기본 표현이 사용됩니다. 다른 보고서로 연결된 보고서의 경우 링크가 정적 텍스트로 렌더링됩니다. 배달된 보고서에 대화식 기능을 유지하려면 전자 메일 배달을 대신 사용하십시오. 메일 배달에 대한 자세한 내용은 이 항목 뒷부분에서 [보고서를 메일로 배달하는 보고서 구독 만들기](#BKMK_ReportSubscriptionEmail) 섹션을 참조하세요.  
 
- Raporty mogą być renderowane w różnych formatach, takich jak MHTML czy Excel. Aby zapisać raport w określonym formacie pliku, należy wybrać ten format renderowania podczas tworzenia subskrypcji. Na przykład wybranie opcji Excel zapisuje raport w formacie programu Microsoft Excel. Chociaż możesz użyć dowolnego z obsługiwanych formatów renderowania, niektóre formaty działają lepiej od innych podczas renderowania do pliku.  
+ 파일 공유 배달 방식을 사용하는 구독을 만드는 경우 이미 존재하는 폴더를 대상 폴더로 지정해야 합니다. 보고서 서버는 파일 시스템에 폴더를 만들지 않습니다. 지정한 폴더는 네트워크 연결을 통해 액세스할 수 있어야 합니다. 구독에 대상 폴더를 지정하는 경우 UNC 경로를 사용해야 하며, 폴더 경로 끝에 백슬래시를 포함해서는 안 됩니다. 예를 들어 대상 폴더의 유효한 UNC 경로는 \\\\&lt;servername\>\\reportfiles\\operations\\2011과 같습니다.  
 
- Poniższa procedura umożliwia utworzenie subskrypcji raportów w celu dostarczania raportu do udziału plików.  
+ 보고서는 MHTML, Excel 등 다양한 파일 형식으로 렌더링될 수 있습니다. 특정 파일 형식으로 보고서를 저장하려면 구독을 만들 때 해당 렌더링 형식을 선택해야 합니다. 예를 들어 Excel을 선택하면 보고서가 Microsoft Excel 파일로 저장됩니다. 지원되는 렌더링 형식을 원하는 대로 선택할 수 있지만 파일을 렌더링하는 경우 다른 형식보다 더 잘 작동하는 형식이 있습니다.  
 
-#### <a name="to-create-a-report-subscription-to-deliver-a-report-to-a-file-share"></a>Aby utworzyć subskrypcję raportów w celu dostarczania raportu do udziału plików  
+ 파일 공유에 보고서를 배달하는 보고서 구독을 만들려면 다음 절차를 참조합니다.  
 
-1.  W konsoli programu Configuration Manager kliknij **monitorowanie**.  
+#### <a name="to-create-a-report-subscription-to-deliver-a-report-to-a-file-share"></a>파일 공유에 보고서를 배달하는 보고서 구독을 만들려면  
 
-2.  W **monitorowanie** obszaru roboczego, rozwiń węzeł **raportowania** i kliknij przycisk **raporty** Aby wyświetlić listę dostępnych raportów. Można wybrać folder raportów, aby wyświetlić tylko raporty, które są skojarzone z danym folderem.  
+1.  Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.  
 
-3.  Wybierz raport, który chcesz dodać do subskrypcji, a następnie na **Home** karcie **Grupa raportów** , kliknij przycisk **Utwórz subskrypcję** otworzyć **Kreatora tworzenia subskrypcji**.  
+2.  **모니터링** 작업 영역에서 **보고** 를 확장한 다음 **보고서** 를 클릭하여 사용할 수 있는 보고서를 나열합니다. 원하는 폴더에 연결된 보고서만 나열하려면 해당 보고서 폴더를 선택하면 됩니다.  
 
-4.  Na **dostarczanie subskrypcji** skonfiguruj następujące ustawienia:  
+3.  구독에 추가하려는 보고서를 선택한 다음 **홈** 탭의 **보고서 그룹** 섹션에서 **구독 만들기** 를 클릭하여 **구독 만들기 마법사**를 엽니다.  
 
-    -   Raport dostarczony przez: Wybierz **udostępnianie plików systemu Windows** aby dostarczyć raport do udziału plików.  
+4.  **구독 배달** 페이지에서 다음 설정을 구성합니다.  
 
-    -   **Nazwa pliku**: Określ nazwę pliku raportu. Domyślnie plik raportu nie zawiera rozszerzenia nazwy pliku. Wybierz **Dodaj rozszerzenie pliku po utworzeniu** można automatycznie dodać rozszerzenie nazwy pliku do tego raportu na podstawie formatu renderowania.  
+    -   보고서 배달자: 보고서를 파일 공유에 배달하도록 **Windows 파일 공유** 를 선택합니다.  
 
-    -   **Ścieżka**: Określ ścieżkę UNC do istniejącego folderu, w którym chcesz dostarczyć ten raport \(na przykład \\ \\ &lt;nazwy serwera\>\\&lt;udział serwera\>\\&lt;folder raportów\>\).  
+    -   **파일 이름**: 보고서의 파일 이름을 지정합니다. 기본적으로 보고서 파일에는 파일 확장명이 포함되지 않습니다. 렌더링 형식에 따라 보고서에 파일 확장명을 자동으로 추가하려면 **만들 때 파일 확장명 추가** 를 선택합니다.  
+
+    -   **경로**: 이 보고서를 배달하려는 기존 폴더에 대한 UNC 경로\(예: \\\\&lt;서버 이름\>\\&lt;서버 공유\>\\&lt;보고서 폴더\>\)를 지정합니다.  
 
         > [!NOTE]  
-        >  Nazwa użytkownika określona dalej na tej strony musi mieć dostęp do tego udziału serwera i uprawnienia zapisu do folderu docelowego.  
+        >  이 페이지의 뒷부분에서 지정하는 사용자 이름에는 이 서버 공유에 대한 액세스 권한과 대상 폴더에 대한 쓰기 권한이 있어야 합니다.  
 
-    -   **Format renderowania**: Wybierz jedną z następujących formatów pliku raportu:  
+    -   **렌더링 형식**: 보고서 파일에 대해 다음 형식 중 하나를 선택합니다.  
 
-        -   **Plik XML z danymi raportu**: Raport jest zapisywany w formacie Extensible Markup Language.  
+        -   **보고 데이터를 포함하는 XML 파일**: XML(Extensible Markup Language) 형식으로 보고서를 저장합니다.  
 
-        -   **CSV \(rozdzielany przecinkami\)**: Raport jest zapisywany w przecinkami\-oddzielone\-format wartości.  
+        -   **CSV\(쉼표로 구분\)**: 쉼표로 구분된 값 형식으로 보고서를 저장합니다.  
 
-        -   **Plik TIFF**: Raport jest zapisywany w formacie Tagged Image File Format.  
+        -   **TIFF 파일**: TIFF(Tagged Image File Format) 형식으로 보고서를 저장합니다.  
 
-        -   **Acrobat \(PDF\) pliku**: Raport jest zapisywany w formacie Acrobat Portable Document Format.  
+        -   **Acrobat \(PDF\) 파일**: Acrobat PDF(Portable Document Format) 형식으로 보고서를 저장합니다.  
 
-        -   **HTML 4.0**: Raport jest zapisywany jako strona sieci Web możliwa do wyświetlenia wyłącznie w przeglądarkach obsługujących język HTML 4.0. Internet Explorer 5 i nowsze wersje obsługują język HTML 4.0.  
+        -   **HTML 4.0**: HTML 4.0을 지원하는 브라우저에서만 표시할 수 있는 웹 페이지로 보고서를 저장합니다. Internet Explorer 5 이상의 버전에서 HTML 4.0을 지원합니다.  
 
             > [!NOTE]  
-            >  Jeśli w raporcie znajdują się obrazy, format HTML 4.0 nie ma ich w pliku.  
+            >  보고서에 이미지가 있는 경우 HTML 4.0 형식은 파일에 이미지를 포함하지 않습니다.  
 
-        -   **MHTML \(archiwum sieci web\)**: Raport jest zapisywany w formacie MIME HTML \(mhtml\), która jest możliwa do wyświetlenia w wielu przeglądarkach sieci web.  
+        -   **MHTML\(웹 보관\)**: 다양한 웹 브라우저에서 표시할 수 있는 MHTML\(MIME HTML\) 형식으로 보고서를 저장합니다.  
 
-        -   **Moduł renderowania RPL**: Raport jest zapisywany w układ strony raportu \(RPL\) format.  
+        -   **RPL 렌더러**: RPL\(Report Page Layout\) 형식으로 보고서를 저장합니다.  
 
-        -   **Excel**: Raport jest zapisywany jako arkusz kalkulacyjny programu Microsoft Excel.  
+        -   **Excel**: Microsoft Excel 스프레드시트로 보고서를 저장합니다.  
 
-        -   **Word**: Raport jest zapisywany jako dokument programu Microsoft Word.  
+        -   **Word**: Microsoft Word 문서로 보고서를 저장합니다.  
 
-    -   **Nazwa użytkownika**: Określ konto użytkownika systemu Windows z uprawnieniami dostępu do folderu i udziału na serwerze docelowym. Konto użytkownika musi mieć dostęp do tego udziału serwera i uprawnień do zapisu w folderze docelowym.  
+    -   **사용자 이름**: 대상 서버 공유 및 폴더에 대한 액세스 권한이 있는 Windows 사용자 계정을 지정합니다. 사용자 계정에는 이 서버 공유에 대한 액세스 권한과 대상 폴더에 대한 쓰기 권한이 있어야 합니다.  
 
-    -   **Hasło**: Określ hasło dla konta użytkownika systemu Windows. W **Potwierdź hasło**, re\-wprowadź hasło.  
+    -   **암호**: Windows 사용자 계정의 암호를 지정합니다. **암호 확인**에서 암호를 다시 입력합니다.  
 
-    -   Wybierz jedną z poniższych opcji, aby skonfigurować działanie, gdy w folderze docelowym istnieje plik o takiej samej nazwie:  
+    -   다음 옵션 중 하나를 선택하여 동일한 이름의 파일이 대상 폴더에 존재하는 경우에 수행할 동작을 구성합니다.  
 
-        -   **Zastąp istniejący plik nowszą wersją**: Określa, że jeśli plik raportu już istnieje, zostanie zastąpiony nową wersją go.  
+        -   **기존 파일을 최신 수정 버전으로 덮어쓰기**: 보고서 파일이 이미 존재하는 경우 새 버전이 기존 파일을 덮어쓰도록 지정합니다.  
 
-        -   **Nie zastępuj istniejącego pliku**: Określa, jeśli plik raportu już istnieje, nie zostanie żadnej akcji.  
+        -   **기존 파일 덮어쓰지 않음**: 보고서 파일이 이미 존재하는 경우 작업을 수행하지 않도록 지정합니다.  
 
-        -   **Zwiększaj przyrostowo nazwy plików w miarę dodawania nowszych wersji**: Określa, jeśli plik raportu już istnieje, nowy raport do nazwy pliku do odróżnienia go od innych wersji jest dodawany numer.  
+        -   **최신 버전이 추가되면 파일 이름 증가**: 보고서 파일이 이미 존재하는 경우 다른 버전과 구분할 수 있도록 새 보고서의 파일 이름에 번호를 추가합니다.  
 
-    -   **Opis elementu**: Określa opis subskrypcji raportów.  
+    -   **설명**: 보고서 구독에 대 한 설명을 지정합니다.  
 
-     Kliknij przycisk **Dalej**.  
+     **다음**을 클릭합니다.  
 
-5.  Na **harmonogram subskrypcji** wybierz jedną z następujących opcji harmonogramu dostaw dla subskrypcji raportów:  
+5.  **구독 일정** 페이지에서 보고서 구독에 대해 다음 배달 일정 옵션 중 하나를 선택합니다.  
 
-    -   **Użyj harmonogramu współużytkowanego**: Udostępniony harmonogram to uprzednio zdefiniowany harmonogram, które mogą być używane przez inne Subskrypcje raportów. Zaznacz to pole wyboru, a następnie wybierz udostępniony harmonogram na liście, jeśli jest dostępny.  
+    -   **공유 일정 사용**: 공유 일정이란 다른 보고서 구독에서 사용할 수 있는 미리 정의된 일정입니다. 이 확인란을 선택한 다음 지정된 공유 일정이 있으면 목록에서 원하는 공유 일정을 선택합니다.  
 
-    -   **Utwórz nowy harmonogram**: Skonfiguruj harmonogram, na którym ten raport jest uruchomiony, w tym interwał, godzinę rozpoczęcia i Data oraz datę zakończenia subskrypcji.  
+    -   **새 일정 만들기**: 해당 구독의 간격, 시작 시간 및 날짜, 종료 날짜 등 보고서를 실행할 일정을 구성합니다.  
 
-6.  Na **parametry subskrypcji** Określ parametry tego raportu, które są używane podczas nienadzorowanego uruchamiania. Jeśli nie ma żadnych parametrów dla raportu, ta strona nie jest wyświetlana.  
+6.  **구독 매개 변수** 페이지에서 보고서를 자동으로 실행하는 경우 사용할 보고서 매개 변수를 지정합니다. 보고서에 대해 지정할 매개 변수가 없으면 이 페이지가 표시되지 않습니다.  
 
-7.  Na **Podsumowanie** Przejrzyj ustawienia subskrypcji raportów. Kliknij przycisk **Wstecz** Aby zmienić ustawienia, lub kliknij przycisk **dalej** do utworzenia subskrypcji raportu.  
+7.  **요약** 페이지에서 보고서 구독 설정을 검토합니다. 설정을 변경하려면 **이전** 을 클릭하고 보고서 구독을 만들려면 **다음** 을 클릭합니다.  
 
-8.  Aby zamknąć kreatora, kliknij na stronie **Ukończenie** przycisk **Zamknij** . Sprawdź, czy subskrypcja raportów została utworzona pomyślnie. Można wyświetlać i modyfikować subskrypcji raportów w **subskrypcje** węźle **raportowania** w **monitorowanie** obszaru roboczego.  
+8.  **완료** 페이지에서 **닫기** 를 클릭하여 마법사를 종료합니다. 보고서 구독이 성공적으로 만들어졌는지 확인합니다. **모니터링** 작업 영역의 **보고** 에 있는 **구독** 노드에서 보고서 구독을 확인하고 수정할 수 있습니다.  
 
-###  <a name="BKMK_ReportSubscriptionEmail"></a>Tworzenie subskrypcji raportów w celu dostarczenia raportu pocztą e-mail  
- Podczas tworzenia subskrypcji raportów w celu dostarczenia raportu pocztą e-mail zostanie wysłana wiadomość e-mail do odbiorców, które można skonfigurować, a raport jest dołączony jako załącznik. Serwer raportów nie weryfikuje adresów e-mail lub uzyskać adresy e-mail z serwera e-mail. Wcześniej należy znać, których chcesz używać adresów e-mail. Domyślnie poczty e-mail raporty na dowolne prawidłowe konta e-mail wewnątrz lub na zewnątrz organizacji. Możesz wybrać jedną lub obie następujące opcje dostawy poczty e-mail:  
+###  <a name="BKMK_ReportSubscriptionEmail"></a> 보고서를 메일로 배달하는 보고서 구독 만들기  
+ 전자 메일로 보고서를 배달하는 보고서 구독을 만드는 경우 전자 메일은 구성한 받는 사람에게 전송되고 보고서는 첨부 파일로 포함됩니다. 보고서 서버는 전자 메일 주소의 유효성을 검증하지 않으며, 전자 메일 서버에서 전자 메일 주소를 가져오지 않습니다. 사용하려는 전자 메일 주소를 사전에 알고 있어야 합니다. 기본적으로, 조직 내/외부의 유효한 전자 메일 계정으로 보고서를 보낼 수 있습니다. 다음 전자 메일 배달 옵션 중 하나 또는 둘 모두를 선택할 수 있습니다.  
 
--   Wysłanie powiadomienia i hiperłącza do wygenerowanego raportu.  
+-   생성된 보고서에 대한 알림과 하이퍼링크를 보냅니다.  
 
--   Wysłanie osadzonego lub dołączonego raportu. Format renderowania i przeglądarki sprawdzenia, czy raport jest osadzony dołączony. Jeśli przeglądarka obsługuje język HTML 4.0 i MHTML i wybierz MHTML \(archiwum sieci web\) renderowania format, raport zostanie osadzony jako część komunikatu. Wszystkich pozostałych formatów renderowania \(CSV, PDF, Word, i tak dalej\) dostarczania raportów jako załączniki. Usługi Reporting Services nie sprawdza rozmiaru załącznika ani wiadomości przed wysłaniem raportu. Jeśli załącznik lub wiadomość przekracza maksymalny limit dozwolony przez serwer poczty, raport nie zostanie dostarczony.  
+-   포함되거나 첨부된 보고서를 보냅니다. 렌더링 형식과 브라우저에 따라 보고서가 포함될지, 아니면 첨부될지가 결정됩니다. 브라우저가 HTML 4.0 및 MHTML을 지원하는 경우 MHTML\(웹 보관\) 렌더링 형식을 선택하면 보고서가 메시지의 일부로 포함됩니다. 그 외의 모든 렌더링 형식\(CSV, PDF, Word 등\)은 보고서를 첨부 파일로 배달합니다. Reporting Services는 보고서를 보내기 전에 첨부 파일 또는 메시지의 크기를 확인하지 않습니다. 첨부 파일 또는 메시지가 메일 서버에서 허용하는 최대 제한값을 초과하는 경우 보고서는 배달되지 않습니다.  
 
 > [!IMPORTANT]  
->  Należy skonfigurować ustawienia poczty e-mail w usługach Reporting Services dla **E-mail** opcja dostawy, które mają być dostępne. Aby uzyskać więcej informacji o konfigurowaniu ustawień poczty e-mail w usługach Reporting Services, zobacz [konfigurowania serwera raportów w celu dostarczania poczty E-mail](http://go.microsoft.com/fwlink/p/?LinkId=226668) w dokumentacji SQL Server — książki Online.  
+>  **전자 메일** 배달 옵션을 사용할 수 있도록 Reporting Services의 전자 메일 설정을 구성해야 합니다. Reporting Services의 전자 메일 설정을 구성하는 방법에 대한 자세한 내용은 SQL Server 온라인 설명서에서 [전자 메일 배달을 위한 보고서 서버 구성](http://go.microsoft.com/fwlink/p/?LinkId=226668) 을 참조하십시오.  
 
- Poniższa procedura umożliwia utworzenie subskrypcji raportów w celu dostarczenia raportu za pomocą poczty e-mail.  
+ 전자 메일을 사용하여 보고서를 배달하는 보고서 구독을 만들려면 다음 절차를 참조합니다.  
 
-#### <a name="to-create-a-report-subscription-to-deliver-a-report-by-email"></a>Aby utworzyć subskrypcję raportów w celu dostarczenia raportu pocztą e-mail  
+#### <a name="to-create-a-report-subscription-to-deliver-a-report-by-email"></a>전자 메일로 보고서를 배달하는 보고서 구독을 만들려면  
 
--   W konsoli programu Configuration Manager kliknij **monitorowanie**.  
+-   Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.  
 
--   W **monitorowanie** obszaru roboczego, rozwiń węzeł **raportowania** i kliknij przycisk **raporty** Aby wyświetlić listę dostępnych raportów. Można wybrać folder raportów wyświetlający tylko raporty, które są skojarzone z danym folderem.  
+-   **모니터링** 작업 영역에서 **보고** 를 확장한 다음 **보고서** 를 클릭하여 사용할 수 있는 보고서를 나열합니다. 원하는 폴더에 연결된 보고서만 나열하려면 해당 보고서 폴더를 선택하면 됩니다.  
 
--   Wybierz raport, który chcesz dodać do subskrypcji, a następnie na **Home** karcie **Grupa raportów** , kliknij przycisk **Utwórz subskrypcję** otworzyć **Kreatora tworzenia subskrypcji**.  
+-   구독에 추가하려는 보고서를 선택한 다음 **홈** 탭의 **보고서 그룹** 섹션에서 **구독 만들기** 를 클릭하여 **구독 만들기 마법사**를 엽니다.  
 
--   Na **dostarczanie subskrypcji** skonfiguruj następujące ustawienia:  
+-   **구독 배달** 페이지에서 다음 설정을 구성합니다.  
 
-    -   **Raport dostarczony przez**: Wybierz **E\-poczty** aby dostarczyć raport jako załącznik do wiadomości e-mail.  
+    -   **보고서 배달자**: 보고서를 메일의 첨부 파일로 배달하려면 **메일**을 선택합니다.  
 
-    -   **Aby**: Określ prawidłowy adres e-mail do wysłania tego raportu.  
+    -   **받는 사람**: 보고서를 보낼 유효한 전자 메일 주소를 지정합니다.  
 
         > [!NOTE]  
-        >  Możesz wprowadzić wielu adresatów wiadomości e-mail, Oddziel poszczególne adresy e-mail średnikami.  
+        >  각 전자 메일 주소를 세미콜론으로 구분하여 전자 메일 받는 사람을 여러 명 입력할 수 있습니다.  
 
-    -   **DW**: Opcjonalnie określ adres e-mail, aby kopia tego raportu.  
+    -   **참조**: 선택 항목이며, 보고서를 참조로 보낼 전자 메일 주소를 지정합니다.  
 
-    -   **UDW**: Opcjonalnie określ adres e-mail, aby zostać wysłana ukryta kopia tego raportu.  
+    -   **숨은 참조**: 선택 항목이며, 보고서를 숨은 참조로 보낼 전자 메일 주소를 지정합니다.  
 
-    -   **Udzielenie odpowiedzi na**: Określ adres zwrotny do użycia, jeśli adresat odpowiedzi do wiadomości e-mail.  
+    -   **회신 대상**: 받는 사람이 전자 메일 메시지에 회신하는 경우에 사용할 회신 주소를 지정합니다.  
 
-    -   **Temat**: Określ wiersz tematu wiadomości e-mail subskrypcji.  
+    -   **제목**: 구독 전자 메일 메시지의 제목 줄을 지정합니다.  
 
-    -   **Priorytet**: Wybierz flagę priorytetu dla tej wiadomości e-mail. Wybierz **małej**, **normalny**, lub **wysokiej**. Ustawienie priorytetu jest używane przez program Microsoft Exchange do ustawienia flagi informującej o ważności wiadomości e-mail.  
+    -   **우선 순위**: 이 전자 메일 메시지의 우선 순위 플래그를 선택합니다. **낮음**, **보통**, **높음**중에서 선택할 수 있습니다. 우선 순위 설정은 Microsoft Exchange에서 전자 메일 메시지의 중요도를 나타내는 플래그를 설정할 때 사용됩니다.  
 
-    -   **Komentarz**: Określ tekst, który ma być dodany do treści wiadomości e-mail subskrypcji.  
+    -   **설명**: 구독 전자 메일 메시지의 본문에 추가할 텍스트를 지정합니다.  
 
-    -   **Opis elementu**: Określ opis dla tej subskrypcji raportu.  
+    -   **설명**: 보고서 구독에 대 한 설명을 지정합니다.  
 
-    -   **Dołącz łącze**: Zawiera adres URL subskrybowanego raportu w treści wiadomości e-mail.  
+    -   **링크 포함**: 전자 메일 메시지의 본문에 구독 보고서의 URL을 포함합니다.  
 
-    -   **Dołącz raport**: Określ, czy raport jest dołączony do e\-wiadomości e-mail. Format dołączany raport został określony w **Format renderowania** listy.  
+    -   **보고서 포함**: 보고서가 메일 메시지에 첨부됨을 지정합니다. 보고서가 첨부되는 형식은 **렌더링 형식** 목록에서 지정합니다.  
 
-    -   **Format renderowania**: Wybierz jedną z następujących formatów dla dołączanego raportu:  
+    -   **렌더링 형식**: 첨부된 보고서에 대해 다음 형식 중 하나를 선택합니다.  
 
-        -   **Plik XML z danymi raportu**: Raport jest zapisywany w formacie Extensible Markup Language.  
+        -   **보고 데이터를 포함하는 XML 파일**: XML(Extensible Markup Language) 형식으로 보고서를 저장합니다.  
 
-        -   **CSV \(rozdzielany przecinkami\)**: Raport jest zapisywany w przecinkami\-oddzielone\-format wartości.  
+        -   **CSV\(쉼표로 구분\)**: 쉼표로 구분된 값 형식으로 보고서를 저장합니다.  
 
-        -   **Plik TIFF**: Raport jest zapisywany w formacie Tagged Image File Format.  
+        -   **TIFF 파일**: TIFF(Tagged Image File Format) 형식으로 보고서를 저장합니다.  
 
-        -   **Acrobat \(PDF\) pliku**: Raport jest zapisywany w formacie Acrobat Portable Document Format.  
+        -   **Acrobat \(PDF\) 파일**: Acrobat PDF(Portable Document Format) 형식으로 보고서를 저장합니다.  
 
-        -   **MHTML \(archiwum sieci web\)**: Raport jest zapisywany w formacie MIME HTML \(mhtml\), która jest możliwa do wyświetlenia w wielu przeglądarkach sieci web.  
+        -   **MHTML\(웹 보관\)**: 다양한 웹 브라우저에서 표시할 수 있는 MHTML\(MIME HTML\) 형식으로 보고서를 저장합니다.  
 
-        -   **Excel**: Raport jest zapisywany jako arkusz kalkulacyjny programu Microsoft Excel.  
+        -   **Excel**: Microsoft Excel 스프레드시트로 보고서를 저장합니다.  
 
-        -   **Word**: Raport jest zapisywany jako dokument programu Microsoft Word.  
+        -   **Word**: Microsoft Word 문서로 보고서를 저장합니다.  
 
--   Na **harmonogram subskrypcji** wybierz jedną z następujących opcji harmonogramu dostaw dla subskrypcji raportów:  
+-   **구독 일정** 페이지에서 보고서 구독에 대해 다음 배달 일정 옵션 중 하나를 선택합니다.  
 
-    -   **Użyj harmonogramu współużytkowanego**: Udostępniony harmonogram to uprzednio zdefiniowany harmonogram, które mogą być używane przez inne Subskrypcje raportów. Zaznacz to pole wyboru, a następnie wybierz udostępniony harmonogram na liście, jeśli jest dostępny.  
+    -   **공유 일정 사용**: 공유 일정이란 다른 보고서 구독에서 사용할 수 있는 미리 정의된 일정입니다. 이 확인란을 선택한 다음 지정된 공유 일정이 있으면 목록에서 원하는 공유 일정을 선택합니다.  
 
-    -   **Utwórz nowy harmonogram**: Skonfiguruj harmonogram uruchamiania tego raportu, w tym interwał, godzinę rozpoczęcia i Data oraz datę zakończenia subskrypcji.  
+    -   **새 일정 만들기**: 해당 구독의 간격, 시작 시간 및 날짜, 종료 날짜 등 보고서를 실행할 일정을 구성합니다.  
 
--   Na **parametry subskrypcji** Określ parametry tego raportu, które są używane podczas nienadzorowanego uruchamiania. Jeśli nie ma żadnych parametrów dla raportu, ta strona nie jest wyświetlana.  
+-   **구독 매개 변수** 페이지에서 보고서를 자동으로 실행하는 경우 사용할 보고서 매개 변수를 지정합니다. 보고서에 대해 지정할 매개 변수가 없으면 이 페이지가 표시되지 않습니다.  
 
--   Na **Podsumowanie** Przejrzyj ustawienia subskrypcji raportów. Kliknij przycisk **Wstecz** Aby zmienić ustawienia, lub kliknij przycisk **dalej** do utworzenia subskrypcji raportu.  
+-   **요약** 페이지에서 보고서 구독 설정을 검토합니다. 설정을 변경하려면 **이전** 을 클릭하고 보고서 구독을 만들려면 **다음** 을 클릭합니다.  
 
--   Aby zamknąć kreatora, kliknij na stronie **Ukończenie** przycisk **Zamknij** . Sprawdź, czy subskrypcja raportów została utworzona pomyślnie. Można wyświetlać i modyfikować subskrypcji raportów w **subskrypcje** węźle **raportowania** w **monitorowanie** obszaru roboczego.  
+-   **완료** 페이지에서 **닫기** 를 클릭하여 마법사를 종료합니다. 보고서 구독이 성공적으로 만들어졌는지 확인합니다. **모니터링** 작업 영역의 **보고** 에 있는 **구독** 노드에서 보고서 구독을 확인하고 수정할 수 있습니다.  

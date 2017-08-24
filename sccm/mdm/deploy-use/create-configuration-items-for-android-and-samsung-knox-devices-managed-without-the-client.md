@@ -6,23 +6,20 @@ ms.date: 03/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7b66f3c4-e3bb-4f6a-abd5-55be649ff90d
-caps.latest.revision: 17
-caps.handback.revision: 0
+caps.latest.revision: "17"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 4b9261db93c9bf72c492e3c9be5b30f81835134a
 ms.openlocfilehash: c9961c2e9866199571a1b39a7b185cb6bb96f998
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트 없이 관리되는 Android 및 Samsung KNOX 장치에 대한 구성 항목을 만드는 방법
 
@@ -53,15 +50,15 @@ System Center Configuration Manager **Android 및 삼성 KNOX** 구성 항목을
 
 10. 각 설정 그룹에 대해 구성 항목이 비규격인 것으로 확인되는 경우 보고될 심각성을 구성할 수도 있습니다.  
 
-    - **없음**. 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 오류 심각도를 보고하지 않습니다.  
+    - **없음**. 이 준수 규칙을 충족하지 않는 장치가 Configuration Manager 보고서에 오류 심각도를 보고하지 않습니다.  
 
-    - **정보**. 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **정보** 오류 심각도를 보고합니다.  
+    - **정보**. 이 준수 규칙을 충족하지 않는 장치가 Configuration Manager 보고서에 **정보** 오류 심각도를 보고합니다.  
 
-    - **경고** 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **경고** 오류 심각도를 보고합니다.  
+    - **경고** 이 준수 규칙을 충족하지 않는 장치가 Configuration Manager 보고서에 **경고** 오류 심각도를 보고합니다.  
 
-    - **위험**. 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다.  
+    - **위험**. 이 준수 규칙을 충족하지 않는 장치가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다.  
 
-    - **위험(이벤트 포함)**. 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 또한 이 심각도 수준은 응용 프로그램 이벤트 로그에 Windows 이벤트로 기록됩니다.  
+    - **위험(이벤트 포함)**. 이 준수 규칙을 충족하지 않는 장치가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 또한 이 심각도 수준은 응용 프로그램 이벤트 로그에 Windows 이벤트로 기록됩니다.  
 
 11. 마법사의 **플랫폼 적용 여부 가능성** 페이지에서 이전에 선택한 지원되는 플랫폼과 호환되지 않는 설정을 검토합니다. 뒤로 돌아가서 이러한 설정을 제거하거나 계속할 수 있습니다.  
 
@@ -185,9 +182,9 @@ Android for Work에는 구성 항목에 대한 다음 두 가지 설정 그룹�
 - **암호**. Android "클래식"의 설정과 동일합니다.
 
 - **작업 프로필**. 다음 Android for Work 설정을 사용하도록 설정합니다.
-  -    **회사 프로필과 개인 프로필 간의 데이터 공유 허용**
+  - **회사 프로필과 개인 프로필 간의 데이터 공유 허용**
   - **장치가 잠겼을 때 회사 프로필 알림 숨김**(Android 6.0+)
-  -    **기본 앱 사용 권한 정책 설정**(Android 6.0+)
+  - **기본 앱 사용 권한 정책 설정**(Android 6.0+)
 
 Android 회사 프로필에서 구성 항목을 만들려면 **일반** 페이지에서 **Android for Work**를 선택하여 각 설정 그룹의 설정을 구성합니다. 기준에 구성 항목을 추가한 다음, 평소대로 배포합니다. 이러한 설정은 Android for Work로 등록된 장치에만 적용되고 Android로 등록된 장치에는 적용되지 않습니다.
 
@@ -217,4 +214,3 @@ Android 회사 프로필에서 구성 항목을 만들려면 **일반** 페이�
 
 ## <a name="see-also"></a>참고 항목  
 [System Center Configuration Manager 클라이언트 없이 관리되는 장치에 대한 구성 항목](../../compliance/deploy-use/configuration-items-for-devices-managed-without-the-client.md)
-

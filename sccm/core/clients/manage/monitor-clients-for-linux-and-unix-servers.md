@@ -6,21 +6,19 @@ ms.date: 08/04/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d827cf91-b18f-4ee7-b538-24ba6f003ab9
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: afe0ecc4230733fa76e41bf08df5ccfb221da7c8
 ms.openlocfilehash: 62843bd544217734c4566d656a7c3a35bd5613cb
-ms.contentlocale: ko-kr
-ms.lasthandoff: 08/04/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-monitor-clients-for-linux-and-unix-servers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Linux 및 UNIX 서버용 클라이언트를 모니터링하는 방법
 
@@ -54,4 +52,3 @@ Windows 기반 클라이언트에서 정보를 볼 때와 동일한 방법을 �
  Linux 및 UNIX 서버 데이터와 관련된 사용자 지정 보고서를 만들 수도 있습니다. 하드웨어 인벤토리 클래스 **운영 체제** 의 **캡션** 속성은 보고서 쿼리에서 특정 운영 체제를 식별하는 데 사용할 수 있는 유용한 특성입니다.  
 
  Configuration Manager의 보고서에 대한 자세한 내용은 [System Center Configuration Manager에서 보고](../../../core/servers/manage/reporting.md)를 참조하세요.  
-

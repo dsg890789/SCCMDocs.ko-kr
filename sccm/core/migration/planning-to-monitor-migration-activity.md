@@ -6,22 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: fc731d3f-edd7-4049-b17b-653d6693a564
-caps.latest.revision: 4
-caps.handback.revision: 0
+caps.latest.revision: "4"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 5e3d3f4194b06442e34c10988a20fe9ca40ac5d7
 ms.openlocfilehash: 896807ec2c4be2835094a27add59d4cc09e93add
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="planning-to-monitor-migration-activity-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 마이그레이션 작업 모니터링 계획
 
@@ -40,4 +38,3 @@ System Center Configuration Manager에서는 대상 계층 구조에 연결된 C
     >  마이그레이션 작업이 실패하면 최대한 빨리 migmctrl.log 파일의 정보를 검토하십시오. 마이그레이션 로그 항목은 계속 파일에 추가되어 이전 정보를 덮어씁니다. 항목을 덮어쓰면 마이그레이션된 개체에 발생할 수 있는 문제가 마이그레이션 문제와 관련이 있는지 여부를 확인하지 못할 수도 있습니다. 마이그레이션 작업은 마이그레이션을 구성할 때 Configuration Manager 콘솔에서 연결한 사이트와 상관없이 계층의 최상위 사이트에서 로깅됩니다.  
 
 -   Configuration Manager 보고를 사용합니다. Configuration Manager에서 마이그레이션을 위해 제공하는 여러 기본 제공 보고서를 그대로 사용할 수도 있고 요구 사항에 맞게 편집할 수도 있습니다. Configuration Manager 보고서에 대한 자세한 내용은 [System Center Configuration Manager에서 보고](../../core/servers/manage/reporting.md)를 참조하세요.  
-

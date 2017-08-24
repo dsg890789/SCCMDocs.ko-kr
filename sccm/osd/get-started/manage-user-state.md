@@ -6,23 +6,20 @@ ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d8d5c345-1e91-410b-b8a9-0170dcfa846e
-caps.latest.revision: 12
-caps.handback.revision: 0
+caps.latest.revision: "12"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
 ms.openlocfilehash: a0bd86587669c32377b1eafa6a890d37e10ac3f6
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-user-state-in-system-center-configuration-manager"></a>System Center Configuration Manager의 사용자 상태 관리
 
@@ -132,4 +129,3 @@ System Center Configuration Manager 작업 순서를 사용하여 현재 운영 
 
 ##  <a name="BKMK_MigrationFails"></a> 운영 체제 배포 실패 시 사용자 상태 데이터 복원  
  운영 체제 배포가 실패하는 경우 USMT 10.0 LoadState 기능을 사용하여 배포 프로세스가 진행되는 동안 캡처된 사용자 상태 데이터를 검색해야 합니다. 여기에는 상태 마이그레이션 지점에 저장된 데이터나, 대상 컴퓨터에 로컬로 저장된 데이터가 포함됩니다. 이러한 USMT 기능에 대한 자세한 내용은 [LoadState 구문](https://technet.microsoft.com/library/mt299188\(v=vs.85\).aspx)을 참조하십시오.  
-

@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9f7142e1-c972-4384-853b-2da1568cb3e3
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: d3cc24c7923141f039dcda26ac27489cb0143e89
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="best-practices-for-power-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 전원 관리에 대한 모범 사례
 
@@ -82,9 +81,3 @@ System Center Configuration Manager에서 전원 관리에 대한 다음 모범 
  월별 보고서에 사용된 전원 관리 정보는 13개월간 Configuration Manager 사이트 데이터베이스에 보존됩니다.  
 
  전원 관리의 모니터링, 계획 및 준수 단계 중 보고서를 실행할 때 나중에 해당 결과가 Configuration Manager에서 제거된 경우 비교할 수 있도록 데이터를 보존하려는 보고서에서 결과를 저장하거나 내보냅니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

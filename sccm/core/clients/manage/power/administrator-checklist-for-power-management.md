@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 94e42cbe-9df8-4228-a04e-0ad7626180ca
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: e6a7a0b853be930b558cdd739b90285ebb8538e7
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="administrator-checklist-for-power-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 전원 관리를 위한 관리자 검사 목록
 
@@ -80,9 +79,3 @@ ms.openlocfilehash: e6a7a0b853be930b558cdd739b90285ebb8538e7
 |----------|-------------|  
 |계층의 컴퓨터가 절전 모드 또는 최대 절전 모드로 전환되지 않은 경우 **절전 모드 불가 보고서** 보고서를 실행하여 가능한 원인을 표시합니다.|**절전 모드 불가 보고서** 에는 컴퓨터가 절전 모드 또는 최대 절전 모드로 전환하지 못한 일반적인 이유 목록과 지정한 기간 동안 각 원인의 영향을 받은 컴퓨터의 수가 표시됩니다. 자세한 내용은 [전원 관리를 모니터링하고 계획하는 방법](monitor-and-plan-for-power-management.md)을 참조하세요.|  
 |여러 개의 전원 계획을 한 대의 컴퓨터에 적용하면 제한이 가장 적은 전원 계획이 적용됩니다. 전원 계획이 여러 개인 컴퓨터를 보려면 **전원 계획이 여러 개인 컴퓨터** 보고서를 실행합니다.|[전원 관리를 모니터링하고 계획하는 방법](monitor-and-plan-for-power-management.md)에서 **여러 전원 계획을 사용하는 컴퓨터**를 참조하세요.|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

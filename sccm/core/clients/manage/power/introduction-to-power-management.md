@@ -6,22 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3ddff2a7-99eb-4ef8-b969-f3f7f24053db
-caps.latest.revision: 4
-caps.handback.revision: 0
+caps.latest.revision: "4"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: f46c9479021c814b1102d72c7d493f21a7243bf1
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="introduction-to-power-management-in-system-center-configuration-manager"></a>System Center Configuration Manager 전원 관리 소개
 
@@ -50,4 +48,3 @@ System Center Configuration Manager의 전원 관리를 통해 많은 조직이 
 
 ### <a name="compliance-phase"></a>준수 단계  
  준수 단계에서 보고서를 실행하여 조직의 전력 사용량 및 전력 비용 절감을 평가할 수 있습니다. 또한 컴퓨터에서 생성된 CO2 양에 대한 개선 사항을 설명하는 보고서를 실행할 수 있습니다. 보고서는 전원 설정이 컴퓨터에 올바르게 적용되었는지 확인하고 전원 관리 기능 문제를 해결하는 데 사용할 수도 있습니다.  
-

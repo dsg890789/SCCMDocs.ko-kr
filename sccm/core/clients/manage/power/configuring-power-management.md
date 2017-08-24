@@ -6,22 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 435c923c-ea30-4dce-8afd-48962ed85502
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
 ms.openlocfilehash: e111ac2545dd9e0b96a50c10246bb75d286a737a
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="configuring-power-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 전원 관리 구성
 
@@ -86,4 +84,3 @@ System Center Configuration Manager에서 전원 관리를 사용하려면 먼�
 4.  *<컬렉션 이름\>***속성** 대화 상자의 **전원 관리** 탭에서 **이 컬렉션의 컴퓨터에 전원 관리 설정 적용 안 함**을 선택합니다.  
 
 5.  **확인**을 클릭하여 *<컬렉션 이름\>***속성** 대화 상자를 닫고 설정을 저장합니다.  
-

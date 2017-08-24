@@ -6,22 +6,20 @@ ms.date: 4/29/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2200b02b-e76b-4aa7-a77a-6dc5e70f1333
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: NOINDEX, NOFOLLOW
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 31819a1df4e63e1114682490a9b3c3b4e5c99cfa
 ms.openlocfilehash: f4951c204b32da58174b94a539b380c278fa9756
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="system-center-updates-publisher"></a>System Center Updates Publisher
 
@@ -66,4 +64,3 @@ Updates Publisher에는 구성에 도움이 되는 4개의 작업 영역이 있�
 **카탈로그 작업 영역**: 이 작업 영역을 사용하여 [소프트웨어 업데이트 카탈로그 관리](/sccm/sum/tools/updates-publisher-catalogs) 및 추가를 수행합니다. 여기에는 해당 카탈로그에서 Updates Publisher 리포지토리로 소프트웨어 업데이트 가져오기가 포함됩니다.
 ## <a name="first-steps"></a>첫 번째 단계
 시작하려면 먼저 [설치](/sccm/sum/tools/install-updates-publisher)한 다음 Updates Publisher의 [옵션을 구성](/sccm/sum/tools/updates-publisher-options)합니다.
-

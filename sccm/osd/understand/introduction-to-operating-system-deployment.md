@@ -6,21 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d9a1c545-8301-492c-832f-2c108ff93c77
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 55a9f1caedcfa810e9a97e43626e4cf5fdbcfa0d
 ms.openlocfilehash: 2baa6b7dbd66ab41bc9b67e8f43c313be233153c
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="introduction-to-operating-system-deployment-in-system-center-configuration-manager"></a>System Center Configuration Manager의 운영 체제 배포 소개
 
@@ -133,4 +131,3 @@ Configuration Manager를 사용하여 다양한 방법으로 운영 체제를 �
 -   [사용자 상태를 캡처 및 복원하는 작업 순서 만들기](../deploy-use/create-a-task-sequence-to-capture-and-restore-user-state.md)  
 
 -   [사용자 지정 작업 순서 만들기](../deploy-use/create-a-custom-task-sequence.md)  
-

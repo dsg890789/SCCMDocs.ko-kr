@@ -6,23 +6,20 @@ ms.date: 7/31/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 86cd5382-8b41-45db-a4f0-16265ae22657
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
 ms.openlocfilehash: 89fcd16887ae77299f9d18472ee6a1ba56794eca
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/29/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="peer-cache-for-configuration-manager-clients"></a>Configuration Manager 클라이언트용 피어 캐시
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -110,4 +107,3 @@ System Center Configuration Manager SDK를 사용하는 경우 피어 원본 기
   -  **피어에서 콘텐츠를 다운로드하기 위한 포트(HTTP/HTTPS)**
 
 피어 캐시를 사용하도록 설정한 각 컴퓨터에서 Windows 방화벽을 사용하고 있는 경우 Configuration Manager는 여기서 구성하는 포트 사용을 허용하도록 방화벽을 구성합니다.
-

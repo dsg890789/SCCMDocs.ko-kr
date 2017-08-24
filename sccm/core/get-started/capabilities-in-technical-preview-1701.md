@@ -4,23 +4,21 @@ description: "System Center Configuration Manager용 Technical Preview 버전 17
 ms.custom: na
 ms.date: 01/23/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 18598eaa-1131-44ff-8f8b-6093e87ac7a1
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
 ms.openlocfilehash: b330c97a0853d1673f1cf7e0691891b72407fa51
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="capabilities-in-technical-preview-1701-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1701의 기능
 
@@ -48,17 +46,17 @@ ms.lasthandoff: 05/17/2017
 
 다음은 이 Technical Preview의 소프트웨어 업데이트 지점 동작에 대한 설명입니다.  
 
--    **새 클라이언트는 경계 그룹을 사용하여 소프트웨어 업데이트 지점을 선택합니다.** 버전 1701을 설치한 후 설치하는 클라이언트는 클라이언트의 경계 그룹과 연결된 소프트웨어 업데이트 지점에서 하나를 선택합니다.
+-   **새 클라이언트는 경계 그룹을 사용하여 소프트웨어 업데이트 지점을 선택합니다.** 버전 1701을 설치한 후 설치하는 클라이언트는 클라이언트의 경계 그룹과 연결된 소프트웨어 업데이트 지점에서 하나를 선택합니다.
 
   이 동작은 클라이언트가 클라이언트 포리스트를 공유하는 소프트웨어 업데이트 지점 목록에서 임의로 하나를 선택하는 이전 동작을 대체합니다.   
 
--    **이전에 설치한 클라이언트는 새 소프트웨어 업데이트 지점을 찾도록 대체될 때까지 현재 소프트웨어 업데이트 지점을 계속 사용합니다.**
+-   **이전에 설치한 클라이언트는 새 소프트웨어 업데이트 지점을 찾도록 대체될 때까지 현재 소프트웨어 업데이트 지점을 계속 사용합니다.**
 이전에 설치했으며 이미 소프트웨어 업데이트 지점이 있는 클라이언트는 대체될 때까지 해당 소프트웨어 업데이트 지점을 계속 사용합니다. 여기에는 클라이언트의 현재 경계 그룹과 연결되지 않은 소프트웨어 업데이트 지점도 포함됩니다. 즉시 현재 경계 그룹에서 소프트웨어 업데이트 지점을 찾아서 사용하려고 하지 않습니다.
 
   이미 소프트웨어 업데이트 지점이 있는 클라이언트는 현재 소프트웨어 업데이트 지점에 연결하지 못하여 대체를 시작한 후에만 이 새로운 경계 그룹 동작을 사용하기 시작합니다.
 새 동작으로 전환 시 발생하는 이 지연은 의도적인 것입니다. 이는 소프트웨어 업데이트 지점 변경 시 클라이언트가 새 소프트웨어 업데이트 지점과 데이터를 동기화하면서 네트워크 대역폭이 많이 사용될 수 있기 때문입니다. 전환 시의 지연은 모든 클라이언트가 새 소프트웨어 업데이트 지점으로 동시에 전환할 경우 발생하는 네트워크 혼잡을 방지하는 데 도움이 됩니다.
 
--    **대체 시간 구성:** 클라이언트가 새 소프트웨어 업데이트 지점을 검색하도록 대체를 시작하는 시기에 대한 구성은 이 Technical Preview에서 지원되지 않습니다. 여기에는 다양한 경계 그룹 관계에 대해 구성할 수 있는 **대체 시간(분)** 및 **대체 안 함** 구성이 포함됩니다.
+-   **대체 시간 구성:** 클라이언트가 새 소프트웨어 업데이트 지점을 검색하도록 대체를 시작하는 시기에 대한 구성은 이 Technical Preview에서 지원되지 않습니다. 여기에는 다양한 경계 그룹 관계에 대해 구성할 수 있는 **대체 시간(분)** 및 **대체 안 함** 구성이 포함됩니다.
 
   대신, 클라이언트가 사용할 수 있는 새 소프트웨어 업데이트 지점을 찾도록 대체를 시작하기 전에 2시간 동안 현재 소프트웨어 업데이트 지점에 연결을 시도하는 현재 클라이언트 동작은 유지됩니다.
 
@@ -115,8 +113,7 @@ ms.lasthandoff: 05/17/2017
 
     설정 이름 *FairFaxArmResourceID*의 값을 "https://management.usgovcloudapi.net/"으로 변경합니다.
 
-   - **원래 값:**
-      &lt;setting name="FairFaxArmResourceId" serializeAs="String">   
+   - **원래 값:** &lt;setting name="FairFaxArmResourceId" serializeAs="String">   
       &lt;value>&lt;/value>   
       &lt;/setting>
 
@@ -132,9 +129,9 @@ ms.lasthandoff: 05/17/2017
     - **편집된 값:** &lt;setting name="FairFaxAuthorityResource" serializeAs="String">   
     &lt;value>https://login.microsoftonline.com/&lt;/value>
 
-2.    두 가지 사항을 변경하고 파일을 저장한 후 동일한 컴퓨터에서 Configuration Manager 콘솔을 다시 시작하고 해당 콘솔을 사용하여 OMS 커넥터를 설치합니다. 커넥터를 설치하려면 [Configuration Manager의 데이터를 Microsoft Operations Management Suite에 동기화](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite)에 제공된 정보를 사용하고 Microsoft Azure Government 클라우드에 있는 **Operations Management Suite 작업 영역**을 선택합니다.
+2.  두 가지 사항을 변경하고 파일을 저장한 후 동일한 컴퓨터에서 Configuration Manager 콘솔을 다시 시작하고 해당 콘솔을 사용하여 OMS 커넥터를 설치합니다. 커넥터를 설치하려면 [Configuration Manager의 데이터를 Microsoft Operations Management Suite에 동기화](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite)에 제공된 정보를 사용하고 Microsoft Azure Government 클라우드에 있는 **Operations Management Suite 작업 영역**을 선택합니다.
 
-3.    OMS 커넥터가 설치되면 사이트에 연결하는 모든 콘솔에서 Government 클라우드에 대한 연결을 사용할 수 있습니다.
+3.  OMS 커넥터가 설치되면 사이트에 연결하는 모든 콘솔에서 Government 클라우드에 대한 연결을 사용할 수 있습니다.
 
 ## <a name="android-and-ios-versions-are-no-longer-targetable-in-creation-wizards-for-hybrid-mdm"></a>Android 및 iOS 버전은 하이브리드 MDM 만들기 마법사에서 대상 지정이 가능하지 않음
 
@@ -157,4 +154,3 @@ ms.lasthandoff: 05/17/2017
 이러한 변경으로 인해 하이브리드 배포에서 새 Configuration Manager 릴리스나 확장 없이 새 Android 및 iOS 버전을 더 빠르게 지원할 수 있습니다. Intune 독립 실행형에서 새 버전이 지원되게 되면 사용자는 모바일 장치를 해당 버전으로 업그레이드할 수 있습니다.
 
 이전 버전의 Configuration Manager에서 업그레이드할 때 문제를 방지하려면 이러한 항목의 속성 페이지에서 모바일 운영 체제 버전을 계속 사용할 수 있습니다. 특정 버전을 대상으로 지정해야 하는 경우 새 항목을 만든 다음 새로 만든 항목의 속성 페이지에서 대상 버전을 지정할 수 있습니다.
-

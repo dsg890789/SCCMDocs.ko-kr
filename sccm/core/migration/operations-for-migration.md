@@ -6,21 +6,19 @@ ms.date: 12/30/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c28e3492-851a-40fc-ba13-67ebc2d8b41a
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 5df6478362499d87038fa4ed2cb444aa8d5b4b7c
 ms.openlocfilehash: fb8a292c4fecbe5744e2cd09bc1442fab11046bc
-ms.lasthandoff: 12/30/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="operations-for-migrating-to-system-center-configuration-manager"></a>System Center Configuration Manager로 마이그레이션을 위한 작업
 
@@ -239,4 +237,3 @@ System Center Configuration Manager에서 마이그레이션할 경우 지원되
 8.  **마이그레이션 데이터 정리** 대화 상자의 **원본 계층** 드롭다운 목록에서 원본 계층 최상위 사이트의 사이트 코드 및 사이트 서버를 선택한 다음 **확인**을 선택합니다.  
 
 9. **예**를 선택하여 원본 계층에 대한 마이그레이션 프로세스를 완료합니다.  
-

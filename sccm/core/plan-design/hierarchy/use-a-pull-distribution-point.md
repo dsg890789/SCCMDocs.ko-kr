@@ -6,24 +6,20 @@ ms.date: 2/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7d8f530b-1a39-4a9d-a2f0-675b516da7e4
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9b366262ae59a8cb57c0f1760b961194d17bcf52
 ms.openlocfilehash: db5039ff6cb93e3099b096196d49a1f06c315a6b
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="use-a-pull-distribution-point-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 풀(pull) 배포 지점 사용
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -113,4 +109,3 @@ System Center Configuration Manager용 풀(pull) 배포 지점은 사이트 서�
 
 ## <a name="see-also"></a>참고 항목  
  [System Center Configuration Manager에서 콘텐츠 관리의 기본 개념](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management)   
-

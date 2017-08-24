@@ -6,21 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 217c8a0e-5112-420e-a325-2a6d75326290
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: 41aa6cf69a746f0ab67d804f1ee0c70db05d65ee
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-a-task-sequence-to-install-an-operating-system-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 운영 체제를 설치하는 작업 순서 만들기
 
@@ -157,4 +155,3 @@ System Center Configuration Manager에서 작업 순서를 사용하여 운영 �
 |사용자 환경 저장소 요청|이 작업 순서 단계를 사용 하 여 사용자 상태 데이터가 저장 되는 상태 마이그레이션 지점에 대 한 액세스를 요청 합니다.|  
 |사용자 파일 및 설정 복원|이 작업 순서 단계를 사용 하 여 상태 마이그레이션 도구 USMT (사용자)는 대상 컴퓨터에 사용자 상태 및 설정을 복원 하려면 시작 합니다.|  
 |릴리스 사용자 상태 저장소|상태 마이그레이션 지점에 사용자 상태 데이터가 더 이상 필요하지 않음을 알릴 때 사용하는 작업 순서 단계입니다.|  
-

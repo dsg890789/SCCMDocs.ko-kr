@@ -6,22 +6,20 @@ ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 97f2d81a-2c58-442c-88bc-defd5a1cd48f
-caps.latest.revision: 23
-caps.handback.revision: 0
+caps.latest.revision: "23"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 0663ba84762c44a5c303562548499f195bae9e1c
 ms.openlocfilehash: cc678c1133b1944f55bcad309cf9ede9f0660b57
-ms.contentlocale: ko-kr
-ms.lasthandoff: 08/01/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-boot-images-with-system-center-configuration-manager"></a>System Center Configuration Manager로 부팅 이미지 관리
 
@@ -270,4 +268,3 @@ Configuration Manager 버전 1706부터 부팅 이미지의 Windows ADK 설치 �
 1.  부팅 이미지를 업데이트하기 전에 사이트 서버의 해당 언어 폴더에 적합한 작업 순서 리소스 파일(tsres.dll)이 있는지 확인합니다. 예를 들어 영어 리소스 파일은 <*Configuration Manager 설치 폴더*>\OSD\bin\x64\00000409\tsres.dll 위치에 있습니다.  
 
 2.  시작 전 명령의 일부로 SMSTSLanguageFolder 환경 변수를 적합한 언어 ID로 설정합니다. 언어 ID는 16진수가 아닌 10진수를 사용하여 지정해야 합니다. 예를 들어 언어 ID를 영어로 설정하려면 폴더 이름에 사용되는 16진수 값인 00000409 대신 10진수 값인 1033을 지정합니다.  
-

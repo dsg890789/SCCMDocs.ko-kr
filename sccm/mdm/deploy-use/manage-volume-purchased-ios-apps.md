@@ -6,22 +6,20 @@ ms.date: 05/12/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7c3b9316-247b-490b-a363-8f8553821579
-caps.latest.revision: 18
-caps.handback.revision: 0
+caps.latest.revision: "18"
+caps.handback.revision: "0"
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f4cb711f369698fe8e045f8c83dd96ec6fb29d70
 ms.openlocfilehash: ce706e938f558406044f7890c80bb7156c3b262b
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-volume-purchased-ios-apps-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 대량 구매한 iOS 앱 관리
 
@@ -124,4 +122,3 @@ System Center Configuration Manager 1702부터 이제 사용이 허가된 앱을
  이 보고서에는 각 응용 프로그램의 이름, 구입한 라이선스의 총수, 사용 가능한 라이선스 수 등이 표시됩니다.  
 
  Configuration Manager 보고서를 실행하는 방법에 대한 도움말은 [System Center Configuration Manager에서 보고](../../core/servers/manage/reporting.md)를 참조하세요.  
-

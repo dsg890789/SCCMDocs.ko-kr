@@ -6,21 +6,19 @@ ms.date: 06/13/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c14a3607-253b-41fb-8381-ae2d534a9022
-caps.latest.revision: 36
+caps.latest.revision: "36"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
 ms.openlocfilehash: 2bbc8935bee306ed0bc312cc43b8f5374a8df7ff
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/29/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="install-in-console-updates-for-system-center-configuration-manager"></a>System Center Configuration Manager의 콘솔 내 업데이트 설치
 
@@ -386,4 +384,3 @@ System Center Configuration Manager는 Microsoft 클라우드 서비스와 동�
 -   이전에 오래된 업데이트를 이미 설치했으면 최신 날짜로 된 업데이트를 설치하지 않아도 됩니다. 그러나 첫 번째 업데이트를 설치한 후에 최신 업데이트를 설치하면 문제의 바이너리가 업데이트됩니다. 추가 변경이 수행되지 않고 사용자의 추가 작업도 필요하지 않습니다.
 
 -   이전에 최신 업데이트를 설치했는데 오래된 날짜의 업데이트를 설치한 경우에도 추가 작업은 필요가 없습니다. 이미 설치한 새 이진 파일을 원래 업데이트의 같은 파일로 덮어쓰지 않기 때문입니다.
-

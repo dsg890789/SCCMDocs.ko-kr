@@ -1,5 +1,4 @@
 ---
-
 title: "소프트웨어 업데이트에 대한 모범 사례 | Microsoft 문서"
 description: "System Center Configuration Manager의 소프트웨어 업데이트에 대한 다음 모범 사례를 따르세요."
 keywords: 
@@ -10,17 +9,13 @@ ms.date: 10/06/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: 6d20389a-9de2-4a64-bced-9fc4fa519174
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d94acac84f052a01de9d9c9f65f237c0006c45b8
 ms.openlocfilehash: 5df20f3703442de1be6220ca2770e182e330c036
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="best-practices-for-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 업데이트에 대한 모범 사례
 
@@ -59,4 +54,3 @@ ms.lasthandoff: 05/17/2017
 
 ## <a name="see-also"></a>참고 항목  
  [System Center Configuration Manager에서 소프트웨어 업데이트 계획](../../sum/plan-design/plan-for-software-updates.md)
-

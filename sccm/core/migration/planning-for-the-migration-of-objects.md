@@ -6,23 +6,20 @@ ms.date: 1/12/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 066caf00-e419-4efb-93d3-ba4ba878297c
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c6ee0ed635ab81b5e454e3cd85637ff3e20dbb34
 ms.openlocfilehash: 17f3955aa7c63a13bab03b46002f7de0b0ec38fe
-ms.contentlocale: ko-kr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="plan-for-the-migration-of-configuration-manager-objects-to-system-center-configuration-manager"></a>Configuration Manager 개체를 System Center Configuration Manager로 마이그레이션하도록 계획
 
@@ -188,4 +185,3 @@ Configuration Manager는 보고서 마이그레이션을 지원하지 않습니�
  Configuration Manager 2007과 System Center Configuration Manager 간의 소프트웨어 계량 규칙은 크게 변경되지 않았습니다. 지원되는 원본 계층에서 대상 계층으로 소프트웨어 계량 규칙을 마이그레이션할 수 있습니다.  
 
  기본적으로, 대상 계층으로 마이그레이션하는 소프트웨어 계량 규칙은 대상 계층의 특정 사이트와 연결되는 것이 아니며 대신, 계층의 모든 클라이언트에 적용됩니다. 특정 사이트의 클라이언트에 소프트웨어 계량 규칙을 적용하려면 마이그레이션 이후 계량 규칙을 편집해야 합니다.  
-

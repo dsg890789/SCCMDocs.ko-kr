@@ -6,21 +6,19 @@ ms.date: 3/1/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: aaf13bb8-4ba2-4bd7-9fac-d36a9d88a1b6
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d5cc318eaf097cb3cfbfde730f7573d27af25648
 ms.openlocfilehash: f0d44f82a0b6068f8cecc5808774677eccb0f8d9
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="prerequisite-checker-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 필수 조건 검사기
 
@@ -198,4 +196,3 @@ ms.lasthandoff: 05/17/2017
     -   목록에서 항목을 클릭하면 문제를 해결하는 방법에 대한 자세한 정보가 나타납니다.  
     -   사이트 서버, 사이트 시스템 또는 Configuration Manager 콘솔을 설치하기 전에 **오류** 상태가 있는 모든 목록의 항목을 해결해야 합니다.  
     -   또한 시스템 드라이브의 루트에 있는 **ConfigMgrPrereq.log** 파일을 열고 필수 조건 검사기 결과를 검토할 수 있습니다. 로그 파일에는 필수 조건 검사기 사용자 인터페이스에 표시되지 않은 추가 정보가 있을 수 있습니다.  
-

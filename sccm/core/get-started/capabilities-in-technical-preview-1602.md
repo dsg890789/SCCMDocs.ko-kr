@@ -4,24 +4,22 @@ description: "System Center Configuration Manager용 Technical Preview 버전 16
 ms.custom: na
 ms.date: 01/23/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1b9265d1-b461-47f8-b7ef-885da0fdd969
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: noindex,nofollow
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
-ms.openlocfilehash: 6e737d06563b256010f302af4e805eb6812524e2
-ms.contentlocale: ko-kr
-ms.lasthandoff: 01/24/2017
-
+ms.openlocfilehash: 2354f885aaf69683004ad78f0e1978e78fee9145
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="capabilities-in-technical-preview-1602-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1602의 기능
 
@@ -61,4 +59,3 @@ ms.lasthandoff: 01/24/2017
 -   이제 사용 가능한 Windows 10 업그레이드가 Configuration Manager 콘솔의 **Windows 10 서비스** \ **모든 Windows 10 업데이트** 노드에만 표시됩니다. 이러한 업데이트가 **소프트웨어 업데이트** \ **모든 소프트웨어 업데이트** 노드에는 표시되지 않습니다.  
 
 -   Windows 10 업그레이드 패키지를 시작하는 최종 사용자에게는 해당 운영 체제를 업그레이드할 것임을 알려주는 대화 상자가 표시됩니다.  
-

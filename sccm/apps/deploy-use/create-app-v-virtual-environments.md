@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b6b86078-fcc4-46cf-87d6-4b52b914b712
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: aa9e87830a3a51b01fae29b564c9267ec930a60d
 ms.openlocfilehash: 377ed9732fb16b062f53e78504aea394acdb7462
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-app-v-virtual-environments-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 App-V 가상 환경 만들기
 
@@ -59,9 +58,3 @@ System Center Configuration Manager(Configuration Manager)의 Microsoft Applicat
 
     > [!NOTE]  
     >  응용 프로그램이 설치되거나 클라이언트에서 다음번에 설치된 응용 프로그램을 평가할 때 클라이언트 PC에서 가상 환경이 추가되거나 수정됩니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

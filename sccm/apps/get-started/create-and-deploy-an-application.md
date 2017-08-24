@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3bd1e487-ea18-43c1-b7c3-acbd9b86d429
-caps.latest.revision: 15
-caps.handback.revision: 0
+caps.latest.revision: "15"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 6516db6f4c09fdd173b498c58ccc411847752c4e
 ms.openlocfilehash: bbbf278f5d31c51bfe061dd44e170f7ab1ca70ad
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-and-deploy-an-application-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 응용 프로그램 만들기 및 배포
 
@@ -206,9 +205,3 @@ Configuration Manager 응용 프로그램에 이미 익숙한 경우에는 이 �
 ## <a name="end-user-experience"></a>최종 사용자 환경  
 
 Configuration Manager를 통해 관리되며 Windows 10을 실행하는 PC의 사용자에게는 Contoso 응용 프로그램을 설치해야 한다는 메시지가 표시됩니다. 사용자가 설치에 동의하면 응용 프로그램이 설치됩니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

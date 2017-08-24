@@ -8,22 +8,19 @@ ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 0a9dc0fe-a942-40a2-bab1-7eeee4d95380
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 017bd5b899b364fc832c721d63cc7dbad0a11671
-ms.openlocfilehash: 884b5f2ec3f1aa273128dfeaaf88d969c9d8669d
-ms.contentlocale: ko-kr
-ms.lasthandoff: 02/15/2017
-
-
+ms.openlocfilehash: 6e717bcbe5ef8c3f2efa717d0cebb9e675e7c127
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-an-endpoint-protection-point-site-system-role"></a>Endpoint Protection 지점 사이트 시스템 역할 만들기
 
@@ -86,4 +83,3 @@ ms.lasthandoff: 02/15/2017
     >  이 옵션은 기본적으로 사용되는 클라우드 보호 서비스 설정(이전에는 MAPS라고 함)을 구성합니다. 구성한 각 맬웨어 방지 정책에 대한 사용자 지정 설정을 구성할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 Endpoint Protection에 대한 맬웨어 방지 정책을 만들어 배포하는 방법](endpoint-antimalware-policies.md)을 참조하세요.
 
 8.  마법사를 완료합니다.
-

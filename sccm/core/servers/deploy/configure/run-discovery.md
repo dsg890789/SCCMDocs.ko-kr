@@ -6,23 +6,20 @@ ms.date: 2/8/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 30844519-ce14-456f-bfb8-4318b578e9f6
-caps.latest.revision: 20
-caps.handback.revision: 0
+caps.latest.revision: "20"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7b6674f331c82cc7899b8661cf38b9d3022cf21b
 ms.openlocfilehash: 647826e9d340d3ef97abab0dba51041a3727dedc
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="run-discovery-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 검색 실행
 
@@ -89,4 +86,3 @@ DDR 파일은 .ddr 확장명으로 식별되며 일반적으로 약 1KB의 크�
 -   [System Center Configuration Manager에 사용할 검색 방법 선택](../../../../core/servers/deploy/configure/select-discovery-methods-to-use.md)  
 
 사용할 방법을 알고 있는 경우 [System Center Configuration Manager에 사용할 검색 방법 구성](../../../../core/servers/deploy/configure/configure-discovery-methods.md)에서 각 방법의 설정에 관한 지침을 찾아보세요.  
-

@@ -6,22 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 5fccbbeb-0faa-4943-83c2-e67db62d392d
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
 ms.openlocfilehash: 83550fbf0ef1f9adb0bb2c51a4f3c26a7500d352
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="site-components-for-system-center-configuration-manager"></a>System Center Configuration Manager의 사이트 구성 요소
 
@@ -123,4 +120,3 @@ Configuration Manager 서비스는 수행해야 할 작업이 있을 때, 즉 �
 6.  구성 요소의 상태가 업데이트되면 **구성 요소** 메뉴에서 4개의 동작 기반 옵션 중 하나를 사용하여 구성 요소 작업을 수정합니다. 작업을 요청한 후에는 구성 요소의 새 상태가 표시되도록 구성 요소를 쿼리해야 합니다.  
 
 7.  구성 요소 작업 상태의 수정을 마치면 Configuration Manager Service Manager를 닫습니다.  
-

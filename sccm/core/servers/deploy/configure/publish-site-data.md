@@ -6,22 +6,19 @@ ms.date: 2/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 17cf034f-eaff-43ce-bc8e-917213c1db74
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: e7629fdf7fdf615fa27894158c3d101432c95a04
 ms.openlocfilehash: bcfb002c503485f03ba27d7346acb61d0d3c6087
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="publish-site-data-for-system-center-configuration-manager"></a>System Center Configuration Manager용으로 사이트 데이터 게시
 
@@ -73,4 +70,3 @@ System Center Configuration Manager의 Active Directory 스키마를 확장한 �
     >  사이트에서 포리스트에 게시할 수 있도록 설정한 경우에는 Configuration Manager의 해당 포리스트에 대한 Active Directory 스키마를 확장해야 합니다. Active Directory 포리스트 계정에는 해당 포리스트의 시스템 컨테이너에 대한 모든 권한이 있어야 합니다.  
 
 5.  Active Directory 포리스트 검색을 사용하도록 이 포리스트의 구성을 완료한 후에는 **OK** 를 클릭하여 구성을 저장합니다.  
-

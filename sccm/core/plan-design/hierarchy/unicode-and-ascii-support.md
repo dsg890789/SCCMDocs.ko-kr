@@ -6,23 +6,20 @@ ms.date: 3/1/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2bdec799-905f-48bc-aed5-2d92134739e8
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b35e747c8c297d61bb549b9767c4318f51e5fdb4
 ms.openlocfilehash: 18f1c64c1f27001a0fdfbab4236d09a5bc279272
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="unicode-and-ascii-support-in-system-center-configuration-manager"></a>System Center Configuration Manager의 유니코드 및 ASCII 지원
 
@@ -146,4 +143,3 @@ System Center Configuration Manager에서는 유니코드 문자를 사용하여
  Configuration Manager 데이터베이스는 저장하는 대부분의 개체에 유니코드를 지원하며, 가능한 경우 컴퓨터의 로캘과 일치하는 운영 체제 언어로 이 정보를 표시합니다. 클라이언트 인터페이스 또는 Configuration Manager 콘솔에서 컴퓨터의 운영 체제 언어로 정보를 표시하려면 컴퓨터의 로캘이 사이트에 설치하는 클라이언트 또는 서버 언어와 일치해야 합니다.  
 
  그러나 여러 Configuration Manager 개체는 유니코드를 지원하지 않으며 ASCII를 사용하여 데이터베이스에 저장되거나 추가적인 언어 제한 사항을 갖습니다. 이 정보는 항상 ASCII 문자를 사용하여 표시되거나 개체를 만들 때 사용한 언어로 표시됩니다.  
-

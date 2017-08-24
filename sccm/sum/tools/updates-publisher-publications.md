@@ -6,22 +6,20 @@ ms.date: 4/29/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e6c1df1d-7728-4980-9199-bc32cde5439e
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: NOINDEX, NOFOLLOW
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 31819a1df4e63e1114682490a9b3c3b4e5c99cfa
 ms.openlocfilehash: ddea7af935d5be880b96e383401061f8aa11e6da
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-publications-in-updates-publisher"></a>Updates Publisher의 게시물 관리
 
@@ -105,4 +103,3 @@ Updates Publisher에서 게시물을 제거한 후에도 게시물에 있던 업
     사용자 지정 업데이트 또는 번들을 만료시킨 다음 만료됨 상태를 Configuration Manager에 게시한 후에야 Configuration Manager에서 사용자 지정 업데이트 또는 번들을 제거(삭제)할 수 있습니다. Configuration Manager에서 업데이트 또는 번들이 만료된 후에는 업데이트 또는 번들을 더 이상 배포하거나 다시 활성화할 수 없습니다.
 
 -   **업데이트 또는 번들을 다시 활성화하려면** 업데이트 작업 영역에서 만료된 하나 이상의 업데이트를 선택한 다음 리본의 **홈** 탭에서 **다시 활성화**를 선택합니다. 만료된 업데이트가 이전에 Configuration Manager에 만료됨으로 게시된 경우에는 이를 다시 활성화할 수 없습니다.
-

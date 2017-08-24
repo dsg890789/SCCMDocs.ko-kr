@@ -6,21 +6,19 @@ ms.date: 1/3/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 70b5cbc0-64ba-49bd-8b34-fb4c09b2b95b
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7f2fd3e550c7dc1b27996dc309b53f74e8c865e9
 ms.openlocfilehash: a823458dc3b891b1c32d1cb44a96e8cafd376ed5
-ms.contentlocale: ko-kr
-ms.lasthandoff: 01/04/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="content-source-location-scenarios-in-system-center-configuration-manager"></a>System Center Configuration Manager의 콘텐츠 원본 위치 시나리오
 
@@ -255,4 +253,3 @@ ms.lasthandoff: 01/04/2017
 4.  관리 지점에서 Distribution Manager가 콘텐츠를 요청한 클라이언트의 모든 기본 배포 지점에 콘텐츠를 배포하도록 트리거를 만듭니다.  
 
 5.  배포 관리자는 모든 기본 배포 지점에 콘텐츠를 배포합니다. 이를 통해 추가 클라이언트에서 대체 배포 지점을 사용하지 않고 콘텐츠를 가져올 수 있습니다.  
-

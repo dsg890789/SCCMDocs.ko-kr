@@ -6,22 +6,19 @@ ms.date: 4/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6e4964c5-43cb-4372-9a89-b62ae6a4775c
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 32f7fc4ef9c8e8d3c2ec8eeaf9a3174bad992ffb
 ms.openlocfilehash: 0da80521bf223a765c3731f8ad59623d85a4c9fa
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="use-the-service-connection-tool-for-system-center-configuration-manager"></a>System Center Configuration Manager의 서비스 연결 도구 사용
 
@@ -163,4 +160,3 @@ ms.lasthandoff: 05/17/2017
 |**-connect -usagedatasrc [드라이브:][경로] -updatepackdest [드라이브:][경로] -proxyserveruri [프록시 서버의 FQDN] -proxyusername [사용자 이름]** <br /> <br /> 1606 이전의 Configuration Manager 버전을 사용하는 경우 .cab 파일의 이름을 지정해야 하며 프록시 서버에 대한 옵션을 사용할 수 없습니다.  지원되는 명령 매개 변수는 다음과 같습니다. <br /> **-connect -usagedatasrc [드라이브:][경로][파일 이름] -updatepackdest [드라이브:][경로]** |이 명령은 Configuration Manager 클라우드 서비스에 연결하여 지정된 위치에서 사용 현황 데이터.cab 파일을 업로드하고 사용 가능한 업데이트 팩 및 콘솔 콘텐츠를 다운로드합니다. 프록시 서버에 대한 옵션은 선택 사항입니다.<br /><br /> 이 명령은 인터넷에 연결할 수 있는 컴퓨터에 대한 **로컬 관리자** 권한으로 실행합니다.<br /><br /> 프록시 서버를 사용하지 않고 연결하는 예: **-connect -usagedatasrc D:\USB\ -updatepackdest D:\USB\UpdatePacks** <br /><br /> 프록시 서버를 사용하는 경우 연결하는 예: **-connect -usagedatasrc D:\USB\Usagedata.cab -updatepackdest D:\USB\UpdatePacks -proxyserveruri itgproxy.redmond.corp.microsoft.com -proxyusername Meg** <br /><br /> 1606 이전 버전을 사용하는 경우 .cab 파일의 파일 이름을 지정해야 하며 프록시 서버를 지정할 수 없습니다. 다음과 같은 예제 명령줄을 사용하세요. **-connect -usagedatasrc D:\USB\Usagedata.cab -updatepackdest D:\USB\UpdatePacks**|      
 |**-import -updatepacksrc [drive:][path]**|이 명령은 이전에 다운로드한 업데이트 팩과 콘솔 콘텐츠를 Configuration Manager 콘솔로 가져옵니다.<br /><br /> 서비스 연결 지점을 호스트하는 서버에서 **로컬 관리자** 권한으로 이 명령을 실행합니다.<br /><br /> 예:  **-import -updatepacksrc D:\USB\UpdatePacks**|  
 |**-export -dest [drive:][path][filename.csv]**|이 명령은 사용 데이터를 .csv 파일로 내보내며, 그런 후에 파일을 볼 수 있습니다.<br /><br /> 서비스 연결 지점을 호스트하는 서버에서 **로컬 관리자** 권한으로 이 명령을 실행합니다.<br /><br /> 예: **-export -dest D:\USB\usagedata.csv**|  
-

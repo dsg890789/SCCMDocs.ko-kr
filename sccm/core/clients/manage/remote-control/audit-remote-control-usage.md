@@ -6,23 +6,20 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 5c975e69-0cc0-4afd-b7fb-b7182162a933
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
-ms.openlocfilehash: e3082e1d608f60a539fc58b0129132e33c8af833
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 4259ecfca48ccdffa83247e9ab5a65b3f006c5d9
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-audit-remote-control-usage-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 원격 제어 사용을 감사하는 방법
 
@@ -63,4 +60,3 @@ System Center Configuration Manager 보고서를 사용하여 원격 제어에 �
 4.  보고서 **원격 제어 - 모든 원격 제어 정보**를 선택한 다음 **홈** 탭의 **보고서 그룹**에서 **실행** 을 클릭하여 **원격 제어 - 모든 원격 제어 정보** 창을 엽니다.  
 
 5.  보고서의 데이터를 다 확인했으면 보고서 창을 닫습니다.  
-

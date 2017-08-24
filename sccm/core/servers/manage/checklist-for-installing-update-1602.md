@@ -6,22 +6,20 @@ ms.date: 2/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b63ef197-01f0-4894-b929-5ef8403c5195
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: NOINDEX, NOFOLLOW
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 30af3326578d39c6d995672071705bcaeb877e4d
-ms.openlocfilehash: e73055707454bc052b753c5e74be9674d6aa5b8c
-ms.contentlocale: ko-kr
-ms.lasthandoff: 02/23/2017
-
+ms.openlocfilehash: 3e0de56b7a592b105e6a61b3d6654b1d0142584d
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="checklist-for-installing-update-1602-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 업데이트 1602를 설치하기 위한 검사 목록
 
@@ -138,4 +136,3 @@ Configuration Manager는 보조 사이트의 백업을 지원하지 않으며, �
 
 ## <a name="see-also"></a>참고 항목  
  [System Center Configuration Manager용 업데이트](../../../core/servers/manage/updates.md)
-

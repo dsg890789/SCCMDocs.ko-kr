@@ -6,22 +6,19 @@ ms.date: 1/3/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0a2d6c3f-a4e4-4c19-b087-3caada480de9
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
 ms.openlocfilehash: ddf2ad1cae51c1e36df5a6d86822e2b9abe604e2
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="fundamentals-of-role-based-administration-for-system-center-configuration-manager"></a>System Center Configuration Manager의 역할 기반 관리 기본 사항
 
@@ -214,4 +211,3 @@ Configuration Manager에 대해 관리 보안을 디자인하고 구현할 때�
 -   관리자별로 개체 유형의 일부 인스턴스에 대해 서로 다른 액세스 권한이 필요할 수 있습니다. 예를 들어 한 관리자 그룹에는 특정 소프트웨어 업데이트 그룹에 대해 읽기 권한이 필요하고, 다른 관리자 그룹에는 다른 소프트웨어 업데이트 그룹에 대해 수정 및 삭제 권한이 필요한 경우 해당 소프트웨어 업데이트 그룹에 대해 여러 보안 범위를 만듭니다.  
 
 역할 기반 관리용 보안 범위를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager용 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md#BKMK_ConfigSecScope) 항목의 [개체에 대한 보안 범위 구성](../../core/servers/deploy/configure/configure-role-based-administration.md)을 참조하세요.  
-

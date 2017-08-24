@@ -6,22 +6,19 @@ ms.date: 11/27/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2117f786-d521-4790-9e8d-ec096c63c9d7
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: Robstack
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8679df3f8a3b692391537bacd6144a4f2fae357b
 ms.openlocfilehash: d527cb4bfb55ca50c8d2a0fed7c427af5747fe99
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="protect-data-and-site-infrastructure-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 데이터 및 사이트 인프라 보호
 
@@ -43,4 +40,3 @@ ms.lasthandoff: 05/17/2017
 -   메일 프로필은 장치에서 메일 설정을 만들고, 배포하고, 모니터링하는 데 유용한 도구 및 리소스 집합을 제공합니다. 이를 통해 사용자는 별도의 설정 없이 자신의 개인 장치에서 회사 전자 메일에 액세스할 수 있습니다. [System Center Configuration Manager에서 메일 프로필](../deploy-use/introduction-to-email-profiles.md)을 참조하세요.  
 
 -   Configuration Manager에서는 Active Directory 또는 Azure Active Directory 계정을 사용하여 암호, 스마트 카드 또는 가상 스마트 카드를 대신하는 대체 로그인 방법인 비즈니스용 Windows Hello(이전의 Microsoft Passport for Work)와 통합할 수 있습니다. [System Center Configuration Manager의 비즈니스용 Windows Hello 설정](../deploy-use/windows-hello-for-business-settings.md)을 참조하세요.  
-

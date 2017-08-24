@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 678c9622-c61b-47d1-ba25-690616e431c7
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
 ms.openlocfilehash: 649942d3d468ec35c7246e08f741cdebd22fb3ac
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-configuration-baselines-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 구성 기준 만들기
 
@@ -70,9 +69,3 @@ System Center Configuration Manager의 구성 기준에는 미리 정의된 구�
 8.  구성 기준에서 구성 항목을 제거하려면 구성 항목을 선택한 다음 **제거**를 클릭합니다.  
 
 9. **확인** 을 클릭하여 **구성 기준 만들기** 대화 상자를 닫고 구성 기준을 만듭니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

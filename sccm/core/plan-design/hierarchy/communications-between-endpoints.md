@@ -6,27 +6,26 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 68fe0e7e-351e-4222-853a-877475adb589
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 2ac9f98dc7b455d3b72d794d4311863186ed53ef
 ms.openlocfilehash: cd94f9ccc7e196b30e5dc7ae9368d073b7cff5d2
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="communications-between-endpoints-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 끝점 간의 통신
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 
-##  <a name="a-nameplanningintra-sitecoma-communications-between-site-systems-in-a-site"></a><a name="Planning_Intra-site_Com"></a> 사이트의 사이트 시스템 간 통신  
+##  <a name="Planning_Intra-site_Com"></a> 사이트의 사이트 시스템 간 통신  
  Configuration Manager 사이트 시스템 또는 구성 요소는 네트워크를 통해 다른 사이트 시스템이나 사이트 내 Configuration Manager 구성 요소와 통신할 때 사이트를 구성하는 방법에 따라 다음 프로토콜 중 하나를 사용합니다.  
 
 -   SMB(서버 메시지 블록)  
@@ -46,7 +45,7 @@ ms.openlocfilehash: cd94f9ccc7e196b30e5dc7ae9368d073b7cff5d2
 자세한 내용은 [콘텐츠 관리를 위한 네트워크 대역폭 관리](manage-network-bandwidth.md)를 참조하세요.
 
 
-##  <a name="a-nameplanningclienttositesystema-communications-from-clients-to-site-systems-and-services"></a><a name="Planning_Client_to_Site_System"></a> 클라이언트와 사이트 시스템 및 서비스 간의 통신  
+##  <a name="Planning_Client_to_Site_System"></a> 클라이언트와 사이트 시스템 및 서비스 간의 통신  
 클라이언트는 사이트 시스템 역할, Active Directory Domain Services 및 온라인 서비스에 대한 통신을 시작합니다. 이러한 통신을 설정하려면 방화벽에서 클라이언트와 통신 끝점 간의 네트워크 트래픽을 허용해야 합니다. 끝점은 다음과 같습니다.  
 
 -   **응용 프로그램 카탈로그 웹 사이트 지점**: HTTP 및 HTTPS 통신 지원
@@ -79,7 +78,7 @@ ms.openlocfilehash: cd94f9ccc7e196b30e5dc7ae9368d073b7cff5d2
 
 이러한 끝점과 통신할 때 클라이언트에서 사용하는 포트 및 프로토콜에 대한 자세한 내용은 [System Center Configuration Manager에서 사용되는 포트](../../../core/plan-design/hierarchy/ports.md)를 참조하세요.  
 
-###  <a name="a-namebkmkclientspana-considerations-for-client-communications-from-the-internet-or-an-untrusted-forest"></a><a name="BKMK_clientspan"></a> 인터넷 또는 신뢰할 수 없는 포리스트에서의 클라이언트 통신에 대한 고려 사항  
+###  <a name="BKMK_clientspan"></a> 인터넷 또는 신뢰할 수 없는 포리스트에서의 클라이언트 통신에 대한 고려 사항  
 기본 사이트에 설치된 다음 사이트 시스템 역할은 인터넷 또는 트러스트되지 않은 포리스트와 같은 신뢰할 수 없는 위치에 있는 클라이언트에서의 연결을 지원합니다. 보조 사이트는 신뢰할 수 없는 위치에서의 클라이언트 연결을 지원하지 않습니다.  
 
 -   응용 프로그램 카탈로그 웹 사이트 지점  
@@ -120,7 +119,7 @@ ms.openlocfilehash: cd94f9ccc7e196b30e5dc7ae9368d073b7cff5d2
 -   **터널링:**:   
     프록시 웹 서버가 SSL 브리징에 대한 요구 사항을 지원할 수 없는 경우 또는 Configuration Manager에서 등록된 모바일 장치에 대해 인터넷 지원을 구성하려는 경우를 위해 SSL 터널링도 지원됩니다. 이는 보안 수준이 더 낮은 옵션입니다. 인터넷의 SSL 패킷이 SSL 종료 없이 사이트 시스템으로 전달되기 때문이며, 이 경우 악성 콘텐츠는 검사되지 않습니다. SSL 터널링을 사용할 경우 프록시 웹 서버에 대한 인증서 요구 사항은 없습니다.  
 
-##  <a name="a-nameplancomx-foresta-communications-across-active-directory-forests"></a><a name="Plan_Com_X-Forest"></a> Active Directory 포리스트 간 통신  
+##  <a name="Plan_Com_X-Forest"></a> Active Directory 포리스트 간 통신  
 System Center Configuration Manager는 여러 Active Directory 포리스트에 걸쳐 있는 사이트 및 계층을 지원합니다.  
 
 Configuration Manager는 사이트 서버와 동일한 Active Directory 포리스트에 있지 않은 도메인 컴퓨터 및 작업 그룹에 있는 컴퓨터를 지원합니다.  
@@ -152,7 +151,7 @@ Configuration Manager는 사이트 서버와 동일한 Active Directory 포리�
 
     -   [작업 그룹 컴퓨터에 Configuration Manager 클라이언트를 설치하는 방법](../../../core/clients/deploy/deploy-clients-to-windows-computers.md#BKMK_ClientWorkgroup)  
 
-###  <a name="a-namebkmkspana-scenarios-to-support-a-site-or-hierarchy-that-spans-multiple-domains-and-forests"></a><a name="bkmk_span"></a> 여러 도메인과 포리스트에 걸쳐 있는 사이트 또는 계층을 지원하는 시나리오  
+###  <a name="bkmk_span"></a> 여러 도메인과 포리스트에 걸쳐 있는 사이트 또는 계층을 지원하는 시나리오  
 
 #### <a name="communication-between-sites-in-a-hierarchy-that-spans-forests"></a>여러 포리스트에 걸쳐 있는 계층 내 사이트 간 통신  
 이 시나리오에서는 Kerberos 인증을 지원하는 양방향 포리스트 트러스트가 필요합니다.  Kerberos 인증을 지원하는 양방향 포리스트 트러스트가 없는 경우 Configuration Manager는 원격 포리스트의 자식 사이트를 지원하지 않습니다.  
@@ -256,11 +255,5 @@ Configuration Manager에서는 해당 사이트의 사이트 서버와 동일한
 
 -   각 사이트에서 해당 데이터를 Active Directory Domain Services에 게시하도록 구성합니다. 이러한 구성을 통해 해당 포리스트의 클라이언트는 사이트 정보를 검색하고 관리 지점을 찾을 수 있습니다. 서비스 위치로 Active Directory Domain Service를 사용할 수 없는 클라이언트에 대해 DNS, WINS 또는 클라이언트의 할당된 관리 지점을 사용할 수 있습니다.  
 
-###  <a name="a-namebkmkxchangea-put-the-exchange-server-connector-in-a-remote-forest"></a><a name="bkmk_xchange"></a> 원격 포리스트에 Exchange Server 커넥터 배치  
+###  <a name="bkmk_xchange"></a> 원격 포리스트에 Exchange Server 커넥터 배치  
 이 시나리오를 지원하려면 DNS 전달 구성 등을 통해 포리스트 간에 이름 확인이 작동하게 하고 Exchange Server 커넥터를 구성할 때 Exchange Server의 인트라넷 FQDN을 지정합니다. 자세한 내용은 [System Center Configuration Manager와 Exchange를 사용하여 모바일 장치 관리](../../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md)를 참조하세요.  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
-

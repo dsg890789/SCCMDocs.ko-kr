@@ -6,13 +6,12 @@ ms.date: 12/30/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1fcc921f-085f-4b0b-9c53-1e0707211076
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
@@ -35,10 +34,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 47d473b3884c3cd2ff7516629a7c32d4e52ac39b
 ms.openlocfilehash: ef7b3656f9b4a31e07227aa4e864448d0dd1fcdc
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="additional-information-about-privacy-for-system-center-configuration-manager"></a>System Center Configuration Manager의 개인 정보 보호에 대한 추가 정보
 
@@ -112,9 +112,3 @@ Microsoft Intune과의 모든 통신은 HTTPS를 사용합니다. Microsoft Intu
 Microsoft Intune에 연결된 장치를 관리하기 위해 일부 정보는 Microsoft Intune에 전송하고 일부 정보는 Microsoft Intune에서 수신합니다. 이 정보에는 서비스에 할당된 모든 사용자의 UPN(사용자 계정 이름)과 Microsoft Intune을 통해 관리되는 장치에 대한 장치 인벤토리 정보가 포함됩니다. Manage.Microsoft.com 배포 지점에 할당된 콘텐츠의 메타데이터(예: 응용 프로그램 이름, 게시자, 버전 등)가 Microsoft Intune으로 전송됩니다. Manage.Microsoft.com 배포 지점에 할당되는 실제 이진 콘텐츠는 Microsoft Intune에 업로드되기 전에 암호화됩니다.
 
 이 기능은 기본적으로 구성되어 있지 않습니다. 관리자가 Manage.Microsoft.com 배포 지점으로 전송되는 콘텐츠와 서비스에 할당되는 사용자를 제어합니다. 이 기능은 언제든 제거할 수 있습니다.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
-

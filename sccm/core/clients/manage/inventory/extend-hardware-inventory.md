@@ -6,22 +6,20 @@ ms.date: 02/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d5bfab4f-c55e-4545-877c-5c8db8bc1891
-caps.latest.revision: 10
-caps.handback.revision: 0
+caps.latest.revision: "10"
+caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 5f1412fb132e3a074742e11f1142b2594146cbe1
 ms.openlocfilehash: 3e5517e1710d0d12e51fba58efda5dc5edd08544
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/28/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-extend-hardware-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 하드웨어 인벤토리를 확장하는 방법
 
@@ -156,4 +154,3 @@ Configuration.mof 파일은 클라이언트의 하드웨어 인벤토리에서 �
 
 > [!NOTE]
 > MIF 파일은 데이터를 대량으로 포함할 수 있으므로 이 데이터를 수집하면 사이트의 성능에 부정적인 영향을 줄 수 있습니다. 필요한 경우에만 MIF 컬렉션을 사용하도록 설정하고 하드웨어 인벤토리 설정에서 **최대 사용자 지정 MIF 파일 크기(KB)** 옵션을 구성합니다. 자세한 내용은 [System Center Configuration Manager의 하드웨어 인벤토리 소개](introduction-to-hardware-inventory.md)를 참조하세요.
-

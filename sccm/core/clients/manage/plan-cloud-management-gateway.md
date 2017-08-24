@@ -3,20 +3,17 @@ title: "클라우드 관리 게이트웨이 계획 | Microsoft Docs"
 description: 
 ms.date: 06/07/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.assetid: 2dc8c9f1-4176-4e35-9794-f44b15f4e55f
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c6ee0ed635ab81b5e454e3cd85637ff3e20dbb34
 ms.openlocfilehash: a7380ae781447880ffcba0778694ea62e10c4889
-ms.contentlocale: ko-kr
-ms.lasthandoff: 06/08/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="plan-for-the-cloud-management-gateway-in-configuration-manager"></a>Configuration Manager에서 클라우드 관리 게이트웨이 계획
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -198,4 +195,3 @@ URL은 각 관리 지점에 대해 고유합니다. 그런 후 Configuration Man
 ## <a name="next-steps"></a>다음 단계
 
 [클라우드 관리 게이트웨이 설정](setup-cloud-management-gateway.md)
-

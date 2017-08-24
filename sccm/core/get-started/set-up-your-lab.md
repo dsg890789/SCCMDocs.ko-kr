@@ -6,22 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b1970688-0cd2-404f-a17f-9e2aa4a78758
-caps.latest.revision: 11
-caps.handback.revision: 0
+caps.latest.revision: "11"
+caps.handback.revision: "0"
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 3bf44f850722afdb8dfe5922c8ceff11c9b56d08
-ms.openlocfilehash: 36e5307449bd843156307598ccdde717b4b59be3
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 11f5d0c3c61d675a8182e985f82e6af363b34592
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="set-up-your-system-center-configuration-manager-lab"></a>System Center Configuration Manager 랩 설정
 
@@ -399,4 +397,3 @@ IIS(인터넷 정보 서비스)는 웹에서 서비스를 호스트하는 데 �
 3.  **관리** 작업 영역에서 **Active Directory 포리스트**를 클릭합니다.  
 
 4.  사이트 속성의 **게시** 탭에서 연결된 포리스트를 선택한 다음 **확인** 을 클릭하여 구성을 저장합니다.
-

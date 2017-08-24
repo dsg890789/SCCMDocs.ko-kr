@@ -1,5 +1,4 @@
 ---
-
 title: "소프트웨어 업데이트 소개 | Microsoft 문서"
 description: "System Center Configuration Manager의 소프트웨어 업데이트에 대한 기본 사항을 알아봅니다."
 keywords: 
@@ -10,15 +9,13 @@ ms.date: 10/06/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: e9778b13-c8a3-40eb-8655-34ac8ce9cdaa
-translationtype: Human Translation
-ms.sourcegitcommit: d8cace9edd58e8fa438dbb43e54e57cd0dc55d2b
 ms.openlocfilehash: 2904b904bbaf155f016f55fbd36af80308a42d76
-
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="introduction-to-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 업데이트 소개
 
@@ -28,7 +25,7 @@ System Center Configuration Manager의 소프트웨어 업데이트는 기업의
 
 사용 환경에서 소프트웨어 업데이트를 배포할 수 있는 방법을 보여 주는 예제 시나리오는 [보안 소프트웨어 업데이트를 배포하는 예제 시나리오](../deploy-use/example-scenario-deploy-monitor-monthly-security-updates.md)를 참조하세요.  
 
-##  <a name="a-namebkmksynchronizationa-software-updates-synchronization"></a><a name="BKMK_Synchronization"></a> 소프트웨어 업데이트 동기화  
+##  <a name="BKMK_Synchronization"></a> 소프트웨어 업데이트 동기화  
  Configuration Manager의 소프트웨어 업데이트 동기화는 Microsoft 업데이트에 연결하여 소프트웨어 업데이트 메타데이터를 검색합니다. Configuration Manager 콘솔에서 수동으로 동기화를 시작하면 최상위 사이트(중앙 관리 사이트 또는 독립 실행형 기본 사이트)가 일정에 따라 Microsoft 업데이트와 동기화합니다. Configuration Manager가 최상위 사이트에서 소프트웨어 업데이트 동기화를 마치면 하위 사이트가 있는 경우 하위 사이트에서 소프트웨어 업데이트 동기화가 시작됩니다. 각 기본 사이트 또는 보조 사이트에서 동기화를 완료하면 클라이언트 컴퓨터에 소프트웨어 업데이트 지점의 위치를 제공하는 사이트 전체 정책이 만들어집니다.  
 
 > [!NOTE]  
@@ -82,7 +79,7 @@ System Center Configuration Manager의 소프트웨어 업데이트는 기업의
 
 7.  WSUS 동기화 관리자는 사이트의 소프트웨어 업데이트 지점에서 실행 중인 WSUS로 한 번에 하나의 요청을 보냅니다. 다른 소프트웨어 업데이트 지점의 WSUS 서버는 사이트의 기본 소프트웨어 업데이트 지점에서 실행 중인 WSUS의 복제본으로 구성됩니다.  
 
-##  <a name="a-namebkmksumcompliancea-software-updates-compliance-assessment"></a><a name="BKMK_SUMCompliance"></a> Software updates compliance assessment  
+##  <a name="BKMK_SUMCompliance"></a> Software updates compliance assessment  
  Configuration Manager의 클라이언트 컴퓨터에 소프트웨어 업데이트를 배포하기 전에 클라이언트 컴퓨터에서 소프트웨어 업데이트 준수 검사를 시작합니다. 각 소프트웨어 업데이트에 대해 업데이트에 관한 호환 상태가 포함된 상태 메시지가 만들어집니다. 상태 메시지는 관리 지점에 대량으로 전송된 다음 사이트 서버로 전송됩니다. 여기에서 호환 상태가 사이트 데이터베이스에 삽입됩니다. 소프트웨어 업데이트에 대한 호환 상태가 Configuration Manager 콘솔에 표시됩니다. 업데이트가 필요한 컴퓨터에 소프트웨어 업데이트를 배포하고 설치할 수 있습니다. 다음 섹션에서는 호환 상태에 대한 정보를 제공하고 소프트웨어 업데이트 호환성을 검사하는 프로세스에 대해 설명합니다.  
 
 ### <a name="software-updates-compliance-states"></a>소프트웨어 업데이트 호환 상태  
@@ -180,7 +177,7 @@ System Center Configuration Manager의 소프트웨어 업데이트는 기업의
 
      소프트웨어 업데이트가 설치되고 컴퓨터가 다시 시작되면 소프트웨어 업데이트 클라이언트 에이전트에서 로컬 메타데이터를 사용하여 검사를 시작합니다. 클라이언트는 소프트웨어 업데이트 지점에서 실행되는 WSUS에 연결하여 소프트웨어 업데이트 메타데이터를 검색하지 않습니다.  
 
-##  <a name="a-namebkmkdeploymentpackagesa-software-update-deployment-packages"></a><a name="BKMK_DeploymentPackages"></a> 소프트웨어 업데이트 배포 패키지  
+##  <a name="BKMK_DeploymentPackages"></a> 소프트웨어 업데이트 배포 패키지  
  소프트웨어 업데이트 배포 패키지는 소프트웨어 업데이트를 네트워크 공유 폴더에 다운로드하고 소프트웨어 업데이트 원본 파일을 사이트 서버 및 배포 지점(배포 내에 정의됨)의 콘텐츠 라이브러리에 복사하는 데 사용되는 이동 수단입니다. 업데이트 다운로드 마법사를 사용하면 소프트웨어 업데이트를 다운로드하여 배포 전에 배포 패키지에 추가할 수 있습니다. 이 마법사를 통해 배포 지점에 소프트웨어 업데이트를 프로비전할 수 있고 소프트웨어 업데이트를 클라이언트에 배포하기 전에 이 배포 프로세스 부분의 성공을 확인할 수 있습니다.  
 
  다운로드된 소프트웨어 업데이트를 소프트웨어 업데이트 배포 마법사를 사용하여 배포할 때 배포에는 소프트웨어 업데이트를 포함하는 배포 패키지가 자동으로 사용됩니다. 다운로드되지 않은 소프트웨어 업데이트가 배포될 때 소프트웨어 업데이트 배포 마법사에 새로운 또는 기존 배포 패키지를 지정해야 하며, 이 소프트웨어 업데이트는 마법사가 완료되면 다운로드됩니다.  
@@ -195,10 +192,10 @@ System Center Configuration Manager의 소프트웨어 업데이트는 기업의
 
  클라이언트는 배포 패키지에 상관없이 사용 가능한 소프트웨어 업데이트가 있는 배포 지점을 통해 배포 내에 있는 소프트웨어 업데이트를 설치합니다. 배포 패키지가 활성 배포에서 삭제되었더라도 각 업데이트가 하나 이상의 다른 배포 패키지에 다운로드되고 클라이언트에서 액세스할 수 있는 배포 지점에서 사용 가능한 한 클라이언트는 배포 내의 소프트웨어 업데이트를 설치할 수 있습니다. 소프트웨어 업데이트가 포함된 마지막 배포 패키지가 삭제되면 클라이언트 컴퓨터는 해당 업데이트가 배포 패키지에 다시 다운로드될 때까지 소프트웨어 업데이트를 검색할 수 없습니다. 배포 패키지에 해당 업데이트 파일이 없는 경우 소프트웨어 업데이트는 Configuration Manager 콘솔에 빨간색 화살표와 함께 표시됩니다. 이 조건에서 업데이트가 포함된 배포는 빨간색 이중 화살표와 함께 표시됩니다.  
 
-##  <a name="a-namebkmkdeploymentworkflowsa-software-update-deployment-workflows"></a><a name="BKMK_DeploymentWorkflows"></a> 소프트웨어 업데이트 배포 워크플로  
+##  <a name="BKMK_DeploymentWorkflows"></a> 소프트웨어 업데이트 배포 워크플로  
  사용자 환경에서 소프트웨어 업데이트 배포에는 두 가지 기본 시나리오, 즉 수동 배포와 자동 배포가 있습니다. 일반적으로 클라이언트 컴퓨터에 대한 기준을 설정하기 위해 소프트웨어 업데이트를 수동으로 배포하고 그 후에는 자동 배포를 사용하여 클라이언트의 소프트웨어 업데이트를 관리합니다. 다음 섹션에서는 소프트웨어 업데이트의 수동 및 자동 배포 워크플로에 대해 요약해 설명합니다.  
 
-###  <a name="a-namebkmkmanualdeploymenta-manual-deployment-of-software-updates"></a><a name="BKMK_ManualDeployment"></a> 소프트웨어 업데이트 수동 배포  
+###  <a name="BKMK_ManualDeployment"></a> 소프트웨어 업데이트 수동 배포  
  소프트웨어 업데이트 수동 배포는 Configuration Manager 콘솔에서 소프트웨어 업데이트를 선택하고 배포 프로세스를 수동으로 시작하는 프로세스입니다. 먼저 이 배포 방법을 사용하여 클라이언트 컴퓨터에 필수 소프트웨어 업데이트를 최신 버전으로 유지하는 것이 일반적인 방법입니다. 그 다음에 지속적인 월별 소프트웨어 업데이트 배포를 관리할 자동 배포 규칙을 만듭니다. 또한 수동 배포를 사용하면 대역 외 소프트웨어 업데이트 요구 사항을 배포할 수 있습니다. 다음 목록은 소프트웨어 업데이트의 수동 배포에 대한 일반적인 워크플로입니다.  
 
 1.  특정 요구 사항을 사용하는 소프트웨어 업데이트를 필터링합니다. 예를 들어 51개 이상의 클라이언트 컴퓨터에 필요한 보안 또는 중요 소프트웨어 업데이트를 모두 검색하는 기준을 제시할 수 있습니다.  
@@ -209,7 +206,7 @@ System Center Configuration Manager의 소프트웨어 업데이트는 기업의
 
 4.  소프트웨어 업데이트 그룹을 수동으로 배포합니다.  
 
-###  <a name="a-namebkmkautomaticdeploymenta-automatic-deployment-of-software-updates"></a><a name="BKMK_AutomaticDeployment"></a> 소프트웨어 업데이트 자동 배포  
+###  <a name="BKMK_AutomaticDeployment"></a> 소프트웨어 업데이트 자동 배포  
  자동 소프트웨어 업데이트 배포는 ADR(자동 배포 규칙)를 사용하여 구성합니다. 이는 월별 소프트웨어 업데이트(일반적으로 화요일 패치라고 함) 및 정의 업데이트 관리 등에 일반적으로 사용되는 배포 방법입니다. 규칙이 실행되면 소프트웨어 업데이트가 소프트웨어 업데이트 그룹에서 제거되고(기존 그룹을 사용하는 경우), 지정된 조건을 충족하는 소프트웨어 업데이트(예: 지난 주에 릴리스된 모든 보안 소프트웨어 업데이트)가 소프트웨어 업데이트 그룹에 추가되고, 소프트웨어 업데이트의 콘텐츠 파일이 배포 지점에 다운로드 및 복사되고, 대상 컬렉션의 클라이언트 장치에 소프트웨어 업데이트가 배포됩니다. 다음 목록은 소프트웨어 업데이트의 자동 배포에 대한 일반적인 워크플로입니다.  
 
 1.  다음과 같은 배포 설정을 지정하는 ADR를 만듭니다.  
@@ -254,7 +251,7 @@ System Center Configuration Manager의 소프트웨어 업데이트는 기업의
 
     -   이 배포에 대한 개별 경고  
 
-##  <a name="a-namebkmkdeploymentprocessa-software-update-deployment-process"></a><a name="BKMK_DeploymentProcess"></a> 소프트웨어 업데이트 배포 프로세스  
+##  <a name="BKMK_DeploymentProcess"></a> 소프트웨어 업데이트 배포 프로세스  
  소프트웨어 업데이트를 배포한 후 또는 자동 배포 규칙에서 소프트웨어 업데이트를 실행 및 배포하면 배포 할당 정책이 사이트에 대한 컴퓨터 정책에 추가됩니다. 소프트웨어 업데이트는 인터넷 또는 네트워크 공유 폴더 등의 다운로드 위치에서 패키지 원본에 다운로드됩니다. 소프트웨어 업데이트는 패키지 원본에서 사이트 서버의 콘텐츠 라이브러리에 복사된 다음 배포 지점의 콘텐츠 라이브러리에 복사됩니다.  
 
  배포를 위한 대상 컬렉션 내의 클라이언트 컴퓨터에서 컴퓨터 정책을 받을 때 소프트웨어 업데이트 클라이언트 에이전트는 평가 검사를 시작합니다. 클라이언트 에이전트는 배포를 받은 직후 배포 지점에서 로컬 클라이언트 캐시로 필수 소프트웨어 업데이트의 콘텐츠를 다운로드하지만 소프트웨어 업데이트 전 배포에 대한 **소프트웨어를 사용할 수 있는 시간** 설정이 설치에 사용될 수 있을 때까지 대기합니다. 선택적 배포(설치 최종 기한이 없는 배포) 내의 소프트웨어 업데이트는 사용자가 수동으로 설치를 시작하기 전까지 다운로드되지 않습니다.  
@@ -267,7 +264,7 @@ System Center Configuration Manager의 소프트웨어 업데이트는 기업의
 ### <a name="deployment-reevaluation-cycle"></a>배포 재평가 주기  
  기본적으로 클라이언트 컴퓨터는 7일마다 배포 재평가 주기를 시작합니다. 이 평가 주기에서 클라이언트 컴퓨터는 이전에 배포되고 설치된 소프트웨어 업데이트를 검사합니다. 누락된 소프트웨어 업데이트가 발견되면 해당 소프트웨어 업데이트는 로컬 캐시에서 다시 설치됩니다. 로컬 캐시에서 더 이상 사용할 수 없는 소프트웨어 업데이트는 배포 지점에서 다운로드되어 설치됩니다. 재배포 일정은 사이트에 대한 클라이언트 설정의 **소프트웨어 업데이트** 페이지에서 구성할 수 있습니다.  
 
-##  <a name="a-namebkmkembeddeddevicesa-support-for-windows-embedded-devices-that-use-write-filters"></a><a name="BKMK_EmbeddedDevices"></a> 쓰기 필터를 사용하는 Windows Embedded 장치 지원  
+##  <a name="BKMK_EmbeddedDevices"></a> 쓰기 필터를 사용하는 Windows Embedded 장치 지원  
  쓰기 필터를 사용하는 Windows Embedded 장치에 소프트웨어 업데이트를 배포할 경우 배포 중 장치에서 쓰기 필터를 사용하지 않도록 설정한 다음 배포 후 장치를 다시 시작할지 여부를 지정할 수 있습니다. 쓰기 필터가 사용하도록 설정된 경우 소프트웨어는 임시 오버레이에 배포되고 장치를 다시 시작할 때 다른 배포에서 변경 내용을 강제 적용하여 유지하지 않는 한 소프트웨어는 더 이상 설치되어 있지 않습니다.  
 
 > [!NOTE]  
@@ -277,14 +274,8 @@ System Center Configuration Manager의 소프트웨어 업데이트는 기업의
 
  Configuration Manager에서 쓰기 필터를 사용하는 포함된 장치를 관리하는 방법에 대한 자세한 내용은 [Windows Embedded 장치에 클라이언트 배포 계획](../../core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)을 참조하세요.  
 
-##  <a name="a-namebkmkextendsoftwareupdatesa-extend-software-updates-in-configuration-manager"></a><a name="BKMK_ExtendSoftwareUpdates"></a> Configuration Manager에서 소프트웨어 업데이트 확장  
+##  <a name="BKMK_ExtendSoftwareUpdates"></a> Configuration Manager에서 소프트웨어 업데이트 확장  
  System Center Updates Publisher를 사용하여 Microsoft 업데이트에서 제공하지 않는 소프트웨어 업데이트를 관리할 수 있습니다. 소프트웨어 업데이트를 업데이트 서버에 게시하고 Configuration Manager에서 소프트웨어 업데이트를 동기화한 후 Configuration Manager 클라이언트에 이 소프트웨어 업데이트를 배포할 수 있습니다. Updates Publisher에 대한 자세한 내용은 [Updates Publisher 2011](http://go.microsoft.com/fwlink/p/?LinkId=252947)을 참조하세요.  
 
 ## <a name="next-steps"></a>다음 단계
 [소프트웨어 업데이트 계획](../plan-design/plan-for-software-updates.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

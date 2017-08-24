@@ -6,8 +6,7 @@ ms.date: 07/31/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7def067e-845c-4db3-9d56-fa1dcf2fd7c7
@@ -15,12 +14,11 @@ caps.latest.revision:
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
 ms.openlocfilehash: dab99748902df0fad32a1e2adad0c05e0dd8bdc9
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/29/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="checklist-for-installing-update-1706-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 업데이트 1706을 설치하기 위한 검사 목록
 
@@ -177,4 +175,3 @@ Configuration Manager에서는 NLB(네트워크 부하 분산) 클러스터를 �
 -    Microsoft SQL Server는 SQL 메시지 515, 심각도 16을 보고했습니다. [23000][515][Microsoft][SQL Server Native Client 11.0][SQL Server]테이블 'CM_GF1.dbo.AAD_SecretChange_Notify', 열 'RowVersion'에 NULL 값을 삽입할 수 없습니다. 열에는 NULL을 사용할 수 없습니다. INSERT이(가) 실패했습니다.
 
 이 메시지는 무시해도 됩니다.  버전 1706으로 업데이트하기 전에 사용하도록 구성된 클라우드 서비스가 없는 경우 이 오류가 발생합니다. 이 문제는 향후 릴리스에서 해결될 예정입니다.
-

@@ -6,23 +6,20 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: abd45393-d84e-4583-bc80-74bbb3709577
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: 58251f6a4eebac4cba9f3d51f8d0aaad068c3ab8
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: d73daf6427b8c58d21d579f3b41df513cc3e3b0b
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="considerations-for-managing-system-center-configuration-manager-clients--in-a-virtual-desktop-infrastructure-vdi"></a>VDI(가상 데스크톱 인프라)에서 System Center Configuration Manager 클라이언트를 관리할 때의 고려 사항
 
@@ -50,4 +47,3 @@ System Center Configuration Manager는 다음과 같은 VDI(가상 데스크톱 
 >  서비스 모드인 Windows Embedded 클라이언트를 제외하고, 가상화된 환경에서 실행 중이지 않은 Configuration Manager 클라이언트에서도 이러한 임의 지연 시간을 활용합니다. 배포된 클라이언트가 여러 개인 경우 이러한 동작은 네트워크 대역폭의 최대 사용을 방지하고 관리 지점 및 사이트 서버와 같은 Configuration Manager 사이트 시스템에서 CPU 처리 요구 사항을 완화하는 데 도움이 됩니다. 지연 간격은 Configuration Manager 기능에 따라 달라집니다.  
 >   
 >  임의 지연은 **컴퓨터 에이전트**: **최종 기한 임의 설정 사용 안 함**클라이언트 설정을 통해 필수 소프트웨어 업데이트 및 필수 응용 프로그램 배포에 대해 기본적으로 사용되지 않습니다.
-

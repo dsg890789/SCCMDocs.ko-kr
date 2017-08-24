@@ -9,17 +9,15 @@ ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 7610bbd3-a67f-4a09-8115-e35d40d43b42
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8f4ec982a54cf3cefef310268a54850e70e2e63a
 ms.openlocfilehash: 6c4273dae99ec8db2cf827f463b973e876d0d35b
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="planning-for-endpoint-protection-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Endpoint Protection 계획
 
@@ -117,4 +115,3 @@ Configuration Manager의 1606 버전부터(현재 분기) Endpoint Protection은
 
 ### <a name="distributing-definition-updates-by-using-software-updates"></a>소프트웨어 업데이트를 사용 하 여 배포 정의 업데이트  
  Configuration Manager 소프트웨어 업데이트를 사용하여 정의 업데이트를 배포하는 경우 다른 소프트웨어 업데이트가 포함되지 않은 패키지에 정의 업데이트를 포함하는 것이 좋습니다. 이렇게 정의 업데이트 패키지의 크기가 작은 배포 지점에 보다 신속 하 게 복제할 수 있습니다.
-

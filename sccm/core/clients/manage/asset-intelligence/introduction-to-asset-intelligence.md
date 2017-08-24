@@ -6,23 +6,20 @@ ms.date: 2/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 0bdfdef5-390f-4099-8bde-de51d9a89175
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
-ms.openlocfilehash: 6a851ddfeee78574fbb0b1eff0c7cc518a7bb598
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 879dc3f04f361af955afbc4db180d097073e8d41
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="introduction-to-asset-intelligence-in-system-center-configuration-manager"></a>System Center Configuration Manager의 Asset Intelligence 소개
 
@@ -208,4 +205,3 @@ System Center Configuration Manager의 Asset Intelligence를 통해 Asset Intell
 >  분류 충돌이 해결된 후, 이후 분류 업데이트에서 항목에 대한 새 정보를 도입하지 않으면 항목이 충돌하는 것으로 다시 확인되지 않습니다.  
 
  유효성 검사 상태가 다른 상태로 전환될 수 있는 경우의 예를 보려면 [System Center Configuration Manager의 Asset Intelligence에 대한 유효성 검사 상태 전환 예제](../../../../core/clients/manage/asset-intelligence/example-validation-state-transitions-for-asset-intelligence.md)를 참조하세요.  
-

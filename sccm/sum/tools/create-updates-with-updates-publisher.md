@@ -6,22 +6,20 @@ ms.date: 4/29/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 46a1a8ac-126c-4ee6-ae09-32dfbdb83368
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: NOINDEX, NOFOLLOW
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c8717925dba42451b1e241a7c2f59e43896d7d99
 ms.openlocfilehash: 98e490d7f5ca17dcf2a0aaa848f14e789f214123
-ms.contentlocale: ko-kr
-ms.lasthandoff: 06/19/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create--software-updates-and-update-bundles-with-updates-publisher"></a>Updates Publisher를 사용하여 소프트웨어 업데이트 및 업데이트 번들 만들기
 
@@ -193,4 +191,3 @@ Updates Publisher를 사용하면 **Create Update**(업데이트 만들기) 마�
 7.  **구성원** 페이지에서 업데이트 번들에 추가할 업데이트를 선택합니다. Updates Publisher에서 만들거나 가져온 업데이트만 사용할 수 있습니다.
 
 마법사가 완료되면 **업데이트 작업 영역**에서 새 업데이트 번들이 해당 업데이트 번들에 사용된 **공급업체** 이름으로 식별되는 노드에 추가됩니다.
-

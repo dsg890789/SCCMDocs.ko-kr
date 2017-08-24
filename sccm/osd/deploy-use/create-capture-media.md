@@ -6,23 +6,20 @@ ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 10eb8958-3848-49d7-95c0-16119b624580
-caps.latest.revision: 11
-caps.handback.revision: 0
+caps.latest.revision: "11"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
 ms.openlocfilehash: 5acf800ff5aebd849e294393337755145a60cca5
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-capture-media-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 미디어 캡처 만들기
 
@@ -82,4 +79,3 @@ Configuration Manager의 미디어 캡처를 사용하면 참조 컴퓨터에서
         >  배포 지점의 콘텐츠 라이브러리에 대한 읽기 액세스 권한이 있어야 합니다.  
 
 7.  마법사를 완료합니다.  
-

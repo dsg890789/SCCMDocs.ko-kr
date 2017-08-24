@@ -6,24 +6,21 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: bb95154b-f63e-4491-896e-41d732c802f8
-caps.latest.revision: 34
-caps.handback.revision: 0
+caps.latest.revision: "34"
+caps.handback.revision: "0"
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
 ms.openlocfilehash: c494fcc38955571c06507278a1ae88e5777b5708
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="setup-hybrid-mobile-device-management-mdm-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하여 하이브리드 MDM(모바일 장치 관리) 설정
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -51,4 +48,3 @@ Configuration Manager 없이 Intune을 사용하고 싶으세요?
 하이브리드 설치가 완료된 후 Configuration Manager에서 다음과 같은 다양한 방법으로 장치를 등록할 수 있습니다.
 - **회사 소유(COD) 장치:** [회사 소유 장치 등록](enroll-company-owned-devices.md)에서는 회사 소유 장치를 등록하는 다양한 플랫폼별 방법에 대한 지침을 제공합니다.
 - **사용자 소유(BYOD) 장치:** [사용자 소유(BYOD) 장치 등록](enroll-hybrid-ios-mac.md)에서는 사용자 소유 장치를 등록하는 방법에 대한 지침을 제공합니다.
-

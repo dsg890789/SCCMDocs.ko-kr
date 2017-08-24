@@ -9,17 +9,14 @@ ms.date: 06/27/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: d071b0ec-e070-40a9-b7d4-564b92a5465f
-ms.translationtype: HT
-ms.sourcegitcommit: afe0ecc4230733fa76e41bf08df5ccfb221da7c8
 ms.openlocfilehash: 8b739a01a6bb5cacf0f7109e2e6fa3b31dd666d3
-ms.contentlocale: ko-kr
-ms.lasthandoff: 08/04/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="plan-for-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 업데이트 계획
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -327,4 +324,3 @@ Configuration Manager 버전 1606부터 Configuration Manager 소프트웨어 �
 
 ## <a name="next-steps"></a>다음 단계
 소프트웨어 업데이트 계획이 완료되면 [소프트웨어 업데이트 관리 준비](../get-started/prepare-for-software-updates-management.md)를 참조하세요.
-

@@ -6,8 +6,7 @@ ms.date: 06/30/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4c27b161-9eb7-4cdd-b469-d8eb27e71aea
@@ -15,12 +14,11 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 ROBOTS: NOINDEX, NOFOLLOW
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ed6b65a1a5aabc0970cd0333cb033405cf6d2aea
 ms.openlocfilehash: 0abd1cdcf44e778c91bacb8011efd711818ce2e9
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/03/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="past-hybrid-features-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하는 이전 하이브리드 기능
 
@@ -561,4 +559,3 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 - **iOS 활성화 잠금**
 
   Configuration Manager(현재 분기) 버전 1602부터, iOS 7.1 이상 장치용 나의 iPhone 찾기(Find My iPhone) 앱의 기능인 iOS 활성화 잠금을 관리할 수 있습니다. 활성화 잠금은 장치에서 나의 iPhone 찾기 앱을 사용할 때 자동으로 사용하도록 설정됩니다.  자세한 내용은 [System Center Configuration Manager에 대한 iOS 활성화 잠금 무시 관리](/sccm/mdm/deploy-use/manage-ios-activation-lock#bypass-activation-lock)를 참조하세요.  
-

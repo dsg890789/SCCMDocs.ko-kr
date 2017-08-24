@@ -6,21 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 127ce713-d085-430f-ac7b-2701637fe126
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f72317cefab5ce8cad13b3120c3c93c856fa40b7
 ms.openlocfilehash: 4b6be888be2ad6c1f5e7c0be33d9830bb870114e
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="select-discovery-methods-to-use-for-system-center-configuration-manager"></a>System Center Configuration Manager에 사용할 검색 방법 선택
 
@@ -128,4 +126,3 @@ System Center Configuration Manager에 검색을 성공적 및 효율적으로 �
 - **검색 데이터로부터 경계를 자동으로 만들려는 경우 한 사이트에서만 Active Directory 포리스트 검색 실행.**  
 
  계층 구조에 있는 둘 이상의 사이트에서 Active Directory 포리스트 검색을 실행하는 경우 한 사이트에서 자동으로 경계를 만드는 옵션만 사용하도록 설정하는 것이 좋습니다. 이는 Active Directory 포리스트 검색이 각 사이트에서 실행되어 경계를 만들므로 Configuration Manager에서 이러한 경계를 하나의 경계 개체로 병합할 수 없기 때문입니다. 여러 사이트에서 자동으로 경계를 만들도록 Active Directory 포리스트 검색을 구성하는 경우 Configuration Manager 콘솔에서 중복된 경계 개체가 표시될 수 있습니다.  
-

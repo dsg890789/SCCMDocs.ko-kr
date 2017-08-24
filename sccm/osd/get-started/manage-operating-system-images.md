@@ -6,21 +6,20 @@ ms.date: 12/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: fab13949-371c-4a4c-978e-471db1e54966
-caps.latest.revision: 17
-caps.handback.revision: 0
+caps.latest.revision: "17"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 03722ff4f480cd26842e395fe1f7ec8359e2b33e
 ms.openlocfilehash: 6953c3834ca303b949f22436010a87b3da9688dc
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-operating-system-images-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 운영 체제 이미지 관리
 
@@ -56,7 +55,7 @@ Configuration Manager의 운영 체제 이미지는 WIM(Windows Imaging) 형식 
     -   운영 체제 설치를 완료한 후 앱 설치 및 기타 구성이 수행되기 때문에 운영 체제를 설치하는 데 더 많은 시간이 걸릴 수 있습니다.  
 
 
-##  <a name="a-namebkmkaddosimagesa-add-operating-system-images-to-configuration-manager"></a><a name="BKMK_AddOSImages"></a> Configuration Manager에 운영 체제 이미지 추가  
+##  <a name="BKMK_AddOSImages"></a> Configuration Manager에 운영 체제 이미지 추가  
  운영 체제 이미지를 사용하려면 먼저 Configuration Manager 사이트에 이미지를 추가해야 합니다. 사이트에 운영 체제 이미지를 추가하려면 다음 절차를 참조하세요.  
 
 #### <a name="to-add-an-operating-system-image-to-a-site"></a>사이트에 운영 체제 이미지를 추가하려면  
@@ -81,10 +80,10 @@ Configuration Manager의 운영 체제 이미지는 WIM(Windows Imaging) 형식 
 
  이제 배포 지점에 운영 체제 이미지를 배포할 수 있습니다.  
 
-##  <a name="a-namebkmkdistributebootimagesa-distribute-operating-system-images-to-distribution-points"></a><a name="BKMK_DistributeBootImages"></a> 배포 지점에 운영 체제 이미지 배포  
+##  <a name="BKMK_DistributeBootImages"></a> 배포 지점에 운영 체제 이미지 배포  
  운영 체제 이미지는 다른 콘텐츠를 배포하는 것과 동일한 방식으로 배포 지점에 배포할 수 있습니다. 대부분의 경우 운영 체제를 배포하기 전에 하나 이상의 배포 지점에 운영 체제 이미지를 배포해야 합니다. 운영 체제 이미지를 배포하는 단계는 [Distribute content](../../core/servers/deploy/configure/deploy-and-manage-content.md#a-namebkmkdistributea-distribute-content)항목을 참조하세요.  
 
-##  <a name="a-namebkmkosimagesapplyupdatesa-apply-software-updates-to-an-operating-system-image"></a><a name="BKMK_OSImagesApplyUpdates"></a> 운영 체제 이미지에 소프트웨어 업데이트 적용  
+##  <a name="BKMK_OSImagesApplyUpdates"></a> 운영 체제 이미지에 소프트웨어 업데이트 적용  
  운영 체제 이미지의 운영 체제에 적용 가능한 새 소프트웨어 업데이트가 정기적으로 릴리스됩니다. 이미지에 소프트웨어 업데이트를 적용하려면 먼저 소프트웨어 업데이트 인프라를 구축하고 소프트웨어 업데이트를 동기화한 다음 사이트 서버의 콘텐츠 라이브러리에 소프트웨어 업데이트를 다운로드해야 합니다. 자세한 내용은 [소프트웨어 업데이트 배포](../../sum/deploy-use/deploy-software-updates.md)를 참조하세요.  
 
  지정된 일정에 적용 가능한 소프트웨어 업데이트를 이미지에 적용할 수 있습니다. Configuration Manager는 지정된 일정에 따라 선택된 소프트웨어 업데이트를 운영 체제 이미지에 적용하고 선택적으로 업데이트된 이미지를 배포 지점에 배포합니다. 가져올 때 적용된 소프트웨어 업데이트를 포함한 운영 체제 이미지에 대한 정보는 사이트 데이터베이스에 저장됩니다. 처음에 추가한 이후에 이미지에 적용된 소프트웨어 업데이트도 사이트 데이터베이스에 저장됩니다. 마법사를 시작하여 운영 체제 이미지에 소프트웨어 업데이트를 적용할 때 마법사에서 사용자가 선택할 수 있도록 이미지에 아직 적용되지 않은 적용 가능한 소프트웨어 업데이트 목록을 검색합니다. Configuration Manager는 사이트 서버의 콘텐츠 라이브러리에서 소프트웨어 업데이트를 복사하여 운영 체제 이미지에 소프트웨어 업데이트를 적용합니다.  
@@ -115,7 +114,7 @@ Configuration Manager의 운영 체제 이미지는 WIM(Windows Imaging) 형식 
 
 8.  **완료** 페이지에서 소프트웨어 업데이트가 운영 체제 이미지에 성공적으로 적용되었는지 확인합니다.  
 
-##  <a name="a-namebkmkosimagemulticasta-prepare-the-operating-system-image-for-multicast-deployments"></a><a name="BKMK_OSImageMulticast"></a> 멀티캐스트 배포를 위한 운영 체제 이미지 준비  
+##  <a name="BKMK_OSImageMulticast"></a> 멀티캐스트 배포를 위한 운영 체제 이미지 준비  
  멀티캐스트 배포를 사용하면 여러 컴퓨터에서 동시에 운영 체제 이미지를 다운로드할 수 있습니다. 배포 지점은 개별 연결을 통해 이미지 복사본을 각 클라이언트에 전송하는 대신 이미지를 클라이언트에 멀티캐스트합니다. [멀티캐스트를 사용하여 네트워크를 통해 Windows 배포](../deploy-use/use-multicast-to-deploy-windows-over-the-network.md) 운영 체제 배포 방법을 선택한 경우 멀티캐스트 사용 배포 지점에 운영 체제 이미지를 배포하기 전에 멀티캐스트를 지원하도록 운영 체제 이미지 패키지를 구성해야 합니다. 기존 운영 체제 이미지 패키지에 대한 멀티캐스트 옵션을 설정하려면 다음 절차를 따르십시오.  
 
 #### <a name="to-modify-an-operating-system-image-package-to-use-multicast"></a>멀티캐스트를 사용하도록 운영 체제 이미지 패키지를 수정하려면  
@@ -139,9 +138,3 @@ Configuration Manager의 운영 체제 이미지는 WIM(Windows Imaging) 형식 
          **멀티캐스트를 통해서만 이 패키지 전송**을 선택하는 경우 운영 체제 이미지의 배포 옵션으로 **작업 순서를 실행하기 전에 콘텐츠를 로컬에 다운로드** 도 지정해야 합니다. 운영 체제 이미지를 배포할 때 이미지의 배포 옵션을 지정하거나, 나중에 배포 속성을 편집하여 배포 옵션을 지정할 수 있습니다. 배포 옵션은 배포 개체의 **속성** 페이지의 **배포 지점** 에 있습니다.  
 
 6.  **확인**을 클릭합니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

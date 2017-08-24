@@ -4,8 +4,7 @@ description: "System Center Configuration Manager용 Technical Preview 버전 17
 ms.custom: na
 ms.date: 06/02/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,12 +13,11 @@ ms.assetid: 00684289-d21a-45f8-b1e3-c5c787d73096
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: ef42d1483053e9a6c502f4ebcae5a231aa6ba727
 ms.openlocfilehash: b977a79baec73999caa21648adcb6fcfec4a4935
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/26/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="capabilities-in-technical-preview-1705-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1705의 기능
 
@@ -301,4 +299,3 @@ OMS에 대한 연결을 구성하기 위한 필수 구성 요소는 [혀냊 분�
 7.  **요약** 화면에서 연결 설정을 확인하고 **다음**을 선택합니다. **진행률** 화면에 연결 상태가 표시되며 **완료**여야 합니다.
 
 8.  마법사가 완료된 후 Configuration Manager 콘솔에는 **Operation Management Suite**가 **클라우드 서비스 유형**으로 표시됩니다.
-

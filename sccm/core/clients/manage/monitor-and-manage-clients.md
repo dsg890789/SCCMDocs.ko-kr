@@ -6,22 +6,19 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 110b65b3-2202-466f-bb5d-e5ee282506fc
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 593fbd0587d54490246f48ae54f666bac6b7830d
-ms.openlocfilehash: dbdc74cc2f94553745eb50aeadf6d33a54064c6b
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 828f615e14b2ad40108d0c7afdc050c7d17d4038
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="monitor-and-manage-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트 모니터링 및 관리
 
@@ -38,4 +35,3 @@ System Center Configuration Manager(ConfigMgr 또는 SCCM이라고도 함)는 �
 -   [System Center Configuration Manager에서 클라이언트를 관리하는 방법](../../../core/clients/manage/manage-clients.md)  
 
 -   [System Center Configuration Manager에서 Linux 및 UNIX 서버용 클라이언트를 관리하는 방법](../../../core/clients/manage/manage-clients-for-linux-and-unix-servers.md)  
-

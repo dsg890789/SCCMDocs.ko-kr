@@ -9,15 +9,13 @@ ms.date: 10/06/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: 63c5ef72-5715-4d86-85a2-71beba469fab
-translationtype: Human Translation
-ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
 ms.openlocfilehash: 04c5ccc53263b2672096b564695a636bfb28d952
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="icons-used-for-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 업데이트에 사용되는 아이콘
 
@@ -125,4 +123,3 @@ ms.lasthandoff: 12/16/2016
  **작동 문제:**  
 
  소프트웨어 업데이트에 대한 콘텐츠가 없을 경우 클라이언트는 배포 지점에서 콘텐츠를 사용할 수 있을 때까지 소프트웨어 업데이트를 설치할 수 없습니다. **재배포** 동작을 사용하여 배포 지점에 콘텐츠를 다시 배포할 수 있습니다. 부모 사이트에서 만든 배포에 소프트웨어 업데이트에 대한 콘텐츠가 없을 경우 소프트웨어 업데이트를 자식 사이트로 복제하거나 다시 배포해야 합니다. 콘텐츠 재배포에 대한 자세한 내용은 [배포한 콘텐츠 관리](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_manage)를 참조하세요.  
-

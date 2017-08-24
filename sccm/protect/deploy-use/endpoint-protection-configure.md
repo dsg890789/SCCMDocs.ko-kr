@@ -6,24 +6,20 @@ ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: e63f2394-6eb1-4a33-bec5-8377fc62a34e
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a8218e23743dafaf8ff1166142cf2dcca1212133
 ms.openlocfilehash: 6917644d6719a1ca636713aa5aebf277927123c8
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="configure-endpoint-protection"></a>Endpoint Protection 구성
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -46,4 +42,3 @@ Endpoint Protection을 사용하여 Configuration Manager 클라이언트 컴퓨
 |**3단계:** [Endpoint Protection 클라이언트에 대한 정의 업데이트 원본 구성](endpoint-definition-updates.md)|다양한 원본을 사용하여 정의 업데이트를 다운로드하도록 Endpoint Protection을 구성할 수 있습니다. |  
 |**4단계:** [기본 맬웨어 방지 정책 구성 및 사용자 지정 맬웨어 방지 정책 만들기](endpoint-antimalware-policies.md)|Endpoint Protection 클라이언트가 설치될 때 기본 맬웨어 방지 정책이 적용됩니다. 배포한 사용자 지정 정책은 기본적으로 클라이언트를 배포한 후 60분 내에 적용됩니다. Endpoint Protection 클라이언트를 배포하기 전에 맬웨어 방지 정책을 구성했는지 확인합니다. |  
 |**5단계:** [Endpoint Protection에 대한 사용자 지정 클라이언트 설정 구성](endpoint-protection-configure-client.md)|사용자 지정 클라이언트 설정을 사용하여 계층 구조의 컴퓨터 컬렉션에 대한 Endpoint Protection 설정을 구성할 수 있습니다.<br /><br /> 참고: 계층 구조의 모든 컴퓨터에 적용하려는 경우가 아니면 기본 Endpoint Protection 클라이언트 설정을 구성하지 마세요. |  
-

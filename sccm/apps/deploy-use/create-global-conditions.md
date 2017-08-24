@@ -6,22 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2d5f871a-19dc-4bd3-a3ad-4230c7a69f1b
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 85e254f1074e02a52fea6a3cda21a37c332f249e
 ms.openlocfilehash: 8a59a1769eec4cd6d78d7686a1d8008e832dd924
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-create-global-conditions-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 글로벌 조건을 만드는 방법
 
@@ -214,4 +212,3 @@ System Center Configuration Manager에서 글로벌 조건은 비즈니스 또�
 7.  **확인**을 선택하여 식을 저장하고 **절 추가** 대화 상자를 닫습니다.  
 
 8.  글로벌 조건에 절을 추가하는 작업을 완료했으면 **확인**을 선택하여 **글로벌 조건 만들기** 대화 상자를 닫고 글로벌 조건을 저장합니다.  
-

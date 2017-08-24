@@ -6,22 +6,19 @@ ms.date: 06/13/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: abb696f3-a816-4f12-a9f1-0503a81e1976
-caps.latest.revision: 0
+caps.latest.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3619a73d3a39659de927e1711a7ec81de9918064
 ms.openlocfilehash: 6b76c97cd205bb02683a7bfa1eb378471a75551d
-ms.contentlocale: ko-kr
-ms.lasthandoff: 06/13/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="test-the-database-upgrade-when-installing-an-update"></a>업데이트를 설치할 때 데이터베이스의 테스트 업그레이드 수행
 
@@ -71,4 +68,3 @@ SQL Server의 별도 인스턴스로 복원한 사이트 데이터베이스의 �
 
 ## <a name="next-steps"></a>다음 단계
 테스트 데이터베이스 업데이트가 성공적으로 완료된 후에는 업데이트된 데이터베이스를 삭제합니다. Configuration Manager 사이트에서 사용할 수 없기 때문입니다. 그런 후 활성 사이트로 돌아가 [업데이트 설치를 시작](/sccm/core/servers/manage/install-in-console-updates)할 수 있습니다.
-

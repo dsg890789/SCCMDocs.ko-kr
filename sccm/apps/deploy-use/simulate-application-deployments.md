@@ -6,22 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 28b240a4-d358-40ce-8006-c697b1622ece
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 0ad42d07d260581099046f11255ee312046b2595
 ms.openlocfilehash: b06539ded21eac71dda7da89dae96fda7a801260
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="simulate-application-deployments-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 배포 시뮬레이트
 
@@ -56,4 +54,3 @@ ms.lasthandoff: 12/16/2016
 4.  **다음**을 클릭하여 **요약** 페이지에서 정보를 검토한 다음 마법사를 완료하여 시뮬레이트된 응용 프로그램 배포를 만듭니다.  
 
 5.  시뮬레이트된 응용 프로그램은 **모니터링** 작업 영역의 **배포** 노드에 **시뮬레이트** 용도로 나타납니다. 응용 프로그램 배포를 모니터링하는 방법에 대한 자세한 내용은 [System Center Configuration Manager 콘솔에서 응용 프로그램 모니터링](../../apps/deploy-use/monitor-applications-from-the-console.md)을 참조하세요.  
-

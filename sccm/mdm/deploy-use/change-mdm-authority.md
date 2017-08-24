@@ -7,15 +7,13 @@ manager: angrobe
 ms.date: 06/02/2017
 ms.topic: article
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.assetid: cc397ab5-125f-4f17-905b-fab980194f49
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 662901e850566756759fcfc61c58f3c0e56bc5aa
-ms.openlocfilehash: b80fec937b50dca3ab995be281c44c3145300f9f
-ms.contentlocale: ko-kr
-ms.lasthandoff: 06/03/2017
-
+ms.openlocfilehash: 74b9dbb1ed0172d99956e726fca3aec2b658ce77
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="change-your-mdm-authority"></a>MDM 기관 변경
 Configuration Manager 버전 1610 및 Microsoft Intune 버전 1705부터, Microsoft 지원에 문의하지 않고 기존의 관리 장치를 등록 취소했다가 다시 등록하지 않고도, MDM 기관을 변경할 수 있습니다.
@@ -161,7 +159,7 @@ MDM 기관 변경이 완료되면 다음 단계를 검토합니다.
 - MDM 기관 변경 전에 Intune 독립 실행형을 사용하여 iOS 장치를 관리하는 경우 이전에 Intune에서 사용했던 동일한 APNs(Apple Push Notification Service) 인증서가 갱신되고 Configuration Manager(하이브리드)에서 테넌트를 다시 설정하는 데 사용되도록 해야 합니다.    
 
     > [!IMPORTANT]  
-    > 하이브리드에 다른 APNs 인증서가 사용되면 이전에 등록된 모든 iOS 장치가 등록 취소되므로 다시 등록하는 과정을 진행해야 합니다. MDM 기관 변경 전에 Intune에서 iOS 장치를 관리하는 데 사용된 APNs 인증서를 정확히 알고 있어야 합니다. Apple Push Certificates 포털 (https://identity.apple.com) 에 나열된 동일한 인증서를 찾고, 해당 Apple ID가 원래 APNs 인증서를 만드는 데 사용된 사용자를 식별한 후 새 MDM 기관 변경의 일부로 동일한 APNs 인증서를 갱신하는 데 이 인증서를 사용할 수 있도록 합니다.  
+    > 하이브리드에 다른 APNs 인증서가 사용되면 이전에 등록된 모든 iOS 장치가 등록 취소되므로 다시 등록하는 과정을 진행해야 합니다. MDM 기관 변경 전에 Intune에서 iOS 장치를 관리하는 데 사용된 APNs 인증서를 정확히 알고 있어야 합니다. Apple Push Certificates 포털(https://identity.apple.com)에 나열된 동일한 인증서를 찾고, 해당 Apple ID가 원래 APNs 인증서를 만드는 데 사용된 사용자를 식별한 후 새 MDM 기관 변경의 일부로 동일한 APNs 인증서를 갱신하는 데 이 인증서를 사용할 수 있도록 합니다.  
 
 ### <a name="change-the-mdm-authority-to-configuration-manager"></a>MDM 기관을 Configuration Manager로 변경
 MDM 기관을 Configuration Manager(하이브리드)로 변경하는 프로세스는 다음과 같은 고급 단계를 포함합니다.  
@@ -255,4 +253,3 @@ MDM 기관 변경이 완료되면 다음 단계를 검토합니다.
     - 새로 등록된 장치가 Configuration Manager 콘솔에 표시되어야 합니다.
     - 장치의 관리 콘솔에서 원격 잠금 등의 작업을 수행합니다. 성공한 경우 장치가 새 MDM 기관에서 관리되는 것입니다.
 - 특정 장치에 문제가 있는 경우 등록을 취소했다가 다시 등록하여 가능한 한 빠른 시일 내에 장치가 새 기관에 연결되고 관리될 수 있도록 합니다.
-

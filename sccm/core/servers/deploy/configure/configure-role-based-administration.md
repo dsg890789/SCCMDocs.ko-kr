@@ -5,25 +5,21 @@ ms.date: 2/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 57413dd3-b2f8-4a5f-b27f-8464d357caff
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1defe96163f1bb70f586619ad89098c6f0e6c665
 ms.openlocfilehash: 3eea3a6e5f23808570ded4be3bd7412954518b96
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="configure-role-based-administration-for-system-center-configuration-manager"></a>System Center Configuration Manager용 역할 기반 관리 구성   
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -302,4 +298,3 @@ System Center Configuration Manager의 역할 기반 관리에서는 각 관리�
 
     > [!CAUTION]  
     >  보안 역할이 관리자에게 컬렉션 배포 권한을 부여할 경우 해당 관리자가 개체 **읽기** 권한을 갖고 있는 보안 범위에서 개체를 배포할 수 있습니다. 이 보안 범위가 다른 보안 역할에 연결된 경우에도 마찬가지입니다.  
-

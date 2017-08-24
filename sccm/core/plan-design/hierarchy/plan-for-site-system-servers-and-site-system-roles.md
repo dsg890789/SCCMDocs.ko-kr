@@ -6,22 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 0a7415ba-2c53-4433-983e-780e92aa662f
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 0ebda27c0f3848615346c2ecf1ab8b9bb9ab6f0d
 ms.openlocfilehash: 0a3704a2d3b75ed7e0a7f718b681448ab6fc078d
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/26/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="plan-for-site-system-servers-and-site-system-roles-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 사이트 시스템 서버 및 사이트 시스템 역할에 대한 계획
 
@@ -154,4 +151,3 @@ Configuration Manager 사이트마다 다른 사이트 시스템 역할을 지�
  소프트웨어 업데이트 지점에 대한 프록시 서버와 관련된 자세한 내용은 [소프트웨어 업데이트 지점 설치](../../../sum/get-started/install-a-software-update-point.md) 항목의 “프록시 서버 설정” 섹션을 참조하세요.  
 
 -   **서비스 연결 지점.** 온라인 상태(오프라인이 아님)로 설정되면 이 사이트 시스템 역할은 Microsoft Intune과 Microsoft 클라우드 서비스에 연결됩니다.  
-

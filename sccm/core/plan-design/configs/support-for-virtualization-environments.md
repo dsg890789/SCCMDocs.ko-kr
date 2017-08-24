@@ -6,21 +6,19 @@ ms.date: 1/12/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1098e8c5-9676-4c2b-841b-ec88bd04e495
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 10192da2633555ab3bae60dbb1156d1926f9a4a0
 ms.openlocfilehash: b49bd179da850cee35b2487a353bb1788df03d58
-ms.lasthandoff: 01/12/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="support-for-virtualization-environments-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 가상화 환경 지원
 
@@ -53,7 +51,7 @@ Configuration Manager는 온라인 상태가 아닌 가상 컴퓨터를 관리�
 
 가상 컴퓨터에 대한 특수 고려 사항은 없습니다. 예를 들어 Configuration Manager는 업데이트가 적용된 가상 컴퓨터의 상태를 저장하지 않고 가상 컴퓨터를 중지했다가 다시 시작하는 경우 가상 컴퓨터에 업데이트를 다시 적용해야 하는지 여부를 확인하지 않을 수 있습니다.  
 
-##  <a name="a-namebkmkazurea-microsoft-azure-virtual-machines"></a><a name="bkmk_Azure"></a> Microsoft Azure 가상 컴퓨터  
+##  <a name="bkmk_Azure"></a> Microsoft Azure 가상 컴퓨터  
  Configuration Manager에서는 실제 회사 네트워크 내의 온-프레미스에서 실행하는 경우와 마찬가지로 Azure의 가상 컴퓨터에서 실행될 수 있습니다. 다음 시나리오에서는 Configuration Manager를 Azure 가상 컴퓨터와 함께 사용할 수 있습니다.  
 
 -   **시나리오 1:** Azure 가상 컴퓨터에서 Configuration Manager를 실행하고 다른 Azure 가상 컴퓨터에 설치된 클라이언트를 관리하는 데 사용할 수 있습니다.  
@@ -68,4 +66,3 @@ Configuration Manager는 온라인 상태가 아닌 가상 컴퓨터를 관리�
 
 > [!IMPORTANT]  
 >  Azure 가상 컴퓨터에서 실행되는 Configuration Manager 사이트 및 클라이언트에는 온-프레미스 설치와 같은 라이선스 요구 사항이 적용됩니다.  
-

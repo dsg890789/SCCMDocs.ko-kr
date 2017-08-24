@@ -6,21 +6,19 @@ ms.date: 2/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: aebafaf9-b3d5-4a0f-9ee5-685758c037a1
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8728d9f2ae63282a8f58b20105e488fb1a5ef55b
 ms.openlocfilehash: 4c94e4de5bbfe621492e8682c9424a48eb38196d
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="install-and-configure-distribution-points-for-system-center-configuration-manager"></a>System Center Configuration Manager의 배포 지점 설치 및 구성
 
@@ -390,4 +388,3 @@ Configuration Manager에서 배포 지점으로 콘텐츠를 전송할 때 사�
 -   **펄스 모드**: 이 옵션은 배포 지점으로 보내는 데이터 블록 크기를 지정합니다. 또한 각 데이터 블록 전송 간의 시간 지연을 지정할 수도 있습니다. 대역폭이 매우 낮은 네트워크 연결을 통해 배포 지점으로 데이터를 전송해야 할 경우 이 옵션을 사용합니다. 예를 들어 지정된 시간의 연결 속도나 사용량과 관계없이 5초마다 1KB의 데이터를 보내야 하는 제약 조건을 설정할 수 있습니다.  
 
 -   **지정한 시간별 최대 전송 속도로 제한**: 사이트에서 배포 지점에 데이터를 보낼 때 구성한 시간 비율만 사용하도록 하려면 이 설정을 지정합니다. 이 옵션을 사용하는 경우 Configuration Manager는 사용할 수 있는 네트워크 대역폭을 확인하지 않고 데이터를 보낼 수 있는 시간을 분할합니다. 그러면 데이터가 짧은 시간 블록 동안 전송된 후 일정 시간 블록 동안 데이터가 전송되지 않습니다. 예를 들어 최대 비율이 **50%**로 설정된 경우 Configuration Manager에서 일정 기간 동안 데이터를 전송하고 그 후 같은 기간 동안 데이터를 전송하지 않습니다. 실제 데이터 크기 또는 데이터 블록 크기는 관리되지 않습니다. 대신 데이터가 전송되는 시간의 길이만 관리됩니다.  
-

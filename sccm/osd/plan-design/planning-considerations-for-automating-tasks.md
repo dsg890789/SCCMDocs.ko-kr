@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: fc497a8a-3c54-4529-8403-6f6171a21c64
-caps.latest.revision: 13
-caps.handback.revision: 0
+caps.latest.revision: "13"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: 830f715b688cc9929a179da94eba9c81de8db11a
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="planning-considerations-for-automating-tasks-in-system-center-configuration-manager"></a>System Center Configuration Manager의 작업 자동화에 대한 계획 고려 사항
 
@@ -28,7 +27,7 @@ ms.openlocfilehash: 830f715b688cc9929a179da94eba9c81de8db11a
 
 System Center Configuration Manager 환경에서 작업을 자동화하는 작업 순서를 만들 수 있습니다. 이러한 작업은 참조 컴퓨터에서 운영 체제를 캡처하는 것부터 하나 이상의 대상 컴퓨터에 운영 체제를 배포하는 것까지 다양합니다. 작업 순서의 각 단계에는 작업 순서의 작업이 정의되어 있습니다. 작업 순서가 실행될 때 각 단계의 작업은 사용자 개입이 필요 없이 로컬 시스템 컨텍스트의 명령줄 수준에서 수행됩니다. 다음 섹션을 사용하여 Configuration Manager에서 작업 자동화 계획을 세울 수 있습니다.
 
-##  <a name="a-namebkmktsstepsactionsa-task-sequence-steps-and-actions"></a><a name="BKMK_TSStepsActions"></a> 작업 순서 단계 및 작업  
+##  <a name="BKMK_TSStepsActions"></a> 작업 순서 단계 및 작업  
  단계는 작업 순서의 기본 구성 요소입니다. 단계에는 참조 컴퓨터의 운영 체제를 구성하고 캡처하는 명령이 포함되어 있거나 대상 컴퓨터에 운영 체제, 드라이버, Configuration Manager 클라이언트 및 소프트웨어를 설치하는 명령이 포함되어 있을 수 있습니다. 작업 순서 단계 명령은 각 단계의 작업을 통해 정의됩니다. 두 가지 유형의 작업이 있습니다. 명령줄 문자열을 사용하여 정의하는 작업은 사용자 지정 작업이라고 하며, Configuration Manager에서 사전 정의된 작업은 기본 제공 작업이라고 합니다. 작업 순서는 모든 조합의 사용자 지정 작업과 기본 제공 작업을 수행할 수 있습니다.  
 
  또한 작업 순서 단계에는 오류가 발생할 경우 작업 순서를 중지하거나 계속하는 것과 같은 단계의 동작 방식을 제어하는 조건이 포함될 수 있습니다. 조건은 작업 순서 변수를 단계에 포함시킴으로써 단계에 추가됩니다. 예를 들어 **SMSTSLastActionRetCode** 변수를 사용하여 이전 단계의 조건을 테스트할 수 있습니다. 변수는 단일 단계 또는 단계 그룹에 추가할 수 있습니다.  
@@ -40,7 +39,7 @@ System Center Configuration Manager 환경에서 작업을 자동화하는 작�
 
  작업 순서에 추가할 수 있는 단계에 대한 자세한 내용은 [작업 순서 단계](../understand/task-sequence-steps.md)를 참조하세요.  
 
-##  <a name="a-namebkmktsgroupsa-task-sequence-groups"></a><a name="BKMK_TSGroups"></a> 작업 순서 그룹  
+##  <a name="BKMK_TSGroups"></a> 작업 순서 그룹  
  **그룹**은 작업 순서 내의 여러 단계입니다. 작업 순서 그룹은 이름, 선택적 설명 및 작업 순서가 다음 단계를 진행하기 전에 한 단위로 평가되는 선택적 조건으로 구성됩니다. 그룹은 서로 중첩될 수 있으며, 한 그룹에 여러 단계와 하위 그룹이 포함될 수 있습니다. 그룹은 공통 조건을 갖는 여러 단계를 결합하는 데 유용합니다.  
 
 > [!IMPORTANT]  
@@ -69,7 +68,7 @@ System Center Configuration Manager 환경에서 작업을 자동화하는 작�
 
  작업 순서 그룹에 이름을 할당해야 합니다. 그룹 이름은 고유하지 않아도 됩니다. 또한 작업 순서 그룹에 대한 선택적 설명을 제공할 수 있습니다.  
 
-##  <a name="a-namebkmktsvariablesa-task-sequence-variables"></a><a name="BKMK_TSVariables"></a> 작업 순서 변수  
+##  <a name="BKMK_TSVariables"></a> 작업 순서 변수  
  작업 순서 변수는 Configuration Manager 클라이언트 컴퓨터에 대해 수행되는 컴퓨터, 운영 체제 및 사용자 상태 구성 작업의 구성 및 운영 체제 배포 설정을 제공하는 이름/값 쌍입니다. 작업 순서 변수는 작업 순서의 단계를 구성 및 사용자 지정하는 메커니즘을 제공합니다.  
 
  작업 순서를 실행할 때 대다수의 작업 순서 설정이 환경 변수로 저장되어 있습니다. 기본 제공되는 작업 순서 변수의 값을 액세스 또는 변경할 수 있으며 새 작업 순서 변수를 만들어 대상 컴퓨터에 대해 작업 순서가 실행되는 방식을 사용자 지정할 수 있습니다.  
@@ -86,7 +85,7 @@ System Center Configuration Manager 환경에서 작업을 자동화하는 작�
 
  예를 들어 **도메인 또는 작업 그룹 가입** 작업 순서 단계가 포함된 작업 순서가 있을 수 있습니다. 다양한 컬렉션에 배포할 수 있으며, 컬렉션의 멤버 자격은 도메인 멤버 자격으로 결정됩니다. 이 경우 각 컬렉션의 도메인 이름에 대한 컬렉션별 작업 순서 변수를 지정한 다음 해당 작업 순서 변수를 사용하여 작업 순서에서 적절한 도메인 이름을 제공할 수 있습니다.  
 
-###  <a name="a-namebkmktscreatevariablesa-create-task-sequence-variables"></a><a name="BKMK_TSCreateVariables"></a> 작업 순서 변수 만들기  
+###  <a name="BKMK_TSCreateVariables"></a> 작업 순서 변수 만들기  
  새 작업 순서 변수를 추가하여 작업 순서의 단계를 사용자 지정 및 제어할 수 있습니다. 예를 들어 기본 제공되는 작업 순서 단계에 대한 설정을 재정의하는 작업 변수를 만들 수 있습니다. 또한 사용자 지정 작업 순서 변수를 만들어 작업 순서에서 조건, 명령줄 또는 사용자 지정 단계와 함께 사용할 수 있습니다. 작업 순서 변수를 만들면 작업 순서 변수와 해당 값이 작업 순서 환경 내에 유지되며, 순서로 인해 대상 컴퓨터가 다시 시작되는 경우에도 계속 유지됩니다. 변수와 변수 값은 다양한 운영 체제 환경에 걸쳐 작업 순서 내에서 사용할 수 있습니다. 예를 들어 정식 Windows 운영 체제와 Windows PE 환경에서 변수를 사용할 수 있습니다.  
 
  다음 표에서는 작업 순서 변수를 만드는 방법과 추가 사용 정보를 설명합니다.  
@@ -148,7 +147,7 @@ System Center Configuration Manager 환경에서 작업을 자동화하는 작�
 
 -   만들 수 있는 작업 변수 수에는 제한이 없습니다. 그러나 변수의 수는 작업 순서 환경의 크기에 의해 제한됩니다. 작업 순서 환경의 총 크기 제한은 32MB입니다.  
 
-###  <a name="a-namebkmktsenvironmentvariablesa-access-environment-variables"></a><a name="BKMK_TSEnvironmentVariables"></a> 환경 변수에 액세스  
+###  <a name="BKMK_TSEnvironmentVariables"></a> 환경 변수에 액세스  
  이전 섹션의 방법 중 하나를 사용하여 작업 순서 변수 및 해당 값을 지정한 후 작업 순서에 환경 변수 값을 사용할 수 있습니다. 또한 기본 제공 작업 순서 변수의 기본값에 액세스하고, 기본 제공 변수의 새 값을 지정하거나, 명령줄 또는 스크립트에 사용자 지정 작업 순서 변수를 사용할 수 있습니다.  
 
  다음 표에서는 작업 순서 환경 변수에 액세스하여 수행할 수 있는 작업 순서 작업을 요약해 보여 줍니다.  
@@ -160,7 +159,7 @@ System Center Configuration Manager 환경에서 작업을 자동화하는 작�
 |단계 조건 평가|기본 제공 또는 사용자 지정 작업 순서 환경 변수를 작업 순서 단계 또는 그룹 조건의 일부로 사용할 수 있습니다. 환경 변수 값은 작업 순서 단계 또는 그룹이 실행되기 전에 평가됩니다.<br /><br /> 변수 값을 평가하는 조건을 추가하려면 다음을 수행하세요.<br /><br /> 1.  조건을 추가하려는 단계 또는 그룹을 선택합니다.<br />2.  단계 또는 그룹에 대한 **옵션** 탭의 **조건 추가** 드롭다운 목록에서 **작업 순서 변수**를 선택합니다.<br />3.  **작업 순서 변수** 대화 상자에서 변수 이름, 테스트된 조건, 변수 값을 지정합니다.|  
 |사용자 지정 스크립트에 대한 정보 제공|작업 순서 변수는 작업 순서가 실행되는 동안 Microsoft.SMS.TSEnvironment COM 개체를 사용하여 읽고 쓸 수 있습니다.<br /><br /> 다음 예제는 **_SMSTSLogPath** 작업 순서 변수를 쿼리하여 현재 로그 위치를 가져오는 Visual Basic 스크립트 파일을 보여 줍니다. 또한 스크립트는 사용자 지정 변수를 설정합니다.<br /><br /> <br /><br /> **dim osd: set env = CreateObject("Microsoft.SMS.TSEnvironment")**<br /><br /> <br /><br /> **dim logPath**<br /><br /> <br /><br /> **' You can query the environment to get an existing variable.**<br /><br /> **logPath = env("_SMSTSLogPath")**<br /><br /> <br /><br /> **' You can also set a variable in the OSD environment.**<br /><br /> **env("MyCustomVariable") = "varname"**<br /><br /> <br /><br /> 스크립트에서 작업 순서 변수를 사용하는 방법에 대한 자세한 내용은 SDK 설명서를 참조하세요.|  
 
-###  <a name="a-namebkmkcomputercollectionvariablesa-computer-and-collection-variables"></a><a name="BKMK_ComputerCollectionVariables"></a> 컴퓨터 및 컬렉션 변수  
+###  <a name="BKMK_ComputerCollectionVariables"></a> 컴퓨터 및 컬렉션 변수  
  작업 순서가 여러 컴퓨터 또는 컬렉션에서 동시에 실행되도록 구성할 수 있습니다. 고유 운영 체제 제품 키를 지정하거나 컬렉션의 모든 구성원을 지정된 도메인에 가입시키는 것과 같이 고유한 컴퓨터당 또는 컬렉션당 정보를 지정할 수 있습니다.  
 
  작업 순서 변수를 단일 컴퓨터 또는 컬렉션에 할당할 수 있습니다. 작업 순서가 대상 컴퓨터 또는 컬렉션에서 실행을 시작하면 지정된 값이 이 대상 컴퓨터 또는 컬렉션에 적용됩니다.  
@@ -172,7 +171,7 @@ System Center Configuration Manager 환경에서 작업을 자동화하는 작�
 
  컴퓨터 및 컬렉션에 대한 작업 순서 변수를 만드는 방법에 대한 자세한 내용은 [컴퓨터 및 컬렉션용 작업 순서 변수 만들기](../deploy-use/manage-task-sequences-to-automate-tasks.md#BKMK_CreateTSVariables)를 참조하세요.  
 
-###  <a name="a-namebkmktsmediavariablesa-task-sequence-media-variables"></a><a name="BKMK_TSMediaVariables"></a> 작업 순서 미디어 변수  
+###  <a name="BKMK_TSMediaVariables"></a> 작업 순서 미디어 변수  
  미디어에서 실행되는 작업 순서에 대해 작업 순서 변수를 지정할 수 있습니다. 미디어를 사용하여 운영 체제를 배포할 경우, 미디어를 만들 때 작업 순서 변수를 추가하고 해당 값을 지정합니다. 이 변수와 값은 미디어에 저장됩니다.  
 
 > [!NOTE]  
@@ -183,14 +182,14 @@ System Center Configuration Manager 환경에서 작업을 자동화하는 작�
 > [!TIP]  
 >  작업 순서는 Configuration Manager 콘솔을 실행하는 컴퓨터의 CreateTSMedia.log 로그 파일에 작업 순서 변수의 값을 비롯하여 패키지 ID 및 시작 전 명령줄을 기록합니다. 이 로그 파일을 검토하여 작업 순서 변수의 값을 확인할 수 있습니다.  
 
-##  <a name="a-namebkmktscreatea-create-a--task-sequence"></a><a name="BKMK_TSCreate"></a> 작업 순서 만들기  
+##  <a name="BKMK_TSCreate"></a> 작업 순서 만들기  
  작업 순서는 작업 순서 만들기 마법사를 사용하여 만듭니다. 이 마법사를 통해, 특정 작업을 수행하는 기본 제공 작업 순서 또는 여러 다양한 작업을 수행할 수 있는 사용자 지정 작업 순서를 만들 수 있습니다.  
 
  예를 들어 참조 컴퓨터의 운영 체제 이미지를 작성 및 캡처하고 대상 컴퓨터에 기존 운영 체제 이미지를 설치하는 작업 순서를 만들거나, 사용자 지정된 작업을 수행하는 사용자 지정 작업 순서를 만들 수 있습니다. 사용자 지정 작업 순서를 사용하여 특수한 운영 체제 배포를 수행할 수 있습니다.  
 
  작업 순서를 만드는 방법에 대한 자세한 내용은 [작업 순서 만들기](../deploy-use/manage-task-sequences-to-automate-tasks.md#BKMK_CreateTaskSequence)를 참조하세요.  
 
-##  <a name="a-namebkmktsedita-edit-a-task-sequence"></a><a name="BKMK_TSEdit"></a> 작업 순서 편집  
+##  <a name="BKMK_TSEdit"></a> 작업 순서 편집  
  작업 순서는 **작업 순서 편집기**를 사용하여 편집합니다. 이 편집기를 사용하면 작업 순서에서 다음과 같은 변경 작업을 수행할 수 있습니다.  
 
 -   작업 순서에서 단계를 추가하거나 제거합니다.  
@@ -208,7 +207,7 @@ System Center Configuration Manager 환경에서 작업을 자동화하는 작�
 
  작업 순서를 편집하는 방법에 대한 자세한 내용은 [작업 순서 편집](../deploy-use/manage-task-sequences-to-automate-tasks.md#BKMK_ModifyTaskSequence)을 참조하세요.  
 
-##  <a name="a-namebkmktsdeploya-deploy-a-task-sequence"></a><a name="BKMK_TSDeploy"></a> 작업 순서 배포  
+##  <a name="BKMK_TSDeploy"></a> 작업 순서 배포  
  작업 순서를 Configuration Manager 컬렉션에 있는 대상 컴퓨터에 배포할 수 있습니다. 여기에는 알 수 없는 컴퓨터에 운영 체제를 배포하는 데 사용되는 **모든 알 수 없는 컴퓨터** 컬렉션이 포함됩니다. 그러나 사용자 컬렉션에는 작업 순서를 배포할 수 없습니다.  
 
 > [!IMPORTANT]  
@@ -230,7 +229,7 @@ System Center Configuration Manager 환경에서 작업을 자동화하는 작�
 
  작업 순서를 배포하는 방법에 대한 자세한 내용은 [작업 순서 배포](../deploy-use/manage-task-sequences-to-automate-tasks.md#BKMK_DeployTS)를 참조하세요.  
 
-##  <a name="a-namebkmktsexportimporta-export-and-import-a-task-sequences"></a><a name="BKMK_TSExportImport"></a> 작업 순서 내보내기 및 가져오기  
+##  <a name="BKMK_TSExportImport"></a> 작업 순서 내보내기 및 가져오기  
  Configuration Manager를 사용하여 작업 순서를 내보내고 가져올 수 있습니다. 작업 순서를 내보낼 때 작업 순서에서 참조된 개체를 포함할 수 있습니다. 여기에는 운영 체제 이미지, 부팅 이미지, 클라이언트 에이전트 패키지, 드라이버 패키지, 종속성이 있는 응용 프로그램 등이 포함됩니다.  
 
 > [!NOTE]  
@@ -238,7 +237,7 @@ System Center Configuration Manager 환경에서 작업을 자동화하는 작�
 
  작업 순서를 내보내고 가져오는 방법에 대한 자세한 내용은 [작업 순서 내보내기 및 가져오기](../deploy-use/manage-task-sequences-to-automate-tasks.md#BKMK_ExportImport)를 참조하세요.  
 
-##  <a name="a-namebkmktsruna-run-a-task-sequence"></a><a name="BKMK_TSRun"></a> 작업 순서 실행  
+##  <a name="BKMK_TSRun"></a> 작업 순서 실행  
  기본적으로 작업 순서는 항상 로컬 시스템 계정으로 실행됩니다. 작업 순서 명령줄 단계는 작업 순서를 다른 계정으로 실행할 수 있는 기능을 제공합니다. 작업 순서가 실행되면 Configuration Manager 클라이언트는 작업 순서의 단계를 시작하기 전에 먼저 참조된 패키지가 있는지 확인합니다. 참조된 패키지가 유효성이 검사되지 않았거나 배포 지점에서 사용 가능하지 않은 경우 해당 작업 순서는 연결된 작업 순서 단계에 대한 오류를 반환합니다.  
 
  배포된 작업 순서에 다운로드 및 실행이 구성된 경우 모든 종속 패키지 및 응용 프로그램은 Configuration Manager 클라이언트 캐시에 다운로드됩니다. 필수 패키지 및 응용 프로그램은 배포 지점에서 가져옵니다. 그리고 Configuration Manager 클라이언트 캐시 크기가 너무 작거나 패키지 또는 응용 프로그램을 찾을 수 없는 경우 작업 순서는 실패하고 상태 메시지가 생성됩니다. 또한 **작업 순서를 실행하기 전에 콘텐츠를 로컬에 다운로드**를 선택했을 때 해당 콘텐츠가 필요한 경우에만 클라이언트가 콘텐츠를 다운로드하도록 지정할 수 있습니다. 또는 **배포 지점에서 프로그램 실행** 옵션을 사용하여 클라이언트가 파일을 먼저 캐시에 다운로드하지 않고 배포 지점에서 직접 해당 파일을 설치하도록 지정할 수 있습니다. **배포 지점에서 프로그램 실행** 옵션은 참조된 패키지에서 **패키지** 속성의 **데이터 액세스** 탭에 **배포 지점의 패키지 공유에 이 패키지의 콘텐츠 복사** 설정이 활성화된 경우에만 사용할 수 있습니다.  
@@ -255,7 +254,7 @@ System Center Configuration Manager 환경에서 작업을 자동화하는 작�
 > [!NOTE]  
 >  Configuration Manager 클라이언트가 작업 순서를 실행하기 전에 클라이언트는 모든 작업 순서를 검사하여 가능한 종속성이 있는지, 그리고 배포 지점에서 해당 종속성을 사용할 수 있는지 확인합니다. 작업 순서가 종속된 개체가 삭제되었음이 확인되면 클라이언트는 오류를 생성하고 작업 순서를 실행하지 않습니다.  
 
-###  <a name="a-namebkmkrunprograma-run-a-program-before-the-task-sequence-is-run"></a><a name="BKMK_RunProgram"></a> 작업 순서 실행 전에 문제 실행  
+###  <a name="BKMK_RunProgram"></a> 작업 순서 실행 전에 문제 실행  
  작업 순서를 실행하기 전에 실행할 프로그램을 선택할 수 있습니다. 먼저 실행할 프로그램을 지정하려면 작업 순서의 **속성** 대화 상자를 열고 **고급** 탭을 선택한 후 다음 옵션을 설정합니다.  
 
 > [!IMPORTANT]  
@@ -274,13 +273,13 @@ System Center Configuration Manager 환경에서 작업을 자동화하는 작�
 
  클라이언트에서 선택한 프로그램이 실행하는 데 실패하면 작업 순서가 실행되지 않습니다.  
 
-##  <a name="a-namebkmktsmaintenancewindowa-use-a-maintenance-window-to-specify-when-a-task-sequence-can-run"></a><a name="BKMK_TSMaintenanceWindow"></a> 유지 관리 기간을 사용하여 작업 순서 실행 가능 시기 지정  
+##  <a name="BKMK_TSMaintenanceWindow"></a> 유지 관리 기간을 사용하여 작업 순서 실행 가능 시기 지정  
  대상 컴퓨터를 포함하는 컬렉션의 유지 관리 기간을 정의하여 작업 순서가 실행될 수 있는 시간을 지정할 수 있습니다. 유지 관리 기간은 시작 날짜, 시작/종료 시간 및 되풀이 패턴으로 구성됩니다. 또한 유지 관리 기간의 일정을 설정하는 경우 유지 관리 기간이 작업 순서에만 적용되도록 지정할 수 있습니다. 자세한 내용은 [유지 관리 기간을 사용하는 방법](../../core/clients/manage/collections/use-maintenance-windows.md)을 참조하세요.  
 
 > [!IMPORTANT]  
 >  작업 순서를 실행할 유지 관리 기간을 구성하는 경우 유지 관리 기간이 종료되는 경우라도 이미 시작된 작업 순서는 계속 실행됩니다. 작업 순서는 성공적으로 완료되거나 실패합니다.  
 
-##  <a name="a-namebkmktsnetworkaccessaccounta-task-sequences-and-the-network-access-account"></a><a name="BKMK_TSNetworkAccessAccount"></a> 작업 순서와 네트워크 액세스 계정  
+##  <a name="BKMK_TSNetworkAccessAccount"></a> 작업 순서와 네트워크 액세스 계정  
  로컬 시스템 계정에서만 작업 순서를 실행할 수 있지만 다음과 같은 경우에는 네트워크 액세스 계정을 구성해야 합니다.  
 
 -   작업을 완료하기 위해 작업 순서가 배포 지점의 Configuration Manager 패키지에 액세스하려는 경우 네트워크 액세스 계정을 올바로 구성하지 않으면 작업 순서가 실패합니다. 네트워크 액세스 계정에 대한 자세한 내용은 [네트워크 액세스 계정](../../core/plan-design/hierarchy/manage-accounts-to-access-content.md#a-namebkmknaaa-network-access-account)을 참조하세요.  
@@ -290,7 +289,7 @@ System Center Configuration Manager 환경에서 작업을 자동화하는 작�
 
 -   부팅 이미지를 사용하여 운영 체제 배포를 시작하는 경우 Configuration Manager는 전체 운영 체제가 아닌 Windows PE 환경을 사용합니다. Windows PE 환경은 어떤 도메인에도 속하지 않는 자동으로 생성된 무작위 이름을 사용합니다. 네트워크 액세스 계정을 올바로 구성하지 않으면 작업 순서를 완료하는 데 필요한 Configuration Manager 패키지에 액세스할 수 있는 권한이 컴퓨터에 없을 수 있습니다.  
 
-##  <a name="a-namebkmktscreatemediaa-create-media-for-task-sequences"></a><a name="BKMK_TSCreateMedia"></a> 작업 순서 미디어 만들기  
+##  <a name="BKMK_TSCreateMedia"></a> 작업 순서 미디어 만들기  
  작업 순서와 관련 파일 및 종속성을 여러 유형의 미디어에 기록할 수 있습니다. 예를 들어 미디어 캡처, 독립 실행형 미디어, 부팅 가능한 미디어용으로 DVD/CD 세트나 USB 플래시 드라이브 같은 이동식 미디어에 기록하거나 사전 준비된 미디어용으로 WIM(Windows Imaging Format) 파일에 기록할 수 있습니다.  
 
  다음 유형의 미디어를 만들 수 있습니다.  
@@ -323,9 +322,3 @@ System Center Configuration Manager 환경에서 작업을 자동화하는 작�
  미디어를 사용하여 작업 순서를 실행하는 경우 미디어에 포함된 특정 컴퓨터 칩 아키텍처는 인식되지 않으며 해당 아키텍처가 대상 컴퓨터에 설치된 실제 아키텍처와 일치하지 않는 경우라도 작업 순서가 실행을 시도합니다. 미디어에 포함된 칩 아키텍처가 대상 컴퓨터에 설치된 칩 아키텍처와 일치하지 않는 경우 설치가 실패합니다.  
 
  미디어를 사용하여 운영 체제를 배포하는 방법에 대한 자세한 내용은 [작업 순서 미디어 만들기](../deploy-use/create-task-sequence-media.md)를 참조하세요.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

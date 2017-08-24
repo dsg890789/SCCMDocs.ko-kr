@@ -6,22 +6,19 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 54ef5fbb-521d-4ca5-a1c5-61e6f538d71e
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: c1b3b3e7fe756ce3e0c82ffc15693999d8e817d2
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 3e323ab90ec4cc274581e19065fd7d81c0c11c35
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="determine-whether-to-block-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트를 차단할지 여부 결정
 
@@ -73,4 +70,3 @@ ms.lasthandoff: 12/16/2016
 
     > [!NOTE]  
     >  또한 IIS에서 CTL(인증서 신뢰 목록)을 구성하여 IIS를 실행하는 사이트 시스템을 알 수 없는 클라이언트로부터 보호할 수 있습니다.  
-

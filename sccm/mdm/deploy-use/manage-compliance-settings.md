@@ -6,22 +6,19 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9e83007f-e81c-4b7e-b47e-b01d7b19cfbc
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 355f6ffec7a77bf03a26f0a1963c2638e67bd75b
-ms.contentlocale: ko-kr
-ms.lasthandoff: 03/06/2017
-
-
+ms.openlocfilehash: b3a63f6c55c317c9c84d4394dfdcb9f1cbbbc90b
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="managing-compliance-on-devices-managed-with-intune"></a>Intune으로 관리되는 장치에 대한 준수 관리
 
@@ -135,4 +132,3 @@ ms.lasthandoff: 03/06/2017
  -   [Intune으로 관리되는 iOS 및 Mac OS X 장치에 대한 구성 항목을 만드는 방법](create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client.md)  
 
  -   [Intune으로 관리되는 Android 및 Samsung KNOX Standard 장치에 대한 구성 항목을 만드는 방법](create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client.md)  
-

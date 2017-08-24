@@ -1,5 +1,4 @@
 ---
-
 title: "소프트웨어 업데이트에 대한 보안 및 개인 정보 | Microsoft 문서"
 description: "소프트웨어 업데이트에 대한 이러한 보안 모범 사례를 따르고 Configuration Manager에서 개인 정보를 처리하는 방식을 알아봅니다."
 keywords: 
@@ -10,15 +9,13 @@ ms.date: 10/06/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: 41d6d5d8-ba84-4efb-b105-4d1eed239824
-translationtype: Human Translation
-ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
 ms.openlocfilehash: 4b4f045138abc14b6e93b3b990c5f3a8b4f2f952
-
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 업데이트에 대한 보안 및 개인 정보
 
@@ -26,7 +23,7 @@ ms.openlocfilehash: 4b4f045138abc14b6e93b3b990c5f3a8b4f2f952
 
 이 항목에는 System Center Configuration Manager에서 소프트웨어 업데이트에 대한 보안 및 개인 정보가 포함되어 있습니다.  
 
-##  <a name="a-namebkmksecurityhardwareinventorya-security-best-practices-for-software-updates"></a><a name="BKMK_Security_HardwareInventory"></a> 소프트웨어 업데이트에 대한 보안 모범 사례  
+##  <a name="BKMK_Security_HardwareInventory"></a> 소프트웨어 업데이트에 대한 보안 모범 사례  
  클라이언트에 소프트웨어 업데이트를 배포할 경우 다음 보안 모범 사례를 따르십시오.  
 
 -   소프트웨어 업데이트 패키지에 대한 기본 권한은 변경하지 마십시오.  
@@ -62,7 +59,7 @@ ms.openlocfilehash: 4b4f045138abc14b6e93b3b990c5f3a8b4f2f952
 
      자세한 내용은 [사용자 지정 웹 사이트를 사용하도록 WSUS 구성](plan-for-software-updates.md#BKMK_CustomWebSite)을 참조하세요.  
 
-##  <a name="a-namebkmkprivacyhardwareinventorya-privacy-information-for-software-updates"></a><a name="BKMK_Privacy_HardwareInventory"></a> 소프트웨어 업데이트에 대한 개인 정보  
+##  <a name="BKMK_Privacy_HardwareInventory"></a> 소프트웨어 업데이트에 대한 개인 정보  
  소프트웨어 업데이트 작업에서는 클라이언트 컴퓨터를 검색하여 필요한 소프트웨어 업데이트를 확인한 다음 이 정보를 다시 사이트 데이터베이스에 보냅니다. 소프트웨어 업데이트 프로세스 중 Configuration Manager는 컴퓨터 및 로그온 계정을 식별하는 정보를 클라이언트와 서버 간에 전송합니다.  
 
  Configuration Manager에는 소프트웨어 배포 프로세스에 대한 상태 정보가 유지됩니다. 상태 정보는 전송 또는 저장 중에 암호화되지 않습니다. 또한 상태 정보는 Configuration Manager 데이터베이스에 저장되며 데이터베이스 유지 관리 작업에 의해 삭제됩니다. Microsoft로 전송되는 상태 정보는 없습니다.  
@@ -72,9 +69,3 @@ ms.openlocfilehash: 4b4f045138abc14b6e93b3b990c5f3a8b4f2f952
  Configuration Manager는 소프트웨어 업데이트를 기본적으로 구현하지 않으며 몇 개의 구성 단계를 거쳐야 정보를 수집할 수 있습니다.  
 
  소프트웨어 업데이트를 구성하려면 먼저 개인 정보 취급 방침 요구 사항을 검토하십시오.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

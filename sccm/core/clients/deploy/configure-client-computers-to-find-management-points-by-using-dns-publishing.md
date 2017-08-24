@@ -6,22 +6,19 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 03cec407-0f9f-454f-a360-b005af738d29
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: 9eadb91a575323b4c36af14962f370046ea513ce
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: d016ec3fe106b2d90b3c14b4f9296aed4d198644
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-configure-client-computers-to-find-management-points-by-using-dns-publishing-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 DNS 게시를 사용하여 관리 지점을 찾도록 클라이언트 컴퓨터를 구성하는 방법
 
@@ -59,4 +56,3 @@ System Center Configuration Manager의 클라이언트는 사이트 할당을 �
 2.  **사이트** 탭에서 관리 지점의 DNS 접미사를 지정한 후에 **확인**을 클릭합니다.  
 
      사이트가 관리 지점을 둘 이상 갖고 둘 이상의 도메인에 있는 경우 한 도메인만 지정합니다. 클라이언트가 이 도메인의 관리 지점에 연결하면 사용 가능한 관리 지점 목록을 다운로드하며, 여기에는 다른 도메인의 관리 지점도 포함됩니다.
-

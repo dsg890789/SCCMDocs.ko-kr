@@ -6,20 +6,19 @@ ms.date: 12/30/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 552e7e3d-e584-4a7c-9155-0f796a14b678
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: cf29123923436ed4cefc17c69630fc39989caeb4
 ms.openlocfilehash: 0034381a7a388ddc3eda5e774f3c63d741336301
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="configure-security-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 보안 구성
 
@@ -27,7 +26,7 @@ ms.openlocfilehash: 0034381a7a388ddc3eda5e774f3c63d741336301
 
 이 문서의 정보를 사용하면 System Center Configuration Manager에 대한 보안 관련 옵션을 설정할 수 있습니다.  
 
-##  <a name="a-namebkmkconfigureclientpkia-configure-settings-for-client-pki-certificates"></a><a name="BKMK_ConfigureClientPKI"></a> 클라이언트 PKI 인증서의 설정 구성  
+##  <a name="BKMK_ConfigureClientPKI"></a> 클라이언트 PKI 인증서의 설정 구성  
 IIS(인터넷 정보 서비스)를 사용하는 사이트 시스템에 대한 클라이언트 연결에 PKI(공개 키 인프라) 인증서를 사용하려는 경우 이러한 인증서에 대한 설정을 구성하려면 다음 절차를 수행하십시오.  
 
 #### <a name="to-configure-client-pki-certificate-settings"></a>클라이언트 PKI 인증서 설정을 구성하려면  
@@ -62,7 +61,7 @@ IIS(인터넷 정보 서비스)를 사용하는 사이트 시스템에 대한 �
 
 계층의 모든 기본 사이트에 대해 이 절차를 반복합니다.  
 
-##  <a name="a-namebkmkconfiguresigningencryptiona-configure-signing-and-encryption"></a><a name="BKMK_ConfigureSigningEncryption"></a> 서명 및 암호화 구성  
+##  <a name="BKMK_ConfigureSigningEncryption"></a> 서명 및 암호화 구성  
 사이트 시스템에 대해 사이트의 모든 클라이언트가 지원할 수 있는 가장 안전한 서명 및 암호화 설정을 구성하십시오. 이러한 설정은 클라이언트가 HTTP를 통해 자체 서명된 인증서를 사용하여 사이트 시스템과 통신할 수 있는 경우에 특히 중요합니다.  
 
 #### <a name="to-configure-signing-and-encryption-for-a-site"></a>사이트에 대해 서명 및 암호화를 구성하려면  
@@ -86,7 +85,7 @@ IIS(인터넷 정보 서비스)를 사용하는 사이트 시스템에 대한 �
 
 계층의 모든 기본 사이트에 대해 이 절차를 반복합니다.  
 
-##  <a name="a-namebkmkconfigurerbaa-configure-role-based-administration"></a><a name="BKMK_ConfigureRBA"></a> 역할 기반 관리 구성  
+##  <a name="BKMK_ConfigureRBA"></a> 역할 기반 관리 구성  
 역할 기반 관리는 각 관리자의 관리 범위를 정의하기 위해 보안 역할, 보안 범위, 그리고 할당된 컬렉션을 결합합니다. 관리 범위에는 관리자가 Configuration Manager 콘솔에서 볼 수 있는 개체 및 해당 개체와 관련이 있고 관리자가 수행할 권한이 있는 작업이 포함됩니다. 역할 기반 관리 구성은 계층의 각 사이트에 적용됩니다.  
 
 다음 링크는 [System Center Configuration Manager용 역할 기반 관리 구성](../../../core/servers/deploy/configure/configure-role-based-administration.md) 문서의 관련 섹션에 연결되어 있습니다.  
@@ -106,7 +105,7 @@ IIS(인터넷 정보 서비스)를 사용하는 사이트 시스템에 대한 �
 > [!IMPORTANT]  
 >  관리 범위는 다른 관리자의 역할 기반 관리를 구성할 때 할당할 수 있는 개체와 설정을 정의합니다. 역할 기반 관리를 계획하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 역할 기반 관리 기본 사항](../../../core/understand/fundamentals-of-role-based-administration.md)을 참조하세요.  
 
-##  <a name="a-namebkmkmanageaccountsa-manage-accounts-that-are-used-by-configuration-manager"></a><a name="BKMK_ManageAccounts"></a> Configuration Manager에서 사용되는 계정 관리  
+##  <a name="BKMK_ManageAccounts"></a> Configuration Manager에서 사용되는 계정 관리  
 Configuration Manager에서는 여러 가지 작업과 용도를 위해 Windows 계정을 지원합니다.  
 
 여러 가지 작업을 위해 구성된 계정을 보고 Configuration Manager에서 각 계정에 사용하는 암호를 관리하려면 다음 절차를 수행합니다.  
@@ -127,9 +126,3 @@ Configuration Manager에서는 여러 가지 작업과 용도를 위해 Windows 
     >  지정하는 암호는 Active Directory 사용자 및 컴퓨터의 계정에 지정된 암호와 일치해야 합니다.  
 
 6.  **확인**을 선택하여 절차를 완료합니다.  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
-

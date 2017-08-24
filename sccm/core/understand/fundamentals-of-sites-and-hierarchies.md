@@ -6,20 +6,19 @@ ms.date: 12/30/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4db1e15f-e832-4cf9-be33-d3971e635a55
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 68527c0e82861106b7ec28b34bffa8fd74b2dd4a
 ms.openlocfilehash: f13f38be2a19ab8a1ead246e5272515dd0570984
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="fundamentals-of-sites-and-hierarchies-for-system-center-configuration-manager"></a>System Center Configuration Manager의 사이트 및 계층 구조에 대한 기본 사항
 
@@ -72,9 +71,3 @@ System Center Configuration Manager 배포는 Active Directory 도메인에 설�
  *Active Directory 스키마 확장*은 각 포리스트에 한 번만 수행되며, Configuration Manager를 설치하기 전이나 설치한 후에 수행할 수 있습니다.   스키마를 확장할 경우 각 도메인에서 시스템 관리라는 Active Directory 컨테이너를 만들어야 합니다. 컨테이너는 클라이언트에서 찾을 수 있도록 데이터를 게시할 Configuration Manager 사이트를 포함합니다. 자세한 내용은 [사이트 게시를 위해 Active Directory 준비](../../core/plan-design/network/extend-the-active-directory-schema.md)를 참조하세요.  
 
  *사이트 데이터를 게시*하면 Configuration Manager 계층 구조의 보안은 향상되고 관리 오버헤드는 감소하지만 기본 Configuration Manager 기능에는 이 작업이 필요하지 않습니다.  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
-

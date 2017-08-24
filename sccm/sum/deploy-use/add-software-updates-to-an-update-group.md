@@ -9,17 +9,14 @@ ms.date: 01/23/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: a0767664-fd60-46a8-9da5-86cc431ce53c
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 4e44e2b8f6baf020c3b7742bafd607082ffacaa4
 ms.openlocfilehash: 02e30ba48f3564fa8a31f21793c145054e02e002
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="add-software-updates-to-an-update-group"></a>업데이트 그룹에 소프트웨어 업데이트 추가  
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -60,4 +57,3 @@ ms.lasthandoff: 05/17/2017
 6.  **소프트웨어 업데이트 그룹** 노드를 클릭하여 소프트웨어 업데이트 그룹을 표시합니다.  
 
 7.  소프트웨어 업데이트 그룹을 선택하고 **홈** 탭의 **업데이트** 그룹에서 **구성원 표시** 를 클릭하여 소프트웨어 업데이트 그룹에 포함된 소프트웨어 업데이트의 목록을 표시합니다.  
-

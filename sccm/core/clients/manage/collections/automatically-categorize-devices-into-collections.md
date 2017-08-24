@@ -6,21 +6,19 @@ ms.date: 04/23/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 98b038b4-1a13-4228-bdb8-a12194e32b0e
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 05c27c7aa36e0b4236867766dab36125c31467b3
-ms.openlocfilehash: b1bac05e9335dd757b8f499f97daea24e0f4acbd
-ms.contentlocale: ko-kr
-ms.lasthandoff: 01/03/2017
-
+ms.openlocfilehash: d1b79fb091a6ae4b967d63843ae7b45a0cbeb555
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="automatically-categorize-devices-into-collections-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 컬렉션으로 장치 자동 분류
 
@@ -57,4 +55,3 @@ Microsoft Intune에서 Configuration Manager를 사용하는 경우 장치 컬�
 **장치 범주** 열이 표시되지 않는 경우 **장치** 목록(예: **이름**)에서 하나의 열 제목을 마우스 오른쪽 단추로 클릭한 다음 **장치 범주**를 선택합니다.
 
 장치를 범주에 할당하고 이후에 범주를 삭제하는 경우 **Microsoft Intune에 사용자별로 등록된 장치 목록** 보고서에서 **장치 범주** 열에 범주 이름 대신 GUID가 표시됩니다.
-

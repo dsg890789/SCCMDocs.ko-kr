@@ -6,22 +6,19 @@ ms.date: 12/23/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 08f711ba-83bf-4b5f-9520-a0778c6ae7eb
-caps.latest.revision: 18
+caps.latest.revision: "18"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f4c46bfab9b40b29654f4e883817a5508ab25b74
 ms.openlocfilehash: 959a36413d06bb225f260bd44c1d3d59efd44e69
-ms.contentlocale: ko-kr
-ms.lasthandoff: 06/28/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="introduction-to-application-management-in-system-center-configuration-manager"></a>System Center Configuration Manager의 응용 프로그램 관리 소개
 
@@ -110,4 +107,3 @@ ms.lasthandoff: 06/28/2017
 -   되풀이 일정에서 실행되고 전역 평가를 사용할 수 없는 스크립트
 
  자세한 내용은 [패키지 및 프로그램](../../apps/deploy-use/packages-and-programs.md)을 참조하세요.  
-

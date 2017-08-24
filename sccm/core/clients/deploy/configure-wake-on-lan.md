@@ -6,21 +6,19 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b475a0c8-85d6-4cc4-b11f-32c0cc98239e
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: 09f8bc7ee04ff64934030f825a791bc043341963
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
-
+ms.openlocfilehash: 9c920651ba1dc6e0a28df458d28956126ddbaff0
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-configure-wake-on-lan-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Wake on LAN을 구성하는 방법
 
@@ -59,4 +57,3 @@ ms.lasthandoff: 12/16/2016
 
 > [!TIP]
 > 절전 모드 해제 프록시가 작동하는지 테스트하려면 절전 모드의 컴퓨터에 테스트 연결합니다. 예를 들어 해당 컴퓨터의 공유 폴더에 연결하거나 원격 데스크톱을 사용하여 컴퓨터에 연결해 봅니다. DirectAccess를 사용하는 경우 현재 인터넷상에 있는 절전 모드의 컴퓨터에 대해 동일한 테스트를 수행하여 IPv6 접두사가 작동하는지 확인합니다.
-

@@ -6,8 +6,7 @@ ms.date: 04/25/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9083c571-f4fc-4a78-adc5-8aec84dabcbd
@@ -15,13 +14,11 @@ caps.latest.revision:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c6a6137fa978e1ea28aefea2aea4e29ba661efd6
 ms.openlocfilehash: 21841d97387f07f53993d957641f9ad892d723c2
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-access-to-company-resource-based-on-device-network-and-application-risk"></a>장치, 네트워크 및 응용 프로그램 위험에 따라 회사 리소스에 대한 액세스 관리
 
@@ -90,9 +87,8 @@ Lookout에서 지원하는 플랫폼 및 언어에 대한 자세한 내용은 �
 
 ## <a name="next-steps"></a>다음 단계
 이 솔루션을 구현하기 위해 수행해야 하는 주요 단계는 다음과 같습니다.
-1.    [Lookout 모바일 위협 방지를 사용하여 구독 설정](set-up-your-subscription-with-lookout.md)
-2.    [Intune에서 Lookout MTP 연결 사용](enable-lookout-connection-in-intune.md)
+1.  [Lookout 모바일 위협 방지를 사용하여 구독 설정](set-up-your-subscription-with-lookout.md)
+2.  [Intune에서 Lookout MTP 연결 사용](enable-lookout-connection-in-intune.md)
 3.  [Lookout for Work 응용 프로그램 구성 및 배포](configure-and-deploy-lookout-for-work-apps.md)
-4.    [준수 정책 구성](enable-device-threat-protection-rule-compliance-policy.md)
-5.    [Lookout 통합 문제 해결](troubleshoot-lookout-integration.md)
-
+4.  [준수 정책 구성](enable-device-threat-protection-rule-compliance-policy.md)
+5.  [Lookout 통합 문제 해결](troubleshoot-lookout-integration.md)

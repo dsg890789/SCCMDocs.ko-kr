@@ -6,22 +6,19 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e2745bac-e1b4-4dac-8ac7-32f1c820bc9c
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a25c6b409ea6501ead762fabb8cc11c62c84885d
-ms.openlocfilehash: cf98bbb9dee6142e8b085dbffcadb3ed712adcb9
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 88bef04a52f716ae13afc21c25d33dea06a3fc9c
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-ios-activation-lock-with-system-center-configuration-manager"></a>System Center Configuration Manager로 iOS 활성화 잠금 관리
 
@@ -106,4 +103,3 @@ Configuration Manager 준수 설정을 사용해 **iOS 및 Mac OS X** 형식의 
     - 장치 속성 대화 상자의 장치에 대한 검색 데이터
     - **장치** 보기의 **활성화 잠금 무시 상태** 열(이 열은 기본적으로 숨겨져 있음)
     - 세부 정보 창의 **요약** 탭에 있는 **원격 장치 작업 정보** 섹션(장치를 선택한 경우)
-

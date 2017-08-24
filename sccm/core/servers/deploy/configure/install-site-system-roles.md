@@ -6,21 +6,19 @@ ms.date: 2/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 61f5c774-7667-44ae-b8e4-a4951318b183
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8370e3b102afed518e8154d4944ab420188faccf
 ms.openlocfilehash: 76b070f8e203cc0c751f35e5a4b4904504786c04
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="install-site-system-roles-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 사이트 시스템 역할 설치
 
@@ -83,4 +81,3 @@ System Center Configuration Manager 콘솔에는 사이트 시스템 역할을 �
 
 > [!TIP]  
 >  Windows PowerShell cmdlet인 New-CMSiteSystemServer는 이 절차와 동일한 기능을 수행합니다. 자세한 내용은 System Center 2012 Configuration Manager SP1 Cmdlet 참조 문서에서 [New-CMSiteSystemServer](http://go.microsoft.com/fwlink/p/?LinkID=271414)를 참조하세요.  
-

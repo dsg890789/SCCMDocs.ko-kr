@@ -1,5 +1,4 @@
 ---
-
 title: "소프트웨어 업데이트 수동 배포 | Microsoft 문서"
 description: "업데이트를 수동으로 배포하려면 Configuration Manager 콘솔에서 업데이트를 선택하고 수동으로 배포하거나, 업데이트 그룹에 업데이트를 추가하고 그룹을 배포합니다."
 keywords: 
@@ -10,18 +9,14 @@ ms.date: 12/07/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: 57184274-5fea-4d79-a2b4-22e08ed26daf
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c6ee0ed635ab81b5e454e3cd85637ff3e20dbb34
 ms.openlocfilehash: 2a0d5f12b99689749833c109d4fa399f99451d8a
-ms.contentlocale: ko-kr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 #  <a name="BKMK_ManualDeploy"></a> 소프트웨어 업데이트 수동 배포  
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -317,4 +312,3 @@ ms.lasthandoff: 06/08/2017
 
 ## <a name="next-steps"></a>다음 단계
 [소프트웨어 업데이트 모니터링](monitor-software-updates.md)
-

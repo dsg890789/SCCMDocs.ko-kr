@@ -6,22 +6,19 @@ ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3cd9c725-6b42-427d-9191-86e67f84e48c
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c6ee0ed635ab81b5e454e3cd85637ff3e20dbb34
 ms.openlocfilehash: 8caf3319d93b98680ed4a719a8db714c7e4e96ce
-ms.contentlocale: ko-kr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="use-a-cloud-based-distribution-point-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라우드 기반 배포 지점 사용
 
@@ -214,4 +211,3 @@ ms.lasthandoff: 06/08/2017
 -   **클라우드 기반 배포 지점 제거**: 클라우드 기반 배포 지점을 제거하려면 Configuration Manager 콘솔에서 배포 지점을 선택하고 **삭제**를 선택합니다.  
 
     계층 구조에서 클라우드 기반 배포 지점을 삭제하는 경우 Configuration Manager가 Azure의 클라우드 서비스에서 콘텐츠를 제거합니다.  
-

@@ -6,8 +6,7 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 99a5b715-f172-46e1-ac27-ad55bde66d0d
@@ -15,13 +14,11 @@ caps.latest.revision:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: b6e7fe0416870ebb6258f89808affe77997c879d
-ms.contentlocale: ko-kr
-ms.lasthandoff: 03/06/2017
-
-
+ms.openlocfilehash: faa92e150686e615164ce3f5435b77a65305aab3
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="enable-device-threat-protection-rule-in-the-compliance-policy"></a>준수 정책에서 장치 위협 방지 규칙 사용
 
@@ -55,4 +52,3 @@ Office 365 및 기타 서비스용으로 조건부 액세스 정책을 만드는
 장치 위협 방지 상태는 **모니터링** 작업 영역의 **보안** 노드에 표시됩니다.
 다양한 위협 수준 상태의 요약 정보가 시각적 차트에 표시됩니다. 차트의 개별 섹션을 클릭하면 플랫폼에서 비규격으로 보고하는 장치의 수와 보고된 오류 등의 추가 정보를 확인할 수 있습니다.
 **자산 및 호환성** 작업 영역의 **장치**에서 개별 장치 상태를 확인할 수도 있습니다.  **장치 위협 준수** 및 **장치 위협 수준** 열을 추가하면 상태를 확인할 수 있습니다.  이러한 열은 기본적으로 표시되지 않습니다.
-

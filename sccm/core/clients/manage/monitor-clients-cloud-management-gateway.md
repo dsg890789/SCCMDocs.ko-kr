@@ -3,20 +3,17 @@ title: "클라우드 관리 게이트웨이 모니터링 - Configuration Manager
 description: 
 ms.date: 04/23/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.assetid: 15f72f80-9850-40ce-9c3a-443ba04b6a03
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 199096db7a23fb14db98b95e75246ed254848ab7
-ms.openlocfilehash: df32a7d95799d8ae685fd66e2d9ddf25e32b37d0
-ms.contentlocale: ko-kr
-ms.lasthandoff: 03/27/2017
-
+ms.openlocfilehash: daa0790995dc13ec2c78ae2d98a9eb38c0bcf8ae
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="monitor-cloud-management-gateway-in-configuration-manager"></a>Configuration Manager에서 클라우드 관리 게이트웨이 모니터링
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -52,4 +49,3 @@ Configuration Manager 콘솔을 사용하여 클라우드 관리 게이트웨이
 ## <a name="monitor-logs"></a>로그 모니터링
 
 클라우드 관리 게이트웨이 서비스는 많은 로그 파일에 항목을 생성합니다. 자세한 내용은 [Configuration Manager 로그](/sccm/core/plan-design/hierarchy/log-files)를 참조하세요.
-

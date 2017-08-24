@@ -1,6 +1,6 @@
 ---
-title: Instalator poprawek | Dokumentacja firmy Microsoft
-description: "Dowiedz się, kiedy i jak instalować aktualizacje za pomocą instalatora poprawek dla programu Configuration Manager."
+title: "핫픽스 설치 관리자 | Microsoft 문서"
+description: "Configuration Manager용 핫픽스 설치 관리자를 통해 업데이트를 설치하는 시기 및 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
 ms.prod: configuration-manager
@@ -16,252 +16,252 @@ ms.author: brenduns
 manager: angrobe
 ms.openlocfilehash: 8ffc7383e895909e6e6c4b8a7875fd5f0df2220e
 ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
-ms.translationtype: MT
-ms.contentlocale: pl-PL
+ms.translationtype: HT
+ms.contentlocale: ko-KR
 ms.lasthandoff: 08/07/2017
 ---
-# <a name="use-the-hotfix-installer-to-install-updates-for-system-center-configuration-manager"></a>Instalowanie aktualizacji programu System Center Configuration Manager przy użyciu instalatora poprawek
+# <a name="use-the-hotfix-installer-to-install-updates-for-system-center-configuration-manager"></a>핫픽스 설치 관리자를 사용하여 System Center Configuration Manager의 업데이트 설치
 
-*Dotyczy: Program System Center Configuration Manager (Current Branch)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
-Niektóre aktualizacje programu System Center Configuration Manager nie są dostępne z usługi w chmurze firmy Microsoft i są pobierane tylko poza pasmem. Przykładem jest ograniczona wersja poprawki rozwiązującej określony problem.   
-Kiedy należy zainstalować aktualizacja (lub poprawkę) otrzymaną od firmy Microsoft, a aktualizacja ma nazwę pliku, która kończy się rozszerzeniem **.exe** (nie **update.exe**), użyj instalatora poprawek, który jest dołączony pobranymi plikami tej poprawki do zainstalowania aktualizacji bezpośrednio na serwerze lokacji programu Configuration Manager.  
+System Center Configuration Manager의 일부 업데이트는 Microsoft 클라우드 서비스에서 사용할 수 없으며, 대역 외에서만 가져옵니다. 특정 문제를 해결하는 제한된 릴리스 핫픽스를 예로 들 수 있습니다.   
+Microsoft에서 받은 업데이트(핫픽스)를 설치해야 하며 해당 업데이트의 파일 이름이 **.exe** 확장명(**update.exe** 제외)으로 끝나는 경우 해당 핫픽스 다운로드에 포함된 핫픽스 설치 관리자를 사용하여 Configuration Manager 사이트 서버에 직접 업데이트를 설치합니다.  
 
- Jeśli plik poprawki ma **. update.exe** rozszerzenie pliku, zobacz [używanie narzędzia rejestracji aktualizacji do importowania poprawek do programu System Center Configuration Manager](../../../core/servers/manage/use-the-update-registration-tool-to-import-hotfixes.md).  
-
-> [!NOTE]  
->  W tym temacie przedstawiono ogólne wskazówki dotyczące sposobu instalacji poprawek, które aktualizują program System Center Configuration Manager. Ze szczegółami dotyczącymi konkretnej aktualizacji można zapoznać się w odpowiadającym jej artykule Bazy wiedzy na stronach pomocy technicznej firmy Microsoft.  
-
-##  <a name="bkmk_Overview"></a>Omówienie poprawek programu Configuration Manager  
- Poprawki dla programu Configuration Manager są podobne jak w przypadku innych produktów firmy Microsoft, takich jak SQL Server, zawierają jedną poprawkę lub pakiet (zbiór) poprawek i są opisane w artykule bazy wiedzy Microsoft Knowledge Base.  
-
- Pojedyncze aktualizacje obejmują jedną konkretną aktualizację dla określonej wersji programu Configuration Manager.  
-Pakiety aktualizacji zawierają wiele aktualizacji dla określonej wersji programu Configuration Manager.  
-Gdy aktualizacja ma postać pakietu, nie można wybrać tylko niektórych aktualizacji z pakietu do zainstalowania.  
-
- Jeśli planowane jest tworzenie wdrożeń w celu instalowania aktualizacji na dodatkowych komputerach, należy zainstalować pakiet aktualizacji na serwerze centralnej lokacji administracyjnej lub serwerze lokacji głównej.  
-
- Uruchomienie pakietu aktualizacji powoduje wykonanie następujących czynności:  
-
--   Wyodrębnienie plików aktualizacji dla każdego odpowiedniego składnika z pakietu aktualizacji.  
-
--   Uruchomienie kreatora, który przeprowadzi Cię przez proces konfigurowania aktualizacji i opcji ich wdrażania.  
-
--   Po ukończeniu działania kreatora aktualizacje z pakietu, które znajdują zastosowanie do serwera lokacji, są instalowane na serwerze lokacji.  
-
-Kreator tworzy także wdrożenia, których można użyć do zainstalowania aktualizacji na dodatkowych komputerach. Aktualizacje wdraża się na dodatkowych komputerach za pomocą obsługiwanej metody wdrażania, takiej jak pakiet wdrażania oprogramowania lub program Microsoft System Center Updates Publisher 2011.  
-
- Kreator podczas uruchamiania tworzy na serwerze lokacji plik **cab** na użytek programu Updates Publisher 2011. Opcjonalnie można skonfigurować kreatora do tworzenia także jednego lub więcej pakietów na użytek wdrażania oprogramowania. Te wdrożenia służy do instalowania aktualizacji na składnikach, takich jak klienci lub konsola programu Configuration Manager. Użytkownik może też instalować aktualizacje ręcznie na komputerach, na których jest uruchomiony klient programu Configuration Manager.  
-
- Można aktualizować następujące trzy grupy w programie Configuration Manager:  
-
--   Role serwera programu Configuration Manager, które obejmują:  
-
-    -   Centralna lokacja administracyjna  
-
-    -   Lokacja główna  
-
-    -   Lokacja dodatkowa  
-
-    -   Zdalny dostawca programu SMS  
-
--   Konsola programu Configuration Manager  
-
--   Klient programu Configuration Manager  
+ 핫픽스 파일에 **.update.exe** 파일 확장명이 있는 경우 [업데이트 등록 도구를 사용하여 System Center Configuration Manager에 핫픽스 가져오기](../../../core/servers/manage/use-the-update-registration-tool-to-import-hotfixes.md)를 참조하세요.  
 
 > [!NOTE]  
->  **Aktualizacje ról systemu lokacji** (w tym aktualizacje bazy danych lokacji i punkty dystrybucji w chmurze) są instalowane w ramach aktualizacji serwerów lokacji i usług przez Menedżera składników lokacji.  
+>  이 항목에서는 System Center Configuration Manager를 업데이트하는 핫픽스를 설치하는 방법에 대한 일반적인 지침을 제공합니다. 특정 업데이트에 대한 자세한 내용은 Microsoft 지원에서 해당 KB(기술 자료)를 참조하세요.  
+
+##  <a name="bkmk_Overview"></a> Configuration Manager의 핫픽스 개요  
+ Configuration Manager의 핫픽스는 SQL Server와 같은 다른 Microsoft 제품과 비슷하고 하나의 개별 수정이나 번들(수정 사항의 롤업)을 포함하며 Microsoft 기술 자료 문서에서 설명되어 있습니다.  
+
+ 개별 업데이트에는 특정 버전의 Configuration Manager에 대한 단일 집중 업데이트가 포함됩니다.  
+업데이트 번들에는 특정 버전의 Configuration Manager에 대한 여러 업데이트가 포함됩니다.  
+업데이트가 번들인 경우 해당 번들에서 개별 업데이트를 설치할 수 없습니다.  
+
+ 배포를 만들어 추가 컴퓨터에 업데이트를 설치하려는 경우 중앙 관리 사이트 서버 또는 기본 사이트 서버에 업데이트 번들을 설치해야 합니다.  
+
+ 업데이트 번들을 실행하면 다음과 같은 작업이 수행됩니다.  
+
+-   업데이트 번들에서 적용 가능한 각 구성 요소의 업데이트 파일을 추출합니다.  
+
+-   업데이트 및 업데이트 배포 옵션을 구성하는 프로세스를 안내하는 마법사를 시작합니다.  
+
+-   마법사를 완료하면 사이트 서버에 적용되는 번들의 업데이트가 사이트 서버에 설치됩니다.  
+
+마법사는 업데이트를 추가 컴퓨터에 설치하는 데 사용할 수 있는 배포를 만들기도 합니다. 소프트웨어 배포 패키지 또는 Microsoft System Center Updates Publisher 2011 등의 지원되는 배포 방법을 사용하여 추가 컴퓨터에 업데이트를 배포합니다.  
+
+ 마법사를 실행하면 Updates Publisher 2011에서 사용하기 위한 **.cab** 파일이 사이트 서버에 생성됩니다. 필요한 경우에는 소프트웨어 배포용 패키지도 하나 이상 만들도록 마법사를 구성할 수 있습니다. 이러한 배포를 사용하여 클라이언트 또는 Configuration Manager 콘솔과 같은 구성 요소에 업데이트를 설치할 수 있습니다. 또한 Configuration Manager 클라이언트를 실행하지 않는 컴퓨터에 업데이트를 수동으로 설치할 수 있습니다.  
+
+ Configuration Manager의 다음 세 그룹을 업데이트할 수 있습니다.  
+
+-   다음을 포함하는 Configuration Manager 서버 역할:  
+
+    -   중앙 관리 사이트  
+
+    -   기본 사이트  
+
+    -   보조 사이트  
+
+    -   원격 SMS 공급자  
+
+-   Configuration Manager 콘솔  
+
+-   Configuration Manager 클라이언트  
+
+> [!NOTE]  
+>  **사이트 시스템 역할에 대한 업데이트**(사이트 데이터베이스 및 클라우드 기반 배포 지점에 대한 업데이트 포함)는 사이트 구성 요소 관리자가 사이트 서버 및 서비스용 업데이트의 일부로 설치됩니다.  
 >   
->  Niemniej jednak aktualizacje ściągających punktów dystrybucji są obsługiwane przez Menedżera dystrybucji, a Menedżer składników lokacji.  
+>  그러나 업데이트 끌어오기 배포 지점은 사이트 구성 요소 관리자가 아닌 배포 관리자에서 서비스됩니다.  
 
- Każdy pakiet aktualizacji programu Configuration Manager jest plik samowyodrębniający .exe (SFX), który zawiera pliki, które są niezbędne do zainstalowania aktualizacji na stosownych składnikach programu Configuration Manager. Najczęściej samowyodrębniający się plik exe może zawierać następujące pliki:  
+ Configuration Manager의 각 업데이트 번들은 해당 Configuration Manager 구성 요소에 업데이트를 설치하는 데 필요한 파일이 포함된 자동 압축 풀기 .exe 파일(SFX)입니다. 일반적으로 SFX 파일에는 다음 파일이 포함될 수 있습니다.  
 
-|Plik|Szczegóły|  
+|파일|세부 정보|  
 |----------|-------------|  
-|&lt;Wersja produktu\>- QFE-KB&lt;identyfikator artykułu bazy wiedzy\>-&lt;platformy\>-&lt;języka\>.exe|To jest plik aktualizacji. Wierszem polecenia dla tego pliku zarządza program Updatesetup.exe.<br /><br /> Na przykład:<br />CM1511RTM-QFE-KB123456-X 64-ENU.exe|  
-|Updatesetup.exe|Ten plik .msi otoki zarządza instalacją pakietu aktualizacji.<br /><br /> Po uruchomieniu aktualizacji program Updatesetup.exe wykrywa język wyświetlania komputera, na którym został uruchomiony. Domyślnie interfejs użytkownika aktualizacji wyświetla się w języku angielskim. Jeśli jednak język wyświetlania jest obsługiwany, interfejs użytkownika wyświetla się w lokalnym języku komputera.|  
-|License_&lt;język\>.rtf|W stosownej sytuacji każda aktualizacja zawiera jeden lub więcej plików licencji dla obsługiwanych języków.|  
-|&lt;Produkt i typ aktualizacji >-&lt;wersji produktu\>-&lt;identyfikator artykułu bazy wiedzy\>-&lt;platformy\>.msp|Gdy aktualizacja dotyczy konsol programu Configuration Manager lub klientów, pakiet aktualizacji zawiera osobne pliki poprawek (msp) Instalatora Windows.<br /><br /> Na przykład:<br /><br /> **Aktualizacja konsoli programu Configuration Manager:** ConfigMgr1511-AdminUI-KB1234567-i386.msp<br /><br /> **Aktualizacja klienta:** ConfigMgr1511-klienta KB1234567-i386.msp<br />ConfigMgr1511-klienta KB1234567-x64.msp|  
+|&lt;제품 버전\>-QFE-KB&lt;기술 자료 문서 ID\>-&lt;플랫폼\>-&lt;언어\>.exe|업데이트 파일입니다. 이 파일의 명령줄은 Updatesetup.exe로 관리됩니다.<br /><br /> 예를 들면 다음과 같습니다.<br />CM1511RTM-QFE-KB123456-X64-ENU.exe|  
+|Updatesetup.exe|이 .msi wrapper는 업데이트 번들의 설치를 관리합니다.<br /><br /> 업데이트를 설치할 때 Updatesetup.exe가 실행되는 컴퓨터의 표시 언어를 감지합니다. 기본적으로 업데이트의 사용자 인터페이스는 영어로 되어 있습니다. 그러나 표시 언어가 지원되는 경우 사용자 인터페이스에 컴퓨터의 로컬 언어가 표시됩니다.|  
+|License_&lt;언어\>.rtf|해당되는 경우 각 업데이트에는 지원되는 언어에 대한 하나 이상의 라이센스 파일이 들어 있습니다.|  
+|&lt;제품 및 업데이트 형식>-&lt;제품 버전\>-&lt;기술 자료 문서 ID\>-&lt;플랫폼\>.msp|Configuration Manager 콘솔 또는 클라이언트에 업데이트가 적용될 때 업데이트 번들에는 별도의 Windows 설치 관리자 패치(.msp) 파일이 포함되어 있습니다.<br /><br /> 예를 들면 다음과 같습니다.<br /><br /> **Configuration Manager 콘솔 업데이트:** ConfigMgr1511-AdminUI-KB1234567-i386.msp<br /><br /> **클라이언트 업데이트:** ConfigMgr1511-client-KB1234567-i386.msp<br />ConfigMgr1511-client-KB1234567-x64.msp|  
 
- Domyślnie pakiet aktualizacji rejestruje swoje działania w pliku dziennika .log na serwerze lokacji. Plik dziennika ma taką samą nazwę jak pakiet aktualizacji i jest zapisywany w folderze **%SystemRoot%/Temp** .  
+ 기본적으로 업데이트 번들은 작업을 사이트 서버의 .log 파일에 로깅합니다. 로그 파일은 업데이트 번들과 이름이 같으며 **%SystemRoot%/Temp** 폴더에 기록됩니다.  
 
- Podczas uruchamiania pakiet aktualizacji wyodrębnia plik o nazwie identycznej z nazwą pakietu aktualizacji do folderu tymczasowego na komputerze, a następnie uruchamia program Updatesetup.exe. Updatesetup.exe uruchamia aktualizacji oprogramowania programu Configuration Manager &lt;wersji produktu\> &lt;numer bazy wiedzy\> kreatora.  
+ 업데이트 번들을 실행하면 업데이트 번들과 이름이 같은 파일이 컴퓨터의 임시 폴더에 추출된 다음 Updatesetup.exe가 실행됩니다. Updatesetup.exe는 Configuration Manager &lt;제품 버전\> &lt;KB 번호\>의 소프트웨어 업데이트 마법사를 시작합니다.  
 
- Odpowiednio do zakresu aktualizacji, Kreator tworzy serię podfolderów w folderze instalacji programu System Center Configuration Manager na serwerze lokacji. Struktura folderów wygląda mniej więcej tak:   
- **\\\\&lt;Nazwa serwera\>\SMS_&lt;kod lokacji\>\Hotfix\\&lt;numer bazy wiedzy\>\\&lt;typ aktualizacji\>\\&lt;platformy\>**.  
+ 업데이트의 범위에 해당하는 경우 마법사는 사이트 서버의 System Center Configuration Manager 설치 폴더 아래에 일련의 폴더를 만듭니다. 폴더 구조는   
+ **\\\\&lt;서버 이름\>\SMS_&lt;사이트 코드\>\Hotfix\\&lt;KB 번호\>\\&lt;업데이트 형식\>\\&lt;플랫폼\>**입니다.  
 
- Szczegółowe informacje o folderach z tej struktury folderów przedstawiono w poniższej tabeli:  
+ 다음 표에는 폴더 구조의 폴더에 대한 자세한 정보가 나와 있습니다.  
 
-|Nazwa folderu|Więcej informacji|  
+|폴더 이름|추가 정보|  
 |-----------------|----------------------|  
-|&lt;Nazwa serwera\>|To jest nazwa serwera lokacji, na którym jest uruchamiany pakiet aktualizacji.|  
-|SMS_&lt;kod lokacji\>|Jest to nazwa udziału folderu instalacyjnego programu Configuration Manager.|  
-|&lt;Numer artykułu bazy wiedzy\>|To jest numer identyfikatora artykułu Bazy wiedzy dla tego pakietu aktualizacji.|  
-|&lt;Typ aktualizacji\>|Są to typy aktualizacji programu Configuration Manager. Dla każdego typu aktualizacji zawartego w pakiecie aktualizacji kreator tworzy osobny folder. Nazwy folderów odpowiadają typom aktualizacji. Obejmują one następujące czynności:<br /><br /> **Serwer**: Obejmuje aktualizacje serwerów lokacji, serwery bazy danych lokacji i komputerach z uruchomionym dostawcą programu SMS.<br /><br /> **Klient**: Obejmuje aktualizacje klienta programu Configuration Manager.<br /><br /> **AdminConsole**: Obejmuje aktualizacje konsoli programu Configuration Manager<br /><br /> Oprócz powyższych typów aktualizacji Kreator tworzy folder o nazwie **SCUP**. Ten folder nie odpowiada typowi aktualizacji, tylko zawiera plik cab programu Updates Publisher.|  
-|&lt;Platformy\>|To jest folder zależny od platformy. Zawiera on pliki aktualizacji specyficzne dla określonego typu procesora.  Foldery noszą nazwy:<br /><br />-x64<br /><br /> -I386|  
+|&lt;서버 이름\>|업데이트 번들을 실행하는 사이트 서버의 이름입니다.|  
+|SMS_&lt;사이트 코드\>|Configuration Manager 설치 폴더의 공유 이름입니다.|  
+|&lt;KB 번호\>|이 업데이트 번들에 대한 기술 자료 문서의 ID 번호입니다.|  
+|&lt;업데이트 형식\>|Configuration Manager의 업데이트 형식입니다. 마법사에서는 업데이트 번들에 포함되는 각 업데이트 유형에 대해 별도의 폴더를 만듭니다. 폴더 이름은 업데이트 형식을 나타냅니다. 이름은 다음과 같습니다.<br /><br /> **서버**: SMS 공급자를 실행하는 사이트 서버, 사이트 데이터베이스 서버 및 컴퓨터에 대한 업데이트가 포함되어 있습니다.<br /><br /> **클라이언트**: Configuration Manager 클라이언트에 대한 업데이트가 포함되어 있습니다.<br /><br /> **AdminConsole**: Configuration Manager 콘솔에 대한 업데이트가 포함되어 있습니다.<br /><br /> 위의 업데이트 형식 외에도 마법사에서는 **SCUP**라는 이름의 폴더를 만듭니다. 이 폴더는 업데이트 형식을 나타내지 않지만, Updates Publisher에 대한 .cab 파일을 포함하고 있습니다.|  
+|&lt;플랫폼\>|플랫폼별 폴더입니다. 프로세서 유형에 따른 업데이트 파일이 포함되어 있습니다.  이러한 폴더는 다음과 같습니다.<br /><br />- x64<br /><br /> - I386|  
 
-##  <a name="bkmk_Install"></a> Jak instalować aktualizacje  
- Aby móc instalować aktualizacje, należy najpierw zainstalować pakiet aktualizacji na serwerze lokacji. Instalacja pakietu aktualizacji uruchamia kreatora instalacji tej aktualizacji. Kreator:  
+##  <a name="bkmk_Install"></a> 업데이트를 설치하는 방법  
+ 업데이트를 설치하려면 먼저 사이트 서버에 업데이트 번들을 설치해야 합니다. 업데이트 번들을 설치하면 해당 업데이트에 대한 설치 마법사를 시작합니다. 이 마법사는 다음을 수행합니다.  
 
--   Wyodrębnia pliki aktualizacji  
+-   업데이트 파일을 추출합니다.  
 
--   Pomaga w skonfigurowaniu wdrożeń  
+-   배포를 구성하는 데 도움을 줍니다.  
 
--   Instaluje odpowiednie aktualizacje w ramach składników serwera lokalnego komputera  
+-   로컬 컴퓨터의 서버 구성 요소에 해당 업데이트를 설치합니다.  
 
-Po zainstalowaniu pakietu aktualizacji na serwerze lokacji można zaktualizować dodatkowe składniki programu Configuration Manager. W poniższej tabeli opisano akcje dotyczące aktualizacji poszczególnych składników:  
+사이트 서버에 업데이트 번들을 설치하면 Configuration Manager를 업데이트하는 핫픽스를 설치하는 방법에 대한 일반적인 지침을 제공합니다. 다음 표에서는 다양한 구성 요소에 대한 업데이트 작업을 설명합니다.  
 
-|Składnik|Instrukcje|  
+|구성 요소|지침|  
 |---------------|------------------|  
-|Serwer lokacji|Wdróż aktualizacje na zdalnym serwerze lokacji, jeśli nie chcesz instalować pakietu aktualizacji bezpośrednio na tym zdalnym serwerze lokacji.|  
-|Baza danych lokacji|W przypadku zdalnych serwerów lokacji wdróż aktualizacje serwera, obejmujące aktualizację bazy danych lokacji, jeśli nie instalujesz pakietu aktualizacji bezpośrednio na tym zdalnym serwerze lokacji.|  
-|Konsola programu Configuration Manager|Po wstępnej instalacji konsoli programu Configuration Manager można zainstalować aktualizacje konsoli programu Configuration Manager na każdym komputerze, na którym jest uruchomiona konsola. Nie można modyfikować pliki instalacyjne konsoli programu Configuration Manager w celu zastosowania aktualizacji podczas wstępnej instalacji konsoli.|  
-|Zdalny dostawca programu SMS|Zainstaluj aktualizacje dla każdego wystąpienia dostawcy programu SMS uruchamianego na komputerze innym niż serwer lokacji, na którym został zainstalowany pakiet aktualizacji.|  
-|Klienci programu Configuration Manager|Po wstępnej instalacji klienta programu Configuration Manager możesz zainstalować aktualizacje dla klienta programu Configuration Manager na każdym komputerze, na którym działa klient.|  
+|사이트 서버|원격 사이트 서버에 직접 업데이트를 번들을 설치하지 않으려면 원격 사이트 서버에 업데이트를 배포합니다.|  
+|사이트 데이터베이스|원격 사이트 서버의 경우, 원격 사이트 서버에 직접 업데이트를 번들을 설치하지 않으려면 사이트 데이터베이스에 대한 업데이트가 포함된 서버 업데이트를 배포합니다.|  
+|Configuration Manager 콘솔|Configuration Manager 콘솔의 초기 설치 후에 이 콘솔을 실행하는 각 컴퓨터에서 Configuration Manager 콘솔에 대한 업데이트를 설치할 수 있습니다. 콘솔 초기 설치 시에 업데이트를 적용하도록 Configuration Manager 콘솔 설치 파일을 수정할 수 없습니다.|  
+|원격 SMS 공급자|업데이트 번들을 설치한 사이트 서버가 아닌 컴퓨터에서 실행되는 각 SMS 공급자 인스턴스의 업데이트를 설치합니다.|  
+|Configuration Manager 클라이언트|Configuration Manager 클라이언트의 초기 설치 후에 이 클라이언트를 실행하는 각 컴퓨터에서 Configuration Manager 클라이언트에 대한 업데이트를 설치할 수 있습니다.|  
 
 > [!NOTE]  
->  Można wdrażać aktualizacje tylko na komputerach z zainstalowanym klientem programu Configuration Manager.  
+>  Configuration Manager 클라이언트를 실행하는 컴퓨터에만 업데이트를 배포할 수 있습니다.  
 
- W przypadku ponownej instalacji klienta, konsoli programu Configuration Manager lub dostawcy programu SMS, należy również ponownie zainstalować aktualizacje tych składników.  
+ 클라이언트, Configuration Manager 콘솔 또는 SMS 공급자를 다시 설치하는 경우 이러한 구성 요소에 대한 업데이트도 다시 설치해야 합니다.  
 
- Skorzystaj z informacji w poniższych sekcjach ułatwiają instalowanie aktualizacji na poszczególnych składników programu Configuration Manager.  
+ Configuration Manager의 각 구성 요소에 대한 업데이트를 설치하려면 다음 섹션의 정보를 사용하세요.  
 
-###  <a name="bkmk_servers"></a> Aktualizowanie serwerów  
- Aktualizacje dla serwerów mogą obejmować aktualizacje **lokacji**, **site database**i komputerów z uruchomionym wystąpieniem **dostawcy programu SMS**:  
+###  <a name="bkmk_servers"></a> 서버 업데이트  
+ 서버에 대한 업데이트에는 **SMS 공급자**인스턴스를 실행하는 **site database**, **사이트 데이터베이스**및 컴퓨터에 대한 업데이트가 포함될 수 있습니다.  
 
-####  <a name="bkmk_site"></a>Aktualizowanie lokacji  
- Aby zaktualizować lokację programu Configuration Manager, można zainstalować pakiet aktualizacji bezpośrednio na serwerze lokacji lub można wdrożyć aktualizacje na serwerze lokacji po zainstalowaniu pakietu aktualizacji w innej lokacji.  
+####  <a name="bkmk_site"></a> 사이트 업데이트  
+ Configuration Manager 사이트를 업데이트하기 위해 사이트 서버에 직접 업데이트 번들을 설치하거나 한 사이트에 업데이트 번들을 설치한 후 다른 사이트 서버에 업데이트를 배포할 수 있습니다.  
 
- Podczas instalowania aktualizacji na serwerze lokacji proces instalacji aktualizacji zarządza dodatkowymi działaniami, które są wymagane do zastosowania aktualizacji, takimi jak aktualizowanie ról systemu lokacji. Wyjątkiem jest baza danych lokacji. Informacje o tym, jak zaktualizować bazę danych lokacji, zamieszczono w poniższej sekcji.  
+ 사이트 서버에 업데이트를 설치하면 업데이트 설치 프로세스가 사이트 시스템 역할 업데이트를 비롯하여 업데이트 적용에 필요한 추가 작업을 관리합니다. 사이트 데이터베이스는 이에 대한 예외입니다. 다음 섹션에는 사이트 데이터베이스를 업데이트하는 방법에 대한 정보가 포함되어 있습니다.  
 
-####  <a name="bkmk_database"></a>Zaktualizuj bazę danych lokacji  
- Aby zaktualizować bazę danych lokacji, proces instalacji uruchamia w pliku o nazwie **update.sql** w bazie danych lokacji. Proces aktualizacji można skonfigurować w celu automatycznego aktualizowania bazy danych lokacji albo można ręcznie zaktualizować bazę danych lokacji później.  
+####  <a name="bkmk_database"></a> 사이트 데이터베이스 업데이트  
+ 설치 프로세스에서 사이트 데이터베이스를 업데이트하기 위해 사이트 데이터베이스에 대해 **update.sql** 이라는 파일을 실행합니다. 업데이트 프로세스에서 자동으로 사이트 데이터베이스를 업데이트하도록 구성하거나 나중에 수동으로 사이트 데이터베이스를 업데이트할 수 있습니다.  
 
- **Automatyczna aktualizacja bazy danych lokacji**  
+ **사이트 데이터베이스 자동 업데이트**  
 
- Po zainstalowaniu pakietu aktualizacji na serwerze lokacji, można automatycznie zaktualizować bazy danych lokacji po zainstalowaniu aktualizacji serwera. Ta decyzja dotyczy tylko serwera lokacji, w którym jest instalowany pakiet aktualizacji i nie ma zastosowania do wdrożeń, które są tworzone w celu zainstalowania aktualizacji na zdalnych serwerach lokacji.  
+ 사이트 서버에 업데이트 번들을 설치하는 경우 서버 업데이트가 설치될 때 사이트 데이터베이스가 자동으로 업데이트되도록 선택할 수 있습니다. 이 결정은 업데이트 번들을 직접 설치하고, 원격 사이트 서버에 업데이트를 설치하도록 만들어진 배포를 적용하지 않는 사이트 서버에만 해당됩니다.  
 
 > [!NOTE]  
->  Gdy użytkownik chce automatycznie zaktualizować bazy danych lokacji, proces aktualizacji bazy danych niezależnie od tego czy bazy danych znajduje się na serwerze lokacji lub na komputerze zdalnym.  
+>  사이트 데이터베이스를 자동으로 업데이트하도록 선택할 경우 데이터베이스의 위치(사이트 서버 또는 원격 컴퓨터)에 관계없이 데이터베이스가 업데이트됩니다.  
 
 > [!IMPORTANT]  
->  Przed zaktualizowaniem bazy danych lokacji Utwórz kopię zapasową bazy danych lokacji. Aktualizacji bazy danych lokacji nie można odinstalować. Aby uzyskać informacje o sposobie tworzenia kopii zapasowej dla programu Configuration Manager, zobacz [kopii zapasowych i odzyskiwania dla programu System Center Configuration Manager](../../../protect/understand/backup-and-recovery.md).  
+>  사이트 데이터베이스를 업데이트하기 전에 사이트 데이터베이스의 백업을 만드십시오. 사이트 데이터베이스에 대한 업데이트는 제거할 수 없습니다. Configuration Manager에 대한 백업을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager 백업 및 복구](../../../protect/understand/backup-and-recovery.md)를 참조하세요.  
 
- **Ręczna aktualizacja bazy danych lokacji**  
+ **사이트 데이터베이스 수동 업데이트**  
 
- Jeśli wybierzesz nie automatycznie zaktualizować bazy danych lokacji po zainstalowaniu pakietu aktualizacji na serwerze lokacji, Aktualizacja serwera nie powoduje modyfikacji bazy danych na serwerze lokacji, na którym jest uruchamiany pakiet aktualizacji. Jednak wdrożenia korzystające z pakietu utworzonego w celu wdrożenia oprogramowania lub instalowane zawsze aktualizują bazę danych lokacji.  
+ 사이트 서버에 업데이트 번들을 설치할 때 사이트 데이터베이스를 자동으로 업데이트하지 않도록 선택할 경우 업데이트 번들이 실행되는 사이트 서버에서 서버 업데이트로 인해 데이터베이스가 수정되지 않습니다. 그러나 소프트웨어 배포를 위해 생성되었거나 설치하는 패키지를 사용하는 배포는 항상 사이트 데이터베이스를 업데이트합니다.  
 
 > [!WARNING]  
->  Kiedy aktualizacja obejmuje aktualizacje zarówno serwera lokacji i bazy danych lokacji, aktualizacja nie działa do czasu ukończenia aktualizacji na serwerze lokacji i bazy danych lokacji. Dopóki aktualizacja nie zostanie zastosowana do bazy danych lokacji, lokacja znajduje się w stanie nieobsługiwanym.  
+>  사이트 서버와 사이트 데이터베이스 모두에 대한 업데이트가 포함된 경우 사이트 서버와 사이트 데이터베이스 모두에 대한 업데이트가 완료될 때까지 업데이트가 기능하지 않습니다. 업데이트가 사이트 데이터베이스에 적용될 때까지 사이트는 지원되지 않는 상태에 있게 됩니다.  
 
- **Aby ręcznie zaktualizować bazę danych lokacji:**  
+ **사이트 데이터베이스를 수동으로 업데이트하려면**  
 
-1.  Na serwerze lokacji Zatrzymaj usługę SMS_SITE_COMPONENT_MANAGER, a następnie zatrzymaj usługę SMS_EXECUTIVE.  
+1.  사이트 서버에서 SMS_SITE_COMPONENT_MANAGER 서비스를 중지한 다음 SMS_EXECUTIVE 서비스를 중지합니다.  
 
-2.  Zamknij konsolę programu Configuration Manager.  
+2.  Configuration Manager 콘솔을 닫습니다.  
 
-3.  Uruchom skrypt aktualizacji o nazwie **update.sql** w bazie danych lokacji. Aby uzyskać informacje o sposobie uruchamiania skryptu aktualizującego bazę danych programu SQL Server zobacz dokumentację dla używanej wersji programu SQL Server, której użyjesz dla bazy danych serwera lokacji.  
+3.  해당 사이트의 데이터베이스에 대해 업데이트 스크립트 **update.sql** 을 실행합니다. 스크립트를 실행하여 SQL Server 데이터베이스를 업데이트하는 방법에 대한 자세한 내용은 사이트 데이터베이스 서버에 사용하는 SQL Server 버전의 설명서를 참조하세요.  
 
-4.  Uruchom ponownie usługi zatrzymane w poprzednich krokach.  
+4.  이전 단계에서 중지했던 서비스를 다시 시작합니다.  
 
-5.  Podczas instalowania pakietu aktualizacji wyodrębnia **update.sql** w następującej lokalizacji na serwerze lokacji:  **\\\\&lt;Nazwa serwera\>\SMS_&lt;kod lokacji\>\Hotfix\\&lt;numer bazy wiedzy\>\update.sql**  
+5.  업데이트 번들이 설치될 때 **update.sql**이 사이트 서버의 다음 위치에 추출됩니다. **\\\\&lt;서버 이름\>\SMS_&lt;사이트 코드\>\Hotfix\\&lt;KB 번호\>\update.sql**  
 
-####  <a name="bkmk_provider"></a>Aktualizacja komputera z uruchomionym dostawcą programu SMS  
- Po zainstalowaniu pakietu aktualizacji zawiera aktualizacje dla dostawcy programu SMS należy wdrożyć aktualizację na każdym komputerze z uruchomionym dostawcą programu SMS. Jedynym wyjątkiem od tej zasady jest wystąpienie dostawcy programu SMS zainstalowane wcześniej na serwerze lokacji, na którym jest instalowany pakiet aktualizacji. Po zainstalowaniu pakietu aktualizacji, jest aktualizowane lokalne wystąpienie dostawcy programu SMS na serwerze lokacji.  
+####  <a name="bkmk_provider"></a> SMS 공급자가 실행되는 컴퓨터 업데이트  
+ SMS 공급자의 업데이트가 포함된 업데이트 번들을 설치한 후에는SMS 공급자가 실행되는 각 컴퓨터에 업데이트를 배포해야 합니다. 이에 대한 유일한 예외는 업데이트 번들을 설치하는 사이트 서버에 이전에 설치된 SMS 공급자 인스턴스입니다. 사이트 서버에 있는 SMS 공급자의 로컬 인스턴스는 업데이트 번들을 설치할 때 업데이트됩니다.  
 
- Jeśli zostanie usunięty i ponownie zainstalować dostawcę programu SMS na komputerze, należy ponownie zainstalować aktualizację dostawcy programu SMS na tym komputerze.  
+ 컴퓨터에서 SMS 공급자를 제거한 후에 다시 설치할 경우 해당 컴퓨터에서 SMS 공급자의 업데이트를 다시 설치해야 합니다.  
 
-###  <a name="BKMK_clients"></a>Aktualizacja klientów  
- Po zainstalowaniu aktualizacji, która zawiera aktualizacje dla klienta programu Configuration Manager jest wyświetlana opcja automatycznego uaktualnienia klientów instalacji aktualizacji lub ręcznego uaktualnienia ich w późniejszym czasie. Aby uzyskać więcej informacji na temat automatycznego uaktualniania klientów, zobacz [Uaktualnianie klientów komputerów z systemem Windows](https://technet.microsoft.com/library/mt627885.aspx).  
+###  <a name="BKMK_clients"></a> 클라이언트 업데이트  
+ Configuration Manager 클라이언트에 대한 업데이트가 포함된 업데이트를 설치할 때 업데이트 설치를 사용하여 클라이언트를 자동으로 업그레이드하거나 나중에 클라이언트를 수동으로 업그레이드하는 옵션이 제공됩니다. 자동 클라이언트 업그레이드에 대한 자세한 내용은 [How to upgrade clients for Windows computers](https://technet.microsoft.com/library/mt627885.aspx)를 업데이트하는 핫픽스를 설치하는 방법에 대한 일반적인 지침을 제공합니다.  
 
- Aktualizacje można wdrażać za pomocą programu Updates Publisher lub pakietu wdrożeniowego oprogramowania. Można też ręcznie zainstalować aktualizację na każdym kliencie. Więcej informacji o sposobie używania wdrożeń do instalowania aktualizacji znajduje się w sekcji [Wdrażanie aktualizacji programu Configuration Manager](#BKMK_Deploy) w tym temacie.  
-
-> [!IMPORTANT]  
->  Po zainstalowaniu aktualizacji dla klientów i pakiet aktualizacji zawiera aktualizacje dla serwerów, należy te aktualizacje serwerów zainstalować również w lokacji głównej, do której są przypisani klienci.  
-
-Aby ręcznie zainstalować aktualizację klienta, na każdym kliencie programu Configuration Manager, należy uruchomić **Msiexec.exe** i odwołuje się do pliku msp aktualizacji klienta specyficznego dla platformy.  
-
- Na przykład można użyć poniższego polecenia aktualizacji klienta. Ten wiersz polecenia powoduje uruchomienie programu MSIEXEC na komputerze klienckim i przywołuje plik msp, który został wyodrębniony przez pakiet aktualizacji na serwerze lokacji: **msiexec.exe /p \\ \\ &lt;ServerName\>\SMS_&lt;Kod_lokacji\>\Hotfix\\&lt;numer bazy wiedzy\>\Client\\&lt;platformy\>\\&lt;msp\> /L\*v &lt;logfile\>REINSTALLMODE = mous REINSTALL = ALL**  
-
-###  <a name="BKMK_console"></a>Aktualizacja konsol programu Configuration Manager  
- Aby zaktualizować konsolę programu Configuration Manager, aktualizację należy zainstalować na komputerze, na którym jest uruchomiona konsola, po zakończeniu instalowaniu konsoli.  
+ Updates Publisher 또는 소프트웨어 배포 패키지를 사용하여 업데이트를 배포하거나 각 클라이언트에 수동으로 업데이트를 설치하도록 선택할 수 있습니다. 배포를 사용하여 업데이트를 설치하는 방법에 대한 자세한 내용은 이 항목의 [Configuration Manager에 대한 업데이트 배포](#BKMK_Deploy) 섹션을 참조하세요.  
 
 > [!IMPORTANT]  
->  Po zainstalowaniu aktualizacji dla konsoli programu Configuration Manager, a pakiet aktualizacji zawiera aktualizacje dla serwerów, należy te aktualizacje serwerów zainstalować również w lokacji, który jest używany z konsoli programu Configuration Manager.  
+>  클라이언트에 대한 업데이트를 설치하는 경우 업데이트 번들에 서버에 대한 업데이트가 포함되어 있으면 클라이언트가 할당된 기본 사이트에서 서버 업데이트도 설치해야 합니다.  
 
-Jeśli na komputerze, jest uruchomiony klient programu Configuration Manager:  
+클라이언트 업데이트를 수동으로 설치하려면 각 Configuration Manager 클라이언트에서 **Msiexec.exe**를 실행하고 플랫폼별 클라이언트 업데이트인 .msp 파일을 참조해야 합니다.  
 
--   Możesz zainstalować aktualizację przy użyciu wdrożenia. Więcej informacji o sposobie używania wdrożeń do instalowania aktualizacji znajduje się w sekcji [Wdrażanie aktualizacji programu Configuration Manager](#BKMK_Deploy) w tym temacie.  
+ 예를 들어 클라이언트 업데이트에 다음 명령줄을 사용할 수 있습니다. 이 명령줄은 클라이언트 컴퓨터에서 MSIEXEC를 실행하고 업데이트 번들이 사이트 서버에 추출한 .msp 파일을 참조합니다. **msiexec.exe /p \\\\&lt;서버 이름\>\SMS_&lt;사이트 코드\>\Hotfix\\&lt;KB 번호\>\Client\\&lt;플랫폼\>\\&lt;msp\> /L\*v &lt;로그 파일\>REINSTALLMODE=mous REINSTALL=ALL**  
 
--   Jeśli zalogowano się bezpośrednio na komputerze klienckim, możesz uruchomić instalację interaktywnie.  
-
--   Możesz zainstalować aktualizację ręcznie na każdym komputerze. Aby ręcznie zainstalować aktualizację konsoli programu Configuration Manager, na każdym komputerze, na którym uruchomiona jest konsola programu Configuration Manager, można uruchomić Msiexec.exe i odwołać się do pliku *.msp aktualizacji konsoli programu Configuration Manager.  
-
-Na przykład można użyć następujący wiersz polecenia, aby zaktualizować konsolę programu Configuration Manager. Ten wiersz polecenia powoduje uruchomienie programu MSIEXEC na komputerze i odwołuje się do pliku msp, który został wyodrębniony przez pakiet aktualizacji na serwerze lokacji: **msiexec.exe /p \\ \\ &lt;ServerName\>\SMS_&lt;Kod_lokacji\>\Hotfix\\&lt;numer bazy wiedzy\>\AdminConsole\\&lt;platformy\>\\&lt;msp\> /L\*v &lt;logfile\>REINSTALLMODE = mous REINSTALL = ALL**  
-
-##  <a name="BKMK_Deploy"></a> Wdrażanie aktualizacji programu Configuration Manager  
- Po zainstalowaniu pakietu aktualizacji na serwerze lokacji można jedną z następujących trzech metod wdrożyć aktualizacje na dodatkowych komputerach.  
-
-###  <a name="BKMK_DeploySCUP"></a>Zainstaluj aktualizacje za pomocą programu Updates Publisher 2011  
- Po zainstalowaniu pakietu aktualizacji na serwerze lokacji instalacji Kreator tworzy plik katalogu dla programu Updates Publisher, którego można użyć do wdrożenia aktualizacji na odpowiednich komputerach. Kreator zawsze tworzy ten katalog, nawet jeśli wybrano opcję **Użyj pakietu i programu do wdrożenia tej aktualizacji**.  
-
- Katalog dla programu Updates Publisher ma nazwę **SCUPCatalog.cab** i znajduje się w następującej lokalizacji na komputerze, na którym jest uruchamiany pakiet aktualizacji: **\\\\&lt;ServerName\>\SMS_&lt;Kod_lokacji\>\Hotfix\\&lt;numer bazy wiedzy\>\SCUP\SCUPCatalog.cab**  
+###  <a name="BKMK_console"></a> Configuration Manager 콘솔 업데이트  
+ Configuration Manager 콘솔을 업데이트하려면 콘솔 설치가 완료된 후에 콘솔이 실행되는 컴퓨터에서 업데이트를 설치해야 합니다.  
 
 > [!IMPORTANT]  
->  Ponieważ plik SCUPCatalog.cab jest tworzony za pomocą ścieżek, które są specyficzne dla serwera lokacji, w którym jest instalowany pakiet aktualizacji, nie można używać na innych serwerach lokacji.  
+>  Configuration Manager 콘솔에 대한 업데이트를 설치하는 경우 업데이트 번들에 서버에 대한 업데이트가 포함되어 있으면 Configuration Manager 콘솔과 같은 구성 요소에 업데이트를 설치할 수 있습니다.  
 
- Po zakończeniu pracy Kreatora wykaz można zaimportować do programu Updates Publisher, a następnie użycia aktualizacji oprogramowania programu Configuration Manager do wdrażania aktualizacji. Aby uzyskać informacji dotyczących programu Updates Publisher, zobacz [Updates Publisher 2011](http://go.microsoft.com/fwlink/p/?LinkID=83449) w bibliotece TechNet programu System Center 2012.  
+업데이트하는 컴퓨터에서 Configuration Manager 클라이언트를 실행하는 경우:  
 
- Aby zaimportować plik SCUPCatalog.cab do programu Updates Publisher i opublikować aktualizacje, należy użyć następującej procedury.  
+-   배포를 사용하여 업데이트를 설치할 수 있습니다. 배포를 사용하여 업데이트를 설치하는 방법에 대한 자세한 내용은 이 항목의 [Configuration Manager에 대한 업데이트 배포](#BKMK_Deploy) 섹션을 참조하세요.  
 
-##### <a name="to-import-the-updates-to-updates-publisher-2011"></a>Aby zaimportować aktualizacje do programu Updates Publisher 2011  
+-   클라이언트 컴퓨터에 직접 로그온한 경우 설치를 대화형으로 실행할 수 있습니다.  
 
-1.  Uruchom konsolę programu Updates Publisher, a następnie kliknij przycisk **importu**.  
+-   각 컴퓨터에서 수동으로 업데이트를 설치할 수 있습니다. Configuration Manager 콘솔 업데이트를 수동으로 설치하기 위해 Configuration Manager 콘솔이 실행되는 각 컴퓨터에서 Msiexec.exe를 실행하고 Configuration Manager 콘솔 업데이트 .msp 파일을 참조할 수 있습니다.  
 
-2.  Na **zaimportować typu** strony Kreatora importowania oprogramowanie aktualizacji katalogu, wybierz **Określ ścieżkę do katalogu, aby zaimportować**, a następnie wskaż plik SCUPCatalog.cab.  
+예를 들어 Configuration Manager 콘솔을 업데이트하기 위해 다음 명령줄을 사용할 수 있습니다. 이 명령줄은 컴퓨터에서 MSIEXEC를 실행하고 업데이트 번들이 사이트 서버에 추출한 .msp 파일을 참조합니다. **msiexec.exe /p \\\\&lt;서버 이름\>\SMS_&lt;사이트 코드\>\Hotfix\\&lt;KB 번호\>\AdminConsole\\&lt;플랫폼\>\\&lt;msp\> /L\*v &lt;로그 파일\>REINSTALLMODE=mous REINSTALL=ALL**  
 
-3.  Kliknij przycisk **dalej**, a następnie kliknij przycisk **dalej** ponownie.  
+##  <a name="BKMK_Deploy"></a> Configuration Manager에 대한 업데이트 배포  
+ 사이트 서버에 업데이트 번들을 설치한 후에는 다음 세 가지 방법 중 하나를 사용하여 추가 컴퓨터에 업데이트를 배포할 수 있습니다.  
 
-4.  W **ostrzeżenie o zabezpieczeniach — Weryfikacja katalogu** okno dialogowe, kliknij przycisk **Akceptuj**. Zamknij kreatora po zakończeniu.  
+###  <a name="BKMK_DeploySCUP"></a> Updates Publisher 2011을 사용하여 업데이트 설치  
+ 사이트 서버에 업데이트 번들을 설치하면 설치 마법사에서 Updates Publisher용 카탈로그 파일을 생성하며, 이를 사용하여 해당 컴퓨터에 업데이트를 배포할 수 있습니다. 마법사는 사용자가 **패키지와 프로그램을 사용하여 이 업데이트 배포**를 업데이트하는 핫픽스를 설치하는 방법에 대한 일반적인 지침을 제공합니다.  
 
-5.  W konsoli programu Updates Publisher wybierz aktualizację, którą chcesz wdrożyć, a następnie kliknij przycisk **publikowania**.  
+ Updates Publisher의 카탈로그 이름은 **SCUPCatalog.cab**이며 업데이트 번들이 실행되는 컴퓨터의 **\\\\&lt;서버 이름\>\SMS_&lt;사이트 코드\>\Hotfix\\&lt;KB 번호\>\SCUP\SCUPCatalog.cab**에 있습니다.  
 
-6.  Na **opcji publikowania** strony publikowania Kreatora aktualizacji oprogramowania, wybierz **pełnej zawartości**, a następnie kliknij przycisk **dalej**.  
+> [!IMPORTANT]  
+>  SCUPCatalog.cab 파일은 업데이트 번들이 설치되는 사이트 서버에 해당하는 경로를 사용하여 만들어지므로 다른 사이트 서버에서는 사용할 수 없습니다.  
 
-7.  Ukończ pracę kreatora, aby opublikować aktualizacje.  
+ 마법사가 완료되면 카탈로그를 Updates Publisher로 가져온 후 Configuration Manager 소프트웨어 업데이트를 사용하여 업데이트를 배포할 수 있습니다. Updates Publisher에 대한 자세한 내용은 System Center 2012의 TechNet 라이브러리에서 [Updates Publisher 2011](http://go.microsoft.com/fwlink/p/?LinkID=83449)을 참조하세요.  
 
-###  <a name="BKMK_DeploySWDist"></a>Instalowanie aktualizacji metodą wdrażania oprogramowania  
- Po zainstalowaniu pakietu aktualizacji na serwerze lokacji w lokacji głównej lub centralnej lokacji administracyjnej można skonfigurować instalację kreatora, aby utworzyć pakiety aktualizacji dla wdrożenia oprogramowania. Następnie można wdrożyć każdy pakiet do kolekcji komputerów, które chcesz zaktualizować.  
+ SCUPCatalog.cab 파일을 Updates Publisher로 가져와서 업데이트를 게시하려면 다음 절차를 따르세요.  
 
- Aby utworzyć pakiet wdrożeniowy oprogramowania, na **skonfigurować wdrożenie aktualizacji oprogramowania** strony kreatora zaznacz pole wyboru dla każdej aktualizacji typu, który chcesz zaktualizować. Dostępne typy to między innymi serwery, konsole programu Configuration Manager i klienci. Dla każdego typu aktualizacji są tworzone oddzielnie pakiety.  
+##### <a name="to-import-the-updates-to-updates-publisher-2011"></a>Updates Publisher 2011로 업데이트를 가져오려면  
+
+1.  Updates Publisher 콘솔을 시작하고 **가져오기**를 클릭합니다.  
+
+2.  소프트웨어 업데이트 카탈로그 가져오기 마법사의 **가져오기 형식** 페이지에서 **가져올 카탈로그의 경로 지정**을 선택하고 SCUPCatalog.cab 파일을 지정합니다.  
+
+3.  **다음**을 클릭한 후에 다시 **다음** 을 클릭합니다.  
+
+4.  **보안 경고 - 카탈로그 유효성 검사** 대화 상자에서 **적용**을 클릭합니다. 완료되면 마법사를 닫습니다.  
+
+5.  Updates Publisher 콘솔에서 배포할 업데이트를 선택한 다음 **게시**를 클릭합니다.  
+
+6.  소프트웨어 업데이트 게시 마법사의 **게시 옵션** 페이지에서 **전체 콘텐츠**를 선택하고 **다음**을 클릭합니다.  
+
+7.  마법사를 완료하여 업데이트를 게시합니다.  
+
+###  <a name="BKMK_DeploySWDist"></a> 소프트웨어 배포를 사용하여 업데이트 설치  
+ 기본 사이트 또는 중앙 관리 사이트의 사이트 서버에 업데이트 번들을 설치할 때 설치 소프트웨어 배포에 대한 업데이트 패키지를 만들도록 마법사를 구성할 수 있습니다. 그런 다음 각 패키지를 업데이트할 컴퓨터 컬렉션에 배포할 수 있습니다.  
+
+ 소프트웨어 배포 패키지를 만들려면 마법사의 **소프트웨어 업데이트 배포 구성** 페이지에서 업데이트할 각 업데이트 패키지 유형의 확인란을 선택합니다. 사용 가능한 유형으로는 서버, Configuration Manager 콘솔, 클라이언트 등이 있습니다. 선택한 각 업데이트 유형에 대해 별도의 패키지가 만들어집니다.  
 
 > [!NOTE]  
->  Pakiety dla serwerów zawierają aktualizacje następujących składników:  
+>  서버용 패키지에는 다음 구성 요소에 대한 업데이트가 포함되어 있습니다.  
 >   
->  -   Serwer lokacji  
->  -   dostawcy programu SMS  
->  -   Baza danych lokacji  
+>  -   사이트 서버  
+>  -   사이트 데이터베이스  
+>  -   사이트 데이터베이스  
 
- Następnie na stronie **Configure Software Update Deployment Method (Konfigurowanie metody wdrożenia aktualizacji oprogramowania)** kreatora wybierz opcję **I will use software distribution**(Użyję dystrybucji oprogramowania). To pole wyboru nakaże kreatorowi tworzy pakietu wdrożeniowego oprogramowania.  
+ 다음으로, 마법사의 **소프트웨어 업데이트 배포 방법 구성** 페이지에서 **소프트웨어 배포를 사용합니다**옵션을 선택합니다. 이 옵션을 선택하면 마법사가 소프트웨어 배포 패키지를 만듭니다.  
 
- Po zakończeniu pracy Kreatora utworzone w konsoli programu Configuration Manager w pakiety można wyświetlić **pakiety** w węźle **Biblioteka oprogramowania** obszaru roboczego. Standardowej procedury można następnie użyć do wdrożenia pakiety oprogramowania na klientach programu Configuration Manager. Gdy pakiet jest uruchamiany na kliencie, instaluje aktualizacje odpowiednich składników programu Configuration Manager na komputerze klienckim.  
+ 마법사가 완료된 후에는 Configuration Manager 콘솔의 **소프트웨어 라이브러리** 작업 영역에 있는 **패키지** 노드에서 만들어진 패키지를 확인할 수 있습니다. 그런 다음 표준 프로세스를 사용하여 소프트웨어 패키지를 Configuration Manager 클라이언트에 배포할 수 있습니다. 패키지는 클라이언트에서 실행될 때 클라이언트 컴퓨터에서 해당 Configuration Manager 구성 요소에 업데이트를 설치합니다.  
 
- Aby uzyskać informacje o sposobie wdrażania pakietów na klientach programu Configuration Manager, zobacz [pakietów i programów w programie System Center Configuration Manager](../../../apps/deploy-use/packages-and-programs.md).  
+ Configuration Manager 클라이언트에 패키지를 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 패키지 및 프로그램](../../../apps/deploy-use/packages-and-programs.md)을 참조하세요.  
 
-###  <a name="BKMK_DeployCollections"></a>Tworzenie kolekcji w celu wdrażania aktualizacji programu Configuration Manager  
- Można wdrożyć aktualizacje na odpowiednich klientach. Poniższe informacje mogą pomóc tworzenie kolekcji urządzeń dla różnych składników programu Configuration Manager.  
+###  <a name="BKMK_DeployCollections"></a> Configuration Manager에 업데이트를 배포하기 위한 컬렉션 만들기  
+ 특정 업데이트를 해당 클라이언트에 배포할 수 있습니다. 다음 표에는 Configuration Manager의 여러 구성 요소를 위한 장치 컬렉션을 만드는 방법이 나와 있습니다.  
 
-|Składnik programu Configuration Manager|Instrukcje|  
+|Configuration Manager의 구성 요소|지침|  
 |----------------------------------------|------------------|  
-|Serwer centralnej lokacji administracyjnej|Utwórz kwerendę członkostwa bezpośredniego i dodaj komputer serwera centralnej lokacji administracyjnej.|  
-|Wszystkie serwery lokacji głównej|Utwórz kwerendę członkostwa bezpośredniego i dodaj każdy komputer serwera lokacji głównej.|  
-|Wszystkie serwery lokacji dodatkowej|Utwórz kwerendę członkostwa bezpośredniego i dodaj każdy komputer serwera lokacji dodatkowej.|  
-|Wszyscy klienci x86|Utwórz kolekcję o następujących kryteriach kwerendy:<br /><br /> **Wybierz \* z SMS_R_System inner join SMS_G_System_SYSTEM na SMS_G_System_SYSTEM. ResourceID = SMS_R_System.ResourceId gdzie SMS_G_System_SYSTEM. Typem systemu = "komputer PC oparty na X86"**|  
-|Wszyscy klienci x64|Utwórz kolekcję o następujących kryteriach kwerendy:<br /><br /> **Wybierz \* z SMS_R_System inner join SMS_G_System_SYSTEM na SMS_G_System_SYSTEM. ResourceID = SMS_R_System.ResourceId gdzie SMS_G_System_SYSTEM. Typem systemu = "komputer PC oparty na X64"**|  
-|Wszystkie komputery z uruchomioną konsoli programu Configuration Manager|Utwórz kwerendę członkostwa bezpośredniego i dodaj każdy komputer.|  
-|Komputery zdalne z uruchomionym wystąpieniem dostawcy programu SMS|Utwórz kwerendę członkostwa bezpośredniego i dodaj każdy komputer.|  
+|중앙 관리 사이트 서버|직접 멤버 자격 쿼리를 만들고 중앙 관리 사이트 서버 컴퓨터를 추가합니다.|  
+|모든 기본 사이트 서버|직접 멤버 자격 쿼리를 만들고 각 기본 사이트 서버 컴퓨터를 추가합니다.|  
+|모든 보조 사이트 서버|직접 멤버 자격 쿼리를 만들고 각 보조 사이트 서버 컴퓨터를 추가합니다.|  
+|모든 x86 클라이언트|다음 쿼리 조건을 사용하여 컬렉션을 만듭니다.<br /><br /> **Select \* from SMS_R_System inner join SMS_G_System_SYSTEM on SMS_G_System_SYSTEM.ResourceID = SMS_R_System.ResourceId where SMS_G_System_SYSTEM.SystemType = "X86-based PC"**|  
+|모든 x64 클라이언트|다음 쿼리 조건을 사용하여 컬렉션을 만듭니다.<br /><br /> **Select \* from SMS_R_System inner join SMS_G_System_SYSTEM on SMS_G_System_SYSTEM.ResourceID = SMS_R_System.ResourceId where SMS_G_System_SYSTEM.SystemType = "X64-based PC"**|  
+|Configuration Manager 콘솔을 실행하는 모든 컴퓨터|직접 멤버 자격 쿼리를 만들고 각 컴퓨터를 추가합니다.|  
+|SMS 공급자 인스턴스를 실행하는 원격 컴퓨터|직접 멤버 자격 쿼리를 만들고 각 컴퓨터를 추가합니다.|  
 
 > [!NOTE]  
->  Aby zaktualizować bazę danych lokacji, wdróż aktualizację na serwerze tej lokacji.  
+>  사이트 데이터베이스를 업데이트하려면 해당 사이트의 사이트 서버에 업데이트를 배포합니다.  
 
- Aby uzyskać informacje dotyczące sposobu tworzenia kolekcji, zobacz [Jak tworzyć kolekcje w programie System Center Configuration Manager](../../../core/clients/manage/collections/create-collections.md).  
+ 컬렉션을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 컬렉션을 만드는 방법](../../../core/clients/manage/collections/create-collections.md)을 참조하세요.  

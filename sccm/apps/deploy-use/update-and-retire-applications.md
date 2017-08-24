@@ -1,6 +1,6 @@
 ---
-title: Aktualizowanie i wycofywanie aplikacji | Dokumentacja firmy Microsoft
-description: "Popraw, zastępowanie lub Odinstaluj aplikacje wdrożone za pomocą programu System Center Configuration Manager."
+title: "응용 프로그램 업데이트 및 사용 중지 | Microsoft 문서"
+description: "System Center Configuration Manager를 사용하여 배포된 응용 프로그램을 수정, 대체 또는 제거합니다."
 ms.custom: na
 ms.date: 10/06/2016
 ms.prod: configuration-manager
@@ -16,25 +16,25 @@ ms.author: robstack
 manager: angrobe
 ms.openlocfilehash: 805e04c447747b4d12350b692880dbc005bd7168
 ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
-ms.translationtype: MT
-ms.contentlocale: pl-PL
+ms.translationtype: HT
+ms.contentlocale: ko-KR
 ms.lasthandoff: 08/07/2017
 ---
-# <a name="update-and-retire-applications-with-system-center-configuration-manager"></a>Aktualizowanie i wycofywanie aplikacji w programie System Center Configuration Manager
+# <a name="update-and-retire-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 업데이트 및 사용 중지
 
-*Dotyczy: Program System Center Configuration Manager (Current Branch)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 
-Istnieje prawdopodobieństwo, że po pewnym czasie można wprowadzać zmian w aplikacji, odinstalowanie aplikacji lub Zastąp już wdrożonej aplikacji przez nową aplikację. System Center Configuration Manager umożliwia skorzystanie z tych funkcji, aby ułatwić aktualizowanie i wycofywanie aplikacji:  
+나중에 응용 프로그램을 변경하거나, 응용 프로그램을 제거하거나, 이미 배포된 응용 프로그램을 새 응용 프로그램으로 대체할 가능성이 큽니다. System Center Configuration Manager는 응용 프로그램 업데이트 및 사용 중지에 도움이 되는 다음 기능을 제공합니다.  
 
--   **Stosowanie poprawek aplikacji**. Po wprowadzeniu zmian w aplikacji lub typu wdrożenia programu Configuration Manager przechowuje historię zmian. W dowolnym momencie można przywrócić wcześniejszą wersję aplikacji. Możesz również można wyświetlić jego właściwości, przywrócenie poprzedniej poprawki aplikacji lub usunięcie starej poprawki.  
+-   **응용 프로그램 수정**. 응용 프로그램 또는 배포 유형을 변경하면 Configuration Manager에서 이러한 변경 내용의 기록을 유지 관리합니다. 언제든지 응용 프로그램을 이전 수정 버전으로 되돌릴 수 있습니다. 또한 각 수정 버전의 속성을 확인하고 이전의 응용 프로그램 수정 버전을 복원하거나, 이전 수정 버전을 삭제할 수 있습니다.  
 
-  Aby uzyskać więcej informacji, zobacz [wersje aplikacji](revise-and-supersede-applications.md#application-revisions).  
+  자세한 내용은 [응용 프로그램 수정 버전](revise-and-supersede-applications.md#application-revisions)을 참조하세요.  
 
--   **Zastępowanie aplikacji**. Można uaktualnić lub zastępowanie istniejących aplikacji przy użyciu relacji zastępowania. Podczas zastępowania aplikacji można określić nowy typ wdrożenia w celu zastąpienia typu wdrożenia zastępowanej aplikacji. Ponadto można określić, że aby uaktualnić lub odinstalować przed aplikacji zastępującej zastępowanej aplikacji jest zainstalowana.  
+-   **응용 프로그램 대체**. 교체 관계를 사용하여 기존 응용 프로그램을 업그레이드하거나 대체할 수 있습니다. 응용 프로그램을 교체할 때는 교체되는 응용 프로그램의 배포 유형을 대체할 새 배포 유형을 지정할 수 있습니다. 또한 대체 응용 프로그램을 설치하기 전에 대체 대상 응용 프로그램을 업그레이드할지 아니면 제거할지를 설정할 수 있습니다.  
 
-  Aby uzyskać więcej informacji, zobacz [zastępowania aplikacji](revise-and-supersede-applications.md#application-supersedence).  
+  자세한 내용은 [응용 프로그램 대체](revise-and-supersede-applications.md#application-supersedence)를 참조하세요.  
 
--   **Odinstalowywanie aplikacji**. Menedżer konfiguracji umożliwia łatwe odinstalowywanie aplikacji. Można to zrobić w trybie dyskretnym, bez żadnej interwencji z aplikacji lub użytkownika urządzenia.  
+-   **응용 프로그램 제거**. Configuration Manager를 사용하면 쉽게 응용 프로그램을 제거할 수 있습니다. 이 작업은 응용 프로그램 또는 장치 사용자의 개입 없이 자동으로 수행됩니다.  
 
-  Aby uzyskać więcej informacji, zobacz [odinstalowania aplikacji](uninstall-applications.md).  
+  자세한 내용은 [응용 프로그램 제거](uninstall-applications.md)를 참조하세요.  

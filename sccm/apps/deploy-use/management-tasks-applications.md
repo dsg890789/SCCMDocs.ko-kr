@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c4041e21-21ff-4d95-ab05-14007e0047cf
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: a53f8ca0cc9c4e4f7d91dd4a08eeea76cbd0b142
 ms.openlocfilehash: 72f99f0c90951f80de3d6e5ed8786d3fa482107e
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="management-tasks-for-system-center-configuration-manager-applications"></a>System Center Configuration Manager 응용 프로그램에 대한 관리 작업
 
@@ -60,9 +59,3 @@ ms.openlocfilehash: 72f99f0c90951f80de3d6e5ed8786d3fa482107e
 |**우선순위 낮추기**|선택한 배포 유형의 우선 순위를 낮춥니다.|  
 |**삭제**|선택한 배포 유형을 삭제합니다.<br><br>다른 응용 프로그램의 배포 유형에서 참조되는 배포 유형은 삭제할 수 없습니다.<br>배포 유형을 삭제하려면 다른 배포 유형에 포함된 배포 유형에 대한 모든 종속성을 제거해야 합니다.<br>또한 삭제할 배포 유형을 참조하는 배포 유형이 포함된 모든 응용 프로그램의 이전 수정 버전도 제거해야 합니다.|  
 |**콘텐츠 업데이트**|선택한 배포 유형의 콘텐츠를 새로 고칩니다.<br /><br /> 가상 응용 프로그램이 포함된 배포 유형에 대해 이 마법사를 시작하면 **콘텐츠 업데이트 마법사**가 시작됩니다. 이 마법사를 사용하여 선택한 가상 응용 프로그램에 대한 게시 옵션과 요구 사항 규칙을 변경할 수 있습니다. 자세한 내용은 [응용 프로그램 만들기](../../apps/deploy-use/create-applications.md)를 참조하세요.<br /><br /> 배포 유형의 콘텐츠를 새로 고치면 응용 프로그램의 새 수정 버전이 만들어집니다. 이로 인해 클라이언트 장치가 새 응용 프로그램으로 업데이트될 수 있습니다.|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

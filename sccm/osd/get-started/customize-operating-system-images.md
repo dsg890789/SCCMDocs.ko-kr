@@ -6,23 +6,20 @@ ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 95033a9b-ff13-4b70-b1de-bcb25bcb6024
-caps.latest.revision: 12
-caps.handback.revision: 0
+caps.latest.revision: "12"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
 ms.openlocfilehash: 485cb3ca4988f983c1ec71b6c8daf136571bf0ea
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="customize-operating-system-images-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 운영 체제 이미지 사용자 지정
 
@@ -139,4 +136,3 @@ System Center Configuration Manager의 운영 체제 이미지는 WIM 파일이�
  운영 체제, 드라이버, 응용 프로그램 등에 배포하는 작업 순서를 사용하여 참조 컴퓨터를 만드는 프로세스를 자동화할 수 있습니다.  참조 컴퓨터를 빌드하고 참조 컴퓨터에서 운영 체제 이미지를 캡처하려면 다음 단계를 따르세요.  
 
 -   참조 컴퓨터에서 운영 체제 이미지를 빌드하고 캡처하는 작업 순서를 배포합니다.  자세한 단계는 [작업 순서를 사용하여 참조 컴퓨터 만들기 및 캡처](../deploy-use/create-a-task-sequence-to-capture-an-operating-system.md#BKMK_BuildCaptureTS)를 참조하세요.  
-

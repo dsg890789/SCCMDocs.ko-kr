@@ -6,22 +6,19 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2c8f57cf-1968-48de-87fb-4897432ed6e0
-caps.latest.revision: 23
+caps.latest.revision: "23"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 690d03d9c8c49a815bd318df549d7401a855bc5d
 ms.openlocfilehash: 08a4d9b29871b49e3118aef949572cef64940f96
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-monitor-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트를 모니터링하는 방법
 
@@ -114,4 +111,3 @@ ms.lasthandoff: 05/17/2017
 
 ## <a name="client-deployment-log-files"></a>클라이언트 배포 로그 파일
 클라이언트 배포 및 관리 작업에 사용되는 로그 파일에 대한 자세한 내용은 [System Center Configuration Manager의 로그 파일](/sccm/core/plan-design/hierarchy/log-files#BKMK_ClientLogs)을 참조하세요.
-

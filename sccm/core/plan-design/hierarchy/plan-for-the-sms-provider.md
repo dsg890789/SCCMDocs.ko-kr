@@ -6,22 +6,19 @@ ms.date: 2/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 5d5d6273-0d8a-43c7-865a-cdb1736dcae3
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 11ac851696ce52642412ca29e4873679d50cf398
 ms.openlocfilehash: 547dc39d5659c7c2e6f1ca670caddc127dbf22c4
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="plan-for-the-sms-provider-for-system-center-configuration-manager"></a>System Center Configuration Manager용 SMS 공급자에 대한 계획
 
@@ -202,4 +199,3 @@ SMS 공급자의 인스턴스를 설치하는 컴퓨터에는 사용할 Configur
 
 
 Windows ADK를 설치하려면 SMS 공급자를 설치하는 각 컴퓨터에 최대 650MB의 사용 가능한 디스크 공간이 필요합니다. 이 많은 디스크 공간은 Configuration Manager가 Windows PE 부팅 이미지를 설치하는 데 필요합니다.  
-

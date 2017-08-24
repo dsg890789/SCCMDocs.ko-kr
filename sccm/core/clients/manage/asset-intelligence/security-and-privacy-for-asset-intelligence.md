@@ -6,23 +6,20 @@ ms.date: 2/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d0c6f7a0-dcae-4e6d-aa28-35d464d97ff7
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
-ms.openlocfilehash: d577a16725c2b167d1ff9f77096018433a2fa580
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: b12054cce52e2b83715a083d78a62e06b5127a2f
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-asset-intelligence-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Asset Intelligence 대한 보안 및 개인 정보
 
@@ -60,4 +57,3 @@ ms.lasthandoff: 12/16/2016
 -   업로드된 데이터는 취소할 수 없습니다.  
 
  Asset Intelligence 데이터 컬렉션을 구성하고 System Center Online에 정보를 제출할지 여부를 결정하려면 먼저 조직의 개인정보취급방침 요구 사항을 고려하세요.  
-

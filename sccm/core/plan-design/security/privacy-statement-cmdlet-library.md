@@ -6,21 +6,20 @@ ms.date: 1/3/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: bec00fb4-1ac0-4e49-b330-0871b3722459
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 3d6799ad46e0fe69333aba0662f18c9153c17bda
 ms.openlocfilehash: 3936075555cc0bb370ea6e42c7e720b864d565f7
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="system-center-configuration-manager-privacy-statement---configuration-manager-cmdlet-library"></a>System Center Configuration Manager 개인정보취급방침 – Configuration Manager cmdlet 라이브러리
 
@@ -50,9 +49,3 @@ System Center Configuration Manager cmdlet 라이브러리를 사용하면 Windo
  사용 현황 데이터 설정에 대한 변경은 변경이 수행된 컴퓨터에서만 할 수 있습니다.  
 
  사용 현황 데이터(컬렉션)를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager Cmdlet 라이브러리 설명서](https://technet.microsoft.com/en-us/library/dn958404.aspx)를 참조하세요.   
-
-
-
-<!--HONumber=Jan17_HO1-->
-
-

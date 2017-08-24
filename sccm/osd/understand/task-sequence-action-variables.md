@@ -6,22 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e2269031-0977-4f01-a274-420e00630575
-caps.latest.revision: 10
-caps.handback.revision: 0
+caps.latest.revision: "10"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="task-sequence-action-variables-in-system-center-configuration-manager"></a>System Center Configuration Manager의 작업 순서 동작 변수
 
@@ -347,4 +345,3 @@ ms.lasthandoff: 12/16/2016
 |작업 변수 이름<br /><br /> (입력)|설명|  
 |----------------------------------------|-----------------|  
 |OSDSetupAdditionalUpgradeOptions<br /><br /> (입력)|Windows 10 업그레이드 중 설치 프로그램에 추가된 추가 명령줄 옵션을 지정합니다. 명령줄 옵션은 확인되지 않습니다. 따라서 입력하는 옵션이 정확한지 확인합니다.<br /><br /> 자세한 내용은 [Windows 설치 프로그램 명령줄 옵션](https://msdn.microsoft.com/library/windows/hardware/dn938368\(v=vs.85\).aspx)을 참조하세요.|  
-

@@ -6,21 +6,19 @@ ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e7cdb1a9-140a-436e-ac71-72d083110223
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f7cd9c71287d62c9f5d36e2f032bc2a6065572ae
 ms.openlocfilehash: 8ff48b08d1abb7481592c0ea076d4efa15c3d8ee
-ms.contentlocale: ko-kr
-ms.lasthandoff: 06/06/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="use-a-command-line-to-install-system-center-configuration-manager-sites"></a>명령줄을 사용하여 System Center Configuration Manager 사이트 설치
 
@@ -126,4 +124,3 @@ Microsoft 볼륨 라이선스 사이트에서 얻은 설치 미디어에는 이 
     -   명령 프롬프트에서 설치 스크립트 파일을 참조할 때는 파일의 전체 경로를 제공해야 합니다. 예를 들어 설치 초기화 파일의 이름이 Setup.ini이고 C:\Setup 폴더에 파일이 저장되어 있으면 명령 프롬프트에서 **setup /script c:\setup\setup.ini**를 입력합니다.  
 
 -   설치 프로그램을 실행하는 계정에 컴퓨터에 대한 **관리자** 권한이 있어야 합니다. 무인 스크립트로 설치 프로그램을 실행하는 경우 **관리자 권한으로 실행** 옵션을 사용하여 명령 프롬프트 창을 엽니다.   
-

@@ -4,24 +4,22 @@ description: "System Center Configuration Manager용 Technical Preview 버전 16
 ms.custom: na
 ms.date: 01/23/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 684a5559-9e6e-469b-86ae-e768e9f0c9ac
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: noindex,nofollow
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
-ms.openlocfilehash: d36de897e6407ec7431d4dbe24ad04423aee2ca1
-ms.contentlocale: ko-kr
-ms.lasthandoff: 01/24/2017
-
+ms.openlocfilehash: 26b0d8ea7b3e841c48945df55f8860394a98a29f
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="capabilities-in-technical-preview-1604-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1604의 기능
 
@@ -172,4 +170,3 @@ Passport를 사용하면 암호 대신 사용자 제스처를 사용하여 로�
 
 ##  <a name="BKMK_Smart"></a> Android 장치에 대한 SmartLock 설정  
  새 설정인 **스마트 잠금 및 기타 신뢰 에이전트 허용**이 **Android 및 삼성 KNOX** 구성 항목에 추가되었습니다. 이를 통해 호환되는 Android 장치에서 SmartLock 기능을 제어할 수 있습니다. 신뢰 에이전트라고도 하는 이 전화 기능을 통해 장치가 특정 Bluetooth 장치에 연결된 경우 또는 NFC 태그에 가까이 있는 경우와 같이 신뢰할 수 있는 위치에 있는 경우 장치 잠금 화면 암호를 사용하지 않도록 설정하거나 무시할 수 있습니다. 이 설정을 사용하면 최종 사용자가 SmartLock을 구성하지 않도록 방지할 수 있습니다.  
-

@@ -6,23 +6,20 @@ ms.date: 12/30/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 66f7759c-6272-4116-aad7-0d05db1d46cd
-caps.latest.revision: 8
-caps.handback.revision: 0
+caps.latest.revision: "8"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 468673581e0464fab21397c472b76708b8a5438b
 ms.openlocfilehash: 25619d91522193178e0415f649ca4b34c94ecc89
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/31/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="plan-a-content-deployment-migration-strategy-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 콘텐츠 배포 마이그레이션 전략 계획
 
@@ -211,4 +208,3 @@ Configuration Manager 콘솔의 **원본 계층** 노드에서 재할당할 수 
  콘텐츠를 마이그레이션할 때 사용되는 네트워크 대역폭을 최소화하려면 네트워크에서 원본 계층의 콘텐츠 위치에 가까운 대상 계층의 사이트로 콘텐츠 소유권을 이전하는 것이 좋습니다. 대상 계층의 콘텐츠에 대한 정보는 전체에서 공유되므로 모든 사이트에서 사용할 수 있습니다.  
 
  콘텐츠 관련 정보는 데이터베이스 복제를 통해 모든 사이트에 공유되지만 기본 사이트에 할당한 후 다른 기본 사이트의 배포 지점에 배포한 콘텐츠는 파일 기반 복제를 통해 전송됩니다. 이 전송은 중앙 관리 사이트를 경유한 다음 다른 기본 사이트로 라우팅됩니다. 사이트를 콘텐츠 소유자로 할당하는 경우 마이그레이션 전이나 도중에 여러 기본 사이트에 배포할 패키지를 중앙에서 관리하면 대역폭이 낮은 네트워크를 통한 데이터 전송을 줄일 수 있습니다.
-

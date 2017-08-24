@@ -6,22 +6,19 @@ ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: fdcee455-22e3-451d-bcf3-e7b62792f04a
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 017bd5b899b364fc832c721d63cc7dbad0a11671
 ms.openlocfilehash: 212c73fcb947c3b56da6055bf47fe078301ad90d
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="endpoint-protection-client-help"></a>Endpoint Protection 클라이언트 도움말
 
@@ -61,4 +58,3 @@ Windows Defender 설정을 보려면 PC에서 `Windows Defender`를 검색합니
 ### <a name="see-also"></a>참고 항목  
  [Endpoint Protection 클라이언트에 대한 질문과 대답](endpoint-protection-client-faq.md)   
  [Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결](troubleshoot-endpoint-client.md)
-

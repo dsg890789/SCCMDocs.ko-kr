@@ -5,22 +5,20 @@ ms.custom: na
 ms.date: 11/23/2016
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: f7eb0803-3f8f-4ab6-825a-99ac11f5ba7d
-caps.latest.revision: 40
+caps.latest.revision: "40"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ROBOTS: NOINDEX, NOFOLLOW
-ms.translationtype: Human Translation
-ms.sourcegitcommit: db673277d1cc2d24e8dba2439b2b1891c883ebd0
 ms.openlocfilehash: 8b80f4d14eafa4cbbfb083178a118bc0e71f4019
-ms.contentlocale: ko-kr
-ms.lasthandoff: 06/16/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="what39s-new-in-version-1610-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1610의 새로운 기능
 
@@ -316,4 +314,3 @@ Microsoft는 맬웨어, 위험한 앱 등을 장치에서 검색하여 iOS 및 A
 
 #### <a name="device-capability-settings"></a>장치 기능 설정
 - **무료 Wi-Fi 핫스팟에 자동 연결 허용**
-

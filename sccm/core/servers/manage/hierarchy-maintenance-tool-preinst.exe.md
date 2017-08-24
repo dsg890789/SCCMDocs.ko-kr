@@ -6,22 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: cead6825-6113-4ba5-a381-ac3598dfee86
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
 ms.openlocfilehash: f3ddeaadfb1418aeeaacdca47768600c86b59083
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="hierarchy-maintenance-tool-preinstexe-for-system-center-configuration-manager"></a>System Center Configuration Manager용 계층 구조 유지 관리 도구(Preinst.exe)
 
@@ -125,4 +123,3 @@ Service Manager를 사용하여 사이트 구성 요소 관리자 서비스를 �
 3.  /keyforchild 옵션은 시스템 드라이브 루트에 있는 **&lt;사이트 코드\>.CT5** 파일에 상위 사이트의 공개 키를 배치합니다.  
 
 4.  **&lt;사이트 코드\>.CT5** 파일을 하위 사이트의 **&lt;설치 디렉터리\>\inboxes\hman.box** 디렉터리로 이동합니다.  
-

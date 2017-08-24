@@ -6,22 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8eed50f5-80a4-422e-8aa6-a7ccb2171475
-caps.latest.revision: 8
-caps.handback.revision: 0
+caps.latest.revision: "8"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
 ms.openlocfilehash: a8b1a42c43438553cfbb62328bed933378bb344c
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="deploy-windows-to-go-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows to Go 배포
 
@@ -468,4 +466,3 @@ ms.lasthandoff: 12/16/2016
 
 ###  <a name="BKMK_UserLogsIn"></a> Windows 8에 로그인  
  Configuration Manager의 프로비전 프로세스가 완료되고 Windows 8 잠금 화면이 표시되면 사용자는 운영 체제에 로그인할 수 있습니다.  
-

@@ -6,22 +6,19 @@ ms.date: 1/30/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9b0a7859-747f-4495-a2f4-13fd5991f897
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
 ms.openlocfilehash: 28593d271603ff9775425327996d844d7ed358cd
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="interoperability-between-different-versions-of-system-center-configuration-manager"></a>서로 다른 버전의 System Center Configuration Manager 간 상호 운용성
 
@@ -86,4 +83,3 @@ System Center Configuration Manager의 여러 독립적인 계층 구조를 동�
 |----------------------------------|----------------------|  
 |System Center 2012 Configuration Manager 및 System Center Configuration Manager가 둘 다 포함된 환경|Configuration Manager 사이트를 관리하려면 콘솔 및 콘솔이 연결하는 사이트에서 동일한 버전의 Configuration Manager를 실행해야 합니다. 예를 들어 System Center 2012 Configuration Manager 콘솔을 사용하여 System Center Configuration Manager 사이트를 관리할 수 없으며, 그 반대의 경우도 마찬가지입니다.<br /><br /> System Center 2012 Configuration Manager 콘솔과 System Center Configuration Manager 콘솔을 동일한 컴퓨터에 설치할 수 없습니다.|  
 |여러 버전의 System Center Configuration Manager가 설치된 환경|System Center Configuration Manager는 한 컴퓨터에서 둘 이상의 Configuration Manager 콘솔 설치를 지원하지 않습니다. 각기 다른 버전의 System Center Configuration Manager와 관련된 여러 콘솔을 사용하려면 각 콘솔을 별도의 컴퓨터에 설치해야 합니다.<br /><br /> 한 계층 구조의 사이트를 새 버전으로 업데이트하는 동안 최신 버전을 실행하는 사이트에 콘솔을 연결하고 해당 계층 구조의 다른 사이트에 대한 정보를 볼 수 있습니다. 그러나 콘솔 버전과 Configuration Manager 사이트 버전 간의 차이로 인해 데이터 문제가 발생할 수 있고 최신 제품 버전에서 사용 가능한 일부 기능을 콘솔에서 사용할 수 없기 때문에 이 구성은 사용하지 않는 것이 좋습니다. <br /></br /> 사이트 버전이 일치하지 않는 버전으로 콘솔을 사용하는 경우 사이트 관리가 지원되지 않습니다. 이렇게 하면 데이터의 손실이 발생할 수 있으며 사이트를 위험하게 할 수 있습니다. 예를 들어, 1606 버전을 실행하는 사이트를 관리하는 데 1610 버전의 콘솔 사용이 지원되지 않습니다. |
-

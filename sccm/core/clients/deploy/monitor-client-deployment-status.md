@@ -6,23 +6,20 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 20a573b3-53cb-4ed5-bae1-7542f533ed20
-caps.latest.revision: 11
-caps.handback.revision: 0
+caps.latest.revision: "11"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 52d2e088b8db3c2e9a0af640ca3db72b9fd7af60
-ms.openlocfilehash: 0ca218e4276699dd9029308e1d8ac524563da7c5
-ms.contentlocale: ko-kr
-ms.lasthandoff: 01/03/2017
-
-
+ms.openlocfilehash: 3d9d02d8c56aea17e563112f92173c2b56781da6
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-monitor-client-deployment-status-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트 배포 상태를 모니터링하는 방법
 
@@ -65,4 +62,3 @@ ms.lasthandoff: 01/03/2017
  배포된 클라이언트 상태를 모니터링하려면 [System Center Configuration Manager에서 클라이언트를 모니터링하는 방법](../../../core/clients/manage/monitor-clients.md)을 참조하세요.  
 
  Configuration Manager 보고서를 사용하면 사이트 내 클라이언트의 상태에 대해 더 많은 정보를 확인할 수 있습니다. 보고서 실행 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고 기능](../../../core/servers/manage/reporting.md)을 참조하세요.  
-

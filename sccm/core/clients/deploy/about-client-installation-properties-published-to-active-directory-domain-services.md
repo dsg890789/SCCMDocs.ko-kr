@@ -6,22 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 101d7d4d-92db-419d-b2ae-3c1c1dea68e9
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: bc610b495047c49853c0a8f478cbf2773c0d3603
-ms.openlocfilehash: e50095ef618ec40a51c29ef2c8116f8e07401bd1
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/16/2016
-
+ms.openlocfilehash: 744bc3792a02f13d3cf940cd1a4f2fd8749ee2f4
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="about-client-installation-properties-published-to-active-directory-domain-services"></a>Active Directory Domain Services에 게시된 클라이언트 설치 속성 정보
 
@@ -127,4 +125,3 @@ System Center Configuration Manager용으로 Active Directory 스키마를 확�
 -   Active Directory Domain Services에 게시되지 않은 Configuration Manager 사이트에 할당된 클라이언트  
 
 -   인터넷상에 있을 때 설치된 클라이언트  
-

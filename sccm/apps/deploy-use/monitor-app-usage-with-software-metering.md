@@ -6,22 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b1fdaee2-2816-4447-94cd-609f6948f215
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: a85a5cece803e5c16da71f897d5780049fbb82cd
 ms.openlocfilehash: eddf20bebd80028336503957dfc4c3d1dbbb23f2
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="software-metering-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 계량
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -178,9 +176,3 @@ ms.openlocfilehash: eddf20bebd80028336503957dfc4c3d1dbbb23f2
 - 매주 소프트웨어 계량 보고서를 계속 확인하고 필요한 경우 수정 작업을 수행합니다.
 
  이 과정에서 더 이상 필요 없는 응용 프로그램이 제거되어 IT 지원 및 라이선스 비용이 줄어듭니다. 또한 이제 지원 센터에서 레거시 응용 프로그램을 실행하는 사용자 목록을 갖게 되었습니다.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

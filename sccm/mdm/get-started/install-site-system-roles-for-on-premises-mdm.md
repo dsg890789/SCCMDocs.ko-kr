@@ -6,22 +6,19 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: c3cf9f64-c2b9-4ace-9527-2aba6d4eef04
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: Mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b
-ms.openlocfilehash: 916b971f851f968f6534ac834bd3182cc61614aa
-ms.contentlocale: ko-kr
-ms.lasthandoff: 01/24/2017
-
-
+ms.openlocfilehash: 4913606e2f8a36e0004f711b24ecd836d0485124
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="install-site-system-roles-for-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 위한 사이트 시스템 역할 설치
 
@@ -73,4 +70,3 @@ System Center Configuration Manager 온\-프레미스 모바일 장치 관리를
      이렇게 하면 관리 지점이 장치 관리 지점이 됩니다.  
 
  사이트 시스템 역할이 추가되고 최신 장치를 관리하도록 구성되면 해당 역할을 호스트하는 서버를 관리되는 장치에 등록하고 통신하기 위한 신뢰할 수 있는 끝점으로 구성해야 합니다. 자세한 내용은 [System Center Configuration Manager에서 온-프레미스 모바일 장치 관리를 위해 신뢰할 수 있는 통신에 대한 인증서 설정](../../mdm/get-started/set-up-certificates-on-premises-mdm.md)을 참조하세요.  
-

@@ -6,23 +6,20 @@ ms.date: 2/6/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: bc15ee7e-4d0a-4463-ae2c-f72d8d45d65d
-caps.latest.revision: 17
-caps.handback.revision: 0
+caps.latest.revision: "17"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 88649111ea3a38c027efb4952211546afd0bf27e
 ms.openlocfilehash: 58beef440db8e019a06ce7c4c8eaabc8e85ce954
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="prepare-active-directory-for-site-publishing"></a>사이트 게시를 위해 Active Directory 준비
 
@@ -112,4 +109,3 @@ Configuration Manager의 스키마를 확장하려면:
  컨테이너를 설정하고 권한을 부여했으며 Configuration Manager 기본 사이트를 설치한 후에는 Active Directory에 데이터를 게시하도록 해당 사이트를 설정할 수 있습니다.  
 
  게시에 대한 자세한 내용은 [System Center Configuration Manager용으로 사이트 데이터 게시](../../../core/servers/deploy/configure/publish-site-data.md)를 참조하세요.  
-

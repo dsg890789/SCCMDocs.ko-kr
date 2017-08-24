@@ -6,20 +6,19 @@ ms.date: 1/3/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: cd74e5f5-33f6-4566-8c9d-d6a93bfe71ed
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: e7075eb675353be130fdcc867d9e4dd1009dab35
 ms.openlocfilehash: 47da3c531289ddf13d357bde8bbda85d79ed2803
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="language-packs-in-system-center-configuration-manager"></a>System Center Configuration Manager의 언어 팩
 
@@ -27,7 +26,7 @@ ms.openlocfilehash: 47da3c531289ddf13d357bde8bbda85d79ed2803
 
 이 항목에서는 System Center Configuration Manager의 언어 지원에 대한 기술적인 세부 정보를 제공합니다.  
 
-## <a name="a-namebkmksuplanguagepacksa-supported-operating-system-languages"></a><a name="BKMK_SupLanguagePacks"></a> 지원되는 운영 체제 언어  
+## <a name="BKMK_SupLanguagePacks"></a> 지원되는 운영 체제 언어  
  중앙 관리 사이트와 기본 사이트에 **서버 언어 팩** 또는 **클라이언트 언어 팩**을 설치하여 다음 표의 표시 언어에 대한 지원을 설치할 수 있습니다. 사이트를 설치하는 동안 사이트에서 지원할 서버 및 클라이언트 언어를 사용 가능한 언어 팩 파일에서 선택합니다.
 
  필수 구성 요소 및 재배포 가능 파일 다운로드의 일부로 설치 프로그램을 실행하면 언어 팩 파일이 다운로드됩니다. [설치 다운로더](setup-downloader.md)를 사용하여 설치 프로그램을 실행하기 전에 이러한 파일을 다운로드할 수도 있습니다.   
@@ -95,9 +94,3 @@ Configuration Manager 클라이언트를 실행하는 컴퓨터에 설치된 언
  **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CCMSetup\InstalledLangs**  
 
 하드웨어 인벤토리를 사용하여 이 정보를 수집한 후에 사용자 지정 보고서를 작성하여 언어 세부 정보를 확인할 수 있습니다. 사용자 지정 하드웨어 인벤토리를 수집하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 하드웨어 인벤토리를 구성하는 방법](../../../../core/clients/manage/inventory/configure-hardware-inventory.md)을 참조하세요. 보고서를 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고 작업 및 유지 관리](../../../../core/servers/manage/operations-and-maintenance-for-reporting.md) 항목에서 [Configuration Manager 보고서 관리](../../../../core/servers/manage/operations-and-maintenance-for-reporting.md#BKMK_ManageReports) 섹션을 참조하세요.  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
-

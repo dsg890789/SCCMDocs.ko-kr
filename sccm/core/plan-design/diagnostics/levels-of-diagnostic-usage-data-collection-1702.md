@@ -6,12 +6,11 @@ ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d43ab033-2902-4681-8716-b4b17a6df372
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
@@ -33,12 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
 ms.openlocfilehash: 0e1d93712150fb3d6fabc3f057711eba1194c3ad
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1702-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1702에 대한 진단 사용 현황 데이터 수집의 수준
 
@@ -468,4 +466,3 @@ System Center Configuration Manager 버전 1702에서 이 수준에는 다음이
 - Intune에서 관리하는 장치에 대한 EAS 조건부 액세스 정책 유형(차단 또는 격리)
 
 - 비즈니스용 Windows 스토어 응용 프로그램 정보(AppID, 온라인 상태 또는 오프라인 상태, 구입한 총 라이선스 수를 포함하여 동기화된 응용 프로그램의 비집계 목록)
-

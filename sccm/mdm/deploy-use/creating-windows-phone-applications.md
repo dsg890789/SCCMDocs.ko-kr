@@ -6,22 +6,19 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 68fe11fa-5fb2-4b81-b0f5-b6f2392fb4ad
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 6d5d5eb9e4bf0297e2d86bf591dab5b3f42c95fa
-ms.contentlocale: ko-kr
-ms.lasthandoff: 03/06/2017
-
-
+ms.openlocfilehash: 6cbf2389a72c0c384ef8e84a1755ac77b64bfc6d
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-windows-phone-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 Windows Phone 응용 프로그램 만들기
 
@@ -66,4 +63,3 @@ Configuration Manager 응용 프로그램 및 배포 유형을 만드는 데 필
 |**단계 5:** Microsoft Intune 구독 마법사에 회사 포털 앱을 추가했을 때 자동으로 생성된 배포를 삭제합니다.|Microsoft Intune 구독 마법사에서 이 앱의 자동 배포를 만들었는데 이 배포는 대체를 지원하지 않습니다.|  
 |**6단계:** 응용 프로그램의 새 배포를 만듭니다. **소프트웨어 배포 마법사**의 **배포 설정** 페이지에서 **이 응용 프로그램의 대체된 버전을 자동으로 업그레이드**를 선택합니다.|교체 관계로 만든 응용 프로그램을 사용하여 교체가 포함된 새 배포를 만듭니다.|  
 |**7단계(선택 사항):** 교체하는 앱은 기본적으로 7일 후에 장치에 설치됩니다. 이전에 등록된 장치에 더 빠르게 회사 포털 앱을 배포하려면 **배포의 재평가 일정** 설정을 더 낮은 값으로 변경합니다.<br /><br /> 이 값을 기본값보다 낮게 설정하면 네트워크 및 클라이언트 컴퓨터의 성능에 부정적인 영향을 미칠 수 있습니다.|추가 정보가 없습니다.|  
-

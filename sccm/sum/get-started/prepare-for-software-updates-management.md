@@ -1,5 +1,4 @@
 ---
-
 title: "소프트웨어 업데이트 관리 준비 | Microsoft 문서"
 description: "업데이트 관리를 준비하려면 System Center Configuration Manager 콘솔에 준수 평가 데이터가 표시되도록 이 작업을 완료합니다."
 keywords: 
@@ -10,16 +9,14 @@ ms.date: 10/06/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: 01907900-e28b-4cd7-9479-42906416707b
-translationtype: Human Translation
-ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
 ms.openlocfilehash: 5c34bd1ea108dffda10c30281fb9c97ba38ae1ae
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="prepare-for-software-updates-management"></a>소프트웨어 업데이트 관리 준비
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -37,9 +34,3 @@ System Center Configuration Manager 콘솔에 소프트웨어 업데이트의 �
 
 ## <a name="step-4-manage-settings-for-software-updates"></a>4단계: 소프트웨어 업데이트 설정 관리
 소프트웨어 업데이트를 동기화한 후 소프트웨어 업데이트를 배포하기 전에 Configuration Manager 클라이언트 설정, 그룹 정책 구성 및 소프트웨어 업데이트 설정을 확인합니다. 자세한 내용은 [소프트웨어 업데이트 설정 관리](manage-settings-for-software-updates.md)를 참조하세요.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

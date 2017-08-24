@@ -6,23 +6,20 @@ ms.date: 2/6/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: d6993bba-f6bd-4639-adbf-efc1c638b2f3
-caps.latest.revision: 15
-caps.handback.revision: 0
+caps.latest.revision: "15"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: bd20983eeca47bdd63e0385440e6c8d64901b902
 ms.openlocfilehash: 4a2a8f96a900a2c4959ae3ff59232771ece95991
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="set-up-firewalls-ports-and-domains-for-system-center-configuration-manager"></a>System Center Configuration Manager용 방화벽, 포트 및 도메인 설정
 
@@ -36,4 +33,3 @@ System Center Configuration Manager 지원을 위해 네트워크를 준비하�
 |사이트 서버와 클라이언트가 사용해야 할 수 있는**도메인 및 서비스**.|Configuration Manager 기능을 사용하려면 사이트 서버와 클라이언트에 Windowsudpate.microsoft.com 또는 Microsoft Intune 서비스와 같은 인터넷의 특정 서비스와 도메인에 대한 액세스 권한이 필요할 수 있습니다.<br /><br /> Microsoft Intune을 사용하여 모바일 장치를 관리하려는 경우에는 [Intune에 필요한 포트와 도메인](https://docs.microsoft.com/en-us/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)에 대한 액세스 권한도 구성해야 합니다.|  
 |사이트 시스템 서버 및 클라이언트 통신용**프록시 서버** . 여러 사이트 시스템 서버와 클라이언트에 대해 각기 다른 프록시 서버를 지정할 수 있습니다.|이러한 구성은 사이트 시스템 역할이나 클라이언트를 설치할 때 수행하므로, 사이트 시스템 역할 및 클라이언트를 구성할 때는 나중에 참조할 수 있도록 프록시 서버 구성만 확인하면 됩니다.<br /><br /> 배포에서 프록시 서버를 사용해야 하는지 여부를 모르는 경우 [System Center Configuration Manager의 프록시 서버 지원](../../../core/plan-design/network/proxy-server-support.md)을 검토하여 프록시 서버를 사용할 수 있는 사이트 시스템 역할 및 클라이언트 작업에 대해 확인하세요.|   
 |  
-

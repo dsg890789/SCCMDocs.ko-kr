@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 5ee5928f-3d72-4b00-8156-1e0d1030a96c
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: 5632a753fc565312a80b2ed69ce438335b3fad50
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-operating-system-deployment-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 운영 체제 배포의 보안 및 개인 정보
 
@@ -28,7 +27,7 @@ ms.openlocfilehash: 5632a753fc565312a80b2ed69ce438335b3fad50
 
 이 항목에는 System Center Configuration Manager에서 운영 체제 배포에 대한 보안 및 개인 정보가 포함되어 있습니다.  
 
-##  <a name="a-namebkmksecurityhardwareinventorya-security-best-practices-for-operating-system-deployment"></a><a name="BKMK_Security_HardwareInventory"></a> 운영 체제 배포의 보안 모범 사례  
+##  <a name="BKMK_Security_HardwareInventory"></a> 운영 체제 배포의 보안 모범 사례  
  Configuration Manager를 사용하여 운영 체제를 배포할 때 따라야 할 보안 모범 사례는 다음과 같습니다.  
 
 -   **부팅 가능한 미디어를 보호하기 위해 액세스 제어 구현**  
@@ -193,7 +192,7 @@ ms.openlocfilehash: 5632a753fc565312a80b2ed69ce438335b3fad50
 
      컬렉션 변수를 사용하면 운영 체제를 유연하게 배포할 수 있지만 이로 인해 정보가 노출될 수 있습니다.  
 
-##  <a name="a-namebkmkprivacyhardwareinventorya-privacy-information-for-operating-system-deployment"></a><a name="BKMK_Privacy_HardwareInventory"></a> 운영 체제 배포에 대한 개인 정보  
+##  <a name="BKMK_Privacy_HardwareInventory"></a> 운영 체제 배포에 대한 개인 정보  
  Configuration Manager를 사용하여 운영 체제가 없는 컴퓨터에 운영 체제를 배포할 수 있을 뿐 아니라 한 컴퓨터에서 다른 컴퓨터로 사용자 파일과 설정을 마이그레이션할 수 있습니다. 관리자는 개인적 데이터 파일, 구성 설정 및 브라우저 쿠키를 포함하여 전송할 정보를 구성합니다.  
 
  정보는 상태 마이그레이션 지점에 저장되고 전송 또는 저장 도중 암호화된 상태를 유지합니다. 상태 정보와 연결된 새 컴퓨터에서 정보를 검색할 수 있습니다. 새 컴퓨터가 정보를 검색하는 키를 분실한 경우 컴퓨터 연합 인스턴스 개체에 대한 '복구 정보 보기' 권한이 있는 Configuration Manager 관리자가 정보에 액세스하고 정보를 새 컴퓨터에 연결할 수 있습니다. 새 컴퓨터에서 상태 정보가 복원되면 기본적으로 만 하루 뒤에 데이터가 삭제됩니다. 삭제하도록 표시한 데이터를 상태 마이그레이션 지점에서 제거하는 시점을 구성할 수 있습니다. 상태 마이그레이션 정보는 사이트 데이터베이스에 저장되지 않으며, Microsoft로 전송되지도 않습니다.  
@@ -207,9 +206,3 @@ ms.openlocfilehash: 5632a753fc565312a80b2ed69ce438335b3fad50
  Configuration Manager는 운영 체제 배포를 기본적으로 구현하지 않으므로, 사용자 상태 정보를 수집하거나 작업 순서나 부팅 이미지를 만들기 전에 여러 구성 단계를 수행해야 합니다.  
 
  운영 체제 배포를 구성하기 전에 개인 정보 보호 요구 사항을 고려하십시오.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

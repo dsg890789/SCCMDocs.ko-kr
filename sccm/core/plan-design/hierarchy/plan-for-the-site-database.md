@@ -6,23 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 104fb4cc-6e83-40a3-8e6b-ac909fb9ec7d
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: cec63ed7781e236dbf5e8baa0a468193ea794339
 ms.openlocfilehash: d4efe1f013dbb74efca79cd27f7248fc085c7424
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="plan-for-the-site-database-for-system-center-configuration-manager"></a>System Center Configuration Manager용 사이트 데이터베이스에 대한 계획
 
@@ -63,4 +60,3 @@ ms.lasthandoff: 05/17/2017
 
 
 일반적으로 사이트 시스템 서버는 단일 Configuration Manager 사이트의 사이트 시스템 역할만 지원하지만 SQL Server를 실행하는 클러스터되거나 클러스터되지 않은 서버에서 SQL Server의 다른 인스턴스를 사용하면 다른 Configuration Manager 사이트의 데이터베이스를 호스트할 수 있습니다. 다른 사이트의 데이터베이스를 지원하려면 SQL Server의 각 인스턴스가 통신에 고유한 포트를 사용하도록 구성해야 합니다.  
-

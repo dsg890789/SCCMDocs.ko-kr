@@ -6,12 +6,11 @@ ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: eb20eb90-bcc0-41de-bfea-638ea470c0dd
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
@@ -33,12 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 688e05aae0e0b15b54835f8d64a98487f4d7b64d
-ms.openlocfilehash: 82bcd1a9fe22bf7ecc2dc5765f64f5198494152e
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/30/2016
-
+ms.openlocfilehash: ba1e53fdc895690bb958c12d59f82a26067ecad3
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1610-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1610에 대한 진단 사용 현황 데이터 수집의 수준
 
@@ -64,13 +62,13 @@ System Center Configuration Manager 버전 1610에서는 **기본**, **고급**,
 
 
 -   설정 정보:
-       - 빌드, 설치 유형, 언어 팩, 사용하도록 설정한 기능  
+      - 빌드, 설치 유형, 언어 팩, 사용하도록 설정한 기능  
 
-       - 업데이트 팩 배포 상태 및 오류, 다운로드 진행률 및 필수 구성 요소 오류     
+      - 업데이트 팩 배포 상태 및 오류, 다운로드 진행률 및 필수 구성 요소 오류    
 
-       - 업그레이드 후 스크립트의 버전
+      - 업그레이드 후 스크립트의 버전
 
-       - 업데이트 빠른 링 사용
+      - 업데이트 빠른 링 사용
 
     - ***[새로운 기능]*** 시험판 사용, 설치 미디어 유형, 분기 유형
 
@@ -265,7 +263,7 @@ System Center Configuration Manager 버전 1610에서 이 수준에는 다음이
 
     -   Endpoint Protection 기능에 대해 구성된 경고 개수  
 
-    -     ATP(Advanced Threat Protection) 정책(정책 개수 및 정책 배포 여부)
+    -   ATP(Advanced Threat Protection) 정책(정책 개수 및 정책 배포 여부)
 
 
 - **마이그레이션:**
@@ -438,4 +436,3 @@ System Center Configuration Manager 버전 1610에서 이 수준에는 다음이
 -   자세한 클라이언트 배포 설치 오류
 
 - ***[새로운 기능]*** 비즈니스용 Windows 스토어 응용 프로그램 정보(AppID, 온라인 상태 또는 오프라인 상태, 구입한 총 라이선스 수를 포함하여 동기화된 응용 프로그램의 비집계 목록)
-

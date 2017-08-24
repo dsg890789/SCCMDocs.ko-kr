@@ -9,14 +9,13 @@ ms.date: 12/07/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: 304a83ea-0f72-437d-9688-2e6e0c7526dd
-translationtype: Human Translation
-ms.sourcegitcommit: af5f58dd5fe1f19d7a70cb9516af159c6682d194
 ms.openlocfilehash: ae09a02dd5d67113b9a7e2ce146c844efa4caf55
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 >[!IMPORTANT]
 >이는 Configuration Manager 버전 1606 및 버전 1610에서 제공되는 시험판 기능입니다. 시험판 기능은 프로덕션 환경의 초기 테스트를 위한 제품에 포함되었지만 이러한 기능은 프로덕션 준비가 된 것으로 간주되지 않아야 합니다. 이 기능을 사용하려면 사용자가 설정해야 합니다. 자세한 내용은 [업데이트에서 시험판 기능 사용](https://docs.microsoft.com/sccm/core/servers/manage/install-in-console-updates#bkmk_prerelease)을 참조하세요.
@@ -89,9 +88,3 @@ System Center Configuration Manager 버전 1606부터, 컬렉션에 대한 서�
 1.  **자산 및 준수** 작업 영역에서 **장치 컬렉션**을 클릭하고 배포 잠금을 제거할 컬렉션을 클릭합니다.  
 
 2.  **홈** 탭의 **배포** 그룹에서 **서버 그룹 배포 잠금 제거**를 클릭합니다. 클라이언트가 소프트웨어 업데이트를 설치하지 못한 경우와 다른 클라이언트가 해당 소프트웨어 업데이트를 설치하지 못하도록 하는 경우 배포 잠금을 수동으로 제거할 수 있습니다.  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
-

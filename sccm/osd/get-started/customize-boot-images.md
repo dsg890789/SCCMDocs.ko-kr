@@ -6,23 +6,20 @@ ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9cbfc406-d009-446d-8fee-4938de48c919
-caps.latest.revision: 15
-caps.handback.revision: 0
+caps.latest.revision: "15"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
 ms.openlocfilehash: ab2ecb64c9c80b4effed79ba08769c99473db0c4
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="customize-boot-images-with-system-center-configuration-manager"></a>System Center Configuration Manager로 부팅 이미지 사용자 지정
 
@@ -302,4 +299,3 @@ Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deploy
     3.  3단계에서 확인한 부팅 이미지를 클릭합니다.  
 
     4.  **홈** 탭의 **배포** 그룹에서 **배포 지점 업데이트**를 클릭합니다.  
-

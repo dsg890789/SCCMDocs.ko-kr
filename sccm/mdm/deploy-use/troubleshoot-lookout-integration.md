@@ -6,8 +6,7 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e36b98c7-d0f4-4dd6-bac3-6a6c4b4bf841
@@ -15,13 +14,11 @@ caps.latest.revision:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 399e8b9e2e2dd4621abb6ffca765ce2a69d86b9e
-ms.contentlocale: ko-kr
-ms.lasthandoff: 03/06/2017
-
-
+ms.openlocfilehash: 4fd2d3b8aae6a2f42e7c6a87723d16368be30984
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Intune과 Lookout 통합 문제 해결
 
@@ -87,4 +84,3 @@ Lookout MTP 콘솔의 **장치** 모듈로 이동한 다음 **삭제**를 선택
 [Android 장치에 Lookout for Work를 설치하라는 메시지가 표시됨]( http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 
 [Lookout for Work가 Android 장치에서 발견한 위협을 해결해야 함](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
-

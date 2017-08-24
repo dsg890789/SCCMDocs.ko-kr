@@ -6,22 +6,19 @@ ms.date: 06/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 17905b4c-3895-4ad4-a69c-5e0d0fc5a8c3
-caps.latest.revision: 44
+caps.latest.revision: "44"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 0ec241d07f51b80b84d65676ef1207b31a9a9983
 ms.openlocfilehash: be635e4df79b57b6f650287fa3774d2c10613cee
-ms.contentlocale: ko-kr
-ms.lasthandoff: 06/28/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="supported-operating-systems-for-system-center-configuration-manager-site-system-servers"></a>System Center Configuration Manager 사이트 시스템 서버에 대해 지원되는 운영 체제
 
@@ -315,4 +312,3 @@ KB3186654의 핫픽스 롤업이 포함된 1606 버전(또는 2016년 10월에 �
 -   64비트 버전만 지원됩니다.  
 
 -   이 운영 체제의 배포 지점은 PXE 또는 멀티캐스트를 지원하지 않습니다.
-

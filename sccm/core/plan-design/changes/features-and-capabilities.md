@@ -6,21 +6,20 @@ ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 5d388399-07ca-431c-a9b2-56c69771aa87
-caps.latest.revision: 18
-caps.handback.revision: 0
+caps.latest.revision: "18"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 53b27dcb5c8bb670556fe4cee9e990619a9a63e9
 ms.openlocfilehash: 4691f43dccdf73936107f4635321897b9779bead
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="features-and-capabilities-of-system-center-configuration-manager"></a>System Center Configuration Manager의 기능 및 특성
 
@@ -101,9 +100,3 @@ ms.openlocfilehash: 4691f43dccdf73936107f4635321897b9779bead
  **소프트웨어 업데이트**  
 
  기업에서 소프트웨어 업데이트를 관리하고, 배포하고, 모니터링할 수 있는 도구 및 리소스 집합을 제공합니다. [System Center Configuration Manager의 소프트웨어 업데이트 소개](/sccm/sum/understand/software-updates-introduction)를 참조하세요.  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
-

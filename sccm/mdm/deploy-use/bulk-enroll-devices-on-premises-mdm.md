@@ -1,5 +1,4 @@
 ---
-
 title: "장치 대량 등록 | Microsoft 문서 | 온-프레미스 MDM"
 description: "System Center Configuration Manager에서 온-프레미스 모바일 장치 관리를 사용하여 자동화된 방법으로 장치를 대량 등록합니다."
 ms.custom: na
@@ -7,23 +6,20 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: b36f5e4a-2b57-4d18-83f6-197081ac2a0a
-caps.latest.revision: 13
-caps.handback.revision: 0
+caps.latest.revision: "13"
+caps.handback.revision: "0"
 author: Mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3b1451edaed69a972551bd060293839aa11ec8b2
 ms.openlocfilehash: be9596537e9c80a6d78aa0685d33382bfd242afe
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-bulk-enroll-devices-with-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 온-프레미스 모바일 장치 관리를 사용하여 장치를 대량 등록하는 방법
 
@@ -168,4 +164,3 @@ System Center Configuration Manager 온-프레미스 모바일 장치 관리에�
 -   Configuration Manager 콘솔을 시작합니다.  
 
 -   마법사를 종료하려면 **자산 및 준수** > **개요** > **장치**에 필요한 사이트 시스템 역할 간의 신뢰할 수 있는 통신에 필요합니다. 등록된 장치가 목록에 표시됩니다.  
-

@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: a2742d52-851e-4abc-b623-d12d91684c0b
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
 ms.openlocfilehash: f16c87dfd0c4f80d96aedf7f5f7497f2bbd4752a
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="get-started-with-compliance-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 준수 설정 시작
 
@@ -83,9 +82,3 @@ System Center Configuration Manager 구성 항목을 만들기 전에 이 항목
 버전 업그레이드 정책을 사용하면 새 제품 키 또는 라이선스 파일을 제공하여 Windows 10의 특정 버전을 실행하는 장치를 자동으로 최신 버전으로 업그레이드할 수 있습니다.
 
 자세한 내용은 [버전 업그레이드 정책을 사용하여 Windows 장치 업그레이드](/sccm/compliance/deploy-use/upgrade-windows-version)를 참조하세요.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

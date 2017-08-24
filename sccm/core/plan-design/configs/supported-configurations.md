@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 45a10878-ff48-4318-9c6d-c014b38a4039
-caps.latest.revision: 9
-caps.handback.revision: 0
+caps.latest.revision: "9"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 6b8601a195e81e011c49ae8662ae224f36c82c0d
 ms.openlocfilehash: aad46e9ab893b9bb3e32d35c17b9678b3a265c99
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="supported-configurations-for-system-center-configuration-manager"></a>System Center Configuration Manager에서 지원되는 구성
 
@@ -72,9 +71,3 @@ Configuration Manager에서 사용할 수 있도록 지원되는 Windows 기술(
 
 -  [가상화 환경 지원](../../../core/plan-design/configs/support-for-virtualization-environments.md)  
 지원되는 가상 컴퓨터 기술을 사용하는 방법을 알아봅니다.
-
-
-
-<!--HONumber=Jan17_HO1-->
-
-

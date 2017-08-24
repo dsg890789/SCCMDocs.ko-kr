@@ -6,23 +6,20 @@ ms.date: 01/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 84802d55-112e-4f7f-9a48-74a80d91a0f4
-caps.latest.revision: 10
-caps.handback.revision: 0
+caps.latest.revision: "10"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
 ms.openlocfilehash: 87ab9925717a307cbda3cea1f2e470ae012fa067
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-drivers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 드라이버 관리
 
@@ -277,4 +274,3 @@ System Center Configuration Manager는 현재 Configuration Manager 환경에서
 
 ##  <a name="BKMK_DriverReports"></a> 드라이버 관리 보고서  
  **드라이버 관리** 보고서 범주에 속한 몇 가지 보고서를 사용하여 드라이버 카탈로그의 장치 드라이버에 대한 일반적인 정보를 확인할 수 있습니다. 보고서에 대한 자세한 내용은 [보고](../../core/servers/manage/reporting.md)를 참조하세요.
-

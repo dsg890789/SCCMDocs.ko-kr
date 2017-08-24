@@ -6,22 +6,20 @@ ms.date: 03/21/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 522c2e82-20eb-4f38-859b-d55640b24e32
-caps.latest.revision: 18
-caps.handback.revision: 0
+caps.latest.revision: "18"
+caps.handback.revision: "0"
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 51dc2cec2138c13f413853727ab956b2871d47b0
-ms.contentlocale: ko-kr
-ms.lasthandoff: 03/06/2017
-
+ms.openlocfilehash: 35b24294073956a6bdb14cae07705f56d31e00a9
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="confirm-domain-name-requirements-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하여 도메인 이름 요구 사항 확인
 
@@ -54,4 +52,3 @@ ms.lasthandoff: 03/06/2017
 
 > [!div class="button"]
 [< 이전 단계](create-mdm-collection.md)  [다음 단계 >](configure-intune-subscription.md)
-

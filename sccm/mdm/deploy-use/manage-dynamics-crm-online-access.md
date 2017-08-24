@@ -5,22 +5,20 @@ ms.custom: na
 ms.date: 03/05/2017
 ms.reviewer: na
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2bfc4c51-b25c-4c70-b81e-8a3b6ddf02c8
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 1579062f4ebfe2b59a81042a77bbc23387e9b058
-ms.contentlocale: ko-kr
-ms.lasthandoff: 03/06/2017
-
+ms.openlocfilehash: bd00f12ae3bc14a34d24c22c3d5277d275d51e85
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-dynamics-crm-online-access-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Dynamics CRM Online 액세스 관리
 
@@ -100,4 +98,3 @@ Dynamics CRM 정책에 사용할 두 가지 그룹 유형을 지정할 수 있�
 [SharePoint Online에 대한 액세스 관리](../../protect/deploy-use/manage-sharepoint-online-access.md)
 
 [비즈니스용 Skype Online에 대한 액세스 관리](../../protect/deploy-use/manage-skype-for-business-online-access.md)
-

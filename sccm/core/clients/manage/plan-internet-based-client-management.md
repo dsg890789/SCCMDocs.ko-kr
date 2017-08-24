@@ -6,23 +6,20 @@ ms.date: 05/16/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 83a7c934-3b11-435d-ba22-cbc274951e83
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ae60eb25383f4bd07faaa1265185a471ee79b1e9
 ms.openlocfilehash: 90c30bfb22735f73422f1547301552bf42022bb9
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="plan-for-internet-based-client-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 인터넷 기반 클라이언트 관리 계획
 
@@ -198,4 +195,3 @@ System Center Configuration Manager 클라이언트가 회사 네트워크에 �
      이 요구 사항을 지원하기 위한 구성 정보를 보려면 해당 방화벽 또는 프록시 서버 설명서를 참조하세요.  
 
      인터넷의 클라이언트 연결에 대해 소프트웨어 업데이트 지점을 사용할 경우 이와 비슷한 통신 요구 사항을 보려면 WSUS(Windows Server Update Services)용 설명서를 참조하세요. 예를 들어 Windows Server 2003의 WSUS는 보안 설정에 대한 배포 부록인 [부록 D: 보안 설정](http://go.microsoft.com/fwlink/p/?LinkId=143368)을 참조하세요.
-

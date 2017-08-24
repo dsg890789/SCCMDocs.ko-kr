@@ -6,21 +6,20 @@ ms.date: 1/3/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: d0e4ddc3-d9c4-4f5c-8b1f-af098e54f5c8
-caps.latest.revision: 31
-caps.handback.revision: 0
+caps.latest.revision: "31"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 9fa9a9b2f57106e36c45248feb400ec125adcad1
 ms.openlocfilehash: 75511c744d7d2bae960273c845ce68f06a82b697
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="resources-for-installing-system-center-configuration-manager-sites"></a>System Center Configuration Manager 사이트 설치용 리소스
 
@@ -51,9 +50,3 @@ ms.openlocfilehash: 75511c744d7d2bae960273c845ce68f06a82b697
 - [평가판 설치를 전체 설치로 업그레이드](upgrade-an-evaluation-install-to-a-full-install.md)
 
   평가 사이트를 정식 라이선스의 Configuration Manager 사이트로 업그레이드할 준비가 된 경우 이 항목을 읽습니다.
-
-
-
-<!--HONumber=Jan17_HO1-->
-
-

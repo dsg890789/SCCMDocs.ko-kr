@@ -6,21 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: b06f781b-ab25-4d9a-b128-02cbd7cbcffe
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
 ms.openlocfilehash: 130c053c9f2a1817dd85b1f3c01285aab19d59cb
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="database-replicas-for-management-points-for-system-center-configuration-manager"></a>System Center Configuration Manager의 관리 지점용 데이터베이스 복제본
 
@@ -511,4 +509,3 @@ System Center Configuration Manager 기본 사이트는 데이터베이스 복�
 4.  사이트 데이터베이스 서버에서 데이터베이스 복제본에 대한 게시를 다시 만듭니다. 자세한 내용은 이 항목의 [1단계 - 데이터베이스 복제본을 게시하도록 사이트 데이터베이스 서버 구성](#BKMK_DBReplica_ConfigSiteDB) 를 참조하세요.  
 
 5.  각 데이터베이스 복제 서버에서 데이터베이스 복제본에 대한 구독을 다시 만듭니다. 자세한 내용은 이 항목의 [2단계 - 데이터베이스 복제본 서버 구성](#BKMK_DBReplica_ConfigSrv) 를 참조하십시오.  
-

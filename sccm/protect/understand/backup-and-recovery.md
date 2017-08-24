@@ -6,23 +6,20 @@ ms.date: 6/5/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: f7832d83-9ae2-4530-8a77-790e0845e12f
-caps.latest.revision: 22
+caps.latest.revision: "22"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f7cd9c71287d62c9f5d36e2f032bc2a6065572ae
 ms.openlocfilehash: 7deb00d4b67eabf3238907b337a9d0367c3d99cc
-ms.contentlocale: ko-kr
-ms.lasthandoff: 06/06/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="back-up-a-configuration-manager-site"></a>Configuration Manager 사이트 백업
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -208,4 +205,3 @@ VSS는 시스템의 응용 프로그램이 볼륨에 쓰기를 계속하는 동�
 
 ## <a name="next-steps"></a>다음 단계
 백업을 만든 후 해당 백업으로 [사이트 복구](/sccm/protect/understand/recover-sites)를 연습해봅니다. 이렇게 하면 복구 프로세스에 미리 익숙해지고 원할 때 백업을 성공적으로 수행할 수 있게 됩니다.  
-

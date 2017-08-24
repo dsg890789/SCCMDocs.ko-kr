@@ -6,23 +6,20 @@ ms.date: 2/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: d09a82c6-bbd1-49ca-8ffe-e3ce87b85d33
-caps.latest.revision: 10
-caps.handback.revision: 0
+caps.latest.revision: "10"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ce0d7fc5f3d1812c4d62e551661c0ef89707567b
 ms.openlocfilehash: 53f119bbb1f8827a9c23c8b747840350bbb92790
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="use-a-sql-server-cluster-for-the-system-center-configuration-manager-site-database"></a>System Center Configuration Manager 사이트 데이터베이스에 SQL Server 클러스터 사용
 
@@ -103,4 +100,3 @@ ms.lasthandoff: 05/17/2017
 
     > [!IMPORTANT]  
     >  가상 SQL Server 클러스터 인스턴스의 이름을 입력할 때 Windows Server 클러스터에서 만들어진 가상 Windows Server 이름을 입력해서는 안 됩니다. 가상 Windows Server 이름을 사용하는 경우에는 활성 Windows Server 클러스터 노드의 로컬 하드 드라이브에 사이트 데이터베이스가 설치됩니다. 따라서 해당 노드에서 오류가 발생하는 경우 정상적인 장애 조치(Failover)가 수행되지 않습니다.  
-

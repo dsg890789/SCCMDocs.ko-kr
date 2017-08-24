@@ -7,20 +7,18 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.topic: article
 ms.assetid: d24257d8-8136-47f4-8e0d-34021356dc37
-caps.latest.revision: 2
+caps.latest.revision: "2"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
 ms.openlocfilehash: 5276ad999fc871496d79e6efff34d5edc6335380
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="configuration-manager-on-azure---frequently-asked-questions"></a>Azure의 Configuration Manager - 질문과 대답
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -41,11 +39,11 @@ ms.lasthandoff: 05/17/2017
 
 ### <a name="what-areas-should-i-pay-attention-to-when-considering-a-move-of-my-configuration-manager-infrastructure-to-azure"></a>Configuration Manager 인프라를 Azure로 이동할 때 주의해야 할 점은 무엇인가요?
 좋은 질문입니다. 이 작업을 수행할 때 가장 중요한 점은 다음과 같으며 각각 이 항목의 별도의 섹션에서 설명합니다.
-1.    네트워킹
-2.    가용성
-3.    성능
-4.    비용
-5.    사용자 환경
+1.  네트워킹
+2.  가용성
+3.  성능
+4.  비용
+5.  사용자 환경
 
 ## <a name="networking"></a>네트워킹
 ### <a name="what-about-networking-requirements-should-i-use-expressroute-or-an-azure-vpn-gateway"></a>네트워킹 요구 사항은 무엇인가요? ExpressRoute 또는 Azure VPN Gateway를 사용해야 하나요?
@@ -117,7 +115,7 @@ Configuration Manager는 Azure 부하 분산 장치에서 테스트되지 않았
 |**25,000 - 50,000**      | 사이트 서버: F4S </br>데이터베이스 서버: DS13_V2 | 사이트 서버: 1xP30 </br>데이터베이스 서버: 2xP30(스트라이프)   |
 |**50,000 - 100,000**     | 사이트 서버: F8S </br>데이터베이스 서버: DS14_V2 | 사이트 서버: 2xP30(스트라이프)   </br>데이터베이스 서버: 3xP30(스트라이프)   |
 
-다음은 Configuration Manager 설치 및 데이터베이스 파일에 대한 별도의 논리적 볼륨이 있고, 스트라이프 볼륨에 3xP30개 디스크가 포함된 DS14_V2의 50,000-100,000개 클라이언트에 대한 예제 구성입니다.  ![VM) 디스크](media/vm_disks.png)  
+다음은 Configuration Manager 설치 및 데이터베이스 파일에 대한 별도의 논리적 볼륨이 있고, 스트라이프 볼륨에 3xP30개 디스크가 포함된 DS14_V2의 50,000-100,000개 클라이언트에 대한 예제 구성입니다. ![VM) 디스크](media/vm_disks.png)  
 
 
 
@@ -181,4 +179,3 @@ Configuration Manager는 Azure 부하 분산 장치에서 테스트되지 않았
  - Express 경로에 대한 자세한 내용: http://azure.microsoft.com/documentation/articles/expressroute-introduction/
 
  
-

@@ -9,21 +9,14 @@ ms.date: 01/23/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: de78e8d3-043f-4cd3-97e0-4dfb824fd3fb
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 4e44e2b8f6baf020c3b7742bafd607082ffacaa4
 ms.openlocfilehash: f38f72f9f547b82c92789f02975cbd0193b79b2d
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
-
-
 # <a name="download-software-updates"></a>소프트웨어 업데이트 다운로드  
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -119,4 +112,3 @@ Configuration Manager에서 소프트웨어 업데이트를 다운로드하는 �
 9. On the **Summary** page, verify the settings that you selected in the wizard, and then click **Next** to download the software updates.  
 
 10. On the **Completion** page, verify that the software updates were successfully downloaded, and then click **Close**.  --->
-

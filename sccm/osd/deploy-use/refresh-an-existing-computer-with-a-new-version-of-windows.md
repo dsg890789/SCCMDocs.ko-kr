@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b189a346-8c0d-4870-a876-0719fbb0ab04
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: b247cbb68ed63a8eb99715a248686d68a28c53e2
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="refresh-an-existing-computer-with-a-new-version-of-windows-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 새 버전의 Windows로 기존 컴퓨터 새로 고침
 
@@ -29,7 +28,7 @@ ms.openlocfilehash: b247cbb68ed63a8eb99715a248686d68a28c53e2
 
  다음 섹션을 사용하여 새 버전의 Windows로 기존 컴퓨터를 새로 고치세요.  
 
-##  <a name="a-namebkmkplana-plan"></a><a name="BKMK_Plan"></a> 계획  
+##  <a name="BKMK_Plan"></a> 계획  
 
 -   **인프라 요구 사항 계획 및 구현**  
 
@@ -39,7 +38,7 @@ ms.openlocfilehash: b247cbb68ed63a8eb99715a248686d68a28c53e2
 
      기존 컴퓨터에서 설정을 캡처한 다음 설정을 새 운영 체제로 복원하려는 경우 상태 마이그레이션 지점을 설치해야 합니다. 자세한 내용은 [상태 마이그레이션 지점](../get-started/prepare-site-system-roles-for-operating-system-deployments.md#BKMK_StateMigrationPoints)을 참조하세요.  
 
-##  <a name="a-namebkmkconfigurea-configure"></a><a name="BKMK_Configure"></a> 구성  
+##  <a name="BKMK_Configure"></a> 구성  
 
 1.  **부팅 이미지 준비**  
 
@@ -66,7 +65,7 @@ ms.openlocfilehash: b247cbb68ed63a8eb99715a248686d68a28c53e2
     > [!NOTE]  
     >  이 시나리오에서 작업 순서는 컴퓨터의 하드 디스크를 포맷하고 파티션을 만듭니다. 사용자 설정을 캡처하려면 상태 마이그레이션 지점을 사용하고 작업 순서 만들기 마법사의 **상태 마이그레이션** 페이지에서 **상태 마이그레이션 지점에 사용자 설정 및 파일 저장** 을 선택해야 합니다. 사용자 설정 및 파일을 로컬로 저장하면 하드 디스크를 포맷할 때 손실되며 Configuration Manager에서 설정을 복원할 수 없게 됩니다. 자세한 내용은 [사용자 상태 관리](../get-started/manage-user-state.md)를 참조하세요.  
 
-##  <a name="a-namebkmkdeploya-deploy"></a><a name="BKMK_Deploy"></a> 배포  
+##  <a name="BKMK_Deploy"></a> 배포  
 
 -   다음 배포 방법 중 하나를 사용하여 운영 체제를 배포합니다.  
 
@@ -87,9 +86,3 @@ ms.openlocfilehash: b247cbb68ed63a8eb99715a248686d68a28c53e2
 -   **작업 순서 배포 모니터링**  
 
      운영 체제를 설치하는 작업 순서 배포를 모니터링하려면 [운영 체제 배포 모니터링](monitor-operating-system-deployments.md)을 참조하세요.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

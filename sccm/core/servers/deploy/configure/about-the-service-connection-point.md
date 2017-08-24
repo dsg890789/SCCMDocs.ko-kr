@@ -6,23 +6,20 @@ ms.date: 6/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: bc2282d5-0571-465b-9528-a555855eaacd
-caps.latest.revision: 18
-caps.handback.revision: 0
+caps.latest.revision: "18"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 0ec241d07f51b80b84d65676ef1207b31a9a9983
 ms.openlocfilehash: e3d41dc1bb732e887d722f39ee86deaf0aae3240
-ms.contentlocale: ko-kr
-ms.lasthandoff: 06/28/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="about-the-service-connection-point-in-system-center-configuration-manager"></a>System Center Configuration Manager의 서비스 연결 지점 정보
 
@@ -130,4 +127,3 @@ Microsoft에 대한 업로드 정보를 보려면 서비스 연결 지점을 실
 다음 순서도를 통해 업데이트 다운로드 및 다른 사이트에 대한 업데이트 복제에 관련된 프로세스 흐름 및 주요 로그 항목을 이해할 수도 있습니다.
  - [순서도 – 업데이트 다운로드](/sccm/core/servers/manage/download-updates-flowchart)
  - [순서도 – 업데이트 복제](/sccm/core/servers/manage/update-replication-flowchart)
-

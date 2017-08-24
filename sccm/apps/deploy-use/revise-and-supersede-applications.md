@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 30170d70-489f-47f7-bebf-9ed0115db26b
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: a04ac74df97741f49d7aae7b599bb60d5725a592
 ms.openlocfilehash: 28bea9210c9c58dabbb00a995e78cfedd1738291
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="revise-and-supersede-applications-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 수정 및 교체
 
@@ -129,9 +128,3 @@ ms.openlocfilehash: 28bea9210c9c58dabbb00a995e78cfedd1738291
 4.  *<응용 프로그램 이름\>* **속성** 대화 상자의 **참조** 탭에 있는 **관계 유형** 드롭다운 목록에서 **이 응용 프로그램을 교체하는 응용 프로그램**을 선택합니다.  
 
 5.  선택한 응용 프로그램을 교체하는 응용 프로그램 목록을 검토한 다음 **확인**을 선택하여 *<응용 프로그램 이름\>* **속성** 대화 상자를 닫습니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

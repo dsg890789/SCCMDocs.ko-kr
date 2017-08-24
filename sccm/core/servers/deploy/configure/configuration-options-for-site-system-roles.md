@@ -6,21 +6,19 @@ ms.date: 2/8/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0e9f0fbd-e442-4509-a021-bfdedf2d04dd
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fff93794afdfa9f890b1f06d6c330d8cffc5796c
 ms.openlocfilehash: b4db5d86cc0ed020ed176feb2e8f1f9dc51a2280
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="configuration-options-for-site-system-roles-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 사이트 시스템 역할 구성 옵션
 
@@ -154,4 +152,3 @@ Configuration Manager 클라이언트를 설치할 수 없거나 할당할 수 �
 -   현재 제한 설정으로 인해 사이트 서버의 CPU 사용률이 높아지는 것으로 확인됨  
 
 대체 상태 지점 제한 설정을 변경하는 것에 따른 결과를 잘 알고 설정을 변경해야 합니다. 예를 들어 제한 설정을 높게 늘릴 경우 사이트 서버의 CPU 사용률이 높게 증가하여 모든 사이트 작업이 느려질 수 있습니다.  
-

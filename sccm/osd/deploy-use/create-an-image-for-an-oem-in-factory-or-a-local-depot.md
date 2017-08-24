@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a7d3df90-062d-4d57-9e9d-e137d3e7cd7f
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: 07aba04fb1b845e389a5f75b115d536136c1569c
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-an-image-for-an-oem-in-factory-or-a-local-depot-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 팩터리 또는 로컬 저장소에 OEM에 대한 이미지 만들기
 
@@ -55,9 +54,3 @@ System Center Configuration Manager에서 사전 준비된 미디어 배포를 �
 
 ## <a name="start-the-computer-to-install-the-operating-system"></a>컴퓨터를 시작하여 운영 체제 설치  
  사전 준비된 미디어 파일은 컴퓨터에 적용됩니다. 컴퓨터를 처음 시작하면 운영 체제 설치 프로세스가 시작됩니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

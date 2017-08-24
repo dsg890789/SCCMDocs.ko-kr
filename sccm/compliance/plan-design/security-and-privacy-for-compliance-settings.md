@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1c409244-6778-4970-a99c-d2508c9cf62b
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
 ms.openlocfilehash: e7dc554ffcd23978eed44819b525f6cc239b2135
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-compliance-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 준수 설정에 대한 보안 및 개인 정보
 
@@ -42,9 +41,3 @@ ms.openlocfilehash: e7dc554ffcd23978eed44819b525f6cc239b2135
  준수 설정을 사용하여 클라이언트 장치가 구성 기준에서 배포하는 구성 항목이 규격을 준수하는지 여부를 평가할 수 있습니다. 일부 설정은 준수하지 않는 경우 자동으로 재구성될 수 있습니다. 호환성 정보는 관리 지점에 의해 사이트 서버로 전송되고 사이트 데이터베이스에 저장됩니다. 장치에서 관리 지점으로 정보를 보낼 때 정보가 암호화되지만 사이트 데이터베이스에는 암호화된 형식으로 저장되지 않습니다. 정보는 사이트 유지 관리 작업인 **오래된 구성 관리 데이터 삭제** 에 의해 90일마다 삭제될 때까지 데이터베이스에 유지됩니다. 삭제 간격은 필요에 따라 구성할 수 있습니다. 호환성 정보는 Microsoft로 전송되지 않습니다.  
 
  기본적으로 장치는 준수 설정을 평가하지 않습니다. 또한 구성 항목과 구성 기준을 구성한 다음 장치에 배포해야 합니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

@@ -6,21 +6,19 @@ ms.date: 2/8/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3359f254-dd48-42b7-9eab-c92a3417e3fb
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 099345d59891841a336cbada896ec349751fecd3
 ms.openlocfilehash: 54e54409a1792c7e28620a5e3cea3e8d8695c7d4
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="package-transfer-manager-in-system-center-configuration-manager"></a>System Center Configuration Manager의 패키지 전송 관리자
 
@@ -89,4 +87,3 @@ System Center Configuration Manager 사이트에서 패키지 전송 관리자�
     -   **표준 배포 지점:** 패키지 전송 관리자가 지정된 각 원격 배포 지점으로 파일 전송을 완료하면 배포 지점의 콘텐츠에 대한 해시를 확인합니다. 그리고 배포가 완료된 것을 배포 관리자에 알립니다.  
 
     -   **풀(pull) 배포 지점:** 풀(pull) 배포 지점이 콘텐츠 다운로드를 완료한 후 배포 지점은 콘텐츠의 해시를 확인합니다. 그런 다음 사이트 관리 지점에 상태 메시지를 제출하여 성공을 알립니다. 60분이 지나도 이 상태가 수신되지 않으면 패키지 전송 관리자가 다시 작동합니다. 풀(pull) 배포 지점을 검사하여 풀(pull) 배포 지점에서 콘텐츠를 다운로드했는지 확인합니다. 콘텐츠 다운로드가 진행 중인 경우 패키지 전송 관리자는 60분 더 절전 상태로 보낸 후 풀(pull) 배포 지점을 다시 확인합니다. 이 주기는 풀(pull) 배포 지점이 콘텐츠 전송을 완료할 때까지 계속 진행됩니다.  
-

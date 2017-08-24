@@ -3,20 +3,17 @@ title: "인터넷에서 클라이언트를 관리 - Configuration Manager | Micr
 description: "Configuration Manager에서 클라우드 관리 게이트웨이 및 인터넷 기반 클라이언트 관리를 사용하여 클라이언트를 관리하는 방법을 알아봅니다."
 ms.date: 04/23/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.assetid: c667d6af-80c4-485f-910c-896c0171fd00
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b
-ms.openlocfilehash: 6104107429184f31df12db84089f41df1ef81539
-ms.contentlocale: ko-kr
-ms.lasthandoff: 01/24/2017
-
+ms.openlocfilehash: 1b6752be448e1062c97a3225db4fa8af9f4832a6
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="manage-clients-on-the-internet-with-configuration-manager"></a>Configuration Manager를 사용하여 인터넷에서 클라이언트 관리
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -72,4 +69,3 @@ Configuration Manager는 인터넷에 연결된 클라이언트를 관리하는 
 -   인프라를 인터넷에 노출해야 합니다.
 
 자세한 내용은 [인터넷 기반 클라이언트 관리 계획](plan-internet-based-client-management.md)을 참조하세요.
-

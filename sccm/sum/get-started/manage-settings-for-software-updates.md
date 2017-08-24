@@ -1,5 +1,4 @@
 ---
-
 title: "소프트웨어 업데이트 설정 관리 | Microsoft 문서"
 description: "소프트웨어 업데이트 지점을 설치한 후 사이트에서 소프트웨어 업데이트에 적합한 클라이언트 설정을 알아봅니다."
 keywords: 
@@ -10,18 +9,14 @@ ms.date: 03/26/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: 0d484c1a-e903-4bff-9e9b-e452c62e38a8
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
 ms.openlocfilehash: fe4a8f56e0b554e206bcc4503a0268dc761ded81
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 #  <a name="BKMK_ManageSUSettings"></a> 소프트웨어 업데이트 설정 관리  
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -141,4 +136,3 @@ CRL 확인이 사용되는 경우 소프트웨어 업데이트를 처리하는 C
 CRL 확인을 수행하는 컴퓨터에서 제품 DVD를 사용하여 명령 프롬프트에서 **\SMSSETUP\BIN\X64\\**<*언어*>**\UpdDwnldCfg.exe /checkrevocation**을 실행합니다.  
 
 예를 들어 영어(미국)의 경우 **\SMSSETUP\BIN\X64\00000409\UpdDwnldCfg.exe /checkrevocation**을 실행합니다.  
-

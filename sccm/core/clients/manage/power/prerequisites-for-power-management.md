@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9c062f13-3c1f-4621-9cae-de0e322aa03f
-caps.latest.revision: 4
-caps.handback.revision: 0
+caps.latest.revision: "4"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: 711ef491899846b86bfed0355ac7fd0f9d509c4f
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="prerequisites-for-power-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 전원 관리에 대한 필수 조건
 
@@ -42,9 +41,3 @@ System Center Configuration Manager의 전원 관리에는 외부 종속성과 �
 |----------------|----------------------|  
 |먼저 전원 관리를 사용하도록 설정해야 전원 계획을 만들고 모니터링할 수 있습니다.|전원 관리를 설정하고 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 전원 관리 구성](../../../../core/clients/manage/power/configuring-power-management.md)을 참조하세요.|  
 |보고 서비스 지점|전원 관리 보고서를 보려면 먼저 보고 서비스 지점을 구성해야 합니다. 자세한 내용은 [System Center Configuration Manager의 보고](../../../../core/servers/manage/reporting.md)를 참조하세요.|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4d26deed-3b16-4116-b640-f618f2c20f5a
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 521b90b9d497818a4c1e546fca38cd15d4cab487
 ms.openlocfilehash: 6ee99fa0c07676f004e41a50bf16d0d17604e790
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-application-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 관리에 대한 보안 및 개인 정보
 
@@ -69,7 +68,7 @@ ms.openlocfilehash: 6ee99fa0c07676f004e41a50bf16d0d17604e790
 
      설치 권한을 제한(예: 장치의 기본 사용자나 로컬 관리자로만 제한)하도록 클라이언트 설정을 구성할 수 있지만 회사 포털에는 이 설정이 적용되지 않습니다. 이 설정을 사용하면 사용자가 설치가 허용되지 않은 앱을 설치할 수 있어 권한 상승이 발생할 수 있습니다.  
 
-##  <a name="a-namebkmkcertificatessilverlight5a-certificates-for-microsoft-silverlight-5-and-elevated-trust-mode-required-for-the-application-catalog"></a><a name="BKMK_CertificatesSilverlight5"></a> 응용 프로그램 카탈로그에 필요한 높은 권한 모드 및 Microsoft Silverlight 5용 인증서  
+##  <a name="BKMK_CertificatesSilverlight5"></a> 응용 프로그램 카탈로그에 필요한 높은 권한 모드 및 Microsoft Silverlight 5용 인증서  
  Configuration Manager 클라이언트에는 Microsoft Silverlight 5가 필요하며, 사용자가 응용 프로그램 카탈로그에서 소프트웨어를 설치하려면 Microsoft Silverlight 5를 높은 권한 모드로 실행해야 합니다. 기본적으로 Silverlight 응용 프로그램은 사용자 데이터에 액세스할 수 없도록 부분 신뢰 모드로 실행됩니다. Configuration Manager는 Microsoft Silverlight 5가 클라이언트에 아직 설치되어 있지 않으면 자동으로 설치합니다. 기본적으로 Configuration Manager는 컴퓨터 에이전트의 **Silverlight 응용 프로그램의 높은 권한 모드 실행을 허용합니다.** 클라이언트 설정을 **예**로 설정합니다. 이 설정을 사용하면 서명되고 신뢰할 수 있는 Silverlight 응용 프로그램에서 높은 권한 모드를 요청할 수 있게 됩니다.  
 
  응용 프로그램 카탈로그 웹 사이트 지점 사이트 시스템 역할을 설치하면 클라이언트에서 각 Configuration Manager 클라이언트 컴퓨터의 신뢰할 수 있는 게시자 컴퓨터 인증서 저장소에 Microsoft 서명 인증서를 설치합니다. 이 인증서를 사용하면 이 인증서로 서명된 Silverlight 응용 프로그램을 높은 권한 모드로 실행할 수 있습니다. 응용 프로그램 카탈로그의 소프트웨어를 설치하려는 컴퓨터에서는 이 모드를 사용해야 합니다. Configuration Manager에서는 이 서명 인증서를 자동으로 관리합니다. 서비스 연속성을 위해 이 Microsoft 서명 인증서를 수동으로 삭제하거나 이동하지 마십시오.  
@@ -114,9 +113,3 @@ ms.openlocfilehash: 6ee99fa0c07676f004e41a50bf16d0d17604e790
 -  응용 프로그램 승인 요청에 대한 정보는 Configuration Manager 데이터베이스에 저장됩니다. 취소 또는 거부된 요청과 해당 요청 기록 항목은 기본적으로 30일 후에 삭제됩니다. 삭제 동작은 **오래된 응용 프로그램 요청 데이터 삭제** 사이트 유지 관리 작업을 설정하여 구성할 수 있습니다. 상태가 승인됨 및 보류 중인 응용 프로그램 승인 요청은 삭제되지 않습니다.  
 -  응용 프로그램 카탈로그에서 보내고 받는 모든 정보는 Microsoft로 전송되지 않습니다.  
 -  응용 프로그램 카탈로그는 기본적으로 설치되지 않습니다. 이를 설치하려면 몇 가지 구성 단계가 필요합니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

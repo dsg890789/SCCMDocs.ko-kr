@@ -6,22 +6,19 @@ ms.date: 03/29/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 0317fd02-3721-4634-b18b-7c976a4e92bf
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 23b1d24e908d04b64c3bbfa518793a44e696d468
 ms.openlocfilehash: fba52ee305fe67418f2fe544bfe94d10467236d0
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="prerequisites-for-certificate-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 인증서 프로필에 대한 필수 조건
 
@@ -48,4 +45,3 @@ System Center Configuration Manager의 인증서 프로필에는 외부 종속�
 |Active Directory 인증서 서비스용 네트워크 장치 등록 서비스 역할 서비스를 실행하는 서버에 설치된 System Center Configuration Manager 정책 모듈|인증서 프로필을 배포하려면 System Center Configuration Manager 정책 모듈을 설치해야 합니다. 이 정책 모듈은 System Center Configuration Manager 설치 미디어에서 찾을 수 있습니다.|  
 |검색 데이터|인증서 주체 및 주체 대체 이름 값은 System Center Configuration Manager에서 제공하며 검색에서 수집된 정보에서 가져옵니다.<br /><br /> 사용자 인증서: Active Directory 사용자 검색<br /><br /> 컴퓨터 인증서: Active Directory 시스템 검색 및 네트워크 검색|  
 |인증서 프로필을 관리하는 특정 보안 권한|회사 리소스 액세스 설정(예: 인증서 프로필, Wi-Fi 프로필 및 VPN 프로필)을 관리하려면 다음과 같은 보안 권한이 있어야 합니다.<br /><br /> 인증서 프로필에 대한 경고 및 보고서를 보고 관리하려면 **경고**개체에 대한 **만들기**, **삭제**, **수정**, **보고서 수정**, **읽기** 및 **보고서 실행** 권한이 필요합니다.<br /><br /> 인증서 프로필을 만들고 관리하려면 **인증서 프로필**개체에 대한 **작성자 정책**, **보고서 수정** , **읽기** 및 **보고서 실행** 권한이 필요합니다.<br /><br /> Wi-Fi, 인증서 및 VPN 프로필 배포를 관리하려면 **컬렉션**개체에 대한 **구성 정책 배포**, **클라이언트 상태 알림 수정**, **읽기** 및 **리소스 읽기** 권한이 필요합니다.<br /><br /> 모든 구성 정책을 관리하려면 **구성 정책**개체에 대한 **만들기**, **삭제**, **수정** , **읽기** 및 **보안 범위 설정** 권한이 필요합니다.<br /><br /> 인증서 프로필과 관련된 쿼리를 실행하려면 **쿼리** 개체에 대한 **읽기** 권한이 필요합니다.<br /><br /> System Center Configuration Manager 콘솔에서 인증서 프로필 정보를 보려면 **사이트** 개체에 대한 **읽기** 권한이 필요합니다.<br /><br /> 인증서 프로필에 대한 상태 메시지를 보려면 **상태 메시지** 개체에 대한 **읽기** 권한이 필요합니다.<br /><br /> 신뢰할 수 있는 CA 인증서 프로필을 만들고 수정하려면 **신뢰할 수 있는 CA 인증서 프로필**개체에 대한 **작성자 정책**, **보고서 수정** , **읽기** 및 **보고서 실행** 권한이 필요합니다.<br /><br /> VPN 프로필을 만들고 관리하려면 **VPN 프로필**개체에 대한 **작성자 정책**, **보고서 수정** , **읽기** 및 **보고서 실행** 권한이 필요합니다.<br /><br /> Wi-Fi 프로필을 만들고 관리하려면: **Wi-Fi 프로필**개체에 대한 **작성자 정책**, **보고서 수정** , **읽기** 및 **보고서 실행** 권한이 필요합니다.<br /><br /> **회사 리소스 액세스 관리자** 보안 역할에는 System Center Configuration Manager에서 인증서 프로필을 관리하는 데 필요한 이와 같은 권한이 포함됩니다. 자세한 내용은 [System Center Configuration Manager의 보안 구성](../../core/plan-design/security/configure-security.md) 항목의 **역할 기반 관리 구성** 섹션을 참조하세요.|  
-

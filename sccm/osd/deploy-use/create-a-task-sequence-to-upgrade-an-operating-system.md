@@ -6,21 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7591e386-a9ab-4640-8643-332dce5aa006
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 1035dbbf944a3a467d637a4a948a75b0946eb711
 ms.openlocfilehash: 4a3c69edc85a4ea7501510b6b3f12c72ad3a24ff
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/11/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-a-task-sequence-to-upgrade-an-operating-system-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 운영 체제를 업그레이드하는 작업 순서 만들기
 
@@ -131,4 +129,3 @@ System Center Configuration Manager에서 작업 순서를 사용하여 대상 �
 
 ## <a name="folder-and-files-removed-after-computer-restart"></a>컴퓨터 다시 시작 후 폴더 및 파일 제거됨  
  운영 체제를 Windows 10으로 업그레이드하는 작업 순서와 작업 순서의 다른 모든 단계가 완료되어도 컴퓨터를 다시 시작하기 전에는 사후 처리 및 롤백 스크립트가 제거되지 않습니다.  이 스크립트 파일에는 중요한 정보가 들어 있지 않습니다.  
-

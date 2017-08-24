@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 113984fa-6150-41a1-89ed-d2a83b979732
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
 ms.openlocfilehash: 33d4a2d5a09af74e1d76ac9b34a42b749f5bf7ef
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-create-child-configuration-items-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 자식 구성 항목을 만드는 방법
 
@@ -43,9 +42,3 @@ Configuration Manager 콘솔에서 자식 구성 항목의 속성을 볼 때 상
 4.  **자식 구성 항목 만들기 마법사** 의 **일반**페이지에서 자식을 만드는 데 사용할 부모 구성 항목의 특정 수정 버전을 선택할 수 있습니다. 이 마법사의 다른 단계는 표준 구성 항목을 만드는 데 사용하는 단계와 동일합니다. 자세한 내용은 [Windows 데스크톱 및 서버 컴퓨터에 대한 사용자 지정 구성 항목을 만드는 방법](../../compliance/deploy-use/create-custom-configuration-items-for-windows-desktop-and-server-computers-managed-with-the-client.md)을 참조하세요.  
 
 5.  마법사를 완료합니다. 새 자식 구성 항목은 **구성 항목** 목록에 표시됩니다.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

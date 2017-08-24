@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c7c94ba0-d709-4129-8077-075a8abaea1c
-caps.latest.revision: 4
-caps.handback.revision: 0
+caps.latest.revision: "4"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: baca498dbc5b8e168852aa3c18ee23a9c483e69c
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="preprovision-bitlocker-in-windows-pe-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows PE에서 BitLocker 사전 프로비전
 
@@ -60,9 +59,3 @@ System Center Configuration Manager의 **BitLocker 사전 프로비전** 작업 
 |장치 드라이버 적용|이 단계에서는 운영 체제 배포 중에 드라이버가 일치하는지 확인하고 설치합니다. 자세한 내용은 [드라이버 자동 적용](../understand/task-sequence-steps.md#BKMK_AutoApplyDrivers)을 참조하세요.|  
 |Windows 및 ConfigMgr 설치|이 단계에서는 Windows PE에서 새 운영 체제로 전환을 수행합니다. 이 작업 순서 단계는 임의의 운영 체제 배포 중 필요합니다. Configuration Manager 클라이언트를 새 운영 체제에 설치하고 새 운영 체제에서 작업 순서를 계속 실행하도록 준비합니다. 자세한 내용은 [Windows 및 ConfigMgr 설정](../understand/task-sequence-steps.md#BKMK_SetupWindowsandConfigMgr)을 참조하세요.|  
 |BitLocker 사용|이 단계에서는 하드 드라이브에서 BitLocker를 사용하도록 설정하고 키 보호기를 설정합니다. 하드 드라이브가 BitLocker로 사전 프로비전되었으므로 이 단계는 신속하게 완료됩니다. Windows 7의 경우에는 키 보호기를 추가해야 합니다. 이 단계를 사용하지 않는 경우 manage-bde.exe 명령줄 도구를 사용하여 키 보호기를 설정할 수 있습니다. 자세한 내용은 [BitLocker 사용](../understand/task-sequence-steps.md#BKMK_EnableBitLocker)을 참조하세요.|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

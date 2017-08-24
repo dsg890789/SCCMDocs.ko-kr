@@ -9,17 +9,14 @@ ms.date: 05/31/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
-ms.translationtype: HT
-ms.sourcegitcommit: 5d696e3da187d47e0d41c02864d9b5267827e701
 ms.openlocfilehash: 902d7f7216ca7bb585afae587a6706e2332da9d3
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/31/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="manage-office-365-proplus-with-configuration-manager"></a>Configuration Manager를 사용하여 Office 365 ProPlus 관리
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -191,4 +188,3 @@ You can create an application just as you would with any other application in Co
 
 <!--- ## Next steps
 Use the Office 365 Client Management dashboard in Configuration Manager to review Office 365 client information and deploy Office 365 apps. For details, see [Manage Office 365 apps](manage-office-365-apps.md). --->
-

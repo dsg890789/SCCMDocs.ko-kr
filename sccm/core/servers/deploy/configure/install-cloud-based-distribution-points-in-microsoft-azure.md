@@ -6,21 +6,19 @@ ms.date: 2/8/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: bb83ac87-9914-4a35-b633-ad070031aa6e
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f96905f50f879b843f98cb57c8a755aa856fb381
 ms.openlocfilehash: 39b35cccf78bba4e69a7de0ca3a5a8dc516201e3
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="install-cloud-based-distribution-points-in-microsoft-azure-for-system-center-configuration-manager"></a>Microsoft Azure에서 System Center Configuration Manager에 대한 클라우드 기반 배포 지점 설치
 
@@ -132,4 +130,3 @@ Configuration Manager 클라우드 기반 배포 지점 서비스 인증서에 �
 4.  **사이트 시스템 속성**에서 **프록시** 탭을 선택하고 이 기본 사이트 서버에 대한 프록시 설정을 지정합니다.  
 
 5.  **확인**을 클릭하여 설정을 저장합니다.  
-

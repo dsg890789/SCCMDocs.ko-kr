@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: f74fdb86-c7c2-447f-91f6-b42df6370d7f
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: b1bea8b1b890f7c96a432835d28ad840a9b6873d
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="scenarios-to-deploy-enterprise-operating-systems-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 엔터프라이즈 운영 체제를 배포하는 시나리오
 
@@ -64,9 +63,3 @@ ms.openlocfilehash: b1bea8b1b890f7c96a432835d28ad840a9b6873d
  기본적으로 작업 순서에 대한 배포를 만들면 먼저 이미지가 Configuration Manager 클라이언트 캐시로 다운로드된 다음 설치됩니다. 이미지를 실행하기 전에 Configuration Manager 클라이언트 캐시로 이미지를 다운로드하도록 선택한 경우 작업 순서에 하드 드라이브를 다시 분할하는 단계가 포함되어 있으면 하드 드라이브 다시 분할 과정에서 Configuration Manager 클라이언트 캐시의 콘텐츠가 지워지므로 다시 분할 단계가 실패합니다. 작업 순서가 하드 드라이브를 다시 분할해야 하는 경우 작업 순서를 배포할 때 **배포 지점에서 프로그램 실행**  옵션을 사용하여 배포 지점에서 이미지 설치를 실행해야 합니다.  
 
  자세한 내용은 [Deploy a task sequence](manage-task-sequences-to-automate-tasks.md#BKMK_DeployTS)항목을 참조하세요.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

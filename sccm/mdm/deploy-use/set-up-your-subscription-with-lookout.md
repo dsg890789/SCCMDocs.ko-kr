@@ -6,8 +6,7 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6087b279-ba05-4824-b5e3-3af14f3d3cfe
@@ -15,13 +14,11 @@ caps.latest.revision:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 2d01b6d327e98a433030faebbff8f80fa6a8f48e
-ms.contentlocale: ko-kr
-ms.lasthandoff: 03/06/2017
-
-
+ms.openlocfilehash: b777140c753e709f4048a30e63d8ae730d3e8723
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="set-up-your-subscription-for--lookout-device-threat-protection"></a>Lookout 장치 위협 방지에 대해 구독 설정
 
@@ -131,4 +128,3 @@ Lookout 장치 위협 방지는 다양한 유형의 모바일 위협을 분류�
 설치가 완료되면 Lookout 장치 위협 방지에서 지정한 등록 그룹에 해당하는 장치를 Azure AD에 폴링하기 시작합니다.  장치 모듈에서 등록된 장치에 대한 정보를 찾을 수 있습니다.  장치의 초기 상태는 보류 중으로 표시됩니다.  장치에서 Lookout for Work 앱을 설치하고 열고 활성화하면 장치 상태가 변경됩니다.  Lookout for Work 앱을 장치에 푸시하는 방법에 대한 자세한 내용은 [Lookout for Work 구성 및 배포](configure-and-deploy-lookout-for-work-apps.md) 항목을 참조하세요.
 ## <a name="next-steps"></a>다음 단계
 [Intune에서 Lookout MTP 연결 사용](enable-lookout-connection-in-intune.md)
-

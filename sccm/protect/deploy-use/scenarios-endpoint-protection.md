@@ -10,19 +10,16 @@ ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 539c7a89-3c03-4571-9cb4-02d455064eeb
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: af0aafb4b7209d840676d16723509f399c662aad
 ms.openlocfilehash: b98684d44874ff246e4d675039c6e443aee82a62
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="example-scenario-using-system-center-endpoint-protection-to-protect-computers-from-malware-in-system-center-configuration-manager"></a>예제 시나리오: System Center Endpoint Protection을 사용하여 System Center Configuration Manager에서 맬웨어로부터 컴퓨터 보호
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -77,4 +74,3 @@ ms.lasthandoff: 05/17/2017
 |Jone은 다음 방법을 사용하여 Endpoint Protection의 상태와 Endpoint Protection에 의해 수행된 작업을 모니터링합니다.<br /><br /> 1) **모니터링** 작업 영역의 **보안** 아래에서 **Endpoint Protection 상태** 노드 사용<br /><br /> 2) **자산 및 준수** 작업 영역에서 **Endpoint Protection** 노드 사용<br /><br /> 3) 기본 제공 Configuration Manager 보고서 사용|[System Center Configuration Manager에서 Endpoint Protection을 모니터링하는 방법](monitor-endpoint-protection.md)을 참조하세요.|  
 
  John은 관리자에게 Endpoint Protection의 성공적인 구현을 보고하고 Woodgrove Bank의 컴퓨터가 지정된 비즈니스 요구에 따라 맬웨어 방지 소프트웨어를 통해 보호됨을 확인합니다.
-

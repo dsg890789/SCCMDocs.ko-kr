@@ -6,21 +6,19 @@ ms.date: 01/04/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c890fd27-7a8c-4f51-bbe2-f9908af1f42b
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
+ms.openlocfilehash: 36bcbbca4fdee3e95d293c436a105a41a6e3953e
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
 ms.translationtype: HT
-ms.sourcegitcommit: afe0ecc4230733fa76e41bf08df5ccfb221da7c8
-ms.openlocfilehash: fef330a14ad2a1f75d520eac0706a376953993e8
-ms.contentlocale: ko-kr
-ms.lasthandoff: 08/04/2017
-
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="about-client-installation-properties-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 설치 속성 정보
 
@@ -582,4 +580,3 @@ Configuration Manager 클라이언트가 사용할 초기 관리 지점을 지�
 |2.5.4.42|G 또는 GN 또는 GivenName|이름|  
 |2.5.4.43|I 또는 Initials|이니셜|  
 |2.5.29.17|(값 없음)|주체 대체 이름|  
-

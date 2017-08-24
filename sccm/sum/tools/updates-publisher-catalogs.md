@@ -6,22 +6,20 @@ ms.date: 4/29/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 887f8029-1a3a-423c-a9c1-31dc0d693386
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: NOINDEX, NOFOLLOW
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 31819a1df4e63e1114682490a9b3c3b4e5c99cfa
 ms.openlocfilehash: 7451d699e0e5e146b0538a57deca595188d113bf
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-software-update-catalogs-in-updates-publisher"></a>Updates Publisher의 소프트웨어 업데이트 카탈로그 관리
 
@@ -105,4 +103,3 @@ Updates Publisher는 시작할 때마다 변경 사항에 대한 구독을 자�
 업데이트를 가져온 후 일반적인 작업은 다음과 같습니다.
 -   [업데이트 관리](/sccm/sum/tools/manage-updates-with-updates-publisher)를 통해 업데이트 서버에 번들을 작성하고 할당하고 배포합니다.
 -   [적용 가능성 규칙 만들기](/sccm/sum/tools/updates-publisher-applicability-rules)를 통해 업데이트가 업데이트 서버에 배포되는 시점을 결정하는 데 도움이 됩니다.
-

@@ -6,25 +6,22 @@ ms.date: 07/12/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4bb6afeb-d267-4f9b-ade2-26e5400c223b
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 344b55aecd72479b759b40e8252e64a06c5eaba0
 ms.openlocfilehash: 5bf4457af6bedf7bc9cd73c879f1857209c0725d
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/13/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-# System Center Configuration Manager에서 구성 기준을 만들고 배포하기 위한 일반 작업
-<a id="common-tasks-for-creating-and-deploying-configuration-baselines-with-system-center-configuration-manager" class="xliff"></a>
+# <a name="common-tasks-for-creating-and-deploying-configuration-baselines-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 구성 기준을 만들고 배포하기 위한 일반 작업
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -34,8 +31,7 @@ ms.lasthandoff: 07/13/2017
 
  시작하기 전에 [System Center Configuration Manager에서 준수 설정 시작](../../compliance/get-started/get-started-with-compliance-settings.md)을 읽어 준수 설정에 대한 일부 기본 지식을 익히고 [준수 설정 계획 및 구성](../../compliance/plan-design/plan-for-and-configure-compliance-settings.md)을 읽어 필수 전제 조건을 구현합니다.  
 
-## 구성 기준 만들기
-<a id="create-a-configuration-baseline" class="xliff"></a>  
+## <a name="create-a-configuration-baseline"></a>구성 기준 만들기  
  이 예제에서는 Configuration Manager 클라이언트를 실행하는 Windows 10 PC 전용 구성 항목을 만들었습니다.  
 
  이 구성 항목은 Windows 10 PC에서 6자 이상의 필수 암호를 적용합니다. 구성 항목의 이름은 **Windows 10 암호 적용**입니다.  
@@ -60,8 +56,7 @@ ms.lasthandoff: 07/13/2017
 
  이제 Configuration Manager 콘솔의 **구성 기준** 노드에서 구성 기준을 볼 수 있습니다.  
 
-## 구성 기준 배포
-<a id="deploy-the-configuration-baseline" class="xliff"></a>  
+## <a name="deploy-the-configuration-baseline"></a>구성 기준 배포  
  이 예제에서는 이전 절차에서 만든 구성 기준을 컴퓨터의 컬렉션에 배포합니다.  
 
 1.  Configuration Manager 콘솔에서 **자산 및 준수** > **준수 설정** > **구성 기준**을 클릭합니다.  
@@ -87,8 +82,6 @@ ms.lasthandoff: 07/13/2017
 
  이 배포에 대한 준수 통계를 간단히 살펴보려면 **모니터링** 작업 영역에서 **배포**를 클릭합니다. 화면 맨 아래에 **준수 통계** 차트가 표시됩니다.  
 
-## 다음 단계
-<a id="next-steps" class="xliff"></a> 
+## <a name="next-steps"></a>다음 단계 
 
 구성 기준을 모니터링하는 방법에 대한 자세한 내용은 [준수 설정 모니터링](../../compliance/deploy-use/monitor-compliance-settings.md)을 참조하세요.  
-

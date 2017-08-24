@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9e447e34-0943-49ed-b6ba-3efebf3566c1
-caps.latest.revision: 10
-caps.handback.revision: 0
+caps.latest.revision: "10"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: 445e76950f0605da917f3d0e7e71557d969e3c2d
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="prepare-for-unknown-computer-deployments-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 알 수 없는 컴퓨터 배포 준비
 
@@ -70,7 +69,7 @@ ms.openlocfilehash: 445e76950f0605da917f3d0e7e71557d969e3c2d
 > [!NOTE]  
 >  운영 체제 이미지를 설치하는 동안 작업 순서는 이 컴퓨터에서 컬렉션 변수를 검색할 수 있지만 컴퓨터 변수는 검색할 수 없습니다.  
 
-##  <a name="a-namebkmkenablingunknowna-enabling-unknown-computer-support"></a><a name="BKMK_EnablingUnknown"></a> 알 수 없는 컴퓨터 지원 사용  
+##  <a name="BKMK_EnablingUnknown"></a> 알 수 없는 컴퓨터 지원 사용  
  다음을 사용하여 PXE 배포, 부팅 가능한 미디어, 미리 준비된 미디어를 사용하여 운영 체제를 배포할 때 알 수 없는 컴퓨터 지원을 사용할 수 있습니다.  
 
 -   **PXE**  
@@ -84,9 +83,3 @@ ms.openlocfilehash: 445e76950f0605da917f3d0e7e71557d969e3c2d
 -   **미리 준비된 미디어**  
 
      작업 순서 미디어 만들기 마법사의 **보안** 페이지에서 **알 수 없는 컴퓨터 지원 사용** 확인란을 선택합니다. 자세한 내용은 [System Center Configuration Manager에서 사전 준비된 미디어 만들기](../deploy-use/create-prestaged-media.md)를 참조하세요.  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-
