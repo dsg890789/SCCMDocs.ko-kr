@@ -8,17 +8,14 @@ ms.date: 05/01/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.assetid: e0ec7d66-1502-4b31-85bb-94996b1bc66f
+ms.openlocfilehash: 84b617b3e83636ab4578174ef40e786dcf1178cd
+ms.sourcegitcommit: 06aef618f72c700f8a716a43fb8eedf97c62a72b
 ms.translationtype: HT
-ms.sourcegitcommit: afe0ecc4230733fa76e41bf08df5ccfb221da7c8
-ms.openlocfilehash: df6e809aadd3d69275c137c92629ab8426bbdcb7
-ms.contentlocale: ko-kr
-ms.lasthandoff: 08/04/2017
-
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/21/2017
 ---
-
 # <a name="set-up-cloud-management-gateway-for-configuration-manager"></a>Configuration Manager용 클라우드 관리 게이트웨이 설정
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -26,6 +23,9 @@ ms.lasthandoff: 08/04/2017
 1610 버전부터는 Configuration Manager에서 클라우드 관리 게이트웨이를 설정하는 프로세스에 다음 단계가 포함됩니다.
 
 ## <a name="step-1-configure-required-certificates"></a>1단계: 필요한 인증서 구성
+
+> [!TIP]  
+> 인증서를 요청하기 전에 원하는 Azure 도메인 이름 (예: GraniteFalls.CloudApp.Net)이 고유한지 확인합니다. [Microsoft Azure Portal](https://manage.windowsazure.com)에서 이 로그인을 수행하려면 **새로 만들기**를 클릭하고, **Cloud Service** 및 **사용자 지정 만들기**를 차례로 선택합니다. **URL** 필드에서 원하는 도메인 이름을 입력합니다(서비스를 만들려면 확인 표시를 클릭하지 않음). 포털은 사용할 수 있는 도메인 이름인지 아니면 다른 서비스에서 이미 사용 중인지를 반영합니다.
 
 ## <a name="option-1-preferred---use-the-server-authentication-certificate-from-a-public-and-globally-trusted-certificate-provider-like-verisign"></a>옵션 1(기본 설정) - 공용 및 전 세계적으로 신뢰할 수 있는 인증서 공급자(예: VeriSign)의 서버 인증 인증서를 사용합니다.
 
@@ -43,7 +43,6 @@ ms.lasthandoff: 08/04/2017
 
 클라우드 기반 배포 지점에 대해 수행하는 방법과 동일하게 클라우드 관리 게이트웨이용으로 사용자 지정 SSL 인증서를 만들 수 있습니다. [클라우드 기반 배포 지점용 서비스 인증서 배포](/sccm/core/plan-design/network/example-deployment-of-pki-certificates)에 대한 지침을 따르되 다음 사항은 다르게 수행합니다.
 
-- 새 인증서 템플릿 설정 시 Configuration Manager 서버에 대해 설정한 보안 그룹에 **읽기** 및 **등록** 권한을 부여합니다.
 - 사용자 지정 웹 서버 인증서를 요청할 때는 Azure 공용 클라우드의 클라우드 관리 게이트웨이를 사용하려는 경우 **cloudapp.net**으로 끝나는 인증서 일반 이름의 FQDN을 입력하고, Azure 정부 클라우드를 사용하려는 경우 **usgovcloudapp.net**으로 끝나는 인증서 일반 이름의 FQDN을 입력합니다.
 
 
@@ -69,6 +68,9 @@ ms.lasthandoff: 08/04/2017
 
 7.  기본 인증서 형식을 사용하여 인증서 내보내기 마법사를 완료합니다. 만든 루트 인증서의 이름과 위치를 적어 둡니다. 이러한 정보는 [이후 단계](#step-4-set-up-cloud-management-gateway)에서 클라우드 관리 게이트웨이를 구성하는 데 필요합니다.
 
+>[!NOTE]
+>클라이언트 인증서가 하위 인증 기관에서 발급된 경우 체인에서 각 인증서에 이 단계를 반복해야 합니다.
+
 ## <a name="step-3-upload-the-management-certificate-to-azure"></a>3단계: Azure에 관리 인증서 업로드
 
 API Management 인증서는 Configuration Manager에서 Azure API에 액세스하고 클라우드 관리 게이트웨이를 구성하는 데 필요합니다. 관리 인증서를 업로드하는 방법에 대한 자세한 내용 및 지침은 Azure 설명서에서 다음 문서를 참조하세요.
@@ -80,74 +82,6 @@ API Management 인증서는 Configuration Manager에서 Azure API에 액세스�
 >[!IMPORTANT]
 >관리 인증서와 연결된 구독 ID를 복사해야 합니다. 이 ID는 Configuration Manager 콘솔에서 클라우드 관리 게이트웨이를 구성하는 [다음 단계](#step-4-set-up-cloud-management-gateway)에서 필요합니다.
 
-### <a name="subordinate-ca-certificates-and-azure"></a>하위 CA 인증서 및 Azure
-
-하위 CA(subCA)에서 인증서를 발급했으며 인터넷에서 엔터프라이즈 PKI 인프라를 찾을 수 없는 경우에는 이 절차에 따라 Azure에 인증서를 업로드합니다. 
-
-1. Azure Portal에서 클라우드 관리 게이트웨이를 설정한 후 클라우드 관리 게이트웨이 클라우드 서비스를 찾아 **인증서** 탭으로 이동합니다. 여기서 subCA 인증서를 업로드합니다. subCA 인증서가 여러 개인 경우에는 모두 업로드해야 합니다. 
-2. 인증서가 업로드되면 인증서의 지문을 기록해 둡니다. 
-3. 다음 스크립트를 사용하여 사이트 데이터베이스에 지문을 추가합니다.
-    
-```
-
-    DIM serviceCName
-    DIM subCAThumbprints
-
-    ' Verify arguments
-    IF WScript.Arguments.Count <> 2 THEN
-    WScript.StdOut.WriteLine "Usage: CScript UpdateSubCAThumbprints.vbs <ServiceCName> <SubCA cert thumbprints, separated by ;>"
-    WScript.Quit 1
-    END IF
-
-    'Get arguments
-    serviceCName = WScript.Arguments.Item(0)
-    subCAThumbprints = WScript.Arguments.Item(1)
-
-    'Find SMS Provider
-    WScript.StdOut.WriteLine "Searching for SMS Provider for local site..."
-    SET objSMSNamespace = GetObject("winmgmts:{impersonationLevel=impersonate}!\\.\root\sms")
-    SET results = objSMSNamespace.ExecQuery("SELECT * From SMS_ProviderLocation WHERE ProviderForLocalSite = true")
-
-    'Process the results
-    FOR EACH var in results
-    siteCode = var.SiteCode
-    NEXT
-
-    IF siteCode = "" THEN
-    WScript.StdOut.WriteLine "Failed to locate SMS provider."
-    WScript.Quit 1
-    END IF
-
-    WScript.StdOut.WriteLine "SiteCode = " & siteCode 
-
-    ' Connect to the SMS namespace
-    SET objWMIService = GetObject("winmgmts:{impersonationLevel=impersonate}!\\.\root\sms\site_" & siteCode)
-
-    'Get instance of SMS_AzureService
-    DIM query
-    query = "SELECT * From SMS_AzureService WHERE ServiceType = 'CloudProxyService' AND ServiceCName = '" & serviceCName & "'"
-    WScript.StdOut.WriteLine "Run WQL query: " &  query
-    SET objInstances = objWMIService.ExecQuery(query)
-
-    IF IsNull(objInstances) OR (objInstances.Count = 0) THEN
-    WScript.StdOut.WriteLine "Failed to get Azure_Service instance."
-    WScript.Quit 1
-    END IF
-
-    FOR EACH var IN objInstances
-    SET azService = var
-    NEXT
-
-    WScript.StdOut.WriteLine "Update [SubCACertThumbprint] to " & subCAThumbprints
-
-    'Update SubCA cert thumbprints
-    azService.Properties_.item("SubCACertThumbprint") = subCAThumbprints
-
-    'Save data back to provider
-    azService.Put_
-
-    WScript.StdOut.WriteLine "[SubCACertThumbprint] is updated successfully."
-```
 
 
 ## <a name="step-4-set-up-cloud-management-gateway"></a>4단계: 클라우드 관리 게이트웨이 설정
@@ -173,7 +107,7 @@ API Management 인증서는 Configuration Manager에서 Azure API에 액세스�
 
     - 사용자 지정 SSL 인증서에서 내보낸 개인 키(.pfx 파일)를 지정합니다.
 
-    - 클라이언트 인증서에서 내보낸 루트 인증서를 지정합니다.
+    - 클라이언트 인증서에서 내보낸 루트 인증서(및 하위 인증서)를 지정합니다. 마법사는 최대 두 개의 루트 인증서와 네 개의 하위 인증서를 허용합니다.
 
     -   새 인증서 템플릿을 만들 때 사용한 동일한 서비스 이름 FQDN을 지정합니다. 사용 중인 Azure 클라우드를 기준으로 하여 FQDN 서비스 이름에 대해 다음 접미사 중 하나를 지정해야 합니다.
 
@@ -207,7 +141,7 @@ API Management 인증서는 Configuration Manager에서 Azure API에 액세스�
 
 ## <a name="step-7-configure-roles-for-cloud-management-gateway-traffic"></a>7단계: 클라우드 관리 게이트웨이 트래픽용 역할 구성
 
-클라우드 관리 게이트웨이를 설정하는 마지막 단계에서는 클라우드 관리 게이트웨이 트래픽을 허용하도록 사이트 시스템 역할을 구성합니다. Tech Preview 1606의 경우 관리 지점, 배포 지점 및 소프트웨어 업데이트 지점 역할만 클라우드 관리 게이트웨이용으로 지원됩니다. 각 역할을 별도로 구성해야 합니다.
+클라우드 관리 게이트웨이를 설정하는 마지막 단계에서는 클라우드 관리 게이트웨이 트래픽을 허용하도록 사이트 시스템 역할을 구성합니다. 클라우드 관리 게이트웨이에서 관리 지점 및 소프트웨어 업데이트 지점 역할만 지원됩니다. 각 역할을 별도로 구성해야 합니다.
 
 1. Configuration Manager 콘솔에서 **관리** > **사이트 구성** > **서버 및 사이트 시스템 역할**로 이동합니다.
 
@@ -215,7 +149,7 @@ API Management 인증서는 Configuration Manager에서 Azure API에 액세스�
 
 3. 역할을 선택한 다음 **속성**을 클릭합니다.
 
-4. 역할 속성 시트의 클라이언트 연결에서 **HTTPS**를 선택하고 **Configuration Manager 클라우드 관리 게이트웨이 트래픽 허용** 옆의 확인란을 선택한 다음 **확인**을 선택합니다. 나머지 역할에 대해 이 단계를 반복합니다.
+4. 역할 속성 시트의 클라이언트 연결에서 **Configuration Manager 클라우드 관리 게이트웨이 트래픽 허용** 옆의 확인란을 선택한 다음 **확인**을 선택합니다. 나머지 역할에 대해 이 단계를 반복합니다. 또한 보안 모범 사례로 **HTTPS** 옵션을 사용하는 것이 권장되지만 필수는 아닙니다.
 
 ## <a name="step-8-configure-clients-for-cloud-management-gateway"></a>8단계: 클라우드 관리 게이트웨이용 클라이언트 구성
 
@@ -237,4 +171,3 @@ API Management 인증서는 Configuration Manager에서 Azure API에 액세스�
 ## <a name="next-steps"></a>다음 단계
 
 [클라이언트에서 클라우드 관리 게이트웨이 모니터링](monitor-clients-cloud-management-gateway.md)
-

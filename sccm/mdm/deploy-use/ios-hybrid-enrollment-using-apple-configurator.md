@@ -2,26 +2,23 @@
 title: "iOS 장치 등록 Apple Configurator - Configuration Manager | Microsoft 문서"
 descriptions: Pre-enroll iOS devices by using Apple Configurator with Configuration Manager.
 ms.custom: na
-ms.date: 03/05/2017
+ms.date: 08/15/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 61a19d95-83ff-4ad8-9a67-f304d2ba54f2
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
-ms.openlocfilehash: 6c6e9edbc7b2fca3d1be4feabb238efab80465fa
-ms.contentlocale: ko-kr
-ms.lasthandoff: 01/24/2017
-
-
+ms.openlocfilehash: 403f3b730e24c0f76314b04bcdd1d2f817bcd908
+ms.sourcegitcommit: db7b7ec347638efd05cdba474e8a8f8535516116
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/16/2017
 ---
 # <a name="ios-hybrid-enrollment-using-apple-configurator-with-configuration-manager"></a>Configuration Manager에서 Apple Configurator를 사용한 iOS 하이브리드 등록
 
@@ -41,7 +38,7 @@ ms.lasthandoff: 01/24/2017
 
 -   Mac 컴퓨터에 장치를 연결하기 위한 USB 케이블  
 
-## <a name="step-1-add-a-corporate-owned-device-enrollment-profile"></a>1단계: 회사 소유 장치 등록 프로필 추가
+## <a name="add-a-corporate-owned-device-enrollment-profile"></a>회사 소유 장치 등록 프로필 추가
 
 1.  Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > **모든 회사 소유 장치** > **iOS** > **등록 프로필**로 이동합니다. **프로필 만들기**를 클릭하여 프로필 만들기 마법사를 엽니다. 다음 페이지에서 설정을 구성합니다.  
 
@@ -63,13 +60,13 @@ ms.lasthandoff: 01/24/2017
 
 4.  요약 내용을 검토하고 **다음**을 클릭하여 등록 프로필을 만듭니다. **닫기**를 클릭하여 마법사를 종료합니다. 이제 등록하려는 장치에 대한 IMEI 번호 또는 일련 번호를 추가할 준비가 되었습니다.  
 
-## <a name="step-2-predeclare-devices-to-enroll-with-setup-assistant"></a>2단계: 설정 도우미를 사용하여 등록할 장치 미리 선언
+## <a name="predeclare-devices-to-enroll-with-setup-assistant"></a>설정 도우미를 사용하여 등록할 장치 미리 선언
 
 이 단계에서는 하드웨어 식별자(IMEI 또는 일련 번호) 목록을 제공하여 장치를 회사 소유로 미리 선언합니다.
 
 자세한 내용은 [IMEI 및 iOS 일련 번호로 장치 미리 선언](predeclare-devices-with-hardware-id.md)을 참조하세요. 해당 작업을 마쳤으면 이 페이지로 돌아가서 다음 단계를 계속합니다.
 
-## <a name="step-3-export-the-profile-to-deploy-to-ios-devices"></a>3단계: iOS 장치에 배포할 프로필 내보내기
+## <a name="export-the-profile-to-deploy-to-ios-devices"></a>iOS 장치에 배포할 프로필 내보내기
 
 1.  Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > **모든 회사 소유 장치** > **iOS** > **등록 프로필**로 이동합니다.
 
@@ -96,7 +93,7 @@ ms.lasthandoff: 01/24/2017
 > [!NOTE]
 > 등록 프로필 URL은 내보낸 후 2주 동안 유효합니다. 2주 후에는 iOS 장치를 등록할 새 URL을 내보내야 합니다.
 
-## <a name="step-4-prepare-the-device-with-apple-configurator"></a>4단계: Apple Configurator를 사용하여 장치 준비
+## <a name="prepare-the-device-with-apple-configurator"></a>Apple Configurator를 사용하여 장치 준비
 
 등록할 iOS 장치를 준비하려면 각 장치를 Mac 컴퓨터에 연결하고 등록 프로필을 업로드합니다.  
 
@@ -135,7 +132,6 @@ ms.lasthandoff: 01/24/2017
 
 등록을 위해 준비할 모든 장치에 대해 이러한 단계를 반복합니다.
 
-## <a name="step-5-distribute-devices"></a>5단계: 장치 배포
+## <a name="distribute-devices"></a>장치 배포
 
 이제 장치를 회사에 등록할 준비가 되었습니다. 장치를 끈 다음 사용자에게 배포합니다. 장치를 켜면 설치 도우미가 시작되고 등록을 시작하기 위해 회사 또는 학교 계정을 입력하라는 메시지가 표시됩니다.
-

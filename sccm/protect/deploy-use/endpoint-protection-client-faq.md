@@ -6,22 +6,19 @@ ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e3aaa9d2-a40e-42b1-ad75-5a115351729e
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 017bd5b899b364fc832c721d63cc7dbad0a11671
 ms.openlocfilehash: b88bc5f734b85527b81e5848deb0617db4c8dfbc
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="endpoint-protection-client-frequently-asked-questions"></a>Endpoint Protection 클라이언트에 대한 질문과 대답
 
@@ -265,4 +262,3 @@ Windows Defender에서 검색된 사용자 동의 없이 설치되거나 컴퓨�
  [Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결](troubleshoot-endpoint-client.md)   
 
  [Endpoint Protection 클라이언트 도움말](endpoint-protection-client-help.md)
-

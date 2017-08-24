@@ -4,23 +4,21 @@ description: "System Center Configuration Manager용 Technical Preview 버전 16
 ms.custom: na
 ms.date: 01/23/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 63e1df5e-637c-4b07-b7ec-95340f43a805
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
 ms.openlocfilehash: c22e29da8036d69db917205f28a19a69281a64db
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="capabilities-in-technical-preview-1608-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1608의 기능
 
@@ -51,7 +49,7 @@ ms.lasthandoff: 05/17/2017
 
 ### <a name="filter-the-software-display"></a>소프트웨어 표시 필터링
 부모 자식 관계를 정의한 후에 부모인 소프트웨어만 표시하도록 보기를 필터링하거나 정의된 관계가 없는 소프트웨어만 표시하도록 필터링할 수 있습니다. 이렇게 하면 또 다른 인벤토리 소프트웨어의 자식으로 설정된 모든 소프트웨어가 숨겨집니다. 확인 방법은 다음과 같습니다.
-   1.    검색 창에서 **조건 추가**를 선택합니다.
+   1.   검색 창에서 **조건 추가**를 선택합니다.
    2. **부모 소프트웨어**를 선택한 다음 조건 값을 **비어 있음**으로 변경한 후 **검색**을 클릭합니다.
 
 이제 부모 소프트웨어 항목 또는 정의된 관계가 없는 소프트웨어만 표시됩니다. 다른 제목의 자식에만 해당하는 소프트웨어는 표시되지 않습니다.
@@ -63,5 +61,4 @@ ms.lasthandoff: 05/17/2017
 
 > [!NOTE]
 >
-> ~!#@$%, 등의 특수 키는 올바르게 변환되지 않습니다.
-
+> ~!#@$% 등의 특수 키는 올바르게 변환되지 않습니다.

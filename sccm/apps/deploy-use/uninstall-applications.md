@@ -6,22 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0ea3edaa-27c6-4391-9896-cd97d9c5d06d
-caps.latest.revision: 4
-caps.handback.revision: 0
+caps.latest.revision: "4"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 2d0c0bc2e4e080e6061d8d3fe6cafd264d95c42a
 ms.openlocfilehash: f42fee5974567f667c015a6b0bf34d9a9a7d2dab
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="uninstall-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 제거
 
@@ -65,10 +63,9 @@ ms.lasthandoff: 12/16/2016
         > [!NOTE]  
         >  **콘텐츠** 페이지는 배포 유형 만들기 마법사의 **일반** 페이지에서 **배포 유형 정보 수동 지정** 옵션을 선택한 경우에만 표시됩니다.  
 
-    -   **<*배포 유형 이름*> 속성** 대화 상자의 **프로그램** 탭에 있는 **제거 프로그램** 필드에서 응용 프로그램을 제거하도록 명령줄을 지정합니다.  
+    -   **<*배포 유형 이름*> 속성** 대화 상자의 **프로그램** 탭에 있는 **프로그램 제거** 필드에서 응용 프로그램을 제거하도록 명령줄을 지정합니다.  
 
 2.  응용 프로그램을 배포한 다음 소프트웨어 배포 마법사의 **배포 설정** 페이지에서 **제거** 배포 작업을 선택합니다.  
 
     > [!NOTE]  
     >  **제거**배포 작업을 선택하면 배포 목적이 자동으로 **필수**로 구성됩니다.  
-

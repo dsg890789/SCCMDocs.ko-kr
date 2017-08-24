@@ -2,32 +2,30 @@
 title: "System Center Configuration Manager 및 Microsoft Intune으로 Android 하이브리드 장치 관리 설정 | Microsoft 문서"
 description: "Configuration Manager 및 Intune으로 Android 모바일 장치 관리 준비"
 ms.custom: na
-ms.date: 07/31/2017
+ms.date: 08/11/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: c517fe34-0130-465b-a020-bdb555878778
-caps.latest.revision: 9
-caps.handback.revision: 0
+caps.latest.revision: "9"
+caps.handback.revision: "0"
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
+ms.openlocfilehash: 53ecc86ecc000e0ab9e81f683e8e8171e9a66f35
+ms.sourcegitcommit: 9a6f8e028fb5eb2e752da70f42a5b548339bd8f4
 ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
-ms.openlocfilehash: b47ecd1754a623b1b57dc5c5ecb42a6b0b64404e
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/29/2017
-
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/14/2017
 ---
 # <a name="set-up-android-hybrid-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune으로 Android 하이브리드 장치 관리 설정
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-이 항목에서 IT 관리자는 Android 및 Android for Work 장치의 하이브리드 등록을 사용하도록 설정할 수 있습니다. 그런 다음 IT 관리자는 System Center Configuration Manger를 사용하여 구성된 Microsoft Intune 구독을 통해 장치를 관리할 수 있습니다. Google Play에서 사용자는 Android(Samsung KNOX Standard 포함) 및 Android for Work 장치를 등록할 수 있는 Android 회사 포털 앱을 다운로드할 수 있습니다.
+이 항목에서 관리자는 Android 및 Android for Work 장치의 하이브리드 등록을 사용하도록 설정할 수 있습니다. 그런 다음 IT 관리자는 System Center Configuration Manger를 사용하여 구성된 Microsoft Intune 구독을 통해 장치를 관리할 수 있습니다. Google Play에서 사용자는 Android(Samsung KNOX Standard 포함) 및 Android for Work 장치를 등록할 수 있는 Android 회사 포털 앱을 다운로드할 수 있습니다.
 
 Configuration Manager 관리자는 준수 설정을 관리하고, Android 장치를 초기화 또는 삭제하고, 앱을 배포하고, 소프트웨어 및 하드웨어 인벤토리를 수집할 수 있습니다. Android 회사 포털 앱이 Android 장치에 설치되지 않은 경우 인벤토리 및 준수 설정과 같은 일부 관리 기능을 사용할 수 없지만 Android 장치에 앱을 계속 배포할 수 있습니다.  
 
@@ -37,12 +35,9 @@ Configuration Manager 관리자는 준수 설정을 관리하고, Android 장치
 1. 플랫폼에 대한 등록을 설정하려면 먼저 [하이브리드 MDM 설정](setup-hybrid-mdm.md)에서 필수 조건 및 절차를 완료합니다.  
 2. Configuration Manager 콘솔의 **관리** 작업 영역에서 **개요** > **Cloud Services** > **Microsoft Intune 구독**을 선택하고 Intune 구독을 선택합니다.  
 3. **홈** 탭의 **구독** 그룹에서 **플랫폼 구성** > **Android**를 선택합니다.  
-4. **Microsoft Intune 구독 속성** 대화 상자에서 **Android** 탭을 선택하고 **Android 등록 사용** 확인란을 선택합니다.  
+4. **Microsoft Intune 구독 속성** 대화 상자에서 **Android** 탭을 선택하고 **Android 등록 사용** 확인란을 선택합니다. **개인적으로 소유한 장치 차단**을 선택하여 [미리 선언된 장치](predeclare-devices-with-hardware-id.md)에 대한 등록을 제한할 수 있습니다.
 
-> [!NOTE]
->  **개인적으로 소유한 장치 차단** 기능은 현재 사용할 수 없습니다. 
-
- 설정한 후에는 사용자에게 장치를 등록하는 방법을 알려 주어야 합니다. [장치 등록에 대해 최종 사용자에게 알릴 내용](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)을 참조하세요. 이 정보는 Microsoft Intune 및 Configuration Manager에서 관리되는 모바일 장치에 적용됩니다.
+ 설정한 후에는 사용자에게 장치를 등록하는 방법을 알려 주어야 합니다. [장치 등록에 대해 최종 사용자에게 알릴 내용](https://docs.microsoft.com/intune/end-user-educate)을 참조하세요. 이 정보는 Microsoft Intune 및 Configuration Manager에서 관리되는 모바일 장치에 적용됩니다.
 
 ## <a name="enable-android-for-work-enrollment"></a>Android for Work 등록 사용
 다음 단계를 수행하면 Configuration Manager에서 회사 프로필을 사용하여 Android 장치를 관리할 수 있습니다.
@@ -81,4 +76,3 @@ Android for Work 등록을 사용하도록 설정한 후 Android for Work 장치
 
 > [!div class="button"]
 [< 이전 단계](create-service-connection-point.md)  [다음 단계 >](set-up-additional-management.md)
-

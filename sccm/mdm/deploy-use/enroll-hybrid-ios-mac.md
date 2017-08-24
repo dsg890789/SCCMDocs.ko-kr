@@ -2,26 +2,24 @@
 title: "System Center Configuration Manager 및 Microsoft Intune에서 iOS 및 Mac 하이브리드 장치 관리 설정 | Microsoft 문서"
 description: "System Center Configuration Manager 및 Microsoft Intune에서 iOS 장치 관리 설정"
 ms.custom: na
-ms.date: 07/31/2017
+ms.date: 08/11/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 5eae4400-58ca-4c71-804c-6a585cd3df5d
-caps.latest.revision: 10
-caps.handback.revision: 0
+caps.latest.revision: "10"
+caps.handback.revision: "0"
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
+ms.openlocfilehash: d84d6f3dba65f1d8114ef2eef9f19a2bb5389027
+ms.sourcegitcommit: 9a6f8e028fb5eb2e752da70f42a5b548339bd8f4
 ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
-ms.openlocfilehash: 1a93a542f55d02df20865fa4ae8d7590dd9be753
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/29/2017
-
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/14/2017
 ---
 # <a name="set-up-ios-hybrid-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune에서 iOS 하이브리드 장치 관리 설정
 
@@ -67,9 +65,20 @@ IOS 등록을 사용하도록 설정하려면 APNs 인증서를 업로드합니�
 3.  **Microsoft Intune 구독 속성** 대화 상자에서 **iOS** 탭을 선택하고 **iOS 등록 사용** 확인란을 클릭하여 선택합니다.  
 4.  **찾아보기**를 클릭하고 Apple에서 다운로드한 APNs 인증서(.cer) 파일이 있는 위치로 이동합니다. Configuration Manager가 APNs 인증서 정보를 표시합니다. **확인** 을 클릭하여 APN 인증서를 Intune에 저장합니다.  
 
-> [!NOTE]
-> **등록 제한** 기능은 현재 사용할 수 없습니다. 
+설정한 후에는 사용자에게 장치를 등록하는 방법을 알려 주어야 합니다. [장치 등록에 대해 최종 사용자에게 알릴 내용](https://docs.microsoft.com/intune/end-user-educate)을 참조하세요. 이 정보는 Microsoft Intune 및 Configuration Manager에서 관리되는 모바일 장치에 적용됩니다.
+
+## <a name="configure-enrollment-restrictions"></a>등록 제한 구성
+
+개인적으로 소유한 장치를 차단하여 등록할 수 있는 장치를 제한할 수 있습니다. 이 사용자가 회사 포털을 사용하여 해당 장치를 등록하지 않도록 방지합니다. 개인 소유 장치를 차단하는 경우 다음 장치만을 등록할 수 있습니다.
+- [미리 선언된 장치](predeclare-devices-with-hardware-id.md)
+- [Apple Configurator 관리되는 장치](ios-hybrid-enrollment-using-apple-configurator.md)
+- [DEP(장비 등록 프로그램) 관리되는 장치](ios-device-enrollment-program-for-hybrid.md)
+- [장치 등록 관리자 계정](enroll-devices-with-device-enrollment-manager.md)을 사용하여 등록한 장치
+
+### <a name="to-enable-enrollment-restrictions"></a>등록 제한을 사용하려면
+1.  Configuration Manager 콘솔의 **관리 작업** 영역에서 **클라우드 서비스** > **Microsoft Intune 구독**으로 이동합니다.
+2.  **홈** 탭의 **구독** 그룹에서 **플랫폼 구성** > **iOS**를 클릭합니다.
+3.  **개인적으로 소유한 장치 차단**을 선택하여 회사 소유 장치에 대한 등록을 제한합니다.
 
 > [!div class="button"]
 [< 이전 단계](create-service-connection-point.md)  [다음 단계 >](set-up-additional-management.md)
-

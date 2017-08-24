@@ -6,25 +6,21 @@ ms.date: 07/31/2017
 ms.prod: configuration-manager
 ms.reviewer: dudeso
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 5e5d854c-9cc1-4dd8-b33f-0fcac675b395
-caps.latest.revision: 13
-caps.handback.revision: 0
+caps.latest.revision: "13"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
+ms.openlocfilehash: 3921748d3c99c2a35b670f3ca121dc7ab92d43bc
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
 ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
-ms.openlocfilehash: 4bb1f4a068563a5fe6f384708e10269dcd3229da
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/29/2017
-
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
-
 # <a name="device-guard-management-with-configuration-manager"></a>Configuration Manager로 Device Guard 관리
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -97,6 +93,9 @@ Device Guard 정책을 구성하거나 배포하기 전에 다음 정보를 보�
     - 운영 체제 배포 이미지에 포함된 앱 신뢰 
 7.  **다음**을 클릭한 다음 마법사를 완료합니다.
 
+>[!IMPORTANT]
+>Configuration Manager 클라이언트의 버전 1706 이상을 실행하는 클라이언트 PC에서만 신뢰할 수 있는 파일 또는 폴더를 포함하도록 지원됩니다. 모든 포함 규칙이 장치 가드에 포함되고 정책이 Configuration Manager 클라이언트에서 이전 버전을 실행하는 클라이언트 PC에 배포되는 경우 정책 적용에 실패합니다. 이전 클라이언트를 업그레이드하여 이 문제를 해결합니다. 포함 규칙을 포함하지 않는 정책은 여전히 이전 버전의 Configuration Manager 클라이언트에 적용될 수 있습니다.
+
 ## <a name="how-to-deploy-a-device-guard-policy"></a>Device Guard 정책을 배포하는 방법
 1.  Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.
 2.  **자산 및 호환성** 작업 영역에서 **Endpoint Protection**을 확장하고 **Device Guard 정책**을 클릭합니다.
@@ -130,7 +129,6 @@ Device Guard 정책의 처리를 모니터하려면 클라이언트 PC에서 다
 - Configuration Manager를 사용하여 Device Guard 정책이 있는 클라이언트 PC에서 구성 가능한 코드 무결성을 사용하도록 설정하면 이 정책이 있어도 로컬 관리자 권한이 있는 사용자가 Device Guard 정책을 피하거나 신뢰할 수 없는 소프트웨어를 실행하지 못하게 하지 않습니다. 
 - 로컬 관리자 권한이 있는 사용자가 구성 가능한 코드 무결성을 사용 안함으로 설정하지 못하게 하는 유일한 방법은 서명된 이진 파일을 배포하는 것입니다. 이 배포 방법은 그룹 정책을 통해 가능하지만 현재 Configuration Manager에서는 지원되지 않습니다.
 - 클라이언트 PC에서 Configuration Manager를 관리된 설치 프로그램으로 설정하면 AppLocker 정책을 사용합니다. AppLocker는 관리된 설치 프로그램을 식별하는 데만 사용하고 모든 적용은 구성 가능한 코드 무결성을 통해 수행됩니다. 
-
 
 
 

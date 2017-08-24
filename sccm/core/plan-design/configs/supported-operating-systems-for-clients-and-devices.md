@@ -2,25 +2,23 @@
 title: "지원되는 클라이언트 및 장치 | Microsoft 문서"
 description: "System Center Configuration Manager에서 클라이언트 및 장치에 대해 지원하는 운영 체제를 알아봅니다."
 ms.custom: na
-ms.date: 2/6/2017
+ms.date: 8/16/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 87f4e041-67df-4c61-aa98-7444faffe565
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d5166b16ffbe46af561b1ce98c0494cc4aaa72a8
-ms.openlocfilehash: cd7b8bf35aeb26c8b7b37f6faa51c9a09138fdb9
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.openlocfilehash: 82be9b005ec87199f3191612f720f4cc267a4e5c
+ms.sourcegitcommit: db7b7ec347638efd05cdba474e8a8f8535516116
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/16/2017
 ---
 # <a name="supported-operating-systems-for-clients-and-devices-for-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 및 장치에 대해 지원되는 운영 체제
 
@@ -68,7 +66,7 @@ ms.lasthandoff: 05/17/2017
 -   **Windows 7 SP1**(x86, x64): Professional, Enterprise, Ultimate    
 
 -   **Windows Server 2016의 Server Core 설치**(x64) <sup>2</sup>
-  - 이 운영 체제는 KB3186654의 핫픽스 롤업이 포함된 1606 버전(또는 2016년 10월에 릴리스된 1606의 기준 버전)부터 지원됩니다. 
+  - 이 운영 체제는 KB3186654의 핫픽스 롤업이 포함된 1606 버전(또는 2016년 10월에 릴리스된 1606의 기준 버전)부터 지원됩니다.
 
 
 -   **Windows Server 2012 R2의 Server Core 설치**(x64) <sup>2</sup>    
@@ -124,6 +122,8 @@ ms.lasthandoff: 05/17/2017
 -   **Windows Embedded POSReady 7**(x86, x64)    
 
 -   **Windows Embedded Standard 7 SP1**(x86, x64)    
+
+다음 운영 체제는 Windows XP Embedded에 기반하고 Configuration Manager 버전 1610 이전에서만 지원됩니다. [1702 버전부터 이러한 포함 운영 체제는 더 이상 지원되지 않습니다](/sccm/core/plan-design/changes/removed-and-deprecated-features#client-operating-systems).  
 
 -   **WEPOS 1.1 SP3**(x86)    
 
@@ -351,4 +351,3 @@ Configuration Manager에서는 Configuration Manager 클라이언트를 설치�
 -   **Exchange Server 2013**  
 
 -   **Exchange Online(Office 365)**: 여기에는 Business Productivity Online Standard Suite가 포함됨  
-

@@ -6,23 +6,20 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 49cec466-1676-4fe2-a2fe-5004f01d735e
-caps.latest.revision: 11
-caps.handback.revision: 0
+caps.latest.revision: "11"
+caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 58a82b29743cb37a5d358f020cf11b91d6f6f42e
-ms.contentlocale: ko-kr
-ms.lasthandoff: 03/06/2017
-
-
+ms.openlocfilehash: c564c1fc25c5156a2d9ddfa1b4123024c658bf61
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-sharepoint-online-access-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 SharePoint Online 액세스 관리
 
@@ -166,7 +163,7 @@ Office 데스크톱 응용 프로그램은 다음을 실행하는 SharePoint Onl
 
 4.  SharePoint Online 및 비즈니스용 OneDrive에 대한 **브라우저 액세스**에서, 지원되는 브라우저인 Safari(iOS) 및 Chrome(Android)을 통해서만 Exchange Online에 대한 액세스를 허용하도록 선택할 수 있습니다. 다른 브라우저에서의 액세스는 차단됩니다.  OneDrive에 대한 응용 프로그램 액세스에 선택한 것과 동일한 플랫폼 제한 사항이 여기에도 적용됩니다.
 
-    **Android** 장치에서는, 사용자가 브라우저 액세스를 사용하도록 설정해야 합니다.  이를 위해서 최종 사용자가 등록된 장치에서 다음과 같이 “브라우저 액세스 사용” 옵션을 사용하도록 설정해야 합니다.
+    **Android** 장치에서는, 사용자가 브라우저 액세스를 사용하도록 설정해야 합니다.  이를 위해서 최종 사용자가 등록된 장치에서 다음과 같이 "브라우저 액세스 사용" 옵션을 사용하도록 설정해야 합니다.
     1.  **회사 포털 앱**을 시작합니다.
     2.  세 개의 점(...) 또는 하드웨어 메뉴 단추에서 **설정** 페이지로 이동합니다.
     3.  **브라우저 액세스 사용** 단추를 누릅니다.
@@ -203,4 +200,3 @@ Office 데스크톱 응용 프로그램은 다음을 실행하는 SharePoint Onl
 ### <a name="see-also"></a>참고 항목  
 
  [System Center Configuration Manager에서 서비스 액세스 관리](../../protect/deploy-use/manage-access-to-services.md)
-

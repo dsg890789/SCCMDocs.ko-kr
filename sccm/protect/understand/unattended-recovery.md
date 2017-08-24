@@ -6,8 +6,7 @@ ms.date: 6/5/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 828c31d1-3d70-4412-b1a8-c92e7e504d39
@@ -15,18 +14,15 @@ caps.latest.revision:
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f7cd9c71287d62c9f5d36e2f032bc2a6065572ae
 ms.openlocfilehash: b5a1a1d165a6888bc26e809666d2331ff3c24d68
-ms.contentlocale: ko-kr
-ms.lasthandoff: 06/06/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="unattended-site-recovery-for-configuration-manager"></a>Configuration Manager에 대한 무인 사이트 복구   
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
- Configuration Manager 중앙 관리 사이트 또는 기본 사이트의 [무인 복구](/sccm/protect/understand/recover-sites#site-recovery-procedures)를 수행하려는 경우, 무인 설치 스크립트를 만들고 **/script** 명령 옵션과 함께 설치 프로그램을 사용하면 됩니다. 이 스크립트는 기본 설정이 없다는 점만 제외하고 설치 마법사에서 요구하는 정보와 동일한 유형의 정보를 제공합니다. 사용 중인 복구 유형에 적용되는 설치 키에 대해 모든 값을 지정해야 합니다.
+*적용 대상: System Center Configuration Manager(현재 분기)* Configuration Manager 중앙 관리 사이트 또는 기본 사이트의 [무인 복구](/sccm/protect/understand/recover-sites#site-recovery-procedures)를 수행하려는 경우, 무인 설치 스크립트를 만들고 **/script** 명령 옵션과 함께 설치 프로그램을 사용하면 됩니다. 이 스크립트는 기본 설정이 없다는 점만 제외하고 설치 마법사에서 요구하는 정보와 동일한 유형의 정보를 제공합니다. 사용 중인 복구 유형에 적용되는 설치 키에 대해 모든 값을 지정해야 합니다.
 
  /script 설치 명령줄 옵션을 사용하려면 초기화 파일을 만들고 /script 설치 명령줄 옵션 뒤에 초기화 파일 이름을 지정해야 합니다. 파일 이름은 **.ini** 파일 이름 확장명만 붙이면 자유롭게 지정해도 됩니다. 명령줄에서 설치 초기화 파일을 참조할 때 파일의 전체 경로를 입력해야 합니다. 예를 들어 이름이 *setup.ini*인 설치 초기화 파일이 *C:\setup 폴더*에 저장되어 있는 경우 명령줄은 다음과 같습니다.
 
@@ -386,4 +382,3 @@ ms.lasthandoff: 06/06/2017
     -   **필수:** 아니요
     -   **값:** &lt;*Timeout*>
     -   **세부 정보:** 기본 사이트가 중앙 관리 사이트에 연결하는 최대 시간 제한 값(분)을 지정합니다. 예를 들어 기본 사이트가 중앙 관리 사이트에 연결하지 못하면 WaitForCASTimeout 기간에 도달할 때까지 기본 사이트는 CASRetryInterval 값에 기반하여 중앙 관리 사이트에 대한 연결을 다시 시도합니다. 값은 0에서 100까지 지정할 수 있습니다.
-

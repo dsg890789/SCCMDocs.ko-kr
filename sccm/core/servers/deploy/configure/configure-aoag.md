@@ -6,21 +6,19 @@ ms.date: 7/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 7e4ec207-bb49-401f-af1b-dd705ecb465d
-caps.latest.revision: 0
+caps.latest.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
+ms.openlocfilehash: e0b887169f0c8ae6901d1c6fd6a498df9596c2b4
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
 ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
-ms.openlocfilehash: 0d6527abba24b685151ae63feaae29b30d1e2cc9
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/29/2017
-
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="configure-sql-server-always-on-availability-groups-for-configuration-manager"></a>Configuration Manager용 SQL Server Always On 가용성 그룹 구성
 
@@ -106,7 +104,7 @@ SQL Server 문서에서 [데이터베이스의 복구 모델 보기 또는 변�
 
 
 
-## <a name="add-and-remove-synchronous-replica-members"></a>동기 복제 구성원 추가 및 제거  
+## <a name="add-or-remove-synchronous-replica-members"></a>동기 복제본 구성원 추가 또는 제거  
 사이트 데이터베이스가 가용성 그룹에 호스트되는 경우 다음 절차에 따라 동기 복제 구성원을 추가하거나 제거합니다. 지원되는 복제본의 유형 및 수에 대한 자세한 내용은 가용성 그룹 사용 준비 항목의 [필수 구성 요소](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database#prerequisites)에서 **가용성 그룹 구성**을 참조하세요.
 
 다음 절차를 완료하려면 사용하는 계정이 다음과 같아야 합니다.
@@ -114,25 +112,13 @@ SQL Server 문서에서 [데이터베이스의 복구 모델 보기 또는 변�
 -   사이트 데이터베이스를 호스트하거나 호스트할 각 SQL Server에서 **sysadmin**이어야 합니다.
 
 
-### <a name="to-add-a-new-synchronous-replica-member"></a>새 동기 복제본 구성원을 추가하려면
-1.  보조 복제본으로 새 서버를 가용성 그룹에 추가합니다. SQL Server 문서 라이브러리에서 [가용성 그룹에 보조 복제본 추가(SQL Server)](/sql/database-engine/availability-groups/windows/add-a-secondary-replica-to-an-availability-group-sql-server)를 참조하세요.
-
-2.  **Preinst.exe /stopsite**를 실행하여 Configuration Manager 사이트를 중지합니다. [계층 유지 관리 도구](/sccm/core/servers/manage/hierarchy-maintenance-tool-preinst.exe)를 참조하세요.
-
-3.  SQL Server를 사용하여 주 복제본에서 사이트 데이터베이스의 백업을 만든 후 새로운 보조 복제본 서버로 해당 백업을 복원합니다. SQL Server 문서의 [전체 데이터베이스 백업 만들기](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server) 및 [SSMS를 사용하여 데이터베이스 백업 복원](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms)을 참조하세요.
-
-4.  각 보조 복제본을 구성합니다. 가용성 그룹에 있는 각 보조 복제본에 대해 다음 작업을 수행합니다.
-
-    1.  사이트 서버의 컴퓨터 계정이 가용성 그룹의 구성원인 각 컴퓨터에서 **로컬 관리자** 그룹의 구성원인지 확인합니다.
-
-    2.  필수 구성 요소에서 [확인 스크립트](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database#prerequisites)를 실행하여 각 복제본의 사이트 데이터베이스가 올바르게 구성되어 있는지 확인합니다.
-
-    3.  새 복제본을 구성해야 하는 경우 수동으로 기본 복제본을 새로운 보조 복제본으로 장애 조치(failover)한 후 필요한 설정을 수행합니다. SQL Server 문서에서 [가용성 그룹의 계획된 수동 장애 조치(Failover) 수행](/sql/database-engine/availability-groups/windows/perform-a-planned-manual-failover-of-an-availability-group-sql-server) 을 참조하세요.
-
-5.  사이트 구성 요소 관리자(**sitecomp**) 및 **SMS_Executive** 서비스를 시작하여 사이트를 다시 시작합니다.
+### <a name="to-add-a-new-synchronous-replica-member"></a>새 동기 복제본 구성원을 추가하려면  
+Configuration Manager와 함께 사용하는 가용성 그룹에 보조 복제본을 추가하는 프로세스는 복잡하고 동적일 수 있으며 개별 환경에 따라 변경되는 단계 및 프로시저가 필요할 수 있습니다. 이 프로세스를 간소화하는 Configuration Manager의 기능을 향상시키기 위해 노력하고 있습니다. 보조 복제본을 추가해야 하는 경우 지침은 TechNet에서 다음 블로그를 참조합니다.
+-   [ConfigMgr 1702: 기존 SQL AO AG에 새 노드(보조 복제본) 추가](https://blogs.technet.microsoft.com/umairkhan/2017/07/17/configmgr-1702-adding-a-new-node-secondary-replica-to-an-existing-sql-ao-ag/)
 
 ### <a name="to-remove-a-replica-member"></a>복제 구성원을 제거하려면
-이 절차에서는 SQL Server 문서의 [가용성 그룹에서 보조 복제본 제거](/sql/database-engine/availability-groups/windows/remove-a-secondary-replica-from-an-availability-group-sql-server)에 나와 있는 정보를 사용합니다.
+이 절차에서는 SQL Server 문서의 [가용성 그룹에서 보조 복제본 제거](/sql/database-engine/availability-groups/windows/remove-a-secondary-replica-from-an-availability-group-sql-server)에 나와 있는 정보를 사용합니다.  
+
 
 ## <a name="configure-an-asynchronous-commit-replica"></a>비동기 커밋 복제본 구성
 Configuration Manager 버전 1706부터 Configuration Manager에서 사용하여 가용성 그룹에 비동기 복제본을 추가할 수 있습니다. 이렇게 하기 위해 동기 복제본을 구성하는 데 필요한 구성 스크립트를 실행할 필요는 없습니다. (해당 비동기 복제본을 사이트 데이터베이스로 사용하는 것은 지원되지 않기 때문입니다.) 가용성 그룹에 보조 복제본을 추가하는 방법에 대한 자세한 내용은 [SQL Server 설명서](https://msdn.microsoft.com/library/hh213247(v=sql.120).aspx(d=robot))를 참조하세요.
@@ -186,4 +172,3 @@ Configuration Manager 1706 이상 버전에서는 비동기 복제본을 사용�
 9.  새 데이터베이스 위치에 대한 정보를 제공한 후 일반적인 프로세스와 구성을 사용하여 설치 프로그램을 완료합니다. 설치가 완료되면 사이트가 다시 시작되고 새 데이터베이스 위치를 사용합니다.    
 
 10. 가용성 그룹의 구성원인 서버를 정리하려면 SQL Server 문서에 있는 [가용성 그룹 제거](/sql/database-engine/availability-groups/windows/remove-an-availability-group-sql-server) 항목의 지침을 따릅니다.
-

@@ -2,32 +2,29 @@
 title: "장치 등록 관리자를 사용하여 장치 등록 - Configuration Manager | Microsoft 문서"
 description: "System Center Configuration Manager와 장치 등록 관리자 계정을 사용하여 회사 소유 장치를 등록합니다."
 ms.custom: na
-ms.date: 03/24/2017
+ms.date: 08/15/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2905f26e-7859-497d-b995-5ff48261efa2
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7573590763c68a4c97d388be1e64054c318da9cc
-ms.openlocfilehash: 8c491636925670732e6af67d8c1c741e4793ef96
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
-
+ms.openlocfilehash: c90ecca1ee46523d16fc1cf11495e40707631e03
+ms.sourcegitcommit: db7b7ec347638efd05cdba474e8a8f8535516116
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/16/2017
 ---
 # <a name="enroll-devices-with-device-enrollment-manager-with-configuration-manager"></a>Configuration Manager와 장치 등록 관리자를 사용하여 장치 등록
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-조직에서는 Intune을 사용하여 단일 사용자 계정으로 많은 수의 모바일 장치를 관리할 수 있습니다. *DEM(장치 등록 관리자)* 계정은 1000개까지 장치를 등록할 수 있는 특수한 사용자 계정입니다. 기존 사용자를 DEM 계정에 추가하여 특수 DEM 기능을 제공합니다. 등록된 각 장치는 단일 라이선스를 사용합니다. 이 계정을 통해 등록한 장치는 개인 전용 장치가 아닌 사용자 선호도가 없는 공유 장치로 사용하는 것이 좋습니다.  
+조직에서는 Intune을 사용하여 단일 사용자 계정으로 많은 수의 모바일 장치를 관리할 수 있습니다. DEM(*장치 등록 관리자*) 계정은 장치를 등록하는 데 사용되는 특수한 사용자 계정입니다. 기존 사용자를 DEM 계정에 추가하여 특수 DEM 기능을 제공합니다. 등록된 각 장치는 단일 라이선스를 사용합니다. 이 계정을 통해 등록한 장치는 개인 전용 장치가 아닌 사용자 선호도가 없는 공유 장치로 사용하는 것이 좋습니다.  
 
 ## <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager"></a>장치 등록 관리자로 회사 소유 장치 등록  
  예를 들어, 저장소 관리자나 감독자에게 장치 등록 관리자 사용자 계정을 할당하여 다음 작업을 수행하도록 할 수 있습니다.  
@@ -67,24 +64,14 @@ ms.lasthandoff: 05/17/2017
 7.  이제 장치 등록 관리자는 최종 사용자가 회사 포털에서 BYOD(bring-your-own-device) 시나리오일 때 이용하는 동일한 절차를 통해 모바일 장치를 등록할 수 있습니다.  
 
 #### <a name="delete-a-device-enrollment-manager-from-intune"></a>Intune에서 장치 등록 관리자 삭제  
+장치 등록 관리자를 삭제해도 등록된 장치에는 영향을 주지 않습니다. 장치 등록 관리자를 삭제하는 경우:  
+- 등록된 장치는 등록이 삭제되지 않습니다.  
+- 등록된 장치는 계속 완벽하게 관리됩니다.  
+- 삭제된 장치 등록 관리자 계정의 자격 증명은 회사 포털에 로그온하여 앱에 액세스할 수 있도록 유효한 상태로 유지됩니다.  
+- 삭제된 장치 등록 관리자 계정 자격 증명으로는 여전히 장치를 초기화하거나 사용 중지할 수 없습니다.  
+- 등록된 장치에 대한 삭제된 장치 등록 관리자 계정의 관계는 유지되지만 추가 장치를 등록할 수는 없습니다.
 
 1.  Configuration Manager 콘솔에서 **관리**를 클릭합니다.  
-
 2.  **관리** 작업 영역에서 **클라우드 서비스**를 확장하고 **Microsoft Intune 구독**을 클릭합니다. 장치 등록 관리자를 추가할 Microsoft Intune 구독을 선택한 후 **속성**을 클릭합니다.  
-
 3.  Microsoft Intune 구독 속성 대화 상자에서 **장치 등록 관리자** 탭을 클릭합니다.  
-
 4.  삭제하려는 장치 등록 관리자를 **검색**하고 **제거**를 클릭한 후 **확인**을 클릭합니다.  
-
- 장치 등록 관리자를 삭제해도 등록된 장치에는 영향을 주지 않습니다. 장치 등록 관리자를 삭제하는 경우:  
-
--   등록된 장치는 영향을 받지 않습니다.  
-
--   등록된 장치는 계속 완벽하게 관리됩니다.  
-
--   삭제된 장치 등록 관리자 계정의 자격 증명은 회사 포털에 로그온하여 앱에 액세스할 수 있도록 유효한 상태로 유지됩니다.  
-
--   삭제된 장치 등록 관리자 계정 자격 증명으로는 여전히 장치를 초기화하거나 사용 중지할 수 없습니다.  
-
--   등록된 장치에 대한 삭제된 장치 등록 관리자 계정의 관계는 유지되지만 추가 장치를 등록할 수는 없습니다.
-

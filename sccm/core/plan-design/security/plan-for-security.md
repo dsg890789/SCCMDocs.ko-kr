@@ -6,23 +6,20 @@ ms.date: 01/04/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2a216814-ca8c-4d2e-bcef-dc00966a3c9f
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: af06fb10d905e3fe447c6cd6ed35dac10488161f
-ms.openlocfilehash: 1bf519ad4593f6a08d7dc393f9fab91c70b51b25
-ms.contentlocale: ko-kr
-ms.lasthandoff: 01/05/2017
-
-
+ms.openlocfilehash: 6145cb69c69dba1eb1b9842079ee1a33686bb18a
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="plan-for-security-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 보안 계획
 
@@ -292,7 +289,7 @@ CCMSetup.exe를 통해 Client.msi 속성 **RESETKEYINFORMATION = TRUE**를 사�
 
 7.  **TrustedRootKey용 개체 편집기** 대화 상자에서 **인스턴스**를 선택합니다.  
 
-8.  **TrustedRootKey**의 인스턴스가 표시되는 새 **쿼리 결과** 창에서 **TrustedRootKey=@**을 두 번 클릭합니다.  
+8.  **TrustedRootKey**의 인스턴스가 표시되는 새 **쿼리 결과** 창에서 **TrustedRootKey=@**를 두 번 클릭합니다.  
 
 9. **TrustedRootKey=@용 개체 편집기** 대화 상자의 **속성** 섹션에서 **TrustedRootKey CIM_STRING**으로 스크롤합니다. 오른쪽 열에 있는 문자열이 신뢰할 수 있는 루트 키입니다. 이 문자열이 *&lt;Configuration Manager 디렉터리\>***\bin\mobileclient.tcf** 파일의 **SMSPublicRootKey** 값과 일치하는지 확인합니다.  
 
@@ -310,4 +307,3 @@ CCMSetup.exe를 통해 Client.msi 속성 **RESETKEYINFORMATION = TRUE**를 사�
 
 ### <a name="see-also"></a>참고 항목
 [System Center Configuration Manager에 대한 암호화 제어 기술 참조](../../../protect/deploy-use/cryptographic-controls-technical-reference.md)  
-

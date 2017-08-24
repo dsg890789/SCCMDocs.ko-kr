@@ -4,23 +4,21 @@ description: "System Center Configuration Manager용 Technical Preview 버전 16
 ms.custom: na
 ms.date: 01/23/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: bceab2e8-2f05-4a17-9ac8-a7a558670fb7
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
 ms.openlocfilehash: bcb14a2be312d4d8a4a9c235652c7bf971a7a976
-ms.contentlocale: ko-kr
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="capabilities-in-technical-preview-1612-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1612의 기능
 
@@ -52,11 +50,11 @@ Technical Preview 버전 1612부터 데이터 웨어하우스 서비스 지점�
 
 | 단계         | 세부 정보  |
 |:------:|-----------|  
-| **1**  |     사이트 서버는 데이터를 전송하고 사이트 데이터베이스에 저장합니다.  |  
-| **2** |      일정 및 구성에 따라 데이터 웨어하우스 서비스 지점은 사이트 데이터베이스에서 데이터를 가져옵니다.  |  
+| **1**  |  사이트 서버는 데이터를 전송하고 사이트 데이터베이스에 저장합니다.  |  
+| **2** |   일정 및 구성에 따라 데이터 웨어하우스 서비스 지점은 사이트 데이터베이스에서 데이터를 가져옵니다.  |  
 | **3** |  데이터 웨어하우스 서비스 지점은 동기화된 데이터 복사본을 전송하고 데이터 웨어하우스 데이터베이스에 저장합니다. |  
 | **A** |  기본 제공 보고서를 사용하여 SQL Server Reporting Services를 통해 Reporting Services에 전달되는 데이터 요청이 수행됩니다. |  
-| **B** |      대부분의 보고서는 현재 정보에 대한 것이며, 사이트 데이터베이스에 대해 이러한 요청이 실행됩니다. |  
+| **B** |   대부분의 보고서는 현재 정보에 대한 것이며, 사이트 데이터베이스에 대해 이러한 요청이 실행됩니다. |  
 | **C** | 보고서에서 기록 데이터를 요청하는 경우 *범주*가 **데이터 웨어하우스**인 보고서 중 하나를 사용하여 데이터 웨어하우스 데이터베이스에 대해 요청이 실행됩니다.   |  
 
 ### <a name="prerequisites-for-the-data-warehouse-service-point-and-database"></a>데이터 웨어하우스 서비스 지점 및 데이터베이스에 대한 필수 조건
@@ -87,12 +85,12 @@ Technical Preview 버전 1612부터 데이터 웨어하우스 서비스 지점�
 - **Configuration Manager 데이터베이스 설정:**   
   - **서버 이름** - 사이트 데이터베이스를 호스트하는 서버의 FQDN을 지정합니다. SQL Server의 기본 인스턴스를 사용하지 않는 경우 FQDN 뒤에 인스턴스를 다음과 같은 형식으로 지정해야 합니다. ***&lt;Sqlserver_FQDN>\&lt;Instance_name>***
   - **데이터베이스 이름** - 사이트 데이터베이스의 이름을 지정합니다.
-  -    **확인** - 사이트 데이터베이스에 대한 연결이 성공했는지 확인하려면 **확인**을 클릭합니다.
+  - **확인** - 사이트 데이터베이스에 대한 연결이 성공했는지 확인하려면 **확인**을 클릭합니다.
 </br></br>
 - **데이터 웨어하우스 데이터베이스 설정:**
-  -    **서버 이름** - 데이터 웨어하우스 서비스 지점 및 데이터베이스를 호스트하는 서버의 FQDN을 지정합니다. SQL Server의 기본 인스턴스를 사용하지 않는 경우 FQDN 뒤에 인스턴스를 다음과 같은 형식으로 지정해야 합니다. ***&lt;Sqlserver_FQDN>\&lt;Instance_name>***
-  -    **데이터베이스 이름** - 데이터 웨어하우스 데이터베이스의 FQDN을 지정합니다.  Configuration Manager는 이 이름으로 데이터베이스를 만듭니다. SQL Server 인스턴스에 이미 존재하는 데이터베이스 이름을 지정하면 Configuration Manager는 해당 데이터베이스를 사용합니다.
-  -    **확인** - 사이트 데이터베이스에 대한 연결이 성공했는지 확인하려면 **확인**을 클릭합니다.
+  - **서버 이름** - 데이터 웨어하우스 서비스 지점 및 데이터베이스를 호스트하는 서버의 FQDN을 지정합니다. SQL Server의 기본 인스턴스를 사용하지 않는 경우 FQDN 뒤에 인스턴스를 다음과 같은 형식으로 지정해야 합니다. ***&lt;Sqlserver_FQDN>\&lt;Instance_name>***
+  - **데이터베이스 이름** - 데이터 웨어하우스 데이터베이스의 FQDN을 지정합니다.  Configuration Manager는 이 이름으로 데이터베이스를 만듭니다. SQL Server 인스턴스에 이미 존재하는 데이터베이스 이름을 지정하면 Configuration Manager는 해당 데이터베이스를 사용합니다.
+  - **확인** - 사이트 데이터베이스에 대한 연결이 성공했는지 확인하려면 **확인**을 클릭합니다.
 
 **동기화 설정** 페이지:   
 - **데이터 설정:**
@@ -109,7 +107,7 @@ Technical Preview 버전 1612부터 데이터 웨어하우스 서비스 지점�
 #### <a name="troubleshoot-installation-and-data-synchronization"></a>설치 및 데이터 동기화 문제 해결
 다음 로그를 사용하여 데이터 웨어하우스 서비스 지점 설치 또는 데이터 동기화 문제를 조사할 수 있습니다.
 - **DWSSMSI.log** 및 **DWSSSetup.log** - 데이터 웨어하우스 서비스 지점을 설치할 때 발생하는 오류를 조사하려면 이 로그를 사용합니다.
--     **Microsoft.ConfigMgrDataWarehouse.log** - 사이트 데이터베이스와 데이터 웨어하우스 데이터베이스 간의 데이터 동기화를 조사하려면 이 로그를 사용합니다.
+-   **Microsoft.ConfigMgrDataWarehouse.log** - 사이트 데이터베이스와 데이터 웨어하우스 데이터베이스 간의 데이터 동기화를 조사하려면 이 로그를 사용합니다.
 
 ### <a name="reporting"></a>보고
 데이터 웨어하우스 사이트 시스템 역할을 설치한 후 *범주*가 **데이터 웨어하우스**인 Reporting Services 지점에 대해 다음 보고서를 사용할 수 있습니다.
@@ -145,7 +143,7 @@ Technical Preview 버전 1612부터 데이터 웨어하우스 서비스 지점�
 
 다음 Configuration Manager 로그를 검토하여 사이트 시스템 역할이 성공적으로 다시 설치되었는지 확인할 수 있습니다.  
 - **DWSSMSI.log** 및 **DWSSSetup.log** - 데이터 웨어하우스 서비스 지점을 설치할 때 발생하는 오류를 조사하려면 이 로그를 사용합니다.
--     **Microsoft.ConfigMgrDataWarehouse.log** - 사이트 데이터베이스와 데이터 웨어하우스 데이터베이스 간의 데이터 동기화를 조사하려면 이 로그를 사용합니다.
+-   **Microsoft.ConfigMgrDataWarehouse.log** - 사이트 데이터베이스와 데이터 웨어하우스 데이터베이스 간의 데이터 동기화를 조사하려면 이 로그를 사용합니다.
 
 
 ## <a name="content-library-cleanup-tool"></a>콘텐츠 라이브러리 정리 도구
@@ -175,7 +173,7 @@ Technical Preview 1612를 설치한 후 Technical Preview 사이트 서버의 *%
   2. **삭제 모드**: **/delete** 스위치를 사용하여 도구를 실행하면 도구가 삭제 모드로 실행됩니다.
 
      - 이 모드로 도구를 실행하는 경우 지정한 배포 지점에서 발견된 분리된 콘텐츠를 배포 지점의 콘텐츠 라이브러리에서 삭제할 수 있습니다.
-     -     각 파일을 삭제하기 전에 파일을 삭제할 것인지 확인하는 메시지가 사용자에게 표시됩니다.  **Y**(예) 또는 **N**(아니요)을 선택하거나, 추가 메시지를 건너뛰고 분리된 콘텐츠를 모두 삭제하려면 **모두 예**를 선택할 수 있습니다.  
+     -  각 파일을 삭제하기 전에 파일을 삭제할 것인지 확인하는 메시지가 사용자에게 표시됩니다.  **Y**(예) 또는 **N**(아니요)을 선택하거나, 추가 메시지를 건너뛰고 분리된 콘텐츠를 모두 삭제하려면 **모두 예**를 선택할 수 있습니다.  
      </br>
 
      /delete 스위치와 함께 도구를 실행하기 전에 What-If 모드로 도구를 실행하고 결과 로그 파일을 검토하는 것이 좋습니다.  
@@ -224,9 +222,9 @@ User Voice 피드백에 따라 콘솔 내 검색에 대한 다음과 같은 향�
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 실행 파일 목록을 구성하려면
-1.    배포 유형의 속성 페이지에서 **설치 관리자 처리** 탭을 선택합니다.
-2.    **추가**를 클릭하여 다른 실행 파일 중 하나를 목록에 추가합니다(예: **Edge.exe**).
-3.    **확인**을 클릭하여 배포 유형 속성 대화 상자를 닫습니다.
+1.  배포 유형의 속성 페이지에서 **설치 관리자 처리** 탭을 선택합니다.
+2.  **추가**를 클릭하여 다른 실행 파일 중 하나를 목록에 추가합니다(예: **Edge.exe**).
+3.  **확인**을 클릭하여 배포 유형 속성 대화 상자를 닫습니다.
 
 이제 사용자 또는 장치에 이 응용 프로그램을 배포하고 추가한 실행 파일 중 하나가 실행되는 경우 응용 프로그램이 실행 중이므로 설치에 실패했다고 알리는 소프트웨어 센터 대화 상자가 최종 사용자에게 표시됩니다.
 
@@ -256,16 +254,16 @@ Configuration Manager에 Windows 10 업데이트에 대한 빠른 설치 파일 
 
 ### <a name="to-enable-the-download-of-express-installation-files-for-windows-10-updates-on-the-server"></a>서버에서 Windows 10 업데이트에 대한 빠른 설치 파일의 다운로드를 사용하도록 설정하려면
 Windows 10 빠른 설치 파일에 대한 메타데이터 동기화를 시작하려면 소프트웨어 업데이트 지점 속성에서 사용하도록 설정해야 합니다.
-1.    Configuration Manager 콘솔에서 **관리** > **사이트 구성** > **사이트**로 이동합니다.
-2.    중앙 관리 사이트나 독립 실행형 기본 사이트를 선택합니다.
-3.    **홈** 탭의 **설정** 그룹에서 **사이트 구성 요소 구성**과 **소프트웨어 업데이트 지점**을 차례로 클릭합니다. **업데이트 파일** 탭에서 **승인된 모든 업데이트에 대한 전체 파일 및 Windows 10용 빠른 설치 파일 다운로드**를 선택합니다.
+1.  Configuration Manager 콘솔에서 **관리** > **사이트 구성** > **사이트**로 이동합니다.
+2.  중앙 관리 사이트나 독립 실행형 기본 사이트를 선택합니다.
+3.  **홈** 탭의 **설정** 그룹에서 **사이트 구성 요소 구성**과 **소프트웨어 업데이트 지점**을 차례로 클릭합니다. **업데이트 파일** 탭에서 **승인된 모든 업데이트에 대한 전체 파일 및 Windows 10용 빠른 설치 파일 다운로드**를 선택합니다.
 
 ### <a name="to-enable-support-for-clients-to-download-and-install-express-installation-files"></a>클라이언트가 빠른 설치 파일을 다운로드 및 설치할 수 있는 지원을 사용하려면
 클라이언트에서 빠른 설치 파일 지원을 사용하려면 클라이언트에서 클라이언트 설정의 소프트웨어 업데이트 섹션을 통해 빠른 설치 파일을 사용하도록 설정해야 합니다. 이렇게 하면 지정한 포트에서 빠른 설치 파일을 다운로드하는 요청을 수신 대기하는 새 HTTP 수신기가 생성됩니다. 클라이언트에 이 기능을 사용하도록 설정하는 클라이언트 설정을 배포하면 현재 월의 Windows 10 누적 업데이트와 이전 월의 업데이트 간 델타 다운로드를 시도합니다(클라이언트에서 빠른 설치 파일을 지원하는 Windows 10 버전을 실행해야 함).
-1.    소프트웨어 업데이트 지점 구성 요소 속성에서 빠른 설치 파일 지원을 사용하도록 설정합니다(이전 절차).
-2.    Configuration Manager 콘솔에서 **관리** > **클라이언트 설정**으로 이동합니다.
-3.    적절한 클라이언트 설정을 선택한 다음 **홈** 탭에서 **속성**을 클릭합니다.
-4.    **소프트웨어 업데이트** 페이지를 선택하고 **클라이언트에서 Express 업데이트 설치 사용** 설정에 대해 **예**를 구성하고 **Express 업데이트 콘텐츠를 다운로드하는 데 사용할 포트**에 대해 클라이언트의 HTTP 수신기에서 사용되는 포트를 구성합니다.
+1.  소프트웨어 업데이트 지점 구성 요소 속성에서 빠른 설치 파일 지원을 사용하도록 설정합니다(이전 절차).
+2.  Configuration Manager 콘솔에서 **관리** > **클라이언트 설정**으로 이동합니다.
+3.  적절한 클라이언트 설정을 선택한 다음 **홈** 탭에서 **속성**을 클릭합니다.
+4.  **소프트웨어 업데이트** 페이지를 선택하고 **클라이언트에서 Express 업데이트 설치 사용** 설정에 대해 **예**를 구성하고 **Express 업데이트 콘텐츠를 다운로드하는 데 사용할 포트**에 대해 클라이언트의 HTTP 수신기에서 사용되는 포트를 구성합니다.
 
 
 ## <a name="odata-endpoint-data-access"></a>OData 끝점 데이터 액세스
@@ -322,4 +320,3 @@ Azure 관리자 자격 증명이 필요하므로 Azure 관리자를 사용하여
 ## <a name="change-to-configuring-multi-factor-authentication-for-device-enrollment"></a>장치 등록에 대한 다단계 인증 구성 변경
 
 이제 Azure Portal에서 장치 등록에 MFA(다단계 인증)를 설정할 수 있으므로 Configuration Manager 콘솔에서 MFA 옵션이 제거되었습니다. 등록에 MFA를 설정하는 방법에 대한 자세한 내용은 [이 Microsoft Intune 항목](https://docs.microsoft.com/en-us/intune/deploy-use/multi-factor-authentication-azure-active-directory)을 참조하세요.
-

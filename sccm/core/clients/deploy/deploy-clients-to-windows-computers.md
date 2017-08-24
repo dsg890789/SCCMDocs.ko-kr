@@ -2,27 +2,24 @@
 title: "Windows 클라이언트 배포 | Microsoft 문서"
 description: "System Center Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 04/23/2017
+ms.date: 08/20/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 341f0d0b-f907-44cf-9e10-e1b41fc15f82
-caps.latest.revision: 13
-caps.handback.revision: 0
+caps.latest.revision: "13"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9555a16d97224a1cf49a426ab225468b07403f60
-ms.openlocfilehash: 0e5e624fdfc2b5ee5b497d1063bd4e2d15df578b
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/30/2016
-
-
+ms.openlocfilehash: 9ac54136b93ee366c16cafe89036a79e808980dc
+ms.sourcegitcommit: 06aef618f72c700f8a716a43fb8eedf97c62a72b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="how-to-deploy-clients-to-windows-computers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법
 
@@ -58,13 +55,10 @@ Configuration Manager 클라이언트를 설치하기 전에 모든 [필수 구�
 6.  도메인 컨트롤러에 클라이언트 소프트웨어를 설치할지 여부를 선택합니다.  
 
 7.  **계정** 탭에서 Configuration Manager가 컴퓨터에 연결하여 클라이언트 소프트웨어를 설치할 때 사용할 계정을 하나 이상 지정합니다. **만들기** 아이콘을 클릭하고 **사용자 이름**과 **암호**(38자 이하)를 입력한 다음 암호를 확인하고 **확인**을 클릭합니다. 클라이언트 강제 설치 계정을 하나 이상 지정해야 합니다. 이 계정에는 클라이언트를 설치할 모든 컴퓨터에 대한 로컬 관리자 권한이 있어야 합니다. 클라이언트 강제 설치 계정을 지정하지 않으면 Configuration Manager에서 사이트 시스템 컴퓨터 계정을 사용하려고 합니다. 이 경우 도메인 간 클라이언트 강제 설치를 할 수 없습니다.  
-
-    
     > [!NOTE]  
     >  보조 사이트에서 클라이언트 강제 설치 방법을 사용하려면 클라이언트 강제 설치를 시작할 보조 사이트에서 이 계정을 지정해야 합니다.  
     >   
     >  클라이언트 강제 설치 계정에 대한 자세한 내용은 다음 절차인 "클라이언트 강제 설치 마법사를 사용하려면"을 참조하세요.  
-
 8.  **설치 속성** 탭을 완료합니다.
 
      Configuration Manager용으로 스키마가 확장되고 설치 속성 없이 CCMSetup을 실행하는 클라이언트 설치에서 이 스키마를 읽으면 이 탭에서 지정한 [클라이언트 설치 속성](../../../core/clients/deploy/about-client-installation-properties.md)이 Active Directory Domain Services에 게시됩니다.  
@@ -296,8 +290,8 @@ Configuration Manager 클라이언트 소프트웨어를 다른 컴퓨터를 이
     > [!IMPORTANT]  
     >  CCMSetup.exe 명령줄 속성에서 클라이언트에 대한 Configuration Manager 사이트 코드를 지정하지 마세요.  
 
-2.  명령 프롬프트에서 **net stop ccmexec** 을 입력하여 **SMS Agent Host** 서비스(Ccmexec.exe)가 마스터 이미지 컴퓨터에서 실행되지 않도록 합니다.  
-
+2.  명령 프롬프트에서 **net stop ccmexec** 을 입력하여 **SMS Agent Host** 서비스(Ccmexec.exe)가 마스터 이미지 컴퓨터에서 실행되지 않도록 합니다.
+3.  참조 컴퓨터의 **Windows** 폴더에서 **SMSCFG.INI** 파일을 삭제합니다.  
 3.  마스터 이미지 컴퓨터에서 로컬 컴퓨터 저장소에 저장되어 있는 인증서를 모두 제거합니다.  예를 들어 PKI(공개 키 인프라) 인증서를 사용하는 경우 컴퓨터를 이미지로 만들기 전에 **컴퓨터** 및 **사용자** 에 대한 **개인** 저장소에서 인증서를 제거해야 합니다.
 
 4.  클라이언트가 마스터 이미지 컴퓨터와 다른 Configuration Manager 계층 구조에 설치될 경우 마스터 이미지 컴퓨터에서 신뢰할 수 있는 루트 키를 제거합니다.  
@@ -470,7 +464,7 @@ Configuration Manager 클라이언트 소프트웨어를 다른 컴퓨터를 이
 
 5.  Configuration Manager 클라이언트 설치 속성으로 프로비전하려는 컴퓨터에 그룹 정책 개체를 할당합니다.  
 
- Windows 그룹 정책에 대한 자세한 내용은 Windows Server 설명서를 참조하세요.  
+Windows 그룹 정책에 대한 자세한 내용은 Windows Server 설명서를 참조하세요.  
 
-### <a name="see-also"></a>참고 항목
-[System Center Configuration Manager의 클라이언트 설치 방법](../../../core/clients/deploy/plan/client-installation-methods.md)
+## <a name="next-steps"></a>다음 단계
+Configuration Manager 클라이언트를 설치할 수 있는 자세한 내용은 [System Center Configuration Manager의 클라이언트 설치 방법](../../../core/clients/deploy/plan/client-installation-methods.md)을 참조하세요.

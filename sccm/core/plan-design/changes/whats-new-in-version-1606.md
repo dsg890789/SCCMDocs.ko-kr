@@ -1,26 +1,24 @@
 ---
-title: "System Center Configuration Manager 업데이트 1606의 새로운 기능 | Microsoft 문서"
+title: "System Center Configuration Manager 업데이트 1606의 새로운 기능 | Microsoft Docs"
 description: "System Center Configuration Manager 버전 1606에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다."
 ms.custom: na
 ms.date: 12/30/2016
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: df2e57b9-6445-4067-98e7-ace85d4e6aa6
-caps.latest.revision: 40
+caps.latest.revision: "40"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 34809ddf7819eab5deb3995cd8138c7b38cd2f9a
 ms.openlocfilehash: 9fdff6049d6e5cde1032864e5d7aa8df71e53686
-ms.contentlocale: ko-kr
-ms.lasthandoff: 12/31/2016
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="what39s-new-in-version-1606-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1606의 새로운 기능
 
@@ -227,4 +225,3 @@ Microsoft Intune에서 Configuration Manager를 사용하는 경우 장치 컬�
 
 ## <a name="remote-control"></a>원격 제어
 원격 제어 세션에서 공유 클립보드의 콘텐츠를 전송하기 전에 사용자에게 파일 전송을 수락하거나 거부할 기회를 허용합니다. 사용자는 세션당 한 번만 사용 권한을 부여하면 되며, 조회자는 파일 전송을 진행할 수 있는 권한을 자신에게 부여할 수 없습니다. **관리** 작업 영역에서 이 새로운 설정을 찾을 수 있습니다. **클라이언트 설정**으로 이동하고 **기본 설정**에서 **원격 도구** 패널을 엽니다.
-

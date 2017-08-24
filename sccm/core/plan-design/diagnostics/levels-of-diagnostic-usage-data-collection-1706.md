@@ -6,8 +6,7 @@ ms.date: 07/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 14ee4fb0-7790-45a6-906e-6e55627d4079
@@ -33,12 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
+ms.openlocfilehash: 12f1e810c1eb194ec322a916e4e0c1a4c19be414
+ms.sourcegitcommit: db7b7ec347638efd05cdba474e8a8f8535516116
 ms.translationtype: HT
-ms.sourcegitcommit: 0663ba84762c44a5c303562548499f195bae9e1c
-ms.openlocfilehash: df28bfbb49c78cafe11b87c04ac4c6c9cf370a08
-ms.contentlocale: ko-kr
-ms.lasthandoff: 08/01/2017
-
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/16/2017
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1706-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1706에 대한 진단 사용 현황 데이터 수집의 수준
 
@@ -191,6 +189,10 @@ System Center Configuration Manager 버전 1706에서 이 수준에는 다음이
    - AMT(Active Management Technology) 클라이언트 버전
 
    - BIOS 사용 기간(년)
+   
+   - ***[신규]*** 보안 부팅을 사용하도록 설정한 장치 수
+   
+   - ***[신규] *** TPM 상태별 장치 수
 
    - 클라이언트 자동 업그레이드: 클라이언트 파일럿, 제외 사용(확장된 상호 운용성 클라이언트)을 비롯한 배포 구성
 
@@ -503,4 +505,3 @@ System Center Configuration Manager 버전 1706에서 이 수준에는 다음이
 - Intune에서 관리하는 장치에 대한 EAS 조건부 액세스 정책 유형(차단 또는 격리)
 
 - 비즈니스용 Windows 스토어 응용 프로그램 정보(AppID, 온라인 상태 또는 오프라인 상태, 구입한 총 라이선스 수를 포함하여 동기화된 응용 프로그램의 비집계 목록)
-

@@ -2,10 +2,9 @@
 title: Technical Preview 1707 | Microsoft Docs
 description: "System Center Configuration Manager용 Technical Preview 버전 1707에서 사용 가능한 기능에 대해 알아봅니다."
 ms.custom: na
-ms.date: 07/28/2017
+ms.date: 08/14/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,12 +13,11 @@ ms.assetid: cb405ba0-8792-4ab7-988b-2f835f3a9550
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
+ms.openlocfilehash: 7ee2fd78c6c502394016ba077d42714041ad01c6
+ms.sourcegitcommit: 10f17229c5a359f040cb7f8f5e7bd868a34ac086
 ms.translationtype: HT
-ms.sourcegitcommit: 6e890862fd02786b675e2b7abaca7ede7c0e977a
-ms.openlocfilehash: 91fd850f055a7e892a54487307109a291e336696
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/28/2017
-
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="capabilities-in-technical-preview-1707-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1707의 기능
 
@@ -33,6 +31,17 @@ ms.lasthandoff: 07/28/2017
 -   **Issue Name**. Details
     Workaround details.
 -->
+
+**이 Technical Preview의 알려진 문제:**
+-   **수동 모드인 사이트 서버를 보유한 경우 미리 보기 버전 1707에 대한 업데이트에 실패합니다**. 미리 보기 버전 1706을 실행하고 [수동 모드인 기본 사이트 서버](/sccm/core/get-started/capabilities-in-technical-preview-1706#site-server-role-high-availability)가 있는 경우 미리 보기 사이트를 1707 버전으로 성공적으로 업데이트하기 전에 수동 모드 사이트 서버를 제거해야 합니다. 사이트에서 1707 버전을 실행한 후에 수동 모드 사이트 서버를 다시 설치할 수 있습니다.
+
+  수동 모드 사이트를 제거하려면:
+  1. 콘솔에서 **관리** > **개요** > **사이트 구성** > **서버 및 사이트 시스템 역할**로 이동한 다음 수동 모드 사이트 서버를 선택합니다.
+  2. **사이트 시스템 역할** 창에서 **사이트 서버** 역할을 마우스 오른쪽 단추로 클릭한 후 **역할 제거**를 선택합니다.
+  3. 수동 모드 사이트 서버를 마우스 오른쪽 단추로 클릭하고 **삭제**를 선택합니다.
+  4. 사이트 서버를 제거한 후에 활성 기본 사이트 서버에서 **CONFIGURATION_MANAGER_UPDATE** 서비스를 다시 시작합니다.
+
+
 
 **다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.**  
 
@@ -89,13 +98,13 @@ Windows Defender Application Guard에 대한 자세한 내용은 [이 블로그 
 
 지난 기술 미리 보기에서 [Configuration Manager 콘솔에서 PowerShell 스크립트를 작성하고 실행](/sccm/core/get-started/capabilities-in-technical-preview-1706#create-and-run-powershell-scripts-from-the-configuration-manager-console)할 수 있는 새로운 기능을 도입했습니다.
 이 기술 미리 보기에서는 이 기능을 확장했습니다. 이제 Configuration Manager가 PowerShell 스크립트를 읽고 스크립트 만들기 마법사에서 매개 변수를 표시합니다. 마법사에서 매개 변수에 대해 스크립트 실행 시 사용할 값을 입력할 수 있습니다. 또는 매개 변수를 비워 둘 수 있습니다. 비워 둘 경우 스크립트를 실행할 때 매개 변수 값을 입력해야 합니다.
+이 기술 미리 보기에서 스크립트가 필요로 하는 모든 매개 변수를 제공해야 합니다. 이후 버전에서 선택적 스크립트 매개 변수를 제공할 계획입니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 
-1. 지침에 따라 [Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행](/sccm/core/get-started/capabilities-in-technical-preview-1706#create-and-run-powershell-scripts-from-the-configuration-manager-console)을 수행하세요. 
+1. 지침에 따라 [Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행](/sccm/core/get-started/capabilities-in-technical-preview-1706#create-and-run-powershell-scripts-from-the-configuration-manager-console)을 수행하세요.
 2. **스크립트 만들기 마법사**의 새 **스크립트 매개 변수** 페이지에서 **편집**을 클릭합니다.
 3. 선택한 매개 변수에 대한 값을 입력하고 **확인**을 클릭합니다.
 4. 마법사를 완료합니다.
 
 스크립트 실행 시 구성된 매개 변수 값이 사용됩니다.
-

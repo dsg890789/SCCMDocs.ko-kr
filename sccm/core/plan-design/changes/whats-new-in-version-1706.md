@@ -2,23 +2,21 @@
 title: "새 버전 1706 | Microsoft Docs"
 description: "System Center Configuration Manager 버전 1706에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다."
 ms.custom: na
-ms.date: 07/31/2017
+ms.date: 08/11/2017
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ac034143-003e-4629-aac2-99eaffef4db1
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
+ms.openlocfilehash: 30bd5f1244534511e5cde8ee0e1a8c74819b1634
+ms.sourcegitcommit: 9a6f8e028fb5eb2e752da70f42a5b548339bd8f4
 ms.translationtype: HT
-ms.sourcegitcommit: afe0ecc4230733fa76e41bf08df5ccfb221da7c8
-ms.openlocfilehash: c686b1674f4ead702fa2b4329df6356a558726f6
-ms.contentlocale: ko-kr
-ms.lasthandoff: 08/04/2017
-
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/14/2017
 ---
 # <a name="what39s-new-in-version-1706-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1706의 새로운 기능
 
@@ -207,7 +205,7 @@ Configuration Manager에서 패키지 및 프로그램을 사용하여 클라이
 이 버전에는 작업 순서 그룹을 확장하고 축소하는 기능이 도입되었습니다. 개별 그룹을 확장 또는 축소하거나, 모든 그룹을 한 번에 확장 또는 축소할 수 있습니다.
 
 ### <a name="reload-boot-images-with-current-windows-pe-version"></a>현재 Windows PE 버전을 사용하여 부팅 이미지 다시 로드
-이제는 선택한 부팅 이미지에서 **배포 지점 업데이트**를 실행할 때 부팅 이미지의 Windows ADK 설치 디렉터리에서 최신 Windows PE 버전을 다시 로드하도록 선택할 수 있습니다. 자세한 내용은 [부팅 이미지를 사용하여 배포 지점 업데이트](/sccm/osd/get-started/manage-boot-images.md#update-distribution-points-with-the-boot-image)를 참조하세요.
+이제는 선택한 부팅 이미지에서 **배포 지점 업데이트**를 실행할 때 부팅 이미지의 Windows ADK 설치 디렉터리에서 최신 Windows PE 버전을 다시 로드하도록 선택할 수 있습니다. 자세한 내용은 [부팅 이미지를 사용하여 배포 지점 업데이트](/sccm/osd/get-started/manage-boot-images#update-distribution-points-with-the-boot-image)를 참조하세요.
 
 ## <a name="software-updates"></a>소프트웨어 업데이트
 
@@ -226,7 +224,7 @@ Configuration Manager에서 패키지 및 프로그램을 사용하여 클라이
 #### <a name="to-manage-surface-driver-updates"></a>Surface 드라이버 업데이트를 관리하려면
 
 1. Microsoft Surface 드라이버에 대한 동기화를 사용하도록 설정합니다. [분류 및 제품 구성](/sccm/sum/get-started/configure-classifications-and-products)의 절차를 사용하고 **분류** 탭에서 **Microsoft Surface 드라이버 및 펌웨어 업데이트 포함** 확인란을 선택하여 Surface 드라이버를 사용하도록 설정합니다.
-2. [Microsoft Surface 드라이버를 동기화](/sccm/sum/get-started/synchronize-software-updates.md)합니다.
+2. [Microsoft Surface 드라이버를 동기화](/sccm/sum/get-started/synchronize-software-updates)합니다.
 3. [동기화된 Microsoft Surface 드라이버를 배포](/sccm/sum/deploy-use/deploy-software-updates)합니다.
 
 ### <a name="configure-windows-update-for-business-deferral-policies"></a>비즈니스용 Windows 업데이트 지연 정책 구성
@@ -257,6 +255,12 @@ Windows Analytics는 Operations Management Suite에서 실행되는 솔루션 �
 
 자세한 내용은 [Android for Work 장치에 대한 구성 항목](/sccm/mdm/deploy-use/create-configuration-items-for-android-for-work-devices-managed-without-the-client)을 참조하세요.
 
+### <a name="android-and-ios-enrollment-restrictions"></a>Android 및 iOS 등록 제한
+<!-- 1290826 -->
+이제 이 릴리스에서 사용자가 개인 Android 또는 iOS 장치를 등록하도록 지정할 수 있습니다. 새 장치 제한 설정을 통해 미리 선언된 장치에 대한 Android 장치 등록을 제한할 수 있습니다. iOS 장치의 경우 Apple의 장비 등록 프로그램, Apple Configurator 또는 Intune 장치 등록 관리자 계정에 등록된 장치를 제외한 모든 장치의 등록을 차단할 수 있습니다.
+- Android 등록 제한에 대한 자세한 내용은 [Android 장치 관리 설정](/sccm/mdm/deploy-use/enroll-hybrid-android)을 참조하세요.
+- iOS 등록 제한에 대한 자세한 내용은 [iOS 등록 제한 구성](/sccm/mdm/deploy-use/enroll-hybrid-ios-mac#configure-enrollment-restrictions)을 참조하세요.
+
 ## <a name="protect-devices"></a>장치 보호
 
 ### <a name="include-trust-for-specific-files-and-folders-in-a-device-guard-policy"></a>특정 파일 및 폴더에 대한 트러스트를 Device Guard 정책에 포함
@@ -270,4 +274,3 @@ Windows Analytics는 Operations Management Suite에서 실행되는 솔루션 �
 - 운영 체제 배포 이미지에 포함된 앱 신뢰
 
 자세한 내용은 [Configuration Manager로 Device Guard 관리](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)를 참조하세요.
-
