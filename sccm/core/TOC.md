@@ -99,11 +99,11 @@
 ###  [보안 구성](plan-design/security/configure-security.md)
 
 #    시작
-
 ##   [랩에서 Configuration Manager 평가](get-started/evaluate-with-lab-environment.md)
 ###  [랩 설정](get-started/set-up-your-lab.md)
 
 ##   [기술 미리 보기](get-started/technical-preview.md)
+###  [1708의 기능](get-started/capabilities-in-technical-preview-1708.md)
 ###  [1707의 기능](get-started/capabilities-in-technical-preview-1707.md)
 ###  [1706의 기능](get-started/capabilities-in-technical-preview-1706.md)
 ###  [1705의 기능](get-started/capabilities-in-technical-preview-1705.md)
