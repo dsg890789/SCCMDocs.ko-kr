@@ -31,7 +31,7 @@ Markdown 파일을 만들 때 새 파일에 템플릿을 복사하고, 아래에
 - 선택적 메타데이터 요소에 값이 없는 경우 #로 해당 요소를 주석 처리합니다(비워 두거나 "na"를 사용하지 않음). 주석 처리된 요소에 값을 추가하는 경우 #를 제거해야 합니다.
 - 값(예: 제목)에 콜론이 있으면 메타데이터 파서가 중단됩니다. 그 자리에 &#58;이라는 HTML 인코딩을 사용합니다(예: "제목: Azure Rights Management&#58;기본 사항 | Azure RMS").
 - **제목**: 이 제목은 검색 엔진 결과에 표시됩니다. 제목은 파이프(|) 뒤에 서비스의 이름으로 끝나야 합니다(예: 위 참조). 제목은 H1 제목의 제목과 일치하지 않아도 됩니다(또한 일치하지 않아야 함). 대략 65자여야 합니다(| 서비스 이름 포함)
-- **작성자**, **관리자**, **검토자**: 작성자 필드는 별칭이 아니라 작성자의 **Github 사용자 이름**를 포함해야 합니다.  반면에 "관리자" 및 "검토자" 필드는 별칭을 포함해야 합니다. ms.reviewer는 문서 또는 서비스와 관련된 PM의 이름을 지정합니다.
+- **작성자**, **관리자**, **검토자**: 작성자 필드는 별칭이 아니라 작성자의 **Github 사용자 이름**을 포함해야 합니다.  반면에 "관리자" 및 "검토자" 필드는 별칭을 포함해야 합니다. ms.reviewer는 문서 또는 서비스와 관련된 PM의 이름을 지정합니다.
 - **ms.assetid**: CAPS에서 문서의 GUID입니다. 새 Markdown 파일을 만들 때 [https://www.guidgenerator.com](https://www.guidgenerator.com)에서 GUID를 가져옵니다.
 - **ms.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: [여기](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default)에서 이러한 요소에 가능한 값을 찾을 수 있습니다.
 
@@ -91,46 +91,46 @@ Markdown 파일에 URL이 표시되는 경우 클릭 가능한 링크로 변환�
 
 ### <a name="ordered-lists"></a>정렬된 목록
 
-1. This
+1. 이것은 정렬된
 1. Is
 1. An
 1. Ordered
-1. 목록  
+1. 목록입니다.  
 
 
 #### <a name="ordered-list-with-an-embedded-list"></a>포함된 목록으로 정렬된 목록
 
-1. Here
+1. 다음은 포함된
 1. comes
 1. an
 1. embedded
     1. Miss Scarlett
     1. Professor Plum
-1. ordered
-1. 목록
+1. 정렬된
+1. 목록입니다.
 
 
 ### <a name="unordered-lists"></a>정렬되지 않은 목록
 
-- This
+- 이것은
 - is
-- a
-- bulleted
-- 목록
+- 글머리
+- 기호
+- 목록입니다.
 
 
 ##### <a name="unordered-list-with-an-embedded-lists"></a>포함된 목록으로 정렬되지 않은 목록
 
-- This
-- bulleted
+- 이
+- 글머리 기호
 - 목록
     - Mrs. Peacock
     - Mr. Green
-- 포함  
-- other
+- 은  
+- 다른
     1. Colonel Mustard
     1. Mrs. White
-- lists
+- 목록을 포함합니다.
 
 
 ## <a name="horizontal-rule"></a>단락 구분선
@@ -141,9 +141,9 @@ Markdown 파일에 URL이 표시되는 경우 클릭 가능한 링크로 변환�
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| col 1 is default | left-aligned     |    $1 |
+| col 3      | 오른쪽 맞춤 | $1600 |
+| col 2      | 가운데 맞춤      |   $12 |
+| col 1 기본값 | 왼쪽 맞춤     |    $1 |
 
 
 ## <a name="code"></a>코드
