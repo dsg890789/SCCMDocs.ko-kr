@@ -2,7 +2,7 @@
 title: "Windows 기능 지원 | Microsoft 문서"
 description: "System Center Configuration Manager에서 지원하는 Windows 및 네트워킹 기능을 알아봅니다."
 ms.custom: na
-ms.date: 3/30/2017
+ms.date: 8/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: e040552dab21ba9a71e06a78f6acc2ffe1b0eb61
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: be9b7e84fecfa7a07c411c3d46168e5485e0dfab
+ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="support-for-windows-features-and-networks-in-system-center-configuration-manager"></a>System Center Configuration Manager의 Windows 기능 및 네트워크 지원
 
@@ -49,7 +49,7 @@ BranchCache에 대한 요구 사항이 충족되면 이 기능을 통해 원격 
 -   **클라이언트 구성:**    
     -   BranchCache를 지원할 수 있는 클라이언트를 BranchCache 분산 캐시 모드에 대해 구성해야 합니다.  
     -   BranchCache를 지원하려면 BITS 클라이언트 설정용 운영 체제 설정을 사용하도록 설정해야 합니다.   <br /> <br />
-        
+
     BranchCache를 지원하도록 클라이언트를 구성하는 방법에 대한 자세한 내용은 [Windows 10 업데이트에 맞게 BranchCache 구성](https://technet.microsoft.com/itpro/windows/manage/waas-branchcache)의 [클라이언트 구성](https://technet.microsoft.com/itpro/windows/manage/waas-branchcache#configure-clients-for-branchcache) 섹션을 참조하세요.
 
 
@@ -80,9 +80,11 @@ Configuration Manager는 작업 그룹의 클라이언트를 지원합니다.
 ##  <a name="bkmmk_datadedup"></a> 데이터 중복 제거  
 Configuration Manager는 다음 운영 체제의 배포 지점에 대해 데이터 중복 제거를 사용할 수 있도록 지원합니다.  
 
+-   Windows Server 2016
+-   Windows Server 2012 R2  
 -   Windows Server 2012  
 
--   Windows Server 2012 R2  
+
 
 > [!IMPORTANT]  
 >  패키지 원본 파일을 호스트하는 볼륨은 데이터 중복 제거용으로 표시할 수 없습니다. 데이터 중복 제거에서는 재분석 지점을 사용하는데, Configuration Manager에서 재분석 지점에 저장된 파일을 포함하는 콘텐츠 원본 위치를 사용할 수 없기 때문입니다.  

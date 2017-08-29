@@ -14,11 +14,11 @@ caps.latest.revision: "4"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: f539e2d282b56e56a9c58c773788325b27ea6b37
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 9c50f6633a5ca04b62f4c3b06119fb1fbcab2643
+ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="size-and-scale-numbers-for-system-center-configuration-manager"></a>System Center Configuration Manager의 크기 조정 및 규모 숫자 값
 
@@ -56,18 +56,9 @@ ms.lasthandoff: 08/07/2017
 
 -   중앙 관리 사이트는 최대 25개의 자식 기본 사이트를 지원합니다.  
 
-**응용 프로그램 카탈로그 웹 사이트 지점:**  
-
--   기본 사이트에서 응용 프로그램 카탈로그 웹 사이트 지점의 여러 인스턴스를 설치할 수 있습니다.  
-
-    > [!TIP]  
-    >  응용 프로그램 카탈로그 웹 사이트 지점과 응용 프로그램 카탈로그 웹 서비스 지점이 인트라넷에 있는 클라이언트에 서비스를 제공하는 경우에는 두 지점을 같은 사이트 시스템에 함께 설치하는 것이 가장 좋습니다.  
-
-    -   성능을 개선하려면 인스턴스당 최대 50,000개의 클라이언트를 지원하도록 계획하세요.  
-
-    -   이 사이트 시스템 역할의 각 인스턴스는 계층 구조에서 지원되는 최대 클라이언트 수를 지원합니다.  
 
 ## <a name="bkmk_roles"></a> 사이트 시스템 역할    
+
 
 **응용 프로그램 카탈로그 웹 서비스 지점:**  
 
@@ -79,6 +70,18 @@ ms.lasthandoff: 08/07/2017
     -   성능을 개선하려면 인스턴스당 최대 50,000개의 클라이언트를 지원하도록 계획하세요.  
 
     -   이 사이트 시스템 역할의 각 인스턴스는 계층 구조에서 지원되는 최대 클라이언트 수를 지원합니다.  
+
+**응용 프로그램 카탈로그 웹 사이트 지점:**  
+
+-   기본 사이트에서 응용 프로그램 카탈로그 웹 사이트 지점의 여러 인스턴스를 설치할 수 있습니다.  
+
+    > [!TIP]  
+    >  응용 프로그램 카탈로그 웹 사이트 지점과 응용 프로그램 카탈로그 웹 서비스 지점이 인트라넷에 있는 클라이언트에 서비스를 제공하는 경우에는 두 지점을 같은 사이트 시스템에 함께 설치하는 것이 가장 좋습니다.  
+
+    -   성능을 개선하려면 인스턴스당 최대 50,000개의 클라이언트를 지원하도록 계획하세요.  
+
+    -   이 사이트 시스템 역할의 각 인스턴스는 계층 구조에서 지원되는 최대 클라이언트 수를 지원합니다.  
+
 
 **배포 지점:**  
 
