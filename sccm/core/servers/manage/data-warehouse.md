@@ -2,7 +2,7 @@
 title: "데이터 웨어하우스 | Microsoft Docs"
 description: "System Center Configuration Manager에 대한 데이터 웨어하우스 서비스 지점 및 데이터베이스"
 ms.custom: na
-ms.date: 7/31/2017
+ms.date: 8/25/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision:
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: eedbf12d3bf628666efc90c85a8dfab37e4dc9ab
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 744614d7e1ec97a4d4b4646c45cb41d734c6be34
+ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/28/2017
 ---
 #  <a name="the-data-warehouse-service-point-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 데이터 웨어하우스 서비스 지점
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -49,8 +49,8 @@ ms.lasthandoff: 08/07/2017
 - 사이트 시스템 역할을 설치하는 컴퓨터에 .NET Framework 4.5.2 이상 버전이 필요합니다.
 - 사이트 시스템 역할을 설치한 컴퓨터의 컴퓨터 계정은 데이터 웨어하우스 데이터베이스와 데이터를 동기화하는 데 사용됩니다. 이 계정에는 다음 권한이 있어야 합니다.  
   - 데이터 웨어하우스 데이터베이스를 호스트할 컴퓨터의 **Administrator**
-  - 데이터 웨어하우스 데이터베이스에 대한 **DB_owner** 권한
-  - 최상위 계층 사이트의 사이트 데이터베이스에 대한 **DB_reader** 및 **실행** 권한
+  - 데이터 웨어하우스 데이터베이스에 대한 **DB_Creator** 권한
+  - 최상위 계층 사이트의 사이트 데이터베이스에 대한 **실행** 권한이 있는 **DB_owner** 또는 **DB_reader**
 - 데이터 웨어하우스 데이터베이스에는 SQL Server 2012 이상이 필요합니다. 해당 버전은 Standard, Enterprise 또는 Datacenter일 수 있습니다.
 - 웨어하우스 데이터베이스를 호스트하는 데 다음 SQL Server 구성이 지원됩니다.  
   - 기본 인스턴스

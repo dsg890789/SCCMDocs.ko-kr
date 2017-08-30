@@ -2,7 +2,7 @@
 title: "릴리스 정보 - Configuration Manager | Microsoft 문서"
 description: "Microsoft 기술 자료 문서에서 다루지 않거나 제품에서 아직 해결되지 않은 긴급한 문제에 대해서는 이 정보를 참조하세요."
 ms.custom: na
-ms.date: 08/21/2017
+ms.date: 08/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 24f30bddb345e3a08d4b655d89693c226005cb0e
-ms.sourcegitcommit: 06aef618f72c700f8a716a43fb8eedf97c62a72b
+ms.openlocfilehash: e54c2cd1c3e83609bff6a8cb64fb3c23b26a4eaa
+ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="release-notes-for-system-center-configuration-manager"></a>System Center Configuration Manager의 릴리스 정보
 
@@ -27,15 +27,23 @@ ms.lasthandoff: 08/21/2017
 
 System Center Configuration Manager에서는 제품에서 수정되지 않은 긴급한 문제(콘솔 내 업데이트를 통해 사용 가능) 또는 Microsoft 기술 자료 문서에 자세히 설명되지 않은 긴급한 문제로 제품 릴리스 정보가 제한됩니다.  
 
- 핵심 시나리오에 영향을 주는 알려진 문제의 경우 이 정보는 System Center Configuration Manager 문서 라이브러리의 온라인 제품 설명서에 포함되어 있습니다.  
+핵심 시나리오에 영향을 주는 알려진 문제에 대한 내용은 System Center Configuration Manager 설명서 라이브러리의 온라인 제품 설명서에서 제공됩니다.  
 
 > [!TIP]  
 >  이 항목에는 System Center Configuration Manager의 현재 분기에 대한 릴리스 정보가 포함되어 있습니다. System Center Configuration Manager의 Technical Preview의 경우 [System Center Configuration Manager용 Technical Preview](../../../../core/get-started/technical-preview.md)를 참조하세요.  
+
+다른 버전에서 도입된 새 기능에 대한 자세한 내용은 다음을 참조하세요.
+- [버전 1706의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1706)  
+- [버전 1702의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1702)
+- [버전 1610의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1610)
+   
+
 
 ## <a name="setup-and-upgrade"></a>설치 및 업그레이드  
 
 ### <a name="after-you-update-a-configuration-manager-console-using-consolesetupexe-from-the-site-server-folder-recent-language-pack-changes-are-not-available"></a>사이트 서버 폴더에서 ConsoleSetup.exe를 사용하여 Configuration Manager 콘솔을 업데이트한 후 최근 언어 팩 변경 내용을 사용할 수 없습니다.
 <!--  SMS 486420  Applicability should be 1610 and 1702.  -->
+*다음은 버전 1610 및 1702에 적용됩니다.*   
 사이트 서버 설치 폴더에서 ConsoleSetup.exe를 사용하여 콘솔에 대한 현재 위치 업데이트를 실행한 후 최근에 설치한 언어 팩을 사용할 수 없습니다. 이 문제는 다음과 같은 경우에 발생합니다.
 - 사이트에서 버전 1610 또는 1702를 실행합니다.
 - 사이트 서버 설치 폴더에서 ConsoleSetup.exe를 사용하여 콘솔을 현재 위치 업데이트합니다.
@@ -47,7 +55,8 @@ System Center Configuration Manager에서는 제품에서 수정되지 않은 �
 
 ### <a name="with-version-1702-the-default-site-boundary-group-is-configured-for-use-for-site-assignment"></a>버전 1702에서는 사이트 할당에 사용할 기본 사이트 경계 그룹이 구성됩니다.
 <!--  SMS 486380   Applicability should only be to 1702. -->
-버전 1702에서 기본 사이트 경계 그룹의 [참조] 탭은 **사이트 할당에 대해 이 경계 그룹 사용**에 대한 확인을 포함하고, 사이트를 **할당된 사이트**로 나열하고, 구성을 편집하거나 제거할 수 없도록 회색으로 표시됩니다.
+*다음은 버전 1702에 적용됩니다.*  
+기본 사이트 경계 그룹의 [참조] 탭에서는 **사이트 할당에 대해 이 경계 그룹 사용**에 대한 확인 표시가 있고, 사이트가 **할당된 사이트**로 나열되며, 구성을 편집하거나 제거할 수 없도록 회색으로 표시되어 있습니다.
 
 **해결 방법:** 없음 이 설정을 무시할 수 있습니다. 사이트 할당에 그룹이 사용되더라도 기본 사이트 경계 그룹은 사이트 할당에 사용되지 않습니다. 1702에서 이 구성을 적용하면 기본 사이트 경계 그룹이 올바른 사이트와 연결됩니다.
 
@@ -104,7 +113,8 @@ ConfigMgrSetup.log:
 
 ### <a name="service-connection-tool-throws-an-exception-when-sql-server-is-remote-or-when-shared-memory-is-disabled"></a>SQL Server가 원격이거나 공유 메모리가 사용되지 않는 경우 서비스 연결 도구에서 예외가 발생합니다.
 <!-- 479223   Fixed in 1702 and later   -->
-버전 1606부터 서비스 연결 도구는 다음 중 하나가 충족될 경우 예외를 생성합니다.  
+*다음은 1610 및 이전 버전에 적용됩니다.*  
+다음 중 하나에 해당하는 경우 서비스 연결 도구에서 예외를 생성합니다.  
  -  사이트 데이터베이스가 서비스 연결 지점을 호스트하고 비표준 포트(1433 이외의 포트)를 사용하는 컴퓨터에서 원격인 경우
  -  사이트 데이터베이스가 서비스 연결 지점과 동일한 서버에 있지만 SQL 프로토콜 **공유 메모리**가 사용되지 않는 경우
 
@@ -131,8 +141,9 @@ ConfigMgrSetup.log:
 ## <a name="client-deployment-and-upgrade"></a>클라이언트 배포 및 업그레이드  
 
 ### <a name="client-installation-fails-with-error-code-0x8007064c"></a>오류 코드 0x8007064c를 나타내며 클라이언트 설치가 실패합니다.
-<!--- SMS 486973 -->
-Windows 컴퓨터에 클라이언트를 배포할 때 설치가 실패합니다. ccmsetup.log 파일에는 "파일 'C:\WINDOWS\ccmsetup\Silverlight.exe'가 실패 종료 코드 1612를 반환했습니다. 설치가 실패합니다.”와 “InstallFromManifest가 0x8007064c를 나타내며 실패했습니다.” 항목이 포함됩니다.
+<!--- SMS 486973  applies 1606 to 1706. Not yet fixed. -->
+*다음은 Configuration Manager의 모든 활성 버전에 적용됩니다.*   
+Windows 컴퓨터에 클라이언트를 배포할 때 모든 활성 버전에서 설치가 실패합니다. ccmsetup.log 파일에는 "파일 'C:\WINDOWS\ccmsetup\Silverlight.exe'가 실패 종료 코드 1612를 반환했습니다. 설치가 실패합니다.”와 “InstallFromManifest가 0x8007064c를 나타내며 실패했습니다.” 항목이 포함됩니다.
 
 **해결 방법** 이 문제는 이전에 설치된 Silverlight 버전이 손상되었기 때문에 발생합니다. 이 문제를 해결하려면 영향을 받는 컴퓨터에서 다음 도구를 실행할 수 있습니다. [https://support.microsoft.com/help/17588/fix-problems-that-block-programs-from-being-installed-or-removed](https://support.microsoft.com/help/17588/fix-problems-that-block-programs-from-being-installed-or-removed)
 
@@ -158,6 +169,7 @@ ADK(Windows Assessment and Deployment Kit)의 설치 디렉터리에서 최신 �
 
 ### <a name="when-a-high-risk-deployment-dialog-is-visible-to-a-user-subsequent-high-risk-dialogs-with-a-sooner-deadline-are-not-displayed"></a>높은 위험 수준 배포 대화 상자가 사용자에게 표시될 경우 마감일이 더 가까운 후속 높은 위험 수준 대화 상자가 표시되지 않음
 <!-- Fixed in 1702 and later -->
+*다음은 1610 및 이전 버전에 적용됩니다.*   
 높은 위험 수준 작업 배포를 만들고 사용자에게 배포한 후 높은 위험 수준 대화 상자가 사용자에게 표시됩니다. 사용자가 대화 상자를 닫지 않고 첫 번째보다 마감일이 더 가까운 또 다른 높은 위험 수준 배포를 만들고 배포하면 사용자는 원래 대화 상자를 닫을 때까지 업데이트된 대화 상자를 받을 수 없습니다. 배포는 구성된 마감일에 계속 실행됩니다.
 
 **해결 방법**:  
@@ -169,6 +181,7 @@ ADK(Windows Assessment and Deployment Kit)의 설치 디렉터리에서 최신 �
 
 ### <a name="importing-an-office-365-client-settings-from-a-configuration-file-fails-when-it-contains-unsupported-languages"></a>지원되지 않는 언어를 포함하는 경우 구성 파일에서 Office 365 클라이언트 설정을 가져올 수 없음
 <!-- 489258  Fixed in 1706  -->
+*다음은 1702 및 이전 버전에 적용됩니다.*   
 기존 XML 구성 파일에서 Office 365 클라이언트 설정을 가져오는 경우 파일에 Office 365 ProPlus 클라이언트에서 지원되지 않는 언어가 포함될 경우 오류가 발생합니다. 자세한 내용은 [Office 365 클라이언트 관리 대시보드에서 클라이언트에 Office 365 앱 배포](/sccm/sum/deploy-use/manage-office-365-proplus-updates#to-deploy-office-365-apps-to-clients-from-the-office-365-client-management-dashboard)를 참조하세요.
 
 **해결 방법**:    
@@ -207,6 +220,7 @@ Android for Work 메일 프로필을 만들 때 두 가지 인증 옵션을 사�
 
 ### <a name="antimalware-policy-fails-to-apply-on-windows-server-2016-core"></a>Windows Server 2016 Core에서 맬웨어 방지 정책 적용 실패
 <!--  Product Studio bug 485370 added 04 19 2017   Fixed in 1702 -->
+*다음은 1610 및 이전 버전에 적용됩니다.*  
 Windows Server 2016 Core에서 맬웨어 방지 정책을 적용하는 데 실패합니다.  오류 코드는 0x80070002입니다.  ConfigSecurityPolicy.exe에 대한 종속성이 누락되어 있습니다.
 
 **해결 방법:** 이 문제는 2017년 5월 9일에 발표된 [기술 자료 문서 4019472](https://support.microsoft.com/help/4019472/windows-10-update-kb4019472)를 통해 해결됩니다.

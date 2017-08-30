@@ -2,7 +2,7 @@
 title: "사이트 필수 조건 | Microsoft 문서"
 description: "Windows 컴퓨터를 System Center Configuration Manager 사이트 시스템 서버로 구성하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 1/17/2017
+ms.date: 8/25/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 0b1d2d619d6cdaf36cc22ef461ea1505b5cacc41
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 09749a3045ca6eebf1363b6e53cd8607b5f32578
+ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="site-and-site-system-prerequisites-for-system-center-configuration-manager"></a>System Center Configuration Manager의 사이트 및 사이트 시스템 필수 조건
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 08/07/2017
 
  Windows 기반 컴퓨터에서 System Center Configuration Manager 사이트 시스템 서버로서의 사용을 지원하려면 특정한 구성이 필요합니다.  
 
-
+ 
  WSUS(Windows Server Update Services)와 같은 일부 제품의 경우 해당 제품 설명서를 참조하여 제품 사용을 위한 추가 필수 구성 요소 및 제한 사항을 확인하세요. 여기에는 Configuration Manager에서 사용하는 경우에 직접 적용되는 구성만 포함되어 있습니다.   
 
 > [!NOTE]  
@@ -66,9 +66,7 @@ ms.lasthandoff: 08/07/2017
 
 **Windows ADK:**  
 
--   중앙 관리 사이트 또는 기본 사이트를 설치하거나 업그레이드하기 전에 설치하거나 업그레이드할 Configuration Manager 버전에서 요구하는 Windows ADK(평가 및 배포 키트) 버전을 설치해야 합니다.  
-
-    -   Configuration Manager 버전 1511에는 Windows ADK의 Windows 10 RTM(10.0.10240) 버전이 필요합니다.  
+-   중앙 관리 사이트 또는 기본 사이트를 설치하거나 업그레이드하기 전에 설치하거나 업그레이드할 Configuration Manager 버전에서 요구하는 Windows ADK(평가 및 배포 키트) 버전을 설치해야 합니다. '클라이언트로 Windows 10 지원' 항목의 [Windows 10 ADK](/sccm/core/plan-design/configs/support-for-windows-10#windows-10-adk)를 참조하세요.  
 
 -   이 요구 사항에 대한 자세한 내용은 [운영 체제 배포를 위한 인프라 요구 사항](/sccm/osd/plan-design/infrastructure-requirements-for-operating-system-deployment)을 참조하세요.  
 
@@ -115,9 +113,7 @@ ms.lasthandoff: 08/07/2017
 ###  <a name="bkmk_2012smsprovpreq"></a> SMS 공급자 서버  
 **Windows ADK:**  
 
--   SMS 공급자의 인스턴스를 설치하는 컴퓨터에는 설치하거나 업그레이드 중인 Configuration Manager 버전에서 요구하는 Windows ADK의 필수 버전이 있어야 합니다.  
-
-    -   Configuration Manager 버전 1511에는 Windows ADK의 Windows 10 RTM(10.0.10240) 버전이 필요합니다.  
+-   SMS 공급자의 인스턴스를 설치하는 컴퓨터에는 설치하거나 업그레이드 중인 Configuration Manager 버전에서 요구하는 Windows ADK의 필수 버전이 있어야 합니다. '클라이언트로 Windows 10 지원' 항목의 [Windows 10 ADK](/sccm/core/plan-design/configs/support-for-windows-10#windows-10-adk)를 참조하세요.
 
 -   이 요구 사항에 대한 자세한 내용은 [운영 체제 배포를 위한 인프라 요구 사항](/sccm/osd/plan-design/infrastructure-requirements-for-operating-system-deployment)을 참조하세요.  
 
@@ -448,9 +444,7 @@ ms.lasthandoff: 08/07/2017
 
 **Windows ADK:**  
 
--   중앙 관리 사이트 또는 기본 사이트를 설치하거나 업그레이드하기 전에 설치하거나 업그레이드할 Configuration Manager 버전에서 요구하는 Windows ADK 버전을 설치해야 합니다.  
-
-    -   Configuration Manager 버전 1511에는 Windows ADK의 Windows 10 RTM(10.0.10240) 버전이 필요합니다.  
+-   중앙 관리 사이트 또는 기본 사이트를 설치하거나 업그레이드하기 전에 설치하거나 업그레이드할 Configuration Manager 버전에서 요구하는 Windows ADK 버전을 설치해야 합니다.  '클라이언트로 Windows 10 지원' 항목의 [Windows 10 ADK](/sccm/core/plan-design/configs/support-for-windows-10#windows-10-adk)를 참조하세요.  
 
 -   이 요구 사항에 대한 자세한 내용은 [운영 체제 배포를 위한 인프라 요구 사항](/sccm/osd/plan-design/infrastructure-requirements-for-operating-system-deployment)을 참조하세요.  
 
@@ -495,9 +489,7 @@ ms.lasthandoff: 08/07/2017
 ###  <a name="bkmk_2008smsprovpreq"></a> SMS 공급자 서버  
 **Windows ADK:**  
 
--   SMS 공급자의 인스턴스를 설치하는 컴퓨터에는 설치하거나 업그레이드 중인 Configuration Manager 버전에서 요구하는 Windows ADK의 필수 버전이 있어야 합니다.  
-
-    -   Configuration Manager 버전 1511에는 Windows ADK의 Windows 10 RTM(10.0.10240) 버전이 필요합니다.  
+-   SMS 공급자의 인스턴스를 설치하는 컴퓨터에는 설치하거나 업그레이드 중인 Configuration Manager 버전에서 요구하는 Windows ADK의 필수 버전이 있어야 합니다. '클라이언트로 Windows 10 지원' 항목의 [Windows 10 ADK](/sccm/core/plan-design/configs/support-for-windows-10#windows-10-adk)를 참조하세요.  
 
 -   이 요구 사항에 대한 자세한 내용은 [운영 체제 배포를 위한 인프라 요구 사항](/sccm/osd/plan-design/infrastructure-requirements-for-operating-system-deployment)을 참조하세요.  
 

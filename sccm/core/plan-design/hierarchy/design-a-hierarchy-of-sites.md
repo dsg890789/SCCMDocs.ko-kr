@@ -2,7 +2,7 @@
 title: "사이트 계층 설계 - Configuration Manager | Microsoft 문서"
 description: "사이트 계층 구조를 계획할 수 있도록 System Center Configuration Manager에 대한 사용 가능한 토폴로지 및 관리 옵션을 이해합니다."
 ms.custom: na
-ms.date: 6/16/2017
+ms.date: 8/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 4710b1b89eb50cb7bcf4c4ee50c12a96b6561bc9
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 2c587c0ad894dc567a6f1804626db611ff9a1013
+ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="design-a-hierarchy-of-sites-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 사이트 계층 구조 디자인
 
@@ -27,6 +27,13 @@ ms.lasthandoff: 08/07/2017
 
 System Center Configuration Manager 계층 구조의 첫 번째 사이트를 설치하려면 먼저 Configuration Manager에 사용 가능한 토폴로지, 사용 가능한 사이트 유형과 서로 간의 관계, 각 사이트 유형이 제공하는 관리 범위를 이해하는 것이 좋습니다.
 그래야 설치해야 하는 사이트 수를 줄일 수 있는 콘텐츠 관리 옵션을 고려하여 현재 비즈니스 요구를 효율적으로 처리할 토폴로지를 계획할 수 있고, 향후의 크기 증가를 관리하도록 이후에 확장할 수도 있습니다.  
+
+계획할 때는 계층 구조 또는 독립 실행형 사이트에 사이트를 추가하기 위한 다음 제한 사항에 유의하세요.
+-   새 기본 사이트는 중앙 관리 사이트 아래에 [지원되는 최대 기본 사이트 수](/sccm/core/plan-design/configs/size-and-scale-numbers)까지 설치할 수 있습니다.
+-   [독립 실행형 기본 사이트를 확장하여 새 중앙 관리 사이트를 설치](/sccm/core/servers/deploy/install/prerequisites-for-installing-sites#bkmk_expand)하면 추가 기본 사이트를 설치할 수 있습니다.
+-   새 보조 사이트는 기본 사이트 아래에 [기본 사이트 및 전체 계층에 지원되는 최대 제한](/sccm/core/plan-design/configs/size-and-scale-numbers)까지 설치할 수 있습니다.
+-   이전에 설치된 사이트를 기존 계층에 추가하여 두 개의 독립 실행형 사이트를 병합할 수 없습니다. 기존 사이트 계층에는 새 사이트 설치만 지원됩니다.
+
 
 > [!NOTE]
 > Configuration Manager의 새 설치를 계획할 때는 활성 버전의 현재 문제를 자세히 설명하는 [릴리스 정보]( /sccm/core/servers/deploy/install/release-notes)에 대해 알아보세요. 릴리스 정보는 Configuration Manager의 모든 분기에 적용됩니다.  그러나 [Technical Preview 분기]( /sccm/core/get-started/technical-preview)를 사용하는 경우 각 Technical Preview 버전의 설명서에서 해당 분기와 관련된 문제를 확인할 수 있습니다.  
@@ -63,7 +70,7 @@ System Center Configuration Manager 계층 구조의 첫 번째 사이트를 설
 
 -   중앙 관리 사이트는 계층의 최상위 사이트입니다.  
 
--   기본 사이트가 둘 이상 있는 계층을 구성하는 경우 중앙 관리 사이트를 반드시 설치해야 합니다. 둘 이상의 기본 사이트가 즉시 필요한 경우 중앙 관리 사이트를 먼저 설치합니다. 이미 기본 사이트가 있고 중앙 관리 사이트를 설치하려는 경우 [독립 실행형 기본 사이트를 확장](/sccm/core/servers/deploy/install/prerequisites-for-installing-sites#bkmk_expand)하여 중앙 관리 사이트를 설치합니다. 
+-   기본 사이트가 둘 이상 있는 계층을 구성하는 경우 중앙 관리 사이트를 반드시 설치해야 합니다. 둘 이상의 기본 사이트가 즉시 필요한 경우 중앙 관리 사이트를 먼저 설치합니다. 이미 기본 사이트가 있고 중앙 관리 사이트를 설치하려는 경우 [독립 실행형 기본 사이트를 확장](/sccm/core/servers/deploy/install/prerequisites-for-installing-sites#bkmk_expand)하여 중앙 관리 사이트를 설치합니다.
 
 -   중앙 관리 사이트는 기본 사이트를 자식 사이트로서만 지원합니다.  
 

@@ -2,7 +2,7 @@
 title: Configuration Manager Technical Preview | Microsoft Docs
 description: "System Center Configuration Manager에서 새로운 기능을 테스트 시험해 볼 수 있는 기술 미리 보기 릴리스에 대해 알아봅니다."
 ms.custom: na
-ms.date: 08/11/2017
+ms.date: 08/25/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision: "157"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 6d7bac392cf5a4ba01b25758fd91f1003b153589
-ms.sourcegitcommit: 398e30ec703218c4b3680bbb055d686807ca7f1d
+ms.openlocfilehash: 0cdbccc0147cb1f4d5130863b9610d0b190d6658
+ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="technical-preview-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview
 
@@ -84,7 +84,7 @@ ms.lasthandoff: 08/18/2017
 
  기술 미리 보기를 사용하려면 먼저 기술 미리 보기 빌드의 **기준선 버전** 을 설치해야 합니다. 기준선 버전을 설치한 후 **콘솔 내 업데이트** 를 사용하여 최근의 미리 보기 버전으로 설치를 업데이트할 수 있습니다.     일반적으로 새 버전의 기술 미리 보기는 매달 사용할 수 있습니다.
 
-세 가지 후속 릴리스를 사용할 수 있을 때까지 각 미리 보기 릴리스가 지원됩니다. 즉, 버전 1702가 출시되면 버전 1610이 더 이상 지원되지 않지만 버전 1611, 1612 및 1701은 지원됩니다. 기준 버전이 지원되지 않는 경우(예: 버전 1610)에도 해당 설치를 지원되는 버전으로 업데이트하는 한 새로운 Technical Preview 사이트를 설치할 수 있습니다(새 기준 버전을 사용할 수 있을 때까지). 업데이트할 때 콘솔에 사용 가능한 최신 버전이 표시되지 않으면 제공된 최신 버전으로 업데이트한 다음 최신 버전의 Technical Preview를 설치할 수 있을 때까지 해당 프로세스를 반복합니다.
+세 가지 후속 릴리스를 사용할 수 있을 때까지 각 미리 보기 릴리스가 지원됩니다. 즉 버전 1708이 출시되면 버전 1704는 더 이상 지원되지 않지만 버전 1705, 1706 및 1707은 계속 지원됩니다. 기준 버전(예: 버전 1703)이 지원되지 않는 경우에도 해당 설치를 지원되는 버전으로 업데이트하는 한 새 기준 버전을 사용할 수 있을 때까지 새 기술 미리 보기 사이트를 설치할 수 있습니다. 업데이트할 때 콘솔에 사용 가능한 최신 버전이 표시되지 않으면 제공된 최신 버전으로 업데이트한 다음 최신 버전의 Technical Preview를 설치할 수 있을 때까지 해당 프로세스를 반복합니다.
 
 > [!TIP]  
 >  기술 미리 보기에 대한 업데이트를 설치하면 해당 새 기술 미리 보기 버전으로 미리 보기 설치가 업데이트됩니다.    기술 미리 보기 설치에는 현재 분기 설치로 업그레이드하거나 현재 분기 릴리스의 업데이트를 받을 수 있는 옵션이 없습니다.  
@@ -93,8 +93,9 @@ ms.lasthandoff: 08/18/2017
 릴리스 후 최대 1년 동안 기준 버전을 설치할 수 있습니다. 그러나 새 Technical Preview 사이트를 설치할 경우 사용 가능한 최신 기준선 버전을 사용하는 것이 좋습니다.
 -  **Technical Preview 1703** - Configuration Manager Technical Preview 1703은 Configuration Manager Technical Preview의 콘솔 내 업데이트와 [TechNet Evaluation Center 웹 사이트에서 사용할 수 있는](http://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection-technical-preview) 새 기준 버전으로 제공됩니다.
 
--  **Technical Preview 1610** - Configuration Manager Technical Preview 1610은 Configuration Manager Technical Preview의 콘솔 내 업데이트와 기준 버전으로 제공되었습니다. 1610 설치용 미디어가 있는 경우 대신 버전 1703을 다운로드하고 해당 버전을 설치하는 것이 좋습니다.
-
+<!-- out of support. Use baseline 1703
+-  **Technical Preview 1610** - The Configuration Manager Technical Preview 1610 was available as both an in-console update for the Configuration Manager Technical Preview, and as a baseline version. If you have media for installing 1610, we recommend you download version 1703 and install that version instead.
+-->
 
 
 
@@ -113,10 +114,10 @@ ms.lasthandoff: 08/18/2017
 
  |기능 |기술 미리 보기 버전 |현재 분기 버전|  
  |----------------|---------------------|--------------------|
- |Windows 10 및 Office 365에 대한 고속 설치 파일을 위한 클라이언트 피어 캐시 지원|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#client-peer-cache-support-for-express-installation-files-for-windows-10-and-office-365)|![추가되지 않음](media/Red_X.gif)|
- |Surface 장치 대시보드|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#surface-device-dashboard)|![추가되지 않음](media/Red_X.gif)|
- |Windows Defender Application Guard 정책 구성 및 배포|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#configure-and-deploy-windows-defender-application-guard-policies)|![추가되지 않음](media/Red_X.gif)|
- |Configuration Manager에서 PowerShell 스크립트를 배포할 때 매개 변수 추가|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#add-parameters-when-you-deploy-powershell-scripts-from-configuration-manager)|![추가되지 않음](media/Red_X.gif)|
+ |Configuration Manager에서 PowerShell 스크립트를 배포할 때 매개 변수를 지정하도록 향상된 기능 <!-- 1236459 -->|[기술 미리 보기 1708](capabilities-in-technical-preview-1708.md#improvements-for-specifying-script-parameters-when-you-deploy-powershell-scripts-from-configuration-manager)|![추가되지 않음](media/Red_X.gif)|
+ |관리 정보 <!-- 1353967 --> |[기술 미리 보기 1708](capabilities-in-technical-preview-1708.md#management-insights)|![추가되지 않음](media/Red_X.gif)|
+ |Configuration Manager 콘솔에서 컴퓨터 다시 시작 <!-- 1356283 --> |[기술 미리 보기 1708](capabilities-in-technical-preview-1708.md#restart-computers-from-the-configuration-manager-console)|![추가되지 않음](media/Red_X.gif)|
+ |소프트웨어 센터 사용자 지정 <!-- 1351224 --> |[기술 미리 보기 1708](capabilities-in-technical-preview-1708.md#software-center-customization)|![추가되지 않음](media/Red_X.gif)|
 
 
 ## <a name="capabilities-delivered-in-previous-technical-previews"></a>이전 Technical Preview에 포함된 기능
@@ -124,6 +125,10 @@ ms.lasthandoff: 08/18/2017
 
  |기능 |기술 미리 보기 버전 |현재 분기 버전|  
  |----------------|---------------------|--------------------|
+ |Windows 10 및 Office 365에 대한 고속 설치 파일을 위한 클라이언트 피어 캐시 지원|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#client-peer-cache-support-for-express-installation-files-for-windows-10-and-office-365)|![추가되지 않음](media/Red_X.gif)|
+ |Surface 장치 대시보드|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#surface-device-dashboard)|![추가되지 않음](media/Red_X.gif)|
+ |Windows Defender Application Guard 정책 구성 및 배포|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#configure-and-deploy-windows-defender-application-guard-policies)|![추가되지 않음](media/Red_X.gif)|
+ |Configuration Manager에서 PowerShell 스크립트를 배포할 때 매개 변수 추가|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#add-parameters-when-you-deploy-powershell-scripts-from-configuration-manager)|![추가되지 않음](media/Red_X.gif)|
  |새 모바일 응용 프로그램 관리 정책 설정|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#new-mobile-application-management-policy-settings)|![추가되지 않음](media/Red_X.gif)|
  |소프트웨어 업데이트 지점에 대한 향상된 경계 그룹|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#improved-boundary-groups-for-software-update-points)|[버전 1706](/sccm/core/servers/deploy/configure/boundary-groups#software-update-points)|
  |사이트 서버 역할 고가용성|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#site-server-role-high-availability) |![추가되지 않음](media/Red_X.gif)|
