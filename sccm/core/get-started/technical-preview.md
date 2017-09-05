@@ -4,7 +4,7 @@ description: "System Center Configuration Manager에서 새로운 기능을 테�
 ms.custom: na
 ms.date: 08/25/2017
 ms.prod: configuration-manager
-ms.reviewer: na
+ms.reviewer: nab
 ms.suite: na
 ms.technology: configmgr-other
 ms.tgt_pltfrm: na
@@ -14,11 +14,11 @@ caps.latest.revision: "157"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 0cdbccc0147cb1f4d5130863b9610d0b190d6658
-ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
+ms.openlocfilehash: 1335794bde7805e5fb2899ca685e985afee13c4e
+ms.sourcegitcommit: 5b4fd2d36f06be5bcc7f8ebbfb92c48b7240085d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="technical-preview-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview
 
@@ -226,7 +226,7 @@ ms.lasthandoff: 08/28/2017
  |Asset Intelligence 개선|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-asset-intelligence)|![추가되지 않음](media/Red_X.gif)|
  |원격 제어 키보드 변환|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#remote-control-keyboard-translation)|![추가되지 않음](media/Red_X.gif)|
  |Windows 10 버전 업그레이드 정책의 향상 기능|[Tech Preview 1607](capabilities-in-technical-preview-1607.md#dmp_edition)|[버전 1610](/sccm/compliance/deploy-use/upgrade-windows-version)|
- |소프트웨어 센터 대화 상자에 대한 사용자 지정 가능한 브랜딩|[Tech Preview 1607](capabilities-in-technical-preview-1607.md#customizable-branding-for-software-center-dialogs)|![추가되지 않음](media/Red_X.gif)|  
+ |소프트웨어 센터 대화 상자에 대한 사용자 지정 가능한 브랜딩|[Tech Preview 1607](capabilities-in-technical-preview-1607.md#customizable-branding-for-software-center-dialogs)|[버전 1610](/sccm/core/plan-design/changes/whats-new-in-version-1610#customizable-branding-for-software-center-dialogs)|  
  |온-프레미스 모바일 장치 관리에 대한 여러 장치 관리 지점|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_onprem)|[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#on-premises-mobile-device-management)|
  |컬렉션으로 장치 자동 분류|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_category)|[버전 1606](/sccm/core/clients/manage/collections/automatically-categorize-devices-into-collections) |
  |필수 응용 프로그램 및 소프트웨어 업데이트 배포를 위한 유예 기간 적용|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_grace)|[버전 1610](/sccm/apps/deploy-use/deploy-applications)|

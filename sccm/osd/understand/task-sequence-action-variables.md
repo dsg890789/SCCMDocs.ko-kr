@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 675ebf053de98c6ad93a53ae218696012aef96f7
+ms.sourcegitcommit: 5b4fd2d36f06be5bcc7f8ebbfb92c48b7240085d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="task-sequence-action-variables-in-system-center-configuration-manager"></a>System Center Configuration Manager의 작업 순서 동작 변수
 
@@ -187,15 +187,6 @@ ms.lasthandoff: 08/07/2017
 |SMSConnectNetworkFolderPassword<br /><br /> (입력)|네트워크 공유에 연결하는 데 사용되는 네트워크 암호를 지정합니다.|  
 |SMSConnectNetworkFolderPath<br /><br /> (입력)|연결에 대한 네트워크 경로를 지정합니다.<br /><br /> 예제:<br /><br /> **"\\\servername\sharename"**|  
 
-###  <a name="BKMK_ConvertDisk"></a> 동적 디스크로 변환 작업 순서 동작 변수  
- 이 동작에 대한 변수는 기본에서 동적 디스크로 변환할 실제 디스크의 수를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [동적 디스크로 변환](task-sequence-steps.md#BKMK_ConvertDisktoDynamic)을 참조하세요.  
-
-#### <a name="details"></a>세부 정보  
-
-|작업 변수 이름|설명|  
-|--------------------------|-----------------|  
-|OSDConvertDiskIndex<br /><br /> (입력)|변환되는 실제 디스크 번호를 지정합니다.|  
-
 ###  <a name="BKMK_EnableBitLocker"></a> BitLocker 사용 작업 순서 동작 변수  
  이 동작에 대한 변수는 대상 컴퓨터에서 BitLocker를 사용하도록 설정하기 위해 사용되는 복구 암호 및 시작 키 옵션을 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [BitLocker 사용](task-sequence-steps.md#BKMK_EnableBitLocker)을 참조하세요.  
 
@@ -276,7 +267,7 @@ ms.lasthandoff: 08/07/2017
 |OSDStateStorePath<br /><br /> (출력)|사용자 상태가 저장되는 상태 마이그레이션 지점의 폴더에 대한 UNC 경로입니다.|  
 
 ###  <a name="BKMK_RestartComputer"></a> 컴퓨터 다시 시작 작업 순서 동작 변수  
- 이 동작에 대한 변수는 대상 컴퓨터를 다시 시작하는 데 사용되는 정보를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [컴퓨터 다시 시작](task-sequence-steps.md#a-namebkmkrestartcomputera-restart-computer)을 참조하세요.  
+ 이 동작에 대한 변수는 대상 컴퓨터를 다시 시작하는 데 사용되는 정보를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [컴퓨터 다시 시작](task-sequence-steps.md#BKMK_RestartComputer)을 참조하세요.  
 
 #### <a name="details"></a>세부 정보  
 
