@@ -2,7 +2,7 @@
 title: "지원되는 클라이언트 및 장치 | Microsoft 문서"
 description: "System Center Configuration Manager에서 클라이언트 및 장치에 대해 지원하는 운영 체제를 알아봅니다."
 ms.custom: na
-ms.date: 8/16/2017
+ms.date: 8/30/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -11,14 +11,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 87f4e041-67df-4c61-aa98-7444faffe565
 caps.latest.revision: "5"
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.openlocfilehash: f9dd3b3e8f7a2878cd549bf289e1ee5536ee73fc
-ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
+ms.openlocfilehash: 4c7e0aaed816e45c8770d1cb9fb21d6dcd63f3a3
+ms.sourcegitcommit: 5b4fd2d36f06be5bcc7f8ebbfb92c48b7240085d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="supported-operating-systems-for-clients-and-devices-for-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 및 장치에 대해 지원되는 운영 체제
 
@@ -213,7 +213,6 @@ ms.lasthandoff: 08/28/2017
 
 |||  
 |-|-|  
-|버전 5.3(Power)|ccm-Aix53ppc.&lt;빌드\>.tar|  
 |버전 6.1(Power)|ccm-Aix61ppc.&lt;빌드\>.tar|  
 |버전 7.1(Power)|ccm-Aix71ppc.&lt;빌드\>.tar|  
 
@@ -244,10 +243,7 @@ ms.lasthandoff: 08/28/2017
 
 |||  
 |-|-|  
-|버전 11iv2 IA64|ccm-HpuxB.11.23i64.&lt;빌드\>.tar|  
-|버전 11iv2 PA-RISC|ccm-HpuxB.11.23PA.&lt;빌드\>.tar|  
 |버전 11iv3 IA64|ccm-HpuxB.11.31i64.&lt;빌드\>.tar|  
-|버전 11iv3 PA-RISC|ccm-HpuxB.11.31PA.&lt;빌드\>.tar|  
 
 ### <a name="oracle-linux"></a>Oracle Linux  
 
@@ -263,8 +259,6 @@ ms.lasthandoff: 08/28/2017
 
 |||  
 |-|-|  
-|버전 4 x86|ccm-RHEL4x86.&lt;빌드\>.tar|  
-|버전 4 x64|ccm-RHEL4x64.&lt;빌드\>.tar|  
 |버전 5 x86|ccm-Universalx86.&lt;빌드\>.tar|  
 |버전 5 x64|ccm-Universalx64.&lt;빌드\>.tar|  
 |버전 6 x86|ccm-Universalx86.&lt;빌드\>.tar|  
@@ -275,7 +269,6 @@ ms.lasthandoff: 08/28/2017
 
 |||  
 |-|-|  
-|버전 9 SPARC|ccm-Sol9sparc.&lt;빌드\>.tar|  
 |버전 10 x86|ccm-Sol10x86.&lt;빌드\>.tar|  
 |버전 10 SPARC|ccm-Sol10sparc.&lt;빌드\>.tar|  
 |버전 11 x86|ccm-Sol11x86.&lt;빌드\>.tar|  
@@ -285,7 +278,6 @@ ms.lasthandoff: 08/28/2017
 
 |||  
 |-|-|  
-|버전 9 x86|ccm-SLES9x86.&lt;빌드\>.tar|  
 |버전 10 SP1 x86|ccm-Universalx86.&lt;빌드\>.tar|  
 |버전 10 SP1 x64|ccm-Universalx64.&lt;빌드\>.tar|  
 |버전 11 SP1 x86|ccm-Universalx86.&lt;빌드\>.tar|  
@@ -302,6 +294,9 @@ ms.lasthandoff: 08/28/2017
 |버전 12.04 LTS x64|ccm-Universalx64.&lt;빌드\>.tar|  
 |버전 14.04 LTS x86|ccm-Universalx86.&lt;빌드\>.tar|  
 |버전 14.04 LTS x64|ccm-Universalx64.&lt;빌드\>.tar|  
+|버전 16.04 LTS x86|ccm-Universalx86.&lt;빌드\>.tar|  
+|버전 16.04 LTS x64|ccm-Universalx64.&lt;빌드\>.tar|  
+
 
 ##  <a name="mobile-devices-enrolled-by-microsoft-intune"></a>Microsoft Intune에서 등록한 모바일 장치  
  Configuration Manager에 Microsoft Intune을 통합할 때 관리할 수 있는 컴퓨터 및 장치에 대한 자세한 내용은 Microsoft Intune 문서 라이브러리에서 다음 두 항목을 참조하세요.  

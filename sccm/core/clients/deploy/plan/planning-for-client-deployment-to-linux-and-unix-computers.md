@@ -2,7 +2,7 @@
 title: "Linux 및 UNIX 컴퓨터에 클라이언트 배포 계획 | Microsoft 문서"
 description: "System Center Configuration Manager에서 Linux 및 UNIX 컴퓨터에 클라이언트 배포를 계획합니다."
 ms.custom: na
-ms.date: 04/23/2017
+ms.date: 08/30/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.openlocfilehash: 367ffb919a1adb9a0530f7357a0fcf1e6636af08
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: c5385ec5d7e41812df5c2a33d528614547819157
+ms.sourcegitcommit: 5b4fd2d36f06be5bcc7f8ebbfb92c48b7240085d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="planning-for-client-deployment-to-linux-and-unix-computers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Linux 및 UNIX 컴퓨터에 클라이언트 배포 계획
 
@@ -51,14 +51,6 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manag
 ###  <a name="BKMK_ClientDeployExternalforLnU"></a> Configuration Manager 외부 종속성:  
  다음 표에서는 필수 UNIX 및 Linux 운영 체제 및 패키지 종속 파일을 설명합니다.  
 
- **Red Hat Enterprise Linux ES 릴리스 4**  
-
-|필수 패키지|설명|최소 버전|  
-|----------------------|-----------------|---------------------|  
-|glibc|C 표준 라이브러리|2.3.4-2|  
-|Openssl|OpenSSL Libraries, 보안 네트워크 통신 프로토콜|0.9.7a-43.1|  
-|PAM|플러그 가능 인증 모듈|0.77-65.1|  
-
  **Red Hat Enterprise Linux Server 릴리스 5.1(Tikanga)**  
 
 |필수 패키지|설명|최소 버전|  
@@ -75,15 +67,6 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manag
 |Openssl|OpenSSL Libraries, 보안 네트워크 통신 프로토콜|1.0.0-4|  
 |PAM|플러그 가능 인증 모듈|1.1.1-4|  
 
- **Solaris 9 SPARC**  
-
-|필수 패키지|설명|최소 버전|  
-|----------------------|-----------------|---------------------|  
-|필수 운영 체제 패치|PAM 메모리 손실|112960-48|  
-|SUNWlibC|Sun Workshop Compilers Bundled libC(sparc)|5.9,REV=2002.03.18|  
-|SUNWlibms|Forte 개발자 번들로 공유 libm (sparc)|5.9,REV=2001.12.10|  
-|Openssl|SMCosslg (sparc)<br /><br /> Sun에서는 Solaris 9 SPARC용 OpenSSL 버전을 제공하지 않습니다. Sunfreeware에서 다운로드할 수 있는 버전이 있습니다.|0.9.7g|  
-|PAM|플러그 가능 인증 모듈<br /><br /> SUNWcsl, Core Solaris (공유 Libs) (sparc)|11.9.0,REV=2002.04.06.15.27|  
 
  **Solaris 10 SPARC**  
 
@@ -132,15 +115,6 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manag
 |SUNWcsr|코어 Solaris(루트)|11.11, REV=2009.11.11|  
 |SUNWopenssl-libraries|OpenSSL 라이브러리(사용자)|11.11.0,REV=2010.05.25.01.00|  
 
- **SUSE Linux Enterprise Server 9(i586)**  
-
-|필수 패키지|설명|최소 버전|  
-|----------------------|-----------------|---------------------|  
-|Service Pack 4|SUSE Linux Enterprise Server 9||  
-|OS Patch lib gcc-41.rpm|표준 공유 라이브러리|41-4.1.2_20070115-0.6|  
-|OS Patch lib stdc++-41.rpm|표준 공유 라이브러리|41-4.1.2_20070115-0.6|  
-|Openssl|OpenSSL Libraries, 보안 네트워크 통신 프로토콜|0.9.7d-15.35|  
-|PAM|플러그 가능 인증 모듈|0.77-221-11|  
 
  **SUSE Linux Enterprise Server 10 SP1(i586)**  
 
@@ -173,13 +147,6 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manag
 |Openssl|OpenSSL Libraries, 보안 네트워크 통신 프로토콜|0.9.8 또는 1.0|  
 |PAM|플러그 가능 인증 모듈|0.99.6.2-3.14|  
 
- **IBM AIX 5L 5.3**  
-
-|필수 패키지|설명|최소 버전|  
-|----------------------|-----------------|---------------------|  
-|OS 버전|운영 체제 버전|AIX 5.3, Technology Level 6, Service Pack 5|  
-|xlC.rte|XL C/C++ 런타임|9.0.0.2|  
-|openssl.base|OpenSSL Libraries, 보안 네트워크 통신 프로토콜|0.9.8.4|  
 
  **IBM AIX 6.1**  
 
@@ -197,33 +164,6 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manag
 |xlC.rte|XL C/C++ 런타임||  
 |OpenSSL/openssl.base|OpenSSL Libraries, 보안 네트워크 통신 프로토콜||  
 
- **HP-UX 11i v2 IA 64**  
-
-|필수 패키지|설명|최소 버전|  
-|----------------------|-----------------|---------------------|  
-|HPUXBaseOS|기본 OS|B.11.23|  
-|HPUXBaseAux|HP-UX 기본 OS 보조|B.11.23.0706|  
-|HPUXBaseAux.openssl|OpenSSL Libraries, 보안 네트워크 통신 프로토콜|A.00.09.07l.003|  
-|PAM|플러그 가능 인증 모듈|HP-UX에서 PAM은 핵심 운영 체제 구성 요소의 일부입니다. 다른 종속 파일은 없습니다.|  
-
- **HP-UX 11i v2 PA-RISC**  
-
-|필수 패키지|설명|최소 버전|  
-|----------------------|-----------------|---------------------|  
-|HPUX11i-OE|HP-UX 기본 운영 환경|B.11.23.0706|  
-|OS-Core.MinimumRuntime.CORE-SHLIBS|호환 개발 도구 라이브러리|B.11.23|  
-|HPUXBaseAux|HP-UX 기본 OS 보조|B.11.23.0706|  
-|HPUXBaseAux.openssl|OpenSSL Libraries, 보안 네트워크 통신 프로토콜|A.00.09.071.003|  
-|PAM|플러그 가능 인증 모듈|HP-UX에서 PAM은 핵심 운영 체제 구성 요소의 일부입니다. 다른 종속 파일은 없습니다.|  
-
- **HP-UX 11i v3 PA-RISC**  
-
-|필수 패키지|설명|최소 버전|  
-|----------------------|-----------------|---------------------|  
-|HPUX11i-OE|HP-UX 기본 운영 환경|B.11.31.0709|  
-|OS-Core.MinimumRuntime.CORE2-SHLIBS|특정 IA 에뮬레이터 라이브러리|B.11.31|  
-|openssl/Openssl.openssl|OpenSSL Libraries, 보안 네트워크 통신 프로토콜|A.00.09.08d.002|  
-|PAM|플러그 가능 인증 모듈|HP-UX에서 PAM은 핵심 운영 체제 구성 요소의 일부입니다. 다른 종속 파일은 없습니다.|  
 
  **HP-UX 11i v3 IA64**  
 
@@ -285,13 +225,8 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manag
 ##  <a name="BKMK_NoSHA-256"></a> SHA-256을 지원하지 않는 Linux 및 UNIX 운영 체제 정보  
  Configuration Manager용 클라이언트로 지원되는 다음 Linux 및 UNIX 운영 체제는 SHA-256을 지원하지 않는 OpenSSL 버전과 함께 릴리스되었습니다.  
 
--   Red Hat Enterprise Linux 버전 4 (x86/x64)  
+-   Solaris 버전 10(SPARC/x86)  
 
--   Solaris 9 (SPARC) 버전과 버전 Solaris 10 (SPARC/x 86)  
-
--   (X86) SUSE Linux Enterprise Server 버전 9  
-
--   HP-UX 버전 11iv2 (PA-RISH/IA64)  
 
  Configuration Manager를 사용하여 이러한 운영 체제를 관리하려면 클라이언트에 SHA-256의 유효성 검사를 건너뛰도록 지시하는 명령줄 스위치로 Linux 및 UNIX용 Configuration Manager 클라이언트를 설치해야 합니다. 이러한 운영 체제 버전에서 실행되는 Configuration Manager 클라이언트는 SHA-256을 지원하는 클라이언트보다 덜 안전한 모드로 작동합니다. 다음 동작을 포함 하는 작업의 보안성이 모드:  
 

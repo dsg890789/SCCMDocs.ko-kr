@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: e0726febc4c36a26c5e067914734838bf2681e6c
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 18a987141e212158424924402859799ba42f8eae
+ms.sourcegitcommit: 5b4fd2d36f06be5bcc7f8ebbfb92c48b7240085d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="task-sequence-steps-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업 순서 단계
 
@@ -139,7 +139,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
  대상 컴퓨터를 지정된 작업 그룹에 가입시키려면 이 옵션을 선택합니다. **작업 그룹** 행에 작업 그룹의 이름을 입력합니다. 이 값은 **네트워크 설정 캡처** 작업 순서 단계에서 캡처된 값으로 재정의될 수 있습니다.  
 
  **도메인에 가입**  
- 대상 컴퓨터를 지정된 도메인에 가입시키려면 이 옵션을 선택합니다. *fabricam.com*과 같은 도메인을 지정하거나 찾아봅니다. 조직 구성 단위의 LDAP(Lightweight Directory Access Protocol) 경로(예: LDAP//OU=컴퓨터, DC=Fabricam.com, C=com)를 지정하거나 찾아봅니다.  
+ 대상 컴퓨터를 지정된 도메인에 가입시키려면 이 옵션을 선택합니다. *fabricam.com*과 같은 도메인을 지정하거나 찾아봅니다. 조직 구성 단위의 LDAP(Lightweight Directory Access Protocol) 경로(예: LDAP//OU=computers, DC=Fabricam.com, C=com)를 지정하거나 찾아봅니다.  
 
  **계정**  
  **설정** 을 클릭하여 컴퓨터를 도메인에 가입시키는 데 필요한 권한이 있는 계정을 지정합니다. **Windows 사용자 계정** 대화 상자에서 **도메인\사용자** 형식으로 사용자 이름을 입력할 수 있습니다.  
@@ -551,31 +551,6 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
 
 -   단계를 실행하기 위해 충족해야 하는 조건 지정  
 
-##  <a name="BKMK_ConvertDisktoDynamic"></a> 동적 디스크로 변환  
- **동적 디스크로 변환** 작업 순서 단계를 사용하여 실제 디스크를 기본 백업 형식에서 동적 디스크 형식으로 변환할 수 있습니다.  
-
- 이 단계는 표준 운영 체제 또는 Windows PE에서 실행됩니다. 이 동작의 작업 순서 변수에 대한 자세한 내용은 [동적 디스크로 변환 작업 순서 동작 변수](task-sequence-action-variables.md#BKMK_ConvertDisk)를 참조하세요.  
-
-### <a name="details"></a>세부 정보  
- 이 단계에 대한 **속성** 탭에서 이 섹션에 설명된 설정을 구성할 수 있습니다.  
-
- 또한 **옵션** 탭을 사용하여 다음 동작을 수행할 수 있습니다.  
-
--   단계를 사용하지 않도록 설정  
-
--   단계를 실행하는 동안 오류가 발생한 경우에도 작업 순서가 지속되는지 지정  
-
--   단계를 실행하기 위해 충족해야 하는 조건 지정  
-
- **Name**  
- 이 단계에서 수행되는 동작을 설명하는 간단한 사용자 정의 이름입니다.  
-
- **설명**  
- 이 단계에서 수행되는 동작에 대한 자세한 정보입니다.  
-
- **디스크 번호**  
- 변환할 디스크의 실제 디스크 번호입니다.  
-
 ##  <a name="BKMK_DisableBitLocker"></a> BitLocker 사용 안 함  
  **BitLocker 사용 안 함** 작업 순서 단계를 사용하여 현재 운영 체제 드라이브 또는 특정 드라이브에서 BitLocker 암호화를 사용하지 않도록 설정할 수 있습니다. 이 동작은 하드 드라이브에서 키 보호기를 일반 텍스트로 표시된 상태로 두고 드라이브의 내용을 해독하지 않습니다. 따라서 이 동작은 거의 즉시 완료됩니다.  
 
@@ -874,35 +849,6 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
  **응용 프로그램 설치가 실패할 경우 목록의 다른 응용 프로그램 설치 계속**  
  이 설정은 개별 응용 프로그램 설치에 실패한 경우 단계가 계속되도록 지정합니다. 이 설정을 지정하면 반환되는 설치 오류에 상관없이 작업 순서가 계속됩니다. 이 설정을 지정하지 않으면 설치에 실패한 경우 작업 순서 단계가 즉시 종료됩니다.  
 
-##  <a name="BKMK_InstallDeploymentTools"></a> 배포 도구 설치  
- **배포 도구 설치** 작업 순서 단계를 사용하여 Sysprep 배포 도구가 포함된 Configuration Manager 패키지를 설치할 수 있습니다.  
-
-### <a name="details"></a>세부 정보  
- 이 단계에 대한 **속성** 탭에서 이 섹션에 설명된 설정을 구성할 수 있습니다.  
-
- 또한 **옵션** 탭을 사용하여 다음 동작을 수행할 수 있습니다.  
-
--   단계를 사용하지 않도록 설정  
-
--   단계를 실행하는 동안 오류가 발생한 경우에도 작업 순서가 지속되는지 지정  
-
--   단계를 실행하기 위해 충족해야 하는 조건 지정  
-
- **Name**  
- 이 단계에서 수행되는 동작을 설명하는 간단한 사용자 정의 이름입니다.  
-
- **설명**  
- 이 단계에서 수행되는 동작에 대한 자세한 정보입니다.  
-
- **Sysprep 패키지**  
- 이 설정은 다음 운영 체제용 Sysprep 배포 도구가 포함된 Configuration Manager 패키지를 지정합니다.  
-
--   Windows XP SP3  
-
--   Windows XP X64 SP2  
-
--   Windows Server 2003 SP2  
-
 ##  <a name="BKMK_InstallPackage"></a> 패키지 설치
 
  **패키지 설치** 작업 순서 단계를 사용하여 작업 순서의 일부로 소프트웨어를 설치할 수 있습니다. 이 단계를 실행하면 정책 폴링 간격을 기다리지 않고 설치가 즉시 시작됩니다.  
@@ -1068,6 +1014,9 @@ Configuration Manager 버전 1606부터, 캐시된 검사 결과를 사용하는
 **ConfigMgr 클라이언트 캡처 준비** 단계를 사용하여 Configuration Manager 클라이언트를 제거하거나 이미징 프로세스의 일부로 캡처를 준비하기 위해 참조 컴퓨터에 클라이언트를 구성할 수 있습니다.
 
 Configuration Manager 버전 1610부터 ConfigMgr 클라이언트 준비 단계에서 주요 정보만 제거하는 대신 Configuration Manager 클라이언트를 완전히 제거합니다. 작업 순서에서 운영 체제 캡처 이미지를 배포할 때마다 새 Configuration Manager 클라이언트가 설치됩니다.  
+
+> [!Note]  
+>  클라이언트는 **참조 운영 체제 빌드 및 캡처** 작업 순서 동안에만 제거됩니다. 미디어 캡처 또는 사용자 지정 작업 순서와 같은 다른 캡처 방법에서는 클라이언트를 제거하지 않습니다.
 
 Configuration Manager 버전 1610 이전에는 이 단계에서 다음과 같은 작업을 수행합니다.  
 
