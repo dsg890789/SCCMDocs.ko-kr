@@ -14,11 +14,11 @@ caps.latest.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 22203b358830903cf2e531c0532ae3111b8265fc
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 3046003f000c8abde28a5b6e3bcb88b159be5357
+ms.sourcegitcommit: 2a1328da3facb20b0c78f3b12adbb5fdbe0dcc11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="configure-azure-services-for-use-with-configuration-manager"></a>Configuration Manager에서 사용하도록 Azure 서비스 구성
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 08/07/2017
 
 다음과 같은 Azure 서비스는 Azure 서비스 구성 마법사를 사용하여 구성됩니다.
 -   **클라우드 관리**   
-    [Azure AD(Azure Active Directory)를 사용하여 클라이언트가 인증 받도록 합니다](). [Azure AD 사용자 검색을 구성](/sccm/core/servers/deploy/configure/configure-discovery-methods#azureaadisc)할 수도 있습니다.
+    [Azure AD(Azure Active Directory)를 사용하여 클라이언트가 인증 받도록 합니다](/sccm/core/clients/deploy/deploy-clients-cmg-azure). [Azure AD 사용자 검색을 구성](/sccm/core/servers/deploy/configure/configure-discovery-methods#azureaadisc)할 수도 있습니다.
 -   **OMS 커넥터**
     [OMS(Operations Manager Suite)에 연결](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite)하고 컬렉션과 같은 데이터를 OMS Log Analytics와 동기화합니다.
 -   **업그레이드 준비**
@@ -85,7 +85,7 @@ Azure 서비스 웹앱은 Configuration Manager 사이트를 Azure AD에 연결�
 
 6.  마법사의 **검색** 페이지에서 **Azure Active Directory 사용자 검색 사용**을 클릭하고 **설정**을 클릭합니다.
 **Azure AD 사용자 검색 설정** 대화 상자에서 검색 일정을 구성합니다. 또한 Azure AD에서 새 계정 또는 변경된 계정만 확인하는 델타 검색을 사용하도록 설정할 수도 있습니다. [Azure AD 사용자 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#azureaddisc)에 대해 자세히 알아봅니다.
- 
+
  7. 마법사를 완료합니다.
 
 이제 Configuration Manager 사이트가 Azure AD에 연결되었습니다.

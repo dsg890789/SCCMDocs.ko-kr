@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: e54c2cd1c3e83609bff6a8cb64fb3c23b26a4eaa
-ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
+ms.openlocfilehash: 4e818ffd943208eab323b1558f825bd87f3ddc4c
+ms.sourcegitcommit: 13599667ea77c16db1aebe64f8a6748c268f0b45
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/11/2017
 ---
 # <a name="release-notes-for-system-center-configuration-manager"></a>System Center Configuration Manager의 릴리스 정보
 
@@ -119,7 +119,7 @@ ConfigMgrSetup.log:
  -  사이트 데이터베이스가 서비스 연결 지점과 동일한 서버에 있지만 SQL 프로토콜 **공유 메모리**가 사용되지 않는 경우
 
 예외는 다음과 유사합니다.
- - *처리되지 않은 예외: System.Data.SqlClient.SqlException: SQL Server에 대한 연결을 설정하는 동안 네트워크 관련 또는 인스턴스 관련 오류가 발생했습니다. 서버를 찾을 수 없거나 액세스할 수 없습니다. 인스턴스 이름이 올바르고 SQL Server가 원격 연결을 허용하도록 구성되었는지 확인합니다. (공급자: 명명된 파이프 공급자, 오류: 40 - SQL Server에 대한 연결을 열 수 없음) -* 
+ - *처리되지 않은 예외: System.Data.SqlClient.SqlException: SQL Server에 대한 연결을 설정하는 동안 네트워크 관련 또는 인스턴스 관련 오류가 발생했습니다. 서버를 찾을 수 없거나 액세스할 수 없습니다. 인스턴스 이름이 올바르고 SQL Server가 원격 연결을 허용하도록 구성되었는지 확인합니다. (공급자: 명명된 파이프 공급자, 오류: 40 - SQL Server에 대한 연결을 열 수 없음) - *
 
 **해결 방법**: 도구를 사용하는 동안 SQL Server 포트에 대한 정보를 포함하도록 서비스 연결 지점을 호스트하는 서버의 레지스트리를 수정해야 합니다.
 
@@ -148,17 +148,6 @@ Windows 컴퓨터에 클라이언트를 배포할 때 모든 활성 버전에서
 **해결 방법** 이 문제는 이전에 설치된 Silverlight 버전이 손상되었기 때문에 발생합니다. 이 문제를 해결하려면 영향을 받는 컴퓨터에서 다음 도구를 실행할 수 있습니다. [https://support.microsoft.com/help/17588/fix-problems-that-block-programs-from-being-installed-or-removed](https://support.microsoft.com/help/17588/fix-problems-that-block-programs-from-being-installed-or-removed)
 
 ## <a name="operating-system-deployment"></a>운영 체제 배포  
-
-### <a name="if-the-boot-image-contains-drivers-the-image-fails-to-reload-the-current-windows-pe-version-from-the-windows-assessment-and-deployment-kit-adk"></a>부팅 이미지가 드라이버를 포함하는 경우 이미지는 ADK(Windows Assessment and Deployment Kit)에서 현재 Windows PE 버전을 다시 로드하는 데 실패합니다.
-<!-- 495087 -->
-ADK(Windows Assessment and Deployment Kit)의 설치 디렉터리에서 최신 버전의 Windows PE를 사용하여 부팅 이미지가 저장된 배포 지점을 업데이트하기 위해 배포 지점 업데이트 마법사를 사용할 수 있습니다. 업데이트하려면 배포 지점 업데이트 마법사를 열고 **Windows ADK의 현재 PE 버전에서 이 부팅 이미지 다시 로드**를 선택합니다.
-
-그러나 부팅 이미지에 드라이버가 있으면 업데이트에 실패합니다. 대신, 마법사는 ADK에서 이미지를 다시 로드하고, 사용자가 해제할 수 있는 예외 대화 상자를 표시한 후에 성공 화면을 보여줍니다. 그러나 최신 Configuration Manager 클라이언트 구성 요소가 부팅 이미지에 추가되지 않습니다. 부팅 이미지는 배포 지점에서 업데이트되지 않습니다.
-
-**해결 방법**: 배포 지점 업데이트 마법사를 두 번 실행합니다.
-
-1. **Windows ADK의 현재 Windows PE 버전에서 이 부팅 이미지 다시 로드**를 선택하여 마법사를 실행합니다. 최신 버전의 Windows PE를 설치할 수 있습니다.
-2. **Windows ADK의 현재 Windows PE 버전에서 이 부팅 이미지 다시 로드**를 선택하지 않고 마법사를 다시 실행합니다. 그러면 최신 클라이언트 이진 파일을 가져오고 배포 지점에서 붐 이미지를 업데이트합니다.
 
 ### <a name="servicing-plans-create-a-lot-of-duplicate-software-update-groups-and-deployments-by-default"></a>서비스 계획에서 기본적으로 중복 소프트웨어 업데이트 그룹을 많이 만들고 배포합니다.  
 기본적으로 서비스 계획 만들기 마법사는 현재 소프트웨어 업데이트를 동기화한 후마다 실행됩니다. 마법사가 실행될 때마다 새 소프트웨어 업데이트 그룹 및 배포가 생성됩니다. 예를 들어 하루에 여러 번 실행되는 소프트웨어 업데이트 동기화 일정을 사용하는 경우 계획 서비스 만들기 마법사에서 매일 거의 동일한 소프트웨어 업데이트 그룹 및 배포를 여러 개 만듭니다.  
