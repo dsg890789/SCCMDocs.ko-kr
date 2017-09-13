@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.openlocfilehash: 3921748d3c99c2a35b670f3ca121dc7ab92d43bc
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 2d305df5e67c3f46360e1735cb6fe263afbaed41
+ms.sourcegitcommit: 2a1328da3facb20b0c78f3b12adbb5fdbe0dcc11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="device-guard-management-with-configuration-manager"></a>Configuration Manager로 Device Guard 관리
 
@@ -104,7 +104,7 @@ Device Guard 정책을 구성하거나 배포하기 전에 다음 정보를 보�
 5.  작업을 마쳤으면 **확인**을 클릭하여 정책을 배포합니다. 
 
 클라이언트 PC에서 정책을 처리하고 나면 **컴퓨터 다시 시작**의 **클라이언트 설정**에 따라 해당 클라이언트를 다시 시작하도록 예약합니다.
-클라이언트 PC를 다시 시작해야 정책이 적용됩니다.**
+클라이언트 PC를 다시 시작해야 정책이 적용됩니다.
 
 ## <a name="how-to-monitor-a-device-guard-policy"></a>Device Guard 정책을 모니터하는 방법
 

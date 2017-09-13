@@ -2,7 +2,7 @@
 title: "인증서 프로필 소개 | Microsoft 문서"
 description: "System Center Configuration Manager의 인증서 프로필이 Active Directory 인증서 서비스에서 작동하는 방식을 알아봅니다."
 ms.custom: na
-ms.date: 07/25/2017
+ms.date: 09/11/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,18 +14,18 @@ caps.latest.revision: "7"
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.openlocfilehash: 7b1c0e449f3d1ef42e279e8707df6bf1df163b3f
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: e269b5836648d0d227e91a017512c16217e42646
+ms.sourcegitcommit: 13599667ea77c16db1aebe64f8a6748c268f0b45
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/11/2017
 ---
 # <a name="introduction-to-certificate-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager의 인증서 프로필 소개
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 
-인증서 프로필은 사용자가 회사 리소스에 원활하게 액세스할 수 있도록 Active Directory 인증서 서비스 및 네트워크 장치 등록 서비스 역할과 연동하여 관리되는 장치에 인증 인증서를 프로비전합니다. 예를 들어, 인증서 프로필을 만들고 배포하여 사용자가 VPN 및 무선 연결을 시작하는 데 필요한 인증서를 제공할 수 있습니다. 
+인증서 프로필은 사용자가 회사 리소스에 원활하게 액세스할 수 있도록 Active Directory 인증서 서비스 및 네트워크 장치 등록 서비스 역할과 연동하여 관리되는 장치에 인증 인증서를 프로비전합니다. 예를 들어, 인증서 프로필을 만들고 배포하여 사용자가 VPN 및 무선 연결을 시작하는 데 필요한 인증서를 제공할 수 있습니다.
 
 인증서 프로필은 수동으로 인증서를 설치하거나 대역 외 프로세스를 사용하지 않고도 Wi-Fi 네트워크 및 VPN 서버와 같은 회사 리소스에 액세스할 수 있도록 자동으로 사용자 장치를 구성할 수 있습니다. 인증서 프로필은 엔터프라이즈 PKI(공개 키 인프라)가 지원하는 안전한 설정을 더 많이 사용할 수 있으므로 회사 리소스를 안전하게 유지하는 데도 도움이 됩니다. 예를 들어, 관리되는 장치에 필요한 인증서를 프로비전했기 때문에 모든 Wi-Fi 및 VPN 연결에 대해 서버 인증을 요구할 수 있습니다.   
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 08/07/2017
 
 -   **개인 정보 교환(.pfx)** - 장치 또는 사용자에 대한 .pfx(PKCS #12라고도 함) 인증서를 요청할 수 있습니다.
 
-    기존 인증서에서 [자격 증명을 가져오거나](/sccm/mdm/deploy-use/import-pfx-certificate-profiles.md) 요청을 처리할 [인증서 기관을 정의](/sccm/mdm/deploy-use/create-pfx-certificate-profiles.md)하여 PFX 인증서 프로필을 만들 수 있습니다.
+    기존 인증서에서 [자격 증명을 가져오거나](/sccm/mdm/deploy-use/import-pfx-certificate-profiles) 요청을 처리할 [인증서 기관을 정의](/sccm/mdm/deploy-use/create-pfx-certificate-profiles)하여 PFX 인증서 프로필을 만들 수 있습니다.
 
     릴리스 1706부터 Microsoft 또는 Entrust를 **개인 정보 교환(.pfx)** 인증서의 인증 기관으로 사용할 수 있습니다.
 

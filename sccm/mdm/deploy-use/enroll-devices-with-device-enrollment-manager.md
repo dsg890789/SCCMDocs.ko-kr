@@ -2,7 +2,7 @@
 title: "장치 등록 관리자를 사용하여 장치 등록 - Configuration Manager | Microsoft 문서"
 description: "System Center Configuration Manager와 장치 등록 관리자 계정을 사용하여 회사 소유 장치를 등록합니다."
 ms.custom: na
-ms.date: 08/15/2017
+ms.date: 09/08/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision: "8"
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.openlocfilehash: c90ecca1ee46523d16fc1cf11495e40707631e03
-ms.sourcegitcommit: db7b7ec347638efd05cdba474e8a8f8535516116
+ms.openlocfilehash: dcc35fb6ebe385d07a3b60e8968e06dec8ad60af
+ms.sourcegitcommit: 40f2a4e3cc546e6bfd10f195a8e87af2b0780928
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="enroll-devices-with-device-enrollment-manager-with-configuration-manager"></a>Configuration Manager와 장치 등록 관리자를 사용하여 장치 등록
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 08/16/2017
 -  장치 등록 관리자를 사용하여 관리되는 장치에 회사 앱을 배포하려면 **필수 설치**인 회사 포털 앱을 장치 등록 관리자의 사용자 계정에 배포합니다. 그런 다음 장치 등록 관리자는 회사 포털 앱을 시작하여 추가 앱을 설치할 수 있습니다.
 - 성능 향상을 위해 회사 포털 앱은 로컬 장치만 표시합니다. 다른 DEM 장치의 원격 관리는 Configuration Manager 콘솔에서 관리자만 수행할 수 있습니다.
 - 회사 포털 웹 사이트는 장치 등록 관리자 계정에 사용할 수 없습니다. 회사 포털 앱을 사용합니다.
-- (iOS에만 해당)DEM을 사용하여 iOS 장치를 등록하는 경우 Apple Configurator 또는 Apple DEP(장비 등록 프로그램)를 사용하여 장치를 등록할 수 없습니다.
+- DEM을 사용하여 iOS 장치를 등록하는 경우 Apple Configurator 또는 Apple DEP(장비 등록 프로그램)를 사용하여 장치를 등록할 수 없습니다. (iOS에만 해당) 
 
  **장치 등록 관리자 시나리오의 예:**   
 식당에는 서빙 직원을 위한 POS 태블릿과 주방 직원을 위한 주문 모니터가 필요합니다. 직원들이 회사 데이터에 액세스하거나 사용자로 로그온할 필요는 없습니다. Intune 관리자는 장치 등록 관리자 계정을 만들고 해당 계정을 사용하여 회사 소유의 장치를 등록합니다. 또는 관리자는 식당 관리자에게 장치 등록 관리자 자격 증명을 제공하여 장치를 등록하고 관리할 수 있도록 합니다.  

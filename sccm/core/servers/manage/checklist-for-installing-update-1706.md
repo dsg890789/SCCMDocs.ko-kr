@@ -14,11 +14,11 @@ caps.latest.revision:
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: dab99748902df0fad32a1e2adad0c05e0dd8bdc9
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: c8110d9f5fec9027d34570623c32a7474e01b9af
+ms.sourcegitcommit: 2a1328da3facb20b0c78f3b12adbb5fdbe0dcc11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="checklist-for-installing-update-1706-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 업데이트 1706을 설치하기 위한 검사 목록
 
@@ -62,7 +62,6 @@ System Center Configuration Manager 현재 분기를 사용하는 경우 버전 
 > - 중앙 관리 사이트와 자식 기본 사이트 간의 **복제 링크**가 업그레이드되지 않음으로 표시됩니다. 이는 업데이트 팩 설치 상태에 완료 상태로 표시되고 복제 초기화 모니터링에 대한 경고가 나타납니다. 콘솔의 모니터링 노드에서 이는 *링크 구성 중*으로 표시됩니다.
 
 
-
 ## <a name="checklist"></a>확인 목록
 
 **모든 사이트가 1706에 대한 업데이트를 지원하는 System Center Configuration Manager의 버전을 실행하는지 확인합니다.**   
@@ -86,9 +85,9 @@ System Center Configuration Manager 현재 분기를 사용하는 경우 버전 
 
 자세한 내용은 [사이트 및 사이트 시스템 필수 조건](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)을 참조하세요.
 
-**Windows 10용 Windows ADK(Assessment and Deployment Kit) 버전 검토** Windows 10 ADK는 1607 이상 버전이어야 합니다. ADK를 업데이트해야 할 경우에는 Configuration Manager의 업데이트를 시작하기 전에 업데이트하세요. 이렇게 하면 기본 부팅 이미지가 자동으로 최신 버전의 Windows PE로 업데이트됩니다. 사용자 지정 부팅 이미지는 수동으로 업데이트해야 합니다.
+**Windows 10용 Windows ADK(Assessment and Deployment Kit) 버전 검토** Windows 10 ADK는 1703 이상 버전이어야 합니다. (지원되는 Windows ADK 버전에 대한 자세한 내용은 [Windows 10 ADK](/sccm/core/plan-design/configs/support-for-windows-10#windows-10-adk) 참조) Windows ADK를 업데이트해야 할 경우에는 Configuration Manager의 업데이트를 시작하기 전에 업데이트하세요. 이렇게 하면 기본 부팅 이미지가 자동으로 최신 버전의 Windows PE로 업데이트됩니다. 사용자 지정 부팅 이미지는 수동으로 업데이트해야 합니다.
 
-ADK를 업데이트하기 전에 사이트를 업데이트할 경우 부팅 이미지를 다시 생성하는 데 사용될 수 있는 스크립트를 확인하려면 [Configuration Manager and the Windows ADK for Windows 10, version 1607](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/09/configuration-manager-and-the-windows-adk-for-windows-10-version-1607/)(Windows 10용 Configuration Manager 및 Windows ADK, 버전 1607)을 참조하세요.
+Windows ADK를 업데이트하기 전에 사이트를 업데이트할 경우 [부트 이미지로 배포 지점 업데이트](/sccm/osd/get-started/manage-boot-images#update-distribution-points-with-the-boot-image)에서 Configuration Manager 버전 1706의 이 프로세스에 대한 개선 사항을 참조하세요.
 
 **사이트 및 계층 구조 상태를 검토하고 해결되지 않은 문제가 있는지 확인:** 사이트를 업데이트하기 전에 원격 컴퓨터에 설치된 사이트 서버, 사이트 데이터베이스 서버 및 사이트 시스템 역할에 대한 모든 작동 문제를 해결합니다. 기존 작동 문제로 인해 사이트 업데이트가 실패할 수 있습니다.
 

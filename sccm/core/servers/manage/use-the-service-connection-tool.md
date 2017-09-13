@@ -2,7 +2,7 @@
 title: "서비스 연결 도구 | Microsoft 문서"
 description: "Configuration Manager 클라우드 서비스에 연결하여 사용 정보를 수동으로 업로드할 수 있는 이 도구에 대해 알아봅니다."
 ms.custom: na
-ms.date: 4/7/2017
+ms.date: 09/06/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision: "11"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 0da80521bf223a765c3731f8ad59623d85a4c9fa
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 8039ee0c704bbe570ec3e45ba648f779923087c6
+ms.sourcegitcommit: 2a1328da3facb20b0c78f3b12adbb5fdbe0dcc11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="use-the-service-connection-tool-for-system-center-configuration-manager"></a>System Center Configuration Manager의 서비스 연결 도구 사용
 
@@ -81,7 +81,7 @@ ms.lasthandoff: 08/07/2017
 모든 내용이 포함된 ServiceConnectionTool 폴더를 USB 드라이브에 복사하거나, 3 및 4단계를 사용할 컴퓨터에서 사용할 수 있도록 해야 합니다.  
 
 ### <a name="overview"></a>개요
-**서비스 연결 도구를 사용하는 세 가지 기본 단계는 다음과 같습니다.**  
+#### <a name="there-are-three-primary-steps-to-using-the-service-connection-tool"></a>서비스 연결 도구를 사용하는 세 가지 기본 단계는 다음과 같습니다.  
 
 1.  **준비**: 이 단계는 서비스 연결 지점을 호스트하는 컴퓨터에서 실행합니다. 도구를 실행하면 사용 데이터를 .cab 파일에 넣고 USB 드라이브(또는 지정한 대체 전송 위치)에 저장합니다.  
 
@@ -91,15 +91,28 @@ ms.lasthandoff: 08/07/2017
 
 버전1606부터, Microsoft에 연결할 때 한 번에 여러 .cab 파일을 업로드하고(각기 다른 계층 구조에서) 프록시 서버 및 프록시 서버의 사용자를 지정할 수 있습니다.   
 
-**여러.cab 파일을 업로드하려면**
+#### <a name="to-upload-multiple-cab-files"></a>여러.cab 파일을 업로드하려면
  -  별도 계층 구조에서 내보내는 각.cab 파일을 동일한 폴더에 배치합니다. 각 파일의 이름은 고유해야 하며, 필요한 경우 수동으로 바꿀 수 있습니다.
  -  그런 다음 Microsoft로 데이터를 업로드하는 명령을 실행할 때 .cab 파일이 포함된 폴더를 지정합니다. 업데이트 1606 전에는, 한 번에 단일 계층 구조의 데이터만 업로드할 수 있었고, 도구에서 폴더의 .cab 파일의 이름을 지정하도록 요구했습니다.
  -  나중에 계층 구조의 서비스 연결 지점에서 가져오기 작업을 실행할 때 도구에서 해당 계층 구조의 데이터만 자동으로 가져옵니다.  
 
-**프록시 서버를 지정하려면**  
+#### <a name="to-specify-a-proxy-server"></a>프록시 서버를 지정하려면
 다음과 같은 선택적 매개 변수를 사용하여 프록시 서버를 지정할 수 있습니다. 이러한 매개 변수를 사용하는 방법에 대한 자세한 내용은 이 항목의 명령줄 매개 변수 섹션에서 사용할 수 있습니다.
   - **-proxyserveruri [FQDN_of_proxy_sever]**  이 매개 변수를 사용하여 이 연결에 사용할 프록시 서버를 지정합니다.
   -  **-proxyusername [username]**  프록시 서버의 사용자를 지정해야 할 때 이 매개 변수를 사용합니다.
+
+#### <a name="specify-the-type-of-updates-to-download"></a>다운로드할 업데이트 유형 지정
+1706 버전부터 도구 기본 다운로드 동작이 변경되었으며 어떤 파일을 다운로드할지 제어하는 옵션을 지원합니다.
+-   기본적으로 이 도구는 사이트의 버전에 적용되는 사용 가능한 최신 업데이트만 다운로드합니다. 핫픽스는 다운로드하지 않습니다.
+
+이 동작을 수정하려면 다음 매개 변수 중 하나를 사용하여 다운로드할 파일을 변경합니다. 사이트의 버전은 도구를 실행할 때 업로드된 .cab 파일의 데이터를 통해 결정됩니다.
+-   **-downloadall** 이 옵션은 사이트 버전에 관계없이 업데이트와 핫픽스를 포함한 모든 항목을 다운로드합니다.
+-   **-downloadhotfix** 이 옵션은 사이트 버전에 관계없이 모든 핫픽스를 다운로드합니다.
+-   **-downloadsiteversion** 이 옵션은 사이트의 버전보다 최신 버전인 업데이트와 핫픽스를 다운로드합니다.
+
+*-downloadsiteversion*을 사용하는 명령줄 예제:
+- **serviceconnectiontool.exe -connect  *-downloadsiteversion* -usagedatasrc D:\USB -updatepackdest D:\USB\UpdatePacks**
+
 
 
 

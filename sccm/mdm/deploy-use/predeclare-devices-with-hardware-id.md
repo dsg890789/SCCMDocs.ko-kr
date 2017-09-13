@@ -2,7 +2,7 @@
 title: "IMEI 또는 iOS 일련 번호로 장치 미리 선언 | Microsoft 문서"
 description: "IMEI 또는 iOS 일련 번호로 회사 소유 장치 미리 선언"
 ms.custom: na
-ms.date: 08/15/2017
+ms.date: 09/01/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -14,11 +14,11 @@ caps.latest.revision: "3"
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.openlocfilehash: 7d139a2c74c0f29604f2f3d9b8e2739364633f17
-ms.sourcegitcommit: db7b7ec347638efd05cdba474e8a8f8535516116
+ms.openlocfilehash: 424f04b2b3ad4c7ef91f884bbf5bae3580ea6b85
+ms.sourcegitcommit: cd1f9c58e55f1c9a19acd743ec6a8824c39fd3a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/05/2017
 ---
 # <a name="predeclare-devices-with-imei-or-ios-serial-numbers"></a>IMEI 또는 iOS 일련 번호로 장치 미리 선언
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 08/16/2017
 회사 소유 iOS 장치의 일련 번호를 업로드하면 일련 번호는 회사 등록 프로필과 페어링됩니다. 그 다음에 장치를 회사 소유로 표시하려면 Apple의 DEP(장비 등록 프로그램) 또는 Apple Configurator를 사용하여 장치를 등록해야 합니다.
 
 >[!NOTE]
->Samsung Knox 표준 장치를 제외한 Android 장치에는 IMEI 번호를 사용하여 SIM 카드를 회사 소유 장치로 미리 선언하고 등록해야 합니다.
+>Samsung Knox 표준 장치를 제외한 Android 장치의 경우 IMEI 번호를 통해 회사 소유 장치로 미리 선언하고 등록해야 하기 위해 할당된 전화번호가 있어야 합니다.
 
 ## <a name="how-to-predeclare-corporate-owned-devices"></a>회사 소유 장치를 미리 선언하는 방법
 

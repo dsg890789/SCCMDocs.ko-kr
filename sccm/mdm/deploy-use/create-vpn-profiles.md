@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.openlocfilehash: e4a53caab7d76b604a3fee7dcfc4dc48f22b0fb0
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 23ff28189c8010c21ed8b23c35598746a4f09fe7
+ms.sourcegitcommit: 13599667ea77c16db1aebe64f8a6748c268f0b45
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/11/2017
 ---
 # <a name="vpn-profiles-on-mobile-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager의 모바일 장치에 대한 VPN 프로필
 
@@ -37,16 +37,16 @@ System Center Configuration Manager의 VPN 프로필을 사용하여 조직의 �
 
  |연결 유형|iOS 및 macOS X|Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop 및 Mobile|  
  |---------------------|----------------------|-------------|-----------------|----------------|--------------------|-----------------------|-----------------------------------|  
- |Cisco AnyConnect|예|예|아니요|아니요|아니요|아니요|예(OMA-URI)|
+ |Cisco AnyConnect|예|예|아니요|아니요|아니요|아니요|예|
  |Cisco(IPsec)|iOS에만 해당|아니요|아니요|아니요|아니요|아니요|아니요|  
  |Pulse Secure|예|예|예|아니요|예|예|예|  
  |F5 Edge Client|예|예|예|아니요|예|예|예|  
  |Dell SonicWALL Mobile Connect|예|예|예|아니요|예|예|예|  
  |검사점 모바일 VPN|예|예|예|아니요|예|예|예|  
  |Microsoft SSL(SSTP)|아니요|아니요|예|예|예|아니요|아니요|  
- |Microsoft 자동|아니요|아니요|예|예|예|아니요|예(OMA-URI)|  
- |IKEv2|예(사용자 지정 정책)|아니요|예|예|예|예|예(OMA-URI)|  
- |PPTP|예|아니요|예|예|예|아니요|예(OMA-URI)|  
+ |Microsoft 자동|아니요|아니요|예|예|예|아니요|예|  
+ |IKEv2|예(사용자 지정 정책, iOS 9 이상)|아니요|예|예|예|예|예|  
+ |PPTP|예|아니요|예|예|예|아니요|예|  
  |L2TP|예|아니요|예|예|예|아니요|예(OMA-URI)|  
 
 ## <a name="create-vpn-profiles"></a>VPN 프로필 만들기

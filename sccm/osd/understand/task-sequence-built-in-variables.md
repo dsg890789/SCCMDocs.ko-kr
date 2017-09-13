@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 32b24b3637dfafe401ea1d9f51b3769aa749f544
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 09e1105521f5e72830c2816d04e16690064f4f64
+ms.sourcegitcommit: 40f2a4e3cc546e6bfd10f195a8e87af2b0780928
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="task-sequence-built-in-variables-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업 순서 기본 제공 변수
 
@@ -97,6 +97,6 @@ ms.lasthandoff: 08/07/2017
 |SMSTSRebootMessage|다시 시작이 요청된 경우 종료 대화 상자에 표시할 메시지를 지정합니다. 이 변수를 설정하지 않으면 기본 메시지가 표시됩니다.<br /><br /> 예:<br /><br /> **작업 순서 관리자가 이 컴퓨터를 다시 시작하는 중입니다**.|  
 |SMSTSRebootRequested|현재 작업 순서 단계를 완료한 후 다시 시작이 요청됨을 나타냅니다. 다시 시작이 필요한 경우 이 변수를 **true**로 설정하기만 하면 이 작업 순서 단계 후 작업 시퀀스 관리자가 다시 시작됩니다. 작업 순서 단계를 완료하기 위해 다시 시작해야 하는 경우 작업 순서 단계에서 이 작업 순서 변수를 설정해야 합니다. 컴퓨터가 다시 시작되면 다음 작업 순서 단계에서 작업 순서가 계속 실행됩니다.|  
 |SMSTSRetryRequested|현재 작업 순서 단계를 완료한 후 다시 시도를 요청합니다. 이 작업 순서 변수를 설정한 경우에는 **SMSTSRebootRequested** 도 **true**로 설정해야 합니다. 컴퓨터가 다시 시작되면 작업 순서 관리자가 동일한 작업 순서 단계를 다시 실행합니다.|  
-|SMSTSSoftwareUpdateScanTimeout| [소프트웨어 업데이트 설치](task-sequence-steps.md#BKMK_InstallSoftwareUpdates) 작업 순서 단계를 진행하는 동안 소프트웨어 업데이트 검사 시간 제한을 조정할 수 있습니다. 예를 들어 소프트웨어 업데이트 설치가 많은 경우 기본값을 늘릴 수 있습니다. 기본값은 30분입니다. |
+|SMSTSSoftwareUpdateScanTimeout| [소프트웨어 업데이트 설치](task-sequence-steps.md#BKMK_InstallSoftwareUpdates) 작업 순서 단계를 진행하는 동안 소프트웨어 업데이트 검사 시간 제한을 조정할 수 있습니다. 예를 들어 소프트웨어 업데이트 설치가 많은 경우 기본값을 늘릴 수 있습니다. 기본값은 1,800초(30분)입니다. 변수 값은 초 단위로 설정됩니다. |
 |SMSTSUDAUsers|대상 컴퓨터의 기본 사용자를 지정합니다. 다음 형식을 사용하여 사용자를 지정합니다. 여러 사용자를 구분하려면 쉼표(,)를 사용합니다.<br /><br /> 예:<br /><br /> **domain\user1, domain\user2, domain\user3**<br /><br /> 사용자를 대상 컴퓨터와 연결하는 방법에 대한 자세한 내용은 [사용자를 대상 컴퓨터에 연결](../get-started/associate-users-with-a-destination-computer.md)을 참조하세요.|  
 |SMSTSWaitForSecondReboot|Configuration Manager 버전 1602부터, 소프트웨어 업데이트 설치에서 두 번의 다시 시작을 요구하는 경우 이 선택적 작업 순서 변수를 사용하여 클라이언트 동작을 제어할 수 있습니다. 소프트웨어 업데이트가 설치되어 다시 시작되는 동작으로 인해 작업 순서에서 오류가 발생하는 것을 방지하려면 이 변수를 [소프트웨어 업데이트 설치](task-sequence-steps.md#BKMK_InstallSoftwareUpdates) 단계 전에 설정해야 합니다.<br /><br /> SMSTSWaitForSecondReboot 값을 초 단위로 설정하여 두 번째로 다시 시작해야 할 때 컴퓨터 다시 시작에서 충분한 시간을 허용하는 경우 소프트웨어 업데이트 설치 단계 중 작업 순서가 일시 중지되는 기간을 지정할 수 있습니다. <br />예를 들어 SMSTSWaitForSecondReboot를 600으로 설정하면 다시 시작된 후 추가 작업 순서 단계가 실행되기 전에 작업 순서가 10분간 일시 중지됩니다. 이 변수는 단일 소프트웨어 업데이트 설치 작업 순서 단계에서 수백 개의 소프트웨어 업데이트가 설치되는 경우에 유용합니다.|  

@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.openlocfilehash: 7434c98f2217cf63fdcd250b91e772de72daaea9
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 0af556b5b63b465a99650c8889eae3adbf7307f6
+ms.sourcegitcommit: 13599667ea77c16db1aebe64f8a6748c268f0b45
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/11/2017
 ---
 # <a name="exchange-activesync-email-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager의 Exchange ActiveSync 메일 프로필
 
@@ -31,9 +31,8 @@ Microsoft Intune 및 Exchange ActiveSync를 사용하여 장치에 메일 프로
 
 - Windows 10
 - Windows Phone 8.1
-- Windows Phone 8.0
-- iOS 5, iOS 6, iOS 7 및 iOS 8을 실행하는 iPhone  
-- iOS 5, iOS 6, iOS 7 및 iOS 8을 실행하는 iPad  
+- iOS 8을 실행하는 iPhone  
+- iOS 8을 실행하는 iPad  
 - Samsung KNOX Standard 4 이상
 - Android for Work
 

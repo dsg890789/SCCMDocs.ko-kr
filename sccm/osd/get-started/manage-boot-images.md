@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: cc678c1133b1944f55bcad309cf9ede9f0660b57
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 5668ba3ead3b7415508f9ecf02f2e119c3cd9cc6
+ms.sourcegitcommit: 2a1328da3facb20b0c78f3b12adbb5fdbe0dcc11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="manage-boot-images-with-system-center-configuration-manager"></a>System Center Configuration Manager로 부팅 이미지 관리
 
@@ -49,11 +49,10 @@ Configuration Manager는 x86 플랫폼을 지원하는 부팅 이미지와 x64 �
 설치 프로세스를 사용하여 Configuration Manager 2012를 Configuration Manager CB로 업그레이드하면 Configuration Manager가 기본 부팅 이미지를 다시 생성합니다. 여기에는 업데이트된 Windows ADK의 새 Window PE 버전이 포함되며, 새 Configuration Manager 클라이언트 버전 및 모든 사용자 지정은 변경되지 않고 그대로 유지됩니다. 사용자 지정 부팅 이미지는 수정되지 않습니다.
 
 ### <a name="update-distribution-points-with-the-boot-image"></a>부팅 이미지를 사용하여 배포 지점 업데이트
-Configuration Manager 콘솔의 **부팅 이미지** 노드에서 **배포 지점 업데이트** 작업을 사용하는 경우 Configuration Manager는 클라이언트 구성 요소, 드라이버, 사용자 지정 등이 포함된 기본 부팅 이미지를 업데이트합니다.    
+Configuration Manager 콘솔의 **부팅 이미지** 노드에서 **배포 지점 업데이트** 작업을 사용하는 경우 Configuration Manager는 클라이언트 구성 요소, 드라이버, 사용자 지정 등이 포함된 대상 부팅 이미지를 업데이트합니다.    
 
 Configuration Manager 버전 1706부터 부팅 이미지의 Windows ADK 설치 디렉터리에서 최신 Windows PE 버전을 다시 로드하도록 선택할 수 있습니다. 업데이트 배포 지점 마법사의 **일반** 페이지에서는 사이트 서버에 설치된 Windows ADK 버전, 부팅 이미지에서 Windows PE가 사용된 Windows ADK 버전 및 Configuration Manager 클라이언트 버전에 대한 정보를 제공합니다. 이 정보를 통해 부팅 이미지를 다시 로드할지를 결정할 수 있습니다. 또한 **부팅 이미지** 노드에서 부팅 이미지를 볼 때 새로운 열(**클라이언트 버전**)이 추가되므로 각 부팅 이미지에서 사용하는 Configuration Manager의 버전을 확인할 수 있습니다.    
 
-사용자 지정 부팅 이미지는 수정되지 않습니다.
 
 ##  <a name="BKMK_BootImageCustom"></a> 부팅 이미지 사용자 지정  
  지원되는 버전의 Windows ADK에 있는 Windows PE 버전을 기반으로 하는 경우 Configuration Manager 콘솔에서 부팅 이미지를 사용자 지정하거나 [부팅 이미지를 수정](#BKMK_ModifyBootImages)할 수 있습니다. 사이트를 새 버전으로 업그레이드하고 Windows ADK의 새 버전을 설치하는 경우 사용자 지정 부팅 이미지(기본 부팅 이미지의 위치에 없음)는 Windows ADK의 새 버전으로 업데이트되지 않습니다. 이 경우, Configuration Manager 콘솔에서 더 이상 부팅 이미지를 사용자 지정할 수 없습니다. 그러나 업그레이드하기 전과 마찬가지로 계속 작동합니다.  
