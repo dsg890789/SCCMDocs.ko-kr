@@ -55,8 +55,12 @@
 ### [비즈니스용 Windows 스토어 앱](deploy-use/windows-store-for-business.md)
 
 ## [Intune 구독 관리](deploy-use/manage-intune-subscriptions.md)
-
 ## [MDM 기관 변경](deploy-use/change-mdm-authority.md)
+## [하이브리드 MDM에서 Intune 독립 실행형으로 마이그레이션 시작](deploy-use/migrate-hybridmdm-to-intunesa.md) 
+### [Configuration Manager 데이터를 Microsoft Intune로 가져오기](deploy-use/migrate-import-data.md)
+### [사용자 마이그레이션을 위한 Intune 준비](deploy-use/migrate-prepare-intune.md)
+### [특정 사용자에 대한 MDM 기관 변경(혼합 MDM 기관)](deploy-use/migrate-mixed-authority.md)
+### [MDM 기관 변경](deploy-use/migrate-change-mdm-authority.md)
 
 ## 리소스 액세스 관리
 ### [Wi-Fi 프로필 만들기](deploy-use/create-wifi-profiles.md)
