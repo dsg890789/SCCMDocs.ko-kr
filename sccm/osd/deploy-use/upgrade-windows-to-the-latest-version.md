@@ -14,11 +14,11 @@ caps.latest.revision: "13"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 026d61113a918e43ac4395ef092b1931f33f16d3
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 412c2c644cc7f17f307c02b84471f3ee494045ec
+ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="upgrade-windows-to-the-latest-version-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows를 최신 버전으로 업그레이드
 
@@ -74,7 +74,7 @@ ms.lasthandoff: 08/07/2017
     > 독립 실행형 미디어를 사용할 경우 부팅 이미지를 작업 순서 미디어 마법사에서 사용할 수 있도록 작업 순서에 포함해야 합니다.
 
     > [!NOTE]  
-    > 일반적으로 [운영 체제를 업그레이드하는 작업 순서 만들기](create-a-task-sequence-to-upgrade-an-operating-system.md)의 단계를 사용하여 운영 체제를 Windows 10으로 업그레이드하는 작업 순서를 만듭니다. 작업 순서에는 운영 체제 업그레이드 단계와 종단 간 업그레이드 프로세스를 처리하기 위한 추가적인 권장 단계 및 그룹이 포함됩니다. 그렇지만 사용자 지정 작업 순서를 만들고 [운영 체제 업그레이드](../understand/task-sequence-steps.md#BKMK_UpgradeOS) 작업 순서 단계를 추가하여 운영 체제를 업그레이드할 수 있습니다. 이것이 운영 체제를 Windows 10으로 업그레이드하는 데 필요한 유일한 단계입니다. 이 방법을 선택하는 경우 운영 체제 업그레이드 단계 다음에 [컴퓨터 다시 시작](../understand/task-sequence-steps.md#a-namebkmkrestartcomputera-restart-computer) 단계를 추가하여 업그레이드를 완료합니다. **현재 설치된 기본 운영 체제** 설정을 사용하여 컴퓨터를 Windows PE가 아닌 설치된 운영 체제로 다시 시작해야 합니다.  
+    > 일반적으로 [운영 체제를 업그레이드하는 작업 순서 만들기](create-a-task-sequence-to-upgrade-an-operating-system.md)의 단계를 사용하여 운영 체제를 Windows 10으로 업그레이드하는 작업 순서를 만듭니다. 작업 순서에는 운영 체제 업그레이드 단계와 종단 간 업그레이드 프로세스를 처리하기 위한 추가적인 권장 단계 및 그룹이 포함됩니다. 그렇지만 사용자 지정 작업 순서를 만들고 [운영 체제 업그레이드](../understand/task-sequence-steps.md#BKMK_UpgradeOS) 작업 순서 단계를 추가하여 운영 체제를 업그레이드할 수 있습니다. 이것이 운영 체제를 Windows 10으로 업그레이드하는 데 필요한 유일한 단계입니다. 이 방법을 선택하는 경우 운영 체제 업그레이드 단계 다음에 [컴퓨터 다시 시작](../understand/task-sequence-steps.md#BKMK_RestartComputer) 단계를 추가하여 업그레이드를 완료합니다. **현재 설치된 기본 운영 체제** 설정을 사용하여 컴퓨터를 Windows PE가 아닌 설치된 운영 체제로 다시 시작해야 합니다.  
 
 ##  <a name="BKMK_Deploy"></a> 배포  
 

@@ -12,14 +12,14 @@ ms.topic: article
 ms.assetid: 5b30b0d5-722d-4d4b-9ed7-5a43de315461
 caps.latest.revision: "7"
 caps.handback.revision: "0"
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: 4e8e677851ad9ae7d027ab685e842a8ff5e35573
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 141b4e7df4fb3fa4aed3a5a90c6197bf7636a3a0
+ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="link-users-and-devices-with-user-device-affinity-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사용자 장치 선호도를 사용하여 사용자와 장치 연결
 

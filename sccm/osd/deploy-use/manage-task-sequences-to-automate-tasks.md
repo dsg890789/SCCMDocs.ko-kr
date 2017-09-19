@@ -14,11 +14,11 @@ caps.latest.revision: "10"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 2f3d66362c49d28a52d7f9c535eb0b3b4cc4eaf7
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: c9d94ffb61ed7a7fa40a01eedc763a16a8df30cb
+ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="manage-task-sequences-to-automate-tasks-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업을 자동화하는 작업 순서 관리
 
@@ -196,7 +196,7 @@ Configuration Manager 버전 1702부터 강력한 작업 순서를 설정하고 
 
 8.  마법사를 완료합니다.  
 
- 작업 순서에서 참조되는 콘텐츠를 사전 준비할 수 있습니다. Configuration Manager에서는 선택한 콘텐츠의 파일, 관련 종속성 및 관련 메타데이터가 포함된 사전 준비된 압축 콘텐츠 파일을 만듭니다. 그런 다음 사이트 서버, 보조 사이트 또는 배포 지점에서 콘텐츠를 수동으로 가져올 수 있습니다. 콘텐츠 파일을 사전 준비하는 방법에 대한 자세한 내용은 [콘텐츠 사전 준비](../../core/servers/deploy/configure/deploy-and-manage-content.md#a-namebkmkprestagea-use-prestaged-content)를 참조하세요.  
+ 작업 순서에서 참조되는 콘텐츠를 사전 준비할 수 있습니다. Configuration Manager에서는 선택한 콘텐츠의 파일, 관련 종속성 및 관련 메타데이터가 포함된 사전 준비된 압축 콘텐츠 파일을 만듭니다. 그런 다음 사이트 서버, 보조 사이트 또는 배포 지점에서 콘텐츠를 수동으로 가져올 수 있습니다. 콘텐츠 파일을 사전 준비하는 방법에 대한 자세한 내용은 [콘텐츠 사전 준비](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_prestage)를 참조하세요.  
 
 ##  <a name="BKMK_DeployTS"></a> 작업 순서 배포  
  컬렉션의 컴퓨터에 작업 순서를 배포하려면 다음 절차를 수행하세요.  
@@ -464,7 +464,7 @@ Configuration Manager 버전 1702부터 강력한 작업 순서를 설정하고 
 |**복사**|선택한 작업 순서의 복사본을 만듭니다. 기존 작업 순서에 기반하여 새 작업 순서를 만들려는 경우에 이 작업이 유용합니다.<br /><br /> 폴더에서 작업 순서의 복사본을 만들면 복사본은 작업 순서 노드를 새로 고칠 때까지 해당 폴더에만 나열됩니다.  새로 고친 후 복사본이 루트 폴더에 나타납니다.|  
 |**사용 안 함**|컴퓨터에서 실행하지 않을 작업 순서를 사용하지 않도록 설정합니다. 사용하지 않는 작업 순서는 컴퓨터에 배포될 수 있지만, 사용하도록 설정할 때까지 컴퓨터에서 실행되지 않습니다.|  
 |**사용**|컴퓨터에서 실행할 수 있도록 작업 순서를 사용하도록 설정합니다. 사용하도록 설정된 이후 배포된 작업 순서를 다시 배포할 필요는 없습니다.|  
-|**사전 준비된 콘텐츠 파일 만들기**|사전 준비된 콘텐츠 파일 만들기 마법사를 시작하여 작업 순서 콘텐츠를 사전 준비합니다. 사전 준비된 콘텐츠 파일을 만드는 방법에 대한 자세한 내용은 [콘텐츠 사전 준비](../../core/servers/deploy/configure/deploy-and-manage-content.md#a-namebkmkprestagea-use-prestaged-content)를 참조하세요.|  
+|**사전 준비된 콘텐츠 파일 만들기**|사전 준비된 콘텐츠 파일 만들기 마법사를 시작하여 작업 순서 콘텐츠를 사전 준비합니다. 사전 준비된 콘텐츠 파일을 만드는 방법에 대한 자세한 내용은 [콘텐츠 사전 준비](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_prestage)를 참조하세요.|  
 |**이동**|선택한 작업 순서를 다른 폴더로 이동합니다.|  
 
 ## <a name="next-steps"></a>다음 단계

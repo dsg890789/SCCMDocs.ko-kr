@@ -12,14 +12,14 @@ ms.topic: article
 ms.assetid: 1c409244-6778-4970-a99c-d2508c9cf62b
 caps.latest.revision: "5"
 caps.handback.revision: "0"
-author: robstackmsft
-ms.author: robstack
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: e7dc554ffcd23978eed44819b525f6cc239b2135
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: f38e03ffac6d3472bbef9c3b78e4c0e1f7cde598
+ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="security-and-privacy-for-compliance-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 준수 설정에 대한 보안 및 개인 정보
 

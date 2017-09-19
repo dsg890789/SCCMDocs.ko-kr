@@ -14,11 +14,11 @@ caps.latest.revision: "6"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: b4b04907f2cd48d81e864e46ca47c14a0b98a9f7
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: a50354070c03ad8acbd21432a192f949c0a196fa
+ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="create-a-task-sequence-for-non-operating-system-deployments-with-system-center-configuration-manager"></a>System Center Configuration Manager와 비운영 체제 배포에 대한 작업 순서 만들기
 
@@ -42,7 +42,7 @@ System Center Configuration Manager의 작업 순서는 사용자 환경 내에�
 
 -   [소프트웨어 업데이트 설치](../understand/task-sequence-steps.md#BKMK_InstallSoftwareUpdates)  
 
--   [컴퓨터 다시 시작](../understand/task-sequence-steps.md#a-namebkmkrestartcomputera-restart-computer)  
+-   [컴퓨터 다시 시작](../understand/task-sequence-steps.md#BKMK_RestartComputer)   
 
 -   [명령줄 실행](../understand/task-sequence-steps.md#BKMK_RunCommandLine)  
 
@@ -52,5 +52,5 @@ System Center Configuration Manager의 작업 순서는 사용자 환경 내에�
 
 -   [작업 순서 변수 설정](../understand/task-sequence-steps.md#BKMK_SetTaskSequenceVariable)  
 
-## <a name="next-steps"></a>다음 단계
-[작업 순서 배포](manage-task-sequences-to-automate-tasks.md#a-namebkmkdeploytsa-deploy-a-task-sequence)
+## <a name="next-steps"></a>다음 단계 
+[작업 순서 배포](manage-task-sequences-to-automate-tasks.md#BKMK_DeployTS)

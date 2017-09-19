@@ -11,14 +11,14 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 2be84a1d-ebb9-47ae-8982-c66d5b92a52a
 caps.latest.revision: "13"
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: 46cc3fcfd9516cf1c124e24b50d0aac0cb0025dc
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: c8034497299a9b5646674031a40fdee49d55ff7c
+ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="plan-for-and-configure-application-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 관리 계획 및 구성
 

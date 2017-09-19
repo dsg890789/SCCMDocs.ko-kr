@@ -12,14 +12,14 @@ ms.topic: article
 ms.assetid: a44006eb-8650-49f6-94e1-18fa0ca959ee
 caps.latest.revision: "14"
 caps.handback.revision: "0"
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 7bbcece8a7a745b3b6cc9bbd8aa283963e2b738d
-ms.sourcegitcommit: 49add91eebfeaba6d1d203d3cf9927b9cacdfc8e
+ms.openlocfilehash: d783cc2f12400084ad1cd62a338a31c9747c05fb
+ms.sourcegitcommit: f6a428a8db7145affa388f59e0ad880bdfcf17b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="install-and-assign-configuration-manager-windows-10-clients-using-azure-ad-for-authentication"></a>인증을 위해 Azure AD를 사용하여 Configuration Manager Windows 10 클라이언트 설치 및 할당
 

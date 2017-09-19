@@ -12,14 +12,14 @@ ms.topic: article
 ms.assetid: 7b66f3c4-e3bb-4f6a-abd5-55be649ff90d
 caps.latest.revision: "17"
 caps.handback.revision: "0"
-author: robstackmsft
-ms.author: robstack
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: c9961c2e9866199571a1b39a7b185cb6bb96f998
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: e58d84542d5c475fef6c2c04676c50a150681099
+ms.sourcegitcommit: f6a428a8db7145affa388f59e0ad880bdfcf17b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="how-to-create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트 없이 관리되는 Android 및 Samsung KNOX 장치에 대한 구성 항목을 만드는 방법
 

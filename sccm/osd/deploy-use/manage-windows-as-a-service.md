@@ -14,11 +14,11 @@ caps.latest.revision: "26"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 2c2c0f81736c1b00ea487ae1261803a8105bb5e4
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: fe02981433482ebf6880feec3e1822e6e8f4550f
+ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="manage-windows-as-a-service-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows as a Service 관리
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 08/07/2017
 
 -   컴퓨터를 Windows 10 1주년 업데이트 및 이후 버전으로 업그레이드하려면 [핫픽스 3159706](https://support.microsoft.com/kb/3159706)을 포함하는 WSUS 4.0이 소프트웨어 업데이트 지점 및 사이트 서버에 설치되어 있어야 합니다. 이 핫픽스를 설치하기 위해 수행해야 하는 수동 단계는 지원 문서에 설명되어 있습니다. 자세한 내용은 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/05/update-your-configmgr-1606-sup-servers-to-deploy-the-windows-10-anniversary-update/)(Enterprise Mobility 및 보안 블로그)를 참조하세요.
 
--   하트비트 검색을 사용합니다. Windows 10 서비스 대시보드에 표시되는 데이터는 검색을 사용하여 찾을 수 있습니다. 자세한 내용은 [Configure Heartbeat Discovery](../../core/servers/deploy/configure/configure-discovery-methods.md#a-namebkmkconfighbdisca-configure-heartbeat-discovery)을 참조하십시오.  
+-   하트비트 검색을 사용합니다. Windows 10 서비스 대시보드에 표시되는 데이터는 검색을 사용하여 찾을 수 있습니다. 자세한 내용은 [Configure Heartbeat Discovery](../../core/servers/deploy/configure/configure-discovery-methods.md#BKMK_ConfigHBDisc)을 참조하십시오.  
 
      다음 Windows 10 분기 및 빌드 정보는 검색된 후 다음과 같은 특성에 저장됩니다.  
 

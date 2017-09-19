@@ -12,14 +12,14 @@ ms.topic: article
 ms.assetid: 1eb2fcaf-acac-4388-9b31-6cccafacaabe
 caps.latest.revision: "9"
 caps.handback.revision: "0"
-author: robstackmsft
-ms.author: robstack
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: e040c6b3a951d1bdf5a46dd82f1bd92b45c2e71d
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 9fe28782744a419acad9c1acec49ff8db6c0eaa6
+ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="how-to-create-custom-configuration-items-for-windows-desktop-and-server-computers-managed-with-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트에서 관리되는 Windows 데스크톱 및 서버 컴퓨터에 대한 사용자 지정 구성 항목을 만드는 방법
 

@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 830f715b688cc9929a179da94eba9c81de8db11a
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: f44fa4ef0946d3500d15db536333adab571a5f64
+ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="planning-considerations-for-automating-tasks-in-system-center-configuration-manager"></a>System Center Configuration Manager의 작업 자동화에 대한 계획 고려 사항
 
@@ -282,7 +282,7 @@ System Center Configuration Manager 환경에서 작업을 자동화하는 작�
 ##  <a name="BKMK_TSNetworkAccessAccount"></a> 작업 순서와 네트워크 액세스 계정  
  로컬 시스템 계정에서만 작업 순서를 실행할 수 있지만 다음과 같은 경우에는 네트워크 액세스 계정을 구성해야 합니다.  
 
--   작업을 완료하기 위해 작업 순서가 배포 지점의 Configuration Manager 패키지에 액세스하려는 경우 네트워크 액세스 계정을 올바로 구성하지 않으면 작업 순서가 실패합니다. 네트워크 액세스 계정에 대한 자세한 내용은 [네트워크 액세스 계정](../../core/plan-design/hierarchy/manage-accounts-to-access-content.md#a-namebkmknaaa-network-access-account)을 참조하세요.  
+-   작업을 완료하기 위해 작업 순서가 배포 지점의 Configuration Manager 패키지에 액세스하려는 경우 네트워크 액세스 계정을 올바로 구성하지 않으면 작업 순서가 실패합니다. 네트워크 액세스 계정에 대한 자세한 내용은 [네트워크 액세스 계정](../../core/plan-design/hierarchy/manage-accounts-to-access-content.md#bkmk_NAA)을 참조하세요.  
 
     > [!NOTE]  
     >  네트워크 액세스 계정은 프로그램 실행, 응용 프로그램 설치, 업데이트 설치 또는 작업 순서 실행 등을 위한 보안 컨텍스트로 사용되지 않지만, 네트워크에서 연결된 리소스에 액세스하는 데 사용됩니다.  

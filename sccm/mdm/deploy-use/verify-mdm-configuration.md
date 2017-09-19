@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.openlocfilehash: ad4b923bd6d3e8acfe799a4ebe2adec737939d75
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: f50331f107ead5f83c3f76658718ff3ad6a2f4d7
+ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="verify-mdm-configuration-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 MDM 구성 확인
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 08/07/2017
 
 -   Sitecomp.log에서 서비스 연결 지점이 제대로 만들어졌는지 확인합니다.
 
-이 특정 로그 파일 및 이를 확인하는 방법에 대한 자세한 내용은 [System Center Configuration Manager 로그 파일](../../core/plan-design/hierarchy/log-files.md#a-namebkmkfunctionlogsa-log-files-for-configuration-manager-functionality)을 참조하세요.
+이 특정 로그 파일 및 이를 확인하는 방법에 대한 자세한 내용은 [System Center Configuration Manager 로그 파일](../../core/plan-design/hierarchy/log-files.md##BKMK_FunctionLogs)을 참조하세요. 
 
 > [!div class="button"]
 [< 이전 단계](set-up-additional-management.md)

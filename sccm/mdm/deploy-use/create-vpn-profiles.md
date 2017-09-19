@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.openlocfilehash: 23ff28189c8010c21ed8b23c35598746a4f09fe7
-ms.sourcegitcommit: 13599667ea77c16db1aebe64f8a6748c268f0b45
+ms.openlocfilehash: 5b5385cebe7952e519d59a239983733dd93e661e
+ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="vpn-profiles-on-mobile-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager의 모바일 장치에 대한 VPN 프로필
 
@@ -52,7 +52,7 @@ System Center Configuration Manager의 VPN 프로필을 사용하여 조직의 �
 ## <a name="create-vpn-profiles"></a>VPN 프로필 만들기
 [System Center Configuration Manager에서 VPN 프로필을 만드는 방법](../../protect/deploy-use/create-vpn-profiles.md)에서는 VPN 프로필을 만드는 방법에 대한 일반 정보를 제공합니다.
 
-###   <a name="windows-10-vpn-features-available-when-using-configuration-manager-with-intune"></a>Intune에서 Configuration Manager를 사용할 때 사용할 수 있는 Windows 10 VPN 기능  
+## <a name="windows-10-vpn-features-available-when-using-configuration-manager-with-intune"></a>Intune에서 Configuration Manager를 사용할 때 사용할 수 있는 Windows 10 VPN 기능  
 
 
 > [!NOTE]  
@@ -157,7 +157,7 @@ System Center Configuration Manager의 VPN 프로필을 사용하여 조직의 �
 
 **배포:** VPN 프로필 배포 방법에 대한 자세한 내용은 [Wi-Fi, VPN, 메일 및 인증서 프로필 배포](../../protect/deploy-use/deploy-wifi-vpn-email-cert-profiles.md)를 참조하세요.
 
-### <a name="next-steps"></a>다음 단계  
+## <a name="next-steps"></a>다음 단계  
  다음 항목에서는 Configuration Manager의 VPN 프로필을 계획, 설정, 운영 및 유지 관리하는 방법을 설명합니다.  
 
 -   [System Center Configuration Manager에서 VPN 프로필에 대한 필수 조건](../../protect/plan-design/prerequisites-for-wifi-vpn-profiles.md)  

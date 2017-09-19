@@ -12,14 +12,14 @@ ms.topic: article
 ms.assetid: 9fcbcc81-cd6f-496e-b075-ef1afa2b8ccc
 caps.latest.revision: "6"
 caps.handback.revision: "0"
-author: robstackmsft
-ms.author: robstack
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: 85b984d739dc9f9d2046186b381eff54ba687c66
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 1b3b42fe0a39e5adfddebf73f4683e5a6c71cb1c
+ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="create-user-data-and-profiles-configuration-items-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사용자 데이터 및 프로필 구성 항목 만들기
 
