@@ -11,7 +11,8 @@ ms.topic: article
 ms.assetid: ab6784fd-8c57-4be9-858f-50fe39f2ff5f
 caps.latest.revision: "17"
 caps.handback.revision: "0"
-author: robstackmsft
+author: andredm7
+ms.author: andredm
 translation.priority.ht:
 - cs-cz
 - de-de
@@ -31,11 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 87b34f0a3cce87f6e2ba813957a69b743648c1ca
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 01dc8fc4bec5df1db157bb63324dd5d8e7fc60db
+ms.sourcegitcommit: f6a428a8db7145affa388f59e0ad880bdfcf17b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="how-to-create-configuration-items-for-android-for-work-devices-managed-with-intune"></a>Intune으로 관리되는 Android for Work 장치에 대한 구성 항목을 만드는 방법
 

@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 4b3668094d576b1b8710f08b384aa2f7c5eb0cca
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 3a8e2759812dae2a328cd09efdc13f8534d14379
+ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="create-a-task-sequence-to-capture-and-restore-user-state-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사용자 상태를 캡처 및 복원하는 작업 순서 만들기
 
@@ -56,7 +56,7 @@ System Center Configuration Manager 작업 순서를 사용하여 현재 운영 
 
     -   **다시 시도 지연 시간(초)** 상자에 작업 순서가 데이터를 캡처하기 위해 다시 시도하기까지 기다리는 시간(초)을 지정합니다.  
 
-    -   Configuration Manager [네트워크 액세스 계정](../../core/plan-design/hierarchy/manage-accounts-to-access-content.md#a-namebkmknaaa-network-access-account)을 사용하여 상태 데이터에 연결할지 여부를 지정하려면 **컴퓨터 계정에서 상태 저장소에 연결하지 못하는 경우 네트워크 액세스 계정 사용** 확인란을 선택합니다.  
+    -   Configuration Manager [네트워크 액세스 계정](../../core/plan-design/hierarchy/manage-accounts-to-access-content.md#bkmk_NAA)을 사용하여 상태 데이터에 연결할지 여부를 지정하려면 **컴퓨터 계정에서 상태 저장소에 연결하지 못하는 경우 네트워크 액세스 계정 사용** 확인란을 선택합니다.  
 
      **옵션** 탭에서 다음 옵션을 지정합니다.  
 
@@ -141,7 +141,7 @@ System Center Configuration Manager 작업 순서를 사용하여 현재 운영 
 
     -   파일을 복원할 수 없는 경우라도 **사용자 상태 복원** 단계를 계속 진행하려면 **일부 파일을 복원할 수 없는 경우 계속** 을 선택합니다.  
 
-         로컬 링크를 사용하여 사용자 상태를 저장한 경우 복원이 성공하지 못하면 관리자가 데이터를 저장하기 위해 만든 하드 링크를 직접 삭제하거나 작업 순서가 자동으로 USMTUtils 도구를 실행할 수 있습니다. USMTUtils를 사용하여 하드 링크를 삭제하는 경우 USMTUtils를 실행한 후 [컴퓨터 다시 시작](../understand/task-sequence-steps.md#a-namebkmkrestartcomputera-restart-computer) 단계를 추가해야 합니다.  
+         로컬 링크를 사용하여 사용자 상태를 저장한 경우 복원이 성공하지 못하면 관리자가 데이터를 저장하기 위해 만든 하드 링크를 직접 삭제하거나 작업 순서가 자동으로 USMTUtils 도구를 실행할 수 있습니다. USMTUtils를 사용하여 하드 링크를 삭제하는 경우 USMTUtils를 실행한 후 [컴퓨터 다시 시작](../understand/task-sequence-steps.md#BKMK_RestartComputer) 단계를 추가해야 합니다.  
 
     -   오류가 발생하는 경우 로그 파일에 기록할 정보 수준을 지정하려면 **자세한 정보 로깅 사용** 을 선택합니다.  
 

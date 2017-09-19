@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: b88ab3799027c78a8c605e934b247097b31e1d21
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 57292b1c6f6e8b6be91eace06dbf12d788522e0b
+ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="use-pxe-to-deploy-windows-over-the-network-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 PXE를 사용하여 네트워크를 통해 Windows 배포
 
@@ -46,7 +46,7 @@ PXE를 사용하여 운영 체제를 배포하려면 하나 이상의 PXE 사용
 
 -   부팅 이미지에서 PXE를 사용하도록 설정하려면 부팅 이미지 속성의 **데이터 원본** 탭에서 **PXE 사용 배포 지점에서 이 부팅 이미지 배포**를 선택합니다.
 
--   부팅 이미지에 대한 속성을 변경하면 배포 지점에 부팅 이미지가 다시 배포됩니다. 자세한 내용은 [콘텐츠 배포](../../core/servers/deploy/configure/deploy-and-manage-content.md#a-namebkmkdistributea-distribute-content)를 참조하세요.
+-   부팅 이미지에 대한 속성을 변경하면 배포 지점에 부팅 이미지가 다시 배포됩니다. 자세한 내용은 [콘텐츠 배포](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_distribute)를 참조하세요.
 
 ##  <a name="BKMK_PXEExclusionList"></a> PXE 배포의 제외 목록 만들기
 PXE를 사용하여 운영 체제를 배포할 때 각 배포 지점에 제외 목록을 만들 수 있습니다. 배포 지점에서 무시하도록 하려는 컴퓨터의 MAC 주소를 제외 목록에 추가합니다. 나열된 컴퓨터는 Configuration Manager에서 PXE 배포에 사용하는 배포 작업 순서를 받지 않습니다.

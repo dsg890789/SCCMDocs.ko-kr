@@ -14,18 +14,18 @@ caps.latest.revision: "10"
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 26c36df77c21254c7ad2b8a45906bd3706f9ec65
-ms.sourcegitcommit: 06aef618f72c700f8a716a43fb8eedf97c62a72b
+ms.openlocfilehash: 5c9e80fc5bc3f0629e1c27a4928b8a51cfe1ee7e
+ms.sourcegitcommit: 948644072bd158b156f782a4376bcd50fac7c73a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="choose-between-microsoft-intune-standalone-and-hybrid-mobile-device-management-with-system-center-configuration-manager"></a>Microsoft Intune 독립 실행형 및 System Center Configuration Manager에서 하이브리드 모바일 장치 관리 선택
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 Microsoft Intune 및 MDM(모바일 장치 관리)과 관련하여 가장 자주 묻는 질문 중 하나는 "Intune 및 Configuration Manager를 통합할지(하이브리드 MDM), 아니면 클라우드 전용 구성으로 Intune 독립 실행형을 사용할지"입니다. 해당 질문에 답변하려면 두 가지 옵션을 신중하게 비교해야 합니다.
-
+ 
 ## <a name="intune-standalone"></a>Intune 독립 실행형
 Intune 독립 실행형은 Microsoft의 권장되는 배포 토폴로지입니다. Intune 독립 실행형은 전 세계 어디에서나 액세스할 수 있는 웹 콘솔을 사용하여 관리되는 클라우드 전용 MDM 솔루션입니다. Intune 데이터 센터는 북미, 유럽 및 아시아 지역에서 호스트됩니다. Intune은 클라우드 서비스이기 때문에 비교적 짧은 시간 내에 Intune 관리를 장치에 배포할 수 있습니다.
 

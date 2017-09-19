@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 5fef04f26b12bced073332fd1f7b4e7c7bd7d398
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 35f527f83799125aa298b99e2cc56867435272ec
+ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="manage-operating-system-upgrade-packages-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 운영 체제 업그레이드 패키지 관리
 
@@ -59,7 +59,7 @@ System Center Configuration Manager의 업그레이드 패키지에는 컴퓨터
  이제 배포 작업 순서에서 액세스할 수 있는 배포 지점에 운영 체제 설치 관리자를 배포할 수 있습니다.  
 
 ##  <a name="BKMK_DistributeBootImages"></a> 배포 지점에 운영 체제 이미지 배포  
- 운영 체제 이미지는 다른 콘텐츠를 배포하는 것과 동일한 방식으로 배포 지점에 배포할 수 있습니다. 대부분의 경우 운영 체제를 배포하기 전에 하나 이상의 배포 지점에 운영 체제 이미지를 배포해야 합니다. 운영 체제 이미지를 배포하는 단계는 [Distribute content](../../core/servers/deploy/configure/deploy-and-manage-content.md#a-namebkmkdistributea-distribute-content)항목을 참조하세요.  
+ 운영 체제 이미지는 다른 콘텐츠를 배포하는 것과 동일한 방식으로 배포 지점에 배포할 수 있습니다. 대부분의 경우 운영 체제를 배포하기 전에 하나 이상의 배포 지점에 운영 체제 이미지를 배포해야 합니다. 운영 체제 이미지를 배포하는 단계는 [Distribute content](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_distribute)항목을 참조하세요.  
 
 ##  <a name="BKMK_OSUpgradePkgApplyUpdates"></a> 운영 체제 업그레이드 패키지에 소프트웨어 업데이트 적용  
  Configuration Manager 버전 1602부터 운영 체제 업그레이드 패키지에서 운영 체제 이미지에 새 소프트웨어 업데이트를 적용할 수 있습니다. 업그레이드 패키지에 소프트웨어 업데이트를 적용하려면 먼저 소프트웨어 업데이트 인프라를 구축하고 소프트웨어 업데이트를 동기화한 다음 사이트 서버의 콘텐츠 라이브러리에 소프트웨어 업데이트를 다운로드해야 합니다. 자세한 내용은 [소프트웨어 업데이트 배포](../../sum/deploy-use/deploy-software-updates.md)를 참조하세요.  
