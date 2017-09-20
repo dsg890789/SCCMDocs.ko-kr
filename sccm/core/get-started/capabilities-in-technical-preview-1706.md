@@ -2,7 +2,7 @@
 title: Technical Preview 1706 | Microsoft Docs
 description: "System Center Configuration Manager용 Technical Preview 버전 1706에서 사용 가능한 기능에 대해 알아봅니다."
 ms.custom: na
-ms.date: 06/30/2017
+ms.date: 09/15/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.reviewer: na
@@ -13,11 +13,11 @@ ms.assetid: ca3b4714-2a16-495e-8a17-1d87991d5556
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: d45f504dfe0a4c7852b0e2c8ff60d54005346c02
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 5633047669f9730446159781c4ac0b1248178bf4
+ms.sourcegitcommit: 5ca89204716750eaaceb01bba40b35b85c7122ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="capabilities-in-technical-preview-1706-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1706의 기능
 
@@ -328,8 +328,8 @@ Configuration Manager에서 패키지 및 프로그램을 사용하여 클라이
 
 스크립트를 사용하려면 해당 Configuration Manager 보안 역할의 구성원이어야 합니다.
 
-- **스크립트를 가져오고 작성하려면** - 계정의 **준수 설정 관리자** 보안 역할에 **SMS 스크립트**에 대한 **만들기** 권한이 있어야 합니다.
-- **스크립트를 승인하거나 거부하려면** - 계정의 **준수 설정 관리자** 보안 역할에 **SMS 스크립트**에 대한 **승인** 권한이 있어야 합니다.
+- **스크립트를 가져오기 작성하려면** - 계정의 **전체 관리자** 보안 역할에 **SMS 스크립트**에 대한 **만들기** 권한이 있어야 합니다.
+- **스크립트를 승인하거나 거부하려면** - 계정의 **전체 관리자** 보안 역할에 **SMS 스크립트**에 대한 **승인** 권한이 있어야 합니다.
 - **스크립트를 실행하려면** - 계정의 **준수 설정 관리자** 보안 역할에 **컬렉션**에 대한 **스크립트 실행** 권한이 있어야 합니다.
 
 Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반 관리 기본 사항](/sccm/core/understand/fundamentals-of-role-based-administration)을 참조하세요.

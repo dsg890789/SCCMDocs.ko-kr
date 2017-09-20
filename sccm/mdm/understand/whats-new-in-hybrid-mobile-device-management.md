@@ -14,11 +14,11 @@ caps.latest.revision: "40"
 author: Mtillman
 ms.author: mtillman
 manager: angrobe
-ms.openlocfilehash: 93609815ab4d93eddb99b8461dda9f4b4bf8058e
-ms.sourcegitcommit: 9a6f8e028fb5eb2e752da70f42a5b548339bd8f4
+ms.openlocfilehash: c93ba688ba33c309e4d12e924061718e5a33759e
+ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 장치 관리의 새로운 기능
 
@@ -36,14 +36,19 @@ ms.lasthandoff: 08/14/2017
 |**Configuration Manager Technical Preview의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 Technical Preview 릴리스에서만 사용할 수 있습니다. 이러한 기능을 시험해보려면 기능 설명에 지정된 기술 미리 보기 버전을 설치해야 합니다. 자세한 내용은 [System Center Configuration Manager Technical Preview](../../core/get-started/technical-preview.md)를 참조하세요.|
 |**Configuration Manager(현재 분기)의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 버전의 Configuration Manager(현재 분기)(예: 버전 1511 또는 1602)에서만 사용할 수 있습니다. 하이브리드 배포에 이전 버전의 Configuration Manager를 사용하는 경우 기능 설명에 지정된 Configuration Manager(현재 분기) 버전으로 업그레이드해야 합니다. 자세한 내용은 [System Center Configuration Manager 업그레이드](../../core/servers/deploy/install/upgrade-to-configuration-manager.md)를 참조하세요.|
 
+## <a name="august-2017"></a>2017년 8월
+
+### <a name="new-signed-in-experience-for-android-company-portal-users-and-app-protection-policy-users----621669---"></a>Android 회사 포털 사용자와 앱 보호 정책 사용자의 새로운 로그인 환경 <!-- 621669 -->
+이제 최종 사용자가 Android 장치를 등록하지 않고도 Android 회사 포털 앱을 사용하여 앱을 찾아보고 장치를 관리하고 IT 연락처 정보를 볼 수 있습니다. 최종 사용자가 Intune 앱 보호 정책으로 보호된 앱을 이미 사용하고 Android 회사 포털을 시작한 경우 장치를 등록하라는 메시지도 더 이상 표시되지 않습니다.
+
+
 ## <a name="july-2017"></a>2017년 7월
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
 - **Android 및 Windows Phone에 대한 지원 알림 종료**
 
-    Android 및 Windows Phone 버전에 대한 지원 종료 새 알림이 추가되었습니다. 자세한 내용은 [알림](#notices)을 참조하세요.
-
+    Android 및 Windows Phone 버전에 대한 지원 종료 알림이 새로 추가되었습니다. 자세한 내용은 [알림](#notices)을 참조하세요.
 
 
 ### <a name="new-in-configuration-manager-current-branch"></a>Configuration Manager(현재 분기)의 새로운 기능
@@ -64,11 +69,11 @@ ms.lasthandoff: 08/14/2017
 
 - **MDM 기관 변경**
 
-  Configuration Manager 버전 1610 및 Microsoft Intune 버전 1705부터, Microsoft 지원에 문의하지 않고 기존의 관리 장치를 등록 취소했다가 다시 등록하지 않고도, MDM 기관을 변경할 수 있습니다. 자세한 내용은 [MDM 기관 변경]( /sccm/mdm/deploy-use/change-mdm-authority)을 참조하세요.
+  Configuration Manager 버전 1610부터 Microsoft 지원에 문의하지 않고 기존 관리 장치에 대한 등록 취소 및 다시 등록을 수행할 필요 없이 MDM 기관을 변경할 수 있습니다. 자세한 내용은 [MDM 기관 변경]( /sccm/mdm/deploy-use/change-mdm-authority)을 참조하세요.
 
 - **관리되는 브라우저 및 앱 프록시 통합**
 
-  Intune Managed Browser는 이제 Azure AD 응용 프로그램 프록시 서비스와 통합되어 사용자가 원격으로 작업하는 동안에도 내부 웹 사이트에 액세스할 수 있도록 할 수 있습니다. 브라우저의 사용자는 평소와 같이 사이트 URL를 입력하고 관리되는 브라우저는 응용 프로그램 프록시 웹 게이트웨이를 통해 요청을 라우팅합니다. 자세한 내용은 [관리되는 브라우저 정책을 사용하여 인터넷 액세스 관리](/intune/app-configuration-managed-browser)를 참조하세요.
+  Intune Managed Browser는 이제 Azure AD 응용 프로그램 프록시 서비스와 통합되어 사용자가 원격으로 작업하는 동안에도 내부 웹 사이트에 액세스할 수 있도록 할 수 있습니다. 브라우저의 사용자는 평소와 같이 사이트 URL을 입력하면 관리되는 브라우저에서 응용 프로그램 프록시 웹 게이트웨이를 통해 요청을 라우팅합니다. 자세한 내용은 [관리되는 브라우저 정책을 사용하여 인터넷 액세스 관리](/intune/app-configuration-managed-browser)를 참조하세요.
 
 - **Android용 회사 포털 앱에서 앱 보호 정책에 대해 새로운 최종 사용자 환경 제공**
 

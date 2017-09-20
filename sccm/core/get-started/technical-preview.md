@@ -14,11 +14,11 @@ caps.latest.revision: "157"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 1335794bde7805e5fb2899ca685e985afee13c4e
-ms.sourcegitcommit: 5b4fd2d36f06be5bcc7f8ebbfb92c48b7240085d
+ms.openlocfilehash: e471e11b3c61172b4e9fcae74944d39aa0ab702f
+ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="technical-preview-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview
 
@@ -132,11 +132,11 @@ ms.lasthandoff: 08/30/2017
  |새 모바일 응용 프로그램 관리 정책 설정|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#new-mobile-application-management-policy-settings)|![추가되지 않음](media/Red_X.gif)|
  |소프트웨어 업데이트 지점에 대한 향상된 경계 그룹|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#improved-boundary-groups-for-software-update-points)|[버전 1706](/sccm/core/servers/deploy/configure/boundary-groups#software-update-points)|
  |사이트 서버 역할 고가용성|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#site-server-role-high-availability) |![추가되지 않음](media/Red_X.gif)|
- |특정 파일 및 폴더에 대한 트러스트를 Device Guard 정책에 포함|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#include-trust-for-specific-files-and-folders-in-a-device-guard-policy)|![추가되지 않음](media/Red_X.gif)|
+ |특정 파일 및 폴더에 대한 트러스트를 Device Guard 정책에 포함|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#include-trust-for-specific-files-and-folders-in-a-device-guard-policy)|[버전 1706](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)|
  |작업 순서 진행률 숨기기|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#hide-task-sequence-progress)|![추가되지 않음](media/Red_X.gif)|
- |설치 콘텐츠 및 제거 콘텐츠에 대해 다른 콘텐츠 위치 지정|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#specify-a-different-content-location-for-install-content-and-uninstall-content)|![추가되지 않음](media/Red_X.gif)|
+ |설치 콘텐츠 및 제거 콘텐츠에 대해 다른 콘텐츠 위치 지정|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#specify-a-different-content-location-for-install-content-and-uninstall-content)|[버전 1706](/sccm/core/get-started/capabilities-in-technical-preview-1706#hide-task-sequence-progress)|
  |향상된 접근성 기능 |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#accessibility-improvements)|[버전 1706](/sccm/core/understand/accessibility-features)|
- |업그레이드 준비 상태에 대한 Azure 서비스 마법사 지원 |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#changes-to-the-azure-services-wizard-to-support-upgrade-readiness)|![추가되지 않음](media/Red_X.gif)|
+ |업그레이드 준비 상태에 대한 Azure 서비스 마법사 지원 |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#changes-to-the-azure-services-wizard-to-support-upgrade-readiness)|[버전 1706](/sccm/core/servers/deploy/configure/azure-services-wizard)|
  |클라우드 서비스에 대한 새 클라이언트 설정|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#new-client-settings-for-cloud-services)|[버전 1706](/sccm/core/clients/deploy/deploy-clients-cmg-azure)|
  |Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#create-and-run-powershell-scripts-from-the-configuration-manager-console)|[버전 1706](/sccm/apps/deploy-use/create-deploy-scripts)|
  |IPv6에 대한 PXE 네트워크 부팅 지원 |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#pxe-network-boot-support-for-ipv6)|![추가되지 않음](media/Red_X.gif)|
@@ -146,7 +146,7 @@ ms.lasthandoff: 08/30/2017
  |Android 등록 제한|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#android-and-ios-enrollment-restrictions)|[버전 1706](/sccm/mdm/deploy-use/enroll-hybrid-android#enable-android-enrollment)|
  |복사-붙여넣기에 대한 Android for Work 응용 프로그램 관리 정책|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#android-for-work-application-management-policy-for-copy-paste)|[버전 1706](/sccm/mdm/deploy-use/create-configuration-items-for-android-for-work-devices-managed-without-the-client#android-for-work-configuration-item-settings-reference)|
  |새 Windows 구성 항목 설정|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#new-windows-configuration-item-settings)|[버전 1706](/sccm/mdm/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client)|
- |새 장치 준수 정책 규칙|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#new-device-compliance-policy-rules)|![추가되지 않음](media/Red_X.gif)|
+ |새 장치 준수 정책 규칙|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#new-device-compliance-policy-rules)|[버전 1706](/sccm/mdm/deploy-use/create-compliance-policy)|
  |조건부 액세스의 준수 정책에 대한 장치 상태 증명 평가|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#device-health-attestation-assessment-for-compliance-policies-for-conditional-access)|![추가되지 않음](media/Red_X.gif)|
  |Entrust 인증 기관에 대한 지원|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#support-for-entrust-certification-authorities)|[버전 1706](/sccm/mdm/deploy-use/create-pfx-certificate-profiles)|
  |macOS VPN 프로필에 대한 Cisco(IPSec) 지원|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#cisco-ipsec-support-for-macos-vpn-profiles)|[버전 1706](/sccm/protect/deploy-use/vpn-profiles)|
@@ -157,26 +157,26 @@ ms.lasthandoff: 08/30/2017
  |피어 캐시 개선  |[Tech Preview 1705](capabilities-in-technical-preview-1705.md#peer-cache-improvements) |[버전 1706](/sccm/core/plan-design/hierarchy/client-peer-cache#requirements-and-considerations-for-peer-cache)|
  |SQL Server Always On 가용성 그룹에 대한 향상된 기능 |[Tech Preview 1705](capabilities-in-technical-preview-1705.md#improvements-for-sql-server-always-on-availability-groups) |[버전 1706](/sccm/core/plan-design/changes/whats-new-in-version-1706#improvements-for-sql-server-always-on-availability-groups)|
  |Office 365 업데이트에 대한 향상된 사용자 알림|[Tech Preview 1705](capabilities-in-technical-preview-1705.md#improved-user-notifications-for-office-365-updates) |[버전 1706](/sccm/sum/deploy-use/manage-office-365-proplus-updates#restart-behavior-and-client-notifications-for-office-365-updates)|
- |Azure 서비스 마법사를 사용하여 OMS에 대한 연결 구성|[Tech Preview 1705](capabilities-in-technical-preview-1705.md#use-azure-services-wizard-to-configure-a-connection-to-oms) |![추가되지 않음](media/Red_X.gif)|
+ |Azure 서비스 마법사를 사용하여 OMS에 대한 연결 구성|[Tech Preview 1705](capabilities-in-technical-preview-1705.md#use-azure-services-wizard-to-configure-a-connection-to-oms) |[버전 1706](/sccm/core/servers/deploy/configure/azure-services-wizard)|
  |앱 구성 정책을 사용하여 Android 앱 구성  |[Tech Preview 1704](capabilities-in-technical-preview-1704.md#configure-android-apps-with-app-configuration-policies)|![추가되지 않음](media/Red_X.gif)|
  |하드웨어 인벤토리를 통해 보안 부팅 정보 수집 |[Tech Preview 1704](capabilities-in-technical-preview-1704.md#hardware-inventory-collects-secure-boot-information)|[버전 1706](/sccm/core/plan-design/changes/whats-new-in-version-1706#hardware-inventory-collects-secure-boot-information)|
  |작업 순서에 자식 작업 순서 추가|[Tech Preview 1704](capabilities-in-technical-preview-1704.md#add-child-task-sequences-to-a-task-sequence)|![추가되지 않음](media/Red_X.gif)|
  |현재 Windows PE 버전을 사용하여 부팅 이미지 다시 로드 |[Tech Preview 1704](capabilities-in-technical-preview-1704.md#reload-boot-images-with-current-windows-pe-version)|[버전 1706](/sccm/osd/get-started/manage-boot-images#update-distribution-points-with-the-boot-image)|
- |운영 체제 배포 향상|[Tech Preview 1704](capabilities-in-technical-preview-1704.md#improvements-to-operating-system-deployment)|![추가되지 않음](media/Red_X.gif)|
+ |운영 체제 배포 향상 <!-- This item does not track to be added to the Current Branch. It is covered by various other incremental work. --> |[Tech Preview 1704](capabilities-in-technical-preview-1704.md#improvements-to-operating-system-deployment)|![추가되지 않음](media/Red_X.gif)|
  |장치 컬렉션에 대량 구매한 iOS 앱 배포|[Tech Preview 1703](capabilities-in-technical-preview-1703.md#deploy-volume-purchased-ios-apps-to-device-collections)|[버전 1702](/sccm/mdm/deploy-use/manage-volume-purchased-ios-apps)|
- |소프트웨어 센터의 응용 프로그램에 대한 직접 링크|[Tech Preview 1703](capabilities-in-technical-preview-1703.md#direct-links-to-applications-in-software-center)|![추가되지 않음](media/Red_X.gif)
+ |소프트웨어 센터의 응용 프로그램에 대한 직접 링크|[Tech Preview 1703](capabilities-in-technical-preview-1703.md#direct-links-to-applications-in-software-center)|[버전 1706](/sccm/apps/deploy-use/share-applications)
  |Configuration Manager Windows 클라이언트 컴퓨터에 대한 PFX 인증서|[Tech Preview 1703](capabilities-in-technical-preview-1703.md#pfx-certificates-for-configuration-manager-windows-client-computers)|[버전 1706](/sccm/protect/deploy-use/create-certificate-profiles)|
  |Azure 서비스 구성 마법사|[Tech Preview 1703](capabilities-in-technical-preview-1703.md#configure-azure-services-wizard)|[버전 1706](/sccm/core/servers/deploy/configure/azure-services-wizard)|
  |운영 체제 업그레이드 작업 순서에서 BIOS에서 UEFI로 변환| [Tech Preview 1703](capabilities-in-technical-preview-1703.md#convert-from-bios-to-uefi-during-an-in-place-upgrade) |[버전 1702](/sccm/osd/deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion#convert-from-bios-to-uefi-during-an-in-place-upgrade)|
  |축소 가능한 작업 순서 그룹| [Tech Preview 1703](capabilities-in-technical-preview-1703.md#collapsible-task-sequence-groups) |[버전 1706](/sccm/core/plan-design/changes/whats-new-in-version-1706#collapsible-task-sequence-groups)|
- |업그레이드 준비를 위해 Windows Analytics를 구성하기 위한 클라이언트 설정 | [Tech Preview 1703](capabilities-in-technical-preview-1703.md#client-settings-to-configure-windows-analytics-for-upgrade-readiness) |![추가되지 않음](media/Red_X.gif)|
+ |업그레이드 준비를 위해 Windows Analytics를 구성하기 위한 클라이언트 설정 | [Tech Preview 1703](capabilities-in-technical-preview-1703.md#client-settings-to-configure-windows-analytics-for-upgrade-readiness) |[버전 1706](/sccm/core/clients/manage/monitor-windows-analytics#configure-clients-to-report-data-to-windows-analytics)|
  |iOS 장치에 대한 새 준수 설정|[Tech Preview 1702](capabilities-in-technical-preview-1702.md#new-compliance-settings-for-ios-devices)|[버전 1702](/sccm/mdm/deploy-use/create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client)|
  |S/MIME을 지원하는 PFX 인증서 만들기|[Tech Preview 1702](capabilities-in-technical-preview-1702.md#create-pfx-certificates-with-s-mime-support)|[버전 1706](/sccm/mdm/deploy-use/create-pfx-certificate-profiles)|
  |응용 프로그램을 설치하기 전에 실행 중인 실행 파일 확인|[Tech Preview 1702](capabilities-in-technical-preview-1702.md#check-for-running-executable-files-before-installing-an-application)|[버전 1702](/sccm/apps/deploy-use/deploy-applications)|
  |Configuration Manager 콘솔에서 피드백 보내기 | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#send-feedback-from-the-configuration-manager-console)    |[버전 1702](/sccm/core/plan-design/changes/whats-new-in-version-1702#send-feedback-from-the-configuration-managercconsole)  |
  |업데이트 및 서비스의 변경 내용  | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#changes-for-updates-and-servicing)  |[버전 1702](/sccm/core/plan-design/changes/whats-new-in-version-1702#changes-for-updates-and-servicing) |
  |피어 캐시 개선  | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#peer-cache-improvements) |[버전 1702](/sccm/core/plan-design/hierarchy/client-peer-cache)|
- |Azure Active Directory 사용  | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#azurediscovery) |![추가되지 않음](media/Red_X.gif)|
+ |Azure Active Directory 사용 <!-- This item does not track to be added to the Current Branch. It is covered by various other incremental work. --> | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#azurediscovery) |![추가되지 않음](media/Red_X.gif)|
  |조건부 액세스 장치 준수 정책 개선 | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#conditional-access-device-compliance-policy-improvements) |[버전 1702](/sccm/mdm/deploy-use/create-compliance-policy)|
  |맬웨어 방지 클라이언트 버전 경고 | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#antimalware-client-version-alert) |[버전 1702](/sccm/protect/deploy-use/endpoint-configure-alerts?branch=live#alert-for-outdated-malware-client)|
  |Windows Update for Business 업데이트에 대한 준수 평가 | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#compliance-assessment-for-windows-update-for-business-updates) |![추가되지 않음](media/Red_X.gif)|
@@ -188,14 +188,14 @@ ms.lasthandoff: 08/30/2017
  |클라우드 기반 배포 지점에서 소프트웨어 업데이트 호스트| [Tech Preview 1701](capabilities-in-technical-preview-1701.md#host-software-updates-on-cloud-based-distribution-points)|[버전 1702](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point#plan-to-use-a-cloud-based-distribution-point) |
  |관리 지점을 통해 장치 상태 증명 데이터의 유효성 검사| [Tech Preview 1701](capabilities-in-technical-preview-1701.md#validate-device-health-attestation-data-via-management-points)| [버전 1702](/sccm/core/servers/manage/health-attestation) |
  |Microsoft Azure Government 클라우드용 OMS 커넥터 |[Tech Preview 1701](capabilities-in-technical-preview-1701.md#use-the-oms-connector-for-microsoft-azure-government-cloud) |[버전 1702](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite#fairfaxconfig) |
- |Android 및 iOS 버전은 만들기 마법사에서 대상 지정이 가능하지 않음 |[Tech Preview 1701](capabilities-in-technical-preview-1701.md#android-and-ios-versions-are-no-longer-targetable-in-creation-wizards-for-hybrid-mdm) |![추가되지 않음](media/Red_X.gif) |
+ |Android 및 iOS 버전은 만들기 마법사에서 대상 지정이 가능하지 않음 |[Tech Preview 1701](capabilities-in-technical-preview-1701.md#android-and-ios-versions-are-no-longer-targetable-in-creation-wizards-for-hybrid-mdm) |[버전 1702](/sccm/core/plan-design/changes/whats-new-in-version-1702#android-and-ios-versions-are-no-longer-targetable-in-creation-wizards-for-hybrid-mdm) |
  |OData 끝점 데이터 액세스 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#odata-endpoint-data-access)|![추가되지 않음](media/Red_X.gif)|
  |데이터 웨어하우스 서비스 지점 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#the-data-warehouse-service-point)|[버전 1702](/sccm/core/servers/manage/data-warehouse)|
  |콘텐츠 라이브러리 정리 도구 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#content-library-cleanup-tool)|[버전 1702](/sccm/core/plan-design/hierarchy/content-library-cleanup-tool) |
  |콘솔 내 검색의 향상된 기능 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#improvements-for-in-console-search)|[버전 1702](/sccm/core/plan-design/changes/whats-new-in-version-1702#improvements-for-in-console-search)|
  |지정한 프로그램이 실행되는 경우 응용 프로그램 설치 차단|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#prevent-installation-of-an-application-if-a-specified-program-is-running)|[버전 1702](/sccm/apps/deploy-use/deploy-applications)|
- |최종 사용자에 대한 새 비즈니스용 Windows Hello 알림|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#new-windows-hello-for-business-notification-for-end-users)|![추가되지 않음](media/Red_X.gif)|
- |Configuration Manager의 비즈니스용 Windows 스토어 지원|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#windows-store-for-business-support-in-configuration-manager)|![추가되지 않음](media/Red_X.gif)|
+ |최종 사용자에 대한 새 비즈니스용 Windows Hello 알림|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#new-windows-hello-for-business-notification-for-end-users)|[버전 1702](/sccm/core/plan-design/changes/whats-new-in-version-1702#new-windows-hello-for-business-notification-for-end-users)|
+ |Configuration Manager의 비즈니스용 Windows 스토어 지원|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#windows-store-for-business-support-in-configuration-manager)|[버전 1702](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)|
  |작업 순서가 실패할 경우 이전 페이지로 돌아가기|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#return-to-previous-page-when-a-task-sequence-fails)|[버전 1702](/sccm/core/plan-design/changes/whats-new-in-version-1702#operating-system-deployment)|
  |Windows 10 업데이트에 대한 빠른 설치 파일 지원|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#express-installation-files-support-for-windows-10-updates)|[버전 1702](/sccm/sum/deploy-use/manage-express-installation-files-for-windows-10-updates)|
  |Azure Active Directory 등록|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#azure-active-directory-onboarding)|[버전 1706](/sccm/core/servers/deploy/configure/azure-services-wizard)|
@@ -223,14 +223,14 @@ ms.lasthandoff: 08/30/2017
  |Intune 준수 차트|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#intune-compliance-charts)|[버전 1610](/sccm/protect/deploy-use/create-compliance-policy#monitor-the-compliance-policy)|
  |ConfigMgr 클라이언트 캡처 준비 작업 순서 단계의 향상 기능|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-the-prepare-configmgr-client-for-capture-task-sequence-step)|[버전 1610](/sccm/osd/understand/task-sequence-steps#BKMK_PrepareConfigMgrClientforCapture)|
  |소프트웨어 센터 개선|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-software-center)|[버전 1610](/sccm/core/plan-design/changes/whats-new-in-version-1610#general-improvements-to-software-center)|
- |Asset Intelligence 개선|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-asset-intelligence)|![추가되지 않음](media/Red_X.gif)|
- |원격 제어 키보드 변환|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#remote-control-keyboard-translation)|![추가되지 않음](media/Red_X.gif)|
+ |Asset Intelligence 개선 <!-- Listed as TBD. No planned addition to Current Branch -->|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-asset-intelligence)|![추가되지 않음](media/Red_X.gif)|
+ |원격 제어 키보드 변환|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#remote-control-keyboard-translation)| [버전 1610](/sccm/core/clients/manage/remote-control/configuring-remote-control#enable-keyboard-translation)|
  |Windows 10 버전 업그레이드 정책의 향상 기능|[Tech Preview 1607](capabilities-in-technical-preview-1607.md#dmp_edition)|[버전 1610](/sccm/compliance/deploy-use/upgrade-windows-version)|
  |소프트웨어 센터 대화 상자에 대한 사용자 지정 가능한 브랜딩|[Tech Preview 1607](capabilities-in-technical-preview-1607.md#customizable-branding-for-software-center-dialogs)|[버전 1610](/sccm/core/plan-design/changes/whats-new-in-version-1610#customizable-branding-for-software-center-dialogs)|  
  |온-프레미스 모바일 장치 관리에 대한 여러 장치 관리 지점|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_onprem)|[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#on-premises-mobile-device-management)|
  |컬렉션으로 장치 자동 분류|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_category)|[버전 1606](/sccm/core/clients/manage/collections/automatically-categorize-devices-into-collections) |
  |필수 응용 프로그램 및 소프트웨어 업데이트 배포를 위한 유예 기간 적용|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_grace)|[버전 1610](/sccm/apps/deploy-use/deploy-applications)|
- |Device Guard로 Configuration Manager를 관리되는 설치 프로그램으로 사용|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_devg)|![추가되지 않음](media/Red_X.gif)|
+ |Device Guard로 Configuration Manager를 관리되는 설치 프로그램으로 사용|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_devg)|[버전 1702](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager )|
  |클라우드 관리 게이트웨이(이전의 클라우드 프록시 서비스)|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#cloud_proxy) | [버전 1610](/sccm/core/clients/manage/plan-cloud-management-gateway)|  
  |Configuration Manager에서 Office 365 클라이언트 에이전트 관리|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#manage_o365) |[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#software-updates)|  
  |OSDPreserveDriveLetter 작업 순서 변수는 사용되지 않습니다.|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#osdpreservedriveletter) |[버전 1606](/sccm/osd/understand/task-sequence-built-in-variables) |

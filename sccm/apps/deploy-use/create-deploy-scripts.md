@@ -2,7 +2,7 @@
 title: "Configuration Manager에서 스크립트 만들기 및 실행 | Microsoft Docs"
 description: "Configuration Manager를 사용하여 클라이언트 장치에서 스크립트를 만들고 실행합니다."
 ms.custom: na
-ms.date: 08/09/2017
+ms.date: 09/15/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,14 +12,14 @@ ms.topic: article
 ms.assetid: cc230ff4-7056-4339-a0a6-6a44cdbb2857
 caps.latest.revision: "14"
 caps.handback.revision: "0"
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
-ms.openlocfilehash: ed84f7900eee5c04728d0e4d1b46027c36327bec
-ms.sourcegitcommit: b41d3e5c7f0c87f9af29e02de3e6cc9301eeafc4
+ms.openlocfilehash: e6b29cd85504742e8638a55db2f6c4ecc8ab3e55
+ms.sourcegitcommit: 5ca89204716750eaaceb01bba40b35b85c7122ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="create-and-run-powershell-scripts-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행
 
@@ -44,8 +44,8 @@ Configuration Manager 클라이언트는 스크립트를 실행하려면 1706 �
 
 스크립트를 사용하려면 해당 Configuration Manager 보안 역할의 구성원이어야 합니다.
 
-- 스크립트를 가져오고 작성하려면 - 계정의 **준수 설정 관리자** 보안 역할에 **SMS 스크립트**에 대한 **만들기** 권한이 있어야 합니다.
-- 스크립트를 승인하거나 거부하려면 - 계정의 **준수 설정 관리자** 보안 역할에 **SMS 스크립트**에 대한 **승인** 권한이 있어야 합니다.
+- 스크립트를 가져오기 작성하려면 - 계정의 **전체 관리자** 보안 역할에 **SMS 스크립트**에 대한 **만들기** 권한이 있어야 합니다.
+- 스크립트를 승인하거나 거부하려면 - 계정의 **전체 관리자** 보안 역할에 **SMS 스크립트**에 대한 **승인** 권한이 있어야 합니다.
 - 스크립트를 실행하려면 - 계정의 **준수 설정 관리자** 보안 역할에 **컬렉션**에 대한 **스크립트 실행** 권한이 있어야 합니다.
 
 Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반 관리 기본 사항](/sccm/core/understand/fundamentals-of-role-based-administration)을 참조하세요.
@@ -78,9 +78,9 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반
 
 #### <a name="create-a-folder"></a>폴더 만들기
 
-*New-Item "c:\scripts" -type folder name* 
- 
- 
+*New-Item "c:\scripts" -type folder name*
+
+
 #### <a name="create-a-file"></a>파일 만들기
 
 *New-Item c:\scripts\new_file.txt -type file name*
