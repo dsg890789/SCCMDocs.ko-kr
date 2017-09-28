@@ -2,7 +2,7 @@
 title: "Configuration Manager에서 사용되는 포트 | Microsoft 문서"
 description: "System Center Configuration Manager가 연결에 사용되는 필수 포트 및 사용자 지정 포트에 대해 알아봅니다."
 ms.custom: na
-ms.date: 3/20/2017
+ms.date: 09/19/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,18 +15,18 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 78caa69e10f5d386daab1e61e484d4d134469708
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: ac443971a725a7eeecaeea877b8e9636ebb4990b
+ms.sourcegitcommit: 51654bf8b5615eb99084d0a20d18ca3fccfa83a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/20/2017
 ---
 # <a name="ports-used-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사용되는 포트
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 System Center Configuration Manager는 분산된 클라이언트/서버 시스템입니다. Configuration Manager의 배포 특성으로 인해 사이트 서버, 사이트 시스템 및 클라이언트 간이 연결될 수 있습니다. 일부 연결에는 구성할 수 없는 포트가 사용되고, 일부 연결에는 지정한 사용자 지정 포트가 지원될 수 있습니다. 방화벽, 라우터, 프록시 서버 또는 IPsec 같은 포트 필터링 기술을 사용하는 경우 필요한 포트를 사용할 수 있는 상태인지 확인해야 합니다.  
-
+    
 > [!NOTE]  
 >  SSL 브리징을 사용하여 인터넷 기반 클라이언트를 지원하는 경우 포트 요구 사항을 충족하면서도 방화벽을 트래버스할 수 있도록 일부 HTTP 동사 및 헤더를 허용해야 할 수 있습니다.   
 
@@ -167,7 +167,7 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |글로벌 카탈로그 LDAP|--|3268|  
-|글로벌 카탈로그 LDAP SSL|--|3269|  
+
 
 ###  <a name="BKMK_PortsClient-MP"></a> 클라이언트 -- &gt; 관리 지점  
 
@@ -295,9 +295,7 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |LDAP(Lightweight Directory Access Protocol)|--|389|  
-|LDAP(SSL[Secure Sockets Layer] 연결)|636|636|  
 |글로벌 카탈로그 LDAP|--|3268|  
-|글로벌 카탈로그 LDAP SSL|--|3269|  
 |RPC 끝점 매퍼|135|135|  
 |RPC|--|동적(참고 6 참조, **동적 포트**)|  
 
@@ -391,9 +389,7 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |LDAP(Lightweight Directory Access Protocol)|--|389|  
-|LDAP(SSL[Secure Sockets Layer] 연결)|636|636|  
 |글로벌 카탈로그 LDAP|--|3268|  
-|글로벌 카탈로그 LDAP SSL|--|3269|  
 |RPC 끝점 매퍼|135|135|  
 |RPC|--|동적(참고 6 참조, **동적 포트**)|  
 
@@ -641,17 +637,9 @@ SQL Server 컴퓨터에서 방화벽이 사용되는 경우 배포에서 사용 
 ### <a name="bkmk_discovery"> </a> 검색 및 게시
 다음은 사이트 정보의 검색 및 게시에 사용되는 포트입니다.
  - LDAP(Lightweight Directory Access Protocol): 389
- - LDAP(SSL[Secure Sockets Layer] 연결): 636
-
-
  - 글로벌 카탈로그 LDAP: 3268
- - 글로벌 카탈로그 LDAP SSL: 3269
-
-
  - RPC 끝점 매퍼: 135
  - RPC: 동적으로 할당된 높은 TCP 포트
-
-
  - TCP: 1024: 5000
  - TCP: 49152: 65535
 

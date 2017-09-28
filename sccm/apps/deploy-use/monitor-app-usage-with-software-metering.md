@@ -2,7 +2,7 @@
 title: "소프트웨어 계량을 사용하여 앱 사용 모니터링 | Microsoft 문서"
 description: 
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 09/20/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision: "8"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: d7bc0bebeb0355156553376a3535ed76d5e44835
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 87bafd8ce28d58993666057b6c5bfd8bdc0c4ed9
+ms.sourcegitcommit: 51654bf8b5615eb99084d0a20d18ca3fccfa83a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 09/20/2017
 ---
 # <a name="software-metering-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 계량
 
@@ -86,7 +86,7 @@ ms.lasthandoff: 09/15/2017
         >
         >  이 상자는 **파일 이름** 에 대한 값이 지정된 경우 선택 사항입니다.
 
-    -   **버전** - 계량할 실행 파일의 버전입니다. 문자의 문자열을 나타내려면 와일드카드 문자(*)를 사용하거나 단일 문자를 나타내려면 와일드카드 문자(?)를 사용하면 됩니다. 실행 파일의 모든 버전에 대해 계량하려는 경우 기본값(\*)을 사용합니다.
+    -   **버전** - 계량할 실행 파일의 버전입니다. 문자의 문자열을 나타내려면 와일드카드 문자(&#42;)를 사용하거나 단일 문자를 나타내려면 와일드카드 문자(?)를 사용하면 됩니다. 실행 파일의 모든 버전에 대해 계량하려는 경우 기본값(&#42;)을 사용합니다.
 
     -   **언어** - 계량할 실행 파일의 언어입니다. 기본값은 사용 중인 운영 체제의 현재 로캘입니다. **찾아보기** 단추를 클릭하여 계량할 실행 파일을 선택하는 경우 언어 정보가 파일의 헤더에 있으면 이 상자는 자동으로 채워집니다. 파일의 모든 언어 버전을 계량하려면 드롭다운 목록에서 **모두** 를 선택합니다.
 

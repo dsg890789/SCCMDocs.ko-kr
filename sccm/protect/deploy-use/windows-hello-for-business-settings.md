@@ -2,7 +2,7 @@
 title: "비즈니스용 Windows Hello 설정 | Microsoft 문서"
 description: "System Center Configuration Manager와 비즈니스용 Windows Hello를 통합하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 08/10/2017
+ms.date: 09/21/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision: "17"
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.openlocfilehash: 1985428df0f82ef2e0a92fdec86189d5ffa03aee
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 43586e55f2c0c5cf117b94c61250f26ba4233f53
+ms.sourcegitcommit: 4c3906cf9614420cb8527da9e48978eb0b8f0e7a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 09/22/2017
 ---
 # <a name="windows-hello-for-business-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager의 비즈니스용 Windows Hello 설정
 
@@ -65,8 +65,11 @@ Configuration Manager 콘솔의 **회사 리소스 액세스** 아래에서 **�
 |||||
 |-|-|-|-|
 |Windows 클라이언트 버전|Configuration Manager 1602 또는 1606|Configuration Manager 1610|Configuration Manager 1702 이상|
-|Windows 10 1주년 업데이트|핫픽스가 필요하지 않음<br><br>사용 권한이 필요하지 않음<br><br>Windows 스키마 업데이트가 필요하지 않음|핫픽스가 필요하지 않음<br><br>사용 권한이 필요하지 않음<br><br>Windows 스키마 업데이트가 필요하지 않음|필요한 작업은 없습니다.|
+|Windows 10 1주년 업데이트|핫픽스가 필요하지 않음<br><br>사용 권한이 필요하지 않음<br><br>Windows 스키마 업데이트가 필요하지 않음|핫픽스가 필요하지 않음(**경고** 참조)<br><br>사용 권한이 필요하지 않음<br><br>Windows 스키마 업데이트가 필요하지 않음|사용 권한 구성<br><br>Active Directory에 Windows Server 2016 스키마 적용|
 |Windows 10 크리에이터 업데이트 이상|지원되지 않음|[이 핫픽스](https://support.microsoft.com/help/4010155/update-rollup-for-system-center-configuration-manager-current-branch-v) 설치<br><br>사용 권한 구성<br><br>Active Directory에 Windows Server 2016 스키마 적용|사용 권한 구성<br><br>Active Directory에 Windows Server 2016 스키마 적용|
+
+> [!WARNING]
+> Configuration Manager 1610 및 Windows 10 1주년 업데이트에 대해 [핫픽스](https://support.microsoft.com/help/4010155/update-rollup-for-system-center-configuration-manager-current-branch-v)가 필요하지는 않지만, 핫픽스가 설치될 수 있습니다.  핫픽스가 설치되면 권한을 구성하고 Active Directory에 Windows Server 2016 스키마를 적용해야 합니다.
 
 ## <a name="to-configure-permissions"></a>사용 권한을 구성하려면
 

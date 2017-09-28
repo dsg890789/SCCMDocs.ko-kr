@@ -2,7 +2,7 @@
 title: "배포 지점 관리 | Microsoft 문서"
 description: "배포 지점을 사용하여 장치 및 사용자에게 배포할 콘텐츠(파일 및 소프트웨어)를 호스트합니다. 설치 및 구성 방법은 다음과 같습니다."
 ms.custom: na
-ms.date: 2/14/2017
+ms.date: 09/18/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,16 +14,16 @@ caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 4c94e4de5bbfe621492e8682c9424a48eb38196d
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 0213b48c24461cbab5a9acab720064e0e26fa568
+ms.sourcegitcommit: 474e6ddbaaeac4ba17d8172321e08deeb0140d0a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="install-and-configure-distribution-points-for-system-center-configuration-manager"></a>System Center Configuration Manager의 배포 지점 설치 및 구성
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
- 
+
 장치 및 사용자에게 배포하는 콘텐츠(파일 및 소프트웨어)를 호스트할 System Center Configuration Manager 배포 지점을 설치합니다. 배포 지점을 관리하는 방법 및 배포 지점에 콘텐츠를 배포하는 방법을 간소화하는 배포 지점 그룹을 만들 수도 있습니다.  
 
  *새 배포 지점을 설치*(설치 마법사 사용)하거나 *기존 배포 지점의 속성을 관리*(배포 지점 속성 편집)할 때 대부분의 배포 지점 설정을 구성할 수 있습니다. 몇 가지 설정은 설치 또는 편집 중 한 작업에서만 사용할 수 있습니다.  
@@ -45,7 +45,8 @@ ms.lasthandoff: 08/07/2017
     -   **배포 지점에 대한 데이터 전송 일정 구성**  
 
 ##  <a name="bkmk_install"></a> 배포 지점 설치  
- 콘텐츠를 클라이언트 컴퓨터에서 사용할 수 있으려면 먼저 사이트 시스템 서버를 배포 지점으로 지정해야 합니다. 새 사이트 시스템 서버에 배포 지점 사이트 역할을 추가하거나 기존 사이트 시스템 서버에 사이트 역할을 추가할 수 있습니다.  
+콘텐츠를 클라이언트 컴퓨터에서 사용할 수 있으려면 먼저 사이트 시스템 서버를 배포 지점으로 지정해야 합니다. 또한 배포 지점을 하나 이상의 [경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups#distribution-points)에 할당해야만 온-프레미스 클라이언트 컴퓨터가 해당 배포 지점을 콘텐츠 원본 위치로 사용할 수 있습니다. 새 사이트 시스템 서버에 배포 지점 사이트 역할을 추가하거나 기존 사이트 시스템 서버에 사이트 역할을 추가할 수 있습니다.
+
 
  새 배포 지점을 설치하는 경우 사용 가능한 설정을 단계별로 안내하는 설치 마법사를 사용합니다. 시작하기 전에 다음 사항을 고려합니다.  
 
@@ -339,7 +340,7 @@ ms.lasthandoff: 08/07/2017
 >  컴퓨터의 로컬 시간을 사용하여 콘텐츠 유효성 검사 일정을 지정하지만, Configuration Manager 콘솔에서는 해당 일정을 UTC로 표시합니다.  
 
 ### <a name="boundary-group"></a>경계 그룹  
-이 배포 지점이 할당된 경계 그룹을 관리합니다. 배포 지점과 경계 그룹을 연결할 수 있습니다. 콘텐츠 배포 시 클라이언트가 배포 지점과 연결된 경계 그룹에 있어야만 해당 배포 지점을 콘텐츠 원본 위치로 사용할 수 있습니다.
+이 배포 지점이 할당된 경계 그룹을 관리합니다. 배포 지점을 하나 이상의 경계 그룹에 추가하세요. 콘텐츠 배포 시 클라이언트가 배포 지점과 연결된 경계 그룹에 있어야만 해당 배포 지점을 콘텐츠 원본 위치로 사용할 수 있습니다.
 
 추가 필수 구성 요소:
 

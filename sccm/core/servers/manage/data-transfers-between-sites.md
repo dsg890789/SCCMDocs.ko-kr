@@ -150,7 +150,7 @@ Configuration Manager에서 복제하는 데이터는 데이터베이스 복제�
 복제 링크에 분산 보기에 대해 설정된 데이터 형식이 있는 한, 자식 기본 사이트에서는 이 데이터를 중앙 관리 사이트에 복제하지 않습니다. 데이터 형식에 대해 분산 보기를 끄는 즉시 자식 기본 사이트에서는 정상적인 데이터 복제의 일부로 중앙 관리 사이트에 대해 해당 데이터의 복제를 다시 시작합니다. 그러나 이 데이터가 포함된 복제 그룹이 기본 사이트 및 중앙 관리 사이트 간에 다시 초기화된 후에야 중앙 관리 사이트에서 이 데이터를 사용할 수 있습니다. 마찬가지로, 분산 보기가 켜져 있는 기본 사이트를 제거한 후에 중앙 관리 사이트의 분산 보기에 대해 설정된 데이터에 액세스하려면 먼저 중앙 관리 사이트에서 자체 데이터의 다시 초기화를 완료해야만 합니다.  
 
 > [!IMPORTANT]  
-> 사이트 계층 구조 내 복제 링크에서 분산 보기를 사용할 경우 기본 사이트를 제거하기 전에 모든 복제 링크에 대한 분산 보기를 꺼야 합니다. 자세한 내용은 [Uninstall a primary site that is configured with distributed views](../../../core/servers/deploy/install/uninstall-sites-and-hierarchies.md#BKMK_UninstallPrimaryDistViews)을 참조하십시오.  
+> 사이트 계층 구조 내 복제 링크에서 분산 보기를 사용할 경우 기본 사이트를 제거하기 전에 모든 복제 링크에 대한 분산 보기를 꺼야 합니다. 자세한 내용은 [분산 보기에 구성된 기본 사이트 제거](../../../core/servers/deploy/install/uninstall-sites-and-hierarchies.md#BKMK_UninstallPrimaryDistViews)을 참조하십시오.  
 
 #### <a name="prerequisites-and-limitations-for-distributed-views"></a>분산 보기의 필수 조건 및 제한 사항  
 

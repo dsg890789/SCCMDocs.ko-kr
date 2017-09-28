@@ -14,11 +14,11 @@ caps.latest.revision: "36"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 10ddbcc19da8c5fc6451f62500f17790a0349389
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 5302b5712e33c753d0193a32498bc02a2241428c
+ms.sourcegitcommit: 474e6ddbaaeac4ba17d8172321e08deeb0140d0a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="install-in-console-updates-for-system-center-configuration-manager"></a>System Center Configuration Manager의 콘솔 내 업데이트 설치
 
@@ -106,8 +106,8 @@ System Center Configuration Manager는 Microsoft 클라우드 서비스와 동�
 
 -   업데이트를 설치하도록 선택하면 필수 조건 검사가 자동으로 다시 실행됩니다.  
 
-> [!NOTE]
-> 필수 조건 검사를 시작한 다음 상태를 보면 **설치** 단계가 활성인 것으로 표시되지만 업데이트는 실제로 설치되고 있지 않습니다. 검사를 실행하는 데 이진 파일 추출과 같은 일부 작업도 설치 단계의 일부이므로 디스플레이에 설치 단계가 나열됩니다.  
+> [!NOTE]   
+> 필수 조건 검사를 시작한 다음 상태를 보면 **설치** 단계가 활성인 것으로 표시되지만 업데이트는 실제로 설치되고 있지 않습니다. 필수 구성 요소 검사를 실행하기 위해 업데이트 프로세스가 콘텐츠 라이브러리에서 패키지를 추출하고 현재 필수 구성 요소 검사가 액세스할 수 있는 준비 폴더에 넣습니다.  업데이트를 설치할 때 이와 동일한 프로세스가 실행됩니다. 이러한 이유로 설치가 ‘진행 중’으로 표시됩니다. *업데이트 패키지 추출* 단계만 설치 범주에 표시됩니다.  
 
 나중에 업데이트를 설치하면 필수 조건 검사 경고를 무시하도록 업데이트를 구성할 수 있습니다.  
 

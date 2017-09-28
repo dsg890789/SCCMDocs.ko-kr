@@ -2,7 +2,7 @@
 title: "지원되는 Active Directory 도메인 | Microsoft 문서"
 description: "Active Directory 도메인에서 System Center Configuration Manager 사이트 시스템의 멤버 자격에 대한 요구 사항을 가져옵니다."
 ms.custom: na
-ms.date: 3/23/2017
+ms.date: 9/18/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 2654ab4eaaaf6a4bf3bd7dca9908e7033647dc2c
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 813c2f55a5815ae3739149abc3f650a750d52cd8
+ms.sourcegitcommit: 474e6ddbaaeac4ba17d8172321e08deeb0140d0a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="supported-active-directory-domains-for-system-center-configuration-manager"></a>System Center Configuration Manager에서 지원되는 Active Directory 도메인
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 08/07/2017
 
 -   사이트 시스템 역할을 호스트하는 컴퓨터에 대해 다음을 변경할 수는 없습니다.  
 
-    -   도메인 멤버 자격  
+    -   도메인 멤버 자격*(여기에는 도메인에서 사이트 시스템을 제거한 다음 동일한 도메인에 다시 가입하는 것이 포함됩니다.)*
 
     -   도메인 이름  
 
