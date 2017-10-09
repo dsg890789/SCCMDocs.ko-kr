@@ -222,7 +222,7 @@ ms.lasthandoff: 08/07/2017
     > [!NOTE]  
     >  사이트 서버의 컴퓨터 계정에 원본 폴더에 대한 **읽기** 권한이 있어야 합니다.  
 
-2.  [Create prestaged media](#BKMK_CreatePrestagedMedia) 섹션에서 만든 사전 준비된 미디어 파일을 패키지 원본 폴더에 복사합니다.  
+2.  [사전 준비된 미디어 만들기](#BKMK_CreatePrestagedMedia) 섹션에서 만든 사전 준비된 미디어 파일을 패키지 원본 폴더에 복사합니다.  
 
 3.  Windows To Go Creator 도구(WTGCreator.exe)를 패키지 원본 폴더에 복사합니다. 이 Creator 도구는 <*ConfigMgrInstallationFolder*>\OSD\Tools\WTG\Creator 위치의 모든 기본 사이트에서 사용할 수 있습니다.  
 
@@ -281,7 +281,7 @@ ms.lasthandoff: 08/07/2017
  Windows To Go를 통해 TPM을 사용하지 않고 부팅 가능한 외부 드라이브에서 BitLocker를 사용할 수 있습니다. 따라서 별도의 도구를 사용하여 Windows To Go 드라이브에 BitLocker를 구성해야 합니다. BitLocker를 사용하려면 **Windows 및 ConfigMgr 설치** 단계 이후에 작업 순서에 작업을 추가해야 합니다.  
 
 > [!NOTE]  
->  Windows To Go에 대한 Bitlocker에는 암호가 필요합니다. [Create prestaged media](#BKMK_CreatePrestagedMedia) 단계에서 시작 전 명령의 일부로 OSDBitLockerPIN 변수를 사용하여 암호를 설정합니다.  
+>  Windows To Go에 대한 Bitlocker에는 암호가 필요합니다. [사전 준비된 미디어 만들기](#BKMK_CreatePrestagedMedia) 단계에서 시작 전 명령의 일부로 OSDBitLockerPIN 변수를 사용하여 암호를 설정합니다.  
 
  Windows To Go에 BitLocker를 사용하도록 Windows 8 작업 순서를 업데이트하려면 다음 절차를 따르십시오.  
 
@@ -410,7 +410,7 @@ ms.lasthandoff: 08/07/2017
     2.  **컬렉션**: **찾아보기** 를 클릭하고 사용자가 Windows To Go를 프로비저닝할 수 있는 모든 장치를 포함하는 컬렉션을 선택합니다.  
 
         > [!IMPORTANT]  
-        >  [Create prestaged media](#BKMK_CreatePrestagedMedia) 섹션에서 만든 사전 준비된 미디어가 SMSTSPreferredAdvertID 변수를 사용하는 경우 작업 순서를 **모든 시스템** 컬렉션을 배포하고 **콘텐츠** 페이지에서 **Windows PE만(숨김)** 설정을 지정할 수 있습니다. 작업 순서가 숨겨지므로 미디어에만 사용할 수 있습니다.  
+        >  [사전 준비된 미디어 만들기](#BKMK_CreatePrestagedMedia) 섹션에서 만든 사전 준비된 미디어가 SMSTSPreferredAdvertID 변수를 사용하는 경우 작업 순서를 **모든 시스템** 컬렉션을 배포하고 **콘텐츠** 페이지에서 **Windows PE만(숨김)** 설정을 지정할 수 있습니다. 작업 순서가 숨겨지므로 미디어에만 사용할 수 있습니다.  
 
     3.  **이 컬렉션에 연결된 기본 배포 지점 그룹 사용**: 컬렉션의 기본 배포 지점 그룹에 패키지 콘텐츠를 저장하려는 경우 이 옵션을 선택합니다. 선택한 컬렉션을 배포 지점 그룹과 연결하지 않은 경우 이 옵션을 사용할 수 없게 됩니다.  
 
@@ -421,7 +421,7 @@ ms.lasthandoff: 08/07/2017
     -   **다음에 사용 가능하도록 설정**: 작업 순서를 Configuration Manager 클라이언트, 미디어 또는 PXE에 사용할 수 있는지 여부를 지정합니다.  
 
         > [!IMPORTANT]  
-        >  자동화된 작업 순서 배포에는 **미디어 및 PXE만(숨김)** 설정을 사용합니다. **운영 체제 자동 배포 허용** 을 선택하고, Windows To Go 드라이브가 검색되는 경우 사용자 개입 없이 Windows To Go 배포로 컴퓨터를 자동 부팅하려면 사전 준비된 미디어의 일부로 SMSTSPreferredAdvertID 변수를 설정합니다. 사전 준비된 미디어 설정에 대한 자세한 내용은 [Create prestaged media](#BKMK_CreatePrestagedMedia) 섹션을 참조하십시오.  
+        >  자동화된 작업 순서 배포에는 **미디어 및 PXE만(숨김)** 설정을 사용합니다. **운영 체제 자동 배포 허용** 을 선택하고, Windows To Go 드라이브가 검색되는 경우 사용자 개입 없이 Windows To Go 배포로 컴퓨터를 자동 부팅하려면 사전 준비된 미디어의 일부로 SMSTSPreferredAdvertID 변수를 설정합니다. 사전 준비된 미디어 설정에 대한 자세한 내용은 [사전 준비된 미디어 만들기](#BKMK_CreatePrestagedMedia) 섹션을 참조하십시오.  
 
 7.  **예약** 페이지에서 다음 설정을 구성한 후에 **다음**을 클릭합니다.  
 
@@ -459,7 +459,7 @@ ms.lasthandoff: 08/07/2017
  Windows To Go 패키지와 Windows 8 작업 순서를 배포한 후 사용자가 Windows To Go Creator를 사용할 수 있습니다. 사용자는 소프트웨어 카탈로그 또는 소프트웨어 센터(Windows To Go Creator가 장치에 배포된 경우)로 이동하여 Windows To Go Creator 프로그램을 실행할 수 있습니다. Creator 패키지를 다운로드한 후 작업 표시줄에 깜박이는 아이콘이 표시됩니다. 해당 아이콘을 클릭하면 프로비전할 Windows To Go 드라이브를 선택할 수 있는 대화 상자가 나타납니다. 단, /drive 명령줄 옵션이 사용되지 않은 상태여야 합니다. 드라이브가 Windows To Go 요구 사항을 충족하지 않거나 드라이브에 이미지를 설치할 여유 공간이 부족한 경우 Creator 프로그램에 오류 메시지가 표시됩니다. 사용자는 확인 페이지에서 적용할 드라이브와 이미지를 확인할 수 있습니다. Creator에서 Windows To Go 드라이브로 콘텐츠가 구성 및 사전 준비되는 경우 진행률 대화 상자가 표시됩니다. 사전 준비가 완료된 후 컴퓨터를 다시 시작하여 Windows To Go 드라이브로 부팅하라는 메시지가 표시됩니다.  
 
 > [!NOTE]  
->  If you did not enable boot redirection as part of the command line for the creator program in the [Create a Windows To Go Creator package](#BKMK_CreatePackage) 섹션에서 Creator 프로그램에 대한 명령줄의 일부로 부팅 리디렉션을 사용하지 않은 경우 시스템을 다시 시작할 때마다 사용자가 수동으로 Windows To Go 드라이브로 부팅해야 합니다.  
+>  [Windows To Go Creator 패키지 만들기](#BKMK_CreatePackage) 섹션에서 Creator 프로그램에 대한 명령줄의 일부로 부팅 리디렉션을 사용하도록 설정하지 않은 경우 시스템을 다시 시작할 때마다 사용자가 수동으로 Windows To Go 드라이브로 부팅해야 할 수 있습니다.  
 
 ###  <a name="BKMK_ConfigureStageDrive"></a> Configuration Manager에서 Windows To Go 드라이브 구성 및 준비  
  컴퓨터가 Windows To Go 드라이브로 다시 시작되고 나면 해당 드라이브는 Windows PE로 부팅되어 관리 지점에 연결해 정책을 가져오며, 그러면 운영 체제 배포가 완료됩니다. Configuration Manager에서 드라이브를 구성하고 준비합니다. Configuration Manager의 드라이브 준비가 완료된 후 사용자는 컴퓨터를 다시 시작하여 프로비저닝 프로세스를 마무리할 수 있습니다(예: 도메인 가입 또는 응용 프로그램 설치). 이 프로세스는 사전 준비된 미디어의 경우에도 동일합니다.  
