@@ -14,11 +14,11 @@ caps.latest.revision: "24"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: 167e639cdb9995fd743787cc9fbf364ec70f6ed9
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 523c7e7fd406274b0c0d88fcc4bd6b6247fa34e8
+ms.sourcegitcommit: c145e515843a0f37c2e5ca5dbd22072a219d06b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="infrastructure-requirements-for-operating-system-deployment-in-system-center-configuration-manager"></a>System Center Configuration Manager의 운영 체제 배포에 대한 인프라 요구 사항
 
@@ -40,7 +40,7 @@ System Center 2012 Configuration Manager의 운영 체제 배포에는 외부 �
 
 -   Windows PE(Windows 사전 설치 환경)
 
-여러 버전의 Configuration Manager에서 사용할 수 있는 Windows 10 ADK 버전 목록은 [Windows 10 클라이언트 지원](https://docs.microsoft.com/en-us/sccm/core/plan-design/configs/support-for-windows-10#windows-10-adk)을 참조하세요.
+여러 버전의 Configuration Manager에서 사용할 수 있는 Windows 10 ADK 버전 목록은 [Windows 10 클라이언트 지원](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10#windows-10-adk)을 참조하세요.
 
  <sup>1</sup> SMS 공급자 사이트 시스템 서버에는 USMT가 필요하지 않습니다.  
 

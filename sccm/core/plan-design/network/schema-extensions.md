@@ -16,11 +16,11 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: noindex
-ms.openlocfilehash: 5b5540c35c02df6e3d06e4aa9269b8da3238233e
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 5ec1e9368e836382b143d7b2bf9d1a6a7bc2fa22
+ms.sourcegitcommit: 96b79fa091f44e8e6ac5652f6cbbb4b873a8bad9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="schema-extensions-for-system-center-configuration-manager"></a>System Center Configuration Manager의 스키마 확장
 
@@ -30,7 +30,7 @@ Active Directory 스키마를 확장하여 Configuration Manager를 지원할 �
 
 -   Active Directory 스키마를 확장하는 것이 좋지만, 필수 사항은 아닙니다.  
 
-[Active Directory 스키마를 확장](https://msdnstage.redmond.corp.microsoft.com/en-US/library/mt345589\(TechNet.10\).aspx)하기 전에 Active Directory Domain Services 및 [Active Directory 스키마 수정](https://technet.microsoft.com/library/cc759402\(v=ws.10\).aspx)에 대해 잘 알고 있어야 합니다.  
+[Active Directory 스키마를 확장](https://docs.microsoft.com/en-us/sccm/core/plan-design/network/extend-the-active-directory-schema)하기 전에 Active Directory Domain Services 및 [Active Directory 스키마 수정](https://technet.microsoft.com/library/cc759402\(v=ws.10\).aspx)에 대해 잘 알고 있어야 합니다.  
 
 ## <a name="considerations-for-extending-the-active-directory-schema-for-configuration-manager"></a>Configuration Manager를 위한 Active Directory 스키마 확장에 대한 고려 사항  
 

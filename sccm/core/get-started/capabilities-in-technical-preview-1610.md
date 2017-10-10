@@ -14,11 +14,11 @@ caps.latest.revision: "2"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 59633ce68e2bb2d722900215751f345d6d098721
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: b164b6a177b8b4d1eebd0bbd54e67e90376929be
+ms.sourcegitcommit: c145e515843a0f37c2e5ca5dbd22072a219d06b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="capabilities-in-technical-preview-1610-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1610의 기능
 
@@ -63,7 +63,7 @@ ms.lasthandoff: 08/07/2017
 #### <a name="try-it-out"></a>기능 직접 사용해 보기
 승인된 응용 프로그램 요청을 거부하려면:
 
-1.  Configuration Manager 콘솔에서 승인이 필요한 [응용 프로그램을 만들고 배포합니다](https://docs.microsoft.com/en-us/sccm/apps/deploy-use/create-applications).
+1.  Configuration Manager 콘솔에서 승인이 필요한 [응용 프로그램을 만들고 배포합니다](https://docs.microsoft.com/sccm/apps/deploy-use/create-applications).
 2.  클라이언트 컴퓨터에서 소프트웨어 센터를 열고 응용 프로그램에 대한 요청을 제출합니다.
 3.  Configuration Manager 콘솔에서 응용 프로그램 요청을 승인합니다.
 4.  승인된 응용 프로그램 요청 거부: Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **개요** > **응용 프로그램 관리** > **승인 요청**으로 이동한 다음 거부할 응용 프로그램 요청을 선택합니다.  리본에서 **거부**를 클릭합니다.
