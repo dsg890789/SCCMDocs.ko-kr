@@ -2,7 +2,7 @@
 title: "DEP(장치 등록 프로그램)를 사용하여 iOS 장치 등록 - Configuration Manager | Microsoft 문서"
 description: "Configuration Manager 및 Intune에서 하이브리드 배포를 위해 iOS DEP(장치 등록 프로그램) 등록을 사용하도록 설정합니다."
 ms.custom: na
-ms.date: 08/15/2017
+ms.date: 09/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision: "9"
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.openlocfilehash: e76e46ce0d6ee0582d5161709ff114b936ac5660
-ms.sourcegitcommit: db7b7ec347638efd05cdba474e8a8f8535516116
+ms.openlocfilehash: f34f7527c14e1be6229212bfb2d8fd022ee6defe
+ms.sourcegitcommit: 8faf42135a8dc9c384407e64f3f8ba204fb15847
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="ios-device-enrollment-program-dep-enrollment-for-hybrid-deployments-with-configuration-manager"></a>Configuration Manager에서의 하이브리드 배포를 위한 iOS DEP(장치 등록 프로그램) 등록
 
@@ -40,6 +40,7 @@ ms.lasthandoff: 08/16/2017
 3.  **장치 등록 프로그램 토큰 가져오기**   
     [장치 등록 프로그램 포털](https://deploy.apple.com) (https://deploy.apple.com) 로 이동하고 회사 Apple ID로 로그인합니다. 나중에 DEP 토큰을 갱신하려면 이 Apple ID를 사용해야 합니다.  
     1.  [장치 등록 프로그램 포털](https://deploy.apple.com)에서 **장치 등록 프로그램** > **서버 관리**로 이동한 후 **MDM 서버 추가**를 클릭합니다.  
+    ![장비 등록 프로그램 포털에서 MDM 서버 추가 스크린샷](../media/enrollment-program-token-add-server.png)
     2.  **MDM 서버 이름**을 입력한 다음 **다음**을 클릭합니다. 서버 이름은 참조용으로 MDM 서버를 식별하기 위한 것으로, Intune 또는 Configuration Manager 서버의 URL이나 이름이 아닙니다.  
     3.  **<ServerName\> 추가** 대화 상자가 열립니다. **파일 선택... 클릭하여** 을 클릭하여 이전 단계에서 만든 .pem 파일을 업로드하고 **다음**.  
     4.  **<ServerName\> 추가** 대화 상자에 **내 서버 토큰** 링크가 표시됩니다. 컴퓨터에 서버 토큰(으로 관리할 수 있습니다.p7m) 파일을 다운로드한 후 **완료**으로 관리할 수 있습니다.  
@@ -97,6 +98,7 @@ ms.lasthandoff: 08/16/2017
 
 1. [장치 등록 프로그램 포털](https://deploy.apple.com) (https://deploy.apple.com) 로 이동하고 회사 Apple ID로 로그인합니다.
 2. **배포 프로그램** > **장치 등록 프로그램** > **장치 관리**으로 관리할 수 있습니다. **장치 선택**방법을 지정하고, 장치 정보를 제공한 다음 장치 **일련번호**, **주문 번호**또는 **CSV 파일 업로드**에 따라 세부 정보를 지정합니다. **서버에 할당**을 선택하고 3단계에서 지정한 <*서버 이름*>을 선택한 후 **확인**을 클릭합니다.  
+![장치를 추가하는 Apple 장비 등록 프로그램 포털 스크린샷](../media/enrollment-program-token-specify-serial.png)
 
 3.  **DEP 관리 장치 동기화**   
     **자산 및 준수** 작업 영역에서 **회사가 소유한 모든 장치** > **미리 선언된 장치**로 이동합니다. **홈** 탭에서 **DEP 동기화**를 클릭합니다. 동기화 요청이 Apple에 전송됩니다. 동기화가 완료되고 나면 DEP에서 관리하는 장치가 표시됩니다.

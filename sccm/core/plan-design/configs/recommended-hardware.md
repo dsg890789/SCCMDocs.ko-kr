@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 8dac6df60b07461d6410d305723b3f03fb09fa16
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 0619da4cba35d6163761a90e28b39c1976f61b48
+ms.sourcegitcommit: 96b79fa091f44e8e6ac5652f6cbbb4b873a8bad9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="recommended-hardware-for-system-center-configuration-manager"></a>System Center Configuration Manager에 권장되는 하드웨어
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 08/07/2017
 
 ###  <a name="bkmk_ScaleSiteServer"></a> 사이트 서버  
 
-|독립 실행형 기본 사이트|CPU(코어)|메모리(GB)|SQL Server에 대한 메모리 할당(%)|  
+|사이트 구성|CPU(코어)|메모리(GB)|SQL Server에 대한 메모리 할당(%)|  
 |-------------------------------|---------------|---------------|----------------------------------------|  
 |동일한 서버에 데이터베이스 사이트 역할이 있는 독립 실행형 기본 사이트 서버<sup>1</sup>|16|96|80|  
 |원격 사이트 데이터베이스가 있는 독립 실행형 기본 사이트 서버|8|16|-|  

@@ -2,7 +2,7 @@
 title: Configuration Manager Technical Preview | Microsoft Docs
 description: "System Center Configuration Manager에서 새로운 기능을 테스트 시험해 볼 수 있는 기술 미리 보기 릴리스에 대해 알아봅니다."
 ms.custom: na
-ms.date: 08/25/2017
+ms.date: 09/28/2017
 ms.prod: configuration-manager
 ms.reviewer: nab
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision: "157"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: e471e11b3c61172b4e9fcae74944d39aa0ab702f
-ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
+ms.openlocfilehash: 429e20185bd23519f78c37ded39f2638d0c80ced
+ms.sourcegitcommit: 8ac9c2c9ba1fdcbb7cc8d5be898586865fcf67c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 10/07/2017
 ---
 # <a name="technical-preview-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview
 
@@ -114,10 +114,8 @@ ms.lasthandoff: 09/13/2017
 
  |기능 |기술 미리 보기 버전 |현재 분기 버전|  
  |----------------|---------------------|--------------------|
- |Configuration Manager에서 PowerShell 스크립트를 배포할 때 매개 변수를 지정하도록 향상된 기능 <!-- 1236459 -->|[기술 미리 보기 1708](capabilities-in-technical-preview-1708.md#improvements-for-specifying-script-parameters-when-you-deploy-powershell-scripts-from-configuration-manager)|![추가되지 않음](media/Red_X.gif)|
- |관리 정보 <!-- 1353967 --> |[기술 미리 보기 1708](capabilities-in-technical-preview-1708.md#management-insights)|![추가되지 않음](media/Red_X.gif)|
- |Configuration Manager 콘솔에서 컴퓨터 다시 시작 <!-- 1356283 --> |[기술 미리 보기 1708](capabilities-in-technical-preview-1708.md#restart-computers-from-the-configuration-manager-console)|![추가되지 않음](media/Red_X.gif)|
- |소프트웨어 센터 사용자 지정 <!-- 1351224 --> |[기술 미리 보기 1708](capabilities-in-technical-preview-1708.md#software-center-customization)|![추가되지 않음](media/Red_X.gif)|
+ |Configuration Manager 콘솔에서 개선된 VPN 프로필<!-- 1313282 --> | [Tech Preview 1709](capabilities-in-technical-preview-1709.md) |![추가되지 않음](media/Red_X.gif)    |
+ |Windows 10 장치의 공동 관리|[Tech Preview 1709](capabilities-in-technical-preview-1709.md#co-management-for-windows-10-devices)|![추가되지 않음](media/Red_X.gif)    |
 
 
 ## <a name="capabilities-delivered-in-previous-technical-previews"></a>이전 Technical Preview에 포함된 기능
@@ -125,7 +123,11 @@ ms.lasthandoff: 09/13/2017
 
  |기능 |기술 미리 보기 버전 |현재 분기 버전|  
  |----------------|---------------------|--------------------|
- |Windows 10 및 Office 365에 대한 고속 설치 파일을 위한 클라이언트 피어 캐시 지원|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#client-peer-cache-support-for-express-installation-files-for-windows-10-and-office-365)|![추가되지 않음](media/Red_X.gif)|
+ |Configuration Manager에서 PowerShell 스크립트를 배포할 때 매개 변수를 지정하도록 향상된 기능 <!-- 1236459 -->|[기술 미리 보기 1708](capabilities-in-technical-preview-1708.md#improvements-for-specifying-script-parameters-when-you-deploy-powershell-scripts-from-configuration-manager)|![추가되지 않음](media/Red_X.gif)|
+ |관리 정보 <!-- 1353967 --> |[기술 미리 보기 1708](capabilities-in-technical-preview-1708.md#management-insights)|![추가되지 않음](media/Red_X.gif)|
+ |Configuration Manager 콘솔에서 컴퓨터 다시 시작 <!-- 1356283 --> |[기술 미리 보기 1708](capabilities-in-technical-preview-1708.md#restart-computers-from-the-configuration-manager-console)|![추가되지 않음](media/Red_X.gif)|
+ |소프트웨어 센터 사용자 지정 <!-- 1351224 --> |[기술 미리 보기 1708](capabilities-in-technical-preview-1708.md#software-center-customization)|![추가되지 않음](media/Red_X.gif)|
+|Windows 10 및 Office 365에 대한 고속 설치 파일을 위한 클라이언트 피어 캐시 지원|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#client-peer-cache-support-for-express-installation-files-for-windows-10-and-office-365)|![추가되지 않음](media/Red_X.gif)|
  |Surface 장치 대시보드|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#surface-device-dashboard)|![추가되지 않음](media/Red_X.gif)|
  |Windows Defender Application Guard 정책 구성 및 배포|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#configure-and-deploy-windows-defender-application-guard-policies)|![추가되지 않음](media/Red_X.gif)|
  |Configuration Manager에서 PowerShell 스크립트를 배포할 때 매개 변수 추가|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#add-parameters-when-you-deploy-powershell-scripts-from-configuration-manager)|![추가되지 않음](media/Red_X.gif)|
@@ -221,37 +223,38 @@ ms.lasthandoff: 09/13/2017
  |클라이언트에 Office 365 앱 배포|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#deploy-office-365-apps-to-clients)|[버전 1702](/sccm/sum/deploy-use/manage-office-365-proplus-updates#deploy-office-365-apps)|
  |BIOS-UEFI 변환의 향상된 기능|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#BKMK_UEFIConversion)|[버전 1610](/sccm/osd/deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion)|
  |Intune 준수 차트|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#intune-compliance-charts)|[버전 1610](/sccm/protect/deploy-use/create-compliance-policy#monitor-the-compliance-policy)|
- |ConfigMgr 클라이언트 캡처 준비 작업 순서 단계의 향상 기능|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-the-prepare-configmgr-client-for-capture-task-sequence-step)|[버전 1610](/sccm/osd/understand/task-sequence-steps#BKMK_PrepareConfigMgrClientforCapture)|
- |소프트웨어 센터 개선|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-software-center)|[버전 1610](/sccm/core/plan-design/changes/whats-new-in-version-1610#general-improvements-to-software-center)|
- |Asset Intelligence 개선 <!-- Listed as TBD. No planned addition to Current Branch -->|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-asset-intelligence)|![추가되지 않음](media/Red_X.gif)|
- |원격 제어 키보드 변환|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#remote-control-keyboard-translation)| [버전 1610](/sccm/core/clients/manage/remote-control/configuring-remote-control#enable-keyboard-translation)|
- |Windows 10 버전 업그레이드 정책의 향상 기능|[Tech Preview 1607](capabilities-in-technical-preview-1607.md#dmp_edition)|[버전 1610](/sccm/compliance/deploy-use/upgrade-windows-version)|
- |소프트웨어 센터 대화 상자에 대한 사용자 지정 가능한 브랜딩|[Tech Preview 1607](capabilities-in-technical-preview-1607.md#customizable-branding-for-software-center-dialogs)|[버전 1610](/sccm/core/plan-design/changes/whats-new-in-version-1610#customizable-branding-for-software-center-dialogs)|  
- |온-프레미스 모바일 장치 관리에 대한 여러 장치 관리 지점|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_onprem)|[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#on-premises-mobile-device-management)|
- |컬렉션으로 장치 자동 분류|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_category)|[버전 1606](/sccm/core/clients/manage/collections/automatically-categorize-devices-into-collections) |
- |필수 응용 프로그램 및 소프트웨어 업데이트 배포를 위한 유예 기간 적용|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_grace)|[버전 1610](/sccm/apps/deploy-use/deploy-applications)|
- |Device Guard로 Configuration Manager를 관리되는 설치 프로그램으로 사용|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_devg)|[버전 1702](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager )|
- |클라우드 관리 게이트웨이(이전의 클라우드 프록시 서비스)|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#cloud_proxy) | [버전 1610](/sccm/core/clients/manage/plan-cloud-management-gateway)|  
- |Configuration Manager에서 Office 365 클라이언트 에이전트 관리|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#manage_o365) |[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#software-updates)|  
- |OSDPreserveDriveLetter 작업 순서 변수는 사용되지 않습니다.|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#osdpreservedriveletter) |[버전 1606](/sccm/osd/understand/task-sequence-built-in-variables) |
- |업데이트 및 서비스 노드의 변경 내용|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#updatesandservicing)|[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#updates-and-servicing) |
- |Windows 10 장치를 위한 앱당 VPN|[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_PerAppVPN)|[버전 1606](/sccm/protect/deploy-use/create-vpn-profiles)|  
- |소프트웨어 업데이트 설치 작업 순서의 향상 기능|[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_InstallSU)|[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#operating-system-deployment)|  
- |ConfigMgr 클라이언트 캡처 준비 작업 순서 단계의 향상 기능 |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_PrepareConfigMgrClient)|[버전 1610](/sccm/osd/understand/task-sequence-steps#BKMK_PrepareConfigMgrClientforCapture) |
- |필수 응용 프로그램 배포를 위한 유예 기간 |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_Grace)|![추가되지 않음](media/Red_X.gif)|  
- |원격 장치 작업을 위한 새로운 환경 |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_Remote)|[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#device-configuration-and-protection)|  
- |비즈니스용 Windows 스토어 앱 |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_WSFB)|[버전 1606](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)|  
- |대량 구매 앱의 일반적인 향상 기능|[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_VPP2)|[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606)|  
- |EDP(엔터프라이즈 데이터 보호)|[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_VPP)|[버전 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606)|  
- |최종 사용자가 회사 포털에서 앱을 설치할 수 있습니다. |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_End)|![추가되지 않음](media/Red_X.gif)|  
- |소프트웨어 센터의 업데이트 및 운영 체제에 대한 새로운 탭|[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_SW1)|[버전 1606 ](/sccm/core/plan-design/changes/whats-new-in-version-1606#application-management)|  
- |서버 그룹 제공 |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_ServerGroups)|[버전 1606](/sccm/sum/deploy-use/service-a-server-group)|   
- |Windows Defender Advanced Threat Protection 서비스에 대한 지원 |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_ATP)|[버전 1606](/sccm/protect/deploy-use/windows-defender-advanced-threat-protection)|  
- |소프트웨어 업데이트 설치 후 Windows 10 클라이언트의 다시 시작 옵션|[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_RestartOptions)|[버전 1606](/sccm/sum/plan-design/plan-for-software-updates#restart-options-for-Windows-10-clients-after-software-update-installation)|  
- |온-프레미스 장치 상태 증명 |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_DHA)|[버전 1606](/sccm/core/servers/manage/health-attestation)|  
- |IMEI 또는 iOS 일련 번호로 회사 소유 장치 미리 선언|[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_IMEI)|[버전 1606](/sccm/mdm/deploy-use/predeclare-devices-with-hardware-id)|  
 
- <!--  TP 1604 and earlier has aged out of support and all features are in Current Branch builds:
+
+ <!--  TP 1608 and earlier have aged out of support. Features from these previews are either in the minimum supported Current Branch version, or are not scheduled for inclusion.
+ |Improvements to the Prepare ConfigMgr Client for Capture task sequence step|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-the-prepare-configmgr-client-for-capture-task-sequence-step)|[Version 1610](/sccm/osd/understand/task-sequence-steps#BKMK_PrepareConfigMgrClientforCapture)|
+ |Improvements to Software Center|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-software-center)|[Version 1610](/sccm/core/plan-design/changes/whats-new-in-version-1610#general-improvements-to-software-center)|
+ |Improvements to Asset Intelligence|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-asset-intelligence)|N/A|
+ |Remote control keyboard translation|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#remote-control-keyboard-translation)|[Version 1702](/sccm/core/clients/manage/remote-control/configuring-remote-control#enable-keyboard-translation)|
+ |Improvements to the Windows 10 Edition Upgrade Policy|[Tech Preview 1607](capabilities-in-technical-preview-1607.md#dmp_edition)|[Version 1610](/sccm/compliance/deploy-use/upgrade-windows-version)|
+ |Customizable Branding for Software Center Dialogs|[Tech Preview 1607](capabilities-in-technical-preview-1607.md#customizable-branding-for-software-center-dialogs)|[Version 1610](/sccm/core/plan-design/changes/whats-new-in-version-1610#customizable-branding-for-software-center-dialogs)|  
+ |Multiple device management points for On-premises Mobile Device Management|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_onprem)|[Version 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#on-premises-mobile-device-management)|
+ |Automatically categorize devices into collections|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_category)|[Version 1606](/sccm/core/clients/manage/collections/automatically-categorize-devices-into-collections) |
+ |Enforcement grace period for required application and software update deployments|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_grace)|[Version 1610](/sccm/apps/deploy-use/deploy-applications)|
+ |Using Configuration Manager as a Managed Installer with Device Guard|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_devg)|[Version 1702](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)|
+ |Cloud management gateway (formerly Cloud Proxy Service)|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#cloud_proxy) | [Version 1610](/sccm/core/clients/manage/plan-cloud-management-gateway)|  
+ |Manage the Office 365 client agent in Configuration Manager|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#manage_o365) |[Version 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#software-updates)|  
+ |The OSDPreserveDriveLetter task sequence variable has been deprecated|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#osdpreservedriveletter) |[Version 1606](/sccm/osd/understand/task-sequence-built-in-variables) |
+ |Changes for the Updates and Servicing Node|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#updatesandservicing)|[Version 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#updates-and-servicing) |
+ |Per-app VPN for Windows 10 devices|[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_PerAppVPN)|[Version 1606](/sccm/protect/deploy-use/create-vpn-profiles)|  
+ |Improvements to the Install software updates task sequence|[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_InstallSU)|[Version 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#operating-system-deployment)|  
+ |Improvements to the Prepare ConfigMgr Client for Capture task sequence step |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_PrepareConfigMgrClient)|[Version 1610](/sccm/osd/understand/task-sequence-steps#BKMK_PrepareConfigMgrClientforCapture) |
+ |Grace period for required application deployments |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_Grace)|N/A|  
+ |New experience for remote device actions |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_Remote)|[Version 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#device-configuration-and-protection)|  
+ |Windows Store for Business apps |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_WSFB)|[Version 1606](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)|  
+ |General improvements for volume-purchased apps|[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_VPP2)|[Version 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606)|  
+ |Enterprise Data Protection (EDP)|[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_VPP)|[Version 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606)|  
+ |End users can install apps from the Company Portal |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_End)|N/A|  
+ |New tabs for Updates and Operating Systems in Software Center|[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_SW1)|[Version 1606 ](/sccm/core/plan-design/changes/whats-new-in-version-1606#application-management)|  
+ |Service a server group |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_ServerGroups)|[Version 1606](/sccm/sum/deploy-use/service-a-server-group)|   
+ |Support for Windows Defender Advanced Threat Protection service |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_ATP)|[Version 1606](/sccm/protect/deploy-use/windows-defender-advanced-threat-protection)|  
+ |New restart options for Windows 10 clients after software update installation|[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_RestartOptions)|[Version 1606](/sccm/sum/plan-design/plan-for-software-updates#restart-options-for-Windows-10-clients-after-software-update-installation)|  
+ |On-premises Device Health Attestation |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_DHA)|[Version 1606](/sccm/core/servers/manage/health-attestation)|  
+ |Pre-declare corporate-owned devices with IMEI or iOS serial number|[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_IMEI)|[Version 1606](/sccm/mdm/deploy-use/predeclare-devices-with-hardware-id)|  
  |Manage volume-purchased apps from the Windows Store for Business| [Tech Preview 1604](capabilities-in-technical-preview-1604.md#BKMK_WindowsVPP)|[Version 1606](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)|  
  |Improvements to Microsoft Passport for Work management|[Tech Preview 1604](capabilities-in-technical-preview-1604.md#BKMK_PFW)|[Version 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#device-configuration-and-protection)|  
  |Option for clients to switch to a new software update point|[Tech Preview 1604](capabilities-in-technical-preview-1604.md#bkmk_switchsup)|[Version 1606](/sccm/sum/plan-design/plan-for-software-updates#BKMK_ManuallySwitchSUPs)|  

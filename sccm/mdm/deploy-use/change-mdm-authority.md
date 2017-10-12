@@ -1,6 +1,6 @@
 ---
 title: "MDM 기관 변경 | Microsoft Docs"
-description: "Configuration Manager(하이브리드)에서 Intune 독립 실행형으로 또는 그 반대로 MDM 기관을 변경하는 방법에 알아봅니다."
+description: "Configuration Manager(하이브리드)에서 MDM 기관을 Intune 독립 실행형으로 변경하는 방법을 알아봅니다."
 keywords: 
 author: dougeby
 manager: angrobe
@@ -9,14 +9,17 @@ ms.topic: article
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: cc397ab5-125f-4f17-905b-fab980194f49
-ms.openlocfilehash: d24e6e736397a4612db7b47e997d8cb1f97c4de9
-ms.sourcegitcommit: 948644072bd158b156f782a4376bcd50fac7c73a
+ms.openlocfilehash: 489c01f92d42ed12ac5464307a16713ca898d251
+ms.sourcegitcommit: 8ac9c2c9ba1fdcbb7cc8d5be898586865fcf67c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/07/2017
 ---
 # <a name="change-your-mdm-authority"></a>MDM 기관 변경
 Configuration Manager 버전 1610부터 Microsoft 지원에 문의하지 않고 기존 관리 장치에 대한 등록 취소 및 다시 등록을 수행할 필요 없이 MDM 기관을 변경할 수 있습니다. 이 항목에서는 Configuration Manager 콘솔(하이브리드)에서 구성된 기존 Microsoft Intune 테넌트를 Intune 독립 실행형으로 변경하는 단계를 설명합니다.
+
+> [!Note]    
+> MDM 기관이 Intune으로 설정된 기존 Microsoft Intune 테넌트를 Configuration Manager(하이브리드)로 변경하려면 [MDM 기관 변경](https://docs.microsoft.com/intune-classic/deploy-use/change-mdm-authority)을 참조하세요.
 
 > [!Important]    
 > 이 항목에서는 이전에 사용자를 마이그레이션하지 않은 경우 MDM 기관을 변경합니다. [사용자의 하위 집합을 마이그레이션한](migrate-hybridmdm-to-intunesa.md) 후 MDM 기관을 변경하려면 [MDM 기관을 변경](migrate-change-mdm-authority.md)을 참조하세요.

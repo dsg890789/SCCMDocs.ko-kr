@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager를 사용하여 원격 초기화, 잠금 또는 암호 재설정으로 데이터 보호 | Microsoft Docs"
 description: "System Center Configuration Manager를 사용하여 전체 초기화, 선택적 초기화, 원격 잠금 또는 암호 다시 설정으로 장치 데이터를 보호합니다."
 ms.custom: na
-ms.date: 03/27/2017
+ms.date: 09/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,14 +12,14 @@ ms.topic: article
 ms.assetid: 770da7bd-02dd-474a-9604-93ff1ea0c1e4
 caps.latest.revision: "18"
 caps.handback.revision: "0"
-author: nathbarn
-ms.author: nathbarn
+author: dougeby
+ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 351fdc6328dd0859d60e00b128963df738e69f81
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: ea92d7b4656a04f312f04c19cac6b17df931c9c5
+ms.sourcegitcommit: db079cd7322e7d4926b2df0ccb37e752c570d902
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="protect-data-with-remote-wipe-lock-or-passcode-reset-by-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 원격 초기화, 잠금 또는 암호 재설정으로 데이터 보호
 
@@ -179,6 +179,9 @@ Windows 8.1 및 Windows RT 8.1에서 파일 시스템 암호화(EFS)-암호화�
 |Windows RT 8.1 |지원 안 됨|  
 |Windows 8.1 PC |지원 안 됨|  
 
+> [!Note]    
+> 환경에서 최상위 사이트의 암호 다시 설정 작업을 수행해야 합니다. 예를 들어 중앙 관리 사이트를 사용하는 경우 해당 사이트에서만 작업을 수행할 수 있습니다. 독립 실행형 기본 사이트를 사용하는 경우 해당 사이트에서만 작업을 수행할 수 있습니다.
+
 #### <a name="to-reset-the-passcode-on-a-mobile-device-remotely-in-configuration-manager"></a>Configuration Manager에서 원격으로 모바일 장치의 암호를 재설정하려면  
 
 1. Configuration Manager 콘솔에서 **자산 및 준수**를 선택하고 **장치**를 선택합니다. **장치 컬렉션** 을 선택하고 컬렉션을 선택할 수도 있습니다.  
@@ -206,6 +209,9 @@ Windows 8.1 및 Windows RT 8.1에서 파일 시스템 암호화(EFS)-암호화�
 |Windows Phone 8 및 Windows Phone 8.1|지원됨.|  
 |Windows RT 8.1 |장치의 현재 사용자가 장치를 등록한 사용자인 경우 지원됨|  
 |Windows 8.1|장치의 현재 사용자가 장치를 등록한 사용자인 경우 지원됨|  
+
+> [!Note]    
+> 환경에서 최상위 사이트의 원격 잠금 작업을 수행해야 합니다. 예를 들어 중앙 관리 사이트를 사용하는 경우 해당 사이트에서만 작업을 수행할 수 있습니다. 독립 실행형 기본 사이트를 사용하는 경우 해당 사이트에서만 작업을 수행할 수 있습니다.
 
 #### <a name="to-lock-a-mobile-device-remotely-through-the-configuration-manager-console"></a>Configuration Manager 콘솔을 통해 원격으로 모바일 장치를 잠그려면  
 

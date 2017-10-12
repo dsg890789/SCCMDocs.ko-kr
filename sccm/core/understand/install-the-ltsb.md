@@ -14,11 +14,11 @@ caps.latest.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 06565bc52e2c409b905bbc448262cf9da25eabb0
-ms.sourcegitcommit: 4c3906cf9614420cb8527da9e48978eb0b8f0e7a
+ms.openlocfilehash: 247fbe5313c17be906802acfaa6952ab3358122e
+ms.sourcegitcommit: a17f5dece340a70cedbec03d19938dab90ae60b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="install-and-upgrade-with-the-version-1606-baseline-media-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 버전 1606 기준 미디어를 사용하여 설치 및 업그레이드
 
@@ -121,14 +121,14 @@ System Center 2012 Configuration Manager에서 업그레이드하는 경우 [Sys
 **LTSB로 업그레이드:**  
 - 업그레이드 전 체크리스트에서 수행할 추가 단계
 - 설치하는 동안 LTSB를 선택해야 하며, Software Assurance 계약에 대한 세부 정보를 지정할 수 있습니다.
-- System Center 2012 Configuration Manager 서비스 팩 2 또는 System Center 2012 R2 Configuration Manager 서비스 팩 1을 실행하는 사이트만 업그레이드할 수 있습니다.
+- System Center 2012 Configuration Manager 서비스 팩 1, System Center 2012 Configuration Manager 서비스 팩 2, System Center 2012 R2 Configuration Manager 서비스 팩 1 또는 System Center 2012 R2 Configuration Manager 서비스 팩 없을 실행하는 사이트만을 업그레이드할 수 있습니다.
 
 ### <a name="in-place-upgrade-paths-for-the-1606-baseline-media"></a>1606 기준 미디어에 대한 전체 업그레이드 경로
 1606 기준 미디어를 사용하여 다음 버전을 System Center Configuration Manager의 사용이 허가된 버전으로 업그레이드할 수 있습니다.
 - System Center 2012 R2 Configuration Manager 서비스 팩 1
 - System Center 2012 R2 Configuration Manager 서비스 팩 없음(2016년 12월 15일에 릴리스된 버전 1606의 기준 미디어를 사용해야 함)
 - System Center 2012 Configuration Manager 서비스 팩 2
-- System Center 2012 Configuration Manager 서비스 팩 1
+- System Center 2012 Configuration Manager 서비스 팩 1(2016년 12월 15일에 릴리스된 버전 1606의 기준 미디어를 사용해야 함)
 
 
 이 미디어를 사용하여 현재 분기의 사용이 허가되지 않은 평가판을 현재 분기의 정품 버전으로 업그레이드할 수도 있습니다.

@@ -14,11 +14,11 @@ caps.latest.revision:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.openlocfilehash: 4fd2d3b8aae6a2f42e7c6a87723d16368be30984
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: d353f47671a0c1e67c34bb9641fa9dd007b9f8be
+ms.sourcegitcommit: c145e515843a0f37c2e5ca5dbd22072a219d06b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Intune과 Lookout 통합 문제 해결
 
@@ -34,7 +34,7 @@ Lookout MTP는 구성된 Azure AD 그룹의 사용자만 액세스할 수 있도
 
 * 메일: enterprisesupport@lookout.com
 * [MTP 콘솔](http://aad.lookout.com)에 로그인한 다음 **지원** 모듈로 이동합니다.
-* https://enterprise.support.lookout.com/hc/en-us/requests로 이동하여 지원 요청을 수행합니다.
+* https://enterprise.support.lookout.com/hc/requests로 이동하여 지원 요청을 수행합니다.
 
 ### <a name="unable-to-sign-in"></a>로그인할 수 없음
 Azure AD 전역 관리자가 초기 Lookout 설치에 동의하지 않은 경우 다음 오류가 나타날 수 있습니다.
@@ -73,7 +73,7 @@ Lookout MTP 콘솔의 **시스템** 모듈에서 **Intune 커넥터** 탭으로 
 Lookout MTP 콘솔의 **장치** 모듈에서 관리자는 장치를 선택하고 삭제하도록 선택할 수 있습니다.   다음에 장치 소유자가 Lookout for Work 앱을 열고 **활성화**를 탭하면 장치 상태가 전체 다시 동기화를 수행합니다.
 
 ### <a name="the-owner-of-the-device-is-no-longer-using-this-device"></a>장치 소유자가 더 이상 이 장치를 사용하고 있지 않음
-장치를 초기화하고 [이 항목](https://docs.microsoft.com/en-us/sccm/mdm/deploy-use/wipe-lock-reset-devices#full-wipe)에 설명된 대로 등록하도록 새 사용자에게 요청해야 합니다.
+장치를 초기화하고 [이 항목](https://docs.microsoft.com/sccm/mdm/deploy-use/wipe-lock-reset-devices#full-wipe)에 설명된 대로 등록하도록 새 사용자에게 요청해야 합니다.
 
 
 Lookout MTP 콘솔의 **장치** 모듈로 이동한 다음 **삭제**를 선택할 수도 있습니다.

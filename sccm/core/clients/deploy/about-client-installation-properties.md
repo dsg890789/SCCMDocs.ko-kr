@@ -14,11 +14,11 @@ caps.latest.revision: "15"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 5148fe852e4d63e1cfd2d5b9c62369155dbecb89
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: ef515da67a7293de60a7678dee69e9785d339352
+ms.sourcegitcommit: 96b79fa091f44e8e6ac5652f6cbbb4b873a8bad9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="about-client-installation-properties-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 설치 속성 정보
 
@@ -179,7 +179,7 @@ CCMSetup이 설치 파일 다운로드를 중지하기 전까지 시도할 시�
 
  이 옵션을 지정하지 않으면 HTTPS 연결을 설정하기 전에 클라이언트에서 CRL을 확인합니다.  
 
- 클라이언트 CRL 확인에 대한 자세한 내용은 [Plan for Security 에서 System Center Configuration Manager](../../plan-design/security/plan-for-security.md#BKMK_PlanningForCRLs) 에서[Plan for security 에서 System Center Configuration Manager](../../plan-design/security/plan-for-security.md)을 참조하세요.  
+ 클라이언트 CRL 검사에 대한 자세한 내용은 [System Center Configuration Manager의 보안 계획](../../plan-design/security/plan-for-security.md#BKMK_PlanningForCRLs)에서 [PKI 인증서 해지 계획](../../plan-design/security/plan-for-security.md)을 참조하세요.  
 
  예: `CCMSetup.exe /UsePKICert /NoCRLCheck`  
 
@@ -332,7 +332,7 @@ CCMSetup이 설치 파일 다운로드를 중지하기 전까지 시도할 시�
 
  설치 속성 SMSSITECODE=AUTO를 사용하여 이 옵션을 지정하지 마세요. 인터넷 기반 클라이언트가 인터넷 기반 사이트에 직접 할당되어야 합니다.  
 
- 예: `CCMSetup.exe  /UsePKICert/ CCMHOSTNAME="SMSMP01.corp.contoso.com"`  
+ 예: `CCMSetup.exe  /UsePKICert CCMHOSTNAME="SMSMP01.corp.contoso.com"`  
 
 ### <a name="ccmhttpport"></a>CCMHTTPPORT
 
@@ -402,7 +402,7 @@ TRUE로 설정되면 클라이언트 컴퓨터에서 관리자 자격 증명을 
 
 Configuration Manager 클라이언트 컴퓨터에서 전송한 상태 메시지를 받아서 처리하는 대체 상태 지점을 지정합니다.  
 
-대체 상태 지점에 대한 자세한 내용은 [대체 상태 지점 필요 여부 결정](/sccm/core/clients/deploy/plan#determine-if-you-need-a-fallback-status-point)을 참조하세요.  
+대체 상태 지점에 대한 자세한 내용은 [대체 상태 지점 필요 여부 결정](/sccm/core/clients/deploy/plan/determine-the-site-system-roles-for-clients#determine-if-you-need-a-fallback-status-point)을 참조하세요.  
 
 예: `CCMSetup.exe FSP=SMSFP01`  
 

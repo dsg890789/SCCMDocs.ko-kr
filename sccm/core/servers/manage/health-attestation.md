@@ -2,7 +2,7 @@
 title: "상태 증명 | Microsoft 문서"
 description: "Configuration Manager 콘솔에서 볼 수 있는 장치 상태 증명 기능에 대해 알아봅니다."
 ms.custom: na
-ms.date: 03/27/2017
+ms.date: 10/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision: "17"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.openlocfilehash: 54b3433a002b8ef29059bab04458138348f95d66
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 11d58237ea1e88785f6991450b3e898562b23918
+ms.sourcegitcommit: a17f5dece340a70cedbec03d19938dab90ae60b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="health-attestation-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 상태 증명
 
@@ -38,8 +38,8 @@ ms.lasthandoff: 08/07/2017
  **요구 사항:**  
 
 -   [장치 상태 증명이 사용하도록 설정된](https://technet.microsoft.com/windows-server-docs/security/device-health-attestation) Windows 10 버전 1607 또는 Windows Server 2016 버전 1607을 실행하는 클라이언트 장치
--    TPM 1.2 또는 TPM 2 사용 장치
--   Configuration Manager 클라이언트 에이전트와 has.spserv.microsoft.com(포트 443) 상태 증명 서비스(클라우드 관리) 간 통신 또는 장치 상태 증명 사용 관리 지점(온-프레미스)과의 통신
+-   TPM 1.2 또는 TPM 2 사용 장치
+-   클라우드 관리를 사용하는 경우 Configuration Manager 클라이언트 에이전트와 *has.spserv.microsoft.com*(포트 443) 상태 증명 서비스(클라우드 관리) 간 통신 온-프레미스인 경우 클라이언트는 장치 상태 증명 사용 관리 지점과 통신할 수 있어야 합니다.
 
 ### <a name="how-to-enable-health-attestation-service-communication-on-configuration-manager-client-computers"></a>Configuration Manager 클라이언트 컴퓨터에서 상태 증명 서비스 통신을 활성화하는 방법
 

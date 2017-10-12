@@ -1,18 +1,18 @@
 ---
 title: "클라우드 관리 게이트웨이 계획 | Microsoft Docs"
 description: 
-ms.date: 06/07/2017
+ms.date: 10/06/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 2dc8c9f1-4176-4e35-9794-f44b15f4e55f
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: d3e658714c30a1eba64f94e248d5e11095ca1dcb
-ms.sourcegitcommit: f6a428a8db7145affa388f59e0ad880bdfcf17b5
+ms.openlocfilehash: c3d036eb91d16ed95c26bbf2bcce1e37851f90a2
+ms.sourcegitcommit: 8ac9c2c9ba1fdcbb7cc8d5be898586865fcf67c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/07/2017
 ---
 # <a name="plan-for-the-cloud-management-gateway-in-configuration-manager"></a>Configuration Manager에서 클라우드 관리 게이트웨이 계획
 
@@ -46,9 +46,9 @@ Configuration Manager 콘솔을 사용하여 Azure에 서비스를 배포하고 
 
     -   클라이언트 배포
     -   자동 사이트 할당
-    -   사용자 정책
     -   응용 프로그램 카탈로그(소프트웨어 승인 요청 포함)
     -   전체 OSD(운영 체제 배포)
+    -   작업 순서(모두)
     -   Configuration Manager 콘솔
     -   원격 도구
     -   보고 웹 사이트
@@ -61,7 +61,7 @@ Configuration Manager 콘솔을 사용하여 Azure에 서비스를 배포하고 
 ## <a name="cost-of-cloud-management-gateway"></a>클라우드 관리 게이트웨이 비용
 
 >[!IMPORTANT]
->아래에 제공된 비용 정보는 평가 목적으로만 사용됩니다. 사용자 환경에 클라우드 관리 게이트웨이 사용의 전체 비용에 영향을 주는 다른 변수가 있을 수 있습니다.
+>다음 비용 정보는 평가 목적으로만 사용됩니다. 사용자 환경에 클라우드 관리 게이트웨이 사용의 전체 비용에 영향을 주는 다른 변수가 있을 수 있습니다.
 
 클라우드 관리 게이트웨이는 Azure 구독 계정에 요금이 부과되는 다음 Microsoft Azure 기능을 사용합니다.
 
@@ -78,7 +78,7 @@ Configuration Manager 콘솔을 사용하여 Azure에 서비스를 배포하고 
 
 -   아웃바운드 데이터 전송
 
-    -   서비스에서 전송되는 데이터 흐름에 대해 비용이 청구됩니다. 잠재적인 비용을 확인하려면 [Azure 대역폭 가격 정보](https://azure.microsoft.com/en-us/pricing/details/bandwidth/)를 참조하세요.
+    -   서비스에서 전송되는 데이터 흐름에 대해 비용이 청구됩니다. 잠재적인 비용을 확인하려면 [Azure 대역폭 가격 정보](https://azure.microsoft.com/pricing/details/bandwidth/)를 참조하세요.
 
     -   예측 목적으로만, 매시간 정책 새로 고침을 수행하는 인터넷 기반 클라이언트의 경우 월별 클라이언트당 약 100MB를 추정합니다.
 
@@ -111,14 +111,14 @@ Configuration Manager 콘솔을 사용하여 Azure에 서비스를 배포하고 
 
 ### <a name="how-is-the-cloud-management-gateway-deployed"></a>클라우드 관리 게이트웨이 배포 방식
 
-서비스 연결 지점의 클라우드 서비스 관리자 구성 요소는 모든 CMG 배포 작업을 처리합니다. 또한 Azure AD의 서비스 상태 및 로깅 정보를 모니터링하고 보고합니다.
+서비스 연결 지점의 클라우드 서비스 관리자 구성 요소는 모든 CMG 배포 작업을 처리합니다. 또한 Azure AD의 서비스 상태 및 로깅 정보를 모니터링하고 보고합니다. 서비스 연결 지점이 [온라인 모드](/sccm/core/servers/deploy/configure/about-the-service-connection-point#bkmk_modes)인지 확인합니다.
 
 #### <a name="certificate-requirements"></a>인증서 요구 사항
 
 CMG를 보호하려면 다음 인증서가 필요합니다.
 
 - **관리 인증서** - 자체 서명된 인증서를 포함하는 어떤 인증서도 될 수 있습니다. Azure AD에 업로드된 공용 인증서 또는 Configuration Manager로 가져온 [개인 키와 PFX](/sccm/mdm/deploy-use/create-pfx-certificate-profiles)를 사용하여 Azure AD에서 인증을 받을 수 있습니다.
-- **웹 서비스 인증서** - 공용 CA 인증서를 사용하여 클라이언트의 네이티브 신뢰를 얻는 것이 좋습니다. 공용 DNS 등록자에서 CName을 만들 수 있어야 합니다. 와일드카드 인증서는 지원되지 않습니다.
+- **웹 서비스 인증서** - 공용 CA 인증서를 사용하여 클라이언트의 네이티브 신뢰를 얻는 것이 좋습니다. 공용 DNS 등록에서 CName을 만듭니다. 와일드카드 인증서는 지원되지 않습니다.
 - **CMG에 업로드된 루트/SubCA 인증서** - CMG는 클라이언트 PKI 인증서에 대해 전체 체인 유효성 검사를 수행해야 합니다. 클라이언트 PKI 인증서를 발급하기 위해 엔터프라이즈 CA를 사용하며 해당 루트 또는 하위 CA를 인터넷에서 사용할 수 없는 경우 CMG로 업로드해야 합니다.
 
 #### <a name="deployment-process"></a>배포 프로세스
@@ -131,6 +131,9 @@ CMG를 보호하려면 다음 인증서가 필요합니다.
 - Azure AD에 CMG 구성 요소 설정 및 IIS(인터넷 정보 서비스)에서 끝점, HTTP 처리기 및 서비스 구성
 
 CMG의 구성을 변경하면 CMG로의 구성 배포가 시작됩니다.
+
+### <a name="where-do-i-set-up-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이를 어디서 설정하나요?
+계층의 최상위 계층 사이트에서 클라우드 관리 게이트웨이를 만들 수 있습니다. 중앙 관리 사이트인 경우 자식 기본 사이트에 CMG 연결점을 만들 수 있습니다.
 
 ### <a name="how-does-the-cloud-management-gateway-help-ensure-security"></a>클라우드 관리 게이트웨이가 보안에 도움을 주는 방식
 
@@ -164,7 +167,7 @@ URL은 각 관리 지점에 대해 고유합니다. 그런 후 Configuration Man
 
 ### <a name="what-ports-are-used-by-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이에 사용되는 포트
 
-- 온-프레미스 네트워크에 필요한 인바운드 포트는 없습니다. CMG를 배포하면 CMG 집합이 자동으로 만들어집니다.
+- 인바운드 포트가 온-프레미스 네트워크에 필요하지 않습니다. CMG를 배포하면 CMG 집합이 자동으로 만들어집니다.
 - 443 외에, CMG 연결 지점에 일부 아웃바운드 포트가 필요합니다.
 
 |||||
@@ -177,9 +180,9 @@ URL은 각 관리 지점에 대해 고유합니다. 그런 후 Configuration Man
 
 ### <a name="how-can-you-improve-performance-of-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이의 성능을 향상시키는 방법
 
-- 가능한 경우 동일한 네트워크 영역에 CMG, CMG 연결 지점 및 Configuration Manager 사이트 서버를 구성하여 대기 시간을 줄입니다.
+- 가능한 경우 동일한 네트워크 영역에 CMG, CMG 연결점 및 Configuration Manager 사이트 서버를 구성하여 대기 시간을 줄입니다.
 - 현재 Configuration Manager 클라이언트와 CMG 간의 연결은 영역을 인식하지 않습니다.
-- 고가용성을 확보하려면 사이트당 CMG의 가상 인스턴스 2개 이상과 CMG 연결 지점 2개 이상을 유지하는 것이 좋습니다.
+- 고가용성을 확보하려면 사이트당 CMG의 가상 인스턴스 2개 이상과 CMG 연결점 2개 이상을 유지하는 것이 좋습니다.
 - VM 인스턴스를 더 추가하여 더 많은 클라이언트를 지원하도록 CMG를 확장할 수 있습니다. Azure AD 부하 분산 장치를 통해 부하가 분산됩니다.
 - 부하를 분산하기 위해 CMG 연결 지점을 추가로 만듭니다. CMG는 연결하는 CMG 연결 지점으로 트래픽을 ‘라운드 로빈’합니다.
 - CMG VM 인스턴스당 지원 클라이언트 수는 1702 릴리스에서 6,000입니다. CMG 채널 부하가 높은 경우 요청은 계속 처리되지만 평소보다 오래 걸릴 수 있습니다.

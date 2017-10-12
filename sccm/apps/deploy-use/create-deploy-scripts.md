@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.openlocfilehash: e6b29cd85504742e8638a55db2f6c4ecc8ab3e55
-ms.sourcegitcommit: 5ca89204716750eaaceb01bba40b35b85c7122ba
+ms.openlocfilehash: 4c90617890ba3751a7215e9ac54042d64cc1a227
+ms.sourcegitcommit: 96b79fa091f44e8e6ac5652f6cbbb4b873a8bad9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="create-and-run-powershell-scripts-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행
 
@@ -58,6 +58,9 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반
 2. **관리** 작업 영역에서 **사이트 구성**을 확장하고 **사이트**를 클릭합니다.
 3. 사이트 목록에서 사이트를 선택한 후 **홈** 탭의 **사이트** 그룹에서 **계층 설정**을 클릭합니다.
 4. **계층 구조 설정 속성** 대화 상자의 **일반** 탭에서 **스크립트 작성자가 스크립트를 승인하도록 허용 안 함** 확인란을 선택 취소합니다.
+
+>[!IMPORTANT]
+>모범 사례에서는 스크립트 작성자가 고유한 스크립트를 승인하도록 허용하지 않아야 합니다. 랩 설정에서만 허용해야 합니다. 프로덕션 환경에서 이 설정을 변경하는 잠재적인 영향을 신중하게 고려하세요.
 
 ## <a name="import-and-edit-a-script"></a>스크립트 가져오기 및 편집
 
@@ -108,6 +111,9 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반
 
 >[!IMPORTANT]
 >스크립트에 1시간의 실행 기간이 지정됩니다. 이 기간 안에 실행되지 않으면(예: PC가 꺼진 경우) 다시 실행해야 합니다.
+
+>[!IMPORTANT]
+>스크립트는 대상으로 지정된 클라이언트에서 시스템 또는 컴퓨터 계정으로 실행됩니다. 이 계정은 매우 제한된 네트워크 액세스 권한을 갖습니다. 이를 염두하여 원격 시스템에 대한 액세스 및 스크립트에 의한 위치를 프로비전해야 합니다.
 
 ## <a name="next-steps"></a>다음 단계
 
