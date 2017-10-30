@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 08/07/2017
 ---
-# <a name="how-to-configure-hardware-inventory-in-system-center-configuration-manager"></a>How to configure hardware inventory in System Center Configuration Manager
+# <a name="how-to-configure-hardware-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 하드웨어 인벤토리를 구성하는 방법
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
