@@ -1,5 +1,6 @@
 ---
-title: "사용자 환경을 캡처 및 복원하는 작업 순서 만들기 | Microsoft 문서"
+title: "사용자 환경을 캡처 및 복원하는 작업 순서 만들기"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager 작업 순서를 사용하여 운영 체제 배포 시나리오에서 사용자 상태 데이터를 캡처 및 복원할 수 있습니다."
 ms.custom: na
 ms.date: 06/07/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 3a8e2759812dae2a328cd09efdc13f8534d14379
-ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
+ms.openlocfilehash: 5bb55816481db8b93baada07d36c72dd39b62478
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-a-task-sequence-to-capture-and-restore-user-state-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사용자 상태를 캡처 및 복원하는 작업 순서 만들기
 
@@ -137,7 +138,7 @@ System Center Configuration Manager 작업 순서를 사용하여 현재 운영 
     -   복원한 프로필에 새 암호를 제공하려면 **로컬 컴퓨터 사용자 프로필 복원** 을 선택합니다. 로컬 프로필에 대한 암호를 마이그레이션할 수 없습니다.  
 
         > [!NOTE]  
-        >  로컬 사용자 계정이 있는 경우 [사용자 상태 캡처](../understand/task-sequence-steps.md#BKMK_CaptureUserState) 단계를 사용하고를 선택하면 [사용자 상태 복원](../understand/task-sequence-steps.md#BKMK_RestoreUserState) 단계에서 **로컬 컴퓨터 사용자 프로필 복원** 설정을 선택해야 합니다. 선택하지 않으면 작업 순서가 실패합니다. ****  
+        >  로컬 사용자 계정이 있는 경우 [사용자 상태 캡처](../understand/task-sequence-steps.md#BKMK_CaptureUserState) 단계를 사용하고 **캡처된 모든 사용자 프로필을 표준 옵션으로 복원**을 선택하면 [사용자 상태 복원](../understand/task-sequence-steps.md#BKMK_RestoreUserState) 단계의 **로컬 컴퓨터 사용자 프로필 복원** 설정을 선택해야 합니다. 그렇지 않으면 작업 순서가 실패합니다.  
 
     -   파일을 복원할 수 없는 경우라도 **사용자 상태 복원** 단계를 계속 진행하려면 **일부 파일을 복원할 수 없는 경우 계속** 을 선택합니다.  
 
