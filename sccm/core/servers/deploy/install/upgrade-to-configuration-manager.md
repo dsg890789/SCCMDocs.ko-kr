@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager로 업그레이드 | Microsoft 문서"
+title: "System Center Configuration Manager 업그레이드"
 description: "System Center 2012 Configuration Manager를 실행하는 사이트 및 계층 구조에서 현재 위치 업그레이드를 성공적으로 실행하기 위한 단계를 알아봅니다."
 ms.custom: na
 ms.date: 6/6/2017
@@ -14,11 +14,11 @@ caps.latest.revision: "21"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: e65c22240555563cdb011849562069baf5d5887f
-ms.sourcegitcommit: 4c3906cf9614420cb8527da9e48978eb0b8f0e7a
+ms.openlocfilehash: b16d9779c130bd83304d1b369c48c7e691bd8db3
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="upgrade-to-system-center-configuration-manager"></a>System Center Configuration Manager 업그레이드
 

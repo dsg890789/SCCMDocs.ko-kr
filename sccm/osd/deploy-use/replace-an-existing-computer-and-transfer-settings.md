@@ -1,5 +1,6 @@
 ---
-title: "기존 컴퓨터 바꾸기 및 설정 전송 | Microsoft 문서"
+title: "기존 컴퓨터 바꾸기 및 설정 전송"
+titleSuffix: Configuration Manager
 description: "Configuration Manager에서 부팅 가능한 미디어, 멀티캐스트 또는 소프트웨어 센터와 같은 배포 방법 중에서 선택하여 기존 컴퓨터를 새 컴퓨터로 바꿉니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "6"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 08e9603944e378593598d70c1c11c8a1b1f2f13b
-ms.sourcegitcommit: f6a428a8db7145affa388f59e0ad880bdfcf17b5
+ms.openlocfilehash: efa6ad5bd5358139b3da23b226041f8599dc9454
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="replace-an-existing-computer-and-transfer-settings-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 기존 컴퓨터 바꾸기 및 설정 전송
 

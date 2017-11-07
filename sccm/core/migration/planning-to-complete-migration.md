@@ -1,5 +1,6 @@
 ---
-title: "마이그레이션 완료 | Microsoft 문서"
+title: "마이그레이션 완료"
+titleSuffix: Configuration Manager
 description: "원본 계층 구조에 더 이상 데이터가 없게 된 후 System Center Configuration Manager 대상 계층 구조로의 마이그레이션을 완료하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 1/12/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: eb1d2e320df02b26423ed4341d5bd1568b9444ad
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 574e8897043651b7c80c4d61b86773ae02f412c2
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="plan-to-complete-migration-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 마이그레이션 완료 계획
 

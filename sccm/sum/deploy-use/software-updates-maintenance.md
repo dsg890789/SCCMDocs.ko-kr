@@ -1,5 +1,6 @@
 ---
-title: "소프트웨어 업데이트 유지 관리 | Microsoft 문서"
+title: "소프트웨어 업데이트 유지 관리"
+titleSuffix: Configuration Manager
 description: "Configuration Manager에서 업데이트를 유지 관리하려면 WSUS 정리 태스크를 예약하거나 수동으로 실행할 수 있습니다."
 keywords: 
 author: dougeby
@@ -11,11 +12,11 @@ ms.prod: configuration-manager
 ms.service: 
 ms.technology: configmgr-sum
 ms.assetid: 4b0e2e90-aac7-4d06-a707-512eee6e576c
-ms.openlocfilehash: 1590c623f7bc2f42a8617f110de5321212732a03
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 51e103b09ced9916fc76f9c87654379b538248b4
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="software-updates-maintenance"></a>소프트웨어 업데이트 유지 관리
 

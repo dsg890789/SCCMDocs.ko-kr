@@ -1,5 +1,6 @@
 ---
-title: "Endpoint Protection 구성 | Microsoft 문서"
+title: "Endpoint Protection 구성"
+titleSuffix: Configuration Manager
 description: "클라이언트 컴퓨터에서 맬웨어 방지 정의를 최신 상태로 유지하도록 System Center Configuration Manager에서 Endpoint protection의 방법을 선택하고 구성하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 02/14/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "21"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.openlocfilehash: b5da7900a4f8e2f330c4dcb2cac00b45099bd909
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: b0b178fad73b6490c4bfeb8ec4aaa7348e7cb2a2
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 #  <a name="configure-definition-updates-for-endpoint-protection"></a>Endpoint Protection에 대한 정의 업데이트 구성  
 

@@ -1,5 +1,6 @@
 ---
-title: "System Center Configuration Manager에서 보안 계획 | Microsoft 문서"
+title: "보안 계획"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 보안에 대한 모범 사례 및 기타 정보를 가져옵니다."
 ms.custom: na
 ms.date: 01/04/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 6145cb69c69dba1eb1b9842079ee1a33686bb18a
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 8f63d1b762b296cb6b6aa56480a5cddf7a3249dc
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="plan-for-security-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 보안 계획
 

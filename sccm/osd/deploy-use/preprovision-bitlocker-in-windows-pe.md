@@ -1,5 +1,6 @@
 ---
-title: "Windows PE에서 BitLocker 사전 프로비전 | Microsoft 문서"
+title: "Windows PE에서 BitLocker 사전 프로비전"
+titleSuffix: Configuration Manager
 description: "Configuration Manager에서 BitLocker 사전 프로비전 작업을 통해 운영 체제를 배포하기 전에 Windows 사전 설치 환경에서 BitLocker를 사용하도록 설정합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: baca498dbc5b8e168852aa3c18ee23a9c483e69c
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 936dead7461162779d85796808a8a94e9b8bc44a
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="preprovision-bitlocker-in-windows-pe-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows PE에서 BitLocker 사전 프로비전
 

@@ -1,5 +1,6 @@
 ---
-title: "전원 관리 소개 | Microsoft 문서"
+title: "전원 관리 소개"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 전원 관리를 소개합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: d7baabf1b223498f17f60de344e1c1d30f5a8120
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 5b22b13fa904f26e25555c3095a2db2455594d1e
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="introduction-to-power-management-in-system-center-configuration-manager"></a>System Center Configuration Manager 전원 관리 소개
 

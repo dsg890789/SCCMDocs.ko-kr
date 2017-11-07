@@ -1,5 +1,6 @@
 ---
-title: "보고 계획 | Microsoft 문서"
+title: "보고 계획"
+titleSuffix: Configuration Manager
 description: "설치 세부 정보부터 보안 및 네트워크 대역폭에 이르기까지 Configuration Manager의 보고 계획은 중요합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "6"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 119f501057bf44e483be31db20b88326b3d05ebb
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 9d7c8de64c412b19fff4fa8c4193a020de680407
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="planning-for-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager의 보고 계획
 

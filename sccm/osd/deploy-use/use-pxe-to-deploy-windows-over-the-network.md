@@ -1,5 +1,6 @@
 ---
-title: "PXE를 사용하여 네트워크를 통해 Windows 배포 | Microsoft 문서"
+title: "PXE를 사용하여 네트워크를 통해 Windows 배포"
+titleSuffix: Configuration Manager
 description: "PXE 시작 운영 체제 배포를 사용하여 컴퓨터의 운영 체제를 새로 고치거나 새 컴퓨터에 새 버전의 Windows를 설치할 수 있습니다."
 ms.custom: na
 ms.date: 06/15/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: 57292b1c6f6e8b6be91eace06dbf12d788522e0b
-ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
+ms.openlocfilehash: 017a8f0d5b38145f6708e61ff5d7b2c3614b62a0
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="use-pxe-to-deploy-windows-over-the-network-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 PXE를 사용하여 네트워크를 통해 Windows 배포
 

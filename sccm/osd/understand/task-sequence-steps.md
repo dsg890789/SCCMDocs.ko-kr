@@ -1,5 +1,6 @@
 ---
-title: "작업 순서 단계- Configuration Manager | Microsoft 문서"
+title: "작업 순서 단계"
+titleSuffix: Configuration Manager
 description: "Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계를 알아봅니다."
 ms.custom: na
 ms.date: 03/26/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 18a987141e212158424924402859799ba42f8eae
-ms.sourcegitcommit: 5b4fd2d36f06be5bcc7f8ebbfb92c48b7240085d
+ms.openlocfilehash: 8bc73b8aaafa9af4e12589b2d2a742bfc18afd0e
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="task-sequence-steps-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업 순서 단계
 

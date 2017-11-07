@@ -1,5 +1,6 @@
 ---
-title: "응용 프로그램 업데이트 및 사용 중지 | Microsoft 문서"
+title: "응용 프로그램 업데이트 및 사용 중지"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager를 사용하여 배포된 응용 프로그램을 수정, 대체 또는 제거합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "9"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: 4bbbb73985855cd88bf9675cc3cf0a1e81551a80
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: bb17e3aebefcc3ea56e57fea963695eee9adf92d
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="update-and-retire-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 업데이트 및 사용 중지
 

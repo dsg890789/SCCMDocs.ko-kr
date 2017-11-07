@@ -1,5 +1,6 @@
 ---
-title: "System Center Configuration Manager에서 Wi-Fi 프로필 만들기 | Microsoft Docs"
+title: "Wi-Fi 프로필 만들기"
+titleSuffix: Configuration Manager
 description: "Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의 모바일 장치 사용자에게 무선 네트워크 설정을 배포하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 03/05/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.openlocfilehash: 101ffde99b3fc88fe352120c3fd8fb3ef7a4efc0
-ms.sourcegitcommit: 13599667ea77c16db1aebe64f8a6748c268f0b45
+ms.openlocfilehash: 3f4f25d39fd7f4106ec6f7a1d6ebe4716be067ad
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-create-wi-fi-profiles-for-mobile-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 모바일 장치에 대한 Wi-Fi 프로필을 만드는 방법
 

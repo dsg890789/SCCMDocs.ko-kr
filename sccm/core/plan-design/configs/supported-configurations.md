@@ -1,5 +1,6 @@
 ---
-title: "지원되는 구성 | Microsoft 문서"
+title: "지원되는 구성"
+titleSuffix: Configuration Manager
 description: "작동하는 System Center Configuration Manager 배포를 계획, 배포 및 유지 관리할 수 있도록 주요 구성 및 요구 사항을 식별합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: aad46e9ab893b9bb3e32d35c17b9678b3a265c99
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 41f339c2a4be80ae247fcc0e5b2e21d3682a7cbc
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="supported-configurations-for-system-center-configuration-manager"></a>System Center Configuration Manager에서 지원되는 구성
 

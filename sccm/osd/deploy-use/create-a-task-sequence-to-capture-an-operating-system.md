@@ -1,5 +1,6 @@
 ---
-title: "운영 체제를 캡처하는 작업 순서 만들기 | Microsoft 문서"
+title: "운영 체제를 캡처하는 작업 순서 만들기"
+titleSuffix: Configuration Manager
 description: "빌드 및 캡처 작업 순서는 운영 체제와 함께 특정 드라이버 및 소프트웨어 업데이트를 포함할 수 있는 참조 컴퓨터를 빌드합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: e9320e40b8e5031ffa3da5e5149c7da718cc87d5
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 98f9f44373b854b61714c21105a28b3240b4a7f7
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-a-task-sequence-to-capture-an-operating-system-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 운영 체제를 캡처하는 작업 순서 만들기
 

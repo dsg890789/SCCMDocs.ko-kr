@@ -1,5 +1,6 @@
 ---
-title: "Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결 | Microsoft 문서"
+title: "Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결"
+titleSuffix: Configuration Manager
 description: "Windows Defender 및 Endpoint Protection 문제를 해결하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 01/03/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.openlocfilehash: 1b096e71f5131214fb4e235e84d0b7f63e566831
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: b667db471a16faef057f49a0a26759849e03f237
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="troubleshooting-windows-defender-or-endpoint-protection-client"></a>Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결
 

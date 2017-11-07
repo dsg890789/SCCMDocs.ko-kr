@@ -1,5 +1,6 @@
 ---
-title: "운영 체제를 업그레이드하는 작업 순서 만들기 | Microsoft 문서"
+title: "운영 체제를 업그레이드하는 작업 순서 만들기"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 작업 순서를 사용하여 Windows 7 이상 운영 체제를 Windows 10으로 자동으로 업그레이드할 수 있습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "12"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 4a3c69edc85a4ea7501510b6b3f12c72ad3a24ff
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 2787c8a692321a49cf287fc2f09858690360dc25
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-a-task-sequence-to-upgrade-an-operating-system-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 운영 체제를 업그레이드하는 작업 순서 만들기
 

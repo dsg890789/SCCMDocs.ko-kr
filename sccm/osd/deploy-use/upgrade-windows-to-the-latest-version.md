@@ -1,5 +1,6 @@
 ---
-title: "최신 버전으로 Windows 업그레이드 | Microsoft 문서"
+title: "최신 버전으로 Windows 업그레이드"
+titleSuffix: Configuration Manager
 description: "Configuration Manager를 사용하여 Windows 7 이상 운영 체제를 Windows 10으로 업그레이드하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 02/06/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "13"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 412c2c644cc7f17f307c02b84471f3ee494045ec
-ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
+ms.openlocfilehash: ff6477b21f5befb421f85c2204c1b0f1d75742f1
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="upgrade-windows-to-the-latest-version-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows를 최신 버전으로 업그레이드
 

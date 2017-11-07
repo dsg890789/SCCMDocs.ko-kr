@@ -1,5 +1,6 @@
 ---
-title: "하드웨어 인벤토리 - Configuration Manager | Microsoft 문서"
+title: "하드웨어 인벤토리 "
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 하드웨어 인벤토리를 소개합니다."
 ms.custom: na
 ms.date: 02/22/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: c64f0b42bff25e8e91cf9101d6fbb538634eab15
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: d453a341cb238166af7d7d4694fde44ea1b0ad56
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="introduction-to-hardware-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager의 하드웨어 인벤토리 소개
 

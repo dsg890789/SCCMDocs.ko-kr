@@ -1,5 +1,6 @@
 ---
-title: "운영 체제 배포의 보안 및 개인 정보 | Microsoft 문서"
+title: "운영 체제 배포의 보안 및 개인 정보"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 운영 체제 배포에 대한 보안 및 개인 정보 모범 사례를 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 5632a753fc565312a80b2ed69ce438335b3fad50
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: f3286fb0afc5a5023ecd725e74606a585c5fa478
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="security-and-privacy-for-operating-system-deployment-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 운영 체제 배포의 보안 및 개인 정보
 

@@ -1,5 +1,6 @@
 ---
-title: "작업 순서 미디어에 대한 시작 전 명령 | Microsoft 문서"
+title: "작업 순서 미디어에 대한 시작 전 명령"
+titleSuffix: Configuration Manager
 description: "시작 전 명령에 사용할 스크립트를 만들고, 시작 전 명령과 연관된 콘텐츠를 배포하고, 미디어 안에 시작 전 명령을 구성합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 1c396534425179c6828d48acc578295167c566be
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 52a4dccfe547f8c25759669dd1b09976302d5c50
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="prestart-commands-for-task-sequence-media-in-system-center-configuration-manager"></a>System Center Configuration Manager의 작업 순서 미디어에 대한 시작 전 명령
 

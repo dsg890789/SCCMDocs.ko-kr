@@ -1,5 +1,6 @@
 ---
-title: "유니코드 및 ASCII 지원 | Microsoft 문서"
+title: "유니코드 및 ASCII 지원"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager 개체의 유니코드 및 ASCII 문자 지원에 대해 알아봅니다."
 ms.custom: na
 ms.date: 3/1/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 18f1c64c1f27001a0fdfbab4236d09a5bc279272
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 1314c0bc8de25c343b80f40de7d2a007024a17dd
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="unicode-and-ascii-support-in-system-center-configuration-manager"></a>System Center Configuration Manager의 유니코드 및 ASCII 지원
 

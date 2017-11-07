@@ -1,5 +1,6 @@
 ---
-title: "설치 다운로더 | Microsoft 문서"
+title: "설치 다운로더"
+titleSuffix: Configuration Manager
 description: "사이트 설치 시 주요 설치 파일의 최신 버전을 사용하도록 하기 위한 이 독립 실행형 응용 프로그램에 대해 알아봅니다."
 ms.custom: na
 ms.date: 3/1/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "3"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: b72148ecc16141843178cbd220fe021fab8be992
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 8b98e8578c61ab4c212aa0e0b1e1a40e95e95b9e
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="setup-downloader-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 설치 다운로더
 

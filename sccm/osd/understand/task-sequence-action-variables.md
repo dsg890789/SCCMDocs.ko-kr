@@ -1,5 +1,6 @@
 ---
-title: "작업 순서 동작 변수 | Microsoft 문서"
+title: "작업 순서 동작 변수"
+titleSuffix: Configuration Manager
 description: "네트워크 설정 변수 등의 순서 동작 변수를 사용하여 Configuration Manager 작업 순서의 단일 단계에 대한 구성 설정을 지정할 수 있습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 675ebf053de98c6ad93a53ae218696012aef96f7
-ms.sourcegitcommit: 5b4fd2d36f06be5bcc7f8ebbfb92c48b7240085d
+ms.openlocfilehash: 8c1462ca922f23250ffa44c6433f01a8220d3ad7
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="task-sequence-action-variables-in-system-center-configuration-manager"></a>System Center Configuration Manager의 작업 순서 동작 변수
 

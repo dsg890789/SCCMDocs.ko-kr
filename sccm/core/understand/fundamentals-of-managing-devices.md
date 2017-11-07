@@ -1,5 +1,6 @@
 ---
-title: "장치 관리의 기본 사항 | Microsoft 문서"
+title: "장치 관리의 기본 사항"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager를 사용하여 장치를 관리하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 12/04/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "6"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 45d84122a86da880268c93ecd994250df6b76c8a
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: b8859537bd213928df3b4388ccbedb871e43c336
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="fundamentals-of-managing-devices-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 장치 관리의 기본 사항
 

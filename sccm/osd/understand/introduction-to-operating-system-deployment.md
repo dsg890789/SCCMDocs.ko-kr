@@ -1,5 +1,6 @@
 ---
-title: "운영 체제 배포 소개 | Microsoft 문서"
+title: "운영 체제 배포 소개"
+titleSuffix: Configuration Manager
 description: "Configuration Manager 환경에 운영 체제를 배포하기 전에 개념을 이해합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "12"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 2baa6b7dbd66ab41bc9b67e8f43c313be233153c
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 5835bde38cb940d2e38df4a38146753a6842f1d7
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="introduction-to-operating-system-deployment-in-system-center-configuration-manager"></a>System Center Configuration Manager의 운영 체제 배포 소개
 

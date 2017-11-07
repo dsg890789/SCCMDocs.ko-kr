@@ -1,5 +1,6 @@
 ---
-title: "Intune으로 관리되는 Android 및 Samsung KNOX Standard 장치에 대한 구성 항목 만들기 | Microsoft Docs"
+title: "Intune으로 관리되는 Android 및 Samsung KNOX Standard 장치에 대한 구성 항목 만들기"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager Android 및 Samsung KNOX Standard 구성 항목을 사용하여 장치 설정을 관리할 수 있습니다."
 ms.custom: na
 ms.date: 03/27/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: e58d84542d5c475fef6c2c04676c50a150681099
-ms.sourcegitcommit: f6a428a8db7145affa388f59e0ad880bdfcf17b5
+ms.openlocfilehash: 3fa824c94b02ed7141c7051bab86fa64a4a9ee49
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트 없이 관리되는 Android 및 Samsung KNOX 장치에 대한 구성 항목을 만드는 방법
 

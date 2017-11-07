@@ -1,5 +1,6 @@
 ---
-title: "사이트를 설치할 준비 | Microsoft 문서"
+title: "사이트를 설치할 준비"
+titleSuffix: Configuration Manager
 description: "여러 Configuration Manager 사이트를 설치할 계획인 경우 이 정보를 읽으면 시간을 절약하고 오류를 방지할 수 있습니다."
 ms.custom: na
 ms.date: 3/1/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 829f2d44a9b8d203a5b753ebb6d8f759b1a05111
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 56dc57a487e78948538a25d48c344f0ed424b692
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="prepare-to-install-system-center-configuration-manager-sites"></a>System Center Configuration Manager 사이트 설치 준비
 

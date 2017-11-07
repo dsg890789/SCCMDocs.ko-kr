@@ -1,5 +1,6 @@
 ---
-title: "콘텐츠 모니터링 | Microsoft 문서"
+title: "콘텐츠 모니터링"
+titleSuffix: Configuration Manager
 description: "Configuration Manager 콘솔을 사용하여 분산 콘텐츠를 모니터링하는 방법을 이해합니다."
 ms.custom: na
 ms.date: 4/17/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 7659d5789b8ce4e9e0b585a331c8f68869c9492d
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: b260cf989fbda471b514d06d927e9b2c55d35c1b
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="monitor-content-you-have-distributed-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 배포한 콘텐츠 모니터링
 

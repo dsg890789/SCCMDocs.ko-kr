@@ -1,5 +1,6 @@
 ---
-title: "인증서 프로필 소개 | Microsoft 문서"
+title: "인증서 프로필 소개"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 인증서 프로필이 Active Directory 인증서 서비스에서 작동하는 방식을 알아봅니다."
 ms.custom: na
 ms.date: 09/11/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "7"
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.openlocfilehash: e269b5836648d0d227e91a017512c16217e42646
-ms.sourcegitcommit: 13599667ea77c16db1aebe64f8a6748c268f0b45
+ms.openlocfilehash: dc70aec1746f6e555011ba87c84811c1f8ea0620
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="introduction-to-certificate-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager의 인증서 프로필 소개
 

@@ -1,5 +1,6 @@
 ---
-title: "Intune을 사용하여 관리되는 iOS 및 Mac OS X 장치에 대한 구성 항목을 만드는 방법 | Microsoft Docs"
+title: "Intune을 사용하여 관리되는 iOS 및 Mac OS X 장치에 대한 구성 항목을 만드는 방법"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager iOS 및 Mac OS X 구성 항목을 사용하여 iOS 및 Mac OS X 장치에 대한 설정을 관리할 수 있습니다."
 ms.custom: na
 ms.date: 03/28/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: 039173c9411a530348bf550e4be7b771756d57dc
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: d101ffc649928c1136386bc7979d4a37ad404af1
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-create-configuration-items-for-ios-and-mac-os-x-devices-managed-with-intune"></a>Intune으로 관리되는 iOS 및 Mac OS X 장치에 대한 구성 항목을 만드는 방법
 System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용하여 Configuration Manager에서 온-프레미스로 관리되거나 Microsoft Intune에 등록된 iOS 및 Mac OS X 장치에 대한 설정을 관리할 수 있습니다.  

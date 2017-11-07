@@ -1,5 +1,6 @@
 ---
-title: "Intune을 사용하여 관리되는 Windows 8.1 및 Windows 10 장치에 대한 구성 항목 만들기 | Microsoft Docs"
+title: "Intune을 사용하여 관리되는 Windows 8.1 및 Windows 10 장치에 대한 구성 항목 만들기"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager Windows 10 구성 항목을 사용하여 Windows 10 컴퓨터에 대한 설정을 관리할 수 있습니다."
 ms.custom: na
 ms.date: 07/31/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: f691ef725e969f55044bafef3fdd66ead2366a6c
-ms.sourcegitcommit: f6a428a8db7145affa388f59e0ad880bdfcf17b5
+ms.openlocfilehash: 7f5a50ae6ea05af7e864cf94df3063d70bd737b4
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-create-configuration-items-for-windows-81-and-windows-10-devices-managed-without-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 장치에 대한 구성 항목을 만드는 방법
 

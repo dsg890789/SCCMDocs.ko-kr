@@ -1,5 +1,6 @@
 ---
-title: "응용 프로그램 만들기 | Microsoft 문서"
+title: "응용 프로그램 만들기"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager를 사용하여 응용 프로그램 및 배포 유형을 만들고 배포합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: 41563624700510e92332b6939d38d902e7dffb94
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 6896a4905b9eecf520dae2c887100df472963356
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 만들기
 

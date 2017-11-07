@@ -1,5 +1,6 @@
 ---
-title: "데이터 웨어하우스 | Microsoft Docs"
+title: "데이터 웨어하우스"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에 대한 데이터 웨어하우스 서비스 지점 및 데이터베이스"
 ms.custom: na
 ms.date: 8/25/2017
@@ -14,11 +15,11 @@ caps.latest.revision:
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 744614d7e1ec97a4d4b4646c45cb41d734c6be34
-ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
+ms.openlocfilehash: bb4ad248b82de24a13308c45d060445b362517f3
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/12/2017
 ---
 #  <a name="the-data-warehouse-service-point-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 데이터 웨어하우스 서비스 지점
 *적용 대상: System Center Configuration Manager(현재 분기)*

@@ -1,5 +1,6 @@
 ---
-title: "CD.Latest 폴더 | Microsoft 문서"
+title: "CD.Latest 폴더"
+titleSuffix: Configuration Manager
 description: "Configuration Manager 콘솔 내에서 제품 업데이트를 제공하는 새 업데이트 프로세스에 대해 알아봅니다."
 ms.custom: na
 ms.date: 05/02/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "6"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 5c39e09b44500fa2f356f83579bb2fb2c1d0e937
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 51120ecb681da4ac82fd98ef68405db8d462c5ec
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="the-cdlatest-folder-for-system-center-configuration-manager"></a>System Center Configuration Manager의 CD.Latest 폴더
 

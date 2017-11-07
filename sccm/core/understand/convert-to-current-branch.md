@@ -1,5 +1,6 @@
 ---
-title: "장기 서비스 분기를 현재 분기로 업그레이드 | Microsoft 문서"
+title: "장기 서비스 분기를 현재 분기로 업그레이드 "
+titleSuffix: Configuration Manager
 description: "장기 서비스 분기 사이트를 현재 분기 사이트로 변환하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 2/8/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 6e7edc85630d22c5bbba1ff66bd1199903db76db
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 6a1726b4f23ce0022a3ed5c69c2735cf4d10500d
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="upgrade-the-long-term-servicing-branch-to-the-current-branch"></a>장기 서비스 분기를 현재 분기로 업그레이드
 

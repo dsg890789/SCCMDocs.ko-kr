@@ -1,5 +1,6 @@
 ---
-title: "WAN 트래픽을 줄이기 위해 Windows PE 피어 캐시 준비 | Microsoft 문서"
+title: "WAN 트래픽을 줄이기 위해 Windows PE 피어 캐시 준비"
+titleSuffix: Configuration Manager
 description: "Windows PE 피어 캐시는 로컬 배포 지점이 없는 경우 로컬 피어로부터 콘텐츠를 가져와 WAN 트래픽을 최소화하도록 Windows PE에서 작동합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "11"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 814c6133a30b1116d05aaeafddb0dfb7fe2a390e
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: bb0ed6809d1350c4ce28e20d1a83082a51c2e687
+ms.sourcegitcommit: 1132886e07d0c0a87dcc7eeef4577dd8d8840023
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="prepare-windows-pe-peer-cache-to-reduce-wan-traffic-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 WAN 트래픽을 줄이기 위해 Windows PE 피어 캐시 준비
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 08/07/2017
 
 System Center Configuration Manager에서 새 운영 체제를 배포할 때 작업 순서를 실행하는 컴퓨터가 배포 지점에서 콘텐츠를 다운로드하는 대신 Windows PE 피어 캐시를 사용하여 로컬 피어(피어 캐시 원본)에서 콘텐츠를 가져올 수 있습니다. 따라서 로컬 배포 지점이 없는 지점 시나리오에서 WAN(광역 네트워크) 트래픽을 최소화할 수 있습니다.  
 
- Windows PE 피어 캐시는 [Windows BranchCache](http://technet.microsoft.com/library/mt617255\(TechNet.10\).aspx#bkmk_branchcache)와 비슷하지만 Windows PE(사전 설치 환경)에서 작동합니다. 클라이언트의 소프트웨어 센터 등의 운영 체제 컨텍스트에서 작업 순서를 시작하는 경우에는 Windows PE 피어 캐시가 사용되지 않습니다. Windows PE 피어 캐시를 사용하는 클라이언트에 설명하는 데 다음과 같은 용어가 사용됩니다.  
+ Windows PE 피어 캐시는 [Windows BranchCache](http://technet.microsoft.com/library/mt617255\(TechNet.10\).aspx#bkmk_branchcache)와 비슷하지만 Windows PE(사전 설치 환경)에서 작동합니다. Windows PE 피어 캐시를 사용하는 클라이언트에 설명하는 데 다음과 같은 용어가 사용됩니다.  
 
 -   **피어 캐시 클라이언트** 는 Windows PE 피어 캐시를 사용하도록 구성된 컴퓨터입니다.  
 

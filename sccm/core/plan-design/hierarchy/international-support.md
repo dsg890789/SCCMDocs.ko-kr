@@ -1,5 +1,6 @@
 ---
-title: "국제 지원 | Microsoft 문서"
+title: "다국어 기능 지원"
+titleSuffix: Configuration Manager
 description: "특정 다국어 기능 요구 사항을 준수하도록 System Center Configuration Manager를 구성합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 3bab51be96445f766e8f5bbf54eee854e5d09cee
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: b3ff505c4e5a9eedc3a89fbfc5a54825d5849308
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="international-support-in-system-center-configuration-manager"></a>System Center Configuration Manager의 다국어 기능 지원
 

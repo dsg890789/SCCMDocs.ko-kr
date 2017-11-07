@@ -1,5 +1,6 @@
 ---
-title: "부팅 이미지 관리 - Configuration Manager | Microsoft 문서"
+title: "부팅 이미지 관리 "
+titleSuffix: Configuration Manager
 description: "Configuration Manager에서 운영 체제를 배포하는 동안 사용하는 Windows PE 부팅 이미지를 관리하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 01/23/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 5668ba3ead3b7415508f9ecf02f2e119c3cd9cc6
-ms.sourcegitcommit: 2a1328da3facb20b0c78f3b12adbb5fdbe0dcc11
+ms.openlocfilehash: 1f169dbf645096777f3fd244d24ca5be92efa180
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="manage-boot-images-with-system-center-configuration-manager"></a>System Center Configuration Manager로 부팅 이미지 관리
 

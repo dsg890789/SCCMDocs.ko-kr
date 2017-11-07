@@ -1,5 +1,6 @@
 ---
-title: "운영 체제 배포 모니터링 | Microsoft 문서"
+title: "운영 체제 배포 모니터링"
+titleSuffix: Configuration Manager
 description: "운영 체제 배포 개체를 모니터링할 수 있도록 돕기 위해 Configuration Manager 콘솔에서는 경고, 보고서 및 다양한 상태 표시기를 제공합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 154c0a286e6b9ccedc7545eb010967ac00d35407
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 2e738b0ae9bd16829857edfaae0fb7e398979627
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="monitor-operating-system-deployments-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 운영 체제 배포 모니터링
 

@@ -1,5 +1,6 @@
 ---
-title: "끌어오기 배포 지점 | Microsoft 문서"
+title: "풀(pull) 배포 지점"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 풀(pull) 배포 지점을 사용하기 위한 구성 및 제한 사항을 알아봅니다."
 ms.custom: na
 ms.date: 2/14/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "9"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: db5039ff6cb93e3099b096196d49a1f06c315a6b
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 94cc9b39b1eebcf1f194dc86aab8ccc162724d64
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="use-a-pull-distribution-point-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 풀(pull) 배포 지점 사용
 

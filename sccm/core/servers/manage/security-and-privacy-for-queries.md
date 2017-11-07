@@ -1,5 +1,6 @@
 ---
-title: "쿼리에 대한 보안 및 개인 정보 | Microsoft 문서"
+title: "쿼리에 대한 보안 및 개인 정보"
+titleSuffix: Configuration Manager
 description: "사이트 데이터베이스에서 정보를 쿼리할 때 보안 및 개인 정보에 대한 모범 사례를 이해합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: f844b44333f5bf2c728ce84588210212ee270eec
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 6ab8498a2153dd272e9451aa58b68b4f804cd93a
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="security-and-privacy-for-queries-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 쿼리에 대한 보안 및 개인 정보
 

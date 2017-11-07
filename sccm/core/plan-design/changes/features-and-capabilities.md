@@ -1,5 +1,6 @@
 ---
-title: "기능 및 특성 | Microsoft 문서"
+title: "기능 및 특성"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 기본 관리 기능에 대해 알아봅니다."
 ms.custom: na
 ms.date: 12/29/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 4691f43dccdf73936107f4635321897b9779bead
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: c9b6720d08260c7a2a06e0ccc525228e5089b279
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="features-and-capabilities-of-system-center-configuration-manager"></a>System Center Configuration Manager의 기능 및 특성
 

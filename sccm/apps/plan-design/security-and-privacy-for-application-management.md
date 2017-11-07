@@ -1,5 +1,6 @@
 ---
-title: "응용 프로그램 관리에 대한 보안 및 개인 정보 | Microsoft 문서"
+title: "응용 프로그램 관리에 대한 보안 및 개인 정보"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 응용 프로그램 관리에 대한 보안 및 개인 정보 모범 사례입니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "8"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: 96d55db25f8e48313e04590730e50e04c6fee3fc
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 7ca91443af58fc342380b819ca53e42b75556090
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="security-and-privacy-for-application-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 관리에 대한 보안 및 개인 정보
 

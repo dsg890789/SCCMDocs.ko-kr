@@ -1,5 +1,6 @@
 ---
-title: "구성 데이터 관리 | Microsoft 문서"
+title: "구성 데이터 관리"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 구성 항목 및 기준을 만든 후 다른 명령을 사용하여 다양한 작업을 수행할 수 있습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: 07d4148559c36745e51be46957b1af3c4a94ce44
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 23a6bcf2e9fcb417dabde7700e09c953d436deb7
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="manage-configuration-data-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 구성 데이터 관리
 

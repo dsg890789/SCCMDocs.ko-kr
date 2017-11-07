@@ -1,5 +1,6 @@
 ---
-title: "System Center Configuration Manager 랩 설정 | Microsoft 문서"
+title: "랩 설정"
+titleSuffix: Configuration Manager
 description: "시뮬레이트된 실제 작업을 사용하여 Configuration Manager를 평가하기 위한 랩을 설정합니다."
 ms.custom: na
 ms.date: 09/21/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: a8bacdbde00973cfd45963b355c8f810ab06a83d
-ms.sourcegitcommit: 4c3906cf9614420cb8527da9e48978eb0b8f0e7a
+ms.openlocfilehash: df0997f921bfe31bd5bac0d530d4c4fac7331a6e
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="set-up-your-system-center-configuration-manager-lab"></a>System Center Configuration Manager 랩 설정
 

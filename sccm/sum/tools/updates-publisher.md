@@ -1,5 +1,6 @@
 ---
-title: "Updates Publisher | Microsoft 문서"
+title: Updates Publisher
+titleSuffix: Configuration Manager
 description: "System Center Updates Publisher를 사용하여 사용자 지정 업데이트 관리"
 ms.custom: na
 ms.date: 4/29/2017
@@ -15,11 +16,11 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f4951c204b32da58174b94a539b380c278fa9756
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 356e63b3743f17d4c0b3985723c26e51ce9dd6c8
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="system-center-updates-publisher"></a>System Center Updates Publisher
 

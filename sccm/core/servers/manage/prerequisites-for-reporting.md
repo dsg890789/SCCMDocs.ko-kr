@@ -1,5 +1,6 @@
 ---
-title: "보고 필수 조건 | Microsoft 문서"
+title: "보고에 대한 필수 조건"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 보고를 사용하는 데 영향을 주는 다양한 종속성을 이해합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 2e624eb2ea061a4eb7d92365410fada335640224
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 09f6ebd47070c63d238a74242d4b04b84c95ef49
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="prerequisites-for-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 보고에 대한 필수 조건
 

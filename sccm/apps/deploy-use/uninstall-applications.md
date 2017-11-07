@@ -1,5 +1,6 @@
 ---
-title: "응용 프로그램 제거 | Microsoft 문서"
+title: "응용 프로그램 제거"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager를 사용하여 응용 프로그램 제거"
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: 1e9c5506b94eecc1c95af5f31ad4c2d923c2b74f
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 11b6f7ad65296131622b707fcb68d77183e3a288
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="uninstall-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 제거
 

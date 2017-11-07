@@ -1,5 +1,6 @@
 ---
-title: "장치 준수 정책 만들기 및 배포 | Microsoft 문서"
+title: "장치 준수 정책 만들기 및 배포"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 장치 준수 정책을 만들고 배포하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 03/05/2017
@@ -15,11 +16,11 @@ author: andredm7
 ms.author: andredm
 manager: angrobe
 robots: noindex
-ms.openlocfilehash: 6630d0170df22f46f14df241ffd8d48266c69263
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: bf0099cdf4df1b7421a257e910c8682e63f8ee1e
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-and-deploy-a-device-compliance-policy"></a>장치 준수 정책 만들기 및 배포
 

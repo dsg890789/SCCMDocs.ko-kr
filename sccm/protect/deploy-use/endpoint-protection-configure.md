@@ -1,5 +1,6 @@
 ---
-title: "Endpoint Protection 구성 | Microsoft 문서"
+title: "Endpoint Protection 구성"
+titleSuffix: Configuration Manager
 description: "Windows Defender에 대한 맬웨어 정의를 업데이트하고 배포하도록 Configuration Manager를 설정하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 02/14/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "21"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.openlocfilehash: 6917644d6719a1ca636713aa5aebf277927123c8
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 5f005e7cd9c396fcf7e02aafefcb34c37ddab901
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="configure-endpoint-protection"></a>Endpoint Protection 구성
 

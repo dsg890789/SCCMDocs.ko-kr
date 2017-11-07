@@ -1,5 +1,6 @@
 ---
-title: "온-프레미스 MDM(모바일 장치 관리) | Microsoft 문서"
+title: "온-프레미스 MDM(모바일 장치 관리)"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 장치 관리 솔루션인 온-프레미스 모바일 장치 관리에 대해 알아봅니다."
 ms.custom: na
 ms.date: 03/05/2017
@@ -11,14 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 497c05c7-fe9f-4b88-983b-1c5b3d59308e
 caps.latest.revision: "8"
-author: Mtillman
-ms.author: mtillman
+author: dougeby
+ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 7b96c4d4d87aa150eacc5d7d20710f5d2199e48a
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: f1ed457e825ffb6203ee77fb7325776703a2a614
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="on-premises-mobile-device-management-mdm-in-system-center-configuration-manager"></a>System Center Configuration Manager의 온-프레미스 MDM(모바일 장치 관리)
 

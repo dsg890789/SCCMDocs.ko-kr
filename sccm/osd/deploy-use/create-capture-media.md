@@ -1,5 +1,6 @@
 ---
-title: "미디어 캡처 만들기 - Configuration Manager | Microsoft 문서"
+title: "미디어 캡처 만들기 "
+titleSuffix: Configuration Manager
 description: "작업 순서 미디어 만들기 마법사를 사용하여 Configuration Manager에서 미디어 캡처를 만들면 참조 컴퓨터에서 운영 체제 이미지를 캡처할 수 있습니다."
 ms.custom: na
 ms.date: 01/23/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 5acf800ff5aebd849e294393337755145a60cca5
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: c25eade287d254907c7d7d02948eb25a88ed0a11
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-capture-media-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 미디어 캡처 만들기
 

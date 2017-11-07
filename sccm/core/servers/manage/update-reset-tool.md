@@ -1,5 +1,6 @@
 ---
-title: "업데이트 다시 설정 도구 | Microsoft Docs"
+title: "업데이트 다시 설정 도구"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 콘솔 내 업데이트를 위해 업데이트 다시 설정 도구를 사용합니다."
 ms.custom: na
 ms.date: 7/31/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 1960f86e98a957559f379b9eeb6d293f7e4182e5
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 3dd7e0e2388ac8612f2d98249833a8c93f5fca4f
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="update-reset-tool"></a>업데이트 다시 설정 도구
 

@@ -1,5 +1,6 @@
 ---
-title: "장치 준수 확인 | Microsoft 문서"
+title: "장치 규정 준수를 확인합니다."
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager를 사용하여 조직에서 장치의 구성 및 준수를 관리합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "8"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: 0396718ee6290c58ca1761922e51e336b997f52c
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 27738aa8587d8930781bc5f70248c8c994227851
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="ensure-device-compliance-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 장치 준수 확인
 

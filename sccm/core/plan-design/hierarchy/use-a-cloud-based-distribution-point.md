@@ -1,5 +1,6 @@
 ---
-title: "클라우드 기반 배포 지점 | Microsoft 문서"
+title: "클라우드 기반 배포 지점"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 클라우드 기반 배포 지점을 사용하기 위한 구성 및 제한 사항을 알아봅니다."
 ms.custom: na
 ms.date: 3/27/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "9"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 8caf3319d93b98680ed4a719a8db714c7e4e96ce
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 7defec5e771fa210d25bfa0cbfab5216fcabcf6b
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="use-a-cloud-based-distribution-point-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라우드 기반 배포 지점 사용
 

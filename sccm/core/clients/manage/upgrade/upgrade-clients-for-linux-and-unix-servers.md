@@ -1,5 +1,5 @@
 ---
-itle: 'Upgrade clients | Microsoft Docs | Linux UNIX '
+itle: 'Upgrade clients | Linux UNIX '
 description: "System Center Configuration Manager에서 Linux 또는 UNIX 서버의 클라이언트 업그레이드"
 ms.custom: na
 ms.date: 04/23/2017
@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: a6ff4e325175df805381c768aa05ac9929f3542e
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 03b0fd0ffb3175a0d5e0d5975ff5492713aa0376
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-upgrade-clients-for-linux-and-unix-servers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Linux 및 UNIX 서버용 클라이언트를 업그레이드하는 방법
 

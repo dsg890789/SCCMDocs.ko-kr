@@ -1,5 +1,6 @@
 ---
-title: "소프트웨어 인벤토리 | Microsoft 문서"
+title: "소프트웨어 인벤토리"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 소프트웨어 인벤토리를 소개합니다."
 ms.custom: na
 ms.date: 2/22/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: 969f2d28649853ddc95860fe72597d6d2c9a94e9
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: f3928e1f90b45c3dcf0d3b5202ae1a84bbe408fb
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="introduction-to-software-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 인벤토리 소개
 

@@ -1,5 +1,6 @@
 ---
-title: "운영 체제 배포를 위한 인프라 요구 사항 | Microsoft 문서"
+title: "운영 체제 배포를 위한 인프라 요구 사항"
+titleSuffix: Configuration Manager
 description: "운영 체제 배포를 위해 System Center 2012 Configuration Manager를 사용하기 전에 외부 종속성과 제품 종속성을 알고 있어야 합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "24"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: 523c7e7fd406274b0c0d88fcc4bd6b6247fa34e8
-ms.sourcegitcommit: c145e515843a0f37c2e5ca5dbd22072a219d06b4
+ms.openlocfilehash: 0b90cb20707340bec6fc7d5ddbab6f39d78e10bf
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="infrastructure-requirements-for-operating-system-deployment-in-system-center-configuration-manager"></a>System Center Configuration Manager의 운영 체제 배포에 대한 인프라 요구 사항
 

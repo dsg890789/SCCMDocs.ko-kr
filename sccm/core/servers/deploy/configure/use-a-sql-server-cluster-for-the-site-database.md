@@ -1,5 +1,6 @@
 ---
-title: "SQL Server 클러스터 | Microsoft 문서"
+title: "SQL Server 클러스터"
+titleSuffix: Configuration Manager
 description: "SQL Server 클러스터를 사용하여 System Center Configuration Manager 사이트 데이터베이스를 호스트할 수 있습니다. 지원되는 옵션에 대한 정보를 포함합니다."
 ms.custom: na
 ms.date: 2/28/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 53f119bbb1f8827a9c23c8b747840350bbb92790
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 5ffc99b0b5c2ab21e65368ae42d3edbb48411476
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="use-a-sql-server-cluster-for-the-system-center-configuration-manager-site-database"></a>System Center Configuration Manager 사이트 데이터베이스에 SQL Server 클러스터 사용
 

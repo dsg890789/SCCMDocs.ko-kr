@@ -1,5 +1,6 @@
 ---
-title: "앱별 VPN에 대한 PFN(패키지 패밀리 이름) 찾기 | Microsoft 문서"
+title: "앱별 VPN에 대한 PFN(패키지 패밀리 이름) 찾기"
+titleSuffix: Configuration Manager
 description: "앱별 VPN을 구성할 수 있도록 패키지 패밀리 이름을 찾는 두 가지 방법에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "3"
 author: Nbigman
 ms.author: nbigman
 manager: angrobe
-ms.openlocfilehash: ce50645155ecb14a82d8b982aa69c0f87dd15fbf
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 640f44985ad45442b05f2bbf4ee1ec9c2590cba4
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="find-a-package-family-name-pfn-for-per-app-vpn"></a>앱별 VPN에 대한 PFN(패키지 패밀리 이름) 찾기
 

@@ -1,5 +1,6 @@
 ---
-title: "부팅 이미지 사용자 지정 - Configuration Manager | Microsoft 문서"
+title: "부팅 이미지 사용자 지정 "
+titleSuffix: Configuration Manager
 description: "Configuration Manager 또는 DISM(배포 이미지 서비스 및 관리) 명령줄 도구를 사용하여 부팅 이미지 사용자 지정하는 몇 가지 방법을 알아봅니다."
 ms.custom: na
 ms.date: 01/23/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: ab2ecb64c9c80b4effed79ba08769c99473db0c4
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 4c1d721c9fb0b01f15f1f0468bc797ffffb9e345
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="customize-boot-images-with-system-center-configuration-manager"></a>System Center Configuration Manager로 부팅 이미지 사용자 지정
 

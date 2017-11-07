@@ -1,5 +1,6 @@
 ---
-title: "사용자 지정 작업 순서 만들기 | Microsoft 문서"
+title: "사용자 지정 작업 순서 만들기"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 사용자 지정 작업 순서를 편집하여 작업 순서에 단계를 추가합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 03c844084c72fc52806123d9f4c11a410a3ec775
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: e25b60b64ae2ed75091c4f5b0ffa0f9eca4c6cac
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-a-custom-task-sequence-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 사용자 지정 작업 순서 만들기
 

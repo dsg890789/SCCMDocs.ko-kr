@@ -1,5 +1,6 @@
 ---
-title: "보고에 대한 보안 및 개인 정보 | Microsoft 문서"
+title: "보고에 대한 보안 및 개인 정보"
+titleSuffix: Configuration Manager
 description: "Configuration Manager의 보고 기능을 사용하는 경우 보안 및 개인 정보에 대한 모범 사례를 이해합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 50ef8b761533bfdd5e8d23abc7791beb4c7d0b11
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 745bcb631cc137eadeebd83fce7f2307a8bf916a
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="security-and-privacy-for-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 보고 기능에 대한 보안 및 개인 정보
 

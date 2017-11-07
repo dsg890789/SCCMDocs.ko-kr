@@ -1,5 +1,6 @@
 ---
-title: "Endpoint Protection | Microsoft 문서"
+title: Endpoint Protection
+titleSuffix: Configuration Manager
 description: "Configuration Manager 계층 구조에서 클라이언트 컴퓨터에 대한 맬웨어 방지 정책 및 Windows 방화벽 보안을 관리하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 02/6/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "11"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.openlocfilehash: 76319b935695df204b4b83a645504079c60db12b
-ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
+ms.openlocfilehash: 308c69f4631a1bcc28f7d8460a4aa3abb02f0650
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="endpoint-protection"></a>Endpoint Protection
 

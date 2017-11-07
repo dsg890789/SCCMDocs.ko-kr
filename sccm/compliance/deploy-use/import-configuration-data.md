@@ -1,5 +1,6 @@
 ---
-title: "구성 데이터 가져오기 | Microsoft 문서"
+title: "구성 데이터 가져오기"
+titleSuffix: Configuration Manager
 description: "캐비닛 파일 형식에 포함되어 있고 지원되는 서비스 모델링 언어 스키마를 준수하는 경우 구성 데이터를 가져옵니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: d770a2f305856560de70014cc39a95207f0efab5
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: c7273ff47edb4a6d39d8c85b2d349ee7315edb17
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="import-configuration-data-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 구성 데이터 가져오기
 

@@ -1,5 +1,6 @@
 ---
-title: "쿼리 소개 | Microsoft 문서"
+title: "쿼리 소개"
+titleSuffix: Configuration Manager
 description: "쿼리를 만들고 실행하여 쿼리 조건과 일치하는 개체를 System Center Configuration Manager 계층 구조에서 찾습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: a1bb67b786aa452452585f2f7a2aa7c9ca4e12bf
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: f2a97ad3047c4e26a6c1823efca52d39e45c3b6e
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="introduction-to-queries-in-system-center-configuration-manager"></a>System Center Configuration Manager의 쿼리 소개
 

@@ -1,5 +1,6 @@
 ---
-title: "구성 항목을 만드는 방법 | Microsoft 문서"
+title: "구성 항목을 만드는 방법"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 관리하고 Microsoft Intune에 등록된 장치에 구성을 만들고 배포합니다."
 ms.custom: na
 ms.date: 03/28/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: 6a7839e11a30b069718a97a7ee3c02a3cf4d6964
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 5cccd8308b35d54914200c8665eb15a55f153127
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-create-configuration-items-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 구성 항목을 만드는 방법
 

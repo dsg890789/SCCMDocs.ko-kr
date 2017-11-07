@@ -1,5 +1,6 @@
 ---
-title: "릴리스 정보 - Configuration Manager | Microsoft 문서"
+title: "릴리스 정보 "
+titleSuffix: Configuration Manager
 description: "Microsoft 기술 자료 문서에서 다루지 않거나 제품에서 아직 해결되지 않은 긴급한 문제에 대해서는 이 정보를 참조하세요."
 ms.custom: na
 ms.date: 08/23/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 4e818ffd943208eab323b1558f825bd87f3ddc4c
-ms.sourcegitcommit: 13599667ea77c16db1aebe64f8a6748c268f0b45
+ms.openlocfilehash: 2571cfbff1373db05279918af776d8be81a5c322
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="release-notes-for-system-center-configuration-manager"></a>System Center Configuration Manager의 릴리스 정보
 

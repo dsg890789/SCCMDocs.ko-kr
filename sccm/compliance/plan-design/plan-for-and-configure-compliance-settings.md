@@ -1,5 +1,6 @@
 ---
-title: "준수 설정 계획 및 구성 | Microsoft 문서"
+title: "준수 설정 계획 및 구성"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 준수 설정으로 작업하기 위한 필수 조건 및 구성 작업에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "8"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: 603f82d9589f17fdbbdcd38baa236fb23424ef34
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 970ebabc8a275f46cf005c6f3571c62d64889ea8
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="plan-for-and-configure-compliance-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 준수 설정 계획 및 구성
 

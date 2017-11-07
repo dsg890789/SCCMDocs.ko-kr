@@ -1,5 +1,6 @@
 ---
-title: "엔터프라이즈 운영 체제를 배포하는 시나리오 | Microsoft 문서"
+title: "엔터프라이즈 운영 체제를 배포하는 시나리오"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager를 사용하여 엔터프라이즈 운영 체제를 배포하는 여러 시나리오에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "11"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: b1bea8b1b890f7c96a432835d28ad840a9b6873d
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: d7934c3d757ec0ede6553d9c17b3d36117da3892
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="scenarios-to-deploy-enterprise-operating-systems-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 엔터프라이즈 운영 체제를 배포하는 시나리오
 

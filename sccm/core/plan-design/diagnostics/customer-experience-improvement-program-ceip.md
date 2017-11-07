@@ -1,5 +1,6 @@
 ---
-title: "CEIP | Microsoft 문서"
+title: CEIP
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에 대한 사용자 환경 개선 프로그램 설정에 대해 알아봅니다."
 ms.custom: na
 ms.date: 12/29/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "4"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: dddb6d960269a0d7655597cd9a1ccb31b382853c
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: ef02b16e86348a596f29b8235451b30f30a6c38c
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="customer-experience-improvement-program-ceip-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 CEIP(사용자 환경 개선 프로그램)
 

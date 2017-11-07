@@ -1,5 +1,6 @@
 ---
-title: "검색 구성 | Microsoft 문서"
+title: "검색 구성"
+titleSuffix: Configuration Manager
 description: "네트워크 인프라 및 Active Directory에서 관리할 수 있는 리소스를 찾기 위해 Configuration Manager 사이트에서 실행할 검색 방법을 구성합니다."
 ms.custom: na
 ms.date: 7/31/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 34a539ceaea6b070f81a28d2c0a9ce388e26cfeb
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 108721f0ad5107a3b61cfeb82120a275f2f96fdf
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="configure-discovery-methods-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 검색 방법 구성
 

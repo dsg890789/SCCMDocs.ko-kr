@@ -1,5 +1,6 @@
 ---
-title: "프록시 서버 지원 | Microsoft 문서"
+title: "프록시 서버 지원"
+titleSuffix: Configuration Manager
 description: "사이트 시스템 서버와 클라이언트에서 사용하는 프록시 서버에 대한 System Center Configuration Manager 지원에 대해 알아봅니다."
 ms.custom: na
 ms.date: 2/7/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: dc36be47310d2c2178c974a2b503d0b5f9f6e2ec
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 909c56f6087b6ed7b6600b6f3fc693dbd5b4d1b5
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="proxy-server-support-in-system-center-configuration-manager"></a>System Center Configuration Manager의 프록시 서버 지원
 

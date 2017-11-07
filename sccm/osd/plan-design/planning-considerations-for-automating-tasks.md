@@ -1,5 +1,6 @@
 ---
-title: "작업 자동화에 대한 계획 고려 사항 | Microsoft 문서"
+title: "작업 자동화에 대한 계획 고려 사항"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 작업을 자동화하기 전에 계획합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: f44fa4ef0946d3500d15db536333adab571a5f64
-ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
+ms.openlocfilehash: cfd3e33006f05b4270266b3c8b316764d29cdb0d
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="planning-considerations-for-automating-tasks-in-system-center-configuration-manager"></a>System Center Configuration Manager의 작업 자동화에 대한 계획 고려 사항
 
