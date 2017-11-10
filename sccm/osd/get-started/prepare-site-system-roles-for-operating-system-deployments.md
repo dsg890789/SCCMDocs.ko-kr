@@ -1,5 +1,6 @@
 ---
-title: "운영 체제 배포에 대해 사이트 시스템 역할 준비 | Microsoft 문서"
+title: "운영 체제 배포에 대해 사이트 시스템 역할 준비"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 운영 체제를 배포하기 전에 사이트 시스템 역할을 구성합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 11c0f169afebdb071fefb5ce300fd1ae3481a94f
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: c07172bec1032b021c2d7b7ccaabe33c96b930d2
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="prepare-site-system-roles-for-operating-system-deployments-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 운영 체제 배포를 위한 사이트 시스템 역할 준비
 
@@ -67,7 +68,7 @@ System Center Configuration Manager에서 운영 체제를 배포하려면 먼�
 
 2.  구성할 배포 지점을 선택한 다음 **홈** 탭의 **속성** 그룹에서 **속성**을 클릭합니다.  
 
-3.  배포 지점의 속성 페이지에서 **PXE** 탭을 클릭합니다. **클라이언트에 대해 PXE 지원 사용** 을 선택하여 이 배포 지점에 PXE를 사용하도록 설정합니다.  
+3.  배포 지점의 속성 페이지에서 **PXE** 탭을 클릭한 다음 **클라이언트에 대한 PXE 지원 사용**을 선택하여 이 배포 지점에 대해 PXE를 사용 설정합니다.  
 
 4.  PXE를 사용한다는 것을 확정하려면 **PXE에 필요한 포트 검토** 대화 상자에서 **예** 를 클릭합니다. Configuration Manager가 Windows 방화벽에 기본 포트를 자동으로 구성합니다. 다른 방화벽을 사용하는 경우 수동으로 포트를 구성해야 합니다.  
 

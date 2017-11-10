@@ -1,5 +1,6 @@
 ---
-title: "사이트 설치 리소스 | Microsoft 문서"
+title: "사이트 설치 리소스"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager를 설치하거나 계층 구조에 사이트를 추가하는 데 도움이 되는 항목 목록을 검토합니다."
 ms.custom: na
 ms.date: 1/3/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 75511c744d7d2bae960273c845ce68f06a82b697
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 02e3f342c56d420d52528d882b5c7150a94aaffc
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="resources-for-installing-system-center-configuration-manager-sites"></a>System Center Configuration Manager 사이트 설치용 리소스
 

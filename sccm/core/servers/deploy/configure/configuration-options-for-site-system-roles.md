@@ -1,5 +1,6 @@
 ---
-title: "사이트 시스템 역할 옵션 | Microsoft 문서"
+title: "사이트 시스템 역할 옵션"
+titleSuffix: Configuration Manager
 description: "별도의 설명이 필요한 Configuration Manager 사이트 역할에 대한 자세한 내용은 이 문서를 참조하세요."
 ms.custom: na
 ms.date: 2/8/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: b4db5d86cc0ed020ed176feb2e8f1f9dc51a2280
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 842bbdf2ad83f89345b1ed99c2c12b91b7622219
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="configuration-options-for-site-system-roles-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 사이트 시스템 역할 구성 옵션
 

@@ -1,5 +1,6 @@
 ---
-title: Technical Preview 1709 | Microsoft Docs
+title: "기술 미리 보기 1709"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager용 Technical Preview 버전 1709에서 사용 가능한 기능에 대해 알아봅니다."
 ms.custom: na
 ms.date: 09/28/2017
@@ -13,11 +14,11 @@ ms.assetid: a3ef6bdc-a204-4c4c-a02f-2bd03f35183e
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 3348bc91e6810c873d50cb4efd3efb9fbd024bd3
-ms.sourcegitcommit: 96b79fa091f44e8e6ac5652f6cbbb4b873a8bad9
+ms.openlocfilehash: 90e31c26204323e33560270044ebac7dfe135684
+ms.sourcegitcommit: 1573a1bd0bd58fefb1ea651b3ea8d6fd53eff546
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="capabilities-in-technical-preview-1709-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1709의 기능
 
@@ -43,8 +44,8 @@ ms.lasthandoff: 10/09/2017
 
 **다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.**  
 
-## <a name="improved-vpn-profile-experience-in-configuration-manager-console----1313282---"></a>Configuration Manager 콘솔에서 개선된 VPN 프로필<!-- 1313282 -->
-
+## <a name="improved-vpn-profile-experience-in-configuration-manager-console"></a>Configuration Manager 콘솔에서 개선된 VPN 프로필
+<!-- 1313282 -->
 이 릴리스에서 선택된 플랫폼에 적절한 설정을 표시하기 위해 VPN 프로필 마법사 및 속성 페이지를 업데이트했습니다. 특히:
 
 - 각 플랫폼에는 고유한 워크플로가 있습니다. 즉, 새 VPN 프로필에는 플랫폼에서 지원되는 설정만 포함됩니다.
@@ -80,8 +81,7 @@ ms.lasthandoff: 10/09/2017
 
 ## <a name="co-management-for-windows-10-devices"></a>Windows 10 장치의 공동 관리    
 <!-- 1350871 -->
-고객은 보통 낮은 비용으로 간소화된 클라우드 기반 솔루션을 사용하여 모바일 장치를 관리하는 동일한 방식으로 Windows 10 장치를 관리하려고 합니다. 그러나 기존 관리에서 최신 관리로 전환하기가 어려울 수 있습니다. 공동 관리는 Windows 10 장치를 Configuration Manager와 Intune에서 동시에 관리할 수 있는 솔루션입니다. 뿐만 아니라 AD(Active Directory) 및 Azure AD(Azure Active Directory)에 조인되어 시간이 지남에 따라 최신 버전으로 업데이트할 수 있는 방법을 제공합니다. 기존 관리에서 최신 관리에 대한 연결을 제공하고 단계별 접근 방법을 사용하여 전환할 수 있는 경로를 제공하는 솔루션입니다.  
-
+고객은 보통 낮은 비용으로 간소화된 클라우드 기반 솔루션을 사용하여 모바일 장치를 관리하는 동일한 방식으로 Windows 10 장치를 관리하려고 합니다. 그러나 기존 관리에서 최신 관리로 전환하기가 어려울 수 있습니다. Windows 10 버전 1607(Anniversary Update라고도 함)부터는 Windows 10 장치를 온-프레미스 AD(Active Directory)와 클라우드 기반 Azure AD에 동시에 조인할 수 있습니다(하이브리드 Azure AD). 공동 관리에서는 이 향상된 기능을 사용하며 Configuration Manager 및 Intune을 둘 다 사용하여 Windows 10 장치를 동시에 관리할 수 있게 해줍니다. 이것은 기존 관리에서 최신 관리에 대한 연결을 제공하고 단계별 접근 방법을 사용하여 전환할 수 있는 경로를 제공하는 솔루션입니다. 
 
 ### <a name="prerequisites"></a>전제 조건
 공동 관리를 활성화하기 전에 다음 필수 구성 요소를 준비해야 합니다. 기존 Configuration Manager 클라이언트 및 클라이언트가 아닌 장치에 대한 일반 전제 조건 및 다른 필수 구성 요소가 있습니다.
@@ -210,7 +210,6 @@ Intune 또는 Configuration Manager 클라이언트에 등록되지 않은 Windo
     - **프로덕션**: 이 설정을 선택하면 지원되는 모든 Windows 10 장치가 공동 관리를 사용할 수 있습니다. 하나 이상의 컬렉션을 포함하여 **제외 그룹**을 구성합니다. 이 그룹에 있는 컬렉션의 멤버인 장치는 공동 관리를 사용하지 않도록 제외됩니다. 
 5. 사용 페이지에서 (스테이징 페이지에 구성된 설정에 따라) **파일럿** 또는 **모두** 중 하나를 선택하여 Intune에 자동 등록을 활성화한 후 **다음**을 클릭합니다. **파일럿**을 선택하는 경우 파일럿 그룹의 멤버인 Configuration manager 클라이언트만이 Intune에서 자동으로 등록됩니다. 이 기능을 사용하면 클라이언트의 하위 집합에서 공동 관리를 사용하여 처음에 공동 관리를 테스트하고 단계적 접근을 사용하여 공동 관리를 롤아웃할 수 있습니다. 
 6. 워크로드 페이지에서 Configuration Manager 워크로드를 Intune에서 관리하도록 전환할지를 선택하고 **다음**을 클릭합니다. 슬라이더를 사용하여 (스테이징 페이지에서 구성한 설정에 따라) 워크로드를 파일럿 그룹으로 전활할지 아니면 모든 Windows 10 클라이언트로 전환할지를 선택합니다. 
-
 7. 공동 관리를 사용하려면 마법사를 완료합니다.  
 
 <!--### Modify your co-management settings

@@ -1,5 +1,6 @@
 ---
-title: "1606 기준 미디어를 사용하여 사이트 설치 | Microsoft 문서"
+title: "1606 기준 미디어를 사용하여 사이트 설치 "
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager용 LTSB를 설치하거나 업그레이드합니다."
 ms.custom: na
 ms.date: 09/06/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 247fbe5313c17be906802acfaa6952ab3358122e
-ms.sourcegitcommit: a17f5dece340a70cedbec03d19938dab90ae60b1
+ms.openlocfilehash: 13f483a31e5f74af549fd201e53079ae894227ae
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="install-and-upgrade-with-the-version-1606-baseline-media-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 버전 1606 기준 미디어를 사용하여 설치 및 업그레이드
 

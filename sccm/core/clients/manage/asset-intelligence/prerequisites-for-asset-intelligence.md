@@ -1,5 +1,6 @@
 ---
-title: "Asset Intelligence 필수 조건 | Microsoft 문서"
+title: "Asset Intelligence 필수 조건"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 Asset Intelligence에 대한 필수 조건을 확인합니다."
 ms.custom: na
 ms.date: 2/22/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: 2bcc6dd84b236187ea9cbfa0b85c25e7ec25719c
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 88358017bd8807caca3c544ecdf07c1b751efd3f
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="prerequisites-for-asset-intelligence-in-system-center-configuration-manager"></a>System Center Configuration Manager의 Asset Intelligence에 대한 필수 조건
 

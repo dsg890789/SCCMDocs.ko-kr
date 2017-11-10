@@ -1,5 +1,6 @@
 ---
-title: "클라이언트에 대한 사이트 시스템 역할 | Microsoft 문서"
+title: "클라이언트의 사이트 시스템 역할"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 클라이언트에 대한 사이트 시스템 역할을 결정합니다."
 ms.custom: na
 ms.date: 04/23/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 65c165ababafab3dd0d9ce8f1ce775be0d72a573
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: f6c2b15f58fbd6e26ca1cb8a4fccbde36279571d
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="determine-the-site-system-roles-for-system-center-configuration-manager-clients"></a>System Center Configuration Manager 클라이언트에 대한 사이트 시스템 역할 결정
 

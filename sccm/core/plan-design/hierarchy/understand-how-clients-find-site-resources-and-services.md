@@ -1,5 +1,6 @@
 ---
-title: "사이트 리소스 찾기 | Microsoft 문서"
+title: "사이트 리소스 찾기"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager 클라이언트가 서비스 위치를 사용하여 사이트 리소스를 찾는 방법과 시기를 알아봅니다."
 ms.custom: na
 ms.date: 2/7/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "10"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 1c9e7ada6a8aa228b30e58865baae0f6e529e6af
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: e64b2c4242903143b677189e3bd4c8f32ebace20
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="learn-how-clients-find-site-resources-and-services-for-system-center-configuration-manager"></a>클라이언트가 System Center Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법
 

@@ -1,5 +1,6 @@
 ---
-title: "Windows 클라이언트 배포 | Microsoft 문서"
+title: "Windows 클라이언트 배포"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 08/20/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: f03102c170e1e7de3a11349f4a66380c4291dcac
-ms.sourcegitcommit: f6a428a8db7145affa388f59e0ad880bdfcf17b5
+ms.openlocfilehash: 31b8ffc12c483f5c10063a305101de5ca98cbd8b
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-deploy-clients-to-windows-computers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법
 

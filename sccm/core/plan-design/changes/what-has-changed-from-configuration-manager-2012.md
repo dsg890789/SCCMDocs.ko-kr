@@ -1,5 +1,5 @@
 ---
-title: "Configuration Manager 2012에서 변경된 내용 | Microsoft 문서 "
+title: "Configuration Manager 2012에서 변경된 내용 "
 description: "System Center Configuration Manger 및 System Center 2012 Configuration Manager의 변경 내용과 새로운 기능을 확인합니다."
 ms.custom: na
 ms.date: 05/02/2017
@@ -14,11 +14,11 @@ caps.latest.revision: "51"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 0a3eb93a99533a1569d8f72ca01d6dfcdc75da20
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 97882e89076b994c60760621dbab3fa8e75126fc
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="what39s-changed-in-system-center-configuration-manager-from-system-center-2012-configuration-manager"></a>System Center 2012 Configuration Manager에서 변경된 System Center Configuration Manager의 기능
 
@@ -64,7 +64,7 @@ ms.lasthandoff: 08/07/2017
 
 -   배포에 적용되는 업데이트를 Configuration Manager 콘솔 내에서 사용할 수 있게 합니다.  
 
-이 사이트 시스템 역할은 작업의 온라인 및 오프라인 모드를 모두 지원합니다. 자세한 내용은 [System Center Configuration Manager의 서비스 연결 지점 정보](../../../core/servers/deploy/configure/about-the-service-connection-point.md)을 참조하십시오.  
+이 사이트 시스템 역할은 작업의 온라인 및 오프라인 모드를 모두 지원합니다. 자세한 내용은 [About the service connection point in System Center Configuration Manager](../../../core/servers/deploy/configure/about-the-service-connection-point.md)을 참조하십시오.  
 
 ##  <a name="bkmk_usage"></a> 사용 현황 데이터 수집  
  System Center Configuration Manager는 사이트 및 인프라에 대한 사용 현황 데이터를 수집합니다. 이 정보는 서비스 연결 지점을 통해 컴파일되어 Microsoft 클라우드 서비스에 제출됩니다. 사용하는 Configuration Manager의 버전에 적용되는 배포의 업데이트를 다운로드하기 위해 Configuration Manager를 사용하도록 설정하는 데 필요합니다. 서비스 연결 지점을 설정할 때 수집되는 데이터의 액세스 수준과 해당 데이터를 자동으로 제출할지(온라인 모드) 아니면 수동으로 제출할지(오프라인 모드) 여부를 지정할 수 있습니다.  

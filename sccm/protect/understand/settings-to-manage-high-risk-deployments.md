@@ -1,5 +1,6 @@
 ---
-title: "높은 위험 수준의 배포 관리 | Microsoft 문서"
+title: "높은 위험 수준의 배포 관리"
+titleSuffix: Configuration Manager
 description: "높은 위험 수준의 배포를 만드는 경우 관리자에게 경고하도록 System Center Configuration Manager에서 사이트 설정을 구성하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "6"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 8b5564f39f07a67a3c9278379ed59ca415603d21
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 6c0ae39c674202bc999c3fccc9547a60ff8c6627
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="settings-to-manage-high-risk-deployments-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대해 위험 수준이 높은 배포를 관리하기 위한 설정
 

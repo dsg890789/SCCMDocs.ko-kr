@@ -1,5 +1,6 @@
 ---
-title: "클라이언트 마이그레이션 계획 | Microsoft 문서"
+title: "클라이언트 마이그레이션 계획"
+titleSuffix: Configuration Manager
 description: "원본 계층에서 System Center Configuration Manager 대상 계층으로 클라이언트를 마이그레이션하는 작업에 대해 알아봅니다."
 ms.custom: na
 ms.date: 12/30/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "6"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: b52ca4059dfeed08cabf1f75319da40d6499622f
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 8e41135266565890c793f7920482a4455f05fbde
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="plan-a-client-migration-strategy-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트 마이그레이션 전략 계획
 

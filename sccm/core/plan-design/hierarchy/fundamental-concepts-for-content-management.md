@@ -1,5 +1,6 @@
 ---
-title: "콘텐츠 관리의 기본 사항 | Microsoft 문서"
+title: "콘텐츠 관리의 기본 사항"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 도구와 옵션을 사용하여 배포하는 콘텐츠를 관리합니다."
 ms.custom: na
 ms.date: 05/04/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: f73dde64e0e8a0fc49f45b3afb3b8f00c926a820
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: d550d18de93f5e11c7538de24473d36c788145e6
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="fundamental-concepts-for-content-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 콘텐츠 관리의 기본 개념
 

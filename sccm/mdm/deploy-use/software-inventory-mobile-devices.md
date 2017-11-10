@@ -1,5 +1,6 @@
 ---
-title: "Microsoft Intune에서 등록한 모바일 장치를 위한 소프트웨어 인벤토리 | Microsoft Docs"
+title: "Microsoft Intune에서 등록한 모바일 장치를 위한 소프트웨어 인벤토리"
+titleSuffix: Configuration Manager
 description: "Microsoft Intune에서 등록한 모바일 장치를 위한 소프트웨어 인벤토리"
 ms.custom: na
 ms.date: 03/05/2017
@@ -12,14 +13,14 @@ ms.topic: article
 ms.assetid: a0eae17a-60a8-4132-91af-0b10ad338c92
 caps.latest.revision: "18"
 caps.handback.revision: "0"
-author: mtillman
-ms.author: mtillman
+author: dougeby
+ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 2ed79d02535768de136947e4a5b63ad186d9a3cd
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: c0a583de1a0b24bd31c0d55c1acb54f480bb4230
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="software-inventory-for-mobile-devices-enrolled-with-microsoft-intune"></a>Microsoft Intune에서 등록한 모바일 장치를 위한 소프트웨어 인벤토리
 

@@ -1,5 +1,6 @@
 ---
-title: "PKI 인증서 요구 사항 | Microsoft 문서"
+title: "PKI 인증서 요구 사항"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에 필요할 수 있는 PKI 인증서 요구 사항을 찾습니다."
 ms.custom: na
 ms.date: 04/24/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "17"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: ee4062a97d2653467145c74fe0c42a60186f85a5
-ms.sourcegitcommit: f6a428a8db7145affa388f59e0ad880bdfcf17b5
+ms.openlocfilehash: f5afa9fd9823cfbaa305b4d4e88f89be7004bd60
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="pki-certificate-requirements-for-system-center-configuration-manager"></a>System Center Configuration Manager를 위한 PKI 인증서 요구 사항
 

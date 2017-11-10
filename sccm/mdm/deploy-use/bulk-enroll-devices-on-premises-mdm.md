@@ -1,5 +1,6 @@
 ---
-title: "장치 대량 등록 | Microsoft 문서 | 온-프레미스 MDM"
+title: "온-프레미스 MDM에 대한 장치 대량 등록"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 온-프레미스 모바일 장치 관리를 사용하여 자동화된 방법으로 장치를 대량 등록합니다."
 ms.custom: na
 ms.date: 03/05/2017
@@ -12,14 +13,14 @@ ms.topic: get-started-article
 ms.assetid: b36f5e4a-2b57-4d18-83f6-197081ac2a0a
 caps.latest.revision: "13"
 caps.handback.revision: "0"
-author: Mtillman
-ms.author: mtillman
+author: dougeby
+ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: be9596537e9c80a6d78aa0685d33382bfd242afe
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 3d2f61a60b4f78e5e1edb883b6a6834237a36acf
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-bulk-enroll-devices-with-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 온-프레미스 모바일 장치 관리를 사용하여 장치를 대량 등록하는 방법
 

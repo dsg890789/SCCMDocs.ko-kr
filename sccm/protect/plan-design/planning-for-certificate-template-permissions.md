@@ -1,5 +1,6 @@
 ---
-title: "인증서 템플릿 권한 계획 | Microsoft 문서"
+title: "인증서 템플릿 권한 계획"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 사용하는 인증서 템플릿을 구성해야 하는 권한에 대한 계획을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 832be8c9fda727804f57e83768cd8799db722c67
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: e5c748297b318e5256f2064811151ae96a55fccd
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="planning-for-certificate-template-permissions-for-certificate-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 인증서 프로필에 대한 인증서 템플릿 권한 계획
 

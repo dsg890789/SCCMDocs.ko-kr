@@ -1,5 +1,6 @@
 ---
-title: "1606에 대한 검사 목록 | Microsoft 문서"
+title: "1606에 대한 검사 목록"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 버전 1511 또는 1602를 1606으로 업데이트하기 전에 수행할 작업에 대해 알아봅니다."
 ms.custom: na
 ms.date: 6/6/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "7"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: a6bda116499845fedff0126e2890755931de85bb
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 1f3bb243c6c40a1c949b3c75aa4f8727f5ed42bd
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="checklist-for-installing-update-1606-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 업데이트 1606을 설치하기 위한 검사 목록
 

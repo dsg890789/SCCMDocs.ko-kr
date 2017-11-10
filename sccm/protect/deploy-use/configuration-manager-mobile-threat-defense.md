@@ -1,5 +1,6 @@
 ---
-title: "모바일 위협 방지 | System Center Configuration Manager"
+title: "모바일 위협 방어"
+titleSuffix: Configuration Manager
 description: "Configuration Manager 및 Intune Mobile Threat Defense 파트너를 사용하여 장치, 네트워크 및 응용 프로그램 위험에 따라 회사 리소스에 대한 액세스를 제한합니다."
 ms.custom: na
 ms.date: 03/02/2017
@@ -14,11 +15,11 @@ caps.latest.revision:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: 25d68e7b16afe8e24939897f01f173d3daa7fa09
-ms.sourcegitcommit: 621b9f8fedf7f1d53ea7abd804af4b63c85dbeb1
+ms.openlocfilehash: 83911f35dbe8fc7bc24a4885929fbdf5660e7285
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="intune-mobile-threat-defense-connectors-in-configuration-manager"></a>Configuration Manager의 Intune Mobile Threat Defense 커넥터
 

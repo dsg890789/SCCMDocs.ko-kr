@@ -1,5 +1,6 @@
 ---
-title: "인증서 프로필 모니터링 | Microsoft 문서"
+title: "인증서 프로필 모니터링"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager 인증서 프로필의 준수 상태를 모니터링하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 84e275fa5b17bc703da22fb686ef9050d17e557f
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: eaefae0c51af91e4419ef15cf02b8250c3d2efd8
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-monitor-certificate-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 인증서 프로필을 모니터링하는 방법
 

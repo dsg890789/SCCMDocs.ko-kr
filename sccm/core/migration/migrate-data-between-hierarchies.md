@@ -1,5 +1,6 @@
 ---
-title: "데이터 마이그레이션 | Microsoft 문서"
+title: "데이터 마이그레이션"
+titleSuffix: Configuration Manager
 description: "원본 계층 구조에서 System Center Configuration Manager 대상 계층 구조로 데이터를 전송하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 12/29/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: dface33392c2a2a662522656eabf0936b52b28fc
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: d832e820421784ce33df880463632050741eedd7
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="migrate-data-between-hierarchies-in-system-center-configuration-manager"></a>System Center Configuration Manager의 계층 구조 간에 데이터 마이그레이션
 

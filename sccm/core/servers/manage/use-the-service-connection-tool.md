@@ -1,5 +1,6 @@
 ---
-title: "서비스 연결 도구 | Microsoft 문서"
+title: "서비스 연결 도구"
+titleSuffix: Configuration Manager
 description: "Configuration Manager 클라우드 서비스에 연결하여 사용 정보를 수동으로 업로드할 수 있는 이 도구에 대해 알아봅니다."
 ms.custom: na
 ms.date: 09/06/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "11"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 8039ee0c704bbe570ec3e45ba648f779923087c6
-ms.sourcegitcommit: 2a1328da3facb20b0c78f3b12adbb5fdbe0dcc11
+ms.openlocfilehash: dda4a9b3977d55dbe3e2a0bf746a658eadc788d5
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="use-the-service-connection-tool-for-system-center-configuration-manager"></a>System Center Configuration Manager의 서비스 연결 도구 사용
 

@@ -1,8 +1,9 @@
 ---
-title: Configuration Manager Technical Preview | Microsoft Docs
+title: "기술 미리 보기 릴리스"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 새로운 기능을 테스트 시험해 볼 수 있는 기술 미리 보기 릴리스에 대해 알아봅니다."
 ms.custom: na
-ms.date: 09/28/2017
+ms.date: 10/30/2017
 ms.prod: configuration-manager
 ms.reviewer: nab
 ms.suite: na
@@ -14,11 +15,11 @@ caps.latest.revision: "157"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 429e20185bd23519f78c37ded39f2638d0c80ced
-ms.sourcegitcommit: 8ac9c2c9ba1fdcbb7cc8d5be898586865fcf67c0
+ms.openlocfilehash: 0f6fb329dae1dda18bbb1869dc77872a2a6a1b98
+ms.sourcegitcommit: 5437b2823bada8f8c9e67940f584953b9d190628
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="technical-preview-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview
 
@@ -93,10 +94,6 @@ ms.lasthandoff: 10/07/2017
 릴리스 후 최대 1년 동안 기준 버전을 설치할 수 있습니다. 그러나 새 Technical Preview 사이트를 설치할 경우 사용 가능한 최신 기준선 버전을 사용하는 것이 좋습니다.
 -  **Technical Preview 1703** - Configuration Manager Technical Preview 1703은 Configuration Manager Technical Preview의 콘솔 내 업데이트와 [TechNet Evaluation Center 웹 사이트에서 사용할 수 있는](http://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection-technical-preview) 새 기준 버전으로 제공됩니다.
 
-<!-- out of support. Use baseline 1703
--  **Technical Preview 1610** - The Configuration Manager Technical Preview 1610 was available as both an in-console update for the Configuration Manager Technical Preview, and as a baseline version. If you have media for installing 1610, we recommend you download version 1703 and install that version instead.
--->
-
 
 
 ##  <a name="BKMK_TPFeedback"></a> 사용자 의견 제공  
@@ -110,19 +107,26 @@ ms.lasthandoff: 10/07/2017
 
 
 ##  <a name="bkmk_tpCaps"></a> 가장 최근의 Technical Preview에 포함된 기능  
- 다음에는 각 Configuration Manager 기술 미리 보기 릴리스에 포함된 기능이 나와 있습니다.  기술 미리 보기의 특정 버전에서 사용할 수 있는 기능은 이후 버전에서도 계속 사용할 수 있습니다. 마찬가지로, System Center Configuration Manager 릴리스(현재 분기)에 추가된 기능은 후속 기술 미리 보기에서도 계속 사용할 수 있습니다.  각 미리 보기 버전에 대한 콘텐츠를 클릭하여 특정 기능에 대한 자세한 내용을 알아볼 수 있습니다.  
+다음에는 각 Configuration Manager 기술 미리 보기 릴리스에 포함된 기능이 나와 있습니다.  기술 미리 보기의 특정 버전에서 사용할 수 있는 기능은 이후 버전에서도 계속 사용할 수 있습니다. 마찬가지로, System Center Configuration Manager 릴리스(현재 분기)에 추가된 기능은 후속 기술 미리 보기에서도 계속 사용할 수 있습니다.  각 미리 보기 버전에 대한 콘텐츠를 클릭하여 특정 기능에 대한 자세한 내용을 알아볼 수 있습니다.  
 
  |기능 |기술 미리 보기 버전 |현재 분기 버전|  
  |----------------|---------------------|--------------------|
- |Configuration Manager 콘솔에서 개선된 VPN 프로필<!-- 1313282 --> | [Tech Preview 1709](capabilities-in-technical-preview-1709.md) |![추가되지 않음](media/Red_X.gif)    |
- |Windows 10 장치의 공동 관리|[Tech Preview 1709](capabilities-in-technical-preview-1709.md#co-management-for-windows-10-devices)|![추가되지 않음](media/Red_X.gif)    |
-
-
+ |Windows Analytics 장치 상태에 대한 Windows 10 원격 분석 <!--1356148 --> | [Tech Preview 1710](capabilities-in-technical-preview-1710.md#limit-windows-10-enhanced-telemetry-to-only-send-data-relevant-to-windows-analytics-device-health) |![추가되지 않음](media/Red_X.gif)    |
+ |소프트웨어 센터 개선 아이콘 <!-- 1356194 --> | [Tech Preview 1710](capabilities-in-technical-preview-1710.md#software-center-no-longer-distorts-icons-larger-than-250x250) |![추가되지 않음](media/Red_X.gif)    |
+ |소프트웨어 센터에서 공동 관리 장치에 대한 준수 확인 <!-- 1356374 -->| [Tech Preview 1710](capabilities-in-technical-preview-1710.md#check-compliance-from-software-center-for-co-managed-devices)|![추가되지 않음](media/Red_X.gif)    |
+ |CNG 인증서에 대한 제한적 지원<!-- 1356191 -->| [Tech Preview 1710](capabilities-in-technical-preview-1710.md#limited-support-for-cng-certificates)|![추가되지 않음](media/Red_X.gif)    |
+ |Exploit Guard 지원 <!--1355468 --> | [Tech Preview 1710](capabilities-in-technical-preview-1710.md#support-for-exploit-guard) |![추가되지 않음](media/Red_X.gif)    |
+ |컴퓨터 다시 시작 보류에 대한 향상된 설명   <!-- 1356283  -->| [Tech Preview 1710](capabilities-in-technical-preview-1710.md)|![추가되지 않음](media/Red_X.gif)    |
+ |장치 가드 정책 변경 <!-- 1355092  -->| [Tech Preview 1710](capabilities-in-technical-preview-1710.md)|![추가되지 않음](media/Red_X.gif)    |
+ |Windows Defender Application Guard 정책 구성 및 배포   <!-- 1351960  -->| [Tech Preview 1710](capabilities-in-technical-preview-1710.md)|![추가되지 않음](media/Red_X.gif)    |
+ 
 ## <a name="capabilities-delivered-in-previous-technical-previews"></a>이전 Technical Preview에 포함된 기능
  Technical Preview 릴리스의 모든 기능을 현재 분기의 지원되는 최소 버전으로 사용할 수 있는 경우 해당 미리 보기 버전에 대한 세부 정보는 다음 표에서 제거됩니다.  
 
  |기능 |기술 미리 보기 버전 |현재 분기 버전|  
  |----------------|---------------------|--------------------|
+ |Configuration Manager 콘솔에서 개선된 VPN 프로필<!-- 1313282 --> | [Tech Preview 1709](capabilities-in-technical-preview-1709.md) |![추가되지 않음](media/Red_X.gif)    |
+ |Windows 10 장치의 공동 관리|[Tech Preview 1709](capabilities-in-technical-preview-1709.md#co-management-for-windows-10-devices)|![추가되지 않음](media/Red_X.gif)    |
  |Configuration Manager에서 PowerShell 스크립트를 배포할 때 매개 변수를 지정하도록 향상된 기능 <!-- 1236459 -->|[기술 미리 보기 1708](capabilities-in-technical-preview-1708.md#improvements-for-specifying-script-parameters-when-you-deploy-powershell-scripts-from-configuration-manager)|![추가되지 않음](media/Red_X.gif)|
  |관리 정보 <!-- 1353967 --> |[기술 미리 보기 1708](capabilities-in-technical-preview-1708.md#management-insights)|![추가되지 않음](media/Red_X.gif)|
  |Configuration Manager 콘솔에서 컴퓨터 다시 시작 <!-- 1356283 --> |[기술 미리 보기 1708](capabilities-in-technical-preview-1708.md#restart-computers-from-the-configuration-manager-console)|![추가되지 않음](media/Red_X.gif)|
@@ -272,3 +276,4 @@ ms.lasthandoff: 10/07/2017
 ## <a name="see-also"></a>참고 항목  
 [System Center Configuration Manager의 새로운 기능](/sccm/core/plan-design/changes/whats-new-incremental-versions)  
  [System Center Configuration Manager 소개](../../core/understand/introduction.md)
+

@@ -1,5 +1,6 @@
 ---
-title: "콘텐츠 마이그레이션 | Microsoft 문서"
+title: "콘텐츠 마이그레이션"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager 대상 계층 구조로 데이터를 마이그레이션하는 동안 배포 지점을 사용하여 콘텐츠를 관리합니다."
 ms.custom: na
 ms.date: 12/30/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 25619d91522193178e0415f649ca4b34c94ecc89
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 09e4fd0237d16cdaa25ba3c26a8661bd14fd6692
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="plan-a-content-deployment-migration-strategy-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 콘텐츠 배포 마이그레이션 전략 계획
 

@@ -1,5 +1,6 @@
 ---
-title: "엔터프라이즈 운영 체제를 배포하는 방법 | Microsoft 문서"
+title: "엔터프라이즈 운영 체제를 배포하는 방법"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager 환경에서 엔터프라이즈 운영 체제를 배포하는 데 사용할 수 있는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "6"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 6cec9275009ac19ad65a03792c1bc4d0c528ea4c
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: eeb5014f4ca32986e603bb6615187a582ef7bf8f
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="methods-to-deploy-enterprise-operating-systems-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 엔터프라이즈 운영 체제를 배포하는 방법
 

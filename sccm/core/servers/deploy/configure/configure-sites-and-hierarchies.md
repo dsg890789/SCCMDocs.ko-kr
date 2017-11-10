@@ -1,5 +1,6 @@
 ---
-title: "사이트 구성 | Microsoft 문서"
+title: "사이트 구성"
+titleSuffix: Configuration Manager
 description: "사이트와 계층 모두에 영향을 주는 가장 일반적인 구성을 고려하려면 이 검사 목록을 참조하세요."
 ms.custom: na
 ms.date: 2/7/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "15"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 862f420c063cb44c419d4904fbb4696efb739758
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: e71a2153571fdaa069c8e75827661eb7c939d57a
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="configure-sites-and-hierarchies-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 사이트 및 계층 구조 구성
 

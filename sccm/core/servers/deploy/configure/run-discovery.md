@@ -1,5 +1,6 @@
 ---
-title: "장치 및 사용자 리소스 검색 | Microsoft 문서"
+title: "장치 및 사용자 리소스 검색"
+titleSuffix: Configuration Manager
 description: "검색 프로세스 및 검색 데이터 기록 개요를 읽습니다."
 ms.custom: na
 ms.date: 2/8/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 647826e9d340d3ef97abab0dba51041a3727dedc
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 15e43888e5063f60fdc48d8708389d9670577c34
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="run-discovery-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 검색 실행
 

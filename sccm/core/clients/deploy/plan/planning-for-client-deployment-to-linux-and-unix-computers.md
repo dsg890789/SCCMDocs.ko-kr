@@ -1,5 +1,6 @@
 ---
-title: "Linux 및 UNIX 컴퓨터에 클라이언트 배포 계획 | Microsoft 문서"
+title: "Linux 및 UNIX 컴퓨터에 클라이언트 배포 계획"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 Linux 및 UNIX 컴퓨터에 클라이언트 배포를 계획합니다."
 ms.custom: na
 ms.date: 08/30/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 488173a64c25e1e3b3e715228bdb46df9acd9e7d
-ms.sourcegitcommit: f6a428a8db7145affa388f59e0ad880bdfcf17b5
+ms.openlocfilehash: d96a8aedd046e3a8dcd12e711ae19f53a901fceb
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="planning-for-client-deployment-to-linux-and-unix-computers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Linux 및 UNIX 컴퓨터에 클라이언트 배포 계획
 

@@ -1,5 +1,6 @@
 ---
-title: "Endpoint Protection 상태 모니터링 | Microsoft 문서"
+title: "Endpoint Protection 상태 모니터링"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager 계층 구조에서 Endpoint Protection을 모니터링하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 03/13/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "8"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.openlocfilehash: b5771f4faebc06076bdbf84727848c881fc1dfb4
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 9e6356f8b3814ac49c26bfa4d319c3c9926a4382
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-monitor-endpoint-protection-status"></a>Endpoint Protection 상태를 모니터링하는 방법
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 08/07/2017
 4.  에 표시 되는 정보를 검토 하 여 **보안 상태** 및 **작동 상태** 섹션. 임시 컬렉션을 만들를 상태 링크를 클릭할 수는 **장치** 에서 노드는 **자산 및 준수** 작업 영역입니다. 임시 컬렉션 선택 된 상태를 사용 하 여 컴퓨터를 포함합니다.  
 
     > [!IMPORTANT]  
-    >   **상태** 노드에 표시되는 정보는 Configuration Manager 데이터베이스에서 마지막으로 요약된 데이터를 기반으로 하며 최신 정보가 아닐 수도 있습니다. 최신 데이터를 검색하려는 경우 **홈** 탭에서 **요약 실행**을 클릭하거나 **요약 일정** 을 클릭하여 요약 간격을 조정합니다.  
+    >  **상태** 노드에 표시되는 정보는 Configuration Manager 데이터베이스에서 마지막으로 요약된 데이터를 기반으로 하며 최신 정보가 아닐 수도 있습니다. 최신 데이터를 검색하려는 경우 **홈** 탭에서 **요약 실행**을 클릭하거나 **요약 일정** 을 클릭하여 요약 간격을 조정합니다.  
 
 ##  <a name="BKMK_2"></a> 자산 및 준수 작업 영역에서 Endpoint Protection을 모니터링하는 방법  
 

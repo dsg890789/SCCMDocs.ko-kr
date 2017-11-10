@@ -1,5 +1,6 @@
 ---
-title: "System Center Configuration Manager 콘솔에서 응용 프로그램 모니터링 | Microsoft 문서"
+title: "콘솔에서 응용 프로그램 모니터링"
+titleSuffix: Configuration Manager
 description: "Configuration Manager에서 모니터링 작업 영역을 사용하여 업데이트, 준수 설정 및 응용 프로그램을 비롯한 소프트웨어 배포를 모니터링합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "5"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: ded2a085510def60d388d9754da9c2c41de565d4
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 015f4410f576fac90d913abfa30064b2eecb2a5b
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="monitor-applications-from-the-system-center-configuration-manager-console"></a>System Center Configuration Manager 콘솔에서 응용 프로그램 모니터링
 

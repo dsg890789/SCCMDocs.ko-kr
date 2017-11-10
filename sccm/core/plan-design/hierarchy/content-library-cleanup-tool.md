@@ -1,5 +1,6 @@
 ---
-title: "콘텐츠 라이브러리 정리 도구 | Microsoft 문서"
+title: "콘텐츠 라이브러리 정리 도구"
+titleSuffix: Configuration Manager
 description: "콘텐츠 라이브러리 정리 도구를 사용하여 더 이상 System Center Configuration Manager 배포와 연관이 없는 분리된 콘텐츠를 제거합니다."
 ms.custom: na
 ms.date: 4/7/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "4"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 76e6772bdd5cbd32d525e728f6ebc988b045da78
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: c5bb9c055378c769613de45ffd776bbbdc1d0080
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="the-content-library-cleanup-tool-for-system-center-configuration-manager"></a>System Center Configuration Manager용 콘텐츠 라이브러리 정리 도구
 

@@ -1,5 +1,6 @@
 ---
-title: "컬렉션 모범 사례 | Microsoft 문서"
+title: "컬렉션 모범 사례"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 컬렉션에 대한 모범 사례를 확인합니다."
 ms.custom: na
 ms.date: 2/22/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: fd62af3910c0745e0f1105417701b894e10cbbac
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 70bf77ca9127be24725f888ff19147c11bc66f34
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="best-practices-for-collections-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 컬렉션에 대한 모범 사례
 

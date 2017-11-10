@@ -1,5 +1,6 @@
 ---
-title: "응용 프로그램 수정 및 교체 | Microsoft 문서"
+title: "응용 프로그램 수정 및 대체"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager 응용 프로그램 버전을 사용하는 방법과 응용 프로그램을 교체하는 방법에 대해 설명합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: c0a43ac7b529444b33edf8afbf52911127226f88
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 60d5e05423b959baa5110ae7f2b9fc7d77dc9ebf
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="revise-and-supersede-applications-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 수정 및 교체
 

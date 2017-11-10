@@ -1,5 +1,6 @@
 ---
-title: "System Center Configuration Manager에서 응용 프로그램 관리 | Microsoft Docs"
+title: "응용 프로그램 관리"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 응용 프로그램 관리"
 ms.custom: na
 ms.date: 03/05/2017
@@ -12,14 +13,14 @@ ms.topic: article
 ms.assetid: 8adbe2e2-de26-4a80-8bbd-a5f34b8bac79
 caps.latest.revision: "18"
 caps.handback.revision: "0"
-author: mtillman
-ms.author: mtillman
+author: dougeby
+ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: bc7bb99bc526ed0bbaaad15fc9af39fa8b7c3893
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 4e61962ef4be43f4c32d79ba531d4e68534df6fe
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="manage-applications-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 관리
 

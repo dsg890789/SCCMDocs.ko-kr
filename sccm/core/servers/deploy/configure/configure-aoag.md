@@ -1,5 +1,6 @@
 ---
-title: "가용성 그룹 구성 | Microsoft Docs"
+title: "가용성 그룹 구성"
+titleSuffix: Configuration Manager
 description: "SCCM에서 SQL Server Always On 가용성 그룹을 설정하고 관리합니다."
 ms.custom: na
 ms.date: 7/31/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: e0b887169f0c8ae6901d1c6fd6a498df9596c2b4
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 12ba7c1cbfdb0c3ab9885e839b05a48862ea0e5d
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="configure-sql-server-always-on-availability-groups-for-configuration-manager"></a>Configuration Manager용 SQL Server Always On 가용성 그룹 구성
 

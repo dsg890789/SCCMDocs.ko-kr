@@ -1,5 +1,6 @@
 ---
-title: "Android 응용 프로그램 만들기 | Microsoft 문서"
+title: "Android 응용 프로그램 만들기"
+titleSuffix: Configuration Manager
 description: "Android 장치용 응용 프로그램을 만들고 배포할 때 고려해야 할 사항을 확인합니다."
 ms.custom: na
 ms.date: 07/31/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "6"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: 8fcd8d8172978fdeb1a11b7fa7e79d294591f796
-ms.sourcegitcommit: f6a428a8db7145affa388f59e0ad880bdfcf17b5
+ms.openlocfilehash: 2ec4f4fdd1e351379922302e81af88e311a37c8e
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-android-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 Android 응용 프로그램 만들기
 

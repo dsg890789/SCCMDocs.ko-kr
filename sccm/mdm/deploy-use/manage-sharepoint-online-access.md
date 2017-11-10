@@ -1,5 +1,6 @@
 ---
-title: "SharePoint Online 액세스 관리 | Microsoft 문서"
+title: "SharePoint Online 액세스 관리"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager SharePoint Online 조건부 액세스 정책을 사용하여 OneDrive에 대한 액세스를 관리하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 03/05/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: c564c1fc25c5156a2d9ddfa1b4123024c658bf61
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 2c1d7cd3462a54a064ec47d0b375ee4cdb25a4b4
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="manage-sharepoint-online-access-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 SharePoint Online 액세스 관리
 
@@ -163,7 +164,7 @@ Office 데스크톱 응용 프로그램은 다음을 실행하는 SharePoint Onl
 
 4.  SharePoint Online 및 비즈니스용 OneDrive에 대한 **브라우저 액세스**에서, 지원되는 브라우저인 Safari(iOS) 및 Chrome(Android)을 통해서만 Exchange Online에 대한 액세스를 허용하도록 선택할 수 있습니다. 다른 브라우저에서의 액세스는 차단됩니다.  OneDrive에 대한 응용 프로그램 액세스에 선택한 것과 동일한 플랫폼 제한 사항이 여기에도 적용됩니다.
 
-    **Android** 장치에서는, 사용자가 브라우저 액세스를 사용하도록 설정해야 합니다.  이를 위해서 최종 사용자가 등록된 장치에서 다음과 같이 "브라우저 액세스 사용" 옵션을 사용하도록 설정해야 합니다.
+    **Android** 장치에서는, 사용자가 브라우저 액세스를 사용하도록 설정해야 합니다.  이를 위해서 최종 사용자가 등록된 장치에서 다음과 같이 “브라우저 액세스 사용” 옵션을 사용하도록 설정해야 합니다.
     1.  **회사 포털 앱**을 시작합니다.
     2.  세 개의 점(...) 또는 하드웨어 메뉴 단추에서 **설정** 페이지로 이동합니다.
     3.  **브라우저 액세스 사용** 단추를 누릅니다.

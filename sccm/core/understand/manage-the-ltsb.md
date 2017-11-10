@@ -1,5 +1,6 @@
 ---
-title: "LTSB 관리 | Microsoft 문서"
+title: "LTSB 관리"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 LTSB에 대한 관리상의 차이점"
 ms.custom: na
 ms.date: 05/01/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 9c6f349ead906532a7a58df74609de976769e251
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 9dd62c7756e617c5af5e8027eac4681b72c2d604
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="manage-the-long-term-servicing-branch-of-configuration-manager"></a>Configuration Manager의 장기 서비스 분기 관리
 

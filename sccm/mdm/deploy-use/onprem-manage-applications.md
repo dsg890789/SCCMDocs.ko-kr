@@ -1,5 +1,6 @@
 ---
-title: "온-프레미스 모바일 장치 관리를 사용하여 응용 프로그램 관리 | Microsoft Docs"
+title: "온-프레미스 모바일 장치 관리를 사용하여 응용 프로그램 관리"
+titleSuffix: Configuration Manager
 description: "온-프레미스 모바일 장치 관리를 사용하여 응용 프로그램 관리"
 ms.custom: na
 ms.date: 03/05/2017
@@ -12,14 +13,14 @@ ms.topic: article
 ms.assetid: 5f44b246-3467-4778-a5c2-047ce325da58
 caps.latest.revision: "18"
 caps.handback.revision: "0"
-author: mtillman
-ms.author: mtillman
+author: dougeby
+ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 4085b007f006a4cfaeaef802d750b03018d6a683
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 49665629fc5824b12b9fca10b34c4c1bfe49f236
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="manage-applications-for-on-premises-mobile-device-management"></a>온-프레미스 모바일 장치 관리를 사용하여 응용 프로그램 관리
 

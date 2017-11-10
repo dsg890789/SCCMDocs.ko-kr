@@ -1,5 +1,6 @@
 ---
-title: "인증서 프로필 보안 및 개인 정보 | Microsoft 문서"
+title: "인증서 프로필 보안 및 개인 정보"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 사용자 및 장치의 인증서 프로필 관리에 대한 보안 모범 사례를 알아봅니다."
 ms.custom: na
 ms.date: 12/28/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Nbigman
 ms.author: nbigman
 manager: angrobe
-ms.openlocfilehash: c51787ad3fa0bdb285017cfab1ca6931afba9ea6
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: e36df89f86afe95e922b7afa3bb1e6029b832b4d
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="security-and-privacy-for-certificate-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 인증서 프로필에 대한 보안 및 개인 정보
 

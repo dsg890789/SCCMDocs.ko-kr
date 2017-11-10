@@ -1,5 +1,6 @@
 ---
-title: "Configuration Manager에서 스크립트 만들기 및 실행 | Microsoft Docs"
+title: "스크립트 만들기 및 실행"
+titleSuffix: Configuration Manager
 description: "Configuration Manager를 사용하여 클라이언트 장치에서 스크립트를 만들고 실행합니다."
 ms.custom: na
 ms.date: 09/15/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.openlocfilehash: 4c90617890ba3751a7215e9ac54042d64cc1a227
-ms.sourcegitcommit: 96b79fa091f44e8e6ac5652f6cbbb4b873a8bad9
+ms.openlocfilehash: d1cbb760c6e40c21b97d0227ff93613066189d4b
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-and-run-powershell-scripts-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행
 

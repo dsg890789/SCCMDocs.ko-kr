@@ -1,5 +1,6 @@
 ---
-title: "핫픽스 설치 관리자 | Microsoft 문서"
+title: "핫픽스 설치 관리자"
+titleSuffix: Configuration Manager
 description: "Configuration Manager용 핫픽스 설치 관리자를 통해 업데이트를 설치하는 시기 및 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "9"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 8ffc7383e895909e6e6c4b8a7875fd5f0df2220e
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 2ffb5c913a6863de3dbf1415961bb6987033b6ea
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="use-the-hotfix-installer-to-install-updates-for-system-center-configuration-manager"></a>핫픽스 설치 관리자를 사용하여 System Center Configuration Manager의 업데이트 설치
 

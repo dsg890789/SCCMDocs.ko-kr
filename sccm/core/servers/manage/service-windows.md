@@ -1,5 +1,6 @@
 ---
-title: "서비스 기간 | Microsoft 문서"
+title: "Windows 서비스"
+titleSuffix: Configuration Manager
 description: "서비스 기간을 사용하여 System Center Configuration Manager 사이트에서 업데이트를 설치할 수 있는 시기를 제어할 수 있습니다."
 ms.custom: na
 ms.date: 1/11/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: d06a2a955ff59fa84bb844033fe31874fc735087
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: d8b4cb7492b488a1f7056617b165b4aa656ee26e
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 #  <a name="service-windows-for-site-servers"></a>사이트 서버에 대한 서비스 기간
 

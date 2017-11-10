@@ -1,5 +1,6 @@
 ---
-title: "Linux 및 UNIX 서버 응용 프로그램 만들기 | Microsoft 문서"
+title: "Linux 및 UNIX 서버 응용 프로그램 만들기"
+titleSuffix: Configuration Manager
 description: "Linux 및 Unix 장치용 응용 프로그램을 만들고 배포할 때 고려해야 할 사항을 확인합니다."
 ms.custom: na
 ms.date: 04/13/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "7"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: 92eeb4e535b18955139e37e216dd8f2a22fab3eb
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 81a3ef6ee05a8f0f66ca1a70d56bc33017c66d9c
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-linux-and-unix-server-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Linux 및 UNIX 서버 응용 프로그램 만들기
 

@@ -1,5 +1,6 @@
 ---
-title: "Endpoint Protection으로 맬웨어로부터 컴퓨터를 보호하는 시나리오 | Microsoft 문서"
+title: "Endpoint Protection으로 맬웨어로부터 컴퓨터를 보호하는 시나리오"
+titleSuffix: Configuration Manager
 description: "Configuration Manager에서 Endpoint Protection을 구현하여 맬웨어 공격으로부터 컴퓨터를 보호하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 03/13/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "8"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.openlocfilehash: b98684d44874ff246e4d675039c6e443aee82a62
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: a0aa02a9091ea9ecdd060f1e7023e9d3f95269a1
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="example-scenario-using-system-center-endpoint-protection-to-protect-computers-from-malware-in-system-center-configuration-manager"></a>예제 시나리오: System Center Endpoint Protection을 사용하여 System Center Configuration Manager에서 맬웨어로부터 컴퓨터 보호
 

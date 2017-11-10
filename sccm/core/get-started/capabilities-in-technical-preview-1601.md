@@ -1,5 +1,6 @@
 ---
-title: "Technical Preview 1601 Configuration Manager의 기능"
+title: "기술 미리 보기 1601의 기능"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager용 Technical Preview 버전 1601에서 사용 가능한 기능에 대해 알아봅니다."
 ms.custom: na
 ms.date: 01/23/2017
@@ -15,11 +16,11 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: noindex,nofollow
-ms.openlocfilehash: ef0db5b11ae2be5edcb4db87400c5c273c89972e
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: d673fce313ca0cfb0a001dac9bbe296f883a4871
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="capabilities-in-technical-preview-1601-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1601의 기능
 

@@ -1,5 +1,6 @@
 ---
-title: "배포 지점 관리 | Microsoft 문서"
+title: "배포 지점 관리"
+titleSuffix: Configuration Manager
 description: "배포 지점을 사용하여 장치 및 사용자에게 배포할 콘텐츠(파일 및 소프트웨어)를 호스트합니다. 설치 및 구성 방법은 다음과 같습니다."
 ms.custom: na
 ms.date: 09/18/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 0213b48c24461cbab5a9acab720064e0e26fa568
-ms.sourcegitcommit: 474e6ddbaaeac4ba17d8172321e08deeb0140d0a
+ms.openlocfilehash: b9b2fdcff572127e9e78d7e7acba89bc4c6759a2
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="install-and-configure-distribution-points-for-system-center-configuration-manager"></a>System Center Configuration Manager의 배포 지점 설치 및 구성
 

@@ -1,5 +1,6 @@
 ---
-title: "Technical Preview 1703 Configuration Manager의 기능"
+title: "기술 미리 보기 1703의 기능"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager용 Technical Preview 버전 1703에서 사용 가능한 기능에 대해 알아봅니다."
 ms.custom: na
 ms.date: 03/24/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: bb1b96a56db68dcea22270855b899ba3a90afd0d
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 4b21264447a7aa9b54c698c56e3f7c496f8fc616
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="capabilities-in-technical-preview-1703-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1703의 기능
 

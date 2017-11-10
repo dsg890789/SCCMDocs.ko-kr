@@ -1,5 +1,6 @@
 ---
-title: "하드웨어 인벤토리 구성 | Microsoft 문서 | 모바일 장치"
+title: "모바일 장치에 대한 하드웨어 인벤토리 구성"
+titleSuffix: Configuration Manager
 description: "Microsoft Intune 및 System Center Configuration Manager에서 등록한 모바일 장치의 하드웨어 인벤토리를 구성합니다."
 ms.custom: na
 ms.date: 03/05/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "7"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 7ab9042a525e07b8e3107479cedeec6b99f7bc86
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: c176955c3fcfe40f2089b84c50a982906b59f04d
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-configure-hardware-inventory-for-mobile-devices-enrolled-by-microsoft-intune-and-system-center-configuration-manager"></a>Microsoft Intune 및 System Center Configuration Manager에서 등록한 모바일 장치의 하드웨어 인벤토리 구성 방법
 

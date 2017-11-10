@@ -1,5 +1,6 @@
 ---
-title: "마이그레이션 작업 | Microsoft 문서"
+title: "마이그레이션 작업"
+titleSuffix: Configuration Manager
 description: "데이터 및 클라이언트를 System Center Configuration Manager로 마이그레이션하는 작업을 만들고 실행합니다."
 ms.custom: na
 ms.date: 12/30/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "6"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: fb8a292c4fecbe5744e2cd09bc1442fab11046bc
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 0139d4227270d3aacf1da093a029a0b54f07fdf9
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="operations-for-migrating-to-system-center-configuration-manager"></a>System Center Configuration Manager로 마이그레이션을 위한 작업
 

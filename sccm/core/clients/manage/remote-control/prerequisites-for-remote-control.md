@@ -1,5 +1,6 @@
 ---
-title: "원격 제어 필수 조건 | Microsoft 문서"
+title: "원격 제어 필수 조건"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 원격 제어에 대한 필수 조건을 확인합니다."
 ms.custom: na
 ms.date: 04/23/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: a99a18bcb5c981a56e5b38eb631cfabbad8c44d7
-ms.sourcegitcommit: f6a428a8db7145affa388f59e0ad880bdfcf17b5
+ms.openlocfilehash: e7287ae7df68ebbcb8f251b8d001233a647596ee
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="prerequisites-for-remote-control-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 원격 제어에 대한 필수 조건
 

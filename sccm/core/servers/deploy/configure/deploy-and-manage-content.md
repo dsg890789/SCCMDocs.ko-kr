@@ -1,5 +1,6 @@
 ---
-title: "콘텐츠 배포 | Microsoft 문서"
+title: "콘텐츠 배포"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에 대한 배포 지점을 설치한 후 해당 배포 지점에 콘텐츠 배포를 시작할 수 있는 방법은 다음과 같습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "6"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 36b08285ef78d0acb9ba9c44abe2d57e311d44b3
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: b409e8b050a3f1871819bd857c225a8cf6333712
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="deploy-and-manage-content-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 콘텐츠 배포 및 관리
 

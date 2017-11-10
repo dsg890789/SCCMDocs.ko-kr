@@ -1,5 +1,6 @@
 ---
-title: "메일, Wi-Fi 및 VPN 프로필 모니터링 | Microsoft 문서"
+title: "메일, Wi-Fi 및 VPN 프로필 모니터링"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 메일, Wi-Fi 및 VPN 프로필의 준수 상태를 모니터링하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "4"
 author: Nbigman
 ms.author: nbigman
 manager: angrobe
-ms.openlocfilehash: 73d941633d270cf9628f8be14e1e56f3c78624b6
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 0f49a1b30c6bd90164f2e40665c254b127b8a525
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="monitor-email-wi-fi-and-vpn-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 메일, Wi-Fi 및 VPN 프로필 모니터링
 

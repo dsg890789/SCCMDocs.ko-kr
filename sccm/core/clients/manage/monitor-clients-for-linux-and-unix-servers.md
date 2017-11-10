@@ -1,5 +1,6 @@
 ---
-title: "Linux/UNIX 클라이언트 모니터링 - Configuration Manager | Microsoft 문서"
+title: "Linux/UNIX 클라이언트 모니터링 "
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 Linux 및 UNIX 서버의 클라이언트 모니터링"
 ms.custom: na
 ms.date: 08/04/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "6"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 5ce1452b0fa197d1ba424e6c4e0f5f0895a9018a
-ms.sourcegitcommit: f6a428a8db7145affa388f59e0ad880bdfcf17b5
+ms.openlocfilehash: 777842307b280a4f269d68bcb993f3cec6f2e3e3
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-monitor-clients-for-linux-and-unix-servers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Linux 및 UNIX 서버용 클라이언트를 모니터링하는 방법
 

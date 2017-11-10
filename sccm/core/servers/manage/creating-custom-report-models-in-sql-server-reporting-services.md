@@ -1,5 +1,6 @@
 ---
-title: "사용자 지정 보고서 만들기 | Microsoft 문서"
+title: "사용자 지정 보고서 만들기"
+titleSuffix: Configuration Manager
 description: "비즈니스 요구 사항을 충족하는 보고서 모델을 정의한 다음 Configuration Manager에 보고서 모델을 배포합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 9951dd9333ebef00c7acd5d72b20a02382e3206c
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 56274cbec336219a7734d23bf1bade8a7892de30
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="creating-custom-report-models-for-system-center-configuration-manager-in-sql-server-reporting-services"></a>SQL Server Reporting Services에서 System Center Configuration Manager에 대한 사용자 지정 보고서 모델 만들기
 

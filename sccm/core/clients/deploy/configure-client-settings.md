@@ -1,5 +1,6 @@
 ---
-title: "클라이언트 설정 구성 | Microsoft 문서"
+title: "클라이언트 설정 구성"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 클라이언트 설정을 선택합니다."
 ms.custom: na
 ms.date: 04/23/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "5"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 0722ecbe96e979966203c2cef9047a3adfdae46e
-ms.sourcegitcommit: f6a428a8db7145affa388f59e0ad880bdfcf17b5
+ms.openlocfilehash: 7d63aa43062b331dde993ae5f59f1d2a7e846482
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-configure-client-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법
 

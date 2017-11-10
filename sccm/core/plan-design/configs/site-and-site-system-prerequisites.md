@@ -1,5 +1,6 @@
 ---
-title: "사이트 필수 조건 | Microsoft 문서"
+title: "사이트 필수 조건"
+titleSuffix: Configuration Manager
 description: "Windows 컴퓨터를 System Center Configuration Manager 사이트 시스템 서버로 구성하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 8/25/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 09749a3045ca6eebf1363b6e53cd8607b5f32578
-ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
+ms.openlocfilehash: 8e55af275a2c585273602f9b9308eaed03679ae4
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="site-and-site-system-prerequisites-for-system-center-configuration-manager"></a>System Center Configuration Manager의 사이트 및 사이트 시스템 필수 조건
 

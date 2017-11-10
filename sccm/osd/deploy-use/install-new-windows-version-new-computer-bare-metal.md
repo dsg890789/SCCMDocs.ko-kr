@@ -1,5 +1,6 @@
 ---
-title: "새 컴퓨터에 Windows 설치 - Configuration Manager | Microsoft 문서"
+title: "새 컴퓨터에 Windows 설치 "
+titleSuffix: Configuration Manager
 description: "Configuration Manager에서 PXE, OEM 또는 독립 실행형 미디어를 사용하여 새 컴퓨터에 운영 체제를 설치(완전 복구)할 수 있습니다."
 ms.custom: na
 ms.date: 01/23/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "8"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 63a26ff688ca2ec0c121a93a6c96bba2f76776e8
-ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
+ms.openlocfilehash: df034ea70cc6facea66bd35a9e1e685491b67d9e
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="install-a-new-version-of-windows-on-a-new-computer-bare-metal-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 새 컴퓨터에 새 버전의 Windows 설치(완전 복구)
 

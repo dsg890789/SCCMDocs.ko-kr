@@ -1,5 +1,6 @@
 ---
-title: "보고 모범 사례 | Microsoft 문서"
+title: "모범 사례 보고"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 보고 기능 사용에 대한 몇 가지 유용한 팁을 참조하세요."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 759258999f3eaa810803a6a7f856f00fe7771a9e
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: b66e4417658e8a5f25056ed37b5367d57ff72781
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="best-practices-for-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 보고에 대한 모범 사례
 

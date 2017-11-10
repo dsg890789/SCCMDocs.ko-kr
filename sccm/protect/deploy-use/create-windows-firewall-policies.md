@@ -1,5 +1,6 @@
 ---
-title: "Endpoint Protection에 대한 Windows 방화벽 정책 | Microsoft 문서"
+title: "Endpoint Protection에 대한 Windows 방화벽 정책"
+titleSuffix: Configuration Manager
 description: "System Center 2012 Configuration Manager에서 Endpoint Protection에 대한 Windows 방화벽 정책을 만들어 배포하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 03/07/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "5"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.openlocfilehash: acd75a8b22d050970b8c1176f725ddb4445633aa
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: cce8eb704b88e551051e7a90b37f1ca3250c3da3
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-and-deploy-windows-firewall-policies-for-endpoint-protection-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Endpoint Protection에 대한 Windows 방화벽 정책 만들기 및 배포
 

@@ -1,5 +1,6 @@
 ---
-title: "보고 구성 | Microsoft 문서"
+title: "보고 구성"
+titleSuffix: Configuration Manager
 description: "SQL Server Reporting Services에 대한 정보를 포함하여 Configuration Manager 계층 구조에서 보고를 설정하는 방법에 대해 알아봅니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "6"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 7ae6bac23e585d6f61aff0f3155d050f1b537620
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: be8c36c73478e232254185681546f5f52c7d701f
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="configuring-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 보고 구성
 

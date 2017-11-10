@@ -1,8 +1,8 @@
 ---
-title: "System Center Configuration Manager 개인 정보 취급 방침 - 추가 정보 | Microsoft 문서"
+title: "System Center Configuration Manager 개인 정보 취급 방침 - 추가 정보"
 description: "Microsoft가 System Center Configuration Manager 배포에서 데이터를 수집하고 사용하는 방법에 대해 알아봅니다."
 ms.custom: na
-ms.date: 12/30/2016
+ms.date: 10/13/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -34,11 +34,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: ef7b3656f9b4a31e07227aa4e864448d0dd1fcdc
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 28caf163507692ad7d7b3cfa85536a88d94584ec
+ms.sourcegitcommit: 18ac58374d2d513fe2a197c80f7c8c6890a7d612
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/16/2017
 ---
 # <a name="additional-information-about-privacy-for-system-center-configuration-manager"></a>System Center Configuration Manager의 개인 정보 보호에 대한 추가 정보
 
@@ -107,7 +107,7 @@ Microsoft는 정보를 사용하여 Microsoft Bing 지도와 기타 Microsoft �
 ## <a name="microsoft-intune-subscription"></a>Microsoft Intune 구독
 Microsoft Intune의 구독을 구매한 고객은 Configuration Manager를 사용하여 Microsoft Intune을 통해 연결된 모바일 장치를 관리할 수 있습니다. [Microsoft Online Services 개인정보취급방침](http://go.microsoft.com/fwlink/?LinkId=262214)은 Microsoft Intune을 비롯한 Microsoft Online Services에 적용됩니다. 고객이 Microsoft Intune도 구독하고 있는 경우에도 [Microsoft Online Services 개인정보취급방침](http://go.microsoft.com/fwlink/?LinkId=262214)은 이 개인정보취급방침과 함께 확인해야 합니다.
 
-Microsoft Intune과의 모든 통신은 HTTPS를 사용합니다. Microsoft Intune 구독을 구성하고 iOS 지원 구성에 필요한 CSR(인증서 서명 요청)를 다운로드하려면 관리자가 조직의 계정 및 암호를 사용하여 Microsoft Intune에 로그인해야 합니다. 이러한 자격 증명은 Configuration Manager에 저장되지 않습니다. Microsoft Intune과의 모든 다른 통신은 Microsoft Intune에서 자동으로 생성되는 PKI 인증서를 사용하여 인증됩니다.
+Microsoft Intune과의 모든 통신은 HTTPS를 사용합니다. Microsoft Intune 구독을 구성하고 iOS 지원 구성에 필요한 CSR(인증서 서명 요청)을 다운로드하려면 관리자가 회사 계정 및 암호를 사용하여 Microsoft Intune에 로그인해야 합니다. 이러한 자격 증명은 Configuration Manager에 저장되지 않습니다. Microsoft Intune과의 모든 다른 통신은 Microsoft Intune에서 자동으로 생성되는 PKI 인증서를 사용하여 인증됩니다.
 
 Microsoft Intune에 연결된 장치를 관리하기 위해 일부 정보는 Microsoft Intune에 전송하고 일부 정보는 Microsoft Intune에서 수신합니다. 이 정보에는 서비스에 할당된 모든 사용자의 UPN(사용자 계정 이름)과 Microsoft Intune을 통해 관리되는 장치에 대한 장치 인벤토리 정보가 포함됩니다. Manage.Microsoft.com 배포 지점에 할당된 콘텐츠의 메타데이터(예: 응용 프로그램 이름, 게시자, 버전 등)가 Microsoft Intune으로 전송됩니다. Manage.Microsoft.com 배포 지점에 할당되는 실제 이진 콘텐츠는 Microsoft Intune에 업로드되기 전에 암호화됩니다.
 

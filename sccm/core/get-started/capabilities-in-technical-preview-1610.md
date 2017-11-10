@@ -1,5 +1,6 @@
 ---
-title: "Technical Preview 1610 Configuration Manager의 기능"
+title: "기술 미리 보기 1610의 기능"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager용 Technical Preview 버전 1610에서 사용 가능한 기능에 대해 알아봅니다."
 ms.custom: na
 ms.date: 01/23/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "2"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: b164b6a177b8b4d1eebd0bbd54e67e90376929be
-ms.sourcegitcommit: c145e515843a0f37c2e5ca5dbd22072a219d06b4
+ms.openlocfilehash: b58595bd02a78dea4f8925765dae344c3234a047
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="capabilities-in-technical-preview-1610-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1610의 기능
 

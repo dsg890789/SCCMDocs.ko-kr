@@ -1,5 +1,6 @@
 ---
-title: "사이트 시스템용 웹 사이트 | Microsoft 문서"
+title: "사이트 시스템용 웹 사이트"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 사이트 시스템 서버에 대한 기본 및 사용자 지정 웹 사이트를 알아봅니다."
 ms.custom: na
 ms.date: 2/8/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 886ff3b8e867fc340c79648a57feae81653b0ccd
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 638201618d8d9ca086171a882adcc47f1c621c1d
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="websites-for-site-system-servers-in-system-center-configuration-manager"></a>System Center Configuration Manager의 사이트 시스템 서버용 웹 사이트
 

@@ -1,5 +1,6 @@
 ---
-title: SQL Server Always On | Microsoft Docs
+title: SQL Server Always On
+titleSuffix: Configuration Manager
 description: "SCCM에서 SQL Server Always On 가용성 그룹 사용 계획"
 ms.custom: na
 ms.date: 09/22/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "16"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 3e275f6203a9e0b9210bfbadbf9addf64f6533d8
-ms.sourcegitcommit: 8faf42135a8dc9c384407e64f3f8ba204fb15847
+ms.openlocfilehash: 24eaa33f1f9b333894817f089149e2cbed35df75
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="prepare-to-use-sql-server-always-on-availability-groups-with-configuration-manager"></a>Configuration Manager에서 SQL Server Always On 가용성 그룹 사용 준비
 
@@ -75,7 +76,7 @@ SQL Server의 각 인스턴스는 도메인 사용자 계정(**서비스 계정*
 -   버전 1706 이전에서는 최대 2개의 동기 보조 복제본을 사용할 수 있습니다.
 -   버전 1706부터 사용 중인 SQL Server 버전에서 지원하는 것과 같은 개수 및 유형의 복제본을 가용성 그룹에서 사용할 수 있습니다.
 
-    비동기 커밋 복제본을 사용하여 동기 복제본을 복구할 수 있습니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 백업 및 복구 항목에서 [사이트 데이터베이스 복구 옵션]( /sccm/protect/understand/backup-and-recovery#BKMK_SiteDatabaseRecoveryOption)을 참조하세요.
+-   버전 1706부터는 비동기 커밋 복제본을 사용하여 동기 복제본을 복구할 수 있습니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 백업 및 복구 항목에서 [사이트 데이터베이스 복구 옵션]( /sccm/protect/understand/backup-and-recovery#BKMK_SiteDatabaseRecoveryOption)을 참조하세요.
     > [!CAUTION]  
     > Configuration Manager에서는 비동기 커밋 복제본을 사이트 데이터베이스로 사용하기 위한 장애 조치를 지원하지 않습니다.
 Configuration Manager는 비동기 커밋 복제본의 상태가 현재 상태인지 확인하지 않으며 [의도적으로 이러한 복제본은 동기화되지 않을 수 있으므로]( https://msdn.microsoft.com/library/ff877884(SQL.120).aspx(d=robot)#Availability%20Modes) 비동기 커밋 복제본을 사이트 데이터베이스로 사용하면 사이트와 데이터의 무결성이 손상될 수 있습니다.

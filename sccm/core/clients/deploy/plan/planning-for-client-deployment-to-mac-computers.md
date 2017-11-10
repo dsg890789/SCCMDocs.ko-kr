@@ -1,5 +1,6 @@
 ---
-title: "Mac 컴퓨터에 클라이언트 배포 계획 | Microsoft 문서"
+title: "Mac 컴퓨터에 클라이언트 배포 계획"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 Mac 컴퓨터에 클라이언트 배포를 계획합니다."
 ms.custom: na
 ms.date: 04/23/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: c3108813a04cf464bfc05961113bbdffb9a81419
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 93f6313e25c7015bde10a5770cb4a8e170bff880
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="planning-for-client-deployment-to-mac-computers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Mac 컴퓨터에 클라이언트 배포 계획
 

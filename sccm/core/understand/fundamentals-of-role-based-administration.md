@@ -1,5 +1,6 @@
 ---
-title: "역할 기반 관리의 기본 사항 | Microsoft 문서"
+title: "역할 기반 관리의 기본 사항"
+titleSuffix: Configuration Manager
 description: "역할 기반 관리를 사용하여 Configuration Manager 및 관리하는 개체에 대한 관리 액세스를 제어합니다."
 ms.custom: na
 ms.date: 1/3/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "10"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: ddf2ad1cae51c1e36df5a6d86822e2b9abe604e2
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 39b717ede29749c1c7922240f1f45387dab9595f
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="fundamentals-of-role-based-administration-for-system-center-configuration-manager"></a>System Center Configuration Manager의 역할 기반 관리 기본 사항
 

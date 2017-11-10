@@ -1,5 +1,6 @@
 ---
-title: "1602에 대한 검사 목록 | Microsoft 문서"
+title: "1602에 대한 검사 목록"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 버전 1511을 1602로 업데이트하기 전에 수행할 작업에 대해 알아봅니다."
 ms.custom: na
 ms.date: 2/7/2017
@@ -15,11 +16,11 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3e0de56b7a592b105e6a61b3d6654b1d0142584d
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 629f09a8e4306a7030850d377f26311f962a9e7a
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="checklist-for-installing-update-1602-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 업데이트 1602를 설치하기 위한 검사 목록
 

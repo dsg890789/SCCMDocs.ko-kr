@@ -1,5 +1,6 @@
 ---
-title: "Mac 클라이언트 배포 | Microsoft 문서"
+title: "Mac 클라이언트 배포"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 Mac 컴퓨터에 클라이언트를 배포하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 05/04/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "12"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: af6faf4cd317452f635ec30e74a3aa2e14f1662a
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 1b7f20a48e0e7219d933c367fb9f0315fc287dfd
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-deploy-clients-to-macs"></a>How to deploy clients to Macs
 
@@ -125,7 +126,7 @@ Mac 컴퓨터용 새 클라이언트를 설치할 때 Configuration Manager 콘�
 
         -   '도메인\이름'. 예를 들면 'contoso\mnorth'와 같습니다.  
 
-        -   'user@domain'.  예: 'mnorth@contoso.com'  
+        -   'user@domain'. 예: 'mnorth@contoso.com'  
 
             > [!IMPORTANT]  
             >  메일 주소를 사용하여 **사용자 이름** 필드를 채운 경우 Configuration Manager는 메일 주소의 도메인 이름과 등록 프록시 지점 서버의 기본 이름을 자동으로 사용하여 **서버 이름** 필드를 채웁니다. 이 도메인 이름과 서버 이름이 등록 프록시 지점 서버의 이름과 일치하지 않는 경우 Mac 컴퓨터를 등록할 때 사용할 올바른 이름을 사용자에게 알립니다.  
@@ -157,7 +158,7 @@ CMEnroll 도구를 사용하여 클라이언트 설치를 자동화하고 클라
 
     -   '도메인\이름'. 예를 들면 'contoso\mnorth'와 같습니다.  
 
-    -   'user@domain'.  예: 'mnorth@contoso.com'  
+    -   'user@domain'. 예: 'mnorth@contoso.com'  
 
      사용자 이름과 해당 암호는 Mac 클라이언트 인증서 템플릿에 대한 읽기 및 등록 권한이 부여된 Active Directory 사용자 계정과 일치해야 합니다.  
 

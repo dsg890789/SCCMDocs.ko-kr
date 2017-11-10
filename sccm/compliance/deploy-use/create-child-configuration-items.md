@@ -1,5 +1,6 @@
 ---
-title: "자식 구성 항목 만들기 | Microsoft 문서"
+title: "하위 구성 항목 만들기"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 자식 구성 항목을 만듭니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: 9863ee68f4319329b7da0d43dcde954585f5c0e6
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: c1a59bbedbe157c491800064ba54079c4a980b04
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-create-child-configuration-items-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 자식 구성 항목을 만드는 방법
 

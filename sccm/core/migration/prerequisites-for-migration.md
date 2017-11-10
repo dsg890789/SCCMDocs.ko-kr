@@ -1,5 +1,6 @@
 ---
-title: "마이그레이션 필수 조건 | Microsoft 문서"
+title: "마이그레이션 필수 조건"
+titleSuffix: Configuration Manager
 description: "지원되는 Configuration Manager 버전, 지원되는 원본 사이트 언어 및 마이그레이션을 위한 필수 조건을 이해합니다."
 ms.custom: na
 ms.date: 3/7/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: cd90f5462ac4bb4c0a2021e6d5dde65161b9c5f6
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: b1f4942562bf9e1f460ba9e4dae488e57a345e35
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="prerequisites-for-migration-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 마이그레이션을 수행하기 위한 필수 조건
 

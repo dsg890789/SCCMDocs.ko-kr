@@ -1,5 +1,6 @@
 ---
-title: "1511, 1602 및 1606에 대한 경계 그룹 | System Center Configuration Manager"
+title: "1511, 1602 및 1606의 경계 그룹"
+titleSuffix: Configuration Manager
 description: "Configuration Manager 버전 1511, 1602 및 1606에서 경계 그룹을 사용합니다."
 ms.custom: na
 ms.date: 2/8/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "10"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 311606b8d52645d3ca89642be4cc341b8a64ec56
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: ffd2ffe4363d33e5b61c8da76f7e14b2d6b874bb
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="boundary-groups-for-system-center-configuration-manager-version-1511-1602-and-1606"></a>System Center Configuration Manager 버전 1511, 1602 및 1606에 대한 경계 그룹
 

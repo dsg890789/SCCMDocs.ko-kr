@@ -1,5 +1,6 @@
 ---
-title: "기술 미리 보기 1708 | Microsoft Docs"
+title: "기술 미리 보기 1708"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager용 기술 미리 보기 버전 1708에서 사용할 수 있는 기능을 알아봅니다."
 ms.custom: na
 ms.date: 08/25/2017
@@ -13,11 +14,11 @@ ms.assetid: 3c061ceb-3bdb-4d4f-8c60-344964bd416b
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 022c9b2540f7ed403c38521c8e68f6c416c15c7c
-ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
+ms.openlocfilehash: b6868221f2efb766cf6a96e844617c75ad1e4c50
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="capabilities-in-technical-preview-1708-for-system-center-configuration-manager"></a>System Center Configuration Manager용 기술 미리 보기 1708의 기능
 

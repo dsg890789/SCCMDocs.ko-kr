@@ -1,5 +1,6 @@
 ---
-title: "팩터리 또는 로컬 저장소에 OEM에 대한 이미지 만들기 | Microsoft 문서"
+title: "팩터리 또는 로컬 저장소에 OEM에 대한 이미지 만들기"
+titleSuffix: Configuration Manager
 description: "사전 준비된 미디어 배포를 사용하면 완전히 프로비전되지 않은 컴퓨터에 운영 체제를 배포하는 동안 네트워크 트래픽을 줄일 수 있습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "8"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 07aba04fb1b845e389a5f75b115d536136c1569c
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: ec1d8012a899d09c46489578f396e7b298f6ec2c
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-an-image-for-an-oem-in-factory-or-a-local-depot-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 팩터리 또는 로컬 저장소에 OEM에 대한 이미지 만들기
 

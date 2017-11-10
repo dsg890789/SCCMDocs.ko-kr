@@ -1,5 +1,6 @@
 ---
-title: "System Center Configuration Manager를 사용하여 MDM 컬렉션 만들기 | Microsoft Docs"
+title: "MDM 컬렉션 만들기"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager를 사용하여 MDM 컬렉션 만들기"
 ms.custom: na
 ms.date: 03/05/2017
@@ -12,14 +13,14 @@ ms.topic: article
 ms.assetid: d1b4337f-85e8-45e6-8bbe-9f18b49041c7
 caps.latest.revision: "18"
 caps.handback.revision: "0"
-author: mtillman
-ms.author: mtillman
+author: dougeby
+ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 43316e4915b27aaeca563eaf52b51f053a839222
-ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
+ms.openlocfilehash: f8b865c48f6c69fe1cfd7221273b09f5557075e9
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-an-mdm-collection-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하여 MDM 컬렉션 만들기
 

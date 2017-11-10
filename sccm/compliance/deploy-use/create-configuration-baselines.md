@@ -1,5 +1,6 @@
 ---
-title: "구성 기준 만들기 | Microsoft 문서"
+title: "구성 기준 만들기"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 컬렉션에 배포할 수 있는 구성 기준을 만듭니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: 1283322a775f030d3b312396691c374914604970
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 1556594e439439ef30418d384d537d5efb6b46fc
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-configuration-baselines-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 구성 기준 만들기
 

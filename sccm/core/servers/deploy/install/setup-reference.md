@@ -1,5 +1,6 @@
 ---
-title: "설치 참조 | Microsoft 문서"
+title: "설치 참조"
+titleSuffix: Configuration Manager
 description: "Configuration Manager 사이트 또는 계층 구조의 설치를 준비하려면 이 참조를 검토합니다."
 ms.custom: na
 ms.date: 4/18/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "22"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 739461a6cca0fd67431093524c1e8158afd80d0f
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: b7228da1623b5caf1679455e535e282ecf20724a
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="reference-for-system-center-configuration-manager-setup"></a>System Center Configuration Manager 설치에 대한 참조
 

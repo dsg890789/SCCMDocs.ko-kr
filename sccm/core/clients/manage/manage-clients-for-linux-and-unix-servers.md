@@ -1,5 +1,6 @@
 ---
-title: "Linux 및 UNIX 클라이언트 관리 | Microsoft 문서"
+title: "Linux 및 UNIX 클라이언트 관리"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 Linux 및 UNIX 서버의 클라이언트 관리"
 ms.custom: na
 ms.date: 04/23/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 198d0cf322dfc8491ed4cfd5229e829c2279f32b
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: c061573727d93e7599164b759259754db97f5b24
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-manage-clients-for-linux-and-unix-servers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Linux 및 UNIX 서버용 클라이언트를 관리하는 방법
 

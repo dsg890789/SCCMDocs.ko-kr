@@ -1,8 +1,9 @@
 ---
-title: "Windows 10에 대한 지원 | Microsoft 문서"
+title: "Windows 10에 대한 지원"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager가 OSD나 클라이언트로 지원되는 Windows 10 버전에 대해 알아보세요."
 ms.custom: na
-ms.date: 7/31/2017
+ms.date: 10/11/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +15,11 @@ caps.latest.revision: "5"
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 1d2e6e128531237ed76f94584aa42f76067db164
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 8ce7230a3aa64b78937b305fee4dc8e3f38abead
+ms.sourcegitcommit: f9c38b87fcd543ab8a5d7a7f446b42fd3e55450c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/19/2017
 ---
 # <a name="support-for-windows-10-for-system-center-configuration-manager"></a>System Center Configuration Manager의 Windows 10에 대한 지원  
 
@@ -37,13 +38,14 @@ ms.lasthandoff: 08/07/2017
 -   다음 정보는 [클라이언트 및 장치에 대해 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices)를 보완합니다.
 -   Configuration Manager의 장기 서비스 분기를 사용하는 경우 [장기 서비스 분기에 대해 지원되는 구성](/sccm/core/understand/supported-configurations-for-ltsb)을 참조하세요.
 
-|Windows 10 릴리스                    |Configuration Manager 1610          |    Configuration Manager 1702          |    Configuration Manager 1706 |
+|Windows 10 버전                    |Configuration Manager 1610          |    Configuration Manager 1702          |    Configuration Manager 1706 |
 |---------------------|-----|-----|-----|
 |Enterprise 2015 LTSB                   |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |
-|1511  <br />(*버전 참조*)           |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |
 |Enterprise 2016 LTSB                   |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |![지원됨](media/green_check.png) |
-|1607   <br />1주년 업데이트<br />(*버전 참조*)   |![지원됨](media/green_check.png) |![지원됨](media/green_check.png)            |![지원됨](media/green_check.png) |
-|1703   <br />크리에이터 업데이트<br />(*버전 참조*)      |![지원되지 않음](media/Red_X.png)   |![이전 버전과 호환](media/blue_compat.png) |![지원됨](media/green_check.png) |
+|1607   <br />(1주년 업데이트라고도 함)<br />(*버전 참조*)   |![지원됨](media/green_check.png) |![지원됨](media/green_check.png)            |![지원됨](media/green_check.png) |
+|1703   <br />(작성자 업데이트라고도 함)<br />(*버전 참조*)      |![지원되지 않음](media/Red_X.png)   |![이전 버전과 호환](media/blue_compat.png) |![지원됨](media/green_check.png) |
+|1709   <br />(Fall Creators Update라고도 함)<br />(*버전 참조*) |![지원되지 않음](media/Red_X.png)   |![지원되지 않음](media/Red_X.png)   |![이전 버전과 호환](media/blue_compat.png) |
+
 
 
 **버전:** Enterprise, Pro, Education, Pro Education   
@@ -60,11 +62,11 @@ Configuration Manager로 운영 체제를 배포할 때 [Windows ADK는 필요�
 
 다음 표에는 여러 버전의 Configuration Manager에서 사용할 수 있는 Windows 10 ADK 버전이 나와 있습니다.
 
-|Windows 10 ADK 릴리스  |Configuration Manager 1610 |Configuration Manager 1702   |Configuration Manager 1706 |
+|Windows 10 ADK 버전  |Configuration Manager 1610 |Configuration Manager 1702   |Configuration Manager 1706 |
 |--------------------|-----|-----|-----|
-|1511  |![지원되지 않음](media/Red_X.png)             |![지원되지 않음](media/Red_X.png)              |![지원되지 않음](media/Red_X.png)|
 |1607  |![지원됨](media/green_check.png)           |![이전 버전과 호환](media/blue_compat.png) |![지원되지 않음](media/Red_X.png)|
 |1703  |![지원되지 않음](media/Red_X.png)             |![지원됨](media/green_check.png)            |![지원됨](media/green_check.png) |  
+|1709  |![지원되지 않음](media/Red_X.png)             |![지원되지 않음](media/Red_X.png)              |![지원됨](media/green_check.png) |  
 
 |키|
 |--|

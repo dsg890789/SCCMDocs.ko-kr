@@ -1,5 +1,6 @@
 ---
-title: "경계 및 경계 그룹 사용 | Microsoft 문서"
+title: "경계 및 경계 그룹 사용"
+titleSuffix: Configuration Manager
 description: "경계 및 경계 그룹을 사용하여 관리하는 장치에 대한 네트워크 위치 및 액세스 가능한 사이트 시스템을 정의합니다."
 ms.custom: na
 ms.date: 3/27/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "10"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 0fea1dece0768a2b7bcd3fcedc2288ea2d52e73d
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 5980b33cef6e7711e09c3199150bf60008d1a73b
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="define-site-boundaries-and-boundary-groups-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 사이트 경계 및 경계 그룹 정의
 

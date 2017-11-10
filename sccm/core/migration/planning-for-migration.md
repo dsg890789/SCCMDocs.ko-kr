@@ -1,5 +1,6 @@
 ---
-title: "마이그레이션 계획 | Microsoft 문서"
+title: "마이그레이션 계획"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager 대상 계층 구조로 데이터를 마이그레이션하기 전에 사이트 및 계층에 알아봅니다."
 ms.custom: na
 ms.date: 1/12/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: fffef1e95e1dfa03971f140a6e5a7fff9bfe5e27
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: b5162cfb8154ec23593533900a91da42239e3516
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="plan-for-migration-to-system-center-configuration-manager"></a>System Center Configuration Manager로 마이그레이션 계획
 

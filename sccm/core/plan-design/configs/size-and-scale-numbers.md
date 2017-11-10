@@ -1,5 +1,6 @@
 ---
-title: "크기 조정 및 규모 | Microsoft 문서"
+title: "크기 조정 및 규모"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager 환경에서 장치를 지원하기 위해 필요한 사이트 시스템 역할 및 사이트 수를 확인합니다."
 ms.custom: na
 ms.date: 07/24/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "4"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 9c50f6633a5ca04b62f4c3b06119fb1fbcab2643
-ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
+ms.openlocfilehash: c0277fed7db5803aa2b2246ca879640136dce02a
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="size-and-scale-numbers-for-system-center-configuration-manager"></a>System Center Configuration Manager의 크기 조정 및 규모 숫자 값
 
@@ -54,7 +55,6 @@ ms.lasthandoff: 08/28/2017
 
 -   보조 사이트는 자식 사이트를 지원하지 않습니다.  
 
--   중앙 관리 사이트는 최대 25개의 자식 기본 사이트를 지원합니다.  
 
 
 ## <a name="bkmk_roles"></a> 사이트 시스템 역할    

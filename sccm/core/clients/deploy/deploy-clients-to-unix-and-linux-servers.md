@@ -1,5 +1,6 @@
 ---
-title: "UNIX/Linux 클라이언트 배포 | Microsoft 문서"
+title: "UNIX/Linux 클라이언트 배포"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 UNIX 또는 Linux 서버에 클라이언트를 배포하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 04/23/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "9"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 1741506f390430c85dab9a5b8e8cc26dda7b57e3
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 808997a423dbac6785c9da82f7b6bc8663168486
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-deploy-clients-to-unix-and-linux-servers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 UNIX 및 Linux 서버에 클라이언트를 배포하는 방법
 

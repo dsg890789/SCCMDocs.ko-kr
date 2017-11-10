@@ -1,5 +1,6 @@
 ---
-title: "사전 프로덕션 컬렉션에서 클라이언트 업그레이드 테스트 | Microsoft 문서"
+title: "클라이언트 업그레이드 사전 프로덕션 컬렉션 테스트"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 사전 프로덕션 컬렉션에서 클라이언트 업그레이드를 테스트합니다."
 ms.custom: na
 ms.date: 05/04/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 5b6e60e7c6225e37dd345e99c703505e346cd0a4
-ms.sourcegitcommit: f6a428a8db7145affa388f59e0ad880bdfcf17b5
+ms.openlocfilehash: e301c3df57d3f625157015692374e512e00dfc60
+ms.sourcegitcommit: 1132886e07d0c0a87dcc7eeef4577dd8d8840023
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="how-to-test-client-upgrades-in-a-pre-production-collection-in-system-center-configuration-manager"></a>System Center Configuration Manager의 사전 프로덕션 컬렉션에서 클라이언트 업그레이드를 테스트하는 방법
 
@@ -39,8 +40,10 @@ ms.lasthandoff: 09/14/2017
 3.  새 클라이언트를 프로덕션 수준으로 올립니다.  
 
 ##  <a name="to-configure-automatic-client-upgrades-to-use-a-pre-production-collection"></a>사전 프로덕션 컬렉션을 사용하도록 자동 클라이언트 업그레이드를 구성하려면  
+> [!IMPORTANT]
+> 작업 그룹 컴퓨터에서는 사전 프로덕션 클라이언트 배포가 지원되지 않습니다. 작업 그룹 컴퓨터는 배포 지점이 사전 프로덕션 클라이언트 패키지에 액세스하는 데 필요한 인증을 사용할 수 없습니다.  작업 그룹 컴퓨터는 프로덕션 클라이언트로 승격될 때 최신 클라이언트를 수신합니다.
 
-1. 사전 프로덕션 클라이언트를 배포할 컴퓨터를 포함하는 [컬렉션을 설정](..\collections\create-collections.md)합니다. 사전 프로덕션 컬렉션에 작업 그룹 컴퓨터를 포함하지 마세요. 작업 그룹 컴퓨터는 배포 지점이 사전 프로덕션 클라이언트 패키지에 액세스하는 데 필요한 인증을 사용할 수 없습니다.   
+1. 사전 프로덕션 클라이언트를 배포할 컴퓨터를 포함하는 [컬렉션을 설정](..\collections\create-collections.md)합니다.   
 
 1.  Configuration Manager 콘솔에서 **관리** > **사이트 구성** > **사이트**를 열고 **계층 설정**을 선택합니다.  
 

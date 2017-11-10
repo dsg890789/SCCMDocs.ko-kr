@@ -1,5 +1,6 @@
 ---
-title: "Endpoint Protection 계획 | Microsoft 문서"
+title: "Endpoint Protection 계획"
+titleSuffix: Configuration Manager
 ms.custom: na
 ms.date: 03/07/2017
 ms.prod: configuration-manager
@@ -13,11 +14,11 @@ caps.latest.revision: "16"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.openlocfilehash: 6c4273dae99ec8db2cf827f463b973e876d0d35b
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 3ffb112dc1aaf71162b0f706f5c07fb6d08e47f9
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="planning-for-endpoint-protection-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Endpoint Protection 계획
 

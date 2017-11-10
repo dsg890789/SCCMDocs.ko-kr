@@ -1,5 +1,6 @@
 ---
-title: "VDI(가상 데스크톱 인프라) 클라이언트 관리 | Microsoft 문서 "
+title: "VDI(가상 데스크톱 인프라) 클라이언트 관리 "
+titleSuffix: Configuration Manager
 description: "VDI(가상 데스크톱 인프라)에서 System Center Configuration Manager 클라이언트를 관리합니다."
 ms.custom: na
 ms.date: 04/23/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 0368caa83f1d2b5b67b24fb2030182ae2f41db9d
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 1d35865895a8837d4c30a4f43967f777e61d7cbf
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="considerations-for-managing-system-center-configuration-manager-clients--in-a-virtual-desktop-infrastructure-vdi"></a>VDI(가상 데스크톱 인프라)에서 System Center Configuration Manager 클라이언트를 관리할 때의 고려 사항
 

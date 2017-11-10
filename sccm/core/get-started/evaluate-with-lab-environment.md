@@ -1,5 +1,6 @@
 ---
-title: "Configuration Manager 평가 | Microsoft 문서"
+title: "랩 환경에서 평가"
+titleSuffix: Configuration Manager
 description: "조직에서 사용할 System Center Configuration Manager를 평가하는 랩 환경을 만듭니다."
 ms.custom: na
 ms.date: 2/28/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: d7ea785ab1beee09b9adda735a87f89bc9481620
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 8649f6686adad908b7806d22983aaf20171609ba
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="evaluate-system-center-configuration-manager-by-building-your-own-lab-environment"></a>고유한 랩 환경을 구축하여 System Center Configuration Manager 평가
 

@@ -1,5 +1,6 @@
 ---
-title: "앱 구성 정책을 사용하여 Android for Work 앱 구성 | Microsoft Docs"
+title: "앱 구성 정책을 사용하여 Android for Work 앱 구성"
+titleSuffix: Configuration Manager
 description: "앱을 실행하기 전에 사용자에게 앱 구성 정책을 배포하여 Android for Work를 실행 중인 장치의 구성 문제를 해결합니다."
 ms.custom: na
 ms.date: 09/12/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.openlocfilehash: bd8388689a49873860fa9951b7d522f9d96fc11f
-ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
+ms.openlocfilehash: 79d1b3fed3baa74c8ad195925ccda35713cb8865
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="apply-settings-to-android-for-work-apps-with-app-configuration-policies-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 앱 구성 정책을 사용하여 Android for Work 앱에 설정 적용
 

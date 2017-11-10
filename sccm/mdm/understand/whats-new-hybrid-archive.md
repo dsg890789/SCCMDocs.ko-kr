@@ -1,5 +1,6 @@
 ---
-title: "새로운 기능 하이브리드 MDM 보관 | Microsoft 문서"
+title: "새로운 기능 하이브리드 MDM 보관"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager 및 Intune을 포함하는 하이브리드 배포에 사용할 수 있는 과거 모바일 장치 관리 기능의 보관 파일입니다."
 ms.custom: na
 ms.date: 06/30/2017
@@ -10,15 +11,15 @@ ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4c27b161-9eb7-4cdd-b469-d8eb27e71aea
-author: Mtillman
-ms.author: mtillman
+author: dougeby
+ms.author: dougeby
 manager: angrobe
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0abd1cdcf44e778c91bacb8011efd711818ce2e9
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 23b43e85a0ad698a377f51ce4b0d70fe197e9344
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="past-hybrid-features-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하는 이전 하이브리드 기능
 

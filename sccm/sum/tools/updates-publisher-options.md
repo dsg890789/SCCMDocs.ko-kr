@@ -1,5 +1,6 @@
 ---
-title: "옵션 구성 | Microsoft 문서"
+title: "옵션 구성"
+titleSuffix: Configuration Manager
 description: "System Center Updates Publisher 사용 옵션 구성"
 ms.custom: na
 ms.date: 4/29/2017
@@ -15,11 +16,11 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b66ed0a5e1c87d8c82853da86e3d55b0e2c043bb
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 88a595767d2c230e9d672679102b6a236bc28ee7
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="configure-options-for-updates-publisher"></a>Updates Publisher의 옵션 구성
 

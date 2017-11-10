@@ -1,5 +1,6 @@
 ---
-title: "진단 데이터 FAQ | Microsoft 문서"
+title: "진단 데이터에 대한 FAQ"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에 대한 진단 및 사용 현황 데이터에 대한 질문과 대답을 찾습니다."
 ms.custom: na
 ms.date: 2/8/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "6"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 177a30a30f6b8579fa1956d28581d4f9d3a11838
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: cf5b44c9d838f49e2de795338f3068621febf6c8
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="frequently-asked-questions-about-diagnostics-and-usage-data-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 진단 및 사용 현황 데이터에 대한 질문과 대답
 

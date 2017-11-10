@@ -1,5 +1,6 @@
 ---
-title: "System Center Configuration Manager를 사용하여 MDM 구성 확인 | Microsoft Docs"
+title: "MDM 구성 확인"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager를 사용하여 MDM 구성 확인"
 ms.custom: na
 ms.date: 03/05/2017
@@ -12,14 +13,14 @@ ms.topic: article
 ms.assetid: 94ecfada-97d9-4d5f-bb04-63550dda5f47
 caps.latest.revision: "18"
 caps.handback.revision: "0"
-author: mtillman
-ms.author: mtillman
+author: dougeby
+ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: f50331f107ead5f83c3f76658718ff3ad6a2f4d7
-ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
+ms.openlocfilehash: 507af48c6cc911dc5303055b3e0db7bc1c1a3b32
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="verify-mdm-configuration-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 MDM 구성 확인
 

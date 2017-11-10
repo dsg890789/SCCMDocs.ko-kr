@@ -1,5 +1,6 @@
 ---
-title: "Active Directory 스키마 게시 | Microsoft 문서"
+title: "게시 및 Active Directory 스키마"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에 대한 Active Directory 스키마를 확장하여 클라이언트 배포 및 구성 프로세스를 간소화합니다."
 ms.custom: na
 ms.date: 2/6/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 58beef440db8e019a06ce7c4c8eaabc8e85ce954
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 747d194d8244d42d557bc442f09035808f6eb2f0
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="prepare-active-directory-for-site-publishing"></a>사이트 게시를 위해 Active Directory 준비
 

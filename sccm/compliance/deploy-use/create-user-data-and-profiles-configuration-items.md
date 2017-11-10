@@ -1,5 +1,6 @@
 ---
-title: "사용자 데이터 및 프로필 구성 항목 만들기 | Microsoft 문서"
+title: "사용자 데이터 및 프로필 구성 항목 만들기"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 데이터 및 프로필 구성 항목을 사용하여 폴더 리디렉션, 오프라인 파일 및 로밍 프로필을 관리할 수 있습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: 1b3b42fe0a39e5adfddebf73f4683e5a6c71cb1c
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: ab027a197ffd696fe279a464d0f30b0d224bf312
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-user-data-and-profiles-configuration-items-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사용자 데이터 및 프로필 구성 항목 만들기
 

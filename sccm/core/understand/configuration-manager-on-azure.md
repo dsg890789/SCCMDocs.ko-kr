@@ -1,5 +1,5 @@
 ---
-title: "Azure의 Configuration Manager | Microsoft 문서"
+title: "Azure의 Configuration Manager"
 description: "Azure 환경에서 Configuration Manager를 사용하는 방법에 대한 정보입니다."
 ms.custom: na
 ms.date: 03/27/2017
@@ -14,11 +14,11 @@ caps.latest.revision: "2"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 5276ad999fc871496d79e6efff34d5edc6335380
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: a1d4fb9c8a19565d6f49f3d3e1e70f698305e6a4
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="configuration-manager-on-azure---frequently-asked-questions"></a>Azure의 Configuration Manager - 질문과 대답
 *적용 대상: System Center Configuration Manager(현재 분기)*

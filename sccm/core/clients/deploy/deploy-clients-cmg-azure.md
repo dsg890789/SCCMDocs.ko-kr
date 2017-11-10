@@ -1,5 +1,6 @@
 ---
-title: "인터넷에서 클라이언트 설치 및 할당 | Microsoft Docs"
+title: "인터넷에서 클라이언트 설치 및 할당"
+titleSuffix: Configuration Manager
 description: "인터넷에서 System Center Configuration Manager 클라이언트를 설치 및 할당합니다."
 ms.custom: na
 ms.date: 8/07/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: d783cc2f12400084ad1cd62a338a31c9747c05fb
-ms.sourcegitcommit: f6a428a8db7145affa388f59e0ad880bdfcf17b5
+ms.openlocfilehash: 2ef7580f94864094e9420eb0f5a5c5b4dc9d6d24
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="install-and-assign-configuration-manager-windows-10-clients-using-azure-ad-for-authentication"></a>인증을 위해 Azure AD를 사용하여 Configuration Manager Windows 10 클라이언트 설치 및 할당
 

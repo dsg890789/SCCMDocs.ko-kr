@@ -1,5 +1,6 @@
 ---
-title: "지원되는 Active Directory 도메인 | Microsoft 문서"
+title: "지원되는 Active Directory 도메인"
+titleSuffix: Configuration Manager
 description: "Active Directory 도메인에서 System Center Configuration Manager 사이트 시스템의 멤버 자격에 대한 요구 사항을 가져옵니다."
 ms.custom: na
 ms.date: 9/18/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 813c2f55a5815ae3739149abc3f650a750d52cd8
-ms.sourcegitcommit: 474e6ddbaaeac4ba17d8172321e08deeb0140d0a
+ms.openlocfilehash: d4862a3354717a603535b6ad0de42f24c67cc314
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="supported-active-directory-domains-for-system-center-configuration-manager"></a>System Center Configuration Manager에서 지원되는 Active Directory 도메인
 

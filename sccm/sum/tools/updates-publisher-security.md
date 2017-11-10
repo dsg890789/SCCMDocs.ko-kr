@@ -1,5 +1,6 @@
 ---
-title: "인증서 및 보안 | Microsoft 문서"
+title: "인증서 및 보안"
+titleSuffix: Configuration Manager
 description: "System Center Updates Publisher의 인증서 및 보안 관리"
 ms.custom: na
 ms.date: 4/29/2017
@@ -15,11 +16,11 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c43af95a539a9284e4e49822b284783e02f9fa21
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: effe8c193eef133ba8a6549d52a522d8f61b2511
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="manage-certificates-and-security-for-updates-publisher"></a>Updates Publisher의 인증서 및 보안 관리
 

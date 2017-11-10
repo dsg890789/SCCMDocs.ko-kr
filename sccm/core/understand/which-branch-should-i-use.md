@@ -1,5 +1,6 @@
 ---
-title: "사용해야 하는 분기 | Microsoft 문서"
+title: "사용해야 하는 분기"
+titleSuffix: Configuration Manager
 description: "사용 가능한 System Center Configuration Manager 분기 간의 차이점을 알아봅니다."
 ms.custom: na
 ms.date: 05/02/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 26356a80bd8c78d4517253bae73e53d8d8f3a73a
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 047ffc0953db4a4cc5d543d880136ce61fa99fa7
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="which-branch-of-configuration-manager-should-i-use"></a>사용해야 하는 Configuration Manager 분기
 
@@ -149,5 +150,4 @@ Configuration Manager 사이트에 대한 버전 정보를 보면 분기도 확�
 사이트 버전을 확인하려면 콘솔의 왼쪽 위에 있는 **System Center Configuration Manager 정보**로 이동합니다. 여기에 **사이트 버전**이 표시됩니다. 사이트 버전 목록은 []() 항목을 참조하세요.
 
 **분기**  
-사이트 분기를 LTSB 또는 현재 분기로 확인하려면 콘솔에서 **관리** > **사이트 구성** > **사이트**으로 이동한 다음 **계층 설정**을 엽니다. 현재 분기로 변환하는 옵션이 있고 활성 상태이면 사이트에서 LTSB 버전을 실행합니다. 사이트에서 현재 분기를 실행하는 경우에는 이 옵션이 회색으로 표시됩니다.
-다양한 Configuration Manager 버전에 대한 자세한 내용은 [Configuration Manager용 업데이트](/sccm/core/servers/manage/updates)에서 "기준 및 업데이트 버전"을 참조하세요.
+사이트 분기를 LTSB 또는 현재 분기로 확인하려면 콘솔에서 **관리** > **사이트 구성** > **사이트**으로 이동한 다음 **계층 설정**을 엽니다. 현재 분기로 변환하는 옵션이 있고 활성 상태이면 사이트에서 LTSB 버전을 실행합니다. 사이트에서 현재 분기를 실행하는 경우에는 이 옵션이 회색으로 표시됩니다. 다양한 Configuration Manager 버전에 대한 자세한 내용은 [Configuration Manager용 업데이트](/sccm/core/servers/manage/updates)에서 "기준 및 업데이트 버전"을 참조하세요.

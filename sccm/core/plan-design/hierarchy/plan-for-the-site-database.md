@@ -1,5 +1,6 @@
 ---
-title: "사이트 데이터베이스 계획 | Microsoft 문서"
+title: "사이트 데이터베이스 계획"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager 계층 구조를 계획할 때 사이트 데이터베이스 및 사이트 데이터베이스 서버 역할을 고려하세요."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: d4efe1f013dbb74efca79cd27f7248fc085c7424
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 1bebb28bccc8b1faa79a56c97c56793d391bf70c
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="plan-for-the-site-database-for-system-center-configuration-manager"></a>System Center Configuration Manager용 사이트 데이터베이스에 대한 계획
 

@@ -1,5 +1,6 @@
 ---
-title: "Intune에 등록된 장치의 정책 원격 동기화 | Microsoft 문서"
+title: "Intune에 등록된 장치의 정책 원격 동기화"
+titleSuffix: Configuration Manager
 description: "Configuration Manager 콘솔에서 Intune에 등록된 장치의 정책을 동기화하는 방법 알아보기"
 ms.custom: na
 ms.date: 03/05/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 387f6303611010ab3d72f796455409ebfff65099
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: a03ba69c679bcfdc54744314c7a4cb3ef8b2a7a0
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="remotely-synchronize-policy-on-intune-enrolled-devices-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 Intune에 등록된 장치의 정책 원격 동기화
 

@@ -1,5 +1,6 @@
 ---
-title: "클라이언트 상태 구성 | Microsoft 문서"
+title: "클라이언트 상태 구성"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 클라이언트 상태 설정을 선택합니다."
 ms.custom: na
 ms.date: 04/23/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: fc898bf2433ab99eb0da9c60bd0e890bba97a415
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 5db52925515e65797a43ed35775460369f742f49
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-configure-client-status-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트 상태를 구성하는 방법
 

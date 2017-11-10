@@ -1,8 +1,9 @@
 ---
-title: "System Center Configuration Manager를 사용하여 원격 초기화, 잠금 또는 암호 재설정으로 데이터 보호 | Microsoft Docs"
+title: "원격 초기화, 잠금 또는 암호 재설정으로 데이터 보호"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager를 사용하여 전체 초기화, 선택적 초기화, 원격 잠금 또는 암호 다시 설정으로 장치 데이터를 보호합니다."
 ms.custom: na
-ms.date: 09/28/2017
+ms.date: 10/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: ea92d7b4656a04f312f04c19cac6b17df931c9c5
-ms.sourcegitcommit: db079cd7322e7d4926b2df0ccb37e752c570d902
+ms.openlocfilehash: 55d49c388b4ea60627f72ffe61796c70de6f9416
+ms.sourcegitcommit: a5f8b5cfdabf0298e4302e24210e725a06a9de82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/30/2017
 ---
 # <a name="protect-data-with-remote-wipe-lock-or-passcode-reset-by-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 원격 초기화, 잠금 또는 암호 재설정으로 데이터 보호
 
@@ -39,6 +40,9 @@ System Center Configuration Manager는 선택적 초기화, 전체 초기화, �
 분실한 장치를 보호하거나 장치의 활성 사용을 중지할 경우 장치에 초기화 명령을 실행할 수 있습니다.  
 
 장치에서 출하 시 기본값으로 장치를 복원하는 **전체 초기화** 를 실행합니다. 그러면 모든 회사 및 사용자 데이터와 설정이 제거됩니다. Windows Phone, iOS, Android 및 Windows 10 장치에서 전체 초기화를 수행할 수 있습니다.  
+
+> [!NOTE]
+> 회사 소유 장치에서만 전체 초기화를 수행할 수 있습니다.
 
 > [!NOTE]
 > 버전 1511보다 이전 버전에서 RAM이 4GB 미만인 Windows 10 장치를 초기화하면 장치가 응답하지 않는 상태가 될 수 있습니다. [자세히 알아봅니다](https://technet.microsoft.com/library/mt592024.aspx#full-wipe-disables-windows-10-devices-with-less-than-4-gb-ram).

@@ -1,5 +1,6 @@
 ---
-title: "현재 분기에서 Configuration Manager 확장된 상호 운용성 클라이언트 사용 | Microsoft Docs"
+title: "현재 분기에서 확장된 상호 운용성 클라이언트 사용 "
+titleSuffix: Configuration Manager
 description: "현재 분기 사이트에서 Configuration Manager 장기 서비스 분기의 클라이언트를 사용하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 08/09/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 9772224be78eee2777137225a59b53b1fd77a627
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: ba79f2b9cf0cdfc4525645a647dddb624a0a5e5b
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="use-the-configuration-manager-client-software-for-extended-interoperability-with-future-versions-of-a-current-branch-site"></a>이후 버전의 현재 분기 사이트와 확장된 상호 운용성을 위해 버Configuration Manager 클라이언트 소프트웨어 사용
 

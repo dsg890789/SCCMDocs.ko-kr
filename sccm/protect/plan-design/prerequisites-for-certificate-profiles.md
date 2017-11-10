@@ -1,5 +1,6 @@
 ---
-title: "인증서 프로필 필수 조건 | Microsoft 문서"
+title: "인증서 프로필 필수 조건"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 인증서 프로필과 외부 종속성 및 제품 내 종속성에 대해 알아봅니다."
 ms.custom: na
 ms.date: 03/29/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "9"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: fba52ee305fe67418f2fe544bfe94d10467236d0
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: a7316171430f0276a33d917794a7eb0b95666bcd
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="prerequisites-for-certificate-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 인증서 프로필에 대한 필수 조건
 

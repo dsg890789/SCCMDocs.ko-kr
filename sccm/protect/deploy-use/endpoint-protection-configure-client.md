@@ -1,5 +1,6 @@
 ---
-title: "Endpoint Protection 클라이언트 구성 | Microsoft 문서"
+title: "Endpoint Protection 클라이언트 구성"
+titleSuffix: Configuration Manager
 description: "계층 구조의 컴퓨터 컬렉션에 배포할 수 있는 Endpoint Protection용 사용자 지정 클라이언트 설정을 구성하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 02/14/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "21"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.openlocfilehash: 1488aaa465fb9810bc1b641d41dad95189d37418
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: de8f7411219446420a8c8bca00799d8d7d18fd2f
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="configure-custom-client-settings-for-endpoint-protection"></a>Endpoint Protection에 대한 사용자 지정 클라이언트 설정 구성
 

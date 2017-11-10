@@ -1,5 +1,6 @@
 ---
-title: "Configuration Manager에서 사용되는 포트 | Microsoft 문서"
+title: "연결에 사용되는 포트"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager가 연결에 사용되는 필수 포트 및 사용자 지정 포트에 대해 알아봅니다."
 ms.custom: na
 ms.date: 09/19/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: ac443971a725a7eeecaeea877b8e9636ebb4990b
-ms.sourcegitcommit: 51654bf8b5615eb99084d0a20d18ca3fccfa83a1
+ms.openlocfilehash: 663c64926e4653da3f7ee580ff01abb39cb85bee
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="ports-used-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사용되는 포트
 

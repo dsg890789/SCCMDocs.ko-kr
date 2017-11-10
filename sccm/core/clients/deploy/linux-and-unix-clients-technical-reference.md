@@ -1,5 +1,6 @@
 ---
-title: "UNIX/Linux 클라이언트 구성 요소 서비스 및 명령 | Microsoft 문서"
+title: "UNIX/Linux 클라이언트 구성 요소 서비스 및 명령"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 Linux 및 UNIX 클라이언트 구성 요소 서비스 및 명령에 대해 알아봅니다."
 ms.custom: na
 ms.date: 04/23/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "6"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: f11795b05f1b422e97fd32e7457c44b708fa93e4
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 238a824aad1acd1f3dd41b1b01afa9248b44ab5d
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="linux-and-unix-clients-component-services-and-commands-for-system-center-configuration-manager"></a>System Center Configuration Manager의 Linux 및 UNIX 클라이언트 구성 요소 서비스 및 명령
 

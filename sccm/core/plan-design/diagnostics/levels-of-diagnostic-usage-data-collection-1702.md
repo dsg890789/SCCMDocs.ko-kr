@@ -1,5 +1,6 @@
 ---
-title: "1702에 대한 진단 데이터 | System Center Configuration Manager"
+title: "1702에 대한 진단 데이터"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager 버전 1702에서 수집하는 진단 및 사용 현황 데이터에 대해 알아봅니다."
 ms.custom: na
 ms.date: 3/27/2017
@@ -32,11 +33,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 0e1d93712150fb3d6fabc3f057711eba1194c3ad
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: a8a3f143acd34f370ebf6187cdb7dcaefcefe5eb
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1702-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1702에 대한 진단 사용 현황 데이터 수집의 수준
 

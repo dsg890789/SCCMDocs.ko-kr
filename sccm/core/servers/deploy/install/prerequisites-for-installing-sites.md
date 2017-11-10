@@ -1,5 +1,6 @@
 ---
-title: "사이트 필수 조건 | Microsoft 문서"
+title: "사이트 필수 조건"
+titleSuffix: Configuration Manager
 description: "각 유형의 System Center Configuration Manager 사이트를 설치하기 위한 필수 조건을 알아봅니다."
 ms.custom: na
 ms.date: 7/31/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: d46a8b66ace45d25da9d86f2e91b19ae1d6875ab
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 167f7db44ba19c6c97571c691c63d68edd47af93
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="prerequisites-for-installing-system-center-configuration-manager-sites"></a>System Center Configuration Manager 사이트 설치에 대한 필수 조건
 

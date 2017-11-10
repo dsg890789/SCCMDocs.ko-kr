@@ -1,5 +1,6 @@
 ---
-title: "마이그레이션할 항목 선택 | Microsoft 문서"
+title: "마이그레이션 항목 선택"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에 마이그레이션할 수 있는 데이터와 마이그레이션할 수 없는 데이터를 알아봅니다."
 ms.custom: na
 ms.date: 12/29/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 9dc5f6c9f58e1fc33b2dc9dd76737ae23af81993
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 05d9bdb5b5e66b59d252fd5f6c82a2e1f3ed131a
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="determine-whether-to-migrate-data-to-system-center-configuration-manager"></a>System Center Configuration Manager로 데이터를 마이그레이션할지 여부 결정
 

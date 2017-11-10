@@ -1,5 +1,6 @@
 ---
-title: "클라우드 관리 게이트웨이 모니터링 - Configuration Manager | Microsoft 문서"
+title: "클라우드 관리 게이트웨이 모니터링 "
+titleSuffix: Configuration Manager
 description: 
 ms.date: 04/23/2017
 ms.prod: configuration-manager
@@ -8,11 +9,11 @@ ms.assetid: 15f72f80-9850-40ce-9c3a-443ba04b6a03
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: fa58b55c2b99ce5c62226279499d8276b1216809
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: d88749b09dd5e88f29240cc0db2f2ace7a2f06f4
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="monitor-cloud-management-gateway-in-configuration-manager"></a>Configuration Manager에서 클라우드 관리 게이트웨이 모니터링
 

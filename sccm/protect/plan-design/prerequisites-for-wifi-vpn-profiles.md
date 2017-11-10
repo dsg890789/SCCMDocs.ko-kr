@@ -1,5 +1,6 @@
 ---
-title: "Wi-Fi 및 VPN 프로필 필수 조건 | Microsoft 문서"
+title: "Wi-Fi 및 VPN 프로필 필수 조건"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 인증서 프로필, Wi-Fi 프로필 및 VPN 프로필을 관리하는 데 필요한 보안 권한에 대해 알아봅니다."
 ms.custom: na
 ms.date: 11/23/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Nbigman
 ms.author: nbigman
 manager: angrobe
-ms.openlocfilehash: 309b0363f9b3ec4a31b8323b9e64c9f73060c281
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 9f459ad76768443c218bbc86d75b3f5ae34596b3
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="prerequisites-for-wi-fi-and-vpn-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Wi-Fi 및 VPN 프로필에 대한 필수 조건
 

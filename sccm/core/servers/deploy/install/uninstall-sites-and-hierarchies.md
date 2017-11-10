@@ -1,5 +1,6 @@
 ---
-title: "사이트 제거 | Microsoft 문서"
+title: "사이트 제거"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager 사이트를 제거하려면 다음 세부 정보를 지침으로 사용합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 6ad06753dc0e1d0958f7131afbf3ecb75eecb2e3
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 8a8571e844be796c7f87f7742dce6c311d7195ea
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="uninstall-sites-and-hierarchies-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사이트 및 계층 제거
 

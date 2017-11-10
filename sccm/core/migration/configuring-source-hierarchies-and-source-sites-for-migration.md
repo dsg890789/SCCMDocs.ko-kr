@@ -1,5 +1,6 @@
 ---
-title: "마이그레이션 원본 계층 구조 | Microsoft 문서"
+title: "마이그레이션 원본 계층"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager 환경에 데이터를 마이그레이션할 수 있도록 원본 계층 및 원본 사이트를 구성합니다."
 ms.custom: na
 ms.date: 12/29/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 80c43ab93ee5a2de6bf8d7993dfd46f0005d2df8
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 63df5f909b3718d4b720a6767da8272f1895b074
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="configure-source-hierarchies-and-source-sites-for-migration-to-system-center-configuration-manager"></a>System Center Configuration Manager로 마이그레이션할 원본 계층 및 원본 사이트 구성
 

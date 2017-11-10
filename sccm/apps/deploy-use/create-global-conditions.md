@@ -1,5 +1,6 @@
 ---
-title: "글로벌 조건 만들기 | Microsoft 문서"
+title: "글로벌 조건 만들기"
+titleSuffix: Configuration Manager
 description: "응용 프로그램이 클라이언트 장치에 제공 및 배포되는 방식을 지정하는 글로벌 조건을 만듭니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: 6aedab4ab23749061ec103e0de92edafdad13d33
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 480e7a68308d458bc77ddb4956db2616eaaced97
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-create-global-conditions-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 글로벌 조건을 만드는 방법
 

@@ -1,5 +1,6 @@
 ---
-title: "Asset Intelligence 구성 | Microsoft 문서"
+title: "Asset Intelligence 구성"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 Asset Intelligence를 설정합니다."
 ms.custom: na
 ms.date: 2/22/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: d2704e0f93ad9748f7eb06d714b3754463cb3bdb
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: d6137426c4960d0e9a9117fc78d3f26803b4f001
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="configure-asset-intelligence-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Asset Intelligence 구성
 
@@ -140,7 +141,7 @@ Asset Intelligence 동기화 지점 사이트 시스템 역할은 Configuration 
 
 2.  **홈** 탭의 **Asset Intelligence** 그룹에서 **소프트웨어 라이선스 가져오기**를 선택합니다.   
 
-4.  **가져오기** 페이지에서 MVLS(Microsoft Volume Licensing) 파일(.xml 또는 .csv) 또는 일반 라이선스 계정 파일(.csv)을 가져올지 여부를 지정합니다. 일반 라이선스 계정 파일 만들기에 대한 자세한 내용은 이 항목의 뒷부분에 나오는 [가져오기를 위한 일반 라이선스 계정 정보 파일 만들기](#BKMK_CreateGeneralLicenseStatement) 섹션을 참조하세요.  
+4.  **가져오기** 페이지에서 MVLS(Microsoft Volume Licensing) 파일(.xml 또는 .csv) 또는 일반 라이선스 계정 파일(.csv)을 가져올지 여부를 지정합니다. 일반 라이선스 계정 파일 만들기에 대한 자세한 내용은 이 항목의 뒷부분에 나오는 [Create a general license statement information file for import](#BKMK_CreateGeneralLicenseStatement) 섹션을 참조하세요.  
 
     > [!WARNING]  
     >  Asset Intelligence 카탈로그에 가져올 수 있는 .csv 형식의 MVLS 파일을 다운로드하려면 [Microsoft 볼륨 라이선스 서비스 센터](http://go.microsoft.com/fwlink/p/?LinkId=226547)를 참조하세요. 이 정보에 액세스하려면 웹 사이트에 등록된 계정이 있어야 합니다. .xml 형식의 MVLS 파일을 가져오는 방법에 대한 자세한 내용은 Microsoft 계정 담당자에게 문의해야 합니다.  
@@ -152,7 +153,7 @@ Asset Intelligence 동기화 지점 사이트 시스템 역할은 Configuration 
 
 6. 마법사를 완료합니다.  
 
-###  <a name="BKMK_CreateGeneralLicenseStatement"></a> 가져오기를 위한 일반 라이선스 계정 정보 파일 만들기  
+###  <a name="BKMK_CreateGeneralLicenseStatement"></a> Create a general license statement information file for import  
  일반 라이선스 계정은 쉼표로 구분된(.csv) 파일 형식으로 수동으로 만든 라이선스 가져오기 파일을 사용하여 Asset Intelligence 카탈로그에 가져올 수도 있습니다.  
 
 > [!NOTE]  

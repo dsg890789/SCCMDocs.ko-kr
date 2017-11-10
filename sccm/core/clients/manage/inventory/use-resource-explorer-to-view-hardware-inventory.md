@@ -1,5 +1,6 @@
 ---
-title: "하드웨어 인벤토리 보기 | Microsoft 문서 | 리소스 탐색기"
+title: "리소스 탐색기를 사용하여 하드웨어 인벤토리 보기"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 리소스 탐색기를 사용하여 하드웨어 인벤토리를 볼 수 있습니다."
 ms.custom: na
 ms.date: 01/03/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "7"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: e39fa60a5d215fa1b0a98d4463058497e63a4d4f
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: a08fdd76fee73e50cb1f1249dd3ef4f54ce378a0
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-use-resource-explorer-to-view-hardware-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 하드웨어 인벤토리를 보기 위해 리소스 탐색기를 사용하는 방법
 

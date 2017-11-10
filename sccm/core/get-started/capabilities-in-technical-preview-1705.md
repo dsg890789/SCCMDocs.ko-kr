@@ -1,5 +1,6 @@
 ---
-title: Technical Preview 1705 | Microsoft Docs
+title: "기술 미리 보기 1705"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager용 Technical Preview 버전 1705에서 사용 가능한 기능에 대해 알아봅니다."
 ms.custom: na
 ms.date: 06/02/2017
@@ -13,11 +14,11 @@ ms.assetid: 00684289-d21a-45f8-b1e3-c5c787d73096
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: b977a79baec73999caa21648adcb6fcfec4a4935
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 0539f36268477c02c0f38a123d3740e20e9b8144
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="capabilities-in-technical-preview-1705-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1705의 기능
 

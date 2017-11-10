@@ -1,5 +1,6 @@
 ---
-title: "마이그레이션 보안 및 개인 정보 | Microsoft 문서"
+title: "마이그레이션 보안 및 개인 정보"
+titleSuffix: Configuration Manager
 description: "사용자의 System Center Configuration Manager 환경으로 마이그레이션하는 데 대한 보안 모범 사례 및 개인 정보를 확인합니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 8aa6971d75924ab5bcacd70c330913097ecf8717
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: e068cc0055a1f65ad0fe53be08bb996831d9a288
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="security-and-privacy-for-migration-to-system-center-configuration-manager"></a>System Center Configuration Manager로의 마이그레이션에 대한 보안 및 개인 정보
 

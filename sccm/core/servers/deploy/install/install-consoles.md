@@ -1,5 +1,6 @@
 ---
-title: "콘솔 설치 | Microsoft 문서"
+title: "콘솔 설치"
+titleSuffix: Configuration Manager
 description: "중앙 관리 사이트 또는 기본 사이트에 연결할 Configuration Manager 콘솔을 설치하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 1/3/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "3"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 88ecbc48fd03ce988f04408d0378844cbed1de2b
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: f367f94f809863403ed562a65cf44f21de698005
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="install-the-system-center-configuration-manager-console"></a>System Center Configuration Manager 콘솔 설치
 

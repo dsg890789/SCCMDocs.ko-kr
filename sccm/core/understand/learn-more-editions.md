@@ -1,5 +1,6 @@
 ---
-title: "라이선스 및 분기에 대한 자세한 정보 | Microsoft 문서"
+title: "라이선스 및 분기에 대한 자세한 정보"
+titleSuffix: Configuration Manager
 description: "이 항목에서는 현재 분기 버전 1606, LTSB(장기 서비스 분기), 현재 분기의 평가판 설치 등 System Center Configuration Manager의 2016년 10월 릴리스에서 제공되는 설치 옵션에 대한 라이선스 요구 사항을 알아봅니다."
 ms.custom: na
 ms.date: 10/12/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 90e16b316872cb370c9c2e645f46ac12afab7107
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 88cc85a98b9281ec07ead766c415bebe46c5a82c
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="licensing-and-branches-for-system-center-configuration-manager"></a>System Center Configuration Manager의 라이선스 및 분기
 

@@ -1,5 +1,6 @@
 ---
-title: "하드웨어 인벤토리 구성 | Microsoft 문서"
+title: "하드웨어 인벤토리 구성"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 컬렉션 또는 모든 클라이언트에 대한 하드웨어 인벤토리를 설정합니다."
 ms.custom: na
 ms.date: 02/22/2017
@@ -15,13 +16,13 @@ caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: 0baadb95ec8dbb945f1a611ebb95a03cec3199bd
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 91f17e4ab9f828576ac1b11076a008289ff588a0
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
-# <a name="how-to-configure-hardware-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 하드웨어 인벤토리를 구성하는 방법
+# <a name="how-to-configure-hardware-inventory-in-system-center-configuration-manager"></a>How to configure hardware inventory in System Center Configuration Manager
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 

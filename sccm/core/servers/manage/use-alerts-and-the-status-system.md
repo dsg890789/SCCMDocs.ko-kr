@@ -1,5 +1,6 @@
 ---
-title: "경고 및 상태 시스템 | Microsoft 문서"
+title: "경고 및 상태 시스템"
+titleSuffix: Configuration Manager
 description: "경고를 구성한 후 상태 시스템을 사용하여 Configuration Manager 배포 상태에 대한 최신 정보를 받습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "10"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: ed692bdea055775890535d2666f09ba5f5c7c4e1
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 690709c0067099a022f4a29de4e7d935952e4260
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="use-alerts-and-the-status-system-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 경고 및 상태 시스템 사용
 

@@ -1,5 +1,6 @@
 ---
-title: "평가판 설치 업그레이드 | Microsoft 문서"
+title: "평가판 설치 업그레이드"
+titleSuffix: Configuration Manager
 description: "평가판 설치를 System Center Configuration Manager 전체 설치로 업그레이드하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 2/7/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "3"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 8f951805c2fc25059965c15c94934c0f8546735c
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 942ac0a1d7681cb1efb06ff477a27a7c5c57654b
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="upgrade-an-evaluation-installation-of-system-center-configuration-manager-to-a-full-installation"></a>평가판 설치를 System Center Configuration Manager 전체 설치로 업그레이드
 

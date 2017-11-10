@@ -1,5 +1,6 @@
 ---
-title: "응용 프로그램 관리 계획 및 구성 | Microsoft 문서"
+title: "응용 프로그램 관리 계획 및 구성"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 응용 프로그램 배포에 필요한 종속성을 구현하고 구성합니다."
 ms.custom: na
 ms.date: 02/09/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "13"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: 1519ec79eb6b1da6b9666b2ce12a46553116b364
-ms.sourcegitcommit: c145e515843a0f37c2e5ca5dbd22072a219d06b4
+ms.openlocfilehash: 66317bea84adbddf2d2e94c30a4a72e19229439b
+ms.sourcegitcommit: 18ac58374d2d513fe2a197c80f7c8c6890a7d612
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2017
+ms.lasthandoff: 10/16/2017
 ---
 # <a name="plan-for-and-configure-application-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 관리 계획 및 구성
 
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/03/2017
 |관리 지점|클라이언트는 관리 지점에 연결하여 클라이언트 정책을 다운로드하고, 콘텐츠를 찾고, 응용 프로그램 카탈로그에 연결합니다.<br /><br /> 클라이언트는 관리 지점에 액세스할 수 없는 경우 응용 프로그램 카탈로그를 사용할 수 없습니다.|  
 |배포 지점|계층에 배포 지점이 하나 이상 있어야만 클라이언트에 응용 프로그램을 배포할 수 있습니다. 기본적으로 사이트 서버에는 표준 설치 중 활성화된 배포 지점 사이트 역할이 있습니다. 배포 지점의 수와 위치는 각 기업의 특정 요구 사항에 따라 달라집니다.<br /><br /> 배포 지점을 설치하고 콘텐츠를 관리하는 방법에 대한 자세한 내용은 [콘텐츠 및 콘텐츠 인프라 관리](../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.|  
 |클라이언트 설정|여러 클라이언트 설정에서는 응용 프로그램이 클라이언트에 설치되는 방식과 클라이언트상의 사용자 환경을 제어합니다. 이러한 클라이언트 설정은 다음과 같습니다.<br /><br /><ul><li>컴퓨터 에이전트</li><li>컴퓨터 다시 시작</li><li>소프트웨어 배포</li><li>사용자 및 장치 선호도</li></ul> 이러한 클라이언트 설정에 대한 자세한 내용은 [클라이언트 설정 정보](../../core/clients/deploy/about-client-settings.md)를 참조하세요.<br /><br /> 클라이언트 설정을 구성하는 방법에 대한 자세한 내용은 [클라이언트 설정을 구성하는 방법](../../core/clients/deploy/configure-client-settings.md)을 참조하세요.|  
-|응용 프로그램 카탈로그의 경우:<br /><br /> 검색된 사용자 계정|사용자가 응용 프로그램 카탈로그에서 응용 프로그램을 확인하고 요청하려면 먼저 Configuration Manager에서 해당 사용자를 검색해야 합니다. 자세한 내용은 [검색 실행](/sccm/core/servers/deploy/configure/run-discovery)을 참조하세요.|  
+|응용 프로그램 카탈로그에 대해 검색된 사용자 계정 |사용자가 응용 프로그램 카탈로그에서 응용 프로그램을 확인하고 요청하려면 먼저 Configuration Manager에서 해당 사용자 계정을 검색해야 합니다. 자세한 내용은 [검색 실행](/sccm/core/servers/deploy/configure/run-discovery)을 참조하세요.|  
 |가상 응용 프로그램 실행을 위한 App-V 4.6 SP1 이상의 클라이언트|Configuration Manager에서 가상 응용 프로그램을 만들려면 클라이언트 컴퓨터에 App-V 4.6 SP1 이상의 클라이언트가 설치되어 있어야 합니다.<br /><br /> 또한 가상 응용 프로그램을 배포하려면 먼저 기술 자료 [문서 2645225](http://go.microsoft.com/fwlink/p/?LinkId=237322)에 설명된 핫픽스로 App-V 클라이언트를 업데이트해야 합니다.|  
 |응용 프로그램 카탈로그 웹 서비스 지점|응용 프로그램 카탈로그 웹 서비스 지점은 소프트웨어 라이브러리의 사용 가능한 소프트웨어에 대한 정보를 응용 프로그램 카탈로그 웹 사이트에 제공하는 사이트 시스템 역할입니다.<br /><br /> 이 사이트 시스템 역할을 구성하는 방법에 대한 자세한 내용은 이 문서의 [소프트웨어 센터 및 응용 프로그램 카탈로그 구성(Windows PC만 해당)](/sccm/apps/plan-design/plan-for-and-configure-application-management#configure-software-center-and-the-application-catalog-windows-pcs-only)을 참조하세요.|  
 |응용 프로그램 카탈로그 웹 사이트 지점|응용 프로그램 카탈로그 웹 사이트 지점은 사용자에게 사용 가능한 소프트웨어 목록을 제공하는 사이트 시스템 역할입니다.<br /><br /> 이 사이트 시스템 역할을 구성하는 방법에 대한 자세한 내용은 이 문서의 [소프트웨어 센터 및 응용 프로그램 카탈로그 구성(Windows PC만 해당)](/sccm/apps/plan-design/plan-for-and-configure-application-management#configure-software-center-and-the-application-catalog-windows-pcs-only)을 참조하세요.|  
@@ -77,7 +78,7 @@ ms.lasthandoff: 10/03/2017
 
 |단계|세부 정보|추가 정보|  
 |-----------|-------------|----------------------|  
-|**1단계:** HTTPS 연결을 사용할 경우 사이트 시스템 서버에 웹 서버 인증서를 배포했는지 확인합니다.|응용 프로그램 카탈로그 웹 사이트 지점 및 응용 프로그램 카탈로그 웹 서비스 지점을 실행할 사이트 시스템 서버에 웹 서버 인증서를 배포합니다.<br /><br /> 그리고, 클라이언트가 인터넷에서 응용 프로그램 카탈로그를 사용하도록 하려면 적어도 하나 이상의 관리 지점 사이트 시스템 서버에 웹 서버 인증서를 배포하고 인터넷에서 클라이언트 연결이 가능하도록 인증서를 구성합니다.|인증서 요구 사항에 대한 자세한 내용은 [PKI 인증서 요구 사항](../../core/plan-design/network/pki-certificate-requirements.md)을 참조하세요.|  
+|**1단계:** HTTPS 연결을 사용할 경우 사이트 시스템 서버에 웹 서버 인증서를 배포했는지 확인해야 합니다.|응용 프로그램 카탈로그 웹 사이트 지점 및 응용 프로그램 카탈로그 웹 서비스 지점을 실행할 사이트 시스템 서버에 웹 서버 인증서를 배포합니다.<br /><br /> 그리고, 클라이언트가 인터넷에서 응용 프로그램 카탈로그를 사용하도록 하려면 적어도 하나 이상의 관리 지점 사이트 시스템 서버에 웹 서버 인증서를 배포하고 인터넷에서 클라이언트 연결이 가능하도록 인증서를 구성합니다.|인증서 요구 사항에 대한 자세한 내용은 [PKI 인증서 요구 사항](../../core/plan-design/network/pki-certificate-requirements.md)을 참조하세요.|  
 |**2단계:** 관리 지점에 연결하는 데 클라이언트 PKI 인증서를 사용하려면 클라이언트 컴퓨터에 클라이언트 인증 인증서를 배포합니다.|클라이언트는 응용 프로그램 카탈로그에 연결하기 위해 클라이언트 PKI 인증서를 사용하지 않지만 관리 지점에 연결해야 응용 프로그램 카탈로그를 사용할 수 있습니다. 다음 시나리오에서는 클라이언트 컴퓨터에 클라이언트 인증 인증서를 배포해야 합니다.<br /><br /><ul><li>인트라넷의 모든 관리 지점에서 HTTPS 클라이언트 연결만 허용합니다.</li><li>클라이언트가 인터넷에서 응용 프로그램 카탈로그에 연결합니다.</li></ul>|인증서 요구 사항에 대한 자세한 내용은 [PKI 인증서 요구 사항](../../core/plan-design/network/pki-certificate-requirements.md)을 참조하세요.|  
 |**3단계:** 응용 프로그램 카탈로그 웹 서비스 지점과 응용 프로그램 카탈로그 웹 사이트를 설치하고 구성합니다.|두 사이트 시스템 역할은 모두 같은 사이트에 설치해야 합니다. 같은 사이트 시스템 서버나 같은 Active Directory 포리스트에 설치할 필요는 없습니다. 그러나 응용 프로그램 카탈로그 웹 서비스 지점은 사이트 데이터베이스와 같은 포리스트에 있어야 합니다.|사이트 시스템 역할 배치에 대한 자세한 내용은 [사이트 시스템 서버 및 사이트 시스템 역할에 대한 계획](../../core/plan-design/hierarchy/plan-for-site-system-servers-and-site-system-roles.md)을 참조하세요.<br /><br /> 응용 프로그램 카탈로그 웹 서비스 지점과 응용 프로그램 카탈로그 웹 사이트 지점을 구성하려면 **3단계: 응용 프로그램 카탈로그 사이트 시스템 역할 설치 및 구성**을 참조하세요.|  
 |**4단계:** 응용 프로그램 카탈로그 및 소프트웨어 센터에 대한 클라이언트 설정을 구성합니다.|모든 사용자가 같은 설정을 사용하도록 하려면 기본 클라이언트 설정을 구성합니다. 아니면 특정 컬렉션에 대한 사용자 지정 클라이언트 설정을 구성합니다.|클라이언트 설정에 대한 자세한 내용은 [클라이언트 설정 정보](../../core/clients/deploy/about-client-settings.md)를 참조하세요.<br /><br /> 이러한 클라이언트 설정을 구성하는 방법에 대한 자세한 내용은 **4단계: 응용 프로그램 카탈로그 및 소프트웨어 센터에 대한 클라이언트 설정 구성**을 참조하세요.|  
@@ -105,7 +106,7 @@ ms.lasthandoff: 10/03/2017
 
 5.  **시스템 역할 선택** 페이지의 사용 가능한 역할 목록에서 **응용 프로그램 카탈로그 웹 서비스 지점** 및 **응용 프로그램 카탈로그 웹 사이트 지점**을 선택하고 **다음**을 선택합니다.  
 
-6.  마법사를 마칩니다.  
+6.  나머지 단계를 완료합니다.  
 
 ####  <a name="to-install-and-configure-the-application-catalog-site-systems-existing-site-system-server"></a>응용 프로그램 카탈로그 사이트 시스템을 설치 및 구성하려면 기존 사이트 시스템 서버  
 
@@ -120,7 +121,7 @@ ms.lasthandoff: 10/03/2017
 
 5.  **시스템 역할 선택** 페이지의 사용 가능한 역할 목록에서 **응용 프로그램 카탈로그 웹 서비스 지점** 및 **응용 프로그램 카탈로그 웹 사이트 지점**을 선택하고 **다음**을 선택합니다.  
 
-6.  마법사를 마칩니다.  
+6.  나머지 단계를 완료합니다.  
 
 7. 상태 메시지를 사용하고 로그 파일을 검토하여 이러한 사이트 시스템 역할이 설치되었는지 확인합니다.  
 
@@ -133,7 +134,7 @@ ms.lasthandoff: 10/03/2017
     자세한 내용을 보려면 **awebsvcMSI.log** 및 **portlwebMSI.log** 로그 파일을 검색하세요.  
 
 ###  <a name="step-4-configure-the-client-settings-for-the-application-catalog-and-software-center"></a>4단계: 응용 프로그램 카탈로그 및 소프트웨어 센터에 대한 클라이언트 설정 구성  
- 이 절차는 계층의 모든 장치에 적용할 응용 프로그램 카탈로그 및 소프트웨어 센터의 기본 클라이언트 설정을 구성합니다. 이러한 설정을 일부 장치에만 적용하려면 사용자 지정 클라이언트 설정을 만들어 특정 설정을 적용할 장치가 포함된 컬렉션에 배포하면 됩니다. 사용자 지정 장치 설정을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../core/clients/deploy/configure-client-settings.md) 문서의 [사용자 지정 클라이언트 설정을 만들어 배포하는 방법](../../core/clients/deploy/configure-client-settings.md#create-and-deploy-custom-client-settings) 섹션을 참조하세요.  
+ 이 절차는 계층의 모든 장치에 적용할 응용 프로그램 카탈로그 및 소프트웨어 센터의 기본 클라이언트 설정을 구성합니다. 이러한 설정을 일부 장치에만 적용하려면 사용자 지정 클라이언트 설정을 만들어 특정 설정을 적용할 장치가 포함된 컬렉션에 배포하면 됩니다. 사용자 지정 장치 설정을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../core/clients/deploy/configure-client-settings.md)의 [사용자 지정 클라이언트 설정을 만들어 배포하는 방법](../../core/clients/deploy/configure-client-settings.md#create-and-deploy-custom-client-settings) 섹션을 참조하세요.  
 
 1.  Configuration Manager 콘솔에서 **관리** > **클라이언트 설정** > **기본 클라이언트 설정**을 선택합니다.  
 
@@ -152,7 +153,7 @@ ms.lasthandoff: 10/03/2017
             > [!TIP]  
             >  응용 프로그램 카탈로그에 표시되는 조직 이름을 지정하고 웹 사이트 테마를 구성하려면 응용 프로그램 카탈로그 웹 사이트 속성의 **사용자 지정** 탭을 사용합니다.  
 
-        -   **새 소프트웨어 센터 사용** - 사용자가 응용 프로그램 카탈로그(Silverlight 지원 웹 브라우저 필요)에 액세스할 필요 없이 사용 가능한 앱을 검색하여 설치할 수 있는 새로운 소프트웨어 센터를 사용하려는 경우 **예**로 설정합니다.  
+        -   **새 소프트웨어 센터 사용** 사용자가 응용 프로그램 카탈로그(Silverlight 지원 웹 브라우저 필요)에 액세스할 필요 없이 사용 가능한 앱을 검색하여 설치할 수 있는 새로운 소프트웨어 센터를 사용하려는 경우 **예**로 설정합니다.  
 
         -   **설치 권한**  
 
@@ -175,9 +176,9 @@ ms.lasthandoff: 10/03/2017
 
 5.  **확인**을 선택하여 **기본 클라이언트 설정** 대화 상자를 닫습니다.  
 
- 클라이언트 컴퓨터는 다음에 클라이언트 정책을 다운로드할 때 이 설정으로 구성됩니다. 단일 클라이언트에 대한 정책 검색을 시작하려면 [클라이언트를 관리하는 방법](../../core/clients/manage/manage-clients.md)을 참조하세요.
+클라이언트 컴퓨터는 다음에 클라이언트 정책을 다운로드할 때 이 설정으로 구성됩니다. 단일 클라이언트에 대한 정책 검색을 시작하려면 [클라이언트를 관리하는 방법](../../core/clients/manage/manage-clients.md)을 참조하세요.
 
-#### <a name="how-to-customize-software-center-branding"></a>소프트웨어 센터 브랜딩을 사용자 지정하는 방법
+#### <a name="to-customize-software-center-branding"></a>소프트웨어 센터 브랜딩을 사용자 지정하려면
 
 소프트웨어 센터에 대한 사용자 지정 브랜딩은 다음 규칙에 따라 적용됩니다.
 
@@ -186,7 +187,7 @@ ms.lasthandoff: 10/03/2017
 3. Microsoft Intune 구독을 구성하고 Configuration Manager에 연결한 경우 소프트웨어 센터에서 Intune 구독 속성에 지정된 조직 이름, 색 및 회사 로고를 표시합니다. 자세한 내용은 [Configuring the Microsoft Intune subscription](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm#step-3-configure-intune-subscription)을 참조하십시오.
 
 > [!IMPORTANT]  
->  소프트웨어 센터 브랜딩은 14일마다 Intune 서비스와 동기화되므로 Intune에서 적용한 변경 내용이 Configuration Manager에 표시될 때까지 시간이 지연될 수도 있습니다.
+>  소프트웨어 센터 브랜딩은 14일에 한 번씩 Intune 서비스와 동기화됩니다. 따라서 Intune의 변경 내용이 Configuration Manager에 표시되기 전에 지연이 발생할 수 있습니다.
 
 ###  <a name="step-5-verify-that-the-application-catalog-is-operational"></a>5단계: 응용 프로그램 카탈로그가 작동하는지 확인  
  응용 프로그램 카탈로그가 작동하는지 확인하려면 다음 절차를 수행하세요. 응용 프로그램 카탈로그는 브라우저나 소프트웨어 센터에서 직접 사용할 수 있습니다.  

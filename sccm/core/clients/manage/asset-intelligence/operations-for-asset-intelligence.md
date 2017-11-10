@@ -1,5 +1,6 @@
 ---
-title: "Asset Intelligence 사용 | Microsoft 문서"
+title: "Asset Intelligence 사용"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 일반적인 Asset Intelligence 작업을 수행합니다."
 ms.custom: na
 ms.date: 2/22/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: 17168e26f13340847928f6e3623115cd4b55997b
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 7838f087c18a2cfad6ff487ff987e638906faf6a
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-use-asset-intelligence-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Asset Intelligence를 사용하는 방법
 

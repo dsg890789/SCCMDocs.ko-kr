@@ -1,5 +1,6 @@
 ---
-title: "System Center Configuration Manager 및 Microsoft Intune에서 Windows 하이브리드 장치 관리 설정 | Microsoft 문서"
+title: "Microsoft Intune에서 Windows 하이브리드 장치 관리 설정"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager 및 Microsoft Intune에서 Windows 장치 관리 설정"
 ms.custom: na
 ms.date: 03/17/2017
@@ -11,14 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: dc1f70f5-64ab-42ab-aa91-d3858803e12f
 caps.latest.revision: "9"
-author: nathbarn
-ms.author: nathbarn
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 47348baeac26bfa2ad5016622fe4dbcb9f572483
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: dd62748f853915d71fcbad1964f5a67785aaf3f6
+ms.sourcegitcommit: 1132886e07d0c0a87dcc7eeef4577dd8d8840023
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="set-up-windows-hybrid-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune에서 Windows 하이브리드 장치 관리 설정
 

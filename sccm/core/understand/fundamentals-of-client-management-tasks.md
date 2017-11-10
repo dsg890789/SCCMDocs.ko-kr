@@ -1,5 +1,6 @@
 ---
-title: "클라이언트 관리의 기본 사항 | Microsoft 문서"
+title: "클라이언트 관리의 기본 사항"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager 클라이언트를 관리하기 위해 실행하는 작업을 알아봅니다."
 ms.custom: na
 ms.date: 12/30/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "4"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 0fee4f4ba462e59859ac93c4218b67cb26bdd6f6
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: a88be6397e1e2b1f86a517d2c068e1c0cb8a40bc
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="fundamentals-of-client-management-tasks-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 클라이언트 관리 작업의 기본 사항
 

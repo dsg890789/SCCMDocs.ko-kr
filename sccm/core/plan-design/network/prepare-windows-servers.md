@@ -1,5 +1,6 @@
 ---
-title: "Windows 서버 준비 | Microsoft 문서"
+title: "Windows 서버 준비"
+titleSuffix: Configuration Manager
 description: "컴퓨터가 System Center Configuration Manager의 사이트 서버 또는 사이트 시스템 서버를 사용하기 위한 필수 조건을 충족하는지 확인합니다."
 ms.custom: na
 ms.date: 2/14/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 9b97dedb5d2be0bd2e47260033e6e4361467dc4e
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 77fee006aaf7c55c05fc66106fef1ecfc4d27d08
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="prepare-windows-servers-to-support-system-center-configuration-manager"></a>System Center Configuration Manager 지원을 위해 Windows 서버 준비
 

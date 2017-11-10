@@ -1,5 +1,6 @@
 ---
-title: "배포 PKI 인증서 | Microsoft 문서"
+title: "배포 PKI 인증서"
+titleSuffix: Configuration Manager
 description: "단계별 예제에 따라 System Center Configuration Manager에서 사용하는 PKI 인증서를 만들고 배포하는 방법을 알아봅니다."
 ms.custom: na
 ms.date: 02/14/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "11"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: b15f85b4483bbae2444d4e73d2e2aa0b3979d9ab
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 092e3e752a27ab652f2b38c0ba43e6e2e26c99c8
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="step-by-step-example-deployment-of-the-pki-certificates-for-system-center-configuration-manager-windows-server-2008-certification-authority"></a>System Center Configuration Manager용 PKI 인증서의 단계별 배포 예제: Windows Server 2008 인증 기관
 

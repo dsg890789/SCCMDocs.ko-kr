@@ -1,5 +1,6 @@
 ---
-title: "Intune에서 Lookout MTP 사용 | Microsoft 문서"
+title: "Intune에서 Lookout MTP 사용"
+titleSuffix: Configuration Manager
 description: "Intune 관리 콘솔에서 Lookout 모바일 위협 방지를 사용하도록 설정합니다."
 ms.custom: na
 ms.date: 03/05/2017
@@ -11,14 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7e4ada34-63bf-4b9f-8246-31816aa44196
 caps.latest.revision: 
-author: mtillman
-ms.author: mtillman
+author: dougeby
+ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: f9ddbcc981fa1274a41ae16a6a939c0cdf739c3e
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 2d4cdb20f66864ac9bf79b89189e97fab26b34f3
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="enable-lookout-mtp-connection-in-the-intune-admin-console"></a>Intune 관리 콘솔에서 Lookout MTP 연결 사용
 

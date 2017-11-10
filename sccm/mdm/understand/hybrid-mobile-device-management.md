@@ -1,5 +1,6 @@
 ---
-title: "하이브리드 MDM(모바일 장치 관리) - Configuration Manager 및 Microsoft Intune | Microsoft 문서"
+title: "Microsoft Intune에서 하이브리드 MDM(모바일 장치 관리) 설정"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 MDM(모바일 장치 관리)에 대해 알아보세요."
 ms.custom: na
 ms.date: 03/05/2017
@@ -12,16 +13,16 @@ ms.topic: get-started-article
 ms.assetid: bb95154b-f63e-4491-896e-41d732c802f8
 caps.latest.revision: "34"
 caps.handback.revision: "0"
-author: mtillman
-ms.author: mtillman
+author: dougeby
+ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: e54478a03807c939ffa64ff39a21ef6f9ea4ae2d
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: da817ac299115c1151851d302c1935ad3f956bdf
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
-# <a name="hybrid-mobile-device-management-mdm-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 MDM(모바일 장치 관리)
+# <a name="hybrid-mobile-device-management-mdm-with-system-center-configuration-manager-and-microsoft-intune"></a>Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 

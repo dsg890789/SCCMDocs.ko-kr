@@ -1,5 +1,6 @@
 ---
-title: "컬렉션 관리 | Microsoft 문서"
+title: "컬렉션 관리"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 일반적인 컬렉션 관리 작업을 수행합니다."
 ms.custom: na
 ms.date: 4/25/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: 4d44f98eb0755619cdd2101203a13725186b835b
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 0655a1dc566657cb27cdc7537603871dc36cc568
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-manage-collections-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 컬렉션을 관리하는 방법
 

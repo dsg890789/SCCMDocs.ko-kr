@@ -1,5 +1,6 @@
 ---
-title: "관리 지점 데이터베이스 복제본 | Microsoft 문서"
+title: "관리 지점 데이터베이스 복제본"
+titleSuffix: Configuration Manager
 description: "데이터베이스 복제본을 사용하면 관리 지점에 의한 사이트 데이터베이스 서버의 CPU 부하를 줄일 수 있습니다."
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "9"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 130c053c9f2a1817dd85b1f3c01285aab19d59cb
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: c33bed2244e259edc0c5a7bb547be8bf69213920
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="database-replicas-for-management-points-for-system-center-configuration-manager"></a>System Center Configuration Manager의 관리 지점용 데이터베이스 복제본
 

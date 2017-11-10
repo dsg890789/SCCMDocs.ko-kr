@@ -1,5 +1,6 @@
 ---
-title: "System Center Configuration Manager 사용 도움말 찾기 | Microsoft 문서"
+title: "도움말 찾기"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에 대한 자세한 내용은 관련 리소스를 찾아보세요."
 ms.custom: na
 ms.date: 2/8/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 72fe220cb9a40d6a20164ace1db8542a91221f55
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 723812928dab63d6a0d86ac6e5fa5de6b079b35a
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="find-help-for-using-system-center-configuration-manager"></a>System Center Configuration Manager 사용 도움말 찾기
 

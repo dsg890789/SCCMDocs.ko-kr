@@ -1,5 +1,6 @@
 ---
-title: "Windows 컴퓨터 원격 관리 | Microsoft 문서"
+title: "Windows 컴퓨터 원격 관리"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager를 사용하여 원격 Windows 클라이언트 컴퓨터를 관리합니다."
 ms.custom: na
 ms.date: 07/27/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 9ce5adccb9944daa4fb2b0ab132fc7cf52bd7b1b
-ms.sourcegitcommit: f6a428a8db7145affa388f59e0ad880bdfcf17b5
+ms.openlocfilehash: 7cce5f2deab7ec6f5c16628dc53e4d1cb5507f37
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-remotely-administer-a-windows-client-computer-by-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows 클라이언트 컴퓨터를 원격으로 관리하는 방법
 

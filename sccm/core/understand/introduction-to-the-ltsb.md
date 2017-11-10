@@ -1,5 +1,6 @@
 ---
-title: "장기 서비스 분기 소개 | Microsoft 문서"
+title: "장기 서비스 분기 소개"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 장기 서비스 분기에 대해 알아봅니다."
 ms.custom: na
 ms.date: 05/01/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 91c1ca860069c6ebe0d20230c4620bf3f68735a2
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: ad1eac9933a59dd4cf69db468e0fdbe10b5ba619
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="introduction-to-the-long-term-servicing-branch-of-system-center-configuration-manager"></a>System Center Configuration Manager의 장기 서비스 분기 소개
 

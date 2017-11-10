@@ -1,5 +1,6 @@
 ---
-title: "클라이언트 모니터링 - Configuration Manager에서 Windows Analytics 사용 | Microsoft Docs"
+title: "Windows Analytics로 클라이언트 모니터링"
+titleSuffix: Configuration Manager
 description: "Windows Analytics는 Operations Management Suite에서 실행되는 솔루션 모음으로, 사용자 환경의 장치에서 보고되는 Windows 원격 분석 데이터를 활용하여 사용자 환경의 현재 상태에 대한 귀중한 정보를 얻을 수 있도록 합니다."
 ms.custom: na
 ms.date: 07/31/2017
@@ -14,19 +15,19 @@ caps.latest.revision: "23"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: adabe8f475eb12dd44005ec07344e8565be20582
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 4d8c0eef8c85645ceb6f12aaf776ce1b1f82cbdd
+ms.sourcegitcommit: d025a2cbd1ed82f42f67255c97b913f2163b3baf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="use-windows-analytics-with-configuration-manager"></a>Configuration Manager에서 Windows Analytics 사용
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-[Windows Analytics](https://www.microsoft.com/en-us/WindowsForBusiness/windows-analytics)은 [Operations Management Suite](/azure/operations-management-suite/operations-management-suite-overview)에서 실행되는 솔루션 모음입니다. 이 솔루션을 사용하여 사용자 환경의 현재 상태에 대한 정보를 얻을 수 있습니다. 사용자 환경의 장치에서 Windows 원격 분석 데이터를 보고합니다. 이 데이터는 [Operations Management Suite 웹 포털](https://mms.microsoft.com)의 솔루션을 통해 액세스 및 분석될 수 있습니다. [업그레이드 준비](/sccm/core/clients/manage/upgrade/upgrade-analytics)의 경우 업그레이드 준비를 Configuration Manager에 연결하여 Configuration Manager 콘솔의 모니터링 노드에서 직접 데이터를 사용하도록 할 수 있습니다.
+[Windows Analytics](https://www.microsoft.com/WindowsForBusiness/windows-analytics)은 [Operations Management Suite](/azure/operations-management-suite/operations-management-suite-overview)에서 실행되는 솔루션 모음입니다. 이 솔루션을 사용하여 사용자 환경의 현재 상태에 대한 정보를 얻을 수 있습니다. 사용자 환경의 장치는 Windows 원격 분석 데이터를 보고하며, 이 데이터는 [Operations Management Suite 웹 포털](https://mms.microsoft.com)의 솔루션을 통해 액세스 및 분석될 수 있습니다. [업그레이드 준비](/sccm/core/clients/manage/upgrade/upgrade-analytics)의 경우 업그레이드 준비를 Configuration Manager에 연결하여 Configuration Manager 콘솔의 모니터링 노드에서 직접 데이터를 사용하도록 할 수 있습니다.
 
-Windows Analytics에서 사용되는 Windows 원격 분석 데이터는 Configuration Manager 사이트 서버로 직접 전송되지 않습니다. 클라이언트 컴퓨터는 원격 분석 서비스에 Windows 원격 분석 데이터를 보냅니다. 그런 후에 관련 데이터는 조직의 OMS 작업 영역 중 하나에 호스트되는 Windows Analytics 솔루션으로 전송됩니다. Configuration Manager에서는 상황별 링크로 웹 포털의 관련 데이터로 사용자를 연결하거나 Configuration Manager에 연결한 솔루션에 속하는 데이터를 직접 표시할 수 있습니다. 또한 Operation Management Suite 웹 포털에서 직접 데이터를 쿼리할 수도 있습니다.
+Windows Analytics에서 사용되는 Windows 원격 분석 데이터는 Configuration Manager 사이트 서버로 직접 전송되지 않습니다. 클라이언트 컴퓨터가 Windows 원격 분석 데이터를 원격 분석 서비스로 보내면 관련 데이터는 조직의 OMS 작업 영역 중 하나에 호스트된 Windows Analytics 솔루션으로 전송됩니다. Configuration Manager에서는 상황별 링크로 웹 포털의 관련 데이터로 사용자를 연결하거나 Configuration Manager에 연결한 솔루션에 속하는 데이터를 직접 표시할 수 있습니다. 또한 Operation Management Suite 웹 포털에서 직접 데이터를 쿼리할 수도 있습니다.
 
 >[!Important]
 >Configuration Manager 사이트 서버에서 Microsoft로 보고된 [Configuration Manager 진단 및 사용 현황 데이터](../../plan-design/diagnostics/diagnostics-and-usage-data.md)는 Windows Analytics 및 Windows 원격 분석과 완전히 분리됩니다.
@@ -39,7 +40,7 @@ Windows Analytics에서 사용되는 Windows 원격 분석 데이터는 Configur
 Windows Analytics를 구성하려면 Configuration Manager 콘솔에서 **관리** > **클라이언트 설정**을 선택하고 **사용자 지정 장치 클라이언트 설정 만들기**를 두 번 클릭한 다음 **Windows Analytics**를 클릭합니다.  
 
 **Windows Analytics** 설정 탭으로 이동한 후 다음을 구성합니다.
-  -  **상업용 ID**  
+  -  **상용 ID 키**  
 상업용 ID 키는 관리하는 장치의 정보를 조직의 Windows Analytics 데이터를 호스트하는 OMS 작업 영역으로 매핑합니다. 업그레이드 준비에 사용하기 위한 상업용 ID 키를 이미 구성한 경우 해당 ID를 사용합니다. 아직 상업용 ID 키가 없는 경우 [상업용 ID 키 생성]( https://technet.microsoft.com/itpro/windows/deploy/upgrade-readiness-get-started#generate-your-commercial-id-key)을 참조하세요.
 
   -  **Windows 10 장치에 대한 원격 분석 수준**   

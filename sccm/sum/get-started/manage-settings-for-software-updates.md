@@ -1,5 +1,6 @@
 ---
-title: "소프트웨어 업데이트 설정 관리 | Microsoft 문서"
+title: "소프트웨어 업데이트 설정 관리"
+titleSuffix: Configuration Manager
 description: "소프트웨어 업데이트 지점을 설치한 후 사이트에서 소프트웨어 업데이트에 적합한 클라이언트 설정을 알아봅니다."
 keywords: 
 author: dougeby
@@ -11,11 +12,11 @@ ms.prod: configuration-manager
 ms.service: 
 ms.technology: configmgr-sum
 ms.assetid: 0d484c1a-e903-4bff-9e9b-e452c62e38a8
-ms.openlocfilehash: fe4a8f56e0b554e206bcc4503a0268dc761ded81
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 54fb48ca210f66eabe8d438f0aa23d9ad82e0bd9
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 #  <a name="BKMK_ManageSUSettings"></a> 소프트웨어 업데이트 설정 관리  
 

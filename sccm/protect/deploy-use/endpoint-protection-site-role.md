@@ -1,5 +1,6 @@
 ---
-title: "Endpoint Protection 지점 사이트 시스템 역할 만들기 | Microsoft 문서"
+title: "Endpoint Protection 지점 사이트 시스템 역할 만들기"
+titleSuffix: Configuration Manager
 description: "Configuration Manager 클라이언트 컴퓨터에서 보안 및 맬웨어를 관리하도록 Endpoint Protection을 구성하는 방법을 알아봅니다."
 defintion: 
 definition: 
@@ -16,11 +17,11 @@ caps.latest.revision: "21"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.openlocfilehash: 6e717bcbe5ef8c3f2efa717d0cebb9e675e7c127
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: a52f01ad365ca637b2bfda51657d0294e1bf268f
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-an-endpoint-protection-point-site-system-role"></a>Endpoint Protection 지점 사이트 시스템 역할 만들기
 

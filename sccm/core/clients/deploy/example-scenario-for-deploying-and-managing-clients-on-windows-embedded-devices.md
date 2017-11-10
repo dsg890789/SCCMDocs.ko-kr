@@ -1,5 +1,6 @@
 ---
-title: "예제 시나리오 - Windows Embedded 클라이언트 배포 | Microsoft 문서"
+title: "예제 시나리오 - Windows Embedded 클라이언트 배포"
+titleSuffix: Configuration Manager
 description: "Windows Embedded 장치의 System Center Configuration Manager 클라이언트 배포 및 관리에 대한 예제 시나리오를 참조하세요."
 ms.custom: na
 ms.date: 04/23/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "8"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 2b5731e80393468b5d434b97fca8c18b7eae7be9
-ms.sourcegitcommit: f6a428a8db7145affa388f59e0ad880bdfcf17b5
+ms.openlocfilehash: fc55aacfc1eae7a427ca4a0ae1bb3197b74fd2be
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="example-scenario-for-deploying-and-managing-system-center-configuration-manager-clients-on-windows-embedded-devices"></a>Windows Embedded 장치의 System Center Configuration Manager 클라이언트 배포 및 관리에 대한 예제 시나리오
 
