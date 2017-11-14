@@ -15,11 +15,11 @@ caps.latest.revision: "26"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: e4ebbcec6df0bd5fdf5f94788d00f590d5e38d4d
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: b9b15a781adef81e970adf50b8b6f26dd75d95f8
+ms.sourcegitcommit: b517c791554500209435bca21fbf3ef8a26828c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="manage-windows-as-a-service-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows as a Service 관리
 
