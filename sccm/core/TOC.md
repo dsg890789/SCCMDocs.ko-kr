@@ -103,6 +103,7 @@
 ###  [랩 설정](get-started/set-up-your-lab.md)
 
 ##   [기술 미리 보기](get-started/technical-preview.md)
+###  [1711의 기능](get-started/capabilities-in-technical-preview-1711.md)
 ###  [1710의 기능](get-started/capabilities-in-technical-preview-1710.md)
 ###  [1709의 기능](get-started/capabilities-in-technical-preview-1709.md)
 ###  [1708의 기능](get-started/capabilities-in-technical-preview-1708.md)
