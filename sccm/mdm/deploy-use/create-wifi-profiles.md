@@ -16,11 +16,11 @@ caps.handback.revision: "0"
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.openlocfilehash: 3f4f25d39fd7f4106ec6f7a1d6ebe4716be067ad
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 5780eb6da6e6a72b7fb3504283ef5362842c9ef7
+ms.sourcegitcommit: 922d6d9c91ba2158b938df381277be1b5f1d434a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="how-to-create-wi-fi-profiles-for-mobile-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 모바일 장치에 대한 Wi-Fi 프로필을 만드는 방법
 
@@ -34,9 +34,9 @@ Wi-Fi 프로필로 다음 모바일 장치 유형을 구성할 수 있습니다.
 
 -   Windows 10 Desktop 또는 Mobile을 실행하는 장치  
 
--   iOS 8을 실행하는 iPhone 장치  
+-   iOS 9를 실행하는 iPhone 장치  
 
--   iOS 8을 실행하는 iPad 장치  
+-   iOS 9를 실행하는 iPad 장치  
 
 -   버전 4 이상을 실행하는 Android 장치
 

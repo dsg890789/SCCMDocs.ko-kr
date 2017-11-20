@@ -15,11 +15,11 @@ caps.latest.revision: "9"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: bbb76fda4ef831f358923946b3c16b821194bf6b
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 166f7c73f2050657a85bd5160f74c40cfd87fd7f
+ms.sourcegitcommit: 922d6d9c91ba2158b938df381277be1b5f1d434a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/13/2017
 ---
 #  <a name="sync-data-from-configuration-manager-to-the-microsoft-operations-management-suite"></a>Configuration Manager의 데이터를 Microsoft Operations Management Suite에 동기화합니다.
 
@@ -90,7 +90,7 @@ Microsoft OMS(Operations Management Suite) 커넥터를 사용하여 System Cent
 
 ### <a name="install-the-oms-connector"></a>OMS 커넥터 설치  
 1. Configuration Manager 콘솔에서 [시험판 기능을 사용하도록 계층 구조](/sccm/core/servers/manage/pre-release-features)를 구성하고 OMS 커넥터를 사용하도록 설정합니다.  
-
+0
 2. 그 다음에 **관리** > **Cloud Services** > **OMS 커넥터**로 이동합니다. 리본에서 "Operations Management Suite에 대한 연결 만들기"를 클릭합니다. 그러면 **Operation Management Suite 연결 마법사**가 열립니다. **다음**을 선택합니다.  
 
 
@@ -134,13 +134,13 @@ Configuration Manager를 OMS에 연결한 후 컬렉션을 추가하거나 제�
       &lt;setting name="FairFaxArmResourceId" serializeAs="String"> &lt;value>https://management.usgovcloudapi.net/&lt;/value>  
       &lt;/setting>
 
-  설정 이름 *FairFaxAuthorityResource*의 값을 "https://login.microsoftonline.com/"으로 변경합니다.
+  설정 이름 *FairFaxAuthorityResource*의 값을 "https://login.microsoftonline.us/"로 변경합니다.
 
   - **원래 값:** &lt;setting name="FairFaxAuthorityResource" serializeAs="String">   
     &lt;value>&lt;/value>
 
     - **편집된 값:** &lt;setting name="FairFaxAuthorityResource" serializeAs="String">   
-    &lt;value>https://login.microsoftonline.com/&lt;/value>
+    &lt;value>https://login.microsoftonline.us/&lt;/value>
 
 2.  두 가지 사항을 변경하고 파일을 저장한 후 동일한 컴퓨터에서 Configuration Manager 콘솔을 다시 시작하고 해당 콘솔을 사용하여 OMS 커넥터를 설치합니다. 커넥터를 설치하려면 [Configuration Manager의 데이터를 Microsoft Operations Management Suite에 동기화](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite)에 제공된 정보를 사용하고 Microsoft Azure Government 클라우드에 있는 **Operations Management Suite 작업 영역**을 선택합니다.
 

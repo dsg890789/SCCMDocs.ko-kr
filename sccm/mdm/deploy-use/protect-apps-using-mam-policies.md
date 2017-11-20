@@ -16,11 +16,11 @@ caps.handback.revision: "0"
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 12633eced1850b718bf7cad019cd943305a7d9fb
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 4eedd96fd399cf9577da8069bd0c8d5702f50d7b
+ms.sourcegitcommit: 922d6d9c91ba2158b938df381277be1b5f1d434a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="protect-apps-using-mobile-application-management-policies-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 모바일 응용 프로그램 관리 정책을 사용하여 앱 보호
 
@@ -30,7 +30,7 @@ System Center Configuration Manager 응용 프로그램 관리 정책을 사용�
 
 -   Android 4 이상을 실행하는 장치  
 
--   iOS 7 이상을 실행하는 장치  
+-   iOS 9 이상을 실행하는 장치  
 
 모바일 앱 관리 정책을 사용하여 Intune으로 관리되지 않는 장치의 앱을 보호할 수도 있습니다. 이 새 기능을 사용하여 Office 365 서비스에 연결하는 앱에 모바일 앱 관리 정책을 적용할 수 있습니다. 온-프레미스 Exchange 또는 SharePoint에 연결하는 앱에 대해서는 지원되지 않습니다.  
 

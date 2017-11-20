@@ -15,11 +15,11 @@ caps.latest.revision: "24"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: 8ab177067d0308b863274a7ae05574374b0af4ba
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: a83c2030de8a146dad7bf2258e8a983c8ab6c45e
+ms.sourcegitcommit: 922d6d9c91ba2158b938df381277be1b5f1d434a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="manage-email-access-in-system-center-configuration-manager"></a>System Center Configuration Manager의 메일 액세스 관리
 
@@ -39,7 +39,7 @@ System Center Configuration Manager 조건부 액세스를 사용하면 지정�
 
 -   Android 4.0 이상, Samsung KNOX Standard 4.0 이상  
 
--   iOS 7.1 이상  
+-   iOS 9.0 이상  
 
 -   Windows Phone 8.1 이상  
 
@@ -93,7 +93,7 @@ Office 데스크톱 응용 프로그램은 다음을 실행하는 Exchange Onlin
 
 -   Android 4.0 이상, Samsung KNOX Standard 4.0 이상  
 
--   iOS 7.1 이상  
+-   iOS 9.0 이상  
 
 -   Windows Phone 8.1 이상  
 
