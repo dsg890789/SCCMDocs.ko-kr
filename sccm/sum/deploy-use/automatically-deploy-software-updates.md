@@ -1,5 +1,6 @@
 ---
-title: "소프트웨어 업데이트 자동 배포 | Microsoft 문서"
+title: "소프트웨어 업데이트 자동 배포"
+titleSuffix: Configuration Manager
 description: "새 업데이트를 활성 배포와 관련된 업데이트 그룹에 추가하거나 ADR을 사용하여 소프트웨어 업데이트를 자동으로 배포합니다."
 keywords: 
 author: dougeby
@@ -11,11 +12,11 @@ ms.prod: configuration-manager
 ms.service: 
 ms.technology: configmgr-sum
 ms.assetid: b27682de-adf8-4edd-9572-54886af8f7fb
-ms.openlocfilehash: 804a9d7a32cfbdb498c6748c5d99a1874261c231
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 1910284b4d48442710ba5aea413cb7b65aa4e117
+ms.sourcegitcommit: 986fc2d54f7c5fa965fd4df42f4db4ecce6b79cb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 11/17/2017
 ---
 #  <a name="BKMK_AutoDeploy"></a> 소프트웨어 업데이트 자동 배포  
 

@@ -1,5 +1,6 @@
 ---
-title: "소프트웨어 업데이트 계획 | Microsoft 문서"
+title: "소프트웨어 업데이트 계획"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager 프로덕션 환경에서 소프트웨어 업데이트를 사용하기 전에 소프트웨어 업데이트 지점 인프라에 대한 계획이 반드시 필요합니다."
 keywords: 
 author: dougeby
@@ -11,11 +12,11 @@ ms.prod: configuration-manager
 ms.service: 
 ms.technology: configmgr-sum
 ms.assetid: d071b0ec-e070-40a9-b7d4-564b92a5465f
-ms.openlocfilehash: 8b739a01a6bb5cacf0f7109e2e6fa3b31dd666d3
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: e111d5abf263a90ac020aca863d495cb717154db
+ms.sourcegitcommit: 986fc2d54f7c5fa965fd4df42f4db4ecce6b79cb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="plan-for-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 업데이트 계획
 

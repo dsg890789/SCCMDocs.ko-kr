@@ -1,5 +1,6 @@
 ---
-title: "소프트웨어 업데이트 지점 설치 및 구성 | Microsoft 문서"
+title: "소프트웨어 업데이트 지점 설치 및 구성"
+titleSuffix: Configuration Manager
 description: "소프트웨어 업데이트 준수 평가를 수행하고 클라이언트에 소프트웨어 업데이트를 배포하려면 중앙 관리 사이트에 기본 사이트에 대한 소프트웨어 업데이트 지점이 있어야 합니다."
 keywords: 
 author: dougeby
@@ -11,11 +12,11 @@ ms.prod: configuration-manager
 ms.service: 
 ms.technology: configmgr-sum
 ms.assetid: b099a645-6434-498f-a408-1d438e394396
-ms.openlocfilehash: 7d369384d133c90a15e01df50ac53992d61f3873
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: c17dd40175bac5ecc4361e905f009f1ed5c2f5a4
+ms.sourcegitcommit: 986fc2d54f7c5fa965fd4df42f4db4ecce6b79cb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="install-and-configure-a-software-update-point"></a>소프트웨어 업데이트 지점 설치 및 구성  
 

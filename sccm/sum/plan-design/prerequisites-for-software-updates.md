@@ -1,5 +1,6 @@
 ---
-title: "소프트웨어 업데이트 필수 조건 | Microsoft 문서"
+title: "소프트웨어 업데이트에 대한 필수 조건"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 소프트웨어 업데이트에 대한 필수 조건에 대해 알아봅니다."
 keywords: 
 author: dougeby
@@ -11,11 +12,11 @@ ms.prod: configuration-manager
 ms.service: 
 ms.technology: configmgr-sum
 ms.assetid: fdf05118-162a-411e-b72e-386b9dc9a5e1
-ms.openlocfilehash: 179f076f228daa5adf612275a822cd379b0ce1e3
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 905ecc023dd181a8d4801860898b05aff5e4e07f
+ms.sourcegitcommit: 986fc2d54f7c5fa965fd4df42f4db4ecce6b79cb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="prerequisites-for-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 업데이트에 대한 필수 조건
 
@@ -74,7 +75,7 @@ ms.lasthandoff: 08/07/2017
 
  자세한 내용은 다음을 참조하십시오.  
 
--   [소프트웨어 업데이트를 위한 클라이언트 설정](../get-started/manage-settings-for-software-updates.md#a-namebkmkclientsettingsa-client-settings-for-software-updates)  
+-   [소프트웨어 업데이트를 위한 클라이언트 설정](../get-started/manage-settings-for-software-updates.md#BKMK_ClientSettings)   
 
 -   [소프트웨어 업데이트 클라이언트 설정](../../core/clients/deploy/about-client-settings.md#software-updates) 항목  
 
