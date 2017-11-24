@@ -235,7 +235,7 @@ ms.lasthandoff: 10/12/2017
 
 7.  **홈** 탭의 **만들기** 그룹에서 **패키지 만들기**를 클릭합니다.  
 
-8.  **패키지** 페이지에서 패키지의 이름과 설명을 지정합니다. 예를 들어 패키지 이름으로 **Windows To Go** 를 입력하고 패키지 설명으로 **Package to configure a Windows To Go drive using System Center Configuration Manager** 를 지정합니다.  
+8.  **패키지** 페이지에서 패키지의 이름과 설명을 지정합니다. 예를 들어 패키지 이름으로 **Windows To Go** 를 입력하고 패키지 설명으로 **System Center Configuration Manager 를 사용 하 여 Windows To Go 드라이브 구성 하려면 패키지** 를 지정합니다.  
 
 9. **이 패키지는 원본 파일을 포함함**을 선택하고 1단계에서 만든 패키지 원본 폴더의 경로를 지정한 후에 **다음**을 클릭합니다.  
 
