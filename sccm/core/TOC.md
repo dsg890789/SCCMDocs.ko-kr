@@ -27,10 +27,11 @@
 ###  [기능 및 특성](plan-design/changes/features-and-capabilities.md)
 ###  [Configuration Manager 2012에서 변경된 내용](plan-design/changes/what-has-changed-from-configuration-manager-2012.md)
 ###  [증분 버전의 새로운 기능](plan-design/changes/whats-new-incremental-versions.md)
+###  [버전 1710의 새로운 기능](plan-design/changes/whats-new-in-version-1710.md)
 ###  [버전 1706의 새로운 기능](plan-design/changes/whats-new-in-version-1706.md)
 ###  [버전 1702의 새로운 기능](plan-design/changes/whats-new-in-version-1702.md)
-###  [버전 1610의 새로운 기능](plan-design/changes/whats-new-in-version-1610.md)
 <!--
+###  [What's new in version 1610](plan-design/changes/whats-new-in-version-1610.md)
 ###  [What's new in version 1606](plan-design/changes/whats-new-in-version-1606.md)
 ###  [What's new in version 1602](plan-design/changes/whats-new-in-version-1602.md)
 -->
@@ -74,14 +75,15 @@
 ###  [사이트 시스템을 지원할 Windows 서버 준비](plan-design/network/prepare-windows-servers.md)
 ###  [사이트 시스템 서버용 웹 사이트](plan-design/network/websites-for-site-system-servers.md)
 ###  [PKI 인증서 요구 사항](plan-design/network/pki-certificate-requirements.md)
+###  [CNG 인증서 개요](plan-design/network/cng-certificates-overview.md)
 
 ##   [진단 및 사용 현황 데이터](plan-design/diagnostics/diagnostics-and-usage-data.md)
 ###  [진단 및 사용 현황 데이터 사용 방법](plan-design/diagnostics/how-diagnostics-and-usage-data-is-used.md)
+###  [1710에 대한 진단 데이터](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1710.md)
 ###  [1706에 대한 진단 데이터](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1706.md)
 ###  [1702에 대한 진단 데이터](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1702.md)
-###  [1610에 대한 진단 데이터](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1610.md)
-
 <!--
+###  [Diagnostic data for 1610](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1610.md)
 ###  [Diagnostic data for 1606](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1606.md)
 ###  [Diagnostic data for 1602](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1602.md)
 ###  [Diagnostic data for 1511](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1511.md)
@@ -228,10 +230,11 @@
 ###  [서비스 연결 도구 사용](servers/manage/use-the-service-connection-tool.md)
 ###  [업데이트 등록 도구 사용](servers/manage/use-the-update-registration-tool-to-import-hotfixes.md)
 ###  [핫픽스 설치 관리자 사용](servers/manage/use-the-hotfix-installer-to-install-updates.md)
+###  [업데이트 1710을 설치하기 위한 검사 목록](servers/manage/checklist-for-installing-update-1710.md)
 ###  [업데이트 1706을 설치하기 위한 검사 목록](servers/manage/checklist-for-installing-update-1706.md)
 ###  [업데이트 1702를 설치하기 위한 검사 목록](servers/manage/checklist-for-installing-update-1702.md)
-###  [업데이트 1610을 설치하기 위한 검사 목록](servers/manage/checklist-for-installing-update-1610.md)
 <!-- Deprecated from Content - still published but out of TOC:
+###  [Checklist for installing update 1610](servers/manage/checklist-for-installing-update-1610.md)
 ###  [Checklist for installing update 1606](servers/manage/checklist-for-installing-update-1606.md)
 ###  [Checklist for installing update 1602](servers/manage/checklist-for-installing-update-1602.md)
 -->
@@ -305,6 +308,10 @@
 ###  [Linux 및 UNIX 클라이언트를 관리하는 방법](clients/manage/manage-clients-for-linux-and-unix-servers.md)
 ###  [OMS에 데이터 동기화](clients/manage/sync-data-microsoft-operations-management-suite.md)
 ###  [Mac 클라이언트 유지 관리](clients/manage/maintain-mac-clients.md)
+
+##   [Windows 10 장치에 대한 공동 관리](clients/manage/co-management-overview.md)
+###  [공동 관리를 위한 Windows 10 장치 준비](clients/manage/co-management-prepare.md)
+###  [Configuration Manager 워크로드를 Intune으로 전환](clients/manage/co-management-switch-workloads.md)
 
 ##   [인터넷에서 클라이언트 관리](clients/manage/manage-clients-internet.md)
 ###  [클라우드 관리 게이트웨이에 대한 계획](clients/manage/plan-cloud-management-gateway.md)

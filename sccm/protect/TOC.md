@@ -52,6 +52,8 @@
 
 ### [Windows 방화벽 정책](deploy-use/create-windows-firewall-policies.md)
 ### [Windows Defender Advanced Threat Protection](deploy-use/windows-defender-advanced-threat-protection.md)
+### [Exploit Guard 정책 만들기 및 배포](deploy-use/create-deploy-exploit-guard-policy.md)
+### [Application Guard 정책 만들기 및 배포](deploy-use/create-deploy-application-guard-policy.md)
 ### [맬웨어 방지 및 방화벽 작업](deploy-use/endpoint-antimalware-firewall.md)
 ### [Endpoint Protection 시나리오](deploy-use/scenarios-endpoint-protection.md)
 ### [Endpoint Protection 클라이언트 도움말](deploy-use/endpoint-protection-client-help.md)

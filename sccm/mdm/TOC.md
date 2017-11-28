@@ -72,6 +72,7 @@
 
 ## [조건부 액세스 관리](deploy-use/manage-access-to-services.md)
 ### [장치 준수 정책](deploy-use/device-compliance-policies.md)
+#### [비준수에 대한 작업](deploy-use/actions-for-noncompliance.md)
 ### [장치 준수 정책 만들기](deploy-use/create-compliance-policy.md)
 ### [메일 액세스 관리](deploy-use/manage-email-access.md)
 ### [SharePoint Online 액세스 관리](deploy-use/manage-sharepoint-online-access.md)
