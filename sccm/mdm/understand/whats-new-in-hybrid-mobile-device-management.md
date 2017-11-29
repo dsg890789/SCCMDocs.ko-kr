@@ -14,11 +14,11 @@ ms.assetid: 7b127cee-61f1-4681-9760-caebed36ddf5
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 29dd4bff6d35712c23d66751db16a00aa761b8b4
-ms.sourcegitcommit: 922d6d9c91ba2158b938df381277be1b5f1d434a
+ms.openlocfilehash: 4877d05004bd883a3ae0ad353a78643cf559275e
+ms.sourcegitcommit: 536f7295e9ea361f1f9ead6c25f3685deb041ad8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 장치 관리의 새로운 기능
 
@@ -46,9 +46,42 @@ ms.lasthandoff: 11/13/2017
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
+- **macOS용 회사 포털 앱 사용 가능** <!--1541700--> macOS용 Intune 회사 포털의 환경이 업데이트되어, 사용자가 등록한 모든 장치에서 필요한 모든 정보 및 준수 알림을 깔끔하게 표시하도록 최적화되었습니다. 또한 Intune 회사 포털이 장치에 배포되면 macOS용 Microsoft 자동 업데이트에서 해당 업데이트를 제공합니다. macOS 장치에서 Intune 회사 포털 웹 사이트에 로그인하여 새 macOS용 Intune 회사 포털을 다운로드할 수 있습니다.
+
+- **Microsoft Planner가 이제 승인된 앱의 MAM(모바일 앱 관리) 목록에 속함** <!-- 1248473 --> iOS 및 Android용 Microsoft Planner 앱이 이제 MAM(모바일 앱 관리)에 대한 승인된 앱에 속합니다. Azure Portal의 Intune 앱 보호 블레이드를 통해 모든 테넌트에 대해 앱을 구성할 수 있습니다. 자세한 내용은 [승인된 앱의 MAM 목록](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)을 참조하세요.
+
 - **iOS용 관리되는 앱 로그에 대한 액세스** <!-- 1469920 --> 관리되는 브라우저를 설치한 최종 사용자는 이제 Microsoft에서 게시한 모든 앱의 관리 상태를 볼 수 있고 관리되는 iOS 앱 문제를 해결하기 위해 로그를 보낼 수 있습니다.
   
   iOS 장치의 Managed Browser에서 문제 해결 모드를 사용하도록 설정하는 방법을 알아보려면 [iOS의 Managed Browser를 사용하여 관리되는 앱 로그에 액세스하는 방법](https://docs.microsoft.com/intune/app-configuration-managed-browser#how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios)을 참조하세요.
+
+- **버전 2.9.0의 iOS용 회사 포털에서 장치 설정 워크플로에 대한 개선 사항** iOS용 회사 포털 앱에서 장치 설정 워크플로가 개선되었습니다. 언어가 사용자에게 더 친숙하고 가능한 경우 화면을 합쳤습니다. 또한 설정 텍스트 전체에서 회사 이름을 사용하여 회사에 대한 언어의 관련성을 높였습니다. 이 업데이트된 워크플로는 [앱 UI의 새로운 기능](https://docs.microsoft.com/intune/whats-new-app-ui#week-of-november-13-2017) 페이지에서 확인할 수 있습니다.
+
+- **Android용 회사 포털 앱에 대한 피드백 프롬프트** <!--1165249--> Android용 회사 포털 앱에서는 이제 최종 사용자 피드백을 요청합니다. 이 피드백은 Microsoft로 바로 전송되며, 일반 사용자에게 공개 Google Play 스토어에서 앱을 검토할 기회를 제공합니다. 피드백은 필수는 아니며, 사용자가 앱을 계속 사용할 수 있도록 쉽게 해제할 수 있습니다. 
+
+- **최종 사용자에게 Windows 10 장치에 대해 확인할 수 있는 장치 정보를 알림** <!--1337920--> Windows 10용 회사 포털 앱의 [장치 세부 정보] 화면에 **소유권 유형**이 추가되었습니다. 이를 통해 사용자는 Intune 최종 사용자 문서의 이 페이지에서 바로 개인 정보에 대한 자세한 내용을 찾을 수 있습니다. **정보** 화면에서도 이 정보를 찾을 수 있습니다.
+
+- **Android 장치에 대해 새로운 ‘해결’ 작업 사용 가능** <!--1583480--> Android용 회사 포털 앱의 _장치 설정 업데이트_ 페이지에 ‘해결’ 작업이 도입되었습니다. 이 옵션을 선택하면 최종 사용자가 장치를 비준수 상태로 만든 설정으로 바로 이동됩니다. Android용 회사 포털 앱은 현재 [장치 암호](https://docs.microsoft.com/intune-user-help/set-your-pin-or-password-android), [장치 암호화](https://docs.microsoft.com/intune-user-help/encrypt-your-device-android), [USB 디버깅](https://docs.microsoft.com/intune-user-help/you-need-to-turn-off-usb-debugging-android) 및 [알 수 없는 소스](https://docs.microsoft.com/intune-user-help/you-need-to-turn-off-unknown-sources-android) 설정에 대해 이 작업을 지원합니다. 
+
+
+### <a name="new-in-configuration-manager-current-branch"></a>Configuration Manager(현재 분기)의 새로운 기능
+
+- **새 모바일 응용 프로그램 관리 정책 설정** <!-- 1324760 --> 모바일 응용 프로그램 관리 정책 설정에 다음 설정이 추가되었습니다.
+  - **연락처 동기화 사용 안 함**: 앱에서 장치의 네이티브 연락처 앱에 데이터를 저장하는 것을 방지합니다.
+  - **인쇄 사용 안 함**: 앱에서 회사 또는 학교 데이터를 인쇄하는 것을 방지합니다.
+
+  새로운 앱 보호 정책 설정을 사용하려면 [Configuration Manager에서 앱 보호 정책을 사용하여 앱 보호](/sccm/mdm/deploy-use/protect-apps-using-mam-policies)를 참조하세요.
+
+- **Windows 10 ARM64 장치 지원** <!-- 1355000 --> Windows 10을 실행하는 ARM64 장치를 사용할 수 있는 경우 이러한 장치에서 하이브리드 MDM(모바일 장치 관리) 시나리오가 지원됩니다. 자세한 내용은 [Windows 10 ARM64 장치 지원](/sccm/core/plan-design/changes/whats-new-in-version-1710#windows-10-arm64-device-support)을 참조하세요.
+
+- **Configuration Manager 콘솔의 VPN 프로필 환경 개선** <!-- 1318232 --> 이 릴리스에서는 선택한 플랫폼에 적절한 설정을 표시하기 위해 VPN 프로필 마법사 및 속성 페이지가 업데이트되었습니다. 이 기능은 이전에 Configuration Manager Technical Preview 1709에서 사용할 수 있었으며, 이제 Intune과 Configuration Manager(현재 분기) 버전 1710을 포함하는 하이브리드 배포에서 사용할 수 있습니다.
+  - [Configuration Manager 콘솔의 VPN 프로필 환경 개선](/sccm/core/plan-design/changes/whats-new-in-version-1710#improved-vpn-profile-experience-in-configuration-manager-console).
+
+
+Configuration Manager 콘솔의 VPN 프로필 환경 개선
+
+### <a name="new-in-configuration-manger-technical-preview-1711"></a>Configuration Manager Technical Preview 1711의 새로운 기능
+
+- **Windows 10에 대한 새로운 준수 정책 옵션** 이제 Windows 10 장치의 준수 정책에 대해 새로운 옵션을 구성할 수 있습니다. 새 설정에는 방화벽, 사용자 계정 컨트롤, Windows Defender 바이러스 백신 및 OS 빌드 버전 관리에 대한 정책이 포함됩니다. 자세한 내용은 [Windows 10에 대한 새로운 준수 정책 옵션](/sccm/core/get-started/capabilities-in-technical-preview-1711#new-compliance-policy-options-for-windows-10)을 참조하세요.
 
 
 ## <a name="october-2017"></a>2017년 10월
