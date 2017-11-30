@@ -3,7 +3,7 @@ title: "클라이언트 피어 캐시"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager를 사용하여 콘텐츠를 배포할 때는 클라이언트 콘텐츠 원본 위치에 대해 피어 캐시를 사용합니다."
 ms.custom: na
-ms.date: 7/31/2017
+ms.date: 11/20/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -15,11 +15,11 @@ caps.latest.revision: "3"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 20438f51a67fb29da21c879620870caf3328121d
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 2bf8f0e5a2636ffd92f8ba1898cc4f1b250f925f
+ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="peer-cache-for-configuration-manager-clients"></a>Configuration Manager 클라이언트용 피어 캐시
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 10/12/2017
 System Center Configuration Manager 버전 1610부터는 **피어 캐시**를 사용하여 원격 위치의 클라이언트에 대한 콘텐츠 배포를 관리할 수 있습니다. 피어 캐시는 클라이언트가 로컬 캐시의 콘텐츠를 다른 클라이언트와 직접 공유할 수 있도록 하는 기본 제공 Configuration Manager 솔루션입니다.   
 
 > [!TIP]  
-> 버전 1610에서 도입된 피어 캐시 및 클라이언트 데이터 원본 대시보드는 시험판 기능입니다. 이러한 기능을 사용하도록 설정하려면 [업데이트에서 시험판 기능 사용](/sccm/core/servers/manage/pre-release-features)을 참조하세요.
+> 이 기능은 버전 1610에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 소개되었습니다. 버전 1710 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.
 
 ## <a name="overview"></a>개요
 피어 캐시 클라이언트는 피어 캐시를 사용하도록 설정된 Configuration Manager 클라이언트입니다. 추가 클라이언트와 공유할 수 있는 콘텐츠가 있는 피어 캐시 클라이언트는 피어 캐시 원본입니다.

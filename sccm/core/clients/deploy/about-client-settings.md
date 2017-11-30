@@ -3,7 +3,7 @@ title: "클라이언트 설정"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 관리 콘솔을 사용하여 클라이언트 설정을 선택합니다."
 ms.custom: na
-ms.date: 08/01/2017
+ms.date: 11/17/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,11 +16,11 @@ caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: f34479d6cf0c1153615c612480f204b71a8d84cb
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 46429a02debaaaa90562b9586af57e43a9aab92c
+ms.sourcegitcommit: b74c1beaabbb628fdf5d6948fa9a6ad719fd5035
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="about-client-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 설정 정보
 
@@ -71,7 +71,7 @@ System Center Configuration Manager의 모든 클라이언트 설정은 **관리
 - **클라이언트 캐시 크기 구성**
 
   Windows 컴퓨터의 클라이언트 캐시에서 응용 프로그램 및 프로그램 설치에 사용되는 임시 파일이 저장됩니다. **예**를 선택하고 다음을 지정합니다.
-    - **최대 캐시 크기**(메가바이트) 
+    - **최대 캐시 크기**(메가바이트)
     - **최대 캐시 크기**(디스크의 비율)
 클라이언트 캐시 크기는 MB 또는 디스크에 대한 백분율 최대값(**둘 중 더 작은 크기**)으로 확장될 수 있습니다. 이 옵션이 **아니요**인 경우 기본 크기는 5,120MB입니다.
 
@@ -288,6 +288,8 @@ Configuration Manager 클라이언트에 대한 피어 캐시를 사용하도록
  유지 관리 기간에 대한 자세한 내용은 [System Center Configuration Manager에서 유지 관리 기간을 사용하는 방법](../../../core/clients/manage/collections/use-maintenance-windows.md)을 참조하세요.  
 
 ##  <a name="endpoint-protection"></a>Endpoint Protection  
+>  [!Tip]   
+> 다음 정보 외에도 [예제 시나리오: System Center Endpoint Protection을 사용하여 System Center Configuration Manager에서 맬웨어로부터 컴퓨터 보호](/sccm/protect/deploy-use/scenarios-endpoint-protection)의 Endpoint Protection 클라이언트 설정 사용에 대한 추가 세부 정보를 확인할 수 있습니다.
 
 -   **클라이언트 컴퓨터에서 Endpoint Protection 클라이언트 관리**  
 

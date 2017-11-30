@@ -3,7 +3,7 @@ title: "인증 기관을 사용하여 PFX 인증서 프로필 만들기"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 PFX 파일을 사용하여 암호화된 데이터 교환을 지원하기 위한 사용자별 인증서를 생성하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 04/04/2017
+ms.date: 11/01/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,11 +16,11 @@ caps.handback.revision: "0"
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.openlocfilehash: 26bbe68fb593404d59389de223212511e6b44ed5
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: ee51d395026b03d251e65f510b1df3ba5b03325d
+ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="how-to-create-pfx-certificate-profiles-using-a-certificate-authority"></a>인증 기관을 사용하여 PFX 인증서 프로필을 만드는 방법
 
@@ -58,11 +58,12 @@ System Center Configuration Manager에서 인증 기관에서 발급한 자격 �
 
 인증서 프로필이 여러 운영 체제 및 장치를 지원할 수 있으나 특정 운영 체제 또는 장치 조합에 다른 설정이 필요할 수도 있습니다.  이러한 경우 고유한 각 설정 고유 집합에 대해 별도 프로필을 만드는 것이 가장 좋습니다.  
 
-버전 1706에서는 다음 옵션을 사용할 수 있습니다.
+버전 1710부터 다음 옵션을 사용할 수 있습니다.
 
 - Windows 10
     - 모든 Windows 10(64비트)
     - 모든 Windows 10(32비트)
+    - 모든 Windows 10(ARM64)
     - 모든 Windows 10 Holographic Enterprise 이상
     - 모든 Windows 10 Holographic K 이상
     - 모든 Windows 10 Team 이상

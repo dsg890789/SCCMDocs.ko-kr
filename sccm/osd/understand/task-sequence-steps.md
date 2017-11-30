@@ -3,7 +3,7 @@ title: "작업 순서 단계"
 titleSuffix: Configuration Manager
 description: "Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계를 알아봅니다."
 ms.custom: na
-ms.date: 03/26/2017
+ms.date: 11/20/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,17 +16,20 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 8bc73b8aaafa9af4e12589b2d2a742bfc18afd0e
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 02d3ca5ed494c20266125686f26b66cebcc7c2a2
+ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="task-sequence-steps-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업 순서 단계
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계는 다음과 같습니다. 작업 순서를 편집하는 방법에 대한 자세한 내용은 [작업 순서 편집](../deploy-use/manage-task-sequences-to-automate-tasks.md#BKMK_ModifyTaskSequence)을 참조하세요.  
+
+> [!TIP]  
+> **Windows 10 버전 1709(Fall Creators Update라고도 함) 지원**.  이 Windows 릴리스부터 Windows 미디어에는 여러 버전이 포함됩니다. 운영 체제 업그레이드 패키지 또는 운영 체제 이미지를 사용하도록 작업 시퀀스를 구성할 때 [Configuration Manager가 사용할 수 있도록 지원되는 버전](/sccm/core/plan-design/configs/support-for-windows-10#windows-10-as-a-client)을 선택해야 합니다.
 
 
 ##  <a name="BKMK_ApplyDataImage"></a> 데이터 이미지 적용 작업 순서 단계  
@@ -536,6 +539,22 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
  **현재 OS 새로 고침 확인**  
  대상 컴퓨터에 설치된 운영 체제가 지정된 요구 사항을 충족하는지 확인하려면 이 설정을 선택합니다. 이 설정은 기본적으로 **클라이언트**값으로 선택됩니다.  
 
+##  <a name="child-task-sequence"></a>자식 작업 순서
+
+Configuration Manager 버전 1710부터 다른 작업 순서를 실행하는 새 작업 순서 단계를 추가할 수 있습니다. 이렇게 하면 작업 순서 간에 부모-자식 관계가 만들어집니다. 자식 작업 순서를 사용하면 재사용 가능한 모듈식 작업 순서를 만들 수 있습니다.
+
+작업 순서에 자식 작업 순서를 추가할 때는 다음 사항을 고려하세요.
+
+ - 부모 및 자식 작업 순서는 실제로는 클라이언트가 실행하는 단일 정책으로 결합됩니다.
+ - 전역 환경이 사용됩니다. 예를 들어 변수가 부모 작업 순서에 의해 설정된 후 자식 작업 순서에 의해 변경된 경우, 변수는 계속 변경된 상태로 유지됩니다. 마찬가지로 자식 작업 순서에서 새로 만든 변수는 부모 작업 순서의 나머지 단계에서 사용할 수 있습니다.
+ - 상태 메시지는 단일 작업 순서 작업에 대해 일반적인 방식을 사용할 때마다 전송됩니다.
+ - 작업 순서는 smsts.log 파일에 항목을 쓰며 자식 작업 순서가 시작될 때 새 로그 항목이 추가되므로 해당 작업 순서를 쉽게 확인할 수 있습니다.
+
+### <a name="details"></a>세부 정보
+
+1. 작업 순서 편집기에서 **추가**를 클릭하고 **일반**을 선택한 다음 **작업 순서 실행**을 클릭합니다.
+2. **찾아보기**를 클릭하여 자식 작업 순서를 선택합니다.  
+
 ##  <a name="BKMK_ConnectToNetworkFolder"></a> 네트워크 폴더에 연결  
  **네트워크 폴더에 연결** 작업 순서 동작을 사용하여 공유 네트워크 폴더에 대한 연결을 만들 수 있습니다.  
 
@@ -745,7 +764,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
  포맷할 디스크의 실제 디스크 번호입니다. 이 번호는 Windows 디스크 열거 순서를 기반으로 합니다.  
 
  **디스크 유형**  
- 포맷할 디스크의 유형입니다. 드롭다운 목록에서 선택할 수 있는 두 가지 옵션이 있습니다.  
+ 포맷할 디스크의 유형입니다. 드롭다운 목록에서 선택할 수 있는 두 가지 옵션이 있습니다. 
 
 -   표준(MBR) - 마스터 부트 레코드.  
 

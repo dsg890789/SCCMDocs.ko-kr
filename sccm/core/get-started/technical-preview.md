@@ -3,7 +3,7 @@ title: "기술 미리 보기 릴리스"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 새로운 기능을 테스트 시험해 볼 수 있는 기술 미리 보기 릴리스에 대해 알아봅니다."
 ms.custom: na
-ms.date: 10/30/2017
+ms.date: 11/20/2017
 ms.prod: configuration-manager
 ms.reviewer: nab
 ms.suite: na
@@ -15,11 +15,11 @@ caps.latest.revision: "157"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 0f6fb329dae1dda18bbb1869dc77872a2a6a1b98
-ms.sourcegitcommit: 5437b2823bada8f8c9e67940f584953b9d190628
+ms.openlocfilehash: c03581ba5d582d6b86f17c7ec34c3e6e0e8d627e
+ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="technical-preview-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 10/31/2017
 
  이 항목은 기술 미리 보기이므로 세부 정보 및 기능은 변경될 수 있습니다.  
 
- 이 항목에서는 기술 미리 보기의 모든 버전에 적용되며, 2017년 1월의 버전 1701처럼 기능이 가장 먼저 제공되는 기술 미리 보기 버전과 함께 새로운 각 기능을 설명합니다. 이러한 기능에 대한 세부 정보는 각 미리 보기 버전만을 다룬 별도 항목에서 자세히 설명합니다.  
+ 이 항목에서는 Technical Preview의 모든 버전에 적용되는 정보가 포함되어 있으며, 2017년 10월의 버전 1710처럼 기능이 처음 표시되는 Technical Preview 버전과 함께 각각의 새로운 기능이 나열되어 있습니다. 이러한 기능에 대한 세부 정보는 각 미리 보기 버전만을 다룬 별도 항목에서 자세히 설명합니다.  
 
  현재 분기의 Configuration Manager에서 제공하는 새로운 기능에 대한 자세한 내용은 [System Center Configuration Manager의 새로운 기능](/sccm/core/plan-design/changes/what-has-changed-from-configuration-manager-2012)을 참조하세요.
 
@@ -83,7 +83,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="bkmk_install"></a> 기술 미리 보기 설치 및 업데이트  
  System Center Configuration Manager Technical Preview는 현재 릴리스의 System Center Configuration Manager와 다릅니다.  
 
- 기술 미리 보기를 사용하려면 먼저 기술 미리 보기 빌드의 **기준선 버전** 을 설치해야 합니다. 기준선 버전을 설치한 후 **콘솔 내 업데이트** 를 사용하여 최근의 미리 보기 버전으로 설치를 업데이트할 수 있습니다.     일반적으로 새 버전의 기술 미리 보기는 매달 사용할 수 있습니다.
+ 기술 미리 보기를 사용하려면 먼저 기술 미리 보기 빌드의 **기준선 버전** 을 설치해야 합니다. 기준선 버전을 설치한 후 **콘솔 내 업데이트** 를 사용하여 최근의 미리 보기 버전으로 설치를 업데이트할 수 있습니다. 일반적으로 새 버전의 기술 미리 보기는 매달 사용할 수 있습니다.
 
 세 가지 후속 릴리스를 사용할 수 있을 때까지 각 미리 보기 릴리스가 지원됩니다. 즉 버전 1708이 출시되면 버전 1704는 더 이상 지원되지 않지만 버전 1705, 1706 및 1707은 계속 지원됩니다. 기준 버전(예: 버전 1703)이 지원되지 않는 경우에도 해당 설치를 지원되는 버전으로 업데이트하는 한 새 기준 버전을 사용할 수 있을 때까지 새 기술 미리 보기 사이트를 설치할 수 있습니다. 업데이트할 때 콘솔에 사용 가능한 최신 버전이 표시되지 않으면 제공된 최신 버전으로 업데이트한 다음 최신 버전의 Technical Preview를 설치할 수 있을 때까지 해당 프로세스를 반복합니다.
 
@@ -92,8 +92,8 @@ ms.lasthandoff: 10/31/2017
 
 **기술 미리 보기의 활성 기준선 버전:**  
 릴리스 후 최대 1년 동안 기준 버전을 설치할 수 있습니다. 그러나 새 Technical Preview 사이트를 설치할 경우 사용 가능한 최신 기준선 버전을 사용하는 것이 좋습니다.
--  **Technical Preview 1703** - Configuration Manager Technical Preview 1703은 Configuration Manager Technical Preview의 콘솔 내 업데이트와 [TechNet Evaluation Center 웹 사이트에서 사용할 수 있는](http://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection-technical-preview) 새 기준 버전으로 제공됩니다.
-
+-  **Technical Preview 1711** - Configuration Manager Technical Preview 1711은 Configuration Manager Technical Preview의 콘솔 내 업데이트와 [TechNet Evaluation Center 웹 사이트에서 사용할 수 있는](http://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection-technical-preview) 새로운 기준 버전으로 제공됩니다.
+-  **Technical Preview 1703** - Configuration Manager Technical Preview 1703은 Configuration Manager Technical Preview의 콘솔 내 업데이트와 기준 버전으로 모두 제공됩니다. 새로운 기준 버전을 설치하는 경우 버전 1711을 사용하는 것이 좋습니다.
 
 
 ##  <a name="BKMK_TPFeedback"></a> 사용자 의견 제공  
@@ -111,31 +111,42 @@ ms.lasthandoff: 10/31/2017
 
  |기능 |기술 미리 보기 버전 |현재 분기 버전|  
  |----------------|---------------------|--------------------|
+ |작업 순서 실행 단계의 향상된 기능 <!-- 1261338 --> | [Tech Preview 1711](capabilities-in-technical-preview-1711.md) |![추가되지 않음](media/Red_X.gif)    |
+ |응용 프로그램 설치 시 사용자 상호 작용 허용 <!-- 1356976 --> | [Tech Preview 1711](capabilities-in-technical-preview-1711.md) |![추가되지 않음](media/Red_X.gif)    |
+ |Windows 10에 대한 새 준수 정책 <!-- 1356976 --> | [Tech Preview 1711](capabilities-in-technical-preview-1711.md#new-compliance-policy-options-for-windows-10) |![추가되지 않음](media/Red_X.gif)    |
+
+
+## <a name="capabilities-delivered-in-previous-technical-previews"></a>이전 Technical Preview에 포함된 기능
+ Technical Preview 릴리스의 모든 기능을 현재 분기의 지원되는 최소 버전으로 사용할 수 있는 경우 해당 미리 보기 버전에 대한 세부 정보는 다음 표에서 제거됩니다.  
+
+ |기능 |기술 미리 보기 버전 |현재 분기 버전|  
+ |----------------|---------------------|--------------------|
  |Windows Analytics 장치 상태에 대한 Windows 10 원격 분석 <!--1356148 --> | [Tech Preview 1710](capabilities-in-technical-preview-1710.md#limit-windows-10-enhanced-telemetry-to-only-send-data-relevant-to-windows-analytics-device-health) |![추가되지 않음](media/Red_X.gif)    |
  |소프트웨어 센터 개선 아이콘 <!-- 1356194 --> | [Tech Preview 1710](capabilities-in-technical-preview-1710.md#software-center-no-longer-distorts-icons-larger-than-250x250) |![추가되지 않음](media/Red_X.gif)    |
- |소프트웨어 센터에서 공동 관리 장치에 대한 준수 확인 <!-- 1356374 -->| [Tech Preview 1710](capabilities-in-technical-preview-1710.md#check-compliance-from-software-center-for-co-managed-devices)|![추가되지 않음](media/Red_X.gif)    |
+ |소프트웨어 센터에서 공동 관리 장치에 대한 준수 확인 <!-- 1356374 -->|[Tech Preview 1710](capabilities-in-technical-preview-1710.md#check-compliance-from-software-center-for-co-managed-devices)|![추가되지 않음](media/Red_X.gif)    |
  |CNG 인증서에 대한 제한적 지원<!-- 1356191 -->| [Tech Preview 1710](capabilities-in-technical-preview-1710.md#limited-support-for-cng-certificates)|![추가되지 않음](media/Red_X.gif)    |
- |Exploit Guard 지원 <!--1355468 --> | [Tech Preview 1710](capabilities-in-technical-preview-1710.md#support-for-exploit-guard) |![추가되지 않음](media/Red_X.gif)    |
- |컴퓨터 다시 시작 보류에 대한 향상된 설명   <!-- 1356283  -->| [Tech Preview 1710](capabilities-in-technical-preview-1710.md)|![추가되지 않음](media/Red_X.gif)    |
- |장치 가드 정책 변경 <!-- 1355092  -->| [Tech Preview 1710](capabilities-in-technical-preview-1710.md)|![추가되지 않음](media/Red_X.gif)    |
- |Windows Defender Application Guard 정책 구성 및 배포   <!-- 1351960  -->| [Tech Preview 1710](capabilities-in-technical-preview-1710.md)|![추가되지 않음](media/Red_X.gif)    |
- 
+ |Exploit Guard 지원 <!--1355468 --> | [Tech Preview 1710](capabilities-in-technical-preview-1710.md#support-for-exploit-guard) |[버전 1710](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy)    |
+ |컴퓨터 다시 시작 보류에 대한 향상된 설명   <!-- 1356283  -->| [Tech Preview 1710](capabilities-in-technical-preview-1710.md)|[버전 1710](/sccm/core/clients/manage/manage-clients)    |
+ |장치 가드 정책 변경 <!-- 1355092  -->| [Tech Preview 1710](capabilities-in-technical-preview-1710.md)|[버전 1710](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)    |
+ |Windows Defender Application Guard 정책 구성 및 배포   <!-- 1351960  -->| [Tech Preview 1710](capabilities-in-technical-preview-1710.md)|[버전 1710](/sccm/protect/deploy-use/create-deploy-application-guard-policy)    |
+ |Configuration Manager에서 PowerShell 스크립트를 배포하기 위한 향상된 기능 <!-- 1236459 -->| [Tech Preview 1710](capabilities-in-technical-preview-1710.md#improvements-for-deploying-powershell-scripts-from-configuration-manager) | [버전 1710](/sccm/apps/deploy-use/create-deploy-scripts)
+
 ## <a name="capabilities-delivered-in-previous-technical-previews"></a>이전 Technical Preview에 포함된 기능
  Technical Preview 릴리스의 모든 기능을 현재 분기의 지원되는 최소 버전으로 사용할 수 있는 경우 해당 미리 보기 버전에 대한 세부 정보는 다음 표에서 제거됩니다.  
 
  |기능 |기술 미리 보기 버전 |현재 분기 버전|  
  |----------------|---------------------|--------------------|
  |Configuration Manager 콘솔에서 개선된 VPN 프로필<!-- 1313282 --> | [Tech Preview 1709](capabilities-in-technical-preview-1709.md) |![추가되지 않음](media/Red_X.gif)    |
- |Windows 10 장치의 공동 관리|[Tech Preview 1709](capabilities-in-technical-preview-1709.md#co-management-for-windows-10-devices)|![추가되지 않음](media/Red_X.gif)    |
- |Configuration Manager에서 PowerShell 스크립트를 배포할 때 매개 변수를 지정하도록 향상된 기능 <!-- 1236459 -->|[기술 미리 보기 1708](capabilities-in-technical-preview-1708.md#improvements-for-specifying-script-parameters-when-you-deploy-powershell-scripts-from-configuration-manager)|![추가되지 않음](media/Red_X.gif)|
+ |Windows 10 장치의 공동 관리|[Tech Preview 1709](capabilities-in-technical-preview-1709.md#co-management-for-windows-10-devices)|[버전 1710](/sccm/core/clients/manage/co-management-overview.md)|
+ |Configuration Manager에서 PowerShell 스크립트를 배포할 때 매개 변수를 지정하도록 향상된 기능 <!-- 1236459 -->|[기술 미리 보기 1708](capabilities-in-technical-preview-1708.md#improvements-for-specifying-script-parameters-when-you-deploy-powershell-scripts-from-configuration-manager)|[버전 1710](/sccm/apps/deploy-use/create-deploy-scripts)|
  |관리 정보 <!-- 1353967 --> |[기술 미리 보기 1708](capabilities-in-technical-preview-1708.md#management-insights)|![추가되지 않음](media/Red_X.gif)|
- |Configuration Manager 콘솔에서 컴퓨터 다시 시작 <!-- 1356283 --> |[기술 미리 보기 1708](capabilities-in-technical-preview-1708.md#restart-computers-from-the-configuration-manager-console)|![추가되지 않음](media/Red_X.gif)|
+ |Configuration Manager 콘솔에서 컴퓨터 다시 시작 <!-- 1356283 --> |[기술 미리 보기 1708](capabilities-in-technical-preview-1708.md#restart-computers-from-the-configuration-manager-console)|[버전 1710](/sccm/core/clients/manage/manage-clients) |
  |소프트웨어 센터 사용자 지정 <!-- 1351224 --> |[기술 미리 보기 1708](capabilities-in-technical-preview-1708.md#software-center-customization)|![추가되지 않음](media/Red_X.gif)|
-|Windows 10 및 Office 365에 대한 고속 설치 파일을 위한 클라이언트 피어 캐시 지원|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#client-peer-cache-support-for-express-installation-files-for-windows-10-and-office-365)|![추가되지 않음](media/Red_X.gif)|
+|Windows 10 및 Office 365에 대한 고속 설치 파일을 위한 클라이언트 피어 캐시 지원|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#client-peer-cache-support-for-express-installation-files-for-windows-10-and-office-365)|[버전 1706](/sccm/core/plan-design/hierarchy/client-peer-cache#requirements-and-considerations-for-peer-cache)|
  |Surface 장치 대시보드|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#surface-device-dashboard)|![추가되지 않음](media/Red_X.gif)|
- |Windows Defender Application Guard 정책 구성 및 배포|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#configure-and-deploy-windows-defender-application-guard-policies)|![추가되지 않음](media/Red_X.gif)|
- |Configuration Manager에서 PowerShell 스크립트를 배포할 때 매개 변수 추가|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#add-parameters-when-you-deploy-powershell-scripts-from-configuration-manager)|![추가되지 않음](media/Red_X.gif)|
- |새 모바일 응용 프로그램 관리 정책 설정|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#new-mobile-application-management-policy-settings)|![추가되지 않음](media/Red_X.gif)|
+ |Windows Defender Application Guard 정책 구성 및 배포|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#configure-and-deploy-windows-defender-application-guard-policies)|[버전 1710](/sccm/protect/deploy-use/create-deploy-application-guard-policy)|
+ |Configuration Manager에서 PowerShell 스크립트를 배포할 때 매개 변수 추가|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#add-parameters-when-you-deploy-powershell-scripts-from-configuration-manager)|[버전 1710](/sccm/apps/deploy-use/create-deploy-scripts)|
+ |새 모바일 응용 프로그램 관리 정책 설정|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#new-mobile-application-management-policy-settings)|[버전 1710](/sccm/mdm/deploy-use/protect-apps-using-mam-policies#step-3-create-an-application-management-policy)|
  |소프트웨어 업데이트 지점에 대한 향상된 경계 그룹|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#improved-boundary-groups-for-software-update-points)|[버전 1706](/sccm/core/servers/deploy/configure/boundary-groups#software-update-points)|
  |사이트 서버 역할 고가용성|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#site-server-role-high-availability) |![추가되지 않음](media/Red_X.gif)|
  |특정 파일 및 폴더에 대한 트러스트를 Device Guard 정책에 포함|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#include-trust-for-specific-files-and-folders-in-a-device-guard-policy)|[버전 1706](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)|
@@ -144,7 +155,7 @@ ms.lasthandoff: 10/31/2017
  |향상된 접근성 기능 |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#accessibility-improvements)|[버전 1706](/sccm/core/understand/accessibility-features)|
  |업그레이드 준비 상태에 대한 Azure 서비스 마법사 지원 |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#changes-to-the-azure-services-wizard-to-support-upgrade-readiness)|[버전 1706](/sccm/core/servers/deploy/configure/azure-services-wizard)|
  |클라우드 서비스에 대한 새 클라이언트 설정|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#new-client-settings-for-cloud-services)|[버전 1706](/sccm/core/clients/deploy/deploy-clients-cmg-azure)|
- |Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#create-and-run-powershell-scripts-from-the-configuration-manager-console)|[버전 1706](/sccm/apps/deploy-use/create-deploy-scripts)|
+ |Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#create-and-run-powershell-scripts-from-the-configuration-manager-console)|[버전 1710](/sccm/apps/deploy-use/create-deploy-scripts)|
  |IPv6에 대한 PXE 네트워크 부팅 지원 |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#pxe-network-boot-support-for-ipv6)|![추가되지 않음](media/Red_X.gif)|
  |Microsoft Surface 드라이버 업데이트 관리 |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#manage-microsoft-surface-driver-updates)|[버전 1706](/sccm/core/plan-design/changes/whats-new-in-version-1706#manage-microsoft-surface-driver-updates)|
  |비즈니스용 Windows 업데이트 지연 정책 구성 |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#configure-windows-update-for-business-deferral-policies)|[버전 1706](/sccm/sum/deploy-use/integrate-windows-update-for-business-windows-10#configure-windows-update-for-business-deferral-policies)|
@@ -157,7 +168,7 @@ ms.lasthandoff: 10/31/2017
  |Entrust 인증 기관에 대한 지원|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#support-for-entrust-certification-authorities)|[버전 1706](/sccm/mdm/deploy-use/create-pfx-certificate-profiles)|
  |macOS VPN 프로필에 대한 Cisco(IPSec) 지원|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#cisco-ipsec-support-for-macos-vpn-profiles)|[버전 1706](/sccm/protect/deploy-use/vpn-profiles)|
  |Azure AD 및 클라우드 관리에 대한 새로운 기능|[Tech Preview 1705](capabilities-in-technical-preview-1705.md#new-capabilities-for-azure-ad-and-cloud-management)|[버전 1706](/sccm/core/plan-design/changes/whats-new-in-version-1706#azure-ad-integration-with-configuration-manager)|
- |Windows Defender Application Guard 정책 구성 및 배포|[Tech Preview 1705](capabilities-in-technical-preview-1705.md#configure-and-deploy-windows-defender-application-guard-policies)|![추가되지 않음](media/Red_X.gif)|
+ |Windows Defender Application Guard 정책 구성 및 배포|[Tech Preview 1705](capabilities-in-technical-preview-1705.md#configure-and-deploy-windows-defender-application-guard-policies)|[버전 1710](/sccm/protect/deploy-use/create-deploy-application-guard-policy)|
  |업데이트 다시 설정 도구  |[Tech Preview 1705](capabilities-in-technical-preview-1705.md#update-reset-tool)|[버전 1706](/sccm/core/servers/manage/update-reset-tool)|
  |높은 DPI 콘솔 지원  |[Tech Preview 1705](capabilities-in-technical-preview-1705.md#high-dpi-console-support)|[버전 1706](/sccm/core/plan-design/changes/whats-new-in-version-1706#high-dpi-console-support)|
  |피어 캐시 개선  |[Tech Preview 1705](capabilities-in-technical-preview-1705.md#peer-cache-improvements) |[버전 1706](/sccm/core/plan-design/hierarchy/client-peer-cache#requirements-and-considerations-for-peer-cache)|
@@ -276,4 +287,3 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>참고 항목  
 [System Center Configuration Manager의 새로운 기능](/sccm/core/plan-design/changes/whats-new-incremental-versions)  
  [System Center Configuration Manager 소개](../../core/understand/introduction.md)
-

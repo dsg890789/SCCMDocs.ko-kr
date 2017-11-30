@@ -3,7 +3,7 @@ title: "기술 미리 보기 1710 | Microsoft Docs"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager용 Technical Preview 버전 1710에서 사용 가능한 기능에 대해 알아봅니다."
 ms.custom: na
-ms.date: 10/30/2017
+ms.date: 11/20/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.reviewer: na
@@ -14,11 +14,11 @@ ms.assetid: f4706a58-1f11-4eab-b1eb-3d1a0da02d0f
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 813fdc40c4a0eb7c2dd3c1831bac1ba1667fe247
-ms.sourcegitcommit: 5437b2823bada8f8c9e67940f584953b9d190628
+ms.openlocfilehash: 309d677c0b8c692548d649346bb35bfa9d2a81f3
+ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="capabilities-in-technical-preview-1710-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1710의 기능
 
@@ -52,6 +52,19 @@ ms.lasthandoff: 10/31/2017
  -  Task 1
  -  Task 2              
 -->
+
+## <a name="improvements-for-deploying-powershell-scripts-from-configuration-manager"></a>Configuration Manager에서 PowerShell 스크립트를 배포하기 위한 향상된 기능
+이 릴리스에서는 이제 배포하는 PowerShell 스크립트에서 다음과 같은 향상된 기능을 사용하도록 지원합니다. 
+- **보안 범위** -  스크립트에서 보안 범위를 사용하여 스크립트 작성 및 실행을 제어합니다. 이는 사용자 그룹을 나타내는 태그를 할당하여 수행됩니다. 보안 범위 사용에 대한 자세한 내용은 [System Center Configuration Manager에 대한 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md)을 참조하세요.
+- **실시간 모니터링** - 스크립트 실행을 모니터링하는 경우 스크립트가 실행되는 즉시 실시간으로 수행됩니다.
+- **매개 변수 유효성 검사** - 스크립트의 각 매개 변수는 **스크립트 매개 변수 속성** 대화 상자를 통해 해당 매개 변수에 대한 유효성 검사를 추가할 수 있습니다. 유효성 검사를 추가한 후에 유효성 검사를 충족하지 않는 매개 변수 값이 입력되면 오류가 발생합니다.
+
+PowerShell 스크립트 배포는 [Tech Preview 1706](/sccm/core/get-started/capabilities-in-technical-preview-1706#create-and-run-powershell-scripts-from-the-configuration-manager-console) Technical Preview에서 처음 소개되었습니다. [Tech Preview 1707](/sccm/core/get-started/capabilities-in-technical-preview-1707#add-parameters-when-you-deploy-powershell-scripts-from-configuration-manager) 및 [Tech Preview 1708](/sccm/core/get-started/capabilities-in-technical-preview-1708#improvements-for-specifying-script-parameters-when-you-deploy-powershell-scripts-from-configuration-manager)에서 향상된 기능이 추가로 제공되었습니다.
+
+
+### <a name="try-it-out"></a>기능 직접 사용해 보기
+
+스크립트 실행 기능을 사용해 보려면 [스크립트 만들기 및 실행](../../apps/deploy-use/create-deploy-scripts.md)을 참조하세요.
 
 
 
@@ -116,7 +129,7 @@ Exploit Guard 및 구체적인 구성 요소와 규칙에 대한 자세한 내�
 Exploit Guard 정책을 만든 후에는 Exploit Guard 정책 배포 마법사를 사용하여 배포합니다. 이를 위해서는 Configuration Manager 콘솔을 열고 **자산 및 준수** > **끝점 보호**로 이동한 다음 **Exploit Guard 정책 배포**를 클릭합니다.
 
 ## <a name="limited-support-for-cng-certificates"></a>CNG 인증서에 대한 제한적 지원
-<!-- 1356191 --> 
+<!-- 1356191 -->
 이 릴리스부터는 다음 시나리오에 대해 [CNG(Cryptography API: Next Generation)](https://msdn.microsoft.com/library/windows/desktop/bb204775.aspx) 인증서를 사용할 수 있습니다.
 
 - 클라이언트 등록 및 HTTPS 관리 지점과의 커뮤니케이션.   
@@ -184,13 +197,13 @@ Windows Defender SmartScreen을 실행하는 장치에서 신뢰할 수 있는 �
 ## <a name="configure-and-deploy-windows-defender-application-guard-policies----1351960---"></a>Windows Defender Application Guard 정책 구성 및 배포 <!-- 1351960 -->
 
 [Windows Defender Application Guard](https://blogs.windows.com/msedgedev/2016/09/27/application-guard-microsoft-edge/#XLxEbcpkuKcFebrw.97)는 운영 체제의 다른 부분에서 액세스할 수 없는 보안 격리된 컨테이너에서 신뢰할 수 없는 웹 사이트를 열어 사용자를 보호하는 새로운 Windows 기능입니다. 이 Technical Preview에서는 구성하는 Configuration Manager 준수 설정을 사용하여 이 기능을 구성한 다음 컬렉션에 배포하기 위한 지원이 추가되었습니다. 이 기능은 64비트 버전의 Windows 10 크리에이터 업데이트(코드명: RS2)에 대한 미리 보기에 릴리스될 예정입니다 . 이 기능을 지금 테스트하려면 이 업데이트의 미리 보기 버전을 사용하고 있어야 합니다.
- 
+
 ### <a name="before-you-start"></a>시작하기 전에
 Windows Defender Application Guard 정책을 만들고 배포하려면 정책을 배포하는 Windows 10 장치를 네트워크 격리 정책을 사용하여 구성해야 합니다. 자세한 내용은 뒤에서 언급하는 블로그 게시물을 참조하세요. 이 기능은 현재 Windows 10 참가자 빌드에서만 작동합니다. 이 기능을 테스트하려면 클라이언트에서 최신 Windows 10 참가자 빌드를 실행하고 있어야 합니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 
-Windows Defender Application Guard에 대한 기본 사항을 이해하려면 [블로그 게시물]((https://blogs.windows.com/msedgedev/2016/09/27/application-guard-microsoft-edge/#XLxEbcpkuKcFebrw.97))을 읽어야 합니다.
+Windows Defender Application Guard에 대한 기본 사항을 이해하려면 [블로그 게시물](https://blogs.windows.com/msedgedev/2016/09/27/application-guard-microsoft-edge/#XLxEbcpkuKcFebrw.97)을 읽어야 합니다.
 
 정책을 만들고 사용 가능한 설정을 검색하려면
 1. **Configuration Manager** 콘솔에서 **자산 및 준수**를 선택합니다.
@@ -202,7 +215,7 @@ Windows Defender Application Guard에 대한 기본 사항을 이해하려면 [�
     > [!NOTE]
     > Windows 10 PC는 클라이언트에 하나의 네트워크 격리 목록만 저장합니다. 이 릴리스에서 두 가지 종류의 네트워크 격리 목록(Windows Information Protection의 목록, Windows Defender 응용 프로그램 가드의 목록)을 만들고 클라이언트에 배포할 수 있습니다. 두 정책 모두 배포하는 경우 두 네트워크 격리 목록이 일치해야 합니다. 동일 클라이언트와 일치하지 않는 목록을 배포할 경우 배포가 실패합니다.
 
-    네트워크 정의를 지정하는 자세한 방법은 [Windows Information Protection 설명서](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-sccm)에서 참조하세요. 
+    네트워크 정의를 지정하는 자세한 방법은 [Windows Information Protection 설명서](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-sccm)에서 참조하세요.
 
 6. 작업이 끝나면 마법사를 완료하고 하나 이상의 Windows 10 장치에 정책을 배포합니다.
 

@@ -3,7 +3,7 @@ title: "사이트 복구"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 사이트 복구에 대해 알아봅니다."
 ms.custom: na
-ms.date: 6/5/2017
+ms.date: 11/20/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ caps.latest.revision:
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 96785ea5abcb4ae67952ad8243c36bf6b238daca
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 497860c9b5698271d7ca6e4683e99350100f596f
+ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/21/2017
 ---
 #  <a name="recover-a-configuration-manager-site"></a>Configuration Manager 사이트 복구
 
@@ -30,6 +30,12 @@ Configuration Manager 사이트가 실패하거나 사이트 데이터베이스�
 이 항목의 섹션에서는 Configuration Manager 사이트를 복구하는 데 도움이 될 수 있습니다. 백업을 만들려면 [Configuration Manager의 백업](/sccm/protect/understand/backup-and-recovery)을 참조하세요.
 
 ## <a name="considerations-before-recovering-a-site"></a>사이트 복구 전 고려 사항
+> [!Important]  
+> 이 정보는 사이트 복구 시나리오에만 적용됩니다.  온-프레미스 인프라를 업그레이드하고 실패한 사이트를 적극적으로 복구하지 않는 경우 다음 항목의 정보를 검토합니다.
+> - [온-프레미스 인프라 업그레이드](/sccm/core/servers/manage/upgrade-on-premises-infrastructure)
+> - [인프라 수정](/sccm/core/servers/manage/modify-your-infrastructure)
+
+
 **동일한 버전 및 에디션의 SQL Server를 사용해야 합니다.** 예를 들어 SQL Server 2014에서 실행되던 데이터베이스를 SQL Server 2016으로 복원하는 것은 지원되지 않습니다. 마찬가지로 SQL Server 2016 Standard Edition에서 실행되던 사이트 데이터베이스를 SQL Server 2016 Enterprise Edition으로 복원할 수 없습니다.
 -   SQL Server를 **단일 사용자 모드**로 설정하면 안 됩니다.
 -   . MDF 및 .LDF 파일이 올바른지 확인합니다. 사이트를 복구할 때 복원하려는 파일의 상태는 확인되지 않습니다.
@@ -124,7 +130,7 @@ SQL Server 변경 내용 추적 내부에 대한 자세한 내용은 SQL Server 
 다음 절차 중 하나에 따라 사이트 서버와 사이트 데이터베이스를 복구할 수 있습니다.
 
 ### <a name="to-start-a-site-recovery-in-the-setup-wizard"></a>설치 마법사에서 사이트 복구를 시작하려면
-1.  [CD.Latest 폴더](/sccm/core/servers/manage/the-cd.latest-folde)를 Configuration Manager 설치 폴더 외부 위치로 복사합니다.
+1.  [CD.Latest 폴더](/sccm/core/servers/manage/the-cd.latest-folder)를 Configuration Manager 설치 폴더 외부 위치로 복사합니다.
 CD.Latest 폴더의 복사본에서 Configuration Manager 설치 마법사를 실행합니다.
 
 2.  **시작** 페이지에서 **사이트 복구**를 선택한 후 **다음**을 클릭합니다.

@@ -1,21 +1,22 @@
 ---
-title: "Office 365 ProPlus 업데이트 관리 | Microsoft 문서"
+title: "Office 365 ProPlus 업데이트 관리"
+titleSuffix: Configuration Manager
 description: "Configuration Manager는 WSUS 카탈로그의 Office 365 클라이언트 업데이트를 사이트 서버와 동기화하여 업데이트를 클라이언트에 배포할 수 있게 합니다."
 keywords: 
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 05/31/2017
+ms.date: 10/04/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
 ms.technology: configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
-ms.openlocfilehash: 902d7f7216ca7bb585afae587a6706e2332da9d3
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: a1ac97e60bc35ee3e98212cf17e33ed2b73301b9
+ms.sourcegitcommit: 986fc2d54f7c5fa965fd4df42f4db4ecce6b79cb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="manage-office-365-proplus-with-configuration-manager"></a>Configuration Manager를 사용하여 Office 365 ProPlus 관리
 
@@ -46,7 +47,7 @@ Office 365 클라이언트 관리 대시보드는 다음 정보에 대한 차트
 Configuration Manager 콘솔에서 Office 365 클라이언트 관리 대시보드를 보려면 **소프트웨어 라이브러리** > **개요** > **Office 365 클라이언트 관리**로 이동합니다. 대시보드 맨 위에 있는 **컬렉션** 드롭다운 설정을 사용하여 특정 컬렉션 멤버별로 대시보드 데이터를 필터링합니다.
 
 ### <a name="display-data-in-the-office-365-client-management-dashboard"></a>Office 365 클라이언트 관리 대시보드에 데이터 표시
-Office 365 클라이언트 관리 대시보드에 표시되는 데이터는 하드웨어 인벤토리에서 옵니다. 하드웨어 인벤토리를 사용하도록 설정하고 **Office 365 ProPlus 구성** 하드웨어 인벤토리 클래스를 선택해야 대시보드에 데이터를 표시할 수 있습니다.
+Office 365 클라이언트 관리 대시보드에 표시되는 데이터는 하드웨어 인벤토리에서 옵니다. 하드웨어 인벤토리를 사용하도록 설정하고 대시보드에서 데이터가 표시되도록 **Office 365 ProPlus 구성** 하드웨어 인벤토리 클래스를 선택합니다.
 #### <a name="to-display-data-in-the-office-365-client-management-dashboard"></a>Office 365 클라이언트 관리 대시보드에 데이터를 표시하려면
 1. 하드웨어 인벤토리를 아직 사용하도록 설정하지 않은 경우 지금 설정합니다. 자세한 내용은 [하드웨어 인벤토리 구성](\sccm\core\clients\manage\configure-hardware-inventory)을 참조하세요.
 2. Configuration Manager 콘솔에서 **관리** > **클라이언트 설정** > **기본 클라이언트 설정**으로 이동합니다.  
@@ -104,7 +105,7 @@ Configuration Manager를 사용하여 Office 365 업데이트를 배포하려면
 1.  항목의 **Configuration Manager를 사용하여 Office 365 클라이언트 업데이트를 관리하기 위한 요구 사항** 섹션에서 Configuration Manager를 사용하여 Office 365 클라이언트 업데이트를 관리하기 위한 [요구 사항을 확인](https://technet.microsoft.com/library/mt628083.aspx)합니다.  
 
 2.  [소프트웨어 업데이트 지점을 구성](../get-started/configure-classifications-and-products.md)하여 Office 365 클라이언트 업데이트를 동기화합니다. 분류에 대한 **업데이트**를 설정하고 제품에 대한 **Office 365 클라이언트**를 선택합니다. **업데이트** 분류를 사용하도록 소프트웨어 업데이트 지점을 구성한 후 소프트웨어 업데이트를 동기화합니다.
-3.  Office 365 클라이언트가 Configuration Manager에서 업데이트를 받을 수 있도록 합니다. Configuration Manager 클라이언트 설정 또는 그룹 정책을 사용하여 이렇게 할 수 있습니다. 다음 방법 중 하나를 통해 클라이언트를 사용하도록 설정합니다.   
+3.  Office 365 클라이언트가 Configuration Manager에서 업데이트를 받을 수 있도록 합니다. Configuration Manager 클라이언트 설정 또는 그룹 정책을 사용하여 클라이언트를 사용하도록 설정합니다.   
 
     **방법 1**: Configuration Manager 버전 1606부터 Configuration Manager 클라이언트 설정을 사용하여 Office 365 클라이언트 에이전트를 관리할 수 있습니다. 이 설정을 구성하고 Office 365 업데이트를 배포한 후 Configuration Manager 클라이언트 에이전트는 Office 365 클라이언트 에이전트와 통신하여 배포 지점에서 Office 365 업데이트를 다운로드하고 설치합니다. Configuration Manager는 Office 365 ProPlus 클라이언트 설정의 인벤토리를 사용합니다.    
 
@@ -119,10 +120,10 @@ Configuration Manager를 사용하여 Office 365 업데이트를 배포하려면
 4. 클라이언트에 [Office 365 업데이트를 배포](deploy-software-updates.md)합니다.   
 
 > [!Important]
-> Office 365 클라이언트에서 구성된 것과 같은 언어로 업데이트를 다운로드 및 배포해야 합니다. 예를 들어 Office 365 클라이언트를 en-us 및 de-de 언어로 구성했다고 가정합니다. 사이트 서버에서 해당하는 Office 365 업데이트의 en-us 콘텐츠만 다운로드 및 배포합니다. 사용자가 소프트웨어 센터에서 이 업데이트의 설치를 시작하면 콘텐츠를 다운로드하는 동안 업데이트가 중단됩니다.   
+> Office 365 클라이언트에서 구성된 것과 같은 언어로 업데이트를 다운로드 및 배포해야 합니다. 예를 들어 Office 365 클라이언트를 en-us 및 de-de 언어로 구성했다고 가정합니다. 사이트 서버에서 해당하는 Office 365 업데이트의 en-us 콘텐츠만 다운로드 및 배포합니다. 사용자가 소프트웨어 센터로부터 이 업데이트의 설치를 시작하면 콘텐츠를 다운로드하는 동안에는 업데이트가 중단됩니다.   
 
 ## <a name="restart-behavior-and-client-notifications-for-office-365-updates"></a>Office 365 업데이트에 대한 동작 및 클라이언트 알림 다시 시작
-Office 365 클라이언트에 대한 업데이트를 배포할 때 다시 시작 동작 및 클라이언트 알림은 보유한 Configuration Manager 버전에 따라 다릅니다. 다음 표에서는 클라이언트가 Office 365 업데이트를 받을 때 최종 사용자 환경에 대한 정보를 제공합니다.
+Office 365 클라이언트에 대한 업데이트를 배포할 때 다시 시작 동작 및 클라이언트 알림은 보유한 Configuration Manager 버전에 따라 다릅니다. 다음 표에는 클라이언트에서 Office 365 업데이트를 받을 때 제공하는 최종 사용자 환경에 대한 정보가 나와 있습니다.
 
 |Configuration Manager 버전 |최종 사용자 환경|  
 |----------------|---------------------|
@@ -131,9 +132,22 @@ Office 365 클라이언트에 대한 업데이트를 배포할 때 다시 시작
 |1610(업데이트 포함) <br/>1702|다시 시작 플래그가 설정되고 컴퓨터를 다시 시작한 후에 업데이트가 설치됩니다.|
 |1706|클라이언트는 업데이트를 설치하기 전에 카운트다운 대화 상자 뿐만 아니라 팝업 및 앱 내 알림을 받습니다.|
 
+> [!Important]
+> Configuration Manager 버전 1706에서는 다음 세부 정보에 유의하세요.
+>
+>- 작업 표시줄의 알림 영역에는 최종 기한이 48시간 이내이고 업데이트 콘텐츠가 다운로드된 필수 앱에 대한 알림 아이콘이 표시됩니다. 
+>- 최종 기한이 7.5시간 이내이고 업데이트가 다운로드된 필수 앱에 대한 카운트다운 대화 상자가 표시됩니다. 사용자는 최종 기한 전에 최대 세 번까지 카운트다운 대화 상자를 연기할 수 있습니다. 카운트다운은 연기되면 2시간 후에 다시 표시됩니다. 카운트다운이 연기되지 않으면 30분 카운트다운이 있으며, 만료되면 업데이트가 설치됩니다.
+>- 사용자가 알림 영역에서 아이콘을 클릭할 때까지 팝업 알림이 표시되지 않을 수 있습니다. 또한 알림 영역의 공간이 최소인 경우 사용자가 알림 영역을 열거나 확장해야 알림 아이콘이 표시될 수 있습니다. 
+>- 야간에 사용자가 장치를 잠그는 경우와 같이 사용자가 장치를 활발하게 사용하지 않는 동안에 알림 및 카운트다운 대화 상자를 시작할 수 있습니다. 이 경우 장치에서 실행 중인 Office 응용 프로그램을 강제로 닫아 업데이트를 설치할 수 있습니다. Office에서는 앱을 닫기 전에 앱 데이터를 저장하여 데이터 손실을 방지합니다. 
+>- 최종 기한이 지나갔거나 가능한 한 빨리 시작되도록 구성된 경우 실행 중인 Office 응용 프로그램을 알림 없이 강제로 닫아야 할 수 있습니다. 
+>- 사용자가 최종 기한 전에 Office 업데이트를 설치하는 경우 최종 기한에 도달했을 때 Configuration Manager에서 업데이트가 설치되어 있는지 확인합니다. 장치에서 업데이트가 검색되지 않으면 업데이트가 설치됩니다. 
+>- 업데이트를 다운로드하기 전에 실행 중인 Office 응용 프로그램에는 인앱 알림 표시줄이 표시되지 않습니다. 업데이트를 다운로드하면 새로 열린 앱에 대한 인앱 알림만 표시됩니다.
+>- 서비스 창에서 트리거되거나 업무 외 시간으로 예약된 Office 업데이트의 경우 실행 중인 Office 응용 프로그램을 강제로 닫아야만 알림 없이 업데이트를 설치할 수 있습니다. 
+
+
 
 ## <a name="add-languages-for-office-365-update-downloads"></a>Office 365 업데이트 다운로드 언어 추가
-Configuration Manager 버전 1610부터 Configuration Manager의 지원 여부와 관계없이 Office 365에서 지원되는 모든 언어의 업데이트를 다운로드하도록 Configuration Manager에 대한 지원을 추가할 수 있습니다.    
+Configuration Manager 버전 1610부터 Configuration Manager의 지원 여부와 관계 없이 Office 365에서 지원되는 모든 언어에 대한 업데이트를 다운로드하도록 Configuration Manager에 대한 지원을 추가할 수 있습니다.    
 
 > [!IMPORTANT]  
 > 추가 Office 365 업데이트 언어 구성은 사이트 전체 설정입니다. 다음 절차를 사용하여 언어를 추가하면 모든 Office 365 업데이트가 소프트웨어 업데이트 다운로드 또는 소프트웨어 업데이트 배포 마법사의 **언어 선택** 페이지에서 선택한 언어 외에 추가한 언어로도 다운로드됩니다.

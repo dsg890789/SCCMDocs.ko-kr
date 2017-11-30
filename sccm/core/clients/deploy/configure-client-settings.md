@@ -15,11 +15,11 @@ caps.latest.revision: "5"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 7d63aa43062b331dde993ae5f59f1d2a7e846482
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 20a8f91d10d98542f08e440bcfbc1a6f98a51932
+ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="how-to-configure-client-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법
 
@@ -66,6 +66,19 @@ ms.lasthandoff: 10/12/2017
 10. 방금 만든 사용자 지정 클라이언트 설정 순서를 봅니다. 사용자 지정 클라이언트 설정이 여러 개인 경우 해당 순서 번호에 따라 적용됩니다. 충돌이 있는 경우 순서 번호가 가장 낮은 설정이 다른 설정을 재정의합니다. 순서를 변경하려면 **홈** 탭의 **클라이언트 설정** 그룹에서 **위로 항목 이동** 또는 **아래로 항목 이동**을 선택합니다.  
 
  클라이언트 컴퓨터는 다음에 클라이언트 정책을 다운로드할 때 이 설정으로 구성됩니다. 단일 클라이언트에 대해 정책 검색을 시작하려면 [System Center Configuration Manager의 클라이언트 관리 방법](../../../core/clients/manage/manage-clients.md)에서 [Configuration Manager 클라이언트에 대한 정책 검색 시작](../../../core/clients/manage/manage-clients.md#BKMK_PolicyRetrieval)을 참조하세요.  
+
+## <a name="limit-windows-10-enhanced-telemetry-to-only-send-data-relevant-to-windows-analytics-device-health"></a>Windows 10 향상된 원격 분석을 Windows Analytics 장치 상태와 관련된 데이터만 전송하도록 제한
+<!-- 1356148 -->
+
+1710 업데이트를 사용하면 Windows 10 원격 분석 데이터 수집 수준을 **고급(제한적)**으로 설정할 수 있습니다. 이 설정을 사용하면 Windows 10 버전 1709 이상을 사용하여 **고급** 원격 분석 수준의 모든 데이터를 보고하는 장치가 없는 환경에서 장치에 대해 조치 가능한 통찰력을 얻을 수 있습니다.
+
+고급(제한적) 원격 분석 수준에는 Windows Analytics와 관련된 **고급** 수준에서 수집된 데이터 하위 집합뿐 아니라 기본 레벨의 메트릭도 포함됩니다. 원격 분석 수준에 대한 자세한 내용은 [원격 분석 수준](https://docs.microsoft.com/windows/configuration/configure-windows-telemetry-in-your-organization#telemetry-levels)을 참조하세요.
+
+1.  Configuration Manager 콘솔에서 **관리** > **클라이언트 설정** > **기본 클라이언트 설정**을 선택합니다.  
+
+2.  **홈** 탭에서 **속성**을 선택합니다.  
+
+3.  **Cloud Services**를 열고 Windows 10 원격 분석을 **고급**으로 설정합니다.
 
 ##  <a name="view-client-settings"></a>클라이언트 설정 보기  
  같은 장치, 사용자 또는 사용자 그룹에 여러 클라이언트 설정을 배포한 경우 설정의 우선 순위 및 조합이 복잡할 수 있습니다. 클라이언트 설정을 보려면 다음을 수행합니다.  

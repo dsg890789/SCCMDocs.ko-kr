@@ -1,21 +1,22 @@
 ---
-title: "소프트웨어 업데이트 소개 | Microsoft 문서"
+title: "소프트웨어 업데이트 소개"
+titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 소프트웨어 업데이트에 대한 기본 사항을 알아봅니다."
 keywords: 
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/06/2016
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
 ms.technology: configmgr-sum
 ms.assetid: e9778b13-c8a3-40eb-8655-34ac8ce9cdaa
-ms.openlocfilehash: 2904b904bbaf155f016f55fbd36af80308a42d76
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 66aa73e5c1aae68feeacb0eabe6233845289d104
+ms.sourcegitcommit: 986fc2d54f7c5fa965fd4df42f4db4ecce6b79cb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="introduction-to-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 업데이트 소개
 
@@ -254,7 +255,7 @@ System Center Configuration Manager의 소프트웨어 업데이트는 기업의
 ##  <a name="BKMK_DeploymentProcess"></a> 소프트웨어 업데이트 배포 프로세스  
  소프트웨어 업데이트를 배포한 후 또는 자동 배포 규칙에서 소프트웨어 업데이트를 실행 및 배포하면 배포 할당 정책이 사이트에 대한 컴퓨터 정책에 추가됩니다. 소프트웨어 업데이트는 인터넷 또는 네트워크 공유 폴더 등의 다운로드 위치에서 패키지 원본에 다운로드됩니다. 소프트웨어 업데이트는 패키지 원본에서 사이트 서버의 콘텐츠 라이브러리에 복사된 다음 배포 지점의 콘텐츠 라이브러리에 복사됩니다.  
 
- 배포를 위한 대상 컬렉션 내의 클라이언트 컴퓨터에서 컴퓨터 정책을 받을 때 소프트웨어 업데이트 클라이언트 에이전트는 평가 검사를 시작합니다. 클라이언트 에이전트는 배포를 받은 직후 배포 지점에서 로컬 클라이언트 캐시로 필수 소프트웨어 업데이트의 콘텐츠를 다운로드하지만 소프트웨어 업데이트 전 배포에 대한 **소프트웨어를 사용할 수 있는 시간** 설정이 설치에 사용될 수 있을 때까지 대기합니다. 선택적 배포(설치 최종 기한이 없는 배포) 내의 소프트웨어 업데이트는 사용자가 수동으로 설치를 시작하기 전까지 다운로드되지 않습니다.  
+ 배포를 위한 대상 컬렉션 내의 클라이언트 컴퓨터에서 컴퓨터 정책을 받을 때 소프트웨어 업데이트 클라이언트 에이전트는 평가 검사를 시작합니다. 클라이언트 에이전트는 필요한 소프트웨어 업데이트 콘텐츠를 배포 지점에서 **소프트웨어를 사용할 수 있는 시간** 설정에 있는 로컬 클라이언트 캐시로 다운로드한 다음 소프트웨어 업데이트를 설치하는 데 사용할 수 있습니다. 선택적 배포(설치 최종 기한이 없는 배포) 내의 소프트웨어 업데이트는 사용자가 수동으로 설치를 시작하기 전까지 다운로드되지 않습니다.  
 
  구성된 최종 기한이 지나면 소프트웨어 업데이트 클라이언트 에이전트는 검사를 수행하여 소프트웨어 업데이트가 아직 필요한지 확인합니다. 그런 다음 클라이언트 컴퓨터의 로컬 캐시를 점검하여 소프트웨어 업데이트 원본 파일을 아직 사용할 수 있는지 확인합니다. 마지막으로, 클라이언트에서 소프트웨어 업데이트를 설치합니다. 다른 배포가 저장될 공간을 위해 콘텐츠가 클라이언트 캐시에서 삭제된 경우 클라이언트는 소프트웨어 업데이트를 배포 지점에서 클라이언트 캐시에 다시 다운로드합니다. 소프트웨어 업데이트는 구성된 최대 클라이언트 캐시 크기에 관계없이 항상 클라이언트 캐시에 다운로드됩니다. 설치가 완료되면 클라이언트 에이전트에서는 소프트웨어 업데이트가 더 이상 필요 없음을 확인한 다음 이제 소프트웨어 업데이트가 클라이언트에 설치되었다는 것을 나타내는 상태 메시지를 관리 지점에 보냅니다.  
 

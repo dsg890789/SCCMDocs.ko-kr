@@ -3,7 +3,7 @@ title: "응용 프로그램 만들기"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager를 사용하여 응용 프로그램 및 배포 유형을 만들고 배포합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 11/07/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,11 +16,11 @@ caps.handback.revision: "0"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: 6896a4905b9eecf520dae2c887100df472963356
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: f680b692f3ae92fb8a5e8b6640ed053ceedba436
+ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="create-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 만들기
 
@@ -119,7 +119,7 @@ Configuration Manager 콘솔의 **응용 프로그램** 노드에 새 응용 프
 
     -   **키워드** – **선택한 언어** 드롭다운 목록에서 선택한 언어로 키워드 목록을 입력합니다. 이러한 키워드를 통해 소프트웨어 센터의 사용자가 응용 프로그램을 검색할 수 있습니다.  
 
-    -   **아이콘** – **찾아보기**를 선택하여 사용 가능한 아이콘에서 이 응용 프로그램의 아이콘을 선택합니다. 아이콘을 지정하지 않으면 이 응용 프로그램에 기본 아이콘이 사용됩니다.  
+    -   **아이콘** – **찾아보기**를 선택하여 사용 가능한 아이콘에서 이 응용 프로그램의 아이콘을 선택합니다. 아이콘을 지정하지 않으면 이 응용 프로그램에 기본 아이콘이 사용됩니다. 이제 최대 512x512 픽셀 크기의 아이콘을 설정할 수 있습니다.
 
     -   **회사 포털에서 이 항목을 추천 앱 및 하이라이트로 표시** - 이 옵션을 선택하면 앱이 회사 포털에서 강조되어 표시됩니다.  
 

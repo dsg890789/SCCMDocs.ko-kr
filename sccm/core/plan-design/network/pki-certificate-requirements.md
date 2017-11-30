@@ -3,7 +3,7 @@ title: "PKI 인증서 요구 사항"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에 필요할 수 있는 PKI 인증서 요구 사항을 찾습니다."
 ms.custom: na
-ms.date: 04/24/2017
+ms.date: 11/20/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,21 +15,26 @@ caps.latest.revision: "17"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: f5afa9fd9823cfbaa305b4d4e88f89be7004bd60
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: c9d95f6282820a41db762c143b3aa2f6d4fadf3e
+ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="pki-certificate-requirements-for-system-center-configuration-manager"></a>System Center Configuration Manager를 위한 PKI 인증서 요구 사항
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-다음 표에는 System Center Configuration Manager에 필요할 수 있는 PKI(공개 키 인프라) 인증서가 나열되어 있습니다. 이 정보는 PKI 인증서에 대한 기본 지식이 있다는 가정 하에 설명되었습니다. 단계별 배포 지침은 [System Center Configuration Manager용 PKI 인증서의 단계별 배포 예제: Windows Server 2008 인증 기관](/sccm/core/plan-design/network/example-deployment-of-pki-certificates)을 참조하세요. Active Directory 인증서 서비스에 대한 자세한 내용은 다음 설명서를 참조하세요.  
+다음 표에는 System Center Configuration Manager에 필요할 수 있는 PKI(공개 키 인프라) 인증서가 나열되어 있습니다. 이 정보는 PKI 인증서에 대한 기본 지식이 있다는 가정 하에 설명되었습니다. 단계별 배포 지침은 [System Center Configuration Manager용 PKI 인증서의 단계별 배포 예제: Windows Server 2008 인증 기관](/sccm/core/plan-design/network/example-deployment-of-pki-certificates)을 참조하세요. 
+
+Active Directory 인증서 서비스에 대한 자세한 내용은 다음 설명서를 참조하세요.  
 
 -   Windows Server 2012: [Active Directory 인증서 서비스 개요](http://go.microsoft.com/fwlink/p/?LinkId=286744)  
 
--   Windows Server 2008: [Windows Server 2008의 Active Directory 인증서 서비스](http://go.microsoft.com/fwlink/p/?LinkId=115018)  
+-   Windows Server 2008: [Windows Server 2008의 Active Directory 인증서 서비스](http://go.microsoft.com/fwlink/p/?LinkId=115018)
+
+Configuration Manager에서 CNG(Cryptography API: Next Generation) 인증서를 사용하는 방법에 대한 자세한 내용은 [CNG 인증서 개요](cng-certificates-overview.md)를 참조하세요.
+
 
 > [!IMPORTANT]  
 > System Center Configuration Manager에서는 SHA-2(Secure Hash Algorithm 2) 인증서를 지원합니다. SHA-2 인증서를 사용하면 보안에 중요한 장점이 생깁니다. 따라서 다음을 권장합니다.

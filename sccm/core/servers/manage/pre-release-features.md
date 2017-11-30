@@ -3,7 +3,7 @@ title: "시험판 기능"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 시험판 기능"
 ms.custom: na
-ms.date: 7/31/2017
+ms.date: 11/20/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ caps.latest.revision: "36"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 6d7ec308aa465f2b715ce51b8c6bbbe59faaf2cb
-ms.sourcegitcommit: b36f8c8b06e4b2e13f8c1500a82af79a071ab4f6
+ms.openlocfilehash: 299f0cd71b1aac80a1e226a0fa035f323aed38cb
+ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="pre-release-features-in-system-center-configuration-manager"></a>System Center Configuration Manager의 시험판 기능
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -53,7 +53,7 @@ ms.lasthandoff: 10/20/2017
 | Configuration Manager로 Device Guard 관리 |  [버전 1702](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)|![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
 | 응용 프로그램을 설치하기 전에 실행 중인 실행 파일 확인  |   [버전 1702](/sccm/apps/deploy-use/deploy-applications#how-to-check-for-running-executable-files-before-installing-an-application) |[버전 1706](/sccm/apps/deploy-use/deploy-applications#how-to-check-for-running-executable-files-before-installing-an-application)|
 | 데이터 웨어하우스 서비스 지점  |  [버전 1702](/sccm/core/servers/manage/data-warehouse) |[버전 1706](/sccm/core/servers/manage/data-warehouse)|
-| 클라이언트에 콘텐츠 배포를 위한 피어 캐시 |  [버전 1610](/sccm/core/plan-design/hierarchy/client-peer-cache) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
+| 클라이언트에 콘텐츠 배포를 위한 피어 캐시 |  [버전 1610](/sccm/core/plan-design/hierarchy/client-peer-cache) | [버전 1710](/sccm/core/plan-design/hierarchy/client-peer-cache)|
 | 클라우드 관리 게이트웨이 |  [버전 1610](/sccm/core/clients/manage/plan-cloud-management-gateway) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
 | 클라이언트 데이터 원본 대시보드 |  [버전 1610](/sccm/core/servers/deploy/configure/monitor-content-you-have-distributed#client-data-sources-dashboard) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
 | Microsoft Operations Management Suite 커넥터  | [버전 1606](../../../core/clients/manage/sync-data-microsoft-operations-management-suite.md) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|

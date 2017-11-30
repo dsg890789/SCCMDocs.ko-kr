@@ -3,7 +3,7 @@ title: "응용 프로그램 관리 계획 및 구성"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 응용 프로그램 배포에 필요한 종속성을 구현하고 구성합니다."
 ms.custom: na
-ms.date: 02/09/2017
+ms.date: 11/07/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ caps.latest.revision: "13"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: 66317bea84adbddf2d2e94c30a4a72e19229439b
-ms.sourcegitcommit: 18ac58374d2d513fe2a197c80f7c8c6890a7d612
+ms.openlocfilehash: cd06d3ee2ea14c9ff1b9cf09980c2b25a5263db9
+ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="plan-for-and-configure-application-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 관리 계획 및 구성
 
@@ -185,6 +185,26 @@ ms.lasthandoff: 10/16/2017
 1. 응용 프로그램 카탈로그 웹 사이트 지점 사이트 서버 역할이 설치되지 않은 경우 소프트웨어 센터에서 **컴퓨터 에이전트** 클라이언트 설정의 **소프트웨어 센터에 표시되는 조직 이름**에 지정된 조직 이름을 표시합니다. 자세한 내용은 [클라이언트 설정을 구성하는 방법](https://docs.microsoft.com/sccm/core/clients/deploy/configure-client-settings)을 참조하세요.
 2. 응용 프로그램 카탈로그 웹 사이트 지점 사이트 서버 역할이 설치되어 있는 경우 소프트웨어 센터에서 응용 프로그램 카탈로그 웹 사이트 지점 사이트 서버 역할 속성에 지정된 조직 이름 및 색을 표시합니다. 자세한 내용은 [응용 프로그램 카탈로그 웹 사이트 지점에 대한 옵션 구성](https://docs.microsoft.com/sccm/core/servers/deploy/configure/configuration-options-for-site-system-roles#BKMK_ApplicationCatalog_Website)을 참조하세요.
 3. Microsoft Intune 구독을 구성하고 Configuration Manager에 연결한 경우 소프트웨어 센터에서 Intune 구독 속성에 지정된 조직 이름, 색 및 회사 로고를 표시합니다. 자세한 내용은 [Configuring the Microsoft Intune subscription](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm#step-3-configure-intune-subscription)을 참조하십시오.
+
+#### <a name="to-manually-set-software-center-branding"></a>소프트웨어 센터 브랜딩 수동 설정
+<!-- 1351224 -->
+1710 릴리스에서는 엔터프라이즈 브랜딩 요소를 수동으로 추가하고 소프트웨어 센터에서 탭의 표시 여부를 지정할 수 있습니다. 소프트웨어 센터 특정의 회사 이름을 추가하고 소프트웨어 센터 구성 색 테마, 회사 로고 및 클라이언트 장치에 대한 표시 탭을 설정할 수 있습니다.
+
+1. **Configuration Manager** 콘솔에서 **관리** > **클라이언트 설정**을 차례로 선택합니다. 원하는 클라이언트 설정 인스턴스를 클릭합니다.
+2. **홈** 탭의 **속성** 그룹에서 **속성**을 선택합니다.
+3. **기본 설정** 대화 상자에서 **소프트웨어 센터**를 선택합니다.
+4. **새 설정을 선택하여 회사 정보 지정**에 **예**를 선택하여 소프트웨어 센터 사용자 지정 설정을 사용하도록 설정합니다.
+5. **회사 이름**을 입력합니다.
+6. **소프트웨어 센터에 대한 색 구성표**를 선택합니다.
+7. **찾아보기**를 클릭하여 소프트웨어 센터에 대한 로고를 탐색합니다. 로고는 400 x 100 픽셀의 JPEG 또는 PNG여야 하며 최대 크기는 750KB입니다.
+8. 클라이언트 장치에 대한 소프트웨어 센터에 탭이 표시되도록 하려면 **예**를 선택합니다. 다음과 같은 탭 중 하나 이상이 표시되어야 합니다.
+
+    -  응용 프로그램 사용 탭
+    -  업데이트 사용 탭
+    -  운영 체제 사용 탭
+    -  설치 상태 사용 탭
+    -  장치 준수 사용 탭
+    -  옵션 사용 탭
 
 > [!IMPORTANT]  
 >  소프트웨어 센터 브랜딩은 14일에 한 번씩 Intune 서비스와 동기화됩니다. 따라서 Intune의 변경 내용이 Configuration Manager에 표시되기 전에 지연이 발생할 수 있습니다.

@@ -3,7 +3,7 @@ title: "VPN 프로필을 만드는 방법 "
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 VPN 프로필을 만드는 방법을 알아봅니다."
 ms.custom: 
-ms.date: 4/19/2017
+ms.date: 11/20/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,11 +16,11 @@ author: lleonard-msft
 caps.handback.revision: "0"
 ms.author: alleonar
 ms.manager: angrobe
-ms.openlocfilehash: 4e8a082bff8b0f734da620669ddf403c0fe3eca6
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 21fc286cdcc05244e1895ded5623d346e6cb8ebe
+ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="how-to-create-vpn-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 VPN 프로필을 만드는 방법
 
@@ -34,16 +34,19 @@ ms.lasthandoff: 10/12/2017
 
 1.  Configuration Manager 콘솔에서 **자산 및 준수** > **준수 설정** > **회사 리소스 액세스** > **VPN 프로필**을 선택합니다.  
 
-3.  **홈** 탭의 **만들기** 그룹에서 **VPN 프로필 만들기**를 선택합니다.  
+2.  **홈** 탭의 **만들기** 그룹에서 **VPN 프로필 만들기**를 선택합니다.  
 
 
-1.  **일반** 페이지를 완료합니다. 를 참조하되 다음에 유의하십시오.  
+3.  **일반** 페이지를 완료합니다. 를 참조하되 다음에 유의하십시오.  
+
+    - 적절한 **플랫폼**을 선택합니다.
+
+       - Windows 8.1 플랫폼을 선택하면 **파일에서 기존 VPN 프로필 항목 가져오기**를 선택하여 XML 파일로 내보낸 VPN 프로필 정보를 가져오는 옵션이 있습니다.
 
     - VPN 프로필 이름에 \\/:*?&lt;>&#124; 문자나 공백 문자를 사용하지 마세요. 이러한 문자는 Windows Server VPN 프로필에서 지원되지 않습니다.  
 
-     -   **파일에서 기존 VPN 프로필 항목 가져오기**를 선택하여 XML 파일로 내보낸 VPN 프로필 정보를 가져옵니다(Windows 8.1 및 Windows RT 운영 체제에만 해당).  
 
-1.  **연결** 페이지에서 다음을 지정합니다.  
+4.  **연결** 페이지에서 다음을 지정합니다.  
 
     -   **연결 형식**: VPN 연결 형식을 선택합니다. 다음 표에 있는 연결 형식 중에서 선택할 수 있습니다.  
 

@@ -3,7 +3,7 @@ title: "업데이트"
 titleSuffix: Configuration Manager
 description: "**업데이트 및 서비스**라는 콘솔 내 서비스 메서드에 대해 알아봅니다. 이 방법을 사용하면 권장 업데이트를 손쉽게 찾아서 업데이트할 수 있습니다."
 ms.custom: na
-ms.date: 07/31/2017
+ms.date: 11/20/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: bca724f15dc18d7273bbca122b6428b4704a5d43
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: ecd458cc5f86a65926d44481c894228bae5f5fbe
+ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="updates-for-system-center-configuration-manager"></a>System Center Configuration Manager용 업데이트
 
@@ -75,12 +75,13 @@ Configuration Manager의 다음 버전은 기준, 업데이트 또는 두 가지
 
 |버전 |가용일|[지원 종료 날짜](/sccm/core/servers/manage/current-branch-versions-supported) |기준|콘솔 내 업데이트|  
 |-------------|-----------|------------|--------------|------------------------|  
+|[1710](/sccm/core/plan-design/changes/whats-new-in-version-1710)<br /><br /> 5.00.8577.1000|2017년 11월 20일|2018년 11월 20일|아니요|예|
 |[1706](/sccm/core/plan-design/changes/whats-new-in-version-1706)<br /><br /> 5.00.8540.1000|2017년 7월 31일|2018년 7월 31일|아니요|예|
 |[1702](/sccm/core/plan-design/changes/whats-new-in-version-1702)<br /><br /> 5.00.8498.1000|2017년 3월 27일| 2018년 3월 27일|예|예|
 |[1610](/sccm/core/plan-design/changes/whats-new-in-version-1610)<br /><br /> 5.00.8458.1000|2016년 11월 18일| 2017년 11월 18일|아니요|예|
 |[1606](/sccm/core/plan-design/changes/whats-new-in-version-1606)<br /><br /> 5.00.8412.1000|2016년 7월 22일| 2017년 7월 22일|아니요|예|
 |[1606](/sccm/core/plan-design/changes/whats-new-in-version-1606) 및 1606 핫픽스 롤업(KB3186654) </br></br>5.00.8412.1307*(참고 1)* |2016년 10월 12일| 2017년 10월 12일|예|아니요|
-| 1602<br /><br /> 5.00.8355.1000|2016년 3월 11일| 2017년 3월 11일|아니요|예| 
+| 1602<br /><br /> 5.00.8355.1000|2016년 3월 11일| 2017년 3월 11일|아니요|예|
 | 1511 <br /><br /> 5.00.8325.1000|2015년 12월 8일| 2016년 12월 8일|예|아니요|  
 
 

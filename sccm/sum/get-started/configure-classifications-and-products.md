@@ -1,21 +1,22 @@
 ---
-title: "동기화할 분류 및 제품 구성 | Microsoft 문서"
+title: "동기화할 분류 및 제품 구성"
+titleSuffix: Configuration Manager
 description: "다음 단계에 따라 Configuration Manager 콘솔에서 동기화할 분류 및 제품을 구성하세요."
 keywords: 
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/06/2016
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
 ms.technology: configmgr-sum
 ms.assetid: 5ddde4e6-d553-4182-b752-6bc8b4a26745
-ms.openlocfilehash: 2da61e6e06850b36543b9fd41bd9a7d2368006fb
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: f36ff74b794e57b51742c40d10bd25a9cb4a13a5
+ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 11/21/2017
 ---
 #  <a name="configure-classifications-and-products-to-synchronize"></a>동기화할 분류 및 제품 구성  
 
@@ -52,16 +53,16 @@ ms.lasthandoff: 08/07/2017
     >       
 
     > [!NOTE]    
-    > Configuration Manager 버전 1706부터 **Microsoft Surface 드라이버 및 펌웨어 업데이트 포함** 확인란을 선택하여 Microsoft Surface 드라이버를 동기화할 수도 있습니다. Surface 드라이버를 성공적으로 동기화하려면 모든 소프트웨어 업데이트 지점에서 Windows Server 2016을 실행해야 합니다.     
-    >    
-    > 이는 시험판 기능입니다. 시험판 기능은 프로덕션 환경의 초기 테스트를 위한 제품에 포함되었지만 이러한 기능은 프로덕션 준비가 된 것으로 간주되지 않아야 합니다. 이 기능을 사용하려면 사용자가 설정해야 합니다. 자세한 내용은 [업데이트에서 시험판 기능 사용](https://docs.microsoft.com/sccm/core/servers/manage/install-in-console-updates#bkmk_prerelease)을 참조하세요.
+    > Configuration Manager 버전 1706부터 **Microsoft Surface 드라이버 및 펌웨어 업데이트 포함** 확인란을 선택하여 Microsoft Surface 드라이버를 동기화할 수 있습니다. Surface 드라이버를 성공적으로 동기화하려면 모든 소프트웨어 업데이트 지점에서 Windows Server 2016을 실행해야 합니다. Surface 드라이버를 사용하도록 설정한 후 Windows Server 2012를 실행하는 컴퓨터에서 소프트웨어 업데이트 지점을 사용하도록 설정하면 드라이버 업데이트에 대한 검색 결과가 정확하지 않습니다. 이에 따라 Configuration Manager 콘솔 및 Configuration Manager 보고서에서 잘못된 준수 데이터가 표시됩니다.  
+    > 
+    > **Microsoft Surface 드라이버 및 펌웨어 업데이트 포함** 확인란은 Configuration Manager 버전 1710에서 항상 사용할 수 있습니다. 그러나 이는 Configuration Manager 버전 1706의 시험판 기능이며 사용할 수 있도록 설정해야 합니다. 시험판 기능은 프로덕션 환경에서의 초기 테스트를 위해 현재 분기에 포함된 기능입니다. 이러한 기능은 완전하게 지원되지만 아직 개발 중인 상태이므로 시험판 범주에서 벗어날 때까지는 변경될 수 있습니다. 자세한 내용은 [업데이트에서 시험판 기능 사용](https://docs.microsoft.com/sccm/core/servers/manage/install-in-console-updates#bkmk_prerelease)을 참조하세요.
 
 5.  **제품** 탭에서 소프트웨어 업데이트를 동기화할 제품을 지정한 다음 **닫기**를 클릭합니다.  
 
     > [!NOTE]  
-    >  각 소프트웨어 업데이트의 메타데이터는 업데이트를 적용할 수 있는 제품을 정의합니다. 제품은 Windows Server 2012와 같은 특정 버전의 운영 체제 또는 응용 프로그램입니다. 제품군은 개별 제품이 파생되는 기본 운영 체제 또는 응용 프로그램입니다. 제품군의 예로는 Windows를 들 수 있으며, Windows Server 2012는 Windows에 속합니다. 하나의 제품군 안에 다른 제품군 또는 개별 제품을 지정할 수 있습니다. 제품을 많이 선택할수록 소프트웨어 업데이트를 동기화하는 데 오래 걸립니다.  
+    >  각 소프트웨어 업데이트의 메타데이터는 업데이트를 적용할 수 있는 제품을 정의합니다. 제품은 Windows Server 2012와 같은 특정 버전의 운영 체제 또는 응용 프로그램입니다. 제품군은 개별 제품이 파생되는 기본 운영 체제 또는 응용 프로그램입니다. 제품군의 예로는 Windows를 들 수 있으며, Windows Server 2012는 Windows에 속합니다. 하나의 제품군 안에 다른 제품군 또는 개별 제품을 지정할 수 있습니다. 선택한 제품이 많을수록 소프트웨어 업데이트를 동기화하는 시간이 더 오래 걸립니다.  
     >   
-    >  소프트웨어 업데이트를 여러 제품에 적용 가능한 경우 동기화를 위해 제품을 하나 이상 선택하면 일부 제품을 선택하지 않아도 모든 제품이 Configuration Manager 콘솔에 나타납니다. 예를 들어 Windows Server 2012 운영 체제만 선택한 경우 소프트웨어 업데이트가 Windows 8과 Windows Server 2012에 적용된다면 두 제품 모두 Configuration Manager 콘솔에 표시됩니다.  
+    >  소프트웨어 업데이트를 여러 제품에 적용할 수 있고 하나 이상의 제품이 동기화되도록 선택하면 일부 제품을 선택하지 않아도 모든 제품이 Configuration Manager 콘솔에 표시됩니다. 예를 들어 Windows Server 2012 운영 체제만 선택했지만 소프트웨어 업데이트가 Windows 8 및 Windows Server 2012에 적용되는 경우 두 제품이 모두 Configuration Manager 콘솔에 표시됩니다.  
 
     > [!IMPORTANT]  
     >  Configuration Manager에는 소프트웨어 업데이트 지점을 처음 설치할 때 선택할 수 있는 제품 및 제품군의 목록이 저장됩니다. Configuration Manager를 릴리스한 후에 릴리스된 제품 및 제품군은 선택 가능한 제품 및 제품군 목록을 업데이트하는 소프트웨어 업데이트 동기화를 완료할 때까지 선택하지 못할 수 있습니다.  

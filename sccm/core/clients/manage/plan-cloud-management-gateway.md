@@ -9,11 +9,11 @@ ms.assetid: 2dc8c9f1-4176-4e35-9794-f44b15f4e55f
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: ffe7b2aa025b20d5b1d1a718e0eaa045817a66ee
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: b1063826841c37973e26954e164d867649c3fb9f
+ms.sourcegitcommit: c4a1bafcd004638d264a93d307c70d8b6f7fe023
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="plan-for-the-cloud-management-gateway-in-configuration-manager"></a>Configuration Manager에서 클라우드 관리 게이트웨이 계획
 
@@ -45,7 +45,7 @@ Configuration Manager 콘솔을 사용하여 Azure에 서비스를 배포하고 
 - 클라우드 관리 게이트웨이는 관리 지점 및 소프트웨어 업데이트 지점 역할만 지원합니다.
 -   Configuration Manager의 다음 기능은 현재 클라우드 관리 게이트웨이에 대해 지원되지 않습니다.
 
-    -   클라이언트 배포
+    -   클라이언트 강제 설치
     -   자동 사이트 할당
     -   응용 프로그램 카탈로그(소프트웨어 승인 요청 포함)
     -   전체 OSD(운영 체제 배포)

@@ -3,7 +3,7 @@ title: SQL Server Always On
 titleSuffix: Configuration Manager
 description: "SCCM에서 SQL Server Always On 가용성 그룹 사용 계획"
 ms.custom: na
-ms.date: 09/22/2017
+ms.date: 11/20/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ caps.latest.revision: "16"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 24eaa33f1f9b333894817f089149e2cbed35df75
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 93aec5773f56ad28950ae75db54739d04124794f
+ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="prepare-to-use-sql-server-always-on-availability-groups-with-configuration-manager"></a>Configuration Manager에서 SQL Server Always On 가용성 그룹 사용 준비
 
@@ -216,6 +216,11 @@ Configuration Manager 설치 프로그램을 실행하여 가용성 그룹의 �
   SQL Server 2016 Standard Edition에 도입된 [기본 가용성 그룹](https://msdn.microsoft.com/library/mt614935.aspx)은 Configuration Manager에서 사용하기 위한 요구 사항인 보조 복제본에 대한 읽기 액세스를 지원하지 않습니다.
 - **장애 조치 클러스터 인스턴스**  
   [장애 조치 클러스터 인스턴스](/sql/sql-server/failover-clusters/windows/always-on-failover-cluster-instances-sql-server)는 Configuration Manager에서 사용하는 복제본에 지원되지 않습니다.
+
+- **MultiSubnetFailover**    
+    다중 서브넷 구성 또는 [MutliSubnetFailover](/sql/database-engine/availability-groups/windows/create-or-configure-an-availability-group-listener-sql-server#MultiSubnetFailover) 키워드 연결 문자열에서 가용성 그룹을 사용하는 것은 지원되지 않습니다.
+
+
 
 **추가 가용성 그룹을 호스트하는 SQL Server:**   
 Configuration Manager 버전 1610 이전에서는 SQL Server의 가용성 그룹이 Configuration Manager에 사용하는 그룹 외에, 하나 이상의 가용성 그룹을 호스트할 경우 이러한 추가 가용성 그룹의 각 복제본은 Configuration Manager 설치 프로그램을 실행하거나 Configuration Manager 업데이트를 설치할 때 다음과 같은 구성이 설정되어 있어야 합니다.

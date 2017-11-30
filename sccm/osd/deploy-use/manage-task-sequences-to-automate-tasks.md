@@ -3,9 +3,9 @@ title: "작업 순서를 관리하여 작업 자동화"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager 환경에서 작업 순서 만들기 편집, 배포, 가져오기 및 내보내기를 통해 작업 순서를 관리할 수 있습니다."
 ms.custom: na
-ms.date: 03/24/2017
+ms.date: 11/15/2017
 ms.prod: configuration-manager
-ms.reviewer: na
+ms.reviewer: nac
 ms.suite: na
 ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
@@ -15,11 +15,11 @@ caps.latest.revision: "10"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 0174a95f1d3a487cab66d8152a3de70d91b07635
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 44e6afbfac3ef1e8318991854c8fdd22ead4c6ed
+ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="manage-task-sequences-to-automate-tasks-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업을 자동화하는 작업 순서 관리
 
@@ -446,6 +446,22 @@ Configuration Manager 버전 1702부터 강력한 작업 순서를 설정하고 
 5.  선택적으로, 작업 순서 변수가 평가되는 경우 Configuration Manager에서 사용할 우선 순위를 지정합니다.  
 
 6.  컬렉션에 모든 변수를 추가한 후 **확인**을 클릭합니다.  
+
+## <a name="add-child-task-sequences-to-a-task-sequence"></a>작업 순서에 자식 작업 순서 추가
+
+Configuration Manager 버전 1710부터 다른 작업 순서를 실행하는 새 작업 순서 단계를 추가할 수 있습니다. 이렇게 하면 작업 순서 간에 부모-자식 관계가 만들어집니다. 이러한 관계를 생성하면 다시 사용 가능한 모듈식 작업 순서를 더 만들 수 있습니다.
+
+작업 순서에 자식 작업 순서를 추가할 때는 다음 사항을 고려하세요.
+
+ - 부모 및 자식 작업 순서는 실제로는 클라이언트가 실행하는 단일 정책으로 결합됩니다.
+ - 전역 환경이 사용됩니다. 예를 들어 변수가 부모 작업 순서에 의해 설정된 후 자식 작업 순서에 의해 변경된 경우, 변수는 계속 변경된 상태로 유지됩니다. 마찬가지로 자식 작업 순서에서 새로 만든 변수는 부모 작업 순서의 나머지 단계에서 사용할 수 있습니다.
+ - 상태 메시지는 단일 작업 순서 작업에 대해 일반적인 방식을 사용할 때마다 전송됩니다.
+ - 작업 순서는 smsts.log 파일에 항목을 쓰며 자식 작업 순서가 시작될 때 새 로그 항목이 추가되므로 해당 작업 순서를 쉽게 확인할 수 있습니다.
+
+### <a name="to-add-a-child-task-sequence-to-a-task-sequence"></a>작업 순서에 자식 작업 순서를 추가하려면
+
+1. 작업 순서 편집기에서 **추가**를 클릭하고 **일반**을 선택한 다음 **작업 순서 실행**을 클릭합니다.
+2. **찾아보기**를 클릭하여 자식 작업 순서를 선택합니다.  
 
 ##  <a name="BKMK_AdditionalActionsTS"></a> 작업 순서를 관리하기 위한 추가 작업  
  작업 순서를 선택할 때 추가 작업을 사용하여 작업 순서를 관리할 수 있습니다.  

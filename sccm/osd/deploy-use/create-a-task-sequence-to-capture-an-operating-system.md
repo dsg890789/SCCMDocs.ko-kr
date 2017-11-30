@@ -16,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 98f9f44373b854b61714c21105a28b3240b4a7f7
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 48530c177a03b66dbc126025ca61e0078bc89d9f
+ms.sourcegitcommit: 5ec9f8c312688bf7f4de4d6007b121d743b80c4d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="create-a-task-sequence-to-capture-an-operating-system-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 운영 체제를 캡처하는 작업 순서 만들기
 
@@ -171,6 +171,9 @@ System Center Configuration Manager에서 작업 순서를 사용하여 컴퓨�
 9. 이 단계는 Configuration Manager 클라이언트가 참조 컴퓨터에 설치된 경우에만 사용합니다.  
 
      **추가**, **이미지**, [ConfigMgr 클라이언트 캡처 준비](../understand/task-sequence-steps.md#BKMK_PrepareConfigMgrClientforCapture)를 차례로 클릭합니다. 이 작업 순서 단계에서는 참조 컴퓨터에 Configuration Manager 클라이언트를 가져와서 이미징 프로세스의 일부로 캡처하기 위해 준비합니다.  
+
+    > [!Note]  
+    >  작업 순서는 Configuration Manager 클라이언트 제거를 지원하지 않습니다.
 
 10. **추가**, **이미지**, [Windows 캡처 준비](../understand/task-sequence-steps.md#BKMK_PrepareWindowsforCapture)를 차례로 클릭합니다. 이 작업 순서 동작은 Sysprep를 실행한 다음 컴퓨터를 작업 순서에 지정된 Windows PE 부팅 이미지로 다시 부팅합니다. 이 동작을 완료하려면 참조 컴퓨터가 도메인에 가입되어 있지 않아야 합니다.  
 
