@@ -3,7 +3,7 @@ title: "현재 분기 버전"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 버전 기록을 검토하고 제공하는 서비스의 단계에 대해 알아봅니다."
 ms.custom: na
-ms.date: 11/20/2017
+ms.date: 11/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,11 +16,11 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: noindex,nofollow
-ms.openlocfilehash: 628c01d3f746155076e5bab68a38c0a50c73697d
-ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
+ms.openlocfilehash: 8909c4de81ef0ca914120a67be1634380dc50c53
+ms.sourcegitcommit: 29196ffba45b16b2b6a2dc71de981dead850c41c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="support-for-system-center-configuration-manager-current-branch-versions"></a>System Center Configuration Manager 현재 분기 버전에 대한 지원
 
@@ -44,9 +44,9 @@ Microsoft는 1년에 몇 차례 System Center Configuration Manager 현재 분�
 
  **버전 기록**  
 
-|버전|가용일|지원 종료 날짜|  
+|버전 |가용일 |지원 종료 날짜|  
 |-------------|-----------------------|----------------------|  
-|1710|2017년 11월 20일|2018년 11월 20일|
+|1710|2017년 11월 20일|2019 년 5 월 20 |
 |1706|2017년 7월 31일|2018년 7월 31일|
 |1702|2017년 3월 27일|2018년 3월 27일|
 |1610|2016년 11월 18일|2017년 11월 18일|
