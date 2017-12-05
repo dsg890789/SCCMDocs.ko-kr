@@ -12,14 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 75652cd2-a95a-46c5-91c1-6d43fc8e787e
 caps.latest.revision: "7"
-author: Brenduns
-ms.author: brenduns
+author: mestew
+ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 1f3bb243c6c40a1c949b3c75aa4f8727f5ed42bd
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 640267b1ff16ba3cc31296187e3e3b3bbe670faa
+ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="checklist-for-installing-update-1606-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 업데이트 1606을 설치하기 위한 검사 목록
 

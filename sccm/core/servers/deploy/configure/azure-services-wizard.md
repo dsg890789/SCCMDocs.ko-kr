@@ -12,14 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: a26a653e-17aa-43eb-ab36-0e36c7d29f49
 caps.latest.revision: "0"
-author: Brenduns
-ms.author: brenduns
+author: mestew
+ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 833bc6588e079e124209d9c7adb91062e6afe6c3
-ms.sourcegitcommit: d025a2cbd1ed82f42f67255c97b913f2163b3baf
+ms.openlocfilehash: 7646e8bc368e5c01ddef41592c513f7bd1643cdb
+ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="configure-azure-services-for-use-with-configuration-manager"></a>Configuration Manager에서 사용하도록 Azure 서비스 구성
 

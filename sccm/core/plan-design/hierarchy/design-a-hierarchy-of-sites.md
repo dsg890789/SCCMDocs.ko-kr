@@ -13,14 +13,14 @@ ms.topic: get-started-article
 ms.assetid: 07ce872e-1558-42ad-b5ad-582c5b1bdbb4
 caps.latest.revision: "22"
 caps.handback.revision: "0"
-author: Brenduns
-ms.author: brenduns
+author: aaroncz
+ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 2d8c2c7f75ff0f288167c697fbcc1f3202dc95d6
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: f4bfad43e6ed47b8b69ba35865a3a36b833723c5
+ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="design-a-hierarchy-of-sites-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 사이트 계층 구조 디자인
 

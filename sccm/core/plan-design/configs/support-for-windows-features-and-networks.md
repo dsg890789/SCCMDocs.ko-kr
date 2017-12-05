@@ -13,14 +13,14 @@ ms.topic: article
 ms.assetid: 0cf4bacb-6b6d-4d4f-8640-b13fe15873de
 caps.latest.revision: "8"
 caps.handback.revision: "0"
-author: Brenduns
-ms.author: brenduns
+author: mestew
+ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 8688b4ed3b29bf380510ada475988dfe7cbc45b8
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 0cc1915a73ed55403eca27021b77aab1fd1ddb03
+ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="support-for-windows-features-and-networks-in-system-center-configuration-manager"></a>System Center Configuration Manager의 Windows 기능 및 네트워크 지원
 

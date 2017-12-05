@@ -13,14 +13,14 @@ ms.topic: article
 ms.assetid: d466edd2-97f0-44c1-a73e-d71abbdbf4a8
 caps.latest.revision: "6"
 caps.handback.revision: "0"
-author: Brenduns
-ms.author: brenduns
+author: mestew
+ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 8a8571e844be796c7f87f7742dce6c311d7195ea
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 78d745ed9ed7e8f11f6fc165701dcf4a7004573c
+ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="uninstall-sites-and-hierarchies-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사이트 및 계층 제거
 

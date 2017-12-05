@@ -12,14 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 5db2926f-f03e-49c7-b44b-e89b1a5a6779
 caps.latest.revision: "10"
-author: Brenduns
-ms.author: brenduns
+author: mestew
+ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: b0b2532a525fbf9b7a4942831e6066638b881665
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: cccb59cfa4466234ef55a43b81333567f007b98e
+ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="configure-boundary-groups-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 경계 그룹 구성
 

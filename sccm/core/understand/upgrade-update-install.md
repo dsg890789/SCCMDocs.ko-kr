@@ -13,14 +13,14 @@ ms.topic: article
 ms.assetid: 17fab17f-304d-4f6a-87c7-30ab4f5521ed
 caps.latest.revision: "0"
 caps.handback.revision: "0"
-author: Brenduns
-ms.author: brenduns
+author: aaroncz
+ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: b78f35e60365742ceda9773ae63eae5bb3d5b538
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 048678f63cb09f4cd06c2537c5741ba307e6497c
+ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="about-upgrade-update-and-install-for-site-and-hierarchy-infrastructure"></a>사이트 및 계층 인프라에 대한 업그레이드, 업데이트 및 설치 정보
 

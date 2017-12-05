@@ -12,14 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 76c220b6-1824-4e2e-8c61-a719f0b056f1
 caps.latest.revision: "3"
-author: Brenduns
-ms.author: brenduns
+author: mestew
+ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 0b03f33642d543e362cba38c464713e077fa6b07
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: a56cb2c6d8f6cb52d53379b5e55408e8ce8087e4
+ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="where-to-get-installation-media-for-system-center-configuration-manager"></a>System Center Configuration Manager용 설치 미디어를 다운로드할 수 있는 위치
 

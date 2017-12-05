@@ -12,14 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: bd5b34c9-7304-4743-81c3-96f1e0c80702
 caps.latest.revision: "4"
-author: Brenduns
-ms.author: brenduns
+author: aaroncz
+ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: ef02b16e86348a596f29b8235451b30f30a6c38c
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 2099add178d76099363a6fc9c37c615a657b8743
+ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="customer-experience-improvement-program-ceip-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 CEIP(사용자 환경 개선 프로그램)
 

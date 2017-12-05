@@ -12,14 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: aebafaf9-b3d5-4a0f-9ee5-685758c037a1
 caps.latest.revision: "5"
-author: Brenduns
-ms.author: brenduns
+author: mestew
+ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: b9b2fdcff572127e9e78d7e7acba89bc4c6759a2
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: e7eab46d423ed37bde7ac5f325d6cd8175806302
+ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="install-and-configure-distribution-points-for-system-center-configuration-manager"></a>System Center Configuration Manager의 배포 지점 설치 및 구성
 

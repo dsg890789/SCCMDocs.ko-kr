@@ -13,14 +13,14 @@ ms.topic: get-started-article
 ms.assetid: 104fb4cc-6e83-40a3-8e6b-ac909fb9ec7d
 caps.latest.revision: "5"
 caps.handback.revision: "0"
-author: Brenduns
-ms.author: brenduns
+author: aaroncz
+ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 1bebb28bccc8b1faa79a56c97c56793d391bf70c
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 4366ea22ff654b787a3b350ed6a0b58dfbdd8e7d
+ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="plan-for-the-site-database-for-system-center-configuration-manager"></a>System Center Configuration Manager용 사이트 데이터베이스에 대한 계획
 

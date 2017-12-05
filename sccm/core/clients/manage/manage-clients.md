@@ -15,11 +15,11 @@ caps.latest.revision: "17"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: ae1bc53cf15b2a1746656667f7bf546742432c11
-ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
+ms.openlocfilehash: 8afb217524d5c2236fb07b13cb42ca50ae200183
+ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="how-to-manage-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트를 관리하는 방법
 
@@ -269,12 +269,7 @@ CCMSetup.exe에서 이러한 명령줄 속성을 사용하는 방법에 대한 �
 
 2.  **캐시** 탭에서 공간 및 위치 속성을 설정합니다. 기본 위치는 *%windir%*\ccmcache입니다.  
 
-5.  캐시 폴더의 파일을 삭제하려면 **파일 삭제**를 선택합니다.  
-
-    > [!NOTE]
-    >
-    > 캐시 폴더는 일반 Windows 폴더이므로 스크립트, 유틸리티 또는 PowerShell cmdlet `Remove-Item`을 사용하여 폴더 내용 삭제를 자동화할 수 있습니다.
-
+3.  캐시 폴더의 파일을 삭제하려면 **파일 삭제**를 선택합니다.  
 
 ### <a name="to-configure-client-cache-size-in-client-settings"></a>클라이언트 설정에서 클라이언트 캐시 크기를 구성하려면
 

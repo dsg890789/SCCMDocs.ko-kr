@@ -12,14 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: f4f9a5fd-f573-4b99-ad93-b2c76812e922
 caps.latest.revision: "0"
-author: Brenduns
-ms.author: brenduns
+author: aaroncz
+ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 13f483a31e5f74af549fd201e53079ae894227ae
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: a805f2250f1dddf9a7f93f425b2e1b17d9b4e606
+ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="install-and-upgrade-with-the-version-1606-baseline-media-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 버전 1606 기준 미디어를 사용하여 설치 및 업그레이드
 

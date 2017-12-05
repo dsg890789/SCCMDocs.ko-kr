@@ -13,14 +13,14 @@ ms.topic: article
 ms.assetid: e80d1151-91db-4a27-8411-a957297b67d0
 caps.latest.revision: "15"
 caps.handback.revision: "0"
-author: Brenduns
-ms.author: brenduns
+author: aaroncz
+ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 5431f23c16ed452223ad931266adad4c20739124
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 907d937a7aef7fb4173c5d4a45aef0bc210bf96f
+ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="manage-network-bandwidth-for-content"></a>콘텐츠의 네트워크 대역폭 관리
 System Center Configuration Manager의 콘텐츠 관리 프로세스에 사용되는 네트워크 대역폭을 관리하려는 경우 일정 및 제한용 기본 제공 컨트롤을 사용할 수 있습니다. 사전 준비된 콘텐츠를 사용할 수도 있습니다. 다음 섹션에서는 이러한 옵션을 더 자세히 설명합니다.

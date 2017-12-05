@@ -13,14 +13,14 @@ ms.topic: article
 ms.assetid: bc2282d5-0571-465b-9528-a555855eaacd
 caps.latest.revision: "18"
 caps.handback.revision: "0"
-author: Brenduns
-ms.author: brenduns
+author: mestew
+ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 94e412399f4ad8e1a045d3556a63b7757f17968b
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 145fe172665310caa48d8f152ad46d72df4168dd
+ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="about-the-service-connection-point-in-system-center-configuration-manager"></a>System Center Configuration Manager의 서비스 연결 지점 정보
 
