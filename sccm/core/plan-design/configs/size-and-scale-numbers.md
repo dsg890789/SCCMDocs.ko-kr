@@ -12,14 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c5a42100-2f60-4952-b495-918025ea6559
 caps.latest.revision: "4"
-author: Brenduns
-ms.author: brenduns
+author: mestew
+ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: c0277fed7db5803aa2b2246ca879640136dce02a
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: bda1ab737a3af5e13f180771cc17c9850165906c
+ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="size-and-scale-numbers-for-system-center-configuration-manager"></a>System Center Configuration Manager의 크기 조정 및 규모 숫자 값
 
@@ -147,7 +147,10 @@ ms.lasthandoff: 10/12/2017
  예를 들어 Microsoft Intune을 통합한 경우 계층 구조에서 데스크톱 700,000대, Mac 및 Windows CE 7.0 최대 25,000대, 클라우드 기반 장치 최대 300,000대로 총 1,025,000대 장치를 지원할 수 있습니다. 온-프레미스 MDM으로 관리하는 장치를 지원하는 경우 계층 구조의 총 수는 825,000대 장치입니다.  
 
 > [!IMPORTANT]  
->  중앙 관리 사이트가 SQL Server Standard Edition을 사용하는 계층 구조에서, 계층 구조는 최대 50,000대의 데스크톱 및 장치를 지원합니다. 독립 실행형 기본 사이트에서 사용 중인 SQL Server의 버전은 명시된 클라이언트 수까지 지원하도록 해당 사이트 용량을 제한하지 않습니다.  
+>  중앙 관리 사이트가 SQL Server Standard Edition을 사용하는 계층 구조에서, 계층 구조는 최대 50,000대의 데스크톱 및 장치를 지원합니다. 50,000개 이상의 데스크톱과 장치를 지원하려면 SQL Server Enterprise Edition을 사용해야 합니다. 이 요구 사항은 중앙 관리 사이트에만 적용되며 사용하는 SQL Server 버전이 명시된 수의 클라이언트를 지원하는 사이트의 용량을 제한하지 않는 독립 실행형 기본 사이트 또는 자식 기본 사이트에는 적용되지 않습니다   
+
+
+ 독립 실행형 기본 사이트에서 사용 중인 SQL Server의 버전은 명시된 클라이언트 수까지 지원하도록 해당 사이트 용량을 제한하지 않습니다.  
 
 
 ###  <a name="bkmk_chipri"></a> 자식 기본 사이트  

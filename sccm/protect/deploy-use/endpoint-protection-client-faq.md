@@ -15,11 +15,11 @@ caps.latest.revision: "15"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.openlocfilehash: de813a38d6278a60189667165bf4911bd314f14a
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: a3fb0bc39f1606f1a65b5623c9567819b1a0c52e
+ms.sourcegitcommit: 5d46ed593b1cc461ea3f6ff6917bcd272b095ed7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="endpoint-protection-client-frequently-asked-questions"></a>Endpoint Protection 클라이언트에 대한 질문과 대답
 
@@ -63,7 +63,7 @@ ms.lasthandoff: 10/12/2017
     |컴퓨터에 파일 및 프로그램 활동 모니터링|이 옵션은 파일 및 프로그램이 컴퓨터에서 실행되기 시작하면 모니터링을 수행하고 수행할 작업 및 수행된 작업을 사용자에게 알립니다. 악성 소프트웨어는 사용자가 설치한 프로그램의 취약점을 악용하여 사용자 모르게 악성 또는 동의 없이 설치된 소프트웨어를 실행할 수 있으므로 이러한 알림은 매우 중요합니다. 예를 들어 스파이웨어는 사용자가 자주 사용자는 프로그램을 시작하면 백그라운드에서 자체적으로 실행될 수 있습니다. Windows Defender는 프로그램을 모니터링하고 의심스러운 활동이 감지되면 경고합니다.|  
     |동작 모니터링 사용|이 옵션은 기존의 바이러스 백신 검색 방법으로 검색될 수 없는 의심스러운 패턴의 동작 모음을 모니터링합니다.|  
 
-    |네트워크 검사 시스템 사용|이 옵션은 알려진 취약점의 “제로 데이” 취약성 공격으로부터 컴퓨터를 보호하여, 취약점이 발견되는 시점과 업데이트가 적용되는 시점 사이의 기간을 줄입니다.|  
+    |네트워크 검사 시스템 사용|이 옵션은 알려진 취약점의 "제로 데이" 취약성 공격으로부터 컴퓨터를 보호하여, 취약점이 발견되는 시점과 업데이트가 적용되는 시점 사이의 기간을 줄입니다.|  
 
 -   **검사 옵션** - Windows Defender를 사용하여 바이러스, 스파이웨어 및 컴퓨터를 위험에 빠트릴 수 있는 기타 악성 소프트웨어와 같은 잠재적인 위협 요소를 검사할 수 있습니다. 정기적 검사를 예약하고 검사 중 검색된 악성 소프트웨어를 제거할 수도 있습니다.  
 

@@ -3,7 +3,7 @@ title: "하이브리드 MDM의 새로운 기능"
 titleSuffix: Configuration Manager
 description: "Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 장치 관리 기능에 대해 알아봅니다."
 ms.custom: na
-ms.date: 11/12/2017
+ms.date: 11/29/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ ms.assetid: 7b127cee-61f1-4681-9760-caebed36ddf5
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 4877d05004bd883a3ae0ad353a78643cf559275e
-ms.sourcegitcommit: 536f7295e9ea361f1f9ead6c25f3685deb041ad8
+ms.openlocfilehash: 189e737eca5dee5bca3f0748cd1b4d944f868565
+ms.sourcegitcommit: 4af1da9c18f5bdff31426cf1d58c7d949372292d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 장치 관리의 새로운 기능
 
@@ -46,38 +46,52 @@ ms.lasthandoff: 11/21/2017
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
-- **macOS용 회사 포털 앱 사용 가능** <!--1541700--> macOS용 Intune 회사 포털의 환경이 업데이트되어, 사용자가 등록한 모든 장치에서 필요한 모든 정보 및 준수 알림을 깔끔하게 표시하도록 최적화되었습니다. 또한 Intune 회사 포털이 장치에 배포되면 macOS용 Microsoft 자동 업데이트에서 해당 업데이트를 제공합니다. macOS 장치에서 Intune 회사 포털 웹 사이트에 로그인하여 새 macOS용 Intune 회사 포털을 다운로드할 수 있습니다.
+- **관리되는 앱에서 텍스트 프로토콜 허용** <!-- 1414050  -->    
+  Intune 앱 SDK로 관리되는 앱에서 SMS 메시지를 보낼 수 있습니다.
 
-- **Microsoft Planner가 이제 승인된 앱의 MAM(모바일 앱 관리) 목록에 속함** <!-- 1248473 --> iOS 및 Android용 Microsoft Planner 앱이 이제 MAM(모바일 앱 관리)에 대한 승인된 앱에 속합니다. Azure Portal의 Intune 앱 보호 블레이드를 통해 모든 테넌트에 대해 앱을 구성할 수 있습니다. 자세한 내용은 [승인된 앱의 MAM 목록](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)을 참조하세요.
+- **macOS용 회사 포털 앱 사용 가능** <!--1541700-->    
+  macOS용 Intune 회사 포털에는 사용자가 등록한 모든 장치에 필요한 모든 정보 및 준수 알림을 분명히 표시하도록 최적화된 업데이트된 환경이 있습니다. 또한 Intune 회사 포털이 장치에 배포되면 macOS용 Microsoft 자동 업데이트에서 해당 업데이트를 제공합니다. macOS 장치에서 Intune 회사 포털 웹 사이트에 로그인하여 새 macOS용 Intune 회사 포털을 다운로드할 수 있습니다.
 
-- **iOS용 관리되는 앱 로그에 대한 액세스** <!-- 1469920 --> 관리되는 브라우저를 설치한 최종 사용자는 이제 Microsoft에서 게시한 모든 앱의 관리 상태를 볼 수 있고 관리되는 iOS 앱 문제를 해결하기 위해 로그를 보낼 수 있습니다.
+- **Microsoft Planner가 이제 승인된 앱의 MAM(모바일 앱 관리) 목록에 포함됨**  <!-- 1248473 -->    
+  iOS 및 Android용 Microsoft Planner 앱이 이제 MAM(모바일 앱 관리)의 승인된 앱에 포함됩니다. Azure Portal의 Intune 앱 보호 블레이드를 통해 모든 테넌트에 대해 앱을 구성할 수 있습니다. 자세한 내용은 [승인된 앱의 MAM 목록](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)을 참조하세요.
+
+- **iOS의 관리되는 앱 로그에 액세스** <!-- 1469920 -->    
+  관리되는 브라우저를 설치한 최종 사용자는 Microsoft에서 게시한 모든 앱의 관리 상태를 볼 수 있고 관리된 iOS 앱 문제를 해결하도록 로그를 보낼 수 있습니다.
   
   iOS 장치의 Managed Browser에서 문제 해결 모드를 사용하도록 설정하는 방법을 알아보려면 [iOS의 Managed Browser를 사용하여 관리되는 앱 로그에 액세스하는 방법](https://docs.microsoft.com/intune/app-configuration-managed-browser#how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios)을 참조하세요.
 
-- **버전 2.9.0의 iOS용 회사 포털에서 장치 설정 워크플로에 대한 개선 사항** iOS용 회사 포털 앱에서 장치 설정 워크플로가 개선되었습니다. 언어가 사용자에게 더 친숙하고 가능한 경우 화면을 합쳤습니다. 또한 설정 텍스트 전체에서 회사 이름을 사용하여 회사에 대한 언어의 관련성을 높였습니다. 이 업데이트된 워크플로는 [앱 UI의 새로운 기능](https://docs.microsoft.com/intune/whats-new-app-ui#week-of-november-13-2017) 페이지에서 확인할 수 있습니다.
+- **버전 2.9.0의 iOS용 회사 포털의 장치 설정 워크플로 개선**    
+  iOS용 회사 포털 앱의 장치 설정 워크플로가 개선되었습니다. 언어가 사용자에게 더 친숙하고 가능한 경우 화면을 합쳤습니다. 또한 설정 텍스트 전체에서 회사 이름을 사용하여 회사에 대한 언어의 관련성을 높였습니다. 이 업데이트된 워크플로는 [앱 UI의 새로운 기능](https://docs.microsoft.com/intune/whats-new-app-ui#week-of-november-13-2017) 페이지에서 확인할 수 있습니다.
 
-- **Android용 회사 포털 앱에 대한 피드백 프롬프트** <!--1165249--> Android용 회사 포털 앱에서는 이제 최종 사용자 피드백을 요청합니다. 이 피드백은 Microsoft로 바로 전송되며, 일반 사용자에게 공개 Google Play 스토어에서 앱을 검토할 기회를 제공합니다. 피드백은 필수는 아니며, 사용자가 앱을 계속 사용할 수 있도록 쉽게 해제할 수 있습니다. 
+- **Android용 회사 포털 앱의 피드백 프롬프트** <!--1165249-->    
+Android용 회사 포털 앱에서 이제 최종 사용자 피드백을 요청합니다. 이 피드백은 Microsoft로 바로 전송되며, 일반 사용자에게 공개 Google Play 스토어에서 앱을 검토할 기회를 제공합니다. 피드백은 필수는 아니며, 사용자가 앱을 계속 사용할 수 있도록 쉽게 해제할 수 있습니다. 
 
-- **최종 사용자에게 Windows 10 장치에 대해 확인할 수 있는 장치 정보를 알림** <!--1337920--> Windows 10용 회사 포털 앱의 [장치 세부 정보] 화면에 **소유권 유형**이 추가되었습니다. 이를 통해 사용자는 Intune 최종 사용자 문서의 이 페이지에서 바로 개인 정보에 대한 자세한 내용을 찾을 수 있습니다. **정보** 화면에서도 이 정보를 찾을 수 있습니다.
+- **Windows 10 장치에 대해 표시되는 장치 정보를 최종 사용자에게 알리기** <!--1337920-->    
+Windows 10용 회사 포털 앱의 장치 세부 정보 화면에 **소유권 유형**이 추가되었습니다. 이를 통해 사용자는 Intune 최종 사용자 문서의 이 페이지에서 바로 개인 정보에 대한 자세한 내용을 찾을 수 있습니다. **정보** 화면에서도 이 정보를 찾을 수 있습니다.
 
-- **Android 장치에 대해 새로운 ‘해결’ 작업 사용 가능** <!--1583480--> Android용 회사 포털 앱의 _장치 설정 업데이트_ 페이지에 ‘해결’ 작업이 도입되었습니다. 이 옵션을 선택하면 최종 사용자가 장치를 비준수 상태로 만든 설정으로 바로 이동됩니다. Android용 회사 포털 앱은 현재 [장치 암호](https://docs.microsoft.com/intune-user-help/set-your-pin-or-password-android), [장치 암호화](https://docs.microsoft.com/intune-user-help/encrypt-your-device-android), [USB 디버깅](https://docs.microsoft.com/intune-user-help/you-need-to-turn-off-usb-debugging-android) 및 [알 수 없는 소스](https://docs.microsoft.com/intune-user-help/you-need-to-turn-off-unknown-sources-android) 설정에 대해 이 작업을 지원합니다. 
+- **Android 장치에서 사용할 수 있는 새로운 ‘해결’ 작업** <!--1583480-->    
+  Android용 회사 포털 앱은 _장치 설정 업데이트_ 페이지에서 ‘해결’ 작업을 소개하고 있습니다. 이 옵션을 선택하면 최종 사용자가 장치를 비준수 상태로 만든 설정으로 바로 이동됩니다. Android용 회사 포털 앱은 현재 [장치 암호](https://docs.microsoft.com/intune-user-help/set-your-pin-or-password-android), [장치 암호화](https://docs.microsoft.com/intune-user-help/encrypt-your-device-android), [USB 디버깅](https://docs.microsoft.com/intune-user-help/you-need-to-turn-off-usb-debugging-android) 및 [알 수 없는 소스](https://docs.microsoft.com/intune-user-help/you-need-to-turn-off-unknown-sources-android) 설정에 대해 이 작업을 지원합니다. 
 
 
 ### <a name="new-in-configuration-manager-current-branch"></a>Configuration Manager(현재 분기)의 새로운 기능
 
-- **새 모바일 응용 프로그램 관리 정책 설정** <!-- 1324760 --> 모바일 응용 프로그램 관리 정책 설정에 다음 설정이 추가되었습니다.
-  - **연락처 동기화 사용 안 함**: 앱에서 장치의 네이티브 연락처 앱에 데이터를 저장하는 것을 방지합니다.
-  - **인쇄 사용 안 함**: 앱에서 회사 또는 학교 데이터를 인쇄하는 것을 방지합니다.
+- **비준수에 대한 작업** <!--1321366 -->    
+  이제 규정을 준수하지 않는 장치에 적용되는 작업을 시간 순으로 구성할 수 있습니다. 예를 들어 전자 메일을 통해 사용자에게 비준수 장치를 알리거나 해당 장치를 비준수 장치로 표시할 수 있습니다. 자세한 내용은 [비준수에 대한 작업 설정](/sccm/mdm/deploy-use/actions-for-noncompliance)을 참조하세요.
+
+- **새 모바일 응용 프로그램 관리 정책 설정** <!-- 1324760 -->    
+  모바일 응용 프로그램 관리 정책 설정에 다음과 같은 설정이 추가되었습니다.
+  - **연락처 동기화 사용 안 함:** 앱에서 장치의 네이티브 연락처 앱에 데이터를 저장하지 않도록 방지합니다.
+  - **인쇄 사용 안 함:** 앱에서 회사 또는 학교 데이터를 인쇄하지 않도록 방지합니다.
 
   새로운 앱 보호 정책 설정을 사용하려면 [Configuration Manager에서 앱 보호 정책을 사용하여 앱 보호](/sccm/mdm/deploy-use/protect-apps-using-mam-policies)를 참조하세요.
 
-- **Windows 10 ARM64 장치 지원** <!-- 1355000 --> Windows 10을 실행하는 ARM64 장치를 사용할 수 있는 경우 이러한 장치에서 하이브리드 MDM(모바일 장치 관리) 시나리오가 지원됩니다. 자세한 내용은 [Windows 10 ARM64 장치 지원](/sccm/core/plan-design/changes/whats-new-in-version-1710#windows-10-arm64-device-support)을 참조하세요.
+- **Windows 10 ARM64 장치 지원** <!-- 1355000 -->    
+  하이브리드 MDM(모바일 장치 관리) 시나리오는 이러한 장치를 사용할 수 있을 때 Windows 10을 실행하는 ARM64 장치에서 지원됩니다. 자세한 내용은 [Windows 10 ARM64 장치 지원](/sccm/core/plan-design/changes/whats-new-in-version-1710#windows-10-arm64-device-support)을 참조하세요.
 
-- **Configuration Manager 콘솔의 VPN 프로필 환경 개선** <!-- 1318232 --> 이 릴리스에서는 선택한 플랫폼에 적절한 설정을 표시하기 위해 VPN 프로필 마법사 및 속성 페이지가 업데이트되었습니다. 이 기능은 이전에 Configuration Manager Technical Preview 1709에서 사용할 수 있었으며, 이제 Intune과 Configuration Manager(현재 분기) 버전 1710을 포함하는 하이브리드 배포에서 사용할 수 있습니다.
+- **Configuration Manager 콘솔의 VPN 프로필 환경 개선** <!-- 1318232 -->    
+  이 릴리스에서 선택된 플랫폼에 적절한 설정을 표시하기 위해 VPN 프로필 마법사 및 속성 페이지를 업데이트했습니다. 이 기능은 이전에 Configuration Manager Technical Preview 1709에서 사용할 수 있었으며, 이제 Intune과 Configuration Manager(현재 분기) 버전 1710을 포함하는 하이브리드 배포에서 사용할 수 있습니다.
   - [Configuration Manager 콘솔의 VPN 프로필 환경 개선](/sccm/core/plan-design/changes/whats-new-in-version-1710#improved-vpn-profile-experience-in-configuration-manager-console).
 
-
-Configuration Manager 콘솔의 VPN 프로필 환경 개선
 
 ### <a name="new-in-configuration-manger-technical-preview-1711"></a>Configuration Manager Technical Preview 1711의 새로운 기능
 
@@ -94,7 +108,11 @@ Configuration Manager 콘솔의 VPN 프로필 환경 개선
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능  
 
-- **iOS용 회사 포털에서 인증서 기반의 인증 지원** <!--1029830--> iOS용 회사 포털 앱에 CBA(인증서 기반 인증)에 대한 지원이 추가되었습니다. CBA가 있는 사용자는 사용자 이름을 입력한 다음 “인증서를 사용하여 로그인” 링크를 탭합니다. Android 및 Windows용 회사 포털 앱에는 CBA가 이미 지원됩니다. 자세한 내용은 [회사 포털 앱에 로그인](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal) 페이지를 참조하세요.
+- **Android 회사 포털의 장치 설정 진행률 표시기** <!--1565657-->    
+  Android용 회사 포털 앱은 사용자가 장치를 등록하는 동안 장치 설정 진행률 표시기를 표시합니다. 이 표시기에는 “장치 설정 중...”부터 “장치 등록 중...”, “장치 등록 완료 중...”, “장치 설정 완료 중...”까지 차례로 새로운 상태가 표시됩니다.  
+
+- **iOS용 회사 포털에서 인증서 기반 인증 지원** <!--1029830-->    
+  iOS용 회사 포털 앱에 CBA(인증서 기반 인증)에 대한 지원이 추가되었습니다. CBA가 있는 사용자는 사용자 이름을 입력한 다음 “인증서를 사용하여 로그인” 링크를 탭합니다. Android 및 Windows용 회사 포털 앱에는 CBA가 이미 지원됩니다. 자세한 내용은 [회사 포털 앱에 로그인](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal) 페이지를 참조하세요.
 
 - **회사 포털에서 장치 설정 워크플로 개선** <!--1490692-->    
   Android용 회사 포털 앱에서 장치 설정 워크플로를 개선했습니다. 언어는 귀사를 위해 더욱 친숙하고 구체적으로 변경되었으며, 가능한 한 화면을 합쳤습니다. [앱 UI의 새로운 기능](https://docs.microsoft.com/intune/whats-new-app-ui#week-of-october-2-2017) 페이지에서 이러한 내용을 확인할 수 있습니다.

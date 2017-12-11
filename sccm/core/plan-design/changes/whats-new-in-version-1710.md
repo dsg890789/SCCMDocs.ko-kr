@@ -10,14 +10,14 @@ ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: bc6c3e5f-b9e2-400e-9d9d-446ff93c520c
-author: Brenduns
-ms.author: brenduns
+author: mestew
+ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 33a5bff1e202822ce3ec5755958d34af461957e9
-ms.sourcegitcommit: 536f7295e9ea361f1f9ead6c25f3685deb041ad8
+ms.openlocfilehash: 83bd5fc972bc0bef07b206e160463db71837e827
+ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="what39s-new-in-version-1710-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1710의 새로운 기능
 
@@ -28,8 +28,8 @@ System Center Configuration Manager 현재 분기의 업데이트 1710은 버전
 > [!TIP]  
 > 새 사이트를 설치하려면 기준 버전의 Configuration Manager를 사용해야 합니다.  
 >  다음에 대해 자세히 알아보세요.    
->   - [새 사이트 설치](https://technet.microsoft.com/library/mt590197.aspx)  
->   - [사이트에 업데이트 설치](https://technet.microsoft.com/library/mt607046.aspx)  
+>   - [새 사이트 설치](/sccm/core/servers/deploy/install/installing-sites)  
+>   - [사이트에 업데이트 설치](/sccm/core/servers/manage/updates)  
 >   - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)  
 
 다음 섹션에서는 Configuration Manager 버전 1710에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.  
@@ -60,13 +60,13 @@ Version 1710 drops support for the following products:
 <!-- 1350871 -->
 Windows 10 버전 1607(Anniversary Update라고도 함)부터는 Windows 10 장치를 온-프레미스 AD(Active Directory)와 클라우드 기반 Azure AD에 동시에 조인할 수 있습니다(하이브리드 Azure AD). 공동 관리에서는 이 향상된 기능을 사용하며 Configuration Manager 및 Intune을 둘 다 사용하여 Windows 10 장치를 동시에 관리할 수 있게 해줍니다. 이것은 기존 관리에서 최신 관리에 대한 연결을 제공하고 단계별 접근 방법을 사용하여 전환할 수 있는 경로를 제공하는 솔루션입니다. 자세한 내용은 [Windows 10 장치의 공동 관리](/sccm/core/clients/manage/co-management-overview)를 참조하세요.
 
-### <a name="restart-computers-form-the-configuration-manager-console-----1356283---"></a>Configuration Manager 콘솔에서 컴퓨터 다시 시작 <!-- 1356283 -->
+### <a name="restart-computers-from-the-configuration-manager-console-----1356283---"></a>Configuration Manager 콘솔에서 컴퓨터 다시 시작 <!-- 1356283 -->
 이 릴리스부터 Configuration Manager 콘솔을 사용하여 다시 시작해야 하는 클라이언트 장치를 식별한 다음 클라이언트 알림 작업을 통해 해당 장치를 다시 시작할 수 있습니다.
 
 [System Center Configuration Manager에서 클라이언트를 관리하는 방법](/sccm/core/clients/manage/manage-clients#restart-clients)을 참조하세요.
 
 
-<!--  ## Compliance settings  -->
+<!-- ## Compliance settings -->
 
 
 ## <a name="application-management"></a>응용 프로그램 관리
@@ -130,6 +130,10 @@ Windows 10 버전 1607(Anniversary Update라고도 함)부터는 Windows 10 장�
 
 
 ## <a name="mobile-device-management"></a>모바일 장치 관리
+
+### <a name="actions-for-non-compliance"></a>비준수에 대한 작업 
+<!--1321366 -->    
+이제 규정을 준수하지 않는 장치에 적용되는 작업을 시간 순으로 구성할 수 있습니다. 예를 들어 전자 메일을 통해 사용자에게 비준수 장치를 알리거나 해당 장치를 비준수 장치로 표시할 수 있습니다. 자세한 내용은 [비준수에 대한 작업 설정](/sccm/mdm/deploy-use/actions-for-noncompliance)을 참조하세요.
 
 ### <a name="windows-10-arm64-device-support"></a>Windows 10 ARM64 장치 지원
 <!-- 1355000 -->

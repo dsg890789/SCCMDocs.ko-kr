@@ -3,7 +3,7 @@ title: "릴리스 정보 "
 titleSuffix: Configuration Manager
 description: "Microsoft 기술 자료 문서에서 다루지 않거나 제품에서 아직 해결되지 않은 긴급한 문제에 대해서는 이 정보를 참조하세요."
 ms.custom: na
-ms.date: 08/23/2017
+ms.date: 11/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,14 +13,14 @@ ms.topic: get-started-article
 ms.assetid: 030947fd-f5e0-4185-8513-2397fb2ec96f
 caps.latest.revision: "41"
 caps.handback.revision: "0"
-author: Brenduns
-ms.author: brenduns
+author: mestew
+ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 2571cfbff1373db05279918af776d8be81a5c322
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 8030ce7f98ebb34d9581ad036513b9b1c879c0ad
+ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="release-notes-for-system-center-configuration-manager"></a>System Center Configuration Manager의 릴리스 정보
 
@@ -37,30 +37,10 @@ System Center Configuration Manager에서는 제품에서 수정되지 않은 �
 - [버전 1706의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1706)  
 - [버전 1702의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1702)
 - [버전 1610의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1610)
-   
+
 
 
 ## <a name="setup-and-upgrade"></a>설치 및 업그레이드  
-
-### <a name="after-you-update-a-configuration-manager-console-using-consolesetupexe-from-the-site-server-folder-recent-language-pack-changes-are-not-available"></a>사이트 서버 폴더에서 ConsoleSetup.exe를 사용하여 Configuration Manager 콘솔을 업데이트한 후 최근 언어 팩 변경 내용을 사용할 수 없습니다.
-<!--  SMS 486420  Applicability should be 1610 and 1702.  -->
-*다음은 버전 1610 및 1702에 적용됩니다.*   
-사이트 서버 설치 폴더에서 ConsoleSetup.exe를 사용하여 콘솔에 대한 현재 위치 업데이트를 실행한 후 최근에 설치한 언어 팩을 사용할 수 없습니다. 이 문제는 다음과 같은 경우에 발생합니다.
-- 사이트에서 버전 1610 또는 1702를 실행합니다.
-- 사이트 서버 설치 폴더에서 ConsoleSetup.exe를 사용하여 콘솔을 현재 위치 업데이트합니다.
-
-이 문제가 발생하면 다시 설치된 콘솔이 구성되어 있는 최신 언어 팩 집합을 사용하지 않습니다. 오류가 반환되지 않지만 콘솔에 사용할 수 있는 언어 팩이 변경되지 않습니다.  
-
-**해결 방법:** 현재 콘솔을 제거하고 콘솔을 새 설치로 다시 설치합니다. 사이트 서버 설치 폴더에서 ConsoleSetup.exe를 사용할 수 있습니다. 설치하는 동안 사용할 언어 팩 파일을 선택해야 합니다.
-
-
-### <a name="with-version-1702-the-default-site-boundary-group-is-configured-for-use-for-site-assignment"></a>버전 1702에서는 사이트 할당에 사용할 기본 사이트 경계 그룹이 구성됩니다.
-<!--  SMS 486380   Applicability should only be to 1702. -->
-*다음은 버전 1702에 적용됩니다.*  
-기본 사이트 경계 그룹의 [참조] 탭에서는 **사이트 할당에 대해 이 경계 그룹 사용**에 대한 확인 표시가 있고, 사이트가 **할당된 사이트**로 나열되며, 구성을 편집하거나 제거할 수 없도록 회색으로 표시되어 있습니다.
-
-**해결 방법:** 없음 이 설정을 무시할 수 있습니다. 사이트 할당에 그룹이 사용되더라도 기본 사이트 경계 그룹은 사이트 할당에 사용되지 않습니다. 1702에서 이 구성을 적용하면 기본 사이트 경계 그룹이 올바른 사이트와 연결됩니다.
-
 
 
 ### <a name="when-installing-a-long-term-service-branch-site-using-version-1606-a-current-branch-site-is-installed"></a>버전 1606을 사용하여 장기 서비스 분기 사이트를 설치하는 경우 현재 분기 사이트가 설치됨
@@ -112,29 +92,6 @@ ConfigMgrSetup.log:
  - 수동으로 *cd.latest\redist\languagepack\zhh* 폴더를 삭제한 다음 설치 프로그램을 다시 실행합니다.
 
 
-### <a name="service-connection-tool-throws-an-exception-when-sql-server-is-remote-or-when-shared-memory-is-disabled"></a>SQL Server가 원격이거나 공유 메모리가 사용되지 않는 경우 서비스 연결 도구에서 예외가 발생합니다.
-<!-- 479223   Fixed in 1702 and later   -->
-*다음은 1610 및 이전 버전에 적용됩니다.*  
-다음 중 하나에 해당하는 경우 서비스 연결 도구에서 예외를 생성합니다.  
- -  사이트 데이터베이스가 서비스 연결 지점을 호스트하고 비표준 포트(1433 이외의 포트)를 사용하는 컴퓨터에서 원격인 경우
- -  사이트 데이터베이스가 서비스 연결 지점과 동일한 서버에 있지만 SQL 프로토콜 **공유 메모리**가 사용되지 않는 경우
-
-예외는 다음과 유사합니다.
- - *처리되지 않은 예외: System.Data.SqlClient.SqlException: SQL Server에 대한 연결을 설정하는 동안 네트워크 관련 또는 인스턴스 관련 오류가 발생했습니다. 서버를 찾을 수 없거나 액세스할 수 없습니다. 인스턴스 이름이 올바르고 SQL Server가 원격 연결을 허용하도록 구성되었는지 확인합니다. (공급자: 명명된 파이프 공급자, 오류: 40 - SQL Server에 대한 연결을 열 수 없음) -* 
-
-**해결 방법**: 도구를 사용하는 동안 SQL Server 포트에 대한 정보를 포함하도록 서비스 연결 지점을 호스트하는 서버의 레지스트리를 수정해야 합니다.
-
-   1.   도구를 사용하기 전에 다음 레지스트리 키를 편집하고 사용 중인 포트 번호를 SQL Server의 이름에 추가합니다.
-    - 키: HKLM\Microsoft\SMS\COMPONENTS\SMS_DMP_UPLOADER\
-      - 값: &lt;SQL Server 이름>
-    - 추가: **,&lt;포트>**
-
-    예를 들어 *testserver.test.net*이라는 서버에 *15001* 포트를 추가하려는 경우 결과로 생성되는 키는 ***HKLM\Software\Microsoft\SMS\COMPONENTS\SMS_DMP_UPLOADER\testserver.test.net,15001***입니다.
-
-   2.   레지스트리에 포트를 추가하면 도구기 정상적으로 작동합니다.  
-
-   3.   도구 사용이 완료되면 **-connect** 및 **-import** 단계 둘 다에서 레지스트리 키를 원래 값으로 다시 변경합니다.  
-
 
 <!-- ## Backup and recovery  -->
 
@@ -157,15 +114,6 @@ Windows 컴퓨터에 클라이언트를 배포할 때 모든 활성 버전에서
 서비스 계획을 만든 후 서비스 계획에 대한 속성을 열고, **평가 일정** 탭으로 이동하고, **일정에 따라 규칙 실행**을 선택하고, **사용자 지정**을 클릭하여 사용자 지정 일정을 만듭니다. 예를 들어 60일마다 실행하는 서비스 계획이 있을 수 있습니다.  
 
 
-### <a name="when-a-high-risk-deployment-dialog-is-visible-to-a-user-subsequent-high-risk-dialogs-with-a-sooner-deadline-are-not-displayed"></a>높은 위험 수준 배포 대화 상자가 사용자에게 표시될 경우 마감일이 더 가까운 후속 높은 위험 수준 대화 상자가 표시되지 않음
-<!-- Fixed in 1702 and later -->
-*다음은 1610 및 이전 버전에 적용됩니다.*   
-높은 위험 수준 작업 배포를 만들고 사용자에게 배포한 후 높은 위험 수준 대화 상자가 사용자에게 표시됩니다. 사용자가 대화 상자를 닫지 않고 첫 번째보다 마감일이 더 가까운 또 다른 높은 위험 수준 배포를 만들고 배포하면 사용자는 원래 대화 상자를 닫을 때까지 업데이트된 대화 상자를 받을 수 없습니다. 배포는 구성된 마감일에 계속 실행됩니다.
-
-**해결 방법**:  
-사용자가 첫 번째 높은 위험 수준 배포 대화 상자를 닫아야 다음 높은 위험 수준 배포 대화 상자를 볼 수 있습니다.
-
-
 
 ## <a name="software-updates"></a>소프트웨어 업데이트
 
@@ -180,6 +128,12 @@ XML 구성 파일에는 [Office 365 ProPlus 클라이언트에서 지원하는 �
 
 
 ## <a name="mobile-device-management"></a>모바일 장치 관리  
+
+### <a name="beginning-with-version-1710-you-can-no-longer-deploy-windows-phone-81-vpn-profiles-to-windows-10------503274--should-be-fixed-by-1802-if-not-sooner---"></a>버전 1710부터는 Windows Phone 8.1 VPN 프로필을 Windows 10에 더 이상 배포할 수 없습니다. <!-- 503274  Should be fixed by 1802, if not sooner -->
+1710에서는 Windows 10 장치에도 적용 가능한 Windows Phone 8.1 워크플로를 사용하여 VPN 프로필을 만들 수 없습니다. 이러한 프로필의 경우 지원되는 플랫폼 페이지가 만들기 마법사에 더 이상 표시되지 않고 Windows Phone 8.1이 백 엔드에서 자동으로 선택됩니다. 속성 페이지에서 지원되는 플랫폼 페이지를 사용할 수 있지만 Windows 10 옵션은 표시되지 않습니다.
+
+**해결 방법**: Windows 10 장치의 경우 Windows 10 VPN 프로필 워크플로를 사용합니다. 이 방법이 환경에 적합하지 않은 경우 지원 서비스에 문의하세요. 필요한 경우 지원을 통해 Windows 10 타기팅을 추가할 수 있습니다.
+
 
 ### <a name="full-wipe-disables-windows-10-devices-with-less-than-4-gb-ram"></a>전체 초기화를 진행하면 RAM이 4GB 미만인 Windows 10 장치를 사용하지 못하게 됩니다.
 RAM이 4GB 미만인 Windows 10 RTM 장치(버전 1511보다 이전 버전)에 전체 초기화를 진행하면 장치가 사용할 수 없는 상태가 됩니다. 장치 초기화를 시도하면 장치는 시작 불능 상태가 되어 응답이 불가능합니다.
@@ -204,20 +158,4 @@ Android for Work 메일 프로필을 만들 때 두 가지 인증 옵션을 사�
 
 <!-- ## Reports and monitoring    -->
 <!-- ## Conditional access   -->
-
-
-## <a name="endpoint-protection"></a>Endpoint Protection
-
-### <a name="antimalware-policy-fails-to-apply-on-windows-server-2016-core"></a>Windows Server 2016 Core에서 맬웨어 방지 정책 적용 실패
-<!--  Product Studio bug 485370 added 04 19 2017   Fixed in 1702 -->
-*다음은 1610 및 이전 버전에 적용됩니다.*  
-Windows Server 2016 Core에서 맬웨어 방지 정책을 적용하는 데 실패합니다.  오류 코드는 0x80070002입니다.  ConfigSecurityPolicy.exe에 대한 종속성이 누락되어 있습니다.
-
-**해결 방법:** 이 문제는 2017년 5월 9일에 발표된 [기술 자료 문서 4019472](https://support.microsoft.com/help/4019472/windows-10-update-kb4019472)를 통해 해결됩니다.
-
-
-### <a name="windows-defender-advanced-threat-protection-policies-fail-on-older-client-agents"></a>Windows Defender Advanced Threat Protection 정책이 이전 클라이언트 에이전트에서 실패함
-<!-- Product Studio bug 462286 added  05 25 2017 and valid until July 2017 GA release      Fixed in 1610 -->
-Configuration Manager 버전 1610 이상의 사이트 서버에서 만든 Windows Defender Advanced Threat Protection 정책이 Configuration Manager 버전 1606 및 이전 버전의 클라이언트에 적용되지 않습니다.  클라이언트는 온보딩되지 않고 정책 평가 시 오류가 보고됩니다. Windows Defender Advanced Threat Protection 구성의 **배포 상태**에 **오류**가 표시됩니다.
-
-**해결 방법**: Configuration Manager 클라이언트를 버전 1610 이상으로 업그레이드합니다.
+<!-- ## Endpoint Protection -->

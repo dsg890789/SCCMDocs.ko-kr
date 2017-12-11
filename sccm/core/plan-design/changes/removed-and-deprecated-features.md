@@ -13,14 +13,14 @@ ms.topic: get-started-article
 ms.assetid: d8c8b44c-1e8a-42b6-bab4-23c72a0a6169
 caps.latest.revision: "15"
 caps.handback.revision: "0"
-author: Brenduns
-ms.author: brenduns
+author: mestew
+ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 7a87e03cdade6339bc0ea0055edf8791e197e6f1
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 95df27d4bf21a2cb1b6d613415a3eff4c3a73552
+ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="removed-and-deprecated-features-for-system-center-configuration-manager"></a>System Center Configuration Manager에서 제거되는 기능과 사용되지 않는 기능
 
@@ -89,7 +89,7 @@ ms.lasthandoff: 10/12/2017
 
 SQL Server 버전을 업그레이드해야 할 경우, 쉬운 경우부터 더 복잡한 경우까지 다음 방법을 권장합니다.
 1. [SQL Server 현재 위치 업그레이드](/sccm/core/servers/manage/upgrade-on-premises-infrastructure#a-namebkmksupconfigupgradedbsrva-upgrade-sql-server-on-the-site-database-server)(권장).
-2. SQL Server의 새 버전을 새 컴퓨터에 설치하고 Configuration Manager 설치 프로그램의 [데이터베이스 이동 옵션을 사용](/sccm/core/servers/manage/modify-your-infrastructure#a-namebkmkdbconfiga-modify-the-site-database-configuration)하여 사이트 서버에서 새 SQL Server를 가리킵니다.
+2. SQL Server의 새 버전을 새 컴퓨터에 설치합니다. 그런 다음 Configuration Manager 설치 프로그램의 [데이터베이스 이동 옵션을 사용](/sccm/core/servers/manage/modify-your-infrastructure#a-namebkmkdbconfiga-modify-the-site-database-configuration)하여 사이트 서버에서 새 SQL Server를 가리킵니다.
 3. [백업 및 복구](/sccm/protect/understand/backup-and-recovery)를 사용합니다.
 
 
@@ -104,7 +104,7 @@ SQL Server 버전을 업그레이드해야 할 경우, 쉬운 경우부터 더 �
 |소프트웨어 센터의 외관이 새롭게 바뀌었습니다. 향후 몇 개월 이후 소프트웨어 센터의 이전 버전을 더 이상 사용할 수 없게 됩니다.<br><br>클라이언트 설정인 **컴퓨터 에이전트** > **새 소프트웨어 센터 사용**을 활성화하여 새로운 소프트웨어 센터를 사용하도록 클라이언트를 설정할 수 있습니다.<br><br>소프트웨어 센터에 대한 자세한 내용은 [System Center Configuration Manager에서 응용 프로그램 관리 계획 및 구성](https://docs.microsoft.com/sccm/apps/plan-design/plan-for-and-configure-application-management)을 참조하세요.|2016년 12월 13일|이전 버전의 소프트웨어 센터에 대한 지원은 종료되며 2018년 1월 1일 이후에 최초 업데이트가 출시될 예정입니다.|
 |새로운 소프트웨어 센터 환경 버전 1511의 도입으로 응용 프로그램 카탈로그에서만 표시되었던 앱(사용자가 사용할 수 있는 앱)이 이제 소프트웨어 센터에 표시됩니다. </br></br>지금은 소프트웨어 센터에 포함된 응용 프로그램 카탈로그의 이 기본 기능을 통해 웹 기반 응용 프로그램 카탈로그 환경은 향후 더 이상 사용할 수 없습니다.|2017년 8월 11일| 2018년 6월 1일 이후 출시된 첫 번째 업데이트에서 응용 프로그램 카탈로그 웹 사이트 사용자 환경에 대한 지원이 끝납니다.|
 |Configuration Manager를 사용한 VHD(가상 하드 디스크) 관리 </br></br>새 VHD를 만들거나 작업 순서를 사용하여 VHD를 관리하는 옵션이 제거되고, Configuration Manager 콘솔에서 가상 하드 디스크 노드가 제거됩니다. </br></br>이 지원이 제거되면 기존 VHD가 삭제되는 것은 아니지만 더 이상 Configuration Manager 콘솔 내에서 액세스할 수 없게 됩니다.  |2017년 1월 6일 |2017년 1월 1일 이후에 릴리스되는 첫 번째 업데이트와 함께 VHD에 대한 지원이 종료됩니다.|
-|System Center Configuration Manager 업그레이드 평가 도구. </br></br>업그레이드 평가 도구를 사용하려면 System Center Configuration Manager 및 ACT(Application Compatibility Toolkit) 6.x가 둘 다 필요합니다. ACT의 최종 버전은 Windows 10 v1511 ADK에 함께 제공되었습니다. ACT에 대한 추가 업데이트는 없을 것이므로 업그레이드 평가 도구에 대한 지원은 중단될 예정입니다. </br></br>업그레이드 평가 도구는 [Upgrade Readiness](/sccm/core/clients/manage/upgrade/upgrade-analytics) 기능으로 대체됩니다. 2016년 9월 12일에 사용 고지 사항이 [UAT에 대한 다운로드 페이지](https://www.microsoft.com/download/details.aspx?id=37145)에 추가되었습니다. |9/12/2016  | 2017년 7월 11일 |
+|System Center Configuration Manager 업그레이드 평가 도구. </br></br>업그레이드 평가 도구를 사용하려면 System Center Configuration Manager 및 ACT(Application Compatibility Toolkit) 6.x가 둘 다 필요합니다. ACT의 최종 버전은 Windows 10 v1511 ADK에 함께 제공되었습니다. ACT에 대한 추가 업데이트는 없을 것이므로 업그레이드 평가 도구에 대한 지원은 중단될 예정입니다. </br></br>업그레이드 평가 도구는 [Upgrade Readiness](/sccm/core/clients/manage/upgrade/upgrade-analytics) 기능으로 대체됩니다. 2016년 9월 12일에 사용 고지 사항이 [UAT에 대한 다운로드 페이지](https://www.microsoft.com/download/details.aspx?id=37145)에 추가되었습니다. | 2016년 9월 12일  | 2017년 7월 11일 |
 
 
 <br></br>
