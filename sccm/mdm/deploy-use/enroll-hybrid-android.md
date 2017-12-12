@@ -16,11 +16,11 @@ caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 4b638b0325aa5f75d60a008ea60531a818ec76c2
-ms.sourcegitcommit: 1132886e07d0c0a87dcc7eeef4577dd8d8840023
+ms.openlocfilehash: c9b35122f6afbb4fffbbff48b919fd696939c897
+ms.sourcegitcommit: 51cfce302fa8ddf633ad1f379b1161c0617089b8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="set-up-android-hybrid-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune으로 Android 하이브리드 장치 관리 설정
 
@@ -60,7 +60,7 @@ Configuration Manager 관리자는 준수 설정을 관리하고, Android 장치
 > 알려진 문제로 인해 **Manage supported devices for users only in these groups as Android for Work**(이 그룹의 사용자만을 위해 지원되는 장치를 Android for Work로 관리) 옵션이 제대로 작동되지 않습니다. 지정된 Azure AD 그룹의 사용자 장치가 Android for Work 대신 Android로 등록됩니다. Android for Work를 사용하도록 설정하려면 **Manage all supported devices as Android for Work**(지원되는 장치를 모두 Android for Work로 관리) 옵션을 사용해야 합니다.
 
 
-설정한 후에는 사용자에게 장치를 등록하는 방법을 알려 주어야 합니다. [장치 등록에 대해 최종 사용자에게 알릴 내용](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)을 참조하세요. 이 정보는 Microsoft Intune 및 Configuration Manager에서 관리되는 모바일 장치에 적용됩니다.
+설정한 후에는 사용자에게 장치를 등록하는 방법을 알려 주어야 합니다. [장치 등록에 대해 최종 사용자에게 알릴 내용](https://docs.microsoft.com/en-us/intune/end-user-educate)을 참조하세요. 이 정보는 Microsoft Intune 및 Configuration Manager에서 관리되는 모바일 장치에 적용됩니다.
 
 바인딩이 완료되면 계정 이름 및 조직 이름이 Intune 포털에 표시됩니다. 그러면 두 브라우저를 닫아도 됩니다.
 
