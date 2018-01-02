@@ -3,7 +3,7 @@ title: "응용 프로그램 배포"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager를 사용하여 배포 유형을 만들거나 응용 프로그램에 대한 배포를 시뮬레이트합니다."
 ms.custom: na
-ms.date: 7/31/2017
+ms.date: 12/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,11 +16,11 @@ caps.handback.revision: "0"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: 31c8a2e212de8c112b68d68e108db3463516142f
-ms.sourcegitcommit: b36f8c8b06e4b2e13f8c1500a82af79a071ab4f6
+ms.openlocfilehash: 97d1ac775a3b38f63372f0ab01243dfdfeb4edb5
+ms.sourcegitcommit: 52b956cfe32c3f06ae68d6ba6fc3244ce5a66325
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="deploy-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 배포
 
@@ -171,8 +171,7 @@ System Center Configuration Manager 응용 프로그램을 배포하려면 먼�
 ## <a name="how-to-check-for-running-executable-files-before-installing-an-application"></a>응용 프로그램을 설치하기 전에 실행 중인 실행 파일을 확인하는 방법
 
 >[!Tip]
->버전 1702에 추가된 이 기능은 시험판 기능입니다. 이 기능을 사용하도록 설정하려면 [System Center Configuration Manager의 시험판 기능](https://docs.microsoft.com/sccm/core/servers/manage/pre-release-features)을 참조하세요.
-> 버전 1706 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.
+> 이 기능은 버전 1702에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 소개되었습니다. 버전 1706 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.
 
 배포 유형의 **속성** 대화 상자에 있는 **설치 동작** 탭에서 배포 유형의 설치를 차단하는 실행 파일(실행 중일 경우)을 하나 이상 지정할 수 있습니다. 사용자가 실행 중인 실행 파일을 닫아야(또는 필수 용도의 배포를 위해 자동으로 닫힐 수 있음) 배포 유형을 설치할 수 있습니다. 이를 구성하려면:
 

@@ -3,7 +3,7 @@ title: "라이선스 및 분기에 대한 자세한 정보"
 titleSuffix: Configuration Manager
 description: "이 항목에서는 현재 분기 버전 1606, LTSB(장기 서비스 분기), 현재 분기의 평가판 설치 등 System Center Configuration Manager의 2016년 10월 릴리스에서 제공되는 설치 옵션에 대한 라이선스 요구 사항을 알아봅니다."
 ms.custom: na
-ms.date: 10/12/2016
+ms.date: 12/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,11 +16,11 @@ caps.handback.revision: "0"
 author: aaroncz
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 0890b25f4b5b96a8d39b0dcf6f0aa659c07265db
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+ms.openlocfilehash: bcb25fc6faad3d5f7162ae4ceb200c6de1c1c25b
+ms.sourcegitcommit: 8c6e9355846ff6a73c534c079e3cdae09cf13c45
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="licensing-and-branches-for-system-center-configuration-manager"></a>System Center Configuration Manager의 라이선스 및 분기
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 12/01/2017
 
 |분기|라이선스|세부 정보|
 |----------------|---------------------|--------------------|
-|현재 분기 | Configuration Manager에 대한 활성 Software Assurance 계약(또는 이와 동등한 권한)이 필요합니다. </br></br> 이 항목에서 [Software Assurance 및 현재 분기](#software-assurance-and-the-current-Branch)를 참조하세요.| Microsoft에서 정기적인 품질 및 기능 업데이트를 수신하려는 프로덕션 환경에서 사용할 수 있습니다. </br></br> 이 분기를 통해 모든 기능과 향상된 기능에 액세스할 수 있습니다. </br></br> 각 버전 업데이트는 릴리스 후 1년 동안 지원되며, 이 기간 내에 [지원](/sccm/core/servers/manage/current-branch-versions-supported)되는 최신 버전으로 업데이트해야 합니다.|
+|현재 분기 | Configuration Manager에 대한 활성 Software Assurance 계약(또는 이와 동등한 권한)이 필요합니다. </br></br> 이 항목에서 [Software Assurance 및 현재 분기](#software-assurance-and-the-current-Branch)를 참조하세요.| Microsoft에서 정기적인 품질 및 기능 업데이트를 수신하려는 프로덕션 환경에서 사용할 수 있습니다. </br></br> 이 분기를 통해 모든 기능과 향상된 기능에 액세스할 수 있습니다. </br></br> 1710 이전에 릴리스된 Configuration Manager 버전은 12개월 동안 지원됩니다. 1710 릴리스부터 각 업데이트 버전은 일반 공급 출시 날짜로부터 18개월 동안 지원됩니다. 자세한 내용은 [System Center Configuration Manager 현재 분기 버전에 대한 지원](/sccm/core/servers/manage/current-branch-versions-supported)을 참조하세요.|
 |LTSB(장기 서비스 분기)| 릴리스 당시(2016년 10월 1일) Microsoft와 현재 Software Assurance 계약이 있어야 합니다. </br></br> 이 항목에서 [Software Assurance 및 LTSB](#software-assurance-and-the-ltsb)를 참조하세요. | 프로덕션 환경에서 사용할 수 있습니다. Configuration Manager에 대한 SA(Software Assurance) 또는 이와 동등한 구독 권한이 2016년 10월 1일 후에 만료되는 고객을 위한 것입니다. </br></br> 이 분기는 현재 분기에 비해 제한적입니다. </br></br> Configuration Manager에 대한 중요 보안 업데이트는 이 분기에 제공되지만 새로운 기능은 제공되지 않습니다. |
 |현재 분기의 평가판 설치| Microsoft와의 Software Assurance 계약이 필요하지 않습니다. | [평가판 설치](https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection)는 항상 현재 분기이며 180일 동안 사용할 수 있습니다. </br></br> 평가판 설치를 현재 분기의 전체 설치로 업그레이드할 수 있습니다. 평가판 설치를 장기 서비스 분기로 업그레이드할 수는 없습니다.|
 

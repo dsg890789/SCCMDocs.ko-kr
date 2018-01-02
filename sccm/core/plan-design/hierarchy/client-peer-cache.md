@@ -3,7 +3,7 @@ title: "클라이언트 피어 캐시"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager를 사용하여 콘텐츠를 배포할 때는 클라이언트 콘텐츠 원본 위치에 대해 피어 캐시를 사용합니다."
 ms.custom: na
-ms.date: 11/20/2017
+ms.date: 12/07/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -15,11 +15,11 @@ caps.latest.revision: "3"
 author: aaroncz
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 60f70d3e24f6290fb022b9bd8ca1512b0ed3d719
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+ms.openlocfilehash: cadc62ab21ac8cd43120a5baa79dd635a12b4069
+ms.sourcegitcommit: 2dc9c83e57e9734ffc4a93f79cd71285036eeb8b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="peer-cache-for-configuration-manager-clients"></a>Configuration Manager 클라이언트용 피어 캐시
 
@@ -36,7 +36,7 @@ System Center Configuration Manager 버전 1610부터는 **피어 캐시**를 �
  -  피어 캐시 원본으로 콘텐츠를 공유하려면 피어 캐시 클라이언트는 다음 조건을 충족해야 합니다.
     -  도메인에 가입되어 있어야 합니다. 그러나 도메인에 가입되지 않은 클라이언트가 도메인에 가입된 피어 캐시 원본에서 콘텐츠 얻을 수 있습니다.
     -  콘텐츠를 검색하는 클라이언트의 현재 경계 그룹에 대한 구성원이어야 합니다. 클라이언트가 대체 기능을 사용해 인접 경계 그룹의 콘텐츠를 검색할 때 인접 경계 그룹의 피어 캐시 클라이언트는 사용 가능한 콘텐츠 원본 위치 풀에 포함되지 않습니다. 현재 및 인접 경계 그룹에 대한 자세한 내용은 [경계 그룹](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups##a-namebkmkboundarygroupsa-boundary-groups)을 참조하세요.
- - Configuration Manager 클라이언트의 캐시에 저장된 모든 유형의 콘텐츠를 피어 캐시를 사용하여 다른 클라이언트에 제공할 수 있습니다.
+ - Office 365 파일 및 빠른 설치 파일을 비롯해 구성 관리자 클라이언트의 캐시에 저장된 모든 유형의 콘텐츠를 피어 캐시를 사용하여 다른 클라이언트에 제공할 수 있습니다.<!--SMS.500850-->
  -  피어 캐시는 BranchCache와 같은 다른 솔루션의 사용을 대체하지는 않지만 함께 사용하는 경우 배포 지점과 같은 기존 콘텐츠 배포 솔루션을 확장할 수 있는 더 많은 옵션을 제공할 수 있습니다. 피어 캐시는 BranchCache를 사용하지 않는 사용자 지정 솔루션이므로 Windows BranchCache를 사용하도록 설정하거나 사용하지 않더라도 계속 작동합니다.
 
 ### <a name="operations"></a>작업

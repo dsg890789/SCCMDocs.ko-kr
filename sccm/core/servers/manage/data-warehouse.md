@@ -3,7 +3,7 @@ title: "데이터 웨어하우스"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에 대한 데이터 웨어하우스 서비스 지점 및 데이터베이스"
 ms.custom: na
-ms.date: 8/25/2017
+ms.date: 12/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ caps.latest.revision:
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 2e6ac983e5ca63dacb77f2e26515d7123748d64d
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: 4d420ce623c834401383231d00e3f361342f2d2e
+ms.sourcegitcommit: 52b956cfe32c3f06ae68d6ba6fc3244ce5a66325
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/06/2017
 ---
 #  <a name="the-data-warehouse-service-point-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 데이터 웨어하우스 서비스 지점
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -27,9 +27,7 @@ ms.lasthandoff: 12/04/2017
 버전 1702부터 데이터 웨어하우스 서비스 지점을 사용하여 Configuration Manager 배포에 대한 장기 기록 데이터를 저장하고 보고할 수 있습니다.
 
 > [!TIP]
-> 데이터 웨어하우스 서비스 지점은 버전 1702에 도입된 시험판 기능입니다. 사용하도록 설정하려면 [시험판 기능 사용](/sccm/core/servers/manage/pre-release-features)을 참조하세요.
-
-> 버전 1706 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.
+> 이 기능은 버전 1702에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 소개되었습니다. 버전 1706 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.
 
 데이터 웨어하우스는 최대 2TB의 데이터를 지원하며 변경 내용 추적을 위한 타임스탬프가 있습니다. 데이터 저장은 Configuration Manager 사이트 데이터베이스에서 데이터 웨어하우스 데이터베이스로의 자동화된 동기화를 통해 수행됩니다. 이 정보는 보고 서비스 지점에서 액세스할 수 있습니다. 데이터 웨어하우스 데이터베이스와 동기화된 데이터는 3년 동안 보존됩니다. 주기적으로 기본 제공 작업은 3년보다 오래된 데이터를 제거합니다.
 

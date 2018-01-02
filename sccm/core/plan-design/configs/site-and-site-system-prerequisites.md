@@ -15,11 +15,11 @@ caps.latest.revision: "5"
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 34886a38ed4b797b254e3fb83eb66588c7e1d116
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: 2c87cf0e63e4b95f5b94b6cda9e2aa40c4389184
+ms.sourcegitcommit: 8c6e9355846ff6a73c534c079e3cdae09cf13c45
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="site-and-site-system-prerequisites-for-system-center-configuration-manager"></a>System Center Configuration Manager의 사이트 및 사이트 시스템 필수 조건
 
@@ -258,8 +258,9 @@ ms.lasthandoff: 12/04/2017
     > [!NOTE]  
     >  Windows Server 2012 이상을 실행하는 서버에서는 PXE 또는 멀티캐스트를 지원하도록 배포 지점을 구성할 때 WDS가 자동으로 설치되고 구성됩니다.  
 
+<!--sms.503672 -Clarified BITS use-->
 > [!NOTE]  
-> 배포 지점 사이트 시스템 역할에는 BITS(Background Intelligent Transfer Service)가 필요하지 않습니다. 배포 지점 컴퓨터에 BITS가 구성되어 있어도 BITS를 사용하는 클라이언트의 콘텐츠 다운로드를 원활하게 진행하기 위해 배포 지점 컴퓨터의 BITS를 사용하지 않습니다.  
+> 배포 지점은 콘텐츠를 전송할 때 Windows 운영 체제에 기본 제공되는 BITS(**Background Intelligent Transfer Service**)를 사용하여 전송합니다. 배포 지점 역할은 선택적인 BITS IIS 서버 확장 기능을 설치할 필요가 없는데, 클라이언트가 이 기능으로 정보를 업로드하지 않기 때문입니다.  
 
 ###  <a name="bkmk_2012EPPpreq"></a> Endpoint Protection 지점  
 **Windows Server 역할 및 기능:**  
@@ -626,8 +627,9 @@ ms.lasthandoff: 12/04/2017
     > [!NOTE]  
     >  Windows Server 2012 이상을 실행하는 서버에서는 PXE 또는 멀티캐스트를 지원하도록 배포 지점을 구성할 때 WDS가 자동으로 설치되고 구성됩니다.  
 
+<!--sms.503672 -Clarified BITS use-->
 > [!NOTE]  
-> 배포 지점 사이트 시스템 역할에는 BITS(Background Intelligent Transfer Service)가 필요하지 않습니다. 배포 지점 컴퓨터에 BITS가 구성되어 있어도 BITS를 사용하는 클라이언트의 콘텐츠 다운로드를 원활하게 진행하기 위해 배포 지점 컴퓨터의 BITS를 사용하지 않습니다.  
+> 배포 지점은 콘텐츠를 전송할 때 Windows 운영 체제에 기본 제공되는 BITS(**Background Intelligent Transfer Service**)를 사용하여 전송합니다. 배포 지점 역할은 선택적인 BITS IIS 서버 확장 기능을 설치할 필요가 없는데, 클라이언트가 이 기능으로 정보를 업로드하지 않기 때문입니다.   
 
 
 ###  <a name="bkmk_2008EPPpreq"></a> Endpoint Protection 지점  

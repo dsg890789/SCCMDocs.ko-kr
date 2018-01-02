@@ -15,11 +15,11 @@ caps.latest.revision: "9"
 author: aaroncz
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: ea8eead4706472a02f216b432ea9f2e6bdf23f66
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+ms.openlocfilehash: f0feba771dcc75d84cd1233fea562472ff6c1158
+ms.sourcegitcommit: 8c6e9355846ff6a73c534c079e3cdae09cf13c45
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="use-a-pull-distribution-point-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 풀(pull) 배포 지점 사용
 
@@ -105,8 +105,10 @@ System Center Configuration Manager용 풀(pull) 배포 지점은 사이트 서�
 -   이 프레임워크는 배포 지점을 풀(pull) 배포 지점으로 구성할 때 **Pulldp.msi**에서 설치됩니다. 프레임워크에는 Configuration Manager 클라이언트가 필요하지 않습니다.  
 
 -   풀(pull) 배포 지점이 설치된 후에는 배포 지점 컴퓨터에서 CCMExec 서비스가 실행되고 있어야 풀(pull) 배포 지점이 제대로 작동합니다.  
+<!--sms.503672 -Clarified BITS use-->
+-   풀(pull) 배포 지점은 콘텐츠를 전송할 때 Windows 운영 체제에 기본 제공되는 BITS(**Background Intelligent Transfer Service**)를 사용하여 전송합니다. 풀(pull) 배포 지점에서는 선택적인 BITS IIS 서버 확장 기능을 설치할 필요가 없습니다.
 
--   풀(pull) 배포 지점은 콘텐츠를 전송할 때 BITS( **Background Intelligent Transfer Service** )를 사용하고 해당 작업을 배포 지점 컴퓨터의 **datatransferservice.log** 및 **pulldp.log** 에 기록합니다.  
+-  풀(pull) 배포 지점에서는 작업을 배포 지점 컴퓨터의 **datatransferservice.log**와 **pulldp.log**에 기록합니다.
 
 ## <a name="see-also"></a>참고 항목  
  [System Center Configuration Manager에서 콘텐츠 관리의 기본 개념](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management)   

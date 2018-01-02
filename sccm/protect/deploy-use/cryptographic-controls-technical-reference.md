@@ -3,23 +3,21 @@ title: "암호화 컨트롤 기술 참조"
 titleSuffix: Configuration Manager
 description: "공격을 방지하여 System Center Configuration Manager의 데이터를 읽을 수 없도록 서명 및 암호화하는 방법에 대해 알아봅니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/5/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
 ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 0c63dcc5-a1bd-4037-959a-2e6ba0fd1b2c
-caps.latest.revision: "6"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 616a781ee40fc3cde7f6c4c6525da74560a9072f
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: ebaff93d346b53afea8770fbe0634112bcecf82d
+ms.sourcegitcommit: 372171a5cd8d143d6d47b651018cda0c91cad67c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/09/2017
 ---
 # <a name="cryptographic-controls-technical-reference"></a>암호화 컨트롤 기술 참조
 
@@ -279,5 +277,14 @@ System Center Configuration Manager는 서명 및 암호화를 사용하여 Conf
 
  관리 지점이 일단 자체 서명된 클라이언트 인증서를 사용하여 클라이언트를 인증하면 이 메커니즘을 통해 모든 컴퓨터가 자체 서명된 인증서를 생성할 수 있기 때문에 최소한의 보안이 구현됩니다. 이 시나리오에서는 클라이언트 식별 프로세스가 승인으로 보강되어야 합니다. 신뢰할 수 있는 컴퓨터만 Configuration Manager에서 자동으로, 또는 관리자가 수동으로 승인해야 합니다. 자세한 내용은 [System Center Configuration Manager에서 끝점 간의 통신](../../core/plan-design/hierarchy/communications-between-endpoints.md)의 승인 섹션을 참조하세요.  
 
-##  <a name="about-ssl-vulnerabilities"></a>SSL 취약점 정보  
- Configuration Manager 서버의 보안을 개선하려면 SSL 3.0은 사용하지 않도록 설정하고, TLS 1.1 및 1.2는 사용하도록 설정하고, TLS 관련 암호 그룹을 다시 정렬하는 것이 좋습니다. 이러한 작업을 수행하는 방법은 [이 KB 문서](https://support.microsoft.com/en-us/kb/245030/)에서 확인할 수 있습니다. 이 작업은 Configuration Manager 기능에 영향을 주지 않습니다.  
+## <a name="to-make-configuration-manager-servers-more-secure"></a>Configuration Manager 서버를 더 안전하게 보호하려는 경우  
+Configuration Manager 서버를 더 안전하게 보호하려는 경우 다음을 수행하세요.
+
+-   TLS 1.2 사용
+
+    Configuration Manager에 대해 TLS 1.2를 사용하도록 설정려면 기술 자료 문서 [How to enable TLS 1.2 for Configuration Manager]( https://support.microsoft.com/en-us/help/4040243/how-to-enable-tls-1-2-for-configuration-manager)(Configuration Manager에 대해 TLS 1.2를 사용하도록 설정하는 방법)를 참조하세요.
+-   SSL 3.0, TLS 1.0 및 TLS 1.1 사용 안 함 
+-   TLS 관련 암호 도구 모음 순서 변경 
+
+자세한 내용은 기술 자료 문서 [How to restrict the use of certain cryptographic algorithms and protocols in Schannel.dll](https://support.microsoft.com/en-us/kb/245030/)(Schannel.dll에서 특정 암호화 알고리즘 및 프로토콜의 사용을 제한하는 방법)을 참조하세요. 이 절차는 Configuration Manager 기능에는 영향을 주지 않습니다.
+

@@ -3,7 +3,7 @@ title: "스크립트 만들기 및 실행"
 titleSuffix: Configuration Manager
 description: "Powershell 스크립트를 만들고 클라이언트 장치에서 실행합니다."
 ms.custom: na
-ms.date: 11/20/2017
+ms.date: 11/29/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,31 +16,31 @@ caps.handback.revision: "0"
 author: BrucePerlerMS
 ms.author: bruceper
 manager: angrobe
-ms.openlocfilehash: 964f6d39c4c1afc82ff4336821740923d27cd569
-ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
+ms.openlocfilehash: 1472f697ae8b82e6268433aa6398fcc10a429994
+ms.sourcegitcommit: 5f4a584d4a833b0cc22bd8c47da7dd55aced97fa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/05/2017
 ---
 # <a name="create-and-run-powershell-scripts-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
+>[!TIP]
+>버전 1706에서 소개된 PowerShell 스크립트를 실행하는 기능은 시험판 기능입니다. 스크립트를 사용하도록 설정하려면 [System Center Configuration Manager의 시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요.
+
 이제 PowerShell 스크립트를 실행하는 기능이 더 효율적으로 System Center Configuration Manager와 통합되었습니다. Powershell은 정교하고 자동화된 스크립트를 만들어 더 큰 커뮤니티에서 이해하고 공유할 수 있는 이점이 있습니다. 스크립트는 소프트웨어를 관리하는 사용자 지정 도구 빌드를 간소화하고 일상적인 작업을 빠르게 수행하므로 더 쉽고 일관되게 큰 작업을 수행할 수 있습니다.
 
-이 통합 기능을 System Center Configuration Manager에서 사용하면 *스크립트 실행* 기능을 사용하여 다음을 수행할 수 있습니다.
+이 통합 기능을 System Center Configuration Manager에서 사용하면 스크립트 실행 기능을 사용하여 다음을 수행할 수 있습니다.
 
-- Configuration Manager에서 사용할 스크립트를 만들고 편집합니다.
-- 역할 및 보안 범위를 통해 스크립트 사용을 관리합니다.  
+- System Center Configuration Manager에서 사용할 스크립트를 만들고 편집합니다.
+- 역할 및 보안 범위를 통해 스크립트 사용을 관리합니다. 
 - 컬렉션 또는 개별 온-프레미스 관리 Windows PC에서 스크립트를 실행합니다.
 - 클라이언트 장치에서 빠르게 집계된 스크립트 결과를 가져옵니다.
 - 스크립트 실행을 모니터링하고 스크립트 출력에서 보고 결과를 봅니다.
 
->[!IMPORTANT]
+>[!WARNING]
 >스크립트의 능력을 고려할 때 계획적이고 신중하게 사용해야 합니다. 사용자를 지원하기 위해 안전 장치, 즉 분리된 역할과 범위를 추가로 구축했습니다. 스크립트를 실행하기 전에 스크립트의 정확성을 검사하고 신뢰할 수 있는 원본에서 제공되는지 확인하여 의도하지 않은 스크립트 실행을 방지합니다. 확장된 문자 또는 다른 난독 처리에 유의하고 스크립트 보안에 대한 지식을 습득합니다.
-
->[!TIP]
->버전 1706에서 소개된 PowerShell 스크립트는 시험판 기능입니다. 스크립트를 사용하도록 설정하려면 [System Center Configuration Manager의 시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 11/21/2017
 - 스크립트를 사용하려면 해당 Configuration Manager 보안 역할의 구성원이어야 합니다.
 - 스크립트를 가져오고 작성하려면 계정에 **전체 관리자** 보안 역할의 **SMS 스크립트**에 대한 **만들기** 권한이 있어야 합니다.
 - 스크립트를 승인하거나 거부하려면 계정에 **전체 관리자** 보안 역할의 **SMS 스크립트**에 대한 **승인** 권한이 있어야 합니다.
-- 스크립트를 실행하려면 - 계정의 **준수 설정 관리자** 보안 역할에 **컬렉션**에 대한 **스크립트 실행** 권한이 있어야 합니다.
+- 스크립트를 실행하려면 계정의 **전체 관리자** 보안 역할에 **컬렉션**에 대한 **스크립트 실행** 권한이 있어야 합니다.
 
 Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반 관리 기본 사항](/sccm/core/understand/fundamentals-of-role-based-administration)을 참조하세요.
 
@@ -58,7 +58,7 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반
 스크립트 실행에서 현재 지원하는 항목은 다음과 같습니다.
 
 - 스크립팅 언어: PowerShell
-- 매개 변수 형식: 정수 및 문자열
+- 매개 변수 형식: 정수, 문자열 및 목록
 
 ## <a name="run-script-authors-and-approvers"></a>스크립트 실행 작성자 및 승인자
 
@@ -120,79 +120,83 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반
 
 스크립트의 각 매개 변수는 **스크립트 매개 변수 속성** 대화 상자를 통해 해당 매개 변수에 대한 유효성 검사를 추가할 수 있습니다. 유효성 검사를 추가한 후에 유효성 검사를 충족하지 않는 매개 변수 값이 입력되면 오류가 발생합니다.
 
-#### <a name="example-firstname"></a>예제: FirstName
+#### <a name="example-firstname"></a>예제: *FirstName*
 
-이 예제에서는 *FirstName* 문자열 매개 변수의 속성을 설정할 수 있습니다. **사용자 지정 오류**에 대한 선택적 필드를 확인합니다. 이 필드는 특정 필드에 대한 사용자 지침 및 여기서의 *FirstName*문자열 매개 변수와의 상호 작용에 대한 사용자 지침을 추가하는 데 유용합니다.
+이 예제에서는 *FirstName* 문자열 매개 변수의 속성을 설정할 수 있습니다.
 
 ![스크립트 매개 변수 - 문자열](./media/run-scripts/RS-parameters-string.png)
+
+
+**스크립트 매개 변수 속성** 대화 상자의 유효성 검사 섹션에서는 다음 필드를 사용할 수 있습니다.
+
+- **최소 길이** - *FirstName* 필드의 최소 문자 수입니다.
+- **최대 길이**- *FirstName* 필드의 최대 문자 수입니다.
+- **RegEx** - *정규식*의 축약형입니다. 정규식 사용에 대한 자세한 내용은 다음 섹션 *정규식 유효성 검사 사용*을 참조하세요.
+- **사용자 지정 오류** - 시스템 유효성 검사 오류 메시지를 대체하는 사용자 지정 오류 메시지를 추가하는 데 유용합니다.
+
+#### <a name="using-regular-expression-validation"></a>정규식 유효성 검사 사용
+
+정규식은 인코딩된 유효성 검사에 대해 문자열을 확인하기 위한 간단한 형식의 프로그래밍입니다. 예를 들어, *RegEx* 필드에 `[^A-Z]`을 지정하여 *FirstName* 필드에 대문자 영문자가 있는지 확인할 수 있습니다.
+
+이 대화 상자의 정규식 처리는 .NET Framework에서 지원합니다. 정규식 사용에 관한 지침은 [.NET Regular Expression](https://docs.microsoft.com/dotnet/standard/base-types/regular-expressions)(.NET 정규식)을 참조하세요. 
+
 
 ## <a name="script-examples"></a>스크립트 예제
 
 다음은 이 기능과 함께 사용할 스크립트를 보여 주는 몇 가지 예제입니다.
 
-### <a name="create-a-folder"></a>폴더 만들기
+### <a name="create-a-new-folder-and-file"></a>새 폴더 및 파일 만들기
+
+이 스크립트는 사용자의 명명 입력에 따라 새 폴더와 폴더 내의 파일을 만듭니다.
 
 ``` powershell
-New-Item "c:\scripts" -type folder name
-```
-
-### <a name="create-a-file"></a>파일 만들기
-
-```powershell
-New-Item "c:\scripts\new_file.txt" -type file name
-```
-
-### <a name="ping-a-given-computer"></a>지정된 컴퓨터 ping
-
-이 스크립트는 문자열을 가져와서 *ping* 작업의 매개 변수로 사용합니다.
-
-``` powershell
-Param
-(
- [String][Parameter(Mandatory=$True, Position=1)] $Computername
+Param(
+[Parameter(Mandatory=$True)]
+[string]$FolderName,
+[Parameter(Mandatory=$True)]
+[string]$FileName,
 )
 
-Ping $Computername
+New-Item $FolderName -type directory
+New-Item $FileName -type file
 ```
 
-### <a name="get-battery-status"></a>배터리 상태 가져오기
+### <a name="get-os-version"></a>OS 버전 가져오기
 
-이 스크립트는 WMI를 사용하여 컴퓨터에 대한 배터리 상태를 쿼리합니다.
+이 스크립트는 WMI를 사용하여 컴퓨터에 OS 버전을 쿼리합니다.
 
 ``` powershell
-Write-Output (Get-WmiObject -Class Win32_Battery).BatteryStatus
-
+Write-Output (Get-WmiObject -Class Win32_operatingSystem).Caption
 ```
 
 ## <a name="run-a-script"></a>스크립트 실행
 
-스크립트가 승인되면 선택한 컬렉션에 대해 실행할 수 있습니다. 스크립트 실행이 시작되면 우선 순위가 높은 시스템을 통해 빠르게 시작되고 1시간 이내에 실행됩니다. 스크립트의 결과는 더 느린 상태 메시지 시스템을 사용하여 반환됩니다.
+스크립트가 승인되면 단일 장치 또는 컬렉션에 대해 실행할 수 있습니다. 스크립트 실행이 시작되면 1시간 후에 시간 초과되는 우선 순위가 높은 시스템을 통해 빠르게 시작됩니다. 스크립트의 결과는 상태 메시지 시스템을 사용하여 반환됩니다.
+
+스크립트의 대상 컬렉션을 선택하려면 다음을 수행합니다.
 
 1. Configuration Manager 콘솔에서 **자산 및 준수**를 클릭합니다.
 2. 자산 및 호환성 작업 영역에서 **장치 컬렉션**을 클릭합니다.
 3. **장치 컬렉션** 목록에서 스크립트를 실행하려는 장치 컬렉션을 클릭합니다.
-4. **홈** 탭의 **모든 시스템** 그룹에서 **스크립트 실행**을 클릭합니다.
+4. 원하는 컬렉션을 선택하고 **스크립트 실행**을 클릭합니다.
 5. **스크립트 실행** 마법사의 **스크립트** 페이지에서 목록에 있는 스크립트를 선택합니다. 승인된 스크립트만 표시됩니다.
 6. **다음**을 클릭하여 마법사를 완료합니다.
 
 >[!IMPORTANT]
->예를 들어 대상 클라이언트가 꺼져 있어 스크립트가 실행되지 않으면 1시간 후에 다시 실행해야 합니다.
+>예를 들어 1시간 동안 대상 장치가 꺼져 있어 스크립트가 실행되지 않으면 다시 실행해야 합니다.
 
 ### <a name="target-machine-execution"></a>대상 컴퓨터 실행
+
 스크립트가 대상 클라이언트에서 *시스템* 또는 *컴퓨터* 계정으로 실행됩니다. 이 계정은 네트워크 액세스가 제한됩니다. 이에 따라 스크립트를 통한 원격 시스템 및 위치에 대한 모든 액세스가 프로비전되어야 합니다.
 
-## <a name="work-flow-and-monitoring"></a>작업 흐름 및 모니터링
+## <a name="script-monitoring"></a>스크립트 모니터링
 
-다음은 스크립트 실행이 작업 흐름(만들기, 승인, 실행 및 모니터링)과 같은 것임을 보여 줍니다.
+장치 컬렉션에서 스크립트 실행을 시작한 후에는 다음 절차에 따라 작업을 모니터링합니다. 버전 1710부터는 실행되는 스크립트를 실시간으로 모니터링할 수 있으며 지정된 스크립트 실행에 대한 보고서로 돌아갈 수도 있습니다. <br>
 
-![스크립트 실행 - 작업 흐름](./media/run-scripts/RS-run-scripts-work-flow.png)
-
-### <a name="script-monitoring"></a>스크립트 모니터링
-
-장치 컬렉션에서 스크립트 실행을 시작한 후에는 다음 절차에 따라 작업을 모니터링합니다. 버전 1710부터는 실행되는 스크립트를 실시간으로 모니터링할 수 있으며 지정된 스크립트 실행에 대한 보고서로 돌아갈 수도 있습니다.
+![스크립트 모니터 - 스크립트 실행 상태](./media/run-scripts/RS-monitoring-three-bar.png)
 
 1. Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.
-2. **모니터링** 작업 영역에서 **스크립트 상태**를 클릭합니다. ![스크립트 모니터 - 스크립트 실행 상태](./media/run-scripts/RS-monitoring-three-bar.png)
+2. **모니터링** 작업 영역에서 **스크립트 상태**를 클릭합니다.
 3. **스크립트 상태** 목록에서 클라이언트 장치에서 실행한 각 스크립트에 대한 결과를 확인합니다. 스크립트 종료 코드 **0**은 일반적으로 스크립트가 성공적으로 실행되었음을 나타냅니다.
 
 ## <a name="see-also"></a>참고 항목

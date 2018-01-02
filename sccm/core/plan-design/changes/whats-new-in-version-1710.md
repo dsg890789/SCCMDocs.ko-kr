@@ -13,11 +13,11 @@ ms.assetid: bc6c3e5f-b9e2-400e-9d9d-446ff93c520c
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 83bd5fc972bc0bef07b206e160463db71837e827
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: 8431ebffc6d1aa463c5622bd67db8a140c0cfe69
+ms.sourcegitcommit: 2dc9c83e57e9734ffc4a93f79cd71285036eeb8b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="what39s-new-in-version-1710-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1710의 새로운 기능
 
@@ -58,7 +58,7 @@ Version 1710 drops support for the following products:
 
 ### <a name="co-management-for-windows-10-devices"></a>Windows 10 장치의 공동 관리    
 <!-- 1350871 -->
-Windows 10 버전 1607(Anniversary Update라고도 함)부터는 Windows 10 장치를 온-프레미스 AD(Active Directory)와 클라우드 기반 Azure AD에 동시에 조인할 수 있습니다(하이브리드 Azure AD). 공동 관리에서는 이 향상된 기능을 사용하며 Configuration Manager 및 Intune을 둘 다 사용하여 Windows 10 장치를 동시에 관리할 수 있게 해줍니다. 이것은 기존 관리에서 최신 관리에 대한 연결을 제공하고 단계별 접근 방법을 사용하여 전환할 수 있는 경로를 제공하는 솔루션입니다. 자세한 내용은 [Windows 10 장치의 공동 관리](/sccm/core/clients/manage/co-management-overview)를 참조하세요.
+이전 Windows 10 업데이트에서 이미 Windows 10 장치를 온-프레미스 AD(Active Directory)와 클라우드 기반 Azure AD에 동시에 조인할 수 있습니다(하이브리드 Azure AD). Configuration Manager 버전 1710부터 공동 관리에서는 이러한 향상된 기능을 통해 Configuration Manager 및 Intune을 모두 사용하여 Windows 10 버전 1709(Fall Creators Update라고도 함) 장치를 동시에 관리할 수 있습니다. 이것은 기존 관리에서 최신 관리에 대한 연결을 제공하고 단계별 접근 방법을 사용하여 전환할 수 있는 경로를 제공하는 솔루션입니다. 자세한 내용은 [Windows 10 장치의 공동 관리](/sccm/core/clients/manage/co-management-overview)를 참조하세요.
 
 ### <a name="restart-computers-from-the-configuration-manager-console-----1356283---"></a>Configuration Manager 콘솔에서 컴퓨터 다시 시작 <!-- 1356283 -->
 이 릴리스부터 Configuration Manager 콘솔을 사용하여 다시 시작해야 하는 클라이언트 장치를 식별한 다음 클라이언트 알림 작업을 통해 해당 장치를 다시 시작할 수 있습니다.
@@ -165,7 +165,6 @@ Windows 10 버전 1607(Anniversary Update라고도 함)부터는 Windows 10 장�
 - 플랫폼이 **Android**, **Android for Work** 또는 **Windows Phone 8.1**로 설정되면 **지원되는 플랫폼** 페이지는 필요하지 않으므로 표시되지 않습니다.
 - Configuration Manager 클라이언트 기반 워크플로는 하이브리드 모바일 장치(MDM) 클라이언트 기반 Windows 10 워크플로와 결합되었습니다. 모두 동일한 설정을 지원합니다.
 - 각 플랫폼 워크플로에는 해당 워크플로에 대한 적절한 설정만이 포함됩니다.  예를 들어, Android 워크플로에는 Android에 적절한 설정이 포함되고 iOS 또는 Windows 10 Mobile에 적절한 설정은 Android 워크플로에 더 이상 표시되지 않습니다.
-- Windows 8.1 장치의 경우 Configuration Manager 클라이언트만 관리하는 연결 유형(Intune에서 지원하지 않음)이 명확하게 표시됩니다.
 - 자동 VPN 페이지는 사용되지 않으며 제거되었습니다.
 
 이러한 변경 내용은 새 VPN 프로필에 적용됩니다.  

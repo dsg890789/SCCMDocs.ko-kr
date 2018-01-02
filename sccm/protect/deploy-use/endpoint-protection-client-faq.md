@@ -3,7 +3,7 @@ title: "Endpoint Protection 클라이언트에 대한 질문과 대답"
 titleSuffix: Configuration Manager
 description: "Windows Defender 및 Endpoint Protection에 대한 질문과 대답을 확인합니다."
 ms.custom: na
-ms.date: 02/14/2017
+ms.date: 12/09/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,14 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e3aaa9d2-a40e-42b1-ad75-5a115351729e
 caps.latest.revision: "15"
-author: NathBarn
-ms.author: nathbarn
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: a3fb0bc39f1606f1a65b5623c9567819b1a0c52e
-ms.sourcegitcommit: 5d46ed593b1cc461ea3f6ff6917bcd272b095ed7
+ms.openlocfilehash: 2656a5c40dbd2916ef36268936a4e2163ebde14d
+ms.sourcegitcommit: 372171a5cd8d143d6d47b651018cda0c91cad67c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/09/2017
 ---
 # <a name="endpoint-protection-client-frequently-asked-questions"></a>Endpoint Protection 클라이언트에 대한 질문과 대답
 
@@ -203,7 +203,7 @@ Windows Defender에서 검색된 사용자 동의 없이 설치되거나 컴퓨�
 
 ##  <a name="what-is-real-time-protection"></a>실시간 보호란?  
 
- 실시간 보호는 Windows Defender에서 항상 컴퓨터를 모니터링하고 바이러스 및 스파이웨어 같은 잠재적인 위협 요소가 자체적으로 설치되거나 컴퓨터에서 실행되려고 할 때 경고할 수 있습니다. 이 기능은 Windows Defender가 컴퓨터를 보호하는 방식의 중요한 요소이기 때문에 실시간 보호가 항상 켜져 있는지 확인해야 합니다. 실시간 보호가 해제되면 Windows Defender는 알림을 표시하고 컴퓨터의 상태를 “위험”으로 변경합니다.  
+ 실시간 보호는 Windows Defender에서 항상 컴퓨터를 모니터링하고 바이러스 및 스파이웨어 같은 잠재적인 위협 요소가 자체적으로 설치되거나 컴퓨터에서 실행되려고 할 때 경고할 수 있습니다. 이 기능은 Windows Defender가 컴퓨터를 보호하는 방식의 중요한 요소이기 때문에 실시간 보호가 항상 켜져 있는지 확인해야 합니다. 실시간 보호가 해제되면 Windows Defender는 알림을 표시하고 컴퓨터의 상태를 **위험**으로 변경합니다.  
 
  실시간 보호가 위협 또는 잠재적인 위협을 감지할 때마다 Windows Defender는 알림을 표시합니다. 이제 다음 옵션 중에서 선택할 수 있습니다.  
 
