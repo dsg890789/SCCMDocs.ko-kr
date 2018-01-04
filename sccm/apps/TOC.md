@@ -31,7 +31,7 @@
 ## 응용 프로그램 관리
 ### [관리 작업](deploy-use/management-tasks-applications.md)
 ### [사용자 장치 선호도](deploy-use/link-users-and-devices-with-user-device-affinity.md)
-### [비즈니스용 Windows 스토어 대량 구매 앱](deploy-use/manage-apps-from-the-windows-store-for-business.md)
+### [비즈니스용 Microsoft 스토어 대량 구매 앱](deploy-use/manage-apps-from-the-windows-store-for-business.md)
 ### [App-V 가상 환경](deploy-use/create-app-v-virtual-environments.md)
 
 ## 응용 프로그램 업데이트 및 사용 중지

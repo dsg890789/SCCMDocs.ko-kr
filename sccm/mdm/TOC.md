@@ -52,7 +52,7 @@
 ### [Android 앱 구성 정책](deploy-use/configure-android-apps-with-app-configuration-policies.md)
 ### [모바일 응용 프로그램 관리 정책](deploy-use/protect-apps-using-mam-policies.md)
 ### [관리 브라우저 정책](deploy-use/manage-internet-access-using-managed-browser-policies.md)
-### [비즈니스용 Windows 스토어 앱](deploy-use/windows-store-for-business.md)
+### [비즈니스용 Microsoft 스토어 앱](deploy-use/windows-store-for-business.md)
 
 ## [Intune 구독 관리](deploy-use/manage-intune-subscriptions.md)
 ## [MDM 기관 변경](deploy-use/change-mdm-authority.md)
