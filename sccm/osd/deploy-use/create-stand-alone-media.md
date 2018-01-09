@@ -13,14 +13,14 @@ ms.topic: article
 ms.assetid: c6b9ccd2-78d9-4f0e-b25a-70d0866300ba
 caps.latest.revision: "21"
 caps.handback.revision: "0"
-author: Dougeby
-ms.author: dougeby
+author: aczechowski
+ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 533b3942136255dd396df81529dad100d4db0a95
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: ef9ee10c94cea3e9d8437a8d8b3df8427d0cc524
+ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="create-stand-alone-media-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 독립 실행형 미디어 만들기
 
@@ -173,4 +173,4 @@ Configuration Manager의 독립 실행형 미디어에는 Configuration Manager 
 |운영 체제-설치 **(새 작업 순서 그룹)**|다른 작업 시퀀스 하위 그룹을 만듭니다. 이 하위 그룹에는 Configuration Manager 클라이언트를 설치하는 데 필요한 단계가 포함됩니다.|  
 |Windows 및 ConfigMgr 설치|이 작업 순서 단계를 사용하여 Configuration Manager 클라이언트 소프트웨어를 설치할 수 있습니다. Configuration Manager가 설치되고 Configuration Manager 클라이언트 GUID를 등록합니다. **설치 속성** 창에서 필수 설치 매개 변수를 할당할 수 있습니다.|  
 |사용자 파일 및 설정-복원 **(새 작업 순서 그룹)**|다른 작업 시퀀스 하위 그룹을 만듭니다. 이 하위 그룹 사용자 상태를 복원 하는데 필요한 단계를 포함 합니다.|  
-|사용자 상태 복원|USMT(사용자 환경 마이그레이션 도구)를 시작하여 사용자 환경 캡처 작업에서 캡처된 사용자 환경 및 설정을 대상 컴퓨터로 복원할 때 사용하는 작업 순서 단계입니다.|  
+|사용자 환경 복원|USMT(사용자 환경 마이그레이션 도구)를 시작하여 사용자 환경 캡처 작업에서 캡처된 사용자 환경 및 설정을 대상 컴퓨터로 복원할 때 사용하는 작업 순서 단계입니다.|  

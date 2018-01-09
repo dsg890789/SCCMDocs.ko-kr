@@ -12,14 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0212b023-804a-4f84-b880-7a59cdb49c67
 caps.latest.revision: "5"
-author: Dougeby
-ms.author: dougeby
+author: aczechowski
+ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 586eec745bdf86a42a9d33fb9e1163f03efa1c59
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 89e30f81648aff16de2f7db55cbdda06cf69551d
+ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="use-a-task-sequence-to-manage-virtual-hard-disks-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업 순서를 사용하여 가상 하드 디스크 관리
 
@@ -29,7 +29,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
 
  다음 섹션을 사용하여 Configuration Manager에서 VHD를 관리할 수 있습니다.
 
-## <a name="prerequisites"></a>전제 조건  
+## <a name="prerequisites"></a>필수 구성 요소  
  시작하기 전에 다음 전제 조건을 확인합니다.  
 
 -   VHD를 관리할 컴퓨터에서 다음 운영 체제 중 하나를 실행하고 있어야 합니다.  

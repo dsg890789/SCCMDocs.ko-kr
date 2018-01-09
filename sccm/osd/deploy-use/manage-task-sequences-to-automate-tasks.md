@@ -12,14 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a1f099f1-e9b5-4189-88b3-f53e3b4e4add
 caps.latest.revision: "10"
-author: Dougeby
-ms.author: dougeby
+author: aczechowski
+ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 44e6afbfac3ef1e8318991854c8fdd22ead4c6ed
-ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
+ms.openlocfilehash: b3071905a368ff9bc8e932d91f9b1e7d707b106b
+ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="manage-task-sequences-to-automate-tasks-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업을 자동화하는 작업 순서 관리
 
@@ -421,7 +421,7 @@ Configuration Manager 버전 1702부터 강력한 작업 순서를 설정하고 
 
 #### <a name="to-create-task-sequence-variables-for-a-computer"></a>컴퓨터에 대한 작업 순서 변수를 만들려면  
 
-1.  Configuration Manager 콘솔에서 **자산 및 준수**를 클릭합니다.  
+1.  Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.  
 
 2.  **자산 및 준수** 작업 영역에서 변수를 추가할 컴퓨터가 포함된 컬렉션을 확장합니다.  
 
@@ -435,7 +435,7 @@ Configuration Manager 버전 1702부터 강력한 작업 순서를 설정하고 
 
 #### <a name="to-create-task-sequence-variables-for-a-collection"></a>컬렉션에 대한 작업 순서 변수를 만들려면  
 
-1.  Configuration Manager 콘솔에서 **자산 및 준수**를 클릭합니다.  
+1.  Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.  
 
 2.  **자산 및 준수** 작업 영역에서 변수를 추가할 컬렉션을 선택하고 **속성**을 클릭합니다.  
 

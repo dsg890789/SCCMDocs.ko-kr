@@ -13,14 +13,14 @@ ms.topic: article
 ms.assetid: 8eed50f5-80a4-422e-8aa6-a7ccb2171475
 caps.latest.revision: "8"
 caps.handback.revision: "0"
-author: Dougeby
-ms.author: dougeby
+author: aczechowski
+ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 91e3fa4aba93dc3012fe1e702f50c4f9438a69e8
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 9d902f75911b484d22d38b07cea40e1c00ea0d93
+ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="deploy-windows-to-go-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows to Go 배포
 
@@ -235,7 +235,7 @@ ms.lasthandoff: 10/12/2017
 
 7.  **홈** 탭의 **만들기** 그룹에서 **패키지 만들기**를 클릭합니다.  
 
-8.  **패키지** 페이지에서 패키지의 이름과 설명을 지정합니다. 예를 들어 패키지 이름으로 **Windows To Go** 를 입력하고 패키지 설명으로 **System Center Configuration Manager 를 사용 하 여 Windows To Go 드라이브 구성 하려면 패키지** 를 지정합니다.  
+8.  **패키지** 페이지에서 패키지의 이름과 설명을 지정합니다. 예를 들어 패키지 이름으로 **Windows To Go** 를 입력하고 패키지 설명으로 **Package to configure a Windows To Go drive using System Center Configuration Manager** 를 지정합니다.  
 
 9. **이 패키지는 원본 파일을 포함함**을 선택하고 1단계에서 만든 패키지 원본 폴더의 경로를 지정한 후에 **다음**을 클릭합니다.  
 

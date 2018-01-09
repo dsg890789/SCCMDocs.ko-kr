@@ -13,14 +13,14 @@ ms.topic: article
 ms.assetid: c6777fb0-0754-4abf-8a1b-7639d23e9391
 caps.latest.revision: "8"
 caps.handback.revision: "0"
-author: aaroncz
+author: aczechowski
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: bc3237b701a49aa176c924323710beea3dcc6fa9
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+ms.openlocfilehash: 0b6fa22a7bc3de7bb5bc0d26f8e35b51d55c5e72
+ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="ports-used-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사용되는 포트
 
@@ -578,7 +578,7 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
  다음 섹션에서는 Configuration Manager에 사용되는 포트에 대해 추가 정보를 제공합니다.  
 
 ###  <a name="BKMK_ClientShares"></a> 클라이언트-서버 공유  
- 클라이언트는 UNC 공유에 연결할 때마다 SMB(Server Message Block)를 사용합니다. 예를 들면 다음과 같습니다.  
+ 클라이언트는 UNC 공유에 연결할 때마다 SMB(Server Message Block)를 사용합니다. 예:  
 
 -   CCMSetup.exe **/source:** 명령줄 속성을 지정하는 수동 클라이언트 설치  
 

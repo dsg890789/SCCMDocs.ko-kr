@@ -11,14 +11,14 @@ ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: bd3df04a-902f-4e91-89eb-5584b47d9efa
-author: Dougeby
-ms.author: dougeby
+author: aczechowski
+ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 58a5c60e2d8b819051916b49911a236a9c5ac4ee
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: f2d53b7f525d4f827b78840a7f0d9482d203c08d
+ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="task-sequence-steps-to-manage-bios-to-uefi-conversion"></a>BIOS-UEFI 변환을 관리하는 작업 순서 단계
 Windows 10에서는 UEFI 사용 장치가 필요한 많은 새로운 보안 기능을 제공합니다. UEFI를 지원하지만 레거시 BIOS를 사용하는 최신 Windows PC가 있을 수 있습니다. 장치를 UEFI로 변환하려면 각 PC로 이동하여 하드 디스크를 다시 분할하고 펌웨어를 다시 구성해야 했습니다. Configuration Manager에서 작업 순서를 사용하여 하드 드라이브를 BIOS에서 UEFI로 변환할 준비를 하고, 현재 위치 업그레이드 프로세스의 일부로 BIOS에서 UEFI로 변환하고, 하드웨어 인벤토리의 일부로 UEFI 정보를 수집할 수 있습니다.

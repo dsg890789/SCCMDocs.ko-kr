@@ -13,14 +13,14 @@ ms.topic: article
 ms.assetid: 84802d55-112e-4f7f-9a48-74a80d91a0f4
 caps.latest.revision: "10"
 caps.handback.revision: "0"
-author: Dougeby
-ms.author: dougeby
+author: aczechowski
+ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 43b9f954d6cca162606136c9b64a72daebee7f3d
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: f03f5d0e8c6d4653e25e50d615d5d50e00d9cda0
+ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="manage-drivers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 드라이버 관리
 

@@ -12,14 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 0a7415ba-2c53-4433-983e-780e92aa662f
 caps.latest.revision: "11"
-author: aaroncz
+author: aczechowski
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: ee47f96dd40d31a4783c4d175c66e741c216046a
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+ms.openlocfilehash: b4894e4122231e3a8a45e5b3fb687dd3fd00ad08
+ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="plan-for-site-system-servers-and-site-system-roles-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 사이트 시스템 서버 및 사이트 시스템 역할에 대한 계획
 
@@ -102,7 +102,7 @@ Configuration Manager 사이트마다 다른 사이트 시스템 역할을 지�
 
 -   **보고 서비스 지점.** SQL Server Reporting Services와 통합되어 Configuration Manager용 보고서를 만들고 관리하는 사이트 시스템 역할입니다. 이 역할은 기본 사이트와 중앙 관리 사이트에서 지원되며, 지원되는 사이트에서 이 역할의 여러 인스턴스를 설치할 수 있습니다. 자세한 내용은 [System Center Configuration Manager의 보고 계획](../../../core/servers/manage/planning-for-reporting.md)을 참조하세요.  
 
--   **서비스 연결 지점.** Microsoft Intune 및 온-프레미스 MDM에서 모바일 장치를 관리하는 데 사용하는 사이트 시스템 역할입니다. 이 역할은 사이트의 사용 현황 데이터도 업로드하며, Configuration Manager 콘솔에서 Configuration Manager의 업데이트를 사용하도록 하는 데 필요합니다. 계층에서는 이 역할의 단일 인스턴스만 지원하므로, 이 역할의 인스턴스는 계층의 최상위 계층 사이트(중앙 관리 사이트 또는 독립 실행형 기본 사이트)에 있어야 합니다. 독립 실행형 기본 사이트를 더 큰 계층 구조로 확장하는 경우 기본 사이트에서 이 역할을 제거한 다음 중앙 관리 사이트에서 설치해야 합니다. 자세한 내용은 [System Center Configuration Manager의 서비스 연결 지점 정보](../../../core/servers/deploy/configure/about-the-service-connection-point.md)을 참조하십시오.  
+-   **서비스 연결 지점.** Microsoft Intune 및 온-프레미스 MDM에서 모바일 장치를 관리하는 데 사용하는 사이트 시스템 역할입니다. 이 역할은 사이트의 사용 현황 데이터도 업로드하며, Configuration Manager 콘솔에서 Configuration Manager의 업데이트를 사용하도록 하는 데 필요합니다. 계층에서는 이 역할의 단일 인스턴스만 지원하므로, 이 역할의 인스턴스는 계층의 최상위 계층 사이트(중앙 관리 사이트 또는 독립 실행형 기본 사이트)에 있어야 합니다. 독립 실행형 기본 사이트를 더 큰 계층 구조로 확장하는 경우 기본 사이트에서 이 역할을 제거한 다음 중앙 관리 사이트에서 설치해야 합니다. 자세한 내용은 [About the service connection point in System Center Configuration Manager](../../../core/servers/deploy/configure/about-the-service-connection-point.md)을 참조하십시오.  
 
 -   **소프트웨어 업데이트 지점.** WSUS(Windows Server Update Services)와 통합되어 Configuration Manager 클라이언트에 소프트웨어 업데이트를 제공하는 사이트 시스템 역할입니다. 이 역할은 모든 사이트에서 지원됩니다.  
 

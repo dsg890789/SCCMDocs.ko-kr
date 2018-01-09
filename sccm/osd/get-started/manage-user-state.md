@@ -13,20 +13,20 @@ ms.topic: article
 ms.assetid: d8d5c345-1e91-410b-b8a9-0170dcfa846e
 caps.latest.revision: "12"
 caps.handback.revision: "0"
-author: Dougeby
-ms.author: dougeby
+author: aczechowski
+ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: eae8f16a43dd8b1c6f6c695fbefafbb26084ff36
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: b85199d1109d216cbb7d7368717b99c110ec3219
+ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="manage-user-state-in-system-center-configuration-manager"></a>System Center Configuration Manager의 사용자 상태 관리
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 작업 순서를 사용하여 현재 운영 체제의 사용자 상태를 보존하려는 운영 체제 배포 시나리오에서 사용자 상태 데이터를 캡처 및 복원할 수 있습니다. 예를 들면 다음과 같습니다.  
+System Center Configuration Manager 작업 순서를 사용하여 현재 운영 체제의 사용자 상태를 보존하려는 운영 체제 배포 시나리오에서 사용자 상태 데이터를 캡처 및 복원할 수 있습니다. 예:  
 
 -   배포 시 한 컴퓨터에서 사용자 상태를 캡처하여 다른 컴퓨터에서 복원  
 
@@ -112,7 +112,7 @@ System Center Configuration Manager 작업 순서를 사용하여 현재 운영 
 
 #### <a name="to-create-a-computer-association"></a>컴퓨터 연결을 만들려면  
 
-1.  Configuration Manager 콘솔에서 **자산 및 준수**를 클릭합니다.  
+1.  Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.  
 
 2.  **자산 및 준수** 작업 영역에서 **사용자 상태 마이그레이션**을 클릭합니다.  
 

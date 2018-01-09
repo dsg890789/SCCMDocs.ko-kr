@@ -12,14 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 1dc74219-7ff5-4e3b-b4f6-5aad663bb75b
 caps.latest.revision: "24"
-author: mattbriggs
-ms.author: mabrigg
+author: aczechowski
+ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 0b90cb20707340bec6fc7d5ddbab6f39d78e10bf
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 30b6a4e009d1e44fff124dc5814bdd2e6445a63a
+ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="infrastructure-requirements-for-operating-system-deployment-in-system-center-configuration-manager"></a>System Center Configuration Manager의 운영 체제 배포에 대한 인프라 요구 사항
 
@@ -60,7 +60,7 @@ System Center 2012 Configuration Manager의 운영 체제 배포에는 외부 �
 ### <a name="user-state-migration-tool-usmt"></a>USMT(사용자 상태 마이그레이션 도구)  
  Configuration Manager에서는 USMT 10 원본 파일을 포함하는 USMT 패키지를 사용하여 사용자 상태를 운영 체제 배포의 일부로 캡처하고 복원합니다. 최상위 사이트의 Configuration Manager 설치 프로그램에서 자동으로 USMT 패키지를 만듭니다. USMT 10은 Windows 7, Windows 8, Windows 8.1 및 Windows 10의 사용자 상태를 캡처할 수 있습니다. USMT 10은 Windows 10용 Windows ADK(Windows 평가 및 배포 키트)에 배포됩니다.  
 
- 자세한 내용은 다음을 참조하세요.  
+ 자세한 내용은 다음을 참조하십시오.  
 
 -   [USMT 10에 대한 일반 마이그레이션 시나리오](https://technet.microsoft.com/library/mt299169\(v=vs.85\).aspx)  
 

@@ -12,14 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 70b5cbc0-64ba-49bd-8b34-fb4c09b2b95b
 caps.latest.revision: "3"
-author: aaroncz
+author: aczechowski
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 2d10fb670ae8d13a8a25d7e049d278e55a887fdd
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+ms.openlocfilehash: 03eb4d1fb08bfe8bf69af2c3e9ee035c8e2f8ab6
+ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="content-source-location-scenarios-in-system-center-configuration-manager"></a>System Center Configuration Manager의 콘텐츠 원본 위치 시나리오
 

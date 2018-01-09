@@ -13,14 +13,14 @@ ms.topic: article
 ms.assetid: 9cbfc406-d009-446d-8fee-4938de48c919
 caps.latest.revision: "15"
 caps.handback.revision: "0"
-author: Dougeby
-ms.author: dougeby
+author: aczechowski
+ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 4c1d721c9fb0b01f15f1f0468bc797ffffb9e345
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 184768e87406051508c8dcacfa63db5ff85c3732
+ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="customize-boot-images-with-system-center-configuration-manager"></a>System Center Configuration Manager로 부팅 이미지 사용자 지정
 

@@ -13,14 +13,14 @@ ms.topic: article
 ms.assetid: c1ff371e-b0ad-4048-aeda-02a9ff08889e
 caps.latest.revision: "9"
 caps.handback.revision: "0"
-author: aaroncz
+author: aczechowski
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 1463aa5a64de50b31ad0fc94709e2b41fd1c3bb0
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+ms.openlocfilehash: c310e23b543e8767a393ca5bf87a224a9269e359
+ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="log-files-in-system-center-configuration-manager"></a>System Center Configuration Manager의 로그 파일
 
@@ -156,7 +156,7 @@ Configuration Manager 로그 파일은 로그 파일을 만드는 프로세스 �
 |Ccmperf.log|클라이언트 성능 카운터와 관련된 데이터의 유지 관리 및 캡처와 관련된 활동을 기록합니다.|  
 |CcmRestart.log|클라이언트 서비스 다시 시작 활동을 기록합니다.|  
 |CCMSDKProvider.log|클라이언트 SDK 인터페이스에 대한 활동을 기록합니다.|  
-|CertificateMaintenance.log|Active Directory Domain Services 및 관리 지점의 인증서를 유지 관리합니다.|  
+|CertificateMaintenance.log|Active Directory 도메인 서비스 및 관리 지점의 인증서를 유지 관리합니다.|  
 |CIDownloader.log|구성 항목 정의 다운로드에 대한 세부 정보를 기록합니다.|  
 |CITaskMgr.log|각 응용 프로그램 및 배포 유형(예: 콘텐츠 다운로드, 설치 또는 제거 작업)에 대해 시작된 작업을 기록합니다.|  
 |ClientAuth.log|클라이언트의 서명 및 인증 활동을 기록합니다.|  

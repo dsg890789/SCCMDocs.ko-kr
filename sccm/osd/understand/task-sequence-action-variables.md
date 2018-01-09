@@ -13,14 +13,14 @@ ms.topic: article
 ms.assetid: e2269031-0977-4f01-a274-420e00630575
 caps.latest.revision: "10"
 caps.handback.revision: "0"
-author: Dougeby
-ms.author: dougeby
+author: aczechowski
+ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 8c1462ca922f23250ffa44c6433f01a8220d3ad7
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: da1a9b9d73a06a099b71e59cbf3621791eaed527
+ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="task-sequence-action-variables-in-system-center-configuration-manager"></a>System Center Configuration Manager의 작업 순서 동작 변수
 
@@ -72,14 +72,14 @@ ms.lasthandoff: 10/12/2017
 |OSDAdapter<br /><br /> (입력)|이 작업 순서 변수는 배열 변수입니다. 배열의 각 요소는 컴퓨터에서 단일 네트워크 어댑터에 대한 설정을 나타냅니다. 각 어댑터에 대해 정의된 설정은 배열 변수 이름과 0부터 시작하는 네트워크 어댑터 인덱스 및 속성 이름을 결합하여 액세스할 수 있습니다.<br /><br /> <br /><br /> 여러 네트워크 어댑터가 이 작업 순서 동작으로 구성될 경우 두 번째 네트워크에 대한 속성이 변수 이름의 해당 인덱스를 사용하여 정의됩니다. 예를 들어 OSDAdapter1EnableDHCP, OSDAdapter1IPAddressList, OSDAdapter1DNSDomain, OSDAdapter1WINSServerList, OSDAdapter1EnableWINS 등입니다.<br /><br /> <br /><br /> 예를 들어 다음 변수 이름을 사용하여 이 작업 순서 동작에 의해 구성될 첫 번째 네트워크 어댑터의 속성을 정의할 수 있습니다.<br /><br /> <ul><li>**OSDAdapter0EnableDHCP** – 어댑터에 대해 DHCP(Dynamic Host Configuration Protocol)를 사용하려면 true로 설정합니다.<br />    이 설정은 필수입니다. 사용 가능한 값은 True 또는 False입니다.</li><li>**OSDAdapter0IPAddressList** – 쉼표로 구분된 어댑터에 대한 IP 주소 목록입니다. **EnableDHCP** 가 **false**로 설정되지 않으면 이 속성은 무시됩니다.<br />    이 설정은 필수입니다.</li><li>**OSDAdapter0SubnetMask** – 쉼표로 구분된 서브넷 마스크 목록입니다. **EnableDHCP** 가 **false**로 설정되지 않으면 이 속성은 무시됩니다.<br />    이 설정은 필수입니다.</li><li>**OSDAdapter0Gateways** – 쉼표로 구분된 IP 게이트웨이 주소 목록입니다. **EnableDHCP** 가 **false**로 설정되지 않으면 이 속성은 무시됩니다.<br />    이 설정은 필수입니다.</li><li>**OSDAdapter0DNSDomain** - 어댑터에 대한 DNS(Domain Name System) 도메인입니다.</li><li>**OSDAdapter0DNSServerList** – 쉼표로 구분된 어댑터에 대한 DNS 서버 목록입니다.<br />    이 설정은 필수입니다.</li><li>**OSDAdapter0EnableDNSRegistration** - DNS에 어댑터에 대한 IP 주소를 등록하려면 **true**로 설정합니다.</li><li>**OSDAdapter0EnableFullDNSRegistration** - DNS에 컴퓨터의 전체 DNS 이름 아래 어댑터에 대한 IP 주소를 등록하려면 **true**로 설정합니다.</li><li>**OSDAdapter0EnableIPProtocolFiltering** - 어댑터에서 IP 프로토콜 필터링을 사용하려면 **true**로 설정합니다.</li><li>**OSDAdapter0IPProtocolFilterList** – IP를 통해 실행할 수 있는 쉼표로 구분된 프로토콜 목록입니다. **EnableIPProtocolFiltering** 이 **false**로 설정된 경우 이 속성은 무시됩니다.</li><li>**OSDAdapter0EnableTCPFiltering** - 어댑터에 대해 TCP 포트 필터링을 사용하려면 **true**로 설정합니다.</li><li>**OSDAdapter0TCPFilterPortList** – TCP에 대해 액세스 권한을 부여할 쉼표로 구분된 포트 목록입니다. **EnableTCPFiltering** 이 **false**로 설정된 경우 이 속성은 무시됩니다.</li><li>**OSDAdapter0TcpipNetbiosOptions** – NetBIOS over TCP/IP에 대한 옵션입니다. 가능한 값은 다음과 같습니다.<br /><br /> <ul><li>0은 DHCP 서버에서 NetBIOS 설정을 사용합니다.</li><li>1은 NetBIOS over TCP/IP를 사용하도록 설정합니다.</li><li>2는 NetBIOS over TCP/IP를 사용하지 않도록 설정합니다.</li></ul></li><li>**OSDAdapter0EnableWINS** - 이름 확인에 WINS를 사용하려면 **true**로 설정합니다.</li><li>**OSDAdapter0WINSServerList** – 쉼표로 구분된 WINS 서버 IP 주소 목록입니다. **EnableWINS** 가 **true**로 설정되지 않으면 이 속성은 무시됩니다.</li><li>**OSDAdapter0MacAddress** – 설정을 실제 네트워크 어댑터에 연결하기 위해 사용되는 MAC(미디어 액세스 컨트롤러) 주소입니다.</li><li>**OSDAdapter0Name** – 네트워크 연결 제어판 프로그램에 표시되는 네트워크 연결의 이름입니다. 이름은 0에서 255자 사이입니다.</li><li>**OSDAdapter0Index** - 설정의 배열에서 네트워크 어댑터 설정의 인덱스입니다.<br /><br />     OSDAdapterCount=1<br />    OSDAdapter0EnableDHCP=FALSE<br />    OSDAdapter0IPAddressList=192.168.0.40<br />    OSDAdapter0SubnetMask=255.255.255.0<br />    OSDAdapter0Gateways=192.168.0.1<br />    OSDAdapter0DNSSuffix=contoso.com</li></ul>|  
 |OSDAdapterCount<br /><br /> (입력)|대상 컴퓨터에 설치된 네트워크 어댑터의 수를 지정합니다. **OSDAdapterCount** 값이 설정된 경우 각 어댑터의 모든 구성 옵션이 설정되어야 합니다. 예를 들어 특정 어댑터에 대해 **OSDAdapterTCPIPNetbiosOptions** 값을 설정하면 해당 어댑터에 대한 모든 값도 구성되어야 합니다.<br /><br /> <br /><br /> 이 값을 지정하지 않으면 모든 **OSDAdapter** 값이 무시됩니다.|  
 |OSDDNSDomain<br /><br /> (입력)|대상 컴퓨터에서 사용하는 기본 DNS 서버를 지정합니다.|  
-|OSDDomainName<br /><br /> (입력)|대상 컴퓨터가 가입하는 Windows 도메인의 이름을 지정합니다. 지정된 값은 유효한 Active Directory Domain Services 도메인 이름이어야 합니다.|  
-|OSDDomainOUName<br /><br /> (입력)|대상 컴퓨터가 가입하는 OU(조직 구성 단위)의 RFC 1779 형식 이름을 지정합니다. 지정하는 경우 값에 전체 경로가 포함되어야 합니다.<br /><br /> 예:<br /><br /> **LDAP://OU=MyOu,DC=MyDom,DC=MyCompany,DC=com**|  
+|OSDDomainName<br /><br /> (입력)|대상 컴퓨터가 가입하는 Windows 도메인의 이름을 지정합니다. 지정된 값은 유효한 Active Directory 도메인 서비스 도메인 이름이어야 합니다.|  
+|OSDDomainOUName<br /><br /> (입력)|대상 컴퓨터가 가입하는 OU(조직 구성 단위)의 RFC 1779 형식 이름을 지정합니다. 지정하는 경우 값에 전체 경로가 포함되어야 합니다.<br /><br /> 예제:<br /><br /> **LDAP://OU=MyOu,DC=MyDom,DC=MyCompany,DC=com**|  
 |OSDEnableTCPIPFiltering<br /><br /> (입력)|TCP/IP 필터링이 사용되는지 여부를 지정합니다.<br /><br /> 유효한 값은<br /><br /> **"true"**<br /><br /> **"false"** (기본값)|  
 |OSDJoinAccount<br /><br /> (입력)|Windows 도메인에 대상 컴퓨터를 추가하는 데 사용되는 네트워크 계정을 지정합니다.|  
 |OSDJoinPassword<br /><br /> (입력)|Windows 도메인에 대상 컴퓨터를 추가하는 데 사용되는 네트워크 암호를 지정합니다.|  
 |OSDNetworkJoinType<br /><br /> (입력)|대상 컴퓨터가 Windows 도메인 또는 작업 그룹에 가입하는지 여부를 지정합니다.<br /><br /> **"0"** 은 대상 컴퓨터가 Windows 도메인에 가입한다는 것을 나타냅니다. **"1"** 은 컴퓨터가 작업 그룹에 가입한다는 것을 지정합니다.<br /><br /> 유효한 값은<br /><br /> **"0"**<br /><br /> **"1"**|  
 |OSDDNSSuffixSearchOrder<br /><br /> (입력)|대상 컴퓨터에 대한 DNS 검색 순서를 지정합니다.|  
-|OSDWorkgroupName<br /><br /> (입력)|대상 컴퓨터가 가입하는 작업 그룹의 이름을 지정합니다.<br /><br /> 이 값 또는 **OSDDomainName** 값 중 하나를 지정해야 합니다. 작업 그룹 이름은 최대 32자까지 가능합니다.<br /><br /> 예:<br /><br /> **"Accounting"**|  
+|OSDWorkgroupName<br /><br /> (입력)|대상 컴퓨터가 가입하는 작업 그룹의 이름을 지정합니다.<br /><br /> 이 값 또는 **OSDDomainName** 값 중 하나를 지정해야 합니다. 작업 그룹 이름은 최대 32자까지 가능합니다.<br /><br /> 예제:<br /><br /> **"Accounting"**|  
 
 ###  <a name="BKMK_ApplyOperatingSystem"></a> 운영 체제 이미지 적용 작업 순서 동작 변수  
  이 동작에 대한 변수는 대상 컴퓨터에 설치할 운영 체제에 대한 설정을 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [운영 체제 이미지 적용](task-sequence-steps.md#BKMK_ApplyOperatingSystemImage)을 참조하세요.  
@@ -100,7 +100,7 @@ ms.lasthandoff: 10/12/2017
 
 |작업 변수 이름|설명|  
 |--------------------------|-----------------|  
-|OSDComputerName<br /><br /> (입력)|대상 컴퓨터의 이름을 지정합니다.<br /><br /> 예:<br /><br /> **"%_SMSTSMachineName%"** (기본값)|  
+|OSDComputerName<br /><br /> (입력)|대상 컴퓨터의 이름을 지정합니다.<br /><br /> 예제:<br /><br /> **"%_SMSTSMachineName%"** (기본값)|  
 |OSDProductKey<br /><br /> (입력)|Windows 제품 키를 지정합니다. 지정된 값은 1-255자 사이여야 합니다.|  
 |OSDRegisteredUserName<br /><br /> (입력)|새 운영 체제에서 등록된 기본 사용자 이름을 지정합니다. 지정된 값은 1-255자 사이여야 합니다.|  
 |OSDRegisteredOrgName<br /><br /> (입력)|새 운영 체제에서 등록된 기본 조직 이름을 지정합니다. 지정된 값은 1-255자 사이여야 합니다.|  
@@ -128,8 +128,8 @@ ms.lasthandoff: 10/12/2017
 
 |작업 변수 이름|설명|  
 |--------------------------|-----------------|  
-|OSDMigrateAdapterSettings<br /><br /> (입력)|네트워크 어댑터 설정(TCP/IP, DNS 및 WINS) 구성 정보가 캡처되는지 여부를 지정합니다.<br /><br /> 예:<br /><br /> **"true"** (기본값)<br /><br /> **"false"**|  
-|OSDMigrateNetworkMembership<br /><br /> (입력)|작업 그룹 또는 도메인 멤버 자격 정보가 운영 체제 배포 중에 마이그레이션되는지 여부를 지정합니다.<br /><br /> 예:<br /><br /> **"true"** (기본값)<br /><br /> **"false"**|  
+|OSDMigrateAdapterSettings<br /><br /> (입력)|네트워크 어댑터 설정(TCP/IP, DNS 및 WINS) 구성 정보가 캡처되는지 여부를 지정합니다.<br /><br /> 예제:<br /><br /> **"true"** (기본값)<br /><br /> **"false"**|  
+|OSDMigrateNetworkMembership<br /><br /> (입력)|작업 그룹 또는 도메인 멤버 자격 정보가 운영 체제 배포 중에 마이그레이션되는지 여부를 지정합니다.<br /><br /> 예제:<br /><br /> **"true"** (기본값)<br /><br /> **"false"**|  
 
 ###  <a name="BKMK_CaptureOperatingSystemImage"></a> 운영 체제 이미지 캡처 작업 순서 동작 변수  
  이 동작에 대한 변수는 이미지가 저장되는 위치, 이미지를 만든 사람 및 이미지에 대한 설명과 같이 캡처되는 운영 체제 이미지에 대한 정보를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [운영 체제 이미지 캡처](task-sequence-steps.md#BKMK_CaptureOperatingSystemImage)를 참조하세요.  
@@ -184,7 +184,7 @@ ms.lasthandoff: 10/12/2017
 |작업 변수 이름|설명|  
 |--------------------------|-----------------|  
 |SMSConnectNetworkFolderAccount<br /><br /> (입력)|네트워크 공유에 연결하는 데 사용되는 관리자 계정을 지정합니다.|  
-|SMSConnectNetworkFolderDriveLetter<br /><br /> (입력)|연결할 네트워크 드라이브 문자를 지정합니다. 이 값은 선택 사항입니다. 지정하지 않으면 네트워크 연결이 드라이브 문자에 매핑되지 않습니다. 이 값을 지정하는 경우 D:에서 Z: 범위에 있는 값이어야 합니다.  또한 X:는 Windows PE 단계 중 Windows PE에서 사용하는 드라이브 문자이므로 사용하지 마세요.<br /><br /> 예:<br /><br /> **"D:"**<br /><br /> **"E:"**|  
+|SMSConnectNetworkFolderDriveLetter<br /><br /> (입력)|연결할 네트워크 드라이브 문자를 지정합니다. 이 값은 선택 사항입니다. 지정하지 않으면 네트워크 연결이 드라이브 문자에 매핑되지 않습니다. 이 값을 지정하는 경우 D:에서 Z: 범위에 있는 값이어야 합니다.  또한 X:는 Windows PE 단계 중 Windows PE에서 사용하는 드라이브 문자이므로 사용하지 마세요.<br /><br /> 예제:<br /><br /> **"D:"**<br /><br /> **"E:"**|  
 |SMSConnectNetworkFolderPassword<br /><br /> (입력)|네트워크 공유에 연결하는 데 사용되는 네트워크 암호를 지정합니다.|  
 |SMSConnectNetworkFolderPath<br /><br /> (입력)|연결에 대한 네트워크 경로를 지정합니다.<br /><br /> 예제:<br /><br /> **"\\\servername\sharename"**|  
 
@@ -229,11 +229,11 @@ ms.lasthandoff: 10/12/2017
 |--------------------------|-----------------|  
 |OSDJoinAccount<br /><br /> (입력)|Windows 도메인에 가입하기 위해 대상 컴퓨터에서 사용되는 계정을 지정합니다. 도메인에 가입하는 경우 이 변수가 필요합니다.|  
 |OSDJoinDomainName<br /><br /> (입력)|대상 컴퓨터가 가입하는 Windows 도메인의 이름을 지정합니다. Windows 도메인 이름의 길이는 1-255자 사이여야 합니다.|  
-|OSDJoinDomainOUName<br /><br /> (입력)|대상 컴퓨터가 가입하는 OU(조직 구성 단위)의 RFC 1779 형식 이름을 지정합니다. 지정하는 경우 값에 전체 경로가 포함되어야 합니다. Windows 도메인 OU 이름의 길이는 0에서 32,767자 사이여야 합니다. **OSDJoinType** 변수가 "1"(작업 그룹에 가입)로 설정되면 이 값이 설정되지 않습니다.<br /><br /> 예:<br /><br /> **LDAP://OU=MyOu,DC=MyDom,DC=MyCompany,DC=com**|  
+|OSDJoinDomainOUName<br /><br /> (입력)|대상 컴퓨터가 가입하는 OU(조직 구성 단위)의 RFC 1779 형식 이름을 지정합니다. 지정하는 경우 값에 전체 경로가 포함되어야 합니다. Windows 도메인 OU 이름의 길이는 0에서 32,767자 사이여야 합니다. **OSDJoinType** 변수가 "1"(작업 그룹에 가입)로 설정되면 이 값이 설정되지 않습니다.<br /><br /> 예제:<br /><br /> **LDAP://OU=MyOu,DC=MyDom,DC=MyCompany,DC=com**|  
 |OSDJoinPassword<br /><br /> (입력)|Windows 도메인에 가입하기 위해 대상 컴퓨터에서 사용되는 네트워크 암호를 지정합니다. 변수를 지정하지 않으면 빈 암호가 시도됩니다. **OSDJoinType** 변수가 "**0**"(도메인에 가입)으로 설정된 경우 이 값이 필요합니다.|  
 |OSDJoinSkipReboot<br /><br /> (입력)|대상 컴퓨터가 도메인 또는 작업 그룹에 가입한 후 다시 시작하기를 건너뛸지 여부를 지정합니다.<br /><br /> 유효한 값은<br /><br /> **"true"**<br /><br /> **"false"**|  
 |OSDJoinType<br /><br /> (입력)|대상 컴퓨터가 Windows 도메인 또는 작업 그룹에 가입하는지 여부를 지정합니다. 대상 컴퓨터를 Windows 도메인에 가입하려면 "**0**"을 지정합니다. 대상 컴퓨터를 작업 그룹에 가입하려면 "**1**"을 지정합니다.<br /><br /> 유효한 값은<br /><br /> **"0"**<br /><br /> **"1"**|  
-|OSDJoinWorkgroupName<br /><br /> (입력)|대상 컴퓨터가 가입하는 작업 그룹의 이름을 지정합니다. 작업 그룹 이름은 1-32자 사이여야 합니다.<br /><br /> 예:<br /><br /> **"Accounting"**|  
+|OSDJoinWorkgroupName<br /><br /> (입력)|대상 컴퓨터가 가입하는 작업 그룹의 이름을 지정합니다. 작업 그룹 이름은 1-32자 사이여야 합니다.<br /><br /> 예제:<br /><br /> **"Accounting"**|  
 
 ###  <a name="BKMK_PrepareWindowsCapture"></a> Windows 캡처 준비 작업 순서 동작 변수  
  이 동작에 대한 변수는 대상 컴퓨터에서 Windows 운영 체제를 캡처하는 데 사용되는 정보를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [ConfigMgr 클라이언트 캡처 준비](task-sequence-steps.md#BKMK_PrepareConfigMgrClientforCapture)를 참조하세요.  
@@ -275,7 +275,7 @@ ms.lasthandoff: 10/12/2017
 |작업 변수 이름|설명|  
 |--------------------------|-----------------|  
 |SMSRebootMessage<br /><br /> (입력)|대상 컴퓨터를 다시 시작하기 전에 사용자에게 표시할 메시지를 지정합니다. 이 변수가 설정되지 않은 경우 기본 메시지 텍스트가 표시됩니다. 지정된 메시지는 512자를 초과할 수 없습니다.<br /><br /> 예제:<br /><br /> - "이 컴퓨터가 다시 시작됩니다. 작업을 저장하세요."|  
-|SMSRebootTimeout<br /><br /> (입력)|컴퓨터가 다시 시작하기 전에 경고가 사용자에게 표시되는 시간(초)을 지정합니다. 다시 부팅 메시지를 표시하지 않으려면 0초를 지정합니다.<br /><br /> 예:<br /><br /> **"0"** (기본값)<br /><br /> **"5"**<br /><br /> **"10"**|  
+|SMSRebootTimeout<br /><br /> (입력)|컴퓨터가 다시 시작하기 전에 경고가 사용자에게 표시되는 시간(초)을 지정합니다. 다시 부팅 메시지를 표시하지 않으려면 0초를 지정합니다.<br /><br /> 예제:<br /><br /> **"0"** (기본값)<br /><br /> **"5"**<br /><br /> **"10"**|  
 
 ###  <a name="BKMK_RestoreUserState"></a> 사용자 상태 복원 작업 순서 동작 변수  
  이 동작에 대한 변수는 사용자 상태가 복원되는 폴더의 경로 이름 및 로컬 컴퓨터 계정이 복원되는지 여부와 같은 대상 컴퓨터의 사용자 상태를 복원하는 데 사용되는 정보를 지정합니다. 이러한 변수와 관련된 작업 순서 단계에 대한 자세한 내용은 [사용자 상태 복원](task-sequence-steps.md#BKMK_RestoreUserState)을 참조하세요.  

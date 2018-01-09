@@ -12,14 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: da1e687b-28f6-43c4-b14a-ff2b76e60d24
 caps.latest.revision: "26"
-author: Dougeby
-ms.author: dougeby
+author: mestew
+ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: b9b15a781adef81e970adf50b8b6f26dd75d95f8
-ms.sourcegitcommit: b517c791554500209435bca21fbf3ef8a26828c9
+ms.openlocfilehash: 3848d0d6a9f3b5d778879c598bf859fb1e8a7ac7
+ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="manage-windows-as-a-service-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows as a Service 관리
 

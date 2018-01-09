@@ -13,14 +13,14 @@ ms.topic: article
 ms.assetid: ead79e64-1b63-4d0d-8bd5-addff8919820
 caps.latest.revision: "11"
 caps.handback.revision: "0"
-author: Dougeby
-ms.author: dougeby
+author: aczechowski
+ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: f75a29ff27a1f806d4329bd2dfc5e30a8991fac9
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: f0dd624259e4f1b2a0bd14112a2cd25bb7a38767
+ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="create-bootable-media-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 부팅 가능 미디어 만들기
 

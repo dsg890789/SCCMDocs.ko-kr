@@ -13,14 +13,14 @@ ms.topic: article
 ms.assetid: b9800a66-7541-47ca-8276-da8ef6cb6d1b
 caps.latest.revision: "6"
 caps.handback.revision: "0"
-author: Dougeby
-ms.author: dougeby
+author: aczechowski
+ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: e25b60b64ae2ed75091c4f5b0ffa0f9eca4c6cac
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: add5ad2ed82e394b62613951fcaad6c38fee2465
+ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="create-a-custom-task-sequence-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 사용자 지정 작업 순서 만들기
 

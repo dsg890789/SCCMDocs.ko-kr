@@ -13,14 +13,14 @@ ms.topic: article
 ms.assetid: 10eb8958-3848-49d7-95c0-16119b624580
 caps.latest.revision: "11"
 caps.handback.revision: "0"
-author: Dougeby
-ms.author: dougeby
+author: aczechowski
+ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: c25eade287d254907c7d7d02948eb25a88ed0a11
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: be797589052a45f239629a5db56b79102257cdfd
+ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="create-capture-media-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 미디어 캡처 만들기
 
