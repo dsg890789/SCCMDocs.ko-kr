@@ -13,14 +13,14 @@ ms.topic: article
 ms.assetid: d566d85c-bf7a-40e7-8239-57640a1db5f4
 caps.latest.revision: "7"
 caps.handback.revision: "0"
-author: Dougeby
-ms.author: dougeby
+author: aczechowski
+ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 5bb55816481db8b93baada07d36c72dd39b62478
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 3fb30240c7d926657e01a4b9e03cef38fd2ee128
+ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="create-a-task-sequence-to-capture-and-restore-user-state-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사용자 상태를 캡처 및 복원하는 작업 순서 만들기
 
