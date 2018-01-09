@@ -12,14 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0a2d6c3f-a4e4-4c19-b087-3caada480de9
 caps.latest.revision: "10"
-author: aaroncz
+author: aczechowski
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 417c9591c5c3cdf2d253564d9fd93344a7d31239
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+ms.openlocfilehash: 1a81506afa49d0ae7af29f274f790d3fa5c7e61d
+ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="fundamentals-of-role-based-administration-for-system-center-configuration-manager"></a>System Center Configuration Manager의 역할 기반 관리 기본 사항
 
@@ -205,7 +205,7 @@ Configuration Manager에 대해 관리 보안을 디자인하고 구현할 때�
 
 -   사용자 장치 선호도  
 
-별도의 개체 인스턴스에 대한 액세스를 제한해야 하는 경우 보안 범위를 만듭니다. 예를 들면 다음과 같습니다.  
+별도의 개체 인스턴스에 대한 액세스를 제한해야 하는 경우 보안 범위를 만듭니다. 예:  
 
 -   테스트 응용 프로그램은 제외하고 프로덕션 응용 프로그램만 볼 수 있는 관리자 그룹이 있는 경우 프로덕션 응용 프로그램에 대해 보안 범위를 만들고, 테스트 응용 프로그램에 대해 다른 보안 범위를 만듭니다.  
 

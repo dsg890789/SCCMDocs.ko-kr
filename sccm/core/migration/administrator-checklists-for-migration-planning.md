@@ -13,14 +13,14 @@ ms.topic: article
 ms.assetid: 295fdf07-93cc-490c-acdd-ce3ee88cb36f
 caps.latest.revision: "7"
 caps.handback.revision: "0"
-author: aaroncz
+author: aczechowski
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: eadd04193a31405c8416c611ebac6580130ca632
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+ms.openlocfilehash: 2bf39fbf27020ed1f518e44cddd8e236c8ca762f
+ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="administrator-checklists-for-migration-planning-in-system-center-configuration-manager"></a>System Center Configuration Manager의 마이그레이션 계획에 대한 관리자 검사 목록
 
@@ -87,7 +87,7 @@ ms.lasthandoff: 12/01/2017
 
 -   **대상 계층을 만듭니다.**  
 
-    마이그레이션을 준비하기 위해 기본 사이트를 포함하는 System Center Configuration Manager 대상 계층 구조를 설치하고 구성합니다. 예를 들면 다음과 같습니다.  
+    마이그레이션을 준비하기 위해 기본 사이트를 포함하는 System Center Configuration Manager 대상 계층 구조를 설치하고 구성합니다. 예:  
 
     -   중앙 관리 사이트를 설치한 다음 하나 이상의 자식 기본 사이트를 설치합니다.  
 

@@ -14,11 +14,11 @@ ms.assetid: 2e68dc12-6776-437a-9138-45cd7d4bf9cf
 author: erikje
 ms.author: erikje
 manager: angrobe
-ms.openlocfilehash: e970dff4ea295694fcc5cf80e238baf2c9d081b5
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+ms.openlocfilehash: b740c422a71e625ccc110a043028cf986cdffb20
+ms.sourcegitcommit: ed8b2438ef85c9160741ef61f9171be41dd1ae0a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/17/2017
 ---
 # <a name="capabilities-in-technical-preview-1711-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1711의 기능
 
@@ -109,20 +109,6 @@ ms.lasthandoff: 12/01/2017
 1. 응용 프로그램을 만들거나 편집합니다.
 2. 응용 프로그램을 클라이언트에 배포합니다.
 3. 소프트웨어 센터에서 응용 프로그램을 설치합니다. 응용 프로그램 설치 인터페이스가 표시됩니다. 최종 사용자가 응용 프로그램 설치 마법사에 따라 응용 프로그램을 성공적으로 설치합니다.
-
-## <a name="new-compliance-policy-options-for-windows-10"></a>Windows 10에 대한 새로운 준수 정책 옵션
-다음은 Windows 10 장치에 대해 구성할 수 있는 새로운 준수 정책입니다.
-- **방화벽 필요** -  장치에서 방화벽을 사용하도록 설정하고 모든 네트워크를 모니터링해야 하는지 여부를 지정합니다.
-- **사용자 계정 컨트롤 필요** - 사용하도록 설정된 사용자 계정 컨트롤이 장치에 있도록 지정합니다.
-- **Defender**:
-  - **Windows Defender 바이러스 백신 필요** -  Windows Defender 바이러스 백신을 사용하도록 설정된 장치를 요구합니다.
-  - **Windows Defender 바이러스 백신 버전** -  장치에 설치되어 있어야 하는 스파이웨어 정의의 최소 버전을 지정합니다.
-  - **최신 Windows Defender 바이러스 백신 서명 필요** -. 장치의 Window Defender 바이러스 백신 서명이 최신인지 확인합니다.
-  - **실시간 보호 필요** -  장치에서 Windows Defender 실시간 차단을 사용하도록 설정해야 하는지 여부를 지정합니다.
-- **유효한 운영 체제 빌드** -  최소 및 최대 운영 체제 빌드 요구 사항을 지정합니다.  
-
-준수 정책 만들기 마법사를 사용하여 이러한 정책을 구성하고, 구성 중인 정책에 규칙을 추가할 때 이러한 새 옵션을 선택합니다.  
-준수 정책 [만들기](/sccm/mdm/deploy-use/create-compliance-policy#create-a-compliance-policy) 및 [배포](/sccm/mdm/deploy-use/create-compliance-policy#deploy-a-compliance-policy)를 수행하는 방법에 대해 알아보세요.
 
 
 
