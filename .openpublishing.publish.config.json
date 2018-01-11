@@ -56,6 +56,10 @@
     }
   ],
   "branch_target_mapping": {
+    "live-sxs": [
+      "Publish",
+      "Pdf"
+    ],
     "live": [
       "Publish",
       "Pdf"
