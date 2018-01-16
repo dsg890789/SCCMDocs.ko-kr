@@ -16,11 +16,11 @@ caps.handback.revision: "0"
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.openlocfilehash: b60a1b9e85b00cbaba54db4ea4cd92a1038c3fcf
-ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
+ms.openlocfilehash: 1d98cd234b2444873f1ffa5819af74d507dfa9c1
+ms.sourcegitcommit: ba23ff90709a5fde1a63c650ab0d848f441afc43
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="vpn-profiles-on-mobile-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager의 모바일 장치에 대한 VPN 프로필
 
@@ -38,7 +38,7 @@ System Center Configuration Manager의 VPN 프로필을 사용하여 조직의 �
 
  |연결 유형|iOS 및 macOS X|Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop 및 Mobile|  
  |---------------------|----------------------|-------------|-----------------|----------------|--------------------|-----------------------|-----------------------------------|  
- |Cisco AnyConnect|예|예|아니요|아니요|아니요|아니요|예|
+ |Cisco AnyConnect|예|예|아니요|아니요|아니요|아니요|아니요|
  |Cisco(IPsec)|iOS에만 해당|아니요|아니요|아니요|아니요|아니요|아니요|  
  |Pulse Secure|예|예|예|아니요|예|예|예|  
  |F5 Edge Client|예|예|예|아니요|예|예|예|  
