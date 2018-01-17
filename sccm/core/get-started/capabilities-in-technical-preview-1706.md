@@ -14,11 +14,11 @@ ms.assetid: ca3b4714-2a16-495e-8a17-1d87991d5556
 author: erikje
 ms.author: erikje
 manager: angrobe
-ms.openlocfilehash: d7819dd71a37bc581b629ac180f657134495f50c
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+ms.openlocfilehash: cfb14ebb7b4f7eb9a008ad4464978778e57514a6
+ms.sourcegitcommit: d029b373113051634ed030545348a458eb7b25f4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="capabilities-in-technical-preview-1706-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1706의 기능
 
@@ -325,7 +325,7 @@ Configuration Manager에서 패키지 및 프로그램을 사용하여 클라이
 - Configuration Manager 콘솔에서 스크립트에 의해 반환된 결과를 검토합니다.
 
 
-### <a name="prerequisites"></a>전제 조건
+### <a name="prerequisites"></a>필수 구성 요소
 
 스크립트를 사용하려면 해당 Configuration Manager 보안 역할의 구성원이어야 합니다.
 
@@ -405,7 +405,7 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반
 <!-- 1098490 -->
 이제 Configuration Manager를 사용하여 Microsoft Surface 드라이버 업데이트를 관리할 수 있습니다.
 
-### <a name="prerequisites"></a>전제 조건
+### <a name="prerequisites"></a>필수 구성 요소
 모든 소프트웨어 업데이트 지점에서 Windows Server 2016이 실행되어야 합니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
@@ -418,7 +418,7 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반
 <!-- 1290890 -->
 이제 비즈니스용 Windows 업데이트에서 직접 관리되는 Windows 10 장치에 대한 Windows 10 기능 업데이트 또는 품질 업데이트의 지연 정책을 구성할 수 있습니다. **소프트웨어 라이브러리** > **Windows 10 서비스** 아래의 새 **비즈니스용 Windows 업데이트 정책** 노드에서 지연 정책을 관리할 수 있습니다.
 
-### <a name="prerequisites"></a>전제 조건
+### <a name="prerequisites"></a>필수 구성 요소
 비즈니스용 Windows 업데이트에서 관리되는 Windows 10 장치는 인터넷에 연결되어 있어야 합니다.
 
 #### <a name="to-create-a-windows-update-for-business-deferral-policy"></a>비즈니스용 Windows 업데이트 지연 정책을 만들려면
@@ -462,10 +462,10 @@ Configuration Manager에서 인증서 등록 지점 역할을 추가할 때 Entr
 **알려진 문제**: 1706 Technical Preview에서는 PFX 인증서가 Microsoft 인증 기관에 대해 발급되지 않습니다. 이러한 문제는 가져온 PFX 인증서 또는 SCEP 프로필에는 영향을 주지 않습니다.
 
 
-## <a name="cisco-ipsec-support-for-macos-vpn-profiles"></a>macOS VPN 프로필에 대한 Cisco(IPSec) 지원
+## <a name="cisco-ipsec-support-for-ios-vpn-profiles"></a>iOS용 VPN 프로필에 대한 Cisco(IPsec) 지원
 <!-- 1321367 -->
 
-연결 유형으로 Cisco(IPsec)를 사용하여 macOS VPN 프로필을 만들 수 있습니다. 자세한 내용은 [VPN 프로필 만들기](https://docs.microsoft.com/en-us/sccm/mdm/deploy-use/create-vpn-profiles#create-vpn-profiles)를 참조하세요.
+연결 형식으로 Cisco(IPsec)를 사용하여 iOS VPN 프로필을 만들 수 있습니다. 자세한 내용은 [VPN 프로필 만들기](https://docs.microsoft.com/en-us/sccm/mdm/deploy-use/create-vpn-profiles#create-vpn-profiles)를 참조하세요.
 
 
 ## <a name="new-windows-configuration-item-settings"></a>새 Windows 구성 항목 설정

@@ -3,7 +3,7 @@ title: "스크립트 만들기 및 실행"
 titleSuffix: Configuration Manager
 description: "Powershell 스크립트를 만들고 클라이언트 장치에서 실행합니다."
 ms.custom: na
-ms.date: 11/29/2017
+ms.date: 01/05/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,14 +13,14 @@ ms.topic: article
 ms.assetid: cc230ff4-7056-4339-a0a6-6a44cdbb2857
 caps.latest.revision: "14"
 caps.handback.revision: "0"
-author: BrucePerlerMS
-ms.author: bruceper
+author: mestew
+ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 1472f697ae8b82e6268433aa6398fcc10a429994
-ms.sourcegitcommit: 5f4a584d4a833b0cc22bd8c47da7dd55aced97fa
+ms.openlocfilehash: b00dfb875ca032032a9782e9950247eb3fceb124
+ms.sourcegitcommit: 9de3d74030b7c3313c34b5cbe2dbe6e18a48c043
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="create-and-run-powershell-scripts-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 12/05/2017
 
 이제 PowerShell 스크립트를 실행하는 기능이 더 효율적으로 System Center Configuration Manager와 통합되었습니다. Powershell은 정교하고 자동화된 스크립트를 만들어 더 큰 커뮤니티에서 이해하고 공유할 수 있는 이점이 있습니다. 스크립트는 소프트웨어를 관리하는 사용자 지정 도구 빌드를 간소화하고 일상적인 작업을 빠르게 수행하므로 더 쉽고 일관되게 큰 작업을 수행할 수 있습니다.
 
-이 통합 기능을 System Center Configuration Manager에서 사용하면 스크립트 실행 기능을 사용하여 다음을 수행할 수 있습니다.
+이 통합 기능을 System Center Configuration Manager에서 사용하면 *스크립트 실행* 기능을 사용하여 다음을 수행할 수 있습니다.
 
 - System Center Configuration Manager에서 사용할 스크립트를 만들고 편집합니다.
 - 역할 및 보안 범위를 통해 스크립트 사용을 관리합니다. 
@@ -42,7 +42,7 @@ ms.lasthandoff: 12/05/2017
 >[!WARNING]
 >스크립트의 능력을 고려할 때 계획적이고 신중하게 사용해야 합니다. 사용자를 지원하기 위해 안전 장치, 즉 분리된 역할과 범위를 추가로 구축했습니다. 스크립트를 실행하기 전에 스크립트의 정확성을 검사하고 신뢰할 수 있는 원본에서 제공되는지 확인하여 의도하지 않은 스크립트 실행을 방지합니다. 확장된 문자 또는 다른 난독 처리에 유의하고 스크립트 보안에 대한 지식을 습득합니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 - PowerShell 스크립트를 실행하려면 클라이언트에서 PowerShell 버전 3.0 이상이 실행되고 있어야 합니다. 그러나 실행하는 스크립트에 이후 버전의 PowerShell 기능이 포함되어 있을 경우 스크립트를 실행하는 클라이언트에서 해당 버전의 PowerShell이 실행되고 있어야 합니다.
 - Configuration Manager 클라이언트는 스크립트를 실행하려면 1706 릴리스 이상의 클라이언트를 실행하고 있어야 합니다.
@@ -75,9 +75,9 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반
 1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리**를 클릭합니다.
 2. **소프트웨어 라이브러리** 작업 영역에서 **스크립트**를 클릭합니다.
 3. **스크립트** 목록에서 승인 또는 거부하려는 스크립트를 선택한 후 **홈** 탭의 **스크립트** 그룹에서 **승인/거부**를 클릭합니다.
-4. **스크립트 승인 또는 거부** 대화 상자에서 스크립트에 대한 **승인** 또는 **거부**를 선택하고, 필요에 따라 이러한 결정에 대한 설명을 입력합니다.  스크립트를 거부하는 경우 클라이언트 장치에서 실행할 수 없습니다. <br>
+4. **스크립트 승인 또는 거부** 대화 상자에서 스크립트에 대한 **승인** 또는 **거부**를 선택합니다. 필요에 따라 이러한 결정에 대한 설명을 입력합니다.  스크립트를 거부하는 경우 클라이언트 장치에서 실행할 수 없습니다. <br>
 ![스크립트 - 승인](./media/run-scripts/RS-approval.png)
-5. 마법사를 완료합니다. **스크립트** 목록에서 **승인 상태** 열이 수행한 작업에 따라 변경됩니다.
+1. 마법사를 완료합니다. **스크립트** 목록에서 **승인 상태** 열이 수행한 작업에 따라 변경됩니다.
 
 ### <a name="allow-users-to-approve-their-own-scripts"></a>사용자가 자신의 스크립트를 승인하도록 허용
 
@@ -106,7 +106,11 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반
     - **가져오기** - 콘솔로 PowerShell 스크립트를 가져옵니다. 스크립트는 **스크립트** 필드에 표시됩니다.
     - **지우기** - 스크립트 필드에서 현재 스크립트를 제거합니다.
     - **스크립트** - 현재 가져온 스크립트를 표시합니다. 필요에 따라 이 필드에서 스크립트를 편집할 수 있습니다.
-1. 마법사를 완료합니다. 새 스크립트가 **승인 대기 중** 상태로 **스크립트** 목록에 표시됩니다. 클라이언트 장치에서 이 스크립트를 실행하려면 먼저 승인해야 합니다.
+5. 마법사를 완료합니다. 새 스크립트가 **승인 대기 중** 상태로 **스크립트** 목록에 표시됩니다. 클라이언트 장치에서 이 스크립트를 실행하려면 먼저 승인해야 합니다. 
+
+> [!IMPORTANT]
+    >  스크립트 실행 기능을 사용할 때는 장치 다시 부팅 또는 Configuration Manager 에이전트 다시 시작 스크립트를 사용하지 마세요. 그러면 연속 다시 부팅 상태가 될 수 있습니다. 필요한 경우, Configuration Manager 버전 1710부터는 장치를 다시 시작할 수 있는 클라이언트 알림 기능에 대한 개선 사항이 있습니다. [다시 시작 보류 중 열](/sccm/core/clients/manage/manage-clients#Restart-clients)을 통해 다시 시작해야 하는 장치를 식별할 수 있습니다. 
+<!--SMS503978--Script reboot warning-->
 
 ## <a name="script-parameters"></a>스크립트 매개 변수
 *(버전 1710에서 도입됨)*  
@@ -175,7 +179,7 @@ Write-Output (Get-WmiObject -Class Win32_operatingSystem).Caption
 
 스크립트의 대상 컬렉션을 선택하려면 다음을 수행합니다.
 
-1. Configuration Manager 콘솔에서 **자산 및 준수**를 클릭합니다.
+1. Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.
 2. 자산 및 호환성 작업 영역에서 **장치 컬렉션**을 클릭합니다.
 3. **장치 컬렉션** 목록에서 스크립트를 실행하려는 장치 컬렉션을 클릭합니다.
 4. 원하는 컬렉션을 선택하고 **스크립트 실행**을 클릭합니다.
