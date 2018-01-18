@@ -3,7 +3,7 @@ title: SQL Server Always On
 titleSuffix: Configuration Manager
 description: "SCCM에서 SQL Server Always On 가용성 그룹 사용 계획"
 ms.custom: na
-ms.date: 11/20/2017
+ms.date: 12/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ caps.latest.revision: "16"
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 42d5a059e11dffc7890ec78ce7361ebfe905a050
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: 7efd0c76a0723a98661b0861eb16298eee524f35
+ms.sourcegitcommit: f1535281b2c3fecff773b722c3f7590bf6ba10a0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="prepare-to-use-sql-server-always-on-availability-groups-with-configuration-manager"></a>Configuration Manager에서 SQL Server Always On 가용성 그룹 사용 준비
 
@@ -47,7 +47,7 @@ Microsoft Azure에서 가용성 그룹을 사용할 경우 *Azure 가용성 집�
 -     [독립 실행형 SQL Server의 기본 또는 명명된 인스턴스로 가용성 그룹의 사이트 데이터베이스 이동](/sccm/core/servers/deploy/configure/configure-aoag#stop-using-an-availability-group).
 
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 다음과 같은 필수 구성 요소가 모든 시나리오에 적용됩니다. 추가 필수 구성 요소가 특정 시나리오에 적용될 경우 해당 시나리오와 함께 자세히 설명됩니다.   
 
 ### <a name="configuration-manager-accounts-and-permissions"></a>Configuration Manager 계정 및 권한
@@ -78,7 +78,7 @@ SQL Server의 각 인스턴스는 도메인 사용자 계정(**서비스 계정*
 
 -   버전 1706부터는 비동기 커밋 복제본을 사용하여 동기 복제본을 복구할 수 있습니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 백업 및 복구 항목에서 [사이트 데이터베이스 복구 옵션]( /sccm/protect/understand/backup-and-recovery#BKMK_SiteDatabaseRecoveryOption)을 참조하세요.
     > [!CAUTION]  
-    > Configuration Manager에서는 비동기 커밋 복제본을 사이트 데이터베이스로 사용하기 위한 장애 조치를 지원하지 않습니다.
+    > Configuration Manager에서는 비동기 커밋 복제본을 사이트 데이터베이스로 사용하기 위한 [장애 조치](https://go.microsoft.com/fwlink/?linkid=626885)를 지원하지 않습니다.
 Configuration Manager는 비동기 커밋 복제본의 상태가 현재 상태인지 확인하지 않으며 [의도적으로 이러한 복제본은 동기화되지 않을 수 있으므로]( https://msdn.microsoft.com/library/ff877884(SQL.120).aspx(d=robot)#Availability%20Modes) 비동기 커밋 복제본을 사이트 데이터베이스로 사용하면 사이트와 데이터의 무결성이 손상될 수 있습니다.
 
 각 복제 구성원은 다음을 수행해야 합니다.

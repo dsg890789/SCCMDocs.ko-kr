@@ -3,7 +3,7 @@ title: "시험판 기능"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 시험판 기능"
 ms.custom: na
-ms.date: 12/05/2017
+ms.date: 12/19/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ caps.latest.revision: "36"
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: c132f1512d8a1d6a4657079c8ecd2d7a050797b9
-ms.sourcegitcommit: 52b956cfe32c3f06ae68d6ba6fc3244ce5a66325
+ms.openlocfilehash: 2ef961732431bd4314229e3da6a65df58592342f
+ms.sourcegitcommit: 6c2aa79924c0e7fc64ef5e9003498fc00c349db9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="pre-release-features-in-system-center-configuration-manager"></a>System Center Configuration Manager의 시험판 기능
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -48,7 +48,9 @@ ms.lasthandoff: 12/06/2017
 |------------------|---------------------|---------------------|
 | 작업 순서 실행 단계 <!-- 1261338 --> |  [버전 1710](/sccm/osd/understand/task-sequence-steps#child-task-sequence) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
 | Windows Defender Exploit Guard <!-- 1355468 --> |  [버전 1710](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
+| 조건부 액세스의 준수 정책에 대한 장치 상태 증명 평가<!-- 1235616 --> |  [버전 1710](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
 | Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행 <!-- 1236459 --> |  [버전 1706](/sccm/apps/deploy-use/create-deploy-scripts)|![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
+| Microsoft Surface 드라이버 업데이트 관리<!-- 1098490 --> |  [버전 1706](/sccm/sum/get-started/configure-classifications-and-products) | [버전 1710](/sccm/sum/get-started/configure-classifications-and-products)|
 | Configuration Manager로 Device Guard 관리 <!-- 1319346 --> |  [버전 1702](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)|![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
 | 작업 순서 콘텐츠 사전 캐싱 <!-- 1021244 --> |  [버전 1702](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content) | [버전 1706](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content)|
 | 응용 프로그램을 설치하기 전에 실행 중인 실행 파일 확인 <!-- 1284624 --> |   [버전 1702](/sccm/apps/deploy-use/deploy-applications#how-to-check-for-running-executable-files-before-installing-an-application) |[버전 1706](/sccm/apps/deploy-use/deploy-applications#how-to-check-for-running-executable-files-before-installing-an-application)|
@@ -57,4 +59,4 @@ ms.lasthandoff: 12/06/2017
 | 클라우드 관리 게이트웨이 <!-- 1101764 --> |  [버전 1610](/sccm/core/clients/manage/plan-cloud-management-gateway) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
 | Microsoft Operations Management Suite 커넥터 <!-- 1236739 --> | [버전 1606](../../../core/clients/manage/sync-data-microsoft-operations-management-suite.md) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
 | 클러스터 인식 컬렉션 서비스(서버 그룹 서비스) <!-- 1081776 --> | [버전 1602](../../../core/get-started/capabilities-in-technical-preview-1605.md#BKMK_ServerGroups)|![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
-| System Center Configuration Manager에서 관리하는 PC에 대한 조건부 액세스 <!--  --> | [버전 1602](../../../protect/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md)     | [버전 1702](/sccm/mdm/deploy-use/manage-access-to-services)                     |
+| System Center Configuration Manager에서 관리하는 PC에 대한 조건부 액세스 <!--  --> | [버전 1602](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm)     | [버전 1702](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm)                     |

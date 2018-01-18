@@ -3,7 +3,7 @@ title: "하이브리드 MDM의 새로운 기능"
 titleSuffix: Configuration Manager
 description: "Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 장치 관리 기능에 대해 알아봅니다."
 ms.custom: na
-ms.date: 11/29/2017
+ms.date: 01/04/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ ms.assetid: 7b127cee-61f1-4681-9760-caebed36ddf5
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 189e737eca5dee5bca3f0748cd1b4d944f868565
-ms.sourcegitcommit: 4af1da9c18f5bdff31426cf1d58c7d949372292d
+ms.openlocfilehash: 243daf8626e329214ce1b94f109d19773bbc57c5
+ms.sourcegitcommit: 2da6b06818371e93f28e36cadf3a154d50ce5bf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 장치 관리의 새로운 기능
 
@@ -40,6 +40,13 @@ ms.lasthandoff: 12/01/2017
 |**Microsoft Intune의 새로운 기능** | 일반적으로 이 범주 아래에 나열된 모든 기능은 Intune 서비스만 필요하고 Configuration Manager의 추가 기능이 필요하지 않으므로 System Center 2012 R2 Configuration Manager 릴리스를 비롯한 모든 Configuration Manager 릴리스에서 사용할 수 있어야 합니다.|
 |**Configuration Manager Technical Preview의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 Technical Preview 릴리스에서만 사용할 수 있습니다. 이러한 기능을 시험해보려면 기능 설명에 지정된 기술 미리 보기 버전을 설치해야 합니다. 자세한 내용은 [System Center Configuration Manager Technical Preview](../../core/get-started/technical-preview.md)를 참조하세요.|
 |**Configuration Manager(현재 분기)의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 버전의 Configuration Manager(현재 분기)(예: 버전 1511 또는 1602)에서만 사용할 수 있습니다. 하이브리드 배포에 이전 버전의 Configuration Manager를 사용하는 경우 기능 설명에 지정된 Configuration Manager(현재 분기) 버전으로 업그레이드해야 합니다. 자세한 내용은 [System Center Configuration Manager 업그레이드](../../core/servers/deploy/install/upgrade-to-configuration-manager.md)를 참조하세요.|
+
+## <a name="december-2017"></a>2017년 12월
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+- **이제 Android Enterprise에 사용 가능한 응용 프로그램 배포가 지원됩니다.**    
+  이제 Android Enterprise(이전의 Android for Work) 앱을 **필수** 외에도 **사용 가능**으로 배포할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 Android 응용 프로그램 만들기](/sccm/mdm/deploy-use/creating-android-applications)를 참조하세요.
 
 
 ## <a name="november-2017"></a>2017년 11월
@@ -374,9 +381,9 @@ Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추�
 
   대량 구매한 iOS 앱에 대한 자세한 내용은 [대량 구매한 iOS 앱 관리](/sccm/mdm/deploy-use/manage-volume-purchased-ios-apps)를 참조하세요.
 
-- **비즈니스용 Windows 스토어의 기간 업무 앱 지원**
+- **비즈니스용 Microsoft Store의 LOB(기간 업무) 앱 지원**
 
-  이제 비즈니스용 Windows 스토어에서 사용자 지정 기간 업무 앱을 동기화할 수 있습니다.
+  이제 비즈니스용 Microsoft Store에서 사용자 지정 기간 업무 앱을 동기화할 수 있습니다.
 
 - **새로운 Mobile Threat Defense 모니터링 도구**
 

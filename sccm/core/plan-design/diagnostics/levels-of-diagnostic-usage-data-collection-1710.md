@@ -33,11 +33,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: ce5239340032db7deb5bcb20d00aba77c9b140e2
-ms.sourcegitcommit: da27d37cc4e4e06cf23758846cdd7acb617f744b
+ms.openlocfilehash: 1129da43f9c50d21f2ce8392721c77a4e614e410
+ms.sourcegitcommit: 92c3f916e6bbd35b6208463ff406e0247664543a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1710-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1710에 대한 진단 및 사용 현황 데이터 수집 수준
 
@@ -168,7 +168,7 @@ System Center Configuration Manager 버전 1710의 경우 이 수준에는 다�
 
    - 콘텐츠 제거 설정별 Windows Installer 배포 유형 수
 
-   - 비즈니스용 Windows 스토어 앱 개수 및 동기화 통계(요약된 앱 유형, 사용이 허가된 앱 상태, 사용이 허가된 온라인 및 오프라인 앱 개수 포함)  
+   - 비즈니스용 Microsoft Store 앱 개수 및 동기화 통계(요약된 앱 유형, 사용이 허가된 앱 상태, 사용이 허가된 온라인 및 오프라인 앱 개수 포함)  
 
    - 유지 관리 기간 유형 및 지속 시간  
 
@@ -519,4 +519,4 @@ System Center Configuration Manager 버전 1710의 경우 이 수준에는 다�
 
 - Intune에서 관리하는 장치에 대한 EAS 조건부 액세스 정책 유형(차단 또는 격리)
 
-- 비즈니스용 Windows 스토어 응용 프로그램 정보(AppID, 온라인 상태 또는 오프라인 상태, 구입한 총 라이선스 수를 포함하여 동기화된 응용 프로그램의 비집계 목록)
+- 비즈니스용 Microsoft Store 응용 프로그램 정보(AppID, 온라인 상태 또는 오프라인 상태, 구입한 총 라이선스 수를 포함하여 동기화된 응용 프로그램의 비집계 목록)

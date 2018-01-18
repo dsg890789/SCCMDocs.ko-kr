@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 640267b1ff16ba3cc31296187e3e3b3bbe670faa
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: ce41852584f11d881c24c201867e13124595eba8
+ms.sourcegitcommit: 2867fd119256ec670fc5ae65cdc8a80d39f9b4d4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/20/2017
 ---
 # <a name="checklist-for-installing-update-1606-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 업데이트 1606을 설치하기 위한 검사 목록
 
@@ -100,7 +100,9 @@ System Center Configuration Manager 버전 1606의 현재 분기는 버전 1511 
 
 업데이트를 설치하는 동안 사이트 데이터베이스 유지 관리 작업이 실행되면 업데이트 설치가 실패할 수 있습니다. 작업을 사용하지 않도록 설정하기 전에 작업 일정을 기록하세요. 그래야 업데이트가 설치된 후에 해당 구성을 복원할 수 있습니다.  
 
-자세한 내용은 [System Center Configuration Manager에 대한 유지 관리 작업](../../../core/servers/manage/maintenance-tasks.md) 및 [System Center Configuration Manager에 대한 유지 관리 작업 참조](../../../core/servers/manage/reference-for-maintenance-tasks.md)를 참조하세요.  
+자세한 내용은 [System Center Configuration Manager에 대한 유지 관리 작업](../../../core/servers/manage/maintenance-tasks.md) 및 [System Center Configuration Manager에 대한 유지 관리 작업 참조](../../../core/servers/manage/reference-for-maintenance-tasks.md)를 참조하세요. 
+
+**System Center Configuration Manager 서버에서 바이러스 백신 소프트웨어를 일시적으로 중지:** 사이트를 업데이트하기 전에 Configuration Manager 서버에서 바이러스 백신 소프트웨어를 중지했는지 확인합니다. <!--SMS.503481--> 
 
  **중앙 관리 사이트 및 기본 사이트에서 사이트 데이터베이스의 백업 만들기:** 사이트를 업데이트하기 전에 사이트 데이터베이스를 백업하여 재해 복구에 사용할 성공적인 백업을 생성해야 합니다.   
 

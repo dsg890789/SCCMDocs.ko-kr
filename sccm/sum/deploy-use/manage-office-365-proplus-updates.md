@@ -3,20 +3,20 @@ title: "Office 365 ProPlus 업데이트 관리"
 titleSuffix: Configuration Manager
 description: "Configuration Manager는 WSUS 카탈로그의 Office 365 클라이언트 업데이트를 사이트 서버와 동기화하여 업데이트를 클라이언트에 배포할 수 있게 합니다."
 keywords: 
-author: dougeby
-ms.author: dougeby
+author: mestew
+ms.author: mstewart
 manager: angrobe
-ms.date: 10/04/2017
+ms.date: 12/28/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
 ms.technology: configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
-ms.openlocfilehash: a1ac97e60bc35ee3e98212cf17e33ed2b73301b9
-ms.sourcegitcommit: 986fc2d54f7c5fa965fd4df42f4db4ecce6b79cb
+ms.openlocfilehash: b951e72635806c12bd0ec0dd66e382a767b99b43
+ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="manage-office-365-proplus-with-configuration-manager"></a>Configuration Manager를 사용하여 Office 365 ProPlus 관리
 
@@ -30,7 +30,7 @@ Configuration Manager를 사용하여 다음과 같은 방법으로 Office 365 P
 
 - [Office 365 업데이트 배포](#deploy-office-365-updates): Configuration Manager 버전 1602부터 소프트웨어 업데이트 관리 워크플로를 사용하여 Office 365 클라이언트 업데이트를 관리할 수 있습니다. Microsoft에서 새 Office 365 클라이언트 업데이트를 Office CDN(Content Delivery Network)에 게시하면 Microsoft에서 업데이트 패키지도 WSUS(Windows Server Update Services)에 게시합니다. Configuration Manager에서 WSUS 카탈로그의 Office 365 클라이언트 업데이트를 사이트 서버로 동기화한 후에 업데이트를 클라이언트에 배포할 수 있습니다.    
 
-- [Office 365 업데이트 다운로드 언어 추가](#add-languages-for-office-365-update-downloads): Configuration Manager 버전 1610부터 Configuration Manager의 지원 여부와 관계없이 Office 365에서 지원되는 모든 언어의 업데이트를 다운로드하도록 Configuration Manager에 대한 지원을 추가할 수 있습니다.  
+- [Office 365 업데이트 다운로드 언어 추가](#add-languages-for-office-365-update-downloads): Configuration Manager 버전 1610부터 Office 365에서 지원되는 모든 언어의 업데이트를 다운로드하도록 Configuration Manager에 대한 지원을 추가할 수 있습니다. 즉, Office 365가 언어를 지원하면 Configuration Manager는 언어를 지원할 필요가 없습니다.  
 
 - [업데이트 채널 변경](#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager): 그룹 정책을 사용하여 Office 365 클라이언트에 레지스트리 키 값 변경 내용을 배포하여 업데이트 채널을 변경할 수 있습니다.
 
@@ -55,8 +55,7 @@ Office 365 클라이언트 관리 대시보드에 표시되는 데이터는 하�
 4. 에 **기본 클라이언트 설정** 대화 상자를 클릭 하 여 **하드웨어 인벤토리**.  
 5. 에 **장치 설정을** 목록에서 클릭 **클래스 설정**.  
 6. **하드웨어 인벤토리 클래스** 대화 상자에서 **Office 365 ProPlus 구성**을 선택합니다.  
-7.  클릭 하 여 **확인** 변경 내용을 저장 하 고 닫습니다는 **하드웨어 인벤토리 클래스** 대화 상자.  
-하드웨어 인벤토리가 보고되면 Office 365 클라이언트 관리 대시보드에서 데이터를 표시하기 시작합니다.
+7.  클릭 하 여 **확인** 변경 내용을 저장 하 고 닫습니다는 **하드웨어 인벤토리 클래스** 대화 상자. <br/>하드웨어 인벤토리가 보고되면 Office 365 클라이언트 관리 대시보드에서 데이터를 표시하기 시작합니다.
 
 ## <a name="deploy-office-365-apps"></a>Office 365 앱 배포  
 버전 1702부터 초기 Office 365 앱 설치를 위해 Office 365 클라이언트 관리 대시보드에서 Office 365 설치 관리자를 시작합니다. 마법사를 통해 Office 365 설치 설정을 구성하고, Office CDN(콘텐츠 배달 네트워크)에서 파일을 다운로드하고, 파일에 대한 스크립트 응용 프로그램을 만들고 배포할 수 있습니다. Office 365가 클라이언트에 설치될 때까지 Office 365 업데이트를 적용할 수 없습니다.
@@ -85,10 +84,9 @@ Office 365 클라이언트 관리 대시보드에 표시되는 데이터는 하�
     > [!IMPORTANT]    
     > XML 구성 파일은 [Office 365 ProPlus 클라이언트에서 지원하는 언어](https://technet.microsoft.com/library/cc179219&#40;v=office.16&#41;.aspx)만 포함해야 합니다.
 
-5. **클라이언트 제품** 페이지에서 사용할 Office 365 제품군을 선택하고, 포함할 응용 프로그램을 선택하고, 포함할 추가 Office 제품을 선택한 후 **다음**을 클릭합니다.
+5. **클라이언트 제품** 페이지에서 사용할 Office 365 제품군을 선택합니다. 포함하려는 응용 프로그램을 선택합니다. 포함해야 하는 추가 Office 제품을 선택하고 **다음**을 클릭합니다.
 6. **클라이언트 설정** 페이지에서 포함할 설정을 선택하고 **다음**을 클릭합니다.
-7. **배포** 페이지에서 응용 프로그램을 배포할지 여부를 선택하고 **다음**을 클릭합니다.  
-마법사에서 패키지를 배포하지 않도록 선택한 경우 9단계로 건너뜁니다.
+7. **배포** 페이지에서 응용 프로그램을 배포할지 여부를 선택하고 **다음**을 클릭합니다. <br/>마법사에서 패키지를 배포하지 않도록 선택한 경우 9단계로 건너뜁니다.
 8. 마법사 페이지의 나머지 부분을 일반적인 응용 프로그램 배포와 마찬가지로 구성합니다. 자세한 내용은 [응용 프로그램 만들기 및 배포](/sccm/apps/get-started/create-and-deploy-an-application)를 참조하세요.
 9. 마법사를 완료합니다.
 10. **소프트웨어 라이브러리** > **개요** > **응용 프로그램 관리** > **응용 프로그램**에서 응용 프로그램을 배포하거나 편집할 수 있습니다.    
@@ -96,13 +94,13 @@ Office 365 클라이언트 관리 대시보드에 표시되는 데이터는 하�
 Office 365 설치 관리자를 사용하여 Office 365 응용 프로그램을 만들고 배포한 후에는 기본적으로 Configuration Manager가 Office 업데이트를 관리합니다. Office 365 클라이언트가 Configuration Manager에서 업데이트를 받게 하려면 [Configuration Manager를 사용하여 Office 365 업데이트 배포](#deploy-office-365-updates-with-configuration-manager)를 참조하세요.
 
 >[!NOTE]
->Office 365 앱을 배포한 후 앱을 유지 관리하기 위한 자동 배포 규칙을 만들 수 있습니다. Office 365 앱에 대한 자동 배포 규칙을 만들려면 Office 365 클라이언트 관리 대시보드에서 **ADR 만들기**를 클릭하고 제품을 선택할 때 **Office 365 클라이언트**를 선택합니다. 자세한 내용은 [소프트웨어 업데이트 자동 배포](/sccm/sum/deploy-use/automatically-deploy-software-updates)를 참조하세요.
+>Office 365 앱을 배포한 후 앱을 유지 관리하기 위한 자동 배포 규칙을 만들 수 있습니다. Office 365 앱에 대한 자동 배포 규칙을 만들려면 Office 365 클라이언트 관리 대시보드에서 **ADR 만들기**를 클릭합니다. 제품을 선택할 때 **Office 365 클라이언트**를 선택합니다. 자세한 내용은 [소프트웨어 업데이트 자동 배포](/sccm/sum/deploy-use/automatically-deploy-software-updates)를 참조하세요.
 
 
 ## <a name="deploy-office-365-updates"></a>Office 365 업데이트 배포
 Configuration Manager를 사용하여 Office 365 업데이트를 배포하려면 다음 단계를 따르세요.
 
-1.  항목의 **Configuration Manager를 사용하여 Office 365 클라이언트 업데이트를 관리하기 위한 요구 사항** 섹션에서 Configuration Manager를 사용하여 Office 365 클라이언트 업데이트를 관리하기 위한 [요구 사항을 확인](https://technet.microsoft.com/library/mt628083.aspx)합니다.  
+1.  이 문서의 **Configuration Manager를 사용하여 Office 365 클라이언트 업데이트를 관리하기 위한 요구 사항** 섹션에서 Configuration Manager를 사용하여 Office 365 클라이언트 업데이트를 관리하기 위한 [요구 사항을 확인](https://technet.microsoft.com/library/mt628083.aspx)합니다.  
 
 2.  [소프트웨어 업데이트 지점을 구성](../get-started/configure-classifications-and-products.md)하여 Office 365 클라이언트 업데이트를 동기화합니다. 분류에 대한 **업데이트**를 설정하고 제품에 대한 **Office 365 클라이언트**를 선택합니다. **업데이트** 분류를 사용하도록 소프트웨어 업데이트 지점을 구성한 후 소프트웨어 업데이트를 동기화합니다.
 3.  Office 365 클라이언트가 Configuration Manager에서 업데이트를 받을 수 있도록 합니다. Configuration Manager 클라이언트 설정 또는 그룹 정책을 사용하여 클라이언트를 사용하도록 설정합니다.   
@@ -164,8 +162,7 @@ Configuration Manager 버전 1610부터 Configuration Manager의 지원 여부�
 6. 첫 번째 쿼리 결과부터 시작해서 **PropertyName** 속성의 **AdditionalUpdateLanguagesForO365**가 있는 개체를 찾을 때까지 각 개체를 엽니다.
 7. **Value2**를 선택하고 **속성 편집**을 클릭합니다.  
 ![Value2 속성 편집](..\media\3-queryresult.png)
-8. **Value2** 속성에 다른 언어를 추가하고 **속성 저장**을 클릭합니다.  
-예를 들면 pt-pt(포르투갈어 - 포르투갈), af-za(아프리칸스어 - 남아프리카), nn-no(노르웨이어(니노르스크) - 노르웨이) 등이 있습니다.  
+8. **Value2** 속성에 다른 언어를 추가하고 **속성 저장**을 클릭합니다. <br/> 예를 들면 pt-pt(포르투갈어 - 포르투갈), af-za(아프리칸스어 - 남아프리카), nn-no(노르웨이어(니노르스크) - 노르웨이) 등이 있습니다.  
 ![속성 편집기에서 언어 추가](..\media\4-props.png)  
 9. **닫기**, **닫기**, **속성 저장**, **개체 저장**(여기에서 **닫기**를 클릭하면 값이 취소됨), **닫기**를 차례로 클릭한 다음 **종료**를 클릭하여 WMI(Windows Management Instrumentation) 테스터를 종료합니다.
 10. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **개요** > **Office 365 클라이언트 관리** > **Office 365 업데이트**로 이동합니다.
@@ -176,18 +173,22 @@ Configuration Manager 버전 1610부터 Configuration Manager의 지원 여부�
 ## <a name="change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager"></a>Office 365 클라이언트가 Configuration Manager에서 업데이트를 받도록 설정한 후에 업데이트 채널 변경
 Office 365 클라이언트가 Configuration Manager에서 업데이트를 받도록 설정한 후 업데이트 채널을 변경하려면 그룹 정책을 사용하여 Office 365 클라이언트에 레지스트리 키 값 변경 내용을 배포합니다. **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\Configuration\CDNBaseUrl** 레지스트리 키를 다음 중 한 값을 사용하도록 변경합니다.
 
-- 현재 채널:  
+- 월 단위 채널 <br/>
+<i>(이전의 현재 채널)</i>:  
   **CDNBaseUrl** = http&#58;//officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60
 
-- 지연된 채널:  
+- 반기 채널 <br/>
+<i>(이전의 지연된 채널)</i>:  
   **CDNBaseUrl** = http&#58;//officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114
 
-- 현재 채널의 첫 번째 릴리스:  
+- 월 단위 채널(대상 지정)<Br/>
+ <i>(현재 채널의 이전 첫 번째 릴리스)</i>:  
   **CDNBaseUrl** = http&#58;//officecdn.microsoft.com/pr/64256afe-f5d9-4f86-8936-8840a6a4f5be
 
-- 지연된 채널의 첫 번째 릴리스:  
+- 반기 채널(대상 지정) <br/>
+<i>(지연된 채널의 이전 첫 번째 릴리스)</i>:  
   **CDNBaseUrl** = http&#58;//officecdn.microsoft.com/pr/b8f9b850-328d-4355-9145-c59439a0c4cf
-
+<!--the channel names changed in Sept 2017- https://docs.microsoft.com/en-us/DeployOffice/overview-of-update-channels-for-office-365-proplus?ui=en-US&rs=en-US&ad=US>
 
 
 <!--- You can create an Office 365 app without using the Office 365 Installation Wizard. To do this, you use the Office 2016 Deployment Tool (ODT) to download Office installation source files to a network share, generate Configure.xml that specifies the correct Office version and channel, and so on. Then, create an app for the files using the normal app management process.

@@ -3,7 +3,7 @@ title: "지원되는 SQL Server 버전"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager 사이트 데이터베이스를 호스트하기 위한 SQL Server 버전 및 구성 요구 사항을 가져옵니다."
 ms.custom: na
-ms.date: 11/30/2017
+ms.date: 12/18/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ caps.latest.revision: "21"
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 7006d6cd03da53daf0f6cb59cc4ef83e7e800a1e
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: ccc07aa709c0a168a8df7a1bd7944e9399bec13f
+ms.sourcegitcommit: 3dea4342f79909c5064289bd18ed36269812e30c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="supported-sql-server-versions-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 지원되는 SQL Server 버전
 
@@ -65,23 +65,31 @@ SQL Server 트랜잭션 복제는 [데이터베이스 복제본](https://technet
 
 
 
- 별도로 지정되지 않은 경우 다음 버전의 SQL Server는 System Center Configuration Manager의 모든 활성 버전에서 지원됩니다. 새 SQL Server 버전이나 서비스 팩에 대한 지원이 추가되면 해당 지원을 추가하는 Configuration Manager 버전이 표시됩니다. 마찬가지로 더 이상 지원이 제공되지 않는 경우에는 Configuration Manager의 영향받는 버전에 대한 세부 정보를 검색합니다.   
+ 별도로 지정되지 않은 경우 다음 버전의 SQL Server는 System Center Configuration Manager의 모든 활성 버전에서 지원됩니다. 새 SQL Server 버전이나 서비스 팩에 대한 지원이 추가되면 해당 지원을 추가하는 Configuration Manager 버전이 표시됩니다. 마찬가지로 더 이상 지원이 제공되지 않는 경우에는 Configuration Manager의 영향 받는 버전에 대한 세부 정보를 검색합니다.   
 
-누적 업데이트가 기본 서비스 팩 버전으로 돌아가지 않는 한 특정 SQL Server 서비스 팩 지원에는 해당 서비스 팩에 대한 누적 업데이트가 포함됩니다. 서비스 팩 버전이 표시되지 않으면 서비스 팩이 없는 SQL Server의 해당 버전이 지원됩니다. 이후 해당 버전에 대한 서비스 팩이 릴리스된 경우 새 서비스 팩 버전이 지원되기 전에 개별 지원 정보가 선언됩니다.
+누적 업데이트가 기본 서비스 팩 버전에 대한 호환성을 되돌리지 않으면 특정 SQL Server 서비스 팩에 대한 지원에는 해당 누적 업데이트가 포함됩니다. 서비스 팩 버전이 표시되지 않으면 서비스 팩이 없는 SQL Server의 해당 버전이 지원됩니다. 나중에 SQL Server 버전에 대한 서비스 팩이 릴리스되면 새 서비스 팩 버전이 지원되기 전에 별도의 지원 정보가 선언됩니다.
 
 
 > [!IMPORTANT]  
 >  중앙 관리 사이트의 데이터베이스에 대해 SQL Server Standard를 사용하는 경우에는 계층 구조가 지원할 수 있는 총 클라이언트 수를 제한합니다. [크기 조정 및 규모 숫자 값](../../../core/plan-design/configs/size-and-scale-numbers.md)을 참조하세요.
 
+### <a name="sql-server-2017-standard-enterprise"></a>SQL Server 2017: Standard, Enterprise  
+다음 사이트의 경우 [Configuration Manager 버전1710](https://docs.microsoft.com/en-us/sccm/core/plan-design/changes/whats-new-in-version-1710)에서부터 최소 [누적 업데이트 버전 2](https://support.microsoft.com/help/4052574)에서 이 버전의 SQL Server를 사용할 수 있습니다. 
+
+-   중앙 관리 사이트  
+-   기본 사이트  
+-   보조 사이트  
+<!--SMS.498506-->
+
 ### <a name="sql-server-2016-sp1-standard-enterprise"></a>SQL Server 2016 SP1: Standard, Enterprise  
-다음에 대한 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
+다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
 
 -   중앙 관리 사이트  
 -   기본 사이트  
 -   보조 사이트  
 
 ### <a name="sql-server-2016-standard-enterprise"></a>SQL Server 2016: Standard, Enterprise  
-다음에 대한 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
+다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
 
 -   중앙 관리 사이트  
 -   기본 사이트  
@@ -89,28 +97,28 @@ SQL Server 트랜잭션 복제는 [데이터베이스 복제본](https://technet
 
 
 ### <a name="sql-server-2014-sp2-standard-enterprise"></a>SQL Server 2014 SP2: Standard, Enterprise  
-다음에 대한 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
+다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
 
 -   중앙 관리 사이트  
 -   기본 사이트  
 -   보조 사이트
 
 ### <a name="sql-server-2014-sp1-standard-enterprise"></a>SQL Server 2014 SP1: Standard, Enterprise  
- 다음에 대한 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
+ 다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
 
 -   중앙 관리 사이트  
 -   기본 사이트  
 -   보조 사이트
 
 ### <a name="sql-server-2012-sp4-standard-enterprise"></a>SQL Server 2012 SP4: Standard, Enterprise  
- 다음에 대한 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
+ 다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
 
 -   중앙 관리 사이트  
 -   기본 사이트  
 -   보조 사이트  
 
 ### <a name="sql-server-2012-sp3-standard-enterprise"></a>SQL Server 2012 SP3: Standard, Enterprise  
- 다음에 대한 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
+ 다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
 
 -   중앙 관리 사이트  
 -   기본 사이트  
@@ -118,7 +126,7 @@ SQL Server 트랜잭션 복제는 [데이터베이스 복제본](https://technet
 
 <!-- Support for this service pack version has been dropped by Microsoft    
 ### SQL Server 2012 SP2: Standard, Enterprise   
- You can use this version of SQL Server with no minimum cumulative update version for the following:  
+ You can use this version of SQL Server with no minimum cumulative update version for the following sites:  
 
 -   A central administration site  
 -   A primary site  
@@ -129,40 +137,45 @@ SQL Server 트랜잭션 복제는 [데이터베이스 복제본](https://technet
   [버전 1702부터](/sccm/core/plan-design/changes/removed-and-deprecated-features#deprecated-support-for-sql-server-versions-as-a-site-database) 이 SQL Server 버전이 지원되지 않습니다.  
  Configuration Manager의 1702 이전 버전을 사용할 경우 이 SQL Server 버전은 계속 지원됩니다.
 
-사용 중인 Configuration Manager 버전에서 지원될 경우 다음에 대한 최소 누적 업데이트 버전 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
+다음 사이트의 경우 Configuration Manager 버전에서 지원되면 최소 누적 업데이트 버전 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
 
 -   중앙 관리 사이트  
 -   기본 사이트
 -   보조 사이트
 
+### <a name="sql-server-2017-express"></a>SQL Server 2017 Express   
+다음 사이트의 경우 [Configuration Manager 버전1710](https://docs.microsoft.com/en-us/sccm/core/plan-design/changes/whats-new-in-version-1710)에서부터 최소 [누적 업데이트 버전 2](https://support.microsoft.com/help/4052574)에서 이 버전의 SQL Server를 사용할 수 있습니다.
+-   보조 사이트
+<!--SMS.498506-->
+
 ### <a name="sql-server-2016-express-sp1"></a>SQL Server 2016 Express SP1  
-다음에 대한 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.
+다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.
 -   보조 사이트
 
 ### <a name="sql-server-2016-express"></a>SQL Server 2016 Express
-다음에 대한 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.
+다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.
 -   보조 사이트
 
 
 ### <a name="sql-server-2014-express-sp2"></a>SQL Server 2014 Express SP2   
-다음에 대한 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
+다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
 
 -   보조 사이트  
 
 
 ### <a name="sql-server-2014-express-sp1"></a>SQL Server 2014 Express SP1   
- 다음에 대한 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
+ 다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
 
 -   보조 사이트  
 
 ### <a name="sql-server-2012-express-sp3"></a>SQL Server 2012 Express SP3  
-다음에 대한 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
+다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
 
 -   보조 사이트  
 
 <!-- Support for this service pack version has been dropped by Microsoft   
 ### SQL Server 2012 Express SP2   
- You can use this version of SQL Server with no minimum cumulative update version for the following:  
+ You can use this version of SQL Server with no minimum cumulative update version for the following sites:  
 
 -   A secondary site  
 -->
@@ -188,7 +201,7 @@ SQL Server 트랜잭션 복제는 [데이터베이스 복제본](https://technet
  Configuration Manager에서 데이터베이스에 대한 연결의 유효성을 검사하려면 **Windows 인증**을 수행해야 합니다.  
 
  **SQL Server 인스턴스:**  
- 각 사이트에 대해 SQL Server의 전용 인스턴스를 사용해야 합니다. 이 인스턴스는 **명명된 인스턴스** 또는 **기본 인스턴스**일 수 있습니다.  
+ 각 사이트에 대해 SQL Server의 전용 인스턴스를 사용해야 합니다. 인스턴스는 **명명된 인스턴스** 또는 **기본 인스턴스**일 수 있습니다.  
 
  **SQL Server 메모리:**  
  SQL Server의 메모리는 SQL Server Management Studio를 사용하여 **서버 메모리 옵션**의 **최소 서버 메모리** 설정을 통해 예약합니다. 고정된 양의 메모리를 설정하는 방법에 대한 자세한 내용은 [방법: 고정된 양의 메모리 설정(SQL Server Management Studio)](http://go.microsoft.com/fwlink/p/?LinkId=233759)을 참조하세요.  
@@ -227,7 +240,7 @@ SQL Server 트랜잭션 복제는 [데이터베이스 복제본](https://technet
 
 SQL Server를 실행하는 컴퓨터에서 SQL Server 서비스를 실행하기 위해 로컬 시스템 계정을 사용하지 않는 경우에는 Active Directory Domain Services에서 SQL Server 서비스를 실행하는 계정의 SPN을 구성해야 합니다. 시스템 계정을 사용할 때는 SPN이 자동으로 등록됩니다.
 
-사이트 데이터베이스의 SPN에 대한 자세한 내용은 [System Center Configuration Manager 인프라 수정](../../../core/servers/manage/modify-your-infrastructure.md) 항목에서 [사이트 데이터베이스 서버에 대한 SPN 관리](../../../core/servers/manage/modify-your-infrastructure.md#bkmk_SPN)를 참조하세요.  
+사이트 데이터베이스의 SPN에 대한 자세한 내용은 [System Center Configuration Manager 인프라 수정](../../../core/servers/manage/modify-your-infrastructure.md) 문서에서 [사이트 데이터베이스 서버에 대한 SPN 관리](../../../core/servers/manage/modify-your-infrastructure.md#bkmk_SPN)를 참조하세요.  
 
 SQL Server 서비스에서 사용하는 계정을 변경하는 방법에 대한 자세한 내용은 [방법: SQL Server용 서비스 시작 계정 변경(SQL Server 구성 관리자)](http://go.microsoft.com/fwlink/p/?LinkId=237661)을 참조하세요.  
 

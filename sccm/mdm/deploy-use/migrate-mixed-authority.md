@@ -11,11 +11,11 @@ ms.prod: configmgr-hybrid
 ms.service: 
 ms.technology: 
 ms.assetid: 6f0201d7-5714-4ba0-b2bf-d1acd0203e9a
-ms.openlocfilehash: 643b33810c2862e2d1c602bfe941c36605ad2631
-ms.sourcegitcommit: 8c6e9355846ff6a73c534c079e3cdae09cf13c45
+ms.openlocfilehash: 59fb06d14002f781e0448a64bb0064b4add2f087
+ms.sourcegitcommit: ac9268e31440ffe91b133c2ba8405d885248d404
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="change-the-mdm-authority-for-specific-users-mixed-mdm-authority"></a>특정 사용자에 대한 MDM 기관 변경(혼합 MDM 기관) 
 
@@ -49,6 +49,7 @@ Intune에서 관리할 일부 사용자와 하이브리드 MDM(Configuration Man
       
   > [!Important]    
   > 테넌트 수준 정책은 onfiguration Manager 콘솔을 사용하여 계속 편집됩니다. [테넌트 수준 MDM 기관을 Intune으로 변경](change-mdm-authority.md)하면 Azune의 Intune에서 이러한 정책을 관리하게 됩니다. 
+-   코드 서명 인증서를 사용하는 경우 사용자를 단계적으로 마이그레이션하는 것이 좋습니다. 모바일 장치를 마이그레이션한 후에 새 인증서에 대한 인증서 기관 요청을 수행합니다. 단계별적으로 사용자(및 장치)를 마이그레이션하여 동시 인증서 기관 요청 수를 제한합니다.
 - Configuration Manager에서 장치 등록 관리자로 추가된 사용자 계정은 마이그레이션하지 않는 것이 좋습니다. 나중에 테넌트 수준 MDM 기관을 Intune으로 변경하면 이러한 사용자 계정이 올바르게 마이그레이션됩니다. 테넌트 수준 MDM 기관이 변경되기 전에 장치 등록 관리자 사용자 계정을 마이그레이션하는 경우 Azure의 Intune에서 사용자를 장치 등록 관리자로 수동으로 추가해야 합니다. 그러나 장치 등록 관리자를 사용하여 등록한 장치는 성공적으로 마이그레이션되지 않습니다. 이러한 장치를 마이그레이션하려면 지원을 요청해야 합니다. 자세한 내용은 [장치 등록 관리자 추가](https://docs.microsoft.com/en-us/intune/device-enrollment-manager-enroll#add-a-device-enrollment-manager)를 참조하세요.
 - 장치 등록 관리자를 사용하여 등록한 장치와 [사용자 선호도](/sccm/mdm/deploy-use/user-affinity-for-hybrid-managed-devices)가 없는 장치는 새로운 MDM 기관으로 자동으로 마이그레이션되지 않습니다. 이러한 MDM 장치의 관리 기관을 전환하려면 [사용자 선호도가 없는 장치 마이그레이션](#migrate-devices-without-user-affinity)을 참조하세요.
 

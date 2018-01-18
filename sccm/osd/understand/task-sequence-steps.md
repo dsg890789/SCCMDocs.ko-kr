@@ -13,14 +13,14 @@ ms.topic: article
 ms.assetid: 7c888a6f-8e37-4be5-8edb-832b218f266d
 caps.latest.revision: "26"
 caps.handback.revision: "0"
-author: Dougeby
-ms.author: dougeby
+author: aczechowski
+ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 40a2d91baf8c02cdda96e9520ce155032272ebdd
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+ms.openlocfilehash: 77ce50cf363c9429f9ef38aa2acf5b898bc8052d
+ms.sourcegitcommit: b97aa456b392d817bc9723cbd5c0ce6602e7ae34
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/28/2017
 ---
 # <a name="task-sequence-steps-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업 순서 단계
 
@@ -1401,7 +1401,7 @@ Configuration Manager 버전 1610 이전에는 이 단계에서 다음과 같은
 
 -   **AllSigned**: 신뢰할 수 있는 게시자가 서명한 스크립트만 실행할 수 있습니다.  
 
--   **정의되지 않음**: 정의된 실행 정책이 없습니다. .  
+-   **정의되지 않음**: 정의된 실행 정책이 없습니다. 을 참조하세요.  
 
 -   **바이패스**: 모든 구성 파일을 로드하고 모든 스크립트를 실행합니다. 인터넷에서 다운로드한 서명되지 않은 스크립트를 실행할 경우 실행하기 전에 권한을 묻는 메시지가 표시되지 않습니다.  
 
@@ -1477,7 +1477,7 @@ Configuration Manager 버전 1710부터 다른 작업 순서를 실행하는 새
 
 -   **제조업체 및 모델**: 이 규칙 범주를 사용하여 컴퓨터의 제조업체 및 모델에 대한 값을 평가할 수 있습니다. 규칙이 true로 평가되려면 제조업체와 모델 둘 다 true로 평가되어야 합니다.   
 
-    Configuration Manager 버전 1610부터 별표(*****) 및 물음표(**?**)를 와일드 카드로 지정할 수 있습니다. 여기서 *****는 여러 문자를 찾고 **?**는 단일 문자를 찾습니다. 예를 들어 "DELL*900?" 문자열은 DELL-ABC-9001 및 DELL9009를 찾습니다.
+    Configuration Manager 버전 1610부터 별표(**&#42;**) 및 물음표(**?**)를 와일드 카드로 지정할 수 있습니다. 여기서 **&#42;**는 여러 문자를 찾고 **?**는 단일 문자를 찾습니다. 예를 들어 "DELL*900?" 문자열은 DELL-ABC-9001 및 DELL9009를 찾습니다. 
 
 -   **작업 순서 변수**: 이 규칙 범주를 사용하여 평가할 작업 순서 변수, 조건 및 값을 추가할 수 있습니다. 변수에 대해 설정된 값이 지정된 조건을 충족하면 규칙이 true로 평가됩니다.  
 

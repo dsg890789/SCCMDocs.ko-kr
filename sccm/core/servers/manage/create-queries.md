@@ -3,7 +3,7 @@ title: "쿼리 만들기"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 쿼리를 만들고 가져오는 방법을 알아봅니다. 예제 쿼리 및 팁이 포함되어 있습니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/11/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,14 +13,14 @@ ms.topic: article
 ms.assetid: 868049d3-3209-47ec-b34a-9cc26941893a
 caps.latest.revision: "5"
 caps.handback.revision: "0"
-author: andredm7
-ms.author: andredm
+author: aczechowski
+ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: cbd9710cec365323e754d2109c8c61c29a4c301f
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 32400ebcd834e3b98bf0f1ff6a1f6b41d8e12076
+ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-create-queries-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 쿼리를 만드는 방법
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 10/12/2017
 7.  *&lt;쿼리 이름\>* **문 속성** 대화 상자의 **일반** 탭에서 이 쿼리가 반환되는 특성 및 표시되는 방식을 지정합니다. 새 특성을 추가하려면 **새로 만들기** 아이콘을 선택합니다. WQL(WMI Query Language)에서 쿼리를 직접 입력 또는 편집하려면 **쿼리 언어 표시**를 선택할 수도 있습니다. WMI 쿼리의 예제를 보려면 이 항목의 [Example WQL queries](#BKMK_Example) 섹션을 참조하세요.  
 
     > [!TIP]  
-    > 다음 MSDN 참조 설명서를 사용하여 사용자 고유의 WQL 쿼리를 작성할 수 있습니다.  
+    > 사용자 고유의 WQL 쿼리를 작성할 수 있도록 다음 MSDN 참조 설명서를 사용할 수 있습니다.  
     >   
     > -   [WQL(WMI의 경우 SQL)](http://go.microsoft.com/fwlink/p/?LinkId=256653)  
     > -   [WHERE 절](http://go.microsoft.com/fwlink/p/?LinkId=256654)  
@@ -178,6 +178,10 @@ Select SMS_R_System.ClientEdition from SMS_R_System where SMS_R_System.ClientEdi
 |Android|11|  
 |Intel System-on-a-Chip|12|  
 |Unix 및 Linux 서버|13|  
+|Apple macOS(MDM)|14|
+|Microsoft HoloLens(MDM)|15|
+|Microsoft Surface Hub(MDM)|16|
+|Android for Work|17|
 
  예를 들어 쿼리가 Mac 컴퓨터만 반환하도록 하려면 다음 쿼리를 사용합니다.  
 

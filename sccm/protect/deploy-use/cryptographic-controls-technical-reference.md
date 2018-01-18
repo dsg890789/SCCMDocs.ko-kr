@@ -3,21 +3,21 @@ title: "암호화 컨트롤 기술 참조"
 titleSuffix: Configuration Manager
 description: "공격을 방지하여 System Center Configuration Manager의 데이터를 읽을 수 없도록 서명 및 암호화하는 방법에 대해 알아봅니다."
 ms.custom: na
-ms.date: 12/5/2017
+ms.date: 12/8/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
 ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
-author: arob98
-ms.author: angrobe
+author: aczechowski
+ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: ebaff93d346b53afea8770fbe0634112bcecf82d
-ms.sourcegitcommit: 372171a5cd8d143d6d47b651018cda0c91cad67c
+ms.openlocfilehash: 2c1ed6f4c93f74719ab3fe5d723f7dc01eb1ede7
+ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="cryptographic-controls-technical-reference"></a>암호화 컨트롤 기술 참조
 
@@ -277,8 +277,8 @@ System Center Configuration Manager는 서명 및 암호화를 사용하여 Conf
 
  관리 지점이 일단 자체 서명된 클라이언트 인증서를 사용하여 클라이언트를 인증하면 이 메커니즘을 통해 모든 컴퓨터가 자체 서명된 인증서를 생성할 수 있기 때문에 최소한의 보안이 구현됩니다. 이 시나리오에서는 클라이언트 식별 프로세스가 승인으로 보강되어야 합니다. 신뢰할 수 있는 컴퓨터만 Configuration Manager에서 자동으로, 또는 관리자가 수동으로 승인해야 합니다. 자세한 내용은 [System Center Configuration Manager에서 끝점 간의 통신](../../core/plan-design/hierarchy/communications-between-endpoints.md)의 승인 섹션을 참조하세요.  
 
-## <a name="to-make-configuration-manager-servers-more-secure"></a>Configuration Manager 서버를 더 안전하게 보호하려는 경우  
-Configuration Manager 서버를 더 안전하게 보호하려는 경우 다음을 수행하세요.
+## <a name="about-ssl-vulnerabilities"></a>SSL 취약점 정보
+Configuration Manager 클라이언트 및 서버의 보안을 강화하려면 다음을 수행합니다.
 
 -   TLS 1.2 사용
 
@@ -286,5 +286,5 @@ Configuration Manager 서버를 더 안전하게 보호하려는 경우 다음�
 -   SSL 3.0, TLS 1.0 및 TLS 1.1 사용 안 함 
 -   TLS 관련 암호 도구 모음 순서 변경 
 
-자세한 내용은 기술 자료 문서 [How to restrict the use of certain cryptographic algorithms and protocols in Schannel.dll](https://support.microsoft.com/en-us/kb/245030/)(Schannel.dll에서 특정 암호화 알고리즘 및 프로토콜의 사용을 제한하는 방법)을 참조하세요. 이 절차는 Configuration Manager 기능에는 영향을 주지 않습니다.
+자세한 내용은 [Schannel.dll에서 특정 암호화 알고리즘 및 프로토콜의 사용을 제한하는 방법](https://support.microsoft.com/en-us/kb/245030/) 및 [Schannel 암호 도구 무음 우선 순위 지정](https://msdn.microsoft.com/en-us/library/windows/desktop/bb870930.aspx)을 참조하세요. 이 절차는 Configuration Manager 기능에는 영향을 주지 않습니다.
 

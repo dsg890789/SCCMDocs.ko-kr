@@ -15,11 +15,11 @@ caps.latest.revision: "6"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: 2ec4f4fdd1e351379922302e81af88e311a37c8e
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: c512cba550e405c866204af981aba75639665de2
+ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="create-android-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 Android 응용 프로그램 만들기
 
@@ -48,7 +48,7 @@ Configuration Manager는 다음과 같은 Android용 앱 유형의 배포를 지
 |장치 유형|지원되는 작업|
 |-|-|
 |Android|**사용 가능**, **필수** 사용자가 설치 및 제거에 모두 동의해야 합니다.|
-|Android for Work | **필수** |
+|Android for Work |**사용 가능**, **필수** |
 
 ## <a name="approve-and-deploy-android-for-work-apps"></a>Android for Work 앱 승인 및 배포
 Configuration Manager 관리자는 [Play for Work 웹 사이트](https://play.google.com/work)에서 앱을 승인하고 해당 앱을 관리되는 Android for Work 장치에 배포할 수도 있습니다.
@@ -65,3 +65,5 @@ Play for Work 스토어에서 앱을 승인하고, Configuration Manager 콘솔�
 8. **소프트웨어 라이브러리** > **개요** > **응용 프로그램 관리** > **응용 프로그램**으로 이동한 다음 Android for Work 앱을 선택하여 평소대로 배포합니다.
 
 Play for Work 앱을 Configuration Manager와 동기화하려면 먼저 Play for Work 웹 사이트에서 앱을 하나 이상 승인해야 합니다.
+
+**사용 가능**으로 배포된 앱은 회사 포털 대신 직장 배지가 달린 Google Play 앱에 표시됩니다. 이렇게 하면 신뢰할 수 있는 원본(직장 배지가 달린 Google Play 앱은 신뢰할 수 있는 원본임)의 앱을 배포하고 신뢰할 수 없는 원본의 앱 허용할 필요가 없습니다.

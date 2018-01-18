@@ -15,11 +15,11 @@ caps.latest.revision: "9"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: 166f7c73f2050657a85bd5160f74c40cfd87fd7f
-ms.sourcegitcommit: 922d6d9c91ba2158b938df381277be1b5f1d434a
+ms.openlocfilehash: bfe500c160bf2ddffd060baabb44cda81337e1cc
+ms.sourcegitcommit: 92c3f916e6bbd35b6208463ff406e0247664543a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/02/2018
 ---
 #  <a name="sync-data-from-configuration-manager-to-the-microsoft-operations-management-suite"></a>Configuration Manager의 데이터를 Microsoft Operations Management Suite에 동기화합니다.
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 11/13/2017
 
 **Azure 서비스 마법사**를 사용하여 Configuration Manager에서 OMS(Operations Management Suite) 클라우드 서비스에 대한 연결을 구성할 수 있습니다. 버전 1706부터 마법사는 이 연결을 구성하기 위한 이전 워크플로를 대신합니다. 이전 버전에 대해서는 [Configuration Manager의 데이터를 Microsoft Operations Management Suite에 동기화(1702 및 이전 버전)](#Sync-data-from-Configuration-Manager-to-the-Microsoft-Operations-Management-Suite-(1702-and-earlier))를 참조하세요.
 
--   이 마법사는 OMS, WSfB(비즈니스용 Windows 스토어), Azure AD(Azure Active Directory)와 같은 Configuration Manager용 클라우드 서비스를 구성하는 데 사용됩니다.  
+-   이 마법사는 OMS, 비즈니스용 Microsoft Store, Azure AD(Azure Active Directory)와 같은 Configuration Manager용 클라우드 서비스를 구성하는 데 사용됩니다.  
 
 -   Configuration Manager는 [Log Analytics](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite) 또는 [업그레이드 준비](/sccm/core/clients/manage/upgrade/upgrade-analytics)와 같은 기능을 위해 OMS에 연결합니다.
 
@@ -75,7 +75,7 @@ Microsoft OMS(Operations Management Suite) 커넥터를 사용하여 System Cent
 
 버전 1702부터 OMS 커넥터를 사용하여 Microsoft Azure Government 클라우드에 있는 OMS 작업 영역에 연결할 수 있습니다. 이렇게 하려면 OMS 커넥터를 설치하기 전에 구성 파일을 수정해야 합니다. 이 항목에서 [Azure Government 클라우드에서 OMS 커넥터 사용](#fairfaxconfig)을 참조하세요.
 
-### <a name="prerequisites"></a>전제 조건
+### <a name="prerequisites"></a>필수 구성 요소
 - Configuration Manager에서 OMS 커넥터를 설치하기 전에 OMS에 대한 권한을 Configuration Manager에 제공해야 합니다. 특히 OMS Log Analytics 작업 영역을 포함하는 Azure *리소스 그룹*에 *참여자 액세스 권한*을 부여해야 합니다. 이 작업을 수행하는 절차는 Log Analytics 콘텐츠에 설명되어 있습니다. OMS 문서에서 [구성 관리자에 OMS에 대한 사용 권한 제공](https://docs.microsoft.com/azure/log-analytics/log-analytics-sccm#provide-configuration-manager-with-permissions-to-oms)을 참조하세요.
 
 - OMS 커넥터는 [서비스 연결 지점](/sccm/core/servers/deploy/configure/about-the-service-connection-point)을 [온라인 모드](/sccm/core/servers/deploy/configure/about-the-service-connection-point#a-namebkmkmodesa-modes-of-operation)에서 호스트하는 컴퓨터에 설치해야 합니다.

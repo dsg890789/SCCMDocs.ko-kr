@@ -16,11 +16,11 @@ caps.handback.revision: "0"
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 9ae26c55cf92c954a54311e2e698353bbe359a83
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: ee038d8579d63f2afbf0b677181dd06751403ba0
+ms.sourcegitcommit: 0a6b2c53ff4445b5d4f3638fdb0b489d54e333d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="create-a-service-connection-point-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하여 서비스 연결 지점 만들기
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 10/12/2017
 
 1.  Configuration Manager 콘솔에서 **관리**를 클릭합니다.
 
-2.  **관리** 작업 영역에서 **사이트**를 확장하고 **서버 및 사이트 시스템 역할**을 클릭합니다.
+2.  **관리** 작업 영역에서 **사이트 구성**을 확장하고 **서버 및 사이트 시스템 역할**을 클릭합니다.
 
 3.  다음 중 해당 단계를 사용하여 새 또는 기존 사이트 시스템 서버에 **서비스 연결 지점** 역할을 추가합니다.
 

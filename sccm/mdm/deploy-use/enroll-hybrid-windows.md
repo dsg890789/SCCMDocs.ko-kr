@@ -15,11 +15,11 @@ caps.latest.revision: "9"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: dd62748f853915d71fcbad1964f5a67785aaf3f6
-ms.sourcegitcommit: 1132886e07d0c0a87dcc7eeef4577dd8d8840023
+ms.openlocfilehash: 95808d4fd743d5cc18cacb69bb38bc729acdda25
+ms.sourcegitcommit: 92c3f916e6bbd35b6208463ff406e0247664543a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="set-up-windows-hybrid-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune에서 Windows 하이브리드 장치 관리 설정
 
@@ -35,7 +35,7 @@ PC 또는 모바일 장치에 대해 Windows 장치 관리를 사용하도록 �
 3.  리본 메뉴에서 **플랫폼 구성**을 선택하고 Windows 플랫폼을 선택합니다.
     - Windows PC 및 노트북의 경우 **Windows**를 선택하고 다음 단계를 수행합니다.
       1. **일반** 탭에서 **Windows 등록 사용** 확인란을 클릭합니다.
-      2. 인증서를 사용하여 코드 서명하고 회사 포털 앱을 배포하는 경우 **코드 서명 인증서**를 찾습니다. 또한 장치 사용자가 Windows 스토어에서 회사 포털 앱을 설치할 수 있거나, 코드 서명하지 않고 비즈니스용 Windows 스토어에서 앱을 배포할 수 있습니다.
+      2. 인증서를 사용하여 코드 서명하고 회사 포털 앱을 배포하는 경우 **코드 서명 인증서**를 찾습니다. 또한 장치 사용자가 Microsoft Store에서 회사 포털 앱을 설치할 수 있거나, 코드 서명하지 않고 비즈니스용 Microsoft Store에서 앱을 배포할 수 있습니다.
       3. [비즈니스용 Windows Hello 설정](windows-hello-for-business-settings.md)을 구성할 수도 있습니다.
     - Windows 휴대폰 및 태블릿의 경우 **Windows Phone**을 선택하고 다음 단계를 수행합니다.
       1. **일반** 탭에서 **Windows Phone 8.1 및 Windows 10 Mobile** 확인란을 클릭합니다. Windows Phone 8.0은 더 이상 지원되지 않습니다.
