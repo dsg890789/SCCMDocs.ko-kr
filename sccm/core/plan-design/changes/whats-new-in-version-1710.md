@@ -3,7 +3,7 @@ title: "버전 1710의 새로운 기능 | Microsoft Docs"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager 버전 1710에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다."
 ms.custom: na
-ms.date: 11/20/2017
+ms.date: 1/08/2018
 ms.reviewer: na
 ms.suite: na
 ms.technology: configmgr-other
@@ -13,11 +13,11 @@ ms.assetid: bc6c3e5f-b9e2-400e-9d9d-446ff93c520c
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 8431ebffc6d1aa463c5622bd67db8a140c0cfe69
-ms.sourcegitcommit: 2dc9c83e57e9734ffc4a93f79cd71285036eeb8b
+ms.openlocfilehash: f944d4625e2e67a82098bf3b4373ea5f0ed70619
+ms.sourcegitcommit: 9de3d74030b7c3313c34b5cbe2dbe6e18a48c043
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="what39s-new-in-version-1710-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1710의 새로운 기능
 
@@ -49,6 +49,9 @@ Version 1710 drops support for the following products:
 
 ### <a name="cloud-distribution-point-support-for-azure-government-cloud------sms491428---"></a>Azure Government 클라우드에 대한 클라우드 배포 지점 지원 <!-- sms491428 -->
 이제 Azure Government 클라우드에서 [클라우드 기반 배포 지점](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point)을 사용할 수 있습니다.   
+
+### <a name="inventory-default-unit-revision----sms503697---"></a>인벤토리 기본 단위 수정 버전<!-- sms503697 -->
+이제 장치에 GB(기가바이트), TB(테라바이트) 이상 크기의 하드 드라이브가 포함되므로 이 릴리스는 여러 보기에서 사용되는 기본 단위(SMS_Units)를 MB(메가바이트)에서 GB로 변경합니다. 예를 들어 v_gs_LogicalDisk.FreeSpace 값이 GB 단위를 보고합니다.
 
 
 <!-- ## Migration  -->
@@ -145,7 +148,7 @@ Version 1710 drops support for the following products:
 - [장치 등록](../../../mdm/deploy-use/enroll-hybrid-windows.md)
 - [원격 전체 및 선택적 초기화 작업 수행](../../../mdm/deploy-use/wipe-lock-reset-devices.md)
 - [구성 항목 및 기준을 통해 설정 관리](../../../mdm/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)
-- [준수 정책 관리](../../../mdm/deploy-use/device-compliance-policies.md)
+- [규정 준수 정책](../../../mdm/deploy-use/device-compliance-policies.md) 및 [조건부 액세스](../../../protect/deploy-use/manage-access-to-services.md)
 - 회사 리소스에 대한 액세스는 다음 항목을 통해 관리합니다.
    - [인증서 프로필](../../../mdm/deploy-use/create-pfx-certificate-profiles.md)
    - [VPN 프로필](../../../mdm/deploy-use/create-vpn-profiles.md)
@@ -153,6 +156,9 @@ Version 1710 drops support for the following products:
    - [메일 프로필](../../../mdm/deploy-use/create-exchange-activesync-profiles.md)
 - [비즈니스용 Windows Hello 정책 구성](../../../mdm/deploy-use/windows-hello-for-business-settings.md)
 - [응용 프로그램 관리](../../../mdm/deploy-use/management-tasks-applications.md)
+
+> [!NOTE]
+> 여러 아키텍처용으로 빌드된 .appxbundle 응용 프로그램을 배포하면 이들 장치에서 작동하지 않을 수 있으며, 현재 이 시나리오는 지원되지 않습니다.
 
 ### <a name="improved-vpn-profile-experience-in-configuration-manager-console"></a>Configuration Manager 콘솔의 VPN 프로필 환경 개선 
 <!-- 1318232 -->
