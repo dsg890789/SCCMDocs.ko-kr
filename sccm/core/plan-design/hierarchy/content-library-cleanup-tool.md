@@ -29,7 +29,7 @@ ms.lasthandoff: 01/04/2018
 
 이 도구는 도구를 실행할 때 지정하는 배포 지점에 있는 콘텐츠에만 영향을 미칩니다. 이 도구로 사이트 서버에 있는 콘텐츠 라이브러리의 콘텐츠를 제거할 수는 없습니다.
 
-중앙 관리 사이트 또는 기본 사이트의 사이트 서버에 있는 *%CM_Installation_Path%\cd.latest\SMSSETUP\TOOLS\ContentLibraryCleanup\* 폴더에서 **ContentLibraryCleanup.exe**를 찾을 수 있습니다.
+중앙 관리 사이트 또는 기본 사이트의 사이트 서버에 있는 \*%CM_Installation_Path%\cd.latest\SMSSETUP\TOOLS\ContentLibraryCleanup\* 폴더에서 **ContentLibraryCleanup.exe**를 찾을 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항  
  한 번에 하나의 배포 지점에 대해서만 도구를 실행할 수 있습니다.  
