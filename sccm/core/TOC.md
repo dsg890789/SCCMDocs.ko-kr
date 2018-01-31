@@ -15,6 +15,7 @@
 ### [장기 서비스 분기 관리](understand/manage-the-ltsb.md)
 ### [장기 서비스 분기를 현재 분기로 업그레이드](understand/convert-to-current-branch.md)
 ##  [사용해야 하는 Configuration Manager 분기](understand/which-branch-should-i-use.md)
+##  [Configuration Manager 및 WaaS(Windows as a Service)](understand/configuration-manager-and-windows-as-service.md)
 ##  [확장된 상호 운용성 클라이언트](understand/interoperability-client.md)
 ##  [System Center Configuration Manager 라이선스](understand/learn-more-editions.md)
 ##  [클라우드 서비스 사용](understand/use-cloud-services.md)
@@ -106,12 +107,13 @@
 
 <!-- Only show the current plus three, i.e., four total) -->
 ##   [기술 미리 보기](get-started/technical-preview.md)
+###  [1801의 기능](get-started/capabilities-in-technical-preview-1801.md)
 ###  [1712의 기능](get-started/capabilities-in-technical-preview-1712.md)
 ###  [1711의 기능](get-started/capabilities-in-technical-preview-1711.md)
 ###  [1710의 기능](get-started/capabilities-in-technical-preview-1710.md)
-###  [1709의 기능](get-started/capabilities-in-technical-preview-1709.md)
 
 <!-- No longer in support
+###  [Capabilities in 1709](get-started/capabilities-in-technical-preview-1709.md)
 ###  [Capabilities in 1708](get-started/capabilities-in-technical-preview-1708.md)
 ###  [Capabilities in 1707](get-started/capabilities-in-technical-preview-1707.md)
 ###  [Capabilities in 1706](get-started/capabilities-in-technical-preview-1706.md)

@@ -7,26 +7,27 @@ ms.date: 03/26/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-osd
+ms.technology:
+- configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: da1e687b-28f6-43c4-b14a-ff2b76e60d24
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 3848d0d6a9f3b5d778879c598bf859fb1e8a7ac7
-ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
+ms.openlocfilehash: a67d75f27cbc2d53cc5d8c418e25232d88b4f067
+ms.sourcegitcommit: db9978135d7a6455d83dbe4a5175af2bdeaeafd8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="manage-windows-as-a-service-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows as a Service 관리
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 
- System Center Configuration Manager에서 사용자 환경의 Windows as a Service 상태를 보고, 배포 링을 구성할 서비스 계획을 만들고, 새로운 빌드가 릴리스될 때 Windows 10 현재 분기 시스템을 최신 상태로 유지하고, Windows 10 클라이언트에서 CB(현재 분기) 또는 CBB(비즈니스용 현재 분기) 빌드에 대한 지원이 끝나갈 때 경고를 볼 수 있습니다.  
+ System Center Configuration Manager에서 사용자 환경의 WaaS(Windows as a Service) 상태를 보고, 배포 링을 구성할 서비스 계획을 만들고, 새로운 빌드가 릴리스될 때 Windows 10 현재 분기 시스템을 최신 상태로 유지하고, Windows 10 클라이언트에서 CB(현재 분기) 또는 CBB(비즈니스용 현재 분기) 빌드에 대한 지원이 끝나갈 때 경고를 볼 수 있습니다.  
 
  Windows 10 서비스 옵션에 대한 자세한 내용은  [업데이트 및 업그레이드에 대한 Windows 10 서비스 옵션](https://technet.microsoft.com/library/mt598226\(v=vs.85\).aspx)을 참조하세요.  
 
@@ -50,7 +51,7 @@ ms.lasthandoff: 12/12/2017
     -   **운영 체제 빌드**: 운영 체제 빌드를 지정합니다. 예를 들어 **10.0.10240**(RTM) 또는 **10.0.10586**(버전 1511)입니다.  
 
 -   Windows 10 서비스 대시보드에서 데이터를 보려면 서비스 연결 지점을 설치하고 **온라인, 영구 연결** 모드에 대해 구성해야 합니다. 오프라인 모드에 있는 경우 Configuration Manager 서비스 업데이트를 가져와야만 대시보드에 데이터 업데이트가 표시됩니다.   
-     자세한 내용은 [서비스 연결 지점 정보](../../core/servers/deploy/configure/about-the-service-connection-point.md)를 참조하세요.  
+      자세한 내용은 [서비스 연결 지점 정보](../../core/servers/deploy/configure/about-the-service-connection-point.md)를 참조하세요.  
 
 
 -   Configuration Manager 콘솔을 실행하는 컴퓨터에 Internet Explorer 9 이상이 설치되어 있어야 합니다.  
@@ -280,3 +281,6 @@ Windows 10 서비스 대시보드에서 기본 서비스 계획을 만들거나 
 
     > [!NOTE]  
     >  **소프트웨어 라이브러리** 작업 영역의 **소프트웨어 업데이트** 노드에서 최근 소프트웨어 업데이트 경고를 살펴볼 수 있습니다.  
+
+**자세한 내용:** <br/>
+[Configuration Manager as a service 및 WaaS(Windows as a Service)의 기본 사항](/sccm/core/understand/configuration-manager-and-windows-as-service.md)

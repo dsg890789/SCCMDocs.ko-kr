@@ -7,20 +7,21 @@ ms.date: 11/07/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-app
+ms.technology:
+- configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: cc230ff4-7056-4339-a0a6-6a44cdbb2857
-caps.latest.revision: "14"
-caps.handback.revision: "0"
+caps.latest.revision: 
+caps.handback.revision: 
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: f680b692f3ae92fb8a5e8b6640ed053ceedba436
-ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
+ms.openlocfilehash: d7073b397cdf7b233f8264bd07019303a77a610f
+ms.sourcegitcommit: 2f6a13d208dcd8aa59c88f107791f9c4388e78e2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 01/18/2018
 ---
 # <a name="create-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 만들기
 
@@ -337,7 +338,16 @@ Configuration Manager 콘솔의 **응용 프로그램** 노드에 새 응용 프
         > [!IMPORTANT]  
         >  **최대 허용 실행 시간** 이 예약된 유지 관리 기간보다 더 긴 경우 충돌이 발생할 수 있습니다. 사용자가 최대 실행 시간을 사용 가능한 유지 관리 기간의 길이보다 더 길게 설정한 경우 해당 배포 유형은 실행되지 않습니다.  
 
-2.  **예상 설치 시간(분)** - 배포 유형 설치에 걸리는 예상 시간을 지정합니다. 이는 소프트웨어 센터의 사용자에게 표시됩니다.  
+    -   **예상 설치 시간(분)** - 배포 유형 설치에 걸리는 예상 시간을 지정합니다. 이는 소프트웨어 센터의 사용자에게 표시됩니다.  
+
+    -   **특정 다시 부팅 동작 지정**--설치 후 작업을 지정합니다. 다음 옵션을 사용할 수 있습니다.  
+
+        -   **반환 코드에 따라 동작 결정**--반환 코드 탭에 구성된 코드에 따라 다시 부팅을 처리합니다.  소프트웨어 센터에 **다시 부팅이 필요**가 표시됩니다.  사용자가 설치 중에 로그인하면 배포의 사용자 환경 구성에 따라 메시지가 표시됩니다.  
+
+        -   **특정 작업 없음**--설치 후 다시 부팅할 필요가 없습니다.  소프트웨어 센터에서 다시 부팅할 필요가 없다고 보고합니다.   
+        -   **소프트웨어 설치 프로그램이 장치를 강제로 다시 시작할 수 있습니다.**--Configuration Manager는 다시 부팅을 제어하거나 시작하지는 않지만 실제 설치는 경고없이 수행할 수 있습니다.  다시 부팅을 시작할 경우 Configuration Manager가 설치 실패를 보고하지 않도록 하려면 이 설정을 사용합니다.  소프트웨어 센터에 **다시 부팅이 필요**가 표시됩니다.  
+
+        -   **Configuration Manager 클라이언트는 필수 장치를 강제로 다시 시작합니다.**--Configuration Manager는 성공적인 설치 후 장치를 강제로 다시 부팅합니다.  소프트웨어 센터에서 다시 부팅이 필요하다고 보고합니다.  사용자가 설치 중에 로그인하면 배포의 사용자 환경 구성에 따라 메시지가 표시됩니다.
 
 ## <a name="specify-requirements-for-the-deployment-type"></a>배포 유형의 요구 사항 지정  
 
