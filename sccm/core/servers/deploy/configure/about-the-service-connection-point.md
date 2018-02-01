@@ -7,20 +7,21 @@ ms.date: 6/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: bc2282d5-0571-465b-9528-a555855eaacd
-caps.latest.revision: "18"
-caps.handback.revision: "0"
+caps.latest.revision: 
+caps.handback.revision: 
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 145fe172665310caa48d8f152ad46d72df4168dd
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: 9651694530d1258100c9c564bfc59447ac454a96
+ms.sourcegitcommit: ac20475ae9c1ea5ca3632cb6a44440c316f171f4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="about-the-service-connection-point-in-system-center-configuration-manager"></a>System Center Configuration Manager의 서비스 연결 지점 정보
 
@@ -84,7 +85,7 @@ Configuration Manager 서비스 관리자를 사용하려면 콘솔에서 **모�
 -   사이트 서버의 배포 관리자는 사이트 시스템 설치 계정을 사용하여 서비스 연결 지점에서 업데이트를 전송합니다.
 
 ##  <a name="bkmk_urls"></a> 인터넷 액세스 요구 사항  
-작업을 사용하려면 서비스 연결 지점 및 해당 컴퓨터와 인터넷 간의 모든 방화벽을 호스트하는 컴퓨터에서 **포트 TCP 443** 및 **포트 TCP 443**을 통해 다음 인터넷 위치로 통신을 전달해야 합니다. 서비스 연결 지점에서도 웹 프록시(인증을 사용하거나 사용하지 않고)를 사용하여 이러한 위치에 액세스할 수 있습니다.  웹 프록시 계정을 구성해야 하는 경우 [System Center Configuration Manager의 프록시 서버 지원](/sccm/core/plan-design/network/proxy-server-support)을 참조하세요.
+작업을 사용하려면 서비스 연결 지점 및 해당 컴퓨터와 인터넷 간의 모든 방화벽을 호스트하는 컴퓨터에서 HTTPS를 위한 송신 포트 **TCP 443**과 HTTP를 위한 송신 포트 **TCP 80**을 통해 다음 인터넷 위치로 통신을 전달해야 합니다. 서비스 연결 지점에서도 웹 프록시(인증을 사용하거나 사용하지 않고)를 사용하여 이러한 위치에 액세스할 수 있습니다.  웹 프록시 계정을 구성해야 하는 경우 [System Center Configuration Manager의 프록시 서버 지원](/sccm/core/plan-design/network/proxy-server-support)을 참조하세요.
 
 **업데이트 및 서비스**  
 

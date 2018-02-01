@@ -7,19 +7,20 @@ ms.date: 12/18/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 35e237b6-9f7b-4189-90e7-8eca92ae7d3d
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mestew
 ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: ccc07aa709c0a168a8df7a1bd7944e9399bec13f
-ms.sourcegitcommit: 3dea4342f79909c5064289bd18ed36269812e30c
+manager: dougeby
+ms.openlocfilehash: 2dcf7ab67c0f57d442f6ab0a0ea9f0f476fe8415
+ms.sourcegitcommit: bc86be110c8d2a7a076e17f433d8c5ffd51a7d04
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="supported-sql-server-versions-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 지원되는 SQL Server 버전
 
@@ -191,6 +192,9 @@ SQL Server 트랜잭션 복제는 [데이터베이스 복제본](https://technet
  각 사이트에서 사이트와 사이트 데이터베이스에 사용되는 두 SQL Server 인스턴스는 모두 **SQL_Latin1_General_CP1_CI_AS**데이터 정렬을 사용해야 합니다.  
 
  Configuration Manager에서는 중국에서 사용하도록 GB18030으로 정의된 표준을 충족하기 위해 이 데이터 정렬에 대한 두 가지 예외를 지원합니다. 자세한 내용은 [System Center Configuration Manager의 다국어 기능 지원](../../../core/plan-design/hierarchy/international-support.md)을 참조하세요.  
+
+ **데이터베이스 호환성 수준:** </br>
+ Configuration Manager를 사용하려면 사이트 데이터베이스에 대한 호환성 수준이 Configuration Manager 버전에 대해 지원되는 최저 SQL Server 버전과 같거나 더 높아야 합니다. 예를 들어 1702 버전부터는 [데이터베이스 호환성 수준](https://docs.microsoft.com/sql/relational-databases/databases/view-or-change-the-compatibility-level-of-a-database)이 110보다 크거나 같아야 합니다. <!-- SMS.506266--> 
 
  **SQL Server 기능:**  
  각 사이트 서버에는 **데이터베이스 엔진 서비스** 기능만 있으면 됩니다.  
