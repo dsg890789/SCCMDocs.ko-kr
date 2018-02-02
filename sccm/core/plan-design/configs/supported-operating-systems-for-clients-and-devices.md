@@ -7,19 +7,20 @@ ms.date: 8/30/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 87f4e041-67df-4c61-aa98-7444faffe565
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 412bddaa604c053662a605115acdabe76a2cb03c
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: c740e9b23cb2968463e8843b5f3cdcbaba7c4d91
+ms.sourcegitcommit: 645cd5a324bdd299906efa27eaca5885eafc9e9c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="supported-operating-systems-for-clients-and-devices-for-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 및 장치에 대해 지원되는 운영 체제
 
@@ -61,7 +62,7 @@ ms.lasthandoff: 12/04/2017
 
 -   **Windows 8.1**(x86, x64): Professional, Enterprise    
 
--   **Windows 8**(x86, x64): Professional, Enterprise    
+<!---   **Windows 8** (x86, x64): Professional, Enterprise  -removed Jan 12,2018 sms505863-->
 
 -   **Windows 7 SP1**(x86, x64): Professional, Enterprise, Ultimate    
 
@@ -111,11 +112,11 @@ ms.lasthandoff: 12/04/2017
 
 -   **Windows Embedded 8.1 Industry**(x86, x64)    
 
--   **Windows Embedded 8 Industry**(x86, x64)    
+   <!----   **Windows Embedded 8 Industry** (x86, x64)  -removed Jan 12,2018 sms505863-->
 
 -   **Windows Embedded 8 Standard**(x86, x64)    
 
--   **Windows Embedded 8 Pro**(x86, x64)    
+<!---   **Windows Embedded 8 Pro** (x86, x64)    -removed Jan 12,2018 sms505863-->
 
 -   **Windows Thin PC**(x86, x64)    
 
@@ -191,7 +192,7 @@ ms.lasthandoff: 12/04/2017
 
 -   **Mac OS X 10.11**(El Capitan)  
 
--   **Mac OS X 10.12**(macOS Sierra )
+-   **Mac OS X 10.12**(macOS Sierra)
 
 ##  <a name="linux-and-unix-servers"></a>Linux 및 UNIX 서버  
  Linux 및 UNIX용 Configuration Manager 클라이언트에서 Linux 및 UNIX 서버를 관리할 수 있습니다.  
@@ -300,7 +301,7 @@ ms.lasthandoff: 12/04/2017
 
 
 ##  <a name="mobile-devices-enrolled-by-microsoft-intune"></a>Microsoft Intune에서 등록한 모바일 장치  
- Configuration Manager에 Microsoft Intune을 통합할 때 관리할 수 있는 컴퓨터 및 장치에 대한 자세한 내용은 Microsoft Intune 문서 라이브러리에서 다음 두 항목을 참조하세요.  
+ Microsoft Intune과 Configuration Manager 통합할 때 관리할 수 있는 컴퓨터 및 장치에 대한 자세한 내용은 Microsoft Intune 문서 라이브러리에서 다음 두 항목을 참조하세요.  
 
 -   [Microsoft Intune의 모바일 장치 관리 기능](https://docs.microsoft.com/intune/get-started/choose-how-to-manage-devices)  
 -   [Microsoft Intune의 Windows PC 관리 기능](https://docs.microsoft.com/intune/get-started/windows-pc-management-capabilities-in-microsoft-intune)  

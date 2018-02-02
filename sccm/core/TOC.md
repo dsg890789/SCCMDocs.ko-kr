@@ -36,8 +36,10 @@
 ###  [What's new in version 1606](plan-design/changes/whats-new-in-version-1606.md)
 ###  [What's new in version 1602](plan-design/changes/whats-new-in-version-1602.md)
 -->
-###  [제거되는 기능과 사용되지 않는 기능](plan-design/changes/removed-and-deprecated-features.md)
-
+###  [제거되고 사용되지 않음](plan-design/changes/deprecated/removed-and-deprecated.md)
+#### [제거되는 기능과 사용되지 않는 기능](plan-design/changes/deprecated/removed-and-deprecated-cmfeatures.md)
+#### [사이트 서버에 대해 제거되고 사용되지 않음](plan-design/changes/deprecated/removed-and-deprecated-server.md)
+#### [클라이언트에 대해 제거되고 사용되지 않음](plan-design/changes/deprecated/removed-and-deprecated-client.md)
 ##   [지원되는 구성](plan-design/configs/supported-configurations.md)
 ###  [크기 조정 및 규모 숫자 값](plan-design/configs/size-and-scale-numbers.md)
 ###  [사이트 및 사이트 시스템 필수 조건](plan-design/configs/site-and-site-system-prerequisites.md)

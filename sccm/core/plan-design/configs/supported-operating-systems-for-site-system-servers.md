@@ -7,19 +7,20 @@ ms.date: 06/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 17905b4c-3895-4ad4-a69c-5e0d0fc5a8c3
-caps.latest.revision: "44"
+caps.latest.revision: 
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: e7606e087e2540b49e8aa23c09d09831651ee48b
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: 03618b541f8f00ccab69fa4ebcef81ffc146010c
+ms.sourcegitcommit: 645cd5a324bdd299906efa27eaca5885eafc9e9c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="supported-operating-systems-for-system-center-configuration-manager-site-system-servers"></a>System Center Configuration Manager 사이트 시스템 서버에 대해 지원되는 운영 체제
 
@@ -29,7 +30,7 @@ ms.lasthandoff: 12/04/2017
 이 문서에서는 System Center Configuration Manager 사이트 또는 사이트 시스템 역할을 호스트하는 데 사용할 수 있는 Windows 버전에 대해 자세히 설명합니다.
 
 
-이 항목의 정보를 다음 문서의 정보와 함께 참조하세요.
+다음 문서의 정보와 함께 이 문서의 정보를 참조하세요.
 -   [Configuration Manager에 권장되는 하드웨어](../../../core/plan-design/configs/recommended-hardware.md)
 -   [Configuration Manager의 사이트 및 사이트 시스템 필수 조건](../../../core/plan-design/configs/site-and-site-system-prerequisites.md)
 -   [Configuration Manager의 크기 조정 및 규모 숫자 값](../../../core/plan-design/configs/size-and-scale-numbers.md)
@@ -271,16 +272,18 @@ KB3186654의 핫픽스 롤업이 포함된 1606 버전(또는 2016년 10월에 �
 
     -   배포 지점은 각기 요구 사항이 다른 여러 구성을 지원합니다. 경우에 따라 이러한 구성은 서버뿐만 아니라 클라이언트 운영 체제에 대한 설치도 지원합니다. 배포 지점에 사용할 수 있는 옵션에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
 
-## <a name="windows-8-x86-x64-professional-and-enterprise"></a>Windows 8(x86, x64): Professional 및 Enterprise
-**사이트 시스템 서버:**  
+<!--## Windows 8 (x86, x64): Professional and Enterprise
+**Site system servers:**  
 
--   배포 지점  
+-   Distribution point  
 
-    -   이 운영 체제의 배포 지점은 PXE용으로 지원되지 않습니다.  
+    -   Distribution points on this operating system are not supported for PXE.  
 
-    -   이 운영 체제의 배포 지점은 멀티캐스트를 지원하지 않습니다.  
+    -   Distribution points on this operating system version do not support Multicast.  
 
-    -   배포 지점은 각기 요구 사항이 다른 여러 구성을 지원합니다. 경우에 따라 이러한 구성은 서버뿐만 아니라 클라이언트 운영 체제에 대한 설치도 지원합니다. 배포 지점에 사용할 수 있는 옵션에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
+    -   Distribution points support several different configurations that each have different requirements. In some cases, these configurations support installation not only on servers, but on client operating systems. For more information about the options that are available for distribution points, see [Manage content and content infrastructure for System Center Configuration Manager](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md).  
+   
+    -  - -removed Jan 12,2018 sms505863-->
 
 ## <a name="windows-7-with-sp1-x86-x64-professional-enterprise-and-ultimate"></a>Windows 7 SP1(x86, x64): Professional, Enterprise 및 Ultimate  
 **사이트 시스템 서버:**  
