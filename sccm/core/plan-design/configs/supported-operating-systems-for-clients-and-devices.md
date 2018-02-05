@@ -16,11 +16,11 @@ caps.latest.revision:
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: c740e9b23cb2968463e8843b5f3cdcbaba7c4d91
-ms.sourcegitcommit: 645cd5a324bdd299906efa27eaca5885eafc9e9c
+ms.openlocfilehash: a0f2c2c0885982bb25606f117031a36c2dcd2e60
+ms.sourcegitcommit: ac20475ae9c1ea5ca3632cb6a44440c316f171f4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="supported-operating-systems-for-clients-and-devices-for-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 및 장치에 대해 지원되는 운영 체제
 
@@ -193,6 +193,8 @@ ms.lasthandoff: 01/16/2018
 -   **Mac OS X 10.11**(El Capitan)  
 
 -   **Mac OS X 10.12**(macOS Sierra)
+
+-   **Mac OS X 10.13**(macOS High Sierra)
 
 ##  <a name="linux-and-unix-servers"></a>Linux 및 UNIX 서버  
  Linux 및 UNIX용 Configuration Manager 클라이언트에서 Linux 및 UNIX 서버를 관리할 수 있습니다.  

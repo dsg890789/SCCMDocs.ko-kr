@@ -17,11 +17,11 @@ caps.handback.revision:
 author: aczechowski
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 695d21eb065f4d89143644dad28bfdb711392ab9
-ms.sourcegitcommit: e121d8d3dd82b9f2dde2cb5206cbee602ab8e107
+ms.openlocfilehash: 158817547d40f09fb8bd30ebedd5aea6420a8571
+ms.sourcegitcommit: aee9ac45c15f27d8cf827890edcae94c03f5fd5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="task-sequence-steps-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업 순서 단계
 
@@ -536,7 +536,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
 
  -   **구성 관리자 클라이언트 캐시**: 이 옵션을 사용하여 클라이언트 캐시에 콘텐츠를 저장합니다. 클라이언트는 다른 피어 캐시 클라이언트의 피어 캐시 원본 역할을 합니다. 자세한 내용은 [WAN 트래픽을 줄이기 위해 Windows PE 피어 캐시 준비](../get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic.md)를 참조하세요.  
 
- -   **사용자 지정 경로**  
+ -    **사용자 지정 경로**:이 옵션을 사용하면 작업 순서 엔진이 먼저 패키지를 작업 순서 작업 디렉터리에 다운로드한 다음 사용자가 지정한 이 경로로 이동합니다. 작업 순서 엔진은 경로에 패키지 ID를 추가합니다. 
    
 **변수로 경로 저장**  
  다른 작업 순서 단계에서 사용할 수 있는 변수로 경로를 저장할 수 있습니다. Configuration Manager에서 변수 이름에 숫자 접미사를 추가합니다. 예를 들어 %*mycontent*% 변수를 사용자 지정 변수로 지정하는 경우 이는 작업 순서에서 참조된 모든 콘텐츠를 저장하는 루트가 됩니다. 이 콘텐츠에는 여러 패키지가 포함될 수 있습니다. 그런 다음 이 변수를 참조할 때 숫자 접미사가 추가됩니다. 예를 들어 첫 번째 패키지의 경우 %*mycontent01*%를 참조합니다. **운영 체제 업그레이드**와 같은 후속 단계에서 변수를 참조하는 경우 %*mycontent02*% 또는 %*mycontent03*%를 사용합니다. 여기서 숫자는 **패키지 콘텐츠 다운로드** 단계에서 패키지가 나열되는 순서에 해당합니다.  
