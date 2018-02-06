@@ -16,11 +16,11 @@ caps.latest.revision:
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: a0f2c2c0885982bb25606f117031a36c2dcd2e60
-ms.sourcegitcommit: ac20475ae9c1ea5ca3632cb6a44440c316f171f4
+ms.openlocfilehash: 614226e60f9bcd7b8e3c1330f52a4847e89e0880
+ms.sourcegitcommit: b13da5ad8ffd58e3b89fa6d7170e1dec3ff130a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="supported-operating-systems-for-clients-and-devices-for-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 및 장치에 대해 지원되는 운영 체제
 
@@ -124,7 +124,7 @@ ms.lasthandoff: 01/25/2018
 
 -   **Windows Embedded Standard 7 SP1**(x86, x64)    
 
-다음 운영 체제는 Windows XP Embedded에 기반하고 Configuration Manager 버전 1610 이전에서만 지원됩니다. [1702 버전부터 이러한 포함 운영 체제는 더 이상 지원되지 않습니다](/sccm/core/plan-design/changes/removed-and-deprecated-features#client-operating-systems).  
+다음 운영 체제는 Windows XP Embedded에 기반하고 Configuration Manager 버전 1610 이전에서만 지원됩니다. [1702 버전부터 이러한 포함 운영 체제는 더 이상 지원되지 않습니다](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-client#deprecated-client-operating-systems).  
 
 -   **WEPOS 1.1 SP3**(x86)    
 

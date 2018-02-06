@@ -7,20 +7,21 @@ ms.date: 08/16/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: d8c8b44c-1e8a-42b6-bab4-23c72a0a6169
-caps.latest.revision: "15"
-caps.handback.revision: "0"
+caps.latest.revision: 
+caps.handback.revision: 
 author: mestew
 ms.author: mstewart
 manager: angrobe
 ms.openlocfilehash: 95df27d4bf21a2cb1b6d613415a3eff4c3a73552
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.sourcegitcommit: aee9ac45c15f27d8cf827890edcae94c03f5fd5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 01/31/2018
 ---
 # <a name="removed-and-deprecated-features-for-system-center-configuration-manager"></a>System Center Configuration Manager에서 제거되는 기능과 사용되지 않는 기능
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 12/04/2017
 -  그러면 버전 1610에서 지원이 제거되었음을 나타내도록 항목이 업데이트됩니다.
 그러나 버전 1602 또는 1606과 같이 해당 기능을 지원하는 이전 버전을 계속 사용하는 경우에는 사용 중인 버전의 지원이 중단될 때까지 해당 기능도 계속 사용할 수 있습니다.
 
-자세한 내용은 다음을 참조하세요.
+자세한 내용은 다음을 참조하십시오.
  - [Microsoft 지원 주기 정책](https://support.microsoft.com/lifecycle) 웹 사이트
  - [Configuration Manager 현재 분기 버전에 대한 지원](/sccm/core/servers/manage/current-branch-versions-supported)
 

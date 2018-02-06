@@ -6,18 +6,19 @@ ms.custom: na
 ms.date: 08/11/2017
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ac034143-003e-4629-aac2-99eaffef4db1
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: fddb31279587df5306c07a9f23dfc4dace418ea7
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: fb6c377edee5cbf387398ed2166ca2cca0cdb765
+ms.sourcegitcommit: b13da5ad8ffd58e3b89fa6d7170e1dec3ff130a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="what39s-new-in-version-1706-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1706의 새로운 기능
 
@@ -36,7 +37,7 @@ System Center Configuration Manager 현재 분기의 업데이트 1706은 버전
 
 <!--
 ## Deprecated features and operating systems
-Learn about support changes before they are implemented in [removed and deprecated features](/sccm/core/plan-design/changes/removed-and-deprecated-features).
+Learn about support changes before they are implemented in [removed and deprecated items](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated).
 
 Version 1706 drops support for the following products:
 -->
@@ -214,7 +215,7 @@ Configuration Manager에서 패키지 및 프로그램을 사용하여 클라이
 이제 Configuration Manager를 사용하여 Microsoft Surface 드라이버 업데이트를 관리할 수 있습니다.    
 
 
-#### <a name="prerequisites"></a>전제 조건
+#### <a name="prerequisites"></a>필수 구성 요소
 - 모든 소프트웨어 업데이트 지점에서 Windows Server 2016이 실행되어야 합니다.    
 - 이 기능은 사용하기 위해 설정해야 하는 시험판 기능입니다. 자세한 내용은 [업데이트에서 시험판 기능 사용](https://docs.microsoft.com/sccm/core/servers/manage/install-in-console-updates#bkmk_prerelease)을 참조하세요.
 
