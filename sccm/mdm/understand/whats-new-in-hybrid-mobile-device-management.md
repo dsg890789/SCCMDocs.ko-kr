@@ -15,11 +15,11 @@ ms.assetid: 7b127cee-61f1-4681-9760-caebed36ddf5
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 04ed2ac1abe54c3b8c7c86f210b35f5f52d80ef6
-ms.sourcegitcommit: c432624b8816f59d51a3c8ef68960ed4099d9124
+ms.openlocfilehash: aca30a199e38b2d4ed38a458694d98010b5e2496
+ms.sourcegitcommit: b13da5ad8ffd58e3b89fa6d7170e1dec3ff130a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 장치 관리의 새로운 기능
 
@@ -46,6 +46,9 @@ ms.lasthandoff: 01/24/2018
 ## <a name="january-2018"></a>2018년 1월
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+- **Android 장치의 "해결" 작업을 위한 새로운 기능** <!--1583480-->    
+  Android용 회사 포털 앱은 **장치 설정 업데이트**에 대한 "해결" 작업을 확장하여 [장치 암호화 문제](https://docs.microsoft.com/intune-user-help/encrypt-your-device-android)를 해결합니다.
 
 - **Windows 10용 회사 포털 앱에서 원격 잠금 사용 가능** <!--676506-->    
   이제 최종 사용자가 Windows 10용 회사 포털 앱에서 자신의 장치를 원격으로 잠글 수 있습니다. 최종 사용자가 적극적으로 사용하는 로컬 장치에는 이것이 표시되지 않습니다.

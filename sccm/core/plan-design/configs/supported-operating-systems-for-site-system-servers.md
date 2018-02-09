@@ -16,11 +16,11 @@ caps.latest.revision:
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 03618b541f8f00ccab69fa4ebcef81ffc146010c
-ms.sourcegitcommit: 645cd5a324bdd299906efa27eaca5885eafc9e9c
+ms.openlocfilehash: 18df431f0fd1b355b1ad629a10126907187ddbbd
+ms.sourcegitcommit: b13da5ad8ffd58e3b89fa6d7170e1dec3ff130a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="supported-operating-systems-for-system-center-configuration-manager-site-system-servers"></a>System Center Configuration Manager 사이트 시스템 서버에 대해 지원되는 운영 체제
 
@@ -181,7 +181,7 @@ KB3186654의 핫픽스 롤업이 포함된 1606 버전(또는 2016년 10월에 �
 -   상태 마이그레이션 지점  
 
 ## <a name="windows-server-2008-r2-with-sp1-x64-standard-enterprise-and-datacenter"></a>Windows Server 2008 R2 with SP1(x64): Standard, Enterprise 및 Datacenter  
- [Microsoft 지원 기간](https://support.microsoft.com/lifecycle)에 설명된 대로 Windows Server 2008 R2는 현재 추가 지원 상태이며 더 이상 일반 지원에 속하지 않습니다. 향후에 Configuration Manager에서 이러한 운영 체제를 사이트 시스템 서버로 사용할 수 있는지에 대한 자세한 내용은 [System Center Configuration Manager에서 제거되는 기능과 사용되지 않는 기능](../../../core/plan-design/changes/removed-and-deprecated-features.md)을 참조하세요.  
+ [Microsoft 지원 기간](https://support.microsoft.com/lifecycle)에 설명된 대로 Windows Server 2008 R2는 현재 추가 지원 상태이며 더 이상 일반 지원에 속하지 않습니다. 향후에 Configuration Manager에서 이러한 운영 체제를 사이트 시스템 서버로 사용할 수 있는지에 대한 자세한 내용은 [사용되지 않는 서버 운영 체제](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-server#deprecated-server-operating-systems)를 참조하세요.  
 
  Configuration Manager 버전 1702부터 사이트 서버 또는 대부분 사이트 시스템 역할에 대해 이 운영 체제가 지원되지 않지만 배포 지점 사이트 시스템 역할에 대해(풀(pull) 배포 지점 포함, PXE 및 멀티캐스트에 대해) 계속 지원됩니다.
 
@@ -235,7 +235,7 @@ KB3186654의 핫픽스 롤업이 포함된 1606 버전(또는 2016년 10월에 �
 -   상태 마이그레이션 지점  
 
 ## <a name="windows-server-2008-with-sp2-x86-x64-standard-enterprise-and-datacenter"></a>Windows Server 2008 SP2(x86, x64): Standard, Enterprise 및 Datacenter  
- [Microsoft 지원 기간](https://support.microsoft.com/lifecycle)에 설명된 대로 Windows Server 2008은 현재 추가 지원 상태이며 더 이상 일반 지원에 속하지 않습니다. 향후에 Configuration Manager에서 이러한 운영 체제를 사이트 시스템 서버로 사용할 수 있는지에 대한 자세한 내용은 [System Center Configuration Manager에서 제거되는 기능과 사용되지 않는 기능](../../../core/plan-design/changes/removed-and-deprecated-features.md)을 참조하세요.  
+ [Microsoft 지원 기간](https://support.microsoft.com/lifecycle)에 설명된 대로 Windows Server 2008은 현재 추가 지원 상태이며 더 이상 일반 지원에 속하지 않습니다. 향후에 Configuration Manager에서 이러한 운영 체제를 사이트 시스템 서버로 사용할 수 있는지에 대한 자세한 내용은 [사용되지 않는 서버 운영 체제](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-server#deprecated-server-operating-systems)를 참조하세요.  
 
 배포 지점 및 풀(pull) 배포 지점을 제외하고, 이 운영 체제는 사이트 서버 또는 사이트 시스템 역할에 대해 지원되지 않습니다. 이 지원의 중단이 발표되거나 이 운영 체제의 추가 지원 기간이 만료될 때까지 이 운영 체제를 배포 지점으로 계속 사용할 수 있습니다. 자세한 내용은 [Installation of System Center Configuration Manager CB and LTSB fails on Windows Server 2008](https://support.microsoft.com/help/4015095)(Windows Server 2008에서 System Center Configuration Manager CB 및 LTSB 설치 실패)을 참조하세요.
 

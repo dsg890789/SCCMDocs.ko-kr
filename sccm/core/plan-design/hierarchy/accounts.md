@@ -7,20 +7,21 @@ ms.date: 2/9/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 72d7b174-f015-498f-a0a7-2161b9929198
-caps.latest.revision: "7"
-caps.handback.revision: "0"
+caps.latest.revision: 
+caps.handback.revision: 
 author: aczechowski
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 518be0c1cb4c361d8802ed70779d192725eb8feb
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+ms.openlocfilehash: 1b8248cbbade7d46d1a1ad41edd704b5ad8d49aa
+ms.sourcegitcommit: b13da5ad8ffd58e3b89fa6d7170e1dec3ff130a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="accounts-used-in-system-center-configuration-manager"></a>System Center Configuration Manager에 사용된 계정
 
@@ -72,7 +73,7 @@ Configuration Manager에서는 소프트웨어 인벤토리를 통해 수집한 
 |------------|----------------------|  
 |유형 및 위치|이 그룹은 SMS 공급자가 있는 각 컴퓨터에 만들어지는 로컬 보안 그룹입니다.<br /><br /> 사이트를 제거해도 이 그룹은 자동으로 제거되지 않습니다. 수동으로 이 그룹을 삭제해야 합니다.|  
 |Membership|Configuration Manager는 자동으로 그룹 멤버 자격을 관리합니다. 기본적으로 계층의 각 관리자와 사이트 서버 컴퓨터 계정이 사이트에 있는 각 SMS 공급자 컴퓨터에 대한 SMS Admins 그룹의 구성원입니다.|  
-|사용 권한|SMS Admins 권한은 WMI 컨트롤 MMC 스냅인에서 설정됩니다. 기본적으로 SMS Admins 그룹에는 Root\SMS 네임스페이스에 대한 **Enable Account** 및 **Remote Enable** 권한이 부여됩니다. 인증된 사용자에게는 **Execute Methods**, **Provider Write** 및 **Enable Account** 권한이 있습니다.<br /><br /> 원격 Configuration Manager 콘솔을 사용할 관리자에게는 사이트 서버 컴퓨터와 SMS 공급자 컴퓨터 모두에 대한 원격 활성화 DCOM 권한이 필요합니다. 이러한 권한을 사용자 또는 그룹에 직접 부여하지 않고 SMS Admins에 부여하여 관리를 단순화하는 것이 가장 좋습니다. 자세한 내용은 [Modify your System Center Configuration Manager infrastructure](../../../core/servers/manage/modify-your-infrastructure.md)(System Center Configuration Manager 인프라 수정) 항목의 [Configure DCOM permissions for remote Configuration Manager consoles](../../../core/servers/manage/modify-your-infrastructure.md#BKMK_ConfigDCOMforRemoteConsole)(원격 Configuration Manager 콘솔에 대한 DCOM 권한 구성) 섹션을 참조하세요.|  
+|사용 권한|SMS Admins 권한은 WMI 컨트롤 MMC 스냅인에서 설정됩니다. 기본적으로 SMS Admins 그룹에는 Root\SMS 네임스페이스에 대한 **Enable Account** 및 **Remote Enable** 권한이 부여됩니다. 인증된 사용자에게는 **Execute Methods**, **Provider Write** 및 **Enable Account** 권한이 있습니다.<br /><br /> 원격 Configuration Manager 콘솔을 사용할 관리자에게는 사이트 서버 컴퓨터와 SMS 공급자 컴퓨터 모두에 대한 원격 활성화 DCOM 권한이 필요합니다. 이러한 권한을 사용자 또는 그룹에 직접 부여하지 않고 SMS Admins에 부여하여 관리를 단순화하는 것이 가장 좋습니다. 자세한 내용은 [Modify your System Center Configuration Manager infrastructure](../../../core/servers/manage/modify-your-infrastructure.md)(System Center Configuration Manager 인프라 수정) 문서의 [Configure DCOM permissions for remote Configuration Manager consoles](../../../core/servers/manage/modify-your-infrastructure.md#BKMK_ConfigDCOMforRemoteConsole)(원격 Configuration Manager 콘솔에 대한 DCOM 권한 구성) 섹션을 참조하세요.|  
 
 ### <a name="smssitesystemtositeserverconnectionmpltsitecode"></a>SMS_SiteSystemToSiteServerConnection_MP_&lt;sitecode\>  
  사이트 서버에서 원격인 Configuration Manager 관리 지점은 이 그룹을 사용하여 사이트 데이터베이스에 연결합니다. 이 그룹은 사이트 서버 및 사이트 데이터베이스의 수신함 폴더에 대한 액세스 권한을 관리 지점에 제공합니다.  
@@ -245,6 +246,8 @@ Configuration Manager에서는 소프트웨어 인벤토리를 통해 수집한 
 
 ### <a name="reporting-services-point-account"></a>보고 서비스 지점 계정  
  SQL Server Reporting Services에서는 **보고 서비스 지점 계정**을 사용하여 사이트 데이터베이스의 Configuration Manager 보고서 데이터를 검색합니다. 지정한 Windows 사용자 계정 및 암호는 암호화되어 SQL Server Reporting Services 데이터베이스에 저장됩니다.  
+>[!NOTE]
+>지정하는 계정은 보고 서비스 데이터베이스를 호스트하는 컴퓨터에서 로컬로 로그온할 수 있는 권한을 가져야 합니다.
 
 ### <a name="remote-tools-permitted-viewer-accounts"></a>원격 도구 허용된 뷰어 계정  
  원격 제어에 대해 **허용된 뷰어** 로 지정한 계정은 클라이언트에서 원격 도구 기능을 사용하도록 허용한 사용자들입니다.  

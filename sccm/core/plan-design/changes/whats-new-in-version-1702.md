@@ -6,18 +6,19 @@ ms.custom: na
 ms.date: 05/02/2017
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 409e26e1-7716-4f1d-a0ee-34feabf20792
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: aa8d80cf9c036e63dc74ffe78bc8d5b060d6053e
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: cf46bb32994ddb8a1fa3b9de0dbffc94228ad7fd
+ms.sourcegitcommit: b13da5ad8ffd58e3b89fa6d7170e1dec3ff130a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="what39s-new-in-version-1702-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1702의 새로운 기능
 
@@ -35,13 +36,13 @@ System Center Configuration Manager 현재 분기의 업데이트 1702는 버전
 다음 섹션에서는 Configuration Manager 버전 1702에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.  
 
 ## <a name="deprecated-features-and-operating-systems"></a>사용되지 않는 기능 및 운영 체제
-[제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/removed-and-deprecated-features)에서 구현되기 전의 지원 변경 내용을 알아보세요.
+[제거되는 기능과 사용되지 않는 항목](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated)에서 구현되기 전의 지원 변경 내용을 알아보세요.
 
 버전 1702에서는 다음 제품이 지원되지 않습니다.
-- **SQL Server 2008 R2** - 사이트 데이터베이스 서버에 지원되지 않습니다. 지원 중단은 2015년 7월 10일에 [처음 발표](/sccm/core/plan-design/changes/removed-and-deprecated-features#deprecated-support-for-sql-server-versions-as-a-site-database)되었습니다. 1702 이전 버전의 Configuration Manager를 사용하는 경우 이 버전의 SQL Server가 계속 지원됩니다.
-- **Windows Server 2008 R2** - 사이트 시스템 서버 및 대부분의 사이트 시스템 역할에 지원되지 않습니다. 지원 중단은 2015년 7월 10일에 [처음 발표](/sccm/core/plan-design/changes/removed-and-deprecated-features#deprecated-operating-systems)되었습니다. 1702 이전 버전의 Configuration Manager를 사용하는 경우 이 버전의 Windows가 계속 지원됩니다.  
-- **Windows Server 2008** - 사이트 시스템 서버 및 대부분의 사이트 시스템 역할에 지원되지 않습니다. 지원 중단은 2015년 7월 10일에 [처음 발표](/sccm/core/plan-design/changes/removed-and-deprecated-features#deprecated-operating-systems)되었습니다.
-- **Windows XP Embedded** - 클라이언트 운영 체제로 지원되지 않습니다. 지원 중단은 2015년 7월 10일에 [처음 발표](/sccm/core/plan-design/changes/removed-and-deprecated-features#deprecated-operating-systems)되었습니다. 1702 이전 버전의 Configuration Manager를 사용하는 경우 이 버전의 Windows가 계속 지원됩니다.
+- **SQL Server 2008 R2** - 사이트 데이터베이스 서버에 지원되지 않습니다. 지원 중단은 2015년 7월 10일에 [처음 발표](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-server#deprecated-support-for-sql-server-versions-as-a-site-database)되었습니다. 1702 이전 버전의 Configuration Manager를 사용하는 경우 이 버전의 SQL Server가 계속 지원됩니다.
+- **Windows Server 2008 R2** - 사이트 시스템 서버 및 대부분의 사이트 시스템 역할에 지원되지 않습니다. 지원 중단은 2015년 7월 10일에 [처음 발표](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-server#deprecated-server-operating-systems)되었습니다. 1702 이전 버전의 Configuration Manager를 사용하는 경우 이 버전의 Windows가 계속 지원됩니다.  
+- **Windows Server 2008** - 사이트 시스템 서버 및 대부분의 사이트 시스템 역할에 지원되지 않습니다. 지원 중단은 2015년 7월 10일에 [처음 발표](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-server#deprecated-server-operating-systems)되었습니다.
+- **Windows XP Embedded** - 클라이언트 운영 체제로 지원되지 않습니다. 지원 중단은 2015년 7월 10일에 [처음 발표](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-client#deprecated-client-operating-systems)되었습니다. 1702 이전 버전의 Configuration Manager를 사용하는 경우 이 버전의 Windows가 계속 지원됩니다.
 
 
 

@@ -6,19 +6,20 @@ ms.date: 05/02/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 3ae68fa6-8b30-45dd-9d12-50bb67cb4a9d
-caps.latest.revision: "51"
+caps.latest.revision: 
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: fb8b7dd27d890750fb93f02d38c0fd9d6c0feca6
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: 6e0da4f8c42bb0b2275566eba35b1e06b2028c1b
+ms.sourcegitcommit: b13da5ad8ffd58e3b89fa6d7170e1dec3ff130a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="what39s-changed-in-system-center-configuration-manager-from-system-center-2012-configuration-manager"></a>System Center 2012 Configuration Manager에서 변경된 System Center Configuration Manager의 기능
 
@@ -81,7 +82,7 @@ System Center 2012 Configuration Manager의 대역 외 관리는 이 변경 내�
 ##  <a name="bkmk_out"></a> 사용되지 않는 기능  
  [Intel AMT(Active Management Technology) 지원 기반 컴퓨터에 대한 기본 지원](#bkmk_AMT)과 같은 일부 기능은 Configuration Manager 콘솔에서 제거됩니다. 네트워크 액세스 보호와 같은 다른 기능은 완전히 제거됩니다. 또한 Windows Vista, Windows Server 2008, SQL Server 2008 등 이전 Microsoft 제품 중 일부는 더 이상 지원되지 않습니다.  
 
- 사용되지 않는 기능 목록은 [System Center Configuration Manager에서 제거되는 기능과 사용되지 않는 기능](../../../core/plan-design/changes/removed-and-deprecated-features.md)을 참조하세요.  
+ 사용되지 않는 기능 목록은 [System Center Configuration Manager에서 제거되는 항목과 사용되지 않는 항목](../../../core/plan-design/changes/deprecated/removed-and-deprecated.md)을 참조하세요.  
 
  지원되는 제품, 운영 체제 및 구성에 대한 자세한 내용은 [System Center Configuration Manager에서 지원되는 구성](../../../core/plan-design/configs/supported-configurations.md)을 참조하세요.  
 

@@ -7,19 +7,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3343eccf-bf09-41cd-9e68-03e893c7f904
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: aczechowski
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 76dfa18cb7f794be9102bf045cd4212adc7ad56f
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+ms.openlocfilehash: b63386f69ea05a610868de9bc85ff606d4ade73d
+ms.sourcegitcommit: b13da5ad8ffd58e3b89fa6d7170e1dec3ff130a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="introduction-to-system-center-configuration-manager"></a>System Center Configuration Manager 소개
 
@@ -72,7 +73,7 @@ Configuration Manager에 대한 자세한 내용은 다음 항목과 이 항목�
 -   [System Center Configuration Manager의 기본 사항](../../core/understand/fundamentals.md)  
 -   [고유한 랩 환경을 구축하여 System Center Configuration Manager 평가](/sccm/core/get-started/set-up-your-lab)
 -   [System Center Configuration Manager 사용 도움말 찾기](../../core/understand/find-help.md)  
--   [System Center Configuration Manager에서 제거된 기능과 사용되지 않는 기능](../../core/plan-design/changes/removed-and-deprecated-features.md)  
+-   [System Center Configuration Manager에서 제거된 항목과 사용되지 않는 항목](../../core/plan-design/changes/deprecated/removed-and-deprecated.md)  
 
 ##  <a name="BKMK_Console"></a> Configuration Manager 콘솔  
  Configuration Manager를 설치한 후에는 Configuration Manager 콘솔을 사용하여 사이트 및 클라이언트를 구성하고 관리 작업을 실행하고 모니터링합니다. 이 콘솔은 기본 관리 지점으로, 여러 사이트를 관리할 수 있습니다.  

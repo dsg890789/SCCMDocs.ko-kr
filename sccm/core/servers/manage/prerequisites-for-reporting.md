@@ -3,24 +3,25 @@ title: "보고에 대한 필수 조건"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 보고를 사용하는 데 영향을 주는 다양한 종속성을 이해합니다."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 01/29/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 9cc508a5-5023-4833-b776-ae9a6971138f
-caps.latest.revision: "5"
-caps.handback.revision: "0"
+caps.latest.revision: 
+caps.handback.revision: 
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 09f6ebd47070c63d238a74242d4b04b84c95ef49
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 3feafa8a20bedfba381c29a5d7fe80a47517b6ab
+ms.sourcegitcommit: b13da5ad8ffd58e3b89fa6d7170e1dec3ff130a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="prerequisites-for-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 보고에 대한 필수 조건
 
@@ -49,17 +50,19 @@ System Center Configuration Manager의 보고에는 외부 종속성과 제품 �
  다음 표에서는 보고 서비스 지점에서 지원되는 SQL Server 버전을 보여 줍니다.  
 
 |SQL Server 버전|보고 서비스 지점|  
-|------------------------|------------------------------|  
-|누적 업데이트 9 이상이 설치된 SQL Server 2008 SP2<br /><br /> -   Standard<br />-   Enterprise<br />-   Datacenter|예|  
-|누적 업데이트 4 이상이 설치된 SQL Server 2008 SP3<br /><br /> -   Standard<br />-   Enterprise<br />-   Datacenter|예|  
-|누적 업데이트 6 이상이 설치된 SQL Server 2008 R2 SP1<br /><br /> -   Standard<br />-   Enterprise<br />-   Datacenter|예|  
-|SQL Server 2008 R2 SP2<br /><br /> -   Standard<br />-   Enterprise<br />-   Datacenter|예|  
-|누적 업데이트 4 이상이 설치된 SQL Server Express 2008 R2 SP1|지원 안 됨|  
-|SQL Server Express 2008 R2 SP2|지원 안 됨|  
-|누적 업데이트 2 이상이 설치된 SQL Server 2012<br /><br /> -   Standard<br />-   Enterprise|예|  
-|SP1 및 최소 누적 업데이트가 설치되지 않은 SQL Server 2012<br /><br /> -   Standard<br />-   Enterprise|예|  
-|SQL Server 2014<br /><br /> -   Standard<br />-   Enterprise|예|
+|------------------------|------------------------------|
+|누적 업데이트 2 이상이 설치된 SQL Server 2017<br /><br /> -   Standard<br />-   Enterprise|예, Configuration Manager 버전 1710부터 시작|  
+|SQL Server 2016 SP1<br /><br /> -   Standard<br />-   Enterprise|예| 
 |SQL Server 2016<br /><br /> -   Standard<br />-   Enterprise|예|
-|SQL Server 2016 SP1<br /><br /> -   Standard<br />-   Enterprise|예|
+|SQL Server 2014 with SP2<br /><br /> -   Standard<br />-   Enterprise|예|
+|SQL Server 2014 with SP1<br /><br /> -   Standard<br />-   Enterprise|예|
+|SQL Server 2012 with SP4 <br /><br /> -   Standard<br />-   Enterprise|예|  
+|SQL Server 2012 with SP3 <br /><br /> -   Standard<br />-   Enterprise|예|  
+|SQL Server 2008 R2 with SP3<br /><br /> -   Standard<br />-   Enterprise<br />-   Datacenter|예, 1702 이전의 Configuration Manager 지원 버전의 경우입니다.|  
+|SQL Server Express 2008 R2 with SP3|지원 안 됨| 
+
+
+
+
 ## <a name="next-steps"></a>다음 단계
 [보고 작업 및 유지 관리](operations-and-maintenance-for-reporting.md)

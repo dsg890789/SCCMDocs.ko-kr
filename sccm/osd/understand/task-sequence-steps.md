@@ -17,11 +17,11 @@ caps.handback.revision:
 author: aczechowski
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 158817547d40f09fb8bd30ebedd5aea6420a8571
-ms.sourcegitcommit: aee9ac45c15f27d8cf827890edcae94c03f5fd5e
+ms.openlocfilehash: 5320d7747f7e2c6164da8c1801e631b749935d6d
+ms.sourcegitcommit: b13da5ad8ffd58e3b89fa6d7170e1dec3ff130a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="task-sequence-steps-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업 순서 단계
 
@@ -1313,7 +1313,7 @@ Configuration Manager 버전 1710부터 다른 작업 순서를 실행하는 새
  **찾아보기**를 클릭한 다음, 이 단계에서 사용할 구성 관리자 클라이언트 설치 패키지를 선택합니다.  
 
  **사용 가능한 경우 사전 프로덕션 클라이언트 패키지 사용**  
- 사용할 수 있는 사전 프로덕션 클라이언트 패키지가 있는 경우, 작업 순서는 프로덕션 클라이언트 패키지 대신 이 패키지를 사용합니다. 사전 프로덕션 클라이언트는 프로덕션 환경에서 테스트하기 위한 최신 버전입니다. **찾아보기**를 클릭한 다음, 이 단계에서 사용할 사전 프로덕션 클라이언트 설치 패키지를 선택합니다.  
+ 사용할 수 있는 사전 프로덕션 클라이언트 패키지가 있고 컴퓨터가 파일럿 컬렉션의 구성원인 경우, 작업 순서는 프로덕션 클라이언트 패키지 대신 이 패키지를 사용합니다. 사전 프로덕션 클라이언트는 프로덕션 환경에서 테스트하기 위한 최신 버전입니다. **찾아보기**를 클릭한 다음, 이 단계에서 사용할 사전 프로덕션 클라이언트 설치 패키지를 선택합니다.  
 
  **설치 속성**  
  사이트 할당 및 기본 구성은 작업 순서 동작에 의해 자동으로 지정됩니다. 이 필드를 사용하여 클라이언트를 설치할 때 사용할 모든 추가 설치 속성을 지정할 수 있습니다. 여러 설치 속성을 입력하려면 공백으로 구분합니다.  
