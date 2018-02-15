@@ -3,26 +3,27 @@ title: "소프트웨어 업데이트에 대한 필수 조건"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager의 소프트웨어 업데이트에 대한 필수 조건에 대해 알아봅니다."
 keywords: 
-author: dougeby
-ms.author: dougeby
-manager: angrobe
-ms.date: 10/06/2016
+author: mestew
+ms.author: mstewart
+manager: dougeby
+ms.date: 02/02/2018
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology: configmgr-sum
+ms.technology:
+- configmgr-sum
 ms.assetid: fdf05118-162a-411e-b72e-386b9dc9a5e1
-ms.openlocfilehash: 905ecc023dd181a8d4801860898b05aff5e4e07f
-ms.sourcegitcommit: 986fc2d54f7c5fa965fd4df42f4db4ecce6b79cb
+ms.openlocfilehash: 1907ff5bf6b1146b967e64bd381915ac863b3e55
+ms.sourcegitcommit: 389c4e5b4e9953b74c13b1689195f99c526fa737
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="prerequisites-for-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 업데이트에 대한 필수 조건
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-이 항목에서는 System Center Configuration Manager의 소프트웨어 업데이트에 대한 필수 조건을 나열합니다. 각 필수 구성 요소에 대해 외부 종속성과 내부 종속성이 별도의 표에 표시됩니다.  
+이 목록에서는 System Center Configuration Manager의 소프트웨어 업데이트에 대한 필수 조건을 나열합니다. 각 필수 구성 요소에 대해 외부 종속성과 내부 종속성이 별도의 표에 표시됩니다.  
 
 ## <a name="software-update-dependencies-external-to-configuration-manager"></a>Configuration Manager 외부의 소프트웨어 업데이트 종속성  
  다음 섹션에는 소프트웨어 업데이트에 대한 외부 종속성이 나열되어 있습니다.  
@@ -31,10 +32,10 @@ ms.lasthandoff: 11/17/2017
  IIS(인터넷 정보 서비스)는 소프트웨어 업데이트 지점, 관리 지점, 배포 지점의 실행을 위해 사이트 시스템 서버에 있어야 합니다. 자세한 내용은 [사이트 시스템 역할에 대한 필수 조건](../../core/plan-design/configs/site-and-site-system-prerequisites.md)을 참조하세요.  
 
 ### <a name="windows-server-update-services-wsus"></a>WSUS(Windows Server Update Services)  
- WSUS는 클라이언트에서 소프트웨어 업데이트 동기화 및 소프트웨어 업데이트 호환성 평가 검사를 수행하는 데 필요합니다. WSUS 서버는 소프트웨어 업데이트 지점 사이트 시스템 역할을 만들기 전에 설치해야 합니다. 소프트웨어 업데이트 지점에 대해 다음 버전의 WSUS가 지원됩니다.  
+ WSUS는 클라이언트에서 소프트웨어 업데이트 동기화 및 소프트웨어 업데이트 적용 가능 여부 검사를 수행하는 데 필요합니다. WSUS 서버는 소프트웨어 업데이트 지점 역할을 만들기 전에 설치해야 합니다. 소프트웨어 업데이트 지점에 대해 다음 버전의 WSUS가 지원됩니다.  
 
--   WSUS 4(Windows Server 2012 및 Windows Server 2012 R2의 역할)  
-
+-   WSUS 10.0(Windows Server 2016의 역할)
+-   WSUS 6.2 및 6.3(Windows Server 2012 및 Windows Server 2012 R2의 역할)  
 -   WSUS 3.2(Windows Server 2008 R2의 역할)  
 
  한 사이트에 여러 소프트웨어 업데이트 지점이 있는 경우 모두 동일한 버전의 WSUS를 실행해야 합니다.  
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/17/2017
 >  WSUS 관리 콘솔을 사용하여 WSUS 설정을 구성하지 마세요. Configuration Manager에서는 소프트웨어 업데이트 지점에서 실행 중인 WSUS에 연결하여 적합한 설정을 구성합니다.  
 
 ### <a name="windows-update-agent-wua"></a>WUA(Windows Update 에이전트)  
- 클라이언트가 WSUS 서버에 연결하여 호환성을 검사해야 할 소프트웨어 업데이트의 목록을 검색하려면 해당 클라이언트에 WUA 클라이언트가 필요합니다.  
+ WSUS 서버에 연결하려면 클라이언트에 WUA 클라이언트가 필요합니다. WUA는 호환성을 검사해야 하는 소프트웨어 업데이트의 목록을 검색합니다.  
 
  Configuration Manager를 설치하면 최신 버전의 WUA가 다운로드됩니다. 그런 다음 Configuration Manager 클라이언트가 설치될 때 필요한 경우 WUA가 업그레이드됩니다. 그러나 이 설치가 실패하면 다른 방법을 사용하여 WUA를 업그레이드해야 합니다.  
 
@@ -73,17 +74,17 @@ ms.lasthandoff: 11/17/2017
 ### <a name="client-settings-for-software-updates"></a>소프트웨어 업데이트를 위한 클라이언트 설정  
  기본적으로 소프트웨어 업데이트는 클라이언트에 대해 사용하도록 설정됩니다. 그러나 클라이언트에서 소프트웨어 업데이트에 대한 호환성을 평가하는 방법과 시점을 제어하고 소프트웨어 업데이트가 설치되는 방식을 제어하는 다른 설정도 있습니다.  
 
- 자세한 내용은 다음을 참조하십시오.  
+ 자세한 내용은 다음을 참조하세요.  
 
 -   [소프트웨어 업데이트를 위한 클라이언트 설정](../get-started/manage-settings-for-software-updates.md#BKMK_ClientSettings)   
 
--   [소프트웨어 업데이트 클라이언트 설정](../../core/clients/deploy/about-client-settings.md#software-updates) 항목  
+-   [소프트웨어 업데이트 클라이언트 설정](../../core/clients/deploy/about-client-settings.md#software-updates) 아티클  
 
 ### <a name="reporting-services-point"></a>보고 서비스 지점  
- 보고 서비스 지점 사이트 시스템 역할에서는 소프트웨어 업데이트에 대한 보고서를 표시할 수 있습니다. 이 역할은 선택 사항이지만 설치하는 것이 좋습니다. 보고 서비스 지점을 만드는 방법에 대한 자세한 내용은 [보고 구성](../../core/servers/manage/configuring-reporting.md)을 참조하세요.  
+ 보고 서비스 지점 사이트 시스템 역할에서는 소프트웨어 업데이트에 대한 보고서를 표시할 수 있습니다. 이 역할은 선택 사항이지만 설치하는 것이 좋습니다. 보고 서비스 지점을 만드는 방법에 대한 자세한 내용은 [보고 구성]을 참조하세요.  
 
 ##  <a name="BKMK_RecoverUpgrades"></a> KB 3095113을 설치하기 전에 업그레이드 범주 동기화에서 복구  
- **업그레이드** 분류를 동기화하기 전에 소프트웨어 업데이트 지점 및 사이트 서버에 WSUS용 [핫픽스 3095113](https://support.microsoft.com/kb/3095113)을 설치해야 합니다. **업그레이드** 분류를 사용하도록 설정할 때 핫픽스가 설치되어 있지 않으면 연결된 패키지를 제대로 다운로드하여 배포할 수 없는 경우에도 WSUS에서 Windows 10 빌드 1511 기능 업그레이드를 표시합니다. 먼저 [핫픽스 3095113](https://support.microsoft.com/kb/3095113)을 설치하지 않고 업그레이드를 동기화하는 경우 WSUS 데이터베이스(SUSDB) 업그레이드가 사용할 수 없는 데이터로 채워집니다. 이러한 데이터는 업그레이드를 제대로 배포하기 위해 지워야 합니다.  이 문제를 해결하려면 다음 절차를 따르세요.  
+ **업그레이드** 분류를 동기화하기 전에 소프트웨어 업데이트 지점 및 사이트 서버에 WSUS용 [핫픽스 3095113](https://support.microsoft.com/kb/3095113)을 설치해야 합니다. **업그레이드** 분류를 사용하도록 설정할 때 핫픽스가 설치되어 있지 않으면 연결된 패키지를 제대로 다운로드하여 배포할 수 없는 경우에도 WSUS에서 Windows 10 빌드 1511 기능 업그레이드를 표시합니다. 먼저 [핫픽스 3095113](https://support.microsoft.com/kb/3095113)을 설치하지 않고 업그레이드를 동기화하는 경우 WSUS 데이터베이스(SUSDB) 업그레이드가 사용할 수 없는 데이터로 채워집니다. 이러한 데이터는 업그레이드를 제대로 배포하기 위해 지워야 합니다. 이 문제를 해결하려면 다음 절차를 따르세요.  
 
 #### <a name="to-recover-from-synchronizing-the-upgrades-classification-before-you-install-kb-3095113"></a>KB 3095113을 설치하기 전에 업그레이드 분류 동기화에서 복구하려면  
 

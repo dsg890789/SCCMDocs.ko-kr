@@ -3,29 +3,30 @@ title: Endpoint Protection
 titleSuffix: Configuration Manager
 description: "Configuration Manager 계층 구조에서 클라이언트 컴퓨터에 대한 맬웨어 방지 정책 및 Windows 방화벽 보안을 관리하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 02/6/2017
+ms.date: 02/09/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 76c90f64-d729-456b-8304-01852cd66fb6
-caps.latest.revision: "11"
-author: NathBarn
-ms.author: nathbarn
-manager: angrobe
-ms.openlocfilehash: 308c69f4631a1bcc28f7d8460a4aa3abb02f0650
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+caps.latest.revision: 
+author: mestew
+ms.author: mstewart
+manager: dougeby
+ms.openlocfilehash: 3f8d0d7934a539729793cd0307d6fa5d3e31bf3a
+ms.sourcegitcommit: fbde417e3c3002898bd216a7e110e725ae269893
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="endpoint-protection"></a>Endpoint Protection
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 Endpoint Protection을 사용하면 Configuration Manager 계층 구조의 클라이언트 컴퓨터에 대한 맬웨어 방지 정책 및 Windows 방화벽 보안을 관리할 수 있습니다.  
+Endpoint Protection은 Configuration Manager 계층 구조에서 클라이언트 컴퓨터에 대한 맬웨어 방지 정책 및 Windows 방화벽 보안을 관리합니다.  
 
 > [!IMPORTANT]  
 >  Configuration Manager 계층 구조의 클라이언트를 관리하려면 Endpoint Protection 사용을 허가받아야 합니다.  
@@ -34,7 +35,7 @@ System Center Configuration Manager의 Endpoint Protection을 사용하면 Confi
 
 -   선택한 컴퓨터 그룹에 대해 맬웨어 방지 정책 및 Windows 방화벽 설정을 구성하고 Windows Defender Advanced Threat Protection을 관리합니다.  
 -   Configuration Manager 소프트웨어 업데이트를 통해 최신 맬웨어 방지 정의 파일을 다운로드하여 클라이언트 컴퓨터를 최신 상태로 유지  
--   메일 알림을 보내거나, 콘솔 내 모니터링을 사용하거나, 보고서를 확인하여 클라이언트 컴퓨터에서 맬웨어가 검색되면 관리자에게 알림  
+-   이메일 알림을 보내고, 콘솔 내 모니터링을 사용하고, 보고서를 봅니다. 이러한 동작은 클라이언트 컴퓨터에서 맬웨어가 검색될 때 관리자에게 알려줍니다.  
 
 Windows 10 및 Windows Server 2016 컴퓨터부터, Windows Defender가 이미 설치되어 있습니다. 이러한 운영 체제의 경우 Configuration Manager 클라이언트를 설치할 때 Windows Defender용 관리 클라이언트가 설치됩니다. Windows 8.1 이하 버전의 컴퓨터에서는 Configuration Manager 클라이언트와 함께 Endpoint Protection 클라이언트가 설치됩니다. indows Defender 및 Endpoint Protection 클라이언트에는 다음과 같은 기능이 있습니다.  
 
@@ -42,18 +43,18 @@ Windows 10 및 Windows Server 2016 컴퓨터부터, Windows Defender가 이미 �
 -   루트킷 검색 및 수정  
 -   중요 취약성 평가와 정의 및 엔진 자동 업데이트  
 -   네트워크 검사 시스템을 통해 네트워크 취약성 검색  
--   맬웨어를 Microsoft에 보고하도록 클라우드 보호 서비스와 통합 이 서비스에 가입하면 컴퓨터에서 식별되지 않은 맬웨어가 검색될 때 Endpoint Protection 클라이언트 또는 Windows Defender가 맬웨어 보호 센터에서 최신 정의를 다운로드할 수 있습니다.  
+-   맬웨어를 Microsoft에 보고하도록 클라우드 보호 서비스와 통합 이 서비스에 가입하면 컴퓨터에서 식별되지 않은 맬웨어가 검색될 때 Endpoint Protection 클라이언트 또는 Windows Defender가 맬웨어 보호 센터에서 최신 정의를 다운로드합니다.  
 
 > [!NOTE]  
 >  Hyper-V를 실행하는 서버와 지원되는 운영 체제가 있는 게스트 가상 컴퓨터에 Endpoint Protection 클라이언트를 설치할 수 있습니다. 과도한 CPU 사용을 방지하기 위해 Endpoint Protection 작업에는 보호 서비스가 동시에 실행되지 않도록 기본 제공된 임의 지연이 있습니다.  
 
- 또한 Configuration Manager의 Endpoint Protection을 사용하면 Configuration Manager 콘솔에서 Windows 방화벽 설정을 관리할 수 있습니다.  
+ 또한 Configuration Manager 콘솔의 Endpoint Protection을 사용하면 Windows 방화벽 설정을 관리할 수 있습니다.  
 
  [예제 시나리오: System Center Endpoint Protection을 사용하여 System Center Configuration Manager에서 맬웨어로부터 컴퓨터 보호](scenarios-endpoint-protection.md) Endpoint Protection 및 Windows 방화벽  
 
 
 ## <a name="managing-malware-with-endpoint-protection"></a>Endpoint Protection을 사용하여 맬웨어 관리  
- Configuration Manager의 Endpoint Protection을 사용하면 Endpoint Protection 클라이언트 구성 설정이 포함된 맬웨어 방지 정책을 만들 수 있습니다. 그런 다음 클라이언트 컴퓨터에 이러한 맬웨어 방지 정책을 배포하고 **모니터링** 작업 영역의 **보안** 아래 **Endpoint Protection 상태** 노드에서 모니터링하거나 Configuration Manager 보고서를 통해 모니터링할 수 있습니다.  
+ Configuration Manager의 Endpoint Protection을 사용하면 Endpoint Protection 클라이언트 구성 설정이 포함된 맬웨어 방지 정책을 만들 수 있습니다. 이러한 맬웨어 방지 정책은 클라이언트 컴퓨터에 배포합니다. 그런 다음, **모니터링** 작업 영역의 **보안** 아래에서 **Endpoint Protection 상태** 노드의 규정 준수를 모니터링합니다. 또한 **보고** 노드의 Endpoint Protection 보고서도 사용합니다.  
 
  추가 정보:  
 
@@ -77,12 +78,12 @@ Windows 10 및 Windows Server 2016 컴퓨터부터, Windows Defender가 이미 �
 >  Endpoint Protection은 Windows 방화벽 관리만 지원합니다.  
 
 
- Endpoint Protection에 대한 Windows 방화벽 정책을 만들어 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 Endpoint Protection에 대한 Windows 방화벽 정책을 만들어 배포하는 방법](create-windows-firewall-policies.md)을 참조하세요.  
+ 자세한 내용은 [Endpoint Protection에 대한 Windows 방화벽 정책을 만들어 배포하는 방법](create-windows-firewall-policies.md)을 참조하세요.  
 
 
 ## <a name="windows-defender-advanced-threat-protection"></a>Windows Defender Advanced Threat Protection
 
-Configuration Manager의 1606 버전부터(현재 분기) Endpoint Protection은 Windows Defender ATP(Advanced Threat Protection)를 관리하고 모니터링할 수 있습니다. Windows Defender ATP는 엔터프라이즈에서 네트워크에 대한 고급 공격을 검색하고 조사하고 대응할 수 있도록 하는 새로운 서비스입니다. [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md)을 참조하세요.
+Endpoint Protection은 Windows Defender ATP(Advanced Threat Protection)를 관리하고 모니터링합니다. Windows Defender ATP 서비스는 엔터프라이즈에서 회사 네트워크에 대한 고급 공격을 검색하고 조사하고 대응할 수 있게 해줍니다. 자세한 내용은 [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md)을 참조하세요.
 
 ## <a name="endpoint-protection-workflow"></a>Endpoint Protection 워크플로  
  다음 다이어그램을 사용하여 Configuration Manager 계층 구조에서 Endpoint Protection을 구현하는 워크플로를 이해합니다.   
@@ -110,13 +111,12 @@ Mac 컴퓨터와 Linux 서버에 대한 Endpoint Protection 클라이언트 소�
 3. **System Center Endpoint Protection(현재 분기)** 제품을 필터링합니다.
 4. **다운로드** 링크를 클릭합니다.
 5. 
-              **Continue(계속)**를 클릭합니다. **Linux OS 및 Macintosh OS 다국어 32/64 비트용 System Center Endpoint Protection(현재 분기 - 버전 1606) 1,579MB ISO** 파일을 포함하여 여러 개의 파일이 표시됩니다.
-6. 화살표 아이콘을 클릭하여 파일을 다운로드합니다. 파일 이름은 **SW_DVD5_Sys_Ctr_Endpnt_Prtctn_1606_MultiLang_-2_EptProt_Lin_Mac_MLF_X21-44498.ISO**입니다.
+              **Continue(계속)**를 클릭합니다. **Linux OS 및 Macintosh OS 다국어 32/64 비트용 System Center Endpoint Protection(현재 분기 - 버전 1606) 1,878MB ISO** 파일을 포함하여 여러 개의 파일이 표시됩니다.
+6. 파일을 다운로드하려면 화살표 아이콘을 클릭합니다. 파일 이름은 **SW_DVD5_Sys_Ctr_Endpnt_Prtctn_1606_MultiLang_-3_EptProt_Lin_Mac_MLF_X21-67050.ISO**입니다.
 
-2017년 7월 업데이트(X21-44498)에 포함된 항목은 다음과 같습니다.
+2018년 1월 업데이트(X21-67050)에 포함된 버전은 다음과 같습니다.
 
-- Mac용 System Center Endpoint Protection 4.5.28.1(업데이트된 설치 인증서)
-- Linux용 System Center Endpoint Protection 4.5.18.0(새 언어 팩)
-- Linux용 System Center Endpoint Protection 설명서(수정된 실시간 보호 지침)
+- Mac용 System Center Endpoint Protection 4.5.32.0(macOS 10.13 High Sierra에 대한 지원)
+- Linux용 System Center Endpoint Protection 4.5.20.0 
 
- Linux 및 Mac 컴퓨터용 Endpoint Protection 클라이언트를 설치 및 관리하는 방법에 대한 자세한 내용은 **설명서** 폴더에 있는 해당 제품의 설명서를 참조하세요.
+ Linux 및 Mac 컴퓨터용 Endpoint Protection 클라이언트를 설치 및 관리하는 방법에 대한 자세한 내용은 해당 제품의 설명서를 참조하세요. 이 제품 설명서는 .ISO 파일의 **설명서** 폴더에 있습니다.

@@ -3,7 +3,7 @@ title: "하이브리드 MDM의 새로운 기능"
 titleSuffix: Configuration Manager
 description: "Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 장치 관리 기능에 대해 알아봅니다."
 ms.custom: na
-ms.date: 01/04/2018
+ms.date: 02/06/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ ms.assetid: 7b127cee-61f1-4681-9760-caebed36ddf5
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: aca30a199e38b2d4ed38a458694d98010b5e2496
-ms.sourcegitcommit: b13da5ad8ffd58e3b89fa6d7170e1dec3ff130a4
+ms.openlocfilehash: c724d9eafde6aa9abc0d3f9bfa867418046b2ecb
+ms.sourcegitcommit: 389c4e5b4e9953b74c13b1689195f99c526fa737
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 장치 관리의 새로운 기능
 
@@ -46,6 +46,16 @@ ms.lasthandoff: 02/01/2018
 ## <a name="january-2018"></a>2018년 1월
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+- **Android for Work용 회사 포털 앱 승인** <!--1797090 -->    
+  조직에서 Android for Work를 사용하는 경우 관리되는 Google Play 스토어에서 자동 업데이트를 계속 받을 수 있도록 Android용 회사 포털 앱을 수동으로 승인해야 합니다.
+
+- **Intune에 대한 조건부 액세스 정책은 Azure Portal에서만 사용할 수 있습니다.**  <!-- 1737088 1634311 -->    
+  이 릴리스부터 [Azure Portal](https://portal.azure.com)의 **Azure Active Directory** > **조건부 액세스**에서 조건부 액세스 정책을 구성하고 관리해야 합니다. 편의를 위해 Azure Portal의 **Intune** > **조건부 액세스**에서 이 블레이드에 액세스할 수도 있습니다.
+
+- **호환성 이메일에 대한 업데이트** <!--1637547 -->    
+  비호환 장치를 보고하는 이메일이 전송되는 경우 비호환 장치에 대한 세부 정보가 포함됩니다. 
+
 
 - **Android 장치의 "해결" 작업을 위한 새로운 기능** <!--1583480-->    
   Android용 회사 포털 앱은 **장치 설정 업데이트**에 대한 "해결" 작업을 확장하여 [장치 암호화 문제](https://docs.microsoft.com/intune-user-help/encrypt-your-device-android)를 해결합니다.
