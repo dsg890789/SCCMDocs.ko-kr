@@ -109,35 +109,16 @@
 
 <!-- Only show the current plus three, i.e., four total) -->
 ##   [기술 미리 보기](get-started/technical-preview.md)
+###  [1802의 기능](get-started/capabilities-in-technical-preview-1802.md)
 ###  [1801의 기능](get-started/capabilities-in-technical-preview-1801.md)
 ###  [1712의 기능](get-started/capabilities-in-technical-preview-1712.md)
 ###  [1711의 기능](get-started/capabilities-in-technical-preview-1711.md)
-###  [1710의 기능](get-started/capabilities-in-technical-preview-1710.md)
 
 <!-- No longer in support
+###  [Capabilities in 1710](get-started/capabilities-in-technical-preview-1710.md)
 ###  [Capabilities in 1709](get-started/capabilities-in-technical-preview-1709.md)
 ###  [Capabilities in 1708](get-started/capabilities-in-technical-preview-1708.md)
 ###  [Capabilities in 1707](get-started/capabilities-in-technical-preview-1707.md)
-###  [Capabilities in 1706](get-started/capabilities-in-technical-preview-1706.md)
-###  [Capabilities in 1705](get-started/capabilities-in-technical-preview-1705.md)
-###  [Capabilities in 1704](get-started/capabilities-in-technical-preview-1704.md)
-###  [Capabilities in 1703](get-started/capabilities-in-technical-preview-1703.md)
-###  [Capabilities in 1702](get-started/capabilities-in-technical-preview-1702.md)
-###  [Capabilities in 1701](get-started/capabilities-in-technical-preview-1701.md)
-###  [Capabilities in 1612](get-started/capabilities-in-technical-preview-1612.md)
-###  [Capabilities in 1611](get-started/capabilities-in-technical-preview-1611.md)
-###  [Capabilities in 1610](get-started/capabilities-in-technical-preview-1610.md)
-###  [Capabilities in 1609](get-started/capabilities-in-technical-preview-1609.md)
-###  [Capabilities in 1608](get-started/capabilities-in-technical-preview-1608.md)
-###  [Capabilities in 1607](get-started/capabilities-in-technical-preview-1607.md)
-###  [Capabilities in 1606](get-started/capabilities-in-technical-preview-1606.md)
-###  [Capabilities in 1605](get-started/capabilities-in-technical-preview-1605.md)
-###  [Capabilities in 1604](get-started/capabilities-in-technical-preview-1604.md)
-###  [Capabilities in 1603](get-started/capabilities-in-technical-preview-1603.md)
-###  [Capabilities in 1602](get-started/capabilities-in-technical-preview-1602.md)
-###  [Capabilities in 1601](get-started/capabilities-in-technical-preview-1601.md)
-###  [Capabilities in 1512](get-started/capabilities-in-technical-preview-1512.md)
-###  [Capabilities in 1511](get-started/capabilities-in-technical-preview-1511.md)
 -->
 
 ##   [계층 구조 간에 데이터 마이그레이션](migration/migrate-data-between-hierarchies.md)
@@ -357,6 +338,8 @@
 ###  [Asset Intelligence에 대한 보안 및 개인 정보](clients/manage/asset-intelligence/security-and-privacy-for-asset-intelligence.md)
 ###  [Asset Intelligence에 대한 유효성 검사 상태 전환 예제](clients/manage/asset-intelligence/example-validation-state-transitions-for-asset-intelligence.md)
 ###  [Asset Intelligence 일반 라이선스 가져오기 파일 예제](clients/manage/asset-intelligence/example-asset-intelligence-general-license-import.md)
+
+### [제품 수명 주기 대시보드 사용](clients/manage/asset-intelligence/product-lifecycle-dashboard.md)
 
 ##   원격 제어
 ###  [원격 제어 소개](clients/manage/remote-control/introduction-to-remote-control.md)
