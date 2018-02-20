@@ -7,20 +7,21 @@ ms.date: 8/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0cf4bacb-6b6d-4d4f-8640-b13fe15873de
-caps.latest.revision: "8"
-caps.handback.revision: "0"
+caps.latest.revision: 
+caps.handback.revision: 
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 0cc1915a73ed55403eca27021b77aab1fd1ddb03
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: 91e86bd578403d17ec7e4cc9dc6284c51a57053e
+ms.sourcegitcommit: 37e990d191028160486dbca286d2ea945bd5c8c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="support-for-windows-features-and-networks-in-system-center-configuration-manager"></a>System Center Configuration Manager의 Windows 기능 및 네트워크 지원
 
@@ -66,6 +67,7 @@ BranchCache에 대한 요구 사항이 충족되면 이 기능을 통해 원격 
 |Windows Server 2008 R2|기본적으로 지원됨|  
 |Windows Server 2012|기본적으로 지원됨|  
 |Windows Server 2012 R2|기본적으로 지원됨|  
+|Windows Server 2016|기본적으로 지원됨|  
 
  BranchCache에 대한 자세한 내용은 Windows Server 설명서에서 [Windows용 BranchCache](http://go.microsoft.com/fwlink/p/?LinkId=177945) 를 참조하세요.  
 
