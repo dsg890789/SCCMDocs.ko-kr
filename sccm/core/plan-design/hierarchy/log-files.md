@@ -3,24 +3,25 @@ title: "문제 해결을 위한 로그 파일"
 titleSuffix: Configuration Manager
 description: "로그 파일을 사용하여 System Center Configuration Manager 계층 구조의 문제를 해결할 수 있습니다."
 ms.custom: na
-ms.date: 7/03/2017
+ms.date: 02/14/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c1ff371e-b0ad-4048-aeda-02a9ff08889e
-caps.latest.revision: "9"
-caps.handback.revision: "0"
+caps.latest.revision: 
+caps.handback.revision: 
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: c310e23b543e8767a393ca5bf87a224a9269e359
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+manager: dougeby
+ms.openlocfilehash: b0f15b0c7cf983234f41e3f202be7d46ce4954e2
+ms.sourcegitcommit: fbd4a9d2fa8ed4ddd3a0fecc4a2ec4fc0ccc3d0c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="log-files-in-system-center-configuration-manager"></a>System Center Configuration Manager의 로그 파일
 
@@ -50,7 +51,9 @@ System Center Configuration Manager에서는 클라이언트 및 사이트 서�
 
     -   [사이트 서버 및 사이트 시스템 서버 로그](#BKMK_SiteSiteServerLog)  
 
-    -   [사이트 서버 설치 로그 파일](#BKMK_SiteInstallLog)  
+    -   [사이트 서버 설치 로그 파일](#BKMK_SiteInstallLog) 
+
+    -   [데이터 웨어하우스 서비스 지점 로그 파일](#BKMK_DataWarehouse)
 
     -   [대체 상태 지점 로그 파일](#BKMK_FSPLog)  
 
@@ -73,6 +76,8 @@ System Center Configuration Manager에서는 클라이언트 및 사이트 서�
     -   [클라우드 관리 게이트웨이](#cloud-management-gateway)
 
     -   [준수 설정 및 회사 리소스 액세스](#BKMK_CompSettingsLog)  
+
+    -   [조건부 액세스](#BKMK_CA)
 
     -   [Configuration Manager 콘솔](#BKMK_ConsoleLog)  
 
@@ -115,7 +120,7 @@ System Center Configuration Manager에서는 클라이언트 및 사이트 서�
     -   [WSUS 서버](#BKMK_WSUSLog)  
 
 ##  <a name="BKMK_AboutLogs"></a> Configuration Manager 로그 파일 정보  
- Configuration Manager의 프로세스 대부분은 해당 프로세스 전용 로그 파일에 작업 정보를 기록합니다. 로그 파일은 **.log** 또는 **.lo_** 파일 확장명으로 식별됩니다. Configuration Manager는 로그가 최대 크기에 도달할 때까지 .log 파일에 내용을 기록합니다. 로그가 가득 차면 .log 파일이 이름은 같지만 확장명은 .lo_인 파일에 복사되고 프로세스 또는 구성 요소는 계속 .log 파일에 기록합니다. .log 파일이 다시 최대 크기에 도달하면 .lo_ 파일을 덮어쓰게 되고 프로세스가 반복됩니다. 일부 구성 요소는 날짜 및 시간 스탬프를 로그 파일 이름에 추가하고 .log 확장명을 유지하여 로그 파일 기록을 설정합니다. Linux 및 UNIX용 클라이언트에는 .lo_ 파일의 사용 및 최대 크기가 적용되지 않습니다. Linux 및 UNIX용 클라이언트에서 로그 파일을 사용하는 방법에 대한 자세한 내용은 이 항목에서 [Linux 및 UNIX용 클라이언트의 로그 파일 관리](#BKMK_ManageLinuxLogs)를 참조하세요.  
+ Configuration Manager의 프로세스 대부분은 해당 프로세스 전용 로그 파일에 작업 정보를 기록합니다. 로그 파일은 **.log** 또는 **.lo_** 파일 확장명으로 식별됩니다. Configuration Manager는 로그가 최대 크기에 도달할 때까지 .log 파일에 내용을 기록합니다. 로그가 가득 차면 .log 파일이 이름은 같지만 확장명은 .lo_인 파일에 복사되고 프로세스 또는 구성 요소는 계속 .log 파일에 기록합니다. .log 파일이 다시 최대 크기에 도달하면 .lo_ 파일을 덮어쓰게 되고 프로세스가 반복됩니다. 일부 구성 요소는 날짜 및 시간 스탬프를 로그 파일 이름에 추가하고 .log 확장명을 유지하여 로그 파일 기록을 설정합니다. Linux 및 UNIX용 클라이언트에는 .lo_ 파일의 사용 및 최대 크기가 적용되지 않습니다. Linux 및 UNIX용 클라이언트에서 로그 파일을 사용하는 방법에 대한 자세한 내용은 이 문서에서 [Linux 및 UNIX용 클라이언트의 로그 파일 관리](#BKMK_ManageLinuxLogs)를 참조하세요.  
 
  로그를 보려면 Configuration Manager 로그 뷰어 도구인 CMTrace를 사용하면 됩니다. 이 도구는 Configuration Manager 원본 미디어의 \\SMSSetup\\Tools 폴더에 있습니다. CMTrace 도구는 소프트웨어 라이브러리에 추가된 모든 부팅 이미지에 추가됩니다.  
 
@@ -147,7 +152,7 @@ Configuration Manager 로그 파일은 로그 파일을 만드는 프로세스 �
 |로그 이름|설명|  
 |--------------|-----------------|  
 |CAS.log|콘텐츠 액세스 서비스입니다. 클라이언트의 로컬 패키지 캐시를 유지 관리합니다.|  
-|Ccm32BitLauncher.log|"32비트로 실행"으로 표시된 클라이언트에서 응용 프로그램을 시작하는 작업을 기록합니다.|  
+|Ccm32BitLauncher.log|“32비트로 실행”으로 표시된 클라이언트에서 응용 프로그램을 시작하는 작업을 기록합니다.|  
 |CcmEval.log|Configuration Manager 클라이언트 상태 평가 활동 및 Configuration Manager 클라이언트에 필요한 구성 요소에 관한 세부 정보를 기록합니다.|  
 |CcmEvalTask.log|평가 예약 작업에 의해 시작된 Configuration Manager 클라이언트 상태 평가 활동을 기록합니다.|  
 |CcmExec.log|클라이언트 및 SMS 에이전트 호스트 서비스의 활동을 기록합니다. 이 로그 파일에는 절전 모드 해제 프록시를 사용하거나 사용하지 않도록 설정하는 작업에 대한 정보도 포함됩니다.|  
@@ -361,6 +366,15 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |SMS_BOOTSTRAP.log|시작한 보조 사이트 설치 프로세스의 진행률 정보를 기록합니다. 실제 설치 프로세스에 대한 세부 정보는 ConfigMgrSetup.log에 포함되어 있습니다.|사이트 서버|  
 |smstsvc.log|연결을 시작하는 서버의 컴퓨터 계정을 통해 네트워크 연결과 사이트 간 사용 권한을 테스트하는 데 사용되는 Windows 서비스의 설치, 사용 및 제거에 대한 정보를 기록합니다.|사이트 서버 및 사이트 시스템 서버|  
 
+###  <a name="BKMK_DataWarehouse"></a>데이터 웨어하우스 서비스 지점 로그 파일  
+ 다음 표에는 데이터 웨어하우스 서비스 지점과 관련된 정보가 포함된 로그 파일이 나와 있습니다.  
+
+|로그 이름|설명|로그 파일이 있는 컴퓨터|  
+|--------------|-----------------|----------------------------|  
+|DWSSMSI.log|데이터 웨어하우스 서비스 지점 설치 시 생성된 메시지를 기록합니다.|사이트 시스템 서버|  
+|DWSSSetup.log|데이터 웨어하우스 서비스 지점 설치 시 생성된 메시지를 기록합니다.|사이트 시스템 서버|  
+|Microsoft.ConfigMgrDataWarehouse.log|사이트 데이터베이스와 데이터 웨어하우스 데이터베이스 간의 데이터 동기화에 대한 정보를 기록합니다.|사이트 시스템 서버|  
+
 ###  <a name="BKMK_FSPLog"></a> 대체 상태 지점 로그 파일  
  다음 표에는 대체 상태 지점과 관련된 정보가 있는 로그 파일이 정리되어 있습니다.  
 
@@ -389,7 +403,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |MP_Retry.log|하드웨어 인벤토리 재시도 프로세스를 기록합니다.|사이트 시스템 서버|  
 |MP_Sinv.log|클라이언트의 XML 소프트웨어 인벤토리 레코드를 변환하여 해당 파일을 사이트 서버에 복사하는 작업과 관련된 세부 정보를 기록합니다.|사이트 시스템 서버|  
 |MP_SinvCollFile.log|파일 컬렉션에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|  
-|MP_Status.log|클라이언트의 XML.svf 상태 메시지 파일을 변환하여 해당 파일을 사이트 서버에 복사하는 작업과 관련된 세부 정보를 기록합니다.|사이트 시스템 서버|  
+|MP_Status.log|클라이언트의 XML.svf 상태 메시지 파일을 변환하여 해당 파일을 사이트 서버에 복사하는 작업과 관련된 세부 정보를 기록합니다.|사이트 시스템 서버|
 |mpcontrol.log|관리 지점의 WINS 등록을 기록합니다. 10분마다 관리 지점의 가용성을 기록합니다.|사이트 서버|  
 |mpfdm.log|클라이언트 파일을 사이트 서버의 해당 INBOXES 폴더로 이동한 관리 지점 구성 요소의 작업을 기록합니다.|사이트 시스템 서버|  
 |mpMSI.log|관리 지점 설치에 대한 세부 정보를 기록합니다.|사이트 서버|  
@@ -506,12 +520,12 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |-|-|-|
 |로그 이름|설명|로그 파일이 있는 컴퓨터|
 |CloudMgr.log|클라우드 관리 게이트웨이 서비스 배포, 지속적인 서비스 상태 및 서비스와 연결된 사용 데이터에 대한 세부 정보를 기록합니다.<br>레지스트리 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SMS\COMPONENTS\SMS_CLOUD_SERVICES_MANAGER\Logging level**을 편집하여 로깅 수준을 구성할 수 있습니다.|기본 사이트 서버 또는 CA의 *installdir* 폴더|
-|CMGSetup.log 또는 CMG-*RoleInstanceID*-CMGSetup.log<sup>1</sup>|클라우드 관리 게이트웨이 배포(Azure의 로컬 배포)의 2단계에 대한 세부 정보를 기록합니다.<br>**Azure 포털\Cloud Services 구성** 탭에서 설정 **추적 수준**(**정보**(기본값), **자세한 정보**, **오류**)을 사용하여 로깅 수준을 구성할 수 있습니다.|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
+|CMGSetup.log 또는 CMG-*RoleInstanceID*-CMGSetup.log<sup>1</sup>|클라우드 관리 게이트웨이 배포의 두 번째 단계(Azure의 로컬 배포)에 대한 세부 정보를 기록합니다.<br>**Azure 포털\클라우드 서비스 구성** 탭에서 설정 **추적 수준**(**정보**(기본값), **자세한 정보**, **오류**)을 사용하여 로깅 수준을 구성할 수 있습니다.|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
 |CMGHttpHandler.log 또는 CMG-*RoleInstanceID*- CMGHttpHandler.log<sup>1</sup>|Azure에서 인터넷 정보 서비스와 바인딩하는 클라우드 관리 게이트웨이 HTTP 처리기에 대한 세부 정보를 기록합니다.<br>**Azure 포털\클라우드 서비스 구성** 탭에서 설정 **추적 수준**(**정보**(기본값), **자세한 정보**, **오류**)을 사용하여 로깅 수준을 구성할 수 있습니다.|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
 |CMGService.log 또는 CMG-*RoleInstanceID*- CMGService.log<sup>1</sup>|Azure의 클라우드 관리 게이트웨이 핵심 구성 요소에 대한 세부 정보를 기록합니다.<br>**Azure 포털\클라우드 서비스 구성** 탭에서 설정 **추적 수준**(**정보**(기본값), **자세한 정보**, **오류**)을 사용하여 로깅 수준을 구성할 수 있습니다.|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
 |SMS_Cloud_ProxyConnector.log|클라우드 관리 게이트웨이 서비스와 클라우드 관리 게이트웨이 연결 지점 간에 연결을 설정하는 방법에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|
 
-<sup>1</sup> 클라우드 서비스 관리자가 5분마다 Azure 저장소에서 동기화하는 로컬 Configuration Manager 로그 파일입니다. 클라우드 관리 게이트웨이는 5분마다 로그를 Azure 저장소로 푸시합니다. 따라서 최대 지연은 10분입니다. 자세한 정보 스위치는 로컬 및 원격 로그에 둘 다 영향을 미칩니다.
+<sup>1</sup> 클라우드 서비스 관리자가 5분마다 Azure 저장소에서 동기화하는 로컬 Configuration Manager 로그 파일입니다. 클라우드 관리 게이트웨이는 5분마다 로그를 Azure Storage에 푸시합니다. 따라서 최대 지연은 10분입니다. 자세한 정보 스위치는 로컬 및 원격 로그 둘 다에 영향을 미칩니다.
 
 - 배포 문제 해결에는 **CloudMgr.log** 및 **CMGSetup.log**를 사용합니다.
 - 서비스 상태 문제 해결에는 **CMGService.log** 및 **SMS_Cloud_ProxyConnector.log**를 사용합니다.
@@ -527,6 +541,19 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |DCMAgent.log|구성 항목과 응용 프로그램의 평가, 충돌 보고 및 재구성에 대한 높은 수준의 정보를 기록합니다.|클라이언트|  
 |DCMReporting.log|구성 항목에 대한 상태 메시지에 정책 플랫폼 결과를 보고하는 작업에 대한 정보를 기록합니다.|클라이언트|  
 |DcmWmiProvider.log|WMI에서 구성 항목 synclet를 읽는 작업에 대한 정보를 기록합니다.|클라이언트|  
+
+###  <a name="BKMK_CA"></a> 조건부 액세스
+ 다음 표에는 조건부 액세스와 관련된 정보가 포함된 로그 파일이 나와 있습니다.  
+
+|로그 이름|설명|로그 파일이 있는 컴퓨터|  
+|--------------|-----------------|----------------------------|  
+|ADALOperationProvider.log|AAD 토큰 취득에 대한 세부 정보를 기록합니다.|클라이언트|  
+|cloudusersync.log|사용자의 라이선스 사용을 기록합니다.|서비스 연결 지점이 있는 컴퓨터|  
+|ComplRelayAgent.log|DCM에서 전반적인 준수 상태를 수신하고, MP 토큰을 취득하고, AAD 토큰을 취득하며, Intune에 준수를 다시 보고(CA 릴레이 서비스)합니다.|클라이언트|  
+|DcmWmiProvider.log|WMI에서 구성 항목 synclet를 읽는 작업에 대한 정보를 기록합니다.|클라이언트|  
+|dmpdownloader.log|Microsoft Intune의 다운로드에 대한 세부 정보를 기록합니다.|서비스 연결 지점이 있는 컴퓨터|
+|dmpuploader.log|데이터베이스 변경 내용을 Microsoft Intune에 업로드하는 작업과 관련된 세부 정보를 기록합니다.|서비스 연결 지점이 있는 컴퓨터|   
+|MP_Token.log|클라이언트의 토큰 요청을 기록합니다.|사이트 시스템 서버|  
 
 ###  <a name="BKMK_ConsoleLog"></a> Configuration Manager 콘솔  
  다음 표에는 Configuration Manager 콘솔과 관련된 정보가 포함된 로그 파일이 나열되어 있습니다.  
@@ -549,7 +576,6 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |PrestageContent.log|사전 준비된 원격 배포 지점에서 ExtractContent.exe 도구를 사용하는 방법에 대한 세부 정보를 기록합니다. 이 도구는 파일로 내보낸 콘텐츠를 추출합니다.|사이트 시스템 역할|  
 |SMSdpmon.log|배포 지점에 구성된 배포 지점 상태 모니터링 예약 작업에 대한 세부 정보를 기록합니다.|사이트 시스템 역할|  
 |smsdpprov.log|기본 사이트에서 받은 압축 파일의 압축 풀기에 대한 세부 정보를 기록합니다. 이 로그는 원격 배포 지점의 WMI 공급자가 생성합니다.|사이트 서버와 함께 있지 않은 배포 지점 컴퓨터|  
-
 
 ###  <a name="BKMK_DiscoveryLog"></a> 검색  
 다음 표에는 검색과 관련된 정보가 포함된 로그 파일이 나열되어 있습니다.  
@@ -772,7 +798,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
  다음 표에는 Wake On LAN 사용과 관련된 정보가 있는 로그 파일이 나와 있습니다.  
 
 > [!NOTE]  
->  절전 모드 해제 프록시를 사용하여 Wake On LAN을 보완하는 경우 이 작업의 로그는 클라이언트에 기록됩니다. 예를 들어 이 항목의 [클라이언트 작업](#BKMK_ClientOpLogs) 섹션에서 CcmExec.log 및 SleepAgent_<*도메인*\>@SYSTEM_0.log를 참조하세요.  
+>  절전 모드 해제 프록시를 사용하여 Wake On LAN을 보완하는 경우 이 작업의 로그는 클라이언트에 기록됩니다. 예를 들어 이 문서의 [클라이언트 작업](#BKMK_ClientOpLogs) 섹션에서 CcmExec.log 및 SleepAgent_<*도메인*\>@SYSTEM_0.log를 참조하세요.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
 |--------------|-----------------|----------------------------|  

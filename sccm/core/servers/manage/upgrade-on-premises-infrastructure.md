@@ -3,30 +3,31 @@ title: "온-프레미스 인프라 업그레이드"
 titleSuffix: Configuration Manager
 description: "SQL Server, 사이트 시스템의 사이트 운영 체제 등의 인프라를 업그레이드하는 방법을 알아봅니다."
 ms.custom: na
-ms.date: 06/05/2017
+ms.date: 02/15/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8ca970dd-e71c-404f-9435-d36e773a0db2
-caps.latest.revision: "7"
-caps.handback.revision: "0"
+caps.latest.revision: 
+caps.handback.revision: 
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 3296fe01ebe7d3343a174ffd18483156683b69f7
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: 8e17ffad2b972119c92e449bef8f086b950b106c
+ms.sourcegitcommit: fbd4a9d2fa8ed4ddd3a0fecc4a2ec4fc0ccc3d0c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="upgrade-on-premises-infrastructure-that-supports-system-center-configuration-manager"></a>System Center Configuration Manager를 지원하는 온-프레미스 인프라 업그레이드
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-이 항목의 정보를 사용하여 System Center Configuration Manager를 실행하는 서버 인프라를 업그레이드할 수 있습니다.  
+이 문서의 정보를 사용하여 System Center Configuration Manager를 실행하는 서버 인프라를 업그레이드할 수 있습니다.  
 
  - Configuration Manager의 이전 버전에서 System Center Configuration Manager로 업그레이드하려면 [System Center Configuration Manager로 업그레이드](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager)를 참조하세요.
 
@@ -43,9 +44,7 @@ ms.lasthandoff: 12/04/2017
     - Configuration Manager 버전 1602 이상을 사용하는 경우 Windows Server 2008 R2를 Windows Server 2012 R2로 업그레이드할 수도 있습니다([추가 정보 참조](#bkmk_from2008r2)).
 
     > [!WARNING]  
-    >  Windows Server 2012 R2로 업그레이드하기 전에 서버에서 *WSUS 3.2를 제거* 해야 합니다.  
-    >   
-    >  이 중요 단계에 대한 자세한 내용은 Windows Server 문서에서 [Windows Server Update Services 개요](https://technet.microsoft.com/library/hh852345.aspx)의 “새로운 기능 및 변경된 기능” 섹션을 참조하세요.  
+    >  다른 운영 체제로 업그레이드하기 전에 서버에서 *WSUS를 제거해야 합니다*. SUSDB를 유지하고, WSUS가 다시 설치된 후 SUSDB를 다시 연결할 수 있습니다. 이 중요 단계에 대한 자세한 내용은 Windows Server 문서에서 [Windows Server Update Services 개요](https://technet.microsoft.com/library/hh852345.aspx)의 “새로운 기능 및 변경된 기능” 섹션을 참조하세요.  
 
 서버를 업그레이드하려면 업그레이드할 운영 체제에서 제공하는 업그레이드 절차를 따르세요.  다음을 참조하세요.
   -  Windows Server 문서에서 [Windows Server 2012 R2에 대한 업그레이드 옵션](https://technet.microsoft.com/library/dn303416.aspx)  
@@ -57,6 +56,7 @@ Windows Server 2012 또는 Windows Server 2012 R2를 Windows Server 2016으로 �
 
 **업그레이드 전:**  
 -   SCEP(System Center Endpoint Protection) 클라이언트를 제거합니다. Windows Server 2016에는 SCEP 클라이언트를 대체하는 Windows Defender가 기본 제공됩니다. SCEP 클라이언트가 있으면 Windows Server 2016으로 업그레이드할 수 없습니다.
+-   서버에서 WSUS 역할을 제거합니다(설치된 경우). SUSDB를 유지하고, WSUS가 다시 설치된 후 SUSDB를 다시 연결할 수 있습니다.
 
 **업그레이드 후:**
 -   Windows Defender가 사용되고 자동 시작되도록 설정되었으며 실행되고 있는지 확인합니다.
@@ -93,7 +93,7 @@ Windows Server 2012 또는 Windows Server 2012 R2를 Windows Server 2016으로 �
 ### <a name="bkmk_2012r2"></a> Windows Server 2012에서 Windows Server 2012 R2로 업그레이드
 
 **업그레이드 전:**
--  다른 지원되는 시나리오와 달리 이 시나리오에서는 업그레이드 전에 추가 고려 사항이 필요하지 않습니다.
+-   서버에서 WSUS 역할을 제거합니다(설치된 경우). SUSDB를 유지하고, WSUS가 다시 설치된 후 SUSDB를 다시 연결할 수 있습니다.
 
 **업그레이드 후:**
   - 다음 사이트 시스템 역할에 대해 Windows 배포 서비스가 시작되어 실행되고 있는지 확인합니다(업그레이드 중에는 이 서비스가 중지됨).

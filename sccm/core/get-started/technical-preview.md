@@ -3,7 +3,7 @@ title: "기술 미리 보기 릴리스"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager에서 새로운 기능을 테스트 시험해 볼 수 있는 기술 미리 보기 릴리스에 대해 알아봅니다."
 ms.custom: na
-ms.date: 01/19/2018
+ms.date: 02/09/2018
 ms.prod: configuration-manager
 ms.reviewer: nab
 ms.suite: na
@@ -16,11 +16,11 @@ caps.latest.revision:
 author: aczechowski
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 975bd66bb86efb133ccd7017295e8108558f633d
-ms.sourcegitcommit: db9978135d7a6455d83dbe4a5175af2bdeaeafd8
+ms.openlocfilehash: 4f16216bd1bbb662cc8d532664ccd593f94d3898
+ms.sourcegitcommit: e15516983883a4dd002c4bdd114147b04b811021
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="technical-preview-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 01/22/2018
 
  이 릴리스는 기술적인 미리 보기이므로 세부 사항 및 기능은 변경될 수 있습니다.  
 
- 이 문서는 모든 버전의 Technical Preview에 적용되는 정보를 포함합니다. 또한 2018년 1월의 1801 버전처럼, 기능이 가장 먼저 제공되는 Technical Preview 버전과 함께 새로운 각 기능을 설명합니다. 이러한 기능은 각 미리 보기 버전만을 다룬 별도 항목에서 자세히 설명합니다.  
+ 이 문서는 모든 버전의 Technical Preview에 적용되는 정보를 포함합니다. 또한 2018년 2월의 1802 버전처럼, 기능이 가장 먼저 제공되는 Technical Preview 버전과 함께 새로운 각 기능을 설명합니다. 이러한 기능은 각 미리 보기 버전만을 다룬 별도 항목에서 자세히 설명합니다.  
 
  현재 분기의 Configuration Manager에서 제공하는 새로운 기능에 대한 자세한 내용은 [System Center Configuration Manager의 새로운 기능](/sccm/core/plan-design/changes/what-has-changed-from-configuration-manager-2012)을 참조하세요.
 
@@ -60,7 +60,9 @@ ms.lasthandoff: 01/22/2018
 
 -   이 미리 보기 빌드에서/빌드로 마이그레이션할 수는 없습니다.  
 
--   이 미리 보기 빌드로 업그레이드할 수는 없습니다.  
+-   이 미리 보기 빌드로 업그레이드할 수는 없습니다. 
+
+-   cd.latest 폴더에서의 사이트 복구는 지원되지 않습니다.  <!--507106-->
 
 -   이 미리 보기 빌드에서 프로덕션 빌드(현재 분기)로 업그레이드할 수 없습니다. 그러나 미리 보기 버전용 업데이트를 사용할 수 있는 경우 Configuration Manager 콘솔의 **업데이트 및 서비스** 노드에서 해당 업데이트를 찾아 설치할 수 있습니다. 콘솔 내 업그레이드 프로세스에 대한 비디오를 보려면 youtube.com에서 [ConfigMgr 업데이트 패키지 설치](https://www.youtube.com/embed/KBd_EGFbUT8) (영문)를 참조하세요.  
 -   독립 실행형 기본 사이트만 지원됩니다. 중앙 관리 사이트, 여러 기본 사이트 또는 보조 사이트는 지원되지 않습니다.  
@@ -112,16 +114,28 @@ ms.lasthandoff: 01/22/2018
 
 <!-- This is the full list of new features in the latest TP release -->
 
-### <a name="technical-preview-version-1801"></a>Technical Preview 버전 1801
-- [단계별 배포 만들기](capabilities-in-technical-preview-1801.md#create-phased-deployments) <!-- 1357405 --> 
-- [공동 관리 보고](capabilities-in-technical-preview-1801.md#co-management-reporting) <!-- 1356648 --> 
-- [자동 배포 규칙 평가 일정의 향상된 기능](capabilities-in-technical-preview-1801.md#improvements-to-automatic-deployment-rule-evaluation-schedule) <!-- 1357133 --> 
-- [배포 지점 재할당](capabilities-in-technical-preview-1801.md#reassign-distribution-point) <!-- 1306937 --> 
-- [하드웨어 인벤토리의 향상된 기능](capabilities-in-technical-preview-1801.md#improvements-to-hardware-inventory) <!-- 1357389 --> 
-- [소프트웨어 센터에 대한 클라이언트 설정의 향상된 기능](capabilities-in-technical-preview-1801.md#improvements-to-client-settings-for-software-center) <!-- 1355146 --> 
-- [Windows Defender Application Guard의 새로운 설정](capabilities-in-technical-preview-1801.md#new-settings-for-windows-defender-application-guard) <!-- 1356256 --> 
-- [스크립트 실행의 향상된 기능](capabilities-in-technical-preview-1801.md#improvements-to-run-scripts) <!-- 1236459 --> 
-
+### <a name="technical-preview-version-1802"></a>Technical Preview 버전 1802
+- [공동 관리를 사용하여 Endpoint Protection 워크로드를 Intune으로 전환](capabilities-in-technical-preview-1802.md#transition-endpoint-protection-workload-to-intune-using-co-management) <!-- 1357365 -->
+- [Configuration Manager 경계 그룹을 사용하도록 Windows 배달 최적화 구성](capabilities-in-technical-preview-1802.md#configure-windows-delivery-optimization-to-use-configuration-manager-boundary-groups) <!-- 1324696 --> 
+- [클라우드 관리 게이트웨이를 통한 Windows 10 현재 위치 업그레이드 작업 순서](capabilities-in-technical-preview-1802.md#windows-10-in-place-upgrade-task-sequence-via-cloud-management-gateway) <!-- 1357149 -->
+- [Windows 10 현재 위치 업그레이드 작업 순서 개선 사항](capabilities-in-technical-preview-1802.md#improvements-to-windows-10-in-place-upgrade-task-sequence) <!-- 1357425 --> 
+- [PXE 사용 배포 지점 개선 사항](capabilities-in-technical-preview-1802.md#improvements-to-pxe-enabled-distribution-points) <!-- 1357580 --> 
+- [작업 순서에 대한 배포 템플릿](capabilities-in-technical-preview-1802.md#deployment-templates-for-task-sequences) <!-- 1357391 --> 
+- [제품 수명 주기 대시보드](capabilities-in-technical-preview-1802.md#product-lifecycle-dashboard) <!--1319632 --> 
+- [보고 개선 사항](capabilities-in-technical-preview-1802.md#improvements-to-reporting) <!--1357653 --> 
+- [소프트웨어 센터 개선 사항](capabilities-in-technical-preview-1802.md#improvements-to-software-center) <!--1357592 --> 
+- [스크립트 실행의 향상된 기능](capabilities-in-technical-preview-1802.md#improvements-to-run-scripts) <!--1236459 --> 
+- [관리 지점에 대한 경계 그룹 대체](capabilities-in-technical-preview-1802.md#boundary-group-fallback-for-management-points) <!-- 1324594 --> 
+- [CNG 인증서에 대한 향상된 지원](capabilities-in-technical-preview-1802.md#improved-support-for-cng-certificates) <!-- 1357314 --> 
+- [Azure Resource Manager에 대한 클라우드 관리 게이트웨이 지원](capabilities-in-technical-preview-1802.md#cloud-management-gateway-support-for-azure-resource-manager) <!-- 1324735 --> 
+- [장치당 사용자에 대한 응용 프로그램 요청 승인](capabilities-in-technical-preview-1802.md#approve-application-requests-for-users-per-device) <!-- 1357015 --> 
+- [소프트웨어 센터를 사용하여 Azure AD 조인 장치에서 사용자가 사용할 수 있는 응용 프로그램 찾아보기 및 설치](capabilities-in-technical-preview-1802.md#use-software-center-to-browse-and-install-user-available-applications-on-azure-ad-joined-devices) <!-- 1322613 --> 
+- [Windows AutoPilot 장치 정보에 대한 보고서](capabilities-in-technical-preview-1802.md#report-on-windows-autopilot-device-information) <!-- 1351442 --> 
+- [Windows Device Exploit Guard에 대한 Configuration Manager 정책 개선 사항](capabilities-in-technical-preview-1802.md#improvements-to-configuration-manager-policies-for-windows-device-exploit-guard) <!-- 1356220 -->
+- [Microsoft Edge 브라우저 정책](capabilities-in-technical-preview-1802.md#microsoft-edge-browser-policies) <!-- 1357310 -->
+- [기본 브라우저 개수에 대한 보고서](capabilities-in-technical-preview-1802.md#report-for-default-browser-counts) <!-- 1357830 --> 
+- [Windows 10 ARM64 장치 지원](capabilities-in-technical-preview-1802.md#support-for-windows-10-arm64-devices) <!-- 1353704 --> 
+- [단계별 배포 변경 사항](capabilities-in-technical-preview-1802.md#changes-to-phased-deployments) <!-- 1357405 -->
 
 
 
@@ -135,8 +149,17 @@ Then remove the bottom of this list and/or move individual items not in CB to th
 
  |기능 |기술 미리 보기 버전 |현재 분기 버전|  
  |----------------|---------------------|--------------------|
+ |단계별 배포 만들기 <!-- 1357405 --> | [Tech Preview 1801](capabilities-in-technical-preview-1801.md#create-phased-deployments)  |![추가되지 않음](media/Red_X.gif)    |
+ |공동 관리 보고 <!-- 1356648 --> | [Tech Preview 1801](capabilities-in-technical-preview-1801.md#co-management-reporting)  |![추가되지 않음](media/Red_X.gif)    |
+ |자동 배포 규칙 평가 일정 개선 사항 <!-- 1357133 --> | [Tech Preview 1801](capabilities-in-technical-preview-1801.md#improvements-to-automatic-deployment-rule-evaluation-schedule)  |![추가되지 않음](media/Red_X.gif)    |
+ |배포 지점 다시 할당 <!-- 1306937 --> | [Tech Preview 1801](capabilities-in-technical-preview-1801.md#reassign-distribution-point)  |![추가되지 않음](media/Red_X.gif)    |
+ |하드웨어 인벤토리 개선 사항 <!-- 1357389 --> | [Tech Preview 1801](capabilities-in-technical-preview-1801.md#improvements-to-hardware-inventory)  |![추가되지 않음](media/Red_X.gif)    |
+ |소프트웨어 센터에 대한 클라이언트 설정 개선 사항 <!-- 1355146 --> | [Tech Preview 1801](capabilities-in-technical-preview-1801.md#improvements-to-client-settings-for-software-center)  |![추가되지 않음](media/Red_X.gif)    |
+ |Windows Defender Application Guard에 대한 새로운 설정 <!-- 1356256 --> | [Tech Preview 1801](capabilities-in-technical-preview-1801.md#new-settings-for-windows-defender-application-guard)  |![추가되지 않음](media/Red_X.gif)    |
+ |스크립트 실행 개선 사항 <!-- 1236459 --> | [Tech Preview 1801](capabilities-in-technical-preview-1801.md#improvements-to-run-scripts)  |![추가되지 않음](media/Red_X.gif)    |
  |교체된 응용 프로그램을 자동으로 업그레이드하지 않습니다 <!-- 1351266 --> | [Tech Preview 1712](capabilities-in-technical-preview-1712.md#do-not-automatically-upgrade-superseded-applications)  |![추가되지 않음](media/Red_X.gif)    | 
  |소프트웨어 센터에서 여러 응용 프로그램 설치 <!-- 1357126 --> | [Tech Preview 1712](capabilities-in-technical-preview-1712.md#install-multiple-applications-in-software-center)  |![추가되지 않음](media/Red_X.gif)    |
+ |클라이언트 기반 PXE 응답자 서비스 <!-- 1357148 --> | [Tech Preview 1712](capabilities-in-technical-preview-1712.md#client-based-pxe-responder-service)  |![추가되지 않음](media/Red_X.gif)    |
  |Configuration Manager 클라이언트 설치 변경 <!-- 1356195 --> | [Tech Preview 1712](capabilities-in-technical-preview-1712.md#change-in-the-configuration-manager-client-install)  |![추가되지 않음](media/Red_X.gif)    | 
  |Surface 장치 대시보드 변경 <!-- 1355788 --> | [Tech Preview 1712](capabilities-in-technical-preview-1712.md#change-to-the-surface-device-dashboard)  |![추가되지 않음](media/Red_X.gif)    | 
  |Office 365 클라이언트 관리 대시보드에 대한 향상된 기능 <!-- 1357281 --> | [Tech Preview 1712](capabilities-in-technical-preview-1712.md#improvements-to-office-365-client-management-dashboard)  |![추가되지 않음](media/Red_X.gif)    | 
@@ -144,15 +167,7 @@ Then remove the bottom of this list and/or move individual items not in CB to th
  |운영 체제 배포에 대한 향상된 기능 <!-- SMS 500897 --> | [Tech Preview 1712](capabilities-in-technical-preview-1712.md#improvements-to-operating-system-deployment)  |![추가되지 않음](media/Red_X.gif)    | 
  |작업 순서 실행 단계<!-- 1261338 --> | [Tech Preview 1711](capabilities-in-technical-preview-1711.md) |[버전 1710](/sccm/osd/understand/task-sequence-steps#child-task-sequence)    |
  |응용 프로그램 설치 시 사용자 상호 작용 허용 <!-- 1356976 --> | [Tech Preview 1711](capabilities-in-technical-preview-1711.md) |![추가되지 않음](media/Red_X.gif)    |
- |Windows Analytics 장치 상태에 대한 Windows 10 원격 분석 <!--1356148 --> | [Tech Preview 1710](capabilities-in-technical-preview-1710.md#limit-windows-10-enhanced-telemetry-to-only-send-data-relevant-to-windows-analytics-device-health) |[버전 1710](/sccm/core/plan-design/changes/whats-new-in-version-1710#reporting)    |
- |소프트웨어 센터 개선 아이콘 <!-- 1356194 --> | [Tech Preview 1710](capabilities-in-technical-preview-1710.md#software-center-no-longer-distorts-icons-larger-than-250x250) |[버전 1710](/sccm/apps/plan-design/plan-for-and-configure-application-management#supplemental-procedures-to-install-and-configure-the-application-catalog-and-software-center)    |
- |소프트웨어 센터에서 공동 관리 장치에 대한 준수 확인 <!-- 1356374 -->|[Tech Preview 1710](capabilities-in-technical-preview-1710.md#check-compliance-from-software-center-for-co-managed-devices)|[버전 1710](/sccm/core/clients/manage/co-management-overview)    |
- |CNG 인증서에 대한 제한적 지원<!-- 1356191 -->| [Tech Preview 1710](capabilities-in-technical-preview-1710.md#limited-support-for-cng-certificates)|[버전 1710](/sccm/core/plan-design/network/cng-certificates-overview)    |
- |Exploit Guard 지원 <!--1355468 --> | [Tech Preview 1710](capabilities-in-technical-preview-1710.md#support-for-exploit-guard) |[버전 1710](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy)    |
- |컴퓨터 다시 시작 보류에 대한 향상된 설명 <!-- 1356283  -->| [Tech Preview 1710](capabilities-in-technical-preview-1710.md)|[버전 1710](/sccm/core/clients/manage/manage-clients)    |
- |장치 가드 정책 변경 <!-- 1355092  -->| [Tech Preview 1710](capabilities-in-technical-preview-1710.md)|[버전 1710](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)    |
- |Windows Defender Application Guard 정책 구성 및 배포   <!-- 1351960  -->| [Tech Preview 1710](capabilities-in-technical-preview-1710.md)|[버전 1710](/sccm/protect/deploy-use/create-deploy-application-guard-policy)    |
- |Configuration Manager에서 PowerShell 스크립트를 배포하기 위한 향상된 기능 <!-- 1236459 -->| [Tech Preview 1710](capabilities-in-technical-preview-1710.md#improvements-for-deploying-powershell-scripts-from-configuration-manager) | [버전 1710](/sccm/apps/deploy-use/create-deploy-scripts)
+
  
 
 ## <a name="capabilities-delivered-in-previous-technical-previews"></a>이전 Technical Preview에 포함된 기능
