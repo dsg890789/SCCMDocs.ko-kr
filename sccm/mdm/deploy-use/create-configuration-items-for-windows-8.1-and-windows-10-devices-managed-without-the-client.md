@@ -7,12 +7,13 @@ ms.date: 07/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-hybrid
+ms.technology:
+- configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 23e1e4dc-623a-4521-ad04-ae9482927097
-caps.latest.revision: "20"
-caps.handback.revision: "0"
+caps.latest.revision: 
+caps.handback.revision: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
@@ -370,8 +371,8 @@ Configuration Manager로 엔터프라이즈 데이터 보호를 구성하는 방
 |**SmartScreen 사용**|SmartScreen을 사용하여 사용자가 다운로드한 파일에 악성 코드가 포함되지 않았는지를 확인합니다.|  
 |**팝업 허용**|브라우저 팝업을 허용하거나 사용하지 않도록 설정합니다.|  
 |**쿠키 허용**|쿠키를 허용하거나 사용하지 않도록 설정합니다.|  
-|**자동 채우기 허용**|Edge 브라우저의 자동 채우기 기능을 사용하도록 허용합니다.|  
-|**암호 관리자 허용**|Edge 브라우저의 암호 관리자 기능을 사용하도록 허용합니다.|  
+|**자동 채우기 허용**|Microsoft Edge 브라우저의 자동 채우기 기능을 사용하도록 허용합니다.|  
+|**암호 관리자 허용**|Microsoft Edge 브라우저의 암호 관리자 기능을 사용하도록 허용합니다.|  
 |**엔터프라이즈 모드 사이트 목록 위치**|엔터프라이즈 모드에서 열 웹 사이트 목록을 찾을 위치를 지정합니다. 사용자는 이 목록을 편집할 수 없습니다.|
 |**플래그에 대한 액세스 차단**|최종 사용자가 개발자 및 실험 설정이 포함된 Edge의 about:flags 페이지에 액세스하지 못하게 합니다.|
 |**SmartScreen 프롬프트 재정의**|최종 사용자가 잠재적으로 악의적인 웹 사이트에 대한 SmartScreen 필터 경고를 무시할 수 있도록 합니다.|
