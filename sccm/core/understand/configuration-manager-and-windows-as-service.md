@@ -16,11 +16,11 @@ caps.latest.revision:
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 6d93be3ec04396c9980b039617c673985090cdc6
-ms.sourcegitcommit: fbd4a9d2fa8ed4ddd3a0fecc4a2ec4fc0ccc3d0c
+ms.openlocfilehash: 8ac078fa33e24bd1cc10ab04d6120bf5759461ff
+ms.sourcegitcommit: 1378532fac2620ddcfd31061982f344a290c2e67
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="keep-windows-10-up-to-date-in-the-enterprise-using-configuration-manager"></a>Configuration Manager를 사용하여 기업에서 Windows 10을 최신 상태로 유지
 
@@ -36,7 +36,7 @@ System Center Configuration Manager는 Windows 10의 기능 업데이트를 포�
 |[제품 지원 기간](/sccm/core/servers/manage/current-branch-versions-supported)|새로운 지원 및 서비스 모델에 대해 설명합니다.|
 |[제거되는 항목과 사용되지 않는 항목](/sccm//core/plan-design/changes/deprecated/removed-and-deprecated)|Configuration Manager 사용에 영향을 줄 수 있는 향후 변경 사항에 대해 미리 알려드립니다.|
 |[Configuration Manager as a Service](/sccm/core/servers/manage/updates)|Configuration Manager에 기능 업데이트를 적용하는 것을 간편한 콘솔 방식으로 설명합니다.|
-|[사용 가능 업데이트 가져오기](/sccm/core/servers/manage/install-in-console-updates.md#get-available-updates)|새로운 Configuration Manager 기능 업데이트를 가져오는 데 사용할 수 있는 두 가지 모드에 대해 설명합니다.|
+|[사용 가능 업데이트 가져오기](/sccm/core/servers/manage/install-in-console-updates#get-available-updates)|새로운 Configuration Manager 기능 업데이트를 가져오는 데 사용할 수 있는 두 가지 모드에 대해 설명합니다.|
 |[업데이트 검사 목록](/sccm/core/servers/manage/install-in-console-updates#bkmk_beforeinstall)|해당되는 경우 업데이트 버전별 검사 목록을 제공합니다.| 
 |[새로운 Configuration Manager 기능 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates#bkmk_install)|기능 업데이트의 간단한 설치 단계에 설명합니다.|
 |[Windows 10에 대한 지원](/sccm/core/plan-design/configs/support-for-windows-10)|Windows 10(및 ADK) 버전에 대한 지원 매트릭스를 제공합니다.|

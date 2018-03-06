@@ -7,19 +7,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7341cc6e-9e08-41e4-bcc6-6c1ff12e85ca
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 37ad3eb2d7e6796dcd88b2b01b8b0cea97bb41fe
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: 84fe2fd0959051ea42e555cb484c95fb82ec8fb3
+ms.sourcegitcommit: 1378532fac2620ddcfd31061982f344a290c2e67
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="use-alerts-and-the-status-system-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 경고 및 상태 시스템 사용
 
@@ -219,9 +220,9 @@ ms.lasthandoff: 12/04/2017
     |**연기**|지정된 날짜까지 경고 모니터링을 일시 중단합니다. 그때 경고 상태가 업데이트됩니다.<br /><br /> 사용하도록 설정된 경우에만 경고를 연기할 수 있습니다.|  
     |**구독 만들기**|선택한 경고에 대한 메일 구독을 만들 수 있는 **새 구독** 대화 상자를 엽니다.|  
 
-##### <a name="to-configure-endpoint-protection-alerts-for-a-collection"></a>컬렉션에 대한 Endpoint Protection 경고를 구성하려면  
+<!--##### To configure Endpoint Protection alerts for a collection  
 
-1.  보류 중  
+1.  pending  -->
 
 ##### <a name="to-configure-client-status-alerts-for-a-collection"></a>컬렉션에 대한 클라이언트 상태 경고를 구성하려면  
 

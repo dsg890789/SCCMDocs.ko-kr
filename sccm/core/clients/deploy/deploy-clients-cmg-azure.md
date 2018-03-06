@@ -7,20 +7,21 @@ ms.date: 8/07/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-app
+ms.technology:
+- configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a44006eb-8650-49f6-94e1-18fa0ca959ee
-caps.latest.revision: "14"
-caps.handback.revision: "0"
+caps.latest.revision: 
+caps.handback.revision: 
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 2ef7580f94864094e9420eb0f5a5c5b4dc9d6d24
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 9572a2e78691e2c108f2a5b9c4201ea91399985d
+ms.sourcegitcommit: 45ff3ffa040eada5656b17f47dcabd3c637bdb60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="install-and-assign-configuration-manager-windows-10-clients-using-azure-ad-for-authentication"></a>인증을 위해 Azure AD를 사용하여 Configuration Manager Windows 10 클라이언트 설치 및 할당
 
@@ -80,7 +81,7 @@ Azure AD 사용자 검색은 *클라우드 관리*의 일부로 구성됩니다.
 
 클라이언트를 설치하려면 다음 설치 명령줄을 사용하여 [System Center Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법](/sccm/core/clients/deploy/deploy-clients-to-windows-computers#a-namebkmkmanuala-how-to-install-clients-manually)의 지침에 따릅니다. 
 
-**ccmsetup.exe /mp&#58; https://CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72057594037928100 CCMHOSTNAME=CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72057594037928100 SMSSiteCode=DFD SMSMP=https://SCCMDFPSS.contoso.corp.contoso.com AADTENANTID=72F988BF-86F1-41AF-91AB-2D7CD011DB47 AADTENANTNAME=contoso  AADCLIENTAPPID=bef323b3-042f-41a6-907a-f9faf0d17026 AADRESOURCEURI=https://contososerver**
+**ccmsetup.exe /mp&#58; https://CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72057598037248100 CCMHOSTNAME=CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72057598037248100 SMSSiteCode=DND SMSMP=https://sitename.contoso.corp.contoso.com AADTENANTID=44ba6fe0-c73e-4b38-80b6-85c557e7a7ed AADTENANTNAME=contoso  AADCLIENTAPPID=55ba7je0-c73e-4b38-97b6-85c557e7a7ed AADRESOURCEURI=https://contososerver**
 
 - **/MP** – 다운로드 소스입니다. 인터넷의 부트스트랩인 경우 CMG로 설정합니다.
 - **CCMHOSTNAME:** 인터넷 관리 지점의 이름입니다. 관리되는 클라이언트의 명령 프롬프트에서 **gwmi -namespace root\ccm\locationservices -class SMS_ActiveMPCandidate**를 실행하여 이 이름을 찾을 수 있습니다.
