@@ -3,32 +3,36 @@ title: "소프트웨어 업데이트 배포"
 titleSuffix: Configuration Manager
 description: "Configuration Manager 콘솔에서 소프트웨어 업데이트를 선택하여 수동으로 배포 프로세스를 시작하거나 자동으로 업데이트를 배포합니다."
 keywords: 
-author: dougeby
-ms.author: dougeby
-manager: angrobe
-ms.date: 10/06/2016
+author: mestew
+ms.author: mstewart
+manager: dougeby
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology: configmgr-sum
+ms.technology:
+- configmgr-sum
 ms.assetid: 04536d51-3bf7-45e5-b4af-36ceed10583d
-ms.openlocfilehash: 7166ed594804bf615d309515c01f6f5339518d89
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: aad82bf225f7606007a5b69490e8f0e4d894b966
+ms.sourcegitcommit: 1378532fac2620ddcfd31061982f344a290c2e67
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 02/20/2018
 ---
 #  <a name="BKMK_SUMDeploy"></a> 소프트웨어 업데이트 배포  
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-소프트웨어 업데이트 배포 단계는 소프트웨어 업데이트를 배포하는 프로세스입니다. 소프트웨어 업데이트를 배포하는 방법에 관계없이 업데이트는 일반적으로 소프트웨어 업데이트 그룹에 추가되고 소프트웨어 업데이트는 배포 지점에 다운로드되며 업데이트 그룹은 클라이언트에 배포됩니다. 배포를 만들 경우, 관련된 소프트웨어 업데이트 정책이 클라이언트 컴퓨터에 전송되고 소프트웨어 업데이트 콘텐츠 파일이 배포 지점에서 클라이언트 컴퓨터의 로컬 캐시에 다운로드된 후 클라이언트에서 소프트웨어 업데이트를 설치할 수 있게 됩니다. 인터넷상의 클라이언트는 Microsoft Update에서 콘텐츠를 다운로드합니다.  
+소프트웨어 업데이트 배포 단계는 소프트웨어 업데이트를 배포하는 프로세스입니다. 소프트웨어 업데이트를 배포하는 방법에 관계없이 업데이트는 일반적으로 다음과 같습니다.
+- 소프트웨어 업데이트 그룹에 추가됩니다.
+- 배포 지점에 다운로드됩니다.
+- 업데이트 그룹은 클라이언트에 배포됩니다. 배포를 만들고 나면 연관된 소프트웨어 업데이트 정책이 클라이언트 컴퓨터로 전송됩니다. 소프트웨어 업데이트 콘텐츠 파일은 배포 지점에서 클라이언트 컴퓨터의 로컬 캐시로 다운로드됩니다. 그러면 소프트웨어 업데이트를 클라이언트에서 설치할 수 있습니다. 인터넷상의 클라이언트는 Microsoft Update에서 콘텐츠를 다운로드합니다.  
 
 > [!NOTE]  
->  배포 지점을 사용할 수 없는 경우 인트라넷상의 클라이언트가 Microsoft 업데이트에서 소프트웨어 업데이트를 다운로드하도록 구성할 수 있습니다.  
+>  배포 지점을 사용할 수 없는 경우 인트라넷 상의 클라이언트가 Microsoft 업데이트에서 소프트웨어 업데이트를 다운로드하도록 구성할 수 있습니다.  
 
 > [!NOTE]  
->  다른 배포 유형과 달리 소프트웨어 업데이트는 클라이언트의 최대 캐시 크기 설정에 관계없이 클라이언트 캐시에 모두 다운로드됩니다. 클라이언트 캐시 설정에 대한 자세한 내용은 [Configure the Client Cache for Configuration Manager Clients](../../core/clients/manage/manage-clients.md#BKMK_ClientCache)을 참조하세요.  
+>  다른 배포 유형과 달리 소프트웨어 업데이트는 모두 클라이언트 캐시로 다운로드됩니다. 이는 클라이언트의 최대 캐시 크기 설정과 관련이 없습니다. 클라이언트 캐시 설정에 대한 자세한 내용은 [Configure the Client Cache for Configuration Manager Clients](../../core/clients/manage/manage-clients.md#BKMK_ClientCache)을 참조하세요.  
 
 필수 소프트웨어 업데이트 배포를 구성할 경우 소프트웨어 업데이트는 예약된 최종 기한에 맞춰 자동으로 설치됩니다. 또는 클라이언트 컴퓨터의 사용자는 최종 기한 전에 소프트웨어 업데이트를 설치하도록 예약하거나 설치를 시작할 수 있습니다. 설치 시도 후 클라이언트 컴퓨터는 사이트 서버에 상태 메시지를 보내 소프트웨어 업데이트 설치의 성공 여부를 보고합니다. 소프트웨어 업데이트 배포에 대한 자세한 내용은 [Software update deployment workflows](../understand/software-updates-introduction.md#BKMK_DeploymentWorkflows)를 참조하세요.  
 
@@ -43,6 +47,9 @@ Configuration Manager 콘솔에서 소프트웨어 업데이트를 선택하고 
 4. 소프트웨어 업데이트 그룹을 수동으로 배포합니다.
 
 자세한 단계는 [소프트웨어 업데이트 수동 배포](manually-deploy-software-updates.md)를 참조하세요.
+
+>[!NOTE]
+>Configuration Manager 버전 1706부터 Office 365 클라이언트 업데이트가 **Office 365 클라이언트 관리** >**Office 365 업데이트** 노드로 이동되었습니다. 이는 ADR 구성에 영향을 주지 않지만 Office 365 업데이트의 수동 배포에는 영향을 줍니다. 
 
 ## <a name="automatically-deploy-software-updates"></a>소프트웨어 업데이트 자동 배포
 자동 소프트웨어 업데이트 배포는 ADR(자동 배포 규칙)를 사용하여 구성합니다. 이는 월별 소프트웨어 업데이트 배포(일반적으로 "화요일 패치"라고 함)의 업데이트 관리 등에 일반적으로 사용되는 방법입니다. 규칙이 실행되면 소프트웨어 업데이트가 소프트웨어 업데이트 그룹에서 제거되고(기존 업데이트 그룹을 사용하는 경우), 지정된 조건을 충족하는 소프트웨어 업데이트(예: 지난 달에 릴리스된 모든 보안 소프트웨어 업데이트)가 소프트웨어 업데이트 그룹에 추가되고, 소프트웨어 업데이트의 콘텐츠 파일이 배포 지점에 다운로드 및 복사되고, 대상 컬렉션의 클라이언트에 소프트웨어 업데이트가 배포됩니다. 다음 목록은 소프트웨어 업데이트를 자동으로 배포하는 일반적인 워크플로입니다.  

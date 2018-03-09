@@ -7,20 +7,21 @@ ms.date: 08/30/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-client
+ms.technology:
+- configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 44153689-70e8-42ad-9ae8-17ae35f6a2e3
-caps.latest.revision: "9"
-caps.handback.revision: "0"
+caps.latest.revision: 
+caps.handback.revision: 
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: d96a8aedd046e3a8dcd12e711ae19f53a901fceb
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 9df979fe98dc4d4ead18ff3cfb276612681c9bce
+ms.sourcegitcommit: b1fa7be6a6fa5bb7c49e90c0e28a21ba8b41c842
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="planning-for-client-deployment-to-linux-and-unix-computers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Linux 및 UNIX 컴퓨터에 클라이언트 배포 계획
 
@@ -68,6 +69,13 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manag
 |Openssl|OpenSSL Libraries, 보안 네트워크 통신 프로토콜|1.0.0-4|  
 |PAM|플러그 가능 인증 모듈|1.1.1-4|  
 
+ **Red Hat Enterprise Linux Server 릴리스 7**  
+
+|필수 패키지|설명|최소 버전|  
+|----------------------|-----------------|---------------------|  
+|glibc|C 표준 라이브러리|2.17|  
+|Openssl|OpenSSL Libraries, 보안 네트워크 통신 프로토콜|1.0.1|  
+|PAM|플러그 가능 인증 모듈|1.1.1-4|  
 
  **Solaris 10 SPARC**  
 
@@ -122,7 +130,7 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manag
 |필수 패키지|설명|최소 버전|  
 |----------------------|-----------------|---------------------|  
 |glibc-2.4-31.30|C 표준 공유 라이브러리|2.4-31.30|  
-|Openssl|OpenSSL Libraries, 보안 네트워크 통신 프로토콜|0.9.8a-18.15|  
+|OpenSSL|OpenSSL Libraries, 보안 네트워크 통신 프로토콜|0.9.8a-18.15|  
 |PAM|플러그 가능 인증 모듈|0.99.6.3-28.8|  
 
  **SUSE Linux Enterprise Server 11(i586)**  

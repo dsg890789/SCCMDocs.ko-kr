@@ -3,30 +3,31 @@ title: "연결에 사용되는 포트"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager가 연결에 사용되는 필수 포트 및 사용자 지정 포트에 대해 알아봅니다."
 ms.custom: na
-ms.date: 09/19/2017
+ms.date: 02/16/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c6777fb0-0754-4abf-8a1b-7639d23e9391
-caps.latest.revision: "8"
-caps.handback.revision: "0"
+caps.latest.revision: 
+caps.handback.revision: 
 author: aczechowski
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 0b6fa22a7bc3de7bb5bc0d26f8e35b51d55c5e72
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+ms.openlocfilehash: 8db098f69180aac3785087af6ee305b3651094e5
+ms.sourcegitcommit: 1378532fac2620ddcfd31061982f344a290c2e67
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="ports-used-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사용되는 포트
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager는 분산된 클라이언트/서버 시스템입니다. Configuration Manager의 배포 특성으로 인해 사이트 서버, 사이트 시스템 및 클라이언트 간이 연결될 수 있습니다. 일부 연결에는 구성할 수 없는 포트가 사용되고, 일부 연결에는 지정한 사용자 지정 포트가 지원될 수 있습니다. 방화벽, 라우터, 프록시 서버 또는 IPsec 같은 포트 필터링 기술을 사용하는 경우 필요한 포트를 사용할 수 있는 상태인지 확인해야 합니다.  
+System Center Configuration Manager는 분산된 클라이언트/서버 시스템입니다. Configuration Manager의 배포 특성으로 인해 사이트 서버, 사이트 시스템 및 클라이언트 간이 연결될 수 있습니다. 일부 연결에는 구성할 수 없는 포트가 사용되고, 일부 연결에는 지정한 사용자 지정 포트가 지원될 수 있습니다. 방화벽, 라우터, 프록시 서버 또는 IPsec 같은 포트 필터링 기술을 사용하는 경우 필요한 포트를 사용할 수 있는 상태인지 확인합니다.  
     
 > [!NOTE]  
 >  SSL 브리징을 사용하여 인터넷 기반 클라이언트를 지원하는 경우 포트 요구 사항을 충족하면서도 방화벽을 트래버스할 수 있도록 일부 HTTP 동사 및 헤더를 허용해야 할 수 있습니다.   
@@ -205,6 +206,13 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTP(Hypertext Transfer Protocol)|--|80|  
+|HTTPS(Secure Hypertext Transfer Protocol)|--|443|
+
+Configuration Manager 콘솔은 다음에 대해 인터넷 액세스를 사용합니다. 
+- Microsoft 업데이트에서 배포 패키지에 대한 소프트웨어 업데이트 다운로드.
+- 리본의 피드백 항목.
+- 콘솔 내 문서에 대한 링크.
+<!--506823-->
 
 ###  <a name="BKMK_PortsConsole-RSP"></a> Configuration Manager 콘솔 -- &gt; 보고 서비스 지점  
 
@@ -338,7 +346,7 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTPS(Secure Hypertext Transfer Protocol)|--|443|
-서비스 연결 지점에 대한 자세한 내용은 [인터넷 액세스 요구 사항](/sccm/core/servers/deploy/configure/about-the-service-connection-point#bkmk_urls)을 참조하세요.
+자세한 내용은 서비스 연결 지점에 대한 [인터넷 액세스 요구 사항](/sccm/core/servers/deploy/configure/about-the-service-connection-point#bkmk_urls)을 참조하세요.
 
 ###  <a name="BKMK_PortsAppCatalogWebServicePoint_SiteServer"></a> 사이트 서버 &lt; -- &gt; 응용 프로그램 카탈로그 웹 서비스 지점  
 
@@ -689,12 +697,12 @@ IPsec을 사용하여 사이트 서버 및 사이트 시스템 간 트래픽을 
 >  이러한 사이트 시스템을 설치하기 전에 원격 레지스트리 서비스를 사이트 시스템 서버에서 실행해야 하며 트러스트 관계가 없는 다른 Active Directory 포리스트에 사이트 시스템이 있는 경우 사이트 시스템 설치 계정을 지정했어야 합니다.  
 
 ###  <a name="BKMK_PortsClientInstall"></a> Configuration Manager 클라이언트 설치에 사용되는 포트  
-클라이언트를 설치하는 동안 사용하는 포트는 클라이언트 배포 방법에 따라 달라집니다. 각 클라이언트 배포 방식별 포트 목록에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트용 Windows 방화벽 및 포트 설정](../../../core/clients/deploy/windows-firewall-and-port-settings-for-clients.md) 항목의 **Configuration Manager 클라이언트 배포에 사용되는 포트**를 참조하세요. 클라이언트에서 클라이언트 설치 및 사후 설치 통신에 대해 Windows 방화벽을 구성하는 방법은 [System Center Configuration Manager에서 클라이언트용 Windows 방화벽 및 포트 설정](../../../core/clients/deploy/windows-firewall-and-port-settings-for-clients.md)을 참조하세요.  
+클라이언트를 설치하는 동안 사용하는 포트는 클라이언트 배포 방법에 따라 달라집니다. 각 클라이언트 배포 방식별 포트 목록에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트용 Windows 방화벽 및 포트 설정](../../../core/clients/deploy/windows-firewall-and-port-settings-for-clients.md) 문서의 **구성 관리자 클라이언트 배포에 사용되는 포트**를 참조하세요. 클라이언트에서 클라이언트 설치 및 사후 설치 통신에 대해 Windows 방화벽을 구성하는 방법은 [System Center Configuration Manager에서 클라이언트용 Windows 방화벽 및 포트 설정](../../../core/clients/deploy/windows-firewall-and-port-settings-for-clients.md)을 참조하세요.  
 
 ###  <a name="BKMK_MigrationPorts"></a> 마이그레이션에서 사용되는 포트  
 마이그레이션을 실행하는 사이트 서버에서는 여러 포트를 통해 원본 계층 구조의 적용 가능한 사이트에 연결하여 원본 사이트 SQL Server 데이터베이스에서 데이터를 수집하고 배포 지점을 공유합니다.  
 
- 이러한 포트에 대한 자세한 내용은 [System Center Configuration Manager에서 마이그레이션을 수행하기 위한 필수 조건](../../../core/migration/prerequisites-for-migration.md) 항목의 [마이그레이션을 위한 필수 구성](../../../core/migration/prerequisites-for-migration.md#BKMK_Required_Configurations) 섹션을 참조하세요.  
+ 이러한 포트에 대한 자세한 내용은 [System Center Configuration Manager에서 마이그레이션을 수행하기 위한 필수 조건](../../../core/migration/prerequisites-for-migration.md) 문서의 [마이그레이션을 위한 필수 구성](../../../core/migration/prerequisites-for-migration.md#BKMK_Required_Configurations) 섹션을 참조하세요.  
 
 ###  <a name="BKMK_ServerPorts"></a> Windows Server에 사용되는 포트  
  다음 표에는 Windows Server에서 사용하는 일부 핵심 포트와 해당 기능이 나와 있습니다. Windows Server 서비스 및 네트워크 포트 요구 사항의 완벽한 목록은 [Windows 서버 시스템의 서비스 개요 및 네트워크 포트 요구 사항](http://go.microsoft.com/fwlink/p/?LinkID=123652)을 참조하세요.  

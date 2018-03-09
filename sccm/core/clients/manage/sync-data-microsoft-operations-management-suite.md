@@ -7,19 +7,20 @@ ms.date: 7/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 33bcf8b3-a6b6-4fc9-bb59-70a9621b2b0d
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: bfe500c160bf2ddffd060baabb44cda81337e1cc
-ms.sourcegitcommit: 92c3f916e6bbd35b6208463ff406e0247664543a
+ms.openlocfilehash: 5cb0ffd29f1b3de110101093a6644335a8167108
+ms.sourcegitcommit: 45ff3ffa040eada5656b17f47dcabd3c637bdb60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 02/23/2018
 ---
 #  <a name="sync-data-from-configuration-manager-to-the-microsoft-operations-management-suite"></a>Configuration Manager의 데이터를 Microsoft Operations Management Suite에 동기화합니다.
 
@@ -109,7 +110,7 @@ Microsoft OMS(Operations Management Suite) 커넥터를 사용하여 System Cent
 Configuration Manager를 OMS에 연결한 후 컬렉션을 추가하거나 제거하고 OMS 연결의 속성을 볼 수 있습니다.
 
 ### <a name="verify-the-oms-connector-properties"></a>OMS 커넥터 속성 확인
-1.  Configuration Manager 콘솔에서 **관리** > **Cloud Services**로 이동하고 **OMS 커넥터**를 선택하여 **OMS 연결 ** 페이지**를 선택합니다.
+1.  Configuration Manager 콘솔에서 **관리** > **Cloud Services**로 이동하고 **OMS 커넥터**를 선택하여 **OMS 연결 페이지**를 선택합니다.
 2.  이 페이지에는 다음 두 개의 탭이 있습니다.
   - **Azure Active Directory:**   
     이 탭에는 **테넌트**, **클라이언트 ID**, **클라이언트 비밀 키 만료**가 표시되며, 만료된 경우 클라이언트 비밀 키를 확인할 수 있습니다.
