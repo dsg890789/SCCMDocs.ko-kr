@@ -3,23 +3,24 @@ title: "사용해야 하는 분기"
 titleSuffix: Configuration Manager
 description: "사용 가능한 System Center Configuration Manager 분기 간의 차이점을 알아봅니다."
 ms.custom: na
-ms.date: 05/02/2017
+ms.date: 03/08/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a3be4f8f-3d44-4e3c-9fa1-e85f30a36e72
-caps.latest.revision: "0"
+caps.latest.revision: 
 author: aczechowski
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 9985ff5db4357b6b18de1ef58de40bc631d6cc6b
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+ms.openlocfilehash: d762cf5e6932e17d8dfb0dd6c442c452028b5228
+ms.sourcegitcommit: b653342fb5d69a16e71b3548a7e9a2e47e54bf88
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="which-branch-of-configuration-manager-should-i-use"></a>사용해야 하는 Configuration Manager 분기
 
@@ -77,7 +78,7 @@ LTSB는 버전 1606을 기반으로 합니다. 이 분기는 새로운 기능을
 LTSB를 새 사이트로 설치하거나 지원되는 Configuration Manager 2012 사이트에서 업그레이드로 설치하려면 System Center 2016 또는 System Center Configuration Manager(현재 분기 및 장기 서비스 분기 1606) 릴리스와 함께 DVD로 제공되는 버전 1606 [기준 미디어](/sccm/core/servers/manage/updates#baseline-and-update-versions)를 사용합니다. 기준 미디어를 사용하여 현재 분기의 버전 1606을 실행하는 새 사이트 또는 장기 서비스 분기를 실행하는 새 사이트를 설치할 수 있습니다.
 
 > [!TIP]  
-> System Center 2016에 대한 자세한 내용은 [System Center 2016 설명서](https://technet.microsoft.com/system-center-docs/system-center)를 참조하세요. 이 설명서에서는 Microsoft 사용권 계약 또는 유사한 권한이 필요한 System Center 2016을 다운로드하는 방법도 설명합니다.
+> System Center 2016에 대한 자세한 내용은 [System Center 2016 설명서](https://docs.microsoft.com/system-center/index)를 참조하세요. 이 설명서에서는 Microsoft 사용권 계약 또는 유사한 권한이 필요한 System Center 2016을 다운로드하는 방법도 설명합니다.
 
 > VLSC(볼륨 라이선스 서비스 센터)에서 System Center Configuration Manager 버전 1606을 찾으려면 [VLSC](https://www.microsoft.com/Licensing/servicecenter/Downloads/DownloadsAndKeys.aspx)의 **다운로드 및 키** 탭으로 이동하고 "system center config"를 검색한 다음 **System Center Config Mgr(현재 분기 및 LTSB)**을 선택합니다.
 
@@ -90,7 +91,7 @@ LTSB를 새 사이트로 설치하거나 지원되는 Configuration Manager 2012
 
 **제한 사항**  
 LTSB는 현재 분기 버전 1606을 기반으로 하며 다음과 같은 제한 사항이 있습니다.
-- LTSB는 일반 공급(2016년 10월) 후 10년 동안 중요 보안 업데이트가 지원되며, 그다음에는 이 분기에 대한 지원이 만료됩니다. 지원 수명 주기에 대한 자세한 내용은 [Microsoft 수명 주기 정책](https://support.microsoft.com/en-us/lifecycle)을 참조하세요.
+- LTSB는 일반 공급(2016년 10월) 후 10년 동안 중요 보안 업데이트가 지원되며, 그다음에는 이 분기에 대한 지원이 만료됩니다. 지원 수명 주기에 대한 자세한 내용은 [Microsoft 수명 주기 정책](https://support.microsoft.com/lifecycle)을 참조하세요.
 - 서버 및 클라이언트 운영 체제와 관련 기술(예: SQL Server 버전)의 제한된 집합 목록을 지원합니다. 이 분기에서 지원되는 사항에 대한 자세한 내용은 [장기 서비스 분기에 대해 지원되는 구성](supported-configurations-for-ltsb.md)을 참조하세요.
 - 새로운 기능에 대한 업데이트를 받지 않습니다.
 - Microsoft Intune 구독 추가를 지원하지 않으며, 이로 인해 다음을 사용할 수 없습니다.
