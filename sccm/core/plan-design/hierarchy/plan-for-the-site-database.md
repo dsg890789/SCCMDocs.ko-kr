@@ -3,24 +3,25 @@ title: "사이트 데이터베이스 계획"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager 계층 구조를 계획할 때 사이트 데이터베이스 및 사이트 데이터베이스 서버 역할을 고려하세요."
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/08/20168
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 104fb4cc-6e83-40a3-8e6b-ac909fb9ec7d
-caps.latest.revision: "5"
-caps.handback.revision: "0"
+caps.latest.revision: 
+caps.handback.revision: 
 author: aczechowski
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 2db5658958cbeef0c3c49922b06d8ae288fbea37
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+ms.openlocfilehash: 908ca61bc99db3ca93f46120a806cd9ae54c81f7
+ms.sourcegitcommit: b653342fb5d69a16e71b3548a7e9a2e47e54bf88
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="plan-for-the-site-database-for-system-center-configuration-manager"></a>System Center Configuration Manager용 사이트 데이터베이스에 대한 계획
 
@@ -31,6 +32,12 @@ ms.lasthandoff: 01/04/2018
 -   중앙 관리 사이트 및 기본 사이트의 경우 사이트 서버에 SQL Server를 설치하거나 사이트 서버가 아닌 컴퓨터에 SQL Server를 설치할 수 있습니다.  
 
 -   보조 사이트에서는 전체 기능 SQL Server를 설치하는 대신 SQL Server Express를 사용할 수 있습니다. 그러나 데이터베이스 서버가 보조 사이트 서버에서 실행되고 있어야 합니다.  
+
+-  SQL 가용성 그룹 사용의 경우 데이터베이스 복구 모델을 FULL로 설정해야 합니다.  
+
+-  비SQL 가용성 그룹 사용의 경우 데이터베이스 복구 모델을 SIMPLE로 설정해야 합니다.  
+
+SQL 복구 모드에 대한 자세한 내용은 [복구 모델(SQL Server)](https://docs.microsoft.com/sql/relational-databases/backup-restore/recovery-models-sql-server)에서 확인할 수 있습니다.
 
 사이트 데이터베이스를 호스트하는 데 다음 SQL Server 구성을 사용할 수 있습니다.  
 
