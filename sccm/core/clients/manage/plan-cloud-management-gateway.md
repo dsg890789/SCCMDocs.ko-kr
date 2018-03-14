@@ -2,18 +2,19 @@
 title: "클라우드 관리 게이트웨이에 대한 계획"
 titleSuffix: Configuration Manager
 description: 
-ms.date: 10/06/2017
+ms.date: 03/08/2018
 ms.prod: configuration-manager
-ms.technology: configmgr-client
+ms.technology:
+- configmgr-client
 ms.assetid: 2dc8c9f1-4176-4e35-9794-f44b15f4e55f
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: b1063826841c37973e26954e164d867649c3fb9f
-ms.sourcegitcommit: c4a1bafcd004638d264a93d307c70d8b6f7fe023
+ms.openlocfilehash: 051d3fcba379aec83ea7c4dc1e407b3d3e774e12
+ms.sourcegitcommit: b653342fb5d69a16e71b3548a7e9a2e47e54bf88
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="plan-for-the-cloud-management-gateway-in-configuration-manager"></a>Configuration Manager에서 클라우드 관리 게이트웨이 계획
 
@@ -30,7 +31,7 @@ Configuration Manager 콘솔을 사용하여 Azure에 서비스를 배포하고 
 
 ## <a name="requirements-for-cloud-management-gateway"></a>클라우드 관리 게이트웨이에 대한 요구 사항
 
--   클라이언트 컴퓨터 및 클라우드 관리 게이트웨이 연결점을 실행하는 사이트 시스템 서버
+-    인터넷 기반 클라이언트에서 사용할 클라우드 관리 게이트웨이 커넥터를 실행하는 사이트 시스템
 
 -   클라이언트 컴퓨터에서 통신 암호화 및 클라우드 관리 게이트웨이 서비스의 ID 인증에 사용되는 내부 CA의 사용자 지정 SSL 인증서
 
@@ -160,7 +161,7 @@ CMG는 다음과 같은 방법으로 보안을 보장하는 데 도움이 됩니
 외부 URL은 클라이언트에서 CMG와 통신하기 위해 사용합니다.
 내부 URL은 내부 서버에 요청을 전달하는 데 사용되는 CMG 연결 지점입니다.
 
-#### <a name="example"></a>예:
+#### <a name="example"></a>예제:
 관리 지점에서 CMG 트래픽을 사용하도록 설정하면 Configuration Manager는 ccm_system, ccm_incoming, sms_mp 같은 각 관리 지점 서버에 대해 내부적으로 URL 매핑 집합을 만듭니다.
 관리 지점 ccm_system 끝점에 대한 외부 URL은 **https://<CMG service name>/CCM_Proxy_MutualAuth/<MP Role ID>/CCM_System**과 같습니다.
 URL은 각 관리 지점에 대해 고유합니다. 그런 후 Configuration Manager 클라이언트 **<CMG service name>/CCM_Proxy_MutualAuth/<MP Role ID>** 같은 CMG 지원 MP 이름을 인터넷 관리 지점 목록에 추가합니다.

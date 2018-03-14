@@ -7,19 +7,20 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-client
+ms.technology:
+- configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2c8f57cf-1968-48de-87fb-4897432ed6e0
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 1abd791817af5b59e850cec4d529f57d9e541674
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 2df5127f3eb5049d1a4277fd25ce04c6de05999d
+ms.sourcegitcommit: b653342fb5d69a16e71b3548a7e9a2e47e54bf88
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-monitor-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트를 모니터링하는 방법
 
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/12/2017
 ##  <a name="bkmk_about"></a> 클라이언트 상태에 대한 정보  
  Configuration Manager에서는 다음과 같은 정보 유형을 클라이언트 상태로 제공합니다.  
 
--   **클라이언트 온라인 상태** - Configuration Manager 버전 1602부터, 이 상태는 컴퓨터가 온라인 상태인지 여부를 나타냅니다. 컴퓨터가 할당된 관리 지점에 연결된 경우 온라인인 것으로 간주됩니다.  클라이언트가 온라인 상태인지 여부를 나타내기 위해 관리 지점에 ping과 유사한 메시지를 보냅니다. 관리 지점에서 5분 내에 메시지를 받지 못하면 클라이언트 상태가 오프라인으로 변경된 것입니다.  
+-   **클라이언트 온라인 상태** - Configuration Manager 버전 1602부터, 이 상태는 컴퓨터가 온라인 상태인지 여부를 나타냅니다. 컴퓨터가 할당된 관리 지점에 연결된 경우 온라인 상태인 것으로 간주합니다.  클라이언트가 온라인 상태인지 여부를 나타내기 위해 관리 지점에 ping과 유사한 메시지를 보냅니다. 관리 지점에서 5분 내에 메시지를 받지 못하면 클라이언트 상태가 오프라인으로 변경된 것입니다.  
 
 -   **클라이언트 활동** - 이 상태는 클라이언트가 지난 7일 동안 Configuration Manager에서 적극적으로 조작되었음을 나타냅니다. 클라이언트에서 정책 업데이트를 요청하지 않거나 하트비트 메시지를 보내지 않거나 7일간 하드웨어 인벤토리를 보내지 않은 경우 클라이언트는 비활성으로 간주됩니다.  
 
