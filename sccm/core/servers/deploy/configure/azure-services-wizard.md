@@ -7,11 +7,12 @@ ms.date: 7/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: a26a653e-17aa-43eb-ab36-0e36c7d29f49
-caps.latest.revision: "0"
+caps.latest.revision: 
 author: mestew
 ms.author: mstewart
 manager: angrobe
@@ -69,7 +70,7 @@ Azure 서비스 웹앱 등록은 Configuration Manager 사이트를 Azure AD에 
     
     - **가져오기**: **Azure Portal**에서 이미 만들어진 Azure AD 웹앱 등록에 대한 정보를 입력하여 해당 등록에 대한 메타데이터를 Configuration Manager로 가져올 수 있습니다. 앱 및 테넌트의 이름을 입력한 다음 테넌트 ID, 클라이언트 ID 및 Configuration Manager에서 사용하도록 할 Azure 웹앱의 비밀 키를 지정합니다. 정보를 확인한 후에 **확인**을 클릭하여 계속합니다.
         > [!NOTE]
-        > **가져오기** 기능을 사용하려면 *웹앱 / API* 유형의 Azure AD 앱 등록을 [Azure Portal](https://portal.azure.com)에서 만들어야 합니다. 앱 등록을 만드는 방법에 대해 자세히 알아보려면 [Azure Active Directory 테넌트로 응용 프로그램 등록](/azure/active-directory/active-directory-app-registration)을 참조하세요. 또한 Upgrade Readiness 또는 Operations Management Suite를 구성할 때는 관련 OMS 작업 영역을 포함하는 리소스 그룹에 대해 새로 등록된 웹앱 *참가자* 권한을 부여하여 Configuration Manager가 해당 작업 영역에 액세스할 수 있도록 해야 합니다. 이를 위해서는 권한을 할당할 때 **사용자 추가** 블레이드에서 앱 등록 이름을 검색해야 합니다. 이것은 [Configuration Manager에게 [Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-sccm)에 연결할 수 있도록 OMS](https://docs.microsoft.com/azure/log-analytics/log-analytics-sccm#provide-configuration-manager-with-permissions-to-oms)에 대한 권한을 제공할 때 수행하는 프로세스와 동일합니다. 앱을 Configuration Manager에 가져오려면 이러한 권한이 할당되어야 합니다.
+        > **가져오기** 기능을 사용하려면 *웹앱 / API* 유형의 Azure AD 앱 등록을 [Azure Portal](https://portal.azure.com)에서 만들어야 합니다. 앱 등록을 만드는 방법에 대해 자세히 알아보려면 [Azure Active Directory 테넌트로 응용 프로그램 등록](/azure/active-directory/active-directory-app-registration)을 참조하세요. 또한 Upgrade Readiness 또는 Operations Management Suite를 구성할 때는 관련 OMS 작업 영역을 포함하는 리소스 그룹에 대해 새로 등록된 웹앱 *참가자* 권한을 부여하여 Configuration Manager가 해당 작업 영역에 액세스할 수 있도록 해야 합니다. 이를 위해서는 권한을 할당할 때 **사용자 추가** 블레이드에서 앱 등록 이름을 검색해야 합니다. 이것은 [Configuration Manager에게](https://docs.microsoft.com/azure/log-analytics/log-analytics-sccm#provide-configuration-manager-with-permissions-to-oms) [Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-sccm)에 연결할 수 있도록 OMS에 대한 권한을 제공할 때 수행하는 프로세스와 동일합니다. 앱을 Configuration Manager에 가져오려면 이러한 권한이 할당되어야 합니다.
 
 
     **네이티브 클라이언트 앱:** 찾아보기를 선택하면 클라이언트 앱 창이 열립니다.  
