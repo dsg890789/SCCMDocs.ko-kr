@@ -5,7 +5,8 @@ description: "System Center Configuration Manager용 Technical Preview 버전 17
 ms.custom: na
 ms.date: 09/28/2017
 ms.prod: configuration-manager
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
