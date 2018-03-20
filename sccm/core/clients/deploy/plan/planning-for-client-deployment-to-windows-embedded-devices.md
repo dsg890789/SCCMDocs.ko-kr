@@ -65,7 +65,7 @@ ms.lasthandoff: 03/20/2018
 >
 > **FBWF만 사용하는 장치의 경우:** 장치 다시 시작 시 클라이언트 상태 및 인벤토리 데이터를 보존하려면 다음 예외를 구성합니다.  
 >   
->  -   CCMINSTALLDIR\\*.sdf  
+>  -   CCMINSTALLDIR\\\*.sdf  
 > -   CCMINSTALLDIR\ServiceData  
 > -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CCM\StateSystem  
 >   
