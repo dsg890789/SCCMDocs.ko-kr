@@ -55,7 +55,7 @@ ms.lasthandoff: 03/20/2018
  Configuration Manager에서는 다음과 같은 앱 유형을 배포할 수 있습니다.  
 
 - Windows Installer(*.msi 파일)
-- Windows 앱 패키지(*.appx, *.appxbundle)
+- Windows 앱 패키지(\*.appx, \*.appxbundle)
 - Windows 앱 패키지(Windows 스토어)
 - Microsoft Application Virtualization 4
 - Microsoft Application Virtualization 5

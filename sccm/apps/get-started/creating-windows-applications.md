@@ -33,8 +33,8 @@ ms.lasthandoff: 03/20/2018
 
 |장치 유형|지원되는 파일 형식|  
 |-----------------|---------------------|  
-|Windows RT 및 Windows RT 8.1|*.appx, \*.appxbundle|  
-|모바일 장치로 등록된 Windows 8.1 이상|*.appx, \*.appxbundle|  
+|Windows RT 및 Windows RT 8.1|\*.appx, \*.appxbundle|  
+|모바일 장치로 등록된 Windows 8.1 이상|\*.appx, \*.appxbundle|  
 
  다음 배포 작업이 지원됩니다.  
 
