@@ -32,3 +32,14 @@
 ## [Windows 10 업데이트에 대한 빠른 설치 파일 관리](deploy-use/manage-express-installation-files-for-windows-10-updates.md)
 ## [Windows 10에서 비즈니스용 Windows 업데이트와 통합](deploy-use/integrate-windows-update-for-business-windows-10.md)
 ## [보안 업데이트를 배포하는 예제 시나리오](deploy-use/example-scenario-deploy-monitor-monthly-security-updates.md)
+
+# [System Center Updates Publisher](tools/updates-publisher.md)
+## [설치](tools/install-updates-publisher.md)
+## [옵션 구성](tools/updates-publisher-options.md)
+## [카탈로그 관리](tools/updates-publisher-catalogs.md)
+## [업데이트 관리](tools/manage-updates-with-updates-publisher.md)
+## [게시 관리](tools/updates-publisher-publications.md)
+## [새 업데이트 만들기](tools/create-updates-with-updates-publisher.md)
+## [적용 가능성 규칙](tools/updates-publisher-applicability-rules.md)
+## [인증서 및 보안](tools/updates-publisher-security.md)
+
