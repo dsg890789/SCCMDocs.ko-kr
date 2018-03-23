@@ -1,25 +1,26 @@
 ---
-title: "기술 미리 보기 1703의 기능"
+title: 기술 미리 보기 1703의 기능
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager용 Technical Preview 버전 1703에서 사용 가능한 기능에 대해 알아봅니다."
+description: System Center Configuration Manager용 Technical Preview 버전 1703에서 사용 가능한 기능에 대해 알아봅니다.
 ms.custom: na
 ms.date: 03/24/2017
 ms.prod: configuration-manager
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2e801f8c-d331-41ee-8f27-908448fc0951
-caps.latest.revision: "5"
+caps.latest.revision: ''
 author: erikje
 ms.author: erikje
 manager: angrobe
 ms.openlocfilehash: a44d6a0c9b02a529fe8776033e58e971af37e332
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+ms.sourcegitcommit: 52080ef1b0f9a27c123711ef274ac3ffe070e8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="capabilities-in-technical-preview-1703-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1703의 기능
 
@@ -145,7 +146,7 @@ Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞
 
 Windows 원격 분석 설정에 대한 자세한 내용은 [조직에서 Windows 원격 분석 구성](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization)을 참조하세요.
 
-### <a name="prerequisites"></a>전제 조건
+### <a name="prerequisites"></a>필수 구성 요소
 - 업그레이드 준비 클라우드 서비스를 사용하도록 사이트를 구성해야 합니다. 자세한 내용은 [업그레이드 준비](/sccm/core/clients/manage/upgrade/upgrade-analytics)를 참조하세요.
 
 ### <a name="configure-windows-analytics-client-settings"></a>Windows Analytics 클라이언트 설정 구성

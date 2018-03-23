@@ -1,26 +1,27 @@
 ---
-title: "관리 브라우저 정책을 사용하여 인터넷 액세스 관리"
+title: 관리 브라우저 정책을 사용하여 인터넷 액세스 관리
 titleSuffix: Configuration Manager
-description: "Intune Managed Browser를 배포하여 인터넷 액세스를 관리하고 제한합니다."
+description: Intune Managed Browser를 배포하여 인터넷 액세스를 관리하고 제한합니다.
 ms.custom: na
 ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-hybrid
+ms.technology:
+- configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8e25e00c-c9a8-473f-bcb7-ea989f6ca3c5
-caps.latest.revision: "6"
-caps.handback.revision: "0"
+caps.latest.revision: ''
+caps.handback.revision: ''
 author: dougeby
 ms.author: dougeby
 manager: angrobe
 ms.openlocfilehash: 3aea2a65733a52ab532d451b21ae98fbc0f122c6
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.sourcegitcommit: 52080ef1b0f9a27c123711ef274ac3ffe070e8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-system-center-configuration-manager"></a>System Center Configuration Manager를 통해 관리 브라우저 정책을 사용하여 인터넷 액세스 관리
 
@@ -101,7 +102,7 @@ System Center Configuration Manager에서는 Intune Managed Browser(웹 검색 �
 
     -   https의 경우 포트 443  
 
-     **http://www.contoso.com:\*** 및 **http://www.contoso.com: /\***처럼 포트 번호에 와일드 카드는 사용할 수 없습니다.  
+     포트 번호에 와일드 카드를 사용하도록 지원되지 않습니다(예: **http://www.contoso.com:\*** 및 **http://www.contoso.com:/\***).  
 
 -   다음 표를 사용하여 URL을 지정할 때 사용할 수 있는 패턴에 대해 알아볼 수 있습니다.  
 
@@ -136,7 +137,7 @@ System Center Configuration Manager에서는 Intune Managed Browser(웹 검색 �
 
     -   http://www.contoso.com:*  
 
-    -   http://www.contoso.com:/*  
+    -   http://www.contoso.com: /*  
 
 > [!NOTE]  
 >  *.microsoft.com은 항상 허용됩니다.  
