@@ -40,3 +40,4 @@
 ### [응용 프로그램 제거](deploy-use/uninstall-applications.md)
 
 ## [스크립트 실행 및 관리](deploy-use/create-deploy-scripts.md)
+### [PowerShell 스크립트 보안에 대해 알아보기](deploy-use/learn-script-security.md)
