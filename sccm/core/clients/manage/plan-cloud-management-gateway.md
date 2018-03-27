@@ -1,7 +1,7 @@
 ---
-title: "클라우드 관리 게이트웨이에 대한 계획"
+title: 클라우드 관리 게이트웨이에 대한 계획
 titleSuffix: Configuration Manager
-description: 
+description: ''
 ms.date: 03/08/2018
 ms.prod: configuration-manager
 ms.technology:
@@ -11,10 +11,10 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.openlocfilehash: 051d3fcba379aec83ea7c4dc1e407b3d3e774e12
-ms.sourcegitcommit: b653342fb5d69a16e71b3548a7e9a2e47e54bf88
+ms.sourcegitcommit: d03e4dee92a31dd214c528e895379f6013b7de82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="plan-for-the-cloud-management-gateway-in-configuration-manager"></a>Configuration Manager에서 클라우드 관리 게이트웨이 계획
 
