@@ -1,23 +1,23 @@
 ---
-title: "소프트웨어 업데이트 계획"
+title: 소프트웨어 업데이트 계획
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 프로덕션 환경에서 소프트웨어 업데이트를 사용하기 전에 소프트웨어 업데이트 지점 인프라에 대한 계획이 반드시 필요합니다."
-keywords: 
-author: dougeby
-ms.author: dougeby
-manager: angrobe
-ms.date: 06/27/2017
+description: System Center Configuration Manager 프로덕션 환경에서 소프트웨어 업데이트를 사용하기 전에 소프트웨어 업데이트 지점 인프라에 대한 계획이 반드시 필요합니다.
+keywords: ''
+author: mestew
+ms.author: mstewart
+manager: dougeby
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: configuration-manager
-ms.service: 
+ms.service: ''
 ms.technology:
 - configmgr-sum
 ms.assetid: d071b0ec-e070-40a9-b7d4-564b92a5465f
-ms.openlocfilehash: e36048141400097950a7c24733f382acacb73131
-ms.sourcegitcommit: db9978135d7a6455d83dbe4a5175af2bdeaeafd8
+ms.openlocfilehash: b57a1b584ec40d67b263959ae52f694c486481d7
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="plan-for-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 업데이트 계획
 
@@ -137,7 +137,7 @@ Configuration Manager 버전 1606부터, 활성 소프트웨어 업데이트 지
  소프트웨어 업데이트 지점 전환을 통해 내결함성 요구 사항을 충족할 수 있습니다. 기본적으로 Configuration Manager에서는 소프트웨어 업데이트 지점을 NLB 클러스터로 구성할 수 없습니다. Configuration Manager 버전 1702 이전에는 Configuration Manager SDK를 사용하여 NLB 클러스터에서 최대 4개의 소프트웨어 업데이트 지점을 구성할 수 있었습니다. 그러나 Configuration Manager 버전 1702부터는 소프트웨어 업데이트 지점이 NLB 클러스터로 지원되지 않으며, 이 구성이 검색된 경우 Configuration Manager 버전 1702로의 업그레이드가 차단됩니다. Set-CMSoftwareUpdatePoint PowerShell cmdlet에 대한 자세한 내용은 [Set-CMSoftwareUpdatePoint](http://go.microsoft.com/fwlink/?LinkId=276834)를 참조하세요.
 
 ###  <a name="BKMK_SUPSecSite"></a> 보조 사이트의 소프트웨어 업데이트 지점  
- 보조 사이트의 소프트웨어 업데이트 지점은 선택 사항입니다. 보조 사이트에 소프트웨어 업데이트 지점을 설치하면 부모 기본 사이트에서 WSUS 데이터베이스가 기본 소프트웨어 업데이트 지점의 복제본으로 구성됩니다. 보조 사이트에는 소프트웨어 업데이트 지점을 하나만 설치할 수 있습니다. 보조 사이트에 소프트웨어 업데이트 지점이 설치되지 않은 경우 보조 사이트에 할당되는 장치가 부모 사이트의 소프트웨어 업데이트 지점을 사용하도록 구성됩니다. 일반적으로 보조 사이트에 할당되는 장치와 부모 기본 사이트의 소프트웨어 업데이트 지점 사이의 네트워크 대역폭이 제한되어 있거나 이 소프트웨어 업데이트 지점이 용량 제한에 도달한 경우 보조 사이트에 소프트웨어 업데이트 지점을 설치합니다. 보조 사이트에서 소프트웨어 업데이트 지점이 성공적으로 설치되고 구성된 후에는 사이트에 할당된 클라이언트 컴퓨터에 대한 사이트 전체 정책이 업데이트되어 클라이언트 컴퓨터에서 새 소프트웨어 업데이트 지점을 사용하기 시작합니다.  
+ 보조 사이트의 소프트웨어 업데이트 지점은 선택 사항입니다. 보조 사이트에는 소프트웨어 업데이트 지점을 하나만 설치할 수 있습니다. 보조 사이트에 소프트웨어 업데이트 지점이 설치되지 않은 경우 보조 사이트에 할당되는 장치가 부모 사이트의 소프트웨어 업데이트 지점을 사용하도록 구성됩니다. 일반적으로 보조 사이트에 할당되는 장치와 부모 기본 사이트의 소프트웨어 업데이트 지점 사이의 네트워크 대역폭이 제한되어 있거나 이 소프트웨어 업데이트 지점이 용량 제한에 도달한 경우 보조 사이트에 소프트웨어 업데이트 지점을 설치합니다. 보조 사이트에서 소프트웨어 업데이트 지점이 성공적으로 설치되고 구성된 후에는 사이트에 할당된 클라이언트 컴퓨터에 대한 사이트 전체 정책이 업데이트되어 클라이언트 컴퓨터에서 새 소프트웨어 업데이트 지점을 사용하기 시작합니다.  
 
 ##  <a name="BKMK_SUPInstallation"></a> 소프트웨어 업데이트 지점 설치 계획  
  Configuration Manager에서 소프트웨어 업데이트 지점의 사이트 시스템 역할을 만들기 전에는 Configuration Manager 인프라에 따라 몇 가지 고려해야 할 요구 사항이 있습니다. 소프트웨어 업데이트 지점이 SSL을 사용하여 통신하도록 구성하는 경우 계층의 소프트웨어 업데이트 지점이 제대로 작동하기 위해 추가 단계를 수행해야 하므로 이 섹션을 검토하는 것이 특히 중요합니다. 이 섹션에서는 소프트웨어 업데이트 지점 설치를 성공적으로 계획하고 준비하기 위해 수행해야 하는 단계를 설명합니다.  
@@ -172,7 +172,7 @@ Configuration Manager 버전 1606부터, 활성 소프트웨어 업데이트 지
  WSUS 서버가 소프트웨어 업데이트 지점으로 구성되면 더 이상 해당 서버를 독립 실행형 WSUS 서버로 사용할 수 있습니다. Configuration Manager에서 관리되지 않는 별도의 독립 실행형 WSUS 서버가 필요한 경우에는 이 서버를 다른 서버에서 구성해야 합니다.
 
 ####  <a name="BKMK_WSUSAsReplica"></a> 복제 서버로 WSUS 구성  
- 기본 사이트 서버에 소프트웨어 업데이트 지점 사이트 시스템 역할을 만들 경우 복제본으로 구성된 WSUS 서버를 사용할 수 없습니다. WSUS 서버가 복제본으로 구성되면 Configuration Manager에서 WSUS 서버 구성에 실패하고 WSUS 동기화도 실패합니다. 소프트웨어 업데이트 지점이 보조 사이트에 만들어지면 Configuration Manager는 WSUS를 부모 기본 사이트의 소프트웨어 업데이트 지점에서 실행되는 WSUS의 복제 서버로 구성합니다. 기본 사이트에 설치하는 첫 번째 소프트웨어 업데이트 지점이 기본 소프트웨어 업데이트 지점이 됩니다. 사이트의 추가 소프트웨어 업데이트 지점은 기본 소프트웨어 업데이트 지점의 복제본으로 구성됩니다.  
+ 기본 사이트 서버에 소프트웨어 업데이트 지점 사이트 시스템 역할을 만들 경우 복제본으로 구성된 WSUS 서버를 사용할 수 없습니다. WSUS 서버가 복제본으로 구성되면 Configuration Manager에서 WSUS 서버 구성에 실패하고 WSUS 동기화도 실패합니다. 기본 사이트에 설치하는 첫 번째 소프트웨어 업데이트 지점이 기본 소프트웨어 업데이트 지점이 됩니다. 사이트의 추가 소프트웨어 업데이트 지점은 기본 소프트웨어 업데이트 지점의 복제본으로 구성됩니다.  
 
 ####  <a name="BKMK_WSUSandSSL"></a> SSL을 사용하도록 WSUS를 구성할지 여부 결정  
  SSL 프로토콜을 사용하면 소프트웨어 업데이트 지점에서 실행되는 WSUS를 보호할 수 있습니다. WSUS에서는 SSL을 사용하여 클라이언트 컴퓨터 및 다운스트림 WSUS 서버를 WSUS 서버에 대해 인증합니다. 또한 WSUS는 SSL을 사용하여 소프트웨어 업데이트 메타데이터를 암호화합니다. SSL을 사용하여 WSUS를 보호하도록 선택할 경우 소프트웨어 업데이트 지점을 설치하기 전에 WSUS 서버를 준비해야 합니다.  
