@@ -1,8 +1,8 @@
 ---
-title: "VPN 프로필을 만드는 방법 "
+title: 'VPN 프로필을 만드는 방법 '
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 VPN 프로필을 만드는 방법을 알아봅니다."
-ms.custom: 
+description: System Center Configuration Manager에서 VPN 프로필을 만드는 방법을 알아봅니다.
+ms.custom: ''
 ms.date: 11/20/2017
 ms.prod: configuration-manager
 ms.reviewer: na
@@ -12,16 +12,16 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: f338e4db-73b5-45ff-92f4-1b89a8ded989
-caps.latest.revision: 
+caps.latest.revision: ''
 author: lleonard-msft
-caps.handback.revision: 
+caps.handback.revision: ''
 ms.author: alleonar
 ms.manager: angrobe
 ms.openlocfilehash: 21fc286cdcc05244e1895ded5623d346e6cb8ebe
-ms.sourcegitcommit: 52080ef1b0f9a27c123711ef274ac3ffe070e8e0
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/27/2018
 ---
 # <a name="how-to-create-vpn-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 VPN 프로필을 만드는 방법
 
