@@ -1,7 +1,7 @@
 ---
-title: "응용 프로그램 관리 소개"
+title: 응용 프로그램 관리 소개
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 응용 프로그램을 관리 및 배포하는 데 필요한 기본 정보를 검색합니다."
+description: System Center Configuration Manager 응용 프로그램을 관리 및 배포하는 데 필요한 기본 정보를 검색합니다.
 ms.custom: na
 ms.date: 12/23/2016
 ms.prod: configuration-manager
@@ -12,15 +12,15 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 08f711ba-83bf-4b5f-9520-a0778c6ae7eb
-caps.latest.revision: 
+caps.latest.revision: ''
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
 ms.openlocfilehash: a8a66169f3c187f8fa0319548ddde23b399811f3
-ms.sourcegitcommit: 52080ef1b0f9a27c123711ef274ac3ffe070e8e0
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/27/2018
 ---
 # <a name="introduction-to-application-management-in-system-center-configuration-manager"></a>System Center Configuration Manager의 응용 프로그램 관리 소개
 
@@ -55,7 +55,7 @@ ms.lasthandoff: 03/20/2018
  Configuration Manager에서는 다음과 같은 앱 유형을 배포할 수 있습니다.  
 
 - Windows Installer(*.msi 파일)
-- Windows 앱 패키지(\*.appx, \*.appxbundle)
+- Windows 앱 패키지(*.appx, *.appxbundle)
 - Windows 앱 패키지(Windows 스토어)
 - Microsoft Application Virtualization 4
 - Microsoft Application Virtualization 5
