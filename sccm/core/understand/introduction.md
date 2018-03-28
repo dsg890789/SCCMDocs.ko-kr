@@ -1,7 +1,7 @@
 ---
-title: "소개"
+title: 소개
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager를 소개하는 기본 정보를 제공합니다."
+description: System Center Configuration Manager를 소개하는 기본 정보를 제공합니다.
 ms.custom: na
 ms.date: 10/06/2016
 ms.prod: configuration-manager
@@ -12,7 +12,7 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3343eccf-bf09-41cd-9e68-03e893c7f904
-caps.latest.revision: 
+caps.latest.revision: ''
 author: aczechowski
 ms.author: aaroncz
 manager: angrobe
@@ -43,21 +43,21 @@ Microsoft System Center 관리 솔루션 제품군의 한 제품인 System Cente
 
 예를 들어 Configuration Manager는 다음 요소와 통합됩니다.  
 
--   Microsoft Intune - 다양한 모바일 장치 플랫폼 관리.  
--   WSUS(Windows Software Update Services) - 소프트웨어 업데이트 관리.  
--   인증서 서비스.  
--   Exchange Server 및 Exchange Online.  
--   Windows 그룹 정책.
--   DNS.   
--   Windows ADK(Windows 자동 배포 키트) 및 USMT(사용자 환경 마이그레이션 도구).  
--   WDS(Windows 배포 서비스).  
--   원격 데스크톱 및 원격 지원.  
+-   Microsoft Intune - 다양한 모바일 장치 플랫폼 관리  
+-   WSUS(Windows Software Update Services) - 소프트웨어 업데이트 관리  
+-   인증서 서비스  
+-   Exchange Server 및 Exchange Online  
+-   Windows 그룹 정책
+-   DNS   
+-   Windows ADK(Windows 자동 배포 키트) 및 USMT(사용자 환경 마이그레이션 도구)  
+-   WDS(Windows 배포 서비스)  
+-   원격 데스크톱 및 원격 지원  
 
 Configuration Manager에서는 다음 요소도 사용됩니다.  
 
 -   보안, 서비스 위치, 구성 관련 작업을 수행하고, 관리할 사용자 및 장치를 검색하는 데 사용되는 Active Directory Domain Services  
--   분산 변경 관리 데이터베이스로 사용되고 SQL Server Reporting Services(SSRS)와 통합되어 관리 활동을 모니터링하고 추적하는 보고서를 생성하는 Microsoft SQL Server.  
--   관리 기능을 확장하고 IIS(인터넷 정보 서비스)의 웹 서비스를 사용하는 사이트 시스템 역할.
+-   분산 변경 관리 데이터베이스로 사용되고 SQL Server Reporting Services(SSRS)와 통합되어 관리 활동을 모니터링하고 추적하는 보고서를 생성하는 Microsoft SQL Server  
+-   관리 기능을 확장하고 IIS(인터넷 정보 서비스)의 웹 서비스를 사용하는 사이트 시스템 역할
 -   사용 가능한 네트워크 대역폭을 관리하는 데 사용되는 BITS(Background Intelligent Transfer Service) 및 BranchCache  
 
 Configuration Manager를 성공적으로 사용하려면 프로덕션 환경에서 Configuration Manager를 사용하기 전에 먼저 철저히 계획하고 관리 기능을 테스트해야 합니다. Configuration Manager는 강력한 관리 응용 프로그램으로서, 잠재적으로 조직의 모든 컴퓨터에 영향을 줄 수 있습니다. 신중히 계획하고 비즈니스 요구 사항을 고려하여 Configuration Manager를 배포하고 관리하면 Configuration Manager를 통해 관리 오버헤드와 총 소유 비용을 줄일 수 있습니다.  
@@ -88,7 +88,7 @@ Configuration Manager에 대한 자세한 내용은 다음 항목과 이 항목�
 자세한 내용은 [System Center Configuration Manager 콘솔 설치](../../core/servers/deploy/install/install-consoles.md)를 참조하세요.
 
 ##  <a name="BKMK_ApplicationCatalog"></a> 응용 프로그램 카탈로그, 소프트웨어 센터 및 회사 포털  
- **응용 프로그램 카탈로그** 는 사용자가 Windows 기반 PC용 소프트웨어를 찾고 요청할 수 있는 웹 사이트입니다. 응용 프로그램 카탈로그를 사용하려면 사이트에 대해 응용 프로그램 카탈로그 웹 서비스 지점 및 응용 프로그램 카탈로그 웹 사이트 지점을 설치해야 합니다.  
+ **응용 프로그램 카탈로그**는 사용자가 Windows 기반 PC용 소프트웨어를 찾고 요청할 수 있는 웹 사이트입니다. 응용 프로그램 카탈로그를 사용하려면 사이트에 대해 응용 프로그램 카탈로그 웹 서비스 지점 및 응용 프로그램 카탈로그 웹 사이트 지점을 설치해야 합니다.  
 
  **소프트웨어 센터**는 Windows 기반 컴퓨터에 Configuration Manager 클라이언트를 설치할 때 설치되는 응용 프로그램입니다. 사용자는 이 응용 프로그램을 실행하여 소프트웨어를 요청하고 Configuration Manager가 사용자에게 배포하는 소프트웨어를 관리합니다. 사용자가 소프트웨어 센터에서 수행할 수 있는 작업은 다음과 같습니다.  
 
@@ -109,9 +109,9 @@ Configuration Manager에 대한 자세한 내용은 다음 항목과 이 항목�
 ##  <a name="BKMK_ExampleScenarios"></a> Configuration Manager에 대한 예제 시나리오  
  다음 예제 시나리오에서는 Trey Research라는 회사에서 System Center Configuration Manager를 사용하여 사용자에게 다음과 같은 이점을 주는 방법을 보여 줍니다.  
 
--   생산성 증대.  
--   보다 효율적인 관리 환경을 위해 장치에 대한 준수 관리 통합.
--   장치 관리를 간소화하여 IT 운영 비용 절감.  
+-   생산성 증대  
+-   보다 효율적인 관리 환경을 위해 장치에 대한 준수 관리 통합
+-   장치 관리를 간소화하여 IT 운영 비용   
 
 모든 시나리오에서 Configuration Manager의 기본 관리자는 구재석입니다.  
 
