@@ -1,7 +1,7 @@
 ---
-title: "Windows 응용 프로그램 만들기"
+title: Windows 응용 프로그램 만들기
 titleSuffix: Configuration Manager
-description: "Windows 장치용 응용 프로그램을 만들고 배포할 때 고려해야 할 사항을 확인합니다."
+description: Windows 장치용 응용 프로그램을 만들고 배포할 때 고려해야 할 사항을 확인합니다.
 ms.custom: na
 ms.date: 10/06/2016
 ms.prod: configuration-manager
@@ -12,15 +12,15 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9181c84e-d74f-44ea-9bb9-f7805eb465fc
-caps.latest.revision: 
+caps.latest.revision: ''
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
 ms.openlocfilehash: 76e421571fa96d5e9ee808ac5d61361f52c6cbe3
-ms.sourcegitcommit: 52080ef1b0f9a27c123711ef274ac3ffe070e8e0
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/27/2018
 ---
 # <a name="create-windows-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 Windows 응용 프로그램 만들기
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 03/20/2018
 |장치 유형|지원되는 파일 형식|  
 |-----------------|---------------------|  
 |Windows RT 및 Windows RT 8.1|\*.appx, \*.appxbundle|  
-|모바일 장치로 등록된 Windows 8.1 이상|\*.appx, \*.appxbundle|  
+|모바일 장치로 등록된 Windows 8.1 이상|*.appx, \*.appxbundle|  
 
  다음 배포 작업이 지원됩니다.  
 
