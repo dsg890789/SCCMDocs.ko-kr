@@ -109,19 +109,12 @@
 ##   [랩에서 Configuration Manager 평가](get-started/evaluate-with-lab-environment.md)
 ###  [랩 설정](get-started/set-up-your-lab.md)
 
-<!-- Only show the current plus three, i.e., four total) -->
+<!-- Only show the current plus three; four total) -->
 ##   [기술 미리 보기](get-started/technical-preview.md)
+###  [1803의 기능](get-started/capabilities-in-technical-preview-1803.md)
 ###  [1802의 기능](get-started/capabilities-in-technical-preview-1802.md)
 ###  [1801의 기능](get-started/capabilities-in-technical-preview-1801.md)
 ###  [1712의 기능](get-started/capabilities-in-technical-preview-1712.md)
-###  [1711의 기능](get-started/capabilities-in-technical-preview-1711.md)
-
-<!-- No longer in support
-###  [Capabilities in 1710](get-started/capabilities-in-technical-preview-1710.md)
-###  [Capabilities in 1709](get-started/capabilities-in-technical-preview-1709.md)
-###  [Capabilities in 1708](get-started/capabilities-in-technical-preview-1708.md)
-###  [Capabilities in 1707](get-started/capabilities-in-technical-preview-1707.md)
--->
 
 ##   [계층 구조 간에 데이터 마이그레이션](migration/migrate-data-between-hierarchies.md)
 ###  [마이그레이션 계획](migration/planning-for-migration.md)

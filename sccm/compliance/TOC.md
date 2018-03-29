@@ -11,6 +11,11 @@
 ### [구성 기준 만들기 및 배포](plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md)
 ## [보안 및 개인 정보](plan-design/security-and-privacy-for-compliance-settings.md)
 
+## [SCAP(보안 콘텐츠 자동화 프로토콜) 확장](plan-design/scap/about-scap.md)
+### [SCAP 확장 설치 및 구성](plan-design/scap/install-configure-scap.md)
+### [SCAP 준수 설정 가져오기](plan-design/scap/import-scap-compliance-settings.md)
+### [SCAP 확장 문제 해결](plan-design/scap/troubleshooting-scap.md)
+
 # 배포 및 사용
 
 ## [구성 항목 만들기](deploy-use/create-configuration-items.md)
