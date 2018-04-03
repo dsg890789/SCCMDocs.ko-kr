@@ -1,26 +1,27 @@
 ---
-title: "Updates Publisher 설치"
+title: Updates Publisher 설치
 titleSuffix: Configuration Manager
-description: "환경에 System Center Updates Publisher 설치"
+description: 환경에 System Center Updates Publisher 설치
 ms.custom: na
 ms.date: 07/03/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ab5cda93-b67c-4aa5-904d-7b63ce790aa0
-caps.latest.revision: "1"
+caps.latest.revision: 1
 author: mestew
 ms.author: mstewart
 manager: angrobe
 robots: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 629e7dd98b1b5ff7f240461b61893dfc433f61dc
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: ce65e58a2c1be0420077bddded7567ff931d041f
+ms.sourcegitcommit: a19e12d5c3198764901d44f4df7c60eb542e765f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="install-updates-publisher"></a>Updates Publisher 설치
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 12/04/2017
 -   Windows 10(Pro, Education, Pro Education, Enterprise)
 -   Windows 8.1(Professional, Enterprise)
 
-### <a name="prerequisites"></a>전제 조건
+### <a name="prerequisites"></a>필수 구성 요소
 Updates Publisher를 실행하는 컴퓨터에는 다음이 필요합니다.
 
 -   **64비트 운영 체제**: Updates Publisher를 설치하려면 컴퓨터에서 64비트 운영 체제를 실행해야 합니다.
@@ -109,7 +110,7 @@ Updates Publisher는 영어로만 제공되지만 다른 언어의 업데이트�
 
 
 ## <a name="install-updates-publisher"></a>Updates Publisher 설치
-[Microsoft 다운로드 센터](https://go.microsoft.com/fwlink/?linkid=847967)에서 System Center Updates Publisher를 설치하기 위한 **UpdatesPubliser.msi**를 다운로드합니다.
+[Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=55543)에서 System Center Updates Publisher를 설치하기 위한 **UpdatesPubliser.msi**를 다운로드합니다.
 
 Updates Publisher를 설치하려면 *필수 조건*을 충족하는 컴퓨터에서 **UpdatesPublisher.msi**를 실행합니다. 설치 관리자는 Updates Publisher를 실행하는 데 필요한 파일을 포함하는 *&lt;path&gt;\Program Files\Microsoft\UpdatesPublisher* 폴더를 만듭니다.
 

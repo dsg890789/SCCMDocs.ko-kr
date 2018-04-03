@@ -1,26 +1,27 @@
 ---
-title: "컬렉션 만들기"
+title: 컬렉션 만들기
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 컬렉션을 만들어 사용자 및 장치 그룹을 더 쉽게 관리합니다."
+description: System Center Configuration Manager에서 컬렉션을 만들어 사용자 및 장치 그룹을 더 쉽게 관리합니다.
 ms.custom: na
 ms.date: 2/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1401a35e-4312-4d3b-8ceb-0abbb10d4f05
-caps.latest.revision: "6"
-caps.handback.revision: "0"
+caps.latest.revision: 6
+caps.handback.revision: 0
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.openlocfilehash: d7f320c53b2b696d3981019dfacccab5796455c8
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 03/27/2018
 ---
 # <a name="how-to-create-collections-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 컬렉션을 만드는 방법
 

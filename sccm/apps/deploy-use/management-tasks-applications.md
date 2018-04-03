@@ -1,25 +1,26 @@
 ---
-title: "응용 프로그램에 대한 관리 작업"
+title: 응용 프로그램에 대한 관리 작업
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 응용 프로그램 및 배포 유형을 관리합니다."
+description: System Center Configuration Manager 응용 프로그램 및 배포 유형을 관리합니다.
 ms.custom: na
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-app
+ms.technology:
+- configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c4041e21-21ff-4d95-ab05-14007e0047cf
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
 ms.openlocfilehash: 8d4cc2cd8de9626b6911dc50dbdec2ccdaada94c
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 03/27/2018
 ---
 # <a name="management-tasks-for-system-center-configuration-manager-applications"></a>System Center Configuration Manager 응용 프로그램에 대한 관리 작업
 
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/12/2017
 |**내보내기**|**응용 프로그램 내보내기 마법사**를 엽니다. 여기에서 선택한 응용 프로그램을 .zip 파일로 내보낸 후에 다른 사이트에 보관하거나 설치할 수 있습니다. 응용 프로그램 콘텐츠를 내보내도록 선택하는 경우 해당 콘텐츠가 포함된 폴더가 만들어집니다.<br /><br /> 또한 응용 프로그램 종속성, 교체 관계 및 조건, 응용 프로그램 및 해당 종속성 콘텐츠를 내보낼 수 있습니다.<br /><br /> Windows PowerShell cmdlet인 **Export-CMApplication**도 이와 동일한 기능을 수행합니다. 자세한 내용은 Microsoft System Center 2012 Configuration Manager SP1 Cmdlet 참조 문서에서 [Export-CMApplication](http://go.microsoft.com/fwlink/p/?LinkID=258880)을 참조하세요.|  
 |**삭제**|현재 선택된 응용 프로그램을 삭제합니다.<br /><br /> 종속된 다른 응용 프로그램이 있거나, 활성 배포가 있거나, 종속된 작업 순서가 있는 경우 응용 프로그램을 삭제할 수 없습니다.|  
 |**배포 시뮬레이트**|**응용 프로그램 배포 시뮬레이트 마법사** 를 엽니다. 이 마법사를 통해 응용 프로그램을 설치하거나 제거하지 않고도 컴퓨터에 대한 응용 프로그램 배포 결과를 테스트할 수 있습니다.<br /><br /> [응용 프로그램 배포 시뮬레이트](../../apps/deploy-use/simulate-application-deployments.md)를 참조하세요.|  
-|**배포:**|**소프트웨어 배포 마법사** 를 엽니다. 여기서 선택한 응용 프로그램을 계층의 컴퓨터 컬렉션에 배포할 수 있습니다.<br /><br /> [응용 프로그램 배포](../../apps/deploy-use/deploy-applications.md)를 참조하세요.|  
+|**배포**|**소프트웨어 배포 마법사** 를 엽니다. 여기서 선택한 응용 프로그램을 계층의 컴퓨터 컬렉션에 배포할 수 있습니다.<br /><br /> [응용 프로그램 배포](../../apps/deploy-use/deploy-applications.md)를 참조하세요.|  
 |**콘텐츠 배포**|**콘텐츠 배포 마법사** 를 엽니다. 여기서 선택한 응용 프로그램의 콘텐츠를 계층의 배포 지점으로 복사할 수 있습니다.<br /><br /> [콘텐츠 및 콘텐츠 인프라 관리](../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.|  
 |**관계 보기**|선택한 응용 프로그램과 다른 응용 프로그램 간의 관계를 보여 주는 그래픽 다이어그램을 표시합니다. 다음 중 하나를 선택합니다.<br><br><ul><li>**종속성** – 선택한 응용 프로그램에 종속된 응용 프로그램과 선택한 응용 프로그램이 종속된 응용 프로그램을 표시합니다.</li><li>**대체** – 선택한 응용 프로그램으로 인해 대체되는 응용 프로그램과 선택한 응용 프로그램을 대체하는 응용 프로그램을 표시합니다.</li><li>**글로벌 조건** - 이 응용 프로그램에서 참조하는 글로벌 조건을 표시합니다.</li></ol><br /> [응용 프로그램 수정 및 대체](../../apps/deploy-use/revise-and-supersede-applications.md) 및 [글로벌 조건 만들기](../../apps/deploy-use/create-global-conditions.md)를 참조하세요.|  
 
