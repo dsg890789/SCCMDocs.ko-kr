@@ -1,20 +1,22 @@
 ---
-title: "Windows 10 장치의 공동 관리"
-description: "Configuration Manager와 Microsoft Intune을 모두 사용하여 Windows 10 장치를 동시에 관리하는 방법을 알아봅니다."
-keywords: 
-author: dougeby
-manager: angrobe
-ms.date: 11/20/2017
+title: Windows 10 장치의 공동 관리
+titleSuffix: Configuration Manager
+description: Configuration Manager와 Microsoft Intune을 모두 사용하여 Windows 10 장치를 동시에 관리하는 방법을 알아봅니다.
+keywords: ''
+author: mestew
+ms.author: mstewart
+manager: dougeby
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: configuration-manager
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 ms.assetid: d6bbc787-83a5-44b4-ad64-016e5da7413f
-ms.openlocfilehash: 0cc11a05013fd9c25ee98ec35adcbe822d8a21fb
-ms.sourcegitcommit: 389c4e5b4e9953b74c13b1689195f99c526fa737
+ms.openlocfilehash: e4b8bd58d30cd87ffc461289edbfc5da9a684cda
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="co-management-for-windows-10-devices"></a>Windows 10 장치의 공동 관리    
 <!-- 1350871 -->
@@ -60,6 +62,10 @@ ms.lasthandoff: 02/09/2018
 
 ### <a name="resource-access-policies"></a>리소스 액세스 정책
 리소스 액세스 정책은 장치에 대한 VPN, Wi-Fi, 전자 메일 및 인증서 설정을 구성합니다. 자세한 내용은 [리소스 액세스 프로필 배포](/sccm/protect/deploy-use/deploy-wifi-vpn-email-cert-profiles)를 참조하세요.
+
+### <a name="endpoint-protection"></a>Endpoint Protection 
+<!-- 1357365 -->
+Configuration Manager 1802부터 Endpoint Protection 워크로드를 Intune으로 전환할 수 있습니다. 자세한 내용은 [워크로드 Intune으로 전환 가능](/sccm/core/clients/manage/co-management-switch-workloads.md#Workloads-able-to-be-transitioned-to-Intune) 및 [Configuration Manager에서 Endpoint Protection](/sccm/protect/deploy-use/endpoint-protection)을 참조합니다.
 
 ## <a name="architectural-overview-for-co-management"></a>공동 관리에 대한 아키텍처 개요
 다음 다이어그램은 공동 관리의 아키텍처 개요 및 기존 구성 및 Intune 인프라에 맞추는 방법을 제공합니다.
