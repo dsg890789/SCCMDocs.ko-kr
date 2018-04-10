@@ -12,7 +12,7 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9181c84e-d74f-44ea-9bb9-f7805eb465fc
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
@@ -34,7 +34,7 @@ ms.lasthandoff: 03/27/2018
 |장치 유형|지원되는 파일 형식|  
 |-----------------|---------------------|  
 |Windows RT 및 Windows RT 8.1|\*.appx, \*.appxbundle|  
-|모바일 장치로 등록된 Windows 8.1 이상|*.appx, \*.appxbundle|  
+|모바일 장치로 등록된 Windows 8.1 이상|\*.appx, \*.appxbundle|  
 
  다음 배포 작업이 지원됩니다.  
 
