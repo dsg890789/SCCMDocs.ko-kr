@@ -1,25 +1,26 @@
 ---
-title: "Endpoint Protection 클라이언트 구성"
+title: Endpoint Protection 클라이언트 구성
 titleSuffix: Configuration Manager
-description: "계층 구조의 컴퓨터 컬렉션에 배포할 수 있는 Endpoint Protection용 사용자 지정 클라이언트 설정을 구성하는 방법을 알아봅니다."
+description: 계층 구조의 컴퓨터 컬렉션에 배포할 수 있는 Endpoint Protection용 사용자 지정 클라이언트 설정을 구성하는 방법을 알아봅니다.
 ms.custom: na
-ms.date: 02/14/2017
+ms.date: 03/22/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: e63f2394-6eb1-4a33-bec5-8377fc62a34e
-caps.latest.revision: "21"
-author: NathBarn
-ms.author: nathbarn
-manager: angrobe
-ms.openlocfilehash: de8f7411219446420a8c8bca00799d8d7d18fd2f
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+caps.latest.revision: 21
+author: mestew
+ms.author: mstewart
+manager: dougeby
+ms.openlocfilehash: 22c56bac25cc6e3129f2e8478bbae9fa8782de9f
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="configure-custom-client-settings-for-endpoint-protection"></a>Endpoint Protection에 대한 사용자 지정 클라이언트 설정 구성
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/12/2017
 이 절차에서는 계층 구조의 컴퓨터 컬렉션에 배포할 수 있는 Endpoint Protection에 대한 사용자 지정 클라이언트 설정을 구성합니다.
 
 > [!IMPORTANT]
->  확실히 계층 구조의 모든 컴퓨터에 적용하려면 기본 Endpoint Protection 클라이언트 설정만 구성합니다.
+>  확실히 계층 구조의 모든 컴퓨터에 적용하려면 기본 Endpoint Protection 클라이언트 설정만 구성합니다. 
 
 ## <a name="to-enable-endpoint-protection-and-configure-custom-client-settings"></a>Endpoint Protection을 사용하도록 설정하고 사용자 지정 클라이언트 설정을 구성하려면
 
@@ -56,20 +57,22 @@ ms.lasthandoff: 10/12/2017
 ## <a name="how-to-provision-the-endpoint-protection-client-in-a-disk-image-in-configuration-manager"></a>Configuration Manager에서 디스크 이미지의 Endpoint Protection 클라이언트 프로비전 방법
 Configuration Manager 운영 체제 배포의 디스크 이미지 원본으로 사용하려는 컴퓨터에 Endpoint Protection 클라이언트를 설치할 수 있습니다. 이 컴퓨터는 일반적으로 참조 컴퓨터라고 합니다. 운영 체제 이미지를 만든 다음 Configuration Manager 운영 체제 배포를 사용하여 Endpoint Protection과 같은 소프트웨어 패키지를 포함할 수 있는 이미지를 클라이언트 컴퓨터에 배포할 수 있습니다.
 
-이 항목의 절차는 참조 컴퓨터에서 Endpoint Protection 클라이언트를 설치하고 구성하는 방법을 설명합니다.
+이 문서의 절차는 참조 컴퓨터에서 Endpoint Protection 클라이언트를 설치하고 구성하는 방법을 설명합니다.
 
 ### <a name="prerequisites-for-installing-the-endpoint-protection-client-on-the-reference-computer"></a>참조 컴퓨터에 Endpoint Protection 클라이언트를 설치하는 데 필요한 필수 구성 요소
 다음 목록에는 참조 컴퓨터에 Endpoint Protection 클라이언트 소프트웨어를 설치하는 데 필요한 필수 구성 요소가 포함되어 있습니다.
 
--   Endpoint Protection 클라이언트 설치 패키지(**scepinstall.exe**)에 대한 액세스 권한이 있어야 합니다. 이 패키지는 사이트 서버에서 Microsoft System Center Configuration Manager 설치 폴더의 **Client** 폴더에서 찾을 수 있습니다.
+-   Endpoint Protection 클라이언트 설치 패키지(**scepinstall.exe**)에 대한 액세스 권한이 있어야 합니다. 이 패키지는 사이트 서버에서 Microsoft System Center Configuration Manager 설치 폴더의 **Client** 폴더에서 찾을 수 있습니다. Windows 10 및 Windows Server 2016에는 Windows Defender가 설치되어 있습니다. 
 
 -   조직에 필요한 구성으로 Endpoint Protection 클라이언트를 배포하려면 맬웨어 방지 정책을 만든 다음 해당 정책을 내보냅니다. 그런 다음 수동으로 Endpoint Protection 클라이언트를 설치할 때 맬웨어 방지 정책을 사용하도록 지정할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 Endpoint Protection에 대한 맬웨어 방지 정책을 만들어 배포하는 방법](endpoint-antimalware-policies.md)을 참조하세요.
 
    > [!NOTE]
-   >  **기본 클라이언트 맬웨어 방지 정책** 은 내보낼 수 없습니다.
+   >  **기본 클라이언트 맬웨어 방지 정책**은 내보낼 수 없습니다.
 
 -   최신 정의를 사용하여 Endpoint Protection 클라이언트를 설치하려면 [Microsoft 맬웨어 보호 센터](http://go.microsoft.com/fwlink/?LinkID=200965)에서 최신 정의를 다운로드해야 합니다.
 
+>[!NOTE]
+> Configuration Manager 1802부터 Windows 10 장치에 Endpoint Protection 에이전트(SCEPInstall)를 설치할 필요가 없습니다. Windows 10 장치에 이미 설치되어 있는 경우 Configuration Manager는 에이전트를 제거하지 않습니다. 관리자는 1802 클라이언트 버전 이상이 실행 중인 Windows 10 장치에서 Endpoint Protection 에이전트를 제거할 수 있습니다. SCEPInstall.exe는 동일한 컴퓨터의 C:\Windows\ccmsetup 위치에 여전히 있을 수 있지만 새 클라이언트 설치 시 다운로드할 수 없습니다. <!--503654-->
 ### <a name="how-to-install-the-endpoint-protection-client-software-on-the-reference-computer"></a>참조 컴퓨터에 Endpoint Protection 클라이언트 소프트웨어를 설치하는 방법
 명령 프롬프트에서 참조 컴퓨터에 로컬로 Endpoint Protection 클라이언트를 설치할 수 있습니다. 그렇게 하려면 먼저 설치 파일( **scepinstall.exe**)을 구해야 합니다. 미리 구성한 맬웨어 방지 정책이나 이전에 내보낸 맬웨어 방지 정책을 사용하여 클라이언트를 설치할 수도 있습니다.
 
@@ -77,7 +80,7 @@ Configuration Manager 운영 체제 배포의 디스크 이미지 원본으로 �
 
 1.  System Center Configuration Manager 설치 미디어의 **Client** 폴더에서 Endpoint Protection 클라이언트 소프트웨어를 설치하려는 컴퓨터로 **scepinstall.exe**를 복사합니다.
 
-2.  관리자 권한으로 명령 프롬프트를 열고 **scepinstall.exe** 가 있는 폴더로 이동한 후 필요한 추가 명령줄 속성을 추가하여 다음 명령을 실행합니다.
+2.  관리자 권한으로 명령 프롬프트를 열고 **scepinstall.exe**가 있는 폴더로 이동한 후 필요한 추가 명령줄 속성을 추가하여 다음 명령을 실행합니다.
 
    ```
    scepinstall.exe
@@ -123,11 +126,11 @@ Configuration Manager 운영 체제 배포의 디스크 이미지 원본으로 �
 
 ### <a name="to-verify-that-the-endpoint-protection-client-is-installed-correctly"></a>Endpoint Protection 클라이언트가 올바르게 설치되었는지 확인하려면
 
-1.  참조 컴퓨터의 Windows 알림에서 **System Center Endpoint Protection**을 엽니다.
+1.  참조 컴퓨터의 Windows 알림 영역에서 **System Center Endpoint Protection**을 엽니다.
 
 2.  **System Center Endpoint Protection** 대화 상자의 **홈** 탭에서 **실시간 보호**가 **설정**으로 설정되었는지 확인합니다.
 
-3.  **바이러스 및 스파이웨어 정의** 에 대해 **최신 상태**가 표시되는지 확인합니다.
+3.  **바이러스 및 스파이웨어 정의**에 대해 **최신 상태**가 표시되는지 확인합니다.
 
 4.  참조 컴퓨터가 이미징을 위해 준비되었는지 확인하려면 **검사 옵션**아래에서 **전체**를 선택한 다음 **지금 검사**를 클릭합니다.
 

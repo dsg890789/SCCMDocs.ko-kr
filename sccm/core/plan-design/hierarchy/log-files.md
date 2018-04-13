@@ -1,9 +1,9 @@
 ---
-title: "문제 해결을 위한 로그 파일"
+title: 문제 해결을 위한 로그 파일
 titleSuffix: Configuration Manager
-description: "로그 파일을 사용하여 System Center Configuration Manager 계층 구조의 문제를 해결할 수 있습니다."
+description: 로그 파일을 사용하여 Configuration Manager 클라이언트 및 사이트 시스템 문제를 해결할 수 있습니다.
 ms.custom: na
-ms.date: 02/14/2018
+ms.date: 03/22/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,24 +12,24 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c1ff371e-b0ad-4048-aeda-02a9ff08889e
-caps.latest.revision: 
-caps.handback.revision: 
+caps.latest.revision: 9
+caps.handback.revision: 0
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b0f15b0c7cf983234f41e3f202be7d46ce4954e2
-ms.sourcegitcommit: fbd4a9d2fa8ed4ddd3a0fecc4a2ec4fc0ccc3d0c
+ms.openlocfilehash: 471730e056ca512f300ead234b9a8a9e4f10a835
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="log-files-in-system-center-configuration-manager"></a>System Center Configuration Manager의 로그 파일
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager에서는 클라이언트 및 사이트 서버 구성 요소가 개별 로그 파일에 프로세스 정보를 기록합니다. 로그 파일의 정보를 사용하면 Configuration Manager 계층 구조에서 발생할 수 있는 문제를 해결할 수 있습니다. Configuration Manager에서는 기본적으로 클라이언트 및 서버 구성 요소 로깅을 사용하도록 설정되어 있습니다.   
+Configuration Manager에서는 클라이언트 및 사이트 서버 구성 요소가 개별 로그 파일에 프로세스 정보를 기록합니다. 이러한 로그 파일의 정보를 사용하면 발생할 수 있는 문제를 해결할 수 있습니다. Configuration Manager에서는 기본적으로 클라이언트 및 서버 구성 요소 로깅을 사용하도록 설정됩니다.   
 
- 다음 섹션에는 제공되는 여러 가지 로그 파일에 대한 자세한 정보가 나와 있습니다. 이 정보를 사용하면 작업 정보에 대한 Configuration Manager 클라이언트 및 서버 로그를 보거나 모니터링하고, 문제를 해결하는 데 도움이 되는 오류 정보를 확인할 수 있습니다.  
+ 다음 섹션에는 제공되는 여러 가지 로그 파일에 대한 자세한 정보가 나와 있습니다. 작업 정보에 대한 Configuration Manager 클라이언트 및 서버 로그를 모니터링하고, 오류 정보를 보고 문제를 해결할 수 있습니다.  
 
 -   [Configuration Manager 로그 파일 정보](#BKMK_AboutLogs)  
 
@@ -125,7 +125,7 @@ System Center Configuration Manager에서는 클라이언트 및 사이트 서�
  로그를 보려면 Configuration Manager 로그 뷰어 도구인 CMTrace를 사용하면 됩니다. 이 도구는 Configuration Manager 원본 미디어의 \\SMSSetup\\Tools 폴더에 있습니다. CMTrace 도구는 소프트웨어 라이브러리에 추가된 모든 부팅 이미지에 추가됩니다.  
 
 ###  <a name="BKMK_LogOptions"></a> Configuration Manager Service Manager를 사용하여 로깅 옵션 구성  
- Configuration Manager에서 로그 파일이 저장되는 위치 및 로그 파일 크기를 변경할 수 있습니다.  
+ Configuration Manager가 로그 파일을 저장하는 위치 및 크기를 변경할 수 있습니다.  
 
  로그 파일의 크기를 수정하거나, 로그 파일의 이름과 위치를 변경하거나, 여러 구성 요소가 하나의 로그 파일에 기록하도록 하려면 다음 단계를 따르세요.  
 
@@ -141,7 +141,7 @@ System Center Configuration Manager에서는 클라이언트 및 사이트 서�
 8.  **확인**을 선택하여 구성을 저장합니다.  
 
 ###  <a name="BKMK_LogLocation"></a> Configuration Manager 로그 찾기  
-Configuration Manager 로그 파일은 로그 파일을 만드는 프로세스 및 사이트 시스템의 구성에 따라 여러 위치에 저장됩니다. 컴퓨터의 로그 위치는 달라질 수 있으므로 특정 시나리오의 문제를 해결해야 하는 경우 검색 기능을 사용하여 Configuration Manager 컴퓨터에서 관련 로그 파일을 찾습니다.  
+Configuration Manager는 다양한 위치에 로그 파일을 저장합니다. 이러한 위치는 로그 파일을 만드는 프로세스 및 사이트 시스템 구성에 따라 달라집니다. 컴퓨터의 로그 위치는 달라질 수 있으므로 특정 시나리오의 문제를 해결해야 하는 경우 검색 기능을 사용하여 Configuration Manager 컴퓨터에서 관련 로그 파일을 찾습니다.  
 
 ##  <a name="BKMK_ClientLogs"></a> Configuration Manager 클라이언트 로그  
 다음 섹션에는 클라이언트 작업 및 클라이언트 설치와 관련된 로그 파일이 나와 있습니다.  
@@ -152,7 +152,7 @@ Configuration Manager 로그 파일은 로그 파일을 만드는 프로세스 �
 |로그 이름|설명|  
 |--------------|-----------------|  
 |CAS.log|콘텐츠 액세스 서비스입니다. 클라이언트의 로컬 패키지 캐시를 유지 관리합니다.|  
-|Ccm32BitLauncher.log|“32비트로 실행”으로 표시된 클라이언트에서 응용 프로그램을 시작하는 작업을 기록합니다.|  
+|Ccm32BitLauncher.log|*32비트로 실행*으로 표시된 클라이언트에서 응용 프로그램을 시작하는 작업을 기록합니다.|  
 |CcmEval.log|Configuration Manager 클라이언트 상태 평가 활동 및 Configuration Manager 클라이언트에 필요한 구성 요소에 관한 세부 정보를 기록합니다.|  
 |CcmEvalTask.log|평가 예약 작업에 의해 시작된 Configuration Manager 클라이언트 상태 평가 활동을 기록합니다.|  
 |CcmExec.log|클라이언트 및 SMS 에이전트 호스트 서비스의 활동을 기록합니다. 이 로그 파일에는 절전 모드 해제 프록시를 사용하거나 사용하지 않도록 설정하는 작업에 대한 정보도 포함됩니다.|  
@@ -223,7 +223,7 @@ Configuration Manager 로그 파일은 로그 파일을 만드는 프로세스 �
  Linux 및 UNIX용 Configuration Manager 클라이언트는 다음 로그 파일에 정보를 기록합니다.  
 
 > [!TIP]  
->  누적 업데이트 1의 Linux 및 UNIX용 클라이언트부터는 CMTrace를 사용하여 Linux 및 UNIX용 클라이언트의 로그 파일을 볼 수 있습니다.  
+>  CMTrace를 사용하여 Linux 및 UNIX 클라이언트의 로그 파일을 봅니다.  
 
 > [!NOTE]  
 >  Linux 및 UNIX용 클라이언트의 최초 릴리스를 사용하는 경우 이 섹션의 설명서를 참조할 때 각 파일 또는 프로세스에 대한 다음 참조를 대체하세요.  
@@ -338,7 +338,8 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |sinvproc.log|사이트 데이터베이스에 대한 소프트웨어 인벤토리 데이터의 처리에 대한 정보를 기록합니다.|사이트 서버|  
 |sitecomp.log|사이트의 모든 사이트 시스템 서버에 설치된 사이트 구성 요소의 유지 관리 관련 세부 정보를 기록합니다.|사이트 서버|  
 |sitectrl.log|데이터베이스의 사이트 제어 개체에 적용된 사이트 설정 변경 내용을 기록합니다.|사이트 서버|  
-|sitestat.log|모든 사이트 시스템의 가용성 및 디스크 공간 모니터링 프로세스를 기록합니다.|사이트 서버|  
+|sitestat.log|모든 사이트 시스템의 가용성 및 디스크 공간 모니터링 프로세스를 기록합니다.|사이트 서버|
+|SMS_PhasedDeployment.log| 단계별 배포에 대한 로그 파일, Configuration Manager 버전 1802부터 시작하는 시험판 기능.|Configuration Manager 계층 구조의 최상위 사이트|   
 |SmsAdminUI.log|Configuration Manager 콘솔 작업을 기록합니다.|Configuration Manager 콘솔을 실행하는 컴퓨터|  
 |SMSAWEBSVCSetup.log|응용 프로그램 카탈로그 웹 서비스의 설치 작업을 기록합니다.|사이트 시스템 서버|  
 |smsbkup.log|사이트 백업 프로세스의 출력을 기록합니다.|사이트 서버|  
@@ -516,16 +517,15 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 
 다음 표에는 클라우드 관리 게이트웨이와 관련된 정보가 포함된 로그 파일이 나와 있습니다.
 
-||||
-|-|-|-|
 |로그 이름|설명|로그 파일이 있는 컴퓨터|
-|CloudMgr.log|클라우드 관리 게이트웨이 서비스 배포, 지속적인 서비스 상태 및 서비스와 연결된 사용 데이터에 대한 세부 정보를 기록합니다.<br>레지스트리 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SMS\COMPONENTS\SMS_CLOUD_SERVICES_MANAGER\Logging level**을 편집하여 로깅 수준을 구성할 수 있습니다.|기본 사이트 서버 또는 CA의 *installdir* 폴더|
-|CMGSetup.log 또는 CMG-*RoleInstanceID*-CMGSetup.log<sup>1</sup>|클라우드 관리 게이트웨이 배포의 두 번째 단계(Azure의 로컬 배포)에 대한 세부 정보를 기록합니다.<br>**Azure 포털\클라우드 서비스 구성** 탭에서 설정 **추적 수준**(**정보**(기본값), **자세한 정보**, **오류**)을 사용하여 로깅 수준을 구성할 수 있습니다.|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
-|CMGHttpHandler.log 또는 CMG-*RoleInstanceID*- CMGHttpHandler.log<sup>1</sup>|Azure에서 인터넷 정보 서비스와 바인딩하는 클라우드 관리 게이트웨이 HTTP 처리기에 대한 세부 정보를 기록합니다.<br>**Azure 포털\클라우드 서비스 구성** 탭에서 설정 **추적 수준**(**정보**(기본값), **자세한 정보**, **오류**)을 사용하여 로깅 수준을 구성할 수 있습니다.|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
-|CMGService.log 또는 CMG-*RoleInstanceID*- CMGService.log<sup>1</sup>|Azure의 클라우드 관리 게이트웨이 핵심 구성 요소에 대한 세부 정보를 기록합니다.<br>**Azure 포털\클라우드 서비스 구성** 탭에서 설정 **추적 수준**(**정보**(기본값), **자세한 정보**, **오류**)을 사용하여 로깅 수준을 구성할 수 있습니다.|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
-|SMS_Cloud_ProxyConnector.log|클라우드 관리 게이트웨이 서비스와 클라우드 관리 게이트웨이 연결 지점 간에 연결을 설정하는 방법에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|
+|--------------|-----------------|----------------------------|  
+|CloudMgr.log|클라우드 관리 게이트웨이 서비스 배포, 지속적인 서비스 상태 및 서비스와 연결된 사용 데이터에 대한 세부 정보를 기록합니다.<br>레지스트리 키 HKLM\SOFTWARE\ Microsoft\SMS\COMPONENTS\ SMS_CLOUD_ SERVICES_MANAGER의 **로깅 수준** 값을 편집하여 로깅 수준을 구성할 수 있습니다.|기본 사이트 서버 또는 CA의 *installdir* 폴더|
+|CMGSetup.log<sup>1</sup>|클라우드 관리 게이트웨이 배포의 두 번째 단계(Azure의 로컬 배포)에 대한 세부 정보를 기록합니다.<br>**Azure 포털\클라우드 서비스 구성** 탭에서 설정 **추적 수준**(**정보**(기본값), **자세한 정보**, **오류**)을 사용하여 로깅 수준을 구성할 수 있습니다.|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
+|CMGHttpHandler.log<sup>1</sup>|Azure에서 인터넷 정보 서비스와 바인딩하는 클라우드 관리 게이트웨이 HTTP 처리기에 대한 세부 정보를 기록합니다.<br>**Azure 포털\클라우드 서비스 구성** 탭에서 설정 **추적 수준**(**정보**(기본값), **자세한 정보**, **오류**)을 사용하여 로깅 수준을 구성할 수 있습니다.|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
+|CMGService.log<sup>1</sup>|Azure의 클라우드 관리 게이트웨이 핵심 구성 요소에 대한 세부 정보를 기록합니다.<br>**Azure 포털\클라우드 서비스 구성** 탭에서 설정 **추적 수준**(**정보**(기본값), **자세한 정보**, **오류**)을 사용하여 로깅 수준을 구성할 수 있습니다.|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
+|SMS_Cloud_</br>ProxyConnector.log|클라우드 관리 게이트웨이 서비스와 클라우드 관리 게이트웨이 연결 지점 간에 연결을 설정하는 방법에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|
 
-<sup>1</sup> 클라우드 서비스 관리자가 5분마다 Azure 저장소에서 동기화하는 로컬 Configuration Manager 로그 파일입니다. 클라우드 관리 게이트웨이는 5분마다 로그를 Azure Storage에 푸시합니다. 따라서 최대 지연은 10분입니다. 자세한 정보 스위치는 로컬 및 원격 로그 둘 다에 영향을 미칩니다.
+<sup>1</sup> 클라우드 서비스 관리자가 5분마다 Azure 저장소에서 동기화하는 로컬 Configuration Manager 로그 파일입니다. 클라우드 관리 게이트웨이는 5분마다 로그를 Azure Storage에 푸시합니다. 따라서 최대 지연은 10분입니다. 자세한 정보 스위치는 로컬 및 원격 로그 둘 다에 영향을 미칩니다. 실제 파일 이름에는 서비스 이름 및 역할 인스턴스 식별자가 포함됩니다. 예: CMG-*ServiceName*-*RoleInstanceID*-CMGSetup.log
 
 - 배포 문제 해결에는 **CloudMgr.log** 및 **CMGSetup.log**를 사용합니다.
 - 서비스 상태 문제 해결에는 **CMGService.log** 및 **SMS_Cloud_ProxyConnector.log**를 사용합니다.
@@ -710,7 +710,8 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |smpmsi.log|상태 마이그레이션 지점에 대한 설치 및 구성 세부 정보를 기록합니다.|사이트 시스템 서버|  
 |smpperf.log|상태 마이그레이션 지점 성능 카운터 업데이트를 기록합니다.|사이트 시스템 서버|  
 |smspxe.log|PXE 부팅을 사용하는 클라이언트에 보낸 응답에 대한 세부 정보 및 부팅 이미지 및 부팅 파일의 확장에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|  
-|smssmpsetup.log|상태 마이그레이션 지점에 대한 설치 및 구성 세부 정보를 기록합니다.|사이트 시스템 서버|  
+|smssmpsetup.log|상태 마이그레이션 지점에 대한 설치 및 구성 세부 정보를 기록합니다.|사이트 시스템 서버|
+| SMS_PhasedDeployment.log| 단계별 배포에 대한 로그 파일, Configuration Manager 버전 1802부터 시작하는 시험판 기능.|Configuration Manager 계층 구조의 최상위 사이트| 
 |Smsts.log|작업 순서 활동을 기록합니다.|클라이언트|  
 |TSAgent.log|작업 순서를 시작하기 전에 작업 순서 종속성의 결과를 기록합니다.|클라이언트|  
 |TaskSequenceProvider.log|작업 순서를 가져오거나 내보내거나 편집할 때 작업 순서에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|  

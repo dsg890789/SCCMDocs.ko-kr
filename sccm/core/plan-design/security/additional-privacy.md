@@ -1,20 +1,22 @@
 ---
-title: "System Center Configuration Manager 개인 정보 취급 방침 - 추가 정보"
-description: "Microsoft가 System Center Configuration Manager 배포에서 데이터를 수집하고 사용하는 방법에 대해 알아봅니다."
+title: 개인정보처리방침 - 추가 정보
+titleSuffix: Configuration Manager
+description: Microsoft가 System Center Configuration Manager에서 데이터를 수집하고 사용하는 방법에 대해 알아봅니다.
 ms.custom: na
-ms.date: 10/13/2017
+ms.date: 03/22/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1fcc921f-085f-4b0b-9c53-1e0707211076
-caps.latest.revision: "5"
-caps.handback.revision: "0"
+caps.latest.revision: 5
+caps.handback.revision: 0
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
+manager: dougeby
 translation.priority.ht:
 - cs-cz
 - de-de
@@ -34,11 +36,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 5332d02f4d128516f310a2edff897b4efc5b971b
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+ms.openlocfilehash: eb557a29b1412e136023b3e6caddf358732659e9
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="additional-information-about-privacy-for-system-center-configuration-manager"></a>System Center Configuration Manager의 개인 정보 보호에 대한 추가 정보
 
@@ -57,18 +59,22 @@ Configuration Manager는 사이트 SQL Server 데이터베이스에서만 데이
 
 관리자는 Configuration Manager 콘솔의 **사용 현황 데이터** 섹션으로 이동하여 수집된 데이터의 수준을 변경할 수 있습니다.
 
-자세한 내용은 [System Center Configuration Manager의 진단 및 사용 현황 데이터](http://go.microsoft.com/fwlink/?LinkID=626566)에서 사용 현황 데이터 수준 및 설정에 대한 “자세히” 문서를 참조하세요.
+자세한 내용은 [System Center Configuration Manager의 진단 및 사용 현황 데이터](https://go.microsoft.com/fwlink/?LinkID=626566)에서 사용 현황 데이터 수준 및 설정에 대한 “자세히” 문서를 참조하세요.
 
 
 ## <a name="customer-experience-improvement-program"></a>사용자 환경 개선 프로그램
+
+> [!Note]  
+> Configuration Manager 버전 1802부터 CEIP 기능은 제품에서 제거됩니다.
+
 "CEIP"(사용자 환경 개선 프로그램)는 사용 패턴과 경향을 파악하기 위해 Configuration Manager 콘솔에서 사용자의 하드웨어 구성과 소프트웨어 및 서비스 사용 방식에 대한 기본 정보를 수집하는 기능입니다. 또한 CEIP는 발생한 오류 유형과 개수, 소프트웨어 및 하드웨어 성능, 서비스의 속도를 수집합니다. 그러나 사용자 이름, 주소 또는 기타 연락처 정보는 수집하지 않습니다. 또한 클라이언트 컴퓨터에서는 어떤 CEIP 데이터도 수집하지 않습니다.
 
 수집된 정보는 Microsoft 소프트웨어 및 서비스의 품질, 안정성 및 성능을 개선하는 데 사용됩니다.
 
-CEIP를 통해 수집, 처리 또는 전송되는 정보에 대한 자세한 내용은 [CEIP 개인정보취급방침](http://go.microsoft.com/fwlink/?LinkID=525211)을 참조하세요.
+CEIP를 통해 수집, 처리 또는 전송되는 정보에 대한 자세한 내용은 [CEIP 개인정보취급방침](https://go.microsoft.com/fwlink/?LinkID=525211)을 참조하세요.
 
 ## <a name="operations-management-suite-connector"></a>Operations Management Suite 커넥터
-Microsoft Operations Management Suite 커넥터는 System Center Configuration Manager의 컬렉션과 같은 데이터를 Microsoft Operations Management Suite에 동기화합니다. Microsoft Azure 구독 ID와 비밀 키는 관리자가 기능을 구성하는 경우 Configuration Manager 데이터베이스에 저장됩니다. Azure Active Directory 클라이언트 암호 및 Microsoft Operations Management Suite 작업 영역 공유 키는 모두 온-프레미스 System Center Configuration Manager 데이터베이스에 저장됩니다. System Center Configuration Manager와 Microsoft Operations Management Suite 간의 모든 통신은 HTTPS를 사용합니다. 컬렉션에 대한 추가 정보는 임의 원격 분석 데이터 외부에서 Microsoft에 제공되지 않습니다. Microsoft Operations Management Suite가 수집하는 정보에 대한 자세한 내용은 [로그 분석 보안](http://go.microsoft.com/fwlink/?LinkId=823545)을 참조하세요.
+Microsoft Operations Management Suite 커넥터는 System Center Configuration Manager의 컬렉션과 같은 데이터를 Microsoft Operations Management Suite에 동기화합니다. Microsoft Azure 구독 ID와 비밀 키는 관리자가 기능을 구성하는 경우 Configuration Manager 데이터베이스에 저장됩니다. Azure Active Directory 클라이언트 암호 및 Microsoft Operations Management Suite 작업 영역 공유 키는 모두 온-프레미스 System Center Configuration Manager 데이터베이스에 저장됩니다. System Center Configuration Manager와 Microsoft Operations Management Suite 간의 모든 통신은 HTTPS를 사용합니다. 컬렉션에 대한 추가 정보는 임의 원격 분석 데이터 외부에서 Microsoft에 제공되지 않습니다. Microsoft Operations Management Suite가 수집하는 정보에 대한 자세한 내용은 [로그 분석 보안](https://go.microsoft.com/fwlink/?LinkId=823545)을 참조하세요.
 
 ## <a name="asset-intelligence"></a>Asset Intelligence
 Asset Intelligence를 통해 IT 관리자는 구성 표준에 대한 준수를 정의 및 추적하고, 사전 예방적으로 관리할 수 있습니다. 배포에 대한 계량 및 보고와 실제 및 가상 응용 프로그램 사용을 통해 조직은 소프트웨어 라이선스에 대한 비즈니스 결정을 더욱 원활하게 내릴 수 있고 라이선싱 계약을 준수할 수 있습니다. Configuration Manager 클라이언트의 사용량 데이터를 수집한 후 관리자는 여러 기능을 사용하여 컬렉션, 쿼리, 보고 등의 데이터를 볼 수 있습니다.
@@ -96,16 +102,16 @@ Microsoft 클라우드 보호 서비스 보고서는 Microsoft 소프트웨어 �
 
 Microsoft 클라우드 보호 서비스는 개인 정보를 의도적으로 수집하지 않습니다. Microsoft 클라우드 보호 서비스에서 개인 정보를 수집하는 경우 Microsoft는 사용자를 식별하거나 사용자에게 연락하는 데 이러한 정보를 사용하지 않습니다.
 
-수집된 데이터에 대한 추가적인 세부 정보는 [System Center Configuration Manager의 Endpoint Protection](http://go.microsoft.com/fwlink/?LinkId=823547)에 있는 제품 문서에서 찾을 수 있습니다.
+수집된 데이터에 대한 추가적인 세부 정보는 [System Center Configuration Manager의 Endpoint Protection](https://go.microsoft.com/fwlink/?LinkId=823547)에 있는 제품 문서에서 찾을 수 있습니다.
 
 ## <a name="site-hierarchy--geographical-view-with-bing-maps"></a>사이트 계층 - Bing 지도를 사용하는 지리적 보기
 사이트 계층 구조 – 지리적 보기를 통해 Microsoft Bing 지도에서 제공하는 지도를 사용하여 Configuration Manager 실제 서버 토폴로지를 볼 수 있도록 합니다. 이 기능을 사용할 수 있도록 사용자 서버에서 Bing 지도 웹 서비스로 사용자가 제공한 위치 정보가 전송됩니다.
 
-Microsoft는 정보를 사용하여 Microsoft Bing 지도와 기타 Microsoft 사이트 및 서비스를 작동하고 개선합니다. 자세한 내용은 [Microsoft 개인정보취급방침](http://go.microsoft.com/fwlink/?LinkId=823548)을 참조하세요.
+Microsoft는 정보를 사용하여 Microsoft Bing 지도와 기타 Microsoft 사이트 및 서비스를 작동하고 개선합니다. 자세한 내용은 [Microsoft 개인정보취급방침](https://go.microsoft.com/fwlink/?LinkId=823548)을 참조하세요.
 사이트 계층에 대한 지리적 보기를 사용하지 않도록 선택할 수 있습니다. 계층 구조 다이어그램 보기에서 계층 구조를 볼 수 있으며, 이 보기에서는 Bing 지도 서비스가 사용되지 않습니다.
 
 ## <a name="microsoft-intune-subscription"></a>Microsoft Intune 구독
-Microsoft Intune의 구독을 구매한 고객은 Configuration Manager를 사용하여 Microsoft Intune을 통해 연결된 모바일 장치를 관리할 수 있습니다. [Microsoft Online Services 개인정보취급방침](http://go.microsoft.com/fwlink/?LinkId=262214)은 Microsoft Intune을 비롯한 Microsoft Online Services에 적용됩니다. 고객이 Microsoft Intune도 구독하고 있는 경우에도 [Microsoft Online Services 개인정보취급방침](http://go.microsoft.com/fwlink/?LinkId=262214)은 이 개인정보취급방침과 함께 확인해야 합니다.
+Microsoft Intune의 구독을 구매한 고객은 Configuration Manager를 사용하여 Microsoft Intune을 통해 연결된 모바일 장치를 관리할 수 있습니다. [Microsoft Online Services 개인정보취급방침](https://go.microsoft.com/fwlink/?LinkId=262214)은 Microsoft Intune을 비롯한 Microsoft Online Services에 적용됩니다. 고객이 Microsoft Intune도 구독하고 있는 경우에도 [Microsoft Online Services 개인정보취급방침](https://go.microsoft.com/fwlink/?LinkId=262214)은 이 개인정보취급방침과 함께 확인해야 합니다.
 
 Microsoft Intune과의 모든 통신은 HTTPS를 사용합니다. Microsoft Intune 구독을 구성하고 iOS 지원 구성에 필요한 CSR(인증서 서명 요청)을 다운로드하려면 관리자가 회사 계정 및 암호를 사용하여 Microsoft Intune에 로그인해야 합니다. 이러한 자격 증명은 Configuration Manager에 저장되지 않습니다. Microsoft Intune과의 모든 다른 통신은 Microsoft Intune에서 자동으로 생성되는 PKI 인증서를 사용하여 인증됩니다.
 

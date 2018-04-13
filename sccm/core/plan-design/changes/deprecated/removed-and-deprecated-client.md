@@ -1,9 +1,9 @@
 ---
-title: "Deprecated for Configuration Manager 클라이언트"
+title: Deprecated for Configuration Manager 클라이언트
 titleSuffix: Configuration Manager
-description: "클라이언트에 대해 System Center Configuration Manager에서 더 이상 지원되지 않는 기능, 제품 및 운영 체제에 대해 알아봅니다."
+description: 클라이언트에 대해 System Center Configuration Manager에서 더 이상 지원되지 않는 기능, 제품 및 운영 체제에 대해 알아봅니다.
 ms.custom: na
-ms.date: 01/25/2018
+ms.date: 03/22/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,16 +12,16 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 604ab835-bce3-4fe3-a7f3-3f059cfc0ecf
-caps.latest.revision: 
-caps.handback.revision: 
+caps.latest.revision: 15
+caps.handback.revision: 0
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 36b548eb4061eb16aa41f7f65ab53c185df3491d
-ms.sourcegitcommit: b13da5ad8ffd58e3b89fa6d7170e1dec3ff130a4
+ms.openlocfilehash: a745a67e3f3f4c61b3fa3f863cdb25d74ca6cbf8
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="removed-and-deprecated-items-for-system-center-configuration-manager-clients"></a>System Center Configuration Manager 클라이언트에서 제거된 기능과 사용되지 않는 항목
 
@@ -37,6 +37,7 @@ ms.lasthandoff: 02/01/2018
 
 |**운영 체제**|**처음 중단 발표**|**제거된 지원**|  
 |-|-|-|
+|Linux 및 UNIX|2018년 3월 22일||
 |Windows 8: Professional, Enterprise|2018년 1월 12일||
 |Windows Embedded 8 Pro|2018년 1월 12일||
 |Windows Embedded 8 Industry|2018년 1월 12일||

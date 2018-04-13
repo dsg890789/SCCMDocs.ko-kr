@@ -1,28 +1,31 @@
 ---
-title: "Configuration Manager 워크로드를 Intune으로 전환"
-description: "Configuration Manager에서 현재 관리하고 있는 워크로드를 Microsoft Intune으로 전환하는 방법을 알아봅니다."
-keywords: 
-author: dougeby
-manager: angrobe
-ms.date: 11/20/2017
-ms.topic: article
+title: Configuration Manager 워크로드를 Intune으로 전환
+titleSuffix: System Center Configuration Manager
+description: Configuration Manager에서 현재 관리하고 있는 워크로드를 Microsoft Intune으로 전환하는 방법을 알아봅니다.
 ms.prod: configuration-manager
-ms.service: 
-ms.technology: 
+ms.suite: na
+ms.technology:
+- configmgr-client
+author: mestew
+ms.author: mstewart
+manager: dougeby
+ms.date: 03/22/2018
+ms.topic: article
+ms.service: ''
 ms.assetid: 60e2022f-a4f9-40dd-af01-9ecb37b43878
-ms.openlocfilehash: 60aff996ec598cff7572a0e88c631dc9c509e007
-ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
+ms.openlocfilehash: cdfe52768499b929db473ac08d42207059965ffd
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="switch-configuration-manager-workloads-to-intune"></a>Configuration Manager 워크로드를 Intune으로 전환
-[공동 관리를 위해 Windows 10 장치 준비](co-management-prepare.md)에서 공동 관리를 위해 Windows 10 장치를 준비했습니다. 이제 이러한 장치가 AD와 Azure AD에 조인되고 Intune에 등록되고 Configuration Manager 클라이언트를 포함합니다. Windows 10 장치가 AD에 조인되고 Configuration Manager 클라이언트를 포함했지만 Azure AD에 되거나 Intune에 등록되지 않았습니다. 다음 절차에서는 공동 관리를 사용하고, 공동 관리를 위해 나머지 Windows 10 장치(Intune에 등록되지 않은 Configuration Manager 클라이언트)를 준비하고, 특정 Configuration Manager 워크로드를 Intune으로 전환하기 시작할 수 있는 단계를 제공합니다.
+[공동 관리를 위해 Windows 10 장치 준비](co-management-prepare.md)에서 공동 관리를 위해 Windows 10 장치를 준비했습니다. 이러한 장치가 AD, Azure AD에 조인되고 Intune에 등록되고 Configuration Manager 클라이언트를 포함합니다. Windows 10 장치가 AD에 조인되고 Configuration Manager 클라이언트를 포함했지만 Azure AD에 되거나 Intune에 등록되지 않았습니다. 다음 절차에서는 공동 관리를 사용하고, 공동 관리를 위해 나머지 Windows 10 장치(Intune에 등록되지 않은 Configuration Manager 클라이언트)를 준비하고, 특정 Configuration Manager 워크로드를 Intune으로 전환하기 시작할 수 있는 단계를 제공합니다.
 
 1. Configuration Manager 콘솔에서 **관리** > **개요** > **클라우드 서비스** > **공동 관리**로 이동합니다.    
 2. [홈] 탭의 [관리] 그룹에서  **공동 관리 구성**을 선택하여 공동 관리 구성 마법사를 엽니다.    
 3. 구독 페이지에서 **로그인**을 클릭하고 Intune 테넌트에 로그인하고 **다음**을 클릭합니다.   
-4. [사용 여부] 페이지에서 **파일럿** 또는 **모두**를 선택하여 Intune에서 자동 등록을 사용하도록 설정하고 **다음**을 클릭합니다. **파일럿**을 선택하는 경우 파일럿 그룹의 멤버인 Configuration manager 클라이언트만이 Intune에서 자동으로 등록됩니다. 이 기능을 사용하면 클라이언트의 하위 집합에서 공동 관리를 사용하여 처음에 공동 관리를 테스트하고 단계적 접근을 사용하여 공동 관리를 롤아웃할 수 있습니다. 명령줄을 사용하여 이미 Intune에 등록된 장치에 대해 Intune에서 Configuration Manager 클라이언트를 앱으로 배포할 수 있습니다. 자세한 내용은 [Intune에 등록된 Windows 10 장치](co-management-prepare.md#windows-10-devices-enrolled-in-intune)를 참조하세요.
+4. [사용 여부] 페이지에서 **파일럿** 또는 **모두**를 선택하여 Intune에서 자동 등록을 사용하도록 설정하고 **다음**을 클릭합니다. **파일럿**을 선택하는 경우 파일럿 그룹의 멤버인 Configuration manager 클라이언트만이 Intune에서 자동으로 등록됩니다. 이 옵션을 사용하면 클라이언트의 하위 집합에서 공동 관리를 사용하여 처음에 공동 관리를 테스트하고 단계적 접근을 사용하여 공동 관리를 롤아웃할 수 있습니다. 명령줄을 사용하여 이미 Intune에 등록된 장치에 대해 Intune에서 Configuration Manager 클라이언트를 앱으로 배포할 수 있습니다. 자세한 내용은 [Intune에 등록된 Windows 10 장치](co-management-prepare.md#windows-10-devices-enrolled-in-intune)를 참조하세요.
 5. [워크로드] 페이지에서 Configuration Manager 워크로드를 Pilot Intune 또는 Intune에서 관리하도록 전환할지 여부를 선택하고 **다음**을 클릭합니다. **Pilot Intune** 설정은 파일럿 그룹의 장치에 대해서만 관련된 워크로드를 전환합니다. **Intune** 설정은 공동 관리되는 모든 Windows 10 장치에 대해 관련된 워크로드를 전환합니다. 
         
    > [!Important]    
@@ -36,6 +39,24 @@ ms.lasthandoff: 11/21/2017
 마법사를 사용하여 공동 관리를 사용하도록 설정하면 공동 관리 속성에서 설정을 수정할 수 있습니다.  
 - Configuration Manager 콘솔에서 **관리** > **개요** > **클라우드 서비스** > **공동 관리**로 이동합니다.  
 공동 관리 개체를 선택한 다음 [홈] 탭에서 **속성**을 클릭합니다. 
+
+## <a name="workloads-able-to-be-transitioned-to-intune"></a>Intune으로 전환될 수 있는 워크로드
+특정 워크로드는 Intune을 통해 전환될 수 있습니다. 다음 목록은 전환에 사용할 수 있는 워크로드로 업데이트됩니다.
+1. 장치 준수 정책
+2. 리소스 액세스 정책
+3. Windows 업데이트 정책
+4. Endpoint Protection(Configuration Manager 버전 1802부터)
+      - Windows Defender 바이러스 백신
+      - Windows Defender Application Guard
+      - Windows Defender 방화벽
+      - Windows Defender SmartScreen
+      - Windows 암호화
+      - Windows Defender Exploit Guard
+      - Windows Defender Application Control
+      - Windows Defender Security Center
+      - Windows Defender Advanced Threat Protection
+
+
 
 ## <a name="monitor-co-management"></a>공동 관리 모니터링
 공동 관리를 사용하도록 설정하면 다음 방법을 사용하여 공동 관리 장치를 모니터링할 수 있습니다.
@@ -58,3 +79,4 @@ Intune으로 전환한 워크로드를 관리하는 데 도움이 되는 다음 
 - [장치 준수 정책](https://docs.microsoft.com/intune/device-compliance-get-started)
 - [리소스 액세스 정책](https://docs.microsoft.com/intune/device-profiles)
 - [비즈니스용 Windows 업데이트 정책](https://docs.microsoft.com/intune/windows-update-for-business-configure)
+- [Microsoft Intune용 Endpoint Protection](https://docs.microsoft.com/intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
