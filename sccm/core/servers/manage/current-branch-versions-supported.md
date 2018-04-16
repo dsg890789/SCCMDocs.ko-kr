@@ -1,26 +1,27 @@
 ---
-title: "현재 분기 버전"
+title: 현재 분기 버전
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager의 버전 기록을 검토하고 제공하는 서비스의 단계에 대해 알아봅니다."
+description: System Center Configuration Manager의 버전 기록을 검토하고 제공하는 서비스의 단계에 대해 알아봅니다.
 ms.custom: na
-ms.date: 11/22/2017
+ms.date: 03/22/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 35b5baec-d313-46aa-9d14-c443aa0d6c09
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mestew
 ms.author: mstewart
 manager: angrobe
 robots: noindex,nofollow
-ms.openlocfilehash: 694b205144559d0ee4aee38c38361d5bd8b62a9d
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: e2ea7d8a915caebfdac824147e60bae509151fbf
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="support-for-system-center-configuration-manager-current-branch-versions"></a>System Center Configuration Manager 현재 분기 버전에 대한 지원
 
@@ -44,8 +45,9 @@ Microsoft는 1년에 몇 차례 System Center Configuration Manager 현재 분�
 
  **버전 기록**  
 
-|버전 |가용일 |지원 종료 날짜|  
-|-------------|-----------------------|----------------------|  
+|Version |가용일 |지원 종료 날짜|  
+|-------------|-----------------------|----------------------|
+|1802|2018년 3월 22일|2019년 9월 22일  
 |1710|2017년 11월 20일|2019 년 5 월 20 |
 |1706|2017년 7월 31일|2018년 7월 31일|
 |1702|2017년 3월 27일|2018년 3월 27일|

@@ -1,7 +1,7 @@
 ---
-title: "버전 1710의 새로운 기능 | Microsoft Docs"
+title: 버전 1710의 새로운 기능 | Microsoft Docs
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 버전 1710에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다."
+description: System Center Configuration Manager 버전 1710에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.
 ms.custom: na
 ms.date: 1/08/2018
 ms.reviewer: na
@@ -14,17 +14,23 @@ ms.assetid: bc6c3e5f-b9e2-400e-9d9d-446ff93c520c
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: c75ed431c6a786759e2ddcd6dc6b55d5b55412c7
-ms.sourcegitcommit: b13da5ad8ffd58e3b89fa6d7170e1dec3ff130a4
+ms.openlocfilehash: e9d1ac44bf0455ff0b1caec94d07cfa734dfbeb0
+ms.sourcegitcommit: d8a4a53630351b3d677bbdc5d203e7d330472cba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="what39s-new-in-version-1710-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1710의 새로운 기능
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 System Center Configuration Manager 현재 분기의 업데이트 1710은 버전 1610, 1702 또는 1706을 실행하는 이전에 설치된 사이트에 대한 콘솔 내 업데이트로 제공됩니다.
+
+새 기능 외에 이 릴리스에는 버그 수정과 같은 추가 변경 사항도 포함되어 있습니다. 자세한 내용은 [System Center Configuration Manager 현재 분기, 버전 1710의 변경 내용 요약](https://support.microsoft.com/help/4056470/summary-of-changes-in-system-center-configuration-manager-current-bran)을 참조하세요.
+
+이제 이 릴리스에 대한 다음과 같은 추가 업데이트도 사용할 수 있습니다.
+- [System Center Configuration Manager 현재 분기, 버전 1710의 업데이트 롤업](https://support.microsoft.com/help/4057517/update-rollup-for-system-center-configuration-manager-current-branch-v)
+- [System Center Configuration Manager 현재 분기, 버전 1710의 업데이트 롤업 2](https://support.microsoft.com/en-us/help/4086143/update-rollup-2-for-system-center-configuration-manager-current-branch)
 
 > [!TIP]  
 > 새 사이트를 설치하려면 기준 버전의 Configuration Manager를 사용해야 합니다.  

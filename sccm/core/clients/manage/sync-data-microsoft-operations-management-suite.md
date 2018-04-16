@@ -1,9 +1,9 @@
 ---
-title: "데이터를 Microsoft Operations Management Suite에 동기화 "
+title: '데이터를 Microsoft Operations Management Suite에 동기화 '
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager의 데이터를 Microsoft Operations Management Suite에 동기화합니다."
+description: System Center Configuration Manager의 데이터를 Microsoft Operations Management Suite에 동기화합니다.
 ms.custom: na
-ms.date: 7/31/2017
+ms.date: 03/22/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,15 +12,15 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 33bcf8b3-a6b6-4fc9-bb59-70a9621b2b0d
-caps.latest.revision: 
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
-ms.openlocfilehash: 5cb0ffd29f1b3de110101093a6644335a8167108
-ms.sourcegitcommit: 45ff3ffa040eada5656b17f47dcabd3c637bdb60
+caps.latest.revision: 9
+author: mestew
+ms.author: mstewart
+manager: dougeby
+ms.openlocfilehash: df57255108d0e5e8b8f5e4e8d73a392c4cf2faae
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/23/2018
 ---
 #  <a name="sync-data-from-configuration-manager-to-the-microsoft-operations-management-suite"></a>Configuration Manager의 데이터를 Microsoft Operations Management Suite에 동기화합니다.
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 02/23/2018
 -   Configuration Manager는 [Log Analytics](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite) 또는 [업그레이드 준비](/sccm/core/clients/manage/upgrade/upgrade-analytics)와 같은 기능을 위해 OMS에 연결합니다.
 
 ## <a name="prerequisites-for-the-oms-connector"></a>OMS 커넥터에 대한 필수 구성 요소
-OMS에 대한 연결을 구성하기 위한 필수 구성 요소는 [혀냊 분기 버전 1702에 대해 문서화](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite#prerequisites)된 내용에서 달라졌습니다. 이 정보는 여기에도 설명되어 있습니다.  
+OMS에 대한 연결을 구성하기 위한 필수 구성 요소는 [현재 분기 버전 1702에 대해 문서화](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite#prerequisites)된 필수 구성 요소에서 달라졌습니다. 이 정보는 여기에도 설명되어 있습니다.  
 
 -   Configuration Manager에서 OMS 커넥터를 설치하기 전에 OMS에 대한 권한을 Configuration Manager에 제공해야 합니다. 특히 OMS Log Analytics 작업 영역을 포함하는 Azure *리소스 그룹*에 *참여자 액세스 권한*을 부여해야 합니다. 이 작업을 수행하는 절차는 Log Analytics 콘텐츠에 설명되어 있습니다. OMS 문서에서 [구성 관리자에 OMS에 대한 사용 권한 제공](https://docs.microsoft.com/azure/log-analytics/log-analytics-sccm#provide-configuration-manager-with-permissions-to-oms)을 참조하세요.
 
@@ -44,7 +44,7 @@ OMS에 대한 연결을 구성하기 위한 필수 구성 요소는 [혀냊 분�
 
 ## <a name="use-the-azure-services-wizard-to-configure-the-connection-to-oms"></a>Azure 서비스 마법사를 사용하여 OMS에 대한 연결 구성
 
-1.  콘솔에서 **관리** > **개요** > **클라우드 서비스** > **Azure 서비스**로 이동한 후 리본 메뉴의 **홈** 탭에서 **Azure 서비스 구성**을 선택하여 **Azure 서비스 마법사**를 시작합니다.
+1.  콘솔에서 **관리** > **개요** > **클라우드 서비스** > **Azure 서비스**로 이동합니다. 리본의 **홈** 탭에서 **Azure 서비스 구성**을 선택하여 **Azure 서비스 마법사**를 시작합니다.
 
 2.  **Azure 서비스** 페이지에서 Operation Management Suite 클라우드 서비스를 선택합니다. **Azure 서비스 이름**에 이름을 입력하고 원하는 경우 선택적 설명을 입력한 후 **다음**을 클릭합니다.
 
@@ -52,7 +52,7 @@ OMS에 대한 연결을 구성하기 위한 필수 구성 요소는 [혀냊 분�
 
 4.  웹앱을 선택합니다.
 
-    -   **가져오기**: Azure 구독에 이미 있는 웹앱을 사용하려면 **가져오기**를 클릭합니다. 앱 및 테넌트의 이름을 입력한 다음 테넌트 ID, 클라이언트 ID 및 Configuration Manager에서 사용하도록 할 Azure 웹앱의 비밀 키를 지정합니다. 정보를 **확인**한 후 **확인**을 클릭하여 계속합니다.   
+    -   **가져오기**: Azure 구독에 이미 있는 웹앱을 사용하려면 **가져오기**를 클릭합니다. 앱 및 테넌트의 이름을 입력합니다. Configuration Manager에서 사용할 테넌트 ID, 클라이언트 ID 및 Azure 웹앱의 비밀 키를 지정합니다. 정보를 **확인**한 후 **확인**을 클릭하여 계속합니다.   
 
     > [!NOTE]   
     > 이 미리 보기에서 OMS를 구성하는 경우 OMS는 웹앱에 대해서만 *import* 함수를 지원합니다. 새 웹앱을 만드는 것은 지원되지 않습니다. 마찬가지로 OMS에 대해 기존 앱을 재사용할 수 없습니다.
@@ -70,11 +70,11 @@ OMS에 대한 연결을 구성하기 위한 필수 구성 요소는 [혀냊 분�
 
 *적용 대상: System Center Configuration Manager(1702 및 이전 버전)*
 
-Microsoft OMS(Operations Management Suite) 커넥터를 사용하여 System Center Configuration Manager의 데이터(예: 사용자 컬렉션)를 Microsoft Azure의 OMS Log Analytics에 동기화할 수 있습니다. 이렇게 하면 Configuration Manager 배포의 데이터가 OMS에 표시됩니다.
+Microsoft OMS(Operations Management Suite) 커넥터를 사용하여 System Center Configuration Manager의 데이터(예: 사용자 컬렉션)를 Microsoft Azure의 OMS Log Analytics에 동기화할 수 있습니다. 커넥터를 통해 Configuration Manager 배포의 데이터가 OMS에 표시됩니다.
 > [!TIP]
-> OMS 커넥터는 시험판 기능입니다. 자세한 내용은 [업데이트에서 시험판 기능 사용](/sccm/core/servers/manage/pre-release-features)을 참조하세요.
+> Configuration Manager 1802부터는 OMS 커넥터가 더 이상 시험판 기능이 아닙니다. 자세한 내용은 [업데이트에서 시험판 기능 사용](/sccm/core/servers/manage/pre-release-features)을 참조하세요.
 
-버전 1702부터 OMS 커넥터를 사용하여 Microsoft Azure Government 클라우드에 있는 OMS 작업 영역에 연결할 수 있습니다. 이렇게 하려면 OMS 커넥터를 설치하기 전에 구성 파일을 수정해야 합니다. 이 항목에서 [Azure Government 클라우드에서 OMS 커넥터 사용](#fairfaxconfig)을 참조하세요.
+버전 1702부터 OMS 커넥터를 사용하여 Microsoft Azure Government 클라우드에 있는 OMS 작업 영역에 연결할 수 있습니다. 이렇게 하려면 OMS 커넥터를 설치하기 전에 구성 파일을 수정해야 합니다. 이 문서에서 [Azure Government 클라우드에서 OMS 커넥터 사용](#fairfaxconfig)을 참조하세요.
 
 ### <a name="prerequisites"></a>필수 구성 요소
 - Configuration Manager에서 OMS 커넥터를 설치하기 전에 OMS에 대한 권한을 Configuration Manager에 제공해야 합니다. 특히 OMS Log Analytics 작업 영역을 포함하는 Azure *리소스 그룹*에 *참여자 액세스 권한*을 부여해야 합니다. 이 작업을 수행하는 절차는 Log Analytics 콘텐츠에 설명되어 있습니다. OMS 문서에서 [구성 관리자에 OMS에 대한 사용 권한 제공](https://docs.microsoft.com/azure/log-analytics/log-analytics-sccm#provide-configuration-manager-with-permissions-to-oms)을 참조하세요.
@@ -92,14 +92,14 @@ Microsoft OMS(Operations Management Suite) 커넥터를 사용하여 System Cent
 ### <a name="install-the-oms-connector"></a>OMS 커넥터 설치  
 1. Configuration Manager 콘솔에서 [시험판 기능을 사용하도록 계층 구조](/sccm/core/servers/manage/pre-release-features)를 구성하고 OMS 커넥터를 사용하도록 설정합니다.  
 0
-2. 그 다음에 **관리** > **Cloud Services** > **OMS 커넥터**로 이동합니다. 리본에서 "Operations Management Suite에 대한 연결 만들기"를 클릭합니다. 그러면 **Operation Management Suite 연결 마법사**가 열립니다. **다음**을 선택합니다.  
+2. 그 다음에 **관리** > **Cloud Services** > **OMS 커넥터**로 이동합니다. 리본에서 [Operations Management Suite에 대한 연결 만들기]를 클릭합니다. 이 단계에서 **Operation Management Suite 연결 마법사**가 열립니다. **다음**을 선택합니다.  
 
 
 3.  **일반** 페이지에서 다음 정보가 있는지 확인하고 **다음**을 선택합니다.  
   - Configuration Manager를 "웹 응용 프로그램 및/또는 웹 API" 관리 도구로 등록했으며 [이 등록의 클라이언트 ID](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)가 있습니다.  
   - Azure Active Directory에서 등록된 관리 도구에 대한 클라이언트 키를 만듭니다.  
 
-  - Azure 관리 포털에서 [Configuration Manager에 OMS에 대한 사용 권한 제공](https://docs.microsoft.com/azure/log-analytics/log-analytics-sccm#provide-configuration-manager-with-permissions-to-oms)에 설명된 대로 OMS에 액세스할 수 있는 권한을 등록된 웹앱에 제공했습니다.  
+  - Azure Portal에서 [Configuration Manager에 OMS에 대한 사용 권한 제공](https://docs.microsoft.com/azure/log-analytics/log-analytics-sccm#provide-configuration-manager-with-permissions-to-oms)에 설명된 대로 OMS에 액세스할 수 있는 권한을 등록된 웹앱에 제공합니다.  
 
 4.  **Azure Active Directory** 페이지에서 해당 **테넌트**, **클라이언트 ID** 및 **클라이언트 비밀 키**를 제공하여 OMS에 대한 연결 설정을 구성하고 **다음**을 선택합니다.  
 
@@ -112,11 +112,13 @@ Configuration Manager를 OMS에 연결한 후 컬렉션을 추가하거나 제�
 ### <a name="verify-the-oms-connector-properties"></a>OMS 커넥터 속성 확인
 1.  Configuration Manager 콘솔에서 **관리** > **Cloud Services**로 이동하고 **OMS 커넥터**를 선택하여 **OMS 연결 페이지**를 선택합니다.
 2.  이 페이지에는 다음 두 개의 탭이 있습니다.
-  - **Azure Active Directory:**   
-    이 탭에는 **테넌트**, **클라이언트 ID**, **클라이언트 비밀 키 만료**가 표시되며, 만료된 경우 클라이언트 비밀 키를 확인할 수 있습니다.
+  - **Azure Active Directory:** 
+  
+     이 탭에는 **테넌트**, **클라이언트 ID**, **클라이언트 비밀 키 만료**가 표시되며, 만료된 경우 클라이언트 비밀 키를 확인할 수 있습니다.
 
   - **OMS 연결 속성:**  
-    이 탭에는 **Azure 구독**, **Azure 리소스 그룹**, **Operations Management Suite 작업 영역**과 **Operations Management Suite에서 데이터를 가져올 수 있는 장치 컬렉션 목록**이 표시됩니다. **추가** 및 **제거** 단추를 사용하여 허용되는 컬렉션을 수정합니다.
+
+     이 탭에는 **Azure 구독**, **Azure 리소스 그룹**, **Operations Management Suite 작업 영역**과 **Operations Management Suite에서 데이터를 가져올 수 있는 장치 컬렉션 목록**이 표시됩니다. **추가** 및 **제거** 단추를 사용하여 허용되는 컬렉션을 수정합니다.
 
 ### <a name="fairfaxconfig"> </a> Azure Government 클라우드에서 OMS 커넥터 사용
 

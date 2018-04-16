@@ -1,9 +1,9 @@
 ---
-title: "작업 순서 단계"
+title: 작업 순서 단계
 titleSuffix: Configuration Manager
-description: "Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계를 알아봅니다."
+description: Configuration Manager 작업 순서에 추가할 수 있는 단계를 알아봅니다.
 ms.custom: na
-ms.date: 01/12/2018
+ms.date: 03/30/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,16 +12,16 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7c888a6f-8e37-4be5-8edb-832b218f266d
-caps.latest.revision: 
-caps.handback.revision: 
+caps.latest.revision: 26
+caps.handback.revision: 0
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: 5320d7747f7e2c6164da8c1801e631b749935d6d
-ms.sourcegitcommit: b13da5ad8ffd58e3b89fa6d7170e1dec3ff130a4
+manager: dougeby
+ms.openlocfilehash: 53929400b983a2191e60a7d42ae84062afd44e3a
+ms.sourcegitcommit: d8a4a53630351b3d677bbdc5d203e7d330472cba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="task-sequence-steps-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업 순서 단계
 
@@ -509,6 +509,8 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
 -   드라이버 패키지  
 
 -   패키지  
+
+-   부팅 이미지
     
 다음 단계는 다음과 같은 시나리오에서 운영 체제를 업그레이드하는 작업 순서에서 잘 작동합니다.  
 
@@ -709,6 +711,10 @@ BitLocker는 컴퓨터 시스템(운영 체제와 데이터 드라이브 모두)
 -   변수 값에 응용 프로그램의 이름 외에 다른 정보가 포함된 경우. 작업 순서가 응용 프로그램을 설치하지 않고 계속됩니다.  
 
 -   작업 순서가 지정된 기본 이름과 "01" 접미사가 있는 변수를 찾지 못하면 응용 프로그램을 설치하지 않습니다. 
+    
+> [!Important]  
+> 이러한 값은 대/소문자를 구분합니다. 예를 들어 “install”은 “Install”과 다릅니다. 값을 변경해야 하는 경우 작업 순서 편집기가 대/소문자 변경을 감지하지 않습니다. 예를 들어 동시에 다른 편집을 수행해야 합니다(예: 단계 설명 수정).<!--509714-->   
+
    
 **응용 프로그램 설치가 실패할 경우 목록의 다른 응용 프로그램 설치 계속**  
  이 설정은 개별 응용 프로그램 설치가 실패할 때 단계가 계속되도록 지정합니다. 이 설정을 지정하면 설치 오류에 관계없이 작업 순서가 계속됩니다. 이 설정을 지정하지 않고 설치가 실패하면 이 단계는 즉시 종료됩니다.  
@@ -787,6 +793,10 @@ BitLocker는 컴퓨터 시스템(운영 체제와 데이터 드라이브 모두)
 -   패키지 ID에 소문자가 포함되어 있으면 소프트웨어 설치가 실패합니다.  
 
 -   작업 순서가 지정된 기본 이름과 "001" 접미사가 있는 변수를 찾지 못하면 패키지를 설치하지 않습니다. 작업 순서가 계속됩니다.  
+    
+> [!Important]  
+> 이러한 값은 대/소문자를 구분합니다. 예를 들어 “install”은 “Install”과 다릅니다. 값을 변경해야 하는 경우 작업 순서 편집기가 대/소문자 변경을 감지하지 않습니다. 예를 들어 동시에 다른 편집을 수행해야 합니다(예: 단계 설명 수정).<!--509714-->   
+
    
 **소프트웨어 패키지 설치가 실패할 경우 목록의 다른 패키지 설치 계속**  
  이 설정은 개별 소프트웨어 패키지 설치에 실패한 경우 단계가 계속되도록 지정합니다. 이 설정을 지정하면 설치 오류에 관계없이 작업 순서가 계속됩니다. 이 설정을 지정하지 않고 설치가 실패하면 이 단계는 즉시 종료됩니다.  

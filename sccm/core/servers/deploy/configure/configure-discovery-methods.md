@@ -1,50 +1,52 @@
 ---
-title: "검색 구성"
+title: 검색 구성
 titleSuffix: Configuration Manager
-description: "네트워크 인프라 및 Active Directory에서 관리할 수 있는 리소스를 찾기 위해 Configuration Manager 사이트에서 실행할 검색 방법을 구성합니다."
+description: 네트워크, Active Directory 및 Azure Active Directory에서 관리할 리소스를 찾도록 검색 방법을 구성합니다.
 ms.custom: na
-ms.date: 7/31/2017
+ms.date: 03/22/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 49505eb1-d44d-4121-8712-e0f3d8b15bf5
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mestew
 ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: f2d928e066702190eba32b2a2c06fe89636d59f6
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+manager: dougeby
+ms.openlocfilehash: 825b9b250000e8353b1428cbee45f8fda9a30c35
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="configure-discovery-methods-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 검색 방법 구성
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 
-네트워크 인프라 및 Active Directory에서 관리할 수 있는 리소스를 찾기 위해 System Center Configuration Manager 사이트에서 실행할 검색 방법을 구성합니다. 이렇게 하려면 환경을 검색할 때 사용할 각 방법을 사용하도록 설정하고 구성해야 합니다. 또한 방법을 사용하도록 설정할 때와 동일한 절차를 사용하여 해당 방법을 사용하지 않도록 설정할 수 있습니다.  단, 하트비트 검색 및 서버 검색은 예외입니다.  
+네트워크, Active Directory 및 Azure Active Directory(Azure AD)에서 관리할 리소스를 찾도록 검색 방법을 구성합니다. 먼저 환경을 검색할 때 사용할 각 방법을 사용하도록 설정하고 구성해야 합니다. 또한 방법을 사용하도록 설정할 때와 동일한 절차를 사용하여 해당 방법을 사용하지 않도록 설정할 수 있습니다. 단, 하트비트 검색 및 서버 검색은 예외입니다.  
 
--   기본적으로 하트비트 검색은 Configuration Manager 기본 사이트를 설치할 때 이미 사용하도록 설정되며 기본 일정에 따라 실행되도록 구성됩니다. 하트비트 검색은 장치에 대한 DDR(검색 데이터 기록)을 최신 상태로 유지하므로 계속 사용하도록 설정되어 있는 것이 좋습니다. 하트비트 검색에 대한 자세한 내용은 [하트비트 검색 정보](../../../../core/servers/deploy/configure/about-discovery-methods.md#bkmk_aboutHeartbeat)를 참조하세요.  
+-   **하트비트 검색**은 Configuration Manager 기본 사이트를 설치할 때 기본적으로 사용하도록 설정됩니다. 하트비트 검색은 기본 일정에 따라 실행되도록 구성됩니다. 하트비트 검색을 사용하도록 그대로 두세요. 하트비트 검색은 장치에 대한 DDR(검색 데이터 레코드)을 최신 상태로 유지합니다. 하트비트 검색에 대한 자세한 내용은 [하트비트 검색 정보](../../../../core/servers/deploy/configure/about-discovery-methods.md#bkmk_aboutHeartbeat)를 참조하세요.  
 
--   서버 검색은 사이트 시스템으로 사용하는 컴퓨터를 찾는 자동 검색 방법입니다. 이를 구성하거나 사용하지 않도록 설정할 수 없습니다.  
+-   **서버 검색**은 자동 검색 방법입니다. 서버 검색은 사이트 시스템으로 사용되는 컴퓨터를 찾습니다. 이를 구성하거나 사용하지 않도록 설정할 수 없습니다.  
 
-**구성 가능한 검색 방법을 사용하도록 설정하려면**  
+### <a name="enable-a-configurable-discovery-method"></a>구성 가능한 검색 방법을 사용하도록 설정  
  > [!NOTE]  
- > 다음 정보는 Azure Active Directory 사용자 검색에는 적용되지 않습니다. 대신 이 항목 뒷부분에 나오는 [Azure AD 사용자 검색 구성](#azureaadisc)을 참조하세요.
+ > 다음 정보는 Azure AD 사용자 검색에는 적용되지 않습니다. 대신 이 문서의 뒷부분에 나오는 [Azure AD 사용자 검색 구성](#azureaadisc)을 참조하세요.
 
-1.  Configuration Manager 콘솔에서 **관리** > **계층 구성**을 선택한 다음 **검색 방법**을 선택합니다.  
+1.  Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고, **계층 구성**을 확장하고, **검색 방법**을 선택합니다.  
 
 2.  검색을 사용하도록 설정할 사이트의 검색 방법을 선택합니다.  
 
-3.  **홈** 탭의 **속성** 그룹에서 **속성**을 선택한 다음 **일반** 탭에서 &lt;검색 방법\> **사용** 확인란을 선택합니다.  
+3.  **홈** 탭의 **속성** 그룹에서 **속성**을 선택합니다. 그리고 **일반** 탭에서 **&lt;검색 방법\> 사용** 확인란을 선택합니다.  
 
      이 확인란이 이미 선택된 경우에는 확인란의 선택을 해제하여 검색 방법을 사용하지 않도록 설정할 수 있습니다.  
 
 4.  **확인**을 선택하여 구성을 저장합니다.  
+
 
 
 ##  <a name="BKMK_ConfigADForestDisc"></a> Active Directory 포리스트 검색 구성  
@@ -101,8 +103,10 @@ Active Directory 포리스트 검색을 사용하도록 설정하고 Active Dire
 
 4.  Active Directory 포리스트 검색에 사용하도록 이 포리스트의 구성을 완료한 후에는 **확인**을 선택하여 구성을 저장합니다.  
 
+
+
 ##  <a name="BKMK_ConfigADDiscGeneral"></a> 컴퓨터, 사용자 또는 그룹에 대해 Active Directory 검색 구성  
- 컴퓨터, 사용자 또는 그룹의 검색을 구성하려면 다음 섹션의 정보를 참조하세요. 아래와 같은 검색 방법을 사용하게 됩니다.  
+ 컴퓨터, 사용자 또는 그룹 검색을 구성하려면 다음 검색 방법에 대한 섹션의 정보를 참조하세요.  
 
 -   Active Directory 그룹 검색  
 
@@ -146,7 +150,7 @@ Active Directory 포리스트 검색을 사용하도록 설정하고 Active Dire
 
 7.  **폴링 일정** 탭에서 전체 검색 폴링 일정과 델타 검색을 모두 구성합니다.  
 
-8.  필요한 경우 **옵션** 탭에서 오래된 컴퓨터 레코드를 검색되지 않도록 필터로 걸러내거나 제외하는 옵션 및 배포 그룹의 멤버 자격을 검색하는 옵션을 구성할 수 있습니다.  
+8.  필요한 경우 **옵션** 탭에서 오래된 컴퓨터 레코드를 검색되지 않도록 필터로 걸러내거나 제외하는 옵션을 구성합니다. 배포 그룹의 멤버 자격 검색을 구성할 수도 있습니다.  
 
     > [!NOTE]  
     >  기본적으로 Active Directory 그룹 검색은 보안 그룹의 멤버 자격만 검색합니다.  
@@ -172,7 +176,7 @@ Active Directory 포리스트 검색을 사용하도록 설정하고 Active Dire
     3.  각 위치에 대해 **Active Directory 검색 계정**으로 사용할 계정을 지정합니다.  
 
         > [!TIP]  
-        >  지정하는 각 위치에 대해 검색 옵션 집합 및 고유한 Active Directory 검색 계정을 구성할 수 있습니다.  
+        >  지정된 각 위치에 대해 검색 옵션 집합 및 고유한 Active Directory 검색 계정을 구성할 수 있습니다.  
 
     4.  **확인**을 선택하여 Active Directory 컨테이너 구성을 저장합니다.  
 
@@ -203,7 +207,7 @@ Active Directory 포리스트 검색을 사용하도록 설정하고 Active Dire
     3.  각 위치에 대해 **Active Directory 검색 계정**으로 사용할 계정을 지정합니다.  
 
         > [!NOTE]  
-        >  지정하는 각 위치에 대해 고유한 검색 옵션 집합 및 고유한 Active Directory 검색 계정을 구성할 수 있습니다.  
+        >  지정된 각 위치에 대해 고유한 검색 옵션 집합 및 고유한 Active Directory 검색 계정을 구성할 수 있습니다.  
 
     4.  **확인**을 선택하여 Active Directory 컨테이너 구성을 저장합니다.  
 
@@ -213,11 +217,29 @@ Active Directory 포리스트 검색을 사용하도록 설정하고 Active Dire
 
 8.  이 사이트의 Active Directory 사용자 검색 구성을 마쳤으면 **확인**을 선택하여 구성을 저장합니다.  
 
+
+
 ## <a name="azureaadisc"></a> Azure AD 사용자 검색 구성
-버전 1706부터 Configuration Manager를 [Azure 구독 및 Azure Active Directory](/sccm/core/servers/deploy/configure/azure-services-wizard)에 연결할 때 Azure Active Directory 사용자 검색을 구성할 수 있습니다.
+Azure AD 사용자 검색은 다른 검색 방법과 동일한 방식으로 설정되거나 구성되지 않습니다. Configuration Manager 사이트를 Azure AD에 등록할 때 구성합니다. **클라우드 관리**용으로 [Azure 서비스를 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)할 때 이 검색 방법을 사용하도록 설정하고 구성할 수도 있습니다. 
 
-Azure AD 사용자 검색은 *클라우드 관리*의 일부로 구성됩니다. 이렇게 하기 위한 절차는 *Configuration Manager에서 사용하도록 Azure 서비스 구성* 항목의 [Configuration Manager에서 사용하기 위해 Azure Web App 만들기](/sccm/core/servers/deploy/configure/Azure-services-wizard#webapp)에 자세히 나와 있습니다.
+**클라우드 관리** Azure 서비스를 구성할 때: 
+- 마법사의 **검색** 페이지에서 **Azure Active Directory 사용자 검색 사용**을 클릭합니다. 
+- **설정**을 클릭합니다. 
+- Azure AD 사용자 검색 설정 대화 상자에서 검색 일정을 구성합니다. Azure AD에서 새 계정 또는 변경된 계정만 확인하는 델타 검색을 사용하도록 설정할 수도 있습니다. 
 
+자세한 내용은 [Azure AD 사용자 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#azureaddisc)을 참조하세요.
+
+ > [!Important]  
+ > Azure AD 앱을 Configuration Manager로 *가져오기* 전에, Azure AD에서 디렉터리 데이터를 읽을 수 있도록 서버 응용 프로그램 권한을 부여해야 합니다. 
+ >  - [Azure Portal](https://portal.azure.com)에서 **Azure Active Directory** 블레이드로 이동합니다. 
+ >  - **앱 등록**을 클릭하고, 필요한 경우 **모든 앱**으로 전환합니다. 
+ >  - 서버 앱 형식으로 *웹앱/API*를 선택하고, **설정**을 클릭합니다. 
+ >  - **필요한 권한**을 클릭하고, **권한 부여**를 클릭합니다.
+ >  
+ > Configuration Manager에서 서버 앱을 *만드는* 경우 Azure AD가 자동으로 응용 프로그램 사용 권한을 만듭니다. 그래도 여전히 Azure Portal에서 응용 프로그램에 동의해야 합니다.
+
+ > [!Note]  
+ > 사용자가 페더레이션되거나 동기화된 ID인 경우 Configuration Manager [Active Directory 사용자 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#bkmk_aboutUser) 및 Azure AD 사용자 검색을 사용해야 합니다. 하이브리드 ID에 대한 자세한 내용은 [하이브리드 ID 채택 전략 정의](/azure/active-directory/active-directory-hybrid-identity-design-considerations-identity-adoption-strategy)를 참조하세요.<!--497750-->
 
 
 
@@ -237,8 +259,10 @@ Azure AD 사용자 검색은 *클라우드 관리*의 일부로 구성됩니다.
 
 4.  클라이언트에서 하트비트 DDR(검색 데이터 기록)을 제출할 빈도를 구성한 다음 **확인**을 선택하여 구성을 저장합니다.  
 
+
+
 ##  <a name="BKMK_ConfigNetworkDisc"></a> 네트워크 검색 구성  
- 네트워크 검색을 구성하려면 다음 섹션의 정보를 참조하십시오.  
+ 네트워크 검색을 구성하려면 다음 섹션의 정보를 참조하세요.  
 
 ###  <a name="BKMK_AboutConfigNetworkDisc"></a> 네트워크 검색 구성 정보  
  네트워크 검색을 구성하기 전에 다음 사항을 알아 두어야 합니다.  
@@ -256,7 +280,7 @@ Azure AD 사용자 검색은 *클라우드 관리*의 일부로 구성됩니다.
  예를 들어 특정 SNMP 커뮤니티 이름을 사용하는 모든 SNMP(Simple Network Management Protocol)를 검색할 수 있습니다. 그리고, 동일한 검색을 실행하는 동안 특정 서브넷에서 검색을 사용하지 않도록 설정할 수도 있습니다. 네트워크 검색을 실행하면 사용하지 않도록 설정된 서브넷에서는 지정된 커뮤니티 이름을 사용하는 SNMP 장치를 검색하지 않습니다.  
 
 ####  <a name="BKMK_DetermineNetTopology"></a> 네트워크 토폴로지 결정  
- 토폴로지 전용 검색을 사용하면 네트워크를 매핑할 수 있습니다. 이 검색 유형은 잠재적 클라이언트는 검색하지 않습니다. 토폴로지 전용 네트워크 검색은 SNMP에 의존합니다.  
+ 토폴로지 전용 검색을 사용하면 네트워크를 매핑할 수 있습니다. 이 검색 유형은 잠재적 클라이언트를 검색하지 않습니다. 토폴로지 전용 네트워크 검색은 SNMP에 의존합니다.  
 
  네트워크 토폴로지를 매핑할 경우 **네트워크 검색 속성** 대화 상자의 **SNMP** 탭에서 **최대 홉 수**를 구성해야 합니다. 단 몇 회의 홉만을 통해 검색 실행 시 사용되는 네트워크 대역폭을 제어할 수 있습니다. 네트워크에서 더 많은 항목을 검색함에 따라 홉 수를 증가시켜 네트워크 토폴로지에 대해 더 자세히 파악할 수 있습니다.  
 
@@ -280,7 +304,7 @@ Azure AD 사용자 검색은 *클라우드 관리*의 일부로 구성됩니다.
 
  **네트워크 검색 속성** 대화 상자의 **도메인** 탭에서 하나 이상의 도메인을 지정한 경우 **사용** 으로 표시된 도메인만 검색됩니다.  
 
- 사용하지 않도록 설정되는 도메인은 검색에서 제외되고 다음 조건이 적용됩니다.  
+ 도메인을 사용하지 않도록 설정하면 해당 도메인이 검색에서 제외되고 다음 조건이 적용됩니다.  
 
 -   네트워크 검색은 해당 도메인에 있는 도메인 컨트롤러를 쿼리하지 않습니다.  
 
@@ -325,7 +349,7 @@ Azure AD 사용자 검색은 *클라우드 관리*의 일부로 구성됩니다.
     -   **서브넷** 탭에서 **로컬 서브넷 검색** 확인란을 선택합니다.  
 
         > [!TIP]  
-        >  네트워크를 구성하는 특정 서브넷을 알고 있는 경우 **로컬 서브넷 검색** 확인란을 선택 취소하고 **새로 만들기** 아이콘 ![새 아이콘](media/Disc_new_Icon.gif)을 사용하여 검색할 특정 서브넷을 추가할 수 있습니다. 대규모 네트워크의 경우 네트워크 대역폭의 사용을 최소화하기 위해 한 번에 1~2개의 서브넷만 검색하는 것이 좋습니다.  
+        >  네트워크를 구성하는 특정 서브넷을 알고 있는 경우 **로컬 서브넷 검색** 확인란의 선택을 취소합니다. 그런 다음, **새로 만들기** 아이콘 ![새로 만들기 아이콘](media/Disc_new_Icon.gif)을 사용하여 검색할 특정 서브넷을 추가합니다. 대규모 네트워크의 경우 네트워크 대역폭의 사용을 최소화하기 위해 한 번에 1~2개의 서브넷만 검색하는 것이 좋습니다.  
 
     -   **도메인** 탭에서 **로컬 도메인 검색** 확인란을 선택합니다.  
 
@@ -399,7 +423,7 @@ Azure AD 사용자 검색은 *클라우드 관리*의 일부로 구성됩니다.
 
 10. 검색에서 DHCP 클라이언트에 대한 특정 DHCP 서버를 쿼리하도록 구성하려면 **DHCP** 탭을 선택하고 다음 옵션을 하나 이상 구성합니다.  
 
-    -   검색을 실행하는 컴퓨터에서 DHCP 서버를 쿼리하려면 **항상 사이트 서버의 DHCP 서버 사용** 확인란을 선택합니다.  
+    -   검색을 실행하는 컴퓨터에서 DHCP 서버를 쿼리하려면 **항상 사이트 서버의 DHCP 서버 사용**을 선택합니다.  
 
         > [!NOTE]  
         >  이 옵션을 사용하려면 서버는 DHCP 서버에서 IP 주소를 임대해야 하고 정적 IP 주소는 사용할 수 없습니다.  
@@ -414,12 +438,12 @@ Azure AD 사용자 검색은 *클라우드 관리*의 일부로 구성됩니다.
      여러 반복 일정 및 반복 없는 여러 일정을 구성할 수 있습니다.  
 
     > [!NOTE]  
-    >  **일정** 탭에 여러 일정이 동시에 표시되면 구성된 대로 일정에 지정된 시간에 모든 일정에 의해 네트워크 검색이 실행됩니다. 이는 반복 일정에도 해당됩니다.  
+    >  **일정** 탭에 여러 일정이 동시에 표시되면 구성된 대로 일정에 지정된 시간에 모든 일정에 의해 네트워크 검색이 실행됩니다. 이 동작은 반복 일정에도 해당됩니다.  
 
 12. **확인**을 선택하여 구성을 저장합니다.  
 
 ###  <a name="BKMK_HowToVerifyNetDisc"></a> 네트워크 검색이 완료되었는지 확인하는 방법  
- 네트워크 검색을 완료하는 데 필요한 시간은 여러 요소에 따라 달라질 수 있습니다. 이러한 요소는 다음과 같습니다.  
+ 네트워크 검색을 완료하는 데 필요한 시간은 다음과 같은 요소 중 하나 이상에 따라 달라질 수 있습니다.  
 
 -   네트워크의 크기  
 
@@ -454,7 +478,7 @@ Azure AD 사용자 검색은 *클라우드 관리*의 일부로 구성됩니다.
 
     -   설명: **이 구성 요소가 중지되었습니다.**  
 
-    이 상태 메시지가 나타나지 않으면 네트워크 검색을 마치지 않은 것입니다.  
+    이 상태 메시지가 나타나지 않으면 네트워크 검색이 완료되지 않은 것입니다.  
 
 7.  네트워크 검색이 시작었는지 확인하려면 다음 정보가 있는 상태 메시지를 검색합니다.  
 
@@ -464,4 +488,4 @@ Azure AD 사용자 검색은 *클라우드 관리*의 일부로 구성됩니다.
 
     -   설명: **이 구성 요소가 시작되었습니다.**  
 
-    이 정보를 통해 네트워크 검색이 시작되었음을 확인할 수 있습니다. 이 정보가 나타나지 않는 경우 네트워크 검색 일정을 다시 지정하십시오.  
+    이 정보를 통해 네트워크 검색이 시작되었음을 확인할 수 있습니다. 이 정보가 나타나지 않으면 네트워크 검색 일정을 다시 지정합니다.  

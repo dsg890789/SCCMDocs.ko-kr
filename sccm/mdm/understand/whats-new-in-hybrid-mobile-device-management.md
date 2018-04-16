@@ -1,9 +1,9 @@
 ---
-title: "하이브리드 MDM의 새로운 기능"
+title: 하이브리드 MDM의 새로운 기능
 titleSuffix: Configuration Manager
-description: "Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 장치 관리 기능에 대해 알아봅니다."
+description: Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 장치 관리 기능에 대해 알아봅니다.
 ms.custom: na
-ms.date: 03/01/2018
+ms.date: 03/28/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ ms.assetid: 7b127cee-61f1-4681-9760-caebed36ddf5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3b48c5296caecd66b5abb6d40578af2009ef0f11
-ms.sourcegitcommit: 6e4fca19083b5dbdcd841012f6e1051bb7c00eb8
+ms.openlocfilehash: 3c3d1c813c307e520b3a9709187937f0d3f732c7
+ms.sourcegitcommit: 27da4be015f1496b7b89ebddb517a2685f1ecf74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 장치 관리의 새로운 기능
 
@@ -41,6 +41,16 @@ ms.lasthandoff: 03/05/2018
 |**Microsoft Intune의 새로운 기능** | 일반적으로 이 범주 아래에 나열된 모든 기능은 Intune 서비스만 필요하고 Configuration Manager의 추가 기능이 필요하지 않으므로 System Center 2012 R2 Configuration Manager 릴리스를 비롯한 모든 Configuration Manager 릴리스에서 사용할 수 있어야 합니다.|
 |**Configuration Manager Technical Preview의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 Technical Preview 릴리스에서만 사용할 수 있습니다. 이러한 기능을 시험해보려면 기능 설명에 지정된 기술 미리 보기 버전을 설치해야 합니다. 자세한 내용은 [System Center Configuration Manager Technical Preview](../../core/get-started/technical-preview.md)를 참조하세요.|
 |**Configuration Manager(현재 분기)의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 버전의 Configuration Manager(현재 분기)(예: 버전 1511 또는 1602)에서만 사용할 수 있습니다. 하이브리드 배포에 이전 버전의 Configuration Manager를 사용하는 경우 기능 설명에 지정된 Configuration Manager(현재 분기) 버전으로 업그레이드해야 합니다. 자세한 내용은 [System Center Configuration Manager 업그레이드](../../core/servers/deploy/install/upgrade-to-configuration-manager.md)를 참조하세요.|
+
+
+
+## <a name="march-2018"></a>2018년 3월
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+#### <a name="azure-active-directory-web-sites-can-require-the-intune-managed-browser-app-and-support-single-sign-on-for-the-managed-browser-public-preview"></a>Azure Active Directory 웹 사이트는 Intune Managed Browser 앱이 필요하고 Managed Browser(공개 미리 보기)에 대한 Single Sign-On을 지원할 수 있습니다.
+<!-- 710595 --> 
+이제 Azure AD(Azure Active Directory)를 사용하여 모바일 장치의 Intune Managed Browser 앱에 대한 웹 사이트 액세스를 제한할 수 있습니다. Managed Browser에서 웹 사이트 데이터는 안전하게 유지되고 최종 사용자 개인 데이터와 분리됩니다. 또한 Managed Browser는 Azure AD가 보호하는 사이트에 대해 Single Sign-On 기능을 지원합니다. Intune에서 관리하는 다른 앱이 있는 장치에서 Managed Browser를 사용하거나 Managed Browser에 로그인하면 Managed Browser가 Azure AD로 보호되는 회사 사이트에 액세스할 수 있으며 사용자는 자격 증명을 입력하지 않아도 됩니다. 이 기능은 OWA(Outlook Web Access) 및 SharePoint Online과 같은 사이트뿐만 아니라 Azure App Proxy를 통해 액세스되는 인트라넷 리소스와 같은 다른 회사 사이트에도 적용됩니다.
 
 
 
@@ -456,6 +466,35 @@ Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추�
 
 
 ## <a name="notices"></a>알림
+
+### <a name="windows-company-portal-send-feedback-option-may-no-longer-work"></a>Windows 회사 포털 피드백 보내기 옵션이 더 이상 작동하지 않을 수 있음
+
+Windows 회사 포털 앱에는 사용자가 앱에 대한 피드백을 Microsoft에 보낼 수 있는 '피드백 보내기' 옵션이 있습니다. 2018년 4월 30일부터 이 옵션은 Windows 10 버전 1607 이상에서 실행되는 Windows 10 회사 포털 앱에서만 계속 지원됩니다.   
+
+#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
+
+최종 사용자용 Windows 회사 포털 앱이 설치되어 있지 않은 경우 이 메시지를 무시해 주세요.
+
+최종 사용자가 회사 포털 앱을 사용 중인 경우 4월 30일부터 다음 시나리오에서 앱의 '피드백 보내기' 단추가 더 이상 작동하지 않습니다.  
+
+ - Windows 10 버전 1507 및 버전 1511의 Windows 10 회사 포털 앱  
+
+ - Windows Phone 8.1 회사 포털 앱  
+
+관련 장치에서 '피드백 보내기' 옵션을 사용하면 오류가 발생하고 다시 시도하더라도 마찬가지입니다. 이러한 플랫폼의 경험에 대한 피드백을 Microsoft로 보내려면 아래에 나열된 대체 피드백 채널을 사용합니다.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대비하려면 어떻게 해야 하나요?
+
+이 변경 사항을 최종 사용자에게 알리고 필요한 경우 모든 사용자 지침을 업데이트하세요. 
+
+Windows Phone 8.1, Windows 10 버전 1507 및 Windows 10 버전 1511에서 회사 포털을 사용하는 최종 사용자에게 두 가지 대체 피드백 채널을 사용할 수 있음을 알리세요. 최종 사용자는 다음과 같이 할 수 있습니다.  
+
+- Windows 10에서 피드백 허브 앱 사용  
+- WinCPfeedback@microsoft.com으로 이메일 보내기  
+
+Windows 10 버전 1607 이상의 최종 사용자에게 Microsoft Store에 있는 Windows 회사 포털의 최신 버전으로 업데이트하도록 요청하세요.
+
+
 
 ### <a name="company-portal-for-windows-81-and-windows-phone-81-moving-to-sustaining-mode"></a>Windows 8.1 및 Windows Phone 8.1용 회사 포털이 지속 모드로 전환 
 <!--1428681-->

@@ -1,20 +1,22 @@
 ---
-title: "Windows 10 장치의 공동 관리"
-description: "Configuration Manager와 Microsoft Intune을 모두 사용하여 Windows 10 장치를 동시에 관리하는 방법을 알아봅니다."
-keywords: 
-author: dougeby
-manager: angrobe
-ms.date: 11/20/2017
+title: Windows 10 장치의 공동 관리
+titleSuffix: Configuration Manager
+description: Configuration Manager와 Microsoft Intune을 모두 사용하여 Windows 10 장치를 동시에 관리하는 방법을 알아봅니다.
+keywords: ''
+author: mestew
+ms.author: mstewart
+manager: dougeby
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: configuration-manager
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 ms.assetid: d6bbc787-83a5-44b4-ad64-016e5da7413f
-ms.openlocfilehash: 0cc11a05013fd9c25ee98ec35adcbe822d8a21fb
-ms.sourcegitcommit: 389c4e5b4e9953b74c13b1689195f99c526fa737
+ms.openlocfilehash: a5ceea5502e4eb2785946e1dd3bc9ed0842daf25
+ms.sourcegitcommit: d8a4a53630351b3d677bbdc5d203e7d330472cba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="co-management-for-windows-10-devices"></a>Windows 10 장치의 공동 관리    
 <!-- 1350871 -->
@@ -39,7 +41,7 @@ ms.lasthandoff: 02/09/2018
 
 
    > [!Note]  
-   > 하이브리드 MDM 환경(Configuration Manager와 통합된 Intune)이 설정된 경우 공동 관리를 사용할 수 없습니다. Intune 독립 실행형으로 마이그레이션하는 방법을 알아보려면 [하이브리드 MDM에서 Intune 독립 실행형으로 마이그레이션 시작](/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)을 참조하세요.
+   > 하이브리드 MDM 환경(Configuration Manager와 통합된 Intune)이 설정된 경우 공동 관리를 사용할 수 없습니다. 그러나 사용자를 Intune 독립 실행형으로 마이그레이션하기 시작한 후 관련 Windows 10 장치에 공동 관리를 활성화할 수 있습니다. Intune 독립 실행형으로 마이그레이션하는 방법에 대한 자세한 정보는 [하이브리드 MDM에서 Intune 독립 실행형으로 마이그레이션 시작](/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)을 참조하세요.
 
 ### <a name="additional-prerequisites-for-devices-with-the-configuration-manager-client"></a>Configuration Manager 클라이언트가 있는 장치에 대한 추가 필수 구성 요소
 - Windows 10, 버전 1709(Fall Creators Update라고도 함) 이상
@@ -60,6 +62,10 @@ ms.lasthandoff: 02/09/2018
 
 ### <a name="resource-access-policies"></a>리소스 액세스 정책
 리소스 액세스 정책은 장치에 대한 VPN, Wi-Fi, 전자 메일 및 인증서 설정을 구성합니다. 자세한 내용은 [리소스 액세스 프로필 배포](/sccm/protect/deploy-use/deploy-wifi-vpn-email-cert-profiles)를 참조하세요.
+
+### <a name="endpoint-protection"></a>Endpoint Protection 
+<!-- 1357365 -->
+Configuration Manager 1802부터 Endpoint Protection 워크로드를 Intune으로 전환할 수 있습니다. 자세한 내용은 [워크로드 Intune으로 전환 가능](/sccm/core/clients/manage/co-management-switch-workloads#Workloads-able-to-be-transitioned-to-Intune) 및 [Configuration Manager에서 Endpoint Protection](/sccm/protect/deploy-use/endpoint-protection)을 참조합니다.
 
 ## <a name="architectural-overview-for-co-management"></a>공동 관리에 대한 아키텍처 개요
 다음 다이어그램은 공동 관리의 아키텍처 개요 및 기존 구성 및 Intune 인프라에 맞추는 방법을 제공합니다.

@@ -1,26 +1,27 @@
 ---
-title: "Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결"
+title: Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결
 titleSuffix: Configuration Manager
-description: "Windows Defender 및 Endpoint Protection 문제를 해결하는 방법을 알아봅니다."
+description: Windows Defender 및 Endpoint Protection 문제를 해결하는 방법을 알아봅니다.
 ms.custom: na
-ms.date: 01/03/2017
+ms.date: 03/22/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d837253e-fcc2-422a-9e2c-c78b938dfd8c
-caps.latest.revision: "7"
-caps.handback.revision: "0"
-author: NathBarn
-ms.author: nathbarn
-manager: angrobe
-ms.openlocfilehash: b667db471a16faef057f49a0a26759849e03f237
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+caps.latest.revision: 7
+caps.handback.revision: 0
+author: mestew
+ms.author: mstewart
+manager: dougeby
+ms.openlocfilehash: a8460cafce15e5fb97ace76983932841ec77412f
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 03/27/2018
 ---
 # <a name="troubleshooting-windows-defender-or-endpoint-protection-client"></a>Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결
 
@@ -100,7 +101,7 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 
 2.  표시된 오류 메시지에 코드 0x80072f8f가 포함되어 있으면 컴퓨터의 잘못된 날짜 또는 시간 설정으로 인한 문제일 가능성이 큽니다.  
 
-3.  컴퓨터의 날짜 또는 시간 설정을 복원하려면 [잘못된 바탕 화면 바로 가기 및 일반 시스템 유지 관리 작업 수정](http://go.microsoft.com/fwlink/?LinkId=155579) (http://go.microsoft.com/fwlink/?LinkId=155579)의 단계를 따르세요.  
+3.  컴퓨터의 날짜 또는 시간 설정을 복원하려면 [잘못된 바탕 화면 바로 가기 및 일반 시스템 유지 관리 작업 수정](http://go.microsoft.com/fwlink/?LinkId=155579)(http://go.microsoft.com/fwlink/?LinkId=155579)의 단계를 따르세요.  
 
 ### <a name="step-4-rename-the-software-distribution-folder-on-your-computer"></a>4단계: 컴퓨터의 소프트웨어 배포 폴더 이름 바꾸기  
 
@@ -153,16 +154,16 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 
 ### <a name="step-6-manually-install-the-virus-and-spyware-definition-updates"></a>6단계: 바이러스 및 스파이웨어 정의 업데이트를 수동으로 설치  
 
--   32비트 Windows 운영 체제를 실행하는 경우 [http://go.microsoft.com/fwlink/?LinkID=87342](http://go.microsoft.com/fwlink/?LinkID=87342) (http://go.microsoft.com/fwlink/?LinkID=87342)에서 수동으로 최신 업데이트를 다운로드합니다.  
+-   32비트 Windows 운영 체제를 실행하는 경우 최신 업데이트를 [http://go.microsoft.com/fwlink/?LinkID=87342](http://go.microsoft.com/fwlink/?LinkID=87342)(http://go.microsoft.com/fwlink/?LinkID=87342)에서 수동으로 다운로드합니다.  
 
--   64비트 Windows 운영 체제를 실행하는 경우 [http://go.microsoft.com/fwlink/?LinkID=87341](http://go.microsoft.com/fwlink/?LinkID=87341) (http://go.microsoft.com/fwlink/?LinkID=87341)에서 수동으로 최신 업데이트를 다운로드합니다.  
+-   64비트 Windows 운영 체제를 실행하는 경우 최신 업데이트 [http://go.microsoft.com/fwlink/?LinkID=87341](http://go.microsoft.com/fwlink/?LinkID=87341)(http://go.microsoft.com/fwlink/?LinkID=87341)에서 수동으로 다운로드합니다.  
 
 -   **실행**을 클릭합니다. 최신 업데이트가 수동으로 컴퓨터에 설치됩니다.  
 
 
 ### <a name="step-7-contact-support"></a>7단계: 지원 사이트에 문의  
 
--   해당 단계로 문제가 해결되지 않으면 지원 서비스에 문의합니다. 자세한 내용은 [고객지원](http://go.microsoft.com/fwlink/?LinkID=196174) (http://go.microsoft.com/fwlink/?LinkID=196174)을 참조하세요.  
+-   해당 단계로 문제가 해결되지 않으면 지원 서비스에 문의합니다. 자세한 내용은 [고객 지원](http://go.microsoft.com/fwlink/?LinkID=196174)(http://go.microsoft.com/fwlink/?LinkID=196174)을 참조합니다.  
 
 ##  <a name="starting-windows-defender-or-endpoint-protection-service"></a>Windows Defender 또는 Endpoint Protection 서비스 시작  
  **증상**  
@@ -238,8 +239,7 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 3.  케이블 모뎀 또는 DSL 라우터를 사용하는 경우 라우터 및 컴퓨터에 대한 연결에 문제가 없는지 확인합니다. 라우터 및 모뎀을 뽑은 후 끕니다. 잠시 기다렸다가 먼저 모뎀을 꽂고, 1분 정도 기다렸다가 라우터를 꽂은 후 컴퓨터를 다시 시작합니다.  
 
 ##  <a name="detected-threat-cant-be-remediated"></a>재구성할 수 없는 위협 감지  
- Windows Defender 또는  
-      Endpoint Protection에서 .zip 파일 확장자의 압축 파일 또는 네트워크 공유 파일에 숨어 있는 잠재적인 위협을 검색하면 이 위협을 격리하거나 제거하는 방법으로 처리하려고 합니다.  
+ Windows Defender 또는 Endpoint Protection에서 .zip 파일 확장자의 압축 파일 또는 네트워크 공유 파일에 숨어 있는 잠재적인 위협을 검색하면 이 위협을 격리하거나 제거하는 방법으로 처리하려고 합니다.  
 
 ### <a name="remove-or-scan-the-file"></a>파일 제거 또는 검사  
 

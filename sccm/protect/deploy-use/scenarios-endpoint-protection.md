@@ -1,9 +1,9 @@
 ---
-title: "Endpoint Protection으로 맬웨어로부터 컴퓨터를 보호하는 시나리오"
+title: Endpoint Protection으로 맬웨어로부터 컴퓨터를 보호하는 시나리오
 titleSuffix: Configuration Manager
-description: "Configuration Manager에서 Endpoint Protection을 구현하여 맬웨어 공격으로부터 컴퓨터를 보호하는 방법을 알아봅니다."
+description: Configuration Manager에서 Endpoint Protection을 구현하여 맬웨어 공격으로부터 컴퓨터를 보호하는 방법을 알아봅니다.
 ms.custom: na
-ms.date: 03/13/2017
+ms.date: 03/22/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -11,21 +11,21 @@ ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 539c7a89-3c03-4571-9cb4-02d455064eeb
-caps.latest.revision: "8"
-author: NathBarn
-ms.author: nathbarn
-manager: angrobe
-ms.openlocfilehash: a0aa02a9091ea9ecdd060f1e7023e9d3f95269a1
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+caps.latest.revision: 8
+author: mestew
+ms.author: mstewart
+manager: doubeby
+ms.openlocfilehash: 36f63a585fdcdc00d6ace9ea1ac6941aead5fce2
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="example-scenario-using-system-center-endpoint-protection-to-protect-computers-from-malware-in-system-center-configuration-manager"></a>예제 시나리오: System Center Endpoint Protection을 사용하여 System Center Configuration Manager에서 맬웨어로부터 컴퓨터 보호
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-이 항목에서는 Configuration Manager에서 Endpoint Protection을 구현하여 조직 내 컴퓨터를 맬웨어 공격으로부터 보호하는 방법을 보여 주는 예제 시나리오를 제공합니다.  
+이 문서에서는 Configuration Manager에서 Endpoint Protection을 구현하여 조직 내 컴퓨터를 맬웨어 공격으로부터 보호하는 방법을 보여 주는 예제 시나리오를 제공합니다.  
 
  John은 Woodgrove 은행의 Configuration Manager 관리자입니다. 현재 이 은행은 맬웨어 공격으로부터 컴퓨터를 보호하기 위해 System Center Endpoint Protection을 사용합니다. 또한 Windows 그룹 정책을 사용하여 회사의 모든 컴퓨터에서 Windows 방화벽을 사용하도록 설정하고 Windows 방화벽이 새 프로그램을 차단할 때 사용자에게 알림이 제공되도록 합니다.  
 
@@ -43,9 +43,9 @@ ms.lasthandoff: 10/12/2017
 
     -   5% 이상이 컴퓨터에서 동일한 맬웨어 위협 검색  
 
-    -   24시간 동안 5번 넘게 동일한 맬웨어 위협 검색  
+    -   24시간 동안 5번 이상 동일한 맬웨어 위협이 검색됨  
 
-    -   24시간 동안 3가지가 넘는 다른 유형의 맬웨어 검색  
+    -   24시간 동안 3가지 이상 다른 유형의 맬웨어가 검색됨  
 
 -   기존 맬웨어 방지 솔루션을 제거합니다.  
 
@@ -60,14 +60,14 @@ ms.lasthandoff: 10/12/2017
 |John은 Woodgrove Bank 계층 구조 맨 위에 있는 단일 사이트 시스템 서버에만 Endpoint Protection 사이트 시스템 역할을 설치합니다.|Endpoint Protection 사이트 시스템 역할을 설치하는 방법에 대한 자세한 내용은 [Endpoint Protection 구성](configure-endpoint-protection.md)의 "필수 조건"을 참조하세요.|  
 |John은 SMTP 서버를 사용하여 메일 경고를 보내도록 Configuration Manager를 구성합니다.<br /><br /> **참고:** Endpoint Protection 경고가 생성될 때 메일 알림을 받으려는 경우에만 SMTP 서버를 구성해야 합니다.|자세한 내용은 [Endpoint Protection에서 경고 구성](endpoint-configure-alerts.md)을 참조하세요.|  
 |John은 Endpoint Protection 클라이언트를 설치할 모든 컴퓨터 및 서버를 포함하는 장치 컬렉션을 만듭니다. 이 컬렉션의 이름을 **Endpoint Protection로 보호되는 모든 컴퓨터**로 지정합니다.<br /><br /> **팁:** 사용자 컬렉션에 대해서는 경고를 구성할 수 없습니다.|컬렉션을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 컬렉션을 만드는 방법](../../core/clients/manage/collections/create-collections.md)을 참조하세요.|  
-|그는 컬렉션에 대 한 다음 경고를 구성합니다. <br /><br />1) **맬웨어가 검색됨**: John은 경고 심각도 **위험**을 구성합니다. <br /><br />2) **동일한 유형의 맬웨어가 여러 컴퓨터에서 검색됨**: John은 경고 심각도 **위험**을 구성하고 5%가 넘는 컴퓨터에서 맬웨어가 검색될 때 경고가 생성되도록 지정합니다. <br /><br />3) **동일한 유형의 맬웨어가 컴퓨터에서 지정된 간격 내에 반복적으로 검색됨**: John은 경고 심각도 **위험**을 구성하고 맬웨어가 24시간 동안에서 5번 넘게 검색될 때 경고가 생성되도록 지정합니다. <br /><br />4) **여러 유형의 맬웨어가 동일한 컴퓨터에서 지정된 간격 내에 검색됨**: John은 경고 심각도 **위험**을 구성하고 24시간 내에 4가지 이상의 맬웨어 유형이 생성될 경우 경고가 생성되도록 지정합니다.<br /><br /> **경고 심각도** 값은 Configuration Manager 콘솔에 표시되는 경고 수준 및 메일 메시지에 수신되는 경고를 나타냅니다.<br /><br /> 또한 Configuration Manager 콘솔에서 경고를 모니터링할 수 있도록 **이 컬렉션을 Endpoint Protection 대시보드에서 보기** 옵션을 추가적으로 선택했습니다.|[System Center Configuration Manager에서 Endpoint Protection 구성](endpoint-configure-alerts.md)의 "Endpoint Protection에 대한 경고 구성"을 참조하세요.|  
+|그는 컬렉션에 대 한 다음 경고를 구성합니다. <br /><br />1) **맬웨어가 검색됨**: John은 경고 심각도 **위험**을 구성합니다. <br /><br />2) **동일한 유형의 맬웨어가 여러 컴퓨터에서 검색됨**: John은 경고 심각도 **위험**을 구성하고 5%가 넘는 컴퓨터에서 맬웨어가 검색될 때 경고가 생성되도록 지정합니다. <br /><br />3) **동일한 유형의 맬웨어가 컴퓨터에서 지정된 간격 내에 반복적으로 검색됨**: John은 경고 심각도 **위험**을 구성하고 맬웨어가 24시간 동안에서 5번 넘게 검색될 때 경고가 생성되도록 지정합니다. <br /><br />4) **여러 유형의 맬웨어가 동일한 컴퓨터에서 지정된 간격 내에 검색됨**: John은 경고 심각도 **위험**을 구성하고 24시간 내에 3가지 이상의 맬웨어 유형이 생성될 경우 경고가 생성되도록 지정합니다.<br /><br /> **경고 심각도** 값은 Configuration Manager 콘솔에 표시되는 경고 수준 및 메일 메시지에 수신되는 경고를 나타냅니다.<br /><br /> 또한 Configuration Manager 콘솔에서 경고를 모니터링할 수 있도록 **이 컬렉션을 Endpoint Protection 대시보드에서 보기** 옵션을 추가적으로 선택했습니다.|[System Center Configuration Manager에서 Endpoint Protection 구성](endpoint-configure-alerts.md)의 "Endpoint Protection에 대한 경고 구성"을 참조하세요.|  
 |John은 자동 배포 규칙을 사용하여 하루에 3번 정의 업데이트를 다운로드 및 배포하도록 Configuration Manager 소프트웨어 업데이트를 구성합니다.|자세한 내용은 [Configuration Manager 소프트웨어 업데이트를 사용하여 정의 업데이트 제공](endpoint-definitions-configmgr.md)의 "Configuration Manager 소프트웨어 업데이트를 사용하여 정의 업데이트 제공" 섹션을 참조하세요.|  
 |이한일은 Microsoft의 권장 보안 설정이 포함되어 있는 기본 맬웨어 방지 정책의 설정을 검사합니다. 컴퓨터에서 매일 빠른 검색이 수행되도록 하기 위해 다음 설정을 변경합니다.<br /><br /> 1) **클라이언트 컴퓨터에서 매일 빠른 검색 실행**: **예**<br /><br /> 2) **일별 빠른 검사 예약 시간**: **오전 9:00**.<br /><br /> 이한일은 정의 업데이트 원본으로 **Microsoft Update에서 배포된 업데이트** 가 기본적으로 선택되어 있는지 확인합니다. 이 경우 컴퓨터가 Configuration Manager 소프트웨어 업데이트를 수신할 수 없을 때 비즈니스 요구에 따라 Microsoft 업데이트에서 정의를 다운로드해야 합니다.|[System Center Configuration Manager에서 Endpoint Protection에 대한 맬웨어 방지 정책을 만들어 배포하는 방법](endpoint-antimalware-policies.md)을 참조하세요.|  
 |이한일은 극동 무역 서버만 포함된 **극동 무역 서버**라는 컬렉션을 만듭니다.|[System Center Configuration Manager에서 컬렉션을 만드는 방법](../../core/clients/manage/collections/create-collections.md)을 참조하세요.|  
 |이한일은 **극동 무역 서버 정책**이라는 사용자 지정 맬웨어 방지 정책을 만듭니다. **예약된 검사** 에 대한 설정만 추가하고 다음과 같이 변경합니다.<br /><br /> **검사 유형**:  **전체**<br /><br /> **검사일**:  **토요일**<br /><br /> **검사 시간**: **오전 1시**<br /><br /> **Run a daily quick scan on client computers(클라이언트 컴퓨터에서 매일 빠른 검색 실행)**:  **아니요**|[System Center Configuration Manager에서 Endpoint Protection에 대한 맬웨어 방지 정책을 만들어 배포하는 방법](endpoint-antimalware-policies.md)을 참조하세요.|  
-|이한일은 배포는 **극동 무역 서버 정책** 사용자 지정 맬웨어 방지 정책을 **극동 무역 서버** 컬렉션에 배포합니다.|[Endpoint Protection에 대한 맬웨어 방지 정책을 만들어 배포하는 방법](endpoint-antimalware-policies.md) 항목의 "클라이언트 컴퓨터에 맬웨어 방지 정책을 배포하려면"을 참조하세요.|  
+|이한일은 배포는 **극동 무역 서버 정책** 사용자 지정 맬웨어 방지 정책을 **극동 무역 서버** 컬렉션에 배포합니다.|[Endpoint Protection에 대한 맬웨어 방지 정책을 만들어 배포하는 방법](endpoint-antimalware-policies.md) 문서의 “클라이언트 컴퓨터에 맬웨어 방지 정책을 배포하려면”을 참조하세요.|  
 |John은 Endpoint Protection에 대한 새로운 사용자 지정 클라이언트 장치 설정 집합을 만들고 이름을 **Woodgrove Bank Endpoint Protection 설정**으로 지정합니다.<br /><br /> **참고:** 계층 구조 내의 모든 클라이언트에서 Endpoint Protection을 설치하고 사용하도록 설정하지는 않으려면 기본 클라이언트 설정에서 **클라이언트 컴퓨터에서 Endpoint Protection 관리** 및 **클라이언트 컴퓨터에서 Endpoint Protection 클라이언트 설치** 옵션이 둘 다 **아니요**로 구성되어야 합니다.|자세한 내용은 [Endpoint Protection에 대한 사용자 지정 클라이언트 설정 구성](endpoint-protection-configure-client.md)을 참조하세요.|  
-|Jone은 Endpoint Protection에 대한 다음 설정을 구성합니다.<br /><br /> **클라이언트 컴퓨터에서 Endpoint Protection 관리**을 구현합니다.  **예**<br /><br /> 이 설정 및 값은 설치된 기존 Endpoint Protection 클라이언트가 Configuration Manager에 의해 관리되도록 합니다.<br /><br /> **클라이언트 컴퓨터에 Endpoint Protection 클라이언트 설치**:  **예**<br /><br /> **Endpoint Protection 설치 전에 자동으로 이전에 설치된 맬웨어 방지 프로그램 제거**:  **예**<br /><br /> 이 설정 및 값은 Endpoint Protection이 설치되고 사용되도록 설정되기 전에 비즈니스 요구에 따라 기존 맬웨어 방지 프로그램이 제거되도록 합니다.|자세한 내용은 [Endpoint Protection에 대한 사용자 지정 클라이언트 설정 구성](endpoint-protection-configure-client.md)을 참조하세요.|  
+|Jone은 Endpoint Protection에 대한 다음 설정을 구성합니다.<br /><br /> **클라이언트 컴퓨터에서 Endpoint Protection 관리**을 구현합니다.  **예**<br /><br /> 이 설정 및 값은 설치된 기존 Endpoint Protection 클라이언트가 Configuration Manager에 의해 관리되도록 합니다.<br /><br /> **클라이언트 컴퓨터에 Endpoint Protection 클라이언트 설치**:  **예**</br></br>**참고** Configuration Manager 1802부터 Windows 10 장치에 Endpoint Protection 에이전트를 설치할 필요가 없습니다. Windows 10 장치에 이미 설치되어 있는 경우 Configuration Manager는 에이전트를 제거하지 않습니다. 관리자는 1802 클라이언트 버전 이상이 실행 중인 Windows 10 장치에서 Endpoint Protection 에이전트를 제거할 수 있습니다.<br /><br /> **Endpoint Protection 설치 전에 자동으로 이전에 설치된 맬웨어 방지 프로그램 제거**:  **예**<br /><br /> 이 설정 및 값은 Endpoint Protection이 설치되고 사용되도록 설정되기 전에 비즈니스 요구에 따라 기존 맬웨어 방지 프로그램이 제거되도록 합니다.|자세한 내용은 [Endpoint Protection에 대한 사용자 지정 클라이언트 설정 구성](endpoint-protection-configure-client.md)을 참조하세요.|  
 |John은 **Woodgrove Bank Endpoint Protection 설정** 클라이언트 설정을 **Endpoint Protection 컬렉션에 의해 보호된 모든 컴퓨터** 컬렉션에 배포합니다.|[Configuration Manager에서 Endpoint Protection 구성](endpoint-antimalware-policies.md)의 "Endpoint Protection에 대한 사용자 지정 클라이언트 설정 구성"을 참조하세요.|  
 |이한일은 Windows 방화벽 정책 만들기 마법사를 통해 도메인 프로필에 대한 다음 설정을 구성하여 정책을 만듭니다.<br /><br /> 1) **Windows 방화벽 설정**: **예**<br /><br /> 2)<br />                    **Windows 방화벽이 새 프로그램을 차단할 때 사용자에게 알림**: **예**|[System Center Configuration Manager에서 Endpoint Protection에 대한 Windows 방화벽 정책을 만들어 배포하는 방법](../../protect/deploy-use/create-windows-firewall-policies.md)을 참조하세요.|  
 |John은 이전에 만든 **Endpoint Protection에 의해 보호된 모든 컴퓨터** 컬렉션에 새 방화벽 정책을 배포합니다.|자세한 내용은 [System Center Configuration Manager에서 Endpoint Protection에 대한 Windows 방화벽 정책을 만들어 배포하는 방법](create-windows-firewall-policies.md)의 "Windows 방화벽 정책을 배포하려면"을 참조하세요.|  

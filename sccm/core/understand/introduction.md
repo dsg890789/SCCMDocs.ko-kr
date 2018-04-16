@@ -1,4 +1,4 @@
----
+﻿---
 title: "소개"
 titleSuffix: Configuration Manager
 description: "System Center Configuration Manager를 소개하는 기본 정보를 제공합니다."
@@ -12,7 +12,7 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3343eccf-bf09-41cd-9e68-03e893c7f904
-caps.latest.revision: 
+caps.latest.revision: ''
 author: aczechowski
 ms.author: aaroncz
 manager: angrobe
@@ -111,7 +111,7 @@ Configuration Manager에 대한 자세한 내용은 다음 항목과 이 항목�
 
 -   생산성 증대  
 -   보다 효율적인 관리 환경을 위해 장치에 대한 준수 관리 통합
--   장치 관리를 간소화하여 IT 운영 비용 절감  
+-   장치 관리를 간소화하여 IT 운영 비용   
 
 모든 시나리오에서 Configuration Manager의 기본 관리자는 구재석입니다.  
 

@@ -1,9 +1,9 @@
 ---
 title: CEIP
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에 대한 사용자 환경 개선 프로그램 설정에 대해 알아봅니다."
+description: 사용자 환경 개선 프로그램 설정에 대한 자세한 정보
 ms.custom: na
-ms.date: 02/22/2018
+ms.date: 03/22/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,19 +12,22 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: bd5b34c9-7304-4743-81c3-96f1e0c80702
-caps.latest.revision: 
+caps.latest.revision: 4
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5d49c3bc6080bd9a507c19a9504ccc802c75dacd
-ms.sourcegitcommit: be939893f0ceca4add8655ae2c24e42aa16aec38
+ms.openlocfilehash: d1cb071e780f2e1552495f3a0fa89c71bbef3cc0
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="customer-experience-improvement-program-ceip-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 CEIP(사용자 환경 개선 프로그램)
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
+
+> [!Note]  
+> Configuration Manager 버전 1802부터 CEIP 기능은 제품에서 제거됩니다.
 
 Configuration Manager 콘솔을 설치하는 동안 **CEIP**(사용자 환경 개선 프로그램)에 참여하도록 선택할 수 있습니다. CEIP는 기본적으로 꺼져 있습니다. 이전에 사용하도록 설정한 경우에는 사용 가능한 상태로 유지됩니다.  
 

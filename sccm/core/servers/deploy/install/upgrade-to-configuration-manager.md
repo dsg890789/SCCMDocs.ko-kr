@@ -1,24 +1,25 @@
 ---
-title: "System Center Configuration Manager 업그레이드"
-description: "System Center 2012 Configuration Manager를 실행하는 사이트 및 계층 구조에서 현재 위치 업그레이드를 성공적으로 실행하기 위한 단계를 알아봅니다."
+title: System Center Configuration Manager 업그레이드
+description: System Center 2012 Configuration Manager를 실행하는 사이트 및 계층 구조에서 현재 위치 업그레이드를 성공적으로 실행하기 위한 단계를 알아봅니다.
 ms.custom: na
-ms.date: 6/6/2017
+ms.date: 03/22/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: c64e7483-b4bb-4738-95f4-ecdaeb6a2ba6
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 770976309fbd5e8884dfec4bdaa29630ef1c02d0
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: 72e11a04eb64d649749f2001ac4e3550c784132c
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="upgrade-to-system-center-configuration-manager"></a>System Center Configuration Manager 업그레이드
 
@@ -32,6 +33,14 @@ ms.lasthandoff: 12/04/2017
  > System Center Configuration Manager 사이트 및 계층 인프라를 관리할 때 *업그레이드*, *업데이트* 및 *설치*라는 용어는 세 가지 별도의 개념을 설명하는 데 사용됩니다. 각 용어가 어떻게 사용되는지 알아보려면 [업그레이드, 업데이트 및 설치 정보](/sccm/core/understand/upgrade-update-install)를 참조하세요.
 
 ##  <a name="bkmk_path"></a> 현재 위치 업그레이드 경로  
+
+**버전 1802로 업그레이드**   
+버전 1702 기준 미디어가 있는 경우 다음 버전을 System Center Configuration Manager 버전 1802의 정품 버전으로 업그레이드할 수 있습니다.   
+-     System Center Configuration Manager 버전 1802의 평가판 설치
+-     System Center 2012 Configuration Manager 서비스 팩 1
+-     System Center 2012 Configuration Manager 서비스 팩 2
+-     System Center 2012 R2 Configuration Manager
+-     System Center 2012 R2 Configuration Manager 서비스 팩 1
 
 **버전 1702로 업그레이드**   
 버전 1702 기준 미디어가 있는 경우 다음 버전을 System Center Configuration Manager 버전 1702의 정품 버전으로 업그레이드할 수 있습니다.   
@@ -68,7 +77,7 @@ When you have version 1511 baseline media, you can upgrade the following to a fu
 
 
 > [!TIP]  
->  System Center 2012 Configuration Manager 버전에서 현재 분기로 업그레이드하는 경우 업그레이드 프로세스를 효율적으로 수행할 수 있습니다. 자세한 내용은 다음을 참조하십시오.  
+>  System Center 2012 Configuration Manager 버전에서 현재 분기로 업그레이드하는 경우 업그레이드 프로세스를 효율적으로 수행할 수 있습니다. 자세한 내용은 다음을 참조하세요.  
 >   
 >  -   [System Center Configuration Manager용 업데이트](../../../../core/servers/manage/updates.md)의 [기준 및 업데이트 버전](../../../../core/servers/manage/updates.md#bkmk_Baselines) 섹션  
 >  -   [System Center Configuration Manager의 CD.Latest 폴더](../../../../core/servers/manage/the-cd.latest-folder.md)  
@@ -120,7 +129,7 @@ Configuration Manager에서 관리 지점에 대한 데이터베이스 복제본
 -   데이터베이스 업그레이드를 테스트하기 위해 사이트 데이터베이스 백업 만들기  
 -   프로덕션 사이트를 System Center Configuration Manager로 업그레이드  
 
-자세한 내용은 다음을 참조하십시오.  
+자세한 내용은 다음을 참조하세요.  
 -   System Center 2012 Configuration Manager: [관리 지점에 대한 데이터베이스 복제본 구성](https://technet.microsoft.com/library/hh846234.aspx)  
 -   System Center Configuration Manager: [System Center Configuration Manager의 관리 지점용 데이터베이스 복제본](../../../../core/servers/deploy/configure/database-replicas-for-management-points.md)  
 

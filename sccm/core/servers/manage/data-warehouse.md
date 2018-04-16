@@ -1,9 +1,9 @@
 ---
-title: "데이터 웨어하우스"
+title: 데이터 웨어하우스
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에 대한 데이터 웨어하우스 서비스 지점 및 데이터베이스"
+description: System Center Configuration Manager에 대한 데이터 웨어하우스 서비스 지점 및 데이터베이스
 ms.custom: na
-ms.date: 02/26/2018
+ms.date: 03/22/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,15 +12,15 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: aaf43e69-68b4-469a-ad58-9b66deb29057
-caps.latest.revision: 
+caps.latest.revision: ''
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 954ec65bae15e087d6cf5afbcc8e0da1ebf83533
-ms.sourcegitcommit: be939893f0ceca4add8655ae2c24e42aa16aec38
+ms.openlocfilehash: 83bfc0e3d7bdf1ff8718c7c211c897e37b21a06b
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/23/2018
 ---
 #  <a name="the-data-warehouse-service-point-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 데이터 웨어하우스 서비스 지점
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -88,6 +88,7 @@ ms.lasthandoff: 02/27/2018
      - **데이터베이스 이름**: 데이터 웨어하우스 데이터베이스의 이름을 지정합니다. 데이터베이스의 이름은 10자를 초과할 수 없습니다. (향후 릴리스에서는 지원되는 이름 길이가 늘어날 예정입니다.)
      Configuration Manager는 이 이름으로 데이터 웨어하우스 데이터베이스를 만듭니다. SQL Server 인스턴스에 이미 존재하는 데이터베이스 이름을 지정하면 Configuration Manager는 해당 데이터베이스를 사용합니다.
      - **연결에 사용되는 SQL Server 포트**: 데이터 웨어하우스 데이터베이스를 호스트하는 SQL Server에서 사용하는 TCP/IP 포트 번호를 지정합니다. 이 포트는 데이터 웨어하우스 동기화 서비스에서 데이터 웨어하우스 데이터베이스에 연결하는 데 사용됩니다.  
+     - **Data Warehouse 서비스 지점 계정**: 1802 버전부터, 데이터 웨어하우스 데이터베이스에 연결할 때 SQL Server Reporting Services가 사용하는 계정을 지정합니다. 
 
 **동기화 일정** 페이지:   
 - **동기화 일정**:
@@ -96,8 +97,12 @@ ms.lasthandoff: 02/27/2018
          - **매일**: 동기화가 매일 실행되도록 지정합니다.
          - **매주**: 매주 동기화를 되풀이할 요일을 지정합니다.
 
+
 ## <a name="reporting"></a>보고
 데이터 웨어하우스 서비스 지점을 설치하면 동일한 사이트에 설치된 보고 서비스 지점에서 여러 보고서를 사용할 수 있습니다. 보고 서비스 지점을 설치하기 전에 데이터 웨어하우스 서비스 지점을 설치하는 경우 나중에 보고 서비스 지점을 설치할 때 보고서가 자동으로 추가됩니다.
+
+>[!WARNING]
+>Configuration Manager 버전 1802에서 데이터 웨어하우스 지점에 대한 대체 자격 증명 지원이 추가되었습니다. <!--507334-->이전 버전의 Configuration Manager에서 업그레이드한 경우 SQL Server Reporting Services가 데이터 웨어하우스 데이터베이스에 연결하는 데 사용할 자격 증명을 지정해야 합니다. 데이터 웨어하우스 보고서는 자격 증명이 지정될 때까지 열리지 않습니다. 계정을 지정하려면 **관리** >**사이트 구성** >**서버 및 사이트 시스템 역할**로 이동합니다. 데이터 웨어하우스 서비스 지점이 있는 서버를 클릭한 다음, 데이터 웨어하우스 서비스 지점 역할을 마우스 오른쪽 단추로 클릭합니다. **속성**을 선택한 다음, **데이터 웨어하우스 서비스 지점 계정**을 지정합니다.
 
 데이터 웨어하우스 사이트 시스템 역할에는 **데이터 웨어하우스** 범주에 속한 다음 보고서가 포함됩니다.
  - **응용 프로그램 배포 - 기록**: 특정 응용 프로그램 및 컴퓨터에 대한 응용 프로그램 배포 정보를 확인합니다.

@@ -1,7 +1,7 @@
 ---
-title: "온-프레미스 인프라 업그레이드"
+title: 온-프레미스 인프라 업그레이드
 titleSuffix: Configuration Manager
-description: "SQL Server, 사이트 시스템의 사이트 운영 체제 등의 인프라를 업그레이드하는 방법을 알아봅니다."
+description: SQL Server, 사이트 시스템의 사이트 운영 체제 등의 인프라를 업그레이드하는 방법을 알아봅니다.
 ms.custom: na
 ms.date: 02/15/2018
 ms.prod: configuration-manager
@@ -12,16 +12,16 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8ca970dd-e71c-404f-9435-d36e773a0db2
-caps.latest.revision: 
-caps.handback.revision: 
+caps.latest.revision: 7
+caps.handback.revision: 0
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 8e17ffad2b972119c92e449bef8f086b950b106c
-ms.sourcegitcommit: fbd4a9d2fa8ed4ddd3a0fecc4a2ec4fc0ccc3d0c
+ms.openlocfilehash: 5c4403588872e426a9346e6c4c50f1853b75f4b9
+ms.sourcegitcommit: 27da4be015f1496b7b89ebddb517a2685f1ecf74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="upgrade-on-premises-infrastructure-that-supports-system-center-configuration-manager"></a>System Center Configuration Manager를 지원하는 온-프레미스 인프라 업그레이드
 
@@ -74,6 +74,8 @@ Windows Server 2012 또는 Windows Server 2012 R2를 Windows Server 2016으로 �
 -   사이트 시스템 역할을 호스트하는 각 서버가 해당 서버에서 실행되는 [사이트 시스템 역할에 대한 필수 조건](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)을 계속해서 모두 충족하는지 확인합니다. 예를 들어 BITS 또는 WSUS를 다시 설치하거나 IIS에 대한 특정 설정을 구성해야 할 수 있습니다.
 
 -   누락된 필수 조건을 복원한 후 서버를 한 번 더 다시 시작하여 서비스가 시작되고 작동하도록 합니다.
+
+-   주 사이트 서버를 업그레이드하는 경우 [사이트 다시 설정을 실행](/sccm/core/servers/manage/modify-your-infrastructure#bkmk_reset)합니다.
 
 **원격 Configuration Manager 콘솔에 대해 알려진 문제:**  
 사이트 서버 또는 SMS_Provider 인스턴스를 호스트하는 서버를 Windows Server 2016으로 업그레이드한 후 관리자가 Configuration Manager 콘솔을 사이트에 연결하지 못할 수 있습니다. 이 문제를 해결하려면 WMI에서 SMS Admins 그룹의 사용 권한을 수동으로 복원해야 합니다. 사이트 서버 및 SMS_Provider 인스턴스를 호스트하는 각 원격 서버에서 사용 권한을 설정해야 합니다.

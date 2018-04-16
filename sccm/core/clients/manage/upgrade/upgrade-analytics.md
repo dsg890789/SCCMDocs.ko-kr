@@ -1,22 +1,23 @@
 ---
-title: "업그레이드 준비"
-titleSuffix: Configuration Manager
-description: "업그레이드 준비를 Configuration Manager와 통합합니다. 관리 콘솔에서 업그레이드 호환성 데이터에 액세스합니다. 업그레이드 또는 수정 대상 장치를 지정합니다."
-keywords: 
-author: mattbriggs
-ms.author: mabrigg
-manager: angerobe
-ms.date: 7/31/2017
+title: 업그레이드 준비
+titleSuffix: System Center Configuration Manager
+description: 업그레이드 준비를 Configuration Manager와 통합합니다. 관리 콘솔에서 업그레이드 호환성 데이터에 액세스합니다. 업그레이드 또는 수정 대상 장치를 지정합니다.
+keywords: ''
+author: mestew
+ms.author: mstewart
+manager: dougeby
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: configuration-manager
-ms.service: 
-ms.technology: configmgr-client
+ms.service: ''
+ms.technology:
+- configmgr-client
 ms.assetid: 68407ab8-c205-44ed-9deb-ff5714451624
-ms.openlocfilehash: df2950551e527788aeb01d57cdbf01ad19817ccd
-ms.sourcegitcommit: 986fc2d54f7c5fa965fd4df42f4db4ecce6b79cb
+ms.openlocfilehash: 96f20c3559ac08cb4c5a16d1d33b74c63a02e4b7
+ms.sourcegitcommit: f0bfd9fa0ec5b416f0ea2beee889b94e2ad9c97d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="integrate-upgrade-readiness-with-system-center-configuration-manager"></a>업그레이드 준비를 System Center Configuration Manager와 통합
 
@@ -25,6 +26,12 @@ ms.lasthandoff: 11/17/2017
 업그레이드 준비(이전의 Upgrade Analytics)는 [Windows Analytics](https://www.microsoft.com/WindowsForBusiness/windows-analytics)의 일부로, Windows 10으로 업그레이드하기 위해 사용자 환경에서 장치의 준비 상태를 평가하고 분석할 수 있습니다. 특정 버전을 구성할 수 있습니다. 업그레이드 준비는 Configuration Manager와 통합하여 Configuration Manager 관리 콘솔에서 클라이언트 업그레이드 호환성 데이터에 액세스할 수 있습니다. 이 데이터를 기반으로 하여 만든 동적 컬렉션을 통해 장치를 대상으로 지정하여 업그레이드 또는 수정할 수 있습니다.
 
 업그레이드 준비는 [OMS(Operations Management Suite)](/azure/operations-management-suite/operations-management-suite-overview)에서 실행되는 솔루션입니다. [업그레이드 준비를 통해 Windows 업그레이드 관리](/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness)에서 업그레이드 준비에 대해 자세히 알아볼 수 있습니다.
+
+<!--
+>[!WARNING]
+>For Upgrade Readiness to function within Configuration Manager, you must upgrade to Configuration Manager version 1802. The Upgrade Readiness Connector will no longer function in Configuration Manager versions earlier than 1802. 
+SMS.507205 Pulled 4/5/18 -->
+
 
 ## <a name="configure-clients"></a>클라이언트 구성
 
@@ -44,7 +51,7 @@ ms.lasthandoff: 11/17/2017
 현재 분기 버전 1706부터 [Azure 서비스 마법사](../../../servers/deploy/configure/azure-services-wizard.md)를 사용하여 Configuration Manager에서 사용하도록 Azure 서비스를 구성하는 과정을 간소화할 수 있습니다. Configuration Manager와 업그레이드 준비를 연결하려면 *[Azure Portal](https://portal.azure.com)에서 웹앱/API* 유형의 Azure AD 앱 등록을 만들어야 합니다. 앱 등록을 만드는 방법에 대해 자세히 알아보려면 [Azure Active Directory 테넌트로 응용 프로그램 등록](/azure/active-directory/active-directory-app-registration)을 참조하세요. 또한 **Azure Portal**에서 업그레이드 준비 데이터를 호스팅하는 OMS 작업 영역이 포함된 리소스 그룹에 새로 등록된 웹앱 *참가자* 권한을 부여해야 합니다. **Azure 서비스 마법사**는 이 앱 등록을 사용하여 Configuration Manager에서 Azure AD와 안전하게 통신하고 업그레이드 준비 데이터에 인프라를 연결할 수 있게 합니다.
 
 >[!IMPORTANT]
->Azure AD 사용자 ID와 달리 *참가자* 권한은 앱 자체에 부여해야 합니다. 이는 등록된 응용 프로그램이며 Configuration Manager 인프라를 대신하여 데이터에 액세스하는 Azure AD 사용자가 아니기 때문입니다. 이를 위해서는 권한을 할당할 때 **사용자 추가** 블레이드에서 앱 등록 이름을 검색해야 합니다. 이 작업은 [Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-sccm)에 연결하기 위해 [OMS에 대한 권한을 Configuration Manager에 제공](https://docs.microsoft.com/azure/log-analytics/log-analytics-sccm#provide-configuration-manager-with-permissions-to-oms)할 때 수행해야 하는 프로세스와 동일합니다. 이러한 단계는 *Azure 서비스 마법사*를 사용하여 앱 등록을 Configuration Manager로 가져오기 전에 완료해야 합니다.
+>Azure AD 사용자 ID와 달리 *참가자* 권한은 앱 자체에 부여해야 합니다. 이는 등록된 응용 프로그램이며 Configuration Manager 인프라를 대신하여 데이터에 액세스하는 Azure AD 사용자가 아니기 때문입니다. 권한을 부여하려면 권한을 할당할 때 **사용자 추가** 영역에서 앱 등록 이름을 검색해야 합니다. [Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-sccm)에 연결하기 위해 [OMS에 대한 권한을 Configuration Manager에 제공](https://docs.microsoft.com/azure/log-analytics/log-analytics-sccm#provide-configuration-manager-with-permissions-to-oms)할 때 수행해야 하는 프로세스와 동일합니다. 이러한 단계는 *Azure 서비스 마법사*를 사용하여 앱 등록을 Configuration Manager로 가져오기 전에 완료해야 합니다.
 
 ### <a name="use-the-azure-wizard-to-create-the-connection"></a>Azure 마법사를 사용하여 연결 만들기
 
@@ -70,7 +77,7 @@ ms.lasthandoff: 11/17/2017
 
 Configuration Manager 버전 1702 또는 이전 버전에서 업그레이드 준비에 대한 연결을 만드는 경우 다른 단계와 요구 사항 집합이 필요합니다.
 
-### <a name="prerequisites"></a>전제 조건
+### <a name="prerequisites"></a>필수 구성 요소
 
 - 연결을 추가하려면 Configuration Manager 환경에서 먼저 [서비스 연결 지점](/sccm/core/servers/deploy/configure/about-the-service-connection-point)을 [온라인 모드](https://azure.microsoft.com/documentation/articles/resource-group-create-service-principal-portal/)로 구성해야 합니다. 사용자 환경에 연결을 추가하면 이 사이트 시스템 역할을 실행하는 컴퓨터에 Microsoft Monitoring Agent도 설치됩니다.
 - Configuration Manager를 "웹 응용 프로그램 및/또는 Web API" 관리 도구로 등록하고 [이 등록의 클라이언트 ID](https://azure.microsoft.com/documentation/articles/active-directory-integrating-applications/)를 받습니다.

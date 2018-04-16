@@ -1,26 +1,27 @@
 ---
-title: "업데이트"
+title: 업데이트 및 서비스
 titleSuffix: Configuration Manager
-description: "**업데이트 및 서비스**라는 콘솔 내 서비스 메서드에 대해 알아봅니다. 이 방법을 사용하면 권장 업데이트를 손쉽게 찾아서 업데이트할 수 있습니다."
+description: 업데이트 및 서비스라는 콘솔 내 서비스 메서드에 대해 알아봅니다. 이 방법을 사용하면 권장 업데이트를 간편하게 찾아서 설치할 수 있습니다.
 ms.custom: na
-ms.date: 11/20/2017
+ms.date: 03/28/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3a832943-580a-4a40-b454-961d0854ac2b
-caps.latest.revision: "51"
-caps.handback.revision: "0"
+caps.latest.revision: 51
+caps.handback.revision: 0
 author: mestew
 ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: a90222d16391d1e75d041c95c048a1d8d19bf278
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+manager: dougeby
+ms.openlocfilehash: 7660736dbacebb7167cb6bd19d7590d7f774e17c
+ms.sourcegitcommit: aed99ba3c5e9482199cb3fc5c92f6f3a160cb181
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="updates-for-system-center-configuration-manager"></a>System Center Configuration Manager용 업데이트
 
@@ -47,7 +48,7 @@ Technical Preview 분기를 사용하는 경우 해당 분기와 관련된 추�
 
 
 ##  <a name="bkmk_Baselines"></a> 기준 및 업데이트 버전  
- System Center Configuration Manager 현재 분기의 첫 번째 릴리스는 버전 1511(기준선 버전)이었습니다. 최신 기준 버전에는 버전 1606 및 1702가 있습니다.
+ System Center Configuration Manager 현재 분기의 첫 번째 릴리스는 버전 1511(기준선 버전)이었습니다. 최신 기준 버전에는 1702 및 1802 버전이 포함됩니다.
 
 -   새 계층 구조에 새로운 사이트를 설치할 때 최신 기준 버전을 사용합니다.  
 
@@ -73,8 +74,9 @@ Configuration Manager에 대한 일부 업데이트는 기존 인프라에 대�
 
 Configuration Manager의 다음 버전은 기준, 업데이트 또는 두 가지 버전이 모두 제공됩니다.  
 
-|버전 |가용일|[지원 종료 날짜](/sccm/core/servers/manage/current-branch-versions-supported) |기준|콘솔 내 업데이트|  
+|Version |가용일|[지원 종료 날짜](/sccm/core/servers/manage/current-branch-versions-supported) |기준|콘솔 내 업데이트|  
 |-------------|-----------|------------|--------------|------------------------|  
+|[1802](/sccm/core/plan-design/changes/whats-new-in-version-1802)<br /><br /> 5.00.8634.1000|2018년 3월 22일|2019년 9월 22일|예|예|
 |[1710](/sccm/core/plan-design/changes/whats-new-in-version-1710)<br /><br /> 5.00.8577.1000|2017년 11월 20일|2019 년 5 월 20|아니요|예|
 |[1706](/sccm/core/plan-design/changes/whats-new-in-version-1706)<br /><br /> 5.00.8540.1000|2017년 7월 31일|2018년 7월 31일|아니요|예|
 |[1702](/sccm/core/plan-design/changes/whats-new-in-version-1702)<br /><br /> 5.00.8498.1000|2017년 3월 27일| 2018년 3월 27일|예|예|
@@ -85,15 +87,19 @@ Configuration Manager의 다음 버전은 기준, 업데이트 또는 두 가지
 | 1511 <br /><br /> 5.00.8325.1000|2015년 12월 8일| 2016년 12월 8일|예|아니요|  
 
 
-*(참고 1)* 이 1606 및 1702 기준 미디어는 [VLSC](https://www.microsoft.com/Licensing/servicecenter/Downloads/DownloadsAndKeys.aspx)(볼륨 라이선스 서비스 센터)에서 Microsoft System Center 2016 또는 System Center Configuration Manager(현재 분기 및 장기 서비스 분기) 릴리스의 일부로 제공됩니다. 예를 들어 VLSC에서 *System Center Config Mgr(현재 분기 및 LTSB)*을 검색할 수 있으며 1606 및 1702 버전 기준 미디어가 반환되고 다운로드할 수 있습니다.
+*(참고 1)* 1802 및 1702 기준 미디어는 [VLSC](https://www.microsoft.com/Licensing/servicecenter/Downloads/DownloadsAndKeys.aspx)(볼륨 라이선스 서비스 센터)에서 Microsoft System Center 2016 또는 System Center Configuration Manager(현재 분기 및 장기 서비스 분기) 릴리스의 일부로 제공됩니다. 예를 들어 VLSC에서 *System Center Config Mgr(현재 분기 및 LTSB)*을 검색할 수 있으며, 1802 및 1702 버전 기준 미디어가 모두 반환되고 다운로드할 수 있습니다.
 
 Configuration Manager 사이트의 버전을 확인하려면, 새 사이트와 콘솔 버전이 표시되는 콘솔의 왼쪽 위 모서리에서 **System Center Configuration Manager 정보** 로 이동합니다.  
+
+ > [!Note]  
+ > 1802 버전부터는 콘솔 버전이 이제 사이트 버전과 약간 다릅니다. 이제 콘솔의 부 버전이 Configuration Manager 릴리스 버전에 해당합니다. 예를 들어, Configuration Manager 버전 1802에서 초기 사이트 버전은 5.0.8634.1000이고 초기 콘솔 버전은 5.**1802**.1082.1700입니다. 빌드(1082) 및 수정(1700) 번호는 향후 핫픽스에서 1802 릴리스로 변경될 수 있습니다.
+
 
 ##  <a name="bkmk_inconsole"></a> 콘솔 내 업데이트 및 서비스  
  현재 분기라고도 하는, 프로덕션이 준비된 System Center Configuration Manager 설치를 사용하는 경우 사용자가 설치하는 대부분의 업데이트는 업데이트 및 서비스 채널을 사용하여 제공됩니다. 이 메서드는 현재 인프라 버전 및 구성에 해당하는 업데이트를 식별하고, 다운로드하고 사용할 수 있게 만들며, Microsoft에서 모든 고객에게 권장하는 업데이트만 포함시킵니다.   
  여기에는 다음이 포함됩니다.  
 
--   새 버전(예: 버전 1610, 1702 또는 1706)  
+-   새 버전(예: 1702, 1706, 1710 또는 1802 버전)  
 
 -   업데이트(현재 버전에 대한 새로운 기능 포함)
 

@@ -1,9 +1,9 @@
 ---
-title: "권장 하드웨어"
+title: 권장 하드웨어
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 환경을 기본 배포 이상으로 확장하는 데 도움이 되는 하드웨어 권장 사항을 확인합니다."
+description: System Center Configuration Manager 환경을 기본 배포 이상으로 확장하는 데 도움이 되는 하드웨어 권장 사항을 확인합니다.
 ms.custom: na
-ms.date: 05/04/2017
+ms.date: 03/22/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,16 +12,16 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 5267f0af-34d3-47a0-9ab8-986c41276e6c
-caps.latest.revision: 
-caps.handback.revision: 
+caps.latest.revision: 26
+caps.handback.revision: 0
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 5def3fdef8e9182cb624640fa54ff2eae224e6a1
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: 8d0883c7c2a735a2e651d61083d4d45570408ebb
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="recommended-hardware-for-system-center-configuration-manager"></a>System Center Configuration Manager에 권장되는 하드웨어
 
@@ -104,7 +104,7 @@ ms.lasthandoff: 12/04/2017
 
 -   중앙 관리 사이트의 임시 데이터베이스 크기는 일반적으로 기본 사이트의 경우보다 훨씬 작습니다.  
 
--   보조 사이트 데이터베이스 크기는 다음으로 제한됩니다.  
+-   보조 사이트 데이터베이스에는 다음 크기 제한이 있습니다.  
 
     -   SQL Server 2012 Express: 10GB  
 
@@ -120,7 +120,7 @@ ms.lasthandoff: 12/04/2017
 
 -   **디스크 공간:** 500MB의 사용 가능한 디스크 공간(Configuration Manager 클라이언트 캐시의 경우 5GB 권장) 사용자 지정된 설정을 사용하여 Configuration Manager 클라이언트를 설치하는 경우에는 필요한 디스크 공간이 더 적어집니다.  
 
-    -   클라이언트에 불필요한 파일을 설치하지 않으려면 CCMSetup 명령줄 속성 /skipprereq를 사용합니다. 예를 들어 클라이언트가 응용 프로그램 카탈로그를 사용하지 않는 경우에는 **CCMSetup.exe /skipprereq:silverlight.exe**를 실행합니다.  
+    -   클라이언트에 불필요한 파일을 설치하지 않으려면 CCMSetup 명령줄 속성 /skipprereq를 사용합니다. 예를 들어 클라이언트가 응용 프로그램 카탈로그를 사용하지 않는 경우에는 **CCMSetup.exe /skipprereq:silverlight.exe**를 실행합니다. Configuration Manager 1802부터 Silverlight는 더 이상 자동으로 설치되지 않습니다.  
 
     -   기본값인 5120MB보다 작은 캐시 파일을 설정하려면 Client.msi 속성 SMSCACHESIZE를 사용합니다. 최소 크기는 1MB입니다. 예를 들어 **CCMSetup.exe SMSCachesize=2** 를 사용하는 경우 크기가 2MB인 캐시가 만들어집니다.  
 

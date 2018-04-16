@@ -1,28 +1,29 @@
 ---
-title: "Windows 10에서 비즈니스용 Windows 업데이트와 통합"
+title: Windows 10에서 비즈니스용 Windows 업데이트와 통합
 titleSuffix: Configuration Manager
-description: "비즈니스용 Windows 업데이트를 사용하면 Windows 업데이트 서비스에 연결된 장치에 대해 조직의 Windows 10 기반 장치를 최신 상태로 유지할 수 있습니다."
-keywords: 
-author: dougeby
-ms.author: dougeby
-manager: angrobe
-ms.date: 10/06/2016
+description: 비즈니스용 Windows 업데이트를 사용하면 Windows 업데이트 서비스에 연결된 장치에 대해 조직의 Windows 10 기반 장치를 최신 상태로 유지할 수 있습니다.
+keywords: ''
+author: mestew
+ms.author: mstewart
+manager: dougeby
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: configuration-manager
-ms.service: 
-ms.technology: configmgr-sum
+ms.service: ''
+ms.technology:
+- configmgr-sum
 ms.assetid: 183315fe-27bd-456f-b2c5-e8d25e05229b
-ms.openlocfilehash: 070275f65cf69dc6491720338d30e666a08b6129
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: e27e5f043af28b74369f21d19e5b20e19572213a
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="integration-with-windows-update-for-business-in-windows-10"></a>Windows 10에서 비즈니스용 Windows 업데이트와 통합
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-조직의 Windows 10 기반 장치를 WU(Windows 업데이트) 서비스에 직접 연결하면 WUfB(비즈니스용 Windows 업데이트)를 통해 최신 보안 방어 및 Windows 기능을 사용하여 이러한 장치를 항상 최신 상태로 유지할 수 있습니다. Configuration Manager에는 WUfB 및 WSUS를 사용하여 소프트웨어 업데이트를 가져오는 Windows 10 컴퓨터를 구분할 수 있는 기능이 있습니다.  
+조직의 Windows 10 기반 장치를 WU(Windows 업데이트) 서비스에 직접 연결하면 WUfB(비즈니스용 Windows 업데이트)를 통해 최신 보안 방어 및 Windows 기능을 사용하여 이러한 장치를 항상 최신 상태로 유지할 수 있습니다. Configuration Manager는 WUfB 및 WSUS를 사용하여 소프트웨어 업데이트를 가져오는 Windows 10 컴퓨터를 구분할 수 있습니다.  
 
  Configuration Manager 클라이언트가 WUfB 또는 Windows 참가자를 포함하는 WU에서 업데이트를 수신하도록 구성된 경우에는 일부 Configuration Manager 기능을 더 이상 사용할 수 없습니다.  
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/12/2017
 
     -   Configuration Manager에서 WU에 게시되는 업데이트를 인식할 수 없습니다. WU에서 업데이트를 수신하도록 구성된 Configuration Manager 클라이언트는 해당 업데이트에 대해 Configuration Manager 콘솔에 **알 수 없음**을 표시합니다.  
 
-    -   **알 수 없음** 상태는 WSUS의 검색 상태를 다시 보고하지 않은 클라이언트에만 사용되므로 전체적인 준수 상태 문제를 해결하기 어렵습니다.  이제 WU에서 업데이트를 수신하는 Configuration Manager 클라이언트도 포함됩니다.  
+    -   **알 수 없음** 상태는 WSUS의 검색 상태를 다시 보고하지 않은 클라이언트에만 사용되었므로 전체적인 준수 상태 문제를 해결하기 어렵습니다. 이제 WU에서 업데이트를 수신하는 Configuration Manager 클라이언트도 포함됩니다.  
 
     -   업데이트 준수 상태를 기반으로 하는 조건부 액세스(회사 리소스 대상)는 WU에서 업데이트를 수신하는 클라이언트에 대해 예상대로 작동하지 않습니다. 해당 클라이언트가 Configuration Manager의 준수를 충족하지 않기 때문입니다.  
 
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/12/2017
 -   소프트웨어 업데이트 인프라를 사용하는 Configuration Manager 전체 클라이언트 배포는 WUfB에 연결하여 업데이트를 받는 클라이언트에 대해 작동하지 않습니다.  
 
 ## <a name="identify-clients-that-use-wufb-for-windows-10-updates"></a>Windows 10 업데이트를 위해 WUfB를 사용하는 클라이언트 식별  
- 다음 절차를 사용하여 Windows 10 업데이트 및 업그레이드를 가져오는 데 WUfB를 사용하는 클라이언트를 식별하고, 이러한 클라이언트를 업데이트를 가져오는 데 WSUS를 사용하지 않도록 구성한 후, 클라이언트 에이전트 설정을 배포하여 해당 클라이언트에 소프트웨어 업데이트 워크플로를 사용하지 않도록 설정합니다.  
+ 다음 프로시저를 사용하여 Windows 10 업데이트 및 업그레이드를 가져오는 데 WUfB를 사용하는 클라이언트를 식별합니다. 그런 다음, 이러한 클라이언트를 업데이트를 가져오는 데 WSUS를 사용하지 않도록 구성한 후, 클라이언트 에이전트 설정을 배포하여 해당 클라이언트에 소프트웨어 업데이트 워크플로를 사용하지 않도록 설정합니다.  
 
  **전제 조건**  
 
@@ -55,14 +56,14 @@ ms.lasthandoff: 10/12/2017
 
 #### <a name="to-identify-clients-that-use-wufb"></a>WUfB를 사용하는 클라이언트를 식별하려면 다음을 수행합니다.  
 
-1.  이전에 설정된 경우 Windows 업데이트 에이전트를 사용하지 않도록 설정하여 WSUS에 대한 검사가 이루어지지 않도록 합니다.   
-    레지스트리 키 **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU\UseWUServer**를 설정하여 컴퓨터에서 WSUS에 대해 검사할지 또는 Windows 업데이트에 대해 검사할지 지정할 수 있습니다.  값이 2이면 WSUS에 대해 검사하지 않는 것입니다.  
+1.  이전에 설정된 경우 Windows 업데이트 에이전트를 사용하지 않도록 설정하여 WSUS에 대한 검사가 이루어지지 않도록 합니다. 다음 레지스트리 키는 컴퓨터가 WSUS 또는 Windows 업데이트에 대해 검사하는지를 나타내도록 설정될 수 있습니다.  값이 2이면 WSUS에 대해 검사하지 않는 것입니다.  
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU\UseWUServer**
 
 2.  Configuration Manager 리소스 탐색기의 **Windows 업데이트** 노드 아래에 새 특성 **UseWUServer**가 있습니다.  
 
 3.  업데이트 및 업그레이드를 위해 WUfB를 통해 연결된 모든 컴퓨터에 대해 **UseWUServer** 특성을 기반으로 컬렉션을 만듭니다.  
 
-4.  소프트웨어 업데이트 워크플로를 사용하지 않도록 클라이언트 에이전트 설정을 만들고 이 설정을 WUfB에 직접 연결된 컴퓨터 컬렉션에 배포합니다.  
+4.  클라이언트 에이전트 설정을 만들어 소프트웨어 업데이트 워크플로를 사용하지 않도록 설정합니다. 설정을 WUfB에 직접 연결하는 컴퓨터의 컬렉션에 배포합니다.  
 
 5.  WUfB를 통해 관리되는 컴퓨터는 준수 상태가 **알 수 없음**으로 표시되며 전체 준수 비율의 일부로 계산되지 않습니다.  
 
@@ -70,20 +71,21 @@ ms.lasthandoff: 10/12/2017
 <!-- 1290890 -->
 Configuration Manager 버전 1706부터 비즈니스용 Windows 업데이트에서 직접 관리되는 Windows 10 장치에 대한 Windows 10 기능 업데이트 또는 품질 업데이트의 지연 정책을 구성할 수 있습니다. **소프트웨어 라이브러리** > **Windows 10 서비스** 아래의 새 **비즈니스용 Windows 업데이트 정책** 노드에서 지연 정책을 관리할 수 있습니다.
 
-### <a name="prerequisites"></a>전제 조건
+>[!NOTE] 
+>Configuration Manager 버전 1802부터는 Windows 참가자에 대한 지연 정책을 설정할 수 있습니다. <!--507201-->Windows 참가자 프로그램에 대한 자세한 내용은 [비즈니스용 Windows 참가자 프로그램 시작](https://docs.microsoft.com/windows/deployment/update/waas-windows-insider-for-business)을 참조하세요.
+
+### <a name="prerequisites"></a>필수 구성 요소
 비즈니스용 Windows 업데이트에서 관리되는 Windows 10 장치는 인터넷에 연결되어 있어야 합니다.
 
 #### <a name="to-create-a-windows-update-for-business-deferral-policy"></a>비즈니스용 Windows 업데이트 지연 정책을 만들려면
 1. **소프트웨어 라이브러리** > **Windows 10 서비스** > **비즈니스용 Windows 업데이트 정책**으로 이동합니다.
 2. **홈** 탭의 **만들기** 그룹에서 **비즈니스용 Windows 업데이트 정책 만들기**를 선택하여 비즈니스용 Windows 업데이트 정책 만들기 마법사를 엽니다.
 3. **일반** 페이지에서 정책의 이름 및 설명을 제공합니다.
-4. **지연 정책** 페이지에서 기능 업데이트를 연기할지 또는 일시 중지할지를 구성합니다.    
-    기능 업데이트는 일반적으로 새로운 Windows용 기능입니다. **분기 준비 수준** 설정을 구성한 후에 Microsoft에서 출시한 후에 기능 업데이트 수신을 연기할지 여부 및 연기 기간을 정의할 수 있습니다.
+4. **지연 정책** 페이지에서 기능 업데이트를 연기할지 또는 일시 중지할지를 구성합니다. 기능 업데이트는 일반적으로 새로운 Windows용 기능입니다. **분기 준비 수준** 설정을 구성한 후에 Microsoft에서 출시한 후에 기능 업데이트 수신을 연기할지 여부 및 연기 기간을 정의할 수 있습니다.
     - **분기 준비 상태 수준**: 장치가 Windows 업데이트(현재 분기 또는 비즈니스용 현재 분기)를 받을 분기를 설정합니다.
     - **지연 기간(일)**: 기능 업데이트를 연기할 일 수를 지정합니다. 이러한 기능 업데이트는 출시되고 180일 동안 수신을 연기할 수 있습니다.
     - **기능 업데이트 시작 일시 중지**: 기능 업데이트를 일시 중지하고 최대 60일 내에 장치에서 기능 업데이트를 받지 못하도록 일시 중지할지 여부를 선택합니다. 최대 기간이 경과되면 일시 중지 기능은 자동으로 만료되고 장치는 Windows 업데이트에서 적용 가능한 업데이트가 있는지 검색합니다. 이 검색 후에 업데이트를 다시 일시 중지할 수 있습니다. 이 확인란을 선택 취소하여 기능 업데이트 일시 중지를 해제할 수 있습니다.   
-5. 품질 업데이트를 연기할지 또는 일시 중지할지를 선택합니다.     
-    품질 업데이트는 일반적으로 기존 Windows 기능에 대한 수정 내용 및 향상된 기능이며, 매월 첫째 화요일에 게시되는 것이 보통입니다. 물론 Microsoft는 언제든지 이러한 업데이트를 출시할 수 있습니다. 출시된 후에 품질 업데이트 수신을 연기할지 여부 및 연기할 기간을 정의할 수 있습니다.
+5. 품질 업데이트를 연기할지 또는 일시 중지할지를 선택합니다. 품질 업데이트는 일반적으로 기존 Windows 기능에 대한 수정 내용 및 향상된 기능이며, 매월 첫째 화요일에 게시되는 것이 보통입니다. 물론 Microsoft는 언제든지 이러한 업데이트를 출시할 수 있습니다. 출시된 후에 품질 업데이트 수신을 연기할지 여부 및 연기할 기간을 정의할 수 있습니다.
     - **지연 기간(일)**: 기능 업데이트를 연기할 일 수를 지정합니다. 이러한 기능 업데이트는 출시되고 180일 동안 수신을 연기할 수 있습니다.
     - **품질 업데이트 시작 일시 중지**: 품질 업데이트를 일시 중지하고 최대 35일 내에 장치에서 기능 업데이트를 받지 못하도록 일시 중지할지 여부를 선택합니다. 최대 기간이 경과되면 일시 중지 기능은 자동으로 만료되고 장치는 Windows 업데이트에서 적용 가능한 업데이트가 있는지 검색합니다. 이 검색 후에 업데이트를 다시 일시 중지할 수 있습니다. 이 확인란을 선택 취소하여 품질 업데이트 일시 중지를 해제할 수 있습니다.
 6. **다른 Microsoft 제품에 대한 업데이트 설치**를 선택하여 지연 설정이 Windows 업데이트 뿐만 아니라 Microsoft 업데이트에도 적용될 수 있게 하는 그룹 정책 설정을 사용하도록 설정합니다.

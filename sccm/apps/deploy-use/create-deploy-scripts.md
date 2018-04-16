@@ -1,35 +1,38 @@
 ---
-title: "스크립트 만들기 및 실행"
+title: 스크립트 만들기 및 실행
 titleSuffix: Configuration Manager
-description: "Powershell 스크립트를 만들고 클라이언트 장치에서 실행합니다."
+description: Powershell 스크립트를 만들고 클라이언트 장치에서 실행합니다.
 ms.custom: na
-ms.date: 01/05/2018
+ms.date: 03/22/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-app
+ms.technology:
+- configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: cc230ff4-7056-4339-a0a6-6a44cdbb2857
-caps.latest.revision: "14"
-caps.handback.revision: "0"
+caps.latest.revision: 14
+caps.handback.revision: 0
 author: mestew
 ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: b00dfb875ca032032a9782e9950247eb3fceb124
-ms.sourcegitcommit: 9de3d74030b7c3313c34b5cbe2dbe6e18a48c043
+manager: dougeby
+ms.openlocfilehash: 19bb8b2c4e47dcc8a75db568e7f93541544a4566
+ms.sourcegitcommit: a19e12d5c3198764901d44f4df7c60eb542e765f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="create-and-run-powershell-scripts-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
->[!TIP]
->버전 1706에서 소개된 PowerShell 스크립트를 실행하는 기능은 시험판 기능입니다. 스크립트를 사용하도록 설정하려면 [System Center Configuration Manager의 시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요.
 
-이제 PowerShell 스크립트를 실행하는 기능이 더 효율적으로 System Center Configuration Manager와 통합되었습니다. Powershell은 정교하고 자동화된 스크립트를 만들어 더 큰 커뮤니티에서 이해하고 공유할 수 있는 이점이 있습니다. 스크립트는 소프트웨어를 관리하는 사용자 지정 도구 빌드를 간소화하고 일상적인 작업을 빠르게 수행하므로 더 쉽고 일관되게 큰 작업을 수행할 수 있습니다.
+System Center Configuration Manager가 PowerShell 스크립트를 실행하는 기능과 통합되었습니다. Powershell은 정교하고 자동화된 스크립트를 만들어 더 큰 커뮤니티에서 이해하고 공유할 수 있는 이점이 있습니다. 스크립트는 소프트웨어를 관리하는 사용자 지정 도구 빌드를 간소화하고 일상적인 작업을 빠르게 수행하므로 더 쉽고 일관되게 대형 작업을 수행할 수 있습니다.
+
+> [!TIP]  
+> 이 기능은 버전 1706에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 소개되었습니다. 버전 1802 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.
+
 
 이 통합 기능을 System Center Configuration Manager에서 사용하면 *스크립트 실행* 기능을 사용하여 다음을 수행할 수 있습니다.
 
@@ -40,33 +43,41 @@ ms.lasthandoff: 01/10/2018
 - 스크립트 실행을 모니터링하고 스크립트 출력에서 보고 결과를 봅니다.
 
 >[!WARNING]
->스크립트의 능력을 고려할 때 계획적이고 신중하게 사용해야 합니다. 사용자를 지원하기 위해 안전 장치, 즉 분리된 역할과 범위를 추가로 구축했습니다. 스크립트를 실행하기 전에 스크립트의 정확성을 검사하고 신뢰할 수 있는 원본에서 제공되는지 확인하여 의도하지 않은 스크립트 실행을 방지합니다. 확장된 문자 또는 다른 난독 처리에 유의하고 스크립트 보안에 대한 지식을 습득합니다.
+>스크립트의 능력을 고려할 때 계획적이고 신중하게 사용해야 합니다. 사용자를 지원하기 위해 안전 장치, 즉 분리된 역할과 범위를 추가로 구축했습니다. 스크립트를 실행하기 전에 스크립트의 정확성을 검사하고 신뢰할 수 있는 원본에서 제공되는지 확인하여 의도하지 않은 스크립트 실행을 방지합니다. 확장된 문자 또는 다른 난독 처리에 유의하고 스크립트 보안에 대한 지식을 습득합니다. [PowerShell 스크립트 보안에 대해 자세히 알아보기](/sccm/apps/deploy-use/learn-script-security)
 
 ## <a name="prerequisites"></a>필수 구성 요소
 
 - PowerShell 스크립트를 실행하려면 클라이언트에서 PowerShell 버전 3.0 이상이 실행되고 있어야 합니다. 그러나 실행하는 스크립트에 이후 버전의 PowerShell 기능이 포함되어 있을 경우 스크립트를 실행하는 클라이언트에서 해당 버전의 PowerShell이 실행되고 있어야 합니다.
 - Configuration Manager 클라이언트는 스크립트를 실행하려면 1706 릴리스 이상의 클라이언트를 실행하고 있어야 합니다.
 - 스크립트를 사용하려면 해당 Configuration Manager 보안 역할의 구성원이어야 합니다.
-- 스크립트를 가져오고 작성하려면 계정에 **전체 관리자** 보안 역할의 **SMS 스크립트**에 대한 **만들기** 권한이 있어야 합니다.
-- 스크립트를 승인하거나 거부하려면 계정에 **전체 관리자** 보안 역할의 **SMS 스크립트**에 대한 **승인** 권한이 있어야 합니다.
-- 스크립트를 실행하려면 계정의 **전체 관리자** 보안 역할에 **컬렉션**에 대한 **스크립트 실행** 권한이 있어야 합니다.
+- 스크립트를 가져오고 작성하려면 **SMS 스크립트**에 대한 **만들기** 권한이 있어야 합니다.
+- 스크립트를 승인하거나 거부하려면 **SMS 스크립트**에 대한 **승인** 권한이 있어야 합니다.
+- 스크립트를 실행하려면 **컬렉션**에 대한 **스크립트 실행** 권한이 있어야 합니다.
 
-Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반 관리 기본 사항](/sccm/core/understand/fundamentals-of-role-based-administration)을 참조하세요.
+Configuration Manager 보안 역할에 대한 자세한 내용은 다음과 같습니다.</br>
+[스크립트 실행에 대한 보안 범위](#BKMK_Scopes)</br>
+[스크립트 실행에 대한 보안 역할](#BKMK_ScriptRoles)</br>
+[역할 기반 관리의 기본 사항](/sccm/core/understand/fundamentals-of-role-based-administration).
 
 ## <a name="limitations"></a>제한 사항
 
 스크립트 실행에서 현재 지원하는 항목은 다음과 같습니다.
 
 - 스크립팅 언어: PowerShell
-- 매개 변수 형식: 정수, 문자열 및 목록
+- 매개 변수 형식: 정수, 문자열 및 목록.
+
+
+>[!WARNING]
+>매개 변수를 사용할 때 잠재적인 PowerShell 삽입 공격 위험에 대한 노출 영역이 열리는 것에 유의하십시오. 매개 변수 입력 유효성 검사에 정규식을 사용하거나 미리 정의된 매개 변수를 사용하는 등 완화하고 해결하는 방법에는 여러 가지가 있습니다. 일반적인 모범 사례는 PowerShell 스크립트(암호 없음 등)에 암호를 포함하지 않는 것입니다. [PowerShell 스크립트 보안에 대해 자세히 알아보기](/sccm/apps/deploy-use/learn-script-security) <!--There are external tools available to validate your PowerShell scripts such as the [PowerShell Injection Hunter](https://www.powershellgallery.com/packages/InjectionHunter/1.0.0) tool. -->
+
 
 ## <a name="run-script-authors-and-approvers"></a>스크립트 실행 작성자 및 승인자
 
-스크립트 실행에서는 *스크립트 작성자* 및 *스크립트 승인자*의 개념을 스크립트를 구현하고 실행하기 위한 별도의 역할로 사용합니다. 작성자와 승인자 역할을 분리하면 스크립트 실행이라는 강력한 도구에 대한 중요한 프로세스를 검사할 수 있습니다.
+스크립트 실행에서는 *스크립트 작성자* 및 *스크립트 승인자*의 개념을 스크립트를 구현하고 실행하기 위한 별도의 역할로 사용합니다. 작성자와 승인자 역할을 분리하면 스크립트 실행이라는 강력한 도구에 대한 중요한 프로세스를 검사할 수 있습니다. 스크립트 만들기나 승인이 아닌 스크립트 실행을 허용하는 추가적인 *스크립트 실행기* 역할이 있습니다. [스크립트에 대한 보안 역할 만들기](#BKMK_ScriptRoles)를 참조합니다.
 
 ### <a name="scripts-roles-control"></a>스크립트 역할 제어
 
-기본적으로 사용자는 작성한 스크립트를 승인할 수 없습니다. 스크립트는 강력하고 다양한 기능을 제공하며 여러 장치에 배포할 수 있으므로 스크립트를 작성하는 사용자와 스크립트를 승인하는 사용자 간에 역할을 분리할 수 있습니다. 이러한 역할을 통해 감독 없이 스크립트를 실행할 때도 추가적으로 보안을 강화하는 효과를 얻을 수 있습니다. 쉬운 테스트를 위해 이러한 보조 승인을 해제할 수 있습니다.
+기본적으로 사용자는 작성한 스크립트를 승인할 수 없습니다. 스크립트는 강력하고 다양하며 잠재적인 기능을 여러 장치에 배포할 수 있으므로 스크립트를 작성하는 사용자와 스크립트를 승인하는 사용자 간에 역할을 분리할 수 있습니다. 이러한 역할을 통해 감독 없이 스크립트를 실행할 때도 추가적으로 보안을 강화하는 효과를 얻을 수 있습니다. 쉬운 테스트를 위해 보조 승인을 해제할 수 있습니다.
 
 ### <a name="approve-or-deny-a-script"></a>스크립트 승인 또는 거부
 
@@ -95,6 +106,54 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반
 *(버전 1710에서 도입됨)*  
 스크립트 실행은 Configuration Manager의 기존 기능인 보안 범위를 사용하여 사용자 그룹을 나타내는 태그를 할당하여 스크립트 작성 및 실행을 제어합니다. 보안 범위 사용에 대한 자세한 내용은 [System Center Configuration Manager에 대한 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md)을 참조하세요.
 
+## <a name="bkmk_ScriptRoles"></a>스크립트에 대한 보안 역할 만들기
+스크립트를 실행하는 데 사용되는 세 가지 보안 역할은 Configuration Manager에서 기본으로 만들어지지 않습니다. 스크립트 실행기, 스크립트 작성자 및 스크립트 승인자 역할을 만들려면 개략적으로 설명된 단계를 수행 합니다.
+
+1. Configuration Manager 콘솔에서 **관리** >**보안** >**보안 역할**로 이동
+2. 역할을 마우스 오른쪽 단추로 클릭하고 **복사**를 클릭합니다. 복사하는 역할은 이미 사용 권한이 할당되었습니다. 원하는 사용 권한만 있는지 확인합니다. 
+3. 사용자 지정 역할에 **이름** 및 **설명**을 부여합니다. 
+4. 보안 역할에 아래에 설명된 사용 권한을 할당합니다. 
+
+    ### <a name="security-role-permissions"></a>**보안 역할 사용 권한**
+
+     **역할 이름**: 스크립트 실행기
+    - **설명**: 이러한 사용 권한을 통해 이 역할이 다른 역할에 의해 이전에 만들어지고 승인된 스크립트만 실행하도록 설정합니다. 
+    - **사용 권한:** 다음을 확인하려면 **예**로 설정합니다.
+         |**범주**|**사용 권한**|**상태**|
+         |---|---|---|
+         |수집|스크립트 실행|예|
+         |SMS 스크립트|만들기|예|
+         |SMS 스크립트|읽기|예|
+
+     **역할 이름**: 스크립트 작성자
+    - **설명**: 이러한 사용 권한을 통해 이 역할이 스크립트를 작성하도록 설정하지만 승인하거나 실행할 수는 없습니다. 
+    - **사용 권한:** 다음 사용 권한이 설정되었는지 확인합니다.
+    - 
+         |**범주**|**사용 권한**|**상태**|
+         |---|---|---|
+         |수집|스크립트 실행|아니요|
+         |SMS 스크립트|만들기|예|
+         |SMS 스크립트|읽기|예|
+         |SMS 스크립트|삭제|예|
+         |SMS 스크립트|수정|예|
+
+    **역할 이름**: 스크립트 작성자
+    - **설명**: 이러한 사용 권한을 통해 이 역할이 스크립트를 승인하도록 설정하지만 만들거나 실행할 수는 없습니다. 
+    - **사용 권한:** 다음 사용 권한이 설정되었는지 확인합니다.
+
+         |**범주**|**사용 권한**|**상태**|
+         |---|---|---|
+         |수집|스크립트 실행|아니요|
+         |SMS 스크립트|읽기|예|
+         |SMS 스크립트|승인|예|
+         |SMS 스크립트|수정|예|
+     
+**스크립트 작성자 역할에 대한 SMS 스크립트 사용 권한의 예**
+
+ ![스크립트 작성자 역할에 대한 SMS 스크립트 사용 권한의 예](./media/run-scripts/script_authors_permissions.png)
+
+   
+
 ## <a name="create-a-script"></a>스크립트 만들기
 
 1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리**를 클릭합니다.
@@ -109,8 +168,8 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반
 5. 마법사를 완료합니다. 새 스크립트가 **승인 대기 중** 상태로 **스크립트** 목록에 표시됩니다. 클라이언트 장치에서 이 스크립트를 실행하려면 먼저 승인해야 합니다. 
 
 > [!IMPORTANT]
-    >  스크립트 실행 기능을 사용할 때는 장치 다시 부팅 또는 Configuration Manager 에이전트 다시 시작 스크립트를 사용하지 마세요. 그러면 연속 다시 부팅 상태가 될 수 있습니다. 필요한 경우, Configuration Manager 버전 1710부터는 장치를 다시 시작할 수 있는 클라이언트 알림 기능에 대한 개선 사항이 있습니다. [다시 시작 보류 중 열](/sccm/core/clients/manage/manage-clients#Restart-clients)을 통해 다시 시작해야 하는 장치를 식별할 수 있습니다. 
-<!--SMS503978--Script reboot warning-->
+    >스크립트 실행 기능을 사용할 때는 장치 다시 부팅 또는 Configuration Manager 에이전트 다시 시작 스크립트를 사용하지 마세요. 그러면 연속 다시 부팅 상태가 될 수 있습니다. 필요한 경우, Configuration Manager 버전 1710부터는 장치를 다시 시작할 수 있는 클라이언트 알림 기능에 대한 개선 사항이 있습니다. [다시 시작 보류 중 열](/sccm/core/clients/manage/manage-clients#Restart-clients)을 통해 다시 시작해야 하는 장치를 식별할 수 있습니다. 
+<!--SMS503978  -->
 
 ## <a name="script-parameters"></a>스크립트 매개 변수
 *(버전 1710에서 도입됨)*  
@@ -119,6 +178,10 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반
 **스크립트 만들기** 대화 상자에서 **스크립트** 아래의 **스크립트 매개 변수**를 클릭합니다.
 
 각 스크립트 매개 변수에는 세부 정보 및 유효성 검사를 추가할 수 있는 자체의 대화 상자가 있습니다.
+
+>[!IMPORTANT]
+> 매개 변수 값에는 아포스트로피가 포함될 수 없습니다. 
+
 
 ### <a name="parameter-validation"></a>매개 변수 유효성 검사
 
@@ -202,6 +265,22 @@ Write-Output (Get-WmiObject -Class Win32_operatingSystem).Caption
 1. Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.
 2. **모니터링** 작업 영역에서 **스크립트 상태**를 클릭합니다.
 3. **스크립트 상태** 목록에서 클라이언트 장치에서 실행한 각 스크립트에 대한 결과를 확인합니다. 스크립트 종료 코드 **0**은 일반적으로 스크립트가 성공적으로 실행되었음을 나타냅니다.
+    - Configuration Manager 1802부터 스크립트 출력은 더 나은 표시 환경을 위해 4KB로 잘립니다.  <!--510013-->
+      ![스크립트 모니터 - 잘린 스크립트](./media/run-scripts/Script-monitoring-truncated.png) 
+
+## <a name="script-output"></a>스크립트 출력
+
+- Configuration Manager 버전 1802부터 스크립트 출력은 JSON 형식을 사용하여 반환됩니다. 이 형식은 읽기 가능한 스크립트 출력을 일관되게 반환합니다. 
+- 알 수 없는 결과를 가져오는 스크립트 또는 클라이언트가 오프라인인 스크립트는 차트 또는 데이터 집합에 표시되지 않습니다. <!--507179-->
+- 4KB로 잘리기 때문에 대형 스크립트 출력은 반환하지 마십시오. <!--508488-->
+- 스크립트 출력 형식의 일부 기능은 클라이언트의 하위 버전으로 Configuration Manager 버전 1802 이상을 실행하는 경우 사용할 수 없습니다. <!--508487-->
+    - Configuration Manager 클라이언트 버전 1802 이전을 사용 중인 경우 문자열 출력을 가져옵니다.
+    -  Configuration Manager 클라이언트 버전 1802 이상에서는 JSON 서식을 가져옵니다.
+        - 예를 들어 한 클라이언트 버전에서는 TEXT라는 결과가 표시되고, 다른 버전에서는 "TEXT"(큰따옴표로 묶은 출력)라는 결과가 표시될 수 있습니다. 이 결과는 차트에 두 가지 범주로 표시됩니다.
+        - 이 문제를 해결해야 할 경우, 두 가지 컬렉션에 대한 스크립트를 실행하는 것이 좋습니다. 1802 이전 버전의 클라이언트가 있는 컬렉션과 1802 이상 버전의 클라이언트가 있는 컬렉션이 이에 해당합니다. 또는 열거형 개체를 스크립트에서 문자열 값으로 변환하여 JSON 형식에서 올바르게 표시할 수 있습니다. 
+- 열거형 개체를 스크립트에서 문자열 값으로 변환하여 JSON 형식에서 올바르게 표시되게 합니다. <!--508377--> ![열거형 개체를 문자열 값으로 변환](./media/run-scripts/enum-tostring-JSON.png)
+
+
 
 ## <a name="see-also"></a>참고 항목
 

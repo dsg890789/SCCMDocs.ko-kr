@@ -1,25 +1,26 @@
 ---
-title: "시험판 기능"
+title: 시험판 기능
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager의 시험판 기능"
+description: System Center Configuration Manager의 시험판 기능
 ms.custom: na
-ms.date: 12/19/2017
+ms.date: 03/22/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6bce416b-761d-4b23-bd33-5b7c30edb10d
-caps.latest.revision: "36"
+caps.latest.revision: 36
 author: mestew
 ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 2ef961732431bd4314229e3da6a65df58592342f
-ms.sourcegitcommit: 6c2aa79924c0e7fc64ef5e9003498fc00c349db9
+manager: dougeby
+ms.openlocfilehash: c30fbeaad87b18750f65f90427366044d30c6609
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="pre-release-features-in-system-center-configuration-manager"></a>System Center Configuration Manager의 시험판 기능
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -46,17 +47,19 @@ ms.lasthandoff: 12/21/2017
 
  |기능          |시험판으로 추가됨 | 전체 기능으로 추가됨|  
 |------------------|---------------------|---------------------|
-| 작업 순서 실행 단계 <!-- 1261338 --> |  [버전 1710](/sccm/osd/understand/task-sequence-steps#child-task-sequence) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
-| Windows Defender Exploit Guard <!-- 1355468 --> |  [버전 1710](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
-| 조건부 액세스의 준수 정책에 대한 장치 상태 증명 평가<!-- 1235616 --> |  [버전 1710](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
-| Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행 <!-- 1236459 --> |  [버전 1706](/sccm/apps/deploy-use/create-deploy-scripts)|![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
+|단계별 배포<!--1356837-->|[버전 1802](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence.md)|![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
+| 작업 순서 실행 단계 <!-- 1261338 --> |  [버전 1710](/sccm/osd/understand/task-sequence-steps#child-task-sequence) |[버전 1802](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#add-child-task-sequences-to-a-task-sequence)|
+| Windows Defender Exploit Guard <!-- 1355468 --> |  [버전 1710](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy) |[버전 1802](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy)|
+| 조건부 액세스의 준수 정책에 대한 장치 상태 증명 평가<!-- 1235616 --> |  [버전 1710](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm) |[버전 1802](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm)|
+| Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행 <!-- 1236459 --> |  [버전 1706](/sccm/apps/deploy-use/create-deploy-scripts)|[버전 1802](/sccm/apps/deploy-use/create-deploy-scripts)|
 | Microsoft Surface 드라이버 업데이트 관리<!-- 1098490 --> |  [버전 1706](/sccm/sum/get-started/configure-classifications-and-products) | [버전 1710](/sccm/sum/get-started/configure-classifications-and-products)|
 | Configuration Manager로 Device Guard 관리 <!-- 1319346 --> |  [버전 1702](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)|![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
 | 작업 순서 콘텐츠 사전 캐싱 <!-- 1021244 --> |  [버전 1702](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content) | [버전 1706](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content)|
 | 응용 프로그램을 설치하기 전에 실행 중인 실행 파일 확인 <!-- 1284624 --> |   [버전 1702](/sccm/apps/deploy-use/deploy-applications#how-to-check-for-running-executable-files-before-installing-an-application) |[버전 1706](/sccm/apps/deploy-use/deploy-applications#how-to-check-for-running-executable-files-before-installing-an-application)|
 | 데이터 웨어하우스 서비스 지점 <!-- 1277922 --> |  [버전 1702](/sccm/core/servers/manage/data-warehouse) |[버전 1706](/sccm/core/servers/manage/data-warehouse)|
 | 클라이언트에 콘텐츠 배포를 위한 피어 캐시 <!-- 1101436 --> |  [버전 1610](/sccm/core/plan-design/hierarchy/client-peer-cache) | [버전 1710](/sccm/core/plan-design/hierarchy/client-peer-cache)|
-| 클라우드 관리 게이트웨이 <!-- 1101764 --> |  [버전 1610](/sccm/core/clients/manage/plan-cloud-management-gateway) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
-| Microsoft Operations Management Suite 커넥터 <!-- 1236739 --> | [버전 1606](../../../core/clients/manage/sync-data-microsoft-operations-management-suite.md) |![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
+| 클라우드 관리 게이트웨이 <!-- 1101764 --> |  [버전 1610](/sccm/core/clients/manage/plan-cloud-management-gateway) |[버전 1802](/sccm/core/clients/manage/plan-cloud-management-gateway)|
+| Microsoft Operations Management Suite 커넥터 <!-- 1236739 --> | [버전 1606](../../../core/clients/manage/sync-data-microsoft-operations-management-suite.md) |[버전 1802](../../../core/clients/manage/sync-data-microsoft-operations-management-suite.md)|
 | 클러스터 인식 컬렉션 서비스(서버 그룹 서비스) <!-- 1081776 --> | [버전 1602](../../../core/get-started/capabilities-in-technical-preview-1605.md#BKMK_ServerGroups)|![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
 | System Center Configuration Manager에서 관리하는 PC에 대한 조건부 액세스 <!--  --> | [버전 1602](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm)     | [버전 1702](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm)                     |
+<!--Image used = ![Not yet](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif) -->
