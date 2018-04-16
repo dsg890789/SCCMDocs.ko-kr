@@ -1,25 +1,26 @@
 ---
-title: "모바일 장치 관리 "
+title: '모바일 장치 관리 '
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 Exchange Server 커넥터를 사용하여 모바일 장치를 관리합니다."
+description: System Center Configuration Manager에서 Exchange Server 커넥터를 사용하여 모바일 장치를 관리합니다.
 ms.custom: na
 ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-hybrid
+ms.technology:
+- configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: aba688d9-fd5b-4c42-8cb4-f7e1b161ef50
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: ff7fef664780730510f17d723a1d13ca691405af
-ms.sourcegitcommit: 0a6b2c53ff4445b5d4f3638fdb0b489d54e333d3
+ms.openlocfilehash: 23073ff562e1ca533e196fff0415efc0451d6fee
+ms.sourcegitcommit: 27da4be015f1496b7b89ebddb517a2685f1ecf74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="manage-mobile-devices-with-system-center-configuration-manager-and-exchange"></a>System Center Configuration Manager와 Exchange를 사용하여 모바일 장치 관리
 
@@ -107,6 +108,12 @@ Microsoft Exchange ActiveSync 프로토콜을 사용하여 Exchange Server(온-�
     -   **New-ActiveSyncMailboxPolicy**  
 
     -   **Remove-ActiveSyncDevice**  
+    
+    -   **Get-CasMailbox**  
+    
+    -   **Get-User**  
+    
+    -   **Set-ActiveSyncOrganizationSettings**  
 
     > [!NOTE]  
     >  이러한 cmdlet이 포함되는 Exchange Server 관리 역할은 받는 사람 관리, 보기 전용 조직 관리, 서버 관리입니다. Microsoft Exchange Server2010의 관리 역할 그룹에 대한 자세한 내용은 [관리 역할 그룹 이해](http://go.microsoft.com/fwlink/p/?LinkId=212914)를 참조하십시오.  

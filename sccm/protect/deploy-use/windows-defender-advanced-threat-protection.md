@@ -1,39 +1,40 @@
 ---
 title: Windows Defender Advanced Threat Protection
 titleSuffix: Configuration Manager
-description: "기업이 고급 공격에 대응하는 데 도움이 되는 새로운 서비스인 Windows Defender Advanced Threat Protection을 관리 및 모니터링하는 방법을 알아봅니다."
+description: 기업이 고급 공격에 대응하는 데 도움이 되는 새로운 서비스인 Windows Defender Advanced Threat Protection을 관리 및 모니터링하는 방법을 알아봅니다.
 ms.custom: na
 ms.date: 03/07/2017
 ms.prod: configuration-manager
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a5fc033e-828e-4e45-9097-bbbd0697ebdf
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.openlocfilehash: 561a03c7046accaa8e6d36407c75cbd4248188ce
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 84786d741eda2be24a7deb39478e68c68adc38fe
+ms.sourcegitcommit: aed99ba3c5e9482199cb3fc5c92f6f3a160cb181
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="windows-defender-advanced-threat-protection"></a>Windows Defender Advanced Threat Protection
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Configuration Manager의 1606 버전부터(현재 분기) Endpoint Protection은 Windows Defender ATP(Advanced Threat Protection)를 관리하고 모니터링할 수 있습니다. Windows Defender ATP는 엔터프라이즈에서 네트워크에 대한 고급 공격을 검색하고 조사하고 대응할 수 있도록 하는 새로운 서비스입니다.  [Windows Defender ATP](http://aka.ms/technet-wdatp)에 대해 자세히 알아봅니다. Configuration Manager 정책은 관리되는 Windows 10 버전 1607(빌드 14328) 이상을 등록하고 모니터링하는 데 도움이 됩니다.
+Configuration Manager의 1606 버전부터(현재 분기) Endpoint Protection은 [Windows Defender ATP(Advanced Threat Protection)](http://aka.ms/technet-wdatp)를 관리하고 모니터링할 수 있습니다. Windows Defender ATP는 엔터프라이즈에서 네트워크에 대한 고급 공격을 검색, 조사 및 대응할 수 있게 해줍니다.  Configuration Manager 또는 Microsoft Intune 정책은 관리되는 Windows 10 버전 1607(빌드 14328) 이상을 등록하고 모니터링하는 데 도움이 됩니다.
 
-Windows Defender ATP는 [Windows 보안 센터](https://securitycenter.windows.com)의 서비스입니다. 클라이언트 온보딩 구성 파일을 추가 및 배포하면 Configuration Manager에서 배포 상태 및 Windows Defender ATP 에이전트 상태를 모니터링할 수 있습니다. Windows Defender ATP는 Configuration Manager 클라이언트를 실행하는 PC에서만 지원됩니다. 온-프레미스 모바일 장치 관리 및 Intune 하이브리드 MDM 관리 컴퓨터는 지원되지 않습니다.
+Windows Defender ATP는 [Windows Defender 보안 센터](https://securitycenter.windows.com)의 서비스입니다. 클라이언트 온보딩 구성 파일을 추가 및 배포하면 Configuration Manager에서 배포 상태 및 Windows Defender ATP 에이전트 상태를 모니터링할 수 있습니다. Windows Defender ATP는 Configuration Manager 클라이언트를 실행하는 PC에서 지원되거나 Microsoft Intune에서 관리되지만 Intune 하이브리드 MDM 관리 컴퓨터는 지원되지 않습니다.
 
  **전제 조건**  
 
 -   Windows Defender Advanced Threat Protection 온라인 서비스에 대한 구독  
 -   Windows 10 버전 1607 이상을 실행하는 클라이언트 컴퓨터  
--   Configuration Manager 1610 이상 버전의 클라이언트 에이전트를 실행하는 클라이언트 컴퓨터
+-   Configuration Manager 1610 이상 버전의 클라이언트 에이전트를 실행하거나 Microsoft Intune에서 관리하는 클라이언트 컴퓨터
 
 ## <a name="how-to-create-an-onboarding-configuration-file"></a>온보딩 구성 파일을 만드는 방법  
 

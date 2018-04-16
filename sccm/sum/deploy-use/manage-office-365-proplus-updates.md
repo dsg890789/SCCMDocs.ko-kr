@@ -6,18 +6,18 @@ keywords: ''
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.date: 03/22/2018
+ms.date: 03/26/2018
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: ''
 ms.technology:
 - configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
-ms.openlocfilehash: 5bd1a3afd7957e4db1b43e344a7b88e18de50695
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 4fbbe4b6792c51cd7adeeae3a96f81927153362c
+ms.sourcegitcommit: a19e12d5c3198764901d44f4df7c60eb542e765f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="manage-office-365-proplus-with-configuration-manager"></a>Configuration Manager를 사용하여 Office 365 ProPlus 관리
 
@@ -174,6 +174,17 @@ Configuration Manager의 지원 여부와 관계 없이 Office 365에서 지원�
 11. 이제 Office 365 업데이트를 다운로드하면 마법사에서 선택하고 이 절차에서 구성한 언어로 업데이트가 다운로드됩니다. 업데이트가 올바른 언어로 다운로드되는지 확인하려면 업데이트의 패키지 원본으로 이동한 후 파일 이름에 언어 코드가 포함된 파일을 찾습니다.  
 ![추가 언어가 있는 파일 이름](..\media\5-verification.png)
 
+## <a name="updating-office-365-during-task-sequences-when-office-365-is-installed-in-the-base-image"></a>기본 이미지에 Office 365가 설치된 경우 작업 순서 중 Office 365 업데이트
+이미지에 Office 365가 이미 설치된 경우 운영 체제를 설치할 때 업데이트 채널 레지스트리 키 값에 원래 설치 위치가 있을 수 있습니다. 이 경우 업데이트 검색 시 Office 365 클라이언트 업데이트가 표시되지 않습니다. 일주일에 여러 번 실행되는 예약된 Office 자동 업데이트 작업이 있습니다. 해당 작업이 실행된 후 업데이트 채널은 구성된 Office CDN URL을 가리키고 검색 결과에는 해당 업데이트가 적용 가능한 것으로 표시됩니다. <!--510452-->
+
+해당 업데이트가 검색되도록 업데이트 채널을 설정하려면 다음 단계를 수행합니다.
+1. OS(운영 체제) 기본 이미지와 같은 버전의 Office 365가 있는 컴퓨터에서 작업 스케줄러(taskschd.msc)를 열고 Office 365 자동 업데이트 작업을 식별합니다. 일반적으로 **작업 스케줄러 라이브러리** >**Microsoft**>**Office** 아래에 있습니다.
+2. 자동 업데이트 작업을 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
+3. **작업** 탭으로 이동하여 **편집**을 클릭합니다. 명령 및 인수를 복사합니다. 
+4. Configuration Manager 콘솔에서 작업 순서를 편집합니다.
+5. 작업 순서에서 **업데이트 설치** 단계 전에 새로운 **명령줄 실행** 단계를 추가합니다. 
+6. Office 자동 업데이트 예약된 작업에서 수집한 명령과 인수를 복사합니다. 
+7. **확인**을 클릭합니다. 
 
 ## <a name="change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager"></a>Office 365 클라이언트가 Configuration Manager에서 업데이트를 받도록 설정한 후에 업데이트 채널 변경
 Office 365 클라이언트가 Configuration Manager에서 업데이트를 받도록 설정한 후 업데이트 채널을 변경하려면 그룹 정책을 사용하여 Office 365 클라이언트에 레지스트리 키 값 변경 내용을 배포합니다. **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\Configuration\CDNBaseUrl** 레지스트리 키를 다음 중 한 값을 사용하도록 변경합니다.

@@ -17,11 +17,11 @@ caps.handback.revision: 0
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 29806161b29b87834c0cb4b1e478d92bff7a7b3c
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 19bb8b2c4e47dcc8a75db568e7f93541544a4566
+ms.sourcegitcommit: a19e12d5c3198764901d44f4df7c60eb542e765f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="create-and-run-powershell-scripts-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행
 
@@ -70,10 +70,6 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 다음과 같�
 >[!WARNING]
 >매개 변수를 사용할 때 잠재적인 PowerShell 삽입 공격 위험에 대한 노출 영역이 열리는 것에 유의하십시오. 매개 변수 입력 유효성 검사에 정규식을 사용하거나 미리 정의된 매개 변수를 사용하는 등 완화하고 해결하는 방법에는 여러 가지가 있습니다. 일반적인 모범 사례는 PowerShell 스크립트(암호 없음 등)에 암호를 포함하지 않는 것입니다. [PowerShell 스크립트 보안에 대해 자세히 알아보기](/sccm/apps/deploy-use/learn-script-security) <!--There are external tools available to validate your PowerShell scripts such as the [PowerShell Injection Hunter](https://www.powershellgallery.com/packages/InjectionHunter/1.0.0) tool. -->
 
-
-## <a name="group-policy-considerations-for-scripts"></a>스크립트에 대한 그룹 정책 고려 사항
-<!--While running scripts on devices, Configuration Manager sets policy to allow local scripts and remote signed scripts.--> 
-그룹 정책을 통해 실행 정책을 설정하면 스크립트가 Configuration Manager에서 실행되게 할 수 없습니다. 실행 정책 및 설정 가져오기 방법에 대해서는 [실행 정책 정보](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) 문서를 참조하십시오. <!--507185-->
 
 ## <a name="run-script-authors-and-approvers"></a>스크립트 실행 작성자 및 승인자
 
@@ -275,9 +271,13 @@ Write-Output (Get-WmiObject -Class Win32_operatingSystem).Caption
 ## <a name="script-output"></a>스크립트 출력
 
 - Configuration Manager 버전 1802부터 스크립트 출력은 JSON 형식을 사용하여 반환됩니다. 이 형식은 읽기 가능한 스크립트 출력을 일관되게 반환합니다. 
-- 알 수 없는 결과를 가져오는 스크립트 또는 클라이언트가 오프 라인인 스크립트는 차트 또는 데이터 집합에 표시되지 않습니다. <!--507179-->
+- 알 수 없는 결과를 가져오는 스크립트 또는 클라이언트가 오프라인인 스크립트는 차트 또는 데이터 집합에 표시되지 않습니다. <!--507179-->
 - 4KB로 잘리기 때문에 대형 스크립트 출력은 반환하지 마십시오. <!--508488-->
 - 스크립트 출력 형식의 일부 기능은 클라이언트의 하위 버전으로 Configuration Manager 버전 1802 이상을 실행하는 경우 사용할 수 없습니다. <!--508487-->
+    - Configuration Manager 클라이언트 버전 1802 이전을 사용 중인 경우 문자열 출력을 가져옵니다.
+    -  Configuration Manager 클라이언트 버전 1802 이상에서는 JSON 서식을 가져옵니다.
+        - 예를 들어 한 클라이언트 버전에서는 TEXT라는 결과가 표시되고, 다른 버전에서는 "TEXT"(큰따옴표로 묶은 출력)라는 결과가 표시될 수 있습니다. 이 결과는 차트에 두 가지 범주로 표시됩니다.
+        - 이 문제를 해결해야 할 경우, 두 가지 컬렉션에 대한 스크립트를 실행하는 것이 좋습니다. 1802 이전 버전의 클라이언트가 있는 컬렉션과 1802 이상 버전의 클라이언트가 있는 컬렉션이 이에 해당합니다. 또는 열거형 개체를 스크립트에서 문자열 값으로 변환하여 JSON 형식에서 올바르게 표시할 수 있습니다. 
 - 열거형 개체를 스크립트에서 문자열 값으로 변환하여 JSON 형식에서 올바르게 표시되게 합니다. <!--508377--> ![열거형 개체를 문자열 값으로 변환](./media/run-scripts/enum-tostring-JSON.png)
 
 

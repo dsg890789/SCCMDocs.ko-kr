@@ -17,11 +17,11 @@ caps.handback.revision: 0
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 42b9364fc88acc3f403db8d2ca9243a117fd78bf
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: bd03457abdd5cc4464c10227626ba72637c96f90
+ms.sourcegitcommit: a19e12d5c3198764901d44f4df7c60eb542e765f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="about-client-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 설정 정보
 
@@ -801,8 +801,9 @@ Configuration Manager가 모든 배포에 대한 요구 사항 규칙을 다시 
 
 이 옵션을 **예**로 설정하면 Office 365 설치 설정을 구성할 수 있습니다. 또한 Office CDN(콘텐츠 배달 네트워크)에서 파일을 다운로드하고, Configuration Manager에 파일을 응용 프로그램으로 배포할 수 있습니다. 자세한 내용은 [Office 365 ProPlus 관리](/sccm/sum/deploy-use/manage-office-365-proplus-updates)를 참조하세요.
 
+### <a name="enable-third-party-software-updates"></a>타사 소프트웨어 업데이트 사용 
 
-
+이를 **예**로 설정하면 '인트라넷 Microsoft 업데이트 서비스 위치에 대해 서명된 업데이트 허용' 정책이 설정되고 클라이언트의 신뢰할 수 있는 게시자 저장소에 서명 인증서가 설치됩니다. 이 클라이언트 설정은 Configuration Manager 버전 1802에 추가되었습니다.
 ## <a name="state-messaging"></a>상태 메시지
 
 ### <a name="state-message-reporting-cycle-minutes"></a>상태 메시지 보고 주기(분)

@@ -15,11 +15,11 @@ ms.assetid: 5bd637b1-d7a1-411b-877a-c7aae9741173
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 4582d1105f2465c37e001570227112bfca3bad1c
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 9c9ff975a58e7c56375fa7740a0a5bb6ebfa6341
+ms.sourcegitcommit: 27da4be015f1496b7b89ebddb517a2685f1ecf74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="whats-new-in-version-1802-of-system-center-configuration-manager"></a>System Center Configuration Manager 1802 버전의 새로운 기능
 
@@ -149,8 +149,8 @@ Surface 장치 대시보드는 사용자 환경에 있는 Surface 장치에 대�
 자세한 내용은 [Surface 대시보드](/sccm/core/clients/manage/surface-device-dashboard) 문서를 참조하세요.
 
 ### <a name="change-in-the-configuration-manager-client-install"></a>Configuration Manager 클라이언트 설치 변경
-<!--1356195-->|
-이 릴리스부터 Silverlight는 더 이상 클라이언트 장치에 자동으로 설치되지 않습니다. 자세한 내용은 [Windows 컴퓨터에 클라이언트를 배포하기 위한 필수 조건](/sccm/core/clients/deploy/prerequisites-for-deploying-clients-to-windows-computers.#BKMK_ExternalDependencies)을 참조하세요.
+<!--1356195-->
+이 릴리스부터 Silverlight는 더 이상 클라이언트 장치에 자동으로 설치되지 않습니다. 자세한 내용은 [Windows 컴퓨터에 클라이언트를 배포하기 위한 필수 조건](/sccm/core/clients/deploy/prerequisites-for-deploying-clients-to-windows-computers#bkmk_ExternalDependencies)을 참조하세요.
 
 ## <a name="co-management"></a>공동 관리
 

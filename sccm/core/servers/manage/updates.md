@@ -1,9 +1,9 @@
 ---
-title: 업데이트
+title: 업데이트 및 서비스
 titleSuffix: Configuration Manager
-description: '**업데이트 및 서비스**라는 콘솔 내 서비스 메서드에 대해 알아봅니다. 이 방법을 사용하면 권장 업데이트를 간편하게 찾아서 설치할 수 있습니다.'
+description: 업데이트 및 서비스라는 콘솔 내 서비스 메서드에 대해 알아봅니다. 이 방법을 사용하면 권장 업데이트를 간편하게 찾아서 설치할 수 있습니다.
 ms.custom: na
-ms.date: 03/22/2018
+ms.date: 03/28/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,12 +16,12 @@ caps.latest.revision: 51
 caps.handback.revision: 0
 author: mestew
 ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 8be32aa07819239820711079e4ff3637e96367db
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+manager: dougeby
+ms.openlocfilehash: 7660736dbacebb7167cb6bd19d7590d7f774e17c
+ms.sourcegitcommit: aed99ba3c5e9482199cb3fc5c92f6f3a160cb181
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="updates-for-system-center-configuration-manager"></a>System Center Configuration Manager용 업데이트
 
@@ -90,6 +90,10 @@ Configuration Manager의 다음 버전은 기준, 업데이트 또는 두 가지
 *(참고 1)* 1802 및 1702 기준 미디어는 [VLSC](https://www.microsoft.com/Licensing/servicecenter/Downloads/DownloadsAndKeys.aspx)(볼륨 라이선스 서비스 센터)에서 Microsoft System Center 2016 또는 System Center Configuration Manager(현재 분기 및 장기 서비스 분기) 릴리스의 일부로 제공됩니다. 예를 들어 VLSC에서 *System Center Config Mgr(현재 분기 및 LTSB)*을 검색할 수 있으며, 1802 및 1702 버전 기준 미디어가 모두 반환되고 다운로드할 수 있습니다.
 
 Configuration Manager 사이트의 버전을 확인하려면, 새 사이트와 콘솔 버전이 표시되는 콘솔의 왼쪽 위 모서리에서 **System Center Configuration Manager 정보** 로 이동합니다.  
+
+ > [!Note]  
+ > 1802 버전부터는 콘솔 버전이 이제 사이트 버전과 약간 다릅니다. 이제 콘솔의 부 버전이 Configuration Manager 릴리스 버전에 해당합니다. 예를 들어, Configuration Manager 버전 1802에서 초기 사이트 버전은 5.0.8634.1000이고 초기 콘솔 버전은 5.**1802**.1082.1700입니다. 빌드(1082) 및 수정(1700) 번호는 향후 핫픽스에서 1802 릴리스로 변경될 수 있습니다.
+
 
 ##  <a name="bkmk_inconsole"></a> 콘솔 내 업데이트 및 서비스  
  현재 분기라고도 하는, 프로덕션이 준비된 System Center Configuration Manager 설치를 사용하는 경우 사용자가 설치하는 대부분의 업데이트는 업데이트 및 서비스 채널을 사용하여 제공됩니다. 이 메서드는 현재 인프라 버전 및 구성에 해당하는 업데이트를 식별하고, 다운로드하고 사용할 수 있게 만들며, Microsoft에서 모든 고객에게 권장하는 업데이트만 포함시킵니다.   

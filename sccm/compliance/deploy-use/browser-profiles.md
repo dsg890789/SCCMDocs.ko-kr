@@ -5,17 +5,17 @@ description: Windows 10 클라이언트에서 Microsoft Edge 웹 브라우저 �
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.date: 03/22/2018
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: configuration-manager
 ms.technology:
 - configmgr-other
 ms.assetid: 76477b4d-df41-4b25-8318-7d18d46ca2c6
-ms.openlocfilehash: 57393c00faa0cc26d785d91ad1c6ecb9407ba5da
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: cb162e030249b02018af52ad3266b6b8df5ce355
+ms.sourcegitcommit: aed99ba3c5e9482199cb3fc5c92f6f3a160cb181
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="configure-microsoft-edge-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Microsoft Edge 설정 구성
 
@@ -24,6 +24,7 @@ ms.lasthandoff: 03/23/2018
 <!-- 1357310 -->
 1802 버전부터 Windows 10 클라이언트에서 [Microsoft Edge](https://technet.microsoft.com/microsoft-edge/bb265256) 웹 브라우저를 사용하는 고객은 이제 Configuration Manager 준수 설정 정책을 만들어 여러 Microsoft Edge 설정을 구성합니다. 
 
+이 정책은 Windows 10, 버전 1703 이상의 클라이언트에만 적용됩니다. <!--511552-->
 
 
 ## <a name="policy-settings"></a>정책 설정

@@ -3,7 +3,7 @@ title: CD.Latest 폴더
 titleSuffix: Configuration Manager
 description: Configuration Manager 콘솔 내에서 제품 업데이트를 제공하는 새 업데이트 프로세스에 대해 알아봅니다.
 ms.custom: na
-ms.date: 03/22/2018
+ms.date: 03/28/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,11 +16,11 @@ caps.latest.revision: 6
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 9371762a3f6acb9df7e7138c693b0a529c81a2ff
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 86b6393a6719895357d34fe8e562f3d0c967ad06
+ms.sourcegitcommit: 27da4be015f1496b7b89ebddb517a2685f1ecf74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="the-cdlatest-folder-for-system-center-configuration-manager"></a>System Center Configuration Manager의 CD.Latest 폴더
 
@@ -63,3 +63,6 @@ CD.Latest 폴더의 소스 파일은 다음에 대해 지원됩니다.
 >   
 >  -   새 계층을 위한 새 사이트 설치  
 >  -   Microsoft System Center 2012 Configuration Manager 사이트를 System Center Configuration Manager로 업그레이드
+>  -   Configuration Manager 클라이언트 설치
+>  -   Configuration Manager 관리 콘솔 설치
+

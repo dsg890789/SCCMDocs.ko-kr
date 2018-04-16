@@ -16,11 +16,11 @@ caps.latest.revision: 10
 author: aczechowski
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 5ec9266f33b318ac9c42f86840ebd7ac59713bdf
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 262bfa3991bbd95fad779da9520358d527a42b07
+ms.sourcegitcommit: a19e12d5c3198764901d44f4df7c60eb542e765f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="manage-task-sequences-to-automate-tasks-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업을 자동화하는 작업 순서 관리
 
@@ -251,7 +251,14 @@ Configuration Manager 환경에서 작업 순서를 사용하여 단계를 자�
         >     - 컬렉션이 서버를 포함하는 경우  
 
     -   **설명(선택 사항)**: 이 작업 순서 배포를 설명하는 추가 정보를 지정합니다.  
-    - **배포 템플릿 선택**: Configuration Manager 버전 1802부터 작업 순서에 대한 배포 템플릿을 저장하고 지정할 수 있습니다. <!--1357391-->
+    - **배포 템플릿 선택**: Configuration Manager 버전 1802<!--1357391-->부터 작업 순서에 대한 배포 템플릿을 저장하고 지정할 수 있습니다.     
+
+         > [!IMPORTANT]
+         > Configuration Manager 버전 1802에서 일부 항목은 템플릿에 저장되지 않습니다.  <!--510610--> 배포 마법사를 실행할 때 다음 항목을 적용하세요.
+         > - 소프트웨어 설치 
+         > - 예약 
+         > - 콘텐츠 사전 다운로드
+ 
 6.  **배포 설정** 페이지에서 다음 정보를 지정한 후에 **다음**을 클릭합니다.  
 
     -   **목적**: 드롭다운 목록에서 다음 옵션 중 하나를 선택합니다.  

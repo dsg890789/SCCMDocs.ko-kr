@@ -3,7 +3,7 @@ title: 클라이언트 설치 속성
 titleSuffix: Configuration Manager
 description: Configuration Manager 클라이언트를 설치하기 위한 ccmsetup 명령줄 속성을 알아봅니다.
 ms.custom: na
-ms.date: 03/22/2018
+ms.date: 03/28/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,11 +16,11 @@ caps.latest.revision: 15
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 057b078767a08574a806cb6af1cdb3812148a457
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 40e844fbb15a101574d9628648dde0db59c855c4
+ms.sourcegitcommit: aed99ba3c5e9482199cb3fc5c92f6f3a160cb181
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="about-client-installation-properties-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 설치 속성 정보
 
@@ -250,6 +250,20 @@ CCMSetup이 설치 파일 다운로드를 중지하기 전까지 시도할 시�
 
 
 
+## <a name="ccmsetupMsiProps"></a> Ccmsetup.msi 속성  
+ 다음 속성은 ccmsetup.msi의 설치 동작을 수정할 수 있습니다.
+
+### <a name="ccmsetupcmd"></a>CCMSETUPCMD 
+
+ccmsetup.msi로 설치한 후에 ccmsetup.exe에 전달되는 명령줄 속성을 지정합니다. 따옴표 안에 다른 속성을 포함합니다. Intune MDM 설치 방법을 사용하여 Configuration Manager 클라이언트를 부트스트래핑할 때 이 속성을 사용합니다. 
+
+예: `ccmsetup.msi CCMSETUPCMD="/mp:https://mp.contoso.com CCMHOSTNAME=mp.contoso.com"`
+
+ > [!Tip]
+ > Microsoft Intune은 명령줄을 1024자로 제한합니다. 
+
+
+
 ##  <a name="clientMsiProps"></a> Client.msi 속성  
  다음 속성은 client.msi의 설치 동작을 수정할 수 있습니다. 클라이언트 강제 설치 방법을 사용하는 경우에는 **클라이언트 강제 설치 속성** 대화 상자의 **클라이언트** 탭에서 속성을 지정할 수도 있습니다.  
 
@@ -282,16 +296,16 @@ Azure AD 테넌트 식별자를 지정합니다. 클라우드 관리를 위한 [
 
 예: `ccmsetup.exe AADTENANTID=607b7853-6f6f-4d5d-b3d4-811c33fdd49a`
 
+<!-- 
+### AADTENANTNAME
 
-### <a name="aadtenantname"></a>AADTENANTNAME
+Specifies the Azure AD tenant name. This tenant is linked to Configuration Manager when you [configure Azure services](/sccm/core/servers/deploy/configure/azure-services-wizard) for Cloud Management. To obtain the value for this property, use the following steps:
+- On a Windows 10 device that is joined to the same Azure AD tenant, open a command prompt.
+- Run the following command: `dsregcmd.exe /status`
+- In the Device State section, find the **TenantName** value. For example, `TenantName : Contoso`
 
-Azure AD 테넌트 이름을 지정합니다. 클라우드 관리를 위한 [Azure 서비스 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)할 때 이 테넌트는 Configuration Manager에 연결됩니다. 이 속성에 대한 값을 가져오려면 다음 단계를 사용합니다.
-- 동일한 Azure AD 테넌트에 가입된 Windows 10 장치에서 명령 프롬프트를 엽니다.
-- 다음 명령을 실행합니다. `dsregcmd.exe /status`
-- 장치 상태 섹션에서 **TenantName** 값을 찾습니다. 예를 들면 `TenantName : Contoso`
-
-예: `ccmsetup.exe AADTENANTNAME=Contoso`
-
+Example: `ccmsetup.exe AADTENANTNAME=Contoso`
+-->
 
 ### <a name="ccmadmins"></a>CCMADMINS  
 

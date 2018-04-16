@@ -10,11 +10,11 @@ ms.prod: configuration-manager
 ms.technology:
 - configmgr-other
 ms.assetid: 71eaa409-b955-45d6-8309-26bf3b3b0911
-ms.openlocfilehash: 1c7adec8f8919736c61859791802a96766af31bb
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 0e4d2add8ece7f548955064a479d9545a1fc64e1
+ms.sourcegitcommit: a19e12d5c3198764901d44f4df7c60eb542e765f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="certificates-for-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이에 대한 인증서
 
@@ -136,7 +136,7 @@ CMG는 클라이언트 인증 인증서를 신뢰해야 합니다. 이 신뢰를
 *인증서 요구 사항*
 - 1706 또는 1710 버전에서 클라이언트 인증 인증서를 사용하여 온-프레미스 ID가 있는 기존 클라이언트를 관리하는 경우 이 인증서를 권장하지만 반드시 필요한 것은 아닙니다.
 - 1710 버전에서는 Azure AD에 가입한 Windows 10 클라이언트를 관리할 때 이 인증서가 관리 지점에 필요합니다. 
-- 1802 버전부터 이 인증서는 모든 시나리오에서 필요합니다. 
+- 1802 버전부터 이 인증서는 모든 시나리오에서 필요합니다. CMG에 대해 사용할 수 있는 관리 지점만 HTTPS여야 합니다. 이 동작이 변경되면 Azure AD 토큰 기반 인증에 대한 지원이 개선됩니다. 
 
 Configuration Manager의 컨텍스트 외부에서 이 인증서를 제공합니다. 예를 들어 Active Directory 인증서 서비스 및 그룹 정책을 사용하여 웹 서버 인증서를 발급합니다. 자세한 내용은 [PKI 인증 요구 사항](/sccm/core/plan-design/network/pki-certificate-requirements) 및 [IIS를 실행하는 사이트 시스템용 웹 서버 인증서 배포](/sccm/core/plan-design/network/example-deployment-of-pki-certificates#BKMK_webserver2008_cm2012)를 참조하세요.
 

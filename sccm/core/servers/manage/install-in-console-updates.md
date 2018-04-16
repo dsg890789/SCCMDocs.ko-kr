@@ -3,7 +3,7 @@ title: 콘솔 내 업데이트
 titleSuffix: Configuration Manager
 description: Microsoft 클라우드에서 Configuration Manager에 업데이트 설치
 ms.custom: na
-ms.date: 03/22/2018
+ms.date: 03/28/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,11 +16,11 @@ caps.latest.revision: 36
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 5d364e35c8777c782499da978f0d1a31694278cc
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 054bbd8e7b1dd3f5d565afe60eb7e3379cc7a9ee
+ms.sourcegitcommit: aed99ba3c5e9482199cb3fc5c92f6f3a160cb181
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="install-in-console-updates-for-system-center-configuration-manager"></a>System Center Configuration Manager의 콘솔 내 업데이트 설치
 
@@ -217,6 +217,10 @@ Configuration Manager는 Microsoft 클라우드 서비스와 동기화하여 업
 즉시 업데이트를 설치하는 것이 좋습니다.  
 
 콘솔 업데이트가 완료되면 콘솔 및 사이트 버전이 올바른지 확인할 수 있습니다. 콘솔의 왼쪽 위에 있는 **System Center Configuration Manager 정보**로 이동합니다.  
+
+ > [!Note]  
+ > 1802 버전부터는 콘솔 버전이 이제 사이트 버전과 약간 다릅니다. 이제 콘솔의 부 버전이 Configuration Manager 릴리스 버전에 해당합니다. 예를 들어, Configuration Manager 버전 1802에서 초기 사이트 버전은 5.0.8634.1000이고 초기 콘솔 버전은 5.**1802**.1082.1700입니다. 빌드(1082) 및 수정(1700) 번호는 향후 핫픽스에서 1802 릴리스로 변경될 수 있습니다.
+
 
 
 ###  <a name="bkmk_toptier"></a> 최상위 계층 사이트에서 업데이트 설치를 시작하려면  
