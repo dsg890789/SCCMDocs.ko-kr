@@ -1,11 +1,12 @@
 ---
-title: "기술 미리 보기 1706"
+title: 기술 미리 보기 1706
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager용 Technical Preview 버전 1706에서 사용 가능한 기능에 대해 알아봅니다."
+description: System Center Configuration Manager용 Technical Preview 버전 1706에서 사용 가능한 기능에 대해 알아봅니다.
 ms.custom: na
 ms.date: 09/15/2017
 ms.prod: configuration-manager
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,11 +15,11 @@ ms.assetid: ca3b4714-2a16-495e-8a17-1d87991d5556
 author: erikje
 ms.author: erikje
 manager: angrobe
-ms.openlocfilehash: cfb14ebb7b4f7eb9a008ad4464978778e57514a6
-ms.sourcegitcommit: d029b373113051634ed030545348a458eb7b25f4
+ms.openlocfilehash: 9b44f5659caca86150de68d43001c06d9d1a831f
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="capabilities-in-technical-preview-1706-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1706의 기능
 
@@ -106,7 +107,7 @@ ms.lasthandoff: 01/09/2018
 
 -   수동 모드 사이트 서버를 실행하는 컴퓨터에는 다음이 적용됩니다.
 
-    -   [기본 사이트를 설치하기 위한 필수 구성 요소](https://docs.microsoft.com/en-us/sccm/core/servers/deploy/install/prerequisites-for-installing-sites#primary-sites-and-the-central-administration-site)를 충족해야 합니다.
+    -   [기본 사이트를 설치하기 위한 필수 구성 요소](https://docs.microsoft.com/sccm/core/servers/deploy/install/prerequisites-for-installing-sites#primary-sites-and-the-central-administration-site)를 충족해야 합니다.
 
     -   활성 모드 사이트 서버의 버전과 일치하는 원본 파일을 사용하여 설치됩니다.
 

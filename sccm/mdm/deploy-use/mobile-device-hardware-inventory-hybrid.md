@@ -1,25 +1,26 @@
 ---
-title: "모바일 장치에 대한 하드웨어 인벤토리 구성"
+title: 모바일 장치에 대한 하드웨어 인벤토리 구성
 titleSuffix: Configuration Manager
-description: "Microsoft Intune 및 System Center Configuration Manager에서 등록한 모바일 장치의 하드웨어 인벤토리를 구성합니다."
+description: Microsoft Intune 및 System Center Configuration Manager에서 등록한 모바일 장치의 하드웨어 인벤토리를 구성합니다.
 ms.custom: na
 ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-hybrid
+ms.technology:
+- configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 78a0aecc-f775-451e-aa05-56377ec91b1f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: c176955c3fcfe40f2089b84c50a982906b59f04d
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: c3dcb39b50293d5c221a1b8b13fcfbf8aa53ad83
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-hardware-inventory-for-mobile-devices-enrolled-by-microsoft-intune-and-system-center-configuration-manager"></a>Microsoft Intune 및 System Center Configuration Manager에서 등록한 모바일 장치의 하드웨어 인벤토리 구성 방법
 
@@ -27,12 +28,12 @@ ms.lasthandoff: 10/12/2017
 
 Configuration Manager에서 Microsoft Intune 커넥터를 사용하여 iOS, Android 및 Windows 장치에 대한 하드웨어 인벤토리를 수집할 수 있습니다. 하드웨어 인벤토리를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 하드웨어 인벤토리를 확장하는 방법](../../core/clients/manage/inventory/extend-hardware-inventory.md)을 참조하세요.  
 
- Microsoft Intune에 장치를 등록하는 방법에 대한 자세한 내용은 [Microsoft Intune을 사용하여 모바일 장치 관리](https://technet.microsoft.com/en-us/library/dn646962.aspx)를 참조하세요.  
+ Microsoft Intune에 장치를 등록하는 방법에 대한 자세한 내용은 [Microsoft Intune을 사용하여 모바일 장치 관리](https://technet.microsoft.com/library/dn646962.aspx)를 참조하세요.  
 
 ## <a name="hardware-inventory-for-mobile-devices"></a>모바일 장치에 대한 하드웨어 인벤토리  
  다음 표에는 자주 사용되는 모바일 플랫폼에서 하드웨어 인벤토리의 사용 가능한 인벤토리 클래스가 정리되어 있습니다.  
 
- **iOS**  
+ **Android**  
 
 |하드웨어 인벤토리 클래스|iOS|  
 |------------------------------|---------|  

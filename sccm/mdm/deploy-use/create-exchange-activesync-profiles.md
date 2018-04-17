@@ -1,26 +1,27 @@
 ---
-title: "Exchange ActiveSync 메일 프로필 만들기"
+title: Exchange ActiveSync 메일 프로필 만들기
 titleSuffix: Configuration Manager
-description: "Microsoft Intune에서 작동하는 System Center Configuration Manager의 메일 프로필을 만들고 구성하는 방법을 알아봅니다."
+description: Microsoft Intune에서 작동하는 System Center Configuration Manager의 메일 프로필을 만들고 구성하는 방법을 알아봅니다.
 ms.custom: na
 ms.date: 07/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-hybrid
+ms.technology:
+- configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 120442be-179e-450c-a0c4-284046895da3
-caps.latest.revision: "4"
-caps.handback.revision: "0"
+caps.latest.revision: 4
+caps.handback.revision: 0
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.openlocfilehash: 5fc0d5e68e27b3bde9ed3aa45a439c8b333da1d6
-ms.sourcegitcommit: 922d6d9c91ba2158b938df381277be1b5f1d434a
+ms.openlocfilehash: ab429e2702ab1595b035c8e2895dad584be4061a
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exchange-activesync-email-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager의 Exchange ActiveSync 메일 프로필
 
@@ -37,7 +38,7 @@ Microsoft Intune 및 Exchange ActiveSync를 사용하여 장치에 메일 프로
 - Samsung KNOX Standard 4 이상
 - Android for Work
 
-메일 프로필을 장치에 배포하려면 장치가 Intune에 등록되어 있어야 합니다. 장치를 등록하는 방법에 대한 자세한 내용은 [Microsoft Intune을 사용하여 모바일 장치 관리](https://technet.microsoft.com/en-us/library/dn646962.aspx)를 참조하세요.
+메일 프로필을 장치에 배포하려면 장치가 Intune에 등록되어 있어야 합니다. 장치를 등록하는 방법에 대한 자세한 내용은 [Microsoft Intune을 사용하여 모바일 장치 관리](https://technet.microsoft.com/library/dn646962.aspx)를 참조하세요.
 
 > [!NOTE]
 > Intune은 Gmail 메일 앱 및 Nine Work 메일 앱 각각에 대해 Android for Work 메일 프로필을 하나씩 제공합니다. 이러한 앱은 Google Play 스토어에서 사용할 수 있으며 Exchange로의 연결을 지원합니다. 메일 연결을 사용하도록 설정하려면 사용자의 장치에 이러한 메일 앱 중 하나를 배포한 다음 적절한 프로필을 만들어 배포합니다. Nine Work와 같은 메일 앱은 무료가 아닐 수도 있습니다. 앱의 라이선스 정보를 검토하거나, 질문이 있으면 앱 회사에 문의하세요.

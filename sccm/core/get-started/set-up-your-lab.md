@@ -1,26 +1,27 @@
 ---
-title: "랩 설정"
+title: 랩 설정
 titleSuffix: Configuration Manager
-description: "시뮬레이트된 실제 작업을 사용하여 Configuration Manager를 평가하기 위한 랩을 설정합니다."
+description: 시뮬레이트된 실제 작업을 사용하여 Configuration Manager를 평가하기 위한 랩을 설정합니다.
 ms.custom: na
 ms.date: 09/21/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b1970688-0cd2-404f-a17f-9e2aa4a78758
-caps.latest.revision: "11"
-caps.handback.revision: "0"
+caps.latest.revision: 11
+caps.handback.revision: 0
 author: erikje
 ms.author: erikje
 manager: angrobe
-ms.openlocfilehash: a95dda6f536ff9c608abb03d94692b2d9fc6093c
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+ms.openlocfilehash: 3441cb417a0b8fc7979b71018f6cfa345c47a02d
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-your-system-center-configuration-manager-lab"></a>System Center Configuration Manager 랩 설정
 
@@ -47,7 +48,7 @@ ms.lasthandoff: 12/01/2017
 
     -   **SQL_Latin1_General_CP1_CI_AS**가 **SQL Collation** 클래스로 필요합니다.  
 
-    -   [SQL 인증 대신](https://technet.microsoft.com/en-us/library/ms144284.aspx) **Windows 인증**이 필요합니다.  
+    -   [SQL 인증 대신](https://technet.microsoft.com/library/ms144284.aspx) **Windows 인증**이 필요합니다.  
 
     -   전용 **SQL Server 인스턴스**가 필요합니다.  
 

@@ -1,26 +1,27 @@
 ---
-title: "마이그레이션 항목 선택"
+title: 마이그레이션 항목 선택
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에 마이그레이션할 수 있는 데이터와 마이그레이션할 수 없는 데이터를 알아봅니다."
+description: System Center Configuration Manager에 마이그레이션할 수 있는 데이터와 마이그레이션할 수 없는 데이터를 알아봅니다.
 ms.custom: na
 ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 99222dc8-0e1e-4513-8302-7a1acf671e9b
-caps.latest.revision: "6"
-caps.handback.revision: "0"
+caps.latest.revision: 6
+caps.handback.revision: 0
 author: aczechowski
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 822bc5b4e17bdc611243fadfb13c551b0a8237a8
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+ms.openlocfilehash: 0718b7863c45f7b7e56380d4a2fa74e8d1a17b54
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="determine-whether-to-migrate-data-to-system-center-configuration-manager"></a>System Center Configuration Manager로 데이터를 마이그레이션할지 여부 결정
 
@@ -59,8 +60,6 @@ System Center Configuration Manager에서 마이그레이션은 지원되는 버
 
 ### <a name="objects-that-you-can-migrate-from-system-center-2012-configuration-manager-or-system-center-configuration-manager-current-branch"></a>System Center 2012 Configuration Manager 또는 System Center Configuration Manager 현재 분기에서 마이그레이션할 수 있는 개체
 
--   보급 알림  
-
 -   System Center 2012 Configuration Manager 이상 버전용 응용 프로그램  
 
 -   System Center 2012 Configuration Manager 이상 버전의 App-V 가상 환경  
@@ -76,6 +75,8 @@ System Center Configuration Manager에서 마이그레이션은 지원되는 버
     -   구성 기준  
 
     -   구성 항목  
+
+-   배포  
 
 -   운영 체제 배포:  
 

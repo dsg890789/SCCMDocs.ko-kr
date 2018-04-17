@@ -1,26 +1,27 @@
 ---
-title: "앱 구성 정책을 사용하여 Android for Work 앱 구성"
+title: 앱 구성 정책을 사용하여 Android for Work 앱 구성
 titleSuffix: Configuration Manager
-description: "앱을 실행하기 전에 사용자에게 앱 구성 정책을 배포하여 Android for Work를 실행 중인 장치의 구성 문제를 해결합니다."
+description: 앱을 실행하기 전에 사용자에게 앱 구성 정책을 배포하여 Android for Work를 실행 중인 장치의 구성 문제를 해결합니다.
 ms.custom: na
 ms.date: 09/12/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-hybrid
+ms.technology:
+- configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9126d188-7780-45a4-b21d-7fcf4fad7da2
-caps.latest.revision: "0"
-caps.handback.revision: "0"
+caps.latest.revision: 0
+caps.handback.revision: 0
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.openlocfilehash: 79d1b3fed3baa74c8ad195925ccda35713cb8865
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 0b1d4993e6ddb2301121a1e32b1672425e919dea
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="apply-settings-to-android-for-work-apps-with-app-configuration-policies-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 앱 구성 정책을 사용하여 Android for Work 앱에 설정 적용
 
@@ -35,7 +36,7 @@ System Center Configuration Manager에서 앱 구성 정책을 사용하여 사�
 사용자가 설정을 잘못 입력하는 경우 지원 센터에서 수정해야 하며 앱 배포 속도가 느려집니다. 이러한 문제를 방지하기 위해 앱 구성 정책을 사용하여 앱을 실행하기 전에 필수 설정을 사용자에게 배포할 수 있습니다. 설정이 자동으로 사용자와 연결됩니다. 사용자는 아무 작업도 수행할 필요가 없습니다.
 구성 정책을 사용자와 장치에 직접 배포하는 대신 앱을 배포할 때 배포 유형과 정책을 연결합니다. 정책 설정은 앱에서 해당 설정을 확인할 때마다(일반적으로 앱을 처음 실행할 때) 적용됩니다.
 
-Android 앱 구성 정책은 Android for Work를 실행 중인 장치에서만 사용 가능합니다. 앱 구성 정책은 Play for Work 스토어에서 승인한 앱에 적용됩니다. Android 대량 구매 앱에 대한 자세한 내용은 [Android for Work 장치에 앱을 배포하는 방법](https://docs.microsoft.com/en-us/intune/deploy-use/android-for-work-apps)을 참조하세요.
+Android 앱 구성 정책은 Android for Work를 실행 중인 장치에서만 사용 가능합니다. 앱 구성 정책은 Play for Work 스토어에서 승인한 앱에 적용됩니다. Android 대량 구매 앱에 대한 자세한 내용은 [Android for Work 장치에 앱을 배포하는 방법](https://docs.microsoft.com/intune/deploy-use/android-for-work-apps)을 참조하세요.
 
 앱 설치 유형에 대한 자세한 내용은 [응용 프로그램 관리 소개](/sccm/apps/understand/introduction-to-application-management)를 참조하세요.
 

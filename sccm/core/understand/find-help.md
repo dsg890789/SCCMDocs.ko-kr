@@ -1,26 +1,27 @@
 ---
-title: "도움말 찾기"
+title: 도움말 찾기
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에 대한 자세한 내용은 관련 리소스를 찾아보세요."
+description: System Center Configuration Manager에 대한 자세한 내용은 관련 리소스를 찾아보세요.
 ms.custom: na
 ms.date: 12/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 86810629-cf2a-43e8-86a2-847444119fc1
-caps.latest.revision: "19"
-caps.handback.revision: "0"
+caps.latest.revision: 19
+caps.handback.revision: 0
 author: aczechowski
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 73c057af033a91535d79c743e05df83601112626
-ms.sourcegitcommit: 92c3f916e6bbd35b6208463ff406e0247664543a
+ms.openlocfilehash: bcf53c11a30aa2fc3995697f36f00960035bbe57
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="find-help-for-using-system-center-configuration-manager"></a>System Center Configuration Manager 사용 도움말 찾기
 
@@ -54,7 +55,7 @@ ms.lasthandoff: 01/02/2018
 
 
 ## <a name="product-feedback"></a>제품 피드백
-Windows 10에 기본 제공된 [피드백 허브 앱](https://support.microsoft.com/en-us/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)을 통해 잠재적인 제품 결함을 보고합니다. **새 피드백을 추가**할 때 **엔터프라이즈 관리** 범주를 선택하고 다음과 같은 하위 범주가 중 하나를 선택해야 합니다.
+Windows 10에 기본 제공된 [피드백 허브 앱](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)을 통해 잠재적인 제품 결함을 보고합니다. **새 피드백을 추가**할 때 **엔터프라이즈 관리** 범주를 선택하고 다음과 같은 하위 범주가 중 하나를 선택해야 합니다.
  - Configuration Manager 클라이언트
  - Configuration Manager 콘솔
  - Configuration Manager OS 배포

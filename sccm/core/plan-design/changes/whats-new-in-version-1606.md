@@ -1,25 +1,26 @@
 ---
-title: "버전 1606의 새로운 기능"
+title: 버전 1606의 새로운 기능
 titleSuffix: Configuraton Manager
-description: "System Center Configuration Manager 버전 1606에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다."
+description: System Center Configuration Manager 버전 1606에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.
 ms.custom: na
 ms.date: 12/30/2016
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: df2e57b9-6445-4067-98e7-ace85d4e6aa6
-caps.latest.revision: "40"
+caps.latest.revision: 40
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: e26519de8ce0b905fd52ca6ab0762a406d2f1e2c
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: 9c948e0ff84c4741d77b9096e52d3abd765aba7b
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what39s-new-in-version-1606-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1606의 새로운 기능
 
@@ -89,7 +90,7 @@ System Center Configuration Manager 업데이트 1606은 버전 1511 또는 1602
 다음은 Configuration Manager 콘솔의 관리에 대한 변경 내용입니다.
 ### <a name="oms-connector"></a>OMS 커넥터
 
-이제 System Center Configuration Manager에서 [Microsoft OMS(Operations Management Suite)](https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/)로 Configuration Manager를 컬렉션으로 연결할 수 있습니다. 이렇게 하면 Configuration Manager 배포의 데이터(예: 컬렉션)가 OMS에 표시됩니다. 자세한 내용은 [Configuration Manager의 데이터를 Microsoft Operations Management Suite에 동기화](../../../core/clients/manage/sync-data-microsoft-operations-management-suite.md)를 참조하세요.
+이제 System Center Configuration Manager에서 [Microsoft OMS(Operations Management Suite)](https://azure.microsoft.com/documentation/articles/operations-management-suite-overview/)로 Configuration Manager를 컬렉션으로 연결할 수 있습니다. 이렇게 하면 Configuration Manager 배포의 데이터(예: 컬렉션)가 OMS에 표시됩니다. 자세한 내용은 [Configuration Manager의 데이터를 Microsoft Operations Management Suite에 동기화](../../../core/clients/manage/sync-data-microsoft-operations-management-suite.md)를 참조하세요.
 
 OMS 커넥터는 시험판 기능입니다. 사용하도록 설정하려면 [업데이트에서 시험판 기능 사용](../../../core/servers/manage/install-in-console-updates.md#bkmk_prerelease)을 참조하세요.
 

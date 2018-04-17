@@ -1,7 +1,7 @@
 ---
-title: "지원되는 SQL Server 버전"
+title: 지원되는 SQL Server 버전
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 사이트 데이터베이스를 호스트하기 위한 SQL Server 버전 및 구성 요구 사항을 가져옵니다."
+description: System Center Configuration Manager 사이트 데이터베이스를 호스트하기 위한 SQL Server 버전 및 구성 요구 사항을 가져옵니다.
 ms.custom: na
 ms.date: 02/14/2018
 ms.prod: configuration-manager
@@ -12,15 +12,15 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 35e237b6-9f7b-4189-90e7-8eca92ae7d3d
-caps.latest.revision: 
+caps.latest.revision: 21
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 5c17efa3498907fcc57d366965bec3b4198890bb
-ms.sourcegitcommit: 37e990d191028160486dbca286d2ea945bd5c8c3
+ms.openlocfilehash: 0e1cafc9b1900dd370cb8dac80f5a02fbb3d12dc
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supported-sql-server-versions-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 지원되는 SQL Server 버전
 
@@ -75,7 +75,7 @@ SQL Server 트랜잭션 복제는 [데이터베이스 복제본](https://technet
 >  중앙 관리 사이트의 데이터베이스에 대해 SQL Server Standard를 사용하는 경우에는 계층 구조가 지원할 수 있는 총 클라이언트 수를 제한합니다. [크기 조정 및 규모 숫자 값](../../../core/plan-design/configs/size-and-scale-numbers.md)을 참조하세요.
 
 ### <a name="sql-server-2017-standard-enterprise"></a>SQL Server 2017: Standard, Enterprise  
-다음 사이트의 경우 [Configuration Manager 버전1710](https://docs.microsoft.com/en-us/sccm/core/plan-design/changes/whats-new-in-version-1710)에서부터 최소 [누적 업데이트 버전 2](https://support.microsoft.com/help/4052574)에서 이 버전의 SQL Server를 사용할 수 있습니다. 
+다음 사이트의 경우 [Configuration Manager 버전1710](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1710)에서부터 최소 [누적 업데이트 버전 2](https://support.microsoft.com/help/4052574)에서 이 버전의 SQL Server를 사용할 수 있습니다. 
 
 -   중앙 관리 사이트  
 -   기본 사이트  
@@ -145,7 +145,7 @@ SQL Server 트랜잭션 복제는 [데이터베이스 복제본](https://technet
 -   보조 사이트
 
 ### <a name="sql-server-2017-express"></a>SQL Server 2017 Express   
-다음 사이트의 경우 [Configuration Manager 버전1710](https://docs.microsoft.com/en-us/sccm/core/plan-design/changes/whats-new-in-version-1710)에서부터 최소 [누적 업데이트 버전 2](https://support.microsoft.com/help/4052574)에서 이 버전의 SQL Server를 사용할 수 있습니다.
+다음 사이트의 경우 [Configuration Manager 버전1710](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1710)에서부터 최소 [누적 업데이트 버전 2](https://support.microsoft.com/help/4052574)에서 이 버전의 SQL Server를 사용할 수 있습니다.
 -   보조 사이트
 <!--SMS.498506-->
 

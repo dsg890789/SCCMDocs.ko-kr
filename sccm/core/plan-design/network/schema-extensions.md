@@ -1,27 +1,28 @@
 ---
-title: "스키마 확장"
+title: 스키마 확장
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager를 지원하도록 Active Directory 스키마를 확장합니다."
+description: System Center Configuration Manager를 지원하도록 Active Directory 스키마를 확장합니다.
 ms.custom: na
 ms.date: 2/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 95c13c00-909f-4fbb-bbaa-1eba9d54d8c5
-caps.latest.revision: "8"
-caps.handback.revision: "0"
+caps.latest.revision: 8
+caps.handback.revision: 0
 author: mestew
 ms.author: mstewart
 manager: angrobe
 robots: noindex
-ms.openlocfilehash: 1fa1e3be3d08c9aa1f9271868f6b01e20b63e444
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: cc658166a7094f716db0ee495bc2338b52303b50
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="schema-extensions-for-system-center-configuration-manager"></a>System Center Configuration Manager의 스키마 확장
 
@@ -31,7 +32,7 @@ Active Directory 스키마를 확장하여 Configuration Manager를 지원할 �
 
 -   Active Directory 스키마를 확장하는 것이 좋지만, 필수 사항은 아닙니다.  
 
-[Active Directory 스키마를 확장](https://docs.microsoft.com/en-us/sccm/core/plan-design/network/extend-the-active-directory-schema)하기 전에 Active Directory Domain Services 및 [Active Directory 스키마 수정](https://technet.microsoft.com/library/cc759402\(v=ws.10\).aspx)에 대해 잘 알고 있어야 합니다.  
+[Active Directory 스키마를 확장](https://docs.microsoft.com/sccm/core/plan-design/network/extend-the-active-directory-schema)하기 전에 Active Directory Domain Services 및 [Active Directory 스키마 수정](https://technet.microsoft.com/library/cc759402\(v=ws.10\).aspx)에 대해 잘 알고 있어야 합니다.  
 
 ## <a name="considerations-for-extending-the-active-directory-schema-for-configuration-manager"></a>Configuration Manager를 위한 Active Directory 스키마 확장에 대한 고려 사항  
 
@@ -142,7 +143,7 @@ System Center Configuration Manager의 스키마를 확장하는 경우 다음 �
 
 > [!NOTE]  
 
->  스키마 확장에는 이전 버전의 제품에서 유지되었지만 System Center Configuration Manager에서는 사용되지 않는 특성과 클래스가 포함될 수 있습니다. 예를 들면 다음과 같습니다.  
+>  스키마 확장에는 이전 버전의 제품에서 유지되었지만 System Center Configuration Manager에서는 사용되지 않는 특성과 클래스가 포함될 수 있습니다. 예:  
 
 >   
 >  -   : cn = SMS 사이트 경계 MS  
