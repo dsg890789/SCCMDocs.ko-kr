@@ -1,25 +1,26 @@
 ---
-title: "Windows Analytics로 클라이언트 모니터링"
+title: Windows Analytics로 클라이언트 모니터링
 titleSuffix: Configuration Manager
-description: "Windows Analytics는 Operations Management Suite에서 실행되는 솔루션 모음으로, 사용자 환경의 장치에서 보고되는 Windows 원격 분석 데이터를 활용하여 사용자 환경의 현재 상태에 대한 귀중한 정보를 얻을 수 있도록 합니다."
+description: Windows Analytics는 Operations Management Suite에서 실행되는 솔루션 모음으로, 사용자 환경의 장치에서 보고되는 Windows 원격 분석 데이터를 활용하여 사용자 환경의 현재 상태에 대한 귀중한 정보를 얻을 수 있도록 합니다.
 ms.custom: na
 ms.date: 01/02/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-client
+ms.technology:
+- configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: CF35CE87-3BA8-4A84-9BC8-ABCEA4666212
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: aczechowski
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 6e0b6ec99755b89213b540f22315038911b8eb29
-ms.sourcegitcommit: f1535281b2c3fecff773b722c3f7590bf6ba10a0
+ms.openlocfilehash: 15b1d07f35f774f3ec8f082a86c90ecb989a438e
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-windows-analytics-with-configuration-manager"></a>Configuration Manager에서 Windows Analytics 사용
 
@@ -64,6 +65,6 @@ Windows 8.1 또는 이전 버전을 실행하는 장치에서 Internet Explorer 
 
 ## <a name="use-windows-analytics-to-identify-gaps-in-windows-information-protection-policies"></a>Windows Analytics를 사용하여 Windows Information Protection 정책의 차이 식별
 
-WIP([Windows Information Protection](https://docs.microsoft.com/en-us/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip)) 정책으로 구성된 Windows 10 버전 1703 이상 장치는 환경의 회사 데이터에 액세스하지만 WIP 정책 응용 프로그램 규칙에 포함되지 않는 응용 프로그램에 대한 원격 분석을 보고합니다. 사용자가 이러한 응용 프로그램의 생산성을 유지해야 할 수 있지만 WIP는 사용자의 액세스를 차단합니다. 사용자가 회사 데이터에 액세스하는 기술은 Configuration Manager에서 Windows Information Protection 정책을 유지 관리하는 데 유용합니다. 
+WIP([Windows Information Protection](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip)) 정책으로 구성된 Windows 10 버전 1703 이상 장치는 환경의 회사 데이터에 액세스하지만 WIP 정책 응용 프로그램 규칙에 포함되지 않는 응용 프로그램에 대한 원격 분석을 보고합니다. 사용자가 이러한 응용 프로그램의 생산성을 유지해야 할 수 있지만 WIP는 사용자의 액세스를 차단합니다. 사용자가 회사 데이터에 액세스하는 기술은 Configuration Manager에서 Windows Information Protection 정책을 유지 관리하는 데 유용합니다. 
 
 이 [Operations Management Suite 쿼리](https://go.microsoft.com/fwlink/?linkid=849952)를 사용하여 이 Windows Information Protection 데이터에 액세스합니다.

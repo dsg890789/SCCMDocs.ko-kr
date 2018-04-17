@@ -1,26 +1,27 @@
 ---
-title: "기술 미리 보기 1601의 기능"
+title: 기술 미리 보기 1601의 기능
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager용 Technical Preview 버전 1601에서 사용 가능한 기능에 대해 알아봅니다."
+description: System Center Configuration Manager용 Technical Preview 버전 1601에서 사용 가능한 기능에 대해 알아봅니다.
 ms.custom: na
 ms.date: 01/23/2017
 ms.prod: configuration-manager
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: aae1cf2f-2c04-4f68-a03a-f4a925433c09
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: erikje
 ms.author: erikje
 manager: angrobe
 robots: noindex,nofollow
-ms.openlocfilehash: 70efb483ac15ba14497b884ed753032e8e48a4b5
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+ms.openlocfilehash: b17a89ab08c99a1c3cd8a501e7d58d5b42a110a3
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="capabilities-in-technical-preview-1601-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1601의 기능
 
@@ -79,11 +80,11 @@ ms.lasthandoff: 12/01/2017
 
     -   Microsoft Intune 구독 Microsoft Intune 구독은 Configuration Manager 콘솔에서 구성해야 합니다.  
 
-    -   [Azure AD 자동 등록에 대한 필수 조건](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/?rnd=1)  
+    -   [Azure AD 자동 등록에 대한 필수 조건](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/?rnd=1)  
 
     이 옵션을 사용하려면 아래에 설명된 특정 규칙을 사용하여 Configuration Manager에서 준수 정책을 만들고, Intune 콘솔에서 조건부 액세스 정책을 설정해야 합니다.  또한 호환 PC에만 액세스를 허용하려면 Windows PC 요구 사항을 **장치가 호환되어야 함** 옵션으로 설정해야 합니다. 다음은 System Center Configuration manager에서 관리하는 PC에 적용되는 준수 정책 규칙입니다.  
 
-    -   **Azure ActiveDirectory에서 등록 필요:** 이 규칙은 사용자의 장치가 Azure AD에 연결된 작업 영역인지 확인합니다. 그렇지 않은 경우 장치는 Azure AD에서 자동으로 등록됩니다. 자동 등록은 Windows 8.1에서만 지원됩니다. Windows 7 PC의 경우 자동 등록을 수행하기 위해 MSI를 배포합니다. 자세한 내용은 [여기](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/?rnd=1)를 참조하세요.  
+    -   **Azure ActiveDirectory에서 등록 필요:** 이 규칙은 사용자의 장치가 Azure AD에 연결된 작업 영역인지 확인합니다. 그렇지 않은 경우 장치는 Azure AD에서 자동으로 등록됩니다. 자동 등록은 Windows 8.1에서만 지원됩니다. Windows 7 PC의 경우 자동 등록을 수행하기 위해 MSI를 배포합니다. 자세한 내용은 [여기](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/?rnd=1)를 참조하세요.  
 
     -   **마감일이 다음 기간보다 오래된 필수 업데이트가 모두 설치됨:** 이 규칙은 마감일 및 사용자가 지정한 유예 기간 내에 사용자 장치에 모든 필수 업데이트(**필수 자동 업데이트** 규칙에 지정)가 설치되는지 확인하고 보류 중인 모든 필수 업데이트를 자동으로 설치합니다.  
 
@@ -140,7 +141,7 @@ Technical Preview 1601부터는 Configuration Manager 콘솔에서 클라이언�
 |![클라이언트에 대한 오프라인 상태 아이콘](media/offline-status-icon.png)|클라이언트가 오프라인 상태입니다.|  
 |![클라이언트에 대한 알 수 없는 상태 아이콘](media/unknown-status-icon.png)|클라이언트 상태를 알 수 없습니다.|  
 
-### <a name="prerequisites"></a>전제 조건  
+### <a name="prerequisites"></a>필수 구성 요소  
  클라이언트 온라인 상태에는 필수 구성 요소가 없습니다. Configuration Manager Technical Preview 1601이 설치되기만 하면 바로 사용할 수 있습니다.  
 
 ### <a name="limitations"></a>제한 사항  

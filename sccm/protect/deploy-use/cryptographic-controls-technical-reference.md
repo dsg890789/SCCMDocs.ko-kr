@@ -1,23 +1,24 @@
 ---
-title: "암호화 컨트롤 기술 참조"
+title: 암호화 컨트롤 기술 참조
 titleSuffix: Configuration Manager
-description: "공격을 방지하여 System Center Configuration Manager의 데이터를 읽을 수 없도록 서명 및 암호화하는 방법에 대해 알아봅니다."
+description: 공격을 방지하여 System Center Configuration Manager의 데이터를 읽을 수 없도록 서명 및 암호화하는 방법에 대해 알아봅니다.
 ms.custom: na
 ms.date: 12/8/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 author: aczechowski
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 2c1ed6f4c93f74719ab3fe5d723f7dc01eb1ede7
-ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
+ms.openlocfilehash: 3057d3d78dbb67e0b1b061a6845a6885570b239a
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cryptographic-controls-technical-reference"></a>암호화 컨트롤 기술 참조
 
@@ -286,5 +287,5 @@ Configuration Manager 클라이언트 및 서버의 보안을 강화하려면 �
 -   SSL 3.0, TLS 1.0 및 TLS 1.1 사용 안 함 
 -   TLS 관련 암호 도구 모음 순서 변경 
 
-자세한 내용은 [Schannel.dll에서 특정 암호화 알고리즘 및 프로토콜의 사용을 제한하는 방법](https://support.microsoft.com/en-us/kb/245030/) 및 [Schannel 암호 도구 무음 우선 순위 지정](https://msdn.microsoft.com/en-us/library/windows/desktop/bb870930.aspx)을 참조하세요. 이 절차는 Configuration Manager 기능에는 영향을 주지 않습니다.
+자세한 내용은 [Schannel.dll에서 특정 암호화 알고리즘 및 프로토콜의 사용을 제한하는 방법](https://support.microsoft.com/en-us/kb/245030/) 및 [Schannel 암호 도구 무음 우선 순위 지정](https://msdn.microsoft.com/library/windows/desktop/bb870930.aspx)을 참조하세요. 이 절차는 Configuration Manager 기능에는 영향을 주지 않습니다.
 

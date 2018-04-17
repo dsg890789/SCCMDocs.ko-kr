@@ -1,21 +1,21 @@
 ---
-title: "사용자 마이그레이션을 위한 Intune 준비"
+title: 사용자 마이그레이션을 위한 Intune 준비
 titleSuffix: Configuration Manager
-description: "하이브리드 MDM으로부터 사용자를 마이그레이션하기 위해 Azure에서 Intune을 준비하는 방법을 알아봅니다."
-keywords: 
+description: 하이브리드 MDM으로부터 사용자를 마이그레이션하기 위해 Azure에서 Intune을 준비하는 방법을 알아봅니다.
+keywords: ''
 author: dougeby
 manager: dougeby
 ms.date: 12/05/2017
 ms.topic: article
 ms.prod: configmgr-hybrid
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 ms.assetid: db97ae9e-34f4-4e10-a282-cd211f612bb4
-ms.openlocfilehash: 226586f0ee42cdad98b1d74f25421685d85e0dcf
-ms.sourcegitcommit: 8c6e9355846ff6a73c534c079e3cdae09cf13c45
+ms.openlocfilehash: 8d636f2c46f3fa14fbc76a605d2cf55a2c0375c6
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prepare-intune-for-user-migration"></a>사용자 마이그레이션을 위한 Intune 준비 
 
@@ -42,7 +42,7 @@ Configuration Manager에서 컬렉션을 Intune 구독에 추가하면 컬렉션
 디렉터리 동기화가 구성되어 있으므로 사용자와 그룹이 이미 AAD에 있을 가능성이 높습니다. 사용자가 올바른 사용자 그룹의 멤버인지 확인하려면 Intune 사용자 그룹을 검토하는 것이 좋습니다. 이러한 그룹에 정책, 프로필, 앱 등을 대상으로 지정합니다. Intune 독립 실행형으로 마이그레이션한 사용자가 올바른 그룹의 멤버인지 확인합니다. 
 
 ## <a name="configure-role-based-administration-control-rbac"></a>RBAC(역할 기반 관리 제어) 구성
-마이그레이션의 일부로 Intune에서 필요한 모든 RBAC 역할을 구성하고 해당 역할에 사용자를 할당합니다. 리소스 범위 지정과 같이 Configuration Manager와 Intune의 RBAC 간에는 차이점이 있습니다. 자세한 내용은 [Intune을 통한 RBAC(역할 기반 관리 제어)](https://docs.microsoft.com/en-us/intune/role-based-access-control)를 참조하세요.
+마이그레이션의 일부로 Intune에서 필요한 모든 RBAC 역할을 구성하고 해당 역할에 사용자를 할당합니다. 리소스 범위 지정과 같이 Configuration Manager와 Intune의 RBAC 간에는 차이점이 있습니다. 자세한 내용은 [Intune을 통한 RBAC(역할 기반 관리 제어)](https://docs.microsoft.com/intune/role-based-access-control)를 참조하세요.
 
 ## <a name="assign-apps-and-policies-to-aad-groups"></a>AAD 그룹에 앱 및 정책 할당
 다른 Configuration Manager 개체를 Intune으로 마이그레이션하는 마이그레이션 프로세스에 대해 [Configuration Manager 데이터를 Microsoft Intune으로 가져오는 단계](migrate-import-data.md)를 수행한 경우, 많은 개체가 이미 AAD 그룹에 할당되었을 수 있습니다. 그러나 모든 개체(앱, 정책, 프로필 등)가 올바른 AAD 그룹에 할당되어 있는지 확인해야 합니다. 개체를 올바르게 할당하면 사용자가 마이그레이션된 후 해당 사용자의 장치가 자동으로 구성되며 마이그레이션은 사용자에게 투명해야 합니다. AAD 그룹에 개체를 할당하는 방법에 대한 자세한 내용은 다음을 참조하세요. 
@@ -62,7 +62,7 @@ Exchange 장치를 사용하면 Configuration Manager Exchange Connector에서 I
 ### <a name="steps-to-ensure-conditional-access-works-properly-after-user-migration"></a>사용자 마이그레이션 후 조건부 액세스가 제대로 작동하는지 확인하는 단계
 사용자를 마이그레이션한 후에 조건부 액세스가 제대로 작동하고 사용자가 자신의 전자 메일 서버에 계속 액세스할 수 있게 하려면 다음 사항이 사실인지 확인하세요.
 - Exchange ActiveSync 기본 액세스 수준 설정(DefaultAccessLevel)이 차단 또는 격리로 설정된 경우 장치에서 전자 메일에 대한 액세스를 손실할 수 있습니다. 
-- Exchange Connector가 Configuration Manager에 설치되어 있고 **모바일 장치가 규칙으로 관리되지 않는 경우의 액세스 수준** 설정에 **액세스 허용** 값이 있는 경우 사용자를 마이그레이션하기 전에 Intune에 [온-프레미스 Exchange Connector](https://docs.microsoft.com/en-us/intune/conditional-access-exchange-create#configure-exchange-on-premises-access)를 설치해야 합니다. **고급 Exchange ActiveSync 액세스 설정**의 **Exchange 온-프레미스** 블레이드에서 Intune의 기본 액세스 수준 설정을 구성합니다. 자세한 내용은 [Exchange 온-프레미스 액세스 구성](https://docs.microsoft.com/intune/conditional-access-exchange-create#configure-exchange-on-premises-access)을 참조하세요.
+- Exchange Connector가 Configuration Manager에 설치되어 있고 **모바일 장치가 규칙으로 관리되지 않는 경우의 액세스 수준** 설정에 **액세스 허용** 값이 있는 경우 사용자를 마이그레이션하기 전에 Intune에 [온-프레미스 Exchange Connector](https://docs.microsoft.com/intune/conditional-access-exchange-create#configure-exchange-on-premises-access)를 설치해야 합니다. **고급 Exchange ActiveSync 액세스 설정**의 **Exchange 온-프레미스** 블레이드에서 Intune의 기본 액세스 수준 설정을 구성합니다. 자세한 내용은 [Exchange 온-프레미스 액세스 구성](https://docs.microsoft.com/intune/conditional-access-exchange-create#configure-exchange-on-premises-access)을 참조하세요.
 - 두 커넥터 모두에 대해 동일한 구성을 사용합니다. 마지막으로 구성한 커넥터는 이전에 다른 커넥터에서 쓴 ActiveSync 조직 설정을 덮어씁니다. 커넥터를 다르게 구성하면 조건부 액세스가 예기치 않게 변경될 수 있습니다.
 - 사용자가 Intune 독립 실행형으로 마이그레이션되었으면 Configuration Manager의 조건부 액세스 대상에서 사용자를 제거합니다.
 

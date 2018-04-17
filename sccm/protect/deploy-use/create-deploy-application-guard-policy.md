@@ -16,11 +16,11 @@ caps.latest.revision: 5
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: faa1a50b29fe4ba966812441243b81ee2d31b024
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 3f122dc7ba1bce5aaf8fe0ac6e4c75165a9b5a0b
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-and-deploy-windows-defender-application-guard-policy"></a>Windows Defender Application Guard 정책 만들기 및 배포 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -29,7 +29,7 @@ Configuration Manager 엔드포인트 보호를 사용하여 [Windows Defender A
 
 ## <a name="prerequisites"></a>필수 구성 요소
 
-Windows Defender Application Guard 정책을 만들고 배포하려면 Windows 10 Fall Creators Update(1709)를 사용해야 합니다. 또한 정책을 배포하는 Windows 10 장치는 네트워크 격리 정책을 사용하여 구성해야 합니다. 자세한 내용은 [Windows Defender Application Guard 개요](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-application-guard/wd-app-guard-overview)를 참조하세요. 
+Windows Defender Application Guard 정책을 만들고 배포하려면 Windows 10 Fall Creators Update(1709)를 사용해야 합니다. 또한 정책을 배포하는 Windows 10 장치는 네트워크 격리 정책을 사용하여 구성해야 합니다. 자세한 내용은 [Windows Defender Application Guard 개요](https://docs.microsoft.com/windows/threat-protection/windows-defender-application-guard/wd-app-guard-overview)를 참조하세요. 
 
 
 ## <a name="create-a-policy-and-to-browse-the-available-settings"></a>정책 만들기 및 사용 가능한 설정 검색

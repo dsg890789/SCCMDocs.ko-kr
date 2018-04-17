@@ -1,25 +1,26 @@
 ---
-title: "조건부 액세스"
+title: 조건부 액세스
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 조건부 액세스를 사용하여 메일 및 기타 서비스를 보호하는 방법을 알아봅니다."
+description: System Center Configuration Manager에서 조건부 액세스를 사용하여 메일 및 기타 서비스를 보호하는 방법을 알아봅니다.
 ms.custom: na
 ms.date: 12/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-hybrid
+ms.technology:
+- configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7b04727b-d563-422f-8d59-4dd66215d0b3
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: f215e1c22d40e1fe402084b665ae624bc0c21d97
-ms.sourcegitcommit: 92c3f916e6bbd35b6208463ff406e0247664543a
+ms.openlocfilehash: 7fea8d0e47fff5288a58232eb9bd17171481b3a3
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-access-to-services-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 서비스 액세스 관리
 
@@ -163,7 +164,7 @@ SharePoint Online에 대한 조건부 액세스에서는 다음을 실행하는 
 
  PC가 정책을 준수하도록 하려면 Microsoft Intune에서 PC를 등록해야 하며 정책을 준수하도록 설정해야 합니다.
 
- 도메인에 가입된 PC의 경우 Azure Active Directory에 [장치를 자동으로 등록](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/) 하도록 설정해야 합니다.
+ 도메인에 가입된 PC의 경우 Azure Active Directory에 [장치를 자동으로 등록](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) 하도록 설정해야 합니다.
  -   [Office 365 최신 인증을 사용](https://blogs.office.com/2015/03/23/office-2013-modern-authentication-public-preview-announced/)하도록 설정해야 하며 최신 Office 업데이트를 모두 설치해야 합니다.<br />     최신 인증을 사용하는 경우 Office 2013 Windows 클라이언트에 ADAL(Active Directory 인증 라이브러리) 기반 로그인 기능이 제공되며, 다단계 인증 및 인증서 기반 인증과 같은 더욱 효율적인 보안 기능을 사용할 수 있습니다.
  -   최신 인증 이외의 인증 프로토콜을 차단하도록 ADFS 클레임 규칙을 설정해야 합니다.  
 

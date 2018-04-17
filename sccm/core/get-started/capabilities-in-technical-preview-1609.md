@@ -1,25 +1,26 @@
 ---
-title: "기술 미리 보기 1609의 기능"
+title: 기술 미리 보기 1609의 기능
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager용 Technical Preview 버전 1609에서 사용 가능한 기능에 대해 알아봅니다."
+description: System Center Configuration Manager용 Technical Preview 버전 1609에서 사용 가능한 기능에 대해 알아봅니다.
 ms.custom: na
 ms.date: 01/23/2017
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.prod: configuration-manager
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.topic: article
 ms.assetid: e2a59116-b2e5-4dd2-90eb-0b8a5eb50b56
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: erikje
 ms.author: erikje
 manager: angrobe
-ms.openlocfilehash: e1cceae5f73d003be2fe64df9e6dbaa7badaf0c7
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+ms.openlocfilehash: 4beca8479e5adbfa24b597769b792fd91bed9a2c
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="capabilities-in-technical-preview-1609-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1609의 기능
 
@@ -95,7 +96,7 @@ Configuration Manager를 Intune과 함께 사용할 경우 OMA-URI를 사용하�
 
 다양한 장치 플랫폼의 구성 항목에 사용할 수 있는 여러 가지 새로운 설정을 추가했습니다.
 이러한 설정은 이전에 Microsoft Intune의 독립 실행형 구성에 있던 설정이며 이제 Intune과 Configuration Manager를 사용할 때 제공됩니다.
-이러한 설정 사용에 대한 도움이 필요한 경우 [Microsoft Intune 정책을 사용하여 장치의 설정 및 기능 관리](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)를 열고 원하는 플랫폼에 대한 설정 하위 항목을 선택합니다.
+이러한 설정 사용에 대한 도움이 필요한 경우 [Microsoft Intune 정책을 사용하여 장치의 설정 및 기능 관리](https://docs.microsoft.com/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)를 열고 원하는 플랫폼에 대한 설정 하위 항목을 선택합니다.
 
 
 ### <a name="new-settings-for-android-devices"></a>Android 장치에 대한 새로운 설정

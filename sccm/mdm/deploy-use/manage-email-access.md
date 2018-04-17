@@ -1,25 +1,26 @@
 ---
-title: "전자 메일 액세스 관리"
+title: 전자 메일 액세스 관리
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 조건부 액세스를 사용하여 Exchange 메일에 대한 액세스를 관리하는 방법을 알아봅니다."
+description: System Center Configuration Manager 조건부 액세스를 사용하여 Exchange 메일에 대한 액세스를 관리하는 방법을 알아봅니다.
 ms.custom: na
 ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-hybrid
+ms.technology:
+- configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: fa648e73-5fb8-4818-ab57-7466ffaf888e
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: a83c2030de8a146dad7bf2258e8a983c8ab6c45e
-ms.sourcegitcommit: 922d6d9c91ba2158b938df381277be1b5f1d434a
+ms.openlocfilehash: e36674d27757daab9ced4e7e8b51942a4929b5ff
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-email-access-in-system-center-configuration-manager"></a>System Center Configuration Manager의 메일 액세스 관리
 
@@ -47,7 +48,7 @@ System Center Configuration Manager 조건부 액세스를 사용하면 지정�
 
 Office 데스크톱 응용 프로그램은 다음을 실행하는 Exchange Online에 액세스할 수 있습니다.  
 
--   [최신 인증](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) 이 사용되는 Office 데스크톱 2013 이상  
+-   [최신 인증](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) 이 사용되는 Office 데스크톱 2013 이상  
 
 -   Windows 7.0 또는 Windows 8.1  
 
@@ -171,7 +172,7 @@ Office 데스크톱 응용 프로그램은 다음을 실행하는 Exchange Onlin
 #### <a name="for-exchange-online-and-tenants-in-the-new-exchange-online-dedicated-environment"></a>Exchange Online(및 새 Exchange Online Dedicated 환경의 테넌트)의 경우
 
 >[!NOTE]
->Azure AD 관리 콘솔에서 조건부 액세스 정책을 만들 수도 있습니다. Azure AD 관리 콘솔을 사용하면 다단계 인증 등의 다른 조건부 액세스 정책 외에도 Intune 장치 조건부 액세스 정책(Azure AD에서는 장치 기반 조건부 액세스 정책이라고 함)을 만들 수 있습니다. Azure AD에서 지원하는 Salesforce, Box 등의 타사 엔터프라이즈 앱에 대한 조건부 액세스 정책을 설정할 수도 있습니다. 자세한 내용은 [Azure Active Directory 연결 응용 프로그램에 대한 액세스 제어를 위해 Azure Active Directory 장치 기반 조건부 액세스 정책을 설정하는 방법](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/)을 참조하세요.
+>Azure AD 관리 콘솔에서 조건부 액세스 정책을 만들 수도 있습니다. Azure AD 관리 콘솔을 사용하면 다단계 인증 등의 다른 조건부 액세스 정책 외에도 Intune 장치 조건부 액세스 정책(Azure AD에서는 장치 기반 조건부 액세스 정책이라고 함)을 만들 수 있습니다. Azure AD에서 지원하는 Salesforce, Box 등의 타사 엔터프라이즈 앱에 대한 조건부 액세스 정책을 설정할 수도 있습니다. 자세한 내용은 [Azure Active Directory 연결 응용 프로그램에 대한 액세스 제어를 위해 Azure Active Directory 장치 기반 조건부 액세스 정책을 설정하는 방법](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/)을 참조하세요.
 
  다음과 같은 흐름을 사용하여 Exchange Online에 대한 조건부 액세스 정책에 의해 장치를 허용할지 또는 차단할지를 평가합니다.  
 
@@ -185,7 +186,7 @@ Office 데스크톱 응용 프로그램은 다음을 실행하는 Exchange Onlin
 
 -   장치를 Azure Active Directory에 등록해야 합니다(이 등록은 Intune에 장치를 등록하면 자동으로 수행됨).  
 
-     도메인에 가입된 PC의 경우 Azure Active Directory에 [장치를 자동으로 등록](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/) 하도록 설정해야 합니다.  
+     도메인에 가입된 PC의 경우 Azure Active Directory에 [장치를 자동으로 등록](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) 하도록 설정해야 합니다.  
 
 -   메일 활성화 - 장치의 Exchange ActiveSync ID를 Azure Active Directory의 장치 레코드와 연결합니다(iOS 및 Android 장치에만 적용됨).  
 
@@ -215,7 +216,7 @@ Office 데스크톱 응용 프로그램은 다음을 실행하는 Exchange Onlin
 
 ##### <a name="to-enable-the-exchange-online-policy"></a>Exchange Online 정책을 사용하도록 설정하려면  
 
-1.  Configuration Manager 콘솔에서 **자산 및 준수**을 클릭합니다.  
+1.  Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.  
 
 2.  **호환성 설정**, **조건부 액세스**를 차례로 확장하고 **Exchange Online**을 클릭합니다.  
 
@@ -301,7 +302,7 @@ Office 데스크톱 응용 프로그램은 다음을 실행하는 Exchange Onlin
 
 ##### <a name="to-enable-the-exchange-on-premises-policy"></a>Exchange 온-프레미스 정책을 사용하도록 설정하려면  
 
-1.  Configuration Manager 콘솔에서 **자산 및 준수**을 클릭합니다.  
+1.  Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.  
 
 2.  **호환성 설정**, **조건부 액세스**를 차례로 확장하고 **온-프레미스 Exchange**를 클릭합니다.  
 
