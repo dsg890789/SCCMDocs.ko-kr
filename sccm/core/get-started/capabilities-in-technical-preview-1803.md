@@ -15,11 +15,11 @@ ms.assetid: 56dc4b07-5aa4-43e2-9be8-d26ae5ff5613
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: ac96927b563673311e9ca55d1f2d4edaac30adbe
-ms.sourcegitcommit: a19e12d5c3198764901d44f4df7c60eb542e765f
+ms.openlocfilehash: f3c200fe699f85c195e41fc2b395a3d710b1788a
+ms.sourcegitcommit: d3863a9b34f9925515cabe9a290a6c733e10108b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="capabilities-in-technical-preview-1803-for-system-center-configuration-manager"></a>System Center Configuration Manager용 기술 미리 보기 1803의 기능
 
@@ -146,7 +146,7 @@ Contoso는 본사(HQ)와 지사라는 두 경계 그룹이 있는 단일 주 사
 이제 [사용자 음성 피드백](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/20234866-allow-us-to-copy-information-out-of-the-asset-det)의 결과로 배포 및 배포 상태 모니터링 보기의 자산 세부 정보 창에서 복사/붙여넣기 기능을 사용할 수 있습니다.  <!--1357552-->
 
 ## <a name="scap-extensions"></a>SCAP 확장
-SCAP 확장의 시험판 버전은 SMSSETUP\TOOLS\ConfigMgrSCAPExtension\ConfigMgrExtensionsForSCAP.msi 아래에 있는 Cd.latest 폴더에 있습니다. SCAP 확장의 이 시험판 버전은 현재 지원되는 모든 버전의 Configuration Manager 현재 분기 및 LTSB 1606에 설치할 수 있습니다.
+SCAP 확장의 시험판 버전은 SMSSETUP\TOOLS\ConfigMgrSCAPExtension\ConfigMgrExtensionsForSCAP.msi 아래에 있는 Cd.latest 폴더에 있습니다. SCAP 확장의 이 시험판 버전은 현재 지원되는 모든 버전의 Configuration Manager 현재 분기 및 LTSB 1606에 설치할 수 있습니다. 자세한 내용은 [SCAP(Security Content Automation Protocol) 확장 정보](/sccm/compliance/plan-design/scap/about-scap)를 참조하세요.
 
 
 
