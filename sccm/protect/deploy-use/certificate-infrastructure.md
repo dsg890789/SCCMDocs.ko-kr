@@ -1,26 +1,27 @@
 ---
-title: "인증서 인프라 구성"
+title: 인증서 인프라 구성
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 인증서 등록을 구성하는 방법을 알아봅니다."
+description: System Center Configuration Manager에서 인증서 등록을 구성하는 방법을 알아봅니다.
 ms.custom: na
 ms.date: 07/25/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 29ae59b7-2695-4a0f-a9ff-4f29222f28b3
-caps.latest.revision: "7"
-caps.handback.revision: "0"
+caps.latest.revision: 7
+caps.handback.revision: 0
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
 ms.openlocfilehash: 9ef62bbf6269a6090f2345b10c24cc4df16c1e3b
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 03/27/2018
 ---
 # <a name="configure-certificate-infrastructure"></a>인증서 인프라 구성
 
@@ -96,7 +97,7 @@ System Center Configuration Manager에서 인증서 인프라를 구성하는 �
 
      자세한 내용은 TechNet에서 PKI 기술 라이브러리의 [Certificate Services Tools and Settings(인증서 서비스 도구 및 설정)](http://go.microsoft.com/fwlink/p/?LinkId=309015) 를 참조하세요.  
 
-8.  **https://server.contoso.com/certsrv/mscep/mscep.dll**예제 링크를 사용하여 네트워크 장치 등록 서비스가 작동 중인지 확인합니다. 기본 제공되는 네트워크 장치 등록 서비스 웹 페이지가 나타납니다. 이 웹 페이지에서는 서비스에 대해 설명하고, 네트워크 장치가 인증서 요청을 제출하는 URL을 사용한다는 것을 설명합니다.  
+8.  네트워크 장치 등록 서비스가 다음 링크를 사용하여 작동 중인지 확인합니다(예: **https://server.contoso.com/certsrv/mscep/mscep.dll**). 기본 제공되는 네트워크 장치 등록 서비스 웹 페이지가 나타납니다. 이 웹 페이지에서는 서비스에 대해 설명하고, 네트워크 장치가 인증서 요청을 제출하는 URL을 사용한다는 것을 설명합니다.  
 
  네트워크 장치 등록 서비스와 종속 항목을 구성했으므로 이제 인증서 등록 지점을 설치 및 구성할 준비가 되었습니다.
 
@@ -162,7 +163,7 @@ System Center Configuration Manager 계층에 인증서 등록 지점을 하나 
 
     -   사이트 시스템 서버에서 *<Configuration Manager 설치 경로\>*\Logs\crpsetup.log 파일 및 *<Configuration Manager 설치 경로\>*\Logs\crpmsi.log 파일을 사용합니다. 설치가 성공하면 종료 코드 0이 반환됩니다.  
 
-    -   브라우저를 사용하여 https://server1.contoso.com/CMCertificateRegistration 같은 인증서 등록 지점의 URL에 연결할 수 있는지 확인합니다. HTTP 404 설명과 함께 응용 프로그램 이름에 대한 **서버 오류** 페이지가 나타나야 합니다.  
+    -   브라우저를 사용하여 https://server1.contoso.com/CMCertificateRegistration과 같은 인증서 등록 지점의 URL에 연결할 수 있는지 확인합니다. HTTP 404 설명과 함께 응용 프로그램 이름에 대한 **서버 오류** 페이지가 나타나야 합니다.  
 
 11. 인증서 등록 지점에서 기본 사이트 서버 컴퓨터의 *<ConfigMgr 설치 경로\>*\inboxes\certmgr.box 폴더에 자동으로 만든 내보낸 루트 CA용 인증서 파일을 찾습니다. 나중에 네트워크 장치 등록 서비스를 실행하는 서버에 System Center Configuration Manager 정책 모듈을 설치할 때 안전하게 액세스할 수 있도록 보안이 유지되는 위치에 이 파일을 저장합니다.  
 
