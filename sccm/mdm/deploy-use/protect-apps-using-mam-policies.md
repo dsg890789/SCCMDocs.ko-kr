@@ -1,7 +1,7 @@
 ---
-title: "모바일 응용 프로그램 관리 정책을 사용하여 앱 보호"
+title: 모바일 응용 프로그램 관리 정책을 사용하여 앱 보호
 titleSuffix: Configuration Manager
-description: "회사 규정 준수 및 보안 정책에 맞도록 배포하는 앱의 기능을 수정합니다."
+description: 회사 규정 준수 및 보안 정책에 맞도록 배포하는 앱의 기능을 수정합니다.
 ms.custom: na
 ms.date: 11/20/2017
 ms.prod: configuration-manager
@@ -12,16 +12,16 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 28115475-e563-4e16-bf30-f4c9fe704754
-caps.latest.revision: 
-caps.handback.revision: 
+caps.latest.revision: 18
+caps.handback.revision: 0
 author: dougeby
 ms.author: dougeby
 manager: angrobe
 ms.openlocfilehash: 3365f46026178d30c9bffa5078d251186d0ffba3
-ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 03/27/2018
 ---
 # <a name="protect-apps-using-mobile-application-management-policies-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 모바일 응용 프로그램 관리 정책을 사용하여 앱 보호
 
@@ -56,7 +56,7 @@ System Center Configuration Manager 응용 프로그램 관리 정책을 사용�
 
 -   **정책으로 관리되는 앱의 링크를 가져오려면**: 배포하려는 정책으로 관리되는 앱의 URL을 앱 스토어에서 찾아서 적어 둡니다.  
 
-     예를 들어 iPad용 Microsoft Word 앱의 URL은 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**입니다.  
+     예를 들어 iPad용 Microsoft Word 앱의 URL은 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**  
 
 -   **래핑된 앱을 만들려면**: [Microsoft Intune 앱 래핑 도구를 사용한 모바일 응용 프로그램 관리를 위해 iOS 앱 준비](https://technet.microsoft.com/library/dn878028.aspx) 및 [Microsoft Intune 앱 래핑 도구를 사용한 모바일 응용 프로그램 관리를 위해 Android 앱 준비](https://technet.microsoft.com/library/mt147413.aspx) 항목의 정보에 따라 래핑된 앱을 만듭니다.  
 
