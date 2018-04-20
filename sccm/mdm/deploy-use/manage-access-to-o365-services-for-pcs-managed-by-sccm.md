@@ -1,9 +1,9 @@
 ---
-title: "관리되는 PC용 O365 서비스에 대한 액세스 관리"
+title: O365 서비스에 대한 액세스 관리
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 관리되는 PC에 대한 조건부 액세스를 구성하는 방법을 알아봅니다."
+description: System Center Configuration Manager에서 관리되는 PC의 Office 365 서비스에 대한 조건부 액세스를 구성하는 방법을 알아봅니다.
 ms.custom: na
-ms.date: 01/10/2018
+ms.date: 04/10/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,26 +12,26 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 34024741-edfa-4088-8599-d6bafc331e62
-caps.latest.revision: 
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: e1f50ea65236473f059ded6ef85c37646e929e53
-ms.sourcegitcommit: e121d8d3dd82b9f2dde2cb5206cbee602ab8e107
+caps.latest.revision: 15
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 1e02cb911397d5f1f837996318b12049d328c9c3
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-access-to-o365-services-for-pcs-managed-by-system-center-configuration-manager"></a>System Center Configuration Manager에서 관리되는 PC용 O365 서비스에 대한 액세스 관리
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-이 문서에서는 Configuration Manager에서 관리되는 PC에 대한 조건부 액세스를 구성하는 방법에 대해 설명합니다.  
+<!--1191496-->
+Configuration Manager에서 관리되는 PC의 Office 365 서비스에 대한 조건부 액세스를 구성합니다.  
 
-<!--
- >> [!Tip]  
-> This feature was first introduced in version 1602 as a [pre-release feature](/sccm/core/servers/manage/pre-release-features). Beginning with version 1702, this feature is no longer a pre-release feature.
--->
+> [!Note]  
+> Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  
+
 
 Microsoft Intune에서 등록하고 관리한 장치에 대한 조건부 액세스를 구성하는 방법에 대한 정보는 [System Center Configuration Manager에서 서비스에 대한 액세스 관리](../../protect/deploy-use/manage-access-to-services.md)를 참조하세요. 해당 문서에서는 도메인에 가입되었지만 규정 준수가 평가되지 않은 장치에 대해서도 다룹니다.
 
@@ -95,15 +95,18 @@ Microsoft Intune에서 등록하고 관리한 장치에 대한 조건부 액세�
     - **장치에서 BitLocker를 사용하도록 설정해야 합니다.**
     - **장치에서 보안 부팅을 사용하도록 설정해야 합니다.** 
     - **장치에서 코드 무결성을 사용하도록 설정해야 합니다.**
-    - **장치에서 맬웨어 방지 조기 실행을 사용하도록 설정해야 합니다.**
+    - **장치에서 맬웨어 방지 조기 실행을 사용하도록 설정해야 합니다.**  
 
->[!Tip]
-> 1710 버전에서부터 장치 상태 증명에 대한 조건부 액세스 조건이 시험판 기능이 되었습니다. 이 기능을 사용하려면 [시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요. 
+    >[!Tip]  
+    > 장치 상태 증명에 대한 조건부 액세스 조건은 1710 버전에 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 도입되었습니다. 버전 1802 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.<!--1235616-->  
+
+    > [!Note]  
+    > Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  
 
 ### <a name="step-2-evaluate-the-effect-of-conditional-access"></a>2단계. 조건부 액세스의 영향 평가  
- 조건부 액세스 규정 준수 보고서를 실행합니다. 이 보고서는 모니터링 섹션에서 보고서 > 호환 및 설정 관리에서 찾을 수 있습니다. 이 보고서는 모든 장치에 대한 준수 상태를 표시합니다.  호환되지 않음으로 보고되는 장치는 Exchange Online 및 SharePoint Online에 액세스하지 못하도록 차단됩니다.  
+ **조건부 액세스 규정 준수 보고서**를 실행합니다. 이 보고서는 **모니터링** 작업 영역의 **보고서** > **준수 및 설정 관리**에서 찾을 수 있습니다. 이 보고서는 모든 장치에 대한 준수 상태를 표시합니다. 호환되지 않음으로 보고되는 장치는 Exchange Online 및 SharePoint Online에 액세스하지 못하도록 차단됩니다.  
 
- ![CA&#95;준수&#95;보고서](media/CA_compliance_report.png)  
+ ![Configuration Manager 콘솔, 모니터링 작업 영역, 보고, 보고서, 준수 및 설정 관리: 조건부 액세스 규정 준수 보고서](media/CA_compliance_report.png)  
 
 ### <a name="configure-active-directory-security-groups"></a>Active Directory 보안 그룹 구성  
  정책 유형에 따라 사용자 그룹을 대상으로 조건부 액세스 정책을 구성합니다. 이러한 그룹에는 정책의 대상으로 지정하거나 정책에서 제외되는 사용자가 포함됩니다. 정책의 대상이 사용자인 경우 서비스에 액세스하기 위해 해당 사용자가 사용하는 각 장치는 호환 가능해야 합니다.  
@@ -119,7 +122,7 @@ Microsoft Intune에서 등록하고 관리한 장치에 대한 조건부 액세�
 
      조건부 액세스 정책의 대상인 그룹만이 평가됩니다.  
 
-### <a name="step-3--create-a-conditional-access-policy-for-exchange-online-and-sharepoint-online"></a>3단계:  Exchange Online 및 SharePoint Online에 대한 조건부 액세스 정책 만들기  
+### <a name="step-3-create-a-conditional-access-policy-for-exchange-online-and-sharepoint-online"></a>3단계: Exchange Online 및 SharePoint Online에 대한 조건부 액세스 정책 만들기  
 
 1.  Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.  
 

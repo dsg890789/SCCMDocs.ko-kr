@@ -3,7 +3,7 @@ title: 새 버전 1802
 titleSuffix: Configuration Manager
 description: Configuration Manager 1802 버전에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
 ms.custom: na
-ms.date: 03/22/2018
+ms.date: 04/11/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,20 +12,27 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 5bd637b1-d7a1-411b-877a-c7aae9741173
-author: mestew
-ms.author: mstewart
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 9c9ff975a58e7c56375fa7740a0a5bb6ebfa6341
-ms.sourcegitcommit: 27da4be015f1496b7b89ebddb517a2685f1ecf74
+ms.openlocfilehash: a667c34dc39ef0578ff840e5603080b09c67c63c
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-in-version-1802-of-system-center-configuration-manager"></a>System Center Configuration Manager 1802 버전의 새로운 기능
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 Configuration Manager의 현재 분기에 대한 1802 업데이트는 콘솔 내 업데이트로 사용할 수 있습니다. 1702, 1706 또는 1710 버전을 실행하는 사이트에서 이 업데이트를 적용합니다. <!-- baseline only statement: -->새 사이트를 설치할 때 기준 버전으로 사용할 수도 있습니다.
+
+새 기능 외에 이 릴리스에는 버그 수정과 같은 추가 변경 사항도 포함되어 있습니다. 자세한 내용은 [System Center Configuration Manager 현재 분기, 버전 1802의 변경 내용 요약](https://support.microsoft.com/help/4101375)을 참조하세요.
+
+<!--
+The following additional updates to this release are also now available:
+- [Update rollup for System Center Configuration Manager current branch, version 1710](https://support.microsoft.com/help/4057517)
+-->
 
 > [!TIP]  
 > 새 사이트를 설치하려면 기준 버전의 Configuration Manager를 사용해야 합니다.  
@@ -221,7 +228,7 @@ Windows 10 클라이언트에서 [Microsoft Edge](https://technet.microsoft.com/
 
 ### <a name="phased-deployments-for-task-sequences"></a>작업 순서에 대한 단계별 배포
 <!--1356837-->
- 단계별 배포는 [시험판 기능](/sccm/core/servers/manage/pre-release-features)입니다. 단계별 배포는 여러 컬렉션에서 작업 순서가 조정된 순차적 출시를 자동화합니다. 기본적으로 두 단계의 [단계별 배포를 만들거나](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence) 여러 단계를 수동으로 구성할 수 있습니다. 작업 순서의 단계별 배포는 PXE 또는 미디어 설치를 지원하지 않습니다.
+ 단계별 배포는 [시험판 기능](/sccm/core/servers/manage/pre-release-features)입니다. 단계별 배포는 여러 컬렉션에서 작업 순서가 조정된 순차적 출시를 자동화합니다. 기본적으로 두 단계의 [단계별 배포를 만들거나](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence) 여러 단계를 수동으로 구성할 수 있습니다. 작업 순서의 단계적 배포는 PXE 또는 미디어 설치를 지원하지 않습니다.
 
 
 

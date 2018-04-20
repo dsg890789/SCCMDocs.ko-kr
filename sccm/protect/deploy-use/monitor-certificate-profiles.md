@@ -1,26 +1,27 @@
 ---
-title: "인증서 프로필 모니터링"
+title: 인증서 프로필 모니터링
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 인증서 프로필의 준수 상태를 모니터링하는 방법을 알아봅니다."
+description: System Center Configuration Manager 인증서 프로필의 준수 상태를 모니터링하는 방법을 알아봅니다.
 ms.custom: na
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 98feaa06-64b1-4e86-a122-93017c97cd4f
-caps.latest.revision: "7"
-caps.handback.revision: "0"
+caps.latest.revision: 7
+caps.handback.revision: 0
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: eaefae0c51af91e4419ef15cf02b8250c3d2efd8
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 6b0ae2042c1c463bce53c0c1a7438cc7102cd66e
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-monitor-certificate-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 인증서 프로필을 모니터링하는 방법
 
@@ -61,7 +62,7 @@ SCEP 인증서 준수 여부를 모니터링하려면 [보고서](#view-complian
     |0x00000004|등록이 지연되고 있습니다.|  
     |0x00000010|오류가 발생했습니다.|  
     |0x00000020|등록 상태를 알 수 없습니다.|  
-    |0x00000040|상태 정보를 건너뛰었습니다. 이러한 현상은 "http://msdn.microsoft.com/ko-kr/windows/ms721572" \l "_security_certification_authority_gly" 인증 기관이 유효하지 않거나 모니터링용으로 선택되지 않은 경우 발생할 수 있습니다.|  
+    |0x00000040|상태 정보를 건너뛰었습니다. 이러한 현상은 하이퍼링크 "http://msdn.microsoft.com/windows/ms721572" \l "_security_certification_authority_gly" 인증 기관이 유효하지 않거나 모니터링용으로 선택되지 않은 경우 발생할 수 있습니다.|  
     |0x00000100|등록이 거부되었습니다.|  
 
 ##  <a name="view-compliance-results-by-using-reports"></a>보고서를 사용하여 준수 결과 보기

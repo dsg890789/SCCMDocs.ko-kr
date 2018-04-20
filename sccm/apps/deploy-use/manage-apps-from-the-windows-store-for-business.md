@@ -1,25 +1,26 @@
 ---
-title: "비즈니스용 Microsoft Store에서 앱 관리"
+title: 비즈니스용 Microsoft Store에서 앱 관리
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager를 사용하여 비즈니스용 Microsoft Store에서 앱을 관리 및 배포합니다."
+description: System Center Configuration Manager를 사용하여 비즈니스용 Microsoft Store에서 앱을 관리 및 배포합니다.
 ms.custom: na
 ms.date: 12/29/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-app
+ms.technology:
+- configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8cdb22a6-72d7-41f5-9bed-c098b1bcf675
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: aczechowski
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: 15644a8c1acdbde85c7ca194a72a10c3cc2c0fcc
-ms.sourcegitcommit: f1535281b2c3fecff773b722c3f7590bf6ba10a0
+ms.openlocfilehash: 89bb52b806c99395bca14be34d06611174823a3c
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-apps-from-the-microsoft-store-for-business-with-system-center-configuration-manager"></a>System Center Configuration Manager로 비즈니스용 Microsoft Store에서 앱 관리
 [비즈니스용 Microsoft Store](https://www.microsoft.com/business-store)에서 조직을 위한 Windows 앱을 찾아서 개별적으로 또는 대량으로 구매할 수 있습니다. 스토어를 Configuration Manager에 연결하면 구매한 앱 목록을 Configuration Manager와 동기화할 수 있습니다. 동기화한 후에는 Configuration Manager 콘솔에서 앱 목록을 보고 다른 앱을 배포하는 것과 마찬가지로 배포할 수 있습니다.
@@ -99,7 +100,7 @@ Configuration Manager에서는 Configuration Manager 클라이언트를 사용�
 2.  **키** 아래의 목록에서 기간을 선택하고 **저장**을 클릭합니다. 이 작업은 새 클라이언트 키를 만듭니다. 비즈니스용 Microsoft Store를 Configuration Manager에 성공적으로 등록할 때까지 이 페이지에서 이동하지 마세요.
 
 **비즈니스용 Microsoft Store에서 Configuration Manager를 저장소 관리 도구로 구성**
-1.  [https://businessstore.microsoft.com/en-us/managementtools](https://businessstore.microsoft.com/en-us/managementtools)를 열고 메시지가 표시되면 로그인합니다.
+1.  [https://businessstore.microsoft.com/managementtools](https://businessstore.microsoft.com/managementtools)를 열고 메시지가 표시되면 로그인합니다.
 2.  필요한 경우 사용 약관에 동의합니다.
 3.  **관리 도구**에서 **관리 도구 추가**를 클릭합니다.
 4.  **이름별 도구 검색**에서 이전에 AAD에서 만든 응용 프로그램의 이름을 입력한 후 **추가**를 클릭합니다.
@@ -151,6 +152,6 @@ Configuration Manager에서는 Configuration Manager 클라이언트를 사용�
 
 온라인 앱을 배포한 후에는 해당 앱에 대한 모든 업데이트가 Microsoft Store에서 직접 제공됩니다. 또한 Configuration Manager는 온라인 앱의 버전 준수를 확인하지 않으며 Windows는 설치된 앱을 보고합니다.  
 
-Configuration Manager 클라이언트를 사용하여 Windows 10 장치에 오프라인 앱을 배포할 때 사용자가 Configuration Manager 배포에 외부의 응용 프로그램을 업데이트할 수 없습니다. 오프라인 앱에 대한 업데이트의 제어는 학급과 같은 다중 사용자 환경에서 특히 중요합니다. [그룹 정책](https://docs.microsoft.com/en-us/windows/configuration/stop-employees-from-using-microsoft-store#a-href-idblock-store-group-policyablock-microsoft-store-using-group-policy)을 사용하여 Microsoft Store를 사용하지 않도록 설정할 수 있습니다. 
+Configuration Manager 클라이언트를 사용하여 Windows 10 장치에 오프라인 앱을 배포할 때 사용자가 Configuration Manager 배포에 외부의 응용 프로그램을 업데이트할 수 없습니다. 오프라인 앱에 대한 업데이트의 제어는 학급과 같은 다중 사용자 환경에서 특히 중요합니다. [그룹 정책](https://docs.microsoft.com/windows/configuration/stop-employees-from-using-microsoft-store#a-href-idblock-store-group-policyablock-microsoft-store-using-group-policy)을 사용하여 Microsoft Store를 사용하지 않도록 설정할 수 있습니다. 
 
 비즈니스용 Microsoft Store 관리자가 오프라인 앱을 구매한 후에 스토어를 통해 사용자에게 앱을 게시하지 마십시오. 이렇게 구성하면 사용자가 온라인으로 설치하거나 업데이트할 수 없습니다. 사용자가 Configuration Manager를 통해서만 오프라인 앱 업데이트를 수신하게 됩니다. 

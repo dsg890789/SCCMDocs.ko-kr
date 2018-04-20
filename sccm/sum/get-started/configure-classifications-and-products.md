@@ -1,22 +1,23 @@
 ---
-title: "동기화할 분류 및 제품 구성"
+title: 분류 및 제품 구성
 titleSuffix: Configuration Manager
-description: "다음 단계에 따라 Configuration Manager 콘솔에서 동기화할 분류 및 제품을 구성하세요."
-keywords: 
-author: dougeby
-ms.author: dougeby
-manager: angrobe
-ms.date: 11/20/2017
+description: 다음 단계에 따라 Configuration Manager 콘솔에서 동기화할 소프트웨어 업데이트 분류 및 제품을 구성하세요.
+keywords: ''
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.date: 04/10/2018
 ms.topic: article
 ms.prod: configuration-manager
-ms.service: 
-ms.technology: configmgr-sum
+ms.service: ''
+ms.technology:
+- configmgr-sum
 ms.assetid: 5ddde4e6-d553-4182-b752-6bc8b4a26745
-ms.openlocfilehash: f36ff74b794e57b51742c40d10bd25a9cb4a13a5
-ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
+ms.openlocfilehash: 9ba0872b1d2e4ef5dd027df3f7c16a6b3a94e9ac
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 04/16/2018
 ---
 #  <a name="configure-classifications-and-products-to-synchronize"></a>동기화할 분류 및 제품 구성  
 
@@ -53,9 +54,11 @@ ms.lasthandoff: 11/21/2017
     >       
 
     > [!NOTE]    
-    > Configuration Manager 버전 1706부터 **Microsoft Surface 드라이버 및 펌웨어 업데이트 포함** 확인란을 선택하여 Microsoft Surface 드라이버를 동기화할 수 있습니다. Surface 드라이버를 성공적으로 동기화하려면 모든 소프트웨어 업데이트 지점에서 Windows Server 2016을 실행해야 합니다. Surface 드라이버를 사용하도록 설정한 후 Windows Server 2012를 실행하는 컴퓨터에서 소프트웨어 업데이트 지점을 사용하도록 설정하면 드라이버 업데이트에 대한 검색 결과가 정확하지 않습니다. 이에 따라 Configuration Manager 콘솔 및 Configuration Manager 보고서에서 잘못된 준수 데이터가 표시됩니다.  
-    > 
-    > **Microsoft Surface 드라이버 및 펌웨어 업데이트 포함** 확인란은 Configuration Manager 버전 1710에서 항상 사용할 수 있습니다. 그러나 이는 Configuration Manager 버전 1706의 시험판 기능이며 사용할 수 있도록 설정해야 합니다. 시험판 기능은 프로덕션 환경에서의 초기 테스트를 위해 현재 분기에 포함된 기능입니다. 이러한 기능은 완전하게 지원되지만 아직 개발 중인 상태이므로 시험판 범주에서 벗어날 때까지는 변경될 수 있습니다. 자세한 내용은 [업데이트에서 시험판 기능 사용](https://docs.microsoft.com/sccm/core/servers/manage/install-in-console-updates#bkmk_prerelease)을 참조하세요.
+    > Configuration Manager 버전 1706부터 **Microsoft Surface 드라이버 및 펌웨어 업데이트 포함** 확인란을 선택하여 Microsoft Surface 드라이버를 동기화할 수 있습니다.<!--1098490--> Surface 드라이버를 성공적으로 동기화하려면 모든 소프트웨어 업데이트 지점에서 Windows Server 2016을 실행해야 합니다. Surface 드라이버를 사용하도록 설정한 후 Windows Server 2012를 실행하는 컴퓨터에서 소프트웨어 업데이트 지점을 사용하도록 설정하면 드라이버 업데이트에 대한 검색 결과가 정확하지 않습니다. 이에 따라 Configuration Manager 콘솔 및 Configuration Manager 보고서에서 잘못된 준수 데이터가 표시됩니다.  
+    >  
+    > 이 기능은 버전 1706에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 소개되었습니다. 버전 1710 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.  
+    >  
+    > Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  
 
 5.  **제품** 탭에서 소프트웨어 업데이트를 동기화할 제품을 지정한 다음 **닫기**를 클릭합니다.  
 

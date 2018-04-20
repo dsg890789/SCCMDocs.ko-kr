@@ -2,7 +2,7 @@
 title: 클라우드 관리 게이트웨이에 대한 계획
 titleSuffix: Configuration Manager
 description: 인터넷 기반 클라이언트의 관리를 간소화하도록 CMG(클라우드 관리 게이트웨이)를 계획하고 설계합니다.
-ms.date: 03/22/2018
+ms.date: 04/10/2018
 ms.prod: configuration-manager
 ms.technology:
 - configmgr-client
@@ -10,20 +10,26 @@ ms.assetid: 2dc8c9f1-4176-4e35-9794-f44b15f4e55f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: dabc248c1788ecad4d7b25c0a1f592e0ddeef826
-ms.sourcegitcommit: a19e12d5c3198764901d44f4df7c60eb542e765f
+ms.openlocfilehash: 2b207ffe95a078c955817d9251da3adbdf4de10d
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="plan-for-the-cloud-management-gateway-in-configuration-manager"></a>Configuration Manager에서 클라우드 관리 게이트웨이 계획
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
-
+ 
+<!--1101764-->
 CMG(클라우드 관리 게이트웨이)는 인터넷에서 Configuration Manager 클라이언트를 관리할 수 있는 간단한 방법을 제공합니다. CMG를 클라우드 서비스로 Microsoft Azure에 배포하면 추가 인프라 없이 인터넷에서 로밍하는 기존 클라이언트를 관리할 수 있습니다. 또한 온-프레미스 인프라를 인터넷에 노출할 필요도 없습니다. 
 
 > [!Tip]  
-> 이 기능은 버전 1610에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 소개되었습니다. 버전 1802 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.
+> 이 기능은 버전 1610에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 소개되었습니다. 버전 1802 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.  
+
+
+> [!Note]  
+> Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  
+
 
 필수 구성 요소를 설정한 후 Configuration Manager 콘솔에서 CMG를 만드는 작업은 다음 세 단계로 구성됩니다.
 1. CMG 클라우드 서비스를 Azure에 배포합니다.
@@ -186,6 +192,7 @@ Fourth Coffee는 시애틀 본사의 온-프레미스 데이터 센터에 중앙
 | 엔드포인트 보호     | ![지원됨](media/green_check.png) |
 | 하드웨어 및 소프트웨어 인벤토리     | ![지원됨](media/green_check.png) |
 | 클라이언트 상태 및 알림     | ![지원됨](media/green_check.png) |
+| 스크립트 실행     | ![지원됨](media/green_check.png) |
 | 호환성 설정     | ![지원됨](media/green_check.png) |
 | 클라이언트 설치</br>(Azure AD 통합 포함)     | ![지원됨](media/green_check.png)  (1706) |
 | 소프트웨어 배포(장치 대상)     | ![지원됨](media/green_check.png) |

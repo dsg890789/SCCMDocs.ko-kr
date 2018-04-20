@@ -3,7 +3,7 @@ title: 콘솔 내 업데이트
 titleSuffix: Configuration Manager
 description: Microsoft 클라우드에서 Configuration Manager에 업데이트 설치
 ms.custom: na
-ms.date: 03/28/2018
+ms.date: 04/10/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,14 +13,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c14a3607-253b-41fb-8381-ae2d534a9022
 caps.latest.revision: 36
-author: mestew
-ms.author: mstewart
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 054bbd8e7b1dd3f5d565afe60eb7e3379cc7a9ee
-ms.sourcegitcommit: aed99ba3c5e9482199cb3fc5c92f6f3a160cb181
+ms.openlocfilehash: 9924346ccbd862aa4462075a3307b4ec40b955bc
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-in-console-updates-for-system-center-configuration-manager"></a>System Center Configuration Manager의 콘솔 내 업데이트 설치
 
@@ -369,10 +369,36 @@ Configuration Manager는 Microsoft 클라우드 서비스와 동기화하여 업
 
 사용 가능한 기능 및 해당 상태를 보려면 콘솔에서 **관리** > **업데이트 및 서비스** > **기능**으로 이동합니다.
 
-기능이 선택 사항이 아닌 경우 해당 기능은 자동으로 설치되며 **기능** 노드에 표시되지 않습니다.  
+옵션이 아닌 기능은 자동으로 설치됩니다. **기능** 노드에 나타나지 않습니다.  
+
+> [!Important]  
+> 다중 사이트 계층에서는 중앙 관리 사이트에서만 선택적 또는 시험판 기능을 활성화할 수 있습니다. 이 동작은 계층 전체에 충돌이 발생하지 않도록 합니다. <!--507197-->
+ 
+
+새 기능 또는 시험판 기능을 사용하도록 설정하면 Configuration Manager HMAN(계층 구조 관리자)은 해당 기능을 사용할 수 있게 되기 전에 변경 내용을 처리해야 합니다. 변경 내용 처리는 대개 즉시 이루어지지만, HMAN 처리 주기에 따라 완료하는 데 최대 30분까지 걸릴 수 있습니다. 변경 내용이 처리된 후 콘솔을 다시 시작해야만 해당 기능과 관련된 새 노드를 볼 수 있습니다.
+
+#### <a name="list-of-optional-features"></a>옵션 기능 목록
+다음은 Configuration Manager 최신 버전의 옵션 기능입니다.<!--505213-->  
+- [관리되는 PC에 대한 조건부 액세스](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm)  <!--1191496-->
+- [Passport for Work](/sccm/protect/deploy-use/windows-hello-for-business-settings)(*비즈니스용 Windows Hello*라고도 함) <!--1245704-->
+- [Windows 10용 VPN](/sccm/protect/deploy-use/vpn-profiles) <!--1283610-->
+- [Windows Defender Exploit Guard 정책](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy) <!--1355468-->
+- [Microsoft OMS(Operations Management Suite) 커넥터](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite) <!--1258052-->
+- [PFX 만들기](/sccm/protect/deploy-use/introduction-to-certificate-profiles) <!--1321368-->
+- [클라이언트 피어 캐시](/sccm/core/plan-design/hierarchy/client-peer-cache) <!--1101436-->
+- [데이터 웨어하우스 서비스 지점](/sccm/core/servers/manage/data-warehouse) <!--1277922-->
+- [클라우드 관리 게이트웨이](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway) <!--1101764-->
+- [Surface 드라이버 업데이트](/sccm/sum/get-started/configure-classifications-and-products) <!--1098490-->
+- [작업 순서 콘텐츠 사전 캐싱](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content) <!--1021244-->
+- [작업 순서 실행 단계](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#add-child-task-sequences-to-a-task-sequence) <!--1261338-->
+- [스크립트 만들기 및 실행](/sccm/apps/deploy-use/create-deploy-scripts) <!--1236459-->
+- [조건부 액세스의 준수 정책에 대한 장치 상태 증명 평가](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm) <!--1235616-->
+- [장치당 사용자에 대한 응용 프로그램 요청 승인](/sccm/apps/deploy-use/deploy-applications#specify-deployment-settings) <!--1357015-->  
 
 
-새 기능 또는 시험판 기능을 사용하도록 설정하면 Configuration Manager HMAN(계층 구조 관리자)은 해당 기능을 사용할 수 있게 되기 전에 변경 내용을 처리해야 합니다. 변경 내용 처리는 대개 즉시 이루어지지만, HMAN 처리 주기에 따라 완료하는 데 최대 30분까지 걸릴 수 있습니다. 변경 내용이 처리된 후 콘솔을 다시 시작해야만 해당 기능과 관련된 새 UI를 볼 수 있습니다.
+> [!Tip]  
+> 사용하려면 동의가 필요한 기능에 대한 자세한 내용은 [시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요.  
+> 기술 미리 보기 분기에만 제공되는 기능에 대한 자세한 내용은 [기술 미리 보기](/sccm/core/get-started/technical-preview)를 참조하세요.
 
 
 

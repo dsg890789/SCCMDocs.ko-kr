@@ -1,9 +1,9 @@
 ---
-title: 운영 체제를 업그레이드하는 작업 순서 만들기
+title: OS 업그레이드 작업 순서 만들기
 titleSuffix: Configuration Manager
 description: 작업 순서를 사용하여 자동으로 Windows 7 이상에서 Windows 10으로 업그레이드
 ms.custom: na
-ms.date: 03/22/2018
+ms.date: 04/10/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,11 +16,11 @@ caps.latest.revision: 12
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 91d3bf5b1488eb7eac52c7426e4bdeeb92ff43b8
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 48a5e7aa381924e3c0ad052833c9588e3dffa4f5
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-task-sequence-to-upgrade-an-operating-system-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 운영 체제를 업그레이드하는 작업 순서 만들기
 
@@ -87,9 +87,16 @@ Configuration Manager에서 작업 순서를 사용하여 대상 컴퓨터의 �
 
 
 ## <a name="configure-pre-cache-content"></a>사전 캐시 콘텐츠 구성
-작업 순서의 사용 가능한 배포에 대해 사전 캐시 기능을 사용하면 사용자가 작업 순서를 설치하기 전에 클라이언트에서 관련 OS 업그레이드 패키지 콘텐츠를 다운로드할 수 있습니다.
+<!--1021244-->
+작업 순서의 사용 가능한 배포에 대해 사전 캐시 기능을 사용하면 사용자가 작업 순서를 설치하기 전에 클라이언트에서 관련 OS 업그레이드 패키지 콘텐츠를 다운로드할 수 있습니다.  
+
 > [!TIP]  
-> 이 기능은 버전 1702에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 소개되었습니다. 버전 1706 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.
+> 이 기능은 버전 1702에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 소개되었습니다. 버전 1706 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.  
+
+
+> [!Note]  
+> Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  
+
 
 예를 들어 모든 사용자를 위한 단일 내부 업그레이드 작업 순서만 원하거나 많은 아키텍처 및 언어를 포함할 수 있습니다. 이전 버전에서 사용자가 소프트웨어 센터에서 사용 가능한 작업 순서 배포를 설치할 때 콘텐츠가 다운로드를 시작합니다. 이 지연 때문에 설치를 시작할 준비가 되기 전에 추가 시간이 필요합니다. 또한 작업 순서에서 참조되는 모든 콘텐츠가 다운로드됩니다. 이 콘텐츠에는 모든 언어 및 아키텍처에 대한 운영 체제 업그레이드 패키지가 포함됩니다. 각 업그레이드 패키지의 크기가 약 3GB이면 전체 콘텐츠는 더 큽니다.
 

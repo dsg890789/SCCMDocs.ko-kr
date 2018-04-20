@@ -3,7 +3,7 @@ title: 데이터 웨어하우스
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에 대한 데이터 웨어하우스 서비스 지점 및 데이터베이스
 ms.custom: na
-ms.date: 03/22/2018
+ms.date: 04/10/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,22 +13,28 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: aaf43e69-68b4-469a-ad58-9b66deb29057
 caps.latest.revision: ''
-author: mestew
-ms.author: mstewart
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 83bfc0e3d7bdf1ff8718c7c211c897e37b21a06b
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 02a3c672c95587aeecd41e804b32981104896923
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 #  <a name="the-data-warehouse-service-point-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 데이터 웨어하우스 서비스 지점
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-버전 1702부터 데이터 웨어하우스 서비스 지점을 사용하여 Configuration Manager 배포에 대한 장기 기록 데이터를 저장하고 보고할 수 있습니다.
+<!--1277922-->
+데이터 웨어하우스 서비스 지점을 사용하여 Configuration Manager 배포에 대한 장기 기록 데이터를 저장하고 보고할 수 있습니다.
 
 > [!TIP]
-> 이 기능은 버전 1702에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 소개되었습니다. 버전 1706 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.
+> 이 기능은 버전 1702에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 소개되었습니다. 버전 1706 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.  
+
+
+> [!Note]  
+> Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  
+
 
 데이터 웨어하우스는 최대 2TB의 데이터를 지원하며 변경 내용 추적을 위한 타임스탬프가 있습니다. 데이터 저장은 Configuration Manager 사이트 데이터베이스에서 데이터 웨어하우스 데이터베이스로의 자동화된 동기화를 통해 수행됩니다. 이 정보는 보고 서비스 지점에서 액세스할 수 있습니다. 데이터 웨어하우스 데이터베이스와 동기화된 데이터는 3년 동안 보존됩니다. 주기적으로 기본 제공 작업은 3년보다 오래된 데이터를 제거합니다.
 
@@ -168,7 +174,7 @@ ms.lasthandoff: 03/23/2018
 
 
 ## <a name="data-warehouse-dataflow"></a>데이터 웨어하우스 데이터 흐름   
-![Datawarehouse_flow](./media/datawarehouse.png)
+![데이터 웨어하우스의 사이트 구성 요소 간의 논리적 데이터 흐름을 보여 주는 다이어그램](./media/datawarehouse.png)
 
 **데이터 저장 및 동기화**
 
