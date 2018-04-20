@@ -1,39 +1,42 @@
 ---
-title: "VPN 프로필"
+title: VPN 프로필
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager의 VPN 프로필을 사용하여 VPN 설정을 조직의 사용자에게 배포하는 방법을 알아봅니다."
+description: System Center Configuration Manager의 VPN 프로필을 사용하여 VPN 설정을 조직의 사용자에게 배포하는 방법을 알아봅니다.
 ms.custom: na
-ms.date: 11/27/2016
+ms.date: 04/10/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c0f094f1-852e-4606-91db-97846d8f0772
-caps.latest.revision: "6"
-caps.handback.revision: "0"
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.openlocfilehash: 02d9178dbfe8cb00d38367d0dfcb2f521d4c26a0
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+caps.latest.revision: 6
+caps.handback.revision: 0
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: d30e7cc834f1693f2cbcf2db840d650421062a19
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vpn-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager의 VPN 프로필
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
+<!--1283610-->
+조직의 사용자에게 VPN 설정을 배포하려면 Configuration Manager에서 VPN 프로필을 사용합니다. 이러한 설정을 배포하여 최종 사용자가 회사 네트워크에 있는 리소스에 연결하는 데 필요한 노력을 최소화할 수 있습니다.  
 
-System Center Configuration Manager(ConfigMgr 또는 SCCM이라고도 함)의 VPN 프로필을 사용하여 VPN 설정을 조직의 사용자에게 배포할 수 있습니다. 이러한 설정을 배포하여 최종 사용자가 회사 네트워크에 있는 리소스에 연결하는 데 필요한 노력을 최소화할 수 있습니다.  
+ 예를 들어 기업 네트워크에서 파일 공유에 연결하는 데 필요한 설정을 사용하여 모든 Windows 10 장치를 구성하려고 할 수 있습니다. 기업 네트워크에 연결하는 데 필요한 설정을 사용하여 VPN 프로필을 만들 수 있습니다. 그런 다음, Windows 10을 실행하는 장치를 사용하는 모든 사용자에게 이 프로필을 배포합니다. 이러한 사용자에게 이용 가능한 네트워크 목록에 대한 VPN 연결이 표시되어 간편하게 연결할 수 있습니다.  
 
- 예를 들어, 기업 네트워크의 파일 공유에 연결하는 데 필요한 설정을 사용하여 Windows RT 운영 체제를 실행하는 모든 장치를 프로비전하려고 합니다. 기업 네트워크에 연결하는 데 필요한 설정이 포함된 VPN 프로필을 만든 다음 이 프로필을 조직 계층에서 Windows RT를 실행하는 장치를 가진 모든 사용자에게 배포할 수 있습니다. Windows RT 장치 사용자는 사용 가능한 네트워크의 목록에서 VPN 연결을 확인하고 최소의 노력으로 이 네트워크에 연결할 수 있습니다.  
+ VPN 프로필을 만들 경우 광범위한 보안 설정을 포함할 수 있습니다. 이러한 설정에는 사용자가 Configuration Manager 인증서 프로필을 사용하여 프로비전하는 서버 유효성 검사 및 클라이언트 인증용 인증서가 포함됩니다. 자세한 내용은 [인증서 프로필](introduction-to-certificate-profiles.md)을 참조하세요.  
 
- VPN 프로필을 만들 때 System Center Configuration Manager 인증서 프로필을 사용하여 프로비전한 서버 유효성 검사 및 클라이언트 인증용 인증서를 포함한 다양한 보안 설정을 포함할 수 있습니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](introduction-to-certificate-profiles.md)을 참조하세요.  
+> [!Note]  
+> Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  
 
- 아래 섹션에서는 Configuration Manager를 사용하는 경우 VPN 프로필에서 구성할 수 있는 장치를 설명합니다.
 
  Microsoft Intune과 함께 Configuration Manager를 사용하는 경우 구성할 수 있는 장치를 검토하려면 [모바일 장치의 VPN 프로필](/sccm/mdm/deploy-use/create-vpn-profiles)을 참조하세요.  
 

@@ -1,26 +1,27 @@
 ---
-title: "App-V 가상 응용 프로그램 배포"
+title: App-V 가상 응용 프로그램 배포
 titleSuffix: Configuration Manager
-description: "가상 응용 프로그램을 만들고 배포할 때 고려해야 할 사항을 확인합니다."
+description: 가상 응용 프로그램을 만들고 배포할 때 고려해야 할 사항을 확인합니다.
 ms.custom: na
-ms.date: 02/16/2017
+ms.date: 03/12/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-app
+ms.technology:
+- configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ddcad9f2-a542-4079-83ca-007d7cb44995
-caps.latest.revision: "11"
-caps.handback.revision: "0"
+caps.latest.revision: 11
+caps.handback.revision: 0
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: bf324f458c37fa137e24179eb4455fcbe75c855d
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+ms.openlocfilehash: 99c259a20a7e9c9f34d7b355e6fea5d4c6861392
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-app-v-virtual-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 App-V 가상 응용 프로그램 배포
 
@@ -46,7 +47,7 @@ Microsoft App-V(Application Virtualization)를 사용하여 응용 프로그램�
 
 -   응용 프로그램을 시퀀스할 때 Configuration Manager에서 액세스할 수 있는 위치에 패키지를 저장해야 합니다. 그런 다음 이 가상 응용 프로그램이 포함된 응용 프로그램 배포를 만들 수 있습니다.  
 
--   Configuration Manager는 App-V의 공유 읽기 전용 캐시 기능 사용을 지원하지 않습니다.  
+-   Configuration Manager는 App-V 4.6의 공유 읽기 전용 캐시 기능 사용을 지원하지 않습니다.  
 
 -   Configuration Manager는 App-V 5의 공유 콘텐츠 저장소 기능을 지원합니다.  
 
@@ -66,7 +67,7 @@ Microsoft App-V(Application Virtualization)를 사용하여 응용 프로그램�
      또한 기술 자료 문서 [2645225](http://go.microsoft.com/fwlink/p/?LinkId=237322)에 설명된 핫픽스를 사용하여 App-V 4.6 SP1 클라이언트를 업데이트해야 가상 응용 프로그램을 배포할 수 있습니다.  
 
 -   **App-V 5, App-V 5.0 SP1, App-V 5.0 SP2, App-V 5.0 SP3 및 App-V 5.1**: App-V 5.0 SP2의 경우 [핫픽스 패키지 5](https://support.microsoft.com/en-us/kb/2963211)를 설치하거나 App-V 5.0 SP3을 사용해야 합니다.  
--   **App-V 5.2**: Windows 10 Enterprise(Anniversary Update 이상 버전)에서 기본적으로 제공됩니다.
+-   **App-V 5.2**: 이는 Windows 10 Education(1607 이상), Windows 10 Enterprise(1607 이상), Windows Server 2016에 기본 제공됩니다.
 
 Windows 10의 App-V에 대한 자세한 내용은 다음 항목을 참조하세요.
 
@@ -83,7 +84,7 @@ Windows 10의 App-V에 대한 자세한 내용은 다음 항목을 참조하세�
 
 3.   **배포**: 배포는 App-V 응용 프로그램을 Configuration Manager 배포 지점에서 사용할 수 있게 만드는 프로세스입니다.
 
-4.   **배포**: 배포(Deployment)는 응용 프로그램을 클라이언트 컴퓨터에서 사용할 수 있게 만드는 프로세스입니다. App-V 전체 인프라에서는 이 프로세스를 스트리밍이라고 합니다.  
+4.   **배포**: 배포(Deployment)는 응용 프로그램을 클라이언트 컴퓨터에서 사용할 수 있게 만드는 프로세스입니다. App-V 전체 인프라에서는 이 프로세스를 게시 및 스트리밍이라고 합니다.  
 
 ##  <a name="configuration-manager-virtual-application-delivery-methods"></a>Configuration Manager의 가상 응용 프로그램 제공 방법  
 Configuration Manager에서는 스트리밍 배달과 로컬 배달(다운로드 및 실행)의 두 가지 방법으로 클라이언트에 가상 응용 프로그램을 제공할 수 있습니다.
@@ -100,7 +101,7 @@ Configuration Manager를 사용하여 App-V 클라이언트를 관리하면 배�
 |이 방법은 표준 네트워크 프로토콜을 사용하여 배포 지점에서 패키지 콘텐츠를 스트리밍합니다.<br /><br /> 가상 응용 프로그램에 대한 프로그램 바로 가기는 배포 지점에 대한 연결을 호출하여 가상 응용 프로그램 배달이 주문형으로 이루어지도록 합니다.<br /><br /> 이 방법은 배포 지점에 대한 고속 연결을 사용하는 클라이언트에 대해 효과적으로 작동합니다.<br /><br /> 기업 전체에 배포되는 업데이트된 가상 응용 프로그램은 클라이언트에서 현재 버전이 대체됨을 알리는 정책을 받고 이전 버전으로부터의 변경 사항만 다운로드할 때 사용할 수 있습니다.<br /><br /> 액세스 권한은 사용자가 무단 응용 프로그램 또는 패키지에 액세스하지 못하도록 배포 지점에서 정의됩니다.|가상 응용 프로그램은 사용자가 처음으로 응용 프로그램을 실행할 때까지 스트리밍되지 않습니다. 이 시나리오에서는 사용자가 가상 응용 프로그램에 대한 프로그램 바로 가기를 받을 수 있지만, 처음으로 가상 응용 프로그램을 실행하기 전에 네트워크에서 연결이 끊길 수 있습니다. 클라이언트가 오프라인 상태인 동안 가상 응용 프로그램을 실행하려고 하면 응용 프로그램을 스트리밍하기 위한 Configuration Manager 배포 지점을 사용할 수 없기 때문에 오류가 표시되고 사용자가 가상화된 응용 프로그램을 실행할 수 없게 됩니다. 사용자가 네트워크에 다시 연결하여 응용 프로그램을 실행할 때까지 응용 프로그램을 사용할 수 없습니다.<br /><br /> 이를 방지하려면 클라이언트에 가상 응용 프로그램을 배달하는 데 로컬 배달 방법을 사용하거나, 스트리밍 배달에 인터넷 기반 클라이언트 관리를 사용하도록 설정할 수 있습니다.|  
 
 ###  <a name="local-delivery-download-and-execute"></a>로컬 배달(다운로드 및 실행)  
-로컬 배달 방법을 사용하는 경우 Configuration Manager 클라이언트는 먼저 전체 가상 응용 프로그램 패키지를 Configuration Manager 클라이언트 캐시에 다운로드합니다. 그런 다음 Configuration Manager는 App-V 클라이언트에게 Configuration Manager 캐시의 응용 프로그램을 App-V 캐시로 스트리밍하도록 지시합니다. 클라이언트 컴퓨터에 가상 응용 프로그램을 배포하고 해당 콘텐츠가 App-V 캐시에 없는 경우 App-V 클라이언트는 Configuration Manager 클라이언트 캐시에서 App-V 캐시로 응용 프로그램 콘텐츠를 스트리밍한 다음 응용 프로그램을 실행합니다. 응용 프로그램이 정상 실행되고 나면 Configuration Manager 클라이언트가 오래된 버전의 패키지를 삭제하거나 다음 삭제 주기에 Configuration Manager 클라이언트 캐시에 유지하도록 설정할 수 있습니다.  
+Configuration Manager를 사용할 때는 다운로드하고 실행하는 것이 가장 일방적인 방법입니다. Configuration Manager를 사용하여 다른 응용 프로그램 형식이 배달되는 방법을 밀접하게 모방하기 때문입니다. 로컬 배달 방법을 사용하는 경우 Configuration Manager 클라이언트는 먼저 전체 가상 응용 프로그램 패키지를 Configuration Manager 클라이언트 캐시에 다운로드합니다. 그런 다음 Configuration Manager는 App-V 클라이언트에게 Configuration Manager 캐시의 응용 프로그램을 App-V 캐시로 스트리밍하도록 지시합니다. 클라이언트 컴퓨터에 가상 응용 프로그램을 배포하고 해당 콘텐츠가 App-V 캐시에 없는 경우 App-V 클라이언트는 Configuration Manager 클라이언트 캐시에서 App-V 캐시로 응용 프로그램 콘텐츠를 스트리밍한 다음 응용 프로그램을 실행합니다. 응용 프로그램이 정상 실행되고 나면 Configuration Manager 클라이언트가 오래된 버전의 패키지를 삭제하거나 다음 삭제 주기에 Configuration Manager 클라이언트 캐시에 유지하도록 설정할 수 있습니다. 로컬에 콘텐츠를 유지할 때는 BranchCache 및 PeerCache와 같은 패키지 콘텐츠 배달 최적화 방법을 활용할 수 있습니다.
 
 다음 표에서는 로컬 배달이 가장 적합한 배달 방법인지를 결정하는 데 도움이 되는 정보를 제공합니다.   
 

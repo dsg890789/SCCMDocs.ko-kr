@@ -1,26 +1,27 @@
 ---
-title: "Microsoft Intune에서 Android 하이브리드 장치 관리 설정"
+title: Microsoft Intune에서 Android 하이브리드 장치 관리 설정
 titleSuffix: Configuration Manager
-description: "Configuration Manager 및 Intune으로 Android 모바일 장치 관리 준비"
+description: Configuration Manager 및 Intune으로 Android 모바일 장치 관리 준비
 ms.custom: na
 ms.date: 08/11/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-hybrid
+ms.technology:
+- configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: c517fe34-0130-465b-a020-bdb555878778
-caps.latest.revision: "9"
-caps.handback.revision: "0"
+caps.latest.revision: 9
+caps.handback.revision: 0
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: c9b35122f6afbb4fffbbff48b919fd696939c897
-ms.sourcegitcommit: 51cfce302fa8ddf633ad1f379b1161c0617089b8
+ms.openlocfilehash: c75979e8485fa3ece2178af6d21ff06282206569
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-android-hybrid-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune으로 Android 하이브리드 장치 관리 설정
 
@@ -60,7 +61,7 @@ Configuration Manager 관리자는 준수 설정을 관리하고, Android 장치
 > 알려진 문제로 인해 **Manage supported devices for users only in these groups as Android for Work**(이 그룹의 사용자만을 위해 지원되는 장치를 Android for Work로 관리) 옵션이 제대로 작동되지 않습니다. 지정된 Azure AD 그룹의 사용자 장치가 Android for Work 대신 Android로 등록됩니다. Android for Work를 사용하도록 설정하려면 **Manage all supported devices as Android for Work**(지원되는 장치를 모두 Android for Work로 관리) 옵션을 사용해야 합니다.
 
 
-설정한 후에는 사용자에게 장치를 등록하는 방법을 알려 주어야 합니다. [장치 등록에 대해 최종 사용자에게 알릴 내용](https://docs.microsoft.com/en-us/intune/end-user-educate)을 참조하세요. 이 정보는 Microsoft Intune 및 Configuration Manager에서 관리되는 모바일 장치에 적용됩니다.
+설정한 후에는 사용자에게 장치를 등록하는 방법을 알려 주어야 합니다. [장치 등록에 대해 최종 사용자에게 알릴 내용](https://docs.microsoft.com/intune/end-user-educate)을 참조하세요. 이 정보는 Microsoft Intune 및 Configuration Manager에서 관리되는 모바일 장치에 적용됩니다.
 
 바인딩이 완료되면 계정 이름 및 조직 이름이 Intune 포털에 표시됩니다. 그러면 두 브라우저를 닫아도 됩니다.
 

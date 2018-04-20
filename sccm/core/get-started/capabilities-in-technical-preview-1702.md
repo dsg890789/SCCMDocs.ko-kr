@@ -1,7 +1,7 @@
 ---
-title: "기술 미리 보기 1702의 기능"
+title: 기술 미리 보기 1702의 기능
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager용 Technical Preview 버전 1702에서 사용 가능한 기능에 대해 알아봅니다."
+description: System Center Configuration Manager용 Technical Preview 버전 1702에서 사용 가능한 기능에 대해 알아봅니다.
 ms.custom: na
 ms.date: 02/24/2017
 ms.prod: configuration-manager
@@ -12,15 +12,15 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: aedd608d-6db3-4ea5-851d-70f2dcda6bb5
-caps.latest.revision: 
+caps.latest.revision: 5
 author: erikje
 ms.author: erikje
 manager: angrobe
-ms.openlocfilehash: ed2a858c55cbf389a0e974f4699b5a9c548953ef
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+ms.openlocfilehash: 94c025a75cd0aef62ee00c11b8ee5a113fba2bb1
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="capabilities-in-technical-preview-1702-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1702의 기능
 
@@ -104,7 +104,7 @@ Azure AD는 **AADDC 컴퓨터** OU 아래에 장치를 저장합니다.  다음�
 Azure AD에는 그룹을 저장하는 OU가 없습니다. 대신, 시스템 또는 사용자 쿼리와 동일한 일반적인 구조를 사용하고 검색할 그룹을 포함하는 OU를 가리키도록 LDAP 쿼리를 구성합니다.
 
 Azure AD에 대한 자세한 내용은 다음을 참조하세요.  
- - azure.microsoft.com의 [Azure Active Directory Domain Services](https://azure.microsoft.com/en-us/services/active-directory-ds)
+ - azure.microsoft.com의 [Azure Active Directory Domain Services](https://azure.microsoft.com/services/active-directory-ds)
  - docs.microsoft.com의 [Active Directory Domain Services 설명서](https://docs.microsoft.com/azure/active-directory-domain-services)
 
 ## <a name="conditional-access-device-compliance-policy-improvements"></a>조건부 액세스 장치 준수 정책 개선
@@ -155,7 +155,7 @@ Windows Update for Business 업데이트에 대한 준수 평가 정보를 수�
 4. 작업이 끝나면 **확인**을 클릭합니다.
 
 ### <a name="monitor-the-compliance-policy"></a>규정 준수 정책 모니터링
-준수 정책을 만든 후 Configuration Manager 콘솔에서 준수 결과를 모니터링할 수 있습니다. 자세한 내용은 [준수 정책 모니터링](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/create-compliance-policy#monitor-the-compliance-policy)을 참조하세요.
+준수 정책을 만든 후 Configuration Manager 콘솔에서 준수 결과를 모니터링할 수 있습니다. 자세한 내용은 [준수 정책 모니터링](https://docs.microsoft.com/sccm/protect/deploy-use/create-compliance-policy#monitor-the-compliance-policy)을 참조하세요.
 
 
 ## <a name="improvements-to-software-center-settings-and-notification-messages-for-high-impact-task-sequences"></a>영향력이 큰 작업 순서에 대한 소프트웨어 센터 설정 및 알림 메시지 개선

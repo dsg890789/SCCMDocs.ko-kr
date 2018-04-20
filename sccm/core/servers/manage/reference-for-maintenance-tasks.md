@@ -1,26 +1,27 @@
 ---
-title: "유지 관리 작업에 대한 참조"
+title: 유지 관리 작업에 대한 참조
 titleSuffix: Configuration Manager
-description: "각 System Center Configuration Manager 사이트 유지 관리 작업에 대한 세부 정보와 이러한 작업이 기본적으로 사용되는지 여부를 알아봅니다."
+description: 각 System Center Configuration Manager 사이트 유지 관리 작업에 대한 세부 정보와 이러한 작업이 기본적으로 사용되는지 여부를 알아봅니다.
 ms.custom: na
 ms.date: 3/8/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 68dc6acd-5848-47a4-b4c1-ffa40e47890b
-caps.latest.revision: "16"
-caps.handback.revision: "0"
+caps.latest.revision: 16
+caps.handback.revision: 0
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 3f67bddcb7233b62769271871354c86c5440e320
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: 21b5e47efd2678f78fe7b7c0e10524ec7141634d
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-maintenance-tasks-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 유지 관리 작업 참조
 
@@ -105,7 +106,7 @@ ms.lasthandoff: 12/04/2017
 -   **기본 사이트**: 사용    
 -   보조 사이트: 사용할 수 없음  
 
-**오래된 검색 데이터 삭제**: 이 작업을 사용하면 오래된 검색 데이터를 데이터베이스에서 삭제할 수 있습니다. 이 데이터에는 하트비트 검색, 네트워크 검색, Active Directory Domain Services 검색 방법 등으로 검색되는 레코드(시스템, 사용자, 그룹)가 포함될 수 있습니다. 사이트에서 이 작업을 실행하면 해당 사이트와 연결된 데이터는 삭제되고 관련 변경 내용은 다른 사이트에 복제됩니다. 검색에 대한 자세한 내용은 [System Center Configuration Manager에 대한 검색 실행](../../../core/servers/deploy/configure/run-discovery.md)을 참조하세요.  
+**오래된 검색 데이터 삭제**: 이 작업을 사용하면 오래된 검색 데이터를 데이터베이스에서 삭제할 수 있습니다. 이 데이터에는 하트비트 검색, 네트워크 검색, Active Directory Domain Services 검색 방법 등으로 검색되는 레코드(시스템, 사용자, 그룹)가 포함될 수 있습니다. 이 작업은 또한 서비스가 해제된 것으로 표시된 오래된 장치를 제거합니다. 사이트에서 이 작업을 실행하면 해당 사이트와 연결된 데이터는 삭제되고 관련 변경 내용은 다른 사이트에 복제됩니다. 검색에 대한 자세한 내용은 [System Center Configuration Manager에 대한 검색 실행](../../../core/servers/deploy/configure/run-discovery.md)을 참조하세요.  
 
 -   중앙 관리 사이트: 사용할 수 없음    
 -   **기본 사이트**: 사용    

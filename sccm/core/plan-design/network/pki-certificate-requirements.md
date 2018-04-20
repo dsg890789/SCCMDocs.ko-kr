@@ -1,25 +1,26 @@
 ---
-title: "PKI 인증서 요구 사항"
+title: PKI 인증서 요구 사항
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에 필요할 수 있는 PKI 인증서 요구 사항을 찾습니다."
+description: System Center Configuration Manager에 필요할 수 있는 PKI 인증서 요구 사항을 찾습니다.
 ms.custom: na
 ms.date: 11/20/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: d6a73e68-57d8-4786-842b-36669541d8ff
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: c9d95f6282820a41db762c143b3aa2f6d4fadf3e
-ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
+ms.openlocfilehash: 1fcc05d1487f9b9809d3f476b3b80d67a0cc2698
+ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="pki-certificate-requirements-for-system-center-configuration-manager"></a>System Center Configuration Manager를 위한 PKI 인증서 요구 사항
 
