@@ -1,17 +1,18 @@
 ---
-title: "엔터프라이즈 운영 체제를 배포하는 시나리오"
+title: 엔터프라이즈 운영 체제를 배포하는 시나리오
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager를 사용하여 엔터프라이즈 운영 체제를 배포하는 여러 시나리오에 대해 알아봅니다."
+description: System Center Configuration Manager를 사용하여 엔터프라이즈 운영 체제를 배포하는 여러 시나리오에 대해 알아봅니다.
 ms.custom: na
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-osd
+ms.technology:
+- configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: f74fdb86-c7c2-447f-91f6-b42df6370d7f
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: aczechowski
 ms.author: aaroncz
 manager: angrobe
@@ -50,7 +51,7 @@ ms.lasthandoff: 12/12/2017
 
  Configuration Manager 클라이언트의 기본 캐시 크기는 대부분의 운영 체제 이미지 배포에 충분하지 않을 수 있습니다. 클라이언트 캐시에 전체 이미지를 다운로드하려면 배포할 이미지 크기를 포함할 수 있도록 대상 컴퓨터의 Configuration Manager 클라이언트 캐시 크기를 조정해야 합니다.  
 
- 자세한 내용은 [Configure the Client Cache for Configuration Manager Clients](../../core/clients/manage/manage-clients.md#BKMK_ClientCache)항목을 참조하세요.  
+ 자세한 내용은 [Configuration Manager 클라이언트에 대한 클라이언트 캐시 구성](../../core/clients/manage/manage-clients.md#BKMK_ClientCache)항목을 참조하세요.  
 
 ## <a name="task-sequence-deployments"></a>작업 순서 배포  
  만들어진 작업 순서는 다음 중 한 가지 방법으로 Configuration Manager 클라이언트 컴퓨터에 운영 체제 이미지를 배포할 수 있습니다.  

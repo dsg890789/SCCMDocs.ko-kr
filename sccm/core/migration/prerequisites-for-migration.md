@@ -1,18 +1,19 @@
 ---
-title: "마이그레이션 필수 조건"
+title: 마이그레이션 필수 조건
 titleSuffix: Configuration Manager
-description: "지원되는 Configuration Manager 버전, 지원되는 원본 사이트 언어 및 마이그레이션을 위한 필수 조건을 이해합니다."
+description: 지원되는 Configuration Manager 버전, 지원되는 원본 사이트 언어 및 마이그레이션을 위한 필수 조건을 이해합니다.
 ms.custom: na
 ms.date: 3/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology: configmgr-other
+ms.technology:
+- configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ec976930-7467-4d3c-b33c-991bf408a74a
-caps.latest.revision: "10"
-caps.handback.revision: "0"
+caps.latest.revision: 10
+caps.handback.revision: 0
 author: aczechowski
 ms.author: aaroncz
 manager: angrobe
@@ -87,7 +88,7 @@ System Center 2012 Configuration Manager 또는 System Center Configuration Mana
 
         -   Configuration Manager2007 SP2 원본 사이트의 경우 이 계정에 모든 원본 사이트 개체에 대한 **읽기** 권한이 있어야 합니다.  
 
-        -   System Center 2012 Configuration Manager 또는 System Center Configuration Manager 원본 사이트의 경우에는 이 계정에 모든 원본 사이트 개체에 대한 **읽기** 권한이 있어야 합니다. 역할 기반 관리를 사용하여 계정에 이 권한을 부여합니다. 역할 기반 관리를 사용하는 방법에 대한 자세한 내용은 [Fundamentals of role-based administration for System Center Configuration Manager](../../core/understand/fundamentals-of-role-based-administration.md)항목을 참조하세요.  
+        -   System Center 2012 Configuration Manager 또는 System Center Configuration Manager 원본 사이트의 경우에는 이 계정에 모든 원본 사이트 개체에 대한 **읽기** 권한이 있어야 합니다. 역할 기반 관리를 사용하여 계정에 이 권한을 부여합니다. 역할 기반 관리를 사용하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 역할 기반 관리 기본 사항](../../core/understand/fundamentals-of-role-based-administration.md)항목을 참조하세요.  
 
     -   **원본 사이트 데이터베이스 계정:** 이 계정은 원본 사이트의 SQL Server 데이터베이스에 액세스하는 데 사용되며 원본 사이트 데이터베이스에 대한 **Connect**, **Execute**및 **Select** 권한이 필요합니다.  
 
@@ -114,7 +115,7 @@ System Center 2012 Configuration Manager 또는 System Center Configuration Mana
 
      각 원본 사이트에 대해 FQDN으로 구성된 사이트 시스템 서버에 설치된 배포 지점만 공유됩니다.  
 
-     또한 System Center 2012 Configuration Manager 또는 System Center Configuration Manager 원본 사이트에서 배포 지점을 공유하려면 **원본 사이트 계정**(원본 사이트 서버의 SMS 공급자에 액세스하는 계정)에 원본 사이트의 **사이트** 개체에 대한 **수정** 권한이 있어야 합니다. 역할 기반 관리를 사용하여 계정에 이 권한을 부여합니다. 역할 기반 관리를 사용하는 방법에 대한 자세한 내용은 [Fundamentals of role-based administration for System Center Configuration Manager](../../core/understand/fundamentals-of-role-based-administration.md)항목을 참조하세요.  
+     또한 System Center 2012 Configuration Manager 또는 System Center Configuration Manager 원본 사이트에서 배포 지점을 공유하려면 **원본 사이트 계정**(원본 사이트 서버의 SMS 공급자에 액세스하는 계정)에 원본 사이트의 **사이트** 개체에 대한 **수정** 권한이 있어야 합니다. 역할 기반 관리를 사용하여 계정에 이 권한을 부여합니다. 역할 기반 관리를 사용하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 역할 기반 관리 기본 사항](../../core/understand/fundamentals-of-role-based-administration.md)항목을 참조하세요.  
 
 
 -   **배포 지점 업그레이드 또는 재할당:**  
@@ -123,6 +124,6 @@ System Center 2012 Configuration Manager 또는 System Center Configuration Mana
 
     -   Configuration Manager2007 배포 지점을 업그레이드하려면 계정에 Configuration Manager2007 사이트 서버의 **사이트** 클래스에 대한 **읽기**, **실행**, **삭제** 권한이 있어야 Configuration Manager2007 원본 사이트에서 배포 지점을 제거할 수 있습니다.  
 
-    -   System Center 2012 Configuration Manager 또는 System Center Configuration Manager 배포 지점을 재할당하려면 계정에 원본 사이트의 **사이트** 개체에 대한 **수정** 권한이 있어야 합니다. 역할 기반 관리를 사용하여 계정에 이 권한을 부여합니다. 역할 기반 관리를 사용하는 방법에 대한 자세한 내용은 [Fundamentals of role-based administration for System Center Configuration Manager](../../core/understand/fundamentals-of-role-based-administration.md)항목을 참조하세요.  
+    -   System Center 2012 Configuration Manager 또는 System Center Configuration Manager 배포 지점을 재할당하려면 계정에 원본 사이트의 **사이트** 개체에 대한 **수정** 권한이 있어야 합니다. 역할 기반 관리를 사용하여 계정에 이 권한을 부여합니다. 역할 기반 관리를 사용하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 역할 기반 관리 기본 사항](../../core/understand/fundamentals-of-role-based-administration.md)항목을 참조하세요.  
 
      배포 지점을 업그레이드하거나 새 계층에 재할당하려면 원본 계층에서 배포 지점을 관리하는 사이트에서 클라이언트 요청에 대해 구성한 포트가 배포 지점을 관리할 대상 사이트에서 클라이언트 요청에 대해 구성한 포트와 일치해야 합니다. 클라이언트 요청 포트에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 통신 포트를 구성하는 방법](../../core/clients/deploy/configure-client-communication-ports.md)을 참조하세요.  
