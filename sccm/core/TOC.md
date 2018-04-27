@@ -292,13 +292,13 @@
 ###  [Linux 및 UNIX 클라이언트를 관리하는 방법](clients/manage/manage-clients-for-linux-and-unix-servers.md)
 ###  [OMS에 데이터 동기화](clients/manage/sync-data-microsoft-operations-management-suite.md)
 ###  [Mac 클라이언트 유지 관리](clients/manage/maintain-mac-clients.md)
-### [공동 관리 대시보드](clients/manage/co-management-dashboard.md)
 
 ### [Surface 장치 대시보드](clients/manage/surface-device-dashboard.md)
 
 ##   [Windows 10 장치에 대한 공동 관리](clients/manage/co-management-overview.md)
 ###  [공동 관리를 위한 Windows 10 장치 준비](clients/manage/co-management-prepare.md)
 ###  [Configuration Manager 워크로드를 Intune으로 전환](clients/manage/co-management-switch-workloads.md)
+### [공동 관리 대시보드](clients/manage/co-management-dashboard.md)
 
 ##   [인터넷에서 클라이언트 관리](clients/manage/manage-clients-internet.md)
 ###  [클라우드 관리 게이트웨이에 대한 계획](clients/manage/cmg/plan-cloud-management-gateway.md)
