@@ -11,11 +11,11 @@ ms.prod: configuration-manager
 ms.service: ''
 ms.technology: ''
 ms.assetid: 101de2ba-9b4d-4890-b087-5d518a4aa624
-ms.openlocfilehash: a45ded0f3824c148f64f9578e51cc112c05d9f78
-ms.sourcegitcommit: aed99ba3c5e9482199cb3fc5c92f6f3a160cb181
+ms.openlocfilehash: 93a991cb3fd78e44f5ae4434a9845a57450e1025
+ms.sourcegitcommit: e4ca9fb1fad2caaf61bb46e0a12f4d6b96f15513
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="prepare-windows-10-devices-for-co-management"></a>공동 관리를 위해 Windows 10 장치 준비
 AD 및 Azure AD에 조인하고, Microsoft Intune과 Configuration Manager에서 클라이언트를 등록하는 Windows 10 장치에서 공동 관리를 사용할 수 있습니다. 새 Windows 10 장치 및 Intune에 이미 등록된 장치의 경우 공동 관리되기 전에 Configuration Manager 클라이언트를 설치합니다. Configuration Manager 클라이언트인 Windows 10 장치의 경우 Intune에서 장치를 등록하고 Configuration Manager 콘솔에서 공동 관리를 사용할 수 있습니다.
@@ -23,6 +23,32 @@ AD 및 Azure AD에 조인하고, Microsoft Intune과 Configuration Manager에서
 > [!IMPORTANT]
 > Windows 10 모바일 장치는 공동 관리를 지원하지 않습니다.
 
+
+## <a name="prerequisites"></a>필수 구성 요소
+공동 관리를 활성화하기 전에 다음 필수 구성 요소를 준비해야 합니다. 일반 필수 구성 요소 및 Configuration Manager 클라이언트가 있는 장치와 클라이언트가 설치되지 않은 장치에 대한 다른 필수 구성 요소가 있습니다.
+### <a name="general-prerequisites"></a>일반 전제 조건
+다음은 공동 관리를 사용하기 위한 일반 전제 조건입니다.  
+
+- Configuration Manager 버전 1710 이상
+- Azure AD
+- 모든 사용자의 EMS 또는 Intune 라이선스
+- 사용하도록 설정된 [Azure AD 자동 등록](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)
+- **Intune**으로 설정된 Intune 구독 및 Intune의 MDM 기관
+
+
+   > [!Note]  
+   > 하이브리드 MDM 환경(Configuration Manager와 통합된 Intune)이 설정된 경우 공동 관리를 사용할 수 없습니다. 그러나 사용자를 Intune 독립 실행형으로 마이그레이션하기 시작한 후 관련 Windows 10 장치에 공동 관리를 활성화할 수 있습니다. Intune 독립 실행형으로 마이그레이션하는 방법에 대한 자세한 정보는 [하이브리드 MDM에서 Intune 독립 실행형으로 마이그레이션 시작](/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)을 참조하세요.
+
+### <a name="additional-prerequisites-for-devices-with-the-configuration-manager-client"></a>Configuration Manager 클라이언트가 있는 장치에 대한 추가 필수 구성 요소
+- Windows 10, 버전 1709 이상
+- [조인된 하이브리드 Azure AD](https://docs.microsoft.com/azure/active-directory/device-management-hybrid-azuread-joined-devices-setup)(AD와 Azure AD에 조인)
+
+### <a name="additional-prerequisites-for-devices-without-the-configuration-manager-client"></a>Configuration Manager 클라이언트가 없는 장치에 대한 추가 필수 구성 요소
+- Windows 10, 버전 1709 이상
+- Configuration Manager의 [클라우드 관리 게이트웨이](/sccm/core/clients/manage/manage-clients-internet#cloud-management-gateway)(Intune을 사용하여 Configuration Manager 클라이언트를 설치하는 경우)
+
+> [!IMPORTANT]
+> Windows 10 모바일 장치는 공동 관리를 지원하지 않습니다.
 
 
 ## <a name="command-line-to-install-configuration-manager-client"></a>Configuration Manager 클라이언트를 설치하는 명령줄
@@ -39,8 +65,8 @@ Configuration Manager 클라이언트가 아닌 Windows 10 장치의 경우 Intu
 
 - **MP(관리 지점)의 FQDN**: mp1.contoso.com    
 - **Sitecode**: PS1    
-- **Azure AD 테넌트 ID**: daf4a1c2-3a0c-401b-966f-0b855d3abd1a    
-- **Azure AD 클라이언트 앱 ID**: 7506ee10-f7ec-415a-b415-cd3d58790d97     
+- **Azure AD 테넌트 ID**: 60a413f4-c606-4744-8adb-9476ae3XXXXX    
+- **Azure AD 클라이언트 앱 ID**: 9fb9315f-4c42-405f-8664-ae63283XXXXX     
 - **AAD 리소스 ID URI**: ConfigMgrServer    
 
   > [!Note]    
@@ -48,7 +74,7 @@ Configuration Manager 클라이언트가 아닌 Windows 10 장치의 경우 Intu
 
 다음 명령줄을 사용합니다.
 
-`ccmsetup.msi CCMSETUPCMD="/mp:https://contoso.cloudapp.net/CCM_Proxy_MutualAuth/72186325152220500    CCMHOSTNAME=contoso.cloudapp.net/CCM_Proxy_MutualAuth/72186325152220500 SMSSiteCode=PS1 SMSMP=https://mp1.contoso.com AADTENANTID=daf4a1c2-3a0c-401b-966f-0b855d3abd1a AADCLIENTAPPID=7506ee10-f7ec-415a-b415-cd3d58790d97 AADRESOURCEURI=https://ConfigMgrServer"`
+`ccmsetup.msi CCMSETUPCMD="/mp:https://contoso.cloudapp.net/CCM_Proxy_MutualAuth/72186325152220500    CCMHOSTNAME=contoso.cloudapp.net/CCM_Proxy_MutualAuth/72186325152220500 SMSSiteCode=PS1 SMSMP=https://mp1.contoso.com AADTENANTID=60a413f4-c606-4744-8adb-9476ae3XXXXX AADCLIENTAPPID=9fb9315f-4c42-405f-8664-ae63283XXXXX AADRESOURCEURI=https://ConfigMgrServer"`
 
 > [!Tip]
 > 다음 단계를 사용하여 사이트에 대한 명령줄 매개 변수를 찾을 수 있습니다.     

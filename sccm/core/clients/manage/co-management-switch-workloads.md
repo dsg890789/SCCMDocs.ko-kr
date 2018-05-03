@@ -13,11 +13,11 @@ ms.date: 03/22/2018
 ms.topic: article
 ms.service: ''
 ms.assetid: 60e2022f-a4f9-40dd-af01-9ecb37b43878
-ms.openlocfilehash: cdfe52768499b929db473ac08d42207059965ffd
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: d0cee0eb242011d6cc7b3085b4ae9df908604fa8
+ms.sourcegitcommit: ac06e034cc60db7b1acade1f541e26b6cc50506e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="switch-configuration-manager-workloads-to-intune"></a>Configuration Manager 워크로드를 Intune으로 전환
 [공동 관리를 위해 Windows 10 장치 준비](co-management-prepare.md)에서 공동 관리를 위해 Windows 10 장치를 준비했습니다. 이러한 장치가 AD, Azure AD에 조인되고 Intune에 등록되고 Configuration Manager 클라이언트를 포함합니다. Windows 10 장치가 AD에 조인되고 Configuration Manager 클라이언트를 포함했지만 Azure AD에 되거나 Intune에 등록되지 않았습니다. 다음 절차에서는 공동 관리를 사용하고, 공동 관리를 위해 나머지 Windows 10 장치(Intune에 등록되지 않은 Configuration Manager 클라이언트)를 준비하고, 특정 Configuration Manager 워크로드를 Intune으로 전환하기 시작할 수 있는 단계를 제공합니다.
@@ -43,10 +43,13 @@ ms.lasthandoff: 03/23/2018
 ## <a name="workloads-able-to-be-transitioned-to-intune"></a>Intune으로 전환될 수 있는 워크로드
 특정 워크로드는 Intune을 통해 전환될 수 있습니다. 다음 목록은 전환에 사용할 수 있는 워크로드로 업데이트됩니다.
 1. 장치 준수 정책
-2. 리소스 액세스 정책
+2. 리소스 액세스 정책: 리소스 액세스 정책은 장치에 대한 VPN, Wi-Fi, 메일 및 인증서 설정을 구성합니다. 자세한 내용은 [리소스 액세스 프로필 배포](https://docs.microsoft.com/intune/device-profiles)를 참조하세요.
+      - 전자 메일 프로필
+      - Wi-Fi 프로필
+      - VPN 프로필
+      - 인증서 프로필
 3. Windows 업데이트 정책
 4. Endpoint Protection(Configuration Manager 버전 1802부터)
-      - Windows Defender 바이러스 백신
       - Windows Defender Application Guard
       - Windows Defender 방화벽
       - Windows Defender SmartScreen
@@ -60,6 +63,8 @@ ms.lasthandoff: 03/23/2018
 
 ## <a name="monitor-co-management"></a>공동 관리 모니터링
 공동 관리를 사용하도록 설정하면 다음 방법을 사용하여 공동 관리 장치를 모니터링할 수 있습니다.
+
+- [공동 관리 대시보드](/sccm/core/clients/manage/co-management-dashboard)
 - **SQL 보기 및 WMI 클래스**: Configuration Manager 사이트 데이터베이스 또는 **SMS&#95;Client&#95;ComanagementState** WMI 클래스에서 **v&#95;ClientCoManagementState** SQL 보기를 쿼리할 수 있습니다. WMI 클래스의 정보를 사용하면 Configuration Manager에서 사용자 지정 컬렉션을 만들어 공동 관리 배포 상태를 확인할 수 있습니다. 자세한 내용은 [컬렉션을 만드는 방법](/sccm/core/clients/manage/collections/create-collections)을 참조하세요. 다음 필드는 SQL 보기 및 WMI 클래스에서 사용할 수 있습니다. 
     - **MachineId**: Configuration Manager 클라이언트에 대한 고유한 장치 ID를 지정합니다.
     - **MDMEnrolled**: 장치가 MDM에 등록되었는지 여부를 지정합니다. 

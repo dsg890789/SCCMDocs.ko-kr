@@ -1,9 +1,9 @@
 ---
-title: "지원되는 클라이언트 및 장치"
+title: 지원되는 클라이언트 및 장치
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 클라이언트 및 장치에 대해 지원하는 운영 체제를 알아봅니다."
+description: System Center Configuration Manager에서 클라이언트 및 장치에 대해 지원하는 운영 체제를 알아봅니다.
 ms.custom: na
-ms.date: 8/30/2017
+ms.date: 04/17/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,22 +12,22 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 87f4e041-67df-4c61-aa98-7444faffe565
-caps.latest.revision: 
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 614226e60f9bcd7b8e3c1330f52a4847e89e0880
-ms.sourcegitcommit: b13da5ad8ffd58e3b89fa6d7170e1dec3ff130a4
+caps.latest.revision: 5
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: d6befce522bcfef293f36def39405e9555cd3510
+ms.sourcegitcommit: e23350fe65ff99228274e465b24b5e163769f38f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="supported-operating-systems-for-clients-and-devices-for-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 및 장치에 대해 지원되는 운영 체제
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 
- System Center Configuration Manager에서는 다양한 Windows, Mac, Linux 및 UNIX 컴퓨터에 클라이언트 소프트웨어를 설치할 수 있습니다.  
+ Configuration Manager에서는 다양한 Windows, Mac, Linux 및 UNIX 컴퓨터에 클라이언트 소프트웨어를 설치할 수 있습니다.  
 
  **모든 클라이언트에 대한 요구 사항 및 제한 사항:**  
 
@@ -43,6 +43,8 @@ ms.lasthandoff: 02/01/2018
 
 -  **Windows Server 2016**: Standard, Datacenter <sup>1</sup>
   - 이 운영 체제는 Configuration Manager 버전 1606 및 KB3186654의 핫픽스 롤업(또는 2016년 10월에 릴리스된 1606의 기준 버전)부터 지원됩니다.  
+
+-   **Windows Storage Server 2016**  
 
 -   **Windows Server 2012 R2**(x64): Standard, Datacenter <sup>1</sup>    
 
@@ -65,6 +67,9 @@ ms.lasthandoff: 02/01/2018
 <!---   **Windows 8** (x86, x64): Professional, Enterprise  -removed Jan 12,2018 sms505863-->
 
 -   **Windows 7 SP1**(x86, x64): Professional, Enterprise, Ultimate    
+
+-   **Windows Server 버전 1709의 Server Core 설치**(x64) <sup>2</sup>
+  - 이 운영 체제는 버전 1710부터 지원됩니다.
 
 -   **Windows Server 2016의 Server Core 설치**(x64) <sup>2</sup>
   - 이 운영 체제는 KB3186654의 핫픽스 롤업이 포함된 1606 버전(또는 2016년 10월에 릴리스된 1606의 기준 버전)부터 지원됩니다.

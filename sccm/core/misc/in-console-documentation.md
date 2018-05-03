@@ -16,11 +16,11 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 robots: noindex,nofollow
-ms.openlocfilehash: 7810191f270fde70cc573cb73af9b5ca23a6bfcb
-ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
+ms.openlocfilehash: 856f23aaf64686b3e895d43e768350ea2ddc405c
+ms.sourcegitcommit: e23350fe65ff99228274e465b24b5e163769f38f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 <!-- 
 TFS 1357546
@@ -29,6 +29,10 @@ This page displays in-console, under the Support workspace, Documentation node.
 
 
 # <a name="configuration-manager-documentation"></a>Configuration Manager 설명서
+이 페이지의 링크는 Configuration Manager를 학습하고 지원하는 데 도움이 되는 큐레이트 콘텐츠를 나타냅니다. 
+
+[Configuration Manager 문서 라이브러리](https://docs.microsoft.com/sccm)
+
 
 </br>
 
@@ -40,7 +44,7 @@ This page displays in-console, under the Support workspace, Documentation node.
 > - [최근 업데이트 항목](#bkmk_update)
 
 ### <a name="recommended"></a>권장 
-수동으로 큐레이팅된 중요 아티클 목록:
+수동으로 큐레이팅된 중요한 문서 목록입니다.
 
 - [Windows 10 장치에 대한 공동 관리](/sccm/core/clients/manage/co-management-overview)
 - [Configuration Manager as a service 및 WaaS(Windows as a Service)의 기본 사항](/sccm/core/understand/configuration-manager-and-windows-as-service)
@@ -66,7 +70,7 @@ This page displays in-console, under the Support workspace, Documentation node.
 > - [최근 업데이트 항목](#bkmk_update)
 
 ### <a name="trending"></a>인기
-지난 달의 가장 인기 있는 아티클:
+지난달의 가장 인기 있는 문서입니다.
 
 - [새 버전 1710](/sccm/core/plan-design/changes/whats-new-in-version-1710)
 - [문제 해결을 위한 로그 파일](/sccm/core/plan-design/hierarchy/log-files)
@@ -94,7 +98,7 @@ This page displays in-console, under the Support workspace, Documentation node.
 > - [최근 업데이트 항목](#bkmk_update)
 
 ### <a name="recently-updated"></a>최근 업데이트 항목
-지난 달에 수정된 아티클:
+지난달에 수정된 문서입니다.
 
 - [사이트 필수 조건](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)
 - [데이터 웨어하우스](/sccm/core/servers/manage/data-warehouse)
@@ -108,3 +112,37 @@ This page displays in-console, under the Support workspace, Documentation node.
 - [문제 해결을 위한 로그 파일](/sccm/core/plan-design/hierarchy/log-files)
 
 
+
+</br>
+
+</br>
+
+</br>
+
+### <a name="troubleshooting-articles"></a>문제 해결 문서
+Configuration Manager 구성 요소 및 기능의 문제 해결을 지원하기 위한 안내 방식 연습입니다.
+
+- PXE 부팅 문제 해결  
+- 소프트웨어 업데이트 동기화 문제 해결  
+- 콘텐츠 배포 이해 및 문제 해결  
+- 비즈니스용 Microsoft Store 통합 이해 및 문제 해결  
+- 소프트웨어 업데이트 관리 문제 해결  
+- 응용 프로그램 설치 작업 순서 단계 문제 해결  
+
+
+</br>
+
+</br>
+
+</br>
+
+### <a name="new-and-updated-support-articles"></a>새로 제공되거나 업데이트된 지원 문서
+지난 2개월 동안 새로 제공되거나 업데이트된 지원 문서입니다.
+
+- Configuration Manager 클라이언트가 CAS에서 기본 사이트를 복구한 후 정책 데이터를 수신하지 않음  
+- System Center Configuration Manager 현재 분기, 버전 1710의 업데이트 롤업 2  
+- System Center Configuration Manager 현재 분기, 버전 1710에서 공동 관리되는 장치의 자동 등록 실패  
+- Configuration Manager에서 언어 선택에 대한 Windows 10 배포 프롬프트  
+
+> [!Tip]  
+> 새로운 Configuration Manager 지원 문서의 Atom 또는 RSS 알림을 구독하려면 [지원 콘텐츠 업데이트](https://support.microsoft.com/help/4089498/)를 참조하고 **System Center Configuration Manager**를 선택하세요.  

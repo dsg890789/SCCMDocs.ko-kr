@@ -3,7 +3,7 @@ title: 릴리스 정보
 titleSuffix: Configuration Manager
 description: Microsoft 기술 자료 문서에서 다루지 않거나 제품에서 아직 해결되지 않은 긴급한 문제에 대해서 알아보세요.
 ms.custom: na
-ms.date: 03/22/2018
+ms.date: 04/18/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,11 +17,11 @@ caps.handback.revision: 0
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e22bc4818f10a1f60fdb2135eb705e46dbaa10a4
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 2eabcba6e56bd2a0a9977ab31610a9d747ab6207
+ms.sourcegitcommit: e23350fe65ff99228274e465b24b5e163769f38f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="release-notes-for-system-center-configuration-manager"></a>System Center Configuration Manager의 릴리스 정보
 
@@ -101,6 +101,21 @@ Configuration Manager 버전 1802부터 CEIP(사용자 환경 개선 프로그�
 
 #### <a name="workaround"></a>해결 방법
  서비스 계획을 만든 후 서비스 계획에 대한 속성을 열고, **평가 일정** 탭으로 이동하고, **일정에 따라 규칙 실행**을 선택하고, **사용자 지정**을 클릭하여 사용자 지정 일정을 만듭니다. 예를 들어 60일마다 실행하는 서비스 계획이 있을 수 있습니다.  
+
+
+### <a name="changing-office-365-client-setting-doesnt-apply"></a>Office 365 클라이언트 설정 변경이 적용되지 않습니다. 
+<!--511551-->
+*적용 대상: Configuration Manager 버전 1802*  
+
+**Office 365 클라이언트 에이전트 관리 사용**이 `Yes`로 구성된 [클라이언트 설정](/sccm/core/clients/deploy/about-client-settings#enable-management-of-the-office-365-client-agent)을 배포합니다. 그런 다음, 설정을 `No` 또는 `Not Configured`로 변경합니다. 대상 클라이언트에서 정책을 업데이트하면 Office 365 업데이트가 Configuration Manager에서 계속 관리됩니다. 
+
+#### <a name="workaround"></a>해결 방법
+다음 레지스트리 값을 `0`으로 변경하고 **Microsoft Office 간편 실행 서비스**(ClickToRunSvc)를 다시 시작합니다.
+
+```
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\office\16.0\Common\officeupdate]
+"OfficeMgmtCOM"=dword:00000000
+```
 
 
 

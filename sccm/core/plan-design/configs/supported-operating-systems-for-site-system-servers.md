@@ -3,7 +3,7 @@ title: 지원되는 사이트 시스템 서버
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager 사이트 또는 사이트 시스템 역할을 호스트하는 데 사용할 수 있는 Windows 버전을 알아봅니다.
 ms.custom: na
-ms.date: 03/22/2018
+ms.date: 04/17/2018
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,21 +13,21 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 17905b4c-3895-4ad4-a69c-5e0d0fc5a8c3
 caps.latest.revision: 44
-author: mestew
-ms.author: mstewart
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5bcaddb38ea6ecf1c3b5e0543c676c6a99e06101
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 092fc9d47e0dc7bb7afe0e078bd835dd2d091226
+ms.sourcegitcommit: e23350fe65ff99228274e465b24b5e163769f38f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="supported-operating-systems-for-system-center-configuration-manager-site-system-servers"></a>System Center Configuration Manager 사이트 시스템 서버에 대해 지원되는 운영 체제
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 
-이 문서에서는 System Center Configuration Manager 사이트 또는 사이트 시스템 역할을 호스트하는 데 사용할 수 있는 Windows 버전에 대해 자세히 설명합니다.
+이 문서에서는 Configuration Manager 사이트 또는 사이트 시스템 역할을 호스트하는 데 사용할 수 있는 Windows 버전에 대해 자세히 설명합니다.
 
 
 다음 문서의 정보와 함께 이 문서의 정보를 참조하세요.
@@ -85,6 +85,14 @@ KB3186654에서 핫픽스 롤업을 사용하면 이 OS는 다음과 같은 역�
 -   소프트웨어 업데이트 지점  
 
 -   상태 마이그레이션 지점
+
+
+
+## <a name="windows-storage-server-2016"></a>Windows Storage Server 2016
+
+**사이트 시스템 서버:**  
+
+-   배포 지점  
 
 
 
@@ -253,7 +261,10 @@ OS는 배포 지점 및 풀(pull) 배포 지점을 제외하고, 사이트 서�
 
     -   배포 지점은 각기 요구 사항이 다른 여러 구성을 지원합니다. 경우에 따라 이러한 구성은 서버뿐만 아니라 클라이언트 운영 체제에 대한 설치도 지원합니다. 배포 지점에 사용할 수 있는 옵션에 대한 자세한 내용은 [콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
 
-
+## <a name="the-server-core-installation-of-windows-server-version-1709"></a>Windows Server 버전 1709의 Server Core 설치
+Configuration Manager 1710부터 [Windows Server 버전 1709](https://docs.microsoft.com/windows-server/get-started/get-started-with-1709)는 다음과 같은 제한 사항이 있는 배포 지점으로 사용할 수 있습니다.  
+  -   x64비트 버전만 지원됩니다.
+  -   이 OS의 배포 지점은 PXE 또는 멀티캐스트를 지원하지 않습니다.  
 
 ## <a name="the-server-core-installation-of-windows-server-2016"></a>Windows Server 2016의 Server Core 설치
 KB3186654에서 핫픽스 롤업을 사용하면 이 OS를 다음과 같은 제한 사항이 있는 배포 지점으로 사용할 수 있습니다.  

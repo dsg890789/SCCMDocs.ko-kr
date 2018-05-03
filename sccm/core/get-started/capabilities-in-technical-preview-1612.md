@@ -16,11 +16,11 @@ caps.latest.revision: 5
 author: erikje
 ms.author: erikje
 manager: angrobe
-ms.openlocfilehash: 80cace2bec8cb9c39d5f3f00ea244b697e1d75c9
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: e0688c41978d95e0e1fd4da817e602a2c8a6483b
+ms.sourcegitcommit: f65d4d24f0533e5e196ece0d8a4df0fb3e30eba1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="capabilities-in-technical-preview-1612-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1612의 기능
 
@@ -122,7 +122,7 @@ Technical Preview 버전 1612부터 데이터 웨어하우스 서비스 지점�
 | **일반 소프트웨어 인벤토리 보고서**  | 특정 컴퓨터에 대한 모든 소프트웨어 인벤토리를 확인합니다.|
 | **인프라 상태 개요**  |Configuration Manager 인프라의 상태 개요를 표시합니다.|
 | **검색된 맬웨어 목록**  |조직에서 검색된 맬웨어를 확인합니다.|
-|**소프트웨어 배포 요약 보고서** | 특정 보급 알림 및 컴퓨터에 대한 소프트웨어 배포 요약입니다.|
+| **소프트웨어 배포 요약 보고서** | 특정 보급 알림 및 컴퓨터에 대한 소프트웨어 배포 요약입니다.|
 
 ### <a name="move-the-data-warehouse-database"></a>데이터 웨어하우스 데이터베이스 이동
 데이터 웨어하우스 데이터베이스를 새 SQL Server로 이동하려면 다음 단계를 사용합니다.

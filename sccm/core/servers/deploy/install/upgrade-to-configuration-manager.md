@@ -15,11 +15,11 @@ caps.latest.revision: 21
 author: mestew
 ms.author: mstewart
 manager: angrobe
-ms.openlocfilehash: 72e11a04eb64d649749f2001ac4e3550c784132c
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 2af440e68d3f37914299d899b3a0e565050f651b
+ms.sourcegitcommit: e4ca9fb1fad2caaf61bb46e0a12f4d6b96f15513
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="upgrade-to-system-center-configuration-manager"></a>System Center Configuration Manager 업그레이드
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 03/23/2018
 ##  <a name="bkmk_path"></a> 현재 위치 업그레이드 경로  
 
 **버전 1802로 업그레이드**   
-버전 1702 기준 미디어가 있는 경우 다음 버전을 System Center Configuration Manager 버전 1802의 정품 버전으로 업그레이드할 수 있습니다.   
+버전 1802 기준 미디어가 있는 경우 다음 버전을 System Center Configuration Manager 버전 1802의 정품 버전으로 업그레이드할 수 있습니다.   
 -     System Center Configuration Manager 버전 1802의 평가판 설치
 -     System Center 2012 Configuration Manager 서비스 팩 1
 -     System Center 2012 Configuration Manager 서비스 팩 2

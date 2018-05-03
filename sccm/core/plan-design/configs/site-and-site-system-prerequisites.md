@@ -1,7 +1,7 @@
 ---
-title: "사이트 필수 조건"
+title: 사이트 필수 조건
 titleSuffix: Configuration Manager
-description: "Windows 컴퓨터를 System Center Configuration Manager 사이트 시스템 서버로 구성하는 방법을 알아봅니다."
+description: Windows 컴퓨터를 System Center Configuration Manager 사이트 시스템 서버로 구성하는 방법을 알아봅니다.
 ms.custom: na
 ms.date: 02/28/2018
 ms.prod: configuration-manager
@@ -12,15 +12,15 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1392797b-76cb-46b4-a3e4-8f349ccaa078
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 6d1be6375dde2df51aafe076e5613647ecca3c4c
-ms.sourcegitcommit: d0fc79214bc35ca172fd2023dfa617b977ee865b
+ms.openlocfilehash: ae0a36acf4203fb5c7601a2960c0b5bb0a52082e
+ms.sourcegitcommit: ac06e034cc60db7b1acade1f541e26b6cc50506e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="site-and-site-system-prerequisites-for-system-center-configuration-manager"></a>System Center Configuration Manager의 사이트 및 사이트 시스템 필수 조건
 
@@ -62,7 +62,8 @@ ms.lasthandoff: 02/28/2018
 
 -   .NET Framework 3.5 SP1 이상  
 
--   .NET Framework 4.5.2 이상
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1
+    - .Net Framework 버전에 대한 자세한 내용은 [.NET Framework 버전 및 종속성](https://docs.microsoft.com/dotnet/framework/migration-guide/versions-and-dependencies)을 참조하세요.
 
 -   원격 차등 압축  
 
@@ -83,7 +84,8 @@ ms.lasthandoff: 02/28/2018
 
 -   .NET Framework 3.5 SP1 이상  
 
--   .NET Framework 4.5.2 이상   
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1
+    - .Net Framework 버전에 대한 자세한 내용은 [.NET Framework 버전 및 종속성](https://docs.microsoft.com/dotnet/framework/migration-guide/versions-and-dependencies)을 참조하세요.
 
 -   원격 차등 압축  
 
@@ -124,9 +126,12 @@ ms.lasthandoff: 02/28/2018
 
 -   .NET Framework 3.5 SP1 이상  
 
--   .NET Framework 4.5.2 이상:  
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1
+    - ASP.NET 4.5 
 
-    -   ASP.NET 4.5  
+    - .Net Framework 버전에 대한 자세한 내용은 [.NET Framework 버전 및 종속성](https://docs.microsoft.com/dotnet/framework/migration-guide/versions-and-dependencies)을 참조하세요.  
+
+    
 
 **IIS 구성:**  
 
@@ -159,7 +164,7 @@ ms.lasthandoff: 02/28/2018
 
 -   .NET Framework 3.5 SP1 이상  
 
--   .NET Framework 4.5.2 이상:  
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1:  
 
     -   ASP.NET 4.5:  
 
@@ -194,12 +199,12 @@ ms.lasthandoff: 02/28/2018
 ###  <a name="bkmk_2012AIpreq"></a> Asset Intelligence 동기화 지점  
 **Windows Server 역할 및 기능:**  
 
--   .NET Framework 4.5.2 이상  
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1 
 
 ###  <a name="bkmk_2012crppreq"></a> 인증서 등록 지점  
 **Windows Server 역할 및 기능:**  
 
--   .NET Framework 4.5.2 이상:  
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1:  
 
     -   HTTP 활성화  
 
@@ -273,7 +278,7 @@ ms.lasthandoff: 02/28/2018
 
 -   .NET Framework 3.5 이상  
 
--   .NET Framework 4.5.2 이상:  
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1:  
 
      이 사이트 시스템 역할을 설치하면 Configuration Manager에서 자동으로.NET Framework 4.5.2를 설치합니다. 이 설치로 인해 서버가 다시 부팅 보류 중 상태가 될 수 있습니다. .NET Framework에 대한 다시 부팅이 보류 중인 경우 서버가 다시 부팅되어 설치를 완료할 때까지 .NET 응용 프로그램이 실패할 수 있습니다.  
 
@@ -313,7 +318,7 @@ ms.lasthandoff: 02/28/2018
 
 -   .NET Framework 3.5 이상  
 
--   .NET Framework 4.5.2 이상 
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1 
 
      이 사이트 시스템 역할을 설치하면 Configuration Manager에서 자동으로.NET Framework 4.5.2를 설치합니다. 이 설치로 인해 서버가 다시 부팅 보류 중 상태가 될 수 있습니다. .NET Framework에 대한 다시 부팅이 보류 중인 경우 서버가 다시 부팅되어 설치를 완료할 때까지 .NET 응용 프로그램이 실패할 수 있습니다.  
 
@@ -359,7 +364,7 @@ ms.lasthandoff: 02/28/2018
 ###  <a name="bkmk_2012MPpreq"></a> 관리 지점  
 **Windows Server 역할 및 기능:**  
 
--   .NET Framework 4.5.2 이상 
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1 
 
 -   BITS 서버 확장 및 자동으로 선택된 옵션이나 BITS(Background Intelligent Transfer Services) 및 자동으로 선택된 옵션  
 
@@ -382,7 +387,7 @@ ms.lasthandoff: 02/28/2018
 ###  <a name="bkmk_2012RSpoint"></a> 보고 서비스 지점  
 **Windows Server 역할 및 기능:**  
 
--   .NET Framework 4.5.2 이상 
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1 
 
 **SQL Server Reporting Services:**  
 
@@ -395,7 +400,7 @@ ms.lasthandoff: 02/28/2018
 ###  <a name="bkmk_SCPpreq"></a> 서비스 연결 지점  
 **Windows Server 역할 및 기능:**  
 
--   .NET Framework 4.5.2 이상 
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1 
 
      이 사이트 시스템 역할을 설치하면 Configuration Manager에서 자동으로.NET Framework 4.5.2를 설치합니다. 이 설치로 인해 서버가 다시 부팅 보류 중 상태가 될 수 있습니다. .NET Framework에 대한 다시 부팅이 보류 중인 경우 서버가 다시 부팅되어 설치를 완료할 때까지 .NET 응용 프로그램이 실패할 수 있습니다.  
 
@@ -410,7 +415,7 @@ ms.lasthandoff: 02/28/2018
 
 -   .NET Framework 3.5 SP1 이상  
 
--   .NET Framework 4.5.2 이상 
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1 
 
 기본 IIS 구성이 필요합니다.
 
@@ -439,7 +444,7 @@ ms.lasthandoff: 02/28/2018
 
 -   .NET Framework 3.5 SP1 이상  
 
--   .NET Framework 4.5.2 이상 
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1 
 
 **Windows 기능:**  
 
@@ -462,7 +467,7 @@ ms.lasthandoff: 02/28/2018
 
 -   .NET Framework 3.5 SP1 이상  
 
--   .NET Framework 4.5.2 이상  
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1 
 
 **Visual C++ 재배포 가능 패키지:**  
 
@@ -499,7 +504,7 @@ ms.lasthandoff: 02/28/2018
 ###  <a name="bkmk_2008acwspreq"></a> 응용 프로그램 카탈로그 웹 사이트 지점  
 **.NET Framework:**  
 
--   .NET Framework 4.5.2 이상 
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1
 
 **IIS 구성:**
 
@@ -530,7 +535,7 @@ ms.lasthandoff: 02/28/2018
 
 -   .NET Framework 3.5 SP1 이상  
 
--   .NET Framework 4.5.2 이상 
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1 
 
 **WCF(Windows Communication Foundation) 활성화:**  
 
@@ -561,12 +566,12 @@ ms.lasthandoff: 02/28/2018
 ###  <a name="bkmk_2008AIpreq"></a> Asset Intelligence 동기화 지점  
 **.NET Framework:**  
 
--   .NET Framework 4.5.2 이상 
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1
 
 ###  <a name="bkmk_2008crppreq"></a> 인증서 등록 지점  
 **.NET Framework:**  
 
--   .NET Framework 4.5.2 이상 
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1 
 
 -   HTTP 활성화  
 
@@ -641,7 +646,7 @@ ms.lasthandoff: 02/28/2018
 ###  <a name="bkmk_2008Enrollpreq"></a> 등록 지점  
 **.NET Framework:**  
 
--   .NET Framework 4.5.2 이상 
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1 
 
      이 사이트 시스템 역할을 설치할 때 서버에 지원되는 버전의 .NET Framework가 아직 설치되어 있지 않은 경우 Configuration Manager에서 .NET Framework 4.5.2를 자동으로 설치합니다. 이 설치로 인해 서버가 다시 부팅 보류 중 상태가 될 수 있습니다. .NET Framework에 대한 다시 부팅이 보류 중인 경우 서버가 다시 부팅되어 설치를 완료할 때까지 .NET 응용 프로그램이 실패할 수 있습니다.  
 
@@ -670,9 +675,9 @@ ms.lasthandoff: 02/28/2018
 ###  <a name="bkmk_2008EnrollProxpreq"></a> 등록 프록시 지점  
 **.NET Framework:**  
 
--   .NET Framework 4.5.2 이상 
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1
 
-     이 사이트 시스템 역할을 설치할 때 서버에 지원되는 버전의 .NET Framework가 아직 설치되어 있지 않은 경우 Configuration Manager에서 .NET Framework 4.5.2를 자동으로 설치합니다. 이 설치로 인해 서버가 다시 부팅 보류 중 상태가 될 수 있습니다. .NET Framework에 대한 다시 부팅이 보류 중인 경우 서버가 다시 부팅되어 설치를 완료할 때까지 .NET 응용 프로그램이 실패할 수 있습니다.  
+     이 사이트 시스템 역할을 설치할 때 서버에 지원되는 버전의 .NET Framework가 아직 설치되어 있지 않은 경우 Configuration Manager에서 .NET Framework 4.5.2를 자동으로 설치합니다. 이 설치로 인해 서버가 다시 부팅 보류 중 상태가 될 수 있습니다. NET Framework에 대한 다시 부팅이 보류 중인 경우 서버가 다시 부팅되어 설치를 완료할 때까지 .NET 응용 프로그램이 실패할 수 있습니다.  
 
 **WCF(Windows Communication Foundation) 활성화:**  
 
@@ -708,7 +713,7 @@ ms.lasthandoff: 02/28/2018
 ###  <a name="bkmk_2008MPpreq"></a> 관리 지점  
 **.NET Framework:**  
 
--   .NET Framework 4.5.2 이상
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1
 
 **IIS 구성:**
 
@@ -749,7 +754,7 @@ ms.lasthandoff: 02/28/2018
 ###  <a name="bkmk_2008RSpoint"></a> 보고 서비스 지점  
 **.NET Framework:**  
 
--   .NET Framework 4.5.2 이상  
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1 
 
 **SQL Server Reporting Services:**  
 
@@ -762,7 +767,7 @@ ms.lasthandoff: 02/28/2018
 ###  <a name="bkmk_2008SCPpreq"></a> 서비스 연결 지점  
 **.NET Framework:**  
 
--   .NET Framework 4.5.2 이상 
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1 
 
      이 사이트 시스템 역할을 설치할 때 서버에 지원되는 버전의 .NET Framework가 아직 설치되어 있지 않은 경우 Configuration Manager에서 .NET Framework 4.5.2를 자동으로 설치합니다. 이 설치로 인해 서버가 다시 부팅 보류 중 상태가 될 수 있습니다. .NET Framework에 대한 다시 부팅이 보류 중인 경우 서버가 다시 부팅되어 설치를 완료할 때까지 .NET 응용 프로그램이 실패할 수 있습니다.  
 
@@ -777,7 +782,7 @@ ms.lasthandoff: 02/28/2018
 
 -   .NET Framework 3.5 SP1 이상  
 
--   .NET Framework 4.5.2 이상 
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1 
 
 **IIS 구성:**
 
