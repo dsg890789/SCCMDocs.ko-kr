@@ -1,6 +1,7 @@
 #   이해 및 탐색
 ##  [Configuration Manager 소개](understand/introduction.md)
 ### [Configuration Manager에 대한 도움말 찾기](understand/find-help.md)
+### [문서 사용 방법](understand/use-docs.md)
 ### [접근성 기능](understand/accessibility-features.md)
 ### [소프트웨어 센터 사용자 가이드](understand/software-center.md)
 ##  [Configuration Manager의 기본 사항](understand/fundamentals.md)
