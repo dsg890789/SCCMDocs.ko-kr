@@ -12,11 +12,11 @@ ms.prod: configuration-manager
 ms.service: ''
 ms.technology: ''
 ms.assetid: d6bbc787-83a5-44b4-ad64-016e5da7413f
-ms.openlocfilehash: 1657cbacde468ef7c54f95524e0fa9607a1a0186
-ms.sourcegitcommit: e23350fe65ff99228274e465b24b5e163769f38f
+ms.openlocfilehash: 3d7ca4bb72f6f3f76855faac125385374347ba55
+ms.sourcegitcommit: d67c6246bb6027cd5501e772b0521f9272407c28
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="co-management-for-windows-10-devices"></a>Windows 10 장치의 공동 관리    
  이전 Windows 10 업데이트에서 이미 Windows 10 장치를 온-프레미스 AD(Active Directory)와 클라우드 기반 Azure AD에 동시에 조인할 수 있습니다(하이브리드 Azure AD). Configuration Manager 버전 1710부터 공동 관리에서는 이러한 향상된 기능을 통해 Configuration Manager 및 Intune을 모두 사용하여 Windows 10 버전 1709 장치를 동시에 관리할 수 있습니다. <!-- 1350871 -->
@@ -82,7 +82,7 @@ ms.lasthandoff: 04/20/2018
 ### <a name="install-configuration-manager-client-to-the-devices-enrolled-in-intune"></a>Intune에 등록된 장치에 Configuration Manager 클라이언트 설치
 Windows 10 장치를 Intune에 등록하는 경우 공동 관리를 위해 클라이언트를 준비하기 위해 [특정 명령줄 인수를 사용](/sccm/core/clients/manage/co-management-prepare#command-line-to-install-configuration-manager-client)하여 장치에 Configuration Manager 클라이언트를 설치할 수 있습니다. 그런 다음 Configuration Manager 콘솔에서 공동 관리를 사용하여 특정 Windows 10 장치의 Intune에 특정 워크로드를 이동하기 시작합니다.
 아직 Intune에 등록되지 않은 Windows 10 장치의 경우 Azure에서 자동 등록을 사용하여 장치를 등록할 수 있습니다. 새 Windows 10 장치의 경우 [Windows AutoPilot](https://docs.microsoft.com/intune/enrollment-autopilot)을 사용하여 OOBE(Out of Box Experience)를 구성할 수 있습니다. 여기에는 Intune에서 장치를 등록하는 자동 등록이 포함되어 있습니다.
- - Configuration Manager의 [클라우드 관리 게이트웨이](/sccm/core/clients/manage/manage-clients-internet#cloud-management-gateway) 사용(Intune을 사용하여 Configuration Manager 클라이언트를 설치하는 경우만 해당)
+ - Configuration Manager의 [클라우드 관리 게이트웨이](/sccm/core/clients/manage/manage-clients-internet#cloud-management-gateway)를 사용하도록 설정합니다(Intune을 사용하여 Configuration Manager 클라이언트를 설치하는 경우만 해당).
 
 ## <a name="monitor-co-management"></a>공동 관리 모니터링
 [공동 관리 대시보드](/sccm/core/clients/manage/co-management-dashboard)를 사용하면 사용자 환경에서 공동으로 관리되는 시스템을 검토할 수 있습니다. 그래프는 주의가 필요한 장치를 식별하는 데 도움이 될 수 있습니다.
