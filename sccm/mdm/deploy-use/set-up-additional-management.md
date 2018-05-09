@@ -1,26 +1,20 @@
 ---
-title: "추가 관리 설정"
+title: 추가 관리 설정
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager를 사용하여 추가 관리 설정"
-ms.custom: na
+description: System Center Configuration Manager를 사용하여 추가 관리 설정
 ms.date: 03/05/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 4877d674-6bbc-4e16-810c-daad70c74daa
-caps.latest.revision: "18"
-caps.handback.revision: "0"
-author: dougeby
-ms.author: dougeby
-manager: angrobe
-ms.openlocfilehash: e3aaefb1d240449467dc9744a3e959e21d3351d3
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 58a61dffbdd9b04d3e872e23f88ddc0ac864f99d
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-up-additional-management-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 추가 관리 설정
 
@@ -47,7 +41,7 @@ ms.lasthandoff: 10/12/2017
 - [비즈니스용 Skype 액세스](manage-skype-for-business-online-access.md)
 - [Dynamic CRM Online](manage-dynamics-crm-online-access.md)
 
-**MFA(다단계 인증)**를 사용하면 둘 이상의 확인 방법을 요구하여 사용자 로그인 및 트랜잭션에 중요한 두 번째 보안 계층을 추가할 수 있습니다.
+**MFA(다단계 인증)** 를 사용하면 둘 이상의 확인 방법을 요구하여 사용자 로그인 및 트랜잭션에 중요한 두 번째 보안 계층을 추가할 수 있습니다.
 이전에는 Intune 등록용으로 MFA를 설정하려면 Intune 콘솔 또는 Configuration Manager 콘솔로 이동해야 했습니다. 이제 [Microsoft Azure Portal](https://manage.windowsazure.com)에 Intune 자격 증명으로 로그인하고 Azure AD를 통해 MFA 설정을 구성합니다. 자세한 내용은 [Microsoft Intune용 다단계 인증](https://aka.ms/mfa_ad)을 참조하세요.
 
 > [!div class="button"]

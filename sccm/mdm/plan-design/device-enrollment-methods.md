@@ -1,26 +1,20 @@
 ---
-title: "하이브리드 MDM에 대한 장치 등록 방법"
+title: 하이브리드 MDM에 대한 장치 등록 방법
 titleSuffix: Configuration Manager
-description: "하이브리드 MDM에 대한 장치 등록 방법"
-ms.custom: na
+description: 하이브리드 MDM에 대한 장치 등록 방법
 ms.date: 03/05/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: b81d06dc-3844-4117-9937-16732a227994
-caps.latest.revision: "9"
-caps.handback.revision: "0"
-author: dougeby
-ms.author: dougeby
-manager: angrobe
-ms.openlocfilehash: 180f7699f184779d98db5ccedb296b409a119a30
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 89501e22c855f31264fbf94fe093d8ebde08708f
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="overview-of-device-enrollment-methods"></a>장치 등록 방법 개요
 

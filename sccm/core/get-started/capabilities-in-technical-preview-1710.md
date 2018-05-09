@@ -1,24 +1,20 @@
 ---
-title: "기술 미리 보기 1710 | Microsoft Docs"
+title: 기술 미리 보기 1710 | Microsoft Docs
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager용 Technical Preview 버전 1710에서 사용 가능한 기능에 대해 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager용 Technical Preview 버전 1710에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 11/20/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f4706a58-1f11-4eab-b1eb-3d1a0da02d0f
-author: erikje
-ms.author: erikje
-manager: angrobe
-ms.openlocfilehash: ed5f977df79114e1209cd3cc82d2e56e8e728c3d
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 730d14c5985c088d964761bb83043f3a34924486
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="capabilities-in-technical-preview-1710-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1710의 기능
 
@@ -71,7 +67,7 @@ PowerShell 스크립트 배포는 [Tech Preview 1706](/sccm/core/get-started/cap
 ## <a name="limit-windows-10-enhanced-telemetry-to-only-send-data-relevant-to-windows-analytics-device-health"></a>Windows 10 향상된 원격 분석을 Windows Analytics 장치 상태와 관련된 데이터만 전송하도록 제한
 <!-- 1356148 -->
 
-이 릴리스에서는 이제 Windows 10 원격 분석 데이터 컬렉션 수준을 **고급(제한적)**으로 설정할 수 있습니다. 이 설정을 사용하면 Windows 10 버전 1709 이상을 사용하여 **고급** 원격 분석 수준의 모든 데이터를 보고하는 장치가 없는 환경에서 장치에 대해 조치 가능한 통찰력을 얻을 수 있습니다.
+이 릴리스에서는 이제 Windows 10 원격 분석 데이터 컬렉션 수준을 **고급(제한적)** 으로 설정할 수 있습니다. 이 설정을 사용하면 Windows 10 버전 1709 이상을 사용하여 **고급** 원격 분석 수준의 모든 데이터를 보고하는 장치가 없는 환경에서 장치에 대해 조치 가능한 통찰력을 얻을 수 있습니다.
 
 고급(제한적) 원격 분석 수준에는 Windows Analytics와 관련된 **고급** 수준에서 수집된 데이터 하위 집합뿐 아니라 기본 레벨의 메트릭도 포함됩니다. 원격 분석 수준에 대한 자세한 내용은 [원격 분석 수준](https://docs.microsoft.com/windows/configuration/configure-windows-telemetry-in-your-organization#telemetry-levels)을 참조하세요.
 
@@ -104,7 +100,7 @@ Exploit Guard 정책 배포를 위한 준수 데이터는 Configuration Manager 
 
 Exploit Guard 및 구체적인 구성 요소와 규칙에 대한 자세한 내용은 Windows 설명서 라이브러리에 있는 [Windows Defender Exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)를 참조하세요.
 
-### <a name="prerequisites"></a>전제 조건
+### <a name="prerequisites"></a>필수 구성 요소
 관리되는 장치는 Windows 10 1709 Fall Creators Update 이상을 실행해야 하며 구성된 구성 요소 및 규칙에 따라 다음 요구 사항을 충족해야 합니다.
 
 |Exploit Guard 구성 요소 |추가 필수 구성 요소|

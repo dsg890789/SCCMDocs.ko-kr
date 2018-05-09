@@ -1,31 +1,26 @@
 ---
-title: "진단 데이터 사용"
+title: 진단 데이터 사용
 titleSuffix: Configuration Manager
-description: "Microsoft가 System Center Configuration Manager에서 수집하는 진단 및 사용 현황 데이터를 사용하는 방식을 알아봅니다."
-ms.custom: na
+description: Microsoft가 System Center Configuration Manager에서 수집하는 진단 및 사용 현황 데이터를 사용하는 방식을 알아봅니다.
 ms.date: 12/29/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a8021bc8-2799-41f4-83c2-e27d1242028c
-caps.latest.revision: "5"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: d34305ddb158a01c0d79189705af597344a56f8d
-ms.sourcegitcommit: da27d37cc4e4e06cf23758846cdd7acb617f744b
+manager: dougeby
+ms.openlocfilehash: fac92818a56b9ef7c7e8e6b923fb0d833f9053c2
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-diagnostics-and-usage-data-is-used-for-system-center-configuration-manager"></a>System Center Configuration Manager의 진단 및 사용 현황 데이터 사용 방법
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager가 수집한 진단 및 사용 현황 데이터는 제품이 작동되는 방식에 대한 피드백을 Microsoft에 거의 즉시 제공하므로 이를 사용하여 향후 업데이트가 조정됩니다. 또한 프로덕션에 있는 구성을 엔지니어링하고 테스트하는 데 도움이 되는 구성 데이터를 볼 수 있습니다. 예를 들면 다음과 같습니다.  
+System Center Configuration Manager가 수집한 진단 및 사용 현황 데이터는 제품이 작동되는 방식에 대한 피드백을 Microsoft에 거의 즉시 제공하므로 이를 사용하여 향후 업데이트가 조정됩니다. 또한 프로덕션에 있는 구성을 엔지니어링하고 테스트하는 데 도움이 되는 구성 데이터를 볼 수 있습니다. 예:  
 
 -   사이트 서버에서 사용되는 Windows Server 버전  
 

@@ -2,25 +2,19 @@
 title: 지원되는 사이트 시스템 서버
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager 사이트 또는 사이트 시스템 역할을 호스트하는 데 사용할 수 있는 Windows 버전을 알아봅니다.
-ms.custom: na
 ms.date: 04/17/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: 17905b4c-3895-4ad4-a69c-5e0d0fc5a8c3
-caps.latest.revision: 44
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 092fc9d47e0dc7bb7afe0e078bd835dd2d091226
-ms.sourcegitcommit: e23350fe65ff99228274e465b24b5e163769f38f
+ms.openlocfilehash: de7f340080111daf3f1b19e26aa838dc6db2e263
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="supported-operating-systems-for-system-center-configuration-manager-site-system-servers"></a>System Center Configuration Manager 사이트 시스템 서버에 대해 지원되는 운영 체제
 

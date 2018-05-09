@@ -1,25 +1,20 @@
 ---
-title: "콘솔에서 응용 프로그램 모니터링"
+title: 콘솔에서 응용 프로그램 모니터링
 titleSuffix: Configuration Manager
-description: "Configuration Manager에서 모니터링 작업 영역을 사용하여 업데이트, 준수 설정 및 응용 프로그램을 비롯한 소프트웨어 배포를 모니터링합니다."
-ms.custom: na
+description: Configuration Manager에서 모니터링 작업 영역을 사용하여 업데이트, 준수 설정 및 응용 프로그램을 비롯한 소프트웨어 배포를 모니터링합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-app
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 784c295c-b8b8-4202-ab9f-665908d49d6d
-caps.latest.revision: "5"
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
-ms.openlocfilehash: 015f4410f576fac90d913abfa30064b2eecb2a5b
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 4aed4ecda35fded9314ae54b6601deb6f8e07197
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="monitor-applications-from-the-system-center-configuration-manager-console"></a>System Center Configuration Manager 콘솔에서 응용 프로그램 모니터링
 
@@ -51,7 +46,7 @@ System Center Configuration Manager에서 소프트웨어 업데이트, 준수 �
 
 -   설치 오류  
 
- 한 응용 프로그램 배포에 두 개 이상의 호환성 상태가 적용되면 가장 낮은 호환성을 나타내는 집계 상태를 볼 수 있습니다. 예를 들면 다음과 같습니다.  
+ 한 응용 프로그램 배포에 두 개 이상의 호환성 상태가 적용되면 가장 낮은 호환성을 나타내는 집계 상태를 볼 수 있습니다. 예:  
 
     -   사용자가 두 개의 장치에 로그인하고 응용 프로그램이 첫 번째 장치에 성공적으로 설치되었지만 두 번째 장치에는 설치되지 못한 경우, 해당 사용자에 대한 응용 프로그램의 집계 배포 상태는 **오류**로 표시됩니다.  
 

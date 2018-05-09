@@ -1,24 +1,20 @@
 ---
-title: "BIOS-UEFI 변환을 관리하는 작업 순서 단계"
+title: BIOS-UEFI 변환을 관리하는 작업 순서 단계
 titleSuffix: Configuration Manager
-description: "UEFI로 전환하기 위해 FAT32 파티션을 준비하는 운영 체제 배포 작업 순서를 사용자 지정하는 방법을 알아봅니다."
-ms.custom: na
+description: UEFI로 전환하기 위해 FAT32 파티션을 준비하는 운영 체제 배포 작업 순서를 사용자 지정하는 방법을 알아봅니다.
 ms.date: 03/24/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-osd
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: bd3df04a-902f-4e91-89eb-5584b47d9efa
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: f2d53b7f525d4f827b78840a7f0d9482d203c08d
-ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
+manager: dougeby
+ms.openlocfilehash: 8c807f771d88701127c47d0290b6d8fc6bcb0f00
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="task-sequence-steps-to-manage-bios-to-uefi-conversion"></a>BIOS-UEFI 변환을 관리하는 작업 순서 단계
 Windows 10에서는 UEFI 사용 장치가 필요한 많은 새로운 보안 기능을 제공합니다. UEFI를 지원하지만 레거시 BIOS를 사용하는 최신 Windows PC가 있을 수 있습니다. 장치를 UEFI로 변환하려면 각 PC로 이동하여 하드 디스크를 다시 분할하고 펌웨어를 다시 구성해야 했습니다. Configuration Manager에서 작업 순서를 사용하여 하드 드라이브를 BIOS에서 UEFI로 변환할 준비를 하고, 현재 위치 업그레이드 프로세스의 일부로 BIOS에서 UEFI로 변환하고, 하드웨어 인벤토리의 일부로 UEFI 정보를 수집할 수 있습니다.
@@ -36,7 +32,7 @@ Configuration Manager 버전 1610부터 이제 새로운 변수인 TSUEFIDrive�
 2. 새 그룹의 **옵션** 탭에서 새 작업 순서 변수를 **_SMSTSBootUEFI**가 **true**와 **같지 않음**인 조건으로 추가합니다. 이렇게 하면 컴퓨터가 이미 UEFI 모드에서 실행 중인 경우 이 그룹의 단계가 실행되지 않습니다.
 
   ![BIOS-UEFI 그룹](../../core/get-started/media/BIOS-to-UEFI-group.png)
-3. 새 그룹 아래에 **컴퓨터 다시 시작** 작업 순서 단계를 추가합니다. **다시 시작한 후에 실행할 응용 프로그램을 지정하십시오.**에서 **이 작업 순서에 할당된 부팅 이미지**를 선택하여 Windows PE에서 컴퓨터를 시작합니다.  
+3. 새 그룹 아래에 **컴퓨터 다시 시작** 작업 순서 단계를 추가합니다. **다시 시작한 후에 실행할 응용 프로그램을 지정하십시오.** 에서 **이 작업 순서에 할당된 부팅 이미지**를 선택하여 Windows PE에서 컴퓨터를 시작합니다.  
 4. **옵션** 탭에서 작업 순서 변수를 **_SMSTSInWinPE = false**인 조건으로 추가합니다. 이렇게 하면 컴퓨터가 이미 Windows PE에서 실행 중인 경우 이 단계가 실행되지 않습니다.
 
   ![컴퓨터 다시 시작 단계](../../core/get-started/media/restart-in-windows-pe.png)
@@ -47,7 +43,7 @@ Configuration Manager 버전 1610부터 이제 새로운 변수인 TSUEFIDrive�
   2. FAT32 파티션의 속성으로 이동합니다. **변수** 필드에 **TSUEFIDrive**를 입력합니다. 작업 순서에서 이 변수를 발견하면 컴퓨터를 다시 시작하기 전에 UEFI 변환을 준비합니다.
     ![파티션 속성](../../core/get-started/media/partition-properties.png)
   3. 작업 순서 엔진이 상태를 저장하고 로그 파일을 저장하는 데 사용할 NTFS 파티션을 만듭니다.
-7. **컴퓨터 다시 시작** 작업 순서 단계를 추가합니다. **다시 시작한 후에 실행할 응용 프로그램을 지정하십시오.**에서 **이 작업 순서에 할당된 부팅 이미지**를 선택하여 Windows PE에서 컴퓨터를 시작합니다.  
+7. **컴퓨터 다시 시작** 작업 순서 단계를 추가합니다. **다시 시작한 후에 실행할 응용 프로그램을 지정하십시오.** 에서 **이 작업 순서에 할당된 부팅 이미지**를 선택하여 Windows PE에서 컴퓨터를 시작합니다.  
 
 ## <a name="convert-from-bios-to-uefi-during-an-in-place-upgrade"></a>현재 위치 업그레이드 중에 BIOS에서 UEFI로 변환
 Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞게 하드 디스크를 다시 분할하는 프로세스를 자동화하는 간단한 변환 도구를 소개하고 Windows 7에서 Windows 10으로의 현재 위치 업그레이드 프로세스에 변환 도구를 통합합니다. 펌웨어를 BIOS에서 UEFI로 변환하는 OEM 도구 및 운영 체제 업그레이드 작업 순서와 이 도구를 결합하면 Windows 10 크리에이터 업데이트로의 현재 위치 업그레이드 중에 BIOS에서 UEFI로 컴퓨터를 변환할 수 있습니다.

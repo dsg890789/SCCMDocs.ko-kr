@@ -1,26 +1,20 @@
 ---
-title: "운영 체제를 캡처하는 작업 순서 만들기"
+title: 운영 체제를 캡처하는 작업 순서 만들기
 titleSuffix: Configuration Manager
-description: "빌드 및 캡처 작업 순서는 운영 체제와 함께 특정 드라이버 및 소프트웨어 업데이트를 포함할 수 있는 참조 컴퓨터를 빌드합니다."
-ms.custom: na
+description: 빌드 및 캡처 작업 순서는 운영 체제와 함께 특정 드라이버 및 소프트웨어 업데이트를 포함할 수 있는 참조 컴퓨터를 빌드합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-osd
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 25e4ac68-0e78-4bbe-b8fc-3898b372c4e8
-caps.latest.revision: "19"
-caps.handback.revision: "0"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: c376a6b600e775f532410ad467b99cda1fbfc575
-ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
+manager: dougeby
+ms.openlocfilehash: a1ef2883bfeb61df55ff045b76e9bc45a11b4da2
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-a-task-sequence-to-capture-an-operating-system-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 운영 체제를 캡처하는 작업 순서 만들기
 
@@ -99,7 +93,7 @@ System Center Configuration Manager에서 작업 순서를 사용하여 컴퓨�
 
          OU(조직 구성 단위)도 지정할 수 있습니다. 이것은 컴퓨터 계정을 만들 OU의 LDAP X.500-고유 이름이 아직 없는 경우 이 이름을 지정하는 옵션 설정입니다.  
 
-    -   **계정**: 지정된 도메인에 가입할 권한이 있는 계정의 사용자 이름과 암호를 지정합니다. *도메인\사용자* 또는 *%변수%*등을 지정할 수 있습니다.  
+    -   **계정**: 지정된 도메인에 가입할 권한이 있는 계정의 사용자 이름과 암호를 지정합니다. *도메인\사용자* 또는 *%변수%* 등을 지정할 수 있습니다.  
 
         > [!IMPORTANT]  
         >  도메인 설정이나 작업 그룹 설정을 마이그레이션할 계획이라면 적절한 도메인 자격 증명을 입력해야 합니다.  

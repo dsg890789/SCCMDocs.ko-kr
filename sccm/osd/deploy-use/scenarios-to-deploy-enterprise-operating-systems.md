@@ -2,25 +2,19 @@
 title: 엔터프라이즈 운영 체제를 배포하는 시나리오
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager를 사용하여 엔터프라이즈 운영 체제를 배포하는 여러 시나리오에 대해 알아봅니다.
-ms.custom: na
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-osd
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-osd
+ms.topic: conceptual
 ms.assetid: f74fdb86-c7c2-447f-91f6-b42df6370d7f
-caps.latest.revision: 11
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: 29dfaf4521ae0fe10994538c5ced907a6223cae7
-ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
+manager: dougeby
+ms.openlocfilehash: d0beb10dca04fe26fb4add22b64ab61b53154185
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="scenarios-to-deploy-enterprise-operating-systems-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 엔터프라이즈 운영 체제를 배포하는 시나리오
 

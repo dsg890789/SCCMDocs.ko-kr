@@ -1,26 +1,20 @@
 ---
-title: "방화벽 및 도메인"
+title: 방화벽 및 도메인
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 통신을 준비하기 위해 방화벽, 포트 및 도메인을 설정합니다."
-ms.custom: na
+description: System Center Configuration Manager 통신을 준비하기 위해 방화벽, 포트 및 도메인을 설정합니다.
 ms.date: 2/6/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: d6993bba-f6bd-4639-adbf-efc1c638b2f3
-caps.latest.revision: "15"
-caps.handback.revision: "0"
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 999fe84933449d5624c8dbad1014291f8e5c2f7f
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: ee7494b582828014114d41eb6bb721a7e1fd5c16
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-up-firewalls-ports-and-domains-for-system-center-configuration-manager"></a>System Center Configuration Manager용 방화벽, 포트 및 도메인 설정
 

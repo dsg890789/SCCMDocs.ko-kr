@@ -1,26 +1,20 @@
 ---
-title: "Intune 구독 관리"
+title: Intune 구독 관리
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager와 연결된 Intune 구독 관리"
-ms.custom: na
+description: System Center Configuration Manager와 연결된 Intune 구독 관리
 ms.date: 06/02/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9b494767-68c1-47b1-9a86-591bff0ad491
-caps.latest.revision: "18"
-caps.handback.revision: "0"
-author: dougeby
-ms.author: dougeby
-manager: angrobe
-ms.openlocfilehash: a6bb27adeddc366526df699b69e95c6e7d6482ae
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 1b8390faa557f37b2ee148299079df81d3c13299
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manage-an-intune-subscription-associated-with-system-center-configuration-manager"></a>System Center Configuration Manager와 연결된 Intune 구독 관리
 

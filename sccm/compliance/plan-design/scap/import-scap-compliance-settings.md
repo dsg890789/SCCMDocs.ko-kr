@@ -1,28 +1,21 @@
 ---
 title: SCAP 준수 설정 가져오기
-titleSuffix: System Center Configuration Manager
+titleSuffix: Configuraton Manager
 description: SCAP 준수 설정을 구성 기준으로 가져와서 결과 내보내기
-ms.custom: na
 ms.date: 03/27/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-app
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-compliance
+ms.topic: conceptual
 ms.assetid: 0bdcb018-bac2-4540-b786-6242bac73ff4
-caps.latest.revision: 1
-caps.handback.revision: 0
-author: mestew
-ms.author: mstewart
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
 robots: noindex,nofollow
-ms.openlocfilehash: 5863f8b9a79e8e22e215e9feac7744b4a6ce279d
-ms.sourcegitcommit: 27da4be015f1496b7b89ebddb517a2685f1ecf74
+ms.openlocfilehash: 1f6b1fa0dd0775083eff9925a65509083b3f47d3
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="import-the-compliance-settings-compliant-cab-files-into-system-center-configuration-manager"></a>준수 설정을 준수하는 .cab 파일을 System Center Configuration Manager로 가져오기
 
@@ -49,7 +42,7 @@ ms.lasthandoff: 03/28/2018
 | 마법사 페이지 이름 | 사용자 작업 |
 | --- | --- |
 | **파일 선택** |1. **추가**를 클릭합니다. </br>열기 대화 상자가 나타납니다.|
-||2. **열기** 대화 상자에서 **&lt;규격 cab 출력\_폴더 &gt;**로 이동합니다. Sces.ScapToDcm.exe 도구를 실행할 때 _compliant cab **출력\_폴더**가 –output 스위치 다음에 지정된 폴더인 경우 **&lt; 규격\_cab&gt;**.cab 파일을 클릭합니다. **규격\_파일**은 이전에 프로세스에서 만든 .cab 파일의 이름입니다. 그런 다음, **열기**를 클릭합니다. </br> Configuration Manager 콘솔 – 보안 경고 대화 상자가 나타납니다.|
+||2. **열기** 대화 상자에서 **&lt;규격 cab 출력\_폴더 &gt;** 로 이동합니다. Sces.ScapToDcm.exe 도구를 실행할 때 _compliant cab **출력\_폴더**가 –output 스위치 다음에 지정된 폴더인 경우 **&lt; 규격\_cab&gt;**.cab 파일을 클릭합니다. **규격\_파일**은 이전에 프로세스에서 만든 .cab 파일의 이름입니다. 그런 다음, **열기**를 클릭합니다. </br> Configuration Manager 콘솔 – 보안 경고 대화 상자가 나타납니다.|
 ||3. **Configuration Manager 콘솔 – 보안 경고** 대화 상자에서 **실행**을 클릭합니다. 파일 선택 페이지에서 가져올 기준 목록에 구성 데이터가 나타납니다.|
 ||3. **다음**을 클릭합니다.|
 | **요약** |5. **다음**을 클릭합니다. |
@@ -74,8 +67,8 @@ SCAP 준수를 평가하려는 컴퓨터에 대해 적합한 컴퓨터 컬렉션
 
 1. **Configuration Manager** **콘솔**을 엽니다.
 
-2. **Configuration Manager 콘솔의 탐색 창에서 **자산 및 준수** > **준수 설정** >**구성 기준**으로 이동합니다.
-3. 탐색 창에서 &lt;**구성\_기준>을 클릭합니다. 여기서 &lt;_구성\_기준&gt;_은 컴퓨터 컬렉션에 할당하려는 구성 기준의 이름입니다.
+2. **Configuration Manager 콘솔의 탐색 창에서 **자산 및 준수** > **준수 설정** >** 구성 기준**으로 이동합니다.
+3. 탐색 창에서 &lt;**구성\_기준>을 클릭합니다. 여기서 &lt;_구성\_기준&gt;_ 은 컴퓨터 컬렉션에 할당하려는 구성 기준의 이름입니다.
 
     구성 기준에 대한 구성 항목 목록이 Configuration Manager의 정보 창에 표시됩니다.
 
@@ -88,7 +81,7 @@ SCAP 준수를 평가하려는 컴퓨터에 대해 적합한 컴퓨터 컬렉션
 | 마법사 페이지 이름 | 사용자 작업 |
 | --- | --- |
 | **컬렉션 선택** | 1. **찾아보기**를 클릭합니다.|
-||2. **컬렉션 선택** 대화 상자에서 **장치 컬렉션**을 선택합니다. 그런 다음, **&lt;컴퓨터\_컬렉션&gt;**을 클릭합니다. 여기서 &lt;_컴퓨터\_컬렉션&gt;_은 이전에 프로세스에서 만든 컴퓨터 컬렉션의 이름입니다. **확인**을 클릭합니다.|
+||2. **컬렉션 선택** 대화 상자에서 **장치 컬렉션**을 선택합니다. 그런 다음, **&lt;컴퓨터\_컬렉션&gt;** 을 클릭합니다. 여기서 &lt;_컴퓨터\_컬렉션&gt;_ 은 이전에 프로세스에서 만든 컴퓨터 컬렉션의 이름입니다. **확인**을 클릭합니다.|
 | **일정 설정** |3. 조직에 적합한 일정을 선택합니다.|
  
 >[!IMPORTANT]

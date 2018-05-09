@@ -2,25 +2,19 @@
 title: OSD 인프라 요구 사항
 titleSuffix: Configuration Manager
 description: 외부 및 제품 종속성과 운영 체제 배포에 대한 요구 사항을 알아봅니다.
-ms.custom: na
 ms.date: 03/22/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-osd
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.technology: configmgr-osd
+ms.topic: conceptual
 ms.assetid: 1dc74219-7ff5-4e3b-b4f6-5aad663bb75b
-caps.latest.revision: 24
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 36e49206154a1c061fb8266e0c8ed8691cc4d4f0
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 6407344676230c12c66abb02c1394032e102e4b8
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="infrastructure-requirements-for-os-deployment-in-system-center-configuration-manager"></a>System Center Configuration Manager의 OS 배포에 대한 인프라 요구 사항
 

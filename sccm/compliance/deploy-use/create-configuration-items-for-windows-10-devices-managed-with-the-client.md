@@ -1,26 +1,20 @@
 ---
-title: "클라이언트 관리 Windows 10의 구성 항목 만들기 "
+title: '클라이언트 관리 Windows 10의 구성 항목 만들기 '
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager Windows 10 구성 항목을 사용하여 Configuration Manager 클라이언트에서 관리되는 Windows 10 컴퓨터에 대한 설정을 관리할 수 있습니다."
-ms.custom: na
+description: System Center Configuration Manager Windows 10 구성 항목을 사용하여 Configuration Manager 클라이언트에서 관리되는 Windows 10 컴퓨터에 대한 설정을 관리할 수 있습니다.
 ms.date: 03/28/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-compliance
+ms.topic: conceptual
 ms.assetid: 14226fbe-dd07-4432-910b-130790624a4e
-caps.latest.revision: "17"
-caps.handback.revision: "0"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: 4f22ab22ec666c55962231bf92a42b25c4a7c127
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: bdb48689efba4c6f884d4c36c1a4dee0bbcc6b65
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-create-configuration-items-for-windows-10-devices-managed-with-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트에서 관리되는 Windows 10 장치에 대한 구성 항목을 만드는 방법
 System Center Configuration Manager **Windows 10** 구성 항목을 사용하여 Configuration Manager 클라이언트에서 관리되는 Windows 10 컴퓨터에 대한 설정을 관리할 수 있습니다.  
@@ -32,7 +26,7 @@ System Center Configuration Manager **Windows 10** 구성 항목을 사용하여
   
 ### <a name="to-create-a-windows-10-configuration-item"></a>Windows 10 구성 항목을 만들려면  
   
-1.  Configuration Manager 콘솔에서 **자산 및 준수**를 클릭합니다.  
+1.  Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.  
   
 2.  **자산 및 준수** 작업 영역에서 **준수 설정**을 확장하고 **구성 항목**을 클릭합니다.  
   

@@ -1,26 +1,20 @@
 ---
-title: "비준수에 대한 작업"
+title: 비준수에 대한 작업
 titleSuffix: Configuration Manager
-description: "Configuration Manager를 준수하지 않는 작업을 설정하는 방법을 알아봅니다."
-ms.custom: na
+description: Configuration Manager를 준수하지 않는 작업을 설정하는 방법을 알아봅니다.
 ms.date: 11/10/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ad8fa94d-45bb-4c94-8d86-31234c5cf21c
-caps.latest.revision: "18"
-caps.handback.revision: "0"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: 1dd10d9452fae85f2ecc3d3077fba420454ef337
-ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: be17e1f2b5c3fec02cdd6fc5f89aee9319c4dbb4
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-up-actions-for-non-compliance"></a>비준수에 대한 작업 설정
 
@@ -89,7 +83,7 @@ Configuration Manager에서 전자 메일 템플릿을 제공하지만 직접 �
     b. **추가 받는 사람(전자 메일을 통해)** c. **메시지 템플릿 선택:** 기본 전자 메일 템플릿 또는 사용자가 추가한 사용자 지정 템플릿을 선택할 수 있습니다.
     
     > [!TIP] 
-    > **작업 추가** 페이지에서 **새로 만들기:**를 클릭하여 **최종 사용자에게 전자 메일 보내기** 작업을 추가할 때 새 전자 메일 템플릿을 추가할 수도 있습니다.
+    > **작업 추가** 페이지에서 **새로 만들기:** 를 클릭하여 **최종 사용자에게 전자 메일 보내기** 작업을 추가할 때 새 전자 메일 템플릿을 추가할 수도 있습니다.
 
 8. **비준수 장치 표시**를 선택하는 경우 다음을 입력해야 합니다. **유예 기간(일):** 0-365일을 입력할 수 있습니다.
 

@@ -1,26 +1,20 @@
 ---
-title: "소프트웨어 인벤토리"
+title: 소프트웨어 인벤토리
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager의 소프트웨어 인벤토리를 소개합니다."
-ms.custom: na
+description: System Center Configuration Manager의 소프트웨어 인벤토리를 소개합니다.
 ms.date: 2/22/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.technology: configmgr-client
+ms.topic: conceptual
 ms.assetid: 79eb49da-cd2b-4ffc-b355-b595aeba3aea
-caps.latest.revision: "5"
-caps.handback.revision: "0"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: f3928e1f90b45c3dcf0d3b5202ae1a84bbe408fb
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 4fe27423391cbdc4767e18a06c73b23cbb302ab5
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="introduction-to-software-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 인벤토리 소개
 

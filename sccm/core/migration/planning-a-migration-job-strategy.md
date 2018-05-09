@@ -1,27 +1,21 @@
 ---
-title: "마이그레이션 작업 계획"
+title: 마이그레이션 작업 계획
 titleSuffix: Configuration Manager
-description: "마이그레이션 작업을 사용하면 System Center Configuration Manager 환경으로 마이그레이션할 데이터를 구성할 수 있습니다."
-ms.custom: na
+description: 마이그레이션 작업을 사용하면 System Center Configuration Manager 환경으로 마이그레이션할 데이터를 구성할 수 있습니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a70bfbd4-757a-4468-9312-1c3b373ef9fc
-caps.latest.revision: "6"
-caps.handback.revision: "0"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
+manager: dougeby
 robots: noindex
-ms.openlocfilehash: 96fb65352042c7785dded06251b57cea04b293d7
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+ms.openlocfilehash: 0481abfb1ed881355a489b99b0c3f7ec9c595e69
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="plan-a-migration-job-strategy-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 마이그레이션 작업 전략 계획
 

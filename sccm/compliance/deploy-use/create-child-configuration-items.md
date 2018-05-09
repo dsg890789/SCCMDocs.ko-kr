@@ -1,26 +1,20 @@
 ---
-title: "하위 구성 항목 만들기"
+title: 하위 구성 항목 만들기
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 자식 구성 항목을 만듭니다."
-ms.custom: na
+description: System Center Configuration Manager에서 자식 구성 항목을 만듭니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-compliance
+ms.topic: conceptual
 ms.assetid: 113984fa-6150-41a1-89ed-d2a83b979732
-caps.latest.revision: "5"
-caps.handback.revision: "0"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: c1a59bbedbe157c491800064ba54079c4a980b04
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 358f2d67a5a4689927632bb1492ace1a33490451
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-create-child-configuration-items-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 자식 구성 항목을 만드는 방법
 
@@ -32,7 +26,7 @@ Configuration Manager 콘솔에서 자식 구성 항목의 속성을 볼 때 상
 자식 구성 항목을 만들고 편집하는 일반적인 목적은 원본 구성 항목을 구체화하여 비즈니스 요구 사항을 충족하기 위해서입니다.  
 
 > [!NOTE]  
->  자식 구성 항목은 **Windows 데스크톱 및 서버(사용자 지정)**형식의 구성 항목에서만 만들 수 있습니다.  
+>  자식 구성 항목은 **Windows 데스크톱 및 서버(사용자 지정)** 형식의 구성 항목에서만 만들 수 있습니다.  
 
 ## <a name="to-create-a-child-configuration-item"></a>자식 구성 항목을 만들려면  
 

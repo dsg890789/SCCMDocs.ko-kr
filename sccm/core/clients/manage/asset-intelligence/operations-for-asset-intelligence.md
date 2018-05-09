@@ -1,27 +1,20 @@
 ---
-title: "Asset Intelligence 사용"
+title: Asset Intelligence 사용
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 일반적인 Asset Intelligence 작업을 수행합니다."
-ms.custom: na
+description: System Center Configuration Manager에서 일반적인 Asset Intelligence 작업을 수행합니다.
 ms.date: 2/22/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: e8159bd9-5c2b-4d25-82f9-78fcfd732ba9
-caps.latest.revision: 
-caps.handback.revision: 
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: 7838f087c18a2cfad6ff487ff987e638906faf6a
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 7d12fb7f3c7e14df57ec23074de23bfcf53e6c4b
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-use-asset-intelligence-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Asset Intelligence를 사용하는 방법
 
@@ -155,7 +148,7 @@ ms.lasthandoff: 10/12/2017
 6.  **완료** 페이지에서 **닫기** 를 클릭하여 마법사를 종료합니다.  
 
 ###  <a name="BKMK_SoftwareLabels"></a> 소프트웨어 레이블  
- Asset Intelligence 사용자 지정 소프트웨어 레이블을 통해 Asset Intelligence 보고서를 사용하여 소프트웨어 타이틀을 그룹화하고 보는 데 사용할 수 있는 필터를 만들 수 있습니다. 예를 들어 셰어웨어라는 소프트웨어 레이블을 만들고 여러 응용 프로그램과 연결한 다음 셰어웨어의 소프트웨어 레이블을 사용하는 모든 타이틀을 표시하는 보고서를 만들 수 있습니다. Asset Intelligence 카탈로그에 추가하는 모든 사용자 지정 소프트웨어 레이블에 대한 유효성 검사 상태는 **사용자 정의됨** 입니다.  
+ Asset Intelligence 사용자 지정 소프트웨어 레이블을 소프트웨어 타이틀을 그룹화 하 고 Asset Intelligence 보고서를 사용 하 여 볼를 사용할 수 있는 필터를 만들 수 있습니다. 예를 들어 셰어웨어라는 소프트웨어 레이블을 만들고 여러 응용 프로그램과 연결한 다음 셰어웨어의 소프트웨어 레이블을 사용하는 모든 타이틀을 표시하는 보고서를 만들 수 있습니다. Asset Intelligence 카탈로그에 추가하는 모든 사용자 지정 소프트웨어 레이블에 대한 유효성 검사 상태는 **사용자 정의됨** 입니다.  
 
  다음 절차를 사용하여 사용자 정의 사용자 지정 레이블을 만들 수 있습니다.  
 
@@ -267,7 +260,7 @@ ms.lasthandoff: 10/12/2017
 6.  Asset Intelligence 카탈로그에 있는 소프트웨어에 대한 분류 정보를 되돌리면 유효성 검사 상태가 **사용자 정의됨** 에서 **유효성 검사됨**으로 변경됩니다. 카탈로그에 없는 소프트웨어를 되돌리면 유효성 검사 상태가 **사용자 정의됨** 에서 **범주화되지 않음**으로 변경됩니다.  
 
 ##  <a name="BKMK_RequestCatalogUpdate"></a> 범주화되지 않은 소프트웨어 타이틀에 대한 카탈로그 업데이트 요청  
- 연구 및 분류하기 위해 범주화되지 않은 소프트웨어 타이틀 정보를 System Center Online에 제출할 수 있습니다. 범주화되지 않은 소프트웨어 타이틀이 제출되면 동일한 소프트웨어 타이틀에 대해 고객으로부터 최소 4개의 범주화 요청이 있으며, 연구원은 소프트웨어 타이틀 분류 정보를 식별하고 분류한 다음 System Center Online 서비스를 사용하는 모든 고객에게 해당 정보를 제공합니다. Microsoft는 분류를 위해 가장 많은 요청이 있는 소프트웨어 타이틀에 대해 가장 높은 우선 순위를 부여합니다. 사용자 지정 소프트웨어 및 기간 업무 응용 프로그램은 하나의 범주 및 모범 사례로 받을 가능성이 낮으므로 이러한 소프트웨어 타이틀은 분류를 위해 Microsoft에 보내지 않는 것이 좋습니다.  
+ System Center Online을 연구 및 분류에 대 한 분류 되지 않은 소프트웨어 제목 정보를 제출할 수 있습니다. 범주화되지 않은 소프트웨어 타이틀이 제출되면 동일한 소프트웨어 타이틀에 대해 고객으로부터 최소 4개의 범주화 요청이 있으며, 연구원은 소프트웨어 타이틀 분류 정보를 식별하고 분류한 다음 System Center Online 서비스를 사용하는 모든 고객에게 해당 정보를 제공합니다. Microsoft는 분류를 위해 가장 많은 요청이 있는 소프트웨어 타이틀에 대해 가장 높은 우선 순위를 부여합니다. 사용자 지정 소프트웨어 및 기간 업무 응용 프로그램은 하나의 범주 및 모범 사례로 받을 가능성이 낮으므로 이러한 소프트웨어 타이틀은 분류를 위해 Microsoft에 보내지 않는 것이 좋습니다.  
 
  분류를 위해 소프트웨어 타이틀 정보가 System Center Online에 제출되는 경우 다음 조건이 적용됩니다.  
 
@@ -310,7 +303,7 @@ ms.lasthandoff: 10/12/2017
     >  분류를 위해 System Center Online에 제출된 소프트웨어는 중앙 관리 사이트에서 유효성 검사 상태가 **보류 중** 이므로 하위 기본 사이트에서는 여전히 **범주화되지 않음** 의 유효성 확인 상태로 표시됩니다.  
 
 ##  <a name="BKMK_ResolveSoftwareDetails"></a> 소프트웨어 세부 정보 충돌 해결  
- 기존 소프트웨어 세부 정보와 충돌하는 새로 업데이트된 소프트웨어 분류 세부 정보를 System Center Online에서 받은 경우 충돌을 해결하는 방법을 선택할 수 있습니다. 현재 충돌이 있는 소프트웨어의 유효성 검사 상태는 **업데이트 가능**입니다. 소프트웨어 세부 정보 충돌이 해결된 후에는 지정하는 설정에 따라 소프트웨어 분류 정보가 Asset Intelligence 카탈로그에 유지됩니다. 충돌이 해결된 후 동일한 소프트웨어 분류 값에 대해 System Center Online 값이 변경되지 않는 한 소프트웨어 세부 정보 충돌이 다시 발생하지 않습니다.  
+ 새로 업데이트 된 소프트웨어 분류 System Center 온라인에서 기존 소프트웨어 세부 정보를 충돌할 수 있는 세부 정보를 받은 후 충돌을 해결 하는 방법을 선택할 수 있습니다. 현재 충돌이 있는 소프트웨어의 유효성 검사 상태는 **업데이트 가능**입니다. 소프트웨어 세부 정보 충돌이 해결된 후에는 지정하는 설정에 따라 소프트웨어 분류 정보가 Asset Intelligence 카탈로그에 유지됩니다. 충돌이 해결된 후 동일한 소프트웨어 분류 값에 대해 System Center Online 값이 변경되지 않는 한 소프트웨어 세부 정보 충돌이 다시 발생하지 않습니다.  
 
  다음 절차를 사용하여 소프트웨어 세부 정보 충돌 문제를 해결할 수 있습니다.  
 

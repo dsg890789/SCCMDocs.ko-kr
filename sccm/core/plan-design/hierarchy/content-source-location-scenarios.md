@@ -2,26 +2,20 @@
 title: 콘텐츠 원본 위치
 titleSuffix: Configuration Manager
 description: 클라이언트가 저속 네트워크에서 콘텐츠를 찾을 수 있도록 하는 System Center Configuration Manager 설정에 대해 알아봅니다.
-ms.custom: na
 ms.date: 1/3/2017
-ms.reviewer: na
-ms.suite: na
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: 70b5cbc0-64ba-49bd-8b34-fb4c09b2b95b
-caps.latest.revision: ''
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
+manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: 8db263c6a2ae7792cea50b1c41a377a7f05314b4
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: c552c58ca44943f1c5be6e2ffc9efc807c0cc41b
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="content-source-location-scenarios-in-system-center-configuration-manager"></a>System Center Configuration Manager의 콘텐츠 원본 위치 시나리오
 

@@ -2,22 +2,19 @@
 title: Office 365 ProPlus 업데이트 관리
 titleSuffix: Configuration Manager
 description: Configuration Manager는 WSUS 카탈로그의 Office 365 클라이언트 업데이트를 사이트 서버와 동기화하여 업데이트를 클라이언트에 배포할 수 있게 합니다.
-keywords: ''
-author: mestew
-ms.author: mstewart
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
 ms.date: 03/26/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: configuration-manager
-ms.service: ''
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
-ms.openlocfilehash: 4fbbe4b6792c51cd7adeeae3a96f81927153362c
-ms.sourcegitcommit: a19e12d5c3198764901d44f4df7c60eb542e765f
+ms.openlocfilehash: a7c1786e9acce10d98da031d9d5df3b81f9a1a28
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manage-office-365-proplus-with-configuration-manager"></a>Configuration Manager를 사용하여 Office 365 ProPlus 관리
 
@@ -43,7 +40,7 @@ Office 365 클라이언트 관리 대시보드는 다음 정보에 대한 차트
 - Office 365 클라이언트 버전
 - Office 365 클라이언트 언어
 - Office 365 클라이언트 채널     
-  자세한 내용은 [Office 365 ProPlus의 업데이트 채널 개요](https://technet.microsoft.com/library/mt455210.aspx)를 참조하세요.
+  자세한 내용은 [Office 365 ProPlus의 업데이트 채널 개요](/DeployOffice/overview-of-update-channels-for-office-365-proplus)를 참조하세요.
 
 Configuration Manager 콘솔에서 Office 365 클라이언트 관리 대시보드를 보려면 **소프트웨어 라이브러리** > **개요** > **Office 365 클라이언트 관리**로 이동합니다. 대시보드 맨 위에 있는 **컬렉션** 드롭다운 설정을 사용하여 특정 컬렉션 멤버별로 대시보드 데이터를 필터링합니다. Configuration Manager 버전 1802부터 그래프 섹션을 선택하면 Office 365 클라이언트 관리 대시보드에서는 관련 장치의 목록을 표시합니다.
 
@@ -83,7 +80,7 @@ Office 365 클라이언트 관리 대시보드에 표시되는 데이터는 하�
 
     기존 구성 파일이 있는 경우 해당 파일의 위치를 입력하고 7단계로 건너뜁니다. 위치는 &#92;&#92;*server*&#92;*share*&#92;*filename*.XML 형식으로 지정해야 합니다.
     > [!IMPORTANT]    
-    > XML 구성 파일은 [Office 365 ProPlus 클라이언트에서 지원하는 언어](https://technet.microsoft.com/library/cc179219&#40;v=office.16&#41;.aspx)만 포함해야 합니다.
+    > XML 구성 파일은 [Office 365 ProPlus 클라이언트에서 지원하는 언어](/DeployOffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016)만 포함해야 합니다.
 
 5. **클라이언트 제품** 페이지에서 사용할 Office 365 제품군을 선택합니다. 포함하려는 응용 프로그램을 선택합니다. 포함해야 하는 추가 Office 제품을 선택하고 **다음**을 클릭합니다.
 6. **클라이언트 설정** 페이지에서 포함할 설정을 선택하고 **다음**을 클릭합니다.
@@ -103,7 +100,7 @@ Configuration Manager 버전 1706부터 Office 365 클라이언트 업데이트�
 
 Configuration Manager를 사용하여 Office 365 업데이트를 배포하려면 다음 단계를 따르세요.
 
-1.  이 문서의 **Configuration Manager를 사용하여 Office 365 클라이언트 업데이트를 관리하기 위한 요구 사항** 섹션에서 Configuration Manager를 사용하여 Office 365 클라이언트 업데이트를 관리하기 위한 [요구 사항을 확인](https://technet.microsoft.com/library/mt628083.aspx)합니다.  
+1.  이 문서의 **Configuration Manager를 사용하여 Office 365 클라이언트 업데이트를 관리하기 위한 요구 사항** 섹션에서 Configuration Manager를 사용하여 Office 365 클라이언트 업데이트를 관리하기 위한 [요구 사항을 확인](/DeployOffice/manage-updates-to-office-365-proplus-with-system-center-configuration-manager#requirements-for-using-configuration-manager-to-manage-office-365-client-updates)합니다.  
 
 2.  [소프트웨어 업데이트 지점을 구성](../get-started/configure-classifications-and-products.md)하여 Office 365 클라이언트 업데이트를 동기화합니다. 분류에 대한 **업데이트**를 설정하고 제품에 대한 **Office 365 클라이언트**를 선택합니다. **업데이트** 분류를 사용하도록 소프트웨어 업데이트 지점을 구성한 후 소프트웨어 업데이트를 동기화합니다.
 3.  Office 365 클라이언트가 Configuration Manager에서 업데이트를 받을 수 있도록 합니다. Configuration Manager 클라이언트 설정 또는 그룹 정책을 사용하여 클라이언트를 사용하도록 설정합니다.   
@@ -116,7 +113,7 @@ Configuration Manager를 사용하여 Office 365 업데이트를 배포하려면
 
       3.  **소프트웨어 업데이트**를 클릭하고 **Office 365 클라이언트 에이전트 관리 사용** 설정에 대해 **예**를 선택합니다.  
 
-    **방법 2**: Office 배포 도구 또는 그룹 정책을 사용하여 Configuration Manager에서 [Office 365 클라이언트가 업데이트를 받도록 설정](https://technet.microsoft.com/library/mt628083.aspx#BKMK_EnableClient)합니다.  
+    **방법 2**: Office 배포 도구 또는 그룹 정책을 사용하여 Configuration Manager에서 [Office 365 클라이언트가 업데이트를 받도록 설정](/DeployOffice/manage-updates-to-office-365-proplus-with-system-center-configuration-manager#BKMK_EnableClient)합니다.  
 
 4. 클라이언트에 [Office 365 업데이트를 배포](deploy-software-updates.md)합니다.   
 
@@ -158,7 +155,7 @@ Configuration Manager의 지원 여부와 관계 없이 Office 365에서 지원�
 ### <a name="to-add-support-to-download-updates-for-additional-languages"></a>추가 언어의 업데이트 다운로드 지원을 추가하려면
 중앙 관리 사이트나 독립 실행형 기본 사이트의 소프트웨어 업데이트 지점에서 다음 절차를 사용합니다.
 1. 명령 프롬프트에서 관리자 권한으로 *wbemtest*를 입력하여 Windows Management Instrumentation 테스터를 엽니다.
-2. **연결**을 클릭한 후 *root\sms\site_&lt;siteCode&gt;*를 입력합니다.
+2. **연결**을 클릭한 후 *root\sms\site_&lt;siteCode&gt;* 를 입력합니다.
 3. **쿼리**를 클릭한 후 다음 쿼리를 실행합니다. *select &#42; from SMS_SCI_Component where componentname ="SMS_WSUS_CONFIGURATION_MANAGER"*  
    ![WMI 쿼리](..\media\1-wmiquery.png)
 4. 결과 창에서 중앙 관리 사이트 또는 독립 실행형 기본 사이트의 사이트 코드가 있는 개체를 두 번 클릭합니다.

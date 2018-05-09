@@ -2,25 +2,19 @@
 title: 기술 미리 보기 1702의 기능
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager용 Technical Preview 버전 1702에서 사용 가능한 기능에 대해 알아봅니다.
-ms.custom: na
 ms.date: 02/24/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: aedd608d-6db3-4ea5-851d-70f2dcda6bb5
-caps.latest.revision: 5
-author: erikje
-ms.author: erikje
-manager: angrobe
-ms.openlocfilehash: 94c025a75cd0aef62ee00c11b8ee5a113fba2bb1
-ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: dc1fc6668c61f2eafe04f92fc6b9ea27520ddc43
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="capabilities-in-technical-preview-1702-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1702의 기능
 
@@ -143,7 +137,7 @@ Windows Update for Business 업데이트에 대한 준수 평가 정보를 수�
 2. **준수 정책 만들기**를 클릭하거나 수정할 기존 준수 정책을 선택합니다.
 3. 일반 페이지에서 이름 및 설명을 입력하고 **Configuration Manager 클라이언트를 사용하여 관리되는 장치에 대한 준수 규칙**을 선택한 다음 보고할 비준수 심각도를 설정하고 **다음**을 클릭합니다.
 4. 지원되는 플랫폼 페이지에서 **Windows 10**을 선택하고 **다음**을 클릭합니다.
-5. 규칙 페이지에서 **새로 만들기...**를 클릭한 다음 **조건**에 대해 **Windows Update for Business 준수 필요**를 선택합니다. **값** 설정이 자동으로 **True**로 설정됩니다.
+5. 규칙 페이지에서 **새로 만들기...** 를 클릭한 다음 **조건**에 대해 **Windows Update for Business 준수 필요**를 선택합니다. **값** 설정이 자동으로 **True**로 설정됩니다.
 
 새 정책이 **자산 및 준수** 작업 영역의 **준수 정책** 노드에 표시됩니다.
 

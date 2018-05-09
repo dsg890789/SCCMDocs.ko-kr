@@ -1,25 +1,20 @@
 ---
-title: "클라이언트 깨우기"
+title: 클라이언트 깨우기
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 클라이언트의 최대 절전 모드를 해제하는 방법을 계획합니다."
-ms.custom: na
+description: System Center Configuration Manager에서 클라이언트의 최대 절전 모드를 해제하는 방법을 계획합니다.
 ms.date: 04/23/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-client
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 52ee82b2-0b91-4829-89df-80a6abc0e63a
-caps.latest.revision: "6"
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.openlocfilehash: 2f22aa98b8184fe302c72d2b439750cf8ef25d38
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: aa5a0b30526f66add7dfb87fa988ed502cca1ee1
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="plan-how-to-wake-up-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트의 절전 모드 해제 계획
 
@@ -57,7 +52,7 @@ ms.lasthandoff: 10/12/2017
 
 -   지원되는 클라이언트는 Windows 7, Windows 8, Windows Server 2008 R2, Windows Server 2012 등입니다.  
 
--   가상 컴퓨터에서 실행되는 게스트 운영 체제는 지원되지 않습니다.  
+-   가상 머신에서 실행되는 게스트 운영 체제는 지원되지 않습니다.  
 
 -   클라이언트는 클라이언트 설정을 사용하여 절전 모드 해제 프록시를 지원해야 합니다. 절전 모드 해제 프록시 작업은 하드웨어 인벤토리에 종속되지 않지만 클라이언트는 하드웨어 인벤토리를 지원하지 않고 하나 이상의 하드웨어 인벤토리를 제출하지 않는 한 절전 모드 해제 프록시 서비스의 설치를 보고하지 않습니다.  
 

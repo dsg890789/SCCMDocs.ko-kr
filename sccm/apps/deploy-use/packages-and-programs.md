@@ -1,26 +1,20 @@
 ---
-title: "패키지 및 프로그램"
+title: 패키지 및 프로그램
 titleSuffix: Configuration Manager
-description: "패키지 및 프로그램을 사용하는 배포 또는 System Center Configuration Manager의 응용 프로그램을 사용하는 배포를 지원합니다."
-ms.custom: na
+description: 패키지 및 프로그램을 사용하는 배포 또는 System Center Configuration Manager의 응용 프로그램을 사용하는 배포를 지원합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-app
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: caad0507-9913-415a-b13d-d36f8f0a1b80
-caps.latest.revision: "8"
-caps.handback.revision: "0"
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
-ms.openlocfilehash: 7712721167edad5808c46827f68fc32a2b890bfd
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 6f34fd322e5f94550602d7883a0303d10059b702
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="packages-and-programs-in-system-center-configuration-manager"></a>System Center Configuration Manager의 패키지 및 프로그램
 
@@ -94,7 +88,7 @@ System Center Configuration Manager는 Configuration Manager 2007에서 사용�
 
             파일 이름에 지정된 확장명이 없는 경우 Configuration Manager는 .com, .exe 및 .bat를 가능한 확장명으로 사용하려고 시도합니다.  
 
-             프로그램이 클라이언트에서 실행되면 Configuration Manager는 명령줄 파일 이름을 먼저 패키지 안에서 검색하고 로컬 Windows 폴더에서 검색한 다음 로컬 *%path%*에서 검색합니다. 파일을 찾을 수 없는 경우 프로그램이 실패합니다.  
+             프로그램이 클라이언트에서 실행되면 Configuration Manager는 명령줄 파일 이름을 먼저 패키지 안에서 검색하고 로컬 Windows 폴더에서 검색한 다음 로컬 *%path%* 에서 검색합니다. 파일을 찾을 수 없는 경우 프로그램이 실패합니다.  
 
         -   **시작 폴더**(선택 사항): 이 필드를 사용하여 프로그램이 실행되는 폴더를 최대 127자로 지정합니다. 이 폴더는 클라이언트상의 절대 경로 또는 패키지가 포함된 배포 지점 폴더의 상대 경로가 될 수 있습니다.
 
@@ -159,7 +153,7 @@ System Center Configuration Manager는 Configuration Manager 2007에서 사용�
 
         -   **주석**(선택 사항): 이 장치 프로그램에 대한 주석을 최대 127자로 지정합니다.  
 
-        -   **다운로드 폴더**: Windows CE 장치에서 패키지 원본 파일이 저장될 폴더의 이름을 지정합니다. 기본값은 **\Temp\\**입니다.  
+        -   **다운로드 폴더**: Windows CE 장치에서 패키지 원본 파일이 저장될 폴더의 이름을 지정합니다. 기본값은 **\Temp\\** 입니다.  
 
         -   **명령줄**: 사용할 명령줄을 입력하여 이 프로그램을 시작하거나 **찾아보기**를 선택하여 파일 위치를 찾습니다.  
 
@@ -402,7 +396,7 @@ System Center Configuration Manager는 Configuration Manager 2007에서 사용�
 
 -   **ReconnectDriveAtLogon**: 사용자가 로그온할 때 컴퓨터가 배포 지점에 다시 연결할지 여부를 지정합니다. 사용 가능한 값은 **True** 또는 **False**. 기본값은 **False**입니다.  
 
--   **DependentProgram**: 현재 프로그램 전에 실행해야 하는 이 패키지의 프로그램을 지정합니다. 이 항목은 **DependentProgram**=<**프로그램 이름>** 형식을 사용하며, 여기서 **<프로그램 이름\>**은 패키지 정의 파일의 해당 프로그램에 대한 **이름** 항목입니다. 종속 프로그램 없는 경우에이 항목을 빈 둡니다.  
+-   **DependentProgram**: 현재 프로그램 전에 실행해야 하는 이 패키지의 프로그램을 지정합니다. 이 항목은 **DependentProgram**=<**프로그램 이름>** 형식을 사용하며, 여기서 **<프로그램 이름\>** 은 패키지 정의 파일의 해당 프로그램에 대한 **이름** 항목입니다. 종속 프로그램 없는 경우에이 항목을 빈 둡니다.  
 
      예제:  
 

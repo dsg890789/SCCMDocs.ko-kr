@@ -1,26 +1,20 @@
 ---
-title: "macOS 클라이언트 업그레이드 "
+title: 'macOS 클라이언트 업그레이드 '
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 Mac 컴퓨터용 클라이언트를 업그레이드합니다."
-ms.custom: na
+description: System Center Configuration Manager에서 Mac 컴퓨터용 클라이언트를 업그레이드합니다.
 ms.date: 04/23/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-client
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-client
+ms.topic: conceptual
 ms.assetid: 74c60941-5eae-4905-9e58-252bdb39df96
-caps.latest.revision: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.openlocfilehash: 7ce260a4d93e58e31ec14219c317c793d4b9bb32
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 667c8c3ea986e39627f3ed96e53719d6de74d3b2
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-upgrade-clients-on-mac-computers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Mac 컴퓨터의 클라이언트를 업그레이드하는 방법
 

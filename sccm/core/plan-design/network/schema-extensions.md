@@ -2,27 +2,20 @@
 title: 스키마 확장
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager를 지원하도록 Active Directory 스키마를 확장합니다.
-ms.custom: na
 ms.date: 2/7/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: 95c13c00-909f-4fbb-bbaa-1eba9d54d8c5
-caps.latest.revision: 8
-caps.handback.revision: 0
-author: mestew
-ms.author: mstewart
-manager: angrobe
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 robots: noindex
-ms.openlocfilehash: cc658166a7094f716db0ee495bc2338b52303b50
-ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
+ms.openlocfilehash: ead1eef396e643930e00d3208ed1e821c73906d5
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="schema-extensions-for-system-center-configuration-manager"></a>System Center Configuration Manager의 스키마 확장
 
@@ -77,7 +70,7 @@ Active Directory 스키마를 확장하여 Configuration Manager를 지원할 �
 
     -   CCMSetup 설치 명령줄 속성을 사용하여 **클라이언트를 수동으로 설치**하고 클라이언트 설치 속성을 제공합니다. 여기에는 다음이 포함되어야 합니다.  
 
-        -   클라이언트 설치 중 CCMSetup 명령줄에서 CCMSetup 속성 **/mp:=&lt;관리 지점 이름 컴퓨터 이름\>** 또는 **/source:&lt;클라이언트 원본 파일 경로\>**를 사용하여 컴퓨터가 설치 파일을 다운로드할 수 있는 관리 지점 또는 원본 경로를 지정합니다.  
+        -   클라이언트 설치 중 CCMSetup 명령줄에서 CCMSetup 속성 **/mp:=&lt;관리 지점 이름 컴퓨터 이름\>** 또는 **/source:&lt;클라이언트 원본 파일 경로\>** 를 사용하여 컴퓨터가 설치 파일을 다운로드할 수 있는 관리 지점 또는 원본 경로를 지정합니다.  
 
         -   클라이언트가 사이트에 할당되어 클라이언트 정책과 사이트 설정을 다운로드할 수 있도록 사용할 초기 관리 지점의 목록을 지정합니다. 이를 위해 CCMSetup Client.msi 속성 SMSMP를 사용합니다.  
 

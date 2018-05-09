@@ -1,21 +1,19 @@
 ---
-title: "Microsoft Intune으로 데이터 가져오기"
+title: Microsoft Intune으로 데이터 가져오기
 titleSuffix: Configuration Manager
-description: 
-keywords: 
-author: dougeby
+description: Microsoft Intune으로 Configuration Manager 데이터 가져오기
+author: aczechowski
 manager: dougeby
 ms.date: 12/05/2017
-ms.topic: article
-ms.prod: configmgr-hybrid
-ms.service: 
-ms.technology: 
+ms.topic: conceptual
+ms.prod: configuration-manager
+ms.technology: configmgr-hybrid
 ms.assetid: b552391d-abc0-48a2-a429-93605a13a66a
-ms.openlocfilehash: d42a5fd64b5baead8ef87d8c08a99ec659f94633
-ms.sourcegitcommit: 8c6e9355846ff6a73c534c079e3cdae09cf13c45
+ms.openlocfilehash: dcd84e484f55cb799953bea83be917055ca1292a
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="import-configuration-manager-data-to-microsoft-intune"></a>Microsoft Intune으로 Configuration Manager 데이터 가져오기 
 
@@ -56,7 +54,7 @@ ms.lasthandoff: 12/06/2017
 - 다른 개체에 종속된 일부 프로필이 있습니다. 인증서에 종속된 메일 프로필과 같은 다른 개체에 종속된 프로필을 가져오려면 이전에 같은 컴퓨터에서 같은 사용자로 다른 개체를 가져오지 않은 경우 두 개체를 동시에 가져와야 합니다.  
 - 이 도구를 실행한 후에 추가 수동 단계를 수행해야 할 수도 있습니다. 예를 들어 AAD 그룹에 앱과 정책을 대상으로 지정합니다. 
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 - Configuration Manager 버전 1610 이상 - 최상위 사이트를 지정하고, 사이트 계층의 모든 개체에 대한 액세스 권한이 있는 사용자로 도구를 실행하는 것이 좋습니다. 도구를 실행하는 사용자가 액세스할 수 있는 개체만 이 도구에서 검색합니다. 
 - 전역 관리자는 다음 ***intunedataimporter.exe -GlobalConsent*** 매개 변수를 사용하여 데이터 가져오기 도구를 처음으로 실행해야 합니다. 그런 다음 전역 관리자 또는 Intune 관리자가 이 도구를 실행할 수 있습니다.  
 
@@ -113,7 +111,7 @@ There are some Configuration Manager objects that the importer tool cannot impor
 ![컬렉션 매핑 csv 파일의 예제](..\media\migrate-collectionmapping.png)
 
 #### <a name="start-the-data-importer-tool-using-collection-mapping"></a>컬렉션 매핑을 사용하여 데이터 가져오기 도구 시작
-컬렉션 매핑 파일을 사용하려면 *-CollectionMappingFile* 명령줄 매개 변수와 만든 컬렉션 매핑 .csv 파일의 전체 경로를 사용하여 데이터 가져오기 도구를 시작해야 합니다. 예를 들면 다음과 같습니다.
+컬렉션 매핑 파일을 사용하려면 *-CollectionMappingFile* 명령줄 매개 변수와 만든 컬렉션 매핑 .csv 파일의 전체 경로를 사용하여 데이터 가져오기 도구를 시작해야 합니다. 예:
 
 ```IntuneDataImporter.exe -CollectionMappingFile c:\Users\myuser\Documents\collectionmapping.csv```
 

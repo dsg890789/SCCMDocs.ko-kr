@@ -2,26 +2,19 @@
 title: 하드웨어 인벤토리 확장
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에서 하드웨어 인벤토리를 확장하는 방법에 대해 알아봅니다.
-ms.custom: na
 ms.date: 03/22/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-client
+ms.topic: conceptual
 ms.assetid: d5bfab4f-c55e-4545-877c-5c8db8bc1891
-caps.latest.revision: 10
-caps.handback.revision: 0
-author: mestew
-ms.author: mstewart
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e72d1b866211aeab1aeabe34dfc765ed969cdcb6
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 317a143ba80607bef46a371c0e93ad9f4027abe4
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-extend-hardware-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 하드웨어 인벤토리를 확장하는 방법
 
@@ -33,7 +26,7 @@ Configuration.mof 파일은 클라이언트의 하드웨어 인벤토리에서 �
 
  또한 Configuration.mof 파일을 정의 하 고 하드웨어 인벤토리 중 장치 정보에 액세스 하는 WMI 공급자를 등록 합니다. 공급자를 등록 하는 중 사용할 공급자의 형식 및 공급자가 지 원하는 클래스를 정의 합니다.  
 
- Configuration Manager 클라이언트가 정책을 요청하는 경우, Configuration.mof가 정책 본문에 연결됩니다. 그런 다음이 파일 다운로드 하 고 클라이언트에 의해 컴파일되며 됩니다. 추가, 수정 또는 Configuration.mof 파일에서 데이터 클래스를 삭제 하는 경우 클라이언트에 재고와 관련 된 데이터 클래스에 대 한 이러한 변경 내용을 자동으로 컴파일합니다. Configuration Manager 클라이언트에서 새 데이터 클래스 또는 수정된 데이터 클래스를 인벤토리에 포함하기 위해 필요한 추가 작업은 없습니다. 이 파일은 기본 사이트 서버의 **<CM 설치 위치\>\Inboxes\clifiles.src\hinv\\**에 있습니다.  
+ Configuration Manager 클라이언트가 정책을 요청하는 경우, Configuration.mof가 정책 본문에 연결됩니다. 그런 다음이 파일 다운로드 하 고 클라이언트에 의해 컴파일되며 됩니다. 추가, 수정 또는 Configuration.mof 파일에서 데이터 클래스를 삭제 하는 경우 클라이언트에 재고와 관련 된 데이터 클래스에 대 한 이러한 변경 내용을 자동으로 컴파일합니다. Configuration Manager 클라이언트에서 새 데이터 클래스 또는 수정된 데이터 클래스를 인벤토리에 포함하기 위해 필요한 추가 작업은 없습니다. 이 파일은 기본 사이트 서버의 **<CM 설치 위치\>\Inboxes\clifiles.src\hinv\\** 에 있습니다.  
 
  Configuration Manager에서는 Configuration Manager 2007에서와 같이 더 이상 sms_def.mof 파일을 편집하지 않습니다. 대신 WMI 클래스를 사용하거나 사용하지 않도록 설정하고 클라이언트 설정을 사용하여 하드웨어 인벤토리로 수집할 새 클래스를 추가할 수 있습니다. Configuration Manager는 하드웨어 인벤토리를 확장하도록 다음 방법을 제공합니다.  
 

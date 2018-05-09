@@ -1,26 +1,20 @@
 ---
-title: "부팅 가능한 미디어 만들기 "
+title: 부팅 가능한 미디어 만들기
 titleSuffix: Configuration Manager
-description: "Configuration Manager에서 부팅 가능한 미디어를 사용하면 쉽게 새 버전의 Windows를 설치하거나 컴퓨터 및 전송 설정을 바꿀 수 있습니다."
-ms.custom: na
+description: Configuration Manager에서 부팅 가능한 미디어를 사용하면 쉽게 새 버전의 Windows를 설치하거나 컴퓨터 및 전송 설정을 바꿀 수 있습니다.
 ms.date: 01/23/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-osd
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ead79e64-1b63-4d0d-8bd5-addff8919820
-caps.latest.revision: "11"
-caps.handback.revision: "0"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: f0dd624259e4f1b2a0bd14112a2cd25bb7a38767
-ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
+manager: dougeby
+ms.openlocfilehash: d3b2ce474488ebf02c3a3c4a82def91d706b6bfc
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-bootable-media-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 부팅 가능 미디어 만들기
 

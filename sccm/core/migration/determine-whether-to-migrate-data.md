@@ -2,26 +2,19 @@
 title: 마이그레이션 항목 선택
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에 마이그레이션할 수 있는 데이터와 마이그레이션할 수 없는 데이터를 알아봅니다.
-ms.custom: na
 ms.date: 12/29/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: 99222dc8-0e1e-4513-8302-7a1acf671e9b
-caps.latest.revision: 6
-caps.handback.revision: 0
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: 0718b7863c45f7b7e56380d4a2fa74e8d1a17b54
-ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
+manager: dougeby
+ms.openlocfilehash: 071c8cc45d81ceeee0ac97934a747c2fcc79821b
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="determine-whether-to-migrate-data-to-system-center-configuration-manager"></a>System Center Configuration Manager로 데이터를 마이그레이션할지 여부 결정
 

@@ -1,25 +1,20 @@
 ---
-title: "Endpoint Protection에 대한 Windows 방화벽 정책"
+title: Endpoint Protection에 대한 Windows 방화벽 정책
 titleSuffix: Configuration Manager
-description: "System Center 2012 Configuration Manager에서 Endpoint Protection에 대한 Windows 방화벽 정책을 만들어 배포하는 방법을 알아봅니다."
-ms.custom: na
+description: System Center 2012 Configuration Manager에서 Endpoint Protection에 대한 Windows 방화벽 정책을 만들어 배포하는 방법을 알아봅니다.
 ms.date: 03/07/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-protect
+ms.topic: conceptual
 ms.assetid: 6ecdfad1-6305-45a8-ae75-3f33b967cb8f
-caps.latest.revision: "5"
-author: NathBarn
-ms.author: nathbarn
-manager: angrobe
-ms.openlocfilehash: cce8eb704b88e551051e7a90b37f1ca3250c3da3
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: e3030b4390e38ca2dfce6805c04d5b0bb7916bba
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-and-deploy-windows-firewall-policies-for-endpoint-protection-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Endpoint Protection에 대한 Windows 방화벽 정책 만들기 및 배포
 
@@ -31,7 +26,7 @@ System Center 2012 Configuration Manager에서 Endpoint Protection에 대한 방
 
 -   클라이언트 컴퓨터에 들어오는 연결의 허용 여부를 제어합니다.  
 
--   Windows 방화벽이 새 프로그램을 차단할 때 사용자에게 알림을 표시할지 여부를 제어합니다.  
+-   Windows 방화벽이 새 프로그램을 차단할 때 사용자에 게 알림을 보내는 지 여부를 제어 합니다.  
 
 1.  Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.  
 

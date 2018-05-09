@@ -1,26 +1,20 @@
 ---
-title: "클라이언트 관리 Windows 컴퓨터의 구성 항목 만들기 "
+title: '클라이언트 관리 Windows 컴퓨터의 구성 항목 만들기 '
 titleSuffix: Configuration Manager
-description: "사용자 지정 Windows 데스크톱 및 서버 구성 항목을 사용하여 Windows 컴퓨터 및 서버에 대한 설정을 관리합니다."
-ms.custom: na
+description: 사용자 지정 Windows 데스크톱 및 서버 구성 항목을 사용하여 Windows 컴퓨터 및 서버에 대한 설정을 관리합니다.
 ms.date: 11/18/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-compliance
+ms.topic: conceptual
 ms.assetid: 1eb2fcaf-acac-4388-9b31-6cccafacaabe
-caps.latest.revision: "9"
-caps.handback.revision: "0"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: ed3aa1ce9e21c7c486cc40deb804a8687a1cd4f2
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: b2b2af6c022d854a6c6d623e3901abac70d42c7a
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-create-custom-configuration-items-for-windows-desktop-and-server-computers-managed-with-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트에서 관리되는 Windows 데스크톱 및 서버 컴퓨터에 대한 사용자 지정 구성 항목을 만드는 방법
 
@@ -37,7 +31,7 @@ System Center Configuration Manager **사용자 지정 Windows 데스크톱 및 
 
 4.  **구성 항목 만들기 마법사** 의 **일반**페이지에서 구성 항목에 대한 이름 및 선택적 설명을 지정합니다.  
 
-5.  **만들려는 구성 항목의 유형 지정**에서 **Windows 데스크톱 및 서버(사용자 지정)**를 선택합니다.  
+5.  **만들려는 구성 항목의 유형 지정**에서 **Windows 데스크톱 및 서버(사용자 지정)** 를 선택합니다.  
 
     > [!TIP]  
     >  응용 프로그램이 있는지 여부를 확인하는 검색 방법 설정을 제공하려는 경우 **이 구성 파일에 응용 프로그램 설정 포함**을 선택합니다.  
@@ -109,7 +103,7 @@ System Center Configuration Manager **사용자 지정 Windows 데스크톱 및 
 
             -   **검색 필터** - 클라이언트 컴퓨터에서 호환성을 평가하도록 Active Directory Domain Services 쿼리에서 결과를 구체화하기 위한 선택적인 LDAP 필터를 지정합니다.  
 
-                 쿼리의 모든 결과를 반환하려면 **(objectclass=\*)**을 입력합니다.  
+                 쿼리의 모든 결과를 반환하려면 **(objectclass=\*)** 을 입력합니다.  
 
             -   **검색 범위** - Active Directory Domain Services의 검색 범위를 지정합니다. 다음 중에서 선택할 수 있습니다.  
 
@@ -235,7 +229,7 @@ System Center Configuration Manager **사용자 지정 Windows 데스크톱 및 
 
             -   **하위 폴더 포함** – 지정한 경로 아래의 하위 폴더도 모두 검색하려면 이 옵션을 사용하도록 설정합니다.  
 
-            -   **이 파일은 64비트 응용 프로그램에 연결되어 있음** - 64비트 버전의 Windows를 실행하는 Configuration Manager 클라이언트에서 32비트 시스템 파일 위치(*%windir%*\System32)와 함께 64비트 시스템 파일 위치(*%windir%*\Syswow64)를 검색해야 하는지 여부를 선택합니다.  
+            -   **이 파일은 64비트 응용 프로그램에 연결되어 있음** - 64비트 버전의 Windows를 실행하는 Configuration Manager 클라이언트에서 32비트 시스템 파일 위치(*%windir%* \System32)와 함께 64비트 시스템 파일 위치(*%windir%* \Syswow64)를 검색해야 하는지 여부를 선택합니다.  
 
             -   **XPath 쿼리** -유효한 전체 XML 경로 언어 (XPath) 쿼리 클라이언트 컴퓨터에서 호환성을 평가 하는데 사용 되는 지정 합니다.  
 
@@ -260,7 +254,7 @@ System Center Configuration Manager **사용자 지정 Windows 데스크톱 및 
 ##  <a name="configure-compliance-rules"></a>준수 규칙 구성  
  다음 절차를 사용하여 구성 항목에 대한 준수 규칙을 구성할 수 있습니다.  
 
- 규정 준수 규칙에는 구성 항목의 호환성을 정의 하는 조건을 지정 합니다. 규정 준수에 대 한 설정을 평가할 수, 규정 준수 규칙이 하나 이상 있어야 합니다. WMI, 레지스트리 및 설정 스크립트를 통해 정책을 준수 하지 않는 것으로 발견 하는 값을 재구성할 수 있습니다. 새 규칙을 만들 하거나 규칙을 선택 하려면 기존 설정을 모든 구성 항목에서 찾아볼 수 있습니다.  
+ 준수 규칙은 구성 항목의 준수를 정의하는 조건을 지정합니다. 설정이 준수에 대해 평가되려면 먼저 하나 이상의 준수 규칙이 있어야 합니다. WMI, 레지스트리 및 설정 스크립트를 통해 정책을 준수 하지 않는 것으로 발견 하는 값을 재구성할 수 있습니다. 새 규칙을 만들 하거나 규칙을 선택 하려면 기존 설정을 모든 구성 항목에서 찾아볼 수 있습니다.  
 
 ### <a name="to-create-a-compliance-rule"></a>규정 준수 규칙을 만들려면  
 

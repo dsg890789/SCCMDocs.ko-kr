@@ -2,26 +2,19 @@
 title: 컬렉션 만들기
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에서 컬렉션을 만들어 사용자 및 장치 그룹을 더 쉽게 관리합니다.
-ms.custom: na
 ms.date: 2/22/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-client
+ms.topic: conceptual
 ms.assetid: 1401a35e-4312-4d3b-8ceb-0abbb10d4f05
-caps.latest.revision: 6
-caps.handback.revision: 0
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: d7f320c53b2b696d3981019dfacccab5796455c8
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 76796cdb56a7106ac709866a9df7c2a08bc6b7bc
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-create-collections-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 컬렉션을 만드는 방법
 
@@ -68,7 +61,7 @@ ms.lasthandoff: 03/27/2018
 
 -   **Configuration Manager 클라이언트가 설치되지 않은 리소스 제외** - 검색 결과에 표시되지 않습니다.  
 
--   **값:** 선택한 특성 이름을 검색하려는 값을 입력합니다. 백분율 문자 **%** 를 와일드 카드로 사용할 수 있습니다. 예를 들어 "M"으로 시작하는 NetBIOS 이름을 가진 컴퓨터를 검색하려면 이 필드에 **M%**를 입력합니다.  
+-   **값:** 선택한 특성 이름을 검색하려는 값을 입력합니다. 백분율 문자 **%** 를 와일드 카드로 사용할 수 있습니다. 예를 들어 "M"으로 시작하는 NetBIOS 이름을 가진 컴퓨터를 검색하려면 이 필드에 **M%** 를 입력합니다.  
 
 2.  **리소스 선택** 페이지의 **리소스** 목록에서 컬렉션에 추가하려는 리소스를 선택하고 **다음**을 선택합니다.  
 

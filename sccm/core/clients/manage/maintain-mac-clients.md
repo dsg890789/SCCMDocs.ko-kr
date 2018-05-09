@@ -1,25 +1,20 @@
 ---
-title: "Mac 클라이언트 유지 관리"
+title: Mac 클라이언트 유지 관리
 titleSuffix: Configuration Manager
-description: "Configuration Manager Mac 클라이언트에 대한 유지 관리 작업"
-ms.custom: na
+description: Configuration Manager Mac 클라이언트에 대한 유지 관리 작업
 ms.date: 04/23/2017
 ms.prod: configuration-manager
-ms.reviewer: aaroncz
-ms.suite: na
 ms.technology: configmgr-client
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: cf6337a2-700c-47f3-b6f8-5814f9b81e59
-caps.latest.revision: "12"
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.openlocfilehash: 18464a1ba604350e1c871b6bbddc5d03b1d3d956
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 32d36f041ed42ef0afa8fe0c0e052389587a2c8f
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="maintain-mac-clients"></a>Mac 클라이언트 유지 관리
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -110,7 +105,7 @@ Mac 클라이언트 제거하고 해당 인증서를 갱신하는 절차는 다�
 
 8.  **확인**을 선택하여 **검색 스크립트 편집** 대화 상자를 닫습니다.  
 
-9. **설정 만들기** 대화 상자의 **재구성 스크립트(옵션)**에 대해 **스크립트 추가**를 선택하여 Mac 컴퓨터에서 발견된 SMSID를 제거하는 스크립트를 지정합니다.  
+9. **설정 만들기** 대화 상자의 **재구성 스크립트(옵션)** 에 대해 **스크립트 추가**를 선택하여 Mac 컴퓨터에서 발견된 SMSID를 제거하는 스크립트를 지정합니다.  
 
 10. **재구성 스크립트 만들기** 대화 상자에서 다음 셸 스크립트를 입력합니다.  
 

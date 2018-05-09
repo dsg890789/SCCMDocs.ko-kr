@@ -2,26 +2,19 @@
 title: 보고서 목록
 titleSuffix: Configuration Manager
 description: Configuration Manager와 함께 제공되는 보고서 목록을 검토합니다. 보고서는 다양한 범주에서 표시됩니다.
-ms.custom: na
 ms.date: 03/22/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: b7332ed3-8003-454b-bb12-1fdf8721425c
-caps.latest.revision: 10
-caps.handback.revision: 0
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b15726b2551464c178774dc2c87a6a2f41a37c07
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: d486907a7819758b27c9a644214ed4d5ec873762
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="list-of-reports-in-system-center-configuration-manager"></a>System Center Configuration Manager의 보고서 목록
 

@@ -1,26 +1,20 @@
 ---
-title: "플랫폼 등록 사용"
+title: 플랫폼 등록 사용
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 및 Microsoft Intune을 사용하여 플랫폼 등록 설정"
-ms.custom: na
+description: System Center Configuration Manager 및 Microsoft Intune을 사용하여 플랫폼 등록 설정
 ms.date: 03/05/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a9163b77-a67d-4139-8272-bb1dfdb8707c
-caps.latest.revision: "18"
-caps.handback.revision: "0"
-author: dougeby
-ms.author: dougeby
-manager: angrobe
-ms.openlocfilehash: 318e36fc751aad31d0d641d6989df06621d17acf
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 9a93d58f990738a93a489e0ee5920098ea04fce0
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="enable-platform-enrollment-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하여 플랫폼 등록 설정
 

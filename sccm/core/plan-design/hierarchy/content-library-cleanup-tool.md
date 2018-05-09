@@ -1,25 +1,20 @@
 ---
-title: "콘텐츠 라이브러리 정리 도구"
+title: 콘텐츠 라이브러리 정리 도구
 titleSuffix: Configuration Manager
-description: "콘텐츠 라이브러리 정리 도구를 사용하여 더 이상 System Center Configuration Manager 배포와 연관이 없는 분리된 콘텐츠를 제거합니다."
-ms.custom: na
+description: 콘텐츠 라이브러리 정리 도구를 사용하여 더 이상 System Center Configuration Manager 배포와 연관이 없는 분리된 콘텐츠를 제거합니다.
 ms.date: 4/7/2017
-ms.reviewer: na
-ms.suite: na
 ms.prod: configuration-manager
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 226cbbb2-9afa-4e2e-a472-be989c0f0e11
-caps.latest.revision: "4"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: 334b79e675ea7804128b0feb9678de4ad06dbc93
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+manager: dougeby
+ms.openlocfilehash: 5d83b23673d8eea6e98f21ea30b6b802eb7e5595
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="the-content-library-cleanup-tool-for-system-center-configuration-manager"></a>System Center Configuration Manager용 콘텐츠 라이브러리 정리 도구
 
@@ -29,7 +24,7 @@ ms.lasthandoff: 01/04/2018
 
 이 도구는 도구를 실행할 때 지정하는 배포 지점에 있는 콘텐츠에만 영향을 미칩니다. 이 도구로 사이트 서버에 있는 콘텐츠 라이브러리의 콘텐츠를 제거할 수는 없습니다.
 
-중앙 관리 사이트 또는 기본 사이트의 사이트 서버에 있는 \*%CM_Installation_Path%\cd.latest\SMSSETUP\TOOLS\ContentLibraryCleanup\* 폴더에서 **ContentLibraryCleanup.exe**를 찾을 수 있습니다.
+중앙 관리 사이트 또는 기본 사이트의 사이트 서버에 있는 *%CM_Installation_Path%\cd.latest\SMSSETUP\TOOLS\ContentLibraryCleanup\* 폴더에서 **ContentLibraryCleanup.exe**를 찾을 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항  
  한 번에 하나의 배포 지점에 대해서만 도구를 실행할 수 있습니다.  

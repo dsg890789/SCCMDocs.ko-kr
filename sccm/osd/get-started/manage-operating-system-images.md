@@ -1,26 +1,20 @@
 ---
-title: "운영 체제 이미지 관리"
+title: 운영 체제 이미지 관리
 titleSuffix: Configuration Manager
-description: "Configuration Manager에서 Windows 이미징(WIM) 파일에 저장된 운영 체제 이미지를 관리하는 데 사용할 수 있는 방법을 알아봅니다."
-ms.custom: na
+description: Configuration Manager에서 Windows 이미징(WIM) 파일에 저장된 운영 체제 이미지를 관리하는 데 사용할 수 있는 방법을 알아봅니다.
 ms.date: 12/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-osd
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: fab13949-371c-4a4c-978e-471db1e54966
-caps.latest.revision: "17"
-caps.handback.revision: "0"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: e0ddf9801430984efb63ac593d1f60b8fbfe0f59
-ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
+manager: dougeby
+ms.openlocfilehash: 3b0931671c05604a0115c14a5e7fc5d9c6767b7c
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manage-operating-system-images-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 운영 체제 이미지 관리
 

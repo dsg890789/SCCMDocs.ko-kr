@@ -5,16 +5,15 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.date: 03/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-client
 ms.assetid: 71eaa409-b955-45d6-8309-26bf3b3b0911
-ms.openlocfilehash: 0e4d2add8ece7f548955064a479d9545a1fc64e1
-ms.sourcegitcommit: a19e12d5c3198764901d44f4df7c60eb542e765f
+ms.openlocfilehash: e62b748596aba1404d6b097e5aa0bf74266f055b
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="certificates-for-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이에 대한 인증서
 
@@ -123,9 +122,9 @@ CMG는 클라이언트 인증 인증서를 신뢰해야 합니다. 이 신뢰를
     a. [작업] 메뉴에서 **열기**를 선택합니다. 
     b. **인증 경로** 탭으로 전환합니다. c. 체인의 다음 인증서를 선택하고 **인증서 보기**를 클릭합니다.
 
-6.  이 새 인증서 대화 상자에서 **세부 정보** 탭으로 전환합니다. **파일에 복사...**를 클릭합니다.
+6.  이 새 인증서 대화 상자에서 **세부 정보** 탭으로 전환합니다. **파일에 복사...** 를 클릭합니다.
 
-7.  기본 인증서 형식인 **DER로 인코딩된 X.509 바이너리(.CER)**를 사용하여 인증서 내보내기 마법사를 완료합니다. 내보낸 인증서의 이름과 위치를 적어 둡니다.
+7.  기본 인증서 형식인 **DER로 인코딩된 X.509 바이너리(.CER)** 를 사용하여 인증서 내보내기 마법사를 완료합니다. 내보낸 인증서의 이름과 위치를 적어 둡니다.
 
 8. 원래 클라이언트 인증 인증서의 인증서 경로에 있는 모든 인증서를 내보냅니다. 내보낸 인증서 중 중간 CA 및 신뢰할 수 있는 루트 CA에 해당하는 인증서를 적어 둡니다.
 

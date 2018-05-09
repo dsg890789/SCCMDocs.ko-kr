@@ -1,22 +1,20 @@
 ---
-title: "소프트웨어 업데이트 모니터링"
+title: 소프트웨어 업데이트 모니터링
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 콘솔은 업데이트 및 준수를 모니터링하기 위해 경고 및 상태를 제공합니다."
-keywords: 
-author: dougeby
-ms.author: dougeby
-manager: angrobe
+description: System Center Configuration Manager 콘솔은 업데이트 및 준수를 모니터링하기 위해 경고 및 상태를 제공합니다.
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.date: 11/20/2016
-ms.topic: article
+ms.topic: conceptual
 ms.prod: configuration-manager
-ms.service: 
 ms.technology: configmgr-sum
 ms.assetid: 9afd7b0f-5c8e-48bc-9a65-1f7d74103688
-ms.openlocfilehash: 7eb9acf75ef3d1ba7fa5b89536986173461b1e13
-ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
+ms.openlocfilehash: bc594fe6b870e1054033601a67209aa9ad72ccef
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="monitor-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 업데이트 모니터링
 

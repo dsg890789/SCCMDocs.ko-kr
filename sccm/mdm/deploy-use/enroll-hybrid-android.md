@@ -2,26 +2,19 @@
 title: Microsoft Intune에서 Android 하이브리드 장치 관리 설정
 titleSuffix: Configuration Manager
 description: Configuration Manager 및 Intune으로 Android 모바일 장치 관리 준비
-ms.custom: na
 ms.date: 08/11/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.technology: configmgr-hybrid
+ms.topic: conceptual
 ms.assetid: c517fe34-0130-465b-a020-bdb555878778
-caps.latest.revision: 9
-caps.handback.revision: 0
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.openlocfilehash: c75979e8485fa3ece2178af6d21ff06282206569
-ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: c75177f3a815de322f72a6fa961b253d7ebea97f
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-up-android-hybrid-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune으로 Android 하이브리드 장치 관리 설정
 

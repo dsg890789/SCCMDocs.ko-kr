@@ -1,26 +1,20 @@
 ---
-title: "쿼리 소개"
+title: 쿼리 소개
 titleSuffix: Configuration Manager
-description: "쿼리를 만들고 실행하여 쿼리 조건과 일치하는 개체를 System Center Configuration Manager 계층 구조에서 찾습니다."
-ms.custom: na
+description: 쿼리를 만들고 실행하여 쿼리 조건과 일치하는 개체를 System Center Configuration Manager 계층 구조에서 찾습니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 03d1b3a9-41db-4d3a-a70e-e05ab5dc8141
-caps.latest.revision: "5"
-caps.handback.revision: "0"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: f2a97ad3047c4e26a6c1823efca52d39e45c3b6e
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: ebc5c1b7f7efb1ba9c3f1fc7b36f82b6be59858f
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="introduction-to-queries-in-system-center-configuration-manager"></a>System Center Configuration Manager의 쿼리 소개
 

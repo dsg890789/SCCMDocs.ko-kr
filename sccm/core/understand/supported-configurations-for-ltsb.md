@@ -1,25 +1,20 @@
 ---
-title: "지원되는 LTSB 구성 "
+title: '지원되는 LTSB 구성 '
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager의 장기 서비스 분기에서 작동하는 운영 체제 및 종속 제품을 이해합니다."
-ms.custom: na
+description: System Center Configuration Manager의 장기 서비스 분기에서 작동하는 운영 체제 및 종속 제품을 이해합니다.
 ms.date: 5/10/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f0f818d4-7f45-402f-8758-dc88bc024953
-caps.latest.revision: "0"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: e634ade367375dd092cea0381fe976109c4936df
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+manager: dougeby
+ms.openlocfilehash: 2da1ff9f8a45ba33f6546dcab8df423d9064e650
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="supported-configurations-for-the-long-term-servicing-branch-of-system-center-configuration-manager"></a>System Center Configuration Manager의 장기 서비스 분기에 대해 지원되는 구성
 
@@ -52,7 +47,7 @@ LTSB에서는 다음 Windows 컴퓨터 운영 체제를 사이트 시스템으�
 - Windows Server 2012 R2(x64): Standard, Datacenter
 - Windows Server 2012(x64): Standard, Datacenter
 - Windows Server 2008 R2 SP1(x64): Standard, Enterprise, Datacenter
-- Windows Server 2008 SP2(x86, x64): Standard, Enterprise, Datacenter*(참고 1 참조)*
+- Windows Server 2008 SP2(x86, x64): Standard, Enterprise, Datacenter *(참고 1 참조)*
 - Windows 10 Enterprise 2015 LTSB(x86, x64)
 - Windows 10 Enterprise 2016 LTSB(x86, x64)
 - Windows 8.1(x86, x64): Professional, Enterprise

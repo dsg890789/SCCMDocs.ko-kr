@@ -1,23 +1,20 @@
 ---
-title: "소프트웨어 업데이트 동기화 관리"
+title: 소프트웨어 업데이트 동기화 관리
 titleSuffix: Configuration Manager
-description: "소프트웨어 업데이트 동기화를 예약하고, 수동으로 소프트웨어 업데이트 동기화를 시작하고, 소프트웨어 업데이트 동기화를 모니터링하려면 다음 단계를 따르세요."
-keywords: 
-author: dougeby
-ms.author: dougeby
-manager: angrobe
+description: 소프트웨어 업데이트 동기화를 예약하고, 수동으로 소프트웨어 업데이트 동기화를 시작하고, 소프트웨어 업데이트 동기화를 모니터링하려면 다음 단계를 따르세요.
+author: aczechowski
 ms.date: 10/06/2016
-ms.topic: article
+ms.topic: conceptual
 ms.prod: configuration-manager
-ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: ea8698c4-9df5-4cf5-8b62-ab93115b4769
-ms.openlocfilehash: 3a17fb317553c783250b92212315a6ea895105c6
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 7e2e5493f1aaee448c6573d08a57a69aafb478c7
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 #  <a name="BKMK_SUMSync"></a> 소프트웨어 업데이트 동기화
 

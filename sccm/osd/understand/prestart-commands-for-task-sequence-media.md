@@ -1,26 +1,20 @@
 ---
-title: "작업 순서 미디어에 대한 시작 전 명령"
+title: 작업 순서 미디어에 대한 시작 전 명령
 titleSuffix: Configuration Manager
-description: "시작 전 명령에 사용할 스크립트를 만들고, 시작 전 명령과 연관된 콘텐츠를 배포하고, 미디어 안에 시작 전 명령을 구성합니다."
-ms.custom: na
+description: 시작 전 명령에 사용할 스크립트를 만들고, 시작 전 명령과 연관된 콘텐츠를 배포하고, 미디어 안에 시작 전 명령을 구성합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-osd
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ccc9f652-2953-4c38-8a90-c799484105ca
-caps.latest.revision: "6"
-caps.handback.revision: "0"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: 3a1b39bb988d305c02d85ef168789d081637c084
-ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
+manager: dougeby
+ms.openlocfilehash: bc20195824af03a361cb38837a061b68e78d098a
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="prestart-commands-for-task-sequence-media-in-system-center-configuration-manager"></a>System Center Configuration Manager의 작업 순서 미디어에 대한 시작 전 명령
 
@@ -69,7 +63,7 @@ env("MyCustomVariable") = "varname"
     -   **명령줄** 텍스트 상자에 시작 전 명령용으로 만든 스크립트 또는 실행 파일을 입력합니다.  
 
         > [!IMPORTANT]  
-        >  **cmd /C <시작 전 명령\>**을 사용하여 시작 전 명령을 지정합니다. 예를 들어 시작 전 명령 스크립트의 이름으로 TSScript.vbs를 사용한 경우 명령줄에 **cmd /C TSScript.vbs** 를 입력합니다. 여기서 **cmd /C** 는 새 Windows 명령 인터프리터 창을 열고 Path 환경 변수를 사용하여 시작 전 명령 스크립트 또는 실행 파일을 검색합니다. 시작 전 명령의 전체 경로를 지정할 수도 있지만 드라이브 구성이 다른 컴퓨터에서는 드라이브 문자가 달라질 수 있습니다.  
+        >  **cmd /C <시작 전 명령\>** 을 사용하여 시작 전 명령을 지정합니다. 예를 들어 시작 전 명령 스크립트의 이름으로 TSScript.vbs를 사용한 경우 명령줄에 **cmd /C TSScript.vbs** 를 입력합니다. 여기서 **cmd /C** 는 새 Windows 명령 인터프리터 창을 열고 Path 환경 변수를 사용하여 시작 전 명령 스크립트 또는 실행 파일을 검색합니다. 시작 전 명령의 전체 경로를 지정할 수도 있지만 드라이브 구성이 다른 컴퓨터에서는 드라이브 문자가 달라질 수 있습니다.  
 
     -   **시작 전 명령을 위한 파일 포함**을 선택합니다.  
 

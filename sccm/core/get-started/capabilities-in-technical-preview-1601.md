@@ -2,26 +2,20 @@
 title: 기술 미리 보기 1601의 기능
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager용 Technical Preview 버전 1601에서 사용 가능한 기능에 대해 알아봅니다.
-ms.custom: na
 ms.date: 01/23/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: aae1cf2f-2c04-4f68-a03a-f4a925433c09
-caps.latest.revision: 7
-author: erikje
-ms.author: erikje
-manager: angrobe
+author: aczechowski
 robots: noindex,nofollow
-ms.openlocfilehash: b17a89ab08c99a1c3cd8a501e7d58d5b42a110a3
-ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: f75c27ece3b9a8b490fb136a411a65ac4cbe2129
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="capabilities-in-technical-preview-1601-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1601의 기능
 
@@ -117,7 +111,7 @@ ms.lasthandoff: 04/16/2018
 
     -   **암호를 요구하기 전까지 비활성 시간(분):** 사용자가 해당 시간 내에 자신의 암호를 다시 입력해야 하는 유휴 시간을 지정합니다.  
 
-         이 규칙을 만들려면 **준수 정책 만들기 마법사**를 열고 새 규칙을 추가합니다. 조건으로 **암호를 요구하기 전까지 비활성 시간(분)**을 선택하고 해당 값을 1분, 5분, 15분, 30분, 1시간 중 하나로 설정합니다.  
+         이 규칙을 만들려면 **준수 정책 만들기 마법사**를 열고 새 규칙을 추가합니다. 조건으로 **암호를 요구하기 전까지 비활성 시간(분)** 을 선택하고 해당 값을 1분, 5분, 15분, 30분, 1시간 중 하나로 설정합니다.  
 
 -   **기본 규칙 재정의 - Intune 등록 및 규격 장치가 Exchange 온-프레미스에 액세스할 수 있도록 항상 허용:**  
 

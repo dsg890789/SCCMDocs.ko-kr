@@ -2,25 +2,19 @@
 title: 경계 그룹 구성
 titleSuffix: Configuration Manager
 description: 클라이언트가 사이트 시스템을 쉽게 찾을 수 있도록 경계 그룹을 사용하여 관련 네트워크 위치(경계)를 논리적으로 구성합니다.
-ms.custom: na
 ms.date: 03/22/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: 5db2926f-f03e-49c7-b44b-e89b1a5a6779
-caps.latest.revision: 10
-author: mestew
-ms.author: mstewart
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 297f4a5ecb7650a4ea643fff00dd67b6580256de
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 79c6796c116fbe4d182827e24f41ae4d1e5242fe
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-boundary-groups-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 경계 그룹 구성
 
@@ -68,7 +62,7 @@ Configuration Manager에서 경계 그룹을 사용하여 관련 네트워크 �
 - 클라이언트가 여러 경계 그룹의 구성원인 경우 현재 경계 그룹이 모든 클라이언트 경계 그룹의 연합으로 정의됩니다. 클라이언트는 원래 경계 그룹과 인접한 경계 그룹으로 대체됩니다.
 
 ### <a name="the-default-site-boundary-group"></a>기본 사이트 경계 그룹
-직접 만든 경계 그룹 외에 각 사이트에는 Configuration Manager에서 생성된 기본 사이트 경계 그룹이 있습니다. 이 그룹의 이름은 ***Default-Site-Boundary-Group&lt;sitecode>***로 지정됩니다. 예를 들어 사이트 ABC의 그룹 이름은 *Default-Site-Boundary-Group&lt;ABC>*로 지정됩니다.
+직접 만든 경계 그룹 외에 각 사이트에는 Configuration Manager에서 생성된 기본 사이트 경계 그룹이 있습니다. 이 그룹의 이름은 ***Default-Site-Boundary-Group&lt;sitecode>*** 로 지정됩니다. 예를 들어 사이트 ABC의 그룹 이름은 *Default-Site-Boundary-Group&lt;ABC>* 로 지정됩니다.
 
 직접 만든 각 경계 그룹에서는 Configuration Manager가 자동으로 구조 계층에 있는 각 기본 사이트 경계 그룹에 대한 암시적 링크를 만듭니다.
 -   암시적 링크는 현재 경계 그룹에서 기본 대체 시간이 120분인 사이트 기본 경계 그룹으로 대체되는 기본 대체 옵션입니다.
@@ -121,7 +115,7 @@ Configuration Manager에서 경계 그룹을 사용하여 관련 네트워크 �
 
 ### <a name="fallback-configurations-for-software-update-points"></a>소프트웨어 업데이트 지점에 대한 대체 구성
 #### <a name="beginning-with-version-1706"></a>버전 1706부터 시작   
-소프트웨어 업데이트 지점에 대해 **대체(fallback) 시간(분):**을 120분보다 작게 구성할 수 있습니다. 그러나 클라이언트는 여전히 120분 동안 원래 소프트웨어 업데이트 지점에 연결하려고 시도합니다. 그 후 검색 범위를 추가 서버로 확장합니다. 클라이언트가 처음으로 원래 서버에 연결하는 데 실패하는 순간 경계 그룹 대체 시간이 시작됩니다. 클라이언트가 검색 범위를 확장하면 사이트에서는 120분 미만으로 구성된 모든 경계 그룹을 제공합니다.
+소프트웨어 업데이트 지점에 대해 **대체(fallback) 시간(분):** 을 120분보다 작게 구성할 수 있습니다. 그러나 클라이언트는 여전히 120분 동안 원래 소프트웨어 업데이트 지점에 연결하려고 시도합니다. 그 후 검색 범위를 추가 서버로 확장합니다. 클라이언트가 처음으로 원래 서버에 연결하는 데 실패하는 순간 경계 그룹 대체 시간이 시작됩니다. 클라이언트가 검색 범위를 확장하면 사이트에서는 120분 미만으로 구성된 모든 경계 그룹을 제공합니다.
 
 소프트웨어 업데이트 지점을 인접 경계 그룹으로 대체하지 못하게 차단하려면 설정을 **대체 안 함**을 구성하면 됩니다.
 
@@ -271,7 +265,7 @@ Not selected | Selected     |   **Normal fallback** - Use distribution points in
 
 
 -   빠름 또는 느림 구성 제거됨: 개별 배포 지점을 더 이상 빠름 또는 느림으로 구성하지 않습니다. 대신 경계 그룹과 연결된 각 사이트 시스템이 동일하게 처리됩니다. 이러한 변경으로 인해 경계 그룹 속성의 **참조** 탭에서 더 이상 빠름 또는 느림 구성을 지원하지 않습니다.
-- 각 사이트의 새 기본 경계 그룹: 각 기본 사이트에는 ***Default-Site-Boundary-Group&lt;sitecode>***라는 새 기본 경계 그룹이 있습니다. 경계 그룹에 할당된 네트워크 위치에 없는 클라이언트는 할당된 사이트의 기본 그룹과 연결된 사이트 시스템을 사용합니다. 이 경계 그룹을 대체 콘텐츠 위치의 개념 대신 사용합니다.   
+- 각 사이트의 새 기본 경계 그룹: 각 기본 사이트에는 ***Default-Site-Boundary-Group&lt;sitecode>*** 라는 새 기본 경계 그룹이 있습니다. 경계 그룹에 할당된 네트워크 위치에 없는 클라이언트는 할당된 사이트의 기본 그룹과 연결된 사이트 시스템을 사용합니다. 이 경계 그룹을 대체 콘텐츠 위치의 개념 대신 사용합니다.   
  -  **콘텐츠에 대해 대체 원본 위치 허용** 제거됨: 더 이상 대체에 사용할 배포 지점을 명시적으로 구성하지 않습니다. 이 설정을 구성하는 옵션이 콘솔에서 제거되었습니다.
 
     또한 응용 프로그램의 배포 유형에서 **클라이언트가 콘텐츠에 대한 대체 원본 위치를 사용하도록 허용** 설정의 결과가 변경되었습니다. 이제 배포 유형에서 이 설정을 사용하면 클라이언트가 기본 사이트 경계 그룹을 콘텐츠 원본 위치로 사용할 수 있습니다.

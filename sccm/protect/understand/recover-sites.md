@@ -1,25 +1,20 @@
 ---
-title: "사이트 복구"
+title: 사이트 복구
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager의 사이트 복구에 대해 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager의 사이트 복구에 대해 알아봅니다.
 ms.date: 11/20/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-protect
+ms.topic: conceptual
 ms.assetid: 19539f4d-1667-4b4c-99a1-9995f12cf5f7
-caps.latest.revision: 
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 74d01e151efa19f91104ad99f393f7e7b1a23836
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: bcc4181289e327537750d9790497c5451661de2e
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 #  <a name="recover-a-configuration-manager-site"></a>Configuration Manager 사이트 복구
 

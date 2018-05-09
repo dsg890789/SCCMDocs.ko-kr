@@ -1,23 +1,20 @@
 ---
 title: Surface 장치 대시보드
-titleSuffix: System Center Configuration Manager
+titleSuffix: Configuraton Manager
 description: 대시보드를 사용하여 Surface 장치에 대한 정보를 검토합니다.
-keywords: ''
-author: mestew
-ms.author: mstewart
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
 ms.date: 03/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: configuration-manager
-ms.service: ''
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-client
 ms.assetid: 7397fc17-3ae8-4525-8386-aea8a9cffa06
-ms.openlocfilehash: 8c9171ed5b239091b7f77b534368422575c0f2f4
-ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
+ms.openlocfilehash: db5df73db6a973ca689def785ee99a40425303fa
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="surface-device-dashboard-in-system-center-configuration-manager"></a>System Center Configuration Manager의 Surface 장치 대시보드
 

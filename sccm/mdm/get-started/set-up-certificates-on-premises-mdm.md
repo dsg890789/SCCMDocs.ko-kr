@@ -1,26 +1,20 @@
 ---
-title: "인증서 설정 "
+title: '인증서 설정 '
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 온-프레미스 모바일 장치 관리를 위해 신뢰할 수 있는 통신에 대한 인증서를 설정합니다."
-ms.custom: na
+description: System Center Configuration Manager에서 온-프레미스 모바일 장치 관리를 위해 신뢰할 수 있는 통신에 대한 인증서를 설정합니다.
 ms.date: 03/05/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: 2a7d7170-1933-40e9-96d6-74a6eb7278e2
-caps.latest.revision: "27"
-caps.handback.revision: "0"
-author: dougeby
-ms.author: dougeby
-manager: angrobe
-ms.openlocfilehash: 860f6e3f418a15ecfb79e9cbac5e6a09e17feb1a
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: c538c3b7668cc93069f0805b98f29586c3d7c86c
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-up-certificates-for-trusted-communications-for-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 온-프레미스 모바일 장치 관리를 위해 신뢰할 수 있는 통신에 대한 인증서를 설정합니다
 
@@ -58,7 +52,7 @@ System Center Configuration Manager 온\-프레미스 모바일 장치 관리에
 
 2.  인증 기관 콘솔에서 **CertificateAuthority**를 마우스 오른쪽 단추로 클릭하고 **속성**을 클릭합니다.  
 
-3.  CertificateAuthority 속성에서 **확장** 탭을 클릭하고, **확장 선택**이 **CDP(CRL 배포 지점)**로 설정되었는지 확인합니다.  
+3.  CertificateAuthority 속성에서 **확장** 탭을 클릭하고, **확장 선택**이 **CDP(CRL 배포 지점)** 로 설정되었는지 확인합니다.  
 
 4.  **http://<ServerDNSName\>/CertEnroll/<CAName\><CRLNameSuffix\><DeltaCRLAllowed\>.crl**을 선택합니다. 아래의 세 가지 옵션을 지정합니다.  
 
@@ -68,7 +62,7 @@ System Center Configuration Manager 온\-프레미스 모바일 장치 관리에
 
     -   **발급된 CRL의 IDP 확장에 포함**  
 
-5.  **끝내기 모듈** 탭, **속성...**을 차례로 클릭하고 **인증서를 파일 시스템에 게시할 수 있음**을 선택합니다.  
+5.  **끝내기 모듈** 탭, **속성...** 을 차례로 클릭하고 **인증서를 파일 시스템에 게시할 수 있음**을 선택합니다.  
 
 6.  Active Directory 인증서 서비스를 다시 시작해야 한다는 메시지가 표시되면 **확인**을 클릭합니다.  
 
@@ -99,7 +93,7 @@ System Center Configuration Manager 온\-프레미스 모바일 장치 관리에
 
 5.  **새 템플릿의 속성** 대화 상자의 **일반** 탭에서 Configuration Manager 사이트 시스템에서 사용할 웹 인증서를 생성할 템플릿 이름(예: **ConfigMgr MDM Web Server**)을 입력합니다.  
 
-6.  **주체 이름** 탭을 클릭하고 **Active Directory 정보에서 생성**을 선택하고 주체 이름 형식으로 **DNS 이름**을 선택합니다. **UPN(사용자 계정 이름)**을 선택한 경우 대체 주체 이름에서 확인란을 선택 취소합니다.  
+6.  **주체 이름** 탭을 클릭하고 **Active Directory 정보에서 생성**을 선택하고 주체 이름 형식으로 **DNS 이름**을 선택합니다. **UPN(사용자 계정 이름)** 을 선택한 경우 대체 주체 이름에서 확인란을 선택 취소합니다.  
 
 7.  **보안** 탭을 클릭하고 **Domain Admins** 및 **Enterprise Admins** 보안 그룹에서 **등록**권한을 제거합니다.  
 
@@ -137,9 +131,9 @@ System Center Configuration Manager 온\-프레미스 모바일 장치 관리에
 
 1.  등록 지점, 등록 프록시 지점, 배포 지점 또는 장치 관리 지점을 호스트하는 서버에서 **시작** > **관리 도구** > **IIS 관리자**를 클릭합니다.  
 
-2.  연결에서 **기본 웹 사이트**로 이동하여 마우스 오른쪽 단추로 클릭한 후 **바인딩 편집...**을 클릭합니다.  
+2.  연결에서 **기본 웹 사이트**로 이동하여 마우스 오른쪽 단추로 클릭한 후 **바인딩 편집...** 을 클릭합니다.  
 
-3.  사이트 바인딩 대화 상자에서 **https**, **편집...**을 차례로 클릭합니다.  
+3.  사이트 바인딩 대화 상자에서 **https**, **편집...** 을 차례로 클릭합니다.  
 
 4.  사이트 바인딩 편집 대화 상자에서, **SSL 인증서**에 대해 등록한 인증서를 선택하고, **확인**과 **닫기**를 차례로 클릭합니다.  
 
@@ -150,21 +144,21 @@ System Center Configuration Manager 온\-프레미스 모바일 장치 관리에
 
  다음 단계를 수행하여 웹 서버 인증서의 루트 인증서를 내보냅니다.  
 
-1.  IIS 관리자에서 **기본 웹 사이트**를 클릭한 후 오른쪽 작업 패널에서 **바인딩...**을 클릭합니다.  
+1.  IIS 관리자에서 **기본 웹 사이트**를 클릭한 후 오른쪽 작업 패널에서 **바인딩...** 을 클릭합니다.  
 
-2.  사이트 바인딩 대화 상자에서 **https**, **편집...**을 차례로 클릭합니다.  
+2.  사이트 바인딩 대화 상자에서 **https**, **편집...** 을 차례로 클릭합니다.  
 
-3.  웹 서버 인증서를 선택했는지 확인하고 **보기...**를 클릭합니다.  
+3.  웹 서버 인증서를 선택했는지 확인하고 **보기...** 를 클릭합니다.  
 
 4.  웹 서버 인증서의 속성에서 **인증 경로**, 인증 경로 맨 위에 있는 루트, **인증서 보기**를 차례로 클릭합니다.  
 
-5.  루트 인증서의 속성에서 **세부 정보**, **파일에 복사...**를 차례로 클릭합니다.  
+5.  루트 인증서의 속성에서 **세부 정보**, **파일에 복사...** 를 차례로 클릭합니다.  
 
 6.  인증서 내보내기 마법사에서 **다음**을 클릭합니다.  
 
-7.  **DER로 인코딩된 바이너리 X.509(.CER)**가 선택되어 있는지 확인하고 **다음**을 클릭합니다.  
+7.  **DER로 인코딩된 바이너리 X.509(.CER)** 가 선택되어 있는지 확인하고 **다음**을 클릭합니다.  
 
-8.  파일 이름에 대해 **찾아보기...**를 클릭하고 인증서 파일을 저장할 위치를 선택한 다음 파일 이름을 지정하고 **저장**을 클릭합니다.  
+8.  파일 이름에 대해 **찾아보기...** 를 클릭하고 인증서 파일을 저장할 위치를 선택한 다음 파일 이름을 지정하고 **저장**을 클릭합니다.  
 
      등록할 장치에서 루트 인증서를 가져오기 위해 이 파일에 액세스해야 하므로, 대부분의 컴퓨터 및 장치에서 액세스할 수 있는 공통 위치를 선택하거나 지금 편리한 위치(예: C 드라이브)에 저장한 후 나중에 공통 위치로 이동할 수 있습니다.  
 

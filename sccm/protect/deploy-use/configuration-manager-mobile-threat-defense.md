@@ -1,25 +1,20 @@
 ---
-title: "모바일 위협 방어"
+title: 모바일 위협 방어
 titleSuffix: Configuration Manager
-description: "Configuration Manager 및 Intune Mobile Threat Defense 파트너를 사용하여 장치, 네트워크 및 응용 프로그램 위험에 따라 회사 리소스에 대한 액세스를 제한합니다."
-ms.custom: na
+description: Configuration Manager 및 Intune Mobile Threat Defense 파트너를 사용하여 장치, 네트워크 및 응용 프로그램 위험에 따라 회사 리소스에 대한 액세스를 제한합니다.
 ms.date: 03/02/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-protect
+ms.topic: conceptual
 ms.assetid: 4c0e6824-2dfe-4700-b817-d5631e0eb872
-caps.latest.revision: 
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: 83911f35dbe8fc7bc24a4885929fbdf5660e7285
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 6aeed0c7e509ee96b226f5d1c7649bcf84af3af8
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="intune-mobile-threat-defense-connectors-in-configuration-manager"></a>Configuration Manager의 Intune Mobile Threat Defense 커넥터
 

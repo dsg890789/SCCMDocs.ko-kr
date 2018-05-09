@@ -4,17 +4,16 @@ titleSuffix: Configuration Manager
 description: 인터넷 기반 클라이언트의 관리를 간소화하도록 CMG(클라우드 관리 게이트웨이)를 계획하고 설계합니다.
 ms.date: 04/10/2018
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.assetid: 2dc8c9f1-4176-4e35-9794-f44b15f4e55f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2b207ffe95a078c955817d9251da3adbdf4de10d
-ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
+ms.openlocfilehash: 6e5274398b1a53b5a8dce8b854bccbe0e0d92081
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="plan-for-the-cloud-management-gateway-in-configuration-manager"></a>Configuration Manager에서 클라우드 관리 게이트웨이 계획
 
@@ -228,7 +227,7 @@ Fourth Coffee는 시애틀 본사의 온-프레미스 데이터 센터에 중앙
 
 CMG는 다음과 같은 Azure 구성 요소를 사용하며, 이 경우 Azure 구독 계정에 요금이 청구됩니다.
 
-#### <a name="virtual-machine"></a>가상 컴퓨터
+#### <a name="virtual-machine"></a>가상 머신
 
 - CMG는 Azure Cloud Services를 PaaS(Platform as a Service)로 사용합니다. 이 서비스는 컴퓨팅 비용이 발생하는 VM(가상 머신)을 사용합니다.  
 
@@ -243,7 +242,7 @@ CMG는 다음과 같은 Azure 구성 요소를 사용하며, 이 경우 Azure �
 - 잠재적인 비용을 확인하려면 [Azure 가격 계산기](https://azure.microsoft.com/pricing/calculator/)를 참조하세요.
 
     > [!NOTE]  
-    > 가상 컴퓨터 비용은 지역에 따라 다릅니다.
+    > 가상 머신 비용은 지역에 따라 다릅니다.
 
 #### <a name="outbound-data-transfer"></a>아웃바운드 데이터 전송
 
@@ -251,7 +250,7 @@ CMG는 다음과 같은 Azure 구성 요소를 사용하며, 이 경우 Azure �
 
 - CMG와 통신하는 클라이언트가 없는 경우에도 일부 백그라운드 통신으로 인해 CMG와 온-프레미스 사이트 간에 네트워크 트래픽이 발생합니다.  
 
-- Configuration Manager 콘솔에서 **아웃바운드 데이터 전송(GB)**을 봅니다. 자세한 내용은 [CMG에서 클라이언트 모니터링](/sccm/core/clients/manage/cmg/monitor-clients-cloud-management-gateway)을 참조하세요.  
+- Configuration Manager 콘솔에서 **아웃바운드 데이터 전송(GB)** 을 봅니다. 자세한 내용은 [CMG에서 클라이언트 모니터링](/sccm/core/clients/manage/cmg/monitor-clients-cloud-management-gateway)을 참조하세요.  
 
 - 잠재적인 비용을 확인하려면 [Azure 대역폭 가격 정보](https://azure.microsoft.com/pricing/details/bandwidth/)를 참조하세요. 데이터 전송에 대한 가격 책정은 계층화되어 있습니다. 많이 사용할수록 기가바이트당 지불하는 비용은 더 줄어 듭니다.  
 

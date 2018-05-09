@@ -1,22 +1,20 @@
 ---
-title: "소프트웨어 업데이트 지점 제거"
+title: 소프트웨어 업데이트 지점 제거
 titleSuffix: Configuration Manager
-description: "이 절차에 따라 Configuration Manager 콘솔에서 사이트의 소프트웨어 업데이트 지점 사이트 시스템 역할을 제거할 수 있습니다."
-keywords: 
-author: dougeby
-ms.author: dougeby
-manager: angrobe
+description: 이 절차에 따라 Configuration Manager 콘솔에서 사이트의 소프트웨어 업데이트 지점 사이트 시스템 역할을 제거할 수 있습니다.
+author: aczechowski
 ms.date: 10/06/2016
-ms.topic: article
+ms.topic: conceptual
 ms.prod: configuration-manager
-ms.service: 
 ms.technology: configmgr-sum
 ms.assetid: 2486375c-d4a2-4cf2-9124-9bee02bbf173
-ms.openlocfilehash: b5493f2572ecca50aba87b8944eeab706c3942fd
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 585077c44b13d79da55e8ab140fd93998b8371c1
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 #  <a name="BKMK_RemoveSUP"></a> 소프트웨어 업데이트 지점 사이트 시스템 역할 제거  
 

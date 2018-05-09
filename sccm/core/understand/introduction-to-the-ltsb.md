@@ -1,25 +1,20 @@
 ---
-title: "장기 서비스 분기 소개"
+title: 장기 서비스 분기 소개
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager의 장기 서비스 분기에 대해 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager의 장기 서비스 분기에 대해 알아봅니다.
 ms.date: 05/01/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 694bc29f-a7fd-4e06-815a-1a9c5e9ac563
-caps.latest.revision: "0"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: c2dfb121a91dd2559c02e5bd737485892fc11c02
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+manager: dougeby
+ms.openlocfilehash: 20151eeac8a0a430b38ce9537748e0fef019df64
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="introduction-to-the-long-term-servicing-branch-of-system-center-configuration-manager"></a>System Center Configuration Manager의 장기 서비스 분기 소개
 

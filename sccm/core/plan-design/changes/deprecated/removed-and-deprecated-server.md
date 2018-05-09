@@ -1,27 +1,20 @@
 ---
-title: "Deprecated for Configuration Manager 사이트 서버"
+title: Deprecated for Configuration Manager 사이트 서버
 titleSuffix: Configuration Manager
-description: "사이트 서버에 대해 System Center Configuration Manager에서 더 이상 지원되지 않는 제품 및 운영 체제에 대해 알아봅니다."
-ms.custom: na
+description: 사이트 서버에 대해 System Center Configuration Manager에서 더 이상 지원되지 않는 제품 및 운영 체제에 대해 알아봅니다.
 ms.date: 01/25/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: d53ac075-438b-41da-ab85-42f33982da0c
-caps.latest.revision: 
-caps.handback.revision: 
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 0124939ae1ea5c1244c5776973297727b292e028
-ms.sourcegitcommit: b13da5ad8ffd58e3b89fa6d7170e1dec3ff130a4
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: b92eb8083ce886fcab4d9957b2a79999d72a1a5a
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="removed-and-deprecated-for-system-center-configuration-manager-site-servers"></a>System Center Configuration Manager 사이트 서버에서 제거된 기능과 사용되지 않는 기능
 

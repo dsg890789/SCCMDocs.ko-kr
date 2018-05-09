@@ -1,26 +1,21 @@
 ---
-title: "기술 미리 보기 1603의 기능"
+title: 기술 미리 보기 1603의 기능
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager용 Technical Preview 버전 1603에서 사용 가능한 기능에 대해 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager용 Technical Preview 버전 1603에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 5f861b72-9f14-4d17-a512-4a79b660abe6
-caps.latest.revision: "8"
-author: erikje
-ms.author: erikje
-manager: angrobe
+author: aczechowski
 robots: noindex,nofollow
-ms.openlocfilehash: 9152016afe1d6333cb919f3b5eb155028dc6eae1
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 6d5ecf4e2d231a596012aa9f7d371f18ef0705a1
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="capabilities-in-technical-preview-1603-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1603의 기능
 

@@ -1,26 +1,20 @@
 ---
-title: "하드웨어 인벤토리 "
+title: '하드웨어 인벤토리 '
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager의 하드웨어 인벤토리를 소개합니다."
-ms.custom: na
+description: System Center Configuration Manager의 하드웨어 인벤토리를 소개합니다.
 ms.date: 02/22/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.technology: configmgr-client
+ms.topic: conceptual
 ms.assetid: 3969952e-9d05-49c9-82a2-e7e90ccef511
-caps.latest.revision: "6"
-caps.handback.revision: "0"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: d453a341cb238166af7d7d4694fde44ea1b0ad56
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 688bb6dc57f5d50e1807bff40a1d1a4c66f4b349
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="introduction-to-hardware-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager의 하드웨어 인벤토리 소개
 
@@ -34,7 +28,7 @@ System Center Configuration Manager에서 하드웨어 인벤토리를 사용하
 
 -   [특정 하드웨어 구성을 기반으로 하는 장치를 반환하는 쿼리를 만듭니다](../../../../core/servers/manage/queries-technical-reference.md).  
 
--   [특정 하드웨어 구성을 기반으로 하는 쿼리 기반 컬렉션을 만듭니다](../../../../core/clients/manage/collections/introduction-to-collections.md). 쿼리 기반 컬렉션 멤버 자격이 일정에 따라 자동으로 업데이트됩니다. 소프트웨어 배포를 포함하여 여러 작업에 대한 컬렉션을 사용할 수 있습니다. .  
+-   [특정 하드웨어 구성을 기반으로 하는 쿼리 기반 컬렉션을 만듭니다](../../../../core/clients/manage/collections/introduction-to-collections.md). 쿼리 기반 컬렉션 멤버 자격이 일정에 따라 자동으로 업데이트됩니다. 소프트웨어 배포를 포함하여 여러 작업에 대한 컬렉션을 사용할 수 있습니다. 을 참조하세요.  
 
 -   [조직의 하드웨어 구성에 대한 특정 세부 정보를 표시하는 보고서를 실행합니다](../../../../core/servers/manage/reporting.md).   
 

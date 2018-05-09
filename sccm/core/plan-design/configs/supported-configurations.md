@@ -1,26 +1,20 @@
 ---
-title: "지원되는 구성"
+title: 지원되는 구성
 titleSuffix: Configuration Manager
-description: "작동하는 System Center Configuration Manager 배포를 계획, 배포 및 유지 관리할 수 있도록 주요 구성 및 요구 사항을 식별합니다."
-ms.custom: na
+description: 작동하는 System Center Configuration Manager 배포를 계획, 배포 및 유지 관리할 수 있도록 주요 구성 및 요구 사항을 식별합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 45a10878-ff48-4318-9c6d-c014b38a4039
-caps.latest.revision: "9"
-caps.handback.revision: "0"
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 097a4e5b6a44aec52027f075ad002a2393ae3fb3
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: de769a24b44c5ab5e28035e96fef341aecd78006
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="supported-configurations-for-system-center-configuration-manager"></a>System Center Configuration Manager에서 지원되는 구성
 
@@ -71,4 +65,4 @@ Configuration Manager에 필요하고 지원하는 Active Directory 도메인 �
 Configuration Manager에서 사용할 수 있도록 지원되는 Windows 기술(예: BranchCache 및 데이터 중복 제거) 및 제한 사항을 알아봅니다.
 
 -  [가상화 환경 지원](../../../core/plan-design/configs/support-for-virtualization-environments.md)  
-지원되는 가상 컴퓨터 기술을 사용하는 방법을 알아봅니다.
+지원되는 가상 머신 기술을 사용하는 방법을 알아봅니다.

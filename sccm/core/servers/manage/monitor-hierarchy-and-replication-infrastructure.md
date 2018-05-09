@@ -1,26 +1,20 @@
 ---
-title: "복제 모니터링"
+title: 복제 모니터링
 titleSuffix: Configuration Manager
-description: "콘솔의 모니터링 작업 영역을 사용하여 Configuration Manager에서 인프라 및 작업을 모니터링하는 방법을 알아봅니다."
-ms.custom: na
+description: 콘솔의 모니터링 작업 영역을 사용하여 Configuration Manager에서 인프라 및 작업을 모니터링하는 방법을 알아봅니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 3fab4d67-8d2a-45ce-8b06-471280102cf6
-caps.latest.revision: "11"
-caps.handback.revision: "0"
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 459a619d08a5d38c51301e2f6cff23a5d46a9464
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 04faf92545f84fdf53c522ad9aa0c74bbd5c4aa1
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="monitor-hierarchy-and-replication-infrastructure-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 계층 및 복제 인프라 모니터링
 
@@ -33,7 +27,7 @@ System Center Configuration Manager에서 인프라 및 작업을 모니터링�
 
  Configuration Manager 콘솔을 모니터링에 사용하는 것 외에도 Configuration Manager 보고서를 사용하거나 Configuration Manager 구성 요소에 대한 Configuration Manager 로그 파일을 볼 수 있습니다. 보고서에 대한 자세한 내용은 [System Center Configuration Manager의 보고](../../../core/servers/manage/reporting.md)를 참조하세요. 로그 파일에 대한 자세한 내용은 [System Center Configuration Manager의 로그 파일](../../../core/plan-design/hierarchy/log-files.md)을 참조하세요.  
 
- 사이트를 모니터링할 때에는 조치가 필요한 문제를 나타내는 징후를 확인합니다. 예를 들면 다음과 같습니다.  
+ 사이트를 모니터링할 때에는 조치가 필요한 문제를 나타내는 징후를 확인합니다. 예:  
 
 -   사이트 서버 또는 사이트 시스템에 있는 파일 백로그  
 

@@ -1,27 +1,20 @@
 ---
-title: "인프라 수정"
+title: 인프라 수정
 titleSuffix: Configuration Manager
-description: "배포한 Configuration Manager 인프라에 영향을 주는 작업이나 변경을 수행하는 방법을 알아봅니다."
-ms.custom: na
+description: 배포한 Configuration Manager 인프라에 영향을 주는 작업이나 변경을 수행하는 방법을 알아봅니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: a7975dc8-46ab-4dae-86b6-dc3e3cf3b2f0
-caps.latest.revision: 
-caps.handback.revision: 
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 93456b2708afbdaac0ff3c68dc6c2d9927def7ad
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 7f798fdb1183b852bded92711cc5f489666f4f2a
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="modify-your-system-center-configuration-manager-infrastructure"></a>System Center Configuration Manager 인프라 수정
 
@@ -231,7 +224,7 @@ SQL Server 설명서는 [수동으로 SPN을 등록](https://technet.microsoft.c
 
 2.  필요한 경우 사이트 서버의 도메인에 연결합니다.  
 
-3.  콘솔 창에서 사이트 서버의 도메인, **DC=&lt;서버 고유 이름\>**, **CN=Users**를 차례로 확장하고 **CN=&lt;서비스 계정 사용자\>**를 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.  
+3.  콘솔 창에서 사이트 서버의 도메인, **DC=&lt;서버 고유 이름\>**, **CN=Users**를 차례로 확장하고 **CN=&lt;서비스 계정 사용자\>** 를 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.  
 
 4.  **CN=&lt;서비스 계정 사용자\> 속성** 대화 상자에서 **servicePrincipalName** 값을 검토하여 유효한 SPN이 작성되어 올바른 SQL Server 컴퓨터에 연결되었는지 확인합니다.  
 
@@ -241,7 +234,7 @@ SQL Server 설명서는 [수동으로 SPN을 등록](https://technet.microsoft.c
 
 2.  **SQL Server 구성 관리자**를 엽니다.  
 
-3.  **SQL Server 서비스**를 클릭한 다음 **SQL Server&lt;인스턴스 이름\>**을 두 번 클릭합니다.  
+3.  **SQL Server 서비스**를 클릭한 다음 **SQL Server&lt;인스턴스 이름\>** 을 두 번 클릭합니다.  
 
 4.  **로그온** 탭에서 **계정 지정**을 선택한 다음 1단계에서 만든 도메인 사용자 계정에 대한 사용자 이름 및 암호를 입력하거나, **찾아보기** 를 클릭하여 Active Directory Domain Services에서 사용자 계정을 찾은 후 **적용**을 클릭합니다.  
 

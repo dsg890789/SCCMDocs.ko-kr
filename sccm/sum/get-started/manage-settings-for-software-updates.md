@@ -1,22 +1,20 @@
 ---
-title: "소프트웨어 업데이트 설정 관리"
+title: 소프트웨어 업데이트 설정 관리
 titleSuffix: Configuration Manager
-description: "소프트웨어 업데이트 지점을 설치한 후 사이트에서 소프트웨어 업데이트에 적합한 클라이언트 설정을 알아봅니다."
-keywords: 
-author: dougeby
-ms.author: dougeby
-manager: angrobe
+description: 소프트웨어 업데이트 지점을 설치한 후 사이트에서 소프트웨어 업데이트에 적합한 클라이언트 설정을 알아봅니다.
+author: aczechowski
 ms.date: 03/26/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod: configuration-manager
-ms.service: 
 ms.technology: configmgr-sum
 ms.assetid: 0d484c1a-e903-4bff-9e9b-e452c62e38a8
-ms.openlocfilehash: 54fb48ca210f66eabe8d438f0aa23d9ad82e0bd9
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: ad44beeb662cb0cd5cf083b18721d88a5b7360c4
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 #  <a name="BKMK_ManageSUSettings"></a> 소프트웨어 업데이트 설정 관리  
 

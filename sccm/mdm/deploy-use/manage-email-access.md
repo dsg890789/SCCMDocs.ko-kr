@@ -2,25 +2,19 @@
 title: 전자 메일 액세스 관리
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager 조건부 액세스를 사용하여 Exchange 메일에 대한 액세스를 관리하는 방법을 알아봅니다.
-ms.custom: na
 ms.date: 03/05/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-hybrid
+ms.topic: conceptual
 ms.assetid: fa648e73-5fb8-4818-ab57-7466ffaf888e
-caps.latest.revision: 24
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: e36674d27757daab9ced4e7e8b51942a4929b5ff
-ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 52785e1f432e1a18d1e8264dc2c78134af9f006e
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manage-email-access-in-system-center-configuration-manager"></a>System Center Configuration Manager의 메일 액세스 관리
 
@@ -253,7 +247,7 @@ Office 데스크톱 응용 프로그램은 다음을 실행하는 Exchange Onlin
 
     -   **장치가 규정을 준수해야 합니다.** PC가 Intune에 등록되어 있어야 하며 정책을 준수해야 합니다. PC가 등록되지 않은 경우 등록 방법에 대한 지침이 포함된 메시지가 표시됩니다.  
 
-7.  **OWA(Outlook Web Access)**에서 지원되는 브라우저[예: Safari(iOS) 및 Chrome(Android)]를 통한 Exchange Online 액세스만 허용하도록 선택할 수 있습니다. 다른 브라우저에서의 액세스는 차단됩니다. Outlook에의 응용 프로그램 액세스에 대해 선택한 것과 동일한 플랫폼 제한 사항이 여기에도 적용됩니다.
+7.  **OWA(Outlook Web Access)** 에서 지원되는 브라우저[예: Safari(iOS) 및 Chrome(Android)]를 통한 Exchange Online 액세스만 허용하도록 선택할 수 있습니다. 다른 브라우저에서의 액세스는 차단됩니다. Outlook에의 응용 프로그램 액세스에 대해 선택한 것과 동일한 플랫폼 제한 사항이 여기에도 적용됩니다.
 
     **Android** 장치에서는, 사용자가 브라우저 액세스를 사용하도록 설정해야 합니다.  이를 위해서 최종 사용자가 등록된 장치에서 다음과 같이 "브라우저 액세스 사용" 옵션을 사용하도록 설정해야 합니다.
      1. **회사 포털 앱**을 시작합니다.

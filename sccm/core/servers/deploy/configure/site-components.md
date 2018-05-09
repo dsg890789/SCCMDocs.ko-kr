@@ -1,25 +1,20 @@
 ---
-title: "사이트 구성 요소"
+title: 사이트 구성 요소
 titleSuffix: Configuration Manager
-description: "사이트 시스템 역할 및 사이트 상태 보고의 동작을 수정하기 위해 사이트 구성 요소를 구성하는 방법을 알아봅니다."
-ms.custom: na
+description: 사이트 시스템 역할 및 사이트 상태 보고의 동작을 수정하기 위해 사이트 구성 요소를 구성하는 방법을 알아봅니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: 5fccbbeb-0faa-4943-83c2-e67db62d392d
-caps.latest.revision: "9"
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 4c5e6d4587f79eb52e9295d2641f985520738ebe
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: da7537ff9cda198f938eafdfc5db198e79a2cb5b
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="site-components-for-system-center-configuration-manager"></a>System Center Configuration Manager의 사이트 구성 요소
 

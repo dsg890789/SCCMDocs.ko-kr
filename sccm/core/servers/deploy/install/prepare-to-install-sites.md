@@ -1,25 +1,20 @@
 ---
-title: "사이트를 설치할 준비"
+title: 사이트를 설치할 준비
 titleSuffix: Configuration Manager
-description: "여러 Configuration Manager 사이트를 설치할 계획인 경우 이 정보를 읽으면 시간을 절약하고 오류를 방지할 수 있습니다."
-ms.custom: na
+description: 여러 Configuration Manager 사이트를 설치할 계획인 경우 이 정보를 읽으면 시간을 절약하고 오류를 방지할 수 있습니다.
 ms.date: 3/1/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9089e1b5-cba4-42bd-a2de-126ef882a3af
-caps.latest.revision: "5"
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 67f53f6f9e346835ed3e72fe45b699c86d35766a
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 9f07a321ac6f10f5287a88d0df7064920f538ae5
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="prepare-to-install-system-center-configuration-manager-sites"></a>System Center Configuration Manager 사이트 설치 준비
 

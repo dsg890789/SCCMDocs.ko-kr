@@ -1,26 +1,20 @@
 ---
-title: "응용 프로그램 만들기 및 배포"
+title: 응용 프로그램 만들기 및 배포
 titleSuffix: Configuration Manager
-description: "기간 업무 앱이 포함된 응용 프로그램을 만들어 배포하고 앱을 효과적으로 관리하는 방법을 알아봅니다."
-ms.custom: na
+description: 기간 업무 앱이 포함된 응용 프로그램을 만들어 배포하고 앱을 효과적으로 관리하는 방법을 알아봅니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-app
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 3bd1e487-ea18-43c1-b7c3-acbd9b86d429
-caps.latest.revision: "15"
-caps.handback.revision: "0"
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
-ms.openlocfilehash: a9f8a54400897e30d01d97f81b98e0e539fc86a7
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 3d34ec4abb712ce6797033a5ff490280611e1b02
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-and-deploy-an-application-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 응용 프로그램 만들기 및 배포
 
@@ -59,7 +53,7 @@ Configuration Manager 응용 프로그램에 이미 익숙한 경우에는 이 �
 
 4.  **응용 프로그램 만들기 마법사**의 **일반** 페이지에서 **설치 파일에서 이 응용 프로그램에 대한 정보 자동 검색**을 선택합니다. 이렇게 하면 마법사의 일부 정보가 설치 .msi 파일에서 추출된 정보로 미리 채워집니다. 그런 후에 다음 정보를 지정합니다.  
 
-    -   **형식**: **Windows Installer(\*.msi 파일)**를 선택합니다.  
+    -   **형식**: **Windows Installer(\*.msi 파일)** 를 선택합니다.  
 
     -   **위치**: 설치 파일 **Contoso.msi**의 위치를 입력하거나 **찾아보기**를 선택하여 위치를 선택합니다. Configuration Manager에서 설치 파일을 찾을 수 있도록 하려면 위치를 *\\\Server\Share\File* 형식으로 지정해야 합니다.  
 

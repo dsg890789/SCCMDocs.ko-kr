@@ -2,26 +2,19 @@
 title: App-V 가상 응용 프로그램 배포
 titleSuffix: Configuration Manager
 description: 가상 응용 프로그램을 만들고 배포할 때 고려해야 할 사항을 확인합니다.
-ms.custom: na
 ms.date: 03/12/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-app
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-app
+ms.topic: conceptual
 ms.assetid: ddcad9f2-a542-4079-83ca-007d7cb44995
-caps.latest.revision: 11
-caps.handback.revision: 0
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
-ms.openlocfilehash: 99c259a20a7e9c9f34d7b355e6fea5d4c6861392
-ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 42cd1011b3d077a21cd481d5c88b6c9c53765f0e
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="deploy-app-v-virtual-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 App-V 가상 응용 프로그램 배포
 

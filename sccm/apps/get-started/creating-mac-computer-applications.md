@@ -1,25 +1,20 @@
 ---
-title: "Mac 컴퓨터 응용 프로그램 만들기"
+title: Mac 컴퓨터 응용 프로그램 만들기
 titleSuffix: Configuration Manager
-description: "Mac 컴퓨터용 응용 프로그램을 만들고 배포할 때 고려해야 할 사항을 확인합니다."
-ms.custom: na
+description: Mac 컴퓨터용 응용 프로그램을 만들고 배포할 때 고려해야 할 사항을 확인합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-app
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ab1aecdd-d943-44f5-b0a9-e8fe7439e5d6
-caps.latest.revision: "9"
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
-ms.openlocfilehash: 912632c672c49deefc946e089dad6a82454c4b67
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 3cbb7281cd7dd39a32a71105fe173f868947eef9
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-mac-computer-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 Mac 컴퓨터 응용 프로그램 만들기
 
@@ -52,7 +47,7 @@ Mac 컴퓨터용 응용 프로그램을 만들고 배포할 때는 다음 사항
 
 |단계|세부 정보|  
 |----------|-------------|  
-|**1단계**: Configuration Manager에서 사용할 수 있도록 Mac 응용 프로그램 준비|Mac 소프트웨어 패키지에서 Configuration Manager 응용 프로그램을 만들려면 먼저 Mac 컴퓨터에서 **CMAppUtil** 도구를 사용하여 Mac 소프트웨어를 Configuration Manager**.cmmac** 파일로 변환해야 합니다.|  
+|**1단계**: Configuration Manager에서 사용할 수 있도록 Mac 응용 프로그램 준비|Mac 소프트웨어 패키지에서 Configuration Manager 응용 프로그램을 만들려면 먼저 Mac 컴퓨터에서 **CMAppUtil** 도구를 사용하여 Mac 소프트웨어를 Configuration Manager **.cmmac** 파일로 변환해야 합니다.|  
 |**2단계**: Mac 소프트웨어가 포함된 Configuration Manager 응용 프로그램 만들기|**응용 프로그램 만들기 마법사**를 사용하여 Mac 소프트웨어용 응용 프로그램을 만듭니다.|  
 |**3단계**: Mac 응용 프로그램에 대한 배포 유형 만들기|이 단계는 응용 프로그램에서 이 정보를 자동으로 가져오지 않은 경우에만 필요합니다.|  
 |**4단계**: Mac 응용 프로그램 배포|**소프트웨어 배포 마법사**를 사용하여 Mac 컴퓨터에 응용 프로그램을 배포합니다.|  

@@ -1,26 +1,20 @@
 ---
-title: "온-프레미스 MDM 계획"
+title: 온-프레미스 MDM 계획
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 모바일 장치를 관리하기 위해 온-프레미스 모바일 장치 관리를 계획합니다."
-ms.custom: na
+description: System Center Configuration Manager에서 모바일 장치를 관리하기 위해 온-프레미스 모바일 장치 관리를 계획합니다.
 ms.date: 03/05/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: 02979fb8-ea7e-4ec6-b7e0-ecbfda73e52d
-caps.latest.revision: "9"
-caps.handback.revision: "0"
-author: dougeby
-ms.author: dougeby
-manager: angrobe
-ms.openlocfilehash: e1c6a5ccd003295d007e78f0745c30732e10c2df
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 10cddac80b9a7ea4bd912e2f52585cdcef7e70da
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="plan-for-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>System Center Configuration Manager의 온-프레미스 모바일 장치 관리에 대한 계획
 

@@ -1,26 +1,20 @@
 ---
-title: "Asset Intelligence에 대한 유효성 검사 상태 전환 예제"
+title: Asset Intelligence에 대한 유효성 검사 상태 전환 예제
 titleSuffix: Configuration Manager
-description: "Asset Intelligence System Center Configuration Manager에서 Asset Intelligence에 대한 유효성 검사 상태 전환 예제를 참조하세요."
-ms.custom: na
+description: Asset Intelligence System Center Configuration Manager에서 Asset Intelligence에 대한 유효성 검사 상태 전환 예제를 참조하세요.
 ms.date: 2/22/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 6230a6e5-a1f6-459b-84f1-07fbde0e70f0
-caps.latest.revision: "6"
-caps.handback.revision: "0"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: 469234a229d641bc897f5be6f4076be5cf72b64e
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: cd4d2075e7980361d341a6ed71ff151ada997060
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="example-validation-state-transitions-for-asset-intelligence-in-system-center-configuration-manager"></a>Asset Intelligence System Center Configuration Manager에서 Asset Intelligence에 대한 유효성 검사 상태 전환 예제
 

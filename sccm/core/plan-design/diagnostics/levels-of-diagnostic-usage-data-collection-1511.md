@@ -1,44 +1,21 @@
 ---
-title: "1511에 대한 진단 데이터"
+title: 1511에 대한 진단 데이터
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 버전 1511에서 수집하는 진단 및 사용 현황 데이터에 대해 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager 버전 1511에서 수집하는 진단 및 사용 현황 데이터에 대해 알아봅니다.
 ms.date: 12/29/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9e614ae1-47d2-4a93-ba0a-89dc50d1e266
-caps.latest.revision: "4"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
+manager: dougeby
 robots: noindex,nofollow
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- hu-hu
-- it-it
-- ja-jp
-- ko-kr
-- nl-nl
-- pl-pl
-- pt-br
-- pt-pt
-- ru-ru
-- sv-se
-- tr-tr
-- zh-cn
-- zh-tw
-ms.openlocfilehash: da758cf1222f23c5864bebb1e31daeb8f41552ae
-ms.sourcegitcommit: da27d37cc4e4e06cf23758846cdd7acb617f744b
+ms.openlocfilehash: fbd3a84a81fae4ec9197368ff3eca0c027ae9d90
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1511-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1511에 대한 진단 사용 현황 데이터 수집의 수준
 
@@ -82,7 +59,7 @@ System Center Configuration Manager 버전 1511에서는 **기본**, **고급**,
 
 -   기본 Configuration Manager 사이트 계층 구조 데이터(사이트 목록, 유형, 버전, 상태, 클라이언트 수 및 표준 시간대)  
 
--   기본 사이트 시스템 서버 정보(사용되는 사이트 시스템 역할, 인터넷 및 SSL 상태, 운영 체제, 프로세서, 실제 또는 가상 컴퓨터)  
+-   기본 사이트 시스템 서버 정보(사용되는 사이트 시스템 역할, 인터넷 및 SSL 상태, 운영 체제, 프로세서, 실제 또는 가상 머신)  
 
 -   기본 사용자 검색 통계(사용자 검색 횟수, 최소/최대/평균 그룹 크기)  
 

@@ -1,25 +1,20 @@
 ---
-title: "작업 순서를 사용하여 가상 하드 디스크 관리"
+title: 작업 순서를 사용하여 가상 하드 디스크 관리
 titleSuffix: Configuration Manager
-description: "Configuration Manager에서 VHD를 만들고 수정하며, 응용 프로그램과 소프트웨어 업데이트를 추가하고, VHD를 System Center VMM(Virtual Machine Manager)에 게시합니다."
-ms.custom: na
+description: Configuration Manager에서 VHD를 만들고 수정하며, 응용 프로그램과 소프트웨어 업데이트를 추가하고, VHD를 System Center VMM(Virtual Machine Manager)에 게시합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-osd
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0212b023-804a-4f84-b880-7a59cdb49c67
-caps.latest.revision: "5"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: 89e30f81648aff16de2f7db55cbdda06cf69551d
-ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
+manager: dougeby
+ms.openlocfilehash: d1963509bc4255e2a203e9ed562f5c51a3db0625
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="use-a-task-sequence-to-manage-virtual-hard-disks-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업 순서를 사용하여 가상 하드 디스크 관리
 
@@ -53,7 +48,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
 
 -   VHD를 관리할 컴퓨터에 충분한 디스크 공간이 있는지 확인합니다. VHD의 하드 디스크 공간 요구 사항은 설치하는 운영 체제 및 응용 프로그램에 따라 다릅니다.  
 
--   VHD를 관리할 컴퓨터에 충분한 메모리가 있는지 확인합니다. VHD를 만드는 프로세스 동안 가상 컴퓨터는 메모리의 2GB를 소비하도록 구성됩니다.  
+-   VHD를 관리할 컴퓨터에 충분한 메모리가 있는지 확인합니다. VHD를 만드는 프로세스 동안 가상 머신은 메모리의 2GB를 소비하도록 구성됩니다.  
 
 -   VHD를 VMM에 업로드할 컴퓨터에서 System Center Virtual Machine Manager(VMM) 콘솔을 설치합니다. VHD를 관리할 컴퓨터와 다른 별도의 컴퓨터에 VMM 콘솔을 설치할 수 있습니다. 즉, VHD를 VMM으로 가져오기 위해 Hyper-V을 설치할 필요는 없습니다.  
 
@@ -64,10 +59,10 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
  VHD를 만들려면 VHD를 만드는 단계가 포함된 작업 순서를 만든 후 "가상 하드 드라이브 만들기 마법사"에서 VHD를 만드는 작업 순서를 사용해야 합니다. 다음 섹션에서는 VHD를 만드는 단계를 설명합니다.  
 
 ###  <a name="BKMK_CreateTS"></a> VHD에 대한 작업 순서 만들기  
- VHD를 만드는 단계가 포함된 작업 순서를 만들어야 합니다. VHD를 만드는 데 사용할 단계를 만드는 **가상 하드 디스크에 기존 이미지 패키지 설치** 옵션이 작업 순서 만들기 마법사에 있습니다. 예를 들어 마법사에서 필수 단계인 Windows PE에서 다시 시작, 디스크 포맷 및 파티션 만들기, 운영 체제 적용, 컴퓨터 종료 등이 추가됩니다. 정식 운영 체제 상태에서 VHD를 만들 수 없습니다. 또한 가상 컴퓨터가 종료되어야 패키징이 완료되므로 Configuration Manager는 가상 컴퓨터가 종료될 때까지 기다려야 합니다. 기본적으로 마법사는 5분 동안 기다린 후 가상 컴퓨터를 종료합니다. 작업 순서를 만든 후 필요한 경우 단계를 더 추가할 수 있습니다.  
+ VHD를 만드는 단계가 포함된 작업 순서를 만들어야 합니다. VHD를 만드는 데 사용할 단계를 만드는 **가상 하드 디스크에 기존 이미지 패키지 설치** 옵션이 작업 순서 만들기 마법사에 있습니다. 예를 들어 마법사에서 필수 단계인 Windows PE에서 다시 시작, 디스크 포맷 및 파티션 만들기, 운영 체제 적용, 컴퓨터 종료 등이 추가됩니다. 정식 운영 체제 상태에서 VHD를 만들 수 없습니다. 또한 가상 머신이 종료되어야 패키징이 완료되므로 Configuration Manager는 가상 머신이 종료될 때까지 기다려야합니다. 기본적으로 마법사는 5분 동안 기다린 후 가상 머신을 종료합니다. 작업 순서를 만든 후 필요한 경우 단계를 더 추가할 수 있습니다.  
 
 > [!IMPORTANT]  
->  다음 절차를 수행하면 VHD를 성공적으로 만드는 필수 단계를 자동으로 포함하는 **가상 하드 디스크에 기존 이미지 패키지 설치** 옵션을 사용하여 작업 순서가 만들어집니다. 기존 작업 순서를 사용하도록 선택하거나 수동으로 작업 순서를 만드는 경우 작업 순서의 끝에 컴퓨터 종료 단계를 추가해야 합니다. 이 단계가 없으면 임시 가상 컴퓨터는 삭제되지 않고 VHD를 만드는 프로세스는 완료되지 않습니다. 하지만 마법사는 완료되어 작업에 성공한 것으로 보고합니다.  
+>  다음 절차를 수행하면 VHD를 성공적으로 만드는 필수 단계를 자동으로 포함하는 **가상 하드 디스크에 기존 이미지 패키지 설치** 옵션을 사용하여 작업 순서가 만들어집니다. 기존 작업 순서를 사용하도록 선택하거나 수동으로 작업 순서를 만드는 경우 작업 순서의 끝에 컴퓨터 종료 단계를 추가해야 합니다. 이 단계가 없으면 임시 가상 머신은 삭제되지 않고 VHD를 만드는 프로세스는 완료되지 않습니다. 하지만 마법사는 완료되어 작업에 성공한 것으로 보고합니다.  
 
  VHD를 만드는 작업 순서를 만들려면 다음 절차를 따르십시오.  
 
@@ -116,7 +111,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
 
          OU(조직 구성 단위)도 지정할 수 있습니다. 이것은 컴퓨터 계정을 만들 OU의 LDAP X.500-고유 이름이 아직 없는 경우 이 이름을 지정하는 옵션 설정입니다.  
 
-    -   **계정**: 지정된 도메인에 가입할 권한이 있는 계정의 사용자 이름과 암호를 지정합니다. *도메인\사용자* 또는 *%변수%*등을 지정할 수 있습니다.  
+    -   **계정**: 지정된 도메인에 가입할 권한이 있는 계정의 사용자 이름과 암호를 지정합니다. *도메인\사용자* 또는 *%변수%* 등을 지정할 수 있습니다.  
 
 8.  **Configuration Manager 설치** 페이지에서 대상 컴퓨터에 설치할 Configuration Manager 클라이언트 패키지를 지정한 후 **다음**을 클릭합니다.  
 
@@ -175,7 +170,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
     >  -   **CreateTSMedia.log**: 마법사에서 작업 순서 미디어가 생성되는 동안 이 로그에 정보가 기록됩니다. 이 로그 파일을 검토하여 독립 실행형 미디어를 만드는 작업의 진행률을 추적할 수 있습니다.  
     > -   **DeployToVHD.log**: 마법사에서 VHD가 생성되는 프로세스를 거치는 동안 이 로그에 정보가 기록됩니다. 이 로그 파일을 검토하여 독립 실행형 미디어를 만든 후 모든 마법사 단계의 진행률을 추적할 수 있습니다.  
     >   
-    >  또한 운영 체제 설치가 시작된 경우 컴퓨터에 Hyper-V 관리 도구가 설치되어 있으면 Hyper-V 관리자를 열고 마법사가 만든 임시 가상 컴퓨터에 연결하여 실행 중인 작업 순서를 확인할 수 있습니다. 가상 컴퓨터에서 smsts.log 파일을 모니터링하여 작업 순서의 진행률을 추적할 수 있습니다. 작업 순서 단계를 완료하는 데 문제가 있는 경우 이 로그 파일을 사용하면 문제 해결에 도움이 됩니다. smsts.log 파일은 하드 디스크가 포맷되기 전에는 x: \windows\temp\smstslog\smsts.log에 있고, 포맷된 후에는 c:\\_SMSTaskSequence\Logs\Smstslog\에 있습니다. 작업 순서 단계를 완료한 후 가상 컴퓨터는 기본값인 5분 후에 종료되고 삭제됩니다.  
+    >  또한 운영 체제 설치가 시작된 경우 컴퓨터에 Hyper-V 관리 도구가 설치되어 있으면 Hyper-V 관리자를 열고 마법사가 만든 임시 가상 머신에 연결하여 실행 중인 작업 순서를 확인할 수 있습니다. 가상 머신에서 smsts.log 파일을 모니터링하여 작업 순서의 진행률을 추적할 수 있습니다. 작업 순서 단계를 완료하는 데 문제가 있는 경우 이 로그 파일을 사용하면 문제 해결에 도움이 됩니다. smsts.log 파일은 하드 디스크가 포맷되기 전에는 x: \windows\temp\smstslog\smsts.log에 있고, 포맷된 후에는 c:\\_SMSTaskSequence\Logs\Smstslog\에 있습니다. 작업 순서 단계를 완료한 후 가상 머신은 기본값인 5분 후에 종료되고 삭제됩니다.  
 
  Configuration Manager에서 만든 VHD는 Configuration Manager 콘솔의 **가상 하드 드라이브** 노드에 있습니다(**소프트웨어 라이브러리** 작업 영역의 **운영 체제 배포** 노드 아래).  
 
@@ -183,7 +178,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
 >  Configuration Manager는 VHD의 원본 위치에 연결하여 VHD의 크기를 검색합니다. Configuration Manager에서 VHD 파일에 액세스할 수 없는 경우 **0**이 VHD의 **크기(KB)** 열에 표시됩니다.  
 
 ##  <a name="BKMK_ModifyVHDSteps"></a> 기존 VHD를 수정하는 단계  
- VHD를 수정하려면 VHD를 수정하는 데 필요한 단계가 포함된 작업 순서를 만들어야 합니다. 그런 다음 "가상 하드 드라이브 수정 마법사"에서 작업 순서를 선택합니다. 이 마법사는 VHD를 가상 컴퓨터에 연결하고, VHD에서 작업 순서를 실행한 후 VHD 파일을 업데이트합니다. 다음 섹션에서는 VHD를 수정하는 단계를 설명합니다.  
+ VHD를 수정하려면 VHD를 수정하는 데 필요한 단계가 포함된 작업 순서를 만들어야 합니다. 그런 다음 "가상 하드 드라이브 수정 마법사"에서 작업 순서를 선택합니다. 이 마법사는 VHD를 가상 머신에 연결하고, VHD에서 작업 순서를 실행한 후 VHD 파일을 업데이트합니다. 다음 섹션에서는 VHD를 수정하는 단계를 설명합니다.  
 
 ###  <a name="BKMK_ModifyTS"></a> VHD를 수정하는 작업 순서 만들기  
  기존 VHD를 수정하려면 먼저 작업 순서를 만들어야 합니다. 이때 작업 순서를 수정하는 데 필요한 단계만 선택하십시오. 예를 들어, VHD에 응용 프로그램을 추가하려는 경우 사용자 지정 작업 순서를 만든 후 응용 프로그램 설치 단계만 추가합니다.  
@@ -267,7 +262,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
     >  -   **CreateTSMedia.log**: 마법사에서 작업 순서 미디어가 생성되는 동안 이 로그에 정보가 기록됩니다. 이 로그 파일을 검토하여 독립 실행형 미디어를 만드는 작업의 진행률을 추적할 수 있습니다.  
     > -   **DeployToVHD.log**: 마법사에서 VHD를 수정하는 프로세스를 거치는 동안 이 로그에 정보가 기록됩니다. 이 로그 파일을 검토하여 독립 실행형 미디어를 만든 후 모든 마법사 단계의 진행률을 추적할 수 있습니다.  
     >   
-    >  또한 컴퓨터에 Hyper-V 관리 도구가 설치되어 있으면 Hyper-V 관리자를 열고 마법사가 만든 임시 가상 컴퓨터에 연결하여 실행 중인 작업 순서를 확인할 수 있습니다. 가상 컴퓨터에서 smsts.log 파일을 모니터링하여 작업 순서의 진행률을 추적할 수 있습니다. 작업 순서 단계를 완료하는 데 문제가 있는 경우 이 로그 파일을 사용하면 문제 해결에 도움이 됩니다. smsts.log 파일은 하드 디스크가 포맷되기 전에는 x: \windows\temp\smstslog\smsts.log에 있고, 포맷된 후에는 c:\\_SMSTaskSequence\Logs\Smstslog\에 있습니다. 작업 순서 단계를 완료한 후 가상 컴퓨터는 기본값인 5분 후에 종료되고 삭제됩니다.  
+    >  또한 컴퓨터에 Hyper-V 관리 도구가 설치되어 있으면 Hyper-V 관리자를 열고 마법사가 만든 임시 가상 머신에 연결하여 실행 중인 작업 순서를 확인할 수 있습니다. 가상 머신에서 smsts.log 파일을 모니터링하여 작업 순서의 진행률을 추적할 수 있습니다. 작업 순서 단계를 완료하는 데 문제가 있는 경우 이 로그 파일을 사용하면 문제 해결에 도움이 됩니다. smsts.log 파일은 하드 디스크가 포맷되기 전에는 x: \windows\temp\smstslog\smsts.log에 있고, 포맷된 후에는 c:\\_SMSTaskSequence\Logs\Smstslog\에 있습니다. 작업 순서 단계를 완료한 후 가상 머신은 기본값인 5분 후에 종료되고 삭제됩니다.  
 
 ##  <a name="BKMK_ApplyUpdates"></a> VHD에 소프트웨어 업데이트 적용  
  VHD의 운영 체제에 적용 가능한 새 소프트웨어 업데이트가 정기적으로 릴리스됩니다. 지정된 일정에 따라 적용 가능한 소프트웨어 업데이트를 VHD에 적용할 수 있습니다. 지정한 일정에 따라 Configuration Manager는 사용자가 선택한 소프트웨어 업데이트를 VHD에 적용합니다.  
@@ -317,7 +312,8 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
 
 2.  **소프트웨어 라이브러리** 작업 영역에서 **운영 체제**를 확장하고 **가상 하드 디스크**를 클릭합니다.  
 
-3.  **홈** 탭의 **가상 하드 디스크** 그룹에서 **Virtual Machine Manager로 업로드** 를 클릭하여 Virtual Machine Manager로 업로드 마법사를 시작합니다.  
+3.  
+  **홈** 탭의 **가상 하드 디스크** 그룹에서 **Virtual Machine Manager로 업로드**를 클릭하여 Virtual Machine Manager로 업로드 마법사를 시작합니다.  
 
 4.  **일반** 페이지에서 다음 설정을 구성한 후에 **다음**을 클릭합니다.  
 

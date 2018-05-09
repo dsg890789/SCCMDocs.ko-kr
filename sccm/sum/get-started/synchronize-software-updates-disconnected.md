@@ -1,22 +1,20 @@
 ---
-title: "인터넷 연결 없이 업데이트 동기화 "
+title: '인터넷 연결 없이 업데이트 동기화 '
 titleSuffix: Configuration Manager
-description: "인터넷에서 연결이 끊어진 최상위 소프트웨어 업데이트 지점에서 소프트웨어 업데이트 동기화를 실행합니다."
-keywords: 
-author: dougeby
-ms.author: dougeby
-manager: angrobe
+description: 인터넷에서 연결이 끊어진 최상위 소프트웨어 업데이트 지점에서 소프트웨어 업데이트 동기화를 실행합니다.
+author: aczechowski
 ms.date: 01/23/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod: configuration-manager
-ms.service: 
 ms.technology: configmgr-sum
 ms.assetid: 1a997c30-8e71-4be5-89ee-41efb2c8d199
-ms.openlocfilehash: e10c3b1695e3ce652559242b0248e7dc818741b7
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: da6204a78ce45c72d2b8d5586d02c8692405f295
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="synchronize-software-updates-from-a-disconnected-software-update-point"></a>연결이 끊긴 소프트웨어 업데이트 지점에서 소프트웨어 업데이트 동기화  
 
@@ -67,7 +65,7 @@ ms.lasthandoff: 10/12/2017
 
      **wsusutil.exe export**  *packagename*  *logfile*  
 
-     예를 들면 다음과 같습니다.  
+     예:  
 
      **wsusutil.exe export export.cab export.log**  
 
@@ -95,7 +93,7 @@ ms.lasthandoff: 10/12/2017
 
      **wsusutil.exe import**  *packagename*  *logfile*  
 
-     예를 들면 다음과 같습니다.  
+     예:  
 
      **wsusutil.exe import export.cab import.log**  
 

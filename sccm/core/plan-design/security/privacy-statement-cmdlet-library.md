@@ -1,26 +1,19 @@
 ---
 title: Configuration Manager cmdletl라이브러리에 대한 개인정보처리방침
 description: Microsoft에서 System Center Configuration Manager cmdlet 라이브러리와 관련된 데이터를 수집하고 사용하는 방법을 알아봅니다.
-ms.custom: na
 ms.date: 1/3/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: bec00fb4-1ac0-4e49-b330-0871b3722459
-caps.latest.revision: 5
-caps.handback.revision: 0
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: 0ed94de1fc4782539baed0f1589cebf69c0f2219
-ms.sourcegitcommit: a19e12d5c3198764901d44f4df7c60eb542e765f
+manager: dougeby
+ms.openlocfilehash: a6a996c4f1e00c05c0b3766b8955130529832063
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="system-center-configuration-manager-privacy-statement---configuration-manager-cmdlet-library"></a>System Center Configuration Manager 개인정보취급방침 – Configuration Manager cmdlet 라이브러리
 

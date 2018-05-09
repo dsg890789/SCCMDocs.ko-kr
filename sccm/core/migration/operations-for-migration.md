@@ -1,25 +1,20 @@
 ---
-title: "마이그레이션 작업"
+title: 마이그레이션 작업
 titleSuffix: Configuration Manager
-description: "데이터 및 클라이언트를 System Center Configuration Manager로 마이그레이션하는 작업을 만들고 실행합니다."
-ms.custom: na
+description: 데이터 및 클라이언트를 System Center Configuration Manager로 마이그레이션하는 작업을 만들고 실행합니다.
 ms.date: 12/30/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c28e3492-851a-40fc-ba13-67ebc2d8b41a
-caps.latest.revision: "6"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: 286be682da590ca7a03717d29ff9b3714d4fac42
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+manager: dougeby
+ms.openlocfilehash: a038377e4b29852157fd0d92836f26f1b5e18433
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="operations-for-migrating-to-system-center-configuration-manager"></a>System Center Configuration Manager로 마이그레이션을 위한 작업
 

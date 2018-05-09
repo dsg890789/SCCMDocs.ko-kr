@@ -1,26 +1,20 @@
 ---
-title: "지원되는 Active Directory 도메인"
+title: 지원되는 Active Directory 도메인
 titleSuffix: Configuration Manager
-description: "Active Directory 도메인에서 System Center Configuration Manager 사이트 시스템의 멤버 자격에 대한 요구 사항을 가져옵니다."
-ms.custom: na
+description: Active Directory 도메인에서 System Center Configuration Manager 사이트 시스템의 멤버 자격에 대한 요구 사항을 가져옵니다.
 ms.date: 9/18/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8c5a13f8-42d5-4898-b7b6-e594dae8b335
-caps.latest.revision: "7"
-caps.handback.revision: "0"
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 7ec8d6f3a37f48e7dc6032af5b30fb452171d14c
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: dcb0f5e82d0ef53524e9abfdb974605e3ae73db3
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="supported-active-directory-domains-for-system-center-configuration-manager"></a>System Center Configuration Manager에서 지원되는 Active Directory 도메인
 
@@ -34,7 +28,7 @@ ms.lasthandoff: 12/04/2017
 
 -   사이트 시스템 역할을 호스트하는 컴퓨터에 대해 다음을 변경할 수는 없습니다.  
 
-    -   도메인 멤버 자격*(여기에는 도메인에서 사이트 시스템을 제거한 다음 동일한 도메인에 다시 가입하는 것이 포함됩니다.)*
+    -   도메인 멤버 자격 *(여기에는 도메인에서 사이트 시스템을 제거한 다음 동일한 도메인에 다시 가입하는 것이 포함됩니다.)*
 
     -   도메인 이름  
 

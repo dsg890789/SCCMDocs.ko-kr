@@ -1,26 +1,20 @@
 ---
-title: "Asset Intelligence 필수 조건"
+title: Asset Intelligence 필수 조건
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 Asset Intelligence에 대한 필수 조건을 확인합니다."
-ms.custom: na
+description: System Center Configuration Manager에서 Asset Intelligence에 대한 필수 조건을 확인합니다.
 ms.date: 2/22/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: 23ab4f94-7bfe-436e-8a6a-029409a2730c
-caps.latest.revision: "10"
-caps.handback.revision: "0"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: 88358017bd8807caca3c544ecdf07c1b751efd3f
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: b8e7477f8a5b837327640f78656070579fad23a8
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="prerequisites-for-asset-intelligence-in-system-center-configuration-manager"></a>System Center Configuration Manager의 Asset Intelligence에 대한 필수 조건
 

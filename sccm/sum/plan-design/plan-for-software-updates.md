@@ -2,22 +2,19 @@
 title: 소프트웨어 업데이트 계획
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager 프로덕션 환경에서 소프트웨어 업데이트를 사용하기 전에 소프트웨어 업데이트 지점 인프라에 대한 계획이 반드시 필요합니다.
-keywords: ''
-author: mestew
-ms.author: mstewart
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
 ms.date: 03/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: configuration-manager
-ms.service: ''
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: d071b0ec-e070-40a9-b7d4-564b92a5465f
-ms.openlocfilehash: b57a1b584ec40d67b263959ae52f694c486481d7
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 2debedd40fbde8094c14a873235a742ccf15cc95
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="plan-for-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 업데이트 계획
 
@@ -74,7 +71,7 @@ System Center Configuration Manager 프로덕션 환경에서 소프트웨어 �
 
 -   **인트라넷 기반 클라이언트**: 인트라넷에서만 연결을 허용하도록 구성할 수 있는 소프트웨어 업데이트 지점 목록 또는 인터넷과 인트라넷 클라이언트 연결을 허용하는 소프트웨어 업데이트 지점 목록을 받습니다.  
 
--   **인터넷 기반 클라이언트:**인터넷에서만 연결을 허용하도록 구성할 수 있는 소프트웨어 업데이트 지점 목록 또는 인터넷과 인트라넷 클라이언트 연결을 허용하는 소프트웨어 업데이트 지점 목록을 받습니다.  
+-   **인터넷 기반 클라이언트:** 인터넷에서만 연결을 허용하도록 구성할 수 있는 소프트웨어 업데이트 지점 목록 또는 인터넷과 인트라넷 클라이언트 연결을 허용하는 소프트웨어 업데이트 지점 목록을 받습니다.  
 
 ###  <a name="BKMK_SUPSwitching"></a> 소프트웨어 업데이트 지점 전환  
 > [!NOTE]

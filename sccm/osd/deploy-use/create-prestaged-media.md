@@ -1,25 +1,20 @@
 ---
-title: "사전 준비된 미디어 만들기"
+title: 사전 준비된 미디어 만들기
 titleSuffix: Configuration Manager
-description: "여러 시나리오에서의 Windows 배포를 간소화하기 위해 System Center Configuration Manager에서 사전 준비된 미디어를 만듭니다."
-ms.custom: na
+description: 여러 시나리오에서의 Windows 배포를 간소화하기 위해 System Center Configuration Manager에서 사전 준비된 미디어를 만듭니다.
 ms.date: 04/11/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-osd
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ff6e7267-302a-4563-815e-cdc0d1a4b60f
-caps.latest.revision: "12"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: a26fc3daf17aefe24a46ece561fc2ceaf5284ffb
-ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
+manager: dougeby
+ms.openlocfilehash: 61c54ad6c0224dfae03a26784f0b3f61271b172c
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-prestaged-media-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 사전 준비된 미디어 만들기
 

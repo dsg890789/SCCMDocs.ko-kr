@@ -1,27 +1,20 @@
 ---
-title: "사이트 시스템용 웹 사이트"
+title: 사이트 시스템용 웹 사이트
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager의 사이트 시스템 서버에 대한 기본 및 사용자 지정 웹 사이트를 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager의 사이트 시스템 서버에 대한 기본 및 사용자 지정 웹 사이트를 알아봅니다.
 ms.date: 2/8/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: 681f0893-e83b-476e-9ec0-a5dc7c9deeb6
-caps.latest.revision: 
-caps.handback.revision: 
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 7d91bc91ec1992ecf06244adf48b76332fc25a1b
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 5614317639c12813acf61f17de844c8304bed70f
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="websites-for-site-system-servers-in-system-center-configuration-manager"></a>System Center Configuration Manager의 사이트 시스템 서버용 웹 사이트
 

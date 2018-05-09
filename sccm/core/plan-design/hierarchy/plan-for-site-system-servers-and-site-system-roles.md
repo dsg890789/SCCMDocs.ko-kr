@@ -1,25 +1,20 @@
 ---
-title: "사이트 시스템 역할 계획"
+title: 사이트 시스템 역할 계획
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 계층 구조를 계획할 때 사이트 시스템 서버 및 사이트 시스템 역할을 고려하세요."
-ms.custom: na
+description: System Center Configuration Manager 계층 구조를 계획할 때 사이트 시스템 서버 및 사이트 시스템 역할을 고려하세요.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: 0a7415ba-2c53-4433-983e-780e92aa662f
-caps.latest.revision: "11"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: b4894e4122231e3a8a45e5b3fb687dd3fd00ad08
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+manager: dougeby
+ms.openlocfilehash: 252c8544d4d976e210448c7deb285cfbe8b71a0f
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="plan-for-site-system-servers-and-site-system-roles-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 사이트 시스템 서버 및 사이트 시스템 역할에 대한 계획
 

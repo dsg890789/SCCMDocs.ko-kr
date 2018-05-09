@@ -1,25 +1,20 @@
 ---
-title: "Dynamics CRM Online 액세스 관리"
+title: Dynamics CRM Online 액세스 관리
 titleSuffix: Configuration Manager
-description: "Microsoft Intune 조건부 액세스를 사용하여 iOS 및 Android 장치에서 Microsoft Dynamics CRM Online에 대한 액세스를 제어하는 방법을 알아봅니다."
-ms.custom: na
+description: Microsoft Intune 조건부 액세스를 사용하여 iOS 및 Android 장치에서 Microsoft Dynamics CRM Online에 대한 액세스를 제어하는 방법을 알아봅니다.
 ms.date: 03/05/2017
-ms.reviewer: na
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 2bfc4c51-b25c-4c70-b81e-8a3b6ddf02c8
-caps.latest.revision: "5"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: 556bb29918327499cc9262a44b9810269d84822a
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: d77dbcf0b8b7853153a0b2ead4b2db3affd03733
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manage-dynamics-crm-online-access-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Dynamics CRM Online 액세스 관리
 
@@ -77,7 +72,7 @@ Dynamics CRM 정책에 사용할 두 가지 그룹 유형을 지정할 수 있�
 
 2.  **조건부 액세스 정책 사용**을 선택합니다.
 3.  **응용 프로그램 액세스**에서 다음 플랫폼에 조건부 액세스 정책을 적용하도록 선택할 수 있습니다.
-  * **iOS**
+  * **Android**
   * **OWA(Outlook Web Access)**
 4.  **대상 그룹**에서 **수정**을 선택하여 정책을 적용할 Azure Active Directory 보안 그룹을 선택합니다. 모든 사용자 또는 선택한 사용자 그룹을 대상으로 지정할 수 있습니다.
 5.  **제외된 그룹**에서 필요에 따라 **수정**을 선택하여 이 정책에서 제외된 Azure Active Directory 보안 그룹을 선택합니다.

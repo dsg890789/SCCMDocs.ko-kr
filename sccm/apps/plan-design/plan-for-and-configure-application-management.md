@@ -1,25 +1,20 @@
 ---
-title: "응용 프로그램 관리 계획 및 구성"
+title: 응용 프로그램 관리 계획 및 구성
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 응용 프로그램 배포에 필요한 종속성을 구현하고 구성합니다."
-ms.custom: na
+description: System Center Configuration Manager에서 응용 프로그램 배포에 필요한 종속성을 구현하고 구성합니다.
 ms.date: 11/07/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-app
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: 2be84a1d-ebb9-47ae-8982-c66d5b92a52a
-caps.latest.revision: "13"
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
-ms.openlocfilehash: cd06d3ee2ea14c9ff1b9cf09980c2b25a5263db9
-ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 18d9fe80a1c5525457579dadbfeaeafa3425202d
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="plan-for-and-configure-application-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 관리 계획 및 구성
 
@@ -140,7 +135,7 @@ ms.lasthandoff: 11/21/2017
 
 3.  **홈** 탭의 **속성** 그룹에서 **속성**을 선택합니다.  
 
-4.  사용자 알림, 응용 프로그램 카탈로그 및 소프트웨어 센터와 관련된 설정을 검토하고 구성합니다. 예를 들면 다음과 같습니다.  
+4.  사용자 알림, 응용 프로그램 카탈로그 및 소프트웨어 센터와 관련된 설정을 검토하고 구성합니다. 예:  
 
     1.  **컴퓨터 에이전트** 그룹:  
 

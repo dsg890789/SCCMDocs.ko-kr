@@ -1,26 +1,20 @@
 ---
-title: "인증 기관을 사용하여 PFX 인증서 프로필 만들기"
+title: 인증 기관을 사용하여 PFX 인증서 프로필 만들기
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 PFX 파일을 사용하여 암호화된 데이터 교환을 지원하기 위한 사용자별 인증서를 생성하는 방법을 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager에서 PFX 파일을 사용하여 암호화된 데이터 교환을 지원하기 위한 사용자별 인증서를 생성하는 방법을 알아봅니다.
 ms.date: 11/01/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: d240a836-c49b-49ab-a920-784c062d6748
-caps.latest.revision: "5"
-caps.handback.revision: "0"
-author: lleonard-msft
-ms.author: alleonar
-manager: angrobe
-ms.openlocfilehash: ee51d395026b03d251e65f510b1df3ba5b03325d
-ms.sourcegitcommit: 12d0d53e47bbf1a0bbd85015b8404a44589d1e14
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: a186e0b2c4b355cabcaaeb3b3124b65d3588fbc8
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-create-pfx-certificate-profiles-using-a-certificate-authority"></a>인증 기관을 사용하여 PFX 인증서 프로필을 만드는 방법
 
@@ -50,7 +44,7 @@ System Center Configuration Manager에서 인증 기관에서 발급한 자격 �
 
     -   **설명**: 인증서 프로필에 대한 개략적인 정보를 제공하는 설명과 System Center Configuration Manager 콘솔에서 해당 프로필을 식별하는 데 도움이 되는 기타 관련 정보를 입력합니다. 최대 256자까지 사용할 수 있습니다.  
 
-    -   **만들려는 인증서 프로필의 유형을 지정합니다.**에서 **개인 정보 교환 - PKCS #12(PFX) 설정 - 만들기**를 선택한 후 드롭다운 목록에서 인증 기관을 선택합니다.  버전 1706부터 **Microsoft** 또는 **Entrust**를 선택할 수 있습니다.
+    -   **만들려는 인증서 프로필의 유형을 지정합니다.** 에서 **개인 정보 교환 - PKCS #12(PFX) 설정 - 만들기**를 선택한 후 드롭다운 목록에서 인증 기관을 선택합니다.  버전 1706부터 **Microsoft** 또는 **Entrust**를 선택할 수 있습니다.
 
 ### <a name="select-supported-platforms"></a>지원되는 플랫폼 선택
 
@@ -106,7 +100,7 @@ Microsoft를 CA로 사용하는 경우 인증서 설정을 구성하려면
 
 1.  **주체 이름 형식**을 **일반 이름** 또는 **정식 고유 이름**으로 설정합니다.  어떤 이름을 사용할지 잘 모르는 경우 인증 기관 관리자에게 문의하세요.
 
-1.  **주체 대체 이름**으로 CA에 따라 **전자 메일 주소** 및 **UPN(사용자 계정 이름)**을 사용하도록 설정합니다.
+1.  **주체 대체 이름**으로 CA에 따라 **전자 메일 주소** 및 **UPN(사용자 계정 이름)** 을 사용하도록 설정합니다.
 
 1.  **갱신 임계값**은 만료 전에 남은 시간 비율에 따라 인증서가 자동으로 갱신되는 시기를 결정합니다.
 
@@ -117,7 +111,7 @@ Microsoft를 CA로 사용하는 경우 인증서 설정을 구성하려면
 1.  지원 플랫폼을 지정할 때 하나 이상의 Windows 10 플랫폼을 선택한 경우:
 
     1.  **Windows 인증서 저장소**를 **사용자**로 설정합니다.  (**로컬 컴퓨터**를 선택하면 인증서가 배포되지 않으므로 선택하지 않아야 합니다.)
-    1.  다음 옵션 중 하나에서 **KSP(키 저장소 공급자)**를 선택합니다.
+    1.  다음 옵션 중 하나에서 **KSP(키 저장소 공급자)** 를 선택합니다.
 
         - **있는 경우 TPM(신뢰할 수 있는 플랫폼 모듈)에 설치**  
         - **TPM(신뢰할 수 있는 플랫폼 모듈)에 설치, 그렇지 않으면 실패** 
@@ -153,7 +147,7 @@ Entrust를 CA로 사용하는 경우 인증서 설정을 구성하려면
 1.  지원 플랫폼을 지정할 때 하나 이상의 Windows 10 플랫폼을 선택한 경우:
 
     1.  **Windows 인증서 저장소**를 **사용자**로 설정합니다.  (**로컬 컴퓨터**를 선택하면 인증서가 배포되지 않으므로 선택하지 않아야 합니다.)
-    1.  다음 옵션 중 하나에서 **KSP(키 저장소 공급자)**를 선택합니다.
+    1.  다음 옵션 중 하나에서 **KSP(키 저장소 공급자)** 를 선택합니다.
 
         - **있는 경우 TPM(신뢰할 수 있는 플랫폼 모듈)에 설치**  
         - **TPM(신뢰할 수 있는 플랫폼 모듈)에 설치, 그렇지 않으면 실패** 

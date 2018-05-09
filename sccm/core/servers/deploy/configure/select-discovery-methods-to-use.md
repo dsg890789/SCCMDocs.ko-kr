@@ -1,25 +1,20 @@
 ---
-title: "검색 방법 선택"
+title: 검색 방법 선택
 titleSuffix: Configuration Manager
-description: "사용할 방법 및 해당 방법을 실행할 사이트에 대한 고려 사항을 검토합니다."
-ms.custom: na
+description: 사용할 방법 및 해당 방법을 실행할 사이트에 대한 고려 사항을 검토합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 127ce713-d085-430f-ac7b-2701637fe126
-caps.latest.revision: "9"
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 0a8a572c51a6d36ffe11c7a2c05933c96790e95f
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: faa974fda68c9448902f2f5c8e8fcf8ef2f2d386
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="select-discovery-methods-to-use-for-system-center-configuration-manager"></a>System Center Configuration Manager에 사용할 검색 방법 선택
 

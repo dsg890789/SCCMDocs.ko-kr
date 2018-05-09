@@ -1,27 +1,20 @@
 ---
-title: "하이브리드 MDM 설정"
+title: 하이브리드 MDM 설정
 titleSuffix: Configuration Manager
-description: "Configuration Manager 및 Intune을 사용하여 하이브리드 장치 등록을 설정합니다."
-ms.custom: na
+description: Configuration Manager 및 Intune을 사용하여 하이브리드 장치 등록을 설정합니다.
 ms.date: 03/08/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.technology: configmgr-hybrid
+ms.topic: conceptual
 ms.assetid: bb95154b-f63e-4491-896e-41d732c802f8
-caps.latest.revision: 
-caps.handback.revision: 
-author: dougeby
-ms.author: dougeby
-manager: angrobe
-ms.openlocfilehash: 9c233a8601d68aae76b105ff86afe41d4121da40
-ms.sourcegitcommit: b653342fb5d69a16e71b3548a7e9a2e47e54bf88
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: fbc5b9abf63d95185795716cfcb9ebfaf3e2ec3d
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setup-hybrid-mobile-device-management-mdm-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하여 하이브리드 MDM(모바일 장치 관리) 설정
 

@@ -2,22 +2,19 @@
 title: Windows 10에서 비즈니스용 Windows 업데이트와 통합
 titleSuffix: Configuration Manager
 description: 비즈니스용 Windows 업데이트를 사용하면 Windows 업데이트 서비스에 연결된 장치에 대해 조직의 Windows 10 기반 장치를 최신 상태로 유지할 수 있습니다.
-keywords: ''
-author: mestew
-ms.author: mstewart
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
 ms.date: 03/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: configuration-manager
-ms.service: ''
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: 183315fe-27bd-456f-b2c5-e8d25e05229b
-ms.openlocfilehash: e27e5f043af28b74369f21d19e5b20e19572213a
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 3dd5a7f9717843244ab8477a09b109261618f9aa
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="integration-with-windows-update-for-business-in-windows-10"></a>Windows 10에서 비즈니스용 Windows 업데이트와 통합
 

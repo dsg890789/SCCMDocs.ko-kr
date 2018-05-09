@@ -1,25 +1,20 @@
 ---
-title: "사이트 및 계층의 기본 사항"
+title: 사이트 및 계층의 기본 사항
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 사이트 및 계층 구조에 대한 기본 정보를 가져옵니다."
-ms.custom: na
+description: System Center Configuration Manager 사이트 및 계층 구조에 대한 기본 정보를 가져옵니다.
 ms.date: 12/30/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 4db1e15f-e832-4cf9-be33-d3971e635a55
-caps.latest.revision: "6"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: 0355219b1270dd5fb9b0ed78406ee0059fbceeba
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+manager: dougeby
+ms.openlocfilehash: dbd87268c1572f53fcc86d5f2dc93537ad759260
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="fundamentals-of-sites-and-hierarchies-for-system-center-configuration-manager"></a>System Center Configuration Manager의 사이트 및 계층 구조에 대한 기본 사항
 

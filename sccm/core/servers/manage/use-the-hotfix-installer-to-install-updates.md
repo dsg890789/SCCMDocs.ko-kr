@@ -1,26 +1,20 @@
 ---
-title: "핫픽스 설치 관리자"
+title: 핫픽스 설치 관리자
 titleSuffix: Configuration Manager
-description: "Configuration Manager용 핫픽스 설치 관리자를 통해 업데이트를 설치하는 시기 및 방법을 알아봅니다."
-ms.custom: na
+description: Configuration Manager용 핫픽스 설치 관리자를 통해 업데이트를 설치하는 시기 및 방법을 알아봅니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: f3058277-c597-4dac-86d1-41b6f7e62b36
-caps.latest.revision: 
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 0ed8399c080994745f79f58818781e9d32be7e48
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 5c90889861db55a27da897e709b16b66edece08a
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="use-the-hotfix-installer-to-install-updates-for-system-center-configuration-manager"></a>핫픽스 설치 관리자를 사용하여 System Center Configuration Manager의 업데이트 설치
 
@@ -80,17 +74,17 @@ Microsoft에서 받은 업데이트(핫픽스)를 설치해야 하며 해당 업
 
 |파일|세부 정보|  
 |----------|-------------|  
-|&lt;제품 버전\>-QFE-KB&lt;기술 자료 문서 ID\>-&lt;플랫폼\>-&lt;언어\>.exe|업데이트 파일입니다. 이 파일의 명령줄은 Updatesetup.exe로 관리됩니다.<br /><br /> 예를 들면 다음과 같습니다.<br />CM1511RTM-QFE-KB123456-X64-ENU.exe|  
+|&lt;제품 버전\>-QFE-KB&lt;기술 자료 문서 ID\>-&lt;플랫폼\>-&lt;언어\>.exe|업데이트 파일입니다. 이 파일의 명령줄은 Updatesetup.exe로 관리됩니다.<br /><br /> 예:<br />CM1511RTM-QFE-KB123456-X64-ENU.exe|  
 |Updatesetup.exe|이 .msi wrapper는 업데이트 번들의 설치를 관리합니다.<br /><br /> 업데이트를 설치할 때 Updatesetup.exe가 실행되는 컴퓨터의 표시 언어를 감지합니다. 기본적으로 업데이트의 사용자 인터페이스는 영어로 되어 있습니다. 그러나 표시 언어가 지원되는 경우 사용자 인터페이스에 컴퓨터의 로컬 언어가 표시됩니다.|  
 |License_&lt;언어\>.rtf|해당되는 경우 각 업데이트에는 지원되는 언어에 대한 하나 이상의 라이센스 파일이 들어 있습니다.|  
-|&lt;제품 및 업데이트 형식>-&lt;제품 버전\>-&lt;기술 자료 문서 ID\>-&lt;플랫폼\>.msp|Configuration Manager 콘솔 또는 클라이언트에 업데이트가 적용될 때 업데이트 번들에는 별도의 Windows 설치 관리자 패치(.msp) 파일이 포함되어 있습니다.<br /><br /> 예를 들면 다음과 같습니다.<br /><br /> **Configuration Manager 콘솔 업데이트:** ConfigMgr1511-AdminUI-KB1234567-i386.msp<br /><br /> **클라이언트 업데이트:** ConfigMgr1511-client-KB1234567-i386.msp<br />ConfigMgr1511-client-KB1234567-x64.msp|  
+|&lt;제품 및 업데이트 형식>-&lt;제품 버전\>-&lt;기술 자료 문서 ID\>-&lt;플랫폼\>.msp|Configuration Manager 콘솔 또는 클라이언트에 업데이트가 적용될 때 업데이트 번들에는 별도의 Windows 설치 관리자 패치(.msp) 파일이 포함되어 있습니다.<br /><br /> 예:<br /><br /> **Configuration Manager 콘솔 업데이트:** ConfigMgr1511-AdminUI-KB1234567-i386.msp<br /><br /> **클라이언트 업데이트:** ConfigMgr1511-client-KB1234567-i386.msp<br />ConfigMgr1511-client-KB1234567-x64.msp|  
 
  기본적으로 업데이트 번들은 작업을 사이트 서버의 .log 파일에 로깅합니다. 로그 파일은 업데이트 번들과 이름이 같으며 **%SystemRoot%/Temp** 폴더에 기록됩니다.  
 
  업데이트 번들을 실행하면 업데이트 번들과 이름이 같은 파일이 컴퓨터의 임시 폴더에 추출된 다음 Updatesetup.exe가 실행됩니다. Updatesetup.exe는 Configuration Manager &lt;제품 버전\> &lt;KB 번호\>의 소프트웨어 업데이트 마법사를 시작합니다.  
 
  업데이트의 범위에 해당하는 경우 마법사는 사이트 서버의 System Center Configuration Manager 설치 폴더 아래에 일련의 폴더를 만듭니다. 폴더 구조는   
- **\\\\&lt;서버 이름\>\SMS_&lt;사이트 코드\>\Hotfix\\&lt;KB 번호\>\\&lt;업데이트 형식\>\\&lt;플랫폼\>**입니다.  
+ **\\\\&lt;서버 이름\>\SMS_&lt;사이트 코드\>\Hotfix\\&lt;KB 번호\>\\&lt;업데이트 형식\>\\&lt;플랫폼\>** 입니다.  
 
  다음 표에는 폴더 구조의 폴더에 대한 자세한 정보가 나와 있습니다.  
 

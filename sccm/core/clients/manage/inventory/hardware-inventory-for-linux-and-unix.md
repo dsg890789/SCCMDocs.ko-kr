@@ -1,25 +1,20 @@
 ---
-title: "Linux 및 UNIX에 대한 하드웨어 인벤토리"
+title: Linux 및 UNIX에 대한 하드웨어 인벤토리
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 Linux 및 UNIX에 대한 하드웨어 인벤토리를 사용하는 방법을 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager에서 Linux 및 UNIX에 대한 하드웨어 인벤토리를 사용하는 방법을 알아봅니다.
 ms.date: 02/22/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-client
+ms.topic: conceptual
 ms.assetid: 1026d616-2a20-4fb2-8604-d331763937f8
-caps.latest.revision: "6"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: 6f71478f6a2a8e5a2a41068624debfe3ac3e915d
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 68e60611356cbaea3dc14a42776e89ecdc951008
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="hardware-inventory-for-linux-and-unix-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Linux 및 UNIX에 대한 하드웨어 인벤토리
 
@@ -118,7 +113,7 @@ Linux 및 UNIX용 System Center Configuration Manager 클라이언트는 하드�
      **omicli** 및 사용자 지정 공급자 테스트에 대한 자세한 내용은 OMI 시작 가이드를 참조하세요.  
 
 > [!TIP]  
->  소프트웨어 배포를 사용하여 사용자 지정 공급자를 배포하고 각 Linux 및 UNIX 클라이언트 컴퓨터에 사용자 지정 공급자를 등록합니다.  
+>  사용자 지정 공급자를 배포 하 고 각 Linux 및 UNIX 클라이언트 컴퓨터에서 사용자 지정 공급자를 등록 하려면 소프트웨어 배포를 사용 합니다.  
 
 ###  <a name="BKMK_AddLinuxProvidertoCM"></a> Configuration Manager에서 새 인벤토리 클래스 사용  
  Linux 및 UNIX 컴퓨터에서 새 공급자가 보고하는 인벤토리에 대해 Configuration Manager로 보고하려면 먼저 사용자 지정 공급자의 스키마를 정의하는 MOF(Managed Object Format) 파일을 가져와야 합니다.  

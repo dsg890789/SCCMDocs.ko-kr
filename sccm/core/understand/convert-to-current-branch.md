@@ -1,25 +1,20 @@
 ---
-title: "장기 서비스 분기를 현재 분기로 업그레이드 "
+title: '장기 서비스 분기를 현재 분기로 업그레이드 '
 titleSuffix: Configuration Manager
-description: "장기 서비스 분기 사이트를 현재 분기 사이트로 변환하는 방법을 알아봅니다."
-ms.custom: na
+description: 장기 서비스 분기 사이트를 현재 분기 사이트로 변환하는 방법을 알아봅니다.
 ms.date: 2/8/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ec5b54cf-62b7-4ed1-9bb3-e8c63b9641c8
-caps.latest.revision: "0"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: 8adc118643cdc9bb4db8226b6d5c5f14a20898a4
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+manager: dougeby
+ms.openlocfilehash: 2c739f52553aca8680328e581e183a5ca974ffdf
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="upgrade-the-long-term-servicing-branch-to-the-current-branch"></a>장기 서비스 분기를 현재 분기로 업그레이드
 

@@ -1,26 +1,20 @@
 ---
-title: "클라이언트 보안 및 개인 정보"
+title: 클라이언트 보안 및 개인 정보
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 클라이언트에 대한 보안 및 개인 정보에 대해 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager에서 클라이언트에 대한 보안 및 개인 정보에 대해 알아봅니다.
 ms.date: 04/23/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-client
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: c1d71899-308f-49d5-adfa-3a3ec0163ed8
-caps.latest.revision: "10"
-caps.handback.revision: "0"
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.openlocfilehash: b28a461894bcd1cffd3c98bfce9fcfe22cc7a8f0
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 89b7664067747c9afb04c3a5dd059e81cfb2716e
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="security-and-privacy-for-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트에 대한 보안 및 개인 정보
 
@@ -165,9 +159,9 @@ ms.lasthandoff: 10/12/2017
 
  **모바일 장치의 경우: 사용되지 않는 모바일 장치를 잠그는 방식으로 권한 상승 공격 방지**  
 
- Configuration Manager에서 등록된 다른 모바일 장치의 경우: 모바일 장치 구성 항목을 사용하여 암호 설정 **다음 유휴 시간 후 모바일 장치 잠그기(분)**를 구성합니다.  
+ Configuration Manager에서 등록된 다른 모바일 장치의 경우: 모바일 장치 구성 항목을 사용하여 암호 설정 **다음 유휴 시간 후 모바일 장치 잠그기(분)** 를 구성합니다.  
 
- Configuration Manager 클라이언트가 설치되지 않았지만 Exchange Server 커넥터에서 관리되는 모바일 장치의 경우: Exchange Server 커넥터에 대한 **암호 설정**에서 **다음 유휴 시간 후 모바일 장치 잠그기(분)**를 구성합니다.  
+ Configuration Manager 클라이언트가 설치되지 않았지만 Exchange Server 커넥터에서 관리되는 모바일 장치의 경우: Exchange Server 커넥터에 대한 **암호 설정**에서 **다음 유휴 시간 후 모바일 장치 잠그기(분)** 를 구성합니다.  
 
  **모바일 장치의 경우: 모바일 장치를 등록할 수 있는 사용자를 제한하여 권한 상승 방지**  
 

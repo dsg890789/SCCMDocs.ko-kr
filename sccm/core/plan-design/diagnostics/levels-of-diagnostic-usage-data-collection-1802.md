@@ -2,43 +2,19 @@
 title: 1802에 대한 진단 및 사용량 데이터
 titleSuffix: Configuration Manager
 description: 1802 버전에서 수집된 진단 및 사용량 데이터의 수준에 대해 알아봅니다.
-ms.custom: na
 ms.date: 03/22/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: 29dd51b8-6576-4010-81ba-3129ed2c3421
-caps.latest.revision: ''
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- hu-hu
-- it-it
-- ja-jp
-- ko-kr
-- nl-nl
-- pl-pl
-- pt-br
-- pt-pt
-- ru-ru
-- sv-se
-- tr-tr
-- zh-cn
-- zh-tw
-ms.openlocfilehash: 4f5076b00a097500955b47938294e8a953231eaf
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 561fd23795d52debe0304fa16fd07234dc63e4c2
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1802-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1802에 대한 진단 및 사용량 데이터 수집 수준
 
@@ -46,7 +22,7 @@ ms.lasthandoff: 03/23/2018
 
 Configuration Manager 버전 1802에서는 **기본**, **고급**, **전체**의 세 가지 수준의 진단 및 사용량 데이터를 수집합니다. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
 
-이전 버전에서 변경된 내용은 ***[새로운 기능]***, ***[업데이트된 기능]***, ***[제거된 기능]*** 또는 ***[이동된 기능]***으로 표시됩니다.
+이전 버전에서 변경된 내용은 ***[새로운 기능]***, ***[업데이트된 기능]***, ***[제거된 기능]*** 또는 ***[이동된 기능]*** 으로 표시됩니다.
 
 
 > [!IMPORTANT]

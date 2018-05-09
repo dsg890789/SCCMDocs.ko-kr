@@ -2,25 +2,19 @@
 title: 검색 방법
 titleSuffix: Configuration Manager
 description: 네트워크, Active Directory 또는 Azure Active Directory에서 장치를 찾을 때 사용할 수 있는 검색 방법을 알아봅니다.
-ms.custom: na
 ms.date: 03/22/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: ed931751-18f2-4230-a09e-a0a329fbfa1c
-caps.latest.revision: 8
-author: mestew
-ms.author: mstewart
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e53eb90b55034479ba3d278b4b19879f2ee1e4b7
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 51823b2e424450352d55402f16a8c05211eb77c5
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="about-discovery-methods-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 검색 방법 정보
 

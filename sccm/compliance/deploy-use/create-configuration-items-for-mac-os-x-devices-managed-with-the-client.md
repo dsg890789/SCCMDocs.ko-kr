@@ -1,26 +1,20 @@
 ---
-title: "클라이언트 관리 Mac용 구성 항목 만들기 "
+title: '클라이언트 관리 Mac용 구성 항목 만들기 '
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager Mac OS X 구성 항목을 사용하여 Mac OS X 장치에 대한 설정을 관리할 수 있습니다."
-ms.custom: na
+description: System Center Configuration Manager Mac OS X 구성 항목을 사용하여 Mac OS X 장치에 대한 설정을 관리할 수 있습니다.
 ms.date: 03/28/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-compliance
+ms.topic: conceptual
 ms.assetid: 722d5bf5-bedc-4dfc-b324-6eeb773874e9
-caps.latest.revision: "8"
-caps.handback.revision: "0"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: 1947bc8907d00a2f6d78acee5f563fa9b7f6cf78
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: e6358c8e84d12c37418d7a1af459e775783efaa2
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-create-configuration-items-for-mac-os-x-devices-managed-with-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트를 사용하여 관리하는 Mac OS X 장치용 구성 항목을 만드는 방법
 System Center Configuration Manager **Mac OS X(사용자 지정)** 구성 항목을 사용하여 Configuration Manager 클라이언트에서 관리되는 Mac OS X 장치에 대한 설정을 관리할 수 있습니다.  
@@ -37,7 +31,7 @@ System Center Configuration Manager **Mac OS X(사용자 지정)** 구성 항목
   
 4.  **구성 항목 만들기 마법사** 의 **일반**페이지에서 구성 항목에 대한 이름 및 선택적 설명을 지정합니다.  
   
-5.  **만들 구성 항목 유형 지정**에서 **Mac OS X(사용자 지정)**을 선택합니다.  
+5.  **만들 구성 항목 유형 지정**에서 **Mac OS X(사용자 지정)** 을 선택합니다.  
   
 6.  Configuration Manager 콘솔에서 구성 항목을 검색하고 필터링하기 위해 범주를 만들고 할당하려면 **범주**를 클릭합니다.  
   

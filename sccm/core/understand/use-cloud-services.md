@@ -1,26 +1,20 @@
 ---
-title: "클라우드 서비스를 사용하여 온-프레미스 인프라 보충"
+title: 클라우드 서비스를 사용하여 온-프레미스 인프라 보충
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에 대한 클라우드 리소스를 프로비전하여 온-프레미스 인프라를 보완합니다."
-ms.custom: na
+description: System Center Configuration Manager에 대한 클라우드 리소스를 프로비전하여 온-프레미스 인프라를 보완합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: 24fca61e-9cdb-447a-ad7a-f4d2e4fd6704
-caps.latest.revision: "10"
-caps.handback.revision: "0"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: 81f111f0d0061901f5f3b471f02c8035bfcac481
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+manager: dougeby
+ms.openlocfilehash: 07eb6ec88a5f9b9f7985c317813b2ef7dd5534ff
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="use-cloud-services-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라우드 서비스 사용
 
@@ -46,9 +40,11 @@ Configuration Manager를 배포하기 전에 클라우드 리소스를 프로비
 ### <a name="azure-virtual-machines-for-cloud-based-infrastructure"></a>Azure 가상 컴퓨터(클라우드 기반 인프라의 경우)  
  Configuration Manager에서는 실제 회사 네트워크 내의 온-프레미스에서 실행하는 경우와 마찬가지로 Azure의 가상 컴퓨터에서 실행되는 컴퓨터 사용을 지원합니다. 다음과 같은 시나리오에서 Azure 가상 컴퓨터를 사용할 수 있습니다.  
 
--   **시나리오 1:** 가상 컴퓨터에서 Configuration Manager를 실행하고 다른 가상 컴퓨터에 설치된 클라이언트를 관리하는 데 사용할 수 있습니다.  
+-   
+  **시나리오 1:** 가상 머신에서 Configuration Manager를 실행하고 다른 가상 머신에 설치된 클라이언트를 관리하는데 사용할 수 있습니다.  
 
--   **시나리오 2:** 가상 컴퓨터에서 Configuration Manager를 실행하고 Azure에서 실행 중이지 않은 클라이언트를 관리하는 데 사용할 수 있습니다.  
+-   
+  **시나리오 2:** 가상 머신에서 Configuration Manager를 실행하고 Azure에서 실행 중이지 않은 클라이언트를 관리하는데 사용할 수 있습니다.  
 
 -   **시나리오 3:** 적합한 통신용 네트워크 연결을 사용할 수 있는 경우 실제 회사 네트워크에서는 다른 역할을 실행하면서 가상 컴퓨터에서는 다른 Configuration Manager 사이트 시스템 역할을 실행할 수 있습니다.  
 
@@ -61,9 +57,9 @@ Azure 가상 컴퓨터를 사용하려면 Azure 구독이 필요합니다. 사�
 ### <a name="azure-services-for-cloud-based-distribution-points"></a>Azure 서비스(클라우드 기반 배포 지점의 경우)  
  Azure 서비스를 사용하여 Configuration Manager 배포 지점(클라우드 기반 배포 지점)을 호스트할 수 있습니다. Azure 가상 컴퓨터에 배포된 배포 지점 및 온-프레미스 배포 지점과 함께 [클라우드 기반 배포 지점을 System Center Configuration Manager에서 사용](../../core/plan-design/hierarchy/use-a-cloud-based-distribution-point.md)할 수 있습니다.  
 
- 이러한 방식은 사이트 시스템 역할을 배포하는 Azure 가상 컴퓨터를 사용하는 방식과는 다릅니다. 클라우드 기반 배포 지점:  
+ 이러한 방식은 사이트 시스템 역할을 배포하는 Azure 가상 머신을 사용하는 방식과는 다릅니다. 클라우드 기반 배포 지점:  
 
--   가상 컴퓨터가 아닌 Azure에서 서비스로 실행됩니다.  
+-   가상 머신이 아닌 Azure에서 서비스로 실행됩니다.  
 
 -   클라이언트의 콘텐츠 요청 증가를 충족하기 위해 자동으로 확장됩니다.  
 

@@ -1,26 +1,20 @@
 ---
-title: "응용 프로그램 배포 시뮬레이트"
+title: 응용 프로그램 배포 시뮬레이트
 titleSuffix: Configuration Manager
-description: "응용 프로그램을 설치하지 않고 배포 유형에 대한 검색 방법, 요구 사항 및 종속성을 평가합니다."
-ms.custom: na
+description: 응용 프로그램을 설치하지 않고 배포 유형에 대한 검색 방법, 요구 사항 및 종속성을 평가합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-app
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 28b240a4-d358-40ce-8006-c697b1622ece
-caps.latest.revision: "6"
-caps.handback.revision: "0"
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
-ms.openlocfilehash: ecd641a14188e0247d10e0fac613ea760abb00d1
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: bd2f4f24a9bc22daac5b5c6e785ff2ea5d02f49a
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="simulate-application-deployments-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 배포 시뮬레이트
 

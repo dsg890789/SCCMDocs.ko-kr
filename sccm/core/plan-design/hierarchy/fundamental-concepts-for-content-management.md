@@ -2,26 +2,19 @@
 title: 콘텐츠 관리의 기본 사항
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 도구와 옵션을 사용하여 배포하는 콘텐츠를 관리합니다.
-ms.custom: na
 ms.date: 03/22/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: c201be2a-692c-4d67-ac95-0a3afa5320fe
-caps.latest.revision: 28
-caps.handback.revision: 0
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0595e34d096b2d7f6450b3255bae03ae3aa57862
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 5dfe33e7182eae158c15afb848d3a9f1702678ba
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="fundamental-concepts-for-content-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 콘텐츠 관리의 기본 개념
 
@@ -154,7 +147,7 @@ Configuration Manager로 새로운 OS를 배포하면 작업 순서를 실행하
 - **일정** 또는 **대역폭 제한**과 같은 컨트롤을 사용하여 이 전송을 제어할 수 있습니다.  
 - **사전 준비된 콘텐츠** 및 **풀(pull) 배포 지점**을 비롯한 다른 옵션을 사용하여 네트워크 사용을 최소화하고 제어할 수 있습니다. 
 - **BranchCache**, **피어 캐시** 및 **배달 최적화**는 콘텐츠를 배포할 때 사용되는 네트워크 대역폭을 줄이는 피어 투 피어 기술입니다.  
-- OS 배포의 경우 **[PXE](../../../osd/get-started/prepare-site-system-roles-for-operating-system-deployments.md#BKMK_PXEDistributionPoint)** 및 **[멀티 캐스트](../../../osd/get-started/prepare-site-system-roles-for-operating-system-deployments.md#BKMK_DPMulticast)**와 같은 여러 구성이 있습니다.
+- OS 배포의 경우 **[PXE](../../../osd/get-started/prepare-site-system-roles-for-operating-system-deployments.md#BKMK_PXEDistributionPoint)** 및 **[멀티 캐스트](../../../osd/get-started/prepare-site-system-roles-for-operating-system-deployments.md#BKMK_DPMulticast)** 와 같은 여러 구성이 있습니다.
 - **모바일 장치**에 대한 옵션   
   
   

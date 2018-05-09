@@ -1,25 +1,20 @@
 ---
-title: "클라이언트 마이그레이션 계획"
+title: 클라이언트 마이그레이션 계획
 titleSuffix: Configuration Manager
-description: "원본 계층에서 System Center Configuration Manager 대상 계층으로 클라이언트를 마이그레이션하는 작업에 대해 알아봅니다."
-ms.custom: na
+description: 원본 계층에서 System Center Configuration Manager 대상 계층으로 클라이언트를 마이그레이션하는 작업에 대해 알아봅니다.
 ms.date: 12/30/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 2e27b0b7-7bd3-45cd-bc99-9c991606c637
-caps.latest.revision: "6"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: f45685c669d70ae057fb57b6e9bfb50d5494e79e
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+manager: dougeby
+ms.openlocfilehash: a67fb2d070c971004418ba47c9eb56b6b0de3e5a
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="plan-a-client-migration-strategy-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트 마이그레이션 전략 계획
 

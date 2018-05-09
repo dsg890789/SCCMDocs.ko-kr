@@ -1,26 +1,21 @@
 ---
-title: "업데이트 만들기"
+title: 업데이트 만들기
 titleSuffix: Configuration Manager
-description: "System Center Updates Publisher를 사용하여 소프트웨어 업데이트 만들기 및 번들"
-ms.custom: na
+description: System Center Updates Publisher를 사용하여 소프트웨어 업데이트 만들기 및 번들
 ms.date: 4/29/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-sum
+ms.topic: conceptual
 ms.assetid: 46a1a8ac-126c-4ee6-ae09-32dfbdb83368
-caps.latest.revision: "1"
-author: mestew
-ms.author: mstewart
-manager: angrobe
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 robots: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fe1e4e032c9dcad1a05fa7c13f68a3017a5273be
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: 3f22e7ed209496c2d679591a9c7b282f811f4ae1
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create--software-updates-and-update-bundles-with-updates-publisher"></a>Updates Publisher를 사용하여 소프트웨어 업데이트 및 업데이트 번들 만들기
 
@@ -51,7 +46,7 @@ Updates Publisher를 사용하면 **Create Update**(업데이트 만들기) 마�
 
     -   소프트웨어 업데이트를 설치하는 데 필요한 명령줄 인수를 지정합니다.
 
-        -   Windows Installer 파일 및 패치(.MSI 및 .MSP 파일)는 이러한 값을 자동으로 설정합니다. 이러한 파일 형식의 경우 인수는 **\[name\]=\[value\]**로 지정해야 합니다. 또한 .MSI 또는 .MSP 소프트웨어 업데이트에는 **/**(예: **/qn**)로 시작하는 모든 옵션이 지원되지 않습니다.
+        -   Windows Installer 파일 및 패치(.MSI 및 .MSP 파일)는 이러한 값을 자동으로 설정합니다. 이러한 파일 형식의 경우 인수는 **\[name\]=\[value\]** 로 지정해야 합니다. 또한 .MSI 또는 .MSP 소프트웨어 업데이트에는 **/**(예: **/qn**)로 시작하는 모든 옵션이 지원되지 않습니다.
 
         -   .EXE 업데이트의 경우 모든 인수가 유효합니다.
 
@@ -145,7 +140,7 @@ Updates Publisher를 사용하면 **Create Update**(업데이트 만들기) 마�
 
 7.  **적용 가능성** 페이지에서 **규칙 편집기**를 사용하여 장치에 이 업데이트가 필요한지 여부를 결정하는 규칙 집합을 정의합니다. 이 페이지는 다음의 **설치됨** 페이지와 비슷합니다.
 
-    새 규칙을 추가하려면 다음을 클릭합니다. ![새 규칙](media/newrule.png). 그러면 규칙을 구성할 수 있는 [적용 가능성 규칙] 페이지가 열립니다.
+    새 규칙을 추가하려면 다음을 클릭합니다. ![새 규칙](media/newrule.png)을 참조하세요. 그러면 규칙을 구성할 수 있는 [적용 가능성 규칙] 페이지가 열립니다.
 
     다음과 같은 규칙 유형을 작성할 수 있습니다.
 

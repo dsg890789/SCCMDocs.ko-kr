@@ -2,26 +2,19 @@
 title: 작업 순서 단계
 titleSuffix: Configuration Manager
 description: Configuration Manager 작업 순서에 추가할 수 있는 단계를 알아봅니다.
-ms.custom: na
 ms.date: 03/30/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-osd
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-osd
+ms.topic: conceptual
 ms.assetid: 7c888a6f-8e37-4be5-8edb-832b218f266d
-caps.latest.revision: 26
-caps.handback.revision: 0
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 53929400b983a2191e60a7d42ae84062afd44e3a
-ms.sourcegitcommit: d8a4a53630351b3d677bbdc5d203e7d330472cba
+ms.openlocfilehash: a678cbbd8500070e2d4056d6e424818e7000ef83
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="task-sequence-steps-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업 순서 단계
 
@@ -630,7 +623,7 @@ BitLocker는 컴퓨터 시스템(운영 체제와 데이터 드라이브 모두)
 -   GPT - GUID 파티션 테이블  
 
 > [!NOTE]  
->  디스크 유형을 **표준(MBR)**에서 **GPT**로 변경하고 파티션 레이아웃에 확장 파티션이 포함된 경우, 작업 순서는 레이아웃에서 확장 및 논리 파티션을 모두 제거합니다. 작업 순서 편집기에서 디스크 유형을 변경하기 전에 이 동작을 확인하도록 요구하는 메시지가 표시됩니다.  
+>  디스크 유형을 **표준(MBR)** 에서 **GPT**로 변경하고 파티션 레이아웃에 확장 파티션이 포함된 경우, 작업 순서는 레이아웃에서 확장 및 논리 파티션을 모두 제거합니다. 작업 순서 편집기에서 디스크 유형을 변경하기 전에 이 동작을 확인하도록 요구하는 메시지가 표시됩니다.  
    
 **볼륨**  
  작업 순서에서 만드는 파티션 또는 볼륨에 대한 특정 정보이며, 다음 특성이 포함됩니다.  
@@ -1225,9 +1218,9 @@ Configuration Manager 버전 1710부터 다른 작업 순서를 실행하는 새
 
     <!-- for future edits: an escape code must be used for the bolded asterisk character, but may be removed somewhere along the way. Instead of five asterisk, should be bold tags with &#42; in-between -->
 
-    Configuration Manager 버전 1610부터 별표(**&#42;**) 및 물음표(**?**)를 와일드 카드로 지정할 수 있습니다. 여기서 **&#42;**는 여러 문자를 찾고 **?**는 단일 문자를 찾습니다. 예를 들어 "DELL*900?" 문자열은 DELL-ABC-9001 및 DELL9009를 찾습니다. 
+    Configuration Manager 버전 1610부터 별표(**&#42;**) 및 물음표(**?**)를 와일드 카드로 지정할 수 있습니다. 여기서 **&#42;** 는 여러 문자를 찾고 **?** 는 단일 문자를 찾습니다. 예를 들어 "DELL*900?" 문자열은 DELL-ABC-9001 및 DELL9009를 찾습니다. 
 
-    별표(**&#42;**) 및 물음표(**?**)를 와일드카드로 지정합니다. 여기서 **&#42;**는 여러 문자를 찾고, **?**는 단일 문자를 찾습니다. 예를 들어 "DELL*900?" 문자열은 DELL-ABC-9001 및 DELL9009를 찾습니다.
+    별표(**&#42;**) 및 물음표(**?**)를 와일드카드로 지정합니다. 여기서 **&#42;** 는 여러 문자를 찾고, **?** 는 단일 문자를 찾습니다. 예를 들어 "DELL*900?" 문자열은 DELL-ABC-9001 및 DELL9009를 찾습니다.
 
 -   **작업 순서 변수**: 평가할 작업 순서 변수, 조건 및 값을 추가합니다. 변수에 대해 설정된 값이 지정된 조건을 충족하면 규칙이 true로 평가됩니다.  
 

@@ -1,22 +1,20 @@
 ---
-title: "소프트웨어 업데이트 관리 준비"
+title: 소프트웨어 업데이트 관리 준비
 titleSuffix: Configuration Manager
-description: "업데이트 관리를 준비하려면 System Center Configuration Manager 콘솔에 준수 평가 데이터가 표시되도록 이 작업을 완료합니다."
-keywords: 
-author: dougeby
-ms.author: dougeby
-manager: angrobe
+description: 업데이트 관리를 준비하려면 System Center Configuration Manager 콘솔에 준수 평가 데이터가 표시되도록 이 작업을 완료합니다.
+author: aczechowski
 ms.date: 10/06/2016
-ms.topic: article
+ms.topic: conceptual
 ms.prod: configuration-manager
-ms.service: 
 ms.technology: configmgr-sum
 ms.assetid: 01907900-e28b-4cd7-9479-42906416707b
-ms.openlocfilehash: 91c6e3654375073977a50cfffb0cf784d091ef98
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: f2608d8cd46572a0fbcbafc6bc8c0f5e013356a2
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="prepare-for-software-updates-management"></a>소프트웨어 업데이트 관리 준비
 

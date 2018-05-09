@@ -1,25 +1,20 @@
 ---
-title: "진단 데이터 수집"
+title: 진단 데이터 수집
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 자체 진단 및 사용 현황 데이터를 수집하는 방법을 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager에서 자체 진단 및 사용 현황 데이터를 수집하는 방법을 알아봅니다.
 ms.date: 12/29/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: becfa825-b19f-448c-ab82-bb929255e4ae
-caps.latest.revision: "5"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: ba18ae0eae0d55d098646670d7208bcdb27d7a4a
-ms.sourcegitcommit: da27d37cc4e4e06cf23758846cdd7acb617f744b
+manager: dougeby
+ms.openlocfilehash: 7eb4becd24ac143ce17c476cda0535ac6bedd039
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-diagnostics-and-usage-data-is-collected-by-system-center-configuration-manager"></a>System Center Configuration Manager에서 진단 및 사용 현황 데이터를 수집하는 방법
 

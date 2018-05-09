@@ -2,26 +2,20 @@
 title: 현재 분기 버전
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager의 버전 기록을 검토하고 제공하는 서비스의 단계에 대해 알아봅니다.
-ms.custom: na
 ms.date: 03/22/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: 35b5baec-d313-46aa-9d14-c443aa0d6c09
-caps.latest.revision: 8
-author: mestew
-ms.author: mstewart
-manager: angrobe
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 robots: noindex,nofollow
-ms.openlocfilehash: e2ea7d8a915caebfdac824147e60bae509151fbf
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 0aa766e9e6a7d2bf79fb69e1b1b3936908c4333a
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="support-for-system-center-configuration-manager-current-branch-versions"></a>System Center Configuration Manager 현재 분기 버전에 대한 지원
 

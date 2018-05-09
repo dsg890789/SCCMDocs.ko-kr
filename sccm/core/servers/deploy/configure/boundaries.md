@@ -1,25 +1,20 @@
 ---
-title: "경계 정의"
+title: 경계 정의
 titleSuffix: Configuration Manager
-description: "관리할 장치를 포함할 수 있는 인트라넷의 네트워크 위치를 정의하는 방법을 이해합니다."
-ms.custom: na
+description: 관리할 장치를 포함할 수 있는 인트라넷의 네트워크 위치를 정의하는 방법을 이해합니다.
 ms.date: 3/27/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: 4a9dc4d9-e114-42ec-ae2b-73bee14ab04f
-caps.latest.revision: "10"
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 224e91ebb3ff6ccfa94c3e2022066ad6d27c3afb
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 1e27bce7576f6d96a8e8af95fa5df69dd39c05cd
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="define-network-locations-as-boundaries-for-system-center-configuration-manager"></a>네트워크 위치를 System Center Configuration Manager의 경계로 정의합니다.
 
@@ -42,7 +37,7 @@ Configuration Manager 관리자가 알지 못하는 IP 주소를 사용하는 �
 
 1.  Configuration Manager 콘솔에서 **관리** > **계층 구조 구성** > **경계**를 클릭합니다.  
 
-2.  **홈** 탭의 **만들기** 그룹에서 **만들기 Boundary.**를 클릭합니다.  
+2.  **홈** 탭의 **만들기** 그룹에서 **만들기 Boundary.** 를 클릭합니다.  
 
 3.  경계 만들기 대화 상자의 **일반** 탭에서 이름 또는 참조로 경계를 식별할 수 있도록 **설명** 을 지정할 수 있습니다.  
 

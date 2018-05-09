@@ -1,25 +1,20 @@
 ---
-title: "버전 간 상호 운용성"
+title: 버전 간 상호 운용성
 titleSuffix: Configuration Manager
-description: "동일한 네트워크에 있는 여러 System Center Configuration Manager 계층 구조 간의 충돌을 방지하는 방법을 알아봅니다."
-ms.custom: na
+description: 동일한 네트워크에 있는 여러 System Center Configuration Manager 계층 구조 간의 충돌을 방지하는 방법을 알아봅니다.
 ms.date: 1/30/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9b0a7859-747f-4495-a2f4-13fd5991f897
-caps.latest.revision: "8"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: 66bfb130a27ed8e4b8b9d052a672ef7f72b56f59
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+manager: dougeby
+ms.openlocfilehash: 712007dd8892e28316f277326b2182e5fe945f7b
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="interoperability-between-different-versions-of-system-center-configuration-manager"></a>서로 다른 버전의 System Center Configuration Manager 간 상호 운용성
 

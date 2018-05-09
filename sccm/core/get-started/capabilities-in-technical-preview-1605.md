@@ -1,25 +1,20 @@
 ---
-title: "기술 미리 보기 1605의 기능"
+title: 기술 미리 보기 1605의 기능
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager용 Technical Preview 버전 1605에서 사용 가능한 기능에 대해 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager용 Technical Preview 버전 1605에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 2bafd028-1923-4463-9e3e-ee41bc0c437b
-caps.latest.revision: "36"
-author: erikje
-ms.author: erikje
-manager: angrobe
-ms.openlocfilehash: 795b7658f5da8f863f208f01896ae2d7823ff2a6
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 05d87b253f2387dd8428f4b9fadea3fe5f3a48e8
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="capabilities-in-technical-preview-1605-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1605의 기능
 
@@ -61,7 +56,7 @@ ms.lasthandoff: 12/01/2017
 
  유예 기간을 구성하려면 다음 작업을 수행합니다.  
 
-1.  클라이언트 설정의 **컴퓨터 에이전트** 페이지에서 새 속성, **배포 최종 기한 이후 적용 유예 기간(시간)**을 **1**시간에서 **120**시간 사이의 값으로 구성합니다.  
+1.  클라이언트 설정의 **컴퓨터 에이전트** 페이지에서 새 속성, **배포 최종 기한 이후 적용 유예 기간(시간)** 을 **1**시간에서 **120**시간 사이의 값으로 구성합니다.  
 
 2.  새 응용 프로그램 배포 또는 기존 배포 속성의 **일정** 페이지에서, 클라이언트 설정에 정의된 유예 기간까지 **이 배포의 적용을 사용자 기본 설정에 따라 연기합니다.** 확인란을 선택합니다.  
 
@@ -257,7 +252,7 @@ ms.lasthandoff: 12/01/2017
     >  -   **자산 및 준수** 작업 영역에서 **OnPremMDM 포털 구성 CI - 서버 url** 구성 항목을 찾습니다.  
     > -   **준수 규칙** 값을 응용 프로그램 카탈로그 역할이 있는 사이트 시스템의 정규화된 도메인 이름으로 변경합니다.  
 
-2.  회사 포털 응용 프로그램 및 해당 구성을 모두 배포한 후 Configuration Manager 콘솔의 **배포** 섹션을 사용하여 응용 프로그램 및 구성 기준이 지정된 장치와 호환되는지 확인합니다. 회사 포털은 장치의 시작 메뉴에 **회사 포털(Technical Preview)**로 표시됩니다.  
+2.  회사 포털 응용 프로그램 및 해당 구성을 모두 배포한 후 Configuration Manager 콘솔의 **배포** 섹션을 사용하여 응용 프로그램 및 구성 기준이 지정된 장치와 호환되는지 확인합니다. 회사 포털은 장치의 시작 메뉴에 **회사 포털(Technical Preview)** 로 표시됩니다.  
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기  
  다음 작업을 완료해 보고 어떻게 작동하는지 Microsoft Connect 사이트의 [Configuration Manager 사용자 의견 프로그램](https://connect.microsoft.com/ConfigurationManagervnext/ConfigMgr%20Customer%20Feedback) 페이지에서 사용자 의견 양식을 사용하여 알려주세요.  

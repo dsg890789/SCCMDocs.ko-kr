@@ -1,26 +1,20 @@
 ---
-title: "업데이트 다시 설정 도구"
+title: 업데이트 다시 설정 도구
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager의 콘솔 내 업데이트를 위해 업데이트 다시 설정 도구를 사용합니다."
-ms.custom: na
+description: System Center Configuration Manager의 콘솔 내 업데이트를 위해 업데이트 다시 설정 도구를 사용합니다.
 ms.date: 7/31/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 25fa89d6-7e47-45a6-8f4e-70b77560fba6
-caps.latest.revision: "0"
-caps.handback.revision: "0"
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: cf854b1ea571991c1f070d6b3896db7861fe020f
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: e6ae6ed46cc1db5f545182e4b4f6b46374b5c174
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="update-reset-tool"></a>업데이트 다시 설정 도구
 
@@ -35,7 +29,7 @@ ms.lasthandoff: 12/04/2017
 
 이 도구를 실행하면 지정한 업데이트에 대해 실행됩니다. 기본적으로 이 도구는 성공적으로 설치되었거나 다운로드된 업데이트를 삭제하지 않습니다.  
 
-### <a name="prerequisites"></a>전제 조건
+### <a name="prerequisites"></a>필수 구성 요소
 이 도구를 실행하는 데 사용하는 계정에는 다음 권한이 필요합니다.
 -   중앙 관리 사이트 및 계층 구조에 있는 각 기본 사이트의 사이트 데이터베이스에 대한 **읽기** 및 **쓰기** 권한 이러한 권한을 설정하려면 사용자 계정을 각 사이트의 Configuration Manager 데이터베이스에 **db_datawriter** 및 **db_datareader** [고정 데이터베이스 역할](/sql/relational-databases/security/authentication-access/database-level-roles#fixed-database-roles)의 구성원으로 추가할 수 있습니다. 이 도구는 보조 사이트와는 상호 작용하지 않습니다.
 -   계층 구조의 최상위 사이트에 대한 **로컬 관리자**

@@ -1,25 +1,20 @@
 ---
-title: "컬렉션 소개"
+title: 컬렉션 소개
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 컬렉션을 사용하는 방법을 소개합니다."
-ms.custom: na
+description: System Center Configuration Manager에서 컬렉션을 사용하는 방법을 소개합니다.
 ms.date: 01/03/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-client
+ms.topic: conceptual
 ms.assetid: d17e1188-d277-438f-9236-db9cd213b421
-caps.latest.revision: "8"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: 835fbbeaf64a16b46e5a600ccf89a2a885bbf21a
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 48a0788d83ffcd7a373f5f73ee675b62508a6d86
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="introduction-to-collections-in-system-center-configuration-manager"></a>System Center Configuration Manager의 컬렉션 소개
 

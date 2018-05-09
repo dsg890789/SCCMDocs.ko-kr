@@ -1,26 +1,20 @@
 ---
-title: "비즈니스용 Windows Hello 설정"
+title: 비즈니스용 Windows Hello 설정
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager와 비즈니스용 Windows Hello를 통합하는 방법을 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager와 비즈니스용 Windows Hello를 통합하는 방법을 알아봅니다.
 ms.date: 03/05/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-hybrid
+ms.topic: conceptual
 ms.assetid: c0593c07-5dd7-4d23-a0d8-d30165f49ef7
-caps.latest.revision: 
-author: lleonard-msft
-ms.author: alleonar
-manager: angrobe
-ms.openlocfilehash: 285fb9e9a9d4538c0ff3b0f9e8b19bec99e9a8c5
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 7471b408fbc8ce55e443873e4662c2ed87410c3a
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="windows-hello-for-business-settings-in-system-center-configuration-manager-hybrid"></a>System Center Configuration Manager의 비즈니스용 Windows Hello 설정(하이브리드)
 
@@ -44,7 +38,7 @@ System Center Configuration Manager를 통해 Windows 10 장치의 대체 로그
 
 1.  Configuration Manager 콘솔에서 **관리** > **클라우드 서비스** > **Microsoft Intune 구독**을 클릭합니다.  
 
-3.  목록에서 Microsoft Intune 구독을 선택하고 **홈** 탭의 **구독** 그룹에서 **플랫폼 구성** > **Windows(MDM)**를 클릭합니다.  
+3.  목록에서 Microsoft Intune 구독을 선택하고 **홈** 탭의 **구독** 그룹에서 **플랫폼 구성** > **Windows(MDM)** 를 클릭합니다.  
 
 4.  **Microsoft Intune 구독 속성** 대화 상자의 **비즈니스용 Windows Hello** 탭에서, 다음 값 중에서 등록된 모든 Windows 10 및 Windows 10 Mobile 장치에 영향을 주는 값을 선택합니다.  
 

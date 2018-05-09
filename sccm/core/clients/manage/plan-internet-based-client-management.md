@@ -1,26 +1,20 @@
 ---
-title: "인터넷 기반 클라이언트 관리"
+title: 인터넷 기반 클라이언트 관리
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 인터넷 기반 클라이언트 관리 계획을 만듭니다."
-ms.custom: na
+description: System Center Configuration Manager에서 인터넷 기반 클라이언트 관리 계획을 만듭니다.
 ms.date: 05/16/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-client
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: 83a7c934-3b11-435d-ba22-cbc274951e83
-caps.latest.revision: "7"
-caps.handback.revision: "0"
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.openlocfilehash: bbbff5d3dc027ee437945e68011d94b14f23d486
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 7f4de7295075de4b5baa5e7ba3fa1a3aea2ec032
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="plan-for-internet-based-client-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 인터넷 기반 클라이언트 관리 계획
 
@@ -33,7 +27,7 @@ System Center Configuration Manager 클라이언트가 회사 네트워크에 �
  다음 섹션에서는 인터넷 기반 클라이언트 관리를 계획하는 방법에 대해 설명합니다.  
 
 ##  <a name="features-that-are-not-supported-on-the-internet"></a>인터넷에서 지원하지 않는 기능  
- 모든 클라이언트 관리 기능이 인터넷에 적합한 것은 아니므로 클라이언트가 인터넷에서 관리될 때 일부 기능은 지원되지 않습니다. 인터넷 관리에 대해 지원되지 않는 기능은 일반적으로 Active Directory Domain Services에 의존하거나 네트워크 검색 및 Wake-On-LAN(WOL)과 같은 공용 네트워크에 적합하지 않습니다.  
+ 모든 클라이언트 관리 기능이 인터넷에 적합한 것은 아니므로 클라이언트가 인터넷에서 관리될 때 일부 기능은 지원되지 않습니다. 인터넷 관리에 대해 지원되지 않는 기능은 일반적으로 Active Directory 도메인 서비스에 의존하거나 네트워크 검색 및 Wake-On-LAN(WOL)과 같은 공용 네트워크에 적합하지 않습니다.  
 
  다음 기능은 클라이언트가 인터넷에서 관리될 때 지원되지 않습니다.  
 

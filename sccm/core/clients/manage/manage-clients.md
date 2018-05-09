@@ -1,25 +1,20 @@
 ---
-title: "클라이언트 관리"
+title: 클라이언트 관리
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 클라이언트를 관리하는 방법을 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager에서 클라이언트를 관리하는 방법을 알아봅니다.
 ms.date: 12/21/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-client
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 3986a992-c175-4b6f-922e-fc561e3d7cb7
-caps.latest.revision: "17"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: 2065fd0910b1d89df3f8296c87ede15b89331568
-ms.sourcegitcommit: 528b1ce79803fecd34937a790e9b5cde282d4caa
+manager: dougeby
+ms.openlocfilehash: 623d7b6a048b7728e40adb3655dc1017408fb1d7
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-manage-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트를 관리하는 방법
 
@@ -278,7 +273,7 @@ CCMSetup.exe에 이러한 명령줄 속성을 사용하는 방법에 대한 자�
 
 1.  클라이언트 컴퓨터의 제어판에서 **Configuration Manager**로 이동한 다음 속성을 두 번 클릭하여 엽니다.  
 
-2.  **캐시** 탭에서 공간 및 위치 속성을 설정합니다. 기본 위치는 *%windir%*\ccmcache입니다.  
+2.  **캐시** 탭에서 공간 및 위치 속성을 설정합니다. 기본 위치는 *%windir%* \ccmcache입니다.  
 
 3.  캐시 폴더의 파일을 삭제하려면 **파일 삭제**를 선택합니다.  
 
@@ -428,6 +423,6 @@ PXE 부팅 및 클라이언트 등록을 위해 Configuration Manager에서 무�
 
     -   Windows 탐색기를 사용하여 파일로 이동한 다음 스크립트 파일을 두 번 클릭합니다.  
 
-    -   명령 프롬프트를 열고 **cscript &lt;경로\파일 이름.vbs>**를 입력합니다.  
+    -   명령 프롬프트를 열고 **cscript &lt;경로\파일 이름.vbs>** 를 입력합니다.  
 
 5.  **Windows 스크립트 호스트** 대화 상자에서 **확인**을 선택합니다.  

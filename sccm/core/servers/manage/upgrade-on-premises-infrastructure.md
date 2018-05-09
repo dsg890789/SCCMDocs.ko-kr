@@ -2,26 +2,19 @@
 title: 온-프레미스 인프라 업그레이드
 titleSuffix: Configuration Manager
 description: SQL Server, 사이트 시스템의 사이트 운영 체제 등의 인프라를 업그레이드하는 방법을 알아봅니다.
-ms.custom: na
 ms.date: 02/15/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: 8ca970dd-e71c-404f-9435-d36e773a0db2
-caps.latest.revision: 7
-caps.handback.revision: 0
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 5c4403588872e426a9346e6c4c50f1853b75f4b9
-ms.sourcegitcommit: 27da4be015f1496b7b89ebddb517a2685f1ecf74
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 09cce65bd4bb4ccb8a9cfee6927aa86409e691a0
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="upgrade-on-premises-infrastructure-that-supports-system-center-configuration-manager"></a>System Center Configuration Manager를 지원하는 온-프레미스 인프라 업그레이드
 
@@ -81,7 +74,7 @@ Windows Server 2012 또는 Windows Server 2012 R2를 Windows Server 2016으로 �
 사이트 서버 또는 SMS_Provider 인스턴스를 호스트하는 서버를 Windows Server 2016으로 업그레이드한 후 관리자가 Configuration Manager 콘솔을 사이트에 연결하지 못할 수 있습니다. 이 문제를 해결하려면 WMI에서 SMS Admins 그룹의 사용 권한을 수동으로 복원해야 합니다. 사이트 서버 및 SMS_Provider 인스턴스를 호스트하는 각 원격 서버에서 사용 권한을 설정해야 합니다.
 
 1. 해당 서버에서 MMC(Microsoft Management Console)를 열고 **WMI 컨트롤**용 스냅인을 추가한 다음 **로컬 컴퓨터**를 선택합니다.
-2. MMC에서 **WMI 컨트롤(로컬)**의 **속성**을 열고 **보안** 탭을 선택합니다.
+2. MMC에서 **WMI 컨트롤(로컬)** 의 **속성**을 열고 **보안** 탭을 선택합니다.
 3. 루트 아래의 트리를 확장하고 **SMS** 노드를 선택한 다음 **보안**을 선택합니다.  **SMS Admins** 그룹에 다음 사용 권한이 있는지 확인합니다.
   -     계정 사용
   -     원격 사용

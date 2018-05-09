@@ -1,25 +1,20 @@
 ---
-title: "Apple Configurator를 사용한 iOS 장치 등록 "
+title: 'Apple Configurator를 사용한 iOS 장치 등록 '
 titleSuffix: Configuration Manager
 descriptions: Pre-enroll iOS devices by using Apple Configurator with Configuration Manager.
-ms.custom: na
 ms.date: 08/15/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 61a19d95-83ff-4ad8-9a67-f304d2ba54f2
-caps.latest.revision: "5"
-author: dougeby
-ms.author: dougeby
-manager: angrobe
-ms.openlocfilehash: e5f7356e2cfe003071a0f090add67cd66acfe062
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 4c3dea67cd16c8efe272038894aa4f958f4ef160
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ios-hybrid-enrollment-using-apple-configurator-with-configuration-manager"></a>Configuration Manager에서 Apple Configurator를 사용한 iOS 하이브리드 등록
 
@@ -29,7 +24,7 @@ ms.lasthandoff: 10/12/2017
 
 장치를 사용하여 회사 메일과 앱, 데이터 등의 회사 리소스에 액세스하는 단일 사용자가 있는 전용 iOS 장치에는 다음 절차를 사용하는 것이 좋습니다.  
 
-## <a name="prerequisites"></a>전제 조건  
+## <a name="prerequisites"></a>필수 구성 요소  
 
 -   IOS 장치에 대한 실제 액세스  
 
@@ -71,7 +66,7 @@ ms.lasthandoff: 10/12/2017
 
 1.  Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > **모든 회사 소유 장치** > **iOS** > **등록 프로필**로 이동합니다.
 
-2.  모바일 장치에 배포할 등록 프로필을 선택하고 **내보내기...**를 클릭합니다.
+2.  모바일 장치에 배포할 등록 프로필을 선택하고 **내보내기...** 를 클릭합니다.
 
 3.  **프로필 URL**을 복사하고 편집할 수 있는 파일에 저장합니다.   
 

@@ -1,26 +1,20 @@
 ---
-title: "클라이언트 업그레이드"
+title: 클라이언트 업그레이드
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 Windows 컴퓨터용 클라이언트 업그레이드"
-ms.custom: na
+description: System Center Configuration Manager에서 Windows 컴퓨터용 클라이언트 업그레이드
 ms.date: 05/04/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-client
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 6143fd47-48ec-4bca-b53b-5b9b9f067bc3
-caps.latest.revision: "11"
-caps.handback.revision: "0"
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.openlocfilehash: 7e2319aaf8f1195118211493eeecb9f6d1872d2d
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 9fce0c0a8602b51c3d05e5181023a0f9d05ab0ca
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-upgrade-clients-for-windows-computers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Windows 컴퓨터용 클라이언트를 업그레이드하는 방법
 

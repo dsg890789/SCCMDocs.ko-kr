@@ -1,25 +1,20 @@
 ---
-title: "평가판 설치 업그레이드"
+title: 평가판 설치 업그레이드
 titleSuffix: Configuration Manager
-description: "평가판 설치를 System Center Configuration Manager 전체 설치로 업그레이드하는 방법을 알아봅니다."
-ms.custom: na
+description: 평가판 설치를 System Center Configuration Manager 전체 설치로 업그레이드하는 방법을 알아봅니다.
 ms.date: 2/7/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9a32f5a3-9917-434f-9811-106170f404be
-caps.latest.revision: "3"
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 2b4c7b487d35e03661a88f8fb2eda65b34101b1c
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: b1bbce9f3ca7a1a6cf9c199677b33e34d9be109c
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="upgrade-an-evaluation-installation-of-system-center-configuration-manager-to-a-full-installation"></a>평가판 설치를 System Center Configuration Manager 전체 설치로 업그레이드
 
@@ -47,7 +42,7 @@ System Center Configuration Manager를 평가판으로 설치하는 경우 180�
 1.  사이트 서버의 Configuration Manager 설치 폴더(**%path%\BIN\X64**)에서 **Setup.exe**(Configuration Manager 설치 프로그램)를 찾아서 실행합니다. 설치 미디어에서 설치 프로그램을 실행하면 사이트 유지 관리 옵션이 제공되지 않으므로 사이트 서버에 있는 설치 프로그램의 복사본은 Configuration Manager 폴더에서 실행해야 합니다.  
 2.  **시작하기 전에** 페이지에서 **다음**을 선택합니다.  
 3.  **시작** 페이지에서 **사이트 유지 관리 수행 또는 이 사이트 다시 설정**을 선택하고 **다음**을 선택합니다.  
-4.  **사이트 유지 관리** 페이지에서 **평가판을 라이선스 버전으로 업그레이드합니다.**를 선택하고 유효한 제품 키를 입력한 후 **다음**을 선택합니다.  
+4.  **사이트 유지 관리** 페이지에서 **평가판을 라이선스 버전으로 업그레이드합니다.** 를 선택하고 유효한 제품 키를 입력한 후 **다음**을 선택합니다.  
 5.  **Microsoft 소프트웨어 사용 조건** 페이지에서 사용 조건을 읽고 동의한 후 **다음**을 선택합니다.  
 6.  **구성** 페이지에서 **닫기** 를 선택하여 마법사를 완료합니다.  
 

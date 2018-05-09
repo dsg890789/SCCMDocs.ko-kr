@@ -1,25 +1,20 @@
 ---
-title: "네트워크 공유를 위한 Endpoint Protection 맬웨어 정의"
+title: 네트워크 공유를 위한 Endpoint Protection 맬웨어 정의
 titleSuffix: Configuration Manager
-description: "Configuration Manager의 Microsoft 업데이트에서 Endpoint Protection 맬웨어 정의 다운로드를 사용하도록 설정하는 방법을 알아봅니다."
-ms.custom: na
+description: Configuration Manager의 Microsoft 업데이트에서 Endpoint Protection 맬웨어 정의 다운로드를 사용하도록 설정하는 방법을 알아봅니다.
 ms.date: 02/14/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.technology: configmgr-protect
+ms.topic: conceptual
 ms.assetid: ab7626ae-d4bf-4ca6-ab25-c61f96800a02
-caps.latest.revision: "21"
-author: NathBarn
-ms.author: nathbarn
-manager: angrobe
-ms.openlocfilehash: af84a6da08407955f7e086038151c645956844e5
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 0d8037f2258f97e2782d475598ca62d2f605e5cd
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="enable-endpoint-protection-malware-definitions-to-download-from-microsoft-updates-for-configuration-manager"></a>Configuration Manager의 Microsoft 업데이트에서 다운로드하기 위해 Endpoint Protection 맬웨어 정의를 사용하도록 설정
 

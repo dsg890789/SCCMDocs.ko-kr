@@ -1,25 +1,20 @@
 ---
-title: "IMEI 또는 iOS 일련 번호로 장치 미리 선언"
+title: IMEI 또는 iOS 일련 번호로 장치 미리 선언
 titleSuffix: Configuration Manager
-description: "IMEI 또는 iOS 일련 번호로 회사 소유 장치 미리 선언"
-ms.custom: na
+description: IMEI 또는 iOS 일련 번호로 회사 소유 장치 미리 선언
 ms.date: 09/01/2017
-ms.reviewer: na
-ms.suite: na
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ddb4c68e-e7f7-475a-89e2-7379a86e44c4
-caps.latest.revision: "3"
-author: nathbarn
-ms.author: nathbarn
-manager: angrobe
-ms.openlocfilehash: a58c765833fe1ef65c2497fd1e2d079caa3f2ff3
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 86ef14c871f476df39923e01e47874702271a08d
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="predeclare-devices-with-imei-or-ios-serial-numbers"></a>IMEI 또는 iOS 일련 번호로 장치 미리 선언
 

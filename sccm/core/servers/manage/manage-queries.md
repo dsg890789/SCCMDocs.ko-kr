@@ -1,26 +1,20 @@
 ---
-title: "쿼리 관리"
+title: 쿼리 관리
 titleSuffix: Configuration Manager
-description: "쿼리를 관리하는 방법을 알아봅니다. 자세한 참조를 위한 표를 포함합니다."
-ms.custom: na
+description: 쿼리를 관리하는 방법을 알아봅니다. 자세한 참조를 위한 표를 포함합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: e562e2a0-8df8-4952-952f-e8c38461c612
-caps.latest.revision: "6"
-caps.handback.revision: "0"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: 8535927281e1d84a09c7d053b5313fe7e4fcd97f
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 9d538106f2cc30a9eca5be51c4174af531bbbda9
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-manage-queries-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 쿼리를 관리하는 방법
 

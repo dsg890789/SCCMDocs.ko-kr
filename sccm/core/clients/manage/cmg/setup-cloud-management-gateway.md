@@ -1,22 +1,20 @@
 ---
 title: 클라우드 관리 게이트웨이 설정
-titleSuffix: System Center Configuration Manager
+titleSuffix: Configuraton Manager
 description: CMG(클라우드 관리 게이트웨이)를 설정하기 위해 이 단계별 프로세스를 사용합니다.
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.date: 03/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: configuration-manager
-ms.service: ''
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.assetid: e0ec7d66-1502-4b31-85bb-94996b1bc66f
-ms.openlocfilehash: fb2a44897064e88f7ab6fd4f4b293520f54f1db7
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 04c1b262704ec6458bd9773c28c43a50d8fc0840
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-up-cloud-management-gateway-for-configuration-manager"></a>Configuration Manager용 클라우드 관리 게이트웨이 설정
 
@@ -116,7 +114,7 @@ ms.lasthandoff: 03/23/2018
 
 3. 기본 사이트 속성 시트의 **클라이언트 컴퓨터 통신** 탭으로 전환하고, **사용 가능한 경우 PKI 클라이언트 인증서(클라이언트 인증 기능) 사용**을 선택합니다.  
 
-4. CRL을 게시하지 않는 경우 **클라이언트는 사이트 시스템에 대한 CRL(인증서 해지 목록)을 확인합니다.**라는 옵션의 선택을 취소합니다.  
+4. CRL을 게시하지 않는 경우 **클라이언트는 사이트 시스템에 대한 CRL(인증서 해지 목록)을 확인합니다.** 라는 옵션의 선택을 취소합니다.  
 
 
 

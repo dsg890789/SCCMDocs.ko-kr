@@ -1,26 +1,20 @@
 ---
-title: "클라이언트 배포 상태 모니터링"
+title: 클라이언트 배포 상태 모니터링
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 클라이언트 배포 상태를 모니터링합니다."
-ms.custom: na
+description: System Center Configuration Manager에서 클라이언트 배포 상태를 모니터링합니다.
 ms.date: 04/23/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-client
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: 20a573b3-53cb-4ed5-bae1-7542f533ed20
-caps.latest.revision: "11"
-caps.handback.revision: "0"
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.openlocfilehash: f5ea535b47b7b9061282a1aadcaa6ed7492f08b4
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 9454183b390a6ff0267ac853f514ce87530c1519
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-monitor-client-deployment-status-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트 배포 상태를 모니터링하는 방법
 
@@ -53,7 +47,7 @@ ms.lasthandoff: 10/12/2017
 
 -   클라이언트 배포 상태 및 클라이언트 배포 실패에 대한 차트를 검토합니다.  
 
--   보고서의 범위를 변경하려면 **찾아보기...**를 클릭하고 다른 컬렉션을 선택합니다.  
+-   보고서의 범위를 변경하려면 **찾아보기...** 를 클릭하고 다른 컬렉션을 선택합니다.  
 
  사전 프로덕션 클라이언트 배포에 대한 자세한 내용은 [System Center Configuration Manager의 사전 프로덕션 컬렉션에서 클라이언트 업그레이드를 테스트하는 방법](../../../core/clients/manage/upgrade/test-client-upgrades.md)을 참조하세요.
 

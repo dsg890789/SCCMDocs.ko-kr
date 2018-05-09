@@ -1,26 +1,20 @@
 ---
-title: "쿼리에 대한 운영 및 유지 관리"
+title: 쿼리에 대한 운영 및 유지 관리
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager의 쿼리에 대한 항목 목록을 참조하세요. 운영 및 유지 관리에 중점을 둡니다."
-ms.custom: na
+description: System Center Configuration Manager의 쿼리에 대한 항목 목록을 참조하세요. 운영 및 유지 관리에 중점을 둡니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f050ee45-bcab-4a3b-9050-4952f5e2ec2e
-caps.latest.revision: "4"
-caps.handback.revision: "0"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: 5109976d01b2e56ef454ed9bee0dba93769013e6
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 7597d7a3f281360533673c91ff53622dcdfebd6c
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="operations-and-maintenance-for-queries-in-system-center-configuration-manager"></a>System Center Configuration Manager의 쿼리 작업 및 유지 관리
 

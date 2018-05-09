@@ -1,26 +1,20 @@
 ---
-title: "Intune 구독 설정 "
+title: 'Intune 구독 설정 '
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 온-프레미스 모바일 장치 관리에 대한 라이선스를 추적하도록 Microsoft Intune 구독을 설정합니다."
-ms.custom: na
+description: System Center Configuration Manager에서 온-프레미스 모바일 장치 관리에 대한 라이선스를 추적하도록 Microsoft Intune 구독을 설정합니다.
 ms.date: 03/05/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: 1e42b1c1-3d58-481f-8647-5c7ae640c5f5
-caps.latest.revision: "8"
-caps.handback.revision: "0"
-author: dougeby
-ms.author: dougeby
-manager: angrobe
-ms.openlocfilehash: 61d446f7c8ff17c122529cc82ea28b01858a42d6
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: aa931c848bc3a25df452f8034530b6c740659e12
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-up-a-microsoft-intune-subscription-for-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 위해 Microsoft Intune 구독 설정
 

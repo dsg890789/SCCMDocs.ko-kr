@@ -2,25 +2,19 @@
 title: Windows 10으로 업그레이드
 titleSuffix: Configuration Manager
 description: Configuration Manager를 사용하여 Windows 7 이상 OS를 Windows 10으로 업그레이드하는 방법을 알아봅니다.
-ms.custom: na
 ms.date: 03/22/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-osd
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-osd
+ms.topic: conceptual
 ms.assetid: c21eec87-ad1c-4465-8e45-5feb60b92707
-caps.latest.revision: 13
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 976a65ad27fe615a997ef795e3acf7a175f363af
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: fbba0306cececebeb7a0e20757e7de3b0d4d0e70
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="upgrade-windows-to-the-latest-version-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows를 최신 버전으로 업그레이드
 

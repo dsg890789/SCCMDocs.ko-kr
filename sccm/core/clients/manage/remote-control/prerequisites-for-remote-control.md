@@ -1,26 +1,20 @@
 ---
-title: "원격 제어 필수 조건"
+title: 원격 제어 필수 조건
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 원격 제어에 대한 필수 조건을 확인합니다."
-ms.custom: na
+description: System Center Configuration Manager에서 원격 제어에 대한 필수 조건을 확인합니다.
 ms.date: 04/23/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-client
+ms.topic: conceptual
 ms.assetid: c1b2057e-b74f-43fa-a293-763a8f866d3d
-caps.latest.revision: "6"
-caps.handback.revision: "0"
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.openlocfilehash: e7287ae7df68ebbcb8f251b8d001233a647596ee
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 117ad9a087151db51c4cf33112ab662f53b9134e
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="prerequisites-for-remote-control-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 원격 제어에 대한 필수 조건
 
@@ -39,7 +33,7 @@ System Center Configuration Manager의 원격 제어에는 외부 종속성과 �
  Configuration Manager 원격 제어는 Systems Management Server 2003 또는 Configuration Manager 2007을 실행하는 클라이언트 컴퓨터를 원격으로 관리하는 데 사용할 수 없습니다.  
 
 > [!NOTE]  
->  원격 제어에 대한 외부 의존 관계로 Windows 서비스가 필요하지 않습니다.  
+>  Windows 서비스가 없는 원격 제어에 대 한 외부 종속성으로 필요 합니다.  
 
 ### <a name="supported-operating-systems-for-the-remote-control-viewer"></a>원격 제어 뷰어에 대해 지원되는 운영 체제  
 Configuration Manager 콘솔에 지원되는 모든 운영 체제에서 원격 제어 뷰어를 사용할 수 있습니다. 자세한 내용은 [System Center Configuration Manager 콘솔에서 지원되는 구성](../../../../core/plan-design/configs/supported-operating-systems-consoles.md)을 참조하세요.   

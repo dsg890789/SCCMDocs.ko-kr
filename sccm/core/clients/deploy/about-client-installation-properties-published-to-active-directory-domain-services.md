@@ -1,26 +1,20 @@
 ---
-title: "Active Directory Domain Services의 클라이언트 설치 속성"
+title: Active Directory Domain Services의 클라이언트 설치 속성
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 Active Directory Domain Services에 게시된 클라이언트 설치 속성을 사용합니다."
-ms.custom: na
+description: System Center Configuration Manager에서 Active Directory Domain Services에 게시된 클라이언트 설치 속성을 사용합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-client
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 101d7d4d-92db-419d-b2ae-3c1c1dea68e9
-caps.latest.revision: "6"
-caps.handback.revision: "0"
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.openlocfilehash: ece29d218140ffd28ac83a16e9999ba420f228a5
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 585aa6ea6874ac6d6a5264b0f75d8dbcf39ddd0a
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="about-client-installation-properties-published-to-active-directory-domain-services"></a>Active Directory Domain Services에 게시된 클라이언트 설치 속성 정보
 
@@ -28,7 +22,7 @@ ms.lasthandoff: 10/12/2017
 
 System Center Configuration Manager용으로 Active Directory 스키마를 확장하고 Active Directory Domain Services에 사이트를 게시하면 많은 클라이언트 설치 속성이 Active Directory Domain Services에 게시됩니다. 컴퓨터에서 이러한 클라이언트 설치 속성을 찾을 수 있는 경우 Configuration Manager 클라이언트 배포 시 이러한 속성을 사용할 수 있습니다.  
 
- Active Directory Domain Services를 사용하여 클라이언트 설치 속성을 게시하는 것의 이점은 다음과 같습니다.  
+ Active Directory 도메인 서비스를 사용하여 클라이언트 설치 속성을 게시하는 것의 이점은 다음과 같습니다.  
 
 -   소프트웨어 업데이트 지점 기반의 클라이언트 설치와 그룹 정책 클라이언트 설치 시 각 컴퓨터에서 설정 매개 변수를 설정할 필요가 없습니다.  
 
@@ -110,7 +104,7 @@ System Center Configuration Manager용으로 Active Directory 스키마를 확�
 -   그룹 정책을 사용하여 컴퓨터에 설치 속성을 프로비전하지 않은 경우  
 
 ## <a name="software-distribution-installation"></a>소프트웨어 배포 설치  
- CCMSetup은 다음과 같은 경우 Active Directory Domain Services에서 설치 속성을 검색합니다.  
+ CCMSetup은 다음과 같은 경우 Active Directory 도메인 서비스에서 설치 속성을 검색합니다.  
 
 -   CCMSetup.exe 명령 뒤에 명령줄 속성이 지정되지 않은 경우  
 

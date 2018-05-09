@@ -1,26 +1,20 @@
 ---
-title: "콘텐츠 인프라"
+title: 콘텐츠 인프라
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에 대한 콘텐츠 관리 인프라를 배포한 후 관리하는 방법을 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager에 대한 콘텐츠 관리 인프라를 배포한 후 관리하는 방법을 알아봅니다.
 ms.date: 2/7/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: ceff72f5-f19d-43a0-a8c0-72f1c09b9bf5
-caps.latest.revision: "17"
-caps.handback.revision: "0"
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 5ddec4c3e33a10247eb0826bec88c78fde798f51
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 1c37ff5a794aa830c60de06054014ec942a4a44b
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manage-content-and-content-infrastructure-for-system-center-configuration-manager"></a>System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리
 

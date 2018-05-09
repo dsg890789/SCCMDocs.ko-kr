@@ -2,23 +2,18 @@
 title: 버전 1710의 새로운 기능 | Microsoft Docs
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager 버전 1710에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.
-ms.custom: na
 ms.date: 1/08/2018
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: bc6c3e5f-b9e2-400e-9d9d-446ff93c520c
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: e9d1ac44bf0455ff0b1caec94d07cfa734dfbeb0
-ms.sourcegitcommit: d8a4a53630351b3d677bbdc5d203e7d330472cba
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: e33a56a2d7fe395265d76c668db91492c410046f
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="what39s-new-in-version-1710-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1710의 새로운 기능
 
@@ -132,7 +127,7 @@ Version 1710 drops support for the following products:
 ### <a name="limit-windows-10-enhanced-telemetry-to-only-send-data-relevant-to-windows-analytics-device-health"></a>Windows 10 향상된 원격 분석을 Windows Analytics 장치 상태와 관련된 데이터만 전송하도록 제한
 <!-- 1356148 -->
 
-이제 Windows 10 원격 분석 데이터 수집 수준을 **고급(제한적)**으로 설정할 수 있습니다. 이 설정을 사용하면 Windows 10 버전 1709 이상을 사용하여 **고급** 원격 분석 수준의 모든 데이터를 보고하는 장치가 없는 환경에서 장치에 대해 조치 가능한 통찰력을 얻을 수 있습니다.
+이제 Windows 10 원격 분석 데이터 수집 수준을 **고급(제한적)** 으로 설정할 수 있습니다. 이 설정을 사용하면 Windows 10 버전 1709 이상을 사용하여 **고급** 원격 분석 수준의 모든 데이터를 보고하는 장치가 없는 환경에서 장치에 대해 조치 가능한 통찰력을 얻을 수 있습니다.
 
 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](/sccm/core/clients/deploy/configure-client-settings)섹션을 참조하세요.
 

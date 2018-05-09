@@ -1,26 +1,20 @@
 ---
-title: "장치 및 사용자 리소스 검색"
+title: 장치 및 사용자 리소스 검색
 titleSuffix: Configuration Manager
-description: "검색 프로세스 및 검색 데이터 기록 개요를 읽습니다."
-ms.custom: na
+description: 검색 프로세스 및 검색 데이터 기록 개요를 읽습니다.
 ms.date: 2/8/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: 30844519-ce14-456f-bfb8-4318b578e9f6
-caps.latest.revision: "20"
-caps.handback.revision: "0"
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: b380df38c4e08a04691a0bca9d46580fedf7b78a
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 7d43415ce9517843490c815f7c9f2f3490e87674
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="run-discovery-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 검색 실행
 
@@ -56,7 +50,7 @@ System Center Configuration Manager에서 하나 이상의 검색 방법을 사�
 
  사이트 데이터베이스에 추가된 검색 정보는 검색되거나 처리된 위치와 관계없이 계층의 각 사이트로 복제됩니다. 따라서 여러 사이트의 검색 방법에 다른 일정과 설정을 사용하면서 특정 방법을 한 사이트에서만 실행할 수도 있습니다. 그러면 중복 검색 작업을 통해 네트워크 대역폭 사용을 줄이고, 여러 사이트에서 중복 검색 데이터의 처리를 줄일 수 있습니다.  
 
- 검색 데이터를 사용하여 관리 작업을 위해 리소스를 논리적으로 그룹화하는 사용자 지정 컬렉션과 쿼리를 만들 수 있습니다. 예를 들면 다음과 같습니다.  
+ 검색 데이터를 사용하여 관리 작업을 위해 리소스를 논리적으로 그룹화하는 사용자 지정 컬렉션과 쿼리를 만들 수 있습니다. 예:  
 
 -   강제 클라이언트 설치 또는 업그레이드  
 

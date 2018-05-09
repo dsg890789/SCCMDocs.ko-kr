@@ -2,25 +2,19 @@
 title: 클라이언트 설치 속성
 titleSuffix: Configuration Manager
 description: Configuration Manager 클라이언트를 설치하기 위한 ccmsetup 명령줄 속성을 알아봅니다.
-ms.custom: na
 ms.date: 03/28/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-client
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-client
+ms.topic: conceptual
 ms.assetid: c890fd27-7a8c-4f51-bbe2-f9908af1f42b
-caps.latest.revision: 15
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 40e844fbb15a101574d9628648dde0db59c855c4
-ms.sourcegitcommit: aed99ba3c5e9482199cb3fc5c92f6f3a160cb181
+ms.openlocfilehash: 27479bf3db9ab0ed5d842f5cbf9db4e399a4168d
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="about-client-installation-properties-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 설치 속성 정보
 
@@ -121,7 +115,7 @@ FQDN을 사용하는 경우의 예: `ccmsetup.exe /mp:smsmp01.contoso.com`
 클라우드 관리 게이트웨이 URL을 사용하는 경우에 대한 예제. `ccmsetup.exe /mp:https://CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72057598037248100`
 
  > [!Important]
- > **/mp** 속성에 대한 클라우드 관리 게이트웨이의 URL을 지정하는 경우 **https://**로 시작해야 합니다.
+ > **/mp** 속성에 대한 클라우드 관리 게이트웨이의 URL을 지정하는 경우 **https://** 로 시작해야 합니다.
 
 
 ### <a name="retryltminutes"></a>/retry:&lt;분\>
@@ -343,13 +337,13 @@ Example: `ccmsetup.exe AADTENANTNAME=Contoso`
  `CCMCERTISSUERS=”CN=Contoso Root CA; OU=Servers; O=Contoso, Ltd; C=US &#124; CN=Litware Corporate Root CA; O=Litware, Inc.”`  
 
 > [!TIP]  
->  사이트에 대한 **CertificateIssuers=&lt;문자열\>**을 복사하려면 사이트 서버 컴퓨터의 &lt;Configuration Manager 디렉터리\>\bin\\&lt;플랫폼\> 폴더에 있는 mobileclient.tcf 파일을 참조합니다.  
+>  사이트에 대한 **CertificateIssuers=&lt;문자열\>** 을 복사하려면 사이트 서버 컴퓨터의 &lt;Configuration Manager 디렉터리\>\bin\\&lt;플랫폼\> 폴더에 있는 mobileclient.tcf 파일을 참조합니다.  
 
 ### <a name="ccmcertsel"></a>CCMCERTSEL
 
  클라이언트에 HTTPS 통신용 1 초과 인증서가 있는 경우 인증서 선택 기준을 지정합니다. 이 인증서는 클라이언트 인증 기능을 포함하는 유효한 인증서입니다.  
 
- 정확하게 일치하는 항목( **Subject:**사용) 또는 부분적으로 일치하는 항목( **SubjectStr: 사용)**을 검색할 수 있습니다. 예제:  
+ 정확하게 일치하는 항목( **Subject:** 사용) 또는 부분적으로 일치하는 항목( **SubjectStr: 사용)** 을 검색할 수 있습니다. 예제:  
 
  `CCMCERTSEL="Subject:computer1.contoso.com"`은 주체 이름 또는 주체 대체 이름에서 컴퓨터 이름 "computer1.contoso.com"과 정확히 일치하는 인증서를 검색합니다.  
 
@@ -362,9 +356,9 @@ Example: `ccmsetup.exe AADTENANTNAME=Contoso`
  `CCMCERTSEL="SubjectAttr:OU = Computers"`은(는) 고유 이름과 명명된 컴퓨터로 표시된 조직 구성 단위 특성을 검색합니다.  
 
 > [!IMPORTANT]  
->  주체 이름 상자를 사용할 경우 **Subject:**는 대/소문자를 구분하고 **SubjectStr:**은 대/소문자를 구분하지 않습니다.  
+>  주체 이름 상자를 사용할 경우 **Subject:** 는 대/소문자를 구분하고 **SubjectStr:** 은 대/소문자를 구분하지 않습니다.  
 >   
->  주체 대체 이름 상자를 사용할 경우 **Subject:**와 **SubjectStr:**은 대/소문자를 구분하지 않습니다.  
+>  주체 대체 이름 상자를 사용할 경우 **Subject:** 와 **SubjectStr:** 은 대/소문자를 구분하지 않습니다.  
 
  인증서 선택에 사용할 수 있는 전체 특성 목록은 [PKI 인증서 선택 기준에 지원되는 특성 값](#BKMK_attributevalues)항목에 나와 있습니다.  
 
@@ -438,7 +432,7 @@ Example: `ccmsetup.exe AADTENANTNAME=Contoso`
 
 ### <a name="ccminstalldir"></a>CCMINSTALLDIR
 
- Configuration Manager 클라이언트 파일이 설치되는 폴더를 식별하고, 기본적으로 *%Windir%*\CCM입니다. 이러한 파일이 설치되는 위치에 관계없이 Ccmcore.dll 파일은 항상 *%Windir%\System32* 폴더에 설치됩니다. 또한 64비트 운영 체제에서 Ccmcore.dll 파일의 복사본은 항상 *%Windir%*\SysWOW64 폴더에 설치됩니다. 이 파일은 Configuration Manager SDK에서 32비트 버전의 클라이언트 API를 사용하는 32비트 응용 프로그램을 지원합니다.  
+ Configuration Manager 클라이언트 파일이 설치되는 폴더를 식별하고, 기본적으로 *%Windir%* \CCM입니다. 이러한 파일이 설치되는 위치에 관계없이 Ccmcore.dll 파일은 항상 *%Windir%\System32* 폴더에 설치됩니다. 또한 64비트 운영 체제에서 Ccmcore.dll 파일의 복사본은 항상 *%Windir%* \SysWOW64 폴더에 설치됩니다. 이 파일은 Configuration Manager SDK에서 32비트 버전의 클라이언트 API를 사용하는 32비트 응용 프로그램을 지원합니다.  
 
  예: `CCMSetup.exe CCMINSTALLDIR="C:\ConfigMgr"`  
 

@@ -1,25 +1,20 @@
 ---
-title: "운영 체제를 설치하는 작업 순서 만들기"
+title: 운영 체제를 설치하는 작업 순서 만들기
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 작업 순서를 사용하여 운영 체제 이미지 및 기타 콘텐츠를 대상 컴퓨터에 자동으로 설치할 수 있습니다."
-ms.custom: na
+description: System Center Configuration Manager에서 작업 순서를 사용하여 운영 체제 이미지 및 기타 콘텐츠를 대상 컴퓨터에 자동으로 설치할 수 있습니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-osd
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 217c8a0e-5112-420e-a325-2a6d75326290
-caps.latest.revision: "13"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: 433a1778213b357c6c41eb20e4b975b2e682050d
-ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
+manager: dougeby
+ms.openlocfilehash: 274a6c22b76c8def437e6159036ff3e82877e88f
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-a-task-sequence-to-install-an-operating-system-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 운영 체제를 설치하는 작업 순서 만들기
 
@@ -92,7 +87,7 @@ System Center Configuration Manager에서 작업 순서를 사용하여 운영 �
 
          OU(조직 구성 단위)도 지정할 수 있습니다. 이것은 컴퓨터 계정을 만들 OU의 LDAP X.500-고유 이름이 아직 없는 경우 이 이름을 지정하는 옵션 설정입니다.  
 
-    -   **계정**: 지정된 도메인에 가입할 권한이 있는 계정의 사용자 이름과 암호를 지정합니다. *도메인\사용자* 또는 *%변수%*등을 지정할 수 있습니다.  
+    -   **계정**: 지정된 도메인에 가입할 권한이 있는 계정의 사용자 이름과 암호를 지정합니다. *도메인\사용자* 또는 *%변수%* 등을 지정할 수 있습니다.  
 
         > [!IMPORTANT]  
         >  도메인 설정이나 작업 그룹 설정을 마이그레이션할 계획이라면 적절한 도메인 자격 증명을 입력해야 합니다.  

@@ -1,25 +1,20 @@
 ---
-title: "기술 미리 보기 1610의 기능"
+title: 기술 미리 보기 1610의 기능
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager용 Technical Preview 버전 1610에서 사용 가능한 기능에 대해 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager용 Technical Preview 버전 1610에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 01/23/2017
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.prod: configuration-manager
 ms.technology: configmgr-other
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8b31fd3e-875a-4a31-9498-5b050aadce32
-caps.latest.revision: "2"
-author: erikje
-ms.author: erikje
-manager: angrobe
-ms.openlocfilehash: 1ab5ce458b4892422aa82ae99ed69ae2eb671583
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 0798deff2f4904cb1cecac79251e7bc0688e0d4e
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="capabilities-in-technical-preview-1610-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1610의 기능
 
@@ -131,7 +126,7 @@ Technical Preview 1610에는 업데이트된 클라이언트 버전을 자동으
 
 1.  Configuration Manager 콘솔에서 **자산 및 호환성** > **개요** > **준수 설정** > **구성 항목**으로 이동한 다음 새 **구성 항목**을 만듭니다.
 2.  이름을 입력하고 **Configuration Manager 클라이언트를 사용하지 않고 관리되는 장치에 대한 설정**에서 **Windows 8.1 및 Windows 10**을 선택하고 **다음**을 클릭합니다.
-3.  **지원되는 플랫폼** 페이지에서 **모든 Windows 10(64비트)** 및 **모든 Windows 10(32비트)**가 선택되었는지 확인하고 **다음**을 클릭합니다.
+3.  **지원되는 플랫폼** 페이지에서 **모든 Windows 10(64비트)** 및 **모든 Windows 10(32비트)** 가 선택되었는지 확인하고 **다음**을 클릭합니다.
 4.  **Windows Defender** 설정 그룹을 선택하고 **다음**을 클릭합니다.
 5.  이 페이지에서 원하는 설정을 구성하고 **다음**을 클릭합니다.
 6.  마법사를 완료합니다.

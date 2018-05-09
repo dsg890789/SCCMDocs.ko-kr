@@ -1,25 +1,20 @@
 ---
-title: "사이트 시스템 역할 옵션"
+title: 사이트 시스템 역할 옵션
 titleSuffix: Configuration Manager
-description: "별도의 설명이 필요한 Configuration Manager 사이트 역할에 대한 자세한 내용은 이 문서를 참조하세요."
-ms.custom: na
+description: 별도의 설명이 필요한 Configuration Manager 사이트 역할에 대한 자세한 내용은 이 문서를 참조하세요.
 ms.date: 2/8/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0e9f0fbd-e442-4509-a021-bfdedf2d04dd
-caps.latest.revision: "5"
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 83fbde5fd15b1781822bcc743e2c13611ad88e0d
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 5651eaa7a69c6b75c37cb368973d1d3947e3a498
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configuration-options-for-site-system-roles-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 사이트 시스템 역할 구성 옵션
 
@@ -99,7 +94,7 @@ System Center Configuration Manager 사이트 시스템 역할의 구성 옵션 
  - **버전 1610부터** **콘텐츠에 대한 대체 원본 위치 허용**을 더 이상 구성할 수 없습니다.  대신, 클라이언트가 추가 경계 그룹에서 유효한 콘텐츠 원본 위치 검색을 시작할 수 있는 경우를 확인하는 경계 그룹 간의 관계를 설정합니다.
 
 ##  <a name="BKMK_Enrollment_Point"></a> 등록 지점  
-등록 지점은 Mac 컴퓨터를 설치하고 온-프레미스 모바일 장치 관리를 통해 관리하고 있는 장치를 등록하는 데 사용됩니다. 자세한 내용은 다음을 참조하십시오.  
+등록 지점은 Mac 컴퓨터를 설치하고 온-프레미스 모바일 장치 관리를 통해 관리하고 있는 장치를 등록하는 데 사용됩니다. 자세한 내용은 다음을 참조하세요.  
 
 -   [System Center Configuration Manager에서 Mac에 클라이언트를 배포하는 방법](../../../../core/clients/deploy/deploy-clients-to-macs.md)  
 

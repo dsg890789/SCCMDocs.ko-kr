@@ -2,45 +2,19 @@
 title: 개인정보처리방침 - 추가 정보
 titleSuffix: Configuration Manager
 description: Microsoft가 System Center Configuration Manager에서 데이터를 수집하고 사용하는 방법에 대해 알아봅니다.
-ms.custom: na
 ms.date: 03/22/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: 1fcc921f-085f-4b0b-9c53-1e0707211076
-caps.latest.revision: 5
-caps.handback.revision: 0
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-translation.priority.ht:
-- cs-cz
-- de-de
-- en-gb
-- es-es
-- fr-fr
-- hu-hu
-- it-it
-- ja-jp
-- ko-kr
-- nl-nl
-- pl-pl
-- pt-br
-- pt-pt
-- ru-ru
-- sv-se
-- tr-tr
-- zh-cn
-- zh-tw
-ms.openlocfilehash: eb557a29b1412e136023b3e6caddf358732659e9
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: e98afcbc4215d3157a361eb35b9df54223df97e0
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="additional-information-about-privacy-for-system-center-configuration-manager"></a>System Center Configuration Manager의 개인 정보 보호에 대한 추가 정보
 

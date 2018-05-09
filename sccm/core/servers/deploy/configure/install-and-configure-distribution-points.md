@@ -2,25 +2,19 @@
 title: 배포 지점 관리
 titleSuffix: Configuration Manager
 description: 배포 지점을 사용하여 장치 및 사용자에게 배포할 콘텐츠를 호스트합니다.
-ms.custom: na
 ms.date: 03/22/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: aebafaf9-b3d5-4a0f-9ee5-685758c037a1
-caps.latest.revision: 5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 1010e339c586922f818e1af1e193abba95dace7b
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 1c9e6dc50b47a1cfcf12f23eaf607eb55837a57d
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-and-configure-distribution-points-for-system-center-configuration-manager"></a>System Center Configuration Manager의 배포 지점 설치 및 구성
 
@@ -268,7 +262,7 @@ ms.lasthandoff: 03/23/2018
 
 -   **드라이브 공간 예약(MB):** 이 설정에 구성하는 값에 따라 드라이브에 남아 있는 사용 가능한 공간의 양이 결정됩니다. 이 값에 도달하면 Configuration Manager에서 다른 드라이브를 선택하여 해당 드라이브로 복사 프로세스를 계속합니다. 콘텐츠 파일은 여러 드라이브에 걸쳐 있을 수 있습니다.  
 
--   **콘텐츠 위치**: 콘텐츠 라이브러리 및 패키지 공유에 대한 콘텐츠 위치를 지정합니다. Configuration Manager는 사용 가능한 공간의 용량이 **드라이브 공간 예약(MB)**에 지정된 값에 도달할 때까지 기본 콘텐츠 위치에 콘텐츠를 복사합니다. 기본적으로 콘텐츠 위치는 **자동**으로 설정됩니다. 기본 콘텐츠 위치는 설치 시 디스크 공간이 가장 많은 디스크 드라이브로 설정되며, 보조 위치는 사용 가능한 디스크 공간이 두 번째로 많은 디스크 드라이브로 지정됩니다. 기본 및 보조 드라이브가 드라이브 예약 공간에 도달하면 Configuration Manager에서 사용 가능한 디스크 공간이 가장 많은 다른 가용 드라이브를 선택하여 복사 프로세스를 계속합니다.  
+-   **콘텐츠 위치**: 콘텐츠 라이브러리 및 패키지 공유에 대한 콘텐츠 위치를 지정합니다. Configuration Manager는 사용 가능한 공간의 용량이 **드라이브 공간 예약(MB)** 에 지정된 값에 도달할 때까지 기본 콘텐츠 위치에 콘텐츠를 복사합니다. 기본적으로 콘텐츠 위치는 **자동**으로 설정됩니다. 기본 콘텐츠 위치는 설치 시 디스크 공간이 가장 많은 디스크 드라이브로 설정되며, 보조 위치는 사용 가능한 디스크 공간이 두 번째로 많은 디스크 드라이브로 지정됩니다. 기본 및 보조 드라이브가 드라이브 예약 공간에 도달하면 Configuration Manager에서 사용 가능한 디스크 공간이 가장 많은 다른 가용 드라이브를 선택하여 복사 프로세스를 계속합니다.  
 
 > [!NOTE]  
 >  Configuration Manager가 특정 드라이브에 설치되지 않도록 하려면 배포 지점을 설치하기 전에 **no_sms_on_drive.sms**라는 빈 파일을 만들고 드라이브의 루트 폴더에 복사합니다.  
@@ -429,4 +423,4 @@ Configuration Manager에서 배포 지점으로 콘텐츠를 전송할 때 사�
 
 -   **펄스 모드**: 이 옵션은 배포 지점으로 보내는 데이터 블록 크기를 지정합니다. 또한 각 데이터 블록 전송 간의 시간 지연을 지정할 수도 있습니다. 대역폭이 매우 낮은 네트워크 연결을 통해 배포 지점으로 데이터를 전송해야 할 경우 이 옵션을 사용합니다. 예를 들어 지정된 시간의 연결 속도나 사용량과 관계없이 5초마다 1KB의 데이터를 보내야 하는 제약 조건을 설정할 수 있습니다.  
 
--   **지정한 시간별 최대 전송 속도로 제한**: 사이트에서 배포 지점에 데이터를 보낼 때 구성한 시간 비율만 사용하도록 하려면 이 설정을 지정합니다. 이 옵션을 사용하는 경우 Configuration Manager는 사용할 수 있는 네트워크 대역폭을 확인하지 않고 데이터를 보낼 수 있는 시간을 분할합니다. 그러면 데이터가 짧은 시간 블록 동안 전송된 후 일정 시간 블록 동안 데이터가 전송되지 않습니다. 예를 들어 최대 비율이 **50%**로 설정된 경우 Configuration Manager에서 일정 기간 동안 데이터를 전송하고 그 후 같은 기간 동안 데이터를 전송하지 않습니다. 실제 데이터 크기 또는 데이터 블록 크기는 관리되지 않습니다. 대신 데이터가 전송되는 시간의 길이만 관리됩니다.  
+-   **지정한 시간별 최대 전송 속도로 제한**: 사이트에서 배포 지점에 데이터를 보낼 때 구성한 시간 비율만 사용하도록 하려면 이 설정을 지정합니다. 이 옵션을 사용하는 경우 Configuration Manager는 사용할 수 있는 네트워크 대역폭을 확인하지 않고 데이터를 보낼 수 있는 시간을 분할합니다. 그러면 데이터가 짧은 시간 블록 동안 전송된 후 일정 시간 블록 동안 데이터가 전송되지 않습니다. 예를 들어 최대 비율이 **50%** 로 설정된 경우 Configuration Manager에서 일정 기간 동안 데이터를 전송하고 그 후 같은 기간 동안 데이터를 전송하지 않습니다. 실제 데이터 크기 또는 데이터 블록 크기는 관리되지 않습니다. 대신 데이터가 전송되는 시간의 길이만 관리됩니다.  

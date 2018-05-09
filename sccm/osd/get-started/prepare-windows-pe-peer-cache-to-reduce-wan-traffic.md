@@ -1,25 +1,20 @@
 ---
-title: "WAN 트래픽을 줄이기 위해 Windows PE 피어 캐시 준비"
+title: WAN 트래픽을 줄이기 위해 Windows PE 피어 캐시 준비
 titleSuffix: Configuration Manager
-description: "Windows PE 피어 캐시는 로컬 배포 지점이 없는 경우 로컬 피어로부터 콘텐츠를 가져와 WAN 트래픽을 최소화하도록 Windows PE에서 작동합니다."
-ms.custom: na
+description: Windows PE 피어 캐시는 로컬 배포 지점이 없는 경우 로컬 피어로부터 콘텐츠를 가져와 WAN 트래픽을 최소화하도록 Windows PE에서 작동합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-osd
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: 6c64f276-b88c-4b1e-8073-331876a03038
-caps.latest.revision: "11"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: 24e6aaa404054f5b9ac477cc0dbdd6fa9cce1860
-ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
+manager: dougeby
+ms.openlocfilehash: 90eaaec52076e4ac4fbaddf6cc07cf20359b5a68
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="prepare-windows-pe-peer-cache-to-reduce-wan-traffic-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 WAN 트래픽을 줄이기 위해 Windows PE 피어 캐시 준비
 

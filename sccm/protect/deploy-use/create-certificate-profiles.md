@@ -1,27 +1,20 @@
 ---
-title: "SCEP 인증서 프로필을 만드는 방법"
+title: SCEP 인증서 프로필을 만드는 방법
 titleSuffix: Configuration Manager
-description: "인증서 프로필을 사용하여 System Center Configuration Manager에서 관리되는 장치를 필요한 인증서로 프로비전하는 방법을 알아봅니다."
-ms.custom: na
+description: 인증서 프로필을 사용하여 System Center Configuration Manager에서 관리되는 장치를 필요한 인증서로 프로비전하는 방법을 알아봅니다.
 ms.date: 03/28/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-protect
+ms.topic: conceptual
 ms.assetid: 634d612c-92d7-4c03-873a-b2e730c9a72d
-caps.latest.revision: 
-caps.handback.revision: 
-author: Nbigman
-ms.author: nbigman
-manager: angrobe
-ms.openlocfilehash: 827565bd4dac074e8599075b19c9dac678a21948
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 615464e816fe697c05011723b3fbc512a4e9db0b
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-certificate-profiles"></a>인증서 프로필 만들기
 
@@ -136,7 +129,7 @@ Configuration Manager(SCCM)에서 인증서 프로필을 사용하여 관리되�
 
  -   인증서 템플릿의 이름을 입력하는 경우 이름이 네트워크 장치 등록 서비스를 실행하는 서버의 레지스트리에 나열된 인증서 템플릿 중 하나와 일치하는지 확인합니다. 또한 인증서 템플릿의 표시 이름이 아닌 인증서 템플릿 이름을 지정했는지 확인합니다.  
 
-   인증서 템플릿의 이름을 찾으려면 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP 키로 이동합니다. 인증서 템플릿이 **EncryptionTemplate**, **GeneralPurposeTemplate**및 **SignatureTemplate**의 값으로 나열됩니다. 기본적으로 모든 세 인증서 템플릿의 값은 **IPSECIntermediateOffline**이며, 이는 **IPSec(오프라인 요청)**라는 템플릿 표시 이름으로 매핑됩니다.  
+   인증서 템플릿의 이름을 찾으려면 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP 키로 이동합니다. 인증서 템플릿이 **EncryptionTemplate**, **GeneralPurposeTemplate**및 **SignatureTemplate**의 값으로 나열됩니다. 기본적으로 모든 세 인증서 템플릿의 값은 **IPSECIntermediateOffline**이며, 이는 **IPSec(오프라인 요청)** 라는 템플릿 표시 이름으로 매핑됩니다.  
 
    > [!WARNING]  
    > 
@@ -168,7 +161,7 @@ Configuration Manager(SCCM)에서 인증서 프로필을 사용하여 관리되�
 
    **찾아보기**를 사용하여 인증서 템플릿을 선택한 경우 다른 인증서 템플릿을 선택하지 않으면 이러한 설정을 변경할 수 없습니다.  
 
-   사용자가 선택한 인증서 템플릿은 위의 두 키 사용 옵션 중 하나 또는 둘 모두로 구성해야 합니다. 구성하지 않은 경우 인증서 등록 지점 로그 파일 **Crp.log** 에 **CSR의 키 사용과 인증 질문이 일치하지 않습니다.**메시지가 표시됩니다.  
+   사용자가 선택한 인증서 템플릿은 위의 두 키 사용 옵션 중 하나 또는 둘 모두로 구성해야 합니다. 구성하지 않은 경우 인증서 등록 지점 로그 파일 **Crp.log** 에 **CSR의 키 사용과 인증 질문이 일치하지 않습니다.** 메시지가 표시됩니다.  
 
 
    -   **키 크기(비트)**: 키의 크기(비트)를 선택합니다.  

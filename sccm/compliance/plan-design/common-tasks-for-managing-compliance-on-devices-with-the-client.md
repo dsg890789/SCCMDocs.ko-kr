@@ -1,25 +1,20 @@
 ---
-title: "클라이언트 관리 장치에 대한 일반 준수 관리 작업 "
+title: '클라이언트 관리 장치에 대한 일반 준수 관리 작업 '
 titleSuffix: Configuration Manager
-description: "몇 가지 일반적인 시나리오를 진행하여 System Center Configuration Manager의 준수 설정에 대해 알아봅니다."
-ms.custom: na
+description: 몇 가지 일반적인 시나리오를 진행하여 System Center Configuration Manager의 준수 설정에 대해 알아봅니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-compliance
+ms.topic: conceptual
 ms.assetid: 4e345791-74db-41ad-b472-024ce6521daf
-caps.latest.revision: "8"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: 0e70e565f7e1000aa452487cdd71ae165dd0c67b
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: ed9be26417aceef3fb73f48c2a4a2f15f0ba1b52
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="common-tasks-for-managing-compliance-on-devices-with-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트가 설치된 장치의 준수 관리를 위한 일반 작업
 

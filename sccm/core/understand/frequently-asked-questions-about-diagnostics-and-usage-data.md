@@ -2,25 +2,19 @@
 title: 진단 및 사용량 데이터 FAQ
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에 대한 진단 및 사용 현황 데이터에 대한 질문과 대답을 찾습니다.
-ms.custom: na
 ms.date: 04/10/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: 3fe32aa2-d594-4ad0-a291-b8f5395ac50b
-caps.latest.revision: 6
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5a8a34e14d0e4f187e520faf9b2e520945087097
-ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
+ms.openlocfilehash: b4174c68d5a6ccd31355d976b7830b6d09f39d91
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="frequently-asked-questions-about-diagnostics-and-usage-data-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 진단 및 사용 현황 데이터에 대한 질문과 대답
 
@@ -49,7 +43,7 @@ ms.lasthandoff: 04/16/2018
 
 
 ###  <a name="bkmk_tables"></a> 사용자 지정 테이블의 데이터를 볼 수 있나요?  
- 아니요. Configuration Manager는 SQL 저장 프로시저를 통해 진단 및 사용 현황 데이터를 수집합니다. 이러한 저장 프로시저는 데이터베이스의 기본 제품 테이블에 대해 실행됩니다. 이러한 모든 SQL 테이블의 이름은 **TEL_**로 시작합니다. SQL 스키마 검색 쿼리의 일부로, 알려진 기본값과 비교할 수 있도록 모든 테이블 이름이 해시됩니다. 이 동작은 데이터베이스에 사용자 지정 테이블이 존재하는지 확인합니다. 사용자 지정 테이블이 있다는 것은 데이터베이스 스키마가 기본값에서 확장되었다는 의미입니다. 해당 테이블 내에 저장된 데이터는 여기에 포함되지 않습니다.  
+ 아니요. Configuration Manager는 SQL 저장 프로시저를 통해 진단 및 사용 현황 데이터를 수집합니다. 이러한 저장 프로시저는 데이터베이스의 기본 제품 테이블에 대해 실행됩니다. 이러한 모든 SQL 테이블의 이름은 **TEL_** 로 시작합니다. SQL 스키마 검색 쿼리의 일부로, 알려진 기본값과 비교할 수 있도록 모든 테이블 이름이 해시됩니다. 이 동작은 데이터베이스에 사용자 지정 테이블이 존재하는지 확인합니다. 사용자 지정 테이블이 있다는 것은 데이터베이스 스키마가 기본값에서 확장되었다는 의미입니다. 해당 테이블 내에 저장된 데이터는 여기에 포함되지 않습니다.  
 
 ###  <a name="bkmk_databases"></a> 다른 데이터베이스의 이름 또는 다른 데이터베이스의 데이터를 볼 수 있나요? 
  아니요. 데이터를 수집하는 저장 프로시저는 사이트 데이터베이스로 제한됩니다.  

@@ -1,26 +1,20 @@
 ---
-title: "쿼리 만들기"
+title: 쿼리 만들기
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 쿼리를 만들고 가져오는 방법을 알아봅니다. 예제 쿼리 및 팁이 포함되어 있습니다."
-ms.custom: na
+description: System Center Configuration Manager에서 쿼리를 만들고 가져오는 방법을 알아봅니다. 예제 쿼리 및 팁이 포함되어 있습니다.
 ms.date: 12/11/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 868049d3-3209-47ec-b34a-9cc26941893a
-caps.latest.revision: "5"
-caps.handback.revision: "0"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: 32400ebcd834e3b98bf0f1ff6a1f6b41d8e12076
-ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
+manager: dougeby
+ms.openlocfilehash: 6ba7adf52ce084d640bf53aef32678576d5828f5
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-create-queries-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 쿼리를 만드는 방법
 
@@ -160,7 +154,7 @@ SMS_R_System where SMS_R_System.NetbiosName like "ABC%"
 Select SMS_R_System.ClientEdition from SMS_R_System where SMS_R_System.ClientEdition = <Device ID>  
 ```  
 
-*&lt;장치 ID\>*에 대해 다음 값 중 하나를 사용합니다.  
+*&lt;장치 ID\>* 에 대해 다음 값 중 하나를 사용합니다.  
 
 |장치 유형|AgentEdition의 값|  
 |-----------------|---------------------------|  

@@ -1,23 +1,20 @@
 ---
 title: Configuration Manager 워크로드를 Intune으로 전환
-titleSuffix: System Center Configuration Manager
+titleSuffix: Configuraton Manager
 description: Configuration Manager에서 현재 관리하고 있는 워크로드를 Microsoft Intune으로 전환하는 방법을 알아봅니다.
 ms.prod: configuration-manager
-ms.suite: na
-ms.technology:
-- configmgr-client
-author: mestew
-ms.author: mstewart
+ms.technology: configmgr-client
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
 ms.date: 03/22/2018
-ms.topic: article
-ms.service: ''
+ms.topic: conceptual
 ms.assetid: 60e2022f-a4f9-40dd-af01-9ecb37b43878
-ms.openlocfilehash: d0cee0eb242011d6cc7b3085b4ae9df908604fa8
-ms.sourcegitcommit: ac06e034cc60db7b1acade1f541e26b6cc50506e
+ms.openlocfilehash: 439e4e26c08b5a2710da0978ed2407d715bc86bd
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="switch-configuration-manager-workloads-to-intune"></a>Configuration Manager 워크로드를 Intune으로 전환
 [공동 관리를 위해 Windows 10 장치 준비](co-management-prepare.md)에서 공동 관리를 위해 Windows 10 장치를 준비했습니다. 이러한 장치가 AD, Azure AD에 조인되고 Intune에 등록되고 Configuration Manager 클라이언트를 포함합니다. Windows 10 장치가 AD에 조인되고 Configuration Manager 클라이언트를 포함했지만 Azure AD에 되거나 Intune에 등록되지 않았습니다. 다음 절차에서는 공동 관리를 사용하고, 공동 관리를 위해 나머지 Windows 10 장치(Intune에 등록되지 않은 Configuration Manager 클라이언트)를 준비하고, 특정 Configuration Manager 워크로드를 Intune으로 전환하기 시작할 수 있는 단계를 제공합니다.

@@ -1,27 +1,20 @@
 ---
-title: "Windows 서버 준비"
+title: Windows 서버 준비
 titleSuffix: Configuration Manager
-description: "컴퓨터가 System Center Configuration Manager의 사이트 서버 또는 사이트 시스템 서버를 사용하기 위한 필수 조건을 충족하는지 확인합니다."
-ms.custom: na
+description: 컴퓨터가 System Center Configuration Manager의 사이트 서버 또는 사이트 시스템 서버를 사용하기 위한 필수 조건을 충족하는지 확인합니다.
 ms.date: 2/14/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: 2aca914f-641e-4bc8-98d4-bbf0a2a5276f
-caps.latest.revision: 
-caps.handback.revision: 
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: a55322868d45cf1d2b3004e21d641ca5299aa957
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 64b24d04769da7488eb7fefaa293444fbc851cfb
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="prepare-windows-servers-to-support-system-center-configuration-manager"></a>System Center Configuration Manager 지원을 위해 Windows 서버 준비
 

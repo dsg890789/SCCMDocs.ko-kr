@@ -1,26 +1,20 @@
 ---
-title: "App-V 가상 환경 만들기"
+title: App-V 가상 환경 만들기
 titleSuffix: Configuration Manager
-description: "앱이 데이터를 서로 공유할 수 있도록 Microsoft Application Virtualization을 사용하여 가상 환경을 만듭니다."
-ms.custom: na
+description: 앱이 데이터를 서로 공유할 수 있도록 Microsoft Application Virtualization을 사용하여 가상 환경을 만듭니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-app
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: b6b86078-fcc4-46cf-87d6-4b52b914b712
-caps.latest.revision: "6"
-caps.handback.revision: "0"
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
-ms.openlocfilehash: 2b831f4302657e8338dddea32bca26677472bd42
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: e04b1d5662bb67ddb14310cd136abd6fdf29855d
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-app-v-virtual-environments-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 App-V 가상 환경 만들기
 

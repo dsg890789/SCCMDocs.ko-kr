@@ -1,25 +1,20 @@
 ---
-title: "콘텐츠에 액세스하기 위한 계정"
+title: 콘텐츠에 액세스하기 위한 계정
 titleSuffix: Configuration Manager
-description: "클라이언트가 System Center Configuration Manager 콘텐츠에 액세스하는 계정에 대해 알아봅니다."
-ms.custom: na
+description: 클라이언트가 System Center Configuration Manager 콘텐츠에 액세스하는 계정에 대해 알아봅니다.
 ms.date: 2/6/2017
-ms.reviewer: na
-ms.suite: na
 ms.prod: configuration-manager
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a7df9d0f-fbde-47eb-97e7-3d29536424fa
-caps.latest.revision: "4"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: e0f0d4d12905a986159d379b9fd29a06afa4cad0
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+manager: dougeby
+ms.openlocfilehash: c21601246cb0024837256b7cf8d4c1576c00149d
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manage-accounts-to-access-content-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 콘텐츠에 액세스하기 위한 계정 관리
 

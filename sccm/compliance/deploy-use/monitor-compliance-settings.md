@@ -1,26 +1,20 @@
 ---
-title: "준수 설정 모니터링"
+title: 준수 설정 모니터링
 titleSuffix: Configuration Manager
-description: "이 항목의 절차 중 하나 이상을 사용하여 구성 기준의 준수 상태를 표시할 수 있습니다."
-ms.custom: na
+description: 이 항목의 절차 중 하나 이상을 사용하여 구성 기준의 준수 상태를 표시할 수 있습니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-compliance
+ms.topic: conceptual
 ms.assetid: 92c1ccca-a748-44cd-a52e-e41d34bf981d
-caps.latest.revision: "6"
-caps.handback.revision: "0"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: 1da8bf6ab83be7c72cc95ec5e07cb9b1a17526d5
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 9920bd48ad7b953469261602c21a6664580143a2
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="monitor-compliance-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 준수 설정 모니터링
 
@@ -51,7 +45,7 @@ ms.lasthandoff: 10/12/2017
 
     -   **오류**: 영향받는 자산 수에 따라 선택한 구성 기준 배포에 대한 모든 오류 목록을 표시합니다. 규칙을 클릭하여 **자산 및 준수** 작업 영역의 **사용자** 또는 **장치** 노드 아래에 임시 노드를 만들 수 있습니다. 그러면 이 규칙에 대해 오류를 생성한 모든 사용자 또는 장치가 해당 노드에 포함됩니다. 사용자 또는 장치를 선택하면 **자산 정보** 창에 선택한 문제의 영향을 받는 사용자 또는 장치가 표시됩니다. 목록에서 문제에 대한 추가 정보를 표시할 사용자 또는 장치를 두 번 클릭합니다.  
 
-    -   **비규격**: 영향받는 자산 수에 따라 구성 기준 내에 있는 모든 비규격 규칙의 목록을 표시합니다. 규칙을 클릭하여 **자산 및 준수** 작업 영역의 **사용자** 또는 **장치** 노드 아래에 임시 노드를 만들 수 있습니다. 그러면 이 규칙을 준수하지 않는 모든 사용자 또는 장치가 해당 노드에 포함됩니다. 사용자 또는 장치를 선택하면 **자산 정보** 창에 선택한 문제의 영향을 받는 사용자 또는 장치가 표시됩니다. 목록에서 문제에 대한 추가 정보를 표시할 사용자 또는 장치를 두 번 클릭합니다.  
+    -   **비규격**: 영향받는 자산 수에 따라 구성 기준 내에 있는 모든 비규격 규칙의 목록을 표시합니다. 규칙을 클릭하여 **자산 및 호환성** 작업 영역의 **사용자** 또는 **장치** 노드 아래에 임시 노드를 만들 수 있습니다. 그러면 이 규칙을 준수하지 않는 모든 사용자 또는 장치가 해당 노드에 포함됩니다. 사용자 또는 장치를 선택하면 **자산 정보** 창에 선택한 문제의 영향을 받는 사용자 또는 장치가 표시됩니다. 목록에서 문제에 대한 추가 정보를 표시할 사용자 또는 장치를 두 번 클릭합니다.  
 
     -   **알 수 없음**: 선택한 구성 기준 배포에 대해 준수 여부를 보고하지 않은 모든 사용자 및 장치의 목록과 장치의 현재 클라이언트 상태를 표시합니다.  
 
@@ -61,7 +55,7 @@ ms.lasthandoff: 10/12/2017
  Configuration Manager의 준수 설정에는 구성 항목, 구성 기준 및 배포에 대한 정보를 모니터링할 수 있는 다양한 기본 제공 보고서가 포함됩니다. 이러한 보고서에는 **호환 및 설정 관리**라는 보고서 범주가 있습니다.  
 
 > [!IMPORTANT]  
->  준수 설정 보고서에서**%**장치 필터 **및 사용자 필터 매개 변수를 사용할 때 와일드카드(** ) 문자를 사용해야 합니다.  
+>  준수 설정 보고서에서**%** 장치 필터 **및 사용자 필터 매개 변수를 사용할 때 와일드카드(** ) 문자를 사용해야 합니다.  
 
  Configuration Manager에서 보고를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고](../../core/servers/manage/reporting.md)를 참조하세요.  
 

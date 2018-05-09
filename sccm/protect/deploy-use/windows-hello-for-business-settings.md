@@ -2,25 +2,19 @@
 title: 비즈니스용 Windows Hello 설정
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager와 비즈니스용 Windows Hello를 통합하는 방법을 알아봅니다.
-ms.custom: na
 ms.date: 04/10/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-protect
+ms.topic: conceptual
 ms.assetid: a95bc292-af10-4beb-ab56-2a815fc69304
-caps.latest.revision: 17
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0d5e0f5e1d47441bd105fb5cae2e8f3f313dfa54
-ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
+ms.openlocfilehash: 60dcf98b83fb4650a10e5503d42b9f49d3aba359
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="windows-hello-for-business-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager의 비즈니스용 Windows Hello 설정
 

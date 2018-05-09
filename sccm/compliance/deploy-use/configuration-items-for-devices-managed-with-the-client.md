@@ -1,26 +1,20 @@
 ---
-title: "클라이언트 관리 장치의 구성 항목 "
+title: '클라이언트 관리 장치의 구성 항목 '
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 클라이언트에서 관리되는 Windows 및 Mac 장치를 구성하는 방법을 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager 클라이언트에서 관리되는 Windows 및 Mac 장치를 구성하는 방법을 알아봅니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-compliance
+ms.topic: conceptual
 ms.assetid: 7daf71dc-3775-40d7-92e0-8679d7d90a78
-caps.latest.revision: "4"
-caps.handback.revision: "0"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: 77db856b22c4be009e805f3137e45355b1d88952
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: b5d8897eed2885c9b9e97c01fb544ad26ed703e4
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configuration-items-for-devices-managed-with-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트로 관리되는 장치의 구성 항목
 

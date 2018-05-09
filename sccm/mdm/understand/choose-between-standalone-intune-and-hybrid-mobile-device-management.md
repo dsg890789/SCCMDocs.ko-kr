@@ -1,25 +1,20 @@
 ---
-title: "Intune 독립 실행형 또는 하이브리드 MDM를 선택"
+title: Intune 독립 실행형 또는 하이브리드 MDM를 선택
 titleSuffix: Configuration Manager
-description: "Intune과 Configuration Manager를 사용하는 하이브리드 모바일 장치 관리 배포 또는 Intune 독립 실행형 실행 중에서 선택합니다."
-ms.custom: na
+description: Intune과 Configuration Manager를 사용하는 하이브리드 모바일 장치 관리 배포 또는 Intune 독립 실행형 실행 중에서 선택합니다.
 ms.date: 07/18/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: 73ff9bb9-e605-4b68-92a1-487684fed42d
-caps.latest.revision: "10"
-author: dougeby
-ms.author: dougeby
-manager: angrobe
-ms.openlocfilehash: 993a3ada8b887adb52be468ea4e936140a455bca
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 2a7cd26fde23c560295117edcc148835b1397a55
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="choose-between-microsoft-intune-standalone-and-hybrid-mobile-device-management-with-system-center-configuration-manager"></a>Microsoft Intune 독립 실행형 및 System Center Configuration Manager에서 하이브리드 모바일 장치 관리 선택
 

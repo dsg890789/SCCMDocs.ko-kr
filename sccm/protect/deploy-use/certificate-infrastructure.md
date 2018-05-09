@@ -2,26 +2,19 @@
 title: 인증서 인프라 구성
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에서 인증서 등록을 구성하는 방법을 알아봅니다.
-ms.custom: na
 ms.date: 07/25/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.technology: configmgr-protect
+ms.topic: conceptual
 ms.assetid: 29ae59b7-2695-4a0f-a9ff-4f29222f28b3
-caps.latest.revision: 7
-caps.handback.revision: 0
-author: lleonard-msft
-ms.author: alleonar
-manager: angrobe
-ms.openlocfilehash: 9ef62bbf6269a6090f2345b10c24cc4df16c1e3b
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: c27f92374470c7d87d49661b20996a3f0c47f8a4
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-certificate-infrastructure"></a>인증서 인프라 구성
 
@@ -161,11 +154,11 @@ System Center Configuration Manager 계층에 인증서 등록 지점을 하나 
 
     -   **모니터링** 작업 영역에서 **시스템 상태**를 확장한 후 **구성 요소 상태**를 클릭하고 **SMS_CERTIFICATE_REGISTRATION_POINT** 구성 요소의 상태 메시지를 찾아봅니다.  
 
-    -   사이트 시스템 서버에서 *<Configuration Manager 설치 경로\>*\Logs\crpsetup.log 파일 및 *<Configuration Manager 설치 경로\>*\Logs\crpmsi.log 파일을 사용합니다. 설치가 성공하면 종료 코드 0이 반환됩니다.  
+    -   사이트 시스템 서버에서 *<Configuration Manager 설치 경로\>* \Logs\crpsetup.log 파일 및 *<Configuration Manager 설치 경로\>* \Logs\crpmsi.log 파일을 사용합니다. 설치가 성공하면 종료 코드 0이 반환됩니다.  
 
     -   브라우저를 사용하여 https://server1.contoso.com/CMCertificateRegistration과 같은 인증서 등록 지점의 URL에 연결할 수 있는지 확인합니다. HTTP 404 설명과 함께 응용 프로그램 이름에 대한 **서버 오류** 페이지가 나타나야 합니다.  
 
-11. 인증서 등록 지점에서 기본 사이트 서버 컴퓨터의 *<ConfigMgr 설치 경로\>*\inboxes\certmgr.box 폴더에 자동으로 만든 내보낸 루트 CA용 인증서 파일을 찾습니다. 나중에 네트워크 장치 등록 서비스를 실행하는 서버에 System Center Configuration Manager 정책 모듈을 설치할 때 안전하게 액세스할 수 있도록 보안이 유지되는 위치에 이 파일을 저장합니다.  
+11. 인증서 등록 지점에서 기본 사이트 서버 컴퓨터의 *<ConfigMgr 설치 경로\>* \inboxes\certmgr.box 폴더에 자동으로 만든 내보낸 루트 CA용 인증서 파일을 찾습니다. 나중에 네트워크 장치 등록 서비스를 실행하는 서버에 System Center Configuration Manager 정책 모듈을 설치할 때 안전하게 액세스할 수 있도록 보안이 유지되는 위치에 이 파일을 저장합니다.  
 
     > [!TIP]  
     >  이 폴더에서 이 인증서를 바로 사용할 수는 없습니다. System Center Configuration Manager에서 파일을 이 위치로 복사할 때까지 어느 정도(예: 30분) 기다려야 할 수 있습니다.  

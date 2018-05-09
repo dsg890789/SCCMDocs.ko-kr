@@ -1,25 +1,20 @@
 ---
-title: "Mobile Threat Defense 준수 모니터링"
+title: Mobile Threat Defense 준수 모니터링
 titleSuffix: Configuration Manager
-description: "Configuration Manager 관리자 콘솔에서 Mobile Threat Defense 파트너 준수 상태를 모니터링합니다."
-ms.custom: na
+description: Configuration Manager 관리자 콘솔에서 Mobile Threat Defense 파트너 준수 상태를 모니터링합니다.
 ms.date: 03/21/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-hybrid
+ms.topic: conceptual
 ms.assetid: 408190da-bea6-4122-9dd6-f90155040e88
-caps.latest.revision: 
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: 33c2d3c05020d0c06344bfe6bb67a35f7d75e51d
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 24a066b30d6c220ecb5be8455a3150bd27936da7
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="monitor-mobile-threat-defense-compliance"></a>**Mobile Threat Defense 준수 모니터링**
 

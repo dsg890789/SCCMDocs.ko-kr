@@ -1,43 +1,18 @@
 ---
-title: "Intune으로 관리되는 Android for Work 장치에 대한 구성 항목을 만드는 방법"
+title: Intune으로 관리되는 Android for Work 장치에 대한 구성 항목을 만드는 방법
 titleSuffix: Configuration Manager
-ms.custom: na
 ms.date: 2017-07-31
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-hybrid
+ms.topic: conceptual
 ms.assetid: ab6784fd-8c57-4be9-858f-50fe39f2ff5f
-caps.latest.revision: "17"
-caps.handback.revision: "0"
-author: andredm7
-ms.author: andredm
-translation.priority.ht:
-- cs-cz
-- de-de
-- en-gb
-- es-es
-- fr-fr
-- hu-hu
-- it-it
-- ja-jp
-- ko-kr
-- nl-nl
-- pl-pl
-- pt-br
-- pt-pt
-- ru-ru
-- sv-se
-- tr-tr
-- zh-cn
-- zh-tw
-ms.openlocfilehash: 8170348da6151088580645154b8975355d470731
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+ms.openlocfilehash: ba70e4d3a87f2a305312449907730174c62c4775
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-create-configuration-items-for-android-for-work-devices-managed-with-intune"></a>Intune으로 관리되는 Android for Work 장치에 대한 구성 항목을 만드는 방법
 

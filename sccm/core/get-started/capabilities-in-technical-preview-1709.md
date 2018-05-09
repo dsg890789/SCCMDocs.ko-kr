@@ -1,25 +1,20 @@
 ---
-title: "기술 미리 보기 1709"
+title: 기술 미리 보기 1709
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager용 Technical Preview 버전 1709에서 사용 가능한 기능에 대해 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager용 Technical Preview 버전 1709에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 09/28/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: a3ef6bdc-a204-4c4c-a02f-2bd03f35183e
-author: erikje
-ms.author: erikje
-manager: angrobe
-ms.openlocfilehash: f0acc5ae0d8207dce92c56a4c80e8321faf51393
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 74ffd06f8b9786d627dc7fd9cecb15215228313d
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="capabilities-in-technical-preview-1709-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1709의 기능
 
@@ -84,7 +79,7 @@ ms.lasthandoff: 12/01/2017
 <!-- 1350871 -->
 고객은 보통 낮은 비용으로 간소화된 클라우드 기반 솔루션을 사용하여 모바일 장치를 관리하는 동일한 방식으로 Windows 10 장치를 관리하려고 합니다. 그러나 기존 관리에서 최신 관리로 전환하기가 어려울 수 있습니다. Windows 10 버전 1607(Anniversary Update라고도 함)부터는 Windows 10 장치를 온-프레미스 AD(Active Directory)와 클라우드 기반 Azure AD에 동시에 조인할 수 있습니다(하이브리드 Azure AD). 공동 관리에서는 이 향상된 기능을 사용하며 Configuration Manager 및 Intune을 둘 다 사용하여 Windows 10 장치를 동시에 관리할 수 있게 해줍니다. 이것은 기존 관리에서 최신 관리에 대한 연결을 제공하고 단계별 접근 방법을 사용하여 전환할 수 있는 경로를 제공하는 솔루션입니다. 
 
-### <a name="prerequisites"></a>전제 조건
+### <a name="prerequisites"></a>필수 구성 요소
 공동 관리를 활성화하기 전에 다음 필수 구성 요소를 준비해야 합니다. 기존 Configuration Manager 클라이언트 및 클라이언트가 아닌 장치에 대한 일반 전제 조건 및 다른 필수 구성 요소가 있습니다.
 
 ### <a name="known-issues"></a>알려진 문제

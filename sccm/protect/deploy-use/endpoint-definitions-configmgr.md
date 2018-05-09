@@ -1,25 +1,20 @@
 ---
-title: "Endpoint Protection 맬웨어 정의"
+title: Endpoint Protection 맬웨어 정의
 titleSuffix: Configuration Manager
-description: "클라이언트 컴퓨터에 정의 업데이트를 제공하도록 Configuration Manager 소프트웨어 업데이트를 구성하는 방법을 알아봅니다."
-ms.custom: na
+description: 클라이언트 컴퓨터에 정의 업데이트를 제공하도록 Configuration Manager 소프트웨어 업데이트를 구성하는 방법을 알아봅니다.
 ms.date: 10/06/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.technology: configmgr-protect
+ms.topic: conceptual
 ms.assetid: 3b9c4027-a98b-406b-935c-ccabcfe713df
-caps.latest.revision: "21"
-author: NathBarn
-ms.author: nathbarn
-manager: angrobe
-ms.openlocfilehash: cf488babe28267c2438e03fa94c514c872f960c7
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 414231d2cd07e583196b6b1abdd6530c3d49681a
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 #  <a name="using-configuration-manager-software-updates-to-deliver-definition-updates"></a>Configuration Manager 소프트웨어 업데이트를 사용 하 여 정의 업데이트를 제공 하려면
 
@@ -59,19 +54,19 @@ ms.lasthandoff: 10/12/2017
 
 8.  **속성 필터** 목록에서 **업데이트 분류** 확인란을 선택합니다.
 
-9. **검색 조건** 목록에서 **<찾을 항목\>**을 클릭합니다. 그런 다음 **검색 조건** 대화 상자의 **검색할 값 지정** 목록에서 **정의 업데이트**를 선택합니다.
+9. **검색 조건** 목록에서 **<찾을 항목\>** 을 클릭합니다. 그런 다음 **검색 조건** 대화 상자의 **검색할 값 지정** 목록에서 **정의 업데이트**를 선택합니다.
 
 10. **확인** 을 클릭하여 **검색 조건** 대화 상자를 닫습니다.
 
 11. **속성 필터** 목록에서 **제품** 확인란을 선택합니다.
 
-12. **검색 조건** 목록에서 **<찾을 항목\>**을 클릭합니다. 그런 다음 **검색 조건** 대화 상자의 **검색할 값 지정** 목록에서 **Forefront Endpoint Protection 2010** (Windows 8.1 이전) 또는 **Windows Defender** (Windows 10 이후)를 선택합니다.
+12. **검색 조건** 목록에서 **<찾을 항목\>** 을 클릭합니다. 그런 다음 **검색 조건** 대화 상자의 **검색할 값 지정** 목록에서 **Forefront Endpoint Protection 2010** (Windows 8.1 이전) 또는 **Windows Defender** (Windows 10 이후)를 선택합니다.
 
 13. **확인** 을 클릭하여 **검색 조건** 대화 상자를 닫고 **다음**을 클릭합니다.
 
 14. 필요에 따라 대체되는 업데이트를 필터링할 수 있습니다.   확인 방법은 다음과 같습니다.
   1.  **속성 필터** 목록에서 **대체** 확인란을 선택합니다.
-  2.  **검색 조건** 목록에서 **<찾을 항목\>**을 클릭합니다. 그런 다음 **검색 조건** 대화 상자의 **검색할 값 지정** 목록에서 **아니요**를 선택합니다.  <br><br>
+  2.  **검색 조건** 목록에서 **<찾을 항목\>** 을 클릭합니다. 그런 다음 **검색 조건** 대화 상자의 **검색할 값 지정** 목록에서 **아니요**를 선택합니다.  <br><br>
 
 15. **확인** 을 클릭하여 **검색 조건** 대화 상자를 닫고 **다음**을 클릭합니다.
 

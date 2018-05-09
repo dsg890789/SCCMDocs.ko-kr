@@ -1,25 +1,20 @@
 ---
-title: "상태 증명"
+title: 상태 증명
 titleSuffix: Configuration Manager
-description: "Configuration Manager 콘솔에서 볼 수 있는 장치 상태 증명 기능에 대해 알아봅니다."
-ms.custom: na
+description: Configuration Manager 콘솔에서 볼 수 있는 장치 상태 증명 기능에 대해 알아봅니다.
 ms.date: 10/05/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 91f9de33-b277-4500-acd6-e7d90a2947c9
-caps.latest.revision: "17"
-author: NathBarn
-ms.author: nathbarn
-manager: angrobe
-ms.openlocfilehash: 4b9ce2aad95036e12167626897052de23cc937ae
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: c41a04d82edb46a234b6e5bd10d796e6544cbfad
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="health-attestation-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 상태 증명
 

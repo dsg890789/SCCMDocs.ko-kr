@@ -1,20 +1,19 @@
 ---
-title: "MDM 기관을 Intune으로 변경"
+title: MDM 기관을 Intune으로 변경
 titleSuffix: Configuration Manager
-description: "Configuration Manager(하이브리드)에서 MDM 기관을 Intune 독립 실행형으로 변경하는 방법에 알아봅니다."
-keywords: 
-author: dougeby
-manager: angrobe
+description: Configuration Manager(하이브리드)에서 MDM 기관을 Intune 독립 실행형으로 변경하는 방법에 알아봅니다.
+author: aczechowski
+manager: dougeby
 ms.date: 12/05/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: be503ec9-5324-4f7c-bcf5-77204328e99c
-ms.openlocfilehash: 8884883c6e4e82cf38d83b9b7843002be3742bf1
-ms.sourcegitcommit: 8c6e9355846ff6a73c534c079e3cdae09cf13c45
+ms.openlocfilehash: b8bc778f4bcede45d3035b8b119fc3e4a4df4978
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="change-your-mdm-authority-to-intune-standalone"></a>MDM 기관을 Intune 독립 실행형으로 변경
 
@@ -38,7 +37,7 @@ Configuration Manager 콘솔(하이브리드 MDM)에서 구성된 기존 Microso
 - 이전 MDM 기관(하이브리드)의 일부 기본 설정(예: 프로필)은 최대 7일 동안 장치에 남아 있습니다. 
 - 연결된 사용자가 없는 장치(일반적으로 iOS 장치 등록 프로그램 또는 대량 등록 시나리오가 있는 경우)는 새 MDM 기관으로 마이그레이션되지 않습니다. 이러한 장치의 경우 새 MDM 기관으로 이동하려면 지원 서비스에 문의해야 합니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 다음 정보를 검토하여 MDM 기관 변경을 준비하세요.
 - MDM 기관을 변경하는 옵션을 사용하려면 Configuration Manager 버전 1610 이상이 있어야 합니다.
 - 현재 하이브리드 MDM에서 관리되는 모든 사용자가 MDM 기관 변경 전에 Intune/EMS 라이선스를 할당받았는지 확인합니다. 라이선스가 있으면 MDM 기관 변경 후에 사용자 및 해당 장치가 Intune 독립 실행형에서 관리됩니다. 자세한 내용은 [사용자 계정에 Intune 라이선스 할당](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4)을 참조하세요.

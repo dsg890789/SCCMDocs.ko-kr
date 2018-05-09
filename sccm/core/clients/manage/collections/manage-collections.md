@@ -1,26 +1,20 @@
 ---
-title: "컬렉션 관리"
+title: 컬렉션 관리
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 일반적인 컬렉션 관리 작업을 수행합니다."
-ms.custom: na
+description: System Center Configuration Manager에서 일반적인 컬렉션 관리 작업을 수행합니다.
 ms.date: 4/25/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-client
+ms.topic: conceptual
 ms.assetid: e102fd1a-76df-4d8e-b1b0-10ee18318f67
-caps.latest.revision: "8"
-caps.handback.revision: "0"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: 0655a1dc566657cb27cdc7537603871dc36cc568
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: b00b62a90f496eb19a77dcc431ccf157b1227923
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-manage-collections-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 컬렉션을 관리하는 방법
 
@@ -51,7 +45,7 @@ ms.lasthandoff: 10/12/2017
 |**복사**|선택한 컬렉션의 복사본을 만듭니다. 새 컬렉션은 선택한 컬렉션을 제한 컬렉션으로 사용합니다.|추가 정보가 없습니다.|  
 |**삭제**|선택한 컬렉션을 삭제합니다. 사이트 데이터베이스에서 컬렉션의 모든 리소스를 삭제할 수도 있습니다.<br /><br /> Configuration Manager에 기본 제공된 컬렉션을 삭제할 수 없습니다.|기본 제공 컬렉션 목록을 보려면 [System Center Configuration Manager의 컬렉션 소개](../../../../core/clients/manage/collections/introduction-to-collections.md)를 참조하세요.|  
 |**배포 시뮬레이트**|**응용 프로그램 배포 시뮬레이트 마법사** 를 엽니다. 이 마법사를 통해 응용 프로그램을 설치하거나 제거하지 않고도 응용 프로그램 배포 결과를 테스트할 수 있습니다.|[System Center Configuration Manager에서 응용 프로그램 배포를 시뮬레이트하는 방법](../../../../apps/deploy-use/simulate-application-deployments.md)|  
-|**배포:**|다음 옵션이 표시됩니다.<br /><br /> - <br />                    **응용 프로그램** - 선택한 컬렉션에 대한 응용 프로그램 배포를 선택하고 구성할 수 있는 **소프트웨어 배포 마법사**를 엽니다.<br /><br /> - <br />                    **프로그램** – 선택한 컬렉션에 대한 패키지 및 프로그램 배포를 선택하고 구성할 수 있는 **소프트웨어 배포 마법사** 를 엽니다.<br /><br /> - **구성 기준** - 선택한 컬렉션에 하나 이상의 구성 기준 배포를 구성할 수 있는 **구성 기준 배포** 대화 상자를 엽니다.<br /><br /> - <br />                    **작업 순서** – 선택한 컬렉션에 대한 작업 시퀀스 배포를 선택하고 구성할 수 있는 **소프트웨어 배포 마법사** 를 엽니다.<br /><br /> - <br />                    **소프트웨어 업데이트** - 선택한 컬렉션의 리소스에 대해 소프트웨어 업데이트 배포를 구성할 수 있는 **소프트웨어 업데이트 배포 마법사**를 엽니다.|[System Center Configuration Manager에서 응용 프로그램을 배포하는 방법](../../../../apps/deploy-use/deploy-applications.md)<br /><br /> [System Center Configuration Manager의 패키지 및 프로그램](../../../../apps/deploy-use/packages-and-programs.md)<br /><br /> [System Center Configuration Manager에서 구성 기준을 배포하는 방법](../../../../compliance/deploy-use/deploy-configuration-baselines.md)<br /><br /> [System Center Configuration Manager에서 작업을 자동화하는 작업 순서 관리](../../../../osd/deploy-use/manage-task-sequences-to-automate-tasks.md)<br /><br /> [System Center Configuration Manager에서 소프트웨어 업데이트 관리](/sccm/sum/understand/software-updates-introduction)|  
+|**배포**|다음 옵션이 표시됩니다.<br /><br /> - <br />                    **응용 프로그램** - 선택한 컬렉션에 대한 응용 프로그램 배포를 선택하고 구성할 수 있는 **소프트웨어 배포 마법사**를 엽니다.<br /><br /> - <br />                    **프로그램** – 선택한 컬렉션에 대한 패키지 및 프로그램 배포를 선택하고 구성할 수 있는 **소프트웨어 배포 마법사** 를 엽니다.<br /><br /> - **구성 기준** - 선택한 컬렉션에 하나 이상의 구성 기준 배포를 구성할 수 있는 **구성 기준 배포** 대화 상자를 엽니다.<br /><br /> - <br />                    **작업 순서** – 선택한 컬렉션에 대한 작업 시퀀스 배포를 선택하고 구성할 수 있는 **소프트웨어 배포 마법사** 를 엽니다.<br /><br /> - <br />                    **소프트웨어 업데이트** - 선택한 컬렉션의 리소스에 대해 소프트웨어 업데이트 배포를 구성할 수 있는 **소프트웨어 업데이트 배포 마법사**를 엽니다.|[System Center Configuration Manager에서 응용 프로그램을 배포하는 방법](../../../../apps/deploy-use/deploy-applications.md)<br /><br /> [System Center Configuration Manager의 패키지 및 프로그램](../../../../apps/deploy-use/packages-and-programs.md)<br /><br /> [System Center Configuration Manager에서 구성 기준을 배포하는 방법](../../../../compliance/deploy-use/deploy-configuration-baselines.md)<br /><br /> [System Center Configuration Manager에서 작업을 자동화하는 작업 순서 관리](../../../../osd/deploy-use/manage-task-sequences-to-automate-tasks.md)<br /><br /> [System Center Configuration Manager에서 소프트웨어 업데이트 관리](/sccm/sum/understand/software-updates-introduction)|  
 
 ## <a name="how-to-manage-user-collections"></a>사용자 컬렉션을 관리하는 방법  
  **자산 및 준수** 작업 영역에서 **사용자 컬렉션**을 선택하고 관리할 컬렉션을 선택한 다음 관리 작업을 선택합니다.  
@@ -69,7 +63,7 @@ ms.lasthandoff: 10/12/2017
 |**복사**|선택한 컬렉션의 복사본을 만듭니다. 새 컬렉션은 선택한 컬렉션을 제한 컬렉션으로 사용합니다.|추가 정보가 없습니다.|  
 |**삭제**|선택한 컬렉션을 삭제합니다. 사이트 데이터베이스에서 컬렉션의 모든 리소스를 삭제할 수도 있습니다.<br /><br /> Configuration Manager에 기본 제공된 컬렉션을 삭제할 수 없습니다.|기본 제공 컬렉션 목록을 보려면 [System Center Configuration Manager의 컬렉션 소개](../../../../core/clients/manage/collections/introduction-to-collections.md)를 참조하세요.|  
 |**배포 시뮬레이트**|**응용 프로그램 배포 시뮬레이트 마법사** 를 엽니다. 이 마법사를 통해 응용 프로그램을 설치하거나 제거하지 않고도 응용 프로그램 배포 결과를 테스트할 수 있습니다.|[System Center Configuration Manager에서 응용 프로그램 배포를 시뮬레이트하는 방법](../../../../apps/deploy-use/simulate-application-deployments.md)|  
-|**배포:**|다음 옵션이 표시됩니다.<br /><br /> - **응용 프로그램** - 선택한 컬렉션에 대한 응용 프로그램 배포를 선택하고 구성할 수 있는 **소프트웨어 배포 마법사**를 엽니다.<br /><br /> - <br />                    **프로그램** – 선택한 컬렉션에 대한 패키지 및 프로그램 배포를 선택하고 구성할 수 있는 **소프트웨어 배포 마법사** 를 엽니다.<br /><br /> - **구성 기준** - 선택한 컬렉션에 하나 이상의 구성 기준 배포를 구성할 수 있는 **구성 기준 배포** 대화 상자를 엽니다.|[System Center Configuration Manager에서 응용 프로그램을 배포하는 방법](../../../../apps/deploy-use/deploy-applications.md)<br /><br /> [System Center Configuration Manager의 패키지 및 프로그램](../../../../apps/deploy-use/packages-and-programs.md)<br /><br /> [System Center Configuration Manager에서 구성 기준을 배포하는 방법](../../../../compliance/deploy-use/deploy-configuration-baselines.md)|  
+|**배포**|다음 옵션이 표시됩니다.<br /><br /> - **응용 프로그램** - 선택한 컬렉션에 대한 응용 프로그램 배포를 선택하고 구성할 수 있는 **소프트웨어 배포 마법사**를 엽니다.<br /><br /> - <br />                    **프로그램** – 선택한 컬렉션에 대한 패키지 및 프로그램 배포를 선택하고 구성할 수 있는 **소프트웨어 배포 마법사** 를 엽니다.<br /><br /> - **구성 기준** - 선택한 컬렉션에 하나 이상의 구성 기준 배포를 구성할 수 있는 **구성 기준 배포** 대화 상자를 엽니다.|[System Center Configuration Manager에서 응용 프로그램을 배포하는 방법](../../../../apps/deploy-use/deploy-applications.md)<br /><br /> [System Center Configuration Manager의 패키지 및 프로그램](../../../../apps/deploy-use/packages-and-programs.md)<br /><br /> [System Center Configuration Manager에서 구성 기준을 배포하는 방법](../../../../compliance/deploy-use/deploy-configuration-baselines.md)|  
 
 ##  <a name="BKMK_CollProp"></a> 컬렉션 속성  
  컬렉션의 **속성** 대화 상자를 열면 컬렉션에 대한 다음 속성을 보고 구성할 수 있습니다.  
@@ -77,11 +71,11 @@ ms.lasthandoff: 10/12/2017
 |탭 이름|추가 정보|  
 |--------------|----------------------|  
 |**일반**|컬렉션 이름 및 제한 컬렉션을 비롯한 선택한 컬렉션에 대한 일반 정보를 보고 구성할 수 있습니다.|  
-|**멤버 관리 규칙**|이 컬렉션의 멤버 자격을 정의하는 멤버 관리 규칙을 구성할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 컬렉션을 만드는 방법](../../../../core/clients/manage/collections/create-collections.md)을 참조하세요.|  
-|**전원 관리**|선택한 컬렉션의 컴퓨터에 할당되는 전원 관리 계획을 구성할 수 있습니다. 자세한 내용은 [전원 관리 소개](../../../../core/clients/manage/power/introduction-to-power-management.md)를 참조하세요.|  
+|**멤버 관리 규칙**|이 컬렉션의 멤버 자격을 정의 하는 멤버 자격 규칙을 구성할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 컬렉션을 만드는 방법](../../../../core/clients/manage/collections/create-collections.md)을 참조하세요.|  
+|**전원 관리**|선택한 컬렉션에 있는 컴퓨터에 할당 되는 전원 관리 옵션을 구성할 수 있습니다. 자세한 내용은 [전원 관리 소개](../../../../core/clients/manage/power/introduction-to-power-management.md)를 참조하세요.|  
 |**배포**|선택한 컬렉션의 멤버에게 배포된 모든 소프트웨어를 표시합니다.|  
 |**유지 관리 기간**|선택한 컬렉션의 멤버에 적용되는 유지 관리 기간을 보고 구성할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 유지 관리 기간을 사용하는 방법](../../../../core/clients/manage/collections/use-maintenance-windows.md)을 참조하세요.|  
-|**컬렉션 변수**|이 컬렉션에 적용하고 작업 순서에서 사용할 수 있는 변수를 구성할 수 있습니다. 자세한 내용은 [작업 순서 기본 제공 변수](../../../../osd/understand/task-sequence-built-in-variables.md)를 참조하세요.|  
-|**배포 지점 그룹**|선택한 컬렉션의 멤버에 하나 이상의 배포 지점 그룹을 연결할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.|  
+|**컬렉션 변수**|이 컬렉션에 적용 하 고 작업 순서에서 사용할 수 있도록 변수를 구성할 수는 있습니다. 자세한 내용은 [작업 순서 기본 제공 변수](../../../../osd/understand/task-sequence-built-in-variables.md)를 참조하세요.|  
+|**배포 지점 그룹**|선택한 컬렉션의 멤버에 게 하나 이상의 배포 지점 그룹을 연결할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.|  
 |**보안**|연결된 역할 및 보안 범위에서 선택한 컬렉션에 대한 권한이 있는 관리자를 표시합니다.|  
 |**모니터**|클라이언트 상태와 Endpoint Protection에 대해 경고가 생성되는 때를 구성할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 클라이언트 상태를 구성하는 방법](../../../../core/clients/deploy/configure-client-status.md) 및 [System Center Configuration Manager에서 Endpoint Protection을 모니터링하는 방법](../../../../protect/deploy-use/monitor-endpoint-protection.md)을 참조하세요.|  

@@ -1,24 +1,19 @@
 ---
-title: "설치 마법사"
+title: 설치 마법사
 titleSuffix: Configuration Manager
-ms.custom: na
 ms.date: 7/24/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 1f703376-5f2c-4fd2-8209-7028c931ddc7
-caps.latest.revision: "3"
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 266b6ef8664b98d0bf15e20f8bf968b609dd607b
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: c15f59ababae6908a08c28d3ec8ad46075068d52
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="use-the-setup-wizard-to-install-system-center-configuration-manager-sites"></a>설치 마법사를 사용하여 System Center Configuration Manager 사이트를 설치할 수 있습니다.
 
@@ -280,7 +275,7 @@ ms.lasthandoff: 12/04/2017
 
     -   **사이트 이름**: 각 사이트에는 사이트를 식별하는 데 사용할 수 있는 이 식별 이름이 필요합니다.  
 
-    -   **설치 폴더:**Configuration Manager 설치의 폴더 경로입니다. 사이트가 설치된 후에는 위치를 변경할 수 없습니다. 경로에 유니코드 문자 또는 후행 공백을 포함할 수 없습니다.  
+    -   **설치 폴더:** Configuration Manager 설치의 폴더 경로입니다. 사이트가 설치된 후에는 위치를 변경할 수 없습니다. 경로에 유니코드 문자 또는 후행 공백을 포함할 수 없습니다.  
 
     > [!IMPORTANT]  
     > 이 페이지에서 세부 정보를 지정한 후 **요약**을 선택하여 나머지 보조 사이트 옵션에 대해 기본 설정을 사용하고 마법사의 **요약** 페이지로 직접 이동할 수 있습니다.  
@@ -359,7 +354,7 @@ ms.lasthandoff: 12/04/2017
 
     -   **드라이브 공간 예약(MB):** 이 설정에 구성하는 값에 따라 드라이브에 남아 있는 사용 가능한 공간의 양이 결정됩니다. 이 값에 도달하면 Configuration Manager에서 다른 드라이브를 선택하여 해당 드라이브로 복사 프로세스를 계속합니다. 콘텐츠 파일은 여러 드라이브에 걸쳐 있을 수 있습니다.  
 
-    -   **콘텐츠 위치**: 콘텐츠 라이브러리 및 패키지 공유에 대한 콘텐츠 위치를 지정합니다. Configuration Manager는 사용 가능한 공간의 용량이 **드라이브 공간 예약(MB)**에 지정된 값에 도달할 때까지 기본 콘텐츠 위치에 콘텐츠를 복사합니다.
+    -   **콘텐츠 위치**: 콘텐츠 라이브러리 및 패키지 공유에 대한 콘텐츠 위치를 지정합니다. Configuration Manager는 사용 가능한 공간의 용량이 **드라이브 공간 예약(MB)** 에 지정된 값에 도달할 때까지 기본 콘텐츠 위치에 콘텐츠를 복사합니다.
 
      기본적으로 콘텐츠 위치는 **자동**으로 설정됩니다. 기본 콘텐츠 위치는 설치 시 디스크 공간이 가장 많은 디스크 드라이브로 설정됩니다. 보조 위치는 사용 가능한 디스크 공간이 기본 드라이브 다음으로 많은 디스크 드라이브로 설정됩니다. 기본 및 보조 드라이브가 드라이브 예약 공간에 도달하면 Configuration Manager에서 사용 가능한 디스크 공간이 가장 많은 다른 가용 드라이브를 선택하여 복사 프로세스를 계속합니다.  
 

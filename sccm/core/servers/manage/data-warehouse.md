@@ -2,25 +2,19 @@
 title: 데이터 웨어하우스
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에 대한 데이터 웨어하우스 서비스 지점 및 데이터베이스
-ms.custom: na
 ms.date: 04/10/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: aaf43e69-68b4-469a-ad58-9b66deb29057
-caps.latest.revision: ''
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 02a3c672c95587aeecd41e804b32981104896923
-ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
+ms.openlocfilehash: 6d6e1850c07207205cad696918f7cd4eb97d3ec8
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 #  <a name="the-data-warehouse-service-point-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 데이터 웨어하우스 서비스 지점
 *적용 대상: System Center Configuration Manager(현재 분기)*

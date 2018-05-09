@@ -1,22 +1,20 @@
 ---
-title: "소프트웨어 업데이트 다운로드 "
+title: '소프트웨어 업데이트 다운로드 '
 titleSuffix: Configuration Manager
-description: "소프트웨어 업데이트 다운로드 마법사를 사용하여 소프트웨어 업데이트를 다운로드하고 배포 지점에 배포하여 클라이언트에 배포할 준비를 합니다."
-keywords: 
-author: dougeby
-ms.author: dougeby
-manager: angrobe
+description: 소프트웨어 업데이트 다운로드 마법사를 사용하여 소프트웨어 업데이트를 다운로드하고 배포 지점에 배포하여 클라이언트에 배포할 준비를 합니다.
+author: aczechowski
 ms.date: 01/23/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod: configuration-manager
-ms.service: 
 ms.technology: configmgr-sum
 ms.assetid: de78e8d3-043f-4cd3-97e0-4dfb824fd3fb
-ms.openlocfilehash: 534592d3f240aa647d49e2045aa83798e872b9a4
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 6c4aa062c79a1ed03d32b894ac6764d63c657ddb
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="download-software-updates"></a>소프트웨어 업데이트 다운로드  
 

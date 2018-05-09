@@ -2,26 +2,19 @@
 title: Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결
 titleSuffix: Configuration Manager
 description: Windows Defender 및 Endpoint Protection 문제를 해결하는 방법을 알아봅니다.
-ms.custom: na
 ms.date: 03/22/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-protect
+ms.topic: conceptual
 ms.assetid: d837253e-fcc2-422a-9e2c-c78b938dfd8c
-caps.latest.revision: 7
-caps.handback.revision: 0
-author: mestew
-ms.author: mstewart
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a8460cafce15e5fb97ace76983932841ec77412f
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 2a8f0e51e5808a691251e4d9acf38d70f2874508
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="troubleshooting-windows-defender-or-endpoint-protection-client"></a>Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결
 
@@ -117,7 +110,7 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 
     1.  **시작** 을 클릭하고  **cmd**을 검색한 후 **확인**을 클릭합니다.  
 
-    2.  **cd %windir%**을 입력한 다음 **Enter**키를 누릅니다.  
+    2.  **cd %windir%** 을 입력한 다음 **Enter**키를 누릅니다.  
 
     3.  **ren SoftwareDistribution SDTemp**을 입력한 다음 **Enter**키를 누릅니다.  
 
@@ -168,7 +161,7 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 ##  <a name="starting-windows-defender-or-endpoint-protection-service"></a>Windows Defender 또는 Endpoint Protection 서비스 시작  
  **증상**  
 
- 프로그램 서비스가 중지되어 **Windows Defender 또는 Endpoint Protection에서 컴퓨터를 모니터링하고 있지 않습니다. 지금 다시 시작해야 합니다.**라는 메시지가 표시됩니다. 
+ 프로그램 서비스가 중지되어 **Windows Defender 또는 Endpoint Protection에서 컴퓨터를 모니터링하고 있지 않습니다. 지금 다시 시작해야 합니다.** 라는 메시지가 표시됩니다. 
 
  **해결 방법**  
 

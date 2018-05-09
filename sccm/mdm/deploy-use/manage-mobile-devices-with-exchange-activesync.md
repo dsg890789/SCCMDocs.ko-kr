@@ -2,25 +2,19 @@
 title: '모바일 장치 관리 '
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에서 Exchange Server 커넥터를 사용하여 모바일 장치를 관리합니다.
-ms.custom: na
 ms.date: 03/05/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.technology: configmgr-hybrid
+ms.topic: conceptual
 ms.assetid: aba688d9-fd5b-4c42-8cb4-f7e1b161ef50
-caps.latest.revision: 8
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: 23073ff562e1ca533e196fff0415efc0451d6fee
-ms.sourcegitcommit: 27da4be015f1496b7b89ebddb517a2685f1ecf74
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 5bdc881d6d6423aa357cf8916f54f1b5f31120f2
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manage-mobile-devices-with-system-center-configuration-manager-and-exchange"></a>System Center Configuration Manager와 Exchange를 사용하여 모바일 장치 관리
 

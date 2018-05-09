@@ -1,43 +1,20 @@
 ---
-title: "1706에 대한 진단 데이터"
+title: 1706에 대한 진단 데이터
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 버전 1706에서 수집하는 진단 및 사용 현황 데이터에 대해 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager 버전 1706에서 수집하는 진단 및 사용 현황 데이터에 대해 알아봅니다.
 ms.date: 07/31/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 14ee4fb0-7790-45a6-906e-6e55627d4079
-caps.latest.revision: 
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- hu-hu
-- it-it
-- ja-jp
-- ko-kr
-- nl-nl
-- pl-pl
-- pt-br
-- pt-pt
-- ru-ru
-- sv-se
-- tr-tr
-- zh-cn
-- zh-tw
-ms.openlocfilehash: a69349d8373712a016e1165ab576b962ed58d7aa
-ms.sourcegitcommit: da27d37cc4e4e06cf23758846cdd7acb617f744b
+manager: dougeby
+ms.openlocfilehash: 0a855e332fe54779cc324ccf4fb2206a64b74110
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1706-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1706에 대한 진단 사용 현황 데이터 수집의 수준
 
@@ -45,7 +22,7 @@ ms.lasthandoff: 12/08/2017
 
 System Center Configuration Manager 버전 1706에서는 **기본**, **고급**, **전체** 등 세 가지 수준의 진단 및 사용 현황 데이터를 수집합니다. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
 
-이전 버전에서 변경된 내용은 ***[새로운 기능]***, ***[업데이트된 기능]***, ***[제거된 기능]*** 또는 ***[이동된 기능]***으로 표시됩니다.
+이전 버전에서 변경된 내용은 ***[새로운 기능]***, ***[업데이트된 기능]***, ***[제거된 기능]*** 또는 ***[이동된 기능]*** 으로 표시됩니다.
 
 
 > [!IMPORTANT]
@@ -80,7 +57,8 @@ System Center Configuration Manager 버전 1706에서 이 수준에는 다음이
 
 - 기본 OSD(운영 체제 배포) 개수(이미지)
 
-- ***[업데이트된 기능]*** 기본 사이트 시스템 서버 정보(사용되는 사이트 시스템 역할, 인터넷 및 SSL 상태, 운영 체제, 프로세서, 실제 또는 가상 컴퓨터, 사이트 서버 고가용성의 사용)
+- 
+  ***[업데이트된 기능]*** 기본 사이트 시스템 서버 정보(사용되는 사이트 시스템 역할, 인터넷 및 SSL 상태, 운영 체제, 프로세서, 실제 또는 가상 머신, 사이트 서버 고가용성의 사용)
 
 - Configuration Manager 데이터베이스 스키마(모든 개체 정의의 해시)
 

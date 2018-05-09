@@ -1,25 +1,20 @@
 ---
-title: "데이터 및 사이트 인프라 보호"
+title: 데이터 및 사이트 인프라 보호
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager를 사용하여 노출이나 악의적인 공격으로부터 조직의 리소스를 보호하는 방법에 대해 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager를 사용하여 노출이나 악의적인 공격으로부터 조직의 리소스를 보호하는 방법에 대해 알아봅니다.
 ms.date: 11/27/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-protect
+ms.topic: conceptual
 ms.assetid: 2117f786-d521-4790-9e8d-ec096c63c9d7
-caps.latest.revision: "8"
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.openlocfilehash: 925842a19f79e3674e988ea03661dfec36ba7145
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: e76a16fab84f5ccfcd71af4bc80913e31acdadd9
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="protect-data-and-site-infrastructure-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 데이터 및 사이트 인프라 보호
 

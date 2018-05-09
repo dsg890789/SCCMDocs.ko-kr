@@ -1,26 +1,20 @@
 ---
-title: "구성 기준에 대한 일반 작업 "
+title: '구성 기준에 대한 일반 작업 '
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 구성 기준을 만들고 배포하는 방법을 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager 구성 기준을 만들고 배포하는 방법을 알아봅니다.
 ms.date: 07/12/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-compliance
+ms.topic: conceptual
 ms.assetid: 4bb6afeb-d267-4f9b-ade2-26e5400c223b
-caps.latest.revision: "6"
-caps.handback.revision: "0"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: 50f7bdf4dc537f734864304d96566347e6341de6
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: bd76ecfcd4f5731e7fa078a00e79fdc6ab91ffa4
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="common-tasks-for-creating-and-deploying-configuration-baselines-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 구성 기준을 만들고 배포하기 위한 일반 작업
 

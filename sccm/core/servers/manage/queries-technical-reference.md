@@ -1,25 +1,20 @@
 ---
-title: "기술 참조 조회"
+title: 기술 참조 조회
 titleSuffix: Configuration Manager
-description: "쿼리를 사용하여 사이트의 리소스 정보를 검색하려면 항목 목록을 참조하세요."
-ms.custom: na
+description: 쿼리를 사용하여 사이트의 리소스 정보를 검색하려면 항목 목록을 참조하세요.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 727bca0d-6458-48dc-9a63-3b66d9799ddb
-caps.latest.revision: "4"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: 745148bb84b5090b2c8d46100fc374cc6c341557
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 46f6bdefa2bd59ee1488c00dc1c2150608d0575d
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="queries-technical-reference-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 쿼리 기술 참조
 

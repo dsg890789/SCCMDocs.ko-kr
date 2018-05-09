@@ -1,25 +1,20 @@
 ---
-title: "장치 등록 관리자를 사용하여 장치 등록 "
+title: '장치 등록 관리자를 사용하여 장치 등록 '
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager와 장치 등록 관리자 계정을 사용하여 회사 소유 장치를 등록합니다."
-ms.custom: na
+description: System Center Configuration Manager와 장치 등록 관리자 계정을 사용하여 회사 소유 장치를 등록합니다.
 ms.date: 09/08/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 2905f26e-7859-497d-b995-5ff48261efa2
-caps.latest.revision: "8"
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.openlocfilehash: edfda4c65ac42c228b80015653678af0dbad8da3
-ms.sourcegitcommit: 1132886e07d0c0a87dcc7eeef4577dd8d8840023
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 9a691bc98a26cdf56d22c03840997d9e0a380b7b
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="enroll-devices-with-device-enrollment-manager-with-configuration-manager"></a>Configuration Manager와 장치 등록 관리자를 사용하여 장치 등록
 

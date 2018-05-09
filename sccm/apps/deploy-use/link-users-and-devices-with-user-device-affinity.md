@@ -1,26 +1,20 @@
 ---
-title: "사용자 장치 선호도를 사용하여 사용자와 장치 연결"
+title: 사용자 장치 선호도를 사용하여 사용자와 장치 연결
 titleSuffix: Configuration Manager
-description: "사용자 및 장치를 사용자 장치 선호도에 연결하고 사용자와 연결된 모든 장치에 앱을 자동으로 배포합니다."
-ms.custom: na
+description: 사용자 및 장치를 사용자 장치 선호도에 연결하고 사용자와 연결된 모든 장치에 앱을 자동으로 배포합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-app
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 5b30b0d5-722d-4d4b-9ed7-5a43de315461
-caps.latest.revision: "7"
-caps.handback.revision: "0"
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
-ms.openlocfilehash: 1066028d0cd20521d78780ae2fdfbce91a0860b2
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 40bab1725b074bc549eeb9e9764ab8a1dd8b83e7
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="link-users-and-devices-with-user-device-affinity-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사용자 장치 선호도를 사용하여 사용자와 장치 연결
 
@@ -85,7 +79,7 @@ System Center Configuration Manager(Configuration Manager)의 사용자 장치 �
     -   **사용량 데이터에서 사용자 장치 선호도 자동 구성**. 사이트에서 사용자 장치 선호도를 자동으로 만들 수 있도록 하려면 드롭다운 목록에서 **True**를 선택합니다. **False**를 선택할 경우 모든 사용자 장치 선호도 할당을 승인해야 합니다.  
 
     > [!TIP]  
-    > **예:** **사용자 장치 선호도 사용량 임계값(분)**을 **60**분으로 설정하고 **사용자 장치 선호도 사용량 임계값(일)**을 **5**일로 설정할 경우 사용자가 5일간 60분 이상 장치를 사용해야만 사용자 장치 선호도가 자동으로 만들어집니다.  
+    > **예:** **사용자 장치 선호도 사용량 임계값(분)** 을 **60**분으로 설정하고 **사용자 장치 선호도 사용량 임계값(일)** 을 **5**일로 설정할 경우 사용자가 5일간 60분 이상 장치를 사용해야만 사용자 장치 선호도가 자동으로 만들어집니다.  
 
 자동 사용자 장치 선호도가 만들어진 후에는 Configuration Manager에서 사용자 장치 선호도 임계값을 계속 모니터링합니다. 사용자의 장치 사용량이 설정한 임계값 미만으로 떨어질 경우 사용자 장치 선호도가 제거됩니다. 예를 들어 사용자가 주말에 로그온하지 않는 동안 자동으로 구성된 사용자 장치 선호도가 제거되는 상황을 방지하려면 **사용자 장치 선호도 사용량 임계값(일)** 값을 **7**일 이상으로 설정합니다.  
 

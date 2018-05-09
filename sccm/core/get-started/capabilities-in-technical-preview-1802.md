@@ -1,25 +1,20 @@
 ---
 title: Technical Preview 1802 | Microsoft Docs
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager용 Technical Preview 버전 1802에서 사용 가능한 기능에 대해 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager용 Technical Preview 버전 1802에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 02/09/2018
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: 4884a2d3-13ce-44e5-88c4-a66dc7ec6014
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 162c47d867e78498650da685327c0fe296aa2eda
-ms.sourcegitcommit: b1fa7be6a6fa5bb7c49e90c0e28a21ba8b41c842
+ms.openlocfilehash: c960ee37e5f4b7b3b644afd06a04c2747cc1f1eb
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="capabilities-in-technical-preview-1802-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1802의 기능
 

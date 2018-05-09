@@ -2,26 +2,19 @@
 title: SharePoint Online 액세스 관리
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager SharePoint Online 조건부 액세스 정책을 사용하여 OneDrive에 대한 액세스를 관리하는 방법을 알아봅니다.
-ms.custom: na
 ms.date: 12/09/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-hybrid
+ms.topic: conceptual
 ms.assetid: 49cec466-1676-4fe2-a2fe-5004f01d735e
-caps.latest.revision: 11
-caps.handback.revision: 0
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.openlocfilehash: ac696941e701dd5d42500b2811bec136e64a28fe
-ms.sourcegitcommit: a19e12d5c3198764901d44f4df7c60eb542e765f
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: f723110abdb94dd96fb2ed7f52af681d27fccf87
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manage-sharepoint-online-access-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 SharePoint Online 액세스 관리
 

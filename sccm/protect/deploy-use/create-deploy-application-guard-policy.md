@@ -1,26 +1,20 @@
 ---
 title: Windows Defender Application Guard 정책 만들기 및 배포
-titleSuffix: System Center Configuration Manager
+titleSuffix: Configuraton Manager
 description: Windows Defender Application Guard 정책을 만들고 배포합니다.
-ms.custom: na
 ms.date: 03/22/2018
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ''
-caps.latest.revision: 5
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 3f122dc7ba1bce5aaf8fe0ac6e4c75165a9b5a0b
-ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
+ms.technology: configmgr-protect
+ms.topic: conceptual
+ms.assetid: 33a6c1d9-4dd8-411c-a748-693a5bd2ea5a
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: e7f0a1ccb71abb2fec27e0430bd4195dc85aceae
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-and-deploy-windows-defender-application-guard-policy"></a>Windows Defender Application Guard 정책 만들기 및 배포 
 *적용 대상: System Center Configuration Manager(현재 분기)*

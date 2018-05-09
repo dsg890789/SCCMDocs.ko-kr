@@ -1,25 +1,20 @@
 ---
 title: SQL Server Always On
 titleSuffix: Configuration Manager
-description: "SCCM에서 SQL Server Always On 가용성 그룹 사용 계획"
-ms.custom: na
+description: SCCM에서 SQL Server Always On 가용성 그룹 사용 계획
 ms.date: 12/27/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: 58d52fdc-bd18-494d-9f3b-ccfc13ea3d35
-caps.latest.revision: "16"
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 7efd0c76a0723a98661b0861eb16298eee524f35
-ms.sourcegitcommit: f1535281b2c3fecff773b722c3f7590bf6ba10a0
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: c151ca0199a1623c85f353012e50f13d8f5b6068
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="prepare-to-use-sql-server-always-on-availability-groups-with-configuration-manager"></a>Configuration Manager에서 SQL Server Always On 가용성 그룹 사용 준비
 
@@ -247,9 +242,9 @@ Configuration Manager 버전 1610 이전에서는 SQL Server의 가용성 그룹
 사이트 데이터베이스의 복구 모델을 **전체**(가용성 그룹에서 사용하는 데 필요)로 설정해야 합니다. 이 구성을 사용하는 경우 사이트 데이터베이스 트랜잭션 로그의 크기를 모니터링하고 유지하도록 계획합니다. 전체 복구 모델에서 데이터베이스 또는 트랜잭션 로그의 전체 백업이 생성될 때까지 트랜잭션은 확정되지 않습니다. 자세한 내용은 SQL Server 설명서의 [SQL Server 데이터베이스의 백업 및 복원](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases)을 참조하세요.
 
 ## <a name="changes-for-site-recovery"></a>사이트 복구 변경 내용
-가용성 그룹의 노드 하나 이상이 계속 작동하는 경우 사이트 복구 옵션인 **데이터베이스 복구 건너뛰기(사이트 데이터베이스가 영향을 받지 않는 경우 이 옵션 사용)**를 사용할 수 있습니다.
+가용성 그룹의 노드 하나 이상이 계속 작동하는 경우 사이트 복구 옵션인 **데이터베이스 복구 건너뛰기(사이트 데이터베이스가 영향을 받지 않는 경우 이 옵션 사용)** 를 사용할 수 있습니다.
 
- 가용성 그룹의 모든 노드가 손실된 경우 사이트를 복구하려면 먼저 가용성 그룹을 다시 만들어야 합니다. Configuration Manager에서 가용성 노드를 다시 작성하거나 복원할 수 없습니다. 백업을 복원하고 다시 구성하여 그룹을 다시 만든 후 사이트 복구 옵션인 **데이터베이스 복구 건너뛰기(사이트 데이터베이스가 영향을 받지 않는 경우 이 옵션 사용)**를 사용할 수 있습니다.
+ 가용성 그룹의 모든 노드가 손실된 경우 사이트를 복구하려면 먼저 가용성 그룹을 다시 만들어야 합니다. Configuration Manager에서 가용성 노드를 다시 작성하거나 복원할 수 없습니다. 백업을 복원하고 다시 구성하여 그룹을 다시 만든 후 사이트 복구 옵션인 **데이터베이스 복구 건너뛰기(사이트 데이터베이스가 영향을 받지 않는 경우 이 옵션 사용)** 를 사용할 수 있습니다.
 
 자세한 내용은 [System Center Configuration Manager 백업 및 복구](/sccm/protect/understand/backup-and-recovery)를 참조하세요.
 

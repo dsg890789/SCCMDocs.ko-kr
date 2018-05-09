@@ -2,25 +2,19 @@
 title: 응용 프로그램에 대한 관리 작업
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager 응용 프로그램 및 배포 유형을 관리합니다.
-ms.custom: na
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-app
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-app
+ms.topic: conceptual
 ms.assetid: c4041e21-21ff-4d95-ab05-14007e0047cf
-caps.latest.revision: 8
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
-ms.openlocfilehash: 8d4cc2cd8de9626b6911dc50dbdec2ccdaada94c
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 4cc6c423880850b40d67d35e990982583c39e54e
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="management-tasks-for-system-center-configuration-manager-applications"></a>System Center Configuration Manager 응용 프로그램에 대한 관리 작업
 

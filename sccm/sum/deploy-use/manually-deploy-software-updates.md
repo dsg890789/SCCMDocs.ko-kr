@@ -1,22 +1,20 @@
 ---
-title: "소프트웨어 업데이트 수동 배포"
+title: 소프트웨어 업데이트 수동 배포
 titleSuffix: Configuration Manager
-description: "업데이트를 수동으로 배포하려면 Configuration Manager 콘솔에서 업데이트를 선택하고 수동으로 배포하거나, 업데이트 그룹에 업데이트를 추가하고 그룹을 배포합니다."
-keywords: 
-author: dougeby
-ms.author: dougeby
-manager: angrobe
+description: 업데이트를 수동으로 배포하려면 Configuration Manager 콘솔에서 업데이트를 선택하고 수동으로 배포하거나, 업데이트 그룹에 업데이트를 추가하고 그룹을 배포합니다.
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.date: 12/07/2016
-ms.topic: article
+ms.topic: conceptual
 ms.prod: configuration-manager
-ms.service: 
 ms.technology: configmgr-sum
 ms.assetid: 57184274-5fea-4d79-a2b4-22e08ed26daf
-ms.openlocfilehash: becab57c5f04bb67512d665175038f6c477b65b1
-ms.sourcegitcommit: e13bb2c86c40a88e5f4602beb1d31e4adc90e099
+ms.openlocfilehash: 3f79da78df10e97813b221ffca3df25396591fbc
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 #  <a name="BKMK_ManualDeploy"></a> 소프트웨어 업데이트 수동 배포  
 

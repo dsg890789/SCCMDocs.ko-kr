@@ -2,25 +2,19 @@
 title: 준수 설정 시작
 titleSuffix: Configuration Manager
 description: 핵심 개념 및 준수 설정의 작동 방법에 대해 알아보기
-ms.custom: na
 ms.date: 03/22/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.technology: configmgr-compliance
+ms.topic: conceptual
 ms.assetid: a2742d52-851e-4abc-b623-d12d91684c0b
-caps.latest.revision: 11
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a8f672d4d92db8f1bd6e19c4a483b5b3107ad703
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: ec350bdb6b3b421d95bf13eafc562919bccc3c38
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="get-started-with-compliance-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 준수 설정 시작
 

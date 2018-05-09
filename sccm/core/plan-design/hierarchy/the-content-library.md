@@ -1,25 +1,20 @@
 ---
-title: "콘텐츠 라이브러리"
+title: 콘텐츠 라이브러리
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 배포된 콘텐츠의 전체 크기를 줄이는 데 사용하는 콘텐츠 라이브러리에 대해 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager에서 배포된 콘텐츠의 전체 크기를 줄이는 데 사용하는 콘텐츠 라이브러리에 대해 알아봅니다.
 ms.date: 2/14/2017
-ms.reviewer: na
-ms.suite: na
 ms.prod: configuration-manager
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 65c88e54-3574-48b0-a127-9cc914a89dca
-caps.latest.revision: "4"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: 9951a6562a86fbbf7f705989724d2d8c9c36cca0
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+manager: dougeby
+ms.openlocfilehash: df34c2c8ecb0f906657d1bbc2e49c87a5ff93e15
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="the-content-library-in-system-center-configuration-manager"></a>System Center Configuration Manager의 콘텐츠 라이브러리
 

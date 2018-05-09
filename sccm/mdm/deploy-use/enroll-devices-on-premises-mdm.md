@@ -1,25 +1,20 @@
 ---
-title: "장치 등록 "
+title: '장치 등록 '
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 위해 장치를 등록하는 방법을 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 위해 장치를 등록하는 방법을 알아봅니다.
 ms.date: 03/05/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: b58472e3-31a5-4305-8eb6-2522befebe02
-caps.latest.revision: "6"
-author: dougeby
-ms.author: dougeby
-manager: angrobe
-ms.openlocfilehash: aa1f085689f2d7d752f2887f9cbac5b8f642785e
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 7e3254fdad766260e3e162378894526e9b4a7249
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="enroll-devices-for-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 위한 장치 등록
 

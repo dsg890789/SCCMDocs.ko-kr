@@ -1,27 +1,20 @@
 ---
-title: "인증서 세부 정보를 가져와 PFX 인증서 프로필 만들기"
+title: 인증서 세부 정보를 가져와 PFX 인증서 프로필 만들기
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 PFX 파일을 사용하여 암호화된 데이터 교환을 지원하기 위한 사용자별 인증서를 생성하는 방법을 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager에서 PFX 파일을 사용하여 암호화된 데이터 교환을 지원하기 위한 사용자별 인증서를 생성하는 방법을 알아봅니다.
 ms.date: 04/04/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-hybrid
+ms.topic: conceptual
 ms.assetid: e3bb3e13-3037-4122-93bc-504bfd080a4d
-caps.latest.revision: 
-caps.handback.revision: 
-author: lleonard-msft
-ms.author: alleonar
-manager: angrobe
-ms.openlocfilehash: 25c6927698e409ff3b0c3f846e2cc567a6f458ab
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 81847846efe99bbc3ad5f0ff5a074b393c8b140a
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-create-pfx-certificate-profiles-by-importing-certificate-details"></a>인증서 세부 정보를 가져와 PFX 인증서 프로필을 만드는 방법
 

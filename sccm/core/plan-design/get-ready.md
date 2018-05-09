@@ -1,26 +1,18 @@
 ---
-title: "배포 준비 완료"
+title: 배포 준비 완료
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 배포를 계획할 수 있도록 하는 항목을 찾습니다."
-ms.custom: na
+description: System Center Configuration Manager 배포를 계획할 수 있도록 하는 항목을 찾습니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 3e839a3e-e476-4ec2-bf29-21e78180441d
-caps.latest.revision: "6"
-caps.handback.revision: "0"
-author: mstewart
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: cdcb91e97d5663aea55a8201546c66683e1d4d97
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+author: aczechowski
+ms.openlocfilehash: b315cfcbfd9ff6b40bdf9547611a38d75863cfb4
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="get-ready-for-system-center-configuration-manager"></a>System Center Configuration Manager 준비
 

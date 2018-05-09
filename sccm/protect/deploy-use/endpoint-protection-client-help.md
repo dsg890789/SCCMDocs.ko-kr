@@ -1,25 +1,20 @@
 ---
-title: "Endpoint Protection 클라이언트 도움말"
+title: Endpoint Protection 클라이언트 도움말
 titleSuffix: Configuration Manager
-description: "위협으로부터 컴퓨터를 보다 효과적으로 보호할 수 있는 Endpoint Protection의 기능과 향상된 기능에 대해 알아봅니다."
-ms.custom: na
+description: 위협으로부터 컴퓨터를 보다 효과적으로 보호할 수 있는 Endpoint Protection의 기능과 향상된 기능에 대해 알아봅니다.
 ms.date: 02/14/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-protect
+ms.topic: conceptual
 ms.assetid: fdcee455-22e3-451d-bcf3-e7b62792f04a
-caps.latest.revision: "6"
-author: NathBarn
-ms.author: nathbarn
-manager: angrobe
-ms.openlocfilehash: 50b9e5c89776c57a5f1605d38f6fbbee7ecd833e
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 580218b701b01af388b56bbd2b7293f67cf5d77d
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="endpoint-protection-client-help"></a>Endpoint Protection 클라이언트 도움말
 

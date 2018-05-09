@@ -1,25 +1,20 @@
 ---
-title: "새 버전 1610"
+title: 새 버전 1610
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 버전 1610에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다."
-ms.custom: na
+description: System Center Configuration Manager 버전 1610에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.
 ms.date: 11/23/2016
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f7eb0803-3f8f-4ab6-825a-99ac11f5ba7d
-caps.latest.revision: "40"
-author: mestew
-ms.author: mstewart
-manager: angrobe
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e3dac4ceb08c15c1eaeef0a6006ebcc6eccff49c
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: 9bb046cd08e4e9d8cff6e34ea88ce8e582e2c863
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="what39s-new-in-version-1610-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1610의 새로운 기능
 
@@ -134,7 +129,7 @@ System Center Configuration Manager 현재 분기의 업데이트 1610은 버전
 간혹 설정한 기한 이후에도 필수 응용 프로그램 배포 또는 소프트웨어 업데이트를 설치할 수 있는 시간을 사용자에게 더 제공하려는 경우가 있습니다. 예를 들어 컴퓨터가 오랫동안 꺼져 있었거나 많은 응용 프로그램 또는 업데이트 배포를 설치해야 할 때 이런 조치가 필요할 수 있습니다. 예를 들어 최종 사용자가 휴가에서 막 돌아온 경우 지연된 응용 프로그램 배포를 설치하는 데 너무 오래 기다려야 할 수 있습니다. 이 문제를 해결하기 위해 이제 컬렉션에 Configuration Manager 클라이언트 설정을 배포하여 유예 기간 적용을 정의할 수 있습니다. 
 
 유예 기간을 구성하려면 다음 작업을 수행합니다.
-1.      클라이언트 설정의 **컴퓨터 에이전트** 페이지에서 새 속성, **배포 최종 기한 이후 적용 유예 기간(시간)**을 **1**시간에서 **120**시간 사이의 값으로 구성합니다.
+1.      클라이언트 설정의 **컴퓨터 에이전트** 페이지에서 새 속성, **배포 최종 기한 이후 적용 유예 기간(시간)** 을 **1**시간에서 **120**시간 사이의 값으로 구성합니다.
 2.      새 필수 응용 프로그램 배포 또는 기존 배포 속성의 **일정** 페이지에서 클라이언트 설정에 정의된 유예 기간까지 **이 배포의 적용을 사용자 기본 설정에 따라 연기** 확인란을 선택합니다. 이 확인란이 선택되고 클라이언트 설정도 배포된 대상 장치의 모든 배포에서 유예 기간 적용을 사용합니다.
 
 유예 기간 적용을 구성하고 확인란을 선택하면 응용 프로그램 설치 마감일에 도달한 후 사용자가 해당 유예 기간에 구성한 첫 번째 업무 외 시간에서 응용 프로그램이 설치됩니다. 하지만 여전히 사용자가 소프트웨어 센터를 열고 언제든지 원하는 응용 프로그램을 설치할 수 있습니다. 유예 기간이 만료되면 지연 배포에 대한 일반적인 동작이 적용됩니다. 소프트웨어 업데이트 배포 마법사, 자동 배포 규칙 마법사 및 속성 페이지에 비슷한 옵션이 추가되었습니다.

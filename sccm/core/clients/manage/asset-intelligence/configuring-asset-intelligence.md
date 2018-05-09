@@ -1,26 +1,20 @@
 ---
-title: "Asset Intelligence 구성"
+title: Asset Intelligence 구성
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 Asset Intelligence를 설정합니다."
-ms.custom: na
+description: System Center Configuration Manager에서 Asset Intelligence를 설정합니다.
 ms.date: 2/22/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: 08e0382d-de05-4a76-ba5c-7223173f7066
-caps.latest.revision: "7"
-caps.handback.revision: "0"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: d6137426c4960d0e9a9117fc78d3f26803b4f001
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 182006f0e4fcaf2304570ef4110527a61180c290
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-asset-intelligence-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Asset Intelligence 구성
 
@@ -60,7 +54,7 @@ Asset Intelligence는 소프트웨어 라이선스 사용을 인벤토리에 포
 
 3.  **홈** 탭의 **속성** 그룹에서 **속성**을 선택합니다.   
 
-4.  **하드웨어 인벤토리** > **클래스 설정**을 선택합니다. .  
+4.  **하드웨어 인벤토리** > **클래스 설정**을 선택합니다. 을 참조하세요.  
 
 5.  **범주별 필터링** > **Asset Intelligence 보고 클래스**를 선택합니다. 클래스의 목록은 Asset Intelligence 하드웨어 인벤토리 보고 클래스로만 새로 고쳐집니다.  
 

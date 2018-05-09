@@ -2,26 +2,19 @@
 title: Azure AD를 사용하여 클라이언트 설치
 titleSuffix: Configuration Manager
 description: 인증을 위해 Azure Active Directory를 사용하여 Windows 10 장치에서 Configuration Manager 클라이언트 설치 및 할당
-ms.custom: na
 ms.date: 03/28/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-app
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-client
+ms.topic: conceptual
 ms.assetid: a44006eb-8650-49f6-94e1-18fa0ca959ee
-caps.latest.revision: 14
-caps.handback.revision: 0
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 12fc1b394ae98c2b384630f4a00e4239e4e8d9d6
-ms.sourcegitcommit: aed99ba3c5e9482199cb3fc5c92f6f3a160cb181
+ms.openlocfilehash: 91ebb0c35687b231a6f08b7bc92cccb83cf0e602
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-and-assign-configuration-manager-windows-10-clients-using-azure-ad-for-authentication"></a>인증을 위해 Azure AD를 사용하여 Configuration Manager Windows 10 클라이언트 설치 및 할당
 

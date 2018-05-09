@@ -2,26 +2,19 @@
 title: 유지 관리 작업에 대한 참조
 titleSuffix: Configuration Manager
 description: 각 System Center Configuration Manager 사이트 유지 관리 작업에 대한 세부 정보와 이러한 작업이 기본적으로 사용되는지 여부를 알아봅니다.
-ms.custom: na
 ms.date: 3/8/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: 68dc6acd-5848-47a4-b4c1-ffa40e47890b
-caps.latest.revision: 16
-caps.handback.revision: 0
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 21b5e47efd2678f78fe7b7c0e10524ec7141634d
-ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 5492382afdb523846fcdd40b68d498730073eb7e
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="reference-for-maintenance-tasks-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 유지 관리 작업 참조
 

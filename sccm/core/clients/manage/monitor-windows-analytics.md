@@ -2,25 +2,19 @@
 title: Windows Analytics로 클라이언트 모니터링
 titleSuffix: Configuration Manager
 description: Windows Analytics는 Operations Management Suite에서 실행되는 솔루션 모음으로, 사용자 환경의 장치에서 보고되는 Windows 원격 분석 데이터를 활용하여 사용자 환경의 현재 상태에 대한 귀중한 정보를 얻을 수 있도록 합니다.
-ms.custom: na
 ms.date: 01/02/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-client
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-client
+ms.topic: conceptual
 ms.assetid: CF35CE87-3BA8-4A84-9BC8-ABCEA4666212
-caps.latest.revision: 23
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: 15b1d07f35f774f3ec8f082a86c90ecb989a438e
-ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
+manager: dougeby
+ms.openlocfilehash: e792f421520798a0e000384aafcb99f31dc8eb14
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="use-windows-analytics-with-configuration-manager"></a>Configuration Manager에서 Windows Analytics 사용
 
@@ -48,7 +42,7 @@ Windows Analytics를 구성하려면 Configuration Manager 콘솔에서 **관리
 각 Windows 10 원격 분석 수준에 대한 자세한 내용은 [조직에서 Windows 원격 분석 구성](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#telemetry-levels)을 참조하세요.
 
    > [!Note]
-   > 1710 업데이트를 사용하면 Windows 10 원격 분석 데이터 수집 수준을 **고급(제한적)**으로 설정할 수 있습니다. 이 설정을 사용하면 Windows 10 버전 1709 이상을 사용하여 **고급** 원격 분석 수준의 모든 데이터를 보고하는 장치가 없는 환경에서 장치에 대해 조치 가능한 통찰력을 얻을 수 있습니다. 고급(제한적) 원격 분석 수준에는 Windows Analytics와 관련된 고급 수준에서 수집된 데이터 하위 집합뿐 아니라 기본 레벨의 메트릭도 포함됩니다.
+   > 1710 업데이트를 사용하면 Windows 10 원격 분석 데이터 수집 수준을 **고급(제한적)** 으로 설정할 수 있습니다. 이 설정을 사용하면 Windows 10 버전 1709 이상을 사용하여 **고급** 원격 분석 수준의 모든 데이터를 보고하는 장치가 없는 환경에서 장치에 대해 조치 가능한 통찰력을 얻을 수 있습니다. 고급(제한적) 원격 분석 수준에는 Windows Analytics와 관련된 고급 수준에서 수집된 데이터 하위 집합뿐 아니라 기본 레벨의 메트릭도 포함됩니다.
 
 
   -  **Windows 7, 8 및 8.1 장치에서 상용 데이터 수집에 옵트인**   

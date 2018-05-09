@@ -1,24 +1,20 @@
 ---
-title: "기술 미리 보기 1704의 기능"
+title: 기술 미리 보기 1704의 기능
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager용 Technical Preview 버전 1704에서 사용 가능한 기능에 대해 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager용 Technical Preview 버전 1704에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 4/21/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: e318e705-20f2-417d-8cde-7dfe661b2fa7
-author: erikje
-ms.author: erikje
-manager: angrobe
-ms.openlocfilehash: 9151d2e60bbdc3ac4c34bde17f02fc956cb005b1
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: b86b1a4b8400be29f9b4c468c280fdd0a47385c3
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="capabilities-in-technical-preview-1704-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1704의 기능
 

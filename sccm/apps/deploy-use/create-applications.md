@@ -2,26 +2,19 @@
 title: 응용 프로그램 만들기
 titleSuffix: Configuration Manager
 description: 배포 유형, 검색 방법 및 소프트웨어를 설치할 요구 사항으로 응용 프로그램을 만듭니다.
-ms.custom: na
 ms.date: 03/22/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-app
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-app
+ms.topic: conceptual
 ms.assetid: cc230ff4-7056-4339-a0a6-6a44cdbb2857
-caps.latest.revision: 14
-caps.handback.revision: 0
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2569625daaf9a3e10dea26d86b01e10cacae0181
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: c9b90dfcc0916f62905af777e45222ceebf8300f
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 만들기
 
@@ -65,7 +58,7 @@ Configuration Manager 응용 프로그램에는 하나 이상의 배포 유형�
 3.  **위치** 상자에서 *\\\\서버\\공유\\\파일 이름* 형식의 UNC 경로를 지정하거나 응용 프로그램 정보를 검색하는 데 사용할 응용 프로그램 설치 파일의 스토어 링크를 지정합니다. 또는 **찾아보기** 를 클릭하여 설치 파일을 찾습니다.  
 
     > [!IMPORTANT]  
-    >  응용 프로그램 유형으로 **Windows Installer(\*.msi 파일)**를 선택하면 지정한 폴더의 모든 파일을 가져와서 배포 지점으로 보냅니다. 지정한 폴더에는 응용 프로그램을 설치하는 데 필요한 파일만 있어야 합니다. Configuration Manager는 응용 프로그램 패키지의 응용 프로그램 파일을 최대 20,000개까지 지원하는 것으로 확인되었습니다. 응용 프로그램에 이보다 많은 파일이 포함되어 있으면 더 적은 개수의 파일로 여러 응용 프로그램을 만드는 것이 좋습니다.  
+    >  응용 프로그램 유형으로 **Windows Installer(\*.msi 파일)** 를 선택하면 지정한 폴더의 모든 파일을 가져와서 배포 지점으로 보냅니다. 지정한 폴더에는 응용 프로그램을 설치하는 데 필요한 파일만 있어야 합니다. Configuration Manager는 응용 프로그램 패키지의 응용 프로그램 파일을 최대 20,000개까지 지원하는 것으로 확인되었습니다. 응용 프로그램에 이보다 많은 파일이 포함되어 있으면 더 적은 개수의 파일로 여러 응용 프로그램을 만드는 것이 좋습니다.  
 
     >  응용 프로그램이 포함된 UNC 경로와 응용 프로그램 콘텐츠가 포함된 하위 폴더에 대한 액세스 권한이 있어야 합니다.  
 
@@ -239,7 +232,7 @@ Configuration Manager 콘솔의 **응용 프로그램** 노드에 새 응용 프
         > [!NOTE]  
         >  **파일 시스템** 설정 유형을 사용할 경우 경로 필드에서 UNC 경로를 네트워크 공유로 지정할 수 없습니다. 클라이언트 장치에 있는 로컬 경로만 지정할 수 있습니다.  
         >   
-        >  지정된 파일 또는 폴더에 대한 32비트 파일 위치를 확인하려면 먼저 **이 파일 또는 폴더가 64비트 시스템에서 32비트 응용 프로그램과 연결되어 있습니다.**를 선택합니다. 파일 또는 폴더를 찾을 수 없으면 64비트 위치가 검색됩니다.  
+        >  지정된 파일 또는 폴더에 대한 32비트 파일 위치를 확인하려면 먼저 **이 파일 또는 폴더가 64비트 시스템에서 32비트 응용 프로그램과 연결되어 있습니다.** 를 선택합니다. 파일 또는 폴더를 찾을 수 없으면 64비트 위치가 검색됩니다.  
 
     -   **레지스트리**: 지정된 레지스트리 키 또는 레지스트리 값이 클라이언트 장치에 있는지 여부를 검색합니다. 이 검색은 응용 프로그램이 설치되었음을 나타냅니다.  
 
@@ -496,7 +489,7 @@ Configuration Manager 콘솔의 **응용 프로그램** 노드에 새 응용 프
 |**Android용 앱 패키지(\*.apk 파일)**|Android 앱 패키지 파일에서 배포 유형을 만듭니다.|  
 |**Google Play의 Android용 앱 패키지**|Google Play의 앱에 대한 링크를 지정하여 배포 유형을 만듭니다.|  
 |**Mac OS X**|CMAppUtil 도구를 사용하여 만든 .cmmac 파일에서 Mac 컴퓨터의 배포 유형을 만듭니다.<br /><br /> Configuration Manager 클라이언트를 실행하는 Mac 컴퓨터에만 적용됩니다.|  
-|**웹 응용 프로그램**|웹 응용 프로그램에 대한 링크를 지정하는 배포 유형을 만듭니다. 배포 유형은 사용자 장치의 웹 응용 프로그램에 대한 바로 가기를 설치합니다.<br /><br /> iOS 또는 Android 장치에 Microsoft Intune 관리 브라우저를 설치한 경우 사용자가 앱을 여는 데 관리 브라우저만을 사용하도록 할 수 있습니다. 앱에 대한 링크를 지정할 때 **http:**를 **http-intunemam:**으로 바꾸거나 **https:**를 **https-intunemam:**으로 바꿔서 다음 형식 중 하나를 사용합니다.<br /><br /> - **http-intunemam://<웹앱의 경로\>**<br /><br /> - **https-intunemam://<웹앱의 경로\>**<br /><br /> Configuration Manager 응용 프로그램 요구 사항을 사용하여 Managed Browser와 연결하려는 앱이 iOS 및 Android 장치에만 설치되도록 할 수 있습니다.<br /><br /> Intune Managed Browser에 대한 자세한 내용은 [Managed Browser 정책을 사용하여 인터넷 액세스 관리](../../apps/deploy-use/manage-internet-access-using-managed-browser-policies.md)를 참조하세요.|  
+|**웹 응용 프로그램**|웹 응용 프로그램에 대한 링크를 지정하는 배포 유형을 만듭니다. 배포 유형은 사용자 장치의 웹 응용 프로그램에 대한 바로 가기를 설치합니다.<br /><br /> iOS 또는 Android 장치에 Microsoft Intune 관리 브라우저를 설치한 경우 사용자가 앱을 여는 데 관리 브라우저만을 사용하도록 할 수 있습니다. 앱에 대한 링크를 지정할 때 **http:** 를 **http-intunemam:** 으로 바꾸거나 **https:** 를 **https-intunemam:** 으로 바꿔서 다음 형식 중 하나를 사용합니다.<br /><br /> - **http-intunemam://<웹앱의 경로\>**<br /><br /> - **https-intunemam://<웹앱의 경로\>**<br /><br /> Configuration Manager 응용 프로그램 요구 사항을 사용하여 Managed Browser와 연결하려는 앱이 iOS 및 Android 장치에만 설치되도록 할 수 있습니다.<br /><br /> Intune Managed Browser에 대한 자세한 내용은 [Managed Browser 정책을 사용하여 인터넷 액세스 관리](../../apps/deploy-use/manage-internet-access-using-managed-browser-policies.md)를 참조하세요.|  
 |**MDM(\*.msi)을 사용하는 Windows Installer**|이 설치 관리자 유형을 사용하면 Windows Installer 기반 앱을 만들어 Windows 10이 실행되는 PC에 배포할 수 있습니다.<br /><br /> 이 설치 관리자 유형을 사용하는 경우에 고려해야 하는 사항은 다음과 같습니다.<br><br>- 확장명이 .msi인 파일 하나만 업로드할 수 있습니다.<br /><br /> - 파일의 제품 코드와 제품 버전을 앱 검색에 사용합니다.<br /><br /> - 앱의 기본 다시 시작 동작이 사용됩니다. Configuration Manager에서는 이 다시 시작을 제어하지 않습니다.<br /><br /> - 단일 사용자에 대해 사용자별 MSI 패키지가 설치됩니다.<br /><br /> - 장치의 모든 사용자에 대해 컴퓨터별 MSI 패키지가 설치됩니다.<br /><br /> - 이중 모드 MSI 패키지는 현재 장치의 모든 사용자에 대해서만 설치됩니다.<br /><br /> - 각 버전의 MSI 제품 코드가 동일하면 앱 업데이트가 지원됩니다.|  
 
 

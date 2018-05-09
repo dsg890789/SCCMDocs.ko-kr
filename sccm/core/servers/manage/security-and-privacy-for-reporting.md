@@ -1,26 +1,20 @@
 ---
-title: "보고에 대한 보안 및 개인 정보"
+title: 보고에 대한 보안 및 개인 정보
 titleSuffix: Configuration Manager
-description: "Configuration Manager의 보고 기능을 사용하는 경우 보안 및 개인 정보에 대한 모범 사례를 이해합니다."
-ms.custom: na
+description: Configuration Manager의 보고 기능을 사용하는 경우 보안 및 개인 정보에 대한 모범 사례를 이해합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 7a555e06-e6d7-4ebb-8252-412b7c5ad1c1
-caps.latest.revision: "4"
-caps.handback.revision: "0"
-author: Dougeby
-ms.author: dougeby
-manager: angrobe
-ms.openlocfilehash: 745bcb631cc137eadeebd83fce7f2307a8bf916a
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: d9c5ec56032cd014e63dff7e22c83119bf2f5f4e
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="security-and-privacy-for-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 보고 기능에 대한 보안 및 개인 정보
 

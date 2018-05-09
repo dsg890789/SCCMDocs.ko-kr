@@ -1,25 +1,20 @@
 ---
-title: "Windows Embedded 응용 프로그램 만들기"
+title: Windows Embedded 응용 프로그램 만들기
 titleSuffix: Configuration Manager
-description: "Windows Embedded 장치용 응용 프로그램을 만들고 배포할 때 고려해야 할 사항을 확인합니다."
-ms.custom: na
+description: Windows Embedded 장치용 응용 프로그램을 만들고 배포할 때 고려해야 할 사항을 확인합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-app
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 16acfd63-0c40-424c-82f4-8c63f7f1c30b
-caps.latest.revision: "7"
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
-ms.openlocfilehash: e37dabb84cc6d56d9f08b2c0ee07115dd4bcb4fd
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 6374fa186ab13f3288e218e6670da3ea4ff10f4e
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-windows-embedded-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows Embedded 응용 프로그램 만들기
 
@@ -33,7 +28,7 @@ ms.lasthandoff: 10/12/2017
 
 -   Windows Embedded 장치에 응용 프로그램을 배포하는 경우 장치가 유지 관리 기간이 구성된 컬렉션의 구성원이어야 합니다. 이에 따라 쓰기 필터의 비활성 및 활성 시점과 장치가 다시 시작하는 시점을 관리할 수 있습니다.  
 
--   쓰기 필터 동작을 제어하는 설정은 이름이 **최종 기한에 또는 유지 관리 기간에 변경 내용 커밋(다시 시작해야 함)**인 확인란입니다.  
+-   쓰기 필터 동작을 제어하는 설정은 이름이 **최종 기한에 또는 유지 관리 기간에 변경 내용 커밋(다시 시작해야 함)** 인 확인란입니다.  
 
 ## <a name="tips-for-deploying-applications"></a>응용 프로그램 배포에 대한 팁  
 

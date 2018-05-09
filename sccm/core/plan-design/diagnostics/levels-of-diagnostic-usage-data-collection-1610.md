@@ -1,43 +1,20 @@
 ---
-title: "1610에 대한 진단 데이터"
+title: 1610에 대한 진단 데이터
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 버전 1610에서 수집하는 진단 및 사용 현황 데이터에 대해 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager 버전 1610에서 수집하는 진단 및 사용 현황 데이터에 대해 알아봅니다.
 ms.date: 12/29/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: eb20eb90-bcc0-41de-bfea-638ea470c0dd
-caps.latest.revision: "4"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- hu-hu
-- it-it
-- ja-jp
-- ko-kr
-- nl-nl
-- pl-pl
-- pt-br
-- pt-pt
-- ru-ru
-- sv-se
-- tr-tr
-- zh-cn
-- zh-tw
-ms.openlocfilehash: c9b51142ca4c6b96e13ee171ebb6314f13b1fcda
-ms.sourcegitcommit: da27d37cc4e4e06cf23758846cdd7acb617f744b
+manager: dougeby
+ms.openlocfilehash: 658d005234469d8729b515e9deeb02e20e94c748
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1610-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1610에 대한 진단 사용 현황 데이터 수집의 수준
 
@@ -45,7 +22,7 @@ ms.lasthandoff: 12/08/2017
 
 System Center Configuration Manager 버전 1610에서는 **기본**, **고급**, **전체** 등 세 가지 수준의 진단 및 사용 현황 데이터를 수집합니다. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
 
-이전 버전에서 변경된 내용은 ***[새로운 기능]***, ***[업데이트된 기능]***, ***[제거된 기능]*** 또는 ***[이동된 기능]***으로 표시됩니다.
+이전 버전에서 변경된 내용은 ***[새로운 기능]***, ***[업데이트된 기능]***, ***[제거된 기능]*** 또는 ***[이동된 기능]*** 으로 표시됩니다.
 
 
 > [!IMPORTANT]
@@ -91,7 +68,7 @@ System Center Configuration Manager 버전 1610에서는 **기본**, **고급**,
 
 - 기본 Configuration Manager 사이트 계층 구조 데이터(사이트 목록, 유형, 버전, 상태, 클라이언트 수 및 표준 시간대)
 
-- 기본 사이트 시스템 서버 정보(사용되는 사이트 시스템 역할, 인터넷 및 SSL 상태, 운영 체제, 프로세서, 실제 또는 가상 컴퓨터)
+- 기본 사이트 시스템 서버 정보(사용되는 사이트 시스템 역할, 인터넷 및 SSL 상태, 운영 체제, 프로세서, 실제 또는 가상 머신)
 
 - 기본 사용자 검색 통계(사용자 검색 횟수, 최소/최대/평균 그룹 크기)
 

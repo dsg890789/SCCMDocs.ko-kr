@@ -1,26 +1,20 @@
 ---
-title: "준수 설정에 대한 보안 및 개인 정보"
+title: 준수 설정에 대한 보안 및 개인 정보
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 준수 설정에 대한 보안 모범 사례에 대해 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager에서 준수 설정에 대한 보안 모범 사례에 대해 알아봅니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-compliance
+ms.topic: conceptual
 ms.assetid: 1c409244-6778-4970-a99c-d2508c9cf62b
-caps.latest.revision: "5"
-caps.handback.revision: "0"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: cba7ceff6114e19c8bf86068c7390de8c9e505e8
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 3a8b7a98746649d430388804194e0b847788c86a
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="security-and-privacy-for-compliance-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 준수 설정에 대한 보안 및 개인 정보
 

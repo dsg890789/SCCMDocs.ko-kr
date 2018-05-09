@@ -1,28 +1,21 @@
 ---
 title: SCAP 문제 해결
-titleSuffix: System Center Configuration Manager
+titleSuffix: Configuraton Manager
 description: SCAP 준수 설정을 구성 기준으로 가져와서 결과 내보내기
-ms.custom: na
 ms.date: 03/27/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-app
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-compliance
+ms.topic: conceptual
 ms.assetid: 27261853-1641-4826-98c6-afbb73a1209d
-caps.latest.revision: 1
-caps.handback.revision: 0
-author: mestew
-ms.author: mstewart
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
 robots: noindex,nofollow
-ms.openlocfilehash: 8270db5f0a43f1c94c876bdbd59e45ee2ca85ac6
-ms.sourcegitcommit: 27da4be015f1496b7b89ebddb517a2685f1ecf74
+ms.openlocfilehash: 05010d73916ac4c012c157a470ed98dce47fc747
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="troubleshoot-the-scap-extensions-for-microsoft-system-center-configuration-manager"></a>Microsoft System Center Configuration Manager용 SCAP 확장 문제 해결
 

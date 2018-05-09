@@ -1,25 +1,20 @@
 ---
-title: "진단 데이터 보기"
+title: 진단 데이터 보기
 titleSuffix: Configuration Manager
-description: "진단 및 사용 현황 데이터를 보고 System Center Configuration Manager 계층 구조에 중요한 정보가 포함되어 있지 않은지 확인합니다."
-ms.custom: na
+description: 진단 및 사용 현황 데이터를 보고 System Center Configuration Manager 계층 구조에 중요한 정보가 포함되어 있지 않은지 확인합니다.
 ms.date: 3/27/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 594eb284-0d93-4c5d-9ae6-f0f71203682a
-caps.latest.revision: "8"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: eb05bee0e0fceb68611c660870bb1778a07ef0a9
-ms.sourcegitcommit: da27d37cc4e4e06cf23758846cdd7acb617f744b
+manager: dougeby
+ms.openlocfilehash: 15e6f84be22d90e937c33ebd3a24520e6832a751
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-view-diagnostics-and-usage-data-for-system-center-configuration-manager"></a>System Center Configuration Manager의 진단 및 사용 현황 데이터를 보는 방법
 
@@ -43,7 +38,7 @@ System Center Configuration Manager 계층 구조에서 진단 및 사용 현황
 
 #### <a name="to-see-how-the-one-way-hash-works"></a>단방향 해시가 작동하는 방식을 보려면  
 
-1.  Configuration Manager 데이터베이스에 대해 SQL Management Studio에서 SQL 문 **select [dbo].[fnGetHierarchyID]\(\)**를 실행하여 계층 구조 ID를 가져옵니다.  
+1.  Configuration Manager 데이터베이스에 대해 SQL Management Studio에서 SQL 문 **select [dbo].[fnGetHierarchyID]\(\)** 를 실행하여 계층 구조 ID를 가져옵니다.  
 
 2.  다음 Windows PowerShell 스크립트를 사용하여 데이터베이스에서 가져온 GUID의 단방향 해시를 수행합니다. 이를 원시 데이터의 계층 ID와 비교하여 이 데이터를 가리는 방법을 알아볼 수 있습니다.  
 

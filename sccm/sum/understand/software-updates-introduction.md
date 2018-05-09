@@ -1,22 +1,20 @@
 ---
-title: "소프트웨어 업데이트 소개"
+title: 소프트웨어 업데이트 소개
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager의 소프트웨어 업데이트에 대한 기본 사항을 알아봅니다."
-keywords: 
-author: dougeby
-ms.author: dougeby
-manager: angrobe
+description: System Center Configuration Manager의 소프트웨어 업데이트에 대한 기본 사항을 알아봅니다.
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.date: 10/30/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod: configuration-manager
-ms.service: 
 ms.technology: configmgr-sum
 ms.assetid: e9778b13-c8a3-40eb-8655-34ac8ce9cdaa
-ms.openlocfilehash: 66aa73e5c1aae68feeacb0eabe6233845289d104
-ms.sourcegitcommit: 986fc2d54f7c5fa965fd4df42f4db4ecce6b79cb
+ms.openlocfilehash: d5528fc3e035cd5bed8bc92c8b65f3025d97a2d1
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="introduction-to-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 업데이트 소개
 
@@ -271,7 +269,7 @@ System Center Configuration Manager의 소프트웨어 업데이트는 기업의
 > [!NOTE]  
 >  소프트웨어 업데이트를 Windows Embedded 장치에 배포할 경우 해당 장치가 유지 관리 기간이 구성된 컬렉션의 구성원인지 확인하세요. 이에 따라 쓰기 필터의 비활성 및 활성 시점과 장치가 다시 시작하는 시점을 관리할 수 있습니다.  
 
- 쓰기 필터 동작을 제어하는 사용자 환경 설정은 이름이 **최종 기한에 또는 유지 관리 기간 동안 변경 내용 커밋(다시 시작해야 함)**인 확인란입니다.  
+ 쓰기 필터 동작을 제어하는 사용자 환경 설정은 이름이 **최종 기한에 또는 유지 관리 기간 동안 변경 내용 커밋(다시 시작해야 함)** 인 확인란입니다.  
 
  Configuration Manager에서 쓰기 필터를 사용하는 포함된 장치를 관리하는 방법에 대한 자세한 내용은 [Windows Embedded 장치에 클라이언트 배포 계획](../../core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)을 참조하세요.  
 

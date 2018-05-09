@@ -2,25 +2,19 @@
 title: 기술 미리 보기 1609의 기능
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager용 Technical Preview 버전 1609에서 사용 가능한 기능에 대해 알아봅니다.
-ms.custom: na
 ms.date: 01/23/2017
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: e2a59116-b2e5-4dd2-90eb-0b8a5eb50b56
-caps.latest.revision: 2
-author: erikje
-ms.author: erikje
-manager: angrobe
-ms.openlocfilehash: 4beca8479e5adbfa24b597769b792fd91bed9a2c
-ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 3cfd7131f5b6fb721fdc96c6486183d3781af9d6
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="capabilities-in-technical-preview-1609-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1609의 기능
 
@@ -243,7 +237,7 @@ Configuration Manager를 Intune과 함께 사용할 경우 OMA-URI를 사용하�
 ### <a name="changes-in-ui-and-behavior-for-boundary-groups-and-content-locations"></a>경계 그룹과 콘텐츠 위치에 대한 동작 및 UI 변경 내용
 다음은 경계 그룹 및 클라이언트에서 콘텐츠를 검색하는 방법에 대한 주요 변경 내용입니다. 이러한 많은 변경 내용 및 개념은 함께 작동합니다.
 -   **빠름 또는 느림 구성 제거됨:** 개별 배포 지점을 더 이상 빠름 또는 느림으로 구성하지 않습니다.  대신 경계 그룹과 연결된 각 사이트 시스템이 동일하게 처리됩니다. 이러한 변경으로 인해 경계 그룹 속성의 **참조** 탭에서 더 이상 빠름 또는 느림 구성을 지원하지 않습니다.
--   **각 사이트의 새 기본 경계 그룹:** 각 기본 사이트에는 ***Default-Site-Boundary-Group\<sitecode>***라는 새 기본 경계 그룹이 있습니다.  경계 그룹에 지정된 네트워크 위치에 없는 클라이언트는 지정된 사이트의 기본 그룹과 연결된 사이트 시스템을 사용합니다. 이 경계 그룹을 대체 콘텐츠 위치의 개념 대신 사용합니다.    
+-   **각 사이트의 새 기본 경계 그룹:** 각 기본 사이트에는 ***Default-Site-Boundary-Group\<sitecode>*** 라는 새 기본 경계 그룹이 있습니다.  경계 그룹에 지정된 네트워크 위치에 없는 클라이언트는 지정된 사이트의 기본 그룹과 연결된 사이트 시스템을 사용합니다. 이 경계 그룹을 대체 콘텐츠 위치의 개념 대신 사용합니다.    
  -  **‘콘텐츠에 대해 대체 원본 위치 허용’** 제거됨: 더 이상 대체에 사용할 배포 지점을 명시적으로 구성하지 않으며 이 기능을 설정하는 옵션이 UI에서 제거되었습니다.
 
     또한 응용 프로그램의 배포 유형에서 **클라이언트가 콘텐츠에 대한 대체 원본 위치를 사용하도록 허용** 설정의 결과가 변경되었습니다. 이제 배포 유형에서 이 설정을 사용하면 클라이언트가 기본 사이트 경계 그룹을 콘텐츠 원본 위치로 사용할 수 있습니다.
@@ -402,7 +396,7 @@ Office 365 ProPlus 업데이트에 대한 자세한 내용은 [Manage Office 365
 1. 파일 및 설정을 캡처하는 단계와 운영 체제 단계 사이에 새 작업 순서 그룹을 만듭니다. 예를 들어 **파일 및 설정 캡처**라는 그룹 뒤에 **BIOS-UEFI**라는 그룹을 만듭니다.
 2. 새 그룹의 **옵션** 탭에서 새 작업 순서 변수를 **_SMSTSBootUEFI**가 **true**와 **같지 않음**인 조건으로 추가합니다. 이렇게 하면 컴퓨터가 이미 UEFI 모드에서 실행 중인 경우 이 그룹의 단계가 실행되지 않습니다.
 ![BIOS-UEFI 그룹](media/BIOS-to-UEFI-group.png)
-3. 새 그룹 아래에 **컴퓨터 다시 시작** 작업 순서 단계를 추가합니다. **다시 시작한 후에 실행할 응용 프로그램을 지정하십시오.**에서 **이 작업 순서에 할당된 부팅 이미지**를 선택하여 Windows PE에서 컴퓨터를 시작합니다.  
+3. 새 그룹 아래에 **컴퓨터 다시 시작** 작업 순서 단계를 추가합니다. **다시 시작한 후에 실행할 응용 프로그램을 지정하십시오.** 에서 **이 작업 순서에 할당된 부팅 이미지**를 선택하여 Windows PE에서 컴퓨터를 시작합니다.  
 4. **옵션** 탭에서 작업 순서 변수를 **_SMSTSInWinPE = false**인 조건으로 추가합니다. 이렇게 하면 컴퓨터가 이미 Windows PE에서 실행 중인 경우 이 단계가 실행되지 않습니다.
 
     ![컴퓨터 다시 시작 단계](media/Restart-in-Windows-PE.png)
@@ -413,7 +407,7 @@ Office 365 ProPlus 업데이트에 대한 자세한 내용은 [Manage Office 365
     2.  FAT32 파티션의 속성으로 이동합니다. **변수** 필드에 **TSUEFIDrive**를 입력합니다. 작업 순서에서 이 변수를 발견하면 컴퓨터를 다시 시작하기 전에 UEFI 변환을 준비합니다.
     ![파티션 속성](media/Partition-properties.png)
     3. 작업 순서 엔진이 상태를 저장하고 로그 파일을 저장하는 데 사용할 NTFS 파티션을 만듭니다.
-6.  **컴퓨터 다시 시작** 작업 순서 단계를 추가합니다. **다시 시작한 후에 실행할 응용 프로그램을 지정하십시오.**에서 **이 작업 순서에 할당된 부팅 이미지**를 선택하여 Windows PE에서 컴퓨터를 시작합니다.  
+6.  **컴퓨터 다시 시작** 작업 순서 단계를 추가합니다. **다시 시작한 후에 실행할 응용 프로그램을 지정하십시오.** 에서 **이 작업 순서에 할당된 부팅 이미지**를 선택하여 Windows PE에서 컴퓨터를 시작합니다.  
 
 
 

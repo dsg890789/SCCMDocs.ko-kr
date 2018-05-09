@@ -1,25 +1,20 @@
 ---
-title: "1706에 대한 검사 목록"
+title: 1706에 대한 검사 목록
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 버전 1706으로 업데이트하기 전에 수행할 작업에 대해 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager 버전 1706으로 업데이트하기 전에 수행할 작업에 대해 알아봅니다.
 ms.date: 12/19/2017
-ms.reviewer: na
-ms.suite: na
 ms.prod: configuration-manager
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 7def067e-845c-4db3-9d56-fa1dcf2fd7c7
-caps.latest.revision: 
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: b9acbf4a80bed52f0c720f70ee62042d1e90dd62
-ms.sourcegitcommit: 2867fd119256ec670fc5ae65cdc8a80d39f9b4d4
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: e3a5f04367057510c257b211c302cd5576929a71
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="checklist-for-installing-update-1706-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 업데이트 1706을 설치하기 위한 검사 목록
 
@@ -35,7 +30,7 @@ System Center Configuration Manager 현재 분기를 사용하는 경우 버전 
 
     -   dmpdownloader.log에서 dmpdownloader 프로세스가 절전 모드이고 업데이트를 확인하기 전에 일정 시간 대기 중임을 나타내는 경우 사이트 서버에서 **SMS_Executive** 서비스를 다시 시작하여 업데이트 재배포 파일의 다운로드를 다시 시작할 수도 있습니다.
 
-    -   또 다른 일반적인 다운로드 문제는 프록시 서버 설정에서 <http://silverlight.dlservice.microsoft.com> 및 <http://download.microsoft.com>에서 다운로드를 차단하는 경우에 발생합니다.
+    -   프록시 서버 설정이 <http://silverlight.dlservice.microsoft.com> 및 <http://download.microsoft.com>에서 다운로드하지 않도록 방지하는 경우 또 다른 일반적인 다운로드 문제가 발생합니다.
 
 업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 및 서비스](/sccm/core/servers/manage/updates#a-namebkmkinconsolea-in-console-updates-and-servicing)를 참조하세요.
 

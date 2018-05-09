@@ -1,26 +1,20 @@
 ---
-title: "Asset Intelligence 소개"
+title: Asset Intelligence 소개
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager의 Asset Intelligence를 소개합니다."
-ms.custom: na
+description: System Center Configuration Manager의 Asset Intelligence를 소개합니다.
 ms.date: 2/22/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: 0bdfdef5-390f-4099-8bde-de51d9a89175
-caps.latest.revision: "7"
-caps.handback.revision: "0"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: 349f5998c0d5e96a626e901ae99fee76541d1b4e
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 0c09160e88d8a713caadfdd9a6973fd436b4cad1
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="introduction-to-asset-intelligence-in-system-center-configuration-manager"></a>System Center Configuration Manager의 Asset Intelligence 소개
 
@@ -122,13 +116,13 @@ System Center Configuration Manager의 Asset Intelligence를 통해 Asset Intell
     > [!NOTE]  
     >  **Asset Intelligence** 홈페이지의 Asset Intelligence 카탈로그 동기화 섹션은 Asset Intelligence 동기화 지점 사이트 시스템 역할이 설치된 경우에만 표시됩니다.  
 
--   **인벤토리에 포함된 소프트웨어 상태**: 인벤토리에 포함된 소프트웨어, 소프트웨어 카테고리 및 소프트웨어 제품군의 개수 및 백분율을 제공합니다. 이들은 Microsoft 또는 관리자, 보류 중인 온라인 ID로 식별되거나 식별되지 않고 보류 중이 아닙니다. 표 형식으로 표시되는 정보는 각각에 대한 개수를 보여 주고 차트에 표시되는 정보는 각각에 대한 백분율을 보여 줍니다.  
+-   **인벤토리에 포함된 소프트웨어 상태**: 인벤토리에 포함된 소프트웨어, 소프트웨어 카테고리 및 소프트웨어 제품군의 개수 및 백분율을 제공합니다. 이들은 Microsoft 또는 관리자, 보류 중인 온라인 ID로 식별되거나 식별되지 않고 보류 중이 아닙니다. 각각에 대 한 백분율을 표시 하는 차트에 표시 되는 정보 및 테이블 형식으로 표시 되는 정보는 각각에 대해 개수를 보여줍니다.  
 
 ##  <a name="BKMK_AssetIntelligenceReports"></a> Asset Intelligence 보고서  
  Asset Intelligence 보고서는 Configuration Manager 콘솔의 **모니터링** 작업 영역에서 **보고** 노드 아래의 Asset Intelligence 폴더에 있습니다. 보고서는 하드웨어, 라이선스 관리 및 소프트웨어에 대한 정보를 제공합니다. Configuration Manager의 보고서에 대한 자세한 내용은 [System Center Configuration Manager의 보고](../../../../core/servers/manage/reporting.md)를 참조하세요.  
 
 > [!NOTE]  
->  Asset Intelligence 보고서에 표시되는 설치된 소프트웨어 타이틀 및 라이선스 정보의 양의 정확도는 환경에서 사용되는 라이선스 또는 설치된 소프트웨어 타이틀의 실제 수와 다를 수 있습니다. 이 차이는 엔터프라이즈 환경에 설치된 소프트웨어 타이틀에 대한 소프트웨어 라이선스 정보의 인벤토리 작성과 관련된 복잡한 종속성과 제한 사항 때문입니다. Asset Intelligence 보고서를 구입한 소프트웨어 라이선스 규격을 확인하기 위한 유일한 출처로 사용하지 마세요.  
+>  Asset Intelligence 보고서에 표시되는 설치된 소프트웨어 타이틀 및 라이선스 정보의 양의 정확도는 환경에서 사용되는 라이선스 또는 설치된 소프트웨어 타이틀의 실제 수와 다를 수 있습니다. 이 차이는 엔터프라이즈 환경에 설치된 소프트웨어 타이틀에 대한 소프트웨어 라이선스 정보의 인벤토리 작성과 관련된 복잡한 종속성과 제한 사항 때문입니다. 구입한 소프트웨어 라이선스 준수를 결정 하기 위한 유일한 소스로 Asset Intelligence 보고서를 사용 하지 마십시오.  
 
 ###  <a name="BKMK_HardwareReports"></a> Asset Intelligence 하드웨어 보고서  
  Asset Intelligence 하드웨어 보고서는 조직의 하드웨어 자산에 대한 정보를 제공합니다. Asset Intelligence 하드웨어 보고서에서는 속도, 메모리, 주변 장치 등과 같은 하드웨어 인벤토리 정보를 사용하여 USB 장치, 업그레이드해야 하는 하드웨어 및 특정 소프트웨어 업그레이드에 대해 준비가 되지 않은 컴퓨터에 대한 정보까지 제공할 수 있습니다.  
@@ -146,7 +140,7 @@ System Center Configuration Manager의 Asset Intelligence를 통해 Asset Intell
  Asset Intelligence 소프트웨어 보고서는 조직의 컴퓨터에 설치된 소프트웨어 제품군, 범주 및 특정 소프트웨어 타이틀에 대한 정보를 제공합니다. 소프트웨어 보고서는 브라우저 도우미 개체, 자동으로 시작하는 소프트웨어 등에 대한 정보를 제공합니다. 이러한 보고서는 애드웨어, 스파이웨어 및 기타 맬웨어를 식별하고 소프트웨어 구매 및 지원을 간소화하는 데 도움이 되도록 소프트웨어 중복을 식별하는 데 사용할 수 있습니다.  
 
 ###  <a name="BKMK_SoftwareIdTagReports"></a> Asset Intelligence 소프트웨어 ID 태그 보고서  
- Asset Intelligence 소프트웨어 ID 태그 보고서는 ISO/IEC 19770-2와 호환되는 소프트웨어 ID 태그가 포함된 소프트웨어에 대한 정보를 제공합니다. 소프트웨어 ID 태그는 설치된 소프트웨어를 식별하는 데 사용되는 신뢰할 수 있는 정보를 제공합니다. SMS_SoftwareTag 하드웨어 인벤토리 보고 클래스를 사용하도록 설정하면 Configuration Manager에서 소프트웨어 ID 태그가 있는 소프트웨어에 대한 정보를 수집합니다. 다음 보고서는 소프트웨어에 대한 정보를 제공합니다.  
+ Asset Intelligence 소프트웨어 식별 태그 보고서 ISO/IEC 19770-2와 호환 되는 소프트웨어 id 태그를 포함 하는 소프트웨어에 대 한 정보를 제공 합니다. 소프트웨어 ID 태그는 설치된 소프트웨어를 식별하는 데 사용되는 신뢰할 수 있는 정보를 제공합니다. SMS_SoftwareTag 하드웨어 인벤토리 보고 클래스를 사용하도록 설정하면 Configuration Manager에서 소프트웨어 ID 태그가 있는 소프트웨어에 대한 정보를 수집합니다. 다음 보고서는 소프트웨어에 대한 정보를 제공합니다.  
 
 -   **소프트웨어 14A - 소프트웨어 ID 태그가 사용하도록 설정된 소프트웨어 검색**: 이 보고서는 소프트웨어 ID 태그가 사용하도록 설정된, 설치되어 있는 소프트웨어 수를 제공합니다.  
 
@@ -155,10 +149,10 @@ System Center Configuration Manager의 Asset Intelligence를 통해 Asset Intell
 -   **소프트웨어 14C - 설치된 소프트웨어 ID 태그가 사용하도록 설정된 특정 컴퓨터의 소프트웨어**: 이 보고서는 특정 소프트웨어 ID 태그가 사용하도록 설정된, 특정 컴퓨터에 설치되어 있는 모든 소프트웨어를 나열합니다.  
 
 ###  <a name="BKMK_ReportingLImitations"></a> Asset Intelligence 보고 제한 사항  
- Asset Intelligence 보고서는 사용 중인 설치된 소프트웨어 타이틀 및 구입한 소프트웨어 라이선스에 대한 많은 양의 정보를 제공할 수 있습니다. 그러나 이 정보를 구입한 소프트웨어 라이선스 규격을 확인하기 위한 유일한 출처로 사용하지 않아야 합니다.  
+ 자산 인텔리전스 보고서 많은 양의 설치 된 소프트웨어 타이틀에 대 한 정보를 제공할 수 및 사용 되는 소프트웨어 라이선스를 구입 합니다. 그러나 해야 사용 하면이 정보 소스로 구입한 소프트웨어 라이선스 준수를 결정 하기 위한.  
 
 ####  <a name="BKMK_ExampleDependencies"></a> 종속성 예  
- 설치된 소프트웨어 타이틀 및 라이선스 정보에 대해 Asset Intelligence 보고서에 표시된 양의 정확도는 현재 사용되는 실제 양과 다를 수 있습니다. 이러한 차이는 엔터프라이즈 환경에서 사용 중인 소프트웨어 타이틀에 대한 소프트웨어 라이선스 정보의 인벤토리 작성과 관련된 복잡한 종속성으로 인해 발생합니다. 다음 예는 Asset Intelligence 보고서의 정확도에 영향을 줄 수도 있는 Asset Intelligence를 사용하여 엔터프라이즈의 설치된 소프트웨어의 인벤토리 작성과 관련된 종속성을 보여 줍니다.  
+ 수량에 대 한 Asset Intelligence 보고서에 표시 되는 정확도 설치 소프트웨어 타이틀 및 라이선스 정보에서 현재 사용 되는 실제 메모리 양은 다를 수 있습니다. 이러한 차이는 엔터프라이즈 환경에서 사용 중인 소프트웨어 타이틀에 대한 소프트웨어 라이선스 정보의 인벤토리 작성과 관련된 복잡한 종속성으로 인해 발생합니다. 다음 예는 Asset Intelligence 보고서의 정확도에 영향을 줄 수도 있는 Asset Intelligence를 사용하여 엔터프라이즈의 설치된 소프트웨어의 인벤토리 작성과 관련된 종속성을 보여 줍니다.  
 
  **클라이언트 하드웨어 인벤토리 종속성**  
  Asset Intelligence의 설치된 소프트웨어 보고서는 Asset Intelligence 보고를 사용할 수 있도록 하드웨어 인벤토리를 확장하여 Configuration Manager 클라이언트에서 수집된 데이터를 기반으로 합니다. 하드웨어 인벤토리 보고에 대한 이러한 종속성 때문에 Asset Intelligence 보고서는 필수 Asset Intelligence WMI 보고 클래스를 사용하여 하드웨어 인벤토리 프로세스를 완료한 Configuration Manager 클라이언트의 데이터만 반영합니다. 또한 Configuration Manager 클라이언트는 관리자가 정의한 일정에 따라 하드웨어 인벤토리 프로세스를 수행하기 때문에 데이터 보고 지연으로 인해 Asset Intelligence 보고서의 정확도가 영향을 받을 수도 있습니다. 예를 들어 클라이언트가 성공적으로 하드웨어 인벤토리 주기를 종료한 후 인벤토리에 포함된 사용이 허가된 소프트웨어 타이틀이 제거될 수도 있습니다. 그러나 다음에 예약된 클라이언트의 하드웨어 인벤토리 보고 주기 때까지는 소프트웨어 타이틀이 Asset Intelligence 보고서에 설치된 것으로 표시됩니다.  
@@ -167,7 +161,7 @@ System Center Configuration Manager의 Asset Intelligence를 통해 Asset Intell
  Asset Intelligence 보고서는 표준 Configuration Manager 클라이언트 하드웨어 인벤토리 프로세스를 사용하여 수집된, 설치되어 있는 소프트웨어 타이틀 데이터를 기반으로 하기 때문에 일부 소프트웨어 타이틀 데이터는 올바르게 수집되지 않았을 수 있습니다. 예를 들어 표준 설치 프로세스를 준수하지 않는 소프트웨어 설치 또는 설치 전에 변경된 소프트웨어 설치는 정확하지 않은 Asset Intelligence 보고를 발생시킬 수 있습니다.  
 
 ####  <a name="BKMK_LegalLimitations"></a> 법적 제한 사항  
- Asset Intelligence 보고에 표시되는 정보는 많은 제한 사항이 적용되며 법률, 회계 또는 기타 전문가 조언을 나타내지 않습니다. Asset Intelligence 보고서에서 제공되는 정보는 정보용으로만 사용하고 소프트웨어 라이선스 사용 규격을 확인하기 위한 정보의 유일한 출처로 사용하지 않아야 합니다.  
+ Asset Intelligence에 표시 하는 정보 보고서는 많은 제한 사항에 표시 되는 정보에 따라 법적, 회계, 또는 기타 전문가 조언을 나타내지 않습니다. Asset Intelligence 보고서에서 제공되는 정보는 정보용으로만 사용하고 소프트웨어 라이선스 사용 규격을 확인하기 위한 정보의 유일한 출처로 사용하지 않아야 합니다.  
 
  다음은 Asset Intelligence 보고서의 정확도에 영향을 줄 수도 있는 Asset Intelligence를 사용하여 엔터프라이즈의 설치된 소프트웨어 및 라이선스 사용에 대한 인벤토리 작성과 관련된 제한 사항 예입니다.  
 
@@ -186,10 +180,10 @@ System Center Configuration Manager의 Asset Intelligence를 통해 Asset Intell
  Asset Intelligence 보고서에서 설치된 소프트웨어 타이틀의 수량을 정확히 보고하려면 Configuration Manager 클라이언트가 하드웨어 인벤토리 보고 주기를 완료해야 합니다. 또한 클라이언트가 예정된 다음 하드웨어 인벤토리를 보고하기 전에 실행되는 Asset Intelligence 보고서에서 반영되지 않은 성공적인 하드웨어 인벤토리 보고 주기 후, 사용이 허가된 소프트웨어 타이틀의 설치 또는 제거 사이에 지연이 있을 수 있습니다.  
 
  **라이선스 조정 제한**  
- 구매한 소프트웨어 라이선스 수량과 설치된 소프트웨어 타이틀 수량의 조정은 관리자가 지정한 라이선스 수량과 관리자가 설정한 일정에 따라 Configuration Manager 클라이언트 하드웨어 인벤토리에서 수집된 설치되어 있는 소프트웨어 타이틀 수량을 비교하여 계산합니다. 이 비교가 라이선스 입장에 대한 Microsoft의 최종 결론을 나타내지 않습니다. 실제 라이선스 입장은 사용 조건에서 부여하는 특정 소프트웨어 타이틀 라이선스 및 사용 권한에 따라 달라집니다.  
+ 구매한 소프트웨어 라이선스 수량과 설치된 소프트웨어 타이틀 수량의 조정은 관리자가 지정한 라이선스 수량과 관리자가 설정한 일정에 따라 Configuration Manager 클라이언트 하드웨어 인벤토리에서 수집된 설치되어 있는 소프트웨어 타이틀 수량을 비교하여 계산합니다. 이 비교가 라이선스 입장에 대한 Microsoft의 최종 결론을 나타내지 않습니다. 사용 조건에 의해 부여 된 특정 소프트웨어 타이틀 라이선스 및 사용 권한에서 실제 라이선스 위치에 따라 달라 집니다.  
 
 ##  <a name="BKMK_ValidationStates"></a> Asset Intelligence 유효성 검사 상태  
- Asset Intelligence 유효성 검사 상태는 Asset Intelligence 카탈로그 정보의 출처 및 현재 유효성 검사 상태를 나타냅니다. 다음 표에서는 가능한 Asset Intelligence 유효성 검사 상태와 이러한 상태를 발생시킬 수 있는 관리자 작업을 보여 줍니다.  
+ Asset Intelligence 유효성 검사 상태는 소스 및 Asset Intelligence 카탈로그 정보 중 현재 유효성 검사 상태를 나타냅니다. 다음 표에서는 가능한 Asset Intelligence 유효성 검사 상태와 이러한 상태를 발생시킬 수 있는 관리자 작업을 보여 줍니다.  
 
 |**상태**|**정의**|**관리자 작업**|**설명**|  
 |---------------|--------------------|------------------------------|-----------------|  

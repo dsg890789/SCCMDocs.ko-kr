@@ -1,26 +1,20 @@
 ---
-title: "기술 미리 보기 1611의 기능"
+title: 기술 미리 보기 1611의 기능
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager용 Technical Preview 버전 1611에서 사용 가능한 기능에 대해 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager용 Technical Preview 버전 1611에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 01/23/2017
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: d2ad00e8-9f10-41b6-816a-d8542c23a22e
-caps.latest.revision: 
-author: erikje
-ms.author: erikje
-manager: angrobe
-ms.openlocfilehash: b56aee663319861427048fb722b1cdc0b5cc664d
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: d610b9f5980376bc9859fcd1e8bb34660e068b09
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="capabilities-in-technical-preview-1611-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1611의 기능
 

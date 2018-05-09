@@ -1,25 +1,20 @@
 ---
-title: "서비스 연결 도구"
+title: 서비스 연결 도구
 titleSuffix: Configuration Manager
-description: "Configuration Manager 클라우드 서비스에 연결하여 사용 정보를 수동으로 업로드할 수 있는 이 도구에 대해 알아봅니다."
-ms.custom: na
+description: Configuration Manager 클라우드 서비스에 연결하여 사용 정보를 수동으로 업로드할 수 있는 이 도구에 대해 알아봅니다.
 ms.date: 09/06/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 6e4964c5-43cb-4372-9a89-b62ae6a4775c
-caps.latest.revision: "11"
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 3e7b397c2ef3bfb1feb44599756752f56a2ad465
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 906b39f01b05600d86a045e07d3e28184e9360e8
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="use-the-service-connection-tool-for-system-center-configuration-manager"></a>System Center Configuration Manager의 서비스 연결 도구 사용
 

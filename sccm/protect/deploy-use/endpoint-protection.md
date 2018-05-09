@@ -1,26 +1,20 @@
 ---
 title: Endpoint Protection
 titleSuffix: Configuration Manager
-description: "Configuration Manager 계층 구조에서 클라이언트 컴퓨터에 대한 맬웨어 방지 정책 및 Windows 방화벽 보안을 관리하는 방법을 알아봅니다."
-ms.custom: na
+description: Configuration Manager 계층 구조에서 클라이언트 컴퓨터에 대한 맬웨어 방지 정책 및 Windows 방화벽 보안을 관리하는 방법을 알아봅니다.
 ms.date: 02/09/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-protect
+ms.topic: conceptual
 ms.assetid: 76c90f64-d729-456b-8304-01852cd66fb6
-caps.latest.revision: 
-author: mestew
-ms.author: mstewart
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3f8d0d7934a539729793cd0307d6fa5d3e31bf3a
-ms.sourcegitcommit: fbde417e3c3002898bd216a7e110e725ae269893
+ms.openlocfilehash: 2da4b91411822b6274da3e165ff3e43e8752dc45
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="endpoint-protection"></a>Endpoint Protection
 
@@ -111,7 +105,7 @@ Mac 컴퓨터와 Linux 서버에 대한 Endpoint Protection 클라이언트 소�
 3. **System Center Endpoint Protection(현재 분기)** 제품을 필터링합니다.
 4. **다운로드** 링크를 클릭합니다.
 5. 
-              **Continue(계속)**를 클릭합니다. **Linux OS 및 Macintosh OS 다국어 32/64 비트용 System Center Endpoint Protection(현재 분기 - 버전 1606) 1,878MB ISO** 파일을 포함하여 여러 개의 파일이 표시됩니다.
+              **Continue(계속)** 를 클릭합니다. **Linux OS 및 Macintosh OS 다국어 32/64 비트용 System Center Endpoint Protection(현재 분기 - 버전 1606) 1,878MB ISO** 파일을 포함하여 여러 개의 파일이 표시됩니다.
 6. 파일을 다운로드하려면 화살표 아이콘을 클릭합니다. 파일 이름은 **SW_DVD5_Sys_Ctr_Endpnt_Prtctn_1606_MultiLang_-3_EptProt_Lin_Mac_MLF_X21-67050.ISO**입니다.
 
 2018년 1월 업데이트(X21-67050)에 포함된 버전은 다음과 같습니다.

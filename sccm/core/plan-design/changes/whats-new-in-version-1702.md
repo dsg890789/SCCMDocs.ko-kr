@@ -1,24 +1,19 @@
 ---
-title: "새 버전 1702"
+title: 새 버전 1702
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 버전 1702에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다."
-ms.custom: na
+description: System Center Configuration Manager 버전 1702에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.
 ms.date: 05/02/2017
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: 409e26e1-7716-4f1d-a0ee-34feabf20792
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: cf46bb32994ddb8a1fa3b9de0dbffc94228ad7fd
-ms.sourcegitcommit: b13da5ad8ffd58e3b89fa6d7170e1dec3ff130a4
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 99e5cf970a2b4e1afa1a52d49be3afcc8c9d13fc
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="what39s-new-in-version-1702-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1702의 새로운 기능
 

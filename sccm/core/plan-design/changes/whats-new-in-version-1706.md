@@ -1,24 +1,19 @@
 ---
-title: "버전 1706의 새로운 기능"
+title: 버전 1706의 새로운 기능
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 버전 1706에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다."
-ms.custom: na
+description: System Center Configuration Manager 버전 1706에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.
 ms.date: 08/11/2017
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: ac034143-003e-4629-aac2-99eaffef4db1
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: fb6c377edee5cbf387398ed2166ca2cca0cdb765
-ms.sourcegitcommit: b13da5ad8ffd58e3b89fa6d7170e1dec3ff130a4
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 925a881c6d9cf7249fc138027ceef2d225ee91e2
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="what39s-new-in-version-1706-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1706의 새로운 기능
 

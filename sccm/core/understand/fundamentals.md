@@ -1,26 +1,20 @@
 ---
-title: "기본 항목"
+title: 기본 항목
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에 대한 기본 개념에 대해 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager에 대한 기본 개념에 대해 알아봅니다.
 ms.date: 12/30/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: cc4cdb35-f0b4-42b5-9cec-6431a8c30793
-caps.latest.revision: "11"
-caps.handback.revision: "0"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: 7474544b5008117846bda2bba6670d768250b3cc
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+manager: dougeby
+ms.openlocfilehash: 6bd134857f53157e4ea81d46ff1a36693d7366ca
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="fundamentals-of-system-center-configuration-manager"></a>System Center Configuration Manager의 기본 사항
 

@@ -1,27 +1,20 @@
 ---
-title: "연결에 사용되는 포트"
+title: 연결에 사용되는 포트
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager가 연결에 사용되는 필수 포트 및 사용자 지정 포트에 대해 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager가 연결에 사용되는 필수 포트 및 사용자 지정 포트에 대해 알아봅니다.
 ms.date: 02/16/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: c6777fb0-0754-4abf-8a1b-7639d23e9391
-caps.latest.revision: 
-caps.handback.revision: 
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: 8db098f69180aac3785087af6ee305b3651094e5
-ms.sourcegitcommit: 1378532fac2620ddcfd31061982f344a290c2e67
+manager: dougeby
+ms.openlocfilehash: dd9c3f9440f4215b82a0f9d63614f646772cc0fa
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ports-used-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사용되는 포트
 

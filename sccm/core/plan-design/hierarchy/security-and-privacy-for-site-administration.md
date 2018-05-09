@@ -1,25 +1,20 @@
 ---
-title: "사이트 관리 보안 및 개인 정보"
+title: 사이트 관리 보안 및 개인 정보
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 사이트 관리에 대한 보안 및 개인 정보를 최적화합니다."
-ms.custom: na
+description: System Center Configuration Manager에서 사이트 관리에 대한 보안 및 개인 정보를 최적화합니다.
 ms.date: 3/1/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 1d58176e-abc0-4087-8583-ce70deb4dcf5
-caps.latest.revision: "8"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: 2dd77a607e2ab87d9abf0ea46ca7c5565a8286b6
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+manager: dougeby
+ms.openlocfilehash: 515385c6c6855e63dc32b522edff9cd2047331bd
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="security-and-privacy-for-site-administration-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사이트 관리를 위한 보안 및 개인 정보
 
@@ -188,7 +183,7 @@ Configuration Manager를 백업하는 경우 인증서와 공격자가 가장하
 
  설치 프로그램을 실행하고 보조 사이트를 만들 때 부모 사이트에서 보조 사이트로 파일을 복사하는 옵션을 선택하지 않고 네트워크 원본 위치를 사용하지 않습니다. 공격 시간을 선택하는 것이 어렵긴 하지만, 네트워크를 통해 파일이 복사될 때 노련한 공격자는 보조 사이트 설치 패키지를 가로챈 후 사용자가 설치하기 전에 파일을 무단 변경할 수도 있습니다. 파일을 전송할 때 IPsec 또는 SMB를 사용하면 이러한 공격을 최소화할 수 있습니다.  
 
- 네트워크를 통해 파일을 복사하는 대신 보조 사이트 서버에서 원본 파일을 미디어 폴더에서 로컬 폴더로 복사합니다. 그런 다음 설치 프로그램을 실행하여 보조 사이트를 만들 때 **설치 원본 파일** 페이지에서 **보조 사이트 컴퓨터에서 다음 위치의 원본 파일 사용(가장 안전)**을 선택하고 이 폴더를 지정합니다.  
+ 네트워크를 통해 파일을 복사하는 대신 보조 사이트 서버에서 원본 파일을 미디어 폴더에서 로컬 폴더로 복사합니다. 그런 다음 설치 프로그램을 실행하여 보조 사이트를 만들 때 **설치 원본 파일** 페이지에서 **보조 사이트 컴퓨터에서 다음 위치의 원본 파일 사용(가장 안전)** 을 선택하고 이 폴더를 지정합니다.  
 
  자세한 내용은 [설치 마법사를 사용하여 사이트 설치](../../../core/servers/deploy/install/use-the-setup-wizard-to-install-sites.md) 항목에서 [보조 사이트 설치](../../../core/servers/deploy/install/use-the-setup-wizard-to-install-sites.md#bkmk_secondary)를 참조하세요.  
 

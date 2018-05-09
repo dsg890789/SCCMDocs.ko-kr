@@ -1,26 +1,20 @@
 ---
-title: "클라이언트의 사이트 시스템 역할"
+title: 클라이언트의 사이트 시스템 역할
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 클라이언트에 대한 사이트 시스템 역할을 결정합니다."
-ms.custom: na
+description: System Center Configuration Manager에서 클라이언트에 대한 사이트 시스템 역할을 결정합니다.
 ms.date: 04/23/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-client
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: 984e8d92-7327-4b08-9228-0c955e6ac778
-caps.latest.revision: "9"
-caps.handback.revision: "0"
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.openlocfilehash: f6c2b15f58fbd6e26ca1cb8a4fccbde36279571d
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: eac38757ed2147d664b3bdbf2f7e0eb11947dcac
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="determine-the-site-system-roles-for-system-center-configuration-manager-clients"></a>System Center Configuration Manager 클라이언트에 대한 사이트 시스템 역할 결정
 
@@ -33,9 +27,9 @@ ms.lasthandoff: 10/12/2017
  필요한 사이트 시스템 역할을 설치 및 구성하는 방법에 대한 자세한 내용은 [사이트 시스템 역할 설치](../../../../core/servers/deploy/configure/install-site-system-roles.md)를 참조하세요.  
 
 ##  <a name="determine-if-you-need-a-management-point"></a>관리 지점이 필요한지 확인  
- 기본적으로 모든 Windows 클라이언트 컴퓨터에서는 배포 지점을 사용하여 Configuration Manager 클라이언트를 설치하며 배포 지점을 사용할 수 없을 경우에는 관리 지점으로 대체할 수 있습니다. 그러나 사용자는 CCMSetup 명령줄 속성인 **/source:<경로\>**를 사용하면 대체 원본에서 Windows 클라이언트를 컴퓨터에 설치할 수 있습니다. 예를 들어 인터넷에서 클라이언트를 설치할 경우 이러한 작업을 수행할 수 있습니다. 다른 예로는, 필요한 포트가 방화벽에서 차단되거나 낮은 대역폭 연결을 사용하는 이유 등으로 클라이언트 설치 중 컴퓨터와 관리 지점 간에 네트워크 패킷을 전송하지 않으려는 경우를 들 수 있습니다. 그러나 모든 클라이언트는 관리 지점과 통신해야 사이트에 할당될 수 있으며 Configuration Manager를 통해 관리될 수 있습니다.  
+ 기본적으로 모든 Windows 클라이언트 컴퓨터에서는 배포 지점을 사용하여 Configuration Manager 클라이언트를 설치하며 배포 지점을 사용할 수 없을 경우에는 관리 지점으로 대체할 수 있습니다. 그러나 사용자는 CCMSetup 명령줄 속성인 **/source:<경로\>** 를 사용하면 대체 원본에서 Windows 클라이언트를 컴퓨터에 설치할 수 있습니다. 예를 들어 인터넷에서 클라이언트를 설치할 경우 이러한 작업을 수행할 수 있습니다. 다른 예로는, 필요한 포트가 방화벽에서 차단되거나 낮은 대역폭 연결을 사용하는 이유 등으로 클라이언트 설치 중 컴퓨터와 관리 지점 간에 네트워크 패킷을 전송하지 않으려는 경우를 들 수 있습니다. 그러나 모든 클라이언트는 관리 지점과 통신해야 사이트에 할당될 수 있으며 Configuration Manager를 통해 관리될 수 있습니다.  
 
- CCMSetup 명령줄 속성 **/source:<경로\>**에 대한 자세한 내용은 [System Center Configuration Manager의 클라이언트 설치 속성 정보](../../../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  
+ CCMSetup 명령줄 속성 **/source:<경로\>** 에 대한 자세한 내용은 [System Center Configuration Manager의 클라이언트 설치 속성 정보](../../../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  
 
  계층에서 둘 이상의 관리 지점을 설치할 경우 클라이언트는 포리스트 멤버 자격 및 네트워크 위치에 따라 관리 지점 하나에 자동으로 연결합니다. 하나의 보조 사이트에 둘 이상의 관리 지점을 설치할 수 없습니다.  
 

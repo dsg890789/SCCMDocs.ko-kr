@@ -1,25 +1,20 @@
 ---
-title: "보고 계획"
+title: 보고 계획
 titleSuffix: Configuration Manager
-description: "설치 세부 정보부터 보안 및 네트워크 대역폭에 이르기까지 Configuration Manager의 보고 계획은 중요합니다."
-ms.custom: na
+description: 설치 세부 정보부터 보안 및 네트워크 대역폭에 이르기까지 Configuration Manager의 보고 계획은 중요합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: ff920c84-d5c8-458c-b67f-bc7219b05690
-caps.latest.revision: "6"
-author: Dougeby
-ms.author: dougeby
-manager: angrobe
-ms.openlocfilehash: 9d7c8de64c412b19fff4fa8c4193a020de680407
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 21b9e2b685890cde4c9cc2a0fa57bc9118dcc665
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="planning-for-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager의 보고 계획
 

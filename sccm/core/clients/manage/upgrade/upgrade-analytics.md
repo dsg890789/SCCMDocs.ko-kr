@@ -1,23 +1,20 @@
 ---
 title: 업그레이드 준비
-titleSuffix: System Center Configuration Manager
+titleSuffix: Configuraton Manager
 description: 업그레이드 준비를 Configuration Manager와 통합합니다. 관리 콘솔에서 업그레이드 호환성 데이터에 액세스합니다. 업그레이드 또는 수정 대상 장치를 지정합니다.
-keywords: ''
-author: mestew
-ms.author: mstewart
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
 ms.date: 03/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: configuration-manager
-ms.service: ''
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.assetid: 68407ab8-c205-44ed-9deb-ff5714451624
-ms.openlocfilehash: 96f20c3559ac08cb4c5a16d1d33b74c63a02e4b7
-ms.sourcegitcommit: f0bfd9fa0ec5b416f0ea2beee889b94e2ad9c97d
+ms.openlocfilehash: 4360fc34e06d4c62c137f8c956274104112d54a8
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="integrate-upgrade-readiness-with-system-center-configuration-manager"></a>업그레이드 준비를 System Center Configuration Manager와 통합
 

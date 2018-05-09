@@ -2,25 +2,19 @@
 title: 비즈니스용 Microsoft Store에서 앱 관리
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager를 사용하여 비즈니스용 Microsoft Store에서 앱을 관리 및 배포합니다.
-ms.custom: na
 ms.date: 12/29/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-app
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-app
+ms.topic: conceptual
 ms.assetid: 8cdb22a6-72d7-41f5-9bed-c098b1bcf675
-caps.latest.revision: 11
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: 89bb52b806c99395bca14be34d06611174823a3c
-ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
+manager: dougeby
+ms.openlocfilehash: 4999784140ece9df49a28063e8660566f7206df0
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manage-apps-from-the-microsoft-store-for-business-with-system-center-configuration-manager"></a>System Center Configuration Manager로 비즈니스용 Microsoft Store에서 앱 관리
 [비즈니스용 Microsoft Store](https://www.microsoft.com/business-store)에서 조직을 위한 Windows 앱을 찾아서 개별적으로 또는 대량으로 구매할 수 있습니다. 스토어를 Configuration Manager에 연결하면 구매한 앱 목록을 Configuration Manager와 동기화할 수 있습니다. 동기화한 후에는 Configuration Manager 콘솔에서 앱 목록을 보고 다른 앱을 배포하는 것과 마찬가지로 배포할 수 있습니다.

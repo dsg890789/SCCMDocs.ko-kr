@@ -1,26 +1,20 @@
 ---
-title: "운영 체제 이미지 사용자 지정 "
+title: '운영 체제 이미지 사용자 지정 '
 titleSuffix: Configuration Manager
-description: "캡처 및 빌드 작업 순서, 수동 구성 또는 이 둘의 조합을 사용하여 운영 체제 이미지를 사용자 지정할 수 있습니다."
-ms.custom: na
+description: 캡처 및 빌드 작업 순서, 수동 구성 또는 이 둘의 조합을 사용하여 운영 체제 이미지를 사용자 지정할 수 있습니다.
 ms.date: 01/23/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-osd
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 95033a9b-ff13-4b70-b1de-bcb25bcb6024
-caps.latest.revision: "12"
-caps.handback.revision: "0"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: ae70c30b4dba85ae2f0693d70f27dcceb7700fcc
-ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
+manager: dougeby
+ms.openlocfilehash: b9a3f4583944f0818f74930753bad99e3408a928
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="customize-operating-system-images-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 운영 체제 이미지 사용자 지정
 

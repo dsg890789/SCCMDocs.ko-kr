@@ -1,27 +1,20 @@
 ---
-title: "독립 실행형 미디어 만들기"
+title: 독립 실행형 미디어 만들기
 titleSuffix: Configuration Manager
-description: "독립 실행형 미디어를 사용하여 네트워크에 연결하지 않고 컴퓨터에 운영 체제를 배포합니다."
-ms.custom: na
+description: 독립 실행형 미디어를 사용하여 네트워크에 연결하지 않고 컴퓨터에 운영 체제를 배포합니다.
 ms.date: 02/09/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-osd
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-osd
+ms.topic: conceptual
 ms.assetid: c6b9ccd2-78d9-4f0e-b25a-70d0866300ba
-caps.latest.revision: 
-caps.handback.revision: 
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 587804b026f01f25754a10f35967d18d0b8d471d
-ms.sourcegitcommit: fbde417e3c3002898bd216a7e110e725ae269893
+ms.openlocfilehash: 35dd110c2566dab945bb0701e113becb3412d65c
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-stand-alone-media-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 독립 실행형 미디어 만들기
 

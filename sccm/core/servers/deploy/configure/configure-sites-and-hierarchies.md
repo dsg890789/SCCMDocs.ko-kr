@@ -1,25 +1,20 @@
 ---
-title: "사이트 구성"
+title: 사이트 구성
 titleSuffix: Configuration Manager
-description: "사이트와 계층 모두에 영향을 주는 가장 일반적인 구성을 고려하려면 이 검사 목록을 참조하세요."
-ms.custom: na
+description: 사이트와 계층 모두에 영향을 주는 가장 일반적인 구성을 고려하려면 이 검사 목록을 참조하세요.
 ms.date: 2/7/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: 9efb4061-f642-48bd-8332-3357ff5b3118
-caps.latest.revision: "15"
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 55daf30e3386e53f3711c07fa971750d6aa33423
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 8a74f998c7bae22d94f2471724c2d51de918dfc4
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-sites-and-hierarchies-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 사이트 및 계층 구조 구성
 
@@ -40,7 +35,7 @@ ms.lasthandoff: 12/04/2017
 |------------|-------------|  
 |역할 기반 관리 구성|관리 할당을 구분하여 Configuration Manager 환경의 여러 개체와 데이터를 보고 관리할 수 있는 관리자를 제어합니다.<br /><br /> 계층 구조의 모든 사이트가 역할 기반 관리의 구성을 공유합니다.   <br/><br/>자세한 내용은 [System Center Configuration Manager용 역할 기반 관리 구성](../../../../core/servers/deploy/configure/configure-role-based-administration.md)을 참조하세요.|  
 |AD DS(Active Directory Domain Services)에 사이트 데이터 게시|클라이언트에서 서비스를 쉽게 찾고 사이트 리소스를 효율적으로 사용하도록 합니다.<br /><br /> 먼저 [System Center Configuration Manager에 대한 Active Directory 스키마를 확장](../../../../core/plan-design/network/extend-the-active-directory-schema.md)한 후 각 사이트를 [System Center Configuration Manager용으로 사이트 데이터를 게시](../../../../core/servers/deploy/configure/publish-site-data.md)하도록 개별적으로 구성해야 합니다.|  
-|서비스 연결 지점 구성|계층 구조의 최상위 계층 사이트에서 서비스 연결 지점 설치 및 구성을 계획해야 합니다. 자세한 내용은 [System Center Configuration Manager의 서비스 연결 지점 정보](../../../../core/servers/deploy/configure/about-the-service-connection-point.md)을 참조하십시오.|  
+|서비스 연결 지점 구성|계층 구조의 최상위 계층 사이트에서 서비스 연결 지점 설치 및 구성을 계획해야 합니다. 자세한 내용은 [About the service connection point in System Center Configuration Manager](../../../../core/servers/deploy/configure/about-the-service-connection-point.md)을 참조하십시오.|  
 |사이트 시스템 역할 추가|개별 사이트의 추가 사이트 시스템 역할을 하나 이상 설치합니다.  자세한 내용은 [Add site system roles for System Center Configuration Manager](../../../../core/servers/deploy/configure/add-site-system-roles.md)섹션을 참조하세요.|  
 |사이트 경계 및 경계 그룹 구성|관리할 장치를 포함할 수 있는 인트라넷의 네트워크 위치를 정의하는 경계를 지정합니다. 그런 다음 해당 네트워크 위치의 클라이언트에서 Configuration Manager 리소스를 찾을 수 있도록 경계 그룹을 구성합니다. 자세한 내용은 [System Center Configuration Manager에 대한 사이트 경계 및 경계 그룹 정의](../../../../core/servers/deploy/configure/define-site-boundaries-and-boundary-groups.md)를 참조하세요.|  
 |배포 지점 그룹 구성|배포를 쉽게 관리할 수 있도록 배포 지점의 논리적 그룹을 구성합니다. 자세한 내용은 [System Center Configuration Manager의 배포 지점 설치 및 구성](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md) 항목의 [배포 지점 그룹 관리](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md#bkmk_manage)를 참조하세요.|  

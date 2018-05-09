@@ -1,25 +1,20 @@
 ---
-title: "사이트에 클라이언트 할당"
+title: 사이트에 클라이언트 할당
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 사이트에 클라이언트 할당"
-ms.custom: na
+description: System Center Configuration Manager에서 사이트에 클라이언트 할당
 ms.date: 04/23/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-client
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: ba9b623f-6e86-4006-93f2-83d563de0cd0
-caps.latest.revision: "10"
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.openlocfilehash: e11287659f6df5503cdabf203cdffa7655232acd
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 15467e83be28e884acb14309bdbb57768d7f19f0
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-assign-clients-to-a-site-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사이트에 클라이언트를 할당하는 방법
 
@@ -105,7 +100,7 @@ Configuration Manager는 Configuration Manager(현재 분기) 클라이언트를
      클라이언트에서 먼저 Active Directory Domain Services를 확인하고 게시된 Configuration Manager(현재 분기) 사이트를 찾을 경우 사이트 할당이 성공합니다. Configuration Manager 사이트가 게시되지 않았거나 컴퓨터가 작업 그룹 클라이언트인 이유 등으로 이 작업이 실패하면 클라이언트는 할당된 관리 지점에서 사이트 정보를 확인합니다.  
 
     > [!NOTE]  
-    >  클라이언트 설치 중 Client.msi 속성 **SMSMP=&lt;server_name>**을 사용하여 클라이언트에 관리 지점을 할당할 수 있습니다.  
+    >  클라이언트 설치 중 Client.msi 속성 **SMSMP=&lt;server_name>** 을 사용하여 클라이언트에 관리 지점을 할당할 수 있습니다.  
 
      두 방법 모두 실패하면 사이트 할당은 실패하고 이 경우 수동으로 클라이언트를 할당해야 합니다.  
 
@@ -115,7 +110,7 @@ Configuration Manager는 Configuration Manager(현재 분기) 클라이언트를
 
  사이트 호환성 검사에는 다음 조건 중 하나가 필요합니다.  
 
--   클라이언트가 Active Directory Domain Services에 게시되는 사이트 정보에 액세스할 수 있습니다.  
+-   클라이언트가 Active Directory 도메인 서비스에 게시되는 사이트 정보에 액세스할 수 있습니다.  
 
 -   클라이언트에서 사이트 내 관리 지점과 통신할 수 있습니다.  
 

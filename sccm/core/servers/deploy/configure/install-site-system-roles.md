@@ -1,25 +1,20 @@
 ---
-title: "사이트 시스템 역할 설치"
+title: 사이트 시스템 역할 설치
 titleSuffix: Configuration Manager
-description: "마법사를 사용하여 사이트의 기존 또는 새 사이트 시스템 서버에 사이트 시스템 역할을 추가할 수 있습니다."
-ms.custom: na
+description: 마법사를 사용하여 사이트의 기존 또는 새 사이트 시스템 서버에 사이트 시스템 역할을 추가할 수 있습니다.
 ms.date: 2/7/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 61f5c774-7667-44ae-b8e4-a4951318b183
-caps.latest.revision: "4"
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 82be333fcca636dfd68763cdfa7e97d0eaf14915
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 7edfc72195b289488242adcbd1903dbacf26bfe2
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-site-system-roles-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 사이트 시스템 역할 설치
 

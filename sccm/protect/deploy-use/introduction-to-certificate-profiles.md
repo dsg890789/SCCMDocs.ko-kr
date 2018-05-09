@@ -2,25 +2,19 @@
 title: 인증서 프로필 소개
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager의 인증서 프로필이 Active Directory 인증서 서비스에서 작동하는 방식을 알아봅니다.
-ms.custom: na
 ms.date: 04/10/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.technology: configmgr-protect
+ms.topic: conceptual
 ms.assetid: 41dcc259-f147-4420-bff2-b65bdf8cff77
-caps.latest.revision: 7
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0e82c9704c0505c8c7ed9ef3d04260ca74026999
-ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
+ms.openlocfilehash: c4230b935b7fabc44743d57fcb2315348edb4274
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="introduction-to-certificate-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager의 인증서 프로필 소개
 

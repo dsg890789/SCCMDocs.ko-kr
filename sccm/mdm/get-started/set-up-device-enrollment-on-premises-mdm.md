@@ -1,25 +1,20 @@
 ---
-title: "장치 등록 설정 "
+title: '장치 등록 설정 '
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 위해 장치를 등록할 수 있는 권한을 사용자에게 부여합니다."
-ms.custom: na
+description: System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 위해 장치를 등록할 수 있는 권한을 사용자에게 부여합니다.
 ms.date: 03/05/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: 9ffaea91-1379-4b86-9953-b25e152f56a9
-caps.latest.revision: "10"
-author: dougeby
-ms.author: dougeby
-manager: angrobe
-ms.openlocfilehash: 50aef3a2e523353d488a53eed0b346ddfef42478
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 7d0424b662df4baba7374685dd7631347501352c
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-up-device-enrollment-for-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 위한 장치 등록 설정
 
@@ -44,7 +39,7 @@ ms.lasthandoff: 10/12/2017
 
 3.  사용자 설정에서 **Allow users to enroll modern devices(최신 장치 등록 허용)** 에 대해 **예**를 선택합니다.  
 
-4.  **최신 장치 등록 프로필** 옆에 있는 **프로필 설정...**을 클릭한 후 **만들기...**를 클릭합니다.  
+4.  **최신 장치 등록 프로필** 옆에 있는 **프로필 설정...** 을 클릭한 후 **만들기...** 를 클릭합니다.  
 
 5.  등록 프로필 만들기에서 등록 프로필의 이름을 입력하고 등록 프로필이 있는 사용자가 사용하게 하려는 관리 사이트 코드를 선택합니다. **확인** 을 여러 번 클릭하여 기본 설정 페이지를 종료합니다.  
 
@@ -77,7 +72,7 @@ ms.lasthandoff: 10/12/2017
 
 1.  장치에 등록하려면 루트 인증서 파일을 찾아 두 번 클릭합니다.  
 
-2.  인증서 창에서 **인증서 설치...**를 클릭합니다.  
+2.  인증서 창에서 **인증서 설치...** 를 클릭합니다.  
 
 3.  인증서 가져오기 마법사에서 **로컬 컴퓨터**를 선택하고 **다음**을 클릭합니다.  
 
