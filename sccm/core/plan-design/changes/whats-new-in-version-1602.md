@@ -61,7 +61,7 @@ System Center Configuration Manager 업데이트 1602는 버전 1511을 실행�
 
 -   이제 사용 가능한 Windows 10 업그레이드가 Configuration Manager 콘솔의 **Windows 10 서비스** \ **모든 Windows 10 업데이트** 노드에만 표시됩니다. 이러한 업데이트는 더 이상 콘솔의 **소프트웨어 업데이트** \ **모든 소프트웨어 업데이트** 노드에 표시되지 않습니다.  
 
--   서비스 계획은 높은 위험 수준의 배포로 간주되며 **컬렉션 선택** 창에는 사이트 속성에서 구성한 배포 확인 설정을 충족하는 사용자 지정 컬렉션만 표시됩니다. 자세한 내용은 [Settings to manage high-risk deployments for System Center Configuration Manager](../../../protect/understand/settings-to-manage-high-risk-deployments.md)항목을 참조하세요.  
+-   서비스 계획은 높은 위험 수준의 배포로 간주되며 **컬렉션 선택** 창에는 사이트 속성에서 구성한 배포 확인 설정을 충족하는 사용자 지정 컬렉션만 표시됩니다. 자세한 내용은 [System Center Configuration Manager에 대해 위험 수준이 높은 배포를 관리하기 위한 설정](../../../protect/understand/settings-to-manage-high-risk-deployments.md)항목을 참조하세요.  
 
 -   이제 Windows 10 업그레이드 패키지를 시작하는 사용자는 해당 운영 체제를 업그레이드할 것임을 알리는 메시지를 받습니다.  
 

@@ -164,7 +164,7 @@ Configuration Manager 관리자는 SMS 공급자를 사용하여 데이터베이
 WMI 컨트롤 MMC 스냅인을 사용하면 SMS Admins 그룹 권한을 보고 구성할 수 있습니다. 기본적으로는 **모든 사용자** 에게 **메서드 실행**, **공급자 쓰기**및 **계정 사용** 권한이 있습니다. SMS 공급자에 연결하는 사용자는 Configuration Manager 콘솔에 정의된 역할 기반 관리 보안 권한에 따라 사이트 데이터베이스의 데이터에 대한 액세스할 수 있는 권한을 부여받습니다. SMS Admins 그룹에는 **Root\SMS** 네임스페이스에 대한 **계정 사용** 및 **원격으로부터 사용 가능** 권한이 명시적으로 부여됩니다.  
 
 > [!NOTE]  
->  원격 Configuration Manager 콘솔을 사용하는 각 관리자에게는 사이트 서버 컴퓨터 및 SMS 공급자 컴퓨터에 대한 원격 활성화 DCOM 권한이 필요합니다. 이 권한은 모든 사용자나 그룹에게 부여할 수 있지만 간편한 관리를 위해 SMS Admins 그룹에게만 부여하는 것이 좋습니다. 자세한 내용은 [Modify your System Center Configuration Manager infrastructure](../../../core/servers/manage/modify-your-infrastructure.md)(System Center Configuration Manager 인프라 수정) 항목의 [Configure DCOM permissions for remote Configuration Manager consoles](../../../core/servers/manage/modify-your-infrastructure.md#BKMK_ConfigDCOMforRemoteConsole)(원격 Configuration Manager 콘솔에 대한 DCOM 권한 구성) 섹션을 참조하세요.  
+>  원격 Configuration Manager 콘솔을 사용하는 각 관리자에게는 사이트 서버 컴퓨터 및 SMS 공급자 컴퓨터에 대한 원격 활성화 DCOM 권한이 필요합니다. 이 권한은 모든 사용자나 그룹에게 부여할 수 있지만 간편한 관리를 위해 SMS Admins 그룹에게만 부여하는 것이 좋습니다. 자세한 내용은 참조는 [원격 Configuration Manager 콘솔에 대 한 Configure DCOM permissions](../../../core/servers/manage/modify-your-infrastructure.md#BKMK_ConfigDCOMforRemoteConsole) 섹션은 [System Center Configuration Manager 인프라 수정](../../../core/servers/manage/modify-your-infrastructure.md) 항목입니다.  
 
 
 ##  <a name="BKMK_SMSProvNamespace"></a> SMS 공급자 네임스페이스 정보  
