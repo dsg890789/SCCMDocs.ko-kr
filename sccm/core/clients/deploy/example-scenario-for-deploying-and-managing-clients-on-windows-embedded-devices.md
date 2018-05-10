@@ -79,7 +79,7 @@ Coho Vineyard & Winery에서는 방문자 센터를 개설할 예정이며 Windo
 
      이러한 장치는 Active Directory 도메인에 추가되어 있기 때문에 신뢰할 수 있는 클라이언트로 수동 승인하지 않아도 되며, Configuration Manager 콘솔에서 승인되어 있는 것을 확인합니다.  
 
-     자세한 내용은 [How to manage clients in System Center Configuration Manager](../../../core/clients/manage/manage-clients.md)항목을 참조하세요.  
+     자세한 내용은 [System Center Configuration Manager에서 클라이언트를 관리하는 방법](../../../core/clients/manage/manage-clients.md)항목을 참조하세요.  
 
 8.  대화형 프레젠테이션 소프트웨어를 설치하기 위해 Jane은 **소프트웨어 배포 마법사** 를 실행하고 필수 응용 프로그램을 구성합니다. 마법사의 **사용자 환경** 페이지에 있는 **Windows Embedded 장치에 대한 쓰기 필터 처리** 섹션에서 기본 옵션인 **최종 기한에 또는 유지 관리 기간 동안 변경 내용 커밋(다시 시작해야 함)** 을 적용합니다.  
 
