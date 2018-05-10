@@ -2,26 +2,19 @@
 title: 랩 설정
 titleSuffix: Configuration Manager
 description: 시뮬레이트된 실제 작업을 사용하여 Configuration Manager를 평가하기 위한 랩을 설정합니다.
-ms.custom: na
 ms.date: 09/21/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: b1970688-0cd2-404f-a17f-9e2aa4a78758
-caps.latest.revision: 11
-caps.handback.revision: 0
-author: erikje
-ms.author: erikje
-manager: angrobe
-ms.openlocfilehash: 3441cb417a0b8fc7979b71018f6cfa345c47a02d
-ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: a1799dcffa55de80c0c700a56301d7d71f3b4a48
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-up-your-system-center-configuration-manager-lab"></a>System Center Configuration Manager 랩 설정
 
@@ -106,7 +99,7 @@ ms.lasthandoff: 04/16/2018
 
 1.  **ADSI 편집**을 실행하고 사이트 서버가 있는 도메인에 연결합니다.  
 
-2.  **도메인&lt;컴퓨터의 정규화된 도메인 이름\>**, **<고유 이름\>**을 차례로 확장한 다음 **CN=System**을 마우스 오른쪽 단추로 클릭하고 **새로 만들기**, **개체**를 차례로 클릭합니다.  
+2.  **도메인&lt;컴퓨터의 정규화된 도메인 이름\>**, **<고유 이름\>** 을 차례로 확장한 다음 **CN=System**을 마우스 오른쪽 단추로 클릭하고 **새로 만들기**, **개체**를 차례로 클릭합니다.  
 
 3.  **개체 만들기** 대화 상자에서 **컨테이너**를 선택한 후 **다음**을 클릭합니다.  
 
@@ -165,7 +158,7 @@ ms.lasthandoff: 04/16/2018
 
 #### <a name="to-install-net-and-activate-windows-communication-foundation"></a>.NET을 설치하고 Windows Communication Foundation을 활성화하려면  
 
-1.  **Server Manager**를 연 다음 **관리**로 이동합니다. **역할 및 기능 추가** 를 클릭하여 **역할 및 기능 추가 Wizard.**를 엽니다.  
+1.  **Server Manager**를 연 다음 **관리**로 이동합니다. **역할 및 기능 추가** 를 클릭하여 **역할 및 기능 추가 Wizard.** 를 엽니다.  
 
 2.  **시작하기 전에** 패널에서 제공된 정보를 검토하고 **다음**을 클릭합니다.  
 
@@ -341,7 +334,7 @@ IIS(인터넷 정보 서비스)는 웹에서 서비스를 호스트하는 데 �
 
 2.  **기능 보기** 가 **홈** 화면의 맨 아래에서 선택되었는지 확인합니다. **IIS** 로 이동하고 **요청 필터링**을 엽니다.  
 
-3.  **작업** 창에서 **파일 이름 확장명 허용...**을 클릭합니다.  
+3.  **작업** 창에서 **파일 이름 확장명 허용...** 을 클릭합니다.  
 
 4.  대화 상자에 **.msi** 을 입력하고 **확인**을 클릭합니다.  
 

@@ -147,7 +147,7 @@ Technical Preview 버전 1612부터 새로운 명령줄 도구(**ContentLibraryC
 
 이 도구는 도구를 실행할 때 지정한 배포 지점의 콘텐츠에만 영향을 주며 사이트 서버의 콘텐츠 라이브러리에서 콘텐츠를 제거할 수 없습니다.
 
-Technical Preview 1612를 설치한 후 Technical Preview 사이트 서버의 *%CM_Installation_Path%\cd.latest\SMSSETUP\TOOLS\ContentLibraryCleanup\* 폴더에서 **ContentLibraryCleanup.exe**를 찾을 수 있습니다.
+Technical Preview 1612를 설치한 후 Technical Preview 사이트 서버의 \*%CM_Installation_Path%\cd.latest\SMSSETUP\TOOLS\ContentLibraryCleanup\* 폴더에서 **ContentLibraryCleanup.exe**를 찾을 수 있습니다.
 
 이 Technical Preview와 함께 릴리스된 도구는 이전 Configuration Manager 제품에 대해 릴리스된 이전 버전의 유사 도구를 대체합니다. 이 도구 버전은 2017년 3월 1일 후에 작동이 중단되지만 이 도구가 현재 분기 또는 프로덕션 준비 대역 외 릴리스의 일부로 릴리스될 때까지 이후 Technical Preview와 함께 새 버전이 릴리스됩니다.
 
