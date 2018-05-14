@@ -1,31 +1,26 @@
 ---
-title: "DEP(장치 등록 프로그램)를 사용하여 iOS 장치 등록 "
+title: 'DEP(장치 등록 프로그램)를 사용하여 iOS 장치 등록 '
 titleSuffix: Configuration Manager
-description: "Configuration Manager 및 Intune에서 하이브리드 배포를 위해 iOS DEP(장치 등록 프로그램) 등록을 사용하도록 설정합니다."
-ms.custom: na
+description: Configuration Manager 및 Intune에서 하이브리드 배포를 위해 iOS DEP(장치 등록 프로그램) 등록을 사용하도록 설정합니다.
 ms.date: 09/22/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 78d44adc-9b1c-4bc6-b72d-e93873916ea6
-caps.latest.revision: "9"
-author: dougeby
-ms.author: dougeby
-manager: angrobe
-ms.openlocfilehash: 1d8a1765b599daa98014feeb3d88efe9a07cb907
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: a4a6d8d67060dbf7c5bc75892d2f231bce67df8f
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ios-device-enrollment-program-dep-enrollment-for-hybrid-deployments-with-configuration-manager"></a>Configuration Manager에서의 하이브리드 배포를 위한 iOS DEP(장치 등록 프로그램) 등록
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-회사에서 Apple 장비 등록 프로그램을 통해 iOS 장치를 구입한 다음 Microsoft Intune을 사용하여 관리할 수 있습니다. Apple DEP(장치 등록 프로그램)를 사용하여 회사 소유 iOS 장치를 관리하려는 회사에서는 Apple에서 요구하는 단계를 완료하여 프로그램에 참여하고 해당 프로그램을 통해 장치를 가져와야 합니다. 해당 프로세스의 세부 정보는  [https://deploy.apple.com](https://deploy.apple.com)으로 관리할 수 있습니다. 이 프로그램의 이점 중 하나는 USB로 각 장치를 컴퓨터에 연결하지 않고도 장치를 자동 설치할 수 있다는 것입니다.  
+회사에서 Apple 장비 등록 프로그램을 통해 iOS 장치를 구입한 다음 Microsoft Intune을 사용하여 관리할 수 있습니다. Apple DEP(장치 등록 프로그램)를 사용하여 회사 소유 iOS 장치를 관리하려는 회사에서는 Apple에서 요구하는 단계를 완료하여 프로그램에 참여하고 해당 프로그램을 통해 장치를 가져와야 합니다. 해당 프로세스의 세부 정보는 [https://deploy.apple.com](https://deploy.apple.com)에 제공됩니다. 이 프로그램의 이점 중 하나는 USB로 각 장치를 컴퓨터에 연결하지 않고도 장치를 자동 설치할 수 있다는 것입니다.  
 
  회사 소유 iOS 장치를 DEP에 등록하려면 Apple의 DEP 토큰이 필요합니다. Intune에서는 이 토큰을 통해 회사에서 소유한 DEP 참가 장치에 대한 정보를 동기화할 수 있습니다. 또한 Intune에서 등록 프로필을 Apple에 업로드하고 해당 프로필에 장치를 할당할 수 있게 합니다.  
 
@@ -39,7 +34,7 @@ ms.lasthandoff: 10/12/2017
 2.  **DEP 토큰 요청 만들기**   
     Configuration Manager 콘솔의 **관리** 작업 영역에서 **계층 구성**, **클라우드 서비스**를 차례로 확장하고 **Microsoft Intune 구독**을 클릭합니다. **홈** 탭에서 **DEP 토큰 요청 만들기** 를 클릭하고 **찾아보기** 를 클릭하여 DEP 토큰 요청에 대한 다운로드 위치를 지정한 후에 **다운로드**를 클릭합니다. DEP 토큰 요청(.pem) 파일을 로컬로 저장합니다. .pem 파일은 Apple 장치 등록 프로그램 포털에서 신뢰할 수 있는 토큰(.p7m)을 요청하는 데 사용됩니다.  
 3.  **장치 등록 프로그램 토큰 가져오기**   
-    [장치 등록 프로그램 포털](https://deploy.apple.com) (https://deploy.apple.com) 로 이동하고 회사 Apple ID로 로그인합니다. 나중에 DEP 토큰을 갱신하려면 이 Apple ID를 사용해야 합니다.  
+    [장비 등록 프로그램 포털](https://deploy.apple.com)(https://deploy.apple.com)로 이동하여 회사 Apple ID로 로그인합니다. 나중에 DEP 토큰을 갱신하려면 이 Apple ID를 사용해야 합니다.  
     1.  [장치 등록 프로그램 포털](https://deploy.apple.com)에서 **장치 등록 프로그램** > **서버 관리**로 이동한 후 **MDM 서버 추가**를 클릭합니다.  
     ![장비 등록 프로그램 포털에서 MDM 서버 추가 스크린샷](../media/enrollment-program-token-add-server.png)
     2.  **MDM 서버 이름**을 입력한 다음 **다음**을 클릭합니다. 서버 이름은 참조용으로 MDM 서버를 식별하기 위한 것으로, Intune 또는 Configuration Manager 서버의 URL이나 이름이 아닙니다.  
@@ -97,7 +92,7 @@ ms.lasthandoff: 10/12/2017
 
 ## <a name="assign-dep-devices-for-management"></a>관리할 DEP 장치 할당
 
-1. [장치 등록 프로그램 포털](https://deploy.apple.com) (https://deploy.apple.com) 로 이동하고 회사 Apple ID로 로그인합니다.
+1. [장비 등록 프로그램 포털](https://deploy.apple.com)(https://deploy.apple.com)로 이동하여 회사 Apple ID로 로그인합니다.
 2. **배포 프로그램** > **장치 등록 프로그램** > **장치 관리**으로 관리할 수 있습니다. **장치 선택**방법을 지정하고, 장치 정보를 제공한 다음 장치 **일련번호**, **주문 번호**또는 **CSV 파일 업로드**에 따라 세부 정보를 지정합니다. **서버에 할당**을 선택하고 3단계에서 지정한 <*서버 이름*>을 선택한 후 **확인**을 클릭합니다.  
 ![장치를 추가하는 Apple 장비 등록 프로그램 포털 스크린샷](../media/enrollment-program-token-specify-serial.png)
 

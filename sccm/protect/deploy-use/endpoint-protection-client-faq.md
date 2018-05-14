@@ -1,25 +1,20 @@
 ---
-title: "Endpoint Protection 클라이언트에 대한 질문과 대답"
+title: Endpoint Protection 클라이언트에 대한 질문과 대답
 titleSuffix: Configuration Manager
-description: "Windows Defender 및 Endpoint Protection에 대한 질문과 대답을 확인합니다."
-ms.custom: na
+description: Windows Defender 및 Endpoint Protection에 대한 질문과 대답을 확인합니다.
 ms.date: 12/09/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-protect
+ms.topic: conceptual
 ms.assetid: e3aaa9d2-a40e-42b1-ad75-5a115351729e
-caps.latest.revision: "15"
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.openlocfilehash: 2656a5c40dbd2916ef36268936a4e2163ebde14d
-ms.sourcegitcommit: 372171a5cd8d143d6d47b651018cda0c91cad67c
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 7e86c8196cf2ff2473b066fccf741c2df20cd8f9
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="endpoint-protection-client-frequently-asked-questions"></a>Endpoint Protection 클라이언트에 대한 질문과 대답
 
@@ -158,7 +153,7 @@ Windows Defender에서 검색된 사용자 동의 없이 설치되거나 컴퓨�
 
 -   바이러스 백신 및 스파이웨어 방지 소프트웨어인 Windows Defender는 잠재적인 위협에 대해 최신 업데이트를 사용합니다(바이러스 및 스파이웨어 정의를 최신 상태로 유지하려면 어떻게 해야 하나요? 참조). 또한 항상 최신 버전의 Windows Defender를 사용해야 합니다.  
 
--   신뢰할 수 있는 원본의 업데이트만 다운로드합니다. Windows 운영 체제의 경우 항상 [Microsoft 업데이트](http://go.microsoft.com/fwlink/?LinkID=96304) (http://go.microsoft.com/fwlink/?LinkID=96304)로 이동하고, 다른 소프트웨어의 경우에는 항상 해당 소프트웨어를 생성한 회사 또는 사람의 합법적인 웹 사이트를 사용하세요.  
+-   신뢰할 수 있는 원본의 업데이트만 다운로드합니다. Windows 운영 체제의 경우 항상 [Microsoft 업데이트](http://go.microsoft.com/fwlink/?LinkID=96304)(http://go.microsoft.com/fwlink/?LinkID=96304)로 이동하고, 다른 소프트웨어의 경우에는 항상 해당 소프트웨어를 생성한 회사 또는 사람의 합법적인 웹 사이트를 사용하세요.  
 
 -   출처가 불확실한 첨부 파일이 있는 전자 메일을 받는 경우 즉시 삭제해야 합니다. 알 수 없는 원본의 응용 프로그램이나 파일을 다운로드하지 말고 다른 사용자와 파일을 주고받는 경우 특히 주의하세요.  
 
@@ -219,7 +214,7 @@ Windows Defender에서 검색된 사용자 동의 없이 설치되거나 컴퓨�
 |모든 다운로드 검색|이 옵션은 파일 및 ActiveX ® 컨트롤 및 소프트웨어 설치 프로그램과 같이 Windows Internet Explorer 및 Microsoft Outlook® Express를 통해 자동으로 다운로드되는 파일을 비롯하여 다운로드 파일 및 프로그램을 모니터링합니다. 이러한 파일은 브라우저 자체에서 다운로드, 설치 또는 실행될 수 있습니다. 바이러스, 스파이웨어 및 기타 사용자 동의 없이 설치되는 소프트웨어를 비롯한 악성 소프트웨어가 이러한 파일에 포함되어 사용자 모르게 설치될 수 있습니다.<br /><br /> 실시간 보호 옵션을 사용하면 Windows Defender는 항상 컴퓨터를 모니터링하고 다운로드되었을 수 있는 악의적인 파일 또는 프로그램을 확인합니다. 이 모니터링 기능은 사용자가 다운로드하려는 파일 또는 프로그램을 확인하도록 요구하여 Windows Defender로 인해 탐색 또는 전자 메일 환경이 느려지지 않도록 합니다.|  
 |컴퓨터에서 파일 및 프로그램 활동 모니터|이 옵션은 파일 및 프로그램이 컴퓨터에서 실행되기 시작하면 모니터링을 수행하고 수행할 작업 및 수행된 작업을 사용자에게 알립니다. 악성 소프트웨어는 사용자가 설치한 프로그램의 취약점을 악용하여 사용자 모르게 악성 또는 동의 없이 설치된 소프트웨어를 실행할 수 있으므로 이러한 알림은 매우 중요합니다. 예를 들어 스파이웨어는 사용자가 자주 사용자는 프로그램을 시작하면 백그라운드에서 자체적으로 실행될 수 있습니다. Windows Defender는 프로그램을 모니터링하고 의심스러운 활동이 감지되면 경고합니다.|  
 |동작 모니터링 사용|이 옵션은 기존의 바이러스 백신 검색 방법으로 검색될 수 없는 의심스러운 패턴의 동작 모음을 모니터링합니다.|  
-|네트워크 검사 시스템 사용|이 옵션은 알려진 취약점의 “제로 데이” 취약성 공격으로부터 컴퓨터를 보호하여, 취약점이 발견되는 시점과 업데이트가 적용되는 시점 사이의 기간을 줄입니다.|  
+|네트워크 검사 시스템 사용|이 옵션은 알려진 취약점의 "제로 데이" 취약성 공격으로부터 컴퓨터를 보호하여, 취약점이 발견되는 시점과 업데이트가 적용되는 시점 사이의 기간을 줄입니다.|  
 
 ### <a name="to-turn-off-real-time-protection"></a>실시간 보호를 해제하려면  
 

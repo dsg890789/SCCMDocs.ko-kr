@@ -1,25 +1,19 @@
 ---
-title: "Intune을 사용하여 관리되는 Windows Phone 장치에 대한 구성 항목을 만드는 방법"
+title: Intune을 사용하여 관리되는 Windows Phone 장치에 대한 구성 항목을 만드는 방법
 titleSuffix: Configuration Manager
-ms.custom: na
 ms.date: 03/05/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: df10dc4d-c9ff-4574-bb33-8d30eb14cfe3
-caps.latest.revision: "13"
-caps.handback.revision: "0"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: f0a032bfa1d8d6383caf3065678d9b0a4dd3dde0
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 4590077b303d5676aa72a816d785a0864fe2205f
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-create-configuration-items-for-windows-phone-devices-managed-without-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트 없이 관리되는 Windows Phone 장치에 대한 구성 항목을 만드는 방법
 System Center Configuration Manager **Windows Phone** 구성 항목을 사용하여 Microsoft Intune에 등록되어 있거나 Configuration Manager에서 온-프레미스로 관리되는 Windows Phone 장치에 대한 설정을 관리합니다.  
@@ -298,7 +292,7 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
 |설정|추가 정보|  
 |**차단되는 앱 목록**|사용자가 설치할 수 없는 앱 목록을 지정하려면 이 옵션을 선택합니다.|  
 |**허용되는 앱 목록**|사용자가 설치할 수 있는 앱 목록을 지정하려면 이 옵션을 선택합니다.|  
-|**추가**|앱을 선택한 목록에 추가합니다. 원하는 이름, 앱 게시자(선택 사항) 및 앱 스토어의 앱 URL을 지정합니다.<br /><br /> URL을 지정하려면 Windows Phone 스토어 페이지에서 사용하려는 앱을 검색합니다.<br /><br /> **예:** 스토어에서 **Skype** 앱을 검색합니다. 사용하는 URL이 http://www.windowsphone.com/ko-kr/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51이 됩니다.<br /><br /> 회사 포털 앱 또는 LOB(기간 업무) 앱의 경우 전체 URL을 지정할 필요가 없으며 앱 GUID만 지정하면 됩니다.|  
+|**추가**|앱을 선택한 목록에 추가합니다. 원하는 이름, 앱 게시자(선택 사항) 및 앱 스토어의 앱 URL을 지정합니다.<br /><br /> URL을 지정하려면 Windows Phone 스토어 페이지에서 사용하려는 앱을 검색합니다.<br /><br /> **예:** 스토어에서 **Skype** 앱을 검색합니다. 사용할 URL은 http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51입니다.<br /><br /> 회사 포털 앱 또는 LOB(기간 업무) 앱의 경우 전체 URL을 지정할 필요가 없으며 앱 GUID만 지정하면 됩니다.|  
 |**편집**|선택한 앱의 이름, 게시자 및 URL을 편집할 수 있습니다.|  
 |**제거**|목록에서 선택한 앱을 삭제합니다.|  
 |**가져오기**|지정한 앱 목록을 쉼표로 구분된 값 파일로 가져옵니다. 파일의 형식, 응용 프로그램 이름, 게시자, 앱 URL을 사용합니다.|  

@@ -1,27 +1,20 @@
 ---
-title: "Intune을 사용하여 관리되는 Windows 8.1 및 Windows 10 장치에 대한 구성 항목 만들기"
+title: Intune을 사용하여 관리되는 Windows 8.1 및 Windows 10 장치에 대한 구성 항목 만들기
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager Windows 10 구성 항목을 사용하여 Windows 10 컴퓨터에 대한 설정을 관리할 수 있습니다."
-ms.custom: na
+description: System Center Configuration Manager Windows 10 구성 항목을 사용하여 Windows 10 컴퓨터에 대한 설정을 관리할 수 있습니다.
 ms.date: 07/31/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-hybrid
+ms.topic: conceptual
 ms.assetid: 23e1e4dc-623a-4521-ad04-ae9482927097
-caps.latest.revision: 
-caps.handback.revision: 
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: 7f5a50ae6ea05af7e864cf94df3063d70bd737b4
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 639fabbe1e2f51194669fc1f196d88140193a727
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-create-configuration-items-for-windows-81-and-windows-10-devices-managed-without-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 장치에 대한 구성 항목을 만드는 방법
 
@@ -330,7 +323,7 @@ ms.lasthandoff: 10/12/2017
     |-------------|----------------------|  
     |**차단되는 앱 목록**|사용자가 설치할 수 없는 앱 목록을 지정하려면 이 옵션을 선택합니다.|  
     |**허용되는 앱 목록**|사용자가 설치할 수 있는 앱 목록을 지정하려면 이 옵션을 선택합니다. 다른 모든 앱이 설치에서 차단됩니다.|  
-    |**추가**|앱을 선택한 목록에 추가합니다. 원하는 이름, 앱 게시자(선택 사항) 및 앱 스토어의 앱 URL을 지정합니다.<br /><br /> URL을 지정하려면 Windows 스토어에서 사용할 앱을 검색합니다.<br /><br /> 앱 페이지를 열고 클립보드에 URL을 복사합니다. 이제 이 URL을 허용되는 앱 또는 차단되는 앱 목록에서 URL로 사용할 수 있습니다.<br /><br /> **예:** 스토어에서 **Skype** 앱을 검색합니다. 사용하는 URL이 **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**이 됩니다.|  
+    |**추가**|앱을 선택한 목록에 추가합니다. 원하는 이름, 앱 게시자(선택 사항) 및 앱 스토어의 앱 URL을 지정합니다.<br /><br /> URL을 지정하려면 Windows 스토어에서 사용할 앱을 검색합니다.<br /><br /> 앱 페이지를 열고 클립보드에 URL을 복사합니다. 이제 이 URL을 허용되는 앱 또는 차단되는 앱 목록에서 URL로 사용할 수 있습니다.<br /><br /> **예:** 스토어에서 **Skype** 앱을 검색합니다. 사용하는 URL은 **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**입니다.|  
     |**편집**|선택한 앱의 이름, 게시자 및 URL을 편집할 수 있습니다.|  
     |**제거**|목록에서 선택한 앱을 삭제합니다.|  
     |**가져오기**|지정한 앱 목록을 쉼표로 구분된 값 파일로 가져옵니다. 파일의 형식, 응용 프로그램 이름, 게시자, 앱 URL을 사용합니다.|  
@@ -346,7 +339,7 @@ ms.lasthandoff: 10/12/2017
 |**Azure Operational Insights**|Microsoft Operations Manager 제품군에 포함되어 있는 Azure Operational Insights는 Windows 10 Team 장치에서 로그 파일 데이터를 수집, 저장 및 분석합니다.<br>Azure Operational insights에 연결하려면 작업 영역 ID 및 작업 영역 키를 지정해야 합니다.| 
 |**Miracast 무선 프로젝션**|Windows 10 Team 장치에서 Miracast 지원 장치를 프로젝션에 사용할 수 있도록 하려면 이 옵션을 사용합니다.<br>이 옵션을 사용하도록 설정하는 경우 **Miracast 채널 선택**에서 콘텐츠 프로젝션에 사용할 Miracast 채널을 선택합니다.|
 |**시작 화면에 표시되는 모임 정보**|이 옵션을 사용하도록 설정하는 경우 **시작** 화면의 **모임** 타일에 표시할 정보를 선택할 수 있습니다. 다음과 같습니다.<br><br>- **이끌이 및 시간만 표시**<br>- **이끌이, 시간 및 제목 표시(비공개 모임의 경우 제목이 숨겨짐)**|
-|**잠금 화면 배경 이미지 URL**|지정한 URL에서 Windows 10 Team 장치의 **시작** 화면에 사용자 지정 배경을 표시하려면 이 설정을 사용합니다.<br>이미지는 PNG 형식이어야 하며 URL은 **https://**로 시작되어야 합니다.| 
+|**잠금 화면 배경 이미지 URL**|지정한 URL에서 Windows 10 Team 장치의 **시작** 화면에 사용자 지정 배경을 표시하려면 이 설정을 사용합니다.<br>이미지는 PNG 형식이어야 하며 URL은 **https://** 로 시작되어야 합니다.| 
   
 ### <a name="windows-information-protection"></a>Windows Information Protection  
 
@@ -371,7 +364,7 @@ Configuration Manager로 엔터프라이즈 데이터 보호를 구성하는 방
 |**SmartScreen 사용**|SmartScreen을 사용하여 사용자가 다운로드한 파일에 악성 코드가 포함되지 않았는지를 확인합니다.|  
 |**팝업 허용**|브라우저 팝업을 허용하거나 사용하지 않도록 설정합니다.|  
 |**쿠키 허용**|쿠키를 허용하거나 사용하지 않도록 설정합니다.|  
-|**자동 채우기 허용**|Microsoft Edge 브라우저의 자동 채우기 기능을 사용하도록 허용합니다.|  
+|**자동 채우기 허용**|Edge 브라우저의 자동 채우기 기능을 사용하도록 허용합니다.|  
 |**암호 관리자 허용**|Microsoft Edge 브라우저의 암호 관리자 기능을 사용하도록 허용합니다.|  
 |**엔터프라이즈 모드 사이트 목록 위치**|엔터프라이즈 모드에서 열 웹 사이트 목록을 찾을 위치를 지정합니다. 사용자는 이 목록을 편집할 수 없습니다.|
 |**플래그에 대한 액세스 차단**|최종 사용자가 개발자 및 실험 설정이 포함된 Edge의 about:flags 페이지에 액세스하지 못하게 합니다.|

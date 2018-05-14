@@ -2,26 +2,19 @@
 title: 작업 순서 기본 제공 변수
 titleSuffix: Configuration Manager
 description: 작업 순서 기본 제공 변수는 작업 순서가 실행되고 전체 작업 순서 동안 사용할 수 있는 환경에 대한 정보를 제공합니다.
-ms.custom: na
 ms.date: 04/18/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-osd
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-osd
+ms.topic: conceptual
 ms.assetid: 02bc6bd4-ca53-4e22-8b80-d8ee5fe72567
-caps.latest.revision: 15
-caps.handback.revision: 0
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: fe26982195e7cae639cc457dbba31e3dbd45b6d3
-ms.sourcegitcommit: e23350fe65ff99228274e465b24b5e163769f38f
+ms.openlocfilehash: d3ea1b35c5f220155cecafddaf3a2ff1acf5ed53
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="task-sequence-built-in-variables-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업 순서 기본 제공 변수
 
@@ -78,7 +71,7 @@ ms.lasthandoff: 04/20/2018
 |SMSTSDriverReceiveTimeOut|서버 연결 시간이 초과하기 전까지의 시간(초)입니다.|
 |SMSTSErrorDialogTimeout|작업 순서에서 오류가 발생할 경우 오류가 포함된 대화 상자가 표시됩니다. 이 변수에 지정된 시간(초)이 지나면 작업 순서에서 이 대화 상자를 자동으로 해제합니다. 기본적으로 이 값은 **900**초(15분)입니다.|  
 | TSDisableProgressUI | <!-- 1354291 --> Configuration Manager 버전 1706부터, 이 변수를 사용하여 작업 순서가 최종 사용자에게 진행률을 표시하는 시기를 제어합니다. 다른 시간에 진행률을 숨기거나 표시하려면 이 변수를 작업 순서에 여러 번 설정합니다. 작업 순서 진행률을 숨기려면 이 변수의 값을 **True**로 설정합니다. 작업 순서 진행률을 표시하려면 이 변수의 값을 **False**로 설정합니다. | 
-| SMSTSDisableStatusRetry | <!--512358--> 연결이 끊긴 시나리오에서 작업 순서 엔진은 관리 지점으로 상태 메시지를 전송하려고 반복적으로 시도합니다. 이 시나리오에서는 이 동작으로 인해 작업 순서 처리가 지연될 수 있습니다. Configuration Manager 버전 1802부터 이 변수를 **True**로 설정하면 작업 순서 엔진에서 첫 번째 실패 후 상태 메시지를 다시 전송하려고 시도하지 않습니다. 이 동작은 다음에 다시 부팅할 때까지 지속되거나 이 변수의 값이 **False**로 설정될 때까지 지속됩니다. 참고: [작업 순서 상태 보고](/sccm/core/servers/manage/list-of-reports#task-sequence---deployment-status)에서는 이러한 상태 메시지를 사용하여 각 단계의 진행률, 기록 및 세부 정보를 표시합니다. | 
+| SMSTSDisableStatusRetry | <!--512358--> 연결이 끊긴 시나리오에서 작업 순서 엔진은 관리 지점으로 상태 메시지를 전송하려고 반복적으로 시도합니다. 이 시나리오에서는 이 동작으로 인해 작업 순서 처리가 지연될 수 있습니다. Configuration Manager 버전 1802부터 이 변수를 **True**로 설정하면 작업 순서 엔진이 첫 번째 메시지 전송 실패 후 상태 메시지를 다시 전송하려고 시도하지 않습니다. 이 첫 번째 시도에 여러 번의 재시도가 포함합니다.<br/><br/>작업 순서가 다시 시작되면 이 변수 값이 유지됩니다. 그러나 작업 순서는 초기 상태 메시지를 보내려고 시도합니다. 이 첫 번째 시도에 여러 번의 재시도가 포함합니다. 시도가 성공하면 이 변수 값에 관계없이 작업 순서에서 계속해서 상태를 보냅니다. 상태 전송이 실패하면 작업 순서에서 이 변수 값을 사용합니다.<br/><br/>참고: [작업 순서 상태 보고](/sccm/core/servers/manage/list-of-reports#task-sequence---deployment-status)에서는 이러한 상태 메시지를 사용하여 각 단계의 진행률, 기록 및 세부 정보를 표시합니다. | 
 |SMSTSLanguageFolder|이 변수를 사용하여 언어 중립 부팅 이미지의 언어 표시를 변경할 수 있습니다.|  
 |SMSTSLocalDataDrive|작업 순서가 실행되는 동안 임시 파일이 대상 컴퓨터에 저장되는 위치를 지정합니다.<br /><br /> 작업 순서를 시작하기 전에 컬렉션 변수를 설정하는 등의 방법으로 이 변수를 설정해야 합니다. 작업 순서가 시작되면 Configuration Manager에서 _SMSTSMDataPath 변수를 정의합니다.|  
 |SMSTSMP|이 변수를 사용하여 Configuration Manager 관리 지점의 URL 또는 IP 주소를 지정합니다.|  

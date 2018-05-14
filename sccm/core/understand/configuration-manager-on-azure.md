@@ -1,24 +1,19 @@
 ---
-title: "Azure의 Configuration Manager"
-description: "Azure 환경에서 Configuration Manager를 사용하는 방법에 대한 정보입니다."
-ms.custom: na
+title: Azure의 Configuration Manager
+description: Azure 환경에서 Configuration Manager를 사용하는 방법에 대한 정보입니다.
 ms.date: 03/27/2017
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.prod: configuration-manager
 ms.technology: configmgr-other
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: d24257d8-8136-47f4-8e0d-34021356dc37
-caps.latest.revision: "2"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: d73ab50e5fc9472a977951f6c2d5bbd3fd408c39
-ms.sourcegitcommit: ca9d15dfb1c9eb47ee27ea9b5b39c9f8cdcc0748
+manager: dougeby
+ms.openlocfilehash: 2b952e76fc21e3190430cdf34cb4a264918fd199
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configuration-manager-on-azure---frequently-asked-questions"></a>Azure의 Configuration Manager - 질문과 대답
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -123,7 +118,7 @@ Configuration Manager는 Azure 부하 분산 장치에서 테스트되지 않았
 ### <a name="you-mention-that-user-experience-is-one-of-the-main-areas-of-importance-why-is-that"></a>사용자 환경이 중요한 요소 중 하나인 이유는 무엇인가요?
 네트워킹, 가용성, 성능 및 Configuration Manager 사이트 서버를 배치할 위치에 대한 결정은 사용자에게 직접 영향을 줄 수 있습니다. Azure로의 이동은 일상적인 Configuration Manager 작업에 영향을 주지 않도록 사용자에게 투명해야 합니다.
 
-### <a name="ok-i-get-it-i-plan-to-install-a-single-stand-alone-primary-site-on-an-azure-virtual-machine-and-i-want-to-make-sure-my-costs-are-low-should-i-place-remote-site-systems-like-management-points-distribution-points-and-software-update-points-on-azure-virtual-machines-as-well-or-on-premises"></a>예, 알겠습니다. 단일 독립 실행형 기본 사이트를 Azure 가상 컴퓨터에 설치하여 비용을 절약하려고 합니다. 관리 지점, 배포 지점 및 소프트웨어 업데이트 지점 등의 (원격) 사이트 시스템을 온-프레미스뿐 아니라 Azure 가상 컴퓨터에 배치해야 하나요?
+### <a name="ok-i-get-it-i-plan-to-install-a-single-stand-alone-primary-site-on-an-azure-virtual-machine-and-i-want-to-make-sure-my-costs-are-low-should-i-place-remote-site-systems-like-management-points-distribution-points-and-software-update-points-on-azure-virtual-machines-as-well-or-on-premises"></a>예, 알겠습니다. 단일 독립 실행형 기본 사이트를 Azure 가상 머신에 설치하여 비용을 절약하려고 합니다. 관리 지점, 배포 지점 및 소프트웨어 업데이트 지점 등의 (원격) 사이트 시스템을 온-프레미스뿐 아니라 Azure 가상 컴퓨터에 배치해야 하나요?
 사이트 서버에서 배포 지점으로 향하는 통신을 제외하고, 이러한 사이트 내 서버 간 통신은 언제든지 발생할 수 있으며 네트워크 대역폭 사용을 제어하는 메커니즘을 사용하지 않습니다. 사이트 시스템 간의 통신을 제어할 수 없으므로 이러한 통신과 관련된 모든 비용을 고려해야 합니다.
 
 네트워크 속도 및 대기 시간도 고려해야 할 요인입니다. 네트워크 속도가 느리거나 불안정하면 사이트 서버와 원격 사이트 시스템 간의 통신, 그리고 사이트 시스템에 대한 모든 클라이언트 통신 기능에 영향을 줄 수 있습니다. 특정 사이트 시스템을 사용하는 관리 클라이언트 수와 자주 사용하는 기능도 고려해야 합니다.
@@ -153,29 +148,29 @@ Configuration Manager는 Azure 부하 분산 장치에서 테스트되지 않았
 
 ## <a name="cost"></a>비용
 ### <a name="ok-tell-me-a-bit-about-the-cost-will-this-be-a-cost-effective-solution-for-me"></a>비용에 대해 알고 싶어요. 이 방법이 비용 효율적인 솔루션인가요?
-환경마다 다르기 때문에 단언하기 어렵습니다. 가장 좋은 방법은 Microsoft Azure 가격 계산기(https://azure.microsoft.com/pricing/calculator/)를 사용하여 환경의 비용을 계산해 보는 것입니다.
+환경마다 다르기 때문에 단언하기 어렵습니다. 가장 좋은 방법은 Microsoft Azure 가격 계산기를 사용하여 환경의 비용을 계산해 보는 것입니다: https://azure.microsoft.com/pricing/calculator/
 
 ## <a name="additional-resources"></a>추가 리소스
-**기본 사항:** http://azure.microsoft.com/documentation/articles/fundamentals-introduction-to-azure/
+**기본 항목:** http://azure.microsoft.com/documentation/articles/fundamentals-introduction-to-azure/
 
 **Azure VM 컴퓨터 유형:**
- - Azure 컴퓨터 크기: https://azure.microsoft.com/documentation/articles/virtual-machines-size-specs/  
- - VM 가격: http://azure.microsoft.com/pricing/details/virtual-machines/  
- - 저장소 가격: http://azure.microsoft.com/pricing/details/storage/
+ - 가상 머신 크기: https://azure.microsoft.com/documentation/articles/virtual-machines-size-specs/  
+ - VM 가격 책정: http://azure.microsoft.com/pricing/details/virtual-machines/  
+ - 저장소 가격 책정: http://azure.microsoft.com/pricing/details/storage/
 
 **디스크 성능 고려 사항:**    
  - 프리미엄 디스크 소개: http://azure.microsoft.com/blog/2014/12/11/introducing-premium-storage-high-performance-storage-for-azure-virtual-machine-workloads/  
  - 자세한 프리미엄 디스크 정보: http://azure.microsoft.com/documentation/articles/storage-premium-storage-preview-portal/   
- - 저장소의 최대 크기 및 성능 목표에 대한 간단한 차트 모음: https://azure.microsoft.com/documentation/articles/storage-scalability-targets/  
+ - 저장소용 최대 크기 및 성능 대상에 대한 차트의 간편한 컬렉션: https://azure.microsoft.com/documentation/articles/storage-scalability-targets/  
  - Premium Storage에 대한 기타 소개 및 원리에 대한 유용한 데이터: http://azure.microsoft.com/blog/2015/04/16/azure-premium-storage-now-generally-available-2/
 
 **가용성:**
- - Azure IaaS 가동 시간 SLA: https://azure.microsoft.com/support/legal/sla/virtual-machines/v1_0/  
+ - Azure IaaS 작동 시간 SLA: https://azure.microsoft.com/support/legal/sla/virtual-machines/v1_0/  
  - 가용성 집합 설명: https://azure.microsoft.com/documentation/articles/virtual-machines-manage-availability/
 
 **연결:**
  - Express 경로 및 Azure VPN: http://azure.microsoft.com/blog/2014/06/10/expressroute-or-virtual-network-vpn-whats-right-for-me/
- - Express 경로 가격: http://azure.microsoft.com/pricing/details/expressroute/
- - Express 경로에 대한 자세한 내용: http://azure.microsoft.com/documentation/articles/expressroute-introduction/
+ - Express 경로 가격 책정: http://azure.microsoft.com/pricing/details/expressroute/
+ - Express 경로에 대해 자세히: http://azure.microsoft.com/documentation/articles/expressroute-introduction/
 
  

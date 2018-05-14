@@ -1,27 +1,21 @@
 ---
-title: "인증서 및 보안"
+title: 인증서 및 보안
 titleSuffix: Configuration Manager
-description: "System Center Updates Publisher의 인증서 및 보안 관리"
-ms.custom: na
+description: System Center Updates Publisher의 인증서 및 보안 관리
 ms.date: 4/29/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-sum
+ms.topic: conceptual
 ms.assetid: a7f91e63-4750-402e-9970-dd14be7f76a3
-caps.latest.revision: 
-author: mestew
-ms.author: mstewart
-manager: angrobe
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 robots: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9d8812da3588b60f388288cef6f9a093731d873f
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+ms.openlocfilehash: b3ce22747cddc1371fb38718cc97b70cda8afcb1
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manage-certificates-and-security-for-updates-publisher"></a>Updates Publisher의 인증서 및 보안 관리
 
@@ -41,7 +35,7 @@ ms.lasthandoff: 12/04/2017
 
 3.  **다른 컴퓨터**를 선택하고, 업데이트 서버의 이름을 입력하거나 **찾아보기**를 클릭하여 업데이트 서버 컴퓨터를 찾은 다음 **마침**, **닫기**, **확인**을 차례로 클릭합니다.
 
-4.  **인증서(*업데이트 서버 이름*)**, **WSUS**를 차례로 확장한 다음 **인증서**를 클릭합니다.
+4.  **인증서(*업데이트 서버 이름*)**, **WSUS**를 차례로 확장한 다음, **인증서**를 클릭합니다.
 
 5.  결과 창에서 원하는 인증서를 마우스 오른쪽 단추로 클릭하고 **모든 작업**을 클릭한 후 **내보내기**를 클릭합니다.
 
@@ -51,7 +45,7 @@ ms.lasthandoff: 12/04/2017
 
 8.  자체 서명된 인증서(예: **WSUS Publishers Self-signed**)가 사용된 경우 **신뢰할 수 있는 루트 인증 기관**을 마우스 오른쪽 단추로 클릭하고 **모든 작업**을 클릭한 후 **가져오기**를 클릭합니다. 6단계에서 내보낸 파일을 사용하여 인증서 가져오기 마법사를 완료합니다.
 
-9.  **인증서(*업데이트 서버 이름*)**를 마우스 오른쪽 단추로 클릭하고, **다른 컴퓨터에 연결**을 클릭하고, Updates Publisher 컴퓨터의 컴퓨터 이름을 입력하고, **확인**을 클릭합니다.
+9.  **인증서(*업데이트 서버 이름*)** 를 마우스 오른쪽 단추로 클릭하고, **다른 컴퓨터에 연결**을 클릭하고, Updates Publisher 컴퓨터의 컴퓨터 이름을 입력하고, **확인**을 클릭합니다.
 
 10. Updates Publisher가 업데이트 서버의 원격 컴퓨터인 경우 7-9단계를 반복하여 Updates Publisher 컴퓨터의 인증서 저장소에 인증서를 가져옵니다.
 
@@ -71,7 +65,7 @@ ms.lasthandoff: 12/04/2017
 
 3.  **다른 컴퓨터**를 선택하고, 업데이트 서버의 이름을 입력하거나 **찾아보기**를 클릭하여 업데이트 서버 컴퓨터를 찾은 다음 **마침**, **닫기**, **확인**을 차례로 클릭합니다.
 
-4.  **인증서(*업데이트 서버 이름*)**, **WSUS**를 차례로 확장한 다음 **인증서**를 클릭합니다.
+4.  **인증서(*업데이트 서버 이름*)**, **WSUS**를 차례로 확장한 다음, **인증서**를 클릭합니다.
 
 5.  결과 창에서 인증서를 마우스 오른쪽 단추로 클릭하고 **모든 작업**을 클릭한 후 **내보내기**를 클릭합니다. 마법사에 지정된 이름 및 위치를 사용하여 인증서 내보내기 파일을 만들려면 기본 설정을 사용하여 **인증서 내보내기 마법사**를 완료합니다.
 

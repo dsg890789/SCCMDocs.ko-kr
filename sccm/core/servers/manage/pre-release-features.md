@@ -2,25 +2,19 @@
 title: 시험판 기능
 titleSuffix: Configuration Manager
 description: 시험판 기능은 프로덕션 환경에서의 초기 테스트를 위해 현재 분기에 포함된 기능입니다.
-ms.custom: na
-ms.date: 04/10/2018
+ms.date: 05/01/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: 6bce416b-761d-4b23-bd33-5b7c30edb10d
-caps.latest.revision: 36
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6e3a6a8dd437238a9dd08b07494b51333283f41c
-ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
+ms.openlocfilehash: d4e9664832b37dd05f001404012acab80fd87a43
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="pre-release-features-in-system-center-configuration-manager"></a>System Center Configuration Manager의 시험판 기능
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -50,7 +44,8 @@ ms.lasthandoff: 04/16/2018
 
  |기능          |시험판으로 추가됨 | 전체 기능으로 추가됨|  
 |------------------|---------------------|---------------------|
-|단계별 배포<!--1356837-->|[1802 버전](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence.md)|![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
+|Cisco AnyConnect 4.0.07x 및 이후에 iOS에 대한 지원<!--1357393-->|[1802 버전](/sccm/mdm/deploy-use/create-vpn-profiles)|![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
+|단계별 배포<!--1356837-->|[1802 버전](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence)|![아직 추가되지 않음](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
 | 작업 순서 실행 단계 <!-- 1261338 --> |  [버전 1710](/sccm/osd/understand/task-sequence-steps#child-task-sequence) |[1802 버전](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#add-child-task-sequences-to-a-task-sequence)|
 | Windows Defender Exploit Guard <!-- 1355468 --> |  [버전 1710](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy) |[1802 버전](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy)|
 | 조건부 액세스의 준수 정책에 대한 장치 상태 증명 평가<!-- 1235616 --> |  [버전 1710](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm) |[1802 버전](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm)|

@@ -1,25 +1,20 @@
 ---
-title: "Lookout 통합 문제 해결"
+title: Lookout 통합 문제 해결
 titleSuffix: Configuration Manager
-description: "이 항목에서는 Lookout 통합에서 일반적으로 발생하는 문제를 해결하는 방법을 설명합니다."
-ms.custom: na
+description: 이 항목에서는 Lookout 통합에서 일반적으로 발생하는 문제를 해결하는 방법을 설명합니다.
 ms.date: 03/05/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: e36b98c7-d0f4-4dd6-bac3-6a6c4b4bf841
-caps.latest.revision: 
-author: dougeby
-ms.author: dougeby
-manager: angrobe
-ms.openlocfilehash: 244d32e98ad863f6c9ea1747b4f786c3a1279fc0
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: ee978543248e70182e12a3d6234cfd12be80dc98
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Intune과 Lookout 통합 문제 해결
 
@@ -35,14 +30,14 @@ Lookout MTP는 구성된 Azure AD 그룹의 사용자만 액세스할 수 있도
 
 * 메일: enterprisesupport@lookout.com
 * [MTP 콘솔](http://aad.lookout.com)에 로그인한 다음 **지원** 모듈로 이동합니다.
-* https://enterprise.support.lookout.com/hc/requests로 이동하여 지원 요청을 수행합니다.
+* https://enterprise.support.lookout.com/hc/requests로 이동하여 지원 요청을 합니다.
 
 ### <a name="unable-to-sign-in"></a>로그인할 수 없음
 Azure AD 전역 관리자가 초기 Lookout 설치에 동의하지 않은 경우 다음 오류가 나타날 수 있습니다.
 
 ![로그인 오류를 보여 주는 Lookout 로그인 화면 스크린샷](media/lookout-consent-not-accepted-error.png)
 
-이 문제를 해결하려면 전역 관리자가 https://aad.lookout.com/les?action=consent에 로그인한 다음 메시지에 동의하여 설치를 시작해야 합니다. 자세한 정보는 [Lookout MTP를 사용하여 구독 설정](set-up-your-subscription-with-lookout.md) 항목에서 확인할 수 있습니다.
+이 문제를 해결하려면 전역 관리자가 https://aad.lookout.com/les?action=consent에 로그인한 다음, 메시지에 동의하여 설치를 시작해야 합니다. 자세한 정보는 [Lookout MTP를 사용하여 구독 설정](set-up-your-subscription-with-lookout.md) 항목에서 확인할 수 있습니다.
 
 ## <a name="troubleshoot-device-status-issues"></a>장치 상태 문제 해결
 

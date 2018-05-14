@@ -1,26 +1,20 @@
 ---
-title: "Wi-Fi 프로필을 만드는 방법"
+title: Wi-Fi 프로필을 만드는 방법
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의 사용자에게 무선 네트워크 설정을 배포하는 방법을 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의 사용자에게 무선 네트워크 설정을 배포하는 방법을 알아봅니다.
 ms.date: 12/11/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-protect
+ms.topic: conceptual
 ms.assetid: 321b19b2-a093-4b8f-995f-41f74b886eb5
-caps.latest.revision: "13"
-caps.handback.revision: "0"
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.openlocfilehash: 24bc4ad8290bfa1a8b298374d5adf7ab1841398e
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: b665143f40973c20307b99c15f94d773d43b4914
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-wi-fi-profiles"></a>Wi-Fi 프로필 만들기
 
@@ -79,7 +73,7 @@ System Center Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의
 2.  대/소문자를 구분하는 **SSID**를 지정합니다.
 3.  기타 적절한 연결 옵션을 선택합니다.   예를 들어 SSID가 숨겨질 가능성이 있는 경우 **네트워크에서 이름(SSID)을 브로드캐스팅하지 않는 경우 연결**을 선택합니다.  
 
-4.  **보안 구성** 페이지에서 무선 네트워크에 사용되는 보안 프로토콜을 선택하거나, 네트워크에 보안이 적용되지 않는 경우 **인증 안 함(개방형)**을 선택합니다.
+4.  **보안 구성** 페이지에서 무선 네트워크에 사용되는 보안 프로토콜을 선택하거나, 네트워크에 보안이 적용되지 않는 경우 **인증 안 함(개방형)** 을 선택합니다.
     > [!IMPORTANT]  
     >  온\-프레미스 모바일 장치 관리에 대한 Wi-Fi 프로필을 만드는 경우 현재 분기의 Configuration Manager는 다음 Wi-Fi 보안 구성만 지원합니다.  
     >   

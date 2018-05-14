@@ -1,26 +1,21 @@
 ---
-title: "새로운 기능 하이브리드 MDM 보관"
+title: 새로운 기능 하이브리드 MDM 보관
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 및 Intune을 포함하는 하이브리드 배포에 사용할 수 있는 과거 모바일 장치 관리 기능의 보관 파일입니다."
-ms.custom: na
+description: System Center Configuration Manager 및 Intune을 포함하는 하이브리드 배포에 사용할 수 있는 과거 모바일 장치 관리 기능의 보관 파일입니다.
 ms.date: 02/21/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-hybrid
+ms.topic: conceptual
 ms.assetid: 4c27b161-9eb7-4cdd-b469-d8eb27e71aea
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d6b67cd820a618d6a96424362ff282cbf232f092
-ms.sourcegitcommit: 45ff3ffa040eada5656b17f47dcabd3c637bdb60
+ms.openlocfilehash: 88b005ad90625592a4fccfa1d98abfcb8b930a75
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="past-hybrid-features-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하는 이전 하이브리드 기능
 
@@ -48,7 +43,7 @@ ms.lasthandoff: 02/23/2018
 
 - **Windows 장치의 새 MDM 서버 주소**
 
-  Windows 및 Windows Phone 장치 등록을 위한 MDM 서버 주소가 manage.microsoft.com에서 enrollment.manage.microsoft.com으로 변경되었습니다. 사용자에게 Windows 또는 Windows Phone 장치를 등록하는 동안 MDM 서버 주소를 입력하라는 메시지가 표시되면 enrollment.manage.microsoft.com을 사용하라고 알리세요. 이 업데이트에는 또한 EnterpriseEnrollment.contoso.com을 manage.microsoft.com으로 리디렉션하는 DNS의 CNAME이 필요하며, 이 manage.microsoft.com은 EnterpriseEnrollment.contoso.com을 EnterpriseEnrollment-s.manage.microsoft.com으로 리디렉션하는 DNS의 CNAME으로 대체됩니다. 이 변경에 대한 자세한 내용은 http://aka.ms/intuneenrollsvrchange를 방문하세요.
+  Windows 및 Windows Phone 장치 등록을 위한 MDM 서버 주소가 manage.microsoft.com에서 enrollment.manage.microsoft.com으로 변경되었습니다. 사용자에게 Windows 또는 Windows Phone 장치를 등록하는 동안 MDM 서버 주소를 입력하라는 메시지가 표시되면 enrollment.manage.microsoft.com을 사용하라고 알리세요. 이 업데이트에는 또한 EnterpriseEnrollment.contoso.com을 manage.microsoft.com으로 리디렉션하는 DNS의 CNAME이 필요하며, 이 manage.microsoft.com은 EnterpriseEnrollment.contoso.com을 EnterpriseEnrollment-s.manage.microsoft.com으로 리디렉션하는 DNS의 CNAME으로 대체됩니다. 이 변경에 대한 추가 정보는 http://aka.ms/intuneenrollsvrchange에서 찾을 수 있습니다.
 
 ### <a name="new-in-configuration-manager-technical-preview-1702"></a>Configuration Manager Technical Preview 1702의 새로운 기능
 
@@ -96,7 +91,7 @@ ms.lasthandoff: 02/23/2018
 
 - **등록 시의 MFA(Multi-Factor Authentication) 과정이 Azure Portal로 이전됨**
 
-  이전에는 Intune 등록용으로 MFA를 설정하려면 Intune 콘솔 또는 Configuration Manager 콘솔로 이동해야 했습니다. 이제는 이 업데이트된 기능을 통해 Intune 자격 증명을 사용하여 [Microsoft Azure Portal](https://manage.windowsazure.com)에 로그인한 다음 Azure AD를 통해 MFA 설정을 구성할 수 있습니다. 자세한 내용은 [Microsoft Intune용 Multi-Factor Authentication]을 참조하세요(https://aka.ms/mfa_ad).
+  이전에는 Intune 등록용으로 MFA를 설정하려면 Intune 콘솔 또는 Configuration Manager 콘솔로 이동해야 했습니다. 지금은 이 기능이 업데이트되어 [Microsoft Azure Portal](https://manage.windowsazure.com)에 Intune 자격 증명으로 로그인하고 Azure AD를 통해 MFA 설정을 구성합니다. 자세한 내용은 [Microsoft Intune용 Multi-Factor Authentication](https://aka.ms/mfa_ad)을 참조하세요.
 
 - **이제 중국에서 Android용 회사 포털 앱 사용 가능**
 

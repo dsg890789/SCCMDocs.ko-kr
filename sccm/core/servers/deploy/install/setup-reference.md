@@ -1,25 +1,20 @@
 ---
-title: "설치 참조"
+title: 설치 참조
 titleSuffix: Configuration Manager
-description: "Configuration Manager 사이트 또는 계층 구조의 설치를 준비하려면 이 참조를 검토합니다."
-ms.custom: na
+description: Configuration Manager 사이트 또는 계층 구조의 설치를 준비하려면 이 참조를 검토합니다.
 ms.date: 4/18/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: cdb9fb0c-0912-41e4-b427-f40620971763
-caps.latest.revision: "22"
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: bc85d1140b19167b31d5ae2176ddbcb9320b21e1
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: f9f857a2045f67690579955236c082ff29721a5f
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="reference-for-system-center-configuration-manager-setup"></a>System Center Configuration Manager 설치에 대한 참조
 
@@ -75,4 +70,4 @@ System Center Configuration Manager 사이트를 처음 설치하는 경우 Conf
 
 각 수준별로 수집되는 정보의 공개를 비롯한 자세한 내용은 [System Center Configuration Manager의 진단 및 사용 현황 데이터](../../../../core/plan-design/diagnostics/diagnostics-and-usage-data.md)를 참조하세요.  
 
-온라인으로 System Center Configuration Manager 개인정보 취급방침을 보려면 [http://go.microsoft.com/fwlink/?LinkID=626527](http://go.microsoft.com/fwlink/?LinkID=626527)로 이동하세요.
+온라인으로 System Center Configuration Manager 개인정보 취급방침을 보려면 [http://go.microsoft.com/fwlink/?LinkID=626527](http://go.microsoft.com/fwlink/?LinkID=626527)으로 이동하세요.

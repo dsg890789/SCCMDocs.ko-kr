@@ -1,26 +1,20 @@
 ---
-title: "가용성 그룹 구성"
+title: 가용성 그룹 구성
 titleSuffix: Configuration Manager
-description: "SCCM에서 SQL Server Always On 가용성 그룹을 설정하고 관리합니다."
-ms.custom: na
+description: SCCM에서 SQL Server Always On 가용성 그룹을 설정하고 관리합니다.
 ms.date: 7/31/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: 7e4ec207-bb49-401f-af1b-dd705ecb465d
-caps.latest.revision: 
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: d6b208da49e27775548ac6f544b7a7278b96d980
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 2baafa04c315ebc7512504f042c89615b7217b4c
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-sql-server-always-on-availability-groups-for-configuration-manager"></a>Configuration Manager용 SQL Server Always On 가용성 그룹 구성
 
@@ -158,7 +152,7 @@ Configuration Manager 1706 이상 버전에서는 비동기 복제본을 사용�
 
 4.  사이트 데이터베이스를 호스트하는 서버(기본 복제본 또는 사이트 데이터베이스를 복원한 서버)에서 사이트 데이터베이스의 백업 모델을 **전체**에서 **간단**으로 변경합니다. SQL Server 문서에서 [데이터베이스의 복구 모델 보기 또는 변경](/sql/relational-databases/backup-restore/view-or-change-the-recovery-model-of-a-database-sql-server) 을 참조하세요.  
 
-5.  **&lt;*Configuration Manager 사이트 설치 폴더>*\BIN\X64\setup.exe**에서 **Configuration Manager 설치 프로그램**을 실행합니다.
+5.  **&lt;*Configuration Manager 사이트 설치 폴더>* \BIN\X64\setup.exe**에서 **Configuration Manager 설치 프로그램**을 실행합니다.
 
 6.  **시작** 페이지에서 **사이트 유지 관리 수행 또는 이 사이트 다시 설정**을 선택하고 **다음**을 클릭합니다.  
 

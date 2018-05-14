@@ -2,25 +2,19 @@
 title: Azure 서비스 구성
 titleSuffix: Configuration Manager
 description: Configuration Manager 환경을 클라우드 관리, 업그레이드 준비, 비즈니스용 Microsoft 스토어, Operations Management Suite를 위한 Azure 서비스와 연결합니다.
-ms.custom: na
 ms.date: 03/22/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: a26a653e-17aa-43eb-ab36-0e36c7d29f49
-caps.latest.revision: 0
-author: mestew
-ms.author: mstewart
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b86c73f3f5662a00ca0b7f80b0c785c37aff0b1a
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 7ff953d658c54c2cebbbfd29a6bba83fe65cc08e
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-azure-services-for-use-with-configuration-manager"></a>Configuration Manager에서 사용하도록 Azure 서비스 구성
 
@@ -154,7 +148,7 @@ Azure 서비스 마법사의 서버 앱 대화 상자 또는 앱 페이지에서
 - **클라이언트 ID**
 - **비밀 키**
 - **비밀 키 만료**: 달력에서 미래의 날짜를 선택합니다. 
-- **앱 ID URI**: 이 값은 Azure AD 테넌트에서 고유해야 합니다. Configuration Manager 클라이언트가 서비스 액세스를 요청할 때 사용하는 액세스 토큰입니다. 기본적으로 이 값은 https://ConfigMgrService입니다.  
+- **앱 ID URI**: 이 값은 Azure AD 테넌트에서 고유해야 합니다. Configuration Manager 클라이언트가 서비스 액세스를 요청할 때 사용하는 액세스 토큰입니다. 이 값은 기본적으로 https://ConfigMgrService입니다.  
 
 정보를 입력한 후 **확인**을 클릭합니다. 그런 다음, **확인**을 클릭하여 앱 가져오기 대화 상자를 닫습니다. 이 작업은 Azure 서비스 마법사의 [앱 페이지](#azure-app-properties) 또는 [서버 앱 대화 상자](#server-app-dialog)로 돌아갑니다.
 
@@ -162,8 +156,8 @@ Azure 서비스 마법사의 서버 앱 대화 상자 또는 앱 페이지에서
 
 서버 앱 대화 상자에서 **만들기**를 클릭하면 서버 응용 프로그램 만들기 대화 상자가 열립니다. 이 페이지는 Azure AD에서 웹앱 만들기를 자동화합니다. 다음 정보를 지정하세요.
 - **응용 프로그램 이름**: 앱의 표시 이름.
-- **홈페이지 URL**: 이 값은 Configuration Manager에서 사용되지는 않지만 Azure AD에 필요합니다. 기본적으로 이 값은 https://ConfigMgrService입니다.  
-- **앱 ID URI**: 이 값은 Azure AD 테넌트에서 고유해야 합니다. Configuration Manager 클라이언트가 서비스 액세스를 요청할 때 사용하는 액세스 토큰입니다. 기본적으로 이 값은 https://ConfigMgrService입니다.  
+- **홈페이지 URL**: 이 값은 Configuration Manager에서 사용되지는 않지만 Azure AD에 필요합니다. 이 값은 기본적으로 https://ConfigMgrService입니다.  
+- **앱 ID URI**: 이 값은 Azure AD 테넌트에서 고유해야 합니다. Configuration Manager 클라이언트가 서비스 액세스를 요청할 때 사용하는 액세스 토큰입니다. 이 값은 기본적으로 https://ConfigMgrService입니다.  
 - **비밀 키 유효 기간**: 드롭다운 목록을 클릭하고 **1년** 또는 **2년** 중에 선택합니다. 기본값은 1년입니다.
 
 **로그인**을 클릭하여 Azure에 관리 사용자로 인증합니다. 이러한 자격 증명은 Configuration Manager에 저장되지 않습니다. 이 가상 사용자는 Configuration Manager에서 권한이 필요 없으며, Azure 서비스 마법사를 실행하는 계정과 동일한 계정이 아니어도 상관 없습니다. Azure에 성공적으로 인증되면 페이지에 **Azure AD 테넌트 이름**이 참조용으로 표시됩니다. 
@@ -201,7 +195,7 @@ Azure 서비스 마법사의 앱 페이지에서 **네이티브 클라이언트 
 
 클라이언트 앱 대화 상자에서 **만들기**를 클릭하면 클라이언트 응용 프로그램 만들기 대화 상자가 열립니다. 이 페이지는 Azure AD에서 네이티브 앱 만들기를 자동화합니다. 다음 정보를 지정하세요.
 - **응용 프로그램 이름**: 앱의 표시 이름.
-- **회신 URL**: 이 값은 Configuration Manager에서 사용되지는 않지만 Azure AD에 필요합니다. 기본적으로 이 값은 https://ConfigMgrService입니다. 
+- **회신 URL**: 이 값은 Configuration Manager에서 사용되지는 않지만 Azure AD에 필요합니다. 이 값은 기본적으로 https://ConfigMgrService입니다. 
 
 **로그인**을 클릭하여 Azure에 관리 사용자로 인증합니다. 이러한 자격 증명은 Configuration Manager에 저장되지 않습니다. 이 가상 사용자는 Configuration Manager에서 권한이 필요 없으며, Azure 서비스 마법사를 실행하는 계정과 동일한 계정이 아니어도 상관 없습니다. Azure에 성공적으로 인증되면 페이지에 **Azure AD 테넌트 이름**이 참조용으로 표시됩니다. 
 

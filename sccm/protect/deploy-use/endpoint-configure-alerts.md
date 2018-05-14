@@ -1,25 +1,20 @@
 ---
-title: "Endpoint Protection 경고 구성"
+title: Endpoint Protection 경고 구성
 titleSuffix: Configuration Manager
-description: "Endpoint Protection 경고를 System Center Configuration Manager에서 구성하는 방법을 알아봅니다."
-ms.custom: na
+description: Endpoint Protection 경고를 System Center Configuration Manager에서 구성하는 방법을 알아봅니다.
 ms.date: 03/23/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.technology: configmgr-protect
+ms.topic: conceptual
 ms.assetid: f504de3e-4caf-455c-80d7-a63f13f4c5d9
-caps.latest.revision: "21"
-author: NathBarn
-ms.author: nathbarn
-manager: angrobe
-ms.openlocfilehash: 91df245565cfe99f79a18618d62c00f0cea579d2
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 275ce06520174adf10100b77a8034620b072c93f
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 #  <a name="configure-alerts-for-endpoint-protection-in-configuration-manager"></a>Configuration Manager에서 Endpoint Protection에 대한 경고를 구성하는 방법
 

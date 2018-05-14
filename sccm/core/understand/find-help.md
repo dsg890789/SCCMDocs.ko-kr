@@ -2,56 +2,45 @@
 title: 도움말 찾기
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에 대한 자세한 내용은 관련 리소스를 찾아보세요.
-ms.custom: na
-ms.date: 12/22/2017
+ms.date: 04/30/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: 86810629-cf2a-43e8-86a2-847444119fc1
-caps.latest.revision: 19
-caps.handback.revision: 0
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: bcf53c11a30aa2fc3995697f36f00960035bbe57
-ms.sourcegitcommit: fb84bcb31d825f454785e3d9d8be669e00fe2b27
+manager: dougeby
+ms.openlocfilehash: 2c9e2f0b570360b730f7a8659791a7f054200d36
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="find-help-for-using-system-center-configuration-manager"></a>System Center Configuration Manager 사용 도움말 찾기
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-이 문서에서는 Configuration Manager를 사용하기 위한 도움말을 찾도록 여러 리소스를 제공합니다.  
+이 문서에서는 다음 섹션에 Configuration Manager를 사용하기 위한 도움말을 찾도록 여러 리소스를 제공합니다.  
 
-제품 접근성에 대한 도움말은 [System Center Configuration Manager의 접근성 기능](../../core/understand/accessibility-features.md)을 참조하세요.
+- [제품 설명서](#bkmk_Info)  
+
+- [제품 피드백 공유](#product-feedback)  
+
+- [Configuration Manager 팀 블로그 팔로우](#BKMK_ProductGroupBlog)  
+
+- [지원 옵션 및 커뮤니티 리소스](#BKMK_SupportOptions)  
+
+제품 접근성에 대한 도움말은 [Configuration Manager의 접근성 기능](../../core/understand/accessibility-features.md)을 참조하세요.  
 
 
 ##  <a name="bkmk_Info"></a>제품 설명서  
- Configuration Manager에 대한 자세한 내용은 다음 리소스를 참조하세요.  
 
--   최신 제품 설명서에 액세스하려면 [라이브러리 인덱스](https://docs.microsoft.com/sccm/)에서 시작하세요.
+최신 제품 설명서에 액세스하려면 [라이브러리 인덱스](https://docs.microsoft.com/sccm/)에서 시작하세요.  
 
--   설명서에 대한 피드백을 제공하려면 [UserVoice](https://configurationmanager.uservoice.com/forums/300492-ideas/category/112371-documentation)를 통해 제출하세요.  
+<a name="BKMK_SearchTips"></a>  
 
+검색에 대한 팁, 피드백 제공 및 제품 설명서 사용에 대한 자세한 내용은 [문서 사용 방법](/sccm/core/understand/use-docs)을 참조합니다.  
 
-###  <a name="BKMK_SearchTips"></a> 문서 라이브러리 검색  
- 필요한 정보를 찾으려면 다음 검색 팁을 사용하세요.  
-
--   기본 검색 엔진을 사용하여 Configuration Manager의 콘텐츠를 찾을 때 **SCCM** 및 **Docs**를 포함하면 현재 콘텐츠 라이브러리의 검색 결과만 표시합니다.
-
--   사용자 인터페이스 및 온라인 설명서에 있는 용어와 일치하는 검색 용어를 사용합니다. 커뮤니티 콘텐츠에 표시될 수 있는 약어나 비공식 용어를 사용하지 않습니다. 예를 들어 "MP"보다는 "관리 지점"으로, "DT"보다는 "배포 유형"으로, "SUM"보다는 "소프트웨어 업데이트"로 검색하세요.  
-
--   docs.microsoft.com에서 현재 표시되는 문서 내에서 검색하려면 Ctrl+F를 선택한 다음 브라우저의 **찾기** 상자에 검색 용어를 입력합니다. 
-
--   docs.microsoft.com의 각 문서에는 콘텐츠 검색을 지원하는 다음 필드가 포함됩니다.
-    - 오른쪽 위 모서리에 있는 **검색** 모든 문서를 검색하려면 이 필드에 용어를 입력합니다. Configuration Manager 라이브러리의 문서에는 "ConfigMgr" 범위가 자동으로 포함됩니다.
-    - 내용의 왼쪽 테이블 위에 있는 **필터** 내용의 현재 테이블을 검색하려면 이 필드에 용어를 입력합니다. 이 필드는 문서 제목에 나타나는 용어와 일치합니다. 
 
 
 ## <a name="product-feedback"></a>제품 피드백

@@ -1,26 +1,20 @@
 ---
-title: "부팅 이미지 사용자 지정 "
+title: '부팅 이미지 사용자 지정 '
 titleSuffix: Configuration Manager
-description: "Configuration Manager 또는 DISM(배포 이미지 서비스 및 관리) 명령줄 도구를 사용하여 부팅 이미지 사용자 지정하는 몇 가지 방법을 알아봅니다."
-ms.custom: na
+description: Configuration Manager 또는 DISM(배포 이미지 서비스 및 관리) 명령줄 도구를 사용하여 부팅 이미지 사용자 지정하는 몇 가지 방법을 알아봅니다.
 ms.date: 01/23/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-osd
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9cbfc406-d009-446d-8fee-4938de48c919
-caps.latest.revision: "15"
-caps.handback.revision: "0"
 author: aczechowski
 ms.author: aaroncz
-manager: angrobe
-ms.openlocfilehash: 184768e87406051508c8dcacfa63db5ff85c3732
-ms.sourcegitcommit: 08f9854fb6c6d21e1e923b13e38a64d0bc2bc9a4
+manager: dougeby
+ms.openlocfilehash: 3532e6db7b4ece1676c9b9f41f9336274ac3d117
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="customize-boot-images-with-system-center-configuration-manager"></a>System Center Configuration Manager로 부팅 이미지 사용자 지정
 
@@ -167,7 +161,7 @@ Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deploy
 
     5.  **네임스페이스**에 **\\\\<***SMS 공급자 컴퓨터***>\root\sms\site_<***사이트 코드***>**>를 입력하고 **연결**을 클릭합니다.  
 
-    6.  **인스턴스 열기**를 클릭하고 **sms_bootimagepackage.packageID="<패키지 ID\>"**를 입력한 후 **확인**을 클릭합니다. 패키지ID의 경우, 3단계에서 확인한 값을 입력합니다.  
+    6.  **인스턴스 열기**를 클릭하고 **sms_bootimagepackage.packageID="<패키지 ID\>"** 를 입력한 후 **확인**을 클릭합니다. 패키지ID의 경우, 3단계에서 확인한 값을 입력합니다.  
 
     7.  **개체 새로 고침**을 클릭한 후 **속성** 창에서 **EnableLabShell** 을 클릭합니다.  
 
@@ -283,7 +277,7 @@ Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deploy
 
     5.  **네임스페이스**에 **\\\\<***SMS 공급자 컴퓨터***>\root\sms\site_<***사이트 코드***>**>를 입력하고 **연결**을 클릭합니다.  
 
-    6.  **인스턴스 열기**를 클릭하고 **sms_bootimagepackage.packageID="<패키지 ID\>"**를 입력한 후 **확인**을 클릭합니다. 패키지ID의 경우, 3단계에서 확인한 값을 입력합니다.  
+    6.  **인스턴스 열기**를 클릭하고 **sms_bootimagepackage.packageID="<패키지 ID\>"** 를 입력한 후 **확인**을 클릭합니다. 패키지ID의 경우, 3단계에서 확인한 값을 입력합니다.  
 
     7.  **개체 새로 고침**을 클릭한 후 **속성** 창에서 **EnableLabShell** 을 클릭합니다.  
 

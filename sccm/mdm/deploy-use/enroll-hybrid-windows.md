@@ -1,25 +1,20 @@
 ---
-title: "Microsoft Intune에서 Windows 하이브리드 장치 관리 설정"
+title: Microsoft Intune에서 Windows 하이브리드 장치 관리 설정
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager 및 Microsoft Intune에서 Windows 장치 관리 설정"
-ms.custom: na
+description: System Center Configuration Manager 및 Microsoft Intune에서 Windows 장치 관리 설정
 ms.date: 03/17/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: dc1f70f5-64ab-42ab-aa91-d3858803e12f
-caps.latest.revision: "9"
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.openlocfilehash: 95808d4fd743d5cc18cacb69bb38bc729acdda25
-ms.sourcegitcommit: 92c3f916e6bbd35b6208463ff406e0247664543a
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 1e45cae03754fcfa3a310bf59e8e3280d5088518
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-up-windows-hybrid-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune에서 Windows 하이브리드 장치 관리 설정
 
@@ -69,11 +64,11 @@ Intune 라이선스를 사용자에게 할당하면 추가 단계 없이 Windows
 
 ### <a name="configure-automatic-mdm-enrollment"></a>자동 MDM 등록 구성
 
-1. [Azure 관리 포털](https://portal.azure.com) (https://manage.windowsazure.com) 에 로그인하여 **Azure Active Directory**를 선택합니다.
+1. [Azure 관리 포털](https://portal.azure.com)(https://manage.windowsazure.com))에 로그인하여 **Azure Active Directory**를 선택합니다.
 
   ![Azure 포털의 스크린샷](../media/auto-enroll-azure-main.png)
 
-2. **이동성(MDM 및 MAM)**을 선택합니다.
+2. **이동성(MDM 및 MAM)** 을 선택합니다.
 
   ![Azure 포털의 스크린샷](../media/auto-enroll-mdm.png)
 

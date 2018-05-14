@@ -4,18 +4,17 @@ titleSuffix: Configuration Manager
 description: Configuration Manager Technical Preview 버전 1804에서 사용할 수 있는 새로운 기능에 대해 알아봅니다.
 ms.date: 04/25/2018
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: 8af43618-ec60-4c3e-a007-12399d1335b9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 82de25f24771d4b66d58a550eb4caed6ad262869
-ms.sourcegitcommit: d67c6246bb6027cd5501e772b0521f9272407c28
+ms.openlocfilehash: 0fcdcc984e267e6c54ad7c6194e8494854f0a1ee
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="capabilities-in-technical-preview-1804-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1804의 기능
 
@@ -176,6 +175,9 @@ HTTP 연결을 사용하여 통신하도록 응용 프로그램 카탈로그 웹
 >  - 일정 보내기 도구
 > 
 > <sup>1</sup> CMTrace는 .NET 또는 WPF(Windows Presentation Foundation)를 사용하지 않으므로 Windows PE 부팅 이미지에서 계속 사용됩니다.
+
+### <a name="known-issues"></a>알려진 문제
+일부 클라이언트 및 서버 도구는 시작 시 예기치 않게 종료될 수 있습니다. 이 문제는 미디어에 누락된 파일 때문입니다. 해결책으로서 AdminConsole\bin directory에서 SMSSETUP\Tools\ClientTools 및 ServerTools 디렉터리 모두로 **Microsoft.Diagnostics.Tracing.EventSource.dll** 파일을 복사합니다. 이 파일은 Configuration Manager 콘솔에서 사용하는 것과 동일한 버전이어야 합니다. 다른 버전은 작동하지 않을 수 있습니다. <!--513977-->
 
 
 

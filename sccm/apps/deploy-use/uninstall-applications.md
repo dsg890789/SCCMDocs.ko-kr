@@ -1,27 +1,20 @@
 ---
-title: "응용 프로그램 제거"
+title: 응용 프로그램 제거
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager를 사용하여 응용 프로그램 제거"
-ms.custom: na
+description: System Center Configuration Manager를 사용하여 응용 프로그램 제거
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-app
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-app
+ms.topic: conceptual
 ms.assetid: 0ea3edaa-27c6-4391-9896-cd97d9c5d06d
-caps.latest.revision: 
-caps.handback.revision: 
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
-ms.openlocfilehash: 11b6f7ad65296131622b707fcb68d77183e3a288
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 7587fa6d96d6f8737921c9e5edae992cdd0ea614
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="uninstall-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 제거
 

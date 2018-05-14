@@ -1,24 +1,20 @@
 ---
-title: "기술 미리 보기 1705"
+title: 기술 미리 보기 1705
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager용 Technical Preview 버전 1705에서 사용 가능한 기능에 대해 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager용 Technical Preview 버전 1705에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 06/02/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 00684289-d21a-45f8-b1e3-c5c787d73096
-author: erikje
-ms.author: erikje
-manager: angrobe
-ms.openlocfilehash: 60415539a645e40f1b097897d4b255924d61f389
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 49205ac1d1fc2dd20cbd4a0844632c5f3d181e45
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="capabilities-in-technical-preview-1705-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1705의 기능
 
@@ -59,7 +55,7 @@ Technical Preview 버전 1606 이상에서 이 도구를 사용할 수 있습니
 
 이 도구를 실행하면 지정한 업데이트에 대해 실행됩니다. 기본적으로 이 도구는 성공적으로 설치되었거나 다운로드된 업데이트를 삭제하지 않습니다.  
 
-### <a name="prerequisites"></a>전제 조건
+### <a name="prerequisites"></a>필수 구성 요소
 이 도구를 실행하는 데 사용하는 계정에는 다음 권한이 필요합니다.
 -   중앙 관리 사이트 및 계층 구조에 있는 각 기본 사이트의 사이트 데이터베이스에 대한 **읽기** 및 **쓰기** 권한. 이러한 권한을 설정하려면 사용자 계정을 각 사이트의 Configuration Manager 데이터베이스에 **db_datawriter** 및 **db_datareader** [고정 데이터베이스 역할](/sql/relational-databases/security/authentication-access/database-level-roles#fixed-database-roles)의 구성원으로 추가할 수 있습니다. 이 도구는 보조 사이트와는 상호 작용하지 않습니다.
 -   계층 구조의 최상위 사이트에 대한 **로컬 관리자**
@@ -143,7 +139,7 @@ Technical Preview 버전 1606 이상에서 이 도구를 사용할 수 있습니
 ## <a name="improved-user-notifications-for-office-365-updates"></a>Office 365 업데이트에 대한 향상된 사용자 알림
 클라이언트가 Office 365 업데이트를 설치할 때 Office 간편 실행 사용자 환경을 활용하도록 개선되었습니다. 여기에는 팝업 및 앱 내 알림과 카운트다운 환경이 포함됩니다. 이 릴리스 전에는 Office 365 업데이트가 클라이언트로 전송될 때 열려 있던 Office 응용 프로그램이 경고 없이 자동으로 닫혔습니다. 이 업데이트 후에는 Office 응용 프로그램이 더 이상 예기치 않게 닫히지 않습니다.
 
-### <a name="prerequisites"></a>전제 조건
+### <a name="prerequisites"></a>필수 구성 요소
 이 업데이트는 Office 365 ProPlus 클라이언트에 적용됩니다.
 
 ### <a name="known-issues"></a>알려진 문제

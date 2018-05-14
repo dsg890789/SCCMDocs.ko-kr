@@ -1,26 +1,21 @@
 ---
-title: "기술 미리 보기 1604의 기능"
+title: 기술 미리 보기 1604의 기능
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager용 Technical Preview 버전 1604에서 사용 가능한 기능에 대해 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager용 Technical Preview 버전 1604에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 684a5559-9e6e-469b-86ae-e768e9f0c9ac
-caps.latest.revision: "8"
-author: erikje
-ms.author: erikje
-manager: angrobe
+author: aczechowski
 robots: noindex,nofollow
-ms.openlocfilehash: a6a3bb10b751768cd0e3987b30c80b5953e8eda5
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 113e22c33e9e8545c382373f3ba093dba3969939
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="capabilities-in-technical-preview-1604-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1604의 기능
 
@@ -45,7 +40,7 @@ ms.lasthandoff: 12/01/2017
 
 1.  Azure Active Directory에서 Configuration Manager를 "웹 응용 프로그램 및/또는 웹 API" 관리 도구로 등록합니다. 이렇게 하면 나중에 필요한 클라이언트 ID가 제공됩니다.  
 
-    1.  [https://manage.windowsazure.com](https://manage.windowsazure.com)의 **Active Directory** 노드에서 Azure Active Directory를 선택한 후 **응용 프로그램** > **추가**를 클릭합니다.  
+    1.  [https://manage.windowsazure.com](https://manage.windowsazure.com)의 **Active Directory** 노드에서 Azure Active Directory를 선택한 다음, **응용 프로그램** > **추가**를 클릭합니다.  
 
     2.  **조직에서 개발 중인 응용 프로그램 추가**를 클릭합니다.  
 

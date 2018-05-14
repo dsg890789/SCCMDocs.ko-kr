@@ -2,20 +2,19 @@
 title: 공동 관리를 위해 Windows 10 준비
 titleSuffix: Configuration Manager
 description: 공동 관리를 위해 Windows 10 장치를 준비하는 방법을 알아봅니다.
-author: mestew
-ms.author: mstewart
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
 ms.date: 03/28/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: configuration-manager
-ms.service: ''
-ms.technology: ''
+ms.technology: configmgr-client
 ms.assetid: 101de2ba-9b4d-4890-b087-5d518a4aa624
-ms.openlocfilehash: 93a991cb3fd78e44f5ae4434a9845a57450e1025
-ms.sourcegitcommit: e4ca9fb1fad2caaf61bb46e0a12f4d6b96f15513
+ms.openlocfilehash: 8c025d7c7a1dc452cb96f937801656bc4d0cadab
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="prepare-windows-10-devices-for-co-management"></a>공동 관리를 위해 Windows 10 장치 준비
 AD 및 Azure AD에 조인하고, Microsoft Intune과 Configuration Manager에서 클라이언트를 등록하는 Windows 10 장치에서 공동 관리를 사용할 수 있습니다. 새 Windows 10 장치 및 Intune에 이미 등록된 장치의 경우 공동 관리되기 전에 Configuration Manager 클라이언트를 설치합니다. Configuration Manager 클라이언트인 Windows 10 장치의 경우 Intune에서 장치를 등록하고 Configuration Manager 콘솔에서 공동 관리를 사용할 수 있습니다.
@@ -30,7 +29,7 @@ AD 및 Azure AD에 조인하고, Microsoft Intune과 Configuration Manager에서
 다음은 공동 관리를 사용하기 위한 일반 전제 조건입니다.  
 
 - Configuration Manager 버전 1710 이상
-- Azure AD
+- [클라우드 관리를 위해 Azure AD에 등록된 사이트](/sccm/core/servers/deploy/configure/azure-services-wizard)
 - 모든 사용자의 EMS 또는 Intune 라이선스
 - 사용하도록 설정된 [Azure AD 자동 등록](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)
 - **Intune**으로 설정된 Intune 구독 및 Intune의 MDM 기관

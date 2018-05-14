@@ -1,25 +1,20 @@
 ---
-title: "Lookout 구독 설정"
+title: Lookout 구독 설정
 titleSuffix: Configuration Manager
-description: "이 항목에서는 Lookout 장치 위협 방지를 구성하는 방법을 자세히 설명합니다."
-ms.custom: na
+description: 이 항목에서는 Lookout 장치 위협 방지를 구성하는 방법을 자세히 설명합니다.
 ms.date: 03/05/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 6087b279-ba05-4824-b5e3-3af14f3d3cfe
-caps.latest.revision: 
-author: dougeby
-ms.author: dougeby
-manager: angrobe
-ms.openlocfilehash: 142926bc41a79adc8d8300e413022fb0e3566c5a
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 08bf88c0f6660c213c47a5ed283b3be0431056a2
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-up-your-subscription-for--lookout-device-threat-protection"></a>Lookout 장치 위협 방지에 대해 구독 설정
 

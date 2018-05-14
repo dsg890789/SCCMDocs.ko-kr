@@ -2,24 +2,19 @@
 title: 하이브리드 MDM의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 장치 관리 기능에 대해 알아봅니다.
-ms.custom: na
-ms.date: 04/02/2018
+ms.date: 05/01/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-hybrid
+ms.topic: conceptual
 ms.assetid: 7b127cee-61f1-4681-9760-caebed36ddf5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6a47569ee56931d76a41e5f14ed56f8276d264fb
-ms.sourcegitcommit: e4ca9fb1fad2caaf61bb46e0a12f4d6b96f15513
+ms.openlocfilehash: 3105f9597d1f3971d6ef1092a33b0077118a1a22
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 장치 관리의 새로운 기능
 
@@ -44,9 +39,43 @@ ms.lasthandoff: 04/18/2018
 
 
 
+## <a name="may-2018"></a>2018년 5월
+
+### <a name="new-in-configuration-manager-current-branch"></a>Configuration Manager(현재 분기)의 새로운 기능
+
+#### <a name="support-for-new-versions-of-cisco-anyconnect-client-for-ios"></a>새 버전의 iOS용 Cisco AnyConnect 클라이언트 지원
+<!--1357393-->
+iOS 버전 4.0.7 이상을 위한 Cisco AnyConnect를 지원할 수 있습니다. 이렇게 할 경우 기존 Cisco AnyConnect VPN 프로필에 **Cisco Legacy AnyConnect**라는 레이블이 지정되고, 계속해서 이전처럼 작동합니다. **Cisco AnyConnect** 옵션은 iOS 버전 4.0.7 이상에서 Cisco AnyConnect와 함께 작동하는 새 VPN 프로필에 사용됩니다.
+
+이 기능 사용에 대한 자세한 내용은 [시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요.
+
+> [!Note]  
+> macOS VPN 프로필에는 계속해서 **Cisco Legacy AnyConnect** 옵션을 사용하세요. 
+
+
+
 ## <a name="april-2018"></a>2018년 4월
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+
+#### <a name="improved-device-tiles-in-the-windows-10-company-portal"></a>Windows 10 회사 포털의 개선된 장치 타일
+<!--2213364-->
+저시력 사용자가 더 쉽게 액세스할 수 있고 화면 읽기 도구의 성능이 개선되도록 타일이 업데이트되었습니다.
+
+
+#### <a name="test-the-company-portal-for-macos-on-virtual-machines"></a>가상 머신에서 macOS용 회사 포털 테스트
+<!--2216679-->
+Microsoft에서는 IT 관리자가 Parallels Desktop 및 VMware Fusion에서 가상 머신의 macOS용 회사 포털 앱을 테스트하는 데 도움이 되는 지침을 게시했습니다. 자세한 내용은 [테스트를 위해 macOS 가상 머신 등록](/intune/macos-enroll#enroll-virtual-macos-machines-for-testing)을 참조하세요.
+
+
+#### <a name="send-diagnostic-reports-in-company-portal-app-for-macos"></a>macOS용 회사 포털 앱에 진단 보고서 보내기
+<!--2216677-->
+사용자가 Intune 관련 오류를 보고하는 방법을 개선하기 위해 macOS 장치용 회사 포털 앱이 업데이트되었습니다. 회사 포털 앱에서 직원은 다음을 수행할 수 있습니다.
+
+- Microsoft 개발자 팀에 직접 진단 보고서를 업로드합니다.
+- 인시던트 ID를 회사의 IT 지원 팀에게 이메일로 전송합니다.
+
 
 #### <a name="updated-help-experience-on-company-portal-app-for-android"></a>Android용 회사 포털 앱의 도움말 환경 업데이트 
 <!--1631531-->

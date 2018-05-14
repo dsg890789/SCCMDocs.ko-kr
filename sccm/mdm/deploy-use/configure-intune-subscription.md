@@ -1,27 +1,20 @@
 ---
-title: "Intune 구독 구성"
+title: Intune 구독 구성
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager를 사용하여 Intune 구독 구성"
-ms.custom: na
+description: System Center Configuration Manager를 사용하여 Intune 구독 구성
 ms.date: 06/02/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-hybrid
+ms.topic: conceptual
 ms.assetid: 99de8fe7-560e-401a-8ab2-6d87d091be17
-caps.latest.revision: 
-caps.handback.revision: 
-author: dougeby
-ms.author: dougeby
-manager: angrobe
-ms.openlocfilehash: 720ba9e11ea16f5318ba78504cfe455e1019ab3f
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 6ab10b0bc099aa58b1a0703bbc1c7b53c9de85cf
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-your-intune-subscription-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하여 Intune 구독 구성
 

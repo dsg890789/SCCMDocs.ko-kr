@@ -1,25 +1,20 @@
 ---
-title: "기술 미리 보기 1701의 기능"
+title: 기술 미리 보기 1701의 기능
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager용 Technical Preview 버전 1701에서 사용 가능한 기능에 대해 알아봅니다."
-ms.custom: na
+description: System Center Configuration Manager용 Technical Preview 버전 1701에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 18598eaa-1131-44ff-8f8b-6093e87ac7a1
-caps.latest.revision: "5"
-author: erikje
-ms.author: erikje
-manager: angrobe
-ms.openlocfilehash: 90e5aa799516bf2a7d6715e12bb8f3d1b72737f3
-ms.sourcegitcommit: 7fe45ff75f05f7cc03ad021db8119791abe18049
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 894d268151f9c9dfb05ded812eb642f8025dc459
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="capabilities-in-technical-preview-1701-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1701의 기능
 
@@ -64,7 +59,7 @@ ms.lasthandoff: 12/01/2017
   클라이언트는 대체를 사용할 때 대체에 대한 경계 그룹 구성을 사용하여 사용 가능한 소프트웨어 업데이트 지점 풀을 만듭니다. 이 풀에는 클라이언트 *현재 경계 그룹*, *인접한 경계 그룹* 및 클라이언트 *사이트 기본 경계 그룹*의 모든 소프트웨어 업데이트 지점이 포함됩니다.
 
 - **기본 사이트 경계 그룹 구성:**  
- *기본 사이트 경계 그룹&lt;사이트 코드>*에 소프트웨어 업데이트 지점을 추가하는 것이 좋습니다. 이렇게 하면 다른 경계 그룹의 구성원이 아닌 클라이언트가 소프트웨어 업데이트 지점을 찾도록 대체될 수 있습니다.
+ *기본 사이트 경계 그룹&lt;사이트 코드>* 에 소프트웨어 업데이트 지점을 추가하는 것이 좋습니다. 이렇게 하면 다른 경계 그룹의 구성원이 아닌 클라이언트가 소프트웨어 업데이트 지점을 찾도록 대체될 수 있습니다.
 
 
 경계 그룹에 대한 소프트웨어 업데이트 지점을 관리하려면 [현재 분기 설명서의 절차](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#procedures-for-boundary-groups)를 사용합니다. 단, 구성하는 대체 시간은 소프트웨어 업데이트 지점에 아직 사용되지 않습니다.
@@ -99,7 +94,7 @@ ms.lasthandoff: 12/01/2017
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 
-- **관리 지점에서 온-프레미스 장치 상태 증명 사용**<br>  Configuration Manager 콘솔에서 관리 지점으로 이동하고 **관리 지점 구성 요소 속성**을 연 다음 **고급 옵션** 탭을 클릭합니다. **추가**를 클릭하고 **온-프레미스 장치 상태 증명 서비스 URL**에 대해 온-프레미스 URL (예: https://10.10.10.10) 을 지정합니다.
+- **관리 지점에서 온-프레미스 장치 상태 증명 사용**<br>  Configuration Manager 콘솔에서 관리 지점으로 이동하고 **관리 지점 구성 요소 속성**을 연 다음 **고급 옵션** 탭을 클릭합니다. **추가**를 클릭하고 **온-프레미스 장치 상태 증명 서비스 URL**에 대해 온-프레미스 URL(예: https://10.10.10.10)) 을 지정합니다.
 - **클라이언트 에이전트에 대해 온-프레미스 관리 지점 상태 증명 보고 사용**<br>Configuration Manager 콘솔에서 **관리** > **클라이언트 설정**을 선택하고 두 번 클릭하거나 새 **사용자 지정 장치 설정**을 만듭니다. **컴퓨터 에이전트**를 선택하고 **온-프레미스 상태 증명 서비스 사용**을 **예**로 설정합니다. **장치 상태 증명 서비스와 통신 사용**이 **예**로 설정되고 **온-프레미스 상태 증명 사용**이 **아니요**로 설정된 경우 관리 지점에서 클라우드 기반 장치 상태 증명 서비스를 사용합니다.
 
 ## <a name="use-the-oms-connector-for-microsoft-azure-government-cloud"></a>Microsoft Azure Government 클라우드용 OMS 커넥터 사용
@@ -122,7 +117,7 @@ ms.lasthandoff: 12/01/2017
       &lt;setting name="FairFaxArmResourceId" serializeAs="String"> &lt;value>https://management.usgovcloudapi.net/&lt;/value>  
       &lt;/setting>
 
-  설정 이름 *FairFaxAuthorityResource*의 값을 "https://login.microsoftonline.com/"으로 변경합니다.
+  설정 이름 *FairFaxAuthorityResource*의 값을 "https://login.microsoftonline.com/"로 변경합니다.
 
   - **원래 값:** &lt;setting name="FairFaxAuthorityResource" serializeAs="String">   
     &lt;value>&lt;/value>

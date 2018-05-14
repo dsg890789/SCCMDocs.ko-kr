@@ -1,26 +1,20 @@
 ---
-title: "설치 다운로더"
+title: 설치 다운로더
 titleSuffix: Configuration Manager
-description: "사이트 설치 시 주요 설치 파일의 최신 버전을 사용하도록 하기 위한 이 독립 실행형 응용 프로그램에 대해 알아봅니다."
-ms.custom: na
+description: 사이트 설치 시 주요 설치 파일의 최신 버전을 사용하도록 하기 위한 이 독립 실행형 응용 프로그램에 대해 알아봅니다.
 ms.date: 3/1/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: bda87fc5-2e4c-4992-98a4-01770365038c
-caps.latest.revision: 
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: dec591ac845b6c54421197099e56d7a4a86783ae
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: f8948556ebee069e4ea1c8bf16302ef92fe7b3c1
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setup-downloader-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 설치 다운로더
 

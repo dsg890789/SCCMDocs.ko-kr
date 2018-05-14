@@ -1,28 +1,21 @@
 ---
-title: "제품 수명 주기 대시보드"
+title: 제품 수명 주기 대시보드
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager의 제품 수명 주기 대시보드에 대한 정보를 가져옵니다."
-ms.custom: na
+description: System Center Configuration Manager의 제품 수명 주기 대시보드에 대한 정보를 가져옵니다.
 ms.date: 02/13/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: 8b5b144a-0e5f-4fcc-87b2-33b9bcdb5655
-caps.latest.revision: 
-caps.handback.revision: 
-author: mestew
-ms.author: mstewart
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
 robots: noindex,nofollow
-ms.openlocfilehash: cfc54c1beb92d0102897f77ce3c287cc0ef9e0f4
-ms.sourcegitcommit: fbd4a9d2fa8ed4ddd3a0fecc4a2ec4fc0ccc3d0c
+ms.openlocfilehash: 8f24fcd2d75d34e2d2d69c9c54f4f47991be7301
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="use-the-product-lifecycle-dashboard-to-manage-microsoft-lifecycle-policy-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 제품 수명 주기 대시보드를 사용하여 Microsoft 수명 주기 정책 관리
 

@@ -4,19 +4,17 @@ titleSuffix: Configuration Manager
 description: Configuration Manager에서 새로운 기능과 기술을 테스트할 수 있는 기술 미리 보기 릴리스에 대해 알아봅니다.
 ms.date: 04/25/2018
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
-ms.topic: get-started-article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: 9ce0a8cb-f96c-4e41-834c-59ceb54ce44a
-caps.latest.revision: 157
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 79a535bd9ee7f597e551c2d4f84c39c84ecf262f
-ms.sourcegitcommit: d67c6246bb6027cd5501e772b0521f9272407c28
+ms.openlocfilehash: 6b39f5eec4209e176374dcbdffc11183625c4967
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="technical-preview-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview
 
@@ -92,7 +90,7 @@ ms.lasthandoff: 04/27/2018
 **기술 미리 보기의 활성 기준선 버전:**
    
 릴리스 후 최대 1년 동안 기준 버전을 설치할 수 있습니다. 그러나 새 Technical Preview 사이트를 설치할 경우 사용 가능한 최신 기준선 버전을 사용하는 것이 좋습니다.
--  **Technical Preview 1711** - Configuration Manager Technical Preview 1711은 콘솔 내 업데이트와 새로운 기준 버전으로 모두 제공됩니다. [TechNet 평가 센터에서](http://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection-technical-preview) 기준 버전을 다운로드합니다.
+-  **Technical Preview 1804** - Configuration Manager Technical Preview 1804는 콘솔 내 업데이트와 새로운 기준 버전으로 모두 제공됩니다. [TechNet 평가 센터에서](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection-technical-preview) 기준 버전을 다운로드합니다.
 
 
 ##  <a name="BKMK_TPFeedback"></a> 사용자 의견 제공  

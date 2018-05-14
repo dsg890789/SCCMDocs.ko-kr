@@ -1,26 +1,20 @@
 ---
-title: "Intune을 사용하여 관리되는 iOS 및 Mac OS X 장치에 대한 구성 항목을 만드는 방법"
+title: Intune을 사용하여 관리되는 iOS 및 Mac OS X 장치에 대한 구성 항목을 만드는 방법
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager iOS 및 Mac OS X 구성 항목을 사용하여 iOS 및 Mac OS X 장치에 대한 설정을 관리할 수 있습니다."
-ms.custom: na
+description: System Center Configuration Manager iOS 및 Mac OS X 구성 항목을 사용하여 iOS 및 Mac OS X 장치에 대한 설정을 관리할 수 있습니다.
 ms.date: 03/28/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 613a48ac-c55d-4c4a-94ea-d3747a1b10cb
-caps.latest.revision: "15"
-caps.handback.revision: "0"
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.openlocfilehash: d101ffc649928c1136386bc7979d4a37ad404af1
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 0a6925cdc1f3b3a5018cc4895820019d88254bd3
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-create-configuration-items-for-ios-and-mac-os-x-devices-managed-with-intune"></a>Intune으로 관리되는 iOS 및 Mac OS X 장치에 대한 구성 항목을 만드는 방법
 System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용하여 Configuration Manager에서 온-프레미스로 관리되거나 Microsoft Intune에 등록된 iOS 및 Mac OS X 장치에 대한 설정을 관리할 수 있습니다.  
@@ -243,7 +237,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
   
          앱 페이지를 열고 클립보드에 URL을 복사합니다. 이제 규격 또는 비규격 앱 목록의 URL로 사용할 수 있습니다.  
   
-         **예:** 스토어에서 **iPad용 Microsoft Word** 앱을 검색합니다. 사용하는 URL은 **https://itunes.apple.com/kr/app/microsoft-word-for-ipad/id586447913?mt=8**이 됩니다.  
+         **예:** 스토어에서 **iPad용 Microsoft Word** 앱을 검색합니다. 사용할 URL은 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**입니다.  
   
     -   **편집** - 선택한 앱의 이름, 게시자 및 URL을 편집할 수 있습니다.  
   
@@ -280,7 +274,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
         >  앱의 번들 ID를 찾으려면 앱이 설치된 Mac 컴퓨터에서 다음 단계를 따르세요.  
         >   
         >  1.  앱이 설치되어 있는 폴더(예: **/Applications**)를 엽니다.  
-        > 2.  *<앱 이름\>***.app** 번들을 선택하고 **패키지 내용 표시**를 선택합니다.  
+        > 2.  *<App Name\>***.app** 번들을 선택하고 **패키지 내용 표시**를 선택합니다.  
         > 3.  **Info.plist** 파일을 엽니다.  
         > 4.  **CFBundleIdentifier**키와 연결된 값을 확인합니다.  
         >   
@@ -363,7 +357,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
   
         -   페이지의 URL을 복사한 다음 키오스크 모드에서 실행할 앱을 지정하는 URL로 사용합니다.  
   
-        -   **예:** **iPad용 Microsoft Word**를 검색합니다. 사용하는 URL은 **https://itunes.apple.com/kr/app/microsoft-word-for-ipad/id586447913?mt=8**이 됩니다.  
+        -   **예:** **iPad용 Microsoft Word**를 검색합니다. 사용할 URL은 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**입니다.  
   
     -   **터치** - 장치에서 터치 스크린을 사용하거나 사용하지 않도록 설정합니다.  
   

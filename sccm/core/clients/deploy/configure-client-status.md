@@ -1,27 +1,20 @@
 ---
-title: "클라이언트 상태 구성"
+title: 클라이언트 상태 구성
 titleSuffix: Configuration Manager
-description: "System Center Configuration Manager에서 클라이언트 상태 설정을 선택합니다."
-ms.custom: na
+description: System Center Configuration Manager에서 클라이언트 상태 설정을 선택합니다.
 ms.date: 04/23/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-client
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.technology: configmgr-client
+ms.topic: conceptual
 ms.assetid: a2275ba2-c83d-43e7-90ed-418963a707fe
-caps.latest.revision: 
-caps.handback.revision: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.openlocfilehash: 5db52925515e65797a43ed35775460369f742f49
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 8f919e647ae252731d60a98e01485a01aae10698
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-configure-client-status-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트 상태를 구성하는 방법
 

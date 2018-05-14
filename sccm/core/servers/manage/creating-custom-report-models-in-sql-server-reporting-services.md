@@ -1,26 +1,20 @@
 ---
-title: "사용자 지정 보고서 만들기"
+title: 사용자 지정 보고서 만들기
 titleSuffix: Configuration Manager
-description: "비즈니스 요구 사항을 충족하는 보고서 모델을 정의한 다음 Configuration Manager에 보고서 모델을 배포합니다."
-ms.custom: na
+description: 비즈니스 요구 사항을 충족하는 보고서 모델을 정의한 다음 Configuration Manager에 보고서 모델을 배포합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f2df88b4-c348-4dcf-854a-54fd6eedf485
-caps.latest.revision: "5"
-caps.handback.revision: "0"
-author: Dougeby
-ms.author: dougeby
-manager: angrobe
-ms.openlocfilehash: 56274cbec336219a7734d23bf1bade8a7892de30
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: fd606ff7068b7c14047e445d16ea78d20a5c12ea
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="creating-custom-report-models-for-system-center-configuration-manager-in-sql-server-reporting-services"></a>SQL Server Reporting Services에서 System Center Configuration Manager에 대한 사용자 지정 보고서 모델 만들기
 
@@ -100,7 +94,7 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 
 3.  **관계형 데이터 원본** 창에서 **Simple_Model** 데이터 원본을 선택했는지 확인하고 **다음**을 클릭합니다.  
 
-4.  **테이블 및 뷰 선택** 페이지의 **사용 가능한 개체** 목록에서 보고서 모델에 사용할 **v_R_System (dbo)**뷰를 선택합니다.  
+4.  **테이블 및 뷰 선택** 페이지의 **사용 가능한 개체** 목록에서 보고서 모델에 사용할 **v_R_System (dbo)** 뷰를 선택합니다.  
 
     > [!TIP]  
     >  **사용 가능한 개체** 목록에서 뷰를 찾으려면 목록 맨 위의 **이름** 제목을 클릭하여 개체를 사전순으로 정렬합니다.  
@@ -175,7 +169,7 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 
 9. *&lt;모델 이름\>***.smdl** 파일을 저장하고 닫습니다.  
 
-10. *&lt;모델 이름\>***.smdl** 파일을 Configuration Manager 사이트 서버의 *%programfiles%*\Microsoft Configuration Manager\AdminConsole\XmlStorage\Other 폴더에 복사합니다.  
+10. *&lt;모델 이름\>***.smdl* 파일을 Configuration Manager 사이트 서버의 *%programfiles%* \Microsoft Configuration Manager\AdminConsole\XmlStorage\Other 폴더에 복사합니다.  
 
     > [!IMPORTANT]  
     >  보고서 모델 파일을 Configuration Manager 사이트 서버로 복사한 후 Configuration Manager 콘솔을 끝내고 다시 시작해야 **보고서 만들기 마법사**에서 보고서 모델을 사용할 수 있습니다.  
@@ -418,7 +412,7 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 
 9. *&lt;모델 이름\>***.smdl** 파일을 저장하고 닫습니다.  
 
-10. *&lt;모델 이름\>***.smdl** 파일을 Configuration Manager 사이트 서버의 *%programfiles%*\Microsoft Configuration Manager\AdminConsole\XmlStorage\Other 폴더에 복사합니다.  
+10. *&lt;모델 이름\>***.smdl* 파일을 Configuration Manager 사이트 서버의 *%programfiles%* \Microsoft Configuration Manager\AdminConsole\XmlStorage\Other 폴더에 복사합니다.  
 
     > [!IMPORTANT]  
     >  보고서 모델 파일을 Configuration Manager 사이트 서버로 복사한 후 Configuration Manager 콘솔을 끝내고 다시 시작해야 **보고서 만들기 마법사**에서 보고서 모델을 사용할 수 있습니다.  

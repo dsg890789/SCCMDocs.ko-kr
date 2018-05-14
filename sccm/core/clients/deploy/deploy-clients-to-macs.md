@@ -2,25 +2,19 @@
 title: Mac 클라이언트 배포
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에서 Mac 컴퓨터에 클라이언트를 배포하는 방법을 알아봅니다.
-ms.custom: na
 ms.date: 05/04/2017
 ms.prod: configuration-manager
-ms.reviewer: aaroncz
-ms.suite: na
-ms.technology:
-- configmgr-client
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-client
+ms.topic: conceptual
 ms.assetid: e46ad501-5d73-44ac-92de-0de14ef72b83
-caps.latest.revision: 12
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.openlocfilehash: 1b7f20a48e0e7219d933c367fb9f0315fc287dfd
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 01e53b80b47b3c1452cd73e408af48bc0283d60b
+ms.sourcegitcommit: 526ded222b69b5e75e8068ba09c5dda227c155c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-deploy-clients-to-macs"></a>How to deploy clients to Macs
 
@@ -199,7 +193,7 @@ CMEnroll 도구를 사용하여 클라이언트 설치를 자동화하고 클라
 > -   Configuration Manager 클라이언트 설치를 통해 생성된 BOM(제품 구성 정보) 파일 및 속성 목록(.plist) 파일  
 > -   라이브러리/응용 프로그램 지원/Microsoft/CCM/Logs 폴더의 내용  
 >   
->  CmDiagnostics를 통해 수집되는 정보는 이름이 cmdiag-*<호스트 이름\>***-***&gt;날짜 및 시간\>*.zip인 압축 파일에 추가되어 컴퓨터 바탕 화면에 저장됩니다.***
+>  CmDiagnostics를 통해 수집되는 정보는 `cmdiag-<hostname>-<datetime>.zip`이라는 이름의 Zip 파일에 추가되어 컴퓨터 바탕 화면에 저장됩니다.
 
 
 ##  <a name="use-a-certificate-request-and-installation-method-that-is-independent-from-configuration-manager"></a>Configuration Manager와 별개의 인증서 요청 및 설치 방법 사용  
@@ -286,7 +280,7 @@ CMEnroll 도구를 사용하여 클라이언트 설치를 자동화하고 클라
 
 8.  **확인**을 선택하여 **검색 스크립트 편집** 대화 상자를 닫습니다.  
 
-9. **설정 만들기** 대화 상자의 **재구성 스크립트(옵션)**에 대해 **스크립트 추가**를 선택하여 Mac 컴퓨터에서 발견된 SMSID를 제거하는 스크립트를 지정합니다.  
+9. **설정 만들기** 대화 상자의 **재구성 스크립트(옵션)** 에 대해 **스크립트 추가**를 선택하여 Mac 컴퓨터에서 발견된 SMSID를 제거하는 스크립트를 지정합니다.  
 
 10. **재구성 스크립트 만들기** 대화 상자에서 다음 셸 스크립트를 입력합니다.  
 

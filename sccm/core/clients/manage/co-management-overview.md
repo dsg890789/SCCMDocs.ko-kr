@@ -2,21 +2,19 @@
 title: Windows 10 장치의 공동 관리
 titleSuffix: Configuration Manager
 description: Configuration Manager와 Microsoft Intune을 모두 사용하여 Windows 10 장치를 동시에 관리하는 방법을 알아봅니다.
-keywords: ''
-author: mestew
-ms.author: mstewart
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
 ms.date: 03/28/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: configuration-manager
-ms.service: ''
-ms.technology: ''
+ms.technology: configmgr-client
 ms.assetid: d6bbc787-83a5-44b4-ad64-016e5da7413f
-ms.openlocfilehash: 3d7ca4bb72f6f3f76855faac125385374347ba55
-ms.sourcegitcommit: d67c6246bb6027cd5501e772b0521f9272407c28
+ms.openlocfilehash: 3a667ae075ac688d4b49789ed88f858c2ff39397
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="co-management-for-windows-10-devices"></a>Windows 10 장치의 공동 관리    
  이전 Windows 10 업데이트에서 이미 Windows 10 장치를 온-프레미스 AD(Active Directory)와 클라우드 기반 Azure AD에 동시에 조인할 수 있습니다(하이브리드 Azure AD). Configuration Manager 버전 1710부터 공동 관리에서는 이러한 향상된 기능을 통해 Configuration Manager 및 Intune을 모두 사용하여 Windows 10 버전 1709 장치를 동시에 관리할 수 있습니다. <!-- 1350871 -->
@@ -52,8 +50,11 @@ ms.lasthandoff: 04/27/2018
 
 
 ### <a name="intune"></a>**Intune**
- - [Intune 구독 설정 방법](/sccm/mdm/deploy-use/configure-intune-subscription) 또는 https://docs.microsoft.com/en-us/intune/setup-steps
- - [하이브리드 MDM에서 Intune 독립 실행형으로 마이그레이션 시작](/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)
+ - [Intune 구독 설정 방법](/sccm/mdm/deploy-use/configure-intune-subscription) 또는 [Intune 설정](/intune/setup-steps)  
+ - [하이브리드 MDM에서 Intune 독립 실행형으로 마이그레이션 시작](/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)  
+
+> [!Note]  
+> 하이브리드 MDM 환경(Configuration Manager와 통합된 Intune)이 설정된 경우 공동 관리를 사용할 수 없습니다. 그러나 사용자를 Intune 독립 실행형으로 마이그레이션하기 시작한 후 관련 Windows 10 장치에 공동 관리를 활성화할 수 있습니다. Intune 독립 실행형으로 마이그레이션하는 방법에 대한 자세한 정보는 [하이브리드 MDM에서 Intune 독립 실행형으로 마이그레이션 시작](/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)을 참조하세요.  
 
 
 ### <a name="enable-co-management"></a>공동 관리 사용 

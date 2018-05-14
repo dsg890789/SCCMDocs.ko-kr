@@ -2,25 +2,19 @@
 title: 검색 구성
 titleSuffix: Configuration Manager
 description: 네트워크, Active Directory 및 Azure Active Directory에서 관리할 리소스를 찾도록 검색 방법을 구성합니다.
-ms.custom: na
 ms.date: 03/22/2018
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: 49505eb1-d44d-4121-8712-e0f3d8b15bf5
-caps.latest.revision: 5
-author: mestew
-ms.author: mstewart
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 825b9b250000e8353b1428cbee45f8fda9a30c35
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: e7ac10fdc08569e519468633f30548c5c76b5838
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-discovery-methods-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 검색 방법 구성
 
@@ -183,6 +177,9 @@ Active Directory 포리스트 검색을 사용하도록 설정하고 Active Dire
 6.  **폴링 일정** 탭에서 전체 검색 폴링 일정과 델타 검색을 모두 구성합니다.  
 
 7.  필요한 경우 **Active Directory 특성** 탭에서 검색할 컴퓨터에 대한 다른 Active Directory 특성을 구성할 수 있습니다. 기본 개체 특성도 나열됩니다.  
+
+     > [!Tip]  
+     > 예를 들어 조직에서는 Active Directory에서 컴퓨터 계정에 대한 **설명** 속성을 사용합니다. **사용자 지정**을 클릭하고 사용자 지정 특성으로 `Description`을 추가합니다. 이 검색 방법을 실행한 후 이 특성은 Configuration Manager 콘솔에서 장치 속성 탭에 표시됩니다.<!--513948-->
 
 8.  필요한 경우 **옵션** 탭에서 오래된 컴퓨터 레코드를 검색되지 않도록 필터로 걸러내거나 제외하는 옵션을 구성할 수 있습니다.  
 

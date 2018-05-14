@@ -1,20 +1,25 @@
 ---
-title: "문서 제목 | Microsoft Docs"
-description: 
-keywords: 
-author: GITHUB USERNAME
-manager: ALIAS
-ms.date: 10/06/2016
-ms.topic: article
-ms.prod: 
-ms.service: 
-ms.technology: 
-ms.assetid: GET ONE FROM guidgenerator.com
-ms.openlocfilehash: a218011ded1ff3acc1dbd24471119b701f2cce23
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+title:
+- 35자 이하의 문서 제목
+titleSuffix: Configuration Manager
+description: ''
+ms.date: mm/dd/yyyy
+ms.prod: configuration-manager
+ms.technology: configmgr-other
+ms.topic: conceptual
+ms.assetid:
+- GET ONE FROM guidgenerator.com
+author:
+- GITHUB USERNAME
+ms.author:
+- ALIAS
+manager:
+- ALIAS
+ms.openlocfilehash: bb0a23b8870d31136967b1bc594580bcc2cd0cd9
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="metadata-and-markdown-template"></a>메타데이터 및 Markdown 템플릿
 
@@ -32,7 +37,7 @@ Markdown 파일을 만들 때 새 파일에 템플릿을 복사하고, 아래에
 - 값(예: 제목)에 콜론이 있으면 메타데이터 파서가 중단됩니다. 그 자리에 &#58;이라는 HTML 인코딩을 사용합니다(예: "제목: Azure Rights Management&#58;기본 사항 | Azure RMS").
 - **제목**: 이 제목은 검색 엔진 결과에 표시됩니다. 제목은 파이프(|) 뒤에 서비스의 이름으로 끝나야 합니다(예: 위 참조). 제목은 H1 제목의 제목과 일치하지 않아도 됩니다(또한 일치하지 않아야 함). 대략 65자여야 합니다(| 서비스 이름 포함)
 - **작성자**, **관리자**, **검토자**: 작성자 필드는 별칭이 아니라 작성자의 **Github 사용자 이름**을 포함해야 합니다.  반면에 "관리자" 및 "검토자" 필드는 별칭을 포함해야 합니다. ms.reviewer는 문서 또는 서비스와 관련된 PM의 이름을 지정합니다.
-- **ms.assetid**: CAPS에서 문서의 GUID입니다. 새 Markdown 파일을 만들 때 [https://www.guidgenerator.com](https://www.guidgenerator.com)에서 GUID를 가져옵니다.
+- **ms.assetid**: CAPS에서 문서의 GUID입니다. 새 markdown 파일을 만들 때 [https://www.guidgenerator.com](https://www.guidgenerator.com)에서 GUID를 가져옵니다.
 - **ms.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: [여기](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default)에서 이러한 요소에 가능한 값을 찾을 수 있습니다.
 
 ## <a name="basic-markdown-and-gfm"></a>기본 Markdown 및 GFM
@@ -91,32 +96,32 @@ Markdown 파일에 URL이 표시되는 경우 클릭 가능한 링크로 변환�
 
 ### <a name="ordered-lists"></a>정렬된 목록
 
-1. 이것은 정렬된
+1. This
 1. Is
 1. An
 1. Ordered
-1. 목록입니다.  
+1. 목록  
 
 
 #### <a name="ordered-list-with-an-embedded-list"></a>포함된 목록으로 정렬된 목록
 
-1. 다음은 포함된
+1. Here
 1. comes
 1. an
 1. embedded
     1. Miss Scarlett
     1. Professor Plum
 1. 정렬된
-1. 목록입니다.
+1. 목록
 
 
 ### <a name="unordered-lists"></a>정렬되지 않은 목록
 
-- 이것은
+- 이
 - is
-- 글머리
-- 기호
-- 목록입니다.
+- a
+- 글머리 기호
+- 목록
 
 
 ##### <a name="unordered-list-with-an-embedded-lists"></a>포함된 목록으로 정렬되지 않은 목록
@@ -126,7 +131,7 @@ Markdown 파일에 URL이 표시되는 경우 클릭 가능한 링크로 변환�
 - 목록
     - Mrs. Peacock
     - Mr. Green
-- 은  
+- 포함  
 - 다른
     1. Colonel Mustard
     1. Mrs. White

@@ -1,26 +1,20 @@
 ---
 title: Configure iOS apps with app configuration policies
 titleSuffix: Configuration Manager
-description: "앱을 실행하기 전에 사용자에게 앱 구성 정책을 배포하여 iOS 8 이상을 실행 중인 장치의 구성 문제를 해결합니다."
-ms.custom: na
+description: 앱을 실행하기 전에 사용자에게 앱 구성 정책을 배포하여 iOS 8 이상을 실행 중인 장치의 구성 문제를 해결합니다.
 ms.date: 03/05/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f0a78038-ea22-4826-9c07-1771b7dd2e8d
-caps.latest.revision: "18"
-caps.handback.revision: "0"
-author: dougeby
-ms.author: dougeby
-manager: angrobe
-ms.openlocfilehash: 905b0925f88395942c954561aa0828c15d3ba758
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: e5d00b1efd02d3b096a0b64033b450f0da949eeb
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="apply-settings-to-ios-apps-with-app-configuration-policies-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 앱 구성 정책을 사용하여 iOS 앱에 설정 적용
 

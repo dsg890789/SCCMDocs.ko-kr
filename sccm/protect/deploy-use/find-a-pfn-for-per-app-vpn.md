@@ -1,25 +1,20 @@
 ---
-title: "앱별 VPN에 대한 PFN(패키지 패밀리 이름) 찾기"
+title: 앱별 VPN에 대한 PFN(패키지 패밀리 이름) 찾기
 titleSuffix: Configuration Manager
-description: "앱별 VPN을 구성할 수 있도록 패키지 패밀리 이름을 찾는 두 가지 방법에 대해 알아봅니다."
-ms.custom: na
+description: 앱별 VPN을 구성할 수 있도록 패키지 패밀리 이름을 찾는 두 가지 방법에 대해 알아봅니다.
 ms.date: 10/06/2016
-ms.reviewer: na
-ms.suite: na
 ms.prod: configuration-manager
-ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-protect
+ms.topic: conceptual
 ms.assetid: 47118499-3d26-4c25-bfde-b129de7eaa59
-caps.latest.revision: "3"
-author: Nbigman
-ms.author: nbigman
-manager: angrobe
-ms.openlocfilehash: 640f44985ad45442b05f2bbf4ee1ec9c2590cba4
-ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.openlocfilehash: 1228133baca139fb17975f91139a8dedaee9ebe9
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="find-a-package-family-name-pfn-for-per-app-vpn"></a>앱별 VPN에 대한 PFN(패키지 패밀리 이름) 찾기
 
@@ -73,7 +68,7 @@ OneNote에 대해 검색된 정보는 다음과 같습니다.
 
 ## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>앱이 컴퓨터에 설치되어 있지 않은 경우 PFN 찾기
 
-1.  https://www.microsoft.com/en-us/store/apps로 이동합니다.
+1.  https://www.microsoft.com/en-us/store/apps로 이동
 2.  검색 창에 앱의 이름을 입력합니다. 이 예제에서는 OneNote를 검색합니다.
 3.  앱에 대한 링크를 클릭합니다. 액세스하는 URL의 끝에 일련의 문자가 있습니다. 이 예제에서 URL은 다음과 같습니다. `https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`
 4.  다른 탭에서 다음 URL `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`를 붙여넣어 `<app id>`를 https://www.microsoft.com/en-us/store/apps에서 얻은 앱 ID로 대체합니다(3단계에서 URL의 끝에 있는 일련의 문자). 이 OneNote 예제에서는 `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`를 붙여넣습니다.
