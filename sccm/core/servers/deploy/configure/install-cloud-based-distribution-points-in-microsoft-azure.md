@@ -1,25 +1,20 @@
 ---
-title: "클라우드 기반 배포 지점 설치"
+title: 클라우드 기반 배포 지점 설치
 titleSuffix: Configuration Manager
-description: "Microsoft Azure에서 클라우드 기반 배포 지점을 사용하기 위해 수행해야 하는 작업을 알아봅니다."
-ms.custom: na
+description: Microsoft Azure에서 클라우드 기반 배포 지점을 사용하기 위해 수행해야 하는 작업을 알아봅니다.
 ms.date: 2/8/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
 ms.technology: configmgr-other
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: bb83ac87-9914-4a35-b633-ad070031aa6e
-caps.latest.revision: "7"
-author: mestew
-ms.author: mstewart
-manager: angrobe
-ms.openlocfilehash: 6471ac81718666403127c0ebcfaa19c41d3af47b
-ms.sourcegitcommit: daa080cf220835f157a23e8c8e2bd2781b869bb7
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 2c9c79c5e635a50fecf02c46e2a134df87c2d784
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-cloud-based-distribution-points-in-microsoft-azure-for-system-center-configuration-manager"></a>Microsoft Azure에서 System Center Configuration Manager에 대한 클라우드 기반 배포 지점 설치
 
@@ -46,7 +41,7 @@ Microsoft Azure에서 System Center Configuration Manager 클라우드 기반 �
 
 ### <a name="to-set-up-a-cloud-service-in-azure-for-a-distribution-point"></a>배포 지점을 위해 Azure에서 클라우드 서비스를 설정하려면  
 
-1.  웹 브라우저에서 Azure 포털 (https://manage.windowsazure.com) 을 열고 해당 계정에 액세스합니다.  
+1.  웹 브라우저에서 Azure Portal(https://manage.windowsazure.com)을 열고 해당 계정에 액세스합니다.  
 
 2.  **호스팅된 서비스, 저장소 계정 및 CDN**을 클릭한 다음 **관리 인증서**를 선택합니다.  
 
@@ -91,7 +86,7 @@ Microsoft Azure에서 System Center Configuration Manager 클라우드 기반 �
 마법사에서 클라우드 기반 배포 지점에 대해 새로 호스팅되는 서비스를 만듭니다. 마법사를 닫은 후에는 Configuration Manager 콘솔에서 클라우드 기반 배포 지점의 설치 진행률을 모니터링할 수 있습니다. 기본 사이트 서버에서 **CloudMgr.log** 파일을 모니터링할 수도 있습니다. Azure Portal에서 클라우드 서비스의 프로비전을 모니터링할 수 있습니다.  
 
 > [!NOTE]  
->  Azure에서 새 배포 지점을 프로비전하는 데 최대 30분 정도 걸릴 수 있습니다. 저장소 계정이 프로비전될 때까지 **컨테이너가 있는지 확인하려고 대기 중입니다. 메시지가**CloudMgr.log**파일에서 반복됩니다. 10초 후에 다시 확인합니다** . 그런 다음 서비스가 만들어지고 구성됩니다.  
+>  Azure에서 새 배포 지점을 프로비전하는 데 최대 30분 정도 걸릴 수 있습니다. 저장소 계정이 프로비전될 때까지 **컨테이너가 있는지 확인하려고 대기 중입니다. 메시지가**CloudMgr.log**파일에서 반복됩니다.(!!) 10초 후에 다시 확인합니다** . 그런 다음 서비스가 만들어지고 구성됩니다.  
 
  다음 방법을 사용하여 클라우드 기반 배포 지점 설치가 완료되었는지 확인할 수 있습니다.  
 
@@ -104,9 +99,9 @@ Microsoft Azure에서 System Center Configuration Manager 클라우드 기반 �
 ##  <a name="BKMK_ConfigDNSforCloudDPs"></a> 클라우드 기반 배포 지점에 대한 이름 확인 설정  
  클라이언트에서 클라우드 기반 배포 지점에 액세스할 수 있으려면 먼저 클라이언트가 클라우드 기반 배포 지점의 이름을 Azure가 관리하는 IP 주소로 확인할 수 있어야 합니다. 클라이언트는 다음 두 단계로 이를 수행합니다.  
 
-1.  Configuration Manager 클라우드 기반 배포 지점 서비스 인증서에 지정된 서비스 이름을 Azure 서비스 FQDN에 매핑합니다. 이 FQDN에는 GUID와 **cloudapp.net**의 DNS 접미사가 포함되어 있습니다. GUID는 클라우드 기반 배포 지점을 설치한 후에 자동으로 설치됩니다. Azure Portal에서 클라우드 서비스의 대시보드에 있는 **사이트 URL**을 참조하여 전체 FQDN을 확인할 수 있습니다. 사이트 URL 예: **http://d1594d4527614a09b934d470.cloudapp.net**  
+1.  Configuration Manager 클라우드 기반 배포 지점 서비스 인증서에 지정된 서비스 이름을 Azure 서비스 FQDN에 매핑합니다. 이 FQDN에는 GUID와 **cloudapp.net**의 DNS 접미사가 포함되어 있습니다. GUID는 클라우드 기반 배포 지점을 설치한 후에 자동으로 설치됩니다. Azure Portal에서 클라우드 서비스의 대시보드에 있는 **사이트 URL**을 참조하여 전체 FQDN을 확인할 수 있습니다. 사이트 URL 예는 **http://d1594d4527614a09b934d470.cloudapp.net**입니다.  
 
-2.  Azure 서비스 FQDN을 Azure가 할당하는 IP 주소로 확인합니다. 이 IP 주소는 Azure Portal 클라우드 서비스의 대시보드에서도 확인할 수 있으며 **공용 VIP(가상 IP 주소)**라고 합니다.  
+2.  Azure 서비스 FQDN을 Azure가 할당하는 IP 주소로 확인합니다. 이 IP 주소는 Azure Portal 클라우드 서비스의 대시보드에서도 확인할 수 있으며 **공용 VIP(가상 IP 주소)** 라고 합니다.  
 
 Configuration Manager 클라우드 기반 배포 지점 서비스 인증서에 대해 지정한 서비스 이름(예: **clouddp1.contoso.com**)을 Azure 서비스 FQDN(예: **d1594d4527614a09b934d470.cloudapp.net**)에 매핑하려면 인터넷의 DNS 서버에 DNS 별칭(CNAME 레코드)이 있어야 합니다. 그러면 클라이언트가 인터넷의 DNS 서버를 사용하여 Azure 서비스 FQDN을 IP 주소로 확인할 수 있습니다.  
 
