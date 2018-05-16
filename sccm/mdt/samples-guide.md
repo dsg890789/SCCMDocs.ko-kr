@@ -11,11 +11,11 @@ ms.assetid: 2ff0100c-b7ef-4e09-8c96-fc1898390b6d
 author: aczechowski
 ms.author: aaroncz
 manager: angrobe
-ms.openlocfilehash: fe61cecea2b2a4f4083933b937af90dfb61ea5bf
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+ms.openlocfilehash: 6b36da9f98749858829ab591571496532b26f290
+ms.sourcegitcommit: 7198ec49d9ce68c6d55bfb9e2d537b5442a132cb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="microsoft-deployment-toolkit-samples-guide"></a>Microsoft Deployment Toolkit 샘플 가이드  
  이 가이드는 MDT(Microsoft® Deployment Toolkit) 2013의 일부이며, 전문가 팀에 Windows 운영 체제 및 Microsoft Office를 배포하는 과정을 안내합니다. 특히 이 가이드는 특정 배포 시나리오에 대한 구성 설정 예제를 제공하도록 설계되었습니다.  
@@ -274,7 +274,7 @@ Add-PSSnapin -Name Microsoft.BDD.PSSnapIn
     Get-ItemProperty "DS002:"  
     ```  
 
-     이 예제에서 *DS002:*는 3단계에서 반환된 Windows PowerShell 드라이브의 이름입니다. cmdlet은 배포 공유의 속성을 반환합니다.  
+     이 예제에서 *DS002:* 는 3단계에서 반환된 Windows PowerShell 드라이브의 이름입니다. cmdlet은 배포 공유의 속성을 반환합니다.  
 
 ###  <a name="ViewListDeployShare"></a> Windows PowerShell을 사용하여 배포 공유 목록 보기  
  [Get-PSDrive](http://technet.microsoft.com/library/hh849796) cmdlet 및 MDTProvider Windows PowerShell 공급자를 사용하여 MDT 배포 공유의 목록을 볼 수 있습니다. Deployment 워크벤치에서도 동일한 배포 공유 목록을 볼 수 있습니다.  
@@ -330,7 +330,7 @@ Add-PSSnapin -Name Microsoft.BDD.PSSnapIn
     Update-MDTDeploymentShare -Path "DS002:" -Force  
     ```  
 
-     이 예제에서 *DS002:*는 3단계에서 반환된 Windows PowerShell 드라이브의 이름입니다.  
+     이 예제에서 *DS002:* 는 3단계에서 반환된 Windows PowerShell 드라이브의 이름입니다.  
 
     > [!NOTE]
     >  배포 공유를 업데이트하는 데 시간이 오래 걸릴 수 있습니다. cmdlet의 진행 상태는 Windows PowerShell 콘솔의 위쪽에 표시됩니다.  
@@ -367,7 +367,7 @@ Add-PSSnapin -Name Microsoft.BDD.PSSnapIn
     Update-MDTLinkedDS -Path "DS002:\Linked Deployment Shares\LINKED002"  
     ```  
 
-     이 예제에서 *DS002:*는 3단계에서 반환된 Windows PowerShell 드라이브의 이름입니다.  
+     이 예제에서 *DS002:* 는 3단계에서 반환된 Windows PowerShell 드라이브의 이름입니다.  
 
     > [!NOTE]
     >  연결된 배포 공유를 업데이트하는 데 시간이 오래 걸릴 수 있습니다. cmdlet의 진행 상태는 Windows PowerShell 콘솔의 위쪽에 표시됩니다.  
@@ -416,7 +416,7 @@ Add-PSSnapin -Name Microsoft.BDD.PSSnapIn
     Update-MDTLinkedDS -Path "DS002:\Linked Deployment Shares\LINKED002"  
     ```  
 
-     이 예제에서 *DS002:*는 3단계에서 반환된 Windows PowerShell 드라이브의 이름입니다.  
+     이 예제에서 *DS002:* 는 3단계에서 반환된 Windows PowerShell 드라이브의 이름입니다.  
 
     > [!NOTE]
     >  연결된 배포 공유를 업데이트하는 데 시간이 오래 걸릴 수 있습니다. cmdlet의 진행 상태는 Windows PowerShell 콘솔의 위쪽에 표시됩니다.  
@@ -612,7 +612,7 @@ Import-MDTApplication –path $App.ApplicationFolder -enable "True" –Name $App
     mkdir "DS002:\Operating Systems\Windows_8"  
     ```  
 
-     이 예제에서 *DS002:*는 3단계에서 반환된 Windows PowerShell 드라이브의 이름입니다.  
+     이 예제에서 *DS002:* 는 3단계에서 반환된 Windows PowerShell 드라이브의 이름입니다.  
 
 5.  다음 명령을 입력하여 폴더가 올바르게 만들어졌는지 확인합니다.  
 
@@ -666,7 +666,7 @@ Import-MDTApplication –path $App.ApplicationFolder -enable "True" –Name $App
     rmdir "DS002:\Operating Systems\Windows_8"  
     ```  
 
-     이 예제에서 *DS002:*는 3단계에서 반환된 Windows PowerShell 드라이브의 이름입니다.  
+     이 예제에서 *DS002:* 는 3단계에서 반환된 Windows PowerShell 드라이브의 이름입니다.  
 
 5.  다음 명령을 입력하여 폴더가 올바르게 제거되었는지 확인합니다.  
 
@@ -720,7 +720,7 @@ Import-MDTApplication –path $App.ApplicationFolder -enable "True" –Name $App
     ren "DS002:\Operating Systems\Windows_8" "Win_8"  
     ```  
 
-     이 예제에서 *DS002:*는 3단계에서 반환된 Windows PowerShell 드라이브의 이름입니다.  
+     이 예제에서 *DS002:* 는 3단계에서 반환된 Windows PowerShell 드라이브의 이름입니다.  
 
 5.  다음 명령을 입력하여 폴더가 올바르게 제거되었는지 확인합니다.  
 
@@ -787,7 +787,7 @@ Import-MDTApplication –path $App.ApplicationFolder -enable "True" –Name $App
     Get-ChildItem “DS002:\Operating Systems\Windows 7” –recurse | Remove-Item –recurse –force  
     ```  
 
-     이 예제에서 *DS002:*는 3단계에서 반환된 Windows PowerShell 드라이브의 이름입니다.  
+     이 예제에서 *DS002:* 는 3단계에서 반환된 Windows PowerShell 드라이브의 이름입니다.  
 
 5.  다음 예제와 같이 [Copy-Item](http://technet.microsoft.com/library/hh849793) cmdlet을 사용하여 서비스 팩이 통합된 운영 체제 원본 파일의 내용을 복사합니다.  
 
@@ -795,7 +795,7 @@ Import-MDTApplication –path $App.ApplicationFolder -enable "True" –Name $App
     Copy-Item "E:\*" -Destination "DS002:\Operating Systems\Windows 7"-Recurse -Force  
     ```  
 
-     이 예제에서 운영 체제 원본 파일은 E 드라이브에 있고, *DS002:*는 3단계에서 반환된 Windows PowerShell 드라이브의 이름입니다.  
+     이 예제에서 운영 체제 원본 파일은 E 드라이브에 있고, *DS002:* 는 3단계에서 반환된 Windows PowerShell 드라이브의 이름입니다.  
 
 6.  **Update-MDTMedia** cmdlet을 사용하여 배포 공유에 따라 모든 MDT 배포 미디어를 업데이트합니다.  
 
@@ -1302,7 +1302,7 @@ Cscript.exe “%SCRIPTROOT%\ZTIConnect.wsf” /uncpath:unc_path
 
 4.  **속성** 대화 상자에서 **규칙** 탭을 클릭합니다.  
 
-5.  MDT DB의 Make 및 Model 섹션에서 하드웨어 종류에 대한 별칭을 만듭니다. 모델 이름의 "("(여는 괄호)에서 모델 유형을 자릅니다. 예를 들어 *HP DL360 (G112)*은 *HP DL360*이 됩니다.  
+5.  MDT DB의 Make 및 Model 섹션에서 하드웨어 종류에 대한 별칭을 만듭니다. 모델 이름의 "("(여는 괄호)에서 모델 유형을 자릅니다. 예를 들어 *HP DL360 (G112)* 은 *HP DL360*이 됩니다.  
 
 6.  **ModelAlias** 사용자 지정 변수를 각 섹션에 추가합니다.  
 
@@ -1542,7 +1542,7 @@ Cscript.exe “%SCRIPTROOT%\ZTIConnect.wsf” /uncpath:unc_path
 
 4.  **WMI 네임스페이스** 상자에서 **root\cimv2**를 입력합니다.  
 
-5.  **WQL 쿼리** 상자에서 **Select \* From Win32_ComputerSystem WHERE Model LIKE "%Dell%%1950%"**를 입력합니다. **확인**을 클릭합니다.  
+5.  **WQL 쿼리** 상자에서 **Select \* From Win32_ComputerSystem WHERE Model LIKE "%Dell%%1950%"** 를 입력합니다. **확인**을 클릭합니다.  
 
 ### <a name="installed-software-in-conditions"></a>조건의 설치된 소프트웨어  
  **설치된 소프트웨어** 조건을 사용하여 특정 소프트웨어가 현재 대상 컴퓨터에 설치되어 있는지 확인합니다. 이 조건을 사용하여 MSI(Microsoft Installer) 파일을 사용하여 설치된 소프트웨어만 평가할 수 있습니다. 예를 들어 Microsoft SQL Server 2012를 실행하는 서버를 제외한 모든 서버의 운영 체제를 업그레이드한다고 가정해 보겠습니다.  
@@ -1578,7 +1578,7 @@ IF ((Computer Model IS “Contoso 1950”) AND (operating system=2003 OR operati
 
 4.  조건문을 클릭하고, **조건 추가**를 클릭한 다음, **WMI 쿼리**를 클릭합니다.  
 
-5.  **root\cimv2**가 WMI 네임스페이스로 지정되었는지 확인한 다음, **WQL 쿼리** 상자에서 **SELECT \* FROM Win32_ComputerSystem WHERE ComputerModel LIKE "%Contoso%1950%"**를 입력합니다. **확인**을 클릭합니다.  
+5.  **root\cimv2**가 WMI 네임스페이스로 지정되었는지 확인한 다음, **WQL 쿼리** 상자에서 **SELECT \* FROM Win32_ComputerSystem WHERE ComputerModel LIKE "%Contoso%1950%"** 를 입력합니다. **확인**을 클릭합니다.  
 
 6.  **IF** 문을 클릭한 다음, **조건 추가**를 클릭합니다. **If 문**을 클릭한 다음, **특정 조건**을 클릭합니다. **확인**을 클릭합니다.  
 
@@ -1730,7 +1730,7 @@ IF ((Computer Model IS “Contoso 1950”) AND (operating system=2003 OR operati
 
     4.  **추가**를 클릭합니다.  
 
-    5.  **복제할 폴더 추가** 대화 상자에서 **찾아보기**를 클릭하여 *X:*\RemoteInstall\Boot 폴더로 이동합니다.  
+    5.  **복제할 폴더 추가** 대화 상자에서 **찾아보기**를 클릭하여 *X:* \RemoteInstall\Boot 폴더로 이동합니다.  
 
     6.  **경로 기반 이름 사용**을 클릭합니다.  
 
@@ -1896,7 +1896,7 @@ IF ((Computer Model IS “Contoso 1950”) AND (operating system=2003 OR operati
 
 4.  **게시** 페이지에서 이전 섹션에서 만든 게시를 클릭합니다.  
 
-5.  **배포 에이전트 위치** 페이지에서 **SERVERNAME 배포자에서 모든 에이전트 실행(밀어넣기 구독)**을 클릭하고, **다음**을 클릭합니다.  
+5.  **배포 에이전트 위치** 페이지에서 **SERVERNAME 배포자에서 모든 에이전트 실행(밀어넣기 구독)** 을 클릭하고, **다음**을 클릭합니다.  
 
 6.  **구독자** 페이지에서 다음 단계를 수행하여 각 자식 배포 서버를 추가합니다.  
 
@@ -1914,13 +1914,13 @@ IF ((Computer Model IS “Contoso 1950”) AND (operating system=2003 OR operati
 
 7.  **다음**을 클릭합니다.  
 
-8.  **배포 에이전트 보안** 페이지에서 **...**를 클릭하여 **배포 에이전트 보안** 대화 상자를 엽니다.  
+8.  **배포 에이전트 보안** 페이지에서 **...** 를 클릭하여 **배포 에이전트 보안** 대화 상자를 엽니다.  
 
 9. 배포 에이전트에 사용할 계정의 세부 정보를 입력하고, **다음**을 클릭합니다.  
 
 10. **동기화 일정** 페이지에서 다음 단계를 수행합니다.  
 
-    1.  **에이전트 일정** 상자에서 **<일정 정의\>**를 클릭합니다.  
+    1.  **에이전트 일정** 상자에서 **<일정 정의\>** 를 클릭합니다.  
 
     2.  마스터 및 자식 배포 서버 간에 데이터베이스를 복제하는 데 사용할 일정을 지정하고, **다음**을 클릭합니다.  
 
@@ -1964,7 +1964,7 @@ IF ((Computer Model IS “Contoso 1950”) AND (operating system=2003 OR operati
 
 5.  **Bootstrap.ini 편집**을 클릭합니다.  
 
-6.  **DeployRoot** 값을 **DeployRoot=\\\\%WDSServer%\Deployment$**에 추가하거나 변경하여 **%WDSServer%** 속성을 사용하도록 BootStrap.ini를 구성합니다.  
+6.  **DeployRoot** 값을 **DeployRoot=\\\\%WDSServer%\Deployment$** 에 추가하거나 변경하여 **%WDSServer%** 속성을 사용하도록 BootStrap.ini를 구성합니다.  
 
 7.  **파일**을 클릭한 다음, **저장**을 클릭하여 BootStrap.ini 파일의 변경 내용을 저장합니다.  
 
@@ -2293,7 +2293,7 @@ ParameterCondition=OR
     |**마법사 페이지** |**수행할 작업** |  
     |-|-|  
     |**일반 설정** |1.  **작업 순서 ID**에서 **VISTA_EXIST**를 입력합니다.<br />2.  **작업 순서 이름**에서 **기존 컴퓨터에서 컴퓨터 시나리오 바꾸기 수행**을 입력합니다.<br />3.  **다음**을 클릭합니다.|  
-    |**템플릿 선택** |**다음 작업 순서 템플릿을 사용할 수 있습니다**. **시작 지점으로 사용하려는 템플릿을 선택하십시오.**에서 **표준 클라이언트 작업 순서 바꾸기**를 선택하고, **다음**을 클릭합니다.|  
+    |**템플릿 선택** |**다음 작업 순서 템플릿을 사용할 수 있습니다**. **시작 지점으로 사용하려는 템플릿을 선택하십시오.** 에서 **표준 클라이언트 작업 순서 바꾸기**를 선택하고, **다음**을 클릭합니다.|  
     |**요약** |구성 세부 정보가 올바른지 확인하고, **다음**을 클릭합니다.|  
     |**확인** |**마침**을 클릭합니다.|  
 
@@ -2317,7 +2317,7 @@ ParameterCondition=OR
     |**마법사 페이지**|**수행할 작업**|  
     |-|-|  
     |**일반 설정**|1.  **작업 순서 ID**에서 **VISTA_NEW**를 입력합니다.<br />2.  **작업 순서 이름**에서 **새 컴퓨터에서 컴퓨터 바꾸기 시나리오 수행**을 입력합니다.<br />3.  **다음**을 클릭합니다.|  
-    |**템플릿 선택**|**다음 작업 순서 템플릿을 사용할 수 있습니다**. **시작 지점으로 사용하려는 템플릿을 선택하십시오.**에서 **표준 클라이언트 작업 순서**를 선택하고, **다음**을 클릭합니다.|  
+    |**템플릿 선택**|**다음 작업 순서 템플릿을 사용할 수 있습니다**. **시작 지점으로 사용하려는 템플릿을 선택하십시오.** 에서 **표준 클라이언트 작업 순서**를 선택하고, **다음**을 클릭합니다.|  
     |**OS 선택**|**다음 운영 체제 이미지는 이 작업 순서를 사용하여 배포할 수 있습니다**. [사용할 이미지를 선택하십시오.]에서 ***captured_vista_image***를 선택하고(여기서 *captured_vista_image*는 Deployment 워크벤치의 운영 체제 노드에 참조 컴퓨터를 추가한 캡처 이미지임), *다음*을 클릭합니다.|  
     |**제품 키 지정**|**지금 제품 키 지정 안 함**을 선택하고, **다음**을 클릭합니다.|  
     |OS 설정|1.  **전체 이름**에서 **Woodgrove 직원**을 입력합니다.<br />2.  **조직**에서 **Woodgrove 은행**을 입력합니다.<br />3.  **Internet Explorer 홈 페이지**에서 **http://www.woodgrovebank.com**을 입력합니다.<br />4.  **다음**을 클릭합니다.|  
@@ -2467,7 +2467,7 @@ ParameterCondition=OR
 
     |**마법사 페이지**|**수행할 작업**|  
     |--|--|
-    |**배포 시작**|**배포 마법사를 실행하여 새 운영 체제를 설치합니다.**를 클릭하고, **다음**을 클릭합니다.|  
+    |**배포 시작**|**배포 마법사를 실행하여 새 운영 체제를 설치합니다.** 를 클릭하고, **다음**을 클릭합니다.|  
     |**네트워크 공유에 연결할 자격 증명을 지정하십시오.**|1.  **사용자 이름**에서 **관리자**를 클릭합니다.<br />2.  **암호**에서 **P@ssw0rd**를 입력합니다.<br />3.  **도메인**에서 **CORP**를 입력합니다.<br />4.  **확인**을 클릭합니다.|  
     |**이 컴퓨터에서 실행할 작업 순서를 선택하십시오.**|**새 컴퓨터에서 컴퓨터 시나리오 바꾸기 수행**을 클릭하고, **다음**을 클릭합니다.|  
     |**컴퓨터 이름 구성**|**컴퓨터 이름**에서 **WDG-NEW-02**를 입력하고, **다음**을 클릭합니다.|  
@@ -2625,10 +2625,10 @@ End Class
 ```  
 
 > [!NOTE]
->  **ZTIProcess()**를 호출하는 스크립트를 **ProcessResults()**와 함께 계속 사용하려면 그렇게 계속 사용할 수 있습니다. 그러나 향상된 오류 처리 기능 중 일부는 사용할 수 없게 됩니다.  
+>  **ZTIProcess()** 를 호출하는 스크립트를 **ProcessResults()** 와 함께 계속 사용하려면 그렇게 계속 사용할 수 있습니다. 그러나 향상된 오류 처리 기능 중 일부는 사용할 수 없게 됩니다.  
 
 ####  <a name="UseZTIEnvironment"></a> ZTIUtility Environment 클래스 사용  
- ZTIUtiliy.vbs의 Environment 클래스는 MDT 속성에 대한 액세스와 업데이트 기능을 제공합니다. 앞의 예제에서 **oEnvironment.Item("Memory")**은 사용 가능한 RAM의 크기를 검색하는 데 사용됩니다. 또한 *Toolkit 참조* MDT 문서에 설명된 속성의 값을 검색하는데도 사용할 수 있습니다.  
+ ZTIUtiliy.vbs의 Environment 클래스는 MDT 속성에 대한 액세스와 업데이트 기능을 제공합니다. 앞의 예제에서 **oEnvironment.Item("Memory")** 은 사용 가능한 RAM의 크기를 검색하는 데 사용됩니다. 또한 *Toolkit 참조* MDT 문서에 설명된 속성의 값을 검색하는데도 사용할 수 있습니다.  
 
 ####  <a name="UseZTIUtility"></a> ZTIUtility Utility 클래스 사용  
  ZTIUtility.vbs 스크립트에는 사용자 지정 배포 스크립트에서 일반적으로 사용할 수 있는 다양한 유틸리티가 포함되어 있습니다. 이러한 유틸리티는 **oLogging** 및 **oEnvironment** 클래스와 동일한 방식으로 모든 스크립트에 추가할 수 있습니다.  
@@ -3171,7 +3171,7 @@ MandatoryApplications001={c303fa6e-3a4d-425e-8102-77db9310e4d0}
 
 6.  **Bootstrap.ini 편집**을 클릭합니다.  
 
-7.  **DeployRoot** 값을 **DeployRoot=\\\\%WDSServer%\Deployment$**에 추가하거나 변경하여 **%WDSServer%** 속성을 사용하도록 BootStrap.ini를 구성합니다.  
+7.  **DeployRoot** 값을 **DeployRoot=\\\\%WDSServer%\Deployment$** 에 추가하거나 변경하여 **%WDSServer%** 속성을 사용하도록 BootStrap.ini를 구성합니다.  
 
 8.  **파일** 메뉴에서 **저장**을 클릭하여 BootStrap.ini 파일의 변경 내용을 저장합니다.  
 
@@ -3474,7 +3474,7 @@ MandatoryApplications001={c303fa6e-3a4d-425e-8102-77db9310e4d0}
 -   [미디어 삭제](#DeleteMedia)에서 설명한 대로 배포 미디어를 삭제합니다.  
 
 ###  <a name="CreateNewDeployShare"></a> 새 배포 공유 만들기  
- 다음 Windows PowerShell 명령은 D:\Production Deployment Share에서 *Production$*라는 새 배포 공유를 만듭니다. Deployment 워크벤치에 새 배포 공유가 Production으로 표시됩니다.  
+ 다음 Windows PowerShell 명령은 D:\Production Deployment Share에서 *Production$* 라는 새 배포 공유를 만듭니다. Deployment 워크벤치에 새 배포 공유가 Production으로 표시됩니다.  
 
 -   ```  
     Add-PSSnapIn Microsoft.BDD.PSSnapIn  
@@ -3670,9 +3670,11 @@ Remove-item -path "DS002:\Task Sequences\Windows Vista Business Production Build
 -   ```  
     New-PSDrive -Name "DS002" -PSProvider MDTProvider -Root "D:\Production Deployment Share"  
     ```  
-
--   Update\-MDTDeploymentShare \-path "DS002:" \-Verbose  
-
+    
+-   ```
+    Update\-MDTDeploymentShare \-path "DS002:" \-Verbose  
+    ```
+    
 ###  <a name="CreateLinkedDeployShare"></a> 연결된 배포 공유 만들기  
  다음 Windows PowerShell 명령은 프로덕션 배포 공유에 연결되고 \\\\*remote\_server\_name*\\Deployment$ 공유 아래에 있는 배포 공유를 만듭니다. [모든 항목] 선택 프로필은 연결된 배포 공유에 복제되는 콘텐츠를 결정하는 데 사용됩니다. 프로덕션 배포 공유의 콘텐츠는 \\\\*remote\_server\_name*\\Deployment$ 공유에 이미 있는 콘텐츠와 병합됩니다.  
 
