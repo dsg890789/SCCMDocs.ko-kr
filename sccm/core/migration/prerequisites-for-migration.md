@@ -2,7 +2,7 @@
 title: 마이그레이션 필수 조건
 titleSuffix: Configuration Manager
 description: 지원되는 Configuration Manager 버전, 지원되는 원본 사이트 언어 및 마이그레이션을 위한 필수 조건을 이해합니다.
-ms.date: 3/7/2017
+ms.date: 5/7/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,11 +10,11 @@ ms.assetid: ec976930-7467-4d3c-b33c-991bf408a74a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: fde02837f281a6db182d3144d2009e6b56f0dc69
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: da35641b7e00bfdae025d2978beaa541951487da
+ms.sourcegitcommit: 7198ec49d9ce68c6d55bfb9e2d537b5442a132cb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="prerequisites-for-migration-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 마이그레이션을 수행하기 위한 필수 조건
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 05/03/2018
 
 
 ##  <a name="BKMK_SorceSiteLanguage"></a> 마이그레이션에 지원되는 원본 사이트 언어  
- Configuration Manager 계층 구조 간에 데이터를 마이그레이션하면 데이터가 System Center Configuration Manager에 대해 언어 중립적인 형식의 대상 계층에 저장됩니다. Configuration Manager2007에서는 데이터를 언어 중립적인 형식으로 저장하지 않으므로 마이그레이션 프로세스가 Configuration Manager 2007에서 마이그레이션할 때 개체를 이 형식으로 변환해야 합니다. 그러므로 다음 언어로 설치된 Configuration Manager 2007 원본 사이트만 마이그레이션이 가능합니다.  
+ Configuration Manager 계층 구조 간에 데이터를 마이그레이션하면 데이터가 System Center Configuration Manager에 대해 언어 중립적인 형식의 대상 계층에 저장됩니다. Configuration Manager 2007에서는 데이터를 언어 중립적인 형식으로 저장하지 않으므로 Configuration Manager 2007에서 마이그레이션할 때 마이그레이션 프로세스에서 개체를 이 형식으로 변환해야 합니다. 그러므로 다음 언어로 설치된 Configuration Manager 2007 원본 사이트만 마이그레이션이 가능합니다.  
 
 -   영어  
 
@@ -79,7 +79,7 @@ System Center 2012 Configuration Manager 또는 System Center Configuration Mana
 
     -   **원본 사이트 계정:** 이 계정은 원본 사이트의 SMS 공급자에 액세스하는 데 사용됩니다.  
 
-        -   Configuration Manager2007 SP2 원본 사이트의 경우 이 계정에 모든 원본 사이트 개체에 대한 **읽기** 권한이 있어야 합니다.  
+        -   Configuration Manager 2007 SP2 원본 사이트의 경우 이 계정에 모든 원본 사이트 개체에 대한 **읽기** 권한이 있어야 합니다.  
 
         -   System Center 2012 Configuration Manager 또는 System Center Configuration Manager 원본 사이트의 경우에는 이 계정에 모든 원본 사이트 개체에 대한 **읽기** 권한이 있어야 합니다. 역할 기반 관리를 사용하여 계정에 이 권한을 부여합니다. 역할 기반 관리를 사용하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 역할 기반 관리 기본 사항](../../core/understand/fundamentals-of-role-based-administration.md)항목을 참조하세요.  
 
@@ -115,7 +115,7 @@ System Center 2012 Configuration Manager 또는 System Center Configuration Mana
 
      원본 사이트의 SMS 공급자에서 데이터를 수집하도록 구성된 **원본 사이트 액세스 계정** 에는 다음 권한이 필요합니다.  
 
-    -   Configuration Manager2007 배포 지점을 업그레이드하려면 계정에 Configuration Manager2007 사이트 서버의 **사이트** 클래스에 대한 **읽기**, **실행**, **삭제** 권한이 있어야 Configuration Manager2007 원본 사이트에서 배포 지점을 제거할 수 있습니다.  
+    -   Configuration Manager 2007 배포 지점을 업그레이드하려면 계정에 Configuration Manager2007 사이트 서버의 **사이트** 클래스에 대한 **읽기**, **실행**, **삭제** 권한이 있어야 Configuration Manager2007 원본 사이트에서 배포 지점을 제거할 수 있습니다.  
 
     -   System Center 2012 Configuration Manager 또는 System Center Configuration Manager 배포 지점을 재할당하려면 계정에 원본 사이트의 **사이트** 개체에 대한 **수정** 권한이 있어야 합니다. 역할 기반 관리를 사용하여 계정에 이 권한을 부여합니다. 역할 기반 관리를 사용하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 역할 기반 관리 기본 사항](../../core/understand/fundamentals-of-role-based-administration.md)항목을 참조하세요.  
 

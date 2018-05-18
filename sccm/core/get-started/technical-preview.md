@@ -2,7 +2,7 @@
 title: 기술 미리 보기 릴리스
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 새로운 기능과 기술을 테스트할 수 있는 기술 미리 보기 릴리스에 대해 알아봅니다.
-ms.date: 04/25/2018
+ms.date: 05/11/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,11 +10,11 @@ ms.assetid: 9ce0a8cb-f96c-4e41-834c-59ceb54ce44a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6b39f5eec4209e176374dcbdffc11183625c4967
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: a6a4faff728b14fae198f9709ca9ce9ca5d04455
+ms.sourcegitcommit: 021272d5858e5dbb650b95644736d1de3dab7d8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="technical-preview-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 05/03/2018
 
  이 릴리스는 기술적인 미리 보기이므로 세부 사항 및 기능은 변경될 수 있습니다.  
 
- 이 문서는 모든 버전의 Technical Preview에 적용되는 정보를 포함합니다. 또한 2018년 4월의 1804 버전처럼, 기능이 가장 먼저 제공되는 Technical Preview 버전과 함께 새로운 각 기능을 설명합니다. 이러한 기능은 각 미리 보기 버전만을 다룬 별도 항목에서 자세히 설명합니다.  
+ 이 문서는 모든 버전의 Technical Preview에 적용되는 정보를 포함합니다. 또한 2018년 5월의 1805 버전처럼, 기능이 가장 먼저 제공되는 Technical Preview 버전과 함께 새로운 각 기능을 설명합니다. 이러한 기능은 각 미리 보기 버전만을 다룬 별도 항목에서 자세히 설명합니다.  
 
  현재 분기의 Configuration Manager에서 제공하는 새로운 기능에 대한 자세한 내용은 [System Center Configuration Manager의 새로운 기능](/sccm/core/plan-design/changes/what-has-changed-from-configuration-manager-2012)을 참조하세요.
 
@@ -108,30 +108,49 @@ ms.lasthandoff: 05/03/2018
 
 <!-- This is the full list of new features in the latest TP release -->
 
-### <a name="technical-preview-version-1804"></a>Technical Preview 버전 1804
-- [사이트 서버에 대해 원격 콘텐츠 라이브러리 구성](capabilities-in-technical-preview-1804.md#configure-a-remote-content-library-for-the-site-server) <!--1357525--> 
-- [Configuration Manager 콘솔에서 피드백 제출](capabilities-in-technical-preview-1804.md#bkmk_feedback) <!--1357542--> 
-- [지원 센터](capabilities-in-technical-preview-1804.md#support-center) <!--1357489--> 
-- [Configuration Manager Toolkit](capabilities-in-technical-preview-1804.md#configuration-manager-toolkit) <!--1357145--> 
-- [승인 취소 시 응용 프로그램 제거](capabilities-in-technical-preview-1804.md#uninstall-application-on-approval-revocation) <!--1357891--> 
-- [검색에서 Active Directory 컨테이너 제외](capabilities-in-technical-preview-1804.md#exclude-active-directory-containers-from-discovery) <!--1358143--> 
-- [소프트웨어 센터에서 응용 프로그램 카탈로그 웹 사이트 링크의 표시 여부 지정](capabilities-in-technical-preview-1804.md#specify-the-visibility-of-the-application-catalog-website-link-in-software-center) <!--1358214--> 
-- [소프트웨어 업데이트 아키텍처를 기준으로 자동 배포 규칙 필터링](capabilities-in-technical-preview-1804.md#filter-automatic-deployment-rules-by-software-update-architecture) <!--1322266--> 
-- [향상된 OS 배포](capabilities-in-technical-preview-1804.md#improvements-to-os-deployment) <!--1358330,1358493--> 
-- [Configuration Manager 콘솔에 대한 향상된 기능](capabilities-in-technical-preview-1804.md#improvements-to-the-configuration-manager-console) <!--510252--> 
+### <a name="technical-preview-version-1805"></a>Technical Preview 버전 1805
+- [작업 순서에 대해 수동으로 구성된 단계를 사용하여 단계적 배포 만들기](capabilities-in-technical-preview-1805.md#create-a-phased-deployment-with-manually-configured-phases-for-a-task-sequence) <!--1358148--> 
+- [Azure Resource Manager에 대한 클라우드 배포 지점 지원](capabilities-in-technical-preview-1805.md#cloud-distribution-point-support-for-azure-resource-manager) <!--1322209--> 
+- [관리 인사이트를 기반으로 작업 수행](capabilities-in-technical-preview-1805.md#take-actions-based-on-management-insights) <!--1357930--> 
+- [공동 관리를 사용하여 장치 구성 워크로드를 Intune으로 전환](capabilities-in-technical-preview-1805.md#transition-device-configuration-workload-to-intune-using-co-management) <!--1357903--> 
+- [배포 지점에서 네트워크 정체 제어를 사용하도록 설정](capabilities-in-technical-preview-1805.md#enable-distribution-points-to-use-network-congestion-control) <!--1358112--> 
+- [클라우드 관리 대시보드](capabilities-in-technical-preview-1805.md#cloud-management-dashboard) <!--1358461--> 
+- [CMPivot](capabilities-in-technical-preview-1805.md#cmpivot) <!--1358456--> 
+- [개선된 보안 클라이언트 통신](capabilities-in-technical-preview-1805.md#improved-secure-client-communications) <!--1356889,1358228,1358460--> 
+- [타사 소프트웨어 업데이트 지원 개선 사항](capabilities-in-technical-preview-1805.md#improvements-for-enabling-third-party-software-update-support) <!--1357605--> 
+- [Windows 10 현재 위치 업그레이드 작업 순서 개선 사항](capabilities-in-technical-preview-1805.md#improvements-to-windows-10-in-place-upgrade-task-sequence) <!--1358500--> 
+- [CMTrace가 클라이언트와 함께 설치됨](capabilities-in-technical-preview-1805.md#cmtrace-installed-with-client) <!--1357971--> 
+- [Configuration Manager 콘솔 개선 사항](capabilities-in-technical-preview-1805.md#improvement-to-the-configuration-manager-console) <!--1358202--> 
+- [콘솔 피드백 개선 사항](capabilities-in-technical-preview-1805.md#improvements-to-console-feedback) <!--1357542--> 
+- [PXE 사용 배포 지점 개선 사항](capabilities-in-technical-preview-1805.md#improvements-to-pxe-enabled-distribution-points) <!--1357580--> 
+- [큰 정수 값에 대한 하드웨어 인벤토리 개선 사항](capabilities-in-technical-preview-1805.md#improvement-to-hardware-inventory-for-large-integer-values) <!--1357880--> 
+- [WSUS 유지 관리 개선 사항](capabilities-in-technical-preview-1805.md#improvement-to-wsus-maintenance) <!--1357898--> 
+- [CNG 인증서 지원 개선 사항](capabilities-in-technical-preview-1805.md#improvement-to-support-for-cng-certificates) <!--1357314--> 
+
+
+
 
 
 
 ## <a name="capabilities-delivered-in-recent-supported-technical-previews"></a>최근 지원되는 Technical Preview에 포함된 기능
 이전 버전의 Configuration Manager Technical Preview 릴리스에 포함되어 여전히 지원되는 기능은 다음과 같습니다. 
 
-<!-- This is the full list of new features in the past three TP releases. 
+<!-- This is the full list of new features in the past THREE (3) TP releases. 
 Each month, add features from the list above to the top of this table. 
 Then remove the bottom of this list and/or move individual items not in CB to the third table below.
 -->
 
  |기능 |기술 미리 보기 버전 |현재 분기 버전|  
  |----------------|---------------------|--------------------|
+ | 사이트 서버에 대해 원격 콘텐츠 라이브러리 구성 <!--1357525--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#configure-a-remote-content-library-for-the-site-server)  | ![추가되지 않음](media/Red_X.gif) | 
+ | Configuration Manager 콘솔에서 피드백 제출 <!--1357542--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#bkmk_feedback)  | ![추가되지 않음](media/Red_X.gif) | 
+ | 지원 센터 <!--1357489--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#support-center)  | ![추가되지 않음](media/Red_X.gif) | 
+ | Configuration Manager Toolkit <!--1357145--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#configuration-manager-toolkit)  | ![추가되지 않음](media/Red_X.gif) | 
+ | 승인 취소 시 응용 프로그램 제거 <!--1357891--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#uninstall-application-on-approval-revocation)  | ![추가되지 않음](media/Red_X.gif) | 
+ | 검색에서 Active Directory 컨테이너 제외 <!--1358143--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#exclude-active-directory-containers-from-discovery)  | ![추가되지 않음](media/Red_X.gif) | 
+ | 소프트웨어 센터에서 응용 프로그램 카탈로그 웹 사이트 링크의 표시 여부 지정 <!--1358214--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#specify-the-visibility-of-the-application-catalog-website-link-in-software-center)  | ![추가되지 않음](media/Red_X.gif) | 
+ | 소프트웨어 업데이트 아키텍처를 기준으로 자동 배포 규칙 필터링 <!--1322266--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#filter-automatic-deployment-rules-by-software-update-architecture)  | ![추가되지 않음](media/Red_X.gif) | 
+ | 향상된 OS 배포 <!--1358330,1358493--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#improvements-to-os-deployment) | ![추가되지 않음](media/Red_X.gif) | 
  | 풀(pull) 배포 지점은 클라우드 배포 지점을 원본으로 지원함 <!--1321554--> | [Tech Preview 1803](capabilities-in-technical-preview-1803.md#pull-distribution-points-support-cloud-distribution-points-as-source)  | ![추가되지 않음](media/Red_X.gif) | 
  | WAN 사용률을 줄이기 위해 클라이언트 피어 캐시에서 부분 다운로드 지원 <!--1357346--> | [Tech Preview 1803](capabilities-in-technical-preview-1803.md#partial-download-support-in-client-peer-cache-to-reduce-wan-utilization)  | ![추가되지 않음](media/Red_X.gif) | 
  | 소프트웨어 센터의 유지 관리 기간 <!--1358131--> | [Tech Preview 1803](capabilities-in-technical-preview-1803.md#maintenance-windows-in-software-center)  | ![추가되지 않음](media/Red_X.gif) | 
@@ -158,14 +177,6 @@ Then remove the bottom of this list and/or move individual items not in CB to th
  | Microsoft Edge 브라우저 정책 <!-- 1357310 --> | [기술 미리 보기 1802](capabilities-in-technical-preview-1802.md#microsoft-edge-browser-policies) | [1802 버전](/sccm/compliance/deploy-use/browser-profiles) | 
  | 기본 브라우저 개수에 대한 보고서 <!-- 1357830 --> | [기술 미리 보기 1802](capabilities-in-technical-preview-1802.md#report-for-default-browser-counts) | [1802 버전](/sccm/core/servers/manage/list-of-reports#software---companies-and-products) | 
  | Windows 10 ARM64 장치 지원 <!-- 1353704 --> | [기술 미리 보기 1802](capabilities-in-technical-preview-1802.md#support-for-windows-10-arm64-devices) | [1802 버전](/sccm/core/plan-design/configs/support-for-windows-10) |  
- | 단계별 배포 만들기 <!-- 1356837 --> | [Tech Preview 1801](capabilities-in-technical-preview-1801.md#create-phased-deployments) | [1802 버전](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence) |
- | 공동 관리 보고 <!-- 1356648 --> | [Tech Preview 1801](capabilities-in-technical-preview-1801.md#co-management-reporting) | [1802 버전](\sccm\core\clients\manage\client-management-dashboard) |
- | 자동 배포 규칙 평가 일정 개선 사항 <!-- 1357133 --> | [Tech Preview 1801](capabilities-in-technical-preview-1801.md#improvements-to-automatic-deployment-rule-evaluation-schedule) | [1802 버전](/sccm/sum/deploy-use/automatically-deploy-software-updates#BKMK_CreateAutomaticDeploymentRule) |
- | 배포 지점 다시 할당 <!-- 1306937 --> | [Tech Preview 1801](capabilities-in-technical-preview-1801.md#reassign-distribution-point) | [1802 버전](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_reassign) |
- | 하드웨어 인벤토리 개선 사항 <!-- 1357389 --> | [Tech Preview 1801](capabilities-in-technical-preview-1801.md#improvements-to-hardware-inventory) | [1802 버전](/sccm/core/clients/manage/inventory/extend-hardware-inventory#BKMK_GreaterThan255) |
- | 소프트웨어 센터에 대한 클라이언트 설정 개선 사항 <!-- 1355146 --> | [Tech Preview 1801](capabilities-in-technical-preview-1801.md#improvements-to-client-settings-for-software-center) | [1802 버전](/sccm/core/clients/deploy/about-client-settings#BKMK_HideUnapproved) |
- | Windows Defender Application Guard에 대한 새로운 설정 <!-- 1356256 --> | [Tech Preview 1801](capabilities-in-technical-preview-1801.md#new-settings-for-windows-defender-application-guard) | [1802 버전](/sccm/protect/deploy-use/create-deploy-application-guard-policy#BKMK_HIS) |
- | 스크립트 실행 개선 사항 <!-- 1236459 --> | [Tech Preview 1801](capabilities-in-technical-preview-1801.md#improvements-to-run-scripts) | [1802 버전](/sccm/apps/deploy-use/create-deploy-scripts) |
  
   
 

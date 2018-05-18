@@ -10,11 +10,11 @@ ms.assetid: 3417ff88-7177-4a0d-8967-ab21fe7eba17
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0b34163bfb5aea716062882d4c2ebb1360bba2c9
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 376d75a2aed5fe0b14b3af309e48a75d8f392c11
+ms.sourcegitcommit: defdaf493c1dc5a7a380541bc028fbd2b21c1047
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="step-by-step-example-deployment-of-the-pki-certificates-for-system-center-configuration-manager-windows-server-2008-certification-authority"></a>System Center Configuration Manager용 PKI 인증서의 단계별 배포 예제: Windows Server 2008 인증 기관
 
@@ -239,6 +239,9 @@ Windows Server 2008 CA(인증 기관)를 사용하는 이 단계별 배포 예�
 8.  **추가**를 선택하고 텍스트 상자에 **ConfigMgr Site Servers**를 입력한 후 **확인**을 선택합니다.  
 
 9. 이 그룹에 대한 **등록** 권한을 선택하고, **읽기** 권한을 해제하지 않습니다.  
+
+    > [!NOTE]
+    > **암호화** 탭의 **최소 키 크기**가 **2048**로 설정되었는지 확인합니다.
 
 10. **확인**을 선택한 다음 **인증서 템플릿 콘솔**을 닫습니다.  
 

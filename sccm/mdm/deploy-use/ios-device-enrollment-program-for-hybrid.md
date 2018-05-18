@@ -10,11 +10,11 @@ ms.assetid: 78d44adc-9b1c-4bc6-b72d-e93873916ea6
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a4a6d8d67060dbf7c5bc75892d2f231bce67df8f
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 31c94d3632014110302cb1815f72af0c26245dc9
+ms.sourcegitcommit: 95452daa3340d4d0818562bcbb53672cb16f8799
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="ios-device-enrollment-program-dep-enrollment-for-hybrid-deployments-with-configuration-manager"></a>Configuration Manager에서의 하이브리드 배포를 위한 iOS DEP(장치 등록 프로그램) 등록
 
@@ -102,7 +102,10 @@ ms.lasthandoff: 05/03/2018
     > [!NOTE]
     > 하이브리드 구성에서 Configuration Manager의 **DEP 동기화**를 클릭하여 DEP 동기화 작업이 수동으로 트리거됩니다.
 
-4.  **DEP 프로필 할당**<br>**자산 및 준수** 작업 영역에서 **회사가 소유한 모든 장치** > **iOS** > **등록 프로필**로 이동합니다. DEP 등록 프로필을 선택한 다음 **홈** 탭에서 **장치에 할당**을 클릭합니다. 이 등록 프로필을 사용할 장치를 선택하고 **추가**를 클릭한 다음 **확인**을 클릭합니다.   
+4.  **DEP 프로필 할당**<br>**자산 및 준수** 작업 영역에서 **회사가 소유한 모든 장치** > **iOS** > **등록 프로필**로 이동합니다. DEP 등록 프로필을 선택한 다음 **홈** 탭에서 **장치에 할당**을 클릭합니다. 이 등록 프로필을 사용할 장치를 선택하고 **추가**를 클릭한 다음 **확인**을 클릭합니다.
+
+    > [!NOTE]
+    > DEP 프로필을 장치에 할당한 후에는 프로필을 다른 DEP 프로필로만 바꿀 수 있습니다. 그러나 DEP 프로필 할당을 제거할 수는 없습니다. 장치에서 DEP 프로필을 제거하려면 장치를 등록 취소해야 합니다.  
      ![iOS 장치에 DEP 프로필 할당 스크린샷](../media/dep-assign-profile.png)
 
 ## <a name="distribute-devices-to-users"></a>사용자에게 장치 배포
