@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
-ms.openlocfilehash: a7c1786e9acce10d98da031d9d5df3b81f9a1a28
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: a94ac00b8fce6098cbd829947f4e2fbdcb761b9e
+ms.sourcegitcommit: c5e078b8eee87f527e5b5a0c2eb687bb9d6896c5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="manage-office-365-proplus-with-configuration-manager"></a>Configuration Manager를 사용하여 Office 365 ProPlus 관리
 
@@ -96,7 +96,7 @@ Office 365 설치 관리자를 사용하여 Office 365 응용 프로그램을 �
 
 
 ## <a name="deploy-office-365-updates"></a>Office 365 업데이트 배포
-Configuration Manager 버전 1706부터 Office 365 클라이언트 업데이트가 **Office 365 클라이언트 관리** >**Office 365 업데이트** 노드로 이동되었습니다.  이동은 ADR 구성에 영향을 주지 않습니다. 
+Configuration Manager 버전 1706부터 Office 365 클라이언트 업데이트가 **Office 365 클라이언트 관리** >**Office 365 업데이트** 노드로 이동되었습니다. 이 이동은 현재 ADR 구성에 영향을 주지 않습니다. 
 
 Configuration Manager를 사용하여 Office 365 업데이트를 배포하려면 다음 단계를 따르세요.
 
