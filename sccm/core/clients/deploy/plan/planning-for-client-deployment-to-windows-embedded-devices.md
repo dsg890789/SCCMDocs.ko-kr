@@ -1,20 +1,27 @@
 ---
-title: Windows Embedded 장치에 클라이언트 배포 계획
-titleSuffix: Configuration Manager
+title: Windows Embedded 장치에 클라이언트 배포 계획 | Microsoft 문서
 description: System Center Configuration Manager에서 Windows Embedded 장치에 클라이언트 배포를 계획합니다.
+ms.custom: na
 ms.date: 04/23/2017
 ms.prod: configuration-manager
-ms.technology: configmgr-client
-ms.topic: conceptual
+ms.reviewer: na
+ms.suite: na
+ms.technology:
+- configmgr-client
+ms.tgt_pltfrm: na
+ms.topic: get-started-article
 ms.assetid: 038e61f9-f49d-41d1-9a9f-87bec9e00d5d
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
-ms.openlocfilehash: 6ca987411775ec3a6fbe626d4b34f83313673f5b
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+caps.latest.revision: 7
+caps.handback.revision: 0
+author: arob98
+ms.author: angrobe
+manager: angrobe
+ms.openlocfilehash: 513dcb2a224a6e60553fdc602813e9fe47116235
+ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 09/15/2017
+ms.locfileid: "22103607"
 ---
 # <a name="planning-for-client-deployment-to-windows-embedded-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Windows Embedded 장치에 클라이언트 배포 계획
 
@@ -58,7 +65,7 @@ ms.lasthandoff: 05/03/2018
 >
 > **FBWF만 사용하는 장치의 경우:** 장치 다시 시작 시 클라이언트 상태 및 인벤토리 데이터를 보존하려면 다음 예외를 구성합니다.  
 >   
->  -   CCMINSTALLDIR\\\*.sdf  
+>  -   CCMINSTALLDIR\\*.sdf  
 > -   CCMINSTALLDIR\ServiceData  
 > -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CCM\StateSystem  
 >   
