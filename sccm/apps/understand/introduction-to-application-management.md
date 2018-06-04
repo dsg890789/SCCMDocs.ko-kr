@@ -1,5 +1,6 @@
 ---
-title: 응용 프로그램 관리 소개 | Microsoft 문서
+title: 응용 프로그램 관리 소개
+titleSuffix: Configuration Manager
 description: System Center Configuration Manager 응용 프로그램을 관리 및 배포하는 데 필요한 기본 정보를 검색합니다.
 ms.custom: na
 ms.date: 12/23/2016
@@ -12,15 +13,15 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 08f711ba-83bf-4b5f-9520-a0778c6ae7eb
 caps.latest.revision: 18
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: 959a36413d06bb225f260bd44c1d3d59efd44e69
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: a8a66169f3c187f8fa0319548ddde23b399811f3
+ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
-ms.locfileid: "20784594"
+ms.lasthandoff: 03/27/2018
+ms.locfileid: "23137067"
 ---
 # <a name="introduction-to-application-management-in-system-center-configuration-manager"></a>System Center Configuration Manager의 응용 프로그램 관리 소개
 
@@ -78,7 +79,7 @@ ms.locfileid: "20784594"
 ## <a name="state-based-applications"></a>상태 기반 응용 프로그램  
  Configuration Manager 응용 프로그램에서는 상태 기반 모니터링을 사용합니다. 이 방식을 통해 사용자 및 장치에 대한 마지막 응용 프로그램 배포 상태를 추적할 수 있습니다. 상태 메시지는 개별 장치에 대한 정보를 표시합니다. 예를 들어 응용 프로그램이 사용자 컬렉션에 배포된 경우 Configuration Manager 콘솔에서 배포의 준수 상태 및 배포 용도를 확인할 수 있습니다. Configuration Manager 콘솔의 **모니터링** 작업 영역을 사용하여 모든 소프트웨어 배포를 모니터링할 수 있습니다. 소프트웨어 배포에는 소프트웨어 업데이트, 호환성 설정, 응용 프로그램, 작업 순서, 패키지 및 프로그램 등이 포함됩니다. 자세한 내용은 [응용 프로그램 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)을 참조하세요.  
 
- 응용 프로그램 배포는 Configuration Manager에서 정기적으로 다시 평가됩니다. 예를 들면 다음과 같습니다.  
+ 응용 프로그램 배포는 Configuration Manager에서 정기적으로 다시 평가됩니다. 예:  
 
 -   최종 사용자가 배포된 응용 프로그램을 제거합니다. 다음 평가 주기에서 응용 프로그램이 없는 것이 검색되면 Configuration Manager에서 다시 설치합니다.  
 
