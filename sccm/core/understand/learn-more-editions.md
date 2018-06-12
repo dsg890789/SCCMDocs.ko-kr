@@ -10,11 +10,12 @@ ms.assetid: 495b87ae-41a4-49ba-abe2-d4f7d22ac0d4
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 8eb561d9867c6bde778ffd5fb6ef404395c359da
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: a8ce492aa34fa130a11bde0d5823252a9d782960
+ms.sourcegitcommit: e35d07870656eadd29faacc378ecd091ff3bdcfb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34848631"
 ---
 # <a name="licensing-and-branches-for-system-center-configuration-manager"></a>System Center Configuration Manager의 라이선스 및 분기
 
@@ -38,9 +39,9 @@ ms.lasthandoff: 05/03/2018
 |----------------|---------------------|--------------------|
 |현재 분기 | Configuration Manager에 대한 활성 Software Assurance 계약(또는 이와 동등한 권한)이 필요합니다. </br></br> 이 항목에서 [Software Assurance 및 현재 분기](#software-assurance-and-the-current-Branch)를 참조하세요.| Microsoft에서 정기적인 품질 및 기능 업데이트를 수신하려는 프로덕션 환경에서 사용할 수 있습니다. </br></br> 이 분기를 통해 모든 기능과 향상된 기능에 액세스할 수 있습니다. </br></br> 1710 이전에 릴리스된 Configuration Manager 버전은 12개월 동안 지원됩니다. 1710 릴리스부터 각 업데이트 버전은 일반 공급 출시 날짜로부터 18개월 동안 지원됩니다. 자세한 내용은 [System Center Configuration Manager 현재 분기 버전에 대한 지원](/sccm/core/servers/manage/current-branch-versions-supported)을 참조하세요.|
 |LTSB(장기 서비스 분기)| 릴리스 당시(2016년 10월 1일) Microsoft와 현재 Software Assurance 계약이 있어야 합니다. </br></br> 이 항목에서 [Software Assurance 및 LTSB](#software-assurance-and-the-ltsb)를 참조하세요. | 프로덕션 환경에서 사용할 수 있습니다. Configuration Manager에 대한 SA(Software Assurance) 또는 이와 동등한 구독 권한이 2016년 10월 1일 후에 만료되는 고객을 위한 것입니다. </br></br> 이 분기는 현재 분기에 비해 제한적입니다. </br></br> Configuration Manager에 대한 중요 보안 업데이트는 이 분기에 제공되지만 새로운 기능은 제공되지 않습니다. |
-|현재 분기의 평가판 설치| Microsoft와의 Software Assurance 계약이 필요하지 않습니다. | [평가판 설치](https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection)는 항상 현재 분기이며 180일 동안 사용할 수 있습니다. </br></br> 평가판 설치를 현재 분기의 전체 설치로 업그레이드할 수 있습니다. 평가판 설치를 장기 서비스 분기로 업그레이드할 수는 없습니다.|
+|현재 분기의 평가판 설치| Microsoft와의 Software Assurance 계약이 필요하지 않습니다. | [평가판 설치](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection)는 항상 현재 분기이며 180일 동안 사용할 수 있습니다. </br></br> 평가판 설치를 현재 분기의 전체 설치로 업그레이드할 수 있습니다. 평가판 설치를 장기 서비스 분기로 업그레이드할 수는 없습니다.|
 
-현재 분기, LTSB 및 현재 분기의 평가판 설치 외에도 [System Center Configuration Manager Technical Preview](https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection-technical-preview)를 사용할 수 있습니다. 이 버전은 향후 업데이트에서 현재 분기에 추가될 수 있는 새로운 기능을 시험해볼 수 있는 제한된 Configuration Manager 빌드입니다. 사용이 허가된 버전과 다른 미디어를 사용하여 Technical Preview를 설치합니다. 자세한 내용은 [Technical Preview](/sccm/core/get-started/technical-preview)에 대한 문서를 참조하세요.
+현재 분기, LTSB 및 현재 분기의 평가판 설치 외에도 [System Center Configuration Manager Technical Preview](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection-technical-preview)를 사용할 수 있습니다. 이 버전은 향후 업데이트에서 현재 분기에 추가될 수 있는 새로운 기능을 시험해볼 수 있는 제한된 Configuration Manager 빌드입니다. 사용이 허가된 버전과 다른 미디어를 사용하여 Technical Preview를 설치합니다. 자세한 내용은 [Technical Preview](/sccm/core/get-started/technical-preview)에 대한 문서를 참조하세요.
 
 
 ## <a name="licensed-branches"></a>사용이 허가된 분기

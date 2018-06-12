@@ -10,16 +10,18 @@ manager: dougeby
 ms.date: 03/22/2018
 ms.topic: conceptual
 ms.assetid: 60e2022f-a4f9-40dd-af01-9ecb37b43878
-ms.openlocfilehash: 439e4e26c08b5a2710da0978ed2407d715bc86bd
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: ceb4004c7f4cc24ff17f0e9648cddb29cb26d898
+ms.sourcegitcommit: 493cc42f05b9388ef872e466e5a75d569642b9fc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34569649"
 ---
 # <a name="switch-configuration-manager-workloads-to-intune"></a>Configuration Manager 워크로드를 Intune으로 전환
 [공동 관리를 위해 Windows 10 장치 준비](co-management-prepare.md)에서 공동 관리를 위해 Windows 10 장치를 준비했습니다. 이러한 장치가 AD, Azure AD에 조인되고 Intune에 등록되고 Configuration Manager 클라이언트를 포함합니다. Windows 10 장치가 AD에 조인되고 Configuration Manager 클라이언트를 포함했지만 Azure AD에 되거나 Intune에 등록되지 않았습니다. 다음 절차에서는 공동 관리를 사용하고, 공동 관리를 위해 나머지 Windows 10 장치(Intune에 등록되지 않은 Configuration Manager 클라이언트)를 준비하고, 특정 Configuration Manager 워크로드를 Intune으로 전환하기 시작할 수 있는 단계를 제공합니다.
 
 1. Configuration Manager 콘솔에서 **관리** > **개요** > **클라우드 서비스** > **공동 관리**로 이동합니다.    
+
 2. [홈] 탭의 [관리] 그룹에서  **공동 관리 구성**을 선택하여 공동 관리 구성 마법사를 엽니다.    
 3. 구독 페이지에서 **로그인**을 클릭하고 Intune 테넌트에 로그인하고 **다음**을 클릭합니다.   
 4. [사용 여부] 페이지에서 **파일럿** 또는 **모두**를 선택하여 Intune에서 자동 등록을 사용하도록 설정하고 **다음**을 클릭합니다. **파일럿**을 선택하는 경우 파일럿 그룹의 멤버인 Configuration manager 클라이언트만이 Intune에서 자동으로 등록됩니다. 이 옵션을 사용하면 클라이언트의 하위 집합에서 공동 관리를 사용하여 처음에 공동 관리를 테스트하고 단계적 접근을 사용하여 공동 관리를 롤아웃할 수 있습니다. 명령줄을 사용하여 이미 Intune에 등록된 장치에 대해 Intune에서 Configuration Manager 클라이언트를 앱으로 배포할 수 있습니다. 자세한 내용은 [Intune에 등록된 Windows 10 장치](co-management-prepare.md#windows-10-devices-enrolled-in-intune)를 참조하세요.
@@ -55,8 +57,8 @@ ms.lasthandoff: 05/03/2018
       - Windows Defender Application Control
       - Windows Defender Security Center
       - Windows Defender Advanced Threat Protection
-
-
+      - Windows Information Protection
+      
 
 ## <a name="monitor-co-management"></a>공동 관리 모니터링
 공동 관리를 사용하도록 설정하면 다음 방법을 사용하여 공동 관리 장치를 모니터링할 수 있습니다.

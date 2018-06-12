@@ -2,7 +2,7 @@
 title: 새로운 기능 하이브리드 MDM 보관
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager 및 Intune을 포함하는 하이브리드 배포에 사용할 수 있는 과거 모바일 장치 관리 기능의 보관 파일입니다.
-ms.date: 02/21/2018
+ms.date: 05/31/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -11,11 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 88b005ad90625592a4fccfa1d98abfcb8b930a75
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 19044a9fb7f53ca540bccd324f711b60e0ad91c4
+ms.sourcegitcommit: 9cff0702c2cc0f214173b47ec241f7e5a40f84e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747802"
 ---
 # <a name="past-hybrid-features-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하는 이전 하이브리드 기능
 
@@ -30,6 +31,121 @@ ms.lasthandoff: 05/03/2018
 |기능 범주|
 |-|  
 |**Microsoft Intune의 새로운 기능** - 일반적으로 이 범주 아래에 나열된 모든 기능은 Intune 서비스만 필요하고 Configuration Manager의 추가 기능이 필요하지 않으므로 System Center 2012 R2 Configuration Manager 릴리스를 비롯한 모든 Configuration Manager 릴리스에서 사용할 수 있어야 합니다.<br /><br /> **Configuration Manager Technical Preview의 새로운 기능** - 이 범주 아래에 나열된 모든 기능은 지정된 기술 미리 보기 릴리스에서만 사용할 수 있습니다. 이러한 기능을 시험해보려면 기능 설명에 지정된 기술 미리 보기 버전을 설치해야 합니다. 자세한 내용은 [System Center Configuration Manager Technical Preview](../../core/get-started/technical-preview.md)를 참조하세요.<br /><br /> **Configuration Manager(현재 분기)의 새로운 기능** - 이 범주 아래에 나열된 모든 기능은 지정된 버전의 Configuration Manager(현재 분기)(예: 버전 1511 또는 1602)에서만 사용할 수 있습니다. 하이브리드 배포에 이전 버전의 Configuration Manager를 사용하는 경우 기능 설명에 지정된 Configuration Manager(현재 분기) 버전으로 업그레이드해야 합니다. 자세한 내용은 [System Center Configuration Manager 업그레이드](../../core/servers/deploy/install/upgrade-to-configuration-manager.md)를 참조하세요.|  
+
+
+
+## <a name="april-2017"></a>2017년 4월
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+- **Managed Browser에 사용 가능한 MyApps**  
+  이제 Managed Browser에서 Microsoft MyApps의 지원이 향상되었습니다. 관리를 목표로 하지 않는 Managed Browser 사용자는 MyApps 서비스로 직접 연결되며, 여기에서 관리 프로비전된 SaaS 앱에 액세스할 수 있습니다. Intune 관리를 목표로 하는 사용자는 기본 제공되는 Managed Browser 책갈피에서 MyApps에 계속 액세스할 수 있습니다.
+
+- **Managed Browser 및 회사 포털의 새 아이콘**  
+  Managed Browser는 앱의 Android 및 iOS 버전 모두에서 업데이트된 아이콘을 받습니다. Enterprise Mobility + Security(EM+S)의 다른 앱과 더욱 일관되도록 새 아이콘에는 업데이트된 Intune 배지가 포함됩니다. [Intune 앱 UI 페이지](https://docs.microsoft.com/intune/whats-new-app-ui)에서 Managed Browser의 새 아이콘을 볼 수 있습니다.
+
+  회사 포털에서는 EM + S에 있는 다른 앱과의 일관성을 향상시키기 위해 Android, iOS 및 Windows 버전의 앱에 대한 업데이트된 아이콘도 받습니다. 이러한 아이콘은 4월부터 5월 말까지 점진적으로 전체 플랫폼에 릴리스됩니다.
+
+- **Android 회사 포털이 로그인 진행 표시기**  
+  Android 회사 포털 앱 업데이트에서는 사용자가 앱을 시작하거나 다시 시작할 때 로그인 진행 표시기를 보여줍니다. 사용자가 앱에 액세스하도록 허용하기 전에 표시기가 “연결 중...”, “로그인 중...”, “보안 요구 사항 확인 중...”과 같이 새로운 상태로 진행됩니다. [Intune 앱 UI의 새로운 기능 페이지](https://docs.microsoft.com/intune/whats-new-app-ui)에서 Android용 회사 포털 앱의 새 화면이 표시됩니다.
+
+- **앱이 SharePoint Online에 액세스하지 못하게 차단**  
+  이제 앱 보호 정책이 적용되지 않은 앱이 [SharePoint Online](https://docs.microsoft.com/intune-classic/deploy-use/mam-ca-for-sharepoint-online)에 액세스하지 못하게 차단하는 앱 기반 조건부 액세스 정책을 만들 수 있습니다. 앱 기반 조건부 액세스 시나리오에서 Azure 포털을 사용하여 SharePoint Online에 액세스하게 할 앱을 지정할 수 있습니다.
+
+### <a name="new-in-configuration-manager-technical-preview-1704"></a>Configuration Manager Technical Preview 1704의 새로운 기능
+
+- **앱 구성 정책을 사용하여 Android 앱 구성**  
+  사용자가 Android for Work 장치에서 앱을 실행하는 경우 Configuration Manager의 앱 구성 정책을 사용하여 사전 구성된 설정을 배포합니다. Android 앱 구성 정책은 Android for Work를 실행 중인 장치에서만 사용 가능합니다. 이러한 정책은 Play for Work 스토어에서 승인된 앱에 적용됩니다. 자세한 내용은 [앱 구성 정책을 사용하여 Android 앱 구성](/sccm/core/get-started/capabilities-in-technical-preview-1704#configure-android-apps-with-app-configuration-policies)을 참조하세요.
+
+
+
+## <a name="march-2017"></a>2017년 3월
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+- **Android용 회사 포털 앱의 새 사용자 환경**  
+  Android용 회사 포털 앱의 사용자 인터페이스의 모양과 느낌이 더욱 세련되어집니다. 중요한 업데이트는 다음과 같습니다.
+
+  - 색: 회사 포털 탭 헤더의 색을 IT에서 정의하는 브랜딩에서 지정합니다.
+  - 앱: **앱** 탭에서 **추천 앱** 및 **모든 앱** 단추가 업데이트되었습니다.
+  - 검색: **앱** 탭에서 **검색** 단추는 부동 작업 단추입니다.
+  - 앱 탐색: **모든 앱** 뷰는 쉽게 탐색할 수 있도록 **추천**, **전체** 및 **범주** 탭으로 구분된 뷰를 표시합니다.
+  - 지원: **내 장치** 및 **IT 담당자** 탭이 가독성을 높이기 위해 업데이트되었습니다.
+
+  이러한 변경 사항에 자세한 내용은 [Intune 최종 사용자 앱 UI 업데이트](https://docs.microsoft.com/intune/whats-new-app-ui)를 참조하세요.
+
+- **Windows 10 회사 포털용 서명 스크립트**  
+  Windows 10 회사 포털 앱을 다운로드하고 사이드로드해야 하는 경우 이제 스크립트를 사용하여 조직의 앱 서명 프로세스를 간소화할 수 있습니다. 스크립트와 스크립트 사용 지침을 다운로드하려면 TechNet 갤러리의 [Microsoft Intune Signing Script for Windows 10 Company Portal](https://aka.ms/win10cpscript)(Windows 10 회사 포털용 Microsoft Intune 서명 스크립트)을 참조하세요. 이 알림에 대한 자세한 내용은 Intune 지원 팀 블로그의 [Updating your Windows 10 Company Portal app](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/)(Windows 10 회사 포털 앱 업데이트)을 참조하세요.
+
+- **중국에 있는 Android 사용자에 대한 지원 향상**  
+  중국에는 Google Play 스토어가 없으므로 Android 장치 사용자는 중국 마켓플레이스에서 앱을 다운로드해야 합니다. 회사 포털은 이 워크플로를 지원합니다. 중국의 Android 사용자가 로컬 앱 스토어에서 회사 포털 및 Outlook 앱을 다운로드하도록 리디렉션합니다. 따라서 모바일 장치 관리 및 모바일 응용 프로그램 관리 모두에서 조건부 액세스 정책을 사용하도록 설정하는 경우 사용자 환경이 개선됩니다. 다음과 같은 중국 앱 스토어에서 Android용 회사 포털 및 Outlook 앱을 사용할 수 있습니다.
+
+  - [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
+  - [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
+  - [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
+  - [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
+  - [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
+
+- **회사 포털 앱을 최신 상태로 유지**  
+  2016년 12월에 사용자가 iOS, Android, Windows 8.1 이상 또는 Windows Phone 8.1 이상 장치를 등록할 때 사용자 그룹에 대해 MFA(다단계 인증)를 적용할 수 있도록 하는 업데이트가 출시되었습니다. 회사 포털 앱의 특정 기준 버전(Android: v5.0.3419.0 이상 및 iOS: v2.1.17 이상)이 없으면 이 기능이 작동되지 않습니다.
+
+  Intune의 관리 기능을 지속적으로 개선되고 있으며, 여러 개선 사항이 지원되는 모든 플랫폼의 회사 포털 앱에 대한 업데이트로 제공됩니다. 장치에 최신 버전의 회사 포털 앱을 설치하는 것이 좋습니다. 그러면 장치에서 Intune의 개선 사항을 활용하고 사용자 환경을 최적화할 수 있습니다.
+
+  >[!Tip]
+  > 사용자에게 해당 앱 스토어에서 앱을 자동으로 업데이트하도록 장치를 설정하게 하세요. Android 회사 포털 앱은 네트워크 공유에서 사용할 수 있게 한 경우 [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=49140)에서 최신 버전을 다운로드할 수 있습니다.
+
+- **iOS 및 Android에서 MAM에 Microsoft Teams를 사용할 수 있음**  
+  이제 Intune MAM(모바일 앱 관리) 기능에 iOS 및 Android용 Microsoft Teams 앱을 사용할 수 있습니다. 팀이 여러 장치에서 자유롭게 작업할 수 있도록 하고 대화 및 회사 데이터를 보호할 수 있습니다. 자세한 내용은 Enterprise Mobility + Security 블로그에서 [Microsoft Teams announcement](https://blogs.technet.microsoft.com/enterprisemobility/2017/03/14/microsoft-teams-is-now-generally-available-and-mam-enabled-on-ios-and-android/)(Microsoft Teams 알림)를 참조하세요.
+
+### <a name="new-in-configuration-manager-technical-preview-1703"></a>Configuration Manager Technical Preview 1703의 새로운 기능
+
+- **Apple Volume Purchase Program 시나리오에 대한 추가 지원**  
+   Technical Preview 1703부터 이제 다음과 같은 VPP(Volume Purchase Program) 시나리오가 지원됩니다.
+
+   - 장치 라이선스 - 장치 라이선스를 지원하고 장치 컬렉션에 배포되는 앱은 이제 장치당 라이선스가 하나만 있으면 됩니다. 이전에는 장치의 각 사용자에 대해 라이선스를 사용해야 했습니다. 자세한 내용은 [장치 컬렉션에 대량 구매한 iOS 앱 배포](/sccm/core/get-started/capabilities-in-technical-preview-1703#deploy-volume-purchased-ios-apps-to-device-collections)를 참조하세요.
+   - 두 토큰이 모두 VPP 앱 관리에 사용되는 단일 하이브리드 테넌트에 여러 VPP 토큰을 사용합니다.
+   - 비즈니스 토큰과 교육 토큰을 구분하는 기능으로 VPP 교육 토큰을 사용합니다.
+
+### <a name="new-in-configuration-manager-current-branch"></a>Configuration Manager(현재 분기)의 새로운 기능
+
+다음 기능은 이전에 Configuration Manager Technical Preview 릴리스에서 사용할 수 있었으며, 이제 Intune 및 Configuration Manager(현재 분기) 버전 1702를 포함하는 하이브리드 배포에서 이러한 기능을 사용할 수 있습니다.
+
+- [Android for Work 지원](/sccm/core/plan-design/changes/whats-new-in-version-1702##android-for-work-support)
+- [비규격 앱 준수 설정](/sccm/core/plan-design/changes/whats-new-in-version-1702#conditional-access-device-compliance-policy-improvements)
+- [PFX 인증서 만들기 및 배포와 S/MIME 지원](/sccm/core/plan-design/changes/whats-new-in-version-1702#improvements-to-certificate-profiles)
+- [Android 및 iOS 버전은 하이브리드 MDM 만들기 마법사에서 대상 지정이 가능하지 않음](/sccm/core/plan-design/changes/whats-new-in-version-1702#android-and-ios-versions-are-no-longer-targetable-in-creation-wizards-for-hybrid-mdm)
+
+Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추가 하이브리드 기능도 포함되어 있습니다.
+
+- **Apple VPP(Volume Purchase Program)에 대한 향상된 지원**  
+  - 이제 사용이 허가된 앱을 사용자 및 장치에 배포할 수 있습니다. 장치 라이선스를 지원하는 앱 기능에 따라 앱 배포 시 다음과 같이 적절한 라이선스가 청구됩니다.
+
+    | Configuration Manager 버전 | 앱이 장치 라이선싱을 지원하나요? | 배포 컬렉션 유형 | 청구된 라이선스 |
+    |-|-|-|-|
+    |1702 이전|예|사용자|사용자 라이선스|
+    |1702 이전|아니요|사용자|사용자 라이선스|
+    |1702 이전|예|장치|사용자 라이선스|
+    |1702 이전|아니요|장치|사용자 라이선스|
+    |1702 이상|예|사용자|사용자 라이선스|
+    |1702 이상|아니요|사용자|사용자 라이선스|
+    |1702 이상|예|장치|장치 라이선스|
+    |1702 이상|아니요|장치|사용자 라이선스|
+
+  - 이제 교육용 iOS Volume Purchase Program에서 구매한 앱을 배포하고 추적할 수도 있습니다.
+
+  - 이제 여러 Apple Volume Purchase Program 토큰을 Configuration Manager와 연결할 수 있습니다.
+
+  대량 구매한 iOS 앱에 대한 자세한 내용은 [대량 구매한 iOS 앱 관리](/sccm/mdm/deploy-use/manage-volume-purchased-ios-apps)를 참조하세요.
+
+- **비즈니스용 Microsoft Store의 LOB(기간 업무) 앱 지원**  
+  이제 비즈니스용 Microsoft Store에서 사용자 지정 기간 업무 앱을 동기화할 수 있습니다.
+
+- **새로운 Mobile Threat Defense 모니터링 도구**  
+    이제 Mobile Threat Defense 서비스 공급자를 통해 준수 상태를 모니터링하는 새로운 방법을 사용할 수 있습니다.
+
+    자세한 내용은 [Mobile Threat Defense 준수를 모니터링하는 방법](/sccm/mdm/deploy-use/monitor-mobile-threat-defense-compliance)을 참조하세요.
+
+
 
 
 
