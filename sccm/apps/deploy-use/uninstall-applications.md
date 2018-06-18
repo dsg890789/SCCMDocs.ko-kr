@@ -10,11 +10,12 @@ ms.assetid: 0ea3edaa-27c6-4391-9896-cd97d9c5d06d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 7587fa6d96d6f8737921c9e5edae992cdd0ea614
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: e5b0ee5cb677cff5e57f24a20122fb017aea056c
+ms.sourcegitcommit: 493cc42f05b9388ef872e466e5a75d569642b9fc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34569666"
 ---
 # <a name="uninstall-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 제거
 
@@ -41,7 +42,7 @@ ms.lasthandoff: 05/03/2018
 -   배포 목적이 **제거** 인 배포는 요구 사항 규칙을 확인하지 않습니다. 응용 프로그램이 배포가 실행되는 컴퓨터에 설치된 경우 제거됩니다.  
 
 > [!IMPORTANT]  
-> 컬렉션에 대한 응용 프로그램의 기존 배포 또는 시뮬레이트된 배포를 삭제해야만 **제거**배포 작업을 사용하여 응용 프로그램을 배포할 수 있습니다.  
+> 제거 작업으로 응용 프로그램을 배포하려면 먼저 기존 응용 프로그램 배포, 시뮬레이션된 배포 또는 이 응용 프로그램을 포함하는 작업 순서 배포를 삭제해야 합니다. 
 
  배포 유형을 만드는 방법에 대한 자세한 내용은 [응용 프로그램 만들기](../../apps/deploy-use/create-applications.md)를 참조하세요.  
 

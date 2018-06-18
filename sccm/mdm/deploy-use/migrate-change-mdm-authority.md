@@ -9,11 +9,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: be503ec9-5324-4f7c-bcf5-77204328e99c
-ms.openlocfilehash: b8bc778f4bcede45d3035b8b119fc3e4a4df4978
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: b295dad503b801ff9d04767f75c1688107016d0b
+ms.sourcegitcommit: 493cc42f05b9388ef872e466e5a75d569642b9fc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34569683"
 ---
 # <a name="change-your-mdm-authority-to-intune-standalone"></a>MDM 기관을 Intune 독립 실행형으로 변경
 
@@ -53,7 +54,9 @@ Configuration Manager 콘솔(하이브리드 MDM)에서 구성된 기존 Microso
 3.  Configuration Manager에서 MDM 기관을 설정할 때 원래 사용했던 Intune 테넌트에 로그인합니다.
 4.  **다음** 을 클릭하여 마법사를 완료합니다.
 5.  이제 MDM 기관이 다시 설정되었습니다. Intune 구독은 Configuration Manager 콘솔의 Microsoft Intune 구독 노드에 더 이상 표시되지 않습니다.
-6.  이전에 사용한 Intune 테넌트를 사용하여 [Azure Portal이 Intune](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)에 로그인합니다.    
+6.  [Intune 포털](https://aka.ms/IntunePortal)에 로그인합니다.
+7.  Microsoft Intune 블레이드에서 **장치 등록**을 클릭합니다.
+8.  장치 등록 개요 블레이드에서 **MDM 기관** 속성을 참조합니다.
 
   > [!Important]    
   > Intune 클래식 콘솔을 사용하지 마세요. Azure Portal에서 Intune에 로그인해야 합니다.

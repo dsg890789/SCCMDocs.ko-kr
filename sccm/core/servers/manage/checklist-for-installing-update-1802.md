@@ -1,8 +1,8 @@
 ---
-title: 1802에 대한 검사 목록 | System Center Configuration Manager
+title: 1802에 대한 검사 목록
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager 버전 1802로 업데이트하기 전에 수행할 작업을 알아봅니다.
-ms.date: 03/22/2018
+ms.date: 06/08/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,11 +10,12 @@ ms.assetid: 6af92de2-b2c7-4d5c-affd-6cce81979fb5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5f16f69e7b359112a03bb26c964ac0a6990c0b24
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 74fa4e9240cf4a3d369d6b20bcb9233fb6319a8d
+ms.sourcegitcommit: 690f64bd02139f893bd0b45e2e0f00ed6bb4e1c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35259301"
 ---
 # <a name="checklist-for-installing-update-1802-for-system-center-configuration-manager"></a>System Center Configuration Manager용 업데이트 1802를 설치하기 위한 검사 목록
 
@@ -22,7 +23,7 @@ ms.lasthandoff: 05/03/2018
 
 System Center Configuration Manager의 현재 분기를 사용하는 경우 버전 1802용 콘솔 내 업데이트를 설치하여 이전 버전의 계층을 업데이트할 수 있습니다. <!-- baseline only statement: -->버전 1802가 [기준 미디어](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)로도 지원되기 때문에 새로운 계층 구조의 첫 번째 사이트를 설치하는 데 설치 미디어를 사용할 수 있습니다.
 
-버전 1802용 업데이트를 가져오려면 계층의 최상위 사이트에서 서비스 연결점 사이트 시스템 역할을 사용해야 합니다. 온라인 또는 오프라인 모드에 있을 수 있습니다. 계층 구조에서 Microsoft에서 업데이트 패키지를 다운로드하면 콘솔의 **관리 &gt; 개요 &gt; 클라우드 서비스 &gt; 업데이트 및 서비스**에 표시됩니다.
+버전 1802용 업데이트를 가져오려면 계층의 최상위 사이트에서 서비스 연결점을 사용해야 합니다. 이 사이트 시스템 역할은 온라인 또는 오프라인 모드에 있을 수 있습니다. 계층 구조가 Microsoft에서 업데이트 패키지를 다운로드하면 **업데이트 및 서비스** 노드의 **관리** 작업 영역에서 콘솔에 표시됩니다.
 
 -   업데이트가 **사용 가능**으로 나열되면 업데이트를 설치할 준비가 된 것입니다. 버전 1802를 설치하기 전에 [업데이트 1802 설치 정보](#about-installing-update-1802) 및 업데이트를 시작하기 전에 수행할 구성에 대한 [검사 목록](#checklist)을 검토합니다.
 
@@ -141,10 +142,14 @@ Configuration Manager에서는 NLB(네트워크 부하 분산) 클러스터를 �
 
 이를 통해 계층의 사이트에서 업데이트를 설치하는 시기를 제어할 수 있습니다. 자세한 내용은 [사이트 서버에 대한 서비스 기간](/sccm/core/servers/manage/service-windows)을 참조하세요.
 
+**지원되는 확장을 검토합니다.**   
+<!--SCCMdocs#587-->   
+Microsoft 또는 Microsoft 파트너에서 다른 제품으로 Configuration Manager를 확장하는 경우 해당 제품이 버전 1802를 지원하는지 확인합니다. 이 정보는 제품 공급업체를 통해 확인합니다. 예를 들어 Microsoft Deployment Toolkit [릴리스 정보](/sccm/mdt/release-notes)를 참조합니다.
+
 **설치 필수 구성 요소 검사기 실행:**   
 업데이트가 콘솔에 **사용 가능**으로 표시되는 경우 업데이트를 설치하기 전에 독립적으로 필수 구성 요소 검사기를 실행할 수 있습니다. 사이트에 업데이트를 설치할 때 필수 조건 검사가 다시 실행됩니다.
 
-콘솔에서 필수 구성 요소 검사를 실행 하려면 **관리 > 개요 > 클라우드 서비스 > 업데이트 및 서비스**로 이동합니다. 다음으로 **Configuration Manager 1802 업데이트 패키지**를 마우스 오른쪽 단추로 클릭한 다음, **필수 구성 요소 검사 실행**을 선택합니다.
+콘솔에서 필수 구성 요소 검사를 실행하려면 **관리**작업 영역으로 이동하여 **업데이트 및 서비스**를 선택합니다. **Configuration Manager 1802** 업데이트 패키지를 선택하고 리본 메뉴에서 **필수 구성 요소 검사 실행**을 클릭합니다.
 
 필수 구성 요소 검사를 시작 및 모니터링하는 방법에 대한 자세한 내용은 [System Center Configuration Manager용 콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates) 항목에서 **3단계: 업데이트를 설치하기 전에 필수 구성 요소 검사기 실행**을 참조하세요.
 
@@ -167,3 +172,4 @@ Configuration Manager에서는 NLB(네트워크 부하 분산) 클러스터를 �
 3.  업데이트를 시작하기 전에 사용하지 않도록 설정한 기본 사이트에서 관리 지점의 데이터베이스 복제본을 다시 구성합니다.
 4.  업데이트를 시작하기 전에 사용하지 않도록 설정한 데이터베이스 유지 관리 작업을 다시 구성합니다.
 5.  업데이트를 설치하기 전에 클라이언트 파일럿을 구성한 경우 직접 만든 계획에 따라 클라이언트를 업그레이드합니다.
+6.  Configuration Manager 확장을 사용하는 경우 이 Configuration Manager 업데이트를 지원하는 최신 버전으로 업데이트합니다. 

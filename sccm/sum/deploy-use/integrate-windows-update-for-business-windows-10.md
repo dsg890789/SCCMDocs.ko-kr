@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 183315fe-27bd-456f-b2c5-e8d25e05229b
-ms.openlocfilehash: 3dd5a7f9717843244ab8477a09b109261618f9aa
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 07616a1c03c0383e9001418043dc6cd7ec117c1d
+ms.sourcegitcommit: 493cc42f05b9388ef872e466e5a75d569642b9fc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703488"
 ---
 # <a name="integration-with-windows-update-for-business-in-windows-10"></a>Windows 10에서 비즈니스용 Windows 업데이트와 통합
 
@@ -72,7 +73,8 @@ Configuration Manager 버전 1706부터 비즈니스용 Windows 업데이트에�
 >Configuration Manager 버전 1802부터는 Windows 참가자에 대한 지연 정책을 설정할 수 있습니다. <!--507201-->Windows 참가자 프로그램에 대한 자세한 내용은 [비즈니스용 Windows 참가자 프로그램 시작](https://docs.microsoft.com/windows/deployment/update/waas-windows-insider-for-business)을 참조하세요.
 
 ### <a name="prerequisites"></a>필수 구성 요소
-비즈니스용 Windows 업데이트에서 관리되는 Windows 10 장치는 인터넷에 연결되어 있어야 합니다.
+-   Windows 10 버전 1703 이상
+-   비즈니스용 Windows 업데이트에서 관리되는 Windows 10 장치는 인터넷에 연결되어 있어야 합니다.
 
 #### <a name="to-create-a-windows-update-for-business-deferral-policy"></a>비즈니스용 Windows 업데이트 지연 정책을 만들려면
 1. **소프트웨어 라이브러리** > **Windows 10 서비스** > **비즈니스용 Windows 업데이트 정책**으로 이동합니다.

@@ -9,11 +9,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 71eaa409-b955-45d6-8309-26bf3b3b0911
-ms.openlocfilehash: e62b748596aba1404d6b097e5aa0bf74266f055b
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: fbae44d1344dd36d3c0a6faf2e50727dfa830ba0
+ms.sourcegitcommit: 8060ea520fb08629e1d5f249daffe825536673a5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35232373"
 ---
 # <a name="certificates-for-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이에 대한 인증서
 
@@ -41,7 +42,7 @@ CMG는 인터넷 기반 클라이언트에서 연결하는 HTTPS 서비스를 �
 ### <a name="cmg-trusted-root-certificate-to-clients"></a>클라이언트에서 신뢰할 수 있는 CMG 루트 인증서
 
 클라이언트는 CMG 서버 인증 인증서를 신뢰해야 합니다. 이 신뢰를 수행하는 데는 두 가지 방법이 있습니다.
-- 공용 및 전역 신뢰할 수 있는 인증서 공급자의 인증서를 사용합니다. 예를 들어 VeriSign 또는 Thawte가 있지만, 이에 국한되지는 않습니다. Windows 클라이언트에는 이러한 공급자의 신뢰할 수 있는 루트 CA(인증 기관)가 포함됩니다. 이러한 공급자 중 하나에서 발급된 서버 인증 인증서를 사용하면 클라이언트에서 이 인증서를 자동으로 신뢰합니다. 
+- 공용 및 전역 신뢰할 수 있는 인증서 공급자의 인증서를 사용합니다. 예를 들어 DigiCert, VeriSign 또는 Thawte가 있지만, 이에 국한되지는 않습니다. Windows 클라이언트에는 이러한 공급자의 신뢰할 수 있는 루트 CA(인증 기관)가 포함됩니다. 이러한 공급자 중 하나에서 발급된 서버 인증 인증서를 사용하면 클라이언트에서 이 인증서를 자동으로 신뢰합니다. 
 - PKI(공개 키 인프라)의 엔터프라이즈 CA에서 발급한 인증서를 사용합니다. 대부분의 엔터프라이즈 PKI 구현에서는 신뢰할 수 있는 루트 CA를 Windows 클라이언트에 추가합니다. 예를 들어 그룹 정책과 함께 Active Directory 인증서 서비스를 사용합니다. 클라이언트에서 자동으로 신뢰하지 않는 CA에서 CMG 서버 인증 인증서를 발급하는 경우 신뢰할 수 있는 루트 CA 인증서를 인터넷 기반 클라이언트에 추가해야 합니다.
     - Configuration Manager 인증서 프로필을 사용하여 클라이언트에 인증서를 프로비전할 수도 있습니다. 자세한 내용은 [인증서 프로필 소개](/sccm/protect/deploy-use/introduction-to-certificate-profiles)를 참조하세요.
 

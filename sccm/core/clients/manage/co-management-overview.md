@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: d6bbc787-83a5-44b4-ad64-016e5da7413f
-ms.openlocfilehash: 3a667ae075ac688d4b49789ed88f858c2ff39397
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 9324126014245b586ba8fed87c670ac829f6cb81
+ms.sourcegitcommit: 493cc42f05b9388ef872e466e5a75d569642b9fc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703471"
 ---
 # <a name="co-management-for-windows-10-devices"></a>Windows 10 장치의 공동 관리    
  이전 Windows 10 업데이트에서 이미 Windows 10 장치를 온-프레미스 AD(Active Directory)와 클라우드 기반 Azure AD에 동시에 조인할 수 있습니다(하이브리드 Azure AD). Configuration Manager 버전 1710부터 공동 관리에서는 이러한 향상된 기능을 통해 Configuration Manager 및 Intune을 모두 사용하여 Windows 10 버전 1709 장치를 동시에 관리할 수 있습니다. <!-- 1350871 -->
@@ -60,7 +61,7 @@ ms.lasthandoff: 05/03/2018
 ### <a name="enable-co-management"></a>공동 관리 사용 
  Configuration Manager 콘솔에서 **관리** > **개요** > **클라우드 서비스** > **공동 관리**로 이동합니다. 리본에서  **공동 관리 구성**을 선택하여 **공동 관리 등록 마법사**를 엽니다. 
    
-1. **구독** 페이지에서 **로그인**을 클릭하고 Intune 테넌트에 로그인한 후 **다음**을 클릭합니다.    
+1. **구독** 페이지에서 **로그인**을 클릭하고 Intune 테넌트에 로그인한 후 **다음**을 클릭합니다. 테넌트에 로그인하는 데 사용된 계정이 Intune 라이선스를 할당했는지 확인합니다. 그렇지 않으면 “사용자가 인식되지 않습니다”라는 오류 메시지가 표시되고 실패합니다.   
 2. **사용 여부** 페이지에서 **Automatic enrollment into Intune**(Intune에 자동 등록) 설정을 선택합니다. 필요한 경우 Intune에 이미 등록된 장치의 명령줄을 복사합니다. 
 3. **워크로드** 페이지에서 각 워크로드에 대해 Intune으로 관리하기 위해 이동할 장치 그룹을 선택합니다.
 4. **준비** 페이지에서 **파일럿 컬렉션**으로 지정할 장치 컬렉션을 선택합니다. **요약**을 확인하고 마법사를 완료합니다. 

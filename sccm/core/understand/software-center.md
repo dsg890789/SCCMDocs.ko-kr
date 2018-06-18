@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.assetid: 9e68de6e-2b33-442b-b674-a382728d9529
-ms.openlocfilehash: 4c45da7b5a4b7f8945b23d03d0fd551276205ee2
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: ff40af9dd40921b63f8b8bd13ba5c287c3bf9972
+ms.sourcegitcommit: e35d07870656eadd29faacc378ecd091ff3bdcfb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34848665"
 ---
 # <a name="software-center-user-guide"></a>소프트웨어 센터 사용자 가이드
 
@@ -45,7 +46,7 @@ Windows 10 컴퓨터에서 소프트웨어 센터를 시작하는 가장 간단�
 - **필터**: IT 관리자는 응용 프로그램의 범주를 만들 수 있습니다. 지원되는 경우 드롭 다운 목록을 클릭하여 특정 범주에서 해당 응용 프로그램에만 뷰를 필터링합니다. **모두**를 선택하여 모든 응용 프로그램을 표시합니다.
 - **정렬 기준**: 응용 프로그램의 목록을 다시 정렬합니다. 기본적으로 이 목록은 **가장 최근** 기준으로 정렬됩니다.
 - **검색**: 원하는 항목을 찾을 수 없으신가요? 검색 상자에 키워드를 입력하여 찾으세요.
--  보기 전환: 아이콘을 클릭하여 목록 보기와 타일 간에 보기를 전환합니다. 기본적으로 응용 프로그램 목록은 그래픽 타일로 표시됩니다. 
+-  **보기 전환**: 아이콘을 클릭하여 목록 보기와 타일 보기 간에 보기를 전환합니다. 기본적으로 응용 프로그램 목록은 그래픽 타일로 표시됩니다. 
     - 타일 보기: IT 관리자는 아이콘을 사용자 지정할 수 있습니다. 아래 각 타일은 응용 프로그램 이름, 게시자 및 버전을 표시합니다. 
     - 목록 보기: 이 보기는 응용 프로그램 아이콘, 이름, 게시자, 버전 및 상태를 표시합니다. 
 
