@@ -9,11 +9,12 @@ ms.topic: conceptual
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: c28964d8cf6b11e9999a9d0967422ececafe234b
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: dd37bb3f452f5018dd1130d43ead0117481f2aab
+ms.sourcegitcommit: 4b8afbd08ecf8fd54950eeb630caf191d3aa4767
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "34450192"
 ---
 # <a name="cryptographic-controls-technical-reference"></a>암호화 컨트롤 기술 참조
 
@@ -116,18 +117,7 @@ System Center Configuration Manager는 서명 및 암호화를 사용하여 Conf
 ### <a name="mobile-device-management-and-pki-certificates"></a>모바일 장치 관리 및 PKI 인증서  
  모바일 장치가 통신사에 의해 잠기지 않은 경우 Configuration Manager 또는 Microsoft Intune을 사용하여 클라이언트 인증서를 요청 및 설치할 수 있습니다. 이 인증서는 모바일 장치의 클라이언트와 Configuration Manager 사이트 시스템 또는 Microsoft Intune 서비스 간의 상호 인증을 제공합니다. 모바일 장치가 잠겨 있으면 Configuration Manager 또는 Intune을 사용하여 인증서를 배포할 수 없습니다.  
 
- 모바일 장치에 대해 하드웨어 인벤토리를 사용하도록 설정하는 경우 Configuration Manager 또는 Microsoft Intune에서도 모바일 장치에 설치된 인증서의 인벤토리를 만듭니다.  
-
-### <a name="out-of-band-management-and-pki-certificates"></a>대역 외 관리 및 PKI 인증서  
- Intel AMT 기반 컴퓨터용 대역 외 관리에서는 두 가지 유형 이상의 PKI 발급 인증서, 즉 AMT 프로비전 인증서 및 웹 서버 인증서를 사용합니다.  
-
- 대역 외 서비스 지점은 AMT 프로비전 인증서를 사용하여 컴퓨터에서 대역 외 관리를 사용하도록 준비합니다. 프로비전될 AMT 기반 컴퓨터는 대역 외 관리 지점에서 제공하는 인증서를 신뢰해야 합니다. 기본적으로 AMT 기반 컴퓨터는 컴퓨터 제조업체에 의해 VeriSign, Go Daddy, Comodo, Starfield 등의 외부 CA(인증 기관)를 사용하도록 구성됩니다. 외부 CA 중 한 곳의 프로비전 인증서를 구입하고 Configuration Manager에서 이 프로비전 인증서를 사용하도록 구성한 경우 AMT 기반 컴퓨터는 해당 프로비전 인증서의 CA를 신뢰하며 프로비전은 올바르게 작동합니다. 그러나, 자신만의 내부 CA를 사용하여 AMT 프로비전 인증서를 발급하는 것이 보안 모범 사례입니다.  
-
- AMT 기반 컴퓨터는 펌웨어 내에서 웹 서버 구성 요소를 실행하며 해당 웹 서버 구성 요소는 TLS(Transport Layer Security)를 사용하여 대역 외 서비스 지점과 함께 통신 채널을 암호화합니다. AMT BIOS에는 인증서를 수동으로 구성할 수 있는 사용자 인터페이스가 없으므로 요청하는 AMT 기반 컴퓨터의 인증서 요청을 자동으로 승인하는 Microsoft Enterprise 인증 기관이 있어야만 합니다. 요청에서는 요청 형식으로 PKCS#10을 사용하며, 이 형식은 인증서 정보를 AMT 기반 컴퓨터에 전송하는 데 PKCS#7을 사용합니다.  
-
- AMT 기반 컴퓨터는 자신을 관리하는 컴퓨터에 대해 인증되지만 해당 컴퓨터에는 상응하는 클라이언트 PKI 인증서가 없습니다. 그 대신 이러한 통신에서는 Kerberos 또는 HTTP 다이제스트 인증을 사용합니다. 사용되는 HTTP 다이제스트는 TLS를 통해 암호화됩니다.  
-
- 추가적 유형의 인증서인 802.1X 인증 유선 네트워크 및 무선 네트워크용 선택적 클라이언트 인증서는 대역 외 AMT 기반 컴퓨터를 관리하는 데 필요할 수 있습니다. 클라이언트 인증서는 AMT 기반 컴퓨터에 RADIUS 서버에 대한 인증을 위해 필요할 수 있습니다. RADIUS 서버가 EAP-TLS 인증에 대해 구성된 경우 클라이언트 인증서가 항상 필요합니다. RADIUS 서버가 EAP-TTLS/MSCHAPv2 또는 PEAPv0/EAP-MSCHAPv2에 대해 구성된 경우 RADIUS 구성에서 클라이언트 인증서의 필요 여부를 지정합니다. 이 인증서는 AMT 기반 컴퓨터에서 웹 서버 인증서 요청과 동일한 프로세스를 사용하여 요청됩니다.  
+ 모바일 장치에 대해 하드웨어 인벤토리를 사용하도록 설정하는 경우 Configuration Manager 또는 Microsoft Intune에서도 모바일 장치에 설치된 인증서의 인벤토리를 만듭니다.   
 
 ### <a name="operating-system-deployment-and-pki-certificates"></a>운영 체제 배포 및 PKI 인증서  
  Configuration Manager를 사용하여 운영 체제를 배포하고 관리 지점에 HTTPS 클라이언트 연결이 필요한 경우 클라이언트 컴퓨터에도 관리 지점과 통신하기 위한 인증서가 있어야 하며, 이는 작업 순서 미디어 또는 PXE 사용 배포 지점에서 부팅하는 것과 같은 전환 단계에서도 마찬가지입니다. 이러한 시나리오를 지원하려면 PKI 클라이언트 인증 인증서를 만들어 개인 키와 함께 내보낸 다음 사이트 서버 속성으로 가져오고 관리 지점의 신뢰할 수 있는 루트 CA 인증서도 추가해야 합니다.  
