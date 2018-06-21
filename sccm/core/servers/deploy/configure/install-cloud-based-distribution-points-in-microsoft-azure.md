@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32338417"
 ---
 # <a name="install-cloud-based-distribution-points-in-microsoft-azure-for-system-center-configuration-manager"></a>Microsoft Azure에서 System Center Configuration Manager에 대한 클라우드 기반 배포 지점 설치
 
@@ -41,7 +42,7 @@ Microsoft Azure에서 System Center Configuration Manager 클라우드 기반 �
 
 ### <a name="to-set-up-a-cloud-service-in-azure-for-a-distribution-point"></a>배포 지점을 위해 Azure에서 클라우드 서비스를 설정하려면  
 
-1.  웹 브라우저에서 Azure Portal(https://manage.windowsazure.com)을 열고 해당 계정에 액세스합니다.  
+1.  웹 브라우저에서 Azure Portal (https://manage.windowsazure.com) 을 열고 해당 계정에 액세스합니다.  
 
 2.  **호스팅된 서비스, 저장소 계정 및 CDN**을 클릭한 다음 **관리 인증서**를 선택합니다.  
 
