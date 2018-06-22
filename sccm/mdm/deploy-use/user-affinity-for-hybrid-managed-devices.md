@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32347436"
 ---
 # <a name="user-affinity-for-hybrid-managed-devices-in-configuration-manager"></a>Configuration Manager의 하이브리드 관리 장치에 대한 사용자 선호도
 

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32348585"
 ---
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Intune과 Lookout 통합 문제 해결
 

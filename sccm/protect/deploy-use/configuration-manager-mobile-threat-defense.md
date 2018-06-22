@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32347606"
 ---
 # <a name="intune-mobile-threat-defense-connectors-in-configuration-manager"></a>Configuration Manager의 Intune Mobile Threat Defense 커넥터
 

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/27/2018
+ms.locfileid: "27821087"
 ---
 # <a name="user-driven-installation---developers-guide"></a>사용자 구동 설치 - 개발자 가이드
 UDI(사용자 구동 설치)는 Microsoft® System Center 2012 R2 Configuration Manager의 OSD(운영 체제 배포) 기능을 사용하는 컴퓨터에 Windows 8.1 같은 Windows® 클라이언트 운영 체제를 간편하게 배포할 수 있도록 도와줍니다. UDI는 MDT(Microsoft Deployment Toolkit)에 포함되어 있습니다.  
@@ -171,7 +172,7 @@ UDI(사용자 구동 설치)는 Microsoft® System Center 2012 R2 Configuration 
 
 6.  디버깅 속성의 **명령** 아래에 **$(TargetDir)\OSDSetupWizard.exe**를 입력합니다.  
 
-7.  디버깅 속성의 **작업 디렉터리** 아래에 **$(TargetDir)**를 입력합니다.  
+7.  디버깅 속성의 **작업 디렉터리** 아래에 **$(TargetDir)** 를 입력합니다.  
 
 8.  **SamplePage 속성 페이지** 대화 상자에서 Configuration Properties/Build Events/Post-Build Event로 이동합니다.  
 
@@ -783,7 +784,7 @@ CreateInstance(Container(), ID_WmiRepository, &pWmi);
 #### <a name="creatable-components"></a>만들 수 있는 구성 요소  
  레지스트리에 등록할 수 있는 구성 요소 집합이 있습니다. 첫 번째 구성 요소 집합은 주 UDI 마법사 실행 파일에서 제공하는 것이므로 항상 등록됩니다. 다른 두 구성 요소 집합은 "선택적" Dll에 제공됩니다. 이러한 구성 요소를 사용하려면 DLL이 .config XML 파일의 **Dll** 섹션에 나열되어야 합니다. 어떤 실행 파일에 특정 구성 요소가 포함되어 있는지 코드가 알 필요는 없습니다.  
 
- 표 3은 팩터리 레지스트리(OSDSetupWizard에 정의된)에 등록된 구성 요소의 구성 요소 ID 목록입니다(구성 요소 이름은 ID와 동일하지만 앞부분에 *ID_*가 없음).  
+ 표 3은 팩터리 레지스트리(OSDSetupWizard에 정의된)에 등록된 구성 요소의 구성 요소 ID 목록입니다(구성 요소 이름은 ID와 동일하지만 앞부분에 *ID_* 가 없음).  
 
 ### <a name="table-3-component-ids"></a>표 3. 구성 요소 ID  
 
@@ -906,7 +907,7 @@ Register<LocationPageFactory>(ID_LocationPage, factories);
  이 구성 요소는 **Logger** 메서드(**WizardPageImpl**을 통해 구현)를 통해 페이지에 제공됩니다. 사용자는 이 메서드를 사용하여 로그 파일에 항목을 씁니다. 로그 파일의 콘텐츠는 사용자가 UDI 마법사를 실행하는 동안 발생하는 문제 진단에 유용합니다.  
 
 #### <a name="propertybag-component"></a>PropertyBag 구성 요소  
- *속성 모음*은 메모리 변수에 대한 컨테이너입니다. **Container()->Properties()**를 사용하여 페이지에서 사용할 수 있습니다. 메모리 변수는 여러 페이지 간에 임시 데이터를 전달하는 데 유용합니다.  
+ *속성 모음*은 메모리 변수에 대한 컨테이너입니다. **Container()->Properties()** 를 사용하여 페이지에서 사용할 수 있습니다. 메모리 변수는 여러 페이지 간에 임시 데이터를 전달하는 데 유용합니다.  
 
 #### <a name="tsvariablebag-and-tsrepository-components"></a>TSVariableBag 및 TSRepository 구성 요소  
  **TSVariableBag** 구성 요소를 사용하면 작업 순서 변수를 읽고 쓸 수 있습니다. 이 구성 요소는 기본적으로 사용자가 **마침**을 클릭할 때까지 메모리에 값을 유지합니다. 페이지의 **TSVariables** 메서드(**WizardPageImpl** 기본 클래스를 통해 구현)를 통해 **TSVariable** 모음에 액세스할 수 있습니다. 이러한 구성 요소는 작업 순서 변수의 모든 읽기 및 쓰기를 기록합니다.  
@@ -1379,7 +1380,7 @@ __interface IDomainJoinValidator : IUnknown
  이 메서드는 **IADHelper->ValidLogon** 메서드를 사용하여 작업을 수행합니다. 자세한 내용은 해당 메서드를 참조하세요.  
 
 ##### <a name="bool-canmodifycomputeradentrylpcwstr-domainname"></a>BOOL CanModifyComputerAdEntry(LPCWSTR domainName)  
- 사용자에게 컴퓨터 항목을 수정할 권한이 있는지 확인합니다. 대부분의 작업은 **IADHelper HasAccess->**를 통해 수행됩니다. 이 메서드가 FALSE를 반환하면 로그 파일에서 자세한 내용을 확인하세요.  
+ 사용자에게 컴퓨터 항목을 수정할 권한이 있는지 확인합니다. 대부분의 작업은 **IADHelper HasAccess->** 를 통해 수행됩니다. 이 메서드가 FALSE를 반환하면 로그 파일에서 자세한 내용을 확인하세요.  
 
 #### <a name="idrivelist-interface"></a>IDriveList 인터페이스  
 
@@ -2100,7 +2101,7 @@ HRESULT InitSection(LPCWSTR key, LPCWSTR sectionCaption)
 |**매개 변수**|**설명**|  
 |-|-|  
 |**Key**|이 매개 변수는 페이지에서 고유해야 합니다. 페이지마다 고유의 요약 정보를 제공하도록 보장하기 위해 사용됩니다.|  
-|**sectionCaption**|이 페이지의 요약 정보를 제공하는 **요약** 페이지에 표시될 헤더입니다. 일반적으로 이 매개 변수의 값으로 **DisplayName()**을 사용합니다.|  
+|**sectionCaption**|이 페이지의 요약 정보를 제공하는 **요약** 페이지에 표시될 헤더입니다. 일반적으로 이 매개 변수의 값으로 **DisplayName()** 을 사용합니다.|  
 
 ##### <a name="addsummaryitem"></a>AddSummaryItem  
 
@@ -2384,7 +2385,7 @@ __interface IDataNodes : IUnknown
       </Data>  
 ```  
 
- **Settings()->GetDataNode(L"Network", &pData)**를 호출하면 두 데이터 항목(각 항목은 두 개 속성 포함)이 포함된 **IDataNodes** 인스턴스가 제공됩니다.  
+ **Settings()->GetDataNode(L"Network", &pData)** 를 호출하면 두 데이터 항목(각 항목은 두 개 속성 포함)이 포함된 **IDataNodes** 인스턴스가 제공됩니다.  
 
 ##### <a name="sizet-count"></a>size_t Count()  
  이 메서드는 **DataItem** 요소 수를 반환합니다.  
@@ -2755,7 +2756,7 @@ __interface IStringProperties : IUnknown
 };  
 ```  
 
- 이 인터페이스를 사용하면 XML에서 제공하는 setter 요소 집합에 간단하게 액세스할 수 있습니다. 이 인터페이스는 **Settings()->Properties()**를 사용하여 페이지의 속성에 제공됩니다.  
+ 이 인터페이스를 사용하면 XML에서 제공하는 setter 요소 집합에 간단하게 액세스할 수 있습니다. 이 인터페이스는 **Settings()->Properties()** 를 사용하여 페이지의 속성에 제공됩니다.  
 
 ##### <a name="hresult-getlpctstr-propertyname-out-lpbstr-ppropvalue"></a>HRESULT Get(LPCTSTR propertyName, [out] LPBSTR pPropValue)  
  이 메서드는 단일 속성 값을 검색합니다. 표 47 및 48을 참조하세요.  
@@ -3982,7 +3983,7 @@ void ShowWizardWindow(Type viewType, DialogInteraction dialogPayload);
 |-|-|  
 |**상태**|오류가 발생한 작업의 반환 상태를 지정합니다. 일반적으로 이 특성의 값은 Error로 설정됩니다. 이 값은 UDI 마법사의 마법사 페이지에 있는 **상태** 열에 표시됩니다.|  
 |**Text**|작업에서 발생하는 오류 조건에 대한 설명 텍스트를 지정합니다.|  
-|**유형**|이 요소가 오류, 경고 또는 성공 중 무엇을 나타내는지 지정합니다. **유형**에 지정된 값은 [ExitCodes](#ExitCodes) 요소 내에서 고유해야 합니다. 이 요소에 유효한 값은 다음과 같습니다.<br /><br /> -   **0.**요소가 성공을 나타냅니다.<br />-   **1.** 요소가 경고를 나타냅니다.<br />-   **-1.** 요소가 오류를 나타냅니다.|  
+|**유형**|이 요소가 오류, 경고 또는 성공 중 무엇을 나타내는지 지정합니다. **유형**에 지정된 값은 [ExitCodes](#ExitCodes) 요소 내에서 고유해야 합니다. 이 요소에 유효한 값은 다음과 같습니다.<br /><br /> -   **0.** 요소가 성공을 나타냅니다.<br />-   **1.** 요소가 경고를 나타냅니다.<br />-   **-1.** 요소가 오류를 나타냅니다.|  
 |**값**|작업에서 숫자 값으로 반환한 코드 값을 지정합니다. 별표(*) 값은 다른 [Error](#Error) 요소에 나열되지 않은 반환 코드에 대한 기본 요소를 나타냅니다.|  
 
 ##### <a name="remarks"></a>주의  

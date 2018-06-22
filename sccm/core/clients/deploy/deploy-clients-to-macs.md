@@ -15,6 +15,7 @@ ms.sourcegitcommit: 526ded222b69b5e75e8068ba09c5dda227c155c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "33078460"
 ---
 # <a name="how-to-deploy-clients-to-macs"></a>How to deploy clients to Macs
 

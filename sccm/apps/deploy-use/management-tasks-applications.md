@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32334143"
 ---
 # <a name="management-tasks-for-system-center-configuration-manager-applications"></a>System Center Configuration Manager 응용 프로그램에 대한 관리 작업
 

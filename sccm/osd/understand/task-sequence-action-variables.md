@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32352586"
 ---
 # <a name="task-sequence-action-variables-in-system-center-configuration-manager"></a>System Center Configuration Manager의 작업 순서 동작 변수
 
@@ -25,7 +26,7 @@ ms.lasthandoff: 05/03/2018
 ## <a name="action-variable-example"></a>작업 변수 예제  
  예를 들어 **명령줄 실행** 작업 순서 단계를 사용하여 명령줄 작업에 대한 시작 디렉터리를 지정할 수 있습니다. 이 단계는 기본값이 **WorkingDirectory** 변수로 작업 순서 환경에 저장된 **시작 위치** 속성을 포함합니다. **WorkingDirectory** 환경 변수는 **명령줄 실행** 작업 순서 동작이 실행되기 전에 초기화됩니다. **명령줄 실행** 단계에서 **시작** 속성을 통해 **WorkingDirectory** 값에 액세스할 수 있습니다. 단계가 완료되면 작업 순서가 환경에서 **WorkingDirectory** 변수의 값을 제거합니다. 순서에 다른 **명령줄 실행** 작업 순서 단계가 포함된 경우 작업 순서가 새 **WorkingDirectory** 변수를 초기화하고 현재 단계에 대한 시작 값으로 설정합니다.  
 
- 작업 순서 단계가 실행될 때 작업 순서 동작 변수의 *기본* 값이 있습니다. *새* 값을 설정하면 작업 순서의 여러 단계에 사용할 수 있습니다. 작업 순서 변수 만들기 방법 중 하나를 사용하여 기본 제공 변수 값을 재정의하는 경우 새 값이 환경에서 유지되고 작업 순서의 다른 단계에 대한 기본값을 재정의합니다. 예를 들어 **작업 순서 변수 설정** 단계를 작업 순서의 첫 번째 단계로 추가하고 **WorkingDirectory** 변수를 **C:\\** 으로 설정하는 경우 작업 순서의 모든 **명령줄 실행** 단계에서 새 시작 디렉터리 값을 사용합니다.  
+ 작업 순서 단계가 실행될 때 작업 순서 동작 변수의 *기본* 값이 있습니다. *새* 값을 설정하면 작업 순서의 여러 단계에 사용할 수 있습니다. 작업 순서 변수 만들기 방법 중 하나를 사용하여 기본 제공 변수 값을 재정의하는 경우 새 값이 환경에서 유지되고 작업 순서의 다른 단계에 대한 기본값을 재정의합니다. 예를 들어 **작업 순서 변수 설정** 단계를 작업 순서의 첫 번째 단계로 추가하고 **WorkingDirectory** 변수를 **C:\\**으로 설정하는 경우 작업 순서의 모든 **명령줄 실행** 단계에서 새 시작 디렉터리 값을 사용합니다.  
 
 ## <a name="action-variables-for-task-sequence-actions"></a>작업 순서 동작에 대한 작업 변수  
  Configuration Manager 작업 순서 변수는 해당 변수에 연결된 작업 순서 동작별로 그룹화됩니다. 다음 링크를 사용하여 특정 작업과 연결된 작업 변수에 대한 정보를 수집합니다. 작업 순서 변수가 작업 순서 동작의 작동 방법을 제어합니다. 작업 순서 동작은 사용자가 입력 변수로 표시한 변수를 읽고 사용합니다. 또는 사용자가 [작업 순서 변수 설정](task-sequence-steps.md#BKMK_SetTaskSequenceVariable) 단계나 TSEnvironment COM 개체를 사용하여 런타임에 변수를 설정할 수 있습니다. 작업 순서 동작만 변수를 출력 변수로 표시합니다. 작업 순서에서 나중에 발생하는 동작이 이러한 출력 변수를 읽습니다.  

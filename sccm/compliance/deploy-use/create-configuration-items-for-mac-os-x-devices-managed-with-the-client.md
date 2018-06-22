@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32335833"
 ---
 # <a name="how-to-create-configuration-items-for-mac-os-x-devices-managed-with-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트를 사용하여 관리하는 Mac OS X 장치용 구성 항목을 만드는 방법
 System Center Configuration Manager **Mac OS X(사용자 지정)** 구성 항목을 사용하여 Configuration Manager 클라이언트에서 관리되는 Mac OS X 장치에 대한 설정을 관리할 수 있습니다.  

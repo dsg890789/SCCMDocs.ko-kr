@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32333038"
 ---
 # <a name="removed-and-deprecated-items-for-system-center-configuration-manager-clients"></a>System Center Configuration Manager 클라이언트에서 제거된 기능과 사용되지 않는 항목
 

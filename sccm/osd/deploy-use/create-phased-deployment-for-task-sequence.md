@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32348636"
 ---
 # <a name="create-phased-deployments-for-a-task-sequence-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 작업 순서에 대한 단계적 배포 만들기
 

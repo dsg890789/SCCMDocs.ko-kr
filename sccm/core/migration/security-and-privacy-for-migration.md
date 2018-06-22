@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32337910"
 ---
 # <a name="security-and-privacy-for-migration-to-system-center-configuration-manager"></a>System Center Configuration Manager로의 마이그레이션에 대한 보안 및 개인 정보
 

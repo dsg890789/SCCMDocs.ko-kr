@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32338145"
 ---
 # <a name="example-validation-state-transitions-for-asset-intelligence-in-system-center-configuration-manager"></a>Asset Intelligence System Center Configuration Manager에서 Asset Intelligence에 대한 유효성 검사 상태 전환 예제
 

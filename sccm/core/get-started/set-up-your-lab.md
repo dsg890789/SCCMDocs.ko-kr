@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32341970"
 ---
 # <a name="set-up-your-system-center-configuration-manager-lab"></a>System Center Configuration Manager 랩 설정
 

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32335221"
 ---
 # <a name="maintain-mac-clients"></a>Mac 클라이언트 유지 관리
 *적용 대상: System Center Configuration Manager(현재 분기)*

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32333344"
 ---
 # <a name="plan-for-the-site-database-for-system-center-configuration-manager"></a>System Center Configuration Manager용 사이트 데이터베이스에 대한 계획
 

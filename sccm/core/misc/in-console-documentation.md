@@ -14,6 +14,7 @@ ms.sourcegitcommit: 7812956f93f95c81b4364230aea363559b79ea9f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/06/2018
+ms.locfileid: "33673452"
 ---
 <!-- 
 feature 1357546

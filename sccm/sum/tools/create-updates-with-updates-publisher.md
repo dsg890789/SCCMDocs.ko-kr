@@ -16,6 +16,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32351805"
 ---
 # <a name="create--software-updates-and-update-bundles-with-updates-publisher"></a>Updates Publisher를 사용하여 소프트웨어 업데이트 및 업데이트 번들 만들기
 

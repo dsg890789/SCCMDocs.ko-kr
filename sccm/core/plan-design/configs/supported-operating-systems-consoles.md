@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32332854"
 ---
 # <a name="supported-operating-systems-for-system-center-configuration-manager-consoles"></a>System Center Configuration Manager 콘솔에 대해 지원되는 운영 체제
 

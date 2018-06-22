@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32335051"
 ---
 # <a name="determine-whether-to-migrate-data-to-system-center-configuration-manager"></a>System Center Configuration Manager로 데이터를 마이그레이션할지 여부 결정
 

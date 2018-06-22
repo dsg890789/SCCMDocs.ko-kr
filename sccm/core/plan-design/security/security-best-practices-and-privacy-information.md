@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32334347"
 ---
 # <a name="security-best-practices-and-privacy-information-for-system-center-configuration-manager"></a>Configuration Manager의 보안 모범 사례 및 개인 정보
 

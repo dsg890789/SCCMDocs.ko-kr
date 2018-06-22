@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32337023"
 ---
 # <a name="where-to-get-installation-media-for-system-center-configuration-manager"></a>System Center Configuration Manager용 설치 미디어를 다운로드할 수 있는 위치
 

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32333405"
 ---
 # <a name="co-management-dashboard-in-system-center-configuration-manager"></a>System Center Configuration Manager의 공동 관리 대시보드
 *적용 대상: System Center Configuration Manager(현재 분기)*
