@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32349520"
 ---
 # <a name="change-your-mdm-authority"></a>MDM 기관 변경
 Microsoft 지원에 문의하지 않고 기존 관리 장치에 대한 등록 취소 및 다시 등록을 수행할 필요 없이 MDM 기관을 변경할 수 있습니다. 이 문서에서는 Configuration Manager 콘솔(하이브리드)에서 구성된 기존 Microsoft Intune 테넌트를 Intune 독립 실행형으로 변경하는 단계를 설명합니다. 이 문서의 단계를 완료하면 장치가 [Azure Portal](https://portal.azure.com)에서 Microsoft Intune을 통해 관리됩니다. 

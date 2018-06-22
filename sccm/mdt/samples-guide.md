@@ -16,6 +16,7 @@ ms.sourcegitcommit: 7198ec49d9ce68c6d55bfb9e2d537b5442a132cb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/09/2018
+ms.locfileid: "33915975"
 ---
 # <a name="microsoft-deployment-toolkit-samples-guide"></a>Microsoft Deployment Toolkit 샘플 가이드  
  이 가이드는 MDT(Microsoft® Deployment Toolkit) 2013의 일부이며, 전문가 팀에 Windows 운영 체제 및 Microsoft Office를 배포하는 과정을 안내합니다. 특히 이 가이드는 특정 배포 시나리오에 대한 구성 설정 예제를 제공하도록 설계되었습니다.  

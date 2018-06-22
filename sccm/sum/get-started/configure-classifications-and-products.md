@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32350683"
 ---
 #  <a name="configure-classifications-and-products-to-synchronize"></a>동기화할 분류 및 제품 구성  
 

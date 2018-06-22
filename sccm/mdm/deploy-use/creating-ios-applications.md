@@ -2,25 +2,20 @@
 title: iOS 응용 프로그램 만들기
 titleSuffix: Configuration Manager
 description: iOS 장치용 응용 프로그램을 만들고 배포할 때 고려해야 할 사항을 확인합니다.
-ms.custom: na
 ms.date: 03/05/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-hybrid
+ms.topic: conceptual
 ms.assetid: ff633013-5313-4cd3-949c-56d45e777280
-caps.latest.revision: ''
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
-ms.openlocfilehash: 2b21a50b18384740eda8744c3442fe060325fd15
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 985a8177602bd32da0b6134eeddb564a44749d65
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2018
+ms.lasthandoff: 05/03/2018
+ms.locfileid: "32346433"
 ---
 # <a name="create-ios-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 iOS 응용 프로그램 만들기
 

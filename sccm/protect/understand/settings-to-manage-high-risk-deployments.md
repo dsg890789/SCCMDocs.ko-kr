@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32347351"
 ---
 # <a name="settings-to-manage-high-risk-deployments-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대해 위험 수준이 높은 배포를 관리하기 위한 설정
 

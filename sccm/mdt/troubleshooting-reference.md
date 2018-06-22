@@ -16,6 +16,7 @@ ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/27/2018
+ms.locfileid: "27821017"
 ---
 # <a name="troubleshooting-reference-for-the-microsoft-deployment-toolkit"></a>Microsoft Deployment Toolkit에 대한 참조 문제 해결
  운영 체제 및 응용 프로그램의 배포 및 사용자 상태의 마이그레이션은 적절한 도구와 지침을 갖추더라도 어려운 시도일 수 있습니다. 이 참조는 MDT(Microsoft® Deployment Toolkit) 2013의 일부로서 현재 알려진 문제에 관한 정보, 해당 문제에 대한 가능한 해결 방법 및 문제 해결 지침을 제공합니다.  

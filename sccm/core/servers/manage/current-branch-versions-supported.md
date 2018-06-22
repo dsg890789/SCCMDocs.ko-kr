@@ -16,6 +16,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32344571"
 ---
 # <a name="support-for-system-center-configuration-manager-current-branch-versions"></a>System Center Configuration Manager 현재 분기 버전에 대한 지원
 

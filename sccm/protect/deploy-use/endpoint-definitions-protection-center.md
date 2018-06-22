@@ -14,6 +14,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32346140"
 ---
 # <a name="using-the-microsoft-malware-protection-center-to-download-definitions"></a>Microsoft 맬웨어 보호 센터를 사용하여 정의 다운로드
 

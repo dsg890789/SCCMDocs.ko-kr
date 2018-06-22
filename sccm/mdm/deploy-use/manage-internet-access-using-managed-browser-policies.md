@@ -2,26 +2,20 @@
 title: 관리 브라우저 정책을 사용하여 인터넷 액세스 관리
 titleSuffix: Configuration Manager
 description: Intune Managed Browser를 배포하여 인터넷 액세스를 관리하고 제한합니다.
-ms.custom: na
 ms.date: 03/05/2017
 ms.prod: configuration-manager
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-- configmgr-hybrid
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-hybrid
+ms.topic: conceptual
 ms.assetid: 8e25e00c-c9a8-473f-bcb7-ea989f6ca3c5
-caps.latest.revision: ''
-caps.handback.revision: ''
-author: dougeby
-ms.author: dougeby
-manager: angrobe
-ms.openlocfilehash: 3aea2a65733a52ab532d451b21ae98fbc0f122c6
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 8754219f36e30f2442178dc5521e05246948d3de
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2018
+ms.lasthandoff: 05/03/2018
+ms.locfileid: "32350149"
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-system-center-configuration-manager"></a>System Center Configuration Manager를 통해 관리 브라우저 정책을 사용하여 인터넷 액세스 관리
 
@@ -92,7 +86,7 @@ System Center Configuration Manager에서는 Intune Managed Browser(웹 검색 �
 
 다음 정보를 사용하여 허용 및 차단 목록에 URL을 지정할 때 사용할 수 있는 형식 및 와일드카드에 대해 알아볼 수 있습니다.  
 
--   아래와 같은 허용 패턴 목록의 규칙에 따라 와일드 카드 기호 '**\\***'를 사용할 수 있습니다.  
+-   아래와 같은 허용 패턴 목록의 규칙에 따라 와일드 카드 기호 '**\***'를 사용할 수 있습니다.  
 
 -   URL을 목록에 입력할 때 모든 URL의 앞에 **http** 또는 **https** 를 덧붙여야 합니다.  
 
@@ -111,7 +105,7 @@ System Center Configuration Manager에서는 Intune Managed Browser(웹 검색 �
     |http://www.contoso.com<br /><br /> 단일 페이지와 일치|www.contoso.com|host.contoso.com<br /><br /> www.contoso.com/images<br /><br /> contoso.com/|  
     |http://contoso.com<br /><br /> 단일 페이지와 일치|contoso.com/|host.contoso.com<br /><br /> www.contoso.com/images<br /><br /> www.contoso.com|  
     |http://www.contoso.com/*<br /><br /> www.contoso.com으로 시작하는 모든 URL과 일치|www.contoso.com<br /><br /> www.contoso.com/images<br /><br /> www.contoso.com/videos/tvshows|host.contoso.com<br /><br /> host.contoso.com/images|  
-    |http://\*.contoso.com/\*<br /><br /> contoso.com 아래의 모든 하위 도메인과 일치|developer.contoso.com/resources<br /><br /> news.contoso.com/images<br /><br /> news.contoso.com/videos|contoso.host.com|  
+    |http://*.contoso.com/\*<br /><br /> contoso.com 아래의 모든 하위 도메인과 일치|developer.contoso.com/resources<br /><br /> news.contoso.com/images<br /><br /> news.contoso.com/videos|contoso.host.com|  
     |http://www.contoso.com/images<br /><br /> 단일 폴더와 일치|www.contoso.com/images|www.contoso.com/images/dogs|  
     |http://www.contoso.com:80<br /><br /> 포트 번호를 사용하여 단일 페이지와 일치|http://www.contoso.com:80||  
     |https://www.contoso.com<br /><br /> 안전한 단일 페이지와 일치|https://www.contoso.com|http://www.contoso.com|  
@@ -121,11 +115,11 @@ System Center Configuration Manager에서는 Intune Managed Browser(웹 검색 �
 
     -   *.com  
 
-    -   \*.contoso/\*  
+    -   *.contoso/\*  
 
     -   www.contoso.com/*images  
 
-    -   www.contoso.com/\*images\*pigs  
+    -   www.contoso.com/*images\*pigs  
 
     -   www.contoso.com/page*  
 

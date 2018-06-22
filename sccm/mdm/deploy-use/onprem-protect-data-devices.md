@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32353497"
 ---
 # <a name="protect-data-and-devices-in-on-premises-mobile-device-management"></a>온-프레미스 모바일 장치 관리에서 데이터 및 장치 보호
 

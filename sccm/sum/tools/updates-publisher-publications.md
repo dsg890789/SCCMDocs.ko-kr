@@ -16,6 +16,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32349918"
 ---
 # <a name="manage-publications-in-updates-publisher"></a>Updates Publisher의 게시물 관리
 

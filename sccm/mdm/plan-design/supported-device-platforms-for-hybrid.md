@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32345940"
 ---
 # <a name="supported-device-platforms-for-hybrid-mdm"></a>하이브리드 MDM에 대한 지원되는 장치 플랫폼
 

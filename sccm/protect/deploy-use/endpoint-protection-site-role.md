@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32350649"
 ---
 # <a name="create-an-endpoint-protection-point-site-system-role"></a>Endpoint Protection 지점 사이트 시스템 역할 만들기
 

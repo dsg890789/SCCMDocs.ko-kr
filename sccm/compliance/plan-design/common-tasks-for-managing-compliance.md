@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32332001"
 ---
 # <a name="common-tasks-for-managing-compliance-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하는 준수 관리를 위한 일반 작업
 

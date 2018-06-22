@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32350122"
 ---
 # <a name="task-sequence-steps-to-manage-bios-to-uefi-conversion"></a>BIOS-UEFI 변환을 관리하는 작업 순서 단계
 Windows 10에서는 UEFI 사용 장치가 필요한 많은 새로운 보안 기능을 제공합니다. UEFI를 지원하지만 레거시 BIOS를 사용하는 최신 Windows PC가 있을 수 있습니다. 장치를 UEFI로 변환하려면 각 PC로 이동하여 하드 디스크를 다시 분할하고 펌웨어를 다시 구성해야 했습니다. Configuration Manager에서 작업 순서를 사용하여 하드 드라이브를 BIOS에서 UEFI로 변환할 준비를 하고, 현재 위치 업그레이드 프로세스의 일부로 BIOS에서 UEFI로 변환하고, 하드웨어 인벤토리의 일부로 UEFI 정보를 수집할 수 있습니다.

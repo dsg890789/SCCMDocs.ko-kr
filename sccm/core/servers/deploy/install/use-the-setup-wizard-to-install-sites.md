@@ -14,6 +14,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32344615"
 ---
 # <a name="use-the-setup-wizard-to-install-system-center-configuration-manager-sites"></a>설치 마법사를 사용하여 System Center Configuration Manager 사이트를 설치할 수 있습니다.
 

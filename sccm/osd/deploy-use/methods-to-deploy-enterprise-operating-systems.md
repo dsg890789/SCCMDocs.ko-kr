@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32346392"
 ---
 # <a name="methods-to-deploy-enterprise-operating-systems-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 엔터프라이즈 운영 체제를 배포하는 방법
 

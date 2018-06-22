@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32348687"
 ---
 # <a name="monitor-operating-system-deployments-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 운영 체제 배포 모니터링
 
