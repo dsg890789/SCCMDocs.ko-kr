@@ -15,6 +15,7 @@ ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32341953"
 ---
 # <a name="packages-and-programs-in-system-center-configuration-manager"></a>System Center Configuration Manager의 패키지 및 프로그램
 
@@ -153,7 +154,7 @@ System Center Configuration Manager는 Configuration Manager 2007에서 사용�
 
         -   **주석**(선택 사항): 이 장치 프로그램에 대한 주석을 최대 127자로 지정합니다.  
 
-        -   **다운로드 폴더**: Windows CE 장치에서 패키지 원본 파일이 저장될 폴더의 이름을 지정합니다. 기본값은 **\Temp\\** 입니다.  
+        -   **다운로드 폴더**: Windows CE 장치에서 패키지 원본 파일이 저장될 폴더의 이름을 지정합니다. 기본값은 **\Temp\\**입니다.  
 
         -   **명령줄**: 사용할 명령줄을 입력하여 이 프로그램을 시작하거나 **찾아보기**를 선택하여 파일 위치를 찾습니다.  
 

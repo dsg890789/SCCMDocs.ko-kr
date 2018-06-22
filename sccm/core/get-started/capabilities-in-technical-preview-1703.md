@@ -2,25 +2,20 @@
 title: 기술 미리 보기 1703의 기능
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager용 Technical Preview 버전 1703에서 사용 가능한 기능에 대해 알아봅니다.
-ms.custom: na
 ms.date: 03/24/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
+ms.technology: configmgr-other
+ms.topic: conceptual
 ms.assetid: 2e801f8c-d331-41ee-8f27-908448fc0951
-caps.latest.revision: ''
-author: erikje
-ms.author: erikje
-manager: angrobe
-ms.openlocfilehash: a44d6a0c9b02a529fe8776033e58e971af37e332
-ms.sourcegitcommit: 11bf4ed40ed0cbb10500cc58bbecbd23c92bfe20
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.openlocfilehash: 4750d9e31eb41fdad7f655faa4e8058156e922a1
+ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2018
+ms.lasthandoff: 05/03/2018
+ms.locfileid: "32337159"
 ---
 # <a name="capabilities-in-technical-preview-1703-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1703의 기능
 
@@ -66,7 +61,7 @@ ms.lasthandoff: 03/27/2018
 3.  **응용 프로그램** 보기에서 열 머리글 중 하나를 마우스 오른쪽 단추로 클릭한 다음 목록에서 **CI 고유 ID**를 선택합니다. 이제 목록에 각 응용 프로그램의 고유 ID가 표시됩니다.
 4.  링크를 제공할 응용 프로그램의 **CI 고유 ID**를 확인합니다(예: **ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f/2**).
 5.  그런 다음 응용 프로그램 GUID 뒤에 있는 모든 텍스트를 제거합니다(이 경우 **/2**). 그러면 응용 프로그램 식별자가 남습니다.
-6.  마지막으로 링크 구성을 마치려면 링크 앞에 **Softwarecenter:SoftwareID=**을 붙입니다. 위 예제를 사용할 경우 최종 링크는 **Softwarecenter:SoftwareId= ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f**가 됩니다.
+6.  마지막으로 링크 구성을 마치려면 링크 앞에 **Softwarecenter:SoftwareID=** 을 붙입니다. 위 예제를 사용할 경우 최종 링크는 **Softwarecenter:SoftwareId= ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f**가 됩니다.
 
 이 링크를 사용하여 최종 사용자는 지정된 응용 프로그램에 대한 소프트웨어 센터를 직접 열 수 있습니다.
 
