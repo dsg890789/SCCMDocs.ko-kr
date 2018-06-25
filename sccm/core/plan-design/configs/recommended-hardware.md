@@ -2,7 +2,7 @@
 title: 권장 하드웨어
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager 환경을 기본 배포 이상으로 확장하는 데 도움이 되는 하드웨어 권장 사항을 확인합니다.
-ms.date: 03/22/2018
+ms.date: 05/23/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,11 +10,12 @@ ms.assetid: 5267f0af-34d3-47a0-9ab8-986c41276e6c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: ae2ba43c8e5c97dd0b8b9ba43c3e3fde1eb259f4
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 51d3a537fd7aa874fb2662bb6ec15fcfaa2124e5
+ms.sourcegitcommit: 4b8afbd08ecf8fd54950eeb630caf191d3aa4767
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "34474329"
 ---
 # <a name="recommended-hardware-for-system-center-configuration-manager"></a>System Center Configuration Manager에 권장되는 하드웨어
 
@@ -23,6 +24,7 @@ ms.lasthandoff: 05/03/2018
 사이트, 사이트 시스템 및 클라이언트의 기본 배포 이상을 지원하도록 System Center Configuration Manager 환경을 확장하려는 경우 다음 권장 사항을 지침으로 참고할 수 있습니다. 권장 사항이 가능한 모든 사이트 및 계층 구조 구성을 포괄하는 것은 아닙니다.  
 
  다음 섹션의 정보는 기본 구성으로 사용 가능한 Configuration Manager 기능을 사용하는 클라이언트와 사이트의 처리 부하를 충족할 수 있는 하드웨어를 계획하기 위한 지침으로 사용하세요.  
+
 
 
 ##  <a name="bkmk_ScaleSieSystems"></a> 사이트 시스템  
@@ -113,11 +115,11 @@ ms.lasthandoff: 05/03/2018
 
 -   **디스크 공간:** 500MB의 사용 가능한 디스크 공간(Configuration Manager 클라이언트 캐시의 경우 5GB 권장) 사용자 지정된 설정을 사용하여 Configuration Manager 클라이언트를 설치하는 경우에는 필요한 디스크 공간이 더 적어집니다.  
 
-    -   클라이언트에 불필요한 파일을 설치하지 않으려면 CCMSetup 명령줄 속성 /skipprereq를 사용합니다. 예를 들어 클라이언트가 응용 프로그램 카탈로그를 사용하지 않는 경우에는 **CCMSetup.exe /skipprereq:silverlight.exe**를 실행합니다. Configuration Manager 1802부터 Silverlight는 더 이상 자동으로 설치되지 않습니다.  
+    -   클라이언트에 불필요한 파일을 설치하지 않으려면 CCMSetup 명령줄 속성 /skipprereq를 사용합니다. 예를 들어 클라이언트가 응용 프로그램 카탈로그를 사용하지 않는 경우에는 `CCMSetup.exe /skipprereq:silverlight.exe`를 실행합니다. Configuration Manager 1802부터 Silverlight는 더 이상 자동으로 설치되지 않습니다.  
 
-    -   기본값인 5120MB보다 작은 캐시 파일을 설정하려면 Client.msi 속성 SMSCACHESIZE를 사용합니다. 최소 크기는 1MB입니다. 예를 들어 **CCMSetup.exe SMSCachesize=2** 를 사용하는 경우 크기가 2MB인 캐시가 만들어집니다.  
+    -   기본값인 5120MB보다 작은 캐시 파일을 설정하려면 Client.msi 속성 SMSCACHESIZE를 사용합니다. 최소 크기는 1MB입니다. 예를 들어 `CCMSetup.exe SMSCachesize=2`를 사용하는 경우 크기가 2MB인 캐시가 만들어집니다.  
 
-    이러한 클라이언트 설치 설정에 대한 자세한 내용은 [System Center Configuration Manager의 클라이언트 설치 속성 정보](../../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  
+    이러한 클라이언트 설치 설정에 대한 자세한 내용은 [클라이언트 설치 속성 정보](../../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  
 
     > [!TIP]  
     >  일반적으로 표준 Windows 컴퓨터에 비해 디스크 크기가 작은 Windows Embedded 장치에서는 최소 디스크 공간을 사용하여 클라이언트를 설치하면 유용합니다.  
@@ -173,6 +175,6 @@ PowerShell 외에 WMF(Windows Management Framework) 버전 3.0 이상이 지원�
 
 |역할|CPU(코어)|메모리(GB)|디스크 공간(GB)|  
 |----------|---------------|-------------------|-----------------------|  
-|사이트 및 데이터베이스 서버|2 - 4|7 - 12|100|  
+|사이트 및 데이터베이스 서버|2 - 4|8 - 12|100|  
 |사이트 시스템 서버|1 - 4|2 - 4|50|  
 |클라이언트|1 - 2|1 - 3|30|  

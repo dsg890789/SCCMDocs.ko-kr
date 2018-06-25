@@ -10,11 +10,12 @@ ms.assetid: 6e4964c5-43cb-4372-9a89-b62ae6a4775c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 906b39f01b05600d86a045e07d3e28184e9360e8
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 1faabd64d11eeef8e825f22f7f661112813f5459
+ms.sourcegitcommit: 4b8afbd08ecf8fd54950eeb630caf191d3aa4767
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "34474312"
 ---
 # <a name="use-the-service-connection-tool-for-system-center-configuration-manager"></a>System Center Configuration Manager의 서비스 연결 도구 사용
 
@@ -101,7 +102,13 @@ ms.lasthandoff: 05/03/2018
 1706 버전부터 도구 기본 다운로드 동작이 변경되었으며 어떤 파일을 다운로드할지 제어하는 옵션을 지원합니다.
 -   기본적으로 이 도구는 사이트의 버전에 적용되는 사용 가능한 최신 업데이트만 다운로드합니다. 핫픽스는 다운로드하지 않습니다.
 
-이 동작을 수정하려면 다음 매개 변수 중 하나를 사용하여 다운로드할 파일을 변경합니다. 사이트의 버전은 도구를 실행할 때 업로드된 .cab 파일의 데이터를 통해 결정됩니다.
+이 동작을 수정하려면 다음 매개 변수 중 하나를 사용하여 다운로드할 파일을 변경합니다. 
+
+> [!NOTE]
+> 사이트의 버전은 도구를 실행할 때 업로드된 .cab 파일의 데이터를 통해 결정됩니다.
+>
+> .cab 파일 내의 *SiteVersion*.txt 파일을 찾아서 버전을 확인할 수 있습니다.
+
 -   **-downloadall** 이 옵션은 사이트 버전에 관계없이 업데이트와 핫픽스를 포함한 모든 항목을 다운로드합니다.
 -   **-downloadhotfix** 이 옵션은 사이트 버전에 관계없이 모든 핫픽스를 다운로드합니다.
 -   **-downloadsiteversion** 이 옵션은 사이트의 버전보다 최신 버전인 업데이트와 핫픽스를 다운로드합니다.
@@ -160,8 +167,19 @@ ms.lasthandoff: 05/03/2018
 
  업데이트를 설치하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 콘솔 내 업데이트 설치](../../../core/servers/manage/install-in-console-updates.md)를 참조하세요.  
 
+## <a name="bkmk_cmd"></a> 로그 파일
+
+**ServiceConnectionTool.log**
+
+서비스 연결 도구를 실행할 때마다 로그 파일이 **ServiceConnectionTool.log**라는 도구와 동일한 위치에 생성됩니다.  이 로그 파일은 사용된 명령에 따라 도구 실행에 대한 간단한 정보를 제공합니다.  도구를 실행할 때마다 기존 로그 파일이 바뀝니다.
+
+**ConfigMgrSetup.log**
+
+도구를 사용하여 연결하고 업데이트를 다운로드할 때 로그 파일이 **ConfigMgrSetup.log**라는 시스템 드라이브의 루트에 생성됩니다.  이 로그 파일은 다운로드된 파일, 추출된 파일 및 해시 검사의 성공 여부와 같은 자세한 정보를 제공합니다.
+
 ## <a name="bkmk_cmd"></a> 명령줄 옵션  
  서비스 연결 지점 도구에 대한 도움말 정보를 보려면 도구가 포함된 폴더에서 명령 프롬프트를 열고  **serviceconnectiontool.exe**명령을 실행합니다.  
+
 
 |명령줄 옵션|세부 정보|  
 |---------------------------|-------------|  

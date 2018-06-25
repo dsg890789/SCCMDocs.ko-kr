@@ -2,7 +2,7 @@
 title: 지원되는 SQL Server 버전
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager 사이트 데이터베이스를 호스트하기 위한 SQL Server 버전 및 구성 요구 사항을 가져옵니다.
-ms.date: 02/14/2018
+ms.date: 05/23/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,11 +10,12 @@ ms.assetid: 35e237b6-9f7b-4189-90e7-8eca92ae7d3d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 48faef82ade8cf8dc1f9397a5029d96db1a68555
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 431e26c24794b4854a1aed37ba85d4d44580791c
+ms.sourcegitcommit: 4b8afbd08ecf8fd54950eeb630caf191d3aa4767
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "34474278"
 ---
 # <a name="supported-sql-server-versions-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 지원되는 SQL Server 버전
 
@@ -22,8 +23,11 @@ ms.lasthandoff: 05/03/2018
 
 각 System Center Configuration Manager 사이트에는 사이트 데이터베이스를 호스트할 수 있는 SQL Server 버전 및 구성이 필요합니다.  
 
+
+
 ##  <a name="bkmk_Instances"></a> SQL Server 인스턴스 및 위치  
- **중앙 관리 사이트 및 기본 사이트**  
+ 
+### <a name="central-administration-site-and-primary-sites"></a>중앙 관리 사이트 및 기본 사이트  
  사이트 데이터베이스에서는 SQL Server의 전체 설치를 사용해야 합니다.  
 
  SQL Server의 위치는 다음과 같을 수 있습니다.  
@@ -39,18 +43,21 @@ ms.lasthandoff: 05/03/2018
 -   SQL Server AlwaysOn 가용성 그룹. 이 옵션을 사용하려면 Configuration Manager 버전 1602 이상이 필요합니다. 자세한 내용은 [System Center Configuration Manager용 항상 사용 가능한 사이트 데이터베이스를 위한 SQL Server AlwaysOn](../../../core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database.md)을 참조하세요.
 
 
- **보조 사이트**  
+### <a name="secondary-sites"></a>보조 사이트  
  사이트 데이터베이스에서는 전체 설치된 SQL Server 또는 SQL Server Express의 기본 인스턴스를 사용할 수 있습니다.  
 
  SQL Server는 사이트 서버 컴퓨터에 있어야 합니다.  
 
- **지원 제한 사항:**   
+
+### <a name="limitations-to-support"></a>지원 제한 사항   
  다음 구성은 지원되지 않습니다.
  -   NLB(네트워크 부하 분산) 클러스터 구성의 SQL Server 클러스터
  -   CSV(클러스터 공유 볼륨)의 SQL Server 클러스터
  -   SQL Server 데이터베이스 미러링 기술과 피어 투 피어 복제
 
 SQL Server 트랜잭션 복제는 [데이터베이스 복제본](https://technet.microsoft.com/library/mt608546.aspx)을 사용하도록 구성된 관리 지점에 개체를 복제하는 데에만 사용할 수 있습니다.  
+
+
 
 ##  <a name="bkmk_SQLVersions"></a> 지원되는 SQL Server 버전  
  여러 사이트가 있는 계층 구조에서 다음과 같은 경우 사이트마다 다른 SQL Server 버전을 사용하여 사이트 데이터베이스를 호스트할 수 있습니다.
@@ -69,12 +76,19 @@ SQL Server 트랜잭션 복제는 [데이터베이스 복제본](https://technet
 >  중앙 관리 사이트의 데이터베이스에 대해 SQL Server Standard를 사용하는 경우에는 계층 구조가 지원할 수 있는 총 클라이언트 수를 제한합니다. [크기 조정 및 규모 숫자 값](../../../core/plan-design/configs/size-and-scale-numbers.md)을 참조하세요.
 
 ### <a name="sql-server-2017-standard-enterprise"></a>SQL Server 2017: Standard, Enterprise  
-다음 사이트의 경우 [Configuration Manager 버전1710](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1710)에서부터 최소 [누적 업데이트 버전 2](https://support.microsoft.com/help/4052574)에서 이 버전의 SQL Server를 사용할 수 있습니다. 
+다음 사이트의 경우 [Configuration Manager 버전1710](/sccm/core/plan-design/changes/whats-new-in-version-1710)에서부터 최소 [누적 업데이트 버전 2](https://support.microsoft.com/help/4052574)에서 이 버전의 SQL Server를 사용할 수 있습니다. 
 
 -   중앙 관리 사이트  
 -   기본 사이트  
 -   보조 사이트  
 <!--SMS.498506-->
+
+### <a name="sql-server-2016-sp2-standard-enterprise"></a>SQL Server 2016 SP2: Standard, Enterprise  
+<!--514985--> 다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
+
+-   중앙 관리 사이트  
+-   기본 사이트  
+-   보조 사이트  
 
 ### <a name="sql-server-2016-sp1-standard-enterprise"></a>SQL Server 2016 SP1: Standard, Enterprise  
 다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
@@ -139,9 +153,12 @@ SQL Server 트랜잭션 복제는 [데이터베이스 복제본](https://technet
 -   보조 사이트
 
 ### <a name="sql-server-2017-express"></a>SQL Server 2017 Express   
-다음 사이트의 경우 [Configuration Manager 버전1710](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1710)에서부터 최소 [누적 업데이트 버전 2](https://support.microsoft.com/help/4052574)에서 이 버전의 SQL Server를 사용할 수 있습니다.
+다음 사이트의 경우 [Configuration Manager 버전1710](/sccm/core/plan-design/changes/whats-new-in-version-1710)에서부터 최소 [누적 업데이트 버전 2](https://support.microsoft.com/help/4052574)에서 이 버전의 SQL Server를 사용할 수 있습니다.
+-   보조 사이트 <!--SMS.498506-->
+
+### <a name="sql-server-2016-express-sp2"></a>SQL Server 2016 Express SP2  
+다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.
 -   보조 사이트
-<!--SMS.498506-->
 
 ### <a name="sql-server-2016-express-sp1"></a>SQL Server 2016 Express SP1  
 다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.
@@ -179,51 +196,53 @@ SQL Server 트랜잭션 복제는 [데이터베이스 복제본](https://technet
 ##  <a name="bkmk_SQLConfig"></a> SQL Server에 대한 필수 구성  
  다음은 사이트 데이터베이스에 사용할 모든 SQL Server 설치(SQL Server Express 포함)에 필요합니다. Configuration Manager에서 보조 사이트 설치의 일부로 SQL Server Express를 설치하는 경우 이러한 구성은 자동으로 만들어집니다.  
 
- **SQL Server 아키텍처 버전**  
+### <a name="sql-server-architecture-version"></a>SQL Server 아키텍처 버전  
  Configuration Manager에서 사이트 데이터베이스를 호스트하려면 64비트 버전의 SQL Server가 필요합니다.  
 
- **데이터베이스 데이터 정렬**  
+### <a name="database-collation"></a>데이터베이스 데이터 정렬  
  각 사이트에서 사이트와 사이트 데이터베이스에 사용되는 두 SQL Server 인스턴스는 모두 **SQL_Latin1_General_CP1_CI_AS**데이터 정렬을 사용해야 합니다.  
 
  Configuration Manager에서는 중국에서 사용하도록 GB18030으로 정의된 표준을 충족하기 위해 이 데이터 정렬에 대한 두 가지 예외를 지원합니다. 자세한 내용은 [System Center Configuration Manager의 다국어 기능 지원](../../../core/plan-design/hierarchy/international-support.md)을 참조하세요.  
 
- **데이터베이스 호환성 수준** </br>
+### <a name="database-compatibility-level"></a>데이터베이스 호환성 수준   
  Configuration Manager를 사용하려면 사이트 데이터베이스에 대한 호환성 수준이 Configuration Manager 버전에 대해 지원되는 최저 SQL Server 버전과 같거나 더 높아야 합니다. 예를 들어 버전 1702부터는 [데이터베이스 호환성 수준](https://docs.microsoft.com/sql/relational-databases/databases/view-or-change-the-compatibility-level-of-a-database)이 110보다 크거나 같아야 합니다. <!-- SMS.506266--> 
 
- **SQL Server 기능**  
+### <a name="sql-server-features"></a>SQL Server 기능  
  각 사이트 서버에는 **데이터베이스 엔진 서비스** 기능만 있으면 됩니다.  
 
  Configuration Manager 데이터베이스 복제를 수행할 때는 **SQL Server 복제** 기능이 필요하지 않습니다. 그러나 이 SQL Server 구성은 [System Center Configuration Manager의 관리 지점용 데이터베이스 복제본](../../../core/servers/deploy/configure/database-replicas-for-management-points.md)을 사용할 때 필요합니다.  
 
- **Windows 인증**  
+### <a name="windows-authentication"></a>Windows 인증  
  Configuration Manager에서 데이터베이스에 대한 연결의 유효성을 검사하려면 **Windows 인증**을 수행해야 합니다.  
 
- **SQL Server 인스턴스**  
+### <a name="sql-server-instance"></a>SQL Server 인스턴스  
  각 사이트에 대해 SQL Server의 전용 인스턴스를 사용해야 합니다. 인스턴스는 **명명된 인스턴스** 또는 **기본 인스턴스**일 수 있습니다.  
 
- **SQL Server 메모리**  
- SQL Server의 메모리는 SQL Server Management Studio를 사용하여 **서버 메모리 옵션**의 **최소 서버 메모리** 설정을 통해 예약합니다. 설정 방법에 대한 자세한 내용은 [방법: 고정된 양의 메모리 설정(SQL Server Management Studio)](http://go.microsoft.com/fwlink/p/?LinkId=233759)을 참조하세요.  
+### <a name="sql-server-memory"></a>SQL Server 메모리  
+ SQL Server의 메모리는 SQL Server Management Studio를 사용하여 **서버 메모리 옵션**의 **최소 서버 메모리** 설정을 통해 예약합니다. 이 설정을 구성하는 방법에 대한 자세한 내용은 [방법: 고정된 양의 메모리 설정(SQL Server Management Studio)](http://go.microsoft.com/fwlink/p/?LinkId=233759)을 참조하세요.  
 
--   **사이트 서버와 동일한 컴퓨터에 설치된 데이터베이스 서버** SQL Server의 메모리를 사용 가능한 주소 지정 가능 시스템 메모리의 50~80%로 제한합니다.  
+-   **사이트 서버와 동일한 컴퓨터에 설치된 데이터베이스 서버**: SQL Server의 메모리를 사용 가능한 주소 지정 가능 시스템 메모리의 50~80%로 제한합니다.  
 
--   **전용 데이터베이스 서버(사이트 서버에서 원격)** SQL Server의 메모리를 사용 가능한 주소 지정 가능 시스템 메모리의 80~90%로 제한합니다.  
+-   **전용 데이터베이스 서버(사이트 서버에서 원격)**: SQL Server의 메모리를 사용 가능한 주소 지정 가능 시스템 메모리의 80~90%로 제한합니다.  
 
--   **사용 중인 각 SQL Server 인스턴스의 버퍼 풀에 대한 메모리 예약:**  
+-   **사용 중인 각 SQL Server 인스턴스의 버퍼 풀에 대한 메모리 예약**:  
 
     -   중앙 관리 사이트: 최소 8GB를 설정합니다.  
     -   기본 사이트: 최소 8GB를 설정합니다.  
     -   보조 사이트: 최소 4GB를 설정합니다.  
 
-**SQL 중첩 트리거**  
+### <a name="sql-nested-triggers"></a>SQL 중첩 트리거  
  [SQL 중첩 트리거](http://go.microsoft.com/fwlink/?LinkId=528802) 를 사용하도록 설정해야 합니다.  
 
- **SQL Server CLR 통합**  
+### <a name="sql-server-clr-integration"></a>SQL Server CLR 통합  
   사이트 데이터베이스를 사용하려면 SQL Server CLR(공용 언어 런타임)을 활성화해야 합니다. CLR은 Configuration Manager를 설치할 때 자동으로 사용됩니다. CLR에 대한 자세한 내용은 [SQL Server CLR 통합 소개](https://msdn.microsoft.com/library/ms254498\(v=vs.110\).aspx)를 참조하세요.  
+
+
 
 ##  <a name="bkmk_optional"></a> SQL Server에 대한 선택적 구성  
  전체 SQL Server 설치를 사용하는 각 데이터베이스에 대해 필요한 경우 다음 항목을 구성할 수 있습니다.  
 
- **SQL Server 서비스**  
+### <a name="sql-server-service"></a>SQL Server 서비스  
  다음을 사용하여 SQL Server 서비스를 실행하도록 구성할 수 있습니다.  
 
 -   *제한된 권한의 도메인 사용자* 계정:  
@@ -234,7 +253,7 @@ SQL Server 트랜잭션 복제는 [데이터베이스 복제본](https://technet
 
     -   구성 프로세스를 간단하게 수행하려면 로컬 시스템 계정을 사용합니다.  
     -   로컬 시스템 계정을 사용할 때 Configuration Manager에서는 SQL Server 서비스에 대해 SPN을 자동으로 등록합니다.  
-    -   그러나 SQL Server 서비스에 대해 로컬 시스템 계정을 사용하는 것이 SQL Server 모범 사례는 아닙니다.  
+    -   SQL Server 서비스에 대해 로컬 시스템 계정을 사용하는 것이 SQL Server 모범 사례는 아닙니다.  
 
 SQL Server를 실행하는 컴퓨터에서 SQL Server 서비스를 실행하기 위해 로컬 시스템 계정을 사용하지 않는 경우에는 Active Directory Domain Services에서 SQL Server 서비스를 실행하는 계정의 SPN을 구성해야 합니다. 시스템 계정을 사용할 때는 SPN이 자동으로 등록됩니다.
 
@@ -242,14 +261,14 @@ SQL Server를 실행하는 컴퓨터에서 SQL Server 서비스를 실행하기 
 
 SQL Server 서비스에서 사용하는 계정을 변경하는 방법에 대한 자세한 내용은 [방법: SQL Server용 서비스 시작 계정 변경(SQL Server 구성 관리자)](http://go.microsoft.com/fwlink/p/?LinkId=237661)을 참조하세요.  
 
-**SQL Server Reporting Services**  
+### <a name="sql-server-reporting-services"></a>SQL Server Reporting Services  
 SQL Server Reporting Services는 보고서를 실행할 수 있는 보고 서비스 지점을 설치하는 데 필요합니다.  
 
 > [!IMPORTANT]  
-> 이전 버전에서 SQL Server를 업그레이드한 후 다음과 같은 오류가 표시될 수 있습니다. *보고서 작성기가 없습니다*.    
-> 이 오류를 해결하려면 보고 서비스 지점 사이트 시스템 역할을 다시 설치해야 합니다.
+> 이전 버전에서 SQL Server를 업그레이드한 후 다음과 같은 오류가 표시될 수 있습니다. *보고서 작성기가 없습니다*.  
+> 이 오류를 해결하려면 보고 서비스 지점 사이트 시스템 역할을 다시 설치해야 합니다.  
 
-**SQL Server 포트**  
+### <a name="sql-server-ports"></a>SQL Server 포트  
 SQL Server 데이터베이스 엔진에 대한 통신 및 사이트 간 복제의 경우 기본 SQL Server 포트 구성을 사용하거나 다음과 같이 사용자 지정 포트를 지정할 수 있습니다.  
 
 -   **사이트 간 통신**은 SQL Server Service Broker를 사용하며 기본적으로 포트 TCP 4022를 사용합니다.  
@@ -268,6 +287,8 @@ SQL Server를 실행하는 컴퓨터는 둘 이상의 사이트에 있는 데이
 SQL Server를 실행하는 컴퓨터에서 방화벽이 사용하도록 설정되어 있는 경우에는 SQL Server와 통신하는 컴퓨터 간의 네트워크에 있는 모든 위치에서 배포에서 사용 중인 포트를 허용하도록 방화벽이 구성되어 있는지 확인해야 합니다.  
 
 특정 포트를 사용하도록 SQL Server를 구성하는 방법의 예제는 SQL Server TechNet 라이브러리에서 [방법: 특정 TCP 포트로 수신하도록 서버 구성(SQL Server 구성 관리자)](http://go.microsoft.com/fwlink/p/?LinkID=226349) 을 참조하세요.  
+
+
 
 ## <a name="upgrade-options-for-sql-server"></a>SQL Server 업그레이드 옵션
 SQL Server 버전을 업그레이드해야 할 경우, 쉬운 경우부터 더 복잡한 경우까지 다음 방법을 권장합니다.

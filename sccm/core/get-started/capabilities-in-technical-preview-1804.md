@@ -2,7 +2,7 @@
 title: Technical Preview 1804
 titleSuffix: Configuration Manager
 description: Configuration Manager Technical Preview 버전 1804에서 사용할 수 있는 새로운 기능에 대해 알아봅니다.
-ms.date: 04/25/2018
+ms.date: 05/21/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,11 +10,12 @@ ms.assetid: 8af43618-ec60-4c3e-a007-12399d1335b9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0fcdcc984e267e6c54ad7c6194e8494854f0a1ee
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: a796c8cc23ab15e3fbeb09fca6ffa6f1dbd45bc3
+ms.sourcegitcommit: 4b8afbd08ecf8fd54950eeb630caf191d3aa4767
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "34474346"
 ---
 # <a name="capabilities-in-technical-preview-1804-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1804의 기능
 
@@ -28,9 +29,15 @@ ms.lasthandoff: 05/03/2018
 <!--  Known Issues Template   -->
 ## <a name="known-issues-in-this-technical-preview"></a>이 기술 미리 보기의 알려진 문제
 
+### <a name="bkmk_ki-prereqs"></a> 업데이트를 다운로드하는 설치 링크가 작동하지 않음
+<!--514334--> 미디어에서 설치를 실행하는 경우 초기 페이지에 **최신 Configuration Manager 업데이트 다운로드**라는 제목의 링크가 포함되어 있으며, 이 링크는 이 릴리스에서 작동하지 않습니다. 이 링크는 설치에 필요한 파일을 다운로드하기 위한 것입니다.
+
+#### <a name="workaround"></a>해결 방법
+설치에 필요한 파일을 다운로드하려면 설치 마법사를 실행합니다. 필수 다운로드 페이지에서 **필수 파일 다운로드** 옵션을 사용합니다. 
+
+
 ### <a name="bkmk_appcathttps"></a> 응용 프로그램 카탈로그 웹 서비스 지점에서 HTTPS를 사용할 수 없음
-<!--512637-->
-응용 프로그램 카탈로그 웹 서비스 지점에서 HTTPS를 사용하도록 설정할 경우
+<!--512637--> 응용 프로그램 카탈로그 웹 서비스 지점에서 HTTPS를 사용하도록 설정할 경우
 
 - 사용자가 사용할 수 있도록 배포된 응용 프로그램이 소프트웨어 센터에 표시되지 않습니다.  
 
@@ -50,8 +57,7 @@ HTTP 연결을 사용하여 통신하도록 응용 프로그램 카탈로그 웹
 
 
 ## <a name="configure-a-remote-content-library-for-the-site-server"></a>사이트 서버에 대해 원격 콘텐츠 라이브러리 구성  
-<!--1357525-->
-기본 사이트 서버에서 하드 드라이브 공간을 확보하려면 해당 [콘텐츠 라이브러리](/sccm/core/plan-design/hierarchy/the-content-library)를 다른 저장소 위치로 이동합니다. 사이트 서버의 다른 드라이브, 별도의 서버 또는 SAN(저장 영역 네트워크)의 내결함성 디스크로 콘텐츠 라이브러리를 이동할 수 있습니다. 시간 경과에 따라 사용자의 변화하는 콘텐츠 요구 사항에 맞게 확장되거나 축소되는 탄력적인 저장소를 제공하므로 SAN을 사용하는 것이 좋습니다. 
+<!--1357525--> 기본 사이트 서버에서 하드 드라이브 공간을 확보하려면 해당 [콘텐츠 라이브러리](/sccm/core/plan-design/hierarchy/the-content-library)를 다른 저장소 위치로 이동합니다. 사이트 서버의 다른 드라이브, 별도의 서버 또는 SAN(저장 영역 네트워크)의 내결함성 디스크로 콘텐츠 라이브러리를 이동할 수 있습니다. 시간 경과에 따라 사용자의 변화하는 콘텐츠 요구 사항에 맞게 확장되거나 축소되는 탄력적인 저장소를 제공하므로 SAN을 사용하는 것이 좋습니다. 
 
 이 원격 콘텐츠 라이브러리는 [사이트 서버 역할 고가용성](/sccm/core/get-started/capabilities-in-technical-preview-1706#site-server-role-high-availability)을 위한 새로운 필수 조건입니다. 
 
@@ -210,8 +216,7 @@ HTTP 연결을 사용하여 통신하도록 응용 프로그램 카탈로그 웹
 
 
 ## <a name="exclude-active-directory-containers-from-discovery"></a>검색에서 Active Directory 컨테이너 제외
-<!--1358143-->
-검색되는 개체 수를 줄이기 위해 이제 Active Directory 시스템 검색에서 특정 컨테이너를 제외할 수 있습니다. 이 기능은 [UserVoice 피드백](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/8414520-exclude-virtual-cluster-and-ou-from-discovery)을 반영한 결과입니다.
+<!--1358143--> 검색되는 개체 수를 줄이기 위해 이제 Active Directory 시스템 검색에서 특정 컨테이너를 제외할 수 있습니다. 이 기능은 [UserVoice 피드백](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/8414520-exclude-virtual-cluster-and-ou-from-discovery)을 반영한 결과입니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
  작업을 완료합니다. 그런 다음, [피드백](#bkmk_feedback)을 전송하여 작업이 어떻게 진행되었는지 알려주세요.
@@ -257,8 +262,7 @@ HTTP 연결을 사용하여 통신하도록 응용 프로그램 카탈로그 웹
 
 
 ## <a name="filter-automatic-deployment-rules-by-software-update-architecture"></a>소프트웨어 업데이트 아키텍처를 기준으로 자동 배포 규칙 필터링
- <!--1322266-->
-이제 자동 배포 규칙을 필터링하여 Itanium, ARM64 등의 아키텍처를 제외할 수 있습니다.
+ <!--1322266--> 이제 자동 배포 규칙을 필터링하여 Itanium, ARM64 등의 아키텍처를 제외할 수 있습니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 작업을 완료합니다. 그런 다음, [피드백](#bkmk_feedback)을 전송하여 작업이 어떻게 진행되었는지 알려주세요.
