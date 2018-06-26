@@ -5,10 +5,10 @@ title: System Center Configuration Manager 문서
 description: System Center Configuration Manager를 사용하는 방법을 알아봅니다.
 ms.topic: hub-page
 ms.openlocfilehash: 250f5cf0793f5afd396a82f96389c937ed9be14b
-ms.sourcegitcommit: 32bbc006a41868a6d9a708db5f7b372d9c71d985
+ms.sourcegitcommit: e3f7bb8cec4b37a311bc86098297534cab947de8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "29781765"
 ---
 <div id="main" class="v2">
