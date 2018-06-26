@@ -102,7 +102,7 @@ ms.locfileid: "32339964"
 
          필수. FQDN(정규화된 도메인 이름)을 사용하여 지정한 컴퓨터가 Configuration Manager 사이트 데이터베이스를 호스트할 SQL Server에 대한 요구 사항을 충족하는지 확인합니다.  
 
-    -   **/SDK &lt;*SMS 공급자의 FQDN>***  
+    -   **/SDK &lt;*SMS 공급자의 FQDN*>**  
 
          필수. 지정한 컴퓨터가 SMS 공급자의 요구 사항을 충족하는지를 확인합니다.  
 
@@ -128,7 +128,7 @@ ms.locfileid: "32339964"
 
          필수. 지정한 컴퓨터가 SQL Server의 요구 사항을 충족하여 Configuration Manager 사이트 데이터베이스를 호스트할 수 있는지를 확인합니다.  
 
-    -   **/SDK &lt;*SMS 공급자의 FQDN>***  
+    -   **/SDK &lt;*SMS 공급자의 FQDN*>**  
 
          필수. 지정한 컴퓨터가 SMS 공급자의 요구 사항을 충족하는지를 확인합니다.  
 
