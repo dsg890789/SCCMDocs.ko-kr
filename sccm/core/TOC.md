@@ -112,6 +112,7 @@
 
 <!-- Only show the current plus three; four total) -->
 ##   [기술 미리 보기](get-started/technical-preview.md)
+###  [1806.2의 기능](get-started/capabilities-in-technical-preview-1806-2.md)
 ###  [1806의 기능](get-started/capabilities-in-technical-preview-1806.md)
 ###  [1805의 기능](get-started/capabilities-in-technical-preview-1805.md)
 ###  [1804의 기능](get-started/capabilities-in-technical-preview-1804.md)
