@@ -10,12 +10,12 @@ ms.assetid: b57acf0b-05b7-46af-ad4c-f3e707bd3861
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f346c47188bf71512ec2cbc46f6c9cb352cd642e
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 28b7819b915eb2dea8a34d1474141067ac7751b5
+ms.sourcegitcommit: 0305e710f634529793ae73e5aac24168ee4fe02f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32333181"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042782"
 ---
 # <a name="whats-new-in-system-center-configuration-manager-incremental-versions"></a>System Center Configuration Manager 증분 버전의 새로운 기능
 
@@ -34,7 +34,7 @@ ms.locfileid: "32333181"
   - [버전 1706의 새로운 기능](../../../core/plan-design/changes/whats-new-in-version-1706.md)  
 
 
- 각 업데이트 버전은 릴리스 후 1년 동안 지원됩니다. 가장 최근의 업데이트 버전으로 최신 상태를 유지하세요. 자세한 내용은 [Configuration Manager 현재 분기 버전 지원](../../../core/servers/manage/current-branch-versions-supported.md)을 참조하세요.  
+1710 이전에 릴리스된 Configuration Manager 버전은 12개월 동안 지원됩니다. 1710 릴리스부터 각 업데이트 버전은 GA(일반 공급) 출시 날짜로부터 18개월 동안 지원됩니다.  가장 최근의 업데이트 버전으로 최신 상태를 유지하세요. 자세한 내용은 [Configuration Manager 현재 분기 버전 지원](../../../core/servers/manage/current-branch-versions-supported.md)을 참조하세요.  
 
 
 ## <a name="see-also"></a>참고 항목
