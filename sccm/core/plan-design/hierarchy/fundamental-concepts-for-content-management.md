@@ -2,7 +2,7 @@
 title: 콘텐츠 관리의 기본 사항
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 도구와 옵션을 사용하여 배포하는 콘텐츠를 관리합니다.
-ms.date: 03/22/2018
+ms.date: 06/15/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,13 +10,14 @@ ms.assetid: c201be2a-692c-4d67-ac95-0a3afa5320fe
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5dfe33e7182eae158c15afb848d3a9f1702678ba
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 4419a563a65ab9d98a76dcf58b48ae00e0763dab
+ms.sourcegitcommit: 4b8afbd08ecf8fd54950eeb630caf191d3aa4767
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36260737"
 ---
-# <a name="fundamental-concepts-for-content-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 콘텐츠 관리의 기본 개념
+# <a name="fundamental-concepts-for-content-management-in-configuration-manager"></a>Configuration Manager에서 콘텐츠 관리의 기본 개념
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -69,7 +70,7 @@ BDR은 계층 내 각 부모 및 자식 사이트 간에 지원됩니다. 사이
 
 
 ## <a name="branchcache"></a>BranchCache  
- [BranchCache](/windows-server/networking/branchcache/branchcache)는 Windows 기술입니다. 클라이언트는 BranchCache를 지원하며 BranchCache용으로 구성된 배포를 다운로드한 클라이언트를 다른 BranchCache 사용 클라이언트에 대한 콘텐츠 원본으로 사용할 수 있도록 합니다.  
+ [BranchCache](https://docs.microsoft.com/windows-server/networking/branchcache/branchcache)는 Windows 기술입니다. 클라이언트는 BranchCache를 지원하며 BranchCache용으로 구성된 배포를 다운로드한 클라이언트를 다른 BranchCache 사용 클라이언트에 대한 콘텐츠 원본으로 사용할 수 있도록 합니다.  
 
  예를 들어 Windows Server 2012 이상을 실행하는 배포 지점은 BranchCache 서버로 구성됩니다. 첫 번째 BranchCache 사용 클라이언트가 이 서버에서 콘텐츠를 요청하는 경우 클라이언트는 해당 콘텐츠를 다운로드하고 캐시합니다.  
 
@@ -77,11 +78,14 @@ BDR은 계층 내 각 부모 및 자식 사이트 간에 지원됩니다. 사이
 - 동일한 서브넷에 있는 다른 클라이언트는 배포 지점에서 콘텐츠를 다운로드할 필요가 없습니다.  
 - 콘텐츠는 이후 전송에서 여러 클라이언트에 배포됩니다.  
 
+자세한 내용은 [Windows BranchCache에 대한 지원](/sccm/core/plan-design/configs/support-for-windows-features-and-networks#bkmk_branchcache)을 참조하세요.
+
 
 
 ## <a name="delivery-optimization"></a>배달 최적화
-<!-- 1324696 -->
-Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원격 사무실에 대한 콘텐츠 배포를 정의하고 규정합니다. [Windows 배달 최적화](/windows/deployment/update/waas-delivery-optimization)는 Windows 10 장치 간에 콘텐츠를 공유하는 클라우드 기반의 피어 투 피어 기술입니다. 1802 버전부터 피어 간에 콘텐츠를 공유하는 경우 경계 그룹을 사용하도록 배달 최적화를 구성합니다. 클라이언트 설정은 경계 그룹 식별자를 클라이언트의 배달 최적화 그룹 식별자로 적용합니다. 클라이언트는 배달 최적화 클라우드 서비스와 통신할 때 이 식별자를 사용하여 원하는 콘텐츠가 있는 피어를 찾습니다. 자세한 내용은 [배달 최적화](/sccm/core/clients/deploy/about-client-settings#delivery-optimization) 클라이언트 설정을 참조하세요.
+<!-- 1324696 --> Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원격 사무실에 대한 콘텐츠 배포를 정의하고 규정합니다. [Windows 배달 최적화](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)는 Windows 10 장치 간에 콘텐츠를 공유하는 클라우드 기반의 피어 투 피어 기술입니다. 1802 버전부터 피어 간에 콘텐츠를 공유하는 경우 경계 그룹을 사용하도록 배달 최적화를 구성합니다. 클라이언트 설정은 경계 그룹 식별자를 클라이언트의 배달 최적화 그룹 식별자로 적용합니다. 클라이언트는 배달 최적화 클라우드 서비스와 통신할 때 이 식별자를 사용하여 원하는 콘텐츠가 있는 피어를 찾습니다. 자세한 내용은 [배달 최적화](/sccm/core/clients/deploy/about-client-settings#delivery-optimization) 클라이언트 설정을 참조하세요.
+
+배달 최적화는 Windows 10 품질 업데이트용 빠른 설치 파일의 [Windows 10 업데이트 배달 최적화](/sccm/sum/deploy-use/optimize-windows-10-update-delivery)에 권장되는 기술입니다.
 
 
 
@@ -90,7 +94,7 @@ Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원�
 
 피어 캐시를 사용하도록 설정된 클라이언트 설정을 컬렉션에 배포하고 나면 해당 컬렉션의 멤버가 동일 경계 그룹에서 다른 클라이언트의 피어 콘텐츠 원본 역할을 할 수 있습니다.
 
-자세한 내용은 [Configuration Manager 클라이언트에 대한 피어 캐시](/sccm/core/plan-design/hierarchy/client-peer-cache)를 참조하세요.
+자세한 내용은 [Configuration Manager 클라이언트용 피어 캐시](/sccm/core/plan-design/hierarchy/client-peer-cache)를 참조하세요.
 
 
 

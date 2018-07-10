@@ -10,12 +10,12 @@ ms.assetid: 74c60941-5eae-4905-9e58-252bdb39df96
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 667c8c3ea986e39627f3ed96e53719d6de74d3b2
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: fb0ef52bc3359e1b31b2e2237a87e58bf671bcb7
+ms.sourcegitcommit: 4b8afbd08ecf8fd54950eeb630caf191d3aa4767
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32334161"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36260839"
 ---
 # <a name="how-to-upgrade-clients-on-mac-computers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Mac 컴퓨터의 클라이언트를 업그레이드하는 방법
 
@@ -56,7 +56,7 @@ System Center Configuration Manager 응용 프로그램을 사용하여 Mac 컴�
 ## <a name="step-6-users-install-the-latest-client"></a>6단계: 사용자가 최신 클라이언트 설치  
  Mac 클라이언트 사용자에게 Configuration Manager 클라이언트의 업데이트를 사용할 수 있으며 설치해야 한다는 메시지가 표시됩니다. 클라이언트를 설치한 사용자는 Mac 컴퓨터를 다시 시작해야 합니다.  
 
- 컴퓨터를 다시 시작한 후 컴퓨터 등록 마법사가 자동으로 실행되어 새 사용자 인증서를 요청합니다.  
+ 컴퓨터를 다시 시작한 후 컴퓨터 등록 마법사가 자동으로 실행되어 새 사용자 인증서를 요청합니다. 컴퓨터 등록 마법사는 처음으로 SCCM 클라이언트를 설치할 때만 자동으로 실행됩니다. 이미 유효한 사용자 인증서가 있기 때문에 나중에 새 설치 관리자를 사용하여 클라이언트를 업데이트하려고 해도 다시 실행되지 않습니다. 
 
  Configuration Manager 등록을 사용하지 않고 Configuration Manager와 독립적으로 클라이언트 인증서를 설치하는 경우에는 [업그레이드된 클라이언트가 기존 인증서를 사용하도록 구성](#BKMK_UpgradingClient_MachineEnrollment)을 참조하세요.  
 

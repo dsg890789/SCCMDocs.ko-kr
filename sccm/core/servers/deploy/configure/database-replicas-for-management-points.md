@@ -10,11 +10,12 @@ ms.assetid: b06f781b-ab25-4d9a-b128-02cbd7cbcffe
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0893df43f7979fa3c36ba90ab400e399f96e6228
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 5ab632367e6cc30210db00a61ee4d3b9c414fdbd
+ms.sourcegitcommit: 4b8afbd08ecf8fd54950eeb630caf191d3aa4767
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36260815"
 ---
 # <a name="database-replicas-for-management-points-for-system-center-configuration-manager"></a>System Center Configuration Manager의 관리 지점용 데이터베이스 복제본
 
@@ -78,7 +79,7 @@ System Center Configuration Manager 기본 사이트는 데이터베이스 복�
 
     -   [데이터베이스 복제본을 게시하는 사이트 서버 데이터베이스 이동](#BKMK_DBReplicaOps_Move)  
 
--   **System Center Configuration Manager로 업그레이드**: System Center 2012 Configuration Manager에서 System Center Configuration Manager로 사이트를 업데이트하기 전에 관리 지점의 데이터베이스 복제본을 사용하지 않도록 설정해야 합니다.  사이트를 업그레이드한 후 관리 지점에 대해 데이터베이스 복제본을 다시 구성할 수 있습니다.  
+-   **System Center Configuration Manager로 업그레이드**: 사이트를 System Center 2012 Configuration Manager에서 System Center Configuration Manager 현재 분기로 업그레이드하거나 Configuration Manager 현재 분기를 최신 릴리스로 업데이트하기 전에 관리 지점에 데이터베이스 복제본을 사용하지 않도록 설정해야 합니다.  사이트를 업그레이드한 후 관리 지점에 대해 데이터베이스 복제본을 다시 구성할 수 있습니다.  
 
 -   **단일 SQL Server의 여러 복제본:** 관리 지점에 대해 여러 데이터베이스 복제본을 호스트하도록 데이터베이스 복제본 서버를 구성하는 경우(각 복제본은 개별 인스턴스에 있어야 함), 해당 서버에서 이전에 구성한 데이터베이스 복제본이 사용 중인 자체 서명된 인증서를 덮어쓰지 않도록 다음 섹션의 4단계에서 수정된 구성 스크립트를 사용해야 합니다.  
 

@@ -2,7 +2,7 @@
 title: VPN 프로필
 titleSuffix: Configuration Manager
 description: Configuration Manager의 모바일 장치 VPN 프로필에 대해 자세히 알아보세요.
-ms.date: 05/01/2018
+ms.date: 06/12/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -10,11 +10,12 @@ ms.assetid: 45388103-2410-4c7e-b4cf-73a1bda485fc
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 1b59c413fdd857db3aadd94b9851ad0778937a0a
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 9409b6cc71ea238755f40baf75e6211c447b547f
+ms.sourcegitcommit: 826e9ec385d6a1c1f3aa86ac202883154e0c1285
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37116503"
 ---
 # <a name="vpn-profiles-on-mobile-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager의 모바일 장치에 대한 VPN 프로필
 
@@ -55,9 +56,12 @@ iOS, Android, Windows Phone 및 Windows 8.1 장치에 프로필을 배포하려�
    - 다음 버전에서는 VPN 프로필에 **Cisco AnyConnect** 옵션을 사용하세요.
        - Cisco AnyConnect 버전 4.0.7 이상이 설치된 iOS
 
-     > [!Note]  
-     > iOS용 Cisco AnyConnect 4.0.07x 이상은 시험판 기능입니다. 이 기능을 사용하려면 [시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요.  
-
+     > [!Tip]  
+     > iOS용 Cisco AnyConnect 4.0.07x 이상은 버전 1802에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 도입되었습니다. [업데이트 4163547](https://support.microsoft.com/help/4163547)에서 버전 1802부터 이 기능은 더 이상 시험판 기능이 아닙니다.  
+  
+  
+> [!Note]  
+> 하이브리드 MDM의 VPN 프로필에서는 F5 Access 2018이 지원되지 않습니다.  
 
 
 ## <a name="windows-10-vpn-features-available-when-using-configuration-manager-with-intune"></a>Intune에서 Configuration Manager를 사용할 때 사용할 수 있는 Windows 10 VPN 기능  

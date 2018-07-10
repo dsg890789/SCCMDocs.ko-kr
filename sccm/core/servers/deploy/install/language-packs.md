@@ -1,8 +1,8 @@
 ---
 title: 언어 팩
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 제공되는 언어 지원에 대해 알아봅니다.
-ms.date: 1/3/2017
+description: Configuration Manager에서 제공되는 언어 지원에 대해 알아봅니다.
+ms.date: 06/29/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,27 +10,39 @@ ms.assetid: cd74e5f5-33f6-4566-8c9d-d6a93bfe71ed
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a198e15a1ef389d792acc73f2253aa4a704ac35a
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 54034ec94ad2a0ea2b7ce095d9da669aea02f0b3
+ms.sourcegitcommit: 702e6017b6dee4629b67bb9f3bd5d9b5a889ebee
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32340313"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37340229"
 ---
-# <a name="language-packs-in-system-center-configuration-manager"></a>System Center Configuration Manager의 언어 팩
+# <a name="language-packs-in-configuration-manager"></a>Configuration Manager의 언어 팩
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-이 항목에서는 System Center Configuration Manager의 언어 지원에 대한 기술적인 세부 정보를 제공합니다.  
+이 문서에서는 Configuration Manager의 언어 지원에 대한 기술적인 세부 정보를 제공합니다. Configuration Manager 사이트 서버 및 클라이언트는 언어 중립적인 것으로 간주됩니다. 중앙 관리 사이트와 기본 사이트에 **서버 언어 팩** 또는 **클라이언트 언어 팩**을 설치하여 표시 언어에 대한 지원을 추가합니다. 사이트를 설치하는 동안 사이트에서 지원할 서버 및 클라이언트 언어를 사용 가능한 언어 팩 파일에서 선택합니다.
+ 
+각 사이트에 여러 언어를 설치합니다. 사용하는 언어만 설치해야 합니다.  
 
-## <a name="BKMK_SupLanguagePacks"></a> 지원되는 운영 체제 언어  
- 중앙 관리 사이트와 기본 사이트에 **서버 언어 팩** 또는 **클라이언트 언어 팩**을 설치하여 다음 표의 표시 언어에 대한 지원을 설치할 수 있습니다. 사이트를 설치하는 동안 사이트에서 지원할 서버 및 클라이언트 언어를 사용 가능한 언어 팩 파일에서 선택합니다.
+- 각 사이트는 Configuration Manager 콘솔에 여러 언어를 지원합니다.  
 
- 필수 구성 요소 및 재배포 가능 파일 다운로드의 일부로 설치 프로그램을 실행하면 언어 팩 파일이 다운로드됩니다. [설치 다운로더](setup-downloader.md)를 사용하여 설치 프로그램을 실행하기 전에 이러한 파일을 다운로드할 수도 있습니다.   
+- 각 사이트에서 개별 클라이언트 언어 팩을 설치하여 지원하려는 클라이언트 언어에 대해서만 지원을 추가합니다.  
 
- 서버 또는 클라이언트 컴퓨터에서 지원하기 원하는 언어에 대한 로캘 ID를 파악하려면 다음 표를 참조하세요. 로캘 ID에 대한 자세한 내용은 [Locale IDs Assigned by Microsoft](http://go.microsoft.com/fwlink/p/?LinkId=252609)를 참조하세요.  
+다음 구성 요소와 일치하는 언어에 대한 지원을 설치하는 경우:  
 
-### <a name="server-languages"></a>서버 언어  
+- 컴퓨터의 표시 언어: 해당 컴퓨터에서 실행되는 Configuration Manager 콘솔과 클라이언트 사용자 인터페이스 모두 해당 언어로 정보를 표시합니다.  
+
+- 컴퓨터의 웹 브라우저에서 사용 중인 언어 기본 설정: 응용 프로그램 카탈로그 또는 SQL Server Reporting Services를 포함하여 웹 기반 정보에 대한 연결이 해당 언어로 표시됩니다.  
+
+
+Configuration Manager 설치 프로그램을 실행하면 필수 구성 요소 및 재배포 가능 파일의 일부로 언어 팩 파일이 다운로드됩니다. [설치 다운로더](setup-downloader.md)를 사용하여 설치 프로그램을 실행하기 전에 이러한 파일을 다운로드할 수도 있습니다.   
+
+
+
+## <a name="server-languages"></a>서버 언어  
+
+서버에서 지원하려는 언어에 대한 로캘 ID를 파악하려면 다음 표를 참조하세요. 로캘 ID에 대한 자세한 내용은 [Locale IDs Assigned by Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=252609)를 참조하세요.  
 
 |서버 언어|로캘 ID(LCID)|세 자리 코드|  
 |---------------------|------------------------|-----------------------|  
@@ -54,7 +66,11 @@ ms.locfileid: "32340313"
 |스웨덴어|041d|SVE|  
 |터키어|041f|TRK|  
 
-### <a name="client-languages"></a>클라이언트 언어  
+
+
+## <a name="client-languages"></a>클라이언트 언어  
+
+클라이언트 컴퓨터에서 지원하려는 언어에 대한 로캘 ID를 파악하려면 다음 표를 참조하세요. 로캘 ID에 대한 자세한 내용은 [Locale IDs Assigned by Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=252609)를 참조하세요.  
 
 |클라이언트 언어|로캘 ID(LCID)|세 자리 코드|  
 |---------------------|------------------------|-----------------------|  
@@ -82,12 +98,15 @@ ms.locfileid: "32340313"
 |스웨덴어|041d|SVE|  
 |터키어|041f|TRK|  
 
+
 ### <a name="mobile-device-client-languages"></a>모바일 장치 클라이언트 언어  
- 모바일 장치 언어에 대한 지원을 추가하면 모든 지원되는 모바일 장치 클라이언트 언어가 포함됩니다. 모바일 장치 지원을 위한 개별 언어 팩을 선택할 수 없습니다.  
+모바일 장치 언어에 대한 지원을 추가하면 모든 지원되는 모바일 장치 클라이언트 언어가 포함됩니다. 모바일 장치 지원을 위한 개별 언어 팩을 선택할 수 없습니다.  
 
-### <a name="identify-installed-language-packs"></a>설치된 언어 팩 확인  
-Configuration Manager 클라이언트를 실행하는 컴퓨터에 설치된 언어 팩을 확인하려면 해당 컴퓨터의 레지스트리에서 설치된 언어 팩의 LCID(로캘 ID)를 찾습니다. 이 정보는 다음 위치에서 확인할 수 있습니다.
 
- **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CCMSetup\InstalledLangs**  
 
-하드웨어 인벤토리를 사용하여 이 정보를 수집한 후에 사용자 지정 보고서를 작성하여 언어 세부 정보를 확인할 수 있습니다. 사용자 지정 하드웨어 인벤토리를 수집하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 하드웨어 인벤토리를 구성하는 방법](../../../../core/clients/manage/inventory/configure-hardware-inventory.md)을 참조하세요. 보고서를 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고 작업 및 유지 관리](../../../../core/servers/manage/operations-and-maintenance-for-reporting.md) 항목에서 [Configuration Manager 보고서 관리](../../../../core/servers/manage/operations-and-maintenance-for-reporting.md#BKMK_ManageReports) 섹션을 참조하세요.  
+## <a name="identify-installed-language-packs"></a>설치된 언어 팩 확인  
+Configuration Manager 클라이언트를 실행하는 컴퓨터에 설치된 언어 팩을 확인하려면 해당 컴퓨터의 레지스트리에서 설치된 언어 팩의 LCID(로캘 ID)를 찾습니다. 이 정보는 다음 레지스트리 경로에서 사용할 수 있습니다.  
+
+`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CCMSetup\InstalledLangs`  
+
+하드웨어 인벤토리를 사용자 지정하여 이 정보를 수집합니다. 그런 다음, 사용자 지정 보고서를 작성하여 언어 세부 정보를 확인합니다. 사용자 지정 하드웨어 인벤토리 수집에 대한 자세한 내용은 [하드웨어 인벤토리를 구성하는 방법](/sccm/core/clients/manage/inventory/configure-hardware-inventory)을 참조하세요. 보고서 만들기에 대한 자세한 내용은 [Configuration Manager 보고서 관리](/sccm/core/servers/manage/operations-and-maintenance-for-reporting#BKMK_ManageReports)를 참조하세요.  

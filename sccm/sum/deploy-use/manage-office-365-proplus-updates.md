@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
-ms.openlocfilehash: a94ac00b8fce6098cbd829947f4e2fbdcb761b9e
-ms.sourcegitcommit: c5e078b8eee87f527e5b5a0c2eb687bb9d6896c5
+ms.openlocfilehash: fa73ed132a00455b47355877b1c20e8d2f8c4f3a
+ms.sourcegitcommit: 59afe6f05333d4150afaf88ab0a85a979818e3fb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34270717"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36957800"
 ---
 # <a name="manage-office-365-proplus-with-configuration-manager"></a>Configuration Manager를 사용하여 Office 365 ProPlus 관리
 
@@ -48,7 +48,7 @@ Configuration Manager 콘솔에서 Office 365 클라이언트 관리 대시보�
 ### <a name="display-data-in-the-office-365-client-management-dashboard"></a>Office 365 클라이언트 관리 대시보드에 데이터 표시
 Office 365 클라이언트 관리 대시보드에 표시되는 데이터는 하드웨어 인벤토리에서 옵니다. 하드웨어 인벤토리를 사용하도록 설정하고 대시보드에서 데이터가 표시되도록 **Office 365 ProPlus 구성** 하드웨어 인벤토리 클래스를 선택합니다. 
 #### <a name="to-display-data-in-the-office-365-client-management-dashboard"></a>Office 365 클라이언트 관리 대시보드에 데이터를 표시하려면
-1. 하드웨어 인벤토리를 아직 사용하도록 설정하지 않은 경우 지금 설정합니다. 자세한 내용은 [하드웨어 인벤토리 구성](\sccm\core\clients\manage\configure-hardware-inventory)을 참조하세요.
+1. 하드웨어 인벤토리를 아직 사용하도록 설정하지 않은 경우 지금 설정합니다. 자세한 내용은 [하드웨어 인벤토리 구성](/sccm/core/clients/manage/inventory/configure-hardware-inventory)을 참조하세요.
 2. Configuration Manager 콘솔에서 **관리** > **클라이언트 설정** > **기본 클라이언트 설정**으로 이동합니다.  
 3. **홈** 탭의 **속성** 그룹에서 **속성**을 클릭합니다.  
 4. 에 **기본 클라이언트 설정** 대화 상자를 클릭 하 여 **하드웨어 인벤토리**.  
@@ -67,7 +67,7 @@ Office 365 클라이언트 관리 대시보드에 표시되는 데이터는 하�
 
 ### <a name="requirements"></a>요구 사항
 - Office 365 설치 관리자를 실행하는 컴퓨터에서 인터넷에 액세스할 수 있어야 합니다.  
-- Office 365 설치 관리자를 실행하는 사용자는 마법사에서 위치 공유가 제공되는 콘텐츠에 대한 **읽기** 및 **쓰기** 권한이 있어야 합니다.
+- Office 365 설치 관리자를 실행하는 사용자는 마법사에서 제공한 콘텐츠 위치 공유에 대해 **읽기** 및 **쓰기** 권한이 있어야 합니다.
 - 404 다운로드 오류가 표시되면 다음 파일을 사용자 %temp% 폴더로 복사합니다.
   - [releasehistory.xml](http://officecdn.microsoft.com/pr/wsus/releasehistory.cab)
   - [o365client_32bit.xml](http://officecdn.microsoft.com/pr/wsus/ofl.cab)  

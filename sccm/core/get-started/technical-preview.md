@@ -2,7 +2,7 @@
 title: 기술 미리 보기 릴리스
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 새로운 기능과 기술을 테스트할 수 있는 기술 미리 보기 릴리스에 대해 알아봅니다.
-ms.date: 06/01/2018
+ms.date: 06/27/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 9ce0a8cb-f96c-4e41-834c-59ceb54ce44a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b7372e0b894e93a5a8ec15e54bfeb09e18be6c32
-ms.sourcegitcommit: 10a6e3444da631786e9b1729e79a5b728d54ca72
+ms.openlocfilehash: 1fd848c3e0ed663e0731eb86d39c930db3af7819
+ms.sourcegitcommit: d1bf26bcf0d78b37ac7598fab36eb58ca69b1dc5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34753997"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37066286"
 ---
 # <a name="technical-preview-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview
 
@@ -34,7 +34,7 @@ ms.locfileid: "34753997"
 ##  <a name="bkmk_reqs"></a> Technical Preview의 요구 사항 및 제한  
 
 > [!IMPORTANT]     
->  기술 미리 보기는 랩 환경에서만 사용하도록 허가되었습니다.  Microsoft에서 지원 서비스를 제공하지 않을수 있으며, 특정 기능은 미리 보기 소프트웨어에서 사용하지 못할 수 있습니다. 또한 상업적으로 제공되는 소프트웨어와 비교했을 때 미리 보기 소프트웨어의 보안, 개인 정보 보호, 액세스 가능성, 가용성 및 안정성 표준이 낮거나 다를 수 있습니다.  
+>  기술 미리 보기는 랩 환경에서만 사용하도록 허가되었습니다. Microsoft에서 지원 서비스를 제공하지 않을수 있으며, 특정 기능은 미리 보기 소프트웨어에서 사용하지 못할 수 있습니다. 또한 상업적으로 제공되는 소프트웨어와 비교했을 때 미리 보기 소프트웨어의 보안, 개인 정보 보호, 액세스 가능성, 가용성 및 안정성 표준이 낮거나 다를 수 있습니다.  
 
  대부분의 제품 필수 조건에 대한 자세한 내용은 [System Center Configuration Manager에서 지원되는 구성](../../core/plan-design/configs/supported-configurations.md)의 정보를 참조하세요. 기술 미리 보기 릴리스에는 다음과 같은 예외가 적용됩니다.  
 
@@ -62,7 +62,7 @@ ms.locfileid: "34753997"
 -   이 미리 보기 빌드에서 프로덕션 빌드(현재 분기)로 업그레이드할 수 없습니다. 그러나 미리 보기 버전용 업데이트를 사용할 수 있는 경우 Configuration Manager 콘솔의 **업데이트 및 서비스** 노드에서 해당 업데이트를 찾아 설치할 수 있습니다. 콘솔 내 업그레이드 프로세스에 대한 비디오를 보려면 youtube.com에서 [ConfigMgr 업데이트 패키지 설치](https://www.youtube.com/embed/KBd_EGFbUT8) (영문)를 참조하세요.  
 -   독립 실행형 기본 사이트만 지원됩니다. 중앙 관리 사이트, 여러 기본 사이트 또는 보조 사이트는 지원되지 않습니다.  
 
-다음 제품 및 기술은 이 Configuration Manager 분기에서 지원됩니다. 그러나 이 내용에 포함되었다고 해서 개별 지원 주기가 끝난 제품 또는 버전의 지원 연장을 의미하지는 않습니다. 즉, 지원 주기가 끝난 제품은 Configuration Manager에서 사용할 수 없습니다. Microsoft 지원 주기에 대한 자세한 내용은 [Microsoft 지원 주기](http://go.microsoft.com/fwlink/p/?LinkId=208270) 웹 사이트를 참조하세요.  
+다음 제품 및 기술은 이 Configuration Manager 분기에서 지원됩니다. 그러나 이 내용에 포함되었다고 해서 개별 지원 주기가 끝난 제품 또는 버전의 지원 연장을 의미하지는 않습니다. 즉, 지원 주기가 끝난 제품은 Configuration Manager에서 사용할 수 없습니다. Microsoft 지원 주기에 대한 자세한 내용은 [Microsoft 지원 주기](https://go.microsoft.com/fwlink/p/?LinkId=208270) 웹 사이트를 참조하세요.  
 
 -   다음 SQL Server 버전만 지원됩니다.  
 
@@ -97,7 +97,7 @@ ms.locfileid: "34753997"
 ##  <a name="BKMK_TPFeedback"></a> 사용자 의견 제공  
  Technical Preview의 기능에 대한 피드백을 보내 주시기 바랍니다. 자세한 내용은 [제품 피드백](../understand/find-help.md#product-feedback)을 참조하세요.
 
-새로 추가되기를 원하는 기능에 대한 의견을 보내 주셔도 됩니다. 새로운 아이디어를 전송하고 다른 사용자들이 전송한 아이디어에 대해 투표를 하려면 [사용자 의견 페이지를 방문](http://configurationmanager.uservoice.com)하세요.  
+새로 추가되기를 원하는 기능에 대한 의견을 보내 주셔도 됩니다. 새로운 아이디어를 전송하고 다른 사용자들이 전송한 아이디어에 대해 투표를 하려면 [사용자 의견 페이지를 방문](https://configurationmanager.uservoice.com)하세요.  
 
 <!--   ##  <a name="bdmk_tpknownissues"></a> General changes introduced in Technical Previews    -->
 
@@ -105,24 +105,20 @@ ms.locfileid: "34753997"
 
 
 ##  <a name="bkmk_tpCaps"></a> 가장 최근의 Technical Preview에 포함된 기능  
-최신 Configuration Manager Technical Preview 릴리스에 포함된 기능은 다음과 같습니다.  이전 버전의 Technical Preview에서 사용할 수 있는 기능은 이후 버전에서도 계속 사용할 수 있습니다. 마찬가지로, Configuration Manager 현재 분기에 추가된 기능은 Technical Preview 릴리스에서도 계속 사용할 수 있습니다.  각 미리 보기 버전에 대한 콘텐츠를 클릭하여 특정 기능에 대한 자세한 내용을 알아볼 수 있습니다.  
+최신 Configuration Manager Technical Preview 릴리스에 포함된 기능은 다음과 같습니다. 이전 버전의 Technical Preview에서 사용할 수 있는 기능은 이후 버전에서도 계속 사용할 수 있습니다. 마찬가지로, Configuration Manager 현재 분기에 추가된 기능은 Technical Preview 릴리스에서도 계속 사용할 수 있습니다. 각 미리 보기 버전에 대한 콘텐츠를 클릭하여 특정 기능에 대한 자세한 내용을 알아볼 수 있습니다.  
 
 <!-- This is the full list of new features in the latest TP release -->
 
-### <a name="technical-preview-version-1806"></a>Technical Preview 버전 1806
-- [타사 소프트웨어 업데이트](capabilities-in-technical-preview-1806.md#bkmk-3pupdate) <!--1352101-->
-- [Microsoft Edge용 Windows Defender SmartScreen 설정 구성](capabilities-in-technical-preview-1806.md#configure-windows-defender-smartscreen-settings-for-microsoft-edge) <!--1353701-->
-- [Microsoft Intune에서 공동 관리하는 장치에 대한 MDM 정책 동기화](capabilities-in-technical-preview-1806.md#sync-mdm-policy-from-microsoft-intune-for-a-co-managed-device) <!--1357377-->
-- [공동 관리를 사용하여 Office 365 워크로드를 Intune으로 전환](capabilities-in-technical-preview-1806.md#transition-office-365-workload-to-intune-using-co-management) <!--1357841-->
-- [Package Conversion Manager](capabilities-in-technical-preview-1806.md#package-conversion-manager) <!--1357861-->
-- [콘텐츠 없이 소프트웨어 업데이트 배포](capabilities-in-technical-preview-1806.md#deploy-software-updates-without-content) <!--1357933-->
-- [Office 365 설치 관리자와 Office 사용자 지정 도구 통합](capabilities-in-technical-preview-1806.md#office-customization-tool-integration-with-the-office-365-installer) <!--1358149-->
-- [클라우드 관리 게이트웨이의 향상된 기능](capabilities-in-technical-preview-1806.md#improvements-to-cloud-management-gateway) <!--1358215,1358651,503899--> 
-- [보안 클라이언트 통신 개선](capabilities-in-technical-preview-1806.md#improvements-to-secure-client-communications) <!--1358278,1358279-->
-- [소프트웨어 센터 인프라 개선 사항](capabilities-in-technical-preview-1806.md#software-center-infrastructure-improvements) <!--1358309-->
-- [장치의 모든 사용자에 대해 Windows 앱 패키지 프로비전](capabilities-in-technical-preview-1806.md#provision-windows-app-packages-for-all-users-on-a-device) <!--1358310-->
-- [Surface 대시보드에 대한 개선 사항](capabilities-in-technical-preview-1806.md#improvements-to-the-surface-dashboard) <!--1358654-->
-- [하드웨어 인벤토리 기본 단위 수정 버전](capabilities-in-technical-preview-1806.md#hardware-inventory-default-unit-revision) <!--514442-->
+### <a name="technical-preview-version-18062"></a>Technical Preview 버전 1806.2
+- [단계적 배포 개선 사항](capabilities-in-technical-preview-1806-2.md#bkmk_pod) <!--1358577,1358147,1358578-->
+- [새로운 Windows 앱 패키지 형식에 대한 지원](capabilities-in-technical-preview-1806-2.md#bkmk_msix) <!--1357427-->
+- [클라이언트 강제 보안 개선 사항](capabilities-in-technical-preview-1806-2.md#bkmk_client-push) <!--1358204-->
+- [자동 유지 관리에 대한 관리 인사이트](capabilities-in-technical-preview-1806-2.md#bkmk_insights) <!--1352184,et al-->
+- [공동 관리하는 장치에 대한 모바일 앱 워크로드 전환](capabilities-in-technical-preview-1806-2.md#bkmk_comgmt) <!--1357892-->
+- [피어 다운로드를 위한 경계 그룹 옵션](capabilities-in-technical-preview-1806-2.md#bkmk_bgoptions) <!--1356193-->
+- [사용자 지정 카탈로그에 대한 타사 소프트웨어 업데이트 지원](capabilities-in-technical-preview-1806-2.md#bkmk_3pupdate) <!--1358714-->
+- [클라우드 관리 기능 개선 사항](capabilities-in-technical-preview-1806-2.md#bkmk_cloud) <!--511980,515854-->
+- [새 소프트웨어 업데이트 준수 보고서](capabilities-in-technical-preview-1806-2.md#bkmk_report) <!--1357775-->
 
 
 
@@ -136,6 +132,19 @@ Then remove the bottom of this list and/or move individual items not in CB to th
 
  |기능 |기술 미리 보기 버전 |현재 분기 버전|  
  |----------------|---------------------|--------------------|
+ | 타사 소프트웨어 업데이트 <!--1352101--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#bkmk-3pupdate)  | ![추가되지 않음](media/Red_X.gif) |  
+ | Microsoft Edge용 Windows Defender SmartScreen 설정 구성 <!--1353701--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#configure-windows-defender-smartscreen-settings-for-microsoft-edge)  | ![추가되지 않음](media/Red_X.gif) |  
+ | Microsoft Intune에서 공동 관리하는 장치에 대한 MDM 정책 동기화 <!--1357377--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#sync-mdm-policy-from-microsoft-intune-for-a-co-managed-device)  | ![추가되지 않음](media/Red_X.gif) |  
+ | 공동 관리를 사용하여 Office 365 워크로드를 Intune으로 전환 <!--1357841--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#transition-office-365-workload-to-intune-using-co-management)  | ![추가되지 않음](media/Red_X.gif) |  
+ | Package Conversion Manager <!--1357861--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#package-conversion-manager)  | ![추가되지 않음](media/Red_X.gif) |  
+ | 콘텐츠 없이 소프트웨어 업데이트 배포 <!--1357933--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#deploy-software-updates-without-content)  | ![추가되지 않음](media/Red_X.gif) |  
+ | Office 365 설치 관리자와 Office 사용자 지정 도구 통합 <!--1358149--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#office-customization-tool-integration-with-the-office-365-installer)  | ![추가되지 않음](media/Red_X.gif) |  
+ | 클라우드 관리 게이트웨이의 향상된 기능 <!--1358215,1358651,503899--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#improvements-to-cloud-management-gateway)   | ![추가되지 않음](media/Red_X.gif) |  
+ | 보안 클라이언트 통신 개선 <!--1358278,1358279--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#improvements-to-secure-client-communications)  | ![추가되지 않음](media/Red_X.gif) |  
+ | 소프트웨어 센터 인프라 개선 사항 <!--1358309--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#software-center-infrastructure-improvements)  | ![추가되지 않음](media/Red_X.gif) |  
+ | 장치의 모든 사용자에 대해 Windows 앱 패키지 프로비전 <!--1358310--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#provision-windows-app-packages-for-all-users-on-a-device)  | ![추가되지 않음](media/Red_X.gif) |  
+ | Surface 대시보드에 대한 개선 사항 <!--1358654--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#improvements-to-the-surface-dashboard)  | ![추가되지 않음](media/Red_X.gif) |  
+ | 하드웨어 인벤토리 기본 단위 수정 버전 <!--514442--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#hardware-inventory-default-unit-revision)  | ![추가되지 않음](media/Red_X.gif) |  
  | 작업 순서에 대해 수동으로 구성된 단계를 사용하여 단계적 배포 만들기 <!--1358148--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#create-a-phased-deployment-with-manually-configured-phases-for-a-task-sequence)  | ![추가되지 않음](media/Red_X.gif) |  
  | Azure Resource Manager에 대한 클라우드 배포 지점 지원 <!--1322209--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#cloud-distribution-point-support-for-azure-resource-manager)  | ![추가되지 않음](media/Red_X.gif) |  
  | 관리 인사이트를 기반으로 작업 수행 <!--1357930--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#take-actions-based-on-management-insights)  | ![추가되지 않음](media/Red_X.gif) |  

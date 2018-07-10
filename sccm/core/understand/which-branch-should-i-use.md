@@ -10,12 +10,12 @@ ms.assetid: a3be4f8f-3d44-4e3c-9fa1-e85f30a36e72
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 258d8ac160e9ee31189f8771fd6109d1bb17f714
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 4331ec4120141ab9aa20301b9a99c3c6ebeef568
+ms.sourcegitcommit: 0305e710f634529793ae73e5aac24168ee4fe02f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32341341"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042748"
 ---
 # <a name="which-branch-of-configuration-manager-should-i-use"></a>사용해야 하는 Configuration Manager 분기
 
@@ -37,7 +37,7 @@ ms.locfileid: "32341341"
 
 Software Assurance 및 라이선스 옵션에 대한 자세한 내용은 [System Center Configuration Manager의 라이선스 및 분기](learn-more-editions.md) 및 [Configuration Manager 분기 및 라이선스에 대한 질문과 대답](/sccm/core/understand/product-and-licensing-faq)을 참조하세요.
 
-현재 분기는 1년에 여러 번 새로운 기능으로 업데이트됩니다. 각 업데이트 버전은 릴리스 후 1년 동안 지원됩니다. 해당 1년 기간이 만료되기 전에 현재 분기의 최신 버전으로 업데이트합니다. 최신 버전에 대한 업데이트는 콘솔 내 업데이트로 제공됩니다.
+Microsoft는 1년에 몇 차례 System Center Configuration Manager 현재 분기용 업데이트를 출시할 계획입니다. 1710 이전에 릴리스된 Configuration Manager 버전은 12개월 동안 지원됩니다. 1710 릴리스부터 각 업데이트 버전은 GA(일반 공급) 출시 날짜로부터 18개월 동안 지원됩니다. 기술 지원은 전체 지원 기간 동안 제공됩니다. 그러나 지원 구조는 최신 현재 분기 버전의 가용성에 따라 별도의 두 가지 서비스 단계로 발전하는 동적 구조입니다. 자세한 내용은 [System Center Configuration Manager 현재 분기 버전 지원](https://docs.microsoft.com/sccm/core/servers/manage/current-branch-versions-supported) 항목을 참조하세요. 최신 버전에 대한 업데이트는 콘솔 내 업데이트로 제공됩니다.
 
 현재 분기를 새 사이트로 설치하려면 [기준 미디어](/sccm/core/servers/manage/updates#baseline-and-update-versions)를 사용합니다. 또한 System Center 2012 Configuration Manager 서비스 팩 2 또는 System Center 2012 R2 Configuration Manager 서비스 팩 1에서 업그레이드하려면 기준 미디어를 사용합니다. 이 미디어에 대한 액세스는 조직이 System Center Configuration Manager 사용을 허가한 방식에 따라 달라집니다. 
 
