@@ -2,7 +2,7 @@
 title: 서비스 연결 지점
 titleSuffix: Configuration Manager
 description: 이 Configuration Manager 사이트 시스템 역할에 대해 알아보고 사용 범위를 이해하고 계획합니다.
-ms.date: 1/29/2018
+ms.date: 07/05/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: bc2282d5-0571-465b-9528-a555855eaacd
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 7328d7053d1fb06487e255fe4a24d6955c99c4b0
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 6002c077ae0a8e34f35a9d0e36d02f5950946bde
+ms.sourcegitcommit: 73b241a72db8f8f3bd7e269fc81ad49e14f01058
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32338053"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37843290"
 ---
 # <a name="about-the-service-connection-point-in-system-center-configuration-manager"></a>System Center Configuration Manager의 서비스 연결 지점 정보
 
@@ -98,6 +98,8 @@ Configuration Manager 서비스 관리자를 사용하려면 콘솔에서 **모�
 -   download.windowsupdate.com
 
 -   sccmconnected-a01.cloudapp.net  
+
+- configmgrbits.azureedge.net
 
 **Microsoft Intune**  
 
