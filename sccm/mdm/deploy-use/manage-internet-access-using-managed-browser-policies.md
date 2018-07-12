@@ -2,7 +2,7 @@
 title: 관리 브라우저 정책을 사용하여 인터넷 액세스 관리
 titleSuffix: Configuration Manager
 description: Intune Managed Browser를 배포하여 인터넷 액세스를 관리하고 제한합니다.
-ms.date: 03/05/2017
+ms.date: 07/06/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 8e25e00c-c9a8-473f-bcb7-ea989f6ca3c5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 8754219f36e30f2442178dc5521e05246948d3de
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 9fe64aef541a4e6405b0fbf6308afc6269d88f56
+ms.sourcegitcommit: f03cb34693b9806e9fecd3c0162de70cc8cb4b1e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32350149"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37886487"
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-system-center-configuration-manager"></a>System Center Configuration Manager를 통해 관리 브라우저 정책을 사용하여 인터넷 액세스 관리
 
@@ -86,55 +86,55 @@ System Center Configuration Manager에서는 Intune Managed Browser(웹 검색 �
 
 다음 정보를 사용하여 허용 및 차단 목록에 URL을 지정할 때 사용할 수 있는 형식 및 와일드카드에 대해 알아볼 수 있습니다.  
 
--   아래와 같은 허용 패턴 목록의 규칙에 따라 와일드 카드 기호 '**\***'를 사용할 수 있습니다.  
+-   아래와 같은 허용 패턴 목록의 규칙에 따라 와일드 카드 기호 `*`(별표)를 사용합니다.  
 
--   URL을 목록에 입력할 때 모든 URL의 앞에 **http** 또는 **https** 를 덧붙여야 합니다.  
+-   URL을 목록에 입력할 때 모든 URL의 앞에 **http** 또는 **https**를 붙입니다.  
 
--   주소에 포트 번호를 지정할 수 있습니다. 포트 번호를 지정하지 않은 경우 다음 값이 사용됩니다.  
+-   주소에 포트 번호를 지정합니다. 포트 번호를 지정하지 않으면 다음 값이 사용됩니다.  
 
     -   http의 경우 포트 80  
 
     -   https의 경우 포트 443  
 
-     포트 번호에 와일드 카드를 사용하도록 지원되지 않습니다(예: **http://www.contoso.com:\*** 및 **http://www.contoso.com:/\***).  
+     포트 번호에 와일드카드를 사용하지 마세요. 지원되지 않습니다. 예: `http://www.contoso.com:*`   
 
 -   다음 표를 사용하여 URL을 지정할 때 사용할 수 있는 패턴에 대해 알아볼 수 있습니다.  
 
     |URL|일치하는 항목|일치하지 않는 항목|  
     |---------|-------------|--------------------|  
-    |http://www.contoso.com<br /><br /> 단일 페이지와 일치|www.contoso.com|host.contoso.com<br /><br /> www.contoso.com/images<br /><br /> contoso.com/|  
-    |http://contoso.com<br /><br /> 단일 페이지와 일치|contoso.com/|host.contoso.com<br /><br /> www.contoso.com/images<br /><br /> www.contoso.com|  
-    |http://www.contoso.com/*<br /><br /> www.contoso.com으로 시작하는 모든 URL과 일치|www.contoso.com<br /><br /> www.contoso.com/images<br /><br /> www.contoso.com/videos/tvshows|host.contoso.com<br /><br /> host.contoso.com/images|  
-    |http://*.contoso.com/\*<br /><br /> contoso.com 아래의 모든 하위 도메인과 일치|developer.contoso.com/resources<br /><br /> news.contoso.com/images<br /><br /> news.contoso.com/videos|contoso.host.com|  
-    |http://www.contoso.com/images<br /><br /> 단일 폴더와 일치|www.contoso.com/images|www.contoso.com/images/dogs|  
-    |http://www.contoso.com:80<br /><br /> 포트 번호를 사용하여 단일 페이지와 일치|http://www.contoso.com:80||  
-    |https://www.contoso.com<br /><br /> 안전한 단일 페이지와 일치|https://www.contoso.com|http://www.contoso.com|  
-    |http://www.contoso.com/images/*<br /><br /> 단일 폴더 및 모든 하위 폴더와 일치|www.contoso.com/images/dogs<br /><br /> www.contoso.com/images/cats|www.contoso.com/videos|  
+    |`http://www.contoso.com`<br /><br /> 단일 페이지와 일치|`www.contoso.com`|`host.contoso.com`<br /><br /> `www.contoso.com/images`<br /><br /> `contoso.com/`|  
+    |`http://contoso.com`<br /><br /> 단일 페이지와 일치|`contoso.com`|`host.contoso.com`<br /><br /> `www.contoso.com/images`<br /><br /> `www.contoso.com`|  
+    |`http://www.contoso.com/*`<br /><br /> `www.contoso.com`으로 시작하는 모든 URL과 일치|`www.contoso.com`<br /><br /> `www.contoso.com/images`<br /><br /> `www.contoso.com/videos/tvshows`|`host.contoso.com`<br /><br /> `host.contoso.com/images`|  
+    |`http://*.contoso.com/*`<br /><br /> contoso.com 아래의 모든 하위 도메인과 일치|`developer.contoso.com/resources`<br /><br /> `news.contoso.com/images`<br /><br /> `news.contoso.com/videos`|`contoso.host.com`|  
+    |`http://www.contoso.com/images`<br /><br /> 단일 폴더와 일치|`www.contoso.com/images`|`www.contoso.com/images/dogs`|  
+    |`http://www.contoso.com:80`<br /><br /> 포트 번호를 사용하여 단일 페이지와 일치|`http://www.contoso.com:80`||  
+    |`https://www.contoso.com`<br /><br /> 안전한 단일 페이지와 일치|`https://www.contoso.com`|`http://www.contoso.com`|  
+    |`http://www.contoso.com/images/*`<br /><br /> 단일 폴더 및 모든 하위 폴더와 일치|`www.contoso.com/images/dogs`<br /><br /> `www.contoso.com/images/cats`|`www.contoso.com/videos`|  
 
 -   다음은 지정할 수 없는 몇몇 입력의 예입니다.  
 
-    -   *.com  
+    -   `*.com`  
 
-    -   *.contoso/\*  
+    -   `*.contoso/*`  
 
-    -   www.contoso.com/*images  
+    -   `www.contoso.com/*images`  
 
-    -   www.contoso.com/*images\*pigs  
+    -   `www.contoso.com/*images*pigs`  
 
-    -   www.contoso.com/page*  
+    -   `www.contoso.com/page*`  
 
     -   IP 주소  
 
-    -   https://*  
+    -   `https://*`  
 
-    -   http://*  
+    -   `http://*`  
 
-    -   http://www.contoso.com:*  
+    -   `http://www.contoso.com:*`  
 
-    -   http://www.contoso.com: /*  
+    -   `http://www.contoso.com: /*`  
 
 > [!NOTE]  
->  *.microsoft.com은 항상 허용됩니다.  
+>  `*.microsoft.com`은 항상 허용됩니다.  
 
 ### <a name="how-conflicts-between-the-allow-and-block-list-are-resolved"></a>허용 목록과 차단 목록 간의 충돌을 해결하는 방법  
  여러 관리 브라우저 정책을 장치에 배포했는데 설정이 충돌하면 모드(허용 또는 차단)와 URL 목록에 대해 모두 충돌을 평가합니다. 충돌이 발생할 경우 다음 동작이 적용됩니다.  
