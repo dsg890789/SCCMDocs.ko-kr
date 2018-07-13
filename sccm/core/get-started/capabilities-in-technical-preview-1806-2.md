@@ -100,7 +100,7 @@ Configuration Manager를 버전 1806.2로 ‘업데이트하기 전에’ SQL Na
 
 - **상태**: 이 단계의 현재 상태입니다. 각 단계는 다음 상태 중 하나일 수 있습니다.  
 
-    - **Deployment created**(배포가 생성됨): 단계적 배포에서 이 단계의 컬렉션에 대한 소프트웨어 배포를 만들었습니다. 클라이언트가 이 소프트웨어에서 적극적으로 대상으로 지정됩니다.  
+    - **배포가 생성됨**: 단계적 배포에서 이 단계의 컬렉션에 대한 소프트웨어 배포를 만들었습니다. 클라이언트가 이 소프트웨어에서 적극적으로 대상으로 지정됩니다.  
 
     - **대기 중**: 이전 단계가 배포의 성공 조건에 도달하지 못해 이 단계를 계속 진행합니다.  
 
@@ -195,7 +195,7 @@ MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.co
 
 - **클라이언트에 콘텐츠를 제공하지 않는 배포 지점**: 지난 30일 동안 클라이언트에 콘텐츠를 제공하지 않은 배포 지점입니다. 이 데이터는 클라이언트의 다운로드 기록 보고서를 기반으로 합니다.  
 
-- **Expired updates found**(만료된 업데이트 찾음): 만료된 업데이트는 배포에 적용되지 않습니다.   
+- **Expired updates found**(만료된 업데이트 있음): 만료된 업데이트는 배포에 적용되지 않습니다.   
 
 
 
@@ -215,7 +215,7 @@ MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.co
 ## <a name="bkmk_bgoptions"> </a> 피어 다운로드를 위한 경계 그룹 옵션
 <!--1356193--> 이제 경계 그룹에는 사용자 환경에서 콘텐츠 배포를 보다 세밀하게 제어할 수 있는 추가 설정이 포함됩니다. 이 릴리스에서는 다음 옵션을 추가합니다.  
 
-- **Allow peer downloads in this boundary group**(이 경계 그룹에서 피어 다운로드 허용): 이 설정은 기본적으로 사용하도록 설정되어 있습니다. 관리 지점은 피어 원본을 포함하는 콘텐츠 위치 목록을 클라이언트에 제공합니다. <!--This setting also affects applying Group IDs for Delivery Optimization.518268-->  
+- **이 경계 그룹에서 피어 다운로드 허용**: 이 설정은 기본적으로 사용하도록 설정되어 있습니다. 관리 지점은 피어 원본을 포함하는 콘텐츠 위치 목록을 클라이언트에 제공합니다. <!--This setting also affects applying Group IDs for Delivery Optimization.518268-->  
 
     이 옵션을 사용하지 않도록 설정해야 하는 두 가지 일반적인 시나리오가 있습니다.  
 
@@ -223,7 +223,7 @@ MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.co
 
     - 배포 지점을 참조하지 않는 사이트 할당에 하나의 큰 경계 그룹을 사용하는 경우.  
 
-- **During peer downloads, only use peers within the same subnet**(피어 다운로드 중 동일한 서브넷 내의 피어만 사용): 이 설정은 위의 설정에 따라 달라집니다. 이 옵션을 사용하도록 설정하면 관리 지점은 클라이언트와 동일한 서브넷에 있는 콘텐츠 위치 목록 피어 원본에만 포함됩니다.
+- **피어 다운로드 중에는 같은 서브넷 내의 피어만 사용**: 이 설정은 위의 설정에 따라 달라집니다. 이 옵션을 사용하도록 설정하면 관리 지점은 클라이언트와 동일한 서브넷에 있는 콘텐츠 위치 목록 피어 원본에만 포함됩니다.
 
     이 옵션을 사용하도록 설정하는 일반적인 시나리오:
 
@@ -233,7 +233,7 @@ MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.co
 
 
 ### <a name="known-issue"></a>알려진 문제
-피어 원본 클라이언트에 둘 이상의 IP 주소(IPv4, IPv6 또는 둘 다)가 있는 경우 피어 캐싱이 작동하지 않습니다. **During peer downloads, only use peers within the same subnet**(피어 다운로드 중 동일한 서브넷 내의 피어만 사용) 새 옵션은 피어 원본에 둘 이상의 IP 주소가 있는 경우, 적용되지 않습니다.<!--518661-->   
+피어 원본 클라이언트에 둘 이상의 IP 주소(IPv4, IPv6 또는 둘 다)가 있는 경우 피어 캐싱이 작동하지 않습니다. 새 옵션인 **피어 다운로드 중에는 같은 서브넷 내의 피어만 사용**은 피어 원본에 둘 이상의 IP 주소가 있는 경우, 적용되지 않습니다.<!--518661-->   
 
 
 
@@ -307,7 +307,7 @@ MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.co
 
     - [Azure Resource Manager를 사용하여 클라우드 배포 지점](/sccm/core/get-started/capabilities-in-technical-preview-1805#cloud-distribution-point-support-for-azure-resource-manager) 배포  
 
-- 고객이 Windows AutoPilot을 사용하여 온-프레미스 네트워크에 연결된 Azure Active Directory 가입 장치에서 Windows 10을 프로비전하고 있습니다. 이러한 장치에 Configuration Manager 클라이언트를 설치하거나 업그레이드하기 위해 **클라이언트의 익명 연결을 허용**하도록 구성된 클라우드 배포 지점이나 온-프레미스 배포 지점이 필요하지 않습니다. 대신 **Use Configuration Manager-generated certificates for HTTP site systems**(HTTP 사이트 시스템에 Configuration Manager 생성 인증서 사용) 사이트 옵션을 설정하여 클라우드 도메인 가입 클라이언트가 온-프레미스 HTTP 사용 배포 지점과 통신하도록 허용합니다. 자세한 내용은 [개선된 보안 클라이언트 통신](https://docs.microsoft.com/en-us/sccm/core/get-started/capabilities-in-technical-preview-1805#improved-secure-client-communications)을 참조하세요.<!--515854-->  
+- 고객이 Windows AutoPilot을 사용하여 온-프레미스 네트워크에 연결된 Azure Active Directory 가입 장치에서 Windows 10을 프로비전하고 있습니다. 이러한 장치에 Configuration Manager 클라이언트를 설치하거나 업그레이드하기 위해 **클라이언트의 익명 연결을 허용**하도록 구성된 클라우드 배포 지점이나 온-프레미스 배포 지점이 필요하지 않습니다. 대신 **HTTP 사이트 시스템에 Configuration Manager가 생성한 인증서 사용** 사이트 옵션을 설정하여 클라우드 도메인 가입 클라이언트가 온-프레미스 HTTP 사용 배포 지점과 통신하도록 허용합니다. 자세한 내용은 [개선된 보안 클라이언트 통신](https://docs.microsoft.com/en-us/sccm/core/get-started/capabilities-in-technical-preview-1805#improved-secure-client-communications)을 참조하세요.<!--515854-->  
 
 
 
