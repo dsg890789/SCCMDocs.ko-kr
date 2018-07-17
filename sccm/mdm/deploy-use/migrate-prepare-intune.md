@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: db97ae9e-34f4-4e10-a282-cd211f612bb4
-ms.openlocfilehash: a2636713f8c121eecd826eeba060f8e3f8e865f3
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 0d71abbe33def6e12e75c2042e48f3d7ddcfe5c6
+ms.sourcegitcommit: 06d490d526070e17d77e86bc6c200899ded911cb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32353167"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38967150"
 ---
 # <a name="prepare-intune-for-user-migration"></a>사용자 마이그레이션을 위한 Intune 준비 
 
@@ -66,7 +66,7 @@ Exchange 장치를 사용하면 Configuration Manager Exchange Connector에서 I
 - 사용자가 Intune 독립 실행형으로 마이그레이션되었으면 Configuration Manager의 조건부 액세스 대상에서 사용자를 제거합니다.
 
 ## <a name="configure-the-microsoft-intune-certificate-connector"></a>Microsoft Intune Certificate Connector 구성
-NDES를 사용하여 SCEP를 사용하는 인증서를 발급하는 경우 Microsoft Intune Certificate Connector를 구성해야 합니다. Intune에서 NDES 커넥터를 호스팅하는 컴퓨터는 Configuration Manager에서 NDES 커넥터를 호스팅하는 컴퓨터와 같을 수 없습니다. 자세한 내용은 [Intune을 사용하여 SCEP 인증서 구성 및 관리](https://docs.microsoft.com/en-us/intune/certificates-scep-configure)를 참조하세요. 
+NDES를 사용하여 SCEP를 사용하는 인증서를 발급하는 경우 Microsoft Intune Certificate Connector를 구성해야 합니다. Intune에서 NDES 커넥터를 호스팅하는 컴퓨터는 Configuration Manager에서 NDES 커넥터를 호스팅하는 컴퓨터와 같을 수 없습니다. 자세한 내용은 [Intune을 사용하여 SCEP 인증서 구성 및 관리](https://docs.microsoft.com/intune/certificates-scep-configure)를 참조하세요. 
 
 > [!Important]    
 > 커넥터를 구성한 후에 새 서버 URL을 참조하도록 가져온 SCEP 프로필을 수정해야 합니다.
