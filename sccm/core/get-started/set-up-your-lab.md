@@ -10,12 +10,12 @@ ms.assetid: b1970688-0cd2-404f-a17f-9e2aa4a78758
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: a1799dcffa55de80c0c700a56301d7d71f3b4a48
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 14251bb062423a31bcf74d2079b2e1b667f61ba9
+ms.sourcegitcommit: 06d490d526070e17d77e86bc6c200899ded911cb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32341970"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38967167"
 ---
 # <a name="set-up-your-system-center-configuration-manager-lab"></a>System Center Configuration Manager 랩 설정
 
@@ -30,7 +30,7 @@ ms.locfileid: "32341970"
 
      Windows Server 2012 R2 평가판은 [TechNet 평가 센터](https://www.microsoft.com/evalcenter/evaluate-windows-server-2012)에서 다운로드할 수 있습니다.  
 
-     이러한 실습 과정에서 참조된 일부 다운로드에 더 쉽게 액세스하려면 Internet Explorer 보안 강화 구성을 수정하거나 사용하지 않는 것이 좋습니다. 자세한 내용은 [Internet Explorer: 보안 강화 구성](https://technet.microsoft.com/en-us/library/dd883248\(v=ws.10\).aspx)을 참조하세요.  
+     이러한 실습 과정에서 참조된 일부 다운로드에 더 쉽게 액세스하려면 Internet Explorer 보안 강화 구성을 수정하거나 사용하지 않는 것이 좋습니다. 자세한 내용은 [Internet Explorer: 보안 강화 구성](https://technet.microsoft.com/library/dd883248\(v=ws.10\).aspx)을 참조하세요.  
 
 -   **랩 환경에서는 SQL Server 2012 SP2**를 사이트 데이터베이스로 사용합니다.  
 
@@ -58,11 +58,11 @@ ms.locfileid: "32341970"
 
 -   **도메인 컨트롤러는 Windows Server 2008 R2**(Active Directory Domain Services가 설치되어 있음)를 사용합니다. 또한 도메인 컨트롤러는 정규화된 도메인 이름에 사용할 DHCP 및 DNS 서버에 대한 호스트 역할을 합니다.  
 
-     자세한 내용은 이 [Active Directory Domain Services 개요](https://technet.microsoft.com/en-us/library/hh831484)를 참조하세요.  
+     자세한 내용은 이 [Active Directory Domain Services 개요](https://technet.microsoft.com/library/hh831484)를 참조하세요.  
 
 -   **Hyper-V는 몇몇 가상 컴퓨터와 함께 사용**되어 이 연습에서 수행하는 관리 단계가 예상대로 작동하는지 확인합니다. Windows 7 이상이 설치된 최소 3대의 가상 컴퓨터를 사용하는 것이 좋습니다.  
 
-     자세한 내용은 이 [Hyper-V 개요](https://technet.microsoft.com/en-us/library/hh831531.aspx)를 참조하세요.  
+     자세한 내용은 이 [Hyper-V 개요](https://technet.microsoft.com/library/hh831531.aspx)를 참조하세요.  
 
 -   이러한 모든 구성 요소에는 **관리자 권한**이 필요합니다.  
 
@@ -92,7 +92,7 @@ ms.locfileid: "32341970"
 다음 단계는 Configuration Manager 클라이언트가 사이트 리소스를 찾기 위해 Active Directory Domain Services를 쿼리하도록 하는 데 필요하며 다음 절차에 나열됩니다.  
 
 ##  <a name="BKMK_CreateSysMgmtLab"></a> 시스템 관리 컨테이너 만들기  
- Configuration Manager에서는 스키마를 확장할 때 Active Directory Domain Services에서 필요한 시스템 관리 컨테이너가 자동으로 만들어지지 않습니다. 따라서 랩을 위해 이를 만듭니다. 이 단계를 수행하려면 [ADSI 편집 설치](https://technet.microsoft.com/en-us/library/cc773354\(WS.10\).aspx#BKMK_InstallingADSIEdit)가 필요합니다.  
+ Configuration Manager에서는 스키마를 확장할 때 Active Directory Domain Services에서 필요한 시스템 관리 컨테이너가 자동으로 만들어지지 않습니다. 따라서 랩을 위해 이를 만듭니다. 이 단계를 수행하려면 [ADSI 편집 설치](https://technet.microsoft.com/library/cc773354\(WS.10\).aspx#BKMK_InstallingADSIEdit)가 필요합니다.  
 
  Active Directory Domain Services의 **시스템** 컨테이너에 대해 **모든 자식 개체 만들기** 권한이 있는 계정으로 로그온해야 합니다.  
 
@@ -136,7 +136,7 @@ ms.locfileid: "32341970"
 
 #### <a name="to-extend-the-active-directory-schema-using-extadschexe"></a>extadsch.exe를 사용하여 Active Directory 스키마를 확장하려면  
 
-1.  스키마 마스터 도메인 컨트롤러의 시스템 상태에 대한 백업을 만듭니다. 백업 마스터 도메인 컨트롤러에 대한 자세한 내용은 [Windows Server 백업](https://technet.microsoft.com/en-us/library/cc770757.aspx)을 검토하세요.  
+1.  스키마 마스터 도메인 컨트롤러의 시스템 상태에 대한 백업을 만듭니다. 백업 마스터 도메인 컨트롤러에 대한 자세한 내용은 [Windows Server 백업](https://technet.microsoft.com/library/cc770757.aspx)을 검토하세요.  
 
 2.  설치 미디어에서 **\SMSSETUP\BIN\X64** 으로 이동합니다.  
 
@@ -155,7 +155,7 @@ ms.locfileid: "32341970"
 
  **.NET을 설치하고 Windows Communication Foundation을 활성화합니다.**  
 
- 두 .NET Framework를 설치해야 합니다. 먼저 .NET 3.5.1을 설치한 다음 .NET 4.5.2 이상을 설치합니다. WCF(Windows Communication Foundation)도 활성화해야 합니다. WCF는 분산 컴퓨팅, 광범위한 상호 운용성 및 서비스 방향에 대한 직접 지원에 관리 가능한 접근을 제공하도록 설계되었으며 서비스 지향 프로그래밍 모델을 통해 연결된 응용 프로그램의 배포를 간소화합니다. WCF에 대한 자세한 내용은 [Windows Communication Foundation 정의](https://technet.microsoft.com/en-us/subscriptions/ms731082\(v=vs.90\).aspx) 를 검토하세요.  
+ 두 .NET Framework를 설치해야 합니다. 먼저 .NET 3.5.1을 설치한 다음 .NET 4.5.2 이상을 설치합니다. WCF(Windows Communication Foundation)도 활성화해야 합니다. WCF는 분산 컴퓨팅, 광범위한 상호 운용성 및 서비스 방향에 대한 직접 지원에 관리 가능한 접근을 제공하도록 설계되었으며 서비스 지향 프로그래밍 모델을 통해 연결된 응용 프로그램의 배포를 간소화합니다. WCF에 대한 자세한 내용은 [Windows Communication Foundation 정의](https://technet.microsoft.com/subscriptions/ms731082\(v=vs.90\).aspx) 를 검토하세요.  
 
 #### <a name="to-install-net-and-activate-windows-communication-foundation"></a>.NET을 설치하고 Windows Communication Foundation을 활성화하려면  
 
@@ -197,25 +197,25 @@ ms.locfileid: "32341970"
 
 자세한 내용은 이 .NET Framework가 필요한 이유에 대한 다음 문서를 검토하세요.  
 
--   [.NET Framework 버전 및 종속성](https://technet.microsoft.com/en-us/library/bb822049.aspx)  
+-   [.NET Framework 버전 및 종속성](https://technet.microsoft.com/library/bb822049.aspx)  
 
--   [.NET Framework 4 RTM 응용 프로그램 호환성 연습](https://technet.microsoft.com/en-us/library/dd889541.aspx)  
+-   [.NET Framework 4 RTM 응용 프로그램 호환성 연습](https://technet.microsoft.com/library/dd889541.aspx)  
 
--   [방법: ASP.NET 웹 응용 프로그램을 ASP.NET 4로 업그레이드](https://technet.microsoft.com/en-us/library/dd483478\(VS.100\).aspx)  
+-   [방법: ASP.NET 웹 응용 프로그램을 ASP.NET 4로 업그레이드](https://technet.microsoft.com/library/dd483478\(VS.100\).aspx)  
 
 -   [Microsoft .NET Framework 지원 기간 정책 FAQ](https://support.microsoft.com/en-us/gp/framework_faq?WT.mc_id=azurebg_email_Trans_943_NET452_Update)  
 
--   [CLR 자세히 보기 - In-Process Side-by-Side](https://msdn.microsoft.com/en-us/magazine/ee819091.aspx)  
+-   [CLR 자세히 보기 - In-Process Side-by-Side](https://msdn.microsoft.com/magazine/ee819091.aspx)  
 
 **BITS, IIS 및 RDC 사용**  
 
-[BITS(Background Intelligent Transfer Service)](https://technet.microsoft.com/en-us/library/dn282296.aspx) 는 클라이언트와 서버 간에 파일을 비동기적으로 전송하는 데 필요한 응용 프로그램에 사용됩니다. BITS는 전경과 배경에서 전송의 흐름을 측정하여 다른 네트워크 응용 프로그램의 응답을 유지합니다. 또한 전송 세션이 중단되는 경우 파일 전송이 자동으로 다시 시작됩니다.  
+[BITS(Background Intelligent Transfer Service)](https://technet.microsoft.com/library/dn282296.aspx) 는 클라이언트와 서버 간에 파일을 비동기적으로 전송하는 데 필요한 응용 프로그램에 사용됩니다. BITS는 전경과 배경에서 전송의 흐름을 측정하여 다른 네트워크 응용 프로그램의 응답을 유지합니다. 또한 전송 세션이 중단되는 경우 파일 전송이 자동으로 다시 시작됩니다.  
 
 이 사이트 서버가 관리 지점으로도 사용되므로 이 랩에 대한 BITS를 설치합니다.  
 
 IIS(인터넷 정보 서비스)는 웹에서 서비스를 호스트하는 데 사용할 수 있는 유연하고 확장성 있는 웹 서버입니다. 이는 많은 사이트 시스템 역할을 위해 Configuration Manager에서 사용됩니다. IIS에 대한 자세한 내용은 [System Center Configuration Manager의 사이트 시스템 서버용 웹 사이트](../../core/plan-design/network/websites-for-site-system-servers.md)를 참조하세요.  
 
-[RDC(원격 차등 압축)](https://technet.microsoft.com/en-us/library/cc754372.aspx) 은 응용 프로그램이 파일 집합에 변경 사항이 생겼는지 확인하는 데 사용할 수 있는 API 집합입니다. RDC를 통해 응용 프로그램이 파일의 변경된 부분만 복제하므로 네트워크 트래픽을 최소로 유지할 수 있습니다.  
+[RDC(원격 차등 압축)](https://technet.microsoft.com/library/cc754372.aspx) 은 응용 프로그램이 파일 집합에 변경 사항이 생겼는지 확인하는 데 사용할 수 있는 API 집합입니다. RDC를 통해 응용 프로그램이 파일의 변경된 부분만 복제하므로 네트워크 트래픽을 최소로 유지할 수 있습니다.  
 
 #### <a name="to-enable-bits-iis-and-rdc-site-server-roles"></a>BITS, IIS 및 RDC 사이트 서버 역할을 사용하도록 설정하려면  
 
