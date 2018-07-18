@@ -1,6 +1,5 @@
 ---
 title: Intune에서 Lookout MTD 사용
-titleSuffix: Configuration Manager
 description: Microsoft Intune 포털에서 Lookout MTD(모바일 위협 방어)를 사용하도록 설정합니다.
 ms.date: 05/31/2018
 ms.prod: configuration-manager
@@ -10,12 +9,12 @@ ms.assetid: 7e4ada34-63bf-4b9f-8246-31816aa44196
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0de1859d97eed804eced58028d6459ab682f9b3f
-ms.sourcegitcommit: 9cff0702c2cc0f214173b47ec241f7e5a40f84e6
+ms.openlocfilehash: 179aae5fdbd8d6c09a34dca6dd01437d5f61f7b8
+ms.sourcegitcommit: 0a4556820fabe004d45a82b0ee1176f6891ac9f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745438"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949597"
 ---
 # <a name="enable-lookout-mtd-connection-in-the-intune-admin-console"></a>Intune 관리 콘솔에서 Lookout MTD 연결 사용
 
@@ -50,7 +49,7 @@ ms.locfileid: "34745438"
 - **Android 4.1+ 장치를 Lookout for Work MTD에 연결**: 이 옵션을 사용하도록 설정하면 Android 4.1+ 장치가 보안 위험을 Intune에 보고하게 할 수 있습니다.  
     - **수신된 데이터가 없는 경우 비규격으로 표시**: Intune이 Lookout에서 이 플랫폼의 장치에 대한 데이터를 수신하지 못하면 장치를 비규격으로 간주합니다.  
 
-- **iOS 8.0+ 장치를 Lookout for Work MTD에 연결**: 이 옵션을 사용하도록 설정하면 Android 4.1+ 장치가 보안 위험을 Intune에 보고하게 할 수 있습니다.
+- **iOS 8.0+ 장치를 Lookout for Work MTD에 연결**: 이 옵션을 사용하도록 설정하면 iOS 8.0+ 장치가 보안 위험을 Intune에 보고하게 할 수 있습니다.
     - **수신된 데이터가 없는 경우 비규격으로 표시**: Intune이 Lookout에서 이 플랫폼의 장치에 대한 데이터를 수신하지 못하면 장치를 비규격으로 간주합니다.  
 
 > [!TIP]  

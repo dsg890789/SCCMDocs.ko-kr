@@ -2,7 +2,7 @@
 title: 하이브리드 MDM의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 장치 관리 기능에 대해 알아봅니다.
-ms.date: 07/05/2018
+ms.date: 07/12/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 7b127cee-61f1-4681-9760-caebed36ddf5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5d527d2fc4fdc52e132b6f603d9b83851e1693f3
-ms.sourcegitcommit: c9d0a4c24ce90825cb2d05e4fe37c5b41fa48a50
+ms.openlocfilehash: d2a705ed8b09e4c2de92baa22164cbe97f180462
+ms.sourcegitcommit: e54e9d4a735e72b84095e0017c5bec50af480207
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37923541"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039627"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 장치 관리의 새로운 기능
 
@@ -43,6 +43,17 @@ ms.locfileid: "37923541"
 ## <a name="july-2018"></a>2018년 7월
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+#### <a name="support-for-security-enhancement-in-intune-service"></a>Intune 서비스의 보안 강화 지원
+<!--2520152--> 이제 모든 할당된 준수 정책이 없는 장치가 하이브리드에서 준수되지 않음을 지정할 수 있습니다. Azure Portal의 Intune에서 이 설정을 구성합니다. 이 기능을 사용하여 내부 리소스를 보호하는 것이 좋습니다.
+
+이 기능은 하이브리드 테넌트에서는 기본적으로 해제되어 있습니다. 이 기능을 활성화하면 할당된 준수 정책이 없는 장치는 비준수로 간주됩니다. 조건부 액세스도 활성화하면 이러한 장치는 내부 리소스에 액세스할 수 없게 됩니다. 이러한 리소스는 사용자 환경의 조건부 액세스 정책에 따라 Outlook 또는 SharePoint일 수 있습니다. 이 설정을 해제해도 이러한 장치는 현재와 동일한 수준의 액세스 권한을 유지합니다.
+
+이 기능이 미치는 영향을 확인하는 데 도움이 되도록 [TechNet 갤러리의 스크립트](https://gallery.technet.microsoft.com/SQL-Query-for-Hybrid-MDM-5bcb8695)가 제공되었습니다. Configuration Manager 데이터베이스에 대해 이 스크립트를 실행하면 준수 정책의 대상이 아닌 장치가 나열됩니다.
+
+자세한 내용은 다음 아티클을 참조하세요.
+- [Intune 서비스의 보안 강화 기능](https://aka.ms/compliance_policies) 블로그 게시물 
+- [Configuration Manager의 장치 준수 정책](/sccm/mdm/deploy-use/device-compliance-policies)
 
 #### <a name="updates-to-out-of-compliance-messages-in-company-portal-app"></a>회사 포털 앱에서 규정에 맞지 않는 메시지에 대한 업데이트 
 <!--1832222--> 장치가 규정에 맞지 않는 경우 장치 사용자에게 표시되는 메시지를 수정합니다. 메시지의 원래 의미는 유지하지만 기술 용어를 줄이고 더 친근한 언어로 업데이트합니다. 설명서와 수정 단계에 대한 링크도 새로 고쳐서 최신 상태로 유지합니다.  
