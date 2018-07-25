@@ -10,12 +10,12 @@ ms.assetid: 2629c376-ec43-4f0e-a78b-4223cc9302bf
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 8a89c9d5a0fa4ea57a7824fe16b24120347ddaac
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: ed6174bcb3c99461b00ec5fc57d4508b9390747d
+ms.sourcegitcommit: acad0674b2743193f87990fb50194c4f17823a8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32338036"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39146931"
 ---
 # <a name="deploy-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 배포
 
@@ -102,7 +102,7 @@ Configuration Manager에서 장치 또는 사용자 컬렉션에 응용 프로�
 - **이 응용 프로그램의 대체된 버전을 자동으로 업그레이드**: 클라이언트가 응용 프로그램의 모든 교체된 버전을 교체하는 응용 프로그램으로 업그레이드합니다.    
 
     > [!NOTE]  
-    > 1802 버전부터 **사용 가능** 또는 **필수** 설치 목적으로 이 옵션을 사용하거나 사용하지 않도록 설정할 수 있습니다. <!--1351266--> 
+    > 1802 버전부터 **사용 가능** 설치 목적으로 이 옵션을 사용하거나 사용하지 않도록 설정할 수 있습니다. <!--1351266--> 
 
 
 ### <a name="specify-scheduling-settings-for-the-deployment"></a>배포에 대한 일정 설정 지정
@@ -195,8 +195,7 @@ Configuration Manager에서 장치 또는 사용자 컬렉션에 응용 프로�
 
 
 ## <a name="deploy-user-available-applications-on-azure-ad-joined-devices"></a>Azure AD 가입 장치에서 사용자가 사용할 수 있는 응용 프로그램 배포
-<!-- 1322613 -->
-응용 프로그램을 사용자가 사용할 수 있도록 배포한 경우 1802 버전부터 Azure AD(Azure Active Directory) 장치에서 소프트웨어 센터를 통해 해당 응용 프로그램을 찾아보고 설치할 수 있습니다.  
+<!-- 1322613 --> 응용 프로그램을 사용자가 사용할 수 있도록 배포한 경우 1802 버전부터 Azure AD(Azure Active Directory) 장치에서 소프트웨어 센터를 통해 해당 응용 프로그램을 찾아보고 설치할 수 있습니다.  
 
 #### <a name="prerequisites"></a>필수 구성 요소
 
