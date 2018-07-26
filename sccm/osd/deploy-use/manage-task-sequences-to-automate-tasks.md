@@ -10,12 +10,12 @@ ms.assetid: a1f099f1-e9b5-4189-88b3-f53e3b4e4add
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 26d43b1ee065f3ae0b1221ca81e69f6cb1da6f6c
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 983b6b73c79c51792bf015c74d40466231fbaf3d
+ms.sourcegitcommit: 7c26485b600544a64a5cf2edca6f2f8f29fecde9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32351863"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39130673"
 ---
 # <a name="manage-task-sequences-to-automate-tasks-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업을 자동화하는 작업 순서 관리
 
@@ -262,6 +262,9 @@ Configuration Manager 환경에서 작업 순서를 사용하여 단계를 자�
 
         -   **필수**: 구성된 일정에 따라 자동으로 작업 순서가 배포됩니다. 작업 순서가 숨겨지지 않은 경우라도 사용자는 여전히 배포 상태를 추적할 수 있습니다. 소프트웨어 센터를 사용하여 최종 기한 전에 작업 순서를 설치할 수 있습니다.  
 
+        >  [!NOTE]  
+        >  여러 사용자가 장치에 로그인된 경우 소프트웨어 센터에 패키지 및 작업 순서 배포가 나타나지 않을 수 있습니다.
+
     -   **사용자의 로그인 여부에 상관없이 일정에 따라 자동으로 배포**: 이 옵션은 작업 순서를 배포하는 경우에는 사용할 수 없습니다.  
 
     -   **절전 모드 해제 패킷 보내기**: 배포 목적이 **필수** 로 설정된 경우 이 옵션을 선택하면 사이트가 배포를 실행하기 전에 컴퓨터에 절전 모드 해제 패킷을 전송합니다. 이 패킷은 설치 최종 기한 시간에 절전 모드를 해제하고 컴퓨터를 다시 시작합니다. 이 옵션을 사용하려면 먼저 컴퓨터와 네트워크에 Wake-On-LAN을 구성해야 합니다.  
@@ -478,8 +481,7 @@ Configuration Manager 환경에서 작업 순서를 사용하여 단계를 자�
 6.  컬렉션에 모든 변수를 추가한 후 **확인**을 클릭합니다.  
 
 ## <a name="add-child-task-sequences-to-a-task-sequence"></a>작업 순서에 자식 작업 순서 추가
-<!--1261338-->
-Configuration Manager 버전 1710부터 다른 작업 순서를 실행하는 새 작업 순서 단계를 추가할 수 있습니다. 이 단계는 작업 순서 간에 부모-자식 관계를 만듭니다. 이 단계를 사용하면 다시 사용 가능한 모듈식 작업 순서를 더 만들 수 있습니다.  
+<!--1261338--> Configuration Manager 버전 1710부터 다른 작업 순서를 실행하는 새 작업 순서 단계를 추가할 수 있습니다. 이 단계는 작업 순서 간에 부모-자식 관계를 만듭니다. 이 단계를 사용하면 다시 사용 가능한 모듈식 작업 순서를 더 만들 수 있습니다.  
 
 > [!Note]  
 > Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  

@@ -10,12 +10,12 @@ ms.assetid: caad0507-9913-415a-b13d-d36f8f0a1b80
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 6f34fd322e5f94550602d7883a0303d10059b702
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 4815695ad67ac86491da9ea3274fd7db660c8190
+ms.sourcegitcommit: 7c26485b600544a64a5cf2edca6f2f8f29fecde9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32341953"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39130649"
 ---
 # <a name="packages-and-programs-in-system-center-configuration-manager"></a>System Center Configuration Manager의 패키지 및 프로그램
 
@@ -212,6 +212,9 @@ System Center Configuration Manager는 Configuration Manager 2007에서 사용�
 
         -   **필수**: 구성된 일정에 따라 자동으로 패키지 및 프로그램이 배포됩니다. 그러나 사용자는 패키지 및 프로그램 배포 상태를 추적 하 고 소프트웨어 센터를 사용 하 여 최종 기한 전에 설치할 수 있습니다.  
 
+        >  [!NOTE]  
+        >  여러 사용자가 장치에 로그인된 경우 소프트웨어 센터에 패키지 및 작업 순서 배포가 나타나지 않을 수 있습니다.
+        
     -   **절전 모드 해제 패킷 보내기**: 배포 목적이 **필수**로 설정된 경우 이 옵션을 선택하면 설치 최종 기한 시간에 컴퓨터의 절전 모드를 해제하기 위해 배포를 설치하기 전에 컴퓨터에 절전 모드 해제 패킷이 전송됩니다. 이 옵션을 사용 하려면 먼저 Wake On LAN에 대 한 컴퓨터를 구성 해야 합니다.  
 
     -  **설치 최종 기한에 도달한 후 클라이언트에서 요금제 인터넷 연결을 사용하여 콘텐츠를 다운로드하도록 허용(추가 비용이 발생할 수 있음)**: 필요한 경우 이 옵션을 선택합니다.  
