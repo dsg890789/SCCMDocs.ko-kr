@@ -38,9 +38,9 @@ Configuration Manager 응용 프로그램 및 배포 유형을 만드는 데 필
 
 |장치 유형|지원되는 파일 형식|  
 |-----------------|---------------------|  
-|Windows Phone 8|*.xap|  
-|Windows Phone 8.1|*.xap, *.appx, *.appxbundle|
-|Windows 10 Mobile|*.xap, *.appx, *.appxbundle|
+|Windows Phone 8|.xap|  
+|Windows Phone 8.1|.xap, .appx, .appxbundle|
+|Windows 10 Mobile|.xap, .appx, .appxbundle|
 
  다음 배포 작업이 지원됩니다.  
 
