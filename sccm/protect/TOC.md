@@ -1,10 +1,5 @@
 # 이해 및 탐색
 ## [개요](understand\protect-data-and-site-infrastructure.md)
-## [사이트 백업](understand/backup-and-recovery.md)
-## [사이트 복구](understand/recover-sites.md)
-## [무인 사이트 복구](understand/unattended-recovery.md)
-## [고가용성 옵션](understand/high-availability-options.md)
-## [높은 위험 수준의 배포 관리](understand/settings-to-manage-high-risk-deployments.md)
 
 # 계획 및 디자인
 ## [인증서 프로필 필수 조건](plan-design/prerequisites-for-certificate-profiles.md)
