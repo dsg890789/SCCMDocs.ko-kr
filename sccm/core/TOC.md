@@ -2,6 +2,7 @@
 ##  [Configuration Manager 소개](understand/introduction.md)
 ### [Configuration Manager에 대한 도움말 찾기](understand/find-help.md)
 ### [문서 사용 방법](understand/use-docs.md)
+### [콘솔 사용](servers/manage/admin-console.md)
 ### [접근성 기능](understand/accessibility-features.md)
 ### [소프트웨어 센터 사용자 가이드](understand/software-center.md)
 ##  [Configuration Manager의 기본 사항](understand/fundamentals.md)
@@ -30,15 +31,9 @@
 ###  [기능 및 특성](plan-design/changes/features-and-capabilities.md)
 ###  [Configuration Manager 2012에서 변경된 내용](plan-design/changes/what-has-changed-from-configuration-manager-2012.md)
 ###  [증분 버전의 새로운 기능](plan-design/changes/whats-new-incremental-versions.md)
+###  [버전 1806의 새로운 기능](plan-design/changes/whats-new-in-version-1806.md)
 ###  [버전 1802의 새로운 기능](plan-design/changes/whats-new-in-version-1802.md)
 ###  [버전 1710의 새로운 기능](plan-design/changes/whats-new-in-version-1710.md)
-###  [버전 1706의 새로운 기능](plan-design/changes/whats-new-in-version-1706.md)
-<!--
-###  [What's new in version 1702](plan-design/changes/whats-new-in-version-1702.md)
-###  [What's new in version 1610](plan-design/changes/whats-new-in-version-1610.md)
-###  [What's new in version 1606](plan-design/changes/whats-new-in-version-1606.md)
-###  [What's new in version 1602](plan-design/changes/whats-new-in-version-1602.md)
--->
 ###  [제거되는 기능과 사용되지 않는 기능](plan-design/changes/deprecated/removed-and-deprecated.md)
 #### [제거되는 기능과 사용되지 않는 기능](plan-design/changes/deprecated/removed-and-deprecated-cmfeatures.md)
 #### [사이트 서버에서 제거되거나 사용되지 않음](plan-design/changes/deprecated/removed-and-deprecated-server.md)
@@ -65,6 +60,7 @@
 #### [클라우드 기반 배포 지점 사용](plan-design/hierarchy/use-a-cloud-based-distribution-point.md)
 #### [풀(pull) 배포 지점 사용](plan-design/hierarchy/use-a-pull-distribution-point.md)
 #### [콘텐츠 라이브러리](plan-design/hierarchy/the-content-library.md)
+#### [순서도 – 콘텐츠 라이브러리 관리](plan-design/hierarchy/manage-content-library-flowchart.md)
 #### [콘텐츠 라이브러리 정리 도구](plan-design/hierarchy/content-library-cleanup-tool.md)
 #### [콘텐츠에 액세스하기 위한 계정 관리](plan-design/hierarchy/manage-accounts-to-access-content.md)
 #### [Configuration Manager 클라이언트에 대한 피어 캐시](plan-design/hierarchy/client-peer-cache.md)
@@ -84,17 +80,9 @@
 
 ##   [진단 및 사용 현황 데이터](plan-design/diagnostics/diagnostics-and-usage-data.md)
 ###  [진단 및 사용 현황 데이터 사용 방법](plan-design/diagnostics/how-diagnostics-and-usage-data-is-used.md)
+###  [1806에 대한 진단 데이터](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1806.md)
 ###  [1802에 대한 진단 데이터](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1802.md)
 ###  [1710에 대한 진단 데이터](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1710.md)
-###  [1706에 대한 진단 데이터](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1706.md)
-<!--
-###  [Diagnostic data for 1702](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1702.md)
-###  [Diagnostic data for 1610](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1610.md)
-###  [Diagnostic data for 1606](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1606.md)
-###  [Diagnostic data for 1602](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1602.md)
-###  [Diagnostic data for 1511](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1511.md)
-
--->
 ###  [진단 및 사용 현황 데이터 수집 방법](plan-design/diagnostics/how-diagnostics-and-usage-data-is-collected.md)
 ###  [진단 및 사용 현황 데이터를 보는 방법](plan-design/diagnostics/view-diagnostics-and-usage-data.md)
 ###  [CEIP(사용자 환경 개선 프로그램)](plan-design/diagnostics/customer-experience-improvement-program-ceip.md)
@@ -175,9 +163,14 @@
 ###  [사이트 경계 및 경계 그룹](servers/deploy/configure/define-site-boundaries-and-boundary-groups.md)
 #### [경계](servers/deploy/configure/boundaries.md)
 #### [경계 그룹](servers/deploy/configure/boundary-groups.md)
-###  [SQL Server Always On 사용 준비](servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database.md)
-###  [SQL Server Always On 구성](servers/deploy/configure/configure-aoag.md)
-###  [SQL Server 클러스터 사용](servers/deploy/configure/use-a-sql-server-cluster-for-the-site-database.md)
+###  [고가용성 옵션](servers/deploy/configure/high-availability-options.md)
+#### [사이트 서버 고가용성](servers/deploy/configure/site-server-high-availability.md)
+#### [순서도-수동 사이트 서버 설치](servers/deploy/configure/passive-site-server-flowchart.md)
+#### [순서도-사이트 서버 승격(계획됨)](servers/deploy/configure/promote-site-server-flowchart.md)
+#### [순서도-사이트 서버 승격(계획되지 않음)](servers/deploy/configure/promote-site-server-unplanned-flowchart.md)
+#### [SQL Server Always On 사용 준비](servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database.md)
+#### [SQL Server Always On 구성](servers/deploy/configure/configure-aoag.md)
+#### [SQL Server 클러스터 사용](servers/deploy/configure/use-a-sql-server-cluster-for-the-site-database.md)
 ###  [데이터베이스 파일에 대한 사용자 지정 위치](servers/deploy/configure/custom-locations-for-site-database-files.md)
 ###  [역할 기반 관리 구성](servers/deploy/configure/configure-role-based-administration.md)
 ###  [Azure 서비스 구성](servers/deploy/configure/azure-services-wizard.md)
@@ -193,12 +186,10 @@
 ###  [프록시 서버 지원](plan-design/network/proxy-server-support.md)
 ###  [릴리스 정보](servers/deploy/install/release-notes.md)
 ###  [유니코드 및 ASCII 지원](plan-design/hierarchy/unicode-and-ascii-support.md)
-<!-- Deprecated from Content - still published but out of TOC:
-#### [Boundary groups for versions prior to 1610](servers/deploy/configure/boundary-groups-for-1511-1602-and-1606.md)
--->
 
 #    인프라 관리
-## [관리 정보](servers/manage/management-insights.md)
+##   [관리 정보](servers/manage/management-insights.md)
+##   [CMPivot](servers/manage/cmpivot.md)
 ##   [유지 관리 작업](servers/manage/maintenance-tasks.md)
 ###  [유지 관리 작업에 대한 참조](servers/manage/reference-for-maintenance-tasks.md)
 ##   [인프라 수정](servers/manage/modify-your-infrastructure.md)
@@ -215,17 +206,17 @@
 ###  [서비스 연결 도구 사용](servers/manage/use-the-service-connection-tool.md)
 ###  [업데이트 등록 도구 사용](servers/manage/use-the-update-registration-tool-to-import-hotfixes.md)
 ###  [핫픽스 설치 관리자 사용](servers/manage/use-the-hotfix-installer-to-install-updates.md)
+###  [업데이트 1806을 설치하기 위한 검사 목록](servers/manage/checklist-for-installing-update-1806.md)
 ###  [업데이트 1802를 설치하기 위한 검사 목록](servers/manage/checklist-for-installing-update-1802.md)
 ###  [업데이트 1710을 설치하기 위한 검사 목록](servers/manage/checklist-for-installing-update-1710.md)
-###  [업데이트 1706을 설치하기 위한 검사 목록](servers/manage/checklist-for-installing-update-1706.md)
-<!-- Deprecated from Content - still published but out of TOC:
-###  [Checklist for installing update 1702](servers/manage/checklist-for-installing-update-1702.md)
-###  [Checklist for installing update 1610](servers/manage/checklist-for-installing-update-1610.md)
-###  [Checklist for installing update 1606](servers/manage/checklist-for-installing-update-1606.md)
-###  [Checklist for installing update 1602](servers/manage/checklist-for-installing-update-1602.md)
--->
 ###  [현재 분기 버전 지원](servers/manage/current-branch-versions-supported.md)  
 
+##   백업 및 복구
+###  [사이트 백업](servers/manage/backup-and-recovery.md)
+###  [사이트 복구](servers/manage/recover-sites.md)
+###  [무인 사이트 복구](servers/manage/unattended-recovery.md)
+
+##   [사이트 오류 영향](servers/manage/site-failure-impacts.md)
 
 ##   인프라 모니터링
 ###  [경고 및 상태 시스템 사용](servers/manage/use-alerts-and-the-status-system.md)
@@ -249,6 +240,25 @@
 #### [사용자 지정 보고서 모델 만들기](servers/manage/creating-custom-report-models-in-sql-server-reporting-services.md)
 #### [보고에 대한 보안 및 개인 정보](servers/manage/security-and-privacy-for-reporting.md)
 ###  [데이터 웨어하우스](servers/manage/data-warehouse.md)
+
+## [Configuration Manager 도구](support/tools.md)
+### [CMTrace](support/cmtrace.md) 
+### [클라이언트 감시](support/clispy.md)
+### [배포 모니터링 도구](support/deployment-monitoring-tool.md)
+### [정책 감시](support/policy-spy.md)
+### [전원 뷰어 도구](support/power-viewer-tool.md)
+### [일정 보내기 도구](support/send-schedule-tool.md)
+### [DP 작업 큐 관리자](support/dp-job-manager.md)
+### [컬렉션 평가 뷰어](support/ceviewer.md)
+### [콘텐츠 라이브러리 탐색기](support/content-library-explorer.md)
+### [콘텐츠 라이브러리 전송](support/content-library-transfer.md)
+### [콘텐츠 소유권 도구](support/content-ownership-tool.md)
+### [역할 기반 관리 및 감사 도구](support/rbaviewer.md)
+### [측정기 요약 도구 실행](support/run-meter-summ.md)
+
+<!--## [Support Center]-->
+
+## [높은 위험 수준의 배포 관리](servers/manage/settings-to-manage-high-risk-deployments.md)
 
 #    클라이언트 배포
 ##   클라이언트 배포 계획

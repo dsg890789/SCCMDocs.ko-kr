@@ -13,7 +13,7 @@
 
 ## [SCAP(보안 콘텐츠 자동화 프로토콜) 확장](plan-design/scap/about-scap.md)
 ### [SCAP 확장 설치 및 구성](plan-design/scap/install-configure-scap.md)
-### [SCAP 준수 설정 가져오기](plan-design/scap/import-scap-compliance-settings.md)
+### [SCAP 준수 배포 및 모니터링](plan-design/scap/deploy-monitor-export.md)
 ### [SCAP 확장 문제 해결](plan-design/scap/troubleshooting-scap.md)
 
 # 배포 및 사용

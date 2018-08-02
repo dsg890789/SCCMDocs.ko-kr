@@ -32,6 +32,7 @@
 ## [Windows 10 업데이트 전송 최적화](deploy-use/optimize-windows-10-update-delivery.md)
 ## [Windows 10 업데이트에 대한 빠른 설치 파일 관리](deploy-use/manage-express-installation-files-for-windows-10-updates.md)
 ## [Windows 10에서 비즈니스용 Windows 업데이트와 통합](deploy-use/integrate-windows-update-for-business-windows-10.md)
+## [타사 소프트웨어 업데이트](deploy-use/third-party-software-updates.md)
 ## [보안 업데이트를 배포하는 예제 시나리오](deploy-use/example-scenario-deploy-monitor-monthly-security-updates.md)
 
 # [System Center Updates Publisher](tools/updates-publisher.md)

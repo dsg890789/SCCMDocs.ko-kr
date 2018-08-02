@@ -20,12 +20,14 @@
 
 ## 응용 프로그램 배포
 ### [응용 프로그램 배포](deploy-use/deploy-applications.md)
+### [단계적 배포 만들기](../osd/deploy-use/create-phased-deployment-for-task-sequence.md?toc=/sccm/apps/toc.json&bc=/sccm/apps/breadcrumb/toc.json)
 ### [응용 프로그램 공유](deploy-use/share-applications.md)
 ### [응용 프로그램 배포 시뮬레이트](deploy-use/simulate-application-deployments.md)
 ### [App-V 가상 응용 프로그램 배포](get-started/deploying-app-v-virtual-applications.md)
 
 ## 응용 프로그램 모니터링
 ### [콘솔에서 응용 프로그램 모니터링](deploy-use/monitor-applications-from-the-console.md)
+### [단계적 배포 관리 및 모니터링](../osd/deploy-use/manage-monitor-phased-deployments.md?toc=/sccm/apps/toc.json&bc=/sccm/apps/breadcrumb/toc.json)
 ### [소프트웨어 계량을 사용하여 앱 사용 현황 모니터링](deploy-use/monitor-app-usage-with-software-metering.md)
 
 ## 응용 프로그램 관리

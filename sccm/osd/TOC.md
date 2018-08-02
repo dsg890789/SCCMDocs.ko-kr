@@ -45,8 +45,9 @@
 ### [Windows to Go 배포](deploy-use/deploy-windows-to-go.md)
 
 ## [Windows as a Service 관리](deploy-use/manage-windows-as-a-service.md)
+## [단계적 배포 만들기](deploy-use/create-phased-deployment-for-task-sequence.md)
+## [단계적 배포 관리 및 모니터링](deploy-use/manage-monitor-phased-deployments.md)
 ## [운영 체제 배포 모니터링](deploy-use/monitor-operating-system-deployments.md)
-## [작업 순서에 대한 단계별 배포 만들기](deploy-use/create-phased-deployment-for-task-sequence.md)
 
 ## [작업을 자동화하는 작업 순서 관리](deploy-use/manage-task-sequences-to-automate-tasks.md)
 ### [운영 체제를 설치하는 작업 순서 만들기](deploy-use/create-a-task-sequence-to-install-an-operating-system.md)
