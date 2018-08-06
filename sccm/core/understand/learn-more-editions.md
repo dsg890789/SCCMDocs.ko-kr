@@ -10,12 +10,12 @@ ms.assetid: 495b87ae-41a4-49ba-abe2-d4f7d22ac0d4
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a8ce492aa34fa130a11bde0d5823252a9d782960
-ms.sourcegitcommit: e35d07870656eadd29faacc378ecd091ff3bdcfb
+ms.openlocfilehash: 33cd99fd51bd7fabc1ae7f8379bcf2a69a5c4898
+ms.sourcegitcommit: f195190347a98b6c5be957564d33b6c4dfb610d7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34848631"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39309377"
 ---
 # <a name="licensing-and-branches-for-system-center-configuration-manager"></a>System Center Configuration Manager의 라이선스 및 분기
 
@@ -28,7 +28,7 @@ ms.locfileid: "34848631"
 
 
 **라이선스 정보:**  
-[Microsoft 볼륨 라이선스 프로그램을 통해 구입하는 제품에 대한 전체 계약조건은 여기서 확인할 수 있습니다](http://go.microsoft.com/fwlink/?LinkId=800052).
+[Microsoft 볼륨 라이선스 프로그램을 통해 구입하는 제품에 대한 전체 계약조건은 여기서 확인할 수 있습니다](https://go.microsoft.com/fwlink/?LinkId=800052).
 
 
 ## <a name="system-center-configuration-manager-licensed-branches"></a>사용이 허가된 System Center Configuration Manager 분기  
@@ -95,16 +95,15 @@ System Center Configuration Manager의 Software Assurance 라이선스 및 현�
 다음 링크를 사용하여 제품 라이선스 정보에 대해 자세히 알아봅니다.
 
 **Microsoft VLSC(볼륨 라이선스 서비스 센터) 링크:**
-- VLSC 개요: [https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx](https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx).
+- [VLSC 개요](https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx)
 
-- Microsoft Volume Licensing 제품 약관: [http://go.microsoft.com/fwlink/?LinkId=800052](http://go.microsoft.com/fwlink/?LinkId=800052).
+- [Microsoft Volume Licensing 제품 약관](https://go.microsoft.com/fwlink/?LinkId=800052)
 
-- 볼륨 라이선스 고객은 다음에서 해당 라이선스에 대한 요약을 얻을 수 있습니다: [https://www.microsoft.com/Licensing/servicecenter/default.aspx](https://www.microsoft.com/Licensing/servicecenter/default.aspx).  
-  라이선스 개요를 보려면 **라이선스** 메뉴로 이동한 다음 **라이선스 요약**을 클릭합니다.
+- 볼륨 라이선스 고객은 [볼륨 라이선스 서비스 센터](https://www.microsoft.com/Licensing/servicecenter/default.aspx)에서 해당 라이선스에 대한 요약을 얻을 수 있습니다. 라이선스 개요를 보려면 **라이선스** 메뉴로 이동한 다음 **라이선스 요약**을 클릭합니다.
 
 **VLSC 비디오:**
-- VLSC 작동 방법에 대한 교육 비디오: m[https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx#tab=2](https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx#tab=2).
+- [VLSC 작동 방법에 대한 교육 비디오](https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx#tab=2)  
 
-- 활성 Software Assurance 계약을 찾는 위치(약 43초에 시작): [https://www.microsoft.com/showcase/video.aspx?uuid=fe1846cb-1d26-49fc-b064-57b25dcc31a0](https://www.microsoft.com/showcase/video.aspx?uuid=fe1846cb-1d26-49fc-b064-57b25dcc31a0).
+- [활성 Software Assurance 계약을 찾는 위치](https://www.microsoft.com/showcase/video.aspx?uuid=fe1846cb-1d26-49fc-b064-57b25dcc31a0)(약 43초에 시작)  
 
-- VLSC에 대한 사용 권한을 얻는 방법: [https://www.microsoft.com/showcase/video.aspx?uuid=ac4ed1ca-d0a9-43cd-89fa-74ccb555dec4](https://www.microsoft.com/showcase/video.aspx?uuid=ac4ed1ca-d0a9-43cd-89fa-74ccb555dec4).  조직의 다른 사용자에게 VLSC 읽기 및 쓰기 권한을 위임할 수 있습니다.
+- [VLSC에 대한 사용 권한을 얻는 방법](https://www.microsoft.com/showcase/video.aspx?uuid=ac4ed1ca-d0a9-43cd-89fa-74ccb555dec4). 조직의 다른 사용자에게 VLSC 읽기 및 쓰기 권한을 위임할 수 있습니다.

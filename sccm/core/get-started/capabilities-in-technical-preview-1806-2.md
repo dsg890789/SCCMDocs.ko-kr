@@ -10,12 +10,12 @@ ms.assetid: 3af2a69d-30e7-4dce-832d-82b7a1c082f8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 13742fcbeefacd2183b26c5083d6f8b3ee0ef60f
-ms.sourcegitcommit: d1bf26bcf0d78b37ac7598fab36eb58ca69b1dc5
+ms.openlocfilehash: 5183b30d9184f7119d1423b5773da2b692026ab7
+ms.sourcegitcommit: 64b343906afdd442189559119eea8e933642cbf8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37067622"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39342817"
 ---
 # <a name="capabilities-in-technical-preview-18062-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1806.2의 기능
 
@@ -152,7 +152,7 @@ MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.co
 작업을 완료합니다. 그런 다음, [피드백](capabilities-in-technical-preview-1804.md#bkmk_feedback)을 전송하여 작업이 어떻게 진행되었는지 알려주세요.
 
 1. Configuration Manager 콘솔에서 [응용 프로그램을 만듭니다](/sccm/apps/deploy-use/create-applications). 
-2. 응용 프로그램 설치 파일 **형식**을 **Windows 앱 패키지(*.appx, *.appxbundle, *.msix, *.msixbundle)**로 선택합니다.
+2. 응용 프로그램 설치 파일 **형식**을 **Windows 앱 패키지(\*.appx, \*.appxbundle, \*.msix, \*.msixbundle)** 로 선택합니다.
 3. 최신 Windows Insider Preview 빌드를 실행하는 클라이언트에 [응용 프로그램을 배포](/sccm/apps/deploy-use/deploy-applications)합니다.
 
 
