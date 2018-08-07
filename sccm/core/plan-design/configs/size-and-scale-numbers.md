@@ -10,12 +10,12 @@ ms.assetid: c5a42100-2f60-4952-b495-918025ea6559
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b995687e330fe4beca26da83ee29ddc504c38e3a
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: de8116e1fec500750e429edfb48303b8c24822f4
+ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32343935"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39384840"
 ---
 # <a name="size-and-scale-numbers-for-system-center-configuration-manager"></a>System Center Configuration Manager의 크기 조정 및 규모 숫자 값
 
@@ -150,8 +150,6 @@ ms.locfileid: "32343935"
 -   사이트 서버에 설치된 소프트웨어 업데이트 지점은 최대 25,000개의 클라이언트를 지원할 수 있습니다.   
 
 -   원격 컴퓨터가 클라이언트 수를 지원하기 위한 WSUS(Windows Server Update Services) 요구 사항을 충족하는 경우 사이트 서버에서 원격인 소프트웨어 업데이트 지점이 최대 150,000대의 클라이언트를 지원할 수 있습니다.  
-
--   기본적으로 Configuration Manager에서는 소프트웨어 업데이트 지점을 NLB(네트워크 부하 분산) 클러스터로 구성할 수 없습니다. 그러나 Configuration Manager SDK를 사용하여 NLB 클러스터에서 최대 4개의 소프트웨어 업데이트 지점을 구성할 수는 있습니다.  
 
 
 

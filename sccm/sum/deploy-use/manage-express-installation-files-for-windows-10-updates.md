@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: b8d8af88-e8ac-4deb-921b-975e2d2afd80
-ms.openlocfilehash: 5f29b7a5d82b58358bdecd5508391db219b2cedc
-ms.sourcegitcommit: 4b8afbd08ecf8fd54950eeb630caf191d3aa4767
+ms.openlocfilehash: 54e91c729739d7bf1f0417a80a0143cc4969ed74
+ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36260927"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39383137"
 ---
 # <a name="manage-express-installation-files-for-windows-10-updates"></a>Windows 10 업데이트용 빠른 설치 파일 관리
 
@@ -58,4 +58,4 @@ Windows 10 빠른 설치 파일에 대한 메타데이터 동기화를 시작하
 
 3. 적절한 클라이언트 설정을 선택하고 리본에서 **속성**을 클릭합니다.  
 
-4. **소프트웨어 업데이트** 그룹을 선택합니다. **클라이언트에서 Express 업데이트 설치 사용** 설정을 **예**로 구성합니다. **Express 업데이트 콘텐츠를 다운로드하는 데 사용할 포트**를 클라이언트의 HTTP 수신기에서 사용되는 포트로 구성합니다.  
+4. **소프트웨어 업데이트** 그룹을 선택합니다. **클라이언트에서 Express 업데이트 설치 사용** 설정을 **예**로 구성합니다. **Express 업데이트 콘텐츠를 다운로드하는 데 사용할 포트**를 클라이언트의 HTTP 수신기에서 사용되는 포트로 구성합니다.
