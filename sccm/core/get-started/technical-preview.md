@@ -10,12 +10,12 @@ ms.assetid: 9ce0a8cb-f96c-4e41-834c-59ceb54ce44a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: ec9c4cdf54e6ffc55cc2983152f56492e5b1b354
-ms.sourcegitcommit: af4f8bd8dffe6fb05f51322ea9e94d335a2cc0c0
+ms.openlocfilehash: b60ebcf0ce94dfdc25466b31c9a64d0d556e1ac6
+ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/31/2018
-ms.locfileid: "39360718"
+ms.locfileid: "39385391"
 ---
 # <a name="technical-preview-for-configuration-manager"></a>Configuration Manager용 기술 미리 보기
 
@@ -34,9 +34,9 @@ Configuration Manager *현재 분기*의 새로운 기능에 대한 자세한 �
 ##  <a name="bkmk_reqs"></a> 요구 사항 및 제한 사항  
 
 > [!IMPORTANT]     
->  기술 미리 보기는 랩 환경에서만 사용하도록 허가되었습니다. Microsoft에서 지원 서비스를 제공하지 않을수 있으며, 특정 기능은 미리 보기 소프트웨어에서 사용하지 못할 수 있습니다. 또한 상업적으로 제공되는 소프트웨어와 비교했을 때 미리 보기 소프트웨어의 보안, 개인 정보 보호, 액세스 가능성, 가용성 및 안정성 표준이 낮거나 다를 수 있습니다.  
+>  기술 미리 보기는 랩 환경에서만 사용하도록 허가되었습니다. Microsoft에서 지원 서비스를 제공하지 않을 수 있으며, 특정 기능은 미리 보기 소프트웨어에서 사용하지 못할 수 있습니다. 또한 상업적으로 제공되는 소프트웨어와 비교했을 때 미리 보기 소프트웨어의 보안, 개인 정보 보호, 액세스 가능성, 가용성 및 안정성 표준이 낮거나 다를 수 있습니다.  
 
- 대다수 제품 필수 구성 요소의 경우에는 [지원되는 구성](/sccm/core/plan-design/configs/supported-configurations)의 정보를 사용합니다. 기술 미리 보기 분기에는 다음 예외가 적용됩니다.  
+대다수 제품 필수 구성 요소의 경우에는 [지원되는 구성](/sccm/core/plan-design/configs/supported-configurations)의 정보를 사용합니다. 기술 미리 보기 분기에는 다음 예외가 적용됩니다.  
 
 -   각 설치는 90일 동안 활성화된 후에 비활성화됩니다.  
 
@@ -99,7 +99,7 @@ Microsoft는 세 개의 연속 버전을 사용할 수 있을 때까지 각 기�
 > 
 > 한 해에 여러 번, 동일한 버전 번호를 가진 기술 미리 보기 분기 및 현재 분기 버전이 있습니다. 예를 들면 Technical Preview 버전 1802 및 현재 분기 버전 1802입니다. 
 
-   
+
 ### <a name="active-baseline-versions"></a>활성 기준 버전
    
 릴리스 후 최대 1년 동안 기준 버전을 설치합니다. 새 기술 미리 보기 사이트를 설치할 때 현재 둘 이상의 기준 버전을 사용할 수 있는 경우 최신 기준 버전을 사용합니다.
@@ -134,6 +134,7 @@ Microsoft는 세 개의 연속 버전을 사용할 수 있을 때까지 각 기�
 - [스크립트 출력 개선 사항](capabilities-in-technical-preview-1807.md#bkmk_script) <!--1236459-->
 - [타사 소프트웨어 업데이트 개선 사항](capabilities-in-technical-preview-1807.md#bkmk_3pupdate) <!--1358714-->
 
+
 > [!Note]  
 > 이전 버전의 기술 미리 보기에서 사용할 수 있는 기능은 이후 버전에서도 계속 사용할 수 있습니다. 마찬가지로 Configuration Manager 현재 분기에 추가된 기능은 기술 미리 보기 분기에서 계속 사용할 수 있습니다.   
 
@@ -150,61 +151,61 @@ Then remove the bottom of this list and/or move individual items not in CB to th
 
  |기능 |기술 미리 보기 버전 |현재 분기 버전|  
  |----------------|---------------------|--------------------|
- | 단계적 배포 개선 사항 <!--1358577,1358147,1358578--> | [Tech Preview 1806.2](capabilities-in-technical-preview-1806-2.md#bkmk_pod)  | ![추가되지 않음](media/Red_X.gif) |  
- | 새로운 Windows 앱 패키지 형식에 대한 지원 <!--1357427--> | [Tech Preview 1806.2](capabilities-in-technical-preview-1806-2.md#bkmk_msix)  | ![추가되지 않음](media/Red_X.gif) |  
- | 클라이언트 강제 보안 개선 사항 <!--1358204--> | [Tech Preview 1806.2](capabilities-in-technical-preview-1806-2.md#bkmk_client-push)  | ![추가되지 않음](media/Red_X.gif) |  
- | 자동 유지 관리에 대한 관리 인사이트 <!--1352184,et al--> | [Tech Preview 1806.2](capabilities-in-technical-preview-1806-2.md#bkmk_insights)  | ![추가되지 않음](media/Red_X.gif) |  
- | 공동 관리하는 장치에 대한 모바일 앱 워크로드 전환 <!--1357892--> | [Tech Preview 1806.2](capabilities-in-technical-preview-1806-2.md#bkmk_comgmt)  | ![추가되지 않음](media/Red_X.gif) |  
- | 피어 다운로드를 위한 경계 그룹 옵션 <!--1356193--> | [Tech Preview 1806.2](capabilities-in-technical-preview-1806-2.md#bkmk_bgoptions)  | ![추가되지 않음](media/Red_X.gif) |  
- | 사용자 지정 카탈로그에 대한 타사 소프트웨어 업데이트 지원 <!--1358714--> | [Tech Preview 1806.2](capabilities-in-technical-preview-1806-2.md#bkmk_3pupdate)  | ![추가되지 않음](media/Red_X.gif) |  
- | 클라우드 관리 기능 개선 사항 <!--511980,515854--> | [Tech Preview 1806.2](capabilities-in-technical-preview-1806-2.md#bkmk_cloud)  | ![추가되지 않음](media/Red_X.gif) |  
- | 새 소프트웨어 업데이트 준수 보고서 <!--1357775--> | [Tech Preview 1806.2](capabilities-in-technical-preview-1806-2.md#bkmk_report)  | ![추가되지 않음](media/Red_X.gif) |  
- | 타사 소프트웨어 업데이트 <!--1352101--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#bkmk-3pupdate)  | ![추가되지 않음](media/Red_X.gif) |  
- | Microsoft Edge용 Windows Defender SmartScreen 설정 구성 <!--1353701--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#configure-windows-defender-smartscreen-settings-for-microsoft-edge)  | ![추가되지 않음](media/Red_X.gif) |  
- | Microsoft Intune에서 공동 관리하는 장치에 대한 MDM 정책 동기화 <!--1357377--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#sync-mdm-policy-from-microsoft-intune-for-a-co-managed-device)  | ![추가되지 않음](media/Red_X.gif) |  
- | 공동 관리를 사용하여 Office 365 워크로드를 Intune으로 전환 <!--1357841--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#transition-office-365-workload-to-intune-using-co-management)  | ![추가되지 않음](media/Red_X.gif) |  
- | Package Conversion Manager <!--1357861--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#package-conversion-manager)  | ![추가되지 않음](media/Red_X.gif) |  
- | 콘텐츠 없이 소프트웨어 업데이트 배포 <!--1357933--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#deploy-software-updates-without-content)  | ![추가되지 않음](media/Red_X.gif) |  
- | Office 365 설치 관리자와 Office 사용자 지정 도구 통합 <!--1358149--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#office-customization-tool-integration-with-the-office-365-installer)  | ![추가되지 않음](media/Red_X.gif) |  
- | 클라우드 관리 게이트웨이의 향상된 기능 <!--1358215,1358651,503899--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#improvements-to-cloud-management-gateway)   | ![추가되지 않음](media/Red_X.gif) |  
- | 보안 클라이언트 통신 개선 <!--1358278,1358279--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#improvements-to-secure-client-communications)  | ![추가되지 않음](media/Red_X.gif) |  
- | 소프트웨어 센터 인프라 개선 사항 <!--1358309--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#software-center-infrastructure-improvements)  | ![추가되지 않음](media/Red_X.gif) |  
- | 장치의 모든 사용자에 대해 Windows 앱 패키지 프로비전 <!--1358310--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#provision-windows-app-packages-for-all-users-on-a-device)  | ![추가되지 않음](media/Red_X.gif) |  
- | Surface 대시보드에 대한 개선 사항 <!--1358654--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#improvements-to-the-surface-dashboard)  | ![추가되지 않음](media/Red_X.gif) |  
- | 하드웨어 인벤토리 기본 단위 수정 버전 <!--514442--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#hardware-inventory-default-unit-revision)  | ![추가되지 않음](media/Red_X.gif) |  
- | 작업 순서에 대해 수동으로 구성된 단계를 사용하여 단계적 배포 만들기 <!--1358148--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#create-a-phased-deployment-with-manually-configured-phases-for-a-task-sequence)  | ![추가되지 않음](media/Red_X.gif) |  
- | Azure Resource Manager에 대한 클라우드 배포 지점 지원 <!--1322209--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#cloud-distribution-point-support-for-azure-resource-manager)  | ![추가되지 않음](media/Red_X.gif) |  
- | 관리 인사이트를 기반으로 작업 수행 <!--1357930--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#take-actions-based-on-management-insights)  | ![추가되지 않음](media/Red_X.gif) |  
- | 공동 관리를 사용하여 장치 구성 워크로드를 Intune으로 전환 <!--1357903--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#transition-device-configuration-workload-to-intune-using-co-management)  | ![추가되지 않음](media/Red_X.gif) |  
- | 배포 지점에서 네트워크 정체 제어를 사용하도록 설정 <!--1358112--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#enable-distribution-points-to-use-network-congestion-control)  | ![추가되지 않음](media/Red_X.gif) |  
- | 클라우드 관리 대시보드 <!--1358461--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#cloud-management-dashboard)  | ![추가되지 않음](media/Red_X.gif) |  
- | CMPivot <!--1358456--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#cmpivot)  | ![추가되지 않음](media/Red_X.gif) |  
- | 개선된 보안 클라이언트 통신 <!--1356889,1358228,1358460--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improved-secure-client-communications)  | ![추가되지 않음](media/Red_X.gif) |  
- | 타사 소프트웨어 업데이트 지원에 대한 개선 사항 <!--1357605--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvements-for-enabling-third-party-software-update-support)  | ![추가되지 않음](media/Red_X.gif) |  
- | 향상된 Windows 10 전체 업그레이드 작업 순서 <!--1358500--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvements-to-windows-10-in-place-upgrade-task-sequence)  | ![추가되지 않음](media/Red_X.gif) |  
- | CMTrace가 클라이언트와 함께 설치됨 <!--1357971--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#cmtrace-installed-with-client)  | ![추가되지 않음](media/Red_X.gif) |  
- | Configuration Manager 콘솔 개선 사항 <!--1358202--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvement-to-the-configuration-manager-console)  | ![추가되지 않음](media/Red_X.gif) |  
- | 콘솔 피드백 개선 사항 <!--1357542--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvements-to-console-feedback)  | ![추가되지 않음](media/Red_X.gif) |  
- | 향상된 PXE 사용 배포 지점 <!--1357580--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvements-to-pxe-enabled-distribution-points)  | ![추가되지 않음](media/Red_X.gif) |  
- | 큰 정수 값에 대한 하드웨어 인벤토리 개선 사항 <!--1357880--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvement-to-hardware-inventory-for-large-integer-values)  | ![추가되지 않음](media/Red_X.gif) |  
- | WSUS 유지 관리 개선 사항 <!--1357898--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvement-to-wsus-maintenance)  | ![추가되지 않음](media/Red_X.gif) |  
- | CNG 인증서 지원 개선 사항 <!--1357314--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvement-to-support-for-cng-certificates)  | ![추가되지 않음](media/Red_X.gif) |  
- | 사이트 서버에 대해 원격 콘텐츠 라이브러리 구성 <!--1357525--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#configure-a-remote-content-library-for-the-site-server)  | ![추가되지 않음](media/Red_X.gif) | 
- | Configuration Manager 콘솔에서 피드백 제출 <!--1357542--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#bkmk_feedback)  | ![추가되지 않음](media/Red_X.gif) | 
+ | 단계적 배포 개선 사항 <!--1358577,1358147,1358578--> | [Tech Preview 1806.2](capabilities-in-technical-preview-1806-2.md#bkmk_pod)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 새로운 Windows 앱 패키지 형식에 대한 지원 <!--1357427--> | [Tech Preview 1806.2](capabilities-in-technical-preview-1806-2.md#bkmk_msix)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 클라이언트 강제 보안 개선 사항 <!--1358204--> | [Tech Preview 1806.2](capabilities-in-technical-preview-1806-2.md#bkmk_client-push)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 자동 유지 관리에 대한 관리 인사이트 <!--1352184,et al--> | [Tech Preview 1806.2](capabilities-in-technical-preview-1806-2.md#bkmk_insights)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 공동 관리하는 장치에 대한 모바일 앱 워크로드 전환 <!--1357892--> | [Tech Preview 1806.2](capabilities-in-technical-preview-1806-2.md#bkmk_comgmt)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 피어 다운로드를 위한 경계 그룹 옵션 <!--1356193--> | [Tech Preview 1806.2](capabilities-in-technical-preview-1806-2.md#bkmk_bgoptions)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 사용자 지정 카탈로그에 대한 타사 소프트웨어 업데이트 지원 <!--1358714--> | [Tech Preview 1806.2](capabilities-in-technical-preview-1806-2.md#bkmk_3pupdate)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 클라우드 관리 기능 개선 사항 <!--511980,515854--> | [Tech Preview 1806.2](capabilities-in-technical-preview-1806-2.md#bkmk_cloud)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 새 소프트웨어 업데이트 준수 보고서 <!--1357775--> | [Tech Preview 1806.2](capabilities-in-technical-preview-1806-2.md#bkmk_report)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 타사 소프트웨어 업데이트 <!--1352101--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#bkmk-3pupdate)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | Microsoft Edge용 Windows Defender SmartScreen 설정 구성 <!--1353701--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#configure-windows-defender-smartscreen-settings-for-microsoft-edge)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | Microsoft Intune에서 공동 관리하는 장치에 대한 MDM 정책 동기화 <!--1357377--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#sync-mdm-policy-from-microsoft-intune-for-a-co-managed-device)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 공동 관리를 사용하여 Office 365 워크로드를 Intune으로 전환 <!--1357841--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#transition-office-365-workload-to-intune-using-co-management)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | Package Conversion Manager <!--1357861--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#package-conversion-manager)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 콘텐츠 없이 소프트웨어 업데이트 배포 <!--1357933--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#deploy-software-updates-without-content)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | Office 365 설치 관리자와 Office 사용자 지정 도구 통합 <!--1358149--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#office-customization-tool-integration-with-the-office-365-installer)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 클라우드 관리 게이트웨이의 향상된 기능 <!--1358215,1358651,503899--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#improvements-to-cloud-management-gateway)   | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 보안 클라이언트 통신 개선 <!--1358278,1358279--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#improvements-to-secure-client-communications)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 소프트웨어 센터 인프라 개선 사항 <!--1358309--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#software-center-infrastructure-improvements)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 장치의 모든 사용자에 대해 Windows 앱 패키지 프로비전 <!--1358310--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#provision-windows-app-packages-for-all-users-on-a-device)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | Surface 대시보드에 대한 개선 사항 <!--1358654--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#improvements-to-the-surface-dashboard)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 하드웨어 인벤토리 기본 단위 수정 버전 <!--514442--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#hardware-inventory-default-unit-revision)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 작업 순서에 대해 수동으로 구성된 단계를 사용하여 단계적 배포 만들기 <!--1358148--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#create-a-phased-deployment-with-manually-configured-phases-for-a-task-sequence)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | Azure Resource Manager에 대한 클라우드 배포 지점 지원 <!--1322209--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#cloud-distribution-point-support-for-azure-resource-manager)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 관리 인사이트를 기반으로 작업 수행 <!--1357930--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#take-actions-based-on-management-insights)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 공동 관리를 사용하여 장치 구성 워크로드를 Intune으로 전환 <!--1357903--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#transition-device-configuration-workload-to-intune-using-co-management)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 배포 지점에서 네트워크 정체 제어를 사용하도록 설정 <!--1358112--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#enable-distribution-points-to-use-network-congestion-control)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 클라우드 관리 대시보드 <!--1358461--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#cloud-management-dashboard)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | CMPivot <!--1358456--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#cmpivot)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 개선된 보안 클라이언트 통신 <!--1356889,1358228,1358460--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improved-secure-client-communications)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 타사 소프트웨어 업데이트 지원에 대한 개선 사항 <!--1357605--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvements-for-enabling-third-party-software-update-support)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 향상된 Windows 10 전체 업그레이드 작업 순서 <!--1358500--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvements-to-windows-10-in-place-upgrade-task-sequence)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | CMTrace가 클라이언트와 함께 설치됨 <!--1357971--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#cmtrace-installed-with-client)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | Configuration Manager 콘솔 개선 사항 <!--1358202--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvement-to-the-configuration-manager-console)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 콘솔 피드백 개선 사항 <!--1357542--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvements-to-console-feedback)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 향상된 PXE 사용 배포 지점 <!--1357580--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvements-to-pxe-enabled-distribution-points)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 큰 정수 값에 대한 하드웨어 인벤토리 개선 사항 <!--1357880--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvement-to-hardware-inventory-for-large-integer-values)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | WSUS 유지 관리 개선 사항 <!--1357898--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvement-to-wsus-maintenance)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | CNG 인증서 지원 개선 사항 <!--1357314--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvement-to-support-for-cng-certificates)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
+ | 사이트 서버에 대해 원격 콘텐츠 라이브러리 구성 <!--1357525--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#configure-a-remote-content-library-for-the-site-server)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) | 
+ | Configuration Manager 콘솔에서 피드백 제출 <!--1357542--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#bkmk_feedback)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) | 
  | 지원 센터 <!--1357489--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#support-center)  | ![추가되지 않음](media/Red_X.gif) | 
- | Configuration Manager Toolkit <!--1357145--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#configuration-manager-toolkit)  | ![추가되지 않음](media/Red_X.gif) | 
- | 승인 취소 시 응용 프로그램 제거 <!--1357891--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#uninstall-application-on-approval-revocation)  | ![추가되지 않음](media/Red_X.gif) | 
- | 검색에서 Active Directory 컨테이너 제외 <!--1358143--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#exclude-active-directory-containers-from-discovery)  | ![추가되지 않음](media/Red_X.gif) | 
- | 소프트웨어 센터에서 응용 프로그램 카탈로그 웹 사이트 링크의 표시 여부 지정 <!--1358214--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#specify-the-visibility-of-the-application-catalog-website-link-in-software-center)  | ![추가되지 않음](media/Red_X.gif) | 
- | 소프트웨어 업데이트 아키텍처를 기준으로 자동 배포 규칙 필터링 <!--1322266--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#filter-automatic-deployment-rules-by-software-update-architecture)  | ![추가되지 않음](media/Red_X.gif) | 
- | 향상된 OS 배포 <!--1358330,1358493--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#improvements-to-os-deployment) | ![추가되지 않음](media/Red_X.gif) | 
- | 풀(pull) 배포 지점은 클라우드 배포 지점을 원본으로 지원함 <!--1321554--> | [Tech Preview 1803](capabilities-in-technical-preview-1803.md#pull-distribution-points-support-cloud-distribution-points-as-source)  | ![추가되지 않음](media/Red_X.gif) | 
- | WAN 사용률을 줄이기 위해 클라이언트 피어 캐시에서 부분 다운로드 지원 <!--1357346--> | [Tech Preview 1803](capabilities-in-technical-preview-1803.md#partial-download-support-in-client-peer-cache-to-reduce-wan-utilization)  | ![추가되지 않음](media/Red_X.gif) | 
- | 소프트웨어 센터의 유지 관리 기간 <!--1358131--> | [Tech Preview 1803](capabilities-in-technical-preview-1803.md#maintenance-windows-in-software-center)  | ![추가되지 않음](media/Red_X.gif) | 
- | 소프트웨어 센터의 웹 페이지용 사용자 지정 탭 <!--1358132--> | [Tech Preview 1803](capabilities-in-technical-preview-1803.md#custom-tab-for-webpage-in-software-center)  | ![추가되지 않음](media/Red_X.gif) | 
- | 클라이언트에서 타사 소프트웨어 업데이트 지원 사용 <!--1357605--> | [Tech Preview 1803](capabilities-in-technical-preview-1803.md#enable-third-party-software-update-support-on-clients)  | ![추가되지 않음](media/Red_X.gif) | 
- | 모니터링 보기에서 자산 정보의 복사/붙여넣기 사용 <!--1357552--> | [Tech Preview 1803](capabilities-in-technical-preview-1803.md#enable-copypaste-of-asset-details-from-monitoring-views)  | ![추가되지 않음](media/Red_X.gif) | 
- | SCAP 확장 <!--1357552--> | [Tech Preview 1803](capabilities-in-technical-preview-1803.md#scap-extensions)  | ![추가되지 않음](media/Red_X.gif) | 
+ | Configuration Manager Toolkit <!--1357145--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#configuration-manager-toolkit)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) | 
+ | 승인 취소 시 응용 프로그램 제거 <!--1357891--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#uninstall-application-on-approval-revocation)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) | 
+ | 검색에서 Active Directory 컨테이너 제외 <!--1358143--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#exclude-active-directory-containers-from-discovery)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) | 
+ | 소프트웨어 센터에서 응용 프로그램 카탈로그 웹 사이트 링크의 표시 여부 지정 <!--1358214--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#specify-the-visibility-of-the-application-catalog-website-link-in-software-center)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) | 
+ | 소프트웨어 업데이트 아키텍처를 기준으로 자동 배포 규칙 필터링 <!--1322266--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#filter-automatic-deployment-rules-by-software-update-architecture)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) | 
+ | 향상된 OS 배포 <!--1358330,1358493--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#improvements-to-os-deployment) | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) | 
+ | 풀(pull) 배포 지점은 클라우드 배포 지점을 원본으로 지원함 <!--1321554--> | [Tech Preview 1803](capabilities-in-technical-preview-1803.md#pull-distribution-points-support-cloud-distribution-points-as-source)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) | 
+ | WAN 사용률을 줄이기 위해 클라이언트 피어 캐시에서 부분 다운로드 지원 <!--1357346--> | [Tech Preview 1803](capabilities-in-technical-preview-1803.md#partial-download-support-in-client-peer-cache-to-reduce-wan-utilization)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) | 
+ | 소프트웨어 센터의 유지 관리 기간 <!--1358131--> | [Tech Preview 1803](capabilities-in-technical-preview-1803.md#maintenance-windows-in-software-center)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) | 
+ | 소프트웨어 센터의 웹 페이지용 사용자 지정 탭 <!--1358132--> | [Tech Preview 1803](capabilities-in-technical-preview-1803.md#custom-tab-for-webpage-in-software-center)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) | 
+ | 클라이언트에서 타사 소프트웨어 업데이트 지원 사용 <!--1357605--> | [Tech Preview 1803](capabilities-in-technical-preview-1803.md#enable-third-party-software-update-support-on-clients)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) | 
+ | 모니터링 보기에서 자산 정보의 복사/붙여넣기 사용 <!--1357552--> | [Tech Preview 1803](capabilities-in-technical-preview-1803.md#enable-copypaste-of-asset-details-from-monitoring-views)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) | 
+ | SCAP 확장 <!--1357552--> | [Tech Preview 1803](capabilities-in-technical-preview-1803.md#scap-extensions)  | [버전 1806](/sccm/core/plan-design/changes/whats-new-in-version-1806) | 
  
   
 
@@ -218,23 +219,28 @@ Copy from the bottom of the list above any individual feature that is still in T
 With each CB release, review and remove from this list for anything that's now available in CB. 
 -->
 
- |기능 |기술 미리 보기 버전 |  
- |----------------|---------------------|
- | 향상된 PXE 사용 배포 지점 <!-- 1357580 --> | [기술 미리 보기 1802](capabilities-in-technical-preview-1802.md#improvements-to-pxe-enabled-distribution-points) | 
- | 제품 수명 주기 대시보드 <!--1319632 --> | [기술 미리 보기 1802](capabilities-in-technical-preview-1802.md#product-lifecycle-dashboard) | 
- | 클라이언트 기반 PXE 응답자 서비스 <!-- 1357148 --> | [Tech Preview 1712](capabilities-in-technical-preview-1712.md#client-based-pxe-responder-service) |
- |사이트 서버 역할 고가용성<!-- 1128774 --> |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#site-server-role-high-availability) |
- |IPv6에 대한 PXE 네트워크 부팅 지원<!-- 1269793 --> |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#pxe-network-boot-support-for-ipv6)|
- |Azure Active Directory 사용 <!-- 1322145? --> | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#azurediscovery) |
- |Windows Update for Business 업데이트에 대한 준수 평가<!-- 1235390 --> | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#compliance-assessment-for-windows-update-for-business-updates) |
- |OData 끝점 데이터 액세스<!-- 1321523 --> |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#odata-endpoint-data-access)|
- |Asset Intelligence 개선 <!-- 1307390 --> |[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-asset-intelligence)|
- |최종 사용자가 회사 포털에서 앱을 설치할 수 있습니다.<!-- 1037233? --> |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_End)|
+|기능 |기술 미리 보기 버전 |  
+|----------------|---------------------|
+| 클라이언트 기반 PXE 응답자 서비스 <!-- 1357148 --> | [Tech Preview 1712](capabilities-in-technical-preview-1712.md#client-based-pxe-responder-service) |
+|IPv6에 대한 PXE 네트워크 부팅 지원<!-- 1269793 --> |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#pxe-network-boot-support-for-ipv6)|
+|Azure Active Directory 사용 <!-- 1322145? --> | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#azurediscovery) |
+|Windows Update for Business 업데이트에 대한 준수 평가<!-- 1235390 --> | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#compliance-assessment-for-windows-update-for-business-updates) |
+|OData 끝점 데이터 액세스<!-- 1321523 --> |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#odata-endpoint-data-access)|
+|Asset Intelligence 개선 <!-- 1307390 --> |[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-asset-intelligence)|
+|최종 사용자가 회사 포털에서 앱을 설치할 수 있습니다.<!-- 1037233? --> |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_End)|
+
+<!--Removed for 1806 CB:
+ |Site server role high availability <!-- 1128774  |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#site-server-role-high-availability) |
+ | Product lifecycle dashboard <!--1319632  | [Tech Preview 1802](capabilities-in-technical-preview-1802.md#product-lifecycle-dashboard) | 
+ | Improvements to PXE-enabled distribution points <!-- 1357580  | [Tech Preview 1802](capabilities-in-technical-preview-1802.md#improvements-to-pxe-enabled-distribution-points) | 
+-->
 
 
 
-## <a name="see-also"></a>참고 항목
-  
+## <a name="see-also"></a>참고 항목  
+
+자세한 내용은 다음 아티클을 참조하세요.  
+
 - [랩에서 Configuration Manager 평가](/sccm/core/get-started/evaluate-with-lab-environment)
 - [Configuration Manager 증분 버전의 새로운 기능](/sccm/core/plan-design/changes/whats-new-incremental-versions)  
 - [Configuration Manager 소개](/sccm/core/understand/introduction)
