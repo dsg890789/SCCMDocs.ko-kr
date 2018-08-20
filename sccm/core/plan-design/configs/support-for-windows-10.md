@@ -2,7 +2,7 @@
 title: Windows 10에 대한 지원
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager가 OSD나 클라이언트로 지원되는 Windows 10 버전에 대해 알아보세요.
-ms.date: 04/30/2018
+ms.date: 07/30/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,14 +10,14 @@ ms.assetid: a1626a65-da22-49e0-9564-d2f752ea3f4b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: bea7d3d0e2c4482a08473f49fbdc3916065627b7
-ms.sourcegitcommit: 4b8afbd08ecf8fd54950eeb630caf191d3aa4767
+ms.openlocfilehash: f5aac395c71b76a0b83826e8f7c9de1e656aa884
+ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36260720"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39383642"
 ---
-# <a name="support-for-windows-10-in-system-center-configuration-manager"></a>System Center Configuration Manager의 Windows 10에 대한 지원  
+# <a name="support-for-windows-10-in-configuration-manager"></a>Configuration Manager의 Windows 10에 대한 지원  
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -40,14 +40,14 @@ ms.locfileid: "36260720"
 <br/>
 다음 표에는 여러 버전의 Configuration Manager에서 클라이언트로서 사용할 수 있는 Windows 10 버전이 나와 있습니다.
 
-| Windows 10 버전 | Configuration Manager 1706 | Configuration Manager 1710 | Configuration Manager 1802 |
-|---------------------|-----|-----|-----|
-| Enterprise 2015 LTSB            <!--10/14/2025-->   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
-| Enterprise 2016 LTSB            <!--10/13/2026-->   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
-| 1607   <br />(*버전 참조*)   <!--04+6/10/2018-->   | ![지원됨](media/green_check.png) <sup>1</sup> | ![지원됨](media/green_check.png) <sup>1</sup> | ![지원됨](media/green_check.png) <sup>1</sup> |
-| 1703   <br />(*버전 참조*)   <!--10+6/09/2018-->   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
-| 1709   <br />(*버전 참조*)   <!--04+6/09/2019-->   | ![이전 버전과 호환](media/blue_compat.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
-| 1803   <br />(*버전 참조*)   <!--11/12/2019-->   | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) |
+| Windows 10 버전 | Configuration Manager 1706 | Configuration Manager 1710 | Configuration Manager 1802 | Configuration Manager 1806 |
+|---------------------|-----|-----|-----|-----|
+| Enterprise 2015 LTSB            <!--10/14/2025-->   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
+| Enterprise 2016 LTSB            <!--10/13/2026-->   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
+| 1607   <br />(*버전 참조*)   <!--04+6/10/2018-->   | ![지원됨](media/green_check.png) <sup>1</sup> | ![지원됨](media/green_check.png) <sup>1</sup> | ![지원됨](media/green_check.png) <sup>1</sup> | ![지원됨](media/green_check.png) <sup>1</sup> |
+| 1703   <br />(*버전 참조*)   <!--10+6/09/2018-->   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
+| 1709   <br />(*버전 참조*)   <!--04+6/09/2019-->   | ![이전 버전과 호환](media/blue_compat.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
+| 1803   <br />(*버전 참조*)   <!--11/12/2019-->   | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
 
 <!-- lifecycle reference: https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet -->
 
@@ -71,11 +71,11 @@ Configuration Manager로 운영 체제를 배포할 때 [Windows ADK는 필요�
 
 다음 표에는 여러 버전의 Configuration Manager에서 사용할 수 있는 Windows 10 ADK 버전이 나와 있습니다.
 
-| Windows 10 ADK 버전  | Configuration Manager 1706 | Configuration Manager 1710 | Configuration Manager 1802   |
-|--------------------|-----|-----|-----|
-| 1703  | ![지원됨](media/green_check.png) | ![이전 버전과 호환](media/blue_compat.png) | ![이전 버전과 호환](media/blue_compat.png) |
-| 1709  | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
-| 1803  | ![지원되지 않음](media/Red_X.png)   | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) |
+| Windows 10 ADK 버전  | Configuration Manager 1706 | Configuration Manager 1710 | Configuration Manager 1802 | Configuration Manager 1806 |
+|--------------------|-----|-----|-----|-----|
+| 1703  | ![지원됨](media/green_check.png) | ![이전 버전과 호환](media/blue_compat.png) | ![이전 버전과 호환](media/blue_compat.png) | ![지원되지 않음](media/Red_X.png)   |
+| 1709  | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![이전 버전과 호환](media/blue_compat.png) |
+| 1803  | ![지원되지 않음](media/Red_X.png)   | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
 
 |키|
 |--|

@@ -5,24 +5,23 @@ description: Windows 10 클라이언트에서 Microsoft Edge 웹 브라우저 �
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.date: 03/28/2018
+ms.date: 07/30/2018
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-compliance
 ms.assetid: 76477b4d-df41-4b25-8318-7d18d46ca2c6
-ms.openlocfilehash: 81bd0a59a24cab446668911f714548581c1347df
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 2b0b553b7281015bfee89f8409fd6c5e255d753c
+ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32343799"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39384146"
 ---
 # <a name="configure-microsoft-edge-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Microsoft Edge 설정 구성
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-<!-- 1357310 -->
-1802 버전부터 Windows 10 클라이언트에서 [Microsoft Edge](https://technet.microsoft.com/microsoft-edge/bb265256) 웹 브라우저를 사용하는 고객은 이제 Configuration Manager 준수 설정 정책을 만들어 여러 Microsoft Edge 설정을 구성합니다. 
+<!-- 1357310 --> 1802 버전부터 Windows 10 클라이언트에서 [Microsoft Edge](https://technet.microsoft.com/microsoft-edge/bb265256) 웹 브라우저를 사용하는 고객은 이제 Configuration Manager 준수 설정 정책을 만들어 여러 Microsoft Edge 설정을 구성합니다. 
 
 이 정책은 Windows 10, 버전 1703 이상의 클라이언트에만 적용됩니다. <!--511552-->
 
@@ -44,14 +43,23 @@ ms.locfileid: "32343799"
 - **확장 허용**: 자세한 내용은 [AllowExtensions 브라우저 정책](/windows/client-management/mdm/policy-csp-browser#browser-allowextensions)을 참조하세요.
 
 
+### <a name="configure-windows-defender-smartscreen-settings-for-microsoft-edge"></a>Microsoft Edge용 Windows Defender SmartScreen 설정 구성
+<!--1353701--> 버전 1806부터 이 정책은 [Windows Defender SmartScreen](/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)에 대한 세 가지 설정을 추가합니다. 해당 정책에는 **SmartScreen 설정** 페이지에 다음과 같은 추가 정책이 포함됩니다.
+
+- **SmartScreen 허용**: Windows Defender SmartScreen 허용되는지 여부를 지정합니다. 자세한 내용은 참조는 [AllowSmartScreen 브라우저 정책](/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen)을 참조합니다.
+- **사용자는 사이트에 대한 SmartScreen 프롬프트를 재정의할 수 있습니다**: 사용자는 잠재적 악성 웹 사이트에 대한 Windows Defender SmartScreen 필터 경고를 재정의할 수 있는지 여부를 지정합니다. 자세한 내용은 [PreventSmartScreenPromptOverride 브라우저 정책](/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride)을 참조합니다.
+- **사용자는 파일에 대한 SmartScreen 프롬프트를 재정의할 수 있습니다**: 사용자는 확인되지 않은 파일 다운로드에 대한 Windows Defender SmartScreen 필터 경고를 재정의할 수 있는지 여부를 지정합니다. 자세한 내용은 [PreventSmartScreenPromptOverrideForFiles 브라우저 정책](/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)을 참조합니다.
+
+
 
 ## <a name="create-the-microsoft-edge-browser-profile"></a>Microsoft Edge 브라우저 프로필 만들기
 
-1. Configuration Manager 콘솔에서 **자산 및 호환성** 작업 영역으로 이동합니다. **준수 설정**을 확장하고 새 **Microsoft Edge 브라우저 프로필** 노드를 선택합니다. **Microsoft Edge 브라우저 정책 만들기** 리본 옵션을 클릭합니다.
+1. Configuration Manager 콘솔에서 **자산 및 호환성** 작업 영역으로 이동합니다. **준수 설정**을 확장하고 **Microsoft Edge 브라우저 프로필** 노드를 선택합니다. **Microsoft Edge 프로필 만들기** 리본 옵션을 클릭합니다.
 2. 정책의 **이름**을 지정하고 선택적으로 **설명**을 입력한 다음, **다음**을 클릭합니다.
-3. **설정** 페이지에서 이 정책에 포함할 설정의 값을 **구성됨**으로 변경하고 **다음**을 클릭합니다.
-4. **지원되는 플랫폼** 페이지에서 이 정책이 적용되는 운영 체제 버전 및 아키텍처를 선택하고 **다음**을 클릭합니다. 
-5. 마법사를 완료합니다.
+3. **일반 설정** 페이지에서 이 정책에 포함할 설정의 값을 **구성됨**으로 변경하고 **다음**을 클릭합니다. 계속하려면 **Edge 브라우저를 기본값으로 설정**하는 설정을 구성해야 합니다.
+4. 버전 1806 이상에서는 **SmartScreen 설정** 페이지에서 설정을 구성한 후, **다음**을 클릭합니다. 
+5. **지원되는 플랫폼** 페이지에서 이 정책이 적용되는 OS 버전 및 아키텍처를 선택하고 **다음**을 클릭합니다. 
+6. 마법사를 완료합니다.
 
 
 
@@ -59,9 +67,9 @@ ms.locfileid: "32343799"
 
 1. 정책을 선택하고 **배포** 리본 옵션을 클릭합니다.
 2. **찾아보기**를 클릭하여 정책을 배포할 사용자 또는 장치 컬렉션을 선택합니다. 
-3. 필요에 따라 추가 옵션을 선택합니다. 
-    a. 정책이 호환되지 않을 경우 경고를 생성합니다. 
-    b. 클라이언트가 이 정책에 대한 장치의 준수를 평가하는 일정을 설정합니다.
+3. 필요에 따라 추가 옵션을 선택합니다.  
+     a. 정책이 호환되지 않을 경우 경고를 생성합니다.  
+     b. 클라이언트가 이 정책에 대한 장치의 준수를 평가하는 일정을 설정합니다. 
 4. **확인**을 클릭하여 배포를 만듭니다.
 
 

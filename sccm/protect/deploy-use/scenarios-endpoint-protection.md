@@ -1,8 +1,8 @@
 ---
-title: Endpoint Protection으로 맬웨어로부터 컴퓨터를 보호하는 시나리오
+title: 맬웨어로부터 컴퓨터 보호
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 Endpoint Protection을 구현하여 맬웨어 공격으로부터 컴퓨터를 보호하는 방법을 알아봅니다.
-ms.date: 03/22/2018
+ms.date: 07/30/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,22 +10,31 @@ ms.assetid: 539c7a89-3c03-4571-9cb4-02d455064eeb
 author: aczechowski
 ms.author: aaroncz
 manager: doubeby
-ms.openlocfilehash: 40fe2c9e16c2828b2c575e8401a80f3cf2eac969
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 7d4d5d9479029af180120edc3daba3ff13a7e4d0
+ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32352569"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39383870"
 ---
-# <a name="example-scenario-using-system-center-endpoint-protection-to-protect-computers-from-malware-in-system-center-configuration-manager"></a>예제 시나리오: System Center Endpoint Protection을 사용하여 System Center Configuration Manager에서 맬웨어로부터 컴퓨터 보호
+# <a name="example-scenario-use-endpoint-protection-to-protect-computers-from-malware"></a>예제 시나리오: Endpoint Protection을 사용하여 맬웨어로부터 컴퓨터 보호
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 이 문서에서는 Configuration Manager에서 Endpoint Protection을 구현하여 조직 내 컴퓨터를 맬웨어 공격으로부터 보호하는 방법을 보여 주는 예제 시나리오를 제공합니다.  
 
- John은 Woodgrove 은행의 Configuration Manager 관리자입니다. 현재 이 은행은 맬웨어 공격으로부터 컴퓨터를 보호하기 위해 System Center Endpoint Protection을 사용합니다. 또한 Windows 그룹 정책을 사용하여 회사의 모든 컴퓨터에서 Windows 방화벽을 사용하도록 설정하고 Windows 방화벽이 새 프로그램을 차단할 때 사용자에게 알림이 제공되도록 합니다.  
 
- John은 Woodgrove Bank가 최신 맬웨어 방지 프로그램 기능을 활용하고 Configuration Manager 콘솔에서 맬웨어 방지 솔루션을 중앙에서 관리할 수 있도록 Woodgrove Bank 맬웨어 방지 프로그램을 System Center Endpoint Protection으로 업그레이드할 것을 요청받았습니다. 이 구현을 위해서는 다음과 같은 요구 사항이 필요합니다.  
+
+## <a name="scenario-overview"></a>시나리오 개요
+
+John은 Woodgrove 은행의 Configuration Manager 관리자입니다. 현재 이 은행은 맬웨어 공격으로부터 컴퓨터를 보호하기 위해 System Center Endpoint Protection을 사용합니다. 또한 Windows 그룹 정책을 사용하여 회사의 모든 컴퓨터에서 Windows 방화벽을 사용하도록 설정하고 Windows 방화벽이 새 프로그램을 차단할 때 사용자에게 알림이 제공되도록 합니다.  
+
+John은 Woodgrove Bank가 최신 맬웨어 방지 프로그램 기능을 활용하고 Configuration Manager 콘솔에서 맬웨어 방지 솔루션을 중앙에서 관리할 수 있도록 Woodgrove Bank 맬웨어 방지 프로그램을 System Center Endpoint Protection으로 업그레이드할 것을 요청받았습니다. 
+
+
+## <a name="business-requirements"></a>비즈니스 요구 사항
+
+이 구현을 위해서는 다음과 같은 요구 사항이 필요합니다.  
 
 -   Configuration Manager를 사용하여 그룹 정책에 의해 현재 관리되는 Windows 방화벽 설정을 관리합니다.  
 
@@ -43,9 +52,9 @@ ms.locfileid: "32352569"
 
     -   24시간 동안 3가지 이상 다른 유형의 맬웨어가 검색됨  
 
--   기존 맬웨어 방지 솔루션을 제거합니다.  
-
  John은 다음 단계를 수행하여 Endpoint Protection을 구현합니다.  
+
+
 
 ##  <a name="steps-to-implement-endpoint-protection"></a>끝점 보호를 구현 하는 단계  
 
@@ -63,7 +72,7 @@ ms.locfileid: "32352569"
 |이한일은 **극동 무역 서버 정책**이라는 사용자 지정 맬웨어 방지 정책을 만듭니다. **예약된 검사** 에 대한 설정만 추가하고 다음과 같이 변경합니다.<br /><br /> **검사 유형**:  **전체**<br /><br /> **검사일**:  **토요일**<br /><br /> **검사 시간**: **오전 1시**<br /><br /> **Run a daily quick scan on client computers(클라이언트 컴퓨터에서 매일 빠른 검색 실행)**:  **아니요**|[System Center Configuration Manager에서 Endpoint Protection에 대한 맬웨어 방지 정책을 만들어 배포하는 방법](endpoint-antimalware-policies.md)을 참조하세요.|  
 |이한일은 배포는 **극동 무역 서버 정책** 사용자 지정 맬웨어 방지 정책을 **극동 무역 서버** 컬렉션에 배포합니다.|[Endpoint Protection에 대한 맬웨어 방지 정책을 만들어 배포하는 방법](endpoint-antimalware-policies.md) 문서의 “클라이언트 컴퓨터에 맬웨어 방지 정책을 배포하려면”을 참조하세요.|  
 |John은 Endpoint Protection에 대한 새로운 사용자 지정 클라이언트 장치 설정 집합을 만들고 이름을 **Woodgrove Bank Endpoint Protection 설정**으로 지정합니다.<br /><br /> **참고:** 계층 구조 내의 모든 클라이언트에서 Endpoint Protection을 설치하고 사용하도록 설정하지는 않으려면 기본 클라이언트 설정에서 **클라이언트 컴퓨터에서 Endpoint Protection 관리** 및 **클라이언트 컴퓨터에서 Endpoint Protection 클라이언트 설치** 옵션이 둘 다 **아니요**로 구성되어야 합니다.|자세한 내용은 [Endpoint Protection에 대한 사용자 지정 클라이언트 설정 구성](endpoint-protection-configure-client.md)을 참조하세요.|  
-|Jone은 Endpoint Protection에 대한 다음 설정을 구성합니다.<br /><br /> **클라이언트 컴퓨터에서 Endpoint Protection 관리**을 구현합니다.  **예**<br /><br /> 이 설정 및 값은 설치된 기존 Endpoint Protection 클라이언트가 Configuration Manager에 의해 관리되도록 합니다.<br /><br /> **클라이언트 컴퓨터에 Endpoint Protection 클라이언트 설치**:  **예**</br></br>**참고** Configuration Manager 1802부터 Windows 10 장치에 Endpoint Protection 에이전트를 설치할 필요가 없습니다. Windows 10 장치에 이미 설치되어 있는 경우 Configuration Manager는 에이전트를 제거하지 않습니다. 관리자는 1802 클라이언트 버전 이상이 실행 중인 Windows 10 장치에서 Endpoint Protection 에이전트를 제거할 수 있습니다.<br /><br /> **Endpoint Protection 설치 전에 자동으로 이전에 설치된 맬웨어 방지 프로그램 제거**:  **예**<br /><br /> 이 설정 및 값은 Endpoint Protection이 설치되고 사용되도록 설정되기 전에 비즈니스 요구에 따라 기존 맬웨어 방지 프로그램이 제거되도록 합니다.|자세한 내용은 [Endpoint Protection에 대한 사용자 지정 클라이언트 설정 구성](endpoint-protection-configure-client.md)을 참조하세요.|  
+|Jone은 Endpoint Protection에 대한 다음 설정을 구성합니다.<br /><br /> **클라이언트 컴퓨터에서 Endpoint Protection 관리**을 구현합니다.  **예**<br /><br /> 이 설정 및 값은 설치된 기존 Endpoint Protection 클라이언트가 Configuration Manager에 의해 관리되도록 합니다.<br /><br /> **클라이언트 컴퓨터에 Endpoint Protection 클라이언트 설치**:  **예**</br></br>**참고** Configuration Manager 1802부터 Windows 10 장치에 Endpoint Protection 에이전트를 설치할 필요가 없습니다. Windows 10 장치에 이미 설치되어 있는 경우 Configuration Manager는 에이전트를 제거하지 않습니다. 관리자는 1802 클라이언트 버전 이상이 실행 중인 Windows 10 장치에서 Endpoint Protection 에이전트를 제거할 수 있습니다.|자세한 내용은 [Endpoint Protection에 대한 사용자 지정 클라이언트 설정 구성](endpoint-protection-configure-client.md)을 참조하세요.|  
 |John은 **Woodgrove Bank Endpoint Protection 설정** 클라이언트 설정을 **Endpoint Protection 컬렉션에 의해 보호된 모든 컴퓨터** 컬렉션에 배포합니다.|[Configuration Manager에서 Endpoint Protection 구성](endpoint-antimalware-policies.md)의 "Endpoint Protection에 대한 사용자 지정 클라이언트 설정 구성"을 참조하세요.|  
 |이한일은 Windows 방화벽 정책 만들기 마법사를 통해 도메인 프로필에 대한 다음 설정을 구성하여 정책을 만듭니다.<br /><br /> 1) **Windows 방화벽 설정**: **예**<br /><br /> 2)<br />                    **Windows 방화벽이 새 프로그램을 차단할 때 사용자에게 알림**: **예**|[System Center Configuration Manager에서 Endpoint Protection에 대한 Windows 방화벽 정책을 만들어 배포하는 방법](../../protect/deploy-use/create-windows-firewall-policies.md)을 참조하세요.|  
 |John은 이전에 만든 **Endpoint Protection에 의해 보호된 모든 컴퓨터** 컬렉션에 새 방화벽 정책을 배포합니다.|자세한 내용은 [System Center Configuration Manager에서 Endpoint Protection에 대한 Windows 방화벽 정책을 만들어 배포하는 방법](create-windows-firewall-policies.md)의 "Windows 방화벽 정책을 배포하려면"을 참조하세요.|  

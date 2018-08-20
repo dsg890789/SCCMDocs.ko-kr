@@ -5,17 +5,17 @@ description: System Center Configuration Manager 콘솔은 업데이트 및 준�
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.date: 11/20/2016
+ms.date: 07/30/2018
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 9afd7b0f-5c8e-48bc-9a65-1f7d74103688
-ms.openlocfilehash: bc594fe6b870e1054033601a67209aa9ad72ccef
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: e51e2c8236b014063efe9734baf338ebe70d1eb3
+ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32351870"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39384486"
 ---
 # <a name="monitor-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 업데이트 모니터링
 
@@ -61,6 +61,26 @@ Configuration Manager 버전 1610부터 소프트웨어 업데이트 대시보�
 
 ##  <a name="BKMK_SUReports"></a> 소프트웨어 업데이트 보고서  
  소프트웨어 업데이트의 상태 메시지에는 소프트웨어 업데이트의 호환성 정보와 소프트웨어 업데이트 배포의 평가 및 적용 상태가 나와 있습니다. 소프트웨어 업데이트 보고서를 실행하여 이러한 상태 메시지를 표시할 수 있습니다. 미리 정의된 소프트웨어 업데이트 보고서는 30개 이상 제공됩니다. 이러한 보고서는 여러 범주로 구성한 후 소프트웨어 업데이트 및 배포에 대한 특정 정보를 보고하는 데 사용될 수 있습니다. 미리 구성된 보고서 이외에도 사용자 기업의 필요에 따라 사용자 지정 소프트웨어 업데이트 보고서를 만들 수도 있습니다. 자세한 내용은 [보고 작업 및 유지 관리](../../core/servers/manage/operations-and-maintenance-for-reporting.md)를 참조하세요.  
+
+### <a name="recommended-software-updates-reports"></a>권장되는 소프트웨어 업데이트 보고서
+다음은 잠재적인 문제를 파악하는 데 유용한 몇 가지 보고서입니다. 
+
+#### <a name="compliance-9---overall-health-and-compliance-starting-in-version-1806"></a>준수 9 - 전체 상태 및 준수(버전 1806부터 적용)
+보고서에는 다음과 같은 부분이 포함됩니다.
+
+- **정상인 클라이언트 수 및 총 클라이언트 수**: 이 막대형 차트는 지정된 컬렉션의 총 클라이언트 수에 대해 지정된 기간에 사이트와 통신한 “정상” 상태의 클라이언트를 비교합니다.
+- **준수 개요**: 이 원형 차트는 지정된 컬렉션의 활성 클라이언트에 있는 특정 소프트웨어 업데이트 그룹의 전체 준수 상태를 보여 줍니다.
+- **상위 5개의 문서 ID별 비준수**: 이 막대형 차트는 지정된 컬렉션의 활성 클라이언트에서 비준수 상태인 지정된 그룹의 소프트웨어 업데이트 상위 5개를 표시합니다.
+- 보고서의 맨 아래에는 추가 정보가 포함된 표가 있으며 지정된 그룹의 소프트웨어 업데이트를 나열합니다.
+
+#### <a name="management-2---updates-required-but-not-deployed"></a>관리 2 - 필요하지만 배포되지 않은 업데이트
+
+이 보고서는 클라이언트에 필요한 것으로 감지되었지만 특정 컬렉션에 배포되지 않은 특정 업데이트 분류에 공급 업체별 소프트웨어 업데이트를 표시합니다. 
+
+#### <a name="troubleshooting-2---deployment-errors"></a>문제 해결 2 - 배포 오류
+
+이 보고서는 사이트에서 발생한 배포 오류 및 각 오류가 발생한 컴퓨터 수를 반환합니다. 
+
 
 ##  <a name="BKMK_MonitorContent"></a> 콘텐츠 모니터링  
  Configuration Manager 콘솔에서 콘텐츠를 모니터링하여 연결된 배포 지점과 관련된 모든 패키지 유형의 상태를 검토할 수 있습니다. 여기에는 패키지의 콘텐츠에 대한 콘텐츠 유효성 검사 상태, 특정 배포 지점 그룹에 할당된 콘텐츠의 상태, 배포 지점에 할당된 콘텐츠의 상태, 각 배포 지점(콘텐츠 유효성 검사, PXE, 멀티캐스트 등)의 선택적 기능에 대한 상태 등이 포함됩니다.  

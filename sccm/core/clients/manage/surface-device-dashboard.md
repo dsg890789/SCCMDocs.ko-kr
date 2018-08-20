@@ -5,17 +5,17 @@ description: 대시보드를 사용하여 Surface 장치에 대한 정보를 검
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.date: 03/22/2018
+ms.date: 07/30/2018
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 7397fc17-3ae8-4525-8386-aea8a9cffa06
-ms.openlocfilehash: db5df73db6a973ca689def785ee99a40425303fa
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 96bca886b25cbe5f6ae1c2f06cbc823b4f017075
+ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32334558"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39383918"
 ---
 # <a name="surface-device-dashboard-in-system-center-configuration-manager"></a>System Center Configuration Manager의 Surface 장치 대시보드
 
@@ -51,8 +51,7 @@ Surface 장치 대시보드는 사용자 환경에 대한 세 개의 그래프�
         ![Surface 모델 장치 목록](media\Surface-Model-Device-List.PNG)
 
 - **상위 5개 펌웨어 버전** - 환경에서 상위 5개 펌웨어 모델을 포함한 차트를 표시합니다. 
-    - 그래프 섹션을 마우스로 가리키면 선택한 펌웨어 버전인 Surface 장치 수를 제공합니다. 
-       ![Surface 모델 장치 목록](media\Surface-Firmware-Hover.PNG)
+    - 그래프 섹션을 마우스로 가리키면 선택한 펌웨어 버전인 Surface 장치 수를 제공합니다. Configuration Manager 버전 1806부터 그래프 섹션을 클릭하면 관련 장치의 목록이 표시됩니다. <!--1358654--> ![Surface 모델 장치 목록](media\Surface-Firmware-Hover.PNG)
 
 
 ## <a name="more-information"></a>추가 정보

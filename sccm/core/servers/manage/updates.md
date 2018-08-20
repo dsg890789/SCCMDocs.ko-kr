@@ -2,7 +2,7 @@
 title: 업데이트 및 서비스
 titleSuffix: Configuration Manager
 description: 업데이트 및 서비스라는 콘솔 내 서비스 메서드에 대해 알아봅니다. 이 방법을 사용하면 권장 업데이트를 간편하게 찾아서 설치할 수 있습니다.
-ms.date: 05/01/2018
+ms.date: 07/31/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,35 +10,35 @@ ms.assetid: 3a832943-580a-4a40-b454-961d0854ac2b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 9c2a9d7c754e7a1a02527c4c985d1b9db6bc7d14
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 94d8f3a2ffafb078f3ffe92c4902cc610321ed86
+ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32341783"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39385052"
 ---
-# <a name="updates-for-system-center-configuration-manager"></a>System Center Configuration Manager용 업데이트
+# <a name="updates-and-servicing-for-configuration-manager"></a>Configuration Manager에 대한 업데이트 및 서비스
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Configuration Manager는 **업데이트 및 서비스**라는 콘솔 내 서비스 메서드를 사용합니다. 이 콘솔 내 메서드는 Configuration Manager 인프라에 대한 권장 업데이트를 손쉽게 찾아서 설치할 수 있도록 합니다. 이 콘솔 내 서비스에는 대역 외 업데이트(예: 고객 환경 특유의 문제를 해결해야 하는 고객을 위한 핫픽스)가 추가로 제공됩니다.  
+Configuration Manager는 **업데이트 및 서비스**라는 콘솔 내 서비스 메서드를 사용합니다. 이 콘솔 내 메서드는 Configuration Manager 인프라에 대한 권장 업데이트를 손쉽게 찾아서 설치할 수 있도록 합니다. 콘솔 내 서비스는 핫픽스와 같은 대역 외 업데이트로 보완됩니다. 대역 외 업데이트는 고객 환경 특유의 문제를 해결해야 하는 고객을 위한 것입니다.  
 
 > [!TIP]  
-> *업그레이드*, *업데이트* 및 *설치* 용어들은 Configuration Manager의 세 가지 별도 개념을 설명하는 데 사용됩니다. 각 용어가 어떻게 사용되는지에 대한 자세한 내용은 [업그레이드, 업데이트 및 설치 정보](/sccm/core/understand/upgrade-update-install)를 참조하세요.
+> *업그레이드*, *업데이트* 및 *설치* 용어들은 Configuration Manager의 세 가지 별도 개념을 설명하는 데 사용됩니다. 각 용어가 어떻게 사용되는지에 대한 자세한 내용은 [업그레이드, 업데이트 및 설치 정보](/sccm/core/understand/upgrade-update-install)를 참조하세요.  
 
 
- **다음 항목은 Configuration Manager에 대한 다양한 업데이트 형식을 찾아서 설치하는 방법을 이해하는 데 유용합니다.**  
+다음 문서는 Configuration Manager에 대한 다양한 업데이트 형식을 찾아서 설치하는 방법을 이해하는 데 유용합니다.  
 
--   [콘솔 내 업데이트 설치](../../../core/servers/manage/install-in-console-updates.md)  
+-   [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates)  
 
--   [서비스 연결 도구 사용](../../../core/servers/manage/use-the-service-connection-tool.md)  
+-   [서비스 연결 도구 사용](/sccm/core/servers/manage/use-the-service-connection-tool)  
 
--   [핫픽스를 가져오려면 업데이트 등록 도구 사용](../../../core/servers/manage/use-the-update-registration-tool-to-import-hotfixes.md)  
+-   [핫픽스를 가져오려면 업데이트 등록 도구 사용](/sccm/core/servers/manage/use-the-update-registration-tool-to-import-hotfixes)  
 
--   [업데이트를 설치하려면 핫픽스 설치 관리자 사용](../../../core/servers/manage/use-the-hotfix-installer-to-install-updates.md)  
+-   [업데이트를 설치하려면 핫픽스 설치 관리자 사용](/sccm/core/servers/manage/use-the-hotfix-installer-to-install-updates)  
 
 
-Technical Preview 분기에 대한 자세한 내용은 [System Center Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.
+기술 미리 보기 분기에 대한 자세한 내용은 [기술 미리 보기](/sccm/core/get-started/technical-preview)를 참조하세요.
 
 
 
@@ -59,33 +59,45 @@ Technical Preview 분기에 대한 자세한 내용은 [System Center Configurat
 
 -   보조 사이트를 콘솔 내에서 새로운 업데이트 버전으로 수동으로 업데이트합니다.  
 
-업데이트를 설치하면, 해당 버전에 대한 설치 파일이 사이트 서버의 **CD.Latest** 폴더에 저장됩니다. 이러한 파일에 대한 자세한 내용은 [CD.Latest 폴더](../../../core/servers/manage/the-cd.latest-folder.md)를 참조하세요.  
+업데이트를 설치하면, 해당 버전에 대한 설치 파일이 사이트 서버의 **CD.Latest** 폴더에 저장됩니다. 이러한 파일에 대한 자세한 내용은 [CD.Latest 폴더](/sccm/core/servers/manage/the-cd.latest-folder)를 참조하세요.  
 
 -   사이트 복구 시 CD.Latest 폴더에서 파일을 사용 합니다. 또한 계층 구조가 더 이상 기준 버전을 실행하지 못할 경우 이러한 파일을 사용하여 추가 사이트를 설치합니다.  
 
 -   CD.Latest의 설치 파일을 사용하여 새 계층 구조의 첫 번째 사이트를 설치하거나 System Center 2012 Configuration Manager에서 사이트를 업그레이드할 수 없습니다.  
 
+
+### <a name="version-details"></a>버전 세부 정보
+
 Configuration Manager에 대한 일부 업데이트는 기존 인프라에 대한 콘솔 내 업데이트 버전과 새 기준 버전이 모두 제공됩니다.  
 
-Configuration Manager의 다음 버전은 기준, 업데이트 또는 두 가지 버전이 모두 제공됩니다.  
+Configuration Manager의 다음과 같은 지원되는 버전은 기준, 업데이트 또는 두 가지 버전이 모두 제공됩니다.  
 
-|Version |가용일|[지원 종료 날짜](/sccm/core/servers/manage/current-branch-versions-supported) |기준|콘솔 내 업데이트|  
+| Version | 가용일 | [지원 종료 날짜](/sccm/core/servers/manage/current-branch-versions-supported) | 기준 | 콘솔 내 업데이트 |  
 |-------------|-----------|------------|--------------|------------------------|  
-|[1802](/sccm/core/plan-design/changes/whats-new-in-version-1802)<br /><br /> 5.00.8634.1000|2018년 3월 22일|2019년 9월 22일|예|예|
-|[1710](/sccm/core/plan-design/changes/whats-new-in-version-1710)<br /><br /> 5.00.8577.1000|2017년 11월 20일|2019 년 5 월 20|아니요|예|
-|[1706](/sccm/core/plan-design/changes/whats-new-in-version-1706)<br /><br /> 5.00.8540.1000|2017년 7월 31일|2018년 7월 31일|아니요|예|
-|[1702](/sccm/core/plan-design/changes/whats-new-in-version-1702)<br /><br /> 5.00.8498.1000|2017년 3월 27일| 2018년 3월 27일|예|예|
-|[1610](/sccm/core/plan-design/changes/whats-new-in-version-1610)<br /><br /> 5.00.8458.1000|2016년 11월 18일| 2017년 11월 18일|아니요|예|
-|[1606](/sccm/core/plan-design/changes/whats-new-in-version-1606)<br /><br /> 5.00.8412.1000|2016년 7월 22일| 2017년 7월 22일|아니요|예|
-|[1606](/sccm/core/plan-design/changes/whats-new-in-version-1606) 및 1606 핫픽스 롤업(KB3186654) </br></br>5.00.8412.1307 *(참고 1)* |2016년 10월 12일| 2017년 10월 12일|예|아니요|
-| 1602<br /><br /> 5.00.8355.1000|2016년 3월 11일| 2017년 3월 11일|아니요|예|
-| 1511 <br /><br /> 5.00.8325.1000|2015년 12월 8일| 2016년 12월 8일|예|아니요|  
+| [1806](/sccm/core/plan-design/changes/whats-new-in-version-1806)<br /><br /> 5.00.8692.1000 | 2018년 7월 31일 | 2020년 1월 31일 | 아니요 | 예 |
+| [1802](/sccm/core/plan-design/changes/whats-new-in-version-1802)<br /><br /> 5.00.8634.1000 | 2018년 3월 22일 | 2019년 9월 22일 | 예<sup>**1**</sup> | 예 |
+| [1710](/sccm/core/plan-design/changes/whats-new-in-version-1710)<br /><br /> 5.00.8577.1000 | 2017년 11월 20일 | 2019 년 5 월 20 | 아니요 | 예 |
+| [1706](/sccm/core/plan-design/changes/whats-new-in-version-1706)<br /><br /> 5.00.8540.1000 | 2017년 7월 31일 | 2018년 7월 31일 | 아니요 | 예 |
 
+> [!Note]  
+> <sup>**1**</sup> 1802 기준 미디어는 VLSC([볼륨 라이선스 서비스 센터](https://www.microsoft.com/Licensing/servicecenter/Downloads/DownloadsAndKeys.aspx))에서 다음 릴리스의 일부로 사용할 수 있습니다.
+> - System Center Config Mgr(현재 분기)
+> - System Center 2016 Datacenter
+> - System Center 2016 Standard  
+> 
+> 예를 들어 `System Center Config Mgr (current branch)`용 VLSC를 검색합니다. 파일 목록에서 1802 기준 미디어를 찾아 해당 릴리스를 다운로드 합니다.  
 
-*(참고 1)* 1802 기준 미디어는 VLSC([볼륨 라이선스 서비스 센터](https://www.microsoft.com/Licensing/servicecenter/Downloads/DownloadsAndKeys.aspx))에서 다음 릴리스의 일부로 사용할 수 있습니다.
-- System Center Config Mgr(현재 분기)
-- System Center 2016 Datacenter
-- 예를 들어 System Center 2016 표준은 VLSC에서 `System Center Config Mgr (current branch)`을 검색합니다. 파일 목록에서 1802 기준 미디어를 찾아 해당 릴리스를 다운로드 합니다.
+다음 표에 지원되지 않는 Configuration Manager 현재 분기의 이전 버전이 나열되어 있습니다.
+
+| Version | 가용일 | 지원 종료 날짜 | 기준 | 콘솔 내 업데이트 |  
+|-------------|-----------|------------|--------------|------------------------|  
+| 1702 <br /><br /> 5.00.8498.1000 | 2017년 3월 27일 | 2018년 3월 27일 | 예 | 예 |
+| 1610 <br /><br /> 5.00.8458.1000 | 2016년 11월 18일 | 2017년 11월 18일 | 아니요 | 예 |
+| 1606 <br /><br /> 5.00.8412.1000 | 2016년 7월 22일 | 2017년 7월 22일 | 아니요 | 예 |
+| 1606 및 1606 핫픽스 롤업(KB3186654) </br></br>5.00.8412.1307 | 2016년 10월 12일 | 2017년 10월 12일 | 예 | 아니요 |
+| 1602<br /><br /> 5.00.8355.1000 | 2016년 3월 11일 | 2017년 3월 11일 | 아니요 | 예 |
+| 1511 <br /><br /> 5.00.8325.1000 | 2015년 12월 8일 | 2016년 12월 8일 | 예 | 아니요 |  
+
 
 Configuration Manager 사이트 버전을 확인하려면 콘솔의 왼쪽 위에 있는 **System Center Configuration Manager 정보**로 이동합니다. 이 대화 상자에는 사이트 및 콘솔 버전이 표시됩니다.  
 
@@ -95,11 +107,12 @@ Configuration Manager 사이트 버전을 확인하려면 콘솔의 왼쪽 위�
 
 
 ##  <a name="bkmk_inconsole"></a> 콘솔 내 업데이트 및 서비스  
- System Center Configuration Manager 현재 분기의 프로덕션이 준비된 설치를 사용하는 경우 대부분의 업데이트는 **업데이트 및 서비스** 채널을 사용하여 제공됩니다. 이 메서드는 현재 인프라 버전 및 구성에 해당하는 업데이트를 식별하고 다운로드하고 사용할 수 있게 합니다. 또한 Microsoft에서 모든 고객에게 권장하는 업데이트만 포함합니다.   
 
- 이러한 업데이트에는 다음이 포함됩니다.  
+System Center Configuration Manager 현재 분기의 프로덕션이 준비된 설치를 사용하는 경우 대부분의 업데이트는 **업데이트 및 서비스** 채널을 사용하여 제공됩니다. 이 메서드는 현재 인프라 버전 및 구성에 해당하는 업데이트를 식별하고 다운로드하고 사용할 수 있게 합니다. 또한 Microsoft에서 모든 고객에게 권장하는 업데이트만 포함합니다.   
 
--   새 버전(예: 1702, 1706, 1710 또는 1802 버전)  
+이러한 업데이트에는 다음이 포함됩니다.  
+
+-   1710, 1802 또는 1806 버전과 같은 새 버전.  
 
 -   현재 버전에 대한 새로운 기능을 포함하는 업데이트입니다.
 
@@ -121,19 +134,19 @@ Configuration Manager 사이트 버전을 확인하려면 콘솔의 왼쪽 위�
 
 Configuration Manager는 사용자를 위해 새 업데이트를 검색합니다. Configuration Manager 서비스 연결 지점과 다음 동작을 기록하는 Microsoft 클라우드 서비스와 동기화합니다.  
 
--   서비스 연결 지점이 온라인 모드이면 사이트는 Microsoft와 매일 동기화합니다. 인프라에 적용되는 새 업데이트를 자동으로 식별합니다. 업데이트 및 재배포 가능 파일을 다운로드하려면 서비스 연결 지점 사이트 시스템 역할을 호스트하는 컴퓨터는 **시스템** 컨텍스트를 사용하여 다음 인터넷 위치(go.microsoft.com 및 download.microsoft.com)에 액세스합니다. 서비스 연결 지점에서 사용하는 추가 위치에 대한 자세한 내용은 [인터넷 액세스 요구 사항](../../../core/servers/deploy/configure/about-the-service-connection-point.md#bkmk_urls)을 참조하세요.  
+-   서비스 연결 지점이 온라인 모드이면 사이트는 Microsoft와 매일 동기화합니다. 인프라에 적용되는 새 업데이트를 자동으로 식별합니다. 업데이트 및 재배포 가능 파일을 다운로드하려면 서비스 연결 지점 사이트 시스템 역할을 호스트하는 컴퓨터는 **시스템** 컨텍스트를 사용하여 다음 인터넷 위치(go.microsoft.com 및 download.microsoft.com)에 액세스합니다. 서비스 연결 지점에서 사용하는 추가 위치에 대한 자세한 내용은 [인터넷 액세스 요구 사항](/sccm/core/servers/deploy/configure/about-the-service-connection-point#bkmk_urls)을 참조하세요.  
 
--   서비스 연결 지점이 오프라인 모드인 경우 서비스 연결 도구를 사용하여 Microsoft 클라우드와 수동으로 동기화합니다. 자세한 내용은 [서비스 연결 도구 사용](../../../core/servers/manage/use-the-service-connection-tool.md)을 참조하세요.  
+-   서비스 연결 지점이 오프라인 모드인 경우 서비스 연결 도구를 사용하여 Microsoft 클라우드와 수동으로 동기화합니다. 자세한 내용은 [서비스 연결 도구 사용](/sccm/core/servers/manage/use-the-service-connection-tool)을 참조하세요.  
 
 -   콘솔 내 업데이트는 개별적인 업데이트, 서비스 팩, 새 기능을 독립적으로 찾아서 설치할 필요성을 대체합니다.  
 
--   선택한 콘솔 내 업데이트만 설치합니다. 일부 업데이트를 설치할 때 사용하도록 설정할 개별 기능을 선택할 수 있습니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](../../../core/servers/manage/install-in-console-updates.md#bkmk_options)을 참조하세요.  
+-   선택한 콘솔 내 업데이트만 설치합니다. 일부 업데이트를 설치할 때 사용하도록 설정할 개별 기능을 선택할 수 있습니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.  
 
 콘솔 내 업데이트를 설치하는 경우 다음 프로세스가 발생합니다.  
 
 -   필수 구성 요소 확인이 자동으로 실행됩니다. 설치를 시작하기 전에 이런 확인을 수동으로 실행할 수도 있습니다.  
 
--   사용자 환경에서 최상위 사이트를 설치합니다. 이 사이트는 있는 경우 중앙 관리 사이트입니다. 계층 구조에서 업데이트가 기본 사이트에 자동으로 설치됩니다. [사이트 서버에 대한 서비스 기간](../../../core/servers/manage/service-windows.md)을 사용하여 각각의 기본 사이트 서버가 업데이트하도록 허용할 시기를 제어합니다.  
+-   사용자 환경에서 최상위 사이트를 설치합니다. 이 사이트는 있는 경우 중앙 관리 사이트입니다. 계층 구조에서 업데이트가 기본 사이트에 자동으로 설치됩니다. [사이트 서버에 대한 서비스 기간](/sccm/core/servers/manage/service-windows)을 사용하여 각각의 기본 사이트 서버가 업데이트하도록 허용할 시기를 제어합니다.  
 
 -   사이트 서버 업데이트 후에는, 영향을 받은 모든 사이트 시스템 역할이 자동으로 업데이트됩니다. 이러한 역할은 SMS 공급자의 인스턴스를 포함합니다. 사이트에 업데이트가 설치된 후 Configuration Manager 콘솔에서 콘솔 사용자에게 콘솔을 업데이트하라는 메시지를 표시합니다.  
 
@@ -147,22 +160,25 @@ Configuration Manager는 사용자를 위해 새 업데이트를 검색합니다
 
 
 ##  <a name="bkmk_outofband"></a> 대역 외 핫픽스  
+
 일부 핫픽스는 특정 문제를 처리할 가능성이 제한된 상태로 릴리스됩니다. 다른 핫픽스는 모든 고객에게 적용할 수 있지만 콘솔 내 메서드를 사용하여 설치할 수 없습니다. 이러한 수정 프로그램은 대역 외로 제공되며 Microsoft 클라우드 서비스에서 찾을 수 없습니다.  
 
-일반적으로 Configuration Manager 배포 문제를 해결하거나 처리하려는 경우 Microsoft 고객 지원 서비스, Microsoft 지원 지식 기반 문서 또는 [System Center Configuration Manager 팀 블로그](https://blogs.technet.microsoft.com/configmgrteam)에서 대역 외 핫픽스에 대해 알아볼 수 있습니다. 
+일반적으로 Configuration Manager 배포 문제를 해결하거나 처리하려는 경우 Microsoft 고객 지원 서비스, Microsoft 지원 지식 기반 문서 또는 Enterprise Mobility + Security 블로그에서 [System Center Configuration Manager 팀 블로그의 게시물](https://cloudblogs.microsoft.com/enterprisemobility/?product=system-center-configuration-manager)에서 대역 외 핫픽스에 대해 알아볼 수 있습니다. 
 
 이러한 수정 프로그램은 다음 두 가지 방법 중 한 가지를 사용하여 수동으로 설치합니다.  
 
--   **업데이트 등록 도구**: 이 도구로 핫픽스를 Configuration Manager 콘솔에 수동으로 가져옵니다. 그런 다음, 자동으로 검색되는 콘솔 내 업데이트를 수행할 때 업데이트를 설치합니다.  
+#### <a name="update-registration-tool"></a>업데이트 등록 도구
+이 도구로 핫픽스를 Configuration Manager 콘솔에 수동으로 가져옵니다. 그런 다음, 자동으로 검색되는 콘솔 내 업데이트를 수행할 때 업데이트를 설치합니다.  
 
-    - 이 메서드는 다음과 같은 파일 이름 구조를 사용하는 핫픽스에 사용됩니다.  
-         `<Product>-<product version>-<KB article ID>-ConfigMgr.Update.exe`    
+이 메서드는 다음과 같은 파일 이름 구조를 사용하는 핫픽스에 사용됩니다.  
+  `<Product>-<product version>-<KB article ID>-ConfigMgr.Update.exe`    
 
-    - 자세한 내용은 [업데이트 등록 도구를 사용하여 핫픽스 가져오기](../../../core/servers/manage/use-the-update-registration-tool-to-import-hotfixes.md)를 참조하세요.  
+자세한 내용은 [업데이트 등록 도구를 사용하여 핫픽스 가져오기](/sccm/core/servers/manage/use-the-update-registration-tool-to-import-hotfixes)를 참조하세요.  
 
--   **핫픽스 설치 관리자:** 콘솔 내 메서드를 사용하여 설치할 수 없는 핫픽스를 수동으로 설치하려면 이 도구를 사용합니다.  
+#### <a name="hotfix-installer"></a>핫픽스 설치 관리자
+콘솔 내 메서드를 사용하여 설치할 수 없는 핫픽스를 수동으로 설치하려면 이 도구를 사용합니다.  
 
-    - 이 메서드는 다음과 같은 파일 이름 구조를 사용하는 핫픽스에 사용됩니다.   
-         `<Product>-<product version>-<KB article ID>-<platform>-<language>.exe`  
+이 메서드는 다음과 같은 파일 이름 구조를 사용하는 핫픽스에 사용됩니다.   
+   `<Product>-<product version>-<KB article ID>-<platform>-<language>.exe`  
 
-    - 자세한 내용은 [핫픽스 설치 관리자를 사용하여 업데이트 설치](../../../core/servers/manage/use-the-hotfix-installer-to-install-updates.md)를 참조하세요.  
+자세한 내용은 [핫픽스 설치 관리자를 사용하여 업데이트 설치](/sccm/core/servers/manage/use-the-hotfix-installer-to-install-updates)를 참조하세요.  

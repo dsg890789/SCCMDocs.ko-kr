@@ -2,7 +2,7 @@
 title: 문제 해결을 위한 로그 파일
 titleSuffix: Configuration Manager
 description: 로그 파일을 사용하여 Configuration Manager 클라이언트 및 사이트 시스템 문제를 해결할 수 있습니다.
-ms.date: 03/22/2018
+ms.date: 07/30/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,14 +10,14 @@ ms.assetid: c1ff371e-b0ad-4048-aeda-02a9ff08889e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: c068ea5a079d43148191e41dc9a2b4fb7a2e00c7
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 2bd3f76b982356fc444681d1990bee08e90b32fc
+ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32342667"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39385289"
 ---
-# <a name="log-files-in-system-center-configuration-manager"></a>System Center Configuration Manager의 로그 파일
+# <a name="log-files-in-configuration-manager"></a>Configuration Manager의 로그 파일
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -116,7 +116,7 @@ Configuration Manager에서는 클라이언트 및 사이트 서버 구성 요�
 ##  <a name="BKMK_AboutLogs"></a> Configuration Manager 로그 파일 정보  
  Configuration Manager의 프로세스 대부분은 해당 프로세스 전용 로그 파일에 작업 정보를 기록합니다. 로그 파일은 **.log** 또는 **.lo_** 파일 확장명으로 식별됩니다. Configuration Manager는 로그가 최대 크기에 도달할 때까지 .log 파일에 내용을 기록합니다. 로그가 가득 차면 .log 파일이 이름은 같지만 확장명은 .lo_인 파일에 복사되고 프로세스 또는 구성 요소는 계속 .log 파일에 기록합니다. .log 파일이 다시 최대 크기에 도달하면 .lo_ 파일을 덮어쓰게 되고 프로세스가 반복됩니다. 일부 구성 요소는 날짜 및 시간 스탬프를 로그 파일 이름에 추가하고 .log 확장명을 유지하여 로그 파일 기록을 설정합니다. Linux 및 UNIX용 클라이언트에는 .lo_ 파일의 사용 및 최대 크기가 적용되지 않습니다. Linux 및 UNIX용 클라이언트에서 로그 파일을 사용하는 방법에 대한 자세한 내용은 이 문서에서 [Linux 및 UNIX용 클라이언트의 로그 파일 관리](#BKMK_ManageLinuxLogs)를 참조하세요.  
 
- 로그를 보려면 Configuration Manager 로그 뷰어 도구인 CMTrace를 사용하면 됩니다. 이 도구는 Configuration Manager 원본 미디어의 \\SMSSetup\\Tools 폴더에 있습니다. CMTrace 도구는 소프트웨어 라이브러리에 추가된 모든 부팅 이미지에 추가됩니다.  
+ 로그를 보려면 Configuration Manager 로그 뷰어 도구인 CMTrace를 사용하면 됩니다. 이 도구는 Configuration Manager 원본 미디어의 \\SMSSetup\\Tools 폴더에 있습니다. CMTrace 도구는 소프트웨어 라이브러리에 추가된 모든 부팅 이미지에 추가됩니다. 1806 버전부터 CMTrace 로그 보기 도구가 Configuration Manager 클라이언트와 함께 자동으로 설치됩니다.<!--1357971--> 자세한 내용은 [CMTrace](/sccm/core/support/cmtrace)를 참조하세요. 
 
 ###  <a name="BKMK_LogOptions"></a> Configuration Manager Service Manager를 사용하여 로깅 옵션 구성  
  Configuration Manager가 로그 파일을 저장하는 위치 및 크기를 변경할 수 있습니다.  
@@ -333,6 +333,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |sitecomp.log|사이트의 모든 사이트 시스템 서버에 설치된 사이트 구성 요소의 유지 관리 관련 세부 정보를 기록합니다.|사이트 서버|  
 |sitectrl.log|데이터베이스의 사이트 제어 개체에 적용된 사이트 설정 변경 내용을 기록합니다.|사이트 서버|  
 |sitestat.log|모든 사이트 시스템의 가용성 및 디스크 공간 모니터링 프로세스를 기록합니다.|사이트 서버|
+|SMS_ISVUPDATES_SYNCAGENT.log| Configuration Manager 버전 1806부터 시작되는 타사 소프트웨어 동기화에 대한 로그 파일입니다.| Configuration Manager 계층 구조의 최상위 수준 소프트웨어 업데이트 지점입니다.|
 |SMS_PhasedDeployment.log| 단계별 배포에 대한 로그 파일, Configuration Manager 버전 1802부터 시작하는 시험판 기능.|Configuration Manager 계층 구조의 최상위 사이트|   
 |SmsAdminUI.log|Configuration Manager 콘솔 작업을 기록합니다.|Configuration Manager 콘솔을 실행하는 컴퓨터|  
 |SMSAWEBSVCSetup.log|응용 프로그램 카탈로그 웹 서비스의 설치 작업을 기록합니다.|사이트 시스템 서버|  
@@ -411,7 +412,8 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |--------------|-----------------|----------------------------|  
 |objreplmgr.log|부모 사이트에서 자식 사이트로 소프트웨어 업데이트 알림 파일을 복제하는 작업과 관련된 세부 정보를 기록합니다.|사이트 서버|  
 |PatchDownloader.log|소프트웨어 업데이트를 업데이트 원본에서 사이트 서버의 다운로드 대상으로 다운로드하는 프로세스에 대한 세부 정보를 기록합니다.|다운로드가 시작되는 Configuration Manager 콘솔을 호스트하는 컴퓨터|  
-|ruleengine.log|식별, 콘텐츠 다운로드, 소프트웨어 업데이트 그룹, 배포 만들기 등 자동 배포 규칙에 대한 세부 정보를 기록합니다.|사이트 서버|  
+|ruleengine.log|식별, 콘텐츠 다운로드, 소프트웨어 업데이트 그룹, 배포 만들기 등 자동 배포 규칙에 대한 세부 정보를 기록합니다.|사이트 서버| 
+|SMS_ISVUPDATES_SYNCAGENT.log| Configuration Manager 버전 1806부터 시작되는 타사 소프트웨어 동기화에 대한 로그 파일입니다.| Configuration Manager 계층 구조의 최상위 수준 소프트웨어 업데이트 지점입니다.| 
 |SUPSetup.log|소프트웨어 업데이트 지점 설치에 대한 세부 정보를 기록합니다. 소프트웨어 업데이트 지점 설치가 완료되면 이 로그 파일에 **Installation was successful** 이 기록됩니다.|사이트 시스템 서버|  
 |WCM.log|소프트웨어 업데이트 지점 구성과 구독된 업데이트 범주, 분류 및 언어를 위한 WSUS 서버 연결에 대한 세부 정보를 기록합니다.|WSUS 서버에 연결하는 사이트 서버|  
 |WSUSCtrl.log|사이트에 대한 WSUS 서버의 구성, 데이터베이스 연결 및 상태에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|  
@@ -777,7 +779,8 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |RebootCoordinator.log|소프트웨어 업데이트 설치 후 클라이언트 컴퓨터의 시스템 다시 시작 조정에 대한 세부 정보를 기록합니다.|클라이언트|  
 |ScanAgent.log|소프트웨어 업데이트, WSUS 위치 및 관련 작업에 대한 검사 요청과 관련된 세부 정보를 기록합니다.|클라이언트|  
 |SdmAgent.log|재구성 및 준수 추적에 대한 세부 정보를 기록합니다. 그러나 소프트웨어 업데이트 로그 파일인 Updateshandler.log는 준수에 필요한 소프트웨어 업데이트를 설치하는 작업에 대한 자세한 세부 정보를 제공합니다.<br /><br /> 이 로그 파일은 호환성 설정과 공유됩니다.|클라이언트|  
-|ServiceWindowManager.log|유지 관리 기간의 평가에 대한 세부 정보를 기록합니다.|클라이언트|  
+|ServiceWindowManager.log|유지 관리 기간의 평가에 대한 세부 정보를 기록합니다.|클라이언트|
+|SMS_ISVUPDATES_SYNCAGENT.log| Configuration Manager 버전 1806부터 시작되는 타사 소프트웨어 동기화에 대한 로그 파일입니다.| Configuration Manager 계층 구조의 최상위 수준 소프트웨어 업데이트 지점입니다.|  
 |SmsWusHandler.log|Microsoft 업데이트용 인벤토리 도구의 검사 프로세스에 대한 세부 정보를 기록합니다.|클라이언트|  
 |StateMessage.log|생성된 후 관리 지점으로 전송되는 소프트웨어 업데이트 상태 메시지에 대한 세부 정보를 기록합니다.|클라이언트|  
 |SUPSetup.log|소프트웨어 업데이트 지점 설치에 대한 세부 정보를 기록합니다. 소프트웨어 업데이트 지점 설치가 완료되면 이 로그 파일에 **Installation was successful** 이 기록됩니다.|사이트 시스템 서버|  

@@ -2,26 +2,25 @@
 title: 클라우드 관리 게이트웨이에 대한 계획
 titleSuffix: Configuration Manager
 description: 인터넷 기반 클라이언트의 관리를 간소화하도록 CMG(클라우드 관리 게이트웨이)를 계획하고 설계합니다.
-ms.date: 04/10/2018
+ms.date: 07/30/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 2dc8c9f1-4176-4e35-9794-f44b15f4e55f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6e5274398b1a53b5a8dce8b854bccbe0e0d92081
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 78300528fde4a75f8ff816fb5ac2bb8549c2571c
+ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32340858"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39383765"
 ---
 # <a name="plan-for-the-cloud-management-gateway-in-configuration-manager"></a>Configuration Manager에서 클라우드 관리 게이트웨이 계획
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
  
-<!--1101764-->
-CMG(클라우드 관리 게이트웨이)는 인터넷에서 Configuration Manager 클라이언트를 관리할 수 있는 간단한 방법을 제공합니다. CMG를 클라우드 서비스로 Microsoft Azure에 배포하면 추가 인프라 없이 인터넷에서 로밍하는 기존 클라이언트를 관리할 수 있습니다. 또한 온-프레미스 인프라를 인터넷에 노출할 필요도 없습니다. 
+<!--1101764--> CMG(클라우드 관리 게이트웨이)는 인터넷에서 Configuration Manager 클라이언트를 관리할 수 있는 간단한 방법을 제공합니다. CMG를 클라우드 서비스로 Microsoft Azure에 배포하면 추가 인프라 없이 인터넷에서 로밍하는 기존 클라이언트를 관리할 수 있습니다. 또한 온-프레미스 인프라를 인터넷에 노출할 필요도 없습니다. 
 
 > [!Tip]  
 > 이 기능은 버전 1610에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 소개되었습니다. 버전 1802 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.  
@@ -96,8 +95,7 @@ CMG의 배포 및 운영에 포함되는 구성 요소는 다음과 같습니다
 
 
 ### <a name="azure-resource-manager"></a>Azure Resource Manager
-<!-- 1324735 -->
-1802 버전부터 **Azure Resource Manager 배포**를 사용하여 CMG를 만들 수 있습니다. [Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview)는 모든 솔루션 리소스를 [리소스 그룹](/azure/azure-resource-manager/resource-group-overview#resource-groups)이라는 단일 엔터티로 관리하기 위한 최신 플랫폼입니다. Azure Resource Manager로 CMG를 배포하는 경우 사이트에서 Azure AD(Azure Active Directory)를 사용하여 필요한 클라우드 리소스를 인증하고 만듭니다. 이 최신 배포에서는 클래식 Azure 관리 인증서가 필요하지 않습니다.  
+<!-- 1324735 --> 1802 버전부터 **Azure Resource Manager 배포**를 사용하여 CMG를 만들 수 있습니다. [Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview)는 모든 솔루션 리소스를 [리소스 그룹](/azure/azure-resource-manager/resource-group-overview#resource-groups)이라는 단일 엔터티로 관리하기 위한 최신 플랫폼입니다. Azure Resource Manager로 CMG를 배포하는 경우 사이트에서 Azure AD(Azure Active Directory)를 사용하여 필요한 클라우드 리소스를 인증하고 만듭니다. 이 최신 배포에서는 클래식 Azure 관리 인증서가 필요하지 않습니다.  
 
 Azure 관리 인증서를 사용하는 **클래식 서비스 배포** 옵션도 CMG 마법사에서 계속 제공됩니다. 리소스의 배포 및 관리를 간소화하기 위해 모든 새 CMG 인스턴스에 Azure Resource Manager 배포 모델을 사용하는 것이 좋습니다. 가능한 경우 리소스 관리자를 통해 기존 CMG 인스턴스를 재배포합니다. 자세한 내용은 [CMG 수정](/sccm/core/clients/manage/cmg/setup-cloud-management-gateway#modify-a-cmg)을 참조하세요.
 
@@ -199,6 +197,7 @@ Fourth Coffee는 시애틀 본사의 온-프레미스 데이터 센터에 중앙
 | 소프트웨어 배포(사용자 대상, 필수)</br>(Azure AD 통합 포함)     | ![지원됨](media/green_check.png)  (1710) |
 | 소프트웨어 배포(사용자 대상, 사용 가능)</br>([모든 요구 사항](/sccm/apps/deploy-use/deploy-applications#deploy-user-available-applications-on-azure-ad-joined-devices)) | ![지원됨](media/green_check.png)  (1802) |
 | Windows 10 전체 업그레이드 작업 순서     | ![지원됨](media/green_check.png)  (1802) |
+| CMPivot     | ![지원됨](media/green_check.png)  (1806) |
 | 다른 작업 순서 시나리오     | ![지원되지 않음](media/Red_X.png) |
 | 클라이언트 강제 설치     | ![지원되지 않음](media/Red_X.png) |
 | 자동 사이트 할당     | ![지원되지 않음](media/Red_X.png) |
@@ -264,9 +263,9 @@ CMG는 다음과 같은 Azure 구성 요소를 사용하며, 이 경우 Azure �
 
 - 인터넷 기반 클라이언트는 Windows 업데이트에서 Microsoft 소프트웨어 업데이트 콘텐츠를 무료로 가져옵니다. Microsoft 업데이트 콘텐츠가 포함된 업데이트 패키지를 클라우드 배포 지점에 배포하지 마세요. 그렇지 않으면 저장소 및 데이터 송신 비용이 발생할 수 있습니다.  
 
-- 응용 프로그램 또는 타사 소프트웨어 업데이트와 같이 필요한 다른 콘텐츠의 경우 클라우드 기반 배포 지점에 배포해야 합니다. 현재 CMG는 클라이언트에 콘텐츠를 보내는 데 클라우드 기반 배포 지점만 지원합니다.  
+- 응용 프로그램 또는 타사 소프트웨어 업데이트와 같이 필요한 다른 콘텐츠의 경우 클라우드 배포 지점에 배포해야 합니다. 현재 CMG는 클라이언트에 콘텐츠를 보내는 데 클라우드 배포 지점만 지원합니다.  
 
-- 자세한 내용은 [클라우드 기반 배포](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point#cost-of-using-cloud-based-distribution) 사용 비용을 참조하세요.  
+- 자세한 내용은 [클라우드 배포 지점](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point#bkmk_cost) 사용 비용을 참조하세요.  
 
 #### <a name="other-costs"></a>기타 비용
 

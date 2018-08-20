@@ -2,7 +2,7 @@
 title: CNG 인증서 개요
 titleSuffix: Configuration Manager
 description: 'Configuration Manager 클라이언트 및 서버에 대한 CNG(Cryptography: Next Generation) 인증서 지원에 대해 알아봅니다.'
-ms.date: 03/22/2018
+ms.date: 07/30/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: dba904ae-7c44-46db-ae63-999b9821cb46
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4a4f37330f94111bcc41b81d9127039056f69e2b
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 8b85961c14c3db69c3e02e776798588fadd0fc89
+ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32334269"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39383156"
 ---
 # <a name="cng-certificates-overview"></a>CNG 인증서 개요
 <!-- 1356191 --> 
@@ -37,6 +37,10 @@ Configuration Manager는 CNG(Cryptography: Next Generation) 인증서를 제한�
 - 소프트웨어 업데이트 지점
 - 상태 마이그레이션 지점     
 
+1806 버전부터는 HTTPS 지원 서버 역할에 CNG 인증서를 사용합니다.
+
+- Configuration Manager 정책 모듈 <!--1357314-->을 사용하는 NDES 서버를 포함한 인증서 등록 지점
+
 > [!NOTE]
 > CNG는 이전 버전의 CAPI(Crypto API)와 호환됩니다. 클라이언트에서 CNG 지원을 사용하도록 설정된 경우에도 CAPI 인증서가 계속 지원됩니다.
 
@@ -54,9 +58,11 @@ Configuration Manager는 CNG(Cryptography: Next Generation) 인증서를 제한�
 
 - CNG 인증서를 사용하여 클라우드 배포 지점을 만듭니다.
 
-- NDES 정책 모듈에서 클라이언트 인증에 CNG 인증서를 사용하는 경우 인증서 등록 지점과의 통신이 실패합니다.
+- NDES 정책 모듈에서 클라이언트 인증에 CNG 인증서를 사용하는 경우 인증서 등록 지점과의 통신이 실패합니다. 
+    - Configuration Manager 버전 1806부터 지원됩니다.
 
 - 작업 순서 미디어를 만들 때 CNG 인증서를 지정하면 마법사가 부팅 가능한 미디어를 만드는 데 실패합니다.
+    - Configuration Manager 버전 1806부터 지원됩니다.
 
 ## <a name="to-use-cng-certificates"></a>CNG 인증서 사용
 
@@ -71,6 +77,7 @@ CNG 인증서를 사용하려면 CA(인증 기관)가 대상 컴퓨터에 대한
 - **암호화** 탭
 
     - **공급자 범주**는 **주요 저장소 공급자**여야 합니다. (필수)
+    - **요청 시 다음 공급자 중 하나 사용:** 은 **Microsoft 소프트웨어 키 저장소 공급자**여야 합니다. 
 
 > [!NOTE]
 > 사용자 환경 또는 조직의 요구 사항이 다를 수 있습니다. PKI 전문가에게 문의하세요. 고려해야 할 중요한 점은 인증서 CNG를 활용하기 위해 템플릿에서 키 저장소 공급자를 사용해야 한다는 것입니다.

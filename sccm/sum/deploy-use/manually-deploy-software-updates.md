@@ -1,314 +1,251 @@
 ---
 title: 소프트웨어 업데이트 수동 배포
 titleSuffix: Configuration Manager
-description: 업데이트를 수동으로 배포하려면 Configuration Manager 콘솔에서 업데이트를 선택하고 수동으로 배포하거나, 업데이트 그룹에 업데이트를 추가하고 그룹을 배포합니다.
+description: 소프트웨어 배포를 수동으로 만들어서 필수 소프트웨어 업데이트를 사용하여 클라이언트를 최신 상태로 유지하거나 대역 외 업데이트를 배포할 수 있습니다.
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.date: 12/07/2016
+ms.date: 07/30/2018
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 57184274-5fea-4d79-a2b4-22e08ed26daf
-ms.openlocfilehash: 3f79da78df10e97813b221ffca3df25396591fbc
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: a76582e853c2bcacdbd93723dc15b12d3b25f37c
+ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32352620"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39384443"
 ---
-#  <a name="BKMK_ManualDeploy"></a> 소프트웨어 업데이트 수동 배포  
+# <a name="manually-deploy-software-updates"></a>소프트웨어 업데이트 수동 배포  
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
- 수동 소프트웨어 업데이트 배포는 Configuration Manager 콘솔에서 소프트웨어 업데이트를 선택하고 배포 프로세스를 수동으로 시작하는 프로세스입니다. 또는 선택한 소프트웨어 업데이트를 업데이트 그룹에 추가한 다음 이 업데이트 그룹을 수동으로 배포할 수 있습니다. 먼저 수동 배포를 사용하여 클라이언트 장치에 필수 소프트웨어 업데이트를 최신 버전으로 유지하는 것이 일반적인 방법입니다. 그다음에 지속적인 월별 소프트웨어 업데이트 배포를 관리할 ADR을 만듭니다. 또한 수동 방법을 사용하면 대역 외 소프트웨어 업데이트를 배포할 수 있습니다. 적합한 배포 방법을 확인하려면 [소프트웨어 업데이트 배포](deploy-software-updates.md)를 참조하세요.
+수동 소프트웨어 업데이트 배포는 Configuration Manager 콘솔에서 소프트웨어 업데이트를 선택하고 배포 프로세스를 수동으로 시작하는 프로세스입니다. 또는 선택한 소프트웨어 업데이트를 업데이트 그룹에 추가한 다음, 업데이트 그룹을 수동으로 배포합니다. 일반적으로 수동 배포는 필수 소프트웨어 업데이트로 클라이언트를 최신 상태로 유지하는 데 사용합니다. 그런 다음, ADR(자동 배포 규칙)을 사용하여 매월 진행되는 소프트웨어 업데이트 배포를 관리합니다. 수동 방법을 사용하여 대역 외 소프트웨어 업데이트도 배포합니다. 어떤 배포 방법이 적합한지에 대한 자세한 내용은 [소프트웨어 업데이트 배포](deploy-software-updates.md)를 참조하세요.
 
- 다음 섹션에서는 소프트웨어 업데이트를 수동으로 배포하는 단계를 제공합니다.  
+
 
 ##  <a name="BKMK_1SearchCriteria"></a> 1단계: 소프트웨어 업데이트에 대한 검색 조건 지정  
- Configuration Manager 콘솔에는 수천 개의 소프트웨어 업데이트가 표시될 수 있습니다. 소프트웨어 업데이트 수동 배포를 위한 워크플로의 첫 단계는 배포할 소프트웨어 업데이트를 확인하는 것입니다. 예를 들어 50개 이상의 클라이언트 장치에 필요하고 **보안** 또는 **위험** 소프트웨어 업데이트 분류에 속하는 모든 소프트웨어 업데이트를 검색하는 기준을 제공할 수 있습니다.  
+
+사이트가 동기화하는 제품 및 분류의 조합에 따라, Configuration Manager 콘솔에 수천 개의 소프트웨어 업데이트가 표시될 수 있습니다. 소프트웨어 업데이트 수동 배포를 위한 워크플로의 첫 단계는 배포할 소프트웨어 업데이트를 확인하는 것입니다. 예를 들어, **보안** 또는 **위험**으로 분류된 50개 초과의 클라이언트 장치에 필요한 모든 소프트웨어 업데이트를 표시합니다.  
 
 > [!IMPORTANT]  
->  단일 소프트웨어 업데이트 배포에 포함할 수 있는 최대 소프트웨어 업데이트 수는 1000개입니다.  
+>  단일 소프트웨어 업데이트 배포는 소프트웨어 업데이트 수가 1000개로 제한됩니다.  
 
-#### <a name="to-specify-search-criteria-for-software-updates"></a>소프트웨어 업데이트에 대한 검색 조건을 지정하려면  
+### <a name="process-to-specify-search-criteria-for-software-updates"></a>소프트웨어 업데이트에 대한 검색 조건을 지정하는 프로세스  
 
-1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리**를 클릭합니다.  
-
-2.  소프트웨어 라이브러리 작업 영역에서 **소프트웨어 업데이트**를 확장하고 **모든 소프트웨어 업데이트**를 클릭합니다. 동기화된 소프트웨어 업데이트가 표시됩니다.  
+1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 영역으로 이동하여 **소프트웨어 업데이트**를 펼쳐서 **모든 소프트웨어 업데이트**를 선택합니다. 이 노드에 동기화된 소프트웨어 업데이트가 모두 표시됩니다.  
 
     > [!NOTE]  
-    >  **모든 소프트웨어 업데이트** 노드에서 Configuration Manager는 지난 30일 이내에 배포되고 **위험** 및 **보안**으로 분류된 소프트웨어 업데이트만 표시합니다.  
+    >  **모든 소프트웨어 업데이트** 노드에는 지난 30일 이내에 배포되고 **위험** 및 **보안**으로 분류된 소프트웨어 업데이트만 표시합니다.  
 
-3.  검색 창에서 다음 단계 중 하나 또는 둘 다를 사용하여 필요한 소프트웨어 업데이트를 확인하기 위해 필터링을 수행합니다.  
+2.  검색 창에서 필터링하여 필요한 소프트웨어 업데이트를 확인합니다. 다음 옵션 중 하나 또는 모두를 사용합니다.  
 
-    -   검색 텍스트 상자에 소프트웨어 업데이트를 필터링할 검색 문자열을 입력합니다. 예를 들어 특정 소프트웨어 업데이트에 대한 문서 ID 또는 공지 ID를 입력하거나 여러 소프트웨어 업데이트의 타이틀에 표시될 문자열을 입력합니다.  
+    -   검색 텍스트 상자에 소프트웨어 업데이트를 필터링하는 검색 문자열을 입력합니다. 예를 들어 특정 소프트웨어 업데이트에 대한 문서 또는 공지 ID를 입력합니다. 또는 여러 소프트웨어 업데이트의 제목에 표시되는 문자열을 입력합니다.  
 
-    -   **조건 추가**를 클릭하고, 소프트웨어 업데이트를 필터링하는 데 사용할 조건을 선택하고, **추가**를 클릭한 다음, 조건에 대한 값을 입력합니다.  
+    -   **조건 추가**를 클릭하고 소프트웨어 업데이트를 필터링할 조건을 선택합니다. **추가**를 선택한 다음, 조건에 대한 값을 제공합니다.  
 
-4.  **검색** 을 클릭하여 소프트웨어 업데이트를 필터링합니다.  
+3.  **검색** 을 클릭하여 소프트웨어 업데이트를 필터링합니다.  
 
     > [!TIP]  
-    >  선택적으로 **검색** 탭과 **저장** 그룹에 필터 기준을 저장할 수 있습니다.  
+    >  자주 사용되는 필터 조건을 저장합니다. 리본에서 **현재 검색 저장** 옵션을 클릭합니다. **저장된 검색**을 클릭하여 이전 검색을 불러옵니다.   
 
-##  <a name="BKMK_2UpdateGroup"></a> 2단계: 소프트웨어 업데이트를 포함하는 소프트웨어 업데이트 그룹 만들기  
- 소프트웨어 업데이트 그룹을 활용하면 배포 준비 과정에서 소프트웨어 업데이트를 효과적으로 구성할 수 있습니다. 소프트웨어 업데이트를 소프트웨어 업데이트 그룹에 수동으로 추가하거나 Configuration Manager를 통해 ADR을 사용하면 소프트웨어 업데이트를 새로운 또는 기존 소프트웨어 업데이트 그룹에 자동으로 추가할 수 있습니다. 새 소프트웨어 업데이트 그룹에 소프트웨어 업데이트를 수동으로 추가하려면 다음 절차를 따르세요.  
 
-#### <a name="to-manually-add-software-updates-to-a-new-software-update-group"></a>새 소프트웨어 업데이트 그룹에 소프트웨어 업데이트를 수동으로 추가하려면  
 
-1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리**를 클릭합니다.  
+##  <a name="BKMK_2UpdateGroup"></a> 2단계: 소프트웨어 업데이트를 포함하는 소프트웨어 업데이트 그룹 만들기   
 
-2.  소프트웨어 라이브러리 작업 영역에서 **소프트웨어 업데이트**를 클릭합니다.  
+소프트웨어 업데이트 그룹을 사용하면 배포 준비에 필요한 소프트웨어 업데이트를 구성할 수 있습니다. 새 소프트웨어 업데이트 그룹에 소프트웨어 업데이트를 수동으로 추가하려면 다음 절차를 따르세요.  
 
-3.  새 소프트웨어 업데이트 그룹에 추가할 소프트웨어 업데이트를 선택합니다.  
+### <a name="process-to-manually-add-software-updates-to-a-new-software-update-group"></a>새 소프트웨어 업데이트 그룹에 소프트웨어 업데이트를 수동으로 추가하는 프로세스  
 
-4.  **홈** 탭의 **업데이트** 그룹에서 **소프트웨어 업데이트 그룹 만들기**를 클릭합니다.  
+1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 영역으로 이동하고, **소프트웨어 업데이트**를 선택합니다. 원하는 소프트웨어 업데이트를 선택합니다.  
 
-5.  소프트웨어 업데이트 그룹의 이름을 지정하고 선택적으로 설명을 입력합니다. 이때 소프트웨어 업데이트 그룹에 어떤 유형의 소프트웨어 업데이트가 있는지 쉽게 알 수 있도록 충분한 정보를 제공하는 이름과 설명을 사용합니다. 계속하려면 **만들기**를 클릭합니다.  
+2.  리본에서 **소프트웨어 업데이트 그룹 만들기**를 클릭합니다.  
 
-6.  **소프트웨어 업데이트 그룹** 노드를 클릭하여 새 소프트웨어 업데이트 그룹을 표시합니다.  
+3.  소프트웨어 업데이트 그룹의 이름을 지정하고 선택적으로 설명을 입력합니다. 이때 소프트웨어 업데이트 그룹에 어떤 유형의 업데이트가 있는지 쉽게 알 수 있도록 충분한 정보를 제공하는 이름과 설명을 사용합니다. **만들기**를 클릭합니다.  
 
-7.  소프트웨어 업데이트 그룹을 선택하고 **홈** 탭의 **업데이트** 그룹에서 **구성원 표시** 를 클릭하여 그룹에 포함된 소프트웨어 업데이트의 목록을 표시합니다.  
+4.  **소프트웨어 업데이트 그룹** 노드를 선택하고 새 소프트웨어 업데이트 그룹을 선택합니다. 그룹에 업데이트 목록을 표시하려면 리본에서 **멤버 표시**를 클릭합니다.  
+
+
 
 ##  <a name="BKMK_3DownloadContent"></a> 3단계: 소프트웨어 업데이트 그룹에 대한 콘텐츠 다운로드  
- 소프트웨어 업데이트를 배포하기 전에 선택적으로 소프트웨어 업데이트 그룹에 포함된 소프트웨어 업데이트의 콘텐츠를 다운로드할 수 있습니다. 소프트웨어 업데이트를 배포하기 전에 배포 지점에서 해당 콘텐츠를 사용할 수 있는지 확인하려면 이 작업을 선택하면 됩니다. 이렇게 하면 콘텐츠 제공과 관련해 발생할 수 있는 예기치 않은 문제를 최소화할 수 있습니다. 이 단계는 건너뛸 수 있습니다. 그 다음에는 콘텐츠가 배포 프로세스의 일부로 배포 지점에 다운로드되고 복사됩니다. 소프트웨어 업데이트 그룹에 소프트웨어 업데이트에 대한 콘텐츠를 다운로드하려면 다음 절차를 따르세요.  
+
+소프트웨어 업데이트를 배포하기 전에 소프트웨어 업데이트 그룹에서 소프트웨어 업데이트에 대한 콘텐츠를 다운로드합니다. 이 단계에서는 소프트웨어 업데이트를 배포하기 전에 배포 지점에서 해당 콘텐츠를 사용할 수 있는지 확인할 수 있습니다. 또한 콘텐츠 배포와 관련된 예기치 않은 문제를 방지할 수 있습니다. 이 단계를 건너뛰면 배포 프로세스의 일환으로 사이트에 콘텐츠가 다운로드되고 배포 지점에 배포됩니다. 소프트웨어 업데이트 그룹에 소프트웨어 업데이트에 대한 콘텐츠를 다운로드하려면 다음 절차를 따르세요.  
 
 
-
-#### <a name="to-download-content-for-the-software-update-group"></a>소프트웨어 업데이트 그룹에 대해 콘텐츠를 다운로드하려면
+### <a name="process-to-download-content-for-the-software-update-group"></a>소프트웨어 업데이트 그룹에 대한 콘텐츠를 다운로드하는 프로세스
 [!INCLUDE[downloadupdates](..\includes\downloadupdates.md)]
-<!--- 1.  In the Configuration Manager console, click **Software Library**.  
 
-2.  In the Software Library workspace, expand **Software Updates**, and click **Software Update Groups**.  
 
-3.  Select the software update group for which you want to download content.  
+### <a name="process-to-monitor-content-status"></a>콘텐츠 상태를 모니터링하는 프로세스
+1. 소프트웨어 업데이트의 콘텐츠 상태를 모니터링하려면 Configuration Manager 콘솔에서 **모니터링** 작업 영역을 클릭합니다. **배포 상태**를 펼친 다음, **콘텐츠 상태**를 선택합니다.  
 
-4.  On the **Home** tab, in the **Update Group** group, click **Download**. The **Download Software Updates Wizard** opens.  
+2. 이전에 확인했던 소프트웨어 업데이트 패키지를 선택하여 소프트웨어 업데이트 그룹의 소프트웨어 업데이트를 다운로드합니다.  
 
-5.  On the **Deployment Package** page, configure the following settings:  
+3. 리본에서 **상태 보기**를 클릭합니다.  
 
-    1.  **Select deployment package**: Select this setting to use an existing deployment package for the software updates in the deployment.  
 
-        > [!NOTE]  
-        >  Software updates that have already been downloaded to the selected deployment package are not downloaded again.  
-
-    2.  **Create a new deployment package**: Select this setting to create a new deployment package for the software updates in the deployment. Configure the following settings:  
-
-        -   **Name**: Specifies the name of the deployment package. This must be a unique name that describes the package content. It is limited to 50 characters.  
-
-        -   **Description**: Specifies the description of the deployment package. The package description provides information about the package contents and is limited to 127 characters.  
-
-        -   **Package source**: Specifies the location of the software update source files.  Type a network path for the source location, for example, **\\\server\sharename\path**, or click **Browse** to find the network location. You must create the shared folder for the deployment package source files before you proceed to the next page.  
-
-            > [!NOTE]  
-            >  The deployment package source location that you specify cannot be used by another software deployment package.  
-
-            > [!IMPORTANT]  
-            >  The SMS Provider computer account and the user that is running the wizard to download the software updates must both have **Write** NTFS permissions on the download location. You should carefully restrict access to the download location in order to reduce the risk of attackers tampering with the software update source files.  
-
-            > [!IMPORTANT]  
-            >  You can change the package source location in the deployment package properties after Configuration Manager creates the deployment package. But if you do so, you must first copy the content from the original package source to the new package source location.  
-
-     Click **Next**.  
-
-6.  On the Distribution Points page, select the distribution points or distribution point groups that are used to host the software update files defined in the new deployment package, and then click **Next**.  
-
-7.  On the Distribution Settings page, specify the following settings:  
-
-    -   **Distribution priority**: Use this setting to specify the distribution priority for the deployment package. The distribution priority applies when the deployment package is sent to distribution points at child sites. Distribution packages are sent in priority order: **High**, **Medium**, or **Low**. Packages with identical priorities are sent in the order in which they were created. If there is no backlog, the package will process immediately regardless of its priority. By default, packages are sent using **Medium** priority.  
-
-    -   **Distribute the content for this package to preferred distribution points**: Use this setting to enable on-demand content distribution to preferred distribution points. When this setting is enabled, the management point creates a trigger for the distribution manager to distribute the content to all preferred distribution points when a client requests the content for the package and the content is not available on any preferred distribution points. For more information about preferred distribution points and on-demand content, see [Content source location scenarios](../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md#bkmk_CSLscenarios).  
-
-    -   **Prestaged distribution point settings**: Use this setting to specify how you want to distribute content to prestaged distribution points. Choose one of the following options:  
-
-        -   **Automatically download content when packages are assigned to distribution points**: Use this setting to ignore the prestage settings and distribute content to the distribution point.  
-
-        -   **Download only content changes to the distribution point**: Use this setting to prestage the initial content to the distribution point, and then distribute content changes to the distribution point.  
-
-        -   **Manually copy the content in this package to the distribution point**: Use this setting to always prestage content on the distribution point. This is the default setting.  
-
-         For more information about prestaging content to distribution points, see [Use Prestaged content](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_prestage).  
-
-     Click **Next**.  
-
-8.  On the Download Location page, specify location that Configuration Manager will use to download the software update source files. As needed, use the following options:  
-
-    -   **Download software updates from the Internet**: Select this setting to download the software updates from the location on the Internet. This is the default setting.  
-
-    -   **Download software updates from a location on the local network**: Select this setting to download software updates from a local folder or shared network folder. Use this setting when the computer running the wizard does not have Internet access.  
-
-        > [!NOTE]  
-        >  When you use this setting, download the software updates from any computer with Internet access, and then copy the software updates to a location on the local network that is accessible from the computer running the wizard.  
-
-     Click **Next**.  
-
-9. On the Language Selection page, specify the languages for which the selected software updates are to be downloaded, and then click **Next**. Configuration Manager downloads the software updates only if they are available in the selected languages. Software updates that are not language-specific are always downloaded.  
-
-10. On the Summary page, verify the settings that you selected in the wizard, and then click **Next** to download the software updates.  
-
-11. On the Completion page, verify that the software updates were successfully downloaded, and then click **Close**. --->
-
-#### <a name="to-monitor-content-status"></a>콘텐츠 상태를 모니터링하려면
-1. 소프트웨어 업데이트에 대해 콘텐츠 상태를 모니터링하려면 Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.  
-
-2. 모니터링 작업 영역에서 **배포 상태**를 확장한 후 **콘텐츠 상태**를 클릭합니다.  
-
-3. 이전에 확인했던 소프트웨어 업데이트 패키지를 선택하여 소프트웨어 업데이트 그룹의 소프트웨어 업데이트를 다운로드합니다.  
-
-4. **홈** 탭의 **콘텐츠** 그룹에서 **상태 보기**를 클릭합니다.  
 
 ##  <a name="BKMK_4DeployUpdateGroup"></a> 4단계: 소프트웨어 업데이트 그룹 배포  
- 배포할 소프트웨어 업데이트를 결정하고 이 소프트웨어 업데이트를 소프트웨어 업데이트 그룹에 추가하고나면 소프트웨어 업데이트 그룹에서 이 소프트웨어 업데이트를 수동으로 배포할 수 있습니다. 소프트웨어 업데이트 그룹에서 소프트웨어 업데이트를 수동으로 배포하려면 다음 절차를 따르세요.  
 
-#### <a name="to-manually-deploy-the-software-updates-in-a-software-update-group"></a>소프트웨어 업데이트 그룹에서 소프트웨어 업데이트를 수동으로 배포하려면  
+배포하려는 업데이트를 결정한 다음, 소프트웨어 업데이트 그룹에 추가하여 소프트웨어 업데이트 그룹을 수동으로 배포합니다.  
 
-1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리**를 클릭합니다.  
+### <a name="process-to-manually-deploy-the-software-updates-in-a-software-update-group"></a>소프트웨어 업데이트 그룹의 소프트웨어 업데이트를 수동으로 배포하는 프로세스  
 
-2.  소프트웨어 라이브러리 작업 영역에서 **소프트웨어 업데이트**를 확장한 다음 **소프트웨어 업데이트 그룹**을 클릭합니다.  
+1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 영역으로 이동하여 **소프트웨어 업데이트**를 펼쳐서 **소프트웨어 업데이트 그룹** 노드를 선택합니다.  
 
-3.  배포하려는 소프트웨어 업데이트 그룹을 선택합니다.  
+2.  배포하려는 소프트웨어 업데이트 그룹을 선택합니다. 리본에서 **배포**를 클릭합니다.   
 
-4.  **홈** 탭의 **배포** 그룹에서 **배포**를 클릭합니다. **소프트웨어 업데이트 배포 마법사** 가 열립니다.  
+3.  소프트웨어 업데이트 배포 마법사의 **일반** 페이지에서 다음 설정을 구성합니다.  
 
-5.  일반 페이지에서 다음 설정을 구성합니다.  
+    -   **이름**: 배포의 이름을 지정합니다. 배포에는 배포의 용도를 설명하고 사이트의 다른 배포와 구별되는 고유 이름이 있어야 합니다. 이름 필드의 문자 수 제한은 256자입니다. 기본적으로 Configuration Manager는 다음 형식의 배포 이름을 자동으로 제공합니다. `Microsoft Software Updates - YYYY-MM-DD <time>`  
 
-    -   **이름**: 배포의 이름을 지정합니다. 배포에는 배포의 용도를 설명하고 Configuration Manager 사이트의 다른 배포로부터 구별해주는 고유 이름이 있어야 합니다. 기본적으로 Configuration Manager에서는 **Microsoft 소프트웨어 업데이트 -** <*날짜*><*시간*> 형식으로 된 배포 이름을 자동으로 제공합니다.  
-
-    -   **설명**: 배포의 설명을 지정합니다. 이를 통해 배포에 대한 요약 설명과 Configuration Manager 사이트의 다른 배포로부터 해당 배포를 식별 및 구별하는 데 도움이 되는 기타 관련 정보를 제공합니다. 설명 필드는 선택 사항이며 길이는 256자로 제한되어 있고 기본값은 공백입니다.  
+    -   **설명**: 배포의 설명을 지정합니다. 설명은 선택 사항이지만 배포에 대한 개요를 제공합니다. 배포를 식별하고 사이트의 다른 배포와 차별화하는 데 도움이 되는 기타 관련 정보를 포함시킵니다. 설명 필드의 길이는 256자로 제한되며 기본적으로 값이 비어 있습니다.  
 
     -   **소프트웨어 업데이트/소프트웨어 업데이트 그룹**: 표시된 소프트웨어 업데이트 그룹 또는 소프트웨어 업데이트가 올바른지 확인합니다.  
 
-    -   **배포 템플릿 선택**: 이전에 저장된 배포 템플릿을 적용할지 여부를 지정합니다. 배포 템플릿에 여러 공통 소프트웨어 업데이트 배포 속성을 포함하도록 구성한 후 그 뒤에 소프트웨어 업데이트를 배포할 때 이 템플릿을 적용하면 비슷한 배포 간에 일관성을 유지할 수 있고 시간을 절약할 수 있습니다.  
+    -   **배포 템플릿 선택**: 이전에 저장된 배포 템플릿을 적용할지 여부를 지정합니다. 일반적인 소프트웨어 업데이트 배포 속성을 저장하도록 배포 템플릿을 구성합니다. 그런 다음, 나중에 소프트웨어 업데이트를 배포할 때 템플릿을 적용합니다. 이러한 템플릿을 활용하면 시간을 절약하고 비슷한 배포에 대한 일관성을 유지할 수 있습니다.  
 
-    -   **컬렉션**: 배포에 대해 해당되는 컬렉션을 지정합니다. 컬렉션의 구성원은 배포에 정의된 소프트웨어 업데이트를 받습니다.  
+    -   **컬렉션**: 배포에 대한 컬렉션을 지정합니다. 컬렉션의 장치는 이 배포에서 소프트웨어 업데이트를 받습니다.  
 
-6.  배포 설정 페이지에서 다음 설정을 구성합니다.  
+4.  **배포 설정** 페이지에서 다음 설정을 구성합니다.  
 
-    -   **배포 유형**: 소프트웨어 업데이트 배포의 배포 유형을 지정합니다. 필수 소프트웨어 업데이트 배포를 만들려면 **필수** 를 선택합니다. 이 경우 소프트웨어 업데이트는 구성된 설치 최종 기한 안에 클라이언트에 자동으로 설치됩니다. 사용자가 소프트웨어 센터에서 설치할 수 있는 선택적 소프트웨어 업데이트 배포를 만들려면 **사용 가능** 을 선택합니다.  
+    -   **배포 유형**: 소프트웨어 업데이트 배포의 배포 유형을 지정합니다.  
 
         > [!IMPORTANT]  
-        >  소프트웨어 업데이트 배포를 만든 후 나중에 배포 유형을 변경할 수 없습니다.  
+        >  소프트웨어 업데이트 배포를 만든 후에는 배포 유형을 변경할 수 없습니다.  
+
+         - **필수**를 선택하면 필수 소프트웨어 업데이트 배포를 만들 수 있습니다. 이 소프트웨어 업데이트는 구성한 설치 최종 기한 전에 클라이언트에 자동으로 설치됩니다.  
+
+         - **사용 가능**을 선택하면 선택적 소프트웨어 업데이트 배포를 만들 수 있습니다. 이 배포는 사용자가 소프트웨어 센터에서 설치할 수 있습니다.  
 
         > [!NOTE]  
-        >  **필수** 로 배포된 소프트웨어 업데이트 그룹은 백그라운드로 다운로드되고 BITS 설정이 구성된 경우 이 설정을 따릅니다.  
-        > 그러나 **사용 가능** 으로 배포된 소프트웨어 업데이트 그룹은 포그라운드로 다운로드되고 BITS 설정을 무시합니다.  
+        >  소프트웨어 업데이트 그룹을 **필수**로 배포하면 클라이언트가 백그라운드에서 콘텐츠를 다운로드하고 BITS 설정(구성된 경우)을 적용합니다.  
+        > 
+        > **사용 가능**으로 배포된 소프트웨어 업데이트 그룹은 클라이언트가 포그라운드에서 콘텐츠를 다운로드하고 BITS 설정을 무시합니다.  
 
-    -   **필수 배포를 위해 클라이언트의 최대 절전 모드를 해제하도록 Wake-On-LAN 사용**: 배포에 있는 하나 이상의 소프트웨어 업데이트가 필요한 컴퓨터에 절전 모드 해제 패킷을 보내도록 최종 기한에 Wake-On-LAN을 사용할지 여부를 지정합니다. 이 설정을 선택하면 설치 최종 기한 시점에 절전 모드인 모든 컴퓨터는 절전 모드에서 해제되므로 소프트웨어 업데이트 설치를 시작할 수 있습니다. 이 경우 배포 내의 소프트웨어 업데이트가 필요하지 않은 절전 모드 클라이언트는 작동을 시작하지 않습니다. 기본적으로 이 설정은 사용되지 않으며 **배포 유형** 이 **필수**로 설정된 경우에만 사용할 수 있습니다.  
+    -   **필수 배포를 위해 클라이언트의 최대 절전 모드를 해제하도록 Wake-On-LAN 사용**: 최종 기한 시 Wake On LAN을 사용할지 여부를 지정합니다. Wake On LAN은 배포에 있는 하나 이상의 소프트웨어 업데이트가 필요한 컴퓨터에 절전 모드 해제 패킷을 보냅니다. 사이트는 설치 최종 기한 시점에 절전 모드인 모든 컴퓨터를 절전 모드에서 해제하여 설치를 시작할 수 있습니다. 이 경우 배포 내의 소프트웨어 업데이트가 필요하지 않은 절전 모드 클라이언트는 작동을 시작하지 않습니다. 기본적으로 이 설정은 사용되지 않습니다. **필수** 배포에만 사용할 수 있습니다. 이 옵션을 사용하기 전에 컴퓨터와 네트워크를 Wake On LAN용으로 구성합니다. 자세한 내용은 [Wake On LAN을 구성하는 방법](/sccm/core/clients/deploy/configure-wake-on-lan)을 참조하세요.  
 
-        > [!WARNING]  
-        >  이 옵션을 사용하려면 먼저 컴퓨터와 네트워크에 Wake-On-LAN을 구성해야 합니다.  
+    -   **세부 정보 수준**: 클라이언트가 사이트에 보고하는 상태 메시지에 대해 세부 정보 수준을 지정합니다.  
 
-    -   **세부 정보 수준**: 클라이언트 컴퓨터에서 보고하는 상태 메시지에 대해 세부 정보 수준을 지정합니다.  
+5.  **일정** 페이지에서 다음 설정을 구성합니다.  
 
-7.  일정 페이지에서 다음 설정을 구성합니다.  
+    -   **일정 평가**: Configuration Manager가 사용 가능한 시간 및 설치 최종 기한 시점을 평가하는 시간을 지정합니다. Configuration Manager 콘솔을 실행하는 컴퓨터의 UTC(협정 세계시) 또는 로컬 시간을 사용하도록 선택합니다.  
 
-    -   **일정 평가**: 사용 가능한 시간 및 설치 최종 기한 시간이 UTC 또는 Configuration Manager 콘솔을 실행하는 컴퓨터의 현지 시간 중 어느 시간에 따라 평가되는지 지정합니다.  
+        - 여기서 **클라이언트 로컬 시간**을 선택한 다음, **소프트웨어 사용 가능 시간**에 대해 **가능한 한 빨리**를 선택하면 Configuration Manager 콘솔을 실행하는 컴퓨터의 현재 시간은 업데이트가 사용할 수 있는지 평가하는 데 사용됩니다. 이 동작은 **설치 최종 기한** 및 업데이트가 클라이언트에 설치된 시간과 동일합니다. 클라이언트가 다른 표준 시간대에 있는 경우 이러한 작업은 클라이언트의 시간이 평가 시간에 도달하면 발생합니다.  
 
-        > [!NOTE]  
-        >  현지 시간을 선택한 다음 **소프트웨어를 사용할 수 있는 시간** 또는 **설치 최종 기한**에 대해 **가능한 한 빨리**를 선택하면 업데이트를 사용할 수 있거나 업데이트가 클라이언트에 설치될 때 Configuration Manager 콘솔을 실행하는 컴퓨터의 현재 시간이 평가하는 데 사용됩니다. 클라이언트가 다른 표준 시간대에 있는 경우 이러한 작업은 평가 시간 클라이언트의 시간에 도달 하면 발생 합니다.  
+    -   **소프트웨어를 사용할 수 있는 시간**:클라이언트에서 소프트웨어 업데이트를 사용할 수 있는 시점을 지정하려면 다음 설정 중 하나를 선택합니다.  
 
-    -   **소프트웨어를 사용할 수 있는 시간**: 클라이언트에서 소프트웨어 업데이트를 사용할 수 있는 시점을 지정하려면 다음 설정 중 하나를 선택합니다.  
+        -   **가능하면 빨리**: 배포 내의 소프트웨어 업데이트를 클라이언트가 가능한 한 빨리 사용할 수 있도록 합니다. 이 설정을 선택한 상태에서 배포를 만들면 Configuration Manager에서 클라이언트 정책을 업데이트합니다. 다음 클라이언트 정책 폴링 주기에서 클라이언트는 배포를 인식하고 소프트웨어 업데이트를 설치할 수 있습니다.  
 
-        -   **가능하면 빨리**: 배포 내의 소프트웨어 업데이트를 클라이언트에서 가능한 한 빨리 사용할 수 있도록 하려면 이 설정을 선택합니다. 배포가 만들어지면 클라이언트 정책이 업데이트되고, 클라이언트는 다음 클라이언트 정책 폴링 주기에서 배포를 인식하게 되며, 그런 다음 소프트웨어 업데이트가 설치용으로 제공됩니다.  
+        -   **특정 시간**: 배포에 포함된 소프트웨어 업데이트가 특정 날짜 및 시간에 클라이언트에 사용할 수 있도록 합니다. 이 설정을 사용하는 상태에서 배포를 만들면 Configuration Manager에서 클라이언트 정책을 업데이트합니다. 다음 클라이언트 정책 폴링 주기에서 클라이언트는 배포를 인식합니다. 그러나 배포 내 소프트웨어 업데이트는 구성된 날짜 및 시간이 지날 때까지 설치에 사용할 수 없습니다.  
 
-        -   **시간 지정**: 배포 내의 소프트웨어 업데이트를 클라이언트에서 특정 날짜 및 시간에 사용할 수 있도록 하려면 이 설정을 선택합니다. 배포가 만들어지면 클라이언트 정책이 업데이트되고 클라이언트는 다음 클라이언트 정책 폴링 주기에서 배포를 인식하게 됩니다. 그러나 배포 내의 소프트웨어 업데이트는 지정된 날짜 및 시간이 지날 때까지 설치용으로 사용할 수 없습니다.  
-
-    -   **설치 최종 기한**:배포 내의 소프트웨어 업데이트에 대한 설치 최종 기한을 지정하려면 다음 설정 중 하나를 선택합니다.  
-
-        > [!NOTE]  
-        >  배포 설정 페이지에서 **배포 유형** 이 **필수** 로 설정된 경우에만 설치 최종 기한 설정을 구성할 수 있습니다.  
+    -   **설치 최종 기한**: 이 옵션은 **필수** 배포에만 사용할 수 있습니다. 배포 내의 소프트웨어 업데이트에 대한 설치 최종 기한을 지정하려면 다음 설정 중 하나를 선택합니다.  
 
         -   **가능하면 빨리**: 배포 내의 소프트웨어 업데이트를 가능한 한 빨리 자동으로 설치하려면 이 설정을 선택합니다.  
 
         -   **시간 지정**: 배포 내의 소프트웨어 업데이트를 특정 날짜 및 시간에 자동으로 설치하려면 이 설정을 선택합니다.  
 
-        > [!NOTE]  
-        >  실제 설치 최종 기한 시간은 사용자가 구성하는 특정 시간에 최대 2시간의 임의 시간을 더한 시간입니다. 이 설정을 사용하면 대상 컬렉션의 모든 클라이언트 컴퓨터가 배포 내의 소프트웨어 업데이트를 동시에 설치하는 데서 발생할 영향을 최소화할 수 있습니다.  
-        >   
-        >  필수 소프트웨어 업데이트에 대해 설치 임의 설정 지연 시간을 사용하지 않도록 **컴퓨터 에이전트** 클라이언트 설정인 **최종 기한 임의 설정 사용 안 함** 을 구성할 수 있습니다. 자세한 내용은 [Computer Agent](../../core/clients/deploy/about-client-settings.md#computer-agent)항목을 참조하세요.  
+            - 실제 설치 최종 기한 시간은 표시된 최종 기한 시간에 최대 2시간이라는 임의 시간을 더한 시간입니다. 임의 설정은 배포의 업데이트를 동시에 설치하는 컬렉션의 클라이언트에 미치는 잠재적인 영향을 감소시킵니다.   
 
-8.  사용자 환경 페이지에서 다음 설정을 구성합니다.  
+            - 필수 소프트웨어 업데이트에 대한 설치 임의 설정 지연을 사용하지 않도록 설정하려면 **컴퓨터 에이전트** 그룹에서 클라이언트 설정을 **최종 기한 임의 설정 사용 안 함**으로 구성합니다. 자세한 내용은 [컴퓨터 에이전트 클라이언트 설정](/sccm/core/clients/deploy/about-client-settings#computer-agent)을 참조하세요.  
 
-    -   **사용자 알림**: 구성된 **소프트웨어를 사용할 수 있는 시간** 에 클라이언트 컴퓨터에 소프트웨어 센터 내 소프트웨어 업데이트의 알림을 표시할지 여부와 클라이언트 컴퓨터에 사용자 알림을 표시할지 여부를 지정합니다. 배포 설정 페이지에서 **배포 유형** 이 **사용 가능** 으로 설정된 경우 **소프트웨어 센터에 모든 알림 숨기기**를 선택할 수 없습니다.  
+    -  **클라이언트 설정에 정의된 유예 기간까지 이 배포의 적용을 사용자 기본 설정에 따라 연기합니다.**: 사용자가 최종 기간 이후에 필수 소프트웨어 업데이트를 설치할 수 있는 시간을 제공하려면 이 설정을 사용합니다.  
 
-    -   **최종 기한 동작**: 배포 설정 페이지에서 **배포 유형**이 **필수**로 설정된 경우에만 사용 가능합니다.   
-    소프트웨어 업데이트 배포에 대해 최종 기한에 도달하는 경우 수행할 동작을 지정합니다. 배포 내의 소프트웨어 업데이트를 설치할지 여부를 지정합니다. 또한 구성된 유지 관리 기간에 관계없이 소프트웨어 업데이트 설치 후 시스템 다시 시작을 수행할지 여부를 지정합니다. 유지 관리 기간에 대한 자세한 내용은 [유지 관리 기간을 사용하는 방법](../../core/clients/manage/collections/use-maintenance-windows.md)을 참조하세요.  
+        - 이 동작은 대개 컴퓨터가 장기간 꺼져 있거나 소프트웨어 업데이트 또는 응용 프로그램을 많이 설치해야 하는 경우에 필요합니다. 예를 들어 휴가에서 돌아온 사용자는 클라이언트가 기한이 지난 배포를 설치하기 때문에 오랜 시간 동안 기다려야 합니다.  
 
-    -   **장치 다시 시작 동작**: 배포 설정 페이지에서 **배포 유형**이 **필수**로 설정된 경우에만 사용 가능합니다.    
-    소프트웨어 업데이트가 설치된 후 설치 완료를 위해 시스템 다시 시작이 필요한 경우 서버 및 워크스테이션에서 시스템 다시 시작을 보류할지 여부를 지정합니다.  
+        - 이 유예 기간은 클라이언트 설정에서 **배포 최종 기한 이후 적용 유예 기간(시간)** 속성을 사용하여 구성합니다. 자세한 내용은 [컴퓨터 에이전트](/sccm/core/clients/deploy/about-client-settings#computer-agent) 섹션을 참조하세요. 적용 유예 기간은 이 옵션을 사용하며, 클라이언트 설정을 배포한 장치를 대상으로 하는 모든 배포에 적용됩니다.  
 
-        > [!IMPORTANT]  
-        >  시스템 다시 시작의 보류는 서버 환경을 비롯해 소프트웨어 업데이트를 설치하는 컴퓨터가 기본적으로 다시 시작하지 않도록 하려는 경우에 유용한 방법입니다. 그러나 이렇게 하면 컴퓨터를 보안이 설정되지 않은 상태로 둘 수 있으며 반면에 강제 다시 시작을 허용하면 소프트웨어 업데이트 설치를 즉시 완료하는 데 도움이 됩니다.
+        - 최종 기한 후, 클라이언트는 해당 유예 기간까지 사용자가 구성한 첫 번째 업무 외 시간에 소프트웨어 업데이트를 설치합니다. 단, 사용자는 언제든지 소프트웨어 센터를 열고 소프트웨어 업데이트를 설치할 수 있습니다. 유예 기간이 만료되면 지연 배포에 대한 일반적인 동작이 적용됩니다.  
 
-    -   **Windows Embedded 장치에 대한 쓰기 필터 처리**: 쓰기 필터가 활성화된 Windows Embedded 장치에 소프트웨어 업데이트를 배포할 경우 소프트웨어 업데이트를 임시 오버레이에 설치하도록 지정하고 변경 내용을 나중에 커밋하거나 설치 최종 기한에 또는 유지 관리 기간 중 커밋하도록 지정할 수 있습니다. 유지 관리 기간 동안이나 설치 최종 기한에 변경 내용을 커밋하는 경우 장치를 다시 시작해야 하며 변경 내용이 장치에 유지됩니다.  
+6.  **사용자 환경** 페이지에서 다음 설정을 구성합니다.  
 
-        > [!NOTE]  
-        >  소프트웨어 업데이트를 Windows Embedded 장치에 배포할 경우 해당 장치가 유지 관리 기간이 구성된 컬렉션의 구성원인지 확인하세요.  
+    -   **사용자 알림**: 구성된 **소프트웨어를 사용할 수 있는 시간**에서 소프트웨어 센터에 알림을 표시할지 여부를 지정합니다. 또한 이 설정은 클라이언트 컴퓨터의 사용자에게 알릴지 여부를 제어합니다. **사용 가능**한 배포에 대해서는 **소프트웨어 센터에 모든 알림 숨기기** 옵션을 선택할 수 없습니다.  
 
-    - **다시 시작 시의 소프트웨어 업데이트 배포 재평가 동작**: Configuration Manager 버전 1606부터는 클라이언트가 소프트웨어 업데이트를 설치하고 다시 시작된 직후에 소프트웨어 업데이트 준수 검사를 실행하도록 소프트웨어 업데이트 배포를 구성하려면 이 설정을 선택합니다. 이렇게 하면 클라이언트가 다시 시작된 후 해당하는 추가 소프트웨어 업데이트를 확인한 다음, 동일한 유지 관리 기간 동안 해당 업데이트를 설치하여 규격을 준수할 수 있습니다.
+    -   **최종 기한 동작**: 이 설정은 **필수** 배포에 대해서만 구성할 수 있습니다. 소프트웨어 업데이트 배포가 정의된 유지 관리 기간 이외의 최종 기한에 도달할 때 동작을 지정합니다. 옵션에는 소프트웨어 업데이트를 설치할지 여부와 설치 후 시스템을 다시 시작할지 여부가 포함됩니다. 유지 관리 기간에 대한 자세한 내용은 [유지 관리 기간을 사용하는 방법](/sccm/core/clients/manage/collections/use-maintenance-windows)을 참조하세요.  
 
-9. 경고 페이지에서 Configuration Manager 및 System Center Operations Manager가 이 배포에 대해 경고를 생성하는 방식을 구성합니다. 배포 설정 페이지에서 **배포 유형** 이 **필수** 로 설정된 경우에만 경고를 구성할 수 있습니다.  
+    -   **장치 다시 시작 동작**: 이 설정은 **필수** 배포에 대해서만 구성할 수 있습니다. 업데이트 설치를 완료하는 데 다시 시작이 필요한 경우 서버 및 워크스테이션에서 시스템 다시 시작을 보류할지 여부를 지정합니다.  
 
-    > [!NOTE]  
-    >  **소프트웨어 라이브러리** 작업 영역의 **소프트웨어 업데이트** 노드에서 최근 소프트웨어 업데이트 경고를 살펴볼 수 있습니다.  
+        > [!WARNING]  
+        >  시스템 다시 시작 억제는 서버 환경에서 또는 대상 컴퓨터를 기본적으로 다시 시작하지 않으려는 경우에 유용할 수 있습니다. 단, 이렇게 하면 컴퓨터가 안전하지 않은 상태가 될 수 있습니다. 강제 다시 시작을 허용하면 소프트웨어 업데이트 설치를 즉시 완료할 수 있습니다.  
 
-10. 다운로드 설정 페이지에서 다음 설정을 구성합니다.  
+    -   **Windows Embedded 장치에 대한 쓰기 필터 처리**: 이 설정은 쓰기 필터를 사용하는 Windows Embedded 장치의 설치 동작을 제어합니다. 설치 최종 기한에 또는 유지 관리 기간 동안 변경 내용을 커밋하는 옵션을 선택합니다. 이 옵션을 선택하면 다시 시작이 필요하며 장치에서 변경 내용이 유지됩니다. 그렇지 않으면 업데이트가 설치되고 임시 오버레이에 적용되어 나중에 커밋됩니다.  
 
-    - 저속 네트워크에 연결되어 있거나 대체 콘텐츠 위치를 사용 중인 클라이언트에서 소프트웨어 업데이트를 다운로드 및 설치할지 여부를 지정합니다.  
+        -  소프트웨어 업데이트를 Windows Embedded 장치에 배포할 경우 해당 장치가 유지 관리 기간이 구성된 컬렉션의 멤버인지 확인하세요.  
 
-    - 기본 배포 지점에서 소프트웨어 업데이트의 콘텐츠를 사용할 수 없을 때 클라이언트가 대체 배포 지점에서 소프트웨어 업데이트를 다운로드 및 설치할지 여부를 지정합니다.  
+    - **다시 시작 시의 소프트웨어 업데이트 배포 재평가 동작**: 클라이언트가 소프트웨어 업데이트를 설치하고 다시 시작된 직후에 소프트웨어 업데이트 준수 검사를 실행하도록 소프트웨어 업데이트 배포를 구성하려면 이 설정을 선택합니다. 이 설정을 사용하면 클라이언트가 다시 시작된 후 적용 가능한 추가 업데이트를 확인한 다음, 동일한 유지 관리 기간 동안 해당 업데이트를 설치할 수 있습니다.  
 
-    - **클라이언트가 동일한 서브넷에 있는 다른 클라이언트와 콘텐츠를 공유하도록 허용**: 콘텐츠 다운로드를 위해 BranchCache를 사용할지 여부를 지정합니다. BranchCache에 대한 자세한 내용은 [콘텐츠 관리 관련 개념](../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md#branchcache)을 참조하세요.  
+7. **경고** 페이지에서 Configuration Manager가 이 배포에 대한 경고를 생성하는 방식을 구성합니다. **소프트웨어 라이브러리** 작업 영역의 **소프트웨어 업데이트** 노드에서 Configuration Manager의 최근 소프트웨어 업데이트 경고를 검토합니다. System Center Operations Manager도 사용하는 경우 해당 경고를 구성합니다. **필수** 배포에 대해서만 경고를 구성합니다.  
 
-    - **현재, 인접 또는 사이트 경계 그룹의 배포 지점에서 소프트웨어 업데이트를 사용할 수 없는 경우 Microsoft 업데이트에서 콘텐츠를 다운로드합니다.**: 배포 지점에서 소프트웨어 업데이트를 사용할 수 없는 경우 인트라넷에 연결된 클라이언트가 Microsoft 업데이트에서 소프트웨어 업데이트를 다운로드하도록 하려면 이 설정을 선택합니다. 인터넷 기반 클라이언트는 항상 Microsoft 업데이트로 가서 소프트웨어 업데이트 콘텐츠를 가져올 수 있습니다.
-
-    - 설치 최종 기한에 도달한 후 클라이언트에서 요금제 인터넷 연결을 사용하여 콘텐츠를 다운로드하도록 허용할지 여부를 지정합니다. 때로 인터넷 공급자는 사용자가 요금제 인터넷 연결을 사용할 경우 보내고 받는 데이터 양을 기준으로 요금을 청구하기도 합니다.  
+8. **다운로드 설정** 페이지에서 다음 설정을 구성합니다.  
 
     > [!NOTE]  
-    >  클라이언트는 배포 내 소프트웨어 업데이트에 대해 관리 지점에서 콘텐츠 위치를 요청합니다. 다운로드 동작은 배포 지점, 배포 패키지 및 이 페이지의 설정 등을 어떻게 구성했는지에 따라 달라집니다. 자세한 내용은 [Content source location scenarios](../../core/plan-design/hierarchy/content-source-location-scenarios.md)을 참조하세요.  
+    >  클라이언트는 배포 내 소프트웨어 업데이트에 대해 관리 지점에서 콘텐츠 위치를 요청합니다. 다운로드 동작은 배포 지점, 배포 패키지 및 이 페이지의 설정 등을 어떻게 구성했는지에 따라 달라집니다.  
 
-11. [3단계: 소프트웨어 업데이트 그룹에 대한 콘텐츠 다운로드](#BKMK_3DownloadContent)를 수행한 경우 배포 패키지, 배포 지점 및 언어 선택 페이지는 표시되지 않으며 마법사의 15단계로 건너뛸 수 있습니다.  
+    - 클라이언트가 인접 또는 기본 사이트 경계 그룹의 배포 지점을 사용할 때 업데이트를 다운로드하고 설치해야 하는지 여부를 지정합니다.  
 
-    > [!IMPORTANT]  
-    >  이전에 사이트 서버의 콘텐츠 라이브러리에 다운로드한 소프트웨어 업데이트는 다시 다운로드되지 않습니다. 이는 소프트웨어 업데이트에 대한 새 배포 패키지를 만든 경우에도 마찬가지입니다. 이전에 이미 모든 소프트웨어 업데이트가 다운로드된 경우 마법사는 15단계 **언어 선택** 페이지로 건너뜁니다.  
+    - 현재 또는 인접한 경계 그룹의 배포 지점에서 소프트웨어 업데이트에 대한 콘텐츠를 사용할 수 없는 경우, 클라이언트가 사이트 기본 경계 그룹의 배포 지점에서 업데이트를 다운로드하고 설치해야 하는지 여부를 지정합니다.  
 
-12. 배포 패키지 페이지에서 기존 배포 패키지를 선택하거나 다음 설정을 구성하여 새 배포 패키지를 지정하세요.  
+    - **클라이언트가 동일한 서브넷에 있는 다른 클라이언트와 콘텐츠를 공유하도록 허용**: 콘텐츠 다운로드를 위해 BranchCache를 사용할지 여부를 지정합니다. 자세한 내용은 [BranchCache](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management#branchcache)를 참조하세요. 버전 1802부터 BranchCache는 클라이언트에서 항상 사용할 수 있습니다. 배포 지점에서 지원하는 경우 클라이언트에서 BranchCache를 사용하므로 이 설정은 제거됩니다.  
 
-    1.  **이름**: 배포 패키지의 이름을 지정합니다. 이 이름은 패키지 콘텐츠를 설명하는 고유 이름이어야 하며 길이는 50자로 제한됩니다.  
+    - **현재, 인접 또는 사이트 경계 그룹의 배포 지점에서 소프트웨어 업데이트를 사용할 수 없는 경우 Microsoft 업데이트에서 콘텐츠 다운로드**: 배포 지점에서 업데이트를 사용할 수 없는 경우 인트라넷 연결 클라이언트가 Microsoft 업데이트에서 소프트웨어 업데이트를 다운로드하도록 하려면 이 설정을 선택합니다. 인터넷 기반 클라이언트는 소프트웨어 업데이트 콘텐츠를 위해 항상 Microsoft 업데이트로 이동합니다.
 
-    2.  **설명**: 배포 패키지에 대한 정보를 제공하는 설명을 지정합니다. 설명의 길이는 127자로 제한됩니다.  
+    - 설치 최종 기한에 도달한 후 클라이언트에서 요금제 인터넷 연결을 사용하여 콘텐츠를 다운로드하도록 허용할지 여부를 지정합니다. 때때로 인터넷 공급자는 사용자가 요금제 연결을 사용할 경우 보내고 받는 데이터 양을 기준으로 요금을 청구하기도 합니다.  
 
-    3.  **패키지 원본**: 소프트웨어 업데이트 원본 파일의 위치를 지정합니다.  원본 위치의 네트워크 경로(예: **\\\server\sharename\path**)를 입력하거나 **찾아보기** 를 클릭하여 네트워크 위치를 검색합니다. 다음 페이지를 진행하기 전에 배포 패키지 원본 파일에 대한 공유 폴더를 만들어야 합니다.  
+9. **배포 패키지** 페이지에서 다음 옵션 중 하나를 선택합니다.  
 
-        > [!NOTE]  
-        >  지정되는 배포 패키지 원본 위치는 다른 소프트웨어 배포 패키지에서 사용할 수 없습니다.  
+    > [!Note]  
+    > [3단계: 소프트웨어 업데이트 그룹에 대한 콘텐츠 다운로드](#BKMK_3DownloadContent)를 수행한 경우에는 마법사에 **배포 패키지**, **배포 지점** 및 **언어 선택** 페이지가 표시되지 않습니다. 마법사의 [요약](#bkmk_summary) 페이지로 건너뜁니다.  
+    > 
+    >  이전에 사이트 서버의 콘텐츠 라이브러리에 다운로드된 소프트웨어 업데이트는 다시 다운로드되지 않습니다. 이 동작은 소프트웨어 업데이트에 대한 새 배포 패키지를 만드는 경우에도 마찬가지입니다. 모든 소프트웨어 업데이트가 이미 다운로드된 경우 마법사는 [요약](#bkmk_summary) 페이지로 건너뜁니다.  
 
-        > [!IMPORTANT]  
-        >  SMS 공급자 컴퓨터 계정 및 소프트웨어 업데이트 다운로드를 위해 마법사를 실행하는 사용자는 모두 다운로드 위치에 대해 **쓰기** NTFS 권한을 보유해야 합니다. 공격자가 소프트웨어 업데이트 원본 파일을 변조하는 위험을 줄이기 위해 다운로드 위치에 대한 액세스 권한은 신중하게 제한해야 합니다.  
+    - **배포 패키지 선택**: 해당 업데이트를 기존 배포 패키지에 추가합니다.  
 
-        > [!IMPORTANT]  
-        >  Configuration Manager에서 배포 패키지를 만든 후 배포 패키지 속성에서 패키지 원본 위치를 변경할 수 있습니다. 그러나 이렇게 하려면 먼저 콘텐츠를 원래 패키지 원본에서 새 패키지 원본 위치로 복사해야 합니다.  
+    - **새 배포 패키지 만들기**: 해당 업데이트를 새 배포 패키지에 추가합니다. 다음과 같은 추가 설정을 구성합니다.  
 
-    4.  **보내기 우선 순위**: 배포 패키지의 보내기 우선 순위를 지정합니다. Configuration Manager는 패키지를 배포 지점에 보낼 때 배포 패키지의 보내기 우선 순위를 사용합니다. 배포 패키지는 높음, 중간 또는 낮음의 우선 순위에 따라 보내집니다. 우선 순위가 서로 같은 패키지들은 만들어진 순서에 따라 보내집니다. 백로그가 없는 경우 패키지는 우선 순위에 관계없이 즉시 처리됩니다.  
+        -  **이름**: 배포 패키지의 이름을 지정합니다. 이 이름은 패키지 콘텐츠를 설명하는 고유 이름을 사용하고 길이는 50자로 제한됩니다.  
 
-13. 배포 지점 페이지에서 소프트웨어 업데이트 파일을 호스트할 배포 지점 또는 배포 지점 그룹을 지정합니다. 배포 지점에 대한 자세한 내용은 [배포 지점 구성](../../core/servers/deploy/configure/install-and-configure-distribution-points.md#bkmk_configs) 섹션을 참조하세요.  
+        -  **설명**: 배포 패키지에 대한 정보를 제공하는 설명을 지정합니다. 선택적 설명의 길이는 127자로 제한됩니다.  
 
-14. 다운로드 위치 페이지에서 소프트웨어 업데이트 파일을 인터넷에서 다운로드할지, 아니면 로컬 네트워크에서 다운로드할지를 지정합니다. 다음 설정을 구성합니다.  
+        -  **패키지 원본**: 소프트웨어 업데이트 원본 파일의 위치를 지정합니다. 원본 위치의 네트워크 경로(예: `\\server\sharename\path`)를 입력하거나 **찾아보기**를 클릭하여 네트워크 위치를 찾습니다. 다음 페이지로 넘어가기 전에 배포 패키지 원본 파일에 대한 공유 폴더를 만듭니다.  
+
+            - 지정된 위치는 다른 소프트웨어 배포 패키지의 원본으로 사용할 수 없습니다.  
+
+            - Configuration Manager에서 배포 패키지를 만든 후 배포 패키지 속성에서 패키지 원본 위치를 변경할 수 있습니다. 이 경우 콘텐츠를 먼저 원래 패키지 원본에서 새 패키지 원본 위치로 복사합니다.  
+
+            -  SMS 공급자의 컴퓨터 계정 및 소프트웨어 업데이트 다운로드를 위해 마법사를 실행하는 사용자는 모두 다운로드 위치에 대해 **쓰기** 권한을 보유해야 합니다. 다운로드 위치에 대한 액세스를 제한합니다. 이 제한은 공격자가 소프트웨어 업데이트 원본 파일을 변조하는 위험을 줄입니다.  
+
+        -  **보내기 우선 순위**: 배포 패키지의 보내기 우선 순위를 지정합니다. Configuration Manager는 패키지를 배포 지점에 보낼 때 이 우선 순위를 사용합니다. 배포 패키지는 높음, 중간 또는 낮음의 우선 순위에 따라 보내집니다. 우선 순위가 서로 같은 패키지들은 만들어진 순서에 따라 보내집니다. 백로그가 없는 경우 패키지는 우선 순위에 관계없이 즉시 처리됩니다.  
+
+        - **이진 차등 복제 사용**: 사이트 간 네트워크 트래픽을 최소화하려면 이 설정을 사용합니다. BDR(이진 차등 복제)은 전체 패키지 콘텐츠를 업데이트하는 대신 패키지에서 변경된 콘텐츠만 업데이트합니다. 자세한 내용은 [이진 차등 복제](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management#binary-differential-replication)를 참조하세요.  
+
+    - **배포 패키지 없음**: 1806 버전부터는 콘텐츠를 배포 지점에 먼저 다운로드하여 배포하지 않고 장치에 소프트웨어 업데이트를 배포합니다. 이 설정은 대량의 업데이트 콘텐츠를 처리할 때 유용합니다. 또한 클라이언트가 항상 Microsoft 업데이트 클라우드 서비스에서 콘텐츠를 가져오도록 하려면 이 기능을 사용합니다. 이 시나리오에서 클라이언트는 이미 필요한 콘텐츠가 있는 피어로부터 콘텐츠를 다운로드할 수 있습니다. Configuration Manager 클라이언트는 계속 콘텐츠 다운로드를 관리하므로 Configuration Manager 피어 캐시 기능 또는 배달 최적화 같은 다른 기술을 활용할 수 있습니다. 이 기능은 Windows 및 Office 업데이트를 포함하여 Configuration Manager 소프트웨어 업데이트 관리에서 지원하는 모든 업데이트 유형을 지원합니다.<!--1357933-->  
+
+10. **배포 지점 페이지**에서 소프트웨어 업데이트 파일을 호스트할 배포 지점 또는 배포 지점 그룹을 지정합니다. 배포 지점에 대한 자세한 내용은 [배포 지점 구성](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_configs) 섹션을 참조하세요.  
+
+    > [!Note]  
+    > [3단계: 소프트웨어 업데이트 그룹에 대한 콘텐츠 다운로드](#BKMK_3DownloadContent)를 수행한 경우에는 마법사에 **배포 패키지**, **배포 지점** 및 **언어 선택** 페이지가 표시되지 않습니다. 마법사의 [요약](#bkmk_summary) 페이지로 건너뜁니다.  
+
+11. **다운로드 위치** 페이지에서 소프트웨어 업데이트 파일을 인터넷에서 다운로드할지, 아니면 로컬 네트워크에서 다운로드할지를 지정합니다. 다음 설정을 구성합니다.  
 
     -   **인터넷에서 소프트웨어 업데이트 다운로드**: 인터넷의 지정한 위치에서 소프트웨어 업데이트를 다운로드하려면 이 설정을 선택합니다. 이 설정은 기본값으로 사용 가능합니다.  
 
-    -   **내 네트워크 위치에서 소프트웨어 업데이트 다운로드**: 로컬 폴더 또는 공유 네트워크 폴더에서 소프트웨어 업데이트를 다운로드하려면 이 설정을 선택합니다. 이 설정은 마법사를 실행하는 컴퓨터에서 인터넷에 액세스할 수 없는 경우에 유용합니다. 소프트웨어 업데이트는 인터넷에 액세스할 수 있는 모든 컴퓨터에서 미리 다운로드할 수 있으며 로컬 네트워크상의 위치에 저장한 후 다음에 설치할 때 액세스할 수 있습니다.  
+    -   **내 네트워크 위치에서 소프트웨어 업데이트 다운로드**: 로컬 디렉터리 또는 공유 폴더에서 소프트웨어 업데이트를 다운로드하려면 이 설정을 선택합니다. 이 설정은 마법사를 실행하는 컴퓨터에서 인터넷에 액세스할 수 없는 경우에 유용합니다. 인터넷에 액세스할 수 있는 모든 컴퓨터는 소프트웨어 업데이트를 미리 다운로드할 수 있습니다. 그런 다음, 마법사를 실행하는 컴퓨터에서 액세스할 수 있는 로컬 네트워크 위치에 저장합니다.  
 
-15. 언어 선택 페이지에서 선택한 소프트웨어 업데이트를 다운로드할 언어를 선택합니다. 소프트웨어 업데이트는 선택한 언어로 사용할 수 있는 경우에만 다운로드됩니다. 특정 언어에 한정되지 않는 소프트웨어 업데이트는 항상 다운로드됩니다. 기본적으로 마법사는 소프트웨어 업데이트 지점 속성에서 구성한 언어를 선택합니다. 다음 페이지로 진행하기 전에 하나 이상의 언어를 선택해야 합니다. 소프트웨어 업데이트에서 지원되지 않는 언어만 선택한 경우 해당 소프트웨어 업데이트의 다운로드는 실패합니다.  
+12. **언어 선택** 페이지에서는 사이트에서 선택한 소프트웨어 업데이트를 다운로드할 언어를 선택합니다. 사이트는 선택한 언어로 사용 가능한 소프트웨어 업데이트만 다운로드합니다. 특정 언어에 한정되지 않는 소프트웨어 업데이트는 항상 다운로드됩니다. 기본적으로 마법사는 소프트웨어 업데이트 지점 속성에서 구성한 언어를 선택합니다. 다음 페이지로 진행하기 전에 하나 이상의 언어를 선택해야 합니다. 소프트웨어 업데이트에서 지원되지 않는 언어만 선택하면 업데이트 다운로드에 실패합니다.  
 
-16. 요약 페이지에서 설정을 검토합니다. 설정을 배포 템플릿으로 저장하려면 **템플릿으로 저장**을 클릭하고 이름을 입력한 후 템플릿에 포함하려는 설정을 선택하고 **저장**을 클릭합니다. 구성된 설정을 변경하려면 관련된 마법사 페이지를 클릭한 후 설정을 변경합니다.  
+    > [!Note]  
+    > [3단계: 소프트웨어 업데이트 그룹에 대한 콘텐츠 다운로드](#BKMK_3DownloadContent)를 수행한 경우에는 마법사에 **배포 패키지**, **배포 지점** 및 **언어 선택** 페이지가 표시되지 않습니다. 마법사의 [요약](#bkmk_summary) 페이지로 건너뜁니다.  
 
-    > [!WARNING]  
-    >  템플릿 이름에는 영숫자 ASCII 문자와 **\\** (백슬래시) 또는 **‘** (작은따옴표)를 사용할 수 있습니다.  
+13. <a name="bkmk_summary"></a> **요약** 페이지에서 설정을 검토합니다. 설정을 배포 템플릿에 저장하려면 **템플릿으로 저장**을 클릭합니다. 이름을 입력하고, 템플릿에 포함하려는 설정을 선택한 다음, **저장**을 클릭합니다. 구성된 설정을 변경하려면 관련된 마법사 페이지를 클릭한 후 설정을 변경합니다.  
+
+    -  템플릿 이름에는 영숫자 ASCII 문자와 `\`(백슬래시) 또는 `'`(작은따옴표)를 사용할 수 있습니다.  
 
 17. **다음** 을 클릭하여 소프트웨어 업데이트를 배포합니다.  
 
- 마법사를 완료하면 Configuration Manager에서는 소프트웨어 업데이트를 사이트 서버의 콘텐츠 라이브러리에 다운로드하고, 소프트웨어 업데이트를 구성된 배포 지점에 배포한 다음, 소프트웨어 업데이트 그룹을 대상 컬렉션 내 클라이언트에 배포합니다. 배포 프로세스에 대한 자세한 내용은 [Software update deployment process](../understand/software-updates-introduction.md#BKMK_DeploymentProcess)(소프트웨어 업데이트 배포 프로세스)를 참조하세요.
+ 마법사를 완료하면 Configuration Manager가 사이트 서버의 콘텐츠 라이브러리에 소프트웨어 업데이트를 다운로드합니다. 그런 다음, 구성된 배포 지점에 콘텐츠를 배포하고 소프트웨어 업데이트 그룹을 대상 컬렉션의 클라이언트에 배포합니다. 배포 프로세스에 대한 자세한 내용은 [Software update deployment process](/sum/understand/software-updates-introduction#BKMK_DeploymentProcess)(소프트웨어 업데이트 배포 프로세스)를 참조하세요.  
+
+
 
 ## <a name="next-steps"></a>다음 단계
 [소프트웨어 업데이트 모니터링](monitor-software-updates.md)

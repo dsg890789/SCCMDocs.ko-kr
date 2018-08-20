@@ -2,7 +2,7 @@
 title: 보고서 목록
 titleSuffix: Configuration Manager
 description: Configuration Manager와 함께 제공되는 보고서 목록을 검토합니다. 보고서는 다양한 범주에서 표시됩니다.
-ms.date: 03/22/2018
+ms.date: 07/30/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: b7332ed3-8003-454b-bb12-1fdf8721425c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 705247080fc99a6a9dd7dfcb773b2220283cd7a6
-ms.sourcegitcommit: e3f7bb8cec4b37a311bc86098297534cab947de8
+ms.openlocfilehash: 9f4bbb8ec680248b31b1ddd8c457e62e9be44d4b
+ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36759035"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39385269"
 ---
 # <a name="list-of-reports-in-system-center-configuration-manager"></a>System Center Configuration Manager의 보고서 목록
 
@@ -705,7 +705,7 @@ Configuration Manager에는 다음 보고서가 포함되어 있습니다. 보�
 |**호환 6 - 특정 소프트웨어 업데이트 상태(보조)**|지정한 소프트웨어 업데이트에 대한 각 호환 상태의 컴퓨터 수와 백분율이 표시됩니다.|  
 |**호환 7 - 업데이트 그룹에서 특정 호환 상태의 컴퓨터(보조)**|소프트웨어 업데이트 그룹에 대해 컬렉션 내에서 지정된 전반적인 호환 상태의 모든 컴퓨터가 표시됩니다.|  
 |**호환 8 - 업데이트에서 특정 호환 상태의 컴퓨터(보조)**|소프트웨어 업데이트에 대해 컬렉션 내에서 지정된 호환 상태의 모든 컴퓨터가 표시됩니다.|  
-
+|**준수 9 - 전체 상태 및 준수**|소프트웨어 업데이트 그룹의 전반적인 상태 및 호환 데이터가 표시됩니다. (버전 1806부터 적용)| 
 
 
 ## <a name="software-updates---b-deployment-management"></a>소프트웨어 업데이트 – B 배포 관리  

@@ -1,8 +1,8 @@
 ---
-title: 응용 프로그램 관리 소개
+title: 앱 관리 소개
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 응용 프로그램을 관리 및 배포하는 데 필요한 기본 정보를 검색합니다.
-ms.date: 12/23/2016
+description: Configuration Manager 응용 프로그램을 관리 및 배포하는 데 필요한 기본 정보를 검색합니다.
+ms.date: 07/30/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-app
 ms.topic: conceptual
@@ -10,97 +10,199 @@ ms.assetid: 08f711ba-83bf-4b5f-9520-a0778c6ae7eb
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: bcdc5800a1c280c99289528c40e0efee8acf5ad5
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 70ab4136f39b4bf559c3d460ca1528bb4de0f6e1
+ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32336173"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39384293"
 ---
-# <a name="introduction-to-application-management-in-system-center-configuration-manager"></a>System Center Configuration Manager의 응용 프로그램 관리 소개
+# <a name="introduction-to-application-management-in-configuration-manager"></a>Configuration Manager의 응용 프로그램 관리 소개
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-이 항목에서는 System Center Configuration Manager 응용 프로그램에서 작업을 시작하기 전에 알아두어야 할 기본 사항을 설명합니다.  
+이 항목에서는 Configuration Manager 응용 프로그램 작업을 시작하기 전에 기본 사항을 알아봅니다.  
 
 > [!TIP]  
->  Configuration Manager에서 응용 프로그램을 관리하는 방법을 잘 알고 있는 경우 이 항목을 건너뛰고 샘플 응용 프로그램을 만들어도 됩니다. [System Center Configuration Manager를 사용하여 응용 프로그램 만들기 및 배포](../../apps/get-started/create-and-deploy-an-application.md)를 참조하세요.  
+>  Configuration Manager로 응용 프로그램을 관리하는 방법에 이미 익숙한 경우에는 이 문서를 건너뛰어도 됩니다. [응용 프로그램 만들기 및 배포](/sccm/apps/get-started/create-and-deploy-an-application)의 샘플 응용 프로그램 만들기로 이동하세요.  
+
+
 
 ## <a name="what-is-an-application"></a>응용 프로그램이란?  
- *응용 프로그램*은 널리 사용되는 컴퓨팅 용어지만 Configuration Manager에서는 다른 의미로 사용됩니다. 응용 프로그램을 상자처럼 간주하세요. 이 상자에는 소프트웨어 패키지에 대한 하나 이상의 설치 파일 집합(**배포 유형**이라고 함)과 소프트웨어 배포 방법 지침이 들어 있습니다.  
 
- 장치에 응용 프로그램을 배포할 때 **요구 사항** 에 따라 장치에 설치되는 배포 유형이 결정됩니다.  
+*응용 프로그램*은 널리 사용되는 컴퓨팅 용어지만 Configuration Manager에서는 특정한 것을 의미합니다. 응용 프로그램을 상자처럼 간주하세요. 이 상자에는 소프트웨어 패키지에 대한 하나 이상의 설치 파일 집합(*배포 유형*이라고 함)과 소프트웨어 배포 방법 지침이 들어 있습니다.  
 
- 응용 프로그램으로 더 많은 작업을 수행할 수 있습니다. 이 가이드를 읽으면 이러한 기능에 대해 자세히 알아볼 수 있습니다. 다음 표에서는 자세히 살펴보기 전에 알아야 할 몇 가지 개념을 소개합니다.  
+장치에 응용 프로그램을 배포할 때 **요구 사항**에 따라 Configuration Manager가 장치에 설치하는 배포 유형이 결정됩니다.  
 
-|개념|설명|    
-|-|-|  
-|**Requirements**|이전 버전의 Configuration Manager에서는 대체로 응용 프로그램을 배포하려는 장치가 포함된 컬렉션을 만듭니다. 컬렉션을 여전히 만들 수 있지만 필요한 경우 응용 프로그램 배포에 대해 좀 더 자세한 조건을 지정할 수 있습니다.<br /><br /> 예를 들어 Windows 10을 실행하는 장치에만 응용 프로그램을 설치할 수 있도록 지정할 수 있습니다. 그런 다음 장치에 응용 프로그램을 배포할 수 있지만 Windows 10을 실행하는 장치에만 설치됩니다.<br /><br /> Configuration Manager는 요구 사항을 평가하여 응용 프로그램과 해당 배포 유형을 설치할 것인지 여부를 결정합니다. 그런 다음 응용 프로그램을 설치할 올바른 배포 유형을 결정합니다. 기본적으로 요구 사항 규칙은 클라이언트 설정 **배포의 재평가 일정**에 따라 7일마다 재평가되어 호환성이 유지됩니다.<br /><br /> 자세한 내용은 [응용 프로그램 만들기 및 배포](../../apps/get-started/create-and-deploy-an-application.md)를 참조하세요.|  
-|**글로벌 조건**|요구 사항은 단일 응용 프로그램의 특정 배포 유형에 사용되지만 글로벌 조건을 만들 수도 있습니다. 글로벌 조건은 모든 응용 프로그램 및 배포 유형에 사용할 수 있는 미리 정의된 요구 사항의 라이브러리입니다.<br /><br /> Configuration Manager에는 기본 제공 글로벌 조건 집합이 포함되어 있으며, 직접 만들 수도 있습니다.<br /><br /> 자세한 내용은 [글로벌 조건 만들기](../../apps/deploy-use/create-global-conditions.md)를 참조하세요.|  
-|**시뮬레이트된 배포**|요구 사항, 검색 방법 및 응용 프로그램에 대한 종속성을 평가합니다. 이 배포에서는 응용 프로그램을 실제로 설치하지는 않고 결과를 보고합니다.<br /><br /> 자세한 내용은 [응용 프로그램 배포 시뮬레이션](../../apps/deploy-use/simulate-application-deployments.md)을 참조하세요.|  
-|**배포 작업**|배포하는 응용 프로그램을 설치할지 아니면 제거할지를(지원되는 경우) 지정합니다.<br /><br /> 자세한 내용은 [응용 프로그램 배포](../../apps/deploy-use/deploy-applications.md)를 참조하세요.|  
-|**배포 목적**|배포 앱이 **필수**인지 아니면 **사용 가능**인지를 지정합니다.<br /><br /> **필수** - 설정된 일정에 따라 자동으로 응용 프로그램이 배포됩니다. 그러나 응용 프로그램 배포 상태가 숨겨져 있지 않으면 사용자가 이 상태를 추적할 수 있으며 소프트웨어 센터를 사용하여 최종 기한 전에 응용 프로그램을 설치할 수 있습니다.<br /><br /> **사용 가능** - 응용 프로그램이 사용자에 배포된 경우 사용자는 소프트웨어 센터에 게시된 응용 프로그램을 확인하고 필요한 경우 요청할 수 있습니다.<br /><br /> 자세한 내용은 [응용 프로그램 배포](../../apps/deploy-use/deploy-applications.md)를 참조하세요.|  
-|**수정 버전**|응용 프로그램 또는 응용 프로그램에 포함된 배포 유형을 수정하면 Configuration Manager에서 응용 프로그램의 새 버전을 만듭니다. 각 응용 프로그램 수정 버전의 기록을 표시하거나, 속성을 확인하거나, 이전 응용 프로그램 버전을 복원하거나, 이전 버전을 삭제할 수 있습니다.<br /><br /> 자세한 내용은 [응용 프로그램 업데이트 및 사용 중지](../../apps/deploy-use/update-and-retire-applications.md)를 참조하세요.|  
-|**검색 방법**|검색 방법은 배포된 응용 프로그램이 이미 설치되었는지 여부를 검색하는 데 사용됩니다. 검색 방법에서 응용 프로그램이 설치되었다고 표시하면 Configuration Manager에서 다시 설치하려고 시도하지 않습니다.<br /><br /> 자세한 내용은 [응용 프로그램 만들기](../../apps/deploy-use/create-applications.md)를 참조하세요.|  
-|**종속성**|종속성은 다른 배포 유형이 설치되기 전에 먼저 설치해야 할 하나 이상의 배포 유형(다른 응용 프로그램의 배포 유형)을 정의합니다. 배포 유형이 설치되기 전에 종속 배포 유형을 자동으로 설치하도록 설정할 수 있습니다.<br /><br /> 자세한 내용은 [응용 프로그램 만들기](../../apps/deploy-use/create-applications.md)를 참조하세요.|  
-|**교체**|Configuration Manager에서 대체 관계를 사용하여 기존 응용 프로그램을 업그레이드하거나 대체할 수 있습니다. 응용 프로그램을 교체할 때는 교체되는 응용 프로그램의 배포 유형을 대체할 새 배포 유형을 지정할 수 있습니다. 또한 교체 응용 프로그램을 설치하기 전에 교체 대상 응용 프로그램을 업그레이드할지 아니면 제거할지를 결정할 수도 있습니다.<br /><br /> 자세한 내용은 [응용 프로그램 만들기](../../apps/deploy-use/create-applications.md)를 참조하세요.|  
-|**사용자 중심 관리**|Configuration Manager 응용 프로그램은 사용자 중심 관리를 지원하므로 특정 사용자를 특정 장치와 연결할 수 있습니다. 사용자 장치의 이름을 기억할 필요 없이 사용자와 장치에 앱을 배포할 수 있습니다. 이러한 기능을 통해 가장 중요한 앱을 특정 사용자가 액세스하는 각 장치에서 항상 사용 가능하도록 유지할 수 있습니다. 사용자가 새 컴퓨터를 구입하는 경우 관리자는 사용자가 로그인하기 전에 해당 장치에 사용자 앱을 자동으로 설치할 수 있습니다.<br /><br /> 자세한 내용은 [사용자 장치 선호도를 사용하여 사용자와 장치 연결](../../apps/deploy-use/link-users-and-devices-with-user-device-affinity.md)을 참조하세요.|  
+응용 프로그램으로 더 많은 작업을 수행할 수 있습니다. 이 가이드를 읽으면 이러한 기능에 대해 자세히 알아볼 수 있습니다. 다음 섹션에서는 더 깊이 파고들기 전에 알아야 할 몇 가지 개념을 소개합니다.  
+
+#### <a name="deployment-type"></a>배포 유형
+*응용 프로그램*이 상자라면 *배포 유형*은 상자에 있는 콘텐츠의 집합입니다. 응용 프로그램에는 적어도 하나의 배포 유형이 필요합니다. 이에 따라 앱을 설치하는 방법이 결정되기 때문입니다. 둘 이상의 배포 유형을 사용하여 동일한 응용 프로그램에 대해 서로 다른 콘텐츠와 설치 프로그램을 구성할 수 있습니다. 
+
+예를 들어, 회사에 Astoria라는 LOB(기간 업무) 애플리케이션이 있습니다. 응용 프로그램 개발자는 다음과 같이 앱을 설치하는 방법을 제공합니다.
+- Windows 10 장치의 전체 기능을 위한 Windows Installer 패키지
+- 터미널 서버 팜에서 사용하기 위한 App-V 패키지
+- 모바일 사용자를 위한 Android 앱 패키지  
+
+Configuration Manager에서 Astoria용 단일 응용 프로그램을 만듭니다. 이 응용 프로그램은 모든 설치 방법과 플랫폼에 공통되는 앱에 대한 상위 수준의 메타데이터를 정의합니다. 그런 다음, 사용 가능한 설치 방법에 대한 세 가지 배포 유형을 만들고 모든 사용자에게 응용 프로그램을 배포합니다. 배포 유형에 대한 요구 사항 및 기타 구성을 기반으로 Configuration Manager는 각 사용 사례에 맞는 방법을 결정합니다. 
+
+자세한 내용은 [응용 프로그램의 배포 유형 만들기](/sccm/apps/deploy-use/create-applications#bkmk_create-dt)를 참조하세요.
+
+#### <a name="requirements"></a>요구 사항
+이전 버전의 Configuration Manager에서는 응용 프로그램을 배포할 장치 컬렉션을 만들었습니다. 컬렉션을 여전히 만들 수 있지만 *요구 사항*을 사용하여 응용 프로그램 배포에 대해 보다 자세한 조건을 지정할 수 있습니다.
+
+예를 들어 Windows 10을 실행하는 장치에만 응용 프로그램을 설치하도록 지정할 수 있습니다. 모든 장치에 응용 프로그램을 배포하면 Windows 10을 실행하는 장치에만 설치됩니다.
+
+Configuration Manager는 요구 사항을 평가하여 응용 프로그램과 해당 배포 유형을 설치할지 여부를 결정합니다. 그런 다음 응용 프로그램을 설치할 올바른 배포 유형을 결정합니다. 기본적으로 7일마다 Configuration Manager 클라이언트는 요구 사항 규칙을 재평가하여 클라이언트 설정 **배포의 재평가 일정**에 따라 규정 준수 여부 결정합니다.
+
+자세한 내용은 [응용 프로그램 만들기 및 배포](/sccm/apps/get-started/create-and-deploy-an-application) 및 [배포 유형 요구 사항](/sccm/apps/deploy-use/create-applications#bkmk_dt-require)을 참조하세요.
+
+#### <a name="global-conditions"></a>글로벌 조건
+요구 사항은 단일 응용 프로그램의 특정 배포 유형에 사용되지만 *글로벌 조건*을 만들 수도 있습니다. 이 조건은 모든 응용 프로그램 및 배포 유형에 사용할 수 있는 미리 정의된 요구 사항의 라이브러리입니다. Configuration Manager에는 기본 제공 글로벌 조건 집합이 포함되어 있으며, 직접 만들 수도 있습니다. 
+
+자세한 내용은 [글로벌 조건 만들기](/sccm/apps/deploy-use/create-global-conditions)를 참조하세요.
+
+#### <a name="simulated-deployment"></a>시뮬레이트된 배포
+*시뮬레이트된 배포*는 요구 사항, 검색 방법 및 응용 프로그램에 대한 종속성을 평가합니다. 클라이언트는 응용 프로그램을 실제로 설치하지 않고 결과만 보고합니다. 
+
+자세한 내용은 [응용 프로그램 배포 시뮬레이트](/sccm/apps/deploy-use/simulate-application-deployments)를 참조하세요.  
+
+#### <a name="deployment-action"></a>배포 작업
+*배포 작업*은 배포할 응용 프로그램의 설치 또는 제거 여부를 지정합니다. 일부 배포 유형은 제거 작업을 지원하지 않습니다. 
+
+자세한 내용은 [응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications)를 참조하세요.  
+
+#### <a name="deployment-purpose"></a>배포 목적
+*배포용*은 배포 앱이 **필수**인지 아니면 **사용 가능**인지를 지정합니다.  
+
+- 클라이언트는 사용자가 설정한 일정에 따라 필수 배포를 자동으로 설치합니다. 응용 프로그램이 숨겨져 있지 않으면 사용자가 배포 상태를 추적할 수 있습니다. 소프트웨어 센터를 사용하여 최종 기한 전에 응용 프로그램을 설치할 수도 있습니다.  
+
+- 응용 프로그램을 사용 가능으로 사용자에게 배포하면 소프트웨어 센터에서 응용 프로그램을 볼 수 있고 필요할 때 요청할 수 있습니다.  
+
+자세한 내용은 [응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications)를 참조하세요.  
+
+#### <a name="revisions"></a>수정 버전
+응용 프로그램 또는 배포 유형의 수정 버전을 만들면 Configuration Manager가 새 버전의 응용 프로그램을 만듭니다. Configuration Manager 콘솔에서 다음 작업 중 하나를 선택합니다. 
+- 각 응용 프로그램 수정 버전의 기록 표시
+- 속성 보기
+- 응용 프로그램의 이전 버전 복원
+- 이전 버전 삭제
+
+자세한 내용은 [응용 프로그램 업데이트 및 사용 중지](/sccm/apps/deploy-use/update-and-retire-applications)를 참조하세요.  
+
+#### <a name="detection-method"></a>검색 방법
+검색 방법을 사용하여 장치에 응용 프로그램이 이미 설치되었는지 여부를 확인할 수 있습니다. 검색 방법에 응용 프로그램이 설치되어 있다고 표시되면 Configuration Manager에서 설치를 다시 시도하지 않습니다.
+
+자세한 내용은 [배포 유형 검색 방법 옵션](/sccm/apps/deploy-use/create-applications##bkmk_dt-detect)을 참조하세요.
+
+#### <a name="dependencies"></a>종속성
+종속성은 클라이언트가 이 배포 유형을 설치하기 전에 먼저 설치해야 하는 다른 응용 프로그램에서 하나 이상의 배포 유형을 정의합니다. 
+
+자세한 내용은 [배포 유형 종속성](/sccm/apps/deploy-use/create-applications#bkmk_dt-depend)을 참조하세요.  
+
+#### <a name="supersedence"></a>교체
+Configuration Manager에서 대체 관계를 사용하여 기존 응용 프로그램을 업그레이드하거나 대체할 수 있습니다. 응용 프로그램을 대체할 때는 새 배포 유형을 지정하여 대체된 응용 프로그램의 배포 유형을 바꿉니다. 또한 클라이언트가 교체 응용 프로그램을 설치하기 전에 교체된 응용 프로그램을 업그레이드할지 아니면 제거할지를 결정할 수도 있습니다.
+
+자세한 내용은 [응용 프로그램 대체](/sccm/apps/deploy-use/revise-and-supersede-applications#application-supersedence)를 참조하세요.  
+
+#### <a name="user-centric-management"></a>사용자 중심 관리
+Configuration Manager 응용 프로그램은 사용자 중심 관리를 지원하므로 특정 사용자를 특정 장치와 연결할 수 있습니다. 사용자의 장치 이름을 기억할 필요 없이 사용자와 장치에 앱을 배포할 수 있습니다. 이러한 기능을 통해 가장 중요한 앱을 각 사용자의 장치에서 항상 사용할 수 있도록 유지할 수 있습니다. 사용자가 새 컴퓨터를 구입하면 Configuration Manager는 로그인하기 전에 장치에 자동으로 사용자의 앱을 설치합니다. 
+
+자세한 내용은 [사용자 장치 선호도를 사용하여 사용자와 장치 연결](/sccm/apps/deploy-use/link-users-and-devices-with-user-device-affinity)을 참조하세요.  
+
+
 
 ## <a name="what-application-types-can-you-deploy"></a>배포할 수 있는 응용 프로그램 유형  
- Configuration Manager에서는 다음과 같은 앱 유형을 배포할 수 있습니다.  
 
-- Windows Installer(*.msi 파일)
-- Windows 앱 패키지(\*.appx, \*.appxbundle)
-- Windows 앱 패키지(Windows 스토어)
-- Microsoft Application Virtualization 4
-- Microsoft Application Virtualization 5
-- Windows Mobile 캐비닛
+Configuration Manager에서는 다음과 같은 앱 유형을 배포할 수 있습니다.  
+
+- Windows Installer(msi)  
+
+- Windows 앱 패키지(appx 또는 appxbundle)  
+
+    > [!Note]  
+    > 버전 1806부터 이 유형에는 새로운 Windows 10 앱 패키지(msix) 및 앱 번들(msixbundle) 형식이 포함됩니다.<!--1357427-->  
+
+- Microsoft Store의 Windows 앱 패키지  
+
+- Microsoft App-V v4 및 v5  
+
 - macOS  
 
 
-또한 Microsoft Intune 또는 Configuration Manager 온-프레미스 장치 관리를 통해 장치를 관리하는 경우 다음과 같은 앱 유형을 추가로 관리할 수 있습니다.
+또한 Microsoft Intune 또는 Configuration Manager 온-프레미스 장치 관리를 통해 장치를 관리하는 경우 다음과 같은 앱 유형을 추가로 관리합니다.  
 
-- Windows Phone 앱 패키지(*.xap 파일)
-- iOS용 앱 패키지(*.ipa 파일)
-- Android용 앱 패키지(*.apk 파일)
-- Google Play의 Android용 앱 패키지
-- Windows Phone 앱 패키지(Windows Phone 스토어)
-- MDM을 사용하는 Windows Installer
+- Windows Phone 앱 패키지(xap)  
+
+- Microsoft Store의 Windows Phone 앱 패키지  
+
+- iOS용 앱 패키지(ipa)  
+
+- Apple 앱 스토어의 iOS용 앱 패키지  
+
+- Android용 앱 패키지(apk)  
+
+- Google Play의 Android용 앱 패키지  
+
+- MDM을 통한 Windows Installer(msi)  
+
 - 웹 응용 프로그램
 
 
 
 ## <a name="state-based-applications"></a>상태 기반 응용 프로그램  
- Configuration Manager 응용 프로그램에서는 상태 기반 모니터링을 사용합니다. 이 방식을 통해 사용자 및 장치에 대한 마지막 응용 프로그램 배포 상태를 추적할 수 있습니다. 상태 메시지는 개별 장치에 대한 정보를 표시합니다. 예를 들어 응용 프로그램이 사용자 컬렉션에 배포된 경우 Configuration Manager 콘솔에서 배포의 준수 상태 및 배포 용도를 확인할 수 있습니다. Configuration Manager 콘솔의 **모니터링** 작업 영역을 사용하여 모든 소프트웨어 배포를 모니터링할 수 있습니다. 소프트웨어 배포에는 소프트웨어 업데이트, 호환성 설정, 응용 프로그램, 작업 순서, 패키지 및 프로그램 등이 포함됩니다. 자세한 내용은 [응용 프로그램 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)을 참조하세요.  
 
- 응용 프로그램 배포는 Configuration Manager에서 정기적으로 다시 평가됩니다. 예:  
+Configuration Manager 응용 프로그램은 상태 기반 모니터링을 사용합니다. 사용자 및 장치의 마지막 응용 프로그램 배포 상태를 추적할 수 있습니다. 상태 메시지는 개별 장치에 대한 정보를 표시합니다. 예를 들어 응용 프로그램을 사용자 컬렉션에 배포하는 경우 Configuration Manager 콘솔에서 배포의 준수 상태 및 배포 용도를 볼 수 있습니다. Configuration Manager 콘솔의 **모니터링** 작업 영역에서 모든 소프트웨어 배포를 모니터링합니다. 자세한 내용은 [응용 프로그램 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)을 참조하세요.  
 
--   최종 사용자가 배포된 응용 프로그램을 제거합니다. 다음 평가 주기에서 응용 프로그램이 없는 것이 검색되면 Configuration Manager에서 다시 설치합니다.  
+Configuration Manager 클라이언트는 응용 프로그램 배포를 정기적으로 다시 평가합니다. 예:  
 
--   요구 사항을 충족하지 못해 응용 프로그램이 장치에 설치되지 않았습니다. 나중에 장치가 변경되어 이제는 요구 사항이 충족됩니다. Configuration Manager에서 이 변경 내용을 검색하며, 응용 프로그램이 설치됩니다.  
+- 배포된 응용 프로그램을 사용자가 제거합니다. 다음 평가 주기에서 Configuration Manager가 앱이 없는 것을 감지합니다. 그러면 클라이언트가 앱을 자동으로 다시 설치합니다.  
+
+- Configuration Manager가 요구 사항을 충족하지 못하는 장치에 응용 프로그램을 설치하지 않았습니다. 나중에 장치가 변경되어 이제는 요구 사항이 충족됩니다. Configuration Manager가 변화를 감지하고, 클라이언트가 응용 프로그램을 설치합니다.  
+
+응용 프로그램 배포에 대한 재평가 간격을 설정할 수 있습니다. **소프트웨어 배포** 그룹의 **배포의 재평가 일정** 클라이언트 설정을 사용합니다. 자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#software-deployment)를 참조하세요.  
 
 
- **배포의 재평가 일정** 클라이언트 설정을 사용하여 응용 프로그램 배포에 대한 재평가 간격을 설정할 수 있습니다. 자세한 내용은 [클라이언트 설정 정보](../../core/clients/deploy/about-client-settings.md)를 참조하세요.  
 
 ## <a name="get-started-creating-an-application"></a>응용 프로그램을 만들기 시작  
- 바로 응용 프로그램을 만들기 시작하려는 경우 [응용 프로그램 만들기 및 배포](../../apps/get-started/create-and-deploy-an-application.md) 항목에 간단한 응용 프로그램을 만드는 연습이 있습니다.  
 
- 기본 사항을 알고 있으며 사용 가능한 모든 옵션에 대한 자세한 참조 정보를 찾고 있는 경우 [응용 프로그램 만들기](/sccm/apps/deploy-use/create-applications)에서 시작합니다.  
+바로 응용 프로그램을 만들기 시작하려는 경우에는 [응용 프로그램 만들기 및 배포](/sccm/apps/get-started/create-and-deploy-an-application) 문서에서 연습을 찾을 수 있습니다.  
 
-## <a name="software-center-and-the-application-catalog"></a>소프트웨어 센터 및 응용 프로그램 카탈로그  
- 이전 버전의 Configuration Manager에서는 소프트웨어 센터를 사용하여 소프트웨어를 설치 및 설치를 예약하고, 원격 제어 설정을 구성하고, 전원 관리를 설정했습니다. 사용자는 응용 프로그램 카탈로그에 연결하여 소프트웨어를 검색 및 요청하고, 일부 기본 설정을 지정하고, 모바일 장치를 원격으로 초기화할 수 있었습니다.  
+기본 사항에 익숙하고 사용 가능한 모든 옵션에 대한 자세한 참조 정보가 필요하면 [응용 프로그램 만들기](/sccm/apps/deploy-use/create-applications)부터 시작하세요.  
 
- System Center Configuration Manager에서 이러한 설정을 계속 사용할 수 있지만, 이제 새로운 버전의 소프트웨어 센터에서 응용 프로그램을 검색할 수 있습니다. 따라서 Silverlight 지원 웹 브라우저가 있어야 하는 응용 프로그램 카탈로그를 사용하지 않아도 됩니다. 그러나 사용자가 사용할 수 있는 앱이 소프트웨어 센터에 표시되려면 응용 프로그램 카탈로그 웹 사이트 지점 및 응용 프로그램 카탈로그 웹 서비스 지점 사이트 시스템 역할이 여전히 필요합니다.  
 
- 자세한 내용은 [응용 프로그램 관리 계획 및 구성](../../apps/plan-design/plan-for-and-configure-application-management.md)을 참조하세요.  
 
-## <a name="configuration-manager-packages-and-programs"></a>Configuration Manager 패키지 및 프로그램  
- Configuration Manager에서는 이전 버전의 제품에서 사용된 패키지와 프로그램을 계속 지원합니다. 다음 스크립트를 배포하는 경우 패키지 및 프로그램을 사용하여 배포하는 것이 응용 프로그램을 사용하여 배포하는 것보다 적합할 수 있습니다.  
+## <a name="software-center"></a>소프트웨어 센터  
 
--   컴퓨터에 응용 프로그램을 설치하지 않는 스크립트(예: 컴퓨터 디스크 드라이브를 조각 모음하는 스크립트)  
+소프트웨어 센터는 Configuration Manager 클라이언트와 함께 설치되는 Windows 응용 프로그램입니다. 이것을 사용하여 다음 작업을 수행할 수 있습니다.  
+- 장치 또는 사용자에게 배포된 응용 프로그램을 찾아보고 요청합니다.
+- 소프트웨어 설치 프로그램 설치 및 예약
+- 응용 프로그램, 소프트웨어 업데이트 및 운영 체제의 설치 상태 보기
+- 원격 제어 설정 구성
+- 전원 관리 설정
 
--   지속적으로 모니터링할 필요 하지 않은 "일회용" 스크립트입니다.  
+자세한 내용은 다음 아티클을 참조하세요.  
+- [응용 프로그램 관리 계획 및 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management)
+- [소프트웨어 센터 사용자 가이드](/sccm/core/understand/software-center)
 
--   되풀이 일정에서 실행되고 전역 평가를 사용할 수 없는 스크립트
+> [!Note]  
+> 응용 프로그램 카탈로그 서비스 지점 역할은 1806에서 더 이상 필요하지 않지만 역할은 지원됩니다. 
+> 
+> 버전 1806에서는 응용 프로그램 카탈로그 웹 사이트 역할이 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
 
- 자세한 내용은 [패키지 및 프로그램](../../apps/deploy-use/packages-and-programs.md)을 참조하세요.  
+
+
+## <a name="packages-and-programs"></a>패키지 및 프로그램  
+
+Configuration Manager에서는 이전 버전의 제품에서 사용된 패키지와 프로그램을 계속 지원합니다. 
+
+자세한 내용은 [패키지 및 프로그램](/sccm/apps/deploy-use/packages-and-programs)을 참조하세요.  
+
+
+
+## <a name="next-steps"></a>다음 단계
+
+Configuration Manager에서 응용 프로그램을 관리하는 기본 개념을 이해했으면 다음 문서를 계속 진행하세요.
+- [예제 응용 프로그램 만들기 및 배포](/sccm/apps/get-started/create-and-deploy-an-application)
+- [응용 프로그램 관리 계획 및 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management)
+- [응용 프로그램 만들기](/sccm/apps/deploy-use/create-applications)

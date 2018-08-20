@@ -2,7 +2,7 @@
 title: 콘텐츠 관리의 기본 사항
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 도구와 옵션을 사용하여 배포하는 콘텐츠를 관리합니다.
-ms.date: 06/15/2018
+ms.date: 07/30/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,18 +10,18 @@ ms.assetid: c201be2a-692c-4d67-ac95-0a3afa5320fe
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4419a563a65ab9d98a76dcf58b48ae00e0763dab
-ms.sourcegitcommit: 4b8afbd08ecf8fd54950eeb630caf191d3aa4767
+ms.openlocfilehash: a8f4d93c7bfa73b04ed2c760db17b27e8f1f6de2
+ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36260737"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39385262"
 ---
 # <a name="fundamental-concepts-for-content-management-in-configuration-manager"></a>Configuration Manager에서 콘텐츠 관리의 기본 개념
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Configuration Manager에서는 응용 프로그램, 패키지, 소프트웨어 업데이트 및 OS 배포로 배포하는 콘텐츠를 관리하기 위한 강력한 도구 및 옵션 시스템을 지원합니다. Configuration Manager는 사이트 서버와 배포 지점 모두에 콘텐츠를 저장합니다. 이 콘텐츠는 위치 간에 전송할 때는 네트워크 대역폭이 많이 필요합니다. 콘텐츠 관리 인프라를 효과적으로 계획하고 사용하기 위해서는 사용 가능한 옵션 및 구성을 파악하는 것이 좋습니다. 그런 다음, 네트워킹 환경 및 콘텐츠 배포 요구 사항에 가장 적합하게 사용하는 방법을 고려합니다.  
+Configuration Manager는 소프트웨어 콘텐츠를 관리하는 도구 및 옵션의 강력한 시스템을 지원합니다. 응용 프로그램, 패키지, 소프트웨어 업데이트 및 OS 배포와 같은 소프트웨어 배포에는 모두 콘텐츠가 필요합니다. Configuration Manager는 사이트 서버와 배포 지점 모두에 콘텐츠를 저장합니다. 이 콘텐츠는 위치 간에 전송할 때는 네트워크 대역폭이 많이 필요합니다. 콘텐츠 관리 인프라를 효과적으로 계획하고 사용하기 위해서 먼저 사용 가능한 옵션 및 구성을 파악해야 합니다. 그런 다음, 네트워킹 환경 및 콘텐츠 배포 요구 사항에 가장 적합하게 사용하는 방법을 고려합니다.  
 
 > [!TIP]    
 > 콘텐츠 배포 프로세스에 대한 자세한 내용을 알아보고 일반적인 콘텐츠 배포 문제를 진단하고 해결하는 데 도움을 받으려면 [Microsoft Configuration Manager에서 콘텐츠 배포의 이해와 문제 해결](https://support.microsoft.com/help/4000401/content-distribution-in-mcm)을 참조하세요.
@@ -41,7 +41,7 @@ Configuration Manager에서는 응용 프로그램, 패키지, 소프트웨어 �
 
 -   **멀티캐스트 연결 계정**: OS 배포에 사용됩니다.  
 
-이러한 계정에 대한 자세한 내용은 [콘텐츠에 액세스하기 위한 계정 관리](../../../core/plan-design/hierarchy/manage-accounts-to-access-content.md)를 참조하세요.
+이러한 계정에 대한 자세한 내용은 [콘텐츠에 액세스하기 위한 계정 관리](/sccm/core/plan-design/hierarchy/manage-accounts-to-access-content)를 참조하세요.
 
 
 
@@ -59,11 +59,11 @@ Configuration Manager에서는 응용 프로그램, 패키지, 소프트웨어 �
 
  BDR을 사용하는 경우 Configuration Manager는 이전에 배포한 각 콘텐츠 집합에 대한 원본 파일에서 변경된 부분을 식별합니다.  
 
--   원본 콘텐츠의 파일이 변경되면 해당 사이트는 콘텐츠 집합의 새로운 증분 버전을 만듭니다. 그런 다음, 변경된 파일만 대상 사이트와 배포 지점으로 복제합니다. 파일의 이름이 변경되었거나 파일이 이동된 경우 또는 파일 콘텐츠가 변경된 경우 파일이 변경되었다고 간주됩니다. 예를 들어 이전에 여러 사이트에 배포한 드라이버 패키지에서 단일 드라이버 파일이 바뀐 경우 변경된 드라이버 파일만 복제됩니다.  
+-   원본 콘텐츠의 파일이 변경되면 해당 사이트는 콘텐츠의 새로운 증분 버전을 만듭니다. 그런 다음, 변경된 파일만 대상 사이트와 배포 지점으로 복제합니다. 파일의 이름이 변경되었거나 파일이 이동된 경우 또는 파일 콘텐츠가 변경된 경우 파일이 변경되었다고 간주됩니다. 예를 들어 이전에 여러 사이트에 배포한 드라이버 패키지에서 단일 드라이버 파일이 바뀐 경우 변경된 드라이버 파일만 복제됩니다.  
 
 -   Configuration Manager는 전체 콘텐츠 집합을 다시 보내기 전에 콘텐츠 집합의 증분 버전을 5개까지 지원합니다. 5번째 업데이트 이후 콘텐츠 집합에 대해 다음 변경을 수행하면 사이트에서 콘텐츠 집합의 새로운 버전을 만듭니다. Configuration Manager에서는 새 콘텐츠 집합 버전을 배포하여 이전 집합과 모든 증분 버전을 바꿉니다. 새 콘텐츠 집합이 배포된 후에 원본 파일의 후속 증분 변경 내용은 BDR을 통해 다시 복제됩니다.  
 
-BDR은 계층 내 각 부모 및 자식 사이트 간에 지원됩니다. 사이트 내에서는 사이트 서버와 해당 일반 배포 지점 간에 BDR이 지원됩니다. 단, 풀(pull) 배포 지점 및 클라우드 기반 배포 지점은 콘텐츠를 전송하는 데 BDR을 지원하지 않습니다. 풀(pull) 배포 지점은 새 파일을 전송하는 파일 수준 델타를 지원하지만 파일 내 블록은 지원하지 않습니다.
+BDR은 계층 내 각 부모 및 자식 사이트 간에 지원됩니다. 사이트 내에서는 사이트 서버와 해당 일반 배포 지점 간에 BDR이 지원됩니다. 단, 풀(pull) 배포 지점 및 클라우드 배포 지점은 콘텐츠를 전송하는 데 BDR을 지원하지 않습니다. 풀(pull) 배포 지점은 새 파일을 전송하는 파일 수준 델타를 지원하지만 파일 내 블록은 지원하지 않습니다.
 
 응용 프로그램은 항상 이진 차등 복제를 사용합니다. BDR은 패키지에 대한 선택 사항이며 기본적으로 활성화되어 있지 않습니다. 패키지에서 BDR을 사용하려면 각 패키지에 대해 이 기능을 사용하도록 설정합니다. 패키지를 만들거나 편집할 때 **이진 차등 복제 사용** 옵션을 선택합니다.   
 
@@ -89,10 +89,21 @@ BDR은 계층 내 각 부모 및 자식 사이트 간에 지원됩니다. 사이
 
 
 
+## <a name="windows-ledbat"></a>Windows LEDBAT
+<!--1358112--> Windows LEDBAT(Low Extra Delay Background Transport)는 백그라운드 네트워크 전송을 관리하는 데 유용한 Windows Server의 네트워크 정체 제어 기능입니다. 지원되는 Windows Server 버전에서 실행되는 배포 지점의 경우 네트워크 트래픽을 조정하는 데 유용한 옵션을 사용할 수 있습니다. 그런 다음, 클라이언트는 사용 가능한 경우에만 네트워크 대역폭을 사용합니다. 
+
+전반적인 Windows LEDBAT에 대한 자세한 정보는 [새로운 전송 개선 사항](https://blogs.technet.microsoft.com/networking/2016/07/18/announcing-new-transport-advancements-in-the-anniversary-update-for-windows-10-and-windows-server-2016/) 블로그 게시물을 참조하세요.
+
+Configuration Manager 배포 지점에 Windows LEDBAT를 사용하는 방법에 대한 자세한 내용은 [배포 지점의 일반 설정을 구성](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_config-general)하는 경우 **사용하지 않는 네트워크 대역폭을 사용하도록 다운로드 속도 조정(Windows LEDBAT)** 에 대한 설정을 참조하세요.
+
+
+
 ## <a name="peer-cache"></a>피어 캐시
 클라이언트 피어 캐시는 원격 위치의 클라이언트에 대한 콘텐츠 배포를 관리하는 데 도움이 됩니다. 피어 캐시는 클라이언트가 로컬 캐시의 콘텐츠를 다른 클라이언트와 직접 공유할 수 있도록 하는 기본 제공 Configuration Manager 솔루션입니다.
 
-피어 캐시를 사용하도록 설정된 클라이언트 설정을 컬렉션에 배포하고 나면 해당 컬렉션의 멤버가 동일 경계 그룹에서 다른 클라이언트의 피어 콘텐츠 원본 역할을 할 수 있습니다.
+피어 캐시를 사용하도록 설정하는 클라이언트 설정을 먼저 컬렉션에 배포합니다. 그런 다음, 컬렉션의 멤버는 동일한 경계 그룹에 있는 다른 클라이언트에 대한 피어 콘텐츠 원본 역할을 합니다.
+
+1806 버전부터 클라이언트 피어 캐시 원본은 콘텐츠를 여러 부분으로 나눌 수 있습니다. 이러한 부분은 네트워크 전송을 최소화하여 WAN 사용률을 줄입니다. 관리 지점은 콘텐츠 부분의 더 자세한 추적을 제공합니다. 경계 그룹별로 동일한 콘텐츠의 2회 이상 다운로드를 제거하려고 시도합니다.<!--1357346-->
 
 자세한 내용은 [Configuration Manager 클라이언트용 피어 캐시](/sccm/core/plan-design/hierarchy/client-peer-cache)를 참조하세요.
 
@@ -101,7 +112,7 @@ BDR은 계층 내 각 부모 및 자식 사이트 간에 지원됩니다. 사이
 ## <a name="windows-pe-peer-cache"></a>Windows PE 피어 캐시
 Configuration Manager로 새로운 OS를 배포하면 작업 순서를 실행하는 컴퓨터는 Windows PE 피어 캐시를 사용할 수 있습니다. 배포 지점에서 아닌 피어 캐시 원본에서 콘텐츠를 다운로드합니다. 이 동작은 로컬 배포 지점이 없는 지점 시나리오에서 WAN 트래픽을 최소화하는 데 유용합니다.
 
-자세한 내용은 [Windows PE 피어 캐시](../../../osd/get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic.md)를 참조하세요.
+자세한 내용은 [Windows PE 피어 캐시](/sccm/osd/get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic)를 참조하세요.
 
 
 
@@ -112,26 +123,45 @@ Configuration Manager로 새로운 OS를 배포하면 작업 순서를 실행하
 
     -   배포 지점은 HTTP 또는 HTTPS를 사용할 수 있습니다.  
 
-    -   클라우드 기반 배포 지점은 온-프레미스 배포 지점을 사용할 수 없는 경우의 대체 옵션으로만 사용합니다.  
+    -   클라우드 배포 지점은 온-프레미스 배포 지점을 사용할 수 없는 경우의 대체 옵션으로만 사용합니다.  
 
 -   **인터넷**:  
 
-    -   배포 지점이 HTTPS를 허용해야 합니다.  
+    -   인터넷 연결 배포 지점이 HTTPS를 허용해야 합니다.  
 
-    -   대체 옵션으로 클라우드 기반 배포 지점을 사용할 수 있습니다.  
+    -   클라우드 배포 지점을 사용할 수 있습니다.  
 
 -   **작업 그룹**:  
 
     -   배포 지점이 HTTPS를 허용해야 합니다.  
 
-    -   대체 옵션으로 클라우드 기반 배포 지점을 사용할 수 있습니다.  
+    -   클라우드 배포 지점을 사용할 수 있습니다.  
+
+
+
+## <a name="content-source-priority"></a>콘텐츠 원본 우선 순위
+
+클라이언트에 콘텐츠가 필요한 경우 관리 지점에 콘텐츠 위치 요청을 수행합니다. 관리 지점은 요청된 콘텐츠에 대해 유효한 원본 위치의 목록을 반환합니다. 이 목록은 특정 시나리오, 사용되는 기술, 사이트 디자인, 경계 그룹 및 배포 설정에 따라 달라집니다. 다음 목록에는 우선 순위를 지정하는 순서로 클라이언트가 사용할 수 있는 가능한 모든 콘텐츠 원본 위치가 포함됩니다.  
+
+1.  클라이언트와 동일한 컴퓨터에 있는 배포 지점
+2.  동일한 네트워크 서브넷의 피어 원본
+3.  동일한 네트워크 서브넷의 배포 지점
+4.  동일한 Active Directory 사이트의 피어 원본
+5.  동일한 Active Directory 사이트의 배포 지점
+6.  동일한 경계 그룹의 피어 원본
+7.  현재 경계 그룹의 배포 지점
+8.  대체용으로 구성된 인접 경계 그룹의 배포 지점
+9.  기본 사이트 경계 그룹의 배포 지점 
+10. Windows 업데이트 클라우드 서비스
+11. 인터넷 연결 배포 지점
+12. Azure의 클라우드 배포 지점
 
 
 
 ## <a name="content-library"></a>콘텐츠 라이브러리  
  콘텐츠 라이브러리는 Configuration Manager에서 콘텐츠의 단일 인스턴스 저장소입니다. 이 라이브러리는 배포하는 콘텐츠의 전체 크기를 줄입니다.  
 
-- [콘텐츠 라이브러리](../../../core/plan-design/hierarchy/the-content-library.md)에 대해 자세히 알아봅니다.
+- [콘텐츠 라이브러리](/sccm/core/plan-design/hierarchy/the-content-library)에 대해 자세히 알아봅니다.
 - [콘텐츠 라이브러리 정리 도구](/sccm/core/plan-design/hierarchy/content-library-cleanup-tool)를 사용하여 더 이상 응용 프로그램과 연결되지 않는 콘텐츠를 제거합니다.  
 
 
@@ -143,26 +173,29 @@ Configuration Manager로 새로운 OS를 배포하면 작업 순서를 실행하
 
 -   **풀(pull) 배포 지점**: 배포 지점이 다른 배포 지점(원본 배포 지점)에서 콘텐츠를 가져오는 배포 지점의 변형입니다. 이 프로세스는 클라이언트가 배포 지점에서 콘텐츠를 다운로드하는 방법과 비슷합니다. 풀(pull) 배포 지점을 사용하면 사이트 서버가 각 배포 지점에 콘텐츠를 직접 배포해야 하는 경우 발생하는 네트워크 대역폭 병목 현상을 방지할 수 있습니다. [풀(pull) 배포 지점을 사용합니다](/sccm/core/plan-design/hierarchy/use-a-pull-distribution-point).
 
--   **클라우드 기반 배포 지점**: Microsoft Azure에 설치되는 배포 지점의 한 변형입니다. [클라우드 기반 배포 지점을 사용하는 방법을 알아봅니다](../../../core/plan-design/hierarchy/use-a-cloud-based-distribution-point.md).  
+-   **클라우드 기반 배포 지점**: Microsoft Azure에 설치된 배포 지점의 변형입니다. [클라우드 배포 지점을 사용하는 방법을 알아봅니다](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point).  
 
 
 표준 배포 지점은 다양한 구성 및 기능을 지원합니다.  
 
 - **일정** 또는 **대역폭 제한**과 같은 컨트롤을 사용하여 이 전송을 제어할 수 있습니다.  
-- **사전 준비된 콘텐츠** 및 **풀(pull) 배포 지점**을 비롯한 다른 옵션을 사용하여 네트워크 사용을 최소화하고 제어할 수 있습니다. 
+
+- **사전 준비된 콘텐츠** 및 **풀(pull) 배포 지점**을 비롯한 다른 옵션을 사용하여 네트워크 사용을 최소화하고 제어할 수 있습니다.  
+
 - **BranchCache**, **피어 캐시** 및 **배달 최적화**는 콘텐츠를 배포할 때 사용되는 네트워크 대역폭을 줄이는 피어 투 피어 기술입니다.  
-- OS 배포의 경우 **[PXE](../../../osd/get-started/prepare-site-system-roles-for-operating-system-deployments.md#BKMK_PXEDistributionPoint)** 및 **[멀티 캐스트](../../../osd/get-started/prepare-site-system-roles-for-operating-system-deployments.md#BKMK_DPMulticast)** 와 같은 여러 구성이 있습니다.
+
+- OS 배포의 경우 **[PXE](/sccm/osd/get-started/prepare-site-system-roles-for-operating-system-deployments#BKMK_PXEDistributionPoint)** 및 **[멀티 캐스트](/sccm/osd/get-started/prepare-site-system-roles-for-operating-system-deployments#BKMK_DPMulticast)** 와 같은 여러 구성이 있습니다.  
+
 - **모바일 장치**에 대한 옵션   
   
-  
-클라우드 기반 배포 지점과 풀(pull) 배포 지점은 다수의 동일한 구성을 지원하지만 각 배포 지점 변형과 관련된 몇 가지 제한 사항이 있습니다.  
+클라우드 및 풀(pull) 배포 지점은 다수의 동일한 구성을 지원하지만 각 배포 지점 변형과 관련된 몇 가지 제한 사항이 있습니다.  
 
 
 
 ## <a name="distribution-point-groups"></a>배포 지점 그룹  
  배포 지점 그룹은 콘텐츠 배포를 간소화할 수 있는 배포 지점의 논리적 그룹입니다.  
 
- 자세한 내용은 [배포 지점 그룹 관리](../../../core/servers/deploy/configure/install-and-configure-distribution-points.md#bkmk_manage)를 참조하세요.
+ 자세한 내용은 [배포 지점 그룹 관리](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_manage)를 참조하세요.
 
 
 
@@ -196,17 +229,6 @@ Configuration Manager로 새로운 OS를 배포하면 작업 순서를 실행하
 
 자세한 내용은 [경계 그룹](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#boundary-groups)을 참조하세요.
 
-<!--
-**Version 1511, 1602, and 1606**   
-Fallback settings are related to the use of **preferred distribution points** and to content source locations that are used by clients.
-
--   By default, clients only download content from a preferred distribution point (one that is associated with the client's boundary groups).  
-
--   However, when a distribution point is configured with **Allow clients to use this site system as a fallback source location for content**, that distribution point is only offered as a valid content source to any client that can't get a deployment from one of its preferred distribution points.  
-
-For information about the different content location and fallback scenarios, see [Content source location scenarios](../../../core/plan-design/hierarchy/content-source-location-scenarios.md). For information about boundary groups, see [Boundary groups for versions 1511,1602, and 1606](/sccm/core/servers/deploy/configure/boundary-groups-for-1511-1602-and-1606).
--->
-
 
 
 ## <a name="network-bandwidth"></a>네트워크 대역폭  
@@ -227,19 +249,6 @@ For information about the different content location and fallback scenarios, see
 
 자세한 내용은 [경계 그룹](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#boundary-groups)을 참조하세요.
 
-<!--
-**Version 1511, 1602, and 1606**   
- You can configure the network connection speed of each distribution point in a boundary group:  
-
--   Clients use this value when they connect to the distribution point.
-
--   By default, the network connection speed is configured as **Fast**, but it can also be set as **Slow**.  
-
--   The **network connection speed**, along with the configuration of a deployment, determine if a client can download content from a distribution point when the client is in an associated boundary group  
-
-For information about the different content location and fallback scenarios, see [Content source location scenarios](../../../core/plan-design/hierarchy/content-source-location-scenarios.md). For information about boundary groups, see [Boundary groups for versions 1511,1602, and 1606](/sccm/core/servers/deploy/configure/boundary-groups-for-1511-1602-and-1606).
--->
-
 
 
 ## <a name="on-demand-content-distribution"></a>주문형 콘텐츠 배포  
@@ -247,39 +256,18 @@ For information about the different content location and fallback scenarios, see
 
 -   배포에 이 설정을 사용하려면 **기본 배포 지점으로 이 패키지의 콘텐츠 배포**를 사용하도록 설정합니다.  
 
--   배포에 대해 이 옵션을 사용하도록 설정한 경우 클라이언트가 해당 콘텐츠 요청을 시도할 때 클라이언트의 기본 배포 지점에서 해당 콘텐츠를 사용할 수 없으면 Configuration Manager에서 클라이언트의 기본 배포 지점에 해당 콘텐츠를 자동으로 배포합니다.  
+-   배포에 대해 이 옵션을 사용하도록 설정하고 클라이언트가 해당 콘텐츠를 요청하였으나 클라이언트의 기본 배포 지점에서 해당 콘텐츠를 사용할 수 없는 경우 Configuration Manager에서 클라이언트의 기본 배포 지점에 해당 콘텐츠를 자동으로 배포합니다.  
 
 -   이때 Configuration Manager에서 클라이언트의 기본 배포 지점에 콘텐츠를 자동으로 배포하지만, 클라이언트의 기본 배포 지점이 배포를 받기 전에 클라이언트가 다른 배포 지점에서 해당 콘텐츠를 가져올 수도 있습니다. 이 동작이 발생하는 경우 콘텐츠는 해당 배포를 찾고 있는 다음 클라이언트가 사용할 수 있도록 해당 배포 지점에 표시됩니다.  
 
 자세한 내용은 [경계 그룹](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#boundary-groups)을 참조하세요.
-
-<!--
-If you use version 1511, 1602, or 1606, see  [Content source location scenarios](../../../core/plan-design/hierarchy/content-source-location-scenarios.md) for information about the different content location and fallback scenarios.
--->
 
 
 
 ## <a name="package-transfer-manager"></a>패키지 전송 관리자  
  패키지 전송 관리자는 다른 컴퓨터의 배포 지점에 콘텐츠를 전송하는 사이트 서버 구성 요소입니다.  
 
- 자세한 내용은 [패키지 전송 관리자](../../../core/plan-design/hierarchy/package-transfer-manager.md)를 참조하세요.  
-
-
-
-<!--
-## Preferred distribution point  
- A preferred distribution point includes any distribution points that are associated with a client's current boundary groups.  
-
- You have the option to associate each distribution point with one or more boundary groups:  
-
--   This association helps the client identify distribution points from which it can download content.  
--   By default, clients can only download content from a preferred distribution point.  
-
-
-For more information:
- - If you use version 1610 or later, see [Boundary groups](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#boundary-groups).
- - If you use version 1511, 1602, or 1606, see [Content source location scenarios](../../../core/plan-design/hierarchy/content-source-location-scenarios.md).
--->
+ 자세한 내용은 [패키지 전송 관리자](/sccm/core/plan-design/hierarchy/package-transfer-manager)를 참조하세요.  
 
 
 

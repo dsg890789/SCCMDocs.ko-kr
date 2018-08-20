@@ -2,7 +2,7 @@
 title: 유지 관리 기간 사용
 titleSuffix: Configuration Manager
 description: 컬렉션 및 유지 관리 기간을 사용하여 System Center Configuration Manager에서 클라이언트를 효과적으로 관리할 수 있습니다.
-ms.date: 02/22/2017
+ms.date: 07/30/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -10,18 +10,18 @@ ms.assetid: 4564ebcb-41a8-4eb0-afdb-2e1f0795cfa2
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 18a870b111b141cb9b95664a2f66403ea37cb99e
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 6512b42191b5ea627f5e8729fea29aab81ee1aed
+ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32332528"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39384334"
 ---
 # <a name="how-to-use-maintenance-windows-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 유지 관리 기간을 사용하는 방법
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-유지 관리 기간을 사용하면 장치 컬렉션에 대해 Configuration Manager 작업을 수행할 수 있는 시간을 정의할 수 있습니다. 유지 관리 기간을 사용하여 생산성에 영향을 미치지 않는 기간 동안 클라이언트 구성 변경이 이루어지도록 할 수 있습니다.  
+유지 관리 기간을 사용하면 장치 컬렉션에 대해 Configuration Manager 작업을 수행할 수 있는 시간을 정의할 수 있습니다. 유지 관리 기간을 사용하면 생산성에 영향을 미치지 않는 기간 동안 클라이언트 구성이 변경되도록 할 수 있습니다. Configuration Manager 버전 1806부터, **소프트웨어 센터**의 **설치 상태** 탭에서 사용자가 다음 유지 관리 기간을 볼 수 있습니다. <!--1358131-->
 
  다음 작업이 유지 관리 기간을 지원합니다.  
 
@@ -48,13 +48,13 @@ ms.locfileid: "32332528"
 
  사용자가 소프트웨어 센터에서 응용 프로그램 설치를 시작할 경우 유지 관리 기간에 관계없이 응용 프로그램이 즉시 설치됩니다.  
 
- **필수** 가 목적인 응용 프로그램 배포가 소프트웨어 센터의 사용자가 구성한 업무 외 시간 동안 설치 최종 기한에 도달하는 경우 해당 응용 프로그램이 설치됩니다.  
+ **필수** 가 목적인 응용 프로그램 배포가 소프트웨어 센터의 사용자가 구성한 업무 외 시간 동안 설치 최종 기한에 도달하는 경우 해당 응용 프로그램이 설치됩니다. 
 
 ### <a name="how-to-configure-maintenance-windows"></a>유지 관리 기간을 구성하는 방법  
 
 1.  Configuration Manager 콘솔에서 **자산 및 준수**>  **장치 컬렉션**을 선택합니다.  
 
-3.  **장치 컬렉션** 목록에서 컬렉션을 선택합니다. 유지 관리 기간은 **모든 시스템** 컬렉션에 대해 만들 수 없습니다.  
+3.  **장치 컬렉션** 목록에서 컬렉션을 선택합니다. **모든 시스템** 컬렉션에 대해서는 유지 관리 기간을 만들 수 없습니다.  
 
 4.  **홈** 탭의 **속성** 그룹에서 **속성**을 선택합니다.  
 

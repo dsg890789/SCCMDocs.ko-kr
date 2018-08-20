@@ -2,7 +2,7 @@
 title: 서비스 연결 지점
 titleSuffix: Configuration Manager
 description: 이 Configuration Manager 사이트 시스템 역할에 대해 알아보고 사용 범위를 이해하고 계획합니다.
-ms.date: 07/05/2018
+ms.date: 08/01/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: bc2282d5-0571-465b-9528-a555855eaacd
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6002c077ae0a8e34f35a9d0e36d02f5950946bde
-ms.sourcegitcommit: 73b241a72db8f8f3bd7e269fc81ad49e14f01058
+ms.openlocfilehash: 560fa3480f00811f325eb22dda439facac36e6e4
+ms.sourcegitcommit: 6e0e5b4b7779ce03e2b56b3b5f68f4ace1acedd8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37843290"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39467677"
 ---
 # <a name="about-the-service-connection-point-in-system-center-configuration-manager"></a>System Center Configuration Manager의 서비스 연결 지점 정보
 
@@ -80,6 +80,9 @@ Configuration Manager 서비스 관리자를 사용하려면 콘솔에서 **모�
 
 ##  <a name="bkmk_urls"></a> 인터넷 액세스 요구 사항  
 작업을 사용하려면 서비스 연결 지점 및 해당 컴퓨터와 인터넷 간의 모든 방화벽을 호스트하는 컴퓨터에서 HTTPS를 위한 송신 포트 **TCP 443**과 HTTP를 위한 송신 포트 **TCP 80**을 통해 아래 인터넷 위치로 통신을 전달해야 합니다. 서비스 연결 지점에서도 웹 프록시(인증을 사용하거나 사용하지 않고)를 사용하여 이러한 위치에 액세스할 수 있습니다.  웹 프록시 계정을 구성해야 하는 경우 [System Center Configuration Manager의 프록시 서버 지원](/sccm/core/plan-design/network/proxy-server-support)을 참조하세요.
+
+> [!TIP]
+> 서비스 연결 지점이 http://go.Microsoft.com 또는 http://manage.Microsoft.com에 연결된 경우 Microsoft Intune 서비스를 사용합니다. Baltimore CyberTrust 루트 인증서가 서비스 연결 지점 역할이 설치된 Configuration Manager 사이트 시스템에 설치되지 않았거나 만료됐거나 손상된 경우 연결 문제가 발생한 Intune 커넥터에 알려진 문제가 있습니다. 자세한 내용은 [Configuration Manager 서비스 연결 지점은 업데이트를 다운로드하지 않습니다](https://support.microsoft.com/help/3187516)를 참조하세요.
 
 **업데이트 및 서비스**  
 

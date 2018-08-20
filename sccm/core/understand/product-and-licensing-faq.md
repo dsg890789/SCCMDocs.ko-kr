@@ -2,7 +2,7 @@
 title: 제품 및 라이선스에 대한 FAQ
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에 대한 일반적인 제품 및 라이선스 질문의 대답을 알아봅니다.
-ms.date: 04/30/2018
+ms.date: 07/30/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,21 +10,21 @@ ms.assetid: ee8d611f-aa0c-4efd-b0ad-dbd14d0a0623
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 781ffffac4367fb899c37c50492390a65244e17d
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 9e58e11bec9441f73bff021c8a6a24d150777cbe
+ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32340316"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39385544"
 ---
 # <a name="frequently-asked-questions-for-configuration-manager-branches-and-licensing"></a>Configuration Manager 분기 및 라이선스에 대한 질문과 대답
 
  *적용 대상: System Center Configuration Manager(현재 분기), System Center Configuration Manager(장기 서비스 분기)*
 
 ## <a name="summary"></a>요약
-이 FAQ에서는 Microsoft 볼륨 라이선스 프로그램을 통해 사용할 수 있는 System Center Configuration Manager 현재 분기 및 LTSB(장기 서비스 분기) 버전에 대한 일반적인 라이선스 관련 질문을 다룹니다. 이 문서는 정보 제공용입니다. System Center Configuration Manager 라이선스를 다루는 어떤 문서를 대체하지 않습니다. 자세한 내용은 [System Center 2016](https://www.microsoft.com/en-us/licensing/product-licensing/system-center-2016.aspx)<!-- this link doesn't work without some language code -->에 대한 제품 라이선스 및 [Product Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=53)(제품 사용 약관)를 참조하세요. 제품 용어에서는 볼륨 라이선스의 모든 Microsoft 제품에 대한 사용 조건을 설명합니다.
+이 FAQ에서는 Microsoft 볼륨 라이선스 프로그램을 통해 사용할 수 있는 System Center Configuration Manager 현재 분기 및 LTSB(장기 서비스 분기) 버전에 대한 일반적인 라이선스 관련 질문을 다룹니다. 이 문서는 정보 제공용입니다. System Center Configuration Manager 라이선스를 다루는 어떤 문서를 대체하지 않습니다. 자세한 내용은 [System Center 2016](https://www.microsoft.com/en-us/licensing/product-licensing/system-center-2016.aspx)<!-- this link doesn't work without some language code -->에 대한 제품 라이선스 및 [Product Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=53)(제품 사용 약관)를 참조하세요. 제품 용어에서는 볼륨 라이선스의 모든 Microsoft 제품에 대한 사용 조건을 설명합니다.
 
-System Center Configuration Manager 기능에 대한 자세한 내용은 [제품 페이지](https://www.microsoft.com/cloud-platform/system-center-configuration-manager)를 참조하세요.
+Configuration Manager 기능에 대한 자세한 내용은 [제품 페이지](https://www.microsoft.com/cloud-platform/system-center-configuration-manager)를 참조하세요.
 
 
 
@@ -67,6 +67,8 @@ EMS는 System Center Configuration Manager(현재 분기 및 장기 서비스 �
 
 2016년 10월 1일 이후에 SA가 만료되었으며 System Center Configuration Manager에 대한 영구 라이선스를 보유하는 경우 지속적으로 사용하기 위한 유일한 방법은 System Center 2012 R2 Configuration Manager 및 사용 가능한 서비스 팩을 설치하고 사용하는 것입니다. SA가 만료되었을 때 현재 분기를 제거해야 하며 이전 버전의 제품을 다시 설치해야 했습니다. System Center Configuration Manager 현재 분기에서 이전 버전의 Configuration Manager로 마이그레이션하거나 다운그레이드할 수는 없습니다.   
 
+System Center Endpoint Protection을 사용하는 경우 SA가 만료되면 제거해야 합니다. System Center Endpoint Protection은 *L(라이선스)* 권한 및 영구적인 권한을 제공하지 않습니다.<!--506238--> 
+
 
 ### <a name="bkmk_owncb"></a> 내가 현재 분기를 “소유”하나요?   
 아니요. 활성 SA를 보유하는 동안 현재 분기를 사용하도록 허가됩니다. 예를 들어 *L&SA* 를 통해 *SA*가 만료되면 현재 분기를 사용하는 권한이 포함되지 않은 *L(라이선스)* 권한만 보유하게 됩니다. L에서 영구적인 권리를 제공하는 경우 현재 분기 대신 System Center Configuration Manager(또는 2016년 10월 1일 전에 SA가 만료된 경우 System Center 2012 R2 Configuration Manager)를 사용할 수 있습니다.
@@ -76,7 +78,9 @@ EMS는 System Center Configuration Manager(현재 분기 및 장기 서비스 �
 아니요. System Center Configuration Manager를 사용하는 권한을 얻을 수 있는 유일한 방법은 SA를 사용하거나 동등한 구독을 통해 라이선스를 획득하는 것입니다. System Center Configuration Manager가 개발 및 테스트 용도(프로덕션용이 아닌)로 제공되는 개발자 프로그램(예: MSDN)이 있습니다.
 
 
-### <a name="bkmk_update-rights"></a> 버전 1610과 같이 내 콘솔 내에 제공되는 System Center Configuration Manager의 업데이트가 표시됩니다. 내가 설치할 수 있는 권한이 있나요?   
+### 
+  <a name="bkmk_update-rights">
+  </a> 버전 1610과 같이 내 콘솔 내에 제공되는 System Center Configuration Manager의 업데이트가 표시됩니다. 내가 설치할 수 있는 권한이 있나요?   
 활성 *SA*가 있으면 설치할 수 있습니다. 활성 SA가 없으면 현재 분기를 제거해야 하며 System Center Configuration Manager의 LTSB를 설치할 수 있습니다. LTSB에서 System Center Configuration Manager의 증분 버전에 대한 업데이트를 수신하지 않지만 지원 수명 주기를 기반으로 하는 보안 업데이트를 수신합니다.
 
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 101de2ba-9b4d-4890-b087-5d518a4aa624
-ms.openlocfilehash: 8c025d7c7a1dc452cb96f937801656bc4d0cadab
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: a34a50d4c7b917666316f9a4651aaebc2c001287
+ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32339600"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39384266"
 ---
 # <a name="prepare-windows-10-devices-for-co-management"></a>공동 관리를 위해 Windows 10 장치 준비
 AD 및 Azure AD에 조인하고, Microsoft Intune과 Configuration Manager에서 클라이언트를 등록하는 Windows 10 장치에서 공동 관리를 사용할 수 있습니다. 새 Windows 10 장치 및 Intune에 이미 등록된 장치의 경우 공동 관리되기 전에 Configuration Manager 클라이언트를 설치합니다. Configuration Manager 클라이언트인 Windows 10 장치의 경우 Intune에서 장치를 등록하고 Configuration Manager 콘솔에서 공동 관리를 사용할 수 있습니다.
@@ -25,11 +25,12 @@ AD 및 Azure AD에 조인하고, Microsoft Intune과 Configuration Manager에서
 
 
 ## <a name="prerequisites"></a>필수 구성 요소
-공동 관리를 활성화하기 전에 다음 필수 구성 요소를 준비해야 합니다. 일반 필수 구성 요소 및 Configuration Manager 클라이언트가 있는 장치와 클라이언트가 설치되지 않은 장치에 대한 다른 필수 구성 요소가 있습니다.
+공동 관리를 활성화하기 전에 다음 필수 구성 요소를 준비해야 합니다. Configuration Manager 클라이언트가 있는 장치와 클라이언트가 설치되지 않은 장치에 대한 일반 필수 구성 요소 및 다른 필수 구성 요소가 있습니다.
 ### <a name="general-prerequisites"></a>일반 전제 조건
 다음은 공동 관리를 사용하기 위한 일반 전제 조건입니다.  
 
 - Configuration Manager 버전 1710 이상
+    - Configuration Manager 버전 1806부터 단일 Intune 테넌트에 여러 Configuration Manager 인스턴스를 연결할 수 있습니다. <!--1357944-->
 - [클라우드 관리를 위해 Azure AD에 등록된 사이트](/sccm/core/servers/deploy/configure/azure-services-wizard)
 - 모든 사용자의 EMS 또는 Intune 라이선스
 - 사용하도록 설정된 [Azure AD 자동 등록](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)
@@ -39,6 +40,16 @@ AD 및 Azure AD에 조인하고, Microsoft Intune과 Configuration Manager에서
    > [!Note]  
    > 하이브리드 MDM 환경(Configuration Manager와 통합된 Intune)이 설정된 경우 공동 관리를 사용할 수 없습니다. 그러나 사용자를 Intune 독립 실행형으로 마이그레이션하기 시작한 후 관련 Windows 10 장치에 공동 관리를 활성화할 수 있습니다. Intune 독립 실행형으로 마이그레이션하는 방법에 대한 자세한 정보는 [하이브리드 MDM에서 Intune 독립 실행형으로 마이그레이션 시작](/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)을 참조하세요.
 
+### <a name="prerequisite-azure-resource-manager-roles"></a>필수 Azure Resource Manager 역할
+Azure 역할에 대한 자세한 내용은 [서로 다른 역할 이해하기](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles)를 참조하세요.
+|작업|필요한 역할|
+|----|----|
+|클라우드 관리 게이트웨이 설정|Azure 구독 관리자|
+|클라우드 배포 지점 설정|Azure 구독 관리자|
+|Configuration Manager 콘솔에서 Azure Active Directory 앱 만들기|Azure Active Directory 글로벌 관리자|
+|Configuration Manager 콘솔에서 Azure 클라이언트 및 서버 앱 가져오기| Configuration Manager 관리자, Azure 역할이 추가로 필요하지 않습니다.|
+|공동 관리 마법사를 통한 공동 관리 설정| 모든 범위 권한이 있는 Configuration Manager 관리자 및 Azure Active Directory 사용자 권한 
+ 
 ### <a name="additional-prerequisites-for-devices-with-the-configuration-manager-client"></a>Configuration Manager 클라이언트가 있는 장치에 대한 추가 필수 구성 요소
 - Windows 10, 버전 1709 이상
 - [조인된 하이브리드 Azure AD](https://docs.microsoft.com/azure/active-directory/device-management-hybrid-azuread-joined-devices-setup)(AD와 Azure AD에 조인)
@@ -99,7 +110,7 @@ Configuration Manager 클라이언트가 아닌 Windows 10 장치의 경우 Intu
 3. Configuration Manager 클라이언트 패키지를 사용하여 Intune에서 앱을 만들고 공동 관리하려는 Windows 10 장치에 앱을 배포합니다. [Azure AD를 사용하여 인터넷에서 클라이언트를 설치](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/deploy-clients-cmg-azure)하는 단계를 수행할 때 [Configuration Manager 클라이언트를 설치하는 명령줄](#command-line-to-install-configuration-manager-client)을 사용합니다.   
 
 ## <a name="windows-10-devices-not-enrolled-in-intune-or-a-configuration-manager-client"></a>Intune 또는 Configuration Manager 클라이언트에 등록되지 않은 Windows 10 장치
-Intune 또는 Configuration Manager 클라이언트에 등록되지 않은 Windows 10 장치의 경우 자동 등록을 사용하여 Intune에서 장치를 등록할 수 있습니다. 그런 다음 Intune에서 앱을 만들어 Configuration Manager 클라이언트를 배포합니다.
+Intune에 등록되지 않았거나 Configuration Manager 클라이언트가 있는 Windows 10 장치의 경우 자동 등록을 사용하여 Intune에서 장치를 등록할 수 있습니다. 그런 다음 Intune에서 앱을 만들어 Configuration Manager 클라이언트를 배포합니다.
 1. 장치를 Intune에 자동으로 등록하도록 Azure AD에서 자동 등록을 구성합니다. 자세한 내용은  [Microsoft Intune에 Windows 장치 등록](https://docs.microsoft.com/intune/windows-enroll)을 참조하세요.  
 2. Configuration Manager 클라이언트 패키지를 사용하여 Intune에서 앱을 만들고 공동 관리하려는 Windows 10 장치에 앱을 배포합니다. [Azure AD를 사용하여 인터넷에서 클라이언트를 설치](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/deploy-clients-cmg-azure)하는 단계를 수행할 때 [Configuration Manager 클라이언트를 설치하는 명령줄](#command-line-to-install-configuration-manager-client)을 사용합니다.
 

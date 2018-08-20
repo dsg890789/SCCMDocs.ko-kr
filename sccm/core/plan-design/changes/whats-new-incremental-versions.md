@@ -2,7 +2,7 @@
 title: 증분 버전
 titleSuffix: Configuraton Manager
 description: Configuration Manager에 대한 최신 업데이트의 새로운 기능에 대해 알아봅니다.
-ms.date: 03/22/2018
+ms.date: 07/30/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,14 +10,14 @@ ms.assetid: b57acf0b-05b7-46af-ad4c-f3e707bd3861
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 28b7819b915eb2dea8a34d1474141067ac7751b5
-ms.sourcegitcommit: 0305e710f634529793ae73e5aac24168ee4fe02f
+ms.openlocfilehash: 13037b857b890d400881d8d7173b7ca03dd83ebc
+ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37042782"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39384129"
 ---
-# <a name="whats-new-in-system-center-configuration-manager-incremental-versions"></a>System Center Configuration Manager 증분 버전의 새로운 기능
+# <a name="whats-new-in-configuration-manager-incremental-versions"></a>Configuration Manager 증분 버전의 새로운 기능
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -27,11 +27,13 @@ ms.locfileid: "37042782"
 
  업데이트 버전은 연도와 월을 기준으로 식별합니다. 예를 들어 버전 1511은 2015년 11월을 나타냅니다(Configuration Manager 현재 분기가 처음으로 제조에 릴리스된 월). 이후 업데이트는 1802와 같은 버전 이름을 갖게 됩니다. 이러한 버전 이름은 2018년 2월에 처음 제공된 업데이트를 나타냅니다. 이러한 업데이트 버전은 Configuration Manager 설치의 증분 버전과 사용자 환경에 사용하도록 설정할 수 있는 기능을 파악하는 데 중요한 요소입니다.
 
+
+
 ## <a name="supported-versions"></a>지원되는 버전
  다음 링크를 사용하여 지원되는 각 버전의 새로운 기능을 확인할 수 있습니다.
+  - [버전 1806의 새로운 기능](../../../core/plan-design/changes/whats-new-in-version-1806.md)  
   - [버전 1802의 새로운 기능](../../../core/plan-design/changes/whats-new-in-version-1802.md)
   - [버전 1710의 새로운 기능](../../../core/plan-design/changes/whats-new-in-version-1710.md)
-  - [버전 1706의 새로운 기능](../../../core/plan-design/changes/whats-new-in-version-1706.md)  
 
 
 1710 이전에 릴리스된 Configuration Manager 버전은 12개월 동안 지원됩니다. 1710 릴리스부터 각 업데이트 버전은 GA(일반 공급) 출시 날짜로부터 18개월 동안 지원됩니다.  가장 최근의 업데이트 버전으로 최신 상태를 유지하세요. 자세한 내용은 [Configuration Manager 현재 분기 버전 지원](../../../core/servers/manage/current-branch-versions-supported.md)을 참조하세요.  

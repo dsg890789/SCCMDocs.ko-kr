@@ -2,7 +2,7 @@
 title: 응용 프로그램 관리 계획 및 구성
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에서 응용 프로그램 배포에 필요한 종속성을 구현하고 구성합니다.
-ms.date: 11/07/2017
+ms.date: 07/30/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-app
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 2be84a1d-ebb9-47ae-8982-c66d5b92a52a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 18d9fe80a1c5525457579dadbfeaeafa3425202d
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 626fbb8d431857b1b672fffd9f3ba0df8b2a3da0
+ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32340151"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39385204"
 ---
 # <a name="plan-for-and-configure-application-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 관리 계획 및 구성
 
@@ -183,8 +183,7 @@ ms.locfileid: "32340151"
 3. Microsoft Intune 구독을 구성하고 Configuration Manager에 연결한 경우 소프트웨어 센터에서 Intune 구독 속성에 지정된 조직 이름, 색 및 회사 로고를 표시합니다. 자세한 내용은 [Configuring the Microsoft Intune subscription](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm#step-3-configure-intune-subscription)을 참조하십시오.
 
 #### <a name="to-manually-set-software-center-branding"></a>소프트웨어 센터 브랜딩 수동 설정
-<!-- 1351224 -->
-1710 릴리스에서는 엔터프라이즈 브랜딩 요소를 수동으로 추가하고 소프트웨어 센터에서 탭의 표시 여부를 지정할 수 있습니다. 소프트웨어 센터 특정의 회사 이름을 추가하고 소프트웨어 센터 구성 색 테마, 회사 로고 및 클라이언트 장치에 대한 표시 탭을 설정할 수 있습니다.
+<!-- 1351224 --> 1710 릴리스를 사용하면 엔터프라이즈 브랜딩 요소를 수동으로 추가하고 소프트웨어 센터에서 탭의 표시 여부를 지정할 수 있습니다. 소프트웨어 센터 특정의 회사 이름을 추가하고 소프트웨어 센터 구성 색 테마, 회사 로고 및 클라이언트 장치에 대한 표시 탭을 설정할 수 있습니다.
 
 1. **Configuration Manager** 콘솔에서 **관리** > **클라이언트 설정**을 차례로 선택합니다. 원하는 클라이언트 설정 인스턴스를 클릭합니다.
 2. **홈** 탭의 **속성** 그룹에서 **속성**을 선택합니다.
@@ -201,9 +200,13 @@ ms.locfileid: "32340151"
     -  설치 상태 사용 탭
     -  장치 준수 사용 탭
     -  옵션 사용 탭
+    -  소프트웨어 센터용 사용자 지정 탭 지정(1806 버전부터 적용)<!--1358132 -->
+        - 탭 이름
+        - 콘텐츠 URL
 
 > [!IMPORTANT]  
->  소프트웨어 센터 브랜딩은 14일에 한 번씩 Intune 서비스와 동기화됩니다. 따라서 Intune의 변경 내용이 Configuration Manager에 표시되기 전에 지연이 발생할 수 있습니다.
+> - 소프트웨어 센터에서 사용자 지정 탭을 사용하는 경우 일부 웹 사이트 기능이 작동하지 않을 수 있습니다. 이 클라이언트에 배포하기 전에 결과를 테스트해야 합니다. <!--519659--> 
+> - 소프트웨어 센터 브랜딩은 14일에 한 번씩 Intune 서비스와 동기화됩니다. 따라서 Intune의 변경 내용이 Configuration Manager에 표시되기 전에 지연이 발생할 수 있습니다.
 
 ###  <a name="step-5-verify-that-the-application-catalog-is-operational"></a>5단계: 응용 프로그램 카탈로그가 작동하는지 확인  
  응용 프로그램 카탈로그가 작동하는지 확인하려면 다음 절차를 수행하세요. 응용 프로그램 카탈로그는 브라우저나 소프트웨어 센터에서 직접 사용할 수 있습니다.  
