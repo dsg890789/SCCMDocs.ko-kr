@@ -1,6 +1,5 @@
 # 개요
 ## [하이브리드 MDM이란?](understand/hybrid-mobile-device-management.md)
-## [Intune 독립 실행형 또는 하이브리드 MDM를 선택](understand/choose-between-standalone-intune-and-hybrid-mobile-device-management.md)
 ## [하이브리드 MDM의 새로운 기능](understand/whats-new-in-hybrid-mobile-device-management.md)
 
 # [계획 및 디자인](plan-design/plan-hybrid-mobile-device-management.md)
