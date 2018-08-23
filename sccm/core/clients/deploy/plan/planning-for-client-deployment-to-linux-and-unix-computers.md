@@ -242,7 +242,7 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manag
 
  Linux 및 UNIX용 Configuration Manager 클라이언트를 설치할 때 설치 스크립트는 운영 체제 버전을 확인합니다. 기본적으로 운영 체제 버전이 SHA-256을 지원하는 OpenSSL 버전 없이 릴리스된 것으로 식별되면 Configuration Manager 클라이언트 설치에 실패합니다.  
 
- SHA-256을 지원하는 OpenSSL 버전과 함께 릴리스되지 않은 Linux 및 UNIX 운영 체제에 Configuration Manager 클라이언트를 설치하려면 설치 명령줄 스위치 **ignoreSHA256validation**을 사용해야 합니다. 적용 가능한 Linux 또는 UNIX 운영 체제에서 이 명령줄 옵션을 사용하면 Configuration Manager 클라이언트는 SHA-256 유효성 검사를 건너뛰며, 설치 후에 클라이언트에서 SHA-256을 사용하여 HTTP를 통해 사이트 시스템으로 전송하는 데이터에 서명하지 않습니다. 인증서를 사용하도록 Linux 및 UNIX 클라이언트를 구성하는 방법에 대한 자세한 내용은 이 항목에서 [Planning for Security and Certificates for Linux and UNIX Servers](#BKMK_SecurityforLnU) 을 참조하세요. SHA-256을 요구하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 보안 구성](../../../../core/plan-design/security/configure-security.md) 항목의 [서명 및 암호화 구성](../../../../core/plan-design/security/configure-security.md#BKMK_ConfigureSigningEncryption) 섹션을 참조하세요.  
+ SHA-256을 지원하는 OpenSSL 버전과 함께 릴리스되지 않은 Linux 및 UNIX 운영 체제에 Configuration Manager 클라이언트를 설치하려면 설치 명령줄 스위치 **ignoreSHA256validation**을 사용해야 합니다. 적용 가능한 Linux 또는 UNIX 운영 체제에서 이 명령줄 옵션을 사용하면 Configuration Manager 클라이언트는 SHA-256 유효성 검사를 건너뛰며, 설치 후에 클라이언트에서 SHA-256을 사용하여 HTTP를 통해 사이트 시스템으로 전송하는 데이터에 서명하지 않습니다. 인증서를 사용하도록 Linux 및 UNIX 클라이언트를 구성하는 방법에 대한 자세한 내용은 이 항목에서 [Linux 및 UNIX 서버에 대한 보안 및 인증서 계획](#BKMK_SecurityforLnU) 을 참조하세요. SHA-256을 요구하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 보안 구성](../../../../core/plan-design/security/configure-security.md) 항목의 [서명 및 암호화 구성](../../../../core/plan-design/security/configure-security.md#BKMK_ConfigureSigningEncryption) 섹션을 참조하세요.  
 
 > [!NOTE]  
 >  명령줄 옵션 **ignoreSHA256validation** s h A-256을 지원 하는 버전의 OpenSSL와 Linux 및 UNIX 릴리스된 버전을 실행 하는 컴퓨터에서 무시 됩니다.  
