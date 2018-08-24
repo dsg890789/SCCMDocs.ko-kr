@@ -56,7 +56,7 @@
 ### [사용자 상태를 캡처 및 복원하는 작업 순서 만들기](deploy-use/create-a-task-sequence-to-capture-and-restore-user-state.md)
 ### [작업 순서를 사용하여 가상 하드 디스크 관리](deploy-use/use-a-task-sequence-to-manage-virtual-hard-disks.md)
 
-## [사용자 지정 작업 순서 시나리오](deploy-use/custom-task-sequence-scenarios.md)
+## 사용자 지정 작업 순서 시나리오
 ### [사용자 지정 작업 순서 만들기](deploy-use/create-a-custom-task-sequence.md)
 ### [비운영 체제 배포에 대한 작업 순서 만들기](deploy-use/create-a-task-sequence-for-non-operating-system-deployments.md)
 ### [BIOS-UEFI 변환을 관리하는 작업 순서 단계](deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion.md)

@@ -4,12 +4,12 @@ hide_bc: true
 title: System Center Configuration Manager 문서
 description: System Center Configuration Manager를 사용하는 방법을 알아봅니다.
 ms.topic: hub-page
-ms.openlocfilehash: 250f5cf0793f5afd396a82f96389c937ed9be14b
-ms.sourcegitcommit: e3f7bb8cec4b37a311bc86098297534cab947de8
+ms.openlocfilehash: 9288732db8771d9ae83c006b1865683fe58ebc0e
+ms.sourcegitcommit: 98c3f7848dc9014de05541aefa09f36d49174784
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "29781765"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42587909"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -70,8 +70,8 @@ ms.locfileid: "29781765"
                                             <div class="cardText">
                                                 <h3>모바일 장치 관리</h3>
                                                 <p><a href="/sccm/mdm/understand/hybrid-mobile-device-management">하이브리드 모바일 장치 관리 이해</a></p>
-                                                <p><a href="/sccm/mdm/deploy-use/setup-hybrid-mdm">Intune을 사용하여 하이브리드 MDM 설정</a></p>
-                                                <p><a href="/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management">Configuration Manager를 사용하여 Intune 독립 실행형 및 하이브리드 MDM 중에서 선택</a></p>
+                                                <p><a href="/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa">하이브리드 MDM 사용자 및 장치를 Intune 독립 실행형으로 마이그레이션</a></p>
+                                                <p><a href="/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management">하이브리드 MDM의 새로운 기능</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -344,7 +344,7 @@ ms.locfileid: "29781765"
                                 </a>
                             </li>
                             <li>
-                                <a href="/sccm/mdm/deploy-use/setup-hybrid-mdm">
+                                <a href="/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -354,8 +354,8 @@ ms.locfileid: "29781765"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Intune을 사용하여 하이브리드 MDM 설정</h3>
-                                                <p>BYOD 시나리오를 사용하도록 설정하고 대부분 회사 소유의 장치 관리 전략의 필수 구성 요소를 충족합니다.</p>
+                                                <h3>하이브리드 MDM 사용자 및 장치를 Intune 독립 실행형으로 마이그레이션</h3>
+                                                <p>단계별된 접근 방식을 사용하여 하이브리드 MDM에서 권장되는 Intune 독립 실행형 솔루션으로 마이그레이션합니다.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -363,7 +363,7 @@ ms.locfileid: "29781765"
                                 </a>
                             </li>
                             <li>
-                                <a href="/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management">
+                                <a href="/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -373,8 +373,8 @@ ms.locfileid: "29781765"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Configuration Manager를 사용하여 Intune 독립 실행형 및 하이브리드 MDM 중에서 선택</h3>
-                                                <p>Intune 독립 실행형 또는 하이브리드 MDM? 이 중 하나를 선택하는 이유는 무엇입니까? </p>
+                                                <h3>하이브리드 MDM의 새로운 기능</h3>
+                                                <p>하이브리드 MDM으로 지원되는 Intune의 새로운 기능에 대해 알아봅니다.</p>
                                             </div>
                                         </div>
                                     </div>

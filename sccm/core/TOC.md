@@ -100,11 +100,11 @@
 
 <!-- Only show the current plus three; four total) -->
 ##   [기술 미리 보기](get-started/technical-preview.md)
+###  [1808의 기능](get-started/capabilities-in-technical-preview-1808.md)
 ###  [1807의 기능](get-started/capabilities-in-technical-preview-1807.md)
 ###  [1806.2의 기능](get-started/capabilities-in-technical-preview-1806-2.md)
 ###  [1806의 기능](get-started/capabilities-in-technical-preview-1806.md)
 ###  [1805의 기능](get-started/capabilities-in-technical-preview-1805.md)
-###  [1804의 기능](get-started/capabilities-in-technical-preview-1804.md)
 
 ##   [계층 구조 간에 데이터 마이그레이션](migration/migrate-data-between-hierarchies.md)
 ###  [마이그레이션 계획](migration/planning-for-migration.md)
