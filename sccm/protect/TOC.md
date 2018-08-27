@@ -29,7 +29,6 @@
 ## [인증서 프로필](deploy-use/introduction-to-certificate-profiles.md)
 ### [인증서 프로필 만들기](deploy-use/create-certificate-profiles.md)
 ### [인증서 인프라 구성](deploy-use/certificate-infrastructure.md)
-### [암호화 컨트롤 기술 참조](deploy-use/cryptographic-controls-technical-reference.md)
 
 ## [Endpoint Protection](deploy-use/endpoint-protection.md)
 ### [Endpoint Protection 구성](deploy-use/endpoint-protection-configure.md)

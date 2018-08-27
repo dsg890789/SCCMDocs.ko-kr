@@ -93,6 +93,7 @@
 ###  [개인정보취급방침 – Configuration Manager Cmdlet 라이브러리](plan-design/security/privacy-statement-cmdlet-library.md)
 ###  [추가 개인 정보](plan-design/security/additional-privacy.md)
 ###  [보안 구성](plan-design/security/configure-security.md)
+###  [암호화 컨트롤 기술 참조](plan-design/security/cryptographic-controls-technical-reference.md)
 
 #    시작
 ##   [랩에서 Configuration Manager 평가](get-started/evaluate-with-lab-environment.md)
