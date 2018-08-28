@@ -2,7 +2,7 @@
 title: 사이트 백업
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 장애 또는 데이터 손실이 발생하기 전에 사이트를 백업하는 방법을 알아봅니다.
-ms.date: 07/30/2018
+ms.date: 08/24/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: f7832d83-9ae2-4530-8a77-790e0845e12f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 39af53c6ddfdb58f340432aa3392a046cdeef428
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 85ce1c4b5201c29ffa3543357f50a379c1b11e7f
+ms.sourcegitcommit: 84afecee44200e27d1d5bb5ed2d54fd6a8c51617
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39386214"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43053884"
 ---
 # <a name="back-up-a-configuration-manager-site"></a>Configuration Manager 사이트 백업
 
@@ -129,7 +129,7 @@ Configuration Manager 백업 서비스가 실행될 때 이 서비스는 백업 
 
 
 ## <a name="using-the-afterbackupbat-file"></a>AfterBackup.bat 파일 사용  
-사이트를 백업을 성공한 후 백업 작업에서는 **AfterBackup.bat**라는 스크립트를 자동으로 실행합니다. `<ConfigMgrInstallationFolder>\Inboxes\Smsbkup`의 사이트 서버에서 AfterBackup.bat 파일을 수동으로 만듭니다. AfterBackup.bat 파일이 이미 올바른 폴더 안에 있는 경우 백업 작업이 완료된 후 자동으로 실행됩니다.
+사이트를 백업을 성공한 후 백업 작업에서는 **AfterBackup.bat**라는 스크립트를 자동으로 실행합니다. `<ConfigMgrInstallationFolder>\Inboxes\Smsbkup.box`의 사이트 서버에서 AfterBackup.bat 파일을 수동으로 만듭니다. AfterBackup.bat 파일이 이미 올바른 폴더 안에 있는 경우 백업 작업이 완료된 후 자동으로 실행됩니다.
 
 AfterBackup.bat 파일을 사용하면 모든 백업 작업 끝에 백업 스냅숏을 보관할 수 있습니다. 백업 사이트 서버 유지 관리 작업의 일부가 아닌 다른 백업 후속 작업을 자동으로 수행할 수 있습니다. AfterBackup.bat 파일에 의해 보관 및 백업 작업이 통합되므로 새로운 백업 스냅숏은 모두 보관됩니다.
 
