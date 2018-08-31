@@ -1,8 +1,8 @@
 ---
 title: 필수 구성 요소 확인
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에 사용 가능한 필수 조건 검사를 검토합니다. 보안 권한 검사를 포함합니다.
-ms.date: 4/17/2017
+description: 특정 필수 구성 요소의 참조는 Configuration Manager 업데이트를 검사합니다.
+ms.date: 08/23/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,23 +10,24 @@ ms.assetid: 6a279624-ffc9-41aa-8132-df1809708dd5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f51f2d5f94a185f35a5d843d674a3dd8f1e8a275
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 1c66e91341a316ea9115e577d48cab8d56d1e74c
+ms.sourcegitcommit: a17be6f5e4659ba3f38c7732b43f3afafcb95171
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32342582"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42906390"
 ---
-# <a name="list-of-prerequisite-checks-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 필수 조건 검사 목록
+# <a name="list-of-prerequisite-checks-for-configuration-manager"></a>Configuration Manager의 필수 구성 요소 검사 목록
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 다음 섹션에서는 사용 가능한 필수 구성 요소 검사에 대해 자세히 설명합니다.
 
-필수 조건 검사기를 사용하는 방법에 대한 자세한 내용은 [필수 조건 검사기](prerequisite-checker.md)를 참조하세요.  
+자세한 내용은 [필수 구성 요소 검사기](prerequisite-checker.md)를 참조하세요.  
+
+
 
 ##  <a name="BKMK_Security"></a> 보안 권한의 필수 조건 검사  
-다음 표에는 필수 조건 검사기가 보안 권한에 대해 수행하는 검사가 나와 있습니다.
 
 |수행되는 검사|설명|심각도|사이트 적용 가능성|
 |---|---|---|---|
@@ -41,8 +42,9 @@ ms.locfileid: "32342582"
 |**SQL Server sysadmin 권한**|Configuration Manager 설치 프로그램을 실행하는 사용자 계정에 사이트 데이터베이스 설치를 위해 선택한 SQL Server 인스턴스에 대한 **sysadmin** 역할이 있는지 확인합니다. 이 내용은 설치 프로그램이 사용 권한을 확인하기 위해 SQL Server의 인스턴스에 액세스할 수 없는 경우에도 확인할 수 없습니다.|오류|SQL Server|
 |**참조 사이트에 대한 SQL Server sysadmin 권한**|Configuration Manager 설치 프로그램을 실행하는 사용자 계정에 참조 사이트 데이터베이스로 선택한 SQL Server 역할 인스턴스에 대한 **sysadmin** 역할이 있는지 확인합니다. 사이트 데이터베이스를 수정하려면 SQL Server **sysadmin** 역할 권한이 필요합니다.|오류|SQL Server|
 
+
+
 ##  <a name="BKMK_Dependencies"></a> Configuration Manager 종속성의 필수 조건 검사
-다음 표에는 필수 조건 검사기가 Configuration Manager 종속성에 대해 수행하는 검사가 나와 있습니다.
 
 |수행되는 검사|설명|심각도|사이트 적용 가능성|
 |---|---|---|---|
@@ -77,7 +79,7 @@ ms.locfileid: "32342582"
 |**사이트 서버의 PowerShell 2.0**|Configuration Manager Exchange 커넥터용 사이트 서버에 Windows PowerShell 2.0 이상 버전이 설치되어 있는지 확인합니다. PowerShell 2.0에 대한 자세한 내용은 Microsoft 기술 자료의 [문서 968930](http://go.microsoft.com/fwlink/p/?LinkId=226450) 을 참조하세요.|경고|기본 사이트|
 |**기본 FQDN**|FQDN(정규화된 도메인 이름)을 사용하여 컴퓨터의 NetBIOS 이름이 컴퓨터의 로컬 호스트 이름(FQDN의 첫 번째 레이블)과 일치하는지 확인합니다.|오류|중앙 관리 사이트, <br>기본 사이트, <br>보조 사이트, <br>SQL Server|
 |**보조 사이트의 WMI에 대한 원격 연결**|설치 프로그램에서 보조 사이트의 WMI에 대한 원격 연결을 설정할 수 있는지 확인합니다.|경고|보조 사이트|
-|**필요한 SQL Server 데이터 정렬**|중국어 운영 체제를 사용하며 GB18030 지원이 필요한 경우가 아니라면 SQL Server의 인스턴스와 Configuration Manager 사이트 데이터베이스(설치된 경우)가 SQL_Latin1_General_CP1_CI_AS 데이터 정렬을 사용하도록 구성되었는지 확인합니다.<br><br>SQL Server 인스턴스와 데이터베이스 데이터 정렬을 변경하는 방법에 대한 자세한 내용은 SQL Server 2008 R2 온라인 설명서의 [데이터 정렬 설정 및 변경](http://go.microsoft.com/fwlink/p/?LinkID=234541)을 참조하세요.  GB18030 지원에 대한 자세한 내용은 [System Center Configuration Manager의 다국어 기능 지원](../../../../core/plan-design/hierarchy/international-support.md)을 참조하세요.|오류|중앙 관리 사이트, <br>기본 사이트, <br>보조 사이트|
+|**필요한 SQL Server 데이터 정렬**|중국어 OS를 사용하며 GB18030 지원이 필요한 경우가 아니라면 SQL Server의 인스턴스와 Configuration Manager 사이트 데이터베이스(설치된 경우)가 **SQL_Latin1_General_CP1_CI_AS** 데이터 정렬을 사용하도록 구성되었는지 확인합니다.<br><br>SQL Server 인스턴스와 데이터베이스 데이터 정렬을 변경하는 방법에 대한 자세한 내용은 [SQL 데이터 정렬 및 유니코드 지원](https://docs.microsoft.com/sql/relational-databases/collations/collation-and-unicode-support)을 참조하세요. GB18030 지원을 사용하는 방법에 대한 자세한 내용은 [다국어 지원](/sccm/core/plan-design/hierarchy/international-support)을 참조하세요.|오류|중앙 관리 사이트, <br>기본 사이트, <br>보조 사이트|
 |**설치 원본 폴더**|보조 사이트의 컴퓨터 계정에 설치 원본 폴더 및 공유에 대한 **읽기** NTFS 파일 시스템 권한 및 **읽기** 공유 권한이 있는지 확인합니다.<br><br>**참고**: 관리 공유(예: C$ 및 D$)를 사용하는 경우 보조 사이트 컴퓨터 계정은 컴퓨터의 **관리자** 사용자여야 합니다.|오류|보조 사이트|
 |**설치 프로그램 원본 버전**|보조 사이트 설치를 위해 지정한 원본 폴더의 Configuration Manager 버전이 기본 사이트의 Configuration Manager 버전과 일치하는지 확인합니다.|오류|보조 사이트|
 |**사용 중인 사이트 코드**|지정한 사이트 코드가 Configuration Manager 계층 구조에서 아직 사용되지 않는지 확인합니다. 이 사이트의 고유한 사이트 코드를 지정해야 합니다.|오류|기본 사이트|
@@ -85,10 +87,10 @@ ms.locfileid: "32342582"
 |**SQL Server Edition**|사이트의 SQL Server 버전이 SQL Server Express가 아닌지 확인합니다.|오류|SQL Server|
 |**보조 사이트의 SQL Server Express**|SQL Server Express를 보조 사이트의 사이트 서버 컴퓨터에 설치할 수 있는지 확인합니다.|오류|보조 사이트|
 |**보조 사이트 컴퓨터의 SQL Server**|보조 사이트 컴퓨터에 SQL Server가 설치되어 있는지 확인합니다. 원격 사이트 시스템에는 SQL Server를 설치할 수 없습니다.<br><br>**경고**: 이 확인은 설치 프로그램이 SQL Server의 기존 인스턴스를 사용하도록 선택할 경우에만 적용됩니다.|오류|보조 사이트|
-|**SQL Server 프로세스 메모리 할당**|SQL Server에서 중앙 관리 사이트 및 기본 사이트를 위해 최소 8GB의 메모리를 예약하고 보조 사이트를 위해 최소 4GB의 메모리를 예약했는지 확인합니다. SQL Server Management Studio를 사용하여 고정된 양의 메모리를 설정하는 방법에 대한 자세한 내용은 [고정된 메모리 양을 설정하는 방법(SQL Server Management Studio)](http://go.microsoft.com/fwlink/p/?LinkId=233759)을 참조하세요.<br><br>**참고**: 예약된 메모리가 1GB인 보조 사이트의 SQL Server Express에는 이 확인이 적용되지 않습니다.|경고|SQL Server|
+|**SQL Server 프로세스 메모리 할당**|SQL Server에서 중앙 관리 사이트 및 기본 사이트를 위해 최소 8GB의 메모리를 예약하고 보조 사이트를 위해 최소 4GB의 메모리를 예약했는지 확인합니다. 자세한 내용은 [SQL Server Management Studio를 사용하여 메모리 옵션을 구성하는 방법](https://docs.microsoft.com/sql/database-engine/configure-windows/server-memory-server-configuration-options#how-to-configure-memory-options-using-includessmanstudiofullincludesssmanstudiofull-mdmd)을 참조하세요.<br><br>**참고**: 예약된 메모리가 1GB인 보조 사이트의 SQL Server Express에는 이 확인이 적용되지 않습니다.|경고|SQL Server|
 |**SQL Server 서비스 실행 계정**|SQL Server 서비스의 로그온 계정이 로컬 사용자 계정 또는 LOCAL SERVICE가 아닌지 확인합니다. 올바른 도메인 계정 NETWORK SERVICE 또는 LOCAL SYSTEM을 사용하도록 SQL Server 서비스를 구성해야 합니다.|오류|중앙 관리 사이트, <br>기본 사이트, <br>보조 사이트|
 |**SQL Server TCP 포트**|SQL Server 인스턴스에 TCP가 사용되고 있고 TCP가 정적 포트를 사용하도록 설정되었는지 확인합니다.|오류|SQL Server|
-|**SQL Server 버전**|지정된 사이트 데이터베이스 서버에 지원되는 버전의 SQL Server가 설치되어 있는지 확인합니다. 자세한 내용은 [System Center Configuration Manager에 대한 SQL Server 버전 지원](../../../../core/plan-design/configs/support-for-sql-server-versions.md)을 참조하세요.|오류|SQL Server|
+|**SQL Server 버전**|지정된 사이트 데이터베이스 서버에 지원되는 버전의 SQL Server가 설치되어 있는지 확인합니다. 자세한 내용은 [SQL Server 버전에 대한 지원](/sccm/core/plan-design/configs/support-for-sql-server-versions)을 참조하세요.|오류|SQL Server|
 |**업그레이드할 수 없는 사이트 시스템의 운영 체제 버전**|업그레이드하는 동안 이 규칙은 배포 지점이 아닌 사이트 시스템 역할이 Windows Server 2008 이전 버전을 실행하는 컴퓨터에 설치되어 있는지 확인합니다.<br><br>**참고**: Configuration Manager에 Intune을 통합할 때 이 검사가 Azure에 설치된 사이트 시스템 역할 또는 Microsoft Intune에서 사용하는 클라우드 저장소의 상태를 확인할 수 없기 때문에 이러한 역할에 대한 경고를 가양성으로 무시할 수 있습니다.|경고|기본 사이트, <br>보조 사이트|
 |**확장된 기본 사이트에서 지원되지 않는 사이트 시스템 역할 'Asset Intelligence 동기화 지점'**|확장하는 독립 실행형 기본 사이트에 Asset Intelligence 동기화 지점 사이트 시스템 역할이 설치되지 않았는지 확인합니다.|오류|중앙 관리 사이트|
 |**확장된 기본 사이트에서 지원되지 않는 사이트 시스템 역할 'Endpoint Protection 지점'**|확장하는 독립 실행형 기본 사이트에 Endpoint Protection 지점 사이트 시스템 역할이 설치되지 않았는지 확인합니다.|오류|중앙 관리 사이트|
@@ -96,15 +98,17 @@ ms.locfileid: "32342582"
 |**USMT(사용자 환경 마이그레이션 도구) 설치됨**|Windows 8.1용 Windows ADK(평가 및 배포 키트)의 USMT(사용자 환경 마이그레이션 도구) 구성 요소가 설치되어 있는지 확인합니다.|오류|중앙 관리 사이트, <br>기본 사이트(독립 실행형만 해당)|  
 |**SQL Server 컴퓨터의 FQDN 확인**|SQL Server 컴퓨터에 대해 지정한 FQDN이 올바른지 확인합니다.|오류|SQL Server|
 |**중앙 관리 사이트 버전 확인**|중앙 관리 사이트에 동일한 버전의 Configuration Manager가 있는지 확인합니다.|오류|기본 사이트|
-|**Active Directory에 게시할 수 있는 사이트 서버 권한 확인**|사이트 서버의 컴퓨터 계정에 Active Directory 도메인의 **시스템 관리** 컨테이너에 대한 **모든 권한** 이 있는지 확인합니다. 필요한 권한을 구성하는 옵션에 대한 자세한 내용은 [사이트 게시를 위해 Active Directory 준비](../../../../core/plan-design/network/extend-the-active-directory-schema.md)를 참조하세요.<br><br>**참고**: 수동으로 사용 권한을 확인한 경우 이 경고를 무시해도 됩니다.|경고|중앙 관리 사이트, <br>기본 사이트, <br>보조 사이트|
+|**Active Directory에 게시할 수 있는 사이트 서버 권한 확인**|사이트 서버의 컴퓨터 계정에 Active Directory 도메인의 **시스템 관리** 컨테이너에 대한 **모든 권한** 이 있는지 확인합니다. 필요한 권한을 구성하는 옵션에 대한 자세한 내용은 [사이트 게시를 위해 Active Directory 준비](/sccm/core/plan-design/network/extend-the-active-directory-schema)를 참조하세요.<br><br>**참고**: 수동으로 사용 권한을 확인한 경우 이 경고를 무시해도 됩니다.|경고|중앙 관리 사이트, <br>기본 사이트, <br>보조 사이트|
 |**Windows 배포 도구 설치됨**|Windows 10용 Windows ADK의 Windows 배포 도구 구성 요소가 설치되어 있는지 확인합니다.|오류|사이트 데이터베이스|
 |**Windows 장애 조치(failover) 클러스터**|관리 지점 또는 배포 지점이 있는 컴퓨터가 Windows 클러스터의 일부가 아닌지 확인합니다.|오류|관리 지점<br>배포 지점|
 |**Windows 사전 설치 환경 설치됨**|Windows 10용 Windows ADK의 Windows 사전 설치 환경 구성 요소가 설치되어 있는지 확인합니다.|오류|사이트 데이터베이스|
 |**WinRM(Windows Remote Management) v1.1**|대역 외 관리 콘솔을 실행할 기본 사이트 서버 또는 Configuration Manager 콘솔 컴퓨터에 WinRM 1.1이 설치되어 있는지 확인합니다. WinRM 1.1을 다운로드하는 방법에 대한 자세한 내용은 Microsoft 기술 자료에서 [문서 936059](https://support.microsoft.com/en-us/kb/936059) 를 참조하세요.|경고|기본 사이트, <br>Configuration Manager 콘솔|
-|**사이트 서버의 WSUS**|사이트 서버에 WSUS(Windows Server Update Services) 3.0 SP2(서비스 팩 2)가 설치되어 있는지 확인합니다. 사이트 서버가 아닌 컴퓨터의 소프트웨어 업데이트 지점을 사용할 경우 사이트 서버에 WSUS 관리 콘솔을 설치해야 합니다. WSUS에 대한 자세한 내용은 [Windows Server Update Services](http://go.microsoft.com/fwlink/p/?LinkID=79477)를 참조하세요.|경고|중앙 관리 사이트, <br>기본 사이트|  
+|**사이트 서버의 WSUS**|사이트 서버에 WSUS(Windows Server Update Services) 3.0 SP2(서비스 팩 2)가 설치되어 있는지 확인합니다. 사이트 서버가 아닌 컴퓨터의 소프트웨어 업데이트 지점을 사용할 경우 사이트 서버에 WSUS 관리 콘솔을 설치해야 합니다. WSUS에 대한 자세한 내용은 [Windows Server Update Services](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)를 참조하세요.|경고|중앙 관리 사이트, <br>기본 사이트|  
+|**보류 중인 구성 항목 정책 업데이트**|<!--SCCMDocs-pr issue 2814-->버전 1706 이상에서 업데이트하면 버전 1806부터는 많은 응용 프로그램을 배포해야 하고 그 중 적어도 하나에 승인이 필요한 경우 이 경고가 표시될 수 있습니다. 다음과 같은 두 가지 옵션이 있습니다.<br/><br/> - 경고를 무시하고 업그레이드를 계속합니다. 이 작업은 업데이트하는 동안 정책을 처리할 때 사이트 서버에서 처리 속도가 더 증가합니다. 업데이트 후에 관리 지점에서 추가 프로세서 부하가 나타날 수도 있습니다.<br/><br/> - 요구 사항 또는 특정 OS 요구 사항이 없는 응용 프로그램 중 하나를 수정합니다. 해당 시점에 사이트 서버에 대한 부하의 일부를 미리 처리합니다. **objreplmgr.log**를 검토한 다음, 관리 지점에서 프로세서를 모니터링합니다. 처리를 완료한 후에 사이트를 업데이트합니다. 업데이트 후에 일부가 추가로 처리될 수 있지만 첫 번째 옵션에서 경고를 무시하는 경우보다는 적습니다.|경고|기본 사이트|  
+
+
 
 ##  <a name="BKMK_Requirements"></a> 시스템 요구 사항의 필수 조건 검사  
-다음 표에는 필수 조건 검사가 시스템 요구 사항에 대해 수행하는 필수 조건 검사 목록이 나와 있습니다.  
 
 |수행되는 검사|설명|심각도|사이트 적용 가능성|
 |---|---|---|---|
@@ -115,9 +119,9 @@ ms.locfileid: "32342582"
 |**사이트 서버의 FAT 드라이브**|디스크 드라이브가 FAT 파일 시스템으로 포맷되었는지 확인합니다. 보안 수준을 높이려면 NTFS 파일 시스템으로 포맷된 디스크 드라이브에 사이트 서버 구성 요소를 설치합니다.|경고|기본 사이트|
 |**사이트 서버의 사용 가능한 디스크 공간**|사이트 서버를 설치하려면 사이트 서버 컴퓨터에서 사용 가능한 디스크 공간이 15GB 이상이어야 합니다. 같은 컴퓨터에 SMS 공급자 사이트 시스템 역할을 설치할 경우 추가로 사용 가능한 디스크 공간이 1GB 있어야 합니다.|오류|중앙 관리 사이트, <br>기본 사이트, <br>보조 사이트|
 |**시스템 다시 시작 보류 중**|설치 프로그램을 실행하기 전에 다른 프로그램을 위해 서버를 다시 시작해야 하는지 확인합니다.|오류|중앙 관리 사이트, <br>기본 사이트, <br>보조 사이트, <br>Configuration Manager 콘솔, <br>SMS 공급자, <br>SQL Server, <br>관리 지점, <br>배포 지점|
-|**읽기 전용 도메인 컨트롤러**|RODC(읽기 전용 도메인 컨트롤러)에서는 사이트 데이터베이스 서버 및 보조 사이트 서버가 지원되지 않습니다. 자세한 내용은 Microsoft 기술 자료의 [도메인 컨트롤러에 SQL Server 설치할 때 발생하는 문제](http://go.microsoft.com/fwlink/p/?LinkId=264856)를 참조하세요.|오류|중앙 관리 사이트, <br>기본 사이트, <br>보조 사이트|
-|**스키마 확장**|Active Directory 도메인 서비스 스키마가 확장되었는지 여부 및 확장된 경우 사용된 스키마 확장의 버전은 무엇인지 확인합니다. 사이트 서버를 설치하기 위해 Configuration Manager Active Directory 스키마 확장이 필요하지는 않지만 모든 Configuration Manager 기능을 완전히 활용하려면 스키마를 확장하는 것이 좋습니다. 스키마 확장의 이점에 대한 자세한 내용은 [사이트 게시를 위해 Active Directory 준비](../../../../core/plan-design/network/extend-the-active-directory-schema.md)를 참조하세요.|경고|중앙 관리 사이트, <br>기본 사이트|
+|**읽기 전용 도메인 컨트롤러**|RODC(읽기 전용 도메인 컨트롤러)에서는 사이트 데이터베이스 서버 및 보조 사이트 서버가 지원되지 않습니다. 자세한 내용은 [도메인 컨트롤러에 SQL Server를 설치할 때 발생하는 문제](https://support.microsoft.com/help/2032911)에 대한 Microsoft 지원 아티클을 참조하세요.|오류|중앙 관리 사이트, <br>기본 사이트, <br>보조 사이트|
+|**스키마 확장**|Active Directory 도메인 서비스 스키마가 확장되었는지 여부 및 확장된 경우 사용된 스키마 확장의 버전은 무엇인지 확인합니다. 사이트 서버를 설치하기 위해 Configuration Manager Active Directory 스키마 확장이 필요하지는 않지만 모든 Configuration Manager 기능을 완전히 활용하려면 스키마를 확장하는 것이 좋습니다. 스키마 확장의 이점에 대한 자세한 내용은 [사이트 게시를 위해 Active Directory 준비](/sccm/core/plan-design/network/extend-the-active-directory-schema)를 참조하세요.|경고|중앙 관리 사이트, <br>기본 사이트|
 |**사이트 서버 FQDN 길이**|사이트 서버 컴퓨터의 FQDN 길이를 확인합니다.|오류|중앙 관리 사이트, <br>기본 사이트, <br>보조 사이트|
-|**지원되지 않는 Configuration Manager 콘솔 운영 체제**|지원되는 운영 체제 버전을 실행하는 컴퓨터에 Configuration Manager 콘솔을 설치할 수 있는지 확인합니다. 자세한 내용은 [System Center Configuration Manager 콘솔에 대해 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-consoles)를 참조하세요.|오류|Configuration Manager 콘솔|
-|**설치 프로그램에서 지원되지 않는 사이트 서버 운영 체제 버전**|서버에서 지원되지 않는 운영 체제를 실행하고 있는지 확인합니다. 자세한 내용은 [System Center Configuration Manager 사이트 시스템 서버에 대해 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-site-system-servers.md)를 참조하세요.|오류|중앙 관리 사이트, <br>기본 사이트, <br>보조 사이트, <br>Configuration Manager 콘솔, <br>관리 지점, <br>배포 지점|
+|**지원되지 않는 Configuration Manager 콘솔 운영 체제**|지원되는 OS 버전을 실행하는 컴퓨터에 Configuration Manager 콘솔을 설치할 수 있는지 확인합니다. 자세한 내용은 [Configuration Manager 콘솔에 대해 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-consoles)를 참조하세요.|오류|Configuration Manager 콘솔|
+|**설치 프로그램에서 지원되지 않는 사이트 서버 운영 체제 버전**|서버에서 지원되는 OS를 실행하고 있는지 확인합니다. 자세한 내용은 [Configuration Manager 사이트 시스템 서버에 대해 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-site-system-servers)를 참조하세요.|오류|중앙 관리 사이트, <br>기본 사이트, <br>보조 사이트, <br>Configuration Manager 콘솔, <br>관리 지점, <br>배포 지점|
 |**데이터베이스 일관성 확인**|버전 1602부터 이 검사는 데이터베이스 일관성을 확인합니다.|오류|중앙 관리 사이트, <br>기본 사이트|  
