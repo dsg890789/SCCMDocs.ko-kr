@@ -10,12 +10,12 @@ ms.assetid: 7996b3eb-5259-483b-af40-adae2943d123
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 24cb16ab17475bdd063949c7e3e2961b53341026
-ms.sourcegitcommit: 4b8afbd08ecf8fd54950eeb630caf191d3aa4767
+ms.openlocfilehash: 21833d124ee998f0b943d2620370a2fcff264e28
+ms.sourcegitcommit: 7eebd112a9862bf98359c1914bb0c86affc5dbc0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "34450154"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42591648"
 ---
 # <a name="capabilities-in-technical-preview-1805-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1805의 기능
 
@@ -166,7 +166,7 @@ Windows LEDBAT에 대한 자세한 정보는 [New transport advancements](https:
 ### <a name="prerequisites"></a>필수 구성 요소
 - Windows Server 버전 1709의 배포 지점.  
 
-- Windows 10 버전 1607 이상을 실행하는 클라이언트 장치.
+- 클라이언트의 필수 구성 요소는 없습니다.<!--SCCMDocs issue 699-->  
 
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
