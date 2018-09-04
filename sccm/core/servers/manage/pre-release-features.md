@@ -10,12 +10,12 @@ ms.assetid: 6bce416b-761d-4b23-bd33-5b7c30edb10d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 04d23383d13e981d8a48f88e84444df1ac4915fe
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: e72cdf667f96828fb6730cf3294c8d20ec553130
+ms.sourcegitcommit: 759098de944b8f7d5eedfc2bae2cb9a6ba15276f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39386044"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43289257"
 ---
 # <a name="pre-release-features-in-configuration-manager"></a>Configuration Manager 시험판 기능
 
@@ -55,7 +55,7 @@ ms.locfileid: "39386044"
 > 
 > 독립 실행형 기본 사이트에서 동의를 제공한 다음, 새 중앙 관리 사이트를 설치하여 계층 구조를 확장하는 경우 중앙 관리 사이트에서 다시 동의를 제공해야 합니다.  
 
-시험판 기능을 사용하도록 설정하면 Configuration Manager HMAN(계층 구조 관리자)은 해당 기능을 사용할 수 있게 되기 전에 변경 내용을 처리해야 합니다. 변경 처리는 즉시 이루어지는 경우가 많습니다. HMAN 처리 주기에 따라 완료에 최대 30분이 소요될 수 있습니다. 변경 처리 후에는 기능을 사용하기 전에 먼저 콘솔을 다시 시작합니다.
+시험판 기능을 사용하도록 설정하면 Configuration Manager HMAN(계층 구조 관리자)은 해당 기능을 사용할 수 있게 되기 전에 변경 내용을 처리해야 합니다. 변경 처리는 즉시 처리되는 경우가 많습니다. HMAN 처리 주기에 따라 완료에 최대 30분이 소요될 수 있습니다. 변경 처리 후에는 기능을 사용하기 전에 먼저 콘솔을 다시 시작합니다.
 
 
 
@@ -76,8 +76,8 @@ ms.locfileid: "39386044"
 | 기능          | 시험판으로 추가됨 | 전체 기능으로 추가됨 |  
 |------------------|----------------------|-------------------------|
 | 향상된 HTTP 사이트 시스템<!--1356889,1358228--> |버전 1806|![아직 추가되지 않음](media/red_x.png)|
-| 공동 관리하는 장치용 모바일 앱<!--1357892-->|[버전 1806](/sccm/core/clients/manage/co-management-switch-workloads#workloads-able-to-be-transitioned-to-intune)|![아직 추가되지 않음](media/red_x.png)|
-| Package Conversion Manager<!--1357861-->|버전 1806|![아직 추가되지 않음](media/red_x.png)|
+| 공동 관리하는 장치용 모바일 앱<!--1357892-->|[1806 버전](/sccm/core/clients/manage/co-management-switch-workloads#workloads-able-to-be-transitioned-to-intune)|![아직 추가되지 않음](media/red_x.png)|
+| Package Conversion Manager<!--1357861-->|[1806 버전](/sccm/apps/pcm/package-conversion-manager)|![아직 추가되지 않음](media/red_x.png)|
 | Cisco AnyConnect 4.0.07x 및 이후에 iOS에 대한 지원<!--1357393-->|[1802 버전](/sccm/mdm/deploy-use/create-vpn-profiles)| [업데이트 4163547 적용 1802 버전](/sccm/mdm/deploy-use/create-vpn-profiles) |
 | 단계별 배포<!--1356837-->|[1802 버전](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence)|[1806 버전](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence)|
 | 작업 순서 실행 단계 <!-- 1261338 --> |  [버전 1710](/sccm/osd/understand/task-sequence-steps#child-task-sequence) |[1802 버전](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#add-child-task-sequences-to-a-task-sequence)|
