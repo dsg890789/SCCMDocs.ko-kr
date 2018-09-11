@@ -3,18 +3,19 @@ title: 사용자 마이그레이션을 위한 Intune 준비
 titleSuffix: Configuration Manager
 description: 하이브리드 MDM으로부터 사용자를 마이그레이션하기 위해 Azure에서 Intune을 준비하는 방법을 알아봅니다.
 author: aczechowski
+ms.author: aaroncz
 manager: dougeby
 ms.date: 12/05/2017
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: db97ae9e-34f4-4e10-a282-cd211f612bb4
-ms.openlocfilehash: 0d71abbe33def6e12e75c2042e48f3d7ddcfe5c6
-ms.sourcegitcommit: 06d490d526070e17d77e86bc6c200899ded911cb
+ms.openlocfilehash: 7f4302071f9cd53576bb2b2922730ab9a0e897ff
+ms.sourcegitcommit: 316899b08f2ef372993909e08e069f7edfed1d33
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38967150"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44111062"
 ---
 # <a name="prepare-intune-for-user-migration"></a>사용자 마이그레이션을 위한 Intune 준비 
 

@@ -5,7 +5,7 @@
 - Windows 10(Home, Pro, Education 및 Enterprise 버전)을 실행하는 PC
 - Windows 10 IoT Enterprise(x86, x64)를 실행하는 장치
 - Windows 10 IoT Mobile Enterprise를 실행하는 장치
-- Windows Holographic 및 Windows Holographic Enterprise
+- Windows Holographic for Business
 - Mac OS X 10.9 이상
 - Windows Phone 8.1, Windows 8.1 및 Windows 8.1 RT를 실행하는 PC는 계속 유지됩니다(Windows Embedded 8.1 Handheld는 지원되지 않음).
 

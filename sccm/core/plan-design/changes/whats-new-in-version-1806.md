@@ -2,7 +2,7 @@
 title: 버전 1806의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager 최신 라인인 1806 버전에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
-ms.date: 07/31/2018
+ms.date: 08/29/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 0249dbd3-1e85-4d05-a9e5-420fbe44d850
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 1c6ae28a50f3145420895b295ebe730fb7b2a9a7
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 89742711f17997487fec403d51c89a42ceff34ec
+ms.sourcegitcommit: 52ec30245ba559596d2f88a3eff70c467b4a056f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39386064"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43381043"
 ---
 # <a name="whats-new-in-version-1806-of-configuration-manager-current-branch"></a>Configuration Manager 1806 버전의 새로운 기능
 
@@ -23,12 +23,12 @@ ms.locfileid: "39386064"
 
 Configuration Manager의 현재 분기에 대한 1806 업데이트는 콘솔 내 업데이트로 사용할 수 있습니다. 1706, 1710 또는 1802 버전을 실행하는 사이트에서 이 업데이트를 적용합니다. <!-- baseline only statement: When installing a new site, it's also available as a baseline version.-->
 
+이 업데이트를 설치하기 위한 최신 검사 목록을 항상 검토하세요. 자세한 내용은 [업데이트 1806을 설치하기 위한 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1806)을 참조하세요. 사이트를 업데이트한 후 [업데이트 후 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1806#post-update-checklist)도 검토하세요.
+
 > [!Important]  
 > 이 문서는 현재 이 버전의 모든 중요한 기능을 나열합니다. 그러나 일부 섹션은 새 기능에 대한 추가 정보가 있는 업데이트된 콘텐츠에 아직 연결되지 않았습니다. 이 페이지에서 정기적으로 업데이트를 확인하세요. 변경 내용은 ***[업데이트]*** 태그로 표시됩니다. 이 표시는 콘텐츠가 최종 버전이 되면 제거될 것입니다.  
 
-<!--
-Aside from new features, this release also includes additional changes such as bug fixes. For more information, see [Summary of changes in System Center Configuration Manager current branch, version 1806](https://support.microsoft.com/help/4101375).
--->
+새 기능 외에 이 릴리스에는 버그 수정과 같은 추가 변경 사항도 포함되어 있습니다. 자세한 내용은 [1806 버전, System Center Configuration Manager 현재 분기의 변경 내용 요약](https://support.microsoft.com/help/4459701)을 참조하세요.
 
 <!--
 The following additional updates to this release are also now available:
@@ -40,10 +40,13 @@ The following additional updates to this release are also now available:
 
 
 
-<!--
-## Deprecated features and operating systems
-Learn about support changes before they are implemented in [removed and deprecated items](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated).
+## <a name="deprecated-features-and-operating-systems"></a>사용되지 않는 기능 및 운영 체제
 
+[제거되는 기능과 사용되지 않는 항목](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated)에서 구현되기 전의 지원 변경 내용을 알아보세요.
+
+***[업데이트됨]*** 2018년 8월 14일부터 하이브리드 모바일 장치 관리 기능이 사용되지 않습니다. 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->  
+
+<!--
 Version 1806 drops support for the following products:
 -->
 
@@ -84,7 +87,10 @@ Version 1806 drops support for the following products:
 
 
 ### <a name="exclude-active-directory-containers-from-discovery"></a>검색에서 Active Directory 컨테이너 제외
-<!--1358143--> 검색되는 개체 수를 줄이기 위해 이제 Active Directory 시스템 검색에서 특정 컨테이너를 제외합니다. 
+<!--1358143-->
+ ***[업데이트됨]*** 검색되는 개체 수를 줄이기 위해 Active Directory 시스템 검색에서 특정 컨테이너를 제외합니다. 
+
+자세한 내용은 [Active Directory 시스템 검색 구성](/sccm/core/servers/deploy/configure/configure-discovery-methods#bkmk_config-adsd)을 참조하세요.
 
 
 
@@ -125,11 +131,14 @@ Version 1806 drops support for the following products:
 
 
 ### <a name="boundary-group-options-for-peer-downloads"></a>피어 다운로드를 위한 경계 그룹 옵션
-<!--1356193--> 이제 경계 그룹에는 사용자 환경에서 콘텐츠 배포를 보다 세밀하게 제어할 수 있는 추가 설정이 포함됩니다. 이 릴리스에서는 다음 옵션을 추가합니다.  
+<!--1356193-->
+ ***[업데이트됨]*** 이제 경계 그룹에는 사용자 환경에서 콘텐츠 배포를 보다 세밀하게 제어할 수 있는 추가 설정이 포함됩니다. 이 릴리스에서는 다음 옵션을 추가합니다.  
 
-- **이 경계 그룹에서 피어 다운로드 허용**: 이 설정은 기본적으로 사용하도록 설정되어 있습니다. 관리 지점은 피어 원본을 포함하는 콘텐츠 위치 목록을 클라이언트에 제공합니다. 이 설정은 배달 최적화 그룹에 대한 ID 적용에도 영향을 미칩니다.  
+- **이 경계 그룹에서 피어 다운로드 허용**: 관리 지점은 피어 원본을 포함하는 콘텐츠 위치 목록을 클라이언트에 제공합니다. 이 설정은 배달 최적화 그룹에 대한 ID 적용에도 영향을 미칩니다.  
 
-- **피어 다운로드 중에는 같은 서브넷 내의 피어만 사용**: 이 설정은 위의 설정에 따라 달라집니다. 이 옵션을 사용하도록 설정하면 관리 지점은 클라이언트와 동일한 서브넷에 있는 콘텐츠 위치 목록 피어 원본에만 포함됩니다.  
+- **피어 다운로드 중에는 같은 서브넷 내의 피어만 사용**: 관리 지점은 클라이언트와 동일한 서브넷에 있는 콘텐츠 위치 목록 피어 원본에만 포함됩니다.  
+
+자세한 내용은 [피어 다운로드를 위한 경계 그룹 옵션](/sccm/core/servers/deploy/configure/boundary-groups#bkmk_bgoptions)을 참조하세요.
 
 
 
@@ -288,17 +297,10 @@ Version 1806 drops support for the following products:
 
 
 ### <a name="package-conversion-manager"></a>Package Conversion Manager 
-<!--1357861--> Package Conversion Manager는 레거시 Configuration Manager 2007 패키지를 Configuration Manager 현재 분기 응용 프로그램으로 변환할 수 있는 통합 도구입니다. 이와 같은 변환을 수행한 후에는 종속성, 요구 사항 규칙, 사용자 장치 선호도 등의 응용 프로그램 기능을 사용할 수 있습니다.
+<!--1357861-->
+ ***[업데이트됨]*** Package Conversion Manager는 레거시 패키지를 Configuration Manager 현재 분기 응용 프로그램으로 변환할 수 있는 통합 도구입니다. 이와 같은 변환을 수행한 후에는 종속성, 요구 사항 규칙, 사용자 장치 선호도 등의 응용 프로그램 기능을 사용할 수 있습니다.
 
-Configuration Manager 콘솔의 **패키지** 노드에서 다음 작업을 시작합니다.  
-
-   - **패키지 분석**: 패키지를 분석하여 변환 프로세스를 시작합니다.  
-
-   - **패키지 변환**: 이 작업으로 일부 패키지를 응용 프로그램으로 쉽게 변환할 수 있습니다.  
-
-   - **수정 및 변환**: 일부 패키지는 응용 프로그램으로 변환되기 전에 문제를 수정할 것을 요구합니다.  
-
-그런 다음, **모니터링** 작업 영역의 **패키지 변환 상태** 대시보드로 이동합니다. 이 새 대시보드는 사이트에 패키지의 전반적인 분석 및 변환 상태를 표시합니다. 이것은 [시험판 기능](/sccm/core/servers/manage/pre-release-features)입니다.
+자세한 내용은 [Package Conversion Manager](/sccm/apps/pcm/package-conversion-manager)를 참조하세요.
 
 
 
@@ -348,16 +350,36 @@ Configuration Manager 콘솔의 **패키지** 노드에서 다음 작업을 시�
 ### <a name="other-improvements-to-os-deployment"></a>기타 향상된 OS 배포
 
 #### <a name="mask-sensitive-data-stored-in-task-sequence-variables"></a>작업 순서 변수에 저장된 중요한 데이터 마스킹
-<!--1358330-->[작업 순서 변수 설정](/sccm/osd/understand/task-sequence-steps#BKMK_SetTaskSequenceVariable) 단계에서 새 옵션인 **이 값 표시 안 함**을 선택합니다. 예를 들어 암호를 지정하는 경우입니다. 
+ <!--1358330--> ***[업데이트됨]*** **작업 순서 변수 설정** 단계에서 새 옵션인 **이 값 표시 안 함**을 선택합니다. 
+
+ 자세한 내용은 [작업 순서 변수 설정](/sccm/osd/understand/task-sequence-steps#BKMK_SetTaskSequenceVariable)을 참조하세요. 
 
 #### <a name="mask-program-name-during-run-command-step-of-a-task-sequence"></a>작업 순서의 명령 실행 단계에서 프로그램 이름 마스크
-<!--1358493--> 잠재적으로 중요한 데이터가 표시되거나 기록되지 않도록 하려면 작업 순서 변수 **OSDDoNotLogCommand**를 `TRUE`로 설정합니다. 이 변수는 [명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 작업 순서 단계 중 smsts.log에서 프로그램 이름을 마스크합니다.   
+ <!--1358493--> ***[업데이트됨]*** 잠재적으로 중요한 데이터가 표시되거나 기록되지 않도록 하려면 작업 순서 변수 **OSDDoNotLogCommand**를 구성합니다.  
+
+ 자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables#OSDDoNotLogCommand)(작업 순서 변수)를 참조하세요. 
 
 #### <a name="task-sequence-variable-for-dism-parameters-when-installing-drivers"></a>드라이버를 설치할 때 DISM 매개 변수에 대한 작업 순서 변수
-<!--516679--> DISM에 대한 추가 명령줄 매개 변수를 지정하려면 새 작업 순서 변수 **OSDInstallDriversAdditionalOptions**를 사용합니다. [드라이버 패키지 적용](/sccm/osd/understand/task-sequence-steps#BKMK_ApplyDriverPackage) 단계 설정을 **recurse 옵션을 사용하여 DISM 실행을 통해 드라이버 패키지 설치**로 활성화합니다. 
+ <!--516679/2840016--> ***[업데이트됨]*** DISM에 대한 추가 명령줄 매개 변수를 지정하려면 새 작업 순서 변수 **OSDInstallDriversAdditionalOptions**를 사용합니다. 
+
+ 자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables#OSDInstallDriversAdditionalOptions)(작업 순서 변수)를 참조하세요. 
 
 #### <a name="option-to-use-full-disk-encryption"></a>전체 디스크 암호화 사용 옵션
-<!--SCCMDocs-pr issue 2671--> [BitLocker 사용](/sccm/osd/understand/task-sequence-steps#BKMK_EnableBitLocker) 및 [BitLocker 사전 프로비전](/sccm/osd/understand/task-sequence-steps#BKMK_PreProvisionBitLocker) 단계에 모두 **전체 디스크 암호화 사용** 옵션이 포함되었습니다. 기본적으로 이러한 단계는 드라이브에서 사용된 공간을 암호화합니다. 이 기본 동작은 더 빠르고 효율적기 때문에 권장됩니다. 조직에 설치 중에 전체 드라이브 암호화가 필요한 경우 이 옵션을 사용하도록 설정합니다. Windows 설치는 전체 드라이브가 암호화될 때까지 대기하는데, 특히 드라이브가 크면 긴 시간이 소요됩니다. 
+ <!--SCCMDocs-pr issue 2671--> ***[업데이트됨]*** **BitLocker 사용** 및 **BitLocker 사전 프로비전** 단계 둘 다에 **전체 디스크 암호화 사용** 옵션이 포함되었습니다. 기본적으로 이러한 단계는 드라이브에서 사용된 공간을 암호화합니다. 이 기본 동작은 더 빠르고 효율적기 때문에 권장됩니다. 
+
+ 자세한 내용은 [BitLocker 사용](/sccm/osd/understand/task-sequence-steps#BKMK_EnableBitLocker) 및 [BitLocker 사전 프로비전](/sccm/osd/understand/task-sequence-steps#BKMK_PreProvisionBitLocker)을 참조하세요. 
+
+#### <a name="client-provisioning-mode-isnt-enabled-with-windows-10-upgrade-compatibility-scan"></a>Windows 10 업그레이드 호환성 검사에서 클라이언트 프로비저닝 모드를 사용하도록 설정하지 않음
+ <!--SCCMDocs-pr issue 2812--> ***[업데이트됨]*** 이제 **업그레이드를 시작하지 않고 Windows 설치 프로그램 호환성 검사 수행** 옵션을 사용하는 경우 **운영 체제 업그레이드** 작업 순서 단계에서 Configuration Manager 클라이언트를 프로비저닝 모드로 지정하지 않습니다.
+
+ 자세한 내용은 [운영 체제 업그레이드](/sccm/osd/understand/task-sequence-steps#BKMK_UpgradeOS)를 참조하세요.
+
+#### <a name="revised-documentation-for-task-sequence-variables"></a>작업 순서 변수에 대한 설명서 수정
+ ***[업데이트됨]*** 작업 순서 변수 이해를 위한 다음 두 개의 새 문서가 제공됩니다.  
+
+ - [작업 순서 변수를 사용하는 방법](/sccm/osd/understand/using-task-sequence-variables)은 다양한 변수 형식, 변수를 설정하는 방법 및 변수에 액세스하는 방법을 설명하는 새 문서입니다.  
+
+ - [작업 순서 변수](/sccm/osd/understand/task-sequence-variables)는 모든 사용 가능한 작업 순서 변수에 대한 참조입니다. 이 문서는 기본 제공 변수와 작업 변수가 서로 분리되어 있던 이전 문서가 결합된 것입니다. 
 
 
 
@@ -461,7 +483,7 @@ Configuration Manager 콘솔의 **패키지** 노드에서 다음 작업을 시�
 ## <a name="configuration-manager-console"></a>Configuration Manager 콘솔
 
 ### <a name="product-lifecycle-dashboard"></a>제품 수명 주기 대시보드
-<!--1319632--> 제품 수명 주기 대시보드에는 Configuration Manager로 관리되는 장치에 설치된 Microsoft 제품에 대한 Microsoft 수명 주기 정책의 상태가 표시됩니다. 또한 사용자 환경의 Microsoft 제품, 지원 가능성 상태 및 지원 종료 날짜에 대한 정보도 제공합니다. 대시보드를 사용하여 각 제품에 대한 지원 가능성을 파악합니다. 이 정보는 현재 지원 종료에 도달하기 전에 사용하는 Microsoft 제품을 업데이트할 시기를 계획하는 데 도움이 됩니다.   
+<!--1319632--> 제품 수명 주기 대시보드에는 Configuration Manager로 관리되는 장치에 설치된 Microsoft 제품에 대한 Microsoft 수명 주기 정책의 상태가 표시됩니다. 또한 사용자 환경의 Microsoft 제품, 지원 가능성 상태 및 지원 종료 날짜에 대한 정보도 제공합니다. 대시보드를 사용하여 각 제품에 대한 지원 가용성을 파악합니다. 이 정보는 현재 지원 종료에 도달하기 전에 사용하는 Microsoft 제품을 업데이트할 시기를 계획하는 데 도움이 됩니다.   
 
 자세한 내용은 [제품 수명 주기 대시보드](/sccm/core/clients/manage/asset-intelligence/product-lifecycle-dashboard)를 참조하세요.
 
@@ -509,7 +531,7 @@ Configuration Manager 콘솔의 **패키지** 노드에서 다음 작업을 시�
 
 ## <a name="next-steps"></a>다음 단계
 
-이 버전을 설치할 준비가 되었으면 [Configuration Manager 업데이트 설치](/sccm/core/servers/manage/updates)를 참조하세요.
+이 버전을 설치할 준비가 되었으면 [Configuration Manager에 대한 업데이트 설치](/sccm/core/servers/manage/updates) 및 [업데이트 1806을 설치하기 위한 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1806)을 참조하세요.
 
 > [!TIP]  
 > 새 사이트를 설치하려면 기준 버전의 Configuration Manager를 사용합니다.  
@@ -519,3 +541,5 @@ Configuration Manager 콘솔의 **패키지** 노드에서 다음 작업을 시�
 >   - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)  
 
 알려진 중요한 문제는 [릴리스 정보](/sccm/core/servers/deploy/install/release-notes)를 참조하세요.
+
+사이트를 업데이트한 후 [업데이트 후 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1806#post-update-checklist)도 검토하세요.

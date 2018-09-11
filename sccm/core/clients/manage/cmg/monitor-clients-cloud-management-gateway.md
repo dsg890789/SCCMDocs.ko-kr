@@ -5,16 +5,17 @@ description: CMG(클라우드 관리 게이트웨이)를 통해 클라이언트 
 ms.date: 03/22/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-client
+ms.topic: conceptual
 ms.assetid: 15f72f80-9850-40ce-9c3a-443ba04b6a03
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a4ecbeb2484297160797b7b5632c86cee4ff1122
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 820d8a4241a6d250ce652f95ea47abe015600d4a
+ms.sourcegitcommit: 316899b08f2ef372993909e08e069f7edfed1d33
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32332477"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44111130"
 ---
 # <a name="monitor-cloud-management-gateway-in-configuration-manager"></a>Configuration Manager에서 클라우드 관리 게이트웨이 모니터링
 

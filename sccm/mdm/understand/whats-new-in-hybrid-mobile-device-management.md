@@ -2,7 +2,7 @@
 title: 하이브리드 MDM의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 장치 관리 기능에 대해 알아봅니다.
-ms.date: 08/01/2018
+ms.date: 08/29/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -10,18 +10,22 @@ ms.assetid: 7b127cee-61f1-4681-9760-caebed36ddf5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: cdb5720778366cea951476ad9b314b69bdd0c492
-ms.sourcegitcommit: 6e0e5b4b7779ce03e2b56b3b5f68f4ace1acedd8
+ms.openlocfilehash: 87a40300cfe13ec097d155093fbb7b70af3b459c
+ms.sourcegitcommit: 8661f10596f565ca2b7bdb5951388b44b3b622ee
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39467609"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43193921"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 장치 관리의 새로운 기능
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 이 문서에서는 System Center Configuration Manager 및 Intune을 포함하는 하이브리드 배포에 사용할 수 있는 새 MDM(모바일 장치 관리) 기능에 대한 세부 정보를 제공합니다.     
+
+> [!Important]  
+> 2018년 8월 14일부터 하이브리드 모바일 장치 관리 [기능은 사용되지 않습니다](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures). 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->  
+
 
 > [!Note]    
 > Azure의 Intune은 Microsoft에서 권장하는 MDM 솔루션입니다.     
@@ -42,10 +46,32 @@ ms.locfileid: "39467609"
 |**Configuration Manager(현재 분기)의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 버전의 Configuration Manager(현재 분기)에서만 사용할 수 있습니다. 하이브리드 배포에 이전 버전의 Configuration Manager를 사용하는 경우 기능 설명에 지정된 Configuration Manager(현재 분기) 버전으로 업그레이드합니다. 자세한 내용은 [Configuration Manager로 업그레이드](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager)를 참조하세요.|
 
 
+## <a name="august-2018"></a>2018년 8월
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+### <a name="new-user-experience-update-for-the-company-portal-website"></a>회사 포털 웹 사이트의 새로운 사용자 환경 업데이트
+<!--2000968--> 고객 피드백을 바탕으로 회사 포털 웹 사이트에 새 기능이 추가되었습니다. Android, iOS 및 Windows 장치의 기존 기능과 유용성이 크게 향상될 것입니다. 사이트의 여러 영역에 새롭고 현대화된 반응형 디자인이 적용되었습니다. 이들 영역에는 장치 세부 정보, 피드백 및 지원, 장치 개요가 들어 있습니다. 다음과 같은 개선 사항도 볼 수 있습니다.
+
+- 모든 장치 플랫폼에서 효율적인 워크플로
+- 장치 식별 및 등록 흐름 개선
+- 오류 메시지의 효율성 향상
+- 전문 기술 용어는 줄이고 친근한 언어 사용
+- 앱에 대한 직접 링크를 공유하는 기능
+- 대규모 앱 카탈로그의 성능 개선
+- 모든 사용자의 접근성 향상
+
+
 
 ## <a name="july-2018"></a>2018년 7월
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+#### <a name="updated-intune-app-sdk-for-android-is-now-available"></a>업데이트된 Android용 Intune 앱 SDK 사용 가능
+<!--2744271--> Android 9 Pie 릴리스를 지원하는 업데이트된 버전의 Android용 Intune 앱 SDK를 사용할 수 있습니다. 앱 개발자이며 Android용 Intune SDK를 사용하는 경우 업데이트된 버전의 Intune 앱 SDK를 설치하세요. 이 업데이트를 통해 Android 앱의 Intune 기능이 Android 9 Pie 장치에서도 예상대로 작동하도록 할 수 있습니다. 이 버전의 Intune 앱 SDK에서는 SDK 업데이트를 수행하는 기본 제공 플러그 인을 제공합니다. 통합된 기존 코드를 다시 쓸 필요가 없습니다. 자세한 내용은 [Intune SDK for Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)(Android용 Intune SDK)를 참조하세요. 
+
+Intune의 이전 배지 스타일을 사용하고 있는 경우 서류 가방 아이콘을 사용하도록 전환하세요. 브랜딩에 대한 자세한 내용은 [Intune App Badging System](https://github.com/msintuneappsdk/intune-app-partner-badge)(Intune 앱 배지 시스템)을 참조하세요.
+
 
 #### <a name="support-for-security-enhancement-in-intune-service"></a>Intune 서비스의 보안 강화 지원
 <!--2520152--> 이제 모든 할당된 준수 정책이 없는 장치가 하이브리드에서 준수되지 않음을 지정할 수 있습니다. Azure Portal의 Intune에서 이 설정을 구성합니다. 이 기능을 사용하여 내부 리소스를 보호하는 것이 좋습니다.
@@ -433,86 +459,11 @@ Windows 10 버전 1607 이상의 최종 사용자에게 Microsoft Store에 있�
 
 
 
-## <a name="july-2017"></a>2017년 7월
-
-### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
-
-- **Android 및 Windows Phone에 대한 지원 종료 알림이 추가됨**    
-    Android 및 Windows Phone 버전에 대한 지원 종료 알림이 새로 추가되었습니다. 자세한 내용은 [알림](#notices)을 참조하세요.
-
-
-### <a name="new-in-configuration-manager-current-branch"></a>Configuration Manager(현재 분기)의 새로운 기능
-
-다음 기능은 이전에 Configuration Manager Technical Preview 릴리스에서 사용할 수 있었으며, 이제 Intune 및 Configuration Manager(현재 분기) 버전 1706을 포함하는 하이브리드 배포에서 사용할 수 있습니다.
-
-- [Entrust 인증 기관에 대한 Entrust 지원](/sccm/core/get-started/capabilities-in-technical-preview-1706#support-for-entrust-certification-authorities)
-- [새 모바일 응용 프로그램 관리 정책 설정](/sccm/core/plan-design/changes/whats-new-in-version-1706#new-mobile-application-management-policy-settings)
-- [Android for Work 공유 구성에 대한 업데이트](/sccm/core/plan-design/changes/whats-new-in-version-1706#updates-to-android-for-work-sharing-configuration)
-- [새 장치 준수 정책 규칙](/sccm/core/plan-design/changes/whats-new-in-version-1706#new-device-compliance-policy-rules)
-- [Configuration Manager 클라이언트에서 관리되지 않는 Windows 10 장치에 대한 새 구성 설정](/sccm/core/plan-design/changes/whats-new-in-version-1706#new-configuration-settings-for-windows-10-devices-that-are-not-managed-with-the-configuration-manager-client)
-- [macOS VPN 프로필에 대한 Cisco(IPsec) 지원](/sccm/core/get-started/capabilities-in-technical-preview-1706#cisco-ipsec-support-for-macos-vpn-profiles)
-- [Android 및 iOS 등록 제한](/sccm/core/plan-design/changes/whats-new-in-version-1706#android-and-ios-enrollment-restrictions) 
-
-
-
-## <a name="june-2017"></a>2017년 6월
-
-### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
-
-- **MDM 기관 변경**    
-  Configuration Manager 버전 1610부터 Microsoft 지원에 문의하지 않고 MDM 기관을 변경할 수 있습니다. 또한 기존 관리 장치를 등록 취소했다가 다시 등록할 필요가 없습니다. 자세한 내용은 [MDM 기관 변경](/sccm/mdm/deploy-use/change-mdm-authority)을 참조하세요.
-
-- **Managed Browser 및 앱 프록시 통합**    
-  Intune Managed Browser는 이제 Azure AD 응용 프로그램 프록시 서비스와 통합되어 사용자가 원격으로 작업하는 동안에도 내부 웹 사이트에 액세스하도록 할 수 있습니다. 브라우저의 사용자는 평소와 같이 사이트 URL을 입력하면 관리되는 브라우저에서 응용 프로그램 프록시 웹 게이트웨이를 통해 요청을 라우팅합니다. 자세한 내용은 [관리되는 브라우저 정책을 사용하여 인터넷 액세스 관리](https://docs.microsoft.com/intune/app-configuration-managed-browser)를 참조하세요.
-
-- **Android용 회사 포털 앱에서 앱 보호 정책에 대해 새로운 최종 사용자 환경 제공**  
-  고객의 의견에 따라, **회사 콘텐츠 액세스** 단추를 표시하도록 Android용 회사 포털 앱을 수정하고 있습니다. 이러한 작업은 최종 사용자가 Intune 모바일 응용 프로그램 관리의 기능인 앱 보호 정책을 지원하는 앱에만 액세스하면 될 경우 불필요하게 등록 프로세스를 거치지 않도록 하기 위한 것입니다. [앱 UI의 새로운 기능](https://docs.microsoft.com/intune/whats-new-app-ui) 페이지에서 이러한 변경 내용을 확인할 수 있습니다.
-
-- **회사 포털을 쉽게 제거하기 위한 새 메뉴 작업**  
-  사용자의 의견에 따라 Android용 회사 포털 앱에는 장치에서 회사 포털 제거를 시작하기 위한 새 메뉴 작업이 추가되었습니다. 이 작업은 사용자가 장치에서 앱을 제거할 수 있도록 Intune 관리에서 장치를 제거합니다. 이러한 변경 내용은 [앱 UI의 새로운 기능](https://docs.microsoft.com/intune/whats-new-app-ui) 페이지 및 [Android 최종 사용자 설명서](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android)에서 확인할 수 있습니다.
-
-- **Windows 10 크리에이터스 업데이트와의 앱 동기화 개선**  
-  이제 Windows 10용 회사 포털 앱에서는 Windows 10 크리에이터스 업데이트(버전 1703)와의 장치에 대한 앱 설치 요청 동기화가 자동으로 시작됩니다. 이 동작으로 “동기화 보류 중” 상태일 때 앱 설치가 중단되는 문제가 줄어듭니다. 사용자는 앱 내에서 수동으로 동기화를 시작할 수도 있습니다. [앱 UI의 새로운 기능](https://docs.microsoft.com/intune/whats-new-app-ui) 페이지에서 이러한 변경 내용을 확인할 수 있습니다.
-
-- **Windows 10 회사 포털에 대한 새로운 단계별 환경**  
-  Windows 10용 회사 포털 앱에 식별되거나 등록되지 않은 장치에 대한 단계별 Intune 연습 환경이 포함됩니다. 이 새로운 환경은 Azure Active Directory에 등록(조건부 액세스 기능에 필요)하고 MDM 등록(장치 관리 기능에 필요)을 진행하는 과정을 안내하는 단계별 지침을 제공합니다. 이 단계별 안내 환경은 회사 포털 홈페이지에서 액세스할 수 있습니다. 사용자는 등록을 완료하지 않아도 앱을 계속 사용할 수 있지만 제한된 기능만 사용할 수 있습니다.
-
-  이 업데이트는 Windows 10 1주년 업데이트(빌드 1607) 이상을 실행하는 장치에서만 볼 수 있습니다. [앱 UI의 새로운 기능](https://docs.microsoft.com/intune/whats-new-app-ui) 페이지에서 이러한 변경 내용을 확인할 수 있습니다.
-
-- **iOS용 회사 포털 앱의 앱 타일 기능 개선**  
-  회사 포털에 대해 설정한 브랜딩 색에 맞게 홈페이지의 앱 타일 디자인이 업데이트되었습니다. 자세한 내용은 [앱 UI의 새로운 기능](https://docs.microsoft.com/intune/whats-new-app-ui)을 참조하세요.
-
-- **iOS용 회사 포털 앱에서 계정 선택 기능 사용 가능**  
-  iOS 장치 사용자가 회사 또는 학교 계정을 사용하여 다른 Microsoft 앱에 로그인한 경우, 회사 포털에 로그인하면 새 계정 선택 기능이 표시될 수 있습니다. 자세한 내용은 [앱 UI의 새로운 기능](https://docs.microsoft.com/intune/whats-new-app-ui)을 참조하세요.
-
-### <a name="new-in-configuration-manager-technical-preview-1706"></a>Configuration Manager Technical Preview 1706의 새로운 기능
-
-- **새 Windows 구성 항목 설정**      
-  새 Windows 구성 항목은 암호, 장치, 저장소 및 Microsoft Edge 설정 범주에 사용할 수 있습니다. 자세한 내용은 [새 Windows 구성 항목 설정](/sccm/core/get-started/capabilities-in-technical-preview-1706#new-windows-configuration-item-settings)을 참조하세요.
-  <!-- 1354715 -->
-
-- **새 장치 준수 정책 규칙**   
-  이전에는 Intune 독립 실행형에서만 사용할 수 있었던 준수 정책에 대해 새 옵션을 구성할 수 있습니다. 자세한 내용은 [향상된 장치 준수 정책](/sccm/core/get-started/capabilities-in-technical-preview-1706#new-device-compliance-policy-rules)을 참조하세요.
-
-- **Android 및 iOS 등록 제한**       
-  관리자는 이제 사용자가 하이브리드 환경에서 개인 Android 또는 iOS 장치를 등록할 수 없도록 지정할 수 있습니다. 이렇게 하면 등록된 장치를 미리 선언된 회사 소유 장치 또는 장비 등록 프로그램에 등록된 iOS 장치로만 제한할 수 있습니다. 자세한 내용은 [Android 및 iOS 등록 제한](/sccm/core/get-started/capabilities-in-technical-preview-1706#android-and-ios-enrollment-restrictions)을 참조하세요.
-  <!-- 1290826 -->
-
-- **Entrust 인증 기관에 대한 지원**      
-  이제 Configuration Manager가 Entrust 인증 기관을 지원합니다. 이 지원을 통해 Microsoft Intune에 등록된 장치로 PFX 인증서를 제공할 수 있습니다.    
-  <!-- 1350740 -->
-
-  Configuration Manager에서 인증서 등록 지점 역할을 추가할 때 Entrust를 인증 기관으로 구성할 수 있습니다. PFX 인증서를 발급하는 새 인증서 프로필을 추가할 때는 Microsoft 또는 Entrust 인증 기관을 선택할 수 있습니다.
-
-  **알려진 문제**: 1706 Technical Preview에서는 PFX 인증서가 Microsoft 인증 기관에 대해 발급되지 않습니다. 이 문제는 가져온 PFX 인증서 또는 SCEP 프로필에 영향을 주지 않습니다.
-
-- **macOS VPN 프로필에 대한 Cisco(IPSec) 지원**      
-  연결 유형으로 Cisco(IPsec)를 사용하여 macOS VPN 프로필을 만들 수 있습니다. 자세한 내용은 [VPN 프로필 만들기](/sccm/mdm/deploy-use/create-vpn-profiles#create-vpn-profiles)를 참조하세요.
-  <!-- 1321367 -->
-
-
-
 ## <a name="notices"></a>알림
+
+### <a name="plan-for-change-use-intune-on-azure-now-for-your-mdm-management"></a>변경 플랜: 이제 MDM 관리를 위해 Azure의 Intune 사용 
+<!--1227338--> 1년 전, [Azure의 Intune 공개 미리 보기](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/)를 발표했으며, 6개월 전에는 Intune에 대한 [새 관리자 환경 일반 공급](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/)을 발표했습니다. 2018년 8월 31일부터는 Intune 독립 실행형을 사용하는 고객에 대해 클래식 Silverlight 콘솔에서 MDM(모바일 장치 관리) 기능을 해제합니다. 대신, MDM 요구 사항에 [Azure의 Intune](https://aka.ms/Intune_on_Azure)을 사용합니다. MDM용 클래식 콘솔을 아직 사용 중이라면 사용을 중지하고 Azure의 Intune을 숙지하세요. 이러한 변경으로 최종 사용자에게 어떤 영향이 있지는 않을 것입니다. Intune을 사용하는 클래식 PC 관리는 Silverlight에서 그대로 유지됩니다. 자세한 내용은 [Intune 지원 팀 블로그 게시물](https://aka.ms/Intune_on_Azure_mdm)을 참조하세요.
+
 
 ### <a name="plan-for-change-upcoming-macos-and-intune-password-enforcement-change"></a>변경 계획: 예정된 macOS 및 Intune 암호 강제 변경
 <!--1873216--> 9월 서비스 릴리스에서 Intune은 Apple에서 새로 릴리스한 macOS 버전 10.13 이상을 실행하는 장치에 대한 "다음 인증 시 암호 변경" 설정을 통합할 계획입니다. 이 설정이 도입되기 전에는 MDM 공급자는 장치에서 규정 준수를 준수하도록 암호를 변경한 적이 있는지 확인할 방법이 없었습니다. Intune의 구성 및 규정 준수 정책은 장치에서 암호를 변경한 다음에 규정 준수로 표시되는지 유효성을 검사합니다. macOS 사용자는 해당 암호가 이미 규정을 준수하는 경우라도 이 새로운 Apple 기능을 통합하면 해당 암호를 업데이트하라는 요청을 받게 됩니다.

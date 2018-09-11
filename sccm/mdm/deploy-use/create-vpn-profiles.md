@@ -10,12 +10,12 @@ ms.assetid: 45388103-2410-4c7e-b4cf-73a1bda485fc
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 9409b6cc71ea238755f40baf75e6211c447b547f
-ms.sourcegitcommit: 826e9ec385d6a1c1f3aa86ac202883154e0c1285
+ms.openlocfilehash: fdeb9d258c5c80fdd8d98d61943ace5469837d3d
+ms.sourcegitcommit: aca62bd3d267b1dbea46d4db6f32d797c5f6263c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37116503"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43348021"
 ---
 # <a name="vpn-profiles-on-mobile-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager의 모바일 장치에 대한 VPN 프로필
 
@@ -61,7 +61,7 @@ iOS, Android, Windows Phone 및 Windows 8.1 장치에 프로필을 배포하려�
   
   
 > [!Note]  
-> 하이브리드 MDM의 VPN 프로필에서는 F5 Access 2018이 지원되지 않습니다.  
+> 하이브리드 MDM의 VPN 프로필에서는 iOS용 F5 Access 버전 3.0 이상이 지원되지 않습니다. 이 제품을 F5 Access 2018이라고도 합니다. 이 VPN 클라이언트에 대해 VPN 프로필을 만들어야 하는 경우 Intune 독립 실행형을 사용합니다. 버전 12를 비롯한 이후 버전의 iOS에서는 F5 Access 버전 2.1 이전 버전을 지원하지 않습니다. 자세한 내용은 [Microsoft Intune support team blog](https://aka.ms/iOS12_and_VPN)(Microsoft Intune 지원 팀 블로그)를 참조하세요.
 
 
 ## <a name="windows-10-vpn-features-available-when-using-configuration-manager-with-intune"></a>Intune에서 Configuration Manager를 사용할 때 사용할 수 있는 Windows 10 VPN 기능  
