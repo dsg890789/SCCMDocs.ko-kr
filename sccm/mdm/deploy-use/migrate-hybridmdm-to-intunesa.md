@@ -3,19 +3,18 @@ title: 하이브리드 MDM 자원을 Intune 독립 실행형에 마이그레이�
 titleSuffix: Configuration Manager
 description: Azure에서 하이브리드 MDM 사용자와 장치를 Intune으로 마이그레이션하는 방법을 알아봅니다.
 author: aczechowski
-ms.author: aaroncz
 manager: dougeby
 ms.date: 08/14/2018
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: 1dd696ce-3e46-4dfa-a76d-592fe0f0320e
-ms.openlocfilehash: 09ea3340d8474c69e6e346fc68120b8849159374
-ms.sourcegitcommit: 316899b08f2ef372993909e08e069f7edfed1d33
+ms.openlocfilehash: cff1a695f3f3227f7ec849b34b75762b082c3f31
+ms.sourcegitcommit: 98c3f7848dc9014de05541aefa09f36d49174784
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44111045"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42584436"
 ---
 # <a name="migrate-hybrid-mdm-users-and-devices-to-intune-standalone"></a>하이브리드 MDM 사용자 및 장치를 Intune 독립 실행형으로 마이그레이션
 
