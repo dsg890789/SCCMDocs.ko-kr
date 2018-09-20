@@ -10,12 +10,12 @@ ms.assetid: 1401a35e-4312-4d3b-8ceb-0abbb10d4f05
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 76796cdb56a7106ac709866a9df7c2a08bc6b7bc
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: c314cba909929ee49355eab59dfc813aab7e393e
+ms.sourcegitcommit: a849dab9333ebac799812624d6155f2a96b523ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32337091"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42584477"
 ---
 # <a name="how-to-create-collections-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 컬렉션을 만드는 방법
 
@@ -88,7 +88,7 @@ ms.locfileid: "32337091"
 
 **컬렉션 선택** 대화 상자에서 새 컬렉션에서 제외하려는 컬렉션을 선택하고 **확인**을 선택합니다.  
 
--   **이 컬렉션에 대한 증분 업데이트 사용** – 전체 컬렉션 평가와 별개로 이전 컬렉션 평가에서 새로 추가되거나 변경된 리소스만 주기적으로 검색 및 업데이트하려면 이 옵션을 선택합니다. 증분 업데이트는 10분 간격으로 발생합니다.  
+-   **이 컬렉션에 대한 증분 업데이트 사용** – 전체 컬렉션 평가와 별개로 이전 컬렉션 평가에서 새로 추가되거나 변경된 리소스만 주기적으로 검색 및 업데이트하려면 이 옵션을 선택합니다. 증분 업데이트는 기본적으로 5분 간격으로 발생합니다.  
 
 > [!IMPORTANT]  
 >  다음 클래스를 사용하는 쿼리 규칙으로 구성된 컬렉션은 증분 업데이트를 지원하지 않습니다.  
@@ -160,7 +160,7 @@ ms.locfileid: "32337091"
 **컬렉션 선택** 대화 상자에서 새 컬렉션에서 제외하려는 컬렉션을 선택하고 **확인**을 선택합니다.  
 
 
--   **이 컬렉션에 대한 증분 업데이트 사용** – 전체 컬렉션 평가와 별개로 이전 컬렉션 평가에서 새로 추가되거나 변경된 리소스만 주기적으로 검색 및 업데이트하려면 이 옵션을 선택합니다. 증분 업데이트는 10분 간격으로 발생합니다.  
+-   **이 컬렉션에 대한 증분 업데이트 사용** – 전체 컬렉션 평가와 별개로 이전 컬렉션 평가에서 새로 추가되거나 변경된 리소스만 주기적으로 검색 및 업데이트하려면 이 옵션을 선택합니다. 증분 업데이트는 기본적으로 5분 간격으로 발생합니다.  
 
 > [!IMPORTANT]  
 >  다음 클래스를 사용하는 쿼리 규칙으로 구성된 컬렉션은 증분 업데이트를 지원하지 않습니다.  

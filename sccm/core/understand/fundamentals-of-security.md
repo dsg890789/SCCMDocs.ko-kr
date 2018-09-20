@@ -10,12 +10,12 @@ ms.assetid: 035b7f73-8b78-4ed1-835e-a31f9a5c4a02
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 86191b4ebf1ba03cbc95776186c452f728cc1a2c
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 47b03d8e3f0828efc6f32627fb0298645b5998d1
+ms.sourcegitcommit: 98c3f7848dc9014de05541aefa09f36d49174784
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32338264"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42584516"
 ---
 # <a name="fundamentals-of-security-for-system-center-configuration-manager"></a>System Center Configuration Manager의 보안 기본 사항
 
@@ -52,8 +52,8 @@ Windows 서버 및 네트워크 인프라에서 제공하는 보안 외에도, C
 
  자세한 내용은 [System Center Configuration Manager용 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md)을 참조하세요.  
 
-## <a name="securing-client-endpoints"></a>클라이언트 끝점 보안  
- 사이트 시스템 역할에 대한 클라이언트 통신은 자체 서명된 인증서를 사용하거나 PKI 인증서를 사용하여 보안됩니다. Configuration Manager에서 인터넷에 있고 모바일 장치 클라이언트와 관련된 것으로 검색되는 컴퓨터 클라이언트에는 PKI 인증서를 사용해야 합니다. PKI 인증서에서는 HTTPS를 사용하여 클라이언트 끝점을 보호합니다. 클라이언트에 연결된 사이트 시스템 역할은 HTTPS 또는 HTTP 클라이언트 통신 중 하나에 대해 구성될 수 있습니다. 클라이언트 컴퓨터는 사용할 수 있는 가장 안전한 방법을 사용하여 항상 통신합니다. 또한 HTTP 통신을 허용하는 사이트 시스템 역할인 경우에만 인트라넷에서 덜 안전한 통신 방법인 HTTP를 사용하도록 대체합니다.  
+## <a name="securing-client-endpoints"></a>클라이언트 엔드포인트 보안  
+ 사이트 시스템 역할에 대한 클라이언트 통신은 자체 서명된 인증서를 사용하거나 PKI 인증서를 사용하여 보안됩니다. Configuration Manager에서 인터넷에 있고 모바일 장치 클라이언트와 관련된 것으로 검색되는 컴퓨터 클라이언트에는 PKI 인증서를 사용해야 합니다. PKI 인증서에서는 HTTPS를 사용하여 클라이언트 엔드포인트를 보호합니다. 클라이언트에 연결된 사이트 시스템 역할은 HTTPS 또는 HTTP 클라이언트 통신 중 하나에 대해 구성될 수 있습니다. 클라이언트 컴퓨터는 사용할 수 있는 가장 안전한 방법을 사용하여 항상 통신합니다. 또한 HTTP 통신을 허용하는 사이트 시스템 역할인 경우에만 인트라넷에서 덜 안전한 통신 방법인 HTTP를 사용하도록 대체합니다.  
 
  자세한 내용은 [System Center Configuration Manager에 대한 암호화 제어 기술 참조](../../protect/deploy-use/cryptographic-controls-technical-reference.md)를 참조하세요.  
 

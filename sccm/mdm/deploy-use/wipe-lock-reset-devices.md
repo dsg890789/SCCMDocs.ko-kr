@@ -1,8 +1,8 @@
 ---
 title: 원격 초기화, 잠금 또는 암호 재설정으로 데이터 보호
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager를 사용하여 전체 초기화, 선택적 초기화, 원격 잠금 또는 암호 다시 설정으로 장치 데이터를 보호합니다.
-ms.date: 10/27/2017
+description: Configuration Manager를 사용하여 전체 초기화, 선택적 초기화, 원격 잠금 또는 암호 다시 설정으로 장치 데이터를 보호합니다.
+ms.date: 08/14/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -10,18 +10,18 @@ ms.assetid: 770da7bd-02dd-474a-9604-93ff1ea0c1e4
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 670667c21e85d7e5c174c051b6adbdca3eba55a8
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 21fed8dbba8cc5c8e96218459288b57364fe350e
+ms.sourcegitcommit: 98c3f7848dc9014de05541aefa09f36d49174784
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32353004"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42584829"
 ---
-# <a name="protect-data-with-remote-wipe-lock-or-passcode-reset-by-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 원격 초기화, 잠금 또는 암호 재설정으로 데이터 보호
+# <a name="protect-data-with-remote-wipe-lock-or-passcode-reset-by-using-configuration-manager"></a>Configuration Manager를 사용하여 원격 초기화, 잠금 또는 암호 재설정으로 데이터 보호
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager는 선택적 초기화, 전체 초기화, 원격 잠금 및 암호 재설정 기능을 제공합니다. 모바일 장치에 회사의 중요한 데이터를 저장하고, 많은 회사 리소스에 대한 액세스를 제공할 수 있습니다. 장치를 보호하기 위해 다음 명령을 실행할 수 있습니다.  
+Configuration Manager는 선택적 초기화, 전체 초기화, 원격 잠금 및 암호 재설정 기능을 제공합니다. 모바일 장치에 회사의 중요한 데이터를 저장하고, 많은 회사 리소스에 대한 액세스를 제공할 수 있습니다. 장치를 보호하기 위해 다음 명령을 실행할 수 있습니다.  
 
 - 출하 시 설정으로 장치를 복원하는 전체 초기화  
 
@@ -29,9 +29,15 @@ System Center Configuration Manager는 선택적 초기화, 전체 초기화, �
 
 - 분실한 장치를 보호하는 데 유용한 원격 잠금  
 
-- 장치 암호 재설정.  
+- 장치 암호 재설정  
+
+> [!Important]  
+> 2018년 8월 14일부터 하이브리드 모바일 장치 관리 [기능이 사용되지 않습니다](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures). 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->  
+
+
 
 ## <a name="full-wipe"></a>전체 초기화  
+
 분실한 장치를 보호하거나 장치의 활성 사용을 중지할 경우 장치에 초기화 명령을 실행할 수 있습니다.  
 
 장치에서 출하 시 기본값으로 장치를 복원하는 **전체 초기화** 를 실행합니다. 그러면 모든 회사 및 사용자 데이터와 설정이 제거됩니다. Windows Phone, iOS, Android 및 Windows 10 장치에서 전체 초기화를 수행할 수 있습니다.  
@@ -50,7 +56,10 @@ System Center Configuration Manager는 선택적 초기화, 전체 초기화, �
 
 3. **장치 그룹**에서 **원격 장치 작업**을 선택한 다음 **사용 중지/초기화**를 선택합니다.  
 
+
+
 ## <a name="selective-wipe"></a>선택적 초기화  
+
 장치에서 회사 데이터만 제거하는 **선택적 초기화** 를 실행합니다. 다음 표에서는 플랫폼별로 제거되는 데이터와 선택적 초기화 후 장치에 남아 있는 데이터에 대한 영향을 설명합니다.  
 
 **iOS**  
@@ -136,7 +145,10 @@ Windows 10 Mobile 및 Windows Phone 8.1 장치에서는 다음 설정도 제거�
 
 3. **장치 그룹**에서 **원격 장치 작업**을 선택한 다음 **사용 중지/초기화**를 선택합니다.  
 
+
+
 ## <a name="wiping-efs-enabled-content"></a>EFS 지원 콘텐츠 초기화  
+
 Windows 8.1 및 Windows RT 8.1에서 파일 시스템 암호화(EFS)-암호화된 콘텐츠의 선택적 초기화를 지원합니다. 다음은 EFS 지원 콘텐츠의 선택 초기화에 적용됩니다.  
 
 - Intune 계정과 동일한 인터넷 도메인을 사용하는 EFS로 보호되는 앱 및 데이터만 선택적으로 초기화됩니다. 자세한 내용은 [장치 데이터 관리를 위한 Windows 선택적 초기화](http://technet.microsoft.com/library/dn486874.aspx)를 참조하세요.  
@@ -153,6 +165,7 @@ Windows 8.1 및 Windows RT 8.1에서 파일 시스템 암호화(EFS)-암호화�
 
 - EFS로 암호화된 파일 및 폴더. 자세한 내용은 [파일 시스템 암호화에 대한 모범 사례](http://support.microsoft.com/kb/223316)항목을 참조하세요.  
 
+
 ### <a name="best-practices-for-selective-wipe"></a>선택 초기화에 대한 모범 사례  
 
 - 메일을 성공적으로 초기화하려면 메일 프로필을 iOS 및 Windows Phone 8.1 장치에 설정해야 합니다.  
@@ -163,7 +176,10 @@ Windows 8.1 및 Windows RT 8.1에서 파일 시스템 암호화(EFS)-암호화�
 
 - 계정이 비활성화된 경우에는 1년이 지난 후 Intune에서 계정의 사용이 중지되고 선택 초기화가 수행됩니다.  
 
+
+
 ##  <a name="passcode-reset"></a>암호 재설정  
+
 사용자가 암호를 잊은 경우 장치에서 암호를 제거하거나 장치에 대한 새로운 임시 암호를 적용하여 사용자를 도울 수 있습니다. 아래 표에는 여러 모바일 플랫폼에서 암호 재설정이 작동하는 방법이 정리되어 있습니다.  
 
 | 플랫폼                              | 암호 재설정                                                                               |
@@ -197,7 +213,10 @@ Windows 8.1 및 Windows RT 8.1에서 파일 시스템 암호화(EFS)-암호화�
 
 3. **장치 그룹**에서 **원격 장치 작업**을 선택한 다음 **암호 상태 표시**를 선택합니다.  
 
+
+
 ## <a name="remote-lock"></a>원격 잠금  
+
 사용자가 장치를 잃어버린 경우 장치를 원격으로 잠글 수 있습니다. 아래 표에는 여러 모바일 플랫폼에서 원격 잠금이 작동하는 방법이 정리되어 있습니다.  
 
 |플랫폼|원격 잠금|  
@@ -228,5 +247,8 @@ Windows 8.1 및 Windows RT 8.1에서 파일 시스템 암호화(EFS)-암호화�
 
 3. **장치 그룹**에서 **원격 장치 작업**을 선택한 다음 **원격 잠금 상태 표시**를 선택합니다.  
 
-### <a name="see-also"></a>참고 항목  
+
+
+## <a name="see-also"></a>참고 항목  
+
 [장치 데이터 관리를 위한 Windows 선택적 초기화](http://technet.microsoft.com/library/dn486874.aspx)   

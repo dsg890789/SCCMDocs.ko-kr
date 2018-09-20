@@ -1,8 +1,8 @@
 ---
 title: 하이브리드 MDM 계획
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 및 Microsoft Intune에서 하이브리드 모바일 장치 관리를 계획합니다.
-ms.date: 03/05/2017
+description: Configuration Manager 및 Microsoft Intune에서 하이브리드 모바일 장치 관리를 계획합니다.
+ms.date: 08/14/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -10,25 +10,30 @@ ms.assetid: bb95154b-f63e-4491-896e-41d732c802f8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4aa4dda1333e36b99800f5e1c72b92459195f32e
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 4b43f1e37301159b09fb3a2975904b7092a92b48
+ms.sourcegitcommit: 98c3f7848dc9014de05541aefa09f36d49174784
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32346827"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42584640"
 ---
-# <a name="plan-for-hybrid-mobile-device-management-mdm-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune에서 하이브리드 MDM(모바일 장치 관리) 계획
+# <a name="plan-for-hybrid-mdm-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune에서 하이브리드 MDM 계획
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-하나의 관리 솔루션(모바일 장치 관리 기관)만 사용하여 모바일 장치를 관리할 수 있습니다. 이 설정에 앞서 [Microsoft Intune 독립 실행형과 Configuration Manager의 하이브리드 MDM(모바일 장치 관리) 중에서 선택](../understand/choose-between-standalone-intune-and-hybrid-mobile-device-management.md)해야 합니다.
 
-또한 [Intune 배포 계획, 디자인 및 구현 가이드](https://docs.microsoft.com/intune/plan-design/introduction)에서는 배포 계획 개발, 디자인 만들기, Intune 온보딩 및 프로덕션 롤아웃 수행 프로세스에 대한 자세한 정보를 제공합니다.
+> [!Important]  
+> 2018년 8월 14일부터 하이브리드 모바일 장치 관리 [기능이 사용되지 않습니다](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures). 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->  
 
+
+하나의 관리 솔루션(모바일 장치 관리 기관)만 사용하여 모바일 장치를 관리할 수 있습니다. Azure의 Intune은 Microsoft에서 권장하는 MDM 솔루션입니다. 자세한 내용은 [Intune 배포 계획, 설계 및 구현 가이드](https://docs.microsoft.com/intune/plan-design/introduction)를 참조하세요. 이 가이드에서는 배포 계획 개발, 디자인 만들기, Intune 온보딩 및 프로덕션 출시 프로세스에 대한 정보를 제공합니다.
+
+하이브리드 MDM에 대한 자세한 내용은 다음 문서를 참조하세요.
 - [지원되는 장치 플랫폼](supported-device-platforms-for-hybrid.md)에서는 Microsoft Intune을 사용하여 Configuration Manager에서 지원하는 모바일 장치 플랫폼을 보여 줍니다.
 
 - [장치 등록 방법](device-enrollment-methods.md)에서는 회사 소유 장치와 사용자 소유 장치를 등록하는 방법 및 해당 장치의 지원되는 기능에 대한 정보를 제공합니다.
 
 
 ### <a name="next-steps"></a>다음 단계
+
  [하이브리드 MDM 설정](../deploy-use/setup-hybrid-mdm.md)

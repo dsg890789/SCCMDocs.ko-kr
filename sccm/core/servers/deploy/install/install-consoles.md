@@ -10,12 +10,12 @@ ms.assetid: d39c201f-d364-4e7b-bde4-faa76d747f33
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f17e479ef6b285cdb70960471dced73e83af520c
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: a8d1d0a727f0a4ad4a2bfc25141f7e2982494080
+ms.sourcegitcommit: b596d944e49f3c4912c6ca91915ed1418c17a1a2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32339437"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42584519"
 ---
 # <a name="install-the-system-center-configuration-manager-console"></a>System Center Configuration Manager 콘솔 설치
 
@@ -85,14 +85,14 @@ ms.locfileid: "32339437"
   |/uninstall|Configuration Manager 콘솔을 제거합니다. **/q** 옵션과 함께 사용할 경우 이 옵션을 먼저 지정합니다.|  
   |LangPackDir|언어 파일이 포함된 폴더의 경로를 지정합니다. **설치 다운로더** 를 사용하면 언어 파일을 다운로드할 수 있습니다. 이 옵션을 사용하지 않으면 설치 프로그램은 현재 폴더에서 언어 폴더를 찾습니다. 언어 폴더를 찾지 못하면 계속 설치가 진행되고 영어 버전만 설치됩니다. 자세한 내용은 [설치 다운로더](setup-downloader.md)를 참조하세요.|  
   |TargetDir|Configuration Manager 콘솔을 설치할 설치 폴더를 지정합니다. 이 옵션은 **/q** 옵션을 사용하는 경우에 필요합니다.|  
-  |EnableSQM|CEIP(사용자 환경 개선 프로그램) 참여 여부를 지정합니다. CEIP에 참여하려면 **1** 값을 사용하고 프로그램에 참여하지 않으려면 **0** 값을 사용합니다. 이 옵션은 **/q** 옵션을 사용하는 경우에 필요합니다.</br></br>참고: Configuration Manager 버전 1802부터 CEIP 기능은 제품에서 제거됩니다.|  
+  |EnableSQM|CEIP(사용자 환경 개선 프로그램) 참여 여부를 지정합니다. CEIP에 참여하려면 **1** 값을 사용하고 프로그램에 참여하지 않으려면 **0** 값을 사용합니다. 이 옵션은 **/q** 옵션을 사용하는 경우에 필요합니다.</br></br>참고: Configuration Manager 버전 1802부터 CEIP 기능은 제품에서 제거됩니다.  매개 변수를 사용하면 설치가 실패합니다.|  
   |DefaultSiteServerName|콘솔이 열릴 때 연결할 사이트 서버의 FQDN을 지정합니다. 이 옵션은 **/q** 옵션을 사용하는 경우에 필요합니다.|  
 
 
   ### <a name="examples"></a>예
+  **버전 1802 이상의 경우 EnableSQM 매개 변수는 포함하지 않습니다.**
+  -  `ConsoleSetup.exe /q TargetDir="%ProgramFiles%\ConfigMgr Console" DefaultSiteServerName=MyServer.Contoso.com`
 
-  -  `consolesetup.exe /q TargetDir="D:\Program Files\ConfigMgr" EnableSQM=1 DefaultSiteServerName=MyServer.Contoso.com`  
+  -  `ConsoleSetup.exe /q TargetDir="C:\Program Files\ConfigMgr Console" DefaultSiteServerName=MyServer.Contoso.com EnableSQM=1  LangPackDir=C:\Downloads\ConfigMgr`  
 
-  -  `consolesetup.exe /q LangPackDir=C:\Downloads\ConfigMgr TargetDir="D:\Program Files\ConfigMgr Console" EnableSQM=1 DefaultSiteServerName=MyServer.Contoso.com`  
-
-  -  `consolesetup.exe /uninstall /q`  
+  -  `ConsoleSetup.exe /uninstall /q`  

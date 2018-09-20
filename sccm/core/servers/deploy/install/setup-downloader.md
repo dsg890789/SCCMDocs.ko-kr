@@ -10,12 +10,12 @@ ms.assetid: bda87fc5-2e4c-4992-98a4-01770365038c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f8948556ebee069e4ea1c8bf16302ef92fe7b3c1
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 1b29fb48d8d8abc2e0c6693725b65c90a0cf1cd1
+ms.sourcegitcommit: a849dab9333ebac799812624d6155f2a96b523ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32344064"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42584505"
 ---
 # <a name="setup-downloader-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 설치 다운로더
 
@@ -69,7 +69,7 @@ ms.locfileid: "32344064"
 
     예제 명령:
 
-    -   **setupd &lt;다운로드 경로\>**  
+    -   **setupdl &lt;다운로드 경로\>**  
 
         -   설치 다운로더가 시작되고 지정된 다운로드 폴더의 파일을 확인한 후 누락된 파일이나 기존 파일보다 최신 버전인 파일만 다운로드합니다.     
 

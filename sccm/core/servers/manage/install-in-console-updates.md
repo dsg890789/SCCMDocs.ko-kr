@@ -2,7 +2,7 @@
 title: 콘솔 내 업데이트
 titleSuffix: Configuration Manager
 description: Microsoft 클라우드에서 Configuration Manager에 업데이트 설치
-ms.date: 07/30/2018
+ms.date: 08/22/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: c14a3607-253b-41fb-8381-ae2d534a9022
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4ea03f3a91d086a3528047ac6fcd18ff09b03537
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 46aa845197010694e1a1c48ec1d3f18a13268cdf
+ms.sourcegitcommit: be8c0182db9ef55a948269fcbad7c0f34fd871eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385561"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42756132"
 ---
 # <a name="install-in-console-updates-for-configuration-manager"></a>Configuration Manager용 콘솔 내 업데이트 설치
 
@@ -217,8 +217,7 @@ Configuration Manager 콘솔 내에서 업데이트를 설치할 준비가 되�
 #### <a name="4-when-the-update-installation-completes"></a>4. 업데이트 설치가 완료되면  
 첫 번째 사이트 업데이트가 설치를 완료한 후  
 
--   자식 기본 사이트에서 업데이트를 자동으로 설치합니다. 추가적인 조치가 필요하지 않습니다.
-  
+-   자식 기본 사이트에서 업데이트를 자동으로 설치합니다. 추가적인 조치가 필요하지 않습니다.  
 
 -   Configuration Manager 콘솔 내에서 보조 사이트를 수동으로 업데이트합니다. 자세한 내용은 [보조 사이트에서 업데이트 설치 시작](#bkmk_secondary)을 참조하세요.  
 
@@ -366,40 +365,13 @@ Configuration Manager 콘솔 내에서 업데이트를 설치할 준비가 되�
 
 ##  <a name="bkmk_after"></a> 사이트에서 업데이트를 설치한 후  
 
-다음 검사 목록을 사용하여 사이트를 업데이트한 후에 수행되는 일반적인 작업과 구성을 완료합니다.   
+사이트 업데이트 후 해당 버전에 대한 업데이트 후 검사 목록을 검토합니다.  
 
-#### <a name="confirm-site-to-site-replication-is-active"></a>사이트 간 복제가 활성 상태인지 확인
-Configuration Manager 콘솔에서 다음 위치로 이동하여 상태를 보고, 복제가 활성 상태인지 확인합니다.  
+- [버전 1806용 업데이트 후 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1806#post-update-checklist)  
 
--   **모니터링** 작업 영역, **사이트 계층** 노드  
+- [버전 1802용 업데이트 후 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1802#post-update-checklist)  
 
--   **모니터링** 작업 영역, **데이터베이스 복제** 노드  
-
-자세한 내용은 다음 아티클을 참조하세요.  
-- [계층 구조 및 복제 인프라 모니터링](/sccm/core/servers/manage/monitor-hierarchy-and-replication-infrastructure)
-- [Replication Link Analyzer 정보](/sccm/core/servers/manage/monitor-hierarchy-and-replication-infrastructure#BKMK_RLA)  
-
-#### <a name="confirm-that-servers-restarted-if-necessary"></a>서버가 다시 시작되었는지 확인(필요한 경우) 
-사이트 인프라를 검토하고, 적용 가능한 사이트 서버 및 원격 사이트 시스템 서버가 성공적으로 다시 시작되었는지 확인합니다. 일반적으로, Configuration Manager에서 사이트 시스템 역할의 필수 조건으로 .NET을 설치하는 경우에만 사이트 서버가 다시 시작됩니다.  
-
-#### <a name="update-standalone-configuration-manager-consoles"></a>독립 실행형 Configuration Manager 콘솔 업데이트
-모든 원격 Configuration Manager 콘솔을 동일한 버전으로 업데이트합니다. 콘솔을 업데이트하라는 메시지가 표시되는 경우는 다음과 같습니다.  
-
--   콘솔에서 새 노드로 이동하는 경우  
-
--   콘솔을 여는 경우  
-
-#### <a name="reconfigure-database-replicas-for-management-points"></a>관리 지점에 대한 데이터베이스 복제본 다시 구성
-기본 사이트의 관리 지점에 데이터베이스 복제본을 사용하는 경우 해당 사이트를 업데이트하기 전에 데이터베이스 복제본을 제거합니다. 기본 사이트를 업데이트한 후에는 관리 지점에 대한 데이터베이스 복제본을 다시 구성합니다. 자세한 내용은 [관리 지점에 대한 데이터베이스 복제본](/sccm/core/servers/deploy/configure/database-replicas-for-management-points)을 참조하세요.  
-
-#### <a name="reconfigure-any-disabled-maintenance-tasks"></a>사용하지 않도록 설정된 유지 관리 작업 다시 구성
-업데이트를 설치하기 전에 사이트에서 데이터베이스 [유지 관리 작업](/sccm/core/servers/manage/maintenance-tasks)을 사용하지 않도록 설정한 경우 사이트에서 해당 작업을 다시 구성합니다. 업데이트 전에 사용하던 설정과 동일한 설정을 사용합니다.  
-
-#### <a name="upgrade-clients"></a>클라이언트 업그레이드
-자세한 내용은 [Windows 컴퓨터용 클라이언트를 업그레이드하는 방법](/sccm/core/clients/manage/upgrade/upgrade-clients-for-windows-computers)을 참조하세요.  
-
-#### <a name="additional-configurations"></a>추가 구성
-업데이트를 시작하기 전에 변경한 내용을 검토한 다음, 해당 구성을 사이트 및 계층 구조에 복원합니다.  
+- [버전 1710용 업데이트 후 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1710#post-update-checklist)  
 
 
 

@@ -10,12 +10,12 @@ ms.assetid: 946b0f74-0794-4e8f-a6af-9737d877179b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a50aa9d2269830fa09c494c63c7681f1dbda3cc0
-ms.sourcegitcommit: 6e0e5b4b7779ce03e2b56b3b5f68f4ace1acedd8
+ms.openlocfilehash: 3c31b950ef59147f6f3f46c1cba7780b7789948c
+ms.sourcegitcommit: 4b7812b505e80f79fc90dfa8a6db06eea79a3550
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39467592"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "42584549"
 ---
 # <a name="enable-third-party-updates"></a>타사 업데이트 사용 
 
@@ -164,6 +164,7 @@ Configuration Manager 콘솔에서 타사 공급업체 카탈로그를 구독하
 -  Configuration Manager에는 카탈로그 cab 파일 형식에 대한 새 버전이 있습니다. 이 새 버전에는 공급업체의 이진 파일에 대한 인증서가 포함됩니다. 이러한 인증서는 카탈로그를 승인하고 신뢰하면 **관리** 작업 영역의 **보안** 아래 **인증서** 노드에 추가됩니다.  
      - 다운로드 URL이 https이고 업데이트에 서명한 경우 여전히 이전 카탈로그 cab 파일 버전을 사용할 수 있습니다. 이진 파일에 대한 인증서가 cab 파일에 있지 않고 이미 승인됐으므로 콘텐츠를 게시하지 못합니다. **인증서** 노드에서 인증서를 찾아 차단 해제한 다음, 다시 업데이트를 게시하여 이 문제를 해결할 수 있습니다. 다른 인증서로 서명된 여러 업데이트를 게시하는 경우 사용되는 각 인증서를 차단 해제해야 합니다.
      - 자세한 내용은 아래 상태 메시지 테이블에서 11523 및 11524 상태 메시지를 참조하세요.
+-  최상위 소프트웨어 업데이트 지점에서의 타사 소프트웨어 업데이트 동기화 서비스에 인터넷 액세스용 프록시 서버가 필요한 경우 디지털 서명 확인에 실패할 수 있습니다. 이 문제를 완화하려면 사이트 시스템에서 WinHTTP 프록시 설정을 구성합니다. 자세한 내용은 [Netsh commands for WinHTTP](https://go.microsoft.com/fwlink/p/?linkid=199086)\(WinHTTP용 Netsh 명령\)를 참조하세요.
 
 ## <a name="status-messages"></a>상태 메시지
 
@@ -176,7 +177,7 @@ Configuration Manager 콘솔에서 타사 공급업체 카탈로그를 구독하
 
 
 ## <a name="working-with-third-party-updates-video"></a>타사 업데이트 비디오 작업
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bvAQeDSJIbs?ecver=1" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ai8rLCLtuTI?rel=0" frameborder="0" allowfullscreen></iframe>
 
 
 

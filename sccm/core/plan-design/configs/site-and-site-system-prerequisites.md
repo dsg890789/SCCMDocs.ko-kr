@@ -10,12 +10,12 @@ ms.assetid: 1392797b-76cb-46b4-a3e4-8f349ccaa078
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 765f599af115e481197603fabd0f3698807ec13a
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 10dfebccd997a42f4c79e5d88bdf05e26585aebb
+ms.sourcegitcommit: 7eebd112a9862bf98359c1914bb0c86affc5dbc0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385323"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42589875"
 ---
 # <a name="site-and-site-system-prerequisites-for-configuration-manager"></a>Configuration Manager의 사이트 및 사이트 시스템 필수 조건
 
@@ -84,7 +84,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 - .NET Framework 3.5 SP1 이상  
 
-- .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1  
+- .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7, 4.7.1 또는 4.7.2  
 
     - .Net Framework 버전에 대한 자세한 내용은 [.NET Framework 버전 및 종속성](https://docs.microsoft.com/dotnet/framework/migration-guide/versions-and-dependencies)을 참조하세요.
 
@@ -110,7 +110,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 - .NET Framework 3.5 SP1 이상  
 
-- .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1  
+- .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7, 4.7.1 또는 4.7.2  
 
     - .Net Framework 버전에 대한 자세한 내용은 [.NET Framework 버전 및 종속성](https://docs.microsoft.com/dotnet/framework/migration-guide/versions-and-dependencies)을 참조하세요.  
 
@@ -162,7 +162,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 - .NET Framework 3.5 SP1 이상  
 
-- .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1  
+- .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7, 4.7.1 또는 4.7.2  
 
     - ASP.NET 4.5  
 
@@ -203,7 +203,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 -   .NET Framework 3.5 SP1 이상  
 
--   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1:  
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7, 4.7.1 또는 4.7.2:  
 
     -   ASP.NET 4.5:  
 
@@ -241,7 +241,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 #### <a name="windows-server-roles-and-features"></a>Windows Server 역할 및 기능  
 
--   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1 
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7, 4.7.1 또는 4.7.2 
 
 
 
@@ -249,7 +249,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 #### <a name="windows-server-roles-and-features"></a>Windows Server 역할 및 기능  
 
--   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1:  
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7, 4.7.1 또는 4.7.2:  
 
     -   HTTP 활성화  
 
@@ -336,7 +336,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 -   .NET Framework 3.5 이상  
 
--   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1:  
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7, 4.7.1 또는 4.7.2:  
 
      이 사이트 시스템 역할을 설치하면 Configuration Manager에서 자동으로.NET Framework 4.5.2를 설치합니다. 이 설치로 인해 서버가 다시 부팅 보류 중 상태가 될 수 있습니다. .NET Framework에 대한 다시 부팅이 보류 중인 경우 서버가 다시 부팅되어 설치를 완료할 때까지 .NET 응용 프로그램이 실패할 수 있습니다.  
 
@@ -378,7 +378,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 -   .NET Framework 3.5 이상  
 
--   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1 
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7, 4.7.1 또는 4.7.2 
 
      이 사이트 시스템 역할을 설치하면 Configuration Manager에서 자동으로.NET Framework 4.5.2를 설치합니다. 이 설치로 인해 서버가 다시 부팅 보류 중 상태가 될 수 있습니다. .NET Framework에 대한 다시 부팅이 보류 중인 경우 서버가 다시 부팅되어 설치를 완료할 때까지 .NET 응용 프로그램이 실패할 수 있습니다.  
 
@@ -430,7 +430,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 #### <a name="windows-server-roles-and-features"></a>Windows Server 역할 및 기능  
 
--   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1 
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7, 4.7.1 또는 4.7.2 
 
 -   BITS 서버 확장 및 자동으로 선택된 옵션이나 BITS(Background Intelligent Transfer Services) 및 자동으로 선택된 옵션  
 
@@ -456,7 +456,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 #### <a name="windows-server-roles-and-features"></a>Windows Server 역할 및 기능  
 
--   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1 
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7, 4.7.1 또는 4.7.2 
 
 #### <a name="sql-server-reporting-services"></a>SQL Server Reporting Services  
 
@@ -472,7 +472,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 #### <a name="windows-server-roles-and-features"></a>Windows Server 역할 및 기능  
 
--   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1 
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7, 4.7.1 또는 4.7.2 
 
      이 사이트 시스템 역할을 설치하면 Configuration Manager에서 자동으로.NET Framework 4.5.2를 설치합니다. 이 설치로 인해 서버가 다시 부팅 보류 중 상태가 될 수 있습니다. .NET Framework에 대한 다시 부팅이 보류 중인 경우 서버가 다시 부팅되어 설치를 완료할 때까지 .NET 응용 프로그램이 실패할 수 있습니다.  
 
@@ -490,7 +490,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 -   .NET Framework 3.5 SP1 이상  
 
--   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1 
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7, 4.7.1 또는 4.7.2 
 
 기본 IIS 구성이 필요합니다.
 
@@ -508,7 +508,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 -   .NET Framework 3.5 이상  
 
--   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7 또는 4.7.1:  
+-   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7, 4.7.1 또는 4.7.2:  
 
      이 사이트 시스템 역할을 설치하면 Configuration Manager에서 자동으로.NET Framework 4.5.2를 설치합니다. 이 설치로 인해 서버가 다시 부팅 보류 중 상태가 될 수 있습니다. .NET Framework에 대한 다시 부팅이 보류 중인 경우 서버가 다시 부팅되어 설치를 완료할 때까지 .NET 응용 프로그램이 실패할 수 있습니다.  
 

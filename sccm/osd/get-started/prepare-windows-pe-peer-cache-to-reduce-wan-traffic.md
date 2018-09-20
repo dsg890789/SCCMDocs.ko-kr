@@ -10,12 +10,12 @@ ms.assetid: 6c64f276-b88c-4b1e-8073-331876a03038
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 90eaaec52076e4ac4fbaddf6cc07cf20359b5a68
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 69d8db3cceff45319ed4f2fc0b2962c3bb50b0f2
+ms.sourcegitcommit: be8c0182db9ef55a948269fcbad7c0f34fd871eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32353640"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42756175"
 ---
 # <a name="prepare-windows-pe-peer-cache-to-reduce-wan-traffic-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 WAN 트래픽을 줄이기 위해 Windows PE 피어 캐시 준비
 
@@ -23,7 +23,7 @@ ms.locfileid: "32353640"
 
 System Center Configuration Manager에서 새 운영 체제를 배포할 때 작업 순서를 실행하는 컴퓨터가 배포 지점에서 콘텐츠를 다운로드하는 대신 Windows PE 피어 캐시를 사용하여 로컬 피어(피어 캐시 원본)에서 콘텐츠를 가져올 수 있습니다. 따라서 로컬 배포 지점이 없는 지점 시나리오에서 WAN(광역 네트워크) 트래픽을 최소화할 수 있습니다.  
 
- Windows PE 피어 캐시는 [Windows BranchCache](http://technet.microsoft.com/library/mt617255\(TechNet.10\).aspx#bkmk_branchcache)와 비슷하지만 Windows PE(사전 설치 환경)에서 작동합니다. Windows PE 피어 캐시를 사용하는 클라이언트에 설명하는 데 다음과 같은 용어가 사용됩니다.  
+ Windows PE 피어 캐시는 [Windows BranchCache](/sccm/core/plan-design/configs/support-for-windows-features-and-networks#bkmk_branchcache)와 비슷하지만 Windows PE(사전 설치 환경)에서 작동합니다. Windows PE 피어 캐시를 사용하는 클라이언트에 설명하는 데 다음과 같은 용어가 사용됩니다.  
 
 -   **피어 캐시 클라이언트** 는 Windows PE 피어 캐시를 사용하도록 구성된 컴퓨터입니다.  
 
@@ -70,7 +70,7 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
         > [!TIP]  
         >  클라이언트는 사용할 수 있는 콘텐츠가 있을 때 HTTPS를 사용하여 다운로드합니다. 그러나 HTTP 또는 HTTPS에 동일한 포트 번호가 사용됩니다.  
 
--   배포하는 이미지를 보관하고 저장하기에 충분한 공간이 있도록 클라이언트에 [Configuration Manager 클라이언트에 대한 클라이언트 캐시를 구성](../../core/clients/manage/manage-clients.md#BKMK_ClientCache)합니다. Windows PE 피어 캐시는 클라이언트 캐시의 구성 또는 동작에 영향을 주지 않습니다.  
+-   배포하는 이미지를 보관하고 저장하기에 충분한 공간이 있도록 클라이언트에 [Configuration Manager 클라이언트에 대한 클라이언트 캐시를 구성](/sccm/core/clients/manage/manage-clients#BKMK_ClientCache)합니다. Windows PE 피어 캐시는 클라이언트 캐시의 구성 또는 동작에 영향을 주지 않습니다.  
 
 -   작업 순서 배포를 위한 배포 옵션을 작업 순서를 실행하기 전에 콘텐츠를 로컬에 다운로드로 구성해야 합니다.  
 
@@ -81,7 +81,7 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
 
 -   피어 캐시 클라이언트는 다른 피어 캐시 클라이언트(피어 캐시 원본)에서 콘텐츠를 가져올 수 있습니다.  이 클라이언트는 피어 캐시용으로 구성되므로 캐시된 콘텐츠를 보존하도록 구성된 작업 순서를 실행할 때 피어 캐시 원본이 됩니다.  
 
--   클라이언트가 선택적인 [패키지 콘텐츠 다운로드](../understand/task-sequence-steps.md#BKMK_DownloadPackageContent) 단계를 포함하는 작업 순서를 실행합니다. 이 단계는 Windows PE 피어 캐시 작업 순서에 포함된 관련 콘텐츠를 사전 준비하는 데 사용됩니다. 이 방법을 사용하는 경우의 특징은 다음과 같습니다.  
+-   클라이언트가 선택적인 [패키지 콘텐츠 다운로드](/sccm/osd/understand/task-sequence-steps#BKMK_DownloadPackageContent) 단계를 포함하는 작업 순서를 실행합니다. 이 단계는 Windows PE 피어 캐시 작업 순서에 포함된 관련 콘텐츠를 사전 준비하는 데 사용됩니다. 이 방법을 사용하는 경우의 특징은 다음과 같습니다.  
 
     -   클라이언트가 배포 중인 이미지를 설치할 필요가 없습니다.  
 
@@ -129,7 +129,7 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
 
      이 변수는 배포 후 Configuration Manager 클라이언트 캐시에 보존할 작업 순서의 콘텐츠에 플래그를 지정합니다. 이 변수를 사용하는 것은 SMSTSPersisContent를 사용하는 것과는 다릅니다. SMSTSPersisContent는 작업 시퀀스 기간 동안만 콘텐츠를 보존하며 Configuration Manager 클라이언트 캐시가 아닌 작업 순서 캐시를 사용합니다.  
 
- 자세한 내용은 [작업 순서 기본 제공 변수](../understand/task-sequence-built-in-variables.md)를 참조하세요.  
+ 자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables)\(작업 순서 변수\)를 참조하세요.  
 
 ###  <a name="BKMK_PeerCacheValidate"></a> Windows PE 피어 캐시 정상 사용 여부 확인  
  Windows PE 피어 캐시를 사용하여 작업 순서를 배포 및 설치한 후에는 작업 순서를 실행한 클라이언트에서 **smsts.log** 를 확인하여 프로세스에서 피어 캐시를 정상적으로 사용했는지 확인할 수 있습니다.  

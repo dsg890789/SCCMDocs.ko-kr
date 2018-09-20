@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 71eaa409-b955-45d6-8309-26bf3b3b0911
-ms.openlocfilehash: fbae44d1344dd36d3c0a6faf2e50727dfa830ba0
-ms.sourcegitcommit: 8060ea520fb08629e1d5f249daffe825536673a5
+ms.openlocfilehash: 02a830d10263164e26902247856f999523092c76
+ms.sourcegitcommit: a849dab9333ebac799812624d6155f2a96b523ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35232373"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42584943"
 ---
 # <a name="certificates-for-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이에 대한 인증서
 
@@ -63,7 +63,8 @@ CMG는 인터넷 기반 클라이언트에서 연결하는 HTTPS 서비스를 �
 
 클라우드 배포 지점과 마찬가지로 CMG에 대한 사용자 지정 SSL 인증서를 만듭니다. [클라우드 기반 배포 지점용 서비스 인증서 배포](/sccm/core/plan-design/network/example-deployment-of-pki-certificates#BKMK_clouddp2008_cm2012)에 대한 지침을 따르는 대신, 다음 작업은 다르게 수행하세요.
 
-- 사용자 지정 웹 서버 인증서를 요청할 때 인증서의 일반 이름에 대해 FQDN을 제공합니다. Azure 공용 클라우드에서 CMG를 사용하려면 **cloudapp.net** 또는 **usgovcloudapp.net**(Azure US Government 클라우드)으로 끝나는 이름을 사용합니다.
+- 사용자 지정 웹 서버 인증서를 요청할 때 인증서의 일반 이름에 대해 FQDN을 제공합니다. 소유 중인 공용 도메인 이름 또는 cloudapp.net 도메인을 활용하여 FQDN을 지정할 수 있습니다. 보유한 공용 도메인을 사용하는 경우 조직의 공용 DNS에서 DNS 별칭을 만들려면 위의 프로세스를 참조하세요.
+- Azure 공용 클라우드에서 CMG를 웹 서버 인증서를 위한 cloudapp.net 공용 도메인을 사용할 때 **cloudapp.net** 또는 **usgovcloudapp.net**(Azure US Government 클라우드)으로 끝나는 이름을 사용합니다.
 
 
 

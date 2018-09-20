@@ -10,12 +10,12 @@ ms.assetid: b7332ed3-8003-454b-bb12-1fdf8721425c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 9f4bbb8ec680248b31b1ddd8c457e62e9be44d4b
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 9d292d85ce5a30e56d7909d74b986ac408d29346
+ms.sourcegitcommit: 849391d3985b057027cae610bd3a79fdaa708b94
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385269"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42584531"
 ---
 # <a name="list-of-reports-in-system-center-configuration-manager"></a>System Center Configuration Manager의 보고서 목록
 
@@ -51,7 +51,7 @@ Configuration Manager에는 다음 보고서가 포함되어 있습니다. 보�
 
 
 ## <a name="asset-intelligence"></a>Asset Intelligence  
-**Asset Intelligence** 범주에는 다음과 같은 62개 보고서가 나열됩니다.  
+**Asset Intelligence** 범주에는 다음과 같은 66개 보고서가 나열됩니다.  
 
 |보고서 이름|설명|  
 |-----------------|-----------------|  
@@ -117,6 +117,10 @@ Configuration Manager에는 다음 보고서가 포함되어 있습니다. 보�
 |**소프트웨어 14A - 소프트웨어 ID 태그 사용 소프트웨어 검색**|소프트웨어 ID 태그가 사용하도록 설정된 설치되어 있는 소프트웨어 수가 표시됩니다.|  
 |**소프트웨어 14B - 특정 소프트웨어 ID 태그 사용 소프트웨어가 설치된 컴퓨터**|지정한 소프트웨어 ID 태그가 사용하도록 설정된 소프트웨어가 설치되어 있는 모든 컴퓨터가 표시됩니다.|  
 |**소프트웨어 14C - 특정 컴퓨터의 설치된 소프트웨어 ID 태그 사용 소프트웨어**|지정한 컴퓨터에서 지정된 소프트웨어 ID 태그가 사용하도록 설정된 설치되어 있는 모든 소프트웨어가 표시됩니다.|  
+|**수명 주기 01A - 특정 소프트웨어 제품이 있는 컴퓨터**|지정한 제품이 검색된 컴퓨터 목록을 표시합니다.|
+|**수명 주기 02A - 조직에서 만료된 제품이 있는 컴퓨터의 목록**|만료된 제품이 있는 컴퓨터를 표시합니다. 이 보고서는 제품 이름으로 필터링할 수 있습니다.|
+|**수명 주기 03A - 조직에 있는 만료된 제품의 목록**|현재 환경에서 수명 주기 날짜가 만료된 제품에 대한 세부 정보를 표시합니다.|
+|**수명 주기 04A - 일반적인 제품 수명 주기 개요**|제품 수명 주기 목록을 표시합니다. 제품 이름과 만료일별로 목록을 필터링합니다.|
 
 
 
@@ -186,6 +190,18 @@ Configuration Manager에는 다음 보고서가 포함되어 있습니다. 보�
 |**호환되지 않는 앱을 설치한 사용자 요약**|지정한 정책과 호환되지 않는 앱을 설치한 사용자에 대한 정보가 표시됩니다.|  
 |**계약조건 동의**|사용 약관 항목 및 각 사용자가 동의한 버전이 표시됩니다.|  
 
+## <a name="data-warehouse"></a>데이터 웨어하우스  
+**데이터 웨어하우스** 범주에는 다음과 같은 7개 보고서가 나열됩니다. 
+
+|보고서 이름|설명|  
+|-----------------|-----------------|  
+|**응용 프로그램 배포**|기록: 특정 응용 프로그램 및 컴퓨터에 대한 응용 프로그램 배포 정보를 확인합니다.|
+|**Endpoint Protection 및 소프트웨어 업데이트 준수**|기록: 소프트웨어 업데이트가 누락된 컴퓨터를 확인합니다.|
+|**일반 하드웨어 인벤토리**|기록: 특정 컴퓨터에 대한 모든 하드웨어 인벤토리를 확인합니다.|
+|**일반 소프트웨어 인벤토리**|기록: 특정 컴퓨터에 대한 모든 소프트웨어 인벤토리를 확인합니다.|
+|**인프라 상태 개요**|기록: Configuration Manager 인프라의 상태 개요를 표시합니다.|
+|**검색된 맬웨어 목록**|기록: 조직에서 검색된 맬웨어를 확인합니다.|
+|**소프트웨어 배포 요약**|기록: 특정 보급 알림 및 컴퓨터에 대한 소프트웨어 배포 요약입니다.|
 
 
 ## <a name="device-management"></a>장치 관리  
@@ -254,7 +270,7 @@ Configuration Manager에는 다음 보고서가 포함되어 있습니다. 보�
 
 
 
-## <a name="endpoint-protection"></a>Endpoint Protection  
+## <a name="endpoint-protection"></a>Endpoint Protection  
 **Endpoint Protection** 범주에는 다음과 같은 6개 보고서가 나열됩니다. 
 |보고서 이름|설명|  
 |-----------------|-----------------|  
@@ -443,7 +459,6 @@ Configuration Manager에는 다음 보고서가 포함되어 있습니다. 보�
 |**서비스 - 특정 컴퓨터의 서비스 정보**|지정한 컴퓨터의 서비스에 대한 요약 정보가 표시됩니다.|  
 |**특정 컬렉션을 위한 Windows 10 서비스 세부 정보**|특정 컬렉션을 위한 Windows 10 서비스의 일반 정보가 표시됩니다.|
 |**Windows Server 컴퓨터**|Windows Server 운영 체제를 실행하는 컴퓨터의 목록이 표시됩니다.|  
-
 
 
 ## <a name="power-management"></a>전원 관리  

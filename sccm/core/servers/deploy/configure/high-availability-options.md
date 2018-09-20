@@ -10,12 +10,12 @@ ms.assetid: 1a38421d-24c1-4fef-bf6c-42fce53109ac
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 18435bd43ed74daee646096d1e8d8b6ed7b7bc27
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 057310d7f580cfc61f23a53977716743ed906867
+ms.sourcegitcommit: 849391d3985b057027cae610bd3a79fdaa708b94
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39386344"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42584480"
 ---
 # <a name="high-availability-options-for-configuration-manager"></a>Configuration Manager의 고가용성 옵션
 
@@ -25,7 +25,7 @@ ms.locfileid: "39386344"
 
 고가용성을 지원하는 Configuration Manager 옵션은 다음과 같습니다.   
 
-- 버전 1806부터 수동 모드로 추가 사이트 서버를 사용하여 각 기본 사이트 및 중앙 관리 사이트를 구성합니다.  
+- 버전 1806부터 수동 모드로 추가 사이트 서버를 사용하여 모든 독립 실행형 기본 사이트를 구성합니다.  
  
 - 기본 사이트 및 중앙 관리 사이트에서 사이트 데이터베이스에 대한 SQL Server Always On 가용성 그룹을 구성합니다.
 
@@ -70,7 +70,7 @@ Configuration Manager의 다른 기능은 실시간 서비스를 제공하지 �
 ##  <a name="bkmk_snh"></a> 사이트 및 계층 구조의 고가용성  
 
 #### <a name="use-a-site-server-in-passive-mode"></a>수동 모드로 사이트 서버 사용
-버전 1806부터 *수동* 모드로 추가 사이트 서버를 설치합니다. 수동 모드의 사이트 서버는 *활성* 모드의 기존의 사이트 서버 외의 추가 서버입니다. 수동 모드의 사이트 서버는 필요할 때 즉시 사용할 수 있습니다. 자세한 내용은 [사이트 서버 고가용성](/sccm/core/servers/deploy/configure/site-server-high-availability)을 참조하세요.  
+버전 1806부터 독립 실행형 기본 사이트에 대해 *수동* 모드로 추가 사이트 서버를 설치합니다. 수동 모드의 사이트 서버는 *활성* 모드의 기존의 사이트 서버 외의 추가 서버입니다. 수동 모드의 사이트 서버는 필요할 때 즉시 사용할 수 있습니다. 자세한 내용은 [사이트 서버 고가용성](/sccm/core/servers/deploy/configure/site-server-high-availability)을 참조하세요.  
 
 #### <a name="use-a-remote-content-library"></a>원격 콘텐츠 라이브러리 사용
 버전 1806부터 사이트의 콘텐츠 라이브러리를 항상 사용 가능한 저장소를 제공하는 원격 위치로 이동합니다. 이 기능은 사이트 서버 고가용성을 위한 요구 사항입니다. 자세한 내용은 [콘텐츠 라이브러리](/sccm/core/plan-design/hierarchy/the-content-library#bkmk_remote)를 참조하세요.

@@ -2,7 +2,7 @@
 title: 실시간 데이터에 대한 CMPivot
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 CMPivot을 사용하여 실시간으로 클라이언트를 쿼리하는 방법을 알아봅니다.
-ms.date: 07/30/2018
+ms.date: 08/21/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 32e2d6b9-148f-45e2-8083-98c656473f82
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0766bc765712fc493f01eb5aa807426ec44fa5d7
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 0429c62f68a111bc7f620d1c954d5c8cf944d1c1
+ms.sourcegitcommit: 7eebd112a9862bf98359c1914bb0c86affc5dbc0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385944"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42590059"
 ---
 # <a name="cmpivot-for-real-time-data-in-configuration-manager"></a>Configuration Manager에서 실시간 데이터에 대한 CMPivot
 
@@ -56,6 +56,8 @@ CMPivot을 사용하려면 다음 구성 요소가 필요합니다.
 - 엔터티 속성, 결과에 대한 열 또는 장치의 작업을 사용자 지정할 수 없습니다.  
 
 - CMPivot의 하나의 인스턴스만 Configuration Manager 콘솔을 실행하는 컴퓨터에서 동시에 실행할 수 있습니다.  
+
+- 버전 1806에서 **관리자** 엔터티에 대한 쿼리는 그룹 이름이 “Administrators”인 경우에만 작동합니다. 그룹 이름이 현지화된 경우에는 작동하지 않습니다. 예를 들어 프랑스어로 “Administrateurs”인 경우에는 작동하지 않습니다.<!--SCCMDocs issue 759-->  
 
 
 
@@ -229,6 +231,20 @@ CMPivot은 Configuration Manager "빠른 채널"을 사용하여 클라이언트
 
 쿼리는 1시간 후 시간 초과됩니다. 예를 들어 컬렉션에 500개의 장치가 있고, 450명의 클라이언트는 현재 온라인 상태입니다. 이러한 활성 장치는 쿼리를 수신하고 거의 즉시 결과를 반환합니다. CMPivot 창을 열린 상태로 두면 다른 50명의 클라이언트도 온라인 상태가 되므로 쿼리를 수신하고, 결과를 반환합니다. 
 
+>[!TIP]
+> CMPivot 상호 작용은 다음 로그 파일에 로깅됩니다.
+>
+> **서버 쪽:**
+> - SmsProv.log
+> - bgbServer.log
+> - StateSys.log
+>
+> **클라이언트 쪽:**
+> - CCMNotificationAgent.log
+> - Scripts.log
+> - StateMessage.log
+>
+> 자세한 내용은 [로그 파일](/sccm/core/plan-design/hierarchy/log-files)을 참조하세요.
 
 
 ## <a name="see-also"></a>참고 항목

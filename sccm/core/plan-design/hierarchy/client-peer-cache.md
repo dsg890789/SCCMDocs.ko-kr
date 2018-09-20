@@ -10,12 +10,12 @@ ms.assetid: 86cd5382-8b41-45db-a4f0-16265ae22657
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 00a79e099255b9ec19660914825334dc95b30682
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: c3dc6189f73b939f632581a8b50f05a72310111d
+ms.sourcegitcommit: be8c0182db9ef55a948269fcbad7c0f34fd871eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39383853"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42755999"
 ---
 # <a name="peer-cache-for-configuration-manager-clients"></a>Configuration Manager 클라이언트용 피어 캐시
 
@@ -45,7 +45,7 @@ Configuration Manager 클라이언트는 피어 캐시를 사용하여 캐시의
 피어 캐시는 Windows BranchCache 또는 배달 최적화와 같은 다른 솔루션의 사용을 대체하지 않습니다. 피어 캐시는 다른 솔루션과 함께 작동합니다. 이러한 기술은 배포 지점과 같은 기존의 콘텐츠 배포 솔루션을 확장할 수 있는 추가 옵션을 제공합니다. 피어 캐시는 BranchCache를 사용하지 않는 사용자 지정 솔루션입니다. BranchCache를 사용하도록 설정하거나 사용하지 않는 경우에도 피어 캐시는 계속 작동합니다.  
 
   > [!Note]  
-  > 버전 1802부터 Windows BranchCache는 항상 클라이언트에서 사용할 수 있습니다. **클라이언트가 동일한 서브넷에 있는 다른 클라이언트와 콘텐츠를 공유하도록 허용**하는 설정이 제거됩니다. 배포 지점에서 지원하는 경우 클라이언트는 BranchCache를 사용합니다.<!--SCCMDocs issue 539-->  
+  > 버전 1802부터 Windows BranchCache는 항상 배포에서 사용할 수 있습니다. **클라이언트가 동일한 서브넷에 있는 다른 클라이언트와 콘텐츠를 공유하도록 허용**하는 설정이 제거됩니다.<!--SCCMDocs issue 539--> 배포 지점에서 지원하고 클라이언트 설정에서 사용하도록 설정된 경우 클라이언트에서는 BranchCache를 사용합니다. 자세한 내용은 [BranchCache 구성](/sccm/core/clients/deploy/about-client-settings#configure-branchcache)을 참조하세요.<!--SCCMDocs issue 735-->   
 
 
 
@@ -175,7 +175,7 @@ Contoso는 본사(HQ)와 지사라는 두 경계 그룹이 있는 단일 주 사
 
 - 피어 캐시 원본 클라이언트는 피어가 캐시를 다운로드할 때 캐시에 있는 콘텐츠의 마지막 참조 시간을 업데이트합니다. 클라이언트는 캐시를 자동으로 유지 관리하면서 오래된 콘텐츠를 먼저 제거할 때 이 타임스탬프를 사용합니다. 따라서 피어 캐시 클라이언트가 더 자주 다운로드하는 콘텐츠를 제거할 때까지 대기해야 합니다.  
 
-- 필요한 경우, OS 배포 작업 순서 중에 **SMSTSPreserveContent** 변수를 사용하여 콘텐츠를 클라이언트 캐시에 보관합니다. 자세한 내용은 [작업 순서 기본 제공 변수](/sccm/osd/understand/task-sequence-built-in-variables)를 참조하세요.  
+- 필요한 경우, OS 배포 작업 순서 중에 **SMSTSPreserveContent** 변수를 사용하여 콘텐츠를 클라이언트 캐시에 보관합니다. 자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables#SMSTSPreserveContent)\(작업 순서 변수\)를 참조하세요.  
 
 - 필요한 경우, 다음 소프트웨어를 만들 때 **클라이언트 캐시의 콘텐츠 유지** 옵션을 사용합니다.  
     - 응용 프로그램

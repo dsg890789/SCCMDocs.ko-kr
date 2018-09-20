@@ -10,12 +10,12 @@ ms.assetid: a1626a65-da22-49e0-9564-d2f752ea3f4b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f5aac395c71b76a0b83826e8f7c9de1e656aa884
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 588eeefc8f383a52150dc91e9837e51a718af33c
+ms.sourcegitcommit: be8c0182db9ef55a948269fcbad7c0f34fd871eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39383642"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42755863"
 ---
 # <a name="support-for-windows-10-in-configuration-manager"></a>Configuration Manager의 Windows 10에 대한 지원  
 
@@ -85,3 +85,6 @@ Configuration Manager로 운영 체제를 배포할 때 [Windows ADK는 필요�
 
  > [!Note]  
  > Configuration Manager는 Windows 10 ADK의 x86 및 amd64 구성 요소만을 지원합니다. 현재 ARM 또는 ARM64 구성 요소를 지원하지 않습니다. 
+
+> [!Tip]
+> 서버 OS 배포에 대한 ADK 버전 지원: Windows Server 빌드에는 연결된 Windows 10 버전과 동일한 ADK 요구 사항이 있습니다. 예를 들어, Windows Server 2016은 Windows 10 LTSB 2016과 동일한 빌드 버전입니다.

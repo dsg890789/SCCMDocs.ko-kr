@@ -10,12 +10,12 @@ ms.assetid: 7591e386-a9ab-4640-8643-332dce5aa006
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 483b5f8b285fb256005e31e01a0786cef6c8e11d
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: bddcd356a3ee221d5b67935a5be91bbe89d2afc2
+ms.sourcegitcommit: be8c0182db9ef55a948269fcbad7c0f34fd871eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39383088"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42756057"
 ---
 # <a name="create-a-task-sequence-to-upgrade-an-os-in-configuration-manager"></a>Configuration Manager에서 OS를 업그레이드하는 작업 순서 만들기
 
@@ -155,7 +155,7 @@ Configuration Manager에서 작업 순서를 사용하여 대상 컴퓨터의 OS
 
 - **제거/일시 중단**: 바이러스 백신과 같은 타사 보안 프로그램을 제거하거나 일시 중단하려면 이 그룹의 단계를 추가합니다.  
 
-   - 타사 디스크 암호화 프로그램을 사용하는 경우 `/ReflectDrivers` [명령줄 옵션](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#23)을 사용하여 Windows 설치 프로그램에 해당 암호화 드라이버를 제공합니다. 이 그룹의 작업 순서에 [작업 순서 변수 설정](/sccm/osd/understand/task-sequence-steps#BKMK_SetTaskSequenceVariable) 단계를 추가합니다. 작업 순서 변수를 **OSDSetupAdditionalUpgradeOptions**로 설정합니다. 드라이버 경로를 사용하여 값을 `/ReflectDrivers`로 설정합니다. 이 [작업 순서 작업 변수](/sccm/osd/understand/task-sequence-action-variables#upgrade-operating-system)는 작업 순서에서 사용되는 Windows 설치 명령줄을 추가합니다. 이 프로세스에 대한 추가 지침은 소프트웨어 공급업체에 문의하세요.  
+   - 타사 디스크 암호화 프로그램을 사용하는 경우 `/ReflectDrivers` [명령줄 옵션](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#23)을 사용하여 Windows 설치 프로그램에 해당 암호화 드라이버를 제공합니다. 이 그룹의 작업 순서에 [작업 순서 변수 설정](/sccm/osd/understand/task-sequence-steps#BKMK_SetTaskSequenceVariable) 단계를 추가합니다. 작업 순서 변수를 **OSDSetupAdditionalUpgradeOptions**로 설정합니다. 드라이버 경로를 사용하여 값을 `/ReflectDrivers`로 설정합니다. 이 [작업 순서 변수](/sccm/osd/understand/task-sequence-variables#OSDSetupAdditionalUpgradeOptions)는 작업 순서에서 사용되는 Windows 설치 명령줄을 추가합니다. 이 프로세스에 대한 추가 지침은 소프트웨어 공급업체에 문의하세요.  
 
 
 ### <a name="download-package-content-task-sequence-step"></a>패키지 콘텐츠 작업 순서 단계 다운로드  
@@ -215,7 +215,7 @@ Configuration Manager에서 작업 순서를 사용하여 대상 컴퓨터의 OS
 
     - Configuration Manager 클라이언트 로그에 대한 자세한 내용은 [Configuration Manager 클라이언트 로그](/sccm/core/plan-design/hierarchy/log-files#BKMK_ClientLogs)를 참조하세요.  
 
-    - _SMSTSLogPath 및 기타 유용한 변수에 대한 자세한 내용은 [작업 순서 기본 제공 변수](/sccm/osd/understand/task-sequence-built-in-variables)를 참조하세요.  
+    - **_SMSTSLogPath** 및 기타 유용한 변수에 대한 자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables)\(작업 순서 변수\)를 참조하세요.  
 
 - **진단 도구 실행**: 추가 진단 도구를 실행하려면 이 그룹의 단계를 추가합니다. 실패 후 시스템에서 바로 추가 정보를 수집하도록 이러한 도구를 자동화합니다.  
 
@@ -234,18 +234,18 @@ Configuration Manager에서 작업 순서를 사용하여 대상 컴퓨터의 OS
 
 - 기본 **확인 준비** 단계에서 **사용 가능한 최소 디스크 공간(MB) 확인**을 사용하도록 설정합니다. 32비트 OS 업그레이드 패키지의 경우 이 값을 **16384**(16GB) 이상으로 설정하고, 64비트의 경우 **20480**(20GB) 이상으로 설정합니다.  
 
-- **SMSTSDownloadRetryCount** [기본 제공 작업 순서 변수](/sccm/osd/understand/task-sequence-built-in-variables)를 사용하여 정책 다운로드를 다시 시도합니다. 현재, 클라이언트가 기본적으로 두 번 다시 시도하므로 이 변수는 2로 설정되어 있습니다. 클라이언트가 유선 인트라넷 네트워크 연결을 사용하지 않는 경우 추가로 다시 시도하면 클라이언트가 정책을 가져오는 데 도움이 됩니다. 이 변수를 사용해도 정책을 다운로드할 수 없는 경우 오류가 지연되는 점 이외의 다른 부작용은 없습니다.<!--501016--> 또한 **SMSTSDownloadRetryDelay** 변수를 기본값인 15초에서 늘립니다.  
+- **SMSTSDownloadRetryCount** [작업 순서 변수](/sccm/osd/understand/task-sequence-variables#SMSTSDownloadRetryCount)를 사용하여 정책 다운로드를 다시 시도합니다. 현재, 클라이언트가 기본적으로 두 번 다시 시도하므로 이 변수는 2로 설정되어 있습니다. 클라이언트가 유선 인트라넷 네트워크 연결을 사용하지 않는 경우 추가로 다시 시도하면 클라이언트가 정책을 가져오는 데 도움이 됩니다. 이 변수를 사용해도 정책을 다운로드할 수 없는 경우 오류가 지연되는 점 이외의 다른 부작용은 없습니다.<!--501016--> 또한 **SMSTSDownloadRetryDelay** 변수를 기본값인 15초에서 늘립니다.  
 
 - 인라인 호환성 평가를 수행합니다.  
 
    - **업그레이드 준비** 그룹의 초기에 두 번째 **운영 체제 업그레이드** 단계를 추가합니다. 이름을 *업그레이드 평가*로 지정합니다. 동일한 업그레이드 패키지를 지정한 후 **업그레이드를 시작하지 않고 Windows 설치 프로그램 호환성 검사 수행** 옵션을 사용하도록 설정합니다. 옵션 탭에서 **오류 발생 시 계속**을 사용하도록 설정합니다.  
 
-   - 이 *업그레이드 평가* 단계 바로 뒤에 **명령줄 실행** 단계를 추가합니다. 다음 명령줄을 지정합니다.</br> `cmd /c exit %_SMSTSOSUpgradeActionReturnCode%`</br>**옵션** 탭에서 다음 조건을 추가합니다. </br>`Task Sequence Variable _SMSTSOSUpgradeActionReturnCode not equals 3247440400` </br>이 반환 코드는 문제없이 호환성 검사에 성공하는 MOSETUP_E_COMPAT_SCANONLY(0xC1900210)에 해당하는 10진 코드입니다. *업그레이드 평가* 단계가 성공하고 이 코드를 반환하는 경우 작업 순서는 이 단계를 건너뜁니다. 또는 평가 단계가 다른 반환 코드를 반환하는 경우 이 단계에서 작업 순서가 실패하고 Windows 설치 호환성 검사의 반환 코드가 표시됩니다.  
+   - 이 *업그레이드 평가* 단계 바로 뒤에 **명령줄 실행** 단계를 추가합니다. 다음 명령줄을 지정합니다.</br> `cmd /c exit %_SMSTSOSUpgradeActionReturnCode%`</br>**옵션** 탭에서 다음 조건을 추가합니다. </br>`Task Sequence Variable _SMSTSOSUpgradeActionReturnCode not equals 3247440400` </br>이 반환 코드는 문제없이 호환성 검사에 성공하는 MOSETUP_E_COMPAT_SCANONLY(0xC1900210)에 해당하는 10진 코드입니다. *업그레이드 평가* 단계가 성공하고 이 코드를 반환하는 경우 작업 순서는 이 단계를 건너뜁니다. 또는 평가 단계가 다른 반환 코드를 반환하는 경우 이 단계에서 작업 순서가 실패하고 Windows 설치 호환성 검사의 반환 코드가 표시됩니다. **_SMSTSOSUpgradeActionReturnCode**에 대한 자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables#SMSTSOSUpgradeActionReturnCode)\(작업 순서 변수\)를 참조하세요.  
 
    - 자세한 내용은 [운영 체제 업그레이드](/sccm/osd/understand/task-sequence-steps#BKMK_UpgradeOS)를 참조하세요.  
 
 - 이 작업 순서 중에 장치를 BIOS에서 UEFI로 변경하려는 경우 [현재 위치 업그레이드 중에 BIOS에서 UEFI로 변환](/sccm/osd/deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion#convert-from-bios-to-uefi-during-an-in-place-upgrade)을 참조하세요.  
 
-- BitLocker 디스크 암호화를 사용하는 경우 기본 Windows 설치 프로그램은 업그레이드 중 자동으로 일시 중단합니다. Windows 10 버전 1803부터 Windows 설치 프로그램에는 이 동작을 제어할 `/BitLocker` 명령줄 매개 변수가 포함되어 있습니다. 보안 요구 사항에 따라 활성 디스크 암호화를 항상 유지해야 하는 경우 **업그레이드 준비** 그룹에서 **OSDSetupAdditionalUpgradeOptions** 작업 순서 변수를 사용하여 `/BitLocker TryKeepActive`를 사용합니다. 자세한 내용은 [Windows 설치 프로그램 명령줄 옵션](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#33)을 참조하세요.<!--SCCMDocs issue #494-->  
+- BitLocker 디스크 암호화를 사용하는 경우 기본 Windows 설치 프로그램은 업그레이드 중 자동으로 일시 중단합니다. Windows 10 버전 1803부터 Windows 설치 프로그램에는 이 동작을 제어할 `/BitLocker` 명령줄 매개 변수가 포함되어 있습니다. 보안 요구 사항에 따라 활성 디스크 암호화를 항상 유지해야 하는 경우 **업그레이드 준비** 그룹에서 **OSDSetupAdditionalUpgradeOptions** [작업 순서 변수](/sccm/osd/understand/task-sequence-variables#OSDSetupAdditionalUpgradeOptions)를 사용하여 `/BitLocker TryKeepActive`를 포함합니다. 자세한 내용은 [Windows 설치 프로그램 명령줄 옵션](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#33)을 참조하세요.<!--SCCMDocs issue #494-->  
 
 - 일부 고객은 Windows 10의 프로비전된 기본 앱(예: Bing 날씨 앱 또는 Microsoft Solitaire Collection)을 제거합니다. 이러한 앱은 경우에 따라 Windows 10 업데이트 후 복귀됩니다. 자세한 내용은 [Windows 10에서 앱을 제거된 상태로 유지하는 방법](https://docs.microsoft.com/windows/application-management/remove-provisioned-apps-during-update)을 참조하세요. **명령줄 실행** 단계를 **업그레이드 준비** 그룹의 작업 순서에 추가합니다. 다음 예와 유사하게 명령줄을 지정합니다.</br> `cmd /c reg delete "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.BingWeather_8wekyb3d8bbwe" /f` <!--SCCMDocs issue #526-->  

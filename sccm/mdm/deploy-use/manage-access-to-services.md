@@ -10,12 +10,12 @@ ms.assetid: 7b04727b-d563-422f-8d59-4dd66215d0b3
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f354647ba9376ff18db1a4b63944ef31272308e1
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 9091c233ad18b2ab9ddea32819a37f3cc9484036
+ms.sourcegitcommit: a849dab9333ebac799812624d6155f2a96b523ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32350581"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42584425"
 ---
 # <a name="manage-access-to-services-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 서비스 액세스 관리
 
@@ -126,7 +126,7 @@ Exchange 온-프레미스에 대한 조건부 액세스는 다음을 지원합�
 
 
 ## <a name="requirements-for-skype-for-business-online"></a>비즈니스용 Skype Online에 대한 요구 사항
-SharePoint Online에 대한 조건부 액세스에서는 다음을 실행하는 장치를 지원합니다.
+Skype Online에 대한 조건부 액세스에서는 다음을 실행하는 장치를 지원합니다.
  -   iOS 7.1 이상
  -   Android 4.0 이상
  -   Samsung KNOX Standard 4.0 이상

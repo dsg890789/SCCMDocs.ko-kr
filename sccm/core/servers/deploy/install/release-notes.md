@@ -1,8 +1,8 @@
 ---
 title: 릴리스 정보
 titleSuffix: Configuration Manager
-description: Microsoft 기술 자료 문서에서 다루지 않거나 제품에서 아직 해결되지 않은 긴급한 문제에 대해서 알아보세요.
-ms.date: 07/30/2018
+description: Microsoft 지원 기술 자료 문서에서 다루지 않거나 제품에서 아직 해결되지 않은 긴급한 문제에 대해서 알아보세요.
+ms.date: 08/21/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,23 +10,23 @@ ms.assetid: 030947fd-f5e0-4185-8513-2397fb2ec96f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 9daf0fb53face0cf7ed56f2a45ab044fbfac203c
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 939ab4b97a1a62eeae834873dd39e2f0d435527d
+ms.sourcegitcommit: 7eebd112a9862bf98359c1914bb0c86affc5dbc0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385510"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42590100"
 ---
 # <a name="release-notes-for-configuration-manager"></a>Configuration Manager의 릴리스 정보
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Configuration Manager에서는 제품 릴리스 정보가 긴급한 문제로 제한됩니다. 이러한 문제는 제품에서 아직 해결되지 않았거나 Microsoft 기술 자료 문서에서 자세히 설명되지 않은 문제입니다.  
+Configuration Manager에서는 제품 릴리스 정보가 긴급한 문제로 제한됩니다. 이러한 문제는 제품에서 아직 해결되지 않았거나 Microsoft 지원 기술 자료 문서에서 자세히 설명되지 않은 문제입니다.  
 
 기능별 문서에는 핵심 시나리오에 영향을 주는 알려진 문제에 대한 정보가 포함됩니다.  
 
 > [!TIP]  
->  이 항목에는 Configuration Manager의 현재 분기에 대한 릴리스 정보가 포함되어 있습니다. 기술 미리 보기 분기에 대한 자세한 내용은 [기술 미리 보기](../../../../core/get-started/technical-preview.md)를 참조하세요.  
+>  이 항목에는 Configuration Manager의 현재 분기에 대한 릴리스 정보가 포함되어 있습니다. 기술 미리 보기 분기에 대한 자세한 내용은 [기술 미리 보기](/sccm/core/get-started/technical-preview)를 참조하세요.  
 
 다른 버전에서 도입된 새 기능에 대한 자세한 내용은 다음 문서를 참조하세요.
 - [버전 1806의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1806)  
@@ -63,6 +63,16 @@ Configuration Manager 버전 1802부터 CEIP(사용자 환경 개선 프로그�
 
  > [!Note]  
  > [콘솔 설치 프로그램](/sccm/core/servers/deploy/install/install-consoles)에 대한 EnableSQM 매개 변수가 필요하지 않습니다.
+
+
+### <a name="cloud-service-manager-component-stopped-on-site-server-in-passive-mode"></a>클라우드 서비스 관리자 구성 요소가 수동 모드의 사이트 서버에서 정지
+<!--VSO 2858826, SCCMDocs issue 772-->
+*적용 대상: Configuration Manager 버전 1806*
+
+[서비스 연결점](/sccm/core/servers/deploy/configure/about-the-service-connection-point)이 [수동 모드의 사이트 서버](/sccm/core/servers/deploy/configure/site-server-high-availability)에 배치되어 있으면 [클라우드 관리 게이트웨이](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway)의 배포 및 모니터링이 시작되지 않습니다. 클라우드 서비스 관리자 구성 요소(SMS_CLOUD_SERVICES_MANAGER)가 중지 상태에 있습니다.
+
+#### <a name="workaround"></a>해결 방법
+서비스 연결점 역할을 다른 서버로 이동합니다.
 
 
 

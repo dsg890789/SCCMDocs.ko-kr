@@ -2,7 +2,7 @@
 title: 하이브리드 MDM 설정
 titleSuffix: Configuration Manager
 description: Configuration Manager 및 Intune을 사용하여 하이브리드 장치 등록을 설정합니다.
-ms.date: 03/08/2018
+ms.date: 08/14/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -10,19 +10,26 @@ ms.assetid: bb95154b-f63e-4491-896e-41d732c802f8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: fbc5b9abf63d95185795716cfcb9ebfaf3e2ec3d
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 23cfa8f3bb69d980c43ec37355c24c29c96056fd
+ms.sourcegitcommit: 98c3f7848dc9014de05541aefa09f36d49174784
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32347079"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42584566"
 ---
-# <a name="setup-hybrid-mobile-device-management-mdm-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하여 하이브리드 MDM(모바일 장치 관리) 설정
+# <a name="set-up-hybrid-mdm-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune에서 하이브리드 MDM 설정
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 
 Configuration Manager를 사용하여 iOS, Windows 및 Android 장치를 관리하려면 먼저 Intune에 등록해야 합니다. Configuration Manager 및 Intune을 사용하여 하이브리드 장치 등록을 설정하려면 다음 단계를 따르세요. 다음 단계를 완료하면 사용자에 대해 BYOD("Bring Your Own Device") 등록을 사용하도록 설정됩니다. 이 단계는 [BYOD 장치 등록](enroll-hybrid-ios-mac.md) 및 [회사 소유 장치 등록](enroll-company-owned-devices.md)의 필수 조건이기도 합니다.
+
+> [!Important]  
+> 2018년 8월 14일부터 하이브리드 모바일 장치 관리 [기능이 사용되지 않습니다](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures). 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->  
+
+
+
+## <a name="set-up-steps"></a>설정 절차
 
  |단계|세부 정보|  
  |-----------|-------------|  
@@ -35,12 +42,22 @@ Configuration Manager를 사용하여 iOS, Windows 및 Android 장치를 관리�
  |**7단계:** [추가 관리 설정](set-up-additional-management.md)|(선택 사항) 등록된 장치에 대한 구성 항목 및 조건부 액세스를 설정합니다.|
  |**8단계:** [MDM 구성 확인](verify-mdm-configuration.md)|로그 파일을 보고 서비스 연결 지점이 성공적으로 만들어졌는지, 그리고 사용자 계정이 동기화되고 있는지 확인합니다.|
 
+
+
+## <a name="enroll-devices"></a>장치 등록
+
+하이브리드 설치가 완료된 후 Configuration Manager에서 다음과 같은 다양한 방법으로 장치를 등록할 수 있습니다.
+
+- **회사 소유(COD) 장치:** [회사 소유 장치 등록](enroll-company-owned-devices.md)에서는 회사 소유 장치를 등록하는 다양한 플랫폼별 방법에 대한 지침을 제공합니다.  
+
+- **사용자 소유(BYOD) 장치:** [사용자 소유(BYOD) 장치 등록](enroll-hybrid-ios-mac.md)에서는 사용자 소유 장치를 등록하는 방법에 대한 지침을 제공합니다.  
+
+
+
+## <a name="see-also"></a>참고 항목
+
 Configuration Manager 없이 Intune을 사용하고 싶으세요?
 > [!div class="button"]
 [Intune 문서 보기 >](https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune)
 
 
-## <a name="enroll-devices"></a>장치 등록
-하이브리드 설치가 완료된 후 Configuration Manager에서 다음과 같은 다양한 방법으로 장치를 등록할 수 있습니다.
-- **회사 소유(COD) 장치:** [회사 소유 장치 등록](enroll-company-owned-devices.md)에서는 회사 소유 장치를 등록하는 다양한 플랫폼별 방법에 대한 지침을 제공합니다.
-- **사용자 소유(BYOD) 장치:** [사용자 소유(BYOD) 장치 등록](enroll-hybrid-ios-mac.md)에서는 사용자 소유 장치를 등록하는 방법에 대한 지침을 제공합니다.

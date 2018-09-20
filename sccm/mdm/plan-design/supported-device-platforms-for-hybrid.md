@@ -2,7 +2,7 @@
 title: 하이브리드 MDM에 대한 지원되는 장치 플랫폼
 titleSuffix: Configuration Manager
 description: 하이브리드 MDM에 대한 지원되는 장치 플랫폼
-ms.date: 09/22/2017
+ms.date: 08/14/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 6b0732c8-1be8-44ba-8f8e-6fb2b67782e1
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 16cb6655a05c6f52cdf92f6900af3a63d46067bb
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 07c08ce756c70ec4ab96c63de49a87514f9c3cea
+ms.sourcegitcommit: 98c3f7848dc9014de05541aefa09f36d49174784
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32345940"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42584563"
 ---
 # <a name="supported-device-platforms-for-hybrid-mdm"></a>하이브리드 MDM에 대한 지원되는 장치 플랫폼
 
@@ -25,4 +25,9 @@ Microsoft Intune을 사용한 Configuration Manager를 통한 모바일 장치 �
 
 [!INCLUDE[../includes/mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
-하나의 관리 솔루션(모바일 장치 관리 기관)만 사용하여 모바일 장치를 관리할 수 있습니다. 이 설정에 앞서 [Microsoft Intune 독립 실행형과 Configuration Manager의 하이브리드 MDM(모바일 장치 관리) 중에서 선택](../understand/choose-between-standalone-intune-and-hybrid-mobile-device-management.md)해야 합니다.
+> [!Important]  
+> 2018년 8월 14일부터 하이브리드 모바일 장치 관리 [기능이 사용되지 않습니다](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures). 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->  
+
+
+하나의 관리 솔루션(모바일 장치 관리 기관)만 사용하여 모바일 장치를 관리할 수 있습니다. Azure의 Intune은 Microsoft에서 권장하는 MDM 솔루션입니다. 
+
