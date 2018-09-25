@@ -10,12 +10,12 @@ ms.assetid: e83a7b0d-b381-4b4a-8eca-850385abbebb
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: cdf073aa3e9ca3be6062ea0e5e0528bb97937989
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: a3d4cbbf78639a135e9e36e3402f9920a6ef71ed
+ms.sourcegitcommit: 78d2dce465e3500653b252583a6903a006784c26
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32333405"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46448789"
 ---
 # <a name="co-management-dashboard-in-system-center-configuration-manager"></a>System Center Configuration Manager의 공동 관리 대시보드
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -67,7 +67,7 @@ ms.locfileid: "32333405"
     - 규정 준수 정책
     - 리소스 액세스
     - Windows Update for Business
-    - Endpoint Protection
+    - Endpoint Protection
 
      차트 섹션을 마우스로 가리키면 워크로드에 대해 전환된 장치 수를 제공합니다. 
      ![워크로드 전환 막대 그래프](media\co-management-dashboard\Workload-Transition.PNG)
@@ -76,7 +76,7 @@ ms.locfileid: "32333405"
 ## <a name="next-steps"></a>다음 단계
 
 공동 관리에 대한 자세한 내용은 다음을 참조하세요.
- - [Windows 10 장치에 대한 공동 관리](/sccm/core/clients/manage/co-management-overview.md)
- - [공동 관리를 위해 Windows 10 장치 준비](/sccm/core/clients/manage/co-management-prepare.md)
+ - [Windows 10 장치에 대한 공동 관리](/sccm/core/clients/manage/co-management-overview)
+ - [공동 관리를 위해 Windows 10 장치 준비](/sccm/core/clients/manage/co-management-prepare)
 
     

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 304a83ea-0f72-437d-9688-2e6e0c7526dd
-ms.openlocfilehash: cefdaec6aff16f0159f9811b6deb7379ab69a4ec
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 7c775df2446dbd0da1d9317982fc752dbfe5120a
+ms.sourcegitcommit: 4e4b71227309bee7e9f1285971f8235c67a9c502
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32350547"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46533816"
 ---
 # <a name="service-a-server-group"></a>서버 그룹 제공
 
@@ -63,7 +63,7 @@ System Center Configuration Manager 버전 1606부터, 컬렉션에 대한 서�
     >   
     >  `Write-Output "Universal Time: " + $a.ToUniversalTime()  |`  
     >   
-    >  `Out-File C:\temp\start.txt`  
+    >  `Out-File C:\Windows\Temp\start.txt`  
     >   
     >  **배포 후**  
     >   
@@ -73,7 +73,7 @@ System Center Configuration Manager 버전 1606부터, 컬렉션에 대한 서�
     >   
     >  `Write-Output "Universal Time: " + $a.ToUniversalTime()  |`  
     >   
-    >  `Out-File C:\temp\end.txt`  
+    >  `Out-File C:\Windows\Temp\end.txt`  
 
 ## <a name="deploy-software-updates-to-the-server-group-and-monitor-status"></a>서버 그룹에 소프트웨어 업데이트 배포 및 상태 모니터링  
 일반적인 배포 프로세스를 사용하여 서버 그룹 컬렉션에 소프트웨어 업데이트를 배포합니다. 소프트웨어 업데이트를 배포한 후 Configuration Manager 콘솔에서 소프트웨어 업데이트 배포를 모니터링할 수 있습니다.
