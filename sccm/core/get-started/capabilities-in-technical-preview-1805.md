@@ -10,12 +10,12 @@ ms.assetid: 7996b3eb-5259-483b-af40-adae2943d123
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 21833d124ee998f0b943d2620370a2fcff264e28
-ms.sourcegitcommit: 7eebd112a9862bf98359c1914bb0c86affc5dbc0
+ms.openlocfilehash: ebd51b397e37c69e8f6e8d1e154fc369347bd63a
+ms.sourcegitcommit: fe279229a90fdc8cddbb13c7ffdbbb22af0e25ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591648"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47229367"
 ---
 # <a name="capabilities-in-technical-preview-1805-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1805의 기능
 
@@ -255,7 +255,7 @@ CMPivot은 사용자 환경에서 장치의 실시간 상태에 액세스할 수
 2. 인터페이스에서 도구 사용에 대한 추가 정보를 제공합니다. 
      - 맨 위에 쿼리 문자열을 수동으로 입력하거나 인라인 문서에서 링크를 클릭할 수 있습니다.
      - **엔터티** 중 하나를 클릭하여 쿼리 문자열에 추가합니다. 
-     - **표 연산자**, **집계 함수** 및 **스칼라 함수**에 대한 링크를 클릭하면 웹 브라우저에서 언어 참조 문서를 엽니다. CMPivot은 [Azure Log Analytics](https://docs.loganalytics.io/docs/Language-Reference/Change-log)와 동일한 쿼리 언어를 사용합니다.
+     - **표 연산자**, **집계 함수** 및 **스칼라 함수**에 대한 링크를 클릭하면 웹 브라우저에서 언어 참조 문서를 엽니다. CMPivot은 [Azure Log Analytics](https://docs.microsoft.com/azure/kusto/query/)와 동일한 쿼리 언어를 사용합니다.
 
 
 

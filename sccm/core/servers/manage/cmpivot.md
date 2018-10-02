@@ -10,12 +10,12 @@ ms.assetid: 32e2d6b9-148f-45e2-8083-98c656473f82
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0429c62f68a111bc7f620d1c954d5c8cf944d1c1
-ms.sourcegitcommit: 7eebd112a9862bf98359c1914bb0c86affc5dbc0
+ms.openlocfilehash: 2e0f74790437b34d1c5cd5dc00767ec782a51b45
+ms.sourcegitcommit: fe279229a90fdc8cddbb13c7ffdbbb22af0e25ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590059"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47229299"
 ---
 # <a name="cmpivot-for-real-time-data-in-configuration-manager"></a>Configuration Manager에서 실시간 데이터에 대한 CMPivot
 
@@ -78,7 +78,7 @@ CMPivot을 사용하려면 다음 구성 요소가 필요합니다.
 
      - **엔터티** 중 하나를 클릭하여 쿼리 문자열에 추가합니다.  
 
-     - **표 연산자**, **집계 함수** 및 **스칼라 함수**에 대한 링크를 클릭하면 웹 브라우저에서 언어 참조 문서를 엽니다. CMPivot은 [Azure Log Analytics](https://docs.loganalytics.io/docs/Language-Reference/Change-log)와 동일한 쿼리 언어를 사용합니다.  
+     - **표 연산자**, **집계 함수** 및 **스칼라 함수**에 대한 링크를 클릭하면 웹 브라우저에서 언어 참조 문서를 엽니다. CMPivot은 [Azure Log Analytics](https://docs.microsoft.com/azure/kusto/query/)와 동일한 쿼리 언어를 사용합니다.  
 
 3. CMPivot 창을 열어 두어 클라이언트에서 결과를 봅니다. CMPivot 창을 닫으면 세션이 완료됩니다.  
 
@@ -113,7 +113,7 @@ CMPivot 창은 다음과 같은 요소를 포함합니다.
 
 5. 쿼리 창은 컬렉션의 클라이언트에서 실행할 쿼리를 작성하거나 입력하는 위치입니다.  
 
-    - CMPivot은 [Azure Log Analytics](https://docs.loganalytics.io/docs/Language-Reference/Change-log)와 동일한 쿼리 언어의 하위 집합을 사용합니다.  
+    - CMPivot은 [Azure Log Analytics](https://docs.microsoft.com/azure/kusto/query/)와 동일한 쿼리 언어의 하위 집합을 사용합니다.  
 
     - 쿼리 창에서 콘텐츠를 잘라내기, 복사 또는 붙여넣습니다.  
 

@@ -3,6 +3,7 @@ title: 새 버전 1610
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager 버전 1610에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.
 ms.date: 11/23/2016
+ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: f7eb0803-3f8f-4ab6-825a-99ac11f5ba7d
@@ -10,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9bb046cd08e4e9d8cff6e34ea88ce8e582e2c863
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: cb9b19c95caaf914fa1cbf040258c30ede2dc54a
+ms.sourcegitcommit: fe279229a90fdc8cddbb13c7ffdbbb22af0e25ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32342055"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47229316"
 ---
 # <a name="what39s-new-in-version-1610-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1610의 새로운 기능
 
