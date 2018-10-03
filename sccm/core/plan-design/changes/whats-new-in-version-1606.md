@@ -91,7 +91,7 @@ OMS 커넥터는 시험판 기능입니다. 사용하도록 설정하려면 [업
 
 ### <a name="support-for-cache-size-in-client-settings"></a>클라이언트 설정에서 캐시 크기 지원
 
-이제 Configuration Manager 콘솔의 **클라이언트 설정**을 사용하여 클라이언트 컴퓨터의 캐시 폴더 크기를 구성할 수 있습니다. 이전에는 클라이언트 소프트웨어를 설치하거나 다시 설치할 때만 클라이언트 캐시 크기를 설정할 수 있었습니다. 이제 클라이언트 설정(기본값 또는 사용자 지정)으로 캐시 크기를 지정한 다음 클라이언트를 다시 설치할 필요 없이 클라이언트에서 다음 정책 업데이트 시 해당 설정을 적용할 수 있습니다. 자세한 내용은 [Configure the Client Cache for Configuration Manager Clients](../../../core/clients/manage/manage-clients.md#BKMK_ClientCache)항목을 참조하세요.
+이제 Configuration Manager 콘솔의 **클라이언트 설정**을 사용하여 클라이언트 컴퓨터의 캐시 폴더 크기를 구성할 수 있습니다. 이전에는 클라이언트 소프트웨어를 설치하거나 다시 설치할 때만 클라이언트 캐시 크기를 설정할 수 있었습니다. 이제 클라이언트 설정(기본값 또는 사용자 지정)으로 캐시 크기를 지정한 다음 클라이언트를 다시 설치할 필요 없이 클라이언트에서 다음 정책 업데이트 시 해당 설정을 적용할 수 있습니다. 자세한 내용은 [Configuration Manager 클라이언트에 대한 클라이언트 캐시 구성](../../../core/clients/manage/manage-clients.md#BKMK_ClientCache)항목을 참조하세요.
 
 ## <a name="on-premises-mobile-device-management"></a>온-프레미스 MDM(모바일 장치 관리)
 
