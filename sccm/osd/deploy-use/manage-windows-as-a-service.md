@@ -33,7 +33,7 @@ ms.locfileid: "32351645"
 ##  <a name="BKMK_Prerequisites"></a> 전제 조건  
  Windows 10 서비스 대시보드에서 데이터를 보려면 다음 작업을 수행해야 합니다.  
 
--   Windows 10 컴퓨터는 소프트웨어 업데이트 관리를 위해 WSUS(Windows Server Update Services)에서 Configuration Manager 소프트웨어 업데이트를 사용해야 합니다. 컴퓨터가 소프트웨어 업데이트 관리를 위해 비즈니스용 Windows 업데이트(또는 Windows 참가자)를 사용할 때 Windows 10 서비스 계획에서 해당 컴퓨터가 평가되지 않습니다. 자세한 내용은 [Integration with Windows Update for Business in Windows 10](../../sum/deploy-use/integrate-windows-update-for-business-windows-10.md)을 참조하십시오.  
+-   Windows 10 컴퓨터는 소프트웨어 업데이트 관리를 위해 WSUS(Windows Server Update Services)에서 Configuration Manager 소프트웨어 업데이트를 사용해야 합니다. 컴퓨터가 소프트웨어 업데이트 관리를 위해 비즈니스용 Windows 업데이트(또는 Windows 참가자)를 사용할 때 Windows 10 서비스 계획에서 해당 컴퓨터가 평가되지 않습니다. 자세한 내용은 [Windows 10에서 비즈니스용 Windows 업데이트와 통합](../../sum/deploy-use/integrate-windows-update-for-business-windows-10.md)을 참조하십시오.  
 
 -   WSUS 4.0, [핫픽스 3095113](https://support.microsoft.com/kb/3095113) 을 소프트웨어 업데이트 지점 및 사이트 서버에 설치해야 합니다. 이 핫픽스는 **업그레이드** 소프트웨어 업데이트 분류를 추가합니다. 자세한 내용은 [소프트웨어 업데이트에 대한 필수 조건](../../sum/plan-design/prerequisites-for-software-updates.md)을 참조하세요.  
 

@@ -146,7 +146,7 @@ CMEnroll 도구를 사용하여 클라이언트 설치를 자동화하고 클라
 
 4.  Mac 컴퓨터의 Tools 폴더에서 다음 명령을 입력합니다. **sudo ./CMEnroll -s &lt;enrollment_proxy_server_name> -ignorecertchainvalidation -u &lt;사용자 이름'>**  
 
-    클라이언트를 설치한 후 Mac 컴퓨터 등록을 안내하는 Mac 컴퓨터 등록 마법사가 열립니다. 이 방법으로 클라이언트를 등록하려면 이 항목에서 [To enroll the client by using the Mac Computer Enrollment Wizard](#BKMK_EnrollR2) 섹션을 참조하세요.  
+    클라이언트를 설치한 후 Mac 컴퓨터 등록을 안내하는 Mac 컴퓨터 등록 마법사가 열립니다. 이 방법으로 클라이언트를 등록하려면 이 항목에서 [Mac 컴퓨터 등록 마법사를 사용하여 클라이언트를 등록하려면](#BKMK_EnrollR2) 섹션을 참조하세요.  
 
 5. Active Directory 사용자 계정의 암호를 입력합니다.  이 명령을 입력하면 두 가지 암호를 묻는 메시지가 나타납니다. 첫 번째는 명령을 실행하기 위한 슈퍼 사용자 계정의 암호를 묻고, 두 번째는 Active Directory 사용자 계정의 암호를 묻습니다. 메시지가 동일하게 나타날 수 있으므로 올바른 순서로 암호를 지정해야 합니다.  
 
