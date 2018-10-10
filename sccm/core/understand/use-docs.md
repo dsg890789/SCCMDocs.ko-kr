@@ -2,7 +2,7 @@
 title: 문서 사용 방법
 titleSuffix: Configuration Manager
 description: Configuration Manager 기술 문서 라이브러리를 사용하는 방법에 대한 팁을 알아봅니다.
-ms.date: 04/30/2018
+ms.date: 09/07/2018
 ms.prod: configuration-manager
 ms.technology:
 - configmgr-other
@@ -11,12 +11,12 @@ ms.assetid: b3d755bd-0870-4f1f-a56d-bfd3c7b492b9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 46bff7e26a5df326b686b07c37f1d58352755857
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 6bd4675d3b366c5f414467b76627e25b91259ef2
+ms.sourcegitcommit: 240d3199e1c6fa47af6eda499492b2527516ab18
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32345093"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44326206"
 ---
 # <a name="how-to-use-the-configuration-manager-docs"></a>Configuration Manager 문서를 사용하는 방법
 
@@ -63,9 +63,9 @@ ms.locfileid: "32345093"
 
 모든 문서의 오른쪽 위에 있는 **피드백** 링크를 클릭하여 맨 아래의 피드백 섹션으로 이동합니다. 이 섹션은 GitHub 문제와 통합됩니다. GitHub 문제와 통합에 대한 자세한 내용은 [문서 플랫폼 블로그 게시물](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs)을 참조합니다.
 
-Configuration Manager 제품 자체에 대한 피드백을 공유하려면 **제품 피드백 제공**을 클릭합니다. 자세한 내용은 [제품 피드백](/sccm/core/understand/find-help#product-feedback)을 참조하세요. 
+Configuration Manager 제품 자체에 대한 피드백을 공유하려면 **제품 피드백**을 클릭합니다. 자세한 내용은 [제품 피드백](/sccm/core/understand/find-help#product-feedback)을 참조하세요. 
 
-[GitHub 계정](https://github.com/join)은 설명서 피드백을 제공하는 데 필수 조건입니다. 로그인하면 MicrosoftDocs에 대한 일회성 인증 방법이 있습니다. **설명서 피드백 제공**을 클릭해서 제목 및 설명을 입력한 다음, **피드백을 제출**합니다. 이 작업은 [SCCMdocs 리포지토리](https://github.com/MicrosoftDocs/SCCMdocs/issues)에서 대상 문서에 대한 새로운 문제를 제기합니다.
+[GitHub 계정](https://github.com/join)은 설명서 피드백을 제공하는 데 필수 조건입니다. 로그인하면 MicrosoftDocs에 대한 일회성 인증 방법이 있습니다. **콘텐츠 피드백**을 클릭해 제목 및 설명을 입력한 다음, **피드백을 제출**합니다. 이 작업은 [SCCMdocs 리포지토리](https://github.com/MicrosoftDocs/SCCMdocs/issues)에서 대상 문서에 대한 새로운 문제를 제기합니다.
 
 또한 이 통합에는 대상 문서에 대한 기존 개방형 또는 폐쇄형 문제가 모두 표시됩니다. 있는 경우 새 문제를 제출하기 전에 검토합니다. 관련 문제를 발견할 경우 얼굴 아이콘을 클릭하여 대응을 추가하거나 확장하여 주석을 추가할 수 있습니다. 
 
@@ -106,15 +106,49 @@ docs.microsoft.com 플랫폼에 대한 피드백을 공유하려면 [문서 피�
 docs.microsoft.com의 대부분 콘텐츠와 마찬가지로 Configuration Manager 문서 라이브러리는 GitHub의 오픈 소스입니다. 이 라이브러리는 커뮤니티 기여를 수용하고 권장합니다. 시작 방법에 대한 자세한 내용은 [기여자 가이드](https://docs.microsoft.com/contribute)를 참조합니다. [GitHub 계정](https://github.com/join) 만들기는 유일한 필수 조건입니다.
 
 #### <a name="basic-steps-to-contribute-to-sccmdocs"></a>SCCMdocs에 기여하는 기본 단계
-1. 대상 문서에서 **편집**을 클릭합니다. 이 작업은 GitHub에서 원본 파일을 엽니다.
-2. 원본 파일을 편집하려면 연필 아이콘을 클릭합니다.
-3. Markdown 원본에서 변경합니다. 자세한 내용은 [문서 작성을 위한 Markdown 사용 방법](https://docs.microsoft.com/contribute/how-to-write-use-markdown)을 참조하세요. 
-4. 파일 변경 제안 섹션에서 변경한 *내용*을 설명하는 공용 커밋 주석을 입력합니다. 그럼 다음, **파일 변경 제안**을 클릭합니다.
-5. 아래로 스크롤하여 변경 내용을 확인합니다. **끌어오기 요청 만들기**를 클릭하여 양식을 엽니다. 이런 변경을 한 *이유*를 설명합니다. 검토할 문서 작성자 및 요청을 태그합니다. **끌어오기 요청 만들기**를 클릭합니다.
+1. 대상 문서에서 **편집**을 클릭합니다. 이 작업은 GitHub에서 원본 파일을 엽니다.  
+
+2. 원본 파일을 편집하려면 연필 아이콘을 클릭합니다.  
+
+3. Markdown 원본에서 변경합니다. 자세한 내용은 [문서 작성을 위한 Markdown 사용 방법](https://docs.microsoft.com/contribute/how-to-write-use-markdown)을 참조하세요.  
+
+4. 파일 변경 제안 섹션에서 변경한 *내용*을 설명하는 공용 커밋 주석을 입력합니다. 그럼 다음, **파일 변경 제안**을 클릭합니다.  
+
+5. 아래로 스크롤하여 변경 내용을 확인합니다. **끌어오기 요청 만들기**를 클릭하여 양식을 엽니다. 이런 변경을 한 *이유*를 설명합니다. 검토할 문서 작성자 및 요청을 태그합니다. **끌어오기 요청 만들기**를 클릭합니다.  
+
 
 ### <a name="what-to-contribute"></a>기여한 내용
-기여에 관심이 있지만 어디서 시작해야 할지 모르는 경우 다음 제안을 참조합니다.
-- 문서의 정확도를 검토합니다. 그런 다음, `mm/dd/yyyy` 형식을 사용하여 **ms.date** 메타데이터를 업데이트합니다. 이 기여는 콘텐츠를 최신 상태로 유지하는 데 도움이 됩니다.
-- 설명, 예제 또는 사용자 경험 기반 지침을 추가합니다. 이 기여는 지식을 공유하는 커뮤니티의 능력을 사용합니다.  
-- 비영어권 언어로 된 올바른 번역입니다. 이 기여는 지역화된 콘텐츠의 유용성을 향상시킵니다.
-- [good-first-issue](https://github.com/MicrosoftDocs/sccmdocs/issues?q=is:open+is:issue+label:good-first-issue) 및 [help-wanted](https://github.com/MicrosoftDocs/sccmdocs/issues?q=is:open+is:issue+label:help-wanted) 같은 커뮤니티 대상 레이블에 대한 문제 목록을 검색합니다. Microsoft 작성자가 커뮤니티 기여를 위해 적합한 후보인 문제에 이러한 레이블을 할당합니다.
+
+기여에 관심이 있지만 어디서 시작해야 할지 모르는 경우 다음 제안을 참조합니다.  
+
+- 다음과 같은 커뮤니티 대상 레이블에 대한 문제 목록을 검색합니다.  
+    - [good-first-issue](https://github.com/MicrosoftDocs/sccmdocs/issues?q=is:open+is:issue+label:good-first-issue)   
+    - [help-wanted](https://github.com/MicrosoftDocs/sccmdocs/issues?q=is:open+is:issue+label:help-wanted)  
+
+    Microsoft 작성자가 커뮤니티 기여를 위해 적합한 후보인 문제에 이러한 레이블을 할당합니다.  
+
+- 문서의 정확도를 검토합니다. 그런 다음, `mm/dd/yyyy` 형식을 사용하여 **ms.date** 메타데이터를 업데이트합니다. 이 기여는 콘텐츠를 최신 상태로 유지하는 데 도움이 됩니다.  
+
+- 설명, 예제 또는 사용자 경험 기반 지침을 추가합니다. 이 기여는 지식을 공유하는 커뮤니티의 능력을 사용합니다.   
+
+- 비영어권 언어로 된 올바른 번역입니다. 이 기여는 지역화된 콘텐츠의 유용성을 향상시킵니다.  
+
+> [!Note]  
+> 대규모 기여는 Microsoft 직원이 아닌 경우 기여 사용권 계약(CLA)에 서명해야 합니다. 기여가 임계값을 충족하면 GitHub가 본 계약에 자동으로 서명해야 합니다.  
+
+
+### <a name="tips"></a>팁
+
+Configuration Manager 문서에 기여할 때 다음 일반 지침을 따르세요.
+
+- 대규모 끌어오기 요청 대신 [문제를 제기](https://docs.microsoft.com/sccm/core/understand/use-docs#bkmk_docfeedback)하고 토론을 시작합니다. 긴 시간을 투자하기 전에 방향에 동의할 수 있습니다.  
+
+- [Microsoft 스타일 가이드](https://aka.ms/MicrosoftStyle)를 읽습니다. [Top 10 tips for Microsoft style and voice(Microsoft 스타일 및 음성에 대한 상위 10가지 팁)](https://docs.microsoft.com/style-guide/top-10-tips-style-voice)를 숙지합니다.  
+
+- [끌어오기 요청 템플릿](https://github.com/MicrosoftDocs/SCCMdocs/blob/master/PULL_REQUEST_TEMPLATE.md)을 작업 시작점으로 활용합니다.  
+
+- [GitHub Flow 워크플로](https://guides.github.com/introduction/flow/)를 따릅니다.  
+
+- 자신의 기여에 대해 블로그나 트윗 등에 자주 게시하세요.  
+
+(이 목록은 [.NET 기여 가이드](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md#dos-and-donts)에서 발췌되었습니다.)

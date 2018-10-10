@@ -10,12 +10,12 @@ ms.assetid: 0249dbd3-1e85-4d05-a9e5-420fbe44d850
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 89742711f17997487fec403d51c89a42ceff34ec
-ms.sourcegitcommit: 52ec30245ba559596d2f88a3eff70c467b4a056f
+ms.openlocfilehash: 13dbffd442cfbe0ced30d46b9a93dd03418202c9
+ms.sourcegitcommit: 0d7efd9e064f9d6a9efcfa6a36fd55d4bee20059
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43381043"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43893844"
 ---
 # <a name="whats-new-in-version-1806-of-configuration-manager-current-branch"></a>Configuration Manager 1806 버전의 새로운 기능
 
@@ -385,8 +385,15 @@ Version 1806 drops support for the following products:
 
 ## <a name="software-center"></a>소프트웨어 센터
 
+> [!Important]  
+> 새 Configuration Manager 기능을 활용하려면 먼저 클라이언트를 최신 버전으로 업데이트합니다. 사이트 및 콘솔을 업데이트할 때 Configuration Manager 콘솔에 새 기능이 표시되지만 클라이언트 버전도 최신 버전이 될 때까지 전체 시나리오가 작동하지 않습니다.
+
+
 ### <a name="software-center-infrastructure-improvements"></a>소프트웨어 센터 인프라 개선 사항
-<!--1358309--> 소프트웨어 센터에 사용자가 사용할 수 있는 응용 프로그램을 표시하는 데 더 이상 응용 프로그램 카탈로그 역할이 필요하지 않습니다. 이 변경은 사용자에게 응용 프로그램을 전달하기 위해 필요한 서버 인프라를 줄일 수 있습니다. 소프트웨어 센터는 [경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups#management-points)에 할당하여 대규모 환경의 크기 조정을 더 잘하도록 도움을 주는 이 정보를 얻으려면 관리 지점에 의존합니다.
+<!--1358309-->
+ ***[업데이트됨]*** 소프트웨어 센터에 사용자가 사용할 수 있는 응용 프로그램을 표시하는 데 더 이상 응용 프로그램 카탈로그 역할이 필요하지 않습니다. 이 변경은 사용자에게 응용 프로그램을 전달하기 위해 필요한 서버 인프라를 줄일 수 있습니다. 소프트웨어 센터는 [경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups#management-points)에 할당하여 대규모 환경의 크기 조정을 더 잘하도록 도움을 주는 이 정보를 얻으려면 관리 지점에 의존합니다.
+
+자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요.  
 
 > [!Note]  
 > 응용 프로그램 카탈로그 웹 사이트 지점 및 웹 서비스 지점은 1806에서 더 이상 *필요하지 않지만* *지원은 계속*됩니다. 

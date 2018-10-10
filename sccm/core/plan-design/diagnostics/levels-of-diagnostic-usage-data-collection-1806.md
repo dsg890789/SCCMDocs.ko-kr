@@ -10,12 +10,12 @@ ms.assetid: a0287beb-70a9-4b57-a627-e7bfba27fd3b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5da60a9dd45b3993f9c1afd95c41a90956ec70c4
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: d964295134538cf281af214830a5bc416484be51
+ms.sourcegitcommit: 0d7efd9e064f9d6a9efcfa6a36fd55d4bee20059
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385964"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43893674"
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1806"></a>1806 버전의 진단 사용 현황 데이터 수집 수준
 
@@ -258,11 +258,11 @@ Configuration Manager 버전 1806의 경우 이 수준에는 다음과 같은 �
 
   - Configuration Manager에 연결된 Azure Active Directory 응용 프로그램 및 서비스의 수
 
-  - Operations Management Suite에 동기화되는 컬렉션 개수
+  - Azure Log Analytics에 동기화된 컬렉션 수
 
   - Upgrade Analytics 커넥터 개수
 
-  - Operations Management Suite 클라우드 커넥터를 사용하도록 설정할지 여부  
+  - Azure Log Analytics 클라우드 커넥터 활성화 여부  
 
   - ***[New]*** 클라우드 배포 지점을 원본 위치로 하는 풀(pull) 배포 지점 수  
 
@@ -330,7 +330,7 @@ Configuration Manager 버전 1806의 경우 이 수준에는 다음과 같은 �
   - ***[New]*** 로컬 또는 원격 콘텐츠 라이브러리 형식  
 
 
-### <a name="endpoint-protection"></a>Endpoint Protection  
+### <a name="endpoint-protection"></a>Endpoint Protection  
 
    - Windows Defender ATP(Advanced Threat Protection) 정책: 정책 개수 및 정책 배포 여부
 

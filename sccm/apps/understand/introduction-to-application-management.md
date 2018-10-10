@@ -1,8 +1,8 @@
 ---
 title: 앱 관리 소개
 titleSuffix: Configuration Manager
-description: Configuration Manager 응용 프로그램을 관리 및 배포하는 데 필요한 기본 정보를 검색합니다.
-ms.date: 07/30/2018
+description: Configuration Manager의 응용 프로그램을 관리 및 배포하는 데 필요한 기본 정보를 검색합니다.
+ms.date: 08/31/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-app
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 08f711ba-83bf-4b5f-9520-a0778c6ae7eb
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 70ab4136f39b4bf559c3d460ca1528bb4de0f6e1
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 0d4e83cbcb1c95303719b1d86ffc9a8969c16998
+ms.sourcegitcommit: 0d7efd9e064f9d6a9efcfa6a36fd55d4bee20059
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39384293"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43893909"
 ---
 # <a name="introduction-to-application-management-in-configuration-manager"></a>Configuration Manager의 응용 프로그램 관리 소개
 
@@ -186,9 +186,9 @@ Configuration Manager 클라이언트는 응용 프로그램 배포를 정기적
 - [소프트웨어 센터 사용자 가이드](/sccm/core/understand/software-center)
 
 > [!Note]  
-> 응용 프로그램 카탈로그 서비스 지점 역할은 1806에서 더 이상 필요하지 않지만 역할은 지원됩니다. 
+> 응용 프로그램 카탈로그 웹 사이트 지점 및 웹 서비스 지점은 1806에서 더 이상 *필요하지 않지만* *지원은 계속*됩니다. 
 > 
-> 버전 1806에서는 응용 프로그램 카탈로그 웹 사이트 역할이 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
+> 응용 프로그램 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
 
 
 

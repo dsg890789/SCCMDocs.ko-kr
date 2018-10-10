@@ -10,12 +10,12 @@ ms.assetid: 8fce5391-8e75-4f99-813a-76f8842be5bc
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 46f9d4bb2b861b767352793cde0ce436a7f4da1d
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 7ba95a61b074fa1ae4cc4c77f896659b91eaaaaa
+ms.sourcegitcommit: 0d7efd9e064f9d6a9efcfa6a36fd55d4bee20059
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32340535"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43893701"
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1710-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1710에 대한 진단 및 사용 현황 데이터 수집 수준
 
@@ -214,11 +214,11 @@ System Center Configuration Manager 버전 1710의 경우 이 수준에는 다�
 
   - Azure Active Directory 서비스에 가입한 클라이언트 개수
 
-  - Operations Management Suite에 동기화되는 컬렉션 개수
+  - Azure Log Analytics에 동기화된 컬렉션 수
 
   - Upgrade Analytics 커넥터 개수
 
-  - Operations Management Suite 클라우드 커넥터를 사용하도록 설정할지 여부
+  - Azure Log Analytics 클라우드 커넥터 활성화 여부
 
 
 - ***[새로운 기능]*** 공동 관리

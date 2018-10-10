@@ -10,12 +10,12 @@ ms.assetid: 6bce416b-761d-4b23-bd33-5b7c30edb10d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e72cdf667f96828fb6730cf3294c8d20ec553130
-ms.sourcegitcommit: 759098de944b8f7d5eedfc2bae2cb9a6ba15276f
+ms.openlocfilehash: 7b82bdfcbe69c7e9d59185fc6af20a85e65a6e7d
+ms.sourcegitcommit: 0d7efd9e064f9d6a9efcfa6a36fd55d4bee20059
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43289257"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43893569"
 ---
 # <a name="pre-release-features-in-configuration-manager"></a>Configuration Manager 시험판 기능
 
@@ -91,7 +91,7 @@ ms.locfileid: "43289257"
 | 데이터 웨어하우스 서비스 지점 <!-- 1277922 --> |  [버전 1702](/sccm/core/servers/manage/data-warehouse) |[버전 1706](/sccm/core/servers/manage/data-warehouse)|
 | 클라이언트에 콘텐츠 배포를 위한 피어 캐시 <!-- 1101436 --> |  [버전 1610](/sccm/core/plan-design/hierarchy/client-peer-cache) | [버전 1710](/sccm/core/plan-design/hierarchy/client-peer-cache)|
 | 클라우드 관리 게이트웨이 <!-- 1101764 --> |  [버전 1610](/sccm/core/clients/manage/plan-cloud-management-gateway) |[1802 버전](/sccm/core/clients/manage/plan-cloud-management-gateway)|
-| Microsoft Operations Management Suite 커넥터 <!-- 1236739 --> | [버전 1606](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite) |[1802 버전](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite)|
+| Log Analytics 커넥터 <!-- 1236739 --> | [버전 1606](/sccm/core/clients/manage/sync-data-log-analytics) |[1802 버전](/sccm/core/clients/manage/sync-data-log-analytics)|
 | 클러스터 인식 컬렉션 서비스(서버 그룹 서비스) <!-- 1081776 --> | [버전 1602](/sccm/core/get-started/capabilities-in-technical-preview-1605#BKMK_ServerGroups)|![아직 추가되지 않음](media/red_x.png)|
 | System Center Configuration Manager에서 관리하는 PC에 대한 조건부 액세스 <!--  --> | [버전 1602](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm)     | [버전 1702](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm)                     |
 <!--Image used = ![Not yet](media/red_x.png) -->

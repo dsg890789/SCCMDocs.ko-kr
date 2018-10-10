@@ -10,12 +10,12 @@ ms.assetid: 14ee4fb0-7790-45a6-906e-6e55627d4079
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0a855e332fe54779cc324ccf4fb2206a64b74110
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 8ed8aed38f20adb3558b61dd32a36f88fbac3b00
+ms.sourcegitcommit: 0d7efd9e064f9d6a9efcfa6a36fd55d4bee20059
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32344231"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43893511"
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1706-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1706에 대한 진단 사용 현황 데이터 수집의 수준
 
@@ -58,8 +58,7 @@ System Center Configuration Manager 버전 1706에서 이 수준에는 다음이
 
 - 기본 OSD(운영 체제 배포) 개수(이미지)
 
-- 
-  ***[업데이트된 기능]*** 기본 사이트 시스템 서버 정보(사용되는 사이트 시스템 역할, 인터넷 및 SSL 상태, 운영 체제, 프로세서, 실제 또는 가상 머신, 사이트 서버 고가용성의 사용)
+- ***[업데이트된 기능]*** 기본 사이트 시스템 서버 정보(사용되는 사이트 시스템 역할, 인터넷 및 SSL 상태, 운영 체제, 프로세서, 실제 또는 가상 머신, 사이트 서버 고가용성의 사용)
 
 - Configuration Manager 데이터베이스 스키마(모든 개체 정의의 해시)
 
@@ -215,11 +214,11 @@ System Center Configuration Manager 버전 1706에서 이 수준에는 다음이
 
   - Azure Active Directory 서비스에 가입한 클라이언트 개수
 
-  - Operations Management Suite에 동기화되는 컬렉션 개수
+  - Azure Log Analytics에 동기화된 컬렉션 수
 
   - Upgrade Analytics 커넥터 개수
 
-  - Operations Management Suite 클라우드 커넥터를 사용하도록 설정할지 여부
+  - Azure Log Analytics 클라우드 커넥터 활성화 여부
 
 
 

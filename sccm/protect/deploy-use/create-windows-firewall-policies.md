@@ -10,18 +10,18 @@ ms.assetid: 6ecdfad1-6305-45a8-ae75-3f33b967cb8f
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: e3030b4390e38ca2dfce6805c04d5b0bb7916bba
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 3217fe8f6d9ee541105abdecf9963898af38b907
+ms.sourcegitcommit: 316899b08f2ef372993909e08e069f7edfed1d33
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32347956"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44111028"
 ---
 # <a name="create-and-deploy-windows-firewall-policies-for-endpoint-protection-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Endpoint Protection에 대한 Windows 방화벽 정책 만들기 및 배포
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center 2012 Configuration Manager에서 Endpoint Protection에 대한 방화벽 정책을 사용하면 계층의 클라이언트 컴퓨터에서 기본 Windows 방화벽 구성 및 유지 관리 작업을 수행할 수 있습니다. Windows 방화벽 정책을 사용하여 다음 작업을 수행할 수 있습니다.  
+System Center Configuration Manager에서 Endpoint Protection에 대한 방화벽 정책을 사용하면 계층의 클라이언트 컴퓨터에서 기본 Windows 방화벽 구성 및 유지 관리 작업을 수행할 수 있습니다. Windows 방화벽 정책을 사용하여 다음 작업을 수행할 수 있습니다.  
 
 -   Windows 방화벽이 켜져 있는지 여부를 제어합니다.  
 

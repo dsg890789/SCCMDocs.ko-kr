@@ -10,12 +10,12 @@ ms.assetid: b670cfaf-96a4-4fcb-9caa-0f2e8c2c6198
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 7e445cd6e49617afde6f8acf043eeb4c707e1480
-ms.sourcegitcommit: 4b8afbd08ecf8fd54950eeb630caf191d3aa4767
+ms.openlocfilehash: 801cd2cd35d370fbe469b16613da7f7592feff6e
+ms.sourcegitcommit: 0d7efd9e064f9d6a9efcfa6a36fd55d4bee20059
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36261016"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43893811"
 ---
 # <a name="optimize-windows-10-update-delivery-with-configuration-manager"></a>Configuration Manager로 Windows 10 업데이트 배달 최적화
 
@@ -89,7 +89,7 @@ Configuration Manager는 다음을 포함하여 많은 피어 투 피어 기술�
 | 디스크의 캐시 크기 제어 | 예 | 예 | 예 |
 | 피어 원본의 검색 | 자동 | 수동(클라이언트 에이전트 설정) | 자동 |
 | 피어 검색 | 배달 최적화 클라우드 서비스 사용(인터넷 액세스 필요) | 관리 지점 사용(클라이언트 경계 그룹 기반) | 브로드캐스트 |
-| 보고 | 예(Microsoft Operations Management Suite 사용) | ConfigMgr 클라이언트 데이터 원본 대시보드 | ConfigMgr 클라이언트 데이터 원본 대시보드 |
+| 보고 | 예(Windows Analytics 사용) | ConfigMgr 클라이언트 데이터 원본 대시보드 | ConfigMgr 클라이언트 데이터 원본 대시보드 |
 | WAN 사용량 제어 | 예(기본, 그룹 정책 설정을 통해 제어할 수 있음) | 경계 그룹 | 서브넷 지원만 |
 | 지원되는 콘텐츠 유형 | - Express 업데이트(ConfigMgr 사용)</br> - Windows 및 보안 업데이트</br> - 드라이버</br> - Windows 스토어 앱</br> - 비즈니스용 Windows 스토어 앱 | 모든 ConfigMgr 콘텐츠 유형([Windows PE](/sccm/osd/get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic)에서 다운로드한 이미지 포함) | 모든 ConfigMgr 콘텐츠 유형(이미지 제외) |
 | ConfigMgr를 통한 관리 | 일부(클라이언트 에이전트 설정) | 예(클라이언트 에이전트 설정) | 예(클라이언트 에이전트 설정) |

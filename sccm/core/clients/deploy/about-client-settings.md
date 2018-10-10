@@ -2,7 +2,7 @@
 title: 클라이언트 설정
 titleSuffix: Configuration Manager
 description: 클라이언트 동작을 제어하기 위한 기본 및 사용자 지정 설정에 대해 알아봅니다.
-ms.date: 07/30/2018
+ms.date: 08/31/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: f7560876-8084-4570-aeab-7fd44f4ba737
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 38306efc9fbd7b38a5c5f0dad57fbd1a1b2c0557
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: ff4cdcc52e9be329fcfa0fd2127c43255c73ad65
+ms.sourcegitcommit: 0d7efd9e064f9d6a9efcfa6a36fd55d4bee20059
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385408"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43893875"
 ---
 # <a name="about-client-settings-in-configuration-manager"></a>Configuration Manager의 클라이언트 설정 정보
 
@@ -90,15 +90,7 @@ Configuration Manager는 이 트래픽을 허용하도록 자동으로 Windows �
 
 이 옵션을 **예**로 설정하고 [사용자 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#bkmk_aboutUser)을 사용하면 로그인한 사용자를 대상으로 하는 응용 프로그램 및 프로그램이 클라이언트에 수신됩니다.  
 
-응용 프로그램 카탈로그는 사이트 서버에서 사용자에게 사용 가능한 소프트웨어 목록을 수신합니다. 따라서 사용자가 응용 프로그램 카탈로그에서 응용 프로그램을 확인하고 요청하기 위해 이 설정이 **예**일 필요가 없습니다. 이 설정이 **아니요**이면 사용자가 응용 프로그램을 사용할 때 다음 동작이 작동하지 않습니다.  
-
--   사용자가 응용 프로그램 카탈로그에 표시된 응용 프로그램을 설치할 수 없습니다.  
-
--   응용 프로그램 승인 요청에 대한 알림이 사용자에게 표시되지 않습니다. 대신 응용 프로그램 카탈로그를 새로 고치고 응용 프로그램 상태를 확인해야 합니다.  
-
--   사용자는 응용 프로그램 카탈로그에 게시된 응용 프로그램에 대한 수정 버전과 업데이트를 받을 수 없습니다. 사용자는 응용 프로그램 카탈로그에서 응용 프로그램 정보에 대한 변경 내용을 볼 수 있습니다.  
-
--   클라이언트가 응용 프로그램 카탈로그에서 응용 프로그램을 설치한 후에 응용 프로그램 배포를 제거할 경우 클라이언트는 최대 2일 동안 응용 프로그램이 설치되어 있는지를 계속 확인합니다.  
+응용 프로그램 카탈로그는 사이트 서버에서 사용자에게 사용 가능한 소프트웨어 목록을 수신합니다. 따라서 사용자가 응용 프로그램 카탈로그에서 응용 프로그램을 확인하고 요청하기 위해 이 설정이 **예**일 필요가 없습니다. 설정이 **아니요**인 경우, 사용자가 응용 프로그램 카탈로그에 표시된 응용 프로그램을 설치할 수 없습니다.  
 
 또한 이 설정이 **아니요**이면 사용자는 배포되는 필수 응용 프로그램을 받을 수 없습니다. 또한 사용자는 사용자 정책에서 다른 관리 작업도 받을 수 없습니다.  
 
@@ -161,42 +153,19 @@ Configuration Manager는 이 트래픽을 허용하도록 자동으로 Windows �
 
 ### <a name="default-application-catalog-website-point"></a>기본 응용 프로그램 카탈로그 웹 사이트 지점
 
-Configuration Manager에서는 이 설정을 사용하여 소프트웨어 센터의 응용 프로그램 카탈로그에 사용자를 연결합니다. **웹 사이트 설정**을 선택하여 응용 프로그램 카탈로그 웹 사이트 지점을 호스트하는 서버를 지정합니다. NetBIOS 이름 또는 FQDN을 입력하거나, 자동 검색을 지정하거나, 사용자 지정된 배포에 URL을 지정합니다. 대부분의 경우 자동 검색이 다음과 같은 이점을 제공하므로 가장 좋은 방법입니다.  
+> [!Note]  
+> 버전 1806부터 응용 프로그램 카탈로그 웹 사이트 지점은 더 이상 *필요하지 않지만* *지원은 계속됩니다*. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요. 
+> 
+> 응용 프로그램 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
 
--   사이트에 응용 프로그램 카탈로그 웹 사이트 지점이 있는 경우 사이트에서 응용 프로그램 카탈로그 웹 사이트 지점이 클라이언트에 자동으로 지정됩니다.  
-
--   클라이언트는 HTTP 전용 서버를 통한 인트라넷의 HTTPS 사용 응용 프로그램 카탈로그 웹 사이트 지점을 선호합니다. 이 기능은 Rogue 서버로부터 보호할 수 있습니다.
-
--   관리 지점은 인터넷 기반 클라이언트에 인터넷 기반 응용 프로그램 카탈로그 웹 사이트 지점을 제공합니다. 관리 지점은 인트라넷 기반 클라이언트에 인트라넷 기반 응용 프로그램 카탈로그 웹 사이트 지점을 제공합니다.  
-
-자동 검색은 클라이언트에 가장 가까운 응용 프로그램 카탈로그 웹 사이트 지점을 제공하도록 보장하지 않습니다. 다음과 같은 이유로 **자동 검색** 옵션을 사용하지 않도록 결정할 수 있습니다.  
-
--   클라이언트에 가장 가까운 서버를 수동으로 구성하거나 느린 네트워크 연결을 통해 서버에 연결하지 않으려고 합니다.  
-
--   각 서버에 연결되는 클라이언트를 제어하려고 합니다. 이 구성은 테스트, 성능 또는 비즈니스 사유로 사용할 수 있습니다.  
-
--   최대 25시간 동안 기다리거나 클라이언트에서 다른 응용 프로그램 카탈로그 웹 사이트 지점을 사용하도록 네트워크가 변경될 때까지 기다리지 않으려고 합니다.  
-
-자동 검색을 사용하는 대신 응용 프로그램 카탈로그 웹 사이트 지점을 지정하는 경우 인트라넷 FQDN 대신 NetBIOS 이름을 지정합니다. 이렇게 구성하면 사용자가 인트라넷 기반 응용 프로그램 카탈로그에 액세스할 때 웹 브라우저에서 자격 증명을 입력하라는 메시지를 표시하지 않을 수 있습니다. NetBIOS 이름을 사용하려면 다음 조건에 해당해야 합니다.  
-
--   응용 프로그램 카탈로그 웹 사이트 지점 속성에 NetBIOS 이름이 지정되어 있어야 합니다.  
-
--   WINS를 사용하거나 모든 클라이언트가 응용 프로그램 카탈로그 웹 사이트 지점과 같은 도메인에 있어야 합니다.  
-
--   HTTP 클라이언트 연결에 응용 프로그램 카탈로그 웹 사이트 지점을 구성하거나, HTTPS의 서버 및 웹 서버 인증서에 NetBIOS 이름이 포함되도록 구성합니다.  
-
-일반적으로 URL에 FQDN이 포함된 경우 사용자가 자격 증명을 입력해야 하지만 URL이 NetBIOS 이름인 경우 그렇지 않습니다. 사용자가 인터넷에서 연결하는 경우 항상 자격 증명을 입력해야 합니다. 이 연결은 인터넷 FQDN을 사용하기 때문입니다. 인터넷 기반 클라이언트의 경우 웹 브라우저에서 사용자 자격 증명을 입력하라는 메시지가 표시되면 응용 프로그램 카탈로그 웹 사이트 지점이 사용자 계정의 도메인 컨트롤러에 연결할 수 있는지 확인합니다. 이렇게 구성하면 사용자가 Kerberos를 사용하여 인증할 수 있습니다.  
-
-> [!NOTE]  
->  자동 검색의 작동 방식은 다음과 같습니다.  
->   
->  클라이언트가 관리 지점에 서비스 위치를 요청합니다. 응용 프로그램 카탈로그 웹 사이트 지점이 클라이언트와 같은 사이트에 있는 경우 이 서버가 클라이언트에서 사용할 응용 프로그램 서버로 주어집니다. 사이트에서 둘 이상의 Application Catalog 웹 사이트 지점을 사용할 수 있는 경우 HTTPS 사용 서버가 HTTPS를 사용하지 않는 서버보다 우선합니다. 이 필터링 후에 모든 클라이언트에 응용 프로그램 카탈로그로 사용할 서버 중 하나가 지정됩니다. Configuration Manager에서 여러 서버 간에 부하를 분산하지 않습니다. 클라이언트의 사이트에 응용 프로그램 카탈로그 웹 사이트 지점이 없으면 관리 지점이 해당 계층 구조에서 응용 프로그램 카탈로그 웹 사이트 지점을 임의로 반환합니다.  
->   
->  인트라넷 기반 클라이언트의 경우 응용 프로그램 카탈로그 URL에 NetBIOS 이름을 사용하여 응용 프로그램 카탈로그 웹 사이트 지점을 구성하면 관리 지점에서 이 이름을 사용합니다. 인트라넷 FQDN은 사용하지 않습니다. 인터넷 기반 클라이언트의 경우 관리 지점이 인터넷 FQDN만 클라이언트에 제공합니다.  
->   
->  클라이언트는 25시간마다 또는 네트워크 변경을 감지할 때마다 이 서비스 위치를 요청합니다. 예를 들어 클라이언트가 인트라넷에서 인터넷으로 이동하는 경우 이는 네트워크 변경입니다. 그런 다음, 클라이언트가 인터넷 기반 관리 지점을 찾으면 인터넷 기반 관리 지점이 인터넷 기반 응용 프로그램 카탈로그 웹 사이트 지점 서버를 클라이언트에 제공합니다.  
+Configuration Manager에서는 이 설정을 사용하여 소프트웨어 센터의 응용 프로그램 카탈로그에 사용자를 연결합니다. **웹 사이트 설정**을 선택하여 응용 프로그램 카탈로그 웹 사이트 지점을 호스트하는 서버를 지정합니다. NetBIOS 이름 또는 FQDN을 입력하거나, 자동 검색을 지정하거나, 사용자 지정된 배포에 URL을 지정합니다. 대부분의 경우 자동 검색이 가장 좋은 방법입니다.
 
 ### <a name="add-default-application-catalog-website-to-internet-explorer-trusted-sites-zone"></a>기본 응용 프로그램 카탈로그 웹 사이트를 Internet Explorer의 신뢰할 수 있는 사이트 영역에 추가
+
+> [!Note]  
+> 버전 1806부터 응용 프로그램 카탈로그 웹 사이트 지점은 더 이상 *필요하지 않지만* *지원은 계속됩니다*. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요. 
+> 
+> 응용 프로그램 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
 
 이 옵션이 **예**인 경우 클라이언트에서는 현재 기본 응용 프로그램 카탈로그 웹 사이트 URL을 Internet Explorer 신뢰할 수 있는 사이트 영역에 자동으로 추가합니다.  
 
@@ -204,12 +173,12 @@ Configuration Manager에서는 이 설정을 사용하여 소프트웨어 센터
 
 이 옵션을 **아니요**로 두는 경우 Configuration Manager 클라이언트는 응용 프로그램 카탈로그에서 응용 프로그램을 설치하지 못할 수 있습니다. 다른 방법은 클라이언트에서 사용하는 응용 프로그램 카탈로그 URL의 다른 영역에 이러한 Internet Explorer 설정을 구성하는 것입니다.  
 
-> [!NOTE]  
->  Configuration Manager는 신뢰할 수 있는 사이트 영역에 기본 응용 프로그램 카탈로그 URL을 추가할 때마다 이전에 추가한 응용 프로그램 카탈로그 URL을 제거합니다.  
->   
->  보안 영역 중 하나에 URL이 이미 지정된 경우에는 Configuration Manager에서 URL을 추가할 수 없습니다. 이 시나리오에서는 다른 영역에서 URL을 제거하거나 필요한 Internet Explorer 설정을 수동으로 구성해야 합니다.  
-
 ### <a name="allow-silverlight-applications-to-run-in-elevated-trust-mode"></a>Silverlight 응용 프로그램의 높은 권한 모드 실행을 허용합니다.
+
+> [!Important]  
+> Configuration Manager 버전 1802부터 클라이언트는 Silverlight를 자동으로 설치하지 않습니다.
+> 
+> 버전 1806부터 응용 프로그램 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 사용자는 새로운 소프트웨어 센터를 사용해야 합니다. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요.  
 
 응용 프로그램 카탈로그를 사용할 사용자의 경우 이 설정을 **예**로 지정해야 합니다.  
 
@@ -219,15 +188,18 @@ Configuration Manager에서는 이 설정을 사용하여 소프트웨어 센터
 
 ### <a name="organization-name-displayed-in-software-center"></a>소프트웨어 센터에 표시된 조직 이름
 
-소프트웨어 센터에서 사용자에게 표시되는 이름을 입력합니다. 사용자는 이러한 브랜드 정보를 통해 응용 프로그램을 신뢰할 수 있는 원본으로 확인할 수 있습니다.  
+소프트웨어 센터에서 사용자에게 표시되는 이름을 입력합니다. 사용자는 이러한 브랜드 정보를 통해 응용 프로그램을 신뢰할 수 있는 원본으로 확인할 수 있습니다. 이 설정의 우선 순위에 대한 자세한 내용은 [브랜딩 소프트웨어 센터](/sccm/apps/plan-design/plan-for-and-configure-application-management#branding-software-center)를 참조하세요.  
 
 ### <a name="use-new-software-center"></a>새 소프트웨어 센터 사용
 
-이 옵션을 **예**로 설정하면 모든 클라이언트 컴퓨터에서 소프트웨어 센터를 사용합니다. 소프트웨어 센터에서는 이전에 응용 프로그램 카탈로그에서만 액세스할 수 있었던 사용자가 사용할 수 있는 앱을 보여줍니다. 응용 프로그램 카탈로그에는 소프트웨어 센터의 필수 구성 요소가 아닌 Silverlight가 필요합니다. Configuration Manager 1802부터 기본 설정은 **예**입니다.  
+Configuration Manager 1802부터 기본 설정은 **예**입니다.
 
-사용자가 사용할 수 있는 앱이 소프트웨어 센터에 표시되려면 응용 프로그램 카탈로그 웹 사이트 지점 및 응용 프로그램 카탈로그 웹 서비스 지점 사이트 시스템 역할이 여전히 필요합니다.  
+이 옵션을 **예**로 설정하면 모든 클라이언트 컴퓨터에서 소프트웨어 센터를 사용합니다. 소프트웨어 센터에서는 이전에 응용 프로그램 카탈로그에서만 액세스할 수 있었던 사용자가 사용할 수 있는 앱을 보여줍니다. 응용 프로그램 카탈로그에는 소프트웨어 센터의 필수 구성 요소가 아닌 Silverlight가 필요합니다.   
 
-자세한 내용은 [응용 프로그램 관리 계획 및 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management)을 참조하세요.  
+버전 1806부터 응용 프로그램 카탈로그 웹 사이트 지점 및 웹 서비스 지점은 더 이상 *필요하지 않지만* *지원은 계속*됩니다. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요. 
+ 
+> [!Note]  
+> 응용 프로그램 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
 
 ### <a name="enable-communication-with-health-attestation-service"></a>상태 증명 서비스를 통한 통신 사용
 
@@ -331,7 +303,7 @@ VDI(가상 데스크톱 인프라)를 사용하는 경우 이러한 지연 시�
 
 
 
-##  <a name="endpoint-protection"></a>Endpoint Protection  
+##  <a name="endpoint-protection"></a>Endpoint Protection  
 >  [!Tip]   
 > 다음 정보 외에도 [예제 시나리오: Endpoint Protection을 사용하여 맬웨어로부터 컴퓨터 보호](/sccm/protect/deploy-use/scenarios-endpoint-protection)에서 Endpoint Protection 클라이언트 설정을 사용하는 방법에 대한 세부 정보를 찾을 수 있습니다.
 

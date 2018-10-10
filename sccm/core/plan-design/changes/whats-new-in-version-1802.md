@@ -10,12 +10,12 @@ ms.assetid: 5bd637b1-d7a1-411b-877a-c7aae9741173
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3da4edf50480821ac9b3677fe80c38e8ed3d7e28
-ms.sourcegitcommit: acad0674b2743193f87990fb50194c4f17823a8e
+ms.openlocfilehash: 0757e7f3fac12c2945a3eab860851b0debf28fd5
+ms.sourcegitcommit: 0d7efd9e064f9d6a9efcfa6a36fd55d4bee20059
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39146986"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43893892"
 ---
 # <a name="whats-new-in-version-1802-of-system-center-configuration-manager"></a>System Center Configuration Manager 1802 버전의 새로운 기능
 
@@ -128,7 +128,7 @@ Configuration Manager 1802에서 사용할 수 있는 정보는 다음과 같습
 <!-- 1357389 --> 하드웨어 인벤토리 속성의 경우 255자를 초과하는 문자열을 구성할 수 있습니다. 이 변경 내용은 새로 추가된 클래스 및 키가 아닌 하드웨어 인벤토리 속성에만 적용됩니다. 자세한 내용은 [하드웨어 인벤토리 확장](/sccm/core/clients/manage/inventory/extend-hardware-inventory#BKMK_GreaterThan255) 문서를 참조하세요. 
 
  ### <a name="deprecation-announcement-for-linux-and-unix-client-support"></a>Linux 및 Unix 클라이언트 지원에 대한 사용 중단 알림
- <!--510139--> Microsoft는 약 1년 후에 System Center Configuration Manager에서 Linux 및 UNIX 클라이언트 지원을 중단할 예정이므로 2019년 초에 SCCM 1902 릴리스에는 이러한 클라이언트가 포함되지 않습니다.  2018년 후반기의 Configuration Manager 1810 릴리스는 Linux 및 UNIX 클라이언트를 포함하는 마지막 릴리스이며, Configuration Manager 1810의 전체 수명 주기 동안 이러한 클라이언트가 지원됩니다.  Configuration Manager 1810 이후 고객이 Linux 서버를 관리하려면 Microsoft의 OMS(Operations Management Suite)를 고려해야 합니다.  OMS는 대부분의 경우 Linux용 종단 간 패치 관리를 포함하여 Configuration Manager 기능을 능가하는 광범위한 Linux 지원을 제공합니다.
+ <!--510139--> Microsoft는 약 1년 후에 System Center Configuration Manager에서 Linux 및 UNIX 클라이언트 지원을 중단할 예정이므로 2019년 초에 SCCM 1902 릴리스에는 이러한 클라이언트가 포함되지 않습니다. 2018년 후반기의 Configuration Manager 1810 릴리스는 Linux 및 UNIX 클라이언트를 포함하는 마지막 릴리스이며, Configuration Manager 1810의 전체 수명 주기 동안 이러한 클라이언트가 지원됩니다. Configuration Manager 1810 이후 고객이 Linux 서버를 관리하려면 Microsoft Azure 관리를 고려해야 합니다. Azure 솔루션은 대부분의 경우 Linux용 종단 간 패치 관리를 포함하여 Configuration Manager 기능을 능가하는 광범위한 Linux 지원을 제공합니다.
 
 ### <a name="surface-device-dashboard"></a>Surface 장치 대시보드
 <!--1355788--> Surface 장치 대시보드는 사용자 환경에 있는 Surface 장치에 대한 정보를 제공합니다. 콘솔에서 **Surface 장치**  > **모니터링**으로 이동합니다. 표시되는 항목은 다음과 같습니다.

@@ -1,7 +1,7 @@
 ---
 title: Azure 서비스 구성
 titleSuffix: Configuration Manager
-description: Configuration Manager 환경을 클라우드 관리, 업그레이드 준비, 비즈니스용 Microsoft 스토어, Operations Management Suite를 위한 Azure 서비스와 연결합니다.
+description: Configuration Manager 환경을 클라우드 관리, 업그레이드 준비, 비즈니스용 Microsoft 스토어, Log Analytics를 위한 Azure 서비스와 연결합니다.
 ms.date: 03/22/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,12 +10,12 @@ ms.assetid: a26a653e-17aa-43eb-ab36-0e36c7d29f49
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5607402171a3b771560ff439b1f1f99a6a947e83
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 1ea47941be51d1bf38de53203aad00c02d0a11d3
+ms.sourcegitcommit: 0d7efd9e064f9d6a9efcfa6a36fd55d4bee20059
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39383299"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43893773"
 ---
 # <a name="configure-azure-services-for-use-with-configuration-manager"></a>Configuration Manager에서 사용하도록 Azure 서비스 구성
 
@@ -37,7 +37,10 @@ ms.locfileid: "39383299"
 
     - 특정 [클라우드 관리 게이트웨이 시나리오](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#scenarios) 지원  
 
--   **OMS 커넥터**: [OMS(Operations Management Suite)에 연결](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite)합니다. 컬렉션 같은 데이터를 OMS Log Analytics와 동기화합니다.  
+-   **Log Analytics 커넥터**: [Azure Log Analytics에 연결합니다](/sccm/core/clients/manage/sync-data-log-analytics). 컬렉션 데이터를 Log Analytics에 동기화합니다.  
+
+    > [!Note]  
+    > 이 문서는 *Log Analytics 커넥터*(이전의 *OMS 커넥터*)를 참조합니다. 기능 차이는 없습니다. 자세한 내용은 [Azure 관리 - 모니터링](https://docs.microsoft.com/azure/monitoring/#operations-management-suite)을 참조하세요.  
 
 -   **업그레이드 준비 커넥터**: Windows Analytics [업그레이드 준비](/sccm/core/clients/manage/upgrade/upgrade-analytics)에 연결합니다. 클라이언트 업그레이드 호환성 데이터를 봅니다.  
 
@@ -61,7 +64,7 @@ ms.locfileid: "39383299"
 |서비스  |테넌트  |클라우드  |웹앱  |네이티브 앱  |작업  |
 |---------|---------|---------|---------|---------|---------|
 |클라우드 관리 수단</br>Azure AD 사용자 검색 | 복수 | 공개 | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | 가져오기, 만들기 |
-|OMS 커넥터 | 1대 | 공용, 사설 | ![지원됨](media/green_check.png) | ![지원되지 않음](media/Red_X.png) | 가져오기 |
+|Log Analytics 커넥터 | 1대 | 공용, 사설 | ![지원됨](media/green_check.png) | ![지원되지 않음](media/Red_X.png) | 가져오기 |
 |업그레이드 준비 | 1대 | 공개 | ![지원됨](media/green_check.png) | ![지원되지 않음](media/Red_X.png) | 가져오기 |
 |비즈니스 및 교육용</br>Business | 1대 | 공개 | ![지원됨](media/green_check.png) | ![지원되지 않음](media/Red_X.png) | 가져오기, 만들기 |
 
@@ -90,7 +93,7 @@ Azure 앱에 대한 자세한 내용은 다음 문서부터 참조하세요.
 
 연결할 서비스를 결정했으면 [서비스 정보](#service-details)의 표를 참조하세요. 이 표는 Azure 서비스 마법사를 완료하는 데 필요한 정보를 제공합니다. Azure AD 관리자와 미리 토론합니다. Azure Portal에서 미리 앱을 수동으로 만든 후 Configuration Manager로 앱 세부 정보를 가져올 것인지 결정합니다. 또는 Configuration Manager를 사용하여 Azure AD에서 바로 앱을 만듭니다. Azure AD에서 필요한 데이터를 수집하려면 이 문서의 다른 섹션에서 제공하는 정보도 검토합니다.
 
-일부 서비스는 Azure AD 앱에 특정 권한이 필요합니다. 각 서비스에 대한 정보를 검토하여 필요한 권한을 확인하세요. 예를 들어 웹앱을 가져오려면 먼저 Azure 관리자가 [Azure Portal](https://portal.azure.com)에서 웹앱을 만들어야 합니다. 업그레이드 준비 또는 OMS 커넥터를 구성할 때 관련 OMS 작업 영역이 포함된 리소스 그룹에 새로 등록된 웹앱 *참가자* 권한을 부여해야 합니다. 이 권한이 있으면 Configuration Manager가 해당 작업 영역에 액세스할 수 있습니다. 권한을 할당할 때 Azure Portal의 **사용자 추가** 영역에서 앱 등록 이름을 검색합니다. 이 프로세스는 [Configuration Manager에 OMS에 대한 권한을 제공](https://docs.microsoft.com/azure/log-analytics/log-analytics-sccm#provide-configuration-manager-with-permissions-to-oms)하는 프로세스와 동일합니다. Azure 관리자가 이러한 권한을 할당해야만 Configuration Manager로 앱을 가져올 수 있습니다.
+일부 서비스는 Azure AD 앱에 특정 권한이 필요합니다. 각 서비스에 대한 정보를 검토하여 필요한 권한을 확인하세요. 예를 들어 웹앱을 가져오려면 먼저 Azure 관리자가 [Azure Portal](https://portal.azure.com)에서 웹앱을 만들어야 합니다. 업그레이드 준비 또는 Log Analytics 커넥터를 구성할 때 관련 작업 영역이 포함된 리소스 그룹에 새로 등록된 웹앱 *참가자* 권한을 부여해야 합니다. 이 권한이 있으면 Configuration Manager가 해당 작업 영역에 액세스할 수 있습니다. 권한을 할당할 때 Azure Portal의 **사용자 추가** 영역에서 앱 등록 이름을 검색합니다. 이 프로세스는 [Configuration Manager에 Log Analytics에 대한 권한을 제공](https://docs.microsoft.com/azure/log-analytics/log-analytics-sccm#grant-configuration-manager-with-permissions-to-log-analytics)하는 프로세스와 동일합니다. Azure 관리자가 이러한 권한을 할당해야만 Configuration Manager로 앱을 가져올 수 있습니다.
 
 
 
@@ -161,7 +164,7 @@ Azure 서비스 마법사의 서버 앱 대화 상자 또는 앱 페이지에서
 - **앱 ID URI**: 이 값은 Azure AD 테넌트에서 고유해야 합니다. Configuration Manager 클라이언트가 서비스 액세스를 요청할 때 사용하는 액세스 토큰입니다. 이 값은 기본적으로 https://ConfigMgrService입니다.  
 - **비밀 키 유효 기간**: 드롭다운 목록을 클릭하고 **1년** 또는 **2년** 중에 선택합니다. 기본값은 1년입니다.
 
-**로그인**을 클릭하여 Azure에 관리 사용자로 인증합니다. 이러한 자격 증명은 Configuration Manager에 저장되지 않습니다. 이 가상 사용자는 Configuration Manager에서 권한이 필요 없으며, Azure 서비스 마법사를 실행하는 계정과 동일한 계정이 아니어도 상관없습니다. Azure에 성공적으로 인증되면 페이지에 **Azure AD 테넌트 이름**이 참조용으로 표시됩니다. 
+**로그인**을 클릭하여 Azure에 관리 사용자로 인증합니다. 이러한 자격 증명은 Configuration Manager에 저장되지 않습니다. 이 가상 사용자는 Configuration Manager에서 권한이 필요 없으며, Azure 서비스 마법사를 실행하는 계정과 동일한 계정이 아니어도 상관 없습니다. Azure에 성공적으로 인증되면 페이지에 **Azure AD 테넌트 이름**이 참조용으로 표시됩니다. 
 
 **확인**을 클릭하여 Azure AD에서 웹앱을 만들고 서버 응용 프로그램 만들기 대화 상자를 닫습니다. 이 작업은 [서버 앱 대화 상자](#server-app-dialog)로 돌아갑니다.
 
@@ -198,7 +201,7 @@ Azure 서비스 마법사의 앱 페이지에서 **네이티브 클라이언트 
 - **응용 프로그램 이름**: 앱의 표시 이름.
 - **회신 URL**: 이 값은 Configuration Manager에서 사용되지는 않지만 Azure AD에 필요합니다. 이 값은 기본적으로 https://ConfigMgrService입니다. 
 
-**로그인**을 클릭하여 Azure에 관리 사용자로 인증합니다. 이러한 자격 증명은 Configuration Manager에 저장되지 않습니다. 이 가상 사용자는 Configuration Manager에서 권한이 필요 없으며, Azure 서비스 마법사를 실행하는 계정과 동일한 계정이 아니어도 상관없습니다. Azure에 성공적으로 인증되면 페이지에 **Azure AD 테넌트 이름**이 참조용으로 표시됩니다. 
+**로그인**을 클릭하여 Azure에 관리 사용자로 인증합니다. 이러한 자격 증명은 Configuration Manager에 저장되지 않습니다. 이 가상 사용자는 Configuration Manager에서 권한이 필요 없으며, Azure 서비스 마법사를 실행하는 계정과 동일한 계정이 아니어도 상관 없습니다. Azure에 성공적으로 인증되면 페이지에 **Azure AD 테넌트 이름**이 참조용으로 표시됩니다. 
 
 **확인**을 클릭하여 Azure AD에서 네이티브 앱을 만들고 클라이언트 응용 프로그램 만들기 대화 상자를 닫습니다. 이 작업은 [클라이언트 앱 대화 상자](#client-app-dialog)로 돌아갑니다.
 
@@ -209,7 +212,7 @@ Azure 서비스 마법사의 앱 페이지에서 **네이티브 클라이언트 
 
 -   **클라우드 관리** 서비스, **검색** 페이지: [Azure AD 사용자 검색 구성](/sccm/core/servers/deploy/configure/configure-discovery-methods#azureaadisc)  
 
--   **OMS 커넥터** 서비스, **구성** 페이지: [OMS에 대한 연결 구성](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite#use-the-azure-services-wizard-to-configure-the-connection-to-oms)  
+-   **Log Analytics 커넥터** 서비스 **구성** 페이지: [Log Analytics에 대한 연결 구성](/sccm/core/clients/manage/sync-data-log-analytics#configure-the-connection-to-log-analytics)  
 
 -   **업그레이드 준비 커넥터** 서비스, **구성** 페이지: [Azure 마법사를 사용하여 연결 만들기](/sccm/core/clients/manage/upgrade/upgrade-analytics#use-the-azure-wizard-to-create-the-connection)  
 
