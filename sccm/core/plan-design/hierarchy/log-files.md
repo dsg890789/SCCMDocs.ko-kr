@@ -2,7 +2,7 @@
 title: 문제 해결을 위한 로그 파일
 titleSuffix: Configuration Manager
 description: 로그 파일을 사용하여 Configuration Manager 클라이언트 및 사이트 시스템 문제를 해결할 수 있습니다.
-ms.date: 07/30/2018
+ms.date: 09/10/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: c1ff371e-b0ad-4048-aeda-02a9ff08889e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2bd3f76b982356fc444681d1990bee08e90b32fc
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 4435d39dd736db1058b06d09e5722a80a173bf6e
+ms.sourcegitcommit: 2badee2b63ae63687795250e298f463474063100
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385289"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45601214"
 ---
 # <a name="log-files-in-configuration-manager"></a>Configuration Manager의 로그 파일
 
@@ -385,7 +385,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
 |--------------|-----------------|----------------------------|  
-|CcmIsapi.log|끝점의 클라이언트 메시징 작업을 기록합니다.|사이트 시스템 서버|  
+|CcmIsapi.log|엔드포인트의 클라이언트 메시징 작업을 기록합니다.|사이트 시스템 서버|  
 |MP_CliReg.log|관리 지점에서 처리한 클라이언트 등록 작업을 기록합니다.|사이트 시스템 서버|  
 |MP_Ddr.log|클라이언트에서 XML.ddr 레코드를 변환하여 사이트 서버에 복사하는 작업을 기록합니다.|사이트 시스템 서버|  
 |MP_Framework.log|핵심 관리 지점 및 클라이언트 프레임워크 구성 요소의 작업을 기록합니다.|사이트 시스템 서버|  
@@ -517,9 +517,10 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |--------------|-----------------|----------------------------|  
 |CloudMgr.log|클라우드 관리 게이트웨이 서비스 배포, 지속적인 서비스 상태 및 서비스와 연결된 사용 데이터에 대한 세부 정보를 기록합니다.<br>레지스트리 키 HKLM\SOFTWARE\ Microsoft\SMS\COMPONENTS\ SMS_CLOUD_ SERVICES_MANAGER의 **로깅 수준** 값을 편집하여 로깅 수준을 구성할 수 있습니다.|기본 사이트 서버 또는 CA의 *installdir* 폴더|
 |CMGSetup.log<sup>1</sup>|클라우드 관리 게이트웨이 배포의 두 번째 단계(Azure의 로컬 배포)에 대한 세부 정보를 기록합니다.<br>**Azure 포털\클라우드 서비스 구성** 탭에서 설정 **추적 수준**(**정보**(기본값), **자세한 정보**, **오류**)을 사용하여 로깅 수준을 구성할 수 있습니다.|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
-|CMGHttpHandler.log<sup>1</sup>|Azure에서 인터넷 정보 서비스와 바인딩하는 클라우드 관리 게이트웨이 HTTP 처리기에 대한 세부 정보를 기록합니다.<br>**Azure 포털\클라우드 서비스 구성** 탭에서 설정 **추적 수준**(**정보**(기본값), **자세한 정보**, **오류**)을 사용하여 로깅 수준을 구성할 수 있습니다.|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
+|CMGHttpHandler.log<sup>1</sup>|Azure에서 인터넷 정보 서비스와 바인딩하는 클라우드 관리 게이트웨이 HTTP 처리기에 대한 세부 정보를 기록합니다.<br>**Azure 포털\클라우드 서비스 구성** 탭에서 설정 **추적 수준**(**정보**(기본값), **자세한 정보**, **오류**)을 사용하여 로깅 수준을 구성할 수 있습니다.<br>버전 1806부터 이 로그가 없습니다. 구성 요소 기능이 CMG 서비스 구성 요소에 병합됩니다. 대신 CMGService.log를 참조하세요.<!--SCCMDocs-pr issue #2822-->|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
 |CMGService.log<sup>1</sup>|Azure의 클라우드 관리 게이트웨이 핵심 구성 요소에 대한 세부 정보를 기록합니다.<br>**Azure 포털\클라우드 서비스 구성** 탭에서 설정 **추적 수준**(**정보**(기본값), **자세한 정보**, **오류**)을 사용하여 로깅 수준을 구성할 수 있습니다.|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
-|SMS_Cloud_</br>ProxyConnector.log|클라우드 관리 게이트웨이 서비스와 클라우드 관리 게이트웨이 연결 지점 간에 연결을 설정하는 방법에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|
+|SMS_Cloud_<br>ProxyConnector.log|클라우드 관리 게이트웨이 서비스와 클라우드 관리 게이트웨이 연결 지점 간에 연결을 설정하는 방법에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|
+|CMGContentService.log<sup>1</sup>|<!--SCCMDocs-pr issue #2822--> 버전 1806부터 Azure 저장소에서 콘텐츠를 제공하기 위해 CMG를 사용하도록 설정하는 경우 이 로그는 해당 서비스의 세부 정보를 기록합니다.|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
 
 <sup>1</sup> 클라우드 서비스 관리자가 5분마다 Azure 저장소에서 동기화하는 로컬 Configuration Manager 로그 파일입니다. 클라우드 관리 게이트웨이는 5분마다 로그를 Azure Storage에 푸시합니다. 따라서 최대 지연은 10분입니다. 자세한 정보 스위치는 로컬 및 원격 로그 둘 다에 영향을 미칩니다. 실제 파일 이름에는 서비스 이름 및 역할 인스턴스 식별자가 포함됩니다. 예: CMG-*ServiceName*-*RoleInstanceID*-CMGSetup.log
 
@@ -636,7 +637,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
 |--------------|-----------------|----------------------------|  
-|DMPRP.log|모바일 장치에 대해 사용하도록 설정된 관리 지점과 관리 지점 끝점 간의 통신을 기록합니다.|사이트 시스템 서버|  
+|DMPRP.log|모바일 장치에 대해 사용하도록 설정된 관리 지점과 관리 지점 엔드포인트 간의 통신을 기록합니다.|사이트 시스템 서버|  
 |dmpmsi.log|모바일 장치에 대해 사용하도록 설정된 관리 지점의 구성에 대한 Windows Installer 데이터를 기록합니다.|사이트 시스템 서버|  
 |DMPSetup.log|모바일 장치에 대해 관리 지점을 사용하도록 설정한 경우 해당 관리 지점의 구성을 기록합니다.|사이트 시스템 서버|  
 |enrollsrvMSI.log|등록 지점의 구성에 대한 Windows Installer 데이터를 기록합니다.|사이트 시스템 서버|  

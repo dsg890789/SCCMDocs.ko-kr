@@ -2,7 +2,7 @@
 title: 하이브리드 MDM의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 장치 관리 기능에 대해 알아봅니다.
-ms.date: 08/29/2018
+ms.date: 09/18/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 7b127cee-61f1-4681-9760-caebed36ddf5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 87a40300cfe13ec097d155093fbb7b70af3b459c
-ms.sourcegitcommit: 8661f10596f565ca2b7bdb5951388b44b3b622ee
+ms.openlocfilehash: 195fb8c4ae584b9b5ccb2401b145d9c78a0be781
+ms.sourcegitcommit: 78d2dce465e3500653b252583a6903a006784c26
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43193921"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46448874"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 장치 관리의 새로운 기능
 
@@ -460,6 +460,54 @@ Windows 10 버전 1607 이상의 최종 사용자에게 Microsoft Store에 있�
 
 
 ## <a name="notices"></a>알림
+
+### <a name="plan-for-change-intune-supports-macos-1012-and-higher-in-december"></a>변경 계획: Intune은 12월에 macOS 10.12 이상을 지원합니다. 
+<!--2970975--> 
+
+Apple이 macOS 10.14를 출시하므로 2018년 12월부터 Intune은 macOS 10.12 이상을 지원합니다. 
+
+#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
+
+12월부터 macOS 10.11 이하를 사용하는 장치의 사용자는 회사 포털에서는 Intune에 등록할 수 없습니다. 지원 및 새로운 기능을 계속 받으려면 macOS 10.12 이상으로 해당 장치를 업그레이드하고 회사 포털 앱을 최신 버전으로 업그레이드해야 합니다. 
+
+MacOS 버전 10.12 이상은 현재 다음에서 지원됩니다. 
+- MacBook(2009년 후반 이후)  
+- iMac(2009년 후반 이후)
+- MacBook Air(2010년 후반 이후)  
+- MacBook Pro(2010년 후반 이후)  
+- Mac Mini(2010년 후반 이후)  
+- Mac Pro(2010년 후반 이후)  
+
+12월 이후 위에 나열된 것 이외의 장치를 보유한 최종 사용자는 최신 버전의 macOS용 회사 포털 앱에 액세스할 수 없습니다. 지원되지 않는 macOS 10.12 이하 버전을 실행하는 기존에 등록된 장치는 계속 관리할 수 있습니다.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대비하려면 어떻게 해야 하나요?
+
+- 사용자에게 2018년 12월 전에 지원되는 OS 버전으로 장치를 업그레이드하도록 요청합니다.  
+- 장치 또는 사용자가 받을 수 있는 영향에 대해 알아보려면 Azure Portal의 Intune 보고를 확인하세요. **장치** > **모든 장치**로 이동하고 **OS**를 기준으로 필터링합니다. 추가 열에 추가하면 macOS 10.11을 실행하는 장치를 가진 조직의 사용자를 식별하는 데 도움이 됩니다.  
+- 하이브리드 MDM(모바일 장치 관리)를 사용 중인 경우 Configuration Manager 콘솔에서 **자산 및 호환성** 작업 영역으로 이동하고 **장치** 노드를 선택합니다. 열을 마우스 오른쪽 단추로 클릭하고 **운영 체제** 및 **클라이언트 버전** 열을 추가합니다. 그런 다음, OS 버전별로 정렬합니다. 해당 하이브리드 MDM은 이제 사용되지 않으며, 가능한 빠른 시일 내에 Azure의 Intune으로 이동해야 합니다. 
+ 
+#### <a name="additional-information"></a>추가 정보
+자세한 내용은 [회사 포털 앱을 사용하여 Intune에서 macOS 장치 등록](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)을 참조하세요.
+
+
+### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>변경 계획: 프리미어 고객을 위한 새로운 Intune 지원 환경 
+<!--2828727--> Microsoft 프리미어 고객은 현재 [MPO(Microsoft Premier Online) 포털](https://premier.microsoft.com) 및 [Azure의 Intune](https://portal.azure.com)을 사용하여 Intune에 대한 지원 요청을 만들 수 있습니다. 2018년 12월 3월부터 프리미어 지원 환경을 계속해서 향상시키려면 Azure의 Intune에서만 지원 요청을 만들 수 있습니다.
+
+#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
+12월 3일 이후에는 MPO에서 지원 요청을 만들 수 없습니다. 시도하는 경우 Azure의 Intune으로 리디렉션하는 중에 해제할 수 없다는 메시지가 표시됩니다. Azure Portal에서 지원 요청을 만드는 경우 Intune 전용 Microsoft 지원으로 라우팅됩니다. 시기 적절하게 문제를 진단하며 해결합니다. MPO 포털에서 지원 요청을 만드는 경우 Azure Portal에서는 볼 수 없습니다. Azure의 Intune에서 지원 요청을 만들기만 시작합니다.  
+
+하이브리드 MDM(하이브리드 모바일 장치 관리)을 사용하거나 공동 관리를 사용하는 경우 Configuration Manager에 대한 지원 요청을 만드는 데 계속 MPO를 사용하되, Intune에 대한 지원 요청을 만들려면 Azure Portal을 사용합니다. 하이브리드 MDM은 이제 사용되지 않으며, 가능한 빠른 시일 내에 Azure의 Intune으로 이동해야 함을 기억하세요. 자세한 내용은 [하이브리드 모바일 장치 관리를 Azure의 Intune으로 이동](https://aka.ms/hybrid_notification)을 참조하세요.
+
+글로벌 관리자, Intune 서비스 관리자 및 서비스 지원 관리자 역할인 사용자만 Azure Portal에서 지원 티켓을 만들 수 있습니다.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>이러한 변경에 대비하려면 어떻게 해야 하나요?
+- Intune 관련 지원 요청에 MPO 사용을 중지합니다. Azure의 Intune을 사용하여 모든 Intune 지원 요청을 만들고 관리합니다.  
+- 필요한 경우 해당 기술 지원팀에게 알리고 설명서를 업데이트합니다.  
+- 글로벌 관리자 또는 Intune 서비스 관리자 역할이 아닌데 현재 MPO에서 지원 요청을 만드는 사용자가 있는 경우 Azure Active Directory에서 서비스 지원 관리자 역할을 해당 사용자에게 할당합니다. 사용자가 Azure Portal에서 지원 티켓을 만들려면 이러한 역할 중 하나가 필요합니다.  
+
+#### <a name="additional-information"></a>추가 정보
+자세한 내용은 [Microsoft Intune 지원 팀 블로그 게시물](https://aka.ms/IntuneSupport_MPO_to_Azure)을 참조하세요.
+
 
 ### <a name="plan-for-change-use-intune-on-azure-now-for-your-mdm-management"></a>변경 플랜: 이제 MDM 관리를 위해 Azure의 Intune 사용 
 <!--1227338--> 1년 전, [Azure의 Intune 공개 미리 보기](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/)를 발표했으며, 6개월 전에는 Intune에 대한 [새 관리자 환경 일반 공급](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/)을 발표했습니다. 2018년 8월 31일부터는 Intune 독립 실행형을 사용하는 고객에 대해 클래식 Silverlight 콘솔에서 MDM(모바일 장치 관리) 기능을 해제합니다. 대신, MDM 요구 사항에 [Azure의 Intune](https://aka.ms/Intune_on_Azure)을 사용합니다. MDM용 클래식 콘솔을 아직 사용 중이라면 사용을 중지하고 Azure의 Intune을 숙지하세요. 이러한 변경으로 최종 사용자에게 어떤 영향이 있지는 않을 것입니다. Intune을 사용하는 클래식 PC 관리는 Silverlight에서 그대로 유지됩니다. 자세한 내용은 [Intune 지원 팀 블로그 게시물](https://aka.ms/Intune_on_Azure_mdm)을 참조하세요.

@@ -2,7 +2,7 @@
 title: 클라우드 관리 게이트웨이에 대한 계획
 titleSuffix: Configuration Manager
 description: 인터넷 기반 클라이언트의 관리를 간소화하도록 CMG(클라우드 관리 게이트웨이)를 계획하고 설계합니다.
-ms.date: 07/30/2018
+ms.date: 09/10/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 2dc8c9f1-4176-4e35-9794-f44b15f4e55f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2c60a269ade54c87c754fc9b5a3fb90deecd32f5
-ms.sourcegitcommit: 316899b08f2ef372993909e08e069f7edfed1d33
+ms.openlocfilehash: 9b25b7a5b7df42dc83bec18d38b44c7807e6dc1a
+ms.sourcegitcommit: 2badee2b63ae63687795250e298f463474063100
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44111164"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45601129"
 ---
 # <a name="plan-for-the-cloud-management-gateway-in-configuration-manager"></a>Configuration Manager에서 클라우드 관리 게이트웨이 계획
 
@@ -94,9 +94,11 @@ CMG의 배포 및 운영에 포함되는 구성 요소는 다음과 같습니다
 
 - [**클라우드 배포 지점**](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point)은 필요에 따라 인터넷 기반 클라이언트에 콘텐츠를 제공합니다.  
 
+    - 버전 1806부터 CMG는 클라이언트에게 콘텐츠를 제공할 수 있습니다. 이 기능은 필요한 인증서 및 Azure VM 비용을 줄여줍니다. 자세한 내용은 [CMG 수정](/sccm/core/clients/manage/cmg/setup-cloud-management-gateway#modify-a-cmg)을 참조하세요.<!--1358651-->  
+
 
 ### <a name="azure-resource-manager"></a>Azure Resource Manager
-<!-- 1324735 --> 1802 버전부터 **Azure Resource Manager 배포**를 사용하여 CMG를 만들 수 있습니다. [Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview)는 모든 솔루션 리소스를 [리소스 그룹](/azure/azure-resource-manager/resource-group-overview#resource-groups)이라는 단일 엔터티로 관리하기 위한 최신 플랫폼입니다. Azure Resource Manager로 CMG를 배포하는 경우 사이트에서 Azure AD(Azure Active Directory)를 사용하여 필요한 클라우드 리소스를 인증하고 만듭니다. 이 최신 배포에서는 클래식 Azure 관리 인증서가 필요하지 않습니다.  
+<!-- 1324735 --> 1802 버전부터 **Azure Resource Manager 배포**를 사용하여 CMG를 만들 수 있습니다. [Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview)는 모든 솔루션 리소스를 [리소스 그룹](/azure/azure-resource-manager/resource-group-overview#resource-groups)이라는 단일 엔터티로 관리하기 위한 최신 플랫폼입니다. Azure Resource Manager로 CMG를 배포하는 경우 사이트에서 Azure AD(Azure Active Directory)를 사용하여 필요한 클라우드 리소스를 인증하고 만듭니다. 이 최신 배포에는 클래식 Azure 관리 인증서가 필요하지 않습니다.  
 
 Azure 관리 인증서를 사용하는 **클래식 서비스 배포** 옵션도 CMG 마법사에서 계속 제공됩니다. 리소스의 배포 및 관리를 간소화하기 위해 모든 새 CMG 인스턴스에 Azure Resource Manager 배포 모델을 사용하는 것이 좋습니다. 가능한 경우 리소스 관리자를 통해 기존 CMG 인스턴스를 재배포합니다. 자세한 내용은 [CMG 수정](/sccm/core/clients/manage/cmg/setup-cloud-management-gateway#modify-a-cmg)을 참조하세요.
 
@@ -178,7 +180,7 @@ Fourth Coffee는 시애틀 본사의 온-프레미스 데이터 센터에 중앙
 
 - 네트워크 부하 분산 장치를 사용하는 소프트웨어 업데이트 지점은 CMG에서 작동하지 않습니다. <!--505311-->  
 
-- 1802 버전부터 Azure 리소스 모델을 사용하는 CMG 배포는 Azure CSP(클라우드 서비스 공급자)에 대한 지원을 사용하지 않습니다. Azure Resource Manager를 통한 CMG 배포는 CSP가 지원하지 않는 클래식 클라우드 서비스를 계속 사용합니다. 자세한 내용은 [Azure CSP에 사용할 수 있는 Azure 서비스](/azure/cloud-solution-provider/overview/azure-csp-available-services)를 참조하세요.  
+- 버전 1802부터 Azure 리소스 모델을 사용하는 CMG 배포는 Azure CSP(클라우드 서비스 공급자)에 대한 지원을 사용하지 않습니다. Azure Resource Manager를 통한 CMG 배포는 CSP에서 지원하지 않는 클래식 클라우드 서비스를 계속 사용합니다. 자세한 내용은 [Azure CSP에 사용할 수 있는 Azure 서비스](/azure/cloud-solution-provider/overview/azure-csp-available-services)를 참조하세요.  
 
 
 ### <a name="support-for-configuration-manager-features"></a>Configuration Manager 기능 지원
@@ -193,10 +195,10 @@ Fourth Coffee는 시애틀 본사의 온-프레미스 데이터 센터에 중앙
 | 클라이언트 상태 및 알림     | ![지원됨](media/green_check.png) |
 | 스크립트 실행     | ![지원됨](media/green_check.png) |
 | 호환성 설정     | ![지원됨](media/green_check.png) |
-| 클라이언트 설치</br>(Azure AD 통합 포함)     | ![지원됨](media/green_check.png)  (1706) |
+| 클라이언트 설치<br>(Azure AD 통합 포함)     | ![지원됨](media/green_check.png)  (1706) |
 | 소프트웨어 배포(장치 대상)     | ![지원됨](media/green_check.png) |
-| 소프트웨어 배포(사용자 대상, 필수)</br>(Azure AD 통합 포함)     | ![지원됨](media/green_check.png)  (1710) |
-| 소프트웨어 배포(사용자 대상, 사용 가능)</br>([모든 요구 사항](/sccm/apps/deploy-use/deploy-applications#deploy-user-available-applications-on-azure-ad-joined-devices)) | ![지원됨](media/green_check.png)  (1802) |
+| 소프트웨어 배포(사용자 대상, 필수)<br>(Azure AD 통합 포함)     | ![지원됨](media/green_check.png)  (1710) |
+| 소프트웨어 배포(사용자 대상, 사용 가능)<br>([모든 요구 사항](/sccm/apps/deploy-use/deploy-applications#deploy-user-available-applications-on-azure-ad-joined-devices)) | ![지원됨](media/green_check.png)  (1802) |
 | Windows 10 전체 업그레이드 작업 순서     | ![지원됨](media/green_check.png)  (1802) |
 | CMPivot     | ![지원됨](media/green_check.png)  (1806) |
 | 다른 작업 순서 시나리오     | ![지원되지 않음](media/Red_X.png) |
@@ -217,7 +219,7 @@ Fourth Coffee는 시애틀 본사의 온-프레미스 데이터 센터에 중앙
 |--|
 |![지원됨](media/green_check.png) = 이 기능은 지원되는 모든 Configuration Manager 버전의 CMG에서 지원됩니다  |
 |![지원됨](media/green_check.png)(*YYMM*) = 이 기능은 Configuration Manager의 *YYMM* 버전부터 CMG에서 지원됩니다  |
-|![지원되지 않음](media/Red_X.png) = 이 기능은 CMG에서 지원되지 않습니다. |
+|![지원되지 않음](media/Red_X.png) = 이 기능은 CMG에서 지원되지 않음 |
 
 
 
@@ -268,6 +270,9 @@ CMG는 다음과 같은 Azure 구성 요소를 사용하며, 이 경우 Azure �
 
 - 자세한 내용은 [클라우드 배포 지점](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point#bkmk_cost) 사용 비용을 참조하세요.  
 
+- 버전 1806부터 CMG는 클라이언트에게 콘텐츠를 제공할 수 있습니다. 이 기능은 필요한 인증서 및 Azure VM 비용을 줄여줍니다. 자세한 내용은 [CMG 수정](/sccm/core/clients/manage/cmg/setup-cloud-management-gateway#modify-a-cmg)을 참조하세요.<!--1358651-->  
+
+
 #### <a name="other-costs"></a>기타 비용
 
 - 각 클라우드 서비스에는 동적 IP 주소가 있습니다. 고유한 CMG는 각각 새 동적 IP 주소를 사용합니다. CMG당 추가 VM을 추가하더라도 이러한 주소는 증가하지 않습니다.  
@@ -282,7 +287,7 @@ CMG 성능을 향상시키는 데 도움이 될 수 있는 권장 사항은 다�
 
 - 가능한 경우 동일한 네트워크 영역에 CMG, CMG 연결점 및 Configuration Manager 사이트 서버를 구성하여 대기 시간을 줄입니다.  
 
-- 현재 Configuration Manager 클라이언트와 CMG 간의 연결은 영역을 인식하지 않습니다.  
+- 현재 Configuration Manager 클라이언트와 CMG 간의 연결은 지역을 인식하지 못합니다.  
 
 - 서비스의 고가용성을 위해 둘 이상의 CMG 서비스와 사이트당 2개의 CMG 연결 지점을 만듭니다.  
 
@@ -300,7 +305,7 @@ CMG 성능을 향상시키는 데 도움이 될 수 있는 권장 사항은 다�
 
 ## <a name="ports-and-data-flow"></a>포트 및 데이터 흐름
 
-온-프레미스 네트워크에 대한 인바운드 포트를 열 필요는 없습니다. 서비스 연결 지점과 CMG 연결 지점은 Azure 및 CMG와의 모든 통신을 시작합니다. 이러한 두 사이트 시스템 역할은 Microsoft 클라우드에 대한 아웃바운드 연결을 만들 수 있어야 합니다. 서비스 연결 지점은 Azure에서 서비스를 배포하고 모니터링하므로 온라인 모드여야 합니다. CMG 연결 지점은 CMG에 연결되어 CMG와 온-프레미스 사이트 시스템 역할 간의 통신을 관리합니다.
+온-프레미스 네트워크에 대한 인바운드 포트는 열 필요가 없습니다. 서비스 연결 지점과 CMG 연결 지점은 Azure 및 CMG와의 모든 통신을 시작합니다. 이러한 두 사이트 시스템 역할은 Microsoft 클라우드에 대한 아웃바운드 연결을 만들 수 있어야 합니다. 서비스 연결 지점은 Azure에서 서비스를 배포하고 모니터링하므로 온라인 모드여야 합니다. CMG 연결 지점은 CMG에 연결되어 CMG와 온-프레미스 사이트 시스템 역할 간의 통신을 관리합니다.
 
 다음 다이어그램은 CMG에 대한 개념적인 기본 데이터 흐름입니다. ![CMG 데이터 흐름](media/cmg-data-flow.png)
    1. 서비스 연결 지점은 443 HTTPS 포트를 통해 Azure에 연결됩니다. Azure AD 또는 Azure 관리 인증서를 사용하여 인증합니다. 서비스 연결 지점은 CMG를 Azure에 배포합니다. CMG는 서버 인증 인증서를 사용하여 HTTPS 클라우드 서비스를 만듭니다.  
@@ -323,15 +328,15 @@ CMG 성능을 향상시키는 데 도움이 될 수 있는 권장 사항은 다�
 | CMG 연결 지점     | HTTPS | 443        | CMG 서비스       | 하나의 VM 인스턴스에만 CMG 채널을 작성하기 위한 대체(fallback)<sup>2</sup> |
 | CMG 연결 지점     |  HTTPS   | 10124-10139     | CMG 서비스       | 둘 이상의 VM 인스턴스에 CMG 채널을 작성하기 위한 대체(fallback)<sup>3</sup> |
 | 클라이언트     |  HTTPS | 443         | CMG        | 일반 클라이언트 통신 |
-| CMG 연결 지점      | HTTPS 또는 HTTP | 443 또는 80         | 관리 지점</br>(1706 또는 1710 버전) | 온-프레미스 트래픽, 포트는 관리 지점 구성에 따라 달라집니다. |
-| CMG 연결 지점      | HTTPS | 443      | 관리 지점</br>(1802 버전) | 온-프레미스 트래픽은 HTTPS여야 합니다. |
+| CMG 연결 지점      | HTTPS 또는 HTTP | 443 또는 80         | 관리 지점<br>(1706 또는 1710 버전) | 온-프레미스 트래픽, 포트는 관리 지점 구성에 따라 달라집니다. |
+| CMG 연결 지점      | HTTPS | 443      | 관리 지점<br>(1802 버전) | 온-프레미스 트래픽은 HTTPS여야 합니다. |
 | CMG 연결 지점      | HTTPS 또는 HTTP | 443 또는 80         | 소프트웨어 업데이트 지점 | 온-프레미스 트래픽, 포트는 소프트웨어 업데이트 지점 구성에 따라 달라집니다. |
 
-<sup>1</sup> CMG 연결 지점은 먼저 각 CMG VM 인스턴스와 함께 수명이 긴 TCP-TLS 연결을 설정하려고 합니다. 10140 포트의 첫 번째 VM 인스턴스에 연결합니다. 두 번째 VM 인스턴스는 10141 포트를 사용하며, 16번째 포트인 10155 포트까지 사용할 수 있습니다. TCP TLS 연결이 최상의 성능을 제공하지만 인터넷 프록시는 지원하지 않습니다. CMG 연결 지점에서 TCP-TLS를 통해 연결할 수 없는 경우 HTTPS로 대체합니다.<sup>2</sup>  
+<sup>1</sup> CMG 연결 지점은 먼저 각 CMG VM 인스턴스와 함께 수명이 긴 TCP-TLS 연결을 설정하려고 합니다. 10140 포트의 첫 번째 VM 인스턴스에 연결합니다. 두 번째 VM 인스턴스는 10141 포트(10155 포트의 16번째 VM 인스턴스까지)를 사용합니다. TCP TLS 연결이 최상의 성능을 제공하지만 인터넷 프록시는 지원하지 않습니다. CMG 연결 지점에서 TCP-TLS를 통해 연결할 수 없는 경우 HTTPS로 대체합니다.<sup>2</sup>  
 
 <sup>2</sup> CMG 연결 지점에서 TCP-TLS<sup>1</sup>를 통해 CMG에 연결할 수 없는 경우, 하나의 VM 인스턴스에 대해서만 443 HTTPS 포트를 통해 Azure 네트워크 부하 분산 장치에 연결합니다.  
 
-<sup>3</sup> 둘 이상의 VM 인스턴스가 있는 경우, CMG 연결 지점에서 443 HTTPS 포트가 아니라 10124 HTTPS 포트를 첫 번째 VM 인스턴스에 사용합니다. 10125 HTTPS 포트(16번째 포트인 10139 HTTPS 포트까지)에서 두 번째 VM 인스턴스에 연결합니다.
+<sup>3</sup> 둘 이상의 VM 인스턴스가 있는 경우, CMG 연결 지점에서 443 HTTPS 포트가 아니라 10124 HTTPS 포트를 첫 번째 VM 인스턴스에 사용합니다. 10125 HTTPS 포트에서 두 번째 VM 인스턴스에(10139 HTTPS 포트의 16번째 VM 인스턴스까지) 연결합니다.
 
 
 ### <a name="internet-access-requirements"></a>인터넷 액세스 요구 사항

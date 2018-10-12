@@ -1,0 +1,92 @@
+items:
+- name: 이해 및 탐색
+  items:
+  - name: 소개
+    href: understand/introduction-to-application-management.md
+- name: 시작
+  items:
+  - name: 응용 프로그램 만들기 및 배포
+    href: get-started/create-and-deploy-an-application.md
+- name: 계획 및 디자인
+  items:
+  - name: 응용 프로그램 관리 계획 및 구성
+    href: plan-design/plan-for-and-configure-application-management.md
+  - name: 보안 및 개인 정보
+    href: plan-design/security-and-privacy-for-application-management.md
+- name: 배포 및 사용
+  items:
+  - name: 응용 프로그램 만들기
+    href: deploy-use/create-applications.md
+    items:
+    - name: Mac 컴퓨터 응용 프로그램 만들기
+      href: get-started/creating-mac-computer-applications.md
+    - name: Windows 응용 프로그램 만들기
+      href: get-started/creating-windows-applications.md
+    - name: Linux 및 UNIX 서버 응용 프로그램 만들기
+      href: get-started/creating-linux-and-unix-server-applications.md
+    - name: Windows Embedded 응용 프로그램 만들기
+      href: get-started/creating-windows-embedded-applications.md
+    - name: 글로벌 조건 만들기
+      href: deploy-use/create-global-conditions.md
+    - name: 패키지 및 프로그램
+      href: deploy-use/packages-and-programs.md
+  - name: 응용 프로그램 배포
+    items:
+    - name: 응용 프로그램 배포
+      href: deploy-use/deploy-applications.md
+    - name: 단계별 배포 만들기
+      href: ../osd/deploy-use/create-phased-deployment-for-task-sequence.md?toc=/sccm/apps/toc.json&bc=/sccm/apps/breadcrumb/toc.json
+    - name: 응용 프로그램 공유
+      href: deploy-use/share-applications.md
+    - name: 응용 프로그램 배포 시뮬레이트
+      href: deploy-use/simulate-application-deployments.md
+    - name: App-V 가상 응용 프로그램 배포
+      href: get-started/deploying-app-v-virtual-applications.md
+  - name: 응용 프로그램 모니터링
+    items:
+    - name: 콘솔에서 응용 프로그램 모니터링
+      href: deploy-use/monitor-applications-from-the-console.md
+    - name: 단계적 배포 관리 및 모니터링
+      href: ../osd/deploy-use/manage-monitor-phased-deployments.md?toc=/sccm/apps/toc.json&bc=/sccm/apps/breadcrumb/toc.json
+    - name: 소프트웨어 계량을 사용하여 앱 사용 모니터링
+      href: deploy-use/monitor-app-usage-with-software-metering.md
+  - name: 응용 프로그램 관리
+    items:
+    - name: 관리 작업
+      href: deploy-use/management-tasks-applications.md
+    - name: 사용자 장치 선호도
+      href: deploy-use/link-users-and-devices-with-user-device-affinity.md
+    - name: 비즈니스용 Microsoft 스토어 대량 구매 앱
+      href: deploy-use/manage-apps-from-the-windows-store-for-business.md
+    - name: App-V 가상 환경
+      href: deploy-use/create-app-v-virtual-environments.md
+  - name: 응용 프로그램 업데이트 및 사용 중지
+    items:
+    - name: 응용 프로그램 업데이트 및 사용 중지
+      href: deploy-use/update-and-retire-applications.md
+    - name: 응용 프로그램 수정 및 대체
+      href: deploy-use/revise-and-supersede-applications.md
+    - name: 응용 프로그램 제거
+      href: deploy-use/uninstall-applications.md
+  - name: 스크립트 실행 및 관리
+    href: deploy-use/create-deploy-scripts.md
+    items:
+    - name: PowerShell 스크립트 보안에 대해 알아보기
+      href: deploy-use/learn-script-security.md
+  - name: Package Conversion Manager
+    href: pcm/package-conversion-manager.md
+    items:
+    - name: 패키지를 분석하고 변환하는 방법
+      href: pcm/how-to-analyze-and-convert.md
+    - name: Package Conversion Manager 문제 해결
+      href: pcm/troubleshoot-pcm.md
+    - name: 기술 참조
+      items:
+      - name: 오류 메시지
+        href: pcm/error-messages.md
+ms.openlocfilehash: c77312e99b6c08ecea729ade9e3de1ade4fccfa7
+ms.sourcegitcommit: 759098de944b8f7d5eedfc2bae2cb9a6ba15276f
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "48817763"

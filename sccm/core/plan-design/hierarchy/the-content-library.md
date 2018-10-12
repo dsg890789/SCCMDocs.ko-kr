@@ -2,7 +2,7 @@
 title: 콘텐츠 라이브러리
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 배포된 콘텐츠의 전체 크기를 줄이는 데 사용하는 콘텐츠 라이브러리에 대해 알아봅니다.
-ms.date: 07/30/2018
+ms.date: 09/19/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 65c88e54-3574-48b0-a127-9cc914a89dca
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 05c49f78d24599c574828cee59118c069b7c4ee8
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 5f063034ed7cdc22a92df8d07d8be03ece12f663
+ms.sourcegitcommit: 4e4b71227309bee7e9f1285971f8235c67a9c502
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39384956"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46533748"
 ---
 # <a name="the-content-library-in-configuration-manager"></a>Configuration Manager의 콘텐츠 라이브러리
 
@@ -82,7 +82,9 @@ Configuration Manager는 다음 경우에 중앙 관리 사이트에서 콘텐�
 > 이 작업은 사이트 서버의 콘텐츠 라이브러리만 이동합니다. 배포 지점에 있는 콘텐츠 라이브러리의 위치에는 영향을 주지 않습니다. 
 
 > [!Tip]  
-> 또한 콘텐츠 라이브러리 외부에 있는 패키지 원본 콘텐츠를 관리하기 위한 계획입니다. Configuration Manager의 모든 소프트웨어 개체에는 네트워크 공유에 패키지 원본이 있습니다. 모든 원본을 단일 공유로 중앙 집중화하는 것을 고려하되, 이 위치는 중복 및 고가용성이어야 합니다. 패키지 원본과 동일한 저장소 볼륨에 콘텐츠 라이브러리를 이동하고 이 볼륨에서 콘텐츠 중복 제거를 지원하는 경우 이 디자인은 필요한 저장소의 크기를 저장할 수 있습니다.  
+> 또한 콘텐츠 라이브러리 외부에 있는 패키지 원본 콘텐츠를 관리하기 위한 계획입니다. Configuration Manager의 모든 소프트웨어 개체에는 네트워크 공유에 패키지 원본이 있습니다. 모든 원본을 단일 공유로 중앙 집중화하는 것을 고려하되, 이 위치는 중복 및 고가용성이어야 합니다. 
+> 
+> 콘텐츠 라이브러리를 패키지 원본과 동일한 저장소 볼륨으로 이동하는 경우 이 볼륨을 데이터 중복 제거용으로 표시할 수 없습니다. 콘텐츠 라이브러리는 데이터 중복 제거를 지원하지만, 패키지 원본 볼륨은 데이터 중복 제거를 지원하지 않습니다. 자세한 내용은 [데이터 중복 제거](/sccm/core/plan-design/configs/support-for-windows-features-and-networks#bkmmk_datadedup)를 참조하세요.<!--SCCMDOcs issue #831-->  
 
 
 ### <a name="prerequisites"></a>필수 구성 요소  
@@ -98,6 +100,9 @@ Configuration Manager는 다음 경우에 중앙 관리 사이트에서 콘텐�
 ### <a name="process-to-manage-the-content-library"></a>콘텐츠 라이브러리를 관리하는 프로세스
 
 1. 콘텐츠 라이브러리에 대한 대상으로 네트워크 공유에 폴더를 만듭니다. 예: `\\server\share\folder`  
+
+    > [!Warning]  
+    > 기존 폴더를 콘텐츠에 재사용하지 마세요. 예를 들어 패키지 원본과 동일한 폴더를 사용하지 마세요. 콘텐츠 라이브러리를 복사하기 전에, Configuration Manager는 사용자가 지정하는 위치에서 기존 콘텐츠를 모두 제거합니다.  
 
 2. Configuration Manager 콘솔에서 **관리** 작업 영역으로 전환합니다. **사이트 구성**을 확장하고 **사이트** 노드를 선택한 후 사이트를 선택합니다. 세부 정보 창의 맨 아래에 있는 **요약** 탭에서 **콘텐츠 라이브러리**에 대한 새 열을 확인합니다.  
 

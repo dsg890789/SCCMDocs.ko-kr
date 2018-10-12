@@ -2,7 +2,7 @@
 title: 기술 미리 보기 릴리스
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 새로운 기능과 기술을 시험 사용할 수 있는 기술 미리 보기 분기를 알아봅니다.
-ms.date: 08/17/2018
+ms.date: 09/12/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,14 +10,14 @@ ms.assetid: 9ce0a8cb-f96c-4e41-834c-59ceb54ce44a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4be568e997a85acf49c3c86971f8d678d916aef0
-ms.sourcegitcommit: 7eebd112a9862bf98359c1914bb0c86affc5dbc0
+ms.openlocfilehash: e49f39f2c9a052ef583b172c1ccad7b2963d300a
+ms.sourcegitcommit: a7254f265098ae8e83b4fa1fac312e9cc3c4f897
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42589528"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "44961078"
 ---
-# <a name="technical-preview-for-configuration-manager"></a>Configuration Manager용 기술 미리 보기
+# <a name="technical-preview-for-configuration-manager"></a>Configuration Manager에 대한 기술 미리 보기
 
 *적용 대상: System Center Configuration Manager(Technical Preview)*
 
@@ -124,10 +124,12 @@ Microsoft는 세 개의 연속 버전을 사용할 수 있을 때까지 각 기�
 
 <!-- This is the full list of new features in the latest TP release -->
 
-### <a name="technical-preview-version-1808"></a>기술 미리 보기 버전 1808
+### <a name="technical-preview-version-1809"></a>Technical Preview 버전 1809
 
-- [소프트웨어 업데이트 단계적 배포](capabilities-in-technical-preview-1808.md#bkmk_pod) <!--1358146-->
-- [응용 프로그램 복구 향상](capabilities-in-technical-preview-1808.md#bkmk_repair) <!--1357866-->
+- [향상된 CMPivot 기능](capabilities-in-technical-preview-1809.md#bkmk_cmpivot) <!--1359068-->
+- [향상된 수명 주기 대시보드 기능](capabilities-in-technical-preview-1809.md#bkmk_lifecycle) <!--1358702-->
+- [향상된 데이터 웨어하우스 기능](capabilities-in-technical-preview-1809.md#bkmk_dataw) <!--1358870-->
+- [향상된 소프트웨어 업데이트에 대한 유지 관리 기간 기능](capabilities-in-technical-preview-1809.md#bkmk_sum-mw) <!--vso2839307-->
 
 
 > [!Note]  
@@ -146,6 +148,8 @@ Then remove the bottom of this list and/or move individual items not in CB to th
 
  |기능 |기술 미리 보기 버전 |현재 분기 버전|  
  |----------------|---------------------|--------------------|
+ | 단계별 소프트웨어 업데이트 배포 <!--1358146--> | [Tech Preview 1808](capabilities-in-technical-preview-1808.md#bkmk_pod) | ![추가되지 않음](media/Red_X.gif) | 
+ | 향상된 응용 프로그램 복구 기능 <!--1357866--> | [Tech Preview 1808](capabilities-in-technical-preview-1808.md#bkmk_repair) | ![추가되지 않음](media/Red_X.gif) | 
  | 커뮤니티 허브 <!--1357766--> | [Tech Preview 1807](capabilities-in-technical-preview-1807.md#bkmk_hub) | ![추가되지 않음](media/Red_X.gif) | 
  | 오프라인 OS 이미지 서비스용 드라이브 지정<!--1358924--> | [Tech Preview 1807](capabilities-in-technical-preview-1807.md#bkmk_osd) | ![추가되지 않음](media/Red_X.gif) | 
  | Intune에서 공동 관리되는 장치 동기화 작업<!--1358565--> | [Tech Preview 1807](capabilities-in-technical-preview-1807.md#bkmk_comgmt) | ![추가되지 않음](media/Red_X.gif) | 
@@ -175,25 +179,8 @@ Then remove the bottom of this list and/or move individual items not in CB to th
  | 장치의 모든 사용자에 대해 Windows 앱 패키지 프로비전 <!--1358310--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#provision-windows-app-packages-for-all-users-on-a-device)  | [1806 버전](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
  | Surface 대시보드에 대한 개선 사항 <!--1358654--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#improvements-to-the-surface-dashboard)  | [1806 버전](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
  | 하드웨어 인벤토리 기본 단위 수정 버전 <!--514442--> | [Tech Preview 1806](capabilities-in-technical-preview-1806.md#hardware-inventory-default-unit-revision)  | [1806 버전](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
- | 작업 순서에 대해 수동으로 구성된 단계를 사용하여 단계적 배포 만들기 <!--1358148--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#create-a-phased-deployment-with-manually-configured-phases-for-a-task-sequence)  | [1806 버전](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
- | Azure Resource Manager에 대한 클라우드 배포 지점 지원 <!--1322209--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#cloud-distribution-point-support-for-azure-resource-manager)  | [1806 버전](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
- | 관리 인사이트를 기반으로 작업 수행 <!--1357930--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#take-actions-based-on-management-insights)  | [1806 버전](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
- | 공동 관리를 사용하여 장치 구성 워크로드를 Intune으로 전환 <!--1357903--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#transition-device-configuration-workload-to-intune-using-co-management)  | [1806 버전](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
- | 배포 지점에서 네트워크 정체 제어를 사용하도록 설정 <!--1358112--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#enable-distribution-points-to-use-network-congestion-control)  | [1806 버전](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
- | 클라우드 관리 대시보드 <!--1358461--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#cloud-management-dashboard)  | [1806 버전](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
- | CMPivot <!--1358456--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#cmpivot)  | [1806 버전](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
- | 개선된 보안 클라이언트 통신 <!--1356889,1358228,1358460--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improved-secure-client-communications)  | [1806 버전](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
- | 타사 소프트웨어 업데이트 지원에 대한 개선 사항 <!--1357605--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvements-for-enabling-third-party-software-update-support)  | [1806 버전](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
- | 향상된 Windows 10 전체 업그레이드 작업 순서 <!--1358500--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvements-to-windows-10-in-place-upgrade-task-sequence)  | [1806 버전](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
- | CMTrace가 클라이언트와 함께 설치됨 <!--1357971--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#cmtrace-installed-with-client)  | [1806 버전](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
- | Configuration Manager 콘솔 개선 사항 <!--1358202--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvement-to-the-configuration-manager-console)  | [1806 버전](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
- | 콘솔 피드백 개선 사항 <!--1357542--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvements-to-console-feedback)  | [1806 버전](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
- | 향상된 PXE 사용 배포 지점 <!--1357580--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvements-to-pxe-enabled-distribution-points)  | [1806 버전](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
- | 큰 정수 값에 대한 하드웨어 인벤토리 개선 사항 <!--1357880--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvement-to-hardware-inventory-for-large-integer-values)  | [1806 버전](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
- | WSUS 유지 관리 개선 사항 <!--1357898--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvement-to-wsus-maintenance)  | [1806 버전](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
- | CNG 인증서 지원 개선 사항 <!--1357314--> | [Tech Preview 1805](capabilities-in-technical-preview-1805.md#improvement-to-support-for-cng-certificates)  | [1806 버전](/sccm/core/plan-design/changes/whats-new-in-version-1806) |  
 
-  
+
 
 ## <a name="features-in-previous-technical-previews"></a>이전 기술 미리 보기의 기능
 

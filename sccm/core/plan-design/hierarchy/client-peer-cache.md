@@ -2,7 +2,7 @@
 title: 클라이언트 피어 캐시
 titleSuffix: Configuration Manager
 description: Configuration Manager를 사용하여 콘텐츠를 배포할 때 원본 위치에 클라이언트 피어 캐시를 사용합니다.
-ms.date: 07/30/2018
+ms.date: 09/19/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 86cd5382-8b41-45db-a4f0-16265ae22657
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: c3dc6189f73b939f632581a8b50f05a72310111d
-ms.sourcegitcommit: be8c0182db9ef55a948269fcbad7c0f34fd871eb
+ms.openlocfilehash: b1d4e2b7dca44db7ddc5976edde59a04bc3cb45e
+ms.sourcegitcommit: 4e4b71227309bee7e9f1285971f8235c67a9c502
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42755999"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46533765"
 ---
 # <a name="peer-cache-for-configuration-manager-clients"></a>Configuration Manager 클라이언트용 피어 캐시
 
@@ -59,6 +59,8 @@ Configuration Manager 클라이언트는 피어 캐시를 사용하여 캐시의
 
  -  일반적으로 콘텐츠를 검색하는 클라이언트는 제공된 목록에서 원본 하나를 선택합니다. 그런 다음 클라이언트에서 해당 콘텐츠를 가져오려고 시도합니다.  
 
+1806 버전부터 경계 그룹에는 사용자 환경에서 콘텐츠 배포를 보다 세밀하게 제어할 수 있는 추가 설정이 포함됩니다. 자세한 내용은 [피어 다운로드를 위한 경계 그룹 옵션](/sccm/core/servers/deploy/configure/boundary-groups#bkmk_bgoptions)을 참조하세요.<!--1356193-->
+
 > [!NOTE]  
 > 클라이언트가 콘텐츠의 인접 경계 그룹으로 대체될 경우, 관리 지점은 인접 경계 그룹의 피어 캐시 원본을 잠재적 콘텐츠 원본 위치 목록에 추가하지 않습니다.  
 
@@ -98,9 +100,12 @@ Configuration Manager 클라이언트는 피어 캐시를 사용하여 캐시의
 
     - 필요한 경우 피어 캐시 원본에서 네트워크 액세스 계정을 사용하여 피어의 다운로드 요청을 인증합니다. 이 계정에는 이 용도의 도메인 사용자 권한만 필요합니다.  
 
-- 클라이언트의 마지막 하트비트 검색 제출에 따라 피어 캐시 원본의 현재 경계가 결정됩니다. 다른 경계 그룹으로 로밍하는 클라이언트는 여전히 피어 캐시를 위해 이전 경계 그룹의 멤버일 수 있습니다. 이 동작으로 인해 직접 네트워크 위치에 있지 않은 피어 캐시 원본이 클라이언트에 제공됩니다. 로밍 클라이언트를 피어 캐시 원본으로 사용하지 마세요.<!--SCCMDocs issue 641-->  
+- 1802 이하 버전에서는 클라이언트의 마지막 하트비트 검색 제출에 따라 피어 캐시 원본의 현재 경계가 결정됩니다. 다른 경계 그룹으로 로밍하는 클라이언트는 여전히 피어 캐시를 위해 이전 경계 그룹의 멤버일 수 있습니다. 이 동작으로 인해 직접 네트워크 위치에 있지 않은 피어 캐시 원본이 클라이언트에 제공됩니다. 로밍 클라이언트를 피어 캐시 원본으로 사용하지 마세요.<!--SCCMDocs issue 641-->  
 
-- 콘텐츠를 다운로드하기 전에 피어 캐시 클라이언트는 먼저 피어 캐시 원본이 온라인 상태인지 확인합니다.<!--sms.498675--> 이 유효성 검사는 TCP 포트 10123을 사용하는 클라이언트 알림의 "빠른 채널"을 통해 수행됩니다.<!--511673-->  
+    > [!Important]  
+    > 1806 버전부터는 피어 캐시 원본이 다른 위치로 로밍되었는지 확인하는 Configuration Manager의 효율이 향상되었습니다. 이 동작을 통해 관리 지점은 피어 캐시 원본을 이전 위치가 아닌 새 위치의 클라이언트에 콘텐츠 원본으로 제공합니다. 로밍 피어 캐시 원본에 피어 캐시 기능을 사용하는 경우 사이트를 1806 버전으로 업데이트 한 후 모든 피어 캐시 원본을 최신 클라이언트 버전으로 업데이트해야 합니다. 피어 캐시 원본이 버전 1806 이상으로 업데이트되기 전에는, 관리 지점이 이러한 피어 캐시 원본을 콘텐츠 위치 목록에 포함하지 않습니다.<!--SCCMDocs issue 850-->  
+
+- 콘텐츠를 다운로드하기 전에, 관리 지점은 먼저 피어 캐시 원본이 온라인 상태인지 확인합니다.<!--sms.498675--> 이 유효성 검사는 TCP 포트 10123을 사용하는 클라이언트 알림의 "빠른 채널"을 통해 수행됩니다.<!--511673-->  
 
 > [!Note]  
 > 새 Configuration Manager 기능을 활용하려면 먼저 클라이언트를 최신 버전으로 업데이트합니다. 사이트 및 콘솔을 업데이트할 때 Configuration Manager 콘솔에 새 기능이 표시되지만 클라이언트 버전도 최신 버전이 될 때까지 전체 시나리오가 작동하지 않습니다.  

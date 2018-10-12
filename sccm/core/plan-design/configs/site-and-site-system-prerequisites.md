@@ -10,12 +10,12 @@ ms.assetid: 1392797b-76cb-46b4-a3e4-8f349ccaa078
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 10dfebccd997a42f4c79e5d88bdf05e26585aebb
-ms.sourcegitcommit: 7eebd112a9862bf98359c1914bb0c86affc5dbc0
+ms.openlocfilehash: 4ba23a42acb111f4ed7d0337552b2ea90b0268d6
+ms.sourcegitcommit: 78d2dce465e3500653b252583a6903a006784c26
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42589875"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46448925"
 ---
 # <a name="site-and-site-system-prerequisites-for-configuration-manager"></a>Configuration Manager의 사이트 및 사이트 시스템 필수 조건
 
@@ -73,7 +73,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 - [등록 프록시 지점](#bkmk_2012EnrollProxpreq)
 - [대체 상태 지점](#bkmk_2012FSPpreq)
 - [관리 지점](#bkmk_2012MPpreq)
-- [보고 지점](#bkmk_2012RSpoint)
+- [보고 서비스 지점](#bkmk_2012RSpoint)
 - [서비스 연결 지점](#bkmk_SCPpreq)
 - [소프트웨어 업데이트 지점](#bkmk_2012SUPpreq)
 - [상태 마이그레이션 지점](#bkmk_2012SMPpreq)
@@ -452,7 +452,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 
 
-##  <a name="bkmk_2012RSpoint"></a> 보고 지점  
+##  <a name="bkmk_2012RSpoint"></a> 보고 서비스 지점  
 
 #### <a name="windows-server-roles-and-features"></a>Windows Server 역할 및 기능  
 

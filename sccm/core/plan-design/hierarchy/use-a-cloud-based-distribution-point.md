@@ -2,7 +2,7 @@
 title: 클라우드 배포 지점
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 클라우드 배포 지점을 사용하여 Microsoft Azure를 통해 소프트웨어 콘텐츠를 배포하기 위한 계획과 디자인입니다.
-ms.date: 07/30/2018
+ms.date: 09/10/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 3cd9c725-6b42-427d-9191-86e67f84e48c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0c41fddef794049456529d9577275a21668717f5
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 79b17ba00274459401dc81035833163e75939be0
+ms.sourcegitcommit: 2badee2b63ae63687795250e298f463474063100
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385459"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45601146"
 ---
 # <a name="use-a-cloud-distribution-point-in-configuration-manager"></a>Configuration Manager에서 클라우드 배포 지점 사용
 
@@ -305,6 +305,18 @@ Azure 저장소 서비스는 단일 파일에 대해 초당 500개의 요청을 
 ##  <a name="bkmk_certs"></a> 인증서  
 
 클라우드 배포 지점 디자인에 따라 하나 이상의 디지털 인증서가 필요합니다.  
+
+
+### <a name="general-information"></a>일반 정보
+<!--SCCMDocs issue #779--> 클라우드 배포 지점에 대한 인증서는 다음 구성을 지원합니다.  
+
+- **4096비트 키 길이**  
+
+- 버전 1710부터 **버전 3** 인증서를 지원합니다. 자세한 내용은 [CNG 인증서 개요](/sccm/core/plan-design/network/cng-certificates-overview)를 참조하세요.  
+
+- 버전 1802부터 **시스템 암호화: 암호화, 해시 및 서명에 대해 FIPS 호환 알고리즘 사용** 정책으로 Windows를 구성합니다.  
+
+- 버전 1802부터 **TLS 1.2**를 지원합니다. 자세한 내용은 [암호화 컨트롤 기술 참조](/sccm/core/plan-design/security/cryptographic-controls-technical-reference#about-ssl-vulnerabilities)를 참조하세요.  
 
 
 ### <a name="azure-management-certificate"></a>Azure 관리 인증서

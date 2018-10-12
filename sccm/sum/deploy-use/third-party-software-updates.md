@@ -10,12 +10,12 @@ ms.assetid: 946b0f74-0794-4e8f-a6af-9737d877179b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3c31b950ef59147f6f3f46c1cba7780b7789948c
-ms.sourcegitcommit: 4b7812b505e80f79fc90dfa8a6db06eea79a3550
+ms.openlocfilehash: fbcf7a7d76146cc11dd4bb57b86fe4752c694e02
+ms.sourcegitcommit: 1e782268d6c0211bd854b5860de72cfd6c6985c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42584549"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44697041"
 ---
 # <a name="enable-third-party-updates"></a>타사 업데이트 사용 
 
@@ -36,13 +36,13 @@ ms.locfileid: "42584549"
 
 ## <a name="additional-requirements-when-the-sup-is-remote-from-the-top-level-site-server"></a>SUP가 최상위 사이트 서버에서 원격일 때 추가 요구 사항 
 
-1. SSL은 원격일 경우 SUP에서 사용하도록 설정되어야 합니다. 
+1. SSL은 원격일 경우 SUP에서 사용하도록 설정되어야 합니다. 이를 위해 내부 인증 기관 또는 공용 공급자를 통해 생성된 서버 인증 인증서가 필요합니다.
     - [WSUS에서 SSL 구성](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/deploy/2-configure-wsus#bkmk_2.5.ConfigSSL)
         - WSUS에서 SSL을 구성하는 경우 일부 웹 서비스 및 가상 디렉터리는 항상 HTTP이며 HTTPS가 아닙니다. 
         - Configuration Manager는 HTTP를 통해 WSUS 콘텐츠 디렉터리에서 소프트웨어 업데이트 패키지에 대한 타사 콘텐츠를 다운로드합니다.   
     - [SUP에서 SSL 구성](../get-started/install-a-software-update-point.md#configure-ssl-communications-to-wsus)
 
-2. 자체 서명된 WSUS 인증서의 생성을 허용하려면 
+2. [소프트웨어 업데이트 지점 구성 요소 속성]에서 타사 업데이트 WSUS 서명 인증서 구성을 **Configuration Manager에서 업데이트 관리**로 설정하는 경우 자체 서명된 WSUS 서명 인증서를 만들려면 다음 구성이 필요합니다. 
    - SUP 서버에서 원격 레지스트리를 사용하도록 설정해야 합니다.
    -  **WSUS 서버 연결 계정**에는 SUP/WSUS 서버에 대한 원격 레지스트리 액세스 권한이 있어야 합니다. 
 
@@ -50,7 +50,7 @@ ms.locfileid: "42584549"
 3. Configuration Manager 사이트 서버에서 다음 레지스트리 키를 만듭니다. 
     - `HKLM\Software\Microsoft\Update Services\Server\Setup`에서 `1` 값으로 **EnableSelfSignedCertificates**라는 새 DWORD를 만듭니다. 
 
-4. 원격 SUP 서버의 신뢰할 수 있는 게시자 및 신뢰할 수 있는 루트 저장소에 인증서를 설치하도록 설정하려면
+4. 원격 SUP 서버의 신뢰할 수 있는 게시자 및 신뢰할 수 있는 루트 저장소에 자체 서명된 WSUS 서명 인증서를 설치하도록 설정하려면 다음이 필요합니다.
    - **WSUS 서버 연결 계정**에는 SUP 서버에 대한 원격 관리 액세스 권한이 있어야 합니다.
 
     이 항목이 가능하지 않은 경우 로컬 컴퓨터의 WSUS 저장소에서 신뢰할 수 있는 게시자 및 신뢰할 수 있는 루트 저장소로 인증서를 내보냅니다. 
@@ -69,7 +69,7 @@ ms.locfileid: "42584549"
 
 
 ## <a name="configure-the-wsus-signing-certificate"></a>WSUS 서명 인증서 구성
-Configuration Manager가 타사 WSUS 서명 인증서를 자동으로 관리하게 할지 또는 사용자가 인증서를 수동으로 구성해야 하는지를 결정해야 합니다. 
+Configuration Manager에서 자체 서명된 인증서를 사용하여 타사 WSUS 서명 인증서를 자동으로 관리하도록 할지, 아니면 사용자가 인증서를 수동으로 구성해야 할지를 결정해야 합니다. 
 
 ### <a name="automatically-manage-the-wsus-signing-certificate"></a>WSUS 서명 인증서 자동 관리
 PKI 인증서를 사용하기 위한 요구 사항이 없는 경우 타사 업데이트에 대한 서명 인증서를 자동으로 관리하도록 선택할 수 있습니다. WSUS 인증서 관리는 동기화 주기의 일부로 수행되며 `wsyncmgr.log`에 기록됩니다. 

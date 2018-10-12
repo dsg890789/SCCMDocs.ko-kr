@@ -1,0 +1,751 @@
+items:
+- name: 이해 및 탐색
+  items:
+  - name: Configuration Manager 소개
+    href: understand/introduction.md
+    items:
+    - name: Configuration Manager에 대한 도움말 찾기
+      href: understand/find-help.md
+    - name: 문서 사용 방법
+      href: understand/use-docs.md
+    - name: 콘솔 사용
+      href: servers/manage/admin-console.md
+    - name: 내게 필요한 옵션 기능
+      href: understand/accessibility-features.md
+    - name: 소프트웨어 센터 사용자 가이드
+      href: understand/software-center.md
+  - name: Configuration Manager의 기본 항목
+    href: understand/fundamentals.md
+    items:
+    - name: 사이트 및 계층의 기본 사항
+      href: understand/fundamentals-of-sites-and-hierarchies.md
+      items:
+      - name: 사이트 및 계층 인프라에 대한 업그레이드, 업데이트 및 설치 정보
+        href: understand/upgrade-update-install.md
+    - name: 장치 관리의 기본 사항
+      href: understand/fundamentals-of-managing-devices.md
+    - name: 클라이언트 관리의 기본 사항
+      href: understand/fundamentals-of-client-management-tasks.md
+    - name: 보안 기본 사항
+      href: understand/fundamentals-of-security.md
+    - name: 역할 기반 관리의 기본 사항
+      href: understand/fundamentals-of-role-based-administration.md
+  - name: 장기 서비스 분기 소개
+    href: understand/introduction-to-the-ltsb.md
+    items:
+    - name: 장기 서비스 분기에 대해 지원되는 구성
+      href: understand/supported-configurations-for-ltsb.md
+    - name: 장기 서비스 분기 설치
+      href: understand/install-the-ltsb.md
+    - name: 장기 서비스 분기 관리
+      href: understand/manage-the-ltsb.md
+    - name: 장기 서비스 분기를 현재 분기로 업그레이드
+      href: understand/convert-to-current-branch.md
+  - name: 사용해야 하는 Configuration Manager 분기
+    href: understand/which-branch-should-i-use.md
+  - name: Configuration Manager 및 Windows as a Service
+    href: understand/configuration-manager-and-windows-as-service.md
+  - name: 확장된 상호 운용성 클라이언트
+    href: understand/interoperability-client.md
+  - name: System Center Configuration Manager 라이선스
+    href: understand/learn-more-editions.md
+  - name: 클라우드 서비스 사용
+    href: understand/use-cloud-services.md
+    items:
+    - name: Azure의 Configuration Manager
+      href: understand/configuration-manager-on-azure.md
+  - name: 제품 및 라이선스에 대한 FAQ
+    href: understand/product-and-licensing-faq.md
+  - name: 진단 및 사용 현황 데이터에 대한 FAQ
+    href: understand/frequently-asked-questions-about-diagnostics-and-usage-data.md
+- name: 계획 및 디자인
+  href: plan-design/get-ready.md
+  items:
+  - name: 제품 변경 내용
+    items:
+    - name: 기능 및 특성
+      href: plan-design/changes/features-and-capabilities.md
+    - name: Configuration Manager 2012에서 변경된 내용
+      href: plan-design/changes/what-has-changed-from-configuration-manager-2012.md
+    - name: 증분 버전의 새로운 기능
+      href: plan-design/changes/whats-new-incremental-versions.md
+    - name: 버전 1806의 새로운 기능
+      href: plan-design/changes/whats-new-in-version-1806.md
+    - name: 버전 1802의 새로운 기능
+      href: plan-design/changes/whats-new-in-version-1802.md
+    - name: 버전 1710의 새로운 기능
+      href: plan-design/changes/whats-new-in-version-1710.md
+    - name: 제거되는 기능과 사용되지 않는 기능
+      href: plan-design/changes/deprecated/removed-and-deprecated.md
+      items:
+      - name: 제거되는 기능과 사용되지 않는 기능
+        href: plan-design/changes/deprecated/removed-and-deprecated-cmfeatures.md
+      - name: 사이트 서버에서 제거되거나 사용되지 않음
+        href: plan-design/changes/deprecated/removed-and-deprecated-server.md
+      - name: 클라이언트에서 제거되거나 사용되지 않음
+        href: plan-design/changes/deprecated/removed-and-deprecated-client.md
+  - name: 지원되는 구성
+    href: plan-design/configs/supported-configurations.md
+    items:
+    - name: 크기 조정 및 규모 숫자 값
+      href: plan-design/configs/size-and-scale-numbers.md
+    - name: 사이트 및 사이트 시스템 필수 조건
+      href: plan-design/configs/site-and-site-system-prerequisites.md
+    - name: 사이트 시스템 서버에 대해 지원되는 운영 체제
+      href: plan-design/configs/supported-operating-systems-for-site-system-servers.md
+    - name: 클라이언트 및 장치에 대해 지원되는 운영 체제
+      href: plan-design/configs/supported-operating-systems-for-clients-and-devices.md
+    - name: 클라이언트로 Windows 10 지원
+      href: plan-design/configs/support-for-windows-10.md
+    - name: 콘솔의 지원되는 운영 체제
+      href: plan-design/configs/supported-operating-systems-consoles.md
+    - name: 권장 하드웨어
+      href: plan-design/configs/recommended-hardware.md
+    - name: SQL Server 버전 지원
+      href: plan-design/configs/support-for-sql-server-versions.md
+    - name: Active Directory 도메인 지원
+      href: plan-design/configs/support-for-active-directory-domains.md
+    - name: Windows 기능 및 네트워크 지원
+      href: plan-design/configs/support-for-windows-features-and-networks.md
+    - name: 가상화 환경 지원
+      href: plan-design/configs/support-for-virtualization-environments.md
+  - name: 장치 관리 솔루션 선택
+    href: plan-design/choose-a-device-management-solution.md
+  - name: 사이트 계층 구조 디자인
+    href: plan-design/hierarchy/design-a-hierarchy-of-sites.md
+    items:
+    - name: SMS 공급자에 대한 계획
+      href: plan-design/hierarchy/plan-for-the-sms-provider.md
+    - name: 사이트 데이터베이스에 대한 계획
+      href: plan-design/hierarchy/plan-for-the-site-database.md
+    - name: 사이트 시스템 서버 계획
+      href: plan-design/hierarchy/plan-for-site-system-servers-and-site-system-roles.md
+    - name: 콘텐츠 관리의 기본 개념
+      href: plan-design/hierarchy/fundamental-concepts-for-content-management.md
+      items:
+      - name: 클라우드 기반 배포 지점 사용
+        href: plan-design/hierarchy/use-a-cloud-based-distribution-point.md
+      - name: 풀(pull) 배포 지점 사용
+        href: plan-design/hierarchy/use-a-pull-distribution-point.md
+      - name: 콘텐츠 라이브러리
+        href: plan-design/hierarchy/the-content-library.md
+      - name: 순서도 – 콘텐츠 라이브러리 관리
+        href: plan-design/hierarchy/manage-content-library-flowchart.md
+      - name: 콘텐츠 라이브러리 정리 도구
+        href: plan-design/hierarchy/content-library-cleanup-tool.md
+      - name: 콘텐츠에 액세스하기 위한 계정 관리
+        href: plan-design/hierarchy/manage-accounts-to-access-content.md
+      - name: Configuration Manager 클라이언트용 피어 캐시
+        href: plan-design/hierarchy/client-peer-cache.md
+      - name: 패키지 전송 관리자
+        href: plan-design/hierarchy/package-transfer-manager.md
+      - name: 콘텐츠 관리를 위한 네트워크 대역폭 관리
+        href: plan-design/hierarchy/manage-network-bandwidth.md
+      - name: 콘텐츠 관리에 대한 보안 및 개인 정보
+        href: plan-design/hierarchy/security-and-privacy-for-content-management.md
+    - name: 클라이언트가 리소스 및 서비스를 찾는 방법
+      href: plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md
+    - name: 사이트 관리를 위한 보안 및 개인 정보
+      href: plan-design/hierarchy/security-and-privacy-for-site-administration.md
+  - name: 네트워크 인프라 계획
+    href: plan-design/network/configure-firewalls-ports-domains.md
+    items:
+    - name: Active Directory 스키마 준비
+      href: plan-design/network/extend-the-active-directory-schema.md
+      items:
+      - name: 스키마 확장
+        href: plan-design/network/schema-extensions.md
+    - name: 사이트 시스템을 지원할 Windows 서버 준비
+      href: plan-design/network/prepare-windows-servers.md
+    - name: 사이트 시스템 서버용 웹 사이트
+      href: plan-design/network/websites-for-site-system-servers.md
+    - name: PKI 인증서 요구 사항
+      href: plan-design/network/pki-certificate-requirements.md
+    - name: CNG 인증서 개요
+      href: plan-design/network/cng-certificates-overview.md
+  - name: 진단 및 사용 현황 데이터
+    href: plan-design/diagnostics/diagnostics-and-usage-data.md
+    items:
+    - name: 진단 및 사용 현황 데이터 사용 방법
+      href: plan-design/diagnostics/how-diagnostics-and-usage-data-is-used.md
+    - name: 1806에 대한 진단 데이터
+      href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1806.md
+    - name: 1802에 대한 진단 데이터
+      href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1802.md
+    - name: 1710에 대한 진단 데이터
+      href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1710.md
+    - name: 진단 및 사용 현황 데이터 수집 방법
+      href: plan-design/diagnostics/how-diagnostics-and-usage-data-is-collected.md
+    - name: 진단 및 사용 현황 데이터를 보는 방법
+      href: plan-design/diagnostics/view-diagnostics-and-usage-data.md
+    - name: CEIP(사용자 환경 개선 프로그램)
+      href: plan-design/diagnostics/customer-experience-improvement-program-ceip.md
+  - name: Configuration Manager에 대한 보안 및 개인 정보
+    href: plan-design/security/security-and-privacy.md
+    items:
+    - name: 보안 계획
+      href: plan-design/security/plan-for-security.md
+    - name: 보안 모범 사례 및 개인 정보
+      href: plan-design/security/security-best-practices-and-privacy-information.md
+    - name: 개인정보취급방침 – Configuration Manager Cmdlet 라이브러리
+      href: plan-design/security/privacy-statement-cmdlet-library.md
+    - name: 추가 개인 정보
+      href: plan-design/security/additional-privacy.md
+    - name: 보안 구성
+      href: plan-design/security/configure-security.md
+    - name: 암호화 컨트롤 기술 참조
+      href: plan-design/security/cryptographic-controls-technical-reference.md
+- name: 시작
+  items:
+  - name: 랩에서 Configuration Manager 평가
+    href: get-started/evaluate-with-lab-environment.md
+    items:
+    - name: 랩 설정
+      href: get-started/set-up-your-lab.md
+  - name: 기술 미리 보기
+    href: get-started/technical-preview.md
+    items:
+    - name: 1810의 기능
+      href: get-started/capabilities-in-technical-preview-1810.md
+    - name: 1809의 기능
+      href: get-started/capabilities-in-technical-preview-1809.md
+    - name: 1808의 기능
+      href: get-started/capabilities-in-technical-preview-1808.md
+    - name: 1807의 기능
+      href: get-started/capabilities-in-technical-preview-1807.md
+  - name: 계층 구조 간에 데이터 마이그레이션
+    href: migration/migrate-data-between-hierarchies.md
+    items:
+    - name: 마이그레이션 계획
+      href: migration/planning-for-migration.md
+      items:
+      - name: 마이그레이션을 위한 필수 조건
+        href: migration/prerequisites-for-migration.md
+      - name: 마이그레이션에 대한 검사 목록
+        href: migration/administrator-checklists-for-migration-planning.md
+      - name: 데이터를 마이그레이션할지 여부 결정
+        href: migration/determine-whether-to-migrate-data.md
+      - name: 원본 계층 구조 계획
+        href: migration/planning-a-source-hierarchy-strategy.md
+      - name: 마이그레이션 작업 계획
+        href: migration/planning-a-migration-job-strategy.md
+      - name: 클라이언트 마이그레이션 계획
+        href: migration/planning-a-client-migration-strategy.md
+      - name: 콘텐츠 배포 계획
+        href: migration/planning-a-content-deployment-migration-strategy.md
+      - name: 개체 마이그레이션 계획
+        href: migration/planning-for-the-migration-of-objects.md
+      - name: 마이그레이션 모니터링 계획
+        href: migration/planning-to-monitor-migration-activity.md
+      - name: 마이그레이션 완료 계획
+        href: migration/planning-to-complete-migration.md
+    - name: 원본 계층 구조 및 원본 사이트 구성
+      href: migration/configuring-source-hierarchies-and-source-sites-for-migration.md
+    - name: 마이그레이션을 위한 작업
+      href: migration/operations-for-migration.md
+    - name: 마이그레이션에 대한 보안 및 개인 정보
+      href: migration/security-and-privacy-for-migration.md
+- name: 서버 및 역할 배포
+  href: servers/deploy/start-using.md
+  items:
+  - name: 인프라 설치
+    items:
+    - name: 설치 미디어 받기
+      href: servers/deploy/install/get-install-media.md
+    - name: 설치 프로그램을 실행하기 전에
+      items:
+      - name: 설치 참조
+        href: servers/deploy/install/setup-reference.md
+      - name: 설치 다운로더
+        href: servers/deploy/install/setup-downloader.md
+      - name: 필수 구성 요소 검사기
+        href: servers/deploy/install/prerequisite-checker.md
+      - name: 필수 구성 요소 확인
+        href: servers/deploy/install/list-of-prerequisite-checks.md
+    - name: 사이트 설치
+      href: servers/deploy/install/installing-sites.md
+      items:
+      - name: 사이트를 설치할 준비
+        href: servers/deploy/install/prepare-to-install-sites.md
+      - name: 사이트 설치를 위한 필수 조건
+        href: servers/deploy/install/prerequisites-for-installing-sites.md
+      - name: 설치 마법사 사용
+        href: servers/deploy/install/use-the-setup-wizard-to-install-sites.md
+      - name: 명령줄 사용
+        href: servers/deploy/install/use-a-command-line-to-install-sites.md
+        items:
+        - name: 명령줄 옵션
+          href: servers/deploy/install/command-line-options-for-setup.md
+      - name: 콘솔 설치
+        href: servers/deploy/install/install-consoles.md
+      - name: 평가판 설치 업그레이드
+        href: servers/deploy/install/upgrade-an-evaluation-install-to-a-full-install.md
+      - name: System Center Configuration Manager 업그레이드
+        href: servers/deploy/install/upgrade-to-configuration-manager.md
+      - name: 설치를 간소화하는 시나리오
+        href: servers/deploy/install/scenarios-to-streamline-your-installation.md
+      - name: 사이트 및 계층 제거
+        href: servers/deploy/install/uninstall-sites-and-hierarchies.md
+  - name: 사이트 및 계층 구조 구성
+    href: servers/deploy/configure/configure-sites-and-hierarchies.md
+    items:
+    - name: 사이트 시스템 역할 추가
+      href: servers/deploy/configure/add-site-system-roles.md
+      items:
+      - name: 사이트 시스템 역할 설치
+        href: servers/deploy/configure/install-site-system-roles.md
+      - name: 클라우드 기반 배포 지점 설치
+        href: servers/deploy/configure/install-cloud-based-distribution-points-in-microsoft-azure.md
+      - name: 서비스 연결 지점 정보
+        href: servers/deploy/configure/about-the-service-connection-point.md
+      - name: 사이트 시스템 역할에 대한 구성 옵션
+        href: servers/deploy/configure/configuration-options-for-site-system-roles.md
+      - name: 관리 지점용 데이터베이스 복제본
+        href: servers/deploy/configure/database-replicas-for-management-points.md
+    - name: 사이트 구성 요소
+      href: servers/deploy/configure/site-components.md
+    - name: 사이트 데이터 게시
+      href: servers/deploy/configure/publish-site-data.md
+    - name: 콘텐츠 및 콘텐츠 인프라 관리
+      href: servers/deploy/configure/manage-content-and-content-infrastructure.md
+      items:
+      - name: 배포 지점 설치 및 구성
+        href: servers/deploy/configure/install-and-configure-distribution-points.md
+      - name: 콘텐츠 배포 및 관리
+        href: servers/deploy/configure/deploy-and-manage-content.md
+      - name: 콘텐츠 모니터링
+        href: servers/deploy/configure/monitor-content-you-have-distributed.md
+    - name: 검색 실행
+      href: servers/deploy/configure/run-discovery.md
+      items:
+      - name: 검색 방법 정보
+        href: servers/deploy/configure/about-discovery-methods.md
+      - name: 검색 방법 선택
+        href: servers/deploy/configure/select-discovery-methods-to-use.md
+      - name: 검색 방법 구성
+        href: servers/deploy/configure/configure-discovery-methods.md
+    - name: 사이트 경계 및 경계 그룹
+      href: servers/deploy/configure/define-site-boundaries-and-boundary-groups.md
+      items:
+      - name: 경계
+        href: servers/deploy/configure/boundaries.md
+      - name: 경계 그룹
+        href: servers/deploy/configure/boundary-groups.md
+    - name: 고가용성 옵션
+      href: servers/deploy/configure/high-availability-options.md
+      items:
+      - name: 사이트 서버 고가용성
+        href: servers/deploy/configure/site-server-high-availability.md
+      - name: 순서도 - 수동 사이트 서버 설치
+        href: servers/deploy/configure/passive-site-server-flowchart.md
+      - name: 순서도 - 사이트 서버 승격(계획됨)
+        href: servers/deploy/configure/promote-site-server-flowchart.md
+      - name: 순서도 - 사이트 서버 승격(계획되지 않음)
+        href: servers/deploy/configure/promote-site-server-unplanned-flowchart.md
+      - name: SQL Server Always On 사용 준비
+        href: servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database.md
+      - name: SQL Server Always On 구성
+        href: servers/deploy/configure/configure-aoag.md
+      - name: SQL Server 클러스터 사용
+        href: servers/deploy/configure/use-a-sql-server-cluster-for-the-site-database.md
+    - name: 데이터베이스 파일에 대한 사용자 지정 위치
+      href: servers/deploy/configure/custom-locations-for-site-database-files.md
+    - name: 역할 기반 관리 구성
+      href: servers/deploy/configure/configure-role-based-administration.md
+    - name: Azure 서비스 구성
+      href: servers/deploy/configure/azure-services-wizard.md
+  - name: 기술 참조
+    items:
+    - name: 계정
+      href: plan-design/hierarchy/accounts.md
+    - name: 엔드포인트 간의 통신
+      href: plan-design/hierarchy/communications-between-endpoints.md
+    - name: 계층 유지 관리 도구
+      href: servers/manage/hierarchy-maintenance-tool-preinst.exe.md
+    - name: 다국어 기능 지원
+      href: plan-design/hierarchy/international-support.md
+    - name: 서로 다른 버전 간의 상호 운용성
+      href: plan-design/hierarchy/interoperability-between-different-versions.md
+    - name: 언어 팩
+      href: servers/deploy/install/language-packs.md
+    - name: 로그 파일
+      href: plan-design/hierarchy/log-files.md
+    - name: 포트
+      href: plan-design/hierarchy/ports.md
+    - name: 프록시 서버 지원
+      href: plan-design/network/proxy-server-support.md
+    - name: 릴리스 정보
+      href: servers/deploy/install/release-notes.md
+    - name: 유니코드 및 ASCII 지원
+      href: plan-design/hierarchy/unicode-and-ascii-support.md
+- name: 인프라 관리
+  items:
+  - name: 관리 정보
+    href: servers/manage/management-insights.md
+  - name: CMPivot
+    href: servers/manage/cmpivot.md
+  - name: 유지 관리 작업
+    href: servers/manage/maintenance-tasks.md
+    items:
+    - name: 유지 관리 작업에 대한 참조
+      href: servers/manage/reference-for-maintenance-tasks.md
+  - name: 인프라 수정
+    href: servers/manage/modify-your-infrastructure.md
+    items:
+    - name: CD.Latest 폴더
+      href: servers/manage/the-cd.latest-folder.md
+  - name: 온-프레미스 인프라 업그레이드
+    href: servers/manage/upgrade-on-premises-infrastructure.md
+  - name: Configuration Manager에 대한 업데이트
+    href: servers/manage/updates.md
+    items:
+    - name: 콘솔 내 업데이트 설치
+      href: servers/manage/install-in-console-updates.md
+      items:
+      - name: 업데이트 다시 설정 도구
+        href: servers/manage/update-reset-tool.md
+      - name: 데이터베이스 업그레이드 테스트
+        href: servers/manage/test-database-upgrade.md
+      - name: 순서도 – 업데이트 다운로드
+        href: servers/manage/download-updates-flowchart.md
+      - name: 순서도 – 업데이트 복제
+        href: servers/manage/update-replication-flowchart.md
+    - name: 시험판 기능
+      href: servers/manage/pre-release-features.md
+    - name: 사이트 서버에 대한 서비스 기간
+      href: servers/manage/service-windows.md
+    - name: 서비스 연결 도구 사용
+      href: servers/manage/use-the-service-connection-tool.md
+    - name: 업데이트 등록 도구 사용
+      href: servers/manage/use-the-update-registration-tool-to-import-hotfixes.md
+    - name: 핫픽스 설치 관리자 사용
+      href: servers/manage/use-the-hotfix-installer-to-install-updates.md
+    - name: 업데이트 1806을 설치하기 위한 검사 목록
+      href: servers/manage/checklist-for-installing-update-1806.md
+    - name: 업데이트 1802를 설치하기 위한 검사 목록
+      href: servers/manage/checklist-for-installing-update-1802.md
+    - name: 업데이트 1710을 설치하기 위한 검사 목록
+      href: servers/manage/checklist-for-installing-update-1710.md
+    - name: 현재 분기 버전 지원
+      href: servers/manage/current-branch-versions-supported.md
+  - name: 백업 및 복구
+    items:
+    - name: 사이트 백업
+      href: servers/manage/backup-and-recovery.md
+    - name: 사이트 복구
+      href: servers/manage/recover-sites.md
+    - name: 무인 사이트 복구
+      href: servers/manage/unattended-recovery.md
+  - name: 사이트 오류 영향
+    href: servers/manage/site-failure-impacts.md
+  - name: 인프라 모니터링
+    items:
+    - name: 경고 및 상태 시스템 사용
+      href: servers/manage/use-alerts-and-the-status-system.md
+    - name: 상태 증명
+      href: servers/manage/health-attestation.md
+    - name: 계층 및 복제 인프라 모니터링
+      href: servers/manage/monitor-hierarchy-and-replication-infrastructure.md
+      items:
+      - name: 사이트 간 데이터 전송
+        href: servers/manage/data-transfers-between-sites.md
+    - name: 쿼리
+      href: servers/manage/queries-technical-reference.md
+      items:
+      - name: 쿼리 소개
+        href: servers/manage/introduction-to-queries.md
+      - name: 쿼리에 대한 운영 및 유지 관리
+        href: servers/manage/operations-and-maintenance-for-queries.md
+        items:
+        - name: 쿼리를 관리하는 방법
+          href: servers/manage/manage-queries.md
+        - name: 쿼리를 만드는 방법
+          href: servers/manage/create-queries.md
+      - name: 쿼리에 대한 보안 및 개인 정보
+        href: servers/manage/security-and-privacy-for-queries.md
+    - name: 보고
+      href: servers/manage/reporting.md
+      items:
+      - name: 보고 기능 소개
+        href: servers/manage/introduction-to-reporting.md
+      - name: 보고 계획
+        href: servers/manage/planning-for-reporting.md
+        items:
+        - name: 보고에 대한 필수 조건
+          href: servers/manage/prerequisites-for-reporting.md
+        - name: 보고에 대한 모범 사례
+          href: servers/manage/best-practices-for-reporting.md
+        - name: 보고서 목록
+          href: servers/manage/list-of-reports.md
+      - name: 보고 구성
+        href: servers/manage/configuring-reporting.md
+      - name: 보고에 대한 운영 및 유지 관리
+        href: servers/manage/operations-and-maintenance-for-reporting.md
+      - name: 사용자 지정 보고서 모델 만들기
+        href: servers/manage/creating-custom-report-models-in-sql-server-reporting-services.md
+      - name: 보고에 대한 보안 및 개인 정보
+        href: servers/manage/security-and-privacy-for-reporting.md
+    - name: 데이터 웨어하우스
+      href: servers/manage/data-warehouse.md
+  - name: Configuration Manager 도구
+    href: support/tools.md
+    items:
+    - name: CMTrace
+      href: support/cmtrace.md
+    - name: 클라이언트 감시
+      href: support/clispy.md
+    - name: 배포 모니터링 도구
+      href: support/deployment-monitoring-tool.md
+    - name: 정책 감시
+      href: support/policy-spy.md
+    - name: 전원 뷰어 도구
+      href: support/power-viewer-tool.md
+    - name: 일정 보내기 도구
+      href: support/send-schedule-tool.md
+    - name: DP 작업 큐 관리자
+      href: support/dp-job-manager.md
+    - name: 컬렉션 평가 뷰어
+      href: support/ceviewer.md
+    - name: 콘텐츠 라이브러리 탐색기
+      href: support/content-library-explorer.md
+    - name: 콘텐츠 라이브러리 전송
+      href: support/content-library-transfer.md
+    - name: 콘텐츠 소유권 도구
+      href: support/content-ownership-tool.md
+    - name: 역할 기반 관리 및 감사 도구
+      href: support/rbaviewer.md
+    - name: 측정기 요약 도구 실행
+      href: support/run-meter-summ.md
+  - name: 높은 위험 수준의 배포 관리
+    href: servers/manage/settings-to-manage-high-risk-deployments.md
+- name: 클라이언트 배포
+  items:
+  - name: 클라이언트 배포 계획
+    items:
+    - name: 클라이언트 설치 방법
+      href: clients/deploy/plan/client-installation-methods.md
+    - name: Windows 컴퓨터에 클라이언트를 배포하기 위한 필수 조건
+      href: clients/deploy/prerequisites-for-deploying-clients-to-windows-computers.md
+      items:
+      - name: 클라이언트에 대한 Windows 방화벽 및 포트 설정
+        href: clients/deploy/windows-firewall-and-port-settings-for-clients.md
+    - name: 클라이언트에 대한 사이트 시스템 역할 결정
+      href: clients/deploy/plan/determine-the-site-system-roles-for-clients.md
+    - name: 클라이언트에 대한 보안 및 개인 정보
+      href: clients/deploy/plan/security-and-privacy-for-clients.md
+    - name: 클라이언트 배포에 대한 모범 사례
+      href: clients/deploy/plan/best-practices-for-client-deployment.md
+    - name: 클라이언트를 차단할지 여부 결정
+      href: clients/deploy/plan/determine-whether-to-block-clients.md
+    - name: Linux 및 UNIX 컴퓨터에 클라이언트 배포 계획
+      href: clients/deploy/plan/planning-for-client-deployment-to-linux-and-unix-computers.md
+    - name: Mac 컴퓨터에 클라이언트 배포 계획
+      href: clients/deploy/plan/planning-for-client-deployment-to-mac-computers.md
+    - name: Windows Embedded 장치에 클라이언트 배포 계획
+      href: clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md
+      items:
+      - name: '예제 시나리오 '
+        href: clients/deploy/example-scenario-for-deploying-and-managing-clients-on-windows-embedded-devices.md
+    - name: 클라이언트를 절전 모드에서 해제하는 방식 계획
+      href: clients/deploy/plan/plan-wake-up-clients.md
+    - name: VDI(가상 데스크톱 인프라)에서 클라이언트를 관리할 때의 고려 사항
+      href: clients/deploy/plan/considerations-for-managing-clients-in-a-vdi.md
+  - name: 클라이언트 배포 작업
+    items:
+    - name: 클라이언트 통신 포트를 구성하는 방법
+      href: clients/deploy/configure-client-communication-ports.md
+    - name: DNS 게시를 사용하여 관리 지점을 찾도록 클라이언트 컴퓨터를 구성하는 방법
+      href: clients/deploy/configure-client-computers-to-find-management-points-by-using-dns-publishing.md
+    - name: 클라이언트 설정을 구성하는 방법
+      href: clients/deploy/configure-client-settings.md
+      items:
+      - name: 클라이언트 설정 정보
+        href: clients/deploy/about-client-settings.md
+    - name: Wake on LAN을 구성하는 방법
+      href: clients/deploy/configure-wake-on-lan.md
+    - name: Windows 컴퓨터에 클라이언트를 배포하는 방법
+      href: clients/deploy/deploy-clients-to-windows-computers.md
+      items:
+      - name: Azure AD를 사용하여 클라이언트 설치
+        href: clients/deploy/deploy-clients-cmg-azure.md
+      - name: 클라이언트 설치 속성
+        href: clients/deploy/about-client-installation-properties.md
+      - name: AD에 게시된 클라이언트 설치 속성
+        href: clients/deploy/about-client-installation-properties-published-to-active-directory-domain-services.md
+    - name: UNIX 및 Linux 서버에 클라이언트를 배포하는 방법
+      href: clients/deploy/deploy-clients-to-unix-and-linux-servers.md
+      items:
+      - name: Linux 및 UNIX 클라이언트 명령
+        href: clients/deploy/linux-and-unix-clients-technical-reference.md
+    - name: Mac에 클라이언트 배포 준비
+      href: clients/deploy/prepare-to-deploy-mac-clients.md
+    - name: How to deploy clients to Macs
+      href: clients/deploy/deploy-clients-to-macs.md
+    - name: 클라이언트는 사이트에 할당하는 방법
+      href: clients/deploy/assign-clients-to-a-site.md
+    - name: 클라이언트 상태를 구성하는 방법
+      href: clients/deploy/configure-client-status.md
+    - name: 클라이언트 배포 상태를 모니터링하는 방법
+      href: clients/deploy/monitor-client-deployment-status.md
+- name: 클라이언트 관리
+  href: clients/manage/monitor-and-manage-clients.md
+  items:
+  - name: 클라이언트 모니터링 및 관리
+    href: clients/manage/monitor-clients.md
+    items:
+    - name: 클라이언트를 모니터링하는 방법
+      href: clients/manage/monitor-clients.md
+    - name: Windows Analytics 사용
+      href: clients/manage/monitor-windows-analytics.md
+    - name: 업그레이드 준비
+      href: clients/manage/upgrade-readiness.md
+    - name: Linux 및 UNIX 클라이언트를 모니터링하는 방법
+      href: clients/manage/monitor-clients-for-linux-and-unix-servers.md
+    - name: 클라이언트를 관리하는 방법
+      href: clients/manage/manage-clients.md
+    - name: Linux 및 UNIX 클라이언트를 관리하는 방법
+      href: clients/manage/manage-clients-for-linux-and-unix-servers.md
+    - name: Log Analytics와 데이터 동기화
+      href: clients/manage/sync-data-log-analytics.md
+    - name: Mac 클라이언트 유지 관리
+      href: clients/manage/maintain-mac-clients.md
+    - name: Surface 장치 대시보드
+      href: clients/manage/surface-device-dashboard.md
+  - name: Windows 10 장치의 공동 관리
+    href: clients/manage/co-management-overview.md
+    items:
+    - name: 공동 관리를 위해 Windows 10 장치 준비
+      href: clients/manage/co-management-prepare.md
+    - name: Configuration Manager 워크로드를 Intune으로 전환
+      href: clients/manage/co-management-switch-workloads.md
+    - name: 공동 관리 대시보드
+      href: clients/manage/co-management-dashboard.md
+  - name: 인터넷에서 클라이언트 관리
+    href: clients/manage/manage-clients-internet.md
+    items:
+    - name: 클라우드 관리 게이트웨이에 대한 계획
+      href: clients/manage/cmg/plan-cloud-management-gateway.md
+      items:
+      - name: 클라우드 관리 게이트웨이에 대한 보안 및 개인 정보
+        href: clients/manage/cmg/security-and-privacy-for-cloud-management-gateway.md
+      - name: 클라우드 관리 게이트웨이에 대한 FAQ
+        href: clients/manage/cmg/cloud-management-gateway-faq.md
+      - name: 클라우드 관리 게이트웨이에 대한 인증서
+        href: clients/manage/cmg/certificates-for-cloud-management-gateway.md
+      - name: 클라우드 관리 게이트웨이 설정
+        href: clients/manage/cmg/setup-cloud-management-gateway.md
+      - name: 클라우드 관리 게이트웨이에서 클라이언트 모니터링
+        href: clients/manage/cmg/monitor-clients-cloud-management-gateway.md
+    - name: 인터넷 기반 클라이언트 관리에 대한 계획
+      href: clients/manage/plan-internet-based-client-management.md
+  - name: 컬렉션
+    items:
+    - name: 컬렉션 소개
+      href: clients/manage/collections/introduction-to-collections.md
+    - name: 컬렉션에 대한 필수 조건
+      href: clients/manage/collections/prerequisites-for-collections.md
+    - name: 컬렉션에 대한 모범 사례
+      href: clients/manage/collections/best-practices-for-collections.md
+    - name: 컬렉션을 만드는 방법
+      href: clients/manage/collections/create-collections.md
+    - name: 컬렉션을 관리하는 방법
+      href: clients/manage/collections/manage-collections.md
+    - name: 유지 관리 기간을 사용하는 방법
+      href: clients/manage/collections/use-maintenance-windows.md
+    - name: 컬렉션으로 장치를 자동 분류하는 방법
+      href: clients/manage/collections/automatically-categorize-devices-into-collections.md
+    - name: 컬렉션에 대한 보안 및 개인 정보
+      href: clients/manage/collections/security-and-privacy-for-collections.md
+  - name: 하드웨어 인벤토리
+    items:
+    - name: 하드웨어 인벤토리 소개
+      href: clients/manage/inventory/introduction-to-hardware-inventory.md
+    - name: 하드웨어 인벤토리를 확장하는 방법
+      href: clients/manage/inventory/extend-hardware-inventory.md
+    - name: 하드웨어 인벤토리를 구성하는 방법
+      href: clients/manage/inventory/configure-hardware-inventory.md
+    - name: 하드웨어 인벤토리를 보기 위해 리소스 탐색기를 사용하는 방법
+      href: clients/manage/inventory/use-resource-explorer-to-view-hardware-inventory.md
+    - name: Linux 및 UNIX에 대한 하드웨어 인벤토리
+      href: clients/manage/inventory/hardware-inventory-for-linux-and-unix.md
+    - name: 하드웨어 인벤토리에 대한 보안 및 개인 정보
+      href: clients/manage/inventory/security-and-privacy-for-hardware-inventory.md
+  - name: 소프트웨어 인벤토리
+    items:
+    - name: 소프트웨어 인벤토리 소개
+      href: clients/manage/inventory/introduction-to-software-inventory.md
+    - name: 소프트웨어 인벤토리를 구성하는 방법
+      href: clients/manage/inventory/configure-software-inventory.md
+    - name: 소프트웨어 인벤토리를 보기 위해 리소스 탐색기를 사용하는 방법
+      href: clients/manage/inventory/use-resource-explorer-to-view-software-inventory.md
+    - name: 소프트웨어 인벤토리에 대한 보안 및 개인 정보
+      href: clients/manage/inventory/security-and-privacy-for-software-inventory.md
+  - name: Asset Intelligence
+    items:
+    - name: Asset Intelligence 소개
+      href: clients/manage/asset-intelligence/introduction-to-asset-intelligence.md
+    - name: Asset Intelligence에 대한 필수 조건
+      href: clients/manage/asset-intelligence/prerequisites-for-asset-intelligence.md
+    - name: Asset Intelligence 구성
+      href: clients/manage/asset-intelligence/configuring-asset-intelligence.md
+    - name: Asset Intelligence 사용
+      href: clients/manage/asset-intelligence/operations-for-asset-intelligence.md
+    - name: Asset Intelligence에 대한 보안 및 개인 정보
+      href: clients/manage/asset-intelligence/security-and-privacy-for-asset-intelligence.md
+    - name: Asset Intelligence에 대한 유효성 검사 상태 전환 예제
+      href: clients/manage/asset-intelligence/example-validation-state-transitions-for-asset-intelligence.md
+    - name: Asset Intelligence 일반 라이선스 가져오기 파일 예제
+      href: clients/manage/asset-intelligence/example-asset-intelligence-general-license-import.md
+    - name: 제품 수명 주기 대시보드 사용
+      href: clients/manage/asset-intelligence/product-lifecycle-dashboard.md
+  - name: 원격 제어
+    items:
+    - name: 원격 제어 소개
+      href: clients/manage/remote-control/introduction-to-remote-control.md
+    - name: 원격 제어를 위한 필수 조건
+      href: clients/manage/remote-control/prerequisites-for-remote-control.md
+    - name: 원격 제어 구성
+      href: clients/manage/remote-control/configuring-remote-control.md
+    - name: Windows 클라이언트 컴퓨터를 원격으로 관리하는 방법
+      href: clients/manage/remote-control/remotely-administer-a-windows-client-computer.md
+    - name: 원격 제어 사용을 감사하는 방법
+      href: clients/manage/remote-control/audit-remote-control-usage.md
+    - name: 원격 제어에 대한 보안 및 개인 정보
+      href: clients/manage/remote-control/security-and-privacy-for-remote-control.md
+  - name: 전원 관리
+    items:
+    - name: 전원 관리 소개
+      href: clients/manage/power/introduction-to-power-management.md
+    - name: 전원 관리에 대한 필수 조건
+      href: clients/manage/power/prerequisites-for-power-management.md
+    - name: 전원 관리에 대한 모범 사례
+      href: clients/manage/power/best-practices-for-power-management.md
+    - name: 전원 관리를 위한 관리자 검사 목록
+      href: clients/manage/power/administrator-checklist-for-power-management.md
+    - name: 전원 관리 구성
+      href: clients/manage/power/configuring-power-management.md
+    - name: 전원 계획을 만들고 적용하는 방법
+      href: clients/manage/power/create-and-apply-power-plans.md
+    - name: 전원 관리를 모니터링하고 계획하는 방법
+      href: clients/manage/power/monitor-and-plan-for-power-management.md
+    - name: 전원 관리에 대한 보안 및 개인 정보
+      href: clients/manage/power/security-and-privacy-for-power-management.md
+  - name: 클라이언트 업그레이드
+    href: clients/manage/upgrade/upgrade-clients.md
+    items:
+    - name: 사전 프로덕션 컬렉션에서 클라이언트 업그레이드 테스트
+      href: clients/manage/upgrade/test-client-upgrades.md
+    - name: 업그레이드에서 Windows 클라이언트 제외
+      href: clients/manage/upgrade/exclude-clients-windows.md
+    - name: Windows 클라이언트 업그레이드
+      href: clients/manage/upgrade/upgrade-clients-for-windows-computers.md
+    - name: Linux 및 UNIX 클라이언트 업그레이드
+      href: clients/manage/upgrade/upgrade-clients-for-linux-and-unix-servers.md
+    - name: Mac 클라이언트 업그레이드
+      href: clients/manage/upgrade/upgrade-clients-on-mac-computers.md
+ms.openlocfilehash: d6e65a7f33136df76d80ebf0b1127e1d1a428647
+ms.sourcegitcommit: 5def8b0ca72daad99fe8901af232bf17f35da55d
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48817777"

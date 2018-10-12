@@ -1,0 +1,27 @@
+items:
+- name: MDT(Microsoft Deployment Toolkit)
+  items:
+  - name: 릴리스 정보
+    href: release-notes.md
+  - name: MDT 사용
+    href: use-the-mdt.md
+  - name: 빠른 시작 - LTI(손쉬운 설치)
+    href: lite-touch-installation-guide.md
+  - name: 빠른 시작 - ZTI(자동 설치)
+    href: sccm-guide.md
+  - name: 빠른 시작 - UDI(사용자 구동 설치)
+    href: user-driven-installation-guide.md
+  - name: 샘플 가이드
+    href: samples-guide.md
+  - name: Toolkit 참조
+    href: toolkit-reference.md
+  - name: 문제 해결 참조
+    href: troubleshooting-reference.md
+  - name: UDI 개발자 가이드
+    href: user-driven-installation-developers-guide.md
+ms.openlocfilehash: f835d5cec0a10eadaaf29af0f685d8e4310cdd7a
+ms.sourcegitcommit: 8661f10596f565ca2b7bdb5951388b44b3b622ee
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "48817672"

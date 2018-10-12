@@ -10,12 +10,12 @@ ms.assetid: bb83ac87-9914-4a35-b633-ad070031aa6e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: afb32cd827a223ca9f317f2ddc96d9b176858d2d
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: ef8bfead4bb73871f990a455aef87971413701ba
+ms.sourcegitcommit: 2badee2b63ae63687795250e298f463474063100
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385340"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45601112"
 ---
 # <a name="install-a-cloud-distribution-point-for-configuration-manager"></a>Configuration Manager의 클라우드 배포 지점 설치
 
@@ -224,17 +224,22 @@ Configuration Manager는 주기적으로 Azure 서비스를 확인합니다. 서
 
 Configuration Manager 콘솔의 **관리** 작업 영역의 **Cloud Services**에 있는 **클라우드 배포 지점** 노드에서 배포 지점에 대한 세부 정보를 확인합니다. 배포 지점을 선택하고 **속성**을 클릭하여 더 자세한 내용을 확인합니다.  
 
-클라우드 배포 지점의 속성을 편집하는 경우 다음 값을 편집하는 데 사용할 수 있습니다.  
+클라우드 배포 지점의 속성을 편집하는 경우 다음 탭에는 편집할 설정이 포함됩니다.  
 
-- **설정** 탭:  
+#### <a name="settings"></a>설정  
 
-    - **설명**  
+- **설명**  
 
-    - **인증서 파일**: 서버 인증 인증서가 만료되기 전에 동일한 일반 이름으로 새 인증서를 발급합니다. 그런 다음, 사용을 시작할 수 있도록 여기서 서비스에 대한 새 인증서를 추가합니다. 인증서가 만료된 경우 클라이언트는 서비스를 신뢰 및 사용하지 않습니다.  
+- **인증서 파일**: 서버 인증 인증서가 만료되기 전에 동일한 일반 이름으로 새 인증서를 발급합니다. 그런 다음, 사용을 시작할 수 있도록 여기서 서비스에 대한 새 인증서를 추가합니다. 인증서가 만료된 경우 클라이언트는 서비스를 신뢰 및 사용하지 않습니다.  
 
-- **경고** 탭: 저장소 및 월간 전송 경고에 대한 데이터 임계값을 조정합니다.  
+#### <a name="alerts"></a>경고
+저장소 및 월간 전송 경고에 대한 데이터 임계값을 조정합니다.  
 
-- **콘텐츠** 탭: 온-프레미스 배포 지점과 동일하게 콘텐츠를 관리합니다.  
+#### <a name="content"></a>Content
+온-프레미스 배포 지점과 동일한 방식으로 콘텐츠를 관리합니다.  
+
+
+### <a name="redeploy-the-service"></a>서비스를 다시 배포
 
 다음 구성 등의 보다 중요한 변경 내용은 서비스를 다시 배포해야 합니다.
 - 클래식 배포 메서드에서 Azure Resource Manager
@@ -260,6 +265,11 @@ Configuration Manager 콘솔의 **관리** 작업 영역의 **Cloud Services**�
     2. 새 클라우드 배포 지점에 필요한 소프트웨어 패키지 콘텐츠를 배포합니다.  
 
     3. 클래식 클라우드 배포 지점을 삭제합니다.
+
+> [!Tip]  
+> 클라우드 배포 지점 <!--SCCMDocs issue #611-->의 현재 배포 모델을 확인하려면  
+> 1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고 **Cloud Services**를 확장한 후, **클라우드 배포 지점** 노드를 선택합니다.  
+> 2. **배포 모델** 특성을 목록 보기에 열로 추가합니다. Resource Manager 배포의 경우 이 특성은 **Azure Resource Manager**입니다.  
 
 
 ### <a name="stop-or-start-the-cloud-service-on-demand"></a>주문형 클라우드 서비스를 중지하거나 시작합니다.
