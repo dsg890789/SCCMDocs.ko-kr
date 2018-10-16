@@ -10,12 +10,12 @@ ms.assetid: c201be2a-692c-4d67-ac95-0a3afa5320fe
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a8f4d93c7bfa73b04ed2c760db17b27e8f1f6de2
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 5c3af900bae26262ba402ea258b8859ba07b999b
+ms.sourcegitcommit: 4f05517f7b284696a492a1b184cc5f25c5cda5e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385262"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48891217"
 ---
 # <a name="fundamental-concepts-for-content-management-in-configuration-manager"></a>Configuration Manager에서 콘텐츠 관리의 기본 개념
 
@@ -146,11 +146,9 @@ Configuration Manager로 새로운 OS를 배포하면 작업 순서를 실행하
 1.  클라이언트와 동일한 컴퓨터에 있는 배포 지점
 2.  동일한 네트워크 서브넷의 피어 원본
 3.  동일한 네트워크 서브넷의 배포 지점
-4.  동일한 Active Directory 사이트의 피어 원본
-5.  동일한 Active Directory 사이트의 배포 지점
-6.  동일한 경계 그룹의 피어 원본
-7.  현재 경계 그룹의 배포 지점
-8.  대체용으로 구성된 인접 경계 그룹의 배포 지점
+4.  동일한 경계 그룹의 피어 원본
+5.  현재 경계 그룹의 배포 지점
+6.  대체용으로 구성된 인접 경계 그룹의 배포 지점
 9.  기본 사이트 경계 그룹의 배포 지점 
 10. Windows 업데이트 클라우드 서비스
 11. 인터넷 연결 배포 지점

@@ -10,12 +10,12 @@ ms.assetid: ddef4d2a-f481-4020-9ddd-9cca5f9795cb
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 96fe34d713a1d9d3afb78dc59124865024e9eb77
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 47c6a046dac7cd4b5d0d16f0342d7e95ba3cc2a0
+ms.sourcegitcommit: 4f05517f7b284696a492a1b184cc5f25c5cda5e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32347045"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48891149"
 ---
 # <a name="enable-endpoint-protection-malware-definitions-to-download-from-a-network-share-for-configuration-manager"></a>Configuration Manager의 네트워크 공유에서 다운로드하기 위해 Endpoint Protection 맬웨어 정의를 사용하도록 설정
 
@@ -26,7 +26,7 @@ ms.locfileid: "32347045"
 > [!NOTE]
 >  정의 업데이트를 다운로드하려면 클라이언트에 공유 폴더에 대한 읽기 권한이 있어야 합니다.
 
- 파일 공유의 저장소에 정의 및 엔진 업데이트를 다운로드하는 방법에 대한 자세한 내용은 [Install the latest Microsoft antimalware and antispyware software](http://www.microsoft.com/security/portal/Definitions/HowToForeFront.aspx)(최신 Microsoft 맬웨어 방지 및 스파이웨어 방지 소프트웨어 설치)를 참조하세요.
+ 파일 공유의 저장소에 정의 및 엔진 업데이트를 다운로드하는 방법에 대한 자세한 내용은 [Install the latest Microsoft antimalware and antispyware software](https://www.microsoft.com/wdsi/definitions)(최신 Microsoft 맬웨어 방지 및 스파이웨어 방지 소프트웨어 설치)를 참조하세요.
 
 ## <a name="to-configure-definition-downloads-from-a-file-share"></a>파일 공유에서 정의 다운로드를 구성하려면
 
