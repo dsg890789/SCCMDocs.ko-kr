@@ -10,12 +10,12 @@ ms.assetid: 868049d3-3209-47ec-b34a-9cc26941893a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6ba7adf52ce084d640bf53aef32678576d5828f5
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 12dd7a4d806a82e3c55898e249d1caa2a6ffb508
+ms.sourcegitcommit: 19fc4f27667d51502fc9d7d02d164f2837d65dae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32340210"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49461293"
 ---
 # <a name="how-to-create-queries-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 쿼리를 만드는 방법
 
@@ -113,7 +113,7 @@ SMS_R_System.OperatingSystemNameandVersion like "%Workstation 6.1%"
 
 ### <a name="computers-with-a-specific-software-package-installed"></a>특정 소프트웨어 패키지가 설치된 컴퓨터  
 
-특정 소프트웨어 패키지가 설치된 모든 컴퓨터의 NetBIOS 이름 및 소프트웨어 패키지 이름을 반환하려면 다음 쿼리를 사용합니다. 이 예제는 Microsoft Visio 버전이 설치된 모든 컴퓨터를 표시합니다. `%Visio%`를 쿼리할 소프트웨어 패키지로 바꿉니다.  
+특정 소프트웨어 패키지가 설치된 모든 컴퓨터의 NetBIOS 이름 및 소프트웨어 패키지 이름을 반환하려면 다음 쿼리를 사용합니다. 이 예제는 Microsoft Visio 버전이 설치된 모든 컴퓨터를 표시합니다. `Microsoft%Visio%`를 쿼리할 소프트웨어 패키지로 바꿉니다.  
 
 > [!TIP]  
 > 이 쿼리는 Windows 제어판의 프로그램 목록에 표시되는 이름을 사용하여 소프트웨어 패키지를 검색합니다.  
@@ -124,7 +124,7 @@ SMS_G_System_ADD_REMOVE_PROGRAMS.DisplayName from
 SMS_R_System inner join SMS_G_System_ADD_REMOVE_PROGRAMS on   
 SMS_G_System_ADD_REMOVE_PROGRAMS.ResourceId =   
 SMS_R_System.ResourceId where   
-SMS_G_System_ADD_REMOVE_PROGRAMS.DisplayName like "%Visio%"  
+SMS_G_System_ADD_REMOVE_PROGRAMS.DisplayName like "Microsoft%Visio%"  
 ```  
 
 ### <a name="computers-that-are-in-a-specific-active-directory-domain-services-organizational-unit"></a>특정 Active Directory Domain Services 조직 구성 단위에 있는 컴퓨터
