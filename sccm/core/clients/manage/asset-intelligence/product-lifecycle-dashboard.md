@@ -10,12 +10,12 @@ ms.assetid: 8b5b144a-0e5f-4fcc-87b2-33b9bcdb5655
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f99aeba109ed4de3ef1b88b721b59eebb4653cb6
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: dd1a3a56bac6d7917c70db731b1735a195fae3df
+ms.sourcegitcommit: dfb2cb01c1608b848f2f2fee7c84500e7adcb7a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39384634"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101248"
 ---
 # <a name="manage-microsoft-lifecycle-policy-with-configuration-manager"></a>Configuration Manager로 Microsoft 수명 주기 정책 관리
 
@@ -63,7 +63,7 @@ Configuration Manager 콘솔에서 수명 주기 대시보드에 액세스하려
 
 - **수명이 종료된 상위 5개 제품:** 이 타일은 사용자 환경에서 찾은 수명이 종료된 제품의 통합 데이터 뷰입니다. 그래프는 운영 체제 및 SQL Server 제품에 대한 지원 수명 주기를 기준으로 만료된, 설치된 소프트웨어를 보여 줍니다.  
 
-- **수명이 종료되는 상위 5개 제품:** 이 타일은 사용자 환경에서 찾은, 향후 6개월 이내에 수명이 종료되는 제품의 통합 데이터 뷰입니다. 그래프는 운영 체제 및 SQL Server 제품에 대한 지원 수명 주기를 기준으로 6개월 이내에 수명이 종료되는, 설치된 소프트웨어를 보여 줍니다.  
+- **수명이 종료되는 상위 5개 제품:** 이 타일은 사용자 환경에서 찾은, 앞으로 18개월 이내에 수명이 종료되는 제품의 통합 데이터 뷰입니다. 그래프는 운영 체제 및 SQL Server 제품에 대한 지원 수명 주기를 기준으로 18개월 이내에 수명이 종료되는, 설치된 소프트웨어를 보여 줍니다.  
 
 - **설치된 제품에 대한 수명 주기 데이터:** 이 타일은 제품이 지원됨 상태에서 만료됨 상태로 전환되는 시기를 일반적으로 설명합니다. 차트는 제품이 설치된 클라이언트 수의 분류, 지원 가용성 상태 및 다음에 수행할 단계에 대해 자세히 알아볼 수 있는 링크를 제공합니다. 차트에는 다음 정보가 포함됩니다.     
     - 남은 지원 시간

@@ -10,12 +10,12 @@ ms.assetid: 6e4964c5-43cb-4372-9a89-b62ae6a4775c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 1faabd64d11eeef8e825f22f7f661112813f5459
-ms.sourcegitcommit: 4b8afbd08ecf8fd54950eeb630caf191d3aa4767
+ms.openlocfilehash: e0051b00f9c9540291db94c79a81c600c87ad59c
+ms.sourcegitcommit: 4f05517f7b284696a492a1b184cc5f25c5cda5e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "34474312"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48891200"
 ---
 # <a name="use-the-service-connection-tool-for-system-center-configuration-manager"></a>System Center Configuration Manager의 서비스 연결 도구 사용
 
@@ -95,7 +95,7 @@ ms.locfileid: "34474312"
 
 #### <a name="to-specify-a-proxy-server"></a>프록시 서버를 지정하려면
 다음과 같은 선택적 매개 변수를 사용하여 프록시 서버를 지정할 수 있습니다. 이러한 매개 변수를 사용하는 방법에 대한 자세한 내용은 이 항목의 명령줄 매개 변수 섹션에서 사용할 수 있습니다.
-  - **-proxyserveruri [FQDN_of_proxy_sever]**  이 매개 변수를 사용하여 이 연결에 사용할 프록시 서버를 지정합니다.
+  - **-proxyserveruri [FQDN_of_proxy_server]**  이 매개 변수를 사용하여 이 연결에 사용할 프록시 서버를 지정합니다.
   -  **-proxyusername [username]**  프록시 서버의 사용자를 지정해야 할 때 이 매개 변수를 사용합니다.
 
 #### <a name="specify-the-type-of-updates-to-download"></a>다운로드할 업데이트 유형 지정

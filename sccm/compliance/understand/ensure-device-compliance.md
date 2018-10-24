@@ -10,12 +10,12 @@ ms.assetid: 7568c9aa-b99e-4466-bfc8-0301aa376930
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 42b3925fa94ae1672e4241a3cddc66cdc1774aaf
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 081e485211e3bb5b2b0d8e6a9606c4037c29d4e3
+ms.sourcegitcommit: 2deba3d3aaba47a532273bcd377da8e60f7b1a68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32333062"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169603"
 ---
 # <a name="ensure-device-compliance-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 장치 준수 확인
 
@@ -59,7 +59,7 @@ System Center Configuration Manager의 준수 설정은 조직에서 장치의 �
  [원격 연결 프로필 만들기](/sccm/compliance/deploy-use/create-remote-connection-profiles)  
 
 ## <a name="user-data-and-profiles"></a>사용자 데이터 및 프로필  
- 구성 항목에는 Windows 8을 실행하는 컴퓨터에서 계층 구조 내 사용자에 대해 폴더 리디렉션, 오프라인 파일 및 로밍 프로필을 관리할 수 있는 설정이 포함됩니다.  
+ 이 구성 항목에는 Windows 8을 실행하는 컴퓨터에서 계층 구조 내 사용자에 대해 폴더 리디렉션, 오프라인 파일 및 로밍 프로필을 관리할 수 있는 설정이 포함되어 있습니다.  
 
  [사용자 데이터 및 프로필 구성 항목 만들기](/sccm/compliance/deploy-use/create-user-data-and-profiles-configuration-items)  
 
