@@ -10,20 +10,20 @@ ms.assetid: 0212b023-804a-4f84-b880-7a59cdb49c67
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: fc5af771d6ab15f4e26c22c5272abf2bb46de047
-ms.sourcegitcommit: 78d2dce465e3500653b252583a6903a006784c26
+ms.openlocfilehash: 49de1e2f94d1016f3c0139ccf534b85a718bf7e0
+ms.sourcegitcommit: 3dfe3f4401651afa9dc65d14a8944ae4e4198b3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448891"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48862501"
 ---
 # <a name="use-a-task-sequence-to-manage-virtual-hard-disks-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업 순서를 사용하여 가상 하드 디스크 관리
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 
-    > [!NOTE] 
-    >  Support for this feature was deprecated in version 1710. For more information, see [Removed and deprecated features for Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures).
+   > [!NOTE] 
+   >  이 기능은 버전 1710부터 더 이상 지원되지 않았습니다. 자세한 내용은 [Configuration Manager에서 제거되는 기능과 이후 지원되지 않는 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.
 
 System Center Configuration Manager에서는 Configuration Manager 콘솔에서 VHD(가상 하드 디스크)를 관리하고 만든 VHD를 데이터 센터에 통합할 수 있습니다. 특히 Configuration Manager 콘솔에서 VHD를 만들고 수정하며, 응용 프로그램과 소프트웨어 업데이트를 VHD에 추가하고, VHD를 System Center VMM(Virtual Machine Manager)에 게시할 수 있습니다.  
 

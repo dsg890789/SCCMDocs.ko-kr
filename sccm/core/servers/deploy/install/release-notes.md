@@ -10,12 +10,12 @@ ms.assetid: 030947fd-f5e0-4185-8513-2397fb2ec96f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 939ab4b97a1a62eeae834873dd39e2f0d435527d
-ms.sourcegitcommit: 4e4b71227309bee7e9f1285971f8235c67a9c502
+ms.openlocfilehash: b31e0c84d0e3920024870361239e22bb90005ccb
+ms.sourcegitcommit: e7732dd67f19218cec576f70fe4ab44e2626b8e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "42590100"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48045218"
 ---
 # <a name="release-notes-for-configuration-manager"></a>Configuration Manager의 릴리스 정보
 
@@ -82,9 +82,10 @@ Configuration Manager 버전 1802부터 CEIP(사용자 환경 개선 프로그�
 ## <a name="client-deployment-and-upgrade"></a>클라이언트 배포 및 업그레이드
 
 ### <a name="azure-ad-enabled-clients-cant-communicate-with-management-point"></a>Azure AD 사용 클라이언트가 관리 지점과 통신할 수 없습니다.
-<!--501089-->
-*적용 대상: Configuration Manager 버전 1706*
-<!--also fixed in 1710 HFRU--> [인증을 위해 Azure AD를 사용하여 Configuration Manager Windows 10 클라이언트를 설치 및 할당](/sccm/core/clients/deploy/deploy-clients-cmg-azure) 시나리오에서 HTTPS 사용 관리 지점이 대체 데이터베이스 자격 증명을 사용하면 클라이언트 통신이 실패합니다. 
+<!--501089-->  
+적용 대상: Configuration Manager 버전 1706
+<!--also fixed in 1710 HFRU-->  
+[인증을 위해 Azure AD를 사용하여 Configuration Manager Windows 10 클라이언트를 설치 및 할당](/sccm/core/clients/deploy/deploy-clients-cmg-azure)하는 시나리오에서 HTTPS 사용 관리 지점이 대체 데이터베이스 자격 증명을 사용하는 경우 클라이언트 통신에 실패합니다. 
 
 #### <a name="workaround"></a>해결 방법
 이 문제를 완화하려면 다음 작업 중 하나를 수행합니다.

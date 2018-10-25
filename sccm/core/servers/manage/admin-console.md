@@ -10,12 +10,12 @@ ms.assetid: 463ce307-59dd-4abd-87b8-42ca9db178d7
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 8d783211396f3cdc9f14798ed7dc97e921e45554
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 793ba0f05c7a188a6bda9649c9d25922ce27d42c
+ms.sourcegitcommit: 3dfe3f4401651afa9dc65d14a8944ae4e4198b3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385914"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48862467"
 ---
 # <a name="using-the-system-center-configuration-manager-console"></a>System Center Configuration Manager 콘솔 사용
 
@@ -82,6 +82,17 @@ Configuration Manager 콘솔에는 네 가지 **작업 영역**이 있습니다.
 열 오른쪽 클릭 메뉴의 맨 아래에서 열별로 정렬하거나 그룹화할 수 있습니다. 또한 해당 헤더를 클릭하여 열별로 정렬할 수 있습니다. 
 
 ![Configuration Manager에서 열별 그룹화](media/column-group-by.png)
+
+##<a name="console-command-line-options"></a>콘솔 명령줄 옵션
+Microsoft System Center Configuration Manager 콘솔에는 다음 명령줄 옵션이 있습니다.
+
+|옵션|설명|  
+|------------|-----------------|  
+|**/sms:debugview=1**|DebugView는 보기를 지정하는 모든 ResultViews에 포함됩니다. DebugView는 원시 속성(이름 및 값)을 표시합니다.|  
+|**/sms:NamespaceView=1**|System Center Configuration Manager 콘솔에 네임스페이스 보기를 표시합니다.|  
+|**/sms:ResetSettings**|System Center Configuration Manager 콘솔은 사용자 지속형 연결 및 보기 상태를 무시합니다(Microsoft 관리 콘솔 창 크기가 다시 설정되지 않음).|  
+|**/sms:IgnoreExtensions**|System Center Configuration Manager 확장을 사용하지 않도록 설정합니다.|  
+|**/sms:NoRestore**|System Center Configuration Manager 콘솔은 이전의 지속형 노드 탐색을 무시합니다.|  
 
 ## <a name="console-improvements-in-version-1806"></a>버전 1806의 콘솔 개선 사항
 Configuration Manager 버전 1806에서 다음 콘솔 개선 사항이 추가되었습니다.

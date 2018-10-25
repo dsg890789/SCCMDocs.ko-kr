@@ -10,12 +10,12 @@ ms.assetid: 101d7d4d-92db-419d-b2ae-3c1c1dea68e9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 585aa6ea6874ac6d6a5264b0f75d8dbcf39ddd0a
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 46ede93e8366b4ae387f7e04b83dcb33ce854c5e
+ms.sourcegitcommit: 3dfe3f4401651afa9dc65d14a8944ae4e4198b3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32334286"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48862518"
 ---
 # <a name="about-client-installation-properties-published-to-active-directory-domain-services"></a>Active Directory Domain Services에 게시된 클라이언트 설치 속성 정보
 
@@ -73,12 +73,13 @@ System Center Configuration Manager용으로 Active Directory 스키마를 확�
 ## <a name="client-push-installation"></a>클라이언트 강제 설치  
  클라이언트 강제 설치는 Active Directory Domain Services를 사용하여 설치 속성을 가져오지 않습니다.  
 
- 대신 **클라이언트 강제 설치 속성** 대화 상자의 **클라이언트** 탭에서 클라이언트 설치 속성을 지정할 수 있습니다. 이러한 옵션과 클라이언트 관련 설정은 클라이언트 설치 시 클라이언트가 읽는 파일에 저장되어 있습니다.  
+ 대신 **클라이언트 강제 설치 속성** 대화 상자의 **설치 속성** 탭에서 클라이언트 설치 속성을 지정할 수 있습니다. 이러한 옵션과 클라이언트 관련 설정은 클라이언트 설치 시 클라이언트가 읽는 파일에 저장되어 있습니다.  
 
 > [!NOTE]  
->  **클라이언트** 탭에서 클라이언트 강제 설치를 위한 CCMSetup 속성이나 대체 상태 지점 또는 신뢰할 수 있는 루트 키를 지정할 필요가 없습니다. 이러한 설정은 클라이언트 강제 설치를 사용하여 클라이언트가 설치될 때 클라이언트에 자동으로 제공됩니다.  
+>  **설치 속성** 탭에서 클라이언트 강제 설치를 위한 CCMSetup 속성이나 대체 상태 지점 또는 신뢰할 수 있는 루트 키를 지정할 필요가 없습니다. 이러한 설정은 클라이언트 강제 설치를 사용하여 클라이언트가 설치될 때 클라이언트에 자동으로 제공됩니다.
+CCMSetup는 Client.msi 속성 외에, 매개 변수 /forcereboot, /skipprereq, /logon, /BITSPriority, /downloadtimeout, /forceinstall을 지원합니다.
 
- 사이트가 Active Directory Domain Services에 게시되는 경우 **클라이언트** 탭에서 지정하는 모든 속성이 Active Directory Domain Services에 게시됩니다. 이러한 설정은 설치 속성 없이 CCMSetup이 실행되는 클라이언트 설치에서 읽혀집니다.  
+ 사이트가 Active Directory Domain Services에 게시되는 경우 **설치 속성** 탭에서 지정하는 모든 속성이 Active Directory Domain Services에 게시됩니다. 이러한 설정은 설치 속성 없이 CCMSetup이 실행되는 클라이언트 설치에서 읽혀집니다.  
 
 ## <a name="software-update-point-based-installation"></a>소프트웨어 업데이트 지점 기반 설치  
  소프트웨어 업데이트 지점 기반의 설치 방법에서는 CCMSetup 명령줄에 설치 속성을 추가할 수 없습니다.  

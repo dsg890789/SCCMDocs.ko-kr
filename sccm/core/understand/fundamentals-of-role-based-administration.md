@@ -10,12 +10,12 @@ ms.assetid: 0a2d6c3f-a4e4-4c19-b087-3caada480de9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6fa1ca03db8df7e2d02edfad3af99ca1749224ac
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 3b7916b386cb22f2d1869eface009bd10ff17d18
+ms.sourcegitcommit: 3dfe3f4401651afa9dc65d14a8944ae4e4198b3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32344724"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48862552"
 ---
 # <a name="fundamentals-of-role-based-administration-for-system-center-configuration-manager"></a>System Center Configuration Manager의 역할 기반 관리 기본 사항
 

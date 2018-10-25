@@ -10,12 +10,12 @@ ms.assetid: ba9b623f-6e86-4006-93f2-83d563de0cd0
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 15467e83be28e884acb14309bdbb57768d7f19f0
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 2eb75af410ae1511ae105aa7a3a56659c8ef0442
+ms.sourcegitcommit: 3dfe3f4401651afa9dc65d14a8944ae4e4198b3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32344469"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48862416"
 ---
 # <a name="how-to-assign-clients-to-a-site-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사이트에 클라이언트를 할당하는 방법
 
@@ -66,7 +66,7 @@ Configuration Manager 등록 중 모바일 장치 클라이언트를 설치할 �
 -   IP 주소 범위  
 
 > [!NOTE]  
->  Configuration Manager 클라이언트에 여러 네트워크 어댑터가 있어서 여러 IP 주소가 있는 경우 클라이언트 사이트 할당의 평가에 사용되는 IP 주소는 임의로 선택됩니다.  
+>  구성 관리자 클라이언트에 여러 네트워크 어댑터가 있어서 여러 IP 주소가 있는 경우 클라이언트 사이트 할당의 평가에 사용되는 IP 주소는 임의로 선택됩니다.  
 
  사이트 할당에 경계 그룹을 구성하는 방법과 자동 사이트 할당에 대체 사이트를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에 대한 사이트 경계 및 경계 그룹 정의](../../../core/servers/deploy/configure/define-site-boundaries-and-boundary-groups.md)를 참조하세요.  
 

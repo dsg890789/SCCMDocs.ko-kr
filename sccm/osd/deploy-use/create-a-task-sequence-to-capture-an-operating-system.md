@@ -10,12 +10,12 @@ ms.assetid: 25e4ac68-0e78-4bbe-b8fc-3898b372c4e8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a1ef2883bfeb61df55ff045b76e9bc45a11b4da2
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 34536114e6cb1be8f256da385b3d69d07c17f676
+ms.sourcegitcommit: 3dfe3f4401651afa9dc65d14a8944ae4e4198b3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32352172"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48862484"
 ---
 # <a name="create-a-task-sequence-to-capture-an-operating-system-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 운영 체제를 캡처하는 작업 순서 만들기
 
@@ -217,7 +217,7 @@ System Center Configuration Manager에서 작업 순서를 사용하여 컴퓨�
 |운영 체제 적용|대상 컴퓨터에 지정된 운영 체제 이미지를 설치할 때 사용하는 작업 순서 단계입니다. 이 단계에서는 먼저 해당 볼륨의 모든 파일(Configuration Manager 전용 컨트롤 파일 제외)을 삭제한 후 WIM 파일에 포함된 모든 볼륨 이미지를 대상 컴퓨터에서 해당하는 순차적 디스크 볼륨에 적용합니다.|  
 |Windows 설정 적용|대상 컴퓨터에 Windows 설정 구성 정보를 구성할 때 사용하는 작업 순서 단계입니다.|  
 |네트워크 설정 적용|대상 컴퓨터에 네트워크 또는 작업 그룹 구성 정보를 지정할 때 사용하는 작업 순서 단계입니다.|  
-|장치 드라이버 적용|드라이버를 일치시키고 운영 체제 배포의 일부로 설치할 때 사용하는 작업 순서 단계입니다. **모든 범주의 드라이버 고려** 를 선택하여 Windows 설치 프로그램에서 기존의 모든 드라이버 범주를 검색하도록 하거나 **선택한 범주의 드라이버만 고려하도록 드라이버 일치 제한**을 선택하여 Windows 설치 프로그램에서 검색할 드라이버 범주를 제한할 수 있습니다.<br /><br /> 이 단계에서는 읽기 전용 **_SMSTSMediaType** 작업 순서 변수를 사용합니다. 연결된 값이 **FullMedia** 가 아니면 이 작업 순서 단계가 실행됩니다.|  
+|장치 드라이버 적용|이 작업 순서 단계를 사용하여 드라이버를 일치시키고 운영 체제 배포의 일부로 설치합니다. **모든 범주의 드라이버 고려** 를 선택하여 Windows 설치 프로그램에서 기존의 모든 드라이버 범주를 검색하도록 하거나 **선택한 범주의 드라이버만 고려하도록 드라이버 일치 제한**을 선택하여 Windows 설치 프로그램에서 검색할 드라이버 범주를 제한할 수 있습니다.<br /><br /> 이 단계에서는 읽기 전용 **_SMSTSMediaType** 작업 순서 변수를 사용합니다. 연결된 값이 **FullMedia** 가 아니면 이 작업 순서 단계가 실행됩니다.|  
 |Windows 및 ConfigMgr 설치|이 작업 순서 단계를 사용하여 Configuration Manager 클라이언트 소프트웨어를 설치할 수 있습니다. Configuration Manager가 설치되고 Configuration Manager 클라이언트 GUID를 등록합니다. **설치 속성** 창에서 필수 설치 매개 변수를 할당할 수 있습니다.|  
 |업데이트 설치|대상 컴퓨터에 소프트웨어 업데이트를 설치하는 방법을 지정할 때 사용하는 작업 순서 단계입니다. 이 작업 순서 단계가 실행될 때까지 적용 가능한 소프트웨어 업데이트에 대해 대상 컴퓨터가 평가되지 않습니다. 해당 시점에 다른 모든 Configuration Manager 관리 클라이언트와 마찬가지로 소프트웨어 업데이트에 대해 대상 컴퓨터가 평가됩니다.<br /><br /> 이 단계에서는 읽기 전용 **_SMSTSMediaType** 작업 순서 변수를 사용합니다. 연결된 값이 **FullMedia** 가 아니면 이 작업 순서 단계가 실행됩니다.|  
 |참조 컴퓨터 캡처 - **(새 작업 순서 그룹)**|다른 작업 순서 그룹을 만듭니다. 이 그룹에는 참조 컴퓨터를 준비 및 캡처하는 데 필요한 단계가 포함됩니다.|  

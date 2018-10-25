@@ -2,7 +2,7 @@
 title: OSD 인프라 요구 사항
 titleSuffix: Configuration Manager
 description: 외부 및 제품 종속성과 Configuration Manager의 OS 배포에 대한 요구 사항을 알아봅니다.
-ms.date: 07/30/2018
+ms.date: 10/02/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 1dc74219-7ff5-4e3b-b4f6-5aad663bb75b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4e54c6c7d8f827a17c69f4e166aeb4dccca4272f
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 03ec9c046e1b32f137777f15393b5d26b49e5520
+ms.sourcegitcommit: 265d38d55ca0db043e3a7131a56f123e1d98aa5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382921"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48236160"
 ---
 # <a name="infrastructure-requirements-for-os-deployment-in-configuration-manager"></a>Configuration Manager의 OS 배포에 대한 인프라 요구 사항
 
@@ -33,21 +33,6 @@ Configuration Manager의 OS 배포에는 외부 종속성뿐만 아니라 제품
 
 Windows ADK(Assessment and Deployment Kit)는 Windows의 구성과 배포를 지원하는 도구 및 설명서 집합입니다. Configuration Manager는 Windows ADK를 사용하여 Windows를 설치하고, 이미지를 캡처하고, 사용자 프로필 및 데이터를 마이그레이션하는 등의 작업을 자동화합니다.  
 
-다음 Windows ADK 기능은 계층에서 최상위 사이트의 사이트 서버, 계층 내 각 기본 사이트의 사이트 서버, 그리고 SMS 공급자 사이트 시스템 서버에 설치되어야 합니다.  
-
--   USMT(사용자 상태 마이그레이션 도구) <sup>1</sup>  
-
--   Windows 배포 도구  
-
--   Windows PE(Windows 사전 설치 환경)  
-
-여러 버전의 Configuration Manager에서 사용할 수 있는 Windows 10 ADK 버전 목록은 [Windows 10에 대한 지원](/sccm/core/plan-design/configs/support-for-windows-10#windows-10-adk)을 참조하세요.
-
- <sup>1</sup> SMS 공급자 사이트 시스템 서버에는 USMT가 필요하지 않습니다.  
-
-> [!NOTE]  
->  Configuration Manager 사이트를 설치하기 전에 각 사이트 서버에 수동으로 Windows ADK를 설치해야 합니다.  
-
 자세한 내용은 다음 아티클을 참조하세요.  
 
 - [IT 전문가를 위한 Windows 10용 Windows ADK 시나리오](https://docs.microsoft.com/windows/deployment/windows-adk-scenarios-for-it-pros)  
@@ -55,6 +40,37 @@ Windows ADK(Assessment and Deployment Kit)는 Windows의 구성과 배포를 지
 - [Windows 10용 Windows ADK 다운로드](https://docs.microsoft.com/windows-hardware/get-started/adk-install)  
 
 - [Windows 10에 대한 지원](/sccm/core/plan-design/configs/support-for-windows-10)  
+
+
+#### <a name="site-systems"></a>사이트 시스템
+Windows ADK는 다음 사이트 시스템 서버에 대한 전제 조건입니다.
+
+- 계층에 있는 최상위 사이트의 사이트 서버  
+
+- 계층에 있는 각 기본 사이트의 사이트 서버  
+
+- SMS 공급자의 모든 인스턴스  
+
+
+> [!NOTE]  
+> Configuration Manager 사이트를 설치하기 전에 각 사이트 서버에 수동으로 Windows ADK를 설치합니다.  
+
+#### <a name="windows-adk-features"></a>Windows ADK 기능
+Windows ADK의 다음 기능을 설치합니다.  
+
+-   USMT(사용자 상태 마이그레이션 도구)  
+
+    > [!Note]  
+    > SMS 공급자에는 USMT가 필요하지 않습니다.
+
+-   Windows 배포 도구  
+
+-   Windows PE(Windows 사전 설치 환경)  
+
+    > [!Important]  
+    > Windows 10 버전 1809부터 Windows PE는 별도의 설치 프로그램입니다. 그러나 기능 차이는 없습니다.<!--SCCMDocs-pr issue 2908-->  
+
+여러 버전의 Configuration Manager에서 사용할 수 있는 Windows 10 ADK 버전 목록은 [Windows 10에 대한 지원](/sccm/core/plan-design/configs/support-for-windows-10#windows-10-adk)을 참조하세요.
 
 
 ### <a name="user-state-migration-tool-usmt"></a>USMT(사용자 상태 마이그레이션 도구)  

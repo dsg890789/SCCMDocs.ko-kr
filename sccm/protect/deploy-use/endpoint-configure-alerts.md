@@ -10,12 +10,12 @@ ms.assetid: f504de3e-4caf-455c-80d7-a63f13f4c5d9
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 514404119044bbf994eb88c5705bb5051281ee9f
-ms.sourcegitcommit: cea5152422a60e61601fdaeae1519300001fe6ee
+ms.openlocfilehash: 78afa39b173abc79c4ed1cadc79f41ab32150ecf
+ms.sourcegitcommit: 3dfe3f4401651afa9dc65d14a8944ae4e4198b3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175224"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48862365"
 ---
 #  <a name="configure-alerts-for-endpoint-protection-in-configuration-manager"></a>Configuration Manager에서 Endpoint Protection에 대한 경고를 구성하는 방법
 
@@ -87,7 +87,7 @@ ms.locfileid: "39175224"
 
 ## <a name="alert-for-outdated-malware-client"></a>오래된 맬웨어 클라이언트에 대한 경고
 
-Configuration Manager 버전 1702부터 Endpoint Protection 클라이언트가 오래되지 않았는지 확인하도록 경고를 구성할 수 있습니다. 이제 **자산 및 호환성** > **개요** > **장치 컬렉션** > **모든 데스크톱 및 서버 클라이언트**로 이동하여 **맬웨어 방지 클라이언트 버전** 및 **Endpoint Protection 배포 상태**를 확인할 수 있습니다. 경고를 확인하려면 **모니터링** 작업 영역에서 **경고**를 봅니다. 만료된 버전의 맬웨어 방지 소프트웨어를 실행하는 관리되는 클라이언트가 20%를 초과할 경우 [맬웨어 방지 클라이언트 버전이 오래되었습니다.] 경고가 표시됩니다. 이 경고는 **모니터링** > **개요** 탭에 표시되지 않습니다. 만료된 맬웨어 방지 클라이언트를 업데이트하려면 맬웨어 방지 클라이언트에 대한 소프트웨어 업데이트를 사용하도록 설정합니다.
+Configuration Manager 버전 1702부터 Endpoint Protection 클라이언트가 오래되지 않았는지 확인하도록 경고를 구성할 수 있습니다. 장치 컬렉션에서 이제 특성 **맬웨어 방지 클라이언트 버전** 및 **Endpoint Protection 배포 상태**의 목록에 열을 추가할 수 있습니다. 예를 들어, 콘솔에서 **자산 및 준수** > **개요** > **장치 컬렉션** > **모든 데스크톱 및 서버 클라이언트**로 이동합니다. 열 머리글을 마우스 오른쪽 단추로 클릭하고 추가할 열을 선택합니다. 경고를 확인하려면 **모니터링** 작업 영역에서 **경고**를 봅니다. 만료된 버전의 맬웨어 방지 소프트웨어를 실행하는 관리되는 클라이언트가 20%를 초과할 경우 [맬웨어 방지 클라이언트 버전이 오래되었습니다.] 경고가 표시됩니다. 이 경고는 **모니터링** > **개요** 탭에 표시되지 않습니다. 만료된 맬웨어 방지 클라이언트를 업데이트하려면 맬웨어 방지 클라이언트에 대한 소프트웨어 업데이트를 사용하도록 설정합니다.
 
 경고가 생성되는 백분율을 구성하려면 **모니터링** > **경고** > **모든 경고**를 확장하고 **맬웨어 방지 클라이언트가 오래됨**을 두 번 클릭한 다음 **오래된 버전의 맬웨어 방지 클라이언트로 관리되는 클라이언트의 비율이 다음 이상인 경우 경고 생성** 옵션을 수정합니다.
 

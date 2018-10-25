@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 884859f9968f6d7f72e0aef3448eab42a3751ec5
-ms.sourcegitcommit: a17be6f5e4659ba3f38c7732b43f3afafcb95171
+ms.openlocfilehash: aa92f935984b52458a3d7daf17a11077c519da84
+ms.sourcegitcommit: 3dfe3f4401651afa9dc65d14a8944ae4e4198b3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42906400"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48862535"
 ---
 # <a name="cryptographic-controls-technical-reference"></a>암호화 컨트롤 기술 참조
 
@@ -120,7 +120,7 @@ System Center Configuration Manager는 서명 및 암호화를 사용하여 Conf
  모바일 장치에 대해 하드웨어 인벤토리를 사용하도록 설정하는 경우 Configuration Manager 또는 Microsoft Intune에서도 모바일 장치에 설치된 인증서의 인벤토리를 만듭니다.   
 
 ### <a name="operating-system-deployment-and-pki-certificates"></a>운영 체제 배포 및 PKI 인증서  
- Configuration Manager를 사용하여 운영 체제를 배포하고 관리 지점에 HTTPS 클라이언트 연결이 필요한 경우 클라이언트 컴퓨터에도 관리 지점과 통신하기 위한 인증서가 있어야 하며, 이는 작업 순서 미디어 또는 PXE 사용 배포 지점에서 부팅하는 것과 같은 전환 단계에서도 마찬가지입니다. 이러한 시나리오를 지원하려면 PKI 클라이언트 인증 인증서를 만들어 개인 키와 함께 내보낸 다음 사이트 서버 속성으로 가져오고 관리 지점의 신뢰할 수 있는 루트 CA 인증서도 추가해야 합니다.  
+ Configuration Manager를 사용하여 운영 체제를 배포하고 관리 지점에 HTTPS 클라이언트 연결이 필요한 경우 클라이언트 컴퓨터에도 관리 지점과 통신하기 위한 인증서가 있어야 하며, 이는 작업 순서 미디어 또는 PXE 사용 배포 지점에서 부팅하는 것과 같은 전환 단계에서도 마찬가지입니다. 이러한 시나리오를 지원하려면 PKI 클라이언트 인증 인증서를 만들어 개인 키와 함께 내보낸 다음, 사이트 서버 속성으로 가져오고 관리 지점의 신뢰할 수 있는 루트 CA 인증서도 추가해야 합니다.  
 
  부팅 가능한 미디어를 만들 경우에는 해당 미디어를 만들 때 클라이언트 인증 인증서를 가져오세요. 부팅 가능한 미디어에 암호를 구성하면 작업 순서에 구성된 개인 키 및 기타 중요한 데이터를 보호할 수 있습니다. 부팅 가능한 미디어에서 부팅하는 모든 컴퓨터는 클라이언트 정책 요청과 같은 클라이언트 기능의 필요에 따라 관리 지점에 동일한 인증서를 제공합니다.  
 

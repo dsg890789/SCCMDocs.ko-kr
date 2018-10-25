@@ -2,7 +2,7 @@
 title: 버전 1806의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager 최신 라인인 1806 버전에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
-ms.date: 08/29/2018
+ms.date: 09/19/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 0249dbd3-1e85-4d05-a9e5-420fbe44d850
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 13dbffd442cfbe0ced30d46b9a93dd03418202c9
-ms.sourcegitcommit: 0d7efd9e064f9d6a9efcfa6a36fd55d4bee20059
+ms.openlocfilehash: 3b5cb217b9351f5d2491070b447d0a96efe0aa29
+ms.sourcegitcommit: 4e4b71227309bee7e9f1285971f8235c67a9c502
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43893844"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46533782"
 ---
 # <a name="whats-new-in-version-1806-of-configuration-manager-current-branch"></a>Configuration Manager 1806 버전의 새로운 기능
 
@@ -29,6 +29,8 @@ Configuration Manager의 현재 분기에 대한 1806 업데이트는 콘솔 내
 > 이 문서는 현재 이 버전의 모든 중요한 기능을 나열합니다. 그러나 일부 섹션은 새 기능에 대한 추가 정보가 있는 업데이트된 콘텐츠에 아직 연결되지 않았습니다. 이 페이지에서 정기적으로 업데이트를 확인하세요. 변경 내용은 ***[업데이트]*** 태그로 표시됩니다. 이 표시는 콘텐츠가 최종 버전이 되면 제거될 것입니다.  
 
 새 기능 외에 이 릴리스에는 버그 수정과 같은 추가 변경 사항도 포함되어 있습니다. 자세한 내용은 [1806 버전, System Center Configuration Manager 현재 분기의 변경 내용 요약](https://support.microsoft.com/help/4459701)을 참조하세요.
+
+Configuration Manager용 Windows PowerShell cmdlet의 변경 내용에 대한 자세한 내용은 [PowerShell 1806 릴리스 정보](https://docs.microsoft.com/powershell/sccm/1806_release_notes?view=sccm-ps)를 참조하세요.
 
 <!--
 The following additional updates to this release are also now available:
@@ -141,6 +143,13 @@ Version 1806 drops support for the following products:
 자세한 내용은 [피어 다운로드를 위한 경계 그룹 옵션](/sccm/core/servers/deploy/configure/boundary-groups#bkmk_bgoptions)을 참조하세요.
 
 
+### <a name="improvement-to-peer-cache-source-location-status"></a>피어 캐시 원본 위치 상태 개선
+<!--SCCMDocs issue 850-->
+ ***[업데이트됨]*** 피어 캐시 원본이 다른 위치로 로밍되었는지 확인하는 Configuration Manager의 효율이 향상되었습니다. 이 동작을 통해 관리 지점은 피어 캐시 원본을 이전 위치가 아닌 새 위치의 클라이언트에 콘텐츠 원본으로 제공합니다. 로밍 피어 캐시 원본에 피어 캐시 기능을 사용하는 경우 사이트를 1806 버전으로 업데이트 한 후 모든 피어 캐시 원본을 최신 클라이언트 버전으로 업데이트해야 합니다. 피어 캐시 원본이 버전 1806 이상으로 업데이트되기 전에는, 관리 지점이 이러한 피어 캐시 원본을 콘텐츠 위치 목록에 포함하지 않습니다.
+
+자세한 내용은 [피어 캐시에 대한 요구 사항](/sccm/core/plan-design/hierarchy/client-peer-cache#requirements)을 참조하세요.
+
+
 
 <!-- ## Migration  -->
 
@@ -177,9 +186,14 @@ Version 1806 drops support for the following products:
 
 
 ### <a name="cloud-management-dashboard"></a>클라우드 관리 대시보드
-<!--1358461--> 새로운 클라우드 관리 대시보드는 CMG(클라우드 관리 게이트웨이) 사용량에 대한 중앙 집중식 보기를 제공합니다. 사이트가 Azure AD에 등록되면 클라우드 사용자 및 장치에 대한 데이터도 표시됩니다. Configuration Manager 콘솔에서 **모니터링** 작업 영역으로 이동합니다. **클라우드 관리** 노드를 선택하고 대시보드 타일을 봅니다.  
+<!--1358461-->
+ ***[업데이트됨]*** 새로운 클라우드 관리 대시보드는 CMG(클라우드 관리 게이트웨이) 사용량에 대한 중앙 집중식 보기를 제공합니다. 사이트가 Azure AD에 등록되면 클라우드 사용자 및 장치에 대한 데이터도 표시됩니다.   
 
-이 기능에는 문제 해결에 도움이 되도록 실시간 확인에 사용하는 **CMG 연결 분석기**도 포함됩니다. 콘솔 내 유틸리티는 서비스의 현재 상태를 확인하며, CMG 연결 지점을 통해 CMG 트래픽을 허용하는 모든 관리 지점에 대한 통신 채널을 확인합니다. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동합니다. **Cloud Services**를 확장하고 **클라우드 관리 게이트웨이**를 선택합니다. 대상 CMG 인스턴스를 선택한 다음, 리본에서 **연결 분석기**를 클릭합니다.
+이 기능에는 문제 해결에 도움이 되도록 실시간 확인에 사용하는 **CMG 연결 분석기**도 포함됩니다. 콘솔 내 유틸리티는 서비스의 현재 상태를 확인하며, CMG 연결 지점을 통해 CMG 트래픽을 허용하는 모든 관리 지점에 대한 통신 채널을 확인합니다. 
+
+자세한 내용은 [CMG 모니터링](/sccm/core/clients/manage/cmg/monitor-clients-cloud-management-gateway) 문서의 다음 섹션을 참조하세요.  
+- [클라우드 관리 대시보드](/sccm/core/clients/manage/cmg/monitor-clients-cloud-management-gateway#cloud-management-dashboard)  
+- [연결 분석기](/sccm/core/clients/manage/cmg/monitor-clients-cloud-management-gateway#connection-analyzer)  
 
 
 ### <a name="improvements-to-cloud-management-gateway"></a>클라우드 관리 게이트웨이드의 향상된 기능
@@ -187,26 +201,16 @@ Version 1806 drops support for the following products:
 버전 1806에서 CMG(클라우드 관리 게이트웨이)에 포함된 향상된 기능은 다음과 같습니다.
 
 #### <a name="simplified-client-bootstrap-command-line"></a>간소화된 클라이언트 부트스트랩 명령줄
-<!--1358215--> CMG를 통해 Configuration Manager 클라이언트를 인터넷에 설치할 때 명령줄에 필요한 속성이 적어졌습니다. 이를 통해 공동 관리를 준비할 때 Microsoft Intune에서 명령줄 크기가 줄어듭니다. 
+<!--1358215-->
+ ***[업데이트됨]*** CMG를 통해 구성 관리자 클라이언트를 인터넷에 설치할 때 명령줄에 필요한 속성이 줄었습니다. 이를 통해 공동 관리를 준비할 때 Microsoft Intune에서 명령줄 크기가 줄어듭니다. 
 
-모든 시나리오에서 다음 명령줄 속성이 필요합니다.
-  - CCMHOSTNAME  
-  - SMSSITECODE  
-
-다음 속성은 PKI 기반의 클라이언트 인증 인증서 대신 클라이언트 인증용 Azure AD를 사용하는 경우 필요합니다.
-  - AADCLIENTAPPID  
-  - AADRESOURCEURI  
-
-클라이언트가 인트라넷으로 다시 로밍되는 경우 다음 속성이 필요합니다.
-  - SMSMP  
-
-다음 예제에서는 위의 속성 모두를 포함합니다.   
-`ccmsetup.exe CCMHOSTNAME=CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72186325152220500 SMSSiteCode=ABC AADCLIENTAPPID=7506ee10-f7ec-415a-b415-cd3d58790d97 AADRESOURCEURI=https://contososerver SMSMP=https://mp1.contoso.com`
-
-<!--For more information, see [Client installation properties](/sccm/core/clients/deploy/about-client-installation-properties).-->
+자세한 내용은 [공동 관리를 위해 Windows 10 장치 준비](/sccm/core/clients/manage/co-management-prepare#command-line-to-install-configuration-manager-client)를 참조하세요.
 
 #### <a name="download-content-from-a-cmg"></a>CMG에서 콘텐츠 다운로드
-<!--1358651--> 이전에 클라우드 배포 지점 및 CMG를 별도 역할로 배포해야 했습니다. CMG도 이제 클라이언트에 콘텐츠를 서비스합니다. 이 기능은 필요한 인증서 및 Azure VM 비용을 줄여줍니다. 이 기능을 사용하려면 CMG 속성의 **설정** 탭에서 **CMG가 클라우드 배포 지점으로 기능하고 Azure 저장소에서 콘텐츠를 제공하도록 허용**하는 새 옵션을 사용하도록 설정합니다. 
+<!--1358651-->
+ ***[업데이트됨]*** 이전에는 클라우드 배포 지점 및 CMG를 별도 역할로 배포해야 했습니다. CMG도 이제 클라이언트에 콘텐츠를 서비스합니다. 이 기능은 필요한 인증서 및 Azure VM 비용을 줄여줍니다. 
+
+자세한 내용은 [CMG 수정](/sccm/core/clients/manage/cmg/setup-cloud-management-gateway#modify-a-cmg)을 참조하세요.
 
 #### <a name="trusted-root-certificate-isnt-required-with-azure-ad"></a>신뢰할 수 있는 루트 인증서는 Azure AD에서 필요하지 않음
 <!--503899--> CMG를 만들 경우 설정 페이지에서 [신뢰할 수 있는 루트 인증서](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#cmg-trusted-root-certificate-to-clients)를 더 이상 제공할 필요가 없습니다. 이 인증서는 클라이언트 인증용 Azure AD(Azure Active Directory)를 사용할 때 필요하지 않지만 마법사에서는 필요합니다. PKI 클라이언트 인증 인증서를 사용하는 경우 여전히 신뢰할 수 있는 루트 인증서를 CMG에 추가해야 합니다.
@@ -357,12 +361,12 @@ Version 1806 drops support for the following products:
 #### <a name="mask-program-name-during-run-command-step-of-a-task-sequence"></a>작업 순서의 명령 실행 단계에서 프로그램 이름 마스크
  <!--1358493--> ***[업데이트됨]*** 잠재적으로 중요한 데이터가 표시되거나 기록되지 않도록 하려면 작업 순서 변수 **OSDDoNotLogCommand**를 구성합니다.  
 
- 자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables#OSDDoNotLogCommand)(작업 순서 변수)를 참조하세요. 
+ 자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables#OSDDoNotLogCommand)\(작업 순서 변수\)를 참조하세요. 
 
 #### <a name="task-sequence-variable-for-dism-parameters-when-installing-drivers"></a>드라이버를 설치할 때 DISM 매개 변수에 대한 작업 순서 변수
  <!--516679/2840016--> ***[업데이트됨]*** DISM에 대한 추가 명령줄 매개 변수를 지정하려면 새 작업 순서 변수 **OSDInstallDriversAdditionalOptions**를 사용합니다. 
 
- 자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables#OSDInstallDriversAdditionalOptions)(작업 순서 변수)를 참조하세요. 
+ 자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables#OSDInstallDriversAdditionalOptions)\(작업 순서 변수\)를 참조하세요. 
 
 #### <a name="option-to-use-full-disk-encryption"></a>전체 디스크 암호화 사용 옵션
  <!--SCCMDocs-pr issue 2671--> ***[업데이트됨]*** **BitLocker 사용** 및 **BitLocker 사전 프로비전** 단계 둘 다에 **전체 디스크 암호화 사용** 옵션이 포함되었습니다. 기본적으로 이러한 단계는 드라이브에서 사용된 공간을 암호화합니다. 이 기본 동작은 더 빠르고 효율적기 때문에 권장됩니다. 

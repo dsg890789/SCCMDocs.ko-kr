@@ -10,12 +10,12 @@ ms.assetid: 5e5d854c-9cc1-4dd8-b33f-0fcac675b395
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3750e91d96c1ca3eda1ad0ca2fc67b5f627c7a03
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 2ccc918bf5f15798c201ed491dd3824bb20b2ebb
+ms.sourcegitcommit: 3dfe3f4401651afa9dc65d14a8944ae4e4198b3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32353555"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48862569"
 ---
 # <a name="device-guard-management-with-configuration-manager"></a>Configuration Manager로 Device Guard 관리
 
@@ -148,7 +148,7 @@ You can let locked-down devices run software with a good reputation as determine
 - **적용 사용**으로 정책을 배포한 후, 나중에 **감사 전용**으로 동일한 장치에 정책을 배포하지 마세요. 이 구성을 사용하면 신뢰할 수 없는 소프트웨어가 실행될 수 있습니다.
 - Configuration Manager를 사용하여 Windows Defender 응용 프로그램 제어를 클라이언트 PC에서 사용하도록 설정하는 경우 이 정책은 로컬 관리자 권한이 있는 사용자가 응용 프로그램 제어 정책을 우회하거나 그렇지 않고 신뢰할 수 없는 소프트웨어를 실행하는 것을 차단하지 않습니다. 
 - 로컬 관리자 권한이 있는 사용자가 응용 프로그램 제어를 사용 안 함으로 설정하지 못하게 하는 유일한 방법은 서명된 이진 파일을 배포하는 것입니다. 이 배포 방법은 그룹 정책을 통해 가능하지만 현재 Configuration Manager에서는 지원되지 않습니다.
-- 클라이언트 PC에서 Configuration Manager를 관리된 설치 프로그램으로 설정하면 AppLocker 정책을 사용합니다. AppLocker는 관리되는 설치 프로그램을 식별하는 데만 사용하고 모든 적용은 응용 프로그램을 통해 수행됩니다. 
+- 클라이언트 PC에서 Configuration Manager를 관리된 설치 프로그램으로 설정하면 AppLocker 정책을 사용합니다. AppLocker는 관리되는 설치 프로그램을 식별하는 데만 사용하고 모든 적용은 Windows Defender Application Control을 통해 수행됩니다. 
 
 
 
