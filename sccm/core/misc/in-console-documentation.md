@@ -9,12 +9,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 robots: noindex,nofollow
-ms.openlocfilehash: 12b10fe6c532a690dcb8fd1d3a69d742687db06c
-ms.sourcegitcommit: 5def8b0ca72daad99fe8901af232bf17f35da55d
+ms.openlocfilehash: d3c3b1c418650297f9fe02b839ccbc98a4204925
+ms.sourcegitcommit: 4f05517f7b284696a492a1b184cc5f25c5cda5e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48793810"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48891166"
 ---
 <!-- 
 feature 1357546
@@ -34,16 +34,16 @@ This page displays in-console, under the Community workspace, Documentation node
 ## <a name="recommended"></a>권장 
 수동으로 큐레이팅된 중요한 문서 목록입니다.
 
-- [Windows 10 장치에 대한 공동 관리](/sccm/core/clients/manage/co-management-overview)  
-- [CMPivot](/sccm/core/servers/manage/cmpivot)  
-- [PowerShell 스크립트 만들기 및 실행](/sccm/apps/deploy-use/create-deploy-scripts)  
-- [단계별 배포](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence)  
-- [Office 365 ProPlus 업데이트 관리](/sccm/sum/deploy-use/manage-office-365-proplus-updates)  
-- [Configuration Manager 현재 분기 및 Windows as a service의 기본 사항](/sccm/core/understand/configuration-manager-and-windows-as-service)
-- [기술 미리 보기 릴리스](/sccm/core/get-started/technical-preview)
-- [클라우드 서비스를 사용하여 온-프레미스 인프라 보충](/sccm/core/understand/use-cloud-services)
-- [클라우드 관리 게이트웨이에 대한 계획](/sccm/core/clients/manage/plan-cloud-management-gateway)
-- [계층 구조 간에 데이터 마이그레이션](/sccm/core/migration/migrate-data-between-hierarchies)
+- [Windows 10 장치에 대한 공동 관리](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)  
+- [CMPivot](https://docs.microsoft.com/sccm/core/servers/manage/cmpivot)  
+- [PowerShell 스크립트 만들기 및 실행](https://docs.microsoft.com/sccm/apps/deploy-use/create-deploy-scripts)  
+- [단계별 배포](https://docs.microsoft.com/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence)  
+- [Office 365 ProPlus 업데이트 관리](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates)  
+- [Configuration Manager 현재 분기 및 Windows as a service의 기본 사항](https://docs.microsoft.com/sccm/core/understand/configuration-manager-and-windows-as-service)
+- [기술 미리 보기 릴리스](https://docs.microsoft.com/sccm/core/get-started/technical-preview)
+- [클라우드 서비스를 사용하여 온-프레미스 인프라 보충](https://docs.microsoft.com/sccm/core/understand/use-cloud-services)
+- [클라우드 관리 게이트웨이에 대한 계획](https://docs.microsoft.com/sccm/core/clients/manage/plan-cloud-management-gateway)
+- [계층 구조 간에 데이터 마이그레이션](https://docs.microsoft.com/sccm/core/migration/migrate-data-between-hierarchies)
 
 
 
@@ -52,16 +52,16 @@ This page displays in-console, under the Community workspace, Documentation node
 
 | 페이지 보기 | 제목 | 
 | ----- | ----- | 
-| 27627 | [버전 1806의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1806) |
-| 19364 | [문제 해결을 위한 로그 파일](/sccm/core/plan-design/hierarchy/log-files) |
-| 11113 | [새 버전 1802](/sccm/core/plan-design/changes/whats-new-in-version-1802) |
-| 9419 | [Windows 10에 대한 지원](/sccm/core/plan-design/configs/support-for-windows-10) |
-| 8688 | [업데이트 및 서비스](/sccm/core/servers/manage/updates) |
-| 8423 | [콘솔 설치](/sccm/core/servers/deploy/install/install-consoles) |
-| 8408 | [Windows에 클라이언트 배포](/sccm/core/clients/deploy/deploy-clients-to-windows-computers) |
-| 8271 | [클라이언트 설치 매개 변수 및 속성](/sccm/core/clients/deploy/about-client-installation-properties) |
-| 7751 | [Office 365 ProPlus 업데이트 관리](/sccm/sum/deploy-use/manage-office-365-proplus-updates) |
-| 7705 | [배포 지점 관리](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points) |
+| 27627 | [버전 1806의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1806) |
+| 19364 | [문제 해결을 위한 로그 파일](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files) |
+| 11113 | [새 버전 1802](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1802) |
+| 9419 | [Windows 10에 대한 지원](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10) |
+| 8688 | [업데이트 및 서비스](https://docs.microsoft.com/sccm/core/servers/manage/updates) |
+| 8423 | [콘솔 설치](https://docs.microsoft.com/sccm/core/servers/deploy/install/install-consoles) |
+| 8408 | [Windows에 클라이언트 배포](https://docs.microsoft.com/sccm/core/clients/deploy/deploy-clients-to-windows-computers) |
+| 8271 | [클라이언트 설치 매개 변수 및 속성](https://docs.microsoft.com/sccm/core/clients/deploy/about-client-installation-properties) |
+| 7751 | [Office 365 ProPlus 업데이트 관리](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates) |
+| 7705 | [배포 지점 관리](https://docs.microsoft.com/sccm/core/servers/deploy/configure/install-and-configure-distribution-points) |
 
 
 
@@ -70,16 +70,16 @@ This page displays in-console, under the Community workspace, Documentation node
 
 | 마지막 검토 | 제목 | 
 |-----|-----|
-| 2018년 9월 4일 | [기술 미리 보기 릴리스](/sccm/core/get-started/technical-preview) |
-| 2018년 9월 4일 | [Technical Preview 1809](/sccm/core/get-started/capabilities-in-technical-preview-1809) |
-| 2018년 8월 30일 | [검색 구성](/sccm/core/servers/deploy/configure/configure-discovery-methods) |
-| 2018년 8월 29일 | [클라이언트 피어 캐시](/sccm/core/plan-design/hierarchy/client-peer-cache) |
-| 2018년 8월 29일 | [경계 그룹 구성](/sccm/core/servers/deploy/configure/boundary-groups) |
-| 2018년 8월 29일 | [하이브리드 MDM의 새로운 기능](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management) |
-| 2018년 8월 29일 | [버전 1806의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1806) |
-| 2018년 8월 24일 | [사이트 백업](/sccm/core/servers/manage/backup-and-recovery) |
-| 2018년 8월 24일 | [Package Conversion Manager](/sccm/apps/pcm/package-conversion-manager) |
-| 2018년 8월 23일 | [필수 구성 요소 확인](/sccm/core/servers/deploy/install/list-of-prerequisite-checks) |
+| 2018년 9월 4일 | [기술 미리 보기 릴리스](https://docs.microsoft.com/sccm/core/get-started/technical-preview) |
+| 2018년 9월 4일 | [Technical Preview 1809](https://docs.microsoft.com/sccm/core/get-started/capabilities-in-technical-preview-1809) |
+| 2018년 8월 30일 | [검색 구성](https://docs.microsoft.com/sccm/core/servers/deploy/configure/configure-discovery-methods) |
+| 2018년 8월 29일 | [클라이언트 피어 캐시](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/client-peer-cache) |
+| 2018년 8월 29일 | [경계 그룹 구성](https://docs.microsoft.com/sccm/core/servers/deploy/configure/boundary-groups) |
+| 2018년 8월 29일 | [하이브리드 MDM의 새로운 기능](https://docs.microsoft.com/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management) |
+| 2018년 8월 29일 | [버전 1806의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1806) |
+| 2018년 8월 24일 | [사이트 백업](https://docs.microsoft.com/sccm/core/servers/manage/backup-and-recovery) |
+| 2018년 8월 24일 | [Package Conversion Manager](https://docs.microsoft.com/sccm/apps/pcm/package-conversion-manager) |
+| 2018년 8월 23일 | [필수 구성 요소 확인](https://docs.microsoft.com/sccm/core/servers/deploy/install/list-of-prerequisite-checks) |
 
 
 
