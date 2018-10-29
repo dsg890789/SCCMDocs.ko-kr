@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: b552391d-abc0-48a2-a429-93605a13a66a
-ms.openlocfilehash: 89db0abe9a60e6850ae36e619483e0dcdc3e5360
-ms.sourcegitcommit: 316899b08f2ef372993909e08e069f7edfed1d33
+ms.openlocfilehash: 655d7663a6597ce1b13fb26a5340d482be1ba7ed
+ms.sourcegitcommit: 8827ffaea108678da968a3623f072876990c830c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44111147"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49411313"
 ---
 # <a name="import-configuration-manager-data-to-microsoft-intune"></a>Microsoft Intune으로 Configuration Manager 데이터 가져오기 
 
@@ -55,6 +55,7 @@ ms.locfileid: "44111147"
 - 이 도구는 개체를 가져올 수 없는 이유를 제공하려고 합니다. 경우에 따라 개체를 Intune으로 가져오기 전에 Configuration Manager 콘솔로 돌아가서 문제를 해결하고, Configuration Manager 개체 검색을 다시 수행한 다음, 해당 개체를 가져올 수 있습니다. 경우에 따라 Intune에서 이러한 개체를 수동으로 다시 만들어야 할 수도 있습니다.
 - 다른 개체에 종속된 일부 프로필이 있습니다. 인증서에 종속된 메일 프로필과 같은 다른 개체에 종속된 프로필을 가져오려면 이전에 같은 컴퓨터에서 같은 사용자로 다른 개체를 가져오지 않은 경우 두 개체를 동시에 가져와야 합니다.  
 - 이 도구를 실행한 후에 추가 수동 단계를 수행해야 할 수도 있습니다. 예를 들어 AAD 그룹에 앱과 정책을 대상으로 지정합니다. 
+- 웹앱(웹 클립이라고도 함)이 사용자에게 할당된 경우 사용자를 마이그레이션하기 전에 해당 웹앱을 제거한 다음, 마이그레이션이 완료되면 웹앱을 다시 할당해야 합니다. 이렇게 하지 않으면 마이그레이션 후에 웹 클립을 관리할 수 없습니다.
 
 ## <a name="prerequisites"></a>필수 구성 요소
 - Configuration Manager 버전 1610 이상 - 최상위 사이트를 지정하고, 사이트 계층의 모든 개체에 대한 액세스 권한이 있는 사용자로 도구를 실행하는 것이 좋습니다. 도구를 실행하는 사용자가 액세스할 수 있는 개체만 이 도구에서 검색합니다. 

@@ -10,12 +10,12 @@ ms.assetid: a7975dc8-46ab-4dae-86b6-dc3e3cf3b2f0
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 7f798fdb1183b852bded92711cc5f489666f4f2a
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 13d9e83adcdf0e125d1596ff93fbb1a0fa67c09f
+ms.sourcegitcommit: 8827ffaea108678da968a3623f072876990c830c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32342567"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49411330"
 ---
 # <a name="modify-your-system-center-configuration-manager-infrastructure"></a>System Center Configuration Manager 인프라 수정
 
@@ -284,7 +284,7 @@ SQL Server 설명서는 [수동으로 SPN을 등록](https://technet.microsoft.c
     -   **기본 사이트**: 이 사이트에서 사이트 재설정을 실행하는 데 사용하는 계정은 기본 사이트 서버의 로컬 관리자여야 하며 **전체 관리자** 역할 기반 관리 보안 역할과 동일한 권한을 보유해야 합니다. 기본 사이트가 중앙 관리 사이트의 계층 내에 있으면 또한 이 계정은 중앙 관리 사이트 서버의 로컬 관리자여야 합니다.  
 
 **사이트 다시 설정에 대한 제한 사항**
-  - 버전 1602부터, 계층 구조가 [사전 프로덕션 컬렉션에서 클라이언트 업그레이드 테스트](/sccm/core/clients/manage/upgrade/test-client-upgrades)를 지원하도록 구성되어 있으면 사이트 다시 설정을 사용하여 사이트에 설치된 서버 또는 클라이언트 언어 팩을 변경할 수 없습니다.
+  - 버전 1602부터, 계층 구조가 [프로덕션 전 컬렉션에서 클라이언트 업그레이드 테스트](/sccm/core/clients/manage/upgrade/test-client-upgrades)를 지원하도록 구성되어 있으면 사이트 다시 설정을 사용하여 사이트에 설치된 서버 또는 클라이언트 언어 팩을 변경할 수 없습니다.
 
 #### <a name="to-perform-a-site-reset"></a>사이트 재설정을 수행하려면  
 

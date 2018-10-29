@@ -10,12 +10,12 @@ author: aczechowski
 description: 정의 업데이트를 자동 승인하려면 Windows Server Update Services를 구성하는 방법에 대해 알아봅니다.
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: b1c79a839ad1c83c96d7fe4583b46f6a3edbffba
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 5aa857141b047fc0f9929ca72041980a8bc8b6a7
+ms.sourcegitcommit: 19fc4f27667d51502fc9d7d02d164f2837d65dae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32349860"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49461259"
 ---
 # <a name="enable-endpoint-protection-malware-definitions-to-download-from-windows-server-update-services-wsus-for-configuration-manager"></a>Configuration Manager의 WSUS(Windows Server Update Services)에서 다운로드하기 위해 Endpoint Protection 맬웨어 정의를 사용하도록 설정
 
@@ -37,7 +37,7 @@ ms.locfileid: "32349860"
 
     -   Windows 8.1 이전 버전의 경우 **소프트웨어 업데이트 지점 구성 요소 속성** 대화 상자의 **제품** 탭에서 **Forefront Endpoint Protection 2010** 확인란을 선택합니다.
 
-    -   Windows 10 이후 버전의 경우 **소프트웨어 업데이트 지점 구성 요소 속성** 대화 상자의 **제품** 탭에서 **Windows Defender** 및 **Windows Technical Preview 2** 확인란을 선택합니다.
+    -   Windows 10 이후 버전의 경우 **소프트웨어 업데이트 지점 구성 요소 속성** 대화 상자의 **제품** 탭에서 **Windows Defender** 확인란을 선택합니다.
 
 6.  **확인** 을 클릭하여 **소프트웨어 업데이트 지점 구성 요소 속성** 대화 상자를 닫습니다.
 
@@ -51,7 +51,7 @@ ms.locfileid: "32349860"
 
     -   Windows 8.1 이전 버전의 경우 **소프트웨어 업데이트 지점 구성 요소 속성** 대화 상자의 **제품** 탭에서 **Forefront Endpoint Protection 2010** 확인란을 선택합니다.
 
-    -   Windows 10 이후 버전의 경우 **소프트웨어 업데이트 지점 구성 요소 속성** 대화 상자의 **제품** 탭에서 **Windows Defender** 및 **Windows Technical Preview 2** 확인란을 선택합니다.
+    -   Windows 10 이후 버전의 경우 **소프트웨어 업데이트 지점 구성 요소 속성** 대화 상자의 **제품** 탭에서 **Windows Defender** 확인란을 선택합니다.
 
 3.  **제품 및 분류** 대화 상자의 **분류** 탭에서 **정의 업데이트** 및 **업데이트** 확인란을 선택합니다.
 

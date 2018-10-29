@@ -5,17 +5,17 @@ description: ADR(자동 배포 규칙)을 사용하여 소프트웨어 업데이
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.date: 08/21/2018
+ms.date: 10/02/2018
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: b27682de-adf8-4edd-9572-54886af8f7fb
-ms.openlocfilehash: 6c23dc7328e2618d42b70f12bf7df8aa22fddb91
-ms.sourcegitcommit: 7eebd112a9862bf98359c1914bb0c86affc5dbc0
+ms.openlocfilehash: 01c6de94fd4cb0d05b482c1c05df2f09780db7fd
+ms.sourcegitcommit: 8827ffaea108678da968a3623f072876990c830c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42589029"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49411296"
 ---
 #  <a name="automatically-deploy-software-updates"></a>소프트웨어 업데이트 자동 배포  
 
@@ -234,9 +234,9 @@ ADR을 만든 후 규칙에 추가 배포를 추가합니다. 이 작업을 통�
      - 경고
      - 다운로드 설정  
 
+Windows PowerShell cmdlet을 사용하여 프로그래밍 방식으로 배포를 추가할 수도 있습니다. 이 메서드 사용에 대한 자세한 설명은 [New-CMSoftwareUpdateDeployment](https://docs.microsoft.com/powershell/module/configurationmanager/new-cmsoftwareupdatedeployment)를 참조하세요.
 
 배포 프로세스에 대한 자세한 내용은 [Software update deployment process](/sccm/sum/understand/software-updates-introduction#BKMK_DeploymentProcess)(소프트웨어 업데이트 배포 프로세스)를 참조하세요.
-
 
 
 ## <a name="next-steps"></a>다음 단계

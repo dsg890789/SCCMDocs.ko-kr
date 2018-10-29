@@ -2,7 +2,7 @@
 title: 하이브리드 MDM의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 장치 관리 기능에 대해 알아봅니다.
-ms.date: 09/18/2018
+ms.date: 10/18/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 7b127cee-61f1-4681-9760-caebed36ddf5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 195fb8c4ae584b9b5ccb2401b145d9c78a0be781
-ms.sourcegitcommit: 78d2dce465e3500653b252583a6903a006784c26
+ms.openlocfilehash: 3082bb6d6cc96be8ba7a56e1e2bb5a6bcd32bc9b
+ms.sourcegitcommit: 19fc4f27667d51502fc9d7d02d164f2837d65dae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448874"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49461276"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 장치 관리의 새로운 기능
 
@@ -46,11 +46,38 @@ ms.locfileid: "46448874"
 |**Configuration Manager(현재 분기)의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 버전의 Configuration Manager(현재 분기)에서만 사용할 수 있습니다. 하이브리드 배포에 이전 버전의 Configuration Manager를 사용하는 경우 기능 설명에 지정된 Configuration Manager(현재 분기) 버전으로 업그레이드합니다. 자세한 내용은 [Configuration Manager로 업그레이드](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager)를 참조하세요.|
 
 
+
+## <a name="october-2018"></a>2018년 10월
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+#### <a name="access-to-key-profile-properties-using-the-company-portal-app"></a>회사 포털 앱을 사용하여 주요 프로필 속성 액세스
+<!--772203-->  
+
+최종 사용자는 이제 회사 포털 앱에서 암호 재설정과 같은 주요 계정 속성 및 작업에 액세스할 수 있습니다. 
+
+#### <a name="pin-prompt-when-you-change-fingerprints-or-face-id-on-an-ios-device"></a>iOS 장치에서 지문 또는 얼굴 ID를 변경할 때 표시되는 PIN 프롬프트  
+<!--2637704-->  
+
+이제 iOS 장치에서 생체 인식 내용을 변경한 후 PIN을 입력하라는 메시지가 사용자에게 표시됩니다. 여기에는 등록된 지문 또는 얼굴 ID의 변경이 포함됩니다. 프롬프트의 타이밍은 ‘다음 시간 이후에 액세스 요구 사항 다시 확인:’ 시간 제한의 구성 방법에 따라 다릅니다.  PIN이 설정되지 않은 경우에는 설정하라는 메시지가 사용자에게 표시됩니다.  
+
+이 기능은 iOS에만 제공되고 iOS용 Intune 앱 SDK, 버전 8.1.1 이상을 통합하는 응용 프로그램의 참여가 필요합니다. 대상 응용 프로그램에 동작이 적용될 수 있도록 SDK의 통합이 필요합니다. 이 통합은 롤링 기반으로 특정 응용 프로그램 팀에서 수행합니다. 참여하는 일부 앱에는 WXP, Outlook, Managed Browser 및 Yammer가 포함됩니다.
+
+#### <a name="end-user-device-and-app-content-menu"></a>최종 사용자 장치 및 앱 콘텐츠 메뉴 
+<!--2771453-->  
+최종 사용자는 이제 장치와 앱에서 상황에 맞는 메뉴를 사용하여 장치 이름 바꾸기 또는 준수 확인 같은 일반적인 작업을 트리거할 수 있습니다. 
+
+#### <a name="windows-company-portal-keyboard-shortcuts"></a>Windows 회사 포털 바로 가기 키
+<!--2771518-->  
+최종 사용자는 이제 바로 가기 키(액셀러레이터 키)를 사용하여 Windows 회사 포털에서 앱 및 장치 작업을 트리거할 수 있습니다.
+
+
+
 ## <a name="august-2018"></a>2018년 8월
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
-### <a name="new-user-experience-update-for-the-company-portal-website"></a>회사 포털 웹 사이트의 새로운 사용자 환경 업데이트
+#### <a name="new-user-experience-update-for-the-company-portal-website"></a>회사 포털 웹 사이트의 새로운 사용자 환경 업데이트
 <!--2000968--> 고객 피드백을 바탕으로 회사 포털 웹 사이트에 새 기능이 추가되었습니다. Android, iOS 및 Windows 장치의 기존 기능과 유용성이 크게 향상될 것입니다. 사이트의 여러 영역에 새롭고 현대화된 반응형 디자인이 적용되었습니다. 이들 영역에는 장치 세부 정보, 피드백 및 지원, 장치 개요가 들어 있습니다. 다음과 같은 개선 사항도 볼 수 있습니다.
 
 - 모든 장치 플랫폼에서 효율적인 워크플로

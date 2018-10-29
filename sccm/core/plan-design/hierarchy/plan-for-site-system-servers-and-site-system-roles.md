@@ -10,12 +10,12 @@ ms.assetid: 0a7415ba-2c53-4433-983e-780e92aa662f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6805aed620ea6bd41d1ec3460c1076b44d28f67a
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: f2c3052337b5c985798c15950a541086587176d1
+ms.sourcegitcommit: 19fc4f27667d51502fc9d7d02d164f2837d65dae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385357"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49461310"
 ---
 # <a name="plan-for-site-system-servers-and-site-system-roles-in-configuration-manager"></a>Configuration Manager에서 사이트 시스템 서버 및 사이트 시스템 역할에 대한 계획
 
@@ -60,7 +60,7 @@ Configuration Manager 사이트마다 다른 사이트 시스템 역할을 지�
 사이트는 이 역할을 사이트 데이터베이스의 인스턴스를 보유하는 사이트 시스템 서버에 할당합니다. 이 역할은 사이트 데이터베이스를 호스트하는 데 SQL Server의 다른 인스턴스를 사용하도록 사이트를 수정하는 설치 프로그램을 실행하여 새 서버로만 옮길 수 있습니다.  
 
 #### <a name="sms-provider"></a>사이트 데이터베이스
-SMS 공급자의 인스턴스를 호스트하는 각 컴퓨터에 이 역할을 할당합니다. 공급자는 Configuration Manager 콘솔과 사이트 데이터베이스 사이의 인터페이스입니다. 기본적으로 이 역할은 중앙 관리 사이트 및 기본 사이트의 사이트 서버에 자동으로 설치됩니다. 추가 관리자가 액세스할 수 있도록 또는 중복성을 위해 각 사이트에서 추가 인스턴스를 설치할 수 있습니다.  
+사이트가 SMS 공급자의 인스턴스를 호스트하는 각 컴퓨터에 이 역할을 할당합니다. 공급자는 Configuration Manager 콘솔과 사이트 데이터베이스 사이의 인터페이스입니다. 기본적으로 이 역할은 중앙 관리 사이트 및 기본 사이트의 사이트 서버에 자동으로 설치됩니다. 추가 관리자가 액세스할 수 있도록 또는 중복성을 위해 각 사이트에서 추가 인스턴스를 설치할 수 있습니다.  
 
 추가 공급자를 설치하려면 [SMS 공급자를 관리](/sccm/core/servers/manage/modify-your-infrastructure#BKMK_ManageSMSprovider)할 Configuration Manager 설치 프로그램을 실행합니다. 그런 다음, 추가 컴퓨터에 추가 공급자를 설치합니다. 컴퓨터에서 SMS 공급자의 인스턴스를 하나만 설치합니다. 해당 컴퓨터는 사이트 서버와 동일한 도메인에 있어야 합니다.  
 
