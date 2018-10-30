@@ -10,12 +10,12 @@ ms.assetid: 463ce307-59dd-4abd-87b8-42ca9db178d7
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 793ba0f05c7a188a6bda9649c9d25922ce27d42c
-ms.sourcegitcommit: 3dfe3f4401651afa9dc65d14a8944ae4e4198b3e
+ms.openlocfilehash: f936cf1c1317940f28691863eafdb4aa883fc1cb
+ms.sourcegitcommit: aa91f0d376de03b614b70d5fc513cb384ff58db4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48862467"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50216917"
 ---
 # <a name="using-the-system-center-configuration-manager-console"></a>System Center Configuration Manager 콘솔 사용
 
@@ -116,5 +116,5 @@ Configuration Manager 버전 1806에서 다음 콘솔 개선 사항이 추가되
 
 ## <a name="next-steps"></a>다음 단계
 > [!div class="nextstepaction"]
-> [접근성 기능](/sccm/core/understand/accessibility-features.md)
+> [접근성 기능](../../understand/accessibility-features.md)
 
