@@ -10,12 +10,12 @@ ms.assetid: b9b22655-b8c1-461f-8047-3a7e906f647a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e323fa8df7d8ae88d6526a5d1777ceb8fa27c2de
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 1caaf1b63a5773e61c3e8d7b500e9d0acfca1010
+ms.sourcegitcommit: a52255da16c9f8b0b60a6c299a369347c7e01bef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32353150"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49989130"
 ---
 # <a name="manage-operating-system-upgrade-packages-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 운영 체제 업그레이드 패키지 관리
 
@@ -87,3 +87,6 @@ System Center Configuration Manager의 업그레이드 패키지에는 컴퓨터
 7.  **요약** 페이지에서 정보를 확인한 후에 **다음**을 클릭합니다.  
 
 8.  **완료** 페이지에서 소프트웨어 업데이트가 운영 체제 이미지에 성공적으로 적용되었는지 확인합니다.  
+
+> [!NOTE]  
+>  페이로드 크기를 최소화하기 위해 OS 업그레이드 패키지 및 OS 이미지 서비스가 이전 버전을 제거합니다. 

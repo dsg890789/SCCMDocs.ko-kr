@@ -10,12 +10,12 @@ ms.assetid: da5f8b61-2386-4530-ad54-1a5c51911f07
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4c6069f81c9a5d086ef7c3ed13312d4f878d524a
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 1efd4197e63ddc12c0afc9e37b633c38d0df0f14
+ms.sourcegitcommit: a52255da16c9f8b0b60a6c299a369347c7e01bef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39384094"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49989147"
 ---
 # <a name="use-pxe-to-deploy-windows-over-the-network-with-configuration-manager"></a>Configuration Manager에서 PXE를 사용하여 네트워크를 통해 Windows 배포
 
@@ -40,7 +40,8 @@ OS 배포 시나리오 중 하나의 단계를 완료한 다음, 이 문서의 �
 
 PXE 부팅 요청을 만드는 Configuration Manager 클라이언트에 운영 체제를 배포하려면 PXE 요청을 수락하도록 하나 이상의 배포 지점을 구성해야 합니다. 구성하고 나면 배포 지점에서 PXE 부팅 요청에 응답하고 수행해야 할 적절한 배포 작업을 결정합니다. 자세한 내용은 [배포 지점 설치 또는 수정](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_config-pxe)을 참조하세요.  
 
-
+> [!NOTE]  
+>  여러 서브넷을 지원하기 위해 단일 PXE 사용 배포 지점을 구성하는 경우 DHCP 옵션을 사용할 수 없습니다. 라우터에서 IP 도우미를 구성하여 PXE 요청을 PXE 사용 배포 지점으로 전달할 수 있도록 합니다.
 
 ## <a name="prepare-a-pxe-enabled-boot-image"></a>PXE 사용 부팅 이미지 준비
 

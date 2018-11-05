@@ -10,18 +10,18 @@ ms.assetid: 98b038b4-1a13-4228-bdb8-a12194e32b0e
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: fcffc48431045fab2b2f69e112258c844ad184bb
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 2730464afe21705d020943d3e1566b3130c9c780
+ms.sourcegitcommit: ee434c53b3695a039b56298082b6f61f1006d9dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32334796"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943260"
 ---
 # <a name="automatically-categorize-devices-into-collections-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 컬렉션으로 장치 자동 분류
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Microsoft Intune에서 Configuration Manager를 사용하는 경우 장치 컬렉션에 장치를 자동으로 배치하는 데 사용할 수 있는 장치 범주를 만들 수 있습니다. 그런 다음 사용자는 Intune에 장치를 등록할 때 장치 범주를 선택해야 합니다. Configuration Manager 콘솔에서 장치 범주를 변경할 수 있습니다.
+Microsoft Intune에서 Configuration Manager를 사용하는 경우 장치 컬렉션에 장치를 자동으로 배치하는 데 사용할 수 있는 장치 범주를 만들 수 있습니다. 그런 다음, 사용자는 Intune에 장치를 등록할 때 장치 범주를 선택해야 합니다. Configuration Manager 콘솔에서 장치 범주를 변경할 수 있습니다.
 
 > [!IMPORTANT]  
     >  이 기능은 Microsoft Intune의 **2016년 6월** 이상 릴리스에서 작동합니다. 이러한 절차를 시도하기 전에 이 릴리스로 업데이트했는지 확인합니다.

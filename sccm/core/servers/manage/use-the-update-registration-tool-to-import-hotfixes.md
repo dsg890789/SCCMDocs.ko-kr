@@ -10,12 +10,12 @@ ms.assetid: 8cc13635-85d6-4b07-a3ec-c42188bc5c74
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: d82ae79ae3466eff753e92c232b2cdd40fbcb2cb
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 94f0da3fa9f4aa43ce4818b7b6edf752df53d66a
+ms.sourcegitcommit: ee434c53b3695a039b56298082b6f61f1006d9dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32338485"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943277"
 ---
 # <a name="use-the-update-registration-tool-to-import-hotfixes-to-system-center-configuration-manager"></a>업데이트 등록 도구를 사용하여 System Center Configuration Manager에 핫픽스 가져오기
 

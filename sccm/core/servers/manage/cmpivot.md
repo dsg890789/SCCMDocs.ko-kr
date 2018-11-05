@@ -10,12 +10,12 @@ ms.assetid: 32e2d6b9-148f-45e2-8083-98c656473f82
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2e0f74790437b34d1c5cd5dc00767ec782a51b45
-ms.sourcegitcommit: fe279229a90fdc8cddbb13c7ffdbbb22af0e25ef
+ms.openlocfilehash: 29b0f577ad291899467d9c6fd305af9ef6b892eb
+ms.sourcegitcommit: 5b3ff56018cfc6bda9643c9f1bebc575173f61bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47229299"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083805"
 ---
 # <a name="cmpivot-for-real-time-data-in-configuration-manager"></a>Configuration Manager에서 실시간 데이터에 대한 CMPivot
 
@@ -35,7 +35,7 @@ CMPivot을 사용하려면 다음 구성 요소가 필요합니다.
 
 - 대상 장치를 Configuration Manager 클라이언트의 최신 버전으로 업그레이드합니다.  
 
-- Configuration Manager 관리자는 **SMS 스크립트** 개체에서 **읽기** 권한 및 **컬렉션** 개체에서 **스크립트 실행** 권한이 필요합니다. **스크립트 실행기** 역할에는 이러한 권한이 있습니다. 자세한 내용은 [스크립트의 보안 역할](/sccm/apps/deploy-use/create-deploy-scripts#bkmk_ScriptRoles)을 참조하세요.  
+- Configuration Manager 관리자는 **SMS 스크립트** 개체의 **읽기** 권한, **컬렉션** 개체의 **스크립트 실행** 권한, 그리고 기본 범위가 필요합니다. **스크립트 실행기** 역할에는 이러한 권한이 있습니다. 자세한 내용은 [스크립트의 보안 역할](/sccm/apps/deploy-use/create-deploy-scripts#bkmk_ScriptRoles)을 참조하세요.  
 
 - 다음 엔터티에 대한 데이터를 수집하기 위해 대상 클라이언트는 PowerShell 버전 5.0이 필요합니다.  
     - 관리자

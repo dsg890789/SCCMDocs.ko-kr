@@ -10,12 +10,12 @@ ms.assetid: fab13949-371c-4a4c-978e-471db1e54966
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3b0931671c05604a0115c14a5e7fc5d9c6767b7c
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 82909cced6783f73608f155e64b7dd30b4087b06
+ms.sourcegitcommit: a52255da16c9f8b0b60a6c299a369347c7e01bef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32350105"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49989164"
 ---
 # <a name="manage-operating-system-images-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 운영 체제 이미지 관리
 
@@ -109,6 +109,9 @@ Configuration Manager의 운영 체제 이미지는 WIM(Windows Imaging) 형식 
 7.  **요약** 페이지에서 정보를 확인한 후에 **다음**을 클릭합니다.  
 
 8.  **완료** 페이지에서 소프트웨어 업데이트가 운영 체제 이미지에 성공적으로 적용되었는지 확인합니다.  
+
+> [!NOTE]  
+>  페이로드 크기를 최소화하기 위해 OS 업그레이드 패키지 및 OS 이미지 서비스가 이전 버전을 제거합니다.  
 
 ##  <a name="BKMK_OSImageMulticast"></a> 멀티캐스트 배포를 위한 운영 체제 이미지 준비  
  멀티캐스트 배포를 사용하면 여러 컴퓨터에서 동시에 운영 체제 이미지를 다운로드할 수 있습니다. 배포 지점은 개별 연결을 통해 이미지 복사본을 각 클라이언트에 전송하는 대신 이미지를 클라이언트에 멀티캐스트합니다. [멀티캐스트를 사용하여 네트워크를 통해 Windows 배포](../deploy-use/use-multicast-to-deploy-windows-over-the-network.md) 운영 체제 배포 방법을 선택한 경우 멀티캐스트 사용 배포 지점에 운영 체제 이미지를 배포하기 전에 멀티캐스트를 지원하도록 운영 체제 이미지 패키지를 구성해야 합니다. 기존 운영 체제 이미지 패키지에 대한 멀티캐스트 옵션을 설정하려면 다음 절차를 따르십시오.  

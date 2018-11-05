@@ -10,12 +10,12 @@ ms.assetid: f504de3e-4caf-455c-80d7-a63f13f4c5d9
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 78afa39b173abc79c4ed1cadc79f41ab32150ecf
-ms.sourcegitcommit: 3dfe3f4401651afa9dc65d14a8944ae4e4198b3e
+ms.openlocfilehash: 626c52b827e38a53ed3b8982963496f29f11acb5
+ms.sourcegitcommit: 5b3ff56018cfc6bda9643c9f1bebc575173f61bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48862365"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083771"
 ---
 #  <a name="configure-alerts-for-endpoint-protection-in-configuration-manager"></a>Configuration Manager에서 Endpoint Protection에 대한 경고를 구성하는 방법
 
@@ -39,12 +39,12 @@ ms.locfileid: "48862365"
     > [!NOTE]
     >  사용자 컬렉션에 대해서는 경고를 구성할 수 없습니다.
 
-4.  Configuration Manager 콘솔의 **모니터링** 작업 영역에서 이 컬렉션에 대한 맬웨어 방지 작업 정보를 보려는 경우 *<컬렉션 이름\>***속성** 대화 상자의 **경고** 탭에서 **Endpoint Protection 대시보드에서 이 컬렉션 보기**를 선택합니다.
+4.  Configuration Manager 콘솔의 **모니터링** 작업 영역에서 이 컬렉션에 대한 맬웨어 방지 작업 정보를 보려는 경우 _<컬렉션 이름\>_ **속성** 대화 상자의 **경고** 탭에서 **Endpoint Protection 대시보드에서 이 컬렉션 보기**를 선택합니다.
 
     > [!NOTE]
     >  이 옵션은 **모든 시스템** 컬렉션에 사용할 수 없습니다.
 
-5.  *<컬렉션 이름\>***속성** 대화 상자의 **경고** 탭에서 **추가**를 클릭합니다.
+5.  _<컬렉션 이름\>_ **속성** 대화 상자의 **경고** 탭에서 **추가**를 클릭합니다.
 
 6.  **새 컬렉션 경고 추가** 대화 상자의 **이러한 조건이 적용되는 경우 경고 생성** 섹션에서 지정된 Endpoint Protection 이벤트가 발생할 때 Configuration Manager에서 생성하려는 경고를 선택하고 **확인**을 클릭합니다.
 
@@ -83,7 +83,7 @@ ms.locfileid: "48862365"
 
         -   **검색 간격(시간):** 맬웨어 검색 횟수가 발생해야 하는 검색 간격(시간)을 지정합니다. **1** 에서 **168**사이의 숫자를 지정합니다.
 
-9. **확인**을 클릭하여 *<컬렉션 이름\>***속성** 대화 상자를 닫습니다.  
+9. **확인**을 클릭하여 _<컬렉션 이름\>_ **속성** 대화 상자를 닫습니다.  
 
 ## <a name="alert-for-outdated-malware-client"></a>오래된 맬웨어 클라이언트에 대한 경고
 

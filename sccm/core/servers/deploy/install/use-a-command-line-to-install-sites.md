@@ -10,12 +10,12 @@ ms.assetid: e7cdb1a9-140a-436e-ac71-72d083110223
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3df559dc151950834aab4d909811cb42ec4822d0
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 4a6c989b1eabe47f3360ceec660d5eba32811d60
+ms.sourcegitcommit: ee434c53b3695a039b56298082b6f61f1006d9dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32338944"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943294"
 ---
 # <a name="use-a-command-line-to-install-system-center-configuration-manager-sites"></a>명령줄을 사용하여 System Center Configuration Manager 사이트 설치
 
@@ -84,7 +84,7 @@ CD.Latest 폴더의 미디어를 사용하여 다음 네 가지 설치 옵션의
 - 중앙 관리 사이트 복구
 - 기본 사이트 복구
 
-Microsoft 볼륨 라이선스 사이트에서 얻은 설치 미디어에는 이 값을 사용할 수 없습니다.
+Microsoft Volume License 사이트에서 얻은 설치 미디어에는 이 값을 사용할 수 없습니다.
 스크립트 파일에서 이 키 이름을 사용하는 방법에 대한 자세한 내용은 [명령줄 옵션](/sccm/core/servers/deploy/install/command-line-options-for-setup)을 참조하세요.
 
 
