@@ -2,7 +2,7 @@
 title: 시험판 기능
 titleSuffix: Configuration Manager
 description: 시험판 기능은 프로덕션 환경에서의 초기 테스트를 위해 현재 분기에 포함된 기능입니다.
-ms.date: 07/30/2018
+ms.date: 10/24/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 6bce416b-761d-4b23-bd33-5b7c30edb10d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 7b82bdfcbe69c7e9d59185fc6af20a85e65a6e7d
-ms.sourcegitcommit: 0d7efd9e064f9d6a9efcfa6a36fd55d4bee20059
+ms.openlocfilehash: e3b3b31c31725c6b9931d0c2cc67324c4b39f974
+ms.sourcegitcommit: 8791bb9be477fe6a029e8a7a76e2ca310acd92e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43893569"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50411139"
 ---
 # <a name="pre-release-features-in-configuration-manager"></a>Configuration Manager 시험판 기능
 
@@ -75,7 +75,7 @@ ms.locfileid: "43893569"
 
 | 기능          | 시험판으로 추가됨 | 전체 기능으로 추가됨 |  
 |------------------|----------------------|-------------------------|
-| 향상된 HTTP 사이트 시스템<!--1356889,1358228--> |버전 1806|![아직 추가되지 않음](media/red_x.png)|
+| 향상된 HTTP 사이트 시스템<!--1356889,1358228--> |[1806 버전](/sccm/core/plan-design/hierarchy/enhanced-http)|![아직 추가되지 않음](media/red_x.png)|
 | 공동 관리하는 장치용 모바일 앱<!--1357892-->|[1806 버전](/sccm/core/clients/manage/co-management-switch-workloads#workloads-able-to-be-transitioned-to-intune)|![아직 추가되지 않음](media/red_x.png)|
 | Package Conversion Manager<!--1357861-->|[1806 버전](/sccm/apps/pcm/package-conversion-manager)|![아직 추가되지 않음](media/red_x.png)|
 | Cisco AnyConnect 4.0.07x 및 이후에 iOS에 대한 지원<!--1357393-->|[1802 버전](/sccm/mdm/deploy-use/create-vpn-profiles)| [업데이트 4163547 적용 1802 버전](/sccm/mdm/deploy-use/create-vpn-profiles) |

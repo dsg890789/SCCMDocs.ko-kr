@@ -10,12 +10,12 @@ ms.assetid: 86cd5382-8b41-45db-a4f0-16265ae22657
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b1d4e2b7dca44db7ddc5976edde59a04bc3cb45e
-ms.sourcegitcommit: 4e4b71227309bee7e9f1285971f8235c67a9c502
+ms.openlocfilehash: e5099be5ff6b34bcbc232e78056f1937a9508c4f
+ms.sourcegitcommit: 8791bb9be477fe6a029e8a7a76e2ca310acd92e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46533765"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50411428"
 ---
 # <a name="peer-cache-for-configuration-manager-clients"></a>Configuration Manager 클라이언트용 피어 캐시
 
@@ -94,7 +94,7 @@ Configuration Manager 클라이언트는 피어 캐시를 사용하여 캐시의
 
 - 클라이언트는 현재 경계 그룹의 피어 캐시 원본에서만 콘텐츠를 다운로드할 수 있습니다.  
 
-- [네트워크 액세스 계정](/sccm/core/plan-design/hierarchy/manage-accounts-to-access-content#a-namebkmknaaa-network-access-account)은 다음과 같은 경우에만 필요합니다.  
+- [네트워크 액세스 계정](/sccm/core/plan-design/hierarchy/accounts#network-access-account)은 다음과 같은 경우에만 필요합니다.  
 
     - 피어 캐시 사용 클라이언트가 소프트웨어 센터에서 작업 순서를 실행하고 부팅 이미지로 다시 부팅될 때 사이트에서 네트워크 액세스 계정을 구성합니다. 장치가 Windows PE에 있으면 네트워크 액세스 계정을 사용하여 피어 캐시 원본에서 콘텐츠를 가져옵니다.  
 
