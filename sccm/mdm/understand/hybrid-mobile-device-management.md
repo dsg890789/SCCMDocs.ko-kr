@@ -2,7 +2,7 @@
 title: Microsoft Intune과 사용하는 하이브리드 MDM
 titleSuffix: Configuration Manager
 description: Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 MDM(모바일 장치 관리)에 대해 알아보세요.
-ms.date: 08/14/2018
+ms.date: 11/02/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: bb95154b-f63e-4491-896e-41d732c802f8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 22e685889f51f3b35c3ba58e94d161816424b2a3
-ms.sourcegitcommit: dd785ad7146b8491c98ccd7804d0959a5c1fb034
+ms.openlocfilehash: f3d25120701c12b547727259002fc58a8f8f0780
+ms.sourcegitcommit: 97083c51057e2c4e0fe12c3b1f1b512250874c6a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49383017"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50968138"
 ---
 # <a name="hybrid-mdm-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune에서 사용하는 하이브리드 MDM
 
@@ -38,7 +38,7 @@ ms.locfileid: "49383017"
 > 
 > - 라이선싱은 동일하게 유지됩니다. Azure의 Intune 라이선스는 하이브리드 MDM에 포함되어 있습니다.  
 > 
-> - Microsoft에서는 2018년 11월부터 새 하이브리드 MDM 고객의 온보딩을 차단하기 시작합니다.  
+> - Configuration Manager의 조건부 액세스 및 온-프레미스 MDM 기능은 더 이상 사용되지 않습니다. 예정된 Configuration Manager의 변경 내용을 통해 하이브리드 MDM 없이도 이러한 기능이 작동될 수 있습니다. 
 > 
 > - 2019년 9월 1일에는 나머지 모든 하이브리드 MDM 장치에서 더 이상 정책, 앱 또는 보안 업데이트를 받지 않습니다.  
 > 

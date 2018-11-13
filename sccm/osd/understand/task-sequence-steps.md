@@ -10,12 +10,12 @@ ms.assetid: 7c888a6f-8e37-4be5-8edb-832b218f266d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3e0b70a2b024555bd67f63b3a31a6408b07c273b
-ms.sourcegitcommit: be8c0182db9ef55a948269fcbad7c0f34fd871eb
+ms.openlocfilehash: bec95b13ecba5ae5238d758ae06566042a95d939
+ms.sourcegitcommit: 303d826f45c8fd9a05d8883afc1ca645e56bd576
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42756080"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51269249"
 ---
 # <a name="task-sequence-steps-in-configuration-manager"></a>Configuration Manager의 작업 순서 단계
 
@@ -134,7 +134,7 @@ ms.locfileid: "42756080"
 
  이 단계를 사용하여 대상 컴퓨터에 대한 네트워크 또는 작업 그룹 구성 정보를 지정합니다. 작업 순서는 이러한 값을 적절한 응답 파일에 저장합니다. 이 응답 파일은 Windows 설치 프로그램에서 **Windows 및 ConfigMgr 설치** 동작 중에 사용합니다.  
 
- 이 작업 순서 단계는 전체 OS 또는 Windows PE에서 실행됩니다. 
+ 이 작업 순서 단계는 Windows PE에서만 실행됩니다. 전체 OS에서는 실행되지 않습니다. 
 
  이 단계에 다음 작업 순서 변수를 사용하세요.  
  - [OSDAdapter](/sccm/osd/understand/task-sequence-variables#OSDAdapter)  

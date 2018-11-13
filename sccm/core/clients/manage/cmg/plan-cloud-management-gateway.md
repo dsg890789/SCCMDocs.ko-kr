@@ -2,7 +2,7 @@
 title: 클라우드 관리 게이트웨이에 대한 계획
 titleSuffix: Configuration Manager
 description: 인터넷 기반 클라이언트의 관리를 간소화하도록 CMG(클라우드 관리 게이트웨이)를 계획하고 설계합니다.
-ms.date: 09/10/2018
+ms.date: 10/24/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 2dc8c9f1-4176-4e35-9794-f44b15f4e55f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 9b25b7a5b7df42dc83bec18d38b44c7807e6dc1a
-ms.sourcegitcommit: 2badee2b63ae63687795250e298f463474063100
+ms.openlocfilehash: 0f7e598da0953a20412f6c8279b90a95c1d26581
+ms.sourcegitcommit: 8791bb9be477fe6a029e8a7a76e2ca310acd92e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45601129"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50411479"
 ---
 # <a name="plan-for-the-cloud-management-gateway-in-configuration-manager"></a>Configuration Manager에서 클라우드 관리 게이트웨이 계획
 
@@ -103,12 +103,12 @@ CMG의 배포 및 운영에 포함되는 구성 요소는 다음과 같습니다
 Azure 관리 인증서를 사용하는 **클래식 서비스 배포** 옵션도 CMG 마법사에서 계속 제공됩니다. 리소스의 배포 및 관리를 간소화하기 위해 모든 새 CMG 인스턴스에 Azure Resource Manager 배포 모델을 사용하는 것이 좋습니다. 가능한 경우 리소스 관리자를 통해 기존 CMG 인스턴스를 재배포합니다. 자세한 내용은 [CMG 수정](/sccm/core/clients/manage/cmg/setup-cloud-management-gateway#modify-a-cmg)을 참조하세요.
 
 > [!IMPORTANT]  
-> 이 기능은 Azure CSP(클라우드 서비스 공급자) 지원을 사용하도록 설정하지 않습니다. Azure Resource Manager를 통한 CMG 배포는 CSP가 지원하지 않는 클래식 클라우드 서비스를 계속 사용합니다. 자세한 내용은 [Azure CSP에서 사용 가능한 Azure 서비스](/azure/cloud-solution-provider/overview/azure-csp-available-services)를 참조하세요. 
+> 이 기능은 Azure CSP(클라우드 서비스 공급자)를 지원하지 않습니다. Azure Resource Manager를 통한 CMG 배포는 CSP에서 지원하지 않는 클래식 클라우드 서비스를 계속 사용합니다. 자세한 내용은 [Azure CSP에서 사용 가능한 Azure 서비스](/azure/cloud-solution-provider/overview/azure-csp-available-services)를 참조하세요. 
 
 
 ### <a name="hierarchy-design"></a>계층 디자인
 
-계층 구조의 최상위 계층 사이트에서 CMG를 만듭니다. 중앙 관리 사이트인 경우 자식 기본 사이트에 CMG 연결 지점을 만들 수 있습니다. 클라우드 서비스 관리자 구성 요소는 중앙 관리 사이트에도 있는 서비스 연결 지점에 있습니다. 이 디자인은 필요한 경우 여러 기본 사이트 간에 서비스를 공유할 수 있습니다.
+계층 구조의 최상위 계층 사이트에서 CMG를 만듭니다. 중앙 관리 사이트인 경우 자식 기본 사이트에 CMG 연결 지점을 만듭니다. 클라우드 서비스 관리자 구성 요소는 중앙 관리 사이트에도 있는 서비스 연결 지점에 있습니다. 이 디자인은 필요한 경우 여러 기본 사이트 간에 서비스를 공유할 수 있습니다.
 
 Azure에서 CMG 서비스를 여러 개 만들 수 있으며, CMG 연결 지점도 여러 개 만들 수 있습니다. 여러 CMG 연결 지점은 클라이언트 트래픽의 부하를 CMG에서 온-프레미스 역할로 분산합니다. 네트워크 대기 시간을 줄이려면 연결된 CMG를 기본 사이트와 동일한 지리적 지역에 할당합니다.
 
@@ -149,20 +149,23 @@ Fourth Coffee는 시애틀 본사의 온-프레미스 데이터 센터에 중앙
 
     - **Azure 관리자**는 디자인에 따라 특정 구성 요소의 초기 생성에 참여해야 합니다. 이 가상 사용자는 Configuration Manager에서 권한이 필요하지 않습니다.  
 
-- **CMG 연결 지점**을 호스팅할 하나 이상의 온-프레미스 Windows 서버. 이 역할은 다른 Configuration Manager 사이트 시스템 역할과 함께 배치할 수 있습니다.  
+- **CMG 연결 지점**을 호스팅할 하나 이상의 온-프레미스 Windows 서버. 이 역할을 다른 Configuration Manager 사이트 시스템 역할과 함께 배치할 수 있습니다.  
 
 - **서비스 연결 지점**은 [온라인 모드](/sccm/core/servers/deploy/configure/about-the-service-connection-point#bkmk_modes)에 있어야 합니다.   
 
-- CMG에 대한 [**서버 인증 인증서**](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#cmg-server-authentication-certificate).  
+- CMG에 대한 [**서버 인증 인증서**](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#bkmk_serverauth).  
 
-- Azure 클래식 배포 방법을 사용하는 경우 [**Azure 관리 인증서**](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#azure-management-certificate)를 사용해야 합니다.  
+- Azure 클래식 배포 방법을 사용하는 경우 [**Azure 관리 인증서**](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#bkmk_azuremgmt)를 사용해야 합니다.  
 
     > [!TIP]  
-    > Configuration Manager 버전 1802부터 **Azure Resource Manager** 배포 모델을 사용하는 것이 좋습니다. 이 관리 인증서가 필요하지 않습니다.  
+    > Configuration Manager 버전 1802부터, Microsoft는 **Azure Resource Manager** 배포 모델을 사용할 것을 권장합니다. 이 배포 모델에는 관리 인증서가 필요하지 않습니다.  
 
 - 클라이언트 OS 버전 및 인증 모델에 따라 **다른 인증서**가 필요할 수 있습니다. 자세한 내용은 [CMG 인증서](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway)를 참조하세요.  
 
-    - 1802 버전부터 모든 CMG 지원 [**관리 지점에서 HTTPS를 사용**](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#enable-management-point-for-https)하도록 구성해야 합니다.  
+    - 1802 버전부터 모든 CMG 지원 [**관리 지점에서 HTTPS를 사용**](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#bkmk_mphttps)하도록 구성해야 합니다.  
+
+    - 버전 1806부터 **HTTP 사이트 시스템에 대해 Configuration Manager가 생성한 인증서 사용**이라는 사이트 옵션을 사용하는 경우 관리 지점이 HTTP가 될 수 있습니다. 자세한 내용은 [고급 HTTP](/sccm/core/plan-design/hierarchy/enhanced-http)를 참조하세요.  
+
 
 - Windows 10 클라이언트에 **Azure AD**와의 통합이 필요할 수 있습니다. 자세한 내용은 [Azure 서비스 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)을 참조하세요.  
 
@@ -325,8 +328,8 @@ CMG 성능을 향상시키는 데 도움이 될 수 있는 권장 사항은 다�
 |---------|---------|---------|---------|---------|
 | 서비스 연결 지점     | HTTPS | 443        | Azure        | CMG 배포 |
 | CMG 연결 지점     |  TCP-TLS | 10140-10155        | CMG 서비스        | CMG 채널을 작성하기 위한 기본 설정 프로토콜<sup>1</sup> |
-| CMG 연결 지점     | HTTPS | 443        | CMG 서비스       | 하나의 VM 인스턴스에만 CMG 채널을 작성하기 위한 대체(fallback)<sup>2</sup> |
-| CMG 연결 지점     |  HTTPS   | 10124-10139     | CMG 서비스       | 둘 이상의 VM 인스턴스에 CMG 채널을 작성하기 위한 대체(fallback)<sup>3</sup> |
+| CMG 연결 지점     | HTTPS | 443        | CMG 서비스       | 하나의 VM 인스턴스에만 CMG 채널을 빌드하기 위한 대체(fallback) 프로토콜<sup>2</sup> |
+| CMG 연결 지점     |  HTTPS   | 10124-10139     | CMG 서비스       | 둘 이상의 VM 인스턴스에 CMG 채널을 빌드하기 위한 대체(fallback) 프로토콜<sup>3</sup> |
 | 클라이언트     |  HTTPS | 443         | CMG        | 일반 클라이언트 통신 |
 | CMG 연결 지점      | HTTPS 또는 HTTP | 443 또는 80         | 관리 지점<br>(1706 또는 1710 버전) | 온-프레미스 트래픽, 포트는 관리 지점 구성에 따라 달라집니다. |
 | CMG 연결 지점      | HTTPS | 443      | 관리 지점<br>(1802 버전) | 온-프레미스 트래픽은 HTTPS여야 합니다. |

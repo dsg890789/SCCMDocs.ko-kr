@@ -2,7 +2,7 @@
 title: 콘텐츠 관리의 기본 사항
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 도구와 옵션을 사용하여 배포하는 콘텐츠를 관리합니다.
-ms.date: 07/30/2018
+ms.date: 10/26/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: c201be2a-692c-4d67-ac95-0a3afa5320fe
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5c3af900bae26262ba402ea258b8859ba07b999b
-ms.sourcegitcommit: 4f05517f7b284696a492a1b184cc5f25c5cda5e6
+ms.openlocfilehash: b73ead1492b143260d327f428db5a6183f84434c
+ms.sourcegitcommit: 8791bb9be477fe6a029e8a7a76e2ca310acd92e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48891217"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50411343"
 ---
 # <a name="fundamental-concepts-for-content-management-in-configuration-manager"></a>Configuration Manager에서 콘텐츠 관리의 기본 개념
 
@@ -33,15 +33,19 @@ Configuration Manager는 소프트웨어 콘텐츠를 관리하는 도구 및 �
 ## <a name="accounts-used-for-content-management"></a>콘텐츠 관리에 사용되는 계정  
  콘텐츠 관리에는 다음과 같은 계정을 사용할 수 있습니다.  
 
--   **네트워크 액세스 계정**: 클라이언트에서 배포 지점에 연결하고 콘텐츠에 액세스하는 데 사용하는 계정입니다. 기본적으로 컴퓨터 계정이 먼저 시도됩니다.  
+#### <a name="network-access-account"></a>네트워크 액세스 계정
+클라이언트에서 배포 지점에 연결하고 콘텐츠에 액세스하는 데 사용하는 계정입니다. 기본적으로 컴퓨터 계정이 먼저 시도됩니다.  
 
-     풀(pull) 배포 지점이 원격 포리스트의 원본 배포 지점에서 콘텐츠를 다운로드할 때도 이 계정이 사용됩니다.  
+풀(pull) 배포 지점이 원격 포리스트의 원본 배포 지점에서 콘텐츠를 다운로드할 때도 이 계정이 사용됩니다.  
 
--   **패키지 액세스 계정**: 기본적으로 Configuration Manager는 일반 액세스 계정인 사용자 및 관리자에 대해 배포 지점의 콘텐츠 액세스 권한을 부여합니다. 그러나 추가 권한을 구성하여 액세스를 제한할 수 있습니다.   
+버전 1806부터 일부 시나리오에서는 더 이상 액세스 계정이 필요하지 않습니다. 사이트에서 Azure Active Directory 인증으로 고급 HTTP를 사용하도록 설정할 수 있습니다.<!--1358228--> 
 
--   **멀티캐스트 연결 계정**: OS 배포에 사용됩니다.  
+자세한 내용은 [네트워크 액세스 계정](/sccm/core/plan-design/hierarchy/accounts#network-access-account)을 참조하세요.
 
-이러한 계정에 대한 자세한 내용은 [콘텐츠에 액세스하기 위한 계정 관리](/sccm/core/plan-design/hierarchy/manage-accounts-to-access-content)를 참조하세요.
+#### <a name="package-access-account"></a>패키지 액세스 계정
+기본적으로 Configuration Manager는 일반 액세스 계정인 사용자 및 관리자에게 배포 지점의 콘텐츠에 대한 액세스 권한을 부여합니다. 그러나 추가 권한을 구성하여 액세스를 제한할 수 있습니다.   
+
+자세한 내용은 [패키지 액세스 계정](/sccm/core/plan-design/hierarchy/accounts#package-access-account)을 참조하세요.
 
 
 

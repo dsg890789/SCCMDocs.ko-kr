@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 101de2ba-9b4d-4890-b087-5d518a4aa624
-ms.openlocfilehash: d15484ef38264a5c954dc664f9885b800a078ca6
-ms.sourcegitcommit: 2badee2b63ae63687795250e298f463474063100
+ms.openlocfilehash: 9aab4273129e6a3032d7e85d2545e6abc5b616c4
+ms.sourcegitcommit: 8dd9199bfe8e27f62e9df307f1c6ac58a3b81717
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45601010"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50237159"
 ---
 # <a name="prepare-windows-10-devices-for-co-management"></a>공동 관리를 위해 Windows 10 장치 준비
 AD 및 Azure AD에 조인하고, Microsoft Intune과 Configuration Manager에서 클라이언트를 등록하는 Windows 10 장치에서 공동 관리를 사용할 수 있습니다. 새 Windows 10 장치 및 Intune에 이미 등록된 장치의 경우 공동 관리되기 전에 Configuration Manager 클라이언트를 설치합니다. Configuration Manager 클라이언트인 Windows 10 장치의 경우 Intune에서 장치를 등록하고 Configuration Manager 콘솔에서 공동 관리를 사용할 수 있습니다.
@@ -68,7 +68,7 @@ AD 및 Azure AD에 조인하고, Microsoft Intune과 Configuration Manager에서
 
 - Windows 10, 버전 1709 이상  
 
-- [하이브리드 Azure AD 조인](https://docs.microsoft.com/azure/active-directory/device-management-hybrid-azuread-joined-devices-setup)(AD 및 Azure AD에 조인)  
+- [하이브리드 Azure 조인](https://docs.microsoft.com/azure/active-directory/device-management-hybrid-azuread-joined-devices-setup)(AD 및 Azure AD에 조인) 또는 Azure AD 조인 전용(이 유형은 "클라우드 도메인 조인"이라고도 함).
 
 
 ### <a name="additional-prerequisites-for-devices-without-the-configuration-manager-client"></a>Configuration Manager 클라이언트가 없는 장치에 대한 추가 필수 구성 요소

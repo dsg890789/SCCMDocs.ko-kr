@@ -10,12 +10,12 @@ ms.assetid: 58d52fdc-bd18-494d-9f3b-ccfc13ea3d35
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 9657cbbf60a90f21f0daa8bb5ef3d5cf80f7da4e
-ms.sourcegitcommit: 7eebd112a9862bf98359c1914bb0c86affc5dbc0
+ms.openlocfilehash: 0cb94f8d14ff525687909290085e16ecd47fa39f
+ms.sourcegitcommit: 22257e35a7d7263939a6802602050190897412a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42589397"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51562051"
 ---
 # <a name="prepare-to-use-sql-server-always-on-availability-groups-with-configuration-manager"></a>Configuration Manager에서 SQL Server Always On 가용성 그룹 사용 준비
 
@@ -171,7 +171,7 @@ Configuration Manager 설치 프로그램을 사용하여 가용성 그룹에서
 
 다음 SQL 스크립트를 실행하여 주 및 보조 복제본에 대한 데이터베이스 구성을 확인하세요. 보조 복제본에서 문제를 해결하려면 먼저 해당 보조 복제본을 주 복제본으로 변경합니다.
 
-``` SQL
+```SQL
     SET NOCOUNT ON
 
     DECLARE @dbname NVARCHAR(128)
@@ -182,7 +182,7 @@ Configuration Manager 설치 프로그램을 사용하여 가용성 그룹에서
     RAISERROR(N'ERROR: Script is targetting a system database.  It should be targeting the DB you created instead.', 0, 1)
     GOTO Branch_Exit;
     END ELSE
-    PRINT N'INFO: Targetted database is ' + @dbname + N'.'
+    PRINT N'INFO: Targeted database is ' + @dbname + N'.'
 
     PRINT N'INFO: Running verifications....'
 

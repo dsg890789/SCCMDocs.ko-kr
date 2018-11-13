@@ -2,7 +2,7 @@
 title: 버전 1806의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager 최신 라인인 1806 버전에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
-ms.date: 09/19/2018
+ms.date: 10/26/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 0249dbd3-1e85-4d05-a9e5-420fbe44d850
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3b5cb217b9351f5d2491070b447d0a96efe0aa29
-ms.sourcegitcommit: 4e4b71227309bee7e9f1285971f8235c67a9c502
+ms.openlocfilehash: e5fd7c26c190407ba5e497068582704b03c71f00
+ms.sourcegitcommit: 8791bb9be477fe6a029e8a7a76e2ca310acd92e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46533782"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50411513"
 ---
 # <a name="whats-new-in-version-1806-of-configuration-manager-current-branch"></a>Configuration Manager 1806 버전의 새로운 기능
 
@@ -25,17 +25,17 @@ Configuration Manager의 현재 분기에 대한 1806 업데이트는 콘솔 내
 
 이 업데이트를 설치하기 위한 최신 검사 목록을 항상 검토하세요. 자세한 내용은 [업데이트 1806을 설치하기 위한 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1806)을 참조하세요. 사이트를 업데이트한 후 [업데이트 후 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1806#post-update-checklist)도 검토하세요.
 
+<!--
 > [!Important]  
-> 이 문서는 현재 이 버전의 모든 중요한 기능을 나열합니다. 그러나 일부 섹션은 새 기능에 대한 추가 정보가 있는 업데이트된 콘텐츠에 아직 연결되지 않았습니다. 이 페이지에서 정기적으로 업데이트를 확인하세요. 변경 내용은 ***[업데이트]*** 태그로 표시됩니다. 이 표시는 콘텐츠가 최종 버전이 되면 제거될 것입니다.  
+> This article currently lists all significant features in this version. However, not all sections yet link to updated content with further information on the new features. Keep checking this page regularly for updates. Changes are noted with the ***[Updated]*** tag. This note will be removed when the content is finalized.  
+-->
 
-새 기능 외에 이 릴리스에는 버그 수정과 같은 추가 변경 사항도 포함되어 있습니다. 자세한 내용은 [1806 버전, System Center Configuration Manager 현재 분기의 변경 내용 요약](https://support.microsoft.com/help/4459701)을 참조하세요.
+새 기능 외에 이 릴리스에는 버그 수정과 같은 추가 변경 사항도 포함되어 있습니다. 자세한 내용은 [Configuration Manager 현재 분기, 버전 1806의 변경 내용 요약](https://support.microsoft.com/help/4459701)을 참조하세요.
 
 Configuration Manager용 Windows PowerShell cmdlet의 변경 내용에 대한 자세한 내용은 [PowerShell 1806 릴리스 정보](https://docs.microsoft.com/powershell/sccm/1806_release_notes?view=sccm-ps)를 참조하세요.
 
-<!--
-The following additional updates to this release are also now available:
-- [Update rollup for System Center Configuration Manager current branch, version 1806](https://support.microsoft.com/help/4057517)
--->
+이제 이 릴리스에 대한 다음과 같은 추가 업데이트도 사용할 수 있습니다.
+- [Configuration Manager 현재 분기, 버전 1806용 업데이트 배포](https://support.microsoft.com/help/4462978)
 
 
 다음 섹션에서는 Configuration Manager 최신 라인인 1806 버전에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.  
@@ -46,7 +46,7 @@ The following additional updates to this release are also now available:
 
 [제거되는 기능과 사용되지 않는 항목](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated)에서 구현되기 전의 지원 변경 내용을 알아보세요.
 
-***[업데이트됨]*** 2018년 8월 14일부터 하이브리드 모바일 장치 관리 기능이 사용되지 않습니다. 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->  
+2018년 8월 14일부터 하이브리드 모바일 장치 관리 기능이 사용되지 않습니다. 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->  
 
 <!--
 Version 1806 drops support for the following products:
@@ -89,8 +89,7 @@ Version 1806 drops support for the following products:
 
 
 ### <a name="exclude-active-directory-containers-from-discovery"></a>검색에서 Active Directory 컨테이너 제외
-<!--1358143-->
- ***[업데이트됨]*** 검색되는 개체 수를 줄이기 위해 Active Directory 시스템 검색에서 특정 컨테이너를 제외합니다. 
+<!--1358143--> 검색되는 개체 수를 줄이기 위해 이제 Active Directory 시스템 검색에서 특정 컨테이너를 제외합니다. 
 
 자세한 내용은 [Active Directory 시스템 검색 구성](/sccm/core/servers/deploy/configure/configure-discovery-methods#bkmk_config-adsd)을 참조하세요.
 
@@ -133,8 +132,7 @@ Version 1806 drops support for the following products:
 
 
 ### <a name="boundary-group-options-for-peer-downloads"></a>피어 다운로드를 위한 경계 그룹 옵션
-<!--1356193-->
- ***[업데이트됨]*** 이제 경계 그룹에는 사용자 환경에서 콘텐츠 배포를 보다 세밀하게 제어할 수 있는 추가 설정이 포함됩니다. 이 릴리스에서는 다음 옵션을 추가합니다.  
+<!--1356193--> 이제 경계 그룹에는 사용자 환경에서 콘텐츠 배포를 보다 세밀하게 제어할 수 있는 추가 설정이 포함됩니다. 이 릴리스에서는 다음 옵션을 추가합니다.  
 
 - **이 경계 그룹에서 피어 다운로드 허용**: 관리 지점은 피어 원본을 포함하는 콘텐츠 위치 목록을 클라이언트에 제공합니다. 이 설정은 배달 최적화 그룹에 대한 ID 적용에도 영향을 미칩니다.  
 
@@ -144,8 +142,7 @@ Version 1806 drops support for the following products:
 
 
 ### <a name="improvement-to-peer-cache-source-location-status"></a>피어 캐시 원본 위치 상태 개선
-<!--SCCMDocs issue 850-->
- ***[업데이트됨]*** 피어 캐시 원본이 다른 위치로 로밍되었는지 확인하는 Configuration Manager의 효율이 향상되었습니다. 이 동작을 통해 관리 지점은 피어 캐시 원본을 이전 위치가 아닌 새 위치의 클라이언트에 콘텐츠 원본으로 제공합니다. 로밍 피어 캐시 원본에 피어 캐시 기능을 사용하는 경우 사이트를 1806 버전으로 업데이트 한 후 모든 피어 캐시 원본을 최신 클라이언트 버전으로 업데이트해야 합니다. 피어 캐시 원본이 버전 1806 이상으로 업데이트되기 전에는, 관리 지점이 이러한 피어 캐시 원본을 콘텐츠 위치 목록에 포함하지 않습니다.
+<!--SCCMDocs issue 850--> Configuration Manager는 피어 캐시 원본이 다른 위치로 로밍되었는지 여부를 보다 효율적으로 확인할 수 있습니다. 이 동작을 통해 관리 지점은 피어 캐시 원본을 이전 위치가 아닌 새 위치의 클라이언트에 콘텐츠 원본으로 제공합니다. 로밍 피어 캐시 원본에 피어 캐시 기능을 사용하는 경우 사이트를 1806 버전으로 업데이트 한 후 모든 피어 캐시 원본을 최신 클라이언트 버전으로 업데이트해야 합니다. 피어 캐시 원본이 버전 1806 이상으로 업데이트되기 전에는, 관리 지점이 이러한 피어 캐시 원본을 콘텐츠 위치 목록에 포함하지 않습니다.
 
 자세한 내용은 [피어 캐시에 대한 요구 사항](/sccm/core/plan-design/hierarchy/client-peer-cache#requirements)을 참조하세요.
 
@@ -168,15 +165,13 @@ Version 1806 drops support for the following products:
 
 이번 릴리스에서는 클라이언트가 사이트 시스템과 통신하는 방법이 개선되었습니다. 사이트 속성의 **클라이언트 컴퓨터 통신** 탭에서 **HTTPS 또는 HTTP**에 대한 옵션을 선택한 다음, 새 옵션 **HTTP 사이트 시스템에 Configuration Manager 생성 인증서 사용**을 사용하도록 설정합니다. 이것은 [시험판 기능](/sccm/core/servers/manage/pre-release-features)입니다.
 
-이 옵션에서는 다음 기본 시나리오를 지원합니다.  
-
-- **클라이언트에서 HTTP 관리 지점**<!--1356889-->: [Azure AD 조인 장치](https://docs.microsoft.com/azure/active-directory/device-management-introduction#azure-ad-joined-devices)가 CMG(클라우드 관리 게이트웨이)를 통해 HTTP용으로 구성된 관리 지점과 통신할 수 있습니다. 사이트 서버는 관리 지점에 대한 인증서를 생성하여 보안 채널을 통해 통신할 수 있도록 허용합니다.   
-
-- **클라이언트에서 HTTP 배포 지점**<!--1358228-->:작업 그룹 또는 Azure AD 조인 클라이언트는 HTTP용으로 구성된 배포 지점에서 보안 채널을 통해 콘텐츠를 다운로드할 수 있습니다.   
+자세한 내용은 [고급 HTTP](/sccm/core/plan-design/hierarchy/enhanced-http)를 참조하세요.
 
 
 ### <a name="azure-ad-device-identity"></a>Azure AD 장치 ID 
 <!--1358460--> Azure AD 사용자가 로그인되지 않은 [Azure AD 조인](https://docs.microsoft.com/azure/active-directory/device-management-introduction#azure-ad-joined-devices) 또는 [하이브리드 Azure AD 장치](https://docs.microsoft.com/azure/active-directory/device-management-introduction#hybrid-azure-ad-joined-devices)에서 할당된 사이트와 안전하게 통신할 수 있습니다. 이제 클라우드 기반 장치 ID만 있으면 CMG 및 관리 지점을 인증하는 데 충분합니다.  
+
+자세한 내용은 [고급 HTTP](/sccm/core/plan-design/hierarchy/enhanced-http)를 참조하세요.
 
 
 ### <a name="cmtrace-installed-with-client"></a>CMTrace가 클라이언트와 함께 설치됨
@@ -186,8 +181,7 @@ Version 1806 drops support for the following products:
 
 
 ### <a name="cloud-management-dashboard"></a>클라우드 관리 대시보드
-<!--1358461-->
- ***[업데이트됨]*** 새로운 클라우드 관리 대시보드는 CMG(클라우드 관리 게이트웨이) 사용량에 대한 중앙 집중식 보기를 제공합니다. 사이트가 Azure AD에 등록되면 클라우드 사용자 및 장치에 대한 데이터도 표시됩니다.   
+<!--1358461--> 새로운 클라우드 관리 대시보드는 CMG(클라우드 관리 게이트웨이) 사용량에 대한 중앙 집중식 보기를 제공합니다. 사이트가 Azure AD에 등록되면 클라우드 사용자 및 장치에 대한 데이터도 표시됩니다.   
 
 이 기능에는 문제 해결에 도움이 되도록 실시간 확인에 사용하는 **CMG 연결 분석기**도 포함됩니다. 콘솔 내 유틸리티는 서비스의 현재 상태를 확인하며, CMG 연결 지점을 통해 CMG 트래픽을 허용하는 모든 관리 지점에 대한 통신 채널을 확인합니다. 
 
@@ -201,14 +195,12 @@ Version 1806 drops support for the following products:
 버전 1806에서 CMG(클라우드 관리 게이트웨이)에 포함된 향상된 기능은 다음과 같습니다.
 
 #### <a name="simplified-client-bootstrap-command-line"></a>간소화된 클라이언트 부트스트랩 명령줄
-<!--1358215-->
- ***[업데이트됨]*** CMG를 통해 구성 관리자 클라이언트를 인터넷에 설치할 때 명령줄에 필요한 속성이 줄었습니다. 이를 통해 공동 관리를 준비할 때 Microsoft Intune에서 명령줄 크기가 줄어듭니다. 
+<!--1358215--> CMG를 통해 Configuration Manager 클라이언트를 인터넷에 설치할 때 명령줄에 필요한 속성이 적어졌습니다. 이를 통해 공동 관리를 준비할 때 Microsoft Intune에서 명령줄 크기가 줄어듭니다. 
 
 자세한 내용은 [공동 관리를 위해 Windows 10 장치 준비](/sccm/core/clients/manage/co-management-prepare#command-line-to-install-configuration-manager-client)를 참조하세요.
 
 #### <a name="download-content-from-a-cmg"></a>CMG에서 콘텐츠 다운로드
-<!--1358651-->
- ***[업데이트됨]*** 이전에는 클라우드 배포 지점 및 CMG를 별도 역할로 배포해야 했습니다. CMG도 이제 클라이언트에 콘텐츠를 서비스합니다. 이 기능은 필요한 인증서 및 Azure VM 비용을 줄여줍니다. 
+<!--1358651--> 이전에 클라우드 배포 지점 및 CMG를 별도 역할로 배포해야 했습니다. CMG도 이제 클라이언트에 콘텐츠를 서비스합니다. 이 기능은 필요한 인증서 및 Azure VM 비용을 줄여줍니다. 
 
 자세한 내용은 [CMG 수정](/sccm/core/clients/manage/cmg/setup-cloud-management-gateway#modify-a-cmg)을 참조하세요.
 
@@ -301,8 +293,7 @@ Version 1806 drops support for the following products:
 
 
 ### <a name="package-conversion-manager"></a>Package Conversion Manager 
-<!--1357861-->
- ***[업데이트됨]*** Package Conversion Manager는 레거시 패키지를 Configuration Manager 현재 분기 응용 프로그램으로 변환할 수 있는 통합 도구입니다. 이와 같은 변환을 수행한 후에는 종속성, 요구 사항 규칙, 사용자 장치 선호도 등의 응용 프로그램 기능을 사용할 수 있습니다.
+<!--1357861--> Package Conversion Manager는 레거시 패키지를 Configuration Manager 현재 분기 응용 프로그램으로 변환할 수 있는 통합 도구입니다. 이와 같은 변환을 수행한 후에는 종속성, 요구 사항 규칙, 사용자 장치 선호도 등의 응용 프로그램 기능을 사용할 수 있습니다.
 
 자세한 내용은 [Package Conversion Manager](/sccm/apps/pcm/package-conversion-manager)를 참조하세요.
 
@@ -350,36 +341,38 @@ Version 1806 drops support for the following products:
 
 이러한 작업 순서는 OS 배포 또는 사용자 지정용일 수 있습니다. 작업 그룹 컴퓨터에도 지원됩니다.
 
+자세한 내용은 [작업 순서 및 네트워크 액세스 계정](/sccm/osd/plan-design/planning-considerations-for-automating-tasks#BKMK_TSNetworkAccessAccount)을 참조하세요.
+
 
 ### <a name="other-improvements-to-os-deployment"></a>기타 향상된 OS 배포
 
 #### <a name="mask-sensitive-data-stored-in-task-sequence-variables"></a>작업 순서 변수에 저장된 중요한 데이터 마스킹
- <!--1358330--> ***[업데이트됨]*** **작업 순서 변수 설정** 단계에서 새 옵션인 **이 값 표시 안 함**을 선택합니다. 
+ <!--1358330-->**작업 순서 변수 설정** 단계에서 새 옵션인 **이 값 표시 안 함**을 선택합니다. 
 
  자세한 내용은 [작업 순서 변수 설정](/sccm/osd/understand/task-sequence-steps#BKMK_SetTaskSequenceVariable)을 참조하세요. 
 
 #### <a name="mask-program-name-during-run-command-step-of-a-task-sequence"></a>작업 순서의 명령 실행 단계에서 프로그램 이름 마스크
- <!--1358493--> ***[업데이트됨]*** 잠재적으로 중요한 데이터가 표시되거나 기록되지 않도록 하려면 작업 순서 변수 **OSDDoNotLogCommand**를 구성합니다.  
+ <!--1358493--> 잠재적으로 중요한 데이터가 표시되거나 기록되지 않도록 하려면 작업 순서 변수 **OSDDoNotLogCommand**를 구성합니다.  
 
  자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables#OSDDoNotLogCommand)\(작업 순서 변수\)를 참조하세요. 
 
 #### <a name="task-sequence-variable-for-dism-parameters-when-installing-drivers"></a>드라이버를 설치할 때 DISM 매개 변수에 대한 작업 순서 변수
- <!--516679/2840016--> ***[업데이트됨]*** DISM에 대한 추가 명령줄 매개 변수를 지정하려면 새 작업 순서 변수 **OSDInstallDriversAdditionalOptions**를 사용합니다. 
+ <!--516679/2840016--> DISM에 대한 추가 명령줄 매개 변수를 지정하려면 새 작업 순서 변수 **OSDInstallDriversAdditionalOptions**를 사용합니다. 
 
  자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables#OSDInstallDriversAdditionalOptions)\(작업 순서 변수\)를 참조하세요. 
 
 #### <a name="option-to-use-full-disk-encryption"></a>전체 디스크 암호화 사용 옵션
- <!--SCCMDocs-pr issue 2671--> ***[업데이트됨]*** **BitLocker 사용** 및 **BitLocker 사전 프로비전** 단계 둘 다에 **전체 디스크 암호화 사용** 옵션이 포함되었습니다. 기본적으로 이러한 단계는 드라이브에서 사용된 공간을 암호화합니다. 이 기본 동작은 더 빠르고 효율적기 때문에 권장됩니다. 
+ <!--SCCMDocs-pr issue 2671--> **BitLocker 사용** 및 **BitLocker 사전 프로비전** 단계에 모두 **전체 디스크 암호화 사용** 옵션이 포함되었습니다. 기본적으로 이러한 단계는 드라이브에서 사용된 공간을 암호화합니다. 이 기본 동작은 더 빠르고 효율적기 때문에 권장됩니다. 
 
  자세한 내용은 [BitLocker 사용](/sccm/osd/understand/task-sequence-steps#BKMK_EnableBitLocker) 및 [BitLocker 사전 프로비전](/sccm/osd/understand/task-sequence-steps#BKMK_PreProvisionBitLocker)을 참조하세요. 
 
 #### <a name="client-provisioning-mode-isnt-enabled-with-windows-10-upgrade-compatibility-scan"></a>Windows 10 업그레이드 호환성 검사에서 클라이언트 프로비저닝 모드를 사용하도록 설정하지 않음
- <!--SCCMDocs-pr issue 2812--> ***[업데이트됨]*** 이제 **업그레이드를 시작하지 않고 Windows 설치 프로그램 호환성 검사 수행** 옵션을 사용하는 경우 **운영 체제 업그레이드** 작업 순서 단계에서 Configuration Manager 클라이언트를 프로비저닝 모드로 지정하지 않습니다.
+ <!--SCCMDocs-pr issue 2812--> 이제 **업그레이드를 시작하지 않고 Windows 설치 프로그램 호환성 검사 수행** 옵션을 사용하는 경우 **운영 체제 업그레이드** 작업 순서 단계에서 Configuration Manager 클라이언트를 프로비저닝 모드로 지정하지 않습니다.
 
  자세한 내용은 [운영 체제 업그레이드](/sccm/osd/understand/task-sequence-steps#BKMK_UpgradeOS)를 참조하세요.
 
 #### <a name="revised-documentation-for-task-sequence-variables"></a>작업 순서 변수에 대한 설명서 수정
- ***[업데이트됨]*** 작업 순서 변수 이해를 위한 다음 두 개의 새 문서가 제공됩니다.  
+ 이제 작업 순서 변수 이해를 위한 다음 두 개의 새 문서가 제공됩니다.  
 
  - [작업 순서 변수를 사용하는 방법](/sccm/osd/understand/using-task-sequence-variables)은 다양한 변수 형식, 변수를 설정하는 방법 및 변수에 액세스하는 방법을 설명하는 새 문서입니다.  
 
@@ -394,8 +387,7 @@ Version 1806 drops support for the following products:
 
 
 ### <a name="software-center-infrastructure-improvements"></a>소프트웨어 센터 인프라 개선 사항
-<!--1358309-->
- ***[업데이트됨]*** 소프트웨어 센터에 사용자가 사용할 수 있는 응용 프로그램을 표시하는 데 더 이상 응용 프로그램 카탈로그 역할이 필요하지 않습니다. 이 변경은 사용자에게 응용 프로그램을 전달하기 위해 필요한 서버 인프라를 줄일 수 있습니다. 소프트웨어 센터는 [경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups#management-points)에 할당하여 대규모 환경의 크기 조정을 더 잘하도록 도움을 주는 이 정보를 얻으려면 관리 지점에 의존합니다.
+<!--1358309--> 소프트웨어 센터에 사용자가 사용할 수 있는 응용 프로그램을 표시하는 데 더 이상 응용 프로그램 카탈로그 역할이 필요하지 않습니다. 이 변경은 사용자에게 응용 프로그램을 전달하기 위해 필요한 서버 인프라를 줄일 수 있습니다. 소프트웨어 센터는 [경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups#management-points)에 할당하여 대규모 환경의 크기 조정을 더 잘하도록 도움을 주는 이 정보를 얻으려면 관리 지점에 의존합니다.
 
 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요.  
 

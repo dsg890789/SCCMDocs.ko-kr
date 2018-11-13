@@ -10,12 +10,12 @@ ms.assetid: 6e4964c5-43cb-4372-9a89-b62ae6a4775c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e0051b00f9c9540291db94c79a81c600c87ad59c
-ms.sourcegitcommit: 4f05517f7b284696a492a1b184cc5f25c5cda5e6
+ms.openlocfilehash: e88d40317fe0c1385d78ab7b5919f0f766254598
+ms.sourcegitcommit: 303d826f45c8fd9a05d8883afc1ca645e56bd576
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48891200"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51269215"
 ---
 # <a name="use-the-service-connection-tool-for-system-center-configuration-manager"></a>System Center Configuration Manager의 서비스 연결 도구 사용
 
@@ -84,7 +84,7 @@ ms.locfileid: "48891200"
 
 2.  **연결**: 이 단계에서는 사용 데이터를 업로드하고 업데이트를 다운로드할 수 있도록 인터넷에 연결하는 원격 컴퓨터에서 도구를 실행합니다.  
 
-3.  **가져오기**: 이 단계는 서비스 연결 지점을 호스트하는 컴퓨터에서 실행합니다. 도구를 실행하면 다운로드를 가져오고 사이트에 추가하여 Configuration Manager 콘솔에서 업데이트를 보고 설치할 수 있습니다.  
+3.  **가져오기**: 이 단계는 서비스 연결 지점을 호스트하는 컴퓨터에서 실행합니다. 도구를 실행하면 다운로드한 업데이트를 가져와서 사이트에 추가하므로 Configuration Manager 콘솔에서 해당 업데이트를 보고 설치할 수 있습니다.  
 
 버전1606부터, Microsoft에 연결할 때 한 번에 여러 .cab 파일을 업로드하고(각기 다른 계층 구조에서) 프록시 서버 및 프록시 서버의 사용자를 지정할 수 있습니다.   
 

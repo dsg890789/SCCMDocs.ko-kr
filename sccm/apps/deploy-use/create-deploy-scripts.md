@@ -10,19 +10,18 @@ ms.assetid: cc230ff4-7056-4339-a0a6-6a44cdbb2857
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: fcf3bc335efc4c7436842b29d30c67c118ceb05d
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 4435802ad67857ad9f79168f96aa046eae8f7097
+ms.sourcegitcommit: 471cf13bc1ff7543c3d32465df9eecff9aaaa5be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32339029"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50753652"
 ---
 # <a name="create-and-run-powershell-scripts-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-<!--1236459-->
-System Center Configuration Manager가 PowerShell 스크립트를 실행하는 기능과 통합되었습니다. Powershell은 정교하고 자동화된 스크립트를 만들어 더 큰 커뮤니티에서 이해하고 공유할 수 있는 이점이 있습니다. 스크립트는 소프트웨어를 관리하는 사용자 지정 도구 빌드를 간소화하고 일상적인 작업을 빠르게 수행하므로 더 쉽고 일관되게 대형 작업을 수행할 수 있습니다.  
+<!--1236459--> System Center Configuration Manager가 Powershell 스크립트를 실행하는 기능과 통합되었습니다. Powershell은 정교하고 자동화된 스크립트를 만들어 더 큰 커뮤니티에서 이해하고 공유할 수 있는 이점이 있습니다. 스크립트는 소프트웨어를 관리하는 사용자 지정 도구 빌드를 간소화하고 일상적인 작업을 빠르게 수행하므로 더 쉽고 일관되게 대형 작업을 수행할 수 있습니다.  
 
 > [!TIP]  
 > 이 기능은 버전 1706에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 소개되었습니다. 버전 1802 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.  
@@ -95,7 +94,7 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 다음과 같�
 1. Configuration Manager 콘솔에서 **관리**를 클릭합니다.
 2. **관리** 작업 영역에서 **사이트 구성**을 확장하고 **사이트**를 클릭합니다.
 3. 사이트 목록에서 사이트를 선택한 후 **홈** 탭의 **사이트** 그룹에서 **계층 설정**을 클릭합니다.
-4. **계층 구조 설정 속성** 대화 상자의 **일반** 탭에서 **스크립트 작성자가 스크립트를 승인하도록 허용 안 함** 확인란을 선택 취소합니다.
+4. **계층 구조 설정 속성** 대화 상자의 **일반** 탭에서 **스크립트 작성자에는 추가 스크립트 승인자가 필요함** 확인란을 선택 취소합니다.
 
 >[!IMPORTANT]
 >모범 사례에서는 스크립트 작성자가 고유한 스크립트를 승인하도록 허용하지 않아야 합니다. 랩 설정에서만 허용해야 합니다. 프로덕션 환경에서 이 설정을 변경할 때 발생할 수 있는 잠재적인 영향을 신중하게 고려하세요.

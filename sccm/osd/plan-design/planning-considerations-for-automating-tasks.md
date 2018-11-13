@@ -2,7 +2,7 @@
 title: 작업 자동화 계획
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 작업을 자동화하는 작업 순서를 작성하기 전에 계획을 세웁니다.
-ms.date: 08/17/2018
+ms.date: 10/29/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: fc497a8a-3c54-4529-8403-6f6171a21c64
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 1ea1b104dfbdf23a080bc71da94b88cdcad31fa1
-ms.sourcegitcommit: be8c0182db9ef55a948269fcbad7c0f34fd871eb
+ms.openlocfilehash: 608b947e75ff29cf9653b2a12497918846556f4d
+ms.sourcegitcommit: 8791bb9be477fe6a029e8a7a76e2ca310acd92e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42755951"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50411292"
 ---
 # <a name="planning-considerations-for-automating-tasks-in-configuration-manager"></a>Configuration Manager에서 작업을 자동화하기 위한 계획 고려 사항
 
@@ -236,18 +236,42 @@ ms.locfileid: "42755951"
 
 ##  <a name="BKMK_TSNetworkAccessAccount"></a> 작업 순서와 네트워크 액세스 계정  
 
- 로컬 시스템 계정에서만 작업 순서를 실행할 수 있지만 다음과 같은 경우에는 [네트워크 액세스 계정](/sccm/core/plan-design/hierarchy/accounts#network-access)을 구성해야 합니다.  
+> [!Important]  
+> 버전 1806부터 일부 OS 배포 시나리오에서는 네트워크 액세스 계정을 사용할 필요가 없습니다. 자세한 내용은 [고급 HTTP](#enhanced-http)를 참조하세요.
 
- - 작업 순서가 배포 지점에서 Configuration Manager 콘텐츠에 액세스하려고 시도하는 경우. 네트워크 액세스 계정을 올바로 구성하세요. 그렇지 않으면, 작업 순서가 실패합니다.   
+로컬 시스템 계정에서만 작업 순서를 실행할 수 있지만 다음과 같은 경우에는 [네트워크 액세스 계정](/sccm/core/plan-design/hierarchy/accounts#network-access-account)을 구성해야 합니다.  
 
- - 부팅 이미지를 사용하여 OS 배포를 시작하는 경우. 이 경우 Configuration Manager는 전체 OS가 아닌 Windows PE 환경을 사용합니다. Windows PE 환경은 어떤 도메인에도 속하지 않는 자동으로 생성된 무작위 이름을 사용합니다. 네트워크 액세스 계정을 올바로 구성하지 않으면, 컴퓨터에서 작업 순서에 필요한 콘텐츠를 액세스할 수 없습니다.  
+- 작업 순서가 배포 지점에서 Configuration Manager 콘텐츠에 액세스하려고 시도하는 경우. 네트워크 액세스 계정을 올바로 구성하세요. 그렇지 않으면, 작업 순서가 실패합니다.   
+
+- 부팅 이미지를 사용하여 OS 배포를 시작하는 경우. 이 경우 Configuration Manager는 전체 OS가 아닌 Windows PE 환경을 사용합니다. Windows PE 환경은 어떤 도메인에도 속하지 않는 자동으로 생성된 무작위 이름을 사용합니다. 네트워크 액세스 계정을 올바로 구성하지 않으면, 컴퓨터에서 작업 순서에 필요한 콘텐츠를 액세스할 수 없습니다.  
+
+> [!NOTE]  
+>  네트워크 액세스 계정은 프로그램을 실행하거나 응용 프로그램을 설치하거나 업데이트를 설치하거나 작업 순서를 실행하기 위한 보안 컨텍스트로 절대 사용되지 않습니다. 네트워크 액세스 계정은 네트워크에 있는 연결된 리소스에 액세스하는 데에만 사용합니다.  
+
+네트워크 액세스 계정에 대한 자세한 내용은 [네트워크 액세스 계정](/sccm/core/plan-design/hierarchy/accounts#network-access-account)을 참조하세요.  
 
 
- > [!NOTE]  
- >  네트워크 액세스 계정은 프로그램을 실행하거나 응용 프로그램을 설치하거나 업데이트를 설치하거나 작업 순서를 실행하기 위한 보안 컨텍스트로 절대 사용되지 않습니다. 네트워크 액세스 계정은 네트워크에 있는 연결된 리소스에 액세스하는 데에만 사용합니다.  
+### <a name="enhanced-http"></a>고급 HTTP
+<!--1358278-->
 
+버전 1806부터 **고급 HTTP**를 사용하면 다음 시나리오에서 네트워크 액세스 계정으로 배포 지점에서 콘텐츠를 다운로드할 필요가 없습니다.
+  
+- 부팅 미디어 또는 PXE에서 실행하는 작업 순서  
+- 소프트웨어 센터에서 실행하는 작업 순서  
 
- 네트워크 액세스 계정에 대한 자세한 내용은 [네트워크 액세스 계정](/sccm/core/plan-design/hierarchy/manage-accounts-to-access-content#bkmk_NAA)을 참조하세요.  
+이러한 작업 순서는 OS 배포 또는 사용자 지정용일 수 있습니다. 작업 그룹 컴퓨터에도 지원됩니다.
+ 
+자세한 내용은 [고급 HTTP](/sccm/core/plan-design/hierarchy/enhanced-http)를 참조하세요.  
+
+> [!Note]  
+> 다음 OS 배포 시나리오에서는 여전히 네트워크 액세스 계정을 사용해야 합니다.
+>  
+> - 작업 순서 [배포 옵션](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#BKMK_DeployTS), **실행 중인 작업 순서에 따라 필요한 경우 배포 지점에서 직접 콘텐츠 액세스**   
+> - [상태 저장소 요청](/sccm/osd/understand/task-sequence-steps#BKMK_RequestStateStore) 단계 옵션, **컴퓨터 계정이 상태 저장소에 연결하지 못하는 경우 네트워크 액세스 계정 사용** 
+> - 신뢰할 수 없는 도메인과 연결하거나 Active Directory 포리스트 간에 연결하는 경우 
+> - [OS 이미지 적용](/sccm/osd/understand/task-sequence-steps#BKMK_ApplyOperatingSystemImage) 단계 옵션, **배포 지점에서 직접 콘텐츠 액세스** 
+> - **다른 프로그램을 먼저 실행**하는 [고급 설정](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#bkmk_prop-advanced) 작업 순서 
+> - [멀티캐스트](/sccm/osd/deploy-use/use-multicast-to-deploy-windows-over-the-network)  
 
 
 

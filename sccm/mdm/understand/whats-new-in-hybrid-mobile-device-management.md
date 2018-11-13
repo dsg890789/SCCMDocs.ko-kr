@@ -2,7 +2,7 @@
 title: 하이브리드 MDM의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 장치 관리 기능에 대해 알아봅니다.
-ms.date: 10/18/2018
+ms.date: 10/31/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 7b127cee-61f1-4681-9760-caebed36ddf5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3082bb6d6cc96be8ba7a56e1e2bb5a6bcd32bc9b
-ms.sourcegitcommit: 19fc4f27667d51502fc9d7d02d164f2837d65dae
+ms.openlocfilehash: f51e54ede8df8c18ca8614f6a75c82c53bb7916c
+ms.sourcegitcommit: 8791bb9be477fe6a029e8a7a76e2ca310acd92e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49461276"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50411530"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 장치 관리의 새로운 기능
 
@@ -51,14 +51,23 @@ ms.locfileid: "49461276"
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
+#### <a name="updates-for-application-transport-security"></a>응용 프로그램 전송 보안 업데이트 
+<!--748318--> Microsoft Intune은 TLS(전송 계층 보안) 1.2 이상을 지원하여 동급 최고의 암호화 기능을 제공하고, Intune의 보안을 기본적으로 강화하며, Microsoft Office 365와 같은 다른 Microsoft 서비스와 호환될 수 있도록 합니다. 이 요구 사항을 충족하기 위해 iOS 및 macOS 회사 포털은 Apple의 업데이트된 ATS(응용 프로그램 전송 보안) 요구 사항(TLS 1.2 이상도 필요)을 적용합니다. ATS는 HTTPS를 통한 모든 앱 통신에 더 엄격한 보안을 적용하는 데 사용됩니다. 이 변경 사항은 iOS 및 macOS 회사 포털 앱을 사용하는 Intune 고객에게 영향을 줍니다. 자세한 내용은 [Intune moving to TLS 1.2 for encryption](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)(Intune이 암호화를 위해 TLS 1.2로 전환)을 참조하세요.
+
+#### <a name="remove-an-email-profile-from-a-device-even-when-theres-only-one-email-profile"></a>하나의 이메일 프로필만 있는 경우에도 장치에서 이메일 프로필 제거 
+<!--1818139--> 이전에는 장치에 있는 유일한 이메일 프로필을 제거할 수 없었습니다. 이 업데이트를 통해 이 동작이 변경됩니다. 이제 장치에 있는 유일한 이메일 프로필인 경우에도 이메일 프로필을 제거할 수 있습니다. 
+
+#### <a name="remove-pkcs-and-scep-certificates-from-your-devices"></a>장치에서 PKCS 및 SCEP 인증서 제거 
+<!--3218390--> 일부 시나리오에서는 그룹에서 정책을 제거하거나, 구성 또는 규정 준수 배포를 삭제하거나, 관리자가 기존 SCEP 및 PKCS 프로필을 업데이트하는 경우에도 PKCS 및 SCEP 인증서가 장치에 남아 있습니다. 
+
+이 업데이트를 통해 이 동작이 변경됩니다. PKCS 및 SCEP 인증서가 장치에서 제거되는 시나리오와 이러한 인증서가 장치에 남아 있는 시나리오가 있습니다. 
+
 #### <a name="access-to-key-profile-properties-using-the-company-portal-app"></a>회사 포털 앱을 사용하여 주요 프로필 속성 액세스
 <!--772203-->  
-
 최종 사용자는 이제 회사 포털 앱에서 암호 재설정과 같은 주요 계정 속성 및 작업에 액세스할 수 있습니다. 
 
 #### <a name="pin-prompt-when-you-change-fingerprints-or-face-id-on-an-ios-device"></a>iOS 장치에서 지문 또는 얼굴 ID를 변경할 때 표시되는 PIN 프롬프트  
 <!--2637704-->  
-
 이제 iOS 장치에서 생체 인식 내용을 변경한 후 PIN을 입력하라는 메시지가 사용자에게 표시됩니다. 여기에는 등록된 지문 또는 얼굴 ID의 변경이 포함됩니다. 프롬프트의 타이밍은 ‘다음 시간 이후에 액세스 요구 사항 다시 확인:’ 시간 제한의 구성 방법에 따라 다릅니다.  PIN이 설정되지 않은 경우에는 설정하라는 메시지가 사용자에게 표시됩니다.  
 
 이 기능은 iOS에만 제공되고 iOS용 Intune 앱 SDK, 버전 8.1.1 이상을 통합하는 응용 프로그램의 참여가 필요합니다. 대상 응용 프로그램에 동작이 적용될 수 있도록 SDK의 통합이 필요합니다. 이 통합은 롤링 기반으로 특정 응용 프로그램 팀에서 수행합니다. 참여하는 일부 앱에는 WXP, Outlook, Managed Browser 및 Yammer가 포함됩니다.
@@ -408,23 +417,23 @@ Windows 10 버전 1607 이상의 최종 사용자에게 Microsoft Store에 있�
   <!--1029830-->   
 
 - **회사 포털에서 장치 설정 워크플로 개선**     
-  Android용 회사 포털 앱에서 장치 설정 워크플로를 개선했습니다. 언어는 귀사를 위해 더욱 친숙하고 구체적으로 변경되었으며, 가능한 한 화면을 합쳤습니다. [앱 UI의 새로운 기능](https://docs.microsoft.com/intune/whats-new-app-ui#week-of-october-2-2017) 페이지에서 이러한 개선 사항을 확인할 수 있습니다.
+  Android용 회사 포털 앱에서 장치 설정 워크플로를 개선했습니다. 언어는 귀사를 위해 더욱 친숙하고 구체적으로 변경되었으며, 가능한 한 화면을 합쳤습니다. [앱 UI의 새로운 기능](https://docs.microsoft.com/intune/whats-new-app-ui#week-of-october-2-2017) 페이지에서 이러한 개선 사항을 확인할 수 있습니다.
   <!--1490692-->     
 
 - **Android 장치에서 연락처 액세스 요청에 대한 지침 개선**     
-  최종 사용자가 Android용 회사 포털 앱을 사용하려면 연락처 권한을 수락해야 합니다. 최종 사용자가 이 액세스를 거절하는 경우 조건부 액세스 권한을 부여한다고 경고하는 앱 내 알림이 표시됩니다. 
+  최종 사용자가 Android용 회사 포털 앱을 사용하려면 연락처 권한을 수락해야 합니다. 최종 사용자가 이 액세스를 거절하는 경우 조건부 액세스 권한을 부여한다고 경고하는 앱 내 알림이 표시됩니다. 
   <!--1484985-->     
 
 - **안전한 Android 시작을 위한 수정 사항**     
-  Android 장치를 사용하는 최종 사용자는 회사 포털 앱에서 비준수 이유를 탭할 수 있습니다. 이 경우 가능하면 설정 앱의 올바른 위치로 바로 이동하여 문제를 해결합니다. 
+  Android 장치를 사용하는 최종 사용자는 회사 포털 앱에서 비준수 이유를 탭할 수 있습니다. 이 경우 가능하면 설정 앱의 올바른 위치로 바로 이동하여 문제를 해결합니다. 
   <!--1490712-->    
 
 - **Android Oreo용 회사 포털 앱의 최종 사용자를 위한 추가 푸시 알림**    
-  최종 사용자에게 Intune 서비스의 정책 검색처럼 Android Oreo용 회사 포털 앱이 백그라운드 작업을 수행하는 시기를 알리는 추가 알림이 표시됩니다. 이 알림을 통해 회사 포털이 장치에서 관리 작업을 수행하는 시기에 대해 최종 사용자에 대한 투명성이 증가됩니다. 이러한 기능 향상은 Android Oreo용 회사 포털 앱에 대한 전반적인 [회사 포털 UI 최적화](https://blogs.technet.microsoft.com/intunesupport/2017/08/21/android-8-0-o-behaviour-changes-and-microsoft-intune)의 일부입니다. 
+  최종 사용자에게 Intune 서비스의 정책 검색처럼 Android Oreo용 회사 포털 앱이 백그라운드 작업을 수행하는 시기를 알리는 추가 알림이 표시됩니다. 이 알림을 통해 회사 포털이 장치에서 관리 작업을 수행하는 시기에 대해 최종 사용자에 대한 투명성이 증가됩니다. 이러한 기능 향상은 Android Oreo용 회사 포털 앱에 대한 전반적인 [회사 포털 UI 최적화](https://blogs.technet.microsoft.com/intunesupport/2017/08/21/android-8-0-o-behaviour-changes-and-microsoft-intune)의 일부입니다. 
   <!--1475932 -->     
 
 - **회사 프로필을 포함한 Android용 회사 포털 앱에 대한 새 동작**     
-  회사 프로필을 포함한 Android for Work 장치를 등록하면 장치에서 관리 작업을 수행하는 것은 회사 프로필의 회사 포털 앱입니다. 
+  회사 프로필을 포함한 Android for Work 장치를 등록하면 장치에서 관리 작업을 수행하는 것은 회사 프로필의 회사 포털 앱입니다. 
 
   개인 프로필에서 MAM 기반 앱을 사용하는 경우가 아니면 Android용 회사 포털 앱을 더 이상 사용할 수 없습니다. 회사 프로필 환경을 개선하기 위해 Intune은 회사 프로필을 등록한 후 개인 회사 포털 앱을 자동으로 숨깁니다.
 
@@ -436,7 +445,7 @@ Windows 10 버전 1607 이상의 최종 사용자에게 Microsoft Store에 있�
   <!--1428681-->    
 
 - **지원되지 않는 Samsung Knox 장치 등록 차단**   
-  회사 포털 앱은 지원되는 Samsung Knox 장치만 등록하려고 합니다. MDM 등록을 방해하는 KNOX 정품 인증 오류를 방지하기 위해 [Samsung이 공개한 장치 목록](https://www.samsungknox.com/knox-supported-devices/knox-workspace)에 나타나는 장치만 등록이 시도됩니다. Samsung 장치에는 다른 장치에는 없는 KNOX를 지원하는 모델 번호가 있을 수 있습니다. 구입 및 배포 전에 장치 대리점에 Knox 호환 여부를 확인하세요. 검증된 장치 목록은 [Android 및 Samsung KNOX 표준 정책 설정](https://docs.microsoft.com/intune-classic/deploy-use/android-policy-settings-in-microsoft-intune#supported-samsung-knox-standard-devices)을 참조하세요.
+  회사 포털 앱은 지원되는 Samsung Knox 장치만 등록하려고 합니다. MDM 등록을 방해하는 KNOX 정품 인증 오류를 방지하기 위해 [Samsung이 공개한 장치 목록](https://www.samsungknox.com/knox-supported-devices/knox-workspace)에 나타나는 장치만 등록이 시도됩니다. Samsung 장치에는 다른 장치에는 없는 KNOX를 지원하는 모델 번호가 있을 수 있습니다. 구입 및 배포 전에 장치 대리점에 Knox 호환 여부를 확인하세요. 검증된 장치 목록은 [Android 및 Samsung KNOX 표준 정책 설정](https://docs.microsoft.com/intune-classic/deploy-use/android-policy-settings-in-microsoft-intune#supported-samsung-knox-standard-devices)을 참조하세요.
   <!-- 1490695 -->     
 
 - **Android 4.3 이하에 대한 지원 종료**     
@@ -458,7 +467,7 @@ Windows 10 버전 1607 이상의 최종 사용자에게 Microsoft Store에 있�
     <!-- 1132468 -->     
 
 - **iOS에 대해 표시되는 장치 정보를 최종 사용자에게 알리기**   
-    iOS용 회사 포털 앱의 [장치 세부 정보] 화면에 **소유권 유형**이 추가되었습니다. 이 정보를 통해 사용자는 Intune 최종 사용자 문서에서 바로 개인 정보에 대한 자세한 내용을 찾을 수 있습니다. [정보] 화면에서도 이 정보를 찾을 수 있습니다. 
+    iOS용 회사 포털 앱의 [장치 세부 정보] 화면에   **소유권 유형**을 추가했습니다. 이 정보를 통해 사용자는 Intune 최종 사용자 문서에서 바로 개인 정보에 대한 자세한 내용을 찾을 수 있습니다. [정보] 화면에서도 이 정보를 찾을 수 있습니다. 
     <!--739894-->    
 
 - **Android용 회사 포털 앱의 구문을 쉽게 이해**   
@@ -574,33 +583,16 @@ Office 365 모바일 앱이 iOS 10 이상에서 지원되므로 OS나 장치를 
 조직에 영향을 받는 장치나 사용자가 있는지 확인합니다. Azure Portal의 Intune에서 **장치** > **모든 장치**로 이동하고 **OS**를 기준으로 필터링합니다.  **열**을 클릭하여 OS 버전과 같은 세부 정보를 표시합니다. 사용자에게 9월 전에 장치를 지원되는 OS 버전으로 업그레이드하도록 요청합니다.
 
 
-### <a name="plan-for-change-intune-moving-to-tls-12"></a>변경 계획: Intune이 TLS 1.2로 전환
-
-2018년 10월 31일부터 Intune에서 동급 최고의 암호화를 제공하고, 기본적으로 더 안전한 서비스를 지원하고, Microsoft Office 365 같은 다른 Microsoft 서비스에 맞추기 위해 TLS(전송 계층 보안) 프로토콜 버전 1.2를 지원합니다. Office는 이 변경 사항을 MC128929에서 전달했습니다.
-
-#### <a name="how-does-this-change-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
-
-2018년 10월 31일부터 Intune에서는 TLS 프로토콜 버전 1.0 또는 1.1을 더 이상 지원하지 않습니다. 클라이언트-서버와 브라우저-서버의 어느 조합이든 Intune에 문제 없이 연결하려면 TLS 버전 1.2를 사용해야 합니다. 이 변경 사항은 Intune에서 지원하지 않지만 여전히 Intune을 통해 정책을 수신하고 TLS 버전 1.2를 사용할 수 없는 최종 사용자 장치에 영향을 미칩니다. 이러한 장치에는 Android 4.3 이전 버전을 실행하는 장치도 포함됩니다. 영향을 받는 장치 및 브라우저의 목록은 아래 링크를 참조하세요.
-
-2018년 10월 31일 이후 이전 TLS 버전 사용과 관련된 문제가 발생하면 해결의 일환으로 TLS 1.2로 업데이트하거나 TLS 1.2를 지원하는 장치로 업데이트합니다.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대비하려면 어떻게 해야 하나요?
-
-사전에 환경에서 TLS 1.0 및 1.1 종속성을 제거하고 가능한 경우 운영 체제 수준에서 TLS 1.0 및 1.1을 사용하지 않도록 설정하는 것이 좋습니다. 지금 바로 TLS 1.2로의 마이그레이션 계획을 시작하세요. 현재 Intune에서 지원하지 않지만 여전히 정책을 수신할 수 있고 TLS 버전 1.2를 사용하여 통신할 수 없는 장치 목록은 아래 지원 블로그 게시물을 확인하세요. 해당 최종 사용자에게 회사 리소스에 액세스할 수 없게 된다고 알려야 합니다.
-
-자세한 내용은 [Intune moving to TLS 1.2 for encryption](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)(Intune이 암호화를 위해 TLS 1.2로 전환)을 참조하세요.
-
-
 ### <a name="company-portal-for-windows-81-and-windows-phone-81-moving-to-sustaining-mode"></a>Windows 8.1 및 Windows Phone 8.1용 회사 포털이 지속 모드로 전환 
 <!--1428681-->
 *2017년 10월 6일*   
  
-2017년 10월부터 Windows 8.1 및 Windows Phone 8.1용 회사 포털 앱이 지속 모드로 전환됩니다. 이 모드는 앱과 기존 시나리오(예: 등록 및 준수)가 이러한 플랫폼에 대해 계속 지원됨을 의미합니다. 이러한 앱은 Microsoft Store와 같은 기존 릴리스 채널을 통해 계속 다운로드할 수 있습니다. 
+2017년 10월부터 Windows 8.1 및 Windows Phone 8.1용 회사 포털 앱이 지속 모드로 전환됩니다. 이 모드는 앱과 기존 시나리오(예: 등록 및 준수)가 이러한 플랫폼에 대해 계속 지원됨을 의미합니다. 이러한 앱은 Microsoft Store와 같은 기존 릴리스 채널을 통해 계속 다운로드할 수 있습니다. 
 
-지속 모드에서 이러한 앱은 중요 보안 업데이트만 받게 됩니다. 이러한 앱에 대한 추가 업데이트나 기능은 릴리스되지 않습니다. 새로운 기능을 보려면 장치를 Windows 10 또는 Windows 10 Mobile로 업데이트하는 것이 좋습니다. 
+지속 모드에서 이러한 앱은 중요 보안 업데이트만 받게 됩니다. 이러한 앱에 대한 추가 업데이트나 기능은 릴리스되지 않습니다. 새로운 기능을 보려면 장치를 Windows 10 또는 Windows 10 Mobile로 업데이트하는 것이 좋습니다. 
 
 ### <a name="end-of-support-for-ios-80"></a>iOS 8.0에 대한 지원 종료 
-<!---1164477---> iOS용 회사 포털 앱과 관리되는 앱에서 회사 리소스에 액세스하려면 iOS 9.0 이상이 필요합니다. 9월 전에 업데이트되지 않은 장치는 회사 포털이나 이러한 앱에 더 이상 액세스할 수 없습니다. 
+<!---1164477---> iOS용 회사 포털 앱과 관리되는 앱에서 회사 리소스에 액세스하려면 iOS 9.0 이상이 필요합니다. 9월 전에 업데이트되지 않은 장치는 회사 포털이나 이러한 앱에 더 이상 액세스할 수 없습니다. 
 
 ### <a name="platform-support-reminder-windows-phone-81-mainstream-support-ended-july-11-2017"></a>플랫폼 지원 알림: Windows Phone 8.1 기본 지원은 2017년 7월 11일에 종료됩니다.
 <!-- 1327781 -->

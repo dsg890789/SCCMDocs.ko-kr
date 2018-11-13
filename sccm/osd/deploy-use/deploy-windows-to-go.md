@@ -1,5 +1,5 @@
 ---
-title: Windows to Go 배포
+title: Windows To Go 배포
 titleSuffix: Configuration Manager
 description: 외장형 드라이브에서 부팅하는 Windows To Go 작업 영역을 만들기 위해 System Center Configuration Manager에서 Windows To Go를 프로비전하는 방법을 알아봅니다.
 ms.date: 10/06/2016
@@ -10,14 +10,14 @@ ms.assetid: 8eed50f5-80a4-422e-8aa6-a7ccb2171475
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 12b7a28ff5ea0e2e1870c0c37edd8e056930b09f
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: afc76b59d594c6b8f52062add480874ba5c5686d
+ms.sourcegitcommit: 8791bb9be477fe6a029e8a7a76e2ca310acd92e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32351890"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50411496"
 ---
-# <a name="deploy-windows-to-go-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows to Go 배포
+# <a name="deploy-windows-to-go-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows To Go 배포
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -151,7 +151,7 @@ ms.locfileid: "32351890"
     -   **배포 지점**: 부팅 이미지를 호스팅하는 배포 지점을 지정합니다. 마법사는 배포 지점에서 부팅 이미지를 검색하여 미디어에 기록합니다.  
 
         > [!NOTE]  
-        >  관리자에게 배포 지점에서 부팅 이미지 콘텐츠에 대한 **읽기** 권한이 있어야 합니다. 자세한 내용은 [콘텐츠에 액세스하기 위한 계정 관리](../../core/plan-design/hierarchy/manage-accounts-to-access-content.md)를 참조하세요.  
+        >  관리자에게 배포 지점에서 부팅 이미지 콘텐츠에 대한 **읽기** 권한이 있어야 합니다. 자세한 내용은 [패키지 액세스 계정](/sccm/core/plan-design/hierarchy/accounts#package-access-account)을 참조하세요.  
 
     -   이 마법사의 **미디어 관리** 페이지에서 **사이트 기반 미디어** 를 선택한 경우 **관리 지점** 상자의 기본 사이트에서 관리 지점을 지정합니다.  
 
@@ -166,7 +166,7 @@ ms.locfileid: "32351890"
     -   **배포 지점**: 운영 체제 이미지 패키지를 호스팅하는 배포 지점을 지정합니다. 마법사는 배포 지점에서 운영 체제 이미지를 검색하여 미디어에 기록합니다.  
 
         > [!NOTE]  
-        >  관리자에게 배포 지점에서 운영 체제 이미지 콘텐츠에 대한 **읽기** 권한이 있어야 합니다. 자세한 내용은 [콘텐츠에 액세스하기 위한 계정 관리](../../core/plan-design/hierarchy/manage-accounts-to-access-content.md)를 참조하세요.  
+        >  관리자에게 배포 지점에서 운영 체제 이미지 콘텐츠에 대한 **읽기** 권한이 있어야 합니다. 자세한 내용은 [패키지 액세스 계정](/sccm/core/plan-design/hierarchy/accounts#package-access-account)을 참조하세요.  
 
 11. **응용 프로그램 선택** 페이지에서 미디어 파일에 포함할 응용 프로그램 콘텐츠를 선택한 후에 **다음**을 클릭합니다.  
 
