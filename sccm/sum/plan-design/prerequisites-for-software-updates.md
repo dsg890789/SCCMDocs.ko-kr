@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: fdf05118-162a-411e-b72e-386b9dc9a5e1
-ms.openlocfilehash: 1c5377096ef67057f3f38bb71fb611b7993ecb6b
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: ffe1546e3d7561a0bbda787ef6b1aaeac6e8d2e0
+ms.sourcegitcommit: 2504617dc4db90e205327d06cab32f050e88dbf2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32353109"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51505128"
 ---
 # <a name="prerequisites-for-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 업데이트에 대한 필수 조건
 
@@ -33,8 +33,10 @@ ms.locfileid: "32353109"
  WSUS(Windows Server Update Services)는 클라이언트에서 소프트웨어 업데이트 동기화 및 소프트웨어 업데이트 적용 가능 여부 검사를 수행하는 데 필요합니다. WSUS 서버는 소프트웨어 업데이트 지점 역할을 만들기 전에 설치해야 합니다. 소프트웨어 업데이트 지점에 대해 다음 버전의 WSUS가 지원됩니다.  
 
 -   WSUS 10.0(Windows Server 2016의 역할)
--   WSUS 6.2 및 6.3(Windows Server 2012 및 Windows Server 2012 R2의 역할)  
--   WSUS 3.2(Windows Server 2008 R2의 역할)  
+-   WSUS 6.2 및 6.3(Windows Server 2012 및 Windows Server 2012 R2의 역할)
+
+>[!NOTE]
+>-   버전 1702부터 Windows Server 2008 R2는 소프트웨어 업데이트 지점 역할을 지원하지 않습니다. 자세한 내용은 [사이트 시스템 서버에 대해 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-site-system-servers#bkmk_2008r2sp1)를 참조하세요.  
 
 한 사이트에 여러 소프트웨어 업데이트 지점이 있는 경우 모두 동일한 버전의 WSUS를 실행해야 합니다.  
 

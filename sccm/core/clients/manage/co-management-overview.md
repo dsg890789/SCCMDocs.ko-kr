@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: d6bbc787-83a5-44b4-ad64-016e5da7413f
-ms.openlocfilehash: a99983583aa8c21f8a987f3e20550752e7b77ba4
-ms.sourcegitcommit: 83806460b6fd88a1d08a2c97f4d72b9e36e04102
+ms.openlocfilehash: 1791217e22e2bcc6d5fd2603abee3aaced816afe
+ms.sourcegitcommit: 1f8731ed8f0308cb2cb576722adb0821a366e9ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39495563"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223741"
 ---
 # <a name="co-management-for-windows-10-devices"></a>Windows 10 장치의 공동 관리    
 
@@ -72,7 +72,7 @@ ms.locfileid: "39495563"
 
  - Windows 10 장치는 Azure AD에 조인되어야 합니다. 이러한 장치는 다음 형식 중 하나일 수 있습니다.  
 
-     - [하이브리드 Azure AD 조인](https://docs.microsoft.com/azure/active-directory/device-management-hybrid-azuread-joined-devices-setup)(여기서 장치는 Azure AD와 온-프레미스 도메인 모두에 조인됨)  
+     - [하이브리드 Azure AD 조인](https://docs.microsoft.com/azure/active-directory/device-management-hybrid-azuread-joined-devices-setup), 여기서 디바이스가 온-프레미스 Active Directory에 조인되고 Azure Active Directory에 등록됩니다.
 
      - Azure AD 조인 전용. (이 유형은 "클라우드 도메인 조인"이라고도 함)<!--SCCMDocs issue 605-->
 
@@ -129,7 +129,7 @@ ms.locfileid: "39495563"
 #### <a name="resource-access-policies"></a>리소스 액세스 정책
 리소스 액세스 정책은 장치에 대한 VPN, Wi-Fi, 전자 메일 및 인증서 설정을 구성합니다. 자세한 내용은 [리소스 액세스 프로필 배포](https://docs.microsoft.com/intune/device-profiles)를 참조하세요.
 
-#### <a name="endpoint-protection"></a>Endpoint Protection
+#### <a name="endpoint-protection"></a>Endpoint Protection
 Configuration Manager 1802부터 Endpoint Protection 워크로드를 Intune으로 전환할 수 있습니다. 자세한 내용은 [Microsoft Intune용 Endpoint Protection](https://docs.microsoft.com/intune/endpoint-protection-windows-10)<!-- 1357365 --> 및 [Intune으로 전환될 수 있는 워크로드](/sccm/core/clients/manage/co-management-switch-workloads#Workloads-able-to-be-transitioned-to-Intune)를 참조하세요.
 
 #### <a name="device-configuration"></a>장치 구성

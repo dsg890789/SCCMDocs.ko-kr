@@ -10,12 +10,12 @@ ms.assetid: fab13949-371c-4a4c-978e-471db1e54966
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 82909cced6783f73608f155e64b7dd30b4087b06
-ms.sourcegitcommit: a52255da16c9f8b0b60a6c299a369347c7e01bef
+ms.openlocfilehash: d442955d62989d3bbc7b32e0aba122a0853a3f14
+ms.sourcegitcommit: 1f8731ed8f0308cb2cb576722adb0821a366e9ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49989164"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223673"
 ---
 # <a name="manage-operating-system-images-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 운영 체제 이미지 관리
 
@@ -35,9 +35,9 @@ Configuration Manager의 운영 체제 이미지는 WIM(Windows Imaging) 형식 
 
 -   **단점**  
 
-    -   운영 체제 설치를 완료한 후 앱 설치 및 기타 구성이 수행되기 때문에 운영 체제를 설치하는 데 더 많은 시간이 걸릴 수 있습니다.  
+    -   운영 체제 설치를 완료한 후 앱 설치 및 기타 구성이 수행되기 때문에 운영 체제를 설치하는 데 더 많은 시간이 걸릴 수 있습니다.
 
- **캡처된 이미지**  
+**캡처된 이미지**  
 
  사용자 지정 운영 체제 이미지를 만들려면 원하는 운영 체제로 참조 컴퓨터를 구축한 후 앱 설치, 설정 구성 등의 작업을 수행합니다. 그런 다음 참조 컴퓨터에서 운영 체제 이미지를 캡처하여 WIM 파일을 만듭니다. 참조 컴퓨터는 수동으로 만들거나 작업 순서를 사용하여 일부 또는 전체 만들기 단계를 자동화할 수 있습니다.   
 사용자 지정 운영 체제 이미지를 만드는 단계는 [운영 체제 이미지 사용자 지정](customize-operating-system-images.md)을 참조하세요.  
@@ -48,8 +48,9 @@ Configuration Manager의 운영 체제 이미지는 WIM(Windows Imaging) 형식 
 
 -   **단점**  
 
-    -   운영 체제 설치를 완료한 후 앱 설치 및 기타 구성이 수행되기 때문에 운영 체제를 설치하는 데 더 많은 시간이 걸릴 수 있습니다.  
-
+    -   이미지 크기가 기본 이미지보다 더 클 수 있습니다.
+    
+    -   애플리케이션 및 도구에 대한 업데이트가 필요할 경우 새 이미지를 만들어야 합니다.
 
 ##  <a name="BKMK_AddOSImages"></a> Configuration Manager에 운영 체제 이미지 추가  
  운영 체제 이미지를 사용하려면 먼저 Configuration Manager 사이트에 이미지를 추가해야 합니다. 사이트에 운영 체제 이미지를 추가하려면 다음 절차를 참조하세요.  
