@@ -10,12 +10,12 @@ ms.assetid: a44006eb-8650-49f6-94e1-18fa0ca959ee
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 91ebb0c35687b231a6f08b7bc92cccb83cf0e602
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 490e5a614a98633629df98abcd554b02cec1261a
+ms.sourcegitcommit: ae03ad403b1732a5a61dec981e3a3010a0f09188
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32344690"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "51860249"
 ---
 # <a name="install-and-assign-configuration-manager-windows-10-clients-using-azure-ad-for-authentication"></a>인증을 위해 Azure AD를 사용하여 Configuration Manager Windows 10 클라이언트 설치 및 할당
 
@@ -41,9 +41,7 @@ Azure AD 인증을 사용하여 Windows 10 장치에서 Configuration Manager �
 
 - 관리 지점 사이트 시스템 역할에 대한 [기존 필수 구성 요소](/sccm/core/plan-design/configs/site-and-site-system-prerequisites#bkmk_2012MPpreq) 외에 이 서버에 **ASP.NET 4.5**도 사용하도록 설정합니다. ASP.NET 4.5를 사용하도록 설정할 경우 자동으로 선택된 다른 모든 옵션을 포함합니다.  
 
-- HTTPS 모드에 대한 모든 관리 지점을 구성합니다. 자세한 내용은 [PKI 인증 요구 사항](/sccm/core/plan-design/network/pki-certificate-requirements) 및 [IIS를 실행하는 사이트 시스템용 웹 서버 인증서 배포](/sccm/core/plan-design/network/example-deployment-of-pki-certificates#BKMK_webserver2008_cm2012)를 참조하세요.  
-    - 클라우드 관리 게이트웨이를 사용하는 경우 클라우드 관리 게이트웨이에 대해 사용하도록 설정한 관리 지점에 대해서만 HTTPS를 구성해야 합니다.
-    - Azure AD 토큰 기반 인증을 사용하여 인트라넷에 클라이언트를 배포하는 경우 이러한 클라이언트가 연결할 수 있는 모든 관리 지점에서 HTTPS를 사용하도록 설정해야 합니다. 
+- 관리 지점에 HTTPS가 필요한지 여부를 확인하세요. 자세한 내용은 [HTTPS에 대한 관리 지점 설정](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#bkmk_mphttps)을 참조하세요.  
 
 - 인터넷 기반 클라이언트를 배포하려면 필요에 따라 [클라우드 관리 게이트웨이](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway)(CMG)를 설정합니다. Azure AD로 인증하는 온-프레미스 클라이언트의 경우 CMG는 필요 없습니다.  
 

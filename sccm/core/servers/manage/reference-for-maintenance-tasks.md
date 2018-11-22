@@ -10,12 +10,12 @@ ms.assetid: 68dc6acd-5848-47a4-b4c1-ffa40e47890b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5492382afdb523846fcdd40b68d498730073eb7e
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: f8450308f0719903bc4b3f74d6c2ab1ca5e17c59
+ms.sourcegitcommit: e0209e4549e9828eb74089313dbee323ece1fc2f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32342446"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51598617"
 ---
 # <a name="reference-for-maintenance-tasks-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 유지 관리 작업 참조
 
@@ -120,7 +120,7 @@ ms.locfileid: "32342446"
 
 **오래된 등록 장치 삭제**: 1602의 업데이트부터 이 작업은 기본적으로 사용하지 않도록 설정됩니다. 이 작업을 사용하면 지정된 시간 동안 사이트에 아무 정보도 보고하지 않은 모바일 장치의 오래된 데이터를 사이트 데이터베이스에서 삭제할 수 있습니다.
 
-이 작업은 Microsoft Intune(하이브리드)을 사용하여 등록되었거나 온-프레미스 모바일 장치 관리에서 Configuration Manager에 등록된 장치에 적용됩니다. Configuration Manager 또는 Intune을 사용하여 등록된 장치의 운영 체제에 대한 자세한 내용은 [Supported operating systems for clients and devices for System Center Configuration Manager](../../../core/plan-design/configs/supported-operating-systems-for-clients-and-devices.md)(System Center Configuration Manager용 클라이언트 및 장치에 대해 지원되는 운영 체제)의 [Mobile devices enrolled by Microsoft Intune](../../../core/plan-design/configs/supported-operating-systems-for-clients-and-devices.md#mobile-devices-enrolled-by-microsoft-intune)(Microsoft Intune에서 등록한 모바일 장치) 섹션을 참조하세요.
+이 작업은 Microsoft Intune(하이브리드)을 사용하여 등록되었거나 온-프레미스 모바일 장치 관리에서 Configuration Manager에 등록된 장치에 적용됩니다. 자세한 내용은 [클라이언트 및 디바이스 지원 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices#bkmk_OnpremOS)를 참조하세요.
 
 -   중앙 관리 사이트: 사용할 수 없음    
 -   **기본 사이트**: 사용 안 함    
@@ -183,7 +183,7 @@ ms.locfileid: "32342446"
 -   **기본 사이트**: 사용    
 -   보조 사이트: 사용할 수 없음  
 
-**오래된 위협 데이터 삭제**: 이 작업을 사용하면 지정된 시간보다 오래 저장되어 있는 오래된 Endpoint Protection 위협 데이터를 데이터베이스에서 삭제할 수 있습니다. Endpoint Protection에 대한 자세한 내용은 [System Center Configuration Manager의 Endpoint Protection](../../../protect/deploy-use/endpoint-protection.md)을 참조하세요.  
+**오래된 위협 데이터 삭제**: 이 작업을 사용하면 지정된 시간보다 오래 저장되어 있는 오래된 Endpoint Protection 위협 데이터를 데이터베이스에서 삭제할 수 있습니다. Endpoint Protection에 대한 자세한 내용은 [System Center Configuration Manager의 Endpoint Protection 구성](../../../protect/deploy-use/endpoint-protection.md)을 참조하세요.  
 
 -   중앙 관리 사이트: 사용할 수 없음    
 -   **기본 사이트**: 사용    

@@ -2,7 +2,7 @@
 title: 사용되지 않는 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 더 이상 지원하지 않는 기능에 대해 알아보세요.
-ms.date: 08/31/2018
+ms.date: 10/26/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 287a6324-ae65-4d38-b2ef-198d47c91231
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: dbebfa1ef5d4851cfd6bbc118c2d7bab30f0b01f
-ms.sourcegitcommit: 0d7efd9e064f9d6a9efcfa6a36fd55d4bee20059
+ms.openlocfilehash: 7c1e07a2911a5f8560e3b69d7596716eb526bb34
+ms.sourcegitcommit: 3772ece83823714b2aae46ec20523cc094701760
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43893453"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51681429"
 ---
 # <a name="removed-and-deprecated-features-for-configuration-manager"></a>Configuration Manager에서 제거되는 기능과 이후 지원되지 않는 기능
 
@@ -31,6 +31,7 @@ ms.locfileid: "43893453"
 
 |기능|처음 중단 발표|제거된&nbsp;지원|  
 |-----------|---|--------------|  
+|Mac 및 Linux용 System Center Endpoint Protection<br>자세한 내용은 [지원 종료 블로그 게시물](https://go.microsoft.com/fwlink/?linkid=870182)을 참조하세요.|2018년 10월|2018년 12월 31일|
 |하이브리드 모바일 장치 관리. 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->|2018년 8월 14일|2019년 9월 1일|
 |응용 프로그램 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 사용자는 새로운 소프트웨어 센터를 사용해야 합니다. 참고: 응용 프로그램 카탈로그 웹 사이트 지점 및 웹 서비스 지점은 그대로 지원됩니다. 일부 시나리오에서는 새로운 소프트웨어 센터가 응용 프로그램 카탈로그 웹 사이트 지점과 통신합니다. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요.<!--1358309-->|2017년 8월 11일| 버전 1806|
 |이전 버전의 Software Center입니다.<br><br>새 소프트웨어 센터에 대한 자세한 내용은 [응용 프로그램 관리 계획 및 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management##bkmk_userex)을 참조하세요.|2016년 12월 13일|1802 버전|

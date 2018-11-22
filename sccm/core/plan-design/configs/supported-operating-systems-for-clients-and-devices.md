@@ -2,7 +2,7 @@
 title: 지원되는 클라이언트 및 장치
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 클라이언트 및 장치에 대해 지원하는 OS 버전을 알아봅니다.
-ms.date: 08/21/2018
+ms.date: 10/02/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 87f4e041-67df-4c61-aa98-7444faffe565
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 8abe612272dd8a48a23ffdcb945aa7b6766afdb9
-ms.sourcegitcommit: 7eebd112a9862bf98359c1914bb0c86affc5dbc0
+ms.openlocfilehash: 82fd328d65e67df2506f31679ed3c1b3abc1262c
+ms.sourcegitcommit: e0209e4549e9828eb74089313dbee323ece1fc2f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42586405"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51598600"
 ---
 # <a name="supported-os-versions-for-clients-and-devices-for-configuration-manager"></a>Configuration Manager의 클라이언트 및 장치에 대해 지원되는 OS 버전
 
@@ -33,10 +33,24 @@ ms.locfileid: "42586405"
 
 ##  <a name="windows-computers"></a>Windows 컴퓨터  
 
- Configuration Manager에 포함된 클라이언트를 사용하여 다음 Windows OS 버전을 관리하세요. 자세한 내용은 [Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법](/sccm/core/clients/deploy/deploy-clients-to-windows-computers)을 참조하세요.  
+ 다음 Windows OS 버전을 관리하려면 Configuration Manager에 포함된 클라이언트를 사용하세요. 자세한 내용은 [Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법](/sccm/core/clients/deploy/deploy-clients-to-windows-computers)을 참조하세요.  
 
 
-### <a name="supported-os-versions"></a>지원된 OS 버전  
+### <a name="supported-client-os-versions"></a>지원되는 클라이언트 OS 버전
+
+-   **Windows 10**  
+
+    자세한 내용은 [Windows 10에 대한 지원](/sccm/core/plan-design/configs/support-for-windows-10)을 참조하세요.  
+
+-   **Windows 8.1**(x86, x64): Professional, Enterprise    
+
+-   **Windows 7 SP1**(x86, x64): Professional, Enterprise, Ultimate    
+
+
+### <a name="supported-server-os-versions"></a>지원되는 서버 OS 버전
+
+-  **Windows Server 2019**: Standard, Datacenter <sup>[참고 1](#bkmk_note1)</sup>  
+    (Configuration Manager 1806 버전부터 시작)
 
 -  **Windows Server 2016**: Standard, Datacenter <sup>[참고 1](#bkmk_note1)</sup>  
 
@@ -56,32 +70,30 @@ ms.locfileid: "42586405"
 
 -   **Windows Server 2008 with SP2** (x86, x64): Standard, Enterprise, Datacenter <sup>[참고 1](#bkmk_note1)</sup>    
 
--   **Windows 10**  
 
-    여러 버전의 Configuration Manager에서 지원되는 다양한 릴리스 버전의 Windows 10에 대한 자세한 내용은 [Windows 10 버전에 대한 지원](/sccm/core/plan-design/configs/support-for-windows-10)을 참조하세요.  
+#### <a name="server-core"></a>Server Core
+특히 다음 버전은 OS의 Server Core 설치를 참조하세요. <sup>[참고 3](#bkmk_note3)</sup>  
 
--   **Windows 8.1**(x86, x64): Professional, Enterprise    
+Windows Server 반기 채널 버전은 Windows Server 버전 1809 같은 Server Core 설치입니다. 구성 관리자 클라이언트로서 연결된 Windows 10 반기 채널 버전과 동일하게 지원됩니다. 자세한 내용은 [Windows 10에 대한 지원](/sccm/core/plan-design/configs/support-for-windows-10)을 참조하세요.
 
--   **Windows 7 SP1**(x86, x64): Professional, Enterprise, Ultimate    
 
--   **Windows Server 버전 1709의 Server Core 설치**(x64) <sup>[참고 2](#bkmk_note2)</sup> <sup>[참고 3](#bkmk_note3)</sup>  
-    이 OS 버전은 Configuration Manager 버전 1710부터 지원됩니다.  
+-   **Windows Server 2019**(x64) <sup>[참고 2](#bkmk_note2)</sup>  
 
--   **Windows Server 2016의 Server Core 설치**(x64) <sup>[참고 2](#bkmk_note2)</sup> <sup>[참고 3](#bkmk_note3)</sup>  
+-   **Windows Server 2016**(x64) <sup>[참고 2](#bkmk_note2)</sup>   
 
--   **Windows Server 2012 R2의 Server Core 설치**(x64) <sup>[참고 2](#bkmk_note2)</sup> <sup>[참고 3](#bkmk_note3)</sup>    
+-   **Windows Server 2012 R2**(x64) <sup>[참고 2](#bkmk_note2)</sup>     
 
--   **Windows Server 2012의 Server Core 설치**(x64) <sup>[참고 2](#bkmk_note2)</sup> <sup>[참고 3](#bkmk_note3)</sup>    
+-   **Windows Server 2012**(x64) <sup>[참고 2](#bkmk_note2)</sup>     
 
--   **Windows Server 2008 R2의 Server Core 설치**(서비스 팩 없음 또는 SP1)(x64) <sup>[참고 3](#bkmk_note3)</sup>    
+-   **Windows Server 2008 R2**(서비스 팩 없음, SP1(x64))     
 
--   **Windows Server 2008 SP2의 Server Core 설치**(x86, x64) <sup>[참고 3](#bkmk_note3)</sup>  
+-   **Windows Server 2008 SP2**(x86, x64)   
 
 #### <a name="bkmk_note1"></a> 참고 1
- Datacenter 릴리스는 Configuration Manager용으로 지원되지만 인증되지는 않았습니다. Windows Server Datacenter Edition 관련 문제에 대한 핫픽스 지원은 제공되지 않습니다.  
+ Configuration Manager는 Windows Server Datacenter 버전을 테스트하고 지원하지만 Windows Server에 대한 공식 인증을 받지 않았습니다. Windows Server Datacenter Edition 관련 문제에 대한 Configuration Manager 핫픽스 지원은 제공되지 않습니다. Windows Server 인증 프로그램에 대한 자세한 내용은 [Windows Server Catalog](https://www.windowsservercatalog.com/)(Windows Server 카탈로그)를 참조하세요. 
 
 #### <a name="bkmk_note2"></a> 참고 2
- 클라이언트 강제 설치를 지원하려면 이 OS 버전을 실행하는 컴퓨터에서 파일 및 저장소 서비스 서버 역할용으로 파일 서버 역할 서비스를 실행해야 합니다. Server Core 컴퓨터에 Windows 기능을 설치하는 방법에 대한 자세한 내용은 [Install roles, role services, and features by using Windows PowerShell cmdlets](https://docs.microsoft.com/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#BKMK_installwps)(Windows PowerShell cmdlet을 사용하여 역할, 역할 서비스 및 기능 설치)를 참조하세요.  
+ [클라이언트 강제 설치](/sccm/core/clients/deploy/plan/client-installation-methods#client-push-installation)를 지원하려면 파일 및 스토리지 서비스 서버 역할의 파일 서버 서비스를 추가하세요. Server Core에 Windows 기능을 설치하는 방법에 대한 자세한 내용은 [Install roles, role services, and features by using Windows PowerShell cmdlets](https://docs.microsoft.com/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#BKMK_installwps)(Windows PowerShell cmdlet을 사용하여 역할, 역할 서비스 및 기능 설치)를 참조하세요.  
 
 #### <a name="bkmk_note3"></a> 참고 3
  새 소프트웨어 센터 앱은 모든 Windows Server Core 버전에서 지원되지 않습니다.<!--SCCMDocs issue 683-->
@@ -107,8 +119,6 @@ ms.locfileid: "42586405"
 
 -   Windows Embedded 장치에는 응용 프로그램 카탈로그가 지원되지 않습니다.  
 
--   Windows XP를 기반으로 하는 Windows Embedded 장치에서 검색된 맬웨어를 모니터링하려면 장치에 Microsoft Windows WMI 스크립팅 패키지를 설치해야 합니다. 이 패키지를 설치하려면 Windows Embedded Target Designer를 사용합니다. 이 경우 **WBEMDISP.DLL** 및 **WBEMDISP.TLB** 파일이 있고 임베디드 장치의 **%windir%\System32\WBEM** 폴더에 등록되어 있어야 검색된 맬웨어가 보고됩니다.  
-
 
 ### <a name="supported-os-versions"></a>지원된 OS 버전  
 
@@ -126,21 +136,6 @@ ms.locfileid: "42586405"
 -   **Windows Embedded POSReady 7**(x86, x64)    
 
 -   **Windows Embedded Standard 7 SP1**(x86, x64)    
-
-
-### <a name="unsupported-os-versions"></a>지원되지 않은 OS 버전
-
-다음 OS 버전은 Windows XP Embedded를 기반으로 합니다. 버전 1702부터 이러한 포함 OS 버전은 지원되지 않습니다. 자세한 내용은 [사용되지 않는 클라이언트 운영 체제](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-client#deprecated-client-operating-systems)를 참조하세요.  
-
--   **WEPOS 1.1 SP3**(x86)    
-
--   **Windows Embedded POSReady 2009**(x86)    
-
--   **Windows Fundamentals for Legacy PCs(WinFLP)**(x86)    
-
--   **Windows XP Embedded SP3**(x86)    
-
--   **Windows Embedded Standard 2009**(x86)  
 
 
 
@@ -328,15 +323,6 @@ ms.locfileid: "42586405"
 
 
 
-##  <a name="mobile-devices-enrolled-by-microsoft-intune"></a>Microsoft Intune에서 등록한 모바일 장치  
-
- Microsoft Intune과 Configuration Manager 통합할 때 관리할 수 있는 컴퓨터 및 장치에 대한 자세한 내용은 Microsoft Intune 문서 라이브러리에서 다음 문서를 참조하세요.  
-
--   [Microsoft Intune의 모바일 장치 관리 기능](https://docs.microsoft.com/intune/get-started/choose-how-to-manage-devices)  
--   [Microsoft Intune의 Windows PC 관리 기능](https://docs.microsoft.com/intune/get-started/windows-pc-management-capabilities-in-microsoft-intune)  
-
-
-
 ##  <a name="bkmk_OnpremOS"></a> 온-프레미스 모바일 장치 관리  
 
  Configuration Manager에는 클라이언트 소프트웨어를 설치하지 않고 온-프레미스의 장치를 관리할 수 있는 기본 제공 기능이 있습니다. 자세한 내용은 [온-프레미스 인프라로 모바일 장치 관리](/sccm/mdm/understand/manage-mobile-devices-with-on-premises-infrastructure)를 참조하세요.  
@@ -368,7 +354,7 @@ ms.locfileid: "42586405"
 
 ##  <a name="bkmk_ExSrvConOS"></a> Exchange Server 커넥터  
 
-Configuration Manager에서는 Configuration Manager 클라이언트를 설치하지 않고 Exchange Server에 연결하는 장치에 대한 제한적인 관리를 지원합니다. 자세한 내용은 [Configuration Manager와 Exchange를 사용하여 모바일 장치 관리](/sccm/mdm/deploy-use/manage-mobile-devices-with-exchange-activesync)를 참조하세요.  
+Configuration Manager에서는 Configuration Manager 클라이언트를 설치하지 않고 Exchange Server에 연결하는 장치에 대한 제한적인 관리를 지원합니다. 자세한 내용은 [Configuration Manager와 Exchange를 사용하여 모바일 장치 관리](/sccm/mdm/deploy-use/manage-mobile-devices-with-exchange-activesync)를 참조하세요.  
 
 
 ### <a name="supported-versions-of-exchange-server"></a>Exchange Server의 지원되는 버전
