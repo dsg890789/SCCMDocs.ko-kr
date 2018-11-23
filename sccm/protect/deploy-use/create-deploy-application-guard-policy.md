@@ -1,6 +1,6 @@
 ---
 title: Windows Defender Application Guard 정책 만들기 및 배포
-titleSuffix: Configuraton Manager
+titleSuffix: Configuration Manager
 description: Windows Defender Application Guard 정책을 만들고 배포합니다.
 ms.date: 03/22/2018
 ms.prod: configuration-manager
@@ -10,17 +10,16 @@ ms.assetid: 33a6c1d9-4dd8-411c-a748-693a5bd2ea5a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e7f0a1ccb71abb2fec27e0430bd4195dc85aceae
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.openlocfilehash: 82423914b1d1f5cae8fa4ecea3d02ef02d23703a
+ms.sourcegitcommit: 2cc635835709fb8d86cdb63ea34233b36c94d4d8
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32348075"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52258913"
 ---
 # <a name="create-and-deploy-windows-defender-application-guard-policy"></a>Windows Defender Application Guard 정책 만들기 및 배포 
-*적용 대상: System Center Configuration Manager(현재 분기)*
-<!-- 1351960 -->
-Configuration Manager 엔드포인트 보호를 사용하여 [Windows Defender Application Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-application-guard/wd-app-guard-overview) 정책을 만들고 배포할 수 있습니다. 이러한 정책은 운영 체제의 다른 부분에서 액세스할 수 없는 안전하게 격리된 컨테이너에서 신뢰할 수 없는 웹 사이트를 열어 사용자를 보호하는 데 도움이 됩니다.
+*적용 대상: System Center Configuration Manager (현재 분기)* 
+ <!-- 1351960 --> 만들고 배포할 수 있습니다 [Windows Defender Application Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-application-guard/wd-app-guard-overview) Configuration Manager 끝점을 사용 하 여 정책 보호 합니다. 이러한 정책은 운영 체제의 다른 부분에서 액세스할 수 없는 안전하게 격리된 컨테이너에서 신뢰할 수 없는 웹 사이트를 열어 사용자를 보호하는 데 도움이 됩니다.
 
 ## <a name="prerequisites"></a>필수 구성 요소
 
