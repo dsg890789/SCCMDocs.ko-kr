@@ -10,12 +10,12 @@ ms.assetid: f4f9a5fd-f573-4b99-ad93-b2c76812e922
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e0a4369e9c302c687f15b29b0daafbf4329e22a5
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 7d6b957ebcc19dfe8c14dd781f71678db8e160af
+ms.sourcegitcommit: 1a1bac2d5ee0f20ce565d29798ee4dd99aaca044
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32342310"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281909"
 ---
 # <a name="install-and-upgrade-with-the-version-1606-baseline-media-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 버전 1606 기준 미디어를 사용하여 설치 및 업그레이드
 
@@ -23,7 +23,7 @@ ms.locfileid: "32342310"
 
 Configuration Manager용 버전 1606 기준 미디어에서 설치 프로그램을 실행하면 System Center Configuration Manager의 장기 서비스 분기 또는 현재 분기 사이트를 설치할 수 있습니다.
 
-기준 미디어는 Microsoft System Center 2016의 일부로 DVD에서 사용하거나 System Center Configuration Manager(현재 분기 및 장기 서비스 분기 1606) 릴리스에서 사용할 수 있습니다. 기준 미디어에 대해 알아보려면 [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#baseline-and-udpate-versions)을 참조하세요.
+기준 미디어는 Microsoft System Center 2016의 일부로 DVD에서 사용하거나 System Center Configuration Manager(현재 분기 및 장기 서비스 분기 1606) 릴리스에서 사용할 수 있습니다. 기준 미디어에 대해 알아보려면 [기준 및 업데이트 버전](../servers/manage/updates.md#bkmk_Baselines)을 참조하세요.
 
 
 버전 1606 기준선 미디어를 사용하는 경우 설치 또는 업그레이드되는 사이트는 다음과 같습니다.

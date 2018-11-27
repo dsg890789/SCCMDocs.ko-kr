@@ -1,6 +1,6 @@
 ---
 title: PowerShell 스크립트 보안에 대해 자세히 알아보기
-titleSuffix: Configuraton Manager
+titleSuffix: Configuration Manager
 description: PowerShell 스크립트 보안에 대해 알아볼 수 있는 리소스입니다.
 ms.date: 03/22/2018
 ms.prod: configuration-manager
@@ -10,12 +10,12 @@ ms.assetid: a0bd093d-67a5-4f74-bf79-dd604889f5ba
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 7799ac9737ac3a6a73d2d7241dd8b56325d4e340
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: b5f7ac3125b099a764604b3338a92f3f45b10afe
+ms.sourcegitcommit: 2cc635835709fb8d86cdb63ea34233b36c94d4d8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32343714"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52258981"
 ---
 # <a name="learn-more-about-powershell-script-security"></a>PowerShell 스크립트 보안에 대해 자세히 알아보기
 

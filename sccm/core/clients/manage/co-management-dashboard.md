@@ -1,6 +1,6 @@
 ---
 title: 공동 관리 대시보드
-titleSuffix: Configuraton Manager
+titleSuffix: Configuration Manager
 description: 대시보드를 사용하여 공동 관리에 대한 정보를 검토합니다.
 ms.date: 03/22/2018
 ms.prod: configuration-manager
@@ -10,12 +10,12 @@ ms.assetid: e83a7b0d-b381-4b4a-8eca-850385abbebb
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a3d4cbbf78639a135e9e36e3402f9920a6ef71ed
-ms.sourcegitcommit: 78d2dce465e3500653b252583a6903a006784c26
+ms.openlocfilehash: 72b42aec2b50e229b90e9a642343386e8588aab7
+ms.sourcegitcommit: 2cc635835709fb8d86cdb63ea34233b36c94d4d8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448789"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52259007"
 ---
 # <a name="co-management-dashboard-in-system-center-configuration-manager"></a>System Center Configuration Manager의 공동 관리 대시보드
 *적용 대상: System Center Configuration Manager(현재 분기)*
