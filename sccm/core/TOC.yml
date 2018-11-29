@@ -69,12 +69,12 @@ items:
       href: plan-design/changes/what-has-changed-from-configuration-manager-2012.md
     - name: 증분 버전의 새로운 기능
       href: plan-design/changes/whats-new-incremental-versions.md
+    - name: 버전 1810의 새로운 기능
+      href: plan-design/changes/whats-new-in-version-1810.md
     - name: 버전 1806의 새로운 기능
       href: plan-design/changes/whats-new-in-version-1806.md
     - name: 버전 1802의 새로운 기능
       href: plan-design/changes/whats-new-in-version-1802.md
-    - name: 버전 1710의 새로운 기능
-      href: plan-design/changes/whats-new-in-version-1710.md
     - name: 제거되는 기능과 사용되지 않는 기능
       href: plan-design/changes/deprecated/removed-and-deprecated.md
       items:
@@ -166,12 +166,12 @@ items:
     items:
     - name: 진단 및 사용 현황 데이터 사용 방법
       href: plan-design/diagnostics/how-diagnostics-and-usage-data-is-used.md
+    - name: 1810에 대한 진단 데이터
+      href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1810.md
     - name: 1806에 대한 진단 데이터
       href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1806.md
     - name: 1802에 대한 진단 데이터
       href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1802.md
-    - name: 1710에 대한 진단 데이터
-      href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1710.md
     - name: 진단 및 사용 현황 데이터 수집 방법
       href: plan-design/diagnostics/how-diagnostics-and-usage-data-is-collected.md
     - name: 진단 및 사용 현황 데이터를 보는 방법
@@ -331,6 +331,8 @@ items:
         href: servers/deploy/configure/boundaries.md
       - name: 경계 그룹
         href: servers/deploy/configure/boundary-groups.md
+      - name: 경계 그룹에 대한 절차
+        href: servers/deploy/configure/boundary-group-procedures.md
     - name: 고가용성 옵션
       href: servers/deploy/configure/high-availability-options.md
       items:
@@ -422,12 +424,12 @@ items:
       href: servers/manage/use-the-update-registration-tool-to-import-hotfixes.md
     - name: 핫픽스 설치 관리자 사용
       href: servers/manage/use-the-hotfix-installer-to-install-updates.md
+    - name: 업데이트 1810을 설치하기 위한 검사 목록
+      href: servers/manage/checklist-for-installing-update-1810.md
     - name: 업데이트 1806을 설치하기 위한 검사 목록
       href: servers/manage/checklist-for-installing-update-1806.md
     - name: 업데이트 1802를 설치하기 위한 검사 목록
       href: servers/manage/checklist-for-installing-update-1802.md
-    - name: 업데이트 1710을 설치하기 위한 검사 목록
-      href: servers/manage/checklist-for-installing-update-1710.md
     - name: 현재 분기 버전 지원
       href: servers/manage/current-branch-versions-supported.md
   - name: 백업 및 복구
@@ -489,6 +491,17 @@ items:
         href: servers/manage/security-and-privacy-for-reporting.md
     - name: 데이터 웨어하우스
       href: servers/manage/data-warehouse.md
+  - name: 지원 센터
+    href: support/support-center.md
+    items:
+    - name: 빠른 시작 가이드
+      href: support/support-center-quickstart.md
+    - name: 접근성
+      href: support/support-center-accessibility.md
+    - name: 사용자 인터페이스 참조
+      href: support/support-center-ui-reference.md
+    - name: 사용자 지정
+      href: support/support-center-customize.md
   - name: Configuration Manager 도구
     href: support/tools.md
     items:
@@ -593,7 +606,6 @@ items:
   href: clients/manage/monitor-and-manage-clients.md
   items:
   - name: 클라이언트 모니터링 및 관리
-    href: clients/manage/monitor-clients.md
     items:
     - name: 클라이언트를 모니터링하는 방법
       href: clients/manage/monitor-clients.md
@@ -605,6 +617,8 @@ items:
       href: clients/manage/monitor-clients-for-linux-and-unix-servers.md
     - name: 클라이언트를 관리하는 방법
       href: clients/manage/manage-clients.md
+    - name: 클라이언트 알림
+      href: clients/manage/client-notification.md
     - name: Linux 및 UNIX 클라이언트를 관리하는 방법
       href: clients/manage/manage-clients-for-linux-and-unix-servers.md
     - name: Log Analytics와 데이터 동기화
@@ -745,9 +759,9 @@ items:
       href: clients/manage/upgrade/upgrade-clients-for-linux-and-unix-servers.md
     - name: Mac 클라이언트 업그레이드
       href: clients/manage/upgrade/upgrade-clients-on-mac-computers.md
-ms.openlocfilehash: 3b0eef7092583e2b5558e324069cbb48fbefe17b
-ms.sourcegitcommit: 8791bb9be477fe6a029e8a7a76e2ca310acd92e0
+ms.openlocfilehash: afc91b99ee040b4c338fb763d6f74a0d9a96005e
+ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50411360"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52456501"

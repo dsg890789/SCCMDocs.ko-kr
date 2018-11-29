@@ -36,6 +36,8 @@ items:
       href: deploy-use/deploy-applications.md
     - name: 단계별 배포 만들기
       href: ../osd/deploy-use/create-phased-deployment-for-task-sequence.md?toc=/sccm/apps/toc.json&bc=/sccm/apps/breadcrumb/toc.json
+    - name: 응용 프로그램 승인
+      href: deploy-use/app-approval.md
     - name: 응용 프로그램 공유
       href: deploy-use/share-applications.md
     - name: 응용 프로그램 배포 시뮬레이트
@@ -84,9 +86,9 @@ items:
       items:
       - name: 오류 메시지
         href: pcm/error-messages.md
-ms.openlocfilehash: c77312e99b6c08ecea729ade9e3de1ade4fccfa7
-ms.sourcegitcommit: 759098de944b8f7d5eedfc2bae2cb9a6ba15276f
+ms.openlocfilehash: e8e963fb8d33b8d57dc1d1eaadd4eb16501d9ff7
+ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "48817763"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52455769"
