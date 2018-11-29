@@ -1,6 +1,6 @@
 ---
 title: 버전 1602의 새로운 기능
-titleSuffix: Configuraton Manager
+titleSuffix: Configuration Manager
 description: System Center Configuration Manager 버전 1602에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.
 ms.date: 12/30/2016
 ms.prod: configuration-manager
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 robots: noindex,nofollow
-ms.openlocfilehash: cdc8797d436e50c60f17d4c26c802465608bb26a
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: c6d085fd33513a32207a3b9acfdfe6fe91657a88
+ms.sourcegitcommit: 2cc635835709fb8d86cdb63ea34233b36c94d4d8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32338587"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52259049"
 ---
 # <a name="what39s-new-in-version-1602-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1602의 새로운 기능
 
@@ -122,7 +122,7 @@ System Center Configuration Manager 업데이트 1602는 버전 1511을 실행�
  자세한 내용은 [System Center Configuration Manager에서 관리되는 PC용 O365 서비스에 대한 액세스 관리](../../../protect/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md)를 참조하세요.  
 
 ### <a name="restricting-access-based-on-the-health-of-devices"></a>장치 상태에 따라 액세스 제한  
- 이제 상태 증명 서비스에서 보고하는 장치의 상태를 기준으로, 메일 및 Office 365 서비스에 대한 액세스를 제한할 수 있습니다. 또한 Intune에서 관리하는 장치는 장치 상태 보고서에 포함됩니다.  
+ 이제 상태 증명 서비스에서 보고하는 디바이스의 상태를 기준으로, 이메일 및 Office 365 서비스에 대한 액세스를 제한할 수 있습니다. 또한 Intune에서 관리하는 장치는 장치 상태 보고서에 포함됩니다.  
 
  Configuration Manager 콘솔에서는 상태에 따라 장치의 액세스가 허용되거나 차단되어야 하는지를 지정할 수 있는 새 준수 규칙을 제공합니다. 상태 증명 서비스 및 Intune에서 장치 상태가 보고되는 방법에 대한 자세한 내용은 [System Center Configuration Manager에 대한 상태 증명](../../../core/servers/manage/health-attestation.md)을 참조하세요.  
 
