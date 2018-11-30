@@ -10,12 +10,12 @@ ms.assetid: 76c90f64-d729-456b-8304-01852cd66fb6
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2a8cf57de0214080a1b581faa044950219d11355
-ms.sourcegitcommit: 3772ece83823714b2aae46ec20523cc094701760
+ms.openlocfilehash: 3e8c6cb33032b0c4283f3e35cbfa7b68535751ea
+ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51681453"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52456110"
 ---
 # <a name="endpoint-protection"></a>Endpoint Protection
 
