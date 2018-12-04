@@ -10,12 +10,12 @@ ms.assetid: 1392797b-76cb-46b4-a3e4-8f349ccaa078
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4ba23a42acb111f4ed7d0337552b2ea90b0268d6
-ms.sourcegitcommit: 78d2dce465e3500653b252583a6903a006784c26
+ms.openlocfilehash: 00789c0c469e7de5ccd0b4dcac4130fdb14bb485
+ms.sourcegitcommit: 1439817f1309658b31008d7bafaab32fc5ef8789
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448925"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52820121"
 ---
 # <a name="site-and-site-system-prerequisites-for-configuration-manager"></a>Configuration Manager의 사이트 및 사이트 시스템 필수 조건
 
@@ -416,7 +416,13 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 
 
-##  <a name="bkmk_2012FSPpreq"></a> 대체 상태 지점  
+##  <a name="bkmk_2012FSPpreq"></a> 대체 상태 지점 
+
+#### <a name="windows-server-roles-and-features"></a>Windows Server 역할 및 기능 
+
+-   BITS 서버 확장 및 자동으로 선택된 옵션이나 BITS(Background Intelligent Transfer Services) 및 자동으로 선택된 옵션 
+
+#### <a name="iis-configuration"></a>IIS 구성 
 
 다음 항목이 추가된 기본 IIS 구성이 필요합니다.  
 
