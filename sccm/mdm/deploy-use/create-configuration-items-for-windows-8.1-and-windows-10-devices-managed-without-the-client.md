@@ -12,7 +12,7 @@ ms.author: aaroncz
 manager: dougeby
 ms.openlocfilehash: 639fabbe1e2f51194669fc1f196d88140193a727
 ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
 ms.locfileid: "32352104"
@@ -365,7 +365,7 @@ Configuration Manager로 엔터프라이즈 데이터 보호를 구성하는 방
 |**SmartScreen 사용**|SmartScreen을 사용하여 사용자가 다운로드한 파일에 악성 코드가 포함되지 않았는지를 확인합니다.|  
 |**팝업 허용**|브라우저 팝업을 허용하거나 사용하지 않도록 설정합니다.|  
 |**쿠키 허용**|쿠키를 허용하거나 사용하지 않도록 설정합니다.|  
-|**자동 채우기 허용**|Edge 브라우저의 자동 채우기 기능을 사용하도록 허용합니다.|  
+|**자동 채우기 허용**|Microsoft Edge 브라우저의 자동 채우기 기능을 사용하도록 허용합니다.|  
 |**암호 관리자 허용**|Microsoft Edge 브라우저의 암호 관리자 기능을 사용하도록 허용합니다.|  
 |**엔터프라이즈 모드 사이트 목록 위치**|엔터프라이즈 모드에서 열 웹 사이트 목록을 찾을 위치를 지정합니다. 사용자는 이 목록을 편집할 수 없습니다.|
 |**플래그에 대한 액세스 차단**|최종 사용자가 개발자 및 실험 설정이 포함된 Edge의 about:flags 페이지에 액세스하지 못하게 합니다.|
@@ -374,7 +374,7 @@ Configuration Manager로 엔터프라이즈 데이터 보호를 구성하는 방
 |**WebRTC 로컬 호스트 IP 주소**|웹 RTC 프로토콜을 사용하여 전화를 걸 때 사용자의 localhost IP 주소를 차단합니다.|
 |**기본 검색 엔진**|사용할 기본 검색 엔진을 지정합니다. 최종 사용자는 언제든지 이 값을 변경할 수 있습니다.|
 |**OpenSearch XML URL**|OpenSearch XML 파일을 사용하여 Microsoft Edge에 대한 검색 서비스를 만들 수 있습니다.<br>자세한 내용은 [OpenSearch](https://msdn.microsoft.com/library/windows/desktop/dd940337)를 참조하세요.|
-|**홈페이지(데스크톱만 해당)**|Edge 브라우저에서 홈페이지로 사용할 사이트의 목록을 추가합니다(데스크톱에만 해당).|  
+|**홈페이지(데스크톱만 해당)**|Microsoft Edge 브라우저에서 홈페이지로 사용할 사이트의 목록을 추가합니다(데스크톱에만 해당).|  
 
 
 ### <a name="windows-defender"></a>Windows Defender
