@@ -2,7 +2,7 @@
 title: 하이브리드 MDM의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 장치 관리 기능에 대해 알아봅니다.
-ms.date: 10/31/2018
+ms.date: 12/05/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -10,16 +10,16 @@ ms.assetid: 7b127cee-61f1-4681-9760-caebed36ddf5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f51e54ede8df8c18ca8614f6a75c82c53bb7916c
-ms.sourcegitcommit: 8791bb9be477fe6a029e8a7a76e2ca310acd92e0
-ms.translationtype: HT
+ms.openlocfilehash: c637703fc65b6d867dd1670ff40abc8214e6d234
+ms.sourcegitcommit: 4f34250aa850f13f415b7afe975a033d6a00fa9d
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50411530"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52978625"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 장치 관리의 새로운 기능
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: System Center Configuration Manager (현재 분기)*
 
 이 문서에서는 System Center Configuration Manager 및 Intune을 포함하는 하이브리드 배포에 사용할 수 있는 새 MDM(모바일 장치 관리) 기능에 대한 세부 정보를 제공합니다.     
 
@@ -39,11 +39,33 @@ ms.locfileid: "50411530"
 
 이 문서의 각 섹션에서는 세 가지 범주로 하이브리드 기능이 나열되어 있습니다. 각 범주의 기능과 다양한 Configuration Manager 버전 간의 호환성을 확인하려면 다음 지침을 따르세요.  
 
-|기능 범주|설명|
+|기능 범주|Description|
 |-|-|
 |**Microsoft Intune의 새로운 기능** | 일반적으로 이 범주 아래에 나열된 모든 기능은 Intune 서비스만 필요하고 Configuration Manager의 추가 기능이 필요하지 않으므로 System Center 2012 R2 Configuration Manager 릴리스를 비롯한 모든 Configuration Manager 릴리스에서 사용할 수 있어야 합니다.|
 |**Configuration Manager Technical Preview의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 Technical Preview 분기에서만 사용할 수 있습니다. 이러한 기능을 시험해보려면 기능 설명에 지정된 기술 미리 보기 버전을 설치해야 합니다. 자세한 내용은 [Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.|
 |**Configuration Manager(현재 분기)의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 버전의 Configuration Manager(현재 분기)에서만 사용할 수 있습니다. 하이브리드 배포에 이전 버전의 Configuration Manager를 사용하는 경우 기능 설명에 지정된 Configuration Manager(현재 분기) 버전으로 업그레이드합니다. 자세한 내용은 [Configuration Manager로 업그레이드](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager)를 참조하세요.|
+
+
+
+## <a name="november-2018"></a>2018 년 11 월
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+#### <a name="new-intune-device-subscription-sku"></a>새 Intune 장치 구독 SKU
+<!--3312071--> 하는 데 낮은 비용의 기업에서 장치를 관리 하는 새 장치 기반 구독 SKU 출시 되었습니다. 이 Intune 장치 SKU는 월별로 장치당 사용이 허가 됩니다. 가격 라이선스 프로그램에 따라 다릅니다. 이 제품은 직접 채널, EA (기업 계약), Microsoft 제품 및 mpsa 서비스 프로그램 (포함), 및 오픈 클라우드 솔루션 공급자 (CSP)입니다.
+
+#### <a name="new-apps-support-with-app-protection-policies"></a>앱 보호 정책을 사용 하 여 새 앱을 지원합니다. 
+<!--3330037--> 사용 하 여 다음 앱을 관리할 수 있습니다 [Intune 앱 보호 정책을](https://docs.microsoft.com/intune/app-protection-policies):
+
+- Stream (iOS)  
+- 할 일 (Android, iOS)  
+- PowerApps (Android, iOS)  
+- 흐름 (Android, iOS)  
+
+다른 Intune 정책 관리 앱과 같은 이러한 앱에 대 한 회사 데이터 및 제어 데이터 전송을 보호 하기 위해 사용 하 여 앱 보호 정책입니다. 
+
+> [!Note]  
+> 흐름을 콘솔에 표시 아직 없는 경우 만들거나 모든 앱 보호 정책을 편집할 때 흐름을 추가 합니다. 선택 **더 많은 앱**를 지정 합니다 *앱 ID* 입력된 필드의 흐름에 대 한 합니다. Android 용도로 `com.microsoft.flow`를 사용 하 여 iOS 및 `com.microsoft.procsimo`합니다.  
 
 
 
@@ -125,9 +147,9 @@ Intune의 이전 배지 스타일을 사용하고 있는 경우 서류 가방 �
 
 다음의 텍스트는 표시되는 메시지의 개선 내용 중 한 가지 예입니다.  
 
-- 이전: *이 장치는 IT 관리자가 요구한 지정된 기간 내에 Intune 서비스를 연결하지 않았습니다. 이 문제를 해결하려면 장치에서 회사 포털 앱을 열고 준수 확인 단추를 클릭하세요.*  
+- 이전: *이 장치에서 IT 관리자에 필요한 지정 된 기간 동안 Intune 서비스를 연결 하지 않았습니다. 이 문제를 해결하려면 장치에서 회사 포털 앱을 열고 준수 확인 단추를 클릭하세요.*  
 
-- 이후: *장치가 조직에서 한동안 체크 인되지 않았습니다. 연결을 다시 설정하려면 장치에서 회사 포털 앱을 열고 장치의 설정 확인을 탭하세요.*  
+- 이후: *장치에 로그인 한 동안 조직 검사 되지 않습니다. 연결을 다시 설정하려면 장치에서 회사 포털 앱을 열고 장치의 설정 확인을 탭하세요.*  
 
 #### <a name="select-device-categories-by-using-the-access-work-or-school-settings"></a>회사 또는 학교 액세스 설정을 사용하여 장치 범주 선택 
 <!--1058963--> [장치 그룹 매핑](https://docs.microsoft.com/intune/device-group-mapping)을 사용하도록 설정한 경우 이제 Windows 10에서 사용자가 **설정** > **계정** > **회사 또는 학교 액세스**의 **연결** 단추를 통해 등록할 때 장치 범주를 선택하라는 메시지가 표시됩니다.  
@@ -167,7 +189,7 @@ Intune의 이전 배지 스타일을 사용하고 있는 경우 서류 가방 �
 #### <a name="android-for-work-and-lookout-onboarding-moved-to-intune-on-azure"></a>Azure에서 Intune으로 이동된 Android for Work 및 Lookout 온보딩
 <!--2355022,2357366--> 최신 Intune 업데이트를 사용하여 Azure Portal의 Intune의 하이브리드 모바일 장치 관리 테넌트에서 Android for Work 통합 및 Lookout 모바일 위협 방어 통합을 사용하도록 설정하고 관리할 수 있습니다. 업데이트 전에 이러한 설정은 Intune 클래식(Silverlight) 포털에서만 구성할 수 있었습니다.
  
-참고: Lookout은 하이브리드 환경에서 지원되는 유일한 MTD(모바일 위협 방어) 공급자입니다. 전에 다른 모든 MTD 공급자와 통합한 경우 Azure Portal의 Intune에 계속 표시됩니다. 커넥터를 삭제하는 경우 다시 추가할 수 없습니다.
+참고: Lookout에 하이브리드에 지원 되는 모바일 위협 defense (MTD) 공급자입니다. 전에 다른 모든 MTD 공급자와 통합한 경우 Azure Portal의 Intune에 계속 표시됩니다. 커넥터를 삭제하는 경우 다시 추가할 수 없습니다.
  
 이러한 변경은 기존 기능에 영향을 주지 않습니다. 관련 앱, 보고 및 정책을 관리하려면 Configuration Manager 콘솔을 계속 사용합니다.
  
@@ -369,8 +391,8 @@ Windows 10 버전 1607 이상의 최종 사용자에게 Microsoft Store에 있�
 
 - **새 모바일 응용 프로그램 관리 정책 설정**     
   모바일 응용 프로그램 관리 정책 설정에 다음과 같은 설정이 추가되었습니다.
-  - **연락처 동기화 사용 안 함:** 앱에서 장치의 네이티브 연락처 앱에 데이터를 저장하지 않도록 방지합니다.
-  - **인쇄 사용 안 함:** 앱에서 회사 또는 학교 데이터를 인쇄하지 않도록 방지합니다.
+  - **연락처 동기화 사용 안 함**: 장치의 네이티브 연락처 앱으로 데이터를 저장 하는 앱을 방지 합니다.
+  - **인쇄 사용 안 함**: 인쇄 작업 또는 학교 데이터에서 앱을 방지합니다.
   <!-- 1324760 -->    
 
   새로운 앱 보호 정책 설정을 사용하려면 [Configuration Manager에서 앱 보호 정책을 사용하여 앱 보호](/sccm/mdm/deploy-use/protect-apps-using-mam-policies)를 참조하세요.
@@ -497,7 +519,7 @@ Windows 10 버전 1607 이상의 최종 사용자에게 Microsoft Store에 있�
 
 ## <a name="notices"></a>알림
 
-### <a name="plan-for-change-intune-supports-macos-1012-and-higher-in-december"></a>변경 계획: Intune은 12월에 macOS 10.12 이상을 지원합니다. 
+### <a name="plan-for-change-intune-supports-macos-1012-and-higher-in-december"></a>변경 계획: Intune은 12 월에 macOS 10.12 이상을 지원합니다 
 <!--2970975--> 
 
 Apple이 macOS 10.14를 출시하므로 2018년 12월부터 Intune은 macOS 10.12 이상을 지원합니다. 
@@ -526,7 +548,7 @@ MacOS 버전 10.12 이상은 현재 다음에서 지원됩니다.
 자세한 내용은 [회사 포털 앱을 사용하여 Intune에서 macOS 장치 등록](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)을 참조하세요.
 
 
-### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>변경 계획: 프리미어 고객을 위한 새로운 Intune 지원 환경 
+### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>변경 계획: 고객은 프리미어의 새 Intune 지원 환경 
 <!--2828727--> Microsoft 프리미어 고객은 현재 [MPO(Microsoft Premier Online) 포털](https://premier.microsoft.com) 및 [Azure의 Intune](https://portal.azure.com)을 사용하여 Intune에 대한 지원 요청을 만들 수 있습니다. 2018년 12월 3월부터 프리미어 지원 환경을 계속해서 향상시키려면 Azure의 Intune에서만 지원 요청을 만들 수 있습니다.
 
 #### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
@@ -545,11 +567,11 @@ MacOS 버전 10.12 이상은 현재 다음에서 지원됩니다.
 자세한 내용은 [Microsoft Intune 지원 팀 블로그 게시물](https://aka.ms/IntuneSupport_MPO_to_Azure)을 참조하세요.
 
 
-### <a name="plan-for-change-use-intune-on-azure-now-for-your-mdm-management"></a>변경 플랜: 이제 MDM 관리를 위해 Azure의 Intune 사용 
+### <a name="plan-for-change-use-intune-on-azure-now-for-your-mdm-management"></a>변경 계획: MDM 관리를 위해 Azure에서 Intune 사용 
 <!--1227338--> 1년 전, [Azure의 Intune 공개 미리 보기](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/)를 발표했으며, 6개월 전에는 Intune에 대한 [새 관리자 환경 일반 공급](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/)을 발표했습니다. 2018년 8월 31일부터는 Intune 독립 실행형을 사용하는 고객에 대해 클래식 Silverlight 콘솔에서 MDM(모바일 장치 관리) 기능을 해제합니다. 대신, MDM 요구 사항에 [Azure의 Intune](https://aka.ms/Intune_on_Azure)을 사용합니다. MDM용 클래식 콘솔을 아직 사용 중이라면 사용을 중지하고 Azure의 Intune을 숙지하세요. 이러한 변경으로 최종 사용자에게 어떤 영향이 있지는 않을 것입니다. Intune을 사용하는 클래식 PC 관리는 Silverlight에서 그대로 유지됩니다. 자세한 내용은 [Intune 지원 팀 블로그 게시물](https://aka.ms/Intune_on_Azure_mdm)을 참조하세요.
 
 
-### <a name="plan-for-change-upcoming-macos-and-intune-password-enforcement-change"></a>변경 계획: 예정된 macOS 및 Intune 암호 강제 변경
+### <a name="plan-for-change-upcoming-macos-and-intune-password-enforcement-change"></a>변경 계획: 예정 된 macOS 및 Intune 암호 적용 변경
 <!--1873216--> 9월 서비스 릴리스에서 Intune은 Apple에서 새로 릴리스한 macOS 버전 10.13 이상을 실행하는 장치에 대한 "다음 인증 시 암호 변경" 설정을 통합할 계획입니다. 이 설정이 도입되기 전에는 MDM 공급자는 장치에서 규정 준수를 준수하도록 암호를 변경한 적이 있는지 확인할 방법이 없었습니다. Intune의 구성 및 규정 준수 정책은 장치에서 암호를 변경한 다음에 규정 준수로 표시되는지 유효성을 검사합니다. macOS 사용자는 해당 암호가 이미 규정을 준수하는 경우라도 이 새로운 Apple 기능을 통합하면 해당 암호를 업데이트하라는 요청을 받게 됩니다.
 
 #### <a name="how-does-this-change-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
@@ -559,7 +581,7 @@ MacOS 버전 10.12 이상은 현재 다음에서 지원됩니다.
 기술 지원팀에게 알리려고 할 수 있습니다. 이 macOS 장치 정책을 적용하지 않으려는 경우 기존 macOS 정책을 삭제하거나 할당을 취소합니다. 이 변경 구현 전에 이뤄진 자체 고객 조사에서는 대부분의 고객이 이 변경으로 영향을 받지 않을 것이라고 나타났습니다. 최종 사용자는 일반적으로 암호를 사용하여 등록하라는 요청을 받은 후 해당 암호를 업데이트하거나 암호를 다시 설정하여 준수 상태를 유지합니다.  
 
 
-### <a name="plan-for-change-intune-moving-to-support-ios-10-and-later-in-september-2018"></a>변경 계획: 2018년 9월에 Intune이 iOS 10 이상 지원으로 전환 
+### <a name="plan-for-change-intune-moving-to-support-ios-10-and-later-in-september-2018"></a>변경 계획: 2018 년 9 월에에서 iOS 10 이상이 지원 이동 Intune 
 <!--2454656-->
 
 2018년 9월에 Apple에서 iOS 12를 출시할 예정입니다. 출시 직후 Microsoft에서는 iOS 10 이상을 지원하도록 Intune 등록, 회사 포털 및 관리되는 브라우저를 전환할 예정입니다.
@@ -594,7 +616,7 @@ Office 365 모바일 앱이 iOS 10 이상에서 지원되므로 OS나 장치를 
 ### <a name="end-of-support-for-ios-80"></a>iOS 8.0에 대한 지원 종료 
 <!---1164477---> iOS용 회사 포털 앱과 관리되는 앱에서 회사 리소스에 액세스하려면 iOS 9.0 이상이 필요합니다. 9월 전에 업데이트되지 않은 장치는 회사 포털이나 이러한 앱에 더 이상 액세스할 수 없습니다. 
 
-### <a name="platform-support-reminder-windows-phone-81-mainstream-support-ended-july-11-2017"></a>플랫폼 지원 알림: Windows Phone 8.1 기본 지원은 2017년 7월 11일에 종료됩니다.
+### <a name="platform-support-reminder-windows-phone-81-mainstream-support-ended-july-11-2017"></a>플랫폼 지원 미리 알림: Windows Phone 8.1 기본 지원이 2017 년 7 월 11 일 종료
 <!-- 1327781 -->
 *2017년 7월 11일*
 
@@ -612,7 +634,7 @@ Android용 회사 포털 앱과 관리되는 앱이 회사 리소스에 액세�
 
 
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
 
 - [과거 하이브리드 MDM 기능 및 알림](whats-new-hybrid-archive.md)
 - [System Center 2012 Configuration Manager의 새로운 MDM 기능](https://technet.microsoft.com/library/mt445560.aspx)
