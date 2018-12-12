@@ -10,12 +10,12 @@ ms.assetid: 7b127cee-61f1-4681-9760-caebed36ddf5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: c637703fc65b6d867dd1670ff40abc8214e6d234
-ms.sourcegitcommit: 4f34250aa850f13f415b7afe975a033d6a00fa9d
+ms.openlocfilehash: 6ecc3f47b908678b1849e16c2cb2053f100a655a
+ms.sourcegitcommit: 2491fbe98915b7a30c2422a371c929d0d4ebf22f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52978625"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247529"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 장치 관리의 새로운 기능
 
@@ -489,7 +489,7 @@ Windows 10 버전 1607 이상의 최종 사용자에게 Microsoft Store에 있�
     <!-- 1132468 -->     
 
 - **iOS에 대해 표시되는 장치 정보를 최종 사용자에게 알리기**   
-    iOS용 회사 포털 앱의 [장치 세부 정보] 화면에   **소유권 유형**을 추가했습니다. 이 정보를 통해 사용자는 Intune 최종 사용자 문서에서 바로 개인 정보에 대한 자세한 내용을 찾을 수 있습니다. [정보] 화면에서도 이 정보를 찾을 수 있습니다. 
+    추가한 **소유권 유형** iOS 용 회사 포털 앱에서 장치 세부 정보 화면. 이 정보를 통해 사용자는 Intune 최종 사용자 문서에서 바로 개인 정보에 대한 자세한 내용을 찾을 수 있습니다. [정보] 화면에서도 이 정보를 찾을 수 있습니다. 
     <!--739894-->    
 
 - **Android용 회사 포털 앱의 구문을 쉽게 이해**   
