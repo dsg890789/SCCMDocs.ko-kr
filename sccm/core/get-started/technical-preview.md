@@ -2,7 +2,7 @@
 title: 기술 미리 보기 릴리스
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 새로운 기능과 기술을 시험 사용할 수 있는 기술 미리 보기 분기를 알아봅니다.
-ms.date: 10/16/2018
+ms.date: 12/03/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 9ce0a8cb-f96c-4e41-834c-59ceb54ce44a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f19e998e803bdaeed2b72dac84ae866930ad0003
-ms.sourcegitcommit: 73dbd2146bd581a1b668b22b84b7cda68a487d05
+ms.openlocfilehash: 9381980f490d543b3018c206359d4a68b9ca69e4
+ms.sourcegitcommit: 6126dfdf5c879db7d12c3eec019a88fa44521361
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49390635"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830492"
 ---
 # <a name="technical-preview-for-configuration-manager"></a>Configuration Manager에 대한 기술 미리 보기
 
@@ -124,16 +124,15 @@ Microsoft는 세 개의 연속 버전을 사용할 수 있을 때까지 각 기�
 
 <!-- This is the full list of new features in the latest TP release -->
 
-### <a name="technical-preview-version-18102"></a>Technical Preview 버전 1810.2
+### <a name="technical-preview-version-1811"></a>기술 미리 보기 버전 1811
 
-<!--capabilities-in-technical-preview-1810-2.md#bkmk_anchor-->
+<!--capabilities-in-technical-preview-1811.md#bkmk_anchor-->
 
-- [컬렉션 평가의 개선 사항](capabilities-in-technical-preview-1810-2.md#bkmk_colleval) <!--1358981-->
-- [Configuration Manager 관리자 인증](capabilities-in-technical-preview-1810-2.md#bkmk_auth) <!--1357013-->
-- [피어 캐시 원본 클라이언트 버전의 관리 인사이트 규칙](capabilities-in-technical-preview-1810-2.md#bkmk_insights) <!--1358008-->
-- [인터넷 기반 클라이언트 설정의 개선 사항](capabilities-in-technical-preview-1810-2.md#bkmk_cmg) <!--1359181-->
-- [응용 프로그램을 MSIX로 변환](capabilities-in-technical-preview-1810-2.md#bkmk_msix) <!--1359029-->
-- [장치 절전 모드를 해제하는 클라이언트 알림 작업의 변경 내용](capabilities-in-technical-preview-1810-2.md#bkmk_wakeup) <!--1317364-->
+- [Windows PowerShell 프로필을 로드하지 마십시오.](capabilities-in-technical-preview-1811.md#bkmk_noprofile) <!--1359239-->
+- [Intune 연결이 온-프레미스 MDM에 필요하지 않음](capabilities-in-technical-preview-1811.md#bkmk_opmdm) <!--1359124-->
+- [Configuration Manager 콘솔 알림](capabilities-in-technical-preview-1811.md#bkmk_notify) <!--1318035-->
+- [작업 순서 미디어 만들기의 향상된 기능](capabilities-in-technical-preview-1811.md#bkmk_tsmedia) <!--1359388-->
+- [PowerShell 스크립트 실행 작업 순서 단계의 향상된 기능](capabilities-in-technical-preview-1811.md#bkmk_posh) <!--1359389-->
 
 
 > [!Note]  
@@ -150,27 +149,30 @@ Each month, add features from the list above to the top of this table.
 Then remove the bottom of this list and/or move individual items not in CB to the third table below.
 -->
 
- |기능 |기술 미리 보기 버전 |현재 분기 버전|  
- |----------------|---------------------|--------------------|
- | 클라이언트 설치 기능 개선 <!--1358840--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_ccmsetup) | ![추가되지 않음](media/Red_X.gif) | 
- | 공동 관리하는 장치의 필수 앱 준수 정책 <!--1358196--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_app-compliance) | ![추가되지 않음](media/Red_X.gif) | 
- | 공동 관리 대시보드 기능 개선 <!--1358980--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_comgmt-report) | ![추가되지 않음](media/Red_X.gif) | 
- | 새 경계 그룹 옵션 <!--1358749--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_bgoptions) | ![추가되지 않음](media/Red_X.gif) | 
- | Windows 클러스터 노드의 사이트 시스템 <!--1359132--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_cluster) | ![추가되지 않음](media/Red_X.gif) | 
- | 향상된 CMPivot 기능<!--1359068--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_cmpivot) | ![추가되지 않음](media/Red_X.gif) | 
- | 스크립트 기능 개선 <!--1358239--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_scripts) | ![추가되지 않음](media/Red_X.gif) | 
- | 장치 절전 모드를 해제하는 새 클라이언트 알림 작업 <!--1317364--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_wakeup) | ![추가되지 않음](media/Red_X.gif) | 
- | 경계 그룹의 작업 순서 지원 <!--1359025--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_bgr-osd) | ![추가되지 않음](media/Red_X.gif) | 
- | 관리 인사이트 대시보드 <!--1357979--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_insights) | ![추가되지 않음](media/Red_X.gif) | 
+ | 기능 | 기술 미리 보기 버전 | 현재 분기 버전 |  
+ |---------|---------------------------|------------------------|
+ | 컬렉션 평가의 개선 사항 <!--1358981--> | [기술 미리 보기 1810.2](capabilities-in-technical-preview-1810-2.md#bkmk_colleval) | 버전 1810 | 
+ | Configuration Manager 관리자 인증 <!--1357013--> | [기술 미리 보기 1810.2](capabilities-in-technical-preview-1810-2.md#bkmk_auth) | 버전 1810 | 
+ | 피어 캐시 원본 클라이언트 버전의 관리 인사이트 규칙 <!--1358008--> | [기술 미리 보기 1810.2](capabilities-in-technical-preview-1810-2.md#bkmk_insights) | 버전 1810 | 
+ | 인터넷 기반 클라이언트 설정의 개선 사항 <!--1359181--> | [기술 미리 보기 1810.2](capabilities-in-technical-preview-1810-2.md#bkmk_cmg) | 버전 1810 | 
+ | 애플리케이션을 MSIX로 변환 <!--1359029--> | [기술 미리 보기 1810.2](capabilities-in-technical-preview-1810-2.md#bkmk_msix) | 버전 1810 | 
+ | 클라이언트 설치 기능 개선 <!--1358840--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_ccmsetup) | 버전 1810 | 
+ | 공동 관리하는 장치의 필수 앱 준수 정책 <!--1358196--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_app-compliance) | 버전 1810 | 
+ | 공동 관리 대시보드 기능 개선 <!--1358980--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_comgmt-report) | 버전 1810 | 
+ | 새 경계 그룹 옵션 <!--1358749--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_bgoptions) | 버전 1810 | 
+ | Windows 클러스터 노드의 사이트 시스템 <!--1359132--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_cluster) | 버전 1810 | 
+ | 향상된 CMPivot 기능<!--1359068--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_cmpivot) | 버전 1810 | 
+ | 스크립트 기능 개선 <!--1358239--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_scripts) | 버전 1810 | 
+ | 장치 절전 모드를 해제하는 새 클라이언트 알림 작업 <!--1317364--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_wakeup) | 버전 1810 | 
+ | 경계 그룹의 작업 순서 지원 <!--1359025--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_bgr-osd) | 버전 1810 | 
+ | 관리 인사이트 대시보드 <!--1357979--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_insights) | 버전 1810 | 
  | 콘솔 내 설명서 대시보드 <!--1357546--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_doc-dashboard) | ![추가되지 않음](media/Red_X.gif) | 
- | 드라이버 유지 관리 기능 개선 <!--1358270--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_drivers) | ![추가되지 않음](media/Red_X.gif) | 
- | 기존 장치에 대한 Windows Autopilot의 작업 순서 지원 <!--1358333--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_autopilot) | ![추가되지 않음](media/Red_X.gif) | 
- | 향상된 CMPivot 기능<!--1359068--> | [Tech Preview 1809](capabilities-in-technical-preview-1809.md#bkmk_cmpivot) | ![추가되지 않음](media/Red_X.gif) | 
- | 향상된 수명 주기 대시보드 기능 <!--1358702--> | [Tech Preview 1809](capabilities-in-technical-preview-1809.md#bkmk_lifecycle) | ![추가되지 않음](media/Red_X.gif) | 
- | 향상된 데이터 웨어하우스 기능 <!--1358870--> | [Tech Preview 1809](capabilities-in-technical-preview-1809.md#bkmk_dataw) | ![추가되지 않음](media/Red_X.gif) | 
- | 향상된 소프트웨어 업데이트에 대한 유지 관리 기간 기능 <!--vso2839307--> | [Tech Preview 1809](capabilities-in-technical-preview-1809.md#bkmk_sum-mw) | ![추가되지 않음](media/Red_X.gif) | 
- | 단계별 소프트웨어 업데이트 배포 <!--1358146--> | [Tech Preview 1808](capabilities-in-technical-preview-1808.md#bkmk_pod) | ![추가되지 않음](media/Red_X.gif) | 
- | 향상된 응용 프로그램 복구 기능 <!--1357866--> | [Tech Preview 1808](capabilities-in-technical-preview-1808.md#bkmk_repair) | ![추가되지 않음](media/Red_X.gif) | 
+ | 드라이버 유지 관리 기능 개선 <!--1358270--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_drivers) | 버전 1810 | 
+ | 기존 장치에 대한 Windows Autopilot의 작업 순서 지원 <!--1358333--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_autopilot) | 버전 1810 | 
+ | 향상된 CMPivot 기능<!--1359068--> | [Tech Preview 1809](capabilities-in-technical-preview-1809.md#bkmk_cmpivot) | 버전 1810 | 
+ | 향상된 수명 주기 대시보드 기능 <!--1358702--> | [Tech Preview 1809](capabilities-in-technical-preview-1809.md#bkmk_lifecycle) | 버전 1810 | 
+ | 향상된 데이터 웨어하우스 기능 <!--1358870--> | [Tech Preview 1809](capabilities-in-technical-preview-1809.md#bkmk_dataw) | 버전 1810 | 
+ | 향상된 소프트웨어 업데이트에 대한 유지 관리 기간 기능 <!--vso2839307--> | [Tech Preview 1809](capabilities-in-technical-preview-1809.md#bkmk_sum-mw) | 버전 1810 | 
 
 
 
@@ -184,23 +186,16 @@ Copy from the bottom of the list above any individual feature that is still in T
 With each CB release, review and remove from this list for anything that's now available in CB. 
 -->
 
-|기능 |기술 미리 보기 버전 |  
-|----------------|---------------------|
+| 기능        | 기술 미리 보기 버전 |  
+|----------------|---------------------------|
 | 커뮤니티 허브 <!--1357766--> | [Tech Preview 1807](capabilities-in-technical-preview-1807.md#bkmk_hub) | 
-| 오프라인 OS 이미지 서비스용 드라이브 지정<!--1358924--> | [Tech Preview 1807](capabilities-in-technical-preview-1807.md#bkmk_osd) | 
 | Intune에서 공동 관리되는 장치 동기화 작업<!--1358565--> | [Tech Preview 1807](capabilities-in-technical-preview-1807.md#bkmk_comgmt) | 
-| 응용 프로그램 복구<!--1357866--> | [Tech Preview 1807](capabilities-in-technical-preview-1807.md#bkmk_app-repair) | 
-| 메일을 통해 응용 프로그램 요청 승인<!--1321550--> | [Tech Preview 1807](capabilities-in-technical-preview-1807.md#bkmk_email-approve) | 
-| 스크립트 출력 개선 사항 <!--1236459--> | [Tech Preview 1807](capabilities-in-technical-preview-1807.md#bkmk_script) | 
-| 타사 소프트웨어 업데이트 개선 사항 <!--1358714--> | [Tech Preview 1807](capabilities-in-technical-preview-1807.md#bkmk_3pupdate) |
-|지원 센터 <!--1357489--> | [Tech Preview 1804](capabilities-in-technical-preview-1804.md#support-center)  | 
-|클라이언트 기반 PXE 응답자 서비스 <!-- 1357148 --> | [Tech Preview 1712](capabilities-in-technical-preview-1712.md#client-based-pxe-responder-service) |
-|IPv6에 대한 PXE 네트워크 부팅 지원<!-- 1269793 --> |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#pxe-network-boot-support-for-ipv6)|
-|Azure Active Directory 사용 <!-- 1322145? --> | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#azurediscovery) |
-|Windows Update for Business 업데이트에 대한 준수 평가<!-- 1235390 --> | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#compliance-assessment-for-windows-update-for-business-updates) |
-|OData 엔드포인트 데이터 액세스<!-- 1321523 --> |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#odata-endpoint-data-access)|
-|Asset Intelligence 개선 <!-- 1307390 --> |[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-asset-intelligence)|
-|최종 사용자가 회사 포털에서 앱을 설치할 수 있습니다.<!-- 1037233? --> |[Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_End)|
+| 클라이언트 기반 PXE 응답자 서비스 <!--1357148--> | [Tech Preview 1712](capabilities-in-technical-preview-1712.md#client-based-pxe-responder-service) |
+| IPv6에 대한 PXE 네트워크 부팅 지원<!--1269793--> |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#pxe-network-boot-support-for-ipv6)|
+| Azure Active Directory 사용 <!--1322145--> | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#azurediscovery) |
+| Windows Update for Business 업데이트에 대한 준수 평가<!--1235390--> | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#compliance-assessment-for-windows-update-for-business-updates) |
+| Asset Intelligence 개선 <!--1307390--> | [Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-asset-intelligence) |
+| 최종 사용자가 회사 포털에서 앱을 설치할 수 있습니다.<!--1037233?--> | [Tech Preview 1605](capabilities-in-technical-preview-1605.md#BKMK_End) |
 
 
 

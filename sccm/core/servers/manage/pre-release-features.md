@@ -2,7 +2,7 @@
 title: 시험판 기능
 titleSuffix: Configuration Manager
 description: 시험판 기능은 프로덕션 환경에서의 초기 테스트를 위해 현재 분기에 포함된 기능입니다.
-ms.date: 10/24/2018
+ms.date: 11/27/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 6bce416b-761d-4b23-bd33-5b7c30edb10d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e3b3b31c31725c6b9931d0c2cc67324c4b39f974
-ms.sourcegitcommit: 8791bb9be477fe6a029e8a7a76e2ca310acd92e0
+ms.openlocfilehash: 6fb24c3e262f3d1f3991ab549592e3f21631b32d
+ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50411139"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52456136"
 ---
 # <a name="pre-release-features-in-configuration-manager"></a>Configuration Manager 시험판 기능
 
@@ -75,25 +75,27 @@ ms.locfileid: "50411139"
 
 | 기능          | 시험판으로 추가됨 | 전체 기능으로 추가됨 |  
 |------------------|----------------------|-------------------------|
-| 향상된 HTTP 사이트 시스템<!--1356889,1358228--> |[1806 버전](/sccm/core/plan-design/hierarchy/enhanced-http)|![아직 추가되지 않음](media/red_x.png)|
-| 공동 관리하는 장치용 모바일 앱<!--1357892-->|[1806 버전](/sccm/core/clients/manage/co-management-switch-workloads#workloads-able-to-be-transitioned-to-intune)|![아직 추가되지 않음](media/red_x.png)|
-| Package Conversion Manager<!--1357861-->|[1806 버전](/sccm/apps/pcm/package-conversion-manager)|![아직 추가되지 않음](media/red_x.png)|
-| Cisco AnyConnect 4.0.07x 및 이후에 iOS에 대한 지원<!--1357393-->|[1802 버전](/sccm/mdm/deploy-use/create-vpn-profiles)| [업데이트 4163547 적용 1802 버전](/sccm/mdm/deploy-use/create-vpn-profiles) |
-| 단계별 배포<!--1356837-->|[1802 버전](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence)|[1806 버전](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence)|
-| 작업 순서 실행 단계 <!-- 1261338 --> |  [버전 1710](/sccm/osd/understand/task-sequence-steps#child-task-sequence) |[1802 버전](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#add-child-task-sequences-to-a-task-sequence)|
-| Windows Defender Exploit Guard <!-- 1355468 --> |  [버전 1710](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy) |[1802 버전](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy)|
-| 조건부 액세스의 준수 정책에 대한 장치 상태 증명 평가<!-- 1235616 --> |  [버전 1710](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm) |[1802 버전](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm)|
-| Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행 <!-- 1236459 --> |  [버전 1706](/sccm/apps/deploy-use/create-deploy-scripts)|[1802 버전](/sccm/apps/deploy-use/create-deploy-scripts)|
-| Microsoft Surface 드라이버 업데이트 관리<!-- 1098490 --> |  [버전 1706](/sccm/sum/get-started/configure-classifications-and-products) | [버전 1710](/sccm/sum/get-started/configure-classifications-and-products)|
-| Configuration Manager로 Device Guard 관리 <!-- 1319346 --> |  [버전 1702](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)|![아직 추가되지 않음](media/red_x.png)|
-| 작업 순서 콘텐츠 사전 캐싱 <!-- 1021244 --> |  [버전 1702](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content) | [버전 1710](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content)|
-| 응용 프로그램을 설치하기 전에 실행 중인 실행 파일 확인 <!-- 1284624 --> |   [버전 1702](/sccm/apps/deploy-use/deploy-applications#how-to-check-for-running-executable-files-before-installing-an-application) |[버전 1706](/sccm/apps/deploy-use/deploy-applications#how-to-check-for-running-executable-files-before-installing-an-application)|
-| 데이터 웨어하우스 서비스 지점 <!-- 1277922 --> |  [버전 1702](/sccm/core/servers/manage/data-warehouse) |[버전 1706](/sccm/core/servers/manage/data-warehouse)|
-| 클라이언트에 콘텐츠 배포를 위한 피어 캐시 <!-- 1101436 --> |  [버전 1610](/sccm/core/plan-design/hierarchy/client-peer-cache) | [버전 1710](/sccm/core/plan-design/hierarchy/client-peer-cache)|
-| 클라우드 관리 게이트웨이 <!-- 1101764 --> |  [버전 1610](/sccm/core/clients/manage/plan-cloud-management-gateway) |[1802 버전](/sccm/core/clients/manage/plan-cloud-management-gateway)|
-| Log Analytics 커넥터 <!-- 1236739 --> | [버전 1606](/sccm/core/clients/manage/sync-data-log-analytics) |[1802 버전](/sccm/core/clients/manage/sync-data-log-analytics)|
-| 클러스터 인식 컬렉션 서비스(서버 그룹 서비스) <!-- 1081776 --> | [버전 1602](/sccm/core/get-started/capabilities-in-technical-preview-1605#BKMK_ServerGroups)|![아직 추가되지 않음](media/red_x.png)|
-| System Center Configuration Manager에서 관리하는 PC에 대한 조건부 액세스 <!--  --> | [버전 1602](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm)     | [버전 1702](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm)                     |
+| SMS 공급 기업 API <!--1359052--> | 버전 1810 | ![아직 추가되지 않음](media/red_x.png) |
+| [향상된 HTTP 사이트 시스템](/sccm/core/plan-design/hierarchy/enhanced-http) <!--1356889,1358228--> | 버전 1806 | 버전 1810 |
+| [공동 관리형 디바이스용 모바일 앱](/sccm/core/clients/manage/co-management-switch-workloads#workloads-able-to-be-transitioned-to-intune) <!--1357892--> | 버전 1806 | ![아직 추가되지 않음](media/red_x.png) |
+| [Package Conversion Manager](/sccm/apps/pcm/package-conversion-manager) <!--1357861--> | 버전 1806 | 버전 1810 |
+| [iOS용 Cisco AnyConnect 4.0.07x 이상 지원](/sccm/mdm/deploy-use/create-vpn-profiles) <!--1357393--> | 1802 버전 | 1802 버전 <br>4163547 업데이트 포함 |
+| [단계별 배포](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence) <!--1356837--> | 1802 버전 | 버전 1806 |
+| [작업 순서 실행 단계](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#add-child-task-sequences-to-a-task-sequence) <!--1261338--> |  버전 1710 | 1802 버전 |
+| [Windows Defender Exploit Guard](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy) <!--1355468--> | 버전 1710 | 1802 버전 |
+| [조건부 액세스의 규정 준수 정책에 대한 디바이스 상태 증명 평가](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm) <!--1235616--> | 버전 1710 | 1802 버전 |
+| [Windows PowerShell 스크립트 만들기 및 실행](/sccm/apps/deploy-use/create-deploy-scripts) <!--1236459--> | 버전 1706 | 1802 버전 |
+| [Microsoft Surface 드라이버 업데이트 관리](/sccm/sum/get-started/configure-classifications-and-products) <!--1098490--> | 버전 1706 | 버전 1710 |
+| [Device Guard 관리](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager) <!--1355092 (1319346)--> | 버전 1702 | ![아직 추가되지 않음](media/red_x.png) |
+| [작업 순서 콘텐츠 사전 캐싱](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content) <!--1021244--> | 버전 1702 | 버전 1710 |
+| [애플리케이션을 설치하기 전에 실행 중인 실행 파일 확인](/sccm/apps/deploy-use/deploy-applications#how-to-check-for-running-executable-files-before-installing-an-application) <!--1284624--> | 버전 1702 | 버전 1706 |
+| [데이터 웨어하우스 서비스 지점](/sccm/core/servers/manage/data-warehouse) <!--1277922--> | 버전 1702 | 버전 1706 |
+| [클라이언트에 콘텐츠 배포를 위한 피어 캐시](/sccm/core/plan-design/hierarchy/client-peer-cache) <!--1101436--> | 버전 1610 | 버전 1710 |
+| [클라우드 관리 게이트웨이](/sccm/core/clients/manage/plan-cloud-management-gateway) <!--1101764--> | 버전 1610 | 1802 버전 |
+| [Azure Log Analytics 커넥터](/sccm/core/clients/manage/sync-data-log-analytics) <!--1236739--> | 버전 1606 | 1802 버전 |
+| [클러스터 인식 컬렉션 서비스(서버 그룹 서비스)](/sccm/core/get-started/capabilities-in-technical-preview-1605#BKMK_ServerGroups) <!--1081776--> | 버전 1602 | ![아직 추가되지 않음](media/red_x.png) |
+| [Configuration Manager에서 관리하는 PC에 대한 조건부 액세스](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm) <!--  --> | 버전 1602 | 버전 1702 |
+
 <!--Image used = ![Not yet](media/red_x.png) -->
 
 > [!Tip]  

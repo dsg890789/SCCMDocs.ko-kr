@@ -10,12 +10,12 @@ ms.assetid: 4deac022-e397-4f1f-bc0a-cea6c6c6368d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3a49fd8e171b053a5cc89d316fce3651e2a2f567
-ms.sourcegitcommit: 8791bb9be477fe6a029e8a7a76e2ca310acd92e0
+ms.openlocfilehash: 7b7cb4a6a7ec6738bdf045b75bf88c8b4d8c4650
+ms.sourcegitcommit: 1439817f1309658b31008d7bafaab32fc5ef8789
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50411568"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52820104"
 ---
 # <a name="enhanced-http"></a>고급 HTTP
 
@@ -23,8 +23,9 @@ ms.locfileid: "50411568"
 
 <!--1356889,1358460-->
 
-> [!Note]  
-> 이 버전의 Configuration Manager에서 고급 HTTP는 시험판 기능입니다. 이 기능을 사용하려면 [시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요.  
+> [!Tip]  
+> 이 기능은 버전 1806에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 소개되었습니다. 버전 1810 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.  
+
 
 Microsoft는 모든 Configuration Manager 통신 경로에 HTTPS 통신을 사용할 것을 권장하지만 일부 고객의 경우 PKI 인증서 관리 부담으로 인해 어려울 수 있습니다. Azure AD(Azure Active Directory) 통합이 도입되면서 인증서 요구 사항의 일부는 줄었지만 전체가 없어지지는 않았습니다. 
 

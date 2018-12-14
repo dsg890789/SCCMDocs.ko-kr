@@ -1,8 +1,8 @@
 ---
 title: 릴리스 정보
 titleSuffix: Configuration Manager
-description: Microsoft 지원 기술 자료 문서에서 다루지 않거나 제품에서 아직 해결되지 않은 긴급한 문제에 대해서 알아보세요.
-ms.date: 08/21/2018
+description: Microsoft 지원 기술 자료 문서에서 다루지 않거나 제품에서 아직 해결되지 않은 긴급한 문제에 대해 알아봅니다.
+ms.date: 11/27/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 030947fd-f5e0-4185-8513-2397fb2ec96f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b31e0c84d0e3920024870361239e22bb90005ccb
-ms.sourcegitcommit: e7732dd67f19218cec576f70fe4ab44e2626b8e0
+ms.openlocfilehash: 41039ec31c11573424f044df009e9c364491b5f7
+ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48045218"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52456348"
 ---
 # <a name="release-notes-for-configuration-manager"></a>Configuration Manager의 릴리스 정보
 
@@ -29,9 +29,9 @@ Configuration Manager에서는 제품 릴리스 정보가 긴급한 문제로 �
 >  이 항목에는 Configuration Manager의 현재 분기에 대한 릴리스 정보가 포함되어 있습니다. 기술 미리 보기 분기에 대한 자세한 내용은 [기술 미리 보기](/sccm/core/get-started/technical-preview)를 참조하세요.  
 
 다른 버전에서 도입된 새 기능에 대한 자세한 내용은 다음 문서를 참조하세요.
+- [버전 1810의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1810)
 - [버전 1806의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1806)  
 - [버전 1802의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1802)
-- [버전 1710의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1710)
 
 
 
@@ -79,18 +79,8 @@ Configuration Manager 버전 1802부터 CEIP(사용자 환경 개선 프로그�
 <!-- ## Backup and recovery  -->
 
 
-## <a name="client-deployment-and-upgrade"></a>클라이언트 배포 및 업그레이드
+<!--## Client deployment and upgrade-->
 
-### <a name="azure-ad-enabled-clients-cant-communicate-with-management-point"></a>Azure AD 사용 클라이언트가 관리 지점과 통신할 수 없습니다.
-<!--501089-->  
-적용 대상: Configuration Manager 버전 1706
-<!--also fixed in 1710 HFRU-->  
-[인증을 위해 Azure AD를 사용하여 Configuration Manager Windows 10 클라이언트를 설치 및 할당](/sccm/core/clients/deploy/deploy-clients-cmg-azure)하는 시나리오에서 HTTPS 사용 관리 지점이 대체 데이터베이스 자격 증명을 사용하는 경우 클라이언트 통신에 실패합니다. 
-
-#### <a name="workaround"></a>해결 방법
-이 문제를 완화하려면 다음 작업 중 하나를 수행합니다.
-- 최신 버전으로 사이트를 업데이트하고 최신 핫픽스를 적용합니다.
-- 관리 지점에서 사용하는 자격 증명을 변경합니다.
 
 
 <!-- ## Operating system deployment  -->

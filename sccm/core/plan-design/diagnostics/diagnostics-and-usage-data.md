@@ -2,7 +2,7 @@
 title: 진단 및 사용 현황 데이터
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager가 수집하는 자체 진단 및 사용 현황 데이터에 대해 알아봅니다.
-ms.date: 07/30/2018
+ms.date: 11/27/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 88ac4e55-d47b-4c94-b9c3-704c6a48b845
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 031815e741128d605bf7ee50079338eba7aa720b
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 132604418ce810fb78b397f3d5f322b10abe6bb3
+ms.sourcegitcommit: 1439817f1309658b31008d7bafaab32fc5ef8789
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39384112"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52820019"
 ---
 # <a name="diagnostics-and-usage-data-for-system-center-configuration-manager"></a>System Center Configuration Manager의 진단 및 사용 현황 데이터
 
@@ -33,28 +33,30 @@ Configuration Manager에서는 진단 및 사용 현황 데이터를 수집하�
 ## <a name="articles"></a>문서
  다음 문서의 Configuration Manager에 대한 진단 및 사용 현황 데이터에 대해 자세히 알아봅니다.  
 
--   [진단 및 사용 현황 데이터 사용 방법](../../../core/plan-design/diagnostics/how-diagnostics-and-usage-data-is-used.md)  
+-   [진단 및 사용 현황 데이터 사용 방법](/sccm/core/plan-design/diagnostics/how-diagnostics-and-usage-data-is-used)  
 
 -   진단 사용 현황 데이터 수집의 수준:
+    - [1810에 대한 진단 데이터](/sccm/core/plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1810)  
+
     - [1806에 대한 진단 데이터](/sccm/core/plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1806)  
 
     - [1802에 대한 진단 데이터](/sccm/core/plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1802)  
-
-    - [1710에 대한 진단 데이터](/sccm/core/plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1710)  
     
--   [진단 및 사용 현황 데이터 수집 방법](../../../core/plan-design/diagnostics/how-diagnostics-and-usage-data-is-collected.md)  
+    - [1710에 대한 진단 데이터](/sccm/core/plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1710)  
 
--   [진단 및 사용 현황 데이터를 보는 방법](../../../core/plan-design/diagnostics/view-diagnostics-and-usage-data.md)  
+-   [진단 및 사용 현황 데이터 수집 방법](/sccm/core/plan-design/diagnostics/how-diagnostics-and-usage-data-is-collected)  
 
--   [CEIP(사용자 환경 개선 프로그램)](../../../core/plan-design/diagnostics/customer-experience-improvement-program-ceip.md)  
+-   [진단 및 사용 현황 데이터를 보는 방법](/sccm/core/plan-design/diagnostics/view-diagnostics-and-usage-data)  
+
+-   [CEIP(사용자 환경 개선 프로그램)](/sccm/core/plan-design/diagnostics/customer-experience-improvement-program-ceip)  
 
      > [!Note]  
      > Configuration Manager 버전 1802부터 CEIP 기능은 제품에서 제거됩니다.  
 
 
--   [진단 및 사용 현황 데이터에 대한 질문과 대답](../../../core/understand/frequently-asked-questions-about-diagnostics-and-usage-data.md)  
+-   [진단 및 사용 현황 데이터에 대한 질문과 대답](/sccm/core/understand/frequently-asked-questions-about-diagnostics-and-usage-data)  
 
 
 
 ## <a name="see-also"></a>참고 항목  
- [서비스 연결 지점 정보](../../../core/servers/deploy/configure/about-the-service-connection-point.md)
+ [서비스 연결 지점 정보](/sccm/core/servers/deploy/configure/about-the-service-connection-point)

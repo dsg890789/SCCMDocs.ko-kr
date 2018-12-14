@@ -2,7 +2,7 @@
 title: 클라우드 관리 게이트웨이에 대한 계획
 titleSuffix: Configuration Manager
 description: 인터넷 기반 클라이언트의 관리를 간소화하도록 CMG(클라우드 관리 게이트웨이)를 계획하고 설계합니다.
-ms.date: 10/24/2018
+ms.date: 11/27/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 2dc8c9f1-4176-4e35-9794-f44b15f4e55f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0f7e598da0953a20412f6c8279b90a95c1d26581
-ms.sourcegitcommit: 8791bb9be477fe6a029e8a7a76e2ca310acd92e0
+ms.openlocfilehash: b059fd3b8511a3cbbf308ea7a3ee21a4ec9dbfaa
+ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50411479"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52456722"
 ---
 # <a name="plan-for-the-cloud-management-gateway-in-configuration-manager"></a>Configuration Manager에서 클라우드 관리 게이트웨이 계획
 
@@ -98,12 +98,15 @@ CMG의 배포 및 운영에 포함되는 구성 요소는 다음과 같습니다
 
 
 ### <a name="azure-resource-manager"></a>Azure Resource Manager
-<!-- 1324735 --> 1802 버전부터 **Azure Resource Manager 배포**를 사용하여 CMG를 만들 수 있습니다. [Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview)는 모든 솔루션 리소스를 [리소스 그룹](/azure/azure-resource-manager/resource-group-overview#resource-groups)이라는 단일 엔터티로 관리하기 위한 최신 플랫폼입니다. Azure Resource Manager로 CMG를 배포하는 경우 사이트에서 Azure AD(Azure Active Directory)를 사용하여 필요한 클라우드 리소스를 인증하고 만듭니다. 이 최신 배포에는 클래식 Azure 관리 인증서가 필요하지 않습니다.  
+<!-- 1324735 --> 1802 버전부터 **Azure Resource Manager 배포**를 사용하여 CMG를 만들 수 있습니다. [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)는 모든 솔루션 리소스를 [리소스 그룹](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups)이라는 단일 엔터티로 관리하기 위한 최신 플랫폼입니다. Azure Resource Manager로 CMG를 배포하는 경우 사이트에서 Azure AD(Azure Active Directory)를 사용하여 필요한 클라우드 리소스를 인증하고 만듭니다. 이 최신 배포에는 클래식 Azure 관리 인증서가 필요하지 않습니다.  
+
+> [!Note]  
+> 이 기능은 Azure CSP(클라우드 서비스 공급자)를 지원하지 않습니다. Azure Resource Manager를 통한 CMG 배포는 CSP에서 지원하지 않는 클래식 클라우드 서비스를 계속 사용합니다. 자세한 내용은 [Azure CSP에서 사용 가능한 Azure 서비스](https://docs.microsoft.com/azure/cloud-solution-provider/overview/azure-csp-available-services)를 참조하세요. 
 
 Azure 관리 인증서를 사용하는 **클래식 서비스 배포** 옵션도 CMG 마법사에서 계속 제공됩니다. 리소스의 배포 및 관리를 간소화하기 위해 모든 새 CMG 인스턴스에 Azure Resource Manager 배포 모델을 사용하는 것이 좋습니다. 가능한 경우 리소스 관리자를 통해 기존 CMG 인스턴스를 재배포합니다. 자세한 내용은 [CMG 수정](/sccm/core/clients/manage/cmg/setup-cloud-management-gateway#modify-a-cmg)을 참조하세요.
 
-> [!IMPORTANT]  
-> 이 기능은 Azure CSP(클라우드 서비스 공급자)를 지원하지 않습니다. Azure Resource Manager를 통한 CMG 배포는 CSP에서 지원하지 않는 클래식 클라우드 서비스를 계속 사용합니다. 자세한 내용은 [Azure CSP에서 사용 가능한 Azure 서비스](/azure/cloud-solution-provider/overview/azure-csp-available-services)를 참조하세요. 
+> [!Important]  
+> 1810 버전부터 Azure의 기존 서비스 배포는 Configuration Manager에서 더 이상 사용되지 않습니다. 이 버전은 이러한 Azure 배포의 만들기를 지원하는 마지막 버전입니다. 이 기능은 2019년 7월 1일 이후 릴리스된 첫 번째 Configuration 매니저 버전에서 제거됩니다. 이 시간 이전에 CMG 및 클라우드 배포 지점을 Azure Resource Manager 배포로 이동합니다. <!--SCCMDocs-pr issue #2993-->  
 
 
 ### <a name="hierarchy-design"></a>계층 디자인
@@ -158,7 +161,9 @@ Fourth Coffee는 시애틀 본사의 온-프레미스 데이터 센터에 중앙
 - Azure 클래식 배포 방법을 사용하는 경우 [**Azure 관리 인증서**](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#bkmk_azuremgmt)를 사용해야 합니다.  
 
     > [!TIP]  
-    > Configuration Manager 버전 1802부터, Microsoft는 **Azure Resource Manager** 배포 모델을 사용할 것을 권장합니다. 이 배포 모델에는 관리 인증서가 필요하지 않습니다.  
+    > Configuration Manager 버전 1802부터, Microsoft는 **Azure Resource Manager** 배포 모델을 사용할 것을 권장합니다. 이 배포 모델에는 관리 인증서가 필요하지 않습니다. 
+    > 
+    > 클래식 배포 방법은 1810 버전을 기준으로 더 이상 사용되지 않습니다.   
 
 - 클라이언트 OS 버전 및 인증 모델에 따라 **다른 인증서**가 필요할 수 있습니다. 자세한 내용은 [CMG 인증서](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway)를 참조하세요.  
 
@@ -183,7 +188,7 @@ Fourth Coffee는 시애틀 본사의 온-프레미스 데이터 센터에 중앙
 
 - 네트워크 부하 분산 장치를 사용하는 소프트웨어 업데이트 지점은 CMG에서 작동하지 않습니다. <!--505311-->  
 
-- 버전 1802부터 Azure 리소스 모델을 사용하는 CMG 배포는 Azure CSP(클라우드 서비스 공급자)에 대한 지원을 사용하지 않습니다. Azure Resource Manager를 통한 CMG 배포는 CSP에서 지원하지 않는 클래식 클라우드 서비스를 계속 사용합니다. 자세한 내용은 [Azure CSP에 사용할 수 있는 Azure 서비스](/azure/cloud-solution-provider/overview/azure-csp-available-services)를 참조하세요.  
+- 버전 1802부터 Azure 리소스 모델을 사용하는 CMG 배포는 Azure CSP(클라우드 서비스 공급자)에 대한 지원을 사용하지 않습니다. Azure Resource Manager를 통한 CMG 배포는 CSP에서 지원하지 않는 클래식 클라우드 서비스를 계속 사용합니다. 자세한 내용은 [Azure CSP에 사용할 수 있는 Azure 서비스](https://docs.microsoft.com/azure/cloud-solution-provider/overview/azure-csp-available-services)를 참조하세요.  
 
 
 ### <a name="support-for-configuration-manager-features"></a>Configuration Manager 기능 지원

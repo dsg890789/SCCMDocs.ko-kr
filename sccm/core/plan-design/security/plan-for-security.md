@@ -2,7 +2,7 @@
 title: 보안 계획
 titleSuffix: Configuration Manager
 description: Configuration Manager의 보안에 대한 모범 사례 및 기타 정보를 확인합니다.
-ms.date: 10/22/2018
+ms.date: 11/27/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 2a216814-ca8c-4d2e-bcef-dc00966a3c9f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e03c2b53044225eeb790d70474868e337a4cc997
-ms.sourcegitcommit: 8791bb9be477fe6a029e8a7a76e2ca310acd92e0
+ms.openlocfilehash: 5332fa778b343a5eaae93a08db0826823fffce42
+ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50411462"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52456382"
 ---
 # <a name="plan-for-security-in-configuration-manager"></a>Configuration Manager의 보안 계획
 
@@ -40,6 +40,8 @@ ms.locfileid: "50411462"
 - [역할 기반 관리 계획](#BKMK_PlanningForRBA)  
 
 - [Azure Active Directory 계획](#bkmk_planazuread)  
+
+- [SMS 공급 기업 인증 계획](#bkmk_auth)
 
 
 
@@ -409,6 +411,25 @@ Configuration Manager에서 선택할 수 있는 구성 옵션은 다양하므�
 
 
  Azure AD에 대한 자세한 내용은 [Azure Active Directory 설명서](https://docs.microsoft.com/azure/active-directory/)를 참조하세요.
+
+
+
+## <a name="bkmk_auth"></a> SMS 공급 기업 인증 계획
+<!--1357013--> 
+
+1810 버전부터 관리자가 Configuration Manager 사이트에 액세스하는 데 필요한 최소 인증 수준을 지정할 수 있습니다. 이 기능은 관리자에게 필요한 수준으로 Windows에 로그인하도록 요구합니다. 이 기능은 SMS 공급 기업에 액세스하는 모든 구성 요소에 적용됩니다. 예를 들어 Configuration Manager 콘솔, SDK 메서드 및 Windows PowerShell cmdlet에 적용됩니다. 
+
+이 구성은 계층 구조 범위 설정입니다. 이 설정을 변경하기 전에 모든 Configuration Manager 관리자가 필요한 인증 수준을 사용하여 Windows에 로그인할 수 있는지 확인합니다. 
+
+다음 수준을 사용할 수 있습니다.
+
+- **Windows 인증**: Active Directory 도메인 자격 증명을 사용한 인증이 필요합니다.   
+
+- **인증서 인증**: 신뢰할 수 있는 PKI 인증 기관에서 발급한 유효한 인증서를 사용한 인증을 요구합니다.  
+
+- **비즈니스용 Windows Hello 인증**: 장치에 연결되고 생체 인식 또는 PIN을 사용하는 강력한 2단계 인증으로 인증해야 합니다.  
+
+자세한 내용은 [SMS 공급자 계획](/sccm/core/plan-design/hierarchy/plan-for-the-sms-provider#bkmk_auth)을 참조하세요. 
 
 
 

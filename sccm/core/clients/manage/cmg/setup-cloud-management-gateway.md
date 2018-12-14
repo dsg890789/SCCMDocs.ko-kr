@@ -5,17 +5,17 @@ description: CMG(클라우드 관리 게이트웨이)를 설정하기 위해 이
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.date: 09/10/2018
+ms.date: 11/27/2018
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: e0ec7d66-1502-4b31-85bb-94996b1bc66f
-ms.openlocfilehash: a5f356eef4d72040bd069fc17dd20fdbc3587cd6
-ms.sourcegitcommit: 2badee2b63ae63687795250e298f463474063100
+ms.openlocfilehash: 041ea28e91b77545b8984742b4199782d1edb6b7
+ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45601061"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52456535"
 ---
 # <a name="set-up-cloud-management-gateway-for-configuration-manager"></a>Configuration Manager용 클라우드 관리 게이트웨이 설정
 
@@ -38,13 +38,16 @@ ms.locfileid: "45601061"
 
 - 디자인에 따라 CMG에 하나 이상의 인증서가 필요합니다. 자세한 내용은 [클라우드 관리 게이트웨이에 대한 인증서](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway)를 참조하세요.  
 
-- 1802 버전부터는 **Azure Resource Manager 배포** 또는 **클래식 서비스 배포**를 사용할지 선택합니다. 자세한 내용은 [Azure Resource Manager](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#azure-resource-manager)를 참조하세요. CMG의 Azure Resource Manager 배포에 다음 요구 사항이 필요합니다.  
+- 1802 버전부터 **Azure Resource Manager 배포**를 선택합니다. 자세한 내용은 [Azure Resource Manager](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#azure-resource-manager)를 참조하세요. CMG의 Azure Resource Manager 배포에 다음 요구 사항이 필요합니다.  
 
     - **클라우드 관리**를 위해 [Azure AD](/sccm/core/servers/deploy/configure/azure-services-wizard)와 통합 Azure AD 사용자 검색은 필요하지 않습니다.  
 
     - 구독 관리자는 로그인해야 합니다.  
 
 - CMG의 클래식 서비스 배포에 다음 요구 사항이 필요합니다.  
+
+    > [!Important]  
+    > 1810 버전부터 Azure의 클래식 서비스 배포는 Configuration Manager에서 사용되지 않습니다. 클라우드 관리 게이트웨이에 대해 Azure Resource Manager 배포를 사용하기 시작합니다. 자세한 내용은 [CMG 계획](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#azure-resource-manager)을 참조하세요.  
 
     - Azure 구독 ID  
 
@@ -66,11 +69,14 @@ ms.locfileid: "45601061"
 
 2. 리본에서 **클라우드 관리 게이트웨이 만들기**를 선택합니다.  
 
-3. 1802 버전부터는 마법사의 일반 페이지에서 먼저 CMG 배포 메서드, **Azure Resource Manager 배포** 또는 **클래식 서비스 배포**를 선택합니다.  
+3. 1802 버전부터는 마법사의 일반 페이지에서 CMG 배포 메서드로 **Azure Resource Manager 배포**를 선택합니다.  
 
-    1. **Azure Resource Manager 배포**의 경우: **로그인**을 선택하여 Azure 구독 관리자 계정으로 인증합니다. 마법사가 Azure AD 통합 필수 구성 요소 중에 저장된 정보로 나머지 필드를 자동으로 채웁니다. 여러 구독을 소유하고 있는 경우 사용할 구독의 **구독 ID**를 선택합니다.  
+    **로그인**을 선택하여 Azure 구독 관리자 계정으로 인증합니다. 마법사가 Azure AD 통합 필수 구성 요소 중에 저장된 정보로 나머지 필드를 자동으로 채웁니다. 여러 구독을 소유하고 있는 경우 사용할 구독의 **구독 ID**를 선택합니다.
 
-    2. **클래식 서비스 배포**, *Configuration Manager 버전 1706 및 1710*:에서 Azure **구독 ID**를 입력합니다. 그런 다음, **찾아보기**를 선택하고, Azure 관리 인증서에 대한 .PFX 파일을 선택합니다. 
+    > [!Note]  
+    > 1810 버전부터 Azure의 클래식 서비스 배포는 Configuration Manager에서 사용되지 않습니다. 
+    > 
+    > 클래식 서비스 배포를 사용해야 하는 경우 이 페이지에서 해당 옵션을 선택합니다. 먼저 Azure **구독 ID**를 입력합니다. 그런 다음, **찾아보기**를 선택하고, Azure 관리 인증서에 대한 .PFX 파일을 선택합니다. 
 
 4. 이 CMG에 대한 **Azure 환경**을 지정합니다. 드롭다운 목록에 있는 옵션은 배포 메서드에 따라 달라질 수 있습니다.  
 
@@ -93,7 +99,7 @@ ms.locfileid: "45601061"
 7. **인증서**를 선택하여 신뢰할 수 있는 클라이언트 루트 인증서를 추가합니다. 최대 두 개의 신뢰할 수 있는 루트 CA 및 네 개의 중간(하위) CA를 추가합니다.  
 
     > [!Note]  
-    > 버전 1806부터 CMG를 만들 경우 설정 페이지에서 신뢰할 수 있는 루트 인증서를 더 이상 제공할 필요가 없습니다. 이 인증서는 클라이언트 인증용 Azure AD(Azure Active Directory)를 사용할 때 필요하지 않지만 마법사에서는 필요합니다. PKI 클라이언트 인증 인증서를 사용하는 경우 여전히 신뢰할 수 있는 루트 인증서를 CMG에 추가해야 합니다.<!--SCCMDocs-pr issue #2872-->  
+    > 버전 1806부터는 CMG를 만들 경우 설정 페이지에서 신뢰할 수 있는 루트 인증서를 더 이상 제공할 필요가 없습니다. 이 인증서는 클라이언트 인증용 Azure AD(Azure Active Directory)를 사용할 때 필요하지 않지만 마법사에서는 필요합니다. PKI 클라이언트 인증 인증서를 사용하는 경우 여전히 신뢰할 수 있는 루트 인증서를 CMG에 추가해야 합니다..<!--SCCMDocs-pr issue #2872-->  
 
 8. 마법사는 기본적으로 **클라이언트 인증서 해지를 확인**하는 옵션을 사용합니다. 이 확인이 작동하도록 CRL(인증서 해지 목록)이 공개적으로 게시되어야 합니다. CRL을 게시하지 않는 경우 이 옵션의 선택을 취소합니다.  
 

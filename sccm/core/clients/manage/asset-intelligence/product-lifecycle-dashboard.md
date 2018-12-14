@@ -2,7 +2,7 @@
 title: 제품 수명 주기 대시보드
 titleSuffix: Configuration Manager
 description: Configuration Manager의 제품 수명 주기 대시보드를 사용하여 Microsoft 수명 주기 정책을 봅니다.
-ms.date: 07/30/2018
+ms.date: 11/27/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 8b5b144a-0e5f-4fcc-87b2-33b9bcdb5655
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: dd1a3a56bac6d7917c70db731b1735a195fae3df
-ms.sourcegitcommit: dfb2cb01c1608b848f2f2fee7c84500e7adcb7a4
+ms.openlocfilehash: bda6e266c6be8897de87a2a30fb0198a4b4c8446
+ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101248"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52456026"
 ---
 # <a name="manage-microsoft-lifecycle-policy-with-configuration-manager"></a>Configuration Manager로 Microsoft 수명 주기 정책 관리
 
@@ -24,6 +24,8 @@ ms.locfileid: "49101248"
 버전 1806부터 Configuration Manager 제품 수명 주기 대시보드를 사용하여 Microsoft 수명 주기 정책을 볼 수 있습니다. 대시보드에는 Configuration Manager로 관리되는 장치에 설치된 Microsoft 제품에 대한 Microsoft 수명 주기 정책의 상태가 표시됩니다. 또한 사용자 환경의 Microsoft 제품, 지원 가능성 상태 및 지원 종료 날짜에 대한 정보도 제공합니다. 대시보드를 사용하여 각 제품에 대한 지원 가용성을 파악합니다. 이 정보는 현재 지원 종료에 도달하기 전에 사용하는 Microsoft 제품을 업데이트할 시기를 계획하는 데 도움이 됩니다.  
 
 자세한 내용은 [Microsoft 수명 주기 정책](https://support.microsoft.com/lifecycle)을 참조하세요.
+
+1810 버전부터 대시보드에는 System Center 2012 Configuration Manager 이상에 대한 정보가 포함되어 있습니다.<!--1358702-->  
 
 
 
@@ -59,6 +61,13 @@ Configuration Manager 콘솔에서 수명 주기 대시보드에 액세스하려
 
 ![콘솔의 제품 수명 주기 대시보드 스크린샷](media/product-lifecycle-dashboard.png)
 
+**제품 범주** 목록에서 다음 옵션 중 하나를 선택하여 보기를 변경합니다.  
+- **모두**: 모든 제품을 함께 표시합니다.  
+- **Windows 클라이언트**: Windows 클라이언트 OS 버전을 표시합니다.  
+- **Windows Server**: Windows 서버 OS 버전을 표시합니다.  
+- **데이터베이스**: SQL Server 버전을 표시합니다.  
+- **Configuration Manager**: 1810 버전부터 Configuration Manager 버전을 표시합니다.  
+
 이 대시보드에는 다음과 같은 타일에 있습니다.  
 
 - **수명이 종료된 상위 5개 제품:** 이 타일은 사용자 환경에서 찾은 수명이 종료된 제품의 통합 데이터 뷰입니다. 그래프는 운영 체제 및 SQL Server 제품에 대한 지원 수명 주기를 기준으로 만료된, 설치된 소프트웨어를 보여 줍니다.  
@@ -79,13 +88,16 @@ Configuration Manager 콘솔에서 수명 주기 대시보드에 액세스하려
 
 ## <a name="reporting"></a>보고
 
-추가 보고서도 제공됩니다. Configuration Manager 콘솔에서 **모니터링** 작업 영역으로 이동하여 **보고**를 펼치고 **보고서**를 펼칩니다. 다음 보고서가 **제품 수명 주기** 범주 아래에 새로 추가되었습니다.  
+추가 보고서도 제공됩니다. Configuration Manager 콘솔에서 **모니터링** 작업 영역으로 이동하여 **보고**를 펼치고 **보고서**를 펼칩니다. 다음 보고서가 **Asset Intelligence** 범주에 새로 추가되었습니다.  
 
-- **일반적인 제품 수명 주기 개요:** 제품 수명 주기 목록을 표시합니다. 제품 이름과 만료일별로 목록을 필터링합니다.  
+- **수명 주기 01A - 특정 소프트웨어 제품이 있는 컴퓨터**: 지정한 제품이 검색된 컴퓨터 목록을 표시합니다.  
 
-- **특정 소프트웨어 제품이 있는 컴퓨터:** 지정한 제품이 검색된 컴퓨터 목록을 표시합니다.  
+- **수명 주기 02A - 조직에서 만료된 제품이 있는 머신 목록**: 만료된 제품이 있는 컴퓨터를 표시합니다. 이 보고서는 제품 이름으로 필터링할 수 있습니다.
 
-- **조직에 있는 만료된 제품의 목록:** 수명 주기 날짜가 만료된, 사용자 환경의 제품에 대한 세부 정보를 표시합니다.  
+- **수명 주기 03A - 조직에 있는 만료된 제품의 목록**: 수명 주기 날짜가 만료된, 사용자 환경의 제품에 대한 세부 정보를 표시합니다.  
 
-- **조직에서 만료된 제품이 있는 머신 목록:** 만료된 제품이 있는 컴퓨터를 표시합니다. 이 보고서는 제품 이름으로 필터링할 수 있습니다.
+- **수명 주기 04A - 일반적인 제품 수명 주기 개요**: 제품 수명 주기의 목록을 표시합니다. 제품 이름과 만료일별로 목록을 필터링합니다.  
 
+- **수명 주기 05A - 제품 수명 주기 대시보드**:1810 버전부터 이 보고서에는 콘솔 내 대시보드와 비슷한 정보가 포함됩니다. 사용자 환경의 제품 개수 및 남은 지원 기간을 표시하려면 범주를 선택합니다.  
+
+자세한 내용은 [보고서 목록](/sccm/core/servers/manage/list-of-reports#asset-intelligence)을 참조하세요.<!--SCCMDocs issue 997-->  

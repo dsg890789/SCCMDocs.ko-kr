@@ -2,7 +2,7 @@
 title: 보안 구성
 titleSuffix: Configuration Manager
 description: Configuration Manager에 대한 보안 관련 옵션을 구성합니다.
-ms.date: 10/22/2018
+ms.date: 11/27/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 552e7e3d-e584-4a7c-9155-0f796a14b678
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: dc0f57bcc06911f34da481c2e3be81c3cb0de1c2
-ms.sourcegitcommit: 8791bb9be477fe6a029e8a7a76e2ca310acd92e0
+ms.openlocfilehash: d1aaf6db583d9749dda3be14cfd06acbff19b093
+ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50411411"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52456093"
 ---
 # <a name="configure-security-in-configuration-manager"></a>Configuration Manager에서 보안 구성
 
@@ -27,6 +27,7 @@ ms.locfileid: "50411411"
 - [역할 기반 관리](#BKMK_ConfigureRBA)  
 - [계정 관리](#BKMK_ManageAccounts)  
 - [Azure Active Directory 구성](#bkmk_azuread)  
+- [SMS 공급 기업 인증 구성](#bkmk_auth)  
 
 
 
@@ -145,6 +146,12 @@ Configuration Manager에서는 여러 가지 작업과 용도를 위해 Windows 
 ##  <a name="bkmk_azuread"></a> Azure Active Directory 구성
 
 Azure AD(Azure Active Directory)와 Configuration Manager를 통합하여 환경을 간소화하고 클라우드를 지원합니다. 사이트와 클라이언트가 Azure AD를 사용하여 인증받도록 허용합니다. 자세한 내용은 [Azure 서비스 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)의 **클라우드 관리** 서비스를 참조하세요.
+
+
+
+## <a name="bkmk_auth"></a> SMS 공급 기업 인증 구성
+
+1810 버전부터 관리자가 Configuration Manager 사이트에 액세스하는 데 필요한 최소 인증 수준을 지정할 수 있습니다. 이 기능은 관리자에게 필요한 수준으로 Windows에 로그인하도록 요구합니다. 자세한 내용은 [SMS 공급자 계획](/sccm/core/plan-design/hierarchy/plan-for-the-sms-provider#bkmk_auth)을 참조하세요. <!--1357013-->  
 
 
 

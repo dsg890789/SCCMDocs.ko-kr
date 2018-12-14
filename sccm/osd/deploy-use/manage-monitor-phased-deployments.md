@@ -2,7 +2,7 @@
 title: 단계적 배포 관리 및 모니터링
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 소프트웨어에 대한 단계적 배포를 관리 및 모니터링하는 방법을 이해합니다.
-ms.date: 07/30/2018
+ms.date: 11/27/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -10,18 +10,21 @@ ms.assetid: dc245916-bc11-4983-9c4d-015f655007c1
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 1889ba3ea19d27676089f2a9a24cef812c9f526c
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 5324e00f17770feca25d40c645d8e344df797f21
+ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385864"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52456331"
 ---
 # <a name="manage-and-monitor-phased-deployments"></a>단계적 배포 관리 및 모니터링
 
 이 문서에서는 단계적 배포를 관리 및 모니터링하는 방법을 설명합니다. 관리 작업은 수동으로 다음 단계 시작 및 단계 일시 중단 또는 다시 시작을 포함합니다. 
 
-먼저 [단계적 배포를 만들](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence)어야 합니다. 
+먼저 단계적 배포를 만들어야 합니다. 
+- [응용 프로그램](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence?toc=/sccm/apps/toc.json&bc=/sccm/apps/breadcrumb/toc.json)  
+- [소프트웨어 업데이트](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence?toc=/sccm/sum/toc.json&bc=/sccm/sum/breadcrumb/toc.json)  
+- [작업 순서](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence)  
 
 
 
@@ -31,7 +34,14 @@ ms.locfileid: "39385864"
 
 1. 이 작업을 시작하는 방법은 배포되는 소프트웨어의 종류에 따라 다릅니다.  
 
-    - **응용 프로그램**(버전 1806 이상에서만): **소프트웨어 라이브러리**로 이동하여 **응용 프로그램 관리**를 확장하고 **응용 프로그램**을 선택합니다.   
+    - **애플리케이션**(버전 1806 이상에서만): **소프트웨어 라이브러리** 작업 영역으로 이동하고 **애플리케이션 관리**를 확장하고 **애플리케이션**을 선택합니다.   
+
+    - **소프트웨어 업데이트**(버전 1810 이상에서만): **소프트웨어 라이브러리** 작업 영역으로 이동한 다음, 다음 노드 중 하나를 선택합니다.    
+        - 소프트웨어 업데이트  
+            - **모든 소프트웨어 업데이트**  
+            - **소프트웨어 업데이트 그룹**   
+        - Windows 10 서비스, **모든 Windows 10 업데이트**  
+        - Office 365 클라이언트 관리, **Office 365 업데이트**  
 
     - **작업 순서**: **소프트웨어 라이브러리** 작업 영역으로 이동하여 **운영 체제**를 확장하고 **작업 순서**를 선택합니다.   
 
@@ -47,11 +57,18 @@ ms.locfileid: "39385864"
 
 ## <a name="bkmk_suspend"></a> 단계 일시 중단 및 다시 시작 
 
-단계적 배포를 수동으로 일시 중단 또는 다시 시작해야 합니다. 예를 들어 작업 순서에 대한 단계적 배포를 만듭니다. 파일럿 그룹에 단계를 모니터링하는 동안 많은 오류가 표시됩니다. 단계적 배포를 일시 중단하여 장치에서 작업 순서를 더 실행하지 않도록 합니다. 문제를 해결한 후 단계적 배포를 다시 시작하여 출시를 계속합니다. 
+단계적 배포를 수동으로 일시 중단하거나 다시 시작할 수 있습니다. 예를 들어 작업 순서에 대한 단계적 배포를 만듭니다. 파일럿 그룹에 단계를 모니터링하는 동안 많은 오류가 표시됩니다. 단계적 배포를 일시 중단하여 장치에서 작업 순서를 더 실행하지 않도록 합니다. 문제를 해결한 후 단계적 배포를 다시 시작하여 출시를 계속합니다. 
 
 1. 이 작업을 시작하는 방법은 배포되는 소프트웨어의 종류에 따라 다릅니다.  
 
-    - **응용 프로그램**(버전 1806 이상에서만): **소프트웨어 라이브러리**로 이동하여 **응용 프로그램 관리**를 확장하고 **응용 프로그램**을 선택합니다.   
+    - **애플리케이션**(버전 1806 이상에서만): **소프트웨어 라이브러리** 작업 영역으로 이동하고 **애플리케이션 관리**를 확장하고 **애플리케이션**을 선택합니다.   
+
+    - **소프트웨어 업데이트**(버전 1810 이상에서만): **소프트웨어 라이브러리** 작업 영역으로 이동한 다음, 다음 노드 중 하나를 선택합니다.    
+        - 소프트웨어 업데이트  
+            - **모든 소프트웨어 업데이트**  
+            - **소프트웨어 업데이트 그룹**   
+        - Windows 10 서비스, **모든 Windows 10 업데이트**  
+        - Office 365 클라이언트 관리, **Office 365 업데이트**  
 
     - **작업 순서**: **소프트웨어 라이브러리** 작업 영역으로 이동하여 **운영 체제**를 확장하고 **작업 순서**를 선택합니다. 기존 작업 순서를 선택한 다음, 리본에서 **단계별 배포 만들기**를 클릭합니다.  
 
@@ -91,7 +108,8 @@ When you suspend a phased deployment, it sets the available and deadline times o
 
 **단계 선택** 드롭다운 목록을 사용하여 **성공 조건** 타일의 표시를 변경합니다. 이 타일은 **단계 목표**를 배포의 현재 규정 준수와 비교합니다. 기본 설정으로 단계 목표는 95%입니다. 이 값은 배포가 다음 단계로 이동하는 데 95% 규정 준수가 필요함을 의미합니다. 
 
-이 예제에서 단계 목표는 65%이며, 현재 규정 준수는 66.7%입니다. 첫 번째 단계가 성공 조건을 충족했으므로 단계적 배포는 두 번째 단계로 자동으로 이동했습니다.
+이 예제에서 단계 목표는 65%이며, 현재 규정 준수는 66.7%입니다. 첫 번째 단계가 성공 조건을 충족했으므로 단계적 배포는 두 번째 단계로 자동으로 이동했습니다.  
+
 ![단계적 배포 상태에서 예제 성공 조건 타일](media/pod-status-success-criteria-tile.png)
 
 단계 목표는 *다음* 단계에 대한 단계 설정의 **배포 성공률**과 동일합니다. 단계적 배포의 경우 다음 단계를 시작하기 위해 해당 두 번째 단계는 첫 번째 단계의 성공 조건을 정의합니다. 이 설정을 보려면: 

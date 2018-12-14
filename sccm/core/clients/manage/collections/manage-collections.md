@@ -10,12 +10,12 @@ ms.assetid: e102fd1a-76df-4d8e-b1b0-10ee18318f67
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5d7c967ce02c009cd9659c7956f7ca79f4a34faf
-ms.sourcegitcommit: be8c0182db9ef55a948269fcbad7c0f34fd871eb
+ms.openlocfilehash: 03b34c09a5fef63316bb1d9d1a94dbbfc3ccf69f
+ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42755975"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52456263"
 ---
 # <a name="how-to-manage-collections-in-configuration-manager"></a>Configuration Manager에서 컬렉션을 관리하는 방법
 
@@ -73,40 +73,11 @@ ms.locfileid: "42755975"
 
 
 #### <a name="client-notification"></a>클라이언트 알림
- 선택한 장치 컬렉션의 모든 클라이언트에게 즉시 다음 작업 중 하나를 수행하도록 지시합니다.
-
- - **컴퓨터 정책 다운로드**: 장치 정책을 새로 고칩니다. 자세한 내용은 [Configuration Manager 클라이언트에 대한 정책 검색 시작](/sccm/core/clients/manage/manage-clients#BKMK_PolicyRetrieval)을 참조하세요.  
-
- - **사용자 정책 다운로드**: 사용자 정책을 새로 고칩니다.  
-
- - **검색 데이터 수집**: DDR(검색 데이터 레코드)을 전송하도록 클라이언트를 트리거합니다. 자세한 내용은 [하트비트 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#bkmk_aboutHeartbeat)을 참조하세요.  
-
- - **소프트웨어 인벤토리 수집**: 소프트웨어 인벤토리 주기를 실행하도록 클라이언트를 트리거합니다. 자세한 내용은 [소프트웨어 인벤토리 소개](/sccm/core/clients/manage/inventory/introduction-to-software-inventory)를 참조하세요.  
-
- - **하드웨어 인벤토리 수집**: 하드웨어 인벤토리 주기를 실행하도록 클라이언트를 트리거합니다. 자세한 내용은 [하드웨어 인벤토리 소개](/sccm/core/clients/manage/inventory/introduction-to-hardware-inventory)를 참조하세요.  
-
- - **응용 프로그램 배포 평가**: 응용 프로그램 배포 평가 주기를 실행하도록 클라이언트를 트리거합니다. 자세한 내용은 [배포의 재평가 일정](/sccm/core/clients/deploy/about-client-settings#schedule-re-evaluation-for-deployments)을 참조하세요.  
-
- - **소프트웨어 업데이트 배포 평가**: 소프트웨어 업데이트 배포 평가 주기를 실행하도록 클라이언트를 트리거합니다. 자세한 내용은 [소프트웨어 업데이트 소개](/sccm/sum/understand/software-updates-introduction)를 참조하세요.  
-
- - **다음 소프트웨어 업데이트 지점으로 전환**: 다음 사용 가능한 소프트웨어 업데이트 지점으로 전환하도록 클라이언트를 트리거합니다. 자세한 내용은 [소프트웨어 업데이트 지점 전환](/sccm/sum/plan-design/plan-for-software-updates#BKMK_SUPSwitching)을 참조하세요.  
-
- - **디바이스 상태 증명 평가**: 최신 장치 성능 상태를 확인하고 보내도록 Windows 10 클라이언트를 트리거합니다. 자세한 내용은 [상태 증명](/sccm/core/servers/manage/health-attestation)을 참조하세요.  
-
- - **조건부 액세스 준수 확인**: 조건부 액세스 준수를 확인하도록 클라이언트를 트리거합니다. 자세한 내용은 [PC용 O365 서비스에 대한 액세스 관리](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm)를 참조하세요.  
+ 자세한 내용은 [클라이언트 알림](/sccm/core/clients/manage/client-notification)을 참조하세요.
 
 
 #### <a name="endpoint-protection"></a>Endpoint Protection
- 선택한 장치 컬렉션의 모든 클라이언트에게 즉시 다음 작업 중 하나를 수행하도록 지시합니다.
-
- - **전체 검사**: *전체* 맬웨어 방지 검사를 실행하도록 Endpoint Protection 또는 Windows Defender를 트리거합니다.  
-
- - **빠른 검사**: *빠른* 맬웨어 방지 검사를 실행하도록 Endpoint Protection 또는 Windows Defender를 트리거합니다.  
-
- - **정의 다운로드**: 최신 맬웨어 방지 정의를 다운로드하도록 Endpoint Protection 또는 Windows Defender를 트리거합니다.  
-
-
- 자세한 내용은 [Configuration Manager의 Endpoint Protection](/sccm/protect/deploy-use/endpoint-protection)을 참조하세요.
+ 자세한 내용은 [클라이언트 알림](/sccm/core/clients/manage/client-notification)을 참조하세요.
 
 
 #### <a name="export"></a>내보내기

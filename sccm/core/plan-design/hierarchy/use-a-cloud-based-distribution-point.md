@@ -2,7 +2,7 @@
 title: 클라우드 배포 지점
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 클라우드 배포 지점을 사용하여 Microsoft Azure를 통해 소프트웨어 콘텐츠를 배포하기 위한 계획과 디자인입니다.
-ms.date: 09/10/2018
+ms.date: 11/27/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 3cd9c725-6b42-427d-9191-86e67f84e48c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 79b17ba00274459401dc81035833163e75939be0
-ms.sourcegitcommit: 2badee2b63ae63687795250e298f463474063100
+ms.openlocfilehash: 4673da59da7fede2f425948472c31a620d13a258
+ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45601146"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52456297"
 ---
 # <a name="use-a-cloud-distribution-point-in-configuration-manager"></a>Configuration Manager에서 클라우드 배포 지점 사용
 
@@ -87,12 +87,15 @@ ms.locfileid: "45601146"
 ### <a name="azure-resource-manager"></a>Azure Resource Manager
 <!--1322209--> 1806 버전부터 **Azure Resource Manager 배포**를 사용하여 클라우드 배포 지점을 만듭니다. [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)는 모든 솔루션 리소스를 [리소스 그룹](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups)이라는 단일 엔터티로 관리하기 위한 최신 플랫폼입니다. Azure Resource Manager로 클라우드 배포 지점을 배포하는 경우 사이트에서 Azure AD(Azure Active Directory)를 사용하여 필요한 클라우드 리소스를 인증하고 만듭니다. 이 최신 배포에는 클래식 Azure 관리 인증서가 필요하지 않습니다.  
 
+> [!Note]  
+> 이 기능은 Azure CSP(클라우드 서비스 공급자)를 지원하지 않습니다. Azure Resource Manager를 통한 클라우드 배포 지점 배포는 CSP에서 지원하지 않는 클래식 클라우드 서비스를 계속 사용합니다. 자세한 내용은 [Azure CSP에서 사용 가능한 Azure 서비스](/azure/cloud-solution-provider/overview/azure-csp-available-services)를 참조하세요.  
+
 Azure 관리 인증서를 사용하는 **클래식 서비스 배포** 옵션도 클라우드 배포 지점 마법사에서 계속 제공됩니다. 리소스의 배포 및 관리를 간소화하려면 모든 새 클라우드 배포 지점에 Azure Resource Manager 배포 모델을 사용하는 것이 좋습니다. 가능하면 Resource Manager를 통해 기존 클라우드 배포 지점을 재배포합니다.
 
-Configuration Manager는 기존 클래식 클라우드 배포 지점을 Azure Resource Manager 배포 모델로 마이그레이션하지 않습니다. Azure Resource Manager 배포를 사용하여 새 클라우드 배포 지점을 만든 다음, 클래식 클라우드 배포 지점을 제거합니다. 
+> [!Important]  
+> 1810 버전부터 Azure의 클래식 서비스 배포는 Configuration Manager에서 사용되지 않습니다. 이 버전은 이러한 Azure 배포의 생성을 지원하는 마지막 버전입니다. 이 기능은 2019년 7월 1일 이후 릴리스된 첫 번째 Configuration Manager 버전에서 제거됩니다. 이 시간 전에 CMG 및 클라우드 배포 지점을 Azure Resource Manager 배포로 이동합니다. <!--SCCMDocs-pr issue #2993-->  
 
-> [!IMPORTANT]  
-> 이 기능은 Azure CSP(클라우드 서비스 공급자)를 지원하지 않습니다. Azure Resource Manager를 통한 클라우드 배포 지점 배포는 CSP에서 지원하지 않는 클래식 클라우드 서비스를 계속 사용합니다. 자세한 내용은 [Azure CSP에서 사용 가능한 Azure 서비스](/azure/cloud-solution-provider/overview/azure-csp-available-services)를 참조하세요.  
+Configuration Manager는 기존 클래식 클라우드 배포 지점을 Azure Resource Manager 배포 모델로 마이그레이션하지 않습니다. Azure Resource Manager 배포를 사용하여 새 클라우드 배포 지점을 만든 다음, 클래식 클라우드 배포 지점을 제거합니다. 
 
 
 ### <a name="hierarchy-design"></a>계층 디자인
@@ -134,12 +137,14 @@ Azure의 특정 지역에 클라우드 배포 지점을 설치하는 경우에�
 
 - 사이트 서버에는 클라우드 서비스를 배포하고 관리하기 위해 **인터넷 액세스** 권한이 필요합니다.  
 
+- **Azure Resource Manager** 배포 방법을 사용하는 경우 Configuration Manager를 **클라우드 관리**용 [Azure AD](/sccm/core/servers/deploy/configure/azure-services-wizard)와 통합합니다. Azure AD *사용자 검색*은 필요하지 않습니다.  
+
 - Azure 클래식 배포 방법을 사용하는 경우 **Azure 관리 인증서**가 필요합니다. 자세한 내용은 아래 [인증서](#bkmk_certs) 섹션을 참조하세요.   
 
     > [!TIP]  
     > Configuration Manager 버전 1806부터 **Azure Resource Manager** 배포 모델을 사용합니다. 이 배포 모델에는 관리 인증서가 필요하지 않습니다.  
-
-- **Azure Resource Manager** 배포 방법을 사용하는 경우 Configuration Manager를 [Azure AD](/sccm/core/clients/deploy/deploy-clients-cmg-azure)와 통합합니다. Azure AD 사용자 검색은 필요하지 않습니다.  
+    > 
+    > 클래식 배포 메서드는 1810 버전을 기준으로 사용되지 않습니다.   
 
 - **서버 인증 인증서**가 필요합니다. 자세한 내용은 아래 [인증서](#bkmk_certs) 섹션을 참조하세요.  
 
@@ -312,11 +317,11 @@ Azure 저장소 서비스는 단일 파일에 대해 초당 500개의 요청을 
 
 - **4096비트 키 길이**  
 
-- 버전 1710부터 **버전 3** 인증서를 지원합니다. 자세한 내용은 [CNG 인증서 개요](/sccm/core/plan-design/network/cng-certificates-overview)를 참조하세요.  
+- 버전 1710부터는 **버전 3** 인증서를 지원합니다. 자세한 내용은 [CNG 인증서 개요](/sccm/core/plan-design/network/cng-certificates-overview)를 참조하세요.  
 
-- 버전 1802부터 **시스템 암호화: 암호화, 해시 및 서명에 대해 FIPS 호환 알고리즘 사용** 정책으로 Windows를 구성합니다.  
+- 버전 1802부터는 **시스템 암호화: 암호화, 해시 및 서명에 대해 FIPS 호환 알고리즘 사용** 정책으로 Windows를 구성합니다.  
 
-- 버전 1802부터 **TLS 1.2**를 지원합니다. 자세한 내용은 [암호화 컨트롤 기술 참조](/sccm/core/plan-design/security/cryptographic-controls-technical-reference#about-ssl-vulnerabilities)를 참조하세요.  
+- 버전 1802부터는 **TLS 1.2**를 지원합니다. 자세한 내용은 [암호화 컨트롤 기술 참조](/sccm/core/plan-design/security/cryptographic-controls-technical-reference#about-ssl-vulnerabilities)를 참조하세요.  
 
 
 ### <a name="azure-management-certificate"></a>Azure 관리 인증서
@@ -327,6 +332,8 @@ Azure 클래식 배포 방법을 사용하는 경우 **Azure 관리 인증서**�
 
 > [!TIP]  
 > Configuration Manager 버전 1806부터 **Azure Resource Manager** 배포 모델을 사용합니다. 이 배포 모델에는 관리 인증서가 필요하지 않습니다.  
+> 
+> 클래식 배포 메서드는 1810 버전을 기준으로 사용되지 않습니다.   
 
 복잡성을 줄이려면 모든 Azure 구독 및 모든 Configuration Manager 사이트에서 클라우드 배포 지점 및 클라우드 관리 게이트웨이의 모든 클래식 배포에 동일한 Azure 관리 인증서를 사용합니다.
 

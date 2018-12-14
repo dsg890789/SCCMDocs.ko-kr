@@ -5,17 +5,17 @@ description: Configuration Manager 콘솔에서 소프트웨어 업데이트를 
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.date: 07/30/2018
+ms.date: 11/27/2018
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 04536d51-3bf7-45e5-b4af-36ceed10583d
-ms.openlocfilehash: d456d7232133333bf6cd88374d5288227f6dfea1
-ms.sourcegitcommit: 2ea71b048307a93a2db7898700aea984a8f88824
+ms.openlocfilehash: f59ca099325028ccf29904a2108939d0047df745
+ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304285"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52455951"
 ---
 # <a name="deploy-software-updates"></a>소프트웨어 업데이트 배포  
 
@@ -36,7 +36,15 @@ ms.locfileid: "52304285"
 
 필수 소프트웨어 업데이트 배포를 구성할 경우 소프트웨어 업데이트는 예약된 최종 기한에 맞춰 자동으로 설치됩니다. 또는 클라이언트 컴퓨터의 사용자는 최종 기한 전에 소프트웨어 업데이트를 설치하도록 예약하거나 설치를 시작할 수 있습니다. 설치 시도 후 클라이언트 컴퓨터는 사이트 서버에 상태 메시지를 보내 소프트웨어 업데이트 설치의 성공 여부를 보고합니다. 소프트웨어 업데이트 배포에 대한 자세한 내용은 [Software update deployment workflows](/sccm/sum/understand/software-updates-introduction#BKMK_DeploymentWorkflows)를 참조하세요.  
 
-소프트웨어 업데이트 배포에는 두 가지 기본 시나리오, 즉 수동 배포와 자동 배포가 있습니다. 일반적으로 소프트웨어 업데이트를 수동으로 배포하여 클라이언트의 기준을 만든 다음, 자동 배포를 사용하여 클라이언트의 소프트웨어 업데이트를 관리합니다.  
+소프트웨어 업데이트 배포에는 다음과 같은 세 가지 기본 시나리오가 있습니다. 
+- [수동 배포](#BKMK_ManualDeployment)  
+- [자동 배포](#bkmk_auto)  
+- [단계적 배포](#bkmk_phased)  
+
+일반적으로 소프트웨어 업데이트를 수동으로 배포하여 클라이언트의 기준을 만든 다음, 자동 또는 단계적 배포를 사용하여 클라이언트의 소프트웨어 업데이트를 관리합니다.  
+
+> [!Note]  
+> 단계별 배포를 사용하면 자동 배포 규칙을 사용할 수 없습니다.
 
 
 
@@ -65,7 +73,7 @@ Configuration Manager 콘솔에서 소프트웨어 업데이트를 선택하고 
 
 
 
-## <a name="automatically-deploy-software-updates"></a>소프트웨어 업데이트 자동 배포
+## <a name="bkmk_auto"></a> 소프트웨어 업데이트 자동 배포
 
 ADR(자동 배포 규칙)을 사용하여 자동 소프트웨어 업데이트 배포를 구성합니다. 이 배포 방법은 일반적으로 월별 소프트웨어 업데이트(일반적으로 "화요일 패치"라고 함) 및 정의 업데이트 관리에 사용됩니다. 배포 프로세스를 자동화하는 ADR에 대한 조건을 정의합니다. 다음 목록은 소프트웨어 업데이트를 자동으로 배포하는 일반적인 워크플로입니다.  
 
@@ -100,4 +108,12 @@ ADR을 만든 후 규칙에 추가 배포를 추가합니다. 이 작업을 통�
 
 
 자세한 내용과 자세한 단계는 [소프트웨어 업데이트 자동 배포](automatically-deploy-software-updates.md)를 참조하세요.
+
+
+
+## <a name="bkmk_phased"></a> 단계별 소프트웨어 업데이트 배포
+
+<!--1358146--> 1810 버전부터 소프트웨어 업데이트에 대한 단계별 배포를 만듭니다. 단계적 배포에서는 사용자 지정 가능한 조건 및 그룹에 따라 소프트웨어 출시를 조정하고 순차적으로 진행할 수 있습니다.
+
+자세한 내용은 [단계적 배포 만들기](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence?toc=/sccm/sum/toc.json&bc=/sccm/sum/breadcrumb/toc.json)를 참조하세요.
 

@@ -2,7 +2,7 @@
 title: 문제 해결을 위한 로그 파일
 titleSuffix: Configuration Manager
 description: 로그 파일을 사용하여 Configuration Manager 클라이언트 및 사이트 시스템 문제를 해결할 수 있습니다.
-ms.date: 09/10/2018
+ms.date: 11/27/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: c1ff371e-b0ad-4048-aeda-02a9ff08889e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4435d39dd736db1058b06d09e5722a80a173bf6e
-ms.sourcegitcommit: 2badee2b63ae63687795250e298f463474063100
+ms.openlocfilehash: cf7ca86dd04d60f1ff914294a7430d9f4a7a2fb7
+ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45601214"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52456705"
 ---
 # <a name="log-files-in-configuration-manager"></a>Configuration Manager의 로그 파일
 
@@ -314,6 +314,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |mpMSI.log|관리 지점 설치에 대한 세부 정보를 기록합니다.|사이트 서버|  
 |MPSetup.log|관리 지점 설치 래퍼 프로세스를 기록합니다.|사이트 서버|  
 |netdisc.log|네트워크 검색 작업을 기록합니다.|사이트 서버|  
+|NotiCtrl.log|애플리케이션 요청 알림입니다.|사이트 서버|  
 |ntsvrdis.log|사이트 시스템 서버의 검색 작업을 기록합니다.|사이트 서버|  
 |Objreplmgr|복제를 위해 개체 변경 알림 처리 정보를 기록합니다.|사이트 서버|  
 |offermgr.log|보급 알림 업데이트를 기록합니다.|사이트 서버|  
@@ -334,7 +335,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |sitectrl.log|데이터베이스의 사이트 제어 개체에 적용된 사이트 설정 변경 내용을 기록합니다.|사이트 서버|  
 |sitestat.log|모든 사이트 시스템의 가용성 및 디스크 공간 모니터링 프로세스를 기록합니다.|사이트 서버|
 |SMS_ISVUPDATES_SYNCAGENT.log| Configuration Manager 버전 1806부터 시작되는 타사 소프트웨어 동기화에 대한 로그 파일입니다.| Configuration Manager 계층 구조의 최상위 수준 소프트웨어 업데이트 지점입니다.|
-|SMS_PhasedDeployment.log| 단계별 배포에 대한 로그 파일, Configuration Manager 버전 1802부터 시작하는 시험판 기능.|Configuration Manager 계층 구조의 최상위 사이트|   
+|SMS_PhasedDeployment.log| 단계적 배포에 대한 로그 파일|Configuration Manager 계층 구조의 최상위 사이트|   
 |SmsAdminUI.log|Configuration Manager 콘솔 작업을 기록합니다.|Configuration Manager 콘솔을 실행하는 컴퓨터|  
 |SMSAWEBSVCSetup.log|응용 프로그램 카탈로그 웹 서비스의 설치 작업을 기록합니다.|사이트 시스템 서버|  
 |smsbkup.log|사이트 백업 프로세스의 출력을 기록합니다.|사이트 서버|  
@@ -436,6 +437,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |CCMSDKProvider.log|응용 프로그램 관리 SDK의 활동을 기록합니다.|클라이언트|  
 |colleval.log|컬렉션 평가기에서 컬렉션을 만들고 변경하고 삭제한 경우 관련 세부 정보를 기록합니다.|사이트 시스템 서버|  
 |ConfigMgrSoftwareCatalog.log|Silverlight 사용을 포함한 응용 프로그램 카탈로그의 활동을 기록합니다.|클라이언트|  
+|NotiCtrl.log|애플리케이션 요청 알림입니다.|사이트 서버|  
 |portlctl.log|응용 프로그램 카탈로그 웹 사이트 지점 사이트 시스템 역할에 대한 모니터링 활동을 기록합니다.|사이트 시스템 서버|  
 |portlwebMSI.log|응용 프로그램 카탈로그 웹 사이트 역할에 대한 MSI 설치 활동을 기록합니다.|사이트 시스템 서버|  
 |PrestageContent.log|사전 준비된 원격 배포 지점에서 ExtractContent.exe 도구를 사용하는 방법에 대한 세부 정보를 기록합니다. 이 도구는 파일로 내보낸 콘텐츠를 추출합니다.|사이트 시스템 서버|  
@@ -708,7 +710,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |smpperf.log|상태 마이그레이션 지점 성능 카운터 업데이트를 기록합니다.|사이트 시스템 서버|  
 |smspxe.log|PXE 부팅을 사용하는 클라이언트에 보낸 응답에 대한 세부 정보 및 부팅 이미지 및 부팅 파일의 확장에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|  
 |smssmpsetup.log|상태 마이그레이션 지점에 대한 설치 및 구성 세부 정보를 기록합니다.|사이트 시스템 서버|
-| SMS_PhasedDeployment.log| 단계별 배포에 대한 로그 파일, Configuration Manager 버전 1802부터 시작하는 시험판 기능.|Configuration Manager 계층 구조의 최상위 사이트| 
+| SMS_PhasedDeployment.log| 단계적 배포에 대한 로그 파일|Configuration Manager 계층 구조의 최상위 사이트| 
 |Smsts.log|작업 순서 활동을 기록합니다.|클라이언트|  
 |TSAgent.log|작업 순서를 시작하기 전에 작업 순서 종속성의 결과를 기록합니다.|클라이언트|  
 |TaskSequenceProvider.log|작업 순서를 가져오거나 내보내거나 편집할 때 작업 순서에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|  

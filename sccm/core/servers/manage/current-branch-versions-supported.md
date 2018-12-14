@@ -2,7 +2,7 @@
 title: 현재 분기 버전
 titleSuffix: Configuration Manager
 description: Configuration Manager 버전 기록을 검토하고 제공되는 서비스의 단계에 대해 알아봅니다.
-ms.date: 07/30/2018
+ms.date: 11/27/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 35b5baec-d313-46aa-9d14-c443aa0d6c09
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 8a8f646b1cd535809689daacb1390fd79f8ce5c1
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: dd8116bc74f855fff956d0bb201691c741a6d351
+ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39383782"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52455991"
 ---
 # <a name="support-for-configuration-manager-current-branch-versions"></a>Configuration Manager 현재 분기 버전에 대한 지원
 
@@ -33,8 +33,8 @@ Microsoft는 1년에 몇 차례 Configuration Manager 현재 분기용 업데이
 > [!NOTE]  
 >  최신 현재 분기 버전은 항상 **보안 및 중요 업데이트** 서비스 단계입니다. 이 지원 정책은 중요 업데이트가 필요한 코드 오류가 발생한 경우 수정 프로그램을 받으려면 최신 현재 분기 버전을 설치해야 함을 의미합니다. 지원되는 다른 모든 현재 분기 버전은 보안 업데이트만 받을 수 있습니다.
 > - 버전 1710 이상의 경우 현재 분기 버전의 18개월 수명 주기가 만료되면 모든 지원이 종료됩니다.
-> - 1710 이전 버전의 경우 12개월 수명 주기가 만료되면 지원이 종료됩니다.
-
+> - 1706 이전 버전의 경우 12개월 수명 주기가 만료되면 지원이 종료됩니다.
+> 
 > 현재 버전에 대한 지원이 만료되기 전에 Configuration Manager 환경을 최신 버전으로 업데이트하세요.
 
 현재 분기 버전의 목록은 [버전 정보](/sccm/core/servers/manage/updates#version-details)를 참조하세요.

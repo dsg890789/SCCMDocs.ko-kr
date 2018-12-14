@@ -4,17 +4,17 @@ description: 클라우드 관리 게이트웨이와 함께 사용할 다양한 �
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/27/2018
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 71eaa409-b955-45d6-8309-26bf3b3b0911
-ms.openlocfilehash: 121b3840ea4f61f4789c5d6c21ab857cb091e199
-ms.sourcegitcommit: 8791bb9be477fe6a029e8a7a76e2ca310acd92e0
+ms.openlocfilehash: 4ef9746b9a1eb90beeec6a477ad1d406acebbb05
+ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50411309"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52456569"
 ---
 # <a name="certificates-for-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이에 대한 인증서
 
@@ -123,6 +123,9 @@ Configuration Manager에서 CMG 인스턴스를 만들면 인증서에 GraniteFa
 ## <a name="bkmk_azuremgmt"></a> Azure 관리 인증서
 
 *이 인증서는 클래식 서비스 배포에 필요하지만, Azure Resource Manager 배포에는 필요하지 않습니다.*
+
+> [!Important]  
+> 1810 버전부터 Azure의 클래식 서비스 배포는 Configuration Manager에서 사용되지 않습니다. 클라우드 관리 게이트웨이에 대해 Azure Resource Manager 배포를 사용하기 시작합니다. 자세한 내용은 [CMG 계획](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#azure-resource-manager)을 참조하세요.
 
 이 인증서는 Azure Portal 또는 Configuration Manager 콘솔에서 CMG를 만들 때 제공합니다.
 

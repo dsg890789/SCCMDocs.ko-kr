@@ -2,7 +2,7 @@
 title: 콘솔 내 업데이트
 titleSuffix: Configuration Manager
 description: Microsoft 클라우드에서 Configuration Manager에 업데이트 설치
-ms.date: 08/22/2018
+ms.date: 11/27/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: c14a3607-253b-41fb-8381-ae2d534a9022
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 503255c571288fa0da0b0b81f3a76fc2b38bbb19
-ms.sourcegitcommit: 0d7efd9e064f9d6a9efcfa6a36fd55d4bee20059
+ms.openlocfilehash: 7635dce325a2612c144c6eaa9c733b7dffc7c251
+ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43893926"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52456212"
 ---
 # <a name="install-in-console-updates-for-configuration-manager"></a>Configuration Manager용 콘솔 내 업데이트 설치
 
@@ -105,11 +105,11 @@ Configuration Manager 콘솔 내에서 업데이트를 설치하기 전에 다�
 
 업데이트를 시작하기 전에 수행할 작업에 해당하는 업데이트 검사 목록을 검토합니다.
 
+- [업데이트 1810을 설치하기 위한 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1810)  
+
 - [업데이트 1806을 설치하기 위한 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1806)  
 
 - [업데이트 1802를 설치하기 위한 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1802)
-
-- [업데이트 1710을 설치하기 위한 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1710)  
 
 
 ###  <a name="bkmk_step2"></a> 2단계: 업데이트를 설치하기 전에 필수 구성 요소 검사기 실행  
@@ -367,11 +367,11 @@ Configuration Manager 콘솔 내에서 업데이트를 설치할 준비가 되�
 
 사이트 업데이트 후 해당 버전에 대한 업데이트 후 검사 목록을 검토합니다.  
 
+- [버전 1810용 업데이트 후 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1810#post-update-checklist)  
+
 - [버전 1806용 업데이트 후 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1806#post-update-checklist)  
 
 - [버전 1802용 업데이트 후 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1802#post-update-checklist)  
-
-- [버전 1710용 업데이트 후 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1710#post-update-checklist)  
 
 
 
@@ -399,11 +399,11 @@ Configuration Manager 콘솔 내에서 업데이트를 설치할 준비가 되�
 
 -->
 
-- [사이트 서버 고가용성](/sccm/core/servers/deploy/configure/site-server-high-availability)<!--1128774-->
+- [패키지 변환 관리자](/sccm/apps/pcm/package-conversion-manager) <!--1357861-->
 - [타사 소프트웨어 업데이트](/sccm/sum/deploy-use/third-party-software-updates)<!--1357605,1352101,1358714-->
 - [장치당 사용자에 대한 응용 프로그램 요청 승인](/sccm/apps/deploy-use/deploy-applications#specify-deployment-settings) <!--1357015-->  
 - [iOS용 Cisco AnyConnect 4.0.07x 이상 지원](/sccm/mdm/deploy-use/create-vpn-profiles)<!--1357393-->
-- [조건부 액세스의 준수 정책에 대한 장치 상태 증명 평가](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm) <!--1235616-->
+- [조건부 액세스의 규정 준수 정책에 대한 디바이스 상태 증명 평가](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm) <!--1235616-->
 - [스크립트 만들기 및 실행](/sccm/apps/deploy-use/create-deploy-scripts) <!--1236459-->
 - [작업 순서 실행 단계](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#add-child-task-sequences-to-a-task-sequence) <!--1261338-->
 - [작업 순서 콘텐츠 사전 캐싱](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content) <!--1021244-->
@@ -415,7 +415,7 @@ Configuration Manager 콘솔 내에서 업데이트를 설치할 준비가 되�
 - [Azure Log Analytics 커넥터](/sccm/core/clients/manage/sync-data-log-analytics) <!--1258052-->
 - [Windows Defender Exploit Guard 정책](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy) <!--1355468-->
 - [Windows 10용 VPN](/sccm/protect/deploy-use/vpn-profiles) <!--1283610-->
-- [Passport for Work](/sccm/protect/deploy-use/windows-hello-for-business-settings)(*비즈니스용 Windows Hello*라고도 함) <!--1245704-->
+- [비즈니스용 Windows Hello](/sccm/protect/deploy-use/windows-hello-for-business-settings)(이전의 *Passport for Work*) <!--1245704-->
 - [관리되는 PC에 대한 조건부 액세스](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm)  <!--1191496-->
 
 

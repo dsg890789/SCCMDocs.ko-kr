@@ -10,12 +10,12 @@ ms.assetid: 035b7f73-8b78-4ed1-835e-a31f9a5c4a02
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 45b65e5ff35f93bb79418f00795aecab5cc208b9
-ms.sourcegitcommit: 8791bb9be477fe6a029e8a7a76e2ca310acd92e0
+ms.openlocfilehash: 1a7d8e6fe1824ab2a7fe3cfb6f89965a4b5800c0
+ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50411207"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52456076"
 ---
 # <a name="fundamentals-of-security-for-configuration-manager"></a>Configuration Manager의 보안 기본 사항
 
@@ -65,6 +65,8 @@ Windows 서버 및 네트워크 인프라에서 제공하는 보안 외에도, C
 #### <a name="bkmk_layer-provider"></a> SMS 공급자
 
 그 다음 보안 계층은 WMI(Windows Management Instrumentation), 특히 SMS 공급자를 통한 액세스에 기반합니다. SMS 공급자는 Configuration Manager 정보에 대한 사이트 데이터베이스를 쿼리할 수 있는 액세스 권한을 사용자 부여하는 구성 요소입니다. 기본적으로 공급자에 대한 액세스 권한은 로컬 SMS 관리자 그룹의 구성원으로 제한됩니다. 처음에 이 그룹에는 Configuration Manager를 설치한 사용자만 포함됩니다. CIM(Common Information Model) 리포지토리와 SMS 공급자에 대한 권한을 다른 계정에 부여하려면 다른 계정을 SMS 관리자 그룹에 추가해야 합니다.  
+
+1810 버전부터 관리자가 Configuration Manager 사이트에 액세스하는 데 필요한 최소 인증 수준을 지정할 수 있습니다. 이 기능은 관리자에게 필요한 수준으로 Windows에 로그인하도록 요구합니다. <!--1357013-->  
 
 자세한 내용은 [SMS 공급자 계획](/sccm/core/plan-design/hierarchy/plan-for-the-sms-provider)을 참조하세요.
 

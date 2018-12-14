@@ -2,7 +2,7 @@
 title: 업데이트 및 서비스
 titleSuffix: Configuration Manager
 description: 업데이트 및 서비스라는 콘솔 내 서비스 메서드에 대해 알아봅니다. 이 방법을 사용하면 권장 업데이트를 간편하게 찾아서 설치할 수 있습니다.
-ms.date: 07/31/2018
+ms.date: 11/27/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 3a832943-580a-4a40-b454-961d0854ac2b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 94d8f3a2ffafb078f3ffe92c4902cc610321ed86
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 1acc1bd6a6ccbd010308d026933a371f9e8227d8
+ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385052"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52456552"
 ---
 # <a name="updates-and-servicing-for-configuration-manager"></a>Configuration Manager에 대한 업데이트 및 서비스
 
@@ -25,20 +25,6 @@ Configuration Manager는 **업데이트 및 서비스**라는 콘솔 내 서비�
 
 > [!TIP]  
 > *업그레이드*, *업데이트* 및 *설치* 용어들은 Configuration Manager의 세 가지 별도 개념을 설명하는 데 사용됩니다. 각 용어가 어떻게 사용되는지에 대한 자세한 내용은 [업그레이드, 업데이트 및 설치 정보](/sccm/core/understand/upgrade-update-install)를 참조하세요.  
-
-
-다음 문서는 Configuration Manager에 대한 다양한 업데이트 형식을 찾아서 설치하는 방법을 이해하는 데 유용합니다.  
-
--   [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates)  
-
--   [서비스 연결 도구 사용](/sccm/core/servers/manage/use-the-service-connection-tool)  
-
--   [핫픽스를 가져오려면 업데이트 등록 도구 사용](/sccm/core/servers/manage/use-the-update-registration-tool-to-import-hotfixes)  
-
--   [업데이트를 설치하려면 핫픽스 설치 관리자 사용](/sccm/core/servers/manage/use-the-hotfix-installer-to-install-updates)  
-
-
-기술 미리 보기 분기에 대한 자세한 내용은 [기술 미리 보기](/sccm/core/get-started/technical-preview)를 참조하세요.
 
 
 
@@ -70,35 +56,40 @@ Configuration Manager는 **업데이트 및 서비스**라는 콘솔 내 서비�
 
 Configuration Manager에 대한 일부 업데이트는 기존 인프라에 대한 콘솔 내 업데이트 버전과 새 기준 버전이 모두 제공됩니다.  
 
+#### <a name="supported-versions"></a>지원되는 버전
 Configuration Manager의 다음과 같은 지원되는 버전은 기준, 업데이트 또는 두 가지 버전이 모두 제공됩니다.  
 
 | Version | 가용일 | [지원 종료 날짜](/sccm/core/servers/manage/current-branch-versions-supported) | 기준 | 콘솔 내 업데이트 |  
 |-------------|-----------|------------|--------------|------------------------|  
+| [1810](/sccm/core/plan-design/changes/whats-new-in-version-1810)<br /><br /> 5.00.8740.1000 | 2018년 11월 27일 | 2020년 5월 27일 | 아니요 | 예 |
 | [1806](/sccm/core/plan-design/changes/whats-new-in-version-1806)<br /><br /> 5.00.8692.1000 | 2018년 7월 31일 | 2020년 1월 31일 | 아니요 | 예 |
-| [1802](/sccm/core/plan-design/changes/whats-new-in-version-1802)<br /><br /> 5.00.8634.1000 | 2018년 3월 22일 | 2019년 9월 22일 | 예<sup>**1**</sup> | 예 |
+| [1802](/sccm/core/plan-design/changes/whats-new-in-version-1802)<br /><br /> 5.00.8634.1000 | 2018년 3월 22일 | 2019년 9월 22일 | 예<sup>[참고 1](#bkmk_note1)</sup> | 예 |
 | [1710](/sccm/core/plan-design/changes/whats-new-in-version-1710)<br /><br /> 5.00.8577.1000 | 2017년 11월 20일 | 2019 년 5 월 20 | 아니요 | 예 |
-| [1706](/sccm/core/plan-design/changes/whats-new-in-version-1706)<br /><br /> 5.00.8540.1000 | 2017년 7월 31일 | 2018년 7월 31일 | 아니요 | 예 |
+
+<a name="bkmk_note1"></a> 
 
 > [!Note]  
-> <sup>**1**</sup> 1802 기준 미디어는 VLSC([볼륨 라이선스 서비스 센터](https://www.microsoft.com/Licensing/servicecenter/Downloads/DownloadsAndKeys.aspx))에서 다음 릴리스의 일부로 사용할 수 있습니다.
+> <sup>**(참고 1)**</sup> 1802 기준 미디어는 VLSC([볼륨 라이선스 서비스 센터](https://www.microsoft.com/Licensing/servicecenter/Downloads/DownloadsAndKeys.aspx))에서 다음 릴리스의 일부로 사용할 수 있습니다.
 > - System Center Config Mgr(현재 분기)
 > - System Center 2016 Datacenter
 > - System Center 2016 Standard  
 > 
 > 예를 들어 `System Center Config Mgr (current branch)`용 VLSC를 검색합니다. 파일 목록에서 1802 기준 미디어를 찾아 해당 릴리스를 다운로드 합니다.  
 
+#### <a name="historical-versions"></a>이전 버전
 다음 표에 지원되지 않는 Configuration Manager 현재 분기의 이전 버전이 나열되어 있습니다.
 
 | Version | 가용일 | 지원 종료 날짜 | 기준 | 콘솔 내 업데이트 |  
 |-------------|-----------|------------|--------------|------------------------|  
+| 1706 <br /><br /> 5.00.8540.1000 | 2017년 7월 31일 | 2018년 7월 31일 | 아니요 | 예 |
 | 1702 <br /><br /> 5.00.8498.1000 | 2017년 3월 27일 | 2018년 3월 27일 | 예 | 예 |
 | 1610 <br /><br /> 5.00.8458.1000 | 2016년 11월 18일 | 2017년 11월 18일 | 아니요 | 예 |
 | 1606 <br /><br /> 5.00.8412.1000 | 2016년 7월 22일 | 2017년 7월 22일 | 아니요 | 예 |
-| 1606 및 1606 핫픽스 롤업(KB3186654) </br></br>5.00.8412.1307 | 2016년 10월 12일 | 2017년 10월 12일 | 예 | 아니요 |
+| 1606 및 1606 핫픽스 롤업(KB3186654) <br><br>5.00.8412.1307 | 2016년 10월 12일 | 2017년 10월 12일 | 예 | 아니요 |
 | 1602<br /><br /> 5.00.8355.1000 | 2016년 3월 11일 | 2017년 3월 11일 | 아니요 | 예 |
 | 1511 <br /><br /> 5.00.8325.1000 | 2015년 12월 8일 | 2016년 12월 8일 | 예 | 아니요 |  
 
-
+#### <a name="how-to-check-the-version"></a>버전을 확인하는 방법
 Configuration Manager 사이트 버전을 확인하려면 콘솔의 왼쪽 위에 있는 **System Center Configuration Manager 정보**로 이동합니다. 이 대화 상자에는 사이트 및 콘솔 버전이 표시됩니다.  
 
  > [!Note]  
@@ -112,7 +103,7 @@ System Center Configuration Manager 현재 분기의 프로덕션이 준비된 �
 
 이러한 업데이트에는 다음이 포함됩니다.  
 
--   1710, 1802 또는 1806 버전과 같은 새 버전.  
+-   1802, 1806 또는 1810 버전과 같은 새 버전.  
 
 -   현재 버전에 대한 새로운 기능을 포함하는 업데이트입니다.
 
@@ -182,3 +173,20 @@ Configuration Manager는 사용자를 위해 새 업데이트를 검색합니다
    `<Product>-<product version>-<KB article ID>-<platform>-<language>.exe`  
 
 자세한 내용은 [핫픽스 설치 관리자를 사용하여 업데이트 설치](/sccm/core/servers/manage/use-the-hotfix-installer-to-install-updates)를 참조하세요.  
+
+
+
+## <a name="next-steps"></a>다음 단계
+
+다음 문서는 Configuration Manager에 대한 다양한 업데이트 형식을 찾아서 설치하는 방법을 이해하는 데 유용합니다.  
+
+-   [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates)  
+
+-   [서비스 연결 도구 사용](/sccm/core/servers/manage/use-the-service-connection-tool)  
+
+-   [핫픽스를 가져오려면 업데이트 등록 도구 사용](/sccm/core/servers/manage/use-the-update-registration-tool-to-import-hotfixes)  
+
+-   [업데이트를 설치하려면 핫픽스 설치 관리자 사용](/sccm/core/servers/manage/use-the-hotfix-installer-to-install-updates)  
+
+
+기술 미리 보기 분기에 대한 자세한 내용은 [기술 미리 보기](/sccm/core/get-started/technical-preview)를 참조하세요.

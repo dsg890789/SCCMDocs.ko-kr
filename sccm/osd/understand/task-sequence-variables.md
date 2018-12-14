@@ -2,7 +2,7 @@
 title: 작업 순서 변수 참조
 titleSuffix: Configuration Manager
 description: Configuration Manager 작업 순서를 제어 및 사용자 지정하는 변수에 대해 알아봅니다.
-ms.date: 08/17/2018
+ms.date: 11/27/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 62f15230-d3a6-4afc-abd4-1e07e7ba6c97
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: cfecd7441abd206bdff1d2f6618d763a30dddc51
-ms.sourcegitcommit: be8c0182db9ef55a948269fcbad7c0f34fd871eb
+ms.openlocfilehash: cde62242fc4db99d762d670037aad22bd25d6c00
+ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42756265"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52456739"
 ---
 # <a name="task-sequence-variables-in-configuration-manager"></a>Configuration Manager의 작업 순서 변수
 
@@ -124,6 +124,12 @@ ms.locfileid: "42756265"
  ‘[동적 변수 설정](task-sequence-steps.md#BKMK_SetDynamicVariables) 단계에 적용됩니다.’
 
  컴퓨터에 사용되는 IP 주소를 지정합니다.
+
+
+### <a name="SMSTSLastActionName"></a> _SMSTSLastActionName
+ *1810 버전부터 시작*  
+
+ 마지막으로 실행된 작업의 이름을 저장합니다. 이 변수는 **_SMSTSLastActionRetCode**와 관련이 있습니다. 작업 순서는 이러한 값을 smsts.log 파일에 기록합니다. 이 변수는 작업 순서 문제를 해결할 때 유용합니다. 단계가 실패하면 사용자 지정 스크립트에 반환 코드와 함께 단계 이름이 포함될 수 있습니다.
 
 
 ### <a name="SMSTSLastActionRetCode"></a> _SMSTSLastActionRetCode

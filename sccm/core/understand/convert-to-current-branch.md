@@ -10,12 +10,12 @@ ms.assetid: ec5b54cf-62b7-4ed1-9bb3-e8c63b9641c8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2c739f52553aca8680328e581e183a5ca974ffdf
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: f1683f69ae065d0523719edd3d24da52d499341b
+ms.sourcegitcommit: 1439817f1309658b31008d7bafaab32fc5ef8789
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32337509"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52820002"
 ---
 # <a name="upgrade-the-long-term-servicing-branch-to-the-current-branch"></a>장기 서비스 분기를 현재 분기로 업그레이드
 
@@ -46,6 +46,6 @@ ms.locfileid: "32337509"
 
  1. 콘솔에서 **관리** > **사이트 구성** > **사이트**로 이동한 다음 **계층 설정**을 엽니다.  
 
- 2. 옵션을 선택하여 현재 분기로 변환한 다음 **적용**을 선택합니다.  
+ 2. **계층 구조 설정**에서 **라이선스** 탭으로 전환합니다. 옵션을 선택하여 **현재 분기로 변환**한 다음, **적용**을 선택합니다.  
 
 사이트가 현재 분기로 변환되면, 이전에 사용할 수 없었던 기능과 특성을 사용할 수 있게 됩니다.

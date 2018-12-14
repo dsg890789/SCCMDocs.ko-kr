@@ -10,12 +10,12 @@ ms.assetid: f053fa73-c553-4522-a6b9-f885f23fe57c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 7057084ba976408f189a0d4fbb96f176bc0c6656
-ms.sourcegitcommit: 759098de944b8f7d5eedfc2bae2cb9a6ba15276f
+ms.openlocfilehash: 41dd6ad6f8a0292fdb16a0d727665b17e038f87b
+ms.sourcegitcommit: 1439817f1309658b31008d7bafaab32fc5ef8789
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43297157"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52820044"
 ---
 # <a name="package-conversion-manager"></a>Package Conversion Manager
 
@@ -25,8 +25,9 @@ ms.locfileid: "43297157"
 
 버전 1806부터 Package Conversion Manager가 Configuration Manager 레거시 패키지를 응용 프로그램으로 변환하는 데 도움을 줍니다. 응용 프로그램에는 종속성, 요구 사항 규칙, 검색 방법 및 사용자 장치 선호도와 같은 추가 혜택이 있습니다.
 
-> [!Note]  
-> 이 버전의 Configuration Manager에서 Package Conversion Manager는 시험판 기능입니다. 이 기능을 사용하려면 [시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요.  
+> [!Tip]  
+> 이 기능은 버전 1806에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 소개되었습니다. 버전 1810 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.  
+
 
 Configuration Manager 응용 프로그램에는 클라이언트 장치에 배포할 파일 및 프로그램이 포함되어 있습니다. 그러나 레거시 패키지 및 프로그램과 달리 응용 프로그램은 사용자 중심 기능을 추가로 제공합니다. 예를 들어 응용 프로그램에는 소프트웨어 패키지, 가상 응용 프로그램 패키지 또는 모바일 장치용 응용 프로그램 버전 등의 로컬 설치를 위한 배포 유형이 포함될 수 있습니다.
 
