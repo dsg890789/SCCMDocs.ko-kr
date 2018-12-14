@@ -2,7 +2,7 @@
 title: 응용 프로그램 만들기
 titleSuffix: Configuration Manager
 description: 배포 유형, 검색 방법 및 소프트웨어를 설치할 요구 사항으로 응용 프로그램을 만듭니다.
-ms.date: 07/30/2018
+ms.date: 11/27/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-app
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: cc230ff4-7056-4339-a0a6-6a44cdbb2857
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 848b81ee9e1d6d9ebc189a2d8cb0126648f91be0
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 947dfac82db43e5cb21d8304d31be23219bb83aa
+ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385187"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52456654"
 ---
 # <a name="create-applications-in-configuration-manager"></a>Configuration Manager에서 응용 프로그램 만들기
 
@@ -236,11 +236,15 @@ Configuration Manager 콘솔의 **응용 프로그램** 노드에 새 응용 프
 
 - **설치 프로그램**: 설치 프로그램의 이름과 모든 필수 설치 매개 변수를 지정합니다.  
 
-    - **설치 시작 지점**: 선택적으로 해당 배포 유형에 대한 설치 프로그램이 포함된 폴더를 지정합니다. 이 폴더는 클라이언트상의 절대 경로 또는 설치 파일이 포함된 배포 지점 폴더의 경로가 될 수 있습니다.  
+    - **설치 시작 지점**: 선택적으로 배포 유형에 대한 설치 프로그램이 포함된 폴더를 지정합니다. 이 폴더는 클라이언트상의 절대 경로 또는 설치 파일이 포함된 배포 지점 폴더의 경로가 될 수 있습니다.  
 
-- **제거 프로그램**: 선택적으로 제거 프로그램의 이름 및 필수 매개 변수를 지정합니다.  
+- **제거 프로그램**: 선택적으로 제거 프로그램의 이름 및 모든 필수 매개 변수를 지정합니다.  
 
-    - **제거 시작 지점**: 선택적으로 해당 배포 유형에 대한 제거 프로그램이 포함된 폴더를 지정합니다. 이 폴더는 클라이언트에서 절대 경로일 수 있습니다. 또한 패키지와 폴더의 배포 지점에서 상대 경로일 수도 있습니다.  
+    - **제거 시작 지점**: 선택적으로 배포 유형에 대한 제거 프로그램이 포함된 폴더를 지정합니다. 이 폴더는 클라이언트에서 절대 경로일 수 있습니다. 또한 패키지와 폴더의 배포 지점에서 상대 경로일 수도 있습니다.  
+
+- **프로그램 복구**: 1810 버전부터 Windows Installer 및 스크립트 설치 관리자 배포 유형의 경우 선택적으로 복구 프로그램 이름 및 모든 필수 매개 변수를 지정합니다.<!--1357866-->  
+
+    - **복구 시작 지점**: 선택적으로 배포 유형에 대한 복구 프로그램이 포함된 폴더를 지정합니다. 이 폴더는 클라이언트에서 절대 경로일 수 있습니다. 또한 패키지와 폴더의 배포 지점에서 상대 경로일 수도 있습니다.  
 
 - **설치 및 제거 프로그램을 64비트 클라이언트에서 32비트 프로세스로 실행합니다.**: Windows 기반 컴퓨터에서 32비트 파일 및 레지스트리 위치를 사용하여 배포 유형의 설치 프로그램을 실행합니다.  
 
@@ -262,7 +266,7 @@ Configuration Manager 콘솔의 **응용 프로그램** 노드에 새 응용 프
 
 - **배포 옵션**: 클라이언트가 인접 또는 기본 사이트 경계 그룹의 배포 지점을 사용할 때 응용 프로그램을 다운로드해야 하는지 여부를 지정합니다.  
 
-- **클라이언트가 동일한 서브넷에 있는 다른 클라이언트와 콘텐츠를 공유하도록 허용**: 콘텐츠 다운로드를 위해 BranchCache를 사용할지 여부를 지정합니다. 자세한 내용은 [BranchCache](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management#branchcache)를 참조하세요. 버전 1802부터 BranchCache는 항상 클라이언트에서 사용할 수 있습니다. 배포 지점에서 지원하는 경우 클라이언트에서 BranchCache를 사용하므로 이 설정은 제거됩니다.  
+- **클라이언트가 동일한 서브넷에 있는 다른 클라이언트와 콘텐츠를 공유하도록 허용**: 콘텐츠 다운로드를 위해 BranchCache를 사용할지 여부를 지정합니다. 자세한 내용은 [BranchCache](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management#branchcache)를 참조하세요. 버전 1802부터는 BranchCache를 클라이언트에서 항상 사용할 수 있습니다. 배포 지점에서 지원하는 경우 클라이언트에서 BranchCache를 사용하므로 이 설정은 제거됩니다.  
 
 
 ### <a name="bkmk_dt-detect"></a> 배포 유형 **검색 방법** 옵션   

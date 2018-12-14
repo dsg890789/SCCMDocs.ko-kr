@@ -2,7 +2,7 @@
 title: 클라우드 배포 지점 설치
 titleSuffix: Configuration Manager
 description: 이러한 단계를 사용하여 Configuration Manager에서 클라우드 배포 지점을 설정합니다.
-ms.date: 07/30/2018
+ms.date: 11/27/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: bb83ac87-9914-4a35-b633-ad070031aa6e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: ef8bfead4bb73871f990a455aef87971413701ba
-ms.sourcegitcommit: 2badee2b63ae63687795250e298f463474063100
+ms.openlocfilehash: a2d39617db7f2ea9a61e73a3c21cc2509fed2f07
+ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45601112"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52456620"
 ---
 # <a name="install-a-cloud-distribution-point-for-configuration-manager"></a>Configuration Manager의 클라우드 배포 지점 설치
 
@@ -43,7 +43,7 @@ ms.locfileid: "45601112"
 
 - 사용할 **Azure 환경**입니다. 예: Azure 공용 클라우드 또는 Azure 미국 정부 클라우드  
 
-- 1806 및 *권장* 버전부터 **Azure Resource Manager 배포**를 사용하려는 경우 다음 요구 사항이 필요합니다. <!--1322209-->  
+- 1806 버전 및 *권장 버전*부터 **Azure Resource Manager 배포**를 사용합니다. 요구 사항은 다음과 같습니다.<!--1322209-->  
 
     - **클라우드 관리**를 위한 [Azure Active Directory](/sccm/core/servers/deploy/configure/azure-services-wizard)와의 통합. Azure AD 사용자 검색은 필요하지 않습니다.  
 
@@ -54,6 +54,8 @@ ms.locfileid: "45601112"
     - **구독 관리자 계정**은 마법사를 실행하는 동안 로그인해야 합니다.  
 
 - Azure **클래식 서비스 배포**를 사용하려면 다음 요구 사항이 필요합니다.  
+    > [!Important]  
+    > 1810 버전부터 Azure의 클래식 서비스 배포는 Configuration Manager에서 사용되지 않습니다. 클라우드 관리 게이트웨이에 대해 Azure Resource Manager 배포를 사용하기 시작합니다. 자세한 내용은 [CMG 계획](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#azure-resource-manager)을 참조하세요.  
 
     - Azure **구독 ID**.  
 
@@ -64,7 +66,7 @@ ms.locfileid: "45601112"
 - 클라우드 배포 지점에 대해 전역적으로 고유한 **서비스 이름**.  
 
     > [!TIP]  
-    > 이 서비스 이름을 사용하는 서버 인증 인증서를 요청하기 전에 원하는 Azure 도메인 이름이 고유한지 확인합니다. 예를 들어 *WallaceFalls.CloudApp.Net*이 있습니다. [Microsoft Azure Portal](https://portal.azure.com)에 로그온합니다. **리소스 만들기**를 클릭하고, **계산** 범주를 선택한 다음, **클라우드 서비스**를 클릭합니다. **DNS 이름** 필드에서 원하는 접두사를 입력합니다(예: *WallaceFalls*). 인터페이스에는 도메인 이름을 사용할 수 있는지, 아니면 다른 서비스에서 이미 사용 중인지 여부가 표시됩니다. 포털에서 서비스를 만들지 말고, 이 프로세스를 사용하여 이름 가용성을 확인하세요.  
+    > 이 서비스 이름을 사용하는 서버 인증 인증서를 요청하기 전에 원하는 Azure 도메인 이름이 고유한지 확인합니다. 예를 들어 *WallaceFalls.CloudApp.Net*이 있습니다. [Microsoft Azure Portal](https://portal.azure.com)에 로그인합니다. **리소스 만들기**를 선택하고, **계산** 범주를 선택한 다음, **클라우드 서비스**를 선택합니다. **DNS 이름** 필드에서 원하는 접두사를 입력합니다(예: *WallaceFalls*). 인터페이스에는 도메인 이름을 사용할 수 있는지, 아니면 다른 서비스에서 이미 사용 중인지 여부가 표시됩니다. 포털에서 서비스를 만들지 말고, 이 프로세스를 사용하여 이름 가용성을 확인하세요.  
  
 - 이 배포에 대한 Azure **지역**입니다.  
 
@@ -74,21 +76,22 @@ ms.locfileid: "45601112"
 
 [디자인](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point#bkmk_topology)에서 결정된 이 클라우드 배포 지점을 호스트하는 사이트에서 이 절차를 수행합니다.  
 
-1.  Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고 **Cloud Services**를 확장한 후, **클라우드 배포 지점**을 선택합니다. 리본에서 **클라우드 배포 지점 만들기**를 클릭합니다.  
+1.  Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고 **Cloud Services**를 확장한 후, **클라우드 배포 지점**을 선택합니다. 리본에서 **클라우드 배포 지점 만들기**를 선택합니다.  
 
 2.  클라우드 배포 지점 만들기 마법사의 **일반** 페이지에서 다음 설정을 구성합니다.  
 
-    a. 먼저 **Azure 환경**을 지정합니다.  
+    1. 먼저 **Azure 환경**을 지정합니다.  
 
-    b. Azure 배포 메서드를 선택한 다음, 연결된 설정을 구성합니다.  
+    2. 1806 버전 및 *권장 버전*부터 배포 메서드로 **Azure Resource Manager 배포**를 선택합니다. **로그인**을 선택하여 Azure 구독 관리자 계정으로 인증합니다. 마법사가 Azure AD 통합 필수 구성 요소 중에 저장된 정보로 나머지 필드를 자동으로 채웁니다. 여러 구독을 소유하고 있는 경우 사용할 구독의 **구독 ID**를 선택합니다.  
 
-       - **Azure Resource Manager 배포**(1806 및 *권장* 버전부터): **로그인**을 클릭하여 Azure 구독 관리자 계정으로 인증합니다. 마법사가 Azure AD 통합 필수 구성 요소 중에 저장된 정보로 나머지 필드를 자동으로 채웁니다. 여러 구독을 소유하고 있는 경우 사용할 구독의 **구독 ID**를 선택합니다.  
+    > [!Note]  
+    > 1810 버전부터 Azure의 클래식 서비스 배포는 Configuration Manager에서 사용되지 않습니다. 
+    > 
+    > 클래식 서비스 배포를 사용해야 하는 경우 이 페이지에서 해당 옵션을 선택합니다. 먼저 Azure **구독 ID**를 입력합니다. 그런 다음, **찾아보기**를 선택하고 Azure 관리 인증서에 대한 .PFX 파일을 선택합니다.  
 
-       - **클래식 서비스 배포**(및 Configuration Manager 버전 1802 이전): Azure **구독 ID**를 입력합니다. 그런 다음, **찾아보기**를 클릭하고, Azure 관리 인증서에 대한 PFX 파일을 선택합니다.  
+3.  **다음**을 선택합니다. 사이트가 Azure에 대한 연결을 테스트할 때까지 기다립니다.  
 
-3.  **다음**을 클릭합니다. 사이트가 Azure에 대한 연결을 테스트할 때까지 기다립니다.  
-
-4.  **설정** 페이지에서 다음과 같은 설정을 지정한 다음, **다음**을 클릭합니다.  
+4.  **설정** 페이지에서 다음과 같은 설정을 지정한 다음, **다음**을 선택합니다.  
 
     - **지역**: 클라우드 배포 지점을 만들 Azure 지역을 선택합니다.  
 
@@ -100,12 +103,12 @@ ms.locfileid: "45601112"
 
     - **기본 사이트**: 이 배포 지점에 콘텐츠를 배포하는 기본 사이트를 선택합니다.
 
-    - **인증서 파일**: **찾아보기**를 클릭하고 이 클라우드 배포 지점의 서버 인증 인증서에 대한 .PFX 파일을 선택합니다. 이 인증서의 일반 이름은 필수 **서비스 FQDN** 및 **서비스 이름** 필드를 채웁니다.  
+    - **인증서 파일**: **찾아보기**를 선택하고 이 클라우드 배포 지점의 서버 인증 인증서에 대한 .PFX 파일을 선택합니다. 이 인증서의 일반 이름은 필수 **서비스 FQDN** 및 **서비스 이름** 필드를 채웁니다.  
 
         > [!NOTE]  
         > 클라우드 배포 지점 서버 인증 인증서는 와일드카드를 지원합니다. 와일드카드 인증서를 사용하는 경우 **서비스 FQDN** 필드의 별표(*)를 서비스에 원하는 호스트 이름으로 바꿉니다.  
 
-5. **경고** 페이지에서 저장소 할당량, 전송 할당량 및 Configuration Manager에서 이러한 할당량에 대해 경고를 생성할 비율(%)을 설정합니다. **다음**을 클릭합니다.  
+5. **경고** 페이지에서 저장소 할당량, 전송 할당량 및 Configuration Manager에서 이러한 할당량에 대해 경고를 생성할 비율(%)을 설정합니다. **다음**을 선택합니다.  
 
 6. 마법사를 완료합니다.  
 
@@ -222,7 +225,7 @@ Configuration Manager는 주기적으로 Azure 서비스를 확인합니다. 서
 
 ## <a name="bkmk_modify"></a> 수정
 
-Configuration Manager 콘솔의 **관리** 작업 영역의 **Cloud Services**에 있는 **클라우드 배포 지점** 노드에서 배포 지점에 대한 세부 정보를 확인합니다. 배포 지점을 선택하고 **속성**을 클릭하여 더 자세한 내용을 확인합니다.  
+Configuration Manager 콘솔의 **관리** 작업 영역의 **Cloud Services**에 있는 **클라우드 배포 지점** 노드에서 배포 지점에 대한 세부 정보를 확인합니다. 배포 지점을 선택하고 **속성**을 선택하여 자세한 내용을 확인합니다.  
 
 클라우드 배포 지점의 속성을 편집하는 경우 다음 탭에는 편집할 설정이 포함됩니다.  
 
@@ -282,9 +285,9 @@ Configuration Manager 콘솔에서 클라우드 배포 지점을 언제든지 �
 
 1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동합니다. **Cloud Services**를 확장하고 **클라우드 배포 지점** 노드를 선택합니다.  
 
-2. 클라우드 배포 지점을 선택합니다. Azure에서 실행되는 클라우드 서비스를 중지하려면 리본에서 **서비스 중지**를 클릭합니다.  
+2. 클라우드 배포 지점을 선택합니다. Azure에서 실행되는 클라우드 서비스를 중지하려면 리본에서 **서비스 중지**를 선택합니다.  
 
-3. 클라우드 배포 지점을 다시 시작하려면 **서비스 시작**을 클릭합니다.  
+3. 클라우드 배포 지점을 다시 시작하려면 **서비스 시작**을 선택합니다.  
 
 
 ### <a name="delete-a-cloud-distribution-point"></a>클라우드 배포 지점 삭제
