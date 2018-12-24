@@ -1,7 +1,7 @@
 ---
 title: Wi-Fi 프로필 만들기
 titleSuffix: Configuration Manager
-description: Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의 모바일 장치 사용자에게 무선 네트워크 설정을 배포하는 방법을 알아봅니다.
+description: Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의 모바일 디바이스 사용자에게 무선 네트워크 설정을 배포하는 방법을 알아봅니다.
 ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -12,31 +12,31 @@ ms.author: aaroncz
 manager: dougeby
 ms.openlocfilehash: 07f5e7dc0520a145b6130d0c1f79388c2a63456d
 ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
 ms.locfileid: "32346059"
 ---
-# <a name="how-to-create-wi-fi-profiles-for-mobile-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 모바일 장치에 대한 Wi-Fi 프로필을 만드는 방법
+# <a name="how-to-create-wi-fi-profiles-for-mobile-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 모바일 디바이스에 대한 Wi-Fi 프로필을 만드는 방법
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의 모바일 장치 사용자에게 무선 네트워크 설정을 배포할 수 있습니다. 이러한 설정을 배포하면 사용자가 더 쉽게 Wi-Fi에 연결할 수 있습니다.  
+System Center Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의 모바일 디바이스 사용자에게 무선 네트워크 설정을 배포할 수 있습니다. 이러한 설정을 배포하면 사용자가 더 쉽게 Wi-Fi에 연결할 수 있습니다.  
 
-Wi-Fi 프로필로 다음 모바일 장치 유형을 구성할 수 있습니다.  
+Wi-Fi 프로필로 다음 모바일 디바이스 유형을 구성할 수 있습니다.  
 
--   Windows Phone 8.1을 실행하는 장치  
+-   Windows Phone 8.1을 실행하는 디바이스  
 
--   Windows 10 Desktop 또는 Mobile을 실행하는 장치  
+-   Windows 10 Desktop 또는 Mobile을 실행하는 디바이스  
 
--   iOS 9를 실행하는 iPhone 장치  
+-   iOS 9를 실행하는 iPhone 디바이스  
 
--   iOS 9를 실행하는 iPad 장치  
+-   iOS 9를 실행하는 iPad 디바이스  
 
--   버전 4 이상을 실행하는 Android 장치
+-   버전 4 이상을 실행하는 Android 디바이스
 
 > [!IMPORTANT]  
->  Android, iOS, Windows Phone 및 등록된 Windows 8.1 이상 장치에 프로필을 배포하려면 이러한 장치를 Microsoft Intune에 등록해야 합니다. 장치를 등록하는 방법은 [Intune에서 관리할 장치 등록](https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune)을 참조하세요.  
+>  Android, iOS, Windows Phone 및 등록된 Windows 8.1 이상 디바이스에 프로필을 배포하려면 이러한 디바이스를 Microsoft Intune에 등록해야 합니다. 디바이스를 등록하는 방법은 [Intune에서 관리할 디바이스 등록](https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune)을 참조하세요.  
 
 [Wi-Fi 프로필 만들기](../../protect/deploy-use/create-wifi-profiles.md#create-a-wi-fi-profile)에서는 Configuration Manager의 Wi-Fi 프로필을 사용하여 사용자에게 무선 네트워크 설정을 배포하는 방법을 알아봅니다.
 

@@ -323,7 +323,7 @@ ms.locfileid: "52456739"
 
 ### <a name="SMSTSWTG"></a> _SMSTSWTG
 
- 컴퓨터가 Windows To Go 장치로 실행되는지 여부를 지정합니다.
+ 컴퓨터가 Windows To Go 디바이스로 실행되는지 여부를 지정합니다.
 
 
 ### <a name="TSAppInstallStatus"></a> _TSAppInstallStatus
@@ -439,7 +439,7 @@ ms.locfileid: "52456739"
 
  (입력)
 
- 드라이버 패키지에서 설치할 대용량 저장 장치 드라이버의 콘텐츠 ID를 지정합니다. 이 변수를 지정하지 않으면 대용량 저장소 드라이버가 설치되지 않습니다.
+ 드라이버 패키지에서 설치할 대용량 저장 디바이스 드라이버의 콘텐츠 ID를 지정합니다. 이 변수를 지정하지 않으면 대용량 저장소 드라이버가 설치되지 않습니다.
 
 
 ### <a name="OSDApplyDriverBootCriticalHardwareComponent"></a> OSDApplyDriverBootCriticalHardwareComponent
@@ -448,7 +448,7 @@ ms.locfileid: "52456739"
 
  (입력)
 
- 대용량 저장 장치 드라이버가 설치되었는지 여부를 지정하며 이 변수는 **scsi**여야 합니다.
+ 대용량 저장 디바이스 드라이버가 설치되었는지 여부를 지정하며 이 변수는 **scsi**여야 합니다.
 
  [OSDApplyDriverBootCriticalContentUniqueID](#OSDApplyDriverBootCriticalContentUniqueID)가 설정된 경우 이 변수가 필요합니다.
 
@@ -459,7 +459,7 @@ ms.locfileid: "52456739"
 
  (입력)
 
- 설치할 대용량 저장 장치 드라이버의 부팅 필요 ID를 지정합니다. 이 ID는 장치 드라이버의 txtsetup.oem 파일의 **scsi** 섹션에 나열되어 있습니다.
+ 설치할 대용량 저장 디바이스 드라이버의 부팅 필요 ID를 지정합니다. 이 ID는 디바이스 드라이버의 txtsetup.oem 파일의 **scsi** 섹션에 나열되어 있습니다.
 
  [OSDApplyDriverBootCriticalContentUniqueID](#OSDApplyDriverBootCriticalContentUniqueID)가 설정된 경우 이 변수가 필요합니다.
 
@@ -480,7 +480,7 @@ ms.locfileid: "52456739"
 
  (입력)
 
- 하드웨어 장치와 호환되는 드라이버 카탈로그의 여러 장치 드라이버가 있는 경우 이 변수는 해당 단계의 동작을 결정합니다. 
+ 하드웨어 디바이스와 호환되는 드라이버 카탈로그의 여러 디바이스 드라이버가 있는 경우 이 변수는 해당 단계의 동작을 결정합니다. 
 
  #### <a name="valid-values"></a>유효한 값
  - `true`(기본값): 가장 적합한 장치 드라이버만 설치합니다.  
@@ -1511,7 +1511,7 @@ ms.locfileid: "52456739"
 
 ### <a name="SMSTSPostAction"></a> SMSTSPostAction
 
- 작업 순서를 완료한 후 실행되는 명령을 지정합니다. 예를 들어 작업 순서에서 장치에 OS를 배포한 후 포함된 장치에서 쓰기 필터를 사용할 수 있는 스크립트를 지정합니다.
+ 작업 순서를 완료한 후 실행되는 명령을 지정합니다. 예를 들어 작업 순서에서 디바이스에 OS를 배포한 후 포함된 디바이스에서 쓰기 필터를 사용할 수 있는 스크립트를 지정합니다.
 
 
 ### <a name="SMSTSPreferredAdvertID"></a> SMSTSPreferredAdvertID

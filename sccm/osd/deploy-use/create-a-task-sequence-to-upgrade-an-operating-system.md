@@ -82,10 +82,10 @@ Configuration Manager에서 작업 순서를 사용하여 대상 컴퓨터의 OS
 
 
 > [!Important]  
-> 장치에서 작업 순서가 실행되면 Configuration Manager 클라이언트는 다양한 시나리오에서 작업 순서 동작을 제어하도록 여러 스크립트를 만듭니다. 작업 순서가 완료되면 클라이언트는 컴퓨터가 다시 시작 될 때까지 이러한 스크립트를 제거하지 않습니다. 이 스크립트 파일에는 중요한 정보가 들어 있지 않습니다.  
+> 디바이스에서 작업 순서가 실행되면 Configuration Manager 클라이언트는 다양한 시나리오에서 작업 순서 동작을 제어하도록 여러 스크립트를 만듭니다. 작업 순서가 완료되면 클라이언트는 컴퓨터가 다시 시작 될 때까지 이러한 스크립트를 제거하지 않습니다. 이 스크립트 파일에는 중요한 정보가 들어 있지 않습니다.  
 
 
-1802 버전부터 Windows 10 내부 업그레이드의 기본 작업 순서 템플릿에 업그레이드 프로세스 전후에 추가할 권장 작업이 있는 추가 그룹이 포함되어 있습니다. 이러한 작업은 장치를 Windows 10으로 성공적으로 업그레이드한 많은 고객들에게 공통적으로 적용됩니다. 자세한 내용은 [업그레이드 준비](#recommended-task-sequence-steps-to-prepare-for-upgrade) 및 [사후 처리](#recommended-task-sequence-steps-for-post-processing)를 위한 권장되는 작업 순서 단계를 참조하세요.
+1802 버전부터 Windows 10 내부 업그레이드의 기본 작업 순서 템플릿에 업그레이드 프로세스 전후에 추가할 권장 작업이 있는 추가 그룹이 포함되어 있습니다. 이러한 작업은 디바이스를 Windows 10으로 성공적으로 업그레이드한 많은 고객들에게 공통적으로 적용됩니다. 자세한 내용은 [업그레이드 준비](#recommended-task-sequence-steps-to-prepare-for-upgrade) 및 [사후 처리](#recommended-task-sequence-steps-for-post-processing)를 위한 권장되는 작업 순서 단계를 참조하세요.
 
 1806 버전부터 이 작업 순서 템플릿에는 업그레이드 프로세스가 실패할 경우, 추가할 권장 작업이 있는 그룹도 포함되어 있습니다. 이러한 작업을 수행하면 문제를 더 쉽게 해결할 수 있습니다. 자세한 내용은 [실패 시 권장되는 작업 순서 단계](#recommended-task-sequence-steps-on-failure)를 참조하세요.<!--1358500-->  
 
@@ -244,7 +244,7 @@ Configuration Manager에서 작업 순서를 사용하여 대상 컴퓨터의 OS
 
    - 자세한 내용은 [운영 체제 업그레이드](/sccm/osd/understand/task-sequence-steps#BKMK_UpgradeOS)를 참조하세요.  
 
-- 이 작업 순서 중에 장치를 BIOS에서 UEFI로 변경하려는 경우 [현재 위치 업그레이드 중에 BIOS에서 UEFI로 변환](/sccm/osd/deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion#convert-from-bios-to-uefi-during-an-in-place-upgrade)을 참조하세요.  
+- 이 작업 순서 중에 디바이스를 BIOS에서 UEFI로 변경하려는 경우 [현재 위치 업그레이드 중에 BIOS에서 UEFI로 변환](/sccm/osd/deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion#convert-from-bios-to-uefi-during-an-in-place-upgrade)을 참조하세요.  
 
 - BitLocker 디스크 암호화를 사용하는 경우 기본 Windows 설치 프로그램은 업그레이드 중 자동으로 일시 중단합니다. Windows 10 버전 1803부터 Windows 설치 프로그램에는 이 동작을 제어할 `/BitLocker` 명령줄 매개 변수가 포함되어 있습니다. 보안 요구 사항에 따라 활성 디스크 암호화를 항상 유지해야 하는 경우 **업그레이드 준비** 그룹에서 **OSDSetupAdditionalUpgradeOptions** [작업 순서 변수](/sccm/osd/understand/task-sequence-variables#OSDSetupAdditionalUpgradeOptions)를 사용하여 `/BitLocker TryKeepActive`를 포함합니다. 자세한 내용은 [Windows 설치 프로그램 명령줄 옵션](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#33)을 참조하세요.<!--SCCMDocs issue #494-->  
 

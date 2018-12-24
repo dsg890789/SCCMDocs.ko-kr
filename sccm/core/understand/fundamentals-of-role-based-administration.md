@@ -92,7 +92,7 @@ Configuration Manager에 대해 관리 보안을 디자인하고 구현할 때�
 역할 기반 관리용 보안 역할을 만들고 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager용 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md) 항목의 [사용자 지정 보안 역할 만들기](../../core/servers/deploy/configure/configure-role-based-administration.md#BKMK_CreateSecRole) 및 [보안 역할 구성](../../core/servers/deploy/configure/configure-role-based-administration.md#BKMK_ConfigSecRole)을 참조하세요.  
 
 ##  <a name="bkmk_planCol"></a> 컬렉션  
- 컬렉션은 관리자가 보거나 관리할 수 있는 사용자 및 컴퓨터 리소스를 지정합니다. 예를 들어 응용 프로그램을 배포하거나 원격 제어를 실행하는 관리자의 경우 이러한 리소스를 포함하는 컬렉션에 대한 액세스 권한을 부여하는 보안 역할을 할당받아야 합니다. 사용자 또는 장치의 컬렉션을 선택할 수 있습니다.  
+ 컬렉션은 관리자가 보거나 관리할 수 있는 사용자 및 컴퓨터 리소스를 지정합니다. 예를 들어 응용 프로그램을 배포하거나 원격 제어를 실행하는 관리자의 경우 이러한 리소스를 포함하는 컬렉션에 대한 액세스 권한을 부여하는 보안 역할을 할당받아야 합니다. 사용자 또는 디바이스의 컬렉션을 선택할 수 있습니다.  
 
  컬렉션에 대한 자세한 내용은 [System Center Configuration Manager의 컬렉션 소개](../../core/clients/manage/collections/introduction-to-collections.md)를 참조하세요.  
 
@@ -155,7 +155,7 @@ Configuration Manager에 대해 관리 보안을 디자인하고 구현할 때�
 
 -   작업 순서 패키지  
 
--   Windows CE 장치 설정 항목 및 패키지  
+-   Windows CE 디바이스 설정 항목 및 패키지  
 
 보안 역할로만 보호되기 때문에 보안 범위에 포함할 수 없는 개체도 있습니다. 이러한 개체의 관리 권한은 사용할 수 있는 개체의 하위 집합으로 제한될 수 없습니다. 예를 들어 특정 사이트에만 사용되는 경계 그룹을 만드는 관리자가 있을 수 있습니다. 경계 개체는 보안 범위를 지원할 수 없으므로 이 관리자에게는 해당 사이트에 연결될 수 있는 경계에 대해서만 액세스 권한을 제공하는 보안 범위를 할당할 수 없습니다. 경계 개체가 보안 범위에 연결될 수 없으므로 경계 개체에 대한 액세스 권한을 포함하는 보안 역할을 사용자에게 할당하면 해당 사용자는 계층 내 모든 경계에 액세스할 수 있습니다.  
 
@@ -177,13 +177,13 @@ Configuration Manager에 대해 관리 보안을 디자인하고 구현할 때�
 
 -   배포 템플릿  
 
--   장치 드라이버  
+-   디바이스 드라이버  
 
 -   Exchange Server 커넥터  
 
 -   사이트-사이트 간 마이그레이션 매핑  
 
--   모바일 장치 등록 프로필  
+-   모바일 디바이스 등록 프로필  
 
 -   보안 역할  
 
@@ -199,7 +199,7 @@ Configuration Manager에 대해 관리 보안을 디자인하고 구현할 때�
 
 -   상태 메시지  
 
--   사용자 장치 선호도  
+-   사용자 디바이스 선호도  
 
 별도의 개체 인스턴스에 대한 액세스를 제한해야 하는 경우 보안 범위를 만듭니다. 예:  
 

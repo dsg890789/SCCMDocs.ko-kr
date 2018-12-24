@@ -34,25 +34,25 @@ ms.locfileid: "32339862"
 **다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.**  
 
 ## <a name="dmp_category"></a> 컬렉션으로 장치 자동 분류
-Microsoft Intune에서 Configuration Manager를 사용하는 경우 장치 컬렉션에 장치를 자동으로 배치하는 데 사용할 수 있는 장치 범주를 만들 수 있습니다. 그런 다음 사용자는 Intune에 장치를 등록할 때 장치 범주를 선택해야 합니다. 또한 Configuration Manager 콘솔에서 장치의 범주를 변경할 수 있습니다.
+Microsoft Intune에서 Configuration Manager를 사용하는 경우 디바이스 컬렉션에 디바이스를 자동으로 배치하는 데 사용할 수 있는 디바이스 범주를 만들 수 있습니다. 그런 다음 사용자는 Intune에 디바이스를 등록할 때 디바이스 범주를 선택해야 합니다. 또한 Configuration Manager 콘솔에서 디바이스의 범주를 변경할 수 있습니다.
 
 **중요:** 이 기능은 Microsoft Intune의 **2016년 6월** 릴리스에서 작동합니다. 이러한 절차를 시도하기 전에 이 릴리스로 업데이트했는지 확인합니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 
-### <a name="create-a-set-of-device-categories"></a>장치 범주 집합 만들기
-1.  Configuration Manager 콘솔의 **자산 및 준수** 작업 영역에서 **개요**를 확장한 다음 **장치 컬렉션**을 클릭합니다.
+### <a name="create-a-set-of-device-categories"></a>디바이스 범주 집합 만들기
+1.  Configuration Manager 콘솔의 **자산 및 준수** 작업 영역에서 **개요**를 확장한 다음 **디바이스 컬렉션**을 클릭합니다.
 2.  **홈** 탭의 **범주** 그룹에서 **장치 범주 관리**를 클릭합니다.
 3.  **장치 범주 관리** 대화 상자에서 범주를 만들거나 편집하거나 제거할 수 있습니다. 새 범주를 만들어 보세요.
 
-### <a name="associate-a-collection-with-a-device-category"></a>컬렉션을 장치 범주에 연결
-컬렉션을 장치 범주에 연결하면 지정하는 범주의 모든 장치가 해당 컬렉션에 추가됩니다.
-1.  장치 컬렉션의 **속성** 대화 상자에서 **규칙 추가** > **장치 범주 규칙**을 클릭합니다.
+### <a name="associate-a-collection-with-a-device-category"></a>컬렉션을 디바이스 범주에 연결
+컬렉션을 디바이스 범주에 연결하면 지정하는 범주의 모든 디바이스가 해당 컬렉션에 추가됩니다.
+1.  디바이스 컬렉션의 **속성** 대화 상자에서 **규칙 추가** > **디바이스 범주 규칙**을 클릭합니다.
 2.  **장치 범주 멤버 관리 규칙 만들기** 대화 상자에서 컬렉션의 모든 장치에 적용될 범주를 선택합니다.
 3.  **장치 범주 멤버 관리 규칙 만들기** 대화 상자와 컬렉션 속성 대화 상자를 닫습니다.
 
-### <a name="change-the-category-of-a-device"></a>장치의 범주 변경
-1.  Configuration Manager 콘솔의 **자산 및 준수** 작업 영역에서 **개요**를 확장한 다음 **장치**를 클릭합니다.
+### <a name="change-the-category-of-a-device"></a>디바이스의 범주 변경
+1.  Configuration Manager 콘솔의 **자산 및 준수** 작업 영역에서 **개요**를 확장한 다음 **디바이스**를 클릭합니다.
 2.  **장치** 목록에서 장치를 선택한 다음 **홈** 탭의 **장치** 그룹에서 **범주 변경**을 클릭합니다.
 3.  **장치 범주 편집** 대화 상자에서 이 장치에 적용할 범주를 선택한 다음 **확인**을 클릭합니다.
 
@@ -68,21 +68,21 @@ Microsoft Intune에서 Configuration Manager를 사용하는 경우 장치 컬�
 
 1.  클라이언트 설정의 **컴퓨터 에이전트** 페이지에서 새 속성, **배포 최종 기한 이후 적용 유예 기간(시간)** 을 **1**시간에서 **120**시간 사이의 값으로 구성합니다.
 2.  새 필수 응용 프로그램 배포 또는 기존 배포 속성의 **일정** 페이지에서 클라이언트 설정에 정의된 유예 기간까지 **이 배포의 적용을 사용자 기본 설정에 따라 연기** 확인란을 선택합니다.
-이 확인란이 선택되고 클라이언트 설정도 배포된 대상 장치의 모든 배포에서 유예 기간 적용을 사용합니다.
+이 확인란이 선택되고 클라이언트 설정도 배포된 대상 디바이스의 모든 배포에서 유예 기간 적용을 사용합니다.
 
 유예 기간 적용을 구성하고 확인란을 선택하면 응용 프로그램 설치 마감일에 도달한 후 사용자가 해당 유예 기간에 구성한 첫 번째 업무 외 시간에서 응용 프로그램이 설치됩니다. 하지만 여전히 사용자가 소프트웨어 센터를 열고 언제든지 원하는 응용 프로그램을 설치할 수 있습니다. 유예 기간이 만료되면 지연 배포에 대한 일반적인 동작이 적용됩니다.
 소프트웨어 업데이트 배포 마법사, 자동 배포 규칙 마법사 및 속성 페이지에 비슷한 옵션이 추가되었습니다.
 
 ##  <a name="dmp_devg"></a> Device Guard로 Configuration Manager를 관리되는 설치 프로그램으로 사용
 
-Device Guard는 하드웨어 및 소프트웨어 기능을 사용하여 장치에서 실행이 허용되는 사항을 엄격하게 제어하는 Windows 10 기능입니다.
+Device Guard는 하드웨어 및 소프트웨어 기능을 사용하여 디바이스에서 실행이 허용되는 사항을 엄격하게 제어하는 Windows 10 기능입니다.
 
 Device Guard의 수행 작업 및 작동 방법의 자세한 개요는 [이 Technet 문서](https://technet.microsoft.com/itpro/windows/whats-new/device-guard-overview)에서 확인할 수 있습니다.
 
-이 릴리스에서 Configuration Manager는 Device Guard 및 [Windows AppLocker](https://technet.microsoft.com/library/dd723678(v=ws.10).aspx)와 상호 운용할 수 있으므로 Configuration Manager와 함께 배포되는, 관리되는 설치 프로그램의 실행 파일 및 DLL 파일은 자동으로 신뢰할 수 있습니다. 즉, 대상 장치에서 실행이 허용됨을 뜻하며 다른 소프트웨어는 다른 AppLocker 규칙에 의해 명시적으로 실행이 허용되지 않는 한 실행할 수 없습니다.  
+이 릴리스에서 Configuration Manager는 Device Guard 및 [Windows AppLocker](https://technet.microsoft.com/library/dd723678(v=ws.10).aspx)와 상호 운용할 수 있으므로 Configuration Manager와 함께 배포되는, 관리되는 설치 프로그램의 실행 파일 및 DLL 파일은 자동으로 신뢰할 수 있습니다. 즉, 대상 디바이스에서 실행이 허용됨을 뜻하며 다른 소프트웨어는 다른 AppLocker 규칙에 의해 명시적으로 실행이 허용되지 않는 한 실행할 수 없습니다.  
 
 현재 이 기능은 Configuration Manager 콘솔에서 구성할 수 없습니다. 정책을 구성하려면 각 클라이언트에서 레지스트리 키를 구성하고 클라이언트에서 Windows 서비스를 구성해야 합니다.
-이 작업이 완료되면 AppLocker 정책 파일을 구성합니다. 정책 파일을 구성한 후 호환 가능한 클라이언트 장치에 배포할 수 있습니다.
+이 작업이 완료되면 AppLocker 정책 파일을 구성합니다. 정책 파일을 구성한 후 호환 가능한 클라이언트 디바이스에 배포할 수 있습니다.
 
 
 모든 AppLocker 정책과 마찬가지로 관리되는 설치 프로그램 규칙이 포함된 정책은 두 가지 모드에서 실행할 수 있습니다.
@@ -99,15 +99,15 @@ Configuration Manager에서 Device Guard를 사용하는 방법에 대한 추가
 - [Device Guard 배포 가이드](https://technet.microsoft.com/itpro/windows/keep-secure/device-guard-deployment-guide)
 
  ##  <a name="dmp_onprem"></a> 온-프레미스 모바일 장치 관리에 대한 여러 장치 관리 지점  
- Technical Preview 1606에서 온\-프레미스 MDM(모바일 장치 관리)은 둘 이상의 장치 관리 지점을 사용할 수 있도록 등록된 장치를 자동으로 구성하는 Windows 10 1주년 업데이트의 새로운 기능을 지원합니다. 이 기능을 통해 장치는 사용 중인 장치 관리 지점을 사용할 수 없게 되면 다른 장치 관리 지점으로 대체할 수 있습니다. 이 기능은 Windows 10 1주년 업데이트가 설치된 PC에서만 작동합니다.  
+ Technical Preview 1606에서 온\-프레미스 MDM(모바일 디바이스 관리)은 둘 이상의 디바이스 관리 지점을 사용할 수 있도록 등록된 디바이스를 자동으로 구성하는 Windows 10 1주년 업데이트의 새로운 기능을 지원합니다. 이 기능을 통해 디바이스는 사용 중인 디바이스 관리 지점을 사용할 수 없게 되면 다른 디바이스 관리 지점으로 대체할 수 있습니다. 이 기능은 Windows 10 1주년 업데이트가 설치된 PC에서만 작동합니다.  
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기  
 
-1.  계층에 둘 이상의 장치 관리 지점을 설치합니다.  
+1.  계층에 둘 이상의 디바이스 관리 지점을 설치합니다.  
 
-2.  온\-프레미스 모바일 장치 관리를 위한 Windows 10 1주년 업데이트 장치를 등록합니다.  
+2.  온\-프레미스 모바일 디바이스 관리를 위한 Windows 10 1주년 업데이트 디바이스를 등록합니다.  
 
-사이트 준비 방법 및 온\-프레미스 모바일 장치 관리를 위한 장치 등록 방법은 [System Center Configuration Manager의 온-프레미스 인프라로 모바일 장치 관리](../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)를 참조하세요.  
+사이트 준비 방법 및 온\-프레미스 모바일 디바이스 관리를 위한 디바이스 등록 방법은 [System Center Configuration Manager의 온-프레미스 인프라로 모바일 디바이스 관리](../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)를 참조하세요.  
 
 ## <a name="cloud_proxy"></a>인터넷상의 클라이언트를 관리하기 위한 클라우드 프록시 서비스
 
@@ -127,7 +127,7 @@ Configuration Manager 콘솔을 사용하여 Azure에 서비스를 배포하고 
 
 - 관리 지점, 배포 지점 및 소프트웨어 업데이트 지점 역할만 지원합니다.
 - 사용자 정책이 지원되지 않습니다.
-- Configuration Manager에서 [온-프레미스 모바일 장치 관리](../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)와 함께 사용할 수 없습니다.
+- Configuration Manager에서 [온-프레미스 모바일 디바이스 관리](../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)와 함께 사용할 수 없습니다.
 - Azure의 공용 클라우드 플랫폼에만 지원됩니다.
 
 
@@ -222,7 +222,7 @@ Technical Preview 1606부터 Configuration Manager 클라이언트 에이전트 
 
 ### <a name="set-the-configuration-manager-client-setting-to-manage-the-office-365-client-agent"></a>Office 365 클라이언트 에이전트를 관리하려면 Configuration Manager 클라이언트 설정을 지정합니다.
 1.  Configuration Manager 콘솔에서 **관리** > **개요** > **클라이언트 설정**을 클릭합니다.
-2. 적절한 장치 설정을 열어 클라이언트 에이전트를 사용하도록 설정합니다. 기본 및 사용자 지정 클라이언트 설정에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../core/clients/deploy/configure-client-settings.md)을 참조하세요.
+2. 적절한 디바이스 설정을 열어 클라이언트 에이전트를 사용하도록 설정합니다. 기본 및 사용자 지정 클라이언트 설정에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../core/clients/deploy/configure-client-settings.md)을 참조하세요.
 3. **소프트웨어 업데이트**를 클릭하고 **Office 365 클라이언트 에이전트 관리 사용** 설정에 대해 **예**를 선택합니다.  
 
 

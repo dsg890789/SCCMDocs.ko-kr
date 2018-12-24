@@ -265,14 +265,14 @@ System Center Configuration Manager의 소프트웨어 업데이트는 기업의
  기본적으로 클라이언트 컴퓨터는 7일마다 배포 재평가 주기를 시작합니다. 이 평가 주기에서 클라이언트 컴퓨터는 이전에 배포되고 설치된 소프트웨어 업데이트를 검사합니다. 누락된 소프트웨어 업데이트가 발견되면 해당 소프트웨어 업데이트는 로컬 캐시에서 다시 설치됩니다. 로컬 캐시에서 더 이상 사용할 수 없는 소프트웨어 업데이트는 배포 지점에서 다운로드되어 설치됩니다. 재배포 일정은 사이트에 대한 클라이언트 설정의 **소프트웨어 업데이트** 페이지에서 구성할 수 있습니다.  
 
 ##  <a name="BKMK_EmbeddedDevices"></a> 쓰기 필터를 사용하는 Windows Embedded 장치 지원  
- 쓰기 필터를 사용하는 Windows Embedded 장치에 소프트웨어 업데이트를 배포할 경우 배포 중 장치에서 쓰기 필터를 사용하지 않도록 설정한 다음 배포 후 장치를 다시 시작할지 여부를 지정할 수 있습니다. 쓰기 필터가 사용하도록 설정된 경우 소프트웨어는 임시 오버레이에 배포되고 장치를 다시 시작할 때 다른 배포에서 변경 내용을 강제 적용하여 유지하지 않는 한 소프트웨어는 더 이상 설치되어 있지 않습니다.  
+ 쓰기 필터를 사용하는 Windows Embedded 디바이스에 소프트웨어 업데이트를 배포할 경우 배포 중 디바이스에서 쓰기 필터를 사용하지 않도록 설정한 다음 배포 후 디바이스를 다시 시작할지 여부를 지정할 수 있습니다. 쓰기 필터가 사용하도록 설정된 경우 소프트웨어는 임시 오버레이에 배포되고 디바이스를 다시 시작할 때 다른 배포에서 변경 내용을 강제 적용하여 유지하지 않는 한 소프트웨어는 더 이상 설치되어 있지 않습니다.  
 
 > [!NOTE]  
->  소프트웨어 업데이트를 Windows Embedded 장치에 배포할 경우 해당 장치가 유지 관리 기간이 구성된 컬렉션의 구성원인지 확인하세요. 이에 따라 쓰기 필터의 비활성 및 활성 시점과 장치가 다시 시작하는 시점을 관리할 수 있습니다.  
+>  소프트웨어 업데이트를 Windows Embedded 디바이스에 배포할 경우 해당 디바이스가 유지 관리 기간이 구성된 컬렉션의 구성원인지 확인하세요. 이에 따라 쓰기 필터의 비활성 및 활성 시점과 디바이스가 다시 시작하는 시점을 관리할 수 있습니다.  
 
  쓰기 필터 동작을 제어하는 사용자 환경 설정은 이름이 **최종 기한에 또는 유지 관리 기간 동안 변경 내용 커밋(다시 시작해야 함)** 인 확인란입니다.  
 
- Configuration Manager에서 쓰기 필터를 사용하는 포함된 장치를 관리하는 방법에 대한 자세한 내용은 [Windows Embedded 장치에 클라이언트 배포 계획](../../core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)을 참조하세요.  
+ Configuration Manager에서 쓰기 필터를 사용하는 포함된 디바이스를 관리하는 방법에 대한 자세한 내용은 [Windows Embedded 디바이스에 클라이언트 배포 계획](../../core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)을 참조하세요.  
 
 ##  <a name="BKMK_ExtendSoftwareUpdates"></a> Configuration Manager에서 소프트웨어 업데이트 확장  
  System Center Updates Publisher를 사용하여 Microsoft 업데이트에서 제공하지 않는 소프트웨어 업데이트를 관리할 수 있습니다. 소프트웨어 업데이트를 업데이트 서버에 게시하고 Configuration Manager에서 소프트웨어 업데이트를 동기화한 후 Configuration Manager 클라이언트에 이 소프트웨어 업데이트를 배포할 수 있습니다. Updates Publisher에 대한 자세한 내용은 [Updates Publisher 2011](http://go.microsoft.com/fwlink/p/?LinkId=252947)을 참조하세요.  

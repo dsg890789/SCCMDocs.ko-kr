@@ -58,7 +58,7 @@ ms.locfileid: "45600942"
 
 Resource Manager 배포를 사용하는 경우 연결된 Azure AD 테넌트를 등록합니다. 이 연결을 통해 Configuration Manager가 Azure에 CMG를 만들고 배포하고 관리하도록 인증할 수 있습니다.  
 
-CMG를 통해 관리되는 장치 및 사용자용 Azure AD 인증을 사용하는 경우 해당 Azure AD 테넌트를 등록합니다. 클라우드 관리를 위한 Azure 서비스에 대한 자세한 내용은 [Azure 서비스 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)을 참조하세요. 각 Azure AD 테넌트를 등록하는 경우 단일 CMG가 호스팅 위치에 관계 없이 여러 테넌트에 대한 Azure AD 인증을 제공할 수 있습니다.
+CMG를 통해 관리되는 디바이스 및 사용자용 Azure AD 인증을 사용하는 경우 해당 Azure AD 테넌트를 등록합니다. 클라우드 관리를 위한 Azure 서비스에 대한 자세한 내용은 [Azure 서비스 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)을 참조하세요. 각 Azure AD 테넌트를 등록하는 경우 단일 CMG가 호스팅 위치에 관계 없이 여러 테넌트에 대한 Azure AD 인증을 제공할 수 있습니다.
 
 
 

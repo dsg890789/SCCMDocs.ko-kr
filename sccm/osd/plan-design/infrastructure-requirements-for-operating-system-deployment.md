@@ -127,9 +127,9 @@ DHCP는 PXE 배포에 필요합니다. PXE를 사용하여 운영 체제를 배�
 운영 체제를 배포할 때 Configuration Manager에서 지원되는 OS 버전 및 하드 디스크 구성에 대한 자세한 내용은 [지원되는 운영 체제](#BKMK_SupportedOS) 및 [지원되는 디스크 구성](#BKMK_SupportedDiskConfig)을 참조하세요.  
 
 
-### <a name="windows-device-drivers"></a>Windows 장치 드라이버  
+### <a name="windows-device-drivers"></a>Windows 디바이스 드라이버  
 
-대상 컴퓨터에 OS를 설치할 때 Windows 장치 드라이버를 사용할 수 있습니다. 부팅 이미지에서 Windows PE를 실행할 때도 사용됩니다. 자세한 내용은 [드라이버 관리](/sccm/osd/get-started/manage-drivers)를 참조하세요.  
+대상 컴퓨터에 OS를 설치할 때 Windows 디바이스 드라이버를 사용할 수 있습니다. 부팅 이미지에서 Windows PE를 실행할 때도 사용됩니다. 자세한 내용은 [드라이버 관리](/sccm/osd/get-started/manage-drivers)를 참조하세요.  
 
 
 
@@ -145,7 +145,7 @@ Configuration Manager의 OS 이미지는 WIM(Windows Imaging) 파일 형식으�
 
 ### <a name="driver-catalog"></a>드라이버 카탈로그  
 
-장치 드라이버를 배포하려면 장치 드라이버를 가져와서 사용하도록 설정한 다음, Configuration Manager 클라이언트가 액세스할 수 있는 배포 지점에서 활성화합니다. 드라이버 카탈로그에 대한 자세한 내용은 [드라이버 관리](/sccm/osd/get-started/manage-drivers)를 참조하세요.  
+디바이스 드라이버를 배포하려면 디바이스 드라이버를 가져와서 사용하도록 설정한 다음, Configuration Manager 클라이언트가 액세스할 수 있는 배포 지점에서 활성화합니다. 드라이버 카탈로그에 대한 자세한 내용은 [드라이버 관리](/sccm/osd/get-started/manage-drivers)를 참조하세요.  
 
 
 ### <a name="management-point"></a>관리 지점  

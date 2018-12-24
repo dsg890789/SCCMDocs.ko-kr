@@ -1,7 +1,7 @@
 ---
 title: Configure iOS apps with app configuration policies
 titleSuffix: Configuration Manager
-description: 앱을 실행하기 전에 사용자에게 앱 구성 정책을 배포하여 iOS 8 이상을 실행 중인 장치의 구성 문제를 해결합니다.
+description: 앱을 실행하기 전에 사용자에게 앱 구성 정책을 배포하여 iOS 8 이상을 실행 중인 디바이스의 구성 문제를 해결합니다.
 ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -30,9 +30,9 @@ System Center Configuration Manager(Configuration Manager)에서 앱 구성 정�
 
 사용자가 설정을 잘못 입력하는 경우 지원 센터에서 수정해야 하며 앱 배포 속도가 느려집니다.
 이러한 문제를 방지하기 위해 앱 구성 정책을 사용하여 앱을 실행하기 전에 필수 설정을 사용자에게 배포할 수 있습니다. 설정이 자동으로 사용자와 연결됩니다. 사용자는 아무 작업도 수행할 필요가 없습니다.
-구성 정책을 사용자와 장치에 직접 배포하는 대신 Configuration Manager에서 앱 구성 정책을 사용하려면 앱을 배포할 때 배포 유형과 정책을 연결합니다. 정책 설정은 앱에서 해당 설정을 확인할 때마다(일반적으로 앱을 처음 실행할 때) 적용됩니다.
+구성 정책을 사용자와 디바이스에 직접 배포하는 대신 Configuration Manager에서 앱 구성 정책을 사용하려면 앱을 배포할 때 배포 유형과 정책을 연결합니다. 정책 설정은 앱에서 해당 설정을 확인할 때마다(일반적으로 앱을 처음 실행할 때) 적용됩니다.
 
-현재 앱 구성 정책은 iOS 8 이상을 실행하는 장치에서 다음과 같은 응용 프로그램 유형에만 사용할 수 있습니다.
+현재 앱 구성 정책은 iOS 8 이상을 실행하는 디바이스에서 다음과 같은 응용 프로그램 유형에만 사용할 수 있습니다.
 
 - **iOS용 앱 패키지(*.ipa 파일)**
 - **App Store의 iOS용 앱 패키지**

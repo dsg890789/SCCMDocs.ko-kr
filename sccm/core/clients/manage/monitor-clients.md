@@ -22,7 +22,7 @@ ms.locfileid: "32335884"
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 
- System Center Configuration Manager 클라이언트 응용 프로그램이 사이트의 Windows 컴퓨터 및 장치에 설치되면 Configuration Manager 콘솔에서 해당 상태 및 활동을 모니터링할 수 있습니다.  
+ System Center Configuration Manager 클라이언트 응용 프로그램이 사이트의 Windows 컴퓨터 및 디바이스에 설치되면 Configuration Manager 콘솔에서 해당 상태 및 활동을 모니터링할 수 있습니다.  
 
 ##  <a name="bkmk_about"></a> 클라이언트 상태에 대한 정보  
  Configuration Manager에서는 다음과 같은 정보 유형을 클라이언트 상태로 제공합니다.  
@@ -39,18 +39,18 @@ ms.locfileid: "32335884"
 
 ##  <a name="bkmk_indStatus"></a> 개별 클라이언트의 상태 모니터링  
 
-1.  Configuration Manager 콘솔에서 **자산 및 준수** > **장치**를 클릭하거나 **장치 컬렉션** 아래에서 컬렉션을 선택합니다.  
+1.  Configuration Manager 콘솔에서 **자산 및 준수** > **디바이스**를 클릭하거나 **디바이스 컬렉션** 아래에서 컬렉션을 선택합니다.  
 
-     Configuration Manager 버전 1602부터, 각 행의 시작 부분에 있는 아이콘은 장치의 온라인 상태를 나타냅니다.  
+     Configuration Manager 버전 1602부터, 각 행의 시작 부분에 있는 아이콘은 디바이스의 온라인 상태를 나타냅니다.  
 
     |||  
     |-|-|  
-    |![클라이언트에 대한 온라인 상태 아이콘](../../../core/clients/manage/media/online-status-icon.png)|장치가 온라인입니다.|  
-    |![클라이언트에 대한 오프라인 상태 아이콘](../../../core/clients/manage/media/offline-status-icon.png)|장치가 오프라인입니다.|  
+    |![클라이언트에 대한 온라인 상태 아이콘](../../../core/clients/manage/media/online-status-icon.png)|디바이스가 온라인입니다.|  
+    |![클라이언트에 대한 오프라인 상태 아이콘](../../../core/clients/manage/media/offline-status-icon.png)|디바이스가 오프라인입니다.|  
     |![클라이언트에 대한 알 수 없는 상태 아이콘](../../../core/clients/manage/media/unknown-status-icon.png)|클라이언트 상태를 알 수 없습니다.|  
-    |![클라이언트 설치 안 됨](../../../core/clients/manage/media/client-not-installed.png)|클라이언트가 장치에 설치되지 않았습니다.|  
+    |![클라이언트 설치 안 됨](../../../core/clients/manage/media/client-not-installed.png)|클라이언트가 디바이스에 설치되지 않았습니다.|  
 
-2.  온라인 상태에 대한 자세한 내용을 보려면 열 머리글을 마우스 오른쪽 단추로 클릭하고 추가하려는 온라인 상태 필드를 클릭하여 장치 보기에 클라이언트 온라인 상태 정보를 추가합니다. 추가할 수 있는 열은 다음과 같습니다.  
+2.  온라인 상태에 대한 자세한 내용을 보려면 열 머리글을 마우스 오른쪽 단추로 클릭하고 추가하려는 온라인 상태 필드를 클릭하여 디바이스 보기에 클라이언트 온라인 상태 정보를 추가합니다. 추가할 수 있는 열은 다음과 같습니다.  
 
     -   **장치 온라인 상태** 는 클라이언트가 현재 온라인 상태인지 또는 오프라인 상태인지를 나타냅니다. 이는 아이콘으로 제공되는 것과 동일한 정보입니다.  
 

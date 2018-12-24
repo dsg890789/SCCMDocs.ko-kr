@@ -28,7 +28,7 @@ Windows 10은 여러 가지 형식의 업데이트를 제공합니다. 자세한
 
 ## <a name="express-update-delivery"></a>Express 업데이트 배달
 
-Windows 10 품질 업데이트 다운로드는 매우 클 수 있습니다. 일관성 및 간소화를 보장하기 위해 이전에 릴리스된 모든 수정 사항이 모든 패키지에 포함됩니다. Microsoft는 각 클라이언트가 Express라는 기능으로 다운로드하는 Windows 10 업데이트 콘텐츠의 크기를 줄일 수 있습니다. 오늘날 Express는 Windows 업데이트 서비스에서 직접 업데이트를 가져오는 수백만 개의 장치에서 사용되며 다운로드 크기를 현저하게 줄입니다. 이 혜택은 클라이언트가 Windows 업데이트 서비스에서 직접 다운로드하지 않는 고객도 이용할 수 있습니다. 
+Windows 10 품질 업데이트 다운로드는 매우 클 수 있습니다. 일관성 및 간소화를 보장하기 위해 이전에 릴리스된 모든 수정 사항이 모든 패키지에 포함됩니다. Microsoft는 각 클라이언트가 Express라는 기능으로 다운로드하는 Windows 10 업데이트 콘텐츠의 크기를 줄일 수 있습니다. 오늘날 Express는 Windows 업데이트 서비스에서 직접 업데이트를 가져오는 수백만 개의 디바이스에서 사용되며 다운로드 크기를 현저하게 줄입니다. 이 혜택은 클라이언트가 Windows 업데이트 서비스에서 직접 다운로드하지 않는 고객도 이용할 수 있습니다. 
 
 Configuration Manager는 버전 1702에서 Windows 10 품질 업데이트의 [빠른 설치 파일](/sccm/sum/deploy-use/manage-express-installation-files-for-windows-10-updates)에 대한 지원을 추가했습니다. 그러나 최상의 환경을 위해서는 Configuration Manager 버전 1802 이상을 사용하는 것이 좋습니다. 또한 최상의 다운로드 속도 성능을 위해서는 Windows 10 버전 1703 이상을 사용하는 것이 좋습니다. 
 
@@ -39,7 +39,7 @@ Configuration Manager는 버전 1702에서 Windows 10 품질 업데이트의 [�
 
 ## <a name="peer-to-peer-content-distribution"></a>피어 투 피어 콘텐츠 배포
 
-클라이언트에서 필요한 콘텐츠의 일부만 다운로드하더라도 피어 투 피어 콘텐츠 배포를 활용하면 사용자 환경에서 Windows 업데이트가 빠르게 진행됩니다. 피어를 품질 업데이트의 다운로드 원본으로 활용하면 로컬 배포 지점이 원격 사무실에 없는 환경에 도움이 될 수 있습니다. 이 동작은 모든 클라이언트가 느린 WAN 링크를 통해 원격 배포 지점에서 콘텐츠를 다운로드할 필요가 없도록 합니다. 또한 피어를 사용하면 클라이언트가 Windows 업데이트 서비스로 대체되는 경우에도 도움이 됩니다. 다른 장치에서 사용할 수 있도록 하기 전에 클라우드에서 업데이트 콘텐츠를 다운로드하는 데는 하나의 피어만 필요합니다.
+클라이언트에서 필요한 콘텐츠의 일부만 다운로드하더라도 피어 투 피어 콘텐츠 배포를 활용하면 사용자 환경에서 Windows 업데이트가 빠르게 진행됩니다. 피어를 품질 업데이트의 다운로드 원본으로 활용하면 로컬 배포 지점이 원격 사무실에 없는 환경에 도움이 될 수 있습니다. 이 동작은 모든 클라이언트가 느린 WAN 링크를 통해 원격 배포 지점에서 콘텐츠를 다운로드할 필요가 없도록 합니다. 또한 피어를 사용하면 클라이언트가 Windows 업데이트 서비스로 대체되는 경우에도 도움이 됩니다. 다른 디바이스에서 사용할 수 있도록 하기 전에 클라우드에서 업데이트 콘텐츠를 다운로드하는 데는 하나의 피어만 필요합니다.
 
 Configuration Manager는 다음을 포함하여 많은 피어 투 피어 기술을 지원합니다.
 - Windows 배달 최적화
@@ -51,12 +51,12 @@ Configuration Manager는 다음을 포함하여 많은 피어 투 피어 기술�
 
 ### <a name="windows-delivery-optimization"></a>Windows 배달 최적화
 
-[배달 최적화](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)는 Windows 10에 기본 제공되는 주요 다운로드 기술 및 피어 투 피어 배포 방법입니다. Windows 10 클라이언트는 동일한 업데이트를 다운로드하는 로컬 네트워크의 다른 장치에서 콘텐츠를 가져올 수 있습니다. [배달 최적화에 사용 가능한 Windows 옵션](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#delivery-optimization-options)을 사용하여 클라이언트를 그룹으로 구성할 수 있습니다. 이 그룹화를 통해 조직은 피어 투 피어 요청을 수행하는 최상의 후보가 될 수 있는 장치를 식별할 수 있습니다. 배달 최적화를 사용하면 다운로드 시간을 단축하는 동시에 장치를 최신 상태로 유지하는 데 사용되는 전체 대역폭을 현저하게 줄일 수 있습니다.
+[배달 최적화](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)는 Windows 10에 기본 제공되는 주요 다운로드 기술 및 피어 투 피어 배포 방법입니다. Windows 10 클라이언트는 동일한 업데이트를 다운로드하는 로컬 네트워크의 다른 디바이스에서 콘텐츠를 가져올 수 있습니다. [배달 최적화에 사용 가능한 Windows 옵션](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#delivery-optimization-options)을 사용하여 클라이언트를 그룹으로 구성할 수 있습니다. 이 그룹화를 통해 조직은 피어 투 피어 요청을 수행하는 최상의 후보가 될 수 있는 디바이스를 식별할 수 있습니다. 배달 최적화를 사용하면 다운로드 시간을 단축하는 동시에 디바이스를 최신 상태로 유지하는 데 사용되는 전체 대역폭을 현저하게 줄일 수 있습니다.
 
 > [!NOTE]  
 > 배달 최적화는 클라우드 관리 솔루션입니다. 피어 투 피어 기능을 활용하려면 배달 최적화 클라우드 서비스에 대한 인터넷 액세스가 필요합니다.  
 
-최상의 결과를 얻으려면 배달 최적화 [다운로드 모드](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode)를 **그룹(2)** 로 설정하고 *그룹 ID*를 정의해야 합니다. 그룹 모드에서 피어링은 원격 사무실의 장치를 포함하여 동일한 그룹에 속한 장치 간 내부 서브넷을 교차할 수 있습니다. [그룹 ID 옵션](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#select-the-source-of-group-ids)을 사용하여 도메인 및 AD DS 사이트와 별개로 공유한 사용자 지정 그룹을 만듭니다. 그룹 다운로드 모드는 배달 최적화를 사용하여 최상의 대역폭 최적화를 달성하려는 대부분의 조직에 권장되는 옵션입니다.
+최상의 결과를 얻으려면 배달 최적화 [다운로드 모드](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode)를 **그룹(2)** 로 설정하고 *그룹 ID*를 정의해야 합니다. 그룹 모드에서 피어링은 원격 사무실의 디바이스를 포함하여 동일한 그룹에 속한 디바이스 간 내부 서브넷을 교차할 수 있습니다. [그룹 ID 옵션](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#select-the-source-of-group-ids)을 사용하여 도메인 및 AD DS 사이트와 별개로 공유한 사용자 지정 그룹을 만듭니다. 그룹 다운로드 모드는 배달 최적화를 사용하여 최상의 대역폭 최적화를 달성하려는 대부분의 조직에 권장되는 옵션입니다.
 
 클라이언트가 여러 네트워크에서 로밍되는 경우에는 이러한 그룹 ID를 수동으로 구성하기가 어렵습니다. Configuration Manager 버전 1802에서는 [경계 그룹을 배달 최적화와 통합](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management#delivery-optimization)하여 이 프로세스의 관리를 간소화하는 새 기능을 추가했습니다. 클라이언트가 절전 모드에서 해제되면 관리 지점과 통신하여 정책을 가져오고 네트워크 및 경계 그룹 정보를 제공합니다. Configuration Manager는 모든 경계 그룹에 대해 고유한 ID를 만듭니다. 사이트에서는 클라이언트의 위치 정보를 사용하여 Configuration Manager 경계 ID로 클라이언트의 배달 최적화 그룹 ID를 자동으로 구성합니다. 클라이언트가 다른 경계 그룹으로 로밍되면 해당 관리 지점과 통신하고 새 경계 그룹 ID로 자동으로 다시 구성됩니다. 이 통합을 통해 배달 최적화는 Configuration Manager 경계 그룹 정보를 활용하여 업데이트를 다운로드할 피어를 찾을 수 있습니다.
 
@@ -70,7 +70,7 @@ Configuration Manager는 다음을 포함하여 많은 피어 투 피어 기술�
 
 
 ### <a name="windows-branchcache"></a>Windows BranchCache
-[BranchCache](https://docs.microsoft.com/windows-server/networking/branchcache/branchcache)는 Windows의 대역폭 최적화 기술입니다. 각 클라이언트에는 캐시가 있으며 콘텐츠의 대체 원본 역할을 합니다. 동일한 네트워크에 있는 장치에서 이 콘텐츠를 요청할 수 있습니다. [Configuration Manager는 BranchCache를 사용](/sccm/core/plan-design/configs/support-for-windows-features-and-networks#bkmk_branchcache)하여 피어가 서로의 원본 콘텐츠를 허용하도록 하고 항상 배포 지점을 연결하도록 할 수 있습니다. BranchCache를 사용하면 파일이 각 개별 클라이언트에서 캐시되며 다른 클라이언트에서 필요에 따라 검색할 수 있습니다. 이 방법은 단일 검색 지점을 사용하지 않고 캐시를 배포합니다. 이 동작은 상당한 양의 대역폭을 절약하는 동시에 클라이언트가 요청한 콘텐츠를 수신하는 시간을 단축합니다. 
+[BranchCache](https://docs.microsoft.com/windows-server/networking/branchcache/branchcache)는 Windows의 대역폭 최적화 기술입니다. 각 클라이언트에는 캐시가 있으며 콘텐츠의 대체 원본 역할을 합니다. 동일한 네트워크에 있는 디바이스에서 이 콘텐츠를 요청할 수 있습니다. [Configuration Manager는 BranchCache를 사용](/sccm/core/plan-design/configs/support-for-windows-features-and-networks#bkmk_branchcache)하여 피어가 서로의 원본 콘텐츠를 허용하도록 하고 항상 배포 지점을 연결하도록 할 수 있습니다. BranchCache를 사용하면 파일이 각 개별 클라이언트에서 캐시되며 다른 클라이언트에서 필요에 따라 검색할 수 있습니다. 이 방법은 단일 검색 지점을 사용하지 않고 캐시를 배포합니다. 이 동작은 상당한 양의 대역폭을 절약하는 동시에 클라이언트가 요청한 콘텐츠를 수신하는 시간을 단축합니다. 
 
 
 
@@ -98,11 +98,11 @@ Configuration Manager는 다음을 포함하여 많은 피어 투 피어 기술�
 
 ## <a name="conclusion"></a>결론
 
-Microsoft는 필요에 따라 빠른 설치 파일 및 피어 캐싱 기술과 함께 Configuration Manager를 사용하여 Windows 10 품질 업데이트 배달을 최적화할 것을 권장합니다. 이 방법을 사용하면 품질 업데이트를 설치하기 위해 많은 콘텐츠를 다운로드하는 Windows 10 장치와 관련된 문제가 완화됩니다. 또한 매달 품질 업데이트를 배포하여 Windows 10 장치를 최신 상태로 유지하는 것이 좋습니다. 이 방법을 사용하면 매월 장치에 필요한 품질 업데이트 콘텐츠의 델타가 줄어듭니다. 이 콘텐츠 델타를 줄이면 배포 지점이나 피어 원본에서 다운로드 크기가 더 작아집니다. 
+Microsoft는 필요에 따라 빠른 설치 파일 및 피어 캐싱 기술과 함께 Configuration Manager를 사용하여 Windows 10 품질 업데이트 배달을 최적화할 것을 권장합니다. 이 방법을 사용하면 품질 업데이트를 설치하기 위해 많은 콘텐츠를 다운로드하는 Windows 10 디바이스와 관련된 문제가 완화됩니다. 또한 매달 품질 업데이트를 배포하여 Windows 10 디바이스를 최신 상태로 유지하는 것이 좋습니다. 이 방법을 사용하면 매월 디바이스에 필요한 품질 업데이트 콘텐츠의 델타가 줄어듭니다. 이 콘텐츠 델타를 줄이면 배포 지점이나 피어 원본에서 다운로드 크기가 더 작아집니다. 
 
-빠른 설치 파일의 특성으로 인해 해당 콘텐츠 크기가 기존의 전체 파일 콘텐츠보다 훨씬 더 큽니다. 이 크기로 인해 Windows 업데이트 서비스에서 Configuration Manager 사이트 서버로의 업데이트 다운로드 시간이 더 길어집니다. 사이트 서버와 배포 지점에 필요한 디스크 공간의 크기도 증가합니다. 품질 업데이트를 다운로드하고 배포하는 데 필요한 총 시간이 더 길어질 수 있습니다. 그러나 Windows 10 장치에 의한 품질 업데이트의 다운로드 및 설치 중 장치 쪽 혜택은 주목할 만합니다.
+빠른 설치 파일의 특성으로 인해 해당 콘텐츠 크기가 기존의 전체 파일 콘텐츠보다 훨씬 더 큽니다. 이 크기로 인해 Windows 업데이트 서비스에서 Configuration Manager 사이트 서버로의 업데이트 다운로드 시간이 더 길어집니다. 사이트 서버와 배포 지점에 필요한 디스크 공간의 크기도 증가합니다. 품질 업데이트를 다운로드하고 배포하는 데 필요한 총 시간이 더 길어질 수 있습니다. 그러나 Windows 10 디바이스에 의한 품질 업데이트의 다운로드 및 설치 중 디바이스 쪽 혜택은 주목할 만합니다.
 
-업데이트 크기가 더 큰 서버 쪽 단점으로 인해 빠른 지원 채택은 차단되지만 장치 쪽 혜택이 비즈니스 및 환경에 중요한 경우, Microsoft는 Configuration Manager와 함께 [비즈니스용 Windows 업데이트](/sccm/sum/deploy-use/integrate-windows-update-for-business-windows-10)를 사용할 것을 권장합니다. 비즈니스용 Windows 업데이트는 환경 전체에서 빠른 설치 파일을 다운로드, 저장 및 배포할 필요 없이 Express의 모든 혜택을 제공합니다. 클라이언트는 Windows 업데이트 서비스에서 직접 콘텐츠를 다운로드하므로 배달 최적화를 계속 사용할 수 있습니다.
+업데이트 크기가 더 큰 서버 쪽 단점으로 인해 빠른 지원 채택은 차단되지만 디바이스 쪽 혜택이 비즈니스 및 환경에 중요한 경우, Microsoft는 Configuration Manager와 함께 [비즈니스용 Windows 업데이트](/sccm/sum/deploy-use/integrate-windows-update-for-business-windows-10)를 사용할 것을 권장합니다. 비즈니스용 Windows 업데이트는 환경 전체에서 빠른 설치 파일을 다운로드, 저장 및 배포할 필요 없이 Express의 모든 혜택을 제공합니다. 클라이언트는 Windows 업데이트 서비스에서 직접 콘텐츠를 다운로드하므로 배달 최적화를 계속 사용할 수 있습니다.
 
 
 
@@ -114,7 +114,7 @@ WUA(Windows 업데이트 에이전트)에서 먼저 빠른 콘텐츠를 요청�
 
 1. Configuration Manager 클라이언트에서 업데이트 콘텐츠를 다운로드하도록 WUA에 지시합니다. WUA에서 빠른 다운로드를 시작하면 빠른 패키지의 일부인 스텁(예: `Windows10.0-KB1234567-<platform>-express.cab`)을 먼저 다운로드합니다.  
 
-2. WUA는 이 스텁을 Windows 업데이트 설치 관리자 CBS(구성 요소 기반 서비스)에 전달합니다. CBS는 이 스텁을 사용하여 로컬 인벤토리를 수행하고 장치에 있는 파일의 델타를 제공되는 파일의 최신 버전에 연결하는 데 필요한 델타와 비교합니다.  
+2. WUA는 이 스텁을 Windows 업데이트 설치 관리자 CBS(구성 요소 기반 서비스)에 전달합니다. CBS는 이 스텁을 사용하여 로컬 인벤토리를 수행하고 디바이스에 있는 파일의 델타를 제공되는 파일의 최신 버전에 연결하는 데 필요한 델타와 비교합니다.  
 
 3. 그런 다음, CBS는 하나 이상의 빠른 .psf 파일에서 필요한 범위를 다운로드하도록 WUA에 요청합니다.  
 

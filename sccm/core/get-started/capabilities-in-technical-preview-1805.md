@@ -71,7 +71,7 @@ Steps to workaround, if any.
         - **지연 기간(일) 후 자동으로 이 단계 시작**: 이전 단계 성공 후 다음 단계 시작 전까지 대기하는 기간(일)을 선택합니다. 
         - **수동으로 이 배포 단계 시작**: 이전 단계 성공 후 자동으로 이 단계를 시작하지 않습니다.  
 
-    - 장치가 대상으로 지정된 후 소프트웨어 설치
+    - 디바이스가 대상으로 지정된 후 소프트웨어 설치
         - **가능하면 빨리**: 장치를 대상으로 지정하는 즉시 장치에 설치하는 최종 기한을 설정합니다.
         - **최종 기한 시간(장치가 대상으로 지정된 시간 기준)**: 장치가 대상으로 지정된 후 특정 기간(일)을 설치의 최종 기한으로 설정합니다.  
      
@@ -141,17 +141,17 @@ Configuration Manager는 기존 클래식 클라우드 배포 지점을 Azure Re
 
 
 
-## <a name="transition-device-configuration-workload-to-intune-using-co-management"></a>공동 관리를 사용하여 장치 구성 워크로드를 Intune으로 전환
+## <a name="transition-device-configuration-workload-to-intune-using-co-management"></a>공동 관리를 사용하여 디바이스 구성 워크로드를 Intune으로 전환
 <!--1357903-->
 
-이제 공동 관리를 사용하도록 설정한 후 Configuration Manager에서 Intune으로 장치 구성 워크로드를 전환할 수 있습니다. 이 워크로드를 전환하면 Intune을 사용하여 MDM 정책을 배포할 수 있지만 응용 프로그램 배포에는 Configuration Manager를 계속 사용할 수 있습니다. 
+이제 공동 관리를 사용하도록 설정한 후 Configuration Manager에서 Intune으로 디바이스 구성 워크로드를 전환할 수 있습니다. 이 워크로드를 전환하면 Intune을 사용하여 MDM 정책을 배포할 수 있지만 응용 프로그램 배포에는 Configuration Manager를 계속 사용할 수 있습니다. 
 
-이 워크로드를 전환하려면 공동 관리 속성 페이지로 이동하고 슬라이더 막대를 Configuration Manager에서 **파일럿** 또는 **모두**로 이동합니다. 자세한 내용은 [Windows 10 장치의 공동 관리](/sccm/core/clients/manage/co-management-overview)를 참조하세요.
+이 워크로드를 전환하려면 공동 관리 속성 페이지로 이동하고 슬라이더 막대를 Configuration Manager에서 **파일럿** 또는 **모두**로 이동합니다. 자세한 내용은 [Windows 10 디바이스의 공동 관리](/sccm/core/clients/manage/co-management-overview)를 참조하세요.
 
 > [!Note]  
-> 이 워크로드를 이동하면 장치 구성 워크로드의 일부인 **리소스 액세스** 및 **Endpoint Protection** 워크로드도 이동합니다.
+> 이 워크로드를 이동하면 디바이스 구성 워크로드의 일부인 **리소스 액세스** 및 **Endpoint Protection** 워크로드도 이동합니다.
 
-이 워크로드를 전환하면 Intune이 장치 구성 기관이더라도 Configuration Manager에서 공동 관리하는 장치로 설정을 배포할 수 있습니다. 이 예외는 조직에 필요한 설정을 구성하는 데 사용할 수 있지만 Intune에서는 아직 사용할 수 없습니다. 이 예외는 Configuration Manager 구성 기준에서 지정합니다. 기준을 만들 때 또는 기존 기준 속성의 **일반** 탭에서 **공동 관리하는 클라이언트에 대해서도 항상 이 기준 적용** 옵션을 사용하도록 설정합니다. 
+이 워크로드를 전환하면 Intune이 디바이스 구성 기관이더라도 Configuration Manager에서 공동 관리하는 디바이스로 설정을 배포할 수 있습니다. 이 예외는 조직에 필요한 설정을 구성하는 데 사용할 수 있지만 Intune에서는 아직 사용할 수 없습니다. 이 예외는 Configuration Manager 구성 기준에서 지정합니다. 기준을 만들 때 또는 기존 기준 속성의 **일반** 탭에서 **공동 관리하는 클라이언트에 대해서도 항상 이 기준 적용** 옵션을 사용하도록 설정합니다. 
 
 
 
@@ -179,7 +179,7 @@ Windows LEDBAT에 대한 자세한 정보는 [New transport advancements](https:
 
 
 ## <a name="cloud-management-dashboard"></a>클라우드 관리 대시보드
-<!--1358461--> 새로운 **클라우드 관리 대시보드**는 CMG(클라우드 관리 게이트웨이) 사용량에 대한 중앙 집중식 보기를 제공합니다. 사이트가 Azure AD에 등록되면 클라우드 사용자 및 장치에 대한 데이터도 표시됩니다.  
+<!--1358461--> 새로운 **클라우드 관리 대시보드**는 CMG(클라우드 관리 게이트웨이) 사용량에 대한 중앙 집중식 보기를 제공합니다. 사이트가 Azure AD에 등록되면 클라우드 사용자 및 디바이스에 대한 데이터도 표시됩니다.  
 
 다음 스크린샷은 사용 가능한 타일 두 가지를 보여 주는 클라우드 관리 대시보드의 일부입니다.  
 ![클라우드 관리 대시보드 타일 CMG 트래픽 및 현재 온라인 클라이언트](media/1358461-cmg-dashboard.png)
@@ -219,21 +219,21 @@ Configuration Manager 콘솔에서 **모니터링** 작업 영역으로 이동�
 ## <a name="cmpivot"></a>CMPivot
 <!--1358456--> Configuration Manager는 고객이 보고용으로 사용하는 장치 데이터의 대규모 중앙 저장소를 항상 제공해왔습니다. 그러나 해당 데이터는 클라이언트에서 마지막으로 수집될 때와 마찬가지입니다. 
 
-CMPivot은 사용자 환경에서 장치의 실시간 상태에 액세스할 수 있는 새로운 콘솔 내 유틸리티입니다. 이 유틸리티는 대상 컬렉션에서 현재 연결된 모든 장치에 대해 바로 쿼리를 실행하고 결과를 반환합니다. 그러면 도구에서 이 데이터를 필터링하고 그룹화할 수 있습니다. 온라인 클라이언트에서 실시간 데이터를 제공함으로써 비즈니스 질문에 신속하게 대답하고 문제를 해결하며 보안 인시던트에 응답할 수 있습니다.
+CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스할 수 있는 새로운 콘솔 내 유틸리티입니다. 이 유틸리티는 대상 컬렉션에서 현재 연결된 모든 디바이스에 대해 바로 쿼리를 실행하고 결과를 반환합니다. 그러면 도구에서 이 데이터를 필터링하고 그룹화할 수 있습니다. 온라인 클라이언트에서 실시간 데이터를 제공함으로써 비즈니스 질문에 신속하게 대답하고 문제를 해결하며 보안 인시던트에 응답할 수 있습니다.
 
 예를 들어, [잘못된 실행 부채널 취약성을 완화](https://blogs.technet.microsoft.com/configurationmgr/2018/01/08/additional-guidance-to-mitigate-speculative-execution-side-channel-vulnerabilities/)할 때 요구 사항 중 하나는 시스템 BIOS 업데이트입니다. CMPivot을 사용하여 시스템 BIOS 정보를 신속하게 쿼리하고 준수하지 않는 클라이언트를 찾을 수 있습니다. 
 
-다음 스크린샷에서 CMPivot은 각각 장치 수가 하나인 별도의 BIOS 버전 두 개를 보여 줍니다. CMPivot을 사용해 볼 때 이 예제 쿼리를 사용할 수 있습니다.  
+다음 스크린샷에서 CMPivot은 각각 디바이스 수가 하나인 별도의 BIOS 버전 두 개를 보여 줍니다. CMPivot을 사용해 볼 때 이 예제 쿼리를 사용할 수 있습니다.  
 `Registry('hklm:\\Hardware\\Description\\System\\BIOS') | where (Property == 'BIOSVersion') | summarize dcount( Device ) by Value`  
 
 ![BIOSVersion에 대한 예제 쿼리가 있는 CMPivot 창](media/1358456-cmpivot-biosversion.png)
 
-장치 수를 클릭하면 드릴다운하여 특정 장치를 볼 수 있습니다. CMPivot에 장치를 표시할 때 장치를 마우스 오른쪽 단추로 클릭하고 다음과 같은 [클라이언트 알림 작업](/sccm/core/clients/manage/manage-clients#BKMK_ManagingClients_DevicesNode)을 선택할 수 있습니다.
+디바이스 수를 클릭하면 드릴다운하여 특정 디바이스를 볼 수 있습니다. CMPivot에 디바이스를 표시할 때 디바이스를 마우스 오른쪽 단추로 클릭하고 다음과 같은 [클라이언트 알림 작업](/sccm/core/clients/manage/manage-clients#BKMK_ManagingClients_DevicesNode)을 선택할 수 있습니다.
 - 스크립트 실행
 - 원격 제어
 - 리소스 탐색기
 
-특정 장치를 마우스 오른쪽 단추로 클릭하면 특정 장치의 보기를 다음 특성 중 하나로 피벗할 수도 있습니다.
+특정 디바이스를 마우스 오른쪽 단추로 클릭하면 특정 디바이스의 보기를 다음 특성 중 하나로 피벗할 수도 있습니다.
 - 자동 시작 명령
 - 설치된 제품
 - Processes
@@ -250,7 +250,7 @@ CMPivot은 사용자 환경에서 장치의 실시간 상태에 액세스할 수
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 작업을 완료합니다. 그런 다음, [피드백](capabilities-in-technical-preview-1804.md#bkmk_feedback)을 전송하여 작업이 어떻게 진행되었는지 알려주세요.
 
-1. Configuration Manager 콘솔에서 **자산 및 호환성** 작업 영역으로 이동하여 **장치 컬렉션**을 선택합니다. 대상 컬렉션을 선택하고 리본에서 **CMPivot 시작**을 클릭하여 도구를 시작합니다.  
+1. Configuration Manager 콘솔에서 **자산 및 호환성** 작업 영역으로 이동하여 **디바이스 컬렉션**을 선택합니다. 대상 컬렉션을 선택하고 리본에서 **CMPivot 시작**을 클릭하여 도구를 시작합니다.  
 
 2. 인터페이스에서 도구 사용에 대한 추가 정보를 제공합니다. 
      - 맨 위에 쿼리 문자열을 수동으로 입력하거나 인라인 문서에서 링크를 클릭할 수 있습니다.
@@ -286,7 +286,7 @@ CMPivot은 사용자 환경에서 장치의 실시간 상태에 액세스할 수
 <!--1358228--> 작업 그룹 또는 Azure AD 조인 클라이언트는 HTTP용으로 구성된 배포 지점에서 보안 채널을 통해 콘텐츠를 다운로드할 수 있습니다.   
 
 #### <a name="bkmk_token3"></a> 시나리오 3: Azure AD 장치 ID 
-<!--1358460--> Azure AD 사용자가 로그인되지 않은 Azure AD 조인 또는 [하이브리드 Azure AD 장치](/azure/active-directory/device-management-introduction#hybrid-azure-ad-joined-devices)에서 할당된 사이트와 안전하게 통신할 수 있습니다. 이제 클라우드 기반 장치 ID만 있으면 CMG 및 관리 지점을 인증하는 데 충분합니다.  
+<!--1358460--> Azure AD 사용자가 로그인되지 않은 Azure AD 조인 또는 [하이브리드 Azure AD 장치](/azure/active-directory/device-management-introduction#hybrid-azure-ad-joined-devices)에서 할당된 사이트와 안전하게 통신할 수 있습니다. 이제 클라우드 기반 디바이스 ID만 있으면 CMG 및 관리 지점을 인증하는 데 충분합니다.  
 
 
 ### <a name="prerequisites"></a>필수 구성 요소  
@@ -390,10 +390,10 @@ SCUP 도구의 일반적인 용도에 대한 자세한 내용은 [System Center 
 ## <a name="improvement-to-the-configuration-manager-console"></a>Configuration Manager 콘솔 개선 사항
 <!--1358202--> Configuration Manager 콘솔이 다음과 같이 개선되었습니다.
 
-- 이제 [자산 및 호환성] 아래의 장치 목록인 [장치]에 기본적으로 현재 로그인한 사용자가 표시됩니다. 이 값은 [클라이언트 상태](/sccm/core/clients/manage/monitor-clients#bkmk_indStatus)만큼 최신 상태입니다. 이 값은 사용자가 로그오프하면 지워지고, 로그온한 사용자가 없으면 값이 비어 있습니다. 
+- 이제 [자산 및 호환성] 아래의 디바이스 목록인 [디바이스]에 기본적으로 현재 로그인한 사용자가 표시됩니다. 이 값은 [클라이언트 상태](/sccm/core/clients/manage/monitor-clients#bkmk_indStatus)만큼 최신 상태입니다. 이 값은 사용자가 로그오프하면 지워지고, 로그온한 사용자가 없으면 값이 비어 있습니다. 
 
 ### <a name="known-issues"></a>알려진 문제
-[장치] 노드에서 또는 [장치 컬렉션] 노드 아래의 장치 목록을 볼 때 현재 로그온한 사용자 값이 비어 있습니다. 이 문제를 해결하려면 이 [SQL 스크립트](https://gallery.technet.microsoft.com/ConfigMgr-1805-BgbUpdateLiv-306ff46c)를 다운로드하세요. 사이트 데이터베이스 서버에서 sp_BgbUpdateLiveData.sql을 실행한 후 관리 지점에서 smsexec 및 sms_notification_server 서비스를 다시 시작하세요.<!--514471-->
+[디바이스] 노드에서 또는 [디바이스 컬렉션] 노드 아래의 디바이스 목록을 볼 때 현재 로그온한 사용자 값이 비어 있습니다. 이 문제를 해결하려면 이 [SQL 스크립트](https://gallery.technet.microsoft.com/ConfigMgr-1805-BgbUpdateLiv-306ff46c)를 다운로드하세요. 사이트 데이터베이스 서버에서 sp_BgbUpdateLiveData.sql을 실행한 후 관리 지점에서 smsexec 및 sms_notification_server 서비스를 다시 시작하세요.<!--514471-->
 
 
 

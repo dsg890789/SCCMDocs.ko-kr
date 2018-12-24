@@ -21,7 +21,7 @@ ms.locfileid: "52456026"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-버전 1806부터 Configuration Manager 제품 수명 주기 대시보드를 사용하여 Microsoft 수명 주기 정책을 볼 수 있습니다. 대시보드에는 Configuration Manager로 관리되는 장치에 설치된 Microsoft 제품에 대한 Microsoft 수명 주기 정책의 상태가 표시됩니다. 또한 사용자 환경의 Microsoft 제품, 지원 가능성 상태 및 지원 종료 날짜에 대한 정보도 제공합니다. 대시보드를 사용하여 각 제품에 대한 지원 가용성을 파악합니다. 이 정보는 현재 지원 종료에 도달하기 전에 사용하는 Microsoft 제품을 업데이트할 시기를 계획하는 데 도움이 됩니다.  
+버전 1806부터 Configuration Manager 제품 수명 주기 대시보드를 사용하여 Microsoft 수명 주기 정책을 볼 수 있습니다. 대시보드에는 Configuration Manager로 관리되는 디바이스에 설치된 Microsoft 제품에 대한 Microsoft 수명 주기 정책의 상태가 표시됩니다. 또한 사용자 환경의 Microsoft 제품, 지원 가능성 상태 및 지원 종료 날짜에 대한 정보도 제공합니다. 대시보드를 사용하여 각 제품에 대한 지원 가용성을 파악합니다. 이 정보는 현재 지원 종료에 도달하기 전에 사용하는 Microsoft 제품을 업데이트할 시기를 계획하는 데 도움이 됩니다.  
 
 자세한 내용은 [Microsoft 수명 주기 정책](https://support.microsoft.com/lifecycle)을 참조하세요.
 
@@ -46,7 +46,7 @@ ms.locfileid: "52456026"
 
 ## <a name="use-the-product-lifecycle-dashboard"></a>제품 수명 주기 대시보드 사용
 
-사이트가 관리 장치에서 수집한 인벤토리 데이터를 기반으로 대시보드에 모든 현재 제품에 대한 정보가 표시됩니다. 그러나 운영 체제 및 SQL Server에 대해 표시되는 정보는 다음 버전으로 제한됩니다.
+사이트가 관리 디바이스에서 수집한 인벤토리 데이터를 기반으로 대시보드에 모든 현재 제품에 대한 정보가 표시됩니다. 그러나 운영 체제 및 SQL Server에 대해 표시되는 정보는 다음 버전으로 제한됩니다.
 
 - Windows Server 2008 이상
 - Windows XP 이상

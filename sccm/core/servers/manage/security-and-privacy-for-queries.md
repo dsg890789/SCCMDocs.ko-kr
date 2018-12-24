@@ -21,7 +21,7 @@ ms.locfileid: "32337618"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 쿼리를 사용하여 지정하는 기준에 따라 사이트 데이터베이스에서 정보를 검색할 수 있습니다. Configuration Manager에서 표준 작업 중에 사이트 데이터베이스 정보를 수집합니다. 예를들어, 검색 또는 인벤토리에서 수집 된 정보를 사용 하 여 지정 된 조건을 충족 하는 장치를 식별 하는 쿼리를 구성할 수 있습니다.  
+System Center Configuration Manager의 쿼리를 사용하여 지정하는 기준에 따라 사이트 데이터베이스에서 정보를 검색할 수 있습니다. Configuration Manager에서 표준 작업 중에 사이트 데이터베이스 정보를 수집합니다. 예를 들어 검색 또는 인벤토리에서 수집된 정보를 사용하여 지정된 기준을 충족하는 디바이스를 식별하는 쿼리를 구성할 수 있습니다.  
 
  쿼리에 대한 자세한 내용은 [System Center Configuration Manager의 쿼리 소개](../../../core/servers/manage/introduction-to-queries.md)를 참조하세요. 쿼리를 사용하여 검색할 수 있는 정보를 수집하는 Configuration Manager 작업에 대해 보안 모범 사례 및 개인 정보에 대한 자세한 내용은 [System Center Configuration Manager의 보안 및 개인 정보](../../../core/plan-design/security/security-and-privacy.md)를 참조하세요.  
 

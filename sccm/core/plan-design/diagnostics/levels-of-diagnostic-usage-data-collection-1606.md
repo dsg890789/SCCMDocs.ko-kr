@@ -57,11 +57,11 @@ System Center Configuration Manager 버전 1606에서는 **기본**, **고급**,
 
 -   Configuration Manager 클라이언트 버전 및 운영 체제 버전 개수
 
--   관리되는 장치의 운영 체제 및 Exchange Connector에서 설정한 정책 개수
+-   관리되는 디바이스의 운영 체제 및 Exchange Connector에서 설정한 정책 개수
 
 -   로캘 및 클라이언트 언어 개수
 
--   분기 및 빌드별 Windows 10 장치 개수
+-   분기 및 빌드별 Windows 10 디바이스 개수
 
 -   기본 Configuration Manager 사이트 계층 구조 데이터(사이트 목록, 유형, 버전, 상태, 클라이언트 수 및 표준 시간대)
 
@@ -99,7 +99,7 @@ System Center Configuration Manager 버전 1606부터 이 수준에는 다음이
 
 -   **응용 프로그램 관리:**  
 
-    -    조직 내에서 사용되는 배포 유형에 대한 기본 사용 현황/대상 지정 정보(사용자 및 장치 대상 지정, 필수 및 사용 가능, 유니버설 앱)  
+    -    조직 내에서 사용되는 배포 유형에 대한 기본 사용 현황/대상 지정 정보(사용자 및 디바이스 대상 지정, 필수 및 사용 가능, 유니버설 앱)  
 
     -   응용 프로그램 배포 정보(설치/제거, 승인 필요, 사용자 조작 사용/사용 안 함, 종속성, 대체)  
 
@@ -243,21 +243,21 @@ System Center Configuration Manager 버전 1606부터 이 수준에는 다음이
 
 -   **MDM(모바일 장치 관리):**  
 
-    -   실행된 모바일 장치 작업(잠금, 핀 다시 설정, 초기화, 사용 중지 명령) 개수  
+    -   실행된 모바일 디바이스 작업(잠금, 핀 다시 설정, 초기화, 사용 중지 명령) 개수  
 
-    -   Configuration Manager 및 Microsoft Intune에서 관리되는 모바일 장치 개수 및 등록 방법(대량 또는 사용자 기반)  
+    -   Configuration Manager 및 Microsoft Intune에서 관리되는 모바일 디바이스 개수 및 등록 방법(대량 또는 사용자 기반)  
 
-    -   모바일 장치 폴링 일정 및 통계 모바일 장치 체크 인 기간  
+    -   모바일 디바이스 폴링 일정 및 통계 모바일 디바이스 체크 인 기간  
 
-    -   모바일 장치 정책 개수  
+    -   모바일 디바이스 정책 개수  
 
-    -   등록된 여러 모바일 장치를 사용하는 사용자 개수  
+    -   등록된 여러 모바일 디바이스를 사용하는 사용자 개수  
 
 -   **Microsoft Intune 문제 해결:**
 
     -   상태(state), 상태(status), 인벤토리, RDR, DDR, UDX, 테넌트 상태, POL, LOG, Cert, CRP, Resync, CFD, RDO, BEX, ISM 개수와 크기 및 Microsoft Intune에서 다운로드된 준수 메시지
 
-    -   장치 작업(초기화, 사용 중지, 잠금) 개수와 크기, 원격 분석 및 Microsoft Intune에 복제된 데이터 메시지
+    -   디바이스 작업(초기화, 사용 중지, 잠금) 개수와 크기, 원격 분석 및 Microsoft Intune에 복제된 데이터 메시지
 
     -   Microsoft Intune에 대한 전체 및 델타 사용자 동기화 통계
 
@@ -387,7 +387,7 @@ System Center Configuration Manager 버전 1606부터 이 수준에는 다음이
 -    소프트웨어 업데이트 지점에서 동기화된 소프트웨어 업데이트 제품
 -    준수 설정: SCEP, VPN, Wi-Fi 및 준수 정책 템플릿 구성 정보
 
--    Intune에서 관리하는 장치에 대한 EAS 조건부 액세스 정책 유형(차단 또는 격리)
+-    Intune에서 관리하는 디바이스에 대한 EAS 조건부 액세스 정책 유형(차단 또는 격리)
 
 -   ***[새로운 기능]*** 환경에서 상위 50개 CPU
 

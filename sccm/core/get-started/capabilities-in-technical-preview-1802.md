@@ -49,7 +49,7 @@ ms.locfileid: "32343224"
 
 ## <a name="transition-endpoint-protection-workload-to-intune-using-co-management"></a>공동 관리를 사용하여 Endpoint Protection 워크로드를 Intune으로 전환    
 <!-- 1357365 -->
-이 릴리스에서는 이제 공동 관리를 사용하도록 설정한 후 Configuration Manager에서 Intune으로 Endpoint Protection 워크로드를 전환할 수 있습니다. Endpoint Protection 워크로드를 전환하려면 공동 관리 속성 페이지로 이동한 다음, 슬라이더 막대를 Configuration Manager에서 **파일럿** 또는 **모두**로 이동합니다. 자세한 내용은 [Windows 10 장치의 공동 관리](/sccm/core/clients/manage/co-management-overview)를 참조하세요.
+이 릴리스에서는 이제 공동 관리를 사용하도록 설정한 후 Configuration Manager에서 Intune으로 Endpoint Protection 워크로드를 전환할 수 있습니다. Endpoint Protection 워크로드를 전환하려면 공동 관리 속성 페이지로 이동한 다음, 슬라이더 막대를 Configuration Manager에서 **파일럿** 또는 **모두**로 이동합니다. 자세한 내용은 [Windows 10 디바이스의 공동 관리](/sccm/core/clients/manage/co-management-overview)를 참조하세요.
 
 
  
@@ -63,7 +63,7 @@ Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원�
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
  작업을 완료합니다. 그런 다음 어떻게 작동하는지 알 수 있도록 리본의 **홈** 탭에서 **피드백**을 보냅니다.
 
-1. Configuration Manager 콘솔, **관리** 작업 영역, **클라이언트 설정** 노드에서 사용자 지정 클라이언트 장치 설정 정책을 만듭니다.
+1. Configuration Manager 콘솔, **관리** 작업 영역, **클라이언트 설정** 노드에서 사용자 지정 클라이언트 디바이스 설정 정책을 만듭니다.
 2. 새 **배달 최적화** 그룹을 선택합니다.
 3. **배달 최적화 그룹 ID에 Configuration Manager 경계 그룹 사용** 설정을 사용하도록 설정합니다.
 
@@ -76,7 +76,7 @@ Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원�
 
 이제 Windows 10 [내부 업그레이드 작업 순서](/sccm/osd/deploy-use/upgrade-windows-to-the-latest-version)에서 [클라우드 관리 게이트웨이](/sccm/core/clients/manage/plan-cloud-management-gateway)를 통해 관리되는 인터넷 기반 클라이언트에 대한 배포를 지원합니다. 이 기능을 사용하면 원격 사용자가 회사 네트워크에 연결할 필요 없이 Windows 10으로 쉽게 업그레이드할 수 있습니다. 
 
-내부 업그레이드 작업 순서에서 참조하는 모든 콘텐츠가 [클라우드 배포 지점](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point)에 배포되었는지 확인합니다. 배포되지 않은 경우 장치에서 작업 순서를 실행할 수 없습니다.
+내부 업그레이드 작업 순서에서 참조하는 모든 콘텐츠가 [클라우드 배포 지점](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point)에 배포되었는지 확인합니다. 배포되지 않은 경우 디바이스에서 작업 순서를 실행할 수 없습니다.
 
 업그레이드 작업 순서를 배포하는 경우 다음 설정을 사용합니다.
 - 배포의 사용자 환경 탭에 있는 **작업 순서가 인터넷을 통해 클라이언트에 대해 실행되도록 허용**.
@@ -87,7 +87,7 @@ Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원�
 
 ## <a name="improvements-to-windows-10-in-place-upgrade-task-sequence"></a>Windows 10 현재 위치 업그레이드 작업 순서 개선 사항
 <!-- 1357425 -->
-이제 Windows 10 내부 업그레이드의 기본 작업 순서 템플릿에 업그레이드 프로세스 전후에 추가할 권장 작업이 있는 추가 그룹이 포함되어 있습니다. 이러한 작업은 장치를 Windows 10으로 성공적으로 업그레이드한 많은 고객들에게 공통적으로 적용됩니다. 
+이제 Windows 10 내부 업그레이드의 기본 작업 순서 템플릿에 업그레이드 프로세스 전후에 추가할 권장 작업이 있는 추가 그룹이 포함되어 있습니다. 이러한 작업은 디바이스를 Windows 10으로 성공적으로 업그레이드한 많은 고객들에게 공통적으로 적용됩니다. 
 
 ### <a name="new-groups-under-prepare-for-upgrade"></a>**업그레이드 준비** 중인 새 그룹
 - **배터리 확인**: 컴퓨터에서 배터리를 사용하는지 또는 유선 전원을 사용하는지를 확인하려면 이 그룹의 단계를 추가합니다. 이 작업에서 배터리 확인을 수행하려면 사용자 지정 스크립트 또는 유틸리티가 필요합니다.
@@ -111,7 +111,7 @@ Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원�
    - **업그레이드 준비** 그룹의 초기에 두 번째 **운영 체제 업그레이드** 단계를 추가합니다. 이름을 *업그레이드 평가*로 지정합니다. 동일한 업그레이드 패키지를 지정한 후 **업그레이드를 시작하지 않고 Windows 설치 프로그램 호환성 검사 수행** 옵션을 사용하도록 설정합니다. 옵션 탭에서 **오류 발생 시 계속**을 사용하도록 설정합니다. 
    - 이 *업그레이드 평가* 단계 바로 뒤에 **명령줄 실행** 단계를 추가합니다. 다음 명령줄을 지정합니다.</br> `cmd /c exit %_SMSTSOSUpgradeActionReturnCode%`</br>**옵션** 탭에서 다음 조건을 추가합니다. </br>`Task Sequence Variable _SMSTSOSUpgradeActionReturnCode not equals 3247440400` </br>이 반환 코드는 문제없이 호환성 검사에 성공하는 MOSETUP_E_COMPAT_SCANONLY(0xC1900210)에 해당하는 10진 코드입니다. *업그레이드 평가* 단계가 성공하고 이 코드를 반환하는 경우 이 단계를 건너뜁니다. 또는 평가 단계가 다른 반환 코드를 반환하는 경우 이 단계에서 작업 순서가 실패하고 Windows 설치 호환성 검사의 반환 코드가 표시됩니다.
    - 자세한 내용은 [운영 체제 업그레이드](/sccm/osd/understand/task-sequence-steps#BKMK_UpgradeOS)를 참조하세요.
-- 이 작업 순서 중에 장치를 BIOS에서 UEFI로 변경하려는 경우 [현재 위치 업그레이드 중에 BIOS에서 UEFI로 변환](/sccm/osd/deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion#convert-from-bios-to-uefi-during-an-in-place-upgrade)을 참조하세요.
+- 이 작업 순서 중에 디바이스를 BIOS에서 UEFI로 변경하려는 경우 [현재 위치 업그레이드 중에 BIOS에서 UEFI로 변환](/sccm/osd/deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion#convert-from-bios-to-uefi-during-an-in-place-upgrade)을 참조하세요.
 
 추가 권장 사항이나 제안이 있는 경우 리본의 **홈** 탭에서 **피드백**을 전송하세요.
 
@@ -155,7 +155,7 @@ WDS가 필요하지 않으므로 PXE 사용 배포 지점은 Windows Server Core
 
 ## <a name="product-lifecycle-dashboard"></a>제품 수명 주기 대시보드
 <!--1319632-->
-새 [제품 수명 주기 대시보드](/sccm/core/clients/manage/asset-intelligence/product-lifecycle-dashboard)에는 Configuration Manager로 관리되는 장치에 설치된 Microsoft 제품에 대한 Microsoft 제품 수명 주기 정책의 상태가 표시됩니다. 대시보드는 사용자 환경의 Microsoft 제품, 지원 가능성 상태 및 지원 종료 날짜에 대한 정보를 제공합니다. 대시보드를 사용하여 각 제품에 대한 지원 가능성을 파악할 수 있습니다. 
+새 [제품 수명 주기 대시보드](/sccm/core/clients/manage/asset-intelligence/product-lifecycle-dashboard)에는 Configuration Manager로 관리되는 디바이스에 설치된 Microsoft 제품에 대한 Microsoft 제품 수명 주기 정책의 상태가 표시됩니다. 대시보드는 사용자 환경의 Microsoft 제품, 지원 가능성 상태 및 지원 종료 날짜에 대한 정보를 제공합니다. 대시보드를 사용하여 각 제품에 대한 지원 가능성을 파악할 수 있습니다. 
 
 수명 주기 대시보드에 액세스하려면 Configuration Manager 콘솔에서 **자산 및 호환성** >**Asset Intelligence** >**제품 수명 주기**로 이동합니다.
 
@@ -163,7 +163,7 @@ WDS가 필요하지 않으므로 PXE 사용 배포 지점은 Windows Server Core
 
 ## <a name="improvements-to-reporting"></a>보고 개선 사항
 <!--1357653-->
-[고객 피드백](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/32434147-new-builtin-reports-about-windows-10-versions-and)의 결과로, **특정 컬렉션에 대한 Windows 10 서비스 세부 정보**라는 새 보고서가 추가되었습니다. 이 보고서에는 Windows 10 장치의 리소스 ID, NetBIOS 이름, OS 이름, OS 릴리스 이름, 빌드, OS 분기 및 서비스 상태가 표시됩니다. 보고서에 액세스하려면 **모니터링** >**보고** >**보고서** >**운영 체제** >**특정 컬렉션에 대한 Windows 10 서비스 세부 정보**로 이동합니다.
+[고객 피드백](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/32434147-new-builtin-reports-about-windows-10-versions-and)의 결과로, **특정 컬렉션에 대한 Windows 10 서비스 세부 정보**라는 새 보고서가 추가되었습니다. 이 보고서에는 Windows 10 디바이스의 리소스 ID, NetBIOS 이름, OS 이름, OS 릴리스 이름, 빌드, OS 분기 및 서비스 상태가 표시됩니다. 보고서에 액세스하려면 **모니터링** >**보고** >**보고서** >**운영 체제** >**특정 컬렉션에 대한 Windows 10 서비스 세부 정보**로 이동합니다.
 
 
 
@@ -254,9 +254,9 @@ Configuration Manager는 기존 클래식 CMG 인스턴스를 Azure Resource Man
 
 
 
-## <a name="approve-application-requests-for-users-per-device"></a>장치당 사용자에 대한 응용 프로그램 요청 승인
+## <a name="approve-application-requests-for-users-per-device"></a>디바이스당 사용자에 대한 응용 프로그램 요청 승인
 <!-- 1357015 -->
-이 릴리스부터는 사용자가 승인이 필요한 응용 프로그램을 요청할 때 특정 장치 이름이 요청의 일부로 포함됩니다. 관리자가 요청을 승인하면 사용자는 해당 장치에만 응용 프로그램을 설치할 수 있습니다. 사용자가 다른 장치에 응용 프로그램을 설치하려면 다른 요청을 제출해야 합니다. 
+이 릴리스부터는 사용자가 승인이 필요한 응용 프로그램을 요청할 때 특정 디바이스 이름이 요청의 일부로 포함됩니다. 관리자가 요청을 승인하면 사용자는 해당 디바이스에만 응용 프로그램을 설치할 수 있습니다. 사용자가 다른 디바이스에 응용 프로그램을 설치하려면 다른 요청을 제출해야 합니다. 
 
 > [!NOTE]
 > 이 기능은 선택 사항입니다. 이 릴리스로 업데이트할 때 업데이트 마법사에서 이 기능을 사용하도록 설정합니다. 또는 나중에 콘솔에서 기능을 사용하도록 설정합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.
@@ -271,13 +271,13 @@ Configuration Manager는 기존 클래식 CMG 인스턴스를 Azure Resource Man
 1. 사용자 컬렉션이 사용할 수 있는 응용 프로그램으로 배포합니다.
 2. **배포 설정** 페이지에서 **관리자가 장치에서 이 응용 프로그램에 대한 요청을 승인해야 합니다.** 옵션을 사용하도록 설정합니다.
 3. 대상 사용자로, 소프트웨어 센터를 사용하여 응용 프로그램에 대한 요청을 제출합니다. 
-4. Configuration Manager 콘솔의 **소프트웨어 라이브러리** 작업 영역에서 **응용 프로그램 관리** 아래의 **승인 요청**을 확인합니다. 이제 각 요청에 대한 **장치** 열이 목록에 있습니다. 요청에 대한 작업을 수행하는 경우 응용 프로그램 요청 대화 상자에 사용자가 요청을 제출한 장치 이름도 포함됩니다.
+4. Configuration Manager 콘솔의 **소프트웨어 라이브러리** 작업 영역에서 **응용 프로그램 관리** 아래의 **승인 요청**을 확인합니다. 이제 각 요청에 대한 **디바이스** 열이 목록에 있습니다. 요청에 대한 작업을 수행하는 경우 응용 프로그램 요청 대화 상자에 사용자가 요청을 제출한 디바이스 이름도 포함됩니다.
 
 
 
-## <a name="use-software-center-to-browse-and-install-user-available-applications-on-azure-ad-joined-devices"></a>소프트웨어 센터를 사용하여 Azure AD 조인 장치에서 사용자가 사용할 수 있는 응용 프로그램 찾아보기 및 설치
+## <a name="use-software-center-to-browse-and-install-user-available-applications-on-azure-ad-joined-devices"></a>소프트웨어 센터를 사용하여 Azure AD 조인 디바이스에서 사용자가 사용할 수 있는 응용 프로그램 찾아보기 및 설치
 <!-- 1322613 -->
-사용자가 사용할 수 있는 응용 프로그램으로 배포하는 경우 이제 Azure AD(Azure Active Directory) 장치에서 소프트웨어 센터를 통해 해당 응용 프로그램을 찾아보고 설치할 수 있습니다.  
+사용자가 사용할 수 있는 응용 프로그램으로 배포하는 경우 이제 Azure AD(Azure Active Directory) 디바이스에서 소프트웨어 센터를 통해 해당 응용 프로그램을 찾아보고 설치할 수 있습니다.  
 
 ### <a name="prerequisites"></a>필수 구성 요소
 - 관리 지점에서 HTTPS 사용
@@ -297,20 +297,20 @@ Configuration Manager는 기존 클래식 CMG 인스턴스를 Azure Resource Man
 
 
 
-## <a name="report-on-windows-autopilot-device-information"></a>Windows AutoPilot 장치 정보에 대한 보고서
+## <a name="report-on-windows-autopilot-device-information"></a>Windows AutoPilot 디바이스 정보에 대한 보고서
 <!-- 1351442 -->
-Windows AutoPilot은 새로운 Windows 10 장치를 최신 방법으로 온보딩 및 구성하기 위한 솔루션입니다. 자세한 내용은 [Windows AutoPilot 개요](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)를 참조하세요. 기존 장치를 Windows AutoPilot에 등록하는 한 가지 방법은 비즈니스 및 교육용 Microsoft 스토어에 장치 정보를 업로드하는 것입니다. 이 정보에는 장치 일련 번호, Windows 제품 식별자 및 하드웨어 식별자가 포함됩니다. Configuration Manager를 사용하여 이 장치 정보를 수집하고 보고할 수 있습니다. 
+Windows AutoPilot은 새로운 Windows 10 디바이스를 최신 방법으로 온보딩 및 구성하기 위한 솔루션입니다. 자세한 내용은 [Windows AutoPilot 개요](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)를 참조하세요. 기존 디바이스를 Windows AutoPilot에 등록하는 한 가지 방법은 비즈니스 및 교육용 Microsoft 스토어에 디바이스 정보를 업로드하는 것입니다. 이 정보에는 디바이스 일련 번호, Windows 제품 식별자 및 하드웨어 식별자가 포함됩니다. Configuration Manager를 사용하여 이 디바이스 정보를 수집하고 보고할 수 있습니다. 
 
 ### <a name="prerequisites"></a>필수 구성 요소
-- 이 장치 정보는 Windows 10 버전 1703 이상의 클라이언트에만 적용됩니다.
+- 이 디바이스 정보는 Windows 10 버전 1703 이상의 클라이언트에만 적용됩니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
  작업을 완료합니다. 그런 다음 어떻게 작동하는지 알 수 있도록 리본의 **홈** 탭에서 **피드백**을 보냅니다.
 
 1. Configuration Manager 콘솔, **모니터링** 작업 영역에서 **보고** 노드, **보고서**를 차례로 확장하고 **하드웨어 - 일반** 노드를 선택합니다.
-2. 새 보고서인 **Windows AutoPilot 장치 정보**를 실행하고 결과를 확인합니다. 
+2. 새 보고서인 **Windows AutoPilot 디바이스 정보**를 실행하고 결과를 확인합니다. 
 3. 보고서 뷰어에서 **내보내기** 아이콘을 클릭하고 **CSV(쉼표로 구분)** 옵션을 선택합니다.
-4. 파일을 저장한 후 비즈니스 및 교육용 Microsoft 스토어에 데이터를 업로드합니다. 자세한 내용은 [비즈니스 및 교육용 Microsoft 스토어에 장치 추가](https://docs.microsoft.com/microsoft-store/add-profile-to-devices#add-devices-and-apply-autopilot-deployment-profile)를 참조하세요. 
+4. 파일을 저장한 후 비즈니스 및 교육용 Microsoft 스토어에 데이터를 업로드합니다. 자세한 내용은 [비즈니스 및 교육용 Microsoft 스토어에 디바이스 추가](https://docs.microsoft.com/microsoft-store/add-profile-to-devices#add-devices-and-apply-autopilot-deployment-profile)를 참조하세요. 
 
 
 
@@ -350,7 +350,7 @@ Windows 10 클라이언트에서 [Microsoft Edge](https://technet.microsoft.com/
 - Azure Active Directory 조인 Windows 10 클라이언트 
 
 ### <a name="known-issues"></a>알려진 문제
-- 이 릴리스에서는 온-프레미스 도메인 조인 장치가 이 정책을 적용할 수 없습니다. 이 문제는 하이브리드 도메인 조인 장치에도 관련이 있습니다.
+- 이 릴리스에서는 온-프레미스 도메인 조인 디바이스가 이 정책을 적용할 수 없습니다. 이 문제는 하이브리드 도메인 조인 디바이스에도 관련이 있습니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기  
  작업을 완료합니다. 그런 다음 어떻게 작동하는지 알 수 있도록 리본의 **홈** 탭에서 **피드백**을 보냅니다.
@@ -365,7 +365,7 @@ Windows 10 클라이언트에서 [Microsoft Edge](https://technet.microsoft.com/
 **정책 배포**
 1. 정책을 선택하고 **배포** 리본 옵션을 클릭합니다.
 2. **찾아보기**를 클릭하여 정책을 배포할 사용자 또는 장치 컬렉션을 선택합니다. 
-3. 필요에 따라 추가 옵션을 선택합니다. 정책이 호환되지 않을 경우 경고를 생성합니다. 클라이언트가 이 정책에 대한 장치의 준수를 평가하는 일정을 설정합니다.
+3. 필요에 따라 추가 옵션을 선택합니다. 정책이 호환되지 않을 경우 경고를 생성합니다. 클라이언트가 이 정책에 대한 디바이스의 준수를 평가하는 일정을 설정합니다.
 4. **확인**을 클릭하여 배포를 만듭니다.
 
 준수 설정 정책과 마찬가지로 클라이언트는 지정된 일정에 따라 설정을 수정합니다. Configuration Manager 콘솔에서 [장치 준수를 모니터링하고 보고](/sccm/compliance/deploy-use/monitor-compliance-settings)합니다.
@@ -396,9 +396,9 @@ Windows 10 클라이언트에서 [Microsoft Edge](https://technet.microsoft.com/
 
 
 
-## <a name="support-for-windows-10-arm64-devices"></a>Windows 10 ARM64 장치 지원
+## <a name="support-for-windows-10-arm64-devices"></a>Windows 10 ARM64 디바이스 지원
 <!-- 1353704 -->
-이 릴리스부터는 Windows 10 ARM64 장치에서 구성 관리자 클라이언트가 지원됩니다. 기존 클라이언트 관리 기능도 이러한 새 장치에서 작동합니다. 예를 들어 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 업데이트, 응용 프로그램 관리 등입니다. 운영 체제 배포는 현재 지원되지 않습니다. 
+이 릴리스부터는 Windows 10 ARM64 디바이스에서 구성 관리자 클라이언트가 지원됩니다. 기존 클라이언트 관리 기능도 이러한 새 디바이스에서 작동합니다. 예를 들어 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 업데이트, 응용 프로그램 관리 등입니다. 운영 체제 배포는 현재 지원되지 않습니다. 
 
 ## <a name="changes-to-phased-deployments"></a>단계별 배포 변경 사항
 <!-- 1357405 -->

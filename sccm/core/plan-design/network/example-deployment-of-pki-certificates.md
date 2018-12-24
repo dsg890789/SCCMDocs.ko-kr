@@ -59,7 +59,7 @@ Windows Server 2008 CA(인증 기관)를 사용하는 이 단계별 배포 예�
 
 -   Active Directory 인증서 서비스 역할이 설치된 Windows Server 2008 Enterprise Edition을 실행하는 구성원 서버가 있고 이 서버가 엔터프라이즈 루트 CA(인증 기관)로 설정되어 있습니다.  
 
--   Windows Server 2008(Standard Edition 또는 Enterprise Edition R2 이상)이 설치되고 구성원 서버로 지정된 컴퓨터가 있으며, 이 컴퓨터에 IIS(인터넷 정보 서비스)가 설치되어 있습니다. 인터넷에서 System Center Configuration Manager 및 클라이언트에 의해 등록된 모바일 장치를 지원해야 하는 경우 이 컴퓨터는 인트라넷에서 클라이언트 연결을 지원할 인트라넷 FQDN(정규화된 도메인 이름)과 인터넷 FQDN으로 구성할 System Center Configuration Manager 사이트 시스템 서버가 됩니다.  
+-   Windows Server 2008(Standard Edition 또는 Enterprise Edition R2 이상)이 설치되고 구성원 서버로 지정된 컴퓨터가 있으며, 이 컴퓨터에 IIS(인터넷 정보 서비스)가 설치되어 있습니다. 인터넷에서 System Center Configuration Manager 및 클라이언트에 의해 등록된 모바일 디바이스를 지원해야 하는 경우 이 컴퓨터는 인트라넷에서 클라이언트 연결을 지원할 인트라넷 FQDN(정규화된 도메인 이름)과 인터넷 FQDN으로 구성할 System Center Configuration Manager 사이트 시스템 서버가 됩니다.  
 
 -   최신 서비스 팩이 설치된 Windows Vista 클라이언트가 있으며 이 컴퓨터는 ASCII 문자로 이루어진 컴퓨터 이름으로 설정되어 있고 도메인에 가입되어 있습니다. 이 컴퓨터가 System Center Configuration Manager 클라이언트 컴퓨터가 됩니다.  
 
@@ -74,9 +74,9 @@ Windows Server 2008 CA(인증 기관)를 사용하는 이 단계별 배포 예�
 |클라이언트에서 클라우드 기반 배포 지점에 연결하기 위한 서비스 인증서|이 인증서를 구성하고 설치하는 단계는 이 항목에서 [클라우드 기반 배포 지점용 서비스 인증서 배포](#BKMK_clouddp2008_cm2012)를 참조하세요.<br /><br /> **중요** : 이 인증서는 Microsoft Azure 관리 인증서와 함께 사용됩니다. 관리 인증서에 대한 자세한 내용은 MSDN 라이브러리의 Microsoft Azure 플랫폼 섹션에서 [관리 인증서를 만드는 방법](http://go.microsoft.com/fwlink/p/?LinkId=220281) 및 [Microsoft Azure 구독에 관리 인증서를 추가하는 방법](http://go.microsoft.com/fwlink/?LinkId=241722)을 참조하세요.|  
 |Windows 컴퓨터용 클라이언트 인증서|이 인증서는 HTTPS를 사용하도록 설정된 사이트 시스템에 대해 System Center Configuration Manager 클라이언트 컴퓨터를 인증하는 데 사용됩니다. 또한 HTTPS를 사용하도록 설정된 관리 지점과 상태 마이그레이션 지점에서 작업 상태를 모니터링하는 데 사용할 수 있습니다. 컴퓨터에 있는 System Center Configuration Manager의 외부에 설치해야 합니다.<br /><br /> 이 인증서를 설정하고 설치하는 단계는 이 항목에서 [Windows 컴퓨터용 클라이언트 인증서 배포](#BKMK_client2008_cm2012)를 참조하세요.|  
 |배포 지점용 클라이언트 인증서|이 인증서는 다음 두 가지 용도로 사용됩니다.<br /><br /> 이 인증서는 배포 지점에서 상태 메시지를 전송하기 전에 HTTPS 사용 관리 지점에 대해 배포 지점을 인증하는 데 사용됩니다.<br /><br /> **클라이언트에 대해 PXE 지원 사용** 배포 지점 옵션을 선택할 경우 인증서가 PXE 부팅을 수행하는 컴퓨터로 전송되어 이러한 컴퓨터에서 운영 체제 배포 시 HTTPS 사용 관리 지점에 연결할 수 있습니다.<br /><br /> 이 인증서를 설정하고 설치하는 단계는 이 항목의 [배포 지점용 클라이언트 인증서 배포](#BKMK_clientdistributionpoint2008_cm2012)를 참조하세요.|  
-|모바일 장치용 인증서 등록|이 인증서는 HTTPS를 사용하도록 설정된 사이트 시스템에 대해 System Center Configuration Manager 모바일 장치 클라이언트를 인증하는 데 사용됩니다. 이 인증서는 System Center Configuration Manager에서 모바일 장치를 등록하는 과정에서 설치해야 하며, 구성된 인증서 템플릿을 모바일 장치 클라이언트 설정으로 선택해야 합니다.<br /><br /> 이러한 인증서를 설정하는 단계는 이 항목에서 [모바일 장치용 등록 인증서 배포](#BKMK_mobiledevices2008_cm2012)를 참조하세요.|  
+|모바일 디바이스용 인증서 등록|이 인증서는 HTTPS를 사용하도록 설정된 사이트 시스템에 대해 System Center Configuration Manager 모바일 디바이스 클라이언트를 인증하는 데 사용됩니다. 이 인증서는 System Center Configuration Manager에서 모바일 디바이스를 등록하는 과정에서 설치해야 하며, 구성된 인증서 템플릿을 모바일 디바이스 클라이언트 설정으로 선택해야 합니다.<br /><br /> 이러한 인증서를 설정하는 단계는 이 항목에서 [모바일 디바이스용 등록 인증서 배포](#BKMK_mobiledevices2008_cm2012)를 참조하세요.|  
 |Intel AMT용 인증서|Intel AMT 기반 컴퓨터의 대역 외 관리와 관련된 세 가지 인증서:<ul><li>AMT(Active Management Technology) 프로비전 인증서</li><li>AMT 웹 서버 인증서</li><li>필요에 따라, 802.1X 유선 또는 무선 네트워크용 클라이언트 인증 인증서</li></ul>AMT 프로비전 인증서는 대역 외 서비스 지점 컴퓨터에서 System Center Configuration Manager 외부에 설치해야 하며, 대역 외 서비스 지점 속성에서 설치된 인증서를 선택해야 합니다. AMT 웹 서버 인증서와 클라이언트 인증 인증서는 AMT 프로비전 및 관리 시 설치되며, 대역 외 관리 구성 요소 속성에서 구성된 인증서 템플릿을 선택해야 합니다.<br /><br /> 이러한 인증서를 설정하는 단계는 이 항목의 [AMT용 인증서 배포](#BKMK_AMT2008_cm2012)를 참조하세요.|  
-|Mac 컴퓨터용 클라이언트 인증서|System Center Configuration Manager 등록을 사용할 때 Mac 컴퓨터에서 이 인증서를 요청하고 설치할 수 있으며 구성된 인증서 템플릿을 모바일 장치 클라이언트 설정으로 선택할 수 있습니다.<br /><br /> 이러한 인증서를 설정하는 단계는 이 항목에서 [Mac 컴퓨터용 클라이언트 인증서 배포](#BKMK_MacClient_SP1)를 참조하세요.|  
+|Mac 컴퓨터용 클라이언트 인증서|System Center Configuration Manager 등록을 사용할 때 Mac 컴퓨터에서 이 인증서를 요청하고 설치할 수 있으며 구성된 인증서 템플릿을 모바일 디바이스 클라이언트 설정으로 선택할 수 있습니다.<br /><br /> 이러한 인증서를 설정하는 단계는 이 항목에서 [Mac 컴퓨터용 클라이언트 인증서 배포](#BKMK_MacClient_SP1)를 참조하세요.|  
 
 ##  <a name="BKMK_webserver2008_cm2012"></a> IIS를 실행하는 사이트 시스템용 웹 서버 인증서 배포  
  이 인증서 배포 절차는 다음과 같습니다.  
@@ -163,7 +163,7 @@ Windows Server 2008 CA(인증 기관)를 사용하는 이 단계별 배포 예�
         2.  **server.contoso.com**을 입력하고 **추가**를 선택합니다.  
 
         > [!NOTE]  
-        >  System Center Configuration Manager에 대한 FQDN은 아무 순서로나 지정할 수 있습니다. 그러나 모바일 장치와 프록시 웹 서버를 비롯한 인증서를 사용할 모든 장치에서 인증서 SAN(주체 대체 이름)을 사용하고 SAN에 여러 값을 사용할 수 있는지 확인해야 합니다. 장치가 인증서에서 SAN 값을 제한적으로 지원할 경우 FQDN의 순서를 변경하거나 대신 주체 값을 사용해야 할 수 있습니다.  
+        >  System Center Configuration Manager에 대한 FQDN은 아무 순서로나 지정할 수 있습니다. 그러나 모바일 디바이스와 프록시 웹 서버를 비롯한 인증서를 사용할 모든 디바이스에서 인증서 SAN(주체 대체 이름)을 사용하고 SAN에 여러 값을 사용할 수 있는지 확인해야 합니다. 디바이스가 인증서에서 SAN 값을 제한적으로 지원할 경우 FQDN의 순서를 변경하거나 대신 주체 값을 사용해야 할 수 있습니다.  
 
 14. **인증서 요청** 페이지의 사용 가능한 인증서 목록에서 **ConfigMgr Web Server Certificate**를 선택하고 **등록**을 선택합니다.  
 
@@ -535,11 +535,11 @@ Windows Server 2008 CA(인증 기관)를 사용하는 이 단계별 배포 예�
  이 인증서 배포는 단일 절차로 인증 기관에서 등록 인증서 템플릿을 만들고 발급합니다.  
 
 ### <a name="create-and-issue-the-enrollment-certificate-template-on-the-certification-authority"></a>인증 기관에서 등록 인증서 템플릿 만들기 및 발급  
- 이 절차에서는 System Center Configuration Manager 모바일 장치용 등록 인증서 템플릿을 만들고 인증 기관에 추가합니다.  
+ 이 절차에서는 System Center Configuration Manager 모바일 디바이스용 등록 인증서 템플릿을 만들고 인증 기관에 추가합니다.  
 
 ##### <a name="to-create-and-issue-the-enrollment-certificate-template-on-the-certification-authority"></a>인증 기관에서 등록 인증서 템플릿을 만들고 발급하려면  
 
-1.  System Center Configuration Manager에 모바일 장치를 등록할 사용자를 포함하는 보안 그룹을 만듭니다.  
+1.  System Center Configuration Manager에 모바일 디바이스를 등록할 사용자를 포함하는 보안 그룹을 만듭니다.  
 
 2.  인증서 서비스가 설치된 구성원 서버에서, 인증 기관 콘솔에서 **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고 **관리**를 선택하여 인증서 템플릿 관리 콘솔을 로드합니다.  
 
@@ -564,7 +564,7 @@ Windows Server 2008 CA(인증 기관)를 사용하는 이 단계별 배포 예�
 
 11. 인증서를 더 만들고 발급할 필요가 없으면 인증 기관 콘솔을 닫습니다.  
 
- 이제 클라이언트 설정에서 모바일 장치 등록 프로필을 설정할 때 모바일 장치 등록 인증서 템플릿을 선택할 수 있습니다.  
+ 이제 클라이언트 설정에서 모바일 디바이스 등록 프로필을 설정할 때 모바일 디바이스 등록 인증서 템플릿을 선택할 수 있습니다.  
 
 ##  <a name="BKMK_AMT2008_cm2012"></a> AMT용 인증서 배포  
  이 인증서 배포 절차는 다음과 같습니다.  

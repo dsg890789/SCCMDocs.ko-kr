@@ -441,7 +441,7 @@ items:
       href: core/clients/client-classes/cijobstate-enumeration.md
     - name: CIPresence 열거
       href: core/clients/client-classes/cipresence-enumeration.md
-  - name: 장치 관리 클라이언트 WMI 클래스
+  - name: 디바이스 관리 클라이언트 WMI 클래스
     href: core/clients/client-classes/device-management-client-wmi-classes.md
     items:
     - name: SMS_DmInvVersion 클라이언트 WMI 클래스
@@ -1142,7 +1142,7 @@ items:
     href: misc/smslsaaccount.md
   - name: SmsLsaGetTrustedDomains
     href: misc/smslsagettrusteddomains.md
-- name: 장치 관리 서버 WMI 클래스
+- name: 디바이스 관리 서버 WMI 클래스
   href: mdm/device-management-server-wmi-classes.md
   items:
   - name: SMS_DeviceEnrollmentProfile 서버 WMI 클래스
@@ -1271,7 +1271,7 @@ items:
 - name: 하이브리드 서버 WMI 클래스
   href: mdm/hybrid-server-wmi-classes.md
   items:
-  - name: 모바일 장치 관리 서버 WMI 클래스
+  - name: 모바일 디바이스 관리 서버 WMI 클래스
     href: mdm/mobile-device-management-server-wmi-classes.md
     items:
     - name: MDM_GenericAppConfiguration 서버 WMI 클래스

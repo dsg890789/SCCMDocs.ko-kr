@@ -103,7 +103,7 @@ Configuration Manager에서는 클라이언트와 사이트 시스템 서버 간
 
 - DirectAccess에 대한 요구 사항이 모두 충족되면 인터넷의 Configuration Manager 클라이언트를 사용하여 인트라넷에 있는 것처럼 할당된 사이트와 통신할 수 있습니다.  
 
-- 원격 제어 및 클라이언트 강제 설치 등의 서버 시작 작업의 경우 시작하는 컴퓨터는 IPv6을 실행 중이어야 합니다. 이 프로토콜은 모든 중간 네트워킹 장치에서 지원되어야 합니다.  
+- 원격 제어 및 클라이언트 강제 설치 등의 서버 시작 작업의 경우 시작하는 컴퓨터는 IPv6을 실행 중이어야 합니다. 이 프로토콜은 모든 중간 네트워킹 디바이스에서 지원되어야 합니다.  
 
 Configuration Manager에서는 DirectAccess를 통해 다음과 같은 기능을 지원하지 않습니다.  
 
@@ -129,11 +129,11 @@ Configuration Manager에서는 IPv4(인터넷 프로토콜 버전 4) 외에도, 
 |--------------|-------------------------------|  
 |클라우드 기반 배포 지점|Microsoft Azure 및 클라우드 기반 배포 지점을 지원하려면 IPv4를 사용해야 합니다.|  
 |클라우드 관리 게이트웨이|Microsoft Azure 및 클라우드 관리 게이트웨이를 지원하려면 IPv4를 사용해야 합니다.|  
-|Microsoft Intune 및 Microsoft 서비스 커넥터를 통해 등록된 모바일 장치|Microsoft Intune 및 Microsoft 서비스 커넥터를 통해 등록된 모바일 장치를 지원하려면 IPv4를 사용해야 합니다.|  
+|Microsoft Intune 및 Microsoft 서비스 커넥터를 통해 등록된 모바일 디바이스|Microsoft Intune 및 Microsoft 서비스 커넥터를 통해 등록된 모바일 디바이스를 지원하려면 IPv4를 사용해야 합니다.|  
 |네트워크 검색|DHCP 서버가 네트워크 검색에서 검색을 하도록 구성할 때는 IPv4를 사용해야 합니다.|  
 |OS 배포|1802 이하 버전에서는 OS 배포를 지원하려면 IPv4가 필요합니다.  </br> </br> 버전 1806부터 Windows 배포 서비스가 없는 배포 지점에서 PXE 응답기를 사용하도록 설정합니다. 이 새로운 PXE 응답기 서비스는 IPv6를 지원합니다. 작업 순서 중 고정 IP 주소 캡처 또는 설정과 같은 OS 배포 기능의 다른 측면에서는 IPv4가 계속 필요합니다. |  
 |절전 모드 해제 프록시 통신|클라이언트 절전 모드 해제 프록시 패킷을 지원하려면 IPv4를 사용해야 합니다.|  
-|Windows CE|Windows CE 장치에서 Configuration Manager 클라이언트를 지원하려면 IPv4를 사용해야 합니다.|  
+|Windows CE|Windows CE 디바이스에서 Configuration Manager 클라이언트를 지원하려면 IPv4를 사용해야 합니다.|  
 
 
 
@@ -147,7 +147,7 @@ Configuration Manager에서는 IPv4(인터넷 프로토콜 버전 4) 외에도, 
 
 Configuration Manager는 Configuration Manager 구성 요소가 설치된 OS 버전에 대해 Windows 하드웨어 호환성 목록에 인증되어 있는 모든 하드웨어에서 작동합니다.
 
-Configuration Manager가 디렉터리 및 파일 권한을 설정할 수 있도록 사이트 서버 역할에는 NTFS가 필요합니다. Configuration Manager에는 논리 드라이브의 완전한 소유권이 있다고 가정합니다. 별도 컴퓨터에서 실행되는 사이트 시스템은 저장소 기술에 대한 논리 파티션을 공유할 수 없습니다. 그러나 각 컴퓨터는 공유 저장소 장치의 같은 실제 파티션에서 별도의 논리 파티션을 사용할 수 있습니다.  
+Configuration Manager가 디렉터리 및 파일 권한을 설정할 수 있도록 사이트 서버 역할에는 NTFS가 필요합니다. Configuration Manager에는 논리 드라이브의 완전한 소유권이 있다고 가정합니다. 별도 컴퓨터에서 실행되는 사이트 시스템은 저장소 기술에 대한 논리 파티션을 공유할 수 없습니다. 그러나 각 컴퓨터는 공유 저장소 디바이스의 같은 실제 파티션에서 별도의 논리 파티션을 사용할 수 있습니다.  
 
 ### <a name="support-considerations"></a>지원 고려 사항
 

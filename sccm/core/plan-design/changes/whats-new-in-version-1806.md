@@ -46,7 +46,7 @@ Configuration Manager용 Windows PowerShell cmdlet의 변경 내용에 대한 �
 
 [제거되는 기능과 사용되지 않는 항목](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated)에서 구현되기 전의 지원 변경 내용을 알아보세요.
 
-2018년 8월 14일부터 하이브리드 모바일 장치 관리 기능이 사용되지 않습니다. 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->  
+2018년 8월 14일부터 하이브리드 모바일 디바이스 관리 기능이 사용되지 않습니다. 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->  
 
 <!--
 Version 1806 drops support for the following products:
@@ -57,7 +57,7 @@ Version 1806 drops support for the following products:
 ## <a name="site-infrastructure"></a>사이트 인프라
 
 ### <a name="cmpivot"></a>CMPivot
-<!--1358456--> Configuration Manager는 고객이 보고용으로 사용하는 장치 데이터의 대규모 중앙 저장소를 항상 제공해왔습니다. 이 사이트는 일반적으로 매주 이 데이터를 수집합니다. CMPivot은 사용자 환경에서 장치의 실시간 상태에 액세스할 수 있는 새로운 콘솔 내 유틸리티입니다. 이 유틸리티는 대상 컬렉션에서 현재 연결된 모든 장치에 대해 바로 쿼리를 실행하고 결과를 반환합니다. 그러면 도구에서 이 데이터를 필터링하고 그룹화할 수 있습니다. 온라인 클라이언트에서 실시간 데이터를 제공함으로써 비즈니스 질문에 신속하게 대답하고 문제를 해결하며 보안 인시던트에 응답할 수 있습니다. 
+<!--1358456--> Configuration Manager는 고객이 보고용으로 사용하는 장치 데이터의 대규모 중앙 저장소를 항상 제공해왔습니다. 이 사이트는 일반적으로 매주 이 데이터를 수집합니다. CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스할 수 있는 새로운 콘솔 내 유틸리티입니다. 이 유틸리티는 대상 컬렉션에서 현재 연결된 모든 디바이스에 대해 바로 쿼리를 실행하고 결과를 반환합니다. 그러면 도구에서 이 데이터를 필터링하고 그룹화할 수 있습니다. 온라인 클라이언트에서 실시간 데이터를 제공함으로써 비즈니스 질문에 신속하게 대답하고 문제를 해결하며 보안 인시던트에 응답할 수 있습니다. 
 
 자세한 내용은 [CMPivot](/sccm/core/servers/manage/cmpivot)을 참조하세요.  
 
@@ -168,8 +168,8 @@ Version 1806 drops support for the following products:
 자세한 내용은 [고급 HTTP](/sccm/core/plan-design/hierarchy/enhanced-http)를 참조하세요.
 
 
-### <a name="azure-ad-device-identity"></a>Azure AD 장치 ID 
-<!--1358460--> Azure AD 사용자가 로그인되지 않은 [Azure AD 조인](https://docs.microsoft.com/azure/active-directory/device-management-introduction#azure-ad-joined-devices) 또는 [하이브리드 Azure AD 장치](https://docs.microsoft.com/azure/active-directory/device-management-introduction#hybrid-azure-ad-joined-devices)에서 할당된 사이트와 안전하게 통신할 수 있습니다. 이제 클라우드 기반 장치 ID만 있으면 CMG 및 관리 지점을 인증하는 데 충분합니다.  
+### <a name="azure-ad-device-identity"></a>Azure AD 디바이스 ID 
+<!--1358460--> Azure AD 사용자가 로그인되지 않은 [Azure AD 조인](https://docs.microsoft.com/azure/active-directory/device-management-introduction#azure-ad-joined-devices) 또는 [하이브리드 Azure AD 장치](https://docs.microsoft.com/azure/active-directory/device-management-introduction#hybrid-azure-ad-joined-devices)에서 할당된 사이트와 안전하게 통신할 수 있습니다. 이제 클라우드 기반 디바이스 ID만 있으면 CMG 및 관리 지점을 인증하는 데 충분합니다.  
 
 자세한 내용은 [고급 HTTP](/sccm/core/plan-design/hierarchy/enhanced-http)를 참조하세요.
 
@@ -181,7 +181,7 @@ Version 1806 drops support for the following products:
 
 
 ### <a name="cloud-management-dashboard"></a>클라우드 관리 대시보드
-<!--1358461--> 새로운 클라우드 관리 대시보드는 CMG(클라우드 관리 게이트웨이) 사용량에 대한 중앙 집중식 보기를 제공합니다. 사이트가 Azure AD에 등록되면 클라우드 사용자 및 장치에 대한 데이터도 표시됩니다.   
+<!--1358461--> 새로운 클라우드 관리 대시보드는 CMG(클라우드 관리 게이트웨이) 사용량에 대한 중앙 집중식 보기를 제공합니다. 사이트가 Azure AD에 등록되면 클라우드 사용자 및 디바이스에 대한 데이터도 표시됩니다.   
 
 이 기능에는 문제 해결에 도움이 되도록 실시간 확인에 사용하는 **CMG 연결 분석기**도 포함됩니다. 콘솔 내 유틸리티는 서비스의 현재 상태를 확인하며, CMG 연결 지점을 통해 CMG 트래픽을 허용하는 모든 관리 지점에 대한 통신 채널을 확인합니다. 
 
@@ -197,7 +197,7 @@ Version 1806 drops support for the following products:
 #### <a name="simplified-client-bootstrap-command-line"></a>간소화된 클라이언트 부트스트랩 명령줄
 <!--1358215--> CMG를 통해 Configuration Manager 클라이언트를 인터넷에 설치할 때 명령줄에 필요한 속성이 적어졌습니다. 이를 통해 공동 관리를 준비할 때 Microsoft Intune에서 명령줄 크기가 줄어듭니다. 
 
-자세한 내용은 [공동 관리를 위해 Windows 10 장치 준비](/sccm/core/clients/manage/co-management-prepare#command-line-to-install-configuration-manager-client)를 참조하세요.
+자세한 내용은 [공동 관리를 위해 Windows 10 디바이스 준비](/sccm/core/clients/manage/co-management-prepare#command-line-to-install-configuration-manager-client)를 참조하세요.
 
 #### <a name="download-content-from-a-cmg"></a>CMG에서 콘텐츠 다운로드
 <!--1358651--> 이전에 클라우드 배포 지점 및 CMG를 별도 역할로 배포해야 했습니다. CMG도 이제 클라이언트에 콘텐츠를 서비스합니다. 이 기능은 필요한 인증서 및 Azure VM 비용을 줄여줍니다. 
@@ -211,7 +211,7 @@ Version 1806 drops support for the following products:
 
 ## <a name="co-management"></a>공동 관리
 
-### <a name="sync-mdm-policy-from-microsoft-intune-for-a-co-managed-device"></a>Microsoft Intune에서 공동 관리하는 장치에 대한 MDM 정책 동기화
+### <a name="sync-mdm-policy-from-microsoft-intune-for-a-co-managed-device"></a>Microsoft Intune에서 공동 관리하는 디바이스에 대한 MDM 정책 동기화
 <!--1357377-->공동 관리 워크로드를 전환할 경우 공동 관리되는 장치는 Microsoft Intune에서 자동으로 MDM 정책을 동기화합니다. 이 동기화는 Configuration Manager 콘솔의 클라이언트 알림에서 **컴퓨터 정책 다운로드** 작업 시작할 때 발생합니다. 
 
 자세한 내용은 [Configuration Manager 워크로드를 Intune으로 전환](/sccm/core/clients/manage/co-management-switch-workloads)을 참조하세요.
@@ -228,13 +228,13 @@ Version 1806 drops support for the following products:
 
 이러한 워크로드를 전환하려면 공동 관리 속성 페이지로 이동하고 워크로드 슬라이더 막대를 Configuration Manager에서 **파일럿** 또는 **모두**로 이동합니다. 
 
-자세한 내용은 [Windows 10 장치의 공동 관리](/sccm/core/clients/manage/co-management-overview)를 참조하세요.
+자세한 내용은 [Windows 10 디바이스의 공동 관리](/sccm/core/clients/manage/co-management-overview)를 참조하세요.
 
 
 ### <a name="support-for-multiple-hierarchies-to-one-intune-tenant"></a>하나의 Intune 테넌트에 대한 여러 계층 구조 지원
 <!--1357944--> 어떤 고객은 여러 Configuration Manager 계층 구조가 있고 향후 Azure Active Directory 및 Microsoft Intune에 대한 단일 테넌트로 통합하고자 합니다. 이제 공동 관리에서 동일한 Intune 테넌트에 대해 여러 Configuration Manager 환경을 지원합니다.
 
-자세한 내용은 [공동 관리를 위해 Windows 10 장치 준비](/sccm/core/clients/manage/co-management-prepare)를 참조하세요.
+자세한 내용은 [공동 관리를 위해 Windows 10 디바이스 준비](/sccm/core/clients/manage/co-management-prepare)를 참조하세요.
  
 
 
@@ -268,8 +268,8 @@ Version 1806 drops support for the following products:
 - [단계적 배포 관리 및 모니터링](/sccm/osd/deploy-use/manage-monitor-phased-deployments?toc=/sccm/apps/toc.json&bc=/sccm/apps/breadcrumb/toc.json)  
 
 
-### <a name="provision-windows-app-packages-for-all-users-on-a-device"></a>장치의 모든 사용자에 대해 Windows 앱 패키지 프로비전
-<!--1358310--> 장치에서 모든 사용자에 대한 Windows 앱 패키지를 사용하여 응용 프로그램을 프로비전합니다. 이 시나리오의 일반적인 한 예는 Minecraft 교육용 버전처럼 비즈니스 및 교육용 Microsoft Store에서 앱을 학교에서 학생들이 사용하는 모든 장치에 프로비전하는 것입니다. 전에 Configuration Manager는 사용자 당 이러한 응용 프로그램 설치만 지원했습니다. 새 장치에 로그인한 후 학생은 앱에 액세스하기를 기다려야 합니다. 앱이 모든 사용자용 장치에 프로비전되는 경우 더 신속하게 생산적이 될 수 있습니다. 
+### <a name="provision-windows-app-packages-for-all-users-on-a-device"></a>디바이스의 모든 사용자에 대해 Windows 앱 패키지 프로비전
+<!--1358310--> 장치에서 모든 사용자에 대한 Windows 앱 패키지를 사용하여 응용 프로그램을 프로비전합니다. 이 시나리오의 일반적인 한 예는 Minecraft 교육용 버전처럼 비즈니스 및 교육용 Microsoft Store에서 앱을 학교에서 학생들이 사용하는 모든 디바이스에 프로비전하는 것입니다. 전에 Configuration Manager는 사용자 당 이러한 응용 프로그램 설치만 지원했습니다. 새 디바이스에 로그인한 후 학생은 앱에 액세스하기를 기다려야 합니다. 앱이 모든 사용자용 디바이스에 프로비전되는 경우 더 신속하게 생산적이 될 수 있습니다. 
 
 자세한 내용은 [Windows 응용 프로그램 만들기](/sccm/apps/get-started/creating-windows-applications#bkmk_provision)를 참조하세요.
 
@@ -287,13 +287,13 @@ Version 1806 drops support for the following products:
 
 
 ### <a name="uninstall-application-on-approval-revocation"></a>승인 취소 시 응용 프로그램 제거
-<!--1357891-->응용 프로그램 승인 취소 시의 동작이 변경되었습니다. 이제 응용 프로그램에 대한 요청을 거부하면 클라이언트가 사용자 장치에서 응용 프로그램을 제거합니다. 이를 위해서는 [선택적 기능](https://docs.microsoft.com/en-us/sccm/core/servers/manage/install-in-console-updates#bkmk_options)인 **장치당 사용자에 대한 응용 프로그램 요청 승인**을 사용하도록 설정해야 합니다. 
+<!--1357891-->응용 프로그램 승인 취소 시의 동작이 변경되었습니다. 이제 응용 프로그램에 대한 요청을 거부하면 클라이언트가 사용자 디바이스에서 응용 프로그램을 제거합니다. 이를 위해서는 [선택적 기능](https://docs.microsoft.com/en-us/sccm/core/servers/manage/install-in-console-updates#bkmk_options)인 **장치당 사용자에 대한 응용 프로그램 요청 승인**을 사용하도록 설정해야 합니다. 
 
 자세한 내용은 [응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications#bkmk_approval)를 참조하세요.
 
 
 ### <a name="package-conversion-manager"></a>Package Conversion Manager 
-<!--1357861--> Package Conversion Manager는 레거시 패키지를 Configuration Manager 현재 분기 응용 프로그램으로 변환할 수 있는 통합 도구입니다. 이와 같은 변환을 수행한 후에는 종속성, 요구 사항 규칙, 사용자 장치 선호도 등의 응용 프로그램 기능을 사용할 수 있습니다.
+<!--1357861--> Package Conversion Manager는 레거시 패키지를 Configuration Manager 현재 분기 응용 프로그램으로 변환할 수 있는 통합 도구입니다. 이와 같은 변환을 수행한 후에는 종속성, 요구 사항 규칙, 사용자 디바이스 선호도 등의 응용 프로그램 기능을 사용할 수 있습니다.
 
 자세한 내용은 [Package Conversion Manager](/sccm/apps/pcm/package-conversion-manager)를 참조하세요.
 
@@ -494,7 +494,7 @@ Version 1806 drops support for the following products:
 ### <a name="copy-asset-details-from-monitoring-views"></a>모니터링 보기에서 자산 정보의 복사
 <!--1357856--> 다음 **모니터링** 작업 영역에서 이제 텍스트 복사를 지원합니다.  
 
-- **배포** 노드에서 배포를 선택하고 **상태 보기**를 클릭합니다. 배포 상태 보기의 **자산 정보** 창에서 하나 이상의 장치를 선택합니다.  
+- **배포** 노드에서 배포를 선택하고 **상태 보기**를 클릭합니다. 배포 상태 보기의 **자산 정보** 창에서 하나 이상의 디바이스를 선택합니다.  
 
 - **배포 상태** 노드를 확장하고 **콘텐츠 상태**를 선택합니다. 소프트웨어 항목을 선택하고 **상태 보기**를 클릭합니다. 콘텐츠 상태 보기의 **자산 세부 정보** 창에서 하나 이상의 배포 지점을 선택합니다. 
 
@@ -506,19 +506,19 @@ Version 1806 drops support for the following products:
 ### <a name="improvements-to-the-surface-dashboard"></a>Surface 대시보드에 대한 개선 사항
 <!--1358654--> 이 릴리스에 포함된 Surface 대시보드에 대한 향상된 기능은 다음과 같습니다.  
 
-- 특정 그래프 섹션을 선택하면 이제 Surface 대시보드에 관련 장치 목록이 표시됩니다.  
+- 특정 그래프 섹션을 선택하면 이제 Surface 대시보드에 관련 디바이스 목록이 표시됩니다.  
 
    - **Surface 장치 비율** 타일을 클릭하면 Surface 장치 목록이 열립니다.  
 
    - **상위 5개 펌웨어 버전** 타일에서 막대를 클릭하면 해당 특정 펌웨어 버전으로 Surface 장치 목록이 열립니다.  
 
-- Surface 대시보드에서 이러한 장치 목록을 볼 때 장치를 마우스 오른쪽 단추로 클릭하고 일반 작업을 수행합니다.  
+- Surface 대시보드에서 이러한 디바이스 목록을 볼 때 디바이스를 마우스 오른쪽 단추로 클릭하고 일반 작업을 수행합니다.  
 
 자세한 내용은 [Surface 대시보드](/sccm/core/clients/manage/surface-device-dashboard)를 참조하세요.
 
 
-### <a name="view-the-currently-signed-on-user-for-a-device"></a>장치에 현재 로그온한 사용자 보기
-<!--1358202--> 기본적으로 **자산 및 준수** 작업 영역의 **장치** 노드는 **현재 로그온한 사용자**에 대한 열을 표시합니다. 컬렉션 특정 장치 목록도 표시됩니다. 이 값은 [클라이언트 상태](/sccm/core/clients/manage/monitor-clients#bkmk_indStatus)만큼 최신 상태입니다. 사용자가 로그오프하면 클라이언트가 이 값을 지웁니다. 로그온한 사용자가 없으면 값이 비어 있습니다. 
+### <a name="view-the-currently-signed-on-user-for-a-device"></a>디바이스에 현재 로그온한 사용자 보기
+<!--1358202--> 기본적으로 **자산 및 준수** 작업 영역의 **장치** 노드는 **현재 로그온한 사용자**에 대한 열을 표시합니다. 컬렉션 특정 디바이스 목록도 표시됩니다. 이 값은 [클라이언트 상태](/sccm/core/clients/manage/monitor-clients#bkmk_indStatus)만큼 최신 상태입니다. 사용자가 로그오프하면 클라이언트가 이 값을 지웁니다. 로그온한 사용자가 없으면 값이 비어 있습니다. 
 
 자세한 내용은 [1806 버전의 콘솔 향상](/sccm/core/servers/manage/admin-console#console-improvements-in-version-1806)을 참조하세요.
 

@@ -12,7 +12,7 @@ ms.author: aaroncz
 manager: dougeby
 ms.openlocfilehash: 1b8390faa557f37b2ee148299079df81d3c13299
 ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
 ms.locfileid: "32346742"
@@ -24,12 +24,12 @@ ms.locfileid: "32346742"
 Microsoft Intune(평가판 구독 또는 유료 구독)을 Configuration Manager에 추가하고 다른 Intune 구독으로 전환해야 하는 경우 새 구독을 추가하려면 먼저 Configuration Manager 콘솔에서 **Microsoft Intune 구독** 및 **서비스 연결 지점**을 모두 삭제해야 합니다.
 
 > [!NOTE]
-> 하이브리드 모바일 장치 관리에서는 한 번에 하나의 Intune 구독만 구성할 수 있습니다.
+> 하이브리드 모바일 디바이스 관리에서는 한 번에 하나의 Intune 구독만 구성할 수 있습니다.
 
 ## <a name="how-to-delete-an-intune-subscription-from-configuration-manager"></a>Configuration Manager에서 Intune 구독을 삭제하는 방법
 
 > [!IMPORTANT]
->  구독을 삭제하면 Intune 구독을 통해 관리되는 장치에 구성된 사용자 등록, 정책 및 앱 배포를 포함한 모든 콘텐츠가 제거됩니다.
+>  구독을 삭제하면 Intune 구독을 통해 관리되는 디바이스에 구성된 사용자 등록, 정책 및 앱 배포를 포함한 모든 콘텐츠가 제거됩니다.
 
 1.  Configuration Manager 콘솔에서 **관리** > **개요** > **클라우드 서비스** > **Microsoft Intune 구독**으로 이동합니다.
 
@@ -49,4 +49,4 @@ Microsoft Intune(평가판 구독 또는 유료 구독)을 Configuration Manager
 이제 새 서비스 연결 지점을 만들고, 새 Intune 구독을 Configuration Manager에 추가하고, Configuration Manager를 MDM 기관으로 설정할 수 있습니다.
 
 ## <a name="how-to-change-mdm-authority-to-intune"></a>MDM 기관을 Intune으로 변경하는 방법
-Configuration Manager 버전 1610 및 Microsoft Intune 버전 1705부터, Microsoft 지원에 문의하지 않고 기존의 관리 장치를 등록 취소했다가 다시 등록하지 않고도, MDM 기관을 변경할 수 있습니다. 자세한 내용은 [MDM 기관 변경](/sccm/mdm/deploy-use/change-mdm-authority)을 참조하세요.
+Configuration Manager 버전 1610 및 Microsoft Intune 버전 1705부터는 Microsoft 지원에 문의하여 기존의 관리 디바이스를 등록 취소했다가 다시 등록할 필요 없이 MDM 기관을 변경할 수 있습니다. 자세한 내용은 [MDM 기관 변경](/sccm/mdm/deploy-use/change-mdm-authority)을 참조하세요.

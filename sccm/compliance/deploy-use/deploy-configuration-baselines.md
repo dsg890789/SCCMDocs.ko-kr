@@ -21,7 +21,7 @@ ms.locfileid: "32334711"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-해당 컬렉션의 클라이언트 장치가 구성 기준의 규격 준수 여부를 평가하려면 System Center Configuration Manager의 구성 기준이 하나 이상의 사용자 또는 장치 컬렉션에 배포되어야 합니다.  
+해당 컬렉션의 클라이언트 디바이스가 구성 기준의 규격 준수 여부를 평가하려면 System Center Configuration Manager의 구성 기준이 하나 이상의 사용자 또는 디바이스 컬렉션에 배포되어야 합니다.  
 
 **구성 기준 배포** 대화 상자를 사용하여 구성 기준 배포를 정의합니다. 여기에는 평가 일정 지정 외에도 배포에서 구성 기준 추가 또는 제거가 포함됩니다.  
 

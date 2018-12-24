@@ -21,7 +21,7 @@ ms.locfileid: "32332582"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-이 절차에서는 소프트웨어 인벤토리에 대한 기본 클라이언트 설정을 구성하고 계층에 있는 모든 컴퓨터에 적용합니다. 이러한 설정이 일부 컴퓨터에만 적용되도록 하려면 사용자 지정 클라이언트 장치 설정을 만들고 컬렉션에 할당합니다. 사용자 지정 장치 설정을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../../../core/clients/deploy/configure-client-settings.md)을 참조하세요.   
+이 절차에서는 소프트웨어 인벤토리에 대한 기본 클라이언트 설정을 구성하고 계층에 있는 모든 컴퓨터에 적용합니다. 이러한 설정이 일부 컴퓨터에만 적용되도록 하려면 사용자 지정 클라이언트 디바이스 설정을 만들고 컬렉션에 할당합니다. 사용자 지정 디바이스 설정을 만드는 방법에 대한 자세한 내용은 [How to configure client settings in System Center Configuration Manager](../../../../core/clients/deploy/configure-client-settings.md)항목을 참조하세요.   
 
 ## <a name="to-configure-software-inventory"></a>소프트웨어 인벤토리를 구성하려면  
 

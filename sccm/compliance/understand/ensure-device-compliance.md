@@ -1,7 +1,7 @@
 ---
-title: 장치 규정 준수를 확인합니다.
+title: 디바이스 규정 준수를 확인합니다.
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager를 사용하여 조직에서 장치의 구성 및 준수를 관리합니다.
+description: System Center Configuration Manager를 사용하여 조직에서 디바이스의 구성 및 준수를 관리합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-compliance
@@ -17,15 +17,15 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49169603"
 ---
-# <a name="ensure-device-compliance-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 장치 준수 확인
+# <a name="ensure-device-compliance-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 디바이스 준수 확인
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 준수 설정은 조직에서 장치의 구성과 준수를 관리하는 데 필요한 도구와 리소스를 제공합니다. 다음과 같은 비즈니스 요구 사항을 지원하는 데 도움이 됩니다.  
+System Center Configuration Manager의 준수 설정은 조직에서 디바이스의 구성과 준수를 관리하는 데 필요한 도구와 리소스를 제공합니다. 다음과 같은 비즈니스 요구 사항을 지원하는 데 도움이 됩니다.  
 
--   관리하는 Windows PC, Mac 컴퓨터, 서버 및 모바일 장치의 구성과 직접 만들었거나 다른 공급업체에서 얻은 모범 사례 구성 비교  
+-   관리하는 Windows PC, Mac 컴퓨터, 서버 및 모바일 디바이스의 구성과 직접 만들었거나 다른 공급업체에서 얻은 모범 사례 구성 비교  
 
--   권한이 없는 장치 구성 식별  
+-   권한이 없는 디바이스 구성 식별  
 
 -   규정 정책 및 사내 보안 정책 준수 보고  
 
@@ -33,9 +33,9 @@ System Center Configuration Manager의 준수 설정은 조직에서 장치의 �
 
 -   기술 지원팀에서 비준수 구성을 식별하여 보고된 인시던트 및 문제의 가능한 원인을 검색하기 위한 정보 제공  
 
--   자동으로 모바일 장치의 일부 비준수 설정 수정  
+-   자동으로 모바일 디바이스의 일부 비준수 설정 수정  
 
--   비준수를 보고하는 장치가 자동으로 포함되는 컬렉션에 응용 프로그램, 패키지 및 프로그램 또는 스크립트를 배포하여 비준수 수정  
+-   비준수를 보고하는 디바이스가 자동으로 포함되는 컬렉션에 응용 프로그램, 패키지 및 프로그램 또는 스크립트를 배포하여 비준수 수정  
 
 
 ## <a name="get-started"></a>시작  
@@ -64,6 +64,6 @@ System Center Configuration Manager의 준수 설정은 조직에서 장치의 �
  [사용자 데이터 및 프로필 구성 항목 만들기](/sccm/compliance/deploy-use/create-user-data-and-profiles-configuration-items)  
 
 ## <a name="windows-edition-upgrade-policy"></a>Windows 버전 업그레이드 정책  
- 버전 업그레이드 정책을 통해 Windows 10 장치를 최신 버전으로 자동으로 업그레이드할 수 있습니다. Windows 10 데스크톱 버전을 업그레이드할 제품 키 또는 Windows 10 Mobile 및 Windows 10 Holographic을 실행하는 장치를 업그레이드하는 데 사용할 수 있는 라이선스 파일을 지정할 수 있습니다.  
+ 버전 업그레이드 정책을 통해 Windows 10 디바이스를 최신 버전으로 자동으로 업그레이드할 수 있습니다. Windows 10 데스크톱 버전을 업그레이드할 제품 키 또는 Windows 10 Mobile 및 Windows 10 Holographic을 실행하는 디바이스를 업그레이드하는 데 사용할 수 있는 라이선스 파일을 지정할 수 있습니다.  
 
  [버전 업그레이드 정책을 사용하여 Windows 장치 업그레이드](/sccm/compliance/deploy-use/upgrade-windows-version)  

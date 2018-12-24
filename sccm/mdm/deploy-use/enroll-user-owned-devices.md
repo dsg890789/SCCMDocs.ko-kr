@@ -1,7 +1,7 @@
 ---
-title: 하이브리드 배포를 위해 사용자 소유의 장치 등록
+title: 하이브리드 배포를 위해 사용자 소유의 디바이스 등록
 titleSuffix: Configuration Manager
-description: Configuration Manager를 사용하여 하이브리드 배포를 위해 사용자 소유 장치를 등록하는 다양한 방법을 알아봅니다.
+description: Configuration Manager를 사용하여 하이브리드 배포를 위해 사용자 소유 디바이스를 등록하는 다양한 방법을 알아봅니다.
 ms.date: 09/08/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -12,17 +12,17 @@ ms.author: aaroncz
 manager: dougeby
 ms.openlocfilehash: 198e5b65b85e10a1aa64f06361f1ba425e156662
 ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
 ms.locfileid: "32345729"
 ---
-# <a name="enroll-user-owned-devices-for-hybrid-deployments-with-configuration-manager"></a>Configuration Manager를 사용하는 하이브리드 배포를 위해 사용자 소유 장치 등록
+# <a name="enroll-user-owned-devices-for-hybrid-deployments-with-configuration-manager"></a>Configuration Manager를 사용하는 하이브리드 배포를 위해 사용자 소유 디바이스 등록
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-“자체 장치 가져오기(BYOD, Bring Your Own Devices)”라고도 하는 프로세스를 통해 사용자 소유 장치를 등록하여 관리로 가져올 수 있습니다.  사용자는 회사 포털 앱을 설치하고 장치(iOS, macOS 및 Android)에 로그인하거나, 직장 또는 학교 계정을 장치에 추가하고 도메인에 연결하여(Windows) 이 작업을 수행합니다. 이 프로세스에서는 장치를 Intune에 등록하여 사용자에게 Intune으로 관리되는 리소스에 대한 액세스를 부여하고 Intune이 PIN 요구 등과 같은 특정 장치 설정을 관리하게 합니다.
+“자체 디바이스 가져오기(BYOD, Bring Your Own Devices)”라고도 하는 프로세스를 통해 사용자 소유 디바이스를 등록하여 관리로 가져올 수 있습니다.  사용자는 회사 포털 앱을 설치하고 디바이스(iOS, macOS 및 Android)에 로그인하거나, 직장 또는 학교 계정을 디바이스에 추가하고 도메인에 연결하여(Windows) 이 작업을 수행합니다. 이 프로세스에서는 디바이스를 Intune에 등록하여 사용자에게 Intune으로 관리되는 리소스에 대한 액세스를 부여하고 Intune이 PIN 요구 등과 같은 특정 디바이스 설정을 관리하게 합니다.
 
-장치를 관리로 가져오려면 먼저 관리자가 [모바일 장치 관리를 설정하고](setup-hybrid-mdm.md) [등록을 활성화](enable-platform-enrollment.md)합니다. 등록이 활성화되면 사용자가 자체 장치를 등록할 수 있습니다. 사용자와의 공유에 대한 고려 사항과 절차는 [Microsoft Intune에 대한 최종 사용자 교육 방법](https://docs.microsoft.com/intune/end-user-educate)을 참조하세요.
+장치를 관리로 가져오려면 먼저 관리자가 [모바일 장치 관리를 설정하고](setup-hybrid-mdm.md) [등록을 활성화](enable-platform-enrollment.md)합니다. 등록이 활성화되면 사용자가 자체 디바이스를 등록할 수 있습니다. 사용자와의 공유에 대한 고려 사항과 절차는 [Microsoft Intune에 대한 최종 사용자 교육 방법](https://docs.microsoft.com/intune/end-user-educate)을 참조하세요.
 
-장치를 구매한 회사 또는 학교에서는 [회사 소유 장치의 관리](enroll-company-owned-devices.md)를 제공하는 프로그램을 활용할 수 있습니다.
+디바이스를 구매한 회사 또는 학교에서는 [회사 소유 디바이스의 관리](enroll-company-owned-devices.md)를 제공하는 프로그램을 활용할 수 있습니다.

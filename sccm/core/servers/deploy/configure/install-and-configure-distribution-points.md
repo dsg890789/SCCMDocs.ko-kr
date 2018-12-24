@@ -1,7 +1,7 @@
 ---
 title: 배포 지점 관리
 titleSuffix: Configuration Manager
-description: 배포 지점을 사용하여 장치 및 사용자에게 배포하는 콘텐츠를 호스팅합니다.
+description: 배포 지점을 사용하여 디바이스 및 사용자에게 배포하는 콘텐츠를 호스팅합니다.
 ms.date: 07/30/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -21,7 +21,7 @@ ms.locfileid: "39385374"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-장치 및 사용자에게 배포하는 콘텐츠 파일을 호스트할 Configuration Manager 배포 지점을 설치합니다. 배포 지점을 관리하는 방법 및 배포 지점에 콘텐츠를 배포하는 방법을 간소화하는 배포 지점 그룹을 만듭니다.  
+디바이스 및 사용자에게 배포하는 콘텐츠 파일을 호스트할 Configuration Manager 배포 지점을 설치합니다. 배포 지점을 관리하는 방법 및 배포 지점에 콘텐츠를 배포하는 방법을 간소화하는 배포 지점 그룹을 만듭니다.  
 
 설치 마법사를 사용하여 *새 배포 지점을 설치*합니다. 자세한 내용은 [배포 지점 설치](#bkmk_install)를 참조하세요. *기존 배포 지점의 속성을 관리*하려면 배포 지점의 속성을 편집합니다. 자세한 내용은 [배포 지점 구성](#bkmk_configs)을 참조하세요. 
 
@@ -265,7 +265,7 @@ ms.locfileid: "39385374"
     > [!Important]  
     > 이 설정을 사용하지 않으면 Windows 7 클라이언트에서 Microsoft 기술 자료 문서 [2619572](https://support.microsoft.com/help/2619572/)에서 설명한 변경 내용이 적용됩니다. 그렇지 않으면 Windows Installer 응용 프로그램의 복구가 실패할 수 있습니다.  
     >   
-    >  Windows Installer 응용 프로그램을 배포하면 Configuration Manager 클라이언트에서 파일을 로컬 캐시에 다운로드합니다. 설치가 완료되면 클라이언트에서 파일을 최종적으로 제거합니다. Configuration Manager 클라이언트에서 응용 프로그램에 대한 Windows Installer 원본 목록을 업데이트합니다. 콘텐츠 경로는 연결된 배포 지점의 콘텐츠 라이브러리로 설정됩니다. 나중에 장치에서 응용 프로그램을 복구하려고 하면 MSIExec에서 익명 사용자를 사용하여 이 콘텐츠 경로에 액세스하려고 시도합니다.  
+    >  Windows Installer 응용 프로그램을 배포하면 Configuration Manager 클라이언트에서 파일을 로컬 캐시에 다운로드합니다. 설치가 완료되면 클라이언트에서 파일을 최종적으로 제거합니다. Configuration Manager 클라이언트에서 응용 프로그램에 대한 Windows Installer 원본 목록을 업데이트합니다. 콘텐츠 경로는 연결된 배포 지점의 콘텐츠 라이브러리로 설정됩니다. 나중에 디바이스에서 응용 프로그램을 복구하려고 하면 MSIExec에서 익명 사용자를 사용하여 이 콘텐츠 경로에 액세스하려고 시도합니다.  
     >   
     >  클라이언트에 업데이트가 설치되고 문서화된 레지스트리 키가 수정되면 MSIExec에서 로그인한 사용자 계정을 사용하여 콘텐츠 경로에 액세스합니다.  
 
@@ -352,7 +352,7 @@ PXE를 사용하도록 설정하면 필요한 경우 Configuration Manager에서
 
     - **사용자 장치 선호도 허용 안 함**: 사용자가 대상 컴퓨터와 연결되지 않도록 지정하려면 이 설정을 선택합니다. 이 설정은 기본값입니다.  
 
-     사용자 장치 선호도에 대한 자세한 내용은 [사용자 장치 선호도를 사용하여 사용자와 장치 연결](/sccm/apps/deploy-use/link-users-and-devices-with-user-device-affinity)을 참조하세요.  
+     사용자 디바이스 선호도에 대한 자세한 내용은 [사용자 디바이스 선호도를 사용하여 사용자와 디바이스 연결](/sccm/apps/deploy-use/link-users-and-devices-with-user-device-affinity)을 참조하세요.  
 
 - **네트워크 인터페이스**: 배포 지점에서 모든 네트워크 인터페이스 또는 특정 네트워크 인터페이스의 PXE 요청에 응답하도록 지정합니다. 배포 지점에서 특정 네트워크 인터페이스에 응답하는 경우 각 네트워크 인터페이스에 대한 MAC 주소를 제공합니다.  
 

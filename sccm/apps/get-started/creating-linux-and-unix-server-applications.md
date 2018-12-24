@@ -1,7 +1,7 @@
 ---
 title: Linux 및 UNIX 서버 응용 프로그램 만들기
 titleSuffix: Configuration Manager
-description: Linux 및 Unix 장치용 응용 프로그램을 만들고 배포할 때 고려해야 할 사항을 확인합니다.
+description: Linux 및 Unix 디바이스용 응용 프로그램을 만들고 배포할 때 고려해야 할 사항을 확인합니다.
 ms.date: 04/13/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-app
@@ -46,8 +46,8 @@ Linux 및 UNIX를 실행하는 컴퓨터용 응용 프로그램을 만들고 배
 
 -   클라이언트가 배포 지점에서 소프트웨어를 다운로드할 때 네트워크 사용량을 제한하는 옵션  
 
-### <a name="differences-between-deploying-to-linux-and-unix-computers-and-deploying-to-windows-devices"></a>Linux/UNIX 컴퓨터로의 배포와 Windows 장치로의 배포 간 차이
-Linux 및 UNIX 컴퓨터에 패키지와 프로그램을 배포할 때와 Windows 장치에 패키지 및 프로그램을 배포할 때의 주요 차이점은 다음과 같습니다.  
+### <a name="differences-between-deploying-to-linux-and-unix-computers-and-deploying-to-windows-devices"></a>Linux/UNIX 컴퓨터로의 배포와 Windows 디바이스로의 배포 간 차이
+Linux 및 UNIX 컴퓨터에 패키지와 프로그램을 배포할 때와 Windows 디바이스에 패키지 및 프로그램을 배포할 때의 주요 차이점은 다음과 같습니다.  
 
 |구성|세부 정보|  
 |-------------------|-------------|  

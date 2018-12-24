@@ -92,7 +92,7 @@ Windows 서버 및 네트워크 인프라에서 제공하는 보안 외에도, C
 
 ## <a name="bkmk_endpoints"></a> 클라이언트 엔드포인트 보안  
 
- Configuration Manager는 자체 서명, PKI 인증서 또는 Azure AD(Azure Active Directory) 토큰을 사용하여 사이트 시스템 역할에 대한 클라이언트 통신을 보호합니다. 일부 시나리오에서는 PKI 인증서를 사용해야 합니다. 예를 들어 [인터넷 기반 클라이언트 관리](/sccm/core/clients/manage/plan-internet-based-client-management) 및 [모바일 장치 클라이언트](/sccm/mdm/plan-design/plan-on-premises-mdm)용 인증서가 있습니다.  
+ Configuration Manager는 자체 서명, PKI 인증서 또는 Azure AD(Azure Active Directory) 토큰을 사용하여 사이트 시스템 역할에 대한 클라이언트 통신을 보호합니다. 일부 시나리오에서는 PKI 인증서를 사용해야 합니다. 예를 들어 [인터넷 기반 클라이언트 관리](/sccm/core/clients/manage/plan-internet-based-client-management) 및 [모바일 디바이스 클라이언트](/sccm/mdm/plan-design/plan-on-premises-mdm)용 인증서가 있습니다.  
 
  HTTPS 또는 HTTP 클라이언트 통신을 위해 클라이언트가 연결하는 사이트 시스템 역할을 구성할 수 있습니다. 클라이언트 컴퓨터는 항상 가장 안전한 방법을 사용하여 통신합니다. 클라이언트 컴퓨터는 HTTP 통신을 허용하는 사이트 시스템 역할이 있는 경우에만 덜 안전한 통신 방법으로 보안 수준을 낮춥니다.  
 
@@ -110,7 +110,7 @@ Windows 서버 및 네트워크 인프라에서 제공하는 보안 외에도, C
 
 ## <a name="bkmk_privacy"></a> 개인 정보 보호  
 
- Configuration Manager를 구현하기 전에 개인 정보 요구 사항을 고려합니다. 엔터프라이즈 관리 제품은 많은 클라이언트를 효과적으로 관리할 수 있기 때문에 다양한 이점을 제공하지만 이 소프트웨어는 조직의 사용자 개인 정보에 영향을 줄 수 있습니다. Configuration Manager에는 데이터를 수집하고 장치를 모니터링하는 많은 도구가 포함되어 있습니다. 일부 도구는 조직의 개인 정보 문제를 유발할 수 있습니다.  
+ Configuration Manager를 구현하기 전에 개인 정보 요구 사항을 고려합니다. 엔터프라이즈 관리 제품은 많은 클라이언트를 효과적으로 관리할 수 있기 때문에 다양한 이점을 제공하지만 이 소프트웨어는 조직의 사용자 개인 정보에 영향을 줄 수 있습니다. Configuration Manager에는 데이터를 수집하고 디바이스를 모니터링하는 많은 도구가 포함되어 있습니다. 일부 도구는 조직의 개인 정보 문제를 유발할 수 있습니다.  
 
  예를 들어 Configuration Manager 클라이언트를 설치하면 기본적으로 여러 관리 설정이 활성화됩니다. 이 구성을 사용하면 클라이언트 소프트웨어가 Configuration Manager 사이트에 정보를 보냅니다. 사이트는 클라이언트 정보를 사이트 데이터베이스에 저장합니다. 클라이언트 정보는 Microsoft로 직접 전송되지 않습니다. 자세한 내용은 [진단 및 사용 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조합니다.
 

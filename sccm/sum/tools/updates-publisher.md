@@ -31,7 +31,7 @@ Updates Publisher를 사용하여 다음을 수행할 수 있습니다.
 -   외부 카탈로그로 업데이트를 내보냅니다.
 -   업데이트 서버에 업데이트를 게시합니다.
 
-업데이트 서버에 업데이트를 게시한 후에는 System Center Configuration Manager를 사용하여 해당 업데이트를 검색하고 관리되는 장치에 배포할 수 있습니다.
+업데이트 서버에 업데이트를 게시한 후에는 System Center Configuration Manager를 사용하여 해당 업데이트를 검색하고 관리되는 디바이스에 배포할 수 있습니다.
 
 > [!TIP]  
 > 이전 버전인 [System Center Updates Publisher 2011](http://go.microsoft.com/fwlink/?LinkId=848111)은 계속 지원됩니다. 이 업데이트된 버전은 기능은 동일하지만 추가 운영 체제, 일부 작업을 간소화하는 새로운 기능이 지원되고 사용자 인터페이스가 업데이트되었습니다.

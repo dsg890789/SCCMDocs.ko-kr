@@ -153,7 +153,7 @@ Version 1810 drops support for the following products:
 ## <a name="bkmk_comgmt"></a> 공동 관리
 
 ### <a name="required-app-compliance-policy-for-co-managed-devices"></a>공동 관리하는 디바이스의 필수 앱 규정 준수 정책
-<!--1358196--> Configuration Manager에서 필수 애플리케이션의 규정 준수 정책 규칙을 정의합니다. 이 앱 평가는 공동 관리하는 장치에 대해 Microsoft Intune으로 전송되는 전체 준수 상태의 일부입니다.
+<!--1358196--> Configuration Manager에서 필수 애플리케이션의 규정 준수 정책 규칙을 정의합니다. 이 앱 평가는 공동 관리하는 디바이스에 대해 Microsoft Intune으로 전송되는 전체 준수 상태의 일부입니다.
 
 <!--For more information, see [Co-management for Windows 10 devices](/sccm/core/clients/manage/co-management-overview).-->
 
@@ -328,7 +328,7 @@ PowerShell 프로필은 PowerShell이 시작될 때 실행되는 스크립트입
 
 - **즐겨찾기** 쿼리 저장  
 
-- 쿼리 요약 탭에서 실패 또는 오프라인 장치 수를 선택한 다음, **컬렉션 만들기** 옵션을 선택합니다. 
+- 쿼리 요약 탭에서 실패 또는 오프라인 디바이스 수를 선택한 다음, **컬렉션 만들기** 옵션을 선택합니다. 
 
 CMPivot의 추가 성능 및 문제 해결 기능 개선에 대한 자세한 내용은 [스크립트 기능 개선](#bkmk_scripts)을 참조하세요.
 

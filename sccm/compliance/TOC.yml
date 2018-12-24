@@ -1,7 +1,7 @@
 items:
 - name: 이해 및 탐색
   items:
-  - name: 장치 준수 확인
+  - name: 디바이스 규정 준수를 확인합니다.
     href: understand/ensure-device-compliance.md
 - name: 시작
   items:
@@ -14,7 +14,7 @@ items:
   - name: 준수 관리를 위한 일반 작업
     href: plan-design/common-tasks-for-managing-compliance.md
     items:
-    - name: Configuration Manager 클라이언트가 포함된 장치
+    - name: Configuration Manager 클라이언트가 포함된 디바이스
       href: plan-design/common-tasks-for-managing-compliance-on-devices-with-the-client.md
     - name: 구성 기준 만들기 및 배포
       href: plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md
@@ -34,7 +34,7 @@ items:
   - name: 구성 항목 만들기
     href: deploy-use/create-configuration-items.md
     items:
-    - name: Configuration Manager 클라이언트를 사용하여 관리되는 장치
+    - name: Configuration Manager 클라이언트를 사용하여 관리되는 디바이스
       href: deploy-use/configuration-items-for-devices-managed-with-the-client.md
       items:
       - name: Windows 10
@@ -59,7 +59,7 @@ items:
     href: deploy-use/create-user-data-and-profiles-configuration-items.md
   - name: 원격 연결 프로필 만들기
     href: deploy-use/create-remote-connection-profiles.md
-  - name: Windows 장치를 새 버전으로 업그레이드
+  - name: Windows 디바이스를 새 버전으로 업그레이드
     href: deploy-use/upgrade-windows-version.md
   - name: Microsoft Edge 설정 구성
     href: deploy-use/browser-profiles.md

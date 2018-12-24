@@ -21,12 +21,12 @@ ms.locfileid: "49411313"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*    
 
-클라우드 전용 구성에서 [하이브리드 MDM 사용자 및 장치를 Intune 독립 실행형으로 마이그레이션](migrate-hybridmdm-to-intunesa.md)하는 프로세스에서 권장되는 첫 번째 단계는 Intune 데이터 가져오기 도구를 사용하는 것입니다. 원하는 경우 이 단계를 건너뛰고 [사용자 마이그레이션을 위한 Intune 준비](migrate-prepare-intune.md) 단계로 이동할 수 있습니다. 그러나 이 도구는 다음 단계에서 많은 시간을 절약할 수 있는 다음 기능을 수행합니다. 
+클라우드 전용 구성에서 [하이브리드 MDM 사용자 및 디바이스를 Intune 독립 실행형으로 마이그레이션](migrate-hybridmdm-to-intunesa.md)하는 프로세스에서 권장되는 첫 번째 단계는 Intune 데이터 가져오기 도구를 사용하는 것입니다. 원하는 경우 이 단계를 건너뛰고 [사용자 마이그레이션을 위한 Intune 준비](migrate-prepare-intune.md) 단계로 이동할 수 있습니다. 그러나 이 도구는 다음 단계에서 많은 시간을 절약할 수 있는 다음 기능을 수행합니다. 
 1.  Configuration Manager 계층 구조에서 선택한 개체에 대한 데이터를 수집합니다. 
 2.  가져오도록 선택할 수 있는 개체에 대한 세부 정보와 일부 개체를 가져올 수 없는 이유에 대한 정보를 제공합니다.
 3.  선택한 개체를 Microsoft Intune 테넌트로 가져옵니다. 
 
-데이터 가져오기 도구는 어떤 방식으로든 Configuration Manager 환경을 변경하지 않으므로, 개체를 Intune으로 가져오고, 하이브리드 MDM 장치를 관리되지 않는 상태로 두는 위험이 없이 모든 항목이 예상대로 작동하는지 확인할 수 있습니다. 
+데이터 가져오기 도구는 어떤 방식으로든 Configuration Manager 환경을 변경하지 않으므로, 개체를 Intune으로 가져오고, 하이브리드 MDM 디바이스를 관리되지 않는 상태로 두는 위험이 없이 모든 항목이 예상대로 작동하는지 확인할 수 있습니다. 
 
 ## <a name="what-objects-can-this-tool-import"></a>이 도구에서 가져올 수 있는 개체
 가져오기 도구는 Configuration Manager에서 다음 개체 형식에 대한 정보를 수집하고, 수집된 개체를 가져올 수 있는지 여부에 대한 정보를 제공합니다. 
@@ -91,10 +91,10 @@ There are some Configuration Manager objects that the importer tool cannot impor
    > **수락**을 클릭하면 다음을 수행할 수 있는 권한을 도구에 부여합니다.
    > - 모든 그룹 읽기
    > - 로그인 및 사용자 프로필 읽기
-   > - Intune 장치 구성 및 정책 읽기/쓰기
+   > - Intune 디바이스 구성 및 정책 읽기/쓰기
    > - Intune 앱 읽기/쓰기
    > - Intune 역할 기반 관리 제어 정책 읽기/쓰기
-   > - Intune 장치 읽기/쓰기
+   > - Intune 디바이스 읽기/쓰기
    > - Intune 구성 읽기/쓰기
 1. 동의를 수락하면 다른 모든 전역 관리자 또는 Intune 관리자가 이 도구를 실행하여 Configuration Manager에서 Azure의 Intune으로 데이터를 가져올 수 있습니다.    
         

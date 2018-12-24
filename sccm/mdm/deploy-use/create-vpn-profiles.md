@@ -1,7 +1,7 @@
 ---
 title: VPN 프로필
 titleSuffix: Configuration Manager
-description: Configuration Manager의 모바일 장치 VPN 프로필에 대해 자세히 알아보세요.
+description: Configuration Manager의 모바일 디바이스 VPN 프로필에 대해 자세히 알아보세요.
 ms.date: 06/12/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -17,13 +17,13 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 08/31/2018
 ms.locfileid: "43348021"
 ---
-# <a name="vpn-profiles-on-mobile-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager의 모바일 장치에 대한 VPN 프로필
+# <a name="vpn-profiles-on-mobile-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager의 모바일 디바이스에 대한 VPN 프로필
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Configuration Manager의 VPN 프로필을 사용하여 조직의 모바일 장치 사용자에게 VPN 설정을 배포할 수 있습니다. 이러한 설정을 배포할 때 최종 사용자가 회사 네트워크에 있는 리소스에 연결하는 데 필요한 노력을 최소화할 수 있습니다.  
+Configuration Manager의 VPN 프로필을 사용하여 조직의 모바일 디바이스 사용자에게 VPN 설정을 배포할 수 있습니다. 이러한 설정을 배포할 때 최종 사용자가 회사 네트워크에 있는 리소스에 연결하는 데 필요한 노력을 최소화할 수 있습니다.  
 
-예를 들어 모든 iOS 장치가 기업 네트워크의 파일 공유에 연결하도록 설정할 수 있습니다. 필요한 연결 설정이 포함된 VPN 프로필을 만듭니다. 그런 다음, iOS 장치를 소유한 모든 사용자에게 이 프로필을 배포합니다. 이러한 사용자는 사용 가능한 네트워크 목록에서 VPN 연결이 보이며 이 네트워크에 간편하게 연결할 수 있습니다.  
+예를 들어 모든 iOS 디바이스가 기업 네트워크의 파일 공유에 연결하도록 설정할 수 있습니다. 필요한 연결 설정이 포함된 VPN 프로필을 만듭니다. 그런 다음, iOS 디바이스를 소유한 모든 사용자에게 이 프로필을 배포합니다. 이러한 사용자는 사용 가능한 네트워크 목록에서 VPN 연결이 보이며 이 네트워크에 간편하게 연결할 수 있습니다.  
 
 VPN 프로필을 만들 경우 광범위한 보안 설정을 포함할 수 있습니다. 예를 들어 Configuration Manager 인증서 프로필을 사용하여 설정했던 서버 유효성 검사 및 클라이언트 인증용 인증서를 지정할 수 있습니다. 자세한 내용은 [인증서 프로필](../../protect/deploy-use/introduction-to-certificate-profiles.md)을 참조하세요.  
 
@@ -31,9 +31,9 @@ VPN 프로필을 만들 경우 광범위한 보안 설정을 포함할 수 있�
 
 ## <a name="vpn-profiles-when-using-configuration-manager-together-with-intune"></a>Configuration Manager 및 Intune을 사용하는 경우의 VPN 프로필
 
-iOS, Android, Windows Phone 및 Windows 8.1 장치에 프로필을 배포하려면 장치를 Microsoft Intune에 등록해야 합니다. 다른 플랫폼의 장치를 Intune에 등록할 수도 있습니다. 등록하는 방법에 대한 자세한 내용은 [Microsoft Intune에서 장치 등록](/intune/device-enrollment)을 참조하세요. 
+iOS, Android, Windows Phone 및 Windows 8.1 디바이스에 프로필을 배포하려면 디바이스를 Microsoft Intune에 등록해야 합니다. 다른 플랫폼의 디바이스를 Intune에 등록할 수도 있습니다. 등록하는 방법에 대한 자세한 내용은 [Microsoft Intune에서 디바이스 등록](/intune/device-enrollment)을 참조하세요. 
 
-이 표에서는 각 장치 플랫폼에 대해 지원되는 연결 형식을 보여 줍니다.  
+이 표에서는 각 디바이스 플랫폼에 대해 지원되는 연결 형식을 보여 줍니다.  
 
  |연결 유형|iOS 및 macOS X|Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop 및 Mobile|  
  |---------------|---------------|-------|-----------|----------|--------------|-----------------|-----------------------------|  
@@ -68,7 +68,7 @@ iOS, Android, Windows Phone 및 Windows 8.1 장치에 프로필을 배포하려�
 
 다음 옵션은 Windows 10의 모든 연결 형식에 사용할 수 있습니다.
 
-- **회사 Wi-Fi 네트워크에 연결되면 VPN 사용 안 함**: 장치가 회사 Wi-Fi 네트워크에 연결되면 VPN 연결을 사용하지 않습니다. 장치가 회사 네트워크에 연결되어 있는지 확인하는 데 사용되는 신뢰할 수 있는 네트워크 이름을 입력합니다.  
+- **회사 Wi-Fi 네트워크에 연결되면 VPN 사용 안 함**: 장치가 회사 Wi-Fi 네트워크에 연결되면 VPN 연결을 사용하지 않습니다. 디바이스가 회사 네트워크에 연결되어 있는지 확인하는 데 사용되는 신뢰할 수 있는 네트워크 이름을 입력합니다.  
 
 - **네트워크 트래픽 규칙**: VPN 연결에 사용할 프로토콜, 로컬 포트, 원격 포트 및 주소 범위를 설정합니다.  
 
@@ -125,16 +125,16 @@ iOS, Android, Windows Phone 및 Windows 8.1 장치에 프로필을 배포하려�
         -   **클라이언트 인증을 위해 클라이언트 인증서 선택** - VPN 연결을 인증하는 데 사용되는 이전에 만든 클라이언트 [SCEP 인증서](create-pfx-certificate-profiles.md)를 선택합니다.   
 
             > [!NOTE]  
-            >  iOS 장치의 경우 선택하는 SCEP 프로필이 VPN 프로필에 포함됩니다. 다른 플랫폼의 경우 인증서가 없거나 호환되지 않으면 VPN 프로필이 설치되지 않도록 적용 가능성 규칙이 추가됩니다.  
+            >  iOS 디바이스의 경우 선택하는 SCEP 프로필이 VPN 프로필에 포함됩니다. 다른 플랫폼의 경우 인증서가 없거나 호환되지 않으면 VPN 프로필이 설치되지 않도록 적용 가능성 규칙이 추가됩니다.  
             >   
-            >  지정하는 SCEP 인증서가 호환되지 않거나 배포되지 않은 경우 VPN 프로필이 장치에 설치되지 않습니다.
+            >  지정하는 SCEP 인증서가 호환되지 않거나 배포되지 않은 경우 VPN 프로필이 디바이스에 설치되지 않습니다.
             >  
-            >  iOS를 실행하는 장치는 연결 형식이 PPTP인 경우 인증 방법으로 RSA SecurID 및 MSCHAP v2만 지원합니다. 오류 보고를 방지하려면 iOS를 실행하는 장치에 별도의 PPTP VPN 프로필을 배포하세요.   
+            >  iOS를 실행하는 디바이스는 연결 형식이 PPTP인 경우 인증 방법으로 RSA SecurID 및 MSCHAP v2만 지원합니다. 오류 보고를 방지하려면 iOS를 실행하는 디바이스에 별도의 PPTP VPN 프로필을 배포하세요.   
 
         - **조건부 액세스**  
-            - 연결 전에 VPN에 연결하는 장치의 조건부 액세스 준수를 테스트하려면 **이 VPN 연결에 조건부 액세스 사용**을 선택합니다. 자세한 내용은 [장치 규정 준수 정책](/sccm/protect/deploy-use/device-compliance-policies)를 참조하세요.  
+            - 연결 전에 VPN에 연결하는 디바이스의 조건부 액세스 준수를 테스트하려면 **이 VPN 연결에 조건부 액세스 사용**을 선택합니다. 자세한 내용은 [디바이스 규정 준수 정책](/sccm/protect/deploy-use/device-compliance-policies)를 참조하세요.  
 
-            - 장치 준수에 대해 VPN 인증 인증서 이외의 인증서를 선택하려면 **대체 인증서로 SSO(Single Sign-On) 사용**을 선택합니다. 이 옵션을 선택하는 경우 VPN 클라이언트가 찾아야 하는 올바른 인증서의 **EKU**(쉼표로 구분된 목록) 및 **발급자 해시**를 제공합니다.  
+            - 디바이스 준수에 대해 VPN 인증 인증서 이외의 인증서를 선택하려면 **대체 인증서로 SSO(Single Sign-On) 사용**을 선택합니다. 이 옵션을 선택하는 경우 VPN 클라이언트가 찾아야 하는 올바른 인증서의 **EKU**(쉼표로 구분된 목록) 및 **발급자 해시**를 제공합니다.  
 
          - **Windows Information Protection** - 엔터프라이즈에서 관리되는 회사 ID를 제공합니다. 일반적으로 조직의 기본 도메인(예: *contoso.com*)입니다. "|" 문자로 구분하여 조직에서 소유하는 여러 도메인을 지정할 수 있습니다. 예를 들어 *contoso.com|newcontoso.com*입니다. 자세한 내용은 [Intune을 사용하여 Windows Information Protection 앱 보호 정책 만들기 및 배포](/intune/windows-information-protection-policy-create)를 참조하세요.   
 

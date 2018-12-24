@@ -98,7 +98,7 @@ ms.locfileid: "42756255"
 
 ### <a name="bkmk_array"></a> 배열 변수
 
- 작업 순서는 일부 변수를 배열로 저장합니다. 배열의 각 요소는 하나의 개체에 대한 설정을 나타냅니다. 장치에 구성할 개체가 두 개 이상 있을 때 이 변수를 사용하세요. 다음 작업 순서 단계에서 배열 변수를 사용합니다.
+ 작업 순서는 일부 변수를 배열로 저장합니다. 배열의 각 요소는 하나의 개체에 대한 설정을 나타냅니다. 디바이스에 구성할 개체가 두 개 이상 있을 때 이 변수를 사용하세요. 다음 작업 순서 단계에서 배열 변수를 사용합니다.
 
  - [네트워크 설정 적용](task-sequence-steps.md#BKMK_ApplyNetworkSettings)  
 
@@ -126,9 +126,9 @@ ms.locfileid: "42756255"
 
  1. 먼저 컬렉션 변수를 평가합니다.  
 
- 2. 장치별 변수가 컬렉션에 설정된 동일한 변수를 재정의합니다.  
+ 2. 디바이스별 변수가 컬렉션에 설정된 동일한 변수를 재정의합니다.  
 
- 3. 어떤 방법으로든 작업 순서 동안 설정한 변수는 컬렉션 변수나 장치 변수보다 우선합니다.  
+ 3. 어떤 방법으로든 작업 순서 동안 설정한 변수는 컬렉션 변수나 디바이스 변수보다 우선합니다.  
 
 
 #### <a name="general-limitations-for-task-sequence-variable-values"></a>작업 순서 변수 값에 대한 일반적인 제한 사항  
@@ -156,7 +156,7 @@ ms.locfileid: "42756255"
 
 ### <a name="bkmk_set-coll-var"></a> 컬렉션 및 장치 변수
 
- 컬렉션 또는 특정 장치의 속성에 대한 변수를 설정합니다. 
+ 컬렉션 또는 특정 디바이스의 속성에 대한 변수를 설정합니다. 
 
  자세한 내용은 [Create task sequence variables for computers and collections](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#BKMK_CreateTSVariables)\(컴퓨터 및 컬렉션에 대한 작업 순서 변수 만들기\)를 참조하세요.
 

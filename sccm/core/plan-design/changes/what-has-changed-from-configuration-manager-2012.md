@@ -52,9 +52,9 @@ ms.locfileid: "32340712"
 ##  <a name="bkmk_servicepoint"></a> 새 사이트 시스템 역할: 서비스 연결 지점  
  **Microsoft Intune 커넥터**가 추가 기능인 **서비스 연결 지점**을 활성화하는 새 사이트 시스템 역할로 대체됩니다. 서비스 연결 지점은:  
 
--   System Center Configuration Manager 온-프레미스 모바일 장치 관리와 Intune을 통합할 때 Microsoft Intune 커넥터를 대체합니다.  
+-   System Center Configuration Manager 온-프레미스 모바일 디바이스 관리와 Intune을 통합할 때 Microsoft Intune 커넥터를 대체합니다.  
 
--   관리하는 장치에 대한 연결 지점으로 사용됩니다.  
+-   관리하는 디바이스에 대한 연결 지점으로 사용됩니다.  
 
 -   Microsoft 클라우드 서비스에 배포에 대한 사용 데이터를 업로드합니다.  
 
@@ -100,7 +100,7 @@ System Center 2012 Configuration Manager의 대역 외 관리는 이 변경 내�
 
 응용 프로그램 관리에 대한 다음 변경 내용에 유의하세요.
 
--   System Center Configuration Manager 이상을 실행 중인 Windows 10 장치에 대한 UWP(유니버설 Windows 플랫폼) 앱을 배포할 수 있습니다. [System Center Configuration Manager에서 Windows 응용 프로그램 만들기](../../../apps/get-started/creating-windows-applications.md)를 참조하세요.  
+-   System Center Configuration Manager 이상을 실행 중인 Windows 10 디바이스에 대한 UWP(유니버설 Windows 플랫폼) 앱을 배포할 수 있습니다. [System Center Configuration Manager에서 Windows 응용 프로그램 만들기](../../../apps/get-started/creating-windows-applications.md)를 참조하세요.  
 
 -   소프트웨어 센터의 외관이 새롭게 바뀌었습니다. 이전에 응용 프로그램 카탈로그에서만 표시된 앱(사용자가 사용할 수 있는 앱)이 이제 응용 프로그램 탭 아래 소프트웨어 센터에 표시됩니다. 그래서 사용자가 이러한 배포를 더 쉽게 검색할 수 있고 응용 프로그램 카탈로그를 참조하지 않아도 됩니다. 또한, 더는 브라우저에서 Silverlight를 사용하도록 설정할 필요가 없습니다. [System Center Configuration Manager에서 응용 프로그램 관리 계획 및 구성](../../../apps/plan-design/plan-for-and-configure-application-management.md)을 참조하세요.  
 
@@ -126,39 +126,39 @@ System Center 2012 Configuration Manager의 대역 외 관리는 이 변경 내�
 
 -   이제 **구성 항목 만들기** 마법사를 사용하면 만들려는 구성 항목 유형을 쉽게 선택할 수 있습니다. 또한 새로 추가되거나 업데이트된 구성 항목을 다음에 사용할 수 있습니다.  
 
-    -   Configuration Manager 클라이언트를 사용하여 관리되는 Windows 10 장치  
+    -   Configuration Manager 클라이언트를 사용하여 관리되는 Windows 10 디바이스  
 
-    -   Configuration Manager 클라이언트를 사용하여 관리되는 Mac OS X 장치  
+    -   Configuration Manager 클라이언트를 사용하여 관리되는 Mac OS X 디바이스  
 
     -   Configuration Manager 클라이언트를 사용하여 관리되는 Windows 데스크톱 및 서버 컴퓨터  
 
-    -   Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 장치  
+    -   Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 디바이스  
 
-    -   Configuration Manager 클라이언트 없이 관리되는 Windows Phone 장치  
+    -   Configuration Manager 클라이언트 없이 관리되는 Windows Phone 디바이스  
 
-    -   Configuration Manager 클라이언트 없이 관리되는 iOS 및 Mac OS X 장치  
+    -   Configuration Manager 클라이언트 없이 관리되는 iOS 및 Mac OS X 디바이스  
 
-    -   Configuration Manager 클라이언트 없이 관리되는 Android 및 Samsung KNOX Standard 장치  
+    -   Configuration Manager 클라이언트 없이 관리되는 Android 및 Samsung KNOX Standard 디바이스  
 
  [System Center Configuration Manager에서 구성 항목을 만드는 방법](../../../compliance/deploy-use/create-configuration-items.md)을 참조하세요.  
 
 -   Microsoft Intune에 등록되었거나 Configuration Manager 클라이언트를 사용하여 관리되는 Mac OS X 컴퓨터에서 설정을 관리할 수 있도록 지원합니다. [System Center Configuration Manager 클라이언트 없이 관리되는 iOS 및 Mac OS X 장치에 대해 구성 항목을 만드는 방법](../../../compliance/deploy-use/create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client.md)을 참조하세요.  
 
 ## <a name="protect-data-and-site-infrastructure"></a>데이터 및 사이트 인프라 보호  
-System Center Configuration Manager를 통해 비즈니스용 Windows Hello(이전의 Microsoft Passport for Work)와 통합할 수 있습니다. 비즈니스용 Windows Hello는 Active Directory 또는 Azure Active Directory 계정을 사용하여 Windows 10을 실행하는 장치에서 암호, 스마트 카드 또는 가상 스마트 카드를 대신하는 대체 로그인 방법입니다. [System Center Configuration Manager의 비즈니스용 Windows Hello 설정](../../../protect/deploy-use/windows-hello-for-business-settings.md)을 참조하세요.
+System Center Configuration Manager를 통해 비즈니스용 Windows Hello(이전의 Microsoft Passport for Work)와 통합할 수 있습니다. 비즈니스용 Windows Hello는 Active Directory 또는 Azure Active Directory 계정을 사용하여 Windows 10을 실행하는 디바이스에서 암호, 스마트 카드 또는 가상 스마트 카드를 대신하는 대체 로그인 방법입니다. [System Center Configuration Manager의 비즈니스용 Windows Hello 설정](../../../protect/deploy-use/windows-hello-for-business-settings.md)을 참조하세요.
 
-## <a name="mobile-device-management-with-microsoft-intune"></a>Microsoft Intune을 사용하여 모바일 장치 관리 설정  
- System Center Configuration Manager에서는 다음을 비롯하여 모바일 장치 관리 환경에 대한 향상된 기능을 제공합니다.  
+## <a name="mobile-device-management-with-microsoft-intune"></a>Microsoft Intune을 사용하여 모바일 디바이스 관리 설정  
+ System Center Configuration Manager에서는 다음을 비롯하여 모바일 디바이스 관리 환경에 대한 향상된 기능을 제공합니다.  
 
--   사용자가 등록할 수 있는 장치의 수 제한.  
+-   사용자가 등록할 수 있는 디바이스의 수 제한.  
 
 -   앱을 등록하거나 사용하려면 먼저 회사 포털의 사용자가 동의해야 하는 계약조건 지정.  
 
--   많은 수의 장치를 관리할 수 있도록 장치 등록 관리자 역할 추가.  
+-   많은 수의 디바이스를 관리할 수 있도록 디바이스 등록 관리자 역할 추가.  
 
-Configuration Manager와 Intune을 사용하는 모바일 장치 관리 기능에 대한 자세한 내용은 [System Center Configuration Manager 및 Microsoft Intune에서 하이브리드 MDM(모바일 장치 관리)](../../../mdm/understand/hybrid-mobile-device-management.md)을 참조하세요.  
+Configuration Manager와 Intune을 사용하는 모바일 디바이스 관리 기능에 대한 자세한 내용은 [System Center Configuration Manager 및 Microsoft Intune에서 하이브리드 MDM(모바일 디바이스 관리)](../../../mdm/understand/hybrid-mobile-device-management.md)을 참조하세요.  
 
-## <a name="on-premises-mobile-device-management"></a>온-프레미스 모바일 장치 관리  
- 이제 온-프레미스 Configuration Manager 인프라를 사용하여 모바일 장치를 관리할 수 있습니다. 모든 장치 관리 및 관리 데이터는 온-프레미스에서 처리되며 Microsoft Intune 또는 기타 클라우드 서비스의 일부가 아닙니다. 이 종류의 장치 관리에는 클라이언트 소프트웨어가 필요하지 않습니다. Configuration Manager에서 장치 운영 체제에 기본 제공되는 기능을 사용하여 장치를 관리합니다.  
+## <a name="on-premises-mobile-device-management"></a>온-프레미스 모바일 디바이스 관리  
+ 이제 온-프레미스 Configuration Manager 인프라를 사용하여 모바일 디바이스를 관리할 수 있습니다. 모든 디바이스 관리 및 관리 데이터는 온-프레미스에서 처리되며 Microsoft Intune 또는 기타 클라우드 서비스의 일부가 아닙니다. 이 종류의 디바이스 관리에는 클라이언트 소프트웨어가 필요하지 않습니다. Configuration Manager에서 디바이스 운영 체제에 기본 제공되는 기능을 사용하여 디바이스를 관리합니다.  
 
- 자세한 내용은 [System Center Configuration Manager의 온-프레미스 인프라로 모바일 장치 관리](../../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)를 참조하세요.
+ 자세한 내용은 [System Center Configuration Manager의 온-프레미스 인프라로 모바일 디바이스 관리](../../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)를 참조하세요.

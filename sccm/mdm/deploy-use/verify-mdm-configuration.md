@@ -21,7 +21,7 @@ ms.locfileid: "32345967"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-다음 로그 파일을 확인하여 특정 장치 관리 구성 요소를 확인할 수 있습니다.
+다음 로그 파일을 확인하여 특정 디바이스 관리 구성 요소를 확인할 수 있습니다.
 
 -   Cloudusersync.log에서 사용자 계정이 제대로 동기화되었는지 확인합니다.
 

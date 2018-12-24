@@ -24,7 +24,7 @@ ms.locfileid: "32333487"
 System Center Configuration Manager에서 전원 관리를 사용하려면 먼저 다음 구성 단계를 수행해야 합니다.  
 
 ## <a name="enable-and-configure-power-management-client-settings"></a>전원 관리 클라이언트 설정 사용 및 구성  
- 이 절차는 전원 관리에 대한 기본 클라이언트 설정을 구성하고 계층의 모든 컴퓨터에 적용됩니다. 이러한 설정이 일부 컴퓨터에만 적용되도록 하려면 사용자 지정 장치 클라이언트 설정을 만들어서 전원 관리를 사용할 컴퓨터가 포함된 컬렉션에 할당합니다. 사용자 지정 장치 설정을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../../../core/clients/deploy/configure-client-settings.md)을 참조하세요.  
+ 이 절차는 전원 관리에 대한 기본 클라이언트 설정을 구성하고 계층의 모든 컴퓨터에 적용됩니다. 이러한 설정이 일부 컴퓨터에만 적용되도록 하려면 사용자 지정 디바이스 클라이언트 설정을 만들어서 전원 관리를 사용할 컴퓨터가 포함된 컬렉션에 할당합니다. 사용자 지정 디바이스 설정을 만드는 방법에 대한 자세한 내용은 [How to configure client settings in System Center Configuration Manager](../../../../core/clients/deploy/configure-client-settings.md)항목을 참조하세요.  
 
 #### <a name="to-enable-power-management-and-configure-client-settings"></a>전원 관리를 사용하도록 설정하고 클라이언트 설정을 구성하려면  
 

@@ -23,10 +23,10 @@ ms.locfileid: "32332001"
 
 이 섹션에는 System Center Configuration Manager의 준수 설정을 사용하는 방법을 학습하는 데 유용한 몇 가지 일반적인 시나리오가 있습니다.  
 
-## <a name="for-devices-that-run-the-configuration-manager-client"></a>Configuration Manager 클라이언트를 실행하는 장치의 경우  
+## <a name="for-devices-that-run-the-configuration-manager-client"></a>Configuration Manager 클라이언트를 실행하는 디바이스의 경우  
  [System Center Configuration Manager 클라이언트가 설치된 장치의 준수 관리를 위한 일반 작업](../../compliance/plan-design/common-tasks-for-managing-compliance-on-devices-with-the-client.md)  
 
-## <a name="for-devices-that-do-not-run-the-configuration-manager-client"></a>Configuration Manager 클라이언트를 실행하지 않는 장치의 경우  
+## <a name="for-devices-that-do-not-run-the-configuration-manager-client"></a>Configuration Manager 클라이언트를 실행하지 않는 디바이스의 경우  
  [System Center Configuration Manager 클라이언트를 실행하지 않는 장치의 준수 관리를 위한 일반 작업](../../compliance/plan-design/common-tasks-for-managing-compliance-on-devices-not-running-the-client.md)  
 
 ## <a name="scenarios-for-creating-and-deploying-configuration-baselines"></a>구성 기준 만들기 및 배포에 대한 시나리오  

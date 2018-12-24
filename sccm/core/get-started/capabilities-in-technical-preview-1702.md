@@ -63,7 +63,7 @@ System Center Configuration Manager SDK를 사용하는 경우 피어 원본 기
 
 ## <a name="azurediscovery"></a> Azure Active Directory Domain Services를 사용하여 장치, 사용자 및 그룹 관리
 
-이 기술 미리 보기 버전에서는 Azure AD(Active Directory) Domain Services 관리되는 도메인에 가입된 장치를 관리할 수 있습니다. 또한 다양한 Configuration Manager 검색 방법으로 해당 도메인에서 장치, 사용자 및 그룹을 검색할 수 있습니다.
+이 기술 미리 보기 버전에서는 Azure AD(Active Directory) Domain Services 관리되는 도메인에 가입된 디바이스를 관리할 수 있습니다. 또한 다양한 Configuration Manager 검색 방법으로 해당 도메인에서 디바이스, 사용자 및 그룹을 검색할 수 있습니다.
 
 기술 미리 보기 사이트 인프라, 클라이언트 및 Azure AD Domain Services 도메인은 모두 Azure에서 실행되어야 합니다.
 
@@ -87,7 +87,7 @@ Azure AD에서 실행되도록 Configuration Manager를 설정하면 다음 Acti
 
 다음 예제에서는 Azure AD *contoso.onmicrosoft.com*을 사용합니다.
  - **시스템 복구**   
-Azure AD는 **AADDC 컴퓨터** OU 아래에 장치를 저장합니다.  다음을 구성 합니다.  
+Azure AD는 **AADDC 컴퓨터** OU 아래에 디바이스를 저장합니다.  다음을 구성 합니다.  
   - *LDAP://OU=AADDC Computers,DC=contoso,DC=onmicrosoft,DC=com*  
 
 
@@ -102,14 +102,14 @@ Azure AD에 대한 자세한 내용은 다음을 참조하세요.
  - azure.microsoft.com의 [Azure Active Directory Domain Services](https://azure.microsoft.com/services/active-directory-ds)
  - docs.microsoft.com의 [Active Directory Domain Services 설명서](https://docs.microsoft.com/azure/active-directory-domain-services)
 
-## <a name="conditional-access-device-compliance-policy-improvements"></a>조건부 액세스 장치 준수 정책 개선
+## <a name="conditional-access-device-compliance-policy-improvements"></a>조건부 액세스 디바이스 준수 정책 개선
 
-새 장치 준수 정책 규칙을 사용하면 사용자가 비규격 앱 목록에 포함된 앱을 사용하는 경우 조건부 액세스를 지원하는 회사 리소스에 대한 액세스를 차단할 수 있습니다. 비규격 앱 목록은 관리자가 새 준수 규칙 **설치할 수 없는 앱**을 추가할 때 정의할 수 있습니다. 이 규칙을 사용하려면 관리자가 비규격 목록에 앱을 추가할 때 **앱 이름**, **앱 ID** 및 **앱 게시자**(선택 사항)를 입력해야 합니다. 이 설정은 iOS 및 Android 장치에만 적용됩니다.
+새 디바이스 준수 정책 규칙을 사용하면 사용자가 비규격 앱 목록에 포함된 앱을 사용하는 경우 조건부 액세스를 지원하는 회사 리소스에 대한 액세스를 차단할 수 있습니다. 비규격 앱 목록은 관리자가 새 준수 규칙 **설치할 수 없는 앱**을 추가할 때 정의할 수 있습니다. 이 규칙을 사용하려면 관리자가 비규격 목록에 앱을 추가할 때 **앱 이름**, **앱 ID** 및 **앱 게시자**(선택 사항)를 입력해야 합니다. 이 설정은 iOS 및 Android 디바이스에만 적용됩니다.
 
 또한 이렇게 하면 조직에서 보안되지 않은 앱을 통한 데이터 누출을 완화하고 특정 앱을 통한 과도한 데이터 사용을 방지할 수 있습니다.
 
-- 자세한 내용은 [장치 준수 정책의 작동 방식](https://docs.microsoft.com/sccm/protect/deploy-use/device-compliance-policies)을 참조하세요.
-- 자세한 내용은 [장치 준수 정책을 만드는 방법](https://docs.microsoft.com/sccm/protect/deploy-use/create-compliance-policy)을 참조하세요.
+- 자세한 내용은 [디바이스 준수 정책의 작동 방식](https://docs.microsoft.com/sccm/protect/deploy-use/device-compliance-policies)을 참조하세요.
+- 자세한 내용은 [디바이스 준수 정책을 만드는 방법](https://docs.microsoft.com/sccm/protect/deploy-use/create-compliance-policy)을 참조하세요.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 
@@ -136,7 +136,7 @@ Windows Update for Business 업데이트에 대한 준수 평가 정보를 수�
 ### <a name="create-a-compliance-policy-for-windows-update-for-business-assessment"></a>Windows Update for Business 평가에 대한 준수 정책 만들기
 1. Configuration Manager 콘솔에서 **자산 및 준수** > **준수 설정** > **준수 정책**으로 이동합니다.
 2. **준수 정책 만들기**를 클릭하거나 수정할 기존 준수 정책을 선택합니다.
-3. 일반 페이지에서 이름 및 설명을 입력하고 **Configuration Manager 클라이언트를 사용하여 관리되는 장치에 대한 준수 규칙**을 선택한 다음 보고할 비준수 심각도를 설정하고 **다음**을 클릭합니다.
+3. 일반 페이지에서 이름 및 설명을 입력하고 **Configuration Manager 클라이언트를 사용하여 관리되는 디바이스에 대한 준수 규칙**을 선택한 다음 보고할 비준수 심각도를 설정하고 **다음**을 클릭합니다.
 4. 지원되는 플랫폼 페이지에서 **Windows 10**을 선택하고 **다음**을 클릭합니다.
 5. 규칙 페이지에서 **새로 만들기...** 를 클릭한 다음 **조건**에 대해 **Windows Update for Business 준수 필요**를 선택합니다. **값** 설정이 자동으로 **True**로 설정됩니다.
 
@@ -222,18 +222,18 @@ Windows Update for Business 업데이트에 대한 준수 평가 정보를 수�
 
 ## <a name="create-pfx-certificates-with-s-mime-support"></a>S MIME을 지원하는 PFX 인증서 만들기
 
-이제 S/MIME을 지원하는 PFX 인증서 프로필을 만들어 사용자에게 배포할 수 있습니다.  그러면 사용자가 등록한 장치 전체에서 이 인증서를 S/MIME 암호화 및 암호 해독에 사용할 수 있습니다.
+이제 S/MIME을 지원하는 PFX 인증서 프로필을 만들어 사용자에게 배포할 수 있습니다.  그러면 사용자가 등록한 디바이스 전체에서 이 인증서를 S/MIME 암호화 및 암호 해독에 사용할 수 있습니다.
 
 또한 이제 여러 인증서 등록 지점 사이트 시스템 역할에 여러 CA(인증 기관)를 지정한 다음 인증서 프로필의 일부로 요청을 처리하는 CA를 할당할 수 있습니다.
 
-iOS 장치의 경우 PFX 인증서 프로필을 메일 프로필에 연결하고 S/MIME 암호화를 사용하도록 설정할 수 있습니다.  이렇게 하면 iOS의 네이티브 메일 클라이언트에서 S/MIME이 사용되고 올바른 S/MIME 암호화 인증서가 연결됩니다.
+iOS 디바이스의 경우 PFX 인증서 프로필을 메일 프로필에 연결하고 S/MIME 암호화를 사용하도록 설정할 수 있습니다.  이렇게 하면 iOS의 네이티브 메일 클라이언트에서 S/MIME이 사용되고 올바른 S/MIME 암호화 인증서가 연결됩니다.
 
 Configuration Manager의 인증서에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필 소개]( https://docs.microsoft.com/sccm/protect/deploy-use/introduction-to-certificate-profiles)를 참조하세요.
 
 
-## <a name="new-compliance-settings-for-ios-devices"></a>iOS 장치에 대한 새 준수 설정
+## <a name="new-compliance-settings-for-ios-devices"></a>iOS 디바이스에 대한 새 준수 설정
 
-iOS 장치에 대한 구성 항목에서 사용할 수 있는 새 설정이 추가되었습니다. 이러한 설정은 이전에 Microsoft Intune의 독립 실행형 구성에 있던 설정이며 이제 Intune과 Configuration Manager를 사용할 때 제공됩니다. 이러한 설정에 대한 도움이 필요하면 [Microsoft Intune의 iOS 정책 설정](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)을 참조하세요.
+iOS 디바이스에 대한 구성 항목에서 사용할 수 있는 새 설정이 추가되었습니다. 이러한 설정은 이전에 Microsoft Intune의 독립 실행형 구성에 있던 설정이며 이제 Intune과 Configuration Manager를 사용할 때 제공됩니다. 이러한 설정에 대한 도움이 필요하면 [Microsoft Intune의 iOS 정책 설정](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)을 참조하세요.
 
 - **관리되는 앱에서 데이터를 iCloud와 동기화**
 - **다른 디바이스에서 작업을 계속하도록 핸드오프**
@@ -283,20 +283,20 @@ iOS 장치에 대한 구성 항목에서 사용할 수 있는 새 설정이 추�
 Technical Preview 버전 1702부터 Google 계정을 하이브리드 MDM 테넌트에 바인딩할 수 있습니다. 이렇게 하면 다음을 수행할 수 있습니다.
 
 - [지원되는 Android 장치](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012)를 Android for Work로 등록하고 이러한 등록된 장치에 작업 프로필 만들기
-- Play for Work 스토어에서 앱을 승인하고, Configuration Manager 콘솔과 동기화한 다음 장치의 작업 프로필에 배포
-- 구성 항목을 만들고 배포하여 해당 장치에 대한 작업 프로필 및 암호 설정 구성
-- Android 장치에 대해 이미 수행하는 것처럼 Android for Work 장치에 대한 준수 정책 항목과 리소스 액세스 프로필 만들기 및 배포
-- Android for Work 장치에서 선택적 초기화 수행
+- Play for Work 스토어에서 앱을 승인하고, Configuration Manager 콘솔과 동기화한 다음 디바이스의 작업 프로필에 배포
+- 구성 항목을 만들고 배포하여 해당 디바이스에 대한 작업 프로필 및 암호 설정 구성
+- Android 디바이스에 대해 이미 수행하는 것처럼 Android for Work 디바이스에 대한 준수 정책 항목과 리소스 액세스 프로필 만들기 및 배포
+- Android for Work 디바이스에서 선택적 초기화 수행
 
-장치를 Android for Work로 등록하면 Intune에서 관리할 수 있는 장치에 작업 프로필이 생성됩니다. 이 작업 프로필은 Android 장치의 개인 프로필과 나란히 존재합니다. 사용자는 작업 프로필 앱과 개인 프로필 앱 간에 쉽게 전환할 수 있습니다. 개인 프로필에서 항목을 관리할 수 없습니다. 개인 앱과 데이터는 관리되지 않는 상태로 유지됩니다. Configuration Manager는 작업 프로필 및 해당 내용에 대한 모든 권한을 가지며 장치에서 제거할 수 있습니다.
+디바이스를 Android for Work로 등록하면 Intune에서 관리할 수 있는 디바이스에 작업 프로필이 생성됩니다. 이 작업 프로필은 Android 디바이스의 개인 프로필과 나란히 존재합니다. 사용자는 작업 프로필 앱과 개인 프로필 앱 간에 쉽게 전환할 수 있습니다. 개인 프로필에서 항목을 관리할 수 없습니다. 개인 앱과 데이터는 관리되지 않는 상태로 유지됩니다. Configuration Manager는 작업 프로필 및 해당 내용에 대한 모든 권한을 가지며 디바이스에서 제거할 수 있습니다.
 
-Android for Work는 Android와 별도 플랫폼이며, 작업 프로필을 지원하는 Android 장치에 사용할 관리 형식을 결정해야 합니다.
+Android for Work는 Android와 별도 플랫폼이며, 작업 프로필을 지원하는 Android 디바이스에 사용할 관리 형식을 결정해야 합니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 다음 섹션에서는 Android for Work 관리에 대해 설명합니다.
 
 #### <a name="enable-android-for-work-management"></a>Android for Work 관리 사용
-1. 이 Intune 테넌트에 대한 모든 Android for Work 관리 작업과 연결할 Android for Work 관리자 계정으로 사용할 Google 계정을 https://accounts.google.com/SignUp에서 만듭니다. 이 Google 계정은 Android 장치를 관리하는 관리자 간에 공유될 수 있습니다. 또한 조직이 Play for Work 콘솔에서 앱을 관리하고 게시하는 데 사용하는 Google 계정입니다. 이 계정을 사용하여 Play for Work 스토어에서 앱을 승인하므로 계정 이름과 암호를 추적합니다.
+1. 이 Intune 테넌트에 대한 모든 Android for Work 관리 작업과 연결할 Android for Work 관리자 계정으로 사용할 Google 계정을 https://accounts.google.com/SignUp에서 만듭니다. 이 Google 계정은 Android 디바이스를 관리하는 관리자 간에 공유될 수 있습니다. 또한 조직이 Play for Work 콘솔에서 앱을 관리하고 게시하는 데 사용하는 Google 계정입니다. 이 계정을 사용하여 Play for Work 스토어에서 앱을 승인하므로 계정 이름과 암호를 추적합니다.
 2. Configuration Manager에서 관리되는 Intune 테넌트에 Google 계정을 바인딩하여 Android 등록을 사용하도록 설정합니다.
   1. **관리** > **개요** > **Cloud Services** > **Microsoft Intune 구독**으로 이동한 다음 Intune 구독을 선택합니다.
   2. 리본에서 **플랫폼 구성** > **Android**를 클릭하고 **Android 등록 사용**이 선택되었는지 확인합니다.
@@ -305,13 +305,13 @@ Android for Work는 Android와 별도 플랫폼이며, 작업 프로필을 지�
   5. Intune 관리자 자격 증명을 사용하여 Intune 포털에 로그인합니다.
   6. **구성**을 클릭하여 Google Play의 Android for Work 웹 사이트를 엽니다.
   7. Google의 로그인 페이지에서 1단계의 Google 계정 자격 증명을 입력한 다음 회사 정보를 제공합니다.
-3. Intune 포털로 돌아오면 Android for Work이 사용되며, Android for Work 장치에 대한 세 가지 등록 옵션이 있습니다.
+3. Intune 포털로 돌아오면 Android for Work이 사용되며, Android for Work 디바이스에 대한 세 가지 등록 옵션이 있습니다.
   - **모든 장치를 Android로 관리** - (사용 안 함) Android for Work를 지원하는 장치를 포함하여 모든 Android 장치가 기존 Android 장치로 등록됩니다.
-  - **지원되는 장치를 Android for Work로 관리** - (사용) Android for Work를 지원하는 모든 장치가 Android for Work로 등록됩니다. Android for Work를 지원하지 않는 Android 장치는 기존 Android 장치로 등록됩니다.
-  - **이러한 그룹의 사용자에 대해서만 지원되는 장치를 Android for Work로 관리** - (테스트 중) Android for Work 관리의 대상을 제한된 사용자 집합으로 지정할 수 있습니다. Android for Work를 지원하는 장치를 등록하는 선택된 그룹의 구성원만 Android for Work 장치로 등록됩니다. 다른 모든 장치는 Android 장치로 등록됩니다.
+  - **지원되는 장치를 Android for Work로 관리** - (사용) Android for Work를 지원하는 모든 장치가 Android for Work로 등록됩니다. Android for Work를 지원하지 않는 Android 디바이스는 기본 Android 디바이스로 등록됩니다.
+  - **이러한 그룹의 사용자에 대해서만 지원되는 장치를 Android for Work로 관리** - (테스트 중) Android for Work 관리의 대상을 제한된 사용자 집합으로 지정할 수 있습니다. Android for Work를 지원하는 디바이스를 등록하도록 선택된 그룹 구성원만 Android for Work 디바이스로 등록됩니다. 다른 구성원은 모두 Android 디바이스로 등록됩니다.
   
 > [!NOTE]
-> 알려진 문제로 인해 **Manage supported devices for users only in these groups as Android for Work**(이 그룹의 사용자만을 위해 지원되는 장치를 Android for Work로 관리) 옵션이 제대로 작동되지 않습니다. 지정된 Azure AD 그룹의 사용자 장치가 Android for Work 대신 Android로 등록됩니다. Android for Work를 테스트하려면 **Manage all supported devices as Android for Work**(지원되는 장치를 모두 Android for Work로 관리)를 사용해야 합니다.
+> 알려진 문제로 인해 **Manage supported devices for users only in these groups as Android for Work**(이 그룹의 사용자만을 위해 지원되는 디바이스를 Android for Work로 관리) 옵션이 제대로 작동되지 않습니다. 지정된 Azure AD 그룹의 사용자 디바이스가 Android for Work 대신 Android로 등록됩니다. Android for Work를 테스트하려면 **Manage all supported devices as Android for Work**(지원되는 디바이스를 모두 Android for Work로 관리)를 사용해야 합니다.
 
 
   Android for Work 등록을 사용하도록 설정하려면 아래쪽 두 옵션 중 하나를 선택해야 합니다. **이러한 그룹의 사용자에 대해서만 지원되는 장치를 Android for Work로 관리** 옵션을 사용하려면 Azure Active Directory 보안 그룹을 먼저 설정해야 합니다.
@@ -319,7 +319,7 @@ Android for Work는 Android와 별도 플랫폼이며, 작업 프로필을 지�
 바인딩이 완료되면 계정 이름 및 조직 이름이 Intune 포털에 표시되며, 이제 두 브라우저를 닫아도 됩니다.
 
 #### <a name="approve-and-deploy-android-for-work-apps"></a>Android for Work 앱 승인 및 배포
-Play for Work 스토어에서 앱을 승인하고, Configuration Manager 콘솔과 동기화하고, 관리되는 Android for Work 장치에 배포하려면 다음 단계를 따르세요. 사용자의 작업 프로필에 앱을 배포하려면 Play for Work에서 앱을 승인한 다음 Configuration Manager 콘솔과 동기화해야 합니다.
+Play for Work 스토어에서 앱을 승인하고, Configuration Manager 콘솔과 동기화하고, 관리되는 Android for Work 디바이스에 배포하려면 다음 단계를 따르세요. 사용자의 작업 프로필에 앱을 배포하려면 Play for Work에서 앱을 승인한 다음 Configuration Manager 콘솔과 동기화해야 합니다.
 
 1. 브라우저를 열고 https://play.google.com/work로 이동합니다.
 2. Intune 테넌트에 바인딩된 Google 관리자 계정을 사용하여 로그인합니다.
@@ -332,24 +332,24 @@ Play for Work 스토어에서 앱을 승인하고, Configuration Manager 콘솔�
 
 Android for Work 앱을 Configuration Manager와 동기화하려면 Android for Work 웹 사이트에서 앱을 하나 이상 승인해야 합니다.
 
-#### <a name="enroll-an-android-for-work-device"></a>Android for Work 장치 등록
-Android for Work 장치를 등록하는 방법은 Android 등록과 비슷합니다. 모바일 장치에서 Android용 회사 포털 앱을 다운로드하여 실행합니다. 등록 프로세스의 일부로 작업 프로필을 만들라는 메시지가 나타납니다.  작업 프로필을 만든 후 관리되는 버전의 회사 포털로 전환해야 합니다. 관리되는 회사 포털은 오른쪽 아래에 작은 주황색 서류 가방이 태그로 지정되어 있습니다.
+#### <a name="enroll-an-android-for-work-device"></a>Android for Work 디바이스 등록
+Android for Work 디바이스를 등록하는 방법은 Android 등록과 비슷합니다. 모바일 디바이스에서 Android용 회사 포털 앱을 다운로드하여 실행합니다. 등록 프로세스의 일부로 작업 프로필을 만들라는 메시지가 나타납니다.  작업 프로필을 만든 후 관리되는 버전의 회사 포털로 전환해야 합니다. 관리되는 회사 포털은 오른쪽 아래에 작은 주황색 서류 가방이 태그로 지정되어 있습니다.
 
 #### <a name="create-and-deploy-a-configuration-item"></a>구성 항목 만들기 및 배포
 Android for Work에는 구성 항목에 대한 다음 두 가지 설정 그룹이 있습니다.
 - 암호
 - 작업 프로필
 
-Android 6 이상을 실행하는 장치에서는 다음 구성 항목뿐 아니라 작업 프로필 간에 콘텐츠 공유를 구성할 수 있습니다.
+Android 6 이상을 실행하는 디바이스에서는 다음 구성 항목뿐 아니라 작업 프로필 간에 콘텐츠 공유를 구성할 수 있습니다.
 - 특정 사용 권한을 요청하는 앱에 대한 동작
 - 작업 프로필 내의 응용 프로그램에 대한 알림이 잠금 화면에 표시되는지 여부
 
-이 동작을 시도하려면 표준 워크플로를 통해 구성 항목을 만들고, **일반** 페이지에서 **Android for Work**를 선택하고, 기준에 구성 항목을 추가한 다음 평소대로 배포하여 각 설정 그룹에 대한 설정을 구성합니다. 이러한 설정은 Android for Work로 등록된 장치에만 적용되고 Android로 등록된 장치에는 적용되지 않습니다.
+이 동작을 시도하려면 표준 워크플로를 통해 구성 항목을 만들고, **일반** 페이지에서 **Android for Work**를 선택하고, 기준에 구성 항목을 추가한 다음 평소대로 배포하여 각 설정 그룹에 대한 설정을 구성합니다. 이러한 설정은 Android for Work로 등록된 디바이스에만 적용되고 Android로 등록된 디바이스에는 적용되지 않습니다.
 
 #### <a name="perform-selective-wipe"></a>선택적 초기화 수행
-작업 프로필만 관리하기 때문에 Android for Work로 등록된 장치는 선택적 초기화만 가능합니다. 이렇게 하면 개인 프로필이 초기화되지 않도록 보호됩니다. Android for Work 장치에서 선택적 초기화를 수행하면 모든 앱과 데이터를 비롯한 작업 프로필이 제거되고 장치 등록이 취소됩니다.
+작업 프로필만 관리하기 때문에 Android for Work로 등록된 디바이스는 선택적 초기화만 가능합니다. 이렇게 하면 개인 프로필이 초기화되지 않도록 보호됩니다. Android for Work 디바이스에서 선택적 초기화를 수행하면 모든 앱과 데이터를 비롯한 작업 프로필이 제거되고 디바이스 등록이 취소됩니다.
 
-Android for Work 장치를 선택적으로 초기화하려면 Configuration Manager 콘솔에서 일반적인 [선택적 초기화 프로세스](https://docs.microsoft.com/sccm/mdm/deploy-use/wipe-lock-reset-devices#selective-wipe)를 사용합니다.
+Android for Work 디바이스를 선택적으로 초기화하려면 Configuration Manager 콘솔에서 일반적인 [선택적 초기화 프로세스](https://docs.microsoft.com/sccm/mdm/deploy-use/wipe-lock-reset-devices#selective-wipe)를 사용합니다.
 
 #### <a name="known-issues-for-android-for-work"></a>Android for Work의 알려진 문제
-**Android for Work 메일 프로필에 동기화 일정을 구성하면 배포에 실패함** Android for Work 메일 프로필에 대한 ConfigMgr UI의 옵션 중 하나는 "Schedule"(일정)입니다. 다른 플랫폼에서는 관리자가 메일 및 다른 메일 계정 데이터를 배포되는 모바일 장치와 동기화하는 일정을 구성할 수 있습니다. 그러나 Android for Work 메일 프로필에 대해서는 동기화 일정을 구성할 수 없으며, "Not Configured"(구성되지 않음) 외에 다른 옵션을 선택하면 프로필이 장치에 배포되지 않습니다.
+**Android for Work 메일 프로필에 동기화 일정을 구성하면 배포에 실패함** Android for Work 메일 프로필에 대한 ConfigMgr UI의 옵션 중 하나는 "Schedule"(일정)입니다. 다른 플랫폼에서는 관리자가 메일 및 다른 메일 계정 데이터를 배포되는 모바일 디바이스와 동기화하는 일정을 구성할 수 있습니다. 그러나 Android for Work 메일 프로필에 대해서는 동기화 일정을 구성할 수 없으며, "Not Configured"(구성되지 않음) 외에 다른 옵션을 선택하면 프로필이 디바이스에 배포되지 않습니다.

@@ -1,7 +1,7 @@
 ---
 title: 컬렉션 만들기
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 컬렉션을 만들어 사용자 및 장치 그룹을 더 쉽게 관리합니다.
+description: System Center Configuration Manager에서 컬렉션을 만들어 사용자 및 디바이스 그룹을 더 쉽게 관리합니다.
 ms.date: 2/22/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -21,10 +21,10 @@ ms.locfileid: "42584477"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-컬렉션은 사용자 또는 장치의 그룹입니다. 응용 프로그램 관리, 준수 설정 배포 또는 소프트웨어 업데이트 설치와 같은 작업에 컬렉션을 사용합니다. 또한 클라이언트 설정 그룹을 관리하는 데 컬렉션을 사용하거나 관리자가 액세스할 수 있는 리소스를 지정하기 위해 역할 기반 관리와 함께 컬렉션을 사용할 수 있습니다. Configuration Manager에는 여러 기본 제공 컬렉션이 포함되어 있습니다. 자세한 내용은 [System Center Configuration Manager의 컬렉션 소개](../../../../core/clients/manage/collections/introduction-to-collections.md)를 참조하세요.  
+컬렉션은 사용자 또는 디바이스의 그룹입니다. 응용 프로그램 관리, 준수 설정 배포 또는 소프트웨어 업데이트 설치와 같은 작업에 컬렉션을 사용합니다. 또한 클라이언트 설정 그룹을 관리하는 데 컬렉션을 사용하거나 관리자가 액세스할 수 있는 리소스를 지정하기 위해 역할 기반 관리와 함께 컬렉션을 사용할 수 있습니다. Configuration Manager에는 여러 기본 제공 컬렉션이 포함되어 있습니다. 자세한 내용은 [System Center Configuration Manager의 컬렉션 소개](../../../../core/clients/manage/collections/introduction-to-collections.md)를 참조하세요.  
 
 > [!NOTE]  
->  컬렉션에는 사용자 또는 장치 중 하나만 포함될 수 있습니다.  
+>  컬렉션에는 사용자 또는 디바이스 중 하나만 포함될 수 있습니다.  
 
  다음 표에서는 Configuration Manager의 컬렉션 멤버를 구성하는 데 사용할 수 있는 규칙이 나와 있습니다.  
 
@@ -110,7 +110,7 @@ ms.locfileid: "42584477"
 
 -   **이 컬렉션에 대한 전체 업데이트 예약** – 컬렉션 멤버 자격에 대한 정규 전체 평가를 예약합니다.  
 
-6.  새 컬렉션을 만드는 마법사를 완료합니다. 새 컬렉션이 **자산 및 준수** 작업 영역의 **장치 컬렉션** 노드에 표시됩니다.  
+6.  새 컬렉션을 만드는 마법사를 완료합니다. 새 컬렉션이 **자산 및 준수** 작업 영역의 **디바이스 컬렉션** 노드에 표시됩니다.  
 
 > [!NOTE]  
 >  컬렉션 멤버를 확인하려면 Configuration Manager 콘솔을 새로 고치거나 다시 로드해야 합니다. 그러나 첫 번째 예약된 업데이트 후까지 또는 컬렉션에 대해 **멤버 자격 업데이트**를 수동으로 선택한 경우 멤버가 컬렉션에 표시되지 않습니다. 컬렉션 업데이트를 완료하는 데 몇 분 정도 걸릴 수 있습니다.  
@@ -189,7 +189,7 @@ ms.locfileid: "42584477"
 
 ##  <a name="BKMK_3"></a> 컬렉션을 가져오려면  
 
-1.  Configuration Manager 콘솔에서 **자산 및 준수** > **사용자 컬렉션** 또는 **장치 컬렉션**을 선택합니다.  
+1.  Configuration Manager 콘솔에서 **자산 및 준수** > **사용자 컬렉션** 또는 **디바이스 컬렉션**을 선택합니다.  
 
 3.  **홈** 탭의 **만들기** 그룹에서 **컬렉션 가져오기**를 선택합니다.  
 
@@ -200,4 +200,4 @@ ms.locfileid: "42584477"
     > [!NOTE]  
     >  가져올 파일은 이와 동일한 버전의 Configuration Manager를 실행하는 사이트에서 내보냈어야 합니다. 컬렉션을 내보내는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 컬렉션을 관리하는 방법](../../../../core/clients/manage/collections/manage-collections.md)을 참조하세요.  
 
-6.  컬렉션을 가져오는 마법사를 완료합니다. 새 컬렉션이 **자산 및 준수** 작업 영역의 **사용자 컬렉션** 또는 **장치 컬렉션** 노드에 표시됩니다. 새로 가져온 컬렉션에 대한 컬렉션 멤버를 확인하려면 Configuration Manager 콘솔을 새로 고치거나 다시 로드합니다.  
+6.  컬렉션을 가져오는 마법사를 완료합니다. 새 컬렉션이 **자산 및 준수** 작업 영역의 **사용자 컬렉션** 또는 **디바이스 컬렉션** 노드에 표시됩니다. 새로 가져온 컬렉션에 대한 컬렉션 멤버를 확인하려면 Configuration Manager 콘솔을 새로 고치거나 다시 로드합니다.  

@@ -12,7 +12,7 @@ ms.author: aaroncz
 manager: dougeby
 ms.openlocfilehash: 9dc5c79588c8d5211139f0614491d80ba7597f49
 ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
 ms.locfileid: "32347181"
@@ -31,7 +31,7 @@ Endpoint Protection을 사용하여 Configuration Manager 클라이언트 컴퓨
 
 > [!IMPORTANT]  
 >  Windows 10 컴퓨터의 Endpoint Protection을 관리하는 경우 Windows Defender에 대한 맬웨어 정의를 업데이트 및 배포하도록 Configuration Manager를 구성해야 합니다. Windows Defender는 Windows 10에 포함되어 있지만 SCEPInstall은 여전히 설치해야 하고 Endpoint Protection(아래 **5단계**)에 대한 사용자 지정 클라이언트 설정도 여전히 필요합니다. </br> </br>
-> Configuration Manager 1802부터 Windows 10 장치에 Endpoint Protection 에이전트(SCEPInstall)를 설치할 필요가 없습니다. Windows 10 장치에 이미 설치되어 있는 경우 Configuration Manager는 에이전트를 제거하지 않습니다. 관리자는 1802 클라이언트 버전 이상이 실행 중인 Windows 10 장치에서 Endpoint Protection 에이전트를 제거할 수 있습니다. SCEPInstall.exe는 동일한 컴퓨터의 C:\Windows\ccmsetup 위치에 여전히 있을 수 있지만 새 클라이언트 설치 시 다운로드할 수 없습니다. Endpoint Protection(아래 **5단계**)에 대한 사용자 지정 클라이언트 설정이 필요합니다. <!--503654-->
+> Configuration Manager 1802부터 Windows 10 디바이스에 Endpoint Protection 에이전트(SCEPInstall)를 설치할 필요가 없습니다. Windows 10 디바이스에 이미 설치되어 있는 경우 Configuration Manager는 에이전트를 제거하지 않습니다. 관리자는 1802 클라이언트 버전 이상이 실행 중인 Windows 10 디바이스에서 Endpoint Protection 에이전트를 제거할 수 있습니다. SCEPInstall.exe는 동일한 컴퓨터의 C:\Windows\ccmsetup 위치에 여전히 있을 수 있지만 새 클라이언트 설치 시 다운로드할 수 없습니다. Endpoint Protection(아래 **5단계**)에 대한 사용자 지정 클라이언트 설정이 필요합니다. <!--503654-->
 
 |단계|세부 정보|  
 |-----------|-------------|  

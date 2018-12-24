@@ -21,7 +21,7 @@ ms.locfileid: "32346348"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-(선택 사항) 장치가 등록되기 전에 추가 관리를 설정할 수 있습니다. 장치가 등록된 후에 이러한 관리 솔루션을 만들고 배포할 수도 있지만 대부분의 조직에서는 장치가 관리에 추가될 때 배포하려고 합니다.
+(선택 사항) 디바이스가 등록되기 전에 추가 관리를 설정할 수 있습니다. 디바이스가 등록된 후에 이러한 관리 솔루션을 만들고 배포할 수도 있지만 대부분의 조직에서는 디바이스가 관리에 추가될 때 배포하려고 합니다.
 
 **구성 항목**을 사용하면 장치 플랫폼에 따라 등록된 장치에서 PIN 요구 또는 암호화 요구 등의 설정을 관리할 수 있습니다.
 - [Windows 10 및 Windows 8.1 장치](create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)

@@ -35,7 +35,7 @@ Configuration Manager의 현재 분기는 LTSB에서는 사용할 수 없는 다
 -   새로운 기능과 개선 사항을 추가하는 콘솔 내 업데이트
 -   사이트 서버 및 클라이언트로 사용하기 위해 새로 릴리스된 운영 체제에 대한 지원
 -   Microsoft Intune 구독을 사용하여 다음 지원:
-    -   하이브리드 MDM(모바일 장치 관리) 구성에서 Intune을 사용할 수 없음
+    -   하이브리드 MDM(모바일 디바이스 관리) 구성에서 Intune을 사용할 수 없음
     -   온-프레미스 MDM을 사용할 수 없음
 -   최신 Windows 10 CB(현재 분기) 및 CBB(비즈니스용 현재 분기) 버전에 대한 지원을 포함한 Windows 10 서비스 대시보드 및 서비스 계획  
 -   Windows Server 및 Windows 10 LTSB의 향후 릴리스에 대한 지원

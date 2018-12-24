@@ -23,7 +23,7 @@ ms.locfileid: "52258913"
 
 ## <a name="prerequisites"></a>필수 구성 요소
 
-Windows Defender Application Guard 정책을 만들고 배포하려면 Windows 10 Fall Creators Update(1709)를 사용해야 합니다. 또한 정책을 배포하는 Windows 10 장치는 네트워크 격리 정책을 사용하여 구성해야 합니다. 자세한 내용은 [Windows Defender Application Guard 개요](https://docs.microsoft.com/windows/threat-protection/windows-defender-application-guard/wd-app-guard-overview)를 참조하세요. 
+Windows Defender Application Guard 정책을 만들고 배포하려면 Windows 10 Fall Creators Update(1709)를 사용해야 합니다. 또한 정책을 배포하는 Windows 10 디바이스는 네트워크 격리 정책을 사용하여 구성해야 합니다. 자세한 내용은 [Windows Defender Application Guard 개요](https://docs.microsoft.com/windows/threat-protection/windows-defender-application-guard/wd-app-guard-overview)를 참조하세요. 
 
 
 ## <a name="create-a-policy-and-to-browse-the-available-settings"></a>정책 만들기 및 사용 가능한 설정 검색
@@ -44,10 +44,10 @@ Windows Defender Application Guard 정책을 만들고 배포하려면 Windows 1
     > 
     > 
 
-6. 작업이 끝나면 마법사를 완료하고 하나 이상의 Windows 10 1709 장치에 정책을 배포합니다.
+6. 작업이 끝나면 마법사를 완료하고 하나 이상의 Windows 10 1709 디바이스에 정책을 배포합니다.
 
 ### <a name="bkmk_HIS"></a> 호스트 상호 작용 설정
-호스트 장치와 Application Guard 컨테이너 간의 상호 작용을 구성합니다. Configuration Manager 1802 이전 버전에서는 응용 프로그램 동작과 호스트 상호 작용이 **설정** 탭에 있었습니다.
+호스트 디바이스와 Application Guard 컨테이너 간의 상호 작용을 구성합니다. Configuration Manager 1802 이전 버전에서는 응용 프로그램 동작과 호스트 상호 작용이 **설정** 탭에 있었습니다.
 
 - **클립보드** - Configuration Manager 1802 이전 버전에서는 설정에 있었습니다.
     - 허용되는 콘텐츠 형식

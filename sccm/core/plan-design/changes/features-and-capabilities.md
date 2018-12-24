@@ -21,13 +21,13 @@ ms.locfileid: "32343777"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-다음은 System Center Configuration Manager의 기본 관리 기능입니다. 각 기능에는 고유한 필수 구성 요소가 있고 사용하려는 기능에 따라 Configuration Manager 계층 구조의 디자인과 구현이 달라질 수 있습니다. 예를 들어 계층의 장치에 소프트웨어를 배포하려는 경우 배포 지점 사이트 시스템 역할을 설치해야 합니다.  
+다음은 System Center Configuration Manager의 기본 관리 기능입니다. 각 기능에는 고유한 필수 구성 요소가 있고 사용하려는 기능에 따라 Configuration Manager 계층 구조의 디자인과 구현이 달라질 수 있습니다. 예를 들어 계층의 디바이스에 소프트웨어를 배포하려는 경우 배포 지점 사이트 시스템 역할을 설치해야 합니다.  
 
  사용자 환경에서 이러한 관리 기능을 지원할 수 있도록 Configuration Manager를 계획하고 설치하는 방법에 대한 자세한 내용은 [System Center Configuration Manager 사용 준비](../../../core/plan-design/get-ready.md)를 참조하세요.  
 
  **응용 프로그램 관리**  
 
- 응용 프로그램을 만들고, 관리하고, 배포하고, 모니터링할 수 있는 도구 및 리소스 집합을 관리하는 다양한 장치 범위에 제공합니다. 또한 Configuration Manager에서는 사용자의 앱에서 회사 데이터를 보호하는 데 도움이 되는 도구를 제공합니다. [응용 프로그램 관리 소개](/sccm/apps/understand/introduction-to-application-management)를 참조하세요.
+ 응용 프로그램을 만들고, 관리하고, 배포하고, 모니터링할 수 있는 도구 및 리소스 집합을 관리하는 다양한 디바이스 범위에 제공합니다. 또한 Configuration Manager에서는 사용자의 앱에서 회사 데이터를 보호하는 데 도움이 되는 도구를 제공합니다. [응용 프로그램 관리 소개](/sccm/apps/understand/introduction-to-application-management)를 참조하세요.
 
  **회사 리소스 액세스**  
 
@@ -35,7 +35,7 @@ ms.locfileid: "32343777"
 
  **준수 설정**  
 
- 기업에서 클라이언트 장치의 구성 호환성을 평가하고, 추적하고, 재구성할 수 있는 도구 및 리소스 집합을 제공합니다. 또한 준수 설정을 사용하여 관리하는 장치에서 다양한 기능 및 보안 설정을 구성할 수 있습니다. [System Center Configuration Manager를 사용하여 장치 준수 확인](../../../compliance/understand/ensure-device-compliance.md)을 참조하세요.  
+ 기업에서 클라이언트 디바이스의 구성 호환성을 평가하고, 추적하고, 재구성할 수 있는 도구 및 리소스 집합을 제공합니다. 또한 준수 설정을 사용하여 관리하는 디바이스에서 다양한 기능 및 보안 설정을 구성할 수 있습니다. [System Center Configuration Manager를 사용하여 장치 준수 확인](../../../compliance/understand/ensure-device-compliance.md)을 참조하세요.  
 
  **Endpoint Protection**  
 
@@ -53,13 +53,13 @@ ms.locfileid: "32343777"
 
 **Microsoft Intune에서 모바일 장치 관리**  
 
- 인터넷에서 Microsoft Intune 서비스를 사용하여 Configuration Manager를 통해 iOS, Android(Samsung KNOX Standard 포함), Windows Phone 및 Windows 장치를 관리할 수 있습니다.
+ 인터넷에서 Microsoft Intune 서비스를 사용하여 Configuration Manager를 통해 iOS, Android(Samsung KNOX Standard 포함), Windows Phone 및 Windows 디바이스를 관리할 수 있습니다.
 
  Intune 서비스를 사용하더라도 Configuration Manager 콘솔을 통해 사용 가능한 서비스 연결 지점 사이트 시스템 역할을 사용하여 관리 작업이 완료됩니다. [System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 MDM(모바일 장치 관리)](../../../mdm/understand/hybrid-mobile-device-management.md)을 참조하세요.  
 
  **온-프레미스 모바일 장치 관리**  
 
- 장치 플랫폼에 기본 제공되는 온-프레미스 Configuration Manager 인프라 및 관리 기능을 사용하여(별도로 설치된 Configuration Manager 클라이언트를 사용하지 않고) PC 및 모바일 장치를 등록하고 관리합니다. 현재 Windows 10 Enterprise 및 Windows 10 Mobile 장치 관리를 지원합니다. [System Center Configuration Manager의 온-프레미스 인프라로 모바일 장치 관리](../../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)를 참조하세요.  
+ 디바이스 플랫폼에 기본 제공되는 온-프레미스 Configuration Manager 인프라 및 관리 기능을 사용하여(별도로 설치된 Configuration Manager 클라이언트를 사용하지 않고) PC 및 모바일 디바이스를 등록하고 관리합니다. 현재 Windows 10 Enterprise 및 Windows 10 Mobile 디바이스 관리를 지원합니다. [System Center Configuration Manager의 온-프레미스 인프라로 모바일 장치 관리](../../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)를 참조하세요.  
 
  **운영 체제 배포**  
 
@@ -71,11 +71,11 @@ ms.locfileid: "32343777"
 
  **쿼리**  
 
- 계층의 리소스에 대한 정보 및 인벤토리 데이터와 상태 메시지에 대한 정보를 검색하는 도구를 제공합니다. 그러면 이 정보를 사용하여 소프트웨어 배포 및 구성 설정에 대한 장치 또는 사용자 컬렉션을 보고하거나 정의할 수 있습니다. [System Center Configuration Manager의 쿼리 소개](../../../core/servers/manage/introduction-to-queries.md)를 참조하세요.  
+ 계층의 리소스에 대한 정보 및 인벤토리 데이터와 상태 메시지에 대한 정보를 검색하는 도구를 제공합니다. 그러면 이 정보를 사용하여 소프트웨어 배포 및 구성 설정에 대한 디바이스 또는 사용자 컬렉션을 보고하거나 정의할 수 있습니다. [System Center Configuration Manager의 쿼리 소개](../../../core/servers/manage/introduction-to-queries.md)를 참조하세요.  
 
  **원격 연결 프로필**  
 
- 조직에서 원격 연결 설정을 만들어 장치에 배포하고 모니터링할 수 있는 도구 및 리소스 집합을 제공합니다. 이러한 설정을 배포하면 사용자가 회사 네트워크에서 자신의 컴퓨터에 연결하기 위해 수행해야 하는 작업이 최소화됩니다. [System Center Configuration Manager에서 원격 연결 프로필 사용](/sccm/compliance/deploy-use/create-remote-connection-profiles)을 참조하세요.  
+ 조직에서 원격 연결 설정을 만들어 디바이스에 배포하고 모니터링할 수 있는 도구 및 리소스 집합을 제공합니다. 이러한 설정을 배포하면 사용자가 회사 네트워크에서 자신의 컴퓨터에 연결하기 위해 수행해야 하는 작업이 최소화됩니다. [System Center Configuration Manager에서 원격 연결 프로필 사용](/sccm/compliance/deploy-use/create-remote-connection-profiles)을 참조하세요.  
 
  **사용자 데이터 및 프로필 구성 항목**  
 

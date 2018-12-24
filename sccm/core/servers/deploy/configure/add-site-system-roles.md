@@ -21,7 +21,7 @@ ms.locfileid: "32334235"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-각 System Center Configuration Manager 사이트에서는 여러 사이트 시스템 역할을 지원합니다. 각 역할은 사이트에 서비스를 제공하고 장치 및 사용자를 관리하도록 사이트의 기능과 용량을 확장합니다. 사이트 시스템 서버의 각 사이트 시스템 역할은 같은 사이트의 역할이어야 합니다.   
+각 System Center Configuration Manager 사이트에서는 여러 사이트 시스템 역할을 지원합니다. 각 역할은 사이트에 서비스를 제공하고 디바이스 및 사용자를 관리하도록 사이트의 기능과 용량을 확장합니다. 사이트 시스템 서버의 각 사이트 시스템 역할은 같은 사이트의 역할이어야 합니다.   
 
 Configuration Manager는 한 사이트 시스템 서버에서 여러 사이트에 대한 사이트 시스템 역할을 지원하지 않습니다.  
 
@@ -40,7 +40,7 @@ Configuration Manager는 한 사이트 시스템 서버에서 여러 사이트�
 
 -   [System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 위한 사이트 시스템 역할 설치](../../../../mdm/get-started/install-site-system-roles-for-on-premises-mdm.md)  
 
-     이 항목의 내용은 Configuration Manager 온-프레미스 MDM을 사용하여 최신 장치 관리를 지원하도록 사이트 시스템 역할을 설정하는 데 도움이 됩니다.  
+     이 항목의 내용은 Configuration Manager 온-프레미스 MDM을 사용하여 최신 디바이스 관리를 지원하도록 사이트 시스템 역할을 설정하는 데 도움이 됩니다.  
 
 -   [System Center Configuration Manager에 대한 사이트 시스템 역할 구성 옵션](../../../../core/servers/deploy/configure/configuration-options-for-site-system-roles.md)  
 

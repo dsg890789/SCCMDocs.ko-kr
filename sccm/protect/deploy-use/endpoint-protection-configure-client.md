@@ -21,7 +21,7 @@ ms.locfileid: "39384351"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-이 절차에서는 계층 구조의 장치 컬렉션에 배포할 수 있는 Endpoint Protection에 대한 사용자 지정 클라이언트 설정을 구성합니다.
+이 절차에서는 계층 구조의 디바이스 컬렉션에 배포할 수 있는 Endpoint Protection에 대한 사용자 지정 클라이언트 설정을 구성합니다.
 
 > [!IMPORTANT]  
 >  확실히 계층 구조의 모든 컴퓨터에 적용하려면 기본 Endpoint Protection 클라이언트 설정만 구성합니다. 
@@ -77,7 +77,7 @@ Configuration Manager OS 배포의 디스크 이미지 원본으로 사용하려
 -   최신 정의로 Endpoint Protection 클라이언트를 설치하려는 경우에는 [Windows Defender Security Intelligence](https://www.microsoft.com/wdsi)에서 다운로드합니다.  
 
 > [!NOTE]  
-> Configuration Manager 1802부터 Windows 10 장치에 Endpoint Protection 에이전트(SCEPInstall)를 설치할 필요가 없습니다. Windows 10 장치에 이미 설치되어 있는 경우 Configuration Manager가 제거하지 않습니다. 관리자는 1802 클라이언트 버전 이상이 실행 중인 Windows 10 장치에서 Endpoint Protection 에이전트를 제거할 수 있습니다. SCEPInstall.exe가 일부 머신의 C:\Windows\ccmsetup에 여전히 있을 수 있지만 새 클라이언트 설치 시 다운로드하지 않아야 합니다. <!--503654-->
+> Configuration Manager 1802부터 Windows 10 디바이스에 Endpoint Protection 에이전트(SCEPInstall)를 설치할 필요가 없습니다. Windows 10 디바이스에 이미 설치되어 있는 경우 Configuration Manager가 제거하지 않습니다. 관리자는 1802 클라이언트 버전 이상이 실행 중인 Windows 10 디바이스에서 Endpoint Protection 에이전트를 제거할 수 있습니다. SCEPInstall.exe가 일부 머신의 C:\Windows\ccmsetup에 여전히 있을 수 있지만 새 클라이언트 설치 시 다운로드하지 않아야 합니다. <!--503654-->
 
 
 ### <a name="how-to-install-the-endpoint-protection-client-on-the-reference-computer"></a>참조 컴퓨터에 Endpoint Protection 클라이언트를 설치하는 방법
@@ -163,7 +163,7 @@ Configuration Manager OS 배포의 디스크 이미지 원본으로 사용하려
 
 이제 이미징을 위해 참조 컴퓨터를 준비할 준비가 되었습니다.
 
-Endpoint Protection 클라이언트가 포함된 OS 이미지를 배포하는 경우에는 장치의 할당된 Configuration Manager 사이트에 정보가 자동으로 보고됩니다. 클라이언트는 대상으로 하는 모든 맬웨어 방지 정책을 다운로드하여 적용합니다.  
+Endpoint Protection 클라이언트가 포함된 OS 이미지를 배포하는 경우에는 디바이스의 할당된 Configuration Manager 사이트에 정보가 자동으로 보고됩니다. 클라이언트는 대상으로 하는 모든 맬웨어 방지 정책을 다운로드하여 적용합니다.  
 
 
 

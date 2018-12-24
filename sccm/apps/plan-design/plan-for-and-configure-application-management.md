@@ -39,24 +39,24 @@ ms.locfileid: "43893604"
 이 요구 사항에 대한 자세한 내용은 [사이트 및 사이트 시스템 필수 조건](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)을 참조하세요.  
 
 
-### <a name="certificates-on-code-signed-applications-for-mobile-devices"></a>모바일 장치에 대한 코드 서명 응용 프로그램의 인증서
+### <a name="certificates-on-code-signed-applications-for-mobile-devices"></a>모바일 디바이스에 대한 코드 서명 응용 프로그램의 인증서
 
-응용 프로그램을 모바일 장치에 배포하기 위해 코드 서명할 경우 버전 3 템플릿(**Windows Server 2008, Enterprise Edition**)을 사용하여 생성된 인증서는 사용하지 마세요. 이 인증서 템플릿을 사용하면 모바일 장치용 Configuration Manager 응용 프로그램과 호환되지 않는 인증서가 만들어집니다.
+응용 프로그램을 모바일 디바이스에 배포하기 위해 코드 서명할 경우 버전 3 템플릿(**Windows Server 2008, Enterprise Edition**)을 사용하여 생성된 인증서는 사용하지 마세요. 이 인증서 템플릿을 사용하면 모바일 디바이스용 Configuration Manager 응용 프로그램과 호환되지 않는 인증서가 만들어집니다.
 
-모바일 장치 응용 프로그램에 대해 Active Directory 인증서 서비스를 사용하여 코드 서명할 경우 버전 3 인증서 템플릿은 사용하지 마세요.
+모바일 디바이스 응용 프로그램에 대해 Active Directory 인증서 서비스를 사용하여 코드 서명할 경우 버전 3 인증서 템플릿은 사용하지 마세요.
 
 
-### <a name="audit-sign-in-events-for-user-device-affinity"></a>사용자 장치 선호도에 대한 감사 로그인 이벤트  
+### <a name="audit-sign-in-events-for-user-device-affinity"></a>사용자 디바이스 선호도에 대한 감사 로그인 이벤트  
 
-자동으로 사용자 장치 선호도를 만들려면 클라이언트에서 로그인 이벤트를 감사하도록 구성해야 합니다.
+자동으로 사용자 디바이스 선호도를 만들려면 클라이언트에서 로그인 이벤트를 감사하도록 구성해야 합니다.
 
-구성 관리자 클라이언트는 Windows 보안 이벤트 로그에서 **성공** 유형의 로그인 이벤트를 읽어 자동 사용자 장치 선호도를 확인합니다. 다음 두 감사 정책에서 이러한 이벤트를 사용하도록 설정합니다.
+구성 관리자 클라이언트는 Windows 보안 이벤트 로그에서 **성공** 유형의 로그인 이벤트를 읽어 자동 사용자 디바이스 선호도를 확인합니다. 다음 두 감사 정책에서 이러한 이벤트를 사용하도록 설정합니다.
 - **계정 로그온 이벤트 감사**
 - **로그온 이벤트 감사**
 
-사용자와 장치 간의 관계를 자동으로 만들려면 클라이언트 컴퓨터에 이러한 두 설정이 사용하도록 설정되어 있어야 합니다. Windows 그룹 정책을 사용하여 이러한 설정을 구성할 수 있습니다.
+사용자와 디바이스 간의 관계를 자동으로 만들려면 클라이언트 컴퓨터에 이러한 두 설정이 사용하도록 설정되어 있어야 합니다. Windows 그룹 정책을 사용하여 이러한 설정을 구성할 수 있습니다.
 
-사용자 장치 선호도에 대한 자세한 내용은 [사용자 장치 선호도를 사용하여 사용자와 장치 연결](/sccm/apps/deploy-use/link-users-and-devices-with-user-device-affinity)을 참조하세요.  
+사용자 디바이스 선호도에 대한 자세한 내용은 [사용자 디바이스 선호도를 사용하여 사용자와 디바이스 연결](/sccm/apps/deploy-use/link-users-and-devices-with-user-device-affinity)을 참조하세요.  
 
 
 
@@ -87,12 +87,12 @@ ms.locfileid: "43893604"
 
 ### <a name="client-settings"></a>클라이언트 설정
 
-많은 클라이언트 설정은 클라이언트가 장치에 응용 프로그램 및 사용자 환경을 설치하는 방법을 제어합니다. 이러한 클라이언트 설정은 다음 그룹과 같습니다.
+많은 클라이언트 설정은 클라이언트가 디바이스에 응용 프로그램 및 사용자 환경을 설치하는 방법을 제어합니다. 이러한 클라이언트 설정은 다음 그룹과 같습니다.
 - 컴퓨터 에이전트  
 - 컴퓨터 다시 시작  
 - 소프트웨어 센터  
 - 소프트웨어 배포  
-- 사용자 및 장치 선호도  
+- 사용자 및 디바이스 선호도  
 
 자세한 내용은 다음 아티클을 참조하세요.
 - [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings)  
@@ -112,7 +112,7 @@ ms.locfileid: "43893604"
 
 ### <a name="app-v-46-sp1-or-later-client-to-run-virtual-applications"></a>가상 응용 프로그램 실행을 위한 App-V 4.6 SP1 이상의 클라이언트
 
-Configuration Manager에서 가상 응용 프로그램을 만들려면 장치에 App-V 4.6 SP1 이상이 설치되어 있어야 합니다.
+Configuration Manager에서 가상 응용 프로그램을 만들려면 디바이스에 App-V 4.6 SP1 이상이 설치되어 있어야 합니다.
 
 또한 가상 응용 프로그램을 배포하려면 [Microsoft 지원 문서 2645225](https://support.microsoft.com/help/2645225)에 설명된 핫픽스로 App-V 클라이언트를 업데이트해야 합니다.  
 
@@ -148,7 +148,7 @@ Configuration Manager에서 가상 응용 프로그램을 만들려면 장치에
 
 ## <a name="bkmk_userex"></a> 소프트웨어 센터 구성  
 
-사용자는 소프트웨어 센터에서 설정을 변경하고, 응용 프로그램을 탐색하여 설치할 수 있습니다. Windows 장치에서 구성 관리자 클라이언트를 설치할 때 소프트웨어 센터가 자동으로 설치됩니다. 소프트웨어 센터가 새로운 세련된 디자인으로 바뀌었습니다. 이전에는 Silverlight 종속 응용 프로그램 카탈로그에서만 표시되었던 앱(사용자가 사용할 수 있는 앱)이 이제 소프트웨어 센터의 **응용 프로그램** 탭 아래에 표시됩니다. 소프트웨어 센터의 다른 기능에 자세한 내용은 [소프트웨어 센터 사용자 가이드](/sccm/core/understand/software-center)를 참조하세요.  
+사용자는 소프트웨어 센터에서 설정을 변경하고, 응용 프로그램을 탐색하여 설치할 수 있습니다. Windows 디바이스에서 구성 관리자 클라이언트를 설치할 때 소프트웨어 센터가 자동으로 설치됩니다. 소프트웨어 센터가 새로운 세련된 디자인으로 바뀌었습니다. 이전에는 Silverlight 종속 응용 프로그램 카탈로그에서만 표시되었던 앱(사용자가 사용할 수 있는 앱)이 이제 소프트웨어 센터의 **응용 프로그램** 탭 아래에 표시됩니다. 소프트웨어 센터의 다른 기능에 자세한 내용은 [소프트웨어 센터 사용자 가이드](/sccm/core/understand/software-center)를 참조하세요.  
 
 소프트웨어 센터에 대한 다음 개선 사항을 검토하세요. 
 
@@ -156,7 +156,7 @@ Configuration Manager에서 가상 응용 프로그램을 만들려면 장치에
 
 - **컴퓨터 에이전트** 그룹에서 클라이언트 설정인 **새 소프트웨어 센터 사용**이 기본적으로 활성화됩니다. 이전 버전의 소프트웨어 센터는 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
 
-- Azure Active Directory(Azure AD) 조인 장치에서 사용자가 사용할 수 있는 응용 프로그램을 찾아 설치할 수 있습니다. 자세한 내용은 [Azure AD 가입 장치에 사용자가 사용할 수 있는 응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications#deploy-user-available-applications-on-azure-ad-joined-devices)를 참조하세요.  
+- Azure Active Directory(Azure AD) 조인 디바이스에서 사용자가 사용할 수 있는 응용 프로그램을 찾아 설치할 수 있습니다. 자세한 내용은 [Azure AD 가입 디바이스에 사용자가 사용할 수 있는 응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications#deploy-user-available-applications-on-azure-ad-joined-devices)를 참조하세요.  
 
 #### <a name="starting-in-version-1806"></a>버전 1806부터 가능
 
@@ -171,12 +171,12 @@ Configuration Manager에서 가상 응용 프로그램을 만들려면 장치에
 
 다음 표를 활용하여 Configuration Manager의 특정 버전에 따른 소프트웨어 센터 요구 사항을 파악합니다.
 
-| 장치 유형 | 사이트 버전 | 인프라 | 
+| 디바이스 유형 | 사이트 버전 | 인프라 | 
 |-----------------|--------------|----------------|
-| Azure AD 조인 장치</br>(또는 “클라우드 도메인 조인”) | 1802 또는 1806 | 모든 앱 배치에 대한 관리 지점 | 
+| Azure AD 조인 디바이스</br>(또는 “클라우드 도메인 조인”) | 1802 또는 1806 | 모든 앱 배치에 대한 관리 지점 | 
 | 인터넷의 [하이브리드 Azure AD 조인](https://docs.microsoft.com/azure/active-directory/device-management-hybrid-azuread-joined-devices-setup) 장치 | 1802 또는 1806 | 모든 앱 배치에 대한 클라우드 관리 게이트웨이 및 관리 지점 |
-| 온-프레미스 Active Directory 도메인 조인 장치 | 1802 | 소프트웨어 센터를 통해 사용자가 이용할 수 있는 앱에 필요한 응용 프로그램 카탈로그 |
-| 온-프레미스 Active Directory 도메인 조인 장치 | 1806 | 모든 앱 배치에 대한 관리 지점 |
+| 온-프레미스 Active Directory 도메인 조인 디바이스 | 1802 | 소프트웨어 센터를 통해 사용자가 이용할 수 있는 앱에 필요한 응용 프로그램 카탈로그 |
+| 온-프레미스 Active Directory 도메인 조인 디바이스 | 1806 | 모든 앱 배치에 대한 관리 지점 |
 
 
 > [!Important]  
@@ -285,10 +285,10 @@ HTTPS 연결을 사용하는 경우 응용 프로그램 카탈로그 웹 사이�
     - 컴퓨터 다시 시작  
     - 소프트웨어 센터  
     - 소프트웨어 배포  
-    - 사용자 및 장치 선호도  
+    - 사용자 및 디바이스 선호도  
 - [클라이언트 설정을 구성하는 방법](/sccm/core/clients/deploy/configure-client-settings)  
 
-구성 관리자 클라이언트는 다음에 클라이언트 정책을 다운로드할 때 이러한 설정으로 장치를 구성합니다. 단일 클라이언트에 대한 정책 검색을 트리거하려면 [클라이언트를 관리하는 방법](/sccm/core/clients/manage/manage-clients)을 참조하세요.
+구성 관리자 클라이언트는 다음에 클라이언트 정책을 다운로드할 때 이러한 설정으로 디바이스를 구성합니다. 단일 클라이언트에 대한 정책 검색을 트리거하려면 [클라이언트를 관리하는 방법](/sccm/core/clients/manage/manage-clients)을 참조하세요.
 
 
 ### <a name="step-5-verify-that-the-application-catalog-is-operational"></a>5단계: 응용 프로그램 카탈로그가 작동하는지 확인
@@ -301,7 +301,7 @@ HTTPS 연결을 사용하는 경우 응용 프로그램 카탈로그 웹 사이�
 > [!TIP]  
 >  설치 후에 응용 프로그램 카탈로그가 잘못된 방식으로 작동하는 원인 중 가장 일반적인 원인은 필수 구성 요소가 누락되었기 때문입니다. 응용 프로그램 카탈로그 역할의 사이트 시스템 역할 필수 구성 요소를 확인합니다. 자세한 내용은 [사이트 및 사이트 시스템 필수 조건](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)을 참조하세요.  
 
-브라우저에서 응용 프로그램 카탈로그 웹 사이트의 주소를 입력합니다. 해당 웹 페이지에 **응용 프로그램 카탈로그**, **내 응용 프로그램 요청**, **내 장치** 등 세 가지 탭이 표시되는지 확인합니다.  
+브라우저에서 응용 프로그램 카탈로그 웹 사이트의 주소를 입력합니다. 해당 웹 페이지에 **응용 프로그램 카탈로그**, **내 응용 프로그램 요청**, **내 디바이스** 등 세 가지 탭이 표시되는지 확인합니다.  
 
 응용 프로그램 카탈로그에 대해 아래 목록에 나와 있는 적합한 주소를 사용합니다. 여기서 &lt;서버&gt;는 컴퓨터 이름, 인트라넷 FQDN 또는 인터넷 FQDN입니다.  
 
@@ -314,5 +314,5 @@ HTTPS 연결을 사용하는 경우 응용 프로그램 카탈로그 웹 사이�
 - HTTP 클라이언트 연결 및 사용자 지정 사이트 시스템 역할 설정: **http://&lt;서버&gt;:&lt;포트&gt;/&lt;웹 응용 프로그램 이름&gt;**  
 
 > [!NOTE]  
->  도메인 관리자 계정으로 장치에 로그인하는 경우, 구성 관리자 클라이언트는 알림 메시지를 표시하지 않습니다. 예를 들어, 새 소프트웨어를 사용할 수 있음을 나타내는 메시지가 있습니다.  
+>  도메인 관리자 계정으로 디바이스에 로그인하는 경우, 구성 관리자 클라이언트는 알림 메시지를 표시하지 않습니다. 예를 들어, 새 소프트웨어를 사용할 수 있음을 나타내는 메시지가 있습니다.  
 

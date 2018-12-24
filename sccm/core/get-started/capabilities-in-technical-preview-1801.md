@@ -164,7 +164,7 @@ ms.locfileid: "32335952"
 ### <a name="try-it-out"></a>기능 직접 사용해 보기  
  작업을 완료합니다. 그런 다음 어떻게 작동하는지 알 수 있도록 리본의 **홈** 탭에서 **피드백**을 보냅니다.
 
-1. **관리** 작업 영역에서 **클라이언트 설정**을 클릭합니다. 클라이언트 장치 설정을 선택하여 편집합니다. 이를 마우스 오른쪽 단추로 클릭한 다음 **속성**, **소프트웨어 센터**를 차례로 선택합니다.
+1. **관리** 작업 영역에서 **클라이언트 설정**을 클릭합니다. 클라이언트 디바이스 설정을 선택하여 편집합니다. 이를 마우스 오른쪽 단추로 클릭한 다음 **속성**, **소프트웨어 센터**를 차례로 선택합니다.
 2.  **사용자 지정** 단추를 클릭합니다. 미리 보기를 포함하여 다른 사용자 지정을 설정해봅니다.
 3. **소프트웨어 센터에서 승인되지 않은 프로그램 숨기기** 설정을 사용합니다. 소프트웨어 센터의 변경 내용을 확인합니다. 
 
@@ -172,7 +172,7 @@ ms.locfileid: "32335952"
 
 ## <a name="new-settings-for-windows-defender-application-guard"></a>Windows Defender Application Guard의 새로운 설정
 <!-- 1356256 -->
-Windows 10 버전 1709 이상이 설치된 장치에는 [Windows Defender Application Guard](/sccm/protect/deploy-use/create-deploy-application-guard-policy)에 대한 두 가지 새로운 호스트 상호 작용 설정이 있습니다. 
+Windows 10 버전 1709 이상이 설치된 디바이스에는 [Windows Defender Application Guard](/sccm/protect/deploy-use/create-deploy-application-guard-policy)에 대한 두 가지 새로운 호스트 상호 작용 설정이 있습니다. 
 1. 호스트의 가상 그래픽 프로세서에 대한 액세스 권한을 웹 사이트에 부여할 수 있습니다. 
 2. 컨테이너 내부에 다운로드한 파일을 호스트에 유지할 수 있습니다. </br>
 

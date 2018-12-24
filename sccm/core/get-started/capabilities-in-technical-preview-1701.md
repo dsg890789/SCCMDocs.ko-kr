@@ -89,14 +89,14 @@ ms.locfileid: "32338536"
 
 클라우드 기반 배포 지점을 사용하는 방법에 대한 자세한 내용은 Configuration Manager 현재 분기에 대한 콘텐츠에서 [클라우드 기반 배포 지점 사용](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point)을 참조하세요.
 
-## <a name="validate-device-health-attestation-data-via-management-points"></a>관리 지점을 통해 장치 상태 증명 데이터의 유효성 검사
+## <a name="validate-device-health-attestation-data-via-management-points"></a>관리 지점을 통해 디바이스 상태 증명 데이터의 유효성 검사
 
 이 미리 보기 버전부터 클라우드 또는 온-프레미스 상태 증명 서비스에 대한 상태 증명 보고 데이터의 유효성을 검사하도록 관리 지점을 구성할 수 있습니다. **관리 지점 구성 요소 속성** 대화 상자의 새 **고급 옵션** 탭에서 **온-프레미스 장치 상태 증명 서비스 URL**을 **추가**, **편집** 또는 **제거**할 수 있습니다. **온-프레미스 상태 증명 서비스를 사용**하도록 클라이언트 에이전트에 대한 **사용자 지정 장치 설정**을 지정할 수도 있습니다.  이 설정에 대해 **예**를 설정하면 클라우드 기반 서비스 대신 온-프레미스 관리 지점에 보고할 수 있습니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 
 - **관리 지점에서 온-프레미스 장치 상태 증명 사용**<br>  Configuration Manager 콘솔에서 관리 지점으로 이동하고 **관리 지점 구성 요소 속성**을 연 다음 **고급 옵션** 탭을 클릭합니다. **추가**를 클릭하고 **온-프레미스 장치 상태 증명 서비스 URL**에 대해 온-프레미스 URL(예: https://10.10.10.10)) 을 지정합니다.
-- **클라이언트 에이전트에 대해 온-프레미스 관리 지점 상태 증명 보고 사용**<br>Configuration Manager 콘솔에서 **관리** > **클라이언트 설정**을 선택하고 두 번 클릭하거나 새 **사용자 지정 장치 설정**을 만듭니다. **컴퓨터 에이전트**를 선택하고 **온-프레미스 상태 증명 서비스 사용**을 **예**로 설정합니다. **장치 상태 증명 서비스와 통신 사용**이 **예**로 설정되고 **온-프레미스 상태 증명 사용**이 **아니요**로 설정된 경우 관리 지점에서 클라우드 기반 장치 상태 증명 서비스를 사용합니다.
+- **클라이언트 에이전트에 대해 온-프레미스 관리 지점 상태 증명 보고 사용**<br>Configuration Manager 콘솔에서 **관리** > **클라이언트 설정**을 선택하고 두 번 클릭하거나 새 **사용자 지정 디바이스 설정**을 만듭니다. **컴퓨터 에이전트**를 선택하고 **온-프레미스 상태 증명 서비스 사용**을 **예**로 설정합니다. **장치 상태 증명 서비스와 통신 사용**이 **예**로 설정되고 **온-프레미스 상태 증명 사용**이 **아니요**로 설정된 경우 관리 지점에서 클라우드 기반 장치 상태 증명 서비스를 사용합니다.
 
 ## <a name="use-the-oms-connector-for-microsoft-azure-government-cloud"></a>Microsoft Azure Government 클라우드용 OMS 커넥터 사용
 이 Technical Preview에서는 Microsoft OMS(Operations Management Suite) 커넥터를 사용하여 Microsoft Azure Government 클라우드에 있는 OMS 작업 영역에 연결할 수 있습니다.  
@@ -115,7 +115,7 @@ ms.locfileid: "32338536"
       &lt;/setting>
 
    - **편집된 값:**     
-      &lt;setting name="FairFaxArmResourceId" serializeAs="String"> &lt;value>https://management.usgovcloudapi.net/&lt;/value>  
+      &lt;setting name="FairFaxArmResourceId" serializeAs="String"> &lt;value> https://management.usgovcloudapi.net/&lt;/value>  
       &lt;/setting>
 
   설정 이름 *FairFaxAuthorityResource*의 값을 "https://login.microsoftonline.com/"로 변경합니다.
@@ -124,7 +124,7 @@ ms.locfileid: "32338536"
     &lt;value>&lt;/value>
 
     - **편집된 값:** &lt;setting name="FairFaxAuthorityResource" serializeAs="String">   
-    &lt;value>https://login.microsoftonline.com/&lt;/value>
+    &lt;value> https://login.microsoftonline.com/&lt;/value>
 
 2.  두 가지 사항을 변경하고 파일을 저장한 후 동일한 컴퓨터에서 Configuration Manager 콘솔을 다시 시작하고 해당 콘솔을 사용하여 OMS 커넥터를 설치합니다. 커넥터를 설치하려면 [Configuration Manager의 데이터를 Microsoft Operations Management Suite에 동기화](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite)에 제공된 정보를 사용하고 Microsoft Azure Government 클라우드에 있는 **Operations Management Suite 작업 영역**을 선택합니다.
 
@@ -132,7 +132,7 @@ ms.locfileid: "32338536"
 
 ## <a name="android-and-ios-versions-are-no-longer-targetable-in-creation-wizards-for-hybrid-mdm"></a>Android 및 iOS 버전은 하이브리드 MDM 만들기 마법사에서 대상 지정이 가능하지 않음
 
-하이브리드 MDM(모바일 장치 관리)에 대한 이 Technical Preview부터 Intune 관리 장치에 대한 새 정책 및 프로필을 만들 때 특정 버전의 Android 및 iOS를 대상으로 지정할 필요가 없습니다. 대신 다음 장치 유형 중 하나를 선택합니다.
+하이브리드 MDM(모바일 디바이스 관리)에 대한 이 Technical Preview부터 Intune 관리 디바이스에 대한 새 정책 및 프로필을 만들 때 특정 버전의 Android 및 iOS를 대상으로 지정할 필요가 없습니다. 대신 다음 디바이스 유형 중 하나를 선택합니다.
 
 - Android
 - Samsung KNOX Standard 4.0 이상
@@ -148,6 +148,6 @@ ms.locfileid: "32338536"
 - VPN 프로필
 - Wi-Fi 프로필
 
-이러한 변경으로 인해 하이브리드 배포에서 새 Configuration Manager 릴리스나 확장 없이 새 Android 및 iOS 버전을 더 빠르게 지원할 수 있습니다. Intune 독립 실행형에서 새 버전이 지원되게 되면 사용자는 모바일 장치를 해당 버전으로 업그레이드할 수 있습니다.
+이러한 변경으로 인해 하이브리드 배포에서 새 Configuration Manager 릴리스나 확장 없이 새 Android 및 iOS 버전을 더 빠르게 지원할 수 있습니다. Intune 독립 실행형에서 새 버전이 지원되게 되면 사용자는 모바일 디바이스를 해당 버전으로 업그레이드할 수 있습니다.
 
 이전 버전의 Configuration Manager에서 업그레이드할 때 문제를 방지하려면 이러한 항목의 속성 페이지에서 모바일 운영 체제 버전을 계속 사용할 수 있습니다. 특정 버전을 대상으로 지정해야 하는 경우 새 항목을 만든 다음 새로 만든 항목의 속성 페이지에서 대상 버전을 지정할 수 있습니다.

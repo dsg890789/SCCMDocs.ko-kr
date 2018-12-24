@@ -157,18 +157,18 @@ Then remove the bottom of this list and/or move individual items not in CB to th
  | 인터넷 기반 클라이언트 설정의 개선 사항 <!--1359181--> | [기술 미리 보기 1810.2](capabilities-in-technical-preview-1810-2.md#bkmk_cmg) | 버전 1810 | 
  | 애플리케이션을 MSIX로 변환 <!--1359029--> | [기술 미리 보기 1810.2](capabilities-in-technical-preview-1810-2.md#bkmk_msix) | 버전 1810 | 
  | 클라이언트 설치 기능 개선 <!--1358840--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_ccmsetup) | 버전 1810 | 
- | 공동 관리하는 장치의 필수 앱 준수 정책 <!--1358196--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_app-compliance) | 버전 1810 | 
+ | 공동 관리하는 디바이스의 필수 앱 준수 정책 <!--1358196--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_app-compliance) | 버전 1810 | 
  | 공동 관리 대시보드 기능 개선 <!--1358980--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_comgmt-report) | 버전 1810 | 
  | 새 경계 그룹 옵션 <!--1358749--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_bgoptions) | 버전 1810 | 
  | Windows 클러스터 노드의 사이트 시스템 <!--1359132--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_cluster) | 버전 1810 | 
  | 향상된 CMPivot 기능<!--1359068--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_cmpivot) | 버전 1810 | 
  | 스크립트 기능 개선 <!--1358239--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_scripts) | 버전 1810 | 
- | 장치 절전 모드를 해제하는 새 클라이언트 알림 작업 <!--1317364--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_wakeup) | 버전 1810 | 
+ | 디바이스 절전 모드를 해제하는 새 클라이언트 알림 작업 <!--1317364--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_wakeup) | 버전 1810 | 
  | 경계 그룹의 작업 순서 지원 <!--1359025--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_bgr-osd) | 버전 1810 | 
  | 관리 인사이트 대시보드 <!--1357979--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_insights) | 버전 1810 | 
  | 콘솔 내 설명서 대시보드 <!--1357546--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_doc-dashboard) | ![추가되지 않음](media/Red_X.gif) | 
  | 드라이버 유지 관리 기능 개선 <!--1358270--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_drivers) | 버전 1810 | 
- | 기존 장치에 대한 Windows Autopilot의 작업 순서 지원 <!--1358333--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_autopilot) | 버전 1810 | 
+ | 기존 디바이스에 대한 Windows Autopilot의 작업 순서 지원 <!--1358333--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_autopilot) | 버전 1810 | 
  | 향상된 CMPivot 기능<!--1359068--> | [Tech Preview 1809](capabilities-in-technical-preview-1809.md#bkmk_cmpivot) | 버전 1810 | 
  | 향상된 수명 주기 대시보드 기능 <!--1358702--> | [Tech Preview 1809](capabilities-in-technical-preview-1809.md#bkmk_lifecycle) | 버전 1810 | 
  | 향상된 데이터 웨어하우스 기능 <!--1358870--> | [Tech Preview 1809](capabilities-in-technical-preview-1809.md#bkmk_dataw) | 버전 1810 | 
@@ -189,7 +189,7 @@ With each CB release, review and remove from this list for anything that's now a
 | 기능        | 기술 미리 보기 버전 |  
 |----------------|---------------------------|
 | 커뮤니티 허브 <!--1357766--> | [Tech Preview 1807](capabilities-in-technical-preview-1807.md#bkmk_hub) | 
-| Intune에서 공동 관리되는 장치 동기화 작업<!--1358565--> | [Tech Preview 1807](capabilities-in-technical-preview-1807.md#bkmk_comgmt) | 
+| Intune에서 공동 관리되는 디바이스 동기화 작업<!--1358565--> | [Tech Preview 1807](capabilities-in-technical-preview-1807.md#bkmk_comgmt) | 
 | 클라이언트 기반 PXE 응답자 서비스 <!--1357148--> | [Tech Preview 1712](capabilities-in-technical-preview-1712.md#client-based-pxe-responder-service) |
 | IPv6에 대한 PXE 네트워크 부팅 지원<!--1269793--> |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#pxe-network-boot-support-for-ipv6)|
 | Azure Active Directory 사용 <!--1322145--> | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#azurediscovery) |

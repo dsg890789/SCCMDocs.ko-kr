@@ -1,5 +1,5 @@
 ---
-title: '클라이언트 관리 장치에 대한 일반 준수 관리 작업 '
+title: '클라이언트 관리 디바이스에 대한 일반 준수 관리 작업 '
 titleSuffix: Configuration Manager
 description: 몇 가지 일반적인 시나리오를 진행하여 System Center Configuration Manager의 준수 설정에 대해 알아봅니다.
 ms.date: 10/06/2016
@@ -17,13 +17,13 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
 ms.locfileid: "32333759"
 ---
-# <a name="common-tasks-for-managing-compliance-on-devices-with-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트가 설치된 장치의 준수 관리를 위한 일반 작업
+# <a name="common-tasks-for-managing-compliance-on-devices-with-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트가 설치된 디바이스의 준수 관리를 위한 일반 작업
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 이 항목의 시나리오에서는 일반적으로 발생할 수 있는 몇 가지 상황을 살펴보면서 System Center Configuration Manager 준수 설정을 사용하는 방법을 소개합니다.  
 
- 준수 설정에 이미 익숙한 경우 사용할 수 있는 모든 기능에 대한 자세한 설명은 [System Center Configuration Manager 클라이언트로 관리되는 장치의 구성 항목](../../compliance/deploy-use/configuration-items-for-devices-managed-with-the-client.md) 섹션을 참조하세요.  
+ 준수 설정에 이미 익숙한 경우 사용할 수 있는 모든 기능에 대한 자세한 설명은 [System Center Configuration Manager 클라이언트로 관리되는 디바이스의 구성 항목](../../compliance/deploy-use/configuration-items-for-devices-managed-with-the-client.md) 섹션을 참조하세요.  
 
  시작하기 전에 [준수 설정 시작](../../compliance/get-started/get-started-with-compliance-settings.md)을 읽어 준수 설정에 대한 일부 기본 지식을 익히고 [준수 설정 계획 및 구성](../../compliance/plan-design/plan-for-and-configure-compliance-settings.md)을 읽어 필수 전제 조건을 구현합니다.  
 
@@ -38,10 +38,10 @@ ms.locfileid: "32333759"
 
      ![구성 항목 만들기 마법사의 일반 페이지를 보여 줍니다.](/sccm/compliance/plan-design/media/Compliance-Settings-Wizard---1.png)  
 
-## <a name="scenarios-for-windows-10-devices-managed-with-the-configuration-manager-client"></a>Configuration Manager 클라이언트를 사용하여 관리되는 Windows 10 장치에 대한 시나리오  
+## <a name="scenarios-for-windows-10-devices-managed-with-the-configuration-manager-client"></a>Configuration Manager 클라이언트를 사용하여 관리되는 Windows 10 디바이스에 대한 시나리오  
 
-### <a name="scenario-disable-the-use-of-bluetooth-on-windows-10-devices"></a>시나리오: Windows 10 장치에서 Bluetooth 사용 비활성화  
- 이 시나리오에서는 보안 부서가 회사 외부에서 중요한 회사 정보를 전송하는 데 장치의 Bluetooth 기능을 사용할 수 있다는 사실을 파악했습니다. 최근에 모든 PC를 Windows 10으로 업그레이드했으며 이러한 장치에서 Bluetooth 기능을 사용하지 않기로 결정합니다.  
+### <a name="scenario-disable-the-use-of-bluetooth-on-windows-10-devices"></a>시나리오: Windows 10 디바이스에서 Bluetooth 사용 비활성화  
+ 이 시나리오에서는 보안 부서가 회사 외부에서 중요한 회사 정보를 전송하는 데 디바이스의 Bluetooth 기능을 사용할 수 있다는 사실을 파악했습니다. 최근에 모든 PC를 Windows 10으로 업그레이드했으며 이러한 디바이스에서 Bluetooth 기능을 사용하지 않기로 결정합니다.  
 
 1.  구성 항목 만들기 마법사의 **일반** 페이지에서 **Windows 10** 구성 항목 유형을 선택하고 **다음**을 클릭합니다.  
 
@@ -55,7 +55,7 @@ ms.locfileid: "32333759"
 
 6.  마법사를 완료하여 구성 항목을 만듭니다.  
 
- 이제 [System Center Configuration Manager에서 구성 기준을 만들고 배포하기 위한 일반 작업](../../compliance/plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md) 항목의 내용을 참조하여, 만든 구성을 장치에 쉽게 배포할 수 있습니다.  
+ 이제 [System Center Configuration Manager에서 구성 기준을 만들고 배포하기 위한 일반 작업](../../compliance/plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md) 항목의 내용을 참조하여, 만든 구성을 디바이스에 쉽게 배포할 수 있습니다.  
 
 ## <a name="scenarios-for-windows-desktop-and-server-computers-managed-with-the-configuration-manager-client"></a>Configuration Manager 클라이언트와 관리되는 Windows 데스크톱 및 서버 컴퓨터에 대한 시나리오  
  Configuration Manager 클라이언트를 실행하는 Mac 컴퓨터에서는, 다음과 같이 두 가지 방법으로 준수를 평가할 수 있습니다.  
@@ -64,7 +64,7 @@ ms.locfileid: "32333759"
 
 -   사용자 지정 스크립트를 사용하고 스크립트에서 반환된 결과를 평가합니다.  
 
- 자세한 내용은 [System Center Configuration Manager 클라이언트를 사용하여 관리하는 Mac OS X 장치용 구성 항목을 만드는 방법](../../compliance/deploy-use/create-configuration-items-for-mac-os-x-devices-managed-with-the-client.md)을 참조하세요.  
+ 자세한 내용은 [System Center Configuration Manager 클라이언트를 사용하여 관리하는 Mac OS X 디바이스용 구성 항목을 만드는 방법](../../compliance/deploy-use/create-configuration-items-for-mac-os-x-devices-managed-with-the-client.md)을 참조하세요.  
 
 ### <a name="scenario-remediate-an-incorrect-registry-value-on-windows-desktop-computers"></a>시나리오: Windows 데스크톱 컴퓨터에서 잘못된 레지스트리 값 수정  
  이 시나리오에서는, 컴퓨터 중에서 Windows 8.1을 실행하는 일부 컴퓨터에서 중요한 LOB(기간 업무) 앱이 제대로 실행되지 않는다는 것을 발견했습니다. 조사 후, 일부 컴퓨터에서 **HKEY_LOCAL_MACHINE\SOFTWARE\Woodgrove\LOB App\Configuration\Configuration1** 이라는 레지스트리 키가 **0** 의 값으로 설정되어 있기 때문이라는 사실을 발견했습니다. LOB(기간 업무) 앱이 제대로 실행되려면 이 값이 **1**로 설정되어 있어야 합니다.  
@@ -105,4 +105,4 @@ ms.locfileid: "32333759"
 
 6.  마법사를 완료하여 구성 항목을 만듭니다.  
 
- 이제 [구성 기준 만들기 및 배포에 대한 일반 작업](../../compliance/plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md) 항목의 내용을 참조하여, 만든 구성을 장치에 쉽게 배포할 수 있습니다.  
+ 이제 [구성 기준 만들기 및 배포에 대한 일반 작업](../../compliance/plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md) 항목의 내용을 참조하여, 만든 구성을 디바이스에 쉽게 배포할 수 있습니다.  

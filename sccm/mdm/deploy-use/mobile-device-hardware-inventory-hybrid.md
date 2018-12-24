@@ -1,7 +1,7 @@
 ---
-title: 모바일 장치에 대한 하드웨어 인벤토리 구성
+title: 모바일 디바이스에 대한 하드웨어 인벤토리 구성
 titleSuffix: Configuration Manager
-description: Microsoft Intune 및 System Center Configuration Manager에서 등록한 모바일 장치의 하드웨어 인벤토리를 구성합니다.
+description: Microsoft Intune 및 System Center Configuration Manager에서 등록한 모바일 디바이스의 하드웨어 인벤토리를 구성합니다.
 ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -12,20 +12,20 @@ ms.author: aaroncz
 manager: dougeby
 ms.openlocfilehash: 5a616d20c71b76571e34a9147d0408a98c235e97
 ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
 ms.locfileid: "32350173"
 ---
-# <a name="how-to-configure-hardware-inventory-for-mobile-devices-enrolled-by-microsoft-intune-and-system-center-configuration-manager"></a>Microsoft Intune 및 System Center Configuration Manager에서 등록한 모바일 장치의 하드웨어 인벤토리 구성 방법
+# <a name="how-to-configure-hardware-inventory-for-mobile-devices-enrolled-by-microsoft-intune-and-system-center-configuration-manager"></a>Microsoft Intune 및 System Center Configuration Manager에서 등록한 모바일 디바이스의 하드웨어 인벤토리 구성 방법
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Configuration Manager에서 Microsoft Intune 커넥터를 사용하여 iOS, Android 및 Windows 장치에 대한 하드웨어 인벤토리를 수집할 수 있습니다. 하드웨어 인벤토리를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 하드웨어 인벤토리를 확장하는 방법](../../core/clients/manage/inventory/extend-hardware-inventory.md)을 참조하세요.  
+Configuration Manager에서 Microsoft Intune 커넥터를 사용하여 iOS, Android 및 Windows 디바이스에 대한 하드웨어 인벤토리를 수집할 수 있습니다. 하드웨어 인벤토리를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 하드웨어 인벤토리를 확장하는 방법](../../core/clients/manage/inventory/extend-hardware-inventory.md)을 참조하세요.  
 
- Microsoft Intune에 장치를 등록하는 방법에 대한 자세한 내용은 [Microsoft Intune을 사용하여 모바일 장치 관리](https://technet.microsoft.com/library/dn646962.aspx)를 참조하세요.  
+ Microsoft Intune에 디바이스를 등록하는 방법에 대한 자세한 내용은 [Microsoft Intune을 사용하여 모바일 디바이스 관리](https://technet.microsoft.com/library/dn646962.aspx)를 참조하세요.  
 
-## <a name="hardware-inventory-for-mobile-devices"></a>모바일 장치에 대한 하드웨어 인벤토리  
+## <a name="hardware-inventory-for-mobile-devices"></a>모바일 디바이스에 대한 하드웨어 인벤토리  
  다음 표에는 자주 사용되는 모바일 플랫폼에서 하드웨어 인벤토리의 사용 가능한 인벤토리 클래스가 정리되어 있습니다.  
 
  **Android**  
@@ -33,7 +33,7 @@ Configuration Manager에서 Microsoft Intune 커넥터를 사용하여 iOS, Andr
 |하드웨어 인벤토리 클래스|iOS|  
 |------------------------------|---------|  
 |Name|Device_ComputerSystem.DeviceName|  
-|고유한 장치 ID|Device_ComputerSystem.UDID|  
+|고유한 디바이스 ID|Device_ComputerSystem.UDID|  
 |일련 번호|Device_ComputerSystem.SerialNumber|  
 |전자 메일 주소|Device_Email.OwnerEmailAddress|  
 |운영 체제 종류|해당 없음|  
@@ -61,7 +61,7 @@ Configuration Manager에서 Microsoft Intune 커넥터를 사용하여 iOS, Andr
 |하드웨어 인벤토리 클래스|Android|  
 |------------------------------|-------------|  
 |Name|해당 없음|  
-|고유한 장치 ID|해당 없음|  
+|고유한 디바이스 ID|해당 없음|  
 |일련 번호|Device_ComputerSystem.SerialNumber|  
 |전자 메일 주소|해당 없음|  
 |운영 체제 종류|Device_OSInformation.Platform|  
@@ -86,7 +86,7 @@ Configuration Manager에서 Microsoft Intune 커넥터를 사용하여 iOS, Andr
 |하드웨어 인벤토리 클래스|Windows Phone 8 및 Windows Phone 8.1|  
 |------------------------------|-------------------------------------------|  
 |Name|Device_ComputerSystem.DeviceName|  
-|고유한 장치 ID|Device_ComputerSystem.DeviceClientID|  
+|고유한 디바이스 ID|Device_ComputerSystem.DeviceClientID|  
 |일련 번호|해당 없음|  
 |전자 메일 주소|Device_Email.OwnerEmailAddress|  
 |운영 체제 종류|Device_OSInformation.Platform|  
@@ -111,7 +111,7 @@ Configuration Manager에서 Microsoft Intune 커넥터를 사용하여 iOS, Andr
 |하드웨어 인벤토리 클래스|Windows RT|  
 |------------------------------|----------------|  
 |Name|Device_ComputerSystem.DeviceName|  
-|고유한 장치 ID|Device_ComputerSystem.DeviceName|  
+|고유한 디바이스 ID|Device_ComputerSystem.DeviceName|  
 |일련 번호|해당 없음|  
 |전자 메일 주소|Device_Email.OwnerEmailAddress|  
 |운영 체제 종류|CCM_OperatingSystem .SystemType|  
@@ -133,4 +133,4 @@ Configuration Manager에서 Microsoft Intune 커넥터를 사용하여 iOS, Andr
 
  <sup>1</sup> 전화번호는 마지막 4자리를 제외하고 모두 *로 마스킹됩니다.  
 
- 전화 번호를 수집하는 인벤토리의 경우, 장치에 SIM 카드가 삽입되어 있어야 하고 통신 회사에서 해당 SIM에 프로비전한 전화 번호가 있어야 합니다.  
+ 전화 번호를 수집하는 인벤토리의 경우, 디바이스에 SIM 카드가 삽입되어 있어야 하고 통신 회사에서 해당 SIM에 프로비전한 전화 번호가 있어야 합니다.  

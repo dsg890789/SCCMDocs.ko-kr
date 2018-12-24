@@ -56,7 +56,7 @@ items:
     items:
     - name: 관리 작업
       href: deploy-use/management-tasks-applications.md
-    - name: 사용자 장치 선호도
+    - name: 사용자 디바이스 선호도
       href: deploy-use/link-users-and-devices-with-user-device-affinity.md
     - name: 비즈니스용 Microsoft 스토어 대량 구매 앱
       href: deploy-use/manage-apps-from-the-windows-store-for-business.md

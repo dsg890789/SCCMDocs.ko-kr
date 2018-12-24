@@ -27,7 +27,7 @@ ms.locfileid: "32343493"
 **다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.**  
 
 ## <a name="configure-android-apps-with-app-configuration-policies"></a>앱 구성 정책을 사용하여 Android 앱 구성
-System Center Configuration Manager(Configuration Manager)에서 앱 구성 정책을 사용하여 사용자가 Android for Work 장치에서 앱을 실행할 때 필요할 수도 있는 설정을 배포할 수 있습니다. Android 앱 구성 정책은 Android for Work를 실행 중인 장치에서만 사용 가능하며 Play for Work 스토어에서 승인한 앱에 적용됩니다.
+System Center Configuration Manager(Configuration Manager)에서 앱 구성 정책을 사용하여 사용자가 Android for Work 디바이스에서 앱을 실행할 때 필요할 수도 있는 설정을 배포할 수 있습니다. Android 앱 구성 정책은 Android for Work를 실행 중인 디바이스에서만 사용 가능하며 Play for Work 스토어에서 승인한 앱에 적용됩니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기                 
 

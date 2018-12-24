@@ -44,7 +44,7 @@ Configuration Manager 버전은 [해당 버전의 지원](/sccm/core/servers/man
     > [!Note]  
     > Windows 10을 최신 상태로 유지하는 가장 좋은 방법은 Configuration Manager를 최신 상태로 유지하는 것입니다. 자세한 내용은 [Configuration Manager 및 Windows as a Service](/sccm/core/understand/configuration-manager-and-windows-as-service)를 참조하세요.  
 
--   이 정보는 [클라이언트 및 장치에 대해 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices)를 보완합니다.  
+-   이 정보는 [클라이언트 및 디바이스에 대해 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices)를 보완합니다.  
 
 -   Configuration Manager의 장기 서비스 분기를 사용하는 경우 [장기 서비스 분기에 대해 지원되는 구성](/sccm/core/understand/supported-configurations-for-ltsb)을 참조하세요.  
 
@@ -73,7 +73,7 @@ Configuration Manager 버전은 [해당 버전의 지원](/sccm/core/servers/man
 | ![지원 안 됨](media/Red_X.png) = **지원 안 됨** |
 
  > [!NOTE]  
- > 버전 1802부터 Configuration Manager는 Windows 10 ARM64 장치의 클라이언트를 지원합니다. 기존 클라이언트 관리 기능도 이러한 새 장치에서 작동합니다. 예를 들어 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 업데이트, 응용 프로그램 관리 등입니다. OS 배포는 현재 지원되지 않습니다. <!-- 1353704 --> 
+ > 버전 1802부터 Configuration Manager는 Windows 10 ARM64 디바이스의 클라이언트를 지원합니다. 기존 클라이언트 관리 기능도 이러한 새 디바이스에서 작동합니다. 예를 들어 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 업데이트, 응용 프로그램 관리 등입니다. OS 배포는 현재 지원되지 않습니다. <!-- 1353704 --> 
 
 Windows 수명 주기에 대한 자세한 내용은 [Windows 수명 주기 팩트 시트](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)를 참조하세요.
 

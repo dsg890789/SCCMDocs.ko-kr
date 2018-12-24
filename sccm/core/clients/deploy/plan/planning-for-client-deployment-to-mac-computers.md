@@ -51,7 +51,7 @@ Mac OS X 운영 체제를 실행하는 Mac 컴퓨터에 Configuration Manager �
 
     -   USB 컨트롤러  
 
-    -   USB 장치  
+    -   USB 디바이스  
 
     -   CDROM 드라이브  
 

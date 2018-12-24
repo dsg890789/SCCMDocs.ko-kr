@@ -58,7 +58,7 @@ ms.locfileid: "32349918"
 게시물에서 업데이트가 제거된 후에도 Updates Publisher 리포지토리에서 계속 사용할 수 있습니다.
 
 ## <a name="publish-publications"></a>게시물 게시
-업데이트 및 번들을 게시하면 Updates Publisher가 해당 업데이트 및 번들에 대한 정보(메타데이터)와 업데이트용 이진 파일(전체 콘텐츠)을 장치 배포용 업데이트 서버에 추가합니다.
+업데이트 및 번들을 게시하면 Updates Publisher가 해당 업데이트 및 번들에 대한 정보(메타데이터)와 업데이트용 이진 파일(전체 콘텐츠)을 디바이스 배포용 업데이트 서버에 추가합니다.
 
 게시 옵션을 사용하려면 Updates Publisher의 [업데이트 서버](/sccm/sum/tools/updates-publisher-options#update-server) 옵션을 구성해야 합니다. 이 구성 옵션을 열려면 **업데이트 작업 영역** &gt; **개요**로 이동하여 **Configure WSUS and Signing Certificate**(WSUS 및 서명 인증서 구성)를 선택합니다. Updates Publisher 옵션의 [업데이트 서버] 페이지로 이동할 수도 있습니다.
 

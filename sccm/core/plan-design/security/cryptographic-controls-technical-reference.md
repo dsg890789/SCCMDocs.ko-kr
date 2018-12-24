@@ -21,7 +21,7 @@ ms.locfileid: "49943311"
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 
-System Center Configuration Manager는 서명 및 암호화를 사용하여 Configuration Manager 계층 구조의 장치 관리를 보호합니다. 서명된 데이터가 전송 중에 변경된 경우 무시됩니다. 암호화는 공격자가 네트워크 프로토콜 분석기로 데이터를 읽지 못하도록 방지합니다.  
+System Center Configuration Manager는 서명 및 암호화를 사용하여 Configuration Manager 계층 구조의 디바이스 관리를 보호합니다. 서명된 데이터가 전송 중에 변경된 경우 무시됩니다. 암호화는 공격자가 네트워크 프로토콜 분석기로 데이터를 읽지 못하도록 방지합니다.  
 
  Configuration Manager에서 서명에 사용하는 기본 해싱 알고리즘은 SHA-256입니다. 서로 통신하는 두 Configuration Manager 사이트는 SHA-256을 사용하여 통신에 서명합니다. Configuration Manager에서 구현되는 기본 암호화 알고리즘은 3DES입니다. 이 방식은 Configuration Manager 데이터베이스에 데이터를 저장하고 클라이언트 HTTP 통신에 사용됩니다. HTTPS를 통해 클라이언트 통신을 사용할 경우 [PKI 인증서 요구 사항](/sccm/core/plan-design/network/pki-certificate-requirements)에 문서화된 최대 해시 알고리즘 및 키 길이를 포함하는 RSA 인증서를 사용하도록 PKI(공개 키 인프라)를 구성할 수 있습니다.  
 
@@ -50,7 +50,7 @@ System Center Configuration Manager는 서명 및 암호화를 사용하여 Conf
 
  콘텐츠의 기본 해싱 알고리즘은 SHA-256입니다. 이 기본값을 변경하려면 Configuration Manager SDK(소프트웨어 개발 키트)용 설명서를 참조하세요.  
 
- 모든 장치가 콘텐츠 해싱을 지원하는 것은 아닙니다. 예외는 다음과 같습니다.  
+ 모든 디바이스가 콘텐츠 해싱을 지원하는 것은 아닙니다. 예외는 다음과 같습니다.  
 
 -   App-V 콘텐츠를 스트리밍하는 Windows 클라이언트.  
 
@@ -58,16 +58,16 @@ System Center Configuration Manager는 서명 및 암호화를 사용하여 Conf
 
 -   Windows RT 클라이언트, 그러나 이러한 클라이언트는 신뢰할 수 있는 원본에서 서명된 응용 프로그램의 서명을 확인하고 PFN(Package Full Name) 유효성 검사도 사용합니다.  
 
--   iOS, 그러나 이러한 장치는 신뢰할 수 있는 원본의 개발자 인증서에서 서명된 응용 프로그램의 서명을 확인합니다.  
+-   iOS, 그러나 이러한 디바이스는 신뢰할 수 있는 원본의 개발자 인증서에서 서명된 응용 프로그램의 서명을 확인합니다.  
 
 -   Nokia 클라이언트, 그러나 이러한 클라이언트는 자체 서명된 인증서를 사용하는 응용 프로그램의 서명을 확인합니다. 또는 신뢰할 수 있는 원본의 인증서의 서명과 인증서는 Nokia SIS(Symbian Installation Source) 응용 프로그램을 서명할 수 있습니다.  
 
--   Android: 그 밖에, 이러한 장치는 응용 프로그램 설치에 서명 유효성 검사를 사용하지 않습니다.  
+-   Android: 그 밖에, 이러한 디바이스는 응용 프로그램 설치에 서명 유효성 검사를 사용하지 않습니다.  
 
 -   SHA-256을 지원하지 않는 Linux 및 UNIX 버전에서 실행되는 클라이언트. 자세한 내용은 [Linux 및 UNIX 컴퓨터에 대한 클라이언트 배포 계획](/sccm/core/clients/deploy/plan/planning-for-client-deployment-to-linux-and-unix-computers)을 참조하세요.  
 
 ### <a name="inventory-signing-and-encryption"></a>인벤토리 서명 및 암호화  
- 클라이언트에서 관리 지점에 보내는 인벤토리는 클라이언트가 HTTP 또는 HTTPS 중 어느 방식으로 관리 지점과 통신하는지에 상관없이 장치에서 항상 서명됩니다. HTTP가 사용될 경우 데이터를 암호화하도록 선택할 수 있으며 이는 보안 모범 사례에 해당합니다.  
+ 클라이언트에서 관리 지점에 보내는 인벤토리는 클라이언트가 HTTP 또는 HTTPS 중 어느 방식으로 관리 지점과 통신하는지에 상관없이 디바이스에서 항상 서명됩니다. HTTP가 사용될 경우 데이터를 암호화하도록 선택할 수 있으며 이는 보안 모범 사례에 해당합니다.  
 
 ### <a name="state-migration-encryption"></a>상태 마이그레이션 암호화  
  운영 체제 배포용 상태 마이그레이션 지점에 저장된 데이터는 USMT(사용자 환경 마이그레이션 도구)에서 3DES를 사용하여 항상 암호화됩니다.  
@@ -102,7 +102,7 @@ System Center Configuration Manager는 서명 및 암호화를 사용하여 Conf
 
 -   인터넷상의 Configuration Manager 클라이언트를 관리하는 경우  
 
--   모바일 장치의 Configuration Manager 클라이언트를 관리하는 경우  
+-   모바일 디바이스의 Configuration Manager 클라이언트를 관리하는 경우  
 
 -   Mac 컴퓨터를 관리합니다.  
 
@@ -112,12 +112,12 @@ System Center Configuration Manager는 서명 및 암호화를 사용하여 Conf
 
  인증, 서명 또는 암호화를 위해 인증서가 필요한 대부분의 다른 Configuration Manager 통신의 경우 Configuration Manager는 사용 가능한 PKI 인증서를 자동으로 사용합니다. PKI 인증서를 사용할 수 없는 경우 Configuration Manager에서 자체 서명된 인증서를 생성합니다.  
 
- Configuration Manager는 Exchange Server 커넥터를 사용하여 모바일 장치를 관리할 경우에는 PKI 인증서를 사용하지 않습니다.  
+ Configuration Manager는 Exchange Server 커넥터를 사용하여 모바일 디바이스를 관리할 경우에는 PKI 인증서를 사용하지 않습니다.  
 
-### <a name="mobile-device-management-and-pki-certificates"></a>모바일 장치 관리 및 PKI 인증서  
- 모바일 장치가 통신사에 의해 잠기지 않은 경우 Configuration Manager 또는 Microsoft Intune을 사용하여 클라이언트 인증서를 요청 및 설치할 수 있습니다. 이 인증서는 모바일 장치의 클라이언트와 Configuration Manager 사이트 시스템 또는 Microsoft Intune 서비스 간의 상호 인증을 제공합니다. 모바일 장치가 잠겨 있으면 Configuration Manager 또는 Intune을 사용하여 인증서를 배포할 수 없습니다.  
+### <a name="mobile-device-management-and-pki-certificates"></a>모바일 디바이스 관리 및 PKI 인증서  
+ 모바일 디바이스가 통신사에 의해 잠기지 않은 경우 Configuration Manager 또는 Microsoft Intune을 사용하여 클라이언트 인증서를 요청 및 설치할 수 있습니다. 이 인증서는 모바일 디바이스의 클라이언트와 Configuration Manager 사이트 시스템 또는 Microsoft Intune 서비스 간의 상호 인증을 제공합니다. 모바일 디바이스가 잠겨 있으면 Configuration Manager 또는 Intune을 사용하여 인증서를 배포할 수 없습니다.  
 
- 모바일 장치에 대해 하드웨어 인벤토리를 사용하도록 설정하는 경우 Configuration Manager 또는 Microsoft Intune에서도 모바일 장치에 설치된 인증서의 인벤토리를 만듭니다.   
+ 모바일 디바이스에 대해 하드웨어 인벤토리를 사용하도록 설정하는 경우 Configuration Manager 또는 Microsoft Intune에서도 모바일 디바이스에 설치된 인증서의 인벤토리를 만듭니다.   
 
 ### <a name="operating-system-deployment-and-pki-certificates"></a>운영 체제 배포 및 PKI 인증서  
  Configuration Manager를 사용하여 운영 체제를 배포하고 관리 지점에 HTTPS 클라이언트 연결이 필요한 경우 클라이언트 컴퓨터에도 관리 지점과 통신하기 위한 인증서가 있어야 하며, 이는 작업 순서 미디어 또는 PXE 사용 배포 지점에서 부팅하는 것과 같은 전환 단계에서도 마찬가지입니다. 이러한 시나리오를 지원하려면 PKI 클라이언트 인증 인증서를 만들어 개인 키와 함께 내보낸 다음, 사이트 서버 속성으로 가져오고 관리 지점의 신뢰할 수 있는 루트 CA 인증서도 추가해야 합니다.  
@@ -149,11 +149,11 @@ System Center Configuration Manager는 서명 및 암호화를 사용하여 Conf
  클라이언트에는 클라우드 기반 배포 지점을 사용하기 위한 클라이언트 PKI 인증서가 필요하지 않습니다. 클라이언트는 자체 서명된 인증서나 클라이언트 PKI 인증서를 사용하여 관리에 대한 인증을 받습니다. 그 후 관리 지점은 클라이언트에 Configuration Manager 액세스 토큰을 발급하며, 클라이언트는 이 액세스 토큰을 클라우드 기반 배포 지점에 제공합니다. 토큰은 8시간 동안 유효합니다.  
 
 ### <a name="the-microsoft-intune-connector-and-certificates"></a>Microsoft Intune 커넥터 및 인증서  
- Microsoft Intune에서 모바일 장치를 등록할 때 사용자는 Microsoft Intune 커넥터를 만들어 해당 모바일 장치를 Configuration Manager에서 관리할 수 있습니다. 이 커넥터는 클라이언트 인증 기능과 함께 PKI 인증서를 사용하여 Configuration Manager를 Microsoft Intune에 대해 인증하고 SSL을 사용하여 상호 간에 모든 정보를 전송합니다. 인증서 키 크기는 2048비트이며 SHA-1 해시 알고리즘을 사용합니다.  
+ Microsoft Intune에서 모바일 디바이스를 등록할 때 사용자는 Microsoft Intune 커넥터를 만들어 해당 모바일 디바이스를 Configuration Manager에서 관리할 수 있습니다. 이 커넥터는 클라이언트 인증 기능과 함께 PKI 인증서를 사용하여 Configuration Manager를 Microsoft Intune에 대해 인증하고 SSL을 사용하여 상호 간에 모든 정보를 전송합니다. 인증서 키 크기는 2048비트이며 SHA-1 해시 알고리즘을 사용합니다.  
 
  커넥터를 설치할 때 테스트용 로드 키를 위한 서명 인증서가 생성되어 사이트 서버에 저장되며, SCEP(Simple Certificate Enrollment Protocol) 챌린지를 암호화하기 위해 암호화 인증서가 생성되어 인증서 등록 지점에 저장됩니다. 또한 이러한 인증서의 키 크기는 2048비트이고 SHA-1 해시 알고리즘을 사용합니다.  
 
- Intune은 모바일 장치를 등록할 때 PKI 인증서를 해당 모바일 장치에 설치합니다. 이 인증서에는 클라이언트 인증 기능이 있으며 2048비트의 키 크기와 SHA-1 해시 알고리즘이 사용됩니다.  
+ Intune은 모바일 디바이스를 등록할 때 PKI 인증서를 해당 모바일 디바이스에 설치합니다. 이 인증서에는 클라이언트 인증 기능이 있으며 2048비트의 키 크기와 SHA-1 해시 알고리즘이 사용됩니다.  
 
  이러한 PKI 인증서는 Microsoft Intune에 의해 자동으로 요청, 생성 및 설치됩니다.  
 
@@ -168,9 +168,9 @@ System Center Configuration Manager는 서명 및 암호화를 사용하여 Conf
 
 -   서버 간 연결  
 
--   Configuration Manager에서 등록된 모바일 장치  
+-   Configuration Manager에서 등록된 모바일 디바이스  
 
--   Microsoft Intune에서 등록한 모바일 장치  
+-   Microsoft Intune에서 등록한 모바일 디바이스  
 
 ##  <a name="cryptographic-controls-for-server-communication"></a>서버 통신을 위한 암호화 컨트롤  
  Configuration Manager에서는 서버 통신에 다음과 같은 암호화 컨트롤을 사용합니다.  

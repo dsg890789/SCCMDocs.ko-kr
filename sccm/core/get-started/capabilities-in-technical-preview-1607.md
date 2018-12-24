@@ -59,7 +59,7 @@ Configuration Manager 클라이언트 설정에서 **버전 업그레이드**에
 3. Microsoft Intune 구독을 구성하고 Configuration Manager 환경에 연결한 경우 소프트웨어 센터에서 Intune 구독 속성에 지정된 조직 이름, 색 및 회사 로고를 표시합니다. 자세한 내용은 [Microsoft Intune 구독 구성](/mdm/deploy-use/configure-intune-subscription)을 참조하세요.
 
 ## <a name="use-the-same-network-adapter-for-multiple-pxe-initiated-deployments"></a>여러 PXE 시작 배포에 같은 네트워크 어댑터 사용
-Technical Preview 버전 1607에서는 이미지 다중 장치(예: 여러 장치에서 사용하는 USB 이더넷 어댑터)에 이더넷 어댑터를 사용하면 이더넷 어댑터에 대한 하드웨어 식별자를 입력할 수 있는 새 설정을 사용할 수 있습니다. Configuration Manager는 PXE 설치 수행 시 목록의 하드웨어 식별자와 클라이언트 등록을 위한 하드웨어 식별자를 무시합니다.
+Technical Preview 버전 1607에서는 이미지 다중 디바이스(예: 여러 디바이스에서 사용하는 USB 이더넷 어댑터)에 이더넷 어댑터를 사용하면 이더넷 어댑터에 대한 하드웨어 식별자를 입력할 수 있는 새 설정을 사용할 수 있습니다. Configuration Manager는 PXE 설치 수행 시 목록의 하드웨어 식별자와 클라이언트 등록을 위한 하드웨어 식별자를 무시합니다.
 
 이 문제에 대한 자세한 내용은 [Configuration Manager OSD 지원 팀 블로그](https://blogs.technet.microsoft.com/system_center_configuration_manager_operating_system_deployment_support_blog/2015/08/27/reusing-the-same-nic-for-multiple-pxe-initiated-deployments-in-system-center-configuration-manger-osd/)를 참조하세요.  
 

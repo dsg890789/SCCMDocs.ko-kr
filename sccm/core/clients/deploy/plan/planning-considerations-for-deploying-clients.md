@@ -21,7 +21,7 @@ ms.locfileid: "32331736"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-PC, 서버 및 System Center Configuration Manager의 다른 장치에 클라이언트를 설치하기 전에 클라이언트 소프트웨어를 배포하고 그에 따라 Configuration Manager 인프라를 준비하는 방법을 고려해야 합니다.  
+PC, 서버 및 System Center Configuration Manager의 다른 디바이스에 클라이언트를 설치하기 전에 클라이언트 소프트웨어를 배포하고 그에 따라 Configuration Manager 인프라를 준비하는 방법을 고려해야 합니다.  
 
  이 섹션의 다음 페이지에서는 다양한 클라이언트 설치 방법 계획과 조직의 여러 플랫폼에 클라이언트 배포 과정에 대한 다양한 세부 정보를 다룹니다.  
 

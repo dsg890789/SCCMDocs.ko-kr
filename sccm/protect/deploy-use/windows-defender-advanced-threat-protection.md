@@ -44,7 +44,7 @@ Windows Defender ATP는 [Windows Defender 보안 센터](https://securitycenter.
 > [!IMPORTANT]
 > Windows Defender ATP 구성 파일에는 보안을 유지해야 하는 중요한 정보가 포함되어 있습니다.
 
-## <a name="onboard-devices-for-windows-defender-atp"></a>Windows Defender ATP 장치 온보딩  
+## <a name="onboard-devices-for-windows-defender-atp"></a>Windows Defender ATP 디바이스 온보딩  
 
 1.  Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > **Endpoint Protection** > **Windows Defender ATP 정책**으로 이동하고 **Windows Defender ATP 정책 만들기**를 클릭합니다. Windows Defender ATP 정책 마법사가 열립니다.  
 
@@ -52,7 +52,7 @@ Windows Defender ATP는 [Windows Defender 보안 센터](https://securitycenter.
 
 3.  조직의 Windows Defender ATP 클라우드 서비스 테넌트에서 제공하는 구성 파일을 **찾습니다**. **다음**을 클릭합니다.  
 
-4.  분석을 위해 관리되는 장치에서 수집 및 공유되는 파일 샘플을 지정합니다.  
+4.  분석을 위해 관리되는 디바이스에서 수집 및 공유되는 파일 샘플을 지정합니다.  
 
     -   **없음**   
 

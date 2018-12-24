@@ -102,17 +102,17 @@ Version 1706 drops support for the following products:
 
 ## <a name="compliance-settings"></a>호환성 설정
 
-### <a name="new-configuration-settings-for-windows-10-devices-that-are-not-managed-with-the-configuration-manager-client"></a>Configuration Manager 클라이언트에서 관리되지 않는 Windows 10 장치에 대한 새 구성 설정
+### <a name="new-configuration-settings-for-windows-10-devices-that-are-not-managed-with-the-configuration-manager-client"></a>Configuration Manager 클라이언트에서 관리되지 않는 Windows 10 디바이스에 대한 새 구성 설정
 <!-- 1354715 --> 이 릴리스에서는 Intune에 등록되었거나 Configuration Manager를 통해 온-프레미스에서 관리되는 Windows 10 장치에 대한 새 구성 항목 설정을 추가했습니다. 이러한 설정은 다음과 같습니다.
 
 - **암호**
-    - 장치 암호화
+    - 디바이스 암호화
 - **장치**
     - 지역 설정 수정(데스크톱만 해당)
     - 전원 및 절전 모드 설정 수정
     - 언어 설정 수정
     - 시스템 시간 수정
-    - 장치 이름 수정
+    - 디바이스 이름 수정
 - **스토어**
     - 스토어에서 앱 자동 업데이트
     - 개인 저장소만 사용
@@ -126,9 +126,9 @@ Version 1706 drops support for the following products:
     - OpenSearch XML URL
     - 홈페이지(데스크톱만 해당)
 
-모든 Windows 10 설정에 대한 자세한 내용은 [System Center Configuration Manager 클라이언트 없이 관리되는 Windows 10 및 Windows 8.1 장치에 대한 구성 항목을 만드는 방법](/sccm/mdm/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client)을 참조하세요.
+모든 Windows 10 설정에 대한 자세한 내용은 [System Center Configuration Manager 클라이언트 없이 관리되는 Windows 10 및 Windows 8.1 디바이스에 대한 구성 항목을 만드는 방법](/sccm/mdm/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client)을 참조하세요.
 
-### <a name="new-device-compliance-policy-rules"></a>새 장치 준수 정책 규칙
+### <a name="new-device-compliance-policy-rules"></a>새 디바이스 준수 정책 규칙
 
 * **필수 암호 유형** 사용자가 영숫자 암호를 만들어야 할지, 아니면 숫자 암호를 만들어야 할지를 지정합니다. 영숫자 암호의 경우 암호에 포함해야 할 각 문자 집합의 최소 수도 지정합니다. 문자 집합으로는 소문자, 대문자, 기호, 숫자 등 4가지가 있습니다.
 
@@ -137,37 +137,37 @@ Version 1706 drops support for the following products:
  * Windows 8.1+
  * iOS 6+
 <br></br>
-* **장치에서 USB 디버깅 차단** USB 디버깅은 Android for Work 장치에서 이미 사용되지 않도록 설정되어 있으므로 구성할 필요가 없습니다.
+* **장치에서 USB 디버깅 차단** USB 디버깅은 Android for Work 디바이스에서 이미 사용되지 않도록 설정되어 있으므로 구성할 필요가 없습니다.
 
  **지원됨:**
  * Android 4.0+
  * Samsung KNOX Standard 4.0 이상
 <br></br>
-* **알 수 없는 출처의 앱 차단** 장치가 알 수 없는 소스의 앱 설치를 방지해야 합니다. Android for Work 장치는 알 수 없는 출처의 설치를 하상 제한하므로 이 설정은 구성할 필요가 없습니다.
+* **알 수 없는 출처의 앱 차단** 디바이스가 알 수 없는 소스의 앱 설치를 방지해야 합니다. Android for Work 디바이스는 알 수 없는 출처의 설치를 하상 제한하므로 이 설정은 구성할 필요가 없습니다.
 
   **지원됨:**
   * Android 4.0+
   * Samsung KNOX Standard 4.0 이상
 <br></br>
-* **앱에서 위협 검색 필요** 이 설정은 장치에서 앱 확인 기능이 사용되도록 구성되어 있음을 지정합니다.
+* **앱에서 위협 검색 필요** 이 설정은 디바이스에서 앱 확인 기능이 사용되도록 구성되어 있음을 지정합니다.
 
  **지원됨:**
  * Android 4.2 ~ 4.4
  * Samsung KNOX Standard 4.0 이상
 
-새 장치 준수 규칙을 사용해 보려면 [장치 규정 준수 정책 만들기 및 배포](https://docs.microsoft.com/sccm/mdm/deploy-use/create-compliance-policy)를 참조하세요.
+새 디바이스 준수 규칙을 사용해 보려면 [디바이스 규정 준수 정책 만들기 및 배포](https://docs.microsoft.com/sccm/mdm/deploy-use/create-compliance-policy)를 참조하세요.
 
 ## <a name="application-management"></a>응용 프로그램 관리
 
 ### <a name="run-powershell-scripts-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 PowerShell 스크립트 실행
 <!-- 1236459 -->
 
-Configuration Manager에서 패키지 및 프로그램을 사용하여 클라이언트 장치에 스크립트를 배포할 수 있습니다. 이 릴리스에서는 다음 작업을 수행할 수 있는 새 기능을 추가했습니다.
+Configuration Manager에서 패키지 및 프로그램을 사용하여 클라이언트 디바이스에 스크립트를 배포할 수 있습니다. 이 릴리스에서는 다음 작업을 수행할 수 있는 새 기능을 추가했습니다.
 
 - Configuration Manager에 PowerShell 스크립트 가져오기
 - Configuration Manager 콘솔에서 스크립트 편집(서명되지 않은 스크립트만 해당)
 - 스크립트를 승인 또는 거부로 표시하여 보안 강화
-- Windows 클라이언트 PC 및 온-프레미스 관리 Windows PC 컬렉션에 대해 스크립트를 실행합니다. 스크립트는 배포하지 않아도 됩니다. 클라이언트 장치에서 거의 실시간으로 실행됩니다.
+- Windows 클라이언트 PC 및 온-프레미스 관리 Windows PC 컬렉션에 대해 스크립트를 실행합니다. 스크립트는 배포하지 않아도 됩니다. 클라이언트 디바이스에서 거의 실시간으로 실행됩니다.
 - Configuration Manager 콘솔에서 스크립트에 의해 반환된 결과를 검토합니다.
 
 자세한 내용은 [Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행](/sccm/apps/deploy-use/create-deploy-scripts)을 참조하세요.
@@ -221,26 +221,26 @@ Configuration Manager에서 패키지 및 프로그램을 사용하여 클라이
 ## <a name="reporting"></a>보고
 
 ### <a name="use-windows-analytics-with-configuration-manager"></a>Configuration Manager에서 Windows Analytics 사용
-<!-- 1318608 --> Windows Analytics는 사용자 환경의 현재 상태에 대한 인사이트를 얻을 수 있는 솔루션 집합입니다. 사용자 환경의 장치에서 Windows 원격 분석 데이터를 보고합니다. 데이터는 Azure Portal을 통해 액세스할 수 있습니다. 업그레이드 준비의 경우 Configuration Manager 콘솔의 모니터링 노드에서 직접 데이터를 사용할 수 있습니다.
+<!-- 1318608 --> Windows Analytics는 사용자 환경의 현재 상태에 대한 인사이트를 얻을 수 있는 솔루션 집합입니다. 사용자 환경의 디바이스에서 Windows 원격 분석 데이터를 보고합니다. 데이터는 Azure Portal을 통해 액세스할 수 있습니다. 업그레이드 준비의 경우 Configuration Manager 콘솔의 모니터링 노드에서 직접 데이터를 사용할 수 있습니다.
 
 자세한 내용은 [Configuration Manager에서 Windows Analytics 사용](/sccm/core/clients/manage/monitor-windows-analytics)을 참조하세요.
 
 
 <!-- ## Inventory  -->
 
-## <a name="mobile-device-management"></a>모바일 장치 관리
+## <a name="mobile-device-management"></a>모바일 디바이스 관리
 
 ### <a name="updates-to-android-for-work-sharing-configuration"></a>Android for Work 공유 구성에 대한 업데이트
 <!-- 1338403 --> 이 릴리스에서는 **회사 프로필** 설정 그룹의 **회사 프로필과 개인 프로필 간의 데이터 공유 허용** 설정 값이 업데이트되었습니다. 또한 회사 및 개인 프로필 간의 복사하여 붙여넣기를 차단하기 위한 사용자 지정 설정을 추가했습니다.
 
-자세한 내용은 [Android for Work 장치에 대한 구성 항목](/sccm/mdm/deploy-use/create-configuration-items-for-android-for-work-devices-managed-without-the-client)을 참조하세요.
+자세한 내용은 [Android for Work 디바이스에 대한 구성 항목](/sccm/mdm/deploy-use/create-configuration-items-for-android-for-work-devices-managed-without-the-client)을 참조하세요.
 
 ### <a name="android-and-ios-enrollment-restrictions"></a>Android 및 iOS 등록 제한
-<!-- 1290826 --> 이제 이 릴리스에서 사용자가 개인 Android 또는 iOS 장치를 등록하도록 지정할 수 있습니다. 새 장치 제한 설정을 통해 미리 선언된 장치에 대한 Android 장치 등록을 제한할 수 있습니다. iOS 장치의 경우 Apple의 장비 등록 프로그램, Apple Configurator 또는 Intune 장치 등록 관리자 계정에 등록된 장치를 제외한 모든 장치의 등록을 차단할 수 있습니다.
-- Android 등록 제한에 대한 자세한 내용은 [Android 장치 관리 설정](/sccm/mdm/deploy-use/enroll-hybrid-android)을 참조하세요.
+<!-- 1290826 --> 이제 이 릴리스에서 사용자가 개인 Android 또는 iOS 장치를 등록하도록 지정할 수 있습니다. 새 디바이스 제한 설정을 통해 미리 선언된 디바이스에 대한 Android 디바이스 등록을 제한할 수 있습니다. iOS 디바이스의 경우 Apple의 장비 등록 프로그램, Apple Configurator 또는 Intune 디바이스 등록 관리자 계정에 등록된 디바이스를 제외한 모든 디바이스의 등록을 차단할 수 있습니다.
+- Android 등록 제한에 대한 자세한 내용은 [Android 디바이스 관리 설정](/sccm/mdm/deploy-use/enroll-hybrid-android)을 참조하세요.
 - iOS 등록 제한에 대한 자세한 내용은 [iOS 등록 제한 구성](/sccm/mdm/deploy-use/enroll-hybrid-ios-mac#configure-enrollment-restrictions)을 참조하세요.
 
-## <a name="protect-devices"></a>장치 보호
+## <a name="protect-devices"></a>디바이스 보호
 
 ### <a name="include-trust-for-specific-files-and-folders-in-a-device-guard-policy"></a>특정 파일 및 폴더에 대한 트러스트를 Device Guard 정책에 포함
 <!--1324676--> 이 릴리스에서는 Device Guard 정책 관리에 기능이 추가되었습니다.

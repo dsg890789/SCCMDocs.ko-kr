@@ -50,27 +50,27 @@ ms.locfileid: "32333521"
  이러한 옵션에 대한 자세한 내용은 [System Center Configuration Manager의 클라이언트 설치 속성 정보](../../../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  
 
 ## <a name="install-client-language-packs-before-you-install-the-clients"></a>클라이언트를 설치하기 전에 클라이언트 언어 팩 설치  
-클라이언트를 배포하기 전에 클라이언트 언어 팩을 설치하는 것이 좋습니다. 클라이언트를 설치한 후에 추가 언어를 사용하기 위해 [클라이언트 언어 팩](../../../../core/servers/deploy/install/language-packs.md)을 설치할 경우 해당 언어를 사용하려면 먼저 클라이언트를 다시 설치해야 합니다. 모바일 장치 클라이언트의 경우 모바일 장치를 지우고 다시 등록해야 합니다.  
+클라이언트를 배포하기 전에 클라이언트 언어 팩을 설치하는 것이 좋습니다. 클라이언트를 설치한 후에 추가 언어를 사용하기 위해 [클라이언트 언어 팩](../../../../core/servers/deploy/install/language-packs.md)을 설치할 경우 해당 언어를 사용하려면 먼저 클라이언트를 다시 설치해야 합니다. 모바일 디바이스 클라이언트의 경우 모바일 디바이스를 지우고 다시 등록해야 합니다.  
 
 ## <a name="prepare-required-pki-certificates-in-advance"></a>필요한 PKI 인증서를 미리 준비  
- 인터넷상의 장치, 등록된 모바일 장치 및 Mac 컴퓨터를 관리하려면 사이트 시스템(관리 지점 및 배포 지점)과 클라이언트 장치에 PKI 인증서가 있어야 합니다. 프로덕션 네트워크에서 새 인증서를 사용하기 위한 변경 관리 승인이 필요하고 사이트 시스템 서버를 다시 시작하거나 사용자가 새 그룹 멤버 자격을 위해 로그오프했다가 로그온해야 할 수 있습니다. 또한 보안 권한 복제와 새 인증서 템플릿을 위한 충분한 시간을 고려해야 할 수 있습니다.  
+ 인터넷상의 디바이스, 등록된 모바일 디바이스 및 Mac 컴퓨터를 관리하려면 사이트 시스템(관리 지점 및 배포 지점)과 클라이언트 디바이스에 PKI 인증서가 있어야 합니다. 프로덕션 네트워크에서 새 인증서를 사용하기 위한 변경 관리 승인이 필요하고 사이트 시스템 서버를 다시 시작하거나 사용자가 새 그룹 멤버 자격을 위해 로그오프했다가 로그온해야 할 수 있습니다. 또한 보안 권한 복제와 새 인증서 템플릿을 위한 충분한 시간을 고려해야 할 수 있습니다.  
 
  필요한 PKI 인증서에 대한 자세한 내용은 [System Center Configuration Manager를 위한 PKI 인증서 요구 사항](../../../../core/plan-design/network/pki-certificate-requirements.md)을 참조하세요.  
 
 ## <a name="before-you-install-clients-configure-any-required-client-settings-and-maintenance-windows"></a>클라이언트를 설치하기 전에 필요한 클라이언트 설정 및 유지 관리 기간 구성  
  클라이언트 설치 전이나 후에 유지 관리 기간과 [클라이언트 설정을 구성](../../../../core/clients/deploy/configure-client-settings.md)할 수 있지만, 클라이언트 설치 후에 즉시 이러한 설정이 사용되도록 클라이언트 설치 전에 필요한 설정을 구성하는 것이 좋습니다. 
 
- 서버 및 Windows Embedded 장치에 대한 유지 관리 기간을 구성하여 중요한 장치의 비즈니스 연속성을 보장합니다. 필요한 소프트웨어 업데이트와 맬웨어 방지 소프트웨어로 인해 업무 시간 중에 컴퓨터가 다시 시작되지 않도록 유지 관리 기간을 구성할 수 있습니다.  
+ 서버 및 Windows Embedded 디바이스에 대한 유지 관리 기간을 구성하여 중요한 디바이스의 비즈니스 연속성을 보장합니다. 필요한 소프트웨어 업데이트와 맬웨어 방지 소프트웨어로 인해 업무 시간 중에 컴퓨터가 다시 시작되지 않도록 유지 관리 기간을 구성할 수 있습니다.  
 
 > [!IMPORTANT]  
->  UWF(통합 쓰기 필터)로 보호하려는 Windows 10 컴퓨터의 경우 클라이언트를 설치하기 전에 UWF에 대해 장치를 구성해야 합니다. 이를 통해 Configuration Manager에서 장치가 유지 관리 모드에 있는 동안 사용자가 장치에 로그인하지 못하도록 낮은 권한으로 잠그는 사용자 지정 자격 증명 공급자를 사용하여 클라이언트를 설치할 수 있습니다.  
+>  UWF(통합 쓰기 필터)로 보호하려는 Windows 10 컴퓨터의 경우 클라이언트를 설치하기 전에 UWF에 대해 디바이스를 구성해야 합니다. 이를 통해 Configuration Manager에서 디바이스가 유지 관리 모드에 있는 동안 사용자가 디바이스에 로그인하지 못하도록 낮은 권한으로 잠그는 사용자 지정 자격 증명 공급자를 사용하여 클라이언트를 설치할 수 있습니다.  
 
-## <a name="plan-your-user-enrollment-experience-for-mac-computers-and-mobile-devices"></a>Mac 컴퓨터와 모바일 장치에 대한 사용자 등록 환경 계획   
- 사용자가 Configuration Manager를 사용하여 자신의 Mac 컴퓨터와 모바일 장치를 등록하는 경우 사용자 환경을 계획합니다. 예를 들어 사용자가 필요한 최소한의 정보만 입력하면 되도록 웹 페이지를 사용하여 설치 및 등록 프로세스를 스크립팅하고, 메일에 포함된 링크로 사용자에게 지침을 보낼 수 있습니다.  
+## <a name="plan-your-user-enrollment-experience-for-mac-computers-and-mobile-devices"></a>Mac 컴퓨터와 모바일 디바이스에 대한 사용자 등록 환경 계획   
+ 사용자가 Configuration Manager를 사용하여 자신의 Mac 컴퓨터와 모바일 디바이스를 등록하는 경우 사용자 환경을 계획합니다. 예를 들어 사용자가 필요한 최소한의 정보만 입력하면 되도록 웹 페이지를 사용하여 설치 및 등록 프로세스를 스크립팅하고, 메일에 포함된 링크로 사용자에게 지침을 보낼 수 있습니다.  
 
-## <a name="use-file-based-write-filters-for-windows-embedded-devices"></a>Windows Embedded 장치에 대한 파일 기반 쓰기 필터 사용 
- EWF(강화된 쓰기 필터)를 사용하는 Windows Embedded 장치는 상태 메시지 재동기화가 이루어질 수 있습니다. EWF를 사용하는 Windows Embedded 장치가 몇 개에 불과한 경우 이러한 재동기화가 눈에 띄지 않지만 델타 인벤토리 대신 전체 인벤토리를 전송하는 것과 같이 정보를 재동기화하는 Windows Embedded 장치가 많을 경우 이로 인해 네트워크 패킷이 크게 증가하고 사이트 서버의 CPU 처리량이 늘어날 수 있습니다.  
+## <a name="use-file-based-write-filters-for-windows-embedded-devices"></a>Windows Embedded 디바이스에 대한 파일 기반 쓰기 필터 사용 
+ EWF(강화된 쓰기 필터)를 사용하는 Windows Embedded 디바이스는 상태 메시지 재동기화가 이루어질 수 있습니다. EWF를 사용하는 Windows Embedded 디바이스가 몇 개에 불과한 경우 이러한 재동기화가 눈에 띄지 않지만 델타 인벤토리 대신 전체 인벤토리를 전송하는 것과 같이 정보를 재동기화하는 Windows Embedded 디바이스가 많을 경우 이로 인해 네트워크 패킷이 크게 증가하고 사이트 서버의 CPU 처리량이 늘어날 수 있습니다.  
 
- Configuration Manager 클라이언트에서 사용할 쓰기 필터 유형을 선택하는 옵션이 나타나면 네트워크 및 CPU 효율성을 위해 파일 기반 쓰기 필터를 선택하고 장치 다시 시작 사이에 클라이언트 상태와 인벤토리 데이터를 유지하는 예외를 구성합니다. 필터 작성에 대한 자세한 내용은   [System Center Configuration Manager에서 Windows Embedded 장치에 클라이언트 배포 계획](../../../../core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)항목을 참조하세요.  
+ Configuration Manager 클라이언트에서 사용할 쓰기 필터 유형을 선택하는 옵션이 나타나면 네트워크 및 CPU 효율성을 위해 파일 기반 쓰기 필터를 선택하고 디바이스 다시 시작 사이에 클라이언트 상태와 인벤토리 데이터를 유지하는 예외를 구성합니다. 필터 작성에 대한 자세한 내용은   [Planning for client deployment to Windows Embedded devices in System Center Configuration Manager](../../../../core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)항목을 참조하세요.  
 
- 기본 사이트에서 지원할 수 있는 Windows Embedded 클라이언트의 최대 수에 대한 자세한 내용은 [클라이언트 및 장치에 대해 지원되는 운영 체제](../../../../core/plan-design/configs/supported-operating-systems-for-clients-and-devices.md)를 참조하세요.  
+ 기본 사이트에서 지원할 수 있는 Windows Embedded 클라이언트의 최대 수에 대한 자세한 내용은 [클라이언트 및 디바이스에 대해 지원되는 운영 체제](../../../../core/plan-design/configs/supported-operating-systems-for-clients-and-devices.md)를 참조하세요.  

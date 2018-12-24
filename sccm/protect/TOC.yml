@@ -93,7 +93,7 @@ items:
       href: deploy-use/troubleshoot-endpoint-client.md
     - name: Windows Defender FAQ
       href: deploy-use/endpoint-protection-client-faq.md
-    - name: 장치 보호 설정
+    - name: 디바이스 보호 설정
       href: deploy-use/use-device-guard-with-configuration-manager.md
   - name: Wi-Fi, VPN, 메일 및 인증서 프로필 배포
     href: deploy-use/deploy-wifi-vpn-email-cert-profiles.md

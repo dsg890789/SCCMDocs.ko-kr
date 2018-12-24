@@ -1,7 +1,7 @@
 ---
 title: 경계 및 경계 그룹 사용
 titleSuffix: Configuration Manager
-description: 경계 및 경계 그룹을 사용하여 관리하는 장치에 대한 네트워크 위치 및 액세스 가능한 사이트 시스템을 정의합니다.
+description: 경계 및 경계 그룹을 사용하여 관리하는 디바이스에 대한 네트워크 위치 및 액세스 가능한 사이트 시스템을 정의합니다.
 ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -21,7 +21,7 @@ ms.locfileid: "32334847"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 경계는 관리하려는 장치를 포함할 수 있는 인트라넷의 네트워크 위치를 정의합니다. 경계 그룹은 구성하는 경계의 논리적 그룹입니다.
+System Center Configuration Manager의 경계는 관리하려는 디바이스를 포함할 수 있는 인트라넷의 네트워크 위치를 정의합니다. 경계 그룹은 구성하는 경계의 논리적 그룹입니다.
 
  계층 구조는 경계 그룹을 원하는 개수만큼 포함할 수 있으며, 각 경계 그룹은 다음 경계 유형의 모든 조합을 포함할 수 있습니다.  
 

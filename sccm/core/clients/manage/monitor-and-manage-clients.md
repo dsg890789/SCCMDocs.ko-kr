@@ -21,7 +21,7 @@ ms.locfileid: "32332698"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager(ConfigMgr 또는 SCCM이라고도 함)는 조직의 컴퓨터 및 장치에 배포된 후 클라이언트 소프트웨어를 모니터링하고 관리하는 여러 가지 방법을 제공합니다.  클라이언트를 모니터링하여 해당 상태를 확인할 수 있으며, 일부 경우에는 Configuration Manager에서 검색된 문제에 따라 자동 수정을 수행할 수 있습니다. 또한 Configuration Manager 콘솔에서는 개별 장치 또는 장치 컬렉션의 클라이언트를 관리하는 방법도 제공합니다.  
+System Center Configuration Manager(ConfigMgr 또는 SCCM이라고도 함)는 조직의 컴퓨터 및 디바이스에 배포된 후 클라이언트 소프트웨어를 모니터링하고 관리하는 여러 가지 방법을 제공합니다.  클라이언트를 모니터링하여 해당 상태를 확인할 수 있으며, 일부 경우에는 Configuration Manager에서 검색된 문제에 따라 자동 수정을 수행할 수 있습니다. 또한 Configuration Manager 콘솔에서는 개별 디바이스 또는 디바이스 컬렉션의 클라이언트를 관리하는 방법도 제공합니다.  
 
  다음 항목의 내용을 통해 클라이언트를 모니터링하고 관리하는 방법뿐만 아니라 Linux 및 UNIX 서버의 클라이언트를 모니터링하고 관리하는 방법에 대한 자세한 내용을 알아보세요.  
 

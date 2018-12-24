@@ -36,7 +36,7 @@ System Center Configuration Manager에서 Linux 및 UNIX 서버를 관리하는 
 
  하드웨어 인벤토리에 대한 기본 클라이언트 설정에는 클라이언트 컴퓨터의 운영 체제에 대한 정보가 포함됩니다. **운영 체제** 클래스의 **캡션** 속성을 사용하여 Linux 또는 UNIX 서버의 운영 체제를 식별할 수 있습니다.  
 
- Configuration Manager 콘솔에 있는 **자산 및 준수** 작업 영역의 **장치** 노드에서 Linux 및 UNIX용 Configuration Manager 클라이언트를 실행하는 컴퓨터에 대한 세부 정보를 볼 수 있습니다. Configuration Manager 콘솔의 **자산 및 준수** 작업 영역에 있는 **운영 체제** 열에서 각 컴퓨터 운영 체제의 이름을 볼 수 있습니다.  
+ Configuration Manager 콘솔에 있는 **자산 및 준수** 작업 영역의 **디바이스** 노드에서 Linux 및 UNIX용 Configuration Manager 클라이언트를 실행하는 컴퓨터에 대한 세부 정보를 볼 수 있습니다. Configuration Manager 콘솔의 **자산 및 준수** 작업 영역에 있는 **운영 체제** 열에서 각 컴퓨터 운영 체제의 이름을 볼 수 있습니다.  
 
  기본적으로 Linux 및 UNIX 서버는 **모든 시스템** 컬렉션의 멤버입니다. Linux 및 UNIX 서버 또는 그 하위 집합만을 포함하는 사용자 지정 컬렉션을 빌드하는 것이 좋습니다. 사용자 지정 컬렉션을 사용하면 소프트웨어 배포 또는 유사 컴퓨터 그룹에 클라이언트 설정 할당과 같은 작업을 관리할 수 있으므로 배포에 성공했는지 정확히 측정할 수 있습니다.   
 
@@ -52,7 +52,7 @@ System Center Configuration Manager에서 Linux 및 UNIX 서버를 관리하는 
 
  Linux 및 UNIX 클라이언트에만 적용하는 추가 클라이언트 설정은 없습니다. 그러나 Linux 및 UNIX 클라이언트에 적용하지 않는 기본 클라이언트 설정은 있습니다. Linux 및 UNIX용 클라이언트는 지원되는 기능에 대한 설정만 적용합니다.  
 
- 예를 들어 원격 제어 설정을 사용하도록 설정하고 구성하는 사용자 지정 클라이언트 장치 설정은 Linux 및 UNIX 서버에서 무시됩니다. Linux 및 UNIX용 클라이언트는 원격 제어를 지원하지 않기 때문입니다.  
+ 예를 들어 원격 제어 설정을 사용하도록 설정하고 구성하는 사용자 지정 클라이언트 디바이스 설정은 Linux 및 UNIX 서버에서 무시됩니다. Linux 및 UNIX용 클라이언트는 원격 제어를 지원하지 않기 때문입니다.  
 
 ##  <a name="BKMK_PolicyforLnU"></a> Linux 및 UNIX 서버에 대 한 컴퓨터 정책  
  Linux 및 UNIX 서버용 클라이언트는 주기적으로 컴퓨터 정책에 대해 해당 사이트를 폴링하여 요청된 구성에 대해 알아보고 배포를 확인합니다.  

@@ -1,7 +1,7 @@
 ---
-title: 지원되는 클라이언트 및 장치
+title: 지원되는 클라이언트 및 디바이스
 titleSuffix: Configuration Manager
-description: Configuration Manager에서 클라이언트 및 장치에 대해 지원하는 OS 버전을 알아봅니다.
+description: Configuration Manager에서 클라이언트 및 디바이스에 대해 지원하는 OS 버전을 알아봅니다.
 ms.date: 10/02/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -17,7 +17,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/28/2018
 ms.locfileid: "52456484"
 ---
-# <a name="supported-os-versions-for-clients-and-devices-for-configuration-manager"></a>Configuration Manager의 클라이언트 및 장치에 대해 지원되는 OS 버전
+# <a name="supported-os-versions-for-clients-and-devices-for-configuration-manager"></a>Configuration Manager의 클라이언트 및 디바이스에 대해 지원되는 OS 버전
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -102,7 +102,7 @@ Windows Server 반기 채널 버전은 Windows Server 버전 1809 같은 Server 
 
 ##  <a name="windows-embedded-computers"></a>Windows Embedded 컴퓨터  
 
- 장치에 Configuration Manager 클라이언트를 설치하여 Windows Embedded 장치를 관리할 수 있습니다. 자세한 내용은 [Windows Embedded 장치에 클라이언트 배포 계획](/sccm/core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices)을 참조하세요.  
+ 디바이스에 Configuration Manager 클라이언트를 설치하여 Windows Embedded 디바이스를 관리할 수 있습니다. 자세한 내용은 [Windows Embedded 디바이스에 클라이언트 배포 계획](/sccm/core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices)을 참조하세요.  
 
 
 ### <a name="requirements-and-limitations"></a>요구 사항 및 제한 사항:
@@ -117,7 +117,7 @@ Windows Server 반기 채널 버전은 Windows Server 버전 1809 같은 Server 
 
     -   통합 쓰기 필터(UWF)  
 
--   Windows Embedded 장치에는 응용 프로그램 카탈로그가 지원되지 않습니다.  
+-   Windows Embedded 디바이스에는 응용 프로그램 카탈로그가 지원되지 않습니다.  
 
 
 ### <a name="supported-os-versions"></a>지원된 OS 버전  
@@ -141,14 +141,14 @@ Windows Server 반기 채널 버전은 Windows Server 버전 1809 같은 Server 
 
 ## <a name="windows-ce-computers"></a>Windows CE 컴퓨터
 
- Configuration Manager와 함께 제공되는 Configuration Manager 모바일 장치 레거시 클라이언트에서 Windows CE 장치를 관리할 수 있습니다.  
+ Configuration Manager와 함께 제공되는 Configuration Manager 모바일 디바이스 레거시 클라이언트에서 Windows CE 디바이스를 관리할 수 있습니다.  
 
 
 ### <a name="requirements-and-limitations"></a>요구 사항 및 제한 사항:  
 
--   모바일 장치 클라이언트를 설치하려면 0.78MB의 저장소 공간이 필요합니다. 로그인은 256KB의 추가 저장소 공간이 필요할 수 있습니다.    
+-   모바일 디바이스 클라이언트를 설치하려면 0.78MB의 저장소 공간이 필요합니다. 로그인은 256KB의 추가 저장소 공간이 필요할 수 있습니다.    
 
--   이러한 모바일 장치의 기능은 플랫폼 및 클라이언트 유형별로 달라집니다. 지원되는 관리 기능에 대한 자세한 내용은 [장치 관리 솔루션 선택](/sccm/core/plan-design/choose-a-device-management-solution)을 참조하세요.  
+-   이러한 모바일 디바이스의 기능은 플랫폼 및 클라이언트 유형별로 달라집니다. 지원되는 관리 기능에 대한 자세한 내용은 [디바이스 관리 솔루션 선택](/sccm/core/plan-design/choose-a-device-management-solution)을 참조하세요.  
 
 
 ### <a name="supported-os-versions"></a>지원된 OS 버전  
@@ -326,7 +326,7 @@ Windows Server 반기 채널 버전은 Windows Server 버전 1809 같은 Server 
 
 ##  <a name="bkmk_OnpremOS"></a> 온-프레미스 모바일 장치 관리  
 
- Configuration Manager에는 클라이언트 소프트웨어를 설치하지 않고 온-프레미스의 장치를 관리할 수 있는 기본 제공 기능이 있습니다. 자세한 내용은 [온-프레미스 인프라로 모바일 장치 관리](/sccm/mdm/understand/manage-mobile-devices-with-on-premises-infrastructure)를 참조하세요.  
+ Configuration Manager에는 클라이언트 소프트웨어를 설치하지 않고 온-프레미스의 디바이스를 관리할 수 있는 기본 제공 기능이 있습니다. 자세한 내용은 [온-프레미스 인프라로 모바일 디바이스 관리](/sccm/mdm/understand/manage-mobile-devices-with-on-premises-infrastructure)를 참조하세요.  
 
 
 ### <a name="requirements-and-limitations"></a>요구 사항 및 제한 사항:
@@ -355,7 +355,7 @@ Windows Server 반기 채널 버전은 Windows Server 버전 1809 같은 Server 
 
 ##  <a name="bkmk_ExSrvConOS"></a> Exchange Server 커넥터  
 
-Configuration Manager에서는 Configuration Manager 클라이언트를 설치하지 않고 Exchange Server에 연결하는 장치에 대한 제한적인 관리를 지원합니다. 자세한 내용은 [Configuration Manager와 Exchange를 사용하여 모바일 장치 관리](/sccm/mdm/deploy-use/manage-mobile-devices-with-exchange-activesync)를 참조하세요.  
+Configuration Manager에서는 Configuration Manager 클라이언트를 설치하지 않고 Exchange Server에 연결하는 디바이스에 대한 제한적인 관리를 지원합니다. 자세한 내용은 [Configuration Manager와 Exchange를 사용하여 모바일 디바이스 관리](/sccm/mdm/deploy-use/manage-mobile-devices-with-exchange-activesync)를 참조하세요.  
 
 
 ### <a name="supported-versions-of-exchange-server"></a>Exchange Server의 지원되는 버전

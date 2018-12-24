@@ -1,7 +1,7 @@
 ---
 title: 업그레이드 준비
 titleSuffix: Configuration Manager
-description: 업그레이드 준비를 Configuration Manager와 통합하면 Windows 10 업그레이드 호환성 데이터와 업그레이드 또는 수정 대상 장치에 액세스할 수 있습니다.
+description: 업그레이드 준비를 Configuration Manager와 통합하면 Windows 10 업그레이드 호환성 데이터와 업그레이드 또는 수정 대상 디바이스에 액세스할 수 있습니다.
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
@@ -21,7 +21,7 @@ ms.locfileid: "43995355"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-업그레이드 준비는 [Windows Analytics](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness)의 일부로, Windows 10으로 업그레이드하기 위해 사용자 환경에서 장치의 준비 상태를 평가하고 분석할 수 있습니다. 업그레이드 준비를 Configuration Manager와 통합하면 Configuration Manager 콘솔에서 클라이언트 업그레이드 호환성 데이터에 액세스할 수 있습니다. 이 데이터를 사용하여 컬렉션과 업그레이드 또는 수정 대상 장치를 생성합니다.
+업그레이드 준비는 [Windows Analytics](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness)의 일부로, Windows 10으로 업그레이드하기 위해 사용자 환경에서 디바이스의 준비 상태를 평가하고 분석할 수 있습니다. 업그레이드 준비를 Configuration Manager와 통합하면 Configuration Manager 콘솔에서 클라이언트 업그레이드 호환성 데이터에 액세스할 수 있습니다. 이 데이터를 사용하여 컬렉션과 업그레이드 또는 수정 대상 디바이스를 생성합니다.
 
 
 
@@ -42,7 +42,7 @@ ms.locfileid: "43995355"
 구성 관리자 클라이언트 설정을 사용하여 이러한 설정을 구성합니다. 자세한 내용은 [Windows Analytics 사용](/sccm/core/clients/manage/monitor-windows-analytics)을 참조하세요.
 
 > [!NOTE]  
-> 대부분의 환경에서는 올바른 필수 구성 요소 업데이트를 배포하고 클라이언트 설정을 구성하는 것으로 충분합니다. 사용자 환경의 장치에서 데이터를 받지 못하는 업그레이드 준비 문제가 발생하면 [업그레이드 준비 배포 스크립트](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-readiness-deployment-script)를 사용하여 이러한 문제 중 일부를 해결할 수 있습니다. 
+> 대부분의 환경에서는 올바른 필수 구성 요소 업데이트를 배포하고 클라이언트 설정을 구성하는 것으로 충분합니다. 사용자 환경의 디바이스에서 데이터를 받지 못하는 업그레이드 준비 문제가 발생하면 [업그레이드 준비 배포 스크립트](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-readiness-deployment-script)를 사용하여 이러한 문제 중 일부를 해결할 수 있습니다. 
 
 
 
@@ -83,11 +83,11 @@ Azure Portal에서 새로 등록된 웹앱에 *참가자* 권한을 제공합니
 
 2. 데이터를 검토하세요. 예:  
     - 업그레이드 준비 상태  
-    - 데이터를 보고하는 Windows 장치의 백분율  
+    - 데이터를 보고하는 Windows 디바이스의 백분율  
 
-3. 대시보드를 필터링하여 특정 컬렉션의 장치에 대한 데이터를 볼 수 있습니다.  
+3. 대시보드를 필터링하여 특정 컬렉션의 디바이스에 대한 데이터를 볼 수 있습니다.  
 
-4. 특정 준비 상태의 장치를 확인하고 해당 장치에 대한 동적 컬렉션을 만듭니다. 그런 다음 해당 컬렉션을 사용하여 장치를 업그레이드하거나 차단된 상태의 장치를 수정하는 조치를 수행합니다.  
+4. 특정 준비 상태의 디바이스를 확인하고 해당 디바이스에 대한 동적 컬렉션을 만듭니다. 그런 다음 해당 컬렉션을 사용하여 디바이스를 업그레이드하거나 차단된 상태의 디바이스를 수정하는 조치를 수행합니다.  
 
 > [!Note]  
 > 이 사이트는 일주일에 한 번씩 업그레이드 준비와 데이터를 동기화합니다.<!--SCCMDocs issue 732--> 동기화를 수동으로 트리거하려면 다음을 수행하세요.

@@ -33,18 +33,18 @@ SCAP 데이터 스트림 파일을 [변환하고 가져온 후에는](/sccm/comp
 
 ## <a name="bkmk_deploy"></a>SCAP 구성 기준 배포
 
-먼저 SCAP 준수를 평가하려는 컴퓨터에 장치 컬렉션을 만듭니다. 자세한 내용은 [컬렉션 만들기](/sccm/core/clients/manage/collections/create-collections)를 참조하세요.  
+먼저 SCAP 준수를 평가하려는 컴퓨터에 디바이스 컬렉션을 만듭니다. 자세한 내용은 [컬렉션 만들기](/sccm/core/clients/manage/collections/create-collections)를 참조하세요.  
 
-이제 장치 컬렉션에 가져온 구성 기준을 배포할 수 있습니다. 자세한 내용은 [구성 기준 배포 방법](/sccm/compliance/deploy-use/deploy-configuration-baselines)을 참조하세요.  
+이제 디바이스 컬렉션에 가져온 구성 기준을 배포할 수 있습니다. 자세한 내용은 [구성 기준 배포 방법](/sccm/compliance/deploy-use/deploy-configuration-baselines)을 참조하세요.  
 
 > [!Tip]  
-> 각각의 장치 컬렉션에 배포하려는 각 구성 기준에 대해 이 프로세스를 반복합니다. 최소한 각 구성 기준을 하나 이상의 장치 컬렉션에 할당합니다.
+> 각각의 디바이스 컬렉션에 배포하려는 각 구성 기준에 대해 이 프로세스를 반복합니다. 최소한 각 구성 기준을 하나 이상의 디바이스 컬렉션에 할당합니다.
 
 
 
 ## <a name="bkmk_monitor"></a> SCAP 준수 데이터 모니터 
 
-준수 데이터를 다시 SCAP 형식으로 내보내기 전에 사이트가 데이터를 수집했는지 확인해야 합니다. 구성 기준을 컴퓨터 컬렉션에 배포하고 나면 해당 컬렉션의 각 장치에 설치된 Configuration Manager 클라이언트가 준수 정보를 자동으로 수집합니다. 이렇게 수집된 준수 정보는 Configuration Manager 데이터베이스에 저장됩니다.
+준수 데이터를 다시 SCAP 형식으로 내보내기 전에 사이트가 데이터를 수집했는지 확인해야 합니다. 구성 기준을 컴퓨터 컬렉션에 배포하고 나면 해당 컬렉션의 각 디바이스에 설치된 Configuration Manager 클라이언트가 준수 정보를 자동으로 수집합니다. 이렇게 수집된 준수 정보는 Configuration Manager 데이터베이스에 저장됩니다.
 
 Configuration Manager에서 구성 기준 배포 상태를 보면 Configuration Manager 클라이언트가 적합한 데이터를 수집했는지 확인합니다. Configuration Manager에서 적합한 준수 데이터가 수집된 경우 프로세스 뒷부분에서 만들 XCCDF/DataStream 결과 파일의 유효성을 검사하는 데 사용할 수 있으므로 데이터 수집 여부를 반드시 확인해야 합니다.
 

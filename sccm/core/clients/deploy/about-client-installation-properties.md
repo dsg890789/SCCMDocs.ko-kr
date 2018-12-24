@@ -107,7 +107,7 @@ ccmsetup.exe의 명령줄 매개 변수를 보여 주는 **CCMSetup** 대화 상
 
 FQDN을 사용하는 경우의 예: `ccmsetup.exe /mp:smsmp01.contoso.com`  
 
-이 매개 변수는 클라우드 관리 게이트웨이의 URL을 지정할 수 있습니다. 인터넷 기반 장치에서 클라이언트를 설치하려면 이 URL을 사용합니다. 이 매개 변수의 값을 가져오려면 다음 단계를 사용합니다.
+이 매개 변수는 클라우드 관리 게이트웨이의 URL을 지정할 수 있습니다. 인터넷 기반 디바이스에서 클라이언트를 설치하려면 이 URL을 사용합니다. 이 매개 변수의 값을 가져오려면 다음 단계를 사용합니다.
 - 클라우드 관리 게이트웨이를 만듭니다.
 - 활성 클라이언트에서 관리자 권한으로 Windows PowerShell 명령 프롬프트를 엽니다. 
 - 다음 명령을 실행합니다. `(Get-WmiObject -Namespace Root\Ccm\LocationServices -Class SMS_ActiveMPCandidate | Where-Object {$_.Type -eq "Internet"}).MP`
@@ -282,9 +282,9 @@ Azure 관리자가 Azure Portal에서 이 속성에 대한 값을 가져올 수 
 ### <a name="aadtenantid"></a>AADTENANTID
 
 Azure AD 테넌트 식별자를 지정합니다. 클라우드 관리를 위한 [Azure 서비스 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)할 때 이 테넌트는 Configuration Manager에 연결됩니다. 이 속성에 대한 값을 가져오려면 다음 단계를 사용합니다.
-- 동일한 Azure AD 테넌트에 가입된 Windows 10 장치에서 명령 프롬프트를 엽니다.
+- 동일한 Azure AD 테넌트에 가입된 Windows 10 디바이스에서 명령 프롬프트를 엽니다.
 - 다음 명령을 실행합니다. `dsregcmd.exe /status`
-- 장치 상태 섹션에서 **TenantId** 값을 찾습니다. 예를 들면 `TenantId : 607b7853-6f6f-4d5d-b3d4-811c33fdd49a`
+- 디바이스 상태 섹션에서 **TenantId** 값을 찾습니다. 예를 들면 `TenantId : 607b7853-6f6f-4d5d-b3d4-811c33fdd49a`
 
  > [!Note]
  > Azure 관리자는 Azure Portal에서 이 값을 가져울 수도 있습니다. 자세한 내용은 [테넌트 ID 가져오기](/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-tenant-id) 참조

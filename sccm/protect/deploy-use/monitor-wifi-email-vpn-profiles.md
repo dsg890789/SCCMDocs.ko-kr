@@ -12,7 +12,7 @@ manager: dougeby
 ms.author: aaroncz
 ms.openlocfilehash: 47b5bb12a89143a0c7e6d16a3252948b955b8ff3
 ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
 ms.locfileid: "32349214"
@@ -45,7 +45,7 @@ System Center Configuration Manager 메일, Wi-Fi 또는 VPN 프로필을 계층
     -   **규격:** 영향받는 자산 수에 따라 프로필의 준수를 표시합니다. 규칙을 두 번 클릭하여 **자산 및 호환성** 작업 영역의 **사용자** 노드 아래에 임시 노드를 만들 수 있습니다. 그러면 이 프로필과 호환되는 모든 사용자가 해당 노드에 포함됩니다. **자산 정보** 창에 프로필과 호환되는 사용자가 표시됩니다. 목록에서 추가 정보를 표시할 사용자를 두 번 클릭합니다.  
 
         > [!IMPORTANT]  
-        >  프로필이 클라이언트 장치에 적용되지 않는 경우에는 해당 프로필이 평가되지 않지만, 호환 상태로 반환됩니다.  
+        >  프로필이 클라이언트 디바이스에 적용되지 않는 경우에는 해당 프로필이 평가되지 않지만, 호환 상태로 반환됩니다.  
 
     -   **오류:** 영향받는 자산 수에 따라 선택한 프로필 배포의 모든 오류 목록을 표시합니다. 규칙을 두 번 클릭하여 **자산 및 호환성** 작업 영역의 **사용자** 노드 아래에 임시 노드를 만들 수 있습니다. 그러면 이 프로필에 대해 오류를 생성한 모든 사용자가 해당 노드에 포함됩니다. 사용자를 선택하면 **자산 정보** 창에 선택한 문제의 영향을 받는 사용자가 표시됩니다. 목록에서 문제에 대한 추가 정보를 표시할 사용자를 두 번 클릭합니다.  
 
@@ -59,6 +59,6 @@ System Center Configuration Manager 메일, Wi-Fi 또는 VPN 프로필을 계층
  준수 설정에는 System Center Configuration Manager의 프로필을 비롯하여 프로필 관련 정보를 모니터링할 수 있는 기본 제공 보고서도 많이 포함되어 있습니다. 이러한 보고서에는 **호환 및 설정 관리**라는 보고서 범주가 있습니다.  
 
 > [!IMPORTANT]  
->  호환성 설정 보고서에서 **장치 필터** 및 **사용자 필터** 매개 변수를 사용할 때 와일드카드(%) 문자를 사용해야 합니다.  
+>  호환성 설정 보고서에서 **디바이스 필터** 및 **사용자 필터** 매개 변수를 사용할 때 와일드카드(%) 문자를 사용해야 합니다.  
 
  System Center Configuration Manager에서 보고를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고](../../core/servers/manage/reporting.md)를 참조하세요.  

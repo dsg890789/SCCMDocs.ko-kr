@@ -322,7 +322,7 @@ Configuration Manager는 자동으로 그룹 멤버 자격을 관리합니다. �
 
 ### <a name="exchange-server-connection-account"></a>Exchange Server 연결 계정  
 
- 사이트 서버는 **Exchange Server 연결 계정**을 사용하여 지정된 Exchange Server에 연결합니다. 이 연결을 통해 Exchange Server에 연결하는 모바일 장치를 찾고 관리합니다. 이 계정에는 Exchange Server 컴퓨터에 대한 필수 권한을 제공하는 Exchange PowerShell cmdlet이 필요합니다. cmdlet에 대한 자세한 내용은 [Configuration Manager와 Exchange를 사용하여 모바일 장치 관리](/sccm/mdm/deploy-use/manage-mobile-devices-with-exchange-activesync)를 참조하세요.  
+ 사이트 서버는 **Exchange Server 연결 계정**을 사용하여 지정된 Exchange Server에 연결합니다. 이 연결을 통해 Exchange Server에 연결하는 모바일 디바이스를 찾고 관리합니다. 이 계정에는 Exchange Server 컴퓨터에 대한 필수 권한을 제공하는 Exchange PowerShell cmdlet이 필요합니다. cmdlet에 대한 자세한 내용은 [Configuration Manager와 Exchange를 사용하여 모바일 디바이스 관리](/sccm/mdm/deploy-use/manage-mobile-devices-with-exchange-activesync)를 참조하세요.  
 
 
 ### <a name="management-point-connection-account"></a>관리 지점 연결 계정  
@@ -388,7 +388,7 @@ Configuration Manager는 자동으로 그룹 멤버 자격을 관리합니다. �
 
 ### <a name="package-access-account"></a>패키지 액세스 계정  
 
- **패키지 액세스 계정**을 통해 NTFS 권한을 설정하여 배포 지점의 패키지 콘텐츠에 액세스할 수 있는 사용자 및 사용자 그룹을 지정할 수 있습니다. 기본적으로 Configuration Manager에서는 일반 액세스 계정인 **사용자** 및 **관리자**에게만 액세스 권한을 부여합니다. 클라이언트 컴퓨터에 대한 액세스는 추가 Windows 계정 또는 그룹을 사용하여 제어할 수 있습니다. 모바일 장치에서는 항상 패키지 콘텐츠를 익명으로 검색하므로 패키지 액세스 계정을 사용하지 않습니다.  
+ **패키지 액세스 계정**을 통해 NTFS 권한을 설정하여 배포 지점의 패키지 콘텐츠에 액세스할 수 있는 사용자 및 사용자 그룹을 지정할 수 있습니다. 기본적으로 Configuration Manager에서는 일반 액세스 계정인 **사용자** 및 **관리자**에게만 액세스 권한을 부여합니다. 클라이언트 컴퓨터에 대한 액세스는 추가 Windows 계정 또는 그룹을 사용하여 제어할 수 있습니다. 모바일 디바이스에서는 항상 패키지 콘텐츠를 익명으로 검색하므로 패키지 액세스 계정을 사용하지 않습니다.  
 
  기본적으로 Configuration Manager는 콘텐츠 파일을 배포 지점에 복사할 때 로컬 **사용자** 그룹에 **읽기** 액세스 권한을, 로컬 **관리자** 그룹에는 **전체 제어** 권한을 부여합니다. 필요한 실제 권한은 패키지에 따라 다릅니다. 작업 그룹 또는 신뢰할 수 없는 포리스트에 클라이언트가 있는 경우 해당 클라이언트는 네트워크 액세스 계정을 사용하여 패키지 콘텐츠에 액세스합니다. 정의된 액세스 권한을 사용하여 네트워크 액세스 계정에 패키지에 대한 사용 권한이 있는지 확인합니다.  
 

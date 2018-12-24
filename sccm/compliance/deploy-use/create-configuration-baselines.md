@@ -22,7 +22,7 @@ ms.locfileid: "39384674"
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 
-System Center Configuration Manager의 구성 기준에는 미리 정의된 구성 항목과 필요에 따라 다른 구성 기준이 포함됩니다. 구성 기준을 만든 다음 컬렉션에 배포하여 컬렉션의 장치가 구성 기준을 다운로드하고 이를 준수하는지 평가하게 할 수 있습니다.  
+System Center Configuration Manager의 구성 기준에는 미리 정의된 구성 항목과 필요에 따라 다른 구성 기준이 포함됩니다. 구성 기준을 만든 다음 컬렉션에 배포하여 컬렉션의 디바이스가 구성 기준을 다운로드하고 이를 준수하는지 평가하게 할 수 있습니다.  
 
  Configuration Manager의 구성 기준에 특정한 수정 버전의 구성 항목을 포함하거나 항상 최신 버전의 구성 항목을 사용하도록 구성할 수 있습니다. 구성 항목 수정 버전에 대한 자세한 내용은 [구성 데이터에 대한 관리 작업](../../compliance/deploy-use/management-tasks-for-configuration-data.md)을 참조하세요.  
 
@@ -60,7 +60,7 @@ System Center Configuration Manager의 구성 기준에는 미리 정의된 구�
     > [!NOTE]
     >  **용도 변경** 목록은 **구성 항목 만들기 마법사** 의 **일반** 페이지에서 **이 구성 항목에 응용 프로그램 설정 포함**옵션을 클릭했을 때만 사용 가능합니다.  
 
-6.  클라이언트 장치에서 준수 여부를 평가하기 위해 특정 또는 최신 수정 버전의 구성 항목을 선택하려면 **수정 버전 변경** 목록을 선택하고, 항상 최신 수정 버전을 사용하려면 **항상 최신 버전 사용** 을 선택합니다. 구성 항목 수정 버전에 대한 자세한 내용은 [구성 데이터에 대한 관리 작업](../../compliance/deploy-use/management-tasks-for-configuration-data.md)을 참조하세요.  
+6.  클라이언트 디바이스에서 준수 여부를 평가하기 위해 특정 또는 최신 수정 버전의 구성 항목을 선택하려면 **수정 버전 변경** 목록을 선택하고, 항상 최신 수정 버전을 사용하려면 **항상 최신 버전 사용** 을 선택합니다. 구성 항목 수정 버전에 대한 자세한 내용은 [구성 데이터에 대한 관리 작업](../../compliance/deploy-use/management-tasks-for-configuration-data.md)을 참조하세요.  
 
 7.  구성 기준에서 구성 항목을 제거하려면 구성 항목을 선택한 다음 **제거**를 클릭합니다.  
 

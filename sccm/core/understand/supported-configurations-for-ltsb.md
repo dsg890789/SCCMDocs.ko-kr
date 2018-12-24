@@ -86,7 +86,7 @@ LTSB를 사용하여 Configuration Manager에 포함된 Configuration Manager �
 **(참고 2)** 클라이언트 강제 설치를 지원하려면 이 운영 체제 버전을 실행하는 컴퓨터에서 파일 및 저장소 서비스 서버 역할용으로 파일 서버 역할 서비스를 실행해야 합니다. Server Core 컴퓨터에 Windows 기능을 설치하는 방법에 대한 자세한 내용은 Windows Server 2012 TechNet 라이브러리에서 [Server Core 서버에 서버 역할 및 기능 설치](https://technet.microsoft.com/library/jj574158(v=ws.11).aspx)를 참조하세요.
 
 ### <a name="windows-embedded"></a>Windows Embedded
-장치에 클라이언트 소프트웨어를 설치하면 LTSB를 사용하여 다음 Windows Embedded 장치를 관리할 수 있습니다.  자세한 내용은 [System Center Configuration Manager에서 Windows Embedded 장치에 클라이언트 배포 계획](/sccm/core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices)을 참조하세요.
+디바이스에 클라이언트 소프트웨어를 설치하면 LTSB를 사용하여 다음 Windows Embedded 디바이스를 관리할 수 있습니다.  자세한 내용은 [System Center Configuration Manager에서 Windows Embedded 디바이스에 클라이언트 배포 계획](/sccm/core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices)을 참조하세요.
 
 **요구 사항 및 제한 사항:**  
 
@@ -100,9 +100,9 @@ LTSB를 사용하여 Configuration Manager에 포함된 Configuration Manager �
 
     -   통합 쓰기 필터(UWF)  
 
--   Windows Embedded 장치에는 응용 프로그램 카탈로그가 지원되지 않습니다.  
+-   Windows Embedded 디바이스에는 응용 프로그램 카탈로그가 지원되지 않습니다.  
 
--   Windows XP를 기반으로 하는 Windows Embedded 장치에서는 검색된 맬웨어를 모니터링할 수 있으므로 임베디드 장치에 Microsoft Windows WMI 스크립팅 패키지를 설치해야 합니다. 이 패키지를 설치하려면 Windows Embedded Target Designer를 사용합니다. 이 경우 *WBEMDISP.DLL* 및 *WBEMDISP.TLB* 파일이 있고 포함된 장치의 %windir%\System32\WBEM 폴더에 등록되어 있어야 검색된 맬웨어가 보고됩니다.  
+-   Windows XP를 기반으로 하는 Windows Embedded 디바이스에서는 검색된 맬웨어를 모니터링할 수 있으므로 임베디드 디바이스에 Microsoft Windows WMI 스크립팅 패키지를 설치해야 합니다. 이 패키지를 설치하려면 Windows Embedded Target Designer를 사용합니다. 이 경우 *WBEMDISP.DLL* 및 *WBEMDISP.TLB* 파일이 있고 포함된 디바이스의 %windir%\System32\WBEM 폴더에 등록되어 있어야 검색된 맬웨어가 보고됩니다.  
 
 **지원되는 운영 체제:**  
 -   Windows 10 Enterprise 2016 LTSB(x86, x64)  
@@ -115,13 +115,13 @@ LTSB를 사용하여 Configuration Manager에 포함된 Configuration Manager �
 -   Windows Embedded Standard 2009(x86)  
 
 ### <a name="windows-ce"></a>Windows CE  
- Configuration Manager와 함께 제공되는 Configuration Manager 모바일 장치 레거시 클라이언트에서 Windows CE 장치를 관리할 수 있습니다.  
+ Configuration Manager와 함께 제공되는 Configuration Manager 모바일 디바이스 레거시 클라이언트에서 Windows CE 디바이스를 관리할 수 있습니다.  
 
 **요구 사항 및 제한 사항:**  
 
--   모바일 장치 클라이언트를 설치하려면 0.78MB의 저장소 공간이 필요합니다. 모바일 장치에서 로그인하려면 최대 256KB의 추가 저장소 공간이 필요할 수 있습니다.    
+-   모바일 디바이스 클라이언트를 설치하려면 0.78MB의 저장소 공간이 필요합니다. 모바일 디바이스에서 로그인하려면 최대 256KB의 추가 저장소 공간이 필요할 수 있습니다.    
 
--   이러한 모바일 장치의 기능은 플랫폼 및 클라이언트 유형별로 달라집니다. Configuration Manager에서 모바일 장치 레거시 클라이언트에 대해 지원하는 관리 기능 종류에 대한 자세한 내용은 [System Center Configuration Manager용 장치 관리 솔루션 선택](/sccm/core/plan-design/choose-a-device-management-solution)을 참조하세요.  
+-   이러한 모바일 디바이스의 기능은 플랫폼 및 클라이언트 유형별로 달라집니다. Configuration Manager에서 모바일 디바이스 레거시 클라이언트에 대해 지원하는 관리 기능 종류에 대한 자세한 내용은 [System Center Configuration Manager용 디바이스 관리 솔루션 선택](/sccm/core/plan-design/choose-a-device-management-solution)을 참조하세요.  
 
 **지원되는 운영 체제:**  
 
@@ -265,13 +265,13 @@ Linux 및 UNIX 운영 체제에 대한 지원은 이 섹션에 나열된 운영 
 |버전 14.04 LTS x64|ccm-Universalx64.&lt;빌드\>.tar|  
 
 ### <a name="exchange-server-connector"></a>Exchange Server 커넥터
- LTSB에서는 클라이언트 소프트웨어를 설치하지 않고 Exchange Sever 인스턴스에 연결하는 장치에 대해 제한적인 관리를 지원합니다. 자세한 내용은 [System Center Configuration Manager와 Exchange를 사용하여 모바일 장치 관리](/sccm/mdm/deploy-use/manage-mobile-devices-with-exchange-activesync)를 참조하세요.
+ LTSB에서는 클라이언트 소프트웨어를 설치하지 않고 Exchange Sever 인스턴스에 연결하는 디바이스에 대해 제한적인 관리를 지원합니다. 자세한 내용은 [System Center Configuration Manager와 Exchange를 사용하여 모바일 디바이스 관리](/sccm/mdm/deploy-use/manage-mobile-devices-with-exchange-activesync)를 참조하세요.
 
  **요구 사항 및 제한 사항:**  
 
--   Configuration Manager는 모바일 장치에 대해 제한적인 관리 기능을 제공합니다. Exchange Server 또는 Exchange Online을 실행하는 서버에 연결하는 EAS(Exchange Active Sync) 사용 가능 장치에 대해 Exchange Server 커넥터를 사용하는 경우 제한적인 관리 기능을 사용할 수 있습니다.  
+-   Configuration Manager는 모바일 디바이스에 대해 제한적인 관리 기능을 제공합니다. Exchange Server 또는 Exchange Online을 실행하는 서버에 연결하는 EAS(Exchange Active Sync) 사용 가능 디바이스에 대해 Exchange Server 커넥터를 사용하는 경우 제한적인 관리 기능을 사용할 수 있습니다.  
 
--   Exchange Server 커넥터가 관리하는 모바일 장치에 대해 Configuration Manager가 지원하는 관리 기능에 대한 자세한 내용은 [System Center Configuration Manager에 대한 장치 관리 솔루션 선택](/sccm/core/plan-design/choose-a-device-management-solution)을 참조하세요.  
+-   Exchange Server 커넥터가 관리하는 모바일 디바이스에 대해 Configuration Manager가 지원하는 관리 기능에 대한 자세한 내용은 [System Center Configuration Manager에 대한 디바이스 관리 솔루션 선택](/sccm/core/plan-design/choose-a-device-management-solution)을 참조하세요.  
 
 **Exchange Server의 지원되는 버전:**  
 -   Exchange Server 2010 SP1  
@@ -279,7 +279,7 @@ Linux 및 UNIX 운영 체제에 대한 지원은 이 섹션에 나열된 운영 
 -   Exchange Server 2013  
 
 > [!NOTE]
-> LTSB는 Exchange Online(Office 365)과 같은 온라인 서비스를 통해 연결하는 장치 관리를 지원하지 않습니다.
+> LTSB는 Exchange Online(Office 365)과 같은 온라인 서비스를 통해 연결하는 디바이스 관리를 지원하지 않습니다.
 
 
 ## <a name="configuration-manager-console"></a>Configuration Manager 콘솔

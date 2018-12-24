@@ -44,9 +44,9 @@ System Center Configuration Manager의 여러 독립적인 계층 구조를 동�
 
 -   System Center 2012 Configuration Manager 또는 이전 버전의 컴퓨터 클라이언트  
 
--   System Center 2012 Configuration Manager 또는 이전 버전의 장치 관리 클라이언트  
+-   System Center 2012 Configuration Manager 또는 이전 버전의 디바이스 관리 클라이언트  
 
--   Windows CE Platform Builder 장치 관리 클라이언트(모든 버전)  
+-   Windows CE Platform Builder 디바이스 관리 클라이언트(모든 버전)  
 
 -   System Center Mobile Device Manager VPN 연결  
 

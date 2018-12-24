@@ -55,7 +55,7 @@ ms.locfileid: "50411068"
 패키지 파일의 액세스 계정을 변경하면 패키지를 재배포할 때만 적용되므로 패키지 액세스 권한은 패키지를 처음 만들 때 신중하게 설정하십시오. 이 구성은 패키지가 크거나 많은 배포 지점에 배포되거나 콘텐츠 배포를 위한 네트워크 대역폭 용량이 제한된 경우에 중요합니다.  
 
 #### <a name="implement-access-controls-to-protect-media-that-contains-prestaged-content"></a>사전 준비된 콘텐츠가 포함된 미디어를 보호하기 위해 액세스 제어를 구현합니다.
-사전 준비된 콘텐츠는 압축될 뿐 암호화되지는 않습니다. 공격자는 장치에 다운로드한 파일을 읽고 수정할 수 있습니다. Configuration Manager 클라이언트는 변조된 콘텐츠를 거부하지만 여전히 다운로드합니다.  
+사전 준비된 콘텐츠는 압축될 뿐 암호화되지는 않습니다. 공격자는 디바이스에 다운로드한 파일을 읽고 수정할 수 있습니다. Configuration Manager 클라이언트는 변조된 콘텐츠를 거부하지만 여전히 다운로드합니다.  
 
 #### <a name="import-prestaged-content-with-extractcontent"></a>ExtractContent를 사용하여 사전 준비된 콘텐츠 가져오기
 ExtractContent.exe 명령줄 도구를 사용하여 사전 준비된 콘텐츠만 가져옵니다. 변조 및 권한 상승을 방지하려면 Configuration Manager와 함께 제공되는 승인된 명령줄 도구만 사용합니다.  

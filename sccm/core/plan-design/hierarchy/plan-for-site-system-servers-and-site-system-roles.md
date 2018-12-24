@@ -36,11 +36,11 @@ ms.locfileid: "49461310"
 
 사이트 시스템 역할을 서버에 설치하여 사이트에 추가 기능을 제공합니다. 다음과 같은 경우를 예로 들 수 있습니다.  
 
--   추가 관리 지점. 사이트는 사이트의 최대 지원 용량까지 더 많은 장치를 지원할 수 있습니다.  
+-   추가 관리 지점. 사이트는 사이트의 최대 지원 용량까지 더 많은 디바이스를 지원할 수 있습니다.  
 
--   콘텐츠 인프라를 확장할 추가 배포 지점. 장치에 콘텐츠를 배포하는 성능을 높일 수 있습니다.  
+-   콘텐츠 인프라를 확장할 추가 배포 지점. 디바이스에 콘텐츠를 배포하는 성능을 높일 수 있습니다.  
 
--   하나 이상의 기능별 사이트 시스템 역할. 예를 들어 소프트웨어 업데이트 지점을 통해 관리되는 장치에 대한 소프트웨어 업데이트를 관리할 수 있습니다. 보고 서비스 지점을 통해 사용자 환경에 대한 정보를 모니터링, 이해 및 공유하기 위한 보고서를 실행할 수 있습니다.  
+-   하나 이상의 기능별 사이트 시스템 역할. 예를 들어 소프트웨어 업데이트 지점을 통해 관리되는 디바이스에 대한 소프트웨어 업데이트를 관리할 수 있습니다. 보고 서비스 지점을 통해 사용자 환경에 대한 정보를 모니터링, 이해 및 공유하기 위한 보고서를 실행할 수 있습니다.  
 
 
 Configuration Manager 사이트마다 다른 사이트 시스템 역할을 지원할 수 있습니다. 사이트 시스템 역할의 지원되는 집합은 사이트의 유형에 따라 달라집니다. (사이트 유형에는 중앙 관리 사이트, 기본 사이트 또는 보조 사이트가 포함됩니다.) 계층의 토폴로지는 특정 사이트 유형에서 일부 역할의 배치를 제한할 수 있습니다. 예를 들어, 서비스 연결 지점은 계층의 최상위 계층 사이트에서만 지원됩니다. 최상위 계층 사이트는 중앙 관리 사이트 또는 독립 실행형 기본 사이트가 될 수 있습니다. 이 역할은 자식 기본 사이트 또는 보조 사이트에서 지원되지 않습니다.  
@@ -78,7 +78,7 @@ Asset Intelligence 카탈로그의 정보를 다운로드하도록 Microsoft에 
 자세한 내용은 [Configuration Manager의 Asset Intelligence](/sccm/core/clients/manage/asset-intelligence/introduction-to-asset-intelligence)를 참조하세요.  
 
 #### <a name="certificate-registration-point"></a>인증서 등록 지점
-NDES(네트워크 장치 등록 서비스)를 실행하는 서버와 통신하는 사이트 시스템 역할입니다. 이 역할은 SCEP(단순 인증서 등록 프로토콜)를 사용하는 장치 인증서 요청을 관리합니다. 이 역할은 기본 사이트와 중앙 관리 사이트에서만 지원됩니다.
+NDES(네트워크 디바이스 등록 서비스)를 실행하는 서버와 통신하는 사이트 시스템 역할입니다. 이 역할은 SCEP(단순 인증서 등록 프로토콜)를 사용하는 디바이스 인증서 요청을 관리합니다. 이 역할은 기본 사이트와 중앙 관리 사이트에서만 지원됩니다.
 
 단일 인증서 등록 지점에서 전체 계층에 기능을 제공할 수 있지만 한 사이트에 그리고 동일한 계층의 여러 사이트에 이 역할의 여러 인스턴스를 설치할 수 있습니다. 이 디자인은 부하 분산에 도움이 됩니다. 여러 인스턴스가 한 계층에 있는 경우 클라이언트가 인증서 등록 지점 중 하나에 임의로 할당됩니다.  
 
@@ -104,17 +104,17 @@ NDES(네트워크 장치 등록 서비스)를 실행하는 서버와 통신하�
 Configuration Manager가 Endpoint Protection 사용 조건에 동의하고 클라우드 보호 서비스의 기본 멤버 자격을 구성하는 데 사용하는 사이트 시스템 역할입니다. 계층 구조는 이 역할의 단일 인스턴스만 지원하며, 최상위 계층 사이트에 있어야 합니다. 독립 실행형 기본 사이트를 더 큰 계층 구조로 확장하는 경우 기본 사이트에서 이 역할을 제거한 다음, 중앙 관리 사이트에서 설치합니다. 자세한 내용은 [Configuration Manager의 Endpoint Protection](/sccm/protect/deploy-use/endpoint-protection)을 참조하세요.  
 
 #### <a name="enrollment-point"></a>등록 지점
-모바일 장치와 macOS 컴퓨터를 등록하기 위해 Configuration Manager의 PKI 인증서를 사용하는 사이트 시스템 역할입니다. 이 역할은 기본 사이트에서만 지원되지만, 한 사이트에 또는 동일한 계층의 여러 사이트에 이 역할의 여러 인스턴스를 설치할 수 있습니다.  
+모바일 디바이스와 macOS 컴퓨터를 등록하기 위해 Configuration Manager의 PKI 인증서를 사용하는 사이트 시스템 역할입니다. 이 역할은 기본 사이트에서만 지원되지만, 한 사이트에 또는 동일한 계층의 여러 사이트에 이 역할의 여러 인스턴스를 설치할 수 있습니다.  
 
-사용자가 Configuration Manager를 사용하여 모바일 장치를 등록하고 사용자의 Active Directory 계정이 사이트 서버의 포리스트에서 트러스트되지 않은 포리스트에 있는 경우, 사용자의 포리스트에 등록 지점을 설치합니다. 그런 다음, Configuration Manager는 사용자를 인증할 수 있습니다.  
+사용자가 Configuration Manager를 사용하여 모바일 디바이스를 등록하고 사용자의 Active Directory 계정이 사이트 서버의 포리스트에서 트러스트되지 않은 포리스트에 있는 경우, 사용자의 포리스트에 등록 지점을 설치합니다. 그런 다음, Configuration Manager는 사용자를 인증할 수 있습니다.  
 
 #### <a name="enrollment-proxy-point"></a>등록 프록시 지점
-모바일 장치와 macOS 컴퓨터에서 Configuration Manager 등록 요청을 관리하는 사이트 시스템 역할입니다. 이 역할은 기본 사이트에서만 지원되지만, 한 사이트에 또는 동일한 계층의 여러 사이트에 이 역할의 여러 인스턴스를 설치할 수 있습니다.  
+모바일 디바이스와 macOS 컴퓨터에서 Configuration Manager 등록 요청을 관리하는 사이트 시스템 역할입니다. 이 역할은 기본 사이트에서만 지원되지만, 한 사이트에 또는 동일한 계층의 여러 사이트에 이 역할의 여러 인스턴스를 설치할 수 있습니다.  
 
-인터넷을 통해 모바일 장치를 지원하는 경우 등록 프록시 지점은 경계 네트워크에, 등록 지점은 인트라넷에 설치합니다.   
+인터넷을 통해 모바일 디바이스를 지원하는 경우 등록 프록시 지점은 경계 네트워크에, 등록 지점은 인트라넷에 설치합니다.   
 
 #### <a name="exchange-server-connector"></a>Exchange Server 커넥터
-이 역할에 대한 자세한 내용은 [Configuration Manager와 Exchange를 사용하여 모바일 장치 관리](/sccm/mdm/deploy-use/manage-mobile-devices-with-exchange-activesync)를 참조하세요.  
+이 역할에 대한 자세한 내용은 [Configuration Manager와 Exchange를 사용하여 모바일 디바이스 관리](/sccm/mdm/deploy-use/manage-mobile-devices-with-exchange-activesync)를 참조하세요.  
 
 #### <a name="fallback-status-point"></a>대체 상태 지점
 클라이언트 설치를 모니터링하는 데 유용한 사이트 시스템 역할입니다. 관리 지점과 통신할 수 없어 관리되지 않는 클라이언트를 식별합니다. 이 역할은 기본 사이트에서만 지원되지만, 한 사이트 및 동일한 계층의 여러 사이트에 이 역할의 여러 인스턴스를 설치할 수 있습니다.     
@@ -124,13 +124,13 @@ Configuration Manager가 Endpoint Protection 사용 조건에 동의하고 클�
 
 기본적으로 이 역할은 새로운 기본 또는 보조 사이트를 설치할 때 사이트 서버에 설치됩니다. 기본 사이트에서는 이 역할의 여러 인스턴스를 지원합니다. 보조 사이트는 단일 관리 지점을 지원합니다. 프록시 관리 지점이라고도 하는 이 역할은 보조 사이트에서 컴퓨터 및 사용자 정책을 가져오기 위해 클라이언트에 대한 연결 로컬 지점을 제공합니다.  
 
-HTTP 또는 HTTPs를 지원하도록 관리 지점을 설정합니다. 또한 Configuration Manager 온-프레미스 MDM(모바일 장치 관리)을 통해 관리하는 모바일 장치를 지원할 수 있습니다. 클라이언트의 요청을 처리하는 관리 지점이 사이트 데이터베이스 서버에 적용하는 프로세스 부하를 줄이려면 [관리 지점용 데이터베이스 복제본](/sccm/core/servers/deploy/configure/database-replicas-for-management-points)을 사용합니다.  
+HTTP 또는 HTTPs를 지원하도록 관리 지점을 설정합니다. 또한 Configuration Manager 온-프레미스 MDM(모바일 디바이스 관리)을 통해 관리하는 모바일 디바이스를 지원할 수 있습니다. 클라이언트의 요청을 처리하는 관리 지점이 사이트 데이터베이스 서버에 적용하는 프로세스 부하를 줄이려면 [관리 지점용 데이터베이스 복제본](/sccm/core/servers/deploy/configure/database-replicas-for-management-points)을 사용합니다.  
 
 #### <a name="reporting-services-point"></a>보고 서비스 지점
 SQL Server Reporting Services와 통합되어 Configuration Manager용 보고서를 만들고 관리하는 사이트 시스템 역할입니다. 이 역할은 기본 사이트와 중앙 관리 사이트에서 지원되며, 지원되는 사이트에서 이 역할의 여러 인스턴스를 설치할 수 있습니다. 자세한 내용은 [보고 계획](/sccm/core/servers/manage/planning-for-reporting)을 참조하세요.  
 
 #### <a name="service-connection-point"></a>서비스 연결 지점
-사이트에서 사용 현황 데이터를 업로드하는 사이트 시스템 역할로, 콘솔에서 Configuration Manager에 대한 업데이트를 사용하도록 하는 데 필요합니다. 이 역할을 또한 Microsoft Intune 및 온-프레미스 MDM에서 모바일 장치를 관리하는 데 유용합니다. 계층 구조는 이 역할의 단일 인스턴스만 지원하며, 계층 구조의 최상위 계층 사이트에 있어야 합니다. 독립 실행형 기본 사이트를 더 큰 계층 구조로 확장하는 경우 기본 사이트에서 이 역할을 제거한 다음, 중앙 관리 사이트에서 설치합니다. 자세한 내용은 [서비스 연결 지점 정보](/sccm/core/servers/deploy/configure/about-the-service-connection-point)를 참조하세요.  
+사이트에서 사용 현황 데이터를 업로드하는 사이트 시스템 역할로, 콘솔에서 Configuration Manager에 대한 업데이트를 사용하도록 하는 데 필요합니다. 이 역할을 또한 Microsoft Intune 및 온-프레미스 MDM에서 모바일 디바이스를 관리하는 데 유용합니다. 계층 구조는 이 역할의 단일 인스턴스만 지원하며, 계층 구조의 최상위 계층 사이트에 있어야 합니다. 독립 실행형 기본 사이트를 더 큰 계층 구조로 확장하는 경우 기본 사이트에서 이 역할을 제거한 다음, 중앙 관리 사이트에서 설치합니다. 자세한 내용은 [서비스 연결 지점 정보](/sccm/core/servers/deploy/configure/about-the-service-connection-point)를 참조하세요.  
 
 #### <a name="software-update-point"></a>소프트웨어 업데이트 지점
 WSUS(Windows Server Update Services)와 통합되어 Configuration Manager 클라이언트에 소프트웨어 업데이트를 제공하는 사이트 시스템 역할입니다. 이 역할은 모든 사이트에서 지원됩니다.  

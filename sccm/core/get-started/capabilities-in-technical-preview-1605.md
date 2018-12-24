@@ -32,13 +32,13 @@ ms.locfileid: "32342531"
  **다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.**  
 
 ##  <a name="BKMK_PerAppVPN"></a> Windows 10 장치를 위한 앱당 VPN  
- Intune에서 Configuration Manager를 사용하여 관리되는 Windows 10 장치의 경우, Configuration Manager 관리 콘솔을 통해 구성한 VPN 연결을 자동으로 여는 앱 목록을 추가할 수 있습니다. 이러한 앱에 대한 VPN 트래픽을 제한하는 옵션이 있거나 VPN 연결을 통한 모든 트래픽을 계속 허용할 수 있습니다.  
+ Intune에서 Configuration Manager를 사용하여 관리되는 Windows 10 디바이스의 경우, Configuration Manager 관리 콘솔을 통해 구성한 VPN 연결을 자동으로 여는 앱 목록을 추가할 수 있습니다. 이러한 앱에 대한 VPN 트래픽을 제한하는 옵션이 있거나 VPN 연결을 통한 모든 트래픽을 계속 허용할 수 있습니다.  
 
  **요구 사항**:  
 
 -   Configuration Manager와 Intune  
 
--   하나 이상의 장치에 배포된 Windows 10 VPN 프로필  
+-   하나 이상의 디바이스에 배포된 Windows 10 VPN 프로필  
 
 ##  <a name="BKMK_InstallSU"></a> 소프트웨어 업데이트 설치 작업 순서의 향상 기능  
  소프트웨어 업데이트 설치 작업 순서가 다음과 같이 향상되었습니다.  
@@ -61,27 +61,27 @@ ms.locfileid: "32342531"
 
 2.  새 응용 프로그램 배포 또는 기존 배포 속성의 **일정** 페이지에서, 클라이언트 설정에 정의된 유예 기간까지 **이 배포의 적용을 사용자 기본 설정에 따라 연기합니다.** 확인란을 선택합니다.  
 
-     이 확인란이 선택되고 클라이언트 설정도 배포된 대상 장치의 모든 배포에서 이 유예 기간을 사용합니다.  
+     이 확인란이 선택되고 클라이언트 설정도 배포된 대상 디바이스의 모든 배포에서 이 유예 기간을 사용합니다.  
 
- 이 릴리스에서는 구성하는 유예 기간을 클라이언트 장치에서 사용하지 않습니다. 유예 기간을 구성하고 확인란을 선택하면 마감일 이후 사용자가 구성한 첫 번째 업무 외 시간에서 응용 프로그램이 설치됩니다.  
+ 이 릴리스에서는 구성하는 유예 기간을 클라이언트 디바이스에서 사용하지 않습니다. 유예 기간을 구성하고 확인란을 선택하면 마감일 이후 사용자가 구성한 첫 번째 업무 외 시간에서 응용 프로그램이 설치됩니다.  
 
  소프트웨어 업데이트 배포 마법사, 자동 배포 규칙 마법사 및 속성 페이지에 비슷한 옵션이 추가되었습니다. 하지만 이 Technical Preview에서는 현재 이러한 옵션이 구현되지 않습니다.  
 
 ##  <a name="BKMK_Remote"></a> 원격 장치 작업을 위한 새로운 환경  
- Configuration Manager 콘솔에서 원격 장치 작업을 수행하기 위한 환경이 개선되었습니다.  
-이제 **자산 및 준수** 작업 영역에서 액세스되는 **원격 장치 작업** 메뉴에서 **사용 중지/초기화**, **암호 다시 설정**, **원격 잠금** 및 **활성화 잠금 바이패스** 등의 일반 작업을 찾을 수 있습니다.  
+ Configuration Manager 콘솔에서 원격 디바이스 작업을 수행하기 위한 환경이 개선되었습니다.  
+이제 **자산 및 준수** 작업 영역에서 액세스되는 **원격 디바이스 작업** 메뉴에서 **사용 중지/초기화**, **암호 다시 설정**, **원격 잠금** 및 **활성화 잠금 바이패스** 등의 일반 작업을 찾을 수 있습니다.  
 
- ![새 원격 장치 작업 스크린샷](media/New-Remote-Device-Actions.png)  
+ ![새 원격 디바이스 작업 스크린샷](media/New-Remote-Device-Actions.png)  
 
  다음 위치에서 이러한 각 작업에 대한 상태를 찾을 수 있습니다.  
 
 -   **장치** 노드에서 장치를 선택할 때의 세부 정보 창  
 
--   장치의 **속성** 페이지  
+-   디바이스의 **속성** 페이지  
 
 -   **장치** 노드의 기본 페이지(일부 열이 기본적으로 표시됨)  
 
- iOS 활성화 잠금 바이패스에 대한 자세한 내용은 [Configuration Manager의 활성화 잠금 바이패스를 사용하여 iOS 장치 보호](/sccm/mdm/deploy-use/manage-ios-activation-lock), 특히 **Configuration Manager Technical Preview의 활성화 잠금 무시에 대해 현재 알려진 문제** 섹션을 참조하세요.  
+ iOS 활성화 잠금 바이패스에 대한 자세한 내용은 [Configuration Manager의 활성화 잠금 바이패스를 사용하여 iOS 디바이스 보호](/sccm/mdm/deploy-use/manage-ios-activation-lock), 특히 **Configuration Manager Technical Preview의 활성화 잠금 무시에 대해 현재 알려진 문제** 섹션을 참조하세요.  
 
 ##  <a name="BKMK_WSFB"></a> 비즈니스용 Windows 스토어 앱  
  [비즈니스용 Windows 스토어](https://www.microsoft.com/business-store)에서 조직을 위한 앱을 찾아서 개별적으로 또는 대량으로 구매할 수 있습니다. 예를 들어 스토어를 Configuration Manager에 연결하여 Configuration Manager 콘솔에서 대량 구매 앱을 관리할 수 있습니다.  
@@ -150,7 +150,7 @@ ms.locfileid: "32342531"
  비즈니스용 Windows 스토어 앱을 포함하여 Configuration Manager 응용 프로그램이 만들어집니다. 그런 다음 이 응용 프로그램을 원하는 Configuration Manager 응용 프로그램으로 배포 및 모니터링할 수 있습니다.  
 
 > [!IMPORTANT]  
->  사용이 허가된 오프라인 앱에서 단일 배포 유형으로 Configuration Manager 응용 프로그램을 만들 경우 MDM 관리 장치 및 Configuration Manager 클라이언트 관리 장치에도 이 응용 프로그램을 배포할 수 있습니다. 여러 배포 유형으로 앱을 배포하려고 하면 설치에 실패합니다.  
+>  사용이 허가된 오프라인 앱에서 단일 배포 유형으로 Configuration Manager 응용 프로그램을 만들 경우 MDM 관리 디바이스 및 Configuration Manager 클라이언트 관리 디바이스에도 이 응용 프로그램을 배포할 수 있습니다. 여러 배포 유형으로 앱을 배포하려고 하면 설치에 실패합니다.  
 >   
 >  현재 Configuration Manager에서 사용이 허가된 온라인 앱을 배포할 수 없습니다.  
 
@@ -174,7 +174,7 @@ ms.locfileid: "32342531"
 -   [System Center Configuration Manager를 사용하여 EDP(엔터프라이즈 데이터 보호) 정책 만들기 및 배포](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-sccm)  
 
 ##  <a name="BKMK_End"></a> 최종 사용자가 회사 포털에서 앱을 설치할 수 있습니다.  
- System Center Configuration Manager 버전 1511에 온-프레미스 MDM이 도입되었습니다. 이전 버전에서는 온-프레미스 MDM 관리 장치에 대해 **필수** 설치 배포 용도로 MDM 관리 Windows 10 장치에 응용 프로그램을 배포할 수 있었습니다.  
+ System Center Configuration Manager 버전 1511에 온-프레미스 MDM이 도입되었습니다. 이전 버전에서는 온-프레미스 MDM 관리 디바이스에 대해 **필수** 설치 배포 용도로 MDM 관리 Windows 10 디바이스에 응용 프로그램을 배포할 수 있었습니다.  
 
  이 릴리스에서는 이제 온-프레미스 MDM 관리 Windows 10 컴퓨터 사용자에게 **사용 가능** 배포 용도로 앱을 배포할 수 있으며, 사용자가 회사 포털에서 이 앱을 스스로 설치할 수 있습니다.
 이 Technical Preview에서 회사 포털이 15분보다 오래 열려 있으면 최종 사용자에게 오류 메시지가 표시됩니다. 문제를 해결하려면 회사 포털을 다시 시작합니다.  
@@ -197,11 +197,11 @@ ms.locfileid: "32342531"
 
 -   회사 포털 사용 시 최상의 응용 프로그램 설치 환경을 위해 Configuration Manager에 Microsoft Intune에 대한 활성 연결이 있어야 합니다.  
 
--   대량 등록 옵션을 선택할 경우 이 시나리오를 수행하기 전에 등록된 장치에 대한 사용자 장치 선호도를 구성합니다.  
+-   대량 등록 옵션을 선택할 경우 이 시나리오를 수행하기 전에 등록된 디바이스에 대한 사용자 디바이스 선호도를 구성합니다.  
 
 ### <a name="configuration-steps"></a>구성 단계  
 
-#### <a name="install-the-application-catalog-roles-and-enable-mobile-device-management-support"></a>응용 프로그램 카탈로그 역할 설치 및 모바일 장치 관리 지원 활성화  
+#### <a name="install-the-application-catalog-roles-and-enable-mobile-device-management-support"></a>응용 프로그램 카탈로그 역할 설치 및 모바일 디바이스 관리 지원 활성화  
 
 1.  응용 프로그램 카탈로그 웹 서비스 및 웹 사이트 역할 추가  
 
@@ -209,7 +209,7 @@ ms.locfileid: "32342531"
 
     2.  이 Technical Preview의 제한 사항:  
 
-        -   모바일 장치의 연결을 허용하는 옵션을 선택하기 전에 모든 기존 응용 프로그램 카탈로그 역할을 제거해야 합니다.  
+        -   모바일 디바이스의 연결을 허용하는 옵션을 선택하기 전에 모든 기존 응용 프로그램 카탈로그 역할을 제거해야 합니다.  
 
         -   하나의 응용 프로그램 카탈로그 역할 집합만 있어야 하며 그 역할은 등록 지점 및 등록 프록시 지점 역할과 같은 사이트 시스템에 함께 배치해야 합니다.  
 
@@ -227,7 +227,7 @@ ms.locfileid: "32342531"
  인트라넷 전용 배포 지점에 대한 필수 경계를 구성합니다.  
 
 > [!NOTE]  
->  이번에는 모바일 장치 관리에서 IPv4 범위 경계만 지원됩니다.  
+>  이번에는 모바일 디바이스 관리에서 IPv4 범위 경계만 지원됩니다.  
 
 ### <a name="deploy-the-company-portal-application-and-configuration"></a>회사 포털 응용 프로그램 및 구성 배포  
 
@@ -253,7 +253,7 @@ ms.locfileid: "32342531"
     >  -   **자산 및 준수** 작업 영역에서 **OnPremMDM 포털 구성 CI - 서버 url** 구성 항목을 찾습니다.  
     > -   **준수 규칙** 값을 응용 프로그램 카탈로그 역할이 있는 사이트 시스템의 정규화된 도메인 이름으로 변경합니다.  
 
-2.  회사 포털 응용 프로그램 및 해당 구성을 모두 배포한 후 Configuration Manager 콘솔의 **배포** 섹션을 사용하여 응용 프로그램 및 구성 기준이 지정된 장치와 호환되는지 확인합니다. 회사 포털은 장치의 시작 메뉴에 **회사 포털(Technical Preview)** 로 표시됩니다.  
+2.  회사 포털 응용 프로그램 및 해당 구성을 모두 배포한 후 Configuration Manager 콘솔의 **배포** 섹션을 사용하여 응용 프로그램 및 구성 기준이 지정된 디바이스와 호환되는지 확인합니다. 회사 포털은 디바이스의 시작 메뉴에 **회사 포털(Technical Preview)** 로 표시됩니다.  
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기  
  다음 작업을 완료해 보고 어떻게 작동하는지 Microsoft Connect 사이트의 [Configuration Manager 사용자 의견 프로그램](https://connect.microsoft.com/ConfigurationManagervnext/ConfigMgr%20Customer%20Feedback) 페이지에서 사용자 의견 양식을 사용하여 알려주세요.  
@@ -270,7 +270,7 @@ ms.locfileid: "32342531"
 -   **응용 프로그램** 탭이 세 개의 별도 탭(**업데이트**, **운영 체제**(이전에는 둘 다 **필터** 목록에 있었음) 및 **응용 프로그램**)으로 분리되었습니다.  
 
 ##  <a name="BKMK_ServerGroups"></a> 서버 그룹 제공  
- System Center Configuration Manager용 Technical Preview 버전 1511은 컬렉션을 만드는 기능을 포함하고 있으며 여기서 컬렉션의 모든 장치는 서버 그룹을 구성합니다. 서버 그룹에 소프트웨어 업데이트를 배포할 때 사용할 서버 그룹 설정을 구성하고, 지정된 시간에 업데이트되는 컴퓨터의 백분율을 제어할 수 있으며, 사용자 지정 작업을 실행하도록 배포 전/배포 후 PowerShell 스크립트를 구성할 수 있습니다.  
+ System Center Configuration Manager용 Technical Preview 버전 1511은 컬렉션을 만드는 기능을 포함하고 있으며 여기서 컬렉션의 모든 디바이스는 서버 그룹을 구성합니다. 서버 그룹에 소프트웨어 업데이트를 배포할 때 사용할 서버 그룹 설정을 구성하고, 지정된 시간에 업데이트되는 컴퓨터의 백분율을 제어할 수 있으며, 사용자 지정 작업을 실행하도록 배포 전/배포 후 PowerShell 스크립트를 구성할 수 있습니다.  
 
  System Center Configuration Manager용 Technical Preview 버전 1605에서는 정의하는 특정 순서대로 서버 그룹의 컴퓨터를 업데이트하는 기능이 추가되고, 서버 그룹의 컴퓨터 상태를 볼 수 있도록 모니터링 기능이 향상되었으며, 클라이언트가 소프트웨어 업데이트를 설치하지 못하거나 다른 클라이언트가 해당 소프트웨어 업데이트를 설치하지 않도록 하는 경우에 유용한 배포 잠금을 제거하는 기능이 제공됩니다.  
 
@@ -337,14 +337,14 @@ ms.locfileid: "32342531"
 2.  **홈** 탭의 **배포** 그룹에서 **서버 그룹 배포 잠금 제거**를 클릭합니다. 클라이언트가 소프트웨어 업데이트를 설치하지 못한 경우와 다른 클라이언트가 해당 소프트웨어 업데이트를 설치하지 못하도록 하는 경우 배포 잠금을 수동으로 제거할 수 있습니다.  
 
 ##  <a name="BKMK_ATP"></a> Windows Defender Advanced Threat Protection 서비스에 대한 지원  
- Windows Defender ATP(Advanced Threat Protection)는 엔터프라이즈의 검색, 조사 및 네트워크에 대한 고급 공격에 대응하는 데 도움이 되는 새로운 서비스입니다. [Windows Defender ATP](https://blogs.windows.com/windowsexperience/2016/03/01/announcing-windows-defender-advanced-threat-protection)에 대해 자세히 알아봅니다. Configuration Manager는 관리되는 Windows 10 Anniversary Edition 클라이언트 장치를 등록하고 모니터링하는 데 도움이 될 수 있습니다.  
+ Windows Defender ATP(Advanced Threat Protection)는 엔터프라이즈의 검색, 조사 및 네트워크에 대한 고급 공격에 대응하는 데 도움이 되는 새로운 서비스입니다. [Windows Defender ATP](https://blogs.windows.com/windowsexperience/2016/03/01/announcing-windows-defender-advanced-threat-protection)에 대해 자세히 알아봅니다. Configuration Manager는 관리되는 Windows 10 Anniversary Edition 클라이언트 디바이스를 등록하고 모니터링하는 데 도움이 될 수 있습니다.  
 
 ### <a name="try-it-now"></a>지금 직접 사용해 보세요!  
  다음 작업을 완료해 보고 어떻게 작동하는지 Microsoft Connect 사이트의 [Configuration Manager 사용자 의견 프로그램](https://connect.microsoft.com/ConfigurationManagervnext/ConfigMgr%20Customer%20Feedback) 페이지에서 사용자 의견 양식을 사용하여 알려주세요.  
 
--   Windows Defender ATP(Advanced Threat Protection) 온라인 서비스에 장치 온보딩  
+-   Windows Defender ATP(Advanced Threat Protection) 온라인 서비스에 디바이스 온보딩  
 
--   관리되는 장치에 Windows Defender ATP 배포 모니터링  
+-   관리되는 디바이스에 Windows Defender ATP 배포 모니터링  
 
  **전제 조건**  
 
@@ -365,7 +365,7 @@ ms.locfileid: "32342531"
     4.  압축된 보관 파일(.zip)을 다운로드하고 압축을 풉니다.  
 
 
-##### <a name="onboard-devices-for-windows-defender-atp"></a>Windows Defender ATP 장치 온보딩  
+##### <a name="onboard-devices-for-windows-defender-atp"></a>Windows Defender ATP 디바이스 온보딩  
 
 1.  Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > **Endpoint Protection** > **Windows Defender ATP 정책**으로 이동하고 **Windows Defender ATP 정책 만들기**를 클릭합니다. Windows Defender ATP 정책 마법사가 열립니다.  
 
@@ -373,7 +373,7 @@ ms.locfileid: "32342531"
 
 3.  조직의 Windows Defender ATP 클라우드 서비스 테넌트에서 제공하는 구성 파일을 **찾습니다**. **다음**을 클릭합니다.  
 
-4.  분석을 위해 관리되는 장치에서 수집 및 공유되는 파일 샘플을 지정합니다.  
+4.  분석을 위해 관리되는 디바이스에서 수집 및 공유되는 파일 샘플을 지정합니다.  
 
     -   **없음** – 분석을 위해 수집된 샘플 파일이 없습니다.  
 
@@ -404,9 +404,9 @@ ms.locfileid: "32342531"
         -   **온보딩되지 않음** - 정책이 적용되었지만 에이전트가 온보딩된 정책을 보고하지 않음  
 
 ##  <a name="BKMK_DHA"></a> 온-프레미스 장치 상태 증명  
- 이제 온-프레미스 인프라를 사용하여 통신하도록 Windows 10 장치에 대한 상태 증명을 구성할 수 있습니다. 관리자는 보고를 클라우드를 통해 또는 온-프레미스 리소스를 통해 수행할지 여부를 지정할 수 있습니다. 상태 증명 보고를 위해 온-프레미스를 선택한 경우 서비스에 대해 URL을 지정할 수 있습니다. 이를 통해 인터넷에 액세스할 수 없는 클라이언트 PC에서 상태 증명을 사용하여 장치를 활성화하고 관리할 수 있습니다.  
+ 이제 온-프레미스 인프라를 사용하여 통신하도록 Windows 10 디바이스에 대한 상태 증명을 구성할 수 있습니다. 관리자는 보고를 클라우드를 통해 또는 온-프레미스 리소스를 통해 수행할지 여부를 지정할 수 있습니다. 상태 증명 보고를 위해 온-프레미스를 선택한 경우 서비스에 대해 URL을 지정할 수 있습니다. 이를 통해 인터넷에 액세스할 수 없는 클라이언트 PC에서 상태 증명을 사용하여 디바이스를 활성화하고 관리할 수 있습니다.  
 
-### <a name="enable-health-attestation-for-on-premises-devices"></a>온-프레미스 장치에 상태 증명 사용  
+### <a name="enable-health-attestation-for-on-premises-devices"></a>온-프레미스 디바이스에 상태 증명 사용  
  1605에서는 Technical Preview 1604 버전에서 발견된 몇 가지 버그가 수정되었습니다.  사용해 보려면 클라이언트 에이전트 설정을 사용하여 온-프레미스 상태 증명 서비스를 구성합니다.  
 
 1.  Configuration Manager 콘솔에서 **관리** > **개요** > **클라이언트 설정**으로 이동한 후 **온-프레미스 정상 증명 서비스 사용**을 **예**로 설정합니다.  
@@ -417,7 +417,7 @@ ms.locfileid: "32342531"
  Configuration Manager를 사용하여 다시 시작이 필요한 소프트웨어 업데이트를 배포하고 컴퓨터에 설치한 경우 다시 시작 보류가 예약되고 다시 시작 대화 상자가 표시됩니다. 현재 Windows 8 이상에서 다시 시작 대화 상자에서가 아니라 Windows 전원 옵션을 사용하여 컴퓨터를 종료하거나 다시 시작하는 경우, 컴퓨터를 다시 시작한 후에도 다시 시작 대화 상자가 계속 남아 있으며 구성된 마감일에 컴퓨터를 다시 시작해야 합니다. 이 Technical Preview에서는 Configuration Manager 소프트웨어 업데이트에 대해 보류 중인 다시 시작이 있으면 언제든지 **업데이트 및 다시 시작**과 **업데이트 및 종료** 옵션을 Windows 10 컴퓨터의 Windows 전원 옵션에서 사용할 수 있습니다. 이러한 옵션 중 하나를 사용한 후 컴퓨터를 다시 시작하면 다시 시작 대화 상자가 표시되지 않습니다.  
 
 ##  <a name="BKMK_IMEI"></a> IMEI 또는 iOS 일련 번호로 회사 소유 장치 미리 선언  
- 이제 IMEI(International station Mobile Equipment Identity) 번호를 가져와서 회사 소유 장치를 식별할 수 있습니다. 장치 IMEI 번호를 포함한 쉼표로 구분된 값(.csv) 파일을 업로드하거나 장치 정보를 수동으로 입력할 수 있습니다.  또한 iOS 장치의 일련 번호를 가져올 수 있습니다.  가져온 정보에 따라 "회사"로 등록된 장치의 소유권이 설정됩니다.  서비스에 액세스하는 각 사용자는 Intune 라이선스가 여전히 필요합니다.  
+ 이제 IMEI(International station Mobile Equipment Identity) 번호를 가져와서 회사 소유 디바이스를 식별할 수 있습니다. 디바이스 IMEI 번호를 포함한 쉼표로 구분된 값(.csv) 파일을 업로드하거나 디바이스 정보를 수동으로 입력할 수 있습니다.  또한 iOS 디바이스의 일련 번호를 가져올 수 있습니다.  가져온 정보에 따라 "회사"로 등록된 디바이스의 소유권이 설정됩니다.  서비스에 액세스하는 각 사용자는 Intune 라이선스가 여전히 필요합니다.  
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기  
  다음 작업을 완료해 보고 어떻게 작동하는지 Microsoft Connect 사이트의 [Configuration Manager 사용자 의견 프로그램](https://connect.microsoft.com/ConfigurationManagervnext/ConfigMgr%20Customer%20Feedback) 페이지에서 사용자 의견 양식을 사용하여 알려주세요.  
@@ -426,41 +426,41 @@ ms.locfileid: "32342531"
 
 -   Configuration Manager 콘솔에서 수동으로 IMEI 번호를 가져옵니다.  
 
--   .csv 파일에서 iOS 일련 번호 집합을 가져옵니다. 마찬가지로 각 행에서 장치의 세부 정보 앞에 번호를 포함할 수 있습니다.  
+-   .csv 파일에서 iOS 일련 번호 집합을 가져옵니다. 마찬가지로 각 행에서 디바이스의 세부 정보 앞에 번호를 포함할 수 있습니다.  
 
-##### <a name="pre-declare-corporate-owned-devices-with-imei-or-ios-serial-number"></a>IMEI 또는 iOS 일련 번호로 회사 소유 장치 미리 선언  
+##### <a name="pre-declare-corporate-owned-devices-with-imei-or-ios-serial-number"></a>IMEI 또는 iOS 일련 번호로 회사 소유 디바이스 미리 선언  
 
-1.  Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > **회사가 소유한 모든 장치** > **미리 선언된 장치**로 이동한 다음 **미리 선언된 장치 만들기**를 클릭합니다. 미리 선언된 장치 마법사가 열립니다.  
+1.  Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > **회사가 소유한 모든 디바이스** > **미리 선언된 디바이스**로 이동한 다음 **미리 선언된 디바이스 만들기**를 클릭합니다. 미리 선언된 디바이스 마법사가 열립니다.  
 
-2.  다음과 같이 장치 정보를 추가할 방법을 지정합니다.  
+2.  다음과 같이 디바이스 정보를 추가할 방법을 지정합니다.  
 
     -   **IMEI 번호 및 세부 정보를 포함하는 .csv 파일 업로드** - 숫자 목록을 업로드하려면 3단계를 참조하세요.  
 
     -   **수동으로 IMEI 번호 및 세부 정보 추가** - 정보를 수동으로 입력하려면 IMEI 번호 또는 iOS 일련 번호 및 장치의 세부 정보를 입력한 후 4단계를 진행합니다.  
 
-3.  업로드된 파일의 경우 정보가 포함된 .csv 파일을 찾아 회사 소유의 장치를 미리 선언합니다. 파일은 다음 형식이어야 합니다(참조용으로만 제공되는 맨 위 행은 제외).  
+3.  업로드된 파일의 경우 정보가 포함된 .csv 파일을 찾아 회사 소유의 디바이스를 미리 선언합니다. 파일은 다음 형식이어야 합니다(참조용으로만 제공되는 맨 위 행은 제외).  
 
     |**IMEI #**|**iOS 일련 번호**|**OS**|**세부 정보**|
     |---|---|---|---|
-    |123456789012345||WINDOWS|회사 소유 Windows 장치|
-    |123456789012|A0BCD0EFGH0J|IOS|회사 소유 iOS 장치|
-    |123456789012346||ANDROID|회사 소유 Android 장치|
+    |123456789012345||WINDOWS|회사 소유 Windows 디바이스|
+    |123456789012|A0BCD0EFGH0J|IOS|회사 소유 iOS 디바이스|
+    |123456789012346||ANDROID|회사 소유 Android 디바이스|
 
      **열:**  
 
     -   열 1: IMEI 번호 – 각 행에 IMEI 번호 또는 iOS 일련 번호 중 하나가 필요합니다.  
 
-    -   열 2: iOS 일련 번호 - iOS 일련 번호만 미리 선언할 수 있습니다. 다른 장치 플랫폼에는 IMEI 번호를 사용합니다.  
+    -   열 2: iOS 일련 번호 - iOS 일련 번호만 미리 선언할 수 있습니다. 다른 디바이스 플랫폼에는 IMEI 번호를 사용합니다.  
 
-    -   열 3: 장치의 운영 체제(대문자 표시 필수):  
+    -   열 3: 디바이스의 운영 체제(대문자 표시 필수):  
 
-        -   IOS - 모든 iOS 장치  
+        -   IOS - 모든 iOS 디바이스  
 
         -   WINDOWS - Windows Phone, Window 10 Mobile 및 Windows PC 포함  
 
-        -   ANDROID - 모든 Android 장치  
+        -   ANDROID - 모든 Android 디바이스  
 
-    -   열 4: 세부 정보 – Configuration Manager 콘솔에 표시되는 추가 장치 정보입니다.  
+    -   열 4: 세부 정보 – Configuration Manager 콘솔에 표시되는 추가 디바이스 정보입니다.  
 
      **다음**을 클릭합니다.  
 

@@ -1,7 +1,7 @@
 ---
 title: 하이브리드 MDM 자원을 Intune 독립 실행형에 마이그레이션
 titleSuffix: Configuration Manager
-description: Azure에서 하이브리드 MDM 사용자와 장치를 Intune으로 마이그레이션하는 방법을 알아봅니다.
+description: Azure에서 하이브리드 MDM 사용자와 디바이스를 Intune으로 마이그레이션하는 방법을 알아봅니다.
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
@@ -12,22 +12,22 @@ ms.technology: configmgr-hybrid
 ms.assetid: 1dd696ce-3e46-4dfa-a76d-592fe0f0320e
 ms.openlocfilehash: 09ea3340d8474c69e6e346fc68120b8849159374
 ms.sourcegitcommit: 316899b08f2ef372993909e08e069f7edfed1d33
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/07/2018
 ms.locfileid: "44111045"
 ---
-# <a name="migrate-hybrid-mdm-users-and-devices-to-intune-standalone"></a>하이브리드 MDM 사용자 및 장치를 Intune 독립 실행형으로 마이그레이션
+# <a name="migrate-hybrid-mdm-users-and-devices-to-intune-standalone"></a>하이브리드 MDM 사용자 및 디바이스를 Intune 독립 실행형으로 마이그레이션
 
 *적용 대상: System Center Configuration Manager(현재 분기)*    
 
 이 문서는 하이브리드 MDM에서 Azure의 Intune을 사용하는 클라우드 전용 환경으로 마이그레이션하는 방법을 다룹니다. 
 
 > [!Important]  
-> 2018년 8월 14일부터 하이브리드 모바일 장치 관리 [기능이 사용되지 않습니다](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures). 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->  
+> 2018년 8월 14일부터 하이브리드 모바일 디바이스 관리 [기능은 사용되지 않습니다](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures). 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->  
 
 
-단계적 접근 방식을 사용하여 Intune 독립 실행형으로의 마이그레이션을 시작하세요. 이 접근 방식을에서는 대부분의 사용자와 장치를 하이브리드 MDM을 통해 계속 관리하면서 작은 사용자 및 장치 하위 집합을 테스트합니다. Intune 기능을 확인한 후에 더 많은 리소스를 Intune으로 마이그레이션합니다.    
+단계적 접근 방식을 사용하여 Intune 독립 실행형으로의 마이그레이션을 시작하세요. 이 접근 방식을에서는 대부분의 사용자와 디바이스를 하이브리드 MDM을 통해 계속 관리하면서 작은 사용자 및 디바이스 하위 집합을 테스트합니다. Intune 기능을 확인한 후에 더 많은 리소스를 Intune으로 마이그레이션합니다.    
 
 자세한 내용은 다음 아티클을 참조하세요.    
   
@@ -59,11 +59,11 @@ ms.locfileid: "44111045"
 
 3.  [특정 사용자에 대한 MDM 기관 변경(혼합 MDM 기관)](migrate-mixed-authority.md)    
 
-    동일한 테넌트에서 혼합 MDM 기관을 구성하세요. 하이브리드 MDM을 사용하여 다른 모든 장치를 관리하면서 Intune에서 관리할 사용자를 선택합니다. 추가 사용자 마이그레이션을 시작하기 전에 작은 사용자 하위 집합에 대한 장치에서 Intune 기능이 작동하는지 테스트합니다.   
+    동일한 테넌트에서 혼합 MDM 기관을 구성하세요. 하이브리드 MDM을 사용하여 다른 모든 디바이스를 관리하면서 Intune에서 관리할 사용자를 선택합니다. 추가 사용자 마이그레이션을 시작하기 전에 작은 사용자 하위 집합에 대한 디바이스에서 Intune 기능이 작동하는지 테스트합니다.   
 
 4.  [MDM 기관을 Intune 독립 실행형으로 변경](change-mdm-authority.md)     
 
-    테넌트 수준의 MDM 기관을 Configuration Manager에서 Intune으로 변경합니다. 나머지 모든 사용자와 장치는 Intune 독립 실행형으로 마이그레이션됩니다. 이전 단계에서 Intune 기능을 철저히 테스트하고 대부분 또는 모든 사용자를 마이그레이션한 후에는 테넌트 수준의 MDM 기관을 변경합니다.
+    테넌트 수준의 MDM 기관을 Configuration Manager에서 Intune으로 변경합니다. 나머지 모든 사용자와 디바이스는 Intune 독립 실행형으로 마이그레이션됩니다. 이전 단계에서 Intune 기능을 철저히 테스트하고 대부분 또는 모든 사용자를 마이그레이션한 후에는 테넌트 수준의 MDM 기관을 변경합니다.
 
 
 

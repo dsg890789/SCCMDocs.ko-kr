@@ -25,7 +25,7 @@ Configuration Manager를 사용하여 가상 응용 프로그램을 관리할 �
 
 -   단일 관리 인프라  
 
--   확장성, 배포 및 콘텐츠 배포 기능(예: 컬렉션 및 사용자 장치 선호도)  
+-   확장성, 배포 및 콘텐츠 배포 기능(예: 컬렉션 및 사용자 디바이스 선호도)  
 
 -   고급 응용 프로그램 관리 기능  
 
@@ -35,7 +35,7 @@ Microsoft App-V(Application Virtualization)를 사용하여 응용 프로그램�
 
 가상 응용 프로그램을 만들어 배포할 때는 응용 프로그램을 만들기 위한 다른 System Center Configuration Manager 요구 사항 및 절차 외에 다음 사항을 고려해야 합니다.
 
--   컴퓨터에 가상 응용 프로그램을 배포하려면 Configuration Manager 클라이언트와 App-V 클라이언트를 컴퓨터에 설치해야 합니다. 클라이언트 장치에는 데스크톱 및 휴대용 컴퓨터와 VDI(가상 데스크톱 인프라) 클라이언트가 포함될 수 있습니다. Configuration Manager와 App-V 클라이언트 소프트웨어가 함께 작동하여 가상 응용 프로그램 패키지를 제공하고 찾아서 시작합니다. Configuration Manager 클라이언트는 App-V 클라이언트에 대한 가상 응용 프로그램 패키지 제공을 관리합니다. App-V 클라이언트는 클라이언트에서 가상 응용 프로그램을 실행합니다.  
+-   컴퓨터에 가상 응용 프로그램을 배포하려면 Configuration Manager 클라이언트와 App-V 클라이언트를 컴퓨터에 설치해야 합니다. 클라이언트 디바이스에는 데스크톱 및 휴대용 컴퓨터와 VDI(가상 데스크톱 인프라) 클라이언트가 포함될 수 있습니다. Configuration Manager와 App-V 클라이언트 소프트웨어가 함께 작동하여 가상 응용 프로그램 패키지를 제공하고 찾아서 시작합니다. Configuration Manager 클라이언트는 App-V 클라이언트에 대한 가상 응용 프로그램 패키지 제공을 관리합니다. App-V 클라이언트는 클라이언트에서 가상 응용 프로그램을 실행합니다.  
 
 -   가상 응용 프로그램을 배포하려면 먼저 App-V Application Virtualization Sequencer를 사용하여 가상 응용 프로그램을 만들어야 합니다. Application Virtualization Sequencer는 응용 프로그램에 대한 설치 및 설정 프로세스를 모니터링하고 응용 프로그램 실행을 위해 필요한 정보를 가상 환경에 기록합니다. 또한 Application Virtualization Sequencer를 사용하면 모든 사용자에게 적용되는 파일 및 구성과 사용자가 사용자 지정할 수 있는 구성을 설정할 수 있습니다.  
 
@@ -113,7 +113,7 @@ Configuration Manager를 사용할 때는 다운로드하고 실행하는 것이
 |단계|추가 정보|  
 |----------|----------------------|  
 |현재 가상 응용 프로그램을 검토하여 Configuration Manager 인프라로 마이그레이션할 응용 프로그램을 선택합니다.|추가 정보가 없습니다.|  
-|가상 응용 프로그램을 배포할 사용자와 장치를 평가합니다.|가상 응용 프로그램을 배포할 사용자와 장치를 함께 그룹화하는 Configuration Manager 컬렉션을 만듭니다. [컬렉션 소개](/sccm/core/clients/manage/collections/introduction-to-collections)를 참조하세요.|  
+|가상 응용 프로그램을 배포할 사용자와 디바이스를 평가합니다.|가상 응용 프로그램을 배포할 사용자와 디바이스를 함께 그룹화하는 Configuration Manager 컬렉션을 만듭니다. [컬렉션 소개](/sccm/core/clients/manage/collections/introduction-to-collections)를 참조하세요.|  
 |App-V 5 연결 그룹을 Configuration Manager 가상 환경으로 마이그레이션합니다.|이 항목의 [App-V 5 연결 그룹을 Configuration Manager 가상 환경으로 마이그레이션](/sccm/apps/get-started/deploying-app-v-virtual-applications#migrate-app-v-5-connection-groups-to-configuration-manager-virtual-environments) 섹션을 참조하세요.|  
 |가상 응용 프로그램이 Configuration Manager 인프라에 전체 응용 프로그램으로 존재하는지 확인합니다.|관리를 간소화하기 위해 가상 응용 프로그램을 새 배포 유형으로 기존 전체 응용 프로그램에 추가할 수 있습니다. [응용 프로그램 만들기](../../apps/deploy-use/create-applications.md)를 참조하세요.|  
 |기존 APP-V 패키지를 대체하는 응용 프로그램을 만듭니다.|[응용 프로그램 관리 소개](/sccm/apps/understand/introduction-to-application-management) 및 [응용 프로그램 만들기](../../apps/deploy-use/create-applications.md)를 참조하세요.|  
@@ -131,7 +131,7 @@ App-V 5 연결 그룹을 Configuration Manager 가상 환경으로 변환하려�
 
 1.  App-V에 있던 모든 응용 프로그램에 대한 Configuration Manager 응용 프로그램을 만듭니다.  
 
-2.  배포 목적이 **필수**인 사용자 또는 장치에 응용 프로그램을 배포합니다. 사용자에게 배포할 응용 프로그램은 App-V에서 응용 프로그램을 사용했던 사용자에게 배포해야 합니다. 컴퓨터에 배포할 응용 프로그램은 App-V에서 해당 응용 프로그램이 포함되어 있었던 컴퓨터에 배포해야 합니다.  
+2.  배포 목적이 **필수**인 사용자 또는 디바이스에 응용 프로그램을 배포합니다. 사용자에게 배포할 응용 프로그램은 App-V에서 응용 프로그램을 사용했던 사용자에게 배포해야 합니다. 컴퓨터에 배포할 응용 프로그램은 App-V에서 해당 응용 프로그램이 포함되어 있었던 컴퓨터에 배포해야 합니다.  
 
 3.  배포가 완료되면 독립 실행형 App-V에 게시된 연결 그룹과 일치하는 가상 환경을 만듭니다. 가상 환경에는 동일한 패키지(구체적으로는 App-V 5 배포 유형)가 같은 순서로 포함되어야 합니다.  
 

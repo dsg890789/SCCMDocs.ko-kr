@@ -1,5 +1,5 @@
 ---
-title: Intune으로 관리되는 Android for Work 장치에 대한 구성 항목을 만드는 방법
+title: Intune으로 관리되는 Android for Work 디바이스에 대한 구성 항목을 만드는 방법
 titleSuffix: Configuration Manager
 ms.date: 2017-07-31
 ms.prod: configuration-manager
@@ -15,9 +15,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
 ms.locfileid: "32351278"
 ---
-# <a name="how-to-create-configuration-items-for-android-for-work-devices-managed-with-intune"></a>Intune으로 관리되는 Android for Work 장치에 대한 구성 항목을 만드는 방법
+# <a name="how-to-create-configuration-items-for-android-for-work-devices-managed-with-intune"></a>Intune으로 관리되는 Android for Work 디바이스에 대한 구성 항목을 만드는 방법
 
- System Center Configuration Manager **Android for Work** 구성 항목을 사용하여 Configuration Manager에서 온-프레미스로 관리되거나 Microsoft Intune에 등록된 Android for Work 장치에 대한 설정을 관리할 수 있습니다.  
+ System Center Configuration Manager **Android for Work** 구성 항목을 사용하여 Configuration Manager에서 온-프레미스로 관리되거나 Microsoft Intune에 등록된 Android for Work 디바이스에 대한 설정을 관리할 수 있습니다.  
 
 ### <a name="to-create-an-android-for-work-configuration-item"></a>Android for Work 구성 항목을 만들려면  
 
@@ -35,12 +35,12 @@ ms.locfileid: "32351278"
 
   **다음**을 클릭합니다.
 
-7.  마법사의 **장치 설정** 페이지에서 구성하려는 설정 그룹을 선택합니다. [Android for Work 구성 항목 설정](#android-for-work-configuration-item-settings-reference)에서 자세한 내용을 참조한 후 **다음**을 클릭합니다.  
+7.  마법사의 **디바이스 설정** 페이지에서 구성하려는 설정 그룹을 선택합니다. [Android for Work 구성 항목 설정](#android-for-work-configuration-item-settings-reference)에서 자세한 내용을 참조한 후 **다음**을 클릭합니다.  
 
   > [!TIP]  
   >  원하는 설정이 나열되지 않은 경우 **기본 설정 그룹에 없는 추가 설정 구성 확인란**을 선택합니다.  
 
-9. 각 설정 페이지에서 필요한 설정과 장치에서 준수되지 않는 경우 수정 여부(지원되는 경우)를 구성합니다.  
+9. 각 설정 페이지에서 필요한 설정과 디바이스에서 준수되지 않는 경우 수정 여부(지원되는 경우)를 구성합니다.  
 
 10. 각 설정 그룹에 대해 구성 항목이 비규격인 것으로 확인되는 경우 보고될 심각성을 구성할 수도 있습니다.  
 
@@ -69,18 +69,18 @@ ms.locfileid: "32351278"
 
 |설정|세부 정보|  
 |-------------|-------------|  
-|**장치에 암호 설정 필요**|지원되는 장치에는 암호가 필요합니다.|  
+|**장치에 암호 설정 필요**|지원되는 디바이스에는 암호가 필요합니다.|  
 |**최소 암호 길이(문자 수)**|암호의 최소 길이입니다.|  
 |**다음 기간 후 암호 만료(일)**|암호를 변경해야 할 때까지의 기간(일)입니다.|  
 |**저장한 암호 수**|최근에 사용한 암호가 다시 사용되지 않도록 합니다.|  
-|**다음 로그온 실패 횟수 후 장치 초기화**|이 횟수만큼 로그인에 실패하면 장치를 초기화합니다.|  
-|**다음 유휴 시간 후 장치 잠그기**|잠그기 전까지 장치를 사용하지 않은 기간을 선택합니다.|
-|**암호 품질**|필요한 암호 복잡도 수준과 생체 인식 장치 사용 가능 여부를 선택합니다.|  
-|**Smart Lock 및 기타 신뢰 에이전트 허용**|호환 가능한 Android 장치에 대한 스마트 잠금 기능을 제어할 수 있습니다. 신뢰 에이전트라고도 하는 이 전화 기능을 통해 장치가 특정 Bluetooth 장치에 연결된 경우 또는 NFC 태그에 가까이 있는 경우와 같이 신뢰할 수 있는 위치에 있는 경우 장치 잠금 화면 암호를 사용하지 않도록 설정하거나 무시할 수 있습니다. 이 설정을 사용하면 최종 사용자가 스마트 잠금을 구성하지 않도록 방지할 수 있습니다.|
+|**다음 로그온 실패 횟수 후 장치 초기화**|이 횟수만큼 로그인에 실패하면 디바이스를 초기화합니다.|  
+|**다음 유휴 시간 후 장치 잠그기**|잠그기 전까지 디바이스를 사용하지 않은 기간을 선택합니다.|
+|**암호 품질**|필요한 암호 복잡도 수준과 생체 인식 디바이스 사용 가능 여부를 선택합니다.|  
+|**Smart Lock 및 기타 신뢰 에이전트 허용**|호환되는 Android 디바이스의 스마트 잠금 기능을 제어해 보겠습니다. 신뢰 에이전트라고도 하는 이 전화 기능을 통해 디바이스가 특정 Bluetooth 디바이스에 연결된 경우 또는 NFC 태그에 가까이 있는 경우와 같이 신뢰할 수 있는 위치에 있는 경우 디바이스 잠금 화면 암호를 사용하지 않도록 설정하거나 무시할 수 있습니다. 이 설정을 사용하면 최종 사용자가 스마트 잠금을 구성하지 않도록 방지할 수 있습니다.|
 |**잠금 해제 지문**|&nbsp;|
 
 ###  <a name="work-profile"></a>작업 프로필  
- 이러한 설정은 삼성 KNOX 장치에만 적용됩니다.  
+ 이러한 설정은 삼성 KNOX 디바이스에만 적용됩니다.  
 
 |설정 이름|세부 정보|  
 |------------------|-------------|  

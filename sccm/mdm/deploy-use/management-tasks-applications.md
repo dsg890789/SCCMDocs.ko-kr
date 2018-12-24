@@ -12,7 +12,7 @@ ms.author: aaroncz
 manager: dougeby
 ms.openlocfilehash: 26aff6a374da4c6822943083b24c1a7ac04ee91d
 ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
 ms.locfileid: "32346501"
@@ -21,7 +21,7 @@ ms.locfileid: "32346501"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Microsoft Intune 또는 Configuration Manager 온-프레미스 장치 관리를 통해 장치를 관리하는 경우 다음과 같은 추가 응용 프로그램 유형을 관리할 수 있습니다.
+Microsoft Intune 또는 Configuration Manager 온-프레미스 디바이스 관리를 통해 디바이스를 관리하는 경우 다음과 같은 추가 응용 프로그램 유형을 관리할 수 있습니다.
 - Windows Phone 앱 패키지(*.xap 파일)
 - iOS용 앱 패키지(*.ipa 파일)
 - Android용 앱 패키지(*.apk 파일)
@@ -36,14 +36,14 @@ Microsoft Intune 또는 Configuration Manager 온-프레미스 장치 관리를 
 
 ## <a name="deploying-and-monitoring-apps"></a>앱 배포 및 모니터링
 
-System Center Configuration Manager에서 응용 프로그램을 배포하고 모니터링하는 프로세스는 해당 응용 프로그램이 랩톱 및 데스크톱과 같은 온사이트 장치용이므로 모바일 장치에 대한 프로세스와 동일합니다. 응용 프로그램 배포 및 모니터링에 대한 일반적인 내용은 다음 항목에서 확인할 수 있습니다.
+System Center Configuration Manager에서 응용 프로그램을 배포하고 모니터링하는 프로세스는 해당 응용 프로그램이 랩톱 및 데스크톱과 같은 온사이트 디바이스용이므로 모바일 디바이스에 대한 프로세스와 동일합니다. 응용 프로그램 배포 및 모니터링에 대한 일반적인 내용은 다음 항목에서 확인할 수 있습니다.
 
 - [System Center Configuration Manager에서 응용 프로그램 배포](../../apps/deploy-use/deploy-applications.md)
 - [System Center Configuration Manager에서 응용 프로그램 모니터링](../../apps/deploy-use/monitor-applications-from-the-console.md)
 
-다음은 응용 프로그램을 배포하고 모니터링할 때 염두에 두어야 하는 모바일 장치 관리에 특정한 몇 가지 고려 사항입니다.
+다음은 응용 프로그램을 배포하고 모니터링할 때 염두에 두어야 하는 모바일 디바이스 관리에 특정한 몇 가지 고려 사항입니다.
 
-- MDM에 등록된 장치는 시뮬레이트된 배포, 사용자 환경 또는 일정 설정을 지원하지 않습니다.
+- MDM에 등록된 디바이스는 시뮬레이트된 배포, 사용자 환경 또는 일정 설정을 지원하지 않습니다.
 
 - iOS 응용 프로그램 구성 정책을 이미 구성한 경우 이 정책에 배포를 연결할 수 있습니다. [앱 구성 정책을 사용하여 iOS 앱 구성](configure-ios-apps-with-app-configuration-policies.md)을 참조하세요.
 

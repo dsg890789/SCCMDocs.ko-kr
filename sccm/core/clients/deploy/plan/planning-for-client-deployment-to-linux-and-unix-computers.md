@@ -207,7 +207,7 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manag
 
  Linux 또는 UNIX 클라이언트 PKI 인증서를 사용 하는 경우에 승인할 필요가 없습니다. 클라이언트가 자체 서명된 인증서를 사용하는 경우 Configuration Manager 콘솔에서 클라이언트 승인에 대한 계층 구조 설정을 검토합니다. 클라이언트 승인 메서드가 없으면 **(권장 하지 않음) 하는 모든 컴퓨터를 자동으로 승인**, 클라이언트를 수동으로 승인 해야 합니다.  
 
- 클라이언트를 수동으로 승인하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트를 관리하는 방법](../../../../core/clients/manage/manage-clients.md) 항목의 [장치 노드에서 클라이언트 관리](../../../../core/clients/manage/manage-clients.md#BKMK_ManagingClients_DevicesNode) 섹션을 참조하세요.  
+ 클라이언트를 수동으로 승인하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트를 관리하는 방법](../../../../core/clients/manage/manage-clients.md) 항목의 [디바이스 노드에서 클라이언트 관리](../../../../core/clients/manage/manage-clients.md#BKMK_ManagingClients_DevicesNode)를 참조하세요.  
 
  Configuration Manager에서 인증서를 사용하는 방법에 대한 자세한 내용은 [System Center Configuration Manager를 위한 PKI 인증서 요구 사항](../../../../core/plan-design/network/pki-certificate-requirements.md)을 참조하세요.  
 

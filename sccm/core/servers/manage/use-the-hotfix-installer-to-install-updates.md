@@ -246,7 +246,7 @@ Microsoft에서 받은 업데이트(핫픽스)를 설치해야 하며 해당 업
  Configuration Manager 클라이언트에 패키지를 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 패키지 및 프로그램](../../../apps/deploy-use/packages-and-programs.md)을 참조하세요.  
 
 ###  <a name="BKMK_DeployCollections"></a> Configuration Manager에 업데이트를 배포하기 위한 컬렉션 만들기  
- 특정 업데이트를 해당 클라이언트에 배포할 수 있습니다. 다음 표에는 Configuration Manager의 여러 구성 요소를 위한 장치 컬렉션을 만드는 방법이 나와 있습니다.  
+ 특정 업데이트를 해당 클라이언트에 배포할 수 있습니다. 다음 표에는 Configuration Manager의 여러 구성 요소를 위한 디바이스 컬렉션을 만드는 방법이 나와 있습니다.  
 
 |Configuration Manager의 구성 요소|지침|  
 |----------------------------------------|------------------|  

@@ -105,16 +105,16 @@ Configuration Manager 버전 1802부터 CEIP(사용자 환경 개선 프로그�
 
 
 
-## <a name="mobile-device-management"></a>모바일 장치 관리  
+## <a name="mobile-device-management"></a>모바일 디바이스 관리  
 
 ### <a name="you-can-no-longer-deploy-windows-phone-81-vpn-profiles-to-windows-10"></a>Windows Phone 8.1 VPN 프로필을 Windows 10에 더 이상 배포할 수 없습니다.
 <!-- 503274  -->
 *적용 대상: Configuration Manager 버전 1710*
 
-Windows 10 장치에도 적용 가능한 Windows Phone 8.1 워크플로를 사용하여 VPN 프로필을 만들 수 없습니다. 이러한 프로필의 경우 만들기 마법사에 지원되는 플랫폼 페이지가 더 이상 표시되지 않습니다. 백 엔드에서 Windows Phone 8.1이 자동으로 선택됩니다. 지원되는 플랫폼 페이지는 프로필 속성에서 사용할 수 있지만 Windows 10 옵션이 표시되지 않습니다.
+Windows 10 디바이스에도 적용 가능한 Windows Phone 8.1 워크플로를 사용하여 VPN 프로필을 만들 수 없습니다. 이러한 프로필의 경우 만들기 마법사에 지원되는 플랫폼 페이지가 더 이상 표시되지 않습니다. 백 엔드에서 Windows Phone 8.1이 자동으로 선택됩니다. 지원되는 플랫폼 페이지는 프로필 속성에서 사용할 수 있지만 Windows 10 옵션이 표시되지 않습니다.
 
 #### <a name="workaround"></a>해결 방법
- Windows 10 장치의 경우 Windows 10 VPN 프로필 워크플로를 사용합니다. 이 옵션이 환경에 적합하지 않은 경우 지원 서비스에 문의하세요. 지원 서비스를 통해 Windows 10 타기팅을 추가할 수 있습니다.
+ Windows 10 디바이스의 경우 Windows 10 VPN 프로필 워크플로를 사용합니다. 이 옵션이 환경에 적합하지 않은 경우 지원 서비스에 문의하세요. 지원 서비스를 통해 Windows 10 타기팅을 추가할 수 있습니다.
 
 
 

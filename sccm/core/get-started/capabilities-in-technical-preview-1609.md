@@ -34,21 +34,21 @@ ms.locfileid: "32342395"
 ## <a name="improvements-to-endpoint-protection"></a>Endpoint Protection 개선
 Endpoint Protection 맬웨어 방지 정책 설정 개선 - Endpoint Protection 클라우드 보호 서비스가 의심스러운 파일을 차단하는 수준을 지정할 수 있습니다. 새 설정을 사용하면 관리자가 많은 양의 맬웨어가 발생한 "위험한" 컴퓨터를 지정할 수 있습니다.
 
-## <a name="increased-number-of-enrolled-devices"></a>등록된 장치 수 증가
-이제 관리자는 사용자가 Intune을 사용하여 최대 15개의 장치를 하이브리드 모바일 장치 관리에 등록하도록 설정할 수 있습니다. 이전에는 사용자당 장치 5대로 제한되었습니다.
+## <a name="increased-number-of-enrolled-devices"></a>등록된 디바이스 수 증가
+이제 관리자는 사용자가 Intune을 사용하여 최대 15개의 디바이스를 하이브리드 모바일 디바이스 관리에 등록하도록 설정할 수 있습니다. 이전에는 사용자당 디바이스 5대로 제한되었습니다.
 
 ## <a name="additional-apple-dep-settings"></a>추가 Apple DEP 설정
 
-이제 관리자는 iOS 및 Mac 장치에 대한 DEP 프로필에서 다음 Apple DEP(장비 등록 프로그램) 설정을 구성할 수 있습니다.
+이제 관리자는 iOS 및 Mac 디바이스에 대한 DEP 프로필에서 다음 Apple DEP(장비 등록 프로그램) 설정을 구성할 수 있습니다.
 - **터치 ID**
 - **확대/축소**
 - **Siri**
 
-사용하도록 설정하면 Apple의 설정 길잡이가 장치 활성화 중 이 서비스를 사용할지 묻는 메시지를 표시합니다.
+사용하도록 설정하면 Apple의 설정 길잡이가 디바이스 활성화 중 이 서비스를 사용할지 묻는 메시지를 표시합니다.
 
 ## <a name="integration-with-upgrade-analytics"></a>Upgrade Analytics 통합
 
-Upgrade Analytics는 업그레이드를 더 쉽고 원활하게 수행할 수 있도록 Windows 10과의 호환성 및 장치 준비성을 평가 및 분석합니다. Upgrade Analytics와 Configuration Manager를 통합하면 Configuration Manager 관리 콘솔에서 업그레이드 호환성 데이터에 액세스한 다음 장치 목록에서 업그레이드 또는 수정할 대상 장치에 액세스할 수 있습니다.
+Upgrade Analytics는 업그레이드를 더 쉽고 원활하게 수행할 수 있도록 Windows 10과의 호환성 및 디바이스 준비성을 평가 및 분석합니다. Upgrade Analytics와 Configuration Manager를 통합하면 Configuration Manager 관리 콘솔에서 업그레이드 호환성 데이터에 액세스한 다음 디바이스 목록에서 업그레이드 또는 수정할 대상 디바이스에 액세스할 수 있습니다.
 
 Upgrade Analytics에 대한 자세한 내용은 [Get started with Upgrade Analytics](https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-get-started)(Upgrade Analytics 시작)를 참조하세요.
 
@@ -62,7 +62,7 @@ Configuration Manager를 Intune과 함께 사용할 경우 OMA-URI를 사용하�
 
 **업데이트:** 현재 Technical Preview 릴리스에서는 즉시 동기화 기능을 사용할 수 없습니다.
 
-- 이전에는 비즈니스용 Windows 스토어에서 무료 앱만 배포할 수 있었습니다. 이제 Configuration Manager에서 사용이 허가된 유료 온라인 앱 배포를 추가로 지원합니다(Intune에 등록된 장치에 한함).
+- 이전에는 비즈니스용 Windows 스토어에서 무료 앱만 배포할 수 있었습니다. 이제 Configuration Manager에서 사용이 허가된 유료 온라인 앱 배포를 추가로 지원합니다(Intune에 등록된 디바이스에 한함).
 - 이제 비즈니스용 Windows 스토어와 Configuration Manager 간의 즉시 동기화를 시작할 수 있습니다.
 - 이제 Azure Active Directory에서 얻은 클라이언트 비밀 키를 수정할 수 있습니다.
 
@@ -89,12 +89,12 @@ Configuration Manager를 Intune과 함께 사용할 경우 OMA-URI를 사용하�
 
 ## <a name="new-compliance-settings-for-configuration-items"></a>구성 항목의 새 준수 설정
 
-다양한 장치 플랫폼의 구성 항목에 사용할 수 있는 여러 가지 새로운 설정을 추가했습니다.
+다양한 디바이스 플랫폼의 구성 항목에 사용할 수 있는 여러 가지 새로운 설정을 추가했습니다.
 이러한 설정은 이전에 Microsoft Intune의 독립 실행형 구성에 있던 설정이며 이제 Intune과 Configuration Manager를 사용할 때 제공됩니다.
-이러한 설정 사용에 대한 도움이 필요한 경우 [Microsoft Intune 정책을 사용하여 장치의 설정 및 기능 관리](https://docs.microsoft.com/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)를 열고 원하는 플랫폼에 대한 설정 하위 항목을 선택합니다.
+이러한 설정 사용에 대한 도움이 필요한 경우 [Microsoft Intune 정책을 사용하여 디바이스의 설정 및 기능 관리](https://docs.microsoft.com/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)를 열고 원하는 플랫폼에 대한 설정 하위 항목을 선택합니다.
 
 
-### <a name="new-settings-for-android-devices"></a>Android 장치에 대한 새로운 설정
+### <a name="new-settings-for-android-devices"></a>Android 디바이스에 대한 새로운 설정
 
 #### <a name="password-settings"></a>암호 설정
 
@@ -119,7 +119,7 @@ Configuration Manager를 Intune과 함께 사용할 경우 OMA-URI를 사용하�
 
 - **Google Play 스토어 사용 가능**
 
-#### <a name="device-capability-settings"></a>장치 기능 설정
+#### <a name="device-capability-settings"></a>디바이스 기능 설정
 
 - **이동식 저장소 허용**
 - **Wi-Fi 테더링 허용**
@@ -134,7 +134,7 @@ Configuration Manager를 Intune과 함께 사용할 경우 OMA-URI를 사용하�
 - **복사 및 붙여넣기 허용**
 
 
-### <a name="new-settings-for-ios-devices"></a>iOS 장치에 대한 새 설정
+### <a name="new-settings-for-ios-devices"></a>iOS 디바이스에 대한 새 설정
 
 #### <a name="password-settings"></a>암호 설정
 
@@ -143,7 +143,7 @@ Configuration Manager를 Intune과 함께 사용할 경우 OMA-URI를 사용하�
 - **암호를 요구하기 전까지 비활성 시간(분)**
 - **암호 기록 기억**
 
-### <a name="new-settings-for-mac-os-x-devices"></a>Mac OS X 장치에 대한 새 설정
+### <a name="new-settings-for-mac-os-x-devices"></a>Mac OS X 디바이스에 대한 새 설정
 
 #### <a name="password-settings"></a>암호 설정
 
@@ -152,7 +152,7 @@ Configuration Manager를 Intune과 함께 사용할 경우 OMA-URI를 사용하�
 - **암호 기록 기억**
 - **화면 보호기가 활성화되기까지의 비활성 시간(분)**
 
-### <a name="new-settings-for-windows-10-desktop-and-mobile-devices"></a>Windows 10 Desktop 및 모바일 장치에 대한 새로운 설정
+### <a name="new-settings-for-windows-10-desktop-and-mobile-devices"></a>Windows 10 Desktop 및 모바일 디바이스에 대한 새로운 설정
 
 #### <a name="password-settings"></a>암호 설정
 
@@ -165,7 +165,7 @@ Configuration Manager를 Intune과 함께 사용할 경우 OMA-URI를 사용하�
 - **모바일 장치 암호화 필요**
 - **수동 등록 취소 허용**
 
-#### <a name="device-capability-settings"></a>장치 기능 설정
+#### <a name="device-capability-settings"></a>디바이스 기능 설정
 
 - **셀룰러에서 VPN 허용**
 - **셀룰러에서 VPN 로밍 허용**
@@ -174,9 +174,9 @@ Configuration Manager를 Intune과 함께 사용할 경우 OMA-URI를 사용하�
 - **Cortana 허용**
 - **알림 센터 알림 허용**
 
-### <a name="new-settings-for-windows-10-team-devices"></a>Windows 10 Team 장치에 대한 새 설정
+### <a name="new-settings-for-windows-10-team-devices"></a>Windows 10 Team 디바이스에 대한 새 설정
 
-#### <a name="device-settings"></a>장치 설정
+#### <a name="device-settings"></a>디바이스 설정
 
 - **Azure Operational Insights 사용**
 - **Miracast 무선 프로젝션 사용**
@@ -184,7 +184,7 @@ Configuration Manager를 Intune과 함께 사용할 경우 OMA-URI를 사용하�
 - **잠금 화면 배경 이미지 URL**
 
 
-### <a name="new-settings-for-windows-81-devices"></a>Windows 8.1 장치의 새로운 설정
+### <a name="new-settings-for-windows-81-devices"></a>Windows 8.1 디바이스의 새로운 설정
 
 #### <a name="applicability-settings"></a>적용 가능성 설정
 
@@ -207,7 +207,7 @@ Configuration Manager를 Intune과 함께 사용할 경우 OMA-URI를 사용하�
 - **인트라넷 네트워크의 자동 검색 허용**
 
 
-### <a name="new-settings-for-windows-phone-81-devices"></a>Windows Phone 8.1 장치에 대한 새로운 설정
+### <a name="new-settings-for-windows-phone-81-devices"></a>Windows Phone 8.1 디바이스에 대한 새로운 설정
 
 #### <a name="applicability-settings"></a>적용 가능성 설정
 
@@ -219,7 +219,7 @@ Configuration Manager를 Intune과 함께 사용할 경우 OMA-URI를 사용하�
 - **단순 암호 허용**
 - **암호 기록 기억**
 
-#### <a name="device-capability-settings"></a>장치 기능 설정
+#### <a name="device-capability-settings"></a>디바이스 기능 설정
 
 - **무료 Wi-Fi 핫스팟에 자동 연결 허용**
 
@@ -414,7 +414,7 @@ Office 365 ProPlus 업데이트에 대한 자세한 내용은 [Manage Office 365
 
 
 ## <a name="intune-compliance-charts"></a>Intune 준수 차트
-이 릴리스에서는 Configuration Manager 콘솔의 **모니터링 작업 영역** 아래에 있는 새 차트를 사용하여 장치의 전체 준수 및 주요 비준수 이유에 대한 간략한 보기를 볼 수 있습니다.
+이 릴리스에서는 Configuration Manager 콘솔의 **모니터링 작업 영역** 아래에 있는 새 차트를 사용하여 디바이스의 전체 준수 및 주요 비준수 이유에 대한 간략한 보기를 볼 수 있습니다.
 
 #### <a name="to-view-the-intune-compliance-charts"></a>Intune 준수 차트를 보려면
 1. Configuration Manager 콘솔에서 **모니터링** > **개요** > **준수 설정**으로 이동합니다.
@@ -422,26 +422,26 @@ Office 365 ProPlus 업데이트에 대한 자세한 내용은 [Manage Office 365
 3. **준수 정책** 노드를 클릭하여 **전체 장치 준수** 및 **주요 비준수 이유** 차트를 표시합니다.
 
 ### <a name="limitations-of-intune-compliance-charts-in-tp-1609"></a>TP 1609의 Intune 준수 차트 제한 사항
-- 현재 **전체 장치 준수** 차트에 대해 드릴다운을 실행하면 오류가 발생합니다.
-- **주요 비준수 이유** 차트에는 정책 이름이 나열되며 개별 비준수 이유는 나열되지 않습니다. 드릴다운할 정책을 클릭하여 해당 정책을 준수하지 않는 장치를 볼 수 있습니다.
+- 현재 **전체 디바이스 준수** 차트에 대해 드릴다운을 실행하면 오류가 발생합니다.
+- **주요 비준수 이유** 차트에는 정책 이름이 나열되며 개별 비준수 이유는 나열되지 않습니다. 드릴다운할 정책을 클릭하여 해당 정책을 준수하지 않는 디바이스를 볼 수 있습니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 다음 섹션을 순서대로 완료합니다.
 
 #### <a name="check-overall-compliance-chart"></a>전체 준수 차트 확인
-1. Configuration Manager에 두 개의 iOS 준수 정책을 추가합니다. 하나의 정책에는 장치에 대한 하나의 설정 집합(예: PIN 길이를 6으로 설정)이 있어야 합니다. 다른 정책에는 다른 설정 집합(예: PIN 복잡도)이 있어야 합니다. 정책 설정이 겹치거나 충돌하지 않아야 합니다.
+1. Configuration Manager에 두 개의 iOS 준수 정책을 추가합니다. 하나의 정책에는 디바이스에 대한 하나의 설정 집합(예: PIN 길이를 6으로 설정)이 있어야 합니다. 다른 정책에는 다른 설정 집합(예: PIN 복잡도)이 있어야 합니다. 정책 설정이 겹치거나 충돌하지 않아야 합니다.
 2. 사용자 집합에 두 개의 정책을 배포합니다.
-3. 동일한 사용자 계정 및 이전 단계에서 정책을 받은 계정을 사용하여 Intune에 두 개의 iOS 장치를 등록합니다. 장치가 준수 정책 기준을 충족하지 않아야 합니다.
-4. Configuration Manager에서 **전체 장치 준수** 차트를 확인합니다. 두 장치가 비규격으로 보고되어야 합니다.
+3. 동일한 사용자 계정 및 이전 단계에서 정책을 받은 계정을 사용하여 Intune에 두 개의 iOS 디바이스를 등록합니다. 디바이스가 준수 정책 기준을 충족하지 않아야 합니다.
+4. Configuration Manager에서 **전체 디바이스 준수** 차트를 확인합니다. 두 디바이스가 비규격으로 보고되어야 합니다.
 <!-- 5. Click the **Non-compliant** section of the chart. Both devices should appear in the filtered view under **Assets and Compliance** > **Overview** > **Device**. -->
 
 #### <a name="check-the-top-non-compliance-reasons-chart"></a>주요 비준수 이유 차트 확인
 5. **주요 비준수 이유** 차트를 확인합니다. 이 차트에는 5가지 주요 비준수 이유가 나열되지만 정책에 두 개의 준수 설정만 있는 경우 2개의 주요 비준수 이유만 표시됩니다.
-6. 차트의 섹션 중 하나를 클릭합니다. 두 장치 모두 **자산 및 준수** > **개요** > **장치**의 필터링된 뷰에 나타납니다.
+6. 차트의 섹션 중 하나를 클릭합니다. 두 디바이스 모두 **자산 및 준수** > **개요** > **디바이스**의 필터링된 뷰에 나타납니다.
 
-#### <a name="make-devices-compliant-and-check-the-charts"></a>장치를 준수하도록 만들고 차트를 확인합니다.
-7. 장치 중 하나가 정책 중 하나를 준수하도록 만듭니다. **전체 장치 준수** 차트를 다시 확인합니다. 차트에 하나의 준수 장치와 하나의 비준수 장치가 표시되어야 합니다.
-8. 다른 장치가 동일한 정책을 준수하도록 만듭니다. 이렇게 하면 두 정책을 준수하는 장치 하나와 정책 중 하나만 준수하는 장치 하나가 만들어집니다.
+#### <a name="make-devices-compliant-and-check-the-charts"></a>디바이스를 준수하도록 만들고 차트를 확인합니다.
+7. 디바이스 중 하나가 정책 중 하나를 준수하도록 만듭니다. **전체 장치 준수** 차트를 다시 확인합니다. 차트에 하나의 준수 디바이스와 하나의 비준수 디바이스가 표시되어야 합니다.
+8. 다른 디바이스가 동일한 정책을 준수하도록 만듭니다. 이렇게 하면 두 정책을 준수하는 디바이스 하나와 정책 중 하나만 준수하는 디바이스 하나가 만들어집니다.
 9. **주요 비준수 이유** 차트를 확인합니다. 비준수 이유가 하나만 나열되어야 합니다.
 <!--7. Click the **Compliant** section of the chart. Only the compliant device should appear in the filtered view. -->
 

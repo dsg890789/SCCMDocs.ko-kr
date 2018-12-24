@@ -64,7 +64,7 @@ CMG는 많은 로그 파일의 항목을 생성합니다. 자세한 내용은 [C
 
 
 ## <a name="cloud-management-dashboard"></a>클라우드 관리 대시보드
-<!--1358461--> 버전 1806을 시작으로 클라우드 관리 대시보드는 CMG 사용량에 대한 중앙 집중식 보기를 제공합니다. 사이트가 클라우드 관리에 대한 [Azure 서비스](/sccm/core/servers/deploy/configure/azure-services-wizard)에 등록되면 사이트에는 클라우드 사용자 및 장치에 대한 데이터도 표시됩니다.  
+<!--1358461--> 버전 1806을 시작으로 클라우드 관리 대시보드는 CMG 사용량에 대한 중앙 집중식 보기를 제공합니다. 사이트가 클라우드 관리에 대한 [Azure 서비스](/sccm/core/servers/deploy/configure/azure-services-wizard)에 등록되면 사이트에는 클라우드 사용자 및 디바이스에 대한 데이터도 표시됩니다.  
 
 다음 스크린샷은 사용 가능한 타일 두 가지를 보여 주는 클라우드 관리 대시보드의 일부입니다.  
 ![클라우드 관리 대시보드 타일 CMG 트래픽 및 현재 온라인 클라이언트](media/1358461-cmg-dashboard.png)

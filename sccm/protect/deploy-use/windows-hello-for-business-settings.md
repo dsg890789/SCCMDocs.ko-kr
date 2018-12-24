@@ -12,7 +12,7 @@ ms.author: aaroncz
 manager: dougeby
 ms.openlocfilehash: 60dcf98b83fb4650a10e5503d42b9f49d3aba359
 ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
 ms.locfileid: "32350088"
@@ -22,9 +22,9 @@ ms.locfileid: "32350088"
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 <!--1245704-->
-System Center Configuration Manager를 통해 Windows 10 장치의 대체 로그인 방법인 비즈니스용 Windows Hello(이전의 Microsoft Passport for Windows)와 통합할 수 있습니다. 비즈니스용 Windows Hello는 Active Directory 또는 Azure Active Directory 계정을 사용하여 암호, 스마트 카드 또는 가상 스마트 카드를 대체합니다.  
+System Center Configuration Manager를 통해 Windows 10 디바이스의 대체 로그인 방법인 비즈니스용 Windows Hello(이전의 Microsoft Passport for Windows)와 통합할 수 있습니다. 비즈니스용 Windows Hello는 Active Directory 또는 Azure Active Directory 계정을 사용하여 암호, 스마트 카드 또는 가상 스마트 카드를 대체합니다.  
 
-비즈니스용 Windows Hello를 통해 암호 대신 **사용자 제스처** 를 사용하여 로그인할 수 있습니다. 사용자 제스처는 단순 PIN, 생체 인식 인증 또는 외부 장치(예: 지문 판독기)일 수 있습니다.
+비즈니스용 Windows Hello를 통해 암호 대신 **사용자 제스처** 를 사용하여 로그인할 수 있습니다. 사용자 제스처는 단순 PIN, 생체 인식 인증 또는 외부 디바이스(예: 지문 판독기)일 수 있습니다.
 
 자세한 내용은 [비즈니스용 Windows Hello](https://docs.microsoft.com/windows/access-protection/hello-for-business/hello-identity-verification)를 참조하세요.
 
@@ -39,10 +39,10 @@ System Center Configuration Manager를 통해 Windows 10 장치의 대체 로그
 
 -   비즈니스용 Windows Hello KSP(키 저장소 공급자)에 인증 인증서를 저장할 수 있습니다. 자세한 내용은 [인증서 프로필](introduction-to-certificate-profiles.md)을 참조하세요.  
 
-- Configuration Manager 클라이언트를 실행하는 도메인에 가입된 Windows 10 장치에 비즈니스용 Windows Hello 정책을 배포할 수 있습니다. 이 구성은 [도메인에 가입된 Windows 10 장치에서 비즈니스용 Windows Hello 구성](#configure-windows-hello-for-business-on-domain-joined-windows-10-devices) 섹션에서 설명합니다. Microsoft Intune(하이브리드)에서 Configuration Manager를 사용하는 경우 Windows 10 및 Windows 10 모바일 장치에서 이러한 설정을 구성할 수 있습니다. 자세한 내용은 [비즈니스용 Windows Hello 설정(하이브리드) 구성](../../mdm/deploy-use/windows-hello-for-business-settings.md)을 참조하세요.
+- Configuration Manager 클라이언트를 실행하는 도메인에 가입된 Windows 10 디바이스에 비즈니스용 Windows Hello 정책을 배포할 수 있습니다. 이 구성은 [도메인에 가입된 Windows 10 디바이스에서 비즈니스용 Windows Hello 구성](#configure-windows-hello-for-business-on-domain-joined-windows-10-devices) 섹션에서 설명합니다. Microsoft Intune(하이브리드)에서 Configuration Manager를 사용하는 경우 Windows 10 및 Windows 10 모바일 디바이스에서 이러한 설정을 구성할 수 있습니다. 자세한 내용은 [비즈니스용 Windows Hello 설정(하이브리드) 구성](../../mdm/deploy-use/windows-hello-for-business-settings.md)을 참조하세요.
 
-## <a name="configure-windows-hello-for-business-on-domain-joined-windows-10-devices"></a>도메인에 가입된 Windows 10 장치에서 비즈니스용 Windows Hello 구성
-비즈니스용 Windows Hello 프로필을 만들고 배포하여 도메인에 조인된 Windows 10 장치에서 비즈니스용 Windows Hello 설정을 제어할 수 있습니다. 이 방법이 권장됩니다.
+## <a name="configure-windows-hello-for-business-on-domain-joined-windows-10-devices"></a>도메인에 가입된 Windows 10 디바이스에서 비즈니스용 Windows Hello 구성
+비즈니스용 Windows Hello 프로필을 만들고 배포하여 도메인에 조인된 Windows 10 디바이스에서 비즈니스용 Windows Hello 설정을 제어할 수 있습니다. 이 방법이 권장됩니다.
 
 
 인증서 기반 인증을 사용하는 경우 [인증서 프로필 구성](#configure-a-certificate-profile)에 설명된 대로 인증서 프로필도 배포해야 합니다. 키 기반 인증을 사용하는 경우 인증서 프로필을 배포할 필요가 없습니다.

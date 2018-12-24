@@ -84,7 +84,7 @@ System Center Configuration Manager를 사용하여 Linux 또는 UNIX 서버를 
 
      이 명령을 입력 하는 경우 필요한 추가 명령줄 속성을 사용 합니다.  명령줄 속성의 목록은 [Linux 및 UNIX 서버에 클라이언트를 설치하기 위한 명령줄 속성](#BKMK_CmdLineInstallLnUClient)을 참조하세요.  
 
-6.  스크립트가 실행된 후 **/var/opt/microsoft/scxcm.log** 파일을 검토하여 설치의 유효성을 검사합니다. 또한 Configuration Manager 콘솔, **자산 및 준수** 작업 영역의 **장치** 노드에서 클라이언트 세부 정보를 통해 클라이언트가 설치되고 사이트와 통신하고 있는지 확인할 수 있습니다.  
+6.  스크립트가 실행된 후 **/var/opt/microsoft/scxcm.log** 파일을 검토하여 설치의 유효성을 검사합니다. 또한 Configuration Manager 콘솔, **자산 및 준수** 작업 영역의 **디바이스** 노드에서 클라이언트 세부 정보를 통해 클라이언트가 설치되고 사이트와 통신하고 있는지 확인할 수 있습니다.  
 
 ###  <a name="BKMK_CmdLineInstallLnUClient"></a> Linux 및 UNIX 서버에 클라이언트를 설치하기 위한 명령줄 속성  
  다음 속성은 설치 스크립트의 동작을 수정하는 데 사용할 수 있습니다.  

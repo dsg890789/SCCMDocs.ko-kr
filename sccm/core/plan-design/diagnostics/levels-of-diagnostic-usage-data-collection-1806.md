@@ -67,9 +67,9 @@ Configuration Manager 버전 1806의 경우 이 수준에는 다음과 같은 �
 
 - Configuration Manager 클라이언트 버전, OS 버전 및 Office 버전 개수
 
-- 관리되는 장치의 운영 체제 및 Exchange Connector에서 설정한 정책 개수
+- 관리되는 디바이스의 운영 체제 및 Exchange Connector에서 설정한 정책 개수
 
-- 분기 및 빌드별 Windows 10 장치 개수
+- 분기 및 빌드별 Windows 10 디바이스 개수
 
 - 비즈니스용 Windows 업데이트를 사용하는 Windows 10 클라이언트 개수  
 
@@ -149,7 +149,7 @@ Configuration Manager 버전 1806의 경우 이 수준에는 다음과 같은 �
 
    - 패키지 및 프로그램에 대한 기본 구성 정보: 배포 옵션, 프로그램 플래그
 
-   - 배포 형식에 대한 기본 사용량/대상 지정 정보: 사용자 및 장치 대상 지정, 필수 및 사용 가능, 유니버설 앱
+   - 배포 형식에 대한 기본 사용량/대상 지정 정보: 사용자 및 디바이스 대상 지정, 필수 및 사용 가능, 유니버설 앱
 
    - App-V 환경 및 배포 속성 개수
 
@@ -183,9 +183,9 @@ Configuration Manager 버전 1806의 경우 이 수준에는 다음과 같은 �
 
    - UDA(Universal Data Access) 사용, 생성 방법
 
-   - 집계된 사용자 장치 선호도 통계 
+   - 집계된 사용자 디바이스 선호도 통계 
 
-   - 장치당 최대 및 평균 기본 사용자  
+   - 디바이스당 최대 및 평균 기본 사용자  
 
    - ***[New]*** 형식별 응용 프로그램 글로벌 조건 사용  
 
@@ -209,9 +209,9 @@ Configuration Manager 버전 1806의 경우 이 수준에는 다음과 같은 �
 
    - BIOS 사용 기간(년)
 
-   - 보안 부팅을 사용하도록 설정한 장치 수
+   - 보안 부팅을 사용하도록 설정한 디바이스 수
 
-   - TPM 상태별 장치 수
+   - TPM 상태별 디바이스 수
 
    - 클라이언트 자동 업그레이드: 클라이언트 파일럿, 제외 사용(확장된 상호 운용성 클라이언트)을 비롯한 배포 구성
 
@@ -227,11 +227,11 @@ Configuration Manager 버전 1806의 경우 이 수준에는 다음과 같은 �
 
    - 클라이언트 설치 오류 개수  
 
-   - Hyper-V 또는 Azure에 의해 가상화된 장치 개수  
+   - Hyper-V 또는 Azure에 의해 가상화된 디바이스 개수  
 
    - 소프트웨어 센터 작업 개수   
 
-   - UEFI 사용 장치 개수
+   - UEFI 사용 디바이스 개수
 
    - 클라이언트에 사용된 배포 방법, 배포 방법별 클라이언트 개수
 
@@ -241,9 +241,9 @@ Configuration Manager 버전 1806의 경우 이 수준에는 다음과 같은 �
 
    - 하드웨어 인벤토리 클래스, 소프트웨어 인벤토리 규칙 및 파일 수집 규칙 개수
 
-   - 장치 상태 증명에 대한 통계: 가장 일반적인 오류 코드, 온-프레미스 서버 수, 다양한 상태의 장치 개수
+   - 디바이스 상태 증명에 대한 통계: 가장 일반적인 오류 코드, 온-프레미스 서버 수, 다양한 상태의 디바이스 개수
 
-   - 기본 브라우저별 장치 개수  
+   - 기본 브라우저별 디바이스 개수  
 
    - ***[New]*** Configuration Manager가 생성한 서버 인증 인증서 수  
 
@@ -350,29 +350,29 @@ Configuration Manager 버전 1806의 경우 이 수준에는 다음과 같은 �
   - 마이그레이션된 개체 개수(마이그레이션 마법사 사용)
 
 
-### <a name="mobile-device-management-mdm"></a>MDM(모바일 장치 관리)  
+### <a name="mobile-device-management-mdm"></a>MDM(모바일 디바이스 관리)  
 
-   - 실행된 모바일 장치 작업(잠금, 핀 다시 설정, 초기화, 사용 중지 및 지금 동기화 명령) 개수
+   - 실행된 모바일 디바이스 작업(잠금, 핀 다시 설정, 초기화, 사용 중지 및 지금 동기화 명령) 개수
 
-   - 모바일 장치 정책 개수  
+   - 모바일 디바이스 정책 개수  
 
-   - Configuration Manager 및 Microsoft Intune에서 관리되는 모바일 장치 개수 및 등록 방법(대량, 사용자 기반)  
+   - Configuration Manager 및 Microsoft Intune에서 관리되는 모바일 디바이스 개수 및 등록 방법(대량, 사용자 기반)  
 
-   - 등록된 여러 모바일 장치를 사용하는 사용자 개수  
+   - 등록된 여러 모바일 디바이스를 사용하는 사용자 개수  
 
-   - 모바일 장치 폴링 일정 및 통계 모바일 장치 체크 인 기간  
+   - 모바일 디바이스 폴링 일정 및 통계 모바일 디바이스 체크 인 기간  
 
 
 ### <a name="microsoft-intune-troubleshooting"></a>Microsoft Intune 문제 해결  
 
-   - 장치 작업(초기화, 사용 중지, 잠금) 개수와 크기, 사용량 데이터 및 Microsoft Intune에 복제된 데이터 메시지
+   - 디바이스 작업(초기화, 사용 중지, 잠금) 개수와 크기, 사용량 데이터 및 Microsoft Intune에 복제된 데이터 메시지
 
    - 상태(state), 상태(status), 인벤토리, RDR, DDR, UDX, 테넌트 상태, POL, LOG, Cert, CRP, Resync, CFD, RDO, BEX, ISM 개수와 크기 및 Microsoft Intune에서 다운로드된 준수 메시지
 
    - Microsoft Intune에 대한 전체 및 델타 사용자 동기화 통계
 
 
-### <a name="on-premises-mobile-device-management-mdm"></a>온-프레미스 MDM(모바일 장치 관리)  
+### <a name="on-premises-mobile-device-management-mdm"></a>온-프레미스 MDM(모바일 디바이스 관리)  
 
    - Windows 10 대량 등록 패키지 및 프로필 개수  
 
@@ -550,6 +550,6 @@ Configuration Manager 버전 1806의 경우 이 수준에는 다음과 같은 �
 
 - 환경에서 상위 50개 CPU
 
-- Intune에서 관리하는 장치에 대한 EAS(Exchange Active Sync) 조건부 액세스 정책 형식(차단 또는 격리)
+- Intune에서 관리하는 디바이스에 대한 EAS(Exchange Active Sync) 조건부 액세스 정책 형식(차단 또는 격리)
 
 - 비즈니스용 Microsoft Store 응용 프로그램 정보: AppID, 온라인 상태 또는 오프라인 상태, 구입한 총 라이선스 수를 포함하여 동기화된 응용 프로그램의 비집계 목록

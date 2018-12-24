@@ -1,7 +1,7 @@
 ---
-title: '온-프레미스 모바일 장치 관리를 사용하여 데이터 및 장치 보호 '
+title: '온-프레미스 모바일 디바이스 관리를 사용하여 데이터 및 디바이스 보호 '
 titleSuffix: Configuration Manager
-description: Configuration Manager에서 온-프레미스 모바일 장치 관리를 사용하여 데이터 및 장치를 보호합니다.
+description: Configuration Manager에서 온-프레미스 모바일 디바이스 관리를 사용하여 데이터 및 디바이스를 보호합니다.
 ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ms.openlocfilehash: ac369b7797258f847772548c49f5613566ef3d49
 ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
 ms.locfileid: "32353497"
 ---
-# <a name="protect-data-and-devices-in-on-premises-mobile-device-management"></a>온-프레미스 모바일 장치 관리에서 데이터 및 장치 보호
+# <a name="protect-data-and-devices-in-on-premises-mobile-device-management"></a>온-프레미스 모바일 디바이스 관리에서 데이터 및 디바이스 보호
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 

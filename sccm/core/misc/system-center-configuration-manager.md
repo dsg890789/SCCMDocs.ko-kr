@@ -20,6 +20,6 @@ ms.locfileid: "32336207"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Microsoft System Center Configuration Manager 시작 Configuration Manager를 사용하면 안전하고 확장 가능한 소프트웨어 배포, 준수 설정 관리, 서버, 데스크톱 및 모바일 장치의 전체 자산 관리를 지원하여 IT 서비스를 더욱 효율적으로 제공할 수 있습니다.  
+Microsoft System Center Configuration Manager 시작 Configuration Manager를 사용하면 안전하고 확장 가능한 소프트웨어 배포, 준수 설정 관리, 서버, 데스크톱 및 모바일 디바이스의 전체 자산 관리를 지원하여 IT 서비스를 더욱 효율적으로 제공할 수 있습니다.  
 
  다음의 위치에서 이 버전의 Configuration Manager 온라인에 대한 최신 콘텐츠를 찾을 수 있습니다.: [ystem Center Configuration Manager에 대한 온라인 설명서](https://go.microsoft.com/fwlink/?LinkID=533344)

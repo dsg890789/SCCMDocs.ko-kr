@@ -190,7 +190,7 @@ If you issue the server authentication certificate from your PKI, you may direct
 
        - 기본적으로 이 설정은 **예**로 설정됩니다.  
 
-       - 사용자와 장치 모두에 대해 이 설정을 수정 및 배포합니다.  
+       - 사용자와 디바이스 모두에 대해 이 설정을 수정 및 배포합니다.  
 
 
 

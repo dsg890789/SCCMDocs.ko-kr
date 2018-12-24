@@ -29,7 +29,7 @@ System Center Configuration Manager의 원격 제어에는 외부 종속성과 �
 |----------------|----------------------|  
 |컴퓨터 비디오 카드 드라이버|최적의 원격 제어 성능을 보장하기 위해 최신 비디오 드라이버가 클라이언트 컴퓨터에 설치되었는지 확인합니다.|  
 
- Windows Embedded, Windows Embedded for POS(Point of Service) 및 Windows Fundamentals for Legacy PC를 실행하는 장치는 원격 제어 뷰어를 지원하지 않지만 원격 제어 클라이언트는 지원합니다.  
+ Windows Embedded, Windows Embedded for POS(Point of Service) 및 Windows Fundamentals for Legacy PC를 실행하는 디바이스는 원격 제어 뷰어를 지원하지 않지만 원격 제어 클라이언트는 지원합니다.  
 
  Configuration Manager 원격 제어는 Systems Management Server 2003 또는 Configuration Manager 2007을 실행하는 클라이언트 컴퓨터를 원격으로 관리하는 데 사용할 수 없습니다.  
 

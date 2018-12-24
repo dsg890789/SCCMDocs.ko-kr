@@ -50,7 +50,7 @@ Configuration Manager는 Microsoft 클라우드 서비스와 동기화하여 업
 
 -   사이트에서 서비스 연결 지점을 사용하여 사이트에 대한 사용 정보를 업로드합니다. 이 정보는 Microsoft 클라우드 서비스에서 현재 인프라 버전에 사용할 수 있는 업데이트를 식별하는 데 도움이 됩니다. 자세한 내용은 [진단 및 사용 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조합니다.  
 
--   사이트에서 서비스 연결 지점을 사용하여 Microsoft Intune을 사용하는 장치를 관리하고, Configuration Manager 온-프레미스 모바일 장치 관리를 사용합니다. 자세한 내용은 [하이브리드 MDM(모바일 장치 관리)](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.  
+-   사이트에서 서비스 연결 지점을 사용하여 Microsoft Intune을 사용하는 디바이스를 관리하고, Configuration Manager 온-프레미스 모바일 디바이스 관리를 사용합니다. 자세한 내용은 [하이브리드 MDM(모바일 디바이스 관리)](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.  
 
 업데이트를 다운로드할 때 수행되는 작업을 더 잘 이해하려면 다음 순서도를 참조하세요.  
 

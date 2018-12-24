@@ -123,7 +123,7 @@ ms.locfileid: "46014842"
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h3>장치 정책 준수</h3>
+                                                <h3>디바이스 정책 준수</h3>
                                                 <p><a href="/sccm/compliance/understand/ensure-device-compliance">장치 준수 확인</a></p>
                                                 <p><a href="/sccm/compliance/deploy-use/browser-profiles">Microsoft Edge 설정 구성</a></p>
                                                 <p><a href="/sccm/compliance/deploy-use/upgrade-windows-version">버전 업그레이드 정책을 사용하여 Windows 장치 업그레이드</a></p>
@@ -225,7 +225,7 @@ ms.locfileid: "46014842"
                                             </div>
                                             <div class="cardText">
                                                 <h3>Windows 10에 대한 공동 관리</h3>
-                                                <p>Configuration Manager와 Microsoft Intune을 모두 사용해 Windows 10 장치를 동시에 관리합니다.</p>
+                                                <p>Configuration Manager와 Microsoft Intune을 모두 사용해 Windows 10 디바이스를 동시에 관리합니다.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -263,7 +263,7 @@ ms.locfileid: "46014842"
                                             </div>
                                             <div class="cardText">
                                                 <h3>Windows as a service</h3>
-                                                <p>Windows 10 장치의 서비스 채널을 확인하고, 서비스 플랜을 사용해 이들을 최신 상태로 유지합니다.</p>
+                                                <p>Windows 10 디바이스의 서비스 채널을 확인하고, 서비스 플랜을 사용해 이들을 최신 상태로 유지합니다.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -306,7 +306,7 @@ ms.locfileid: "46014842"
                                             </div>
                                             <div class="cardText">
                                                 <h3>CMPivot</h3>
-                                                <p>온라인 장치를 즉시 쿼리한 이후 심층적인 인사이트를 얻기 위해 데이터를 필터링 및 그룹화합니다.</p>
+                                                <p>온라인 디바이스를 즉시 쿼리한 이후 심층적인 인사이트를 얻기 위해 데이터를 필터링 및 그룹화합니다.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -411,7 +411,7 @@ ms.locfileid: "46014842"
                                             </div>
                                             <div class="cardText">
                                                 <h3>Windows 10으로 업그레이드</h3>
-                                                <p>Configuration Manager 작업 순서를 사용해 장치를 Windows 10으로 업그레이드합니다.</p>
+                                                <p>Configuration Manager 작업 순서를 사용해 디바이스를 Windows 10으로 업그레이드합니다.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -492,7 +492,7 @@ ms.locfileid: "46014842"
                                             </div>
                                             <div class="cardText">
                                                 <h3>비즈니스용 Windows 업데이트 사용</h3>
-                                                <p>Configuration Manager를 비즈니스용 Windows 업데이트와 통합하여 Windows 10 장치를 최신 상태로 유지합니다.</p>
+                                                <p>Configuration Manager를 비즈니스용 Windows 업데이트와 통합하여 Windows 10 디바이스를 최신 상태로 유지합니다.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -554,7 +554,7 @@ ms.locfileid: "46014842"
                                             </div>
                                             <div class="cardText">
                                                 <h3>비즈니스용 Windows Hello</h3>
-                                                <p>Windows 10 장치에 대한 대체 로그인 방법을 관리하는 정책을 만듭니다.</p>
+                                                <p>Windows 10 디바이스에 대한 대체 로그인 방법을 관리하는 정책을 만듭니다.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -577,8 +577,8 @@ ms.locfileid: "46014842"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>장치 규정 준수를 확인합니다.</h3>
-                                                <p>관리하는 장치에서 설정을 구성하고 규정 준수를 평가합니다.</p>
+                                                <h3>디바이스 규정 준수를 확인합니다.</h3>
+                                                <p>관리하는 디바이스에서 설정을 구성하고 규정 준수를 평가합니다.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -615,8 +615,8 @@ ms.locfileid: "46014842"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>버전 업그레이드 정책을 사용하여 Windows 장치 업그레이드</h3>
-                                                <p>제품 키 또는 라이선스 파일을 사용하여 Windows 10 장치를 최신 버전으로 쉽게 업그레이드합니다.</p>
+                                                <h3>버전 업그레이드 정책을 사용하여 Windows 디바이스 업그레이드</h3>
+                                                <p>제품 키 또는 라이선스 파일을 사용하여 Windows 10 디바이스를 최신 버전으로 쉽게 업그레이드합니다.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -664,7 +664,7 @@ ms.locfileid: "46014842"
                                             </div>
                                             <div class="cardText">
                                                 <h3>Windows 10으로 업그레이드</h3>
-                                                <p>작업 순서를 사용해 장치를 Windows 10으로 업그레이드합니다.</p>
+                                                <p>작업 순서를 사용해 디바이스를 Windows 10으로 업그레이드합니다.</p>
                                             </div>
                                         </div>
                                     </div>

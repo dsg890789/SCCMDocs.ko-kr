@@ -23,7 +23,7 @@ ms.locfileid: "32345906"
 
 필요한 경우 다음 단계를 수행하여 Configuration Manager 외부 종속성을 충족합니다.
 
-1. 장치를 등록하려면 각 사용자에게 Intune 라이선스가 할당되어야 합니다. Intune 라이선스를 사용자에 연결하려면 각 사용자에게 공개적으로 확인할 수 있는 UPN(사용자 계정 이름)(예: johndoe@contoso.com 또는 Azure Active Directory에 구성된 대체 로그인 ID)이 있어야 합니다. 대체 로그인 ID를 구성하면 해당 UPN이 NetBIOS 형식(예: CONTOSO\johndoe)인 사용자도 메일 주소를 사용하여 로그인할 수 있습니다.
+1. 디바이스를 등록하려면 각 사용자에게 Intune 라이선스가 할당되어야 합니다. Intune 라이선스를 사용자에 연결하려면 각 사용자에게 공개적으로 확인할 수 있는 UPN(사용자 계정 이름)(예: johndoe@contoso.com 또는 Azure Active Directory에 구성된 대체 로그인 ID)이 있어야 합니다. 대체 로그인 ID를 구성하면 해당 UPN이 NetBIOS 형식(예: CONTOSO\johndoe)인 사용자도 메일 주소를 사용하여 로그인할 수 있습니다.
 
   - 회사에서 공개적으로 확인할 수 있는 UPN(즉, johndoe@contoso.com)을 사용하는 경우에는 추가 구성이 필요하지 않습니다.
   - 회사에서 확인할 수 없는 UPN(즉, CONTOSO\johndoe)을 사용하는 경우 [Azure Active Directory에서 대체 ID를 구성](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect-get-started-custom/#pages-under-the-section-sync)해야 합니다.
@@ -38,7 +38,7 @@ ms.locfileid: "32345906"
 
 3.  디렉터리 동기화 배포 및 구성
 
-     디렉터리 동기화를 사용하면 동기화된 사용자 계정으로 Intune을 채울 수 있습니다. 동기화된 사용자 계정 및 보안 그룹은 Intune에 추가됩니다. 디렉터리 동기화를 사용하도록 설정하지 않으면 Configuration Manager MDM with Microsoft Intune을 설정할 때 보통 장치에서 등록할 수 없습니다.
+     디렉터리 동기화를 사용하면 동기화된 사용자 계정으로 Intune을 채울 수 있습니다. 동기화된 사용자 계정 및 보안 그룹은 Intune에 추가됩니다. 디렉터리 동기화를 사용하도록 설정하지 않으면 Configuration Manager MDM with Microsoft Intune을 설정할 때 보통 디바이스에서 등록할 수 없습니다.
 
      자세한 내용은 Active Directory 문서 라이브러리의 [디렉터리 통합](http://go.microsoft.com/fwlink/?LinkID=271120) 을 참조하세요.
 

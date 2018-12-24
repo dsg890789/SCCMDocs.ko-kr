@@ -37,9 +37,9 @@ ms.locfileid: "32338648"
 
 ### <a name="to-remotely-administer-a-client-computer-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 클라이언트 컴퓨터를 원격으로 관리하려면  
 
-1.  Configuration Manager 콘솔에서 **자산 및 호환성** > **장치** 또는 **장치 컬렉션**을 선택합니다.  
+1.  Configuration Manager 콘솔에서 **자산 및 호환성** > **디바이스** 또는 **디바이스 컬렉션**을 선택합니다.  
 
-3.  원격으로 관리할 컴퓨터를 선택한 다음 **홈** 탭의 **장치** 그룹에서 **시작** > **원격 제어**를 선택합니다.  
+3.  원격으로 관리할 컴퓨터를 선택한 다음 **홈** 탭의 **디바이스** 그룹에서 **시작** > **원격 제어**를 선택합니다.  
 
     > [!IMPORTANT]  
     >  클라이언트 설정 **원격 제어 권한을 묻는 메시지를 사용자에게 표시** 가 **True**로 설정되어 있는 경우 원격 컴퓨터의 사용자가 원격 제어 프롬프트에 동의할 때까지 연결을 시작하지 않습니다. 자세한 내용은 [System Center Configuration Manager에서 원격 제어 구성](../../../../core/clients/manage/remote-control/configuring-remote-control.md)을 참조하세요.  

@@ -30,7 +30,7 @@ ms.locfileid: "49943294"
   [설치용 명령줄 옵션](../../../../core/servers/deploy/install/command-line-options-for-setup.md) 보기
 
 -  **중앙 관리 사이트 또는 기본 사이트에서 사용 중인 언어 수정**  
-    명령 프롬프트에서 사이트에 설치된 언어(모바일 장치용 언어 포함)를 수정하려면 다음을 수행해야 합니다.  
+    명령 프롬프트에서 사이트에 설치된 언어(모바일 디바이스용 언어 포함)를 수정하려면 다음을 수행해야 합니다.  
 
      -   사이트 서버의 **&lt;Configuration Manager 설치 경로\>\BIN\X64**에서 설치 프로그램 실행
      -   **/MANAGELANGS** 명령줄 옵션 사용

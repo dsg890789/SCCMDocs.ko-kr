@@ -24,7 +24,7 @@ ms.locfileid: "32336224"
 System Center Configuration Manager에서 전원 관리를 사용하면 Configuration Manager에 제공되는 전원 계획을 계층 구조의 컴퓨터 컬렉션에 적용하거나 사용자 지정 전원 계획을 직접 만들 수 있습니다. 이 항목의 절차를 사용하여 기본 제공되거나 사용자 지정 전원 계획을 컴퓨터에 적용합니다.  
 
 > [!IMPORTANT]  
->  Configuration Manager 전원 계획만 장치 컬렉션에 적용할 수 있습니다.  
+>  Configuration Manager 전원 계획만 디바이스 컬렉션에 적용할 수 있습니다.  
 
  컴퓨터가 각각 다른 전원 계획을 적용하는 여러 컬렉션의 멤버인 경우 다음 작업이 수행됩니다.  
 

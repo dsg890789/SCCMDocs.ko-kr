@@ -88,7 +88,7 @@ Configuration Manager 클라이언트는 피어 캐시를 사용하여 캐시의
 
 ## <a name="requirements"></a>요구 사항
 
-- 피어 캐시는 [클라이언트 및 장치에 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices)에서 지원되는 것으로 표시된 모든 Windows 버전을 지원합니다. Windows 이외의 운영 체제는 피어 캐시 원본 또는 피어 캐시 클라이언트로 지원되지 않습니다.  
+- 피어 캐시는 [클라이언트 및 디바이스에 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices)에서 지원되는 것으로 표시된 모든 Windows 버전을 지원합니다. Windows 이외의 운영 체제는 피어 캐시 원본 또는 피어 캐시 클라이언트로 지원되지 않습니다.  
 
 - 피어 캐시 원본은 도메인에 가입된 Configuration Manager 클라이언트여야 합니다. 그러나 도메인에 가입되지 않은 클라이언트는 도메인에 가입된 피어 캐시 원본에서 콘텐츠를 가져올 수 있습니다.  
 
@@ -96,7 +96,7 @@ Configuration Manager 클라이언트는 피어 캐시를 사용하여 캐시의
 
 - [네트워크 액세스 계정](/sccm/core/plan-design/hierarchy/accounts#network-access-account)은 다음과 같은 경우에만 필요합니다.  
 
-    - 피어 캐시 사용 클라이언트가 소프트웨어 센터에서 작업 순서를 실행하고 부팅 이미지로 다시 부팅될 때 사이트에서 네트워크 액세스 계정을 구성합니다. 장치가 Windows PE에 있으면 네트워크 액세스 계정을 사용하여 피어 캐시 원본에서 콘텐츠를 가져옵니다.  
+    - 피어 캐시 사용 클라이언트가 소프트웨어 센터에서 작업 순서를 실행하고 부팅 이미지로 다시 부팅될 때 사이트에서 네트워크 액세스 계정을 구성합니다. 디바이스가 Windows PE에 있으면 네트워크 액세스 계정을 사용하여 피어 캐시 원본에서 콘텐츠를 가져옵니다.  
 
     - 필요한 경우 피어 캐시 원본에서 네트워크 액세스 계정을 사용하여 피어의 다운로드 요청을 인증합니다. 이 계정에는 이 용도의 도메인 사용자 권한만 필요합니다.  
 

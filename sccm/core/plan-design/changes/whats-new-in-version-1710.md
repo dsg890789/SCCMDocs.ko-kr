@@ -55,7 +55,7 @@ Version 1710 drops support for the following products:
 이제 Azure Government 클라우드에서 [클라우드 기반 배포 지점](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point)을 사용할 수 있습니다.   
 
 ### <a name="inventory-default-unit-revision----sms503697---"></a>인벤토리 기본 단위 수정 버전<!-- sms503697 -->
-이제 장치에 GB(기가바이트), TB(테라바이트) 이상 크기의 하드 드라이브가 포함되므로 이 릴리스는 여러 보기에서 사용되는 기본 단위(SMS_Units)를 MB(메가바이트)에서 GB로 변경합니다. 예를 들어 v_gs_LogicalDisk.FreeSpace 값이 GB 단위를 보고합니다.
+이제 디바이스에 GB(기가바이트), TB(테라바이트) 이상 크기의 하드 드라이브가 포함되므로 이 릴리스는 여러 보기에서 사용되는 기본 단위(SMS_Units)를 MB(메가바이트)에서 GB로 변경합니다. 예를 들어 v_gs_LogicalDisk.FreeSpace 값이 GB 단위를 보고합니다.
 
 
 <!-- ## Migration  -->
@@ -63,11 +63,11 @@ Version 1710 drops support for the following products:
 
 ## <a name="client-management"></a>클라이언트 관리
 
-### <a name="co-management-for-windows-10-devices"></a>Windows 10 장치의 공동 관리    
-<!-- 1350871 -->이전 Windows 10 업데이트에서 Windows 10 장치를 온-프레미스 AD(Active Directory)와 클라우드 기반 Azure AD에 동시에 조인할 수 있습니다(하이브리드 Azure AD). Configuration Manager 버전 1710부터 공동 관리에서는 이러한 향상된 기능을 통해 Configuration Manager 및 Intune을 모두 사용하여 Windows 10 버전 1709(Fall Creators Update라고도 함) 장치를 동시에 관리할 수 있습니다. 이것은 기존 관리에서 최신 관리에 대한 연결을 제공하고 단계별 접근 방법을 사용하여 전환할 수 있는 경로를 제공하는 솔루션입니다. 자세한 내용은 [Windows 10 장치의 공동 관리](/sccm/core/clients/manage/co-management-overview)를 참조하세요.
+### <a name="co-management-for-windows-10-devices"></a>Windows 10 디바이스의 공동 관리    
+<!-- 1350871 -->이전 Windows 10 업데이트에서 Windows 10 장치를 온-프레미스 AD(Active Directory)와 클라우드 기반 Azure AD에 동시에 조인할 수 있습니다(하이브리드 Azure AD). Configuration Manager 버전 1710부터 공동 관리에서는 이러한 향상된 기능을 통해 Configuration Manager 및 Intune을 모두 사용하여 Windows 10 버전 1709(Fall Creators Update라고도 함) 디바이스를 동시에 관리할 수 있습니다. 이것은 기존 관리에서 최신 관리에 대한 연결을 제공하고 단계별 접근 방법을 사용하여 전환할 수 있는 경로를 제공하는 솔루션입니다. 자세한 내용은 [Windows 10 디바이스의 공동 관리](/sccm/core/clients/manage/co-management-overview)를 참조하세요.
 
 ### <a name="restart-computers-from-the-configuration-manager-console-----1356283---"></a>Configuration Manager 콘솔에서 컴퓨터 다시 시작 <!-- 1356283 -->
-이 릴리스부터 Configuration Manager 콘솔을 사용하여 다시 시작해야 하는 클라이언트 장치를 식별한 다음 클라이언트 알림 작업을 통해 해당 장치를 다시 시작할 수 있습니다.
+이 릴리스부터 Configuration Manager 콘솔을 사용하여 다시 시작해야 하는 클라이언트 디바이스를 식별한 다음 클라이언트 알림 작업을 통해 해당 디바이스를 다시 시작할 수 있습니다.
 
 [System Center Configuration Manager에서 클라이언트를 관리하는 방법](/sccm/core/clients/manage/manage-clients#restart-clients)을 참조하세요.
 
@@ -77,7 +77,7 @@ Version 1710 drops support for the following products:
 
 ## <a name="application-management"></a>응용 프로그램 관리
 ### <a name="improvements-for-run-scripts------1236459---"></a>향상된 스크립트 실행 기능 <!-- 1236459 -->
-이 릴리스에서는 몇 가지 **스크립트 실행** 기능이 향상되어 관리되는 장치에서 실행되는 PowerShell 스크립트를 배포할 수 있습니다. 이 기능은 1706 버전에서 처음 소개되었습니다.
+이 릴리스에서는 몇 가지 **스크립트 실행** 기능이 향상되어 관리되는 디바이스에서 실행되는 PowerShell 스크립트를 배포할 수 있습니다. 이 기능은 1706 버전에서 처음 소개되었습니다.
 
 향상된 기능은 다음과 같습니다.
 - 보안 범위를 사용하여 스크립트 실행을 사용할 수 있는 사용자 제어
@@ -110,7 +110,7 @@ Version 1710 drops support for the following products:
 자식 작업 순서에 대한 자세한 내용은 [자식 작업 순서](/sccm/osd/understand/task-sequence-steps#child-task-sequence)를 참조하세요.
 
 ## <a name="software-center-customization"></a>소프트웨어 센터 사용자 지정
-<!-- 1351224 -->엔터프라이즈 브랜딩 요소를 추가하고 소프트웨어 센터에서 탭의 표시 여부를 지정할 수 있습니다. 소프트웨어 센터 특정의 회사 이름을 추가하고 소프트웨어 센터 구성 색 테마, 회사 로고 및 클라이언트 장치에 대한 표시 탭을 설정할 수 있습니다.
+<!-- 1351224 -->엔터프라이즈 브랜딩 요소를 추가하고 소프트웨어 센터에서 탭의 표시 여부를 지정할 수 있습니다. 소프트웨어 센터 특정의 회사 이름을 추가하고 소프트웨어 센터 구성 색 테마, 회사 로고 및 클라이언트 디바이스에 대한 표시 탭을 설정할 수 있습니다.
 
 자세한 내용은 [System Center Configuration Manager에서 응용 프로그램 관리 계획 및 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management)을 참조하세요.
 
@@ -122,26 +122,26 @@ Version 1710 drops support for the following products:
 
 ## <a name="reporting"></a>보고
 
-### <a name="limit-windows-10-enhanced-telemetry-to-only-send-data-relevant-to-windows-analytics-device-health"></a>Windows 10 향상된 원격 분석을 Windows Analytics 장치 상태와 관련된 데이터만 전송하도록 제한
+### <a name="limit-windows-10-enhanced-telemetry-to-only-send-data-relevant-to-windows-analytics-device-health"></a>Windows 10 향상된 원격 분석을 Windows Analytics 디바이스 상태와 관련된 데이터만 전송하도록 제한
 <!-- 1356148 -->
 
-이제 Windows 10 원격 분석 데이터 수집 수준을 **고급(제한적)** 으로 설정할 수 있습니다. 이 설정을 사용하면 Windows 10 버전 1709 이상을 사용하여 **고급** 원격 분석 수준의 모든 데이터를 보고하는 장치가 없는 환경에서 장치에 대해 조치 가능한 통찰력을 얻을 수 있습니다.
+이제 Windows 10 원격 분석 데이터 수집 수준을 **고급(제한적)** 으로 설정할 수 있습니다. 이 설정을 사용하면 Windows 10 버전 1709 이상을 사용하여 **고급** 원격 분석 수준의 모든 데이터를 보고하는 디바이스가 없는 환경에서 디바이스에 대해 조치 가능한 통찰력을 얻을 수 있습니다.
 
 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](/sccm/core/clients/deploy/configure-client-settings)섹션을 참조하세요.
 
 <!-- ## Inventory  -->
 
 
-## <a name="mobile-device-management"></a>모바일 장치 관리
+## <a name="mobile-device-management"></a>모바일 디바이스 관리
 
 ### <a name="actions-for-non-compliance"></a>비준수에 대한 작업 
 <!--1321366 -->    
-이제 규정을 준수하지 않는 장치에 적용되는 작업을 시간 순으로 구성할 수 있습니다. 예를 들어 전자 메일을 통해 사용자에게 비준수 장치를 알리거나 해당 장치를 비준수 장치로 표시할 수 있습니다. 자세한 내용은 [비준수에 대한 작업 설정](/sccm/mdm/deploy-use/actions-for-noncompliance)을 참조하세요.
+이제 규정을 준수하지 않는 디바이스에 적용되는 작업을 시간 순으로 구성할 수 있습니다. 예를 들어 전자 메일을 통해 사용자에게 비준수 디바이스를 알리거나 해당 디바이스를 비준수 디바이스로 표시할 수 있습니다. 자세한 내용은 [비준수에 대한 작업 설정](/sccm/mdm/deploy-use/actions-for-noncompliance)을 참조하세요.
 
-### <a name="windows-10-arm64-device-support"></a>Windows 10 ARM64 장치 지원
+### <a name="windows-10-arm64-device-support"></a>Windows 10 ARM64 디바이스 지원
 <!-- 1355000 -->
 
-하이브리드 MDM(모바일 장치 관리) 시나리오는 이러한 장치를 사용할 수 있을 때 Windows 10을 실행하는 ARM64 장치에서 지원됩니다.
+하이브리드 MDM(모바일 디바이스 관리) 시나리오는 이러한 디바이스를 사용할 수 있을 때 Windows 10을 실행하는 ARM64 디바이스에서 지원됩니다.
 
 이러한 시나리오는 다음과 같습니다.
 
@@ -158,7 +158,7 @@ Version 1710 drops support for the following products:
 - [응용 프로그램 관리](../../../mdm/deploy-use/management-tasks-applications.md)
 
 > [!NOTE]
-> 여러 아키텍처용으로 빌드된 .appxbundle 응용 프로그램을 배포하면 이들 장치에서 작동하지 않을 수 있으며, 현재 이 시나리오는 지원되지 않습니다.
+> 여러 아키텍처용으로 빌드된 .appxbundle 응용 프로그램을 배포하면 이들 디바이스에서 작동하지 않을 수 있으며, 현재 이 시나리오는 지원되지 않습니다.
 
 ### <a name="improved-vpn-profile-experience-in-configuration-manager-console"></a>Configuration Manager 콘솔의 VPN 프로필 환경 개선 
 <!-- 1318232 -->
@@ -169,7 +169,7 @@ Version 1710 drops support for the following products:
 - 각 플랫폼에는 고유한 워크플로가 있습니다. 즉, 새 VPN 프로필에는 플랫폼에서 지원되는 설정만 포함됩니다.
 - **지원되는 플랫폼** 페이지는 이제 **일반** 페이지 뒤에 표시됩니다.  이제 속성 값을 설정하기 전에 플랫폼을 선택합니다.
 - 플랫폼이 **Android**, **Android for Work** 또는 **Windows Phone 8.1**로 설정되면 **지원되는 플랫폼** 페이지는 필요하지 않으므로 표시되지 않습니다.
-- Configuration Manager 클라이언트 기반 워크플로는 하이브리드 모바일 장치(MDM) 클라이언트 기반 Windows 10 워크플로와 결합되었습니다. 모두 동일한 설정을 지원합니다.
+- Configuration Manager 클라이언트 기반 워크플로는 하이브리드 모바일 디바이스(MDM) 클라이언트 기반 Windows 10 워크플로와 결합되었습니다. 모두 동일한 설정을 지원합니다.
 - 각 플랫폼 워크플로에는 해당 워크플로에 대한 적절한 설정만이 포함됩니다.  예를 들어, Android 워크플로에는 Android에 적절한 설정이 포함되고 iOS 또는 Windows 10 Mobile에 적절한 설정은 Android 워크플로에 더 이상 표시되지 않습니다.
 - 자동 VPN 페이지는 사용되지 않으며 제거되었습니다.
 
@@ -177,7 +177,7 @@ Version 1710 drops support for the following products:
 
 호환성 위험을 최소화하기 위해 기존 VPN 프로필은 변경되지 않습니다.  기존 프로필을 편집하는 경우 프로필을 만들 때와 마찬가지로 설정이 표시됩니다.  
 
-자세한 내용은 [System Center Configuration Manager의 모바일 장치에 대한 VPN 프로필](../../../mdm/deploy-use/create-vpn-profiles.md)을 참조하세요.
+자세한 내용은 [System Center Configuration Manager의 모바일 디바이스에 대한 VPN 프로필](../../../mdm/deploy-use/create-vpn-profiles.md)을 참조하세요.
 
 ### <a name="limited-support-for-cryptography-next-generation-cng-certificates----1356191---"></a>CNG(Cryptography: Next Generation) 인증서에 대한 제한된 지원 <!-- 1356191 -->
 
@@ -185,7 +185,7 @@ Configuration Manager는 CNG(Cryptography: Next Generation) 인증서를 제한�
 
 자세한 내용은 [CNG 인증서 개요](../network/cng-certificates-overview.md)를 참조하세요.
 
-## <a name="protect-devices"></a>장치 보호
+## <a name="protect-devices"></a>디바이스 보호
 
 ### <a name="create-and-deploy-exploit-guard-policies"></a>Exploit Guard 정책 만들기 및 배포
 <!-- 1355468 -->
@@ -201,8 +201,8 @@ Configuration Manager 엔드포인트 보호를 사용하여 [Windows Defender A
 <!-- 1355092 -->Device Guard 정책과 관련하여 다음 세 가지 항목이 변경되었습니다.
 
 - Device Guard 정책의 이름이 Windows Defender 응용 프로그램 제어 정책으로 바뀌었습니다. 예를 들어 **Device Guard 정책 만들기 마법사**의 이름이 이제는 **Windows Defender 응용 프로그램 제어 정책 만들기 마법사**입니다.
-- Windows용 Fall Creators Update 버전 1709를 사용하는 장치는 Windows Defender 응용 프로그램 제어 정책을 적용하기 위해 다시 시작할 필요가 없습니다. 다시 시작은 여전히 기본값이지만 [다시 시작을 해제](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)할 수 있습니다.
-- Intelligent Security Graph에서 신뢰할 수 있는 [소프트웨어를 자동으로 실행하도록 장치를 설정](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)할 수 있습니다.
+- Windows용 Fall Creators Update 버전 1709를 사용하는 디바이스는 Windows Defender 응용 프로그램 제어 정책을 적용하기 위해 다시 시작할 필요가 없습니다. 다시 시작은 여전히 기본값이지만 [다시 시작을 해제](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)할 수 있습니다.
+- Intelligent Security Graph에서 신뢰할 수 있는 [소프트웨어를 자동으로 실행하도록 디바이스를 설정](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)할 수 있습니다.
 
 
 

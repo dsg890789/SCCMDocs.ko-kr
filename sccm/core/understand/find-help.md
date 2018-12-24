@@ -89,7 +89,7 @@ Configuration Manager 버전 1806부터 제품 피드백은 콘솔에서 직접 
    - Configuration Manager 계층 구조 ID
    - 제품 빌드 정보
    - 언어 정보
-   - 장치 식별자 
+   - 디바이스 식별자 
        - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SQMClient:MachineId
 
 

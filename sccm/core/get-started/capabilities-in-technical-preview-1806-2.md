@@ -49,7 +49,7 @@ Configuration Manager를 버전 1806.2로 ‘업데이트하기 전에’ SQL Na
 
 1. 사이트 서버에 있는 Configuration Manager 설치 디렉터리의 **CMUClient** 폴더에서 클라이언트 원본 파일을 찾습니다. 예를 들면 `C:\Program Files\Configuration Manager\CMUClient`  
 
-2. 전체 CMUClient 폴더를 클라이언트 장치에 복사합니다. 예를 들면 `C:\Temp\CMUClient`  
+2. 전체 CMUClient 폴더를 클라이언트 디바이스에 복사합니다. 예를 들면 `C:\Temp\CMUClient`  
 
     이 위치는 클라이언트에서 액세스할 수 있는 네트워크 공유일 수 있습니다.  
 
@@ -307,7 +307,7 @@ MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.co
 
     - [Azure Resource Manager를 사용하여 클라우드 배포 지점](/sccm/core/get-started/capabilities-in-technical-preview-1805#cloud-distribution-point-support-for-azure-resource-manager) 배포  
 
-- 고객이 Windows AutoPilot을 사용하여 온-프레미스 네트워크에 연결된 Azure Active Directory 가입 장치에서 Windows 10을 프로비전하고 있습니다. 이러한 장치에 Configuration Manager 클라이언트를 설치하거나 업그레이드하기 위해 **클라이언트의 익명 연결을 허용**하도록 구성된 클라우드 배포 지점이나 온-프레미스 배포 지점이 필요하지 않습니다. 대신 **HTTP 사이트 시스템에 Configuration Manager가 생성한 인증서 사용** 사이트 옵션을 설정하여 클라우드 도메인 가입 클라이언트가 온-프레미스 HTTP 사용 배포 지점과 통신하도록 허용합니다. 자세한 내용은 [개선된 보안 클라이언트 통신](https://docs.microsoft.com/en-us/sccm/core/get-started/capabilities-in-technical-preview-1805#improved-secure-client-communications)을 참조하세요.<!--515854-->  
+- 고객이 Windows AutoPilot을 사용하여 온-프레미스 네트워크에 연결된 Azure Active Directory 가입 디바이스에서 Windows 10을 프로비전하고 있습니다. 이러한 디바이스에 Configuration Manager 클라이언트를 설치하거나 업그레이드하기 위해 **클라이언트의 익명 연결을 허용**하도록 구성된 클라우드 배포 지점이나 온-프레미스 배포 지점이 필요하지 않습니다. 대신 **HTTP 사이트 시스템에 Configuration Manager가 생성한 인증서 사용** 사이트 옵션을 설정하여 클라우드 도메인 가입 클라이언트가 온-프레미스 HTTP 사용 배포 지점과 통신하도록 허용합니다. 자세한 내용은 [개선된 보안 클라이언트 통신](https://docs.microsoft.com/en-us/sccm/core/get-started/capabilities-in-technical-preview-1805#improved-secure-client-communications)을 참조하세요.<!--515854-->  
 
 
 

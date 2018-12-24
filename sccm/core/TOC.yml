@@ -22,7 +22,7 @@ items:
       items:
       - name: 사이트 및 계층 인프라에 대한 업그레이드, 업데이트 및 설치 정보
         href: understand/upgrade-update-install.md
-    - name: 장치 관리의 기본 사항
+    - name: 디바이스 관리의 기본 사항
       href: understand/fundamentals-of-managing-devices.md
     - name: 클라이언트 관리의 기본 사항
       href: understand/fundamentals-of-client-management-tasks.md
@@ -95,7 +95,7 @@ items:
       href: plan-design/configs/site-and-site-system-prerequisites.md
     - name: 사이트 시스템 서버에 대해 지원되는 운영 체제
       href: plan-design/configs/supported-operating-systems-for-site-system-servers.md
-    - name: 클라이언트 및 장치에 대해 지원되는 운영 체제
+    - name: 클라이언트 및 디바이스에 대해 지원되는 운영 체제
       href: plan-design/configs/supported-operating-systems-for-clients-and-devices.md
     - name: 클라이언트로 Windows 10 지원
       href: plan-design/configs/support-for-windows-10.md
@@ -111,7 +111,7 @@ items:
       href: plan-design/configs/support-for-windows-features-and-networks.md
     - name: 가상화 환경 지원
       href: plan-design/configs/support-for-virtualization-environments.md
-  - name: 장치 관리 솔루션 선택
+  - name: 디바이스 관리 솔루션 선택
     href: plan-design/choose-a-device-management-solution.md
   - name: 사이트 계층 구조 디자인
     href: plan-design/hierarchy/design-a-hierarchy-of-sites.md
@@ -562,7 +562,7 @@ items:
       href: clients/deploy/plan/planning-for-client-deployment-to-linux-and-unix-computers.md
     - name: Mac 컴퓨터에 클라이언트 배포 계획
       href: clients/deploy/plan/planning-for-client-deployment-to-mac-computers.md
-    - name: Windows Embedded 장치에 클라이언트 배포 계획
+    - name: Windows Embedded 디바이스에 클라이언트 배포 계획
       href: clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md
       items:
       - name: '예제 시나리오 '
@@ -631,12 +631,12 @@ items:
       href: clients/manage/sync-data-log-analytics.md
     - name: Mac 클라이언트 유지 관리
       href: clients/manage/maintain-mac-clients.md
-    - name: Surface 장치 대시보드
+    - name: Surface 디바이스 대시보드
       href: clients/manage/surface-device-dashboard.md
-  - name: Windows 10 장치의 공동 관리
+  - name: Windows 10 디바이스의 공동 관리
     href: clients/manage/co-management-overview.md
     items:
-    - name: 공동 관리를 위해 Windows 10 장치 준비
+    - name: 공동 관리를 위해 Windows 10 디바이스 준비
       href: clients/manage/co-management-prepare.md
     - name: Configuration Manager 워크로드를 Intune으로 전환
       href: clients/manage/co-management-switch-workloads.md
@@ -674,7 +674,7 @@ items:
       href: clients/manage/collections/manage-collections.md
     - name: 유지 관리 기간을 사용하는 방법
       href: clients/manage/collections/use-maintenance-windows.md
-    - name: 컬렉션으로 장치를 자동 분류하는 방법
+    - name: 컬렉션으로 디바이스를 자동 분류하는 방법
       href: clients/manage/collections/automatically-categorize-devices-into-collections.md
     - name: 컬렉션에 대한 보안 및 개인 정보
       href: clients/manage/collections/security-and-privacy-for-collections.md

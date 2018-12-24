@@ -1,7 +1,7 @@
 ---
-title: Windows 10 장치의 공동 관리
+title: Windows 10 디바이스의 공동 관리
 titleSuffix: Configuration Manager
-description: Configuration Manager와 Microsoft Intune을 모두 사용하여 Windows 10 장치를 동시에 관리하는 방법을 알아봅니다.
+description: Configuration Manager와 Microsoft Intune을 모두 사용하여 Windows 10 디바이스를 동시에 관리하는 방법을 알아봅니다.
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
@@ -17,19 +17,19 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/07/2018
 ms.locfileid: "51223741"
 ---
-# <a name="co-management-for-windows-10-devices"></a>Windows 10 장치의 공동 관리    
+# <a name="co-management-for-windows-10-devices"></a>Windows 10 디바이스의 공동 관리    
 
-이전 Windows 10 업데이트에서 이미 Windows 10 장치를 온-프레미스 AD(Active Directory)와 클라우드 기반 Azure AD에 동시에 조인할 수 있습니다(하이브리드 Azure AD). Configuration Manager 버전 1710부터 공동 관리는 이 개선 사항을 활용합니다. 공동 관리를 사용하면 Configuration Manager와 Intune을 모두 사용하여 Windows 10 버전 1709 장치를 동시에 관리할 수 있습니다. <!-- 1350871 -->
+이전 Windows 10 업데이트에서 이미 Windows 10 디바이스를 온-프레미스 AD(Active Directory)와 클라우드 기반 Azure AD에 동시에 조인할 수 있습니다(하이브리드 Azure AD). Configuration Manager 버전 1710부터 공동 관리는 이 개선 사항을 활용합니다. 공동 관리를 사용하면 Configuration Manager와 Intune을 모두 사용하여 Windows 10 버전 1709 디바이스를 동시에 관리할 수 있습니다. <!-- 1350871 -->
 
 
 ## <a name="why-co-management"></a>공동 관리가 필요한 이유
 
-고객은 보통 낮은 비용으로 간소화된 클라우드 기반 솔루션을 사용하여 모바일 장치를 관리하는 동일한 방식으로 Windows 10 장치를 관리하려고 합니다. 그러나 기존 관리에서 최신 관리로 전환하기가 어려울 수 있습니다.  
+고객은 보통 낮은 비용으로 간소화된 클라우드 기반 솔루션을 사용하여 모바일 디바이스를 관리하는 동일한 방식으로 Windows 10 디바이스를 관리하려고 합니다. 그러나 기존 관리에서 최신 관리로 전환하기가 어려울 수 있습니다.  
 
 
 ## <a name="what-is-co-management"></a>공동 관리란?
 
-공동 관리를 사용하면 Configuration Manager와 Intune을 모두 사용하여 Windows 10 장치를 동시에 관리할 수 있습니다. 이것은 기존 관리에서 최신 관리에 대한 연결을 제공하고 단계별 접근 방법을 사용하여 전환할 수 있는 경로를 제공하는 솔루션입니다.
+공동 관리를 사용하면 Configuration Manager와 Intune을 모두 사용하여 Windows 10 디바이스를 동시에 관리할 수 있습니다. 이것은 기존 관리에서 최신 관리에 대한 연결을 제공하고 단계별 접근 방법을 사용하여 전환할 수 있는 경로를 제공하는 솔루션입니다.
 
 
 ## <a name="benefits"></a>이점 
@@ -58,9 +58,9 @@ ms.locfileid: "51223741"
 
  공동 관리에 연결하기 위한 두 가지 주요 경로가 있습니다.  
 
-   - Configuration Manager가 공동 관리 프로비전: 이미 Configuration Manager 클라이언트가 포함된 Azure AD 조인 Windows 10 장치를 Intune에 등록합니다.  
+   - Configuration Manager가 공동 관리 프로비전: 이미 Configuration Manager 클라이언트가 포함된 Azure AD 조인 Windows 10 디바이스를 Intune에 등록합니다.  
 
-   - 프로비전된 Intune: 이미 Intune에 등록된 장치의 경우 Configuration Manager 클라이언트를 설치하여 공동 관리 상태가 됩니다. 
+   - 프로비전된 Intune: 이미 Intune에 등록된 디바이스의 경우 Configuration Manager 클라이언트를 설치하여 공동 관리 상태가 됩니다. 
 
 
 ### <a name="configuration-manager"></a>Configuration Manager
@@ -70,7 +70,7 @@ ms.locfileid: "51223741"
 
 ### <a name="azure-active-directory"></a>Azure Active Directory
 
- - Windows 10 장치는 Azure AD에 조인되어야 합니다. 이러한 장치는 다음 형식 중 하나일 수 있습니다.  
+ - Windows 10 디바이스는 Azure AD에 조인되어야 합니다. 이러한 장치는 다음 형식 중 하나일 수 있습니다.  
 
      - [하이브리드 Azure AD 조인](https://docs.microsoft.com/azure/active-directory/device-management-hybrid-azuread-joined-devices-setup), 여기서 디바이스가 온-프레미스 Active Directory에 조인되고 Azure Active Directory에 등록됩니다.
 
@@ -86,7 +86,7 @@ ms.locfileid: "51223741"
  - [하이브리드 MDM에서 Intune 독립 실행형으로 마이그레이션 시작](/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)  
 
  > [!Note]  
- > 하이브리드 MDM 환경(Configuration Manager와 통합된 Intune)이 설정된 경우 공동 관리를 사용할 수 없습니다. 그러나 사용자를 Intune 독립 실행형으로 마이그레이션하기 시작한 후 관련 Windows 10 장치에 공동 관리를 활성화할 수 있습니다. Intune 독립 실행형으로 마이그레이션하는 방법에 대한 자세한 정보는 [하이브리드 MDM에서 Intune 독립 실행형으로 마이그레이션 시작](/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)을 참조하세요.  
+ > 하이브리드 MDM 환경(Configuration Manager와 통합된 Intune)이 설정된 경우 공동 관리를 사용할 수 없습니다. 그러나 사용자를 Intune 독립 실행형으로 마이그레이션하기 시작한 후 관련 Windows 10 디바이스에 공동 관리를 활성화할 수 있습니다. Intune 독립 실행형으로 마이그레이션하는 방법에 대한 자세한 정보는 [하이브리드 MDM에서 Intune 독립 실행형으로 마이그레이션 시작](/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)을 참조하세요.  
 
 
 ### <a name="enable-co-management"></a>공동 관리 사용 
@@ -101,7 +101,7 @@ ms.locfileid: "51223741"
     > [!Tip]   
     > 테넌트에 로그인하는 데 사용된 계정이 Intune 라이선스를 할당했는지 확인합니다. 그렇지 않으면 “사용자가 인식되지 않습니다”라는 오류 메시지가 표시되고 실패합니다.  
 
-2. **사용 여부** 페이지에서 **Intune에 자동 등록** 설정을 선택합니다. 필요한 경우 Intune에 이미 등록된 장치의 명령줄을 복사합니다.  
+2. **사용 여부** 페이지에서 **Intune에 자동 등록** 설정을 선택합니다. 필요한 경우 Intune에 이미 등록된 디바이스의 명령줄을 복사합니다.  
 
     > [!Note]  
     > 버전 1806부터 자동 등록은 모든 클라이언트에 대해 직접 실행되지 않습니다. 이 동작은 대규모 환경에 대해 등록 확장을 보다 잘 수행하게 합니다. Configuration Manager는 클라이언트 수에 따라 등록을 임의 지정합니다. 예를 들어 사용자 환경에 100,000명의 클라이언트가 있는 경우 이 설정을 사용하도록 설정하면 며칠에 걸쳐 등록이 가능합니다.<!--1358003-->  
@@ -118,22 +118,22 @@ ms.locfileid: "51223741"
 
 ### <a name="configure-workloads-to-switch-to-intune"></a>Intune으로 전환하도록 워크로드 구성 
 
-[Intune으로 전환될 수 있는 워크로드](/sccm/core/clients/manage/co-management-switch-workloads#Workloads-able-to-be-transitioned-to-Intune) 문서에서는 특정 Configuration Manager 워크로드를 Intune으로 전환하는 방법을 보여 줍니다. 또한 이 문서에서는 워크로드가 전환되는 장치 그룹 변경에 대한 지침도 제공합니다.
+[Intune으로 전환될 수 있는 워크로드](/sccm/core/clients/manage/co-management-switch-workloads#Workloads-able-to-be-transitioned-to-Intune) 문서에서는 특정 Configuration Manager 워크로드를 Intune으로 전환하는 방법을 보여 줍니다. 또한 이 문서에서는 워크로드가 전환되는 디바이스 그룹 변경에 대한 지침도 제공합니다.
 
 #### <a name="compliance-policies"></a>규정 준수 정책 
-규정 준수 정책은 장치가 조건부 액세스 정책을 준수하는 것으로 간주되려면 준수해야 하는 규칙 및 설정을 정의합니다. 준수 정책을 사용하여 조건부 액세스와 독립적으로 장치를 모니터링하고 준수 문제를 수정할 수도 있습니다. 자세한 내용은 [장치 규정 준수 정책](https://docs.microsoft.com/intune/device-compliance-get-started)를 참조하세요.  
+규정 준수 정책은 디바이스가 조건부 액세스 정책을 준수하는 것으로 간주되려면 준수해야 하는 규칙 및 설정을 정의합니다. 준수 정책을 사용하여 조건부 액세스와 독립적으로 디바이스를 모니터링하고 준수 문제를 수정할 수도 있습니다. 자세한 내용은 [디바이스 규정 준수 정책](https://docs.microsoft.com/intune/device-compliance-get-started)를 참조하세요.  
 
 #### <a name="windows-update-policies"></a>Windows 업데이트 정책
-비즈니스용 Windows 업데이트 정책을 통해 비즈니스용 Windows 업데이트에서 직접 관리되는 Windows 10 장치에 대한 Windows 10 기능 업데이트 또는 품질 업데이트의 지연 정책을 구성할 수 있습니다. 자세한 내용은 [비즈니스용 Windows 업데이트 지연 정책 구성](https://docs.microsoft.com/intune/windows-update-for-business-configure)을 참조하세요.  
+비즈니스용 Windows 업데이트 정책을 통해 비즈니스용 Windows 업데이트에서 직접 관리되는 Windows 10 디바이스에 대한 Windows 10 기능 업데이트 또는 품질 업데이트의 지연 정책을 구성할 수 있습니다. 자세한 내용은 [비즈니스용 Windows 업데이트 지연 정책 구성](https://docs.microsoft.com/intune/windows-update-for-business-configure)을 참조하세요.  
 
 #### <a name="resource-access-policies"></a>리소스 액세스 정책
-리소스 액세스 정책은 장치에 대한 VPN, Wi-Fi, 전자 메일 및 인증서 설정을 구성합니다. 자세한 내용은 [리소스 액세스 프로필 배포](https://docs.microsoft.com/intune/device-profiles)를 참조하세요.
+리소스 액세스 정책은 디바이스에 대한 VPN, Wi-Fi, 전자 메일 및 인증서 설정을 구성합니다. 자세한 내용은 [리소스 액세스 프로필 배포](https://docs.microsoft.com/intune/device-profiles)를 참조하세요.
 
 #### <a name="endpoint-protection"></a>Endpoint Protection
 Configuration Manager 1802부터 Endpoint Protection 워크로드를 Intune으로 전환할 수 있습니다. 자세한 내용은 [Microsoft Intune용 Endpoint Protection](https://docs.microsoft.com/intune/endpoint-protection-windows-10)<!-- 1357365 --> 및 [Intune으로 전환될 수 있는 워크로드](/sccm/core/clients/manage/co-management-switch-workloads#Workloads-able-to-be-transitioned-to-Intune)를 참조하세요.
 
-#### <a name="device-configuration"></a>장치 구성
-Configuration Manager 1806부터 장치 구성 워크로드를 Intune으로 전환할 수 있습니다. 자세한 내용은 [Microsoft Intune에서 장치 프로필 만들기](https://docs.microsoft.com/intune/device-profile-create) 및 [Intune으로 전환될 수 있는 워크로드](/sccm/core/clients/manage/co-management-switch-workloads#Workloads-able-to-be-transitioned-to-Intune)를 참조하세요.  <!--1357903-->
+#### <a name="device-configuration"></a>디바이스 구성
+Configuration Manager 1806부터 디바이스 구성 워크로드를 Intune으로 전환할 수 있습니다. 자세한 내용은 [Microsoft Intune에서 디바이스 프로필 만들기](https://docs.microsoft.com/intune/device-profile-create) 및 [Intune으로 전환될 수 있는 워크로드](/sccm/core/clients/manage/co-management-switch-workloads#Workloads-able-to-be-transitioned-to-Intune)를 참조하세요.  <!--1357903-->
 
 #### <a name="office-click-to-run-apps"></a>Office 간편 실행 앱
 Configuration Manager 1806부터 Office 365 워크로드를 Intune으로 전환할 수 있습니다. 자세한 내용은 [Intune으로 전환될 수 있는 워크로드](/sccm/core/clients/manage/co-management-switch-workloads#Workloads-able-to-be-transitioned-to-Intune)를 참조하세요. <!--1357841-->
@@ -142,10 +142,10 @@ Configuration Manager 1806부터 Office 365 워크로드를 Intune으로 전환�
 Configuration Manager 1806부터 모바일 앱 워크로드를 Intune으로 전환할 수 있습니다. 이는 시험판 기능입니다. 이 기능을 사용하려면 [시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요. 이 워크로드를 전환하면 Intune에서 배포된 사용 가능한 모든 앱을 회사 포털에서 사용할 수 있습니다. Configuration Manager에서 배포하는 앱은 소프트웨어 센터에서 사용할 수 있습니다.<!--1357892-->
 
 
-### <a name="install-configuration-manager-client-to-the-devices-enrolled-in-intune"></a>Intune에 등록된 장치에 Configuration Manager 클라이언트 설치
+### <a name="install-configuration-manager-client-to-the-devices-enrolled-in-intune"></a>Intune에 등록된 디바이스에 Configuration Manager 클라이언트 설치
 
-Windows 10 장치를 Intune에 등록하는 경우 공동 관리를 위해 클라이언트를 준비하기 위해 [특정 명령줄을 사용](/sccm/core/clients/manage/co-management-prepare#command-line-to-install-configuration-manager-client)하여 장치에 Configuration Manager 클라이언트를 설치합니다. 그런 다음 Configuration Manager 콘솔에서 공동 관리를 사용하여 특정 Windows 10 장치의 Intune에 특정 워크로드를 이동하기 시작합니다.
-아직 Intune에 등록되지 않은 Windows 10 장치의 경우 Azure에서 자동 등록을 사용하여 장치를 등록합니다. 새 Windows 10 장치의 경우 [Windows AutoPilot](https://docs.microsoft.com/intune/enrollment-autopilot)을 사용하여 OOBE(Out of Box Experience)를 구성합니다. 여기에는 Intune에서 장치를 등록하는 자동 등록이 포함됩니다.
+Windows 10 디바이스를 Intune에 등록하는 경우 공동 관리를 위해 클라이언트를 준비하기 위해 [특정 명령줄을 사용](/sccm/core/clients/manage/co-management-prepare#command-line-to-install-configuration-manager-client)하여 디바이스에 Configuration Manager 클라이언트를 설치합니다. 그런 다음 Configuration Manager 콘솔에서 공동 관리를 사용하여 특정 Windows 10 디바이스의 Intune에 특정 워크로드를 이동하기 시작합니다.
+아직 Intune에 등록되지 않은 Windows 10 디바이스의 경우 Azure에서 자동 등록을 사용하여 디바이스를 등록합니다. 새 Windows 10 디바이스의 경우 [Windows AutoPilot](https://docs.microsoft.com/intune/enrollment-autopilot)을 사용하여 OOBE(Out of Box Experience)를 구성합니다. 여기에는 Intune에서 디바이스를 등록하는 자동 등록이 포함됩니다.
 
 Intune을 사용하여 Configuration Manager 클라이언트를 설치하는 경우 Configuration Manager의 [클라우드 관리 게이트웨이](/sccm/core/clients/manage/manage-clients-internet#cloud-management-gateway)를 사용하도록 설정합니다.
 
@@ -153,7 +153,7 @@ Intune을 사용하여 Configuration Manager 클라이언트를 설치하는 경
 
 ## <a name="monitor-co-management"></a>공동 관리 모니터링
 
-[공동 관리 대시보드](/sccm/core/clients/manage/co-management-dashboard)를 사용하면 사용자 환경에서 공동으로 관리되는 시스템을 검토할 수 있습니다. 그래프는 주의가 필요한 장치를 식별하는 데 도움이 될 수 있습니다.
+[공동 관리 대시보드](/sccm/core/clients/manage/co-management-dashboard)를 사용하면 사용자 환경에서 공동으로 관리되는 시스템을 검토할 수 있습니다. 그래프는 주의가 필요한 디바이스를 식별하는 데 도움이 될 수 있습니다.
 
 
 

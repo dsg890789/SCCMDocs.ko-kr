@@ -29,17 +29,17 @@ ms.locfileid: "32343619"
 ##  <a name="BKMK_MDM"></a> 모바일 장치 관리 개선  
 
 ### <a name="ios-activation-lock"></a>iOS 활성화 잠금  
- System Center Configuration Manager를 사용하면 iOS 7.1 이상 장치용 나의 iPhone 찾기(Find My iPhone) 앱의 기능인 iOS 활성화 잠금을 관리할 수 있습니다. 활성화 잠금은 장치에서 나의 iPhone 찾기 앱을 사용할 때 자동으로 사용하도록 설정됩니다. 활성화 잠금이 설정되면 사용자의 Apple ID와 암호를 입력해야 다음 작업을 수행할 수 있습니다.  
+ System Center Configuration Manager를 사용하면 iOS 7.1 이상 디바이스용 나의 iPhone 찾기(Find My iPhone) 앱의 기능인 iOS 활성화 잠금을 관리할 수 있습니다. 활성화 잠금은 디바이스에서 나의 iPhone 찾기 앱을 사용할 때 자동으로 사용하도록 설정됩니다. 활성화 잠금이 설정되면 사용자의 Apple ID와 암호를 입력해야 다음 작업을 수행할 수 있습니다.  
 
 -   나의 iPhone 찾기 끄기  
 
--   장치의 콘텐츠 지우기  
+-   디바이스의 콘텐츠 지우기  
 
--   장치 다시 활성화  
+-   디바이스 다시 활성화  
 
- Configuration Manager에서는 iOS 7.1 이상을 실행하는 감독된/감독되지 않은 장치의 활성화 잠금 상태를 요청할 수 있습니다. 감독된 장치의 경우 Intune은 활성화 잠금 무시 코드를 검색하여 장치에 직접 제공할 수 있습니다.  
+ Configuration Manager에서는 iOS 7.1 이상을 실행하는 감독된/감독되지 않은 디바이스의 활성화 잠금 상태를 요청할 수 있습니다. 감독된 디바이스의 경우 Intune은 활성화 잠금 무시 코드를 검색하여 디바이스에 직접 제공할 수 있습니다.  
 
- 자세한 내용은 [Configuration Manager의 활성화 잠금 바이패스를 사용하여 iOS 장치 보호](/sccm/mdm/deploy-use/manage-ios-activation-lock)를 참조하세요.  
+ 자세한 내용은 [Configuration Manager의 활성화 잠금 바이패스를 사용하여 iOS 디바이스 보호](/sccm/mdm/deploy-use/manage-ios-activation-lock)를 참조하세요.  
 
 ##  <a name="BKMK_SC1601"></a> 1602 버전에서 소프트웨어 센터의 개선 사항  
 

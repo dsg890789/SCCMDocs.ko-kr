@@ -119,7 +119,7 @@ Steps to workaround, if any.
 ## <a name="bkmk_comgmt"></a> Intune에서 공동 관리되는 장치 동기화 작업
 <!--1358565-->
 
-공동으로 관리하는 장치가 Microsoft Intune에서 활성화되었는지 여부를 Configuration Manager 콘솔에 표시합니다. 이 상태는 [Intune 데이터 웨어하우스](https://docs.microsoft.com/intune/reports-nav-create-intune-reports)의 데이터를 기반으로 합니다. Configuration Manager 콘솔의 **클라이언트 상태** 대시보드에 **Intune을 사용하는 비활성 클라이언트**가 표시됩니다. 이 새 범주는 Configuration Manager에서 비활성 상태이나 지난주에 Intune 서비스와 동기화된 공동 관리되는 장치에 해당합니다.
+공동으로 관리하는 디바이스가 Microsoft Intune에서 활성화되었는지 여부를 Configuration Manager 콘솔에 표시합니다. 이 상태는 [Intune 데이터 웨어하우스](https://docs.microsoft.com/intune/reports-nav-create-intune-reports)의 데이터를 기반으로 합니다. Configuration Manager 콘솔의 **클라이언트 상태** 대시보드에 **Intune을 사용하는 비활성 클라이언트**가 표시됩니다. 이 새 범주는 Configuration Manager에서 비활성 상태이나 지난주에 Intune 서비스와 동기화된 공동 관리되는 디바이스에 해당합니다.
 
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
@@ -134,7 +134,7 @@ Steps to workaround, if any.
 
 3. Intune과 사이트를 동기화한 후 **모니터링** 작업 영역으로 이동하고 **클라이언트 상태** 노드를 선택합니다. **전체 클라이언트 상태** 섹션에서 **Intune을 사용하는 비활성 클라이언트**에 대한 행을 참조하세요.  
 
-공동 관리 사용에 대한 자세한 내용은 [Windows 10 장치에 대한 공동 관리](/sccm/core/clients/manage/co-management-overview)를 참조하세요.
+공동 관리 사용에 대한 자세한 내용은 [Windows 10 디바이스에 대한 공동 관리](/sccm/core/clients/manage/co-management-overview)를 참조하세요.
 
 
 
@@ -242,13 +242,13 @@ Microsoft Windows 10 Enterprise
 
 작업을 완료합니다. 그런 다음, 기능에 대한 의견이 포함된 [피드백](capabilities-in-technical-preview-1804.md#bkmk_feedback)을 보내주세요.
 
-1. Configuration Manager 콘솔에서 **자산 및 준수** 작업 영역으로 이동하여 **장치 컬렉션** 노드를 선택합니다. 컬렉션을 마우스 오른쪽 단추로 클릭하고 **스크립트 실행**을 선택합니다. 스크립트 만들기 및 실행에 대한 자세한 내용은 [Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행](/sccm/apps/deploy-use/create-deploy-scripts)을 참조하세요.  
+1. Configuration Manager 콘솔에서 **자산 및 준수** 작업 영역으로 이동하여 **디바이스 컬렉션** 노드를 선택합니다. 컬렉션을 마우스 오른쪽 단추로 클릭하고 **스크립트 실행**을 선택합니다. 스크립트 만들기 및 실행에 대한 자세한 내용은 [Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행](/sccm/apps/deploy-use/create-deploy-scripts)을 참조하세요.  
 
 2. 대상 컬렉션에서 스크립트를 실행합니다.  
 
 3. 스크립트 실행 마법사의 **스크립트 상태 모니터링** 페이지의 아래쪽에서 **요약** 탭을 선택합니다. 위쪽에 있는 두 개의 드롭다운 목록을 **스크립트 출력** 및 **데이터 테이블**로 변경합니다. 그런 다음, 결과 행을 두 번 클릭하여 **자세한 출력** 대화 상자를 엽니다.  
 
-4. 스크립트 실행 마법사의 **스크립트 상태 모니터링** 페이지의 아래쪽에서 **실행 정보** 탭을 선택합니다. 결과 행을 두 번 클릭하여 해당 장치에 대한 자세한 출력 대화 상자를 엽니다.  
+4. 스크립트 실행 마법사의 **스크립트 상태 모니터링** 페이지의 아래쪽에서 **실행 정보** 탭을 선택합니다. 결과 행을 두 번 클릭하여 해당 디바이스에 대한 자세한 출력 대화 상자를 엽니다.  
 
 
 

@@ -130,8 +130,8 @@ OMS 커넥터를 사용하여 Microsoft Azure Government 클라우드에 있는 
 
 ### <a name="new-compliance-settings-for-ios"></a>iOS에 대한 새 준수 설정
 
-Microsoft Intune에서 제공하는 설정과 일치하도록 iOS 장치에 대한 많은 새로운 설정을 추가했습니다.
-모든 사용 가능한 설정 목록은 [Intune으로 관리되는 iOS 및 Mac OS X 장치에 대한 구성 항목 만들기](/sccm/mdm/deploy-use/create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client)를 참조하세요.
+Microsoft Intune에서 제공하는 설정과 일치하도록 iOS 디바이스에 대한 많은 새로운 설정을 추가했습니다.
+모든 사용 가능한 설정 목록은 [Intune으로 관리되는 iOS 및 Mac OS X 디바이스에 대한 구성 항목 만들기](/sccm/mdm/deploy-use/create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client)를 참조하세요.
 
 
 ## <a name="application-management"></a>응용 프로그램 관리
@@ -233,11 +233,11 @@ Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞
 
 <!-- ## Inventory  -->
 
-## <a name="mobile-device-management"></a>모바일 장치 관리
+## <a name="mobile-device-management"></a>모바일 디바이스 관리
 
 ### <a name="android-and-ios-versions-are-no-longer-targetable-in-creation-wizards-for-hybrid-mdm"></a>Android 및 iOS 버전은 하이브리드 MDM 만들기 마법사에서 대상 지정이 가능하지 않음
 
-하이브리드 MDM(모바일 장치 관리)에 대한 버전 1702부터 Intune 관리 장치에 대한 새 정책 및 프로필을 만들 때 특정 버전의 Android 및 iOS를 대상으로 지정할 필요가 없습니다. 대신 다음 장치 유형 중 하나를 선택합니다.
+하이브리드 MDM(모바일 디바이스 관리)에 대한 버전 1702부터 Intune 관리 디바이스에 대한 새 정책 및 프로필을 만들 때 특정 버전의 Android 및 iOS를 대상으로 지정할 필요가 없습니다. 대신 다음 디바이스 유형 중 하나를 선택합니다.
 
 - Android
 - Samsung KNOX Standard 4.0 이상
@@ -253,7 +253,7 @@ Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞
 - VPN 프로필
 - Wi-Fi 프로필
 
-이러한 변경으로 인해 하이브리드 배포에서 새 Configuration Manager 릴리스나 확장 없이 새 Android 및 iOS 버전을 더 빠르게 지원할 수 있습니다. Intune 독립 실행형에서 새 버전이 지원되게 되면 사용자는 모바일 장치를 해당 버전으로 업그레이드할 수 있습니다.
+이러한 변경으로 인해 하이브리드 배포에서 새 Configuration Manager 릴리스나 확장 없이 새 Android 및 iOS 버전을 더 빠르게 지원할 수 있습니다. Intune 독립 실행형에서 새 버전이 지원되게 되면 사용자는 모바일 디바이스를 해당 버전으로 업그레이드할 수 있습니다.
 
 이전 버전의 Configuration Manager에서 업그레이드할 때 문제를 방지하려면 이러한 항목의 속성 페이지에서 모바일 운영 체제 버전을 계속 사용할 수 있습니다. 특정 버전을 대상으로 지정해야 하는 경우 새 항목을 만든 다음 새로 만든 항목의 속성 페이지에서 대상 버전을 지정할 수 있습니다. 
 
@@ -264,7 +264,7 @@ Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞
 > - **모든 iOS 10 이상의 iPad 장치**
 
 ### <a name="android-for-work-support"></a>Android for Work 지원
-1702부터 이제 Microsoft Intune을 통한 하이브리드 모바일 장치 관리에서 Android for Work 장치 등록 및 관리를 지원합니다. 관리되는 Android for Work 장치 지침:
+1702부터 이제 Microsoft Intune을 통한 하이브리드 모바일 디바이스 관리에서 Android for Work 디바이스 등록 및 관리를 지원합니다. 관리되는 Android for Work 디바이스 지침:
 
 - [Android for Work 장치 등록](/sccm/mdm/deploy-use/enroll-hybrid-android#enable-android-enrollment)
 - [Android for Work 앱 승인 및 배포](/sccm/mdm/deploy-use/creating-android-applications#approve-and-deploy-android-for-work-apps)
@@ -274,21 +274,21 @@ Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞
 - [Android for Work 준수 정책](/sccm/mdm/deploy-use/create-compliance-policy)
 
 
-### <a name="deploy-volume-purchased-ios-apps-to-device-collections"></a>장치 컬렉션에 대량 구매한 iOS 앱 배포
+### <a name="deploy-volume-purchased-ios-apps-to-device-collections"></a>디바이스 컬렉션에 대량 구매한 iOS 앱 배포
 
-이제 사용이 허가된 앱을 사용자 및 장치에 배포할 수 있습니다. 장치 라이선싱을 지원하는 앱 기능에 따라 앱 배포 시 다음과 같이 적절한 라이선스가 청구됩니다.
+이제 사용이 허가된 앱을 사용자 및 디바이스에 배포할 수 있습니다. 디바이스 라이선싱을 지원하는 앱 기능에 따라 앱 배포 시 다음과 같이 적절한 라이선스가 청구됩니다.
 
 |||||
 |-|-|-|-|
-|Configuration Manager 버전|앱이 장치 라이선싱을 지원하나요?|배포 컬렉션 유형|청구된 라이선스|
+|Configuration Manager 버전|앱이 디바이스 라이선싱을 지원하나요?|배포 컬렉션 유형|청구된 라이선스|
 |1702 이전|예|사용자|사용자 라이선스|
 |1702 이전|아니요|사용자|사용자 라이선스|
-|1702 이전|예|장치|사용자 라이선스|
-|1702 이전|아니요|장치|사용자 라이선스|
+|1702 이전|예|디바이스|사용자 라이선스|
+|1702 이전|아니요|디바이스|사용자 라이선스|
 |1702 이상|예|사용자|사용자 라이선스|
 |1702 이상|아니요|사용자|사용자 라이선스|
-|1702 이상|예|장치|장치 라이선스|
-|1702 이상|아니요|장치|사용자 라이선스|
+|1702 이상|예|디바이스|디바이스 라이선스|
+|1702 이상|아니요|디바이스|사용자 라이선스|
 
 대량 구매한 iOS 앱에 대한 자세한 내용은 [대량 구매한 iOS 앱 관리](/sccm/mdm/deploy-use/manage-volume-purchased-ios-apps)를 참조하세요.
 
@@ -306,14 +306,14 @@ Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞
 
 이제 비즈니스용 Windows 스토어에서 사용자 지정 LOB(기간 업무) 앱을 동기화할 수 있습니다.
 
-### <a name="conditional-access-device-compliance-policy-improvements"></a>조건부 액세스 장치 준수 정책 개선
+### <a name="conditional-access-device-compliance-policy-improvements"></a>조건부 액세스 디바이스 준수 정책 개선
 
-새 장치 준수 정책 규칙을 사용하면 사용자가 비규격 앱 목록에 포함된 앱을 사용하는 경우 조건부 액세스를 지원하는 회사 리소스에 대한 액세스를 차단할 수 있습니다. 비규격 앱 목록은 관리자가 새 준수 규칙 **설치할 수 없는 앱**을 추가할 때 정의할 수 있습니다. 이 규칙을 사용하려면 관리자가 비규격 목록에 앱을 추가할 때 **앱 이름**, **앱 ID** 및 **앱 게시자**(선택 사항)를 입력해야 합니다. 이 설정은 iOS 및 Android 장치에만 적용됩니다.
+새 디바이스 준수 정책 규칙을 사용하면 사용자가 비규격 앱 목록에 포함된 앱을 사용하는 경우 조건부 액세스를 지원하는 회사 리소스에 대한 액세스를 차단할 수 있습니다. 비규격 앱 목록은 관리자가 새 준수 규칙 **설치할 수 없는 앱**을 추가할 때 정의할 수 있습니다. 이 규칙을 사용하려면 관리자가 비규격 목록에 앱을 추가할 때 **앱 이름**, **앱 ID** 및 **앱 게시자**(선택 사항)를 입력해야 합니다. 이 설정은 iOS 및 Android 디바이스에만 적용됩니다.
 
 또한 이렇게 하면 조직에서 보안되지 않은 앱을 통한 데이터 누출을 완화하고 특정 앱을 통한 과도한 데이터 사용을 방지할 수 있습니다.
 
-- 자세한 내용은 [장치 준수 정책의 작동 방식](/sccm/mdm/deploy-use/device-compliance-policies)을 참조하세요.
-- 자세한 내용은 [장치 준수 정책을 만드는 방법](/sccm/mdm/deploy-use/create-compliance-policy)을 참조하세요.
+- 자세한 내용은 [디바이스 준수 정책의 작동 방식](/sccm/mdm/deploy-use/device-compliance-policies)을 참조하세요.
+- 자세한 내용은 [디바이스 준수 정책을 만드는 방법](/sccm/mdm/deploy-use/create-compliance-policy)을 참조하세요.
 
 ### <a name="new-mobile-threat-defense-monitoring-tools"></a>새로운 Mobile Threat Defense 모니터링 도구
 
@@ -321,13 +321,13 @@ Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞
 
 - [Mobile Threat Defense 준수를 모니터링하는 방법](https://docs.microsoft.com/sccm/mdm/deploy-use/monitor-mobile-threat-defense-compliance)을 자세히 알아보세요.
 
-## <a name="protect-devices"></a>장치 보호
+## <a name="protect-devices"></a>디바이스 보호
 
 ### <a name="detect-outdated-antimalware-client-versions"></a>오래된 맬웨어 방지 클라이언트 버전 감지
 버전 1702부터 Endpoint Protection 클라이언트가 오래되지 않았는지 확인하도록 경고를 구성할 수 있습니다. 자세한 내용은 [오래된 맬웨어 클라이언트에 대한 경고](/sccm/protect/deploy-use/endpoint-configure-alerts#detect-outdated-antimalware-client-versions)를 참조하세요.
 
-### <a name="device-health-attestation-updates"></a>장치 상태 증명 업데이트
-이제 관리 지점에서 온-프레미스 클라이언트에 대한 장치 상태 증명 서비스를 구성하고 관리할 수 있습니다. 자세한 내용은 [상태 증명](/sccm/core/servers/manage/health-attestation)을 참조하세요.
+### <a name="device-health-attestation-updates"></a>디바이스 상태 증명 업데이트
+이제 관리 지점에서 온-프레미스 클라이언트에 대한 디바이스 상태 증명 서비스를 구성하고 관리할 수 있습니다. 자세한 내용은 [상태 증명](/sccm/core/servers/manage/health-attestation)을 참조하세요.
 
 ### <a name="certificate-profiles-for-windows-hello-for-business"></a>비즈니스용 Windows Hello 인증서 프로필
 

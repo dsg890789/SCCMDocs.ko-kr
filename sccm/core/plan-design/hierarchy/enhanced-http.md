@@ -58,7 +58,7 @@ Configuration Manager 버전 1806에서는 클라이언트가 사이트 시스�
 ### <a name="bkmk_scenario2"></a> 시나리오 2: 배포 지점의 클라이언트
 <!--1358228-->
 
-작업 그룹 또는 Azure AD 조인 클라이언트는 HTTP용으로 구성된 배포 지점에서 보안 채널을 통해 콘텐츠를 인증하고 다운로드할 수 있습니다. 이러한 종류의 장치는 클라이언트에서 PKI 인증서를 요구하지 않고 HTTPS용으로 구성된 배포 지점에서 콘텐츠를 인증하고 다운로드할 수도 있습니다. 클라이언트 인증 인증서를 작업 그룹 또는 Azure AD 조인 클라이언트에 추가하는 것은 어렵습니다.
+작업 그룹 또는 Azure AD 조인 클라이언트는 HTTP용으로 구성된 배포 지점에서 보안 채널을 통해 콘텐츠를 인증하고 다운로드할 수 있습니다. 이러한 종류의 디바이스는 클라이언트에서 PKI 인증서를 요구하지 않고 HTTPS용으로 구성된 배포 지점에서 콘텐츠를 인증하고 다운로드할 수도 있습니다. 클라이언트 인증 인증서를 작업 그룹 또는 Azure AD 조인 클라이언트에 추가하는 것은 어렵습니다.
 
 이 동작에는 부팅 미디어, PXE 또는 소프트웨어 센터에서 실행되는 작업 순서가 있는 OS 배포 시나리오가 포함됩니다. 자세한 내용은 [네트워크 액세스 계정](/sccm/core/plan-design/hierarchy/accounts#network-access-account)을 참조하세요.<!--1358278-->
 
@@ -66,7 +66,7 @@ Configuration Manager 버전 1806에서는 클라이언트가 사이트 시스�
 ### <a name="bkmk_scenario3"></a> 시나리오 3: Azure AD 장치 ID 
 <!--1358460-->
 
-Azure AD 사용자가 로그인되지 않은 Azure AD 조인 또는 [하이브리드 Azure AD 장치](https://docs.microsoft.com/azure/active-directory/device-management-introduction#hybrid-azure-ad-joined-devices)에서 할당된 사이트와 안전하게 통신할 수 있습니다. 클라우드 기반 장치 ID는 이제 장치 중심 시나리오에 대한 CMG 및 관리 지점을 인증하기에 충분합니다. (사용자 중심 시나리오에서는 여전히 사용자 토큰이 필요합니다.)  
+Azure AD 사용자가 로그인되지 않은 Azure AD 조인 또는 [하이브리드 Azure AD 디바이스](https://docs.microsoft.com/azure/active-directory/device-management-introduction#hybrid-azure-ad-joined-devices)에서 할당된 사이트와 안전하게 통신할 수 있습니다. 클라우드 기반 디바이스 ID는 이제 디바이스 중심 시나리오에 대한 CMG 및 관리 지점을 인증하기에 충분합니다. (사용자 중심 시나리오에서는 여전히 사용자 토큰이 필요합니다.)  
 
 
 ## <a name="prerequisites"></a>필수 구성 요소  

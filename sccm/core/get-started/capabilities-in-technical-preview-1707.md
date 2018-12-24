@@ -57,14 +57,14 @@ ms.locfileid: "32336972"
 <!-- 1352486 -->
 이 릴리스부터 피어 캐시가 Windows 10 콘텐츠 고속 설치 파일과 Office 365 업데이트 파일 배포를 지원합니다. 추가 구성이 필요 없습니다.
 
-## <a name="surface-device-dashboard"></a>Surface 장치 대시보드
+## <a name="surface-device-dashboard"></a>Surface 디바이스 대시보드
 <!--1355788-->
-Surface 장치 대시보드는 사용자 환경에 있는 Surface 장치에 대한 정보를 제공합니다. 콘솔에서 **Surface 장치**  > **모니터링**으로 이동합니다. 다음을 볼 수 있습니다.
+Surface 디바이스 대시보드는 사용자 환경에 있는 Surface 디바이스에 대한 정보를 제공합니다. 콘솔에서 **Surface 디바이스**  > **모니터링**으로 이동합니다. 다음을 볼 수 있습니다.
 - Surfaces의 백분율
 - Surface 모델의 백분율
 - 상위 5개 운영 체제 버전
 
-전체 장치 목록을 보려면 **Surface 모델** 차트의 섹션을 클릭합니다.  
+전체 디바이스 목록을 보려면 **Surface 모델** 차트의 섹션을 클릭합니다.  
 
 ## <a name="configure-and-deploy-windows-defender-application-guard-policies"></a>Windows Defender Application Guard 정책 구성 및 배포
 <!-- 1351960 -->
@@ -73,7 +73,7 @@ Surface 장치 대시보드는 사용자 환경에 있는 Surface 장치에 대�
 
 ### <a name="before-you-start"></a>시작하기 전에
 
-Windows Defender Application Guard 정책을 만들고 배포하려면 정책을 배포하는 Windows 10 장치를 네트워크 격리 정책을 사용하여 구성해야 합니다. 자세한 내용은 [이 블로그 게시물](https://blogs.windows.com/msedgedev/2016/09/27/application-guard-microsoft-edge/#BmJGKPfSjHHzsMmI.97)을 참조하세요. 이 기능은 현재 Windows 10 참가자 빌드에서만 작동합니다. 이 기능을 테스트하려면 클라이언트에서 최신 Windows 10 참가자 빌드를 실행하고 있어야 합니다.
+Windows Defender Application Guard 정책을 만들고 배포하려면 정책을 배포하는 Windows 10 디바이스를 네트워크 격리 정책을 사용하여 구성해야 합니다. 자세한 내용은 [이 블로그 게시물](https://blogs.windows.com/msedgedev/2016/09/27/application-guard-microsoft-edge/#BmJGKPfSjHHzsMmI.97)을 참조하세요. 이 기능은 현재 Windows 10 참가자 빌드에서만 작동합니다. 이 기능을 테스트하려면 클라이언트에서 최신 Windows 10 참가자 빌드를 실행하고 있어야 합니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 
@@ -85,7 +85,7 @@ Windows Defender Application Guard 정책을 만들고 배포하려면 정책을
 4. 블로그 게시물을 참조하여 사용 가능한 설정을 찾아보고 구성한 후 기능을 사용해볼 수 있습니다.
 5. 이 릴리스에서는 마법사에 **네트워크 정의** 페이지가 추가되었습니다. 이 페이지에서 회사 ID를 지정하고 회사 네트워크 경계를 정의합니다.<br>Windows 10 PC는 클라이언트에 하나의 네트워크 격리 목록만 저장합니다. 이 릴리스에서 두 가지 종류의 네트워크 격리 목록(Windows Information Protection의 목록, Windows Defender 응용 프로그램 가드의 목록)을 만들고 클라이언트에 배포할 수 있습니다. 두 정책 모두 배포하는 경우 두 네트워크 격리 목록이 일치해야 합니다. 동일 클라이언트와 일치하지 않는 목록을 배포할 경우 배포가 실패합니다.
 네트워크 정의를 지정하는 자세한 방법은 [Windows Information Protection 설명서](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-sccm)에서 참조하세요.
-6. 작업이 끝나면 마법사를 완료하고 하나 이상의 Windows 10 장치에 정책을 배포합니다.
+6. 작업이 끝나면 마법사를 완료하고 하나 이상의 Windows 10 디바이스에 정책을 배포합니다.
 
 ### <a name="further-reading"></a>추가 참고 자료
 Windows Defender Application Guard에 대한 자세한 내용은 [이 블로그 게시물](https://blogs.windows.com/msedgedev/2016/09/27/application-guard-microsoft-edge/#BmJGKPfSjHHzsMmI.97)을 참조하세요. 또한 Windows Defender Application Guard 독립 실행형 모드에 대한 자세한 내용은 [이 블로그 게시물](https://techcommunity.microsoft.com/t5/Windows-Insider-Program/Windows-Defender-Application-Guard-Standalone-mode/td-p/66903)을 참조하세요.

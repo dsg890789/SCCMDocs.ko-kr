@@ -26,7 +26,7 @@ System Center Configuration Manager 사이트 및 계층 인프라를 관리할 
 
 ## <a name="upgrade"></a>Upgrade
 *업그레이드* 또는 *전체 업그레이드*는 Configuration Manager 2012 사이트 또는 계층을 System Center Configuration Manager를 실행하는 사이트 또는 계층으로 변환하는 데 사용됩니다.
-System Center 2012 Configuration Manager를 System Center Configuration Manager로 업그레이드한 경우 사이트 및 사이트 서버를 호스트하는 데 계속해서 동일한 서버가 사용되며 Configuration Manager에 대한 기존 데이터 및 구성이 그대로 유지됩니다.  이는 새 하드웨어에 설치된 새 System Center Configuration Manager 사이트를 사용하면서 관리되는 장치에 대한 구성 및 데이터를 유지하는 방법인 [마이그레이션](/sccm/core/migration/migrate-data-between-hierarchies)과 다릅니다.
+System Center 2012 Configuration Manager를 System Center Configuration Manager로 업그레이드한 경우 사이트 및 사이트 서버를 호스트하는 데 계속해서 동일한 서버가 사용되며 Configuration Manager에 대한 기존 데이터 및 구성이 그대로 유지됩니다.  이는 새 하드웨어에 설치된 새 System Center Configuration Manager 사이트를 사용하면서 관리되는 디바이스에 대한 구성 및 데이터를 유지하는 방법인 [마이그레이션](/sccm/core/migration/migrate-data-between-hierarchies)과 다릅니다.
 
 자세한 내용은 [System Center Configuration Manager로 업그레이드](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager)를 참조하세요.
 

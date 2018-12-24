@@ -21,9 +21,9 @@ ms.locfileid: "32350268"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager를 통해 Windows 10 장치의 대체 로그인 방법인 비즈니스용 Windows Hello(이전의 Microsoft Passport for Windows)와 통합할 수 있습니다. 비즈니스용 Windows Hello는 Active Directory 또는 Azure Active Directory 계정을 사용하여 암호, 스마트 카드 또는 가상 스마트 카드를 대체합니다.  
+System Center Configuration Manager를 통해 Windows 10 디바이스의 대체 로그인 방법인 비즈니스용 Windows Hello(이전의 Microsoft Passport for Windows)와 통합할 수 있습니다. 비즈니스용 Windows Hello는 Active Directory 또는 Azure Active Directory 계정을 사용하여 암호, 스마트 카드 또는 가상 스마트 카드를 대체합니다.  
 
-비즈니스용 Windows Hello를 통해 암호 대신 **사용자 제스처** 를 사용하여 로그인할 수 있습니다. 사용자 제스처는 단순 PIN, 생체 인식 인증 또는 외부 장치(예: 지문 판독기)일 수 있습니다.  
+비즈니스용 Windows Hello를 통해 암호 대신 **사용자 제스처** 를 사용하여 로그인할 수 있습니다. 사용자 제스처는 단순 PIN, 생체 인식 인증 또는 외부 디바이스(예: 지문 판독기)일 수 있습니다.  
 
  Configuration Manager는 다음 두 가지 방법으로 비즈니스용 Windows Hello와 통합됩니다.  
 
@@ -31,7 +31,7 @@ System Center Configuration Manager를 통해 Windows 10 장치의 대체 로그
 
 -   비즈니스용 Windows Hello KSP(키 저장소 공급자)에 인증 인증서를 저장할 수 있습니다. 자세한 내용은 [인증서 프로필](create-pfx-certificate-profiles.md)을 참조하세요.  
 
-- Configuration Manager 클라이언트를 실행하는 도메인에 가입된 Windows 10 장치에 비즈니스용 Windows Hello 정책을 배포할 수 있습니다. 이 구성은 [도메인에 가입된 Windows 10 장치에서 비즈니스용 Windows Hello 구성](../../protect/deploy-use/windows-hello-for-business-settings.md#configure-windows-hello-for-business-on-domain-joined-windows-10-devices)에서 설명합니다. Intune과 함께 Configuration Manager를 사용하는 경우(하이브리드) Windows 10 및 Windows 10 Mobile 장치에서 이러한 설정을 구성할 수 있지만, Configuration Manager 클라이언트를 실행하는 도메인에 가입된 장치에서는 구성할 수 없습니다.   
+- Configuration Manager 클라이언트를 실행하는 도메인에 가입된 Windows 10 디바이스에 비즈니스용 Windows Hello 정책을 배포할 수 있습니다. 이 구성은 [도메인에 가입된 Windows 10 디바이스에서 비즈니스용 Windows Hello 구성](../../protect/deploy-use/windows-hello-for-business-settings.md#configure-windows-hello-for-business-on-domain-joined-windows-10-devices)에서 설명합니다. Intune과 함께 Configuration Manager를 사용하는 경우(하이브리드) Windows 10 및 Windows 10 Mobile 디바이스에서 이러한 설정을 구성할 수 있지만, Configuration Manager 클라이언트를 실행하는 도메인에 가입된 디바이스에서는 구성할 수 없습니다.   
 
 비즈니스용 Windows Hello 설정을 구성하는 방법에 대한 일반적인 내용은 [System Center Configuration Manager의 비즈니스용 Windows Hello 설정](../../protect/deploy-use/windows-hello-for-business-settings.md)을 참조하세요.
 
@@ -93,7 +93,7 @@ System Center Configuration Manager를 통해 Windows 10 장치의 대체 로그
 
          **사용**으로 설정되면 지원될 경우 모든 사용자는 안면에 대해 스푸핑 방지 기능을 사용하도록 요구됩니다.  
 
-    -   **원격 Passport 사용** - 이 옵션이 **사용**으로 설정되면 원격 비즈니스용 Windows Hello를 데스크톱 컴퓨터 인증을 위한 휴대용 포함 장치로 사용할 수 있습니다. 데스크톱 컴퓨터가 Azure Active Directory에 가입되어 있어야 하고 해당 포함 장치는 비즈니스용 Windows Hello PIN으로 구성되어야 합니다.  
+    -   **원격 Passport 사용** - 이 옵션이 **사용**으로 설정되면 원격 비즈니스용 Windows Hello를 데스크톱 컴퓨터 인증을 위한 휴대용 포함 장치로 사용할 수 있습니다. 데스크톱 컴퓨터가 Azure Active Directory에 가입되어 있어야 하고 해당 포함 디바이스는 비즈니스용 Windows Hello PIN으로 구성되어야 합니다.  
 
 5.  작업을 마쳤으면 **확인**을 클릭합니다.  
 

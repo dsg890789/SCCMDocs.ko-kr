@@ -23,7 +23,7 @@ ms.locfileid: "32344707"
 
 System Center Configuration Manager는 몇 가지 클라우드 기반 옵션을 지원합니다. 이러한 옵션은 온-프레미스 인프라를 보완하며 다음과 같은 비즈니스 문제를 해결하는 데 도움이 됩니다.  
 
--   모바일 장치 관리용 Intune을 사용하여 BYOD를 관리하는 방법  
+-   모바일 디바이스 관리용 Intune을 사용하여 BYOD를 관리하는 방법  
 
 -   클라우드 기반 배포 지점을 사용하여 회사 방화벽 외부의 인트라넷에서 격리된 클라이언트 또는 리소스에 대해 콘텐츠 리소스를 제공하는 방법  
 
@@ -68,14 +68,14 @@ Azure 가상 컴퓨터를 사용하려면 Azure 구독이 필요합니다. 사�
 
 Azure를 사용하여 배포 지점을 호스트하려면 Azure 구독이 필요합니다. 서비스에서 데이터를 전송하는 데이터 양에 따라 요금이 부과됩니다.  
 
-### <a name="microsoft-intune-for-mobile-device-management"></a>Microsoft Intune(모바일 장치 관리의 경우)  
- Microsoft Intune 구독을 Configuration Manager와 통합하여 Intune 서비스로 장치를 관리하도록 설정할 수 있습니다. 이 통합의 특징은 다음과 같습니다.  
+### <a name="microsoft-intune-for-mobile-device-management"></a>Microsoft Intune(모바일 디바이스 관리의 경우)  
+ Microsoft Intune 구독을 Configuration Manager와 통합하여 Intune 서비스로 디바이스를 관리하도록 설정할 수 있습니다. 이 통합의 특징은 다음과 같습니다.  
 
--   하이브리드 구성이라고 하며, 다양한 장치를 지원하도록 Configuration Manager 또는 사용자 관점에 따라 Intune을 확장합니다.  
+-   하이브리드 구성이라고 하며, 다양한 디바이스를 지원하도록 Configuration Manager 또는 사용자 관점에 따라 Intune을 확장합니다.  
 
 -   Microsoft Intune 커넥터 사이트 시스템 역할이 필요합니다.  
 
--   Intune을 사용하여 관리하려는 장치에 대해 충분한 라이선스가 있는 별도의 Intune 구독이 필요합니다.  
+-   Intune을 사용하여 관리하려는 디바이스에 대해 충분한 라이선스가 있는 별도의 Intune 구독이 필요합니다.  
 
 Intune에서 Azure를 사용하지만 Azure를 독립적으로 구성할 필요는 없으며 Intune 구독 비용 이외의 추가 비용도 들지 않습니다.  
 
@@ -86,7 +86,7 @@ Intune에서 Azure를 사용하지만 Azure를 독립적으로 구성할 필요�
 
 -   Configuration Manager용 업데이트를 다운로드할 Configuration Manager 서비스 클라우드  
 
-이러한 추가 기능은 Azure 구독이 없어도 사용할 수 있으며 클라우드에서 특정 연결, 인증서 또는 서비스를 설정할 필요도 없습니다. Configuration Manager에서 이러한 기능을 자동으로 관리하기 때문입니다. 해당하는 사이트 시스템 및 장치가 인터넷 기반 URL에 액세스할 수 있는지만 확인하면 됩니다.  
+이러한 추가 기능은 Azure 구독이 없어도 사용할 수 있으며 클라우드에서 특정 연결, 인증서 또는 서비스를 설정할 필요도 없습니다. Configuration Manager에서 이러한 기능을 자동으로 관리하기 때문입니다. 해당하는 사이트 시스템 및 디바이스가 인터넷 기반 URL에 액세스할 수 있는지만 확인하면 됩니다.  
 
 ##  <a name="BKMK_CloudSec"></a> 클라우드 기반 서비스의 보안  
  Configuration Manager에서는 인증서를 사용하여 Azure의 콘텐츠를 프로비전 및 액세스하고 사용자가 사용하는 서비스를 관리합니다. Configuration Manager는 Azure에 저장되는 데이터를 암호화하지만 Azure에서 제공하는 것 이상의 추가 보안 또는 데이터 컨트롤을 제공하지는 않습니다.  

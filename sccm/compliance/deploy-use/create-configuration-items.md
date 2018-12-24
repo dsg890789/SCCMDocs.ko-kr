@@ -1,7 +1,7 @@
 ---
 title: 구성 항목을 만드는 방법
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 관리하고 Microsoft Intune에 등록된 장치에 구성을 만들고 배포합니다.
+description: System Center Configuration Manager에서 관리하고 Microsoft Intune에 등록된 디바이스에 구성을 만들고 배포합니다.
 ms.date: 03/28/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-compliance
@@ -21,7 +21,7 @@ ms.locfileid: "32332188"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 준수 설정을 사용하면 Configuration Manager로 관리되는 장치와 Microsoft Intune에 등록된 장치에 구성을 만들고 배포할 수 있습니다.  
+System Center Configuration Manager의 준수 설정을 사용하면 Configuration Manager로 관리되는 디바이스와 Microsoft Intune에 등록된 디바이스에 구성을 만들고 배포할 수 있습니다.  
 
 ## <a name="in-this-section"></a>이 섹션의 내용  
 

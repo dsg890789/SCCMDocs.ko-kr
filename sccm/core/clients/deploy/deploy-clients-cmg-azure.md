@@ -1,7 +1,7 @@
 ---
 title: Azure AD를 사용하여 클라이언트 설치
 titleSuffix: Configuration Manager
-description: 인증을 위해 Azure Active Directory를 사용하여 Windows 10 장치에서 Configuration Manager 클라이언트 설치 및 할당
+description: 인증을 위해 Azure Active Directory를 사용하여 Windows 10 디바이스에서 Configuration Manager 클라이언트 설치 및 할당
 ms.date: 03/28/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -19,7 +19,7 @@ ms.locfileid: "51860249"
 ---
 # <a name="install-and-assign-configuration-manager-windows-10-clients-using-azure-ad-for-authentication"></a>인증을 위해 Azure AD를 사용하여 Configuration Manager Windows 10 클라이언트 설치 및 할당
 
-Azure AD 인증을 사용하여 Windows 10 장치에서 Configuration Manager 클라이언트를 설치하려면 Azure AD(Azure Active Directory)와 Configuration Manager를 통합합니다. 클라이언트는 HTTPS 기반 관리 지점과 직접 통신하는 인트라넷에 있을 수 있습니다. 또한 클라이언트는 CMG을 통해 또는 인터넷 기반 관리 지점과 통신하는 인터넷 기반일 수 있습니다. 이 프로세스는 Azure AD를 사용하여 Configuration Manager 사이트에 클라이언트를 인증합니다. Azure AD를 사용하면 클라이언트 인증 인증서를 구성하고 사용할 필요가 없습니다.
+Azure AD 인증을 사용하여 Windows 10 디바이스에서 Configuration Manager 클라이언트를 설치하려면 Azure AD(Azure Active Directory)와 Configuration Manager를 통합합니다. 클라이언트는 HTTPS 기반 관리 지점과 직접 통신하는 인트라넷에 있을 수 있습니다. 또한 클라이언트는 CMG을 통해 또는 인터넷 기반 관리 지점과 통신하는 인터넷 기반일 수 있습니다. 이 프로세스는 Azure AD를 사용하여 Configuration Manager 사이트에 클라이언트를 인증합니다. Azure AD를 사용하면 클라이언트 인증 인증서를 구성하고 사용할 필요가 없습니다.
 
 
 
@@ -27,7 +27,7 @@ Azure AD 인증을 사용하여 Windows 10 장치에서 Configuration Manager �
 
 - Azure AD 테넌트는 필수 구성 요소  
 
-- 장치 요구 사항  
+- 디바이스 요구 사항  
 
     - Windows 10  
 
@@ -58,19 +58,19 @@ Azure AD 인증을 사용하여 Windows 10 장치에서 Configuration Manager �
 
 ## <a name="configure-client-settings"></a>클라이언트 설정 구성
 
-이러한 클라이언트 설정은 Azure AD를 사용하여 Windows 10 장치에 연결하도록 지원합니다. 또한 CMG 및 클라우드 배포 지점을 사용하려면 인터넷 기반 클라이언트를 사용하도록 설정할 수 있습니다.
+이러한 클라이언트 설정은 Azure AD를 사용하여 Windows 10 디바이스에 연결하도록 지원합니다. 또한 CMG 및 클라우드 배포 지점을 사용하려면 인터넷 기반 클라이언트를 사용하도록 설정할 수 있습니다.
 
 1.  [클라이언트 설정 구성 방법](/sccm/core/clients/deploy/configure-client-settings)의 정보를 사용하여 **Cloud Services** 섹션에서 다음 클라이언트 설정을 구성합니다.  
 
-    - **클라우드 배포 지점에 대한 액세스 허용**: 인터넷 기반 장치를 활용하는 이 설정을 사용하여 Configuration Manager 클라이언트를 설치하기 위해 필요한 콘텐츠를 가져옵니다. 콘텐츠가 클라우드 배포 지점에서 사용할 수 없는 경우 장치는 CMG에서 콘텐츠를 검색할 수 있습니다. 클라이언트 설치 부트스트랩은 CMG로 되돌아가기 전에 4시간 동안 클라우드 배포 지점을 다시 시도합니다.<!--495533-->  
+    - **클라우드 배포 지점에 대한 액세스 허용**: 인터넷 기반 장치를 활용하는 이 설정을 사용하여 Configuration Manager 클라이언트를 설치하기 위해 필요한 콘텐츠를 가져옵니다. 콘텐츠가 클라우드 배포 지점에서 사용할 수 없는 경우 디바이스는 CMG에서 콘텐츠를 검색할 수 있습니다. 클라이언트 설치 부트스트랩은 CMG로 되돌아가기 전에 4시간 동안 클라우드 배포 지점을 다시 시도합니다.<!--495533-->  
 
     - **Azure Active Directory에 새 Windows 10 도메인에 연결된 장치를 자동으로 등록**: **예** 또는 **아니요**로 설정합니다. 기본 설정은 **예**입니다. 이 동작은 Windows 10 버전 1709에서 기본값이기도 합니다.
 
     - **클라이언트가 클라우드 관리 게이트웨이를 사용하도록 설정** – **예**(기본값) 또는 **아니요**로 설정합니다.  
 
-2.  필요한 장치 컬렉션에 클라이언트 설정을 배포합니다. 이러한 설정을 사용자 컬렉션에 배포하지 않습니다.
+2.  필요한 디바이스 컬렉션에 클라이언트 설정을 배포합니다. 이러한 설정을 사용자 컬렉션에 배포하지 않습니다.
 
-장치가 Azure AD에 연결됐는지 확인하려면 명령 프롬프트에서 `dsregcmd.exe /status`을 실행합니다. 결과의 **AzureAdjoined** 필드는 장치가 Azure AD에 연결된 경우 **예**를 표시합니다.
+디바이스가 Azure AD에 연결됐는지 확인하려면 명령 프롬프트에서 `dsregcmd.exe /status`을 실행합니다. 결과의 **AzureAdjoined** 필드는 디바이스가 Azure AD에 연결된 경우 **예**를 표시합니다.
 
 
 
@@ -79,7 +79,7 @@ Azure AD 인증을 사용하여 Windows 10 장치에서 Configuration Manager �
 Azure AD ID를 사용하여 클라이언트를 수동으로 설치하려면 먼저 [클라이언트를 수동으로 설치하는 방법](/sccm/core/clients/deploy/deploy-clients-to-windows-computers#BKMK_Manual)에 관한 일반 프로세스를 검토합니다. 
 
  > [!Note]  
- > 장치는 Azure AD와 연결하려면 인터넷에 액세스해야 하지만 인터넷 기반일 필요는 없습니다. 
+ > 디바이스는 Azure AD와 연결하려면 인터넷에 액세스해야 하지만 인터넷 기반일 필요는 없습니다. 
 
 다음 예제에서는 `ccmsetup.exe /mp:<source management point> CCMHOSTNAME=<internet-based management point> SMSSiteCode=<site code> SMSMP=<initial management point> AADTENANTID=<Azure AD tenant identifier> AADCLIENTAPPID=<Azure AD client app identifier> AADRESOURCEURI=<Azure AD server app identifier>`와 같은 명령줄의 일반 구조를 보여줍니다.
 
@@ -92,7 +92,7 @@ Azure AD ID를 사용하여 클라이언트를 수동으로 설치하려면 먼�
 
 이 예제는 클라우드 관리 게이트웨이를 사용합니다. 각 속성에 대한 예제 값을 대체합니다. `ccmsetup.exe /mp:https://CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72186325152220500 CCMHOSTNAME=CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72186325152220500 SMSSiteCode=ABC SMSMP=https://mp1.contoso.com AADTENANTID=daf4a1c2-3a0c-401b-966f-0b855d3abd1a AADCLIENTAPPID=7506ee10-f7ec-415a-b415-cd3d58790d97 AADRESOURCEURI=https://contososerver`
 
-Microsoft Intune을 통해 Azure AD ID를 사용하여 클라이언트 설치를 자동화하려면 [공동 관리를 위해 Windows 10 장치 준비](/sccm/core/clients/manage/co-management-prepare#command-line-to-install-configuration-manager-client) 프로세스를 참조합니다.
+Microsoft Intune을 통해 Azure AD ID를 사용하여 클라이언트 설치를 자동화하려면 [공동 관리를 위해 Windows 10 디바이스 준비](/sccm/core/clients/manage/co-management-prepare#command-line-to-install-configuration-manager-client) 프로세스를 참조합니다.
 
 
 

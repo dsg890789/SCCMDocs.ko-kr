@@ -253,7 +253,7 @@ SCAP 데이터 스트림을 가져온 후, **Microsoft.Sces.ScapToDcm.exe** 도�
 
 ### <a name="import-the-cab-file"></a>.cab 파일 가져오기
 
-이 프로세스의 다음 단계에서는 Configuration Manager 콘솔을 사용하여 Configuration Manager로 준수 설정 규격 .cab 파일을 가져옵니다. 이 프로세스의 앞부분에서 만든 .cab 파일을 가져올 때는 Configuration Manager 데이터베이스에 하나 이상의 구성 항목과 구성 기준이 작성됩니다. 프로세스의 뒷부분에서 장치 컬렉션에 구성 기준을 배포할 수 있습니다. 자세한 내용은 [구성 데이터 가져오기](/sccm/compliance/deploy-use/import-configuration-data)를 참조하세요.
+이 프로세스의 다음 단계에서는 Configuration Manager 콘솔을 사용하여 Configuration Manager로 준수 설정 규격 .cab 파일을 가져옵니다. 이 프로세스의 앞부분에서 만든 .cab 파일을 가져올 때는 Configuration Manager 데이터베이스에 하나 이상의 구성 항목과 구성 기준이 작성됩니다. 프로세스의 뒷부분에서 디바이스 컬렉션에 구성 기준을 배포할 수 있습니다. 자세한 내용은 [구성 데이터 가져오기](/sccm/compliance/deploy-use/import-configuration-data)를 참조하세요.
 
 이전에 만든 .cab 파일의 위치는 Microsoft.Sces.ScapToDcm.exe 도구의 `–output` 매개 변수로 지정된 폴더입니다.
 

@@ -104,37 +104,37 @@ System Center Configuration Manager 업데이트 1602는 버전 1511을 실행�
 
 ## <a name="compliance-settings"></a>호환성 설정  
 
-### <a name="compliance-settings-for-devices-running-windows-10-team"></a>Windows 10 Team을 실행하는 장치에 대한 준수 설정  
- **Windows 8.1 및 Windows 10** 구성 항목에 새로운 설정이 추가되었습니다. 이러한 설정을 통해 Windows 10 Team을 실행하는 장치(예: Surface Hub 장치)를 제어할 수 있습니다.  
+### <a name="compliance-settings-for-devices-running-windows-10-team"></a>Windows 10 Team을 실행하는 디바이스에 대한 준수 설정  
+ **Windows 8.1 및 Windows 10** 구성 항목에 새로운 설정이 추가되었습니다. 이러한 설정을 통해 Windows 10 Team을 실행하는 디바이스(예: Surface Hub 디바이스)를 제어할 수 있습니다.  
 
- 자세한 내용은 [System Center Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 장치에 대한 구성 항목을 만드는 방법](../../../compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)을 참조하세요.  
+ 자세한 내용은 [System Center Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 디바이스에 대한 구성 항목을 만드는 방법](../../../compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)을 참조하세요.  
 
-### <a name="kiosk-mode-settings-for-android-samsung-knox-standard-devices"></a>Android Samsung KNOX Standard 장치에 대한 키오스크 모드 설정  
- 키오스크 모드에서는 장치를 잠가 특정 기능만 작동하도록 허용할 수 있습니다. 예를 들어, 장치에서 지정된 관리되는 앱만 실행할 수 있게 하거나 장치에서 볼륨 단추를 사용되지 않도록 설정할 수 있습니다. 이러한 설정은 POS 장치와 같이 한 가지 기능만 수행하도록 지정된 장치 또는 장치의 데모 모델에 사용할 수 있습니다. 이제 Configuration Manager에서, Samsung KNOX Standard 장치에 대한 키오스크 모드 설정을 지정할 수 있습니다.  
+### <a name="kiosk-mode-settings-for-android-samsung-knox-standard-devices"></a>Android Samsung KNOX Standard 디바이스에 대한 키오스크 모드 설정  
+ 키오스크 모드에서는 디바이스를 잠가 특정 기능만 작동하도록 허용할 수 있습니다. 예를 들어, 디바이스에서 지정된 관리되는 앱만 실행할 수 있게 하거나 디바이스에서 볼륨 단추를 사용되지 않도록 설정할 수 있습니다. 이러한 설정은 POS 디바이스와 같이 한 가지 기능만 수행하도록 지정된 디바이스 또는 디바이스의 데모 모델에 사용할 수 있습니다. 이제 Configuration Manager에서, Samsung KNOX Standard 디바이스에 대한 키오스크 모드 설정을 지정할 수 있습니다.  
 
- 자세한 내용은 [System Center Configuration Manager 클라이언트 없이 관리되는 Android 및 Samsung KNOX Standard 장치에 대한 구성 항목을 만드는 방법](../../../compliance/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client.md)을 참조하세요.  
+ 자세한 내용은 [System Center Configuration Manager 클라이언트 없이 관리되는 Android 및 Samsung KNOX Standard 디바이스에 대한 구성 항목을 만드는 방법](../../../compliance/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client.md)을 참조하세요.  
 
 ## <a name="conditional-access"></a>조건부 액세스  
 
 ### <a name="conditional-access-for-pcs-managed-by-system-center-configuration-manager"></a>System Center Configuration Manager에서 관리하는 PC에 대한 조건부 액세스 지원  
- 이 릴리스 이전에서는, PC에 대한 조건부 액세스를 설정하려면 PC가 Intune에 등록되어 있거나 도메인에 가입된 PC여야 합니다. 1602 업데이트부터, System Center Configuration Manager에서 관리하는 PC에 대한 조건부 액세스가 지원됩니다. System Center Configuration Manager에서 관리하는 사용자 PC에 대해, 설정하는 준수 정책을 준수하는 장치로만 Exchange Online 및 SharePoint Online에 대한 액세스를 제한할 수 있습니다.  
+ 이 릴리스 이전에서는, PC에 대한 조건부 액세스를 설정하려면 PC가 Intune에 등록되어 있거나 도메인에 가입된 PC여야 합니다. 1602 업데이트부터, System Center Configuration Manager에서 관리하는 PC에 대한 조건부 액세스가 지원됩니다. System Center Configuration Manager에서 관리하는 사용자 PC에 대해, 설정하는 준수 정책을 준수하는 디바이스로만 Exchange Online 및 SharePoint Online에 대한 액세스를 제한할 수 있습니다.  
 
  자세한 내용은 [System Center Configuration Manager에서 관리되는 PC용 O365 서비스에 대한 액세스 관리](../../../protect/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md)를 참조하세요.  
 
-### <a name="restricting-access-based-on-the-health-of-devices"></a>장치 상태에 따라 액세스 제한  
- 이제 상태 증명 서비스에서 보고하는 디바이스의 상태를 기준으로, 이메일 및 Office 365 서비스에 대한 액세스를 제한할 수 있습니다. 또한 Intune에서 관리하는 장치는 장치 상태 보고서에 포함됩니다.  
+### <a name="restricting-access-based-on-the-health-of-devices"></a>디바이스 상태에 따라 액세스 제한  
+ 이제 상태 증명 서비스에서 보고하는 디바이스의 상태를 기준으로, 이메일 및 Office 365 서비스에 대한 액세스를 제한할 수 있습니다. 또한 Intune에서 관리하는 디바이스는 디바이스 상태 보고서에 포함됩니다.  
 
- Configuration Manager 콘솔에서는 상태에 따라 장치의 액세스가 허용되거나 차단되어야 하는지를 지정할 수 있는 새 준수 규칙을 제공합니다. 상태 증명 서비스 및 Intune에서 장치 상태가 보고되는 방법에 대한 자세한 내용은 [System Center Configuration Manager에 대한 상태 증명](../../../core/servers/manage/health-attestation.md)을 참조하세요.  
+ Configuration Manager 콘솔에서는 상태에 따라 디바이스의 액세스가 허용되거나 차단되어야 하는지를 지정할 수 있는 새 준수 규칙을 제공합니다. 상태 증명 서비스 및 Intune에서 디바이스 상태가 보고되는 방법에 대한 자세한 내용은 [System Center Configuration Manager에 대한 상태 증명](../../../core/servers/manage/health-attestation.md)을 참조하세요.  
 
 ### <a name="new-compliance-policy-rules"></a>새 준수 정책 규칙  
- 자동 업데이트, 장치 잠금을 해제하는 암호 요구 등 새로운 준수 정책 규칙이 더 나은 보안 요구 사항을 지원하기 위해 추가되었습니다.
+ 자동 업데이트, 디바이스 잠금을 해제하는 암호 요구 등 새로운 준수 정책 규칙이 더 나은 보안 요구 사항을 지원하기 위해 추가되었습니다.
 
- 자세한 내용은 [System Center Configuration Manager의 장치 준수 정책](../../../protect/deploy-use/device-compliance-policies.md)을 참조하세요.  
+ 자세한 내용은 [System Center Configuration Manager의 디바이스 준수 정책](../../../protect/deploy-use/device-compliance-policies.md)을 참조하세요.  
 
-### <a name="make-sure-enrolled-and-compliant-devices-always-have-access-to-exchange-on-premises"></a>등록된 규격 장치에서 항상 Exchange 온-프레미스에 액세스할 수 있는지 확인  
- 다음 옵션을 선택하면 Intune에 등록되었으며 준수 정책을 준수하는 장치에서 Exchange 온-프레미스에 액세스할 수 있습니다. **기본 규칙 재정의 - Intune에 등록된 규격 장치의 Exchange 온-프레미스 액세스 항상 허용:**. 이 규칙은 Exchange 온-프레미스에 대한 **조건부 액세스 정책 구성 마법사**의 **일반 페이지**에서 사용할 수 있습니다.
+### <a name="make-sure-enrolled-and-compliant-devices-always-have-access-to-exchange-on-premises"></a>등록된 규격 디바이스에서 항상 Exchange 온-프레미스에 액세스할 수 있는지 확인  
+ 다음 옵션을 선택하면 Intune에 등록되었으며 준수 정책을 준수하는 디바이스에서 Exchange 온-프레미스에 액세스할 수 있습니다. **기본 규칙 재정의 - Intune에 등록된 규격 디바이스의 Exchange 온-프레미스 액세스 항상 허용:**. 이 규칙은 Exchange 온-프레미스에 대한 **조건부 액세스 정책 구성 마법사**의 **일반 페이지**에서 사용할 수 있습니다.
 
- 이 규칙은 기본 규칙을 재정의하며, 이것은 기본 규칙을 액세스를 격리 또는 차단하도록 설정하더라도 등록 및 규격 장치는 여전히 Exchange 온-프레미스에 액세스할 수 있음을 의미합니다. 등록된 규격 장치에서 Exchange 온-프레미스를 통해 항상 메일에 액세스할 수 있도록 하려면 이 설정을 사용합니다.   
+ 이 규칙은 기본 규칙을 재정의하며, 이것은 기본 규칙을 액세스를 격리 또는 차단하도록 설정하더라도 등록 및 규격 디바이스는 여전히 Exchange 온-프레미스에 액세스할 수 있음을 의미합니다. 등록된 규격 디바이스에서 Exchange 온-프레미스를 통해 항상 메일에 액세스할 수 있도록 하려면 이 설정을 사용합니다.   
 
  자세한 연습을 보려면 [System Center Configuration Manager의 메일 액세스 관리](../../../protect/deploy-use/manage-email-access.md)를 참조하세요.  
 
@@ -158,7 +158,7 @@ System Center Configuration Manager 업데이트 1602는 버전 1511을 실행�
 - Microsoft Intune 구독을 구성하고 Configuration Manager 환경에 연결한 경우 소프트웨어 센터에서 Intune 구독 속성에 지정된 조직 이름, 색 및 회사 로고를 표시합니다.  
 
 ### <a name="health-attestation"></a>상태 증명  
- 관리자는 Configuration Manager 콘솔에서 Windows 10 장치 상태 증명의 상태를 볼 수 있습니다. 이 기능은 Configuration Manager와 Microsoft Intune에서의 Configuration Manager에 사용할 수 있습니다. 장치 상태 증명을 사용하여 관리자는 클라이언트 컴퓨터가 다음과 같이 신뢰할 수 있는 BIOS, TPM 및 부팅 소프트웨어 구성을 활성화했는지 확인할 수 있습니다.  
+ 관리자는 Configuration Manager 콘솔에서 Windows 10 디바이스 상태 증명의 상태를 볼 수 있습니다. 이 기능은 Configuration Manager와 Microsoft Intune에서의 Configuration Manager에 사용할 수 있습니다. 디바이스 상태 증명을 사용하여 관리자는 클라이언트 컴퓨터가 다음과 같이 신뢰할 수 있는 BIOS, TPM 및 부팅 소프트웨어 구성을 활성화했는지 확인할 수 있습니다.  
 
 -   맬웨어 방지 조기 실행  
 
@@ -185,24 +185,24 @@ System Center Configuration Manager 업데이트 1602는 버전 1511을 실행�
 
     -   고급: 사용자가 자동 샘플 파일 전송 설정을 수정하도록 허용  
 
-    또한 Endpoint Protection 맬웨어 방지 정책의 "제외 설정" 섹션에 포함된 기존의 **파일 및 폴더 제외** 설정이 이제 장치 제외를 허용합니다.  
+    또한 Endpoint Protection 맬웨어 방지 정책의 "제외 설정" 섹션에 포함된 기존의 **파일 및 폴더 제외** 설정이 이제 디바이스 제외를 허용합니다.  
 
 자세한 내용은 [System Center Configuration Manager에서 Endpoint Protection에 대한 맬웨어 방지 정책을 만들어 배포하는 방법](../../../protect/deploy-use/endpoint-antimalware-policies.md)을 참조하세요.  
 
-## <a name="mobile-device-management"></a>모바일 장치 관리  
+## <a name="mobile-device-management"></a>모바일 디바이스 관리  
 
 ### <a name="ios-activation-lock"></a>iOS 활성화 잠금  
- Configuration Manager를 사용하면 iOS 7.1 이상 장치용 나의 iPhone 찾기(Find My iPhone) 앱의 기능인 iOS 활성화 잠금을 관리할 수 있습니다. 활성화 잠금은 장치에서 나의 iPhone 찾기 앱을 사용할 때 자동으로 사용하도록 설정됩니다. 활성화 잠금이 설정되면 사용자의 Apple ID와 암호를 입력해야 다음 작업을 수행할 수 있습니다.  
+ Configuration Manager를 사용하면 iOS 7.1 이상 디바이스용 나의 iPhone 찾기(Find My iPhone) 앱의 기능인 iOS 활성화 잠금을 관리할 수 있습니다. 활성화 잠금은 디바이스에서 나의 iPhone 찾기 앱을 사용할 때 자동으로 사용하도록 설정됩니다. 활성화 잠금이 설정되면 사용자의 Apple ID와 암호를 입력해야 다음 작업을 수행할 수 있습니다.  
 
 -   나의 iPhone 찾기를 끕니다.  
 
--   장치의 콘텐츠를 지웁니다.  
+-   디바이스의 콘텐츠를 지웁니다.  
 
--   장치를 다시 활성화합니다.  
+-   디바이스를 다시 활성화합니다.  
 
-Configuration Manager에서는 iOS 7.1 이상을 실행하는 감독된/감독되지 않은 장치의 활성화 잠금 상태를 요청할 수 있습니다. 감독된 장치의 경우 Configuration Manager에서 활성화 잠금 무시 코드를 검색하여 장치에 직접 제공할 수 있습니다.  
+Configuration Manager에서는 iOS 7.1 이상을 실행하는 감독된/감독되지 않은 디바이스의 활성화 잠금 상태를 요청할 수 있습니다. 감독된 디바이스의 경우 Configuration Manager에서 활성화 잠금 무시 코드를 검색하여 디바이스에 직접 제공할 수 있습니다.  
 
- 자세한 내용은 [System Center Configuration Manager의 활성화 잠금 무시를 사용하여 iOS 장치 보호](/sccm/mdm/deploy-use/manage-ios-activation-lock)를 참조하세요.  
+ 자세한 내용은 [System Center Configuration Manager의 활성화 잠금 무시를 사용하여 iOS 디바이스 보호](/sccm/mdm/deploy-use/manage-ios-activation-lock)를 참조하세요.  
 
 ### <a name="monitor-terms-and-conditions-deployments"></a>사용 약관 배포 모니터링  
  Configuration Manager 콘솔에서 사용 약관 배포를 모니터링할 수 있습니다.  
