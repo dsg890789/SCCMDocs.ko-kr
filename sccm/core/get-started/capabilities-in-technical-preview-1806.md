@@ -162,7 +162,7 @@ SCUP는 다른 카탈로그 및 시나리오를 계속 지원합니다. Configur
 
 
 
-## <a name="sync-mdm-policy-from-microsoft-intune-for-a-co-managed-device"></a>Microsoft Intune에서 공동 관리하는 장치에 대한 MDM 정책 동기화
+## <a name="sync-mdm-policy-from-microsoft-intune-for-a-co-managed-device"></a>Microsoft Intune에서 공동 관리하는 디바이스에 대한 MDM 정책 동기화
 <!--1357377-->
 [공동 관리 워크로드를 전환](/sccm/core/clients/manage/co-management-switch-workloads)할 경우 이 릴리스부터 공동 관리되는 장치는 Microsoft Intune에서 자동으로 MDM 정책을 동기화합니다. 이 동기화는 Configuration Manager 콘솔의 클라이언트 알림에서 **컴퓨터 정책 다운로드** 작업 시작할 때 발생합니다. 자세한 내용은 [클라이언트 알림을 사용하여 클라이언트 정책 검색 시작](/sccm/core/clients/manage/manage-clients#initiate-client-policy-retrieval-using-client-notification)을 참조합니다.
 
@@ -170,7 +170,7 @@ SCUP는 다른 카탈로그 및 시나리오를 계속 지원합니다. Configur
 
 ## <a name="transition-office-365-workload-to-intune-using-co-management"></a>공동 관리를 사용하여 Office 365 워크로드를 Intune으로 전환
 <!--1357841-->
-이제 공동 관리를 사용하도록 설정한 후 Configuration Manager에서 Microsoft Intune으로 Office 365 워크로드를 전환할 수 있습니다. 이 워크로드를 전환하려면 공동 관리 속성 페이지로 이동하고 슬라이더 막대를 Configuration Manager에서 파일럿 또는 모두로 이동합니다. 자세한 내용은 [Windows 10 장치의 공동 관리](/sccm/core/clients/manage/co-management-overview)를 참조하세요.
+이제 공동 관리를 사용하도록 설정한 후 Configuration Manager에서 Microsoft Intune으로 Office 365 워크로드를 전환할 수 있습니다. 이 워크로드를 전환하려면 공동 관리 속성 페이지로 이동하고 슬라이더 막대를 Configuration Manager에서 파일럿 또는 모두로 이동합니다. 자세한 내용은 [Windows 10 디바이스의 공동 관리](/sccm/core/clients/manage/co-management-overview)를 참조하세요.
 
 **장치에서 Intune으로 Office 365 응용 프로그램 관리**라는 새 글로벌 조건이 있습니다. 이 조건은 기본적으로 새 Office 365 응용 프로그램에 대한 요구 사항으로 추가됩니다. 이 워크로드를 전환하는 경우 공동 관리되는 클라이언트는 응용 프로그램의 요구 사항을 충족하지 못하므로 Configuration Manager를 통해 배포된 Office 365를 설치하지 마십시오.
 
@@ -181,7 +181,7 @@ SCUP는 다른 카탈로그 및 시나리오를 계속 지원합니다. Configur
 
 ## <a name="package-conversion-manager"></a>Package Conversion Manager 
 <!--1357861-->
-Package Conversion Manager는 레거시 Configuration Manager 2007 패키지를 Configuration Manager 현재 분기 응용 프로그램으로 변환할 수 있는 통합 도구입니다. 이와 같은 변환을 수행한 후에는 종속성, 요구 사항 규칙, 사용자 장치 선호도 등의 응용 프로그램 기능을 사용할 수 있습니다.
+Package Conversion Manager는 레거시 Configuration Manager 2007 패키지를 Configuration Manager 현재 분기 응용 프로그램으로 변환할 수 있는 통합 도구입니다. 이와 같은 변환을 수행한 후에는 종속성, 요구 사항 규칙, 사용자 디바이스 선호도 등의 응용 프로그램 기능을 사용할 수 있습니다.
 
 > [!Tip]  
 > Package Conversion Manager의 기존 기능에 대한 레거시 설명서는 [TechNet](https://technet.microsoft.com/library/hh531519.aspx)에서 확인할 수 있습니다. 관련 정보는 docs.microsoft.com 라이브러리로 마이그레이션 중입니다.
@@ -211,7 +211,7 @@ Package Conversion Manager는 레거시 Configuration Manager 2007 패키지를 
 
 ## <a name="deploy-software-updates-without-content"></a>콘텐츠 없이 소프트웨어 업데이트 배포
 <!--1357933-->
-소프트웨어 업데이트 콘텐츠를 배포 지점에 처음 다운로드하여 배포하지 않고 장치에 소프트웨어 업데이트를 배포할 수 있습니다. 이 기능은 매우 큰 업데이트 콘텐츠를 처리할 때 또는 항상 클라이언트가 Microsoft 업데이트 클라우드 서비스에서 콘텐츠를 가져오려 할 때 유용합니다. 이 시나리오에서 클라이언트는 이미 필요한 콘텐츠가 있는 피어로부터 콘텐츠를 다운로드할 수 있습니다. Configuration Manager 클라이언트는 계속 콘텐츠 다운로드를 관리하므로 Configuration Manager 피어 캐시 기능 또는 배달 최적화 같은 다른 기술을 활용할 수 있습니다. 이 기능은 Windows 및 Office 업데이트를 포함하여 Configuration Manager 소프트웨어 업데이트 관리에서 지원하는 모든 업데이트 유형을 지원합니다. 
+소프트웨어 업데이트 콘텐츠를 배포 지점에 처음 다운로드하여 배포하지 않고 디바이스에 소프트웨어 업데이트를 배포할 수 있습니다. 이 기능은 매우 큰 업데이트 콘텐츠를 처리할 때 또는 항상 클라이언트가 Microsoft 업데이트 클라우드 서비스에서 콘텐츠를 가져오려 할 때 유용합니다. 이 시나리오에서 클라이언트는 이미 필요한 콘텐츠가 있는 피어로부터 콘텐츠를 다운로드할 수 있습니다. Configuration Manager 클라이언트는 계속 콘텐츠 다운로드를 관리하므로 Configuration Manager 피어 캐시 기능 또는 배달 최적화 같은 다른 기술을 활용할 수 있습니다. 이 기능은 Windows 및 Office 업데이트를 포함하여 Configuration Manager 소프트웨어 업데이트 관리에서 지원하는 모든 업데이트 유형을 지원합니다. 
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
  작업을 완료합니다. 그런 다음, [피드백](capabilities-in-technical-preview-1804.md#bkmk_feedback)을 전송하여 작업이 어떻게 진행되었는지 알려주세요.
@@ -305,12 +305,12 @@ CMG를 만들 경우 설정 페이지에서 [신뢰할 수 있는 루트 인증�
 
 
 
-## <a name="provision-windows-app-packages-for-all-users-on-a-device"></a>장치의 모든 사용자에 대해 Windows 앱 패키지 프로비전
+## <a name="provision-windows-app-packages-for-all-users-on-a-device"></a>디바이스의 모든 사용자에 대해 Windows 앱 패키지 프로비전
 <!--1358310-->
-이제 장치에서 모든 사용자에 대한 Windows 앱 패키지를 사용하여 응용 프로그램을 프로비전할 수 있습니다. 이 시나리오의 일반적인 한 예는 Minecraft 교육용 버전처럼 비즈니스 및 교육용 Microsoft Store에서 앱을 학교에서 학생들이 사용하는 모든 장치에 프로비전하는 것입니다. 전에 Configuration Manager는 사용자 당 이러한 응용 프로그램 설치만 지원했습니다. 새 장치에 로그인한 후 학생은 앱에 액세스하기를 기다려야 합니다. 앱이 모든 사용자용 장치에 프로비전되는 경우 더 신속하게 생산적이 될 수 있습니다.
+이제 디바이스에서 모든 사용자에 대한 Windows 앱 패키지를 사용하여 응용 프로그램을 프로비전할 수 있습니다. 이 시나리오의 일반적인 한 예는 Minecraft 교육용 버전처럼 비즈니스 및 교육용 Microsoft Store에서 앱을 학교에서 학생들이 사용하는 모든 디바이스에 프로비전하는 것입니다. 전에 Configuration Manager는 사용자 당 이러한 응용 프로그램 설치만 지원했습니다. 새 디바이스에 로그인한 후 학생은 앱에 액세스하기를 기다려야 합니다. 앱이 모든 사용자용 디바이스에 프로비전되는 경우 더 신속하게 생산적이 될 수 있습니다.
 
 > [!Important]  
-> 장치에 다른 버전의 동일한 Windows 앱 패키지의 설치, 프로비저닝 및 업데이트 시 예기치 않은 결과가 발생할 수 있으니 주의하십시오. 이 동작은 앱을 프로비전하기 위해 Configuration Manager를 사용하는 경우에 발생할 수 있지만 사용자는 Microsoft 스토어에서 앱을 업데이트할 수 있습니다. 자세한 내용은 [비즈니스용 Microsoft Store에서 앱 관리](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business#next-steps)할 때 다음 단계 지침을 참조하세요.  
+> 디바이스에 다른 버전의 동일한 Windows 앱 패키지의 설치, 프로비저닝 및 업데이트 시 예기치 않은 결과가 발생할 수 있으니 주의하십시오. 이 동작은 앱을 프로비전하기 위해 Configuration Manager를 사용하는 경우에 발생할 수 있지만 사용자는 Microsoft 스토어에서 앱을 업데이트할 수 있습니다. 자세한 내용은 [비즈니스용 Microsoft Store에서 앱 관리](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business#next-steps)할 때 다음 단계 지침을 참조하세요.  
 
 오프라인 라이선스 앱을 프로비전하면 Configuration Manager는 Windows가 Microsoft Store에서 자동으로 업데이트하도록 허용하지 않습니다.  
 
@@ -319,27 +319,27 @@ CMG를 만들 경우 설정 페이지에서 [신뢰할 수 있는 루트 인증�
 
 1. 새 응용 프로그램을 만듭니다. 이 앱은 비즈니스 및 교육용 Microsoft Store에서 동기화된 Windows 앱 패키지 또는 오프라인 라이선스 앱에서 온 것이어야 합니다.  
 
-2. 응용 프로그램 만들기 마법사의 **일반 정보** 페이지에서 **장치에서 모든 사용자에 대해 이 응용 프로그램을 프로비전**하는 옵션을 사용합니다.  
+2. 응용 프로그램 만들기 마법사의 **일반 정보** 페이지에서 **디바이스에서 모든 사용자에 대해 이 응용 프로그램을 프로비전**하는 옵션을 사용합니다.  
 
    > [!Tip]  
    > 기존 응용 프로그램을 수정하는 경우 이 설정은 응용 프로그램 속성의 **사용자 경험** 탭에 있습니다.  
 
-3. 장치 컬렉션에 응용 프로그램을 배포합니다.  
+3. 디바이스 컬렉션에 응용 프로그램을 배포합니다.  
 
-4. 다른 사용자 계정으로 대상 장치에 로그인하고 응용 프로그램을 시작합니다.  
+4. 다른 사용자 계정으로 대상 디바이스에 로그인하고 응용 프로그램을 시작합니다.  
 
 > [!Note]  
-> 사용자가 이미 로그인한 장치에서 프로비전된 응용 프로그램을 제거해야 할 경우 두 개의 제거 배포를 만들어야 합니다. 첫 번째 제거 배포를 장치를 포함하는 장치 컬렉션의 대상으로 지정합니다. 두 번째 제거 배포를 프로비전된 응용 프로그램을 사용하여 장치에 이미 로그인한 사용자를 포함하는 사용자 컬렉션의 대상으로 지정합니다. 장치에서 프로비전된 앱을 제거하는 경우 Windows는 현재 사용자를 위해 해당 앱을 제거하지 않습니다. 
+> 사용자가 이미 로그인한 디바이스에서 프로비전된 응용 프로그램을 제거해야 할 경우 두 개의 제거 배포를 만들어야 합니다. 첫 번째 제거 배포를 디바이스를 포함하는 디바이스 컬렉션의 대상으로 지정합니다. 두 번째 제거 배포를 프로비전된 응용 프로그램을 사용하여 디바이스에 이미 로그인한 사용자를 포함하는 사용자 컬렉션의 대상으로 지정합니다. 디바이스에서 프로비전된 앱을 제거하는 경우 Windows는 현재 사용자를 위해 해당 앱을 제거하지 않습니다. 
 
 
 
 ## <a name="improvements-to-the-surface-dashboard"></a>Surface 대시보드에 대한 개선 사항
 <!--1358654-->
 이 릴리스에 포함된 [Surface 대시보드](/sccm/core/clients/manage/surface-device-dashboard)에 대한 향상된 기능은 다음과 같습니다.
-- 그래프 섹션을 선택하면 이제 Surface 대시보드에 관련 장치 목록이 표시됩니다.
+- 그래프 섹션을 선택하면 이제 Surface 대시보드에 관련 디바이스 목록이 표시됩니다.
    - **Surface 장치 비율** 타일을 클릭하면 Surface 장치 목록이 열립니다.
    - **상위 5개 펌웨어 버전** 타일에서 막대를 클릭하면 해당 특정 펌웨어 버전으로 Surface 장치 목록이 열립니다.
-- Surface 대시보드에서 이러한 장치 목록을 볼 때 장치를 마우스 오른쪽 단추로 클릭하고 일반 작업을 수행할 수 있습니다.
+- Surface 대시보드에서 이러한 디바이스 목록을 볼 때 디바이스를 마우스 오른쪽 단추로 클릭하고 일반 작업을 수행할 수 있습니다.
 
 
 

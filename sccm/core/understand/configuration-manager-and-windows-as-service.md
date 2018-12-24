@@ -45,7 +45,7 @@ System Center Configuration Manager는 Windows 10의 기능 업데이트를 포�
 |[작업 순서를 통한 Windows 10 업그레이드](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)|추가 권장 사항으로 Windows 10을 업그레이드하기 위한 작업 순서 만드는 세부 정보입니다.|
 |[단계별 배포](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence)|단계적 배포는 여러 컬렉션에서 작업 순서가 조정된 순차적 출시를 자동화합니다.|  
 |[Windows 10 업데이트 전송 최적화](/sccm/sum/deploy-use/optimize-windows-10-update-delivery)|Configuration Manager로 업데이트 콘텐츠를 관리하여 Windows 10으로 최신 상태를 유지합니다.|
-|[업그레이드 준비와 통합](/sccm/core/clients/manage/upgrade/upgrade-analytics)|업그레이드 준비는 Windows 10으로 업그레이드하기 위해 사용자 환경에서 장치의 준비 상태를 평가하고 분석할 수 있습니다.| 
+|[업그레이드 준비와 통합](/sccm/core/clients/manage/upgrade/upgrade-analytics)|업그레이드 준비는 Windows 10으로 업그레이드하기 위해 사용자 환경에서 디바이스의 준비 상태를 평가하고 분석할 수 있습니다.| 
 |[Windows Update for Business 통합(선택 사항)](/sccm/sum/deploy-use/integrate-windows-update-for-business-windows-10)|Configuration Manager를 사용하여 WUfB(Windows Update for Business) 정책을 정의하고 배포하는 방법을 설명합니다.|
 |[Microsoft Intune 및 Windows Update for Business와 공동 관리 사용(선택 사항)](/sccm/core/clients/manage/co-management-overview)|공동 관리의 개요를 제공합니다.| 
 

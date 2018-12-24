@@ -40,7 +40,7 @@ ms.locfileid: "49461293"
 
     |개체 형식|설명|  
     |-----------------|-----------------|  
-    |**시스템 리소스**|장치의 NetBIOS 이름, 클라이언트 버전, 클라이언트 IP 주소 및 Active Directory Domain Services 정보와 같은 일반적인 시스템 특성을 검색하려면 사용합니다.|  
+    |**시스템 리소스**|디바이스의 NetBIOS 이름, 클라이언트 버전, 클라이언트 IP 주소 및 Active Directory 도메인 서비스 정보와 같은 일반적인 시스템 특성을 검색하려면 사용합니다.|  
     |**사용자 리소스**|사용자 이름, 사용자 그룹 이름 및 보안 그룹 이름과 같은 일반적인 사용자 정보를 검색하려면 사용합니다.|  
     |**배포**|배포 이름, 일정 및 배포된 컬렉션과 같은 배포의 일반적인 특성을 검색하려면 사용합니다.|  
 
@@ -58,7 +58,7 @@ ms.locfileid: "49461293"
 8.  *&lt;쿼리 이름\>* **문 속성** 대화 상자의 **조건** 탭에서 쿼리의 결과를 구체화하는 데 사용되는 조건을 지정합니다. 예를 들어 쿼리 결과에 **XYZ** 사이트 코드를 갖는 리소스만 반환할 수 있습니다. 쿼리에 대한 여러 조건을 구성할 수 있습니다.  
 
     > [!IMPORTANT]  
-    > 조건 없는 쿼리를 만들면 쿼리가 **모든 시스템** 컬렉션의 모든 장치를 반환합니다.  
+    > 조건 없는 쿼리를 만들면 쿼리가 **모든 시스템** 컬렉션의 모든 디바이스를 반환합니다.  
 
 9. *&lt;쿼리 이름\>* **문 속성** 대화 상자의 **조인** 탭에서 두 개의 서로 다른 특성의 데이터를 쿼리 결과에 결합할 수 있습니다. 쿼리 결과에 대해 서로 다른 특성을 선택하면 Configuration Manager가 자동으로 쿼리 조인을 만들지만 **조인** 탭에서 고급 옵션을 제공합니다. System Center 2012 Configuration Manager가 지원하는 특성 클래스가 다음 표에 나와 있습니다.  
 
@@ -149,7 +149,7 @@ SMS_R_System where SMS_R_System.NetbiosName like "ABC%"
 
 ###  <a name="BKMK_DeviceType"></a> 특정 유형의 장치
 
-장치 유형은 리소스 클래스 **sms_r_system** 및 특성 이름 **AgentEdition**의 Configuration Manager 데이터베이스에 저장됩니다. 지정하는 장치 유형의 에이전트 버전과 일치하는 장치만 검색하려면 다음 쿼리를 사용합니다.  
+디바이스 유형은 리소스 클래스 **sms_r_system** 및 특성 이름 **AgentEdition**의 Configuration Manager 데이터베이스에 저장됩니다. 지정하는 디바이스 유형의 에이전트 버전과 일치하는 디바이스만 검색하려면 다음 쿼리를 사용합니다.  
 
 ```  
 Select SMS_R_System.ClientEdition from SMS_R_System where SMS_R_System.ClientEdition = <Device ID>  
@@ -157,10 +157,10 @@ Select SMS_R_System.ClientEdition from SMS_R_System where SMS_R_System.ClientEdi
 
 *&lt;장치 ID\>* 에 대해 다음 값 중 하나를 사용합니다.  
 
-|장치 유형|AgentEdition의 값|  
+|디바이스 유형|AgentEdition의 값|  
 |-----------------|---------------------------|  
 |Windows 데스크톱 또는 랩톱 컴퓨터|0|  
-|Windows ARM 기반 장치(Windows RT 실행)|1|  
+|Windows ARM 기반 디바이스(Windows RT 실행)|1|  
 |Windows Mobile 6.5|2|  
 |Nokia Symbian|3|  
 |Windows Phone|4|  

@@ -21,7 +21,7 @@ ms.locfileid: "34752593"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-이 문서에서는 Android 및 iOS 장치용 Lookout for Work 앱을 구성하고 배포하는 방법을 설명합니다.
+이 문서에서는 Android 및 iOS 디바이스에서 Lookout for Work 앱을 구성하고 배포하는 방법을 설명합니다.
 
 
 
@@ -33,7 +33,7 @@ ms.locfileid: "34752593"
     - 위치: Google Play 스토어에서 Lookout for Work 앱 링크를 복사하여 여기에 붙여넣습니다.
     - 게시자: Lookout Mobile Security
     - 이름: Lookout for Work
-    - 설명: Lookout에서는 장치를 안전하게 유지하도록 모바일 위협에 대한 최상의 보호를 제공합니다. Lookout 앱이 설치되면 앱이 위협으로부터 장치를 보호합니다. 위협이 발견되면 사용자와 IT 관리자에게 경고합니다.
+    - 설명: Lookout에서는 디바이스를 안전하게 유지하도록 모바일 위협에 대한 최상의 보호를 제공합니다. Lookout 앱이 설치되면 앱이 위협으로부터 디바이스를 보호합니다. 위협이 발견되면 사용자와 IT 관리자에게 경고합니다.
     - 관리 범주: 컴퓨터 관리  
 
     성공적으로 완료되면 응용 프로그램 목록에 Lookout for Work 앱이 표시됩니다.  
@@ -42,13 +42,13 @@ ms.locfileid: "34752593"
     >[!IMPORTANT]  
     >Lookout MTP 콘솔의 등록 관리 옵션에 추가된 사용자와 동일한 사용자를 선택해야 합니다.  
 
-    **필수 설치** 옵션을 선택하세요. 이 옵션을 사용하려면 사용자의 장치에 Lookout 앱을 설치해야 합니다.  
+    **필수 설치** 옵션을 선택하세요. 이 옵션을 사용하려면 사용자의 디바이스에 Lookout 앱을 설치해야 합니다.  
 
 
 
 ## <a name="ios-enterprise-signed-version-of-lookout-app"></a>iOS(Lookout 앱의 엔터프라이즈 서명 버전)
 
-1. iOS 관리가 장치에 설정되어 있는지 확인합니다. iOS 관리를 위해 장치를 설정하는 방법에 대한 지침은 [iOS 및 Mac 장치 관리 설정](/sccm/mdm/deploy-use/enroll-hybrid-ios-mac)을 참조하세요.  
+1. iOS 관리가 디바이스에 설정되어 있는지 확인합니다. iOS 관리용으로 디바이스를 설정하는 방법에 대한 자세한 내용은 [iOS 및 Mac 디바이스 관리 설정](/sccm/mdm/deploy-use/enroll-hybrid-ios-mac)을 참조하세요.  
 
 2. Lookout for Work iOS 앱을 다시 서명합니다. Lookout은 iOS App Store 외부에 Lookout for Work iOS 앱을 배포합니다. 앱을 배포하기 전에 iOS 엔터프라이즈 개발자 인증서를 사용하여 앱에 다시 서명해야 합니다. Lookout for Work iOS 앱에 다시 서명하는 방법에 대한 자세한 지침은 Lookout 사이트에서 [Lookout for Work iOS 앱 다시 서명 프로세스](https://personal.support.lookout.com/hc/articles/114094038714)를 참조하세요.  
 
@@ -78,13 +78,13 @@ ms.locfileid: "34752593"
 
 6. Lookout for Work 앱 구성을 사용자에게 배포합니다. 자세한 내용은 [응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications)를 참조하세요.  
 
-  Lookout 콘솔의 등록 관리 옵션에 추가된 사용자와 동일한 사용자를 선택합니다. **필수 설치** 옵션을 선택하세요. 이 옵션을 사용하려면 사용자의 장치에 Lookout 앱을 설치해야 합니다.
+  Lookout 콘솔의 등록 관리 옵션에 추가된 사용자와 동일한 사용자를 선택합니다. **필수 설치** 옵션을 선택하세요. 이 옵션을 사용하려면 사용자의 디바이스에 Lookout 앱을 설치해야 합니다.
 
 
 
-## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>장치에서 배포된 앱을 열 때 수행되는 작업
+## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>디바이스에서 배포된 앱을 열 때 수행되는 작업
 
-사용자가 장치에서 Lookout for Work를 열 때 앱을 활성화하라는 메시지가 표시됩니다. Azure AD 옵션을 사용하여 로그인하도록 선택해야 합니다. 최종 사용자 흐름을 사용하는 자세한 연습은 다음 아티클에 나와 있습니다.
+사용자가 디바이스에서 Lookout for Work를 열 때 앱을 활성화하라는 메시지가 표시됩니다. Azure AD 옵션을 사용하여 로그인하도록 선택해야 합니다. 최종 사용자 흐름을 사용하는 자세한 연습은 다음 아티클에 나와 있습니다.
 
 - [Android 장치에 Lookout for Work를 설치하라는 메시지가 표시됨](/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
 

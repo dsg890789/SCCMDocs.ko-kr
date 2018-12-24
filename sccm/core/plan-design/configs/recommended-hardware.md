@@ -122,7 +122,7 @@ ms.locfileid: "34474329"
     이러한 클라이언트 설치 설정에 대한 자세한 내용은 [클라이언트 설치 속성 정보](../../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  
 
     > [!TIP]  
-    >  일반적으로 표준 Windows 컴퓨터에 비해 디스크 크기가 작은 Windows Embedded 장치에서는 최소 디스크 공간을 사용하여 클라이언트를 설치하면 유용합니다.  
+    >  일반적으로 표준 Windows 컴퓨터에 비해 디스크 크기가 작은 Windows Embedded 디바이스에서는 최소 디스크 공간을 사용하여 클라이언트를 설치하면 유용합니다.  
 
 
 
