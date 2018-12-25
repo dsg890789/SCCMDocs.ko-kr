@@ -1,7 +1,7 @@
 ---
 title: 경계 정의
 titleSuffix: Configuration Manager
-description: 관리할 장치를 포함할 수 있는 인트라넷의 네트워크 위치를 정의하는 방법을 이해합니다.
+description: 관리할 디바이스를 포함할 수 있는 인트라넷의 네트워크 위치를 정의하는 방법을 이해합니다.
 ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -21,11 +21,11 @@ ms.locfileid: "39401164"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Configuration Manager 경계는 관리할 장치가 포함된 네트워크의 위치입니다. 장치가 있는 경계는 장치에 설치된 Configuration Manager 클라이언트가 식별하는 네트워크 IP 주소 또는 Active Directory 사이트와 같습니다.
+Configuration Manager 경계는 관리할 디바이스가 포함된 네트워크의 위치입니다. 디바이스가 있는 경계는 디바이스에 설치된 Configuration Manager 클라이언트가 식별하는 네트워크 IP 주소 또는 Active Directory 사이트와 같습니다.
  - 개별 경계를 수동으로 만들 수 있습니다. 하지만 Configuration Manager에서는 슈퍼넷을 경계로 직접 입력할 수 없습니다. 대신, IP 주소 범위 경계 유형을 사용합니다.
  - [Active Directory 포리스트 검색](../../../../core/servers/deploy/configure/about-discovery-methods.md#bkmk_aboutForest) 방법에서 검색하는 각 IP 서브넷 및 Active Directory 사이트에 대해 경계를 자동으로 검색하고 만들도록 구성할 수 있습니다. Active Directory 포리스트 검색에서 Active Directory 사이트에 할당된 슈퍼넷을 식별할 때 Configuration Manager가 슈퍼넷을 IP 주소 범위 경계로 변환합니다.  
 
-Configuration Manager 관리자가 알지 못하는 IP 주소를 사용하는 장치도 드물지 않습니다. 장치의 네트워크 위치가 확실하지 않으면 장치에서 **IPCONFIG** 명령을 사용하여 장치가 위치로 보고하는 항목을 확인합니다.  
+Configuration Manager 관리자가 알지 못하는 IP 주소를 사용하는 디바이스도 드물지 않습니다. 디바이스의 네트워크 위치가 확실하지 않으면 디바이스에서 **IPCONFIG** 명령을 사용하여 디바이스가 위치로 보고하는 항목을 확인합니다.  
 
 작성하는 경계는 경계 범위와 유형을 기준으로 하는 이름을 자동으로 수신합니다. 이 이름은 수정할 수 없습니다. 대신에 Configuration Manager 콘솔에서 경계를 식별하는 데 도움이 되는 설명을 지정할 수 있습니다.  
 
@@ -38,7 +38,7 @@ Configuration Manager 관리자가 알지 못하는 IP 주소를 사용하는 �
 
 1.  Configuration Manager 콘솔에서 **관리** > **계층 구조 구성** > **경계**를 클릭합니다.  
 
-2.  **홈** 탭의 **만들기** 그룹에서 **만들기 Boundary.** 를 클릭합니다.  
+2.   **홈** 탭의 **만들기** 그룹에서 **만들기 Boundary.** 를 클릭합니다.  
 
 3.  경계 만들기 대화 상자의 **일반** 탭에서 이름 또는 참조로 경계를 식별할 수 있도록 **설명** 을 지정할 수 있습니다.  
 

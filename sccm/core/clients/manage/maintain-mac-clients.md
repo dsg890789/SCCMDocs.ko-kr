@@ -73,7 +73,7 @@ Mac 클라이언트 제거하고 해당 인증서를 갱신하는 절차는 다�
 
  이 절차는 동일한 Mac 컴퓨터에 대한 새 인증서를 요청하는 데 필요한 SMSID를 제거합니다. SMSID를 제거하고 대체할 경우 Configuration Manager 콘솔에서 클라이언트를 삭제한 후에 인벤토리와 같은 저장된 클라이언트 기록이 삭제됩니다.  
 
-1.  사용자 인증서를 갱신해야 하는 Mac 컴퓨터에 대한 장치 컬렉션을 만들고 채웁니다.  
+1.  사용자 인증서를 갱신해야 하는 Mac 컴퓨터에 대한 디바이스 컬렉션을 만들고 채웁니다.  
 
     > [!WARNING]  
     >  Configuration Manager에서는 Mac 컴퓨터에 등록되는 인증서의 유효 기간을 모니터링하지 않습니다. 이 컬렉션을 추가할 Mac 컴퓨터를 식별하려면 Configuration Manager에서 별도로 이를 모니터링해야 합니다.  
@@ -128,7 +128,7 @@ Mac 클라이언트 제거하고 해당 인증서를 갱신하는 절차는 다�
 
 13. 구성 항목 만들기 마법사를 완료합니다.  
 
-14. 방금 만든 구성 항목을 포함하는 구성 기준을 만들고 이를 1단계에서 만든 장치 컬렉션에 배포합니다.  
+14. 방금 만든 구성 항목을 포함하는 구성 기준을 만들고 이를 1단계에서 만든 디바이스 컬렉션에 배포합니다.  
 
      구성 기준을 만들고 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 구성 기준을 만드는 방법](../../../compliance/deploy-use/create-configuration-baselines.md) 및 [System Center Configuration Manager에서 구성 기준을 배포하는 방법](../../../compliance/deploy-use/deploy-configuration-baselines.md)을 참조하세요.  
 
@@ -142,7 +142,7 @@ Mac 클라이언트 제거하고 해당 인증서를 갱신하는 절차는 다�
 
 16. 등록된 인증서를 Configuration Manager로 제한하려면 Mac 컴퓨터에서 터미널 창을 열고 다음과 같이 변경합니다.  
 
-    a.  **sudo /Applications/Utilities/Keychain\ Access.app/Contents/MacOS/Keychain\ Access**명령을 입력합니다.  
+    a.   **sudo /Applications/Utilities/Keychain\ Access.app/Contents/MacOS/Keychain\ Access**명령을 입력합니다.  
 
     b.  **Keychain Access**(키 집합 접근) 대화 상자의 **Keychains**(키 집합) 섹션에서 **System**(시스템)을 선택한 다음 **Category**(범주) 섹션에서 **Keys**(키)를 선택합니다.  
 
