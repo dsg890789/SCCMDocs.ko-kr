@@ -21,6 +21,6 @@ ms.locfileid: "32345746"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Configuration Manager에서 온-프레미스 MDM(모바일 디바이스 관리)을 통해 디바이스를 관리하는 경우 추가 응용 프로그램 유형을 관리할 수 있습니다. 온-프레미스 MDM에서 응용 프로그램을 관리하는 것은 하이브리드 MDM 환경에서 앱을 관리하는 것과 같습니다.
+Configuration Manager에서 온-프레미스 MDM(모바일 디바이스 관리)을 통해 디바이스를 관리하는 경우 추가 응용 프로그램 유형을 관리할 수 있습니다. 온-프레미스 MDM에서 애플리케이션을 관리하는 것은 하이브리드 MDM 환경에서 앱을 관리하는 것과 같습니다.
 
 [모바일 응용 프로그램 관리](management-tasks-applications.md)에서는 하이브리드 MDM 또는 온-프레미스 MDM을 사용하여 응용 프로그램을 만들고 관리하는 방법에 대한 자세한 정보를 제공합니다.

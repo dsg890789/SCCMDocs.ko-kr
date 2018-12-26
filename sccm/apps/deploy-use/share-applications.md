@@ -1,7 +1,7 @@
 ---
-title: 소프트웨어 센터에서 응용 프로그램 공유
+title: 소프트웨어 센터에서 애플리케이션 공유
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager의 소프트웨어 센터에서 응용 프로그램에 대한 링크를 공유합니다.
+description: System Center Configuration Manager의 소프트웨어 센터에서 애플리케이션에 대한 링크를 공유합니다.
 ms.date: 07/31/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-app
@@ -17,16 +17,16 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/09/2018
 ms.locfileid: "51505162"
 ---
-# <a name="share-an-application-from-software-center"></a>소프트웨어 센터에서 응용 프로그램 공유
+# <a name="share-an-application-from-software-center"></a>소프트웨어 센터에서 애플리케이션 공유
 
 *적용 대상: System Center Configuration Manager(현재 분기)* <!-- 1706 -->
 
-응용 프로그램 세부 정보 보기의 ![공유](media/share15.png)**공유** 단추를 사용하여 소프트웨어 센터에서 응용 프로그램으로 하이퍼링크를 복사할 수 있습니다. 응용 프로그램에 대한 하이퍼링크만 공유할 수 있습니다. 응용 프로그램을 사용할 수 없게 되면 하이퍼링크는 응용 프로그램 사용할 수 없음 메시지를 표시하는 창을 엽니다.
+응용 프로그램 세부 정보 보기의 ![공유](media/share15.png)**공유** 단추를 사용하여 소프트웨어 센터에서 응용 프로그램으로 하이퍼링크를 복사할 수 있습니다. 애플리케이션에 대한 하이퍼링크만 공유할 수 있습니다. 애플리케이션을 사용할 수 없게 되면 하이퍼링크는 애플리케이션 사용할 수 없음 메시지를 표시하는 창을 엽니다.
 
 1. **응용 프로그램**을 선택하고 해당 응용 프로그램을 선택합니다.
 2. ![공유](media/share15.png) **공유** 단추를 클릭합니다.
 3. 창에서 **복사**를 클릭합니다.
-4. 해당 URL을 전자 메일로 복사하여 응용 프로그램을 공유합니다.  
+4. 해당 URL을 전자 메일로 복사하여 애플리케이션을 공유합니다.  
 
 > [!TIP]  
 >  Outlook 이메일에 링크를 만들려면 **CTRL** + **K**를 누른 다음, URL을 붙여넣습니다.  

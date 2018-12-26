@@ -157,7 +157,7 @@ Configuration Manager는 다양한 위치에 로그 파일을 저장합니다. �
 |CCMSDKProvider.log|클라이언트 SDK 인터페이스에 대한 활동을 기록합니다.|  
 |CertificateMaintenance.log|Active Directory 도메인 서비스 및 관리 지점의 인증서를 유지 관리합니다.|  
 |CIDownloader.log|구성 항목 정의 다운로드에 대한 세부 정보를 기록합니다.|  
-|CITaskMgr.log|각 응용 프로그램 및 배포 유형(예: 콘텐츠 다운로드, 설치 또는 제거 작업)에 대해 시작된 작업을 기록합니다.|  
+|CITaskMgr.log|각 애플리케이션 및 배포 유형(예: 콘텐츠 다운로드, 설치 또는 제거 작업)에 대해 시작된 작업을 기록합니다.|  
 |ClientAuth.log|클라이언트의 서명 및 인증 활동을 기록합니다.|  
 |ClientIDManagerStartup.log|클라이언트 GUID를 만들고 유지 관리하며 클라이언트 등록 및 할당 중에 수행된 작업을 식별합니다.|  
 |ClientLocation.log|클라이언트 사이트 할당과 관련된 작업을 기록합니다.|  
@@ -194,7 +194,7 @@ Configuration Manager는 다양한 위치에 로그 파일을 저장합니다. �
 |setuppolicyevaluator.log|WMI의 구성 및 인벤토리 정책 작성을 기록합니다.|  
 |SleepAgent_&lt;*도메인*\>@SYSTEM_0.log|절전 모드 해제 프록시에 대한 기본 로그 파일입니다.|  
 |smscliui.log|제어판에서 Configuration Manager 클라이언트의 사용을 기록합니다.|  
-|SrcUpdateMgr.log|설치된 후 현재 배포 지점 원본 위치로 업데이트된 Windows Installer 응용 프로그램의 활동을 기록합니다.|  
+|SrcUpdateMgr.log|설치된 후 현재 배포 지점 원본 위치로 업데이트된 Windows Installer 애플리케이션의 활동을 기록합니다.|  
 |StatusAgent.log|클라이언트 구성 요소에서 만든 상태 메시지를 기록합니다.|  
 |SWMTRReportGen.log|계량 에이전트에서 수집한 사용 데이터 보고서를 생성합니다. 이 데이터는 Mtrmgr.log에 기록됩니다.|  
 |UserAffinity.log|사용자 디바이스 선호도에 대한 세부 정보를 기록합니다.|  
@@ -264,7 +264,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 
 |로그 이름|세부 정보|  
 |--------------|-------------|  
-|CCMClient-&lt;*날짜_시간*>.log|응용 프로그램 관리, 인벤토리, 오류 로그 등 Mac 클라이언트 작업과 관련된 활동을 기록합니다.<br /><br /> 이 로그 파일은 Mac 컴퓨터의 /Library/Application Support/Microsoft/CCM/Logs 폴더에 있습니다.|  
+|CCMClient-&lt;*날짜_시간*>.log|애플리케이션 관리, 인벤토리, 오류 로그 등 Mac 클라이언트 작업과 관련된 활동을 기록합니다.<br /><br /> 이 로그 파일은 Mac 컴퓨터의 /Library/Application Support/Microsoft/CCM/Logs 폴더에 있습니다.|  
 |CCMAgent-&lt;*날짜_시간*>.log|사용자 로그온/로그오프 작업 및 Mac 컴퓨터 작업을 포함하여 클라이언트 작업과 관련된 정보를 기록합니다.<br /><br /> 이 로그 파일은 Mac 컴퓨터의 ~/Library/Logs 폴더에 있습니다.|  
 |CCMNotifications-&lt;*날짜_시간*>.log|Mac 컴퓨터에 표시된 Configuration Manager 알림과 관련된 작업을 기록합니다.<br /><br /> 이 로그 파일은 Mac 컴퓨터의 ~/Library/Logs 폴더에 있습니다.|  
 |CCMPrefPane-&lt;*날짜_시간*>.log|일반 상태 및 오류 로그를 포함하여 Mac 컴퓨터의 Configuration Manager 기본 설정 대화 상자와 관련된 작업을 기록합니다.<br /><br /> 이 로그 파일은 Mac 컴퓨터의 ~/Library/Logs 폴더에 있습니다.|  
@@ -337,14 +337,14 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |SMS_ISVUPDATES_SYNCAGENT.log| Configuration Manager 버전 1806부터 시작되는 타사 소프트웨어 동기화에 대한 로그 파일입니다.| Configuration Manager 계층 구조의 최상위 수준 소프트웨어 업데이트 지점입니다.|
 |SMS_PhasedDeployment.log| 단계적 배포에 대한 로그 파일|Configuration Manager 계층 구조의 최상위 사이트|   
 |SmsAdminUI.log|Configuration Manager 콘솔 작업을 기록합니다.|Configuration Manager 콘솔을 실행하는 컴퓨터|  
-|SMSAWEBSVCSetup.log|응용 프로그램 카탈로그 웹 서비스의 설치 작업을 기록합니다.|사이트 시스템 서버|  
+|SMSAWEBSVCSetup.log|애플리케이션 카탈로그 웹 서비스의 설치 작업을 기록합니다.|사이트 시스템 서버|  
 |smsbkup.log|사이트 백업 프로세스의 출력을 기록합니다.|사이트 서버|  
 |smsdbmon.log|데이터베이스 변경 내용을 기록합니다.|사이트 서버|  
 |SMSENROLLSRVSetup.log|등록 웹 서비스의 설치 작업을 기록합니다.|사이트 시스템 서버|  
 |SMSENROLLWEBSetup.log|등록 웹 사이트의 설치 작업을 기록합니다.|사이트 시스템 서버|  
 |smsexec.log|모든 사이트 서버 구성 요소 스레드의 처리 작업을 기록합니다.|사이트 서버 또는 사이트 시스템 서버|  
 |SMSFSPSetup.log|대체 상태 지점 설치 시 생성된 메시지를 기록합니다.|사이트 시스템 서버|  
-|SMSPORTALWEBSetup.log|응용 프로그램 카탈로그 웹 사이트의 설치 작업을 기록합니다.|사이트 시스템 서버|  
+|SMSPORTALWEBSetup.log|애플리케이션 카탈로그 웹 사이트의 설치 작업을 기록합니다.|사이트 시스템 서버|  
 |SMSProv.log|사이트 데이터베이스에 대한 WMI 공급자 액세스를 기록합니다.|SMS 공급자가 설치된 컴퓨터|  
 |srsrpMSI.log|보고 지점 설치 프로세스의 세부적인 MSI 출력 결과를 기록합니다.|사이트 시스템 서버|  
 |srsrpsetup.log|보고 지점 설치 프로세스의 결과를 기록합니다.|사이트 시스템 서버|  
@@ -425,26 +425,26 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
  다음 섹션에는 Configuration Manager 기능과 관련된 로그 파일이 나와 있습니다.  
 
 ###  <a name="BKMK_AppManageLog"></a> 응용 프로그램 관리  
- 다음 표에는 응용 프로그램 관리와 관련된 정보가 포함된 로그 파일이 나와 있습니다.  
+ 다음 표에는 애플리케이션 관리와 관련된 정보가 포함된 로그 파일이 나와 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
 |--------------|-----------------|----------------------------|  
-|AppIntentEval.log|응용 프로그램의 현재 및 의도 상태, 응용 프로그램의 적용 가능성, 요구 사항 충족 여부, 배포 유형 및 종속성에 대한 세부 정보를 기록합니다.|클라이언트|  
-|AppDiscovery.log|클라이언트 컴퓨터의 응용 프로그램 검색에 대한 세부 정보를 기록합니다.|클라이언트|  
-|AppEnforce.log|클라이언트의 응용 프로그램에서 수행한 적용 작업(설치 및 제거)에 대한 세부 정보를 기록합니다.|클라이언트|  
-|awebsctl.log|응용 프로그램 카탈로그 웹 서비스 지점 사이트 시스템 역할에 대한 모니터링 활동을 기록합니다.|사이트 시스템 서버|  
-|awebsvcMSI.log|응용 프로그램 카탈로그 웹 서비스 지점 사이트 시스템 역할에 대한 자세한 설치 정보를 기록합니다.|사이트 시스템 서버|  
-|CCMSDKProvider.log|응용 프로그램 관리 SDK의 활동을 기록합니다.|클라이언트|  
+|AppIntentEval.log|애플리케이션의 현재 및 의도 상태, 애플리케이션의 적용 가능성, 요구 사항 충족 여부, 배포 유형 및 종속성에 대한 세부 정보를 기록합니다.|클라이언트|  
+|AppDiscovery.log|클라이언트 컴퓨터의 애플리케이션 검색에 대한 세부 정보를 기록합니다.|클라이언트|  
+|AppEnforce.log|클라이언트의 애플리케이션에서 수행한 적용 작업(설치 및 제거)에 대한 세부 정보를 기록합니다.|클라이언트|  
+|awebsctl.log|애플리케이션 카탈로그 웹 서비스 지점 사이트 시스템 역할에 대한 모니터링 활동을 기록합니다.|사이트 시스템 서버|  
+|awebsvcMSI.log|애플리케이션 카탈로그 웹 서비스 지점 사이트 시스템 역할에 대한 자세한 설치 정보를 기록합니다.|사이트 시스템 서버|  
+|CCMSDKProvider.log|애플리케이션 관리 SDK의 활동을 기록합니다.|클라이언트|  
 |colleval.log|컬렉션 평가기에서 컬렉션을 만들고 변경하고 삭제한 경우 관련 세부 정보를 기록합니다.|사이트 시스템 서버|  
-|ConfigMgrSoftwareCatalog.log|Silverlight 사용을 포함한 응용 프로그램 카탈로그의 활동을 기록합니다.|클라이언트|  
+|ConfigMgrSoftwareCatalog.log|Silverlight 사용을 포함한 애플리케이션 카탈로그의 활동을 기록합니다.|클라이언트|  
 |NotiCtrl.log|애플리케이션 요청 알림입니다.|사이트 서버|  
-|portlctl.log|응용 프로그램 카탈로그 웹 사이트 지점 사이트 시스템 역할에 대한 모니터링 활동을 기록합니다.|사이트 시스템 서버|  
-|portlwebMSI.log|응용 프로그램 카탈로그 웹 사이트 역할에 대한 MSI 설치 활동을 기록합니다.|사이트 시스템 서버|  
+|portlctl.log|애플리케이션 카탈로그 웹 사이트 지점 사이트 시스템 역할에 대한 모니터링 활동을 기록합니다.|사이트 시스템 서버|  
+|portlwebMSI.log|애플리케이션 카탈로그 웹 사이트 역할에 대한 MSI 설치 활동을 기록합니다.|사이트 시스템 서버|  
 |PrestageContent.log|사전 준비된 원격 배포 지점에서 ExtractContent.exe 도구를 사용하는 방법에 대한 세부 정보를 기록합니다. 이 도구는 파일로 내보낸 콘텐츠를 추출합니다.|사이트 시스템 서버|  
-|ServicePortalWebService.log|응용 프로그램 카탈로그 웹 서비스의 활동을 기록합니다.|사이트 시스템 서버|  
-|ServicePortalWebSite.log|응용 프로그램 카탈로그 웹 사이트의 활동을 기록합니다.|사이트 시스템 서버|  
+|ServicePortalWebService.log|애플리케이션 카탈로그 웹 서비스의 활동을 기록합니다.|사이트 시스템 서버|  
+|ServicePortalWebSite.log|애플리케이션 카탈로그 웹 사이트의 활동을 기록합니다.|사이트 시스템 서버|  
 |SMSdpmon.log|배포 지점에 구성된 배포 지점 상태 모니터링 예약 작업에 대한 세부 정보를 기록합니다.|사이트 서버|  
-|SoftwareCatalogUpdateEndpoint.log|소프트웨어 센터에 표시된 응용 프로그램 카탈로그의 URL을 관리하는 활동을 기록합니다.|클라이언트|  
+|SoftwareCatalogUpdateEndpoint.log|소프트웨어 센터에 표시된 애플리케이션 카탈로그의 URL을 관리하는 활동을 기록합니다.|클라이언트|  
 |SoftwareCenterSystemTasks.log|소프트웨어 센터 필수 구성 요소 유효성 검사와 관련된 활동을 기록합니다.|클라이언트|  
 
  다음 표에는 패키지 및 프로그램 배포와 관련된 정보를 포함하는 로그 파일이 나와 있습니다.  
@@ -535,9 +535,9 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
 |--------------|-----------------|----------------------------|  
-|CIAgent.log|호환성 설정, 소프트웨어 업데이트, 응용 프로그램 관리에 대한 재구성 및 호환성 프로세스에 대한 세부 정보를 기록합니다.|클라이언트|  
+|CIAgent.log|호환성 설정, 소프트웨어 업데이트, 애플리케이션 관리에 대한 재구성 및 호환성 프로세스에 대한 세부 정보를 기록합니다.|클라이언트|  
 |CITaskManager.log|구성 항목 작업 일정에 대한 정보를 기록합니다.|클라이언트|  
-|DCMAgent.log|구성 항목과 응용 프로그램의 평가, 충돌 보고 및 재구성에 대한 높은 수준의 정보를 기록합니다.|클라이언트|  
+|DCMAgent.log|구성 항목과 애플리케이션의 평가, 충돌 보고 및 재구성에 대한 높은 수준의 정보를 기록합니다.|클라이언트|  
 |DCMReporting.log|구성 항목에 대한 상태 메시지에 정책 플랫폼 결과를 보고하는 작업에 대한 정보를 기록합니다.|클라이언트|  
 |DcmWmiProvider.log|WMI에서 구성 항목 synclet를 읽는 작업에 대한 정보를 기록합니다.|클라이언트|  
 
@@ -688,7 +688,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |ccmsetup.log|클라이언트 설정, 클라이언트 업그레이드 및 클라이언트 제거에 대한 ccmsetup 작업을 기록합니다. 클라이언트 설치 문제를 해결하는 데 사용할 수 있습니다.|클라이언트|  
 |CreateTSMedia.log|작업 순서 미디어 작성에 대한 세부 정보를 기록합니다.|Configuration Manager 콘솔을 실행하는 컴퓨터|  
 |DeployToVhd.log|VHD(가상 하드 디스크) 만들기 및 수정 프로세스에 대한 세부 정보를 기록합니다.|Configuration Manager 콘솔을 실행하는 컴퓨터|  
-|Dism.log|오프라인 서비스를 위한 드라이버 설치 작업 또는 응용 프로그램 업데이트 작업을 기록합니다.|사이트 시스템 서버|  
+|Dism.log|오프라인 서비스를 위한 드라이버 설치 작업 또는 애플리케이션 업데이트 작업을 기록합니다.|사이트 시스템 서버|  
 |distmgr.log|PXE(Preboot Execution Environment)에 대해 배포 지점을 사용하도록 설정하는 구성에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|  
 |DriverCatalog.log|드라이버 카탈로그로 가져온 디바이스 드라이버에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|  
 |mcsisapi.log|멀티캐스트 패키지 전송 및 클라이언트 요청 응답에 대한 정보를 기록합니다.|사이트 시스템 서버|  

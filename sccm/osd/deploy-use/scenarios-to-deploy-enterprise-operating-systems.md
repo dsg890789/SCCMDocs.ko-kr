@@ -23,7 +23,7 @@ ms.locfileid: "32349170"
 
 다음 운영 체제 배포 시나리오는 System Center Configuration Manager에서 사용할 수 있습니다.  
 
--   [최신 버전으로 Windows 업그레이드](upgrade-windows-to-the-latest-version.md): 이 시나리오는 현재 Windows 7, Windows 8, Windows 8.1 또는 Windows 10을 실행하는 컴퓨터의 운영 체제를 업그레이드합니다. 이 업그레이드 프로세스에서 컴퓨터의 응용 프로그램, 설정 및 사용자 데이터는 그대로 유지됩니다. Windows ADK 및 이 프로세스는 기존 운영 체제 배포보다 더욱 빠르고 복원력이 뛰어나므로 외부 종속성이 없습니다.  
+-   [최신 버전으로 Windows 업그레이드](upgrade-windows-to-the-latest-version.md): 이 시나리오는 현재 Windows 7, Windows 8, Windows 8.1 또는 Windows 10을 실행하는 컴퓨터의 운영 체제를 업그레이드합니다. 이 업그레이드 프로세스에서 컴퓨터의 애플리케이션, 설정 및 사용자 데이터는 그대로 유지됩니다. Windows ADK 및 이 프로세스는 기존 운영 체제 배포보다 더욱 빠르고 복원력이 뛰어나므로 외부 종속성이 없습니다.  
 
 -   [새 버전의 Windows로 기존 컴퓨터 새로 고침](refresh-an-existing-computer-with-a-new-version-of-windows.md): 이 시나리오에서는 기존 컴퓨터를 파티션으로 나누고 포맷(초기화)한 다음 컴퓨터에 새 운영 체제를 설치합니다. 운영 체제가 설치된 후 설정 및 사용자 데이터를 마이그레이션할 수 있습니다.  
 

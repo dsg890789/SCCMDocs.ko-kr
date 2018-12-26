@@ -20,7 +20,7 @@ ms.locfileid: "32335833"
 # <a name="how-to-create-configuration-items-for-mac-os-x-devices-managed-with-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트를 사용하여 관리하는 Mac OS X 디바이스용 구성 항목을 만드는 방법
 System Center Configuration Manager **Mac OS X(사용자 지정)** 구성 항목을 사용하여 Configuration Manager 클라이언트에서 관리되는 Mac OS X 디바이스에 대한 설정을 관리할 수 있습니다.  
   
- Mac OS X 운영 체제는 속성 목록(또는 plist) 파일을 사용하여 응용 프로그램 설정을 저장합니다. 속성 목록 파일에서 설정을 평가하고 재구성하려면 준수 설정을 사용합니다. 또한 준수 여부를 평가하고 수정할 수 있는 값을 반환하는 셸 스크립트를 작성하여 Mac OS X 설정을 관리할 수 있습니다.  
+ Mac OS X 운영 체제는 속성 목록(또는 plist) 파일을 사용하여 애플리케이션 설정을 저장합니다. 속성 목록 파일에서 설정을 평가하고 재구성하려면 준수 설정을 사용합니다. 또한 준수 여부를 평가하고 수정할 수 있는 값을 반환하는 셸 스크립트를 작성하여 Mac OS X 설정을 관리할 수 있습니다.  
   
 ### <a name="to-create-a-custom-mac-os-x-configuration-item"></a>사용자 지정 Mac OS X 구성 항목을 만들려면  
   

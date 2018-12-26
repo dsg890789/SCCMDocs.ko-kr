@@ -99,7 +99,7 @@ There are some Configuration Manager objects that the importer tool cannot impor
 1. 동의를 수락하면 다른 모든 전역 관리자 또는 Intune 관리자가 이 도구를 실행하여 Configuration Manager에서 Azure의 Intune으로 데이터를 가져올 수 있습니다.    
         
     > [!Note]
-    > 전역 관리자가 처음에 동의를 수락하지 않으면, Intune 관리자가 데이터 가져오기 도구를 실행하고 Intune 구독에 로그인한 후에 **이 응용 프로그램에 액세스할 수 없음**이 도구에 표시될 수 있습니다.
+    > 전역 관리자가 처음에 동의를 수락하지 않으면, Intune 관리자가 데이터 가져오기 도구를 실행하고 Intune 구독에 로그인한 후에 **이 애플리케이션에 액세스할 수 없음**이 도구에 표시될 수 있습니다.
 
 ### <a name="manually-map-collections-to-azure-ad-groups"></a>Azure AD 그룹에 컬렉션을 수동으로 매핑
 데이터 가져오기 도구를 실행하면 이 도구는 단일 AD 그룹을 대상으로 하는 단일 규칙을 사용하여 컬렉션에서 AD 그룹 이름을 추출합니다. Intune에서 할당을 만들면 데이터 가져오기 도구는 AD 그룹과 이름이 같은 Azure AD 그룹을 찾고 있는 경우 해당 Azure AD 그룹에 가져온 개체를 할당합니다. 사용자는 데이터 가져오기 도구가 컬렉션에 대해 찾는 AD 그룹 이름을 재정의할 수 있고 해당 컬렉션에 사용할 Azure AD 그룹을 하나 이상 제공할 수 있습니다. 컬렉션 매핑 파일을 사용하면 통상 데이터 가져오기 도구로는 가져올 수 없는 컬렉션을 Azure AD 그룹에 매핑할 수 있습니다.

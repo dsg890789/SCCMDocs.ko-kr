@@ -1,7 +1,7 @@
 ---
 title: 설치 다운로더
 titleSuffix: Configuration Manager
-description: 사이트 설치 시 주요 설치 파일의 최신 버전을 사용하도록 하기 위한 이 독립 실행형 응용 프로그램에 대해 알아봅니다.
+description: 사이트 설치 시 주요 설치 파일의 최신 버전을 사용하도록 하기 위한 이 독립 실행형 애플리케이션에 대해 알아봅니다.
 ms.date: 3/1/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -21,7 +21,7 @@ ms.locfileid: "42584505"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-설치 프로그램을 실행하여 System Center Configuration Manager 사이트를 설치하거나 업그레이드하기 전에 설치하려는 Configuration Manager 버전의 설치 다운로더 독립 실행형 응용 프로그램을 사용하여 업데이트된 설치 파일을 다운로드할 수 있습니다.  
+설치 프로그램을 실행하여 System Center Configuration Manager 사이트를 설치하거나 업그레이드하기 전에 설치하려는 Configuration Manager 버전의 설치 다운로더 독립 실행형 애플리케이션을 사용하여 업데이트된 설치 파일을 다운로드할 수 있습니다.  
 
 업데이트된 설치 파일을 사용하면 사이트 설치 시 주요 설치 파일의 최신 버전을 사용하게 됩니다. 개요:   
 -   설치 다운로더를 사용하여 설치를 시작하기 전에 파일을 다운로드할 때는 파일을 포함할 폴더를 지정합니다.  
@@ -35,8 +35,8 @@ ms.locfileid: "42584505"
 -   설치 프로그램에 대한 최신 제품 업데이트  
 
 설치 다운로더를 실행하는 다음 두 가지 옵션이 있습니다.
-- 사용자 인터페이스를 사용하여 응용 프로그램 실행
-- 명령줄 옵션을 보려면 명령 프롬프트에서 응용 프로그램을 실행합니다.
+- 사용자 인터페이스를 사용하여 애플리케이션 실행
+- 명령줄 옵션을 보려면 명령 프롬프트에서 애플리케이션을 실행합니다.
 
 
 ## <a name="run-setup-downloader-with-the-user-interface"></a>사용자 인터페이스를 사용하여 설치 다운로더 실행  

@@ -87,9 +87,9 @@ Configuration Manager는 다음과 같은 상황에서 사이트 서버 및 사�
 
     - 관리 지점  
 
-    - 응용 프로그램 카탈로그 웹 서비스 지점  
+    - 애플리케이션 카탈로그 웹 서비스 지점  
 
-    - 응용 프로그램 카탈로그 웹 사이트 지점  
+    - 애플리케이션 카탈로그 웹 사이트 지점  
 
 - 사이트 시스템 역할을 호스팅하는 각 서버가 계속 모든 [필수 조건](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)을 충족하는지 확인합니다. 예를 들어 BITS 또는 WSUS를 다시 설치하거나 IIS에 대한 특정 설정을 구성해야 할 수 있습니다.  
 
@@ -139,9 +139,9 @@ Windows Server 2008 R2 또는 Windows Server 2012에서 Windows Server 2012 R2�
 
     - 관리 지점  
 
-    - 응용 프로그램 카탈로그 웹 서비스 지점  
+    - 애플리케이션 카탈로그 웹 서비스 지점  
 
-    - 응용 프로그램 카탈로그 웹 사이트 지점  
+    - 애플리케이션 카탈로그 웹 사이트 지점  
 
 - **Windows Process Activation** 및 **WWW/W3svc** 서비스가 사용되고 자동 시작되도록 설정되었는지 확인합니다 . 업그레이드 프로세스는 이러한 서비스를 사용하지 않으므로 다음 사이트 시스템 역할에 대해 실행되고 있는지 확인합니다.  
 
@@ -149,9 +149,9 @@ Windows Server 2008 R2 또는 Windows Server 2012에서 Windows Server 2012 R2�
 
     - 관리 지점  
 
-    - 응용 프로그램 카탈로그 웹 서비스 지점  
+    - 애플리케이션 카탈로그 웹 서비스 지점  
 
-    - 응용 프로그램 카탈로그 웹 사이트 지점  
+    - 애플리케이션 카탈로그 웹 사이트 지점  
 
 - 사이트 시스템 역할을 호스팅하는 각 서버가 계속 모든 [필수 조건](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)을 충족하는지 확인합니다. 예를 들어 BITS 또는 WSUS를 다시 설치하거나 IIS에 대한 특정 설정을 구성해야 할 수 있습니다.  
 

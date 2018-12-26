@@ -39,13 +39,13 @@ ms.locfileid: "32340695"
 
 ##### <a name="scenario-1-set-up-windows-store-for-business-synchronization"></a>시나리오 1: 비즈니스용 Windows 스토어 동기화 설정  
 
-1.  Azure Active Directory에서 Configuration Manager를 "웹 응용 프로그램 및/또는 웹 API" 관리 도구로 등록합니다. 이렇게 하면 나중에 필요한 클라이언트 ID가 제공됩니다.  
+1.  Azure Active Directory에서 Configuration Manager를 "웹 애플리케이션 및/또는 웹 API" 관리 도구로 등록합니다. 이렇게 하면 나중에 필요한 클라이언트 ID가 제공됩니다.  
 
     1.  [https://manage.windowsazure.com](https://manage.windowsazure.com)의 **Active Directory** 노드에서 Azure Active Directory를 선택한 다음, **응용 프로그램** > **추가**를 클릭합니다.  
 
     2.  **조직에서 개발 중인 응용 프로그램 추가**를 클릭합니다.  
 
-    3.  응용 프로그램의 이름을 입력하고, **웹 응용 프로그램** 및/또는 **웹 API**를 선택한 후 다음 화살표를 클릭합니다.  
+    3.  애플리케이션의 이름을 입력하고, **웹 애플리케이션** 및/또는 **웹 API**를 선택한 후 다음 화살표를 클릭합니다.  
 
     4.  **로그온 URL** 및 **앱 ID URI** 모두에 대해 동일한 URL을 입력합니다.  URL은 어떤 문자열이든 될 수 있으며, 실제 주소로 확인할 필요는 없습니다. 예를 들어 **https://&lt;yourdomain\>/sccm**을 입력할 수 있습니다.  
 
@@ -53,7 +53,7 @@ ms.locfileid: "32340695"
 
 2.  Azure Active Directory에서 등록된 관리 도구에 대한 클라이언트 키를 만듭니다.  
 
-    1.  방금 만든 응용 프로그램을 강조 표시하고 **구성**을 클릭합니다.  
+    1.  방금 만든 애플리케이션을 강조 표시하고 **구성**을 클릭합니다.  
 
     2.  **키** 아래의 목록에서 기간을 선택하고 **저장**을 클릭합니다.  그러면 새 클라이언트 키가 생성됩니다.  비즈니스용 Windows 스토어를 Configuration Manager에 성공적으로 등록할 때까지 이 페이지에서 이동하지 마세요.  
 
@@ -67,7 +67,7 @@ ms.locfileid: "32340695"
 
     4.  **이름별 도구 검색**에서 이전에 AAD에서 만든 응용 프로그램의 이름을 입력한 후 **추가**를 클릭합니다.  
 
-    5.  방금 가져온 응용 프로그램 옆에 있는 **활성화**를 클릭합니다.  
+    5.  방금 가져온 애플리케이션 옆에 있는 **활성화**를 클릭합니다.  
 
     6.  **오프라인 라이선스 앱 표시** 마법사에서, 오프라인 라이선스 응용 프로그램을 구매할 수 있도록 허용하려면 **예**를 클릭합니다.  
 
@@ -81,13 +81,13 @@ ms.locfileid: "32340695"
 
 8.  완료한 후에는 Configuration Manager 콘솔의 **비즈니스용 Windows 스토어 계정** 목록에서 구성한 계정이 표시됩니다.  
 
-##### <a name="scenario-2-create-and-deploy-a-configuration-manager-application-from-a-windows-store-for-business-offline-licensed-app"></a>시나리오 2: 비즈니스용 Windows 스토어 사용이 허가된 오프라인 앱에서 Configuration Manager 응용 프로그램 만들기 및 배포  
+##### <a name="scenario-2-create-and-deploy-a-configuration-manager-application-from-a-windows-store-for-business-offline-licensed-app"></a>시나리오 2: 비즈니스용 Windows 스토어 사용이 허가된 오프라인 앱에서 Configuration Manager 애플리케이션 만들기 및 배포  
 
-1.  Configuration Manager 콘솔의 **소프트웨어 라이브러리** 작업 영역에서 **응용 프로그램 관리**를 확장한 다음 **스토어 앱에 대한 라이선스 정보**를 클릭합니다.  
+1.  Configuration Manager 콘솔의 **소프트웨어 라이브러리** 작업 영역에서 **애플리케이션 관리**를 확장한 다음 **스토어 앱에 대한 라이선스 정보**를 클릭합니다.  
 
-2.  **구매한 비즈니스용 Windows 스토어 앱** 목록에서 스토어에서 동기화된 앱 목록을 볼 수 있습니다. 배포하려는 앱을 선택한 후 **홈** 탭의 **만들기** 그룹에서 **응용 프로그램 만들기**를 클릭합니다.  
+2.  **구매한 비즈니스용 Windows 스토어 앱** 목록에서 스토어에서 동기화된 앱 목록을 볼 수 있습니다. 배포하려는 앱을 선택한 후 **홈** 탭의 **만들기** 그룹에서 **애플리케이션 만들기**를 클릭합니다.  
 
-3.  비즈니스용 Windows 스토어 앱을 포함하여 Configuration Manager 응용 프로그램이 만들어집니다. 그런 다음 이 응용 프로그램을 원하는 Configuration Manager 응용 프로그램으로 배포 및 모니터링할 수 있습니다.  
+3.  비즈니스용 Windows 스토어 앱을 포함하여 Configuration Manager 애플리케이션이 만들어집니다. 그런 다음 이 애플리케이션을 원하는 Configuration Manager 애플리케이션으로 배포 및 모니터링할 수 있습니다.  
 
 ##  <a name="BKMK_PFW"></a> Microsoft Passport for Work 관리의 개선 사항  
  이제 Configuration Manager 클라이언트에서 관리되는 도메인에 가입된 Windows 10 디바이스에 Passport for Work 정책을 배포할 수 있습니다.  

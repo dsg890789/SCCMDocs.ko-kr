@@ -180,19 +180,19 @@ Version 1810 drops support for the following products:
 ## <a name="bkmk_app"></a> 응용 프로그램 관리
 
 ### <a name="convert-applications-to-msix"></a>애플리케이션을 MSIX로 변환
-<!--1359029--> 버전 1806부터 Configuration Manager는 새 Windows 10 앱 패키지(.msix) 형식의 배포를 지원합니다. 이제 기존 Windows Installer(.msi) 응용 프로그램을 MSIX 형식으로 변환할 수 있습니다.
+<!--1359029--> 버전 1806부터 Configuration Manager는 새 Windows 10 앱 패키지(.msix) 형식의 배포를 지원합니다. 이제 기존 Windows Installer(.msi) 애플리케이션을 MSIX 형식으로 변환할 수 있습니다.
 
 <!--For more information, see [Create Windows applications](/sccm/apps/get-started/creating-windows-applications#bkmk_general).  this might move to a new section for msix-->
 
 
 ### <a name="repair-applications"></a>애플리케이션 복구
-<!--1357866--> Windows Installer 및 스크립트 설치 관리자 배포 유형에 대한 복구 명령줄을 지정합니다. 그런 다음, 배포에서 옵션을 활성화하는 경우 소프트웨어 센터에서 애플리케이션을 **복구**하는 새 단추를 사용할 수 있습니다. 복구 프로그램을 사용하여 응용 프로그램을 구성하는 경우 사용자가 소프트웨어 센터에서 명령을 시작할 수 있습니다. 
+<!--1357866--> Windows Installer 및 스크립트 설치 관리자 배포 유형에 대한 복구 명령줄을 지정합니다. 그런 다음, 배포에서 옵션을 활성화하는 경우 소프트웨어 센터에서 애플리케이션을 **복구**하는 새 단추를 사용할 수 있습니다. 복구 프로그램을 사용하여 애플리케이션을 구성하는 경우 사용자가 소프트웨어 센터에서 명령을 시작할 수 있습니다. 
 
 자세한 내용은 [애플리케이션 만들기](/sccm/apps/deploy-use/create-applications#bkmk_dt-content) 및 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications#bkmk_deploy-settings)를 참조하세요.
 
 
 ### <a name="approve-application-requests-via-email"></a>이메일을 통해 애플리케이션 요청 승인
-<!--1321550--> 애플리케이션 승인 요청에 대한 이메일 알림을 구성합니다. 사용자가 응용 프로그램을 요청하면 메일을 받게 됩니다. 메일의 링크를 클릭하면 Configuration Manager 콘솔을 사용하지 않고 요청을 승인 또는 거부할 수 있습니다.
+<!--1321550--> 애플리케이션 승인 요청에 대한 이메일 알림을 구성합니다. 사용자가 애플리케이션을 요청하면 메일을 받게 됩니다. 메일의 링크를 클릭하면 Configuration Manager 콘솔을 사용하지 않고 요청을 승인 또는 거부할 수 있습니다.
 
 자세한 내용은 [애플리케이션 승인](/sccm/apps/deploy-use/app-approval)을 참조하세요.
 

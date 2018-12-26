@@ -161,7 +161,7 @@ Azure의 특정 지역에 클라우드 배포 지점을 설치하는 경우에�
 - 클라우드 배포 지점은 [클라이언트 및 디바이스에 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices)에 나와 있는 모든 Windows 버전을 지원합니다.  
 
 - 관리자는 다음 유형의 지원되는 소프트웨어 콘텐츠를 배포합니다.  
-    - 응용 프로그램
+    - 애플리케이션
     - 패키지
     - OS 업그레이드 패키지
     - 타사 소프트웨어 업데이트  
@@ -183,7 +183,7 @@ Azure의 특정 지역에 클라우드 배포 지점을 설치하는 경우에�
 
 - 클라우드 배포 지점은 PXE 또는 멀티캐스트 사용 배포에 사용할 수 없습니다.  
 
-- 클라우드 배포 지점은 App-V 스트리밍 응용 프로그램을 지원하지 않습니다.  
+- 클라우드 배포 지점은 App-V 스트리밍 애플리케이션을 지원하지 않습니다.  
 
 - 클라우드 배포 지점에서 [콘텐츠를 사전 준비](/sccm/core/plan-design/hierarchy/manage-network-bandwidth#BKMK_PrestagingContent)할 수 없습니다. 클라우드 배포 지점을 관리하는 기본 사이트의 배포 관리자에서 모든 콘텐츠를 전송합니다.  
 

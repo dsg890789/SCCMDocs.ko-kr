@@ -1,7 +1,7 @@
 ---
-title: 응용 프로그램 관리
+title: 애플리케이션 관리
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 응용 프로그램 관리
+description: System Center Configuration Manager에서 애플리케이션 관리
 ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -17,7 +17,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
 ms.locfileid: "32346501"
 ---
-# <a name="manage-applications-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 응용 프로그램 관리
+# <a name="manage-applications-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 애플리케이션 관리
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -28,15 +28,15 @@ Microsoft Intune 또는 Configuration Manager 온-프레미스 디바이스 관�
 - Google Play의 Android용 앱 패키지
 - Windows Phone 앱 패키지(Windows Phone 스토어)
 - MDM을 사용하는 Windows Installer
-- 웹 응용 프로그램
+- 웹 애플리케이션
 
-이 섹션에서는 하이브리드 MDM 또는 온-프레미스 MDM을 사용하여 응용 프로그램을 만들고 관리하는 방법에 대한 자세한 정보를 제공합니다.
+이 섹션에서는 하이브리드 MDM 또는 온-프레미스 MDM을 사용하여 애플리케이션을 만들고 관리하는 방법에 대한 자세한 정보를 제공합니다.
 
 [System Center Configuration Manager 응용 프로그램에 대한 관리 작업](../../apps/deploy-use/management-tasks-applications.md)에서는 System Center Configuration Manager 응용 프로그램 및 배포 유형을 관리하는 방법에 대한 보다 일반적인 정보를 제공합니다.
 
 ## <a name="deploying-and-monitoring-apps"></a>앱 배포 및 모니터링
 
-System Center Configuration Manager에서 응용 프로그램을 배포하고 모니터링하는 프로세스는 해당 응용 프로그램이 랩톱 및 데스크톱과 같은 온사이트 디바이스용이므로 모바일 디바이스에 대한 프로세스와 동일합니다. 응용 프로그램 배포 및 모니터링에 대한 일반적인 내용은 다음 항목에서 확인할 수 있습니다.
+System Center Configuration Manager에서 응용 프로그램을 배포하고 모니터링하는 프로세스는 해당 응용 프로그램이 랩톱 및 데스크톱과 같은 온사이트 디바이스용이므로 모바일 디바이스에 대한 프로세스와 동일합니다. 애플리케이션 배포 및 모니터링에 대한 일반적인 내용은 다음 항목에서 확인할 수 있습니다.
 
 - [System Center Configuration Manager에서 응용 프로그램 배포](../../apps/deploy-use/deploy-applications.md)
 - [System Center Configuration Manager에서 응용 프로그램 모니터링](../../apps/deploy-use/monitor-applications-from-the-console.md)
@@ -49,4 +49,4 @@ System Center Configuration Manager에서 응용 프로그램을 배포하고 �
 
 ### <a name="next-steps"></a>다음 단계
 
-나중에 응용 프로그램을 변경하거나, 응용 프로그램을 제거하거나, 이미 배포된 응용 프로그램을 새 응용 프로그램으로 대체할 수 있습니다. 이러한 기능은 [System Center Configuration Manager를 사용하여 응용 프로그램 업데이트 및 사용 중지](../../apps/deploy-use/update-and-retire-applications.md)를 참조하세요.
+나중에 애플리케이션을 변경하거나, 애플리케이션을 제거하거나, 이미 배포된 애플리케이션을 새 애플리케이션으로 대체할 수 있습니다. 이러한 기능은 [System Center Configuration Manager를 사용하여 애플리케이션 업데이트 및 사용 중지](../../apps/deploy-use/update-and-retire-applications.md)를 참조하세요.

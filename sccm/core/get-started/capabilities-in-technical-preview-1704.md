@@ -31,7 +31,7 @@ System Center Configuration Manager(Configuration Manager)에서 앱 구성 정�
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기                 
 
-Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **앱 구성 정책**을 선택하고 **앱 구성 정책 만들기**를 선택합니다. 이제 마법사의 **일반** 페이지에서 **구성 정책 형식을 선택**할 수 있습니다. 앱 구성 정책인 **Android for Work 앱용 구성 정책**에 따른 대상 플랫폼을 지정합니다. **이름 및 값 쌍을 지정**하거나 **속성 목록 JSON 파일을 찾을** 수 있습니다. 새 앱 구성 정책이 **소프트웨어 라이브러리** 작업 영역의 **앱 구성 정책** 노드에 표시됩니다. 앱 구성 정책을 Android for Work 앱 배포와 연결하려면 [응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications) 항목의 프로시저를 사용하여 일반적인 방식으로 응용 프로그램을 배포합니다.
+Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **앱 구성 정책**을 선택하고 **앱 구성 정책 만들기**를 선택합니다. 이제 마법사의 **일반** 페이지에서 **구성 정책 형식을 선택**할 수 있습니다. 앱 구성 정책인 **Android for Work 앱용 구성 정책**에 따른 대상 플랫폼을 지정합니다. **이름 및 값 쌍을 지정**하거나 **속성 목록 JSON 파일을 찾을** 수 있습니다. 새 앱 구성 정책이 **소프트웨어 라이브러리** 작업 영역의 **앱 구성 정책** 노드에 표시됩니다. 앱 구성 정책을 Android for Work 앱 배포와 연결하려면 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications) 항목의 프로시저를 사용하여 일반적인 방식으로 애플리케이션을 배포합니다.
 
 ## <a name="hardware-inventory-collects-secure-boot-information"></a>하드웨어 인벤토리를 통해 보안 부팅 정보 수집
 이제 하드웨어 인벤토리는 클라이언트에서 보안 부팅을 사용할 수 있는지에 대한 정보를 수집합니다. 이 정보는 버전 1702에 도입된 **SMS_Firmware** 클래스에 저장되며 하드웨어 인벤토리에서 기본적으로 사용하도록 설정됩니다. 하드웨어 인벤토리에 대한 자세한 내용은 [하드웨어 인벤토리 구성 방법](/sccm/core/clients/manage/inventory/configure-hardware-inventory)을 참조하세요.

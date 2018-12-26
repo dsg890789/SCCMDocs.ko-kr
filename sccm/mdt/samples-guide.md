@@ -48,61 +48,61 @@ ms.locfileid: "33915975"
  |*Microsoft Deployment Toolkit 사용* |ZTI(무인 자동 설치) 및 LTI 배포에 사용되는 구성 파일을 추가로 사용자 지정할 수 있습니다. 구성 설정에 대한 일반 구성 지침과 기술 참조도 제공합니다.|
 
 
-## <a name="deploying-windows-8-applications-using-mdt"></a>MDT를 사용하여 Windows 8 응용 프로그램 배포  
- MDT는 .appx 파일 확장명이 있는 Windows 8 응용 프로그램 패키지를 배포할 수 있습니다. 이러한 응용 프로그램 패키지는 Windows 8에 새로 추가되었습니다. 이러한 응용 프로그램에 대한 자세한 내용은 [Windows 스토어 앱 개발](http://msdn.microsoft.com/windows/apps)을 참조하세요.  
+## <a name="deploying-windows-8-applications-using-mdt"></a>MDT를 사용하여 Windows 8 애플리케이션 배포  
+ MDT는 .appx 파일 확장명이 있는 Windows 8 애플리케이션 패키지를 배포할 수 있습니다. 이러한 애플리케이션 패키지는 Windows 8에 새로 추가되었습니다. 이러한 애플리케이션에 대한 자세한 내용은 [Windows 스토어 앱 개발](http://msdn.microsoft.com/windows/apps)을 참조하세요.  
 
- MDT를 사용하여 Windows 8 응용 프로그램을 배포하려면 다음 단계를 수행합니다.  
+ MDT를 사용하여 Windows 8 애플리케이션을 배포하려면 다음 단계를 수행합니다.  
 
 -   [LTI를 사용하여 Windows 8 응용 프로그램 배포](#DeployWin8LTI)에서 설명한 대로 LTI를 사용하여 Windows 8 응용 프로그램을 배포합니다.  
 
 -   [UDI를 사용하여 Windows 8 응용 프로그램 배포](#DeployWin8UDI)에서 설명한 대로 UDI(사용자 구동 설치)를 사용하여 Windows 8 응용 프로그램을 배포합니다.  
 
 ###  <a name="DeployWin8LTI"></a> LTI를 사용하여 Windows 8 응용 프로그램 배포  
- 명령줄에서 설치 프로세스를 시작하는 다른 응용 프로그램과 마찬가지로 LTI를 사용하여 Windows 8 응용 프로그램을 배포할 수 있습니다. Deployment 워크벤치에 있는 응용 프로그램 노드의 LTI 배포에 Windows 8 응용 프로그램을 추가할 수 있습니다.  
+ 명령줄에서 설치 프로세스를 시작하는 다른 애플리케이션과 마찬가지로 LTI를 사용하여 Windows 8 애플리케이션을 배포할 수 있습니다. Deployment 워크벤치에 있는 애플리케이션 노드의 LTI 배포에 Windows 8 애플리케이션을 추가할 수 있습니다.  
 
  **LTI를 사용하여 Windows 8 응용 프로그램을 배포하려면**  
 
-1.  응용 프로그램이 저장될 네트워크 공유 폴더를 만듭니다.  
+1.  애플리케이션이 저장될 네트워크 공유 폴더를 만듭니다.  
 
-2.  이전 단계에서 만든 네트워크 공유 폴더에 Windows 8 응용 프로그램을 복사합니다.  
+2.  이전 단계에서 만든 네트워크 공유 폴더에 Windows 8 애플리케이션을 복사합니다.  
 
-     .appx Windows 8 응용 프로그램 파일 및 응용 프로그램 인증서가 포함된 다른 모든 필수 파일(예: .cer 파일)이 복사되었는지 확인합니다.  
+     .appx Windows 8 애플리케이션 파일 및 애플리케이션 인증서가 포함된 다른 모든 필수 파일(예: .cer 파일)이 복사되었는지 확인합니다.  
 
-3.  새 응용 프로그램 마법사를 사용하여 Deployment 워크벤치의 응용 프로그램 노드에 Windows 8 응용 프로그램에 대한 LTI 응용 프로그램 항목을 만듭니다.  
+3.  새 애플리케이션 마법사를 사용하여 Deployment 워크벤치의 애플리케이션 노드에 Windows 8 애플리케이션에 대한 LTI 애플리케이션 항목을 만듭니다.  
 
-     새 응용 프로그램 마법사를 수행하면서 **명령 정보** 마법사 페이지의 **명령줄**에서 **app_file_name**을 입력합니다. 여기서 *app_file_name*은 Windows 8 응용 프로그램의 이름입니다.  
+     새 애플리케이션 마법사를 수행하면서 **명령 정보** 마법사 페이지의 **명령줄**에서 **app_file_name**을 입력합니다. 여기서 *app_file_name*은 Windows 8 애플리케이션의 이름입니다.  
 
-     Deployment 워크벤치에서 새 응용 프로그램 마법사를 수행하는 방법에 대한 자세한 내용은 *Microsoft Deployment Toolkit 사용* MDT 문서에서 다음 섹션을 참조하세요.  
+     Deployment 워크벤치에서 새 애플리케이션 마법사를 수행하는 방법에 대한 자세한 내용은 *Microsoft Deployment Toolkit 사용* MDT 문서에서 다음 섹션을 참조하세요.  
 
-    -   "배포 공유에서 배포되는 새 응용 프로그램 만들기"  
+    -   "배포 공유에서 배포되는 새 애플리케이션 만들기"  
 
-    -   "다른 네트워크 공유 폴더에서 배포되는 새 응용 프로그램 만들기"  
+    -   "다른 네트워크 공유 폴더에서 배포되는 새 애플리케이션 만들기"  
 
-4.  LTI 작업 순서의 이전 단계에서 만든 LTI 응용 프로그램 항목을 선택합니다.  
+4.  LTI 작업 순서의 이전 단계에서 만든 LTI 애플리케이션 항목을 선택합니다.  
 
 ###  <a name="DeployWin8UDI"></a> UDI를 사용하여 Windows 8 응용 프로그램 배포  
- 명령줄에서 설치 프로세스를 시작하는 다른 응용 프로그램과 마찬가지로 UDI를 사용하여 Windows 8 응용 프로그램을 배포할 수 있습니다. UDI 마법사 디자이너에서 **ApplicationPage** 마법사 페이지의 UDI 배포에 Windows 8 응용 프로그램을 추가할 수 있습니다.  
+ 명령줄에서 설치 프로세스를 시작하는 다른 애플리케이션과 마찬가지로 UDI를 사용하여 Windows 8 애플리케이션을 배포할 수 있습니다. UDI 마법사 디자이너에서 **ApplicationPage** 마법사 페이지의 UDI 배포에 Windows 8 애플리케이션을 추가할 수 있습니다.  
 
 > [!NOTE]
->  UDI를 사용하여 Windows 8 및 Windows 8 응용 프로그램을 배포하려면 System Center 2012 R2 Configuration Manager가 필요합니다.  
+>  UDI를 사용하여 Windows 8 및 Windows 8 애플리케이션을 배포하려면 System Center 2012 R2 Configuration Manager가 필요합니다.  
 
  **UDI를 사용하여 Windows 8 응용 프로그램을 배포하려면**  
 
-1.  응용 프로그램이 저장될 네트워크 공유 폴더를 만듭니다.  
+1.  애플리케이션이 저장될 네트워크 공유 폴더를 만듭니다.  
 
-     이 폴더는 프로세스의 뒷부분에서 만들 Configuration Manager 응용 프로그램의 원본 폴더가 됩니다.  
+     이 폴더는 프로세스의 뒷부분에서 만들 Configuration Manager 애플리케이션의 원본 폴더가 됩니다.  
 
-2.  이전 단계에서 만든 네트워크 공유 폴더에 Windows 8 응용 프로그램을 복사합니다.  
+2.  이전 단계에서 만든 네트워크 공유 폴더에 Windows 8 애플리케이션을 복사합니다.  
 
-     .appx Windows 8 응용 프로그램 파일 및 응용 프로그램 인증서가 포함된 다른 모든 필수 파일(예: .cer 파일)이 복사되었는지 확인합니다.  
+     .appx Windows 8 애플리케이션 파일 및 애플리케이션 인증서가 포함된 다른 모든 필수 파일(예: .cer 파일)이 복사되었는지 확인합니다.  
 
-3.  Windows 8 응용 프로그램을 Configuration Manager 응용 프로그램으로 추가합니다.  
+3.  Windows 8 애플리케이션을 Configuration Manager 애플리케이션으로 추가합니다.  
 
-4.  Configuration Manager 콘솔의 응용 프로그램 만들기 마법사를 사용하여 Windows 8 응용 프로그램에 대한 Configuration Manager 응용 프로그램 항목을 만듭니다.  
+4.  Configuration Manager 콘솔의 애플리케이션 만들기 마법사를 사용하여 Windows 8 애플리케이션에 대한 Configuration Manager 애플리케이션 항목을 만듭니다.  
 
-     응용 프로그램 만들기 마법사를 수행하면서 배포 유형 만들기 마법사를 사용하여 Windows 8 응용 프로그램을 배포할 배포 유형을 만듭니다. 배포 유형 만들기 마법사에 있는 **콘텐츠** 페이지의 **설치 프로그램**에서 **app_file_name**을 입력합니다. 여기서 *app_file_name*은 Windows 8 응용 프로그램의 이름입니다.  
+     애플리케이션 만들기 마법사를 수행하면서 배포 유형 만들기 마법사를 사용하여 Windows 8 애플리케이션을 배포할 배포 유형을 만듭니다. 배포 유형 만들기 마법사에 있는 **콘텐츠** 페이지의 **설치 프로그램**에서 **app_file_name**을 입력합니다. 여기서 *app_file_name*은 Windows 8 애플리케이션의 이름입니다.  
 
-     Configuration Manager 콘솔에서 응용 프로그램 만들기 마법사를 수행하는 방법에 대한 자세한 내용은 Configuration Manager에 포함된 System Center 2012 Configuration Manager용 라이브러리 설명서에서 다음 섹션을 참조하세요.  
+     Configuration Manager 콘솔에서 애플리케이션 만들기 마법사를 수행하는 방법에 대한 자세한 내용은 Configuration Manager에 포함된 System Center 2012 Configuration Manager용 라이브러리 설명서에서 다음 섹션을 참조하세요.  
 
     -   [Configuration Manager에서 응용 프로그램을 만드는 방법](http://technet.microsoft.com/library/gg682159.aspx)  
 
@@ -114,18 +114,18 @@ ms.locfileid: "33915975"
 
      Configuration Manager 응용 프로그램 배포를 지원하도록 UDA를 구성하는 방법에 대한 자세한 내용은 [Configuration Manager에서 사용자 디바이스 선호도를 관리하는 방법](http://technet.microsoft.com/library/gg699365)을 참조하세요.  
 
-6.  대상 사용자에게 4단계에서 만든 응용 프로그램을 배포합니다.  
+6.  대상 사용자에게 4단계에서 만든 애플리케이션을 배포합니다.  
 
-     사용자에게 응용 프로그램을 배포하는 방법에 대한 자세한 내용은 [Configuration Manager에서 응용 프로그램을 배포하는 방법](http://technet.microsoft.com/library/gg682082)을 참조하세요.  
+     사용자에게 애플리케이션을 배포하는 방법에 대한 자세한 내용은 [Configuration Manager에서 애플리케이션을 배포하는 방법](http://technet.microsoft.com/library/gg682082)을 참조하세요.  
 
-7.  UDI 마법사 디자이너를 사용하여 4단계에서 만든 Configuration Manager 응용 프로그램이 포함되도록 **ApplicationPage** 마법사 페이지를 구성합니다.  
+7.  UDI 마법사 디자이너를 사용하여 4단계에서 만든 Configuration Manager 애플리케이션이 포함되도록 **ApplicationPage** 마법사 페이지를 구성합니다.  
 
      UDI 마법사 디자이너를 사용하여 **ApplicationPage** 마법사 페이지를 구성하는 방법에 대한 자세한 내용은 *사용자 구동 설치 빠른 시작 가이드* MDT 문서에서 "5-11단계: 대상 컴퓨터에 대한 UDI 마법사 구성 파일 사용자 지정" 섹션을 참조하세요.  
 
-8.  UDI 작업 순서의 이전 단계에서 만든 UDI 응용 프로그램 항목을 선택합니다.  
+8.  UDI 작업 순서의 이전 단계에서 만든 UDI 애플리케이션 항목을 선택합니다.  
 
     > [!NOTE]
-    >  Windows 8 응용 프로그램은 작업 순서에 따라 설치되지 않고, 사용자가 UDI의 사용자 중심 앱 설치 관리자 기능(AppInstall.exe)을 사용하여 대상 컴퓨터에 처음 로그온할 때 5단계에서 구성된 UDA 설정에 정의한 대로 설치됩니다.  
+    >  Windows 8 애플리케이션은 작업 순서에 따라 설치되지 않고, 사용자가 UDI의 사용자 중심 앱 설치 관리자 기능(AppInstall.exe)을 사용하여 대상 컴퓨터에 처음 로그온할 때 5단계에서 구성된 UDA 설정에 정의한 대로 설치됩니다.  
 
      UDI의 사용자 중심 앱 설치 관리자 기능에 대한 자세한 내용은 *Toolkit 참조* MDT 문서에서 "사용자 중심 앱 설치 관리자 참조" 섹션을 참조하세요.  
 
@@ -436,7 +436,7 @@ Add-PSSnapin -Name Microsoft.BDD.PSSnapIn
 
  |**cmdlet** | **설명** |  
  |-|-|  
- |**Import-MDTApplication** |응용 프로그램을 배포 공유로 가져옵니다.|  
+ |**Import-MDTApplication** |애플리케이션을 배포 공유로 가져옵니다.|  
  |**Import-MDTDriver** |하나 이상의 디바이스 드라이버를 배포 공유로 가져옵니다.|  
  |**Import-MDTOperatingSystem** |하나 이상의 운영 체제를 배포 공유로 가져옵니다.|  
  |**Import-MDTPackage** |하나 이상의 운영 체제 패키지를 배포 공유로 가져옵니다.|  
@@ -545,7 +545,7 @@ Add-PSSnapin -Name Microsoft.BDD.PSSnapIn
 
  여러 항목을 관리하는 한 가지 방법은 [Import-CSV](http://technet.microsoft.com/library/dd347665.aspx) cmdlet을 사용하여 배포 공유에서 관리하려는 모든 항목 에 대한 목록이 포함된 CSV(쉼표로 구분된 값) 파일을 사용하는 것입니다.  
 
- 다음은 [Import-CSV](http://technet.microsoft.com/library/dd347665.aspx), [ForEach-Object](http://technet.microsoft.com/library/hh849731) 및 **Import-MDTApplication** cmdlet을 사용하여 .csv 파일의 정보에 따라 응용 프로그램 목록을 가져오는 Windows PowerShell 스크립트에서 발췌한 부분입니다.  
+ 다음은 [Import-CSV](http://technet.microsoft.com/library/dd347665.aspx), [ForEach-Object](http://technet.microsoft.com/library/hh849731) 및 **Import-MDTApplication** cmdlet을 사용하여 .csv 파일의 정보에 따라 애플리케이션 목록을 가져오는 Windows PowerShell 스크립트에서 발췌한 부분입니다.  
 
 ```  
 $List=Import-CSV "C:\MDT\Import-MDT-Apps.csv"  
@@ -554,7 +554,7 @@ Import-MDTApplication –path $App.ApplicationFolder -enable "True" –Name $App
 }  
 ```  
 
- 이 예제에서 C:\MDT\Import-MDT-Apps.csv 파일에는 응용 프로그램을 가져오는 데 필요한 각 변수에 대한 필드가 포함되어 있습니다. [Import-CSV](http://technet.microsoft.com/library/dd347665.aspx) cmdlet과 함께 사용할 .csv 파일을 만드는 방법에 대한 자세한 내용은 [Import-Csv cmdlet 사용](http://technet.microsoft.com/library/ee176874.aspx)을 참조하세요.  
+ 이 예제에서 C:\MDT\Import-MDT-Apps.csv 파일에는 애플리케이션을 가져오는 데 필요한 각 변수에 대한 필드가 포함되어 있습니다. [Import-CSV](http://technet.microsoft.com/library/dd347665.aspx) cmdlet과 함께 사용할 .csv 파일을 만드는 방법에 대한 자세한 내용은 [Import-Csv cmdlet 사용](http://technet.microsoft.com/library/ee176874.aspx)을 참조하세요.  
 
  다음 단계를 수행하여 배포 공유에 있는 운영 체제, 디바이스 드라이버 및 다른 항목을 동일한 방법으로 가져올 수 있습니다.  
 
@@ -747,10 +747,10 @@ Import-MDTApplication –path $App.ApplicationFolder -enable "True" –Name $App
 
      Windows_7 폴더의 이름이 *Win_7*로 바뀝니다.  
 
-## <a name="automating-the-application-of-operating-system-service-packs-in-deployment-shares"></a>배포 공유에서 운영 체제 서비스 팩 응용 프로그램 자동화  
+## <a name="automating-the-application-of-operating-system-service-packs-in-deployment-shares"></a>배포 공유에서 운영 체제 서비스 팩 애플리케이션 자동화  
  운영 체제 서비스 팩은 소프트웨어 수명 주기의 일반적인 부분입니다. 배포 공유의 기존 운영 체제를 이러한 서비스 팩으로 업데이트하여 새로 배포되거나 새로 고친 컴퓨터가 최신 보안 권장 사항 및 구성 설정으로 최신 상태를 유지하도록 합니다.  
 
- 조직에서 각 배포 공유에 여러 운영 체제가 있는 배포 공유가 많은 경우 각 배포 공유의 운영 체제를 서비스 팩과 함께 수동으로 업데이트하는 프로세스에 시간이 많이 걸릴 수 있습니다. 배포 공유에서 운영 체제 서비스 팩의 응용 프로그램을 자동화하는 방법은 다음과 같습니다.  
+ 조직에서 각 배포 공유에 여러 운영 체제가 있는 배포 공유가 많은 경우 각 배포 공유의 운영 체제를 서비스 팩과 함께 수동으로 업데이트하는 프로세스에 시간이 많이 걸릴 수 있습니다. 배포 공유에서 운영 체제 서비스 팩의 애플리케이션을 자동화하는 방법은 다음과 같습니다.  
 
 -   [업데이트된 원본 미디어에서 운영 체제 서비스 팩의 응용 프로그램 자동화](#AutomateAppFromUSM)에서 설명한 대로 서비스 팩이 이미 포함되어 있는 업데이트된 원본 콘텐츠(예: Windows 7 SP1 미디어)를 기존 운영 체제가 있는 배포 공유의 폴더에 복사합니다.  
 
@@ -924,18 +924,18 @@ Subsection=Server-%IsServer%
 .  
 ```  
 
-## <a name="deploying-applications-based-on-earlier-application-versions"></a>이전 응용 프로그램 버전에 따라 응용 프로그램 배포  
- 기존 컴퓨터에 운영 체제를 설치할 때 컴퓨터에 설치한 것과 동일한 응용 프로그램을 설치하게 되는 경우가 많습니다. 이 경우 MDT 스크립트(특히 ZTIGather.wsf)를 사용하여 별도의 두 가지 정보 원본을 쿼리합니다.  
+## <a name="deploying-applications-based-on-earlier-application-versions"></a>이전 애플리케이션 버전에 따라 애플리케이션 배포  
+ 기존 컴퓨터에 운영 체제를 설치할 때 컴퓨터에 설치한 것과 동일한 애플리케이션을 설치하게 되는 경우가 많습니다. 이 경우 MDT 스크립트(특히 ZTIGather.wsf)를 사용하여 별도의 두 가지 정보 원본을 쿼리합니다.  
 
--   **Configuration Manager 소프트웨어 인벤토리 기능.** Configuration Manager에서 컴퓨터를 마지막으로 인벤토리에 포함할 때 설치된 각 응용 프로그램 패키지(이 경우 Windows 8.1, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2의 [프로그램 및 기능]에 나열됨)에 대한 레코드가 하나씩 포함됩니다.  
+-   **Configuration Manager 소프트웨어 인벤토리 기능.** Configuration Manager에서 컴퓨터를 마지막으로 인벤토리에 포함할 때 설치된 각 애플리케이션 패키지(이 경우 Windows 8.1, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2의 [프로그램 및 기능]에 나열됨)에 대한 레코드가 하나씩 포함됩니다.  
 
--   **매핑 테이블.** [프로그램 및 기능] 또는 [프로그램 추가/제거] 레코드에서 응용 프로그램을 설치한 패키지를 정확하게 지정하지 않아 인벤토리만으로 패키지를 자동으로 선택할 수 없으므로 각 레코드에 설치해야 하는 패키지와 프로그램을 설명합니다.  
+-   **매핑 테이블.** [프로그램 및 기능] 또는 [프로그램 추가/제거] 레코드에서 애플리케이션을 설치한 패키지를 정확하게 지정하지 않아 인벤토리만으로 패키지를 자동으로 선택할 수 없으므로 각 레코드에 설치해야 하는 패키지와 프로그램을 설명합니다.  
 
  **컴퓨터 관련 응용 프로그램 설치를 동적으로 수행하려면**  
 
-1.  MDT DB의 테이블을 사용하여 특정 패키지를 대상 운영 체제에 나열된 응용 프로그램과 연결합니다.  
+1.  MDT DB의 테이블을 사용하여 특정 패키지를 대상 운영 체제에 나열된 애플리케이션과 연결합니다.  
 
-2.  해당 패키지를 [프로그램 및 기능] 또는 [프로그램 추가/제거]에 나열된 응용 프로그램과 연결하는 데이터로 테이블을 채웁니다.
+2.  해당 패키지를 [프로그램 및 기능] 또는 [프로그램 추가/제거]에 나열된 애플리케이션과 연결하는 데이터로 테이블을 채웁니다.
 
      **테이블을 채우는 SQL 쿼리**  
 
@@ -1245,7 +1245,7 @@ Obtained AREA_CODE value from web service:  AREA_CODE = 425
 -   웹 서비스에 대한 `POST` 요청이 권장되므로 웹 서비스 호출에서 `POST`를 지원할 수 있어야 합니다.  
 
 ## <a name="connecting-to-network-resources"></a>네트워크 리소스에 연결  
- LTI 및 ZTI 배포 프로세스 중에 배포 공유를 호스팅하는 서버와 다른 서버에서 네트워크 리소스에 액세스해야 할 수 있습니다. 다른 서버에서 인증을 받아야 공유 폴더 또는 서비스에 액세스할 수 있습니다. 예를 들어 MDT 스크립트에서 사용하는 배포 공유를 호스팅하는 서버가 아닌 다른 서버의 공유 폴더에서 응용 프로그램을 설치할 수 있습니다.  
+ LTI 및 ZTI 배포 프로세스 중에 배포 공유를 호스팅하는 서버와 다른 서버에서 네트워크 리소스에 액세스해야 할 수 있습니다. 다른 서버에서 인증을 받아야 공유 폴더 또는 서비스에 액세스할 수 있습니다. 예를 들어 MDT 스크립트에서 사용하는 배포 공유를 호스팅하는 서버가 아닌 다른 서버의 공유 폴더에서 애플리케이션을 설치할 수 있습니다.  
 
 > [!NOTE]
 >  배포 공유를 호스팅하는 서버가 아닌 다른 서버에서 호스팅되는 SQL Server 데이터베이스를 쿼리하려면, *Toolkit 참조* MDT 문서에서 **Database**, **DBID**, **DBPwd**, **Instance**, **NetLib**, **Order**, **Parameters**, **ParameterCondition**, **SQLServer**, **SQLShare** 및 **Table** 속성을 참조하세요.  
@@ -1460,9 +1460,9 @@ Cscript.exe “%SCRIPTROOT%\ZTIConnect.wsf” /uncpath:unc_path
 5.  **조건** 상자에서 관련 조건을 클릭한 다음, **확인**을 클릭합니다.  
 
 ### <a name="file-properties-in-conditions"></a>조건의 파일 속성  
- 지정된 파일의 버전 및/또는 타임스탬프를 확인하는 **파일 속성** 조건을 사용하여 작업 또는 작업 그룹을 실행할지 여부를 결정합니다. 이 예에서 프로덕션 환경에는 네트워크에 추가되는 모든 새 서버에 대해 지속적으로 업데이트되고 사용되는 Windows Server 2003 이미지가 포함되어 있습니다. 환경의 모든 서버 컴퓨터는 DAO(디지털 액세스 개체) API(응용 프로그래밍 인터페이스) 버전 3.60.6815가 필요한 사용자 지정 응용 프로그램을 실행합니다.  
+ 지정된 파일의 버전 및/또는 타임스탬프를 확인하는 **파일 속성** 조건을 사용하여 작업 또는 작업 그룹을 실행할지 여부를 결정합니다. 이 예에서 프로덕션 환경에는 네트워크에 추가되는 모든 새 서버에 대해 지속적으로 업데이트되고 사용되는 Windows Server 2003 이미지가 포함되어 있습니다. 환경의 모든 서버 컴퓨터는 DAO(디지털 액세스 개체) API(애플리케이션 프로그래밍 인터페이스) 버전 3.60.6815가 필요한 사용자 지정 애플리케이션을 실행합니다.  
 
- 기존 서버가 모두 제대로 작동하고 있습니다. 그러나 이미지가 있는 네트워크에 새로 추가된 각 서버는 응용 프로그램을 실행할 수 없습니다. 다른 그룹에서 이미지를 유지 관리하고 업데이트하기 때문에 이미지와 함께 배포된 기존 버전의 DAO가 올바르지 않으면 배포 작업 순서를 변경하여 관련 버전의 DAO를 설치해야 합니다.  
+ 기존 서버가 모두 제대로 작동하고 있습니다. 그러나 이미지가 있는 네트워크에 새로 추가된 각 서버는 애플리케이션을 실행할 수 없습니다. 다른 그룹에서 이미지를 유지 관리하고 업데이트하기 때문에 이미지와 함께 배포된 기존 버전의 DAO가 올바르지 않으면 배포 작업 순서를 변경하여 관련 버전의 DAO를 설치해야 합니다.  
 
  **Configuration Manager 2007 R3의 작업 순서 단계에 파일 속성 조건을 추가하려면**  
 
@@ -1483,9 +1483,9 @@ Cscript.exe “%SCRIPTROOT%\ZTIConnect.wsf” /uncpath:unc_path
 8.  이 경우 **타임스탬프 확인** 확인란의 선택을 취소한 다음, **확인**을 클릭합니다.  
 
 ### <a name="folder-properties-in-conditions"></a>조건의 폴더 속성  
- 지정된 폴더의 타임스탬프를 확인하는 **폴더 속성** 조건을 사용하여 작업 또는 작업 그룹을 실행할지 여부를 결정합니다. 예를 들어 내부적으로 개발된 응용 프로그램이 Windows 8을 사용하도록 업데이트되는 상황을 가정해 보겠습니다. 그러나 네트워크의 모든 컴퓨터에 최신 버전의 응용 프로그램이 설치되어 있는 것은 아니며, 먼저 데이터 변환 프로세스를 수행한 후에 응용 프로그램을 업그레이드해야 합니다.  
+ 지정된 폴더의 타임스탬프를 확인하는 **폴더 속성** 조건을 사용하여 작업 또는 작업 그룹을 실행할지 여부를 결정합니다. 예를 들어 내부적으로 개발된 애플리케이션이 Windows 8을 사용하도록 업데이트되는 상황을 가정해 보겠습니다. 그러나 네트워크의 모든 컴퓨터에 최신 버전의 애플리케이션이 설치되어 있는 것은 아니며, 먼저 데이터 변환 프로세스를 수행한 후에 애플리케이션을 업그레이드해야 합니다.  
 
- 응용 프로그램이 설치된 폴더의 타임스탬프가 2007년 12월 31일 또는 그 이전인 경우, 대상 컴퓨터는 호환되지 않는 버전의 응용 프로그램을 실행하고 있으며 대상 컴퓨터에서 데이터 변환 프로세스를 실행해야 합니다. 작업 순서 단계를 조건부로 실행하여 이전 버전의 응용 프로그램이 있는 컴퓨터에서 데이터 변환 프로세스를 실행합니다.  
+ 애플리케이션이 설치된 폴더의 타임스탬프가 2007년 12월 31일 또는 그 이전인 경우, 대상 컴퓨터는 호환되지 않는 버전의 애플리케이션을 실행하고 있으며 대상 컴퓨터에서 데이터 변환 프로세스를 실행해야 합니다. 작업 순서 단계를 조건부로 실행하여 이전 버전의 애플리케이션이 있는 컴퓨터에서 데이터 변환 프로세스를 실행합니다.  
 
  **작업 순서 단계에 폴더 속성 조건을 추가하려면**  
 
@@ -1508,7 +1508,7 @@ Cscript.exe “%SCRIPTROOT%\ZTIConnect.wsf” /uncpath:unc_path
 9. **시간** 상자에서 **12:00:00 AM**을 클릭한 다음, **확인**을 클릭합니다.  
 
 ### <a name="registry-settings-in-conditions"></a>조건의 레지스트리 설정  
- **레지스트리 설정** 조건을 사용하여 레지스트리의 키와 값 및 레지스트리 값에 저장된 해당 데이터가 있는지 확인합니다. 예를 들어 작은 컴퓨터 집합에서 현재 사용되는 응용 프로그램을 Windows 8에서 실행할 수 없고 현재 Windows XP를 실행하는 컴퓨터를 업그레이드하기 위한 Windows 8 배포가 준비되어 있는 경우를 가정해 보겠습니다. 호환되지 않는 응용 프로그램에 대한 항목을 레지스트리에서 확인하고 이 항목이 있는 경우 해당 컴퓨터에 대한 배포 프로세스를 중단하는 조건을 순서의 첫 번째 작업에 만듭니다.  
+ **레지스트리 설정** 조건을 사용하여 레지스트리의 키와 값 및 레지스트리 값에 저장된 해당 데이터가 있는지 확인합니다. 예를 들어 작은 컴퓨터 집합에서 현재 사용되는 애플리케이션을 Windows 8에서 실행할 수 없고 현재 Windows XP를 실행하는 컴퓨터를 업그레이드하기 위한 Windows 8 배포가 준비되어 있는 경우를 가정해 보겠습니다. 호환되지 않는 애플리케이션에 대한 항목을 레지스트리에서 확인하고 이 항목이 있는 경우 해당 컴퓨터에 대한 배포 프로세스를 중단하는 조건을 순서의 첫 번째 작업에 만듭니다.  
 
  **작업 순서 단계에 레지스트리 설정 조건을 추가하려면**  
 
@@ -1640,7 +1640,7 @@ IF ((Computer Model IS “Contoso 1950”) AND (operating system=2003 OR operati
 ###  <a name="AddContent"></a> MDT에 콘텐츠 추가  
  Deployment 워크벤치를 사용하여 마스터 배포 서버에 콘텐츠를 채우고 다음 섹션에서 설명한 대로 MDT DB를 만들고 채웁니다. 데이터베이스에 채워지는 콘텐츠에 대한 내용은 다음과 같습니다.  
 
--   응용 프로그램과 관련하여 *Microsoft Deployment Toolkit 사용* MDT 문서에서 "Deployment 워크벤치에서 응용 프로그램 구성" 섹션을 참조하세요.  
+-   애플리케이션과 관련하여 *Microsoft Deployment Toolkit 사용* MDT 문서에서 "Deployment 워크벤치에서 애플리케이션 구성" 섹션을 참조하세요.  
 
 -   운영 체제와 관련하여 *Microsoft Deployment Toolkit 사용* MDT 문서에서 "Deployment 워크벤치에서 운영 체제 구성" 섹션을 참조하세요.  
 
@@ -2256,7 +2256,7 @@ ParameterCondition=OR
 >  업데이트 프로세스가 완료되면 새 LiteTouch_x86 및 LiteTouch_x64 Windows PE 환경을 Windows 배포 서비스에 다시 추가하거나 배포 시 사용할 부팅 미디어로 굽습니다.  
 
 ## <a name="replacing-an-existing-computer-with-a-new-computer-using-lite-touch-installation"></a>LTI를 사용하여 기존 컴퓨터를 새 컴퓨터로 바꾸기  
- MDT를 사용하여 엔터프라이즈 아키텍처의 기존 컴퓨터를 대체할 새 컴퓨터에 이미지를 배포할 수 있습니다. 이러한 상황은 운영 체제 간에 업그레이드하거나(새 운영 체제에 새 하드웨어가 필요할 수 있음) 조직에서 기존 응용 프로그램에 대해 더 새롭고 빠른 컴퓨터가 필요한 경우에 발생할 수 있습니다.  
+ MDT를 사용하여 엔터프라이즈 아키텍처의 기존 컴퓨터를 대체할 새 컴퓨터에 이미지를 배포할 수 있습니다. 이러한 상황은 운영 체제 간에 업그레이드하거나(새 운영 체제에 새 하드웨어가 필요할 수 있음) 조직에서 기존 애플리케이션에 대해 더 새롭고 빠른 컴퓨터가 필요한 경우에 발생할 수 있습니다.  
 
  기존 컴퓨터를 새 컴퓨터로 대체할 때 사용자 계정 및 사용자 상태 데이터와 같이 컴퓨터 간에 마이그레이션할 모든 설정을 고려하는 것이 좋습니다. 또한 마이그레이션이 실패하는 경우에 대비하여 복구 솔루션도 만들어야 합니다.  
 
@@ -2504,7 +2504,7 @@ ParameterCondition=OR
  다음 섹션에서는 MDT가 배포 서버에 구성되어 있다고 가정합니다.  
 
 ###  <a name="ChooseAppropLanguage"></a> 적절한 스크립팅 언어 선택  
- Windows 또는 Windows PE에서 실행될 수 있는 코드는 응용 프로그램 설치 또는 MDT 작업 순서 단계를 통해 호출할 수 있지만 .vbs 또는 .wsf 파일 형식의 스크립트를 사용하는 것이 좋습니다.  
+ Windows 또는 Windows PE에서 실행될 수 있는 코드는 애플리케이션 설치 또는 MDT 작업 순서 단계를 통해 호출할 수 있지만 .vbs 또는 .wsf 파일 형식의 스크립트를 사용하는 것이 좋습니다.  
 
  .wsf 파일을 사용할 때의 이점은 이미 ZTI 및 LTI 프로세스에서 사용하는 미리 정의된 일부 함수 외에도 기본 제공되는 로깅에 있습니다. 이러한 함수는 MDT와 함께 배포되는 ZTIUtility 스크립트에서 사용할 수 있습니다.  
 
@@ -2674,14 +2674,14 @@ End Class
 
  또한 일관된 로깅을 보장하는 사용자 지정 코드를 통합하는 데 가장 자주 사용되는 방법은 다음과 같습니다.  
 
--   MDT 응용 프로그램으로 코드 배포  
+-   MDT 애플리케이션으로 코드 배포  
 
 -   MDT 작업 순서 명령으로 코드 시작  
 
 -   사용자 종료 스크립트로 코드 시작  
 
-#### <a name="deploy-custom-code-as-an-mdt-application"></a>MDT 응용 프로그램으로 사용자 지정 코드 배포  
- 사용자 지정 배포 코드는 Deployment 워크벤치로 가져와 다른 응용 프로그램과 동일한 방식으로 관리할 수 있습니다.  
+#### <a name="deploy-custom-code-as-an-mdt-application"></a>MDT 애플리케이션으로 사용자 지정 코드 배포  
+ 사용자 지정 배포 코드는 Deployment 워크벤치로 가져와 다른 애플리케이션과 동일한 방식으로 관리할 수 있습니다.  
 
  **사용자 지정 배포 코드를 실행하는 새 응용 프로그램을 만들려면**  
 
@@ -2691,21 +2691,21 @@ End Class
 
 3.  Deployment 워크벤치 콘솔 트리에서 Deployment Shares/*deployment_share*/Applications로 이동합니다. 여기서 *deployment_share*는 구성할 배포 공유의 이름입니다.  
 
-4.  [작업] 창에서 **새 응용 프로그램**을 클릭합니다.  
+4.  [작업] 창에서 **새 애플리케이션**을 클릭합니다.  
 
-     새 응용 프로그램 마법사가 시작됩니다.  
+     새 애플리케이션 마법사가 시작됩니다.  
 
-5.  다음 정보를 사용하여 새 응용 프로그램 마법사를 완성합니다. 달리 지정하지 않으면 기본값을 적용합니다.  
+5.  다음 정보를 사용하여 새 애플리케이션 마법사를 완성합니다. 달리 지정하지 않으면 기본값을 적용합니다.  
 
     |**마법사 페이지**|**수행할 작업**|  
     |-|-|  
     |**응용 프로그램 종류**|**원본 파일이 없는 응용 프로그램 또는 네트워크의 다른 위치**를 클릭하고, **다음**을 클릭합니다.|  
-    |**세부 정보**|응용 프로그램의 정보에 따라 이 페이지를 완성하고 **다음**을 클릭합니다.|  
+    |**세부 정보**|애플리케이션의 정보에 따라 이 페이지를 완성하고 **다음**을 클릭합니다.|  
     |**명령 정보**|1.  **명령줄** 상자에서 **cscript.exe %SCRIPTROOT%\custom_code**를 입력합니다. 여기서 *custom_code*는 개발된 사용자 지정 코드의 이름입니다.<br />2.  **작업 디렉터리** 상자에서 ***working_directory***를 입력합니다. 여기서 working_directory는 사용자 지정 코드의 작업 디렉터리 이름이며, 일반적으로 **명령줄** 상자에 지정된 것과 동일한 폴더입니다.<br />3.  **다음**을 클릭합니다.|  
     |**요약**|구성 설정이 올바른지 확인하고, **다음**을 클릭합니다.|  
     |**확인**|**마침**을 클릭합니다.|  
 
- 응용 프로그램이 Deployment 워크벤치의 응용 프로그램 노드에 표시됩니다.  
+ 애플리케이션이 Deployment 워크벤치의 애플리케이션 노드에 표시됩니다.  
 
 #### <a name="add-the-custom-code-as-a-task-sequence-step"></a>사용자 지정 코드를 작업 순서 단계로 추가  
  사용자 지정 배포 코드는 작업 순서 내의 임의의 지점에서 직접 호출할 수 있습니다. 이렇게 하면 일반적인 작업 순서 규칙 및 옵션에 액세스할 수 있습니다.  
@@ -2767,7 +2767,7 @@ End Class
 
 -   압축을 풀 수 있고 드라이버를 Deployment 워크벤치에 가져오는 데 사용되는 .inf 파일이 포함된 패키지  
 
--   기존 응용 프로그램 설치 프로세스를 사용하여 설치해야 하는 응용 프로그램  
+-   기존 애플리케이션 설치 프로세스를 사용하여 설치해야 하는 애플리케이션  
 
  .inf 파일에 액세스하기 위해 추출할 수 있는 디바이스 드라이버 패키지는 먼저 Deployment 워크벤치의 기본 제공 노드에 드라이버를 가져와서 MDT 자동 드라이버 검색 및 설치 프로세스를 사용할 수 있습니다.  
 
@@ -2834,9 +2834,9 @@ End Class
 
 3.  Deployment 워크벤치 콘솔 트리에서 Deployment Workbench/Deployment Shares/*deployment_share*/Applications로 이동합니다. 여기서 *deployment_share*는 구성할 배포 공유의 이름입니다.  
 
-4.  [작업] 창에서 **새 응용 프로그램**을 클릭합니다.  
+4.  [작업] 창에서 **새 애플리케이션**을 클릭합니다.  
 
-     새 응용 프로그램 마법사가 시작됩니다.  
+     새 애플리케이션 마법사가 시작됩니다.  
 
 5.  **응용 프로그램 유형** 페이지에서 **원본 파일이 있는 응용 프로그램**을 클릭하고, **다음**을 클릭합니다.  
 
@@ -2854,7 +2854,7 @@ End Class
 
 12. **확인** 페이지에서 **마침**을 클릭합니다.  
 
- 응용 프로그램을 Deployment 워크벤치로 가져온 후 올바른 하드웨어에서 실행될 때만 응용 프로그램이 설치되도록 적절한 논리를 사용하여 배포 프로세스에 추가합니다. 이를 달성하기 위한 여러 가지 방법은 다음과 같습니다.  
+ 애플리케이션을 Deployment 워크벤치로 가져온 후 올바른 하드웨어에서 실행될 때만 애플리케이션이 설치되도록 적절한 논리를 사용하여 배포 프로세스에 추가합니다. 이를 달성하기 위한 여러 가지 방법은 다음과 같습니다.  
 
 -   디바이스 드라이버 응용 프로그램을 배포 작업 순서의 일부로 지정합니다.  
 
@@ -2871,7 +2871,7 @@ End Class
 
 -   각 하드웨어 모델에 대해 새 작업 순서 그룹을 만든 다음, 컴퓨터가 특정 하드웨어 종류와 일치하는 경우 해당 작업 그룹을 실행하는 쿼리를 추가합니다.  
 
--   하드웨어 관련 응용 프로그램에 대한 작업 순서 그룹을 만든 다음, 각 작업 순서 동작에 대한 쿼리를 추가하여 각 작업 순서 단계가 하드웨어 종류에 대해 평가되고 일치하는 항목이 있는 경우에만 실행됩니다.  
+-   하드웨어 관련 애플리케이션에 대한 작업 순서 그룹을 만든 다음, 각 작업 순서 동작에 대한 쿼리를 추가하여 각 작업 순서 단계가 하드웨어 종류에 대해 평가되고 일치하는 항목이 있는 경우에만 실행됩니다.  
 
  **각 하드웨어 종류에 대한 새 작업 순서 그룹을 만들려면**  
 
@@ -2934,7 +2934,7 @@ End Class
 
      **응용 프로그램 설치** 작업 순서 단계가 세부 정보 창에 표시됩니다.  
 
-8.  세부 정보 창에서 **응용 프로그램 설치**를 클릭합니다.  
+8.  세부 정보 창에서 **애플리케이션 설치**를 클릭합니다.  
 
 9. **속성** 탭에서 **단일 응용 프로그램 설치**를 클릭하고, **응용 프로그램 설치** 목록에서 ***hardware_application***을 선택합니다. 여기서 *hardware_application*은 하드웨어 관련 응용 프로그램을 설치하는 응용 프로그램입니다.  
 
@@ -2944,7 +2944,7 @@ End Class
 #### <a name="specify-the-device-driver-application-in-customsettingsini"></a>CustomSettings.ini에 디바이스 드라이버 응용 프로그램 지정  
  LTI 또는 ZTI 배포가 시작되면 완료할 첫 번째 작업 중 하나는 BootStrap.ini 및 CustomSettings.ini 제어 파일을 처리하는 것입니다. 이러한 파일에는 모두 배포를 동적으로 사용자 지정하는 데 사용할 수 있는 규칙이 포함되어 있습니다.  
 
- MDT에서 CustomSettings.ini 파일을 처리하는 방식으로 인해 특정 조건에 따라 응용 프로그램을 추가하는 데 사용할 수 있습니다. 이 논리는 특정 하드웨어 종류에 따라 배포하는 동안 디바이스 드라이버 관련 응용 프로그램을 추가하는 데 사용됩니다. 응용 프로그램은 CustomSettings.ini에서 배포 공유의 Applications.xml 파일에 있는 응용 프로그램의 GUID를 통해 참조됩니다.  
+ MDT에서 CustomSettings.ini 파일을 처리하는 방식으로 인해 특정 조건에 따라 애플리케이션을 추가하는 데 사용할 수 있습니다. 이 논리는 특정 하드웨어 종류에 따라 배포하는 동안 디바이스 드라이버 관련 응용 프로그램을 추가하는 데 사용됩니다. 애플리케이션은 CustomSettings.ini에서 배포 공유의 Applications.xml 파일에 있는 애플리케이션의 GUID를 통해 참조됩니다.  
 
  **가져온 응용 프로그램의 GUID를 찾으려면**  
 
@@ -2952,9 +2952,9 @@ End Class
 
 2.  Application.xml 파일을 찾아서 엽니다.  
 
-3.  필요한 응용 프로그램을 찾습니다.  
+3.  필요한 애플리케이션을 찾습니다.  
 
-4.  응용 프로그램 `<guid>` 태그를 묶은 줄(예: `<application guid={c303fa6e-3a4d-425e-8102-77db9310e4d0}>`)을 찾아 응용 프로그램 GUID를 찾습니다.  
+4.  애플리케이션 `<guid>` 태그를 묶은 줄(예: `<application guid={c303fa6e-3a4d-425e-8102-77db9310e4d0}>`)을 찾아 애플리케이션 GUID를 찾습니다.  
 
  초기화 프로세스의 일환으로 LTI 및 ZTI 프로세스는 모두 실행 중인 컴퓨터에 대한 정보를 수집합니다. 이 프로세스의 일부로 WMI 쿼리가 수행되고, 제조업체와 모델에 대한 **Win32_ComputerSystem** 클래스의 값이 각각 **%Make%** 및 **%Model%** 변수로 채워집니다.  
 
@@ -2980,15 +2980,15 @@ MandatoryApplications001={1D7DF331-47B7-472C-87B3-442597EC2F7D}
 MandatoryApplications001={c303fa6e-3a4d-425e-8102-77db9310e4d0}  
 ```  
 
- 다음 속성을 사용하여 응용 프로그램을 CustomSettings.ini에 지정합니다.  
+ 다음 속성을 사용하여 애플리케이션을 CustomSettings.ini에 지정합니다.  
 
--   **Applications**. 배포 관리자가 CustomSettings.ini에서 **SkipApplications=YES**를 지정하여 배포 프로세스의 일부로 응용 프로그램 마법사를 표시하지 않으려는 경우에 이 속성을 사용할 수 있습니다.  
+-   **Applications**. 배포 관리자가 CustomSettings.ini에서 **SkipApplications=YES**를 지정하여 배포 프로세스의 일부로 애플리케이션 마법사를 표시하지 않으려는 경우에 이 속성을 사용할 수 있습니다.  
 
--   **MandatoryApplications**. 배포 관리자가 배포 중에 응용 프로그램 마법사를 표시하여 배포 엔지니어가 배포 중에 추가 응용 프로그램을 선택할 수 있도록 하려는 경우에 이 속성을 사용할 수 있습니다.  
+-   **MandatoryApplications**. 배포 관리자가 배포 중에 애플리케이션 마법사를 표시하여 배포 엔지니어가 배포 중에 추가 애플리케이션을 선택할 수 있도록 하려는 경우에 이 속성을 사용할 수 있습니다.  
 
      **MandatoryApplications** 속성(예: **SkipApplications=NO**) 없이 응용 프로그램 마법사를 사용하면 **Applications** 속성으로 지정된 응용 프로그램을 덮어쓰게 됩니다.  
 
-     이전 샘플에서는 **%Make%** 및 **%Model%** 변수 값을 사용하여 응용 프로그램 목록을 작성하는 방법을 동적으로 조작하는 방법을 보여 줍니다. 각 하드웨어 종류의 제조업체 및 모델에 대한 값은 다음 방법 중 하나를 사용하여 찾을 수 있습니다.  
+     이전 샘플에서는 **%Make%** 및 **%Model%** 변수 값을 사용하여 애플리케이션 목록을 작성하는 방법을 동적으로 조작하는 방법을 보여 줍니다. 각 하드웨어 종류의 제조업체 및 모델에 대한 값은 다음 방법 중 하나를 사용하여 찾을 수 있습니다.  
 
 -   **시스템 정보 도구**. 이 도구의 시스템 요약 노드를 사용하여 **시스템 제조업체**(make) 및 **시스템 모델**(model)을 식별합니다.  
 
@@ -3022,7 +3022,7 @@ MandatoryApplications001={c303fa6e-3a4d-425e-8102-77db9310e4d0}
 
 11. **확인** 페이지에서 **마침**을 클릭합니다.  
 
- 기본적으로 사용 가능한 모든 응용 프로그램은 LTI 배포 중에 Windows 배포 마법사에 표시됩니다. 디바이스 드라이버 관련 응용 프로그램은 특정 하드웨어 종류에만 적용되므로 항상 표시되지 않을 수도 있습니다. CustomSettings.ini에 디바이스 드라이버 관련 응용 프로그램 패키지를 지정하면, 응용 프로그램 구성의 **배포 마법사에서 응용 프로그램 숨기기** 옵션을 사용하여 응용 프로그램을 숨길 수 있습니다.  
+ 기본적으로 사용 가능한 모든 애플리케이션은 LTI 배포 중에 Windows 배포 마법사에 표시됩니다. 디바이스 드라이버 관련 응용 프로그램은 특정 하드웨어 종류에만 적용되므로 항상 표시되지 않을 수도 있습니다. CustomSettings.ini에 디바이스 드라이버 관련 응용 프로그램 패키지를 지정하면, 응용 프로그램 구성의 **배포 마법사에서 응용 프로그램 숨기기** 옵션을 사용하여 응용 프로그램을 숨길 수 있습니다.  
 
  **배포 마법사에서 응용 프로그램을 숨기려면**  
 
@@ -3030,7 +3030,7 @@ MandatoryApplications001={c303fa6e-3a4d-425e-8102-77db9310e4d0}
 
 2.  Deployment 워크벤치 콘솔 트리에서 Deployment Workbench/Deployment Shares/*deployment_share*/Applications로 이동합니다. 여기서 *deployment_share*는 구성할 배포 공유의 이름입니다.  
 
-3.  세부 정보 창에서 ***device_driver_application***을 클릭합니다. 여기서 *device_driver_application*은 배포 마법사에서 숨길 응용 프로그램입니다.  
+3.  세부 정보 창에서 ***device_driver_application***을 클릭합니다. 여기서 *device_driver_application*은 배포 마법사에서 숨길 애플리케이션입니다.  
 
 4.  [작업] 창에서 **속성**을 클릭합니다.  
 
@@ -3049,7 +3049,7 @@ MandatoryApplications001={c303fa6e-3a4d-425e-8102-77db9310e4d0}
 
 -   WMI 제조업체(make) 및 모델 쿼리를 사용하여 컴퓨터의 제조업체 및 모델을 검색합니다.  
 
- 만든 각 데이터베이스 항목에 대해 배포 속성, 응용 프로그램, Configuration Manager 패키지 사용 여부 및 관리자를 지정할 수 있습니다. 데이터베이스에 제조업체 및 모델 항목을 만들면 필요한 하드웨어 관련 디바이스 드라이버 응용 프로그램을 추가할 수 있습니다.  
+ 만든 각 데이터베이스 항목에 대해 배포 속성, 애플리케이션, Configuration Manager 패키지 사용 여부 및 관리자를 지정할 수 있습니다. 데이터베이스에 제조업체 및 모델 항목을 만들면 필요한 하드웨어 관련 디바이스 드라이버 응용 프로그램을 추가할 수 있습니다.  
 
  **장치 드라이버 응용 프로그램을 설치할 수 있도록 MDT DB에 항목을 만들려면**  
 
@@ -3195,7 +3195,7 @@ MandatoryApplications001={c303fa6e-3a4d-425e-8102-77db9310e4d0}
 15. 업데이트된 부팅 WIM을 Windows 배포 서비스로 가져옵니다.  
 
 ### <a name="option-2-deploy-an-operating-system-image-from-the-windows-deployment-services-store"></a>옵션 2: Windows 배포 서비스 저장소에서 운영 체제 이미지 배포  
- 운영 체제 배포에 Windows 배포 서비스를 이미 사용하고 있는 경우, 자체 저장소를 사용하는 대신 이미 사용 중인 Windows 배포 서비스 운영 체제 이미지를 참조하고, 드라이버 관리, 응용 프로그램 배포, 업데이트 설치, 규칙 처리 및 기타 MDT 기능으로 Windows 배포 서비스 배포를 보완하도록 구성하여 MDT 기능을 확장합니다. MDT에서 Windows 배포 서비스 운영 체제 이미지를 참조한 후에는 MDT 배포 공유에 준비된 모든 운영 체제처럼 이를 처리할 수 있습니다.  
+ 운영 체제 배포에 Windows 배포 서비스를 이미 사용하고 있는 경우, 자체 저장소를 사용하는 대신 이미 사용 중인 Windows 배포 서비스 운영 체제 이미지를 참조하고, 드라이버 관리, 애플리케이션 배포, 업데이트 설치, 규칙 처리 및 기타 MDT 기능으로 Windows 배포 서비스 배포를 보완하도록 구성하여 MDT 기능을 확장합니다. MDT에서 Windows 배포 서비스 운영 체제 이미지를 참조한 후에는 MDT 배포 공유에 준비된 모든 운영 체제처럼 이를 처리할 수 있습니다.  
 
  **Windows 배포 서비스 운영 체제 이미지를 참조하려면**  
 
@@ -3354,7 +3354,7 @@ MandatoryApplications001={c303fa6e-3a4d-425e-8102-77db9310e4d0}
 
     -   운영 체제  
 
-    -   응용 프로그램  
+    -   애플리케이션  
 
     -   패키지  
 
@@ -3370,7 +3370,7 @@ MandatoryApplications001={c303fa6e-3a4d-425e-8102-77db9310e4d0}
 
      이 단계를 수행하는 방법에 대한 자세한 내용은 *Microsoft Deployment Toolkit 사용* MDT 문서에서 "Deployment 워크벤치에서 작업 순서 구성" 섹션을 참조하세요.  
 
-4.  OEM 배포에 필요한 응용 프로그램, 운영 체제, 드라이버, 패키지 및 작업 순서가 포함된 선택 프로필을 만듭니다.  
+4.  OEM 배포에 필요한 애플리케이션, 운영 체제, 드라이버, 패키지 및 작업 순서가 포함된 선택 프로필을 만듭니다.  
 
      이 단계를 수행하는 방법에 대한 자세한 내용은 *Microsoft Deployment Toolkit 사용* MDT 문서에서 "선택 프로필 관리" 섹션을 참조하세요.  
 
@@ -3588,7 +3588,7 @@ Remove-item -path "DS002:\Operating Systems\Windows Vista HOMEBASIC in Windows V
 ```  
 
 ###  <a name="CreateApplication"></a> 응용 프로그램 만들기  
- 다음 Windows PowerShell 명령은 D:\\Software\\Adobe\\Reader 9의 원본 파일을 사용하여 Adobe Reader 9 응용 프로그램을 만듭니다. 응용 프로그램은 D:\\Production Deployment Share에 있는 프로덕션 배포 공유에 저장됩니다.  
+ 다음 Windows PowerShell 명령은 D:\\Software\\Adobe\\Reader 9의 원본 파일을 사용하여 Adobe Reader 9 애플리케이션을 만듭니다. 애플리케이션은 D:\\Production Deployment Share에 있는 프로덕션 배포 공유에 저장됩니다.  
 
 -   ```  
     Add-PSSnapIn Microsoft.BDD.PSSnapIn  
@@ -3603,7 +3603,7 @@ Remove-item -path "DS002:\Operating Systems\Windows Vista HOMEBASIC in Windows V
     ```  
 
 ###  <a name="DeleteApplication"></a> 응용 프로그램 삭제  
- 다음 Windows PowerShell 명령은 프로덕션 배포 공유에서 Adobe Reader 9 응용 프로그램을 삭제합니다.  
+ 다음 Windows PowerShell 명령은 프로덕션 배포 공유에서 Adobe Reader 9 애플리케이션을 삭제합니다.  
 
 ```  
 Remove-item -path "DS002:\Applications\Adobe Reader 9" -Verbose  
@@ -3647,7 +3647,7 @@ Remove-item -path "DS002:\Task Sequences\Windows Vista Business Production Build
     ```  
 
 ###  <a name="CreateSelectProfile"></a> 선택 프로필 만들기  
- 다음 Windows PowerShell 명령은 새 응용 프로그램 선택 프로필을 만듭니다.  
+ 다음 Windows PowerShell 명령은 새 애플리케이션 선택 프로필을 만듭니다.  
 
 -   ```  
     Add-PSSnapIn Microsoft.BDD.PSSnapIn  

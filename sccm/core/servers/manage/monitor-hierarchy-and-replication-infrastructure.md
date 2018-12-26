@@ -65,7 +65,7 @@ System Center Configuration Manager에서 인프라 및 작업을 모니터링�
    콘텐츠를 모니터링하는 방법에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
 
 특정 유형의 콘텐츠 배포를 모니터링하는 방법에 대한 정보:
--   응용 프로그램을 모니터링하려면 [System Center Configuration Manager에서 응용 프로그램 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)을 참조하세요.  
+-   애플리케이션을 모니터링하려면 [System Center Configuration Manager에서 애플리케이션 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)을 참조하세요.  
 
 -   패키지 및 프로그램을 모니터링하려면 [System Center Configuration Manager의 패키지 및 프로그램](../../../apps/deploy-use/packages-and-programs.md)에서 패키지와 프로그램을 관리하는 방법을 참조하세요.  
 

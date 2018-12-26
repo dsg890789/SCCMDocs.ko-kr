@@ -73,8 +73,8 @@ ms.locfileid: "53247529"
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
-#### <a name="updates-for-application-transport-security"></a>응용 프로그램 전송 보안 업데이트 
-<!--748318--> Microsoft Intune은 TLS(전송 계층 보안) 1.2 이상을 지원하여 동급 최고의 암호화 기능을 제공하고, Intune의 보안을 기본적으로 강화하며, Microsoft Office 365와 같은 다른 Microsoft 서비스와 호환될 수 있도록 합니다. 이 요구 사항을 충족하기 위해 iOS 및 macOS 회사 포털은 Apple의 업데이트된 ATS(응용 프로그램 전송 보안) 요구 사항(TLS 1.2 이상도 필요)을 적용합니다. ATS는 HTTPS를 통한 모든 앱 통신에 더 엄격한 보안을 적용하는 데 사용됩니다. 이 변경 사항은 iOS 및 macOS 회사 포털 앱을 사용하는 Intune 고객에게 영향을 줍니다. 자세한 내용은 [Intune moving to TLS 1.2 for encryption](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)(Intune이 암호화를 위해 TLS 1.2로 전환)을 참조하세요.
+#### <a name="updates-for-application-transport-security"></a>애플리케이션 전송 보안 업데이트 
+<!--748318--> Microsoft Intune은 TLS(전송 계층 보안) 1.2 이상을 지원하여 동급 최고의 암호화 기능을 제공하고, Intune의 보안을 기본적으로 강화하며, Microsoft Office 365와 같은 다른 Microsoft 서비스와 호환될 수 있도록 합니다. 이 요구 사항을 충족하기 위해 iOS 및 macOS 회사 포털은 Apple의 업데이트된 ATS(애플리케이션 전송 보안) 요구 사항(TLS 1.2 이상도 필요)을 적용합니다. ATS는 HTTPS를 통한 모든 앱 통신에 더 엄격한 보안을 적용하는 데 사용됩니다. 이 변경 사항은 iOS 및 macOS 회사 포털 앱을 사용하는 Intune 고객에게 영향을 줍니다. 자세한 내용은 [Intune moving to TLS 1.2 for encryption](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)(Intune이 암호화를 위해 TLS 1.2로 전환)을 참조하세요.
 
 #### <a name="remove-an-email-profile-from-a-device-even-when-theres-only-one-email-profile"></a>하나의 이메일 프로필만 있는 경우에도 디바이스에서 이메일 프로필 제거 
 <!--1818139--> 이전에는 장치에 있는 유일한 이메일 프로필을 제거할 수 없었습니다. 이 업데이트를 통해 이 동작이 변경됩니다. 이제는 디바이스에 이메일 프로필이 유일한 경우에도 이메일 프로필을 삭제할 수 있습니다. 
@@ -92,7 +92,7 @@ ms.locfileid: "53247529"
 <!--2637704-->  
 이제 iOS 디바이스에서 생체 인식 내용을 변경한 후 PIN을 입력하라는 메시지가 사용자에게 표시됩니다. 여기에는 등록된 지문 또는 얼굴 ID의 변경이 포함됩니다. 프롬프트의 타이밍은 ‘다음 시간 이후에 액세스 요구 사항 다시 확인:’ 시간 제한의 구성 방법에 따라 다릅니다.  PIN이 설정되지 않은 경우에는 설정하라는 메시지가 사용자에게 표시됩니다.  
 
-이 기능은 iOS에만 제공되고 iOS용 Intune 앱 SDK, 버전 8.1.1 이상을 통합하는 응용 프로그램의 참여가 필요합니다. 대상 응용 프로그램에 동작이 적용될 수 있도록 SDK의 통합이 필요합니다. 이 통합은 롤링 기반으로 특정 응용 프로그램 팀에서 수행합니다. 참여하는 일부 앱에는 WXP, Outlook, Managed Browser 및 Yammer가 포함됩니다.
+이 기능은 iOS에만 제공되고 iOS용 Intune 앱 SDK, 버전 8.1.1 이상을 통합하는 애플리케이션의 참여가 필요합니다. 대상 애플리케이션에 동작이 적용될 수 있도록 SDK의 통합이 필요합니다. 이 통합은 롤링 기반으로 특정 애플리케이션 팀에서 수행합니다. 참여하는 일부 앱에는 WXP, Outlook, Managed Browser 및 Yammer가 포함됩니다.
 
 #### <a name="end-user-device-and-app-content-menu"></a>최종 사용자 디바이스 및 앱 콘텐츠 메뉴 
 <!--2771453-->  
@@ -155,7 +155,7 @@ Intune의 이전 배지 스타일을 사용하고 있는 경우 서류 가방 �
 <!--1058963--> [장치 그룹 매핑](https://docs.microsoft.com/intune/device-group-mapping)을 사용하도록 설정한 경우 이제 Windows 10에서 사용자가 **설정** > **계정** > **회사 또는 학교 액세스**의 **연결** 단추를 통해 등록할 때 장치 범주를 선택하라는 메시지가 표시됩니다.  
 
 #### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Windows용 회사 포털 앱의 새 검색 환경 
-<!--2317227--> 이제 Windows용 회사 포털 앱에서 앱을 검색하거나 탐색하는 경우 기존 **타일** 보기 및 새로 추가한 **세부 정보** 보기 사이를 토글합니다. 새 보기는 이름, 게시자, 게시 날짜 및 설치 상태와 같은 응용 프로그램 세부 정보를 나열합니다. 
+<!--2317227--> 이제 Windows용 회사 포털 앱에서 앱을 검색하거나 탐색하는 경우 기존 **타일** 보기 및 새로 추가한 **세부 정보** 보기 사이를 토글합니다. 새 보기는 이름, 게시자, 게시 날짜 및 설치 상태와 같은 애플리케이션 세부 정보를 나열합니다. 
 
 **앱** 페이지의 **설치된** 보기를 사용하면 완료 및 진행 중인 앱 설치에 대한 세부 정보를 볼 수 있습니다. 새 보기의 모습을 보려면 [UI의 새로운 기능](https://docs.microsoft.com/intune/whats-new-app-ui)을 참조하세요.
 
@@ -341,7 +341,7 @@ Windows 10 버전 1607 이상의 최종 사용자에게 Microsoft Store에 있�
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
 - **이제 Android Enterprise에 사용 가능한 응용 프로그램 배포가 지원됩니다.**    
-  이제 Android Enterprise(이전의 Android for Work) 앱을 **필수** 외에도 **사용 가능**으로 배포할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 Android 응용 프로그램 만들기](/sccm/mdm/deploy-use/creating-android-applications)를 참조하세요.
+  이제 Android Enterprise(이전의 Android for Work) 앱을 **필수** 외에도 **사용 가능**으로 배포할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 Android 애플리케이션 만들기](/sccm/mdm/deploy-use/creating-android-applications)를 참조하세요.
 
 
 
@@ -390,7 +390,7 @@ Windows 10 버전 1607 이상의 최종 사용자에게 Microsoft Store에 있�
   <!--1321366 -->
 
 - **새 모바일 응용 프로그램 관리 정책 설정**     
-  모바일 응용 프로그램 관리 정책 설정에 다음과 같은 설정이 추가되었습니다.
+  모바일 애플리케이션 관리 정책 설정에 다음과 같은 설정이 추가되었습니다.
   - **연락처 동기화 사용 안 함**: 장치의 네이티브 연락처 앱으로 데이터를 저장 하는 앱을 방지 합니다.
   - **인쇄 사용 안 함**: 인쇄 작업 또는 학교 데이터에서 앱을 방지합니다.
   <!-- 1324760 -->    

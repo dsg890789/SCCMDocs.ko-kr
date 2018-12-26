@@ -203,7 +203,7 @@ CMPivot 창은 다음과 같은 요소를 포함합니다.
 ![브라우저 서비스 및 스크립트 실행 작업에 대한 CMPivot 예제](media/cmpivot-example1.png)
 
 
-### <a name="example-2-proactively-resolve-application-failures"></a>예제 2: 응용 프로그램 오류 사전 해결  
+### <a name="example-2-proactively-resolve-application-failures"></a>예제 2: 애플리케이션 오류 사전 해결  
 
 작업 유지 관리를 사용하여 사전 대응하려면 일주일에 한 번 관리하는 서버의 컬렉션에 대해 CMPivot을 실행하고, **AppCrash** 엔터티에서 **모두 쿼리**를 선택합니다. **FileName** 열을 마우스 오른쪽 단추로 클릭하고 **오름차순 정렬**을 선택합니다. 하나의 디바이스는 매일 약 03:00의 타임스탬프로 sqlsqm.exe에 대한 7개의 결과를 반환합니다. 행 중 하나에서 파일 이름을 선택하고, 마우스 오른쪽 단추로 선택하고 **Bing으로 검색**을 선택합니다. 웹 브라우저에서 검색 결과를 검색하여 이 문제에 대한 더 많은 정보 및 해결이 있는 Microsoft 지원 문서를 찾습니다. 
 

@@ -99,13 +99,13 @@ ms.locfileid: "52456263"
 
 
 #### <a name="simulate-deployment"></a>배포 시뮬레이트
- **응용 프로그램 배포 시뮬레이트 마법사**를 엽니다. 이 마법사를 통해 응용 프로그램을 설치하거나 제거하지 않고도 응용 프로그램 배포 결과를 테스트할 수 있습니다. 자세한 내용은 [응용 프로그램 배포 시뮬레이트](/sccm/apps/deploy-use/simulate-application-deployments)를 참조하세요.
+ **응용 프로그램 배포 시뮬레이트 마법사**를 엽니다. 이 마법사를 통해 애플리케이션을 설치하거나 제거하지 않고도 애플리케이션 배포 결과를 테스트할 수 있습니다. 자세한 내용은 [애플리케이션 배포 시뮬레이트](/sccm/apps/deploy-use/simulate-application-deployments)를 참조하세요.
 
 
 #### <a name="deploy"></a>배포:
  다음 옵션이 표시됩니다.  
 
- - **응용 프로그램**: **소프트웨어 배포 마법사**를 엽니다. 선택한 컬렉션에 대한 응용 프로그램 배포를 선택하고 구성하세요. 자세한 내용은 [응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications)를 참조하세요.  
+ - **응용 프로그램**: **소프트웨어 배포 마법사**를 엽니다. 선택한 컬렉션에 대한 애플리케이션 배포를 선택하고 구성하세요. 자세한 내용은 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications)를 참조하세요.  
 
  - **프로그램**: **소프트웨어 배포 마법사**를 엽니다. 선택한 컬렉션에 대한 패키지 및 프로그램 배포를 선택하고 구성하세요. 자세한 내용은 [패키지 및 프로그램](/sccm/apps/deploy-use/packages-and-programs)을 참조하세요.  
 

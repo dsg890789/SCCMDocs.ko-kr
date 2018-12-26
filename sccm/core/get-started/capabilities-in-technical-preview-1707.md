@@ -83,7 +83,7 @@ Windows Defender Application Guard 정책을 만들고 배포하려면 정책을
 2. **자산 및 준수** 작업 영역에서 **개요** > **Endpoint Protection** > **Windows Defender Application Guard**를 선택합니다.
 3. **홈** 탭의 **만들기** 그룹에서  **만들기**를 클릭합니다.
 4. 블로그 게시물을 참조하여 사용 가능한 설정을 찾아보고 구성한 후 기능을 사용해볼 수 있습니다.
-5. 이 릴리스에서는 마법사에 **네트워크 정의** 페이지가 추가되었습니다. 이 페이지에서 회사 ID를 지정하고 회사 네트워크 경계를 정의합니다.<br>Windows 10 PC는 클라이언트에 하나의 네트워크 격리 목록만 저장합니다. 이 릴리스에서 두 가지 종류의 네트워크 격리 목록(Windows Information Protection의 목록, Windows Defender 응용 프로그램 가드의 목록)을 만들고 클라이언트에 배포할 수 있습니다. 두 정책 모두 배포하는 경우 두 네트워크 격리 목록이 일치해야 합니다. 동일 클라이언트와 일치하지 않는 목록을 배포할 경우 배포가 실패합니다.
+5. 이 릴리스에서는 마법사에 **네트워크 정의** 페이지가 추가되었습니다. 이 페이지에서 회사 ID를 지정하고 회사 네트워크 경계를 정의합니다.<br>Windows 10 PC는 클라이언트에 하나의 네트워크 격리 목록만 저장합니다. 이 릴리스에서 두 가지 종류의 네트워크 격리 목록(Windows Information Protection의 목록, Windows Defender 애플리케이션 가드의 목록)을 만들고 클라이언트에 배포할 수 있습니다. 두 정책 모두 배포하는 경우 두 네트워크 격리 목록이 일치해야 합니다. 동일 클라이언트와 일치하지 않는 목록을 배포할 경우 배포가 실패합니다.
 네트워크 정의를 지정하는 자세한 방법은 [Windows Information Protection 설명서](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-sccm)에서 참조하세요.
 6. 작업이 끝나면 마법사를 완료하고 하나 이상의 Windows 10 디바이스에 정책을 배포합니다.
 

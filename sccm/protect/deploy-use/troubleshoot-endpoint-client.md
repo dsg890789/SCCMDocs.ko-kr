@@ -168,7 +168,7 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 
 ### <a name="step-1-restart-your-computer"></a>1단계: 컴퓨터 다시 시작  
 
--   모든 응용 프로그램을 종료한 후 컴퓨터를 다시 시작합니다.  
+-   모든 애플리케이션을 종료한 후 컴퓨터를 다시 시작합니다.  
 
 ### <a name="step-2-make-sure-the-windows-defender-or-endpoint-protection-service-is-set-to-automatic-and-is-started"></a>2단계: "Windows Defender" 또는 "Endpoint Protection" 서비스가 자동으로 설정되고 시작되었는지 확인  
 
@@ -192,7 +192,7 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
           Endpoint Protection을 다시 설치해 보세요.  
 
 > [!NOTE]  
->  일부 인터넷 보안 응용 프로그램은 완전히 제거되지 않습니다. 정리 유틸리티를 다운로드하여 실행하면 기존 보안 응용 프로그램을 완전히 제거할 수 있습니다.  
+>  일부 인터넷 보안 애플리케이션은 완전히 제거되지 않습니다. 정리 유틸리티를 다운로드하여 실행하면 기존 보안 애플리케이션을 완전히 제거할 수 있습니다.  
 
 > [!CAUTION]  
 >  인터넷 보안 프로그램을 제거하면 컴퓨터는 비보호 상태가 됩니다. 기존 인터넷 보안 프로그램을 제거한 후 Endpoint Protection을 설치하는 데 문제가 있는 경우   

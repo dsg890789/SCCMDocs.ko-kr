@@ -37,7 +37,7 @@ System Center Configuration Manager(Configuration Manager)에서 앱 구성 정�
 - **iOS용 앱 패키지(*.ipa 파일)**
 - **App Store의 iOS용 앱 패키지**
 
-앱 설치 유형에 대한 자세한 내용은 [응용 프로그램 관리 소개](/sccm/apps/understand/introduction-to-application-management)를 참조하세요.
+앱 설치 유형에 대한 자세한 내용은 [애플리케이션 관리 소개](/sccm/apps/understand/introduction-to-application-management)를 참조하세요.
 
 ## <a name="create-an-app-configuration-policy"></a>앱 구성 정책 만들기
 
@@ -99,9 +99,9 @@ Intune은 또한 속성 목록에서 다음과 같은 토큰 형식을 지원합
 
 새 앱 구성 정책이 **소프트웨어 라이브러리** 작업 영역의 **앱 구성 정책** 노드에 표시됩니다.
 
-## <a name="associate-an-app-configuration-policy-with-a-configuration-manager-application"></a>Configuration Manager 응용 프로그램과 앱 구성 정책을 연결합니다.
+## <a name="associate-an-app-configuration-policy-with-a-configuration-manager-application"></a>Configuration Manager 애플리케이션과 앱 구성 정책을 연결합니다.
 
-앱 구성 정책을 iOS 앱 배포와 연결하려면 [응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications) 항목의 절차를 사용하여 일반적인 방법으로 응용 프로그램을 배포합니다.
+앱 구성 정책을 iOS 앱 배포와 연결하려면 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications) 항목의 절차를 사용하여 일반적인 방법으로 애플리케이션을 배포합니다.
 
 소프트웨어 배포 마법사의 **앱 구성 정책** 페이지에서 **새로 만들기**를 선택합니다. **앱 구성 정책 선택** 대화 상자에서 응용 프로그램 배포 유형과 여기에 연결할 앱 구성 정책을 선택합니다.
 배포 유형이 설치되면 앱 구성 정책 설정이 자동으로 적용됩니다.

@@ -21,7 +21,7 @@ ms.locfileid: "36260839"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 응용 프로그램을 사용하여 Mac 컴퓨터용 클라이언트를 업그레이드하려면 아래에 설명된 개략적인 단계를 따르세요. 또는, Mac 클라이언트 설치 파일을 다운로드하고 공유 네트워크 위치나 Mac 컴퓨터의 로컬 폴더에 복사한 후 사용자에게 수동으로 설치하도록 지시할 수 있습니다.  
+System Center Configuration Manager 애플리케이션을 사용하여 Mac 컴퓨터용 클라이언트를 업그레이드하려면 아래에 설명된 개략적인 단계를 따르세요. 또는, Mac 클라이언트 설치 파일을 다운로드하고 공유 네트워크 위치나 Mac 컴퓨터의 로컬 폴더에 복사한 후 사용자에게 수동으로 설치하도록 지시할 수 있습니다.  
 
 > [!NOTE]  
 >  이러한 단계를 수행하기 전에 Mac 컴퓨터가 필수 조건을 충족해야 합니다. [Mac 컴퓨터에 대해 지원되는 운영 체제](../../../plan-design/configs/supported-operating-systems-for-clients-and-devices.md#mac-computers)를 참조하세요.  
@@ -37,21 +37,21 @@ System Center Configuration Manager 응용 프로그램을 사용하여 Mac 컴�
 ## <a name="step-3-extract-the-client-installation-files"></a>3단계: 클라이언트 설치 파일 추출  
  Macclient.dmg 파일을 네트워크 공유 위치나 Mac 컴퓨터의 로컬 폴더에 복사합니다. 그런 다음 Mac 컴퓨터에서 Macclient.dmg 파일을 탑재하고 연 후 파일을 Mac 컴퓨터의 폴더에 복사합니다.  
 
-## <a name="step-4-create-a-cmmac-file-that-can-be-used-to-create-an-application"></a>4단계: 응용 프로그램을 만드는 데 사용할 수 있는 .cmmac 파일 만들기  
+## <a name="step-4-create-a-cmmac-file-that-can-be-used-to-create-an-application"></a>4단계: 애플리케이션을 만드는 데 사용할 수 있는 .cmmac 파일 만들기  
 
-1.  Mac 클라이언트 설치 파일의 **Tools** 폴더에 있는 **CMAppUtil** 도구를 사용하여 클라이언트 설치 패키지로부터 .cmmac 파일을 만듭니다. 이 파일은 Configuration Manager 응용 프로그램을 만드는 데 사용됩니다.  
+1.  Mac 클라이언트 설치 파일의 **Tools** 폴더에 있는 **CMAppUtil** 도구를 사용하여 클라이언트 설치 패키지로부터 .cmmac 파일을 만듭니다. 이 파일은 Configuration Manager 애플리케이션을 만드는 데 사용됩니다.  
 
 2.  Configuration Manager 콘솔을 실행하는 컴퓨터에서 사용할 수 있는 위치로 새 **CMClient.pkg.cmmac** 파일을 복사합니다.  
 
- 자세한 내용은 [Mac 컴퓨터용 응용 프로그램을 만들어 배포하기 위한 보충 절차](/sccm/apps/get-started/creating-mac-computer-applications#supplemental-procedures-to-create-and-deploy-applications-for-mac-computers)를 참조하세요.  
+ 자세한 내용은 [Mac 컴퓨터용 애플리케이션을 만들어 배포하기 위한 보충 절차](/sccm/apps/get-started/creating-mac-computer-applications#supplemental-procedures-to-create-and-deploy-applications-for-mac-computers)를 참조하세요.  
 
 ## <a name="step-5-create-and-deploy-an-application-containing-the-mac-client-files"></a>**5단계:** Mac 클라이언트 파일을 포함하는 응용 프로그램을 만들어 배포  
 
-1.  Configuration Manager 콘솔에서 클라이언트 설치 파일이 포함된 **CMClient.pkg.cmmac** 파일에서 응용 프로그램을 만듭니다.  
+1.  Configuration Manager 콘솔에서 클라이언트 설치 파일이 포함된 **CMClient.pkg.cmmac** 파일에서 애플리케이션을 만듭니다.  
 
-2.  이 응용 프로그램을 계층 내의 Mac 컴퓨터에 배포합니다.  
+2.  이 애플리케이션을 계층 내의 Mac 컴퓨터에 배포합니다.  
 
- 자세한 내용은 [System Center Configuration Manager에서 Mac 컴퓨터 응용 프로그램 만들기](../../../../apps/get-started/creating-mac-computer-applications.md)를 참조하세요.  
+ 자세한 내용은 [System Center Configuration Manager에서 Mac 컴퓨터 애플리케이션 만들기](../../../../apps/get-started/creating-mac-computer-applications.md)를 참조하세요.  
 
 ## <a name="step-6-users-install-the-latest-client"></a>6단계: 사용자가 최신 클라이언트 설치  
  Mac 클라이언트 사용자에게 Configuration Manager 클라이언트의 업데이트를 사용할 수 있으며 설치해야 한다는 메시지가 표시됩니다. 클라이언트를 설치한 사용자는 Mac 컴퓨터를 다시 시작해야 합니다.  

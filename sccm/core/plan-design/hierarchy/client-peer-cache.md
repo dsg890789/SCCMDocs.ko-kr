@@ -183,7 +183,7 @@ Contoso는 본사(HQ)와 지사라는 두 경계 그룹이 있는 단일 주 사
 - 필요한 경우, OS 배포 작업 순서 중에 **SMSTSPreserveContent** 변수를 사용하여 콘텐츠를 클라이언트 캐시에 보관합니다. 자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables#SMSTSPreserveContent)\(작업 순서 변수\)를 참조하세요.  
 
 - 필요한 경우, 다음 소프트웨어를 만들 때 **클라이언트 캐시의 콘텐츠 유지** 옵션을 사용합니다.  
-    - 응용 프로그램
+    - 애플리케이션
     - 패키지
     - OS 이미지
     - OS 업그레이드 패키지

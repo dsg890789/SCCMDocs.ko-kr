@@ -83,7 +83,7 @@ items:
       href: core/servers/configure/iccmalternatedownloadprovider---suspend-method.md
   - name: ICcmContentTransferManager4 인터페이스
     href: core/servers/configure/iccmcontenttransfermanager4-interface.md
-- name: 응용 프로그램 관리 서버 WMI 클래스
+- name: 애플리케이션 관리 서버 WMI 클래스
   href: apps/application-management-server-wmi-classes.md
   items:
   - name: SMS_AppConflictsData 서버 WMI 클래스
@@ -246,7 +246,7 @@ items:
 - name: 클라이언트 클래스
   href: core/clients/client-classes/client-classes.md
   items:
-  - name: 응용 프로그램 관리 클라이언트 인터페이스
+  - name: 애플리케이션 관리 클라이언트 인터페이스
     href: core/clients/client-classes/application-management-client-interfaces.md
     items:
     - name: AppDetectState 열거

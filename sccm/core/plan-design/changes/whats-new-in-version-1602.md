@@ -66,7 +66,7 @@ System Center Configuration Manager 업데이트 1602는 버전 1511을 실행�
 
 -   이제 Windows 10 업그레이드 패키지를 시작하는 사용자는 해당 운영 체제를 업그레이드할 것임을 알리는 메시지를 받습니다.  
 
-## <a name="application-management"></a>응용 프로그램 관리  
+## <a name="application-management"></a>애플리케이션 관리  
 
 ### <a name="ios-app-configuration-policies"></a>iOS 앱 구성 정책  
  Configuration Manager 앱 구성 정책을 사용하여 사용자가 iOS 앱을 실행할 때 필요할 수 있는 설정을 제공할 수 있습니다. 예를 들어 앱에서 사용자가 사용자 지정 포트 번호, 언어, 보안 설정 또는 브랜딩 설정(예: 회사 로고)을 지정하도록 요구할 수 있습니다. 이러한 설정을 잘못 입력하면 지원 센터의 부담이 증가하며 새 앱 도입도 지연됩니다.  
@@ -93,9 +93,9 @@ System Center Configuration Manager 업데이트 1602는 버전 1511을 실행�
 
 -   Microsoft Outlook  
 
-이러한 앱은 Configuration Manager 콘솔의 **응용 프로그램** 노드에 있습니다.  
+이러한 앱은 Configuration Manager 콘솔의 **애플리케이션** 노드에 있습니다.  
 
- 응용 프로그램을 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 응용 프로그램을 배포하는 방법](../../../apps/deploy-use/deploy-applications.md)을 참조하세요.  
+ 애플리케이션을 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 애플리케이션을 배포하는 방법](../../../apps/deploy-use/deploy-applications.md)을 참조하세요.  
 
 ## <a name="software-updates"></a>소프트웨어 업데이트  
 
@@ -151,9 +151,9 @@ System Center Configuration Manager 업데이트 1602는 버전 1511을 실행�
 ### <a name="software-center-branding-changes"></a>소프트웨어 센터 브랜딩 변경 내용  
  소프트웨어 센터에 표시되는 색, 조직 이름 및 아이콘을 변경할 수 있습니다. 이러한 설정은 다음 규칙에 따라 적용됩니다.  
 
-- 응용 프로그램 카탈로그 웹 사이트 지점 사이트 서버 역할이 설치되지 않은 경우 소프트웨어 센터에서 **소프트웨어 센터에 표시되는 조직 이름**이라는 **컴퓨터 에이전트** 클라이언트 설정에 지정된 조직 이름을 표시합니다.  
+- 애플리케이션 카탈로그 웹 사이트 지점 사이트 서버 역할이 설치되지 않은 경우 소프트웨어 센터에서 **소프트웨어 센터에 표시되는 조직 이름**이라는 **컴퓨터 에이전트** 클라이언트 설정에 지정된 조직 이름을 표시합니다.  
 
-- 응용 프로그램 카탈로그 웹 사이트 지점 사이트 서버 역할이 설치되어 있는 경우 소프트웨어 센터에서 응용 프로그램 카탈로그 웹 사이트 지점 사이트 서버 역할의 속성에 지정된 조직 이름 및 색을 표시합니다.  
+- 애플리케이션 카탈로그 웹 사이트 지점 사이트 서버 역할이 설치되어 있는 경우 소프트웨어 센터에서 애플리케이션 카탈로그 웹 사이트 지점 사이트 서버 역할의 속성에 지정된 조직 이름 및 색을 표시합니다.  
 
 - Microsoft Intune 구독을 구성하고 Configuration Manager 환경에 연결한 경우 소프트웨어 센터에서 Intune 구독 속성에 지정된 조직 이름, 색 및 회사 로고를 표시합니다.  
 
@@ -173,7 +173,7 @@ System Center Configuration Manager 업데이트 1602는 버전 1511을 실행�
 ### <a name="improvements-to-endpoint-protection-antimalware-settings"></a>Endpoint Protection 맬웨어 방지 설정의 향상된 기능  
  1602에서는 Windows Defender에 대한 Endpoint Protection 맬웨어 방지 프로그램 정책에서 다음과 같은 새 설정을 추가합니다.  
 
--   실시간 보호: 다운로드 시 및 설치 전에 잠재적으로 원치 않는 응용 프로그램 차단  
+-   실시간 보호: 다운로드 시 및 설치 전에 잠재적으로 원치 않는 애플리케이션 차단  
 
 -   검색 설정: 전체 검색 중 매핑된 네트워크 드라이브 검색  
 

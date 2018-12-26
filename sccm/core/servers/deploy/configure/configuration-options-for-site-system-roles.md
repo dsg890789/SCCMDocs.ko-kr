@@ -30,23 +30,23 @@ Configuration Manager 사이트 시스템 역할의 구성 옵션 대부분은 �
 > [!Note]  
 > 버전 1806부터 응용 프로그램 카탈로그 웹 사이트 지점은 더 이상 *필요하지 않지만* *지원은 계속됩니다*. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요.  
 > 
-> 응용 프로그램 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
+> 애플리케이션 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
 
- 응용 프로그램 카탈로그 웹 사이트 지점을 설정하는 방법에 대한 자세한 내용은 [응용 프로그램 관리 계획 및 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management)을 참조하세요.  
+ 애플리케이션 카탈로그 웹 사이트 지점을 설정하는 방법에 대한 자세한 내용은 [애플리케이션 관리 계획 및 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management)을 참조하세요.  
 
  #### <a name="client-connections"></a>클라이언트 연결
  더 안전한 연결 설정을 사용하고 클라이언트가 인터넷에서 연결하는지 확인하려면 **HTTPS**를 선택합니다. 이 옵션을 사용하려면 클라이언트에 대한 서버 인증과 SSL(Secure Socket Layer)을 통한 데이터 암호화를 위해 PKI 인증서가 서버에 필요합니다. 자세한 내용은 [PKI 인증서 요구 사항](/sccm/core/plan-design/network/pki-certificate-requirements)을 참조하세요.  
 
  서버 인증서 배포 예와 IIS(인터넷 정보 서비스)에서 서버 인증서를 구성하는 방법에 대한 자세한 내용은 [IIS를 실행하는 사이트 시스템에 웹 서버 인증서 배포](/sccm/core/plan-design/network/example-deployment-of-pki-certificates#BKMK_webserver2008_cm2012) 섹션을 참조하세요.  
 
- #### <a name="add-application-catalog-website-to-trusted-sites-zone"></a>응용 프로그램 카탈로그 웹 사이트를 신뢰할 수 있는 사이트 영역에 추가  
- 이 메시지는 기본 클라이언트 설정에서 **응용 프로그램 카탈로그 웹 사이트를 Internet Explorer의 신뢰할 수 있는 사이트 영역에 추가** 클라이언트 설정이 현재 설정된 값(**True** 또는 **False**)을 표시합니다. 사용자 지정 클라이언트 설정을 사용하여 이 설정을 구성한 경우에는 이 설정을 활성화합니다.  
+ #### <a name="add-application-catalog-website-to-trusted-sites-zone"></a>애플리케이션 카탈로그 웹 사이트를 신뢰할 수 있는 사이트 영역에 추가  
+ 이 메시지는 기본 클라이언트 설정에서 **애플리케이션 카탈로그 웹 사이트를 Internet Explorer의 신뢰할 수 있는 사이트 영역에 추가** 클라이언트 설정이 현재 설정된 값(**True** 또는 **False**)을 표시합니다. 사용자 지정 클라이언트 설정을 사용하여 이 설정을 구성한 경우에는 이 설정을 활성화합니다.  
 
- FQDN(정규화된 도메인 이름)에 대해 이 사이트 시스템이 설정되어 있고 웹 사이트가 Internet Explorer의 신뢰할 수 있는 사이트 영역에 없는 경우 사용자가 응용 프로그램 카탈로그에 연결할 때 자격 증명을 요청하는 메시지가 표시됩니다.  
+ FQDN(정규화된 도메인 이름)에 대해 이 사이트 시스템이 설정되어 있고 웹 사이트가 Internet Explorer의 신뢰할 수 있는 사이트 영역에 없는 경우 사용자가 애플리케이션 카탈로그에 연결할 때 자격 증명을 요청하는 메시지가 표시됩니다.  
 
  #### <a name="organization-name"></a>조직 이름  
 
- 응용 프로그램 카탈로그에 표시되는 이름을 입력합니다. 이 브랜딩 정보를 통해 이 웹 사이트가 신뢰할 수 있는 원본임을 쉽게 확인할 수 있습니다.  
+ 애플리케이션 카탈로그에 표시되는 이름을 입력합니다. 이 브랜딩 정보를 통해 이 웹 사이트가 신뢰할 수 있는 원본임을 쉽게 확인할 수 있습니다.  
 
 
 
@@ -55,11 +55,11 @@ Configuration Manager 사이트 시스템 역할의 구성 옵션 대부분은 �
 > [!Note]  
 > 버전 1806부터 응용 프로그램 카탈로그 웹 서비스 지점은 더 이상 *필요하지 않지만* *지원은 계속됩니다*. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요.  
 
- 응용 프로그램 카탈로그 웹 서비스 지점을 설정하는 방법에 대한 자세한 내용은 [응용 프로그램 관리 계획 및 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management)을 참조하세요.  
+ 애플리케이션 카탈로그 웹 서비스 지점을 설정하는 방법에 대한 자세한 내용은 [애플리케이션 관리 계획 및 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management)을 참조하세요.  
 
  #### <a name="https"></a>HTTPS
 
- 이 응용 프로그램 카탈로그 웹 서비스 지점에 대해 응용 프로그램 카탈로그 웹 사이트 지점을 인증하려면 **HTTPS** 를 선택합니다. 이 옵션을 사용하려면 서버 인증과 SSL을 통한 데이터 암호화를 위한 PKI 인증서가 응용 프로그램 카탈로그 웹 사이트 지점을 실행하는 서버에 있어야 합니다. 자세한 내용은 [PKI 인증서 요구 사항](/sccm/core/plan-design/network/pki-certificate-requirements)을 참조하세요.  
+ 이 애플리케이션 카탈로그 웹 서비스 지점에 대해 애플리케이션 카탈로그 웹 사이트 지점을 인증하려면 **HTTPS** 를 선택합니다. 이 옵션을 사용하려면 서버 인증과 SSL을 통한 데이터 암호화를 위한 PKI 인증서가 애플리케이션 카탈로그 웹 사이트 지점을 실행하는 서버에 있어야 합니다. 자세한 내용은 [PKI 인증서 요구 사항](/sccm/core/plan-design/network/pki-certificate-requirements)을 참조하세요.  
 
  서버 인증서 배포 예와 IIS(인터넷 정보 서비스)에서 서버 인증서를 구성하는 방법에 대한 자세한 내용은 [IIS를 실행하는 사이트 시스템에 웹 서버 인증서 배포](/sccm/core/plan-design/network/example-deployment-of-pki-certificates#BKMK_webserver2008_cm2012) 섹션을 참조하세요.  
 

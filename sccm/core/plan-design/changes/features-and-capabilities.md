@@ -31,7 +31,7 @@ ms.locfileid: "32343777"
 
  **회사 리소스 액세스**  
 
- 조직의 사용자가 원격 위치에서 데이터와 응용 프로그램에 액세스할 수 있는 도구 및 리소스 집합을 제공합니다. 이러한 도구에는 Wi-Fi 프로필, VPN 프로필, 인증서 프로필과, Exchange 및 SharePoint Online에 대한 조건부 액세스가 포함됩니다. [System Center Configuration Manager를 사용한 데이터 및 사이트 인프라 보호](../../../protect/understand/protect-data-and-site-infrastructure.md) 및 [System Center Configuration Manager에서 서비스에 대한 액세스 관리](../../../protect/deploy-use/manage-access-to-services.md)를 참조하세요.  
+ 조직의 사용자가 원격 위치에서 데이터와 애플리케이션에 액세스할 수 있는 도구 및 리소스 집합을 제공합니다. 이러한 도구에는 Wi-Fi 프로필, VPN 프로필, 인증서 프로필과, Exchange 및 SharePoint Online에 대한 조건부 액세스가 포함됩니다. [System Center Configuration Manager를 사용한 데이터 및 사이트 인프라 보호](../../../protect/understand/protect-data-and-site-infrastructure.md) 및 [System Center Configuration Manager에서 서비스에 대한 액세스 관리](../../../protect/deploy-use/manage-access-to-services.md)를 참조하세요.  
 
  **준수 설정**  
 

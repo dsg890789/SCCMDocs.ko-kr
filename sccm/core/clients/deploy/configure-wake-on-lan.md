@@ -21,7 +21,7 @@ ms.locfileid: "32332453"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-소프트웨어 업데이트, 응용 프로그램, 작업 순서, 프로그램과 같은 필수 소프트웨어를 설치하기 위한 컴퓨터의 절전 모드를 해제하려는 경우 System Center Configuration Manager에 대한 Wake on LAN 설정을 지정합니다.
+소프트웨어 업데이트, 애플리케이션, 작업 순서, 프로그램과 같은 필수 소프트웨어를 설치하기 위한 컴퓨터의 절전 모드를 해제하려는 경우 System Center Configuration Manager에 대한 Wake on LAN 설정을 지정합니다.
 
 절전 모드 해제 프록시 클라이언트 설정을 사용하여 Wake on LAN을 보완할 수 있습니다. 그러나 절전 모드 해제 프록시를 사용하려면 먼저 사이트에 Wake on LAN을 사용하도록 설정하고 **절전 모드 해제 패킷만 사용** 을 지정하고 Wake on LAN 전송 방법에 **유니캐스트** 옵션을 지정합니다. 이 절전 모드 해제 방법은 원격 데스크톱 연결과 같은 임시 연결도 지원합니다.
 

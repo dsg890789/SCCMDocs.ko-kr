@@ -1,5 +1,5 @@
 ---
-title: Android 응용 프로그램 만들기
+title: Android 애플리케이션 만들기
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 Android 디바이스용 응용 프로그램을 만들고 배포하는 방법입니다.
 ms.date: 07/30/2018
@@ -17,13 +17,13 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/31/2018
 ms.locfileid: "39385221"
 ---
-# <a name="create-android-applications-in-configuration-manager"></a>Configuration Manager에서 Android 응용 프로그램 만들기
+# <a name="create-android-applications-in-configuration-manager"></a>Configuration Manager에서 Android 애플리케이션 만들기
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Configuration Manager 응용 프로그램에는 하나 이상의 배포 유형이 있습니다. 배포 유형은 디바이스에 소프트웨어를 배포하는 데 필요한 설치 파일 및 정보로 구성됩니다. 또한 배포 유형에는 소프트웨어 배포 시점 및 방법을 지정하는 규칙이 포함됩니다.  
+Configuration Manager 애플리케이션에는 하나 이상의 배포 유형이 있습니다. 배포 유형은 디바이스에 소프트웨어를 배포하는 데 필요한 설치 파일 및 정보로 구성됩니다. 또한 배포 유형에는 소프트웨어 배포 시점 및 방법을 지정하는 규칙이 포함됩니다.  
 
-Configuration Manager 응용 프로그램 및 배포 유형을 만드는 데 필요한 단계는 [응용 프로그램 만들기](/sccm/apps/deploy-use/create-applications#bkmk_create)를 참조하세요. 
+Configuration Manager 애플리케이션 및 배포 유형을 만드는 단계는 [애플리케이션 만들기](/sccm/apps/deploy-use/create-applications#bkmk_create)를 참조하세요. 
 
 Android 디바이스용 응용 프로그램을 만들고 배포할 때는 다음 사항을 고려하세요.  
 
@@ -58,9 +58,9 @@ Play for Work 스토어에서 앱을 승인하고, Configuration Manager 콘솔�
 
 5. 리본에서 **동기화**를 클릭합니다.  
 
-6. 앱을 동기화하는 데 최대 10분 동안 기다리십시오. 그런 다음, **소프트웨어 라이브러리** 작업 영역으로 이동하고, **응용 프로그램 관리**를 확장한 후, **스토어 앱에 대한 라이선스 정보**를 선택합니다.  
+6. 앱을 동기화하는 데 최대 10분 동안 기다리십시오. 그런 다음, **소프트웨어 라이브러리** 작업 영역으로 이동하고, **애플리케이션 관리**를 확장한 후, **스토어 앱에 대한 라이선스 정보**를 선택합니다.  
 
-7. Play for Work에서 동기화된 앱을 선택한 다음, **응용 프로그램 만들기**를 클릭합니다.  
+7. Play for Work에서 동기화된 앱을 선택한 다음, **애플리케이션 만들기**를 클릭합니다.  
 
 8. 마법사를 완료합니다.  
 

@@ -23,7 +23,7 @@ ms.locfileid: "32349901"
 
 다양한 디바이스 플랫폼에서 사용할 수 있는 연결 형식에 대한 자세한 내용은 [System Center Configuration Manager의 VPN 프로필](../../protect/deploy-use/vpn-profiles.md)을 참조하세요.  
 
-타사 VPN 연결의 경우 VPN 프로필을 배포하기 전에 VPN 앱을 배포합니다. 앱을 배포하지 않고 VPN에 연결하려고 하면 앱을 배포하라는 메시지가 표시됩니다. 앱을 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 응용 프로그램 배포](../../apps/deploy-use/deploy-applications.md)를 참조하세요.
+타사 VPN 연결의 경우 VPN 프로필을 배포하기 전에 VPN 앱을 배포합니다. 앱을 배포하지 않고 VPN에 연결하려고 하면 앱을 배포하라는 메시지가 표시됩니다. 앱을 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 애플리케이션 배포](../../apps/deploy-use/deploy-applications.md)를 참조하세요.
 
 ### <a name="create-a-vpn-profile"></a>VPN 프로필 만들기   
 
@@ -72,6 +72,6 @@ ms.locfileid: "32349901"
 
 ### <a name="next-steps"></a>다음 단계
 
-- 타사 VPN 연결의 경우 VPN 프로필을 배포하기 전에 VPN 앱을 배포합니다. 앱을 배포하지 않고 VPN에 연결하려고 하면 앱을 배포하라는 메시지가 표시됩니다. 앱을 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 응용 프로그램 배포](../../apps/deploy-use/deploy-applications.md)를 참조하세요.
+- 타사 VPN 연결의 경우 VPN 프로필을 배포하기 전에 VPN 앱을 배포합니다. 앱을 배포하지 않고 VPN에 연결하려고 하면 앱을 배포하라는 메시지가 표시됩니다. 앱을 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 애플리케이션 배포](../../apps/deploy-use/deploy-applications.md)를 참조하세요.
 
 - [System Center Configuration Manager에서 프로필을 배포하는 방법](deploy-wifi-vpn-email-cert-profiles.md)에 설명된 대로 VPN 프로필을 배포합니다.  

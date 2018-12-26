@@ -54,7 +54,7 @@ System Center Configuration Manager **Android 및 삼성 KNOX** 구성 항목을
 
     - **위험**. 이 준수 규칙을 충족하지 않는 디바이스가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다.  
 
-    - **위험(이벤트 포함)**. 이 준수 규칙을 충족하지 않는 디바이스가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 또한 이 심각도 수준은 응용 프로그램 이벤트 로그에 Windows 이벤트로 기록됩니다.  
+    - **위험(이벤트 포함)**. 이 준수 규칙을 충족하지 않는 디바이스가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 또한 이 심각도 수준은 애플리케이션 이벤트 로그에 Windows 이벤트로 기록됩니다.  
 
 11. 마법사의 **플랫폼 적용 여부 가능성** 페이지에서 이전에 선택한 지원되는 플랫폼과 호환되지 않는 설정을 검토합니다. 뒤로 돌아가서 이러한 설정을 제거하거나 계속할 수 있습니다.  
 
@@ -170,7 +170,7 @@ System Center Configuration Manager **Android 및 삼성 KNOX** 구성 항목을
 |**추가**|앱을 선택한 목록에 추가합니다. 원하는 이름, 앱 게시자(선택 사항) 및 앱 스토어의 앱 URL을 지정합니다.<br /><br /> URL을 지정하려면 [Google Play의 앱 섹션](https://play.google.com/store/apps)에서 사용할 앱을 검색합니다.<br /><br /> 앱 페이지를 열고 클립보드에 URL을 복사합니다. 이제 규격 또는 비규격 앱 목록의 URL로 사용할 수 있습니다.<br /><br /> **예:** Google Play에서 **Microsoft Office Mobile**을 검색합니다. 사용할 URL은 **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**입니다.|  
 |**편집**|선택한 앱의 이름, 게시자 및 URL을 편집할 수 있습니다.|  
 |**제거**|목록에서 선택한 앱을 삭제합니다.|  
-|**가져오기**|지정한 앱 목록을 쉼표로 구분된 값 파일로 가져옵니다. 파일의 형식, 응용 프로그램 이름, 게시자, 앱 URL을 사용합니다.|  
+|**가져오기**|지정한 앱 목록을 쉼표로 구분된 값 파일로 가져옵니다. 파일의 형식, 애플리케이션 이름, 게시자, 앱 URL을 사용합니다.|  
 
 ## <a name="android-for-work-configuration-items"></a>Android for Work 구성 항목
 Android for Work에는 구성 항목에 대한 다음 두 가지 설정 그룹이 있습니다.

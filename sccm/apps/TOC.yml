@@ -5,54 +5,54 @@ items:
     href: understand/introduction-to-application-management.md
 - name: 시작
   items:
-  - name: 응용 프로그램 만들기 및 배포
+  - name: 애플리케이션 만들기 및 배포
     href: get-started/create-and-deploy-an-application.md
 - name: 계획 및 디자인
   items:
-  - name: 응용 프로그램 관리 계획 및 구성
+  - name: 애플리케이션 관리 계획 및 구성
     href: plan-design/plan-for-and-configure-application-management.md
   - name: 보안 및 개인 정보
     href: plan-design/security-and-privacy-for-application-management.md
 - name: 배포 및 사용
   items:
-  - name: 응용 프로그램 만들기
+  - name: 애플리케이션 만들기
     href: deploy-use/create-applications.md
     items:
-    - name: Mac 컴퓨터 응용 프로그램 만들기
+    - name: Mac 컴퓨터 애플리케이션 만들기
       href: get-started/creating-mac-computer-applications.md
-    - name: Windows 응용 프로그램 만들기
+    - name: Windows 애플리케이션 만들기
       href: get-started/creating-windows-applications.md
-    - name: Linux 및 UNIX 서버 응용 프로그램 만들기
+    - name: Linux 및 UNIX 서버 애플리케이션 만들기
       href: get-started/creating-linux-and-unix-server-applications.md
-    - name: Windows Embedded 응용 프로그램 만들기
+    - name: Windows Embedded 애플리케이션 만들기
       href: get-started/creating-windows-embedded-applications.md
     - name: 글로벌 조건 만들기
       href: deploy-use/create-global-conditions.md
     - name: 패키지 및 프로그램
       href: deploy-use/packages-and-programs.md
-  - name: 응용 프로그램 배포
+  - name: 애플리케이션 배포
     items:
-    - name: 응용 프로그램 배포
+    - name: 애플리케이션 배포
       href: deploy-use/deploy-applications.md
     - name: 단계별 배포 만들기
       href: ../osd/deploy-use/create-phased-deployment-for-task-sequence.md?toc=/sccm/apps/toc.json&bc=/sccm/apps/breadcrumb/toc.json
-    - name: 응용 프로그램 승인
+    - name: 애플리케이션 승인
       href: deploy-use/app-approval.md
-    - name: 응용 프로그램 공유
+    - name: 애플리케이션 공유
       href: deploy-use/share-applications.md
-    - name: 응용 프로그램 배포 시뮬레이트
+    - name: 애플리케이션 배포 시뮬레이트
       href: deploy-use/simulate-application-deployments.md
-    - name: App-V 가상 응용 프로그램 배포
+    - name: App-V 가상 애플리케이션 배포
       href: get-started/deploying-app-v-virtual-applications.md
-  - name: 응용 프로그램 모니터링
+  - name: 애플리케이션 모니터링
     items:
-    - name: 콘솔에서 응용 프로그램 모니터링
+    - name: 콘솔에서 애플리케이션 모니터링
       href: deploy-use/monitor-applications-from-the-console.md
     - name: 단계적 배포 관리 및 모니터링
       href: ../osd/deploy-use/manage-monitor-phased-deployments.md?toc=/sccm/apps/toc.json&bc=/sccm/apps/breadcrumb/toc.json
     - name: 소프트웨어 계량을 사용하여 앱 사용 모니터링
       href: deploy-use/monitor-app-usage-with-software-metering.md
-  - name: 응용 프로그램 관리
+  - name: 애플리케이션 관리
     items:
     - name: 관리 작업
       href: deploy-use/management-tasks-applications.md
@@ -62,13 +62,13 @@ items:
       href: deploy-use/manage-apps-from-the-windows-store-for-business.md
     - name: App-V 가상 환경
       href: deploy-use/create-app-v-virtual-environments.md
-  - name: 응용 프로그램 업데이트 및 사용 중지
+  - name: 애플리케이션 업데이트 및 사용 중지
     items:
-    - name: 응용 프로그램 업데이트 및 사용 중지
+    - name: 애플리케이션 업데이트 및 사용 중지
       href: deploy-use/update-and-retire-applications.md
-    - name: 응용 프로그램 수정 및 대체
+    - name: 애플리케이션 수정 및 대체
       href: deploy-use/revise-and-supersede-applications.md
-    - name: 응용 프로그램 제거
+    - name: 애플리케이션 제거
       href: deploy-use/uninstall-applications.md
   - name: 스크립트 실행 및 관리
     href: deploy-use/create-deploy-scripts.md

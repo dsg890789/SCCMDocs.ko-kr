@@ -77,7 +77,7 @@ Azure AD 사용자가 로그인되지 않은 Azure AD 조인 또는 [하이브�
 
 - 클라우드 관리를 위해 Azure AD에 사이트 등록.  
 
-    - 사이트에 대한 이 필수 요구 조건을 이미 충족한 경우 Azure AD 응용 프로그램을 업데이트해야 합니다. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고, **Cloud Services**를 확장한 다음, **Azure Active Directory 테넌트**를 선택합니다. Azure AD 테넌트를 선택하고 **응용 프로그램** 창에서 웹 응용 프로그램을 선택한 다음, 리본에서 **응용 프로그램 설정 업데이트**를 선택합니다.  
+    - 사이트에 대한 이 필수 요구 조건을 이미 충족한 경우 Azure AD 애플리케이션을 업데이트해야 합니다. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고, **Cloud Services**를 확장한 다음, **Azure Active Directory 테넌트**를 선택합니다. Azure AD 테넌트를 선택하고 **애플리케이션** 창에서 웹 애플리케이션을 선택한 다음, 리본에서 **애플리케이션 설정 업데이트**를 선택합니다.  
 
 - *[시나리오 3](#bkmk_scenario3)에만 해당*: Windows 10 버전 1803을 실행하고 Azure AD에 조인된 클라이언트. 
 

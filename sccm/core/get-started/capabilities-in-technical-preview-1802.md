@@ -92,7 +92,7 @@ Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원�
 ### <a name="new-groups-under-prepare-for-upgrade"></a>**업그레이드 준비** 중인 새 그룹
 - **배터리 확인**: 컴퓨터에서 배터리를 사용하는지 또는 유선 전원을 사용하는지를 확인하려면 이 그룹의 단계를 추가합니다. 이 작업에서 배터리 확인을 수행하려면 사용자 지정 스크립트 또는 유틸리티가 필요합니다.
 - **네트워크/유선 연결 확인**: 컴퓨터가 네트워크에 연결되어 있고 무선 연결을 사용하고 있지 않은지 확인하려면 이 그룹의 단계를 추가합니다. 이 작업에서 배터리 확인을 수행하려면 사용자 지정 스크립트 또는 유틸리티가 필요합니다.
-- **호환되지 않는 응용 프로그램 제거**: 이 Windows 10 버전과 호환되지 않는 응용 프로그램을 제거하려면 이 그룹의 단계를 추가합니다. 응용 프로그램을 제거하는 방법은 다양합니다. 응용 프로그램이 Windows Installer를 사용하는 경우 응용 프로그램의 Windows Installer 배포 유형 속성에 있는 **프로그램** 탭의 **제거 프로그램** 명령줄을 복사합니다. 그런 다음, 제거 프로그램 명령줄을 사용하여 이 그룹의 **명령줄 실행** 단계를 추가합니다. 예: </br>`msiexec /x {150031D8-1234-4BA8-9F52-D6E5190D1CBA} /q`</br> 
+- **호환되지 않는 응용 프로그램 제거**: 이 Windows 10 버전과 호환되지 않는 응용 프로그램을 제거하려면 이 그룹의 단계를 추가합니다. 애플리케이션을 제거하는 방법은 다양합니다. 애플리케이션이 Windows Installer를 사용하는 경우 애플리케이션의 Windows Installer 배포 유형 속성에 있는 **프로그램** 탭의 **제거 프로그램** 명령줄을 복사합니다. 그런 다음, 제거 프로그램 명령줄을 사용하여 이 그룹의 **명령줄 실행** 단계를 추가합니다. 예: </br>`msiexec /x {150031D8-1234-4BA8-9F52-D6E5190D1CBA} /q`</br> 
 - **호환되지 않는 드라이버 제거**: 이 Windows 10 버전과 호환되지 않는 드라이버를 제거하려면 이 그룹의 단계를 추가합니다.
 - **제거/일시 중단**: 바이러스 백신과 같은 타사 보안 프로그램을 제거하거나 일시 중단하려면 이 그룹의 단계를 추가합니다.
    - 타사 디스크 암호화 프로그램을 사용하는 경우 **/ReflectDrivers** [명령줄 옵션](/windows-hardware/manufacture/desktop/windows-setup-command-line-options)을 사용하여 Windows 설치 프로그램에 해당 암호화 드라이버를 제공합니다. 이 그룹의 작업 순서에 [작업 순서 변수 설정](/sccm/osd/understand/task-sequence-steps#BKMK_SetTaskSequenceVariable) 단계를 추가합니다. 작업 순서 변수를 **OSDSetupAdditionalUpgradeOptions**로 설정합니다. 드라이버 경로를 사용하여 값을 **/ReflectDriver**로 설정합니다. 이 [작업 순서 작업 변수](/sccm/osd/understand/task-sequence-action-variables#upgrade-operating-system)는 작업 순서에서 사용되는 Windows 설치 명령줄을 추가합니다. 이 프로세스에 대한 추가 지침은 소프트웨어 공급업체에 문의하세요.
@@ -100,7 +100,7 @@ Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원�
 ### <a name="new-groups-under-post-processing"></a>**사후 처리** 아래의 새 그룹
 - **설치 기반 드라이버 적용**: 패키지에서 설치 기반 드라이버(.exe)를 설치하려면 이 그룹의 단계를 추가합니다.
 - **타사 보안 설치/사용**: 바이러스 백신과 같은 타사 보안 프로그램을 설치하거나 사용하도록 설정하려면 이 그룹의 단계를 추가합니다. 
-- **Windows 기본 앱 및 연결 설정**: Windows 기본 앱 및 파일 연결을 설정하려면 이 그룹의 단계를 추가합니다. 먼저 원하는 앱 연결을 사용하여 참조 컴퓨터를 준비합니다. 그런 후에 다음 명령줄을 실행하여 내보냅니다. </br>`dism /online /Export-DefaultAppAssociations:"%UserProfile%\Desktop\DefaultAppAssociations.xml"`</br>패키지에 XML 파일을 추가합니다. 그런 다음, 이 그룹의 [명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 단계를 추가합니다. XML 파일이 포함된 패키지를 지정한 후 다음 명령줄을 지정합니다. </br>`dism /online /Import-DefaultAppAssociations:DefaultAppAssocations.xml`</br> 자세한 내용은 [기본 응용 프로그램 연결 내보내기 또는 가져오기](/windows-hardware/manufacture/desktop/export-or-import-default-application-associations)을 참조하세요.
+- **Windows 기본 앱 및 연결 설정**: Windows 기본 앱 및 파일 연결을 설정하려면 이 그룹의 단계를 추가합니다. 먼저 원하는 앱 연결을 사용하여 참조 컴퓨터를 준비합니다. 그런 후에 다음 명령줄을 실행하여 내보냅니다. </br>`dism /online /Export-DefaultAppAssociations:"%UserProfile%\Desktop\DefaultAppAssociations.xml"`</br>패키지에 XML 파일을 추가합니다. 그런 다음, 이 그룹의 [명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 단계를 추가합니다. XML 파일이 포함된 패키지를 지정한 후 다음 명령줄을 지정합니다. </br>`dism /online /Import-DefaultAppAssociations:DefaultAppAssocations.xml`</br> 자세한 내용은 [기본 애플리케이션 연결 내보내기 또는 가져오기](/windows-hardware/manufacture/desktop/export-or-import-default-application-associations)을 참조하세요.
 - **사용자 지정 및 개인 설정 적용**: 프로그램 그룹 구성과 같은 시작 메뉴 사용자 지정을 적용하려면 이 그룹의 단계를 추가합니다. 자세한 내용은 [시작 화면 사용자 지정](/windows-hardware/manufacture/desktop/customize-the-start-screen)을 참조하세요.
 
 ### <a name="additional-recommendations"></a>추가 권장 사항
@@ -169,10 +169,10 @@ WDS가 필요하지 않으므로 PXE 사용 배포 지점은 Windows Server Core
 
 ## <a name="improvements-to-software-center"></a>소프트웨어 센터 개선
 <!--1357592-->
-[고객 피드백](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/13002684-software-center-show-only-available-software-hid)의 결과로, 이제 설치된 응용 프로그램을 소프트웨어 센터에서 숨길 수 있습니다. 이 옵션을 사용하도록 설정하면 이미 설치된 응용 프로그램이 응용 프로그램 탭에 더 이상 표시되지 않습니다. 
+[고객 피드백](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/13002684-software-center-show-only-available-software-hid)의 결과로, 이제 설치된 응용 프로그램을 소프트웨어 센터에서 숨길 수 있습니다. 이 옵션을 사용하도록 설정하면 이미 설치된 애플리케이션이 애플리케이션 탭에 더 이상 표시되지 않습니다. 
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
-소프트웨어 센터 클라이언트 설정에서 **소프트웨어 센터에서 설치된 응용 프로그램 숨기기** 설정을 사용하도록 설정합니다. 최종 사용자가 응용 프로그램을 설치할 때 소프트웨어 센터의 동작을 관찰합니다.
+소프트웨어 센터 클라이언트 설정에서 **소프트웨어 센터에서 설치된 애플리케이션 숨기기** 설정을 사용하도록 설정합니다. 최종 사용자가 애플리케이션을 설치할 때 소프트웨어 센터의 동작을 관찰합니다.
 
 
 
@@ -268,10 +268,10 @@ Configuration Manager는 기존 클래식 CMG 인스턴스를 Azure Resource Man
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
  작업을 완료합니다. 그런 다음 어떻게 작동하는지 알 수 있도록 리본의 **홈** 탭에서 **피드백**을 보냅니다.
 
-1. 사용자 컬렉션이 사용할 수 있는 응용 프로그램으로 배포합니다.
+1. 사용자 컬렉션이 사용할 수 있는 애플리케이션으로 배포합니다.
 2. **배포 설정** 페이지에서 **관리자가 장치에서 이 응용 프로그램에 대한 요청을 승인해야 합니다.** 옵션을 사용하도록 설정합니다.
-3. 대상 사용자로, 소프트웨어 센터를 사용하여 응용 프로그램에 대한 요청을 제출합니다. 
-4. Configuration Manager 콘솔의 **소프트웨어 라이브러리** 작업 영역에서 **응용 프로그램 관리** 아래의 **승인 요청**을 확인합니다. 이제 각 요청에 대한 **디바이스** 열이 목록에 있습니다. 요청에 대한 작업을 수행하는 경우 응용 프로그램 요청 대화 상자에 사용자가 요청을 제출한 디바이스 이름도 포함됩니다.
+3. 대상 사용자로, 소프트웨어 센터를 사용하여 애플리케이션에 대한 요청을 제출합니다. 
+4. Configuration Manager 콘솔의 **소프트웨어 라이브러리** 작업 영역에서 **애플리케이션 관리** 아래의 **승인 요청**을 확인합니다. 이제 각 요청에 대한 **디바이스** 열이 목록에 있습니다. 요청에 대한 작업을 수행하는 경우 응용 프로그램 요청 대화 상자에 사용자가 요청을 제출한 디바이스 이름도 포함됩니다.
 
 
 
@@ -282,7 +282,7 @@ Configuration Manager는 기존 클래식 CMG 인스턴스를 Azure Resource Man
 ### <a name="prerequisites"></a>필수 구성 요소
 - 관리 지점에서 HTTPS 사용
 - [Azure AD](/sccm/core/clients/deploy/deploy-clients-cmg-azure)와 사이트 통합
-- 사용자 컬렉션이 사용할 수 있는 응용 프로그램으로 배포
+- 사용자 컬렉션이 사용할 수 있는 애플리케이션으로 배포
 - [클라우드 배포 지점](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point)에 응용 프로그램 콘텐츠 배포
 - [컴퓨터 에이전트](/sccm/core/clients/deploy/about-client-settings#computer-agent) 그룹에서 클라이언트 설정인 **새 소프트웨어 센터 사용** 설정
 - 클라이언트는 다음과 같아야 합니다. 
@@ -398,7 +398,7 @@ Windows 10 클라이언트에서 [Microsoft Edge](https://technet.microsoft.com/
 
 ## <a name="support-for-windows-10-arm64-devices"></a>Windows 10 ARM64 디바이스 지원
 <!-- 1353704 -->
-이 릴리스부터는 Windows 10 ARM64 디바이스에서 구성 관리자 클라이언트가 지원됩니다. 기존 클라이언트 관리 기능도 이러한 새 디바이스에서 작동합니다. 예를 들어 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 업데이트, 응용 프로그램 관리 등입니다. 운영 체제 배포는 현재 지원되지 않습니다. 
+이 릴리스부터는 Windows 10 ARM64 디바이스에서 구성 관리자 클라이언트가 지원됩니다. 기존 클라이언트 관리 기능도 이러한 새 디바이스에서 작동합니다. 예를 들어 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 업데이트, 애플리케이션 관리 등입니다. 운영 체제 배포는 현재 지원되지 않습니다. 
 
 ## <a name="changes-to-phased-deployments"></a>단계별 배포 변경 사항
 <!-- 1357405 -->

@@ -19,7 +19,7 @@ ms.lasthandoff: 03/27/2018
 ms.locfileid: "27821017"
 ---
 # <a name="troubleshooting-reference-for-the-microsoft-deployment-toolkit"></a>Microsoft Deployment Toolkit에 대한 참조 문제 해결
- 운영 체제 및 응용 프로그램의 배포 및 사용자 상태의 마이그레이션은 적절한 도구와 지침을 갖추더라도 어려운 시도일 수 있습니다. 이 참조는 MDT(Microsoft® Deployment Toolkit) 2013의 일부로서 현재 알려진 문제에 관한 정보, 해당 문제에 대한 가능한 해결 방법 및 문제 해결 지침을 제공합니다.  
+ 운영 체제 및 애플리케이션의 배포 및 사용자 상태의 마이그레이션은 적절한 도구와 지침을 갖추더라도 어려운 시도일 수 있습니다. 이 참조는 MDT(Microsoft® Deployment Toolkit) 2013의 일부로서 현재 알려진 문제에 관한 정보, 해당 문제에 대한 가능한 해결 방법 및 문제 해결 지침을 제공합니다.  
 
 > [!NOTE]
 >  이 문서에서 *Windows*는 달리 언급이 없는 한 Windows 8.1, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012 및 Windows Server 2008 R2 운영 체제에 적용됩니다. MDT는 ARM 프로세서 기반 버전의 Windows를 지원하지 않습니다. 마찬가지로 *MDT*는 달리 언급이 없는 한 MDT 2013을 의미합니다.  
@@ -309,8 +309,8 @@ The action "Zero Touch Installation - Validation" failed with exit code 5001
 
 -   모든 소프트웨어 및 하드웨어 필수 구성 요소가 충족되지 않은 경우 설치 문제가 발생할 수 있습니다.  
 
-### <a name="application-installation"></a>응용 프로그램 설치  
- 응용 프로그램 설치 문제에 대한 문제 및 솔루션을 검토합니다.  
+### <a name="application-installation"></a>애플리케이션 설치  
+ 애플리케이션 설치 문제에 대한 문제 및 솔루션을 검토합니다.  
 
 -   [차단된 실행 파일](#BlockedExecutables)에 설명된 대로 보안 이유로 차단된 설치 원본 파일  
 

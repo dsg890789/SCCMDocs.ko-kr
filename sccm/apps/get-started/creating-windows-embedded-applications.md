@@ -1,5 +1,5 @@
 ---
-title: Windows Embedded 응용 프로그램 만들기
+title: Windows Embedded 애플리케이션 만들기
 titleSuffix: Configuration Manager
 description: Windows Embedded 디바이스용 응용 프로그램을 만들고 배포할 때 고려해야 할 사항을 확인합니다.
 ms.date: 10/06/2016
@@ -17,7 +17,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
 ms.locfileid: "32332426"
 ---
-# <a name="create-windows-embedded-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows Embedded 응용 프로그램 만들기
+# <a name="create-windows-embedded-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows Embedded 애플리케이션 만들기
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -31,9 +31,9 @@ ms.locfileid: "32332426"
 
 -   쓰기 필터 동작을 제어하는 설정은 이름이 **최종 기한에 또는 유지 관리 기간에 변경 내용 커밋(다시 시작해야 함)** 인 확인란입니다.  
 
-## <a name="tips-for-deploying-applications"></a>응용 프로그램 배포에 대한 팁  
+## <a name="tips-for-deploying-applications"></a>애플리케이션 배포에 대한 팁  
 
-**쓰기 필터를 사용하도록 설정된 Windows Embedded 장치에는 사용 가능한 응용 프로그램이 아니라 필수 응용 프로그램을 사용합니다.** 쓰기 필터를 사용하도록 설정된 Windows Embedded 디바이스에서는 사용자가 소프트웨어 센터를 통해 앱을 설치할 수 없으므로, 이러한 디바이스에는 항상 **사용 가능**이 아닌 **필수** 배포용 응용 프로그램을 배포합니다. 일반적으로 Windows Embedded 운영 체제를 실행하는 컴퓨터에서는 여러 사용자에 대해 동일한 방식으로 실행해야 하는 단일 응용 프로그램을 실행하는 경우가 많으므로 이렇게 배포해도 문제가 없습니다. 이로 인해 이러한 디바이스는 IT 부서에서 엄격하게 관리되고 통제됩니다. 필수 응용 프로그램이 이 시나리오에 적합합니다.
+**쓰기 필터를 사용하도록 설정된 Windows Embedded 장치에는 사용 가능한 응용 프로그램이 아니라 필수 응용 프로그램을 사용합니다.** 쓰기 필터를 사용하도록 설정된 Windows Embedded 디바이스에서는 사용자가 소프트웨어 센터를 통해 앱을 설치할 수 없으므로, 이러한 디바이스에는 항상 **사용 가능**이 아닌 **필수** 배포용 응용 프로그램을 배포합니다. 일반적으로 Windows Embedded 운영 체제를 실행하는 컴퓨터에서는 여러 사용자에 대해 동일한 방식으로 실행해야 하는 단일 애플리케이션을 실행하는 경우가 많으므로 이렇게 배포해도 문제가 없습니다. 이로 인해 이러한 디바이스는 IT 부서에서 엄격하게 관리되고 통제됩니다. 필수 애플리케이션이 이 시나리오에 적합합니다.
 
  그러나 사용자가 임베디드 디바이스에서 쓰기 필터를 사용할 때 둘 이상의 응용 프로그램을 실행하는 경우 해당 사용자에게 다음과 같은 제한 사항을 알려 주십시오.  
 
@@ -41,7 +41,7 @@ ms.locfileid: "32332426"
 
 -   사용자는 소프트웨어 센터의 옵션 탭에서 근무 시간을 변경할 수 없습니다.  
 
--   사용자는 필수 응용 프로그램의 설치를 연기할 수 없습니다.  
+-   사용자는 필수 애플리케이션의 설치를 연기할 수 없습니다.  
 
 또한 Configuration Manager에서 소프트웨어 설치 및 업데이트를 위해 변경 내용을 커밋하는 경우 권한이 낮은 사용자는 유지 관리 기간 동안 로그온할 수 없습니다. 이 기간 동안에는 디바이스가 서비스되고 있으므로 사용할 수 없음을 알리는 메시지가 표시됩니다.  
 

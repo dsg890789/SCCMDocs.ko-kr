@@ -39,9 +39,9 @@ System Center Configuration Manager 조건부 액세스를 사용하면 지정�
 
 -   Windows Phone 8.1 이상  
 
--   Windows 8.1 이상에 설치된 메일 응용 프로그램
+-   Windows 8.1 이상에 설치된 메일 애플리케이션
 
-Office 데스크톱 응용 프로그램은 다음을 실행하는 Exchange Online에 액세스할 수 있습니다.  
+Office 데스크톱 애플리케이션은 다음을 실행하는 Exchange Online에 액세스할 수 있습니다.  
 
 -   [최신 인증](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) 이 사용되는 Office 데스크톱 2013 이상  
 
@@ -77,7 +77,7 @@ Office 데스크톱 응용 프로그램은 다음을 실행하는 Exchange Onlin
 * 관리되는 브라우저(iOS 및 Android)
 
 지원되지 않는 브라우저는 차단됩니다. IOS 및 Android 용 OWA 앱은 지원되지 않습니다.  이러한 브라우저는 ADFS 클레임 규칙을 통해 차단해야 합니다.
-* 최신 인증 이외의 인증 프로토콜을 차단하도록 ADFS 클레임 규칙을 설정해야 합니다. 자세한 지침은 시나리오 3 - [브라우저 기반 응용 프로그램을 제외한 모든 O365 액세스 차단](https://technet.microsoft.com/library/dn592182.aspx)에서 제공됩니다.
+* 최신 인증 이외의 인증 프로토콜을 차단하도록 ADFS 클레임 규칙을 설정해야 합니다. 자세한 지침은 시나리오 3 - [브라우저 기반 애플리케이션을 제외한 모든 O365 액세스 차단](https://technet.microsoft.com/library/dn592182.aspx)에서 제공됩니다.
 
  **PC의 경우:**  
 
@@ -93,7 +93,7 @@ Office 데스크톱 응용 프로그램은 다음을 실행하는 Exchange Onlin
 
 -   Windows Phone 8.1 이상  
 
--   Windows 8.1 이상에 설치된 **메일** 응용 프로그램  
+-   Windows 8.1 이상에 설치된 **메일** 애플리케이션  
 
  iOS, Android 및 Outlook 데스크톱 2013 이상용 Outlook 앱은 Exchange Online에서만 지원됩니다.  
 
@@ -248,7 +248,7 @@ Office 데스크톱 응용 프로그램은 다음을 실행하는 Exchange Onlin
 
     -   **장치가 규정을 준수해야 합니다.** PC가 Intune에 등록되어 있어야 하며 정책을 준수해야 합니다. PC가 등록되지 않은 경우 등록 방법에 대한 지침이 포함된 메시지가 표시됩니다.  
 
-7.  **OWA(Outlook Web Access)** 에서 지원되는 브라우저[예: Safari(iOS) 및 Chrome(Android)]를 통한 Exchange Online 액세스만 허용하도록 선택할 수 있습니다. 다른 브라우저에서의 액세스는 차단됩니다. Outlook에의 응용 프로그램 액세스에 대해 선택한 것과 동일한 플랫폼 제한 사항이 여기에도 적용됩니다.
+7.  **OWA(Outlook Web Access)** 에서 지원되는 브라우저[예: Safari(iOS) 및 Chrome(Android)]를 통한 Exchange Online 액세스만 허용하도록 선택할 수 있습니다. 다른 브라우저에서의 액세스는 차단됩니다. Outlook에의 애플리케이션 액세스에 대해 선택한 것과 동일한 플랫폼 제한 사항이 여기에도 적용됩니다.
 
     **Android** 장치에서는, 사용자가 브라우저 액세스를 사용하도록 설정해야 합니다.  이를 위해서 최종 사용자가 등록된 디바이스에서 다음과 같이 "브라우저 액세스 사용" 옵션을 사용하도록 설정해야 합니다.
      1. **회사 포털 앱**을 시작합니다.

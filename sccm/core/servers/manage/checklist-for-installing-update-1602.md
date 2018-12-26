@@ -50,7 +50,7 @@ System Center Configuration Manager 버전 1511에서 1602로 업데이트하기
 
 -   서비스 연결 지점  
 
-이 설치는 사이트 시스템 서버를 다시 부팅 보류 중 상태로 전환하고 Configuration Manager 구성 요소 상태 뷰어에 오류를 보고할 수 있습니다. 또한, 서버가 다시 부팅될 때까지 서버의 .NET 응용 프로그램에서 임의의 오류가 발생할 수 있습니다.  
+이 설치는 사이트 시스템 서버를 다시 부팅 보류 중 상태로 전환하고 Configuration Manager 구성 요소 상태 뷰어에 오류를 보고할 수 있습니다. 또한, 서버가 다시 부팅될 때까지 서버의 .NET 애플리케이션에서 임의의 오류가 발생할 수 있습니다.  
 
  자세한 내용은 [사이트 및 사이트 시스템 필수 조건](../../../core/plan-design/configs/site-and-site-system-prerequisites.md)을 참조하세요.  
 

@@ -54,7 +54,7 @@ System Center Configuration Manager에서 마이그레이션은 지원되는 버
 
 ### <a name="objects-that-you-can-migrate-from-system-center-2012-configuration-manager-or-system-center-configuration-manager-current-branch"></a>System Center 2012 Configuration Manager 또는 System Center Configuration Manager 현재 분기에서 마이그레이션할 수 있는 개체
 
--   System Center 2012 Configuration Manager 이상 버전용 응용 프로그램  
+-   System Center 2012 Configuration Manager 이상 버전용 애플리케이션  
 
 -   System Center 2012 Configuration Manager 이상 버전의 App-V 가상 환경  
 
@@ -102,13 +102,13 @@ System Center Configuration Manager에서 마이그레이션은 지원되는 버
 
 -   소프트웨어 계량 규칙  
 
--   가상 응용 프로그램 패키지  
+-   가상 애플리케이션 패키지  
 
 ### <a name="objects-that-you-can-migrate-from-configuration-manager-2007-sp2"></a>Configuration Manager 2007 SP2에서 마이그레이션할 수 있는 개체
 
 -   보급 알림  
 
--   System Center 2012 Configuration Manager 이상 버전용 응용 프로그램  
+-   System Center 2012 Configuration Manager 이상 버전용 애플리케이션  
 
 -   System Center 2012 Configuration Manager 이상 버전의 App-V 가상 환경  
 
@@ -154,7 +154,7 @@ System Center Configuration Manager에서 마이그레이션은 지원되는 버
 
 -   소프트웨어 계량 규칙  
 
--   가상 응용 프로그램 패키지  
+-   가상 애플리케이션 패키지  
 
 ##  <a name="Cannot_migrate"></a> System Center Configuration Manager로 마이그레이션할 수 없는 데이터  
  다음과 같은 유형의 개체는 마이그레이션할 수 없습니다.  

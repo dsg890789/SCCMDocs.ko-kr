@@ -46,7 +46,7 @@ WSUS 데이터베이스 공유에 대한 자세한 내용은 다음 블로그 �
 
 ### <a name="bkmk_sql-instance"></a> Configuration Manager와 WSUS가 동일한 SQL Server를 사용하는 경우 하나는 명명된 인스턴스를 사용하고 다른 하나는 SQL Server의 기본 인스턴스를 사용하도록 구성  
 
-Configuration Manager와 WSUS 데이터베이스가 동일한 SQL Server 인스턴스를 공유하는 경우 두 응용 프로그램 간의 리소스 사용을 손쉽게 파악할 수 없습니다. Configuration Manager와 WSUS에 서로 다른 SQL Server 인스턴스를 사용합니다. 이 구성으로, 각 응용 프로그램에 대해 발생할 수 있는 리소스 사용 문제를 해결하고 진단하기가 더 쉽습니다.  
+Configuration Manager와 WSUS 데이터베이스가 동일한 SQL Server 인스턴스를 공유하는 경우 두 애플리케이션 간의 리소스 사용을 손쉽게 파악할 수 없습니다. Configuration Manager와 WSUS에 서로 다른 SQL Server 인스턴스를 사용합니다. 이 구성으로, 각 애플리케이션에 대해 발생할 수 있는 리소스 사용 문제를 해결하고 진단하기가 더 쉽습니다.  
 
 
 ### <a name="bkmk_store-local"></a> "로컬로 업데이트 저장" 설정 지정  

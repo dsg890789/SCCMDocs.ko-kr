@@ -240,7 +240,7 @@ Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추�
 
   새로운 앱은 Windows 10 디바이스에서 SSO(Single Sign-On) 및 인증서 기반 인증과 같은 플랫폼 기능을 활용합니다. 이 앱은 Windows 스토어에서 설치되는 기존 Windows 8.1 회사 포털 및 Windows Phone 8.1 회사 포털의 업그레이드로 제공됩니다. 추가 세부 정보를 확인하려면 [Intune 지원 팀 블로그](http://aka.ms/intunecp_universalapp)를 방문하세요.
 
-  새로운 회사 포털 앱에는 Configuration Manager 콘솔에 **사용 가능**으로 표시되는 비즈니스용 Windows 스토어 응용 프로그램도 표시됩니다.
+  새로운 회사 포털 앱에는 Configuration Manager 콘솔에 **사용 가능**으로 표시되는 비즈니스용 Windows 스토어 애플리케이션도 표시됩니다.
 
 
 ### <a name="new-in-configuration-manager-current-branch"></a>Configuration Manager(현재 분기)의 새로운 기능
@@ -289,11 +289,11 @@ Configuration Manager(현재 분기)의 버전 1610에는 다음과 같은 추�
 
 - **모바일 응용 프로그램 관리에 대한 조건부 액세스**
 
-  Outlook 등의 Intune 모바일 응용 프로그램 관리 정책을 지원하는 앱에서만 액세스할 수 있도록 Exchange Online에 대한 액세스를 제한할 수 있습니다. [이 새로운 기능](/intune/deploy-use/allow-policy-managed-apps-access-to-o365)은 기본 제공 메일 클라이언트 또는 Intune MAM 정책으로 구성되지 않은 다른 앱에 대한 액세스를 차단할 수 있도록 Intune MAM(모바일 앱 관리) 정책과 완벽하게 연결됩니다. 이렇게 하면 사용자가 Intune MAM으로 보호할 수 있는 앱을 사용하여 조직의 데이터에 액세스합니다. Azure Portal을 통해 Intune 모바일 앱 관리를 시작할 수 있습니다. "설정" 블레이드에서 새 조건부 액세스 섹션을 찾습니다.
+  Outlook 등의 Intune 모바일 애플리케이션 관리 정책을 지원하는 앱에서만 액세스할 수 있도록 Exchange Online에 대한 액세스를 제한할 수 있습니다. [이 새로운 기능](/intune/deploy-use/allow-policy-managed-apps-access-to-o365)은 기본 제공 메일 클라이언트 또는 Intune MAM 정책으로 구성되지 않은 다른 앱에 대한 액세스를 차단할 수 있도록 Intune MAM(모바일 앱 관리) 정책과 완벽하게 연결됩니다. 이렇게 하면 사용자가 Intune MAM으로 보호할 수 있는 앱을 사용하여 조직의 데이터에 액세스합니다. Azure Portal을 통해 Intune 모바일 앱 관리를 시작할 수 있습니다. "설정" 블레이드에서 새 조건부 액세스 섹션을 찾습니다.
 
 -   **Android용 Intune 앱 래핑 도구**
 
-  Intune 앱 래핑 도구를 통해 앱이 Intune MAM(모바일 응용 프로그램 관리) 정책을 사용할 수 있도록 설정할 수 있습니다.
+  Intune 앱 래핑 도구를 통해 앱이 Intune MAM(모바일 애플리케이션 관리) 정책을 사용할 수 있도록 설정할 수 있습니다.
 
 - **Intune과 Android 삼성 KNOX Standard 호환성**
 
@@ -358,7 +358,7 @@ Configuration Manager Technical Preview 1609의 2016년 9월에 도입된 새로
 
 - **비즈니스용 Windows 스토어의 유료 앱**
 
-  이제 비즈니스용 Windows 스토어에 유료 및 무료 응용 프로그램을 추가하고 조직의 사용자에게 배포할 수 있습니다. 자세한 내용은 [TP 1609에서 비즈니스용 Windows 스토어의 향상된 기능](/sccm/core/get-started/capabilities-in-technical-preview-1609#enhancements-to-windows-store-for-business-integration-with-configuration-manager)을 참조하세요.
+  이제 비즈니스용 Windows 스토어에 유료 및 무료 애플리케이션을 추가하고 조직의 사용자에게 배포할 수 있습니다. 자세한 내용은 [TP 1609에서 비즈니스용 Windows 스토어의 향상된 기능](/sccm/core/get-started/capabilities-in-technical-preview-1609#enhancements-to-windows-store-for-business-integration-with-configuration-manager)을 참조하세요.
 
 - **Windows 10 VPN 프로필에 대한 네이티브 연결 형식**
 
@@ -546,7 +546,7 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 
 - **MAM 정책을 사용한 관리를 위해 제공되는 새 앱**
 
-  이제 Intune에 등록하지 않은 디바이스에서 Android용 Microsoft Word, Excel 및 PowerPoint 앱을 MAM 정책과 연결할 수 있습니다. 지원되는 앱의 전체 목록을 보려면 [Microsoft Intune 응용 프로그램 파트너](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) 페이지의 Microsoft Intune 모바일 응용 프로그램 갤러리로 이동합니다.  
+  이제 Intune에 등록하지 않은 디바이스에서 Android용 Microsoft Word, Excel 및 PowerPoint 앱을 MAM 정책과 연결할 수 있습니다. 지원되는 앱의 전체 목록을 보려면 [Microsoft Intune 애플리케이션 파트너](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) 페이지의 Microsoft Intune 모바일 애플리케이션 갤러리로 이동합니다.  
 
 - **Android 회사 포털 앱: 최종 사용자 알림 메시지**
 
@@ -602,7 +602,7 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 
 - **MAM 사용자 준수**
 
-  이제 AAD(Azure Active Directory) 테넌트의 사용자에 대한 응용 프로그램 관리 정책의 상태를 볼 수 있습니다.  자세한 내용은 Intune 라이브러리에서 [Microsoft Intune으로 모바일 앱 관리 정책 모니터링](/intune/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune)을 참조하세요.  
+  이제 AAD(Azure Active Directory) 테넌트의 사용자에 대한 애플리케이션 관리 정책의 상태를 볼 수 있습니다.  자세한 내용은 Intune 라이브러리에서 [Microsoft Intune으로 모바일 앱 관리 정책 모니터링](/intune/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune)을 참조하세요.  
 
 - **Outlook 연락처 동기화를 방지하는 MAM 컨트롤(Android)**
 
@@ -686,7 +686,7 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 
 - **Android 및 iOS 회사 포털 앱에 대한 향상된 기능**
 
-  -   사용자가 MAM(모바일 응용 프로그램 관리)에서 관리되는 앱을 실행하는 경우 앱이 회사에서 관리된다고 알리는 메시지가 표시됩니다. 이제 사용자가 "자세한 정보" 링크를 탭하여 "관리되는 앱"의 의미에 대한 자세한 정보를 여기서 확인할 수 있습니다. 앱을 실행할 때 메시지는 더 이상 표시되지 않도록 "다시 표시 안 함"을 탭할 수도 있습니다.  
+  -   사용자가 MAM(모바일 애플리케이션 관리)에서 관리되는 앱을 실행하는 경우 앱이 회사에서 관리된다고 알리는 메시지가 표시됩니다. 이제 사용자가 "자세한 정보" 링크를 탭하여 "관리되는 앱"의 의미에 대한 자세한 정보를 여기서 확인할 수 있습니다. 앱을 실행할 때 메시지는 더 이상 표시되지 않도록 "다시 표시 안 함"을 탭할 수도 있습니다.  
 
   -   사용자에게 등록 과정을 안내하고 사용자가 등록해야 이유 및 IT 관리자가 등록 된 디바이스에서 볼 수 있는 사항과 볼 수 없는 사항에 대한 자세한 정보를 제공하는 새 화면이 추가되었습니다.  
 
@@ -717,7 +717,7 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
   -   Microsoft OneNote(iOS만 해당)  
   -   Microsoft Outlook  
 
-  이러한 앱은 Configuration Manager 콘솔의 응용 프로그램 노드에 있습니다. 응용 프로그램을 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 응용 프로그램을 배포하는 방법](../../apps/deploy-use/deploy-applications.md)을 참조하세요.  
+  이러한 앱은 Configuration Manager 콘솔의 애플리케이션 노드에 있습니다. 애플리케이션을 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 애플리케이션을 배포하는 방법](../../apps/deploy-use/deploy-applications.md)을 참조하세요.  
 
 - **Android Samsung KNOX Standard 장치에 대한 키오스크 모드 설정**
 

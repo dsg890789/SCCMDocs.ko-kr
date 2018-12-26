@@ -49,7 +49,7 @@ System Center Configuration Manager 현재 분기의 업데이트 1702는 버전
 ### <a name="improvements-for-in-console-search"></a>콘솔 내 검색의 향상된 기능
 다음은 Configuration Manager 콘솔의 검색 사용에 대한 향상된 기능입니다.
  - **개체 경로:**  
-  이제 많은 개체가 **개체 경로**라는 열을 지원합니다.  이 열을 검색하고 표시 결과에 포함하는 경우 각 개체의 경로를 볼 수 있습니다. 예를 들어 응용 프로그램 노드에서 앱 검색을 실행하고 하위 노드도 검색하는 경우 결과 창의 *개체 경로* 열에 반환된 각 개체의 경로가 표시됩니다.   
+  이제 많은 개체가 **개체 경로**라는 열을 지원합니다.  이 열을 검색하고 표시 결과에 포함하는 경우 각 개체의 경로를 볼 수 있습니다. 예를 들어 애플리케이션 노드에서 앱 검색을 실행하고 하위 노드도 검색하는 경우 결과 창의 *개체 경로* 열에 반환된 각 개체의 경로가 표시됩니다.   
 
 - **검색 텍스트 보존:**  
   검색 텍스트 상자에 텍스트를 입력한 후 하위 노드 및 현재 노드 검색 간을 전환하는 경우 입력한 텍스트가 이제 보존되어 다시 입력하지 않고 새 검색에 사용할 수 있습니다.
@@ -134,20 +134,20 @@ Microsoft Intune에서 제공하는 설정과 일치하도록 iOS 디바이스�
 모든 사용 가능한 설정 목록은 [Intune으로 관리되는 iOS 및 Mac OS X 디바이스에 대한 구성 항목 만들기](/sccm/mdm/deploy-use/create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client)를 참조하세요.
 
 
-## <a name="application-management"></a>응용 프로그램 관리
+## <a name="application-management"></a>애플리케이션 관리
 
 ### <a name="improved-support-for-windows-store-for-business-apps"></a>비즈니스용 Windows 스토어 앱에 대한 지원 향상
 
 이제 온라인에서 사용이 허가된 앱을 비즈니스용 Windows 스토어에서 Configuration Manager 클라이언트를 통해 관리하는 Windows 10 PC로 배포할 수 있습니다.
 자세한 내용은 [비즈니스용 Windows 스토어에서 앱 관리](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)를 참조하세요.
 
-### <a name="check-for-running-executable-files-before-installing-an-application"></a>응용 프로그램을 설치하기 전에 실행 중인 실행 파일 확인
+### <a name="check-for-running-executable-files-before-installing-an-application"></a>애플리케이션을 설치하기 전에 실행 중인 실행 파일 확인
 
 이제 배포 유형의 **속성** 대화 상자에 있는 **설치 동작** 탭에서 배포 유형의 설치를 차단하는 실행 파일(실행 중일 경우)을 하나 이상 지정할 수 있습니다. 사용자가 실행 중인 실행 파일을 닫아야(또는 필수 용도의 배포를 위해 자동으로 닫힐 수 있음) 배포 유형을 설치할 수 있습니다.
 
-응용 프로그램이 **사용 가능**으로 배포된 경우 최종 사용자가 응용 프로그램을 설치하려고 하면 지정된 실행 중인 실행 파일을 닫아야 설치를 계속할 수 있다는 메시지가 표시됩니다.
+애플리케이션이 **사용 가능**으로 배포된 경우 최종 사용자가 애플리케이션을 설치하려고 하면 지정된 실행 중인 실행 파일을 닫아야 설치를 계속할 수 있다는 메시지가 표시됩니다.
 
-응용 프로그램이 **필수**로 배포되었으며 **배포 유형 속성 대화 상자의 설치 동작 탭에 지정한 모든 실행 중인 실행 파일 자동으로 닫기** 옵션이 선택된 경우 응용 프로그램 설치 최종 기한에 도달하면 지정된 실행 파일이 자동으로 닫힌다고 알리는 대화 상자가 표시됩니다.
+애플리케이션이 **필수**로 배포되었으며 **배포 유형 속성 대화 상자의 설치 동작 탭에 지정한 모든 실행 중인 실행 파일 자동으로 닫기** 옵션이 선택된 경우 애플리케이션 설치 최종 기한에 도달하면 지정된 실행 파일이 자동으로 닫힌다고 알리는 대화 상자가 표시됩니다.
 
 ### <a name="app-management-improvements-for-hybrid-mdm"></a>하이브리드 MDM에 대한 앱 관리 개선
 
@@ -162,10 +162,10 @@ Microsoft Intune에서 제공하는 설정과 일치하도록 iOS 디바이스�
 독립 실행형 미디어를 만드는 경우 미디어에 선택적 시작 및 만료 날짜를 설정하는 새 옵션이 있습니다. 이러한 설정은 기본적으로 사용되지 않습니다. 독립 실행형 미디어를 실행하기 전에 날짜가 컴퓨터의 시스템 시간과 비교됩니다. 시스템 시간이 시작 시간보다 이전이거나 만료 시간보다 이후이면 독립 실행형 미디어가 시작되지 않습니다. New-CMStandaloneMedia PowerShell cmdlet을 사용하여 이러한 옵션을 사용할 수도 있습니다. 자세한 내용은 [독립 실행형 미디어 만들기](/sccm/osd/deploy-use/create-stand-alone-media)를 참조하세요.
 
 ### <a name="package-id-displayed-in-task-sequence-steps"></a>작업 순서 단계에서 지연된 패키지 ID
-이제 패키지, 드라이버 패키지, 운영 체제 이미지, 부팅 이미지 또는 운영 체제 업그레이드 패키지를 참조하는 모든 작업 순서 단계에 참조된 개체의 패키지 ID가 표시됩니다. 응용 프로그램을 참조하는 작업 순서 단계에 개체 ID가 표시됩니다.
+이제 패키지, 드라이버 패키지, 운영 체제 이미지, 부팅 이미지 또는 운영 체제 업그레이드 패키지를 참조하는 모든 작업 순서 단계에 참조된 개체의 패키지 ID가 표시됩니다. 애플리케이션을 참조하는 작업 순서 단계에 개체 ID가 표시됩니다.
 
 ### <a name="support-for-additional-content-in-stand-alone-media"></a>독립 실행형 미디어의 추가 콘텐츠 지원
-이제 독립 실행형 미디어에서 추가 콘텐츠가 지원됩니다. 작업 순서에서 참조된 다른 콘텐츠와 함께 미디어에 스테이징할 추가 패키지, 드라이버 패키지 및 응용 프로그램을 선택할 수 있습니다. 이전에는 작업 순서에서 참조된 콘텐츠만 독립 실행형 미디어에 스테이징되었습니다. 자세한 내용은 [독립 실행형 미디어 만들기](/sccm/osd/deploy-use/create-stand-alone-media)를 참조하세요.
+이제 독립 실행형 미디어에서 추가 콘텐츠가 지원됩니다. 작업 순서에서 참조된 다른 콘텐츠와 함께 미디어에 스테이징할 추가 패키지, 드라이버 패키지 및 애플리케이션을 선택할 수 있습니다. 이전에는 작업 순서에서 참조된 콘텐츠만 독립 실행형 미디어에 스테이징되었습니다. 자세한 내용은 [독립 실행형 미디어 만들기](/sccm/osd/deploy-use/create-stand-alone-media)를 참조하세요.
 
 ### <a name="hardware-inventory-collects-uefi-information"></a>하드웨어 인벤토리를 통해 UEFI 정보 수집
 새 하드웨어 인벤토리 클래스(**SMS_Firmware**) 및 속성(**UEFI**)을 사용하여 컴퓨터를 UEFI 모드로 시작할지 여부를 결정할 수 있습니다. 컴퓨터를 UEFI 모드로 시작하는 경우 **UEFI** 속성을 **TRUE**로 설정합니다. 하드웨어 인벤토리에서 기본적으로 사용됩니다. 하드웨어 인벤토리에 대한 자세한 내용은 [하드웨어 인벤토리를 구성하는 방법](/sccm/core/clients/manage/inventory/configure-hardware-inventory)을 참조하세요.
@@ -192,10 +192,10 @@ Microsoft Intune에서 제공하는 설정과 일치하도록 iOS 디바이스�
 ### <a name="convert-from-bios-to-uefi-during-an-in-place-upgrade"></a>현재 위치 업그레이드 중에 BIOS에서 UEFI로 변환
 Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞게 하드 디스크를 다시 분할하는 프로세스를 자동화하는 간단한 변환 도구를 소개하고 Windows 7에서 Windows 10으로의 현재 위치 업그레이드 프로세스에 변환 도구를 통합합니다. 펌웨어를 BIOS에서 UEFI로 변환하는 OEM 도구 및 운영 체제 업그레이드 작업 순서와 이 도구를 결합하면 Windows 10 크리에이터 업데이트로의 현재 위치 업그레이드 중에 BIOS에서 UEFI로 컴퓨터를 변환할 수 있습니다. 자세한 내용은 [BIOS-UEFI 변환을 관리하는 작업 순서 단계](/sccm/osd/deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion#convert-from-bios-to-uefi-during-an-in-place-upgrade)를 참조하세요.
 
-### <a name="improvements-to-the-install-applications-task-sequence-step"></a>응용 프로그램 설치 작업 순서 단계의 향상된 기능
+### <a name="improvements-to-the-install-applications-task-sequence-step"></a>애플리케이션 설치 작업 순서 단계의 향상된 기능
 이 버전에는 다음과 같은 향상된 기능이 추가되었습니다.
-- **응용 프로그램 설치** 작업 순서 단계에서 설치할 수 있는 최대 응용 프로그램 수가 99개까지 증가했습니다. 이전의 최대 개수는 응용 프로그램 9개였습니다.
-- 작업 순서 편집기에서 **응용 프로그램 설치** 작업 순서 단계에 응용 프로그램을 추가하는 경우 이제 **설치할 응용 프로그램 선택** 창에서 여러 응용 프로그램을 선택할 수 있습니다.
+- **응용 프로그램 설치** 작업 순서 단계에서 설치할 수 있는 최대 응용 프로그램 수가 99개까지 증가했습니다. 이전의 최대 개수는 애플리케이션 9개였습니다.
+- 작업 순서 편집기에서 **애플리케이션 설치** 작업 순서 단계에 애플리케이션을 추가하는 경우 이제 **설치할 애플리케이션 선택** 창에서 여러 애플리케이션을 선택할 수 있습니다.
 
 ### <a name="improvements-to-the-auto-apply-driver-task-sequence"></a>드라이버 자동 적용 작업 순서의 향상된 기능
 이제 새 작업 순서 변수를 사용하여 HTTP 카탈로그 요청 시 드라이버 자동 적용 작업 순서 단계에 대한 시간 제한 값을 구성할 수 있습니다. 다음 변수와 기본값(초)을 사용할 수 있습니다.
@@ -220,10 +220,10 @@ Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞
 ## <a name="software-updates"></a>소프트웨어 업데이트
 
 ### <a name="deploy-office-365-apps-to-clients"></a>클라이언트에 Office 365 앱 배포
-버전 1702부터 Office 365 클라이언트 관리 대시보드에서 Office 365 설치 설정을 구성할 수 있는 Office 365 설치 관리자를 시작하고, Office CDN(Content Delivery Network)에서 파일을 다운로드하고, 파일을 Configuration Manager의 응용 프로그램으로 배포할 수 있습니다. 자세한 내용은 [Office 365 ProPlus 업데이트 관리](/sccm/sum/deploy-use/manage-office-365-proplus-updates#deploy-office-365-apps)를 참조하세요.
+버전 1702부터 Office 365 클라이언트 관리 대시보드에서 Office 365 설치 설정을 구성할 수 있는 Office 365 설치 관리자를 시작하고, Office CDN(Content Delivery Network)에서 파일을 다운로드하고, 파일을 Configuration Manager의 애플리케이션으로 배포할 수 있습니다. 자세한 내용은 [Office 365 ProPlus 업데이트 관리](/sccm/sum/deploy-use/manage-office-365-proplus-updates#deploy-office-365-apps)를 참조하세요.
 
 > [!IMPORTANT]
-> Configuration Manager의 Office 365 응용 프로그램 마법사를 사용하여 만들고 배포하는 Office 365 앱은 **Office 365 클라이언트 에이전트 관리 사용** 소프트웨어 업데이트 클라이언트 에이전트 설정을 사용할 때까지 Configuration Manager에서 자동으로 관리되지 않습니다. 자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings)를 참조하세요.
+> Configuration Manager의 Office 365 애플리케이션 마법사를 사용하여 만들고 배포하는 Office 365 앱은 **Office 365 클라이언트 에이전트 관리 사용** 소프트웨어 업데이트 클라이언트 에이전트 설정을 사용할 때까지 Configuration Manager에서 자동으로 관리되지 않습니다. 자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings)를 참조하세요.
 
 ### <a name="manage-express-installation-files-for-windows-10-updates"></a>Windows 10 업데이트에 대한 빠른 설치 파일 관리
 버전 1702부터 Configuration Manager는 Windows 10 업데이트에 대한 빠른 설치 파일을 지원합니다. 지원되는 버전의 Windows 10을 사용하는 경우 Configuration Manager 설정을 사용하여 현재 월의 Windows 10 누적 업데이트와 이전 월의 업데이트 간 변경 내용만 다운로드할 수 있습니다. 빠른 설치 파일이 없으면 Configuration Manager는 전체 Windows 10 누적 업데이트(이전 몇 개월의 모든 업데이트 포함)를 매달 다운로드합니다. 빠른 설치 파일을 사용하면 다운로드 크기가 감소하고 클라이언트에서 설치 시간이 단축됩니다. 자세한 내용은 [Windows 10 업데이트에 대한 빠른 설치 파일 관리](/sccm/sum/deploy-use/manage-express-installation-files-for-windows-10-updates)를 참조하세요.

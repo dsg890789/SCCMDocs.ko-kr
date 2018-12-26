@@ -26,9 +26,9 @@ ms.locfileid: "43297198"
 이 문서에서는 Package Conversion Manager에서 표시하는 오류 메시지에 대해 설명합니다. 오류의 가능한 원인과 오류를 수정하는 방법도 포함되어 있습니다. Package Conversion Manager는 **PCMTrace.log**에 오류 메시지를 기록합니다. 세부 정보 표시 수준을 제어하는 방법을 비롯한 자세한 내용은 [로그 파일](/sccm/apps/pcm/troubleshoot-pcm#log-files)을 참조하세요.
 
 
-#### <a name="application-creation-failed-with-the-following-exception"></a>응용 프로그램 만들기가 실패했으며 다음 예외가 발생했습니다.
+#### <a name="application-creation-failed-with-the-following-exception"></a>애플리케이션 만들기가 실패했으며 다음 예외가 발생했습니다.
 
-응용 프로그램 개체를 Configuration Manager 서버로 전송하는 동안 지정된 예외가 발생했습니다.
+애플리케이션 개체를 Configuration Manager 서버로 전송하는 동안 지정된 예외가 발생했습니다.
 
 Configuration Manager에서 권한을 확인하고 연결 유효성을 검사한 후에 다시 시도합니다. 이렇게 해도 문제가 해결되지 않으면 **PCMtrace.log**(세부 정보 표시 수준 4) 및 **SMSProv.log** 파일을 점검합니다.
 
@@ -40,7 +40,7 @@ Configuration Manager에서 권한을 확인하고 연결 유효성을 검사한
 네트워크 공유(패키지 데이터 원본)에 대한 사용자 권한을 확인하고 연결 유효성을 검사한 후에 다시 시도합니다. 이렇게 해도 문제가 해결되지 않으면 **PCMtrace.log** 파일(세부 정보 표시 수준 4)을 점검합니다.
 
 
-#### <a name="did-not-find-a-converted-package-and-its-resultant-application-in-the-workflow-outputs"></a>변환된 패키지 및 변환 결과로 생성된 응용 프로그램을 워크플로 출력에서 찾을 수 없습니다.
+#### <a name="did-not-find-a-converted-package-and-its-resultant-application-in-the-workflow-outputs"></a>변환된 패키지 및 변환 결과로 생성된 애플리케이션을 워크플로 출력에서 찾을 수 없습니다.
 응용 프로그램(변환된 패키지/프로그램)이 삭제되었습니다.
 
 종속 패키지/프로그램이 존재하도록 종속 패키지/프로그램을 수정합니다.

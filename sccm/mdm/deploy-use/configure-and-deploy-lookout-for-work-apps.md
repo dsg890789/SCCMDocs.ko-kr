@@ -36,7 +36,7 @@ ms.locfileid: "34752593"
     - 설명: Lookout에서는 디바이스를 안전하게 유지하도록 모바일 위협에 대한 최상의 보호를 제공합니다. Lookout 앱이 설치되면 앱이 위협으로부터 디바이스를 보호합니다. 위협이 발견되면 사용자와 IT 관리자에게 경고합니다.
     - 관리 범주: 컴퓨터 관리  
 
-    성공적으로 완료되면 응용 프로그램 목록에 Lookout for Work 앱이 표시됩니다.  
+    성공적으로 완료되면 애플리케이션 목록에 Lookout for Work 앱이 표시됩니다.  
 
 3.  **홈** 탭의 **배포** 그룹에서 **배포**를 선택하여 Lookout for Work 앱을 사용자에게 배포합니다.   
     >[!IMPORTANT]  
@@ -67,16 +67,16 @@ ms.locfileid: "34752593"
        | Lookout MTP     | Lookout MTP 액세스         |
        | Microsoft Graph     | 로그인 및 사용자 프로필 읽기        |  
 
-   자세한 내용은 [네이티브 클라이언트 응용 프로그램 구성](/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application)을 참조하세요.  
+   자세한 내용은 [네이티브 클라이언트 애플리케이션 구성](/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application)을 참조하세요.  
 
 
-4. Configuration Manager에서 다시 서명된 .ipa 파일을 업로드합니다. 최소 OS 버전을 iOS 8.0 이상으로 설정합니다. 자세한 내용은 [iOS 응용 프로그램 만들기](/sccm/apps/get-started/creating-ios-applications)를 참조하세요.   
+4. Configuration Manager에서 다시 서명된 .ipa 파일을 업로드합니다. 최소 OS 버전을 iOS 8.0 이상으로 설정합니다. 자세한 내용은 [iOS 애플리케이션 만들기](/sccm/apps/get-started/creating-ios-applications)를 참조하세요.   
 
 
 5. 관리되는 앱 구성 정책을 만듭니다. 자세한 내용은 [모바일 앱 구성 정책을 사용하여 iOS 앱 구성](/sccm/apps/deploy-use/configure-ios-apps-with-app-configuration-policies)을 참조하세요.  
 
 
-6. Lookout for Work 앱 구성을 사용자에게 배포합니다. 자세한 내용은 [응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications)를 참조하세요.  
+6. Lookout for Work 앱 구성을 사용자에게 배포합니다. 자세한 내용은 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications)를 참조하세요.  
 
   Lookout 콘솔의 등록 관리 옵션에 추가된 사용자와 동일한 사용자를 선택합니다. **필수 설치** 옵션을 선택하세요. 이 옵션을 사용하려면 사용자의 디바이스에 Lookout 앱을 설치해야 합니다.
 

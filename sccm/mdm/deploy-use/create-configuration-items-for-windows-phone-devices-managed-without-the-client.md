@@ -52,7 +52,7 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
   
     -   **위험** - 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다.  
   
-    -   **위험(이벤트 포함)** - 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 또한 이 심각도 수준은 응용 프로그램 이벤트 로그에 Windows 이벤트로 기록됩니다.  
+    -   **위험(이벤트 포함)** - 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 이 심각도 수준은 애플리케이션 이벤트 로그에 이벤트를 Windows 이벤트로 기록 됩니다.  
   
 11. 마법사의 **플랫폼 적용 여부 가능성** 페이지에서 이전에 선택한 지원되는 플랫폼과 호환되지 않는 설정을 검토합니다. 뒤로 돌아가서 이러한 설정을 제거하거나 계속할 수 있습니다.  
   
@@ -296,7 +296,7 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
 |**추가**|앱을 선택한 목록에 추가합니다. 원하는 이름, 앱 게시자(선택 사항) 및 앱 스토어의 앱 URL을 지정합니다.<br /><br /> URL을 지정하려면 Windows Phone 스토어 페이지에서 사용하려는 앱을 검색합니다.<br /><br /> **예:** 스토어에서 **Skype** 앱을 검색합니다. 사용할 URL은 http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51입니다.<br /><br /> 회사 포털 앱 또는 LOB(기간 업무) 앱의 경우 전체 URL을 지정할 필요가 없으며 앱 GUID만 지정하면 됩니다.|  
 |**편집**|선택한 앱의 이름, 게시자 및 URL을 편집할 수 있습니다.|  
 |**제거**|목록에서 선택한 앱을 삭제합니다.|  
-|**가져오기**|지정한 앱 목록을 쉼표로 구분된 값 파일로 가져옵니다. 파일의 형식, 응용 프로그램 이름, 게시자, 앱 URL을 사용합니다.|  
+|**가져오기**|지정한 앱 목록을 쉼표로 구분된 값 파일로 가져옵니다. 파일의 형식, 애플리케이션 이름, 게시자, 앱 URL을 사용합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  [System Center Configuration Manager 클라이언트 없이 관리되는 장치에 대한 구성 항목](../../compliance/deploy-use/configuration-items-for-devices-managed-without-the-client.md)

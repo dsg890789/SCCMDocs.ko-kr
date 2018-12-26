@@ -24,7 +24,7 @@ ms.locfileid: "32342293"
 System Center Configuration Manager에서 보고용 인프라가 준비된 후 보고서 및 보고서 구독을 관리하기 위해 일반적으로 수행하는 작업이 여러 가지가 있습니다.  
 
 ##  <a name="BKMK_ManageReports"></a> Configuration Manager 보고서 관리  
- Configuration Manager는 조직 내의 사용자, 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 업데이트, 응용 프로그램, 사이트 상태, 기타 Configuration Manager 작업 등에 대한 정보를 수집, 구성 및 제공하는 미리 정의된 보고서를 400개 이상 제공합니다. 미리 정의된 보고서는 그대로 사용할 수도 있고 요구 사항에 맞게 수정할 수도 있습니다. 또한 요구 사항에 따라 사용자 지정 모델 기반 보고서 및 SQL 기반 보고서를 만들 수도 있습니다. 다음 섹션을 사용하여 Configuration Manager 보고서를 관리할 수 있습니다.  
+ Configuration Manager는 조직 내의 사용자, 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 업데이트, 애플리케이션, 사이트 상태, 기타 Configuration Manager 작업 등에 대한 정보를 수집, 구성 및 제공하는 미리 정의된 보고서를 400개 이상 제공합니다. 미리 정의된 보고서는 그대로 사용할 수도 있고 요구 사항에 맞게 수정할 수도 있습니다. 또한 요구 사항에 따라 사용자 지정 모델 기반 보고서 및 SQL 기반 보고서를 만들 수도 있습니다. 다음 섹션을 사용하여 Configuration Manager 보고서를 관리할 수 있습니다.  
 
 ###  <a name="BKMK_RunReport"></a> Configuration Manager 보고서 실행  
  보고서 구성 관리자에서 SQL Server Reporting Services에 저장 되며 및 보고서에서 렌더링 된 데이터는 Configuration Manager 사이트 데이터베이스에서 검색 됩니다. Configuration Manager 콘솔에서 또는 웹 브라우저에서 액세스 하는 보고서 관리자를 사용 하 여 보고서에 액세스할 수 있습니다. SQL Server Reporting Services를 실행하는 컴퓨터에 액세스할 수 있는 모든 컴퓨터에서 보고서를 열 수 있습니다. 단, 보고서를 볼 수 있는 충분한 권한이 있어야 합니다. 보고서를 실행하면 보고서 제목, 설명, 범주 등이 해당 로컬 운영 체제의 언어로 표시됩니다.  
@@ -50,7 +50,7 @@ System Center Configuration Manager에서 보고용 인프라가 준비된 후 �
 2.  **모니터링** 작업 영역에서 **보고**를 확장한 후 **보고서** 를 클릭하여 사용할 수 있는 보고서를 나열합니다.  
 
     > [!IMPORTANT]  
-    >  이 버전의 Configuration Manager에서 **모든 콘텐츠** 보고서는 응용 프로그램이 아닌 패키지만 표시합니다.  
+    >  이 버전의 Configuration Manager에서 **모든 콘텐츠** 보고서는 애플리케이션이 아닌 패키지만 표시합니다.  
 
     > [!TIP]  
     >  나열된 보고서가 없는 경우 보고 서비스 지점이 설치 및 구성되어 있는지 확인하십시오. 자세한 내용은 [보고 구성](configuring-reporting.md)을 참조하세요.  

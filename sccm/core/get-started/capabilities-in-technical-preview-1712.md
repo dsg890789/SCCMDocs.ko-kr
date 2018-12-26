@@ -55,12 +55,12 @@ ms.locfileid: "32338281"
  -  Task 2              
 -->
 
-## <a name="do-not-automatically-upgrade-superseded-applications"></a>교체된 응용 프로그램을 자동으로 업그레이드하지 않습니다
+## <a name="do-not-automatically-upgrade-superseded-applications"></a>교체된 애플리케이션을 자동으로 업그레이드하지 않습니다
 <!-- 1351266 -->
-[사용자 음성 피드백](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/11532669-fix-supercedence-behavior)에 따라 이 릴리스에서 교체된 버전을 자동으로 업그레이드하지 않도록 응용 프로그램 배포를 구성하는 옵션이 있습니다. 이제 **소프트웨어 배포 마법사**의 **배포 설정** 페이지에서 배포를 만들 때 **사용 가능** 또는 **필수** 설치 목적으로 **이 응용 프로그램의 교체된 버전을 자동으로 업그레이드**하는 옵션을 활성화하거나 비활성화할 수 있습니다.
+[사용자 음성 피드백](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/11532669-fix-supercedence-behavior)에 따라 이 릴리스에서 교체된 버전을 자동으로 업그레이드하지 않도록 응용 프로그램 배포를 구성하는 옵션이 있습니다. 이제 **소프트웨어 배포 마법사**의 **배포 설정** 페이지에서 배포를 만들 때 **사용 가능** 또는 **필수** 설치 목적으로 **이 애플리케이션의 교체된 버전을 자동으로 업그레이드**하는 옵션을 활성화하거나 비활성화할 수 있습니다.
 
 
-## <a name="install-multiple-applications-in-software-center"></a>소프트웨어 센터에서 여러 응용 프로그램 설치
+## <a name="install-multiple-applications-in-software-center"></a>소프트웨어 센터에서 여러 애플리케이션 설치
 <!-- 1357126 -->
 이제 최종 사용자 또는 데스크톱 기술자가 디바이스에 여러 응용 프로그램을 설치해야 하는 경우 소프트웨어 센터는 선택한 여러 응용 프로그램을 설치하도록 지원합니다. 그러면 사용자가 다음 단계를 시작하기 전에 설치가 완료되기를 기다리지 않고 효율적으로 작업할 수 있습니다.
 
@@ -71,7 +71,7 @@ ms.locfileid: "32338281"
  - 앱 상태가 제공됩니다(예: 콘텐츠를 아직 다운로드하지 않음).
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
-**Configuration Manager 콘솔에서:** 사용자 또는 장치에 사용할 수 있는 또는 필수로 설치할 여러 응용 프로그램을 배포합니다(나중에 최종 기한 지정됨). 관리자 승인이 필요하지 않습니다. 자세한 내용은 [응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications)를 참조하세요.
+**Configuration Manager 콘솔에서:** 사용자 또는 장치에 사용할 수 있는 또는 필수로 설치할 여러 응용 프로그램을 배포합니다(나중에 최종 기한 지정됨). 관리자 승인이 필요하지 않습니다. 자세한 내용은 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications)를 참조하세요.
 
 **소프트웨어 센터에서:**
  1. **응용 프로그램** 탭은 기본적으로 열려야 합니다. 

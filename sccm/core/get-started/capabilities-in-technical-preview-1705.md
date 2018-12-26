@@ -138,7 +138,7 @@ Technical Preview 버전 1606 이상에서 이 도구를 사용할 수 있습니
 
 
 ## <a name="improved-user-notifications-for-office-365-updates"></a>Office 365 업데이트에 대한 향상된 사용자 알림
-클라이언트가 Office 365 업데이트를 설치할 때 Office 간편 실행 사용자 환경을 활용하도록 개선되었습니다. 여기에는 팝업 및 앱 내 알림과 카운트다운 환경이 포함됩니다. 이 릴리스 전에는 Office 365 업데이트가 클라이언트로 전송될 때 열려 있던 Office 응용 프로그램이 경고 없이 자동으로 닫혔습니다. 이 업데이트 후에는 Office 응용 프로그램이 더 이상 예기치 않게 닫히지 않습니다.
+클라이언트가 Office 365 업데이트를 설치할 때 Office 간편 실행 사용자 환경을 활용하도록 개선되었습니다. 여기에는 팝업 및 앱 내 알림과 카운트다운 환경이 포함됩니다. 이 릴리스 전에는 Office 365 업데이트가 클라이언트로 전송될 때 열려 있던 Office 애플리케이션이 경고 없이 자동으로 닫혔습니다. 이 업데이트 후에는 Office 애플리케이션이 더 이상 예기치 않게 닫히지 않습니다.
 
 ### <a name="prerequisites"></a>필수 구성 요소
 이 업데이트는 Office 365 ProPlus 클라이언트에 적용됩니다.
@@ -234,7 +234,7 @@ Windows Defender Application Guard에 대한 자세한 내용은 [이 블로그 
         - **가져오기**: Azure 구독에 이미 있는 웹앱을 사용하려면 **가져오기**를 클릭합니다. 앱 및 테넌트의 이름을 입력한 다음 테넌트 ID, 클라이언트 ID 및 Configuration Manager에서 사용하도록 할 Azure 웹앱의 비밀 키를 지정합니다. 정보를 확인한 후에 **확인**을 클릭하여 계속합니다. 이 옵션은 현재 이 Technical Preview에서 사용할 수 없습니다.
     - 클라이언트 앱에 대해 동일한 프로세스를 반복합니다.
 
-  포털에서 올바른 권한을 설정하려면 응용 프로그램 가져오기를 사용할 때 *디렉터리 데이터 읽기* 응용 프로그램 권한을 부여해야 합니다. 응용 프로그램 만들기를 사용하면 응용 프로그램에 대해 사용 권한이 자동으로 만들어지지만 Azure Portal에서 여전히 응용 프로그램에 동의해야 합니다.
+  포털에서 올바른 권한을 설정하려면 애플리케이션 가져오기를 사용할 때 *디렉터리 데이터 읽기* 애플리케이션 권한을 부여해야 합니다. 애플리케이션 만들기를 사용하면 애플리케이션에 대해 사용 권한이 자동으로 만들어지지만 Azure Portal에서 여전히 애플리케이션에 동의해야 합니다.
 6.  마법사의 **검색** 페이지에서 필요에 따라 **Azure Active Directory 사용자 검색을 사용하도록 설정**하고 **설정**을 클릭합니다.
 **Azure AD 사용자 검색 설정** 대화 상자에서 검색 일정을 구성합니다. 또한 Azure AD에서 새 계정 또는 변경된 계정만 확인하는 델타 검색을 사용하도록 설정할 수도 있습니다.
 7.  마법사를 완료합니다.
@@ -255,7 +255,7 @@ Windows Defender Application Guard에 대한 자세한 내용은 [이 블로그 
 - **SMSMP**: 조회 관리 지점의 이름으로, 인트라넷에 있을 수 있습니다.
 - **SMSSiteCode**: Configuration Manager 사이트의 사이트 코드입니다.
 - **AADTENANTID**, **AADTENANTNAME**: Configuration Manager에 연결된 Azure AD 테넌트의 ID 및 이름입니다. Azure AD에 가입된 디바이스의 명령 프롬프트에서 dsregcmd.exe /status를 실행하여 찾을 수 있습니다.
-- **AADCLIENTAPPID**: Azure AD 클라이언트 앱 ID입니다. 이를 찾으려면 [포털을 사용하여 리소스에 액세스할 수 있는 Azure Active Directory 응용 프로그램 및 서비스 사용자 만들기](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-application-id-and-authentication-key)를 참조하세요.
+- **AADCLIENTAPPID**: Azure AD 클라이언트 앱 ID입니다. 이를 찾으려면 [포털을 사용하여 리소스에 액세스할 수 있는 Azure Active Directory 애플리케이션 및 서비스 사용자 만들기](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-application-id-and-authentication-key)를 참조하세요.
 - **AADResourceUri**: 등록된 Azure AD 서버 앱의 식별자 URI입니다.
 
 ## <a name="use-azure-services-wizard-to-configure-a-connection-to-oms"></a>Azure 서비스 마법사를 사용하여 OMS에 대한 연결 구성

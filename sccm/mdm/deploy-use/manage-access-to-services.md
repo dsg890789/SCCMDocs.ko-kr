@@ -153,7 +153,7 @@ SharePoint Online에 대한 조건부 액세스에서는 다음을 실행하는 
 
  ### <a name="conditional-access-for-pcs"></a>PC에 대한 조건부 액세스
 
- Office 데스크톱 응용 프로그램을 실행하고 Exchange Online 또는 SharePoint Online에 액세스하는 PC에 조건부 액세스를 구성할 수 있습니다. PC는 다음과 같은 요구 사항을 충족해야 합니다.
+ Office 데스크톱 애플리케이션을 실행하고 Exchange Online 또는 SharePoint Online에 액세스하는 PC에 조건부 액세스를 구성할 수 있습니다. PC는 다음과 같은 요구 사항을 충족해야 합니다.
  -   PC에서 Windows 7.0 또는 Windows 8.1을 실행해야 합니다.
  -   PC가 도메인에 가입되어 있거나 정책을 준수해야 합니다.
 

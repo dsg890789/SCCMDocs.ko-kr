@@ -387,7 +387,7 @@ Configuration Manager에서 선택할 수 있는 구성 옵션은 다양하므�
 
 - [비즈니스용 Microsoft Store 온라인 앱](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)  
 
-- 인프라 요구 사항을 줄입니다. 예: 응용 프로그램 카탈로그 대신 [관리 지점을 사용하는 소프트웨어 센터](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)  
+- 인프라 요구 사항을 줄입니다. 예: 애플리케이션 카탈로그 대신 [관리 지점을 사용하는 소프트웨어 센터](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)  
 
 - [Office 365 앱 관리](/sccm/sum/deploy-use/manage-office-365-proplus-updates)  
 

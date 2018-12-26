@@ -71,7 +71,7 @@ System Center Configuration Manager에서 인증서 인프라를 구성하는 �
 
      자세한 내용은 Microsoft 기술 자료의 [820129: Windows에 대한 Http.sys 레지스트리 설정](http://go.microsoft.com/fwlink/?LinkId=309013) 문서를 참조하세요.  
 
-6.  동일한 서버의 IIS(인터넷 정보 서비스) 관리자에서 /certsrv/mscep 응용 프로그램의 요청 필터링 설정을 수정한 후 서버를 다시 시작합니다. **요청 필터링 설정 편집** 대화 상자에서 **요청 제한** 설정을 다음과 같이 구성해야 합니다.  
+6.  동일한 서버의 IIS(인터넷 정보 서비스) 관리자에서 /certsrv/mscep 애플리케이션의 요청 필터링 설정을 수정한 후 서버를 다시 시작합니다. **요청 필터링 설정 편집** 대화 상자에서 **요청 제한** 설정을 다음과 같이 구성해야 합니다.  
 
     -   **허용되는 최대 콘텐츠 길이(바이트)**: **30000000**  
 
@@ -157,7 +157,7 @@ System Center Configuration Manager 계층에 인증서 등록 지점을 하나 
 
     -   사이트 시스템 서버에서 *<Configuration Manager 설치 경로\>* \Logs\crpsetup.log 파일 및 *<Configuration Manager 설치 경로\>* \Logs\crpmsi.log 파일을 사용합니다. 설치가 성공하면 종료 코드 0이 반환됩니다.  
 
-    -   브라우저를 사용하여 https://server1.contoso.com/CMCertificateRegistration과 같은 인증서 등록 지점의 URL에 연결할 수 있는지 확인합니다. HTTP 404 설명과 함께 응용 프로그램 이름에 대한 **서버 오류** 페이지가 나타나야 합니다.  
+    -   브라우저를 사용하여 https://server1.contoso.com/CMCertificateRegistration과 같은 인증서 등록 지점의 URL에 연결할 수 있는지 확인합니다. HTTP 404 설명과 함께 애플리케이션 이름에 대한 **서버 오류** 페이지가 나타나야 합니다.  
 
 11. 인증서 등록 지점에서 기본 사이트 서버 컴퓨터의 *<ConfigMgr 설치 경로\>* \inboxes\certmgr.box 폴더에 자동으로 만든 내보낸 루트 CA용 인증서 파일을 찾습니다. 나중에 네트워크 디바이스 등록 서비스를 실행하는 서버에 System Center Configuration Manager 정책 모듈을 설치할 때 안전하게 액세스할 수 있도록 보안이 유지되는 위치에 이 파일을 저장합니다.  
 
@@ -185,7 +185,7 @@ System Center Configuration Manager 정책 모듈을 **2단계: 인증서 등록
 
 4.  **설치 폴더** 페이지에서 정책 모듈의 기본 설치 폴더를 그대로 적용하거나 다른 폴더를 지정한 후 **다음**을 클릭합니다.  
 
-5.  **인증서 등록 지점** 페이지에서 인증서 등록 지점 속성에 지정된 사이트 시스템 서버의 FQDN과 가상 응용 프로그램 이름을 사용하여 인증서 등록 지점의 URL을 지정합니다. 기본 가상 응용 프로그램 이름은 CMCertificateRegistration입니다. 예를 들어 사이트 시스템 서버의 FQDN이 server1.contoso.com이고 기본 가상 응용 프로그램 이름을 사용하는 경우 **https://server1.contoso.com/CMCertificateRegistration**을 지정합니다.  
+5.  **인증서 등록 지점** 페이지에서 인증서 등록 지점 속성에 지정된 사이트 시스템 서버의 FQDN과 가상 응용 프로그램 이름을 사용하여 인증서 등록 지점의 URL을 지정합니다. 기본 가상 애플리케이션 이름은 CMCertificateRegistration입니다. 예를 들어 사이트 시스템 서버의 FQDN이 server1.contoso.com이고 기본 가상 애플리케이션 이름을 사용하는 경우 **https://server1.contoso.com/CMCertificateRegistration**을 지정합니다.  
 
 6.  기본 포트 **443** 을 수락하거나 인증서 등록 지점에 사용되는 다른 포트 번호를 지정하고 **다음**을 클릭합니다.  
 

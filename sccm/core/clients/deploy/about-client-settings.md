@@ -60,7 +60,7 @@ BITS 제한 기간이 아닐 때 클라이언트가 사용할 수 있는 최대 
     BranchCache를 사용할 수 있는 디스크의 비율입니다. 
 
 ### <a name="configure-client-cache-size"></a>클라이언트 캐시 크기 구성
-Windows 컴퓨터의 Configuration Manager 클라이언트 캐시에서 응용 프로그램 및 프로그램 설치에 사용되는 임시 파일이 저장됩니다. 이 옵션을 **아니요**로 설정하는 경우 기본 크기는 5,120MB입니다.
+Windows 컴퓨터의 Configuration Manager 클라이언트 캐시에서 애플리케이션 및 프로그램 설치에 사용되는 임시 파일이 저장됩니다. 이 옵션을 **아니요**로 설정하는 경우 기본 크기는 5,120MB입니다.
 
 **예**를 선택하는 경우 다음을 지정합니다.
 - **최대 캐시 크기(MB)**
@@ -88,11 +88,11 @@ Configuration Manager는 이 트래픽을 허용하도록 자동으로 Windows �
 
 ### <a name="enable-user-policy-on-clients"></a>클라이언트에 대한 사용자 정책 사용
 
-이 옵션을 **예**로 설정하고 [사용자 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#bkmk_aboutUser)을 사용하면 로그인한 사용자를 대상으로 하는 응용 프로그램 및 프로그램이 클라이언트에 수신됩니다.  
+이 옵션을 **예**로 설정하고 [사용자 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#bkmk_aboutUser)을 사용하면 로그인한 사용자를 대상으로 하는 애플리케이션 및 프로그램이 클라이언트에 수신됩니다.  
 
-응용 프로그램 카탈로그는 사이트 서버에서 사용자에게 사용 가능한 소프트웨어 목록을 수신합니다. 따라서 사용자가 응용 프로그램 카탈로그에서 응용 프로그램을 확인하고 요청하기 위해 이 설정이 **예**일 필요가 없습니다. 설정이 **아니요**인 경우, 사용자가 응용 프로그램 카탈로그에 표시된 응용 프로그램을 설치할 수 없습니다.  
+애플리케이션 카탈로그는 사이트 서버에서 사용자에게 사용 가능한 소프트웨어 목록을 수신합니다. 따라서 사용자가 애플리케이션 카탈로그에서 애플리케이션을 확인하고 요청하기 위해 이 설정이 **예**일 필요가 없습니다. 설정이 **아니요**인 경우, 사용자가 애플리케이션 카탈로그에 표시된 애플리케이션을 설치할 수 없습니다.  
 
-또한 이 설정이 **아니요**이면 사용자는 배포되는 필수 응용 프로그램을 받을 수 없습니다. 또한 사용자는 사용자 정책에서 다른 관리 작업도 받을 수 없습니다.  
+또한 이 설정이 **아니요**이면 사용자는 배포되는 필수 애플리케이션을 받을 수 없습니다. 또한 사용자는 사용자 정책에서 다른 관리 작업도 받을 수 없습니다.  
 
 이 설정은 컴퓨터가 인트라넷 또는 인터넷에 있는 경우 사용자에게 적용됩니다. 인터넷에서도 사용자 정책을 사용하려는 경우 **예**로 설정해야 합니다.  
 
@@ -108,10 +108,10 @@ Configuration Manager는 이 트래픽을 허용하도록 자동으로 Windows �
 
 -   1710 버전부터 클라우드 관리 게이트웨이는 Azure Active Directory를 사용하여 사용자를 성공적으로 인증합니다. 자세한 내용은 [Azure AD 가입 디바이스에 사용자가 사용할 수 있는 응용 프로그램 배포](\sccm\apps\deploy-use\deploy-applications#deploy-user-available-applications-on-azure-ad-joined-devices)를 참조하세요.  
 
-이 옵션을 **아니요**로 설정하거나 이전 요구 사항이 충족되지 않으면 인터넷상의 컴퓨터에서 컴퓨터 정책만 받습니다. 이 시나리오에서는 사용자가 여전히 인터넷 기반 응용 프로그램 카탈로그에서 응용 프로그램을 확인, 요청 및 설치할 수 있습니다. 이 설정이 **아니요**이지만 **클라이언트에 대한 사용자 정책 사용**이 **예**이면 컴퓨터가 인트라넷에 연결될 때까지 사용자는 사용자 정책을 받을 수 없습니다.  
+이 옵션을 **아니요**로 설정하거나 이전 요구 사항이 충족되지 않으면 인터넷상의 컴퓨터에서 컴퓨터 정책만 받습니다. 이 시나리오에서는 사용자가 여전히 인터넷 기반 애플리케이션 카탈로그에서 애플리케이션을 확인, 요청 및 설치할 수 있습니다. 이 설정이 **아니요**이지만 **클라이언트에 대한 사용자 정책 사용**이 **예**이면 컴퓨터가 인트라넷에 연결될 때까지 사용자는 사용자 정책을 받을 수 없습니다.  
 
 > [!NOTE]  
->  인터넷 기반 클라이언트 관리의 경우 사용자의 응용 프로그램 승인 요청에는 사용자 정책 또는 사용자 인증이 필요하지 않습니다. 클라우드 관리 게이트웨이는 응용 프로그램 승인 요청을 지원하지 않습니다.   
+>  인터넷 기반 클라이언트 관리의 경우 사용자의 애플리케이션 승인 요청에는 사용자 정책 또는 사용자 인증이 필요하지 않습니다. 클라우드 관리 게이트웨이는 애플리케이션 승인 요청을 지원하지 않습니다.   
 
 
 
@@ -151,55 +151,55 @@ Configuration Manager는 이 트래픽을 허용하도록 자동으로 Windows �
 -   **배포 최종 기한이 24시간 미만 남은 경우 사용자에게 다음 시간마다 미리 알림(시)** 
 -   **배포 최종 기한이 1시간 미만 남은 경우 사용자에게 다음 시간마다 미리 알림(분)** 
 
-### <a name="default-application-catalog-website-point"></a>기본 응용 프로그램 카탈로그 웹 사이트 지점
+### <a name="default-application-catalog-website-point"></a>기본 애플리케이션 카탈로그 웹 사이트 지점
 
 > [!Note]  
 > 버전 1806부터 응용 프로그램 카탈로그 웹 사이트 지점은 더 이상 *필요하지 않지만* *지원은 계속됩니다*. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요. 
 > 
-> 응용 프로그램 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
+> 애플리케이션 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
 
-Configuration Manager에서는 이 설정을 사용하여 소프트웨어 센터의 응용 프로그램 카탈로그에 사용자를 연결합니다. **웹 사이트 설정**을 선택하여 응용 프로그램 카탈로그 웹 사이트 지점을 호스트하는 서버를 지정합니다. NetBIOS 이름 또는 FQDN을 입력하거나, 자동 검색을 지정하거나, 사용자 지정된 배포에 URL을 지정합니다. 대부분의 경우 자동 검색이 가장 좋은 방법입니다.
+Configuration Manager에서는 이 설정을 사용하여 소프트웨어 센터의 애플리케이션 카탈로그에 사용자를 연결합니다. **웹 사이트 설정**을 선택하여 응용 프로그램 카탈로그 웹 사이트 지점을 호스트하는 서버를 지정합니다. NetBIOS 이름 또는 FQDN을 입력하거나, 자동 검색을 지정하거나, 사용자 지정된 배포에 URL을 지정합니다. 대부분의 경우 자동 검색이 가장 좋은 방법입니다.
 
-### <a name="add-default-application-catalog-website-to-internet-explorer-trusted-sites-zone"></a>기본 응용 프로그램 카탈로그 웹 사이트를 Internet Explorer의 신뢰할 수 있는 사이트 영역에 추가
+### <a name="add-default-application-catalog-website-to-internet-explorer-trusted-sites-zone"></a>기본 애플리케이션 카탈로그 웹 사이트를 Internet Explorer의 신뢰할 수 있는 사이트 영역에 추가
 
 > [!Note]  
 > 버전 1806부터 응용 프로그램 카탈로그 웹 사이트 지점은 더 이상 *필요하지 않지만* *지원은 계속됩니다*. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요. 
 > 
-> 응용 프로그램 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
+> 애플리케이션 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
 
-이 옵션이 **예**인 경우 클라이언트에서는 현재 기본 응용 프로그램 카탈로그 웹 사이트 URL을 Internet Explorer 신뢰할 수 있는 사이트 영역에 자동으로 추가합니다.  
+이 옵션이 **예**인 경우 클라이언트에서는 현재 기본 애플리케이션 카탈로그 웹 사이트 URL을 Internet Explorer 신뢰할 수 있는 사이트 영역에 자동으로 추가합니다.  
 
-이 설정은 보호 모드에 대한 Internet Explorer 설정이 사용되지 않도록 합니다. 보호 모드가 사용될 경우 Configuration Manager 클라이언트가 응용 프로그램 카탈로그에서 응용 프로그램을 설치하지 못할 수 있습니다. 또한 신뢰할 수 있는 사이트 영역은 기본적으로 Windows 인증을 요구하는 응용 프로그램 카탈로그에 대한 사용자 로그인을 지원합니다.  
+이 설정은 보호 모드에 대한 Internet Explorer 설정이 사용되지 않도록 합니다. 보호 모드가 사용될 경우 Configuration Manager 클라이언트가 애플리케이션 카탈로그에서 애플리케이션을 설치하지 못할 수 있습니다. 또한 신뢰할 수 있는 사이트 영역은 기본적으로 Windows 인증을 요구하는 애플리케이션 카탈로그에 대한 사용자 로그인을 지원합니다.  
 
-이 옵션을 **아니요**로 두는 경우 Configuration Manager 클라이언트는 응용 프로그램 카탈로그에서 응용 프로그램을 설치하지 못할 수 있습니다. 다른 방법은 클라이언트에서 사용하는 응용 프로그램 카탈로그 URL의 다른 영역에 이러한 Internet Explorer 설정을 구성하는 것입니다.  
+이 옵션을 **아니요**로 두는 경우 Configuration Manager 클라이언트는 애플리케이션 카탈로그에서 애플리케이션을 설치하지 못할 수 있습니다. 다른 방법은 클라이언트에서 사용하는 애플리케이션 카탈로그 URL의 다른 영역에 이러한 Internet Explorer 설정을 구성하는 것입니다.  
 
-### <a name="allow-silverlight-applications-to-run-in-elevated-trust-mode"></a>Silverlight 응용 프로그램의 높은 권한 모드 실행을 허용합니다.
+### <a name="allow-silverlight-applications-to-run-in-elevated-trust-mode"></a>Silverlight 애플리케이션의 높은 권한 모드 실행을 허용합니다.
 
 > [!Important]  
 > Configuration Manager 버전 1802부터 클라이언트는 Silverlight를 자동으로 설치하지 않습니다.
 > 
-> 버전 1806부터 응용 프로그램 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 사용자는 새로운 소프트웨어 센터를 사용해야 합니다. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요.  
+> 버전 1806부터 애플리케이션 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 사용자는 새로운 소프트웨어 센터를 사용해야 합니다. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요.  
 
-응용 프로그램 카탈로그를 사용할 사용자의 경우 이 설정을 **예**로 지정해야 합니다.  
+애플리케이션 카탈로그를 사용할 사용자의 경우 이 설정을 **예**로 지정해야 합니다.  
 
 이 설정을 변경하면 사용자가 다음에 브라우저를 로드하거나 현재 열려 있는 브라우저 창을 새로 고칠 때 변경 내용이 적용됩니다.  
 
-이 설정에 대한 자세한 내용은 [Microsoft Silverlight 5용 인증서 및 응용 프로그램 카탈로그에 필요한 높은 권한 모드](/sccm/apps/plan-design/security-and-privacy-for-application-management#BKMK_CertificatesSilverlight5)를 참조하세요.  
+이 설정에 대한 자세한 내용은 [Microsoft Silverlight 5용 인증서 및 애플리케이션 카탈로그에 필요한 높은 권한 모드](/sccm/apps/plan-design/security-and-privacy-for-application-management#BKMK_CertificatesSilverlight5)를 참조하세요.  
 
 ### <a name="organization-name-displayed-in-software-center"></a>소프트웨어 센터에 표시된 조직 이름
 
-소프트웨어 센터에서 사용자에게 표시되는 이름을 입력합니다. 사용자는 이러한 브랜드 정보를 통해 응용 프로그램을 신뢰할 수 있는 원본으로 확인할 수 있습니다. 이 설정의 우선 순위에 대한 자세한 내용은 [브랜딩 소프트웨어 센터](/sccm/apps/plan-design/plan-for-and-configure-application-management#branding-software-center)를 참조하세요.  
+소프트웨어 센터에서 사용자에게 표시되는 이름을 입력합니다. 사용자는 이러한 브랜드 정보를 통해 애플리케이션을 신뢰할 수 있는 원본으로 확인할 수 있습니다. 이 설정의 우선 순위에 대한 자세한 내용은 [브랜딩 소프트웨어 센터](/sccm/apps/plan-design/plan-for-and-configure-application-management#branding-software-center)를 참조하세요.  
 
 ### <a name="use-new-software-center"></a>새 소프트웨어 센터 사용
 
 Configuration Manager 1802부터 기본 설정은 **예**입니다.
 
-이 옵션을 **예**로 설정하면 모든 클라이언트 컴퓨터에서 소프트웨어 센터를 사용합니다. 소프트웨어 센터에서는 이전에 응용 프로그램 카탈로그에서만 액세스할 수 있었던 사용자가 사용할 수 있는 앱을 보여줍니다. 응용 프로그램 카탈로그에는 소프트웨어 센터의 필수 구성 요소가 아닌 Silverlight가 필요합니다.   
+이 옵션을 **예**로 설정하면 모든 클라이언트 컴퓨터에서 소프트웨어 센터를 사용합니다. 소프트웨어 센터에서는 이전에 애플리케이션 카탈로그에서만 액세스할 수 있었던 사용자가 사용할 수 있는 앱을 보여줍니다. 애플리케이션 카탈로그에는 소프트웨어 센터의 필수 구성 요소가 아닌 Silverlight가 필요합니다.   
 
 버전 1806부터 응용 프로그램 카탈로그 웹 사이트 지점 및 웹 서비스 지점은 더 이상 *필요하지 않지만* *지원은 계속*됩니다. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요. 
  
 > [!Note]  
-> 응용 프로그램 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
+> 애플리케이션 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
 
 ### <a name="enable-communication-with-health-attestation-service"></a>상태 증명 서비스를 통한 통신 사용
 
@@ -212,7 +212,7 @@ Windows 10 디바이스에서 [상태 증명](/sccm/core/servers/manage/health-a
 ### <a name="install-permissions"></a>설치 권한
 
 > [!IMPORTANT]  
->  이 설정은 응용 프로그램 카탈로그와 소프트웨어 센터에 적용됩니다. 사용자가 회사 포털을 사용할 때는 이 설정이 적용되지 않습니다.  
+>  이 설정은 애플리케이션 카탈로그와 소프트웨어 센터에 적용됩니다. 사용자가 회사 포털을 사용할 때는 이 설정이 적용되지 않습니다.  
 
 사용자가 소프트웨어, 소프트웨어 업데이트 및 작업 순서의 설치를 시작하는 방식을 구성합니다.  
 
@@ -222,7 +222,7 @@ Windows 10 디바이스에서 [상태 증명](/sccm/core/servers/manage/health-a
 
 -   **관리자 및 기본 사용자만**: 사용자가 로컬 관리자 그룹의 멤버 또는 컴퓨터의 기본 사용자여야 합니다.  
 
--   **사용자 없음**: 클라이언트 컴퓨터에 로그인한 사용자가 소프트웨어 설치, 소프트웨어 업데이트 및 작업 순서를 시작할 수 없습니다. 컴퓨터에 필요한 배포는 항상 최종 기한에 설치됩니다. 사용자는 응용 프로그램 카탈로그 또는 소프트웨어 센터에서 소프트웨어 설치를 시작할 수 없습니다.  
+-   **사용자 없음**: 클라이언트 컴퓨터에 로그인한 사용자가 소프트웨어 설치, 소프트웨어 업데이트 및 작업 순서를 시작할 수 없습니다. 컴퓨터에 필요한 배포는 항상 최종 기한에 설치됩니다. 사용자는 애플리케이션 카탈로그 또는 소프트웨어 센터에서 소프트웨어 설치를 시작할 수 없습니다.  
 
 ### <a name="suspend-bitlocker-pin-entry-on-restart"></a>다시 시작 시 BitLocker PIN 항목 일시 중단
 
@@ -232,16 +232,16 @@ Windows 10 디바이스에서 [상태 증명](/sccm/core/servers/manage/health-a
 
 -   **안 함**: 다시 시작해야 하는 소프트웨어를 설치한 후에 Configuration Manager에서 BitLocker를 일시 중단하지 않습니다. 이 시나리오에서는 사용자가 PIN을 입력하여 표준 시작 프로세스를 완료하고 Windows를 로드할 때까지 소프트웨어 설치가 완료되지 않습니다.
 
-### <a name="additional-software-manages-the-deployment-of-applications-and-software-updates"></a>추가 소프트웨어로 응용 프로그램 및 소프트웨어 업데이트 배포 관리
+### <a name="additional-software-manages-the-deployment-of-applications-and-software-updates"></a>추가 소프트웨어로 애플리케이션 및 소프트웨어 업데이트 배포 관리
 
 이 옵션은 다음 조건 중 하나가 적용되는 경우에만 사용하도록 설정합니다.  
 
 -   이 설정이 필요한 공급업체 솔루션을 사용합니다.  
 
--   Configuration Manager SDK(소프트웨어 개발 키트)를 사용하여 클라이언트 에이전트 알림과 응용 프로그램 및 소프트웨어 업데이트의 설치를 관리합니다.  
+-   Configuration Manager SDK(소프트웨어 개발 키트)를 사용하여 클라이언트 에이전트 알림과 애플리케이션 및 소프트웨어 업데이트의 설치를 관리합니다.  
 
 > [!WARNING]  
->  이러한 조건을 모두 적용하지 않을 때 이 옵션을 선택하면 클라이언트에서 소프트웨어 업데이트 및 필수 응용 프로그램을 설치하지 않습니다. 이 설정은 사용자가 응용 프로그램 카탈로그에서 응용 프로그램을 설치하거나 패키지, 프로그램 및 작업 순서를 설치하지 못하도록 합니다.  
+>  이러한 조건을 모두 적용하지 않을 때 이 옵션을 선택하면 클라이언트에서 소프트웨어 업데이트 및 필수 애플리케이션을 설치하지 않습니다. 이 설정은 사용자가 애플리케이션 카탈로그에서 애플리케이션을 설치하거나 패키지, 프로그램 및 작업 순서를 설치하지 못하도록 합니다.  
 
 ### <a name="powershell-execution-policy"></a>PowerShell 실행 정책
 
@@ -276,9 +276,9 @@ VDI(가상 데스크톱 인프라)를 사용하는 경우 이러한 지연 시�
 
 ### <a name="grace-period-for-enforcement-after-deployment-deadline-hours"></a>배포 최종 기한 이후 적용 유예 기간(시간)
 
-최종 기한 이후에 필수 응용 프로그램 또는 소프트웨어 업데이트 배포를 설치할 수 있는 더 많은 시간을 사용자에게 제공하려면 이 옵션을 **예**로 설정합니다. 이 유예 기간은 컴퓨터가 오랜 시간 동안 해제된 경우 또는 사용자가 많은 응용 프로그램을 설치하거나 배포를 업데이트해야 하는 경우에 적용됩니다. 예를 들어 이 설정은 사용자가 휴가에서 돌아와 클라이언트에서 지연된 응용 프로그램 배포를 설치하는 동안 너무 오래 기다려야 하는 경우에 도움이 됩니다. 
+최종 기한 이후에 필수 애플리케이션 또는 소프트웨어 업데이트 배포를 설치할 수 있는 더 많은 시간을 사용자에게 제공하려면 이 옵션을 **예**로 설정합니다. 이 유예 기간은 컴퓨터가 오랜 시간 동안 해제된 경우 또는 사용자가 많은 애플리케이션을 설치하거나 배포를 업데이트해야 하는 경우에 적용됩니다. 예를 들어 이 설정은 사용자가 휴가에서 돌아와 클라이언트에서 지연된 애플리케이션 배포를 설치하는 동안 너무 오래 기다려야 하는 경우에 도움이 됩니다. 
 
-유예 기간은 1~120시간 사이로 설정합니다. **이 배포의 적용을 사용자 기본 설정에 따라 연기** 배포 속성과 함께 이 설정을 사용합니다. 자세한 내용은 [응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications)를 참조하세요.
+유예 기간은 1~120시간 사이로 설정합니다. **이 배포의 적용을 사용자 기본 설정에 따라 연기** 배포 속성과 함께 이 설정을 사용합니다. 자세한 내용은 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications)를 참조하세요.
 
 
 ##  <a name="computer-restart"></a>컴퓨터 다시 시작  
@@ -311,7 +311,7 @@ VDI(가상 데스크톱 인프라)를 사용하는 경우 이러한 지연 시�
 
 계층 구조의 컴퓨터에서 기존 Endpoint Protection 및 Windows Defender 클라이언트를 관리하려면 **예**를 선택합니다.  
 
-Endpoint Protection 클라이언트를 이미 설치했고 Configuration Manager를 사용하여 이를 관리하려면 이 옵션을 선택합니다. 이 별도 설치에는 Configuration Manager 응용 프로그램 또는 패키지와 프로그램을 사용하는 스크립팅된 프로세스가 포함됩니다. Configuration Manager 1802부터 Windows 10 디바이스에 Endpoint Protection 에이전트를 설치할 필요가 없습니다. 그러나 이러한 디바이스는 여전히 사용하도록 설정된 **클라이언트 컴퓨터에서 Endpoint Protection 클라이언트를 관리**해야 합니다. <!--503654-->
+Endpoint Protection 클라이언트를 이미 설치했고 Configuration Manager를 사용하여 이를 관리하려면 이 옵션을 선택합니다. 이 별도 설치에는 Configuration Manager 애플리케이션 또는 패키지와 프로그램을 사용하는 스크립팅된 프로세스가 포함됩니다. Configuration Manager 1802부터 Windows 10 디바이스에 Endpoint Protection 에이전트를 설치할 필요가 없습니다. 그러나 이러한 디바이스는 여전히 사용하도록 설정된 **클라이언트 컴퓨터에서 Endpoint Protection 클라이언트를 관리**해야 합니다. <!--503654-->
 
 ### <a name="install-endpoint-protection-client-on-client-computers"></a>클라이언트 컴퓨터에 Endpoint Protection 클라이언트 설치
 
@@ -436,12 +436,12 @@ MIF 파일이 하드웨어 인벤토리를 통해 수집되려면 클라이언�
 
     -   사이트에 보낼 클라이언트 상태 메시지  
 
-    -   응용 프로그램 카탈로그를 사용한 소프트웨어 설치 요청  
+    -   애플리케이션 카탈로그를 사용한 소프트웨어 설치 요청  
 
     -   필수 배포(설치 최종 기한에 도달하는 경우)  
 
     > [!IMPORTANT]  
-    >  클라이언트가 데이터 통신 연결 설정에 관계없이 소프트웨어 센터 또는 응용 프로그램 카탈로그에서 소프트웨어 설치를 항상 허용합니다.  
+    >  클라이언트가 데이터 통신 연결 설정에 관계없이 소프트웨어 센터 또는 애플리케이션 카탈로그에서 소프트웨어 설치를 항상 허용합니다.  
 
     데이터 통신 연결의 데이터 전송 제한에 도달할 경우 클라이언트에서 더 이상 Configuration Manager 사이트와 통신을 시도하지 않습니다.  
 
@@ -590,13 +590,13 @@ NLA(네트워크 수준 인증)를 사용하여 클라이언트 컴퓨터에 대
 - **소프트웨어 센터에 대한 로고 선택**: **찾아보기**를 선택하여 소프트웨어 센터에서 표시할 이미지를 선택합니다. 로고는 400x100 픽셀의 JPEG, PNG 또는 BMP여야 하며 최대 크기는 750KB입니다. 로고 파일 이름에는 공백이 없어야 합니다.  
          
 ### <a name="bkmk_HideUnapproved"></a> 소프트웨어 센터에서 승인되지 않은 프로그램 숨기기
-Configuration Manager 버전 1802부터 이 옵션을 사용하도록 설정하면 승인이 필요한 사용자가 사용할 수 있는 응용 프로그램이 소프트웨어 센터에서 숨겨집니다.   <!--1355146-->
+Configuration Manager 버전 1802부터 이 옵션을 사용하도록 설정하면 승인이 필요한 사용자가 사용할 수 있는 애플리케이션이 소프트웨어 센터에서 숨겨집니다.   <!--1355146-->
 
 ### <a name="bkmk_HideInstalled"></a> 소프트웨어 센터에서 설치된 응용 프로그램 숨기기
-Configuration Manager 버전 1802부터 이 옵션을 사용하도록 설정하면 이미 설치된 응용 프로그램이 더 이상 응용 프로그램 탭에 표시되지 않습니다. 이 옵션은 Configuration Manager 1802를 설치하거나 이 버전으로 업그레이드할 때 기본값으로 설정됩니다. 설치된 응용 프로그램은 설치 상태 탭에서 계속 검토할 수 있습니다. <!--1357592-->   
+Configuration Manager 버전 1802부터 이 옵션을 사용하도록 설정하면 이미 설치된 애플리케이션이 더 이상 애플리케이션 탭에 표시되지 않습니다. 이 옵션은 Configuration Manager 1802를 설치하거나 이 버전으로 업그레이드할 때 기본값으로 설정됩니다. 설치된 애플리케이션은 설치 상태 탭에서 계속 검토할 수 있습니다. <!--1357592-->   
  
 ### <a name="bkmk_HideAppCat"></a> 소프트웨어 센터에서 응용 프로그램 카탈로그 링크 숨기기
-Configuration Manager 버전 1806부터 소프트웨어 센터에서 응용 프로그램 카탈로그 웹 사이트 링크의 표시 여부를 지정할 수 있습니다. 이 옵션을 설정하면 사용자는 소프트웨어 센터의 설치 상태 노드에서 응용 프로그램 카탈로그 웹 사이트 링크를 볼 수 없습니다. <!--1358214-->
+Configuration Manager 버전 1806부터 소프트웨어 센터에서 애플리케이션 카탈로그 웹 사이트 링크의 표시 여부를 지정할 수 있습니다. 이 옵션을 설정하면 사용자는 소프트웨어 센터의 설치 상태 노드에서 애플리케이션 카탈로그 웹 사이트 링크를 볼 수 없습니다. <!--1358214-->
 
 
 ### <a name="software-center-tab-visibility"></a>소프트웨어 센터 탭 표시 여부
@@ -772,7 +772,7 @@ Configuration Manager에서 모든 배포에 대한 요구 사항 규칙을 재�
 
 ### <a name="enable-management-of-the-office-365-client-agent"></a>Office 365 클라이언트 에이전트 관리 사용
 
-이 옵션을 **예**로 설정하면 Office 365 설치 설정을 구성할 수 있습니다. 또한 Office CDN(콘텐츠 배달 네트워크)에서 파일을 다운로드하고, Configuration Manager에 파일을 응용 프로그램으로 배포할 수 있습니다. 자세한 내용은 [Office 365 ProPlus 관리](/sccm/sum/deploy-use/manage-office-365-proplus-updates)를 참조하세요.
+이 옵션을 **예**로 설정하면 Office 365 설치 설정을 구성할 수 있습니다. 또한 Office CDN(콘텐츠 배달 네트워크)에서 파일을 다운로드하고, Configuration Manager에 파일을 애플리케이션으로 배포할 수 있습니다. 자세한 내용은 [Office 365 ProPlus 관리](/sccm/sum/deploy-use/manage-office-365-proplus-updates)를 참조하세요.
 
 ### <a name="enable-third-party-software-updates"></a>타사 소프트웨어 업데이트 사용 
 

@@ -1,5 +1,5 @@
 ---
-title: Windows Phone 응용 프로그램 만들기
+title: Windows Phone 애플리케이션 만들기
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 Windows Phone 디바이스용 응용 프로그램을 만들고 배포하는 방법입니다.
 ms.date: 07/30/2018
@@ -17,13 +17,13 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/31/2018
 ms.locfileid: "39385442"
 ---
-# <a name="create-windows-phone-applications-in-configuration-manager"></a>Configuration Manager에서 Windows Phone 응용 프로그램 만들기
+# <a name="create-windows-phone-applications-in-configuration-manager"></a>Configuration Manager에서 Windows Phone 애플리케이션 만들기
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Configuration Manager 응용 프로그램에는 하나 이상의 배포 유형이 있습니다. 배포 유형에는 소프트웨어를 디바이스에 배포하는 데 필요한 설치 파일 및 정보가 포함됩니다. 또한 배포 유형에는 소프트웨어 배포 시점 및 방법을 지정하는 규칙이 포함됩니다.  
+Configuration Manager 애플리케이션에는 하나 이상의 배포 유형이 있습니다. 배포 유형에는 소프트웨어를 디바이스에 배포하는 데 필요한 설치 파일 및 정보가 포함됩니다. 또한 배포 유형에는 소프트웨어 배포 시점 및 방법을 지정하는 규칙이 포함됩니다.  
 
-Configuration Manager 응용 프로그램 및 배포 유형을 만드는 단계는 [응용 프로그램 만들기](/sccm/apps/deploy-use/create-applications#bkmk_create)를 참조하세요. 
+Configuration Manager 애플리케이션 및 배포 유형을 만드는 단계는 [애플리케이션 만들기](/sccm/apps/deploy-use/create-applications#bkmk_create)를 참조하세요. 
 
 Windows Phone 디바이스용 응용 프로그램을 만들고 배포할 때 고려해야 하는 사항은 다음과 같습니다.  
 

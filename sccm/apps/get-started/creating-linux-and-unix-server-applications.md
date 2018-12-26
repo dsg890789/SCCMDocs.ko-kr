@@ -1,5 +1,5 @@
 ---
-title: Linux 및 UNIX 서버 응용 프로그램 만들기
+title: Linux 및 UNIX 서버 애플리케이션 만들기
 titleSuffix: Configuration Manager
 description: Linux 및 Unix 디바이스용 응용 프로그램을 만들고 배포할 때 고려해야 할 사항을 확인합니다.
 ms.date: 04/13/2017
@@ -17,14 +17,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
 ms.locfileid: "32338216"
 ---
-# <a name="create-linux-and-unix-server-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Linux 및 UNIX 서버 응용 프로그램 만들기
+# <a name="create-linux-and-unix-server-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Linux 및 UNIX 서버 애플리케이션 만들기
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Linux 및 UNIX를 실행하는 컴퓨터용 응용 프로그램을 만들고 배포할 때는 다음 사항을 고려하세요.  
+Linux 및 UNIX를 실행하는 컴퓨터용 애플리케이션을 만들고 배포할 때는 다음 사항을 고려하세요.  
 
 ## <a name="general-considerations"></a>일반적인 고려 사항  
- Linux 및 UNIX용 Configuration Manager 클라이언트는 **패키지 및 프로그램을 사용하는 소프트웨어 배포**를 지원합니다. Linux 및 UNIX를 실행하는 컴퓨터에 Configuration Manager 응용 프로그램을 배포할 수 없습니다.  
+ Linux 및 UNIX용 Configuration Manager 클라이언트는 **패키지 및 프로그램을 사용하는 소프트웨어 배포**를 지원합니다. Linux 및 UNIX를 실행하는 컴퓨터에 Configuration Manager 애플리케이션을 배포할 수 없습니다.  
 
  Linux 및 UNIX 소프트웨어 배포의 기능은 다음과 같습니다.  
 
@@ -122,7 +122,7 @@ Linux 및 UNIX 컴퓨터에 패키지와 프로그램을 배포할 때와 Window
 
  콘텐츠 위치에 대한 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
 
- 배포를 만드는 방법에 대한 자세한 내용은 [응용 프로그램 배포](../../apps/deploy-use/deploy-applications.md)를 참조하세요.  
+ 배포를 만드는 방법에 대한 자세한 내용은 [애플리케이션 배포](../../apps/deploy-use/deploy-applications.md)를 참조하세요.  
 
 ##  <a name="manage-network-bandwidth-for-software-downloads-from-distribution-points"></a>배포 지점에서 소프트웨어를 다운로드할 때의 네트워크 대역폭 관리  
  Linux 및 UNIX 클라이언트는 배포 지점에서 소프트웨어를 다운로드할 때 네트워크 대역폭을 제어할 수 있습니다.  

@@ -165,7 +165,7 @@ Azure 서비스 마법사의 서버 앱 대화 상자 또는 앱 페이지에서
 
 정보를 입력한 후 **확인**을 선택합니다. 그런 다음, **확인**을 선택하여 앱 가져오기 대화 상자를 닫습니다. 이 작업은 Azure 서비스 마법사의 [앱 페이지](#azure-app-properties) 또는 [서버 앱 대화 상자](#server-app-dialog)로 돌아갑니다.
 
-#### <a name="create-server-application-dialog"></a>서버 응용 프로그램 만들기 대화 상자
+#### <a name="create-server-application-dialog"></a>서버 애플리케이션 만들기 대화 상자
 
 서버 앱 대화 상자에서 **만들기**를 선택하면 서버 애플리케이션 만들기 대화 상자가 열립니다. 이 페이지는 Azure AD에서 웹앱 만들기를 자동화합니다. 다음 정보를 지정하세요.
 - **응용 프로그램 이름**: 앱의 표시 이름.
@@ -204,7 +204,7 @@ Azure 서비스 마법사의 앱 페이지에서 **네이티브 클라이언트 
 
 정보를 입력한 후 **확인**을 선택합니다. 그런 다음, **확인**을 선택하여 앱 가져오기 대화 상자를 닫습니다. 이 작업은 [클라이언트 앱 대화 상자](#client-app-dialog)로 돌아갑니다.
 
-#### <a name="create-client-application-dialog"></a>클라이언트 응용 프로그램 만들기 대화 상자
+#### <a name="create-client-application-dialog"></a>클라이언트 애플리케이션 만들기 대화 상자
 
 클라이언트 앱 대화 상자에서 **만들기**를 선택하면 클라이언트 애플리케이션 만들기 대화 상자가 열립니다. 이 페이지는 Azure AD에서 네이티브 앱 만들기를 자동화합니다. 다음 정보를 지정하세요.
 - **응용 프로그램 이름**: 앱의 표시 이름.
@@ -249,7 +249,7 @@ Azure 서비스 마법사의 앱 페이지에서 **네이티브 클라이언트 
 
 3.  사이트에서 사용자 개체에 대한 데이터를 저장합니다. 자세한 내용은 [Azure AD 사용자 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#azureaddisc)을 참조하세요.  
 
-4.  Configuration Manager 클라이언트가 Azure AD 사용자 토큰을 요청합니다. 클라이언트에서 Azure AD 클라이언트 앱의 응용 프로그램 ID를 사용하여, 그리고 서버 앱을 대상 그룹으로 사용하여 클레임을 만듭니다. 자세한 내용은 [Azure AD 보안 토큰의 클레임](/azure/active-directory/develop/active-directory-authentication-scenarios#claims-in-azure-ad-security-tokens)을 참조하세요.  
+4.  Configuration Manager 클라이언트가 Azure AD 사용자 토큰을 요청합니다. 클라이언트에서 Azure AD 클라이언트 앱의 애플리케이션 ID를 사용하여, 그리고 서버 앱을 대상 그룹으로 사용하여 클레임을 만듭니다. 자세한 내용은 [Azure AD 보안 토큰의 클레임](/azure/active-directory/develop/active-directory-authentication-scenarios#claims-in-azure-ad-security-tokens)을 참조하세요.  
 
 5.  클라이언트는 클라우드 관리 게이트웨이 및/또는 온-프레미스 HTTPS 사용 관리 지점에 Azure AD 토큰을 제공하여 사이트에 인증합니다.  
 

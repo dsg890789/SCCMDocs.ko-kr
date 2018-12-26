@@ -66,14 +66,14 @@ ms.locfileid: "32334078"
 ##  <a name="determine-if-you-need-a-distribution-point"></a>배포 지점이 필요한지 확인  
  Windows 컴퓨터에서 Configuration Manager 클라이언트를 설치할 때는 배포 지점이 필요하지 않습니다. 그러나 기본적으로 Configuration Manager에서는 배포 지점을 사용하여 Windows 컴퓨터에 클라이언트 원본 파일을 설치하지만 관리 지점에서 이 파일을 다운로드하는 대체 방식을 사용할 수도 있습니다. 배포 지점은 Configuration Manager에서 등록하는 모바일 디바이스 클라이언트를 설치하는 데는 사용되지 않지만 모바일 디바이스 레거시 클라이언트를 설치할 경우에는 사용됩니다. Configuration Manager 클라이언트를 운영 체제 배포의 일부로 설치하는 경우 운영 체제 이미지는 배포 지점에서 저장되고 검색됩니다.  
 
- 대부분의 Configuration Manager 클라이언트를 설치하는 데는 배포 지점이 필요하지 않을 수도 있지만 클라이언트에 응용 프로그램 및 소프트웨어 업데이트와 같은 소프트웨어를 설치하려면 배포 지점이 필요합니다.  
+ 대부분의 Configuration Manager 클라이언트를 설치하는 데는 배포 지점이 필요하지 않을 수도 있지만 클라이언트에 애플리케이션 및 소프트웨어 업데이트와 같은 소프트웨어를 설치하려면 배포 지점이 필요합니다.  
 
-##  <a name="determine-if-you-need-an-application-catalog-website-point-and-an-application-catalog-web-services-point"></a>응용 프로그램 카탈로그 웹 사이트 지점 및 응용 프로그램 카탈로그 웹 서비스 지점이 필요한지 확인  
- 클라이언트를 배포할 때 응용 프로그램 카탈로그 웹 사이트 지점 및 응용 프로그램 카탈로그 웹 서비스 지점은 필요하지 않습니다. 그러나 클라이언트 배포 프로세스의 일부로 두 지점을 설치하려는 경우도 있으므로 이러한 사용자는 Windows 컴퓨터에 Configuration Manager 클라이언트가 설치되는 즉시 다음 작업을 수행하면 됩니다.  
+##  <a name="determine-if-you-need-an-application-catalog-website-point-and-an-application-catalog-web-services-point"></a>애플리케이션 카탈로그 웹 사이트 지점 및 애플리케이션 카탈로그 웹 서비스 지점이 필요한지 확인  
+ 클라이언트를 배포할 때 애플리케이션 카탈로그 웹 사이트 지점 및 애플리케이션 카탈로그 웹 서비스 지점은 필요하지 않습니다. 그러나 클라이언트 배포 프로세스의 일부로 두 지점을 설치하려는 경우도 있으므로 이러한 사용자는 Windows 컴퓨터에 Configuration Manager 클라이언트가 설치되는 즉시 다음 작업을 수행하면 됩니다.  
 
 -   모바일 디바이스를 초기화합니다.  
 
--   응용 프로그램 카탈로그에서 응용 프로그램을 검색해 설치합니다.  
+-   애플리케이션 카탈로그에서 애플리케이션을 검색해 설치합니다.  
 
 -   배포 목적이 **사용 가능**인 사용자 및 디바이스에 응용 프로그램을 배포합니다.  
 

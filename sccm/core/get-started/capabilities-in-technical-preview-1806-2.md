@@ -116,15 +116,15 @@ Configuration Manager를 버전 1806.2로 ‘업데이트하기 전에’ SQL Na
 ### <a name="bkmk_pod-app"></a> 응용 프로그램의 단계적 배포
 <!--1358147--> 응용 프로그램에 대한 단계적 배포를 만듭니다. 단계적 배포에서는 사용자 지정 가능한 조건 및 그룹에 따라 소프트웨어 출시를 조정하고 순차적으로 진행할 수 있습니다.
 
-Configuration Manager 콘솔에서 **소프트웨어 라이브러리**로 이동하여 **응용 프로그램 관리**를 확장하고 **응용 프로그램**을 선택합니다. 응용 프로그램을 선택한 다음, 리본에서 **단계적 배포 만들기**를 클릭합니다. 
+Configuration Manager 콘솔에서 **소프트웨어 라이브러리**로 이동하여 **애플리케이션 관리**를 확장하고 **애플리케이션**을 선택합니다. 애플리케이션을 선택한 다음, 리본에서 **단계적 배포 만들기**를 클릭합니다. 
 
-응용 프로그램 단계적 배포의 동작은 작업 순서와 동일합니다. 자세한 내용은 [작업 순서에 대한 단계적 배포 만들기](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence)를 참조하세요.
+애플리케이션 단계적 배포의 동작은 작업 순서와 동일합니다. 자세한 내용은 [작업 순서에 대한 단계적 배포 만들기](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence)를 참조하세요.
 
 #### <a name="prerequisite"></a>필수 구성 요소
-단계적 배포를 만들기 전에 응용 프로그램의 콘텐츠를 배포 지점에 배포하세요.<!--518293-->
+단계적 배포를 만들기 전에 애플리케이션의 콘텐츠를 배포 지점에 배포하세요.<!--518293-->
 
 #### <a name="known-issue"></a>알려진 문제
-응용 프로그램에 대한 단계를 수동으로 만들 수 없습니다. 마법사에서 응용 프로그램 배포에 대한 두 단계를 자동으로 만듭니다.
+애플리케이션에 대한 단계를 수동으로 만들 수 없습니다. 마법사에서 애플리케이션 배포에 대한 두 단계를 자동으로 만듭니다.
 
 
 ### <a name="bkmk_pod-throttle"></a> 단계적 배포 중 점진적 출시
@@ -151,8 +151,8 @@ MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.co
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 작업을 완료합니다. 그런 다음, [피드백](capabilities-in-technical-preview-1804.md#bkmk_feedback)을 전송하여 작업이 어떻게 진행되었는지 알려주세요.
 
-1. Configuration Manager 콘솔에서 [응용 프로그램을 만듭니다](/sccm/apps/deploy-use/create-applications). 
-2. 응용 프로그램 설치 파일 **형식**을 **Windows 앱 패키지(\*.appx, \*.appxbundle, \*.msix, \*.msixbundle)** 로 선택합니다.
+1. Configuration Manager 콘솔에서 [애플리케이션을 만듭니다](/sccm/apps/deploy-use/create-applications). 
+2. 애플리케이션 설치 파일 **형식**을 **Windows 앱 패키지(\*.appx, \*.appxbundle, \*.msix, \*.msixbundle)** 로 선택합니다.
 3. 최신 Windows Insider Preview 빌드를 실행하는 클라이언트에 [응용 프로그램을 배포](/sccm/apps/deploy-use/deploy-applications)합니다.
 
 

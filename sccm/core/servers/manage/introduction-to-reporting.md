@@ -21,7 +21,7 @@ ms.locfileid: "32340473"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 보고 기능은 SSRS(SQL Server Reporting Services)의 고급 보고 기능과 Reporting Services 보고서 작성기가 제공하는 풍부한 제작 환경을 사용할 수 있도록 하는 일련의 도구와 리소스를 제공합니다. 보고 기능을 사용하면 사용자, 하드웨어, 소프트웨어 인벤토리, 소프트웨어 업데이트, 응용 프로그램, 사이트 상태 및 조직의 기타 Configuration Manager 작업에 대한 정보를 수집, 구성 및 제공할 수 있습니다. 보고 기능은 다양한 미리 정의된 보고서를 제공하여, 이를 변경 없이 그대로 사용하거나 요구 사항에 맞게 수정할 수 있습니다. 또한 사용자 지정 보고서를 만들 수 있습니다. 다음 섹션을 사용하여 Configuration Manager의 보고를 관리할 수 있습니다.  
+System Center Configuration Manager의 보고 기능은 SSRS(SQL Server Reporting Services)의 고급 보고 기능과 Reporting Services 보고서 작성기가 제공하는 풍부한 제작 환경을 사용할 수 있도록 하는 일련의 도구와 리소스를 제공합니다. 보고 기능을 사용하면 사용자, 하드웨어, 소프트웨어 인벤토리, 소프트웨어 업데이트, 애플리케이션, 사이트 상태 및 조직의 기타 Configuration Manager 작업에 대한 정보를 수집, 구성 및 제공할 수 있습니다. 보고 기능은 다양한 미리 정의된 보고서를 제공하여, 이를 변경 없이 그대로 사용하거나 요구 사항에 맞게 수정할 수 있습니다. 또한 사용자 지정 보고서를 만들 수 있습니다. 다음 섹션을 사용하여 Configuration Manager의 보고를 관리할 수 있습니다.  
 
 ##  <a name="BKMK_SQLServerReportingServices"></a> SQL Server Reporting Services  
  SQL Server Reporting Services는 조직의 보고서를 만들고 배포하고 관리하는 데 도움이 되는 즉시 사용 가능한 광범위한 도구 및 서비스와 더불어, 보고 기능을 확장하고 사용자 지정할 수 있도록 하는 프로그래밍 기능을 제공합니다. Reporting Services는 서버 기반의 보고 플랫폼으로서 다양한 데이터 원본에 대한 포괄적인 보고 기능을 제공합니다.  
@@ -71,7 +71,7 @@ System Center Configuration Manager의 보고 기능은 SSRS(SQL Server Reportin
  System Center Configuration Manager의 보고서 폴더에서는 Reporting Services에 저장된 보고서를 정렬 및 필터링하기 위한 방법을 제공합니다. 보고서 폴더는 관리할 보고서가 많은 경우에 특히 유용합니다. 보고 서비스 지점을 설치하면 보고서가 Reporting Services로 복사되고 50여 개의 보고서 폴더로 구성됩니다. 보고서 폴더는 읽기 전용으로, Configuration Manager 콘솔에서는 수정할 수 없습니다.  
 
 ##  <a name="BKMK_ReportSubscriptions"></a> 보고서 구독  
- Reporting Services의 보고서 구독은 특정 시간이나 이벤트에 대응하여 구독에 지정된 응용 프로그램 파일 형식으로 보고서를 배달하기 위한 되풀이 요청입니다. 구독은 주문형으로 보고서를 실행하는 것의 대안입니다. 주문형 보고를 사용하려면 보고서를 보려고 할 때마다 보고서를 직접 선택해야 합니다. 반면 구독을 사용하면 보고서 배달을 예약하여 자동화할 수 있습니다.  
+ Reporting Services의 보고서 구독은 특정 시간이나 이벤트에 대응하여 구독에 지정된 애플리케이션 파일 형식으로 보고서를 배달하기 위한 되풀이 요청입니다. 구독은 주문형으로 보고서를 실행하는 것의 대안입니다. 주문형 보고를 사용하려면 보고서를 보려고 할 때마다 보고서를 직접 선택해야 합니다. 반면 구독을 사용하면 보고서 배달을 예약하여 자동화할 수 있습니다.  
 
  Configuration Manager 콘솔에서 보고서 구독을 관리할 수 있습니다. 보고서 구독은 보고서 서버에서 처리됩니다. 구독은 서버에 배포된 배달 확장을 사용하여 배포됩니다. 기본적으로 공유 폴더 또는 전자 메일 주소로 보고서를 전송하는 구독을 만들 수 있습니다. 보고서 구독 관리 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고 작업 및 유지 관리](operations-and-maintenance-for-reporting.md)를 참조하세요.  
 

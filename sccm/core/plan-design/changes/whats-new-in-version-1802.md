@@ -55,7 +55,7 @@ Version 1802 drops support for the following products:
 <!-- 1324696 --> Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원격 사무실에 대한 콘텐츠 배포를 정의하고 규정합니다. [Windows 배달 최적화](/windows/deployment/update/waas-delivery-optimization)는 Windows 10 장치 간에 콘텐츠를 공유하는 클라우드 기반의 피어 투 피어 기술입니다. 이 릴리스부터는 피어 간에 콘텐츠를 공유할 때 경계 그룹을 사용하도록 배달 최적화를 구성합니다. 새 클라이언트 설정은 경계 그룹 식별자를 클라이언트의 배달 최적화 그룹 식별자로 적용합니다. 클라이언트는 배달 최적화 클라우드 서비스와 통신할 때 이 식별자를 사용하여 원하는 콘텐츠가 있는 피어를 찾습니다. 자세한 내용은 [콘텐츠 관리 관련 개념](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management#delivery-optimization)을 참조하세요.
 
 ### <a name="support-for-windows-10-arm64-devices"></a>Windows 10 ARM64 디바이스 지원
-<!-- 1353704 --> 이 릴리스부터는 Windows 10 ARM64 장치에서 Configuration Manager 클라이언트가 지원됩니다. 기존 클라이언트 관리 기능도 이러한 새 디바이스에서 작동합니다. 예를 들어 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 업데이트, 응용 프로그램 관리 등입니다. 운영 체제 배포는 현재 지원되지 않습니다. 
+<!-- 1353704 --> 이 릴리스부터는 Windows 10 ARM64 장치에서 Configuration Manager 클라이언트가 지원됩니다. 기존 클라이언트 관리 기능도 이러한 새 디바이스에서 작동합니다. 예를 들어 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 업데이트, 애플리케이션 관리 등입니다. 운영 체제 배포는 현재 지원되지 않습니다. 
 
 ### <a name="improved-support-for-cng-certificates"></a>CNG 인증서에 대한 향상된 지원
 <!-- 1357314 --> Configuration Manager(현재 분기) 버전 1710은 [CNG(Cryptography: Next Generation) 인증서](/sccm/core/plan-design/network/cng-certificates-overview)를 지원합니다. 버전 1710은 여러 시나리오에서 클라이언트 인증서 지원을 제한합니다. 
@@ -82,7 +82,7 @@ Version 1802 drops support for the following products:
 
 Configuration Manager 1802에서 사용할 수 있는 정보는 다음과 같습니다.
 - 응용 프로그램:
-    - 배포가 없는 응용 프로그램
+    - 배포가 없는 애플리케이션
 - Cloud Services: <!--1356412-->
     - 공동 관리 준비 상태 평가 
     - 디바이스를 하이브리드 Azure Active Directory에 가입하도록 설정
@@ -93,7 +93,7 @@ Configuration Manager 1802에서 사용할 수 있는 정보는 다음과 같습
 - 간소화된 관리: <!--1355148-->
     - 오래된 클라이언트 버전  
 - 소프트웨어 센터: 
-    - 사용자를 응용 프로그램 카탈로그 대신 소프트웨어 센터로 직접 연결  
+    - 사용자를 애플리케이션 카탈로그 대신 소프트웨어 센터로 직접 연결  
     - 새 버전의 Software Center 사용 
 - Windows 10: <!--1357421-->
     - Windows 원격 분석 및 상용 ID 키 구성 
@@ -157,13 +157,13 @@ Configuration Manager 1802에서 사용할 수 있는 정보는 다음과 같습
 
 
 
-## <a name="application-management"></a>응용 프로그램 관리
+## <a name="application-management"></a>애플리케이션 관리
 
-### <a name="allow-user-interaction-when-installing-an-application"></a>응용 프로그램 설치 시 사용자 상호 작용 허용
-<!-- 1356976 --> 최종 사용자가 작업 순서를 실행하는 동안 응용 프로그램 설치와 상호 작용할 수 있습니다. 예를 들어 최종 사용자에게 다양한 옵션을 요구하는 설치 프로세스를 실행합니다. 일부 응용 프로그램 설치 관리자에서 사용자 프롬프트를 닫을 수 없거나, 설치 프로세스에 사용자에게만 알려진 특정 구성 값이 필요할 수 있습니다. 이 기능을 사용하면 이러한 설치 시나리오를 처리할 수 있습니다. 자세한 내용은 [배포 유형에 대한 사용자 환경 옵션 지정](/sccm/apps/deploy-use/create-applications#specify-user-experience-options-for-the-deployment-type)을 참조하세요.
+### <a name="allow-user-interaction-when-installing-an-application"></a>애플리케이션 설치 시 사용자 상호 작용 허용
+<!-- 1356976 --> 최종 사용자가 작업 순서를 실행하는 동안 응용 프로그램 설치와 상호 작용할 수 있습니다. 예를 들어 최종 사용자에게 다양한 옵션을 요구하는 설치 프로세스를 실행합니다. 일부 애플리케이션 설치 관리자에서 사용자 프롬프트를 닫을 수 없거나, 설치 프로세스에 사용자에게만 알려진 특정 구성 값이 필요할 수 있습니다. 이 기능을 사용하면 이러한 설치 시나리오를 처리할 수 있습니다. 자세한 내용은 [배포 유형에 대한 사용자 환경 옵션 지정](/sccm/apps/deploy-use/create-applications#specify-user-experience-options-for-the-deployment-type)을 참조하세요.
 
-### <a name="do-not-automatically-upgrade-superseded-applications"></a>교체된 응용 프로그램을 자동으로 업그레이드하지 않습니다
-<!-- 1351266 --> 대체된 버전을 자동으로 업그레이드하지 않도록 응용 프로그램 배포를 구성합니다. 이제 **소프트웨어 배포 마법사**의 **배포 설정** 페이지에서 배포를 만들 때 **사용 가능** 설치 목적으로 **이 응용 프로그램의 교체된 버전을 자동으로 업그레이드**하는 옵션을 활성화하거나 비활성화할 수 있습니다. 자세한 내용은 [배포 설정 지정](/sccm/apps/deploy-use/deploy-applications#specify-deployment-settings)을 참조하세요.
+### <a name="do-not-automatically-upgrade-superseded-applications"></a>교체된 애플리케이션을 자동으로 업그레이드하지 않습니다
+<!-- 1351266 --> 대체된 버전을 자동으로 업그레이드하지 않도록 응용 프로그램 배포를 구성합니다. 이제 **소프트웨어 배포 마법사**의 **배포 설정** 페이지에서 배포를 만들 때 **사용 가능** 설치 목적으로 **이 애플리케이션의 교체된 버전을 자동으로 업그레이드**하는 옵션을 활성화하거나 비활성화할 수 있습니다. 자세한 내용은 [배포 설정 지정](/sccm/apps/deploy-use/deploy-applications#specify-deployment-settings)을 참조하세요.
 
 ### <a name="approve-application-requests-for-users-per-device"></a>디바이스당 사용자에 대한 응용 프로그램 요청 승인
 <!-- 1357015 --> 이 릴리스부터는 사용자가 승인이 필요한 응용 프로그램을 요청할 때 특정 장치 이름이 요청의 일부로 포함됩니다. 관리자가 요청을 승인하면 사용자는 해당 디바이스에만 응용 프로그램을 설치할 수 있습니다. 사용자가 다른 디바이스에 응용 프로그램을 설치하려면 다른 요청을 제출해야 합니다. 자세한 내용은 [배포 설정 지정](/sccm/apps/deploy-use/deploy-applications#specify-deployment-settings)을 참조하세요.
@@ -206,14 +206,14 @@ Configuration Manager 1802에서 사용할 수 있는 정보는 다음과 같습
 
 ## <a name="software-center"></a>소프트웨어 센터
 
-### <a name="install-multiple-applications-in-software-center"></a>소프트웨어 센터에서 여러 응용 프로그램 설치
-<!-- 1357126 --> 이제 최종 사용자 또는 데스크톱 기술자가 장치에 여러 응용 프로그램을 설치해야 하는 경우 소프트웨어 센터는 선택한 여러 응용 프로그램을 설치하도록 지원합니다. 이 동작을 사용하면 한 설치가 완료될 때까지 기다리지 않고 다음 설치를 시작할 수 있도록 사용자가 더 효율적으로 작업할 수 있습니다. 자세한 내용은 새 소프트웨어 센터 사용자 가이드의 [여러 응용 프로그램 설치](/sccm/core/understand/software-center#install-multiple-applications)를 참조하세요.
+### <a name="install-multiple-applications-in-software-center"></a>소프트웨어 센터에서 여러 애플리케이션 설치
+<!-- 1357126 --> 이제 최종 사용자 또는 데스크톱 기술자가 장치에 여러 응용 프로그램을 설치해야 하는 경우 소프트웨어 센터는 선택한 여러 응용 프로그램을 설치하도록 지원합니다. 이 동작을 사용하면 한 설치가 완료될 때까지 기다리지 않고 다음 설치를 시작할 수 있도록 사용자가 더 효율적으로 작업할 수 있습니다. 자세한 내용은 새 소프트웨어 센터 사용자 가이드의 [여러 애플리케이션 설치](/sccm/core/understand/software-center#install-multiple-applications)를 참조하세요.
 
 ### <a name="use-software-center-to-browse-and-install-user-available-applications-on-azure-ad-joined-devices"></a>소프트웨어 센터를 사용하여 Azure AD 조인 디바이스에서 사용자가 사용할 수 있는 응용 프로그램 찾아보기 및 설치
 <!-- 1322613 --> 사용자가 사용할 수 있는 응용 프로그램으로 배포하는 경우 이제 Azure AD(Azure Active Directory) 장치에서 소프트웨어 센터를 통해 해당 응용 프로그램을 찾아보고 설치할 수 있습니다. 자세한 내용은 [Azure AD 가입 디바이스에 사용자가 사용할 수 있는 응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications#deploy-user-available-applications-on-azure-ad-joined-devices)를 참조하세요.
 
-### <a name="hide-installed-applications-in-software-center"></a>소프트웨어 센터에서 설치된 응용 프로그램 숨기기
-<!--1357592--> 이제 설치된 응용 프로그램을 소프트웨어 센터에서 숨길 수 있습니다. 클라이언트 설정에서 이 옵션을 사용하도록 설정하면 이미 설치된 응용 프로그램이 더 이상 응용 프로그램 탭에 표시되지 않습니다. 이 옵션은 Configuration Manager 1802를 설치하거나 이 버전으로 업그레이드할 때 기본값으로 설정됩니다.  설치 상태 탭에서는 설치된 응용 프로그램을 계속 검토할 수 있습니다. [소프트웨어 센터에서 설치된 응용 프로그램 숨기기](/sccm/core/clients/deploy/about-client-settings#BKMK_HideInstalled)에는 추가적인 세부 정보가 있습니다.   
+### <a name="hide-installed-applications-in-software-center"></a>소프트웨어 센터에서 설치된 애플리케이션 숨기기
+<!--1357592--> 이제 설치된 응용 프로그램을 소프트웨어 센터에서 숨길 수 있습니다. 클라이언트 설정에서 이 옵션을 사용하도록 설정하면 이미 설치된 애플리케이션이 더 이상 애플리케이션 탭에 표시되지 않습니다. 이 옵션은 Configuration Manager 1802를 설치하거나 이 버전으로 업그레이드할 때 기본값으로 설정됩니다.  설치 상태 탭에서는 설치된 애플리케이션을 계속 검토할 수 있습니다. [소프트웨어 센터에서 설치된 응용 프로그램 숨기기](/sccm/core/clients/deploy/about-client-settings#BKMK_HideInstalled)에는 추가적인 세부 정보가 있습니다.   
 
 ### <a name="hide-unapproved-applications-in-software-center"></a>소프트웨어 센터에서 승인되지 않은 프로그램 숨기기
  <!--1355146--> 이 클라이언트 설정 옵션을 사용하도록 설정하면 승인이 필요한 사용자가 사용할 수 있는 응용 프로그램이 소프트웨어 센터에서 숨겨집니다.  [소프트웨어 센터에서 승인되지 않은 프로그램 숨기기](/sccm/core/clients/deploy/about-client-settings#BKMK_HideUnapproved)에는 추가적인 세부 정보가 있습니다.  

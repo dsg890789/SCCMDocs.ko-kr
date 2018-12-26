@@ -38,7 +38,7 @@ Configuration Manager에서는 Configuration Manager 클라이언트를 사용�
 |기능|오프라인 앱|온라인 앱|
 |------------|------------|------------|
 |Configuration Manager에 앱 데이터 동기화<br>(24시간마다 동기화 발생)|예|예|
-|스토어 앱에서 Configuration Manager 응용 프로그램 만들기|예|예|
+|스토어 앱에서 Configuration Manager 애플리케이션 만들기|예|예|
 |스토어에서 무료 앱 지원|예|예|
 |스토어에서 유료 앱 지원|아니요|예<sup>1</sup>|
 |사용자 또는 디바이스 컬렉션에 대한 필수 배포 지원|예|예|
@@ -48,7 +48,7 @@ Configuration Manager에서는 Configuration Manager 클라이언트를 사용�
 
 - <sup>1</sup> Configuration Manager 클라이언트를 통해 사용이 허가된 온라인 앱을 Windows 10 장치에 배포하려면 Windows 10, 버전 1703 이상을 실행하고 있어야 합니다.  
 
-- <sup>2</sup> 버전 1806부터 가능합니다. 자세한 내용은 [Windows 응용 프로그램 만들기](/sccm/apps/get-started/creating-windows-applications#bkmk_provision)를 참조하세요.  
+- <sup>2</sup> 버전 1806부터 가능합니다. 자세한 내용은 [Windows 애플리케이션 만들기](/sccm/apps/get-started/creating-windows-applications#bkmk_provision)를 참조하세요.  
 
 
 ### <a name="deploying-online-apps-using-the-microsoft-store-for-business-to-devices-that-run-the-configuration-manager-client"></a>Configuration Manager 클라이언트를 실행하는 디바이스에 비즈니스용 Microsoft Store를 사용하여 온라인 앱 배포
@@ -84,9 +84,9 @@ Configuration Manager 클라이언트가 있고 Windows 10 버전 1607 이하를
 
 - Configuration Manager 콘솔에서 앱 배포 상태는 "Microsoft Store 앱이 클라이언트 PC에서 열렸으며 사용자가 설치를 완료하기를 기다리고 있습니다."라는 오류를 표시하고 실패했다고 보고합니다.  
 
-다음 응용 프로그램 평가 주기에서:  
+다음 애플리케이션 평가 주기에서:  
 
-- 사용자가 스토어에서 응용 프로그램을 설치한 경우 응용 프로그램에서 **성공** 상태를 보고합니다.  
+- 사용자가 스토어에서 애플리케이션을 설치한 경우 애플리케이션에서 **성공** 상태를 보고합니다.  
 
 - 사용자가 스토어에서 앱을 설치하려고 시도하지 않은 경우:  
 
@@ -124,9 +124,9 @@ Azure Services 마법사의 **앱** 페이지에서, 먼저 **Azure 환경** 및
 
 Azure Services 마법사의 **구성** 페이지에서 다음 정보를 지정합니다.  
 
-- **비즈니스용 Microsoft Store 앱 콘텐츠 저장소의 경로**: 공유 네트워크 경로를 지정합니다(폴더 포함). 예: `\\server\share\folder` 사이트 서버가 스토어와 동기화되면 콘텐츠가 이 위치에 캐시됩니다. Configuration Manager에서 응용 프로그램을 만들면 사이트 서버가 이 로컬 캐시의 앱 콘텐츠를 사이트의 콘텐츠 라이브러리로 복사합니다.  
+- **비즈니스용 Microsoft Store 앱 콘텐츠 저장소의 경로**: 공유 네트워크 경로를 지정합니다(폴더 포함). 예: `\\server\share\folder` 사이트 서버가 스토어와 동기화되면 콘텐츠가 이 위치에 캐시됩니다. Configuration Manager에서 애플리케이션을 만들면 사이트 서버가 이 로컬 캐시의 앱 콘텐츠를 사이트의 콘텐츠 라이브러리로 복사합니다.  
 
-- **언어 선택**: 스토어에서 동기화할 언어를 선택하고 소프트웨어 센터의 사용자에게 표시합니다. 예를 들어 사용자가 독일어로 Windows를 구성하면 소프트웨어 센터는 스토어 앱용 독일어 문자열을 표시합니다. 이 동작을 실행하려면 언어가 동기화되고 특정 응용 프로그램에 존재해야 합니다.    
+- **언어 선택**: 스토어에서 동기화할 언어를 선택하고 소프트웨어 센터의 사용자에게 표시합니다. 예를 들어 사용자가 독일어로 Windows를 구성하면 소프트웨어 센터는 스토어 앱용 독일어 문자열을 표시합니다. 이 동작을 실행하려면 언어가 동기화되고 특정 애플리케이션에 존재해야 합니다.    
 
 - **기본 언어**: 사용자의 언어를 사용할 수 없는 경우 사용할 기본 언어를 선택합니다.  
 
@@ -136,13 +136,13 @@ Azure Services 마법사의 **구성** 페이지에서 다음 정보를 지정�
 
 동기화 후 다른 앱과 유사한 스토어 앱을 만들고 배포합니다.
 
-1.  Configuration Manager 콘솔의 **소프트웨어 라이브러리** 작업 영역에서 **응용 프로그램 관리**를 확장한 다음 **스토어 앱에 대한 라이선스 정보**를 클릭합니다.  
+1.  Configuration Manager 콘솔의 **소프트웨어 라이브러리** 작업 영역에서 **애플리케이션 관리**를 확장한 다음 **스토어 앱에 대한 라이선스 정보**를 클릭합니다.  
 
-2.  배포하려는 앱을 선택한 다음, 리본에서 **응용 프로그램 만들기**를 클릭합니다.  
+2.  배포하려는 앱을 선택한 다음, 리본에서 **애플리케이션 만들기**를 클릭합니다.  
 
-이 사이트는 비즈니스용 Microsoft Store 앱을 포함하는 Configuration Manager 응용 프로그램을 만듭니다. 
+이 사이트는 비즈니스용 Microsoft Store 앱을 포함하는 Configuration Manager 애플리케이션을 만듭니다. 
 
-그런 다음, 이 응용 프로그램을 다른 Configuration Manager 응용 프로그램과 마찬가지로 배포하고 모니터링합니다. 자세한 내용은 다음 아티클을 참조하세요.  
+그런 다음, 이 애플리케이션을 다른 Configuration Manager 애플리케이션과 마찬가지로 배포하고 모니터링합니다. 자세한 내용은 다음 아티클을 참조하세요.  
 - [응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications)
 - [콘솔에서 응용 프로그램 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)
 

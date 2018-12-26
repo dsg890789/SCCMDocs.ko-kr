@@ -1,7 +1,7 @@
 ---
 title: 작업 순서를 사용하여 가상 하드 디스크 관리
 titleSuffix: Configuration Manager
-description: Configuration Manager에서 VHD를 만들고 수정하며, 응용 프로그램과 소프트웨어 업데이트를 추가하고, VHD를 System Center VMM(Virtual Machine Manager)에 게시합니다.
+description: Configuration Manager에서 VHD를 만들고 수정하며, 애플리케이션과 소프트웨어 업데이트를 추가하고, VHD를 System Center VMM(Virtual Machine Manager)에 게시합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
@@ -25,7 +25,7 @@ ms.locfileid: "48862501"
    > [!NOTE] 
    >  이 기능은 버전 1710부터 더 이상 지원되지 않았습니다. 자세한 내용은 [Configuration Manager에서 제거되는 기능과 이후 지원되지 않는 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.
 
-System Center Configuration Manager에서는 Configuration Manager 콘솔에서 VHD(가상 하드 디스크)를 관리하고 만든 VHD를 데이터 센터에 통합할 수 있습니다. 특히 Configuration Manager 콘솔에서 VHD를 만들고 수정하며, 응용 프로그램과 소프트웨어 업데이트를 VHD에 추가하고, VHD를 System Center VMM(Virtual Machine Manager)에 게시할 수 있습니다.  
+System Center Configuration Manager에서는 Configuration Manager 콘솔에서 VHD(가상 하드 디스크)를 관리하고 만든 VHD를 데이터 센터에 통합할 수 있습니다. 특히 Configuration Manager 콘솔에서 VHD를 만들고 수정하며, 애플리케이션과 소프트웨어 업데이트를 VHD에 추가하고, VHD를 System Center VMM(Virtual Machine Manager)에 게시할 수 있습니다.  
 
  다음 섹션을 사용하여 Configuration Manager에서 VHD를 관리할 수 있습니다.
 
@@ -51,7 +51,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
 
 -   사이트 서버로부터 원격인 컴퓨터에서 VHD를 관리하는 경우 사이트 서버에는 VHD 파일을 포함할 폴더에 대한 **쓰기** 액세스 권한이 있어야 합니다.  
 
--   VHD를 관리할 컴퓨터에 충분한 디스크 공간이 있는지 확인합니다. VHD의 하드 디스크 공간 요구 사항은 설치하는 운영 체제 및 응용 프로그램에 따라 다릅니다.  
+-   VHD를 관리할 컴퓨터에 충분한 디스크 공간이 있는지 확인합니다. VHD의 하드 디스크 공간 요구 사항은 설치하는 운영 체제 및 애플리케이션에 따라 다릅니다.  
 
 -   VHD를 관리할 컴퓨터에 충분한 메모리가 있는지 확인합니다. VHD를 만드는 프로세스 동안 가상 머신은 메모리의 2GB를 소비하도록 구성됩니다.  
 
@@ -120,7 +120,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
 
 8.  **Configuration Manager 설치** 페이지에서 대상 컴퓨터에 설치할 Configuration Manager 클라이언트 패키지를 지정한 후 **다음**을 클릭합니다.  
 
-9. **응용 프로그램 설치** 페이지에서 대상 컴퓨터에 설치할 응용 프로그램을 지정하고 **다음**을 클릭합니다. 여러 응용 프로그램을 지정하는 경우 특정 응용 프로그램 설치가 실패할 경우 작업 순서가 계속되도록 지정할 수 있습니다.  
+9. **응용 프로그램 설치** 페이지에서 대상 컴퓨터에 설치할 응용 프로그램을 지정하고 **다음**을 클릭합니다. 여러 애플리케이션을 지정하는 경우 특정 애플리케이션 설치가 실패할 경우 작업 순서가 계속되도록 지정할 수 있습니다.  
 
 10. 마법사를 완료합니다.  
 
@@ -186,7 +186,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
  VHD를 수정하려면 VHD를 수정하는 데 필요한 단계가 포함된 작업 순서를 만들어야 합니다. 그런 다음 "가상 하드 드라이브 수정 마법사"에서 작업 순서를 선택합니다. 이 마법사는 VHD를 가상 머신에 연결하고, VHD에서 작업 순서를 실행한 후 VHD 파일을 업데이트합니다. 다음 섹션에서는 VHD를 수정하는 단계를 설명합니다.  
 
 ###  <a name="BKMK_ModifyTS"></a> VHD를 수정하는 작업 순서 만들기  
- 기존 VHD를 수정하려면 먼저 작업 순서를 만들어야 합니다. 이때 작업 순서를 수정하는 데 필요한 단계만 선택하십시오. 예를 들어, VHD에 응용 프로그램을 추가하려는 경우 사용자 지정 작업 순서를 만든 후 응용 프로그램 설치 단계만 추가합니다.  
+ 기존 VHD를 수정하려면 먼저 작업 순서를 만들어야 합니다. 이때 작업 순서를 수정하는 데 필요한 단계만 선택하십시오. 예를 들어, VHD에 애플리케이션을 추가하려는 경우 사용자 지정 작업 순서를 만든 후 애플리케이션 설치 단계만 추가합니다.  
 
  다음 절차에 따라 VHD를 수정하는 작업 순서를 만들 수 있습니다.  
 

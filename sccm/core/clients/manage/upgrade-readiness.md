@@ -48,7 +48,7 @@ ms.locfileid: "43995355"
 
 ## <a name="connect-configuration-manager-to-upgrade-readiness"></a>Configuration Manager를 업그레이드 준비에 연결
 
-[Azure 서비스 마법사](/sccm/core/servers/deploy/configure/azure-services-wizard)를 사용하여 Configuration Manager에서 사용하도록 Azure 서비스를 구성하는 과정을 단순화할 수 있습니다. Configuration Manager와 업그레이드 준비를 연결하려면 [Azure Portal](https://portal.azure.com)에서 *웹앱/API* 유형의 Azure AD(Azure Active Directory) 앱 등록을 만듭니다. 앱 등록을 만드는 방법에 대해 자세히 알아보려면 [Azure AD 테넌트로 응용 프로그램 등록](/azure/active-directory/active-directory-app-registration)을 참조하세요. 
+[Azure 서비스 마법사](/sccm/core/servers/deploy/configure/azure-services-wizard)를 사용하여 Configuration Manager에서 사용하도록 Azure 서비스를 구성하는 과정을 단순화할 수 있습니다. Configuration Manager와 업그레이드 준비를 연결하려면 [Azure Portal](https://portal.azure.com)에서 *웹앱/API* 유형의 Azure AD(Azure Active Directory) 앱 등록을 만듭니다. 앱 등록을 만드는 방법에 대해 자세히 알아보려면 [Azure AD 테넌트로 애플리케이션 등록](/azure/active-directory/active-directory-app-registration)을 참조하세요. 
 
 Azure Portal에서 새로 등록된 웹앱에 *참가자* 권한을 제공합니다. 업그레이드 준비 데이터를 호스팅하는 Log Analytics 작업 영역이 포함된 리소스 그룹에 이러한 권한을 설정합니다. Azure 서비스 마법사는 이 앱 등록을 사용하여 Configuration Manager에서 Azure AD와 안전하게 통신하고 업그레이드 준비 데이터에 인프라를 연결할 수 있게 합니다.
 

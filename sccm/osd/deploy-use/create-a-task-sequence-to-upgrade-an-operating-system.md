@@ -21,7 +21,7 @@ ms.locfileid: "42756057"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Configuration Manager에서 작업 순서를 사용하여 대상 컴퓨터의 OS를 자동으로 업그레이드합니다. Windows 7 이상에서 Windows 10으로 또는 Windows Server 2012 이상에서 Windows Server 2016으로 업그레이드할 수 있습니다. OS 업그레이드 패키지 및 응용 프로그램 또는 소프트웨어 업데이트와 같은 설치할 기타 콘텐츠를 참조하는 작업 순서를 만듭니다. OS를 업그레이드하는 작업 순서는 [최신 버전으로 Windows 업그레이드](upgrade-windows-to-the-latest-version.md) 시나리오의 일부입니다.  
+Configuration Manager에서 작업 순서를 사용하여 대상 컴퓨터의 OS를 자동으로 업그레이드합니다. Windows 7 이상에서 Windows 10으로 또는 Windows Server 2012 이상에서 Windows Server 2016으로 업그레이드할 수 있습니다. OS 업그레이드 패키지 및 애플리케이션 또는 소프트웨어 업데이트와 같은 설치할 기타 콘텐츠를 참조하는 작업 순서를 만듭니다. OS를 업그레이드하는 작업 순서는 [최신 버전으로 Windows 업그레이드](upgrade-windows-to-the-latest-version.md) 시나리오의 일부입니다.  
 
 
 
@@ -45,7 +45,7 @@ Configuration Manager에서 작업 순서를 사용하여 대상 컴퓨터의 OS
 
 ##  <a name="BKMK_UpgradeOS"></a> OS를 업그레이드하는 작업 순서 만들기  
 
-클라이언트에서 OS를 업그레이드하려면 작업 순서 만들기 마법사에서 작업 순서를 만들고 **업그레이드 패키지에서 운영 체제 업그레이드**를 선택합니다. 마법사는 OS를 업그레이드하고 소프트웨어 업데이트를 적용한 다음, 응용 프로그램을 설치하는 작업 순서 단계를 추가합니다. 
+클라이언트에서 OS를 업그레이드하려면 작업 순서 만들기 마법사에서 작업 순서를 만들고 **업그레이드 패키지에서 운영 체제 업그레이드**를 선택합니다. 마법사는 OS를 업그레이드하고 소프트웨어 업데이트를 적용한 다음, 애플리케이션을 설치하는 작업 순서 단계를 추가합니다. 
 
 #### <a name="to-create-a-task-sequence-that-upgrades-an-os"></a>OS를 업그레이드하는 작업 순서를 만들려면  
 
@@ -76,7 +76,7 @@ Configuration Manager에서 작업 순서를 사용하여 대상 컴퓨터의 OS
 
 7.  **업데이트 포함** 페이지에서 모든 소프트웨어 업데이트를 설치해야 하는지 아니면 소프트웨어 업데이트가 필요하지 않은지를 지정합니다. **다음**을 클릭합니다. 소프트웨어 업데이트를 설치하도록 지정하면 Configuration Manager에서 대상 컴퓨터가 속해 있는 컬렉션을 대상으로 하는 해당 업데이트만을 설치합니다.  
 
-8.  **응용 프로그램 설치** 페이지에서 대상 컴퓨터에 설치할 응용 프로그램을 지정하고 **다음**을 클릭합니다. 둘 이상의 응용 프로그램을 지정하는 경우에는 특정 응용 프로그램 설치가 실패할 경우 작업 순서를 계속할지 여부도 지정하세요.  
+8.  **응용 프로그램 설치** 페이지에서 대상 컴퓨터에 설치할 응용 프로그램을 지정하고 **다음**을 클릭합니다. 둘 이상의 애플리케이션을 지정하는 경우에는 특정 애플리케이션 설치가 실패할 경우 작업 순서를 계속할지 여부도 지정하세요.  
 
 9. 마법사를 완료합니다.  
 
@@ -147,9 +147,9 @@ Configuration Manager에서 작업 순서를 사용하여 대상 컴퓨터의 OS
 
 - **네트워크/유선 연결 확인**: 컴퓨터가 네트워크에 연결되어 있고 무선 연결을 사용하고 있지 않은지 확인하려면 이 그룹의 단계를 추가합니다. 이 작업에서 배터리 확인을 수행하려면 사용자 지정 스크립트 또는 유틸리티가 필요합니다.  
 
-- **호환되지 않는 응용 프로그램 제거**: 이 Windows 10 버전과 호환되지 않는 응용 프로그램을 제거하려면 이 그룹의 단계를 추가합니다. 응용 프로그램을 제거하는 방법은 다양합니다.  
+- **호환되지 않는 응용 프로그램 제거**: 이 Windows 10 버전과 호환되지 않는 응용 프로그램을 제거하려면 이 그룹의 단계를 추가합니다. 애플리케이션을 제거하는 방법은 다양합니다.  
 
-    - 응용 프로그램이 Windows Installer를 사용하는 경우 응용 프로그램의 Windows Installer 배포 유형 속성에 있는 **프로그램** 탭의 **제거 프로그램** 명령줄을 복사합니다. 그런 다음, 제거 프로그램 명령줄을 사용하여 이 그룹의 **명령줄 실행** 단계를 추가합니다. 예: </br>`msiexec /x {150031D8-1234-4BA8-9F52-D6E5190D1CBA} /q`</br>  
+    - 애플리케이션이 Windows Installer를 사용하는 경우 애플리케이션의 Windows Installer 배포 유형 속성에 있는 **프로그램** 탭의 **제거 프로그램** 명령줄을 복사합니다. 그런 다음, 제거 프로그램 명령줄을 사용하여 이 그룹의 **명령줄 실행** 단계를 추가합니다. 예: </br>`msiexec /x {150031D8-1234-4BA8-9F52-D6E5190D1CBA} /q`</br>  
 
 - **호환되지 않는 드라이버 제거**: 이 Windows 10 버전과 호환되지 않는 드라이버를 제거하려면 이 그룹의 단계를 추가합니다.  
 
@@ -184,7 +184,7 @@ Configuration Manager에서 작업 순서를 사용하여 대상 컴퓨터의 OS
 
 - **타사 보안 설치/사용**: 바이러스 백신과 같은 타사 보안 프로그램을 설치하거나 사용하도록 설정하려면 이 그룹의 단계를 추가합니다.  
 
-- **Windows 기본 앱 및 연결 설정**: Windows 기본 앱 및 파일 연결을 설정하려면 이 그룹의 단계를 추가합니다. 먼저 원하는 앱 연결을 사용하여 참조 컴퓨터를 준비합니다. 그런 후에 다음 명령줄을 실행하여 내보냅니다. </br>`dism /online /Export-DefaultAppAssociations:"%UserProfile%\Desktop\DefaultAppAssociations.xml"`</br>패키지에 XML 파일을 추가합니다. 그런 다음, 이 그룹의 [명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 단계를 추가합니다. XML 파일이 포함된 패키지를 지정한 후 다음 명령줄을 지정합니다. </br>`dism /online /Import-DefaultAppAssociations:DefaultAppAssocations.xml`</br> 자세한 내용은 [기본 응용 프로그램 연결 내보내기 또는 가져오기](/windows-hardware/manufacture/desktop/export-or-import-default-application-associations)을 참조하세요.  
+- **Windows 기본 앱 및 연결 설정**: Windows 기본 앱 및 파일 연결을 설정하려면 이 그룹의 단계를 추가합니다. 먼저 원하는 앱 연결을 사용하여 참조 컴퓨터를 준비합니다. 그런 후에 다음 명령줄을 실행하여 내보냅니다. </br>`dism /online /Export-DefaultAppAssociations:"%UserProfile%\Desktop\DefaultAppAssociations.xml"`</br>패키지에 XML 파일을 추가합니다. 그런 다음, 이 그룹의 [명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 단계를 추가합니다. XML 파일이 포함된 패키지를 지정한 후 다음 명령줄을 지정합니다. </br>`dism /online /Import-DefaultAppAssociations:DefaultAppAssocations.xml`</br> 자세한 내용은 [기본 애플리케이션 연결 내보내기 또는 가져오기](/windows-hardware/manufacture/desktop/export-or-import-default-application-associations)을 참조하세요.  
 
 - **사용자 지정 및 개인 설정 적용**: 프로그램 그룹 구성과 같은 시작 메뉴 사용자 지정을 적용하려면 이 그룹의 단계를 추가합니다. 자세한 내용은 [시작 화면 사용자 지정](/windows-hardware/manufacture/desktop/customize-the-start-screen)을 참조하세요.  
 

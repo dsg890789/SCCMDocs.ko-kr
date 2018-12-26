@@ -157,7 +157,7 @@ Version 1706 drops support for the following products:
 
 새 디바이스 준수 규칙을 사용해 보려면 [디바이스 규정 준수 정책 만들기 및 배포](https://docs.microsoft.com/sccm/mdm/deploy-use/create-compliance-policy)를 참조하세요.
 
-## <a name="application-management"></a>응용 프로그램 관리
+## <a name="application-management"></a>애플리케이션 관리
 
 ### <a name="run-powershell-scripts-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 PowerShell 스크립트 실행
 <!-- 1236459 -->
@@ -172,7 +172,7 @@ Configuration Manager에서 패키지 및 프로그램을 사용하여 클라이
 
 자세한 내용은 [Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행](/sccm/apps/deploy-use/create-deploy-scripts)을 참조하세요.
 
-### <a name="new-mobile-application-management-policy-settings"></a>새 모바일 응용 프로그램 관리 정책 설정    
+### <a name="new-mobile-application-management-policy-settings"></a>새 모바일 애플리케이션 관리 정책 설정    
 <!--1324760--> 이 릴리스부터 3개의 새 MAM(모바일 응용 프로그램 관리) 정책 설정을 사용할 수 있습니다.
 
 - **화면 캡처 차단(Android 장치만 해당):** 이 앱을 사용할 때 장치의 화면 캡처 기능을 차단하도록 지정합니다.

@@ -44,7 +44,7 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
 
  다음 콘텐츠 개체는 피어 캐시를 사용하여 전송하지 않습니다. 대신 배포 지점에서 전송되거나 환경에서 Windows BranchCache를 구성한 경우에는 Windows BranchCache를 통해 전송됩니다.  
 
--   응용 프로그램  
+-   애플리케이션  
 
 -   소프트웨어 업데이트  
 

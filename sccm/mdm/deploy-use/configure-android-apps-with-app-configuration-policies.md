@@ -32,7 +32,7 @@ System Center Configuration Manager에서 앱 구성 정책을 사용하여 사�
 
 Android 앱 구성 정책은 Android for Work를 실행 중인 디바이스에서만 사용 가능합니다. 앱 구성 정책은 Play for Work 스토어에서 승인한 앱에 적용됩니다. Android 대량 구매 앱에 대한 자세한 내용은 [Android for Work 디바이스에 앱을 배포하는 방법](https://docs.microsoft.com/intune/deploy-use/android-for-work-apps)을 참조하세요.
 
-앱 설치 유형에 대한 자세한 내용은 [응용 프로그램 관리 소개](/sccm/apps/understand/introduction-to-application-management)를 참조하세요.
+앱 설치 유형에 대한 자세한 내용은 [애플리케이션 관리 소개](/sccm/apps/understand/introduction-to-application-management)를 참조하세요.
 
 ## <a name="create-an-app-configuration-policy"></a>앱 구성 정책 만들기
 
@@ -58,9 +58,9 @@ Android 앱 구성 정책은 Android for Work를 실행 중인 디바이스에�
 
 새 앱 구성 정책이 **소프트웨어 라이브러리** 작업 영역의 **앱 구성 정책** 노드에 표시됩니다.
 
-## <a name="associate-an-app-configuration-policy-with-a-configuration-manager-application"></a>Configuration Manager 응용 프로그램과 앱 구성 정책을 연결합니다.
+## <a name="associate-an-app-configuration-policy-with-a-configuration-manager-application"></a>Configuration Manager 애플리케이션과 앱 구성 정책을 연결합니다.
 
-앱 구성 정책을 Android for Work 앱 배포와 연결하려면 [응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications) 항목의 프로시저를 사용하여 일반적인 방식으로 응용 프로그램을 배포합니다.
+앱 구성 정책을 Android for Work 앱 배포와 연결하려면 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications) 항목의 프로시저를 사용하여 일반적인 방식으로 애플리케이션을 배포합니다.
 
 소프트웨어 배포 마법사의 **앱 구성 정책** 페이지에서 **새로 만들기**를 선택합니다. **앱 구성 정책 선택** 대화 상자에서 응용 프로그램 배포 유형과 여기에 연결할 앱 구성 정책을 선택합니다.
 배포 유형이 설치되면 앱 구성 정책 설정이 자동으로 적용됩니다.

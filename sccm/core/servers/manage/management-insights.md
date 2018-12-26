@@ -115,11 +115,11 @@ Configuration Manager의 관리 정보는 환경의 현재 상태에 대한 정�
 - [Windows 10](#windows-10)  
 
 
-### <a name="applications"></a>응용 프로그램
+### <a name="applications"></a>애플리케이션
 
-응용 프로그램 관리에 대한 인사이트
+애플리케이션 관리에 대한 인사이트
 
-- **배포가 없는 응용 프로그램**: 사용자 환경에서 활성 배포가 없는 응용 프로그램을 나열합니다. 이 규칙을 통해 사용되지 않는 응용 프로그램을 찾고 삭제하여 콘솔에 표시된 응용 프로그램 목록을 간소화할 수 있습니다. 자세한 내용은 [응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications)를 참조하세요.  
+- **배포가 없는 응용 프로그램**: 사용자 환경에서 활성 배포가 없는 응용 프로그램을 나열합니다. 이 규칙을 통해 사용되지 않는 애플리케이션을 찾고 삭제하여 콘솔에 표시된 애플리케이션 목록을 간소화할 수 있습니다. 자세한 내용은 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications)를 참조하세요.  
 
 
 ### <a name="cloud-services"></a>Cloud Services
@@ -177,7 +177,7 @@ Configuration Manager의 관리 정보는 환경의 현재 상태에 대한 정�
 
 소프트웨어 센터 관리에 대한 인사이트입니다. 
 
-- **사용자를 응용 프로그램 카탈로그 대신 소프트웨어 센터로 이동**: 사용자가 지난 14일 동안 응용 프로그램 카탈로그의 응용 프로그램을 설치했거나 요청했는지를 확인합니다. 응용 프로그램 카탈로그의 기본 기능이 이제는 소프트웨어 센터에 포함됩니다. 응용 프로그램 카탈로그 웹 사이트에 대한 지원은 1806 버전에서 종료되었습니다. 자세한 내용은 [사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures#deprecated-features)을 참조하세요.  
+- **사용자를 응용 프로그램 카탈로그 대신 소프트웨어 센터로 이동**: 사용자가 지난 14일 동안 응용 프로그램 카탈로그의 응용 프로그램을 설치했거나 요청했는지를 확인합니다. 애플리케이션 카탈로그의 기본 기능이 이제는 소프트웨어 센터에 포함됩니다. 애플리케이션 카탈로그 웹 사이트에 대한 지원은 1806 버전에서 종료되었습니다. 자세한 내용은 [사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures#deprecated-features)을 참조하세요.  
 
 - **새 버전의 소프트웨어 센터 사용**: 이전 버전의 소프트웨어 센터는 더 이상 지원되지 않습니다. 클라이언트 설정인 **컴퓨터 에이전트** 그룹에 **새 소프트웨어 센터 사용**을 활성화하여 새로운 소프트웨어 센터를 사용하도록 클라이언트를 설정합니다. 자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#use-new-software-center)를 참조하세요.  
 

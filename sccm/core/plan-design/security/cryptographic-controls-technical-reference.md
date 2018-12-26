@@ -54,13 +54,13 @@ System Center Configuration Manager는 서명 및 암호화를 사용하여 Conf
 
 -   App-V 콘텐츠를 스트리밍하는 Windows 클라이언트.  
 
--   Windows Phone 클라이언트, 그러나 이러한 클라이언트는 신뢰할 수 있는 원본에서 서명된 응용 프로그램의 서명을 확인합니다.  
+-   Windows Phone 클라이언트, 그러나 이러한 클라이언트는 신뢰할 수 있는 원본에서 서명된 애플리케이션의 서명을 확인합니다.  
 
--   Windows RT 클라이언트, 그러나 이러한 클라이언트는 신뢰할 수 있는 원본에서 서명된 응용 프로그램의 서명을 확인하고 PFN(Package Full Name) 유효성 검사도 사용합니다.  
+-   Windows RT 클라이언트, 그러나 이러한 클라이언트는 신뢰할 수 있는 원본에서 서명된 애플리케이션의 서명을 확인하고 PFN(Package Full Name) 유효성 검사도 사용합니다.  
 
 -   iOS, 그러나 이러한 디바이스는 신뢰할 수 있는 원본의 개발자 인증서에서 서명된 응용 프로그램의 서명을 확인합니다.  
 
--   Nokia 클라이언트, 그러나 이러한 클라이언트는 자체 서명된 인증서를 사용하는 응용 프로그램의 서명을 확인합니다. 또는 신뢰할 수 있는 원본의 인증서의 서명과 인증서는 Nokia SIS(Symbian Installation Source) 응용 프로그램을 서명할 수 있습니다.  
+-   Nokia 클라이언트, 그러나 이러한 클라이언트는 자체 서명된 인증서를 사용하는 애플리케이션의 서명을 확인합니다. 또는 신뢰할 수 있는 원본의 인증서의 서명과 인증서는 Nokia SIS(Symbian Installation Source) 애플리케이션을 서명할 수 있습니다.  
 
 -   Android: 그 밖에, 이러한 디바이스는 응용 프로그램 설치에 서명 유효성 검사를 사용하지 않습니다.  
 
@@ -76,7 +76,7 @@ System Center Configuration Manager는 서명 및 암호화를 사용하여 Conf
  모든 운영 체제 배포 패키지의 경우 패키지가 멀티캐스트를 통해 컴퓨터에 전송될 때 암호화를 사용하도록 설정할 수 있습니다. 이때 AES(고급 암호화 표준)의 암호화가 사용됩니다. 암호화를 사용하는 경우 추가 인증서 구성은 필요하지 않습니다. 멀티캐스트 사용 배포 지점은 패키지 암호화를 위한 대칭 키를 자동으로 생성합니다. 각 패키지에는 서로 다른 암호화 키가 있습니다. 이 키는 표준 Windows API를 사용하여 멀티캐스트 사용 배포 지점에 저장됩니다. 클라이언트에서 멀티캐스트 세션에 연결할 경우 PKI가 발급한 클라이언트 인증 인증서(클라이언트가 HTTPS 사용 시) 또는 자체 서명된 인증서(클라이언트가 HTTP 사용 시)로 암호화된 채널을 통해 키 교환이 발생합니다. 클라이언트는 키를 멀티캐스트 세션의 지속 기간 동안만 메모리에 저장합니다.  
 
 ### <a name="encryption-for-media-to-deploy-operating-systems"></a>운영 체제 배포용 미디어에 대한 암호화  
- 미디어를 사용하여 운영 체제를 배포하고 미디어 보호를 위한 암호를 지정하는 경우 환경 변수는 AES를 사용하여 암호화됩니다. 패키지 및 응용 프로그램 콘텐츠를 포함해 미디어의 다른 데이터는 암호화되지 않습니다.  
+ 미디어를 사용하여 운영 체제를 배포하고 미디어 보호를 위한 암호를 지정하는 경우 환경 변수는 AES를 사용하여 암호화됩니다. 패키지 및 애플리케이션 콘텐츠를 포함해 미디어의 다른 데이터는 암호화되지 않습니다.  
 
 ### <a name="encryption-for-content-that-is-hosted-on-cloud-based-distribution-points"></a>클라우드 기반 배포 지점에서 호스트되는 콘텐츠에 대한 암호화  
  System Center 2012 Configuration Manager SP1부터는 클라우드 기반 배포 지점을 사용하는 경우 이 배포 지점에 업로드하는 콘텐츠는 키 크기가 256비트인 AES(Advanced Encryption Standard)를 사용하여 암호화됩니다. 콘텐츠는 업데이트할 때마다 다시 암호화됩니다. 클라이언트에서 다운로드하는 콘텐츠는 HTTPS 연결로 암호화 및 보호됩니다.  
@@ -131,7 +131,7 @@ System Center Configuration Manager는 서명 및 암호화를 사용하여 Conf
  운영 체제가 배포되고 Configuration Manager가 설치된 후 클라이언트는 HTTPS 클라이언트 통신을 수행하려면 자체 PKI 클라이언트 인증 인증서가 있어야 합니다.  
 
 ### <a name="isv-proxy-solutions-and-pki-certificates"></a>ISV 프록시 솔루션과 PKI 인증서  
- ISV(Independent Software Vendor)는 Configuration Manager를 확장하는 응용 프로그램을 만들 수 있습니다. 예를 들어 ISV는 Macintosh 또는 UNIX 컴퓨터와 같은 비 Windows 클라이언트 플랫폼을 지원하는 확장 프로그램을 만들 수 있습니다. 그러나 사이트 시스템에서 HTTPS 클라이언트 연결을 사용해야 하는 경우 이러한 클라이언트는 사이트와 통신하는 데 PKI 인증서도 사용해야 합니다. Configuration Manager에는 ISV 프록시 클라이언트와 관리 지점이 통신할 수 있도록 ISV 프록시에 인증서를 할당하는 기능이 포함되어 있습니다. ISV 프록시 인증서가 필요한 확장을 사용하는 경우 해당 제품용 설명서를 참조하세요. ISV 프록시 인증서를 만드는 방법에 대한 자세한 내용은 Configuration Manager SDK(Software Developer Kit)를 참조하세요.  
+ ISV(Independent Software Vendor)는 Configuration Manager를 확장하는 애플리케이션을 만들 수 있습니다. 예를 들어 ISV는 Macintosh 또는 UNIX 컴퓨터와 같은 비 Windows 클라이언트 플랫폼을 지원하는 확장 프로그램을 만들 수 있습니다. 그러나 사이트 시스템에서 HTTPS 클라이언트 연결을 사용해야 하는 경우 이러한 클라이언트는 사이트와 통신하는 데 PKI 인증서도 사용해야 합니다. Configuration Manager에는 ISV 프록시 클라이언트와 관리 지점이 통신할 수 있도록 ISV 프록시에 인증서를 할당하는 기능이 포함되어 있습니다. ISV 프록시 인증서가 필요한 확장을 사용하는 경우 해당 제품용 설명서를 참조하세요. ISV 프록시 인증서를 만드는 방법에 대한 자세한 내용은 Configuration Manager SDK(Software Developer Kit)를 참조하세요.  
 
  ISV 인증서가 손상되면 **보안** 노드의 **관리** 작업 영역에 있는 **인증서** 노드에서 해당 인증서를 차단하세요.  
 
@@ -180,9 +180,9 @@ System Center Configuration Manager는 서명 및 암호화를 사용하여 Conf
 
  각 사이트 시스템 서버에 대한 이 인증서 외에, Configuration Manager에서는 대부분의 사이트 시스템 역할에 대해 자체 서명된 인증서를 생성합니다. 한 사이트 안에 사이트 시스템 역할의 인스턴스가 두 개 이상 있을 때 각 인스턴스는 동일한 인증서를 공유합니다. 예를 들어 한 사이트 안에 여러 관리 지점이나 여러 등록 지점이 있을 수 있습니다. 또한 이 자체 서명된 인증서에서는 SHA-256과 2048비트의 키 길이를 사용합니다. 이 인증서는 인증서를 신뢰해야 할 수 있는 사이트 시스템 서버의 신뢰할 수 있는 사용자 저장소에도 복사됩니다. 다음 사이트 시스템 역할에서 이 인증서를 생성합니다.  
 
--   응용 프로그램 카탈로그 웹 서비스 지점  
+-   애플리케이션 카탈로그 웹 서비스 지점  
 
--   응용 프로그램 카탈로그 웹 사이트 지점  
+-   애플리케이션 카탈로그 웹 사이트 지점  
 
 -   Asset Intelligence 동기화 지점  
 

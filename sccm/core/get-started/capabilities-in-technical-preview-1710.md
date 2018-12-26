@@ -82,7 +82,7 @@ PowerShell 스크립트 배포는 [Tech Preview 1706](/sccm/core/get-started/cap
 이 릴리스를 사용하면 소프트웨어 센터는 더 이상 250x250보다 큰 아이콘을 왜곡하지 않습니다. 소프트웨어 센터는 그러한 아이콘이 흐리게 표시되도록 만듭니다. 이제 최대 512x512 픽셀 크기로 아이콘을 설정할 수 있으며 아이콘은 왜곡 없이 표시됩니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
-소프트웨어 센터에서 앱의 아이콘을 추가합니다. 기능을 사용해 보려면 [응용 프로그램 만들기](/sccm/apps/deploy-use/create-applications)를 참조하세요.
+소프트웨어 센터에서 앱의 아이콘을 추가합니다. 기능을 사용해 보려면 [애플리케이션 만들기](/sccm/apps/deploy-use/create-applications)를 참조하세요.
 
 
 ## <a name="check-compliance-from-software-center-for-co-managed-devices"></a>소프트웨어 센터에서 공동 관리 디바이스에 대한 준수 확인
@@ -130,7 +130,7 @@ Exploit Guard 정책을 만든 후에는 Exploit Guard 정책 배포 마법사�
 이 릴리스부터는 다음 시나리오에 대해 [CNG(Cryptography API: Next Generation)](https://msdn.microsoft.com/library/windows/desktop/bb204775.aspx) 인증서를 사용할 수 있습니다.
 
 - 클라이언트 등록 및 HTTPS 관리 지점과의 커뮤니케이션.   
-- HTTPS 배포 지점을 사용하여 소프트웨어 배포 및 응용 프로그램 배포.   
+- HTTPS 배포 지점을 사용하여 소프트웨어 배포 및 애플리케이션 배포.   
 - 운영 체제 배포.  
 - 클라이언트 메시징(최신 업데이트 포함) 및 ISV 프록시.   
 - 클라우드 관리 게이트웨이 구성.  
@@ -158,8 +158,8 @@ CNG 인증서를 사용하려면 CA(인증 기관)가 대상 컴퓨터에 대한
 ## <a name="device-guard-policy-changes----1355092---"></a>디바이스 가드 정책 변경 <!-- 1355092 -->
 1710 기술 미리 보기 빌드에서는 Device Guard 정책에 있어 다음 세 가지가 변경되었습니다.
 
-### <a name="device-guard-policies-renamed-to-windows-defender-application-control-policies"></a>Device Guard 정책의 이름이 Windows Defender 응용 프로그램 제어 정책으로 변경
-Device Guard 정책의 이름이 Windows Defender 응용 프로그램 제어 정책으로 바뀌었습니다. 예를 들어 **Device Guard 정책 만들기 마법사**의 이름이 이제는 **Windows Defender 응용 프로그램 제어 정책 만들기 마법사**입니다.
+### <a name="device-guard-policies-renamed-to-windows-defender-application-control-policies"></a>Device Guard 정책의 이름이 Windows Defender 애플리케이션 제어 정책으로 변경
+Device Guard 정책의 이름이 Windows Defender 애플리케이션 제어 정책으로 바뀌었습니다. 예를 들어 **Device Guard 정책 만들기 마법사**의 이름이 이제는 **Windows Defender 애플리케이션 제어 정책 만들기 마법사**입니다.
 
 ### <a name="restart-is-not-required-to-apply-policies"></a>정책을 적용하려면 다시 시작해야 합니다.
 Windows 버전 1709용 Fall Creators Update로 시작하는 경우에는 Windows Defender 응용 프로그램 제어 정책을 적용하기 위해 새 Windows 버전을 사용하는 디바이스를 다시 시작할 필요가 없습니다.
@@ -210,7 +210,7 @@ Windows Defender Application Guard에 대한 기본 사항을 이해하려면 [�
 5. 이 릴리스에서는 마법사에 네트워크 정의 페이지가 추가되었습니다. 이 페이지에서 회사 ID를 지정하고 회사 네트워크 경계를 정의합니다.
 
     > [!NOTE]
-    > Windows 10 PC는 클라이언트에 하나의 네트워크 격리 목록만 저장합니다. 이 릴리스에서 두 가지 종류의 네트워크 격리 목록(Windows Information Protection의 목록, Windows Defender 응용 프로그램 가드의 목록)을 만들고 클라이언트에 배포할 수 있습니다. 두 정책 모두 배포하는 경우 두 네트워크 격리 목록이 일치해야 합니다. 동일 클라이언트와 일치하지 않는 목록을 배포할 경우 배포가 실패합니다.
+    > Windows 10 PC는 클라이언트에 하나의 네트워크 격리 목록만 저장합니다. 이 릴리스에서 두 가지 종류의 네트워크 격리 목록(Windows Information Protection의 목록, Windows Defender 애플리케이션 가드의 목록)을 만들고 클라이언트에 배포할 수 있습니다. 두 정책 모두 배포하는 경우 두 네트워크 격리 목록이 일치해야 합니다. 동일 클라이언트와 일치하지 않는 목록을 배포할 경우 배포가 실패합니다.
 
     네트워크 정의를 지정하는 자세한 방법은 [Windows Information Protection 설명서](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-sccm)에서 참조하세요.
 

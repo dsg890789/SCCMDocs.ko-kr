@@ -224,7 +224,7 @@ Configuration Manager의 콘텐츠 관리 옵션에 대한 자세한 내용은 [
 
 - 사용 가능한 네트워크 인프라에서 원격 위치 간의 데이터 흐름에 영향을 주는 방식을 이해합니다. 자세한 내용은 [네트워크 환경 준비](/sccm/core/plan-design/network/configure-firewalls-ports-domains)를 참조하세요. 또한 사용자 및 디바이스의 지리적 위치와 온-프레미스 네트워크 또는 인터넷을 통해 인프라에 액세스하는지 여부도 고려합니다.  
 
-- 콘텐츠 인프라에서 배포하는 콘텐츠를 관리하는 디바이스에 효율적으로 배포하도록 계획합니다. 이 콘텐츠는 응용 프로그램, 소프트웨어 업데이트 또는 운영 체제일 수 있습니다. 자세한 내용은 [콘텐츠 및 콘텐츠 인프라 관리](/sccm/core/servers/deploy/configure/manage-content-and-content-infrastructure)를 참조하세요.  
+- 콘텐츠 인프라에서 배포하는 콘텐츠를 관리하는 디바이스에 효율적으로 배포하도록 계획합니다. 이 콘텐츠는 애플리케이션, 소프트웨어 업데이트 또는 운영 체제일 수 있습니다. 자세한 내용은 [콘텐츠 및 콘텐츠 인프라 관리](/sccm/core/servers/deploy/configure/manage-content-and-content-infrastructure)를 참조하세요.  
 
 - 사용하려는 [Configuration Manager의 특징과 기능](/sccm/core/plan-design/changes/features-and-capabilities)을 결정합니다. 기능마다 서로 다른 사이트 시스템 역할 또는 Windows 인프라가 필요합니다. 다중 사이트 계층 구조에서 네트워크 및 서버 리소스를 가장 효율적으로 사용할 수 있도록 배포 위치를 결정합니다.  
 

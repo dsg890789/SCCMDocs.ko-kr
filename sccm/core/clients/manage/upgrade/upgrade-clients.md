@@ -88,7 +88,7 @@ ms.locfileid: "32334017"
 
 -   [System Center Configuration Manager에서 Mac 컴퓨터의 클라이언트를 업그레이드하는 방법](../../../../core/clients/manage/upgrade/upgrade-clients-on-mac-computers.md)  
 
-## <a name="upgrade-installation-application-management"></a>업그레이드 설치(응용 프로그램 관리)  
+## <a name="upgrade-installation-application-management"></a>업그레이드 설치(애플리케이션 관리)  
  **지원되는 클라이언트 플랫폼:** Windows  
 
 > [!NOTE]  

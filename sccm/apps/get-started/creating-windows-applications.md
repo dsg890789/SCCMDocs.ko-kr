@@ -1,7 +1,7 @@
 ---
-title: Windows 응용 프로그램 만들기
+title: Windows 애플리케이션 만들기
 titleSuffix: Configuration Manager
-description: Configuration Manager에서 Windows 응용 프로그램을 만들고 배포하는 방법에 대한 자세한 정보를 알아봅니다.
+description: Configuration Manager에서 Windows 애플리케이션을 만들고 배포하는 방법에 대한 자세한 정보를 알아봅니다.
 ms.date: 07/30/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-app
@@ -17,7 +17,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/31/2018
 ms.locfileid: "39383563"
 ---
-# <a name="create-windows-applications-in-configuration-manager"></a>Configuration Manager에서 Windows 응용 프로그램 만들기
+# <a name="create-windows-applications-in-configuration-manager"></a>Configuration Manager에서 Windows 애플리케이션 만들기
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -35,7 +35,7 @@ Configuration Manager는 Windows 8.1 및 Windows 10 디바이스용 Windows 앱 
 
 - 새 MSIX 앱을 만드는 방법은 [MSIX support introduced in Insider Build 17682](https://techcommunity.microsoft.com/t5/MSIX-Blog/MSIX-support-introduced-in-Insider-Build-17682/ba-p/202376)(Insider 빌드 17682에서 도입된 MSIX 지원)를 참조하세요.  
 
-Configuration Manager 콘솔에서 응용 프로그램을 만들 때 응용 프로그램 설치 파일 **형식**을 **Windows 앱 패키지(\*.appx, \*.appxbundle, \*.msix, \*.msixbundle)** 로 선택합니다. 자세한 내용은 [응용 프로그램 만들기](/sccm/apps/deploy-use/create-applications)를 참조하세요. 
+Configuration Manager 콘솔에서 애플리케이션을 만들 때 애플리케이션 설치 파일 **형식**을 **Windows 앱 패키지(\*.appx, \*.appxbundle, \*.msix, \*.msixbundle)** 로 선택합니다. 자세한 내용은 [애플리케이션 만들기](/sccm/apps/deploy-use/create-applications)를 참조하세요. 
 
 > [!Note]  
 > 새 Configuration Manager 기능을 활용하려면 먼저 클라이언트를 최신 버전으로 업데이트합니다. 사이트 및 콘솔을 업데이트할 때 Configuration Manager 콘솔에 새 기능이 표시되지만 클라이언트 버전도 최신 버전이 될 때까지 전체 시나리오가 작동하지 않습니다.<!--SCCMDocs issue 646-->  
@@ -43,7 +43,7 @@ Configuration Manager 콘솔에서 응용 프로그램을 만들 때 응용 프�
 
 
 ## <a name="bkmk_provision"></a> 장치의 모든 사용자에 대해 Windows 앱 패키지 프로비전
-<!--1358310--> 버전 1806부터 장치에서 모든 사용자에 대해 Windows 앱 패키지를 사용하여 응용 프로그램을 프로비전합니다. 이 시나리오의 일반적인 한 예는 Minecraft 교육용 버전처럼 비즈니스 및 교육용 Microsoft Store에서 앱을 학교에서 학생들이 사용하는 모든 디바이스에 프로비전하는 것입니다. 전에 Configuration Manager는 사용자 당 이러한 응용 프로그램 설치만 지원했습니다. 새 디바이스에 로그인한 후 학생은 앱에 액세스하기를 기다려야 합니다. 앱이 모든 사용자용 디바이스에 프로비전되는 경우 더 신속하게 생산적이 될 수 있습니다.
+<!--1358310--> 버전 1806부터 장치에서 모든 사용자에 대해 Windows 앱 패키지를 사용하여 응용 프로그램을 프로비전합니다. 이 시나리오의 일반적인 한 예는 Minecraft 교육용 버전처럼 비즈니스 및 교육용 Microsoft Store에서 앱을 학교에서 학생들이 사용하는 모든 디바이스에 프로비전하는 것입니다. 전에 Configuration Manager는 사용자 당 이러한 애플리케이션 설치만 지원했습니다. 새 디바이스에 로그인한 후 학생은 앱에 액세스하기를 기다려야 합니다. 앱이 모든 사용자용 디바이스에 프로비전되는 경우 더 신속하게 생산적이 될 수 있습니다.
 
 > [!Important]  
 > 디바이스에 다른 버전의 동일한 Windows 앱 패키지의 설치, 프로비저닝 및 업데이트 시 예기치 않은 결과가 발생할 수 있으니 주의하십시오. 이 동작은 앱을 프로비전하기 위해 Configuration Manager를 사용하는 경우에 발생할 수 있지만 사용자는 Microsoft 스토어에서 앱을 업데이트할 수 있습니다. 자세한 내용은 [비즈니스용 Microsoft Store에서 앱 관리](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business#next-steps)할 때 다음 단계 지침을 참조하세요.  
@@ -54,7 +54,7 @@ Configuration Manager는 Windows의 <!--SCCMDocs-pr issue 2762--> 버전에서 �
 - 설치 작업: Windows 10, 버전 1607 이상
 - 제거 작업: Windows 10, 버전 1703 이상
 
-이 기능에 대한 Windows 앱 배포 유형을 구성하려면 **디바이스의 모든 사용자에 대해 이 응용 프로그램 프로비전** 옵션을 사용하도록 설정합니다. 자세한 내용은 [응용 프로그램 만들기](/sccm/apps/deploy-use/create-applications)를 참조하세요.
+이 기능에 대한 Windows 앱 배포 유형을 구성하려면 **디바이스의 모든 사용자에 대해 이 응용 프로그램 프로비전** 옵션을 사용하도록 설정합니다. 자세한 내용은 [애플리케이션 만들기](/sccm/apps/deploy-use/create-applications)를 참조하세요.
 
 
 > [!Note]  

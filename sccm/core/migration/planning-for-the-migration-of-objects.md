@@ -75,7 +75,7 @@ Configuration Manager 2007 원본 계층 구조에서 마이그레이션할 때 
 System Center 2012 Configuration Manager 또는 System Center Configuration Manager 원본 계층에서 개체를 마이그레이션할 때 소프트웨어 업데이트 개체는 수정되지 않습니다.  
 
 ##  <a name="Plan_Migrate_content"></a> 콘텐츠 마이그레이션 계획  
- 지원되는 원본 계층에서 대상 계층으로 콘텐츠를 마이그레이션할 수 있습니다. Configuration Manager 2007 원본 계층 구조의 경우 이러한 콘텐츠로는 소프트웨어 배포 패키지 및 프로그램과 가상 응용 프로그램(예: Microsoft Application Virtualization(App-V))이 있습니다. System Center 2012 Configuration Manager 및 System Center Configuration Manager 원본 계층 구조의 경우 이러한 콘텐츠에 응용 프로그램 및 App-V 가상 응용 프로그램이 포함됩니다. 계층 구조 간에 콘텐츠를 마이그레이션하는 경우 압축된 원본 파일이 대상 계층 구조로 마이그레이션됩니다.  
+ 지원되는 원본 계층에서 대상 계층으로 콘텐츠를 마이그레이션할 수 있습니다. Configuration Manager 2007 원본 계층 구조의 경우 이러한 콘텐츠로는 소프트웨어 배포 패키지 및 프로그램과 가상 애플리케이션(예: Microsoft Application Virtualization(App-V))이 있습니다. System Center 2012 Configuration Manager 및 System Center Configuration Manager 원본 계층 구조의 경우 이러한 콘텐츠에 애플리케이션 및 App-V 가상 애플리케이션이 포함됩니다. 계층 구조 간에 콘텐츠를 마이그레이션하는 경우 압축된 원본 파일이 대상 계층 구조로 마이그레이션됩니다.  
 
 ### <a name="packages-and-programs"></a>패키지 및 프로그램  
  패키지 및 프로그램은 마이그레이션할 때 마이그레이션으로 인해 수정되지 않습니다. 그러나 마이그레이션하기 전에 원본 파일 위치에 UNC(범용 명명 규칙) 경로를 사용하도록 각 패키지를 설정해야 합니다. 패키지 및 프로그램을 마이그레이션하기 위한 구성 과정에서 이 콘텐츠를 관리할 대상 계층의 사이트를 할당해야 합니다. 할당된 사이트에서는 콘텐츠가 마이그레이션되지 않지만 마이그레이션 후에 할당된 사이트에서 UNC 매핑을 사용하여 원래의 원본 파일 위치에 액세스합니다.  
@@ -88,10 +88,10 @@ System Center 2012 Configuration Manager 또는 System Center Configuration Mana
 >  마이그레이션하는 각 패키지에 대해 대상 계층에서 패키지를 업데이트합니다. 이 동작은 패키지를 대상 계층의 배포 지점에 배포할 때 발생할 수 있는 문제를 방지할 수 있습니다. 그러나 대상 계층 구조의 배포 지점에서 패키지를 업데이트하면 해당 계층 구조의 클라이언트가 더 이상 공유 배포 지점에서 해당 패키지를 가져올 수 없습니다. 대상 계층 구조에서 패키지를 업데이트하려면 Configuration Manager 콘솔에서 소프트웨어 라이브러리로 이동하여 패키지를 마우스 오른쪽 단추로 클릭하고 **배포 지점 업데이트**를 선택합니다. 마이그레이션하는 각 패키지에 대해 이 동작을 수행합니다.  
 
 > [!TIP]  
->  Microsoft System Center Configuration Manager Package Conversion Manager를 사용하면 패키지와 프로그램을 System Center Configuration Manager 응용 프로그램으로 변환할 수 있습니다. Package Conversion Manager는 [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/p/?LinkId=212950) 사이트에서 다운로드할 수 있습니다. 자세한 내용은 [Configuration Manager Package Conversion Manager](http://go.microsoft.com/fwlink/p/?LinkId=247245)를 참조하세요.  
+>  Microsoft System Center Configuration Manager Package Conversion Manager를 사용하면 패키지와 프로그램을 System Center Configuration Manager 애플리케이션으로 변환할 수 있습니다. Package Conversion Manager는 [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/p/?LinkId=212950) 사이트에서 다운로드할 수 있습니다. 자세한 내용은 [Configuration Manager Package Conversion Manager](http://go.microsoft.com/fwlink/p/?LinkId=247245)를 참조하세요.  
 
-### <a name="virtual-applications"></a>가상 응용 프로그램  
-지원되는 Configuration Manager 2007 사이트에서 App-V 패키지를 마이그레이션하면 마이그레이션 프로세스에서 이 패키지를 대상 계층의 응용 프로그램으로 변환합니다. 또한, App-V 패키지의 기존 보급 알림에 따라 대상 계층에서 다음 배포 유형이 만들어집니다.  
+### <a name="virtual-applications"></a>가상 애플리케이션  
+지원되는 Configuration Manager 2007 사이트에서 App-V 패키지를 마이그레이션하면 마이그레이션 프로세스에서 이 패키지를 대상 계층의 애플리케이션으로 변환합니다. 또한, App-V 패키지의 기존 보급 알림에 따라 대상 계층에서 다음 배포 유형이 만들어집니다.  
 
 -   보급 알림이 없는 경우 기본 배포 유형 설정을 사용하는 한 가지 배포 유형이 만들어집니다.  
 
@@ -100,12 +100,12 @@ System Center 2012 Configuration Manager 또는 System Center Configuration Mana
 -   보급 알림이 여러 개 있는 경우 해당 보급 알림의 설정을 사용하여 각 Configuration Manager 2007 보급 알림에 대한 배포 유형이 만들어집니다.  
 
 > [!IMPORTANT]  
->  이전에 마이그레이션된 Configuration Manager 2007 App-V 패키지를 다시 마이그레이션하는 경우 가상 응용 프로그램 패키지가 덮어쓰기 마이그레이션 동작을 지원하지 않기 때문에 마이그레이션되지 않습니다. 이 시나리오에서는 대상 계층에서 마이그레이션된 가상 응용 프로그램 패키지를 삭제한 다음 새 마이그레이션 작업을 만들어 가상 응용 프로그램을 마이그레이션해야 합니다.  
+>  이전에 마이그레이션된 Configuration Manager 2007 App-V 패키지를 다시 마이그레이션하는 경우 가상 애플리케이션 패키지가 덮어쓰기 마이그레이션 동작을 지원하지 않기 때문에 마이그레이션되지 않습니다. 이 시나리오에서는 대상 계층에서 마이그레이션된 가상 애플리케이션 패키지를 삭제한 다음 새 마이그레이션 작업을 만들어 가상 애플리케이션을 마이그레이션해야 합니다.  
 
 > [!NOTE]  
->  App-V 패키지를 마이그레이션한 후에는 콘텐츠 업데이트 마법사를 사용하여 App-V 배포 유형의 원본 경로를 변경할 수 있습니다. 배포 유형의 콘텐츠를 업데이트하는 방법에 대한 자세한 내용은 [System Center Configuration Manager 응용 프로그램에 대한 관리 작업](../../apps/deploy-use/management-tasks-applications.md)에서 배포 유형을 관리하는 방법을 참조하세요.  
+>  App-V 패키지를 마이그레이션한 후에는 콘텐츠 업데이트 마법사를 사용하여 App-V 배포 유형의 원본 경로를 변경할 수 있습니다. 배포 유형의 콘텐츠를 업데이트하는 방법에 대한 자세한 내용은 [System Center Configuration Manager 애플리케이션에 대한 관리 작업](../../apps/deploy-use/management-tasks-applications.md)에서 배포 유형을 관리하는 방법을 참조하세요.  
 
-System Center 2012 Configuration Manager 또는 System Center Configuration Manager 원본 계층 구조에서 마이그레이션할 때 App-V 배포 유형과 응용 프로그램뿐만 아니라 App-V 가상 환경의 개체도 마이그레이션할 수 있습니다. App-V 환경에 대한 자세한 내용은 [System Center Configuration Manager에서 App-V 가상 응용 프로그램 배포](../../apps/get-started/deploying-app-v-virtual-applications.md)를 참조하세요.  
+System Center 2012 Configuration Manager 또는 System Center Configuration Manager 원본 계층 구조에서 마이그레이션할 때 App-V 배포 유형과 애플리케이션뿐만 아니라 App-V 가상 환경의 개체도 마이그레이션할 수 있습니다. App-V 환경에 대한 자세한 내용은 [System Center Configuration Manager에서 App-V 가상 애플리케이션 배포](../../apps/get-started/deploying-app-v-virtual-applications.md)를 참조하세요.  
 
 ### <a name="advertisements"></a>보급 알림  
 컬렉션 기반 마이그레이션을 사용하면 지원되는 Configuration Manager 2007 원본 사이트에서 대상 계층으로 보급 알림을 마이그레이션할 수 있습니다. 클라이언트를 업그레이드하는 경우 클라이언트가 마이그레이션된 보급 알림을 다시 실행하지 않도록 이전에 실행한 보급 알림 기록을 유지합니다.  
@@ -113,8 +113,8 @@ System Center 2012 Configuration Manager 또는 System Center Configuration Mana
 > [!NOTE]  
 >  가상 패키지의 보급 알림은 마이그레이션할 수 없습니다. 이것은 보급 알림 마이그레이션에서 제외됩니다.  
 
-### <a name="applications"></a>응용 프로그램  
- 지원되는 System Center 2012 Configuration Manager 또는 System Center Configuration Manager 원본 계층에서 대상 계층으로 응용 프로그램을 마이그레이션할 수 있습니다. 원본 계층에서 대상 계층으로 클라이언트를 재할당하면 클라이언트가 마이그레이션된 응용 프로그램을 다시 실행하지 않도록 이전에 설치한 응용 프로그램 기록을 유지합니다.  
+### <a name="applications"></a>애플리케이션  
+ 지원되는 System Center 2012 Configuration Manager 또는 System Center Configuration Manager 원본 계층에서 대상 계층으로 애플리케이션을 마이그레이션할 수 있습니다. 원본 계층에서 대상 계층으로 클라이언트를 재할당하면 클라이언트가 마이그레이션된 애플리케이션을 다시 실행하지 않도록 이전에 설치한 애플리케이션 기록을 유지합니다.  
 
 ##  <a name="BKMK_MigrateCollections"></a> 컬렉션 마이그레이션 계획  
  지원되는 System Center 2012 Configuration Manager 또는 System Center Configuration Manager 원본 계층에서 컬렉션 조건을 마이그레이션할 수 있습니다. 이 경우 개체 기반 마이그레이션 작업을 사용할 수 있습니다. 컬렉션을 마이그레이션할 때 컬렉션의 규칙은 마이그레이션하지만 컬렉션의 구성원에 대한 정보나 컬렉션의 구성원과 관련된 정보 또는 개체는 마이그레이션하지 않습니다.  
@@ -167,7 +167,7 @@ Configuration Manager는 보고서 마이그레이션을 지원하지 않습니�
 
  기본적으로 마이그레이션할 때 마이그레이션 프로세스에 개체 및 컬렉션의 검색 폴더 및 관리 폴더 구조가 유지됩니다. 하지만 마이그레이션 작업 만들기 마법사의 **설정** 페이지에서 이 옵션의 확인란을 선택 취소하여 개체의 조직 구조를 마이그레이션하지 않도록 마이그레이션 작업을 설정할 수 있습니다. 컬렉션의 조직 구조는 항상 유지됩니다.  
 
- 한 가지 예외로는 가상 응용 프로그램을 포함하는 검색 폴더가 있습니다. App-V 패키지가 마이그레이션되면 App-V 패키지는 System Center Configuration Manager에서 응용 프로그램으로 변환됩니다. 검색 폴더의 마이그레이션 이후 남은 패키지만 검색되고, App-V 패키지가 마이그레이션된 경우 응용 프로그램으로의 이러한 변환으로 인해 검색 폴더는 App-V 패키지를 찾지 못합니다.  
+ 한 가지 예외로는 가상 애플리케이션을 포함하는 검색 폴더가 있습니다. App-V 패키지가 마이그레이션되면 App-V 패키지는 System Center Configuration Manager에서 애플리케이션으로 변환됩니다. 검색 폴더의 마이그레이션 이후 남은 패키지만 검색되고, App-V 패키지가 마이그레이션된 경우 애플리케이션으로의 이러한 변환으로 인해 검색 폴더는 App-V 패키지를 찾지 못합니다.  
 
  System Center 2012 Configuration Manager 또는 System Center Configuration Manager 원본 계층에서 저장된 검색을 마이그레이션하는 경우 검색 조건이 마이그레이션되며 검색 결과에 대한 정보는 마이그레이션되지 않습니다. 저장된 검색의 마이그레이션은 Configuration Manager 2007 원본 사이트에서 적용되지 않습니다.  
 

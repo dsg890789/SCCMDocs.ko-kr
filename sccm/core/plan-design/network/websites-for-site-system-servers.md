@@ -21,10 +21,10 @@ ms.locfileid: "32344350"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-다수의 Configuration Manager 사이트 시스템 역할은 Microsoft IIS(인터넷 정보 서비스) 사용을 필요로 하며, 기본 IIS 웹 사이트를 사용하여 사이트 시스템 서비스를 호스트합니다. 동일한 서버에서 다른 웹 응용 프로그램을 실행해야 하는데 설정이 Configuration Manager와 호환되지 않는 경우 Configuration Manager에 대해 사용자 지정 웹 사이트를 사용할 수 있습니다.  
+다수의 Configuration Manager 사이트 시스템 역할은 Microsoft IIS(인터넷 정보 서비스) 사용을 필요로 하며, 기본 IIS 웹 사이트를 사용하여 사이트 시스템 서비스를 호스트합니다. 동일한 서버에서 다른 웹 애플리케이션을 실행해야 하는데 설정이 Configuration Manager와 호환되지 않는 경우 Configuration Manager에 대해 사용자 지정 웹 사이트를 사용할 수 있습니다.  
 
 > [!TIP]  
->  보안상 IIS가 필요한 Configuration Manager 사이트 시스템에는 전용 서버를 사용하는 것이 좋습니다. Configuration Manager 사이트 시스템에서 다른 응용 프로그램을 실행하면 해당 컴퓨터의 공격에 대한 취약성이 높아집니다.  
+>  보안상 IIS가 필요한 Configuration Manager 사이트 시스템에는 전용 서버를 사용하는 것이 좋습니다. Configuration Manager 사이트 시스템에서 다른 애플리케이션을 실행하면 해당 컴퓨터의 공격에 대한 취약성이 높아집니다.  
 
 
 
@@ -52,9 +52,9 @@ ms.locfileid: "32344350"
 **IIS 요구 사항 정보:**
 **다음 사이트 시스템 역할의 경우 사이트 시스템 서비스를 호스트할 웹 사이트와 IIS가 필요합니다.**  
 
--   응용 프로그램 카탈로그 웹 서비스 지점  
+-   애플리케이션 카탈로그 웹 서비스 지점  
 
--   응용 프로그램 카탈로그 웹 사이트 지점  
+-   애플리케이션 카탈로그 웹 사이트 지점  
 
 -   배포 지점  
 
@@ -99,9 +99,9 @@ ms.locfileid: "32344350"
 
 다음 역할은 **수동으로 다시 설치**해야 합니다.  
 
--   응용 프로그램 카탈로그 웹 서비스 지점  
+-   애플리케이션 카탈로그 웹 서비스 지점  
 
--   응용 프로그램 카탈로그 웹 사이트 지점  
+-   애플리케이션 카탈로그 웹 사이트 지점  
 
 -   등록 지점  
 

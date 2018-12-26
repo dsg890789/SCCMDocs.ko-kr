@@ -96,17 +96,17 @@ System Center 2012 Configuration Manager의 대역 외 관리는 이 변경 내�
 
 -   이제 사용자 환경에서 Windows as a Service 상태를 볼 수 있습니다. 또한 서비스 계획을 만들어 배포 링을 구성하고 새 빌드가 릴리스될 때 Windows 10 현재 분기 컴퓨터를 최신 상태로 유지할 수 있습니다. Windows 10 클라이언트에서 CB(현재 분기) 또는 CBB(비즈니스용 현재 분기)의 빌드에 대한 지원이 끝나갈 때 경고를 표시할 수도 있습니다. 자세한 내용은 [System Center Configuration Manager를 사용하여 Windows as a Service 관리](../../../osd/deploy-use/manage-windows-as-a-service.md)를 참조하세요.  
 
-## <a name="application-management"></a>응용 프로그램 관리  
+## <a name="application-management"></a>애플리케이션 관리  
 
-응용 프로그램 관리에 대한 다음 변경 내용에 유의하세요.
+애플리케이션 관리에 대한 다음 변경 내용에 유의하세요.
 
 -   System Center Configuration Manager 이상을 실행 중인 Windows 10 디바이스에 대한 UWP(유니버설 Windows 플랫폼) 앱을 배포할 수 있습니다. [System Center Configuration Manager에서 Windows 응용 프로그램 만들기](../../../apps/get-started/creating-windows-applications.md)를 참조하세요.  
 
--   소프트웨어 센터의 외관이 새롭게 바뀌었습니다. 이전에 응용 프로그램 카탈로그에서만 표시된 앱(사용자가 사용할 수 있는 앱)이 이제 응용 프로그램 탭 아래 소프트웨어 센터에 표시됩니다. 그래서 사용자가 이러한 배포를 더 쉽게 검색할 수 있고 응용 프로그램 카탈로그를 참조하지 않아도 됩니다. 또한, 더는 브라우저에서 Silverlight를 사용하도록 설정할 필요가 없습니다. [System Center Configuration Manager에서 응용 프로그램 관리 계획 및 구성](../../../apps/plan-design/plan-for-and-configure-application-management.md)을 참조하세요.  
+-   소프트웨어 센터의 외관이 새롭게 바뀌었습니다. 이전에 애플리케이션 카탈로그에서만 표시된 앱(사용자가 사용할 수 있는 앱)이 이제 애플리케이션 탭 아래 소프트웨어 센터에 표시됩니다. 그래서 사용자가 이러한 배포를 더 쉽게 검색할 수 있고 애플리케이션 카탈로그를 참조하지 않아도 됩니다. 또한, 더는 브라우저에서 Silverlight를 사용하도록 설정할 필요가 없습니다. [System Center Configuration Manager에서 응용 프로그램 관리 계획 및 구성](../../../apps/plan-design/plan-for-and-configure-application-management.md)을 참조하세요.  
 
--   MDM 응용 프로그램 유형을 통해 Windows 설치 관리자를 사용하면 Windows Installer 기반 앱을 만들어 Windows 10을 실행하는 등록된 PC에 배포할 수 있습니다. [System Center Configuration Manager에서 Windows 응용 프로그램 만들기](../../../apps/get-started/creating-windows-applications.md)를 참조하세요.  
+-   MDM 애플리케이션 유형을 통해 Windows 설치 관리자를 사용하면 Windows Installer 기반 앱을 만들어 Windows 10을 실행하는 등록된 PC에 배포할 수 있습니다. [System Center Configuration Manager에서 Windows 응용 프로그램 만들기](../../../apps/get-started/creating-windows-applications.md)를 참조하세요.  
 
--   사내 iOS 앱용 응용 프로그램을 만들 경우 앱에 대한 설치 관리자(.ipa) 파일을 지정하기만 하면 됩니다. 더 이상 해당 속성 목록(.plist) 파일을 지정할 필요가 없습니다. [System Center Configuration Manager에서 iOS 응용 프로그램 만들기](../../../apps/get-started/creating-ios-applications.md)를 참조하세요.  
+-   사내 iOS 앱용 애플리케이션을 만들 경우 앱에 대한 설치 관리자(.ipa) 파일을 지정하기만 하면 됩니다. 더 이상 해당 속성 목록(.plist) 파일을 지정할 필요가 없습니다. [System Center Configuration Manager에서 iOS 응용 프로그램 만들기](../../../apps/get-started/creating-ios-applications.md)를 참조하세요.  
 
 -   Configuration Manager 2012에서, Windows 스토어에서 앱에 대한 링크를 지정하기 위해 링크를 직접 지정하거나 앱이 설치된 원격 컴퓨터를 찾을 수 있습니다. System Center Configuration Manager에서, 링크를 직접 입력할 수 있지만 참조 컴퓨터를 검색하는 대신 직접 링크를 입력하고, Configuration Manager 콘솔에서 직접 앱의 스토어를 검색할 수 있습니다.  
 

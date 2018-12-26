@@ -44,26 +44,26 @@ ms.locfileid: "32337159"
 
 대량 구매한 iOS 앱에 대한 자세한 내용은 [대량 구매한 iOS 앱 관리](/sccm/mdm/deploy-use/manage-volume-purchased-ios-apps)를 참조하세요.
 
-## <a name="direct-links-to-applications-in-software-center"></a>소프트웨어 센터의 응용 프로그램에 대한 직접 링크
+## <a name="direct-links-to-applications-in-software-center"></a>소프트웨어 센터의 애플리케이션에 대한 직접 링크
 
-이제 최종 사용자에게 소프트웨어 센터의 응용 프로그램에 대한 직접 링크를 제공할 수 있습니다. 즉, 더 이상 응용 프로그램을 설치하기 위해 소프트웨어 센터를 열고 응용 프로그램을 검색할 필요가 없습니다. 단, 이러한 직접 링크는 Configuration Manager 응용 프로그램에 사용할 수 있으며 패키지 및 프로그램 또는 작업 순서에는 사용할 수 없습니다.
+이제 최종 사용자에게 소프트웨어 센터의 애플리케이션에 대한 직접 링크를 제공할 수 있습니다. 즉, 더 이상 애플리케이션을 설치하기 위해 소프트웨어 센터를 열고 애플리케이션을 검색할 필요가 없습니다. 단, 이러한 직접 링크는 Configuration Manager 애플리케이션에 사용할 수 있으며 패키지 및 프로그램 또는 작업 순서에는 사용할 수 없습니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기                 
 
-다음 URL 형식을 사용하여 특정 응용 프로그램에 대한 소프트웨어 센터를 엽니다.
+다음 URL 형식을 사용하여 특정 애플리케이션에 대한 소프트웨어 센터를 엽니다.
 
 **Softwarecenter:SoftwareId=*응용 프로그램 식별자***
 
-### <a name="how-to-get-the-application-identifier-of-an-application"></a>응용 프로그램의 응용 프로그램 식별자를 가져오는 방법
+### <a name="how-to-get-the-application-identifier-of-an-application"></a>애플리케이션의 애플리케이션 식별자를 가져오는 방법
 
 1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리**를 클릭합니다.
-2.  소프트웨어 라이브러리 작업 영역에서 **응용 프로그램 관리**를 확장한 다음 **응용 프로그램**을 클릭합니다.
-3.  **응용 프로그램** 보기에서 열 머리글 중 하나를 마우스 오른쪽 단추로 클릭한 다음 목록에서 **CI 고유 ID**를 선택합니다. 이제 목록에 각 응용 프로그램의 고유 ID가 표시됩니다.
-4.  링크를 제공할 응용 프로그램의 **CI 고유 ID**를 확인합니다(예: **ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f/2**).
-5.  그런 다음 응용 프로그램 GUID 뒤에 있는 모든 텍스트를 제거합니다(이 경우 **/2**). 그러면 응용 프로그램 식별자가 남습니다.
+2.  소프트웨어 라이브러리 작업 영역에서 **애플리케이션 관리**를 확장한 다음 **애플리케이션**을 클릭합니다.
+3.  **응용 프로그램** 보기에서 열 머리글 중 하나를 마우스 오른쪽 단추로 클릭한 다음 목록에서 **CI 고유 ID**를 선택합니다. 이제 목록에 각 애플리케이션의 고유 ID가 표시됩니다.
+4.  링크를 제공할 애플리케이션의 **CI 고유 ID**를 확인합니다(예: **ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f/2**).
+5.  그런 다음 애플리케이션 GUID 뒤에 있는 모든 텍스트를 제거합니다(이 경우 **/2**). 그러면 애플리케이션 식별자가 남습니다.
 6.  마지막으로 링크 구성을 마치려면 링크 앞에 **Softwarecenter:SoftwareID=** 을 붙입니다. 위 예제를 사용할 경우 최종 링크는 **Softwarecenter:SoftwareId= ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f**가 됩니다.
 
-이 링크를 사용하여 최종 사용자는 지정된 응용 프로그램에 대한 소프트웨어 센터를 직접 열 수 있습니다.
+이 링크를 사용하여 최종 사용자는 지정된 애플리케이션에 대한 소프트웨어 센터를 직접 열 수 있습니다.
 
 
 ## <a name="pfx-certificates-for-configuration-manager-windows-client-computers"></a>Configuration Manager Windows 클라이언트 컴퓨터에 대한 PFX 인증서
@@ -93,7 +93,7 @@ Configuration Manager와 비즈니스용 Windows 스토어 간의 연결을 설�
 
 -   SMS 공급자 인스턴스를 호스트하는 각 컴퓨터의 **Computer$** 계정이 지정한 폴더를 사용할 수 있어야 합니다.
 
-Azure Active Directory에서 Configuration Manager를 웹 응용 프로그램 또는 Web API 관리 도구로 등록합니다. 그러면 나중에 필요한 클라이언트 ID가 만들어집니다.
+Azure Active Directory에서 Configuration Manager를 웹 애플리케이션 또는 Web API 관리 도구로 등록합니다. 그러면 나중에 필요한 클라이언트 ID가 만들어집니다.
 
 ### <a name="use-the-wizard-to-configure-the-wsfb-cloud-service"></a>마법사를 사용하여 WSfB 클라우드 서비스 구성
 
@@ -113,7 +113,7 @@ Azure Active Directory에서 Configuration Manager를 웹 응용 프로그램 �
 6. **정보** 페이지를 검토하고 지시에 따라 추가 단계 및 구성을 완료합니다. 이러한 구성은 Configuration Manager를 통해 서비스를 사용하는 데 필요합니다.
 예를 들어 WSfB를 구성하려면:
 
-  1. Azure에서 Configuration Manager를 웹 응용 프로그램 또는 Web API로 등록하고 클라이언트 ID를 기록합니다. 관리 도구(Configuration Manager)에서 사용하도록 할 클라이언트 키도 지정합니다.
+  1. Azure에서 Configuration Manager를 웹 애플리케이션 또는 Web API로 등록하고 클라이언트 ID를 기록합니다. 관리 도구(Configuration Manager)에서 사용하도록 할 클라이언트 키도 지정합니다.
 
   2.    WSfB 콘솔에서 Configuration Manager를 저장소 관리 도구로 구성하고 오프라인 사용이 허가된 앱에 대한 지원을 사용하도록 설정한 다음 하나 이상의 앱을 구매해야 합니다.   </br>
 

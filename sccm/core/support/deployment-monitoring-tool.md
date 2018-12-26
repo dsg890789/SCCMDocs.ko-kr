@@ -21,7 +21,7 @@ ms.locfileid: "39385894"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-배포 모니터링 도구는 [Configuration Manager 도구](/sccm/core/support/tools)에 속합니다. 응용 프로그램, 소프트웨어 업데이트 및 Configuration Manager 클라이언트에서 구성 기준 배포의 문제 해결을 지원하기 위해 설계된 그래픽 사용자 인터페이스입니다. 도구는 클라이언트에서 상태를 변경하지 않으므로 읽기 전용입니다. 이를 안전하게 사용하여 일반적인 배포 시나리오를 진단할 수 있습니다.
+배포 모니터링 도구는 [Configuration Manager 도구](/sccm/core/support/tools)에 속합니다. 애플리케이션, 소프트웨어 업데이트 및 Configuration Manager 클라이언트에서 구성 기준 배포의 문제 해결을 지원하기 위해 설계된 그래픽 사용자 인터페이스입니다. 도구는 클라이언트에서 상태를 변경하지 않으므로 읽기 전용입니다. 이를 안전하게 사용하여 일반적인 배포 시나리오를 진단할 수 있습니다.
 
 
 ## <a name="features"></a>기능

@@ -67,7 +67,7 @@ ms.locfileid: "46014842"
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h3>응용 프로그램 관리</h3>
+                                                <h3>애플리케이션 관리</h3>
                                                 <p><a href="/sccm/apps/understand/introduction-to-application-management">응용 프로그램 관리 소개</a></p>
                                                 <p><a href="/sccm/apps/get-started/create-and-deploy-an-application">응용 프로그램 만들기</a></p>
                                                 <p><a href="/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business">비즈니스용 Microsoft Store에서 앱 관리</a></p>
@@ -329,8 +329,8 @@ ms.locfileid: "46014842"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>응용 프로그램 관리 소개</h3>
-                                                <p>응용 프로그램을 관리하는 방법에 대한 기본 사항을 알아봅니다.</p>
+                                                <h3>애플리케이션 관리 소개</h3>
+                                                <p>애플리케이션을 관리하는 방법에 대한 기본 사항을 알아봅니다.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -348,8 +348,8 @@ ms.locfileid: "46014842"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>응용 프로그램 만들기</h3>
-                                                <p>응용 프로그램을 만들기 위해 알아야 할 모든 사항을 알아봅니다.</p>
+                                                <h3>애플리케이션 만들기</h3>
+                                                <p>애플리케이션을 만들기 위해 알아야 할 모든 사항을 알아봅니다.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -883,7 +883,7 @@ ms.locfileid: "46014842"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Package Conversion Manager</h3>
-                                                    <p>레거시 패키지를 응용 프로그램으로 변환합니다.</p>
+                                                    <p>레거시 패키지를 애플리케이션으로 변환합니다.</p>
                                                 </div>
                                             </div>
                                         </div>

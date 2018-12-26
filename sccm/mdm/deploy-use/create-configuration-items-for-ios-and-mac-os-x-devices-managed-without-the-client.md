@@ -53,7 +53,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
   
     -   **위험** - 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다.  
   
-    -   **위험(이벤트 포함)** - 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 또한 이 심각도 수준은 응용 프로그램 이벤트 로그에 Windows 이벤트로 기록됩니다.  
+    -   **위험(이벤트 포함)** - 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 이 심각도 수준은 애플리케이션 이벤트 로그에 이벤트를 Windows 이벤트로 기록 됩니다.  
   
 11. 마법사의 **플랫폼 적용 여부 가능성** 페이지에서 이전에 선택한 지원되는 플랫폼과 호환되지 않는 설정을 검토합니다. 뒤로 돌아가서 이러한 설정을 제거하거나 계속할 수 있습니다.  
   
@@ -214,8 +214,8 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
   
 |설정 이름|세부 정보|  
 |------------------|-------------|  
-|**관리되지 않는 다른 앱에서 관리되는 앱의 문서 열기**|Configuration Manager 응용 프로그램 관리 정책을 통해 관리되는 앱에서 사용하기 위해 문서를 엽니다.|  
-|**관리되는 다른 앱에서 관리되지 않는 앱의 문서 열기**|Configuration Manager 응용 프로그램 관리 정책을 통해 관리되는 앱에서 사용하기 위해 문서를 엽니다.| 
+|**관리되지 않는 다른 앱에서 관리되는 앱의 문서 열기**|Configuration Manager 애플리케이션 관리 정책을 통해 관리되는 앱에서 사용하기 위해 문서를 엽니다.|  
+|**관리되는 다른 앱에서 관리되지 않는 앱의 문서 열기**|Configuration Manager 애플리케이션 관리 정책을 통해 관리되는 앱에서 사용하기 위해 문서를 엽니다.| 
 |**AirDrop을 관리되지 않는 대상으로 처리**(감독 모드인 경우에만)|관리되는 앱이 더 이상 Airdrop을 통해 데이터를 보낼 수 없습니다.|
 |**AirDrop**(감독 모드인 경우에만)|주변 디바이스와 콘텐츠를 교환하는 AirDrop 기능을 사용할 수 있습니다.|
   
@@ -244,7 +244,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
   
     -   **제거** - 목록에서 선택한 앱을 삭제합니다.  
   
-    -   **가져오기** - 지정한 앱 목록을 쉼표로 구분된 값 파일로 가져옵니다. 파일의 형식, 응용 프로그램 이름, 게시자, 앱 URL을 사용합니다.  
+    -   **가져오기** - 지정한 앱 목록을 쉼표로 구분된 값 파일로 가져옵니다. 파일의 형식, 애플리케이션 이름, 게시자, 앱 URL을 사용합니다.  
   
 2.  작업을 완료한 경우 **다음**을 클릭합니다.  
   
@@ -330,7 +330,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
   
         -   **위험** 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다.  
   
-        -   **위험(이벤트 포함)** - 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 또한 이 심각도 수준은 응용 프로그램 이벤트 로그에 Windows 이벤트로 기록됩니다.  
+        -   **위험(이벤트 포함)** - 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 이 심각도 수준은 애플리케이션 이벤트 로그에 이벤트를 Windows 이벤트로 기록 됩니다.  
   
 #### <a name="how-to-create-a-configuration-profile-file"></a>구성 프로필 파일을 만드는 방법  
  두 가지 방법으로 사용자 지정 정책에서 사용되는 구성 프로필 파일을 만들 수 있습니다.  
@@ -404,7 +404,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
   
         -   **위험** 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다.  
   
-        -   **위험(이벤트 포함)** - 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 또한 이 심각도 수준은 응용 프로그램 이벤트 로그에 Windows 이벤트로 기록됩니다.  
+        -   **위험(이벤트 포함)** - 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 이 심각도 수준은 애플리케이션 이벤트 로그에 이벤트를 Windows 이벤트로 기록 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [System Center Configuration Manager 클라이언트 없이 관리되는 장치에 대한 구성 항목](../../compliance/deploy-use/configuration-items-for-devices-managed-without-the-client.md)

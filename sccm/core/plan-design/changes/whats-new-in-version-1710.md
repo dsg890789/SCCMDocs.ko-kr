@@ -75,7 +75,7 @@ Version 1710 drops support for the following products:
 <!-- ## Compliance settings -->
 
 
-## <a name="application-management"></a>응용 프로그램 관리
+## <a name="application-management"></a>애플리케이션 관리
 ### <a name="improvements-for-run-scripts------1236459---"></a>향상된 스크립트 실행 기능 <!-- 1236459 -->
 이 릴리스에서는 몇 가지 **스크립트 실행** 기능이 향상되어 관리되는 디바이스에서 실행되는 PowerShell 스크립트를 배포할 수 있습니다. 이 기능은 1706 버전에서 처음 소개되었습니다.
 
@@ -86,7 +86,7 @@ Version 1710 drops support for the following products:
 
 스크립트 실행에 대한 자세한 내용은 [스크립트 만들기 및 실행](../../../apps/deploy-use/create-deploy-scripts.md)을 참조하세요.
 
-### <a name="new-mobile-application-management-policy-settings"></a>새 모바일 응용 프로그램 관리 정책 설정
+### <a name="new-mobile-application-management-policy-settings"></a>새 모바일 애플리케이션 관리 정책 설정
 <!-- 1324760 -->모바일 응용 프로그램 관리 정책 설정에 다음과 같은 설정이 추가되었습니다.
 - **연락처 동기화 사용 안 함:** 앱에서 장치의 네이티브 연락처 앱에 데이터를 저장하지 않도록 방지합니다.
 - **인쇄 사용 안 함:** 앱에서 회사 또는 학교 데이터를 인쇄하지 않도록 방지합니다.
@@ -96,7 +96,7 @@ Version 1710 drops support for the following products:
 
 이 릴리스를 사용하면 소프트웨어 센터는 더 이상 250x250보다 큰 아이콘을 왜곡하지 않습니다. 소프트웨어 센터는 그러한 아이콘이 흐리게 표시되도록 만듭니다. 이제 최대 512x512 픽셀 크기로 아이콘을 설정할 수 있으며 아이콘은 왜곡 없이 표시됩니다.
 
-소프트웨어 센터에서 앱에 대한 아이콘을 추가하려면 [응용 프로그램 만들기](/sccm/apps/deploy-use/create-applications)를 참조하세요.
+소프트웨어 센터에서 앱에 대한 아이콘을 추가하려면 [애플리케이션 만들기](/sccm/apps/deploy-use/create-applications)를 참조하세요.
 
 ## <a name="operating-system-deployment"></a>운영 체제 배포
  > [!TIP]   
@@ -112,7 +112,7 @@ Version 1710 drops support for the following products:
 ## <a name="software-center-customization"></a>소프트웨어 센터 사용자 지정
 <!-- 1351224 -->엔터프라이즈 브랜딩 요소를 추가하고 소프트웨어 센터에서 탭의 표시 여부를 지정할 수 있습니다. 소프트웨어 센터 특정의 회사 이름을 추가하고 소프트웨어 센터 구성 색 테마, 회사 로고 및 클라이언트 디바이스에 대한 표시 탭을 설정할 수 있습니다.
 
-자세한 내용은 [System Center Configuration Manager에서 응용 프로그램 관리 계획 및 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management)을 참조하세요.
+자세한 내용은 [System Center Configuration Manager에서 애플리케이션 관리 계획 및 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management)을 참조하세요.
 
 ## <a name="software-updates"></a>소프트웨어 업데이트
 
@@ -200,7 +200,7 @@ Configuration Manager 엔드포인트 보호를 사용하여 [Windows Defender A
 ### <a name="device-guard-policy-changes"></a>Device Guard 정책 변경
 <!-- 1355092 -->Device Guard 정책과 관련하여 다음 세 가지 항목이 변경되었습니다.
 
-- Device Guard 정책의 이름이 Windows Defender 응용 프로그램 제어 정책으로 바뀌었습니다. 예를 들어 **Device Guard 정책 만들기 마법사**의 이름이 이제는 **Windows Defender 응용 프로그램 제어 정책 만들기 마법사**입니다.
+- Device Guard 정책의 이름이 Windows Defender 애플리케이션 제어 정책으로 바뀌었습니다. 예를 들어 **Device Guard 정책 만들기 마법사**의 이름이 이제는 **Windows Defender 애플리케이션 제어 정책 만들기 마법사**입니다.
 - Windows용 Fall Creators Update 버전 1709를 사용하는 디바이스는 Windows Defender 응용 프로그램 제어 정책을 적용하기 위해 다시 시작할 필요가 없습니다. 다시 시작은 여전히 기본값이지만 [다시 시작을 해제](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)할 수 있습니다.
 - Intelligent Security Graph에서 신뢰할 수 있는 [소프트웨어를 자동으로 실행하도록 디바이스를 설정](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)할 수 있습니다.
 

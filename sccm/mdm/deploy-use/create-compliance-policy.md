@@ -45,7 +45,7 @@ ms.locfileid: "32351924"
      * **정보** - 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **정보** 오류 심각도를 보고합니다.   
      * **경고** - 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **경고** 오류 심각도를 보고합니다.
      * **위험** - 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다.
-     * **위험(이벤트 포함)** - 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 또한 **위험(이벤트 포함)** 심각도 수준은 응용 프로그램 이벤트 로그에 Windows 이벤트로 기록됩니다.      
+     * **위험(이벤트 포함)** - 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 또한 **위험(이벤트 포함)** 심각도 수준은 애플리케이션 이벤트 로그에 Windows 이벤트로 기록됩니다.      
 
 5.  **지원되는 플랫폼** 페이지에서 이 준수 정책을 평가할 장치 플랫폼을 선택합니다. 또한 **모두 선택**을 클릭하여 모든 디바이스 플랫폼을 선택할 수 있습니다. 지원되는 플랫폼은 Windows 7, Windows 8.1, Windows 10, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 및 Windows Server 2016입니다.
 
@@ -304,7 +304,7 @@ ms.locfileid: "32351924"
 
 ### <a name="find-an-app-id"></a>앱 ID 찾기
 
-앱 ID는 Apple 및 Google 응용 프로그램 서비스 내에서 앱을 고유하게 식별하는 식별자입니다. com.contoso.myapp 등을 예로 들 수 있습니다. 앱 ID를 찾으려면 다음을 수행합니다.
+앱 ID는 Apple 및 Google 애플리케이션 서비스 내에서 앱을 고유하게 식별하는 식별자입니다. com.contoso.myapp 등을 예로 들 수 있습니다. 앱 ID를 찾으려면 다음을 수행합니다.
 
 - **OWA(Outlook Web Access)**
     - 앱을 만드는 데 사용한 Google Play 스토어 URL에서 앱 ID를 찾을 수 있습니다. 앱 ID의 예는 *…?id=com.companyname.appname&hl=ko*와 같습니다.

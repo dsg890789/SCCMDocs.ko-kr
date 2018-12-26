@@ -61,7 +61,7 @@ ms.locfileid: "50411068"
 ExtractContent.exe 명령줄 도구를 사용하여 사전 준비된 콘텐츠만 가져옵니다. 변조 및 권한 상승을 방지하려면 Configuration Manager와 함께 제공되는 승인된 명령줄 도구만 사용합니다.  
 
 #### <a name="secure-the-communication-channel-between-the-site-server-and-the-package-source-location"></a>사이트 서버와 패키지 원본 위치 간 통신 채널의 보안을 유지합니다.
-응용 프로그램 및 패키지를 만들 때 사이트 서버와 패키지 원본 위치 간에 IPsec 또는 SMB 서명을 사용합니다. 이 구성은 공격자가 원본 파일을 변조하지 못하도록 합니다.  
+애플리케이션 및 패키지를 만들 때 사이트 서버와 패키지 원본 위치 간에 IPsec 또는 SMB 서명을 사용합니다. 이 구성은 공격자가 원본 파일을 변조하지 못하도록 합니다.  
 
 #### <a name="remove-default-virtual-directories-for-custom-website-with-the-distribution-point-role"></a>배포 지점 역할을 사용하여 사용자 지정 웹 사이트의 기본 가상 디렉터리 제거
 배포 지점 역할을 설치한 후 기본 웹 사이트가 아닌 사용자 지정 웹 사이트를 사용하도록 사이트 구성 옵션을 변경하는 경우 기본 가상 디렉터리를 제거합니다. 기본 웹 사이트에서 사용자 지정 웹 사이트로 전환하면 Configuration Manager에서 이전 가상 디렉터리를 제거하지 않습니다. Configuration Manager에서 원래 기본 웹 사이트 아래에 생성한 다음 가상 디렉터리를 제거합니다.  

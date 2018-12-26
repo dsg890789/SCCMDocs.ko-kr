@@ -48,7 +48,7 @@ Configuration Manager의 보안은 다음 계층으로 구성됩니다.
 
 -   보안 정책을 설정하기 위한 그룹 정책  
 
--   Configuration Manager 콘솔과 같은 배포 응용 프로그램에 대한 DCOM(Distributed Component Object Model) 권한  
+-   Configuration Manager 콘솔과 같은 배포 애플리케이션에 대한 DCOM(Distributed Component Object Model) 권한  
 
 -   보안 주체를 저장할 Active Directory Domain Services  
 

@@ -73,11 +73,11 @@ Configuration Manager를 Intune과 함께 사용할 경우 OMA-URI를 사용하�
 1. 비즈니스용 Windows 스토어에서 사용이 허가된 유료 온라인 앱을 구매합니다.
 2. Configuration Manager 콘솔의 **관리** 작업 영역에서 **클라우드 서비스** > **업데이트 및 서비스** > **비즈니스용 Windows 스토어**를 클릭합니다.
 3. **홈** 탭의 **동기화** 그룹에서 **지금 동기화**를 클릭합니다.
-4. 구매한 앱이 **응용 프로그램 관리** 작업 영역의 **스토어 앱에 대한 라이선스 정보** 노드에 나타납니다.
+4. 구매한 앱이 **애플리케이션 관리** 작업 영역의 **스토어 앱에 대한 라이선스 정보** 노드에 나타납니다.
 
-#### <a name="create-and-deploy-a-configuration-manager-application-from-the-synchronized-app-data"></a>동기화된 앱 데이터에서 Configuration Manager 응용 프로그램 만들기 및 배포
+#### <a name="create-and-deploy-a-configuration-manager-application-from-the-synchronized-app-data"></a>동기화된 앱 데이터에서 Configuration Manager 애플리케이션 만들기 및 배포
 
-유료 스토어 앱에서 Configuration Manager 응용 프로그램을 만들고 배포하는 절차는 무료 앱에서 응용 프로그램을 만들 때와 동일합니다. [System Center Configuration Manager를 사용하여 비즈니스용 Windows 스토어에서 앱 관리](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)의 **비즈니스용 Windows 스토어에서 앱에서 Configuration Manager 응용 프로그램 만들기 및 배포**를 참조하세요.
+유료 스토어 앱에서 Configuration Manager 애플리케이션을 만들고 배포하는 절차는 무료 앱에서 애플리케이션을 만들 때와 동일합니다. [System Center Configuration Manager를 사용하여 비즈니스용 Windows 스토어에서 앱 관리](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)의 **비즈니스용 Windows 스토어에서 앱에서 Configuration Manager 응용 프로그램 만들기 및 배포**를 참조하세요.
 
 
 #### <a name="modify-the-client-secret-key-from-azure-active-directory"></a>Azure Active Directory에서 클라이언트 암호 키 수정
@@ -241,7 +241,7 @@ Configuration Manager를 Intune과 함께 사용할 경우 OMA-URI를 사용하�
 -   **각 사이트의 새 기본 경계 그룹:** 각 기본 사이트에는 ***Default-Site-Boundary-Group\<sitecode>*** 라는 새 기본 경계 그룹이 있습니다.  경계 그룹에 지정된 네트워크 위치에 없는 클라이언트는 지정된 사이트의 기본 그룹과 연결된 사이트 시스템을 사용합니다. 이 경계 그룹을 대체 콘텐츠 위치의 개념 대신 사용합니다.    
  -  **‘콘텐츠에 대해 대체 원본 위치 허용’** 제거됨: 더 이상 대체에 사용할 배포 지점을 명시적으로 구성하지 않으며 이 기능을 설정하는 옵션이 UI에서 제거되었습니다.
 
-    또한 응용 프로그램의 배포 유형에서 **클라이언트가 콘텐츠에 대한 대체 원본 위치를 사용하도록 허용** 설정의 결과가 변경되었습니다. 이제 배포 유형에서 이 설정을 사용하면 클라이언트가 기본 사이트 경계 그룹을 콘텐츠 원본 위치로 사용할 수 있습니다.
+    또한 애플리케이션의 배포 유형에서 **클라이언트가 콘텐츠에 대한 대체 원본 위치를 사용하도록 허용** 설정의 결과가 변경되었습니다. 이제 배포 유형에서 이 설정을 사용하면 클라이언트가 기본 사이트 경계 그룹을 콘텐츠 원본 위치로 사용할 수 있습니다.
 
  -  **경계 그룹 관계:** 각 경계 그룹은 하나 이상의 추가 경계 그룹에 연결할 수 있습니다. 이러한 링크는 **관계**라는 새 경계 그룹 속성 탭에서 관계를 구성합니다.
     -   클라이언트가 직접 연결된 각 경계 그룹을 **현재** 경계 그룹이라고 합니다.  
@@ -362,7 +362,7 @@ Configuration Manager 1609 Technical Preview에서는 새로운 대시보드를 
 Office 365 ProPlus 업데이트에 대한 자세한 내용은 [Manage Office 365 ProPlus updates with Configuration Manager](/sccm/sum/deploy-use/manage-office-365-proplus-updates)(Configuration Manager에서 Office 365 ProPlus 업데이트 관리)를 참조하세요.
 
 ## <a name="deploy-office-365-apps-to-clients"></a>클라이언트에 Office 365 앱 배포
-이 릴리스에서는 Office 365 클라이언트 관리 대시보드에서 Office 365 설치 설정을 구성할 수 있는 Office 365 설치 관리자를 시작하고, Office CDN(Content Delivery Network)에서 파일을 다운로드하고, 파일을 Configuration Manager의 응용 프로그램으로 배포할 수 있습니다.
+이 릴리스에서는 Office 365 클라이언트 관리 대시보드에서 Office 365 설치 설정을 구성할 수 있는 Office 365 설치 관리자를 시작하고, Office CDN(Content Delivery Network)에서 파일을 다운로드하고, 파일을 Configuration Manager의 애플리케이션으로 배포할 수 있습니다.
 
 ### <a name="limitations-of-office-365-deployment"></a>Office 365 배포의 제한 사항
 - Office 365 앱 설치 마법사에서 기존 클라이언트 설정(XML)을 가져오려고 할 때 문제가 발생할 수 있습니다. 클라이언트 설정을 문제 없이 수동으로 구성할 수 있습니다.
@@ -381,9 +381,9 @@ Office 365 ProPlus 업데이트에 대한 자세한 내용은 [Manage Office 365
 6. **클라이언트 설정** 페이지에서 포함할 설정을 선택하고 **다음**을 클릭합니다.
 7. **배포** 페이지에서 응용 프로그램을 배포할지 여부를 선택하고 **다음**을 클릭합니다.
 마법사에서 패키지를 배포하지 않도록 선택한 경우 9단계로 건너뜁니다.
-8. 마법사 페이지의 나머지 부분을 일반적인 응용 프로그램 배포와 마찬가지로 구성합니다. 자세한 내용은 [응용 프로그램 만들기 및 배포](/sccm/apps/get-started/create-and-deploy-an-application)를 참조하세요.
+8. 마법사 페이지의 나머지 부분을 일반적인 애플리케이션 배포와 마찬가지로 구성합니다. 자세한 내용은 [애플리케이션 만들기 및 배포](/sccm/apps/get-started/create-and-deploy-an-application)를 참조하세요.
 9. 마법사를 완료합니다.
-10. Configuration Manager의 **소프트웨어 라이브러리** > **개요** > **응용 프로그램 관리** > **응용 프로그램**에서 다른 응용 프로그램과 마찬가지로 응용 프로그램을 배포 또는 편집할 수 있습니다.
+10. Configuration Manager의 **소프트웨어 라이브러리** > **개요** > **애플리케이션 관리** > **애플리케이션**에서 다른 애플리케이션과 마찬가지로 애플리케이션을 배포 또는 편집할 수 있습니다.
 
 >[!NOTE]
 >Office 365 앱을 배포한 후 앱을 유지 관리하기 위한 자동 배포 규칙을 만들 수 있습니다. Office 365 앱에 대한 ADR을 만들려면 제품을 선택할 때 **ADR 만들기**를 클릭하고 **Office 365 클라이언트**를 선택합니다. 자세한 내용은 [소프트웨어 업데이트 자동 배포](/sccm/sum/deploy-use/automatically-deploy-software-updates)를 참조하세요.

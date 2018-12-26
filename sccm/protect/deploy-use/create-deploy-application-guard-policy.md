@@ -31,7 +31,7 @@ Windows Defender Application Guard 정책을 만들고 배포하려면 Windows 1
 1. Configuration Manager 콘솔에서 **자산 및 준수**를 선택합니다.
 2. **자산 및 준수** 작업 영역에서 **개요** > **Endpoint Protection** > **Windows Defender Application Guard**를 선택합니다.
 3. **홈** 탭의 **만들기** 그룹에서  **만들기**를 클릭합니다.
-4. [문서](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/configure-wd-app-guard)를 참조하여 사용 가능한 설정을 찾아보고 구성할 수 있습니다. Configuration Manager를 사용하면 특정 정책 설정을 지정할 수 있습니다. [호스트 상호 작용 설정](#BKMK_HIS) 및 [응용 프로그램 동작](#BKMK_AppB)을 참조하세요.
+4. [문서](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/configure-wd-app-guard)를 참조하여 사용 가능한 설정을 찾아보고 구성할 수 있습니다. Configuration Manager를 사용하면 특정 정책 설정을 지정할 수 있습니다. [호스트 상호 작용 설정](#BKMK_HIS) 및 [애플리케이션 동작](#BKMK_AppB)을 참조하세요.
 5. **네트워크 정의** 페이지에서 회사 ID를 지정하고 회사 네트워크 경계를 정의합니다.
 
     > [!NOTE]
@@ -47,7 +47,7 @@ Windows Defender Application Guard 정책을 만들고 배포하려면 Windows 1
 6. 작업이 끝나면 마법사를 완료하고 하나 이상의 Windows 10 1709 디바이스에 정책을 배포합니다.
 
 ### <a name="bkmk_HIS"></a> 호스트 상호 작용 설정
-호스트 디바이스와 Application Guard 컨테이너 간의 상호 작용을 구성합니다. Configuration Manager 1802 이전 버전에서는 응용 프로그램 동작과 호스트 상호 작용이 **설정** 탭에 있었습니다.
+호스트 디바이스와 Application Guard 컨테이너 간의 상호 작용을 구성합니다. Configuration Manager 1802 이전 버전에서는 애플리케이션 동작과 호스트 상호 작용이 **설정** 탭에 있었습니다.
 
 - **클립보드** - Configuration Manager 1802 이전 버전에서는 설정에 있었습니다.
     - 허용되는 콘텐츠 형식
@@ -64,7 +64,7 @@ Windows Defender Application Guard 정책을 만들고 배포하려면 Windows 1
     - 다운로드한 파일을 호스트에 저장
 
 ### <a name="bkmk_ABS"></a> 응용 프로그램 동작 설정
-Application Guard 세션 내에서 응용 프로그램 동작을 구성합니다. Configuration Manager 1802 이전 버전에서는 응용 프로그램 동작과 호스트 상호 작용이 **설정** 탭에 있었습니다.
+Application Guard 세션 내에서 애플리케이션 동작을 구성합니다. Configuration Manager 1802 이전 버전에서는 애플리케이션 동작과 호스트 상호 작용이 **설정** 탭에 있었습니다.
 
 - **콘텐츠:**
    - 엔터프라이즈 사이트에서 타사 플러그인과 같은 비 엔터프라이즈 콘텐츠를 로드할 수 있습니다.

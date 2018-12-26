@@ -71,16 +71,16 @@ ms.locfileid: "32338536"
 
 ## <a name="improvements-to-operating-system-deployment"></a>운영 체제 배포 향상
 운영 체제 배포가 다음과 같이 향상되었으며, 이러한 향상된 기능은 대부분 사용자 의견 피드백의 결과입니다.
-- [**응용 프로그램 설치 작업 순서 단계와 관련해서 더 많은 응용 프로그램 지원**](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/17062207-task-sequence-allow-more-than-9-applications-in-t): **응용 프로그램 설치** 작업 순서 단계에서 설치할 수 있는 최대 응용 프로그램 수가 99개로 증가되었습니다. 이전의 최대 개수는 응용 프로그램 9개였습니다.
+- [**응용 프로그램 설치 작업 순서 단계와 관련해서 더 많은 응용 프로그램 지원**](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/17062207-task-sequence-allow-more-than-9-applications-in-t): **응용 프로그램 설치** 작업 순서 단계에서 설치할 수 있는 최대 응용 프로그램 수가 99개로 증가되었습니다. 이전의 최대 개수는 애플리케이션 9개였습니다.
 - [**앱 설치 작업 순서 단계에서 여러 앱 선택**](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/15459978-when-adding-items-to-an-install-application-step): 작업 순서 편집기에서 응용 프로그램 설치 작업 순서 단계에 응용 프로그램을 추가하는 경우 이제 **설치할 응용 프로그램 선택** 창에서 여러 응용 프로그램을 선택할 수 있습니다.
 - [**독립 실행형 미디어 만료**](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/14448564-provide-a-method-for-expiring-standalone-media): 독립 실행형 미디어를 만드는 경우 미디어에 선택적 시작 및 만료 날짜를 설정하는 새 옵션이 있습니다. 이러한 설정은 기본적으로 사용되지 않습니다. 독립 실행형 미디어를 실행하기 전에 날짜가 컴퓨터의 시스템 시간과 비교됩니다. 시스템 시간이 시작 시간보다 이전이거나 만료 시간보다 이후이면 독립 실행형 미디어가 시작되지 않습니다. New-CMStandaloneMedia PowerShell cmdlet을 사용하여 이러한 옵션을 사용할 수도 있습니다.
-- [**독립 실행형 미디어의 추가 콘텐츠 지원**](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/8341257-support-installation-of-packages-apps-via-dynamic): 이제 독립 실행형 미디어에서 추가 콘텐츠가 지원됩니다. 작업 순서에서 참조된 다른 콘텐츠와 함께 미디어에 스테이징할 추가 패키지, 드라이버 패키지 및 응용 프로그램을 선택할 수 있습니다. 이전에는 작업 순서에서 참조된 콘텐츠만 독립 실행형 미디어에 스테이징되었습니다.
+- [**독립 실행형 미디어의 추가 콘텐츠 지원**](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/8341257-support-installation-of-packages-apps-via-dynamic): 이제 독립 실행형 미디어에서 추가 콘텐츠가 지원됩니다. 작업 순서에서 참조된 다른 콘텐츠와 함께 미디어에 스테이징할 추가 패키지, 드라이버 패키지 및 애플리케이션을 선택할 수 있습니다. 이전에는 작업 순서에서 참조된 콘텐츠만 독립 실행형 미디어에 스테이징되었습니다.
 - [**드라이버 자동 적용 작업 순서 단계에 대한 구성 가능한 시간 제한**](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/17153660-auto-apply-driver-timeout): 이제 새 작업 순서 변수를 사용하여 HTTP 카탈로그 요청 시 드라이버 자동 적용 작업 순서 단계에 대한 시간 제한 값을 구성할 수 있습니다. 다음 변수와 기본값(초)을 사용할 수 있습니다.
    - SMSTSDriverRequestResolveTimeOut 기본값: 60
    - SMSTSDriverRequestConnectTimeOut 기본값: 60
    - SMSTSDriverRequestSendTimeOut 기본값: 60
    - SMSTSDriverRequestReceiveTimeOut 기본값: 480
-- [**이제 작업 순서 단계에 패키지 ID가 표시됨**](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/16167430-display-packageid-when-viewing-a-task-sequence-ste): 이제 패키지, 드라이버 패키지, 운영 체제 이미지, 부팅 이미지 또는 운영 체제 업그레이드 패키지를 참조하는 모든 작업 순서 단계에 참조된 개체의 패키지 ID가 표시됩니다. 응용 프로그램을 참조하는 작업 순서 단계에 개체 ID가 표시됩니다.
+- [**이제 작업 순서 단계에 패키지 ID가 표시됨**](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/16167430-display-packageid-when-viewing-a-task-sequence-ste): 이제 패키지, 드라이버 패키지, 운영 체제 이미지, 부팅 이미지 또는 운영 체제 업그레이드 패키지를 참조하는 모든 작업 순서 단계에 참조된 개체의 패키지 ID가 표시됩니다. 애플리케이션을 참조하는 작업 순서 단계에 개체 ID가 표시됩니다.
 - **Windows 10 ADK가 빌드 버전별로 추적됨**: 이제 Windows 10 ADK가 빌드 버전별로 추적되므로 Windows 10 부팅 이미지를 사용자 지정할 때 환경에서 더 많은 지원이 제공됩니다. 예를 들어 사이트에서 Windows 10 버전 1607용 Windows ADK를 사용하는 경우 버전 10.0.14393인 부팅 이미지만 콘솔에서 사용자 지정할 수 있습니다. WinPE 버전을 사용자 지정하는 방법에 대한 자세한 내용은 [부팅 이미지 사용자 지정](/sccm/osd/get-started/customize-boot-images)을 참조하세요.
 - **기본 부팅 이미지 원본 경로를 더 이상 변경할 수 없음**: 기본 부팅 이미지가 Configuration Manager에서 관리되며, 더 이상 Configuration Manager 콘솔이나 Configuration Manager SDK를 사용하여 기본 부팅 이미지 원본 경로를 변경할 수 없습니다. 사용자 지정 부팅 이미지에 대한 사용자 지정 원본 경로는 계속 구성할 수 있습니다.
 

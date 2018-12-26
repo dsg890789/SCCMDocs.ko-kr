@@ -75,7 +75,7 @@ Configuration Manager 1706 이상에서는 [Configuration Manager 콘솔에서 P
 <!-- 1353967 -->
 이제는 사이트 데이터베이스의 데이터 분석에 따라 현재의 환경 상태에 대한 정보를 얻을 수 있습니다. 이 정보를 통해 환경을 더 잘 이해하고 해당 정보에 기반한 조치를 취할 수 있습니다. Configuration Manager 콘솔의 **관리** > **관리 정보** > **모든 정보**에서 관리 정보를 검토합니다. 이제 이 릴리스에서 사용할 수 있는 정보는 다음과 같습니다.
 
-- **배포가 없는 응용 프로그램**: 사용자 환경에서 활성 배포가 없는 응용 프로그램을 나열합니다. 이렇게 하면 사용되지 않는 응용 프로그램을 찾고 삭제하여 콘솔에 표시된 응용 프로그램 목록을 간소화할 수 있습니다.
+- **배포가 없는 응용 프로그램**: 사용자 환경에서 활성 배포가 없는 응용 프로그램을 나열합니다. 이렇게 하면 사용되지 않는 애플리케이션을 찾고 삭제하여 콘솔에 표시된 애플리케이션 목록을 간소화할 수 있습니다.
 - **빈 컬렉션**: 사용자 환경에서 멤버가 없는 컬렉션을 나열합니다. 이러한 컬렉션을 삭제하여 개체를 배포할 때와 같이 표시되는 컬렉션 목록을 간소화할 수 있습니다.
 
 
@@ -116,7 +116,7 @@ Configuration Manager 1706 이상에서는 [Configuration Manager 콘솔에서 P
 7. **찾아보기**를 클릭하여 소프트웨어 센터에 대한 로고를 탐색합니다. 로고는 400 x 100 픽셀의 JPEG 또는 PNG여야 하며 최대 크기는 750KB입니다.
 8. 클라이언트 디바이스에 대한 소프트웨어 센터에 탭이 표시되도록 하려면 **예**를 선택합니다. 다음과 같은 탭 중 하나 이상이 표시되어야 합니다.
 
-    -  응용 프로그램 사용 탭
+    -  애플리케이션 사용 탭
     -  업데이트 사용 탭
     -  운영 체제 사용 탭
     -  설치 상태 사용 탭
@@ -125,4 +125,4 @@ Configuration Manager 1706 이상에서는 [Configuration Manager 콘솔에서 P
 
 ### <a name="next-steps"></a>다음 단계
 
-Configuration Manager의 응용 프로그램 관리에 대한 자세한 내용은 [System Center Configuration Manager의 응용 프로그램 관리 소개](\sccm\apps\understand\introduction-to-application-management)를 참조하세요.
+Configuration Manager의 애플리케이션 관리에 대한 자세한 내용은 [System Center Configuration Manager의 애플리케이션 관리 소개](\sccm\apps\understand\introduction-to-application-management)를 참조하세요.

@@ -131,7 +131,7 @@ ms.locfileid: "51269215"
 
     둘 이상의 계층 구조에서.cab 파일을 동시에 업로드하는 경우 폴더의 각.cab 파일에 고유한 이름이 있어야 합니다. 폴더에 추가하는 파일의 이름을 수동으로 바꿀 수 있습니다.
 
-    Configuration Manager 클라우드 서비스에 업로드하기 위해 수집되는 사용 현황 정보를 보려는 경우 다음 명령을 실행하여 .csv 파일과 동일한 데이터를 내보낸 다음 Excel과 같은 응용 프로그램을 사용하여 볼 수 있습니다.  
+    Configuration Manager 클라우드 서비스에 업로드하기 위해 수집되는 사용 현황 정보를 보려는 경우 다음 명령을 실행하여 .csv 파일과 동일한 데이터를 내보낸 다음 Excel과 같은 애플리케이션을 사용하여 볼 수 있습니다.  
 
     -   **serviceconnectiontool.exe -export -dest D:\USB\UsageData.csv**  
 

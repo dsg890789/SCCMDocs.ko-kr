@@ -1,7 +1,7 @@
 ---
 title: 패키지 및 프로그램
 titleSuffix: Configuration Manager
-description: 패키지 및 프로그램을 사용하는 배포 또는 System Center Configuration Manager의 응용 프로그램을 사용하는 배포를 지원합니다.
+description: 패키지 및 프로그램을 사용하는 배포 또는 System Center Configuration Manager의 애플리케이션을 사용하는 배포를 지원합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-app
@@ -21,10 +21,10 @@ ms.locfileid: "39130649"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager는 Configuration Manager 2007에서 사용된 패키지 및 프로그램을 계속 지원합니다. 다음 스크립트를 배포하는 경우 패키지 및 프로그램을 사용하여 배포하는 것이 응용 프로그램을 사용하여 배포하는 것보다 적합할 수 있습니다.  
+System Center Configuration Manager는 Configuration Manager 2007에서 사용된 패키지 및 프로그램을 계속 지원합니다. 패키지 및 프로그램을 사용 하는 배포는 다음 중 하나를 배포할 때 애플리케이션을 사용 하는 배포 보다 더 적합할 수 있습니다.  
 
-- Linux 및 UNIX 서버용 응용 프로그램
-- 컴퓨터에 응용 프로그램을 설치하지 않는 스크립트(예: 컴퓨터 디스크 드라이브를 조각 모음하는 스크립트)
+- Linux 및 UNIX 서버용 애플리케이션
+- 컴퓨터에 애플리케이션을 설치하지 않는 스크립트(예: 컴퓨터 디스크 드라이브를 조각 모음하는 스크립트)
 - 지속적으로 모니터링하지 않아도 되는 "일회용" 스크립트  
 - 되풀이 일정에서 실행되고 전역 평가를 사용할 수 없는 스크립트
 
@@ -33,11 +33,11 @@ System Center Configuration Manager는 Configuration Manager 2007에서 사용�
 소프트웨어 배포를 사용할 때와 같은 방식으로 이러한 패키지를 수정하고 배포할 수 있습니다. 레거시 패키지를 가져올 수 있도록 **정의에서 패키지 가져오기 마법사**가 Configuration Manager에 남아 있습니다. 보급 알림은 Configuration Manager 2007에서 Configuration Manager 계층 구조에 마이그레이션될 때 배포로 변환됩니다.  
 
 > [!NOTE]  
->  Microsoft System Center Configuration Manager Package Conversion Manager를 사용하면 패키지와 프로그램을 Configuration Manager 응용 프로그램으로 변환할 수 있습니다.  
+>  Microsoft System Center Configuration Manager Package Conversion Manager를 사용하면 패키지와 프로그램을 Configuration Manager 애플리케이션으로 변환할 수 있습니다.  
 >   
 >  자세한 내용은 [Configuration Manager Package Conversion Manager](https://technet.microsoft.com/library/hh531519.aspx)를 참조하세요.  
 
-패키지는 배포 지점 그룹 및 모니터링을 비롯한 Configuration Manager의 새 기능 중 일부를 사용할 수 있습니다. Microsoft Application Virtualization(App-V) 응용 프로그램을 Configuration Manager의 패키지 및 프로그램을 사용하여 배포할 수 없습니다. 가상 응용 프로그램을 배포하려면 App-V 응용 프로그램을 Configuration Manager 응용 프로그램으로 만들어야 합니다.  
+패키지는 배포 지점 그룹 및 모니터링을 비롯한 Configuration Manager의 새 기능 중 일부를 사용할 수 있습니다. Microsoft Application Virtualization(App-V) 애플리케이션을 Configuration Manager의 패키지 및 프로그램을 사용하여 배포할 수 없습니다. 가상 애플리케이션을 배포하려면 App-V 애플리케이션을 Configuration Manager 애플리케이션으로 만들어야 합니다.  
 
 ##  <a name="create-a-package-and-program"></a>패키지 및 프로그램 만들기  
  다음 절차 중 하나를 사용하여 패키지 및 프로그램을 만들거나 가져올 수 있습니다.  
@@ -168,7 +168,7 @@ System Center Configuration Manager는 Configuration Manager 2007에서 사용�
 
         -   **프로그램 다운로드**: 이 프로그램을 모바일 장치에 다운로드할 수 있는 시점에 관한 정보를 지정합니다. **가능한 한 빨리**, **고속 네트워크에서만**또는 **장치가 고정된 경우에만**중에서 지정할 수 있습니다.  
 
-        -   **추가 요구 사항**: 이 프로그램에 대한 추가 요구 사항을 지정합니다. 이는 소프트웨어를 설치하기 전에 사용자에게 표시됩니다. 예, 프로그램을 실행 하기 전에 다른 모든 응용 프로그램을 닫으십시오 해야 하는 사용자에 알릴 수 있습니다.  
+        -   **추가 요구 사항**: 이 프로그램에 대한 추가 요구 사항을 지정합니다. 이는 소프트웨어를 설치하기 전에 사용자에게 표시됩니다. 예, 프로그램을 실행 하기 전에 다른 모든 애플리케이션을 닫으십시오 해야 하는 사용자에 알릴 수 있습니다.  
 
   4.  **다음**을 선택합니다.  
 
@@ -268,7 +268,7 @@ System Center Configuration Manager는 Configuration Manager 2007에서 사용�
 >  **소프트웨어 배포 마법사**의 **배포 지점** 페이지에서 **배포 지점에서 프로그램 실행** 옵션을 구성한 경우 **배포 지점의 패키지 공유에 이 패키지의 콘텐츠 복사** 옵션의 선택을 취소하지 마세요. 취소하면 배포 지점에서 패키지를 사용할 수 없게 됩니다.  
 
 ##  <a name="monitor-packages-and-programs"></a>패키지 및 프로그램 모니터링  
- 패키지 및 프로그램 배포를 모니터링하려면 [응용 프로그램 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)에서 자세히 설명한 것처럼 응용 프로그램 모니터링에 사용하는 동일한 절차를 사용합니다.  
+ 패키지 및 프로그램 배포를 모니터링하려면 [애플리케이션 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)에서 자세히 설명한 것처럼 애플리케이션 모니터링에 사용하는 동일한 절차를 사용합니다.  
 
  또한 패키지 및 프로그램에는 패키지와 프로그램의 배포 상태에 대한 정보를 모니터링할 수 있도록 하는 많은 기본 제공 보고서가 포함되어 있습니다. 이러한 보고서의 보고서 범주에는 **소프트웨어 배포-패키지 및 프로그램** 및 **소프트웨어 배포-패키지 및 프로그램 배포 상태**.  
 

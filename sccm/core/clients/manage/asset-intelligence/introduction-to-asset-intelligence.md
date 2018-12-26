@@ -99,7 +99,7 @@ System Center Configuration Manager의 Asset Intelligence를 통해 Asset Intell
  Asset Intelligence 동기화 지점은 동적 Asset Intelligence 카탈로그 정보 업데이트를 관리하기 위해 System Center Online에 연결(TCP 포트 443 사용)하는 데 사용되는 Configuration Manager 사이트 시스템 역할입니다. 이 사이트 역할은 계층의 최상위 사이트에만 설치할 수 있습니다. 모든 Asset Intelligence 카탈로그 사용자 지정은 최상위 사이트에 연결된 Configuration Manager 콘솔을 통해 구성해야 합니다. 모든 업데이트는 최상위 사이트에서 구성해야 하지만 Asset Intelligence 카탈로그 정보는 계층의 다른 사이트에 복제됩니다. Asset Intelligence 동기화 지점 사이트 역할을 통해 System Center Online과의 주문형 카탈로그 동기화를 요청하거나 자동 카탈로그 동기화를 예약할 수 있습니다. 새 Asset Intelligence 카탈로그 정보를 다운로드하는 것 외에도 Asset Intelligence 동기화 지점을 통해 사용자 지정 소프트웨어 타이틀 정보를 System Center Online에 분류를 위해 업로드할 수 있습니다. Microsoft에서는 분류를 위해 System Center Online에 업로드된 모든 소프트웨어 타이틀을 공개 정보로 처리합니다. 따라서 사용자 지정 소프트웨어 타이틀에 기밀 또는 비공개 정보가 포함되어 있지 않은지 확인해야 합니다.  
 
 > [!NOTE]  
->  분류되지 않은 소프트웨어 타이틀이 제출된 후 동일한 소프트웨어 타이틀에 대해 4건 이상 고객의 분류 요청이 있으면 System Center Online 연구원이 식별하고 분류한 다음 해당 온라인 서비스를 사용하는 모든 고객이 소프트웨어 타이틀 분류 정보를 사용할 수 있도록 합니다. 분류에 대해 가장 많은 요청을 나타내는 소프트웨어 타이틀이 분류에서 우선 순위가 가장 높습니다. 사용자 지정 소프트웨어 및 기간 업무 응용 프로그램은 하나의 범주 및 모범 사례로 받을 가능성이 낮으므로 이러한 소프트웨어 타이틀은 분류를 위해 Microsoft에 보내지 않는 것이 좋습니다.  
+>  분류되지 않은 소프트웨어 타이틀이 제출된 후 동일한 소프트웨어 타이틀에 대해 4건 이상 고객의 분류 요청이 있으면 System Center Online 연구원이 식별하고 분류한 다음 해당 온라인 서비스를 사용하는 모든 고객이 소프트웨어 타이틀 분류 정보를 사용할 수 있도록 합니다. 분류에 대해 가장 많은 요청을 나타내는 소프트웨어 타이틀이 분류에서 우선 순위가 가장 높습니다. 사용자 지정 소프트웨어 및 기간 업무 애플리케이션은 하나의 범주 및 모범 사례로 받을 가능성이 낮으므로 이러한 소프트웨어 타이틀은 분류를 위해 Microsoft에 보내지 않는 것이 좋습니다.  
 
 > [!NOTE]  
 >  Asset Intelligence 동기화 지점 사이트 시스템 역할은 System Center Online에 연결되어야 합니다. Asset Intelligence 동기화 지점을 설치하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 Asset Intelligence 구성](../../../../core/clients/manage/asset-intelligence/configuring-asset-intelligence.md)을 참조하세요.  
@@ -132,7 +132,7 @@ System Center Configuration Manager의 Asset Intelligence를 통해 Asset Intell
 >  Asset Intelligence 하드웨어 보고서의 일부 사용자 데이터는 시스템 보안 이벤트 로그에서 수집됩니다. 더 나은 보고서 정확도를 위해 컴퓨터를 새 사용자에게 재할당할 때 이 로그를 지우는 것이 좋습니다.  
 
 ###  <a name="BKMK_LicenseManagementReports"></a> Asset Intelligence 라이선스 관리 보고서  
- Asset Intelligence 라이선스 관리 보고서는 사용 중인 라이선스에 대한 데이터를 제공합니다. 라이선스 원장 보고서에서는 MLS(Microsoft 라이선스 계정)에 적절한 형식으로 설치된 Microsoft 응용 프로그램을 나열합니다. 이는 구매한 라이선스와 사용되는 라이선스를 일치시키는 편리한 방법을 제공합니다. 다른 라이선스 관리 보고서에서는 운영 체제 정품 인증 통계에 대해 KMS(키 관리 서비스)를 실행하는 서버로 사용되는 컴퓨터에 대한 정보를 제공합니다.  
+ Asset Intelligence 라이선스 관리 보고서는 사용 중인 라이선스에 대한 데이터를 제공합니다. 라이선스 원장 보고서에서는 MLS(Microsoft 라이선스 계정)에 적절한 형식으로 설치된 Microsoft 애플리케이션을 나열합니다. 이는 구매한 라이선스와 사용되는 라이선스를 일치시키는 편리한 방법을 제공합니다. 다른 라이선스 관리 보고서에서는 운영 체제 정품 인증 통계에 대해 KMS(키 관리 서비스)를 실행하는 서버로 사용되는 컴퓨터에 대한 정보를 제공합니다.  
 
 > [!IMPORTANT]  
 >  Asset Intelligence 라이선스 관리 보고서 중 몇 가지는 볼륨 라이선스를 관리하는 방법인 KMS의 기능에 대한 정보를 제공합니다. KMS 서버가 구현되지 않은 경우 일부 보고서는 데이터를 반환하지 않을 수 있습니다. KMS에 대한 자세한 내용은 [Microsoft TechNet](http://go.microsoft.com/fwlink/?linkid=3225)에서 KMS를 검색하세요.  

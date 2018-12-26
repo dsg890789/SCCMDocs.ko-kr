@@ -256,10 +256,10 @@ Version 1806 drops support for the following products:
 
 
 
-## <a name="application-management"></a>응용 프로그램 관리
+## <a name="application-management"></a>애플리케이션 관리
 
-### <a name="phased-deployment-of-applications"></a>응용 프로그램의 단계적 배포
-<!--1358147--> 응용 프로그램에 대한 단계적 배포를 만듭니다. 단계적 배포에서는 사용자 지정 가능한 조건 및 그룹에 따라 소프트웨어 출시를 조정하고 순차적으로 진행할 수 있습니다. 예를 들어, 파일럿 컬렉션에 응용 프로그램을 배포한 다음, 성공 조건에 따라 출시를 자동으로 계속합니다. 
+### <a name="phased-deployment-of-applications"></a>애플리케이션의 단계적 배포
+<!--1358147--> 응용 프로그램에 대한 단계적 배포를 만듭니다. 단계적 배포에서는 사용자 지정 가능한 조건 및 그룹에 따라 소프트웨어 출시를 조정하고 순차적으로 진행할 수 있습니다. 예를 들어, 파일럿 컬렉션에 애플리케이션을 배포한 다음, 성공 조건에 따라 출시를 자동으로 계속합니다. 
 
 자세한 내용은 다음 아티클을 참조하세요.  
 
@@ -269,9 +269,9 @@ Version 1806 drops support for the following products:
 
 
 ### <a name="provision-windows-app-packages-for-all-users-on-a-device"></a>디바이스의 모든 사용자에 대해 Windows 앱 패키지 프로비전
-<!--1358310--> 장치에서 모든 사용자에 대한 Windows 앱 패키지를 사용하여 응용 프로그램을 프로비전합니다. 이 시나리오의 일반적인 한 예는 Minecraft 교육용 버전처럼 비즈니스 및 교육용 Microsoft Store에서 앱을 학교에서 학생들이 사용하는 모든 디바이스에 프로비전하는 것입니다. 전에 Configuration Manager는 사용자 당 이러한 응용 프로그램 설치만 지원했습니다. 새 디바이스에 로그인한 후 학생은 앱에 액세스하기를 기다려야 합니다. 앱이 모든 사용자용 디바이스에 프로비전되는 경우 더 신속하게 생산적이 될 수 있습니다. 
+<!--1358310--> 장치에서 모든 사용자에 대한 Windows 앱 패키지를 사용하여 응용 프로그램을 프로비전합니다. 이 시나리오의 일반적인 한 예는 Minecraft 교육용 버전처럼 비즈니스 및 교육용 Microsoft Store에서 앱을 학교에서 학생들이 사용하는 모든 디바이스에 프로비전하는 것입니다. 전에 Configuration Manager는 사용자 당 이러한 애플리케이션 설치만 지원했습니다. 새 디바이스에 로그인한 후 학생은 앱에 액세스하기를 기다려야 합니다. 앱이 모든 사용자용 디바이스에 프로비전되는 경우 더 신속하게 생산적이 될 수 있습니다. 
 
-자세한 내용은 [Windows 응용 프로그램 만들기](/sccm/apps/get-started/creating-windows-applications#bkmk_provision)를 참조하세요.
+자세한 내용은 [Windows 애플리케이션 만들기](/sccm/apps/get-started/creating-windows-applications#bkmk_provision)를 참조하세요.
 
 
 ### <a name="office-customization-tool-integration-with-the-office-365-installer"></a>Office 365 설치 관리자와 Office 사용자 지정 도구 통합
@@ -283,13 +283,13 @@ Version 1806 drops support for the following products:
 ### <a name="support-for-new-windows-app-package-formats"></a>새로운 Windows 앱 패키지 형식에 대한 지원 
 <!--1357427--> Configuration Manager는 이제 새 Windows 10 앱 패키지(.msix) 및 앱 번들(.msixbundle) 형식의 배포를 지원합니다. 
 
-자세한 내용은 [Windows 응용 프로그램 만들기](/sccm/apps/get-started/creating-windows-applications#bkmk_general)를 참조하세요.
+자세한 내용은 [Windows 애플리케이션 만들기](/sccm/apps/get-started/creating-windows-applications#bkmk_general)를 참조하세요.
 
 
-### <a name="uninstall-application-on-approval-revocation"></a>승인 취소 시 응용 프로그램 제거
+### <a name="uninstall-application-on-approval-revocation"></a>승인 취소 시 애플리케이션 제거
 <!--1357891-->응용 프로그램 승인 취소 시의 동작이 변경되었습니다. 이제 응용 프로그램에 대한 요청을 거부하면 클라이언트가 사용자 디바이스에서 응용 프로그램을 제거합니다. 이를 위해서는 [선택적 기능](https://docs.microsoft.com/en-us/sccm/core/servers/manage/install-in-console-updates#bkmk_options)인 **장치당 사용자에 대한 응용 프로그램 요청 승인**을 사용하도록 설정해야 합니다. 
 
-자세한 내용은 [응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications#bkmk_approval)를 참조하세요.
+자세한 내용은 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications#bkmk_approval)를 참조하세요.
 
 
 ### <a name="package-conversion-manager"></a>Package Conversion Manager 
@@ -387,23 +387,23 @@ Version 1806 drops support for the following products:
 
 
 ### <a name="software-center-infrastructure-improvements"></a>소프트웨어 센터 인프라 개선 사항
-<!--1358309--> 소프트웨어 센터에 사용자가 사용할 수 있는 응용 프로그램을 표시하는 데 더 이상 응용 프로그램 카탈로그 역할이 필요하지 않습니다. 이 변경은 사용자에게 응용 프로그램을 전달하기 위해 필요한 서버 인프라를 줄일 수 있습니다. 소프트웨어 센터는 [경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups#management-points)에 할당하여 대규모 환경의 크기 조정을 더 잘하도록 도움을 주는 이 정보를 얻으려면 관리 지점에 의존합니다.
+<!--1358309--> 소프트웨어 센터에 사용자가 사용할 수 있는 응용 프로그램을 표시하는 데 더 이상 응용 프로그램 카탈로그 역할이 필요하지 않습니다. 이 변경은 사용자에게 애플리케이션을 전달하기 위해 필요한 서버 인프라를 줄일 수 있습니다. 소프트웨어 센터는 [경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups#management-points)에 할당하여 대규모 환경의 크기 조정을 더 잘하도록 도움을 주는 이 정보를 얻으려면 관리 지점에 의존합니다.
 
 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요.  
 
 > [!Note]  
 > 응용 프로그램 카탈로그 웹 사이트 지점 및 웹 서비스 지점은 1806에서 더 이상 *필요하지 않지만* *지원은 계속*됩니다. 
 > 
-> 응용 프로그램 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
+> 애플리케이션 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
 
 
-### <a name="specify-the-visibility-of-the-application-catalog-website-link-in-software-center"></a>소프트웨어 센터에서 응용 프로그램 카탈로그 웹 사이트 링크의 표시 여부 지정 
+### <a name="specify-the-visibility-of-the-application-catalog-website-link-in-software-center"></a>소프트웨어 센터에서 애플리케이션 카탈로그 웹 사이트 링크의 표시 여부 지정 
 <!--1358214--> 소프트웨어 센터의 **설치 상태** 노드에 **응용 프로그램 카탈로그 웹 사이트 열기** 링크를 표시할지 여부를 제어할 수 있습니다.  
 
 자세한 내용은 [소프트웨어 센터 클라이언트 설정](/sccm/core/clients/deploy/about-client-settings#software-center)을 참조하세요.
 
 > [!Note]  
-> 응용 프로그램 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
+> 애플리케이션 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
 
 
 ### <a name="custom-tab-for-webpage-in-software-center"></a>소프트웨어 센터의 웹 페이지용 사용자 지정 탭
@@ -413,7 +413,7 @@ Version 1806 drops support for the following products:
 
 - IT 지원 센터: 기술 자료 검색 또는 지원 티켓 열기와 같은 IT 셀프 서비스 작업  
 
-- 최종 사용자 설명서: 조직의 사용자가 응용 프로그램을 사용하는 방법이나 Windows 10으로 업그레이드하는 방법과 같은 다양한 IT 토픽에 대한 아티클  
+- 최종 사용자 설명서: 조직의 사용자가 애플리케이션을 사용하는 방법이나 Windows 10으로 업그레이드하는 방법과 같은 다양한 IT 토픽에 대한 아티클  
 
 자세한 내용은 [소프트웨어 센터 클라이언트 설정](/sccm/core/clients/deploy/about-client-settings#software-center) 및 [소프트웨어 센터 사용자 가이드](/sccm/core/understand/software-center)를 참조하세요.
 

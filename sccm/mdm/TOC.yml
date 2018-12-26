@@ -78,22 +78,22 @@ items:
       href: deploy-use/create-configuration-items-for-android-for-work-devices-managed-without-the-client.md
   - name: Intune에 등록된 디바이스 동기화
     href: deploy-use/sync-intune-device.md
-  - name: 응용 프로그램 관리
+  - name: 애플리케이션 관리
     href: deploy-use/management-tasks-applications.md
     items:
-    - name: iOS 응용 프로그램 만들기
+    - name: iOS 애플리케이션 만들기
       href: deploy-use/creating-ios-applications.md
     - name: iOS 앱 구성 정책
       href: deploy-use/configure-ios-apps-with-app-configuration-policies.md
     - name: iOS 대량 구매 앱
       href: deploy-use/manage-volume-purchased-ios-apps.md
-    - name: Windows Phone 응용 프로그램 만들기
+    - name: Windows Phone 애플리케이션 만들기
       href: deploy-use/creating-windows-phone-applications.md
-    - name: Android 응용 프로그램 만들기
+    - name: Android 애플리케이션 만들기
       href: deploy-use/creating-android-applications.md
     - name: Android 앱 구성 정책
       href: deploy-use/configure-android-apps-with-app-configuration-policies.md
-    - name: 모바일 응용 프로그램 관리 정책
+    - name: 모바일 애플리케이션 관리 정책
       href: deploy-use/protect-apps-using-mam-policies.md
     - name: Managed Browser 정책
       href: deploy-use/manage-internet-access-using-managed-browser-policies.md
@@ -192,7 +192,7 @@ items:
       href: deploy-use/bulk-enroll-devices-on-premises-mdm.md
   - name: 디바이스 관리
     href: deploy-use/onprem-manage-devices.md
-  - name: 응용 프로그램 관리
+  - name: 애플리케이션 관리
     href: deploy-use/onprem-manage-applications.md
   - name: 데이터 및 장치 보호
     href: deploy-use/onprem-protect-data-devices.md

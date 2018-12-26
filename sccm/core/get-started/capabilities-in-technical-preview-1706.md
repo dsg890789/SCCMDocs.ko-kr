@@ -212,13 +212,13 @@ ms.locfileid: "32342922"
 
 ## <a name="specify-a-different-content-location-for-install-content-and-uninstall-content"></a>설치 콘텐츠 및 제거 콘텐츠에 대해 다른 콘텐츠 위치 지정
 <!-- 1097546 -->
-이제 Configuration Manager에서 앱에 대한 설치 파일을 포함하는 설치 위치를 지정합니다. 설치 위치를 지정하면 응용 프로그램 콘텐츠에 대한 제거 위치로도 사용됩니다.
-사용자 의견에 따르면 배포된 응용 프로그램을 제거하려고 하고 앱 콘텐츠가 클라이언트 컴퓨터에 없는 경우 클라이언트가 응용 프로그램이 제거되기 전에 모든 앱 설치 파일을 다시 다운로드됩니다.
+이제 Configuration Manager에서 앱에 대한 설치 파일을 포함하는 설치 위치를 지정합니다. 설치 위치를 지정하면 애플리케이션 콘텐츠에 대한 제거 위치로도 사용됩니다.
+사용자 의견에 따르면 배포된 애플리케이션을 제거하려고 하고 앱 콘텐츠가 클라이언트 컴퓨터에 없는 경우 클라이언트가 애플리케이션이 제거되기 전에 모든 앱 설치 파일을 다시 다운로드됩니다.
 이 문제를 해결하기 위해 이제 설치 콘텐츠 위치 및 선택적 제거 콘텐츠 위치를 둘 다 지정할 수 있습니다. 또한 제거 콘텐츠 위치를 지정하지 않도록 선택할 수도 있습니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 
-1. 응용 프로그램의 배포 유형 속성에서 **콘텐츠** 탭을 클릭합니다.
+1. 애플리케이션의 배포 유형 속성에서 **콘텐츠** 탭을 클릭합니다.
 2. 평소처럼 **설치 콘텐츠 위치**를 구성합니다.
 3. **제거 콘텐츠 설정**에서 다음 중 하나를 선택합니다.
     - **설치 콘텐츠와 같음** - 응용 프로그램을 설치하든, 제거하든 관계없이, 동일한 콘텐츠 위치가 사용됩니다.
@@ -260,7 +260,7 @@ ms.locfileid: "32342922"
 
 **전제 조건**
 -   연결을 추가하려면 Configuration Manager 환경에서 먼저 [서비스 연결 지점](/sccm/core/servers/deploy/configure/about-the-service-connection-point)을 [온라인 모드](/sccm/core/servers/deploy/configure/about-the-service-connection-point#a-namebkmkmodesa-modes-of-operation)로 구성해야 합니다. 사용자 환경에 연결을 추가하면 이 사이트 시스템 역할을 실행하는 컴퓨터에 Microsoft Monitoring Agent도 설치됩니다.
--   Configuration Manager를 "웹 응용 프로그램 및/또는 Web API" 관리 도구로 등록하고 [이 등록의 클라이언트 ID](https://azure.microsoft.com/documentation/articles/active-directory-integrating-applications/)를 받습니다.
+-   Configuration Manager를 "웹 애플리케이션 및/또는 Web API" 관리 도구로 등록하고 [이 등록의 클라이언트 ID](https://azure.microsoft.com/documentation/articles/active-directory-integrating-applications/)를 받습니다.
 -   Azure Active Directory에서 등록된 관리 도구에 대한 클라이언트 키를 만듭니다.
 -   Azure 관리 포털에서 [Configuration Manager에 OMS에 대한 사용 권한 제공](https://azure.microsoft.com/documentation/articles/log-analytics-sccm/#provide-configuration-manager-with-permissions-to-oms)에 설명된 대로 OMS에 액세스할 수 있는 권한을 등록된 웹앱에 제공합니다.
 
@@ -277,7 +277,7 @@ ms.locfileid: "32342922"
 3.  **앱** 페이지에서 **Azure 환경**(기술 미리 보기는 공용 클라우드만 지원함)을 지정합니다. 그런 후 **가져오기**를 클릭하여 **앱 가져오기** 창을 엽니다.
 
 4.  **앱 가져오기** 창에서 Azure AD에 이미 존재하는 웹앱에 대한 세부 정보를 지정합니다.
-    -   Azure AD 테넌트 이름을 입력합니다. 그런 다음 테넌트 ID, 응용 프로그램 이름, 클라이언트 ID, Azure Web App의 비밀 키, 앱 ID URI를 지정합니다.
+    -   Azure AD 테넌트 이름을 입력합니다. 그런 다음 테넌트 ID, 애플리케이션 이름, 클라이언트 ID, Azure Web App의 비밀 키, 앱 ID URI를 지정합니다.
     -   **확인**을 클릭하고 성공하면 **확인**을 클릭하여 계속합니다.
 
 5.   **구성** 페이지에서 업그레이드 준비 상태에 대한 이 연결에 사용하려는 구독, 리소스 그룹 및 Windows Analytics 작업 영역을 지정합니다.  
@@ -530,8 +530,8 @@ Configuration Manager에서 인증서 등록 지점 역할을 추가할 때 Entr
 
 새 디바이스 준수 규칙을 사용해 보려면 [디바이스 규정 준수 정책 만들기 및 배포](https://docs.microsoft.com/sccm/mdm/deploy-use/create-compliance-policy)를 참조하세요.
 
-## <a name="new-mobile-application-management-policy-settings"></a>새 모바일 응용 프로그램 관리 정책 설정
-이 릴리스부터 3개의 새 MAM(모바일 응용 프로그램 관리) 정책 설정을 사용할 수 있습니다.
+## <a name="new-mobile-application-management-policy-settings"></a>새 모바일 애플리케이션 관리 정책 설정
+이 릴리스부터 3개의 새 MAM(모바일 애플리케이션 관리) 정책 설정을 사용할 수 있습니다.
 
 - **화면 캡처 차단(Android 장치만 해당):** 이 앱을 사용할 때 장치의 화면 캡처 기능을 차단하도록 지정합니다.
 
@@ -550,7 +550,7 @@ Configuration Manager에서 인증서 등록 지점 역할을 추가할 때 Entr
 2. **홈** 탭의 **구독** 그룹에서 **플랫폼 구성**을 선택하고 **Android** 또는 **iOS**를 선택합니다.
 3. **Intune에서 미리 선언된 장치만 등록 허용**을 선택합니다.
 
-## <a name="android-for-work-application-management-policy-for-copy-paste"></a>복사-붙여넣기에 대한 Android for Work 응용 프로그램 관리 정책
+## <a name="android-for-work-application-management-policy-for-copy-paste"></a>복사-붙여넣기에 대한 Android for Work 애플리케이션 관리 정책
 Android for Work 구성 항목 **회사 프로필과 개인 프로필 간의 데이터 공유 허용**에 대한 설정 설명을 업데이트했습니다.
 
 |1706 Technical Preview 이전 | 새 옵션 이름 | 동작|

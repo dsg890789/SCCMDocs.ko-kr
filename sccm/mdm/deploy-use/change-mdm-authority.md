@@ -125,7 +125,7 @@ MDM 기관 변경이 완료되면 다음 단계를 검토합니다.
 
 - [Android for Work](/sccm/mdm/deploy-use/create-configuration-items-for-android-for-work-devices-managed-without-the-client)를 하이브리드 테넌트로 활성화한 후 Intune 독립 실행형으로 테넌트를 마이그레이션하면 등록 제한이 적용되는 Android for Work 설정이 허용이 아닌 차단됨으로 표시될 수 있습니다. Android for Work 등록을 다시 활성화하려면 이를 **허용**으로 수동 설정합니다.<!--512117-->  
 
-- MDM 기관 변경 후에는 Apple VPP 토큰 및 연결된 [대량 구매한 iOS 앱](/sccm/mdm/deploy-use/manage-volume-purchased-ios-apps)이 자동으로 제거되지 않습니다. 이 정보를 정리하려면 [Apple VPP 토큰 삭제](/sccm/mdm/deploy-use/manage-volume-purchased-ios-apps#delete-an-apple-vpp-token)의 절차를 따르세요. 작업이 완료되면 사이트에 의해 토큰이 제거됩니다. 사용 허가된 스토어 응용 프로그램 노드에서도 해당 토큰에 대한 모든 응용 프로그램 메타데이터가 제거됩니다.<!--SCCMDocs issue 579-->  
+- MDM 기관 변경 후에는 Apple VPP 토큰 및 연결된 [대량 구매한 iOS 앱](/sccm/mdm/deploy-use/manage-volume-purchased-ios-apps)이 자동으로 제거되지 않습니다. 이 정보를 정리하려면 [Apple VPP 토큰 삭제](/sccm/mdm/deploy-use/manage-volume-purchased-ios-apps#delete-an-apple-vpp-token)의 절차를 따르세요. 작업이 완료되면 사이트에 의해 토큰이 제거됩니다. 사용 허가된 스토어 애플리케이션 노드에서도 해당 토큰에 대한 모든 애플리케이션 메타데이터가 제거됩니다.<!--SCCMDocs issue 579-->  
 
     드물지만, 사이트가 관리 개체를 삭제할 수 없다는 오류가 표시 될 수도 있습니다.  
 

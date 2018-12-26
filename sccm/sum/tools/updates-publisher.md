@@ -22,7 +22,7 @@ ms.locfileid: "32347334"
 
 *적용 대상: System Center Updates Publisher*
 
-System Center Updates Publisher(Updates Publisher)는 독립 소프트웨어 공급업체 또는 LOB(기간 업무) 응용 프로그램 개발자가 사용자 지정 업데이트를 관리할 수 있도록 하는 독립 실행형 도구입니다. 여기에는 드라이버 및 업데이트 번들과 같은 종속성이 있는 업데이트가 포함됩니다.
+System Center Updates Publisher(Updates Publisher)는 독립 소프트웨어 공급업체 또는 LOB(기간 업무) 애플리케이션 개발자가 사용자 지정 업데이트를 관리할 수 있도록 하는 독립 실행형 도구입니다. 여기에는 드라이버 및 업데이트 번들과 같은 종속성이 있는 업데이트가 포함됩니다.
 
 Updates Publisher를 사용하여 다음을 수행할 수 있습니다.
 

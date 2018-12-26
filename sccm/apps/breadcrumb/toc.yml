@@ -1,15 +1,22 @@
+items:
 - name: Docs
   tocHref: /
   topicHref: /
   items:
-    - name: Enterprise Mobility + Security
-      tocHref: /
-      topicHref: /enterprise-mobility-security
+  - name: Enterprise Mobility + Security
+    tocHref: /
+    topicHref: /enterprise-mobility-security
+    items:
+    - name: Configuration Manager
+      tocHref: /sccm/
+      topicHref: /sccm/
       items:
-        - name: Configuration Manager
-          tocHref: /sccm/
-          topicHref: /sccm/
-          items:
-            - name: 응용 프로그램 관리
-              tocHref: /sccm/osd/deploy-use
-              topicHref: /sccm/apps/understand/introduction-to-application-management
+      - name: 애플리케이션 관리
+        tocHref: /sccm/osd/deploy-use
+        topicHref: /sccm/apps/understand/introduction-to-application-management
+ms.openlocfilehash: 10e92a8affa3c08353303d4bbcf9e1d7692cc2c4
+ms.sourcegitcommit: 06d490d526070e17d77e86bc6c200899ded911cb
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38967031"

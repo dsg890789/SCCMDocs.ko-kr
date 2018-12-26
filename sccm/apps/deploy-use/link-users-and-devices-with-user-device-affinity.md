@@ -117,7 +117,7 @@ System Center Configuration Manager(Configuration Manager)의 사용자 디바�
 
 ### <a name="set-up-a-user-device-affinity"></a>사용자 디바이스 선호도 설정  
 
-1.  응용 프로그램 카탈로그에서 **내 시스템**을 선택합니다.  
+1.  애플리케이션 카탈로그에서 **내 시스템**을 선택합니다.  
 
 2.  **이 컴퓨터에서 정기적으로 작업합니다.** 옵션을 선택합니다.  
 

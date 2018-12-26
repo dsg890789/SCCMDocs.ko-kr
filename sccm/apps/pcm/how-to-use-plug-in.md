@@ -39,9 +39,9 @@ Package Conversion Manager 플러그 인은 패키지마다 한 번씩 실행됩
 
 1.  Configuration Manager 패키지를 읽습니다.  
 
-2.  패키지에서 응용 프로그램을 만들고 기본 특성을 추가합니다.  
+2.  패키지에서 애플리케이션을 만들고 기본 특성을 추가합니다.  
 
-3.  응용 프로그램을 분석하여 패키지 준비 상태를 확인합니다.  
+3.  애플리케이션을 분석하여 패키지 준비 상태를 확인합니다.  
 
 4.  Package Conversion Manager 작업에 따라 다음 작업 중 하나를 수행합니다.  
 
@@ -56,15 +56,15 @@ Package Conversion Manager 플러그 인은 패키지마다 한 번씩 실행됩
 
 1.  Configuration Manager 패키지를 읽습니다.  
 
-2.  패키지에서 응용 프로그램을 만들고 기본 특성을 추가합니다.  
+2.  패키지에서 애플리케이션을 만들고 기본 특성을 추가합니다.  
 
-3.  응용 프로그램을 XML로 변환합니다. 파일을 디스크에 저장합니다.  
+3.  애플리케이션을 XML로 변환합니다. 파일을 디스크에 저장합니다.  
 
-4.  플러그 인 스크립트를 실행하여 응용 프로그램 XML을 수정합니다. 자세한 내용은 [Package Conversion Manager 플러그 인 구성 XML에 대한 기술 참조](/sccm/apps/pcm/plugin-config-xml)를 참고하세요.  
+4.  플러그 인 스크립트를 실행하여 애플리케이션 XML을 수정합니다. 자세한 내용은 [Package Conversion Manager 플러그 인 구성 XML에 대한 기술 참조](/sccm/apps/pcm/plugin-config-xml)를 참고하세요.  
 
-5.  응용 프로그램 XML을 Configuration Manager 응용 프로그램으로 변환합니다.  
+5.  애플리케이션 XML을 Configuration Manager 애플리케이션으로 변환합니다.  
 
-6.  응용 프로그램을 분석하여 패키지 준비 상태를 확인합니다.  
+6.  애플리케이션을 분석하여 패키지 준비 상태를 확인합니다.  
 
 7.  Package Conversion Manager 작업에 따라 다음 작업 중 하나를 수행합니다.  
 

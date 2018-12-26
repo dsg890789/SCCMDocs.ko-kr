@@ -73,7 +73,7 @@ Configuration Manager 버전은 [해당 버전의 지원](/sccm/core/servers/man
 | ![지원 안 됨](media/Red_X.png) = **지원 안 됨** |
 
  > [!NOTE]  
- > 버전 1802부터 Configuration Manager는 Windows 10 ARM64 디바이스의 클라이언트를 지원합니다. 기존 클라이언트 관리 기능도 이러한 새 디바이스에서 작동합니다. 예를 들어 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 업데이트, 응용 프로그램 관리 등입니다. OS 배포는 현재 지원되지 않습니다. <!-- 1353704 --> 
+ > 버전 1802부터 Configuration Manager는 Windows 10 ARM64 디바이스의 클라이언트를 지원합니다. 기존 클라이언트 관리 기능도 이러한 새 디바이스에서 작동합니다. 예를 들어 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 업데이트, 애플리케이션 관리 등입니다. OS 배포는 현재 지원되지 않습니다. <!-- 1353704 --> 
 
 Windows 수명 주기에 대한 자세한 내용은 [Windows 수명 주기 팩트 시트](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)를 참조하세요.
 

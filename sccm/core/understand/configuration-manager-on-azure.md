@@ -77,7 +77,7 @@ Configuration Manager 사이트 서버에도 사용할 수 있습니다. 예를 
 VM에서 Microsoft SQL Server를 사용해야 합니다. Configuration Manager는 현재 Azure SQL Server를 지원하지 않습니다. 그러나 AlwaysOn 가용성 그룹 등의 기능을 SQL Server에 사용할 수 있습니다. [AlwaysOn 가용성 그룹](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database)은 권장 사항이며 Configuration Manager 버전 1602에서 공식적으로 지원됩니다.
 
 ### <a name="can-i-use-azure-load-balancers-with-site-system-roles-like-management-points--or-software-update-points"></a>Azure 부하 분산 장치를 관리 지점 또는 소프트웨어 업데이트 지점과 같은 사이트 시스템 역할과 함께 사용할 수 있나요?
-Configuration Manager는 Azure 부하 분산 장치에서 테스트되지 않았지만 기능이 응용 프로그램에 투명한 경우 정상적인 작동에 부정적인 영향을 주지 않아야 합니다.
+Configuration Manager는 Azure 부하 분산 장치에서 테스트되지 않았지만 기능이 애플리케이션에 투명한 경우 정상적인 작동에 부정적인 영향을 주지 않아야 합니다.
 
 
 ## <a name="performance"></a>성능

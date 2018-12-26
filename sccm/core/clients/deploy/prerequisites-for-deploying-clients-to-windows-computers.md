@@ -58,7 +58,7 @@ Configuration Manager 클라이언트에는 외부 종속성이 있습니다. �
 |Microsoft Visual C++ 2005 재배포 가능 버전 8.0.50727.42|버전 1606 이전에서는 Microsoft SQL Server Compact 작업을 지원하는 데 필요합니다.|  
 |Windows 이미징 API 6.0.6001.18000|Configuration Manager에서 Windows 이미지 파일(.wim)을 관리하도록 허용하는 데 필요합니다.|  
 |Microsoft Policy Platform 1.2.3514.0|클라이언트에서 호환성 설정을 평가하는 데 필요합니다.|  
-|Microsoft Silverlight 5.1.41212.0|응용 프로그램 카탈로그 웹 사이트 사용자 환경을 지원하는 데 필요합니다. Configuration Manager 1802부터 클라이언트는 Silverlight를 자동으로 설치하지 않습니다. 응용 프로그램 카탈로그의 기본 기능이 이제는 소프트웨어 센터에 포함됩니다. 응용 프로그램 카탈로그 웹 사이트에 대한 지원은 1806 버전에서 종료됩니다.<!--1356195-->|  
+|Microsoft Silverlight 5.1.41212.0|애플리케이션 카탈로그 웹 사이트 사용자 환경을 지원하는 데 필요합니다. Configuration Manager 1802부터 클라이언트는 Silverlight를 자동으로 설치하지 않습니다. 애플리케이션 카탈로그의 기본 기능이 이제는 소프트웨어 센터에 포함됩니다. 애플리케이션 카탈로그 웹 사이트에 대한 지원은 1806 버전에서 종료됩니다.<!--1356195-->|  
 |Microsoft .NET Framework 버전 4.5.2|클라이언트 작업을 지원하는 데 필요합니다. Microsoft.NET Framework 버전 4.5 이상이 설치되지 않은 경우 클라이언트 컴퓨터에 자동으로 설치됩니다. 자세한 내용은 [Microsoft .NET Framework 버전 4.5.2에 대한 추가 세부 정보](#dotNet)를 참조하세요.|  
 |Microsoft SQL Server Compact 4.0 SP1 구성 요소|클라이언트 작업과 관련된 정보를 저장하는 데 필요합니다.|  
 
@@ -70,7 +70,7 @@ Configuration Manager 클라이언트에는 외부 종속성이 있습니다. �
 
 Microsoft.NET Framework 버전 4.5.2의 설치를 완료하려면 다시 시작이 필요할 수 있습니다. 시스템 트레이에 **다시 시작 필요** 알림이 표시됩니다. 다음과 같은 일반적인 시나리오에서는 클라이언트 컴퓨터를 다시 시작해야 합니다.  
 
--   컴퓨터에서 .NET 응용 프로그램이나 서비스를 실행 중입니다.  
+-   컴퓨터에서 .NET 애플리케이션이나 서비스를 실행 중입니다.  
 
 -   .NET 설치에 필요한 소프트웨어 업데이트가 하나 이상 없습니다.  
 
@@ -179,7 +179,7 @@ Configuration Manager 사이트 서버 도메인의 리소스에 액세스하려
    -   원본 파일을 다운로드하려면 클라이언트 컴퓨터가 배포 지점이나 관리 지점과 통신해야 합니다.  
 
 
-응용 프로그램 관리를 사용하여 Configuration Manager 클라이언트를 업그레이드하는 데 필요한 보안 권한은 [응용 프로그램 관리에 대한 보안 및 개인 정보](/sccm/apps/plan-design/security-and-privacy-for-application-management)를 참조하세요.  
+애플리케이션 관리를 사용하여 Configuration Manager 클라이언트를 업그레이드하는 데 필요한 보안 권한은 [애플리케이션 관리에 대한 보안 및 개인 정보](/sccm/apps/plan-design/security-and-privacy-for-application-management)를 참조하세요.  
 
 
 #### <a name="automatic-client-upgrades"></a>자동 클라이언트 업그레이드  

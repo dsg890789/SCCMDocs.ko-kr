@@ -21,7 +21,7 @@ ms.locfileid: "32347487"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 작업 순서는 사용자 환경 내에서 다양한 작업을 자동화하는 데 사용됩니다. 이러한 작업은 주로 운영 체제 배포를 위해 설계되고 테스트됩니다.  Configuration Manager에는 [응용 프로그램 설치](../../apps/understand/introduction-to-application-management.md), [소프트웨어 업데이트 설치](../../sum/understand/software-updates-introduction.md), [구성 설정](../../compliance/understand/ensure-device-compliance.md), 사용자 지정 자동화 등 시나리오에 사용하는 기본 기술인 기타 많은 기능이 있습니다. 또한 [Orchestrator](https://technet.microsoft.com/library/hh237242.aspx) , [서비스 관리 자동화](https://technet.microsoft.com/library/dn469260.aspx) 등 고려해야 하는 기타 Microsoft System Center 자동화 기술도 있습니다.  
+System Center Configuration Manager의 작업 순서는 사용자 환경 내에서 다양한 작업을 자동화하는 데 사용됩니다. 이러한 작업은 주로 운영 체제 배포를 위해 설계되고 테스트됩니다.  Configuration Manager에는 [애플리케이션 설치](../../apps/understand/introduction-to-application-management.md), [소프트웨어 업데이트 설치](../../sum/understand/software-updates-introduction.md), [구성 설정](../../compliance/understand/ensure-device-compliance.md), 사용자 지정 자동화 등 시나리오에 사용하는 기본 기술인 기타 많은 기능이 있습니다. 또한 [Orchestrator](https://technet.microsoft.com/library/hh237242.aspx) , [서비스 관리 자동화](https://technet.microsoft.com/library/dn469260.aspx) 등 고려해야 하는 기타 Microsoft System Center 자동화 기술도 있습니다.  
 
 작업 순서의 장점은 유연성에 있으며, 이러한 작업 순서를 사용하여 운영 체제 배포와 독립적으로 클라이언트 설정 구성, 소프트웨어 배포, 드라이버 업데이트, 사용자 환경 편집 및 기타 작업을 수행할 수 있습니다. 개수와 상관없이 작업을 추가하는 사용자 지정 작업 순서를 만들 수 있습니다. Configuration Manager에서 비운영 체제 배포에 대한 사용자 지정 작업 순서 사용이 지원됩니다. 그러나 작업 순서로 인해 원치 않거나 일관성이 없는 결과가 발생하는 경우 작업을 간소화하는 방법을 살펴보세요. 여러 작업 순서로 작업을 나누어 더 간단한 단계를 사용하거나 작업 순서를 만들고 테스트하는 단계별 방법을 사용하면 됩니다.
 

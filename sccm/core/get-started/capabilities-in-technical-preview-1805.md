@@ -130,8 +130,8 @@ Configuration Manager는 기존 클래식 클라우드 배포 지점을 Azure Re
     - 지원되지 않는 맬웨어 방지 클라이언트 버전
 - 소프트웨어 센터
     - 새 버전의 Software Center 사용
-- 응용 프로그램
-    - 배포가 없는 응용 프로그램
+- 애플리케이션
+    - 배포가 없는 애플리케이션
 - 간소화된 관리
     - 비 CB 클라이언트 버전
 - 컬렉션
@@ -144,7 +144,7 @@ Configuration Manager는 기존 클래식 클라우드 배포 지점을 Azure Re
 ## <a name="transition-device-configuration-workload-to-intune-using-co-management"></a>공동 관리를 사용하여 디바이스 구성 워크로드를 Intune으로 전환
 <!--1357903-->
 
-이제 공동 관리를 사용하도록 설정한 후 Configuration Manager에서 Intune으로 디바이스 구성 워크로드를 전환할 수 있습니다. 이 워크로드를 전환하면 Intune을 사용하여 MDM 정책을 배포할 수 있지만 응용 프로그램 배포에는 Configuration Manager를 계속 사용할 수 있습니다. 
+이제 공동 관리를 사용하도록 설정한 후 Configuration Manager에서 Intune으로 디바이스 구성 워크로드를 전환할 수 있습니다. 이 워크로드를 전환하면 Intune을 사용하여 MDM 정책을 배포할 수 있지만 애플리케이션 배포에는 Configuration Manager를 계속 사용할 수 있습니다. 
 
 이 워크로드를 전환하려면 공동 관리 속성 페이지로 이동하고 슬라이더 막대를 Configuration Manager에서 **파일럿** 또는 **모두**로 이동합니다. 자세한 내용은 [Windows 10 디바이스의 공동 관리](/sccm/core/clients/manage/co-management-overview)를 참조하세요.
 
@@ -299,7 +299,7 @@ CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스�
 
 - 클라우드 관리를 위해 Azure AD에 사이트 등록.  
 
-    - 사이트에 대한 이 필수 구성 요소를 이미 충족한 경우 Azure AD 응용 프로그램을 업데이트해야 합니다. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고, **Cloud Services**를 확장한 다음, **Azure Active Directory 테넌트**를 선택합니다. Azure AD 테넌트를 선택하고 **응용 프로그램** 창에서 웹 응용 프로그램을 선택한 다음, 리본에서 **응용 프로그램 설정 업데이트**를 클릭합니다.  
+    - 사이트에 대한 이 필수 구성 요소를 이미 충족한 경우 Azure AD 애플리케이션을 업데이트해야 합니다. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고, **Cloud Services**를 확장한 다음, **Azure Active Directory 테넌트**를 선택합니다. Azure AD 테넌트를 선택하고 **애플리케이션** 창에서 웹 애플리케이션을 선택한 다음, 리본에서 **애플리케이션 설정 업데이트**를 클릭합니다.  
 
 - Windows 10 버전 1803을 실행하고 Azure AD에 조인된 클라이언트. 이 요구 사항은 기술적으로 [시나리오 3](#bkmk_token3)에만 적용됩니다. 
 
@@ -320,7 +320,7 @@ CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스�
 
 
 ### <a name="known-issues"></a>알려진 문제
-- 사용자가 소프트웨어 센터에서 사용 가능한 대상으로 지정된 응용 프로그램을 볼 수 없습니다.  
+- 사용자가 소프트웨어 센터에서 사용 가능한 대상으로 지정된 애플리케이션을 볼 수 없습니다.  
 
 - OS 배포 시나리오에는 여전히 네트워크 액세스 계정이 필요합니다.  
 

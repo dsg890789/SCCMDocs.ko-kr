@@ -37,7 +37,7 @@ ms.locfileid: "32351907"
 
 -   Microsoft OneNote(Android 및 iOS)
 
-Office 데스크톱 응용 프로그램은 다음을 실행하는 SharePoint Online에 액세스할 수 있습니다.  
+Office 데스크톱 애플리케이션은 다음을 실행하는 SharePoint Online에 액세스할 수 있습니다.  
 
 -   [최신 인증](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) 이 사용되는 Office 데스크톱 2013 이상  
 
@@ -159,7 +159,7 @@ Office 데스크톱 응용 프로그램은 다음을 실행하는 SharePoint Onl
 
     -   **장치가 규정을 준수해야 함**: PC가 Intune에 등록되어 있고 규정을 준수해야 합니다. PC가 등록되어 있지 않은 경우 등록 방법에 대한 지침이 포함된 메시지가 표시됩니다.  
 
-4.  SharePoint Online 및 비즈니스용 OneDrive에 대한 **브라우저 액세스**에서, 지원되는 브라우저인 Safari(iOS) 및 Chrome(Android)을 통해서만 Exchange Online에 대한 액세스를 허용하도록 선택할 수 있습니다. 다른 브라우저에서의 액세스는 차단됩니다. OneDrive에 대한 응용 프로그램 액세스에 선택한 것과 동일한 플랫폼 제한 사항이 여기에도 적용됩니다.
+4.  SharePoint Online 및 비즈니스용 OneDrive에 대한 **브라우저 액세스**에서, 지원되는 브라우저인 Safari(iOS) 및 Chrome(Android)을 통해서만 Exchange Online에 대한 액세스를 허용하도록 선택할 수 있습니다. 다른 브라우저에서의 액세스는 차단됩니다. OneDrive에 대한 애플리케이션 액세스에 선택한 것과 동일한 플랫폼 제한 사항이 여기에도 적용됩니다.
 
     **Android** 장치에서 사용자는 다음과 같이 등록된 장치에서 **브라우저 액세스 사용** 옵션을 사용해야 합니다.
     1.  **회사 포털 앱**을 시작합니다.

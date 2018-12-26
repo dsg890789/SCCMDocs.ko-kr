@@ -265,16 +265,16 @@ ccmsetup.msi로 설치된 후에 ccmsetup.exe에 전달되는 명령줄 매개 �
 
 ### <a name="aadclientappid"></a>AADCLIENTAPPID
 
-Azure AD(Azure Active Directory) 클라이언트 앱 식별자를 지정합니다. 클라우드 관리에 대한 [Azure 서비스를 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)할 때 클라이언트 앱을 만들거나 가져옵니다. Azure 관리자가 Azure Portal에서 이 속성에 대한 값을 가져올 수 있습니다. 자세한 내용은 [응용 프로그램 ID 가져오기](/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-application-id-and-authentication-key)를 참조하세요. **AADCLIENTAPPID** 속성의 경우 해당 응용 프로그램 ID는 "원시" 응용 프로그램 형식을 위한 것입니다.
+Azure AD(Azure Active Directory) 클라이언트 앱 식별자를 지정합니다. 클라우드 관리에 대한 [Azure 서비스를 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)할 때 클라이언트 앱을 만들거나 가져옵니다. Azure 관리자가 Azure Portal에서 이 속성에 대한 값을 가져올 수 있습니다. 자세한 내용은 [애플리케이션 ID 가져오기](/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-application-id-and-authentication-key)를 참조하세요. **AADCLIENTAPPID** 속성의 경우 해당 응용 프로그램 ID는 "원시" 응용 프로그램 형식을 위한 것입니다.
 
 예: `ccmsetup.exe AADCLIENTAPPID=aa28e7f1-b88a-43cd-a2e3-f88b257c863b`
 
 
 ### <a name="aadresourceuri"></a>AADRESOURCEURI
 
-Azure AD 서버 앱 식별자를 지정합니다. 클라우드 관리에 대한 [Azure 서비스를 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)할 때 서버 앱을 만들거나 가져옵니다. 서버 앱을 만드는 경우 서버 응용 프로그램을 만들기 대화 상자에서 해당 속성은 **앱 ID URI**입니다.
+Azure AD 서버 앱 식별자를 지정합니다. 클라우드 관리에 대한 [Azure 서비스를 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)할 때 서버 앱을 만들거나 가져옵니다. 서버 앱을 만드는 경우 서버 애플리케이션을 만들기 대화 상자에서 해당 속성은 **앱 ID URI**입니다.
 
-Azure 관리자가 Azure Portal에서 이 속성에 대한 값을 가져올 수 있습니다. **Azure Active Directory** 블레이드의 **앱 등록**에서 서버 앱을 찾습니다. 이 앱은 "웹앱 / API" 응용 프로그램 형식입니다. 앱을 열고 **설정** 및 **속성**을 차례로 클릭합니다. 이 AADRESOURCEURI 클라이언트 설치 속성에 대한 **앱 ID URI** 값을 사용합니다.
+Azure 관리자가 Azure Portal에서 이 속성에 대한 값을 가져올 수 있습니다. **Azure Active Directory** 블레이드의 **앱 등록**에서 서버 앱을 찾습니다. 이 앱은 "웹앱 / API" 애플리케이션 형식입니다. 앱을 열고 **설정** 및 **속성**을 차례로 클릭합니다. 이 AADRESOURCEURI 클라이언트 설치 속성에 대한 **앱 ID URI** 값을 사용합니다.
 
 예: `ccmsetup.exe AADRESOURCEURI=https://contososerver`
 
@@ -433,7 +433,7 @@ Example: `ccmsetup.exe AADTENANTNAME=Contoso`
 
 ### <a name="ccminstalldir"></a>CCMINSTALLDIR
 
- Configuration Manager 클라이언트 파일이 설치되는 폴더를 식별하고, 기본적으로 *%Windir%* \CCM입니다. 이러한 파일이 설치되는 위치에 관계없이 Ccmcore.dll 파일은 항상 *%Windir%\System32* 폴더에 설치됩니다. 또한 64비트 운영 체제에서 Ccmcore.dll 파일의 복사본은 항상 *%Windir%* \SysWOW64 폴더에 설치됩니다. 이 파일은 Configuration Manager SDK에서 32비트 버전의 클라이언트 API를 사용하는 32비트 응용 프로그램을 지원합니다.  
+ Configuration Manager 클라이언트 파일이 설치되는 폴더를 식별하고, 기본적으로 *%Windir%* \CCM입니다. 이러한 파일이 설치되는 위치에 관계없이 Ccmcore.dll 파일은 항상 *%Windir%\System32* 폴더에 설치됩니다. 또한 64비트 운영 체제에서 Ccmcore.dll 파일의 복사본은 항상 *%Windir%* \SysWOW64 폴더에 설치됩니다. 이 파일은 Configuration Manager SDK에서 32비트 버전의 클라이언트 API를 사용하는 32비트 애플리케이션을 지원합니다.  
 
  예: `CCMSetup.exe CCMINSTALLDIR="C:\ConfigMgr"`  
 
@@ -496,7 +496,7 @@ Configuration Manager 클라이언트 컴퓨터에서 전송한 상태 메시지
  클라이언트 설치 전에 Microsoft App-V(Application Virtualization)의 최소 필수 버전을 확인하지 않도록 지정합니다.  
 
 > [!IMPORTANT]  
->  App-V를 설치하지 않고 Configuration Manager 클라이언트를 설치하면 가상 응용 프로그램을 배포할 수 없습니다.  
+>  App-V를 설치하지 않고 Configuration Manager 클라이언트를 설치하면 가상 애플리케이션을 배포할 수 없습니다.  
 
  예: `CCMSetup.exe IGNOREAPPVVERSIONCHECK=TRUE`  
 
@@ -563,7 +563,7 @@ Configuration Manager 클라이언트 컴퓨터에서 전송한 상태 메시지
 <!-- For 1602 and earlier, SMSCACHESIZE specifies the size of the client cache folder in megabyte (MB) or as a percentage when used with the PERCENTDISKSPACE or PERCENTFREEDISKSPACE property. If this property isn't set, the folder defaults to a maximum size of 5120 MB. The lowest value that you can specify is 1 MB.  -->
 
 > [!NOTE]  
->  다운로드해야 할 새 패키지로 인해 폴더가 최대 크기를 초과하고 사용 가능한 공간을 충분히 확보하기 위해 폴더를 제거할 수 없는 경우 패키지 다운로드가 실패하고 프로그램 또는 응용 프로그램이 실행되지 않습니다.  
+>  다운로드해야 할 새 패키지로 인해 폴더가 최대 크기를 초과하고 사용 가능한 공간을 충분히 확보하기 위해 폴더를 제거할 수 없는 경우 패키지 다운로드가 실패하고 프로그램 또는 애플리케이션이 실행되지 않습니다.  
 
 이 설정은 기존 클라이언트를 업그레이드하고 클라이언트에서 소프트웨어 업데이트를 다운로드하는 경우 무시됩니다.  
 

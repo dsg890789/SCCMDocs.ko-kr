@@ -76,8 +76,8 @@ Windows 컴퓨터를 System Center Configuration Manager용 사이트 시스템 
         -   Windows 인증  
 
  다음 사이트 시스템 역할은 나열된 IIS 구성 중 하나 이상을 사용합니다.  
-    -   응용 프로그램 카탈로그 웹 서비스 지점  
-    -   응용 프로그램 카탈로그 웹 사이트 지점  
+    -   애플리케이션 카탈로그 웹 서비스 지점  
+    -   애플리케이션 카탈로그 웹 사이트 지점  
     -   배포 지점  
     -   등록 지점  
     -   등록 프록시 지점  
@@ -98,7 +98,7 @@ Windows 컴퓨터를 System Center Configuration Manager용 사이트 시스템 
 
  패키지 원본 파일에 요청 필터링 구성에 의해 IIS에서 차단된 확장명이 있는 경우에는 해당 확장명을 허용하도록 요청 필터링을 설정해야 합니다. 이렇게 하려면 배포 지점 컴퓨터의 IIS 관리자에서 [요청 필터링 기능을 편집](https://technet.microsoft.com/library/hh831621.aspx) 합니다.  
 
- 또한 Configuration Manager에서는 패키지와 응용 프로그램에 대해 다음 파일 이름 확장명이 사용됩니다. 요청 필터링 구성에서 이러한 파일 확장명을 차단하지 않아야 합니다.  
+ 또한 Configuration Manager에서는 패키지와 애플리케이션에 대해 다음 파일 이름 확장명이 사용됩니다. 요청 필터링 구성에서 이러한 파일 확장명을 차단하지 않아야 합니다.  
 
 -   .PCK  
 -   .PKG  
@@ -111,7 +111,7 @@ Windows 컴퓨터를 System Center Configuration Manager용 사이트 시스템 
 
 -   배포 지점에서 기본 IIS 구성을 사용하는 경우 BITS를 사용하는 클라이언트가 배포 지점에서 이 소프트웨어 배포를 다운로드하지 못하며 콘텐츠를 기다리고 있는 것으로 표시됩니다.  
 
--   클라이언트가 이 콘텐츠를 다운로드하게 하려면 해당하는 각 배포 지점에서 IIS 관리자의 **요청 필터링**을 편집해 배포 대상 패키지 및 응용 프로그램에 있는 파일 확장명과 폴더에 대한 액세스를 허용합니다.  
+-   클라이언트가 이 콘텐츠를 다운로드하게 하려면 해당하는 각 배포 지점에서 IIS 관리자의 **요청 필터링**을 편집해 배포 대상 패키지 및 애플리케이션에 있는 파일 확장명과 폴더에 대한 액세스를 허용합니다.  
 
 > [!IMPORTANT]  
 >  요청 필터를 편집하면 컴퓨터의 공격에 대한 취약성이 증가할 수 있습니다.  
@@ -119,7 +119,7 @@ Windows 컴퓨터를 System Center Configuration Manager용 사이트 시스템 
 >  -   서버 수준의 편집 내용은 서버의 모든 웹 사이트에 적용됩니다.  
 > -   개별 웹 사이트에 대한 편집 내용은 해당 웹 사이트에만 적용됩니다.  
 >   
->  보안 모범 사례는 전용 웹 서버에서 Configuration Manager를 실행하는 것입니다. 웹 서버에서 다른 응용 프로그램을 실행해야 하는 경우 Configuration Manager에 사용자 지정 웹 사이트를 사용합니다. 자세한 내용은 [System Center Configuration Manager의 사이트 시스템 서버용 웹 사이트](../../../core/plan-design/network/websites-for-site-system-servers.md)를 참조하세요.  
+>  보안 모범 사례는 전용 웹 서버에서 Configuration Manager를 실행하는 것입니다. 웹 서버에서 다른 애플리케이션을 실행해야 하는 경우 Configuration Manager에 사용자 지정 웹 사이트를 사용합니다. 자세한 내용은 [System Center Configuration Manager의 사이트 시스템 서버용 웹 사이트](../../../core/plan-design/network/websites-for-site-system-servers.md)를 참조하세요.  
 
 ## <a name="http-verbs"></a>HTTP 동사
 **관리 지점:** 클라이언트가 관리 지점과 성공적으로 통신하도록 하려면 관리 지점 서버에서 다음 HTTP 동사가 허용되어야 합니다.  
