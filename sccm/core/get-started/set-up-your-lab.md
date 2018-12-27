@@ -155,7 +155,7 @@ ms.locfileid: "38967167"
 
  **.NET을 설치하고 Windows Communication Foundation을 활성화합니다.**  
 
- 두 .NET Framework를 설치해야 합니다. 먼저 .NET 3.5.1을 설치한 다음 .NET 4.5.2 이상을 설치합니다. WCF(Windows Communication Foundation)도 활성화해야 합니다. WCF는 분산 컴퓨팅, 광범위한 상호 운용성 및 서비스 방향에 대한 직접 지원에 관리 가능한 접근을 제공하도록 설계되었으며 서비스 지향 프로그래밍 모델을 통해 연결된 응용 프로그램의 배포를 간소화합니다. WCF에 대한 자세한 내용은 [Windows Communication Foundation 정의](https://technet.microsoft.com/subscriptions/ms731082\(v=vs.90\).aspx) 를 검토하세요.  
+ 두 .NET Framework를 설치해야 합니다. 먼저 .NET 3.5.1을 설치한 다음 .NET 4.5.2 이상을 설치합니다. WCF(Windows Communication Foundation)도 활성화해야 합니다. WCF는 분산 컴퓨팅, 광범위한 상호 운용성 및 서비스 방향에 대한 직접 지원에 관리 가능한 접근을 제공하도록 설계되었으며 서비스 지향 프로그래밍 모델을 통해 연결된 애플리케이션의 배포를 간소화합니다. WCF에 대한 자세한 내용은 [Windows Communication Foundation 정의](https://technet.microsoft.com/subscriptions/ms731082\(v=vs.90\).aspx) 를 검토하세요.  
 
 #### <a name="to-install-net-and-activate-windows-communication-foundation"></a>.NET을 설치하고 Windows Communication Foundation을 활성화하려면  
 
@@ -209,13 +209,13 @@ ms.locfileid: "38967167"
 
 **BITS, IIS 및 RDC 사용**  
 
-[BITS(Background Intelligent Transfer Service)](https://technet.microsoft.com/library/dn282296.aspx) 는 클라이언트와 서버 간에 파일을 비동기적으로 전송하는 데 필요한 응용 프로그램에 사용됩니다. BITS는 전경과 배경에서 전송의 흐름을 측정하여 다른 네트워크 응용 프로그램의 응답을 유지합니다. 또한 전송 세션이 중단되는 경우 파일 전송이 자동으로 다시 시작됩니다.  
+[BITS(Background Intelligent Transfer Service)](https://technet.microsoft.com/library/dn282296.aspx) 는 클라이언트와 서버 간에 파일을 비동기적으로 전송하는 데 필요한 응용 프로그램에 사용됩니다. BITS는 전경과 배경에서 전송의 흐름을 측정하여 다른 네트워크 애플리케이션의 응답을 유지합니다. 또한 전송 세션이 중단되는 경우 파일 전송이 자동으로 다시 시작됩니다.  
 
 이 사이트 서버가 관리 지점으로도 사용되므로 이 랩에 대한 BITS를 설치합니다.  
 
 IIS(인터넷 정보 서비스)는 웹에서 서비스를 호스트하는 데 사용할 수 있는 유연하고 확장성 있는 웹 서버입니다. 이는 많은 사이트 시스템 역할을 위해 Configuration Manager에서 사용됩니다. IIS에 대한 자세한 내용은 [System Center Configuration Manager의 사이트 시스템 서버용 웹 사이트](../../core/plan-design/network/websites-for-site-system-servers.md)를 참조하세요.  
 
-[RDC(원격 차등 압축)](https://technet.microsoft.com/library/cc754372.aspx) 은 응용 프로그램이 파일 집합에 변경 사항이 생겼는지 확인하는 데 사용할 수 있는 API 집합입니다. RDC를 통해 응용 프로그램이 파일의 변경된 부분만 복제하므로 네트워크 트래픽을 최소로 유지할 수 있습니다.  
+[RDC(원격 차등 압축)](https://technet.microsoft.com/library/cc754372.aspx) 은 응용 프로그램이 파일 집합에 변경 사항이 생겼는지 확인하는 데 사용할 수 있는 API 집합입니다. RDC를 통해 애플리케이션이 파일의 변경된 부분만 복제하므로 네트워크 트래픽을 최소로 유지할 수 있습니다.  
 
 #### <a name="to-enable-bits-iis-and-rdc-site-server-roles"></a>BITS, IIS 및 RDC 사이트 서버 역할을 사용하도록 설정하려면  
 
