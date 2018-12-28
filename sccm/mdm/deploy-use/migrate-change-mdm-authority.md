@@ -10,16 +10,16 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: be503ec9-5324-4f7c-bcf5-77204328e99c
-ms.openlocfilehash: d5efcb78ad5e732691cc2f214f81db0b357e0e19
-ms.sourcegitcommit: 316899b08f2ef372993909e08e069f7edfed1d33
-ms.translationtype: HT
+ms.openlocfilehash: 4ded99c2084f274d519680e78fdc54825b3857cb
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44111113"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53419515"
 ---
 # <a name="change-your-mdm-authority-to-intune-standalone"></a>MDM 기관을 Intune 독립 실행형으로 변경
 
-*적용 대상: System Center Configuration Manager(현재 분기)*    
+*적용 대상: System Center Configuration Manager (현재 분기)*    
 
 Configuration Manager 콘솔(하이브리드 MDM)에서 구성된 기존 Microsoft Intune 테넌트를 Intune 독립 실행형으로 변경할 수 있습니다. 테넌트 수준 MDM 기관을 Intune으로 변경하는 것은 클라우드 전용 구성에서 [하이브리드 MDM 사용자 및 디바이스를 Intune 독립 실행형으로 마이그레이션](migrate-hybridmdm-to-intunesa.md)하는 프로세스의 최종 단계입니다.    
 
@@ -28,8 +28,8 @@ Configuration Manager 콘솔(하이브리드 MDM)에서 구성된 기존 Microso
 
 이 문서에서는 Configuration Manager 콘솔(하이브리드)에서 구성된 기존 Microsoft Intune 테넌트를 Intune 독립 실행형으로 변경하는 방법을 설명하며, 다음 단계를 이미 완료했다고 가정합니다.
 - [Intune 데이터 가져오기 도구](migrate-import-data.md)를 사용하여 Configuration Manager 개체를 Intune으로 가져왔습니다. 
-- [Intune에서 사용자 마이그레이션을 준비](migrate-prepare-intune.md)하여 사용자와 장치가 마이그레이션된 이후에도 계속 관리되도록 했습니다.
-- [특정 사용자의 MDM 기관을 변경(혼합 MDM 기관)](migrate-mixed-authority.md)하여 Azure Portal에서 사용자 장치 관리를 시작했습니다.
+- [Intune에서 사용자 마이그레이션을 준비](migrate-prepare-intune.md)하여 사용자와 디바이스가 마이그레이션된 이후에도 계속 관리되도록 했습니다.
+- [특정 사용자의 MDM 기관을 변경(혼합 MDM 기관)](migrate-mixed-authority.md)하여 Azure Portal에서 사용자 디바이스 관리를 시작했습니다.
 
 
 ## <a name="users-and-devices-that-have-not-been-migrated"></a>마이그레이션되지 않은 사용자 및 디바이스
@@ -48,20 +48,20 @@ Configuration Manager 콘솔(하이브리드 MDM)에서 구성된 기존 Microso
 ## <a name="change-the-mdm-authority-to-intune"></a>MDM 기관을 Intune으로 변경
 다음 절차에 따라 테넌트 수준 MDM 기관을 Intune으로 변경합니다.
 
-1.  Configuration Manager 콘솔에서 **관리** &gt; **개요** &gt; **Cloud Services** &gt; **Microsoft Intune 구독**으로 이동한 후 기존 Intune 구독을 삭제합니다.
-2.  **MDM 기관을 Microsoft Intune으로 변경**을 클릭하고 **다음**을 클릭합니다.
+1. Configuration Manager 콘솔에서 **관리** &gt; **개요** &gt; **Cloud Services** &gt; **Microsoft Intune 구독**으로 이동한 후 기존 Intune 구독을 삭제합니다.
+2. **MDM 기관을 Microsoft Intune으로 변경**을 클릭하고 **다음**을 클릭합니다.
 
-    ![Microsoft Intune 구독 제거 대화 상자](media/mdm-change-delete-subscription.png)
-3.  Configuration Manager에서 MDM 기관을 설정할 때 원래 사용했던 Intune 테넌트에 로그인합니다.
-4.  **다음** 을 클릭하여 마법사를 완료합니다.
-5.  이제 MDM 기관이 다시 설정되었습니다. Intune 구독은 Configuration Manager 콘솔의 Microsoft Intune 구독 노드에 더 이상 표시되지 않습니다.
-6.  [Intune 포털](https://aka.ms/IntunePortal)에 로그인합니다.
-7.  Microsoft Intune 블레이드에서 **디바이스 등록**을 클릭합니다.
-8.  디바이스 등록 개요 블레이드에서 **MDM 기관** 속성을 참조합니다.
+   ![Microsoft Intune 구독 제거 대화 상자](media/mdm-change-delete-subscription.png)
+3. Configuration Manager에서 MDM 기관을 설정할 때 원래 사용했던 Intune 테넌트에 로그인합니다.
+4. **다음** 을 클릭하여 마법사를 완료합니다.
+5. 이제 MDM 기관이 다시 설정되었습니다. Intune 구독은 Configuration Manager 콘솔의 Microsoft Intune 구독 노드에 더 이상 표시되지 않습니다.
+6. [Intune 포털](https://aka.ms/IntunePortal)에 로그인합니다.
+7. Microsoft Intune 블레이드에서 **디바이스 등록**을 클릭합니다.
+8. 디바이스 등록 개요 블레이드에서 **MDM 기관** 속성을 참조합니다.
 
-  > [!Important]    
-  > Intune 클래식 콘솔을 사용하지 마세요. Azure Portal에서 Intune에 로그인해야 합니다.
-7.  MDM 기관이 **Microsoft Intune**으로 변경되었는지 확인합니다. 
+   > [!Important]    
+   > Intune 클래식 콘솔을 사용하지 마세요. Azure Portal에서 Intune에 로그인해야 합니다.
+9. MDM 기관이 **Microsoft Intune**으로 변경되었는지 확인합니다. 
 
 ## <a name="next-steps"></a>다음 단계
 MDM 기관 변경이 완료되면 다음 정보를 검토합니다.

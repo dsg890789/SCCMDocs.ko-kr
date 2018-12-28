@@ -10,16 +10,16 @@ ms.assetid: 94ecfada-97d9-4d5f-bb04-63550dda5f47
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3c2d212268c2c9b875890bfe8e0640f68b7d831e
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.openlocfilehash: 2d57965a75d602b81da7b19d6732ac7db6e7abe0
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32345967"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53420833"
 ---
 # <a name="verify-mdm-configuration-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 MDM 구성 확인
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: System Center Configuration Manager (현재 분기)*
 
 다음 로그 파일을 확인하여 특정 디바이스 관리 구성 요소를 확인할 수 있습니다.
 
@@ -30,4 +30,4 @@ ms.locfileid: "32345967"
 이 특정 로그 파일 및 이를 확인하는 방법에 대한 자세한 내용은 [System Center Configuration Manager 로그 파일](../../core/plan-design/hierarchy/log-files.md##BKMK_FunctionLogs)을 참조하세요. 
 
 > [!div class="button"]
-[< 이전 단계](set-up-additional-management.md)
+> [< 이전 단계](set-up-additional-management.md)

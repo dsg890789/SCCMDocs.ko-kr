@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 19044a9fb7f53ca540bccd324f711b60e0ad91c4
-ms.sourcegitcommit: 9cff0702c2cc0f214173b47ec241f7e5a40f84e6
-ms.translationtype: HT
+ms.openlocfilehash: 172ca284a5a030682e01d9be63031180d7175421
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747802"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53423204"
 ---
 # <a name="past-hybrid-features-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하는 이전 하이브리드 기능
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: System Center Configuration Manager (현재 분기)*
 
 이 문서에서는 System Center Configuration Manager 및 Intune을 포함하는 하이브리드 배포에 사용할 수 있는 과거 MDM(모바일 디바이스 관리) 기능에 대한 세부 정보를 제공합니다.  
 
@@ -66,11 +66,11 @@ ms.locfileid: "34747802"
 - **Android용 회사 포털 앱의 새 사용자 환경**  
   Android용 회사 포털 앱의 사용자 인터페이스의 모양과 느낌이 더욱 세련되어집니다. 중요한 업데이트는 다음과 같습니다.
 
-  - 색: 회사 포털 탭 헤더의 색을 IT에서 정의하는 브랜딩에서 지정합니다.
-  - 앱: **앱** 탭에서 **추천 앱** 및 **모든 앱** 단추가 업데이트되었습니다.
-  - 검색: **앱** 탭에서 **검색** 단추는 부동 작업 단추입니다.
-  - 앱 탐색: **모든 앱** 뷰는 쉽게 탐색할 수 있도록 **추천**, **전체** 및 **범주** 탭으로 구분된 뷰를 표시합니다.
-  - 지원: 가독성 향상을 위해 **내 디바이스** 및 **IT 담당자** 탭이 업데이트됩니다.
+  - 색: 회사 포털 탭 머리글이 it 관리자가 정의한 브랜드에서 색이 지정 됩니다.
+  - 앱: 에 **앱** 탭의 **추천 앱** 및 **모든 앱** 단추가 업데이트 됩니다.
+  - 검색: 에 **앱** 탭의 **검색** 단추는 부동 작업 단추입니다.
+  - 앱 탐색: **모든 앱** 보기 탭된 뷰를 표시 **추천**를 **모든**, 및 **범주** 를 쉽게 탐색할 수 있습니다.
+  - 지원: **내 장치** 하 고 **IT 담당자** 탭 가독성을 향상 하도록 업데이트 됩니다.
 
   이러한 변경 사항에 자세한 내용은 [Intune 최종 사용자 앱 UI 업데이트](https://docs.microsoft.com/intune/whats-new-app-ui)를 참조하세요.
 
@@ -78,7 +78,7 @@ ms.locfileid: "34747802"
   Windows 10 회사 포털 앱을 다운로드하고 사이드로드해야 하는 경우 이제 스크립트를 사용하여 조직의 앱 서명 프로세스를 간소화할 수 있습니다. 스크립트와 스크립트 사용 지침을 다운로드하려면 TechNet 갤러리의 [Microsoft Intune Signing Script for Windows 10 Company Portal](https://aka.ms/win10cpscript)(Windows 10 회사 포털용 Microsoft Intune 서명 스크립트)을 참조하세요. 이 알림에 대한 자세한 내용은 Intune 지원 팀 블로그의 [Updating your Windows 10 Company Portal app](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/)(Windows 10 회사 포털 앱 업데이트)을 참조하세요.
 
 - **중국에 있는 Android 사용자에 대한 지원 향상**  
-  중국에는 Google Play 스토어를 사용할 수 없으므로 Android 디바이스 사용자는 중국 마켓플레이스에서 앱을 다운로드해야 합니다. 회사 포털은 이 워크플로를 지원합니다. 중국의 Android 사용자가 로컬 앱 스토어에서 회사 포털 및 Outlook 앱을 다운로드하도록 리디렉션합니다. 따라서 모바일 디바이스 관리 및 모바일 응용 프로그램 관리 모두에서 조건부 액세스 정책을 사용하도록 설정하는 경우 사용자 환경이 개선됩니다. 다음과 같은 중국 앱 스토어에서 Android용 회사 포털 및 Outlook 앱을 사용할 수 있습니다.
+  중국에는 Google Play 스토어를 사용할 수 없으므로 Android 디바이스 사용자는 중국 마켓플레이스에서 앱을 다운로드해야 합니다. 회사 포털은 이 워크플로를 지원합니다. 중국의 Android 사용자가 로컬 앱 스토어에서 회사 포털 및 Outlook 앱을 다운로드하도록 리디렉션합니다. 따라서 모바일 장치 관리 및 모바일 애플리케이션 관리 모두에서 조건부 액세스 정책을 사용하도록 설정하는 경우 사용자 환경이 개선됩니다. 다음과 같은 중국 앱 스토어에서 Android용 회사 포털 및 Outlook 앱을 사용할 수 있습니다.
 
   - [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
   - [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
@@ -157,7 +157,7 @@ Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추�
 
   회사 포털 웹 사이트는 관리되는 디바이스가 없는 사용자를 대상으로 하는 앱을 지원합니다. 이 웹 사이트는 새로운 고대비 색 구성표, 동적 그림, 기술 지원팀 연락처 세부 정보 및 기존 관리되는 디바이스에 대한 정보를 포함하는 “햄버거 메뉴”를 사용하여 다른 Microsoft 제품 및 서비스에 맞춥니다. 방문 페이지는 추천 및 최근에 업데이트된 앱에 대한 슬라이드를 포함하여 사용자가 사용할 수 있는 앱을 강조하도록 재조정됩니다. [UI 업데이트](https://docs.microsoft.com/intune/whats-new-app-ui) 페이지에서 사용 가능한 이전 및 이후 이미지를 찾을 수 있습니다.
 
-- **Windows 장치의 새 MDM 서버 주소**
+- **Windows 디바이스의 새 MDM 서버 주소**
 
   Windows 및 Windows Phone 디바이스 등록을 위한 MDM 서버 주소가 manage.microsoft.com에서 enrollment.manage.microsoft.com으로 변경되었습니다. 사용자에게 Windows 또는 Windows Phone 디바이스를 등록하는 동안 MDM 서버 주소를 입력하라는 메시지가 표시되면 enrollment.manage.microsoft.com을 사용하라고 알리세요. 이 업데이트에는 또한 EnterpriseEnrollment.contoso.com을 manage.microsoft.com으로 리디렉션하는 DNS의 CNAME이 필요하며, 이 manage.microsoft.com은 EnterpriseEnrollment.contoso.com을 EnterpriseEnrollment-s.manage.microsoft.com으로 리디렉션하는 DNS의 CNAME으로 대체됩니다. 이 변경에 대한 추가 정보는 http://aka.ms/intuneenrollsvrchange에서 찾을 수 있습니다.
 
@@ -169,7 +169,7 @@ Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추�
 
 - **비규격 앱 준수 설정**
 
-  이제 준수 정책에서 Android 및 iOS 앱에 대한 비규격 앱 규칙을 만들 수 있습니다. 디바이스에 지정한 응용 프로그램이 설치되어 있으면 “비준수”로 표시되며, 적용된 조건부 액세스 정책에 따라 회사 리소스에 액세스할 수 없게 됩니다. 자세한 내용은 [조건부 액세스 디바이스 준수 정책 개선](/sccm/core/get-started/capabilities-in-technical-preview-1702#conditional-access-device-compliance-policy-improvements)을 참조하세요.
+  이제 준수 정책에서 Android 및 iOS 앱에 대한 비규격 앱 규칙을 만들 수 있습니다. 장치에 지정한 애플리케이션이 설치되어 있으면 “비준수”로 표시되며, 적용된 조건부 액세스 정책에 따라 회사 리소스에 액세스할 수 없게 됩니다. 자세한 내용은 [조건부 액세스 디바이스 준수 정책 개선](/sccm/core/get-started/capabilities-in-technical-preview-1702#conditional-access-device-compliance-policy-improvements)을 참조하세요.
 
 - **PFX 인증서 만들기 및 배포와 S/MIME 지원**
 
@@ -189,9 +189,9 @@ Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추�
 
   이제 Intune에서 Android 7.1.1을 완벽하게 지원하고 관리합니다.
 
-- **iOS 장치가 비활성 상태이거나 관리 콘솔이 장치와 통신할 수 없는 문제 해결**
+- **iOS 디바이스가 비활성 상태이거나 관리 콘솔이 디바이스와 통신할 수 없는 문제 해결**
 
-  사용자 디바이스에서 Intune과의 연결이 끊기는 경우 회사 리소스에 대한 액세스 권한을 다시 얻도록 새로운 문제 해결 단계를 제공할 수 있습니다. [장치가 비활성 상태이거나 관리 콘솔이 장치와 통신할 수 없음](https://docs.microsoft.com/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them)을 참조하세요.
+  사용자 디바이스에서 Intune과의 연결이 끊기는 경우 회사 리소스에 대한 액세스 권한을 다시 얻도록 새로운 문제 해결 단계를 제공할 수 있습니다. [디바이스가 비활성 상태이거나 관리 콘솔이 디바이스와 통신할 수 없음](https://docs.microsoft.com/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them)을 참조하세요.
 
 ### <a name="new-in-configuration-manager-technical-preview-1701"></a>Configuration Manager Technical Preview 1701의 새로운 기능
 
@@ -207,7 +207,7 @@ Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추�
 
 - **등록 시의 MFA(Multi-Factor Authentication) 과정이 Azure Portal로 이전됨**
 
-  이전에는 Intune 등록용으로 MFA를 설정하려면 Intune 콘솔 또는 Configuration Manager 콘솔로 이동해야 했습니다. 지금은 이 기능이 업데이트되어 [Microsoft Azure Portal](https://manage.windowsazure.com)에 Intune 자격 증명으로 로그인하고 Azure AD를 통해 MFA 설정을 구성합니다. 자세한 내용은 [Microsoft Intune용 Multi-Factor Authentication](https://aka.ms/mfa_ad)을 참조하세요.
+  이전에는 Intune 등록용으로 MFA를 설정하려면 Intune 콘솔 또는 Configuration Manager 콘솔로 이동해야 했습니다. 이 업데이트 된 기능을 이제에 로그인 하는 [Microsoft Azure 포털](https://manage.windowsazure.com) Intune 자격 증명을 사용 하 고 Azure AD 통해 MFA 설정을 구성 합니다. 자세한 내용은 [Microsoft Intune용 다단계 인증](https://aka.ms/mfa_ad)을 참조하세요.
 
 - **이제 중국에서 Android용 회사 포털 앱 사용 가능**
 
@@ -234,7 +234,7 @@ Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추�
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
-- **Windows 10 장치에 사용할 수 있는 새로운 Microsoft Intune 회사 포털**
+- **Windows 10 디바이스에 사용할 수 있는 새로운 Microsoft Intune 회사 포털**
 
   Microsoft에서 새로운 [Windows 10 디바이스용 회사 포털 앱](https://www.microsoft.com/store/apps/9wzdncrfj3pz)을 출시했습니다. 새로운 Windows 10 유니버설 형식을 활용하는 이 앱은 모든 Windows 10 디바이스(PC 및 모바일)에서 동일한 업데이트된 사용자 환경을 제공합니다. 이전 회사 포털 앱에서 제공되었던 것과 동일한 기능도 모두 계속 사용할 수 있습니다.
 
@@ -257,7 +257,7 @@ Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추�
 
 Configuration Manager(현재 분기)의 버전 1610에는 다음과 같은 추가 하이브리드 기능도 포함되어 있습니다.
 
-- **등록된 장치 수 증가**
+- **등록된 디바이스 수 증가**
 
   이제 사용자가 최대 15개의 디바이스를 등록하도록 설정할 수 있습니다. 이전에는 사용자당 디바이스가 5대로 제한되었습니다.
 
@@ -287,11 +287,11 @@ Configuration Manager(현재 분기)의 버전 1610에는 다음과 같은 추�
 
 2016년 10월에 도입된 다음 Intune 기능은 하이브리드 배포에서 사용할 수 있습니다.
 
-- **모바일 응용 프로그램 관리에 대한 조건부 액세스**
+- **모바일 애플리케이션 관리에 대한 조건부 액세스**
 
   Outlook 등의 Intune 모바일 애플리케이션 관리 정책을 지원하는 앱에서만 액세스할 수 있도록 Exchange Online에 대한 액세스를 제한할 수 있습니다. [이 새로운 기능](/intune/deploy-use/allow-policy-managed-apps-access-to-o365)은 기본 제공 메일 클라이언트 또는 Intune MAM 정책으로 구성되지 않은 다른 앱에 대한 액세스를 차단할 수 있도록 Intune MAM(모바일 앱 관리) 정책과 완벽하게 연결됩니다. 이렇게 하면 사용자가 Intune MAM으로 보호할 수 있는 앱을 사용하여 조직의 데이터에 액세스합니다. Azure Portal을 통해 Intune 모바일 앱 관리를 시작할 수 있습니다. "설정" 블레이드에서 새 조건부 액세스 섹션을 찾습니다.
 
--   **Android용 Intune 앱 래핑 도구**
+- **Android용 Intune 앱 래핑 도구**
 
   Intune 앱 래핑 도구를 통해 앱이 Intune MAM(모바일 애플리케이션 관리) 정책을 사용할 수 있도록 설정할 수 있습니다.
 
@@ -386,11 +386,11 @@ Configuration Manager Technical Preview 1609의 2016년 9월에 도입된 새로
 
   Android용 Intune 회사 포털 앱에서는 모바일 디바이스용으로 곧 출시 예정인 Android 7.0 운영 체제에 대해 “Day 0” 지원을 제공합니다.
 
-- **Google에서 Android 7.0 장치의 원격 암호 다시 설정 기능 제거**
+- **Google에서 Android 7.0 디바이스의 원격 암호 다시 설정 기능 제거**
 
   Google에서 IT 관리자와 최종 사용자가 Android 7.0 디바이스의 암호를 원격으로 다시 설정하는 기능을 제거할 예정입니다. 이전에는 IT 관리자가 사용자 암호를 원격으로 다시 설정할 수 있고, 최종 사용자가 회사 포털 웹 사이트에서 자신의 암호를 다시 설정할 수 있었습니다.
 
-- **삼성 KNOX Standard 장치에 대한 허용 및 차단된 앱 정책**
+- **삼성 KNOX Standard 디바이스에 대한 허용 및 차단된 앱 정책**
 
   이제 다음 중 하나를 만들 수 있는 삼성 KNOX Standard 디바이스에 대한 사용자 지정 정책을 구성할 수 있습니다.
 
@@ -425,15 +425,15 @@ Configuration Manager(현재 분기) 2016년 8월에 도입된 새로운 하이�
 
   Intune 앱 SDK Xamarin 구성 요소를 사용하면 Xamarin으로 빌드된 모바일 iOS 및 Android 앱에서 Intune 모바일 앱 관리 기능을 사용하도록 설정할 수 있습니다. 이 구성 요소는 [Xamarin 스토어](https://components.xamarin.com/view/Microsoft.Intune.MAM) 또는 [Microsoft Intune Github 페이지](https://github.com/msintuneappsdk)에서 찾을 수 있습니다.
 
-- **Windows 장치를 등록할 때 최종 사용자 환경 개선**
+- **Windows 디바이스를 등록할 때 향상된 최종 사용자 환경**
 
   조건부 액세스를 사용하는 경우 Windows 8.1, Windows 10 Desktop 및 Windows 10 Mobile에 대한 등록 단계가 회사 포털 웹 사이트에 설명되어 있습니다. 이제 사용자에게 별도의 **디바이스 등록** 및 **작업 공간 연결** 단계가 표시되므로 보다 쉽게 디바이스 상태를 확인하고 WPJ(작업 공간 연결) 오류가 발생할 경우 프로세스를 완료할 수 있습니다. 또한 별도 단계는 IT 관리자의 문제 해결 프로세스를 간소화합니다. 이전에는 최종 사용자가 등록하려고 할 때 WPJ를 제외한 모든 등록 단계가 정상적으로 수행되면, 등록된 디바이스가 사용자의 디바이스 목록에 나타나지 않아 혼동을 줄 수 있었습니다.
 
- - **이제 Windows 10 장치에 전체 초기화를 사용할 수 있음**
+  - **이제 Windows 10 디바이스에 전체 초기화를 사용할 수 있음**
 
     모바일 디바이스로 등록된 Windows 10 PC 및 노트북을 초기화하여 디바이스를 하는 랩톱을 공장 설정으로 초기화할 수 있습니다. 자세한 내용은 [원격 초기화를 사용하여 디바이스를 보호하는 방법](/sccm/mdm/deploy-use/wipe-lock-reset)을 참조하세요.
 
-- **iOS 회사 포털 앱에서 장치 등록 관리자 계정에 대한 변경 내용**
+- **iOS 회사 포털 앱의 디바이스 등록 관리자 계정의 변경 내용**
 
   성능 및 확장성을 개선하기 위해 Intune은 iOS 회사 포털 앱의 내 디바이스 창에 모든 DEM(디바이스 등록 관리자) 디바이스를 더 이상 표시하지 않습니다. 앱을 실행하는 로컬 디바이스가 회사 포털 앱을 통해 등록된 경우에만 표시합니다.
 
@@ -445,9 +445,9 @@ Configuration Manager(현재 분기) 2016년 8월에 도입된 새로운 하이�
 
   Android 최종 사용자에게 디바이스에 필요한 인증서가 없다는 오류 메시지가 표시될 경우 "이 문제를 해결하는 방법" 단추를 탭하여 누락된 인증서를 설치하는 단계를 확인할 수 있습니다. 사용자가 단계를 완료해도 "누락된 인증서" 오류 메시지가 추가로 표시되는 경우 IT 관리자에게 문의하고 이 링크를 제공하도록 요청됩니다. 이 링크에는 IT 관리자가 인증서 문제를 해결하는 데 사용할 수 있는 단계가 포함되어 있습니다.
 
-- **테스트용으로 로드된 앱 설치를 등록된 Android 장치로 제한**
+- **테스트용으로 로드된 앱 설치를 등록된 Android 디바이스로 제한**
 
-  디바이스가 Android용 Intune 회사 포털 앱을 사용하여 Intune에 등록되어 있지 않으면 더 이상 Android 디바이스에 회사 포털 웹 사이트를 통해 응용 프로그램을 설치할 수 없습니다.
+  장치가 Android용 Intune 회사 포털 앱을 사용하여 Intune에 등록된 경우가 아니면 Android 장치는 더 이상 회사 포털 웹 사이트를 통해 애플리케이션을 설치할 수 없습니다.
 
 
 ### <a name="new-in-configuration-manager-technical-preview"></a>Configuration Manager Technical Preview의 새로운 기능
@@ -507,9 +507,9 @@ Configuration Manager Technical Preview 2016년 7월에 새로 도입된 하이�
 
   정책  |사용자에 미치는 영향  
   ---------|---------
-  디바이스가 알 수 없는 소스의 앱 설치를 방지해야 함(Android 4.0 이상)     |  Android 4.0 이상 디바이스를 사용하는 최종 사용자에게는 "알 수 없는 소스의 설치를 사용하지 않도록 설정해야 합니다."라는 메시지가 표시됩니다. 사용자는 해당 장치에서 **설정 > 보안**으로 이동한 다음 **알 수 없는 소스**를 꺼야 합니다. 사용자는 준수 메시지에 있는 링크를 통해 메시지에 대한 자세한 정보와 설정을 꺼야 하는 이유를 확인할 수 있습니다.
-  디바이스가 알 수 없는 소스의 앱 설치를 방지해야 함(Android 4.0 이상)  |    Android 4.0 이상 디바이스를 사용하는 최종 사용자에게는 "디바이스의 보안 위협 검색"이라는 메시지가 표시됩니다. 사용자가 해당 장치에서 **설정 > Google > 보안**으로 이동한 다음 **장치의 보안 위협 검색**을 켜야 합니다. 사용자는 준수 메시지에 있는 링크를 통해 메시지에 대한 자세한 정보와 설정을 켜야 하는 이유를 확인할 수 있습니다.     
-  USB 디버깅을 사용하지 않도록 설정되어야 함(Android 4.2 이상)  | Android 4.2 이상 디바이스를 사용하는 최종 사용자에게는 "USB 디버깅을 사용하지 않도록 설정해야 합니다."라는 메시지가 표시됩니다. 사용자는 해당 장치에서 **설정 > 개발자 옵션**으로 이동한 다음 **USB 디버깅**을 꺼야 합니다. 사용자는 준수 메시지에 있는 링크를 통해 메시지에 대한 자세한 정보와 설정을 꺼야 하는 이유를 확인할 수 있습니다.
+  디바이스가 알 수 없는 소스의 앱 설치를 방지해야 함(Android 4.0 이상)     |  Android 4.0 이상 디바이스를 사용하는 최종 사용자에게는 "알 수 없는 소스의 설치를 사용하지 않도록 설정해야 합니다."라는 메시지가 표시됩니다. 사용자는 해당 디바이스에서 **설정 &gt; 보안**으로 이동한 다음 **알 수 없는 소스**를 꺼야 합니다. 사용자는 준수 메시지에 있는 링크를 통해 메시지에 대한 자세한 정보와 설정을 꺼야 하는 이유를 확인할 수 있습니다.
+  디바이스가 알 수 없는 소스의 앱 설치를 방지해야 함(Android 4.0 이상)  |    Android 4.0 이상 디바이스를 사용하는 최종 사용자에게는 "디바이스의 보안 위협 검색"이라는 메시지가 표시됩니다. 사용자가 해당 디바이스에서 **설정 &gt; Google &gt; 보안**으로 이동한 다음 **디바이스의 보안 위협 검색**을 켜야 합니다. 사용자는 준수 메시지에 있는 링크를 통해 메시지에 대한 자세한 정보와 설정을 켜야 하는 이유를 확인할 수 있습니다.     
+  USB 디버깅을 사용하지 않도록 설정되어야 함(Android 4.2 이상)  | Android 4.2 이상 디바이스를 사용하는 최종 사용자에게는 "USB 디버깅을 사용하지 않도록 설정해야 합니다."라는 메시지가 표시됩니다. 사용자는 해당 디바이스에서 **설정 &gt; 개발자 옵션**으로 이동한 다음 **USB 디버깅**을 꺼야 합니다. 사용자는 준수 메시지에 있는 링크를 통해 메시지에 대한 자세한 정보와 설정을 꺼야 하는 이유를 확인할 수 있습니다.
   최소 Android 보안 패치 수준(Android 6.0 이상)  | Android 6.0 이상 디바이스를 사용하는 최종 사용자에게는 "이 디바이스는 최소 Android 보안 패치 수준을 충족하지 않습니다."라는 메시지가 표시됩니다. 사용자가 필요한 보안 패치를 설치해야 합니다. 사용자는 준수 메시지에 있는 링크를 통해 필요한 보안 패치를 설치하는 방법에 대한 자세한 정보를 얻고 현재 설치된 보안 패치를 확인할 수 있습니다.
 
 - **iOS 회사 포털 앱에 대한 업데이트**
@@ -521,7 +521,7 @@ Configuration Manager Technical Preview 2016년 7월에 새로 도입된 하이�
 ### <a name="new-in-1606-technical-preview"></a>1606 기술 미리 보기의 새로운 기능
 2016년 6월에 도입된 다음 새로운 기능은 Intune과 Configuration Manager Technical Preview 1606을 포함하는 하이브리드 배포에서 사용할 수 있습니다.
 
-- **컬렉션으로 장치 자동 분류**
+- **컬렉션으로 디바이스 자동 분류**
 
   Intune에서 Configuration Manager를 사용하는 경우 디바이스 컬렉션에 디바이스를 자동으로 배치하는 데 사용할 수 있는 디바이스 범주를 만들 수 있습니다. 그런 다음 사용자는 Intune에 디바이스를 등록할 때 디바이스 범주를 선택해야 합니다. 또한 Configuration Manager 콘솔에서 디바이스의 범주를 변경할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 Technical Preview 1606의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1606)에서 [컬렉션으로 디바이스 자동 분류](/sccm/core/get-started/capabilities-in-technical-preview-1606#dmp_category)를 참조하세요.
 
@@ -548,11 +548,11 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 
   이제 Intune에 등록하지 않은 디바이스에서 Android용 Microsoft Word, Excel 및 PowerPoint 앱을 MAM 정책과 연결할 수 있습니다. 지원되는 앱의 전체 목록을 보려면 [Microsoft Intune 애플리케이션 파트너](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) 페이지의 Microsoft Intune 모바일 애플리케이션 갤러리로 이동합니다.  
 
-- **Android 회사 포털 앱: 최종 사용자 알림 메시지**
+- **Android 회사 포털 앱: 최종 사용자 알림**
 
   최종 사용자가 디바이스를 등록하거나 회사 포털에서 제거하면 Android 회사 포털 앱의 알림 메시지가 나타납니다.  
 
-- **회사 포털 웹 사이트: 장치 식별 배너에서 최종 사용자에게 자세한 정보를 제공함**
+- **회사 포털 웹 사이트: 장치 식별 배너 최종 사용자에 게 자세한 정보를 제공 합니다.**
 
   이제 최종 사용자가 회사 포털 웹 사이트를 사용할 때 자신이 선택한 디바이스를 더 쉽게 식별할 수 있습니다. 잘못된 디바이스를 선택한 경우 홈페이지 배너의 **여기를 탭하세요.** 링크를 탭하여 올바른 디바이스를 선택할 수 있습니다.  
 
@@ -560,11 +560,11 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 ### <a name="new-in-1605-technical-preview"></a>1605 기술 미리 보기의 새로운 기능  
  2016년 5월에 도입된 다음 새로운 기능은 Intune과 Configuration Manager Technical Preview 1605를 포함하는 하이브리드 배포에서 사용할 수 있습니다. 이러한 기능은 Configuration Manager 콘솔을 사용하여 구성 및 관리해야 합니다.  
 
-- **Windows 10 장치를 위한 앱 트리거 VPN**
+- **Windows 10 디바이스를 위한 앱 트리거 VPN**
 
   Intune에서 Configuration Manager를 사용하여 관리되는 Windows 10 디바이스의 경우, Configuration Manager 관리 콘솔을 통해 구성한 VPN 연결을 자동으로 여는 앱 목록을 추가할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 Technical Preview 1605의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605)에서 [Windows 10 디바이스를 위한 앱 트리거 VPN](/sccm/core/get-started/capabilities-in-technical-preview-1605)을 참조하세요.  
 
-- **원격 장치 작업을 위한 새로운 환경**
+- **원격 디바이스 작업을 위한 새로운 환경**
 
   Configuration Manager 콘솔에서 원격 디바이스 작업을 수행하기 위한 환경이 개선되었습니다.
 
@@ -580,7 +580,7 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 
   비즈니스용 Windows 스토어와 iOS App Store의 대량 구매 앱이 동일한 보기, **스토어 앱에 대한 라이선스 정보**로 통합되었습니다. 또한 iOS용 대량 구매 앱을 만드는 방식으로 향상되었습니다. 자세한 내용은 [System Center Configuration Manager용 Technical Preview 1605의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605)에서 [대량 구매 앱에 대한 일반적인 향상 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605.md#general-improvements-for-volume-purchased-apps)을 참조하세요.  
 
-- **IMEI 또는 iOS 일련 번호로 회사 소유 장치 미리 선언**
+- **IMEI 또는 iOS 일련 번호로 회사 소유 디바이스 미리 선언**
 
   이제 IMEI(International station Mobile Equipment Identity) 번호를 가져와서 회사 소유 디바이스를 식별할 수 있습니다. 디바이스 IMEI 번호를 포함한 쉼표로 구분된 값(.csv) 파일을 업로드하거나 디바이스 정보를 수동으로 입력할 수 있습니다.  또한 iOS 디바이스의 일련 번호를 가져올 수 있습니다.  자세한 내용은 [System Center Configuration Manager용 Technical Preview 1605의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605)에서 [IMEI 또는 iOS 일련 번호로 회사 소유 디바이스 미리 선언](../../core/get-started/capabilities-in-technical-preview-1605.md#BKMK_IMEI)을 참조하세요.  
 
@@ -606,15 +606,15 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 
 - **Outlook 연락처 동기화를 방지하는 MAM 컨트롤(Android)**
 
-  응용 프로그램이 Android 디바이스의 기본 주소록에 연락처를 동기화할 수 없도록 하는 새로운 설정을 사용할 수 있습니다. 이 새로운 설정은 Android 디바이스의 Outlook 응용 프로그램에서 처음 지원됩니다. 자세한 내용은 Intune 라이브러리에서 [Microsoft Intune으로 모바일 앱 관리 정책 만들기 및 배포](/intune/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune)를 참조하세요.  
+  애플리케이션이 Android 장치의 기본 주소록에 연락처를 동기화할 수 없도록 하는 새로운 설정을 사용할 수 있습니다. 이 새로운 설정은 처음에 Android 장치의 Outlook 애플리케이션에서 지원됩니다. 자세한 내용은 Intune 라이브러리에서 [Microsoft Intune으로 모바일 앱 관리 정책 만들기 및 배포](/intune/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune)를 참조하세요.  
 
 - **회사 포털 웹 사이트의 향상된 기능**
 
   Windows 10 Mobile 및 Windows Phone 8.1 사용자가 LOB(기간 업무) 앱을 설치하는 경우 이제 설치 상태에 대한 자세한 정보를 제공하는 다음과 같은 새 상태가 표시됩니다.  
 
-  -   **장치가 동기화될 때까지 기다리는 중** – 사용자가 "설치"를 탭했으며 이제 장치에서 Intune 인프라와 동기화하려고 합니다. 먼저 동기화해야 설치를 완료할 수 있습니다. "디바이스가 동기화될 때까지 기다리는 중" 메시지는 동기화 프로세스가 시간이 오래 걸리거나 정지될 경우 수동으로 Intune과 디바이스를 동기화하는 방법에 대한 지침을 보기 위해 사용자가 탭할 수 있는 링크이기도 합니다.  
+  -   **디바이스가 동기화될 때까지 기다리는 중** – 사용자가 “설치”를 탭했고 이제 디바이스가 Intune 인프라와의 동기화를 시도합니다. 먼저 동기화해야 설치를 완료할 수 있습니다. "디바이스가 동기화될 때까지 기다리는 중" 메시지는 동기화 프로세스가 시간이 오래 걸리거나 정지될 경우 수동으로 Intune과 디바이스를 동기화하는 방법에 대한 지침을 보기 위해 사용자가 탭할 수 있는 링크이기도 합니다.  
 
-  -   **다운로드 중** - 사용자의 다운로드 요청이 처리되고 있으며 장치에서 앱을 다운로드하여 설치 중입니다.  
+  -   **다운로드 중** – 사용자의 다운로드 요청이 처리 중이며 디바이스가 앱을 다운로드 및 설치 중입니다.  
 
 - **Android 회사 포털 앱에 대한 향상된 기능**
 
@@ -631,14 +631,14 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 ###  <a name="new-in-1604-technical-preview"></a>1604 기술 미리 보기의 새로운 기능
  2016년 4월에 도입된 다음 새로운 기능은 Intune과 Configuration Manager Technical Preview 1604를 포함하는 하이브리드 배포에서 사용할 수 있습니다. 이러한 기능은 Configuration Manager 콘솔을 사용하여 구성 및 관리해야 합니다.  
 
-- **Configuration Manager 콘솔에서 Windows 10 장치에 대한 비즈니스용 Windows 스토어 앱 찾기, 관리 및 배포**
+- **Configuration Manager 콘솔에서 Windows 10 디바이스에 대한 비즈니스용 Windows 스토어 앱 찾기, 관리 및 배포**
 
 
   Configuration Manager Technical Preview 1604에서는 관리하는 Windows 10 디바이스에 대한 앱을 찾고 관리 및 배포할 수 있도록 도와주는 비즈니스용 Windows 스토어에 대한 지원을 사용할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 Technical Preview 1604의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1604)에서 [비즈니스용 Windows 스토어에서 대량 구매 앱 관리](/sccm/core/get-started/capabilities-in-technical-preview-1604#manage-volume-purchased-apps-from-the-windows-store-for-business)를 참조하세요.  
 
-- **Android 장치에 대한 SmartLock 설정**
+- **Android 디바이스에 대한 SmartLock 설정**
 
-  새 설정이 Android 및 Samsung KNOX Standard 구성 항목에 추가되었습니다. 이를 통해 호환되는 Android 디바이스에서 SmartLock 기능을 제어할 수 있습니다.  이 설정을 사용하면 최종 사용자가 SmartLock을 구성하지 않도록 방지할 수 있습니다. [System Center Configuration Manager용 Technical Preview 1604의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1604.md)에서 [Android 장치에 대한 SmartLock 설정](/sccm/get-started/capabilities-in-technical-preview-1604#smartlock-setting-for-android-devices)을 참조하세요.  
+  새 설정이 Android 및 Samsung KNOX Standard 구성 항목에 추가되었습니다. 이를 통해 호환되는 Android 디바이스에서 SmartLock 기능을 제어할 수 있습니다.  이 설정을 사용하면 최종 사용자가 SmartLock을 구성하지 않도록 방지할 수 있습니다. [System Center Configuration Manager용 Technical Preview 1604의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1604.md)에서 [Android 디바이스에 대한 SmartLock 설정](/sccm/get-started/capabilities-in-technical-preview-1604#smartlock-setting-for-android-devices)을 참조하세요.  
 
 ### <a name="new-in-configuration-manager-current-branch"></a>Configuration Manager(현재 분기)의 새로운 기능  
  Configuration Manager(현재 분기) 2016년 4월에 도입된 새로운 하이브리드 기능은 없습니다.  
@@ -650,7 +650,7 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 
 - **Outlook 연락처 동기화를 방지하는 MAM 컨트롤(iOS)**
 
-  응용 프로그램이 iOS 디바이스의 기본 주소록에 연락처를 동기화할 수 없도록 하는 새로운 설정을 사용할 수 있습니다. 이 새로운 설정은 iOS 디바이스의 Outlook 응용 프로그램에서 지원됩니다. 이 설정 및 기타 설정에 대한 자세한 내용은 Intune 라이브러리에서 [MAM 정책 만들기 및 배포](/intune/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune)를 참조하세요.  
+  애플리케이션이 iOS 장치의 기본 주소록에 연락처를 동기화할 수 없도록 하는 새로운 설정을 사용할 수 있습니다. 이 새로운 설정은 iOS 장치의 Outlook 애플리케이션에서 지원됩니다. 이 설정 및 기타 설정에 대한 자세한 내용은 Intune 라이브러리에서 [MAM 정책 만들기 및 배포](/intune/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune)를 참조하세요.  
 
 - **비즈니스용 Skype Online에서 조건부 액세스 지원**
 
@@ -664,25 +664,25 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 
   이제 Windows 8, Windows 8.1 및 Windows RT PC 사용자가 회사 포털 웹 사이트에서 직접 Windows 앱 패키지(.appx 확장명 사용)을 설치할 수 있습니다. 이전에는 직접 배포하거나 사용자가 앱을 설치할 디바이스에 회사 포털 앱을 설치해야 했습니다.  
 
-- **사용자가 회사 포털 웹 사이트에서 원격으로 장치를 잠글 수 있음**
+- **사용자가 회사 포털 웹 사이트에서 원격으로 디바이스를 잠글 수 있음**
 
   새 원격 잠금 옵션이 회사 포털 웹 사이트에 추가되어 사용자가 디바이스를 분실하거나 도난당한 경우 포털에서 자신의 디바이스를 원격으로 잠글 수 있습니다.  
 
-- **타사 MDM 솔루션에 등록된 장치에 대해 iOS "다음에서 열기" 관리 활용**
+- **타사 MDM 솔루션에 등록된 디바이스에 대해 iOS "다음에서 열기" 관리 활용**
 
-  타사 MDM(모바일 디바이스 관리) 공급업체를 사용하여 IOS "다음에서 열기" 관리를 활용할 수 있습니다. 구성 프로필 설정에서 제한을 설정하고 MDM 소프트웨어를 사용하여 앱을 배포할 수 있습니다. 사용자가 관리되는 앱을 설치하면 제한 사항이 적용됩니다. 자세한 내용은 Intune 라이브러리에서 [Microsoft Intune 모바일 앱 관리 정책 및 iOS 다음에서 열기](/intune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune)를 참조하세요.  
+  타사 MDM(모바일 디바이스 관리) 공급업체를 사용하여 IOS "다음에서 열기" 관리를 활용할 수 있습니다. 구성 프로필 설정에서 제한을 설정하고 MDM 소프트웨어를 사용하여 앱을 배포할 수 있습니다. 사용자가 관리되는 앱을 설치하면 제한 사항이 적용됩니다. 세부 정보를 읽어보세요. [Microsoft Intune 모바일 앱 관리 정책 및 iOS 다음에서 열기](/intune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune) Intune 라이브러리에서.  
 
 - **MAM을 지원하는 Microsoft 앱**
 
-  Intune 모바일 응용 프로그램 관리 정책과 함께 사용할 수 있는 Microsoft 앱 목록이 최신 앱을 포함하도록 업데이트되었습니다(Intune에 등록된 디바이스에만 해당).  
+  Intune 모바일 애플리케이션 관리 정책과 함께 사용할 수 있는 Microsoft 앱 목록이 최신 앱을 포함하도록 업데이트되었습니다(Intune에 등록된 장치에만 해당).  
 
-- **엔터프라이즈의 Intune 관리 iOS 장치에 Microsoft Intune용 Adobe Reader 배포**
+- **엔터프라이즈의 Intune 관리 iOS 디바이스에 Microsoft Intune용 Adobe Reader 배포**
 
-  이제 Intune 모바일 응용 프로그램 관리 정책을 사용하여 등록된 디바이스에서 iOS용 Adobe Reader 앱을 관리할 수 있습니다.  
+  이제 Intune 모바일 애플리케이션 관리 정책에 등록된 장치에서 iOS용 Adobe Reader 앱을 관리할 수 있습니다.  
 
 - Android에 대해 Rights Management 공유 앱이 지원됨
 
-  IT에서 Intune을 사용하여 디바이스를 관리하는지 여부에 관계없이 최종 사용자가 이미지, AV 및 PDF 파일을 보다 안전하게 볼 수 있도록 IT 관리자가 모바일 응용 프로그램 관리 정책을 배포할 수 있습니다.  
+  IT에서 Intune을 사용하여 장치를 관리하는지 여부에 관계없이 최종 사용자가 이미지, AV 및 PDF 파일을 보다 안전하게 볼 수 있도록 IT 관리자가 모바일 애플리케이션 관리 정책을 배포할 수 있습니다.  
 
 - **Android 및 iOS 회사 포털 앱에 대한 향상된 기능**
 
@@ -719,7 +719,7 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 
   이러한 앱은 Configuration Manager 콘솔의 애플리케이션 노드에 있습니다. 애플리케이션을 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 애플리케이션을 배포하는 방법](../../apps/deploy-use/deploy-applications.md)을 참조하세요.  
 
-- **Android Samsung KNOX Standard 장치에 대한 키오스크 모드 설정**
+- **Android Samsung KNOX Standard 디바이스에 대한 키오스크 모드 설정**
 
   키오스크 모드에서는 디바이스를 잠가 특정 기능만 작동하도록 허용할 수 있습니다.  Configuration Manager(현재 분기) 버전 1602부터, 이제 Samsung KNOX Standard 디바이스에 대한 키오스크 모드 설정을 지정할 수 있습니다. 자세한 내용은 [System Center Configuration Manager 클라이언트 없이 관리되는 Android 및 Samsung KNOX Standard 디바이스에 대한 구성 항목을 만드는 방법](/sccm/compliance/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client)을 참조하세요.  
 
@@ -731,10 +731,10 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 
 ## <a name="notices"></a>알림
 
-### <a name="system-center-2012-configuration-sp1-and-system-center-2012-r2-configuration-manager-rtm-support-for-hybrid-mobile-device-management-ending-on-april-10-2017"></a>System Center 2012 Configuration SP1 및 System Center 2012 R2 Configuration Manager(RTM): 하이브리드 모바일 디바이스 관리에 대한 지원이 2017년 4월 10일에 종료됩니다.
+### <a name="system-center-2012-configuration-sp1-and-system-center-2012-r2-configuration-manager-rtm-support-for-hybrid-mobile-device-management-ending-on-april-10-2017"></a>System Center 2012 Configuration SP1 및 System Center 2012 R2 Configuration Manager (RTM): 2017 년 4 월 10 일에 종료 하는 하이브리드 모바일 장치 관리에 대 한 지원
 *2017년 1월 11일*
 
-System Center 2012 Configuration Manager SP1 및 System Center 2012 R2 Configuration Manager RTM에 대한 지원이 2016년 7월 12일에 종료됩니다. 그 이후 Microsoft Intune 서비스에 연결하는 이러한 릴리스의 하이브리드 MDM에 대한 지원이 2017년 4월 10일에 종료됩니다. 이 날짜 이후에는 이러한 릴리스에서 하이브리드 MDM의 작동이 중지됩니다. Intune 커넥터가 더 이상 Intune 서비스에 연결되지 않으므로 관리되는 디바이스는 기본적으로 관리되지 않습니다. 업그레이드가 발생할 때까지 Configuration Manager 데이터(예: 정책 및 응용 프로그램)가 Intune으로 이동하지 않으며 관리되는 디바이스 데이터가 Configuration Manager로 이동하지 않습니다.
+System Center 2012 Configuration Manager SP1 및 System Center 2012 R2 Configuration Manager RTM에 대한 지원이 2016년 7월 12일에 종료됩니다. 그 이후 Microsoft Intune 서비스에 연결하는 이러한 릴리스의 하이브리드 MDM에 대한 지원이 2017년 4월 10일에 종료됩니다. 이 날짜 이후에는 이러한 릴리스에서 하이브리드 MDM의 작동이 중지됩니다. Intune 커넥터가 더 이상 Intune 서비스에 연결되지 않으므로 관리되는 디바이스는 기본적으로 관리되지 않습니다. 업그레이드가 발생할 때까지 Configuration Manager 데이터(예: 정책 및 애플리케이션)가 Intune으로 이동하지 않으며 관리되는 장치 데이터가 Configuration Manager로 이동하지 않습니다.
 
 Configuration Manager 2012 SP1 또는 R2 RTM과 함께 하이브리드 배포를 실행하는 경우 2017년 4월 10일 이전에 Configuration Manager(현재 분기)로 업그레이드하거나 Configuration Manager 2012의 지원되는 최신 서비스 팩(R2 SP1 또는 SP2)으로 업그레이드하여 서비스 중단을 방지하는 것이 좋습니다.
 

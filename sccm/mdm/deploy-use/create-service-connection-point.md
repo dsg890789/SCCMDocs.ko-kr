@@ -10,16 +10,16 @@ ms.assetid: 617abb22-d22f-41fb-a76b-1c4259e419d2
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3dfd02a84cef31c22023b7fc4cb75931dc82160f
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.openlocfilehash: 12626a734138094e7558617b714b2b5acdac6450
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32346461"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53424326"
 ---
 # <a name="create-a-service-connection-point-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하여 서비스 연결 지점 만들기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: System Center Configuration Manager (현재 분기)*
 
 구독을 만든 후에는 Intue 서비스에 연결하는 데 사용할 수 있는 서비스 연결 지점 사이트 시스템 역할을 설치할 수 있습니다. 이 사이트 시스템 역할은 Intue 서비스에 설정 및 애플리케이션을 푸시합니다.
 
@@ -37,9 +37,9 @@ ms.locfileid: "32346461"
 
 3.  다음 중 해당 단계를 사용하여 새 또는 기존 사이트 시스템 서버에 **서비스 연결 지점** 역할을 추가합니다.
 
-    -   새 사이트 시스템 서버: **홈** 탭의 **만들기** 그룹에서 **사이트 시스템 서버 만들기** 를 클릭하여 사이트 시스템 서버 만들기 마법사를 시작합니다.
+    -   새 사이트 시스템 서버: 에 **홈** 탭의 **만들기** 그룹에서 클릭 **사이트 시스템 서버 만들기** 사이트 시스템 서버 만들기 마법사를 시작 하려면.
 
-    -   기존 사이트 시스템 서버: 서비스 연결 지점 역할을 설치할 서버를 클릭합니다. 그런 다음 **홈** 탭의 **서버** 그룹에서 **사이트 시스템 역할 추가** 를 클릭하여 사이트 시스템 역할 추가 마법사를 시작합니다.
+    -   기존 사이트 시스템 서버: 서비스 연결 지점 역할을 설치 하려는 서버를 클릭 합니다. 그런 다음 **홈** 탭의 **서버** 그룹에서 **사이트 시스템 역할 추가** 를 클릭하여 사이트 시스템 역할 추가 마법사를 시작합니다.
 
 4.  **시스템 역할 선택** 페이지에서 **서비스 연결 지점**을 선택하고 **다음**을 클릭합니다.
 ![서비스 연결 지점 만들기](../media/mdm-service-connection-point.png)
@@ -54,4 +54,4 @@ ms.locfileid: "32346461"
 2.  1단계에서 발급된 인증서가 서비스 연결 지점 사이트 역할에 설치되며 Microsoft Intune 서비스와의 이후 모든 통신을 인증하고 권한을 부여하는 데 사용됩니다.
 
 > [!div class="button"]
-[< 이전 단계](terms-and-conditions.md)  [다음 단계 >](enable-platform-enrollment.md)
+> [< 이전 단계](terms-and-conditions.md)  [다음 단계 >](enable-platform-enrollment.md)

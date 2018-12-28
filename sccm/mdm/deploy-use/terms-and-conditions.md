@@ -10,16 +10,16 @@ ms.assetid: 4d3f9e6b-4d71-4fc4-9b91-47f1bfbd8c70
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: cda5f01842f08ccc3e8dfbd17078fe157954d985
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.openlocfilehash: e7f5eefe532c3a0a48bc0703365bf07028bfae71
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32353473"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53419634"
 ---
 # <a name="add-terms-and-conditions-with-system-center-configuration-manager"></a>System Center Configuration Manager 사용 약관 추가
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: System Center Configuration Manager (현재 분기)*
 
 디바이스 등록, 회사 포털의 작업 리소스 액세스 및 회사 포털 사용 시의 디바이스와 사용자에 대한 영향을 설명하기 위해 사용자 그룹에 System Center Configuration Manager 계약조건을 배포할 수 있습니다. 사용자는 먼저 사용 약관에 동의해야 회사 포털을 사용하여 작업 등록 및 액세스를 수행할 수 있습니다.  
 
@@ -28,29 +28,29 @@ ms.locfileid: "32353473"
 
 ## <a name="to-create-a-terms-and-conditions"></a>사용 약관을 만들려면  
 
-1.  Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > **준수 설정** > **사용 약관**으로 이동합니다.  
+1. Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > **준수 설정** > **사용 약관**으로 이동합니다.  
 
-2.  **사용 약관 만들기** 를 클릭하여 새 사용 약관을 만듭니다.  
+2. **사용 약관 만들기** 를 클릭하여 새 사용 약관을 만듭니다.  
 
-3.  **일반** 페이지에서 다음 정보를 지정합니다.  
+3. **일반** 페이지에서 다음 정보를 지정합니다.  
 
-    -   **이름** - Configuration Manager 콘솔에 표시되는 고유 이름  
+   - **이름** - Configuration Manager 콘솔에 표시되는 고유 이름  
 
-    -   **설명** - Configuration Manager 콘솔에서 계약조건을 식별하는 데 도움이 되는 자세한 설명  
-
-     그리고 **다음**을 클릭합니다.  
-
-4.  **약관** 페이지에서 다음 정보를 지정합니다.  
-
-    -   **제목** - 회사 포털에서 사용자에게 표시되는 제목  
-
-    -   **약관에 사용할 텍스트** - 회사 포털에서 사용자에게 표시되는 사용 약관  
-
-    -   **사용자가 동의하는 경우 그 의미를 설명하는 텍스트** - 사용 약관 동의와 관련하여 사용자에게 표시되는 레이블입니다. **예**: "계약조건에 동의함"  
+   - **설명** - Configuration Manager 콘솔에서 계약조건을 식별하는 데 도움이 되는 자세한 설명  
 
      그리고 **다음**을 클릭합니다.  
 
-5.  마법사를 완료하여 새 약관을 만듭니다. 새 약관은 자산 및 준수 작업 영역의 사용 약관 노드에 표시됩니다.  
+4. **약관** 페이지에서 다음 정보를 지정합니다.  
+
+   - **제목** - 회사 포털에서 사용자에게 표시되는 제목  
+
+   - **약관에 사용할 텍스트** - 회사 포털에서 사용자에게 표시되는 사용 약관  
+
+   - **사용자가 동의하는 경우 그 의미를 설명하는 텍스트** - 사용 약관 동의와 관련하여 사용자에게 표시되는 레이블입니다. **예제**: "동의" 계약 조건에 조건입니다.  
+
+     그리고 **다음**을 클릭합니다.  
+
+5. 마법사를 완료하여 새 약관을 만듭니다. 새 약관은 자산 및 준수 작업 영역의 사용 약관 노드에 표시됩니다.  
 
 ## <a name="to-deploy-a-terms-and-conditions"></a>사용 약관을 배포하려면  
 
@@ -79,7 +79,7 @@ ms.locfileid: "32353473"
 
     -   **비준수** - 사용자가 사용 약관의 버전을 수락했지만 최신 버전이 아닙니다.  
 
-    -   **알 수 없음** - 사용자가 등록된 장치가 없는 사용 약관을 비롯하여 사용 약관을 수락하지 않았습니다.  
+    -   **알 수 없음** - 사용자가 등록된 디바이스가 없는 사용 약관을 비롯하여 사용 약관을 수락하지 않았습니다.  
 
 3.  사용 약관 배포를 선택한 후 **요약 실행** 을 선택하여 개별 사용자의 배포 상태를 확인합니다.  
 
@@ -117,4 +117,4 @@ ms.locfileid: "32353473"
      사용 약관을 크게 변경할 때마다 버전 번호를 높이고 동의를 요구하는 것이 좋습니다. 오타를 수정하거나 서식을 변경하는 등의 경우에는 현재 버전 번호를 유지합니다.
 
 > [!div class="button"]
-[< 이전 단계](configure-intune-subscription.md)  [다음 단계 >](create-service-connection-point.md)
+> [< 이전 단계](configure-intune-subscription.md)  [다음 단계 >](create-service-connection-point.md)

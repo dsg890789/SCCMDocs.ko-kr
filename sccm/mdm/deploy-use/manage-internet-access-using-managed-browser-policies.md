@@ -10,16 +10,16 @@ ms.assetid: 8e25e00c-c9a8-473f-bcb7-ea989f6ca3c5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 9fe64aef541a4e6405b0fbf6308afc6269d88f56
-ms.sourcegitcommit: f03cb34693b9806e9fecd3c0162de70cc8cb4b1e
-ms.translationtype: HT
+ms.openlocfilehash: 2483a15286a2784f2fb8a4256029004374a313dc
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37886487"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53419787"
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-system-center-configuration-manager"></a>System Center Configuration Manager를 통해 관리 브라우저 정책을 사용하여 인터넷 액세스 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: System Center Configuration Manager (현재 분기)*
 
 System Center Configuration Manager에서는 Intune Managed Browser(웹 검색 애플리케이션)를 배포하고 관리 브라우저 정책과 연결할 수 있습니다. 관리 브라우저 정책은 관리 브라우저의 사용자가 이동할 수 있는 웹 사이트를 제한하는 허용 목록 또는 차단 목록을 설정합니다.  
 
@@ -41,7 +41,7 @@ System Center Configuration Manager에서는 Intune Managed Browser(웹 검색 �
 
 1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **응용 프로그램 관리 정책**을 선택합니다.  
 
-3.  **홈** 탭의 **만들기** 그룹에서 **응용 프로그램 관리 정책 만들기**를 선택합니다.  
+3.  **홈** 탭의 **만들기** 그룹에서 **애플리케이션 관리 정책 만들기**를 선택합니다.  
 
 4.  **일반** 페이지에서 정책의 이름과 설명을 입력하고 **다음**을 선택합니다.  
 
@@ -86,52 +86,54 @@ System Center Configuration Manager에서는 Intune Managed Browser(웹 검색 �
 
 다음 정보를 사용하여 허용 및 차단 목록에 URL을 지정할 때 사용할 수 있는 형식 및 와일드카드에 대해 알아볼 수 있습니다.  
 
--   아래와 같은 허용 패턴 목록의 규칙에 따라 와일드 카드 기호 `*`(별표)를 사용합니다.  
+- 아래와 같은 허용 패턴 목록의 규칙에 따라 와일드 카드 기호 `*`(별표)를 사용합니다.  
 
--   URL을 목록에 입력할 때 모든 URL의 앞에 **http** 또는 **https**를 붙입니다.  
+- URL을 목록에 입력할 때 모든 URL의 앞에 **http** 또는 **https**를 붙입니다.  
 
--   주소에 포트 번호를 지정합니다. 포트 번호를 지정하지 않으면 다음 값이 사용됩니다.  
+- 주소에 포트 번호를 지정합니다. 포트 번호를 지정하지 않으면 다음 값이 사용됩니다.  
 
-    -   http의 경우 포트 80  
+  - http의 경우 포트 80  
 
-    -   https의 경우 포트 443  
+  - https의 경우 포트 443  
 
-     포트 번호에 와일드카드를 사용하지 마세요. 지원되지 않습니다. 예: `http://www.contoso.com:*`   
+    포트 번호에 와일드카드를 사용하지 마세요. 지원되지 않습니다. 예를 들면 `http://www.contoso.com:*`   
 
--   다음 표를 사용하여 URL을 지정할 때 사용할 수 있는 패턴에 대해 알아볼 수 있습니다.  
+- 다음 표를 사용하여 URL을 지정할 때 사용할 수 있는 패턴에 대해 알아볼 수 있습니다.  
 
-    |URL|일치하는 항목|일치하지 않는 항목|  
-    |---------|-------------|--------------------|  
-    |`http://www.contoso.com`<br /><br /> 단일 페이지와 일치|`www.contoso.com`|`host.contoso.com`<br /><br /> `www.contoso.com/images`<br /><br /> `contoso.com/`|  
-    |`http://contoso.com`<br /><br /> 단일 페이지와 일치|`contoso.com`|`host.contoso.com`<br /><br /> `www.contoso.com/images`<br /><br /> `www.contoso.com`|  
-    |`http://www.contoso.com/*`<br /><br /> `www.contoso.com`으로 시작하는 모든 URL과 일치|`www.contoso.com`<br /><br /> `www.contoso.com/images`<br /><br /> `www.contoso.com/videos/tvshows`|`host.contoso.com`<br /><br /> `host.contoso.com/images`|  
-    |`http://*.contoso.com/*`<br /><br /> contoso.com 아래의 모든 하위 도메인과 일치|`developer.contoso.com/resources`<br /><br /> `news.contoso.com/images`<br /><br /> `news.contoso.com/videos`|`contoso.host.com`|  
-    |`http://www.contoso.com/images`<br /><br /> 단일 폴더와 일치|`www.contoso.com/images`|`www.contoso.com/images/dogs`|  
-    |`http://www.contoso.com:80`<br /><br /> 포트 번호를 사용하여 단일 페이지와 일치|`http://www.contoso.com:80`||  
-    |`https://www.contoso.com`<br /><br /> 안전한 단일 페이지와 일치|`https://www.contoso.com`|`http://www.contoso.com`|  
-    |`http://www.contoso.com/images/*`<br /><br /> 단일 폴더 및 모든 하위 폴더와 일치|`www.contoso.com/images/dogs`<br /><br /> `www.contoso.com/images/cats`|`www.contoso.com/videos`|  
 
--   다음은 지정할 수 없는 몇몇 입력의 예입니다.  
+  |                                           URL                                            |                                                    일치하는 항목                                                    |                                    일치하지 않는 항목                                     |
+  |------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
+  |                `http://www.contoso.com`<br /><br /> 단일 페이지와 일치                |                                               `www.contoso.com`                                               |  `host.contoso.com`<br /><br /> `www.contoso.com/images`<br /><br /> `contoso.com/`   |
+  |                  `http://contoso.com`<br /><br /> 단일 페이지와 일치                  |                                                 `contoso.com`                                                 | `host.contoso.com`<br /><br /> `www.contoso.com/images`<br /><br /> `www.contoso.com` |
+  | `http://www.contoso.com/*`<br /><br /> `www.contoso.com`으로 시작하는 모든 URL과 일치 |      `www.contoso.com`<br /><br /> `www.contoso.com/images`<br /><br /> `www.contoso.com/videos/tvshows`      |               `host.contoso.com`<br /><br /> `host.contoso.com/images`                |
+  |      `http://*.contoso.com/*`<br /><br /> contoso.com 아래의 모든 하위 도메인과 일치      | `developer.contoso.com/resources`<br /><br /> `news.contoso.com/images`<br /><br /> `news.contoso.com/videos` |                                  `contoso.host.com`                                   |
+  |           `http://www.contoso.com/images`<br /><br /> 단일 폴더와 일치            |                                           `www.contoso.com/images`                                            |                             `www.contoso.com/images/dogs`                             |
+  |    `http://www.contoso.com:80`<br /><br /> 포트 번호를 사용하여 단일 페이지와 일치    |                                          `http://www.contoso.com:80`                                          |                                                                                       |
+  |           `https://www.contoso.com`<br /><br /> 안전한 단일 페이지와 일치            |                                           `https://www.contoso.com`                                           |                               `http://www.contoso.com`                                |
+  | `http://www.contoso.com/images/*`<br /><br /> 단일 폴더 및 모든 하위 폴더와 일치 |                    `www.contoso.com/images/dogs`<br /><br /> `www.contoso.com/images/cats`                    |                               `www.contoso.com/videos`                                |
 
-    -   `*.com`  
 
-    -   `*.contoso/*`  
+- 다음은 지정할 수 없는 몇몇 입력의 예입니다.  
 
-    -   `www.contoso.com/*images`  
+  -   `*.com`  
 
-    -   `www.contoso.com/*images*pigs`  
+  -   `*.contoso/*`  
 
-    -   `www.contoso.com/page*`  
+  -   `www.contoso.com/*images`  
 
-    -   IP 주소  
+  -   `www.contoso.com/*images*pigs`  
 
-    -   `https://*`  
+  -   `www.contoso.com/page*`  
 
-    -   `http://*`  
+  -   IP 주소  
 
-    -   `http://www.contoso.com:*`  
+  -   `https://*`  
 
-    -   `http://www.contoso.com: /*`  
+  -   `http://*`  
+
+  -   `http://www.contoso.com:*`  
+
+  -   `http://www.contoso.com: /*`  
 
 > [!NOTE]  
 >  `*.microsoft.com`은 항상 허용됩니다.  

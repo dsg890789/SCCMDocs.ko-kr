@@ -10,16 +10,16 @@ ms.assetid: aba688d9-fd5b-4c42-8cb4-f7e1b161ef50
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5bdc881d6d6423aa357cf8916f54f1b5f31120f2
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.openlocfilehash: 98b573dcf72f4bbf3cde73cb9a5cd7905b8a0248
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32353262"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53417322"
 ---
 # <a name="manage-mobile-devices-with-system-center-configuration-manager-and-exchange"></a>System Center Configuration Manager와 Exchange를 사용하여 모바일 디바이스 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: System Center Configuration Manager (현재 분기)*
 
 Microsoft Exchange ActiveSync 프로토콜을 사용하여 Exchange Server(온-프레미스 또는 온라인)에 연결하는 모바일 디바이스를 관리하려고 하며 Configuration Manager를 사용하여 해당 디바이스를 등록할 수 없는 경우 System Center Configuration Manager에서 Exchange Server 커넥터를 사용합니다. Configuration Manager 콘솔에서 여러 Exchange 서버에 대한 설정 제어 및 원격 디바이스 초기화와 같은 Exchange 모바일 디바이스 관리 기능을 구성할 수 있습니다.  
 
@@ -30,13 +30,13 @@ Microsoft Exchange ActiveSync 프로토콜을 사용하여 Exchange Server(온-�
 > [!IMPORTANT]  
 >  Exchange Server 커넥터를 설치하기 전에 사용 중인 Microsoft Exchange 버전이 Configuration Manager에서 지원되는지 확인합니다. 자세한 내용은 [System Center Configuration Manager의 사이트 및 클라이언트에 대해 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-site-system-servers)에서 "Exchange Server 커넥터"를 참조하세요.  
 
- Exchange Server 커넥터를 사용하는 경우 모바일 디바이스를 기본 Exchange ActiveSync 사서함 정책으로 관리하는 대신 Configuration Manager에서 구성한 설정으로 관리할 수 있습니다. 사용할 설정을 **일반**, **암호**, **전자 메일 관리**, **보안**및 **애플리케이션**그룹 설정에서 정의합니다. 예를 들어 **암호** 그룹 설정에서, 모바일 디바이스에서 암호를 요구할 것인지 여부, 최소 암호 길이, 암호 복잡도, 암호 복구 허용 여부를 구성할 수 있습니다.  
+ Exchange Server 커넥터를 사용하는 경우 모바일 디바이스를 기본 Exchange ActiveSync 사서함 정책으로 관리하는 대신 Configuration Manager에서 구성한 설정으로 관리할 수 있습니다. 다음 그룹 설정에서 사용 하려는 설정을 정의 합니다. **일반**, **암호**, **메일 관리**, **Security**, 및 **응용 프로그램**합니다. 예를 들어 **암호** 그룹 설정에서, 모바일 디바이스에서 암호를 요구할 것인지 여부, 최소 암호 길이, 암호 복잡도, 암호 복구 허용 여부를 구성할 수 있습니다.  
 
  그룹에 하나 이상의 설정을 구성하면 Configuration Manager가 모바일 디바이스에 대한 그룹의 모든 설정을 관리합니다. 특정 그룹에서 어떤 설정도 구성하지 않으면 Exchange가 모바일 디바이스의 이러한 설정을 계속 관리합니다. Exchange Server에 구성되어 사용자에게 할당된 모든 Exchange ActiveSync 사서함 정책은 여전히 적용됩니다.  
 
- 또한 Exchange 액세스 규칙을 관리하고 모바일 디바이스를 허용 또는 차단하거나 격리하도록 Exchange Server 커넥터를 구성할 수도 있습니다. 관리자는 Configuration Manager 콘솔을 사용하여 모바일 디바이스를 원격으로 초기화할 수 있으며, 사용자는 응용 프로그램 카탈로그를 사용하여 모바일 디바이스를 원격으로 초기화할 수 있습니다.  
+ 또한 Exchange 액세스 규칙을 관리하고 모바일 디바이스를 허용 또는 차단하거나 격리하도록 Exchange Server 커넥터를 구성할 수도 있습니다. 관리자는 Configuration Manager 콘솔을 사용하여 모바일 장치를 원격으로 초기화할 수 있으며, 사용자는 애플리케이션 카탈로그를 사용하여 모바일 장치를 원격으로 초기화할 수 있습니다.  
 
- 사용자의 모바일 디바이스가 Exchange Server 커넥터를 통해 관리되고 Exchange Server가 온-프레미스 버전인 경우 사용자의 모바일 디바이스가 응용 프로그램 카탈로그에 자동으로 표시됩니다. Microsoft Exchange Online에 대해 Exchange Server 커넥터를 구성하는 경우 사용자의 모바일 디바이스가 응용 프로그램 카탈로그에 표시되도록 사용자 디바이스 선호도를 수동으로 구성해야 합니다. 사용자 디바이스 선호도를 수동으로 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 사용자 디바이스 선호도를 사용하여 사용자와 디바이스 연결](../../apps/deploy-use/link-users-and-devices-with-user-device-affinity.md)을 참조하세요.  
+ 사용자의 모바일 장치가 Exchange Server 커넥터를 통해 관리되고 Exchange Server가 온-프레미스 버전인 경우 사용자의 모바일 장치가 애플리케이션 카탈로그에 자동으로 표시됩니다. Microsoft Exchange Online에 대해 Exchange Server 커넥터를 구성하는 경우 사용자의 모바일 장치가 애플리케이션 카탈로그에 표시되도록 사용자 장치 선호도를 수동으로 구성해야 합니다. 사용자 디바이스 선호도를 수동으로 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 사용자 디바이스 선호도를 사용하여 사용자와 디바이스 연결](../../apps/deploy-use/link-users-and-devices-with-user-device-affinity.md)을 참조하세요.  
 
 > [!TIP]  
 >  Exchange Server 커넥터를 사용하여 모바일 디바이스를 관리하고 모바일 디바이스가 다른 사용자에게 양도되는 경우 모바일 디바이스의 새 소유자가 양도된 모바일 디바이스에 자신의 Exchange 계정을 구성하기 전에 Configuration Manager 콘솔에서 모바일 디바이스를 삭제합니다.  
@@ -44,23 +44,23 @@ Microsoft Exchange ActiveSync 프로토콜을 사용하여 Exchange Server(온-�
 ## <a name="required-security-permissions"></a>필요한 보안 권한  
  Exchange Server 커넥터를 구성하려면 다음 보안 권한이 있어야 합니다.  
 
--   Exchange Server 커넥터를 추가, 수정 및 삭제: **사이트** 개체에 대한 **수정** 권한이 필요합니다.  
+- 추가, 수정 및 Exchange Server 커넥터를 삭제 합니다. **수정할** 에 대 한 권한을 합니다 **사이트** 개체입니다.  
 
--   모바일 디바이스 설정 구성: **사이트** 개체에 대한 **ModifyConnectorPolicy** 권한이 필요합니다.  
+- 모바일 장치 설정을 구성 하려면: **ModifyConnectorPolicy** 에 대 한 권한을 합니다 **사이트** 개체입니다.  
 
- **전체 관리자** 보안 역할에는 Exchange Server 커넥터를 구성하기 위해 필요한 권한이 포함됩니다.  
+  **전체 관리자** 보안 역할에는 Exchange Server 커넥터를 구성하기 위해 필요한 권한이 포함됩니다.  
 
- 모바일 디바이스를 관리하려면 다음 보안 권한이 있어야 합니다.  
+  모바일 디바이스를 관리하려면 다음 보안 권한이 있어야 합니다.  
 
--   모바일 디바이스 초기화: **컬렉션** 개체에 대한 **리소스 삭제** 권한이 필요합니다.  
+- 모바일 장치를 초기화 합니다. **리소스를 삭제할** 에 대 한 합니다 **컬렉션** 개체입니다.  
 
--   초기화 명령 취소: **컬렉션** 개체에 대한 **리소스 수정** 권한이 필요합니다.  
+- 초기화 명령 취소: **리소스 수정** 에 대 한 합니다 **컬렉션** 개체입니다.  
 
--   모바일 디바이스 허용 및 차단: **컬렉션** 개체에 대한 **리소스 수정** .  
+- 허용 하 고 모바일 장치를 차단 합니다. **리소스 수정** 에 대 한 합니다 **컬렉션** 개체입니다.  
 
- **운영 관리자** 보안 역할에는 Exchange Server 커넥터를 사용하여 모바일 장치를 관리하기 위해 필요한 권한이 포함됩니다.  
+  **운영 관리자** 보안 역할에는 Exchange Server 커넥터를 사용하여 모바일 디바이스를 관리하기 위해 필요한 권한이 포함됩니다.  
 
- 보안 권한을 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에 대한 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md)을 참조하세요.  
+  보안 권한을 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에 대한 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md)을 참조하세요.  
 
 ## <a name="installing-and-configuring-an-exchange-server-connector"></a>Exchange Server 커넥터 설치 및 구성  
  다음 절차에 따라 Exchange Server 커넥터를 설치하고 모바일 디바이스를 관리하도록 구성합니다. Configuration Manager는 Exchange 조직의 커넥터를 하나만 지원합니다. 이러한 단계를 완료한 후에는 모바일 디바이스가 표시된 컬렉션을 확인하고 모바일 디바이스에 대한 보고서를 사용하여 커넥터로 검색 및 관리되는 모바일 디바이스를 모니터링할 수 있습니다.  
@@ -111,7 +111,7 @@ Microsoft Exchange ActiveSync 프로토콜을 사용하여 Exchange Server(온-�
     -   **Set-ActiveSyncOrganizationSettings**  
 
     > [!NOTE]  
-    >  이러한 cmdlet이 포함되는 Exchange Server 관리 역할은 받는 사람 관리, 보기 전용 조직 관리, 서버 관리입니다. Microsoft Exchange Server2010의 관리 역할 그룹에 대한 자세한 내용은 [관리 역할 그룹 이해](http://go.microsoft.com/fwlink/p/?LinkId=212914)를 참조하십시오.  
+    >  이러한 cmdlet를 포함 하는 다음 Exchange Server 관리 역할: 받는 사람 관리, 보기 전용 조직 관리 및 서버 관리 합니다. Microsoft Exchange Server2010의 관리 역할 그룹에 대한 자세한 내용은 [관리 역할 그룹 이해](http://go.microsoft.com/fwlink/p/?LinkId=212914)를 참조하십시오.  
 
     > [!TIP]  
     >  필수 cmdlet 없이 Exchange Server 커넥터를 설치하거나 사용하려고 하면 사이트 서버 컴퓨터의 EasDisc.log 로그 파일에 `Invoking cmdlet <cmdlet> failed` 메시지와 함께 로깅된 오류가 표시됩니다.  

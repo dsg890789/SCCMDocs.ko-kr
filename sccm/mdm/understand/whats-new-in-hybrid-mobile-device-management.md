@@ -2,7 +2,7 @@
 title: 하이브리드 MDM의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 디바이스 관리 기능에 대해 알아봅니다.
-ms.date: 12/05/2018
+ms.date: 12/14/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 7b127cee-61f1-4681-9760-caebed36ddf5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6ecc3f47b908678b1849e16c2cb2053f100a655a
-ms.sourcegitcommit: 2491fbe98915b7a30c2422a371c929d0d4ebf22f
-ms.translationtype: HT
+ms.openlocfilehash: 7cf1adf7d73e60fba0d748022ab7c241d60ffed7
+ms.sourcegitcommit: c60e057075a83f07d1ca2577c3de1c7d7c8e9cec
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247529"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626500"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 디바이스 관리의 새로운 기능
 
@@ -47,7 +47,24 @@ ms.locfileid: "53247529"
 
 
 
-## <a name="november-2018"></a>2018 년 11 월
+## <a name="december-2018"></a>2018 년 12 월
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+#### <a name="microsoft-auto-update-version-450-required-for-macos-devices"></a>MacOS 장치에 필요한 Microsoft 자동 업데이트 버전 4.5.0
+<!--3503442--> 회사 포털 및 기타 Office 응용 프로그램에 대 한 업데이트를 받는 작업을 계속 하려면 Microsoft 자동 업데이트 4.5.0 macOS 장치를 Intune에서 관리 되는 업그레이드 해야 합니다. 사용자가 Office 앱에 대 한이 버전을 이미 있을 수도 있습니다.
+
+#### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys"></a>Intune 앱 SDK는 256 비트 암호화 키 지원 
+<!--1832174--> Android 용 Intune 앱 SDK는 이제 앱 보호 정책에 의해 암호화가 설정 된 경우 256 비트 암호화 키를 사용 합니다. 콘텐츠 및 이전 SDK 버전을 사용 하는 앱을 사용 하 여 호환성을 위해 128 비트 키의 지원을 제공 하기 위해 SDK는 계속 됩니다.
+
+#### <a name="intune-requires-macos-1012-or-later"></a>Intune에 macOS를 10.12 이상 필요합니다. 
+<!--2827778--> 이제 Intune에 macOS 10.12 이상 버전에 필요 합니다. 이전 macOS 버전을 사용 하 여 장치를 Intune에 등록 하려면 회사 포털을 사용할 수 없습니다. 지원 및 새로운 기능을 받으려면 사용자가 장치 macOS 10.12 이상으로 업그레이드 하 고 회사 포털을 최신 버전으로 업그레이드 해야 합니다.
+
+자세한 내용은 참조 하세요. [변경 계획: Intune은 12 월에 macOS 10.12 이상을 지원](#plan-for-change-intune-supports-macos-1012-and-higher-in-december)합니다.
+
+
+
+## <a name="november-2018"></a>2018년 11월
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
@@ -549,7 +566,11 @@ MacOS 버전 10.12 이상은 현재 다음에서 지원됩니다.
 
 
 ### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>변경 계획: 고객은 프리미어의 새 Intune 지원 환경 
-<!--2828727--> Microsoft 프리미어 고객은 현재 [MPO(Microsoft Premier Online) 포털](https://premier.microsoft.com) 및 [Azure의 Intune](https://portal.azure.com)을 사용하여 Intune에 대한 지원 요청을 만들 수 있습니다. 2018년 12월 3월부터 프리미어 지원 환경을 계속해서 향상시키려면 Azure의 Intune에서만 지원 요청을 만들 수 있습니다.
+<!--2828727-->
+
+2018 년 12 월 4 업데이트: 이 프로세스를 개선 하려고 합니다. 12 월 3 일에 MPO에서 지원 요청 만들기를 사용 하지 않도록 설정 하지 않습니다. 알려드리겠습니다 메시지 센터를 통해 지식과이 변경에 대 한 타임 라인을 공유 하려면 곧이 게시물을 업데이트 합니다.
+
+Microsoft 프리미어 고객 인 현재 사용할 수는 [Microsoft Premier Online (MPO) 포털](https://premier.microsoft.com) 하 고 [Azure의 Intune에서](https://portal.azure.com) Intune에 대 한 지원 요청을 만들려면. 2018년 12월 3월부터 프리미어 지원 환경을 계속해서 향상시키려면 Azure의 Intune에서만 지원 요청을 만들 수 있습니다.
 
 #### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
 12월 3일 이후에는 MPO에서 지원 요청을 만들 수 없습니다. 시도하는 경우 Azure의 Intune으로 리디렉션하는 중에 해제할 수 없다는 메시지가 표시됩니다. Azure Portal에서 지원 요청을 만드는 경우 Intune 전용 Microsoft 지원으로 라우팅됩니다. 시기 적절하게 문제를 진단하며 해결합니다. MPO 포털에서 지원 요청을 만드는 경우 Azure Portal에서는 볼 수 없습니다. Azure의 Intune에서 지원 요청을 만들기만 시작합니다.  

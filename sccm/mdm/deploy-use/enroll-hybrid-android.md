@@ -10,16 +10,16 @@ ms.assetid: c517fe34-0130-465b-a020-bdb555878778
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f833a28a22e4b3ffd2c8fc237effec94e26e69e8
-ms.sourcegitcommit: 10b3a571e2a822bbd7b58a25840ee1e6f703a7a2
-ms.translationtype: HT
+ms.openlocfilehash: fb488ccfc186fcc56ea91c30b6c0319aead5208e
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34814259"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53416982"
 ---
 # <a name="set-up-android-hybrid-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>Set up Android hybrid device management with System Center Configuration Manager and Microsoft Intune
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: System Center Configuration Manager (현재 분기)*
 
 이 문서에서는 Android 및 Android for Work 디바이스의 하이브리드 등록을 사용하도록 설정할 수 있습니다. 그런 다음, Configuration Manger를 사용하여 구성된 Microsoft Intune 구독을 통해 디바이스를 관리할 수 있습니다. Google Play에서 사용자는 Android(Samsung KNOX Standard 포함) 및 Android for Work 디바이스를 등록할 수 있는 Android 회사 포털 앱을 다운로드할 수 있습니다.
 
@@ -33,9 +33,9 @@ Configuration Manager로 준수 설정을 관리하고, Android 디바이스를 
 1. 플랫폼에 대한 등록을 설정하려면 먼저 [하이브리드 MDM 설정](setup-hybrid-mdm.md)에서 필수 조건 및 절차를 완료합니다.  
 2. Configuration Manager 콘솔의 **관리** 작업 영역에서 **개요** > **Cloud Services** > **Microsoft Intune 구독**을 선택하고 Intune 구독을 선택합니다.  
 3. **홈** 탭의 **구독** 그룹에서 **플랫폼 구성** > **Android**를 선택합니다.  
-4. **Microsoft Intune 구독 속성** 대화 상자에서 **Android** 탭을 선택하고 **Android 등록 사용** 확인란을 선택합니다. **개인적으로 소유한 장치 차단**을 선택하여 [미리 선언된 장치](predeclare-devices-with-hardware-id.md)에 대한 등록을 제한할 수 있습니다.
+4. **Microsoft Intune 구독 속성** 대화 상자에서 **Android** 탭을 선택하고 **Android 등록 사용** 확인란을 선택합니다. **개인적으로 소유한 디바이스 차단**을 선택하여 [미리 선언된 디바이스](predeclare-devices-with-hardware-id.md)에 대한 등록을 제한할 수 있습니다.
 
- 설정한 후에는 사용자에게 디바이스를 등록하는 방법을 알려 주어야 합니다. [장치 등록에 대해 최종 사용자에게 알릴 내용](/intune/end-user-educate)을 참조하세요. 이 정보는 Microsoft Intune 및 Configuration Manager에서 관리되는 모바일 디바이스에 적용됩니다.
+   설정한 후에는 사용자에게 디바이스를 등록하는 방법을 알려 주어야 합니다. [디바이스 등록에 대해 최종 사용자에게 알릴 내용](/intune/end-user-educate)을 참조하세요. 이 정보는 Microsoft Intune 및 Configuration Manager에서 관리되는 모바일 디바이스에 적용됩니다.
 
 
 
@@ -57,14 +57,14 @@ Configuration Manager로 준수 설정을 관리하고, Android 디바이스를 
 
    6. Google의 로그인 페이지에서 1단계의 Google 계정 자격 증명을 입력한 다음 회사 정보를 제공합니다.
 3. Azure Portal에서 Intune을 반환할 경우 **Android for Work** 등록 블레이드로 이동하고 **작업 프로필**을 클릭합니다. Android for work를 이제 사용할 수 있습니다. Android for Work 디바이스에 대해 두 가지 등록 옵션이 있습니다.
-   - **Manage all devices as Android**(Android로 모든 장치 관리)(사용 안 함). Android for Work를 지원하는 디바이스를 포함하여 모든 Android 디바이스가 기존 Android 디바이스로 등록됩니다.
-   - **Manage supported devices as Android for Work**(지원되는 장치를 Android for Work로 관리)(사용). Android for Work를 지원하는 모든 디바이스가 Android for Work 디바이스로 등록됩니다. Android for Work를 지원하지 않는 Android 디바이스는 기존 Android 디바이스로 등록됩니다.
+   - **Manage all devices as Android**(Android로 모든 디바이스 관리)(사용 안 함). Android for Work를 지원하는 디바이스를 포함하여 모든 Android 디바이스가 기존 Android 디바이스로 등록됩니다.
+   - **Manage supported devices as Android for Work**(지원되는 디바이스를 Android for Work로 관리)(사용). Android for Work를 지원하는 모든 디바이스가 Android for Work 디바이스로 등록됩니다. Android for Work를 지원하지 않는 Android 디바이스는 기존 Android 디바이스로 등록됩니다.
 
 > [!NOTE]
 > 알려진 문제로 인해 **Manage supported devices for users only in these groups as Android for Work**(이 그룹의 사용자만을 위해 지원되는 디바이스를 Android for Work로 관리) 옵션이 제대로 작동되지 않습니다. 지정된 Azure AD 그룹의 사용자 디바이스가 Android for Work 대신 Android로 등록됩니다. Android for Work를 사용하도록 설정하려면 **Manage supported devices as Android for Work**(지원되는 디바이스를 Android for Work로 관리) 옵션을 사용해야 합니다.
 
 
-설정한 후에는 사용자에게 디바이스를 등록하는 방법을 알려 줍니다. [장치 등록에 대해 최종 사용자에게 알릴 내용](/intune/end-user-educate)을 참조하세요. 이 정보는 Microsoft Intune 및 Configuration Manager에서 관리되는 모바일 디바이스에 적용됩니다.
+설정한 후에는 사용자에게 디바이스를 등록하는 방법을 알려 줍니다. [디바이스 등록에 대해 최종 사용자에게 알릴 내용](/intune/end-user-educate)을 참조하세요. 이 정보는 Microsoft Intune 및 Configuration Manager에서 관리되는 모바일 디바이스에 적용됩니다.
 
 바인딩이 완료되면 계정 이름 및 조직 이름이 Azure Portal의 Intune에 표시됩니다. 그러면 두 브라우저를 닫아도 됩니다.
 
@@ -80,4 +80,4 @@ Android for Work 등록을 사용하도록 설정한 후 Android for Work 디바
 - [회사 프로필 선택적 초기화](/sccm/mdm/deploy-use/wipe-lock-reset-devices#selective-wipe)
 
 > [!div class="button"]
-[< 이전 단계](create-service-connection-point.md)  [다음 단계 >](set-up-additional-management.md)
+> [< 이전 단계](create-service-connection-point.md)  [다음 단계 >](set-up-additional-management.md)

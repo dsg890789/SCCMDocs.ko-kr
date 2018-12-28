@@ -9,50 +9,50 @@ ms.assetid: df10dc4d-c9ff-4574-bb33-8d30eb14cfe3
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4590077b303d5676aa72a816d785a0864fe2205f
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.openlocfilehash: 6cfeae4ddc582d1d641d1065f2542319d5519b5e
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32351975"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53416425"
 ---
 # <a name="how-to-create-configuration-items-for-windows-phone-devices-managed-without-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트 없이 관리되는 Windows Phone 디바이스에 대한 구성 항목을 만드는 방법
 System Center Configuration Manager **Windows Phone** 구성 항목을 사용하여 Microsoft Intune에 등록되어 있거나 Configuration Manager에서 온-프레미스로 관리되는 Windows Phone 디바이스에 대한 설정을 관리합니다.  
   
 ### <a name="to-create-a-windows-phone-configuration-item"></a>Windows Phone 구성 항목을 만들려면  
   
-1.  Configuration Manager 콘솔에서 **자산 및 준수**을 클릭합니다.  
+1. Configuration Manager 콘솔에서 **자산 및 준수**을 클릭합니다.  
   
-2.  **자산 및 준수** 작업 영역에서 **준수 설정**을 확장하고 **구성 항목**을 클릭합니다.  
+2. **자산 및 준수** 작업 영역에서 **준수 설정**을 확장하고 **구성 항목**을 클릭합니다.  
   
-3.  **홈** 탭의 **만들기** 그룹에서 **구성 항목 만들기**를 클릭합니다.  
+3. **홈** 탭의 **만들기** 그룹에서 **구성 항목 만들기**를 클릭합니다.  
   
-4.  **구성 항목 만들기 마법사** 의 **일반**페이지에서 구성 항목에 대한 이름 및 선택적 설명을 지정합니다.  
+4. **구성 항목 만들기 마법사** 의 **일반**페이지에서 구성 항목에 대한 이름 및 선택적 설명을 지정합니다.  
   
-5.  **만들 구성 항목 유형 지정**에서 **Windows Phone**을 선택합니다.  
+5. **만들 구성 항목 유형 지정**에서 **Windows Phone**을 선택합니다.  
   
-6.  Configuration Manager 콘솔에서 구성 항목을 검색하고 필터링하기 위해 범주를 만들고 할당하려면 **범주**를 클릭합니다.  
+6. Configuration Manager 콘솔에서 구성 항목을 검색하고 필터링하기 위해 범주를 만들고 할당하려면 **범주**를 클릭합니다.  
   
-7.  마법사의 **지원되는 플랫폼** 페이지에서 구성 항목을 평가할 특정 Windows Phone 플랫폼을 선택합니다.  
+7. 마법사의 **지원되는 플랫폼** 페이지에서 구성 항목을 평가할 특정 Windows Phone 플랫폼을 선택합니다.  
   
-8.  마법사의 **디바이스 설정** 페이지에서 구성하려는 설정 그룹을 선택합니다. 자세한 내용은 이 항목의 [Windows Phone 구성 항목 설정 참조](#BKMK_Setref) 섹션을 참조하고 **다음**을 클릭합니다.  
+8. 마법사의 **디바이스 설정** 페이지에서 구성하려는 설정 그룹을 선택합니다. 자세한 내용은 이 항목의 [Windows Phone 구성 항목 설정 참조](#BKMK_Setref) 섹션을 참조하고 **다음**을 클릭합니다.  
   
-    > [!TIP]  
-    >  원하는 설정이 나열되지 않은 경우 **기본 설정 그룹에 없는 추가 설정 구성 확인란**을 선택합니다.  
+   > [!TIP]  
+   >  원하는 설정이 나열되지 않은 경우 **기본 설정 그룹에 없는 추가 설정 구성 확인란**을 선택합니다.  
   
 9. 각 설정 페이지에서 필요한 설정과 디바이스에서 준수되지 않는 경우 수정 여부(지원되는 경우)를 구성합니다.  
   
 10. 각 설정 그룹에 대해 구성 항목이 비규격인 것으로 확인되는 경우 보고될 심각성을 구성할 수도 있습니다.  
   
-    -   **없음** - 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 오류 심각도를 보고하지 않습니다.  
+    -   **없음** - 이 준수 규칙에 실패한 디바이스가 Configuration Manager 보고서에 오류 심각도를 보고하지 않습니다.  
   
-    -   **정보** - 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **정보** 오류 심각도를 보고합니다.  
+    -   **정보** - 이 준수 규칙에 실패한 디바이스가 Configuration Manager 보고서에 **정보** 오류 심각도를 보고합니다.  
   
-    -   **경고** - 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **경고** 오류 심각도를 보고합니다.  
+    -   **경고** - 이 준수 규칙에 실패한 디바이스가 Configuration Manager 보고서에 **경고** 오류 심각도를 보고합니다.  
   
-    -   **위험** - 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다.  
+    -   **위험** - 이 준수 규칙에 실패한 디바이스가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다.  
   
-    -   **위험(이벤트 포함)** - 이 준수 규칙에 실패한 장치가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 이 심각도 수준은 애플리케이션 이벤트 로그에 이벤트를 Windows 이벤트로 기록 됩니다.  
+    -   **위험(이벤트 포함)** - 이 준수 규칙에 실패한 디바이스가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 이 심각도 수준은 애플리케이션 이벤트 로그에 이벤트를 Windows 이벤트로 기록 됩니다.  
   
 11. 마법사의 **플랫폼 적용 여부 가능성** 페이지에서 이전에 선택한 지원되는 플랫폼과 호환되지 않는 설정을 검토합니다. 뒤로 돌아가서 이러한 설정을 제거하거나 계속할 수 있습니다.  
   
@@ -61,7 +61,7 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
   
 12. 마법사를 완료합니다.  
   
- **자산 및 준수** 작업 영역의 **구성 항목** 노드에서 새 구성 항목을 볼 수 있습니다.  
+    **자산 및 준수** 작업 영역의 **구성 항목** 노드에서 새 구성 항목을 볼 수 있습니다.  
   
 ##  <a name="windows-phone-configuration-item-settings-reference"></a>Windows Phone 구성 항목 설정 참조  
   
@@ -70,11 +70,11 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
   
 |설정|세부 정보|  
 |-------------|-------------|  
-|**장치에 암호 설정 필요**|지원되는 디바이스에는 암호가 필요합니다.|  
+|**디바이스에 암호 설정 필요**|지원되는 디바이스에는 암호가 필요합니다.|  
 |**최소 암호 길이(문자 수)**|암호의 최소 길이입니다.|  
 |**다음 기간 후 암호 만료(일)**|암호를 변경해야 할 때까지의 기간(일)입니다.|  
 |**저장한 암호 수**|이전에 사용한 암호를 다시 사용하지 못하도록 설정합니다.|  
-|**다음 로그온 실패 횟수 후 장치 초기화**|이 횟수만큼 로그인에 실패하면 디바이스를 초기화합니다.|  
+|**다음 로그온 실패 횟수 후 디바이스 초기화**|이 횟수만큼 로그인에 실패하면 디바이스를 초기화합니다.|  
 |**암호 복잡도**|'1234' 등의 PIN을 지정할 수 있는지 아니면 강력한 암호를 입력해야 하는지를 선택합니다.|  
 |**Exchange Server에 암호 복구 PIN 전송**||  
   
@@ -153,7 +153,7 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
 |설정|세부 정보|  
 |-------------|-------------|  
 |**서명되지 않은 파일 설치**|서명되지 않은 파일을 로드할 수 있습니다.|  
-|**서명되지 않은 응용 프로그램**|서명되지 않은 앱을 로드할 수 있습니다.|  
+|**서명되지 않은 애플리케이션**|서명되지 않은 앱을 로드할 수 있습니다.|  
 |**SMS 및 MMS 메시징**|디바이스에서 SMS 및 MMS 메시징을 사용할 수 있습니다.|  
 |**이동식 저장소**|디바이스에서 SD 카드와 같은 이동식 저장소를 사용할 수 있습니다.|  
 |**카메라**|디바이스 카메라를 사용할 수 있습니다.|  
@@ -174,7 +174,7 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
   
 |설정|세부 정보|  
 |-------------|-------------|  
-|**로밍 시 장치 관리**|디바이스를 로밍 중일 때 Configuration Manager에서 디바이스를 관리할 수 있습니다.|  
+|**로밍 시 디바이스 관리**|디바이스를 로밍 중일 때 Configuration Manager에서 디바이스를 관리할 수 있습니다.|  
 |**로밍 시 소프트웨어 다운로드**|로밍 시 앱 및 소프트웨어를 다운로드할 수 있습니다.|  
 |**로밍 시 전자 메일 다운로드**|로밍 시 전자 메일을 다운로드할 수 있습니다.|  
 |**데이터 로밍**|데이터 액세스 시 네트워크 간 로밍이 가능합니다.|  
@@ -185,7 +185,7 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
 |설정|세부 정보|  
 |-------------|-------------|  
 |**메모리 카드 암호화**|디바이스에 사용되는 모든 메모리 카드를 암호화해야 합니다.|  
-|**장치에 파일 암호화**|모바일 디바이스의 파일을 암호화해야 합니다.|  
+|**디바이스에 파일 암호화**|모바일 디바이스의 파일을 암호화해야 합니다.|  
 |**전자 메일 서명 필요**|메일을 보내려면 서명이 필요합니다.|  
 |**서명 알고리즘**|메일 서명에 사용되는 알고리즘을 선택합니다.|  
 |**전자 메일 암호화 필요**|메일을 보내기 전에 암호화해야 합니다.|  
@@ -203,11 +203,11 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
   
 ##### <a name="to-configure-a-wireless-network-connection"></a>무선 네트워크 연결을 구성하려면  
   
-1.  **모바일 장치의 무선 통신 설정 구성** 페이지에서 **추가**를 클릭합니다.  
+1.  **모바일 디바이스의 무선 통신 설정 구성** 페이지에서 **추가**를 클릭합니다.  
   
-2.  **무선 네트워크 연결** 대화 상자에서 모바일 장치에 프로비전할 무선 연결에 대해 다음 정보를 지정합니다.  
+2.  **무선 네트워크 연결** 대화 상자에서 모바일 디바이스에 프로비전할 무선 연결에 대해 다음 정보를 지정합니다.  
   
-|설정|추가 정보|  
+|설정|자세한 정보|  
 |-------------|----------------------|  
 |**네트워크 이름(SSID)**||  
 |**네트워크 연결**|**인터넷** 또는 **작업**을 선택합니다.|  
@@ -227,7 +227,7 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
   
 -   **인증서 파일** – **찾아보기** 를 클릭하고 가져오려는 인증서 파일(확장명 **.cer** )을 선택합니다.  
   
--   **대상 저장소** – 모바일 장치에서 가져온 인증서를 추가할 하나 이상의 대상 저장소를 다음 중에서 선택합니다.  
+-   **대상 저장소** – 모바일 디바이스에서 가져온 인증서를 추가할 하나 이상의 대상 저장소를 다음 중에서 선택합니다.  
   
     -   **루트**  
   
@@ -290,13 +290,13 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
   
 |||  
 |-|-|  
-|설정|추가 정보|  
+|설정|자세한 정보|  
 |**차단되는 앱 목록**|사용자가 설치할 수 없는 앱 목록을 지정하려면 이 옵션을 선택합니다.|  
 |**허용되는 앱 목록**|사용자가 설치할 수 있는 앱 목록을 지정하려면 이 옵션을 선택합니다.|  
-|**추가**|앱을 선택한 목록에 추가합니다. 원하는 이름, 앱 게시자(선택 사항) 및 앱 스토어의 앱 URL을 지정합니다.<br /><br /> URL을 지정하려면 Windows Phone 스토어 페이지에서 사용하려는 앱을 검색합니다.<br /><br /> **예:** 스토어에서 **Skype** 앱을 검색합니다. 사용할 URL은 http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51입니다.<br /><br /> 회사 포털 앱 또는 LOB(기간 업무) 앱의 경우 전체 URL을 지정할 필요가 없으며 앱 GUID만 지정하면 됩니다.|  
+|**추가**|앱을 선택한 목록에 추가합니다. 원하는 이름, 앱 게시자(선택 사항) 및 앱 스토어의 앱 URL을 지정합니다.<br /><br /> URL을 지정하려면 Windows Phone 스토어 페이지에서 사용하려는 앱을 검색합니다.<br /><br /> **예:** 저장소를 검색 합니다 **Skype** 앱. 사용할 URL은 http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51입니다.<br /><br /> 회사 포털 앱 또는 LOB(기간 업무) 앱의 경우 전체 URL을 지정할 필요가 없으며 앱 GUID만 지정하면 됩니다.|  
 |**편집**|선택한 앱의 이름, 게시자 및 URL을 편집할 수 있습니다.|  
 |**제거**|목록에서 선택한 앱을 삭제합니다.|  
 |**가져오기**|지정한 앱 목록을 쉼표로 구분된 값 파일로 가져옵니다. 파일의 형식, 애플리케이션 이름, 게시자, 앱 URL을 사용합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [System Center Configuration Manager 클라이언트 없이 관리되는 장치에 대한 구성 항목](../../compliance/deploy-use/configuration-items-for-devices-managed-without-the-client.md)
+## <a name="see-also"></a>관련 항목  
+ [System Center Configuration Manager 클라이언트 없이 관리되는 디바이스에 대한 구성 항목](../../compliance/deploy-use/configuration-items-for-devices-managed-without-the-client.md)

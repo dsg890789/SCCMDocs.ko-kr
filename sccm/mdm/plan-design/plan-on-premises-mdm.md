@@ -10,20 +10,20 @@ ms.assetid: 02979fb8-ea7e-4ec6-b7e0-ecbfda73e52d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 10cddac80b9a7ea4bd912e2f52585cdcef7e70da
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.openlocfilehash: 35170f4584f9c327c542ac35d2f63803163330ba
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32351244"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53422286"
 ---
 # <a name="plan-for-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>System Center Configuration Manager의 온-프레미스 모바일 디바이스 관리에 대한 계획
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: System Center Configuration Manager (현재 분기)*
 
 온\-프레미스 모바일 디바이스 관리를 처리하기 위해 Configuration Manager 인프라를 준비하기 전에 다음과 같은 요구 사항을 고려하세요.
 
-##  <a name="bkmk_devices"></a> 지원되는 장치  
+##  <a name="bkmk_devices"></a> 지원되는 디바이스  
  온-프레미스 모바일 디바이스 관리에서 디바이스 운영 체제에 기본 제공된 관리 기능을 사용하여 모바일 디바이스를 관리할 수 있습니다.  관리 기능은 OMA(Open Mobile Alliance) DM(디바이스 관리) 표준을 기준으로 하며 많은 디바이스 플랫폼은 이 표준을 사용하여 디바이스를 관리할 수 있도록 합니다.  Configuration Manager 클라이언트에서 관리하도록 요구하는 다른 디바이스와 구분하기 위해 이러한 디바이스를 **최신 디바이스**(설명서 및 Configuration Manager 콘솔 사용자 인터페이스에서)로 지칭합니다.  
 
  > [!NOTE]  
@@ -52,54 +52,54 @@ ms.locfileid: "32351244"
 ##  <a name="bkmk_roles"></a> 필수 사이트 시스템 역할  
  온\-프레미스 모바일 디바이스 관리에는 다음 각 사이트 시스템 역할 중 하나 이상이 필요합니다.  
 
--   **등록 프록시 지점** : 등록 요청 지원  
+- **등록 프록시 지점** : 등록 요청 지원  
 
--   **등록 지점** : 장치 등록 지원  
+- **등록 지점** : 디바이스 등록 지원  
 
--   **장치 관리 지점** : 정책 배달 이 사이트 시스템 역할은 모바일 디바이스 관리를 허용하도록 구성된 관리 지점 역할이 변형된 것입니다.  
+- **디바이스 관리 지점** : 정책 배달 이 사이트 시스템 역할은 모바일 디바이스 관리를 허용하도록 구성된 관리 지점 역할이 변형된 것입니다.  
 
--   **배포 지점** : 콘텐츠 배달용  
+- **배포 지점** : 콘텐츠 배달용  
 
--   **서비스 연결 지점** : 방화벽 외부에 장치를 알리기 위해 Intune에 연결  
+- **서비스 연결 지점** : 방화벽 외부에 디바이스를 알리기 위해 Intune에 연결  
 
- 조직의 필요에 따라 이러한 사이트 시스템 역할을 단일 사이트 시스템 서버에 설치하거나 서로 다른 서버에 개별적으로 실행할 수 있습니다. 온\-프레미스 모바일 장치 관리에 사용되는 각 사이트 시스템 서버는 신뢰할 수 있는 장치와 통신하기 위한 HTTPS 끝점으로 구성되어야 합니다. 자세한 내용은 [신뢰할 수 있는 필수 통신](#bkmk_trustedComs)항목을 참조하세요.  
+  조직의 필요에 따라 이러한 사이트 시스템 역할을 단일 사이트 시스템 서버에 설치하거나 서로 다른 서버에 개별적으로 실행할 수 있습니다. 온\-프레미스 모바일 디바이스 관리에 사용되는 각 사이트 시스템 서버는 신뢰할 수 있는 디바이스와 통신하기 위한 HTTPS 엔드포인트로 구성되어야 합니다. 자세한 내용은 [신뢰할 수 있는 필수 통신](#bkmk_trustedComs)항목을 참조하세요.  
 
- 사이트 시스템 역할 계획에 대한 자세한 내용은 [System Center Configuration Manager에 대한 사이트 시스템 서버 및 사이트 시스템 역할에 대한 계획](../../core/plan-design/hierarchy/plan-for-site-system-servers-and-site-system-roles.md)을 참조하세요.  
+  사이트 시스템 역할 계획에 대한 자세한 내용은 [System Center Configuration Manager에 대한 사이트 시스템 서버 및 사이트 시스템 역할에 대한 계획](../../core/plan-design/hierarchy/plan-for-site-system-servers-and-site-system-roles.md)을 참조하세요.  
 
- 필요한 사이트 시스템 역할을 추가하는 방법에 대한 자세한 내용은 [Install site system roles for On-premises Mobile Device Management in System Center Configuration Manager](../../mdm/get-started/install-site-system-roles-for-on-premises-mdm.md)를 참조하세요.  
+  필요한 사이트 시스템 역할을 추가하는 방법에 대한 자세한 내용은 [Install site system roles for On-premises Mobile Device Management in System Center Configuration Manager](../../mdm/get-started/install-site-system-roles-for-on-premises-mdm.md)를 참조하세요.  
 
 ##  <a name="bkmk_trustedComs"></a> 신뢰할 수 있는 필수 통신  
  온\-프레미스 모바일 디바이스 관리에서는 HTTPS 통신을 위해 사이트 시스템 역할이 사용되도록 설정되어야 합니다. 사용자의 필요에 따라 엔터프라이즈 CA(인증 기관)를 사용하여 서버와 디바이스 간에 신뢰할 수 있는 연결을 설정하거나, 공개적으로 사용 가능한 CA를 사용하여 신뢰할 수 있는 기관이 될 수 있습니다.  어떤 방법을 사용하든 필요한 사이트 시스템 역할을 호스트하는 사이트 시스템 서버에서 IIS를 사용해서 웹 서버 인증서를 구성해야 하며, 해당 서버에 연결해야 하는 디바이스에 설치된 CA의 루트 인증서가 필요합니다.  
 
  엔터프라이즈 CA를 사용하여 신뢰할 수 있는 통신을 설정하는 경우 다음 작업을 수행해야 합니다.  
 
--   CA에서 웹 서버 인증서 템플릿 만들기 및 발급  
+- CA에서 웹 서버 인증서 템플릿 만들기 및 발급  
 
--   필요한 사이트 시스템 역할을 호스트하는 각 사이트 시스템 서버에 대한 웹 서버 인증서를 요청합니다.  
+- 필요한 사이트 시스템 역할을 호스트하는 각 사이트 시스템 서버에 대한 웹 서버 인증서를 요청합니다.  
 
--   요청된 웹 서버 인증서를 사용하도록 사이트 시스템 서버의 IIS를 구성합니다.  
+- 요청된 웹 서버 인증서를 사용하도록 사이트 시스템 서버의 IIS를 구성합니다.  
 
- 회사 Active Directory 도메인에 가입된 디바이스의 경우 엔터프라이즈 CA의 루트 인증서가 이미 디바이스의 신뢰할 수 있는 연결에 사용될 수 있습니다. 즉, 도메인에 가입된 디바이스(예: 데스크톱 컴퓨터)는 사이트 시스템 서버와의 HTTPS 연결을 위해 자동으로 신뢰됩니다. 그러나 도메인에 가입되지 않은 디바이스(일반적으로 모바일)에는 필수 루트 인증서가 설치되어 있지 않습니다. 온\-프레미스 모바일 디바이스 관리를 지원하는 사이트 시스템 서버와 통신하려면 해당 디바이스에서 루트 인증서를 수동으로 설치해야 합니다.  
+  회사 Active Directory 도메인에 가입된 디바이스의 경우 엔터프라이즈 CA의 루트 인증서가 이미 디바이스의 신뢰할 수 있는 연결에 사용될 수 있습니다. 즉, 도메인에 가입된 디바이스(예: 데스크톱 컴퓨터)는 사이트 시스템 서버와의 HTTPS 연결을 위해 자동으로 신뢰됩니다. 그러나 도메인에 가입되지 않은 디바이스(일반적으로 모바일)에는 필수 루트 인증서가 설치되어 있지 않습니다. 온\-프레미스 모바일 디바이스 관리를 지원하는 사이트 시스템 서버와 통신하려면 해당 디바이스에서 루트 인증서를 수동으로 설치해야 합니다.  
 
- 개별 디바이스에서 사용하기 위해 발급 CA의 루트 인증서를 내보내야 합니다. 루트 인증서 파일을 가져오려는 경우 CA를 사용하여 내보낼 수 있으며, 비슷한 방법으로, CA에서 발급한 웹 서버 인증서를 사용하여 루트를 추출하고 루트 인증서 파일을 만들 수도 있습니다.   그런 다음 디바이스로 루트 인증서가 배달되어야 합니다.  몇 가지 예제 배달 방법은 다음과 같습니다.  
+  개별 디바이스에서 사용하기 위해 발급 CA의 루트 인증서를 내보내야 합니다. 루트 인증서 파일을 가져오려는 경우 CA를 사용하여 내보낼 수 있으며, 비슷한 방법으로, CA에서 발급한 웹 서버 인증서를 사용하여 루트를 추출하고 루트 인증서 파일을 만들 수도 있습니다.   그런 다음 디바이스로 루트 인증서가 배달되어야 합니다.  몇 가지 예제 배달 방법은 다음과 같습니다.  
 
--   파일 시스템  
+- 파일 시스템  
 
--   메일 첨부 파일  
+- 메일 첨부 파일  
 
--   메모리 카드  
+- 메모리 카드  
 
--   테더링된 디바이스  
+- 테더링된 디바이스  
 
--   클라우드 저장소(예: OneDrive)  
+- 클라우드 저장소(예: OneDrive)  
 
--   NFC(근거리 통신) 연결  
+- NFC(근거리 통신) 연결  
 
--   바코드 스캐너  
+- 바코드 스캐너  
 
--   OOBE(첫 실행 경험) 프로비저닝 패키지  
+- OOBE(첫 실행 경험) 프로비저닝 패키지  
 
- 자세한 내용은 [Set up certificates for trusted communications for On-premises Mobile Device Management in System Center Configuration Manager](../../mdm/get-started/set-up-certificates-on-premises-mdm.md)섹션을 참조하세요.  
+  자세한 내용은 [Set up certificates for trusted communications for On-premises Mobile Device Management in System Center Configuration Manager](../../mdm/get-started/set-up-certificates-on-premises-mdm.md)섹션을 참조하세요.  
 
 ##  <a name="bkmk_enrollment"></a> 등록 시 고려 사항  
  온\-프레미스 모바일 디바이스 관리에 대한 디바이스 등록을 사용하도록 설정하려면 사용자는 등록할 수 있는 권한이 있어야 하고 해당 디바이스는 필요한 사이트 시스템 역할을 호스트하는 사이트 시스템 서버와 신뢰할 수 있는 통신을 수행할 수 있어야 합니다.  
@@ -112,6 +112,6 @@ ms.locfileid: "32351244"
 
  디바이스를 설정 및 등록하는 방법에 대한 자세한 내용은 다음을 참조하세요.  
 
--   [System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 위한 장치 등록 설정](../../mdm/get-started/set-up-device-enrollment-on-premises-mdm.md)  
+-   [System Center Configuration Manager의 온-프레미스 모바일 디바이스 관리를 위한 디바이스 등록 설정](../../mdm/get-started/set-up-device-enrollment-on-premises-mdm.md)  
 
--   [System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 위한 장치 등록](../../mdm/deploy-use/enroll-devices-on-premises-mdm.md)  
+-   [System Center Configuration Manager의 온-프레미스 모바일 디바이스 관리를 위한 디바이스 등록](../../mdm/deploy-use/enroll-devices-on-premises-mdm.md)  

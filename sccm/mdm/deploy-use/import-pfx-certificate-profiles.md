@@ -10,27 +10,27 @@ ms.assetid: e3bb3e13-3037-4122-93bc-504bfd080a4d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 81847846efe99bbc3ad5f0ff5a074b393c8b140a
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.openlocfilehash: 214dcdca927e515f776e99f005f968a4b98f4112
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32349554"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53418835"
 ---
 # <a name="how-to-create-pfx-certificate-profiles-by-importing-certificate-details"></a>인증서 세부 정보를 가져와 PFX 인증서 프로필을 만드는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: System Center Configuration Manager (현재 분기)*
 
 
 여기서 외부 인증서의 자격 증명을 가져와 인증서 프로필을 만드는 방법을 알아봅니다.  
 
 [인증서 프로필](../../protect/deploy-use/introduction-to-certificate-profiles.md)에서는 인증서 프로필을 만들고 구성하는 방법에 대한 일반적인 내용을 소개합니다. 이 항목에서는 PFX 인증서와 관련된 인증서 프로필에 대한 몇 가지 특정 정보를 중점적으로 설명합니다.
 
--  Configuration Manager는 다양한 디바이스 및 운영 체제에 적합한 여러 인증서 저장소를 제공합니다.  여기에는 다음이 포함됩니다.
+- Configuration Manager는 다양한 디바이스 및 운영 체제에 적합한 여러 인증서 저장소를 제공합니다.  여기에는 다음이 포함됩니다.
 
- -   iOS 및 MacOS/OSX
- -   Android 및 Android for Work
- -   Windows 10(Windows 10 모바일 포함)
+  -   iOS 및 MacOS/OSX
+  -   Android 및 Android for Work
+  -   Windows 10(Windows 10 모바일 포함)
 
 자세한 내용은 [인증서 프로필 필수 조건](../../protect/plan-design/prerequisites-for-certificate-profiles.md)을 참조하세요.
 
@@ -51,15 +51,15 @@ System Center Configuration Manager를 통해 인증서 자격 증명을 가져�
 
 4.  **인증서 프로필 만들기** 마법사의 **일반** 페이지에서 다음 정보를 지정합니다.  
 
-    -   **이름**: 인증서 프로필의 고유한 이름을 입력합니다. 최대 256자까지 사용할 수 있습니다.  
+    -   **이름**: 인증서 프로필에 대 한 고유한 이름을 입력 합니다. 최대 256자까지 사용할 수 있습니다.  
 
-    -   **설명**: 인증서 프로필에 대한 개략적인 정보를 제공하는 설명과 System Center Configuration Manager 콘솔에서 해당 프로필을 식별하는 데 도움이 되는 기타 관련 정보를 입력합니다. 최대 256자까지 사용할 수 있습니다.  
+    -   **설명**: System Center Configuration Manager 콘솔에서 쉽게 식별할 수 있도록 하는 기타 관련 정보 및 인증서 프로필의 개요를 제공 하는 설명을 제공 합니다. 최대 256자까지 사용할 수 있습니다.  
 
-    -   **만들려는 인증서 프로필의 유형을 지정합니다.**: PFX 인증서의 경우 다음 옵션 중 하나를 선택합니다.  
+    -   **만들려는 인증서 프로필의 유형을 지정**: PFX 인증서의 경우 다음 옵션 중 하나를 선택 합니다.  
 
-        -   **개인 정보 교환 PKCS #12(PFX) 설정 - 가져오기**: 기존 인증서의 정보를 프로그래밍 방식으로 가져와 인증서 프로필을 만듭니다.  
+        -   **개인 정보 교환 PKCS #12 (PFX) 설정-가져오기**: 기존 인증서의 정보를 프로그래밍 방식으로 가져와서 인증서 프로필을 만듭니다.  
 
-        -   **개인 정보 교환 - PKCS #12(PFX) 설정 - 만들기**: 인증 기관에서 제공한 자격 증명을 사용하여 PFX 인증서 프로필을 만듭니다.  자세한 내용은 [인증 기관을 사용하여 PFX 인증서 프로필을 만드는 방법](../../mdm/deploy-use/create-pfx-certificate-profiles.md)을 참조하세요.
+        -   **개인 정보 교환-PKCS #12 (PFX) 설정-만들기**: 인증 기관에서 제공 된 자격 증명을 사용 하 여 PFX 인증서 프로필을 만듭니다.  자세한 내용은 [인증 기관을 사용하여 PFX 인증서 프로필을 만드는 방법](../../mdm/deploy-use/create-pfx-certificate-profiles.md)을 참조하세요.
 
 
 ### <a name="create-a-pfx-certificate-profile-for-the-imported-credentials"></a>가져온 자격 증명에 대한 PFX 인증서 프로필 만들기
@@ -68,7 +68,7 @@ PFX 인증서를 가져오려면 Configuration Manager SDK를 사용하여 PFX �
 
 가져온 인증서는 등록된 디바이스에 나중에 배포됩니다.
 
-1. **인증서 프로필 만들기 마법사**의 **PFX 인증서** 페이지에서 장치 키 저장소 공급자의 위치를 지정합니다.
+1. **인증서 프로필 만들기 마법사**의 **PFX 인증서** 페이지에서 디바이스 키 저장소 공급자의 위치를 지정합니다.
     -   **있는 경우 TPM(신뢰할 수 있는 플랫폼 모듈)에 설치**  
     -   **TPM(신뢰할 수 있는 플랫폼 모듈)에 설치, 그렇지 않으면 실패** 
     -   **비즈니스용 Windows Hello에 설치, 그러지 않으면 실패** 
