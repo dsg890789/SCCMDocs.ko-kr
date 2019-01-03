@@ -10,12 +10,12 @@ ms.assetid: 35e237b6-9f7b-4189-90e7-8eca92ae7d3d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 962029dc6bc5584e1edf0bd26d4be3fc280d6204
-ms.sourcegitcommit: 147aae8300831c722a559087c735df0f761b2041
+ms.openlocfilehash: 43093f38a2769c46d3d96a51afbf47f33ed38b51
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645245"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53423799"
 ---
 # <a name="supported-sql-server-versions-for-configuration-manager"></a>Configuration Manager에 대한 지원되는 SQL Server 버전
 
@@ -78,10 +78,10 @@ SQL Server 트랜잭션 복제는 [데이터베이스 복제본](/sccm/core/serv
 ### <a name="sql-server-2017-standard-enterprise"></a>SQL Server 2017: Standard, Enterprise  
 다음 사이트의 경우 [Configuration Manager 버전1710](/sccm/core/plan-design/changes/whats-new-in-version-1710)에서부터 최소 [누적 업데이트 버전 2](https://support.microsoft.com/help/4052574)에서 이 버전의 SQL Server를 사용할 수 있습니다. 
 
--   중앙 관리 사이트  
--   기본 사이트  
--   보조 사이트  
-<!--SMS.498506-->
+- 중앙 관리 사이트  
+- 기본 사이트  
+- 보조 사이트  
+  <!--SMS.498506-->
 
 ### <a name="sql-server-2016-sp2-standard-enterprise"></a>SQL Server 2016 SP2: Standard, Enterprise  
 <!--514985--> 다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
@@ -187,7 +187,7 @@ SQL Server 트랜잭션 복제는 [데이터베이스 복제본](/sccm/core/serv
  Configuration Manager에서 사이트 데이터베이스를 호스트하려면 64비트 버전의 SQL Server가 필요합니다.  
 
 ### <a name="database-collation"></a>데이터베이스 데이터 정렬  
- 각 사이트에서 사이트와 사이트 데이터베이스에 사용되는 두 SQL Server 인스턴스는 모두 **SQL_Latin1_General_CP1_CI_AS**데이터 정렬을 사용해야 합니다.  
+ 각 사이트에서 사이트와 사이트 데이터베이스에 사용되는 두 SQL Server 인스턴스는 모두 다음 데이터 정렬을 사용해야 합니다. **SQL_Latin1_General_CP1_CI_AS**.  
 
  Configuration Manager에서는 중국에서 사용하도록 GB18030으로 정의된 표준을 충족하기 위해 이 데이터 정렬에 대한 두 가지 예외를 지원합니다. 자세한 내용은 [다국어 기능 지원](/sccm/core/plan-design/hierarchy/international-support)을 참조하세요.  
 
@@ -208,15 +208,15 @@ SQL Server 트랜잭션 복제는 [데이터베이스 복제본](/sccm/core/serv
 ### <a name="sql-server-memory"></a>SQL Server 메모리  
  SQL Server의 메모리는 SQL Server Management Studio를 사용하여 **서버 메모리 옵션**의 **최소 서버 메모리** 설정을 통해 예약합니다. 이 설정을 구성하는 방법에 대한 자세한 내용은 [SQL Server 메모리 서버 구성 옵션](https://docs.microsoft.com/sql/database-engine/configure-windows/server-memory-server-configuration-options)을 참조하세요.  
 
--   **사이트 서버와 동일한 컴퓨터에 설치된 데이터베이스 서버**: SQL Server의 메모리를 사용 가능한 주소 지정 가능 시스템 메모리의 50~80%로 제한합니다.  
+-   **사이트 서버와 동일한 컴퓨터에 설치된 데이터베이스 서버:** SQL Server의 메모리를 사용 가능한 주소 지정 가능 시스템 메모리의 50~80%로 제한합니다.  
 
--   **전용 데이터베이스 서버(사이트 서버에서 원격)**: SQL Server의 메모리를 사용 가능한 주소 지정 가능 시스템 메모리의 80~90%로 제한합니다.  
+-   **전용 데이터베이스 서버(사이트 서버의 원격 서버)**: SQL Server의 메모리를 사용 가능한 주소 지정 가능 시스템 메모리의 80~90%로 제한합니다.  
 
 -   **사용 중인 각 SQL Server 인스턴스의 버퍼 풀에 대한 메모리 예약**:  
 
-    -   중앙 관리 사이트: 최소 8GB를 설정합니다.  
-    -   기본 사이트: 최소 8GB를 설정합니다.  
-    -   보조 사이트: 최소 4GB를 설정합니다.  
+    -   중앙 관리 사이트: 최소 8GB(기가바이트)를 설정합니다.  
+    -   기본 사이트: 최소 8GB(기가바이트)를 설정합니다.  
+    -   보조 사이트: 최소 4GB(기가바이트)를 설정합니다.  
 
 ### <a name="sql-nested-triggers"></a>SQL 중첩 트리거  
  SQL 중첩 트리거를 사용하도록 설정해야 합니다. 자세한 내용은 [중첩 트리거 서버 구성 옵션 구성](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-the-nested-triggers-server-configuration-option)을 참조하세요. 
@@ -252,7 +252,7 @@ SQL Server 서비스에서 사용하는 계정을 변경하는 방법에 대한 
 SQL Server Reporting Services는 보고서를 실행할 수 있는 보고 서비스 지점을 설치하는 데 필요합니다.  
 
 > [!IMPORTANT]  
-> 이전 버전에서 SQL Server를 업그레이드한 후 다음과 같은 오류가 표시될 수 있습니다. *보고서 작성기가 없습니다*.  
+> 이전 버전에서 SQL Server를 업그레이드한 후 다음과 같은 오류가 표시될 수 있습니다.  ‘보고서 작성기가 없습니다.’  
 > 이 오류를 해결하려면 보고 서비스 지점 사이트 시스템 역할을 다시 설치해야 합니다.  
 
 ### <a name="sql-server-ports"></a>SQL Server 포트  

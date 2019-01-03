@@ -10,12 +10,12 @@ ms.assetid: 6e4964c5-43cb-4372-9a89-b62ae6a4775c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e88d40317fe0c1385d78ab7b5919f0f766254598
-ms.sourcegitcommit: 303d826f45c8fd9a05d8883afc1ca645e56bd576
+ms.openlocfilehash: 96f816e20d31315e2eaf63b5bf4a14376f3c9261
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51269215"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53417900"
 ---
 # <a name="use-the-service-connection-tool-for-system-center-configuration-manager"></a>System Center Configuration Manager의 서비스 연결 도구 사용
 
@@ -59,7 +59,7 @@ ms.locfileid: "51269215"
 
  이 절차에서 명령줄 예제는 다음 파일 이름과 폴더 위치를 사용합니다. 이러한 경로와 파일 이름 대신 사용자 환경 및 기본 설정에 맞는 대체 경로와 이름을 사용해도 됩니다.  
 
--   서버 간 전송을 위해 데이터가 저장되는 USB 스틱의 경로: **D:\USB\\**  
+-   서버 간 전송을 위해 데이터가 저장되는 USB 스틱의 경로:  **D:\USB\\**  
 
 -   사이트에서 내보낸 데이터가 포함된 .cab 파일의 이름: **UsageData.cab**  
 
@@ -80,11 +80,11 @@ ms.locfileid: "51269215"
 ### <a name="overview"></a>개요
 #### <a name="there-are-three-primary-steps-to-using-the-service-connection-tool"></a>서비스 연결 도구를 사용하는 세 가지 기본 단계는 다음과 같습니다.  
 
-1.  **준비**: 이 단계는 서비스 연결 지점을 호스트하는 컴퓨터에서 실행합니다. 도구를 실행하면 사용 데이터를 .cab 파일에 넣고 USB 드라이브(또는 지정한 대체 전송 위치)에 저장합니다.  
+1.  **준비**:  이 단계는 서비스 연결점을 호스트하는 컴퓨터에서 실행합니다. 도구를 실행하면 사용 데이터를 .cab 파일에 넣고 USB 드라이브(또는 지정한 대체 전송 위치)에 저장합니다.  
 
 2.  **연결**: 이 단계에서는 사용 데이터를 업로드하고 업데이트를 다운로드할 수 있도록 인터넷에 연결하는 원격 컴퓨터에서 도구를 실행합니다.  
 
-3.  **가져오기**: 이 단계는 서비스 연결 지점을 호스트하는 컴퓨터에서 실행합니다. 도구를 실행하면 다운로드한 업데이트를 가져와서 사이트에 추가하므로 Configuration Manager 콘솔에서 해당 업데이트를 보고 설치할 수 있습니다.  
+3.  **가져오기**: 이 단계는 서비스 연결점을 호스트하는 컴퓨터에서 실행합니다. 도구를 실행하면 다운로드한 업데이트를 가져와서 사이트에 추가하므로 Configuration Manager 콘솔에서 해당 업데이트를 보고 설치할 수 있습니다.  
 
 버전1606부터, Microsoft에 연결할 때 한 번에 여러 .cab 파일을 업로드하고(각기 다른 계층 구조에서) 프록시 서버 및 프록시 서버의 사용자를 지정할 수 있습니다.   
 
@@ -121,51 +121,51 @@ ms.locfileid: "51269215"
 
 ### <a name="to-use-the-service-connection-tool"></a>서비스 연결 도구를 사용하려면  
 
-1.  서비스 연결 지점을 호스트하는 컴퓨터:  
+1. 서비스 연결 지점을 호스트하는 컴퓨터:  
 
-    -   관리자 권한으로 명령 프롬프트를 열고 디렉터리를 **serviceconnectiontool.exe**가 포함된 위치로 변경합니다.   
+   -   관리자 권한으로 명령 프롬프트를 열고 디렉터리를 **serviceconnectiontool.exe**가 포함된 위치로 변경합니다.   
 
-2.  다음 명령을 실행하면 이 도구에서 사용 정보를 포함하는 .cab 파일을 준비하고 지정된 위치로 복사할 수 있습니다.  
+2. 다음 명령을 실행하면 이 도구에서 사용 정보를 포함하는 .cab 파일을 준비하고 지정된 위치로 복사할 수 있습니다.  
 
-    -   **serviceconnectiontool.exe -prepare -usagedatadest D:\USB\UsageData.cab**  
+   -   **serviceconnectiontool.exe -prepare -usagedatadest D:\USB\UsageData.cab**  
 
-    둘 이상의 계층 구조에서.cab 파일을 동시에 업로드하는 경우 폴더의 각.cab 파일에 고유한 이름이 있어야 합니다. 폴더에 추가하는 파일의 이름을 수동으로 바꿀 수 있습니다.
+   둘 이상의 계층 구조에서.cab 파일을 동시에 업로드하는 경우 폴더의 각.cab 파일에 고유한 이름이 있어야 합니다. 폴더에 추가하는 파일의 이름을 수동으로 바꿀 수 있습니다.
 
-    Configuration Manager 클라우드 서비스에 업로드하기 위해 수집되는 사용 현황 정보를 보려는 경우 다음 명령을 실행하여 .csv 파일과 동일한 데이터를 내보낸 다음 Excel과 같은 애플리케이션을 사용하여 볼 수 있습니다.  
+   Configuration Manager 클라우드 서비스에 업로드하기 위해 수집되는 사용 현황 정보를 보려는 경우 다음 명령을 실행하여 .csv 파일과 동일한 데이터를 내보낸 다음 Excel과 같은 애플리케이션을 사용하여 볼 수 있습니다.  
 
-    -   **serviceconnectiontool.exe -export -dest D:\USB\UsageData.csv**  
+   -   **serviceconnectiontool.exe -export -dest D:\USB\UsageData.csv**  
 
-3.  준비 단계가 완료되면 인터넷에 연결된 컴퓨터로 USB 드라이브를 이동(또는 내보낸 데이터를 다른 방법으로 전송)합니다.  
+3. 준비 단계가 완료되면 인터넷에 연결된 컴퓨터로 USB 드라이브를 이동(또는 내보낸 데이터를 다른 방법으로 전송)합니다.  
 
-4.  인터넷에 연결된 컴퓨터에서 관리자 권한으로 명령 프롬프트를 열고 디렉터리를  **serviceconnectiontool.exe** 도구의 복사본과 해당 폴더의 추가 파일이 포함된 위치로 변경합니다.  
+4. 인터넷에 연결된 컴퓨터에서 관리자 권한으로 명령 프롬프트를 열고 디렉터리를  **serviceconnectiontool.exe** 도구의 복사본과 해당 폴더의 추가 파일이 포함된 위치로 변경합니다.  
 
-5.  다음 명령을 실행하여 사용 정보 업로드 및 Configuration Manager 업데이트 다운로드를 시작합니다.  
+5. 다음 명령을 실행하여 사용 정보 업로드 및 Configuration Manager 업데이트 다운로드를 시작합니다.  
 
-    -   **serviceconnectiontool.exe -connect -usagedatasrc D:\USB -updatepackdest D:\USB\UpdatePacks**
+   -   **serviceconnectiontool.exe -connect -usagedatasrc D:\USB -updatepackdest D:\USB\UpdatePacks**
 
-    이 명령줄의 추가 예제에 대해서는 이 항목의 뒷부분에 있는 [명령줄 옵션](../../../core/servers/manage/use-the-service-connection-tool.md#bkmk_cmd) 섹션을 참조하세요.
+   이 명령줄의 추가 예제에 대해서는 이 항목의 뒷부분에 있는 [명령줄 옵션](../../../core/servers/manage/use-the-service-connection-tool.md#bkmk_cmd) 섹션을 참조하세요.
 
-    > [!NOTE]  
-    >  Configuration Manager 클라우드 서비스에 연결하는 명령줄을 실행하면 다음과 유사한 오류가 발생할 수 있습니다.  
-    >   
-    >  -   처리되지 않은 예외: System.UnauthorizedAccessException:  
-    >   
-    >      'C:\  
-    >     Users\br\AppData\Local\Temp\extractmanifestcab\95F8A562.sql' 경로에 대한 액세스가 거부되었습니다.  
-    >   
-    > 이 오류는 무시해도 되며 오류 창을 닫고 계속할 수 있습니다.  
+   > [!NOTE]  
+   >  Configuration Manager 클라우드 서비스에 연결하는 명령줄을 실행하면 다음과 유사한 오류가 발생할 수 있습니다.  
+   >   
+   >  -   처리되지 않은 예외: System.UnauthorizedAccessException:  
+   >   
+   >      'C:\  
+   >     Users\br\AppData\Local\Temp\extractmanifestcab\95F8A562.sql' 경로에 대한 액세스가 거부되었습니다.  
+   >   
+   > 이 오류는 무시해도 되며 오류 창을 닫고 계속할 수 있습니다.  
 
-6.  Configuration Manager 업데이트 다운로드가 완료되면 서비스 연결 지점을 호스트하는 컴퓨터로 USB 드라이브를 이동(또는 내보낸 데이터를 다른 방법으로 전송)합니다.  
+6. Configuration Manager 업데이트 다운로드가 완료되면 서비스 연결 지점을 호스트하는 컴퓨터로 USB 드라이브를 이동(또는 내보낸 데이터를 다른 방법으로 전송)합니다.  
 
-7.  서비스 연결 지점을 호스트하는 컴퓨터에서 관리자 권한으로 명령 프롬프트를 열고 디렉터리를 **serviceconnectiontool.exe**가 포함된 위치로 변경한 후 다음 명령을 실행합니다.  
+7. 서비스 연결 지점을 호스트하는 컴퓨터에서 관리자 권한으로 명령 프롬프트를 열고 디렉터리를 **serviceconnectiontool.exe**가 포함된 위치로 변경한 후 다음 명령을 실행합니다.  
 
-    -   **serviceconnectiontool.exe -import -updatepacksrc D:\USB\UpdatePacks**  
+   -   **serviceconnectiontool.exe -import -updatepacksrc D:\USB\UpdatePacks**  
 
-8.  가져오기가 완료되면 명령 프롬프트를 닫아도 됩니다. 해당 계층 구조에 대한 업데이트만 가져옵니다.  
+8. 가져오기가 완료되면 명령 프롬프트를 닫아도 됩니다. 해당 계층 구조에 대한 업데이트만 가져옵니다.  
 
 9. Configuration Manager 콘솔을 열고 **관리** > **업데이트 및 서비스**로 이동합니다. 이제 가져온 업데이트를 설치할 수 있습니다. 버전 1702 이전에는 업데이트 및 서비스가 **관리** > **Cloud Services** 아래에 있었습니다.
 
- 업데이트를 설치하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 콘솔 내 업데이트 설치](../../../core/servers/manage/install-in-console-updates.md)를 참조하세요.  
+   업데이트를 설치하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 콘솔 내 업데이트 설치](../../../core/servers/manage/install-in-console-updates.md)를 참조하세요.  
 
 ## <a name="bkmk_cmd"></a> 로그 파일
 

@@ -10,12 +10,12 @@ ms.assetid: 8ca970dd-e71c-404f-9435-d36e773a0db2
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 7ff6d885ca635e15c62eddcdfa06abdc1a09cdf8
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.openlocfilehash: 2d51774688b80faf808653cde77aa3b651ea210c
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52456603"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53422592"
 ---
 # <a name="upgrade-on-premises-infrastructure-that-supports-configuration-manager"></a>Configuration Manager를 지원하는 온-프레미스 인프라 업그레이드
 
@@ -55,7 +55,7 @@ Configuration Manager는 다음과 같은 상황에서 사이트 서버 및 사�
 
 - [Windows Server 2016용 업그레이드 및 변환 옵션](https://docs.microsoft.com/windows-server/get-started/supported-upgrade-paths)  
 
-- [Windows Server 2012 R2용 업그레이드 옵션](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn303416\(v=ws.11))   
+- [Windows Server 2012 R2용 업그레이드 옵션](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn303416(v=ws.11))   
 
 
 ### <a name="bkmk_2016-2019"></a> Windows Server 2016 또는 2019로 업그레이드
@@ -130,7 +130,7 @@ Windows Server 2008 R2 또는 Windows Server 2012에서 Windows Server 2012 R2�
 #### <a name="before-upgrade"></a>업그레이드 전  
 - Windows Server 2012: 서버에서 WSUS 역할을 제거합니다(설치된 경우). SUSDB를 유지하고, WSUS가 다시 설치된 후 SUSDB를 다시 연결할 수 있습니다.  
 
-- Windows Server 2008 R2: Windows Server 2012 R2로 업그레이드하기 전에 서버에서 WSUS 3.2를 제거해야 합니다. SUSDB를 유지하고, WSUS가 다시 설치된 후 SUSDB를 다시 연결할 수 있습니다. 자세한 내용은 [Windows Server Update Services 개요](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh852345\(v=ws.11)#new-and-changed-functionality)를 참조하세요.  
+- Windows Server 2008 R2: Windows Server 2012 R2로 업그레이드하기 전에 서버에서 WSUS 3.2를 제거 해야 합니다. SUSDB를 유지하고, WSUS가 다시 설치된 후 SUSDB를 다시 연결할 수 있습니다. 자세한 내용은 [Windows Server Update Services Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh852345(v=ws.11)#new-and-changed-functionality)(Windows Server Update Services 개요)를 참조하세요.  
 
 #### <a name="after-upgrade"></a>업그레이드 후  
 - 업그레이드 프로세스는 Windows 배포 서비스를 사용하지 않습니다. 이 서비스가 시작되고 다음 사이트 시스템 역할에 대해 실행되고 있는지 확인합니다.  

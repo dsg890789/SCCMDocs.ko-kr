@@ -4,12 +4,12 @@ hide_bc: true
 title: System Center Configuration Manager 문서
 description: System Center Configuration Manager를 사용하는 방법을 알아봅니다.
 ms.topic: hub-page
-ms.openlocfilehash: 9900d36ba6aae6dff5b5bbc99e6a83e6742abee2
-ms.sourcegitcommit: a4482cbc1496ddc0965fe518fa6c38e6d1ccf813
+ms.openlocfilehash: f3f22bd918fd0f87792781b16648487fcd6fd19d
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46014842"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53414908"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -68,8 +68,8 @@ ms.locfileid: "46014842"
                                         <div class="card">
                                             <div class="cardText">
                                                 <h3>애플리케이션 관리</h3>
-                                                <p><a href="/sccm/apps/understand/introduction-to-application-management">응용 프로그램 관리 소개</a></p>
-                                                <p><a href="/sccm/apps/get-started/create-and-deploy-an-application">응용 프로그램 만들기</a></p>
+                                                <p><a href="/sccm/apps/understand/introduction-to-application-management">애플리케이션 관리 소개</a></p>
+                                                <p><a href="/sccm/apps/get-started/create-and-deploy-an-application">애플리케이션 만들기</a></p>
                                                 <p><a href="/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business">비즈니스용 Microsoft Store에서 앱 관리</a></p>
                                             </div>
                                         </div>
@@ -124,9 +124,9 @@ ms.locfileid: "46014842"
                                         <div class="card">
                                             <div class="cardText">
                                                 <h3>디바이스 정책 준수</h3>
-                                                <p><a href="/sccm/compliance/understand/ensure-device-compliance">장치 준수 확인</a></p>
+                                                <p><a href="/sccm/compliance/understand/ensure-device-compliance">디바이스 준수 확인</a></p>
                                                 <p><a href="/sccm/compliance/deploy-use/browser-profiles">Microsoft Edge 설정 구성</a></p>
-                                                <p><a href="/sccm/compliance/deploy-use/upgrade-windows-version">버전 업그레이드 정책을 사용하여 Windows 장치 업그레이드</a></p>
+                                                <p><a href="/sccm/compliance/deploy-use/upgrade-windows-version">버전 업그레이드 정책을 사용하여 Windows 디바이스 업그레이드</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -140,7 +140,7 @@ ms.locfileid: "46014842"
                                                 <h3>기타 릴리스 및 정보</h3>
                                                 <p><a href="/sccm/core/get-started/technical-preview">System Center Configuration Manager의 기술 미리 보기</a></p>
                                                 <p><a href="/sccm/core/migration/migrate-data-between-hierarchies">Configuration Manager 현재 분기로 마이그레이션</a></p>
-                                                <p><a href="/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa">하이브리드 MDM 사용자 및 장치를 Intune 독립 실행형으로 마이그레이션</a></p>
+                                                <p><a href="/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa">하이브리드 MDM 사용자 및 디바이스를 Intune 독립 실행형으로 마이그레이션</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -316,7 +316,7 @@ ms.locfileid: "46014842"
                         </ul>
                     </li>
                     <li>
-                        <a href="#tasksPanel4">응용 프로그램 관리</a>
+                        <a href="#tasksPanel4">애플리케이션 관리</a>
                         <ul id="tasksPanel4" class="cardsC">
                             <li>
                                 <a href="/sccm/apps/understand/introduction-to-application-management">
@@ -564,7 +564,7 @@ ms.locfileid: "46014842"
                         </ul>
                     </li>
                     <li>
-                        <a href="#tasksPanel8">장치 준수</a>
+                        <a href="#tasksPanel8">디바이스 준수</a>
                         <ul id="tasksPanel8" class="cardsC">
                             <li>
                                 <a href="/sccm/compliance/understand/ensure-device-compliance">
@@ -998,7 +998,7 @@ ms.locfileid: "46014842"
                                             </div>
                                             <div class="cardText">
                                                 <h3>#ConfigMgr on Twitter</h3>
-                                                <p>Configuration Manager에 대한 최신 트윗을 읽어 보세요. </p>
+                                                <p>Configuration Manager에 대한 최신 트윗을 읽어 보세요. </p>
                                             </div>
                                         </div>
                                     </div>
