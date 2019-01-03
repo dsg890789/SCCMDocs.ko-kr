@@ -207,6 +207,8 @@ items:
   - name: 기술 미리 보기
     href: get-started/technical-preview.md
     items:
+    - name: 1812의 기능
+      href: get-started/capabilities-in-technical-preview-1812.md
     - name: 1811의 기능
       href: get-started/capabilities-in-technical-preview-1811.md
     - name: 1810.2의 기능
@@ -215,8 +217,6 @@ items:
       href: get-started/capabilities-in-technical-preview-1810.md
     - name: 1809의 기능
       href: get-started/capabilities-in-technical-preview-1809.md
-    - name: 1808의 기능
-      href: get-started/capabilities-in-technical-preview-1808.md
   - name: 계층 구조 간에 데이터 마이그레이션
     href: migration/migrate-data-between-hierarchies.md
     items:
@@ -765,9 +765,9 @@ items:
       href: clients/manage/upgrade/upgrade-clients-for-linux-and-unix-servers.md
     - name: Mac 클라이언트 업그레이드
       href: clients/manage/upgrade/upgrade-clients-on-mac-computers.md
-ms.openlocfilehash: 29028150b1747c5f6ca02b60101b23a8946c96c1
-ms.sourcegitcommit: 6126dfdf5c879db7d12c3eec019a88fa44521361
+ms.openlocfilehash: aa4011a4b3a62500307769fb36212a46cd406c2a
+ms.sourcegitcommit: d36e4c7082a5144e79035dd8847c8e741fa04667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830475"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53444606"
