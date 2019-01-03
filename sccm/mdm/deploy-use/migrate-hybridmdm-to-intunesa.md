@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: 1dd696ce-3e46-4dfa-a76d-592fe0f0320e
-ms.openlocfilehash: 09ea3340d8474c69e6e346fc68120b8849159374
-ms.sourcegitcommit: 316899b08f2ef372993909e08e069f7edfed1d33
+ms.openlocfilehash: bc8a504a8490126fb9f4d7110c041f3c8916b162
+ms.sourcegitcommit: 54e5786875c4e5f5c1b54e38ed59e96344faf9b4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44111045"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817922"
 ---
 # <a name="migrate-hybrid-mdm-users-and-devices-to-intune-standalone"></a>하이브리드 MDM 사용자 및 디바이스를 Intune 독립 실행형으로 마이그레이션
 
@@ -43,7 +43,7 @@ ms.locfileid: "44111045"
 
     - 선택한 개체를 Microsoft Intune 테넌트로 가져올 수 있도록 합니다.  
 
-    이 단계는 선택 항목입니다. 이 단계를 통해 Configuration Manager에서 Intune으로 개체를 다시 만드는 프로세스를 자동화하여 많은 시간을 절약할 수 있습니다.  
+    이 단계는 선택 사항입니다. 이 단계를 통해 Configuration Manager에서 Intune으로 개체를 다시 만드는 프로세스를 자동화하여 많은 시간을 절약할 수 있습니다.  
 
 2.  [사용자 마이그레이션을 위한 Intune 준비](migrate-prepare-intune.md)    
 
@@ -55,7 +55,7 @@ ms.locfileid: "44111045"
 
     - NDES 및 Exchange 커넥터를 설치합니다.  
 
-    단계를 완료하고 Intune 독립 실행형으로의 마이그레이션을 시작하는 경우 이 작업은 사용자에게 투명해야 합니다.   
+    단계를 완료 하 고 Intune 독립 실행형으로의 마이그레이션을 시작 하는 경우에 사용자에 게 중요 한 영향이 있습니다.   
 
 3.  [특정 사용자에 대한 MDM 기관 변경(혼합 MDM 기관)](migrate-mixed-authority.md)    
 
