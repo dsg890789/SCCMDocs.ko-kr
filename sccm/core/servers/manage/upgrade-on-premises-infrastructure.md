@@ -10,12 +10,12 @@ ms.assetid: 8ca970dd-e71c-404f-9435-d36e773a0db2
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2d51774688b80faf808653cde77aa3b651ea210c
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.openlocfilehash: 8b51685d97aea766757034c6f41afa5d4c8a11ee
+ms.sourcegitcommit: 32a257fafbb29aece8b4f435dd5614fcef305328
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53422592"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "54005469"
 ---
 # <a name="upgrade-on-premises-infrastructure-that-supports-configuration-manager"></a>Configuration Manager를 지원하는 온-프레미스 인프라 업그레이드
 
@@ -121,6 +121,12 @@ Configuration Manager는 다음과 같은 상황에서 사이트 서버 및 사�
     - 원격 사용  
 
 5. 사용 권한을 저장하여 Configuration Manager 콘솔에 대한 액세스를 복원합니다.  
+
+
+#### <a name="known-issue-for-remote-site-systems"></a>알려진 원격 사이트 시스템 문제
+사이트 시스템 역할을 호스팅하는 서버가 업그레이드되면 `Software\Microsoft\SMS` 값이 `HKLM\SYSTEM\CurrentControlSet\Control\SecurePipeServers\Winreg\AllowedPaths` 레지스트리 키에서 누락되었을 수 있습니다. 
+
+서버에서 Windows를 업그레이드 한 후 이 값이 누락되었으면 수동으로 추가합니다. 그렇지 않으면 사이트 시스템 역할에서 파일을 사이트 서버의 받은 편지함에 업로드하는 데 문제가 있을 수 있습니다.
 
 
 ### <a name="bkmk_2012r2"></a> Windows Server 2012 R2로 업그레이드
