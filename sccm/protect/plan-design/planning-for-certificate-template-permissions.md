@@ -10,12 +10,12 @@ ms.assetid: eab0e09d-b09e-4c14-ab14-c5f87472522e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 44be093d079a06ac2cbc7e8fa82392fa3afd4f72
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.openlocfilehash: be8d8e70267630a048d68f1415928a7245b75368
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32349367"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53419413"
 ---
 # <a name="planning-for-certificate-template-permissions-for-certificate-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 인증서 프로필에 대한 인증서 템플릿 권한 계획
 
@@ -27,15 +27,15 @@ ms.locfileid: "32349367"
 ## <a name="default-security-permissions-and-considerations"></a>기본 보안 권한 및 고려 사항  
  System Center Configuration Manager에서 사용자 및 디바이스에 대한 인증서를 요청하는 데 사용하는 인증서 템플릿에 필요한 기본 보안 권한은 다음과 같습니다.  
 
--   네트워크 디바이스 등록 서비스 응용 프로그램에서 사용하는 계정의 읽기 및 등록 권한  
+- 네트워크 장치 등록 서비스 애플리케이션에서 사용하는 계정의 읽기 및 등록 권한  
 
--   System Center Configuration Manager 콘솔을 실행하는 계정의 읽기 권한  
+- System Center Configuration Manager 콘솔을 실행하는 계정의 읽기 권한  
 
- 이러한 보안 권한에 대한 자세한 내용은 [인증서 인프라 구성](../deploy-use/certificate-infrastructure.md)을 참조하세요.  
+  이러한 보안 권한에 대한 자세한 내용은 [인증서 인프라 구성](../deploy-use/certificate-infrastructure.md)을 참조하세요.  
 
- 이 기본 구성을 사용하면 사용자 및 디바이스가 인증서 템플릿에서 직접 인증서를 요청할 수 없고 모든 요청을 네트워크 디바이스 등록 서비스에서 시작해야 합니다. 이러한 인증서 템플릿은 인증서 주체에 대해 **요청에서 제공** 으로 구성해야 하기 때문에 이 사항은 중요한 제한입니다. 즉, Rogue 사용자 또는 손상된 디바이스가 인증서를 요청할 경우 가장의 위험이 있습니다. 기본 구성에서 네트워크 디바이스 등록 서비스가 이러한 요청을 시작해야 합니다. 그러나 네트워크 디바이스 등록 서비스를 실행하는 서비스가 손상된 경우 가장의 위험이 남아 있습니다. 이러한 위험을 방지하려면 네트워크 디바이스 등록 서비스 및 이 역할 서비스를 실행하는 컴퓨터와 관련된 모든 보안 모범 사례를 따르십시오.  
+  이 기본 구성을 사용하면 사용자 및 디바이스가 인증서 템플릿에서 직접 인증서를 요청할 수 없고 모든 요청을 네트워크 디바이스 등록 서비스에서 시작해야 합니다. 이러한 인증서 템플릿은 인증서 주체에 대해 **요청에서 제공** 으로 구성해야 하기 때문에 이 사항은 중요한 제한입니다. 즉, Rogue 사용자 또는 손상된 디바이스가 인증서를 요청할 경우 가장의 위험이 있습니다. 기본 구성에서 네트워크 디바이스 등록 서비스가 이러한 요청을 시작해야 합니다. 그러나 네트워크 디바이스 등록 서비스를 실행하는 서비스가 손상된 경우 가장의 위험이 남아 있습니다. 이러한 위험을 방지하려면 네트워크 디바이스 등록 서비스 및 이 역할 서비스를 실행하는 컴퓨터와 관련된 모든 보안 모범 사례를 따르십시오.  
 
- 기본 보안 권한이 비즈니스 요구 사항을 충족하지 못하는 경우 인증서 템플릿에 대한 보안 권한을 구성하는 또 다른 옵션이 있습니다. 사용자 및 컴퓨터에 대해 읽기 및 등록 권한을 추가할 수 있습니다.  
+  기본 보안 권한이 비즈니스 요구 사항을 충족하지 못하는 경우 인증서 템플릿에 대한 보안 권한을 구성하는 또 다른 옵션이 있습니다. 사용자 및 컴퓨터에 대해 읽기 및 등록 권한을 추가할 수 있습니다.  
 
 ## <a name="adding-read-and-enroll-permissions-for-users-and-computers"></a>사용자 및 컴퓨터에 대해 읽기 및 등록 권한 추가  
  별도의 팀에서 CA(인증 기관) 인프라 팀을 관리하는데 해당 팀에서 사용자에게 사용자 인증서를 요청하는 인증서 프로필을 보내기 전에 System Center Configuration Manager를 통해 사용자가 올바른 Active Directory Domain Services 계정을 보유하는지 확인하는 경우 사용자 및 컴퓨터에 대한 읽기 및 등록 권한 추가가 적절할 수 있습니다. 이 구성에서는 사용자가 포함된 보안 그룹을 하나 이상 지정하고 인증서 템플릿에 대한 읽기 및 등록 권한을 해당 그룹에 부여해야 합니다. 이 시나리오에서는 CA 관리자가 보안 제어를 관리합니다.  
@@ -50,10 +50,10 @@ ms.locfileid: "32349367"
 
 #### <a name="to-check-for-read-and-enroll-permissions-for-users-and-domain-member-computers"></a>사용자 및 도메인 멤버 컴퓨터의 읽기 및 등록 권한을 확인하려면  
 
-1.  인증서 등록 지점을 호스트하는 사이트 시스템 서버에 0 값을 갖는 다음 DWORD 레지스트리 키를 만듭니다. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SCCM\CRP\SkipTemplateCheck  
+1.  인증서 등록 지점을 호스팅하는 사이트 시스템 서버에서 다음 DWORD 레지스트리 키를 만들고 값을 0으로 지정합니다. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SCCM\CRP\SkipTemplateCheck  
 
 2.  도메인 컨트롤러에서 응답이 없어 계정을 인증할 수 없고 권한 확인을 무시하려는 경우  
 
-    -   인증서 등록 지점을 호스트하는 사이트 시스템 서버에 1 값을 갖는 다음 DWORD 레지스트리 키를 만듭니다. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SCCM\CRP\SkipTemplateCheckOnlyIfAccountAccessDenied  
+    -   인증서 등록 지점을 호스트하는 사이트 시스템 서버에서 DWORD 레지스트리 키 를 만들고 값을 0으로 지정합니다. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SCCM\CRP\SkipTemplateCheckOnlyIfAccountAccessDenied  
 
 3.  발급 CA에서, 인증서 템플릿 속성에 있는 **보안** 탭에서 보안 그룹을 하나 이상 추가하여 사용자 또는 디바이스 계정에 읽기 및 등록 권한을 부여합니다.  

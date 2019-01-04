@@ -10,12 +10,12 @@ ms.assetid: 537dd2a7-4e44-4877-b8dd-5e1499407f8d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f650ba7bc703ec4fa0492fc86859cb8742e0510d
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.openlocfilehash: e83f999ccd3e7625b2f83372464569771520632a
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32347368"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53419210"
 ---
 #  <a name="configure-definition-updates-for-endpoint-protection"></a>Endpoint Protection에 대한 정의 업데이트 구성  
 
@@ -25,17 +25,17 @@ ms.locfileid: "32347368"
 
  맬웨어 방지 정의를 업데이트하려면 다음 방법 중 하나 이상을 사용합니다.
 
--   [Configuration Manager에서 배포되는 업데이트](endpoint-definitions-configmgr.md) - 이 방법은 Configuration Manager 소프트웨어 업데이트를 사용하여 정의 및 엔진 업데이트를 계층 구조의 컴퓨터에 제공합니다.
+- [Configuration Manager에서 배포되는 업데이트](endpoint-definitions-configmgr.md) - 이 방법은 Configuration Manager 소프트웨어 업데이트를 사용하여 정의 및 엔진 업데이트를 계층 구조의 컴퓨터에 제공합니다.
 
--   [WSUS(Windows Server Update Services)에서 배포되는 업데이트](endpoint-definitions-wsus.md) - 이 방법은 WSUS 인프라를 사용하여 컴퓨터에 정의 및 엔진 업데이트를 제공합니다.
+- [WSUS(Windows Server Update Services)에서 배포되는 업데이트](endpoint-definitions-wsus.md) - 이 방법은 WSUS 인프라를 사용하여 컴퓨터에 정의 및 엔진 업데이트를 제공합니다.
 
--   [Microsoft 업데이트에서 배포되는 업데이트](endpoint-definitions-microsoft-updates.md) - 이 방법을 사용하면 컴퓨터가 정의 및 엔진 업데이트를 다운로드하기 위해 Microsoft 업데이트에 직접 연결합니다. 이 방법은 회사 네트워크에 자주 연결하지 않는 컴퓨터에 유용할 수 있습니다.
+- [Microsoft 업데이트에서 배포되는 업데이트](endpoint-definitions-microsoft-updates.md) - 이 방법을 사용하면 컴퓨터가 정의 및 엔진 업데이트를 다운로드하기 위해 Microsoft 업데이트에 직접 연결합니다. 이 방법은 회사 네트워크에 자주 연결하지 않는 컴퓨터에 유용할 수 있습니다.
 
--   [Microsoft 맬웨어 보호 센터에서 배포되는 업데이트](endpoint-definitions-protection-center.md) - 이 방법은 Microsoft 맬웨어 보호 센터에서 정의 업데이트를 다운로드합니다.
+- [Microsoft 맬웨어 보호 센터에서 배포되는 업데이트](endpoint-definitions-protection-center.md) - 이 방법은 Microsoft 맬웨어 보호 센터에서 정의 업데이트를 다운로드합니다.
 
--   [UNC 파일 공유의 업데이트](endpoint-definitions-network.md) - 이 방법을 사용하면 최신 정의 및 엔진 업데이트를 네트워크 공유에 저장할 수 있습니다. 그런 후에 클라이언트에서 네트워크에 액세스하여 업데이트를 설치할 수 있습니다.
+- [UNC 파일 공유의 업데이트](endpoint-definitions-network.md) - 이 방법을 사용하면 최신 정의 및 엔진 업데이트를 네트워크 공유에 저장할 수 있습니다. 그런 후에 클라이언트에서 네트워크에 액세스하여 업데이트를 설치할 수 있습니다.
 
- 여러 정의 업데이트 원본을 구성하고 평가하고 적용하는 순서를 제어할 수 있습니다. 이 작업은 맬웨어 방지 정책을 만들 때 **정의 업데이트 원본 구성** 대화 상자에서 수행합니다.
+  여러 정의 업데이트 원본을 구성하고 평가하고 적용하는 순서를 제어할 수 있습니다. 이 작업은 맬웨어 방지 정책을 만들 때 **정의 업데이트 원본 구성** 대화 상자에서 수행합니다.
 
 > [!IMPORTANT]
 >  Windows 10 PC의 경우 Windows Defender에 대한 맬웨어 정의를 업데이트하도록 Endpoint Protection을 구성해야 합니다.

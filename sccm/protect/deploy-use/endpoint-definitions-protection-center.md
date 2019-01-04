@@ -9,12 +9,12 @@ ms.assetid: eb4ab74b-b605-41dd-930c-ac18d2f40319
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 66f091623a8e7b86128fea523166b69cffe968de
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.openlocfilehash: 6e8a10756958a0490902c5f4ea2057546288332a
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32346140"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53415350"
 ---
 # <a name="using-the-microsoft-malware-protection-center-to-download-definitions"></a>Microsoft 맬웨어 보호 센터를 사용하여 정의 다운로드
 
@@ -24,10 +24,10 @@ ms.locfileid: "32346140"
 
 > [!IMPORTANT]
 >  이 방법을 사용하여 정의 업데이트를 다운로드하려면 클라이언트가 인터넷을 통해 Microsoft 업데이트에 액세스할 수 있어야 합니다.
-
-
+> 
+> 
 > [!div class="button"]
-[다음 단계 >](endpoint-antimalware-policies.md)
-
+> [다음 단계 >](endpoint-antimalware-policies.md)
+> 
 > [!div class="button"]
-[뒤로 >](endpoint-configure-alerts.md)
+> [뒤로 >](endpoint-configure-alerts.md)

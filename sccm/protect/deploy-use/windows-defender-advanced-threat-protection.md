@@ -10,12 +10,12 @@ ms.assetid: a5fc033e-828e-4e45-9097-bbbd0697ebdf
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 10d746f88d0e7b869e2b73d389944f3b382d687d
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.openlocfilehash: f474db6768204403978eb188c3dbd138e34035d4
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32348388"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53422796"
 ---
 # <a name="windows-defender-advanced-threat-protection"></a>Windows Defender Advanced Threat Protection
 
@@ -35,7 +35,7 @@ Windows Defender ATP는 [Windows Defender 보안 센터](https://securitycenter.
 
  1.  [Windows Defender ATP 온라인 서비스](https://securitycenter.windows.com/)에 로그온합니다.   
 
- 2.  **끝점 관리** 메뉴 항목을 클릭합니다.  
+ 2.  **엔드포인트 관리** 메뉴 항목을 클릭합니다.  
 
  3.  **System Center Configuration Manager(현재 분기) 버전 1606**을 선택하고 **패키지 다운로드**를 클릭합니다.  
 
@@ -46,23 +46,23 @@ Windows Defender ATP는 [Windows Defender 보안 센터](https://securitycenter.
 
 ## <a name="onboard-devices-for-windows-defender-atp"></a>Windows Defender ATP 디바이스 온보딩  
 
-1.  Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > **Endpoint Protection** > **Windows Defender ATP 정책**으로 이동하고 **Windows Defender ATP 정책 만들기**를 클릭합니다. Windows Defender ATP 정책 마법사가 열립니다.  
+1. Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > **Endpoint Protection** > **Windows Defender ATP 정책**으로 이동하고 **Windows Defender ATP 정책 만들기**를 클릭합니다. Windows Defender ATP 정책 마법사가 열립니다.  
 
-2.  Windows Defender ATP 정책의 **이름** 및 **설명**을 입력하고 **온보딩**을 선택합니다. **다음**을 클릭합니다.  
+2. Windows Defender ATP 정책의 **이름** 및 **설명**을 입력하고 **온보딩**을 선택합니다. **다음**을 클릭합니다.  
 
-3.  조직의 Windows Defender ATP 클라우드 서비스 테넌트에서 제공하는 구성 파일을 **찾습니다**. **다음**을 클릭합니다.  
+3. 조직의 Windows Defender ATP 클라우드 서비스 테넌트에서 제공하는 구성 파일을 **찾습니다**. **다음**을 클릭합니다.  
 
-4.  분석을 위해 관리되는 디바이스에서 수집 및 공유되는 파일 샘플을 지정합니다.  
+4. 분석을 위해 관리되는 디바이스에서 수집 및 공유되는 파일 샘플을 지정합니다.  
 
-    -   **없음**   
+   - **없음**   
 
-    -   **모든 파일 형식**  
+   - **모든 파일 형식**  
 
      **다음**을 클릭합니다.  
 
-5.  요약을 검토하고 마법사를 완료합니다.  
+5. 요약을 검토하고 마법사를 완료합니다.  
 
-6.  이제 **배포**를 클릭하면 관리되는 클라이언트 컴퓨터에 Windows Defender ATP 정책을 배포할 수 있습니다.  
+6. 이제 **배포**를 클릭하면 관리되는 클라이언트 컴퓨터에 Windows Defender ATP 정책을 배포할 수 있습니다.  
 
 ## <a name="monitor-windows-defender-atp"></a>Windows Defender ATP 모니터링  
 
@@ -87,9 +87,9 @@ Windows Defender ATP는 [Windows Defender 보안 센터](https://securitycenter.
 
 1.  [Windows Defender ATP 온라인 서비스](https://securitycenter.windows.com/)에 로그온합니다.   
 
-2.  **끝점 관리** 메뉴 항목을 클릭합니다.  
+2.  **엔드포인트 관리** 메뉴 항목을 클릭합니다.  
 
-3.  **System Center Configuration Manager(현재 분기) 버전 1606**을 선택하고 **끝점 오프보딩**을 클릭합니다.  
+3.  **System Center Configuration Manager(현재 분기) 버전 1606**을 선택하고 **엔드포인트 오프보딩**을 클릭합니다.  
 
 4.  압축된 보관 파일(.zip)을 다운로드하고 압축을 풉니다. 오프보딩 파일은 30일 동안 유효합니다.
 
