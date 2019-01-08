@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6d25c6a11821b73f34c8a3cd6aa95d4a78c86587
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.openlocfilehash: 033f0fc3dd86c074f89804f6d9e70c173e9cf0b8
+ms.sourcegitcommit: 54e5786875c4e5f5c1b54e38ed59e96344faf9b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53418402"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817956"
 ---
 # <a name="cryptographic-controls-technical-reference"></a>암호화 컨트롤 기술 참조
 
@@ -108,8 +108,6 @@ System Center Configuration Manager는 서명 및 암호화를 사용하여 Conf
 
 - 클라우드 기반 배포 지점을 사용합니다.  
 
-- 대역 외 Intel AMT 기반 컴퓨터를 관리합니다.  
-
   인증, 서명 또는 암호화를 위해 인증서가 필요한 대부분의 다른 Configuration Manager 통신의 경우 Configuration Manager는 사용 가능한 PKI 인증서를 자동으로 사용합니다. PKI 인증서를 사용할 수 없는 경우 Configuration Manager에서 자체 서명된 인증서를 생성합니다.  
 
   Configuration Manager는 Exchange Server 커넥터를 사용하여 모바일 디바이스를 관리할 경우에는 PKI 인증서를 사용하지 않습니다.  
@@ -162,7 +160,7 @@ System Center Configuration Manager는 서명 및 암호화를 사용하여 Conf
 
  CRL(인증서 해지 목록) 확인은 IIS에서 기본값으로 사용 가능하므로 PKI 배포에 CRL을 사용하는 경우 IIS를 실행하는 대부분의 Configuration Manager 사이트 시스템에는 더 이상 구성해야 할 항목이 없습니다. 그러나 CRL 확인에서 소프트웨어 업데이트 파일의 서명을 확인하도록 설정하는 수동 단계가 필요한 소프트웨어 업데이트는 예외입니다.  
 
- CRL 확인은 HTTPS 클라이언트 연결을 사용하는 클라이언트 컴퓨터에 대해서는 기본값으로 사용 가능합니다. CRL 확인은 대역 외 관리 콘솔을 실행하여 AMT 기반 컴퓨터에 연결하는 경우 기본값으로 사용 가능하지 않으며, 필요하면 이 옵션을 사용하도록 설정할 수 있습니다. Configuration Manager SP1 이상 버전에서는 Mac 컴퓨터의 클라이언트에 대해 CRL 확인을 사용하지 않도록 설정할 수 없습니다.  
+ CRL 확인은 HTTPS 클라이언트 연결을 사용하는 클라이언트 컴퓨터에 대해서는 기본값으로 사용 가능합니다. Configuration Manager SP1 이상 버전에서는 Mac 컴퓨터의 클라이언트에 대해 CRL 확인을 사용하지 않도록 설정할 수 없습니다.  
 
  CRL 확인은 Configuration Manager에서 다음 연결에 대해 지원되지 않습니다.  
 

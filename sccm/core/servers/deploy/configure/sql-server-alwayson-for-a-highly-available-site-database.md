@@ -10,12 +10,12 @@ ms.assetid: 58d52fdc-bd18-494d-9f3b-ccfc13ea3d35
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: cf5b55dddae34ac855f21e7d70967d3b9ab1c2dc
-ms.sourcegitcommit: 81e3666c41eb976cc7651854042dafe219e2e467
+ms.openlocfilehash: 2d6dc236381606b72dcb3603e269161dcdd5d6b9
+ms.sourcegitcommit: f2a1fa59fb3870a6bebca61daf15c0c157e9fdd6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53747163"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54031008"
 ---
 # <a name="prepare-to-use-sql-server-always-on-availability-groups-with-configuration-manager"></a>Configuration Manager에서 SQL Server Always On 가용성 그룹 사용 준비
 
@@ -111,7 +111,7 @@ Configuration Manager에서는 비동기 커밋 복제본의 상태를 확인하
 
 Configuration Manager 설치 프로그램은 각 복제본에 연결해야 합니다. Azure에서 가용성 그룹을 설정하고, 해당 그룹이 내부 또는 외부 부하 분산 장치 뒤에 있는 경우에는 다음의 기본 포트를 엽니다.   
 
-- RCP 엔드포인트 매퍼: **TCP 135**   
+- RPC 엔드포인트 매퍼: **TCP 135**   
 
 - SQL Server Service Broker: **TCP 4022**  
 

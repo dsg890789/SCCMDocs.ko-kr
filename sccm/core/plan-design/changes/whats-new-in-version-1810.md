@@ -10,12 +10,12 @@ ms.assetid: 4812324b-e6aa-4431-bf1d-9fcd763a8caa
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f93b9c7e96c66fd2279d8d6e42f605a763c75025
-ms.sourcegitcommit: 81e3666c41eb976cc7651854042dafe219e2e467
+ms.openlocfilehash: 050cf81a99f29d24cad6eb13e691e332174627c3
+ms.sourcegitcommit: 54e5786875c4e5f5c1b54e38ed59e96344faf9b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53747146"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818024"
 ---
 # <a name="whats-new-in-version-1810-of-configuration-manager-current-branch"></a>Configuration Manager 1810 버전의 새로운 기능
 
@@ -81,7 +81,7 @@ Version 1810 drops support for the following products:
 
 - **SQL 변경 내용 추적 정리**: 사이트 데이터베이스에 SQL 변경 내용 추적 데이터의 백로그가 있는지 확인하는 새로운 검사입니다. 이 백로그를 확인하고 지우는 절차를 포함한 자세한 내용은 [SQL 변경 내용 추적 정리](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#bkmk_changetracking)를 참조하세요. <!--SCCMDocs-pr issue 3023-->  
 
-- **SQL Native Client 버전**: 이 필수 구성 요소 검사가 TLS 1.2를 지원하는 SQL Native Client 버전에 대해 업데이트되었습니다. 최소 버전은 [SQL 2012 SP4](https://www.microsoft.com/download/details.aspx?id=50402)입니다. 자세한 내용은 [SQL Native Client 버전](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#sql-native-client)을 참조하세요. <!--SCCMDocs-pr issue 3094->  
+- **SQL Native Client 버전**: 이 필수 구성 요소 검사가 TLS 1.2를 지원하는 SQL Native Client 버전에 대해 업데이트되었습니다. 최소 버전은 [SQL 2012 SP4](https://www.microsoft.com/download/details.aspx?id=50402)입니다. 자세한 내용은 [SQL Native Client 버전](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#sql-native-client)을 참조하세요. <!--SCCMDocs-pr issue 3094-->  
 
 - **Windows 클러스터 노드의 사이트 시스템**: Configuration Manager 설치 프로세스는 장애 조치(Failover) 클러스터링을 위한 Windows 역할이 있는 컴퓨터에서 사이트 서버 역할의 설치를 더 이상 차단하지 않습니다. SQL Always On에는 이 역할이 필요하므로 이전에는 사이트 서버에 사이트 데이터베이스를 공동 배치할 수 없었습니다. 이 변경을 사용하면 SQL Always On 및 사이트 서버를 수동 모드에서 사용하여 더 적은 수의 서버로 고가용성 사이트를 만들 수 있습니다. 자세한 내용은 [Windows 장애 조치(failover) 클러스터](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#windows-failover-cluster)를 참조하세요. <!--1359132-->  
 
