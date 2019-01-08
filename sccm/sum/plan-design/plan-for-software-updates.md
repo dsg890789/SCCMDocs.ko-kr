@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: d071b0ec-e070-40a9-b7d4-564b92a5465f
-ms.openlocfilehash: 807204b9a64e36e103a32d553e7804a0a8592ec1
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: ea1225b1f7ec29d089e8991e397fbae64d5a38eb
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39383808"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53424190"
 ---
 # <a name="plan-for-software-updates-in-configuration-manager"></a>Configuration Manager에서 소프트웨어 업데이트 계획
 
@@ -239,7 +239,7 @@ Configuration Manager의 애플리케이션 관리 기능과 교체 관계를 �
 자세한 내용은 [타사 소프트웨어 업데이트](/sccm/sum/deploy-use/third-party-software-updates)를 참조하세요.
 
 #### <a name="system-center-updates-publisher"></a>System Center Updates Publisher
-SCUP(System Center Updates Publisher)는 독립 소프트웨어 공급업체 또는 LOB(기간 업무) 애플리케이션 개발자가 사용자 지정 업데이트를 관리할 수 있도록 하는 독립 실행형 도구입니다. 이러한 업데이트에는 드라이버 및 업데이트 번들과 같은 종속성이 있는 업데이트가 포함됩니다.
+SCUP(System Center Updates Publisher)는 독립 소프트웨어 공급업체 또는 LOB(기간 업무) 응용 프로그램 개발자가 사용자 지정 업데이트를 관리할 수 있도록 하는 독립 실행형 도구입니다. 이러한 업데이트에는 드라이버 및 업데이트 번들과 같은 종속성이 있는 업데이트가 포함됩니다.
 
 자세한 내용은 [System Center Updates Publisher](/sccm/sum/tools/updates-publisher)를 참조하세요.
 
@@ -342,15 +342,15 @@ Microsoft Update 연결은 항상 HTTP용으로 포트 80, HTTPS용으로 포트
 - 자식 사이트에 소프트웨어 업데이트 지점이 있는 경우 
 - 사이트에 원격 활성 인터넷 기반 소프트웨어 업데이트 지점이 있는 경우
 
- **자식 사이트의 소프트웨어 업데이트 지점**  
+  **자식 사이트의 소프트웨어 업데이트 지점**  
 
--   `http://<FQDN for software update point on child site>`  
+- `http://<FQDN for software update point on child site>`  
 
--   `https://<FQDN for software update point on child site>`  
+- `https://<FQDN for software update point on child site>`  
 
--   `http://<FQDN for software update point on parent site>`  
+- `http://<FQDN for software update point on parent site>`  
 
--   `https://<FQDN for software update point on parent site>`  
+- `https://<FQDN for software update point on parent site>`  
 
 
 
@@ -372,13 +372,13 @@ Configuration Manager의 소프트웨어 업데이트 동기화는 구성한 기
 
 소프트웨어 업데이트 지점에 대한 동기화 원본 설정은 소프트웨어 업데이트 지점이 소프트웨어 업데이트 메타데이터를 검색하는 위치를 지정합니다. 또한 동기화 프로세스에서 WSUS 보고 이벤트를 생성할지 여부를 지정합니다.  
 
--   **동기화 원본:** 기본적으로 최상위 사이트의 소프트웨어 업데이트 지점은 Microsoft 업데이트에 대한 동기화 원본을 구성합니다. 최상위 사이트를 기존 WSUS 서버와 동기화할 수 있는 옵션이 제공됩니다. 자식 기본 사이트의 소프트웨어 업데이트 지점은 동기화 원본을 중앙 관리 사이트의 소프트웨어 업데이트 지점으로 구성합니다.  
+-   **동기화 원본**: 최상위 사이트의 소프트웨어 업데이트 지점은 기본적으로 Microsoft Update에 대한 동기화 원본을 구성합니다. 최상위 사이트를 기존 WSUS 서버와 동기화할 수 있는 옵션이 제공됩니다. 자식 기본 사이트의 소프트웨어 업데이트 지점은 동기화 원본을 중앙 관리 사이트의 소프트웨어 업데이트 지점으로 구성합니다.  
 
     -  기본 사이트에 설치하는 첫 번째 소프트웨어 업데이트 지점(기본 소프트웨어 업데이트 지점)은 중앙 관리 사이트와 동기화됩니다. 기본 사이트의 추가 소프트웨어 업데이트 지점은 기본 사이트의 기본 소프트웨어 업데이트 지점과 동기화됩니다.  
 
     - Microsoft Update 또는 업스트림 업데이트 서버에서 소프트웨어 업데이트 지점의 연결이 끊기면, 구성된 동기화 원본과 동기화되지 않도록 동기화 원본을 구성합니다. 대신 **WSUSUtil** 도구의 내보내기 및 가져오기 기능을 사용하여 소프트웨어 업데이트를 동기화하도록 구성합니다. 자세한 내용은 [연결이 끊긴 소프트웨어 업데이트 지점에서 소프트웨어 업데이트 동기화](../get-started/synchronize-software-updates-disconnected.md)를 참조하세요.  
 
--   **WSUS 보고 이벤트:** 클라이언트 컴퓨터의 Windows 업데이트 에이전트는 WSUS 보고를 위한 이벤트 메시지를 만들 수 있습니다. 이러한 이벤트는 Configuration Manager에서 사용되지 않습니다. 따라서 **WSUS 보고 이벤트를 만들지 않음** 옵션은 기본적으로 선택됩니다. 이러한 이벤트가 만들어지지 않는 경우 클라이언트가 WSUS 서버에 연결해야 하는 시간은 소프트웨어 업데이트 평가 및 호환성 검사를 실행하는 동안만입니다. 이러한 이벤트가 Configuration Manager의 외부 보고에 필요한 경우, 이 설정을 수정하여 WSUS 보고 이벤트를 만듭니다.  
+-   **WSUS 보고 이벤트:** 클라이언트 컴퓨터의 Windows Update 에이전트는 WSUS 보고에 대한 이벤트 메시지를 만들 수 있습니다. 이러한 이벤트는 Configuration Manager에서 사용되지 않습니다. 따라서 **WSUS 보고 이벤트를 만들지 않음** 옵션은 기본적으로 선택됩니다. 이러한 이벤트가 만들어지지 않는 경우 클라이언트가 WSUS 서버에 연결해야 하는 시간은 소프트웨어 업데이트 평가 및 호환성 검사를 실행하는 동안만입니다. 이러한 이벤트가 Configuration Manager의 외부 보고에 필요한 경우, 이 설정을 수정하여 WSUS 보고 이벤트를 만듭니다.  
 
 
 ###  <a name="BKMK_SyncSchedule"></a> 동기화 일정  
@@ -397,21 +397,21 @@ Configuration Manager의 소프트웨어 업데이트 동기화는 구성한 기
 
 Configuration Manager는 다음과 같은 업데이트 분류의 동기화를 지원합니다.  
 
--   **중요 업데이트:** 보안과 관련 없는 중요한 버그를 다루는, 특정 문제에 대해 대폭 릴리스된 업데이트입니다.  
+-   **중요 업데이트**: 보안과 관련 없는 중요 버그를 해결하는 특정 문제에 대해 대폭 릴리스된 업데이트입니다.  
 
--   **정의 업데이트:** 바이러스 정의 파일 또는 기타 정의 파일에 대한 업데이트입니다.  
+-   **정의 업데이트**: 바이러스 정의 파일 또는 기타 정의 파일에 대한 업데이트입니다.  
 
--   **기능 팩**: 제품 릴리스와 따로 배포되며, 일반적으로 다음 정품 릴리스에 포함되는 새 제품 기능입니다.  
+-   **기능 팩**: 제품 릴리스와 따로 배포되어 일반적으로 다음 정품 릴리스에 포함되는 새 제품 기능입니다.  
 
--   **보안 업데이트:** 보안과 관련된 제품별 문제에 대해 대폭 릴리스된 업데이트입니다.  
+-   **보안 업데이트**: 제품별 보안 관련 문제에 대해 대폭 릴리스된 업데이트입니다.  
 
--   **서비스 팩**: OS 또는 응용 프로그램에 적용되는 누적 핫픽스 집합입니다. 이러한 핫픽스에는 보안 업데이트, 중요 업데이트 및 소프트웨어 업데이트가 포함됩니다.  
+-   **서비스 팩**: OS 또는 애플리케이션에 적용되는 일련의 누적 핫픽스입니다. 이러한 핫픽스에는 보안 업데이트, 중요 업데이트 및 소프트웨어 업데이트가 포함됩니다.  
 
 -   **도구**: 하나 이상의 작업을 완료하는 데 도움이 되는 유틸리티 또는 기능입니다.  
 
--   **업데이트 롤업**: 간편한 배포를 위해 하나로 패키지된 누적 핫픽스 집합입니다. 이러한 핫픽스에는 보안 업데이트, 중요 업데이트 및 소프트웨어 업데이트가 포함됩니다. 업데이트 롤업은 일반적으로 보안 또는 제품 구성 요소 등과 같은 특정 영역을 다룹니다.  
+-   **업데이트 롤업**: 간편한 배포를 위해 하나로 패키지된 일련의 누적 핫픽스입니다. 이러한 핫픽스에는 보안 업데이트, 중요 업데이트 및 소프트웨어 업데이트가 포함됩니다. 업데이트 롤업은 일반적으로 보안 또는 제품 구성 요소 등과 같은 특정 영역을 다룹니다.  
 
--   **업데이트**: 현재 설치된 응용 프로그램 또는 파일에 대한 업데이트입니다.  
+-   **업데이트**: 현재 설치된 애플리케이션 또는 파일에 대한 업데이트입니다.  
 
 -   **업그레이드**: 새 버전의 Windows 10으로 기능이 업데이트됩니다.  
 
@@ -454,7 +454,7 @@ Configuration Manager는 다음과 같은 업데이트 분류의 동기화를 �
 -   교체용 소프트웨어 업데이트가 프로덕션 환경에서 배포하도록 승인되지 않은 경우.  
 
     > [!NOTE]  
-    > Configuration Manager는 교체 대상 소프트웨어 업데이트를 **만료됨**으로 설정할 때 WSUS에서는 해당 업데이트를 **거부됨**으로 설정하지 않습니다. 그러나 WSUS 정리 작업이 실행될 때 Configuration Manager에서 **만료됨**으로 설정된 업데이트가 WSUS 서버에서 **거부됨**으로 설정됩니다. 따라서 클라이언트의 Windows 업데이트 에이전트는 더 이상 이러한 업데이트를 검색하지 않습니다. 클라이언트는 정리 작업이 실행될 때까지 만료된 업데이트를 계속 검색합니다. WSUS 정리 작업에 대한 자세한 내용은 [소프트웨어 업데이트 유지 관리](/sccm/sum/deploy-use/software-updates-maintenance)를 참조하세요.  
+    > Configuration Manager 버전 1806 이전의 경우 Configuration Manager가 교체 대상 소프트웨어 업데이트를 **만료됨**으로 설정하면 WSUS에서 해당 업데이트를 **거부됨**으로 설정하지 않습니다. 업데이트가 수동으로 거부되거나 사용자 지정 스크립트를 통해 거부될 때까지 클라이언트는 만료된 업데이트를 계속 검색합니다.  또한 Configuration Manager 버전 1806 이후에 Configuration Manager는 WSUS에서 교체 대상 업데이트를 거부합니다. WSUS 정리 작업에 대한 자세한 내용은 [소프트웨어 업데이트 유지 관리](/sccm/sum/deploy-use/software-updates-maintenance)를 참조하세요.
 
 
 ###  <a name="BKMK_UpdateLanguages"></a> 언어  

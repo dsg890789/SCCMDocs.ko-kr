@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
-ms.openlocfilehash: 627e476ee5824eafeb9d034b64010c8677f22a85
-ms.sourcegitcommit: 1f8731ed8f0308cb2cb576722adb0821a366e9ce
+ms.openlocfilehash: 1fa5646b17646258e4863b3a53960c9c15497389
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223758"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53418189"
 ---
 # <a name="manage-office-365-proplus-with-configuration-manager"></a>Configuration Manager를 사용하여 Office 365 ProPlus 관리
 
@@ -27,7 +27,7 @@ Configuration Manager를 사용하여 다음과 같은 방법으로 Office 365 P
 
 - [Office 365 앱 배포](#deploy-office-365-apps): Office 365 클라이언트 관리 대시보드에서 Office 365 설치 관리자를 시작하여 초기 Office 365 앱 설치 환경을 간편하게 만들 수 있습니다. 마법사를 통해 Office 365 설치 설정을 구성하고, Office CDN(콘텐츠 배달 네트워크)에서 파일을 다운로드하고, 콘텐츠가 포함된 스크립트 애플리케이션을 만들고 배포할 수 있습니다.    
 
-- [Deploy Office 365 업데이트](#deploy-office-365-updates): 소프트웨어 업데이트 관리 워크플로를 사용하여 Office 365 클라이언트 업데이트를 관리할 수 있습니다. Microsoft에서 새 Office 365 클라이언트 업데이트를 Office CDN(Content Delivery Network)에 게시하면 Microsoft에서 업데이트 패키지도 WSUS(Windows Server Update Services)에 게시합니다. Configuration Manager에서 WSUS 카탈로그의 Office 365 클라이언트 업데이트를 사이트 서버로 동기화한 후에 업데이트를 클라이언트에 배포할 수 있습니다.    
+- [Office 365 업데이트 배포](#deploy-office-365-updates): 소프트웨어 업데이트 관리 워크플로를 사용하여 Office 365 클라이언트 업데이트를 관리할 수 있습니다. Microsoft에서 새 Office 365 클라이언트 업데이트를 Office CDN(Content Delivery Network)에 게시하면 Microsoft에서 업데이트 패키지도 WSUS(Windows Server Update Services)에 게시합니다. Configuration Manager에서 WSUS 카탈로그의 Office 365 클라이언트 업데이트를 사이트 서버로 동기화한 후에 업데이트를 클라이언트에 배포할 수 있습니다.    
 
 - [Office 365 업데이트 다운로드 언어 추가](#add-languages-for-office-365-update-downloads): Office 365에서 지원되는 모든 언어의 업데이트를 다운로드하도록 Configuration Manager에 대한 지원을 추가할 수 있습니다. 즉, Office 365가 언어를 지원하면 Configuration Manager는 언어를 지원할 필요가 없습니다. Configuration Manager 버전 1610 이전에는 Office 365 클라이언트에 구성된 동일한 언어로 업데이트를 다운로드하고 배포해야 합니다. 
 
@@ -77,7 +77,7 @@ Configuration Manager 1806부터 Office 사용자 지정 도구가 Configuration
 
 1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **개요** > **Office 365 클라이언트 관리**로 이동합니다.
 2. 오른쪽 위 창에서 **Office 365 설치 관리자**를 클릭합니다. Office 365 클라이언트 설치 마법사가 열립니다.
-3. **응용 프로그램 설정** 페이지에서 앱에 대한 이름과 설명을 제공하고 파일에 대한 다운로드 위치를 입력한 후 **다음**을 클릭합니다. 위치는 &#92;&#92;*server*&#92;*share*로 지정해야 합니다.
+3. **애플리케이션 설정** 페이지에서 앱에 대한 이름과 설명을 제공하고 파일에 대한 다운로드 위치를 입력한 후 **다음**을 클릭합니다. 위치는 &#92;&#92;*server*&#92;*share*로 지정해야 합니다.
 4. **Office 설정** 페이지에서 **Office 사용자 지정 도구로 이동**을 클릭합니다. 그러면 [간편 실행용 Office 사용자 지정 도구](https://config.office.com)가 열립니다.
 5. Office 365 설치에 대해 원하는 설정을 구성합니다. 구성이 완료되면 페이지의 오른쪽 위에 있는 **제출**을 클릭합니다. 
 6. **배포** 페이지에서 지금 배포할지 또는 나중에 배포할지 결정합니다. 나중에 배포하려는 경우에는, **소프트웨어 라이브러리** < **애플리케이션 관리** < **애플리케이션**에서 애플리케이션을 찾을 수 있습니다.  
@@ -88,7 +88,7 @@ Configuration Manager 1806부터 Office 사용자 지정 도구가 Configuration
 
 1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **개요** > **Office 365 클라이언트 관리**로 이동합니다.
 2. 오른쪽 위 창에서 **Office 365 설치 관리자**를 클릭합니다. Office 365 클라이언트 설치 마법사가 열립니다.
-3. **응용 프로그램 설정** 페이지에서 앱에 대한 이름과 설명을 제공하고 파일에 대한 다운로드 위치를 입력한 후 **다음**을 클릭합니다. 위치는 &#92;&#92;*server*&#92;*share*로 지정해야 합니다.
+3. **애플리케이션 설정** 페이지에서 앱에 대한 이름과 설명을 제공하고 파일에 대한 다운로드 위치를 입력한 후 **다음**을 클릭합니다. 위치는 &#92;&#92;*server*&#92;*share*로 지정해야 합니다.
 4. **클라이언트 설정 가져오기** 페이지에서, 기존 XML 구성 파일에서 Office 365 클라이언트 설정을 가져올지 아니면 설정을 수동으로 지정할지 여부를 지정합니다. 완료한 경우 **다음**을 클릭합니다.  
 
     기존 구성 파일이 있는 경우 해당 파일의 위치를 입력하고 7단계로 건너뜁니다. 위치는 &#92;&#92;*server*&#92;*share*&#92;*filename*.XML 형식으로 지정해야 합니다.
@@ -97,10 +97,10 @@ Configuration Manager 1806부터 Office 사용자 지정 도구가 Configuration
 
 5. **클라이언트 제품** 페이지에서 사용할 Office 365 제품군을 선택합니다. 포함하려는 애플리케이션을 선택합니다. 포함해야 하는 추가 Office 제품을 선택하고 **다음**을 클릭합니다.
 6. **클라이언트 설정** 페이지에서 포함할 설정을 선택하고 **다음**을 클릭합니다.
-7. **배포** 페이지에서 응용 프로그램을 배포할지 여부를 선택하고 **다음**을 클릭합니다. <br/>마법사에서 패키지를 배포하지 않도록 선택한 경우 9단계로 건너뜁니다.
+7. **배포** 페이지에서 애플리케이션을 배포할지 여부를 선택하고 **다음**을 클릭합니다. <br/>마법사에서 패키지를 배포하지 않도록 선택한 경우 9단계로 건너뜁니다.
 8. 마법사 페이지의 나머지 부분을 일반적인 애플리케이션 배포와 마찬가지로 구성합니다. 자세한 내용은 [애플리케이션 만들기 및 배포](/sccm/apps/get-started/create-and-deploy-an-application)를 참조하세요.
 9. 마법사를 완료합니다.
-10. **소프트웨어 라이브러리** > **개요** > **응용 프로그램 관리** > **응용 프로그램**에서 응용 프로그램을 배포하거나 편집할 수 있습니다.    
+10. **소프트웨어 라이브러리** > **개요** > **애플리케이션 관리** > **애플리케이션**에서 애플리케이션을 배포하거나 편집할 수 있습니다.    
 
 Office 365 설치 관리자를 사용하여 Office 365 애플리케이션을 만들고 배포한 후에는 기본적으로 Configuration Manager가 Office 업데이트를 관리하지 않습니다. Office 365 클라이언트가 Configuration Manager에서 업데이트를 받게 하려면 [Configuration Manager를 사용하여 Office 365 업데이트 배포](#deploy-office-365-updates-with-configuration-manager)를 참조하세요.
 
@@ -139,10 +139,7 @@ Office 365 클라이언트에 대한 업데이트를 배포할 때 다시 시작
 
 |Configuration Manager 버전 |최종 사용자 환경|  
 |----------------|---------------------|
-|1610 이전 버전|다시 시작 플래그가 설정되고 컴퓨터를 다시 시작한 후에 업데이트가 설치됩니다.|
-|1610|Office 365 앱은 업데이트를 설치하기 전에 경고 없이 종료됩니다.|
-|1610(업데이트 포함) <br/>1702|다시 시작 플래그가 설정되고 컴퓨터를 다시 시작한 후에 업데이트가 설치됩니다.|
-|1706|클라이언트는 업데이트를 설치하기 전에 카운트다운 대화 상자 뿐만 아니라 팝업 및 앱 내 알림을 받습니다.|
+|1706, 1710|클라이언트는 업데이트를 설치하기 전에 카운트다운 대화 상자 뿐만 아니라 팝업 및 앱 내 알림을 받습니다.|
 |1802| 클라이언트는 업데이트를 설치하기 전에 카운트다운 대화 상자 뿐만 아니라 팝업 및 앱 내 알림을 받습니다. </br>모든 Office 365 애플리케이션이 Office 365 클라이언트 업데이트 적용 동안 실행되는 경우, Office 애플리케이션은 강제로 닫히지 않습니다. 대신 업데이트 설치는 시스템 다시 시작을 요구할 때 반환합니다 <!--510006-->|
 
 
@@ -173,20 +170,20 @@ Configuration Manager의 지원 여부와 관계 없이 Office 365에서 지원�
 1. 명령 프롬프트에서 관리자 권한으로 *wbemtest*를 입력하여 Windows Management Instrumentation 테스터를 엽니다.
 2. **연결**을 클릭한 후 *root\sms\site_&lt;siteCode&gt;* 를 입력합니다.
 3. **쿼리**를 클릭한 후 다음 쿼리를 실행합니다. *select &#42; from SMS_SCI_Component where componentname ="SMS_WSUS_CONFIGURATION_MANAGER"*  
-   ![WMI 쿼리](..\media\1-wmiquery.png)
+   ![WMI 쿼리](../media/1-wmiquery.png)
 4. 결과 창에서 중앙 관리 사이트 또는 독립 실행형 기본 사이트의 사이트 코드가 있는 개체를 두 번 클릭합니다.
 5. **속성** 속성을 선택하고 **속성 편집**을 클릭한 후 **포함값 보기**를 클릭합니다.
-![속성 편집기](..\media\2-propeditor.png)
+   ![속성 편집기](../media/2-propeditor.png)
 6. 첫 번째 쿼리 결과부터 시작해서 **PropertyName** 속성의 **AdditionalUpdateLanguagesForO365**가 있는 개체를 찾을 때까지 각 개체를 엽니다.
 7. **Value2**를 선택하고 **속성 편집**을 클릭합니다.  
-![Value2 속성 편집](..\media\3-queryresult.png)
+   ![Value2 속성 편집](../media/3-queryresult.png)
 8. **Value2** 속성에 다른 언어를 추가하고 **속성 저장**을 클릭합니다. <br/> 예를 들면 pt-pt(포르투갈어 - 포르투갈), af-za(아프리칸스어 - 남아프리카), nn-no(노르웨이어(니노르스크) - 노르웨이) 등이 있습니다. 예제 언어에 `pt-pt,af-za,nn-no`를 입력할 수 있습니다. 언어 사이에 공백을 사용하지 마십시오.
  
-   ![속성 편집기에서 언어 추가](..\media\4-props.png)  
+   ![속성 편집기에서 언어 추가](../media/4-props.png)  
 9. **닫기** 클릭, **닫기** 클릭, **속성 저장** 클릭, **개체 저장** 클릭(여기에서 **닫기**를 클릭하면 값은 삭제됩니다). **닫기**를 클릭한 다음, **종료**를 클릭하여 WMI(Management Instrumentation) 테스터를 종료합니다.
 10. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **개요** > **Office 365 클라이언트 관리** > **Office 365 업데이트**로 이동합니다.
 11. 이제 Office 365 업데이트를 다운로드하면 마법사에서 선택하고 이 절차에서 구성한 언어로 업데이트가 다운로드됩니다. 업데이트가 올바른 언어로 다운로드되는지 확인하려면 업데이트의 패키지 원본으로 이동한 후 파일 이름에 언어 코드가 포함된 파일을 찾습니다.  
-![추가 언어가 있는 파일 이름](..\media\5-verification.png)
+    ![추가 언어가 있는 파일 이름](../media/5-verification.png)
 
 ## <a name="updating-office-365-during-task-sequences-when-office-365-is-installed-in-the-base-image"></a>기본 이미지에 Office 365가 설치된 경우 작업 순서 중 Office 365 업데이트
 이미지에 Office 365가 이미 설치된 경우 운영 체제를 설치할 때 업데이트 채널 레지스트리 키 값에 원래 설치 위치가 있을 수 있습니다. 이 경우 업데이트 검색 시 적용 가능한 Office 365 클라이언트 업데이트가 표시되지 않습니다. 일주일에 여러 번 실행되는 예약된 Office 자동 업데이트 작업이 있습니다. 해당 작업이 실행된 후 업데이트 채널은 구성된 Office CDN URL을 가리키고 검색 결과에는 해당 업데이트가 적용 가능한 것으로 표시됩니다. <!--510452-->

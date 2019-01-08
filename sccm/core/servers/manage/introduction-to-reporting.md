@@ -10,12 +10,12 @@ ms.assetid: 230be984-d2cd-4d53-bd7a-bc24dd93fc22
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 579e9494a4f44f41a411af88bf58df7dcc5e8075
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 3cdc4ef389e4d46ad1c572b8785cb8ea26d90fcd
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32340473"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53416659"
 ---
 # <a name="introduction-to-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager의 보고 기능 소개
 
@@ -28,17 +28,17 @@ System Center Configuration Manager의 보고 기능은 SSRS(SQL Server Reportin
 
  Configuration Manager에서는 SQL Server Reporting Services를 보고 솔루션으로 사용합니다. Reporting Services와의 통합에 따른 다음과 같은 이점이 있습니다.  
 
--   업계 표준 보고 시스템을 사용하여 Configuration Manager 데이터베이스를 쿼리합니다.  
+- 업계 표준 보고 시스템을 사용하여 Configuration Manager 데이터베이스를 쿼리합니다.  
 
--   보고서의 웹 기반 연결인 Configuration Manager 보고서 뷰어 또는 보고서 관리자를 사용하여 보고서를 표시할 수 있습니다.  
+- 보고서의 웹 기반 연결인 Configuration Manager 보고서 뷰어 또는 보고서 관리자를 사용하여 보고서를 표시할 수 있습니다.  
 
--   고성능, 가용성 및 확장성을 제공합니다.  
+- 고성능, 가용성 및 확장성을 제공합니다.  
 
--   구독 기능을 통해 사용자가 보고서를 구독할 수 있습니다. 예를 들어 관리자가 매일 소프트웨어 업데이트 배포 상태에 대한 보고서를 전자 메일로 자동 전송 받도록 구독할 수 있습니다.  
+- 구독 기능을 통해 사용자가 보고서를 구독할 수 있습니다. 예를 들어 관리자가 매일 소프트웨어 업데이트 배포 상태에 대한 보고서를 전자 메일로 자동 전송 받도록 구독할 수 있습니다.  
 
--   사용자가 일반적으로 사용되는 다양한 형식을 선택하여 보고서를 내보낼 수 있습니다.  
+- 사용자가 일반적으로 사용되는 다양한 형식을 선택하여 보고서를 내보낼 수 있습니다.  
 
- Reporting Services에 대한 자세한 내용은 SQL Server 2008 Books Online의 [SQL Server Reporting Services](http://go.microsoft.com/fwlink/p/?LinkID=212032) 를 참조하세요.  
+  Reporting Services에 대한 자세한 내용은 SQL Server 2008 Books Online의 [SQL Server Reporting Services](http://go.microsoft.com/fwlink/p/?LinkID=212032) 를 참조하세요.  
 
 ##  <a name="BKMK_ReportingServicesPoint"></a> 보고 서비스 지점  
  보고 서비스 지점은 Microsoft SQL Server Reporting Services를 실행하는 서버에 설치되는 사이트 시스템 역할입니다. 보고 서비스 지점은 Configuration Manager 보고서 정의를 Reporting Services로 복사하고, 보고서 범주를 기반으로 보고서 폴더를 만들며, Configuration Manager 관리자의 역할 기반 권한에 따라 보고서 폴더와 보고서에 대한 보안 정책을 설정합니다. 보고 서비스 지점은 10분 간격으로 Reporting Services에 연결하여 보안 정책이 변경된 경우 보고서 관리자 등을 사용해서 보안 정책을 다시 적용합니다. 보고 서비스 지점을 계획하고 설치하는 방법에 대한 자세한 내용은 다음 문서를 참조하세요.  
@@ -80,30 +80,30 @@ System Center Configuration Manager의 보고 기능은 SSRS(SQL Server Reportin
 
  보고서 작성기는 20개 이상의 언어로 설치할 수 있습니다. 보고서 작성기를 실행하면 로컬 컴퓨터에서 실행되는 운영 체제 언어로 데이터가 표시됩니다. 보고서 작성기가 해당 언어를 지원하지 않을 경우 데이터가 영어로 표시됩니다. 보고서 작성기는 다음 기능을 포함하여 SQL Server 2008 Reporting Services의 전체 기능을 지원합니다.  
 
--   Microsoft Office와 비슷한 모양의 직관적인 보고서 제작 환경을 제공합니다.  
+- Microsoft Office와 비슷한 모양의 직관적인 보고서 제작 환경을 제공합니다.  
 
--   SQL Server 2008 RDL(Report Definition Language)의 유연한 보고서 레이아웃을 제공합니다.  
+- SQL Server 2008 RDL(Report Definition Language)의 유연한 보고서 레이아웃을 제공합니다.  
 
--   차트와 계기를 포함한 다양한 형태의 데이터 시각화를 제공합니다.  
+- 차트와 계기를 포함한 다양한 형태의 데이터 시각화를 제공합니다.  
 
--   서식 있는 텍스트 상자를 제공합니다.  
+- 서식 있는 텍스트 상자를 제공합니다.  
 
--   Microsoft Word 형식으로 내보낼 수 있습니다.  
+- Microsoft Word 형식으로 내보낼 수 있습니다.  
 
- 또한 SQL Server Reporting Services에서 보고서 작성기를 열 수도 있습니다.  
+  또한 SQL Server Reporting Services에서 보고서 작성기를 열 수도 있습니다.  
 
 ##  <a name="BKMK_ReportModels"></a> SQL Server Reporting Services의 보고서 모델  
  Configuration Manager의 SQL Reporting Services는 관리자가 모델 기반 보고서에 포함할 항목을 데이터베이스에서 선택할 수 있도록 하는 보고서 모델을 사용합니다. 보고서를 작성하는 관리자에게는 지정된 보기와 선택할 항목만 표시됩니다. 모델 기반 보고서를 작성하려면 하나 이상의 보고서 모델을 사용할 수 있어야 합니다. 보고서 모델은 다음과 같은 기능이 있습니다.  
 
--   보고서 작성에 도움이 되는 논리적 비즈니스 이름을 데이터베이스 필드와 보기에 지정할 수 있습니다. 보고서를 작성하는 데 데이터베이스 구조에 대한 지식은 필요 없습니다.  
+- 보고서 작성에 도움이 되는 논리적 비즈니스 이름을 데이터베이스 필드와 보기에 지정할 수 있습니다. 보고서를 작성하는 데 데이터베이스 구조에 대한 지식은 필요 없습니다.  
 
--   항목을 논리적으로 그룹화할 수 있습니다.  
+- 항목을 논리적으로 그룹화할 수 있습니다.  
 
--   항목 간의 관계를 정의할 수 있습니다.  
+- 항목 간의 관계를 정의할 수 있습니다.  
 
--   관리자가 권한이 있는 데이터만 볼 수 있도록 모델 요소에 보안을 설정할 수 있습니다.  
+- 관리자가 권한이 있는 데이터만 볼 수 있도록 모델 요소에 보안을 설정할 수 있습니다.  
 
- Configuration Manager에서 샘플 보고서 모델을 제공하긴 하지만 해당 비즈니스 요구 사항에 맞춰 보고서 모델을 정의할 수 있습니다. 보고서 모델을 만드는 방법에 대한 자세한 내용은 [SQL Server Reporting Services에서 System Center Configuration Manager에 대한 사용자 지정 보고서 모델 만들기](creating-custom-report-models-in-sql-server-reporting-services.md)를 참조하세요.  
+  Configuration Manager에서 샘플 보고서 모델을 제공하긴 하지만 해당 비즈니스 요구 사항에 맞춰 보고서 모델을 정의할 수 있습니다. 보고서 모델을 만드는 방법에 대한 자세한 내용은 [SQL Server Reporting Services에서 System Center Configuration Manager에 대한 사용자 지정 보고서 모델 만들기](creating-custom-report-models-in-sql-server-reporting-services.md)를 참조하세요.  
 
 ## <a name="next-steps"></a>다음 단계
 [보고 계획](planning-for-reporting.md)

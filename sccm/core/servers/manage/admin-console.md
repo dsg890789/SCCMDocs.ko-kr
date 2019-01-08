@@ -10,12 +10,12 @@ ms.assetid: 463ce307-59dd-4abd-87b8-42ca9db178d7
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 073f908057d459d847cbec6b380e7a4a8683db2b
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.openlocfilehash: 16b56d59e1cba6a36f0bd8189587794a680c3865
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52456161"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53422881"
 ---
 # <a name="using-the-configuration-manager-console"></a>Configuration Manager 콘솔 사용
 
@@ -32,9 +32,11 @@ ms.locfileid: "52456161"
 다른 사이트 서버에 연결하려면 다음 단계를 사용합니다. 
 
 1. [리본](#ribbon) 메뉴의 맨 위에 있는 화살표를 선택하고 **새 사이트에 연결**을 선택합니다.  
+
     ![콘솔을 새 사이트에 연결](media/connect-to-a-new-site.png)  
 
 2. 사이트 서버의 FQDN을 입력합니다. 이전에 사이트 서버에 연결한 경우 드롭다운 목록에서 서버를 선택합니다.  
+
     ![사이트 연결 창에서 사이트 서버의 FQDN을 입력합니다.](media/site-server-fqdn.png)  
 
 3. **연결**을 선택합니다.  
@@ -51,18 +53,24 @@ ms.locfileid: "52456161"
 
 ### <a name="workspaces"></a>작업 영역
 
-Configuration Manager 콘솔에는 네 가지 **작업 영역**이 있습니다. 
-   - **자산 및 호환성**  
-   - **소프트웨어 라이브러리**  
-   - **모니터링**  
-   - **관리**  
+Configuration Manager 콘솔에는 네 가지 **작업 영역**이 있습니다.  
+
+- **자산 및 호환성**  
+
+- **소프트웨어 라이브러리**  
+
+- **모니터링**  
+
+- **관리**  
 
 ![바로 가기 메뉴를 사용하는 Configuration Manager 작업 영역](media/configuration-manager-workspaces.png)  
 
 아래쪽 화살표를 선택하고 **탐색 창 옵션**을 선택하여 작업 영역 단추를 다시 정렬합니다. **위로 이동**하거나 **아래로 이동**하도록 항목을 선택합니다. **다시 설정**을 선택하여 기본 단추 순서를 복원합니다.  
+
  ![작업 영역을 다시 정렬하기 위한 탐색 창 옵션 창](media/navigation-pane-options.png)  
 
 **단추 수 줄이기**를 선택하여 작업 영역 단추를 최소화합니다. 목록의 마지막 작업 영역이 먼저 최소화됩니다. 최소화된 단추를 선택하고 **단추 수 늘리기**를 선택하면 단추가 원래 크기로 복원됩니다.   
+
 ![Configuration Manager 콘솔의 최소화된 작업 영역](media/workspace-buttons.png)  
 
 
@@ -71,33 +79,40 @@ Configuration Manager 콘솔에는 네 가지 **작업 영역**이 있습니다.
 작업 영역은 **노드**의 컬렉션입니다. 노드의 한 예제는 **소프트웨어 라이브러리** 작업 영역의 **소프트웨어 업데이트 그룹** 노드입니다. 
 
 노드에 있으면 화살표를 클릭하여 탐색 창을 최소화할 수 있습니다.  
+
 ![예제 노드 및 강조 표시된 최소화 화살표](media/software-update-groups-node.png)  
 
 **탐색 모음**을 사용하여 탐색 창을 최소화했을 때 콘솔 주변을 이동할 수 있습니다.  
+
 ![Configuration Manager 최소화된 탐색 창](media/minimized-navigation-pane.png)  
 
 콘솔에서 노드는 경우에 따라 폴더로 구성됩니다. 폴더를 직접 클릭하면 일반적으로 **탐색 인덱스** 또는 **대시보드**로 이동합니다.  
+
 ![Configuration Manager 소프트웨어 업데이트 탐색 인덱스](media/software-updates-navigation-index.png)  
 
 
 ### <a name="ribbon"></a>리본 
 
 리본은 Configuration Manager 콘솔의 맨 위에 있습니다. 리본은 둘 이상의 탭을 가질 수 있으며 오른쪽에 있는 화살표를 사용하여 최소화될 수 있습니다. 리본의 버튼은 노드에 따라 변경합니다. 또한 리본의 단추 대부분은 바로 가기 메뉴에서 사용할 수 있습니다.  
+
 ![예제 리본 메뉴, 강조 표시된 여러 탭 및 최소화 화살표](media/ribbon.png)   
 
 
 ### <a name="details-pane"></a>세부 정보 창
 
-세부 정보 창을 검토하여 항목에 대한 추가 정보를 가져올 수 있습니다. 세부 정보 창은 하나 이상의 탭을 가질 수 있습니다. 탭은 노드에 따라 달라집니다. 
+세부 정보 창을 검토하여 항목에 대한 추가 정보를 가져올 수 있습니다. 세부 정보 창은 하나 이상의 탭을 가질 수 있습니다. 탭은 노드에 따라 달라집니다.  
+
 ![Configuration Manager 예제 세부 정보 창](media/details-pane.png)   
 
 
 ### <a name="columns"></a>열 
 
 열을 추가, 제거, 다시 정렬 및 크기 조정할 수 있습니다. 이러한 작업을 사용하여 원하는 데이터를 표시할 수 있습니다. 사용 가능한 열은 노드에 따라 달라집니다. 보기에서 열을 추가하거나 제거하려면 기존 열 제목을 마우스 오른쪽 단추로 클릭한 후, 항목을 선택합니다. 원하는 위치로 열 제목을 끌어 열을 다시 정렬합니다.  
+
 ![Configuration Manager 열 추가](media/add-columns.png)  
 
 열 바로 가기 메뉴의 맨 아래에서 열별로 정렬하거나 그룹화할 수 있습니다. 또한 해당 헤더를 선택하여 열별로 정렬할 수 있습니다.  
+
 ![Configuration Manager에서 열별 그룹화](media/column-group-by.png)  
 
 
@@ -122,10 +137,12 @@ Configuration Manager 콘솔에는 다음과 같은 명령줄 옵션이 있습�
 <!--1357542-->
 
 1806 버전부터 콘솔에서 제품 사용자 의견을 제출합니다.  
-   
-- **웃는 얼굴 보내기**: 좋아하는 것에 대한 피드백을 보냅니다.
-- **찡그린 얼굴 보내기**: 싫어하는 것에 대한 피드백을 보냅니다. 
-- **제안 보내기**: UserVoice로 이동하여 아이디어를 공유합니다. 
+
+- **웃는 얼굴 보내기**: 좋아하는 것에 대한 피드백을 보냅니다.  
+
+- **찡그린 얼굴 보내기**: 싫어하는 것에 대한 피드백을 보냅니다.  
+
+- **제안 보내기**: UserVoice로 이동하여 아이디어를 공유합니다.  
  
 자세한 내용은 [제품 피드백](/sccm/core/understand/find-help#BKMK_1806Feedback)을 참조하세요.
 
@@ -133,8 +150,10 @@ Configuration Manager 콘솔에는 다음과 같은 명령줄 옵션이 있습�
 ### <a name="assets-and-compliance-workspace"></a>자산 및 규정 준수 작업 영역
 
 #### <a name="view-users-for-a-device"></a>디바이스에 대한 사용자 표시
-1806 버전부터 다음 열을 **디바이스** 노드에서 사용할 수 있습니다.
+1806 버전부터 다음 열을 **디바이스** 노드에서 사용할 수 있습니다.  
+
 - **기본 사용자** <!--1357280-->  
+
 - **현재 로그온한 사용자** <!--1358202-->  
 
 기본이 아닌 열을 표시하는 방법에 대한 자세한 내용은 [열](#columns)을 참조하세요.
@@ -143,9 +162,11 @@ Configuration Manager 콘솔에는 다음과 같은 명령줄 옵션이 있습�
 ### <a name="monitoring-workspace"></a>모니터링 작업 영역
 
 #### <a name="copy-details-in-monitoring-views"></a>모니터링 보기에서 세부 정보 복사
-<!--1357856--> 1806 버전부터 다음 모니터링 노드에 대해 **자산 세부 정보** 창에서 정보를 복사합니다. 
-    - **콘텐츠 배포 상태**  
-    - **배포 상태**  
+<!--1357856--> 1806 버전부터 다음 모니터링 노드에 대해 **자산 세부 정보** 창에서 정보를 복사합니다.  
+
+- **콘텐츠 배포 상태**  
+
+- **배포 상태**  
 
 ![배포 상태 보기, 복사 자산 세부 정보](media/1810-deployment-status.PNG)
 

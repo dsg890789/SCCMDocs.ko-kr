@@ -10,12 +10,12 @@ ms.assetid: 8e68e1fb-a8ec-4543-bb8a-cbbaf184a418
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5fef3c1892c015fcec42197c9af373506d8e426a
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 5bd03980c772edf8033ddc4a8ccce336ba924c07
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32333113"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53423170"
 ---
 # <a name="security-and-privacy-for-software-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 인벤토리에 대한 보안 및 개인 정보
 
@@ -35,17 +35,17 @@ ms.locfileid: "32333113"
 ### <a name="security-issues-for-software-inventory"></a>소프트웨어 인벤토리에 대한 보안 문제  
  인벤토리 수집은 잠재적인 취약성을 노출합니다. 공격자는 다음 작업을 수행할 수 있습니다.  
 
--   잘못된 데이터를 보내면, 소프트웨어 인벤토리 클라이언트 설정을 사용하지 않고 파일 컬렉션을 사용하지 않는 경우에도 관리 지점에서 이를 수락합니다.  
+- 잘못된 데이터를 보내면, 소프트웨어 인벤토리 클라이언트 설정을 사용하지 않고 파일 컬렉션을 사용하지 않는 경우에도 관리 지점에서 이를 수락합니다.  
 
--   단일 파일과 많은 파일에서 너무 많은 양의 데이터를 보내면 서비스 거부를 발생시킬 수도 있습니다.  
+- 단일 파일과 많은 파일에서 너무 많은 양의 데이터를 보내면 서비스 거부를 발생시킬 수도 있습니다.  
 
--   Configuration Manager로 전송될 때 인벤토리 정보에 액세스합니다.  
+- Configuration Manager로 전송될 때 인벤토리 정보에 액세스합니다.  
 
- 사용자가 이름이 **Skpswi.dat** 인 숨겨진 파일을 만들고 소프트웨어 인벤토리에서 제외하기 위해 클라이언트 하드 드라이브의 루트에 이 파일을 배치할 수 있다는 것을 알고 있다면 해당 컴퓨터에서 소프트웨어 인벤토리 데이터를 수집할 수 없습니다.  
+  사용자가 이름이 **Skpswi.dat** 인 숨겨진 파일을 만들고 소프트웨어 인벤토리에서 제외하기 위해 클라이언트 하드 드라이브의 루트에 이 파일을 배치할 수 있다는 것을 알고 있다면 해당 컴퓨터에서 소프트웨어 인벤토리 데이터를 수집할 수 없습니다.  
 
- 로컬 관리자 권한이 있는 사용자는 정보를 인벤토리 데이터로 보낼 수 있기 때문에 Configuration Manager에서 수집되는 인벤토리 데이터를 신뢰할 수 있는 것으로 간주하지 않는 것이 좋습니다.  
+  로컬 관리자 권한이 있는 사용자는 정보를 인벤토리 데이터로 보낼 수 있기 때문에 Configuration Manager에서 수집되는 인벤토리 데이터를 신뢰할 수 있는 것으로 간주하지 않는 것이 좋습니다.  
 
- 소프트웨어 인벤토리는 클라이언트 설정으로 기본적으로 사용하도록 설정되어 있습니다.  
+  소프트웨어 인벤토리는 클라이언트 설정으로 기본적으로 사용하도록 설정되어 있습니다.  
 
 ##  <a name="BKMK_Privacy_HardwareInventory"></a> 소프트웨어 인벤토리에 대한 개인 정보  
  하드웨어 인벤토리를 사용하면 Configuration Manager 클라이언트의 레지스트리 및 WMI에 저장된 정보를 검색할 수 있습니다. 소프트웨어 인벤토리를 사용하면 지정된 형식의 파일을 검색하거나 지정된 파일을 클라이언트에서 수집할 수 있습니다. Asset Intelligence는 하드웨어 및 소프트웨어 인벤토리를 확장하고 새 라이선스 관리 기능을 추가하여 인벤토리 기능을 향상시킵니다.  

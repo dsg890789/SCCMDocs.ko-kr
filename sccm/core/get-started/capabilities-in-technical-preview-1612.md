@@ -10,16 +10,16 @@ ms.assetid: bceab2e8-2f05-4a17-9ac8-a7a558670fb7
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a72f7979c38a0a8782aa41fef66b7aa00af9bc0f
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 24f1d08fedfc09a190739182d7858772745fb3fe
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32342242"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53423374"
 ---
 # <a name="capabilities-in-technical-preview-1612-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1612의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: System Center Configuration Manager(기술 미리 보기)*
 
 
 
@@ -59,7 +59,7 @@ Technical Preview 버전 1612부터 데이터 웨어하우스 서비스 지점�
 - 사이트 시스템 역할을 설치하는 컴퓨터에 .NET Framework 4.5.2 이상 버전이 필요합니다.
 - 사이트 시스템 역할을 설치하는 컴퓨터의 컴퓨터 계정에 데이터 웨어하우스 데이터베이스를 호스트하는 컴퓨터에 대한 로컬 관리자 권한이 있어야 합니다.
 - 사이트 시스템 역할을 설치하는 데 사용하는 관리 계정은 데이터 웨어하우스 데이터베이스를 호스트할 SQL Server 인스턴스에서 DBO여야 합니다.  
--  다음 데이터베이스가 지원됩니다.
+- 다음 데이터베이스가 지원됩니다.
   - SQL Server 2012 이상, Enterprise 또는 Datacenter Edition
   - 기본 또는 명명된 인스턴스
   - *SQL Server 클러스터* 이 구성은 작동해야 하지만 테스트되지 않았으며 최대한 지원하려고 시도될 뿐입니다.
@@ -111,7 +111,7 @@ Technical Preview 버전 1612부터 데이터 웨어하우스 서비스 지점�
 
 |보고서                   | 세부 정보                                  |
 |-------------------------|------------------------------------------|
-| **응용 프로그램 배포 보고서** | 특정 애플리케이션 및 컴퓨터에 대한 애플리케이션 배포 정보를 확인합니다.|
+| **애플리케이션 배포 보고서** | 특정 애플리케이션 및 컴퓨터에 대한 애플리케이션 배포 정보를 확인합니다.|
 | **Endpoint Protection 및 소프트웨어 업데이트 준수 보고서**   | 소프트웨어 업데이트가 누락된 컴퓨터를 확인합니다.|
 | **일반 하드웨어 인벤토리 보고서**  | 특정 컴퓨터에 대한 모든 하드웨어 인벤토리를 확인합니다.|
 | **일반 소프트웨어 인벤토리 보고서**  | 특정 컴퓨터에 대한 모든 소프트웨어 인벤토리를 확인합니다.|
@@ -122,21 +122,21 @@ Technical Preview 버전 1612부터 데이터 웨어하우스 서비스 지점�
 ### <a name="move-the-data-warehouse-database"></a>데이터 웨어하우스 데이터베이스 이동
 데이터 웨어하우스 데이터베이스를 새 SQL Server로 이동하려면 다음 단계를 사용합니다.
 
-  1. 현재 데이터베이스 구성을 검토하고 다음을 비롯한 구성 세부 정보를 기록합니다.  
+1. 현재 데이터베이스 구성을 검토하고 다음을 비롯한 구성 세부 정보를 기록합니다.  
    - 동기화하는 데이터 그룹
    - 동기화에 포함하거나 제외하는 테이블       
 
    데이터베이스를 새 서버로 복원하고 사이트 시스템 역할을 다시 설치한 후 이러한 데이터 그룹 및 테이블을 다시 구성합니다.  
 
-  2. SQL Server Management Studio를 사용하여 데이터 웨어하우스 데이터베이스를 백업한 다음 데이터 웨어하우스를 호스트할 새 컴퓨터에서 해당 데이터베이스를 SQL Server로 복원합니다.
+2. SQL Server Management Studio를 사용하여 데이터 웨어하우스 데이터베이스를 백업한 다음 데이터 웨어하우스를 호스트할 새 컴퓨터에서 해당 데이터베이스를 SQL Server로 복원합니다.
 
-  데이터베이스를 새 서버로 복원한 후 새 데이터 웨어하우스 데이터베이스의 데이터베이스 액세스 권한이 원래 데이터 웨어하우스 데이터베이스와 동일한지 확인합니다.
+   데이터베이스를 새 서버로 복원한 후 새 데이터 웨어하우스 데이터베이스의 데이터베이스 액세스 권한이 원래 데이터 웨어하우스 데이터베이스와 동일한지 확인합니다.
 
-  3. Configuration Manager 콘솔을 사용하여 현재 서버에서 데이터 웨어하우스 서비스 지점 사이트 시스템 역할을 제거합니다.
+3. Configuration Manager 콘솔을 사용하여 현재 서버에서 데이터 웨어하우스 서비스 지점 사이트 시스템 역할을 제거합니다.
 
-  4. 새 데이터 웨어하우스 서비스 지점을 설치하고 복원한 데이터 웨어하우스 데이터베이스를 호스트하는 새 SQL Server 및 인스턴스의 이름을 지정합니다.
+4. 새 데이터 웨어하우스 서비스 지점을 설치하고 복원한 데이터 웨어하우스 데이터베이스를 호스트하는 새 SQL Server 및 인스턴스의 이름을 지정합니다.
 
-  5. 사이트 시스템 역할이 설치된 후 이동이 완료됩니다.
+5. 사이트 시스템 역할이 설치된 후 이동이 완료됩니다.
 
 다음 Configuration Manager 로그를 검토하여 사이트 시스템 역할이 성공적으로 다시 설치되었는지 확인할 수 있습니다.  
 - **DWSSMSI.log** 및 **DWSSSetup.log** - 데이터 웨어하우스 서비스 지점을 설치할 때 발생하는 오류를 조사하려면 이 로그를 사용합니다.
@@ -158,22 +158,22 @@ Technical Preview 1612를 설치한 후 Technical Preview 사이트 서버의 \*
 
 ### <a name="modes-of-operation"></a>작동 모드
 다음 두 가지 모드로 도구를 실행할 수 있습니다.
-  1.    **What-If 모드**:   
-      **/delete** 스위치를 지정하지 않을 경우 도구는 What-If 모드로 실행되며 배포 지점에서 삭제되는 콘텐츠를 식별하지만 실제로 데이터를 삭제하지는 않습니다.
+1. **What-If 모드**:   
+   **/delete** 스위치를 지정하지 않을 경우 도구는 What-If 모드로 실행되며 배포 지점에서 삭제되는 콘텐츠를 식별하지만 실제로 데이터를 삭제하지는 않습니다.
 
-      - 이 모드로 도구를 실행하면 삭제되는 콘텐츠에 대한 정보가 도구 로그 파일에 자동으로 기록됩니다. 각 잠재적 삭제를 확인하는 메시지가 사용자에게 표시되지 않습니다.
-      - 기본적으로 로그 파일은 도구를 실행하는 컴퓨터의 사용자 temp 폴더에 기록되지만 /log 스위치를 사용하여 로그 파일을 다른 위치로 리디렉션할 수 있습니다.  
-      </br>
+   - 이 모드로 도구를 실행하면 삭제되는 콘텐츠에 대한 정보가 도구 로그 파일에 자동으로 기록됩니다. 각 잠재적 삭제를 확인하는 메시지가 사용자에게 표시되지 않습니다.
+   - 기본적으로 로그 파일은 도구를 실행하는 컴퓨터의 사용자 temp 폴더에 기록되지만 /log 스위치를 사용하여 로그 파일을 다른 위치로 리디렉션할 수 있습니다.  
+   </br>
 
-    /delete 스위치와 함께 도구를 실행하기 전에 이 모드로 도구를 실행하고 결과 로그 파일을 검토하는 것이 좋습니다.  
+   /delete 스위치와 함께 도구를 실행하기 전에 이 모드로 도구를 실행하고 결과 로그 파일을 검토하는 것이 좋습니다.  
 
-  2. **삭제 모드**: **/delete** 스위치를 사용하여 도구를 실행하면 도구가 삭제 모드로 실행됩니다.
+2. **삭제 모드**: **/delete** 스위치와 함께 도구를 실행하면 도구가 삭제 모드에서 실행됩니다.
 
-     - 이 모드로 도구를 실행하는 경우 지정한 배포 지점에서 발견된 분리된 콘텐츠를 배포 지점의 콘텐츠 라이브러리에서 삭제할 수 있습니다.
-     -  각 파일을 삭제하기 전에 파일을 삭제할 것인지 확인하는 메시지가 사용자에게 표시됩니다.  **Y**(예) 또는 **N**(아니요)을 선택하거나, 추가 메시지를 건너뛰고 분리된 콘텐츠를 모두 삭제하려면 **모두 예**를 선택할 수 있습니다.  
-     </br>
+   - 이 모드로 도구를 실행하는 경우 지정한 배포 지점에서 발견된 분리된 콘텐츠를 배포 지점의 콘텐츠 라이브러리에서 삭제할 수 있습니다.
+   -  각 파일을 삭제하기 전에 파일을 삭제할 것인지 확인하는 메시지가 사용자에게 표시됩니다.  **Y**(예) 또는 **N**(아니요)을 선택하거나, 추가 메시지를 건너뛰고 분리된 콘텐츠를 모두 삭제하려면 **모두 예**를 선택할 수 있습니다.  
+   </br>
 
-     /delete 스위치와 함께 도구를 실행하기 전에 What-If 모드로 도구를 실행하고 결과 로그 파일을 검토하는 것이 좋습니다.  
+   /delete 스위치와 함께 도구를 실행하기 전에 What-If 모드로 도구를 실행하고 결과 로그 파일을 검토하는 것이 좋습니다.  
 
 두 모드 중 하나로 콘텐츠 라이브러리 정리 도구를 실행하면 도구가 실행되는 모드, 배포 지점 이름, 작업 날짜 및 시간을 포함하는 이름의 로그가 자동으로 생성됩니다. 도구가 완료되면 로그 파일이 자동으로 열립니다. 기본적으로 이 로그는 도구를 실행하는 컴퓨터의 사용자 **temp** 폴더에 기록되지만 명령줄 스위치를 사용하여 로그 파일을 네트워크 공유 등의 다른 위치로 리디렉션할 수 있습니다.   
 
@@ -195,12 +195,12 @@ Technical Preview 1612를 설치한 후 Technical Preview 사이트 서버의 \*
 
 |스위치|세부 정보|
 |---------|-------|
-|**/delete**  |**선택 사항** </br> 배포 지점에서 콘텐츠를 삭제하려는 경우 이 스위치를 사용합니다. 콘텐츠를 삭제하기 전에 확인 메시지가 표시됩니다. </br></br> 이 스위치를 사용하지 않으면 도구는 삭제되는 콘텐츠에 대한 결과를 기록하지만 배포 지점에서 콘텐츠를 삭제하지는 않습니다. </br></br> 예: ***ContentLibraryCleanup.exe /dp server1.contoso.com /delete*** |
-| **/q**       |**선택 사항** </br> 모든 메시지(예: 콘텐츠를 삭제할 때 표시되는 메시지)를 표시하지 않는 자동 모드로 도구를 실행하고 자동으로 로그 파일을 열지 않습니다. </br></br> 예: ***ContentLibraryCleanup.exe /q /dp server1.contoso.com*** |
-| **/dp &lt;배포 지점 FQDN>**  | **필수** </br> 정리하려는 배포 지점의 FQDN(정규화된 도메인 이름)을 지정합니다. </br></br> 예: ***ContentLibraryCleanup.exe /dp server1.contoso.com***|
-| **/ps &lt;기본 사이트 FQDN>**       | 기본 사이트의 배포 지점에서 콘텐츠를 정리하는 경우 **선택 사항**입니다.</br>보조 사이트의 배포 지점에서 콘텐츠를 정리하는 경우 **필수**입니다. </br></br> 배포 지점이 속하는 기본 사이트 또는 배포 지점이 보조 사이트에 있는 경우 부모 기본 사이트의 FQDN을 지정합니다. </br></br> 예: ***ContentLibraryCleanup.exe /dp server1.contoso.com /ps siteserver1.contoso.com*** |
-| **/sc &lt;기본 사이트 코드>**  | 기본 사이트의 배포 지점에서 콘텐츠를 정리하는 경우 **선택 사항**입니다.</br>보조 사이트의 배포 지점에서 콘텐츠를 정리하는 경우 **필수**입니다. </br></br> 배포 지점이 속하는 기본 사이트 또는 배포 지점이 보조 사이트에 있는 경우 부모 기본 사이트의 사이트 코드를 지정합니다.</br></br> 예: ***ContentLibraryCleanup.exe /dp server1.contoso.com /sc ABC*** |
-| **/log <log file directory>**       |**선택 사항** </br> 로그 파일을 배치할 디렉터리를 지정합니다. 로컬 드라이브 또는 네트워크 공유일 수 있습니다.</br></br> 이 스위치를 사용하지 않으면 로그 파일은 자동으로 사용자 temp 폴더에 배치됩니다.</br></br> 로컬 드라이브의 예: ***ContentLibraryCleanup.exe /dp server1.contoso.com /log C:\Users\Administrator\Desktop*** </br></br>네트워크 공유의 예: ***ContentLibraryCleanup.exe /dp server1.contoso.com /log \\&lt;공유>\&lt;폴더>***|
+|**/delete**  |**선택 사항** </br> 배포 지점에서 콘텐츠를 삭제하려는 경우 이 스위치를 사용합니다. 콘텐츠를 삭제하기 전에 확인 메시지가 표시됩니다. </br></br> 이 스위치를 사용하지 않으면 도구는 삭제되는 콘텐츠에 대한 결과를 기록하지만 배포 지점에서 콘텐츠를 삭제하지는 않습니다. </br></br> 예제: ***ContentLibraryCleanup.exe /dp server1.contoso.com /delete*** |
+| **/q**       |**선택 사항** </br> 모든 메시지(예: 콘텐츠를 삭제할 때 표시되는 메시지)를 표시하지 않는 자동 모드로 도구를 실행하고 자동으로 로그 파일을 열지 않습니다. </br></br> 예제: ***ContentLibraryCleanup.exe /q /dp server1.contoso.com*** |
+| **/dp &lt;배포 지점 FQDN>**  | **필수** </br> 정리하려는 배포 지점의 FQDN(정규화된 도메인 이름)을 지정합니다. </br></br> 예제:  ***ContentLibraryCleanup.exe /dp server1.contoso.com***|
+| **/ps &lt;기본 사이트 FQDN>**       | 기본 사이트의 배포 지점에서 콘텐츠를 정리하는 경우 **선택 사항**입니다.</br>보조 사이트의 배포 지점에서 콘텐츠를 정리하는 경우 **필수**입니다. </br></br> 배포 지점이 속하는 기본 사이트 또는 배포 지점이 보조 사이트에 있는 경우 부모 기본 사이트의 FQDN을 지정합니다. </br></br> 예제: ***ContentLibraryCleanup.exe /dp server1.contoso.com /ps siteserver1.contoso.com*** |
+| **/sc &lt;기본 사이트 코드>**  | 기본 사이트의 배포 지점에서 콘텐츠를 정리하는 경우 **선택 사항**입니다.</br>보조 사이트의 배포 지점에서 콘텐츠를 정리하는 경우 **필수**입니다. </br></br> 배포 지점이 속하는 기본 사이트 또는 배포 지점이 보조 사이트에 있는 경우 부모 기본 사이트의 사이트 코드를 지정합니다.</br></br> 예제: ***ContentLibraryCleanup.exe /dp server1.contoso.com /sc ABC*** |
+| **/log <log file directory>**       |**선택 사항** </br> 로그 파일을 배치할 디렉터리를 지정합니다. 로컬 드라이브 또는 네트워크 공유일 수 있습니다.</br></br> 이 스위치를 사용하지 않으면 로그 파일은 자동으로 사용자 temp 폴더에 배치됩니다.</br></br> 로컬 드라이브의 예: ***ContentLibraryCleanup.exe /dp server1.contoso.com /log C:\Users\Administrator\Desktop*** </br></br>네트워크 공유의 예: ***ContentLibraryCleanup.exe /dp server1.contoso.com /log \\&lt;share>\&lt;folder>***|
 
 
 ## <a name="improvements-for-in-console-search"></a>콘솔 내 검색의 향상된 기능
@@ -223,7 +223,7 @@ User Voice 피드백에 따라 콘솔 내 검색에 대한 다음과 같은 향�
 2.  **추가**를 클릭하여 다른 실행 파일 중 하나를 목록에 추가합니다(예: **Edge.exe**).
 3.  **확인**을 클릭하여 배포 유형 속성 대화 상자를 닫습니다.
 
-이제 사용자 또는 디바이스에 이 응용 프로그램을 배포하고 추가한 실행 파일 중 하나가 실행되는 경우 응용 프로그램이 실행 중이므로 설치에 실패했다고 알리는 소프트웨어 센터 대화 상자가 최종 사용자에게 표시됩니다.
+이제 사용자 또는 장치에 이 애플리케이션을 배포하고 추가한 실행 파일 중 하나가 실행되는 경우 애플리케이션이 실행 중이므로 설치에 실패했다고 알리는 소프트웨어 센터 대화 상자가 최종 사용자에게 표시됩니다.
 
 ## <a name="new-windows-hello-for-business-notification-for-end-users"></a>최종 사용자에 대한 새 비즈니스용 Windows Hello 알림
 
@@ -263,19 +263,19 @@ Windows 10 빠른 설치 파일에 대한 메타데이터 동기화를 시작하
 4.  **소프트웨어 업데이트** 페이지를 선택하고 **클라이언트에서 Express 업데이트 설치 사용** 설정에 대해 **예**를 구성하고 **Express 업데이트 콘텐츠를 다운로드하는 데 사용할 포트**에 대해 클라이언트의 HTTP 수신기에서 사용되는 포트를 구성합니다.
 
 
-## <a name="odata-endpoint-data-access"></a>OData 끝점 데이터 액세스
+## <a name="odata-endpoint-data-access"></a>OData 엔드포인트 데이터 액세스
 
- 이제 Configuration Manager에서 Configuration Manager 데이터 액세스를 위한 RESTful OData 끝점을 제공합니다. 끝점은 Excel 및 Power BI와 같은 도구가 단일 끝점을 통해 Configuration Manager 데이터에 쉽게 액세스할 수 있도록 하는 Odata 버전 4와 호환됩니다. Technical Preview 1612는 Configuration Manager에서 개체에 대한 읽기 권한만 지원합니다.  
+ 이제 Configuration Manager에서 Configuration Manager 데이터 액세스를 위한 RESTful OData 엔드포인트를 제공합니다. 엔드포인트는 Excel 및 Power BI와 같은 도구가 단일 엔드포인트를 통해 Configuration Manager 데이터에 쉽게 액세스할 수 있도록 하는 Odata 버전 4와 호환됩니다. Technical Preview 1612는 Configuration Manager에서 개체에 대한 읽기 권한만 지원합니다.  
 
-이제 새 OData RESTful 끝점을 사용하여 [Configuration Manager WMI 공급자](/sccm/develop/reference/configuration-manager-reference)에서 현재 사용할 수 있는 데이터에 액세스할 수도 있습니다. OData 끝점에서 노출되는 엔터티 집합을 사용하면 WMI 공급자를 통해 쿼리할 수 있는 것과 동일한 데이터를 열거할 수 있습니다.
+이제 새 OData RESTful 엔드포인트를 사용하여 [Configuration Manager WMI 공급자](/sccm/develop/reference/configuration-manager-reference)에서 현재 사용할 수 있는 데이터에 액세스할 수도 있습니다. OData 엔드포인트에서 노출되는 엔터티 집합을 사용하면 WMI 공급자를 통해 쿼리할 수 있는 것과 동일한 데이터를 열거할 수 있습니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 
-OData 끝점을 사용하려면 먼저 사이트에 대해 사용하도록 설정해야 합니다.
+OData 엔드포인트를 사용하려면 먼저 사이트에 대해 사용하도록 설정해야 합니다.
 
 1.  **관리** > **사이트 구성** > **사이트**로 이동합니다.
 2.  기본 사이트를 선택하고 **속성**을 클릭합니다.
-3.  기본 사이트 속성 시트의 일반 탭에서 **이 사이트의 모든 공급자에 대해 REST 끝점 사용**을 클릭한 다음 **확인**을 클릭합니다.
+3.  기본 사이트 속성 시트의 일반 탭에서 **이 사이트의 모든 공급자에 대해 REST 엔드포인트 사용**을 클릭한 다음 **확인**을 클릭합니다.
 
 즐겨 찾는 OData 쿼리 뷰어에서 다음 예제와 유사한 쿼리를 시도하여 Configuration Manager의 다양한 개체를 반환해 보세요.
 

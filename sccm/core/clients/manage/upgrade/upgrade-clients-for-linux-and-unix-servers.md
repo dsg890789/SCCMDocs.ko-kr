@@ -10,12 +10,12 @@ ms.assetid: 7d2bb377-1005-4a55-bd1f-b80a6d0b22e1
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 239cb81c975c51a98733a6f325d46c3da676784c
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: ae91988f895f916b3c22b636a5c7b51f51e1a811
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32334500"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53420994"
 ---
 # <a name="how-to-upgrade-clients-for-linux-and-unix-servers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Linux 및 UNIX 서버용 클라이언트를 업그레이드하는 방법
 
@@ -38,27 +38,27 @@ ms.locfileid: "32334500"
 
 #### <a name="to-use-a-software-deployment-to-upgrade-the-client-on-linux-and-unix-servers"></a>소프트웨어 배포를 사용하여 Linux 및 UNIX 서버의 클라이언트를 업그레이드하려면  
 
-1.  업그레이드할 Configuration Manager 클라이언트를 실행하는 컴퓨터에 새 클라이언트 설치 패키지를 복사합니다.  
+1. 업그레이드할 Configuration Manager 클라이언트를 실행하는 컴퓨터에 새 클라이언트 설치 패키지를 복사합니다.  
 
-     예를 들어 누적 업데이트 1에 대한 클라이언트 설치 패키지 및 설치 스크립트를 클라이언트 컴퓨터의 다음 위치에 배치합니다. **/tmp/PATCH**  
+    예를 들어 누적 업데이트 1에 대한 클라이언트 설치 패키지 및 설치 스크립트를 클라이언트 컴퓨터의 다음 위치에 배치합니다. **/tmp/PATCH**  
 
-2.  Configuration Manager 클라이언트의 업그레이드를 관리하는 스크립트를 만듭니다. 그런 다음, 클라이언트 컴퓨터에서 1단계의 클라이언트 설치 파일과 동일한 폴더에 스크립트 복사본을 저장합니다.  
+2. Configuration Manager 클라이언트의 업그레이드를 관리하는 스크립트를 만듭니다. 그런 다음, 클라이언트 컴퓨터에서 1단계의 클라이언트 설치 파일과 동일한 폴더에 스크립트 복사본을 저장합니다.  
 
-     스크립트에는 특정 이름이 필요하지 않습니다. 클라이언트 컴퓨터의 로컬 폴더에 있는 클라이언트 설치 파일을 사용하고 **–keepdb** 명령줄 속성을 통해 클라이언트 설치 패키지를 설치하는 명령줄이 포함되어야 합니다. **-keepdb** 명령줄 속성을 사용하여 설치하는 새 클라이언트에서 사용할 현재 클라이언트의 고유 식별자를 유지 관리합니다.  
+    스크립트에는 특정 이름이 필요하지 않습니다. 클라이언트 컴퓨터의 로컬 폴더에 있는 클라이언트 설치 파일을 사용하고 **–keepdb** 명령줄 속성을 통해 클라이언트 설치 패키지를 설치하는 명령줄이 포함되어야 합니다. **-keepdb** 명령줄 속성을 사용하여 설치하는 새 클라이언트에서 사용할 현재 클라이언트의 고유 식별자를 유지 관리합니다.  
 
-     예를 들어, 다음 줄을 포함하는 **upgrade.sh**라고 명명된 스크립트를 만듭니다.  
+    예를 들어, 다음 줄을 포함하는 **upgrade.sh**라고 명명된 스크립트를 만듭니다.  
 
-    ```  
-    #!/bin/sh  
-    #  
-    /tmp/PATCH/install -sitecode <code> -mp <hostname> -keepdb /tmp/PATCH/ccm-Universal-x64.<build>.tar  
+   ```  
+   #!/bin/sh  
+   #  
+   /tmp/PATCH/install -sitecode <code> -mp <hostname> -keepdb /tmp/PATCH/ccm-Universal-x64.<build>.tar  
 
-    ```  
+   ```  
 
-     그런 다음, 클라이언트 컴퓨터의 **/tmp/PATCH** 폴더로 복사합니다.
+    그런 다음, 클라이언트 컴퓨터의 **/tmp/PATCH** 폴더로 복사합니다.
 
-3.  소프트웨어 배포를 사용하여 각 클라이언트가 기본 제공 **at** 명령을 통해 **upgrade.sh** 스크립트를 실행하도록 합니다. 스크립트가 실행되기 전에 약간의 지연이 있습니다.  
+3. 소프트웨어 배포를 사용하여 각 클라이언트가 기본 제공 **at** 명령을 통해 **upgrade.sh** 스크립트를 실행하도록 합니다. 스크립트가 실행되기 전에 약간의 지연이 있습니다.  
 
-     예를 들어 다음 명령줄을 사용하여 스크립트를 실행합니다. **at -f /tmp/upgrade.sh -m now + 5 minutes**  
+    예를 들어 다음 명령줄을 사용하여 스크립트를 실행합니다. **at -f /tmp/upgrade.sh -m now + 5 minutes**  
 
- 클라이언트에서 **upgrade.sh** 실행을 예약한 후 소프트웨어 배포가 완료되었음을 나타내는 상태 메시지를 전송합니다. 그러나 실제 클라이언트 설치는 지연 후 컴퓨터에서 관리됩니다. 클라이언트 업그레이드를 완료한 후 클라이언트 컴퓨터의 **/var/opt/microsoft/scxcm.log** 파일을 검토하여 설치 유효성을 검사합니다. Configuration Manager 콘솔의 **자산 및 준수** 작업 영역의 **디바이스** 노드에서 클라이언트에 대한 세부 정보를 통해 클라이언트가 설치되고 사이트와 통신하고 있는지 확인합니다.  
+   클라이언트에서 **upgrade.sh** 실행을 예약한 후 소프트웨어 배포가 완료되었음을 나타내는 상태 메시지를 전송합니다. 그러나 실제 클라이언트 설치는 지연 후 컴퓨터에서 관리됩니다. 클라이언트 업그레이드를 완료한 후 클라이언트 컴퓨터의 **/var/opt/microsoft/scxcm.log** 파일을 검토하여 설치 유효성을 검사합니다. Configuration Manager 콘솔의 **자산 및 준수** 작업 영역의 **디바이스** 노드에서 클라이언트에 대한 세부 정보를 통해 클라이언트가 설치되고 사이트와 통신하고 있는지 확인합니다.  

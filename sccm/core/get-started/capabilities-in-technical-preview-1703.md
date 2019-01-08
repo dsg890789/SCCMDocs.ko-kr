@@ -10,12 +10,12 @@ ms.assetid: 2e801f8c-d331-41ee-8f27-908448fc0951
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4750d9e31eb41fdad7f655faa4e8058156e922a1
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: aed9ec403496b309b1b556355c955743d43b2dc4
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32337159"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53420212"
 ---
 # <a name="capabilities-in-technical-preview-1703-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1703의 기능
 
@@ -58,10 +58,10 @@ ms.locfileid: "32337159"
 
 1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리**를 클릭합니다.
 2.  소프트웨어 라이브러리 작업 영역에서 **애플리케이션 관리**를 확장한 다음 **애플리케이션**을 클릭합니다.
-3.  **응용 프로그램** 보기에서 열 머리글 중 하나를 마우스 오른쪽 단추로 클릭한 다음 목록에서 **CI 고유 ID**를 선택합니다. 이제 목록에 각 애플리케이션의 고유 ID가 표시됩니다.
-4.  링크를 제공할 애플리케이션의 **CI 고유 ID**를 확인합니다(예: **ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f/2**).
+3.  **애플리케이션** 보기에서 열 머리글 중 하나를 마우스 오른쪽 단추로 클릭한 다음 목록에서 **CI 고유 ID**를 선택합니다. 이제 목록에 각 애플리케이션의 고유 ID가 표시됩니다.
+4.  링크를 제공하려는 애플리케이션의 **CI 고유 ID**(예: **ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f/2**)를 참조합니다.
 5.  그런 다음 애플리케이션 GUID 뒤에 있는 모든 텍스트를 제거합니다(이 경우 **/2**). 그러면 애플리케이션 식별자가 남습니다.
-6.  마지막으로 링크 구성을 마치려면 링크 앞에 **Softwarecenter:SoftwareID=** 을 붙입니다. 위 예제를 사용할 경우 최종 링크는 **Softwarecenter:SoftwareId= ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f**가 됩니다.
+6.  마지막으로 링크 구성을 마치려면 링크 앞에 **Softwarecenter:SoftwareID=** 을 붙입니다. 위의 예제를 사용한 최종 링크는 다음과 같습니다. **Softwarecenter:SoftwareId= ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f**.
 
 이 링크를 사용하여 최종 사용자는 지정된 애플리케이션에 대한 소프트웨어 센터를 직접 열 수 있습니다.
 
@@ -106,18 +106,18 @@ Azure Active Directory에서 Configuration Manager를 웹 애플리케이션 또
 4. **앱** 페이지에서 Azure 환경을 지정한 다음 **찾아보기**를 클릭하여 서버 앱 창을 엽니다.
 
 5. **서버 앱** 창에서 사용할 서버 앱을 선택한 다음 **확인**을 클릭합니다.
-서버 앱은 테넌트 ID, 클라이언트 ID 및 클라이언트의 비밀 키를 비롯한 Azure 계정에 대한 구성을 포함하는 Azure 웹앱입니다. 사용 가능한 서버 앱이 없는 경우 다음 중 하나를 사용합니다.
-  - **만들기**: 새 서버 앱을 만들려면 **만들기**를 클릭합니다. 앱 및 테넌트의 이름을 입력합니다. 그런 다음 Azure에 로그인하면 Configuration Manager가 Azure에서 사용자를 위해 웹앱을 만듭니다(웹앱에 사용할 클라이언트 ID 및 비밀 키 포함). 나중에 Azure Portal에서 이러한 내용을 확인할 수 있습니다.
-  - **가져오기**: Azure 구독에 이미 있는 웹앱을 사용하려면 **가져오기**를 클릭합니다. 앱 및 테넌트의 이름을 입력한 다음 테넌트 ID, 클라이언트 ID 및 Configuration Manager에서 사용하도록 할 Azure 웹앱의 비밀 키를 지정합니다. 정보를 **확인**한 후 **확인**을 클릭하여 계속합니다.  </br></br>
+   서버 앱은 테넌트 ID, 클라이언트 ID 및 클라이언트의 비밀 키를 비롯한 Azure 계정에 대한 구성을 포함하는 Azure 웹앱입니다. 사용 가능한 서버 앱이 없는 경우 다음 중 하나를 사용합니다.
+   - **만들기**: 새 서버 앱을 만들려면 **만들기**를 클릭합니다. 앱 및 테넌트의 이름을 입력합니다. 그런 다음 Azure에 로그인하면 Configuration Manager가 Azure에서 사용자를 위해 웹앱을 만듭니다(웹앱에 사용할 클라이언트 ID 및 비밀 키 포함). 나중에 Azure Portal에서 이러한 내용을 확인할 수 있습니다.
+   - **가져오기**: Azure 구독에 이미 있는 웹앱을 사용하려면 **가져오기**를 클릭합니다. 앱 및 테넌트의 이름을 입력한 다음 테넌트 ID, 클라이언트 ID 및 Configuration Manager에서 사용하도록 할 Azure 웹앱의 비밀 키를 지정합니다. 정보를 **확인**한 후 **확인**을 클릭하여 계속합니다.  </br></br>
 
 6. **정보** 페이지를 검토하고 지시에 따라 추가 단계 및 구성을 완료합니다. 이러한 구성은 Configuration Manager를 통해 서비스를 사용하는 데 필요합니다.
-예를 들어 WSfB를 구성하려면:
+   예를 들어 WSfB를 구성하려면:
 
-  1. Azure에서 Configuration Manager를 웹 애플리케이션 또는 Web API로 등록하고 클라이언트 ID를 기록합니다. 관리 도구(Configuration Manager)에서 사용하도록 할 클라이언트 키도 지정합니다.
+   1. Azure에서 Configuration Manager를 웹 애플리케이션 또는 Web API로 등록하고 클라이언트 ID를 기록합니다. 관리 도구(Configuration Manager)에서 사용하도록 할 클라이언트 키도 지정합니다.
 
-  2.    WSfB 콘솔에서 Configuration Manager를 저장소 관리 도구로 구성하고 오프라인 사용이 허가된 앱에 대한 지원을 사용하도록 설정한 다음 하나 이상의 앱을 구매해야 합니다.   </br>
+   2.    WSfB 콘솔에서 Configuration Manager를 저장소 관리 도구로 구성하고 오프라인 사용이 허가된 앱에 대한 지원을 사용하도록 설정한 다음 하나 이상의 앱을 구매해야 합니다.   </br>
 
-  계속 진행할 준비가 되면 **다음**을 클릭합니다.
+   계속 진행할 준비가 되면 **다음**을 클릭합니다.
 
 7. **앱 구성** 페이지에서 이 서비스에 대한 앱 카탈로그 및 언어 구성을 완료하고 **다음**을 클릭합니다.
 8. 마법사가 완료된 후 Configuration Manager 콘솔에는 **비즈니스용 Windows 스토어**를 **클라우드 서비스 유형**으로 구성했음이 표시됩니다.
@@ -151,10 +151,10 @@ Windows Analytics를 구성하려면 Configuration Manager 콘솔에서 **관리
 - **상업용 ID**  
 상업용 ID 키는 관리하는 디바이스의 정보를 조직의 Windows Analytics 데이터를 호스트하는 OMS 작업 영역으로 매핑합니다. 업그레이드 준비에 사용하기 위한 상업용 ID 키를 이미 구성한 경우 해당 ID를 사용합니다. 아직 상업용 ID 키가 없는 경우 [상업용 ID 키 생성]( https://technet.microsoft.com /itpro/windows/deploy/upgrade-readiness-get-started#generate-your-commercial-id-key)을 참조하세요.
 
-- **Windows 10 장치에 대한 원격 분석 수준**  설정  
+- **Windows 10 디바이스에 대한 원격 분석 수준**  설정  
 각 Windows 10 원격 분석 수준에서 수집되는 항목에 대한 자세한 내용은 Windows 온라인 설명서의 [조직에서 Windows 원격 분석 구성]( https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#telemetry-levels)을 참조하세요.
 
-- **Windows 7, 8 및 8.1 장치에서 상용 데이터 수집에 옵트인**  선택  
+- **Windows 7, 8 및 8.1 디바이스에서 상용 데이터 수집에 옵트인**  선택  
 옵트인할 경우 이러한 운영 체제에서 수집되는 데이터에 대한 자세한 내용을 보려면 Microsoft에서 [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965)(Windows 7, Windows 8 및 Windows 8.1 appraiser 원격 분석 이벤트 및 필드) pdf 파일을 다운로드하세요.
 
-- **Internet Explorer 데이터 수집 구성** Windows 8.1 또는 이전 버전을 실행하는 장치에서 Internet Explorer 데이터 수집을 수행하면 업그레이드 준비 기능을 통해 Windows 10으로의 원활한 업그레이드에 방해가 될 수 있는 웹앱 비호환성 문제를 감지할 수 있습니다. Internet Explorer 데이터 수집은 인터넷 영역별로 사용 가능하게 설정할 수 있습니다. 인터넷 영역에 대한 자세한 내용은 [URL 보안 영역 정보](https://msdn.microsoft.com/en-us/library/ms537183(v=vs.85).aspx)를 참조하세요.
+- **Internet Explorer 데이터 수집 구성** Windows 8.1 또는 이전 버전을 실행하는 디바이스에서 Internet Explorer 데이터 수집을 수행하면 업그레이드 준비 기능을 통해 Windows 10으로의 원활한 업그레이드에 방해가 될 수 있는 웹앱 비호환성 문제를 감지할 수 있습니다. Internet Explorer 데이터 수집은 인터넷 영역별로 사용 가능하게 설정할 수 있습니다. 인터넷 영역에 대한 자세한 내용은 [URL 보안 영역 정보](https://msdn.microsoft.com/en-us/library/ms537183(v=vs.85).aspx)를 참조하세요.

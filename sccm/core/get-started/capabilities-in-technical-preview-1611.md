@@ -10,12 +10,12 @@ ms.assetid: d2ad00e8-9f10-41b6-816a-d8542c23a22e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: d610b9f5980376bc9859fcd1e8bb34660e068b09
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 71ad5ae8ff823d03951d5f9ae1a13e8051cba23e
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32335017"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53416574"
 ---
 # <a name="capabilities-in-technical-preview-1611-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1611의 기능
 
@@ -26,15 +26,15 @@ ms.locfileid: "32335017"
 이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1611에서 사용 가능한 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 소개 항목인 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대해 피드백 제공 방법 등에 익숙해져야 합니다.    
 
 **이 Technical Preview의 알려진 문제:**   
-- ***필수 조건 상태***: 버전 1611을 설치하는 경우 필수 조건의 전반적인 상태가 통과(경고 있음)로 표시될 수도 있지만 경고를 발생한 필수 조건은 표시되지 않습니다. 다음 두 가지 필수 조건이 원인일 수 있습니다.
+- ***필수 조건 상태***: 버전 1611을 설치하는 경우 필수 조건의 전반적인 상태가 통과(경고 있음)로 표시될 수도 있지만 경고를 발생시킨 필수 조건은 표시되지 않습니다. 다음 두 가지 필수 조건이 원인일 수 있습니다.
   - SQL 인덱스 생성 메모리 옵션
   - 지원되는 SQL Server 버전 검사  
 
- 경고일 뿐이므로 무시해도 됩니다.
+  경고일 뿐이므로 무시해도 됩니다.
 
-- ***PowerShell***: Configuration Manager 콘솔에서 Windows PowerShell에 연결하는 경우 다음 오류가 발생할 수 있습니다. **Microsoft.ConfigurationManagement.PowerShell.Types.ps1xml이 디지털 서명되어 있지 않습니다**.  
+- ***PowerShell:*** Configuration Manager 콘솔에서 Windows PowerShell에 연결할 때 다음 오류가 발생할 수 있습니다. **Microsoft.ConfigurationManagement.PowerShell.Types.ps1xml is not digitally signed**.  
 
-   특정 파일을 버전 1610의 서명된 버전으로 대체하여 이 문제를 해결할 수 있습니다. 버전 1610 설치의 **&lt;설치 디렉터리>\AdminConsole\bin\** 폴더에서 확장명이 **.psd1**, **.ps1xml** 및 **.psm1**인 파일을 모두 복사합니다. Technical Preview 1611 설치의 **&lt;설치 디렉터리>\AdminConsole\bin\** 폴더에 이 파일을 붙여넣어 1611 버전의 파일을 덮어씁니다.
+   특정 파일을 버전 1610의 서명된 버전으로 대체하여 이 문제를 해결할 수 있습니다. 버전 1610 설치의 **&lt;install directory>\AdminConsole\bin\\** 폴더에서 확장명이 **.psd1**, **.ps1xml** 및 **.psm1**인 파일을 모두 복사합니다. Technical Preview 1611 설치의 **&lt;install directory>\AdminConsole\bin\\** 폴더에 이러한 파일을 붙여넣어 1611 버전의 파일을 덮어씁니다.
 
 
 **다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.**  

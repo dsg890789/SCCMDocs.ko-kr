@@ -9,12 +9,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 robots: noindex,nofollow
-ms.openlocfilehash: b9602d6641e1bb28a3af7c24c64073ba019e0f3e
-ms.sourcegitcommit: 6126dfdf5c879db7d12c3eec019a88fa44521361
+ms.openlocfilehash: a71aa0834a241332d3390e1d888d99b6e3f986f7
+ms.sourcegitcommit: d36e4c7082a5144e79035dd8847c8e741fa04667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830509"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53444572"
 ---
 <!-- 
 - Feature 1357546
@@ -36,7 +36,7 @@ ms.locfileid: "52830509"
 ## <a name="recommended"></a>권장 
 수동으로 큐레이팅된 중요한 문서 목록입니다.
 
-- [Windows 10 장치에 대한 공동 관리](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)  
+- [Windows 10 디바이스에 대한 공동 관리](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)  
 - [CMPivot](https://docs.microsoft.com/sccm/core/servers/manage/cmpivot)  
 - [PowerShell 스크립트 만들기 및 실행](https://docs.microsoft.com/sccm/apps/deploy-use/create-deploy-scripts)  
 - [단계별 배포](https://docs.microsoft.com/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence)  
@@ -62,8 +62,8 @@ ms.locfileid: "52830509"
  | 7104 | [Windows 10에 대한 지원](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10) | 
  | 6957 | [콘솔 설치](https://docs.microsoft.com/sccm/core/servers/deploy/install/install-consoles) | 
  | 6765 | [클라이언트 설치 매개 변수 및 속성](https://docs.microsoft.com/sccm/core/clients/deploy/about-client-installation-properties) | 
- | 6091 | [Windows 10 장치에 대한 공동 관리](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview) | 
- | 6043 | [응용 프로그램 배포](https://docs.microsoft.com/sccm/apps/deploy-use/deploy-applications) | 
+ | 6091 | [Windows 10 디바이스에 대한 공동 관리](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview) | 
+ | 6043 | [애플리케이션 배포](https://docs.microsoft.com/sccm/apps/deploy-use/deploy-applications) | 
  | 5833 | [배포 지점 관리](https://docs.microsoft.com/sccm/core/servers/deploy/configure/install-and-configure-distribution-points) | 
 
 
@@ -89,12 +89,12 @@ ms.locfileid: "52830509"
 ## <a name="troubleshooting-articles"></a>문제 해결 문서
 Configuration Manager 구성 요소 및 기능의 문제 해결을 지원하기 위한 안내 방식 연습입니다.
 
-- [PXE 부팅 문제 해결](https://support.microsoft.com/help/10082)
+- [PXE 부팅 문제 해결](https://support.microsoft.com/help/4468612)
 - [소프트웨어 업데이트 동기화 문제 해결](https://support.microsoft.com/help/10059)
 - [콘텐츠 배포 이해 및 문제 해결](https://support.microsoft.com/help/4000401)
 - [비즈니스용 Microsoft Store 통합 이해 및 문제 해결](https://support.microsoft.com/help/4010214)
 - [소프트웨어 업데이트 관리 문제 해결](https://support.microsoft.com/help/10680)
-- [응용 프로그램 설치 작업 순서 단계 문제 해결](https://support.microsoft.com/help/18408/)
+- [애플리케이션 설치 작업 순서 단계 문제 해결](https://support.microsoft.com/help/18408/)
 
 
 
@@ -102,11 +102,11 @@ Configuration Manager 구성 요소 및 기능의 문제 해결을 지원하기 
 2018년 11월에 새로 제공되거나 업데이트된 지원 문서입니다.
 
 - [KB 4468362: Configuration Manager에서 Windows 언어 팩을 애플리케이션으로 배포하는 방법](https://support.microsoft.com/help/4468362)
-- [KB 4469580: 자체 서명된 인증서는 만들어지지 않으므로 ConfigMgr PXE는 작동하지 않음](https://support.microsoft.com/help/4469580/)
+- [KB 4469580: 자체 서명된 인증서는 만들어지지 않으므로 ConfigMgr PXE가 작동하지 않음](https://support.microsoft.com/help/4469580/)
 - [KB 4471003: 다른 네트워크에 있는 PXE 서버에서 부팅하는 방법](https://support.microsoft.com/help/4471003)
-- [KB 4462978: System Center Configuration Manager 현재 분기, 버전 1806의 업데이트 롤업](https://support.microsoft.com/help/4462978)
-- [KB 4471061: 클라이언트 컴퓨터는 이미징하는 동안 알 수 없는 컴퓨터 개체의 Configuration Manager GUID를 "도용"할 수 있음](https://support.microsoft.com/help/4471061)
-- [KB 4471115: Configuration Manager의 동적 미디어는 작업 순서 마법사가 Windows PE에서 실행되는 경우 관리 지점 위치를 가져올 수 없음](https://support.microsoft.com/help/4471115)
+- [KB 4462978: System Center Configuration Manager 현재 분기, 버전 1806에 대한 업데이트 롤업](https://support.microsoft.com/help/4462978)
+- [KB 4471061: 클라이언트 컴퓨터에서 이미징하는 동안 알 수 없는 컴퓨터 개체의 Configuration Manager GUID를 "도용"할 수 있음](https://support.microsoft.com/help/4471061)
+- [KB 4471115: 작업 순서 마법사가 Windows PE에서 실행되면 Configuration Manager의 동적 미디어에서 관리 지점 위치를 가져올 수 없음](https://support.microsoft.com/help/4471115)
 
 
 새로운 Configuration Manager 지원 문서의 Atom 또는 RSS 알림을 구독하려면 [지원 콘텐츠 업데이트](https://support.microsoft.com/help/4089498/)를 참조하고 **System Center Configuration Manager**를 선택하세요.  

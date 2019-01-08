@@ -10,12 +10,12 @@ ms.assetid: 58d52fdc-bd18-494d-9f3b-ccfc13ea3d35
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0cb94f8d14ff525687909290085e16ecd47fa39f
-ms.sourcegitcommit: 22257e35a7d7263939a6802602050190897412a8
+ms.openlocfilehash: cf5b55dddae34ac855f21e7d70967d3b9ab1c2dc
+ms.sourcegitcommit: 81e3666c41eb976cc7651854042dafe219e2e467
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51562051"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53747163"
 ---
 # <a name="prepare-to-use-sql-server-always-on-availability-groups-with-configuration-manager"></a>Configuration Manager에서 SQL Server Always On 가용성 그룹 사용 준비
 
@@ -24,12 +24,12 @@ ms.locfileid: "51562051"
 이 문서에서는 Configuration Manager에서 SQL Server Always On 가용성 그룹을 사용할 준비를 합니다. 이 기능은 사이트 데이터베이스에 대한 고가용성 및 재해 복구 솔루션을 제공합니다.  
 
 Configuration Manager에서는 다음의 가용성 그룹 사용을 지원합니다.
--     기본 사이트 및 중앙 관리 사이트에서
--     온-프레미스 또는 Microsoft Azure에서
+- 기본 사이트 및 중앙 관리 사이트에서
+- 온-프레미스 또는 Microsoft Azure에서
 
 Microsoft Azure에서 가용성 그룹을 사용할 경우 *Azure 가용성 집합*을 사용하여 사이트 데이터베이스의 가용성을 더 늘릴 수 있습니다. Azure 가용성 집합에 대한 자세한 내용은 [가상 컴퓨터의 가용성 관리](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-manage-availability/)를 참조하세요.
 
->  [!Important]   
+> [!Important]
 >  계속하기 전에 SQL Server 및 SQL Server 가용성 그룹의 구성 방법을 숙지하세요. 다음에 나오는 정보는 SQL Server 설명서 라이브러리 및 절차를 참조합니다.
 
 
@@ -38,12 +38,12 @@ Microsoft Azure에서 가용성 그룹을 사용할 경우 *Azure 가용성 집�
 
 Configuration Manager에서의 가용성 그룹 사용을 위해 다음 시나리오가 지원됩니다. 각 시나리오에 대한 추가 정보 및 절차를 알려면 [Configuration Manager에 대한 가용성 그룹 구성](/sccm/core/servers/deploy/configure/configure-aoag)을 참조하세요.
 
--      [Configuration Manager에서 사용하기 위해 가용성 그룹 만들기](/sccm/core/servers/deploy/configure/configure-aoag#create-and-configure-an-availability-group)  
--     [가용성 그룹을 사용하도록 사이트 구성](/sccm/core/servers/deploy/configure/configure-aoag#configure-a-site-to-use-the-database-in-the-availability-group)  
--     [사이트 데이터베이스를 호스트하는 가용성 그룹에서 동기 복제 구성원 추가 또는 제거](/sccm/core/servers/deploy/configure/configure-aoag#add-and-remove-synchronous-replica-members)  
--     [비동기 커밋 복제본 구성](/sccm/core/servers/deploy/configure/configure-aoag#configure-an-asynchronous-commit-repilca)  
--     [비동기 커밋 복제본에서 사이트 복구](/sccm/core/servers/deploy/configure/configure-aoag#use-the-asynchronous-replica-to-recover-your-site)  
--     [독립 실행형 SQL Server의 기본 또는 명명된 인스턴스로 가용성 그룹의 사이트 데이터베이스 이동](/sccm/core/servers/deploy/configure/configure-aoag#stop-using-an-availability-group)  
+- [Configuration Manager에서 사용하기 위해 가용성 그룹 만들기](/sccm/core/servers/deploy/configure/configure-aoag#create-and-configure-an-availability-group)  
+- [가용성 그룹을 사용하도록 사이트 구성](/sccm/core/servers/deploy/configure/configure-aoag#configure-a-site-to-use-the-database-in-the-availability-group)  
+- [사이트 데이터베이스를 호스트하는 가용성 그룹에서 동기 복제 구성원 추가 또는 제거](/sccm/core/servers/deploy/configure/configure-aoag#add-and-remove-synchronous-replica-members)  
+- [비동기 커밋 복제본 구성](/sccm/core/servers/deploy/configure/configure-aoag#configure-an-asynchronous-commit-repilca)  
+- [비동기 커밋 복제본에서 사이트 복구](/sccm/core/servers/deploy/configure/configure-aoag#use-the-asynchronous-replica-to-recover-your-site)  
+- [독립 실행형 SQL Server의 기본 또는 명명된 인스턴스로 가용성 그룹의 사이트 데이터베이스 이동](/sccm/core/servers/deploy/configure/configure-aoag#stop-using-an-availability-group)  
 
 
 
@@ -95,16 +95,16 @@ Configuration Manager에서는 비동기 커밋 복제본의 상태를 확인하
 
 - ‘기본 인스턴스’나 ‘명명된 인스턴스’를 사용합니다.  
 
-- **주 역할의 연결** 설정은 **예**입니다.  
+- **주 역할의 연결** 설정은 **모든 연결 허용**입니다.  
 
 - **읽을 수 있는 보조** 설정은 **예**입니다.  
 
 - **수동 장애 조치**가 설정되어 있습니다.     
 
-    >  [!TIP]  
-    >  Configuration Manager에서는 **자동 장애 조치**로 설정된 가용성 그룹 동기 복제본을 사용할 수 있습니다. 다음의 경우 **수동 장애 조치**를 설정합니다.
-    >  -  Configuration Manager 설치 프로그램을 실행하여 가용성 그룹의 사이트 데이터베이스 사용을 지정합니다.  
-    >  -  Configuration Manager에 대한 업데이트를 설치합니다. (사이트 데이터베이스에 적용되는 업데이트뿐만 아님)  
+  > [!TIP]
+  >  Configuration Manager에서는 **자동 장애 조치**로 설정된 가용성 그룹 동기 복제본을 사용할 수 있습니다. 다음의 경우 **수동 장애 조치**를 설정합니다.
+  >  -  Configuration Manager 설치 프로그램을 실행하여 가용성 그룹의 사이트 데이터베이스 사용을 지정합니다.  
+  >  -  Configuration Manager에 대한 업데이트를 설치합니다. (사이트 데이터베이스에 적용되는 업데이트뿐만 아님)  
 
 #### <a name="replica-member-location"></a>복제 구성원 위치
 가용성 그룹의 모든 복제본은 온-프레미스에 호스트하거나 Microsoft Azure에 호스트합니다. 온-프레미스 구성원 및 Azure의 구성원을 포함하는 그룹은 지원되지 않습니다.     
@@ -145,7 +145,7 @@ Configuration Manager 설치 프로그램을 사용하여 가용성 그룹에서
 
 - 보조 복제본 서버를 둘 다 이전 버전에서 SQL Server 2014로 업그레이드했습니다. 이 업그레이드로 인해 이 서버는 데이터베이스 파일을 저장할 원본 파일 경로 `C:\Program Files\Microsoft SQL Server\MSSQL10.MSSQLSERVER\MSSQL\DATA`를 유지합니다.  
 
-- 사이트 데이터베이스를 가용성 그룹으로 이동하려면 먼저 각 보조 복제본 서버에서 파일 경로 `C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA`를 만듭니다. 이 경로는 보조 복제본이 이 파일 위치를 사용하지 않더라도 주 복제본에서 사용 중인 경로와 중복됩니다.  
+- 사이트 데이터베이스를 가용성 그룹으로 이동하기 전에 각 보조 복제본 서버에서 `C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA` 파일 경로를 만듭니다. 이 경로는 보조 복제본이 이 파일 위치를 사용하지 않더라도 주 복제본에서 사용 중인 경로와 중복됩니다.  
 
 - 그런 후 각 보조 복제본의 SQL Server 서비스 계정에 해당 서버에서 새로 생성된 파일 위치에 대한 모든 권한을 부여합니다.  
 
@@ -239,11 +239,11 @@ Configuration Manager 설치 프로그램을 사용하여 가용성 그룹에서
 
 #### <a name="unsupported-sql-server-options-and-configurations"></a>지원되지 않는 SQL Server 옵션 및 구성
 
-- **기본 가용성 그룹**: SQL Server 2016 Standard Edition에 도입된 기본 가용성 그룹은 보조 복제본에 대한 읽기 권한을 지원하지 않습니다. 구성하려면 이 액세스가 필요합니다. 자세한 내용은 [기본 SQL Server 가용성 그룹](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/basic-availability-groups-always-on-availability-groups?view=sql-server-2017)을 참조하세요.  
+- **기본 가용성 그룹**: SQL Server 2016 Standard 버전에 도입된 기본 가용성 그룹은 보조 복제본에 대한 읽기 권한을 지원하지 않습니다. 구성하려면 이 액세스가 필요합니다. 자세한 내용은 [기본 SQL Server 가용성 그룹](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/basic-availability-groups-always-on-availability-groups?view=sql-server-2017)을 참조하세요.  
 
 - **장애 조치 클러스터 인스턴스**: 장애 조치 클러스터 인스턴스는 Configuration Manager에서 사용하는 복제본에 지원되지 않습니다. 자세한 내용은 [Always On 장애 조치(failover) 클러스터 인스턴스(SQL Server)](https://docs.microsoft.com/sql/sql-server/failover-clusters/windows/always-on-failover-cluster-instances-sql-server)를 참조하세요.  
 
-- **MultiSubnetFailover**: 다중 서브넷 구성에서 Configuration Manager에 가용성 그룹을 사용하는 것은 지원되지 않습니다. [MutliSubnetFailover](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/create-or-configure-an-availability-group-listener-sql-server#MultiSubnetFailover) 키워드 연결 문자열도 사용할 수 없습니다.  
+- **MultiSubnetFailover**: 다중 서브넷 구성에서 가용성 그룹을 Configuration Manager에 사용하는 것은 지원되지 않습니다. [MutliSubnetFailover](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/create-or-configure-an-availability-group-listener-sql-server#MultiSubnetFailover) 키워드 연결 문자열도 사용할 수 없습니다.  
 
 #### <a name="sql-servers-that-host-additional-availability-groups"></a>추가 가용성 그룹을 호스트하는 SQL Server
 <!--SCCMDocs issue 649--> SQL Server에서 Configuration Manager에 사용하는 그룹 외에도 하나 이상의 가용성 그룹을 호스트하는 경우 Configuration Manager 설치 프로그램을 실행할 때 특정 설정을 수행해야 합니다. 이 설정은 Configuration Manager에 대한 업데이트를 설치하는 데에도 필요합니다. 각 가용성 그룹의 각 복제본에는 다음 항목이 구성되어 있어야 합니다.
@@ -253,7 +253,7 @@ Configuration Manager 설치 프로그램을 사용하여 가용성 그룹에서
 
 #### <a name="unsupported-database-use"></a>지원되지 않는 데이터베이스 사용
 
-- **Configuration Manager는 가용성 그룹에서 사이트 데이터베이스만 지원함:** 다음 데이터베이스에는 SQL Server Always On 가용성 그룹의 Configuration Manager에서 지원하지 않습니다.  
+- **Configuration Manager에서 가용성 그룹의 사이트 데이터베이스만 지원:** SQL Server Always On 가용성 그룹의 Configuration Manager에서 지원되지 않는 데이터베이스는 다음과 같습니다.  
     - 보고 데이터베이스  
     - WSUS 데이터베이스  
 

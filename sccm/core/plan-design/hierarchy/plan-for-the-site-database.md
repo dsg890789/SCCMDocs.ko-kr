@@ -10,12 +10,12 @@ ms.assetid: 104fb4cc-6e83-40a3-8e6b-ac909fb9ec7d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f2dbdb4702a1deac4ae130e89c501e3d122f1b49
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: cee5a57b708e94d7443efeb517249c44c1323cb4
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32333344"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53417934"
 ---
 # <a name="plan-for-the-site-database-for-system-center-configuration-manager"></a>System Center Configuration Manager용 사이트 데이터베이스에 대한 계획
 
@@ -31,7 +31,7 @@ ms.locfileid: "32333344"
 
 -  비SQL 가용성 그룹 사용의 경우 데이터베이스 복구 모델을 SIMPLE로 설정해야 합니다.  
 
-SQL 복구 모드에 대한 자세한 내용은 [복구 모델(SQL Server)]에 있습니다(https://docs.microsoft.com/sql/relational-databases/backup-restore/recovery-models-sql-server).
+SQL 복구 모드에 대한 자세한 내용은 [복구 모델(SQL Server)](https://docs.microsoft.com/sql/relational-databases/backup-restore/recovery-models-sql-server)에 있습니다.
 
 사이트 데이터베이스를 호스트하는 데 다음 SQL Server 구성을 사용할 수 있습니다.  
 

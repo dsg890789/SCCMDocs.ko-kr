@@ -10,12 +10,12 @@ ms.assetid: 8b31fd3e-875a-4a31-9498-5b050aadce32
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0798deff2f4904cb1cecac79251e7bc0688e0d4e
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: d0d1e646795bb778e185d49f5de0796f486d2a08
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32337057"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53419566"
 ---
 # <a name="capabilities-in-technical-preview-1610-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1610의 기능
 
@@ -63,26 +63,26 @@ ms.locfileid: "32337057"
 1.  Configuration Manager 콘솔에서 승인이 필요한 [애플리케이션을 만들고 배포합니다](https://docs.microsoft.com/sccm/apps/deploy-use/create-applications).
 2.  클라이언트 컴퓨터에서 소프트웨어 센터를 열고 애플리케이션에 대한 요청을 제출합니다.
 3.  Configuration Manager 콘솔에서 애플리케이션 요청을 승인합니다.
-4.  승인된 애플리케이션 요청 거부: Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **개요** > **애플리케이션 관리** > **승인 요청**으로 이동한 다음 거부할 애플리케이션 요청을 선택합니다.  리본에서 **거부**를 클릭합니다.
+4.  승인된 애플리케이션 요청 거부: Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **개요** > **애플리케이션 관리** > **승인 요청**으로 이동한 다음, 거부하려는 애플리케이션 요청을 선택합니다.  리본에서 **거부**를 클릭합니다.
 
 ## <a name="exclude-clients-from-automatic-upgrade"></a>자동 업그레이드에서 클라이언트 제외
 Technical Preview 1610에는 업데이트된 클라이언트 버전을 자동으로 설치하지 않도록 제외할 클라이언트 컬렉션을 지정할 수 있는 설정이 새로 추가되었습니다.  이 설정은 자동 업그레이드 및 소프트웨어 업데이트 기반 업그레이드, 로그온 스크립트 및 그룹 정책 등에 적용됩니다. 클라이언트를 업그레이드할 때 주의가 필요한 컴퓨터 컬렉션에 이 설정을 사용할 수 있습니다. 제외된 컬렉션에 있는 클라이언트는 업데이트된 클라이언트 소프트웨어 설치 요청을 무시합니다.
 
 ### <a name="configure-exclusion-from-automatic-upgrade"></a>자동 업그레이드 작업의 제외 구성
 자동 업그레이드 제외를 구성하려면:
-1.  Configuration Manager 콘솔에서 **관리 > 사이트 구성 > 사이트** 아래의 **계층 설정**을 열고 **클라이언트 업그레이드** 탭을 선택합니다.
-2.  **Exclude specified clients from upgrade**(지정된 클라이언트를 업그레이드에서 제외)의 확인란을 선택하고 **Exclusion collection**(제외 컬렉션)에서 제외할 컬렉션을 선택합니다. 제외할 컬렉션은 하나만 선택할 수 있습니다.
-3.  **확인**을 클릭하여 구성을 닫고 저장합니다. 그러면 클라이언트가 정책을 업데이트한 후 제외된 컬렉션의 클라이언트가 클라이언트 소프트웨어에 대한 업데이트를 더 이상 자동으로 설치하지 않습니다.
+1. Configuration Manager 콘솔에서 **관리 > 사이트 구성 > 사이트** 아래의 **계층 설정**을 열고 **클라이언트 업그레이드** 탭을 선택합니다.
+2. **Exclude specified clients from upgrade**(지정된 클라이언트를 업그레이드에서 제외)의 확인란을 선택하고 **Exclusion collection**(제외 컬렉션)에서 제외할 컬렉션을 선택합니다. 제외할 컬렉션은 하나만 선택할 수 있습니다.
+3. **확인**을 클릭하여 구성을 닫고 저장합니다. 그러면 클라이언트가 정책을 업데이트한 후 제외된 컬렉션의 클라이언트가 클라이언트 소프트웨어에 대한 업데이트를 더 이상 자동으로 설치하지 않습니다.
 
-  ![자동 업그레이드 제외에 대한 설정](media/automatic_upgrade_exclusion.png)
+   ![자동 업그레이드 제외에 대한 설정](media/automatic_upgrade_exclusion.png)
 
 > [!NOTE]
 > 사용자 인터페이스에는 어떠한 방법으로도 클라이언트가 업그레이드되지 않는다고 명시되어 있지만 두 가지 방법을 통해 이러한 설정을 재정의할 수 있습니다. 클라이언트 강제 설치 및 수동 클라이언트 설치를 사용하여 이 구성을 재정의할 수 있습니다. 자세한 내용은 다음 섹션을 참조하세요.
 
 ### <a name="how-to-upgrade-a-client-that-is-in-an-excluded-collection"></a>제외된 컬렉션에 있는 클라이언트를 업그레이드하는 방법
 컬렉션이 제외되도록 구성하면 해당 컬렉션의 멤버가 다음 두 가지 방법 중 하나를 사용하여 제외를 재정의해야만 클라이언트 소프트웨어를 업그레이드할 수 있습니다.
- - **클라이언트 강제 설치** – 클라이언트 강제 설치를 사용하여 제외된 컬렉션에 있는 클라이언트를 업그레이드할 수 있습니다. 이 방법은 관리자의 의도인 것으로 간주되고 전체 컬렉션을 제외에서 제거하지 않고 클라이언트를 업그레이드할 수 있습니다.       
- - **수동 클라이언트 설치** – ccmsetup과 명령줄 스위치 ***/ignoreskipupgrade***를 함께 사용하면 제외된 컬렉션에 있는 클라이언트를 수동으로 업그레이드할 수 있습니다.
+- **클라이언트 강제 설치** – 클라이언트 강제 설치를 사용하여 제외된 컬렉션에 있는 클라이언트를 업그레이드할 수 있습니다. 이 방법은 관리자의 의도인 것으로 간주되고 전체 컬렉션을 제외에서 제거하지 않고 클라이언트를 업그레이드할 수 있습니다.       
+- **수동 클라이언트 설치** – ccmsetup과 명령줄 스위치 ***/ignoreskipupgrade***를 함께 사용하면 제외된 컬렉션에 있는 클라이언트를 수동으로 업그레이드할 수 있습니다.
 
   제외된 컬렉션의 멤버인 클라이언트를 수동으로 업그레이드할 때 이 스위치를 사용하지 않으면 새 클라이언트 소프트웨어가 설치되지 않습니다. 자세한 내용은 [Configuration Manager 클라이언트를 수동으로 설치하는 방법](/sccm/core/clients/deploy/deploy-clients-to-windows-computers#a-namebkmkmanuala-how-to-install-configuration-manager-clients-manually)을 참조하세요.
 
@@ -142,10 +142,10 @@ Technical Preview 1610에는 업데이트된 클라이언트 버전을 자동으
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 
-1.  Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > 장치로 이동합니다.
-2.  **원격 장치 작업** 메뉴에서 **동기화 요청 보내기**를 선택합니다.
+1.  Configuration Manager 콘솔에서 **자산 및 준수** > **개요** &gt; 디바이스로 이동합니다.
+2.  **원격 디바이스 작업** 메뉴에서 **동기화 요청 보내기**를 선택합니다.
 
-동기화는 5~10분 정도 걸릴 수 있습니다. 정책의 모든 변경 내용이 디바이스에 동기화됩니다. **장치** 보기의 **원격 동기화 상태** 열이나 장치의 **속성** 대화 상자에서 동기화 요청 상태를 추적할 수 있습니다.
+동기화는 5~10분 정도 걸릴 수 있습니다. 정책의 모든 변경 내용이 디바이스에 동기화됩니다. **디바이스** 보기의 **원격 동기화 상태** 열이나 디바이스의 **속성** 대화 상자에서 동기화 요청 상태를 추적할 수 있습니다.
 
 ## <a name="additional-security-role-support"></a>추가 보안 역할 지원
 

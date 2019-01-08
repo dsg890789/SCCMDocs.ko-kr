@@ -10,12 +10,12 @@ ms.assetid: 44153689-70e8-42ad-9ae8-17ae35f6a2e3
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 7251ac6bf623236492f0843b8562a06e547c9cb1
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: d9d9fd940c21e0fc8d20c86c51cb3443f21a9339
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32343687"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53419451"
 ---
 # <a name="planning-for-client-deployment-to-linux-and-unix-computers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Linux 및 UNIX 컴퓨터에 클라이언트 배포 계획
 
@@ -23,19 +23,19 @@ ms.locfileid: "32343687"
 
 Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manager 클라이언트를 설치할 수 있습니다. 이 클라이언트는 작업 그룹 컴퓨터로 작동하는 서버를 위해 설계되었으며 로그온한 사용자와의 상호 작용은 지원하지 않습니다. 클라이언트 소프트웨어를 설치하고 클라이언트가 Configuration Manager 사이트와의 통신을 설정한 후 Configuration Manager 콘솔 및 보고서를 사용하여 클라이언트를 관리합니다.  
 
-> [!NOTE]  
+> [!NOTE]
 >  Linux 및 UNIX 컴퓨터용 System Center Configuration Manager 클라이언트는 다음 관리 기능을 지원하지 않습니다.  
->   
->  -   클라이언트 강제 설치  
-> -   운영 체제 배포  
-> -   애플리케이션 배포(대신, 패키지 및 프로그램을 사용한 소프트웨어 배포)  
-> -   소프트웨어 인벤토리  
-> -   소프트웨어 업데이트  
-> -   호환성 설정  
-> -   원격 제어  
-> -   전원 관리  
-> -   클라이언트 상태 클라이언트 검사 및 재구성  
-> -   인터넷 기반 클라이언트 관리  
+> 
+> - 클라이언트 강제 설치  
+>   -   운영 체제 배포  
+>   -   애플리케이션 배포(대신, 패키지 및 프로그램을 사용한 소프트웨어 배포)  
+>   -   소프트웨어 인벤토리  
+>   -   소프트웨어 업데이트  
+>   -   호환성 설정  
+>   -   원격 제어  
+>   -   전원 관리  
+>   -   클라이언트 상태 클라이언트 검사 및 재구성  
+>   -   인터넷 기반 클라이언트 관리  
 
  지원되는 Linux 및 UNIX 배포와, Linux 및 UNIX의 클라이언트를 지원하는 데 필요한 하드웨어에 대한 자세한 내용은 [System Center Configuration Manager에 권장되는 하드웨어](../../../../core/plan-design/configs/recommended-hardware.md)를 참조하세요.  
 
@@ -178,7 +178,7 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manag
 |SysMgmtMin.openssl|OpenSSL Libraries, 보안 네트워크 통신 프로토콜|A.00.09.08d.002|  
 |PAM|플러그 가능 인증 모듈|HP-UX에서 PAM은 핵심 운영 체제 구성 요소의 일부입니다. 다른 종속 파일은 없습니다.|  
 
- **Configuration Manager 종속성:** 다음 표에는 Linux 및 UNIX 클라이언트를 지원하는 사이트 시스템 역할이 나열되어 있습니다. 이러한 사이트 시스템 역할에 대한 자세한 내용은 [System Center Configuration Manager 클라이언트에 대한 사이트 시스템 역할 결정](../../../../core/clients/deploy/plan/determine-the-site-system-roles-for-clients.md)을 참조하세요.  
+ **Configuration Manager 종속성:** 다음 테이블에는 Linux 및 UNIX 클라이언트를 지 원하는 사이트 시스템 역할이 나열됩니다. 이러한 사이트 시스템 역할에 대한 자세한 내용은 [System Center Configuration Manager 클라이언트에 대한 사이트 시스템 역할 결정](../../../../core/clients/deploy/plan/determine-the-site-system-roles-for-clients.md)을 참조하세요.  
 
 |Configuration Manager 사이트 시스템|추가 정보|  
 |---------------------------------------|----------------------|  
@@ -186,12 +186,12 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manag
 |배포 지점|배포 지점은 Linux 및 UNIX용 Configuration Manager 클라이언트 설치에 필요하지 않습니다. 그러나 사이트 시스템 역할은 Linux 및 UNIX 서버에 소프트웨어를 배포 하는 경우 필요 합니다.<br /><br /> Linux 및 UNIX용 Configuration Manager 클라이언트는 SMB를 사용하는 통신을 지원하지 않으므로 클라이언트와 함께 사용하는 배포 지점에서 HTTP 또는 HTTPS 통신을 지원해야 합니다.|  
 |대체 상태 지점|Linux 및 UNIX용 Configuration Manager 클라이언트를 설치하기 위해 대체 상태 지점은 필요하지 않습니다. 그러나 대체 상태 지점을 사용하면 Configuration Manager 사이트의 컴퓨터에서 관리 지점과 통신할 수 없는 경우에 대체 상태 지점을 통해 상태 메시지를 보낼 수 있습니다. 또한 클라이언트는 대체 상태 지점에 해당 설치 상태를 보낼 수 있습니다.|  
 
- **방화벽 요구 사항**: 방화벽에서 클라이언트 요청 포트를 지정 하는 포트 통신을 차단 하지 않습니다 확인 합니다. Linux 및 UNIX용 클라이언트는 관리 지점, 배포 지점 및 대체 상태 지점과 직접 통신합니다.  
+ **방화벽 요구 사항**: 방화벽에서 클라이언트 요청 포트를 지정하는 포트를 통한 통신을 차단하지 않아야 합니다. Linux 및 UNIX용 클라이언트는 관리 지점, 배포 지점 및 대체 상태 지점과 직접 통신합니다.  
 
  클라이언트 통신 및 요청 포트에 대한 자세한 내용은 [관리 지점을 찾도록 Linux 및 UNIX용 클라이언트 구성](../../../../core/clients/deploy/deploy-clients-to-unix-and-linux-servers.md#BKMK_ConfigClientMP)을 참조하세요.  
 
 ##  <a name="BKMK_PlanningforCommunicationsforLnU"></a> Linux 및 UNIX 서버에 대한 포리스트 트러스트 간 통신 계획  
- Configuration Manager를 사용하여 관리하는 Linux 및 UNIX 서버는 작업 그룹 클라이언트로 작동하며 작업 그룹에 속한 Windows 기반 클라이언트와 유사한 구성이 필요합니다. 작업 그룹에 있는 컴퓨터의 통신에 대한 자세한 내용은 [System Center Configuration Manager에서 끝점 간의 통신](../../../../core/plan-design/hierarchy/communications-between-endpoints.md) 항목의[Active Directory 포리스트 간 통신](../../../../core/plan-design/hierarchy/communications-between-endpoints.md#Plan_Com_X-Forest)을 참조하세요.  
+ Configuration Manager를 사용하여 관리하는 Linux 및 UNIX 서버는 작업 그룹 클라이언트로 작동하며 작업 그룹에 속한 Windows 기반 클라이언트와 유사한 구성이 필요합니다. 작업 그룹에 있는 컴퓨터의 통신에 대한 자세한 내용은 은 [System Center Configuration Manager에서 엔드포인트 간의 통신](../../../../core/plan-design/hierarchy/communications-between-endpoints.md) 항목에서 [Active Directory 포리스트 간 통신](../../../../core/plan-design/hierarchy/communications-between-endpoints.md#Plan_Com_X-Forest) 섹션을 참조하세요.  
 
 ###  <a name="BKMK_ServiceLocationforLnU"></a> Linux 및 UNIX용 클라이언트에서 서비스 위치  
  클라이언트에 서비스를 제공 하는 사이트 시스템 서버를 찾는 작업은 서비스 위치 라고 합니다. Windows 기반 클라이언트와 달리 Linux 및 UNIX 용 클라이언트 서비스 위치에 대 한 Active Directory 사용 하지 않습니다. 또한 Linux 및 UNIX용 Configuration Manager 클라이언트는 관리 지점의 도메인 접미사를 지정하는 클라이언트 속성을 지원하지 않습니다. 대신, 클라이언트는 클라이언트 소프트웨어를 설치할 때 할당 된 알려진된 관리 지점에서 클라이언트에 서비스를 제공 하는 추가 사이트 시스템 서버에 대 한 알아냅니다.  

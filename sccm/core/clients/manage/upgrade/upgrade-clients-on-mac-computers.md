@@ -10,12 +10,12 @@ ms.assetid: 74c60941-5eae-4905-9e58-252bdb39df96
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: fb0ef52bc3359e1b31b2e2237a87e58bf671bcb7
-ms.sourcegitcommit: 4b8afbd08ecf8fd54950eeb630caf191d3aa4767
+ms.openlocfilehash: 37471367e95c6f0edc1d33b951776673037d845c
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36260839"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53416393"
 ---
 # <a name="how-to-upgrade-clients-on-mac-computers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Mac 컴퓨터의 클라이언트를 업그레이드하는 방법
 
@@ -39,19 +39,19 @@ System Center Configuration Manager 애플리케이션을 사용하여 Mac 컴�
 
 ## <a name="step-4-create-a-cmmac-file-that-can-be-used-to-create-an-application"></a>4단계: 애플리케이션을 만드는 데 사용할 수 있는 .cmmac 파일 만들기  
 
-1.  Mac 클라이언트 설치 파일의 **Tools** 폴더에 있는 **CMAppUtil** 도구를 사용하여 클라이언트 설치 패키지로부터 .cmmac 파일을 만듭니다. 이 파일은 Configuration Manager 애플리케이션을 만드는 데 사용됩니다.  
+1. Mac 클라이언트 설치 파일의 **Tools** 폴더에 있는 **CMAppUtil** 도구를 사용하여 클라이언트 설치 패키지로부터 .cmmac 파일을 만듭니다. 이 파일은 Configuration Manager 애플리케이션을 만드는 데 사용됩니다.  
 
-2.  Configuration Manager 콘솔을 실행하는 컴퓨터에서 사용할 수 있는 위치로 새 **CMClient.pkg.cmmac** 파일을 복사합니다.  
+2. Configuration Manager 콘솔을 실행하는 컴퓨터에서 사용할 수 있는 위치로 새 **CMClient.pkg.cmmac** 파일을 복사합니다.  
 
- 자세한 내용은 [Mac 컴퓨터용 애플리케이션을 만들어 배포하기 위한 보충 절차](/sccm/apps/get-started/creating-mac-computer-applications#supplemental-procedures-to-create-and-deploy-applications-for-mac-computers)를 참조하세요.  
+   자세한 내용은 [Mac 컴퓨터용 애플리케이션을 만들어 배포하기 위한 보충 절차](/sccm/apps/get-started/creating-mac-computer-applications#supplemental-procedures-to-create-and-deploy-applications-for-mac-computers)를 참조하세요.  
 
-## <a name="step-5-create-and-deploy-an-application-containing-the-mac-client-files"></a>**5단계:** Mac 클라이언트 파일을 포함하는 응용 프로그램을 만들어 배포  
+## <a name="step-5-create-and-deploy-an-application-containing-the-mac-client-files"></a>**5단계:** Mac 클라이언트 파일을 포함하는 애플리케이션을 만들어 배포  
 
-1.  Configuration Manager 콘솔에서 클라이언트 설치 파일이 포함된 **CMClient.pkg.cmmac** 파일에서 애플리케이션을 만듭니다.  
+1. Configuration Manager 콘솔에서 클라이언트 설치 파일이 포함된 **CMClient.pkg.cmmac** 파일에서 애플리케이션을 만듭니다.  
 
-2.  이 애플리케이션을 계층 내의 Mac 컴퓨터에 배포합니다.  
+2. 이 애플리케이션을 계층 내의 Mac 컴퓨터에 배포합니다.  
 
- 자세한 내용은 [System Center Configuration Manager에서 Mac 컴퓨터 애플리케이션 만들기](../../../../apps/get-started/creating-mac-computer-applications.md)를 참조하세요.  
+   자세한 내용은 [System Center Configuration Manager에서 Mac 컴퓨터 애플리케이션 만들기](../../../../apps/get-started/creating-mac-computer-applications.md)를 참조하세요.  
 
 ## <a name="step-6-users-install-the-latest-client"></a>6단계: 사용자가 최신 클라이언트 설치  
  Mac 클라이언트 사용자에게 Configuration Manager 클라이언트의 업데이트를 사용할 수 있으며 설치해야 한다는 메시지가 표시됩니다. 클라이언트를 설치한 사용자는 Mac 컴퓨터를 다시 시작해야 합니다.  
@@ -63,38 +63,38 @@ System Center Configuration Manager 애플리케이션을 사용하여 Mac 컴�
 ##  <a name="BKMK_UpgradingClient_MachineEnrollment"></a> 업그레이드된 클라이언트가 기존 인증서를 사용하도록 구성  
  다음 절차를 실행하여 컴퓨터 등록 마법사가 실행되는 것을 방지하고 업그레이드된 클라이언트가 기존 클라이언트 인증서를 사용하도록 구성합니다.  
 
--   Configuration Manager 콘솔에서 **Mac OS X** 형식의 구성 항목을 만듭니다.  
+- Configuration Manager 콘솔에서 **Mac OS X** 형식의 구성 항목을 만듭니다.  
 
--   설정 유형이 **스크립트**인 설정을 이 구성 항목에 추가합니다.  
+- 설정 유형이 **스크립트**인 설정을 이 구성 항목에 추가합니다.  
 
--   설정에 다음 스크립트를 추가합니다.  
+- 설정에 다음 스크립트를 추가합니다.  
 
-    ```  
-    #!/bin/sh  
-    echo "Starting script\n"  
-    echo "Changing directory to MAC Client\n"  
-    cd /Users/Administrator/Desktop/'MAC Client'/  
-    echo "Import root cert\n"  
-    /usr/bin/sudo /usr/bin/security import /Users/Administrator/Desktop/'MAC Client'/Root.pfx -A -k /Library/Keychains/System.Keychain -P ROOT  
-    echo "Using openssl to convert pfx to a crt\n"  
-    /usr/bin/sudo openssl pkcs12 -in /Users/Administrator/Desktop/'MAC Client'/Root.pfx -out Root1.crt -nokeys -clcerts -passin pass:ROOT  
-    echo "Adding trust to root cert\n"  
-    /usr/bin/sudo /usr/bin/security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.Keychain Root1.crt  
-    echo "Import client cert\n"  
-    /usr/bin/sudo /usr/bin/security import /Users/Administrator/Desktop/'MAC Client'/MacClient.pfx -A -k /Library/Keychains/System.Keychain -P MAC  
-    echo "Executing ccmclient with MP\n"  
-    sudo ./ccmsetup -MP https://SCCM34387.SCCM34387DOM.NET/omadm/cimhandler.ashx  
-    echo "Editing Plist file\n"  
-    sudo /usr/libexec/Plistbuddy -c 'Add:SubjectName string CMMAC003L' /Library/'Application Support'/Microsoft/CCM/ccmclient.plist  
-    echo "Changing directory to CCM\n"  
-    cd /Library/'Application Support'/Microsoft/CCM/  
-    echo "Making connection to the server\n"  
-    sudo open ./CCMClient  
-    echo "Ending Script\n"  
-    exit  
+  ```  
+  #!/bin/sh  
+  echo "Starting script\n"  
+  echo "Changing directory to MAC Client\n"  
+  cd /Users/Administrator/Desktop/'MAC Client'/  
+  echo "Import root cert\n"  
+  /usr/bin/sudo /usr/bin/security import /Users/Administrator/Desktop/'MAC Client'/Root.pfx -A -k /Library/Keychains/System.Keychain -P ROOT  
+  echo "Using openssl to convert pfx to a crt\n"  
+  /usr/bin/sudo openssl pkcs12 -in /Users/Administrator/Desktop/'MAC Client'/Root.pfx -out Root1.crt -nokeys -clcerts -passin pass:ROOT  
+  echo "Adding trust to root cert\n"  
+  /usr/bin/sudo /usr/bin/security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.Keychain Root1.crt  
+  echo "Import client cert\n"  
+  /usr/bin/sudo /usr/bin/security import /Users/Administrator/Desktop/'MAC Client'/MacClient.pfx -A -k /Library/Keychains/System.Keychain -P MAC  
+  echo "Executing ccmclient with MP\n"  
+  sudo ./ccmsetup -MP https://SCCM34387.SCCM34387DOM.NET/omadm/cimhandler.ashx  
+  echo "Editing Plist file\n"  
+  sudo /usr/libexec/Plistbuddy -c 'Add:SubjectName string CMMAC003L' /Library/'Application Support'/Microsoft/CCM/ccmclient.plist  
+  echo "Changing directory to CCM\n"  
+  cd /Library/'Application Support'/Microsoft/CCM/  
+  echo "Making connection to the server\n"  
+  sudo open ./CCMClient  
+  echo "Ending Script\n"  
+  exit  
 
-    ```  
+  ```  
 
--   구성 기준에 구성 항목을 추가한 후 Configuration Manager와 별도로 인증서를 설치할 모든 Mac 컴퓨터에 해당 구성 기준을 배포합니다.  
+- 구성 기준에 구성 항목을 추가한 후 Configuration Manager와 별도로 인증서를 설치할 모든 Mac 컴퓨터에 해당 구성 기준을 배포합니다.  
 
- Mac 컴퓨터에 대한 구성 항목을 만들고 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager 클라이언트로 관리되는 Mac OS X 디바이스에 대한 구성 항목을 만드는 방법](../../../../compliance/deploy-use/create-configuration-items-for-mac-os-x-devices-managed-with-the-client.md) 및 [System Center Configuration Manager에서 구성 기준을 배포하는 방법](../../../../compliance/deploy-use/deploy-configuration-baselines.md)을 참조하세요.  
+  Mac 컴퓨터에 대한 구성 항목을 만들고 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager 클라이언트로 관리되는 Mac OS X 디바이스에 대한 구성 항목을 만드는 방법](../../../../compliance/deploy-use/create-configuration-items-for-mac-os-x-devices-managed-with-the-client.md) 및 [System Center Configuration Manager에서 구성 기준을 배포하는 방법](../../../../compliance/deploy-use/deploy-configuration-baselines.md)을 참조하세요.  

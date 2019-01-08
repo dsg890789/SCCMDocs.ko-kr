@@ -10,12 +10,12 @@ ms.assetid: f4706a58-1f11-4eab-b1eb-3d1a0da02d0f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 730d14c5985c088d964761bb83043f3a34924486
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: e8f7a8fbdbd52a8f872583cf2237a06ee8c1420e
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32340338"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53414721"
 ---
 # <a name="capabilities-in-technical-preview-1710-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1710의 기능
 
@@ -30,8 +30,8 @@ ms.locfileid: "32340338"
     Workaround details.
 -->
 **이 Technical Preview의 알려진 문제:**
--   **Windows 10 버전 1709(Fall Creators Update라고도 함) 지원**.  이 Windows 릴리스부터 Windows 미디어에는 여러 버전이 포함됩니다. 운영 체제 업그레이드 패키지 또는 운영 체제 이미지를 사용하도록 작업 시퀀스를 구성할 때 [Configuration Manager가 사용할 수 있도록 지원되는 버전](/sccm/core/plan-design/configs/support-for-windows-10#windows-10-as-a-client)을 선택해야 합니다.
--   **수동 모드의 사이트 서버가 있는 경우 새 미리 보기 버전에 대한 업데이트가 실패합니다**. [수동 모드의 기본 사이트 서버](/sccm/core/get-started/capabilities-in-technical-preview-1706#site-server-role-high-availability)가 있는 미리 보기 버전을 실행할 경우 미리 보기 사이트를 이러한 새 미리 보기 버전으로 성공적으로 업데이트하려면 먼저 수동 모드 사이트 서버를 제거해야 합니다. 사이트에서 업데이트를 완료한 후에 수동 모드 사이트 서버를 다시 설치할 수 있습니다.
+- **Windows 10 버전 1709(Fall Creators Update라고도 함) 지원**.  이 Windows 릴리스부터 Windows 미디어에는 여러 버전이 포함됩니다. 운영 체제 업그레이드 패키지 또는 운영 체제 이미지를 사용하도록 작업 시퀀스를 구성할 때 [Configuration Manager가 사용할 수 있도록 지원되는 버전](/sccm/core/plan-design/configs/support-for-windows-10#windows-10-as-a-client)을 선택해야 합니다.
+- **수동 모드의 사이트 서버가 있는 경우 새 미리 보기 버전에 대한 업데이트가 실패합니다**. [수동 모드의 기본 사이트 서버](/sccm/core/get-started/capabilities-in-technical-preview-1706#site-server-role-high-availability)가 있는 미리 보기 버전을 실행할 경우 미리 보기 사이트를 이러한 새 미리 보기 버전으로 성공적으로 업데이트하려면 먼저 수동 모드 사이트 서버를 제거해야 합니다. 사이트에서 업데이트를 완료한 후에 수동 모드 사이트 서버를 다시 설치할 수 있습니다.
 
   수동 모드 사이트 서버를 제거하려면
   1. 콘솔에서 **관리** > **개요** > **사이트 구성** > **서버 및 사이트 시스템 역할**로 이동한 다음 수동 모드 사이트 서버를 선택합니다.
@@ -86,8 +86,7 @@ PowerShell 스크립트 배포는 [Tech Preview 1706](/sccm/core/get-started/cap
 
 
 ## <a name="check-compliance-from-software-center-for-co-managed-devices"></a>소프트웨어 센터에서 공동 관리 디바이스에 대한 준수 확인
-<!-- 1356374 -->
-이 릴리스에서는 Intune에서 조건부 액세스를 관리하는 경우 사용자는 이제 소프트웨어 센터를 사용하여 공동 관리하는 Windows 10 디바이스의 준수 상태를 확인할 수 있습니다. 자세한 내용은 [Windows 10 디바이스의 공동 관리](./capabilities-in-technical-preview-1709.md#co-management-for-windows-10-devices)를 참조하세요.
+<!-- 1356374 --> 이 릴리스에서는 Intune에서 조건부 액세스를 관리하는 경우라도 사용자는 소프트웨어 센터를 사용하여 공동 관리하는 Windows 10 디바이스의 규정 준수 상태를 확인할 수 있습니다. 자세한 내용은 [Windows 10 디바이스의 공동 관리](./capabilities-in-technical-preview-1709.md#co-management-for-windows-10-devices)를 참조하세요.
 
 
 ## <a name="support-for-exploit-guard"></a>Exploit Guard 지원
@@ -112,22 +111,21 @@ Exploit Guard 및 구체적인 구성 요소와 규칙에 대한 자세한 내�
 | 네트워크 보호  |  디바이스에서 [Windows Defender AV 실시간 보호]( https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard) 기능을 사용하도록 설정해야 합니다.  |
 
 ### <a name="create-an-exploit-guard-policy----1355468---"></a>Exploit Guard 정책 만들기 <!--1355468 -->
-1.  Configuration Manager 콘솔에서 **자산 및 준수** > **끝점 보호**로 이동한 다음 **Windows Defender Exploit Guard**를 클릭합니다.
-2.  **홈** 탭의 **만들기** 그룹에서 **악용 정책 만들기**를 클릭합니다.
-3.  **구성 항목 만들기 마법사** 의 **일반**페이지에서 구성 항목에 대한 이름 및 선택적 설명을 지정합니다.
-4.  그런 다음 이 정책으로 관리할 Exploit Guard 구성 요소를 선택합니다. 선택한 각 구성 요소에 대해 추가 세부사항을 구성할 수 있습니다.
-  - **공격 노출 영역 축소:** 차단 또는 감사하려는 Office 위협, 스크립팅 위협 및 메일 위협을 구성합니다. 이 규칙에서 특정 파일 또는 폴더를 제외할 수도 있습니다.
-  - **폴더 액세스 제어:** 차단 또는 감사를 구성한 다음 이 정책을 무시할 수 있는 앱을 추가합니다.  기본적으로 보호되지 않는 추가 폴더도 지정할 수 있습니다.
-  - **악용 방지:** 시스템 프로세스 및 앱의 악용을 완화하기 위한 설정이 포함된 XML 파일을 지정합니다. Windows 10 디바이스의 Windows Defender Security Center 앱에서 이러한 설정을 내보낼 수 있습니다.
-  - **네트워크 보호:** 의심스러운 도메인에 대한 액세스를 차단 또는 감사하기 위한 네트워크 보호를 설정합니다.
-5.  마법사를 완료하여 나중에 디바이스에 배포할 수 있는 정책을 만듭니다.
+1. Configuration Manager 콘솔에서 **자산 및 준수** > **끝점 보호**로 이동한 다음 **Windows Defender Exploit Guard**를 클릭합니다.
+2. **홈** 탭의 **만들기** 그룹에서 **악용 정책 만들기**를 클릭합니다.
+3. **구성 항목 만들기 마법사** 의 **일반**페이지에서 구성 항목에 대한 이름 및 선택적 설명을 지정합니다.
+4. 그런 다음 이 정책으로 관리할 Exploit Guard 구성 요소를 선택합니다. 선택한 각 구성 요소에 대해 추가 세부사항을 구성할 수 있습니다.
+   - **공격 노출 영역 축소:** 차단 또는 감사하려는 Office 위협, 스크립팅 위협 및 이메일 위협을 구성합니다. 이 규칙에서 특정 파일 또는 폴더를 제외할 수도 있습니다.
+   - **폴더 액세스 제어:** 차단 또는 감사를 구성한 다음, 이 정책을 무시할 수 있는 앱을 추가합니다.  기본적으로 보호되지 않는 추가 폴더도 지정할 수 있습니다.
+   - **악용 방지:**  시스템 프로세스 및 앱의 악용을 완화하기 위한 설정이 포함된 XML 파일을 지정합니다. Windows 10 디바이스의 Windows Defender Security Center 앱에서 이러한 설정을 내보낼 수 있습니다.
+   - **네트워크 보호:** 의심스러운 도메인에 대한 액세스를 차단 또는 감사하기 위한 네트워크 보호를 설정합니다.
+5. 마법사를 완료하여 나중에 디바이스에 배포할 수 있는 정책을 만듭니다.
 
 ### <a name="deploy-an-exploit-guard-policy"></a>Exploit Guard 정책 배포     
 Exploit Guard 정책을 만든 후에는 Exploit Guard 정책 배포 마법사를 사용하여 배포합니다. 이를 위해서는 Configuration Manager 콘솔을 열고 **자산 및 준수** > **끝점 보호**로 이동한 다음 **Exploit Guard 정책 배포**를 클릭합니다.
 
 ## <a name="limited-support-for-cng-certificates"></a>CNG 인증서에 대한 제한적 지원
-<!-- 1356191 -->
-이 릴리스부터는 다음 시나리오에 대해 [CNG(Cryptography API: Next Generation)](https://msdn.microsoft.com/library/windows/desktop/bb204775.aspx) 인증서를 사용할 수 있습니다.
+<!-- 1356191 --> 이 릴리스부터 [CNG(Cryptography API: Next Generation)](https://msdn.microsoft.com/library/windows/desktop/bb204775.aspx) 인증서 템플릿을 사용할 수 있는 시나리오는 다음과 같습니다.
 
 - 클라이언트 등록 및 HTTPS 관리 지점과의 커뮤니케이션.   
 - HTTPS 배포 지점을 사용하여 소프트웨어 배포 및 애플리케이션 배포.   
@@ -151,7 +149,7 @@ CNG 인증서를 사용하려면 CA(인증 기관)가 대상 컴퓨터에 대한
 
 
 ## <a name="improved-descriptions-for-pending-computer-restarts-----1356283---"></a>컴퓨터 다시 시작 보류에 대한 향상된 설명   <!--1356283 -->
-[기술 미리 보기 1708](/sccm/core/get-started/capabilities-in-technical-preview-1708#restart-computers-from-the-configuration-manager-console)에서는 Configuration Manager 콘솔에서 다시 시작이 보류되어 있는 장치를 식별하는 기능을 추가했습니다.
+[기술 미리 보기 1708](/sccm/core/get-started/capabilities-in-technical-preview-1708#restart-computers-from-the-configuration-manager-console)에서는 Configuration Manager 콘솔에서 다시 시작이 보류되어 있는 디바이스를 식별하는 기능을 추가했습니다.
 
 이 기술 미리 보기부터 콘솔은 재부팅을 요청하는 프로세스 또는 작업에 대한 정보를 제공하는 추가 세부 사항을 표시합니다.
 
@@ -162,7 +160,7 @@ CNG 인증서를 사용하려면 CA(인증 기관)가 대상 컴퓨터에 대한
 Device Guard 정책의 이름이 Windows Defender 애플리케이션 제어 정책으로 바뀌었습니다. 예를 들어 **Device Guard 정책 만들기 마법사**의 이름이 이제는 **Windows Defender 애플리케이션 제어 정책 만들기 마법사**입니다.
 
 ### <a name="restart-is-not-required-to-apply-policies"></a>정책을 적용하려면 다시 시작해야 합니다.
-Windows 버전 1709용 Fall Creators Update로 시작하는 경우에는 Windows Defender 응용 프로그램 제어 정책을 적용하기 위해 새 Windows 버전을 사용하는 디바이스를 다시 시작할 필요가 없습니다.
+Windows 버전 1709용 Fall Creators Update로 시작하는 경우에는 Windows Defender 애플리케이션 제어 정책을 적용하기 위해 새 Windows 버전을 사용하는 장치를 다시 시작할 필요가 없습니다.
 
 다시 시작은 기본적으로 이루어집니다.
 
@@ -170,8 +168,8 @@ Windows 버전 1709용 Fall Creators Update로 시작하는 경우에는 Windows
 
 다시 시작하기를 끄려면 다음 단계를 수행하세요.
 
-1.  **Windows Defender 응용 프로그램 제어 정책 만들기** 마법사를 엽니다.
-2.  **일반** 페이지에서 **모든 프로세스에 대해 이 정책을 적용할 수 있도록 장치 다시 시작 적용** 확인란을 취소합니다.
+1.  **Windows Defender 애플리케이션 제어 정책 만들기** 마법사를 엽니다.
+2.  **일반** 페이지에서 **모든 프로세스에 대해 이 정책을 적용할 수 있도록 디바이스 다시 시작 적용** 확인란을 취소합니다.
 3.  **다음**을 계속 클릭하여 마법사를 종료합니다.
 
 이전 버전의 Windows에서는 자동화된 다시 시작이 강제 실행됩니다.
@@ -186,14 +184,14 @@ Windows 버전 1709용 Fall Creators Update로 시작하는 경우에는 Windows
 
 Windows Defender SmartScreen을 실행하는 디바이스에서 신뢰할 수 있는 소프트웨어를 실행하도록 하려면 다음 단계를 수행합니다.
 
-1.  **Windows Defender 응용 프로그램 제어 정책 만들기** 마법사를 엽니다.
+1.  **Windows Defender 애플리케이션 제어 정책 만들기** 마법사를 엽니다.
 2.  **포함** 페이지에서 **Intelligent Security Graph에서 신뢰하는 소프트웨어 권한 부여** 확인란을 선택합니다.
 3.  **신뢰할 수 있는 파일 또는 폴더** 상자에서 원하는 파일과 폴더를 추가합니다.
 4.  **다음**을 계속 클릭하여 마법사를 종료합니다.
 
 ## <a name="configure-and-deploy-windows-defender-application-guard-policies----1351960---"></a>Windows Defender Application Guard 정책 구성 및 배포 <!-- 1351960 -->
 
-[Windows Defender Application Guard](https://blogs.windows.com/msedgedev/2016/09/27/application-guard-microsoft-edge/#XLxEbcpkuKcFebrw.97)는 운영 체제의 다른 부분에서 액세스할 수 없는 보안 격리된 컨테이너에서 신뢰할 수 없는 웹 사이트를 열어 사용자를 보호하는 새로운 Windows 기능입니다. 이 Technical Preview에서는 구성하는 Configuration Manager 준수 설정을 사용하여 이 기능을 구성한 다음 컬렉션에 배포하기 위한 지원이 추가되었습니다. 이 기능은 64비트 버전의 Windows 10 크리에이터 업데이트(코드명: RS2)에 대한 미리 보기에 릴리스될 예정입니다 . 이 기능을 지금 테스트하려면 이 업데이트의 미리 보기 버전을 사용하고 있어야 합니다.
+[Windows Defender Application Guard](https://blogs.windows.com/msedgedev/2016/09/27/application-guard-microsoft-edge/#XLxEbcpkuKcFebrw.97)는 운영 체제의 다른 부분에서 액세스할 수 없는 보안 격리된 컨테이너에서 신뢰할 수 없는 웹 사이트를 열어 사용자를 보호하는 새로운 Windows 기능입니다. 이 Technical Preview에서는 구성하는 Configuration Manager 준수 설정을 사용하여 이 기능을 구성한 다음 컬렉션에 배포하기 위한 지원이 추가되었습니다. 이 기능은 64비트 버전의 Windows 10 크리에이터 업데이트에 대한 미리 보기에 릴리스될 예정입니다(코드명: RS2). 이 기능을 지금 테스트하려면 이 업데이트의 미리 보기 버전을 사용하고 있어야 합니다.
 
 ### <a name="before-you-start"></a>시작하기 전에
 Windows Defender Application Guard 정책을 만들고 배포하려면 정책을 배포하는 Windows 10 디바이스를 네트워크 격리 정책을 사용하여 구성해야 합니다. 자세한 내용은 뒤에서 언급하는 블로그 게시물을 참조하세요. 이 기능은 현재 Windows 10 참가자 빌드에서만 작동합니다. 이 기능을 테스트하려면 클라이언트에서 최신 Windows 10 참가자 빌드를 실행하고 있어야 합니다.

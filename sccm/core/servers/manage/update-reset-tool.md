@@ -10,12 +10,12 @@ ms.assetid: 25fa89d6-7e47-45a6-8f4e-70b77560fba6
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e6ae6ed46cc1db5f545182e4b4f6b46374b5c174
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: de5c98e45c6f5d6dca1569de812825cce80d6f70
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32344091"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53417345"
 ---
 # <a name="update-reset-tool"></a>업데이트 다시 설정 도구
 
@@ -62,14 +62,16 @@ ms.locfileid: "32344091"
 
 **명령줄 매개 변수:**  
 
-| 매개 변수        |설명                 |  
-|------------------|----------------------------|  
-|**-S &lt;최상위 계층 사이트에 있는 SQL Server의 FQDN>** | *필수* <br> 계층 구조에서 최상위 계층 사이트에 대한 사이트 데이터베이스를 호스트하는 SQL Server의 FQDN을 지정합니다.    |  
-| **-D &lt;데이터베이스 이름>**                        | *필수* <br> 최상위 계층 사이트에 있는 데이터베이스의 이름을 지정합니다.  |  
-| **-P &lt;패키지 GUID>**                         | *필수* <br> 다시 설정하려는 업데이트 패키지에 대한 GUID를 지정합니다.   |  
-| **-I &lt;SQL Server 인스턴스 이름>**             | *선택 사항* <br> 사이트 데이터베이스를 호스트하는 SQL Server 인스턴스를 식별합니다. |
-| **-FDELETE**                              | *선택 사항* <br> 성공적으로 다운로드한 업데이트 패키지를 강제로 삭제합니다. |  
- **예:**  
- 일반적인 시나리오에서는 다운로드 문제가 있는 업데이트를 다시 설정하려고 할 것입니다. SQL Server FQDN은 *server1.fabrikam.com*, 사이트 데이터베이스는 *CM_XYZ*, 패키지 GUID는 *61F16B3C-F1F6-4F9F-8647-2A524B0C802C*입니다.  ***CMUpdateReset.exe -S server1.fabrikam.com -D CM_XYZ -P 61F16B3C-F1F6-4F9F-8647-2A524B0C802C***를 실행합니다.
 
- 좀 더 극단적인 시나리오에서는 문제가 있는 업데이트 패키지를 강제로 삭제하려고 할 수 있습니다. SQL Server FQDN은 *server1.fabrikam.com*, 사이트 데이터베이스는 *CM_XYZ*, 패키지 GUID는 *61F16B3C-F1F6-4F9F-8647-2A524B0C802C*입니다.  ***CMUpdateReset.exe  -FDELETE -S server1.fabrikam.com -D CM_XYZ -P 61F16B3C-F1F6-4F9F-8647-2A524B0C802C***를 실행합니다.
+|                        매개 변수                         |                                                       설명                                                        |
+|----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| **-S &lt;최상위 계층 사이트에 있는 SQL Server의 FQDN>** | *필수* <br> 계층 구조에서 최상위 계층 사이트에 대한 사이트 데이터베이스를 호스트하는 SQL Server의 FQDN을 지정합니다. |
+|                **-D &lt;데이터베이스 이름>**                 |                          *필수* <br> 최상위 계층 사이트에 있는 데이터베이스의 이름을 지정합니다.                          |
+|                 **-P &lt;패키지 GUID>**                 |                        *필수* <br> 다시 설정하려는 업데이트 패키지에 대한 GUID를 지정합니다.                        |
+|           **-I &lt;SQL Server 인스턴스 이름>**           |                    *선택 사항* <br> 사이트 데이터베이스를 호스트하는 SQL Server 인스턴스를 식별합니다.                     |
+|                       **-FDELETE**                       |                       *선택 사항* <br> 성공적으로 다운로드한 업데이트 패키지를 강제로 삭제합니다.                        |
+
+ **예:**  
+ 일반적인 시나리오에서는 다운로드 문제가 있는 업데이트를 다시 설정하려고 할 것입니다. SQL Server FQDN은 *server1.fabrikam.com*, 사이트 데이터베이스는 *CM_XYZ*, 패키지 GUID는 *61F16B3C-F1F6-4F9F-8647-2A524B0C802C*입니다.  실행: ***CMUpdateReset.exe -S server1.fabrikam.com -D CM_XYZ -P 61F16B3C-F1F6-4F9F-8647-2A524B0C802C***
+
+ 좀 더 극단적인 시나리오에서는 문제가 있는 업데이트 패키지를 강제로 삭제하려고 할 수 있습니다. SQL Server FQDN은 *server1.fabrikam.com*, 사이트 데이터베이스는 *CM_XYZ*, 패키지 GUID는 *61F16B3C-F1F6-4F9F-8647-2A524B0C802C*입니다.  실행: ***CMUpdateReset.exe  -FDELETE -S server1.fabrikam.com -D CM_XYZ -P 61F16B3C-F1F6-4F9F-8647-2A524B0C802C***

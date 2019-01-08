@@ -10,12 +10,12 @@ ms.assetid: 03cec407-0f9f-454f-a360-b005af738d29
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3735e2cc8ac2f7e4a5c05b49783cad3981a04930
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 84345e26f30c1339ad1f386606ad11f1bb127eae
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32333837"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53421436"
 ---
 # <a name="how-to-configure-client-computers-to-find-management-points-by-using-dns-publishing-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 DNS 게시를 사용하여 관리 지점을 찾도록 클라이언트 컴퓨터를 구성하는 방법
 
@@ -38,13 +38,13 @@ System Center Configuration Manager의 클라이언트는 사이트 할당을 �
 
 #### <a name="to-configure-clients-for-a-management-point-suffix-during-client-installation"></a>클라이언트 설치 중에 클라이언트에서 관리 지점 접미사를 구성하려면  
 
--   다음 CCMSetup Client.msi 속성을 사용하여 클라이언트를 설치합니다.  
+- 다음 CCMSetup Client.msi 속성을 사용하여 클라이언트를 설치합니다.  
 
-    -   **DNSSUFFIX=** *&lt;관리 지점 도메인\>*  
+  - **DNSSUFFIX=** *&lt;관리 지점 도메인\>*  
 
-         사이트가 관리 지점을 둘 이상 갖고 둘 이상의 도메인에 있는 경우 한 도메인만 지정합니다. 클라이언트가 이 도메인의 관리 지점에 연결하면 사용 가능한 관리 지점 목록을 다운로드하며, 여기에는 다른 도메인의 관리 지점도 포함됩니다.  
+     사이트가 관리 지점을 둘 이상 갖고 둘 이상의 도메인에 있는 경우 한 도메인만 지정합니다. 클라이언트가 이 도메인의 관리 지점에 연결하면 사용 가능한 관리 지점 목록을 다운로드하며, 여기에는 다른 도메인의 관리 지점도 포함됩니다.  
 
-     CCMSetup 명령줄 속성에 대한 자세한 내용은 [System Center Configuration Manager의 클라이언트 설치 속성 정보](../../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  
+    CCMSetup 명령줄 속성에 대한 자세한 내용은 [System Center Configuration Manager의 클라이언트 설치 속성 정보](../../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  
 
 #### <a name="to-configure-clients-for-a-management-point-suffix-after-client-installation"></a>클라이언트 설치 후에 클라이언트에서 관리 지점 접미사를 구성하려면  
 

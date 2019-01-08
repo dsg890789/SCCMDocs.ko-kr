@@ -10,12 +10,12 @@ ms.assetid: 58a0d2ae-de76-401f-b854-7a5243949033
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 18e50806868955eac807645a5378aea53acdc899
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 9e297842a82ac3ae39f4e3a75962aaef115e35a4
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32348609"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53420977"
 ---
 # <a name="use-stand-alone-media-to-deploy-windows-without-using-the-network-in-system-center-configuration-manager"></a>독립 실행형 미디어를 사용하여 System Center Configuration Manager에서 네트워크를 사용하지 않고 Windows 배포
 
@@ -29,13 +29,13 @@ System Center Configuration Manager의 독립 실행형 미디어에는 컴퓨�
 
 다음과 같은 운영 체제 배포 시나리오에서 독립 실행형 미디어를 사용할 수 있습니다.  
 
--   [새 버전의 Windows로 기존 컴퓨터 새로 고침](refresh-an-existing-computer-with-a-new-version-of-windows.md)  
+- [새 버전의 Windows로 기존 컴퓨터 새로 고침](refresh-an-existing-computer-with-a-new-version-of-windows.md)  
 
--   [새 컴퓨터에 새 버전의 Windows 설치(완전 복구)](install-new-windows-version-new-computer-bare-metal.md)  
+- [새 컴퓨터에 새 버전의 Windows 설치(완전 복구)](install-new-windows-version-new-computer-bare-metal.md)  
 
--   [최신 버전으로 Windows 업그레이드](upgrade-windows-to-the-latest-version.md)  
+- [최신 버전으로 Windows 업그레이드](upgrade-windows-to-the-latest-version.md)  
 
- 운영 체제 배포 시나리오 중 하나의 단계를 완료하고 다음 섹션을 참조하여 독립 실행형 미디어를 준비하고 만듭니다.  
+  운영 체제 배포 시나리오 중 하나의 단계를 완료하고 다음 섹션을 참조하여 독립 실행형 미디어를 준비하고 만듭니다.  
 
 ## <a name="task-sequence-actions-not-supported-when-using-stand-alone-media"></a>독립 실행형 미디어를 사용하는 경우 작업 순서의 작업이 지원 안 됨  
  지원되는 운영 체제 배포 시나리오, 배포할 작업 순서 또는 업그레이드 중 하나의 단계를 완료한 경우 운영 체제가 만들어지고 모든 관련 콘텐츠가 배포 지점에 배포된 것입니다. 독립 실행형 미디어를 사용하면 작업 순서에서 다음 작업 지원되지 않습니다.  
@@ -57,7 +57,7 @@ System Center Configuration Manager의 독립 실행형 미디어에는 컴퓨�
 >   
 >  `"WMI method SMS_TaskSequencePackage.GetClientConfigPolicies failed (0x80041001)"`
 >   
->  **패키지 설치** 단계가 포함된 독립 실행형 미디어를 사용할 경우 소프트웨어 배포 에이전트를 사용하도록 설정된 기본 사이트에 독립 실행형 미디어를 만들거나 작업 순서에서 [Windows 및 ConfigMgr 설치](../understand/task-sequence-steps.md#BKMK_SetupWindowsandConfigMgr) 단계와 첫 번째 **패키지 설치** 단계 사이에 [명령줄 실행](../understand/task-sequence-steps.md#BKMK_RunCommandLine) 단계를 추가해야 합니다. **명령줄 실행** 단계에서는 WMIC 명령을 실행하여 첫 번째 패키지 설치 단계가 실행되기 전에 소프트웨어 배포 에이전트를 사용하도록 설정합니다. **명령줄 실행** 작업 순서 단계에서 다음을 사용할 수 있습니다.  
+>  **패키지 설치** 단계가 포함된 독립 실행형 미디어를 사용할 경우 소프트웨어 배포 에이전트를 사용하도록 설정된 기본 사이트에 독립 실행형 미디어를 만들거나 작업 순서에서 [Setup Windows and ConfigMgr](../understand/task-sequence-steps.md#BKMK_RunCommandLine) 단계와 첫 번째 [패키지 설치](../understand/task-sequence-steps.md#BKMK_SetupWindowsandConfigMgr) 단계 사이에 **Run Command Line** 단계를 추가해야 합니다. **명령줄 실행** 단계에서는 WMIC 명령을 실행하여 첫 번째 패키지 설치 단계가 실행되기 전에 소프트웨어 배포 에이전트를 사용하도록 설정합니다. **명령줄 실행** 작업 순서 단계에서 다음을 사용할 수 있습니다.  
 >   
 >  **명령줄**: **WMIC /namespace:\\\root\ccm\policy\machine\requestedconfig path ccm_SoftwareDistributionClientConfig CREATE ComponentName="Enable SWDist", Enabled="true", LockSettings="TRUE", PolicySource="local", PolicyVersion="1.0", SiteSettingsKey="1" /NOINTERACTIVE**  
 

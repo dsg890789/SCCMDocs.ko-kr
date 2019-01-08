@@ -10,12 +10,12 @@ ms.assetid: abb696f3-a816-4f12-a9f1-0503a81e1976
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3bd64cd937bf0a90a00ea6b17664d80394dcafab
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 4168b36553dacff69fab0972011a7d4c2843d787
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32339311"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53421946"
 ---
 # <a name="test-the-database-upgrade-when-installing-an-update"></a>업데이트를 설치할 때 데이터베이스의 테스트 업그레이드 수행
 
@@ -45,21 +45,21 @@ SQL Server의 별도 인스턴스로 복원한 사이트 데이터베이스의 �
 업데이트 설치가 실패할 경우 사이트를 복구할 필요가 없습니다. 대신 콘솔 내에서 업데이트 설치를 다시 시도할 수 있습니다.
 
 ##  <a name="run-the-test-upgrade"></a>테스트 업그레이드 실행    
-1.  Configuration Manager 설치 프로그램과 업데이트하려는 버전을 실행하는 사이트의 **CD.Latest** 폴더에 있는 소스 파일을 사용합니다.  
+1. Configuration Manager 설치 프로그램과 업데이트하려는 버전을 실행하는 사이트의 **CD.Latest** 폴더에 있는 소스 파일을 사용합니다.  
 
-2.  테스트 데이터베이스 업그레이드를 실행하는 데 사용할 SQL Server 인스턴스의 위치로 **CD.Latest** 폴더를 복사합니다.
+2. 테스트 데이터베이스 업그레이드를 실행하는 데 사용할 SQL Server 인스턴스의 위치로 **CD.Latest** 폴더를 복사합니다.
 
-3.  업그레이드를 테스트할 사이트 데이터베이스의 백업을 만듭니다. 다음으로 Configuration Manager 사이트를 호스트하지 않는 SQL Server의 인스턴스로 데이터베이스 복사본을 복원합니다. SQL Server 인스턴스는 사이트 데이터베이스와 동일한 버전의 SQL Server를 사용해야 합니다.  
+3. 업그레이드를 테스트할 사이트 데이터베이스의 백업을 만듭니다. 다음으로 Configuration Manager 사이트를 호스트하지 않는 SQL Server의 인스턴스로 데이터베이스 복사본을 복원합니다. SQL Server 인스턴스는 사이트 데이터베이스와 동일한 버전의 SQL Server를 사용해야 합니다.  
 
-4.  데이터베이스 복사본을 복원한 후에 업데이트하려는 버전의 소스 파일이 포함된 CD.Latest 폴더에서 **설치 프로그램**을 실행합니다. 설치 프로그램을 실행할 때 **/TESTDBUPGRADE** 명령줄 옵션을 사용합니다. 데이터베이스 사본을 호스트하는 SQL Server 인스턴스가 기본 인스턴스가 아닌 경우 명령줄 인수를 제공하여 사이트 데이터베이스 사본을 호스트하는 인스턴스를 식별합니다.   
+4. 데이터베이스 복사본을 복원한 후에 업데이트하려는 버전의 소스 파일이 포함된 CD.Latest 폴더에서 **설치 프로그램**을 실행합니다. 설치 프로그램을 실행할 때 **/TESTDBUPGRADE** 명령줄 옵션을 사용합니다. 데이터베이스 사본을 호스트하는 SQL Server 인스턴스가 기본 인스턴스가 아닌 경우 명령줄 인수를 제공하여 사이트 데이터베이스 사본을 호스트하는 인스턴스를 식별합니다.   
 
-  예를 들어 데이터베이스 이름이 *SMS_ABC*인 사이트 데이터베이스가 있다고 가정할 경우 이 사이트 데이터베이스의 사본을 인스턴스 이름이 *DBTest*인 지원되는 SQL Server 인스턴스로 복원합니다. 이 사이트 데이터베이스 복사본의 업그레이드를 테스트하려면 다음 명령줄을 사용합니다. **Setup.exe /TESTDBUPGRADE DBtest\CM_ABC**  
+   예를 들어 데이터베이스 이름이 *SMS_ABC*인 사이트 데이터베이스가 있다고 가정할 경우 이 사이트 데이터베이스의 사본을 인스턴스 이름이 *DBTest*인 지원되는 SQL Server 인스턴스로 복원합니다. 사이트 데이터베이스의 이 사본을 테스트하려면 다음 명령줄을 사용하십시오. **Setup.exe /TESTDBUPGRADE DBtest\CM_ABC**.  
 
-  원본 미디어의 **SMSSETUP\BIN\X64**에서 System Center Configuration Manager에 대한 Setup.exe를 찾을 수 있습니다.  
+   원본 미디어의 다음 위치에서 System Center Configuration Manager에 대한 Setup.exe를 찾을 수 있습니다. **SMSSETUP\BIN\X64**.  
 
-5.  업그레이드 테스트를 실행하는 SQL Server 인스턴스에서 시스템 드라이브 루트에 있는 *ConfigMgrSetup.log*를 보고 진행률 및 성공 여부를 모니터링합니다.  
+5. 업그레이드 테스트를 실행하는 SQL Server 인스턴스에서 시스템 드라이브 루트에 있는 *ConfigMgrSetup.log*를 보고 진행률 및 성공 여부를 모니터링합니다.  
 
-     테스트 업그레이드가 실패하면 사이트 데이터베이스 업그레이드 실패와 관련된 문제를 수정합니다. 그런 다음 사이트 데이터베이스의 새 백업을 만들고 데이터베이스의 새 복사본에 대한 업그레이드를 테스트합니다.  
+    테스트 업그레이드가 실패하면 사이트 데이터베이스 업그레이드 실패와 관련된 문제를 수정합니다. 그런 다음 사이트 데이터베이스의 새 백업을 만들고 데이터베이스의 새 복사본에 대한 업그레이드를 테스트합니다.  
 
 
 

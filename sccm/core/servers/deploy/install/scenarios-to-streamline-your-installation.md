@@ -10,12 +10,12 @@ ms.assetid: 35586a85-4af9-4c8b-925a-0e32dc8b7346
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 77615ab53f715a5d3e5b2e21cda667e6f0a2bc0c
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: d03b1be5c099692e5f0c03ff3302d014d9e9643d
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32339369"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53415605"
 ---
 # <a name="scenarios-to-streamline-your-installation-of-system-center-configuration-manager"></a>System Center Configuration Manager의 설치를 간소화하는 시나리오
 
@@ -45,43 +45,43 @@ System Center Configuration Manager의 업데이트 버전으로 **Microsoft Sys
 
 다음 순서를 따르세요.  
 
-1.  기준 미디어를 사용하여 **새 계층 구조의 최상위 사이트를 설치**합니다.  
+1. 기준 미디어를 사용하여 **새 계층 구조의 최상위 사이트를 설치**합니다.  
 
-    -   기준 미디어만 사용하여 새 계층 구조의 첫 번째 사이트를 설치할 수 있습니다.  
-    -   예를 들어 기준 버전 1606을 사용하여 최상위 사이트를 설치합니다. 자세한 내용은 [설치 마법사를 사용하여 사이트 설치](/sccm/core/servers/deploy/install/use-the-setup-wizard-to-install-sites)를 참조하세요.  
+   -   기준 미디어만 사용하여 새 계층 구조의 첫 번째 사이트를 설치할 수 있습니다.  
+   -   예를 들어 기준 버전 1606을 사용하여 최상위 사이트를 설치합니다. 자세한 내용은 [설치 마법사를 사용하여 사이트 설치](/sccm/core/servers/deploy/install/use-the-setup-wizard-to-install-sites)를 참조하세요.  
 
-    이 단계를 수행하면 최상위 사이트는 버전 1606을 실행합니다.  
+   이 단계를 수행하면 최상위 사이트는 버전 1606을 실행합니다.  
 
-2.  **콘솔 내 업데이트를 사용하여 이후 버전으로 최상위 사이트를 업데이트합니다.**  
+2. **콘솔 내 업데이트를 사용하여 이후 버전으로 최상위 사이트를 업데이트합니다.**  
 
-    -   자식 사이트 또는 클라이언트를 설치하기 전에 사용할 업데이트 버전으로 최상위 사이트를 업데이트합니다.  
-    -   예를 들어 버전 1606을 실행하는 최상위 사이트를 버전 1610으로 업데이트할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 업데이트](../../../../core/servers/manage/updates.md)를 참조하세요.  
+   -   자식 사이트 또는 클라이언트를 설치하기 전에 사용할 업데이트 버전으로 최상위 사이트를 업데이트합니다.  
+   -   예를 들어 버전 1606을 실행하는 최상위 사이트를 버전 1610으로 업데이트할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 업데이트](../../../../core/servers/manage/updates.md)를 참조하세요.  
 
-    이 단계를 수행하면 최상위 사이트는 버전 1610을 실행합니다.  
+   이 단계를 수행하면 최상위 사이트는 버전 1610을 실행합니다.  
 
-3.  **중앙 관리 사이트 아래에 새 자식 기본 사이트를 설치합니다.**  
+3. **중앙 관리 사이트 아래에 새 자식 기본 사이트를 설치합니다.**  
 
-    -   중앙 관리 사이트 서버에 있는 CD.Latest 폴더에서 설치 미디어를 사용하여 자식 기본 사이트를 설치합니다. 자세한 내용은 [System Center Configuration Manager의 CD.Latest 폴더](../../../../core/servers/manage/the-cd.latest-folder.md)를 참조하세요.  
+   - 중앙 관리 사이트 서버에 있는 CD.Latest 폴더에서 설치 미디어를 사용하여 자식 기본 사이트를 설치합니다. 자세한 내용은 [System Center Configuration Manager의 CD.Latest 폴더](../../../../core/servers/manage/the-cd.latest-folder.md)를 참조하세요.  
 
-      이 원본 미디어는 새 자식 기본 사이트가 중앙 관리 사이트의 버전과 일치하는지 확인하는 데 필요합니다.  
+     이 원본 미디어는 새 자식 기본 사이트가 중앙 관리 사이트의 버전과 일치하는지 확인하는 데 필요합니다.  
 
-    이 단계를 수행한 후 새 자식 기본 사이트에서는 버전 1610을 실행합니다.  
+   이 단계를 수행한 후 새 자식 기본 사이트에서는 버전 1610을 실행합니다.  
 
-4.  **각 기본 사이트에서, 콘솔 내 옵션을 사용하여 새 보조 사이트를 설치합니다.**  
+4. **각 기본 사이트에서, 콘솔 내 옵션을 사용하여 새 보조 사이트를 설치합니다.**  
 
-    -   기본 사이트가 버전 1606에 있는 동안 보조 사이트를 설치하지 않았기 때문에 보조 사이트를 업그레이드할 필요가 없습니다.  
-    -   대신, 버전 1610을 실행하는 새 보조 사이트를 설치합니다. 자세한 내용은 [설치 마법사를 사용하여 사이트 설치](/sccm/core/servers/deploy/install/use-the-setup-wizard-to-install-sites) 항목에서 [보조 사이트 설치](/sccm/core/servers/deploy/install/use-the-setup-wizard-to-install-sites#bkmk_secondary)를 참조하세요.  
+   -   기본 사이트가 버전 1606에 있는 동안 보조 사이트를 설치하지 않았기 때문에 보조 사이트를 업그레이드할 필요가 없습니다.  
+   -   대신, 버전 1610을 실행하는 새 보조 사이트를 설치합니다. 자세한 내용은 [설치 마법사를 사용하여 사이트 설치](/sccm/core/servers/deploy/install/use-the-setup-wizard-to-install-sites) 항목에서 [보조 사이트 설치](/sccm/core/servers/deploy/install/use-the-setup-wizard-to-install-sites#bkmk_secondary)를 참조하세요.  
 
-    이 단계를 수행하면 새 보조 사이트가 설치되고 버전 1610을 실행합니다.  
+   이 단계를 수행하면 새 보조 사이트가 설치되고 버전 1610을 실행합니다.  
 
-5.  **기본 사이트에 새 클라이언트를 설치합니다.**  
+5. **기본 사이트에 새 클라이언트를 설치합니다.**  
 
-    -   기본 사이트가 버전 1606에 있는 동안 클라이언트를 설치하지 않았기 때문에 버전 1606에서 버전 1610로 클라이언트를 업그레이드할 필요가 없습니다.  
-    -   대신, 버전 1610을 실행하는 새 클라이언트를 설치합니다. 자세한 내용은 [System Center Configuration Manager에서 클라이언트 배포](../../../clients/deploy/deploy-clients-to-windows-computers.md)를 참조하세요.  
+   -   기본 사이트가 버전 1606에 있는 동안 클라이언트를 설치하지 않았기 때문에 버전 1606에서 버전 1610로 클라이언트를 업그레이드할 필요가 없습니다.  
+   -   대신, 버전 1610을 실행하는 새 클라이언트를 설치합니다. 자세한 내용은 [System Center Configuration Manager에서 클라이언트 배포](../../../clients/deploy/deploy-clients-to-windows-computers.md)를 참조하세요.  
 
-    이 단계를 수행하면 버전 1610을 실행하는 새 클라이언트가 설치됩니다.  
+   이 단계를 수행하면 버전 1610을 실행하는 새 클라이언트가 설치됩니다.  
 
-## <a name="scenario-upgrade-system-center-2012-configuration-manager-to-an-update-version-of-system-center-configuration-manager-current-branch"></a>시나리오: System Center Configuration Manager 현재 분기의 업데이트 버전으로 System Center 2012 Configuration Manager 업그레이드  
+## <a name="scenario-upgrade-system-center-2012-configuration-manager-to-an-update-version-of-system-center-configuration-manager-current-branch"></a>시나리오: System Center Configuration Manager(현재 분기)의 업데이트 버전으로 System Center 2012 Configuration Manager 업그레이드  
 이 예제 시나리오에서는 System Center Configuration Manager의 업데이트 버전(예: 버전 1610)으로 Microsoft System Center 2012 Configuration Manager 인프라를 업그레이드합니다.  
 
 -   버전 1610에 대한 업데이트를 설치하기 전에 중앙 관리 사이트 및 각 기본 사이트를 기준 버전인 1606으로 업그레이드해야 합니다.  
@@ -89,39 +89,39 @@ System Center Configuration Manager의 업데이트 버전으로 **Microsoft Sys
 
 다음 순서를 따르세요.  
 
-1.  System Center Configuration Manager에 대한 원본 미디어(예: 버전 1606)를 사용하여 현재 분기의 기준 버전으로 **최상위 Microsoft System Center 2012 Configuration Manager 사이트를 업그레이드**합니다. 자세한 내용은 [System Center Configuration Manager 업그레이드](../../../../core/servers/deploy/install/upgrade-to-configuration-manager.md)를 참조하세요.  
+1. System Center Configuration Manager에 대한 원본 미디어(예: 버전 1606)를 사용하여 현재 분기의 기준 버전으로 **최상위 Microsoft System Center 2012 Configuration Manager 사이트를 업그레이드**합니다. 자세한 내용은 [System Center Configuration Manager 업그레이드](../../../../core/servers/deploy/install/upgrade-to-configuration-manager.md)를 참조하세요.  
 
-    -   기존의 업그레이드 시나리오와 같이 항상 계층의 최상위 사이트를 먼저 업그레이드한 후 하위 사이트를 업그레이드합니다.  
+   -   기존의 업그레이드 시나리오와 같이 항상 계층의 최상위 사이트를 먼저 업그레이드한 후 하위 사이트를 업그레이드합니다.  
 
-    이 단계를 수행하면 최상위 사이트는 버전 1606을 실행합니다.  
+   이 단계를 수행하면 최상위 사이트는 버전 1606을 실행합니다.  
 
-2.  **계층의 각 자식 기본 사이트를 동일한 기준선 버전으로 업그레이드** 합니다.  
+2. **계층의 각 자식 기본 사이트를 동일한 기준선 버전으로 업그레이드** 합니다.  
 
-    -   Microsoft System Center 2012 Configuration Manager에서 업그레이드하는 경우 현재 분기의 기준선 버전으로 각 기본 사이트를 수동으로 업그레이드해야 합니다.  
-    -   지금은 보조 사이트를 업그레이드하지 않습니다.  
+   -   Microsoft System Center 2012 Configuration Manager에서 업그레이드하는 경우 현재 분기의 기준선 버전으로 각 기본 사이트를 수동으로 업그레이드해야 합니다.  
+   -   지금은 보조 사이트를 업그레이드하지 않습니다.  
 
-    이 단계를 수행하면 기본 사이트에서 버전 1606을 실행합니다.  
+   이 단계를 수행하면 기본 사이트에서 버전 1606을 실행합니다.  
 
-3.  **자식 기본 사이트에서 유지 관리 기간을 설정합니다.** 모든 기본 사이트를 기준 버전으로 업그레이드한 후 해당 사이트가 인프라 업데이트를 설치하는 경우를 제어하도록 유지 관리 기간을 구성합니다. 자세한 내용은 [System Center Configuration Manager에서 유지 관리 기간을 사용하는 방법](../../../../core/clients/manage/collections/use-maintenance-windows.md)을 참조하세요.  유지 관리 기간을 버전 1606에서는 *서비스 기간*이라고 합니다.  
+3. **자식 기본 사이트에서 유지 관리 기간을 설정합니다.** 모든 기본 사이트를 기준 버전으로 업그레이드한 후 해당 사이트가 인프라 업데이트를 설치하는 경우를 제어하도록 유지 관리 기간을 구성합니다. 자세한 내용은 [System Center Configuration Manager에서 유지 관리 기간을 사용하는 방법](../../../../core/clients/manage/collections/use-maintenance-windows.md)을 참조하세요.  유지 관리 기간을 버전 1606에서는 *서비스 기간*이라고 합니다.  
 
-    -   자식 기본 사이트에서는 중앙 관리 사이트에 설치하는 것과 동일한 업데이트를 자동으로 설치합니다.  
-    -   보조 사이트에는 새 버전이 자동으로 설치되지 않습니다. 콘솔 내에서 수동으로 업그레이드해야 합니다.  
+   -   자식 기본 사이트에서는 중앙 관리 사이트에 설치하는 것과 동일한 업데이트를 자동으로 설치합니다.  
+   -   보조 사이트에는 새 버전이 자동으로 설치되지 않습니다. 콘솔 내에서 수동으로 업그레이드해야 합니다.  
 
-  이 단계를 수행하면 중앙 관리 사이트에서 업데이트를 설치할 경우 자식 기본 사이트에서는 유지 관리 기간에서 허용할 때 해당 업데이트만 설치합니다.  
+   이 단계를 수행하면 중앙 관리 사이트에서 업데이트를 설치할 경우 자식 기본 사이트에서는 유지 관리 기간에서 허용할 때 해당 업데이트만 설치합니다.  
 
-4.  **최상위 사이트에서 업데이트 버전을 설치합니다.** 최상위 사이트가 업데이트됩니다. 중앙 관리 사이트에서 업데이트 버전을 설치한 후 설치가 유지 관리 기간으로 차단되지 않는 한 각 자식 기본 사이트에서 자동으로 업데이트를 설치합니다.  
+4. **최상위 사이트에서 업데이트 버전을 설치합니다.** 최상위 사이트가 업데이트됩니다. 중앙 관리 사이트에서 업데이트 버전을 설치한 후 설치가 유지 관리 기간으로 차단되지 않는 한 각 자식 기본 사이트에서 자동으로 업데이트를 설치합니다.  
 
-    -   예를 들어 버전 1606에서 버전 1610으로 최상위 사이트를 업데이트할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 업데이트](../../../../core/servers/manage/updates.md)를 참조하세요.  
+   -   예를 들어 버전 1606에서 버전 1610으로 최상위 사이트를 업데이트할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 업데이트](../../../../core/servers/manage/updates.md)를 참조하세요.  
 
-    이 단계를 수행하면 중앙 관리 사이트와 각 기본 사이트에서 버전 1610을 실행합니다.  
+   이 단계를 수행하면 중앙 관리 사이트와 각 기본 사이트에서 버전 1610을 실행합니다.  
 
-5.  **보조 사이트를 업그레이드합니다.** 기본 사이트에서 업데이트를 설치하고 버전 1610을 실행한 후 콘솔 내 옵션을 사용하여 보조 사이트를 업그레이드합니다.  
+5. **보조 사이트를 업그레이드합니다.** 기본 사이트에서 업데이트를 설치하고 버전 1610을 실행한 후 콘솔 내 옵션을 사용하여 보조 사이트를 업그레이드합니다.  
 
-    -   그러면 Microsoft System Center 2012 Configuration Manager에서 기본 사이트에 설치된 업데이트 버전으로 직접 보조 사이트가 업그레이드됩니다.  
-    -   보조 사이트를 업그레이드하는 방법에 대한 자세한 내용은 [System Center Configuration Manager 업그레이드](../../../../core/servers/deploy/install/upgrade-to-configuration-manager.md) 항목의 [사이트 업그레이드](../../../../core/servers/deploy/install/upgrade-to-configuration-manager.md#bkmk_upgrade)를 참조하세요.  
+   -   그러면 Microsoft System Center 2012 Configuration Manager에서 기본 사이트에 설치된 업데이트 버전으로 직접 보조 사이트가 업그레이드됩니다.  
+   -   보조 사이트를 업그레이드하는 방법에 대한 자세한 내용은 [System Center Configuration Manager 업그레이드](../../../../core/servers/deploy/install/upgrade-to-configuration-manager.md) 항목의 [사이트 업그레이드](../../../../core/servers/deploy/install/upgrade-to-configuration-manager.md#bkmk_upgrade)를 참조하세요.  
 
-6.  **클라이언트를 업그레이드합니다.** 클라이언트를 업그레이드하려면 [System Center Configuration Manager에서 Windows 컴퓨터용 클라이언트를 업그레이드하는 방법](../../../../core/clients/manage/upgrade/upgrade-clients-for-windows-computers.md)의 정보를 참조하세요.  
+6. **클라이언트를 업그레이드합니다.** 클라이언트를 업그레이드하려면 [System Center Configuration Manager에서 Windows 컴퓨터용 클라이언트를 업그레이드하는 방법](../../../../core/clients/manage/upgrade/upgrade-clients-for-windows-computers.md)의 정보를 참조하세요.  
 
-    -   그러면 Microsoft System Center 2012 Configuration Manager에서 기본 사이트에 설치된 업데이트 버전으로 직접 클라이언트가 업그레이드됩니다.  
+   -   그러면 Microsoft System Center 2012 Configuration Manager에서 기본 사이트에 설치된 업데이트 버전으로 직접 클라이언트가 업그레이드됩니다.  
 
-    이 단계를 수행하면 먼저 버전 1606으로 업그레이드하지 않고도 클라이언트가 버전 1610으로 업그레이드됩니다.
+   이 단계를 수행하면 먼저 버전 1606으로 업그레이드하지 않고도 클라이언트가 버전 1610으로 업그레이드됩니다.

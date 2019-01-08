@@ -10,12 +10,12 @@ ms.assetid: ff6e7267-302a-4563-815e-cdc0d1a4b60f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 61c54ad6c0224dfae03a26784f0b3f61271b172c
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 97c4bde7e589e5d3d3c3ee3683055ca8e7412a03
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32353065"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53419838"
 ---
 # <a name="create-prestaged-media-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 사전 준비된 미디어 만들기
 
@@ -24,13 +24,13 @@ ms.locfileid: "32353065"
 System Center Configuration Manager의 사전 준비된 미디어는 제조업체가 운영 체제 미설치 컴퓨터에 설치하거나, Configuration Manager 환경에 연결되지 않은 엔터프라이즈 준비 센터에 설치할 수 있는 WIM(Windows Imaging Format) 파일입니다.  
 사전 준비된 미디어에는 대상 컴퓨터를 시작하는 데 사용되는 부팅 이미지와 대상 컴퓨터에 적용되는 운영 체제 이미지가 포함됩니다. 사전 준비된 미디어에 포함할 애플리케이션, 패키지 및 드라이버 패키지를 지정할 수도 있습니다. 운영 체제를 배포하는 작업 순서는 미디어에 포함되지 않습니다. 사전 준비된 미디어는 새 컴퓨터를 최종 사용자에게 배송하기 전에 컴퓨터의 하드 드라이브에 적용합니다. 다음 운영 체제 배포 시나리오에 대해 사전 준비된 미디어를 사용합니다.  
 
--   [팩터리 또는 로컬 저장소에 OEM에 대한 이미지 만들기](../../osd/deploy-use/create-an-image-for-an-oem-in-factory-or-a-local-depot.md)  
+- [팩터리 또는 로컬 저장소에 OEM에 대한 이미지 만들기](../../osd/deploy-use/create-an-image-for-an-oem-in-factory-or-a-local-depot.md)  
 
--   [새 컴퓨터에 새 버전의 Windows 설치(완전 복구)](install-new-windows-version-new-computer-bare-metal.md)  
+- [새 컴퓨터에 새 버전의 Windows 설치(완전 복구)](install-new-windows-version-new-computer-bare-metal.md)  
 
--   [Windows to Go 배포](deploy-windows-to-go.md)  
+- [Windows to Go 배포](deploy-windows-to-go.md)  
 
- 사전 준비된 미디어가 적용된 컴퓨터를 처음 시작하면 컴퓨터가 Windows PE로 부팅된 후 관리 지점에 연결하여 운영 체제 배포 프로세스를 완료할 작업 순서를 찾습니다. 사전 준비된 미디어에 포함할 애플리케이션, 패키지 및 드라이버 패키지를 지정할 수 있습니다. 사전 준비된 미디어를 사용하는 작업 순서를 배포할 경우 마법사는 먼저 로컬 작업 순서 캐시에서 유효한 콘텐츠를 확인합니다. 콘텐츠를 찾을 수 없거나 콘텐츠가 수정된 경우 마법사에서는 해당 콘텐츠를 배포 지점에서 다운로드합니다.  
+  사전 준비된 미디어가 적용된 컴퓨터를 처음 시작하면 컴퓨터가 Windows PE로 부팅된 후 관리 지점에 연결하여 운영 체제 배포 프로세스를 완료할 작업 순서를 찾습니다. 사전 준비된 미디어에 포함할 애플리케이션, 패키지 및 드라이버 패키지를 지정할 수 있습니다. 사전 준비된 미디어를 사용하는 작업 순서를 배포할 경우 마법사는 먼저 로컬 작업 순서 캐시에서 유효한 콘텐츠를 확인합니다. 콘텐츠를 찾을 수 없거나 콘텐츠가 수정된 경우 마법사에서는 해당 콘텐츠를 배포 지점에서 다운로드합니다.  
 
 ##  <a name="BKMK_CreatePrestagedMedia"></a> 사전 준비된 미디어를 만드는 방법  
  작업 순서 미디어 만들기 마법사를 사용하여 사전 준비된 미디어를 만들기 전에 다음 조건을 모두 충족해야 합니다.  
@@ -73,7 +73,7 @@ System Center Configuration Manager의 사전 준비된 미디어는 제조업�
 
     -   **버전**: 미디어의 버전 번호를 지정합니다.  
 
-    -   **설명**: 미디어의 용도에 대한 고유한 설명을 지정합니다.  
+    -   **주석**: 미디어의 용도에 대한 고유한 설명을 지정합니다.  
 
     -   **미디어 파일**: 출력 파일의 이름과 경로를 지정합니다. 마법사에서 출력 파일을 이 위치에 기록합니다. 예를 들면 **\\\servername\folder\outputfile.wim**입니다.  
 
@@ -92,7 +92,7 @@ System Center Configuration Manager의 사전 준비된 미디어는 제조업�
 
          부팅 이미지에 사용되는 이 클라이언트 인증서에 대한 자세한 내용은 [PKI 인증서 요구 사항](../../core/plan-design/network/pki-certificate-requirements.md)을 참조하세요.  
 
-    -   **사용자 장치 선호도**: Configuration Manager에서 사용자 중심 관리를 지원하려면 미디어에서 사용자를 대상 컴퓨터와 연결하는 방식을 지정합니다. 운영 체제 배포에서 사용자 디바이스 선호도를 지원하는 방식에 대한 자세한 내용은 [사용자를 대상 컴퓨터에 연결](../get-started/associate-users-with-a-destination-computer.md)을 참조하세요.  
+    -   **사용자 디바이스 선호도**: Configuration Manager에서 사용자 중심 관리를 지원하려면 미디어에서 사용자를 대상 컴퓨터와 연결하는 방식을 지정합니다. 운영 체제 배포에서 사용자 디바이스 선호도를 지원하는 방식에 대한 자세한 내용은 [사용자를 대상 컴퓨터에 연결](../get-started/associate-users-with-a-destination-computer.md)을 참조하세요.  
 
         -   미디어에서 사용자를 대상 컴퓨터와 자동으로 연결하도록 하려면 **자동 승인을 받는 사용자 디바이스 선호도 허용** 을 지정합니다. 이 기능은 운영 체제를 배포하는 작업 순서의 작업을 기반으로 합니다. 이 시나리오에서 작업 순서는 운영 체제를 대상 컴퓨터에 배포할 때 지정된 사용자와 대상 컴퓨터 사이의 관계를 만듭니다.  
 

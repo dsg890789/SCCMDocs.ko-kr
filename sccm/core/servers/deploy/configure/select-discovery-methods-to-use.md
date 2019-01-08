@@ -10,12 +10,12 @@ ms.assetid: 127ce713-d085-430f-ac7b-2701637fe126
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: faa974fda68c9448902f2f5c8e8fcf8ef2f2d386
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 0eec065c9b5d4f75e6a66260760ba08e7bb2c481
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32340240"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53422558"
 ---
 # <a name="select-discovery-methods-to-use-for-system-center-configuration-manager"></a>System Center Configuration Manager에 사용할 검색 방법 선택
 
@@ -104,22 +104,22 @@ System Center Configuration Manager에 검색을 성공적 및 효율적으로 �
 ##  <a name="bkmk_best"></a> 검색 모범 사례  
 최상의 검색 결과를 얻으려면 다음 지침을 따르세요.
 
- - **Active Directory 그룹 검색을 실행하기 전에 Active Directory 시스템 검색과 Active Directory 그룹 검색 실행.**  
+- **Active Directory 그룹 검색을 실행하기 전에 Active Directory 시스템 검색과 Active Directory 그룹 검색 실행.**  
 
- Active Directory 그룹 검색에서는 이전에 검색되지 않은 사용자 또는 컴퓨터가 그룹의 구성원으로 식별될 경우 해당 사용자 또는 컴퓨터에 대한 기본적인 정보를 검색합니다. Active Directory 그룹 검색은 이 유형의 검색을 위해 최적화되어 있지 않으므로 이 프로세스로 인해 실행 속도가 느려질 수 있습니다. 또한 Active Directory 그룹 검색은 검색되는 사용자와 컴퓨터에 대한 기본적인 정보만 식별하고 사용자 또는 컴퓨터에 대한 완전한 검색 레코드를 만들지 않습니다. Active Directory 시스템 검색과 Active Directory 사용자 검색을 실행하면 각 개체 유형에 대한 추가 Active Directory 특성을 사용할 수 있으므로 Active Directory 그룹 검색이 더 효율적으로 실행됩니다.  
+  Active Directory 그룹 검색에서는 이전에 검색되지 않은 사용자 또는 컴퓨터가 그룹의 구성원으로 식별될 경우 해당 사용자 또는 컴퓨터에 대한 기본적인 정보를 검색합니다. Active Directory 그룹 검색은 이 유형의 검색을 위해 최적화되어 있지 않으므로 이 프로세스로 인해 실행 속도가 느려질 수 있습니다. 또한 Active Directory 그룹 검색은 검색되는 사용자와 컴퓨터에 대한 기본적인 정보만 식별하고 사용자 또는 컴퓨터에 대한 완전한 검색 레코드를 만들지 않습니다. Active Directory 시스템 검색과 Active Directory 사용자 검색을 실행하면 각 개체 유형에 대한 추가 Active Directory 특성을 사용할 수 있으므로 Active Directory 그룹 검색이 더 효율적으로 실행됩니다.  
 
 - **Active Directory 그룹 검색을 설정하는 경우 Configuration Manager에서 사용할 그룹만 지정.**  
 
- Active Directory 그룹 검색의 리소스 사용을 제어하기 위해 Configuration Manager에서 사용하는 그룹만 지정합니다. 이는 Active Directory 그룹 검색이 검색되는 각 그룹에서 사용자, 컴퓨터 및 중첩된 그룹을 회귀적으로 검색하기 때문입니다. 중첩된 각 그룹의 검색으로 Active Directory 그룹 검색의 범위가 확장되어 성능이 저하될 수 있습니다. 또한 Active Directory 그룹 검색에 대한 델타 검색을 설정하는 경우 검색 방법이 각 그룹의 변경 내용을 모니터링합니다. 이 검색 방법으로 불필요한 그룹을 검색해야 하므로 성능이 더욱 떨어집니다.  
+  Active Directory 그룹 검색의 리소스 사용을 제어하기 위해 Configuration Manager에서 사용하는 그룹만 지정합니다. 이는 Active Directory 그룹 검색이 검색되는 각 그룹에서 사용자, 컴퓨터 및 중첩된 그룹을 회귀적으로 검색하기 때문입니다. 중첩된 각 그룹의 검색으로 Active Directory 그룹 검색의 범위가 확장되어 성능이 저하될 수 있습니다. 또한 Active Directory 그룹 검색에 대한 델타 검색을 설정하는 경우 검색 방법이 각 그룹의 변경 내용을 모니터링합니다. 이 검색 방법으로 불필요한 그룹을 검색해야 하므로 성능이 더욱 떨어집니다.  
 
 - **전체 검색 사이의 간격을 더 길게 늘리고, 델타 검색을 더 자주 실행하도록 검색 방법 설정.**  
 
- 델타 검색은 전체 검색 주기보다 더 적은 리소스를 사용하고 Active Directory에서 새로운 리소스 또는 수정된 리소스를 파악할 수 있으므로 일주일에 한 번 이하만 실행되도록 전체 검색 주기의 빈도를 줄일 수 있습니다. Active Directory 시스템 검색, Active Directory 사용자 검색 및 Active Directory 그룹 검색은 Active Directory 개체의 거의 모든 변경 사항을 파악하고 리소스에 대한 정확한 검색 데이터를 유지할 수 있습니다.  
+  델타 검색은 전체 검색 주기보다 더 적은 리소스를 사용하고 Active Directory에서 새로운 리소스 또는 수정된 리소스를 파악할 수 있으므로 일주일에 한 번 이하만 실행되도록 전체 검색 주기의 빈도를 줄일 수 있습니다. Active Directory 시스템 검색, Active Directory 사용자 검색 및 Active Directory 그룹 검색은 Active Directory 개체의 거의 모든 변경 사항을 파악하고 리소스에 대한 정확한 검색 데이터를 유지할 수 있습니다.  
 
 - **네트워크 위치가 Active Directory 도메인 컨트롤러와 가장 가까운 기본 사이트에서 Active Directory 검색 방법 실행.**  
 
- Active Directory 검색의 성능을 높이려면 도메인 컨트롤러에 대한 고속 네트워크 연결을 갖는 기본 사이트에서 검색을 실행하는 것이 좋습니다. 여러 사이트에서 Active Directory 검색 방법을 실행하는 경우 겹치지 않도록 각 검색 방법을 설정합니다. 이전 버전의 Configuration Manager와 달리 검색 데이터가 사이트 전체에서 공유됩니다. 따라서 같은 정보를 여러 사이트에서 검색할 필요가 없습니다. 자세한 내용은 [검색 데이터가 사이트 간에 공유됨](../../../../core/servers/deploy/configure/select-discovery-methods-to-use.md#bkmk_shared)을 참조하세요.  
+  Active Directory 검색의 성능을 높이려면 도메인 컨트롤러에 대한 고속 네트워크 연결을 갖는 기본 사이트에서 검색을 실행하는 것이 좋습니다. 여러 사이트에서 Active Directory 검색 방법을 실행하는 경우 겹치지 않도록 각 검색 방법을 설정합니다. 이전 버전의 Configuration Manager와 달리 검색 데이터가 사이트 전체에서 공유됩니다. 따라서 같은 정보를 여러 사이트에서 검색할 필요가 없습니다. 자세한 내용은 [검색 데이터가 사이트 간에 공유됨](../../../../core/servers/deploy/configure/select-discovery-methods-to-use.md#bkmk_shared)을 참조하세요.  
 
 - **검색 데이터로부터 경계를 자동으로 만들려는 경우 한 사이트에서만 Active Directory 포리스트 검색 실행.**  
 
- 계층 구조에 있는 둘 이상의 사이트에서 Active Directory 포리스트 검색을 실행하는 경우 한 사이트에서 자동으로 경계를 만드는 옵션만 사용하도록 설정하는 것이 좋습니다. 이는 Active Directory 포리스트 검색이 각 사이트에서 실행되어 경계를 만들므로 Configuration Manager에서 이러한 경계를 하나의 경계 개체로 병합할 수 없기 때문입니다. 여러 사이트에서 자동으로 경계를 만들도록 Active Directory 포리스트 검색을 구성하는 경우 Configuration Manager 콘솔에서 중복된 경계 개체가 표시될 수 있습니다.  
+  계층 구조에 있는 둘 이상의 사이트에서 Active Directory 포리스트 검색을 실행하는 경우 한 사이트에서 자동으로 경계를 만드는 옵션만 사용하도록 설정하는 것이 좋습니다. 이는 Active Directory 포리스트 검색이 각 사이트에서 실행되어 경계를 만들므로 Configuration Manager에서 이러한 경계를 하나의 경계 개체로 병합할 수 없기 때문입니다. 여러 사이트에서 자동으로 경계를 만들도록 Active Directory 포리스트 검색을 구성하는 경우 Configuration Manager 콘솔에서 중복된 경계 개체가 표시될 수 있습니다.  

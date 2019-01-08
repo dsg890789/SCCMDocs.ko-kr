@@ -10,12 +10,12 @@ ms.assetid: 3969952e-9d05-49c9-82a2-e7e90ccef511
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 688bb6dc57f5d50e1807bff40a1d1a4c66f4b349
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 91bb316c59929898ea18bd1e647cff884f106f1c
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32333606"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53424785"
 ---
 # <a name="introduction-to-hardware-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager의 하드웨어 인벤토리 소개
 
@@ -27,17 +27,17 @@ System Center Configuration Manager에서 하드웨어 인벤토리를 사용하
 
  여러 가지 방법으로 Configuration Manager에서 수집하는 하드웨어 인벤토리 데이터를 볼 수 있습니다. 여기에는 다음이 포함됩니다.  
 
--   [특정 하드웨어 구성을 기반으로 하는 장치를 반환하는 쿼리를 만듭니다](../../../../core/servers/manage/queries-technical-reference.md).  
+- [특정 하드웨어 구성을 기반으로 하는 디바이스를 반환하는 쿼리를 만듭니다](../../../../core/servers/manage/queries-technical-reference.md).  
 
--   [특정 하드웨어 구성을 기반으로 하는 쿼리 기반 컬렉션을 만듭니다](../../../../core/clients/manage/collections/introduction-to-collections.md). 쿼리 기반 컬렉션 멤버 자격이 일정에 따라 자동으로 업데이트됩니다. 소프트웨어 배포를 포함하여 여러 작업에 대한 컬렉션을 사용할 수 있습니다. 을 참조하세요.  
+- [특정 하드웨어 구성을 기반으로 하는 쿼리 기반 컬렉션을 만듭니다](../../../../core/clients/manage/collections/introduction-to-collections.md). 쿼리 기반 컬렉션 멤버 자격이 일정에 따라 자동으로 업데이트됩니다. 소프트웨어 배포를 포함하여 여러 작업에 대한 컬렉션을 사용할 수 있습니다. 을 참조하세요.  
 
--   [조직의 하드웨어 구성에 대한 특정 세부 정보를 표시하는 보고서를 실행합니다](../../../../core/servers/manage/reporting.md).   
+- [조직의 하드웨어 구성에 대한 특정 세부 정보를 표시하는 보고서를 실행합니다](../../../../core/servers/manage/reporting.md).   
 
--   [리소스 탐색기를 사용](../../../../core/clients/manage/inventory/use-resource-explorer-to-view-hardware-inventory.md)하여 클라이언트 장치에서 수집되는 하드웨어 인벤토리에 대한 자세한 정보를 볼 수 있습니다.   
+- [리소스 탐색기를 사용](../../../../core/clients/manage/inventory/use-resource-explorer-to-view-hardware-inventory.md)하여 클라이언트 디바이스에서 수집되는 하드웨어 인벤토리에 대한 자세한 정보를 볼 수 있습니다.   
 
- 하드웨어 인벤토리가 클라이언트 디바이스에서 실행되는 경우 클라이언트가 반환하는 첫 번째 인벤토리 데이터는 항상 전체 인벤토리입니다. 후속 인벤토리 정보는 델타 인벤토리 정보만 포함됩니다. 사이트 서버는 받은 순서대로 델타 인벤토리 정보를 처리합니다. 클라이언트에 대한 델타 정보가 없는 경우 사이트 서버에서는 추가 델타 정보를 거부하고 클라이언트에게 전체 인벤토리 주기를 실행하도록 지시합니다.  
+  하드웨어 인벤토리가 클라이언트 디바이스에서 실행되는 경우 클라이언트가 반환하는 첫 번째 인벤토리 데이터는 항상 전체 인벤토리입니다. 후속 인벤토리 정보는 델타 인벤토리 정보만 포함됩니다. 사이트 서버는 받은 순서대로 델타 인벤토리 정보를 처리합니다. 클라이언트에 대한 델타 정보가 없는 경우 사이트 서버에서는 추가 델타 정보를 거부하고 클라이언트에게 전체 인벤토리 주기를 실행하도록 지시합니다.  
 
- Configuration Manager에서는 이중 부팅 컴퓨터를 제한적으로 지원합니다. Configuration Manager에서 이중 부팅 컴퓨터를 검색할 수 있지만 인벤토리 주기가 실행될 때 활성화되었던 운영 체제의 인벤토리 정보만 반환합니다.  
+  Configuration Manager에서는 이중 부팅 컴퓨터를 제한적으로 지원합니다. Configuration Manager에서 이중 부팅 컴퓨터를 검색할 수 있지만 인벤토리 주기가 실행될 때 활성화되었던 운영 체제의 인벤토리 정보만 반환합니다.  
 
 > [!NOTE]  
 >  Linux 및 UNIX를 실행하는 클라이언트에서 하드웨어 인벤토리를 사용하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 Linux 및 UNIX용 하드웨어 인벤토리](../../../../core/clients/manage/inventory/hardware-inventory-for-linux-and-unix.md)를 참조하세요.  
@@ -49,4 +49,4 @@ System Center Configuration Manager에서 하드웨어 인벤토리를 사용하
 - NOIDMIF 파일을 사용하여 Configuration Manager에서 인벤토리에 포함할 수 없는 클라이언트 디바이스에 대한 정보를 수집합니다. 예를들어, 다음 레이블을 디바이스에만 존재 하는 디바이스 자산 번호 정보를 수집 하는 것이 좋습니다. NOIDMIF 인벤토리 클라이언트 디바이스에서 수집 된 자동으로 연결 됩니다.  
 - IDMIF 파일을 사용하여 Configuration Manager 클라이언트와 연결되지 않은 프로젝터, 복사기, 네트워크 프린터 등의 자산에 대한 정보를 수집합니다.  
 
- 이러한 방법을 사용하여 Configuration Manager 하드웨어 인벤토리를 확장하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 하드웨어 인벤토리를 구성하는 방법](../../../../core/clients/manage/inventory/configure-hardware-inventory.md)을 참조하세요.  
+  이러한 방법을 사용하여 Configuration Manager 하드웨어 인벤토리를 확장하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 하드웨어 인벤토리를 구성하는 방법](../../../../core/clients/manage/inventory/configure-hardware-inventory.md)을 참조하세요.  

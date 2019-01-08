@@ -10,12 +10,12 @@ ms.assetid: 341f0d0b-f907-44cf-9e10-e1b41fc15f82
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6eaac644b876fa3adfa1a2c79e7c4c5810942d9f
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 187f876999f39dd1d2d4aa345a7e9037f745a0ed
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385578"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53418903"
 ---
 # <a name="how-to-deploy-clients-to-windows-computers-in-configuration-manager"></a>Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법
 
@@ -147,7 +147,7 @@ Active Directory 스키마를 확장하지 않은 경우 그룹 정책을 사용
 
 3.  **인트라넷 Microsoft 업데이트 서비스 위치 지정** 설정의 속성을 열고 **사용**을 선택합니다.  
 
-4.  **인트라넷 업데이트 서비스에서 업데이트를 검색하도록 설정**: 소프트웨어 업데이트 지점 서버의 이름과 포트를 지정합니다.  
+4.  **업데이트를 검색하도록 인트라넷 업데이트 서비스 설정**: 소프트웨어 업데이트 지점 서버의 이름 및 포트를 지정합니다.  
 
     -   Configuration Manager 사이트 시스템에서 FQDN(정규화된 도메인 이름)을 사용하도록 구성한 경우 이 형식을 사용합니다.  
 
@@ -256,7 +256,7 @@ CCMSetup.exe는 필요한 모든 필수 구성 요소를 클라이언트 컴퓨�
 
 이 예제에서는 추가 매개 변수 또는 속성 없이 클라이언트를 설치합니다. 클라이언트에서 다음 설정을 포함하여 Active Directory Domain Services에 게시된 클라이언트 설치 속성을 사용하여 자동으로 구성합니다.  
 
-- 사이트 코드: 이 설정에는 클라이언트의 네트워크 위치가 클라이언트 할당을 위해 구성한 경계 그룹에 포함되어야 합니다.  
+- 사이트 코드: 이 설정에는 클라이언트의 네트워크 위치가 클라이언트 할당을 위해 구성된 경계 그룹에 포함되어야 합니다.  
 - 관리 지점
 - 대체 상태 지점
 - HTTPS만 사용하여 통신  
@@ -301,7 +301,7 @@ Configuration Manager를 사용하여 선택한 디바이스에 대한 클라이
 
 클라이언트 소프트웨어를 업그레이드하려면 다음 절차를 사용하여 Configuration Manager 클라이언트 컴퓨터에 배포할 수 있는 Configuration Manager 패키지 및 프로그램을 만듭니다.  
 
-1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 영역으로 이동하고, **애플리케이션 관리**를 펼치고, **패키지**를 선택합니다.  
+1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 영역으로 이동하고, **응용 프로그램 관리**를 펼치고, **패키지**를 선택합니다.  
 
 2.  리본 메뉴에 있는 **홈** 탭의 **만들기** 그룹에서 **정의에서 패키지 만들기**를 선택합니다.  
 
@@ -320,7 +320,7 @@ Configuration Manager를 사용하여 선택한 디바이스에 대한 클라이
 
 
 
-## <a name="bkmk_mdm"></a> Intune MDM 관리 Windows 장치
+## <a name="bkmk_mdm"></a> Intune MDM 관리 Windows 디바이스
 
 Microsoft Intune에 등록된 디바이스에 Configuration Manager 클라이언트를 배포합니다. 
 
@@ -340,7 +340,7 @@ Azure AD ID를 사용하는 최신 Windows 10 디바이스에 Configuration Mana
 
 2. Intune 소프트웨어 게시자에서 명령줄 매개 변수를 입력합니다. 예를 들어 인트라넷의 기존 클라이언트로 다음 명령줄을 사용합니다.  
 
-  `CCMSETUPCMD="/MP:<FQDN of management point> SMSMP=<FQDN of management point> SMSSITECODE=<Your site code> DNSSUFFIX=<DNS Suffix of management point>"`  
+   `CCMSETUPCMD="/MP:<FQDN of management point> SMSMP=<FQDN of management point> SMSSITECODE=<Your site code> DNSSUFFIX=<DNS Suffix of management point>"`  
 
    > [!Note]  
    > Azure AD 인증을 사용하는 최신 Windows 10 클라이언트를 사용하는 예제 명령줄은 [공동 관리를 위해 Windows 10 디바이스 준비](/sccm/core/clients/manage/co-management-prepare#command-line-to-install-configuration-manager-client)를 참조하세요.  

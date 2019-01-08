@@ -10,12 +10,12 @@ ms.assetid: 65c88e54-3574-48b0-a127-9cc914a89dca
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5f063034ed7cdc22a92df8d07d8be03ece12f663
-ms.sourcegitcommit: 4e4b71227309bee7e9f1285971f8235c67a9c502
+ms.openlocfilehash: 4587549ef2f43be3dcc5e18021f60c42770f5800
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46533748"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53415520"
 ---
 # <a name="the-content-library-in-configuration-manager"></a>Configuration Manager의 콘텐츠 라이브러리
 
@@ -45,7 +45,7 @@ Configuration Manager는 드라이브에 포함된 공간이 지정된 최소 �
 배포 지점에 대한 드라이브 설정을 구성하는 방법에 대한 자세한 내용은 [콘텐츠 및 콘텐츠 인프라 관리](/sccm/core/servers/deploy/configure/manage-content-and-content-infrastructure)를 참조하세요.  
 
 
->  [!IMPORTANT]  
+> [!IMPORTANT]
 >  설치 후에 배포 지점에서 다른 위치로 콘텐츠 라이브러리를 이동하려면 Configuration Manager 도구의 **콘텐츠 라이브러리 전송** 도구를 사용합니다. 자세한 내용은 [콘텐츠 라이브러리 전송 도구](/sccm/core/support/content-library-transfer)를 참조하세요.  
 
 
@@ -112,13 +112,13 @@ Configuration Manager는 다음 경우에 중앙 관리 사이트에서 콘텐�
 
 5. 세부 정보 창의 요약 탭에서 콘텐츠 라이브러리 열의 **상태** 값을 확인합니다. 이 속성은 콘텐츠 라이브러리 이동 시 업데이트되어 사이트 진행 상황을 표시합니다.  
 
-    - **진행 중**인 동안 **이동 진행률(%)** 값은 완료 비율을 표시합니다.  
+   - **진행 중**인 동안 **이동 진행률(%)** 값은 완료 비율을 표시합니다.  
 
-    - 오류 상태가 있을 경우 상태는 오류를 표시합니다. 일반적인 오류에는 **액세스가 거부됨** 또는 **디스크 꽉 참**이 포함됩니다.  
+   - 오류 상태가 있을 경우 상태는 오류를 표시합니다. 일반적인 오류에는 **액세스가 거부됨** 또는 **디스크 꽉 참**이 포함됩니다.  
 
-    - 완료되면 **완료**가 표시됩니다.  
+   - 완료되면 **완료**가 표시됩니다.  
     
-    자세한 내용은 **distmgr.log**를 참조하세요. 자세한 내용은 [사이트 서버 및 사이트 시스템 서버 로그](/sccm/core/plan-design/hierarchy/log-files#BKMK_SiteSiteServerLog)를 참조하세요.  
+     자세한 내용은 **distmgr.log**를 참조하세요. 자세한 내용은 [사이트 서버 및 사이트 시스템 서버 로그](/sccm/core/plan-design/hierarchy/log-files#BKMK_SiteSiteServerLog)를 참조하세요.  
 
 이 프로세스에 대한 자세한 내용은 [순서도 - 콘텐츠 라이브러리 관리](/sccm/core/plan-design/hierarchy/manage-content-library-flowchart)를 참조하세요.
 

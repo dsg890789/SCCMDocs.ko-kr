@@ -2,7 +2,7 @@
 title: 버전 1810의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager 최신 라인인 1810 버전에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
-ms.date: 11/27/2018
+ms.date: 12/20/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 4812324b-e6aa-4431-bf1d-9fcd763a8caa
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 80c4798a93d2424759b85b7d8fe106b9251714a4
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.openlocfilehash: f93b9c7e96c66fd2279d8d6e42f605a763c75025
+ms.sourcegitcommit: 81e3666c41eb976cc7651854042dafe219e2e467
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52458177"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53747146"
 ---
 # <a name="whats-new-in-version-1810-of-configuration-manager-current-branch"></a>Configuration Manager 1810 버전의 새로운 기능
 
@@ -28,9 +28,9 @@ Configuration Manager의 현재 분기에 대한 1810 업데이트는 콘솔 내
 > [!Note]  
 > 이 문서는 현재 이 버전의 모든 중요한 기능을 나열합니다. 그러나 일부 섹션은 새 기능에 대한 추가 정보가 있는 업데이트된 콘텐츠에 아직 연결되지 않았습니다. 이 페이지에서 정기적으로 업데이트를 확인하세요. 변경 내용은 ***[업데이트]*** 태그로 표시됩니다. 이 표시는 콘텐츠가 최종 버전이 되면 제거될 것입니다.  
 
-<!--
-Aside from new features, this release also includes additional changes such as bug fixes. For more information, see [Summary of changes in Configuration Manager current branch, version 1810](https://support.microsoft.com/help/4459701).
+새 기능 외에 이 릴리스에는 버그 수정과 같은 추가 변경 사항도 포함되어 있습니다. 자세한 내용은 [Configuration Manager 현재 분기, 버전 1810의 변경 내용 요약](https://support.microsoft.com/help/4482169)을 참조하세요.
 
+<!--
 For more information on changes to the Windows PowerShell cmdlets for Configuration Manager, see [PowerShell 1810 Release Notes](https://docs.microsoft.com/powershell/sccm/1810_release_notes?view=sccm-ps).
 
 The following additional updates to this release are also now available:
@@ -77,13 +77,13 @@ Version 1810 drops support for the following products:
 
 버전 1810을 설치하거나 해당 버전으로 업데이트하는 경우 Configuration Manager 설치는 이제 다음과 같은 필수 구성 요소 검사를 포함하거나 개선합니다.
 
-- **시스템 다시 시작 보류 중**: 이 필수 구성 요소 검사는 이제 복원력이 향상되었습니다. Windows 기능에 대한 추가 레지스트리 키를 확인합니다. 자세한 내용은 [시스템 다시 시작 보류 중](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#pending-system-restart)을 참조하세요. <!--SCCMDocs-pr issue 3010-->  
+- **시스템 다시 시작 보류 중**: 이제 이 필수 구성 요소 검사의 복원력이 향상되었습니다. Windows 기능에 대한 추가 레지스트리 키를 확인합니다. 자세한 내용은 [시스템 다시 시작 보류 중](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#pending-system-restart)을 참조하세요. <!--SCCMDocs-pr issue 3010-->  
 
-- **SQL 변경 내용 추적 정리**: 사이트 데이터베이스에 SQL 변경 내용 추적 데이터의 백로그가 있는 경우 새 검사 이 백로그를 확인하고 지우는 절차를 포함한 자세한 내용은 [SQL 변경 내용 추적 정리](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#bkmk_changetracking)를 참조하세요. <!--SCCMDocs-pr issue 3023-->  
+- **SQL 변경 내용 추적 정리**: 사이트 데이터베이스에 SQL 변경 내용 추적 데이터의 백로그가 있는지 확인하는 새로운 검사입니다. 이 백로그를 확인하고 지우는 절차를 포함한 자세한 내용은 [SQL 변경 내용 추적 정리](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#bkmk_changetracking)를 참조하세요. <!--SCCMDocs-pr issue 3023-->  
 
-<!-- - **SQL Native Client version**: This prerequisite check is updated for versions of SQL Native Client that support TLS 1.2. The minimum version is 11.4.7001.0. For more information, see [SQL Native Client version](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#sql-native-client). <!--SCCMDocs-pr issue 3094->  
- -->
-- **Windows 클러스터 노드의 사이트 시스템**: Configuration Manager 설치 프로세스는 장애 조치(failover) 클러스터링을 위한 Windows 역할이 있는 컴퓨터에서 사이트 서버 역할의 설치를 더 이상 차단하지 않습니다. SQL Always On에는 이 역할이 필요하므로 이전에는 사이트 서버에 사이트 데이터베이스를 공동 배치할 수 없었습니다. 이 변경을 사용하면 SQL Always On 및 사이트 서버를 수동 모드에서 사용하여 더 적은 수의 서버로 고가용성 사이트를 만들 수 있습니다. 자세한 내용은 [Windows 장애 조치(failover) 클러스터](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#windows-failover-cluster)를 참조하세요. <!--1359132-->  
+- **SQL Native Client 버전**: 이 필수 구성 요소 검사가 TLS 1.2를 지원하는 SQL Native Client 버전에 대해 업데이트되었습니다. 최소 버전은 [SQL 2012 SP4](https://www.microsoft.com/download/details.aspx?id=50402)입니다. 자세한 내용은 [SQL Native Client 버전](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#sql-native-client)을 참조하세요. <!--SCCMDocs-pr issue 3094->  
+
+- **Windows 클러스터 노드의 사이트 시스템**: Configuration Manager 설치 프로세스는 장애 조치(Failover) 클러스터링을 위한 Windows 역할이 있는 컴퓨터에서 사이트 서버 역할의 설치를 더 이상 차단하지 않습니다. SQL Always On에는 이 역할이 필요하므로 이전에는 사이트 서버에 사이트 데이터베이스를 공동 배치할 수 없었습니다. 이 변경을 사용하면 SQL Always On 및 사이트 서버를 수동 모드에서 사용하여 더 적은 수의 서버로 고가용성 사이트를 만들 수 있습니다. 자세한 내용은 [Windows 장애 조치(failover) 클러스터](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#windows-failover-cluster)를 참조하세요. <!--1359132-->  
 
 
 
@@ -104,15 +104,15 @@ Version 1810 drops support for the following products:
 ### <a name="new-boundary-group-options"></a>새 경계 그룹 옵션
 <!--1358749--> 이제 경계 그룹에는 사용자 환경에서 콘텐츠 배포를 보다 세밀하게 제어할 수 있는 다음 추가 설정이 포함됩니다.
 
-- **같은 서브넷 내의 피어보다 배포 지점 선호**: 기본적으로 관리 지점은 콘텐츠 위치 목록의 맨 위에 피어 캐시 원본을 우선적으로 배치합니다. 이 설정은 피어 캐시 원본과 동일한 서브넷에 있는 클라이언트의 우선 순위를 반대로 바꿉니다.  
+- **같은 서브넷의 피어보다 배포 지점 선호**: 기본적으로 관리 지점은 콘텐츠 위치 목록 맨 위에 있는 피어 캐시 원본의 우선 순위를 지정합니다. 이 설정은 피어 캐시 원본과 동일한 서브넷에 있는 클라이언트의 우선 순위를 반대로 바꿉니다.  
 
-- **배포 지점보다 클라우드 배포 지점 선호**: 인터넷 연결이 더 빠른 지점이 있는 경우 이제 클라우드 콘텐츠에 우선 순위를 지정할 수 있습니다.  
+- **배포 지점보다 클라우드 배포 지점 선호**: 더 빠른 인터넷 링크가 있는 지점이 있는 경우 이제 클라우드 콘텐츠의 우선 순위를 지정할 수 있습니다.  
 
 자세한 내용은 [피어 다운로드를 위한 경계 그룹 옵션](/sccm/core/servers/deploy/configure/boundary-groups#bkmk_bgoptions)을 참조하세요.
 
 
 ### <a name="management-insights-rule-for-peer-cache-source-client-version"></a>피어 캐시 원본 클라이언트 버전의 관리 인사이트 규칙
-<!-- 1358008 --> **관리 인사이트** 노드에는 피어 캐시 원본으로 사용되지만 1806 이전 클라이언트 버전에서 업그레이드되지 않은 클라이언트를 식별하는 새 규칙이 있습니다. 새 규칙은 **피어 캐시 원본을 최신 버전의 Configuration Manager 클라이언트로 업그레이드**이고 새 **자동 유지 관리** 규칙 그룹의 일부입니다. 1806 이전 클라이언트는 1806 이상 버전을 실행하는 클라이언트의 피어 캐시 원본으로 사용될 수 없습니다. **작업 수행**을 선택하여 클라이언트 목록을 표시하는 장치 보기를 엽니다. 
+<!-- 1358008 --> **관리 인사이트** 노드에는 피어 캐시 원본으로 사용되지만 1806 이전 클라이언트 버전에서 업그레이드되지 않은 클라이언트를 식별하는 새 규칙이 있습니다. 새 규칙은 **피어 캐시 원본을 최신 버전의 Configuration Manager 클라이언트로 업그레이드**이고 새 **자동 유지 관리** 규칙 그룹의 일부입니다. 1806 이전 클라이언트는 1806 이상 버전을 실행하는 클라이언트의 피어 캐시 원본으로 사용될 수 없습니다. **작업 수행**을 선택하여 클라이언트 목록을 표시하는 디바이스 보기를 엽니다. 
 
 자세한 내용은 [관리 인사이트](/sccm/core/servers/manage/management-insights)를 참조하세요.
 
@@ -177,7 +177,7 @@ Version 1810 drops support for the following products:
 
 
 
-## <a name="bkmk_app"></a> 응용 프로그램 관리
+## <a name="bkmk_app"></a> 애플리케이션 관리
 
 ### <a name="convert-applications-to-msix"></a>애플리케이션을 MSIX로 변환
 <!--1359029--> 버전 1806부터 Configuration Manager는 새 Windows 10 앱 패키지(.msix) 형식의 배포를 지원합니다. 이제 기존 Windows Installer(.msi) 애플리케이션을 MSIX 형식으로 변환할 수 있습니다.
@@ -213,7 +213,7 @@ PowerShell 프로필은 PowerShell이 시작될 때 실행되는 스크립트입
 ### <a name="task-sequence-support-of-windows-autopilot-for-existing-devices"></a>기존 디바이스에 대한 Windows Autopilot의 작업 순서 지원
 <!--1358333-->
 
-[기존 장치에 대한 Windows Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)은 이제 Windows 10 Insider Preview와 함께 제공됩니다. 이 새로운 기능을 사용하면 단일, 네이티브 Configuration Manager 작업 순서를 사용하여 [Windows Autopilot 사용자 기반 모드](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven)용으로 Windows 7 디바이스를 이미지로 다시 설치하고 프로비전할 수 있습니다. 
+[기존 디바이스에 대한 Windows Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)은 이제 Windows 10 버전 1809 이상에서 사용할 수 있습니다. 이 새로운 기능을 사용하면 단일, 네이티브 Configuration Manager 작업 순서를 사용하여 [Windows Autopilot 사용자 기반 모드](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven)용으로 Windows 7 디바이스를 이미지로 다시 설치하고 프로비전할 수 있습니다. 
 
 <!--For more information, see []().--> 
 
@@ -310,13 +310,13 @@ PowerShell 프로필은 PowerShell이 시작될 때 실행되는 스크립트입
 
 이제 **관리 인사이트** 노드에 그래픽 대시보드가 포함됩니다. 이 대시보드는 규칙 상태의 개요를 표시하므로 진행 상태를 보다 쉽게 표시할 수 있습니다. 이 대시보드에는 다음과 같은 타일이 있습니다.
 
-- **관리 인사이트 인덱스**: 관리 인사이트 규칙에 대한 전체 진행 상황을 추적합니다. 인덱스는 가중 평균입니다. 중요 규칙이 가장 유용합니다. 이 인덱스는 선택적 규칙에 가장 작은 가중치를 부여합니다.  
+- **관리 인사이트 인덱스**: 관리 인사이트 규칙에 대한 전반적인 진행 상황을 추적합니다. 인덱스는 가중 평균입니다. 중요 규칙이 가장 유용합니다. 이 인덱스는 선택적 규칙에 가장 작은 가중치를 부여합니다.  
 
-- **관리 인사이트 그룹**: 각 그룹에 있는 규칙의 백분율을 표시합니다.  
+- **관리 인사이트 그룹**: 각 그룹의 규칙에 대한 백분율을 표시합니다.  
 
-- **관리 인사이트 우선 순위**: 우선 순위별 규칙의 백분율을 표시합니다.  
+- **관리 인사이트 우선 순위**: 우선 순위에 따라 규칙에 대한 백분율을 표시합니다.  
 
-- **모든 인사이트**: 우선 순위 및 상태를 포함하는 인사이트 테이블입니다.  
+- **모든 인사이트**: 우선 순위 및 상태가 포함된 인사이트 테이블입니다.  
 
 ![관리 인사이트 대시보드 스크린샷](media/1357979-management-insights-dashboard.png)
 

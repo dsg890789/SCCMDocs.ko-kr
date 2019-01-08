@@ -10,12 +10,12 @@ ms.assetid: 95033a9b-ff13-4b70-b1de-bcb25bcb6024
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b9a3f4583944f0818f74930753bad99e3408a928
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 0b218d665d574c74358e3d018f45dd5b173cc21c
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32350020"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53424173"
 ---
 # <a name="customize-operating-system-images-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 운영 체제 이미지 사용자 지정
 
@@ -32,34 +32,34 @@ System Center Configuration Manager의 운영 체제 이미지는 WIM 파일이�
 #### <a name="automated-configuration"></a>자동화된 구성  
  **장점**  
 
--   완전히 자동으로 구성할 수 있으므로 관리자나 사용자가 없어도 됩니다.  
+- 완전히 자동으로 구성할 수 있으므로 관리자나 사용자가 없어도 됩니다.  
 
--   작업 순서를 다시 사용하여 다른 참조 컴퓨터의 구성을 높은 신뢰 수준으로 반복할 수 있습니다.  
+- 작업 순서를 다시 사용하여 다른 참조 컴퓨터의 구성을 높은 신뢰 수준으로 반복할 수 있습니다.  
 
--   작업 순서를 수정하면 전체 작업 순서를 다시 만들지 않고도 참조 컴퓨터 간에 차이를 둘 수 있습니다.  
+- 작업 순서를 수정하면 전체 작업 순서를 다시 만들지 않고도 참조 컴퓨터 간에 차이를 둘 수 있습니다.  
 
- **단점**  
+  **단점**  
 
--   작업 순서를 만드는 첫 번째 작업을 만들고 테스트하려면 시간이 오래 걸릴 수 있습니다.  
+- 작업 순서를 만드는 첫 번째 작업을 만들고 테스트하려면 시간이 오래 걸릴 수 있습니다.  
 
--   참조 컴퓨터 요구 사항이 크게 변경되면 작업 순서를 다시 만들고 다시 테스트하는 데 시간이 오래 걸릴 수 있습니다.  
+- 참조 컴퓨터 요구 사항이 크게 변경되면 작업 순서를 다시 만들고 다시 테스트하는 데 시간이 오래 걸릴 수 있습니다.  
 
 #### <a name="manual-configuration"></a>수동 구성  
  **장점**  
 
--   작업 순서를 만들 필요도 없고 오랫동안 작업 순서를 테스트하고 문제를 해결할 필요도 없습니다.  
+- 작업 순서를 만들 필요도 없고 오랫동안 작업 순서를 테스트하고 문제를 해결할 필요도 없습니다.  
 
--   모든 소프트웨어 패키지(Windows 자체 포함)를 Configuration Manage 패키지에 넣지 않고도 CD에서 바로 설치할 수 있습니다.  
+- 모든 소프트웨어 패키지(Windows 자체 포함)를 Configuration Manage 패키지에 넣지 않고도 CD에서 바로 설치할 수 있습니다.  
 
- **단점**  
+  **단점**  
 
--   참조 컴퓨터 구성의 정확도는 컴퓨터를 구성하는 관리자나 사용자에 따라 달라집니다.  
+- 참조 컴퓨터 구성의 정확도는 컴퓨터를 구성하는 관리자나 사용자에 따라 달라집니다.  
 
--   참조 컴퓨터가 제대로 구성되었는지 계속 확인하고 테스트해야 합니다.  
+- 참조 컴퓨터가 제대로 구성되었는지 계속 확인하고 테스트해야 합니다.  
 
--   구성 방법을 다시 사용할 수 없습니다.  
+- 구성 방법을 다시 사용할 수 없습니다.  
 
--   프로세스 내내 적극적으로 개입할 사람이 필요합니다.  
+- 프로세스 내내 적극적으로 개입할 사람이 필요합니다.  
 
 ###  <a name="BKMK_RefComputerConsiderations"></a> 참조 컴퓨터에 대한 고려 사항  
  다음에는 참조 컴퓨터를 구성할 때 고려할 기본 항목이 나와 있습니다.  
@@ -113,20 +113,20 @@ System Center Configuration Manager의 운영 체제 이미지는 WIM 파일이�
 
 #### <a name="to-manually-build-the-reference-computer"></a>수동으로 참조 컴퓨터를 만들려면  
 
-1.  참조 컴퓨터로 사용할 컴퓨터를 확인합니다.  
+1. 참조 컴퓨터로 사용할 컴퓨터를 확인합니다.  
 
-2.  적절한 운영 체제 및 배포할 운영 체제 이미지를 만드는 데 필요한 기타 모든 소프트웨어로 참조 컴퓨터를 구성합니다.  
+2. 적절한 운영 체제 및 배포할 운영 체제 이미지를 만드는 데 필요한 기타 모든 소프트웨어로 참조 컴퓨터를 구성합니다.  
 
-    > [!WARNING]  
-    >  최소한 적절한 운영 체제와 서비스 팩, 지원 드라이버 및 필수 소프트웨어 업데이트를 설치합니다.  
+   > [!WARNING]  
+   >  최소한 적절한 운영 체제와 서비스 팩, 지원 드라이버 및 필수 소프트웨어 업데이트를 설치합니다.  
 
-3.  참조 컴퓨터를 작업 그룹의 구성원으로 구성합니다.  
+3. 참조 컴퓨터를 작업 그룹의 구성원으로 구성합니다.  
 
-4.  참조 컴퓨터에서 로컬 관리자 암호를 다시 설정하여 암호 값을 없앱니다.  
+4. 참조 컴퓨터에서 로컬 관리자 암호를 다시 설정하여 암호 값을 없앱니다.  
 
-5.  다음 명령을 사용하여 Sysprep을 실행합니다.  **sysprep /quiet /generalize /reboot** /generalize 옵션은 Windows 설치에서 시스템 관련 데이터를 제거하도록 Sysprep에 지시합니다. 시스템 관련 정보에는 이벤트 로그, 고유 SID(보안 ID) 및 기타 고유 정보가 포함됩니다. 고유한 시스템 정보를 제거한 후 컴퓨터를 다시 시작합니다.  
+5. 다음 명령을 사용하여 Sysprep을 실행합니다.  **sysprep /quiet /generalize /reboot** /generalize 옵션은 Windows 설치에서 시스템 관련 데이터를 제거하도록 Sysprep에 지시합니다. 시스템 관련 정보에는 이벤트 로그, 고유 SID(보안 ID) 및 기타 고유 정보가 포함됩니다. 고유한 시스템 정보를 제거한 후 컴퓨터를 다시 시작합니다.  
 
- 참조 컴퓨터가 준비되면 참조 컴퓨터에서 운영 체제 이미지를 캡처하는 작업 순서를 사용합니다.  자세한 내용은 [기존 참조 컴퓨터에서 운영 체제 이미지 캡처](../deploy-use/create-a-task-sequence-to-capture-an-operating-system.md#BKMK_CaptureExistingRefComputer)를 참조하세요.  
+   참조 컴퓨터가 준비되면 참조 컴퓨터에서 운영 체제 이미지를 캡처하는 작업 순서를 사용합니다.  자세한 내용은 [기존 참조 컴퓨터에서 운영 체제 이미지 캡처](../deploy-use/create-a-task-sequence-to-capture-an-operating-system.md#BKMK_CaptureExistingRefComputer)를 참조하세요.  
 
 ##  <a name="BKMK_UseTSToBuildReference"></a> 작업 순서를 사용하여 참조 컴퓨터 만들기  
  운영 체제, 드라이버, 애플리케이션 등에 배포하는 작업 순서를 사용하여 참조 컴퓨터를 만드는 프로세스를 자동화할 수 있습니다.  참조 컴퓨터를 빌드하고 참조 컴퓨터에서 운영 체제 이미지를 캡처하려면 다음 단계를 따르세요.  

@@ -10,12 +10,12 @@ ms.assetid: e7cdb1a9-140a-436e-ac71-72d083110223
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4a6c989b1eabe47f3360ceec660d5eba32811d60
-ms.sourcegitcommit: ee434c53b3695a039b56298082b6f61f1006d9dd
+ms.openlocfilehash: dcf12016206fe0c4296d08ad8404b163607313e1
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943294"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53417169"
 ---
 # <a name="use-a-command-line-to-install-system-center-configuration-manager-sites"></a>명령줄을 사용하여 System Center Configuration Manager 사이트 설치
 
@@ -26,41 +26,41 @@ ms.locfileid: "49943294"
 ## <a name="supported-tasks-for-command-line-installations"></a>명령줄 설치에 대해 지원되는 작업
  설치 프로그램을 실행하는 이 방법은 다음과 같은 사이트 설치 및 사이트 유지 관리 작업을 지원합니다.
 
--   **명령 프롬프트에서 중앙 관리 사이트 또는 기본 사이트 설치**  
+- **명령 프롬프트에서 중앙 관리 사이트 또는 기본 사이트 설치**  
   [설치용 명령줄 옵션](../../../../core/servers/deploy/install/command-line-options-for-setup.md) 보기
 
--  **중앙 관리 사이트 또는 기본 사이트에서 사용 중인 언어 수정**  
-    명령 프롬프트에서 사이트에 설치된 언어(모바일 디바이스용 언어 포함)를 수정하려면 다음을 수행해야 합니다.  
+- **중앙 관리 사이트 또는 기본 사이트에서 사용 중인 언어 수정**  
+   명령 프롬프트에서 사이트에 설치된 언어(모바일 디바이스용 언어 포함)를 수정하려면 다음을 수행해야 합니다.  
 
-     -   사이트 서버의 **&lt;Configuration Manager 설치 경로\>\BIN\X64**에서 설치 프로그램 실행
-     -   **/MANAGELANGS** 명령줄 옵션 사용
-     -   추가 또는 제거할 언어를 지정하는 언어 스크립트 파일 지정  
+  - 사이트 서버의 **&lt;Configuration Manager 설치 경로\>\BIN\X64**에서 설치 프로그램 실행
+  - **/MANAGELANGS** 명령줄 옵션 사용
+  - 추가 또는 제거할 언어를 지정하는 언어 스크립트 파일 지정  
 
     예를 들어 **setupwpf.exe /MANAGELANGS &lt;언어 스크립트 파일\>** 명령 구문을 사용합니다.  
 
     언어 스크립트 파일을 만들려면 [언어 관리용 명령줄 옵션](../../../../core/servers/deploy/install/command-line-options-for-setup.md#bkmk_Lang)의 정보를 참조하세요.  
 
--  **무인 사이트 설치 또는 사이트 복구를 위해 설치 스크립트 파일 사용**  
-    설치 스크립트를 사용하여 명령 프롬프트에서 설치 프로그램을 실행할 수 있으며, 무인 사이트 설치를 실행합니다. 이 옵션을 사용하여 사이트를 복구할 수도 있습니다.    
+- **무인 사이트 설치 또는 사이트 복구를 위해 설치 스크립트 파일 사용**  
+   설치 스크립트를 사용하여 명령 프롬프트에서 설치 프로그램을 실행할 수 있으며, 무인 사이트 설치를 실행합니다. 이 옵션을 사용하여 사이트를 복구할 수도 있습니다.    
 
-    설치 프로그램에서 스크립트를 사용하려면  
+   설치 프로그램에서 스크립트를 사용하려면  
 
-    -   명령줄 옵션 **/SCRIPT**를 사용하여 설치 프로그램을 실행하고 스크립트 파일을 지정합니다.  
+  - 명령줄 옵션 **/SCRIPT**를 사용하여 설치 프로그램을 실행하고 스크립트 파일을 지정합니다.  
 
-    -   필요한 키와 값으로 스크립트 파일을 구성해야 합니다.  
+  - 필요한 키와 값으로 스크립트 파일을 구성해야 합니다.  
 
     중앙 관리 사이트 또는 기본 사이트의 무인 설치를 수행하려면 스크립트 파일에 다음 섹션이 있어야 합니다.  
 
-    -   Identification    
-    -   Options    
-    -   SQLConfigOptions    
-      -   HierarchyOptions    
-    -   CloudConnectorOptions   
+  - Identification    
+  - Options    
+  - SQLConfigOptions    
+    -   HierarchyOptions    
+  - CloudConnectorOptions   
 
     사이트를 복구하려면 스크립트 파일의 다음 섹션도 포함해야 합니다.  
 
-    -   Identification  
-    -   복구
+  - Identification  
+  - 복구
 
 자세한 내용은 [Configuration Manager에 대한 무인 사이트 복구](/sccm/protect/understand/unattended-recovery)를 참조하세요.  
 

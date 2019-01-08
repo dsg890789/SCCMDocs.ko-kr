@@ -10,16 +10,16 @@ ms.assetid: f4f9a5fd-f573-4b99-ad93-b2c76812e922
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 7d6b957ebcc19dfe8c14dd781f71678db8e160af
-ms.sourcegitcommit: 1a1bac2d5ee0f20ce565d29798ee4dd99aaca044
+ms.openlocfilehash: c4ceec8c0d5482456d3257106ee067bf3d9ec1fb
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281909"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53418104"
 ---
 # <a name="install-and-upgrade-with-the-version-1606-baseline-media-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 버전 1606 기준 미디어를 사용하여 설치 및 업그레이드
 
-*적용 대상: System Center Configuration Manager(현재 분기), (장기 서비스 분기)*
+*적용 대상:  System Center Configuration Manager(현재 분기), (장기 서비스 분기)*
 
 Configuration Manager용 버전 1606 기준 미디어에서 설치 프로그램을 실행하면 System Center Configuration Manager의 장기 서비스 분기 또는 현재 분기 사이트를 설치할 수 있습니다.
 
@@ -71,13 +71,13 @@ LTSB에서 지원되지 않는 사이트 시스템 역할을 제거합니다.
 무인 설치 스크립트를 사용하여 사용이 허가된 분기를 설치하는 경우 스크립트의 옵션 섹션에 다음과 같은 섹션, 키 이름 및 값을 추가해야 합니다. 현재 분기의 평가판 설치를 스크립팅할 때는 이러한 값을 사용할 필요가 없습니다.  
 
  **SABranchOptions**
--   **키 이름: SAActive**
+- **키 이름: SAActive**
   - 값: 0 또는 1  
-  - 세부 정보: 값이 0이면 현재 분기의 사용이 허가되지 않은 평가판이 설치되고, 값이 1이면 사용이 허가된 버전이 설치됩니다.   
+  - 세부 정보:  값이 0이면 현재 분기의 사용이 허가되지 않은 평가판이 설치되고, 값이 1이면 사용이 허가된 버전이 설치됩니다.   
 
 - **CurrentBranch**
   - 값: 0 또는 1  
-  - 세부 정보: 값이 0이면 장기 서비스 분기가 설치되고, 값이 1이면 현재 분기가 설치됩니다.  
+  - 세부 정보:  값이 0이면 장기 서비스 분기가 설치되고, 값이 1이면 현재 분기가 설치됩니다.  
 
 예를 들어 사용이 허가된 현재 분기 버전을 설치하려면 다음을 사용합니다.
 

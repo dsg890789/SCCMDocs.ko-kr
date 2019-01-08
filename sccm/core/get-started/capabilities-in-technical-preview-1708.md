@@ -10,16 +10,16 @@ ms.assetid: 3c061ceb-3bdb-4d4f-8c60-344964bd416b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b6764acf3ecc1aaad4a19c9d56880e7bd5692464
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: b751dab7ca02112959a9a7d6ed8a51b037f25b0e
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32334619"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53422660"
 ---
 # <a name="capabilities-in-technical-preview-1708-for-system-center-configuration-manager"></a>System Center Configuration Manager용 기술 미리 보기 1708의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: System Center Configuration Manager(기술 미리 보기)*
 
 이 문서에서는 System Center Configuration Manager용 기술 미리 보기 버전 1708에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대해 피드백 제공 방법 등에 익숙해져야 합니다.     
 
@@ -30,7 +30,7 @@ ms.locfileid: "32334619"
     Workaround details.
 -->
 **이 Technical Preview의 알려진 문제:**
--   **수동 모드의 사이트 서버가 있는 경우 미리 보기 1708 버전에 대한 업데이트가 실패합니다**. 미리 보기 1706 또는 1707 버전을 실행하고 [수동 모드의 기본 사이트 서버](/sccm/core/get-started/capabilities-in-technical-preview-1706#site-server-role-high-availability)가 있는 경우 미리 보기 사이트를 1708 버전으로 성공적으로 업데이트하려면 먼저 수동 모드 사이트 서버를 제거해야 합니다. 사이트에서 1708 버전을 실행한 후에 수동 모드 사이트 서버를 다시 설치할 수 있습니다.
+- **수동 모드의 사이트 서버가 있는 경우 미리 보기 1708 버전에 대한 업데이트가 실패합니다**. 미리 보기 1706 또는 1707 버전을 실행하고 [수동 모드의 기본 사이트 서버](/sccm/core/get-started/capabilities-in-technical-preview-1706#site-server-role-high-availability)가 있는 경우 미리 보기 사이트를 1708 버전으로 성공적으로 업데이트하려면 먼저 수동 모드 사이트 서버를 제거해야 합니다. 사이트에서 1708 버전을 실행한 후에 수동 모드 사이트 서버를 다시 설치할 수 있습니다.
 
   수동 모드 사이트 서버를 제거하려면
   1. 콘솔에서 **관리** > **개요** > **사이트 구성** > **서버 및 사이트 시스템 역할**로 이동한 다음 수동 모드 사이트 서버를 선택합니다.
@@ -72,16 +72,14 @@ Configuration Manager 1706 이상에서는 [Configuration Manager 콘솔에서 P
 스크립트 실행 시 구성된 매개 변수 값이 사용됩니다. 필수 매개 변수를 구성하지 않은 경우 스크립트가 실행될 때 해당 매개 변수를 제공하라는 메시지가 최종 사용자에게 표시됩니다.
 
 ## <a name="management-insights"></a>관리 정보
-<!-- 1353967 -->
-이제는 사이트 데이터베이스의 데이터 분석에 따라 현재의 환경 상태에 대한 정보를 얻을 수 있습니다. 이 정보를 통해 환경을 더 잘 이해하고 해당 정보에 기반한 조치를 취할 수 있습니다. Configuration Manager 콘솔의 **관리** > **관리 정보** > **모든 정보**에서 관리 정보를 검토합니다. 이제 이 릴리스에서 사용할 수 있는 정보는 다음과 같습니다.
+<!-- 1353967 --> 이제는 사이트 데이터베이스의 데이터 분석에 따라 현재의 환경 상태에 대한 정보를 얻을 수 있습니다. 이 정보를 통해 환경을 더 잘 이해하고 해당 정보에 기반한 조치를 취할 수 있습니다. Configuration Manager 콘솔의 **관리** > **관리 정보** > **모든 정보**에서 관리 정보를 검토합니다. 이제 이 릴리스에서 사용할 수 있는 정보는 다음과 같습니다.
 
-- **배포가 없는 응용 프로그램**: 사용자 환경에서 활성 배포가 없는 응용 프로그램을 나열합니다. 이렇게 하면 사용되지 않는 애플리케이션을 찾고 삭제하여 콘솔에 표시된 애플리케이션 목록을 간소화할 수 있습니다.
+- **배포가 없는 애플리케이션**: 사용자 환경에서 활성 배포가 없는 애플리케이션을 나열합니다. 이렇게 하면 사용되지 않는 애플리케이션을 찾고 삭제하여 콘솔에 표시된 애플리케이션 목록을 간소화할 수 있습니다.
 - **빈 컬렉션**: 사용자 환경에서 멤버가 없는 컬렉션을 나열합니다. 이러한 컬렉션을 삭제하여 개체를 배포할 때와 같이 표시되는 컬렉션 목록을 간소화할 수 있습니다.
 
 
 ## <a name="restart-computers-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 컴퓨터 다시 시작   
-<!-- 1356283 -->
-이 릴리스부터 Configuration Manager 콘솔을 사용하여 다시 시작해야 하는 클라이언트 디바이스를 식별한 다음 클라이언트 알림 작업을 통해 해당 디바이스를 다시 시작할 수 있습니다.
+<!-- 1356283 --> 이 릴리스부터 Configuration Manager 콘솔을 사용하여 다시 시작해야 하는 클라이언트 디바이스를 식별한 다음, 클라이언트 알림 작업을 통해 해당 디바이스를 다시 시작할 수 있습니다.
 
 다시 시작을 보류 중인 디바이스를 확인하려면**자산 및 준수** > **디바이스**로 차례로 이동하여 다시 시작해야 할 수 있는 디바이스가 포함된 컬렉션을 선택합니다. 컬렉션을 선택하면 세부 정보 창의 **다시 부팅 보류 중**이라는 새로운 열에서 각 디바이스에 대한 상태를 확인할 수 있습니다. 각 디바이스의 값은 **예** 또는 **아니요**입니다.
 
@@ -100,16 +98,15 @@ Configuration Manager 1706 이상에서는 [Configuration Manager 콘솔에서 P
 
 
 ## <a name="software-center-customization"></a>소프트웨어 센터 사용자 지정
-<!-- 1351224 -->
-엔터프라이즈 브랜딩 요소를 추가하고 소프트웨어 센터에서 탭의 표시 여부를 지정할 수 있습니다. 소프트웨어 센터 특정의 회사 이름을 추가하고 소프트웨어 센터 구성 색 테마, 회사 로고 및 클라이언트 디바이스에 대한 표시 탭을 설정할 수 있습니다.
+<!-- 1351224 -->엔터프라이즈 브랜딩 요소를 추가하고 소프트웨어 센터에서 탭의 표시 여부를 지정할 수 있습니다. 소프트웨어 센터 특정의 회사 이름을 추가하고 소프트웨어 센터 구성 색 테마, 회사 로고 및 클라이언트 디바이스에 대한 표시 탭을 설정할 수 있습니다.
 
 ### <a name="customize-software-center"></a>소프트웨어 센터 사용자 지정
 
 소프트웨어 센터를 수정하려면
 
-1. **Configuration Manager** 콘솔에서 **관리** > **클라이언트 설정**을 차례로 선택합니다. 원하는 클라이언트 설정 인스턴스를 클릭합니다.
-2. **홈** 탭의 **속성** 그룹에서 **속성**을 선택합니다.
-3. **기본 설정** 대화 상자에서 **소프트웨어 센터**를 선택합니다.
+1. **Configuration Manager** 콘솔에서  **관리** > **클라이언트 설정**을 차례로 선택합니다. 원하는 클라이언트 설정 인스턴스를 클릭합니다.
+2.  **홈** 탭의  **속성** 그룹에서 **속성**을 선택합니다.
+3.  **기본 설정** 대화 상자에서 **소프트웨어 센터**를 선택합니다.
 4. **새 설정을 선택하여 회사 정보 지정**에 **예**를 선택하여 소프트웨어 센터 사용자 지정 설정을 사용하도록 설정합니다.
 5. **회사 이름**을 입력합니다.
 6. **소프트웨어 센터에 대한 색 구성표**를 선택합니다.
@@ -125,4 +122,4 @@ Configuration Manager 1706 이상에서는 [Configuration Manager 콘솔에서 P
 
 ### <a name="next-steps"></a>다음 단계
 
-Configuration Manager의 애플리케이션 관리에 대한 자세한 내용은 [System Center Configuration Manager의 애플리케이션 관리 소개](\sccm\apps\understand\introduction-to-application-management)를 참조하세요.
+Configuration Manager의 애플리케이션 관리에 대한 자세한 내용은 [System Center Configuration Manager의 애플리케이션 관리 소개](/sccm/apps/understand/introduction-to-application-management)를 참조하세요.

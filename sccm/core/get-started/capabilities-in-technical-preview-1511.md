@@ -11,12 +11,12 @@ author: aczechowski
 robots: noindex,nofollow
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 8a805d6b7075d61b0e7669200670ac8434eccdf5
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: d58a780ecf6232bd8ef6e7f0d9851ead34486177
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32336564"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53414755"
 ---
 # <a name="capabilities-in-technical-preview-1511-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1511의 기능
 
@@ -59,15 +59,15 @@ Microsoft가 WSUS(Windows Server Updates Services)를 위한 새로운 Office 36
 ### <a name="try-it-out"></a>기능 직접 사용해 보기  
  다음 작업을 완료한 후에 이 항목 위쪽의 사용자 의견 정보를 사용하여 기능 작동 상태에 대한 정보를 보내 주세요.  
 
-1.  Configuration Manager 사이트 서버에 대한 Office 365 업데이트를 동기화하고 이를 Configuration Manager 콘솔에서 볼 수 있습니다.  
+1. Configuration Manager 사이트 서버에 대한 Office 365 업데이트를 동기화하고 이를 Configuration Manager 콘솔에서 볼 수 있습니다.  
 
-2.  Office 365 업데이트를 성공적으로 승인하고 배포할 수 있습니다.  
+2. Office 365 업데이트를 성공적으로 승인하고 배포할 수 있습니다.  
 
-3.  Office 365 업데이트를 성공적으로 클라이언트에 다운로드할 수 있습니다.  
+3. Office 365 업데이트를 성공적으로 클라이언트에 다운로드할 수 있습니다.  
 
-4.  콘솔 내 모니터링이나 보고서를 사용하여 Office 365 업데이트의 준수를 확인할 수 있습니다.  
+4. 콘솔 내 모니터링이나 보고서를 사용하여 Office 365 업데이트의 준수를 확인할 수 있습니다.  
 
- 자세한 내용은 [System Center Configuration Manager Technical Preview로 Office 365 클라이언트 업데이트 관리](https://technet.microsoft.com/library/mt628083.aspx)를 참조하세요.  
+   자세한 내용은 [System Center Configuration Manager Technical Preview로 Office 365 클라이언트 업데이트 관리](https://technet.microsoft.com/library/mt628083.aspx)를 참조하세요.  
 
 ##  <a name="BKMK_AlwasyOn"></a> 항상 사용 가능한 데이터베이스에 대한 SQL Server AlwaysOn 지원  
  Configuration Manager에서는 이제 SQL Server AlwaysOn 가용성 그룹을 사용하여 사이트 데이터베이스를 호스트할 수 있습니다.  새 사이트를 설치할 때 설치 프로그램이 SQL Server의 일반 인스턴스가 아닌 가용성 그룹을 사용하도록 지정할 수 있습니다.  
@@ -79,7 +79,7 @@ Microsoft가 WSUS(Windows Server Updates Services)를 위한 새로운 Office 36
 
 1.  SQL Server의 가용성 그룹을 구성합니다.  
 
-2.  새 Configuration Manager 사이트를 설치하고, 설치 중에 그룹 끝점을 지정하여 사이트에서 가용성 그룹을 사용하도록 지정합니다.  
+2.  새 Configuration Manager 사이트를 설치하고, 설치 중에 그룹 엔드포인트를 지정하여 사이트에서 가용성 그룹을 사용하도록 지정합니다.  
 
 **이 시나리오에 대한 필수 조건:**  
 
@@ -89,7 +89,7 @@ Microsoft가 WSUS(Windows Server Updates Services)를 위한 새로운 Office 36
 
 -   가용성 그룹에는 주 복제본이 하나 있어야 하며 동기 보조 복제본이 2개까지 포함될 수 있습니다.  
 
--   가용성 그룹에는 끝점이 하나 이상 있어야 합니다.  
+-   가용성 그룹에는 엔드포인트가 하나 이상 있어야 합니다.  
 
 -   가용성 그룹의 각 SQL Server가 액세스할 수 있는 네트워크 위치가 있어야 합니다. 이 위치는 가용성 그룹을 구성할 때 설치 프로그램에서 사용하며, 설치 완료 후에 제거할 수 있습니다.  
 
@@ -121,19 +121,19 @@ Microsoft가 WSUS(Windows Server Updates Services)를 위한 새로운 Office 36
         > [!TIP]  
         >  보조 복제본은 읽기 전용으로 구성하는 것이 좋습니다. 이렇게 하면 사이트 작업을 위해 주 복제본의 성능은 유지하면서 보조 복제본을 보고 등의 기능에 사용할 수 있습니다.  
 
--   끝점 하나 이상. Configuration Manager 사이트를 설치할 때 이 끝점의 가상 이름을 사용합니다.  
+-   엔드포인트 하나 이상. Configuration Manager 사이트를 설치할 때 이 엔드포인트의 가상 이름을 사용합니다.  
 
     > [!TIP]  
-    >  그룹 하나에 끝점을 여러 개 포함할 수는 있지만 Configuration Manager에서는 끝점을 하나만 사용합니다.  
+    >  그룹 하나에 엔드포인트를 여러 개 포함할 수는 있지만 Configuration Manager에서는 엔드포인트를 하나만 사용합니다.  
 
 #### <a name="to-install-a-configuration-manager-site-that-uses-the-availability-group"></a>가용성 그룹을 사용하는 Configuration Manager 사이트를 설치하려면  
 SQL Server 가용성 그룹을 사용하는 사이트를 설치하려면 다음을 수행합니다.  
 
 1.  Configuration Manager 설치 프로그램에 표시될 때 다음 항목을 바꿉니다.  
 
-    -   **SQL Server 이름**: 가용성 그룹을 만들 때 구성한 끝점의 가상 이름을 입력합니다. 가상 이름은 **&lt;endpointServer\>.fabrikam.com**과 같은 전체 DNS 이름이어야 합니다.  
+    -   **SQL Server 이름**: 가용성 그룹을 만들 때 구성한 엔드포인트의 가상 이름을 입력합니다. 가상 이름은 **&lt;endpointServer\>.fabrikam.com**과 같은 전체 DNS 이름이어야 합니다.  
 
-    -   **인스턴스**: 이 값은 비워 두어야 합니다. 이 구성에는 인스턴스가 없습니다.  
+    -   **인스턴스**:  이 값은 비워 두어야 합니다. 이 구성에는 인스턴스가 없습니다.  
 
     -   **데이터베이스**: 가용성 그룹의 주 복제본에 만든 데이터베이스의 이름을 입력합니다.  
 
@@ -165,11 +165,11 @@ SQL Server 가용성 그룹을 사용하는 사이트를 설치하려면 다음�
 
 #### <a name="to-create-a-collection-for-a-server-cluster"></a>서버 클러스터의 컬렉션을 만들려면  
 
-1.  클러스터의 서버를 포함하는 [장치 컬렉션을 만듭니다](https://technet.microsoft.com/library/gg712295.aspx).  
+1.  클러스터의 서버를 포함하는 [디바이스 컬렉션을 만듭니다](https://technet.microsoft.com/library/gg712295.aspx).  
 
-2.  **자산 및 준수** 작업 영역에서 **장치 컬렉션**을 클릭하고 클러스터의 서버를 포함하는 컬렉션을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.  
+2.  **자산 및 준수** 작업 영역에서 **디바이스 컬렉션**을 클릭하고 클러스터의 서버를 포함하는 컬렉션을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.  
 
-3.  **일반** 탭에서 **모든 장치가 동일한 서버 클러스터에 속함**을 선택한 다음 **설정**을 클릭합니다.  
+3.  **일반** 탭에서 **모든 디바이스가 동일한 서버 클러스터에 속함**을 선택한 다음 **설정**을 클릭합니다.  
 
 4.  **클러스터 설정** 페이지에서 소프트웨어 업데이트를 설치하는 동시에 오프라인 상태로 만들 수 있는 서버의 백분율을 선택합니다. 하나의 클러스터 서버는 제공하는 백분율에 상관없이 한 번에 오프라인 상태로 만들 수 있습니다. 한 번에 처리하는 서버 수를 선택할 때 Configuration Manager에서 끝수를 잘라 버립니다. 예를 들어 51%를 선택했는데 클러스터에 4개의 서버가 있으면 2개의 서버가 동시에 오프라인 상태가 됩니다.  
 

@@ -11,26 +11,26 @@ author: aczechowski
 robots: noindex,nofollow
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 6d5ecf4e2d231a596012aa9f7d371f18ef0705a1
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: c7a0c1438fe08e1efae9d2bfe5fb608214486031
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32343554"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53423051"
 ---
 # <a name="capabilities-in-technical-preview-1603-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1603의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: System Center Configuration Manager(기술 미리 보기)*
 
 이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1603에서 사용 가능한 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 또는 System Center Technical Preview 5를 사용하는 경우 이 버전은 System Center Configuration Manager Technical Preview의 기준선 버전으로 설치됩니다. 이 버전의 Technical Preview를 설치하기 전에 소개 항목인 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대해 피드백 제공 방법 등에 익숙해져야 합니다.  
 
  **Technical Preview의 알려진 문제:**  
 
--   이 릴리스에는 이전에 릴리스된 기능에 대한 업데이트가 포함되어 있지만 새 기능을 제공하지는 않습니다. 따라서는 이전에 1602로 업그레이드하고 1602에 포함된 모든 기능을 사용하도록 설정하는 경우 업데이트 마법사의 기능 페이지가 비어 있게 됩니다.  
+- 이 릴리스에는 이전에 릴리스된 기능에 대한 업데이트가 포함되어 있지만 새 기능을 제공하지는 않습니다. 따라서는 이전에 1602로 업그레이드하고 1602에 포함된 모든 기능을 사용하도록 설정하는 경우 업데이트 마법사의 기능 페이지가 비어 있게 됩니다.  
 
--   사이트 서버가 Technical Preview 1603으로 업데이트를 한 후 클라이언트는 버전 1603으로 업데이트될 때까지 모든 원격 제어 기능을 사용할 수 없습니다.  
+- 사이트 서버가 Technical Preview 1603으로 업데이트를 한 후 클라이언트는 버전 1603으로 업데이트될 때까지 모든 원격 제어 기능을 사용할 수 없습니다.  
 
- **다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.**  
+  **다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.**  
 
 ##  <a name="BKMK_SC1603"></a> 소프트웨어 센터 개선  
 
@@ -66,26 +66,26 @@ ms.locfileid: "32343554"
 
 ### <a name="to-modify-the-ramdisk-tftp-window-size"></a>RamDisk TFTP 창 크기를 수정하려면  
 
--   PXE 사용 배포 지점에 대한 다음 레지스트리 키를 추가하여 RamDisk TFTP 창 크기를 사용자 지정합니다.  
+- PXE 사용 배포 지점에 대한 다음 레지스트리 키를 추가하여 RamDisk TFTP 창 크기를 사용자 지정합니다.  
 
-     **위치**: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SMS\DP  
-    이름: RamDiskTFTPWindowSize  
+   **위치**: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SMS\DP  
+  이름: RamDiskTFTPWindowSize  
 
-     **형식**: REG_DWORD  
+   **형식**: REG_DWORD  
 
-     **값**: &lt;사용자 지정된 창 크기\>  
+   **값**: &lt;사용자 지정된 창 크기\>  
 
- 기본값은 1입니다(1 데이터 블록이 창을 채움).  
+  기본값은 1입니다(1 데이터 블록이 창을 채움).  
 
 ### <a name="to-modify-the-ramdisk-tftp-block-size"></a>RamDisk TFTP 블록 크기를 수정하려면  
 
--   PXE 사용 배포 지점에 대한 다음 레지스트리 키를 추가하여 RamDisk TFTP 창 크기를 사용자 지정합니다.  
+- PXE 사용 배포 지점에 대한 다음 레지스트리 키를 추가하여 RamDisk TFTP 창 크기를 사용자 지정합니다.  
 
-     **위치**: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SMS\DP  
-    이름: RamDiskTFTPBlockSize  
+   **위치**: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SMS\DP  
+  이름: RamDiskTFTPBlockSize  
 
-     **형식**: REG_DWORD  
+   **형식**: REG_DWORD  
 
-     **값**: &lt;사용자 지정된 블록 크기\>  
+   **값**: &lt;사용자 지정된 블록 크기\>  
 
- 기본값은 4096(4k)입니다.  
+  기본값은 4096(4k)입니다.  

@@ -10,16 +10,16 @@ ms.assetid: 2e68dc12-6776-437a-9138-45cd7d4bf9cf
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6353b765f769dfa57ea57926d12bf2b254ba8f68
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 4a28f05e813a375f72d15113a01092924eb2245e
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32343874"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53424904"
 ---
 # <a name="capabilities-in-technical-preview-1711-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1711의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: System Center Configuration Manager(기술 미리 보기)*
 
 이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1711에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대해 피드백 제공 방법 등에 익숙해져야 합니다.     
 
@@ -30,8 +30,8 @@ ms.locfileid: "32343874"
     Workaround details.
 -->
 **이 Technical Preview의 알려진 문제:**
--   **Windows 10 버전 1709(Fall Creators Update라고도 함) 지원**.  이 Windows 릴리스부터 Windows 미디어에는 여러 버전이 포함됩니다. 운영 체제 업그레이드 패키지 또는 운영 체제 이미지를 사용하도록 작업 시퀀스를 구성할 때 [Configuration Manager가 사용할 수 있도록 지원되는 버전](/sccm/core/plan-design/configs/support-for-windows-10#windows-10-as-a-client)을 선택해야 합니다.
--   **수동 모드의 사이트 서버가 있는 경우 새 미리 보기 버전에 대한 업데이트가 실패합니다**. [수동 모드의 기본 사이트 서버](/sccm/core/get-started/capabilities-in-technical-preview-1706#site-server-role-high-availability)가 있는 미리 보기 버전을 실행할 경우 미리 보기 사이트를 이러한 새 미리 보기 버전으로 성공적으로 업데이트하려면 먼저 수동 모드 사이트 서버를 제거해야 합니다. 사이트에서 업데이트를 완료한 후에 수동 모드 사이트 서버를 다시 설치할 수 있습니다.
+- **Windows 10 버전 1709(Fall Creators Update라고도 함) 지원**.  이 Windows 릴리스부터 Windows 미디어에는 여러 버전이 포함됩니다. 운영 체제 업그레이드 패키지 또는 운영 체제 이미지를 사용하도록 작업 시퀀스를 구성할 때 [Configuration Manager가 사용할 수 있도록 지원되는 버전](/sccm/core/plan-design/configs/support-for-windows-10#windows-10-as-a-client)을 선택해야 합니다.
+- **수동 모드의 사이트 서버가 있는 경우 새 미리 보기 버전에 대한 업데이트가 실패합니다**. [수동 모드의 기본 사이트 서버](/sccm/core/get-started/capabilities-in-technical-preview-1706#site-server-role-high-availability)가 있는 미리 보기 버전을 실행할 경우 미리 보기 사이트를 이러한 새 미리 보기 버전으로 성공적으로 업데이트하려면 먼저 수동 모드 사이트 서버를 제거해야 합니다. 사이트에서 업데이트를 완료한 후에 수동 모드 사이트 서버를 다시 설치할 수 있습니다.
 
   수동 모드 사이트 서버를 제거하려면
   1. 콘솔에서 **관리** > **개요** > **사이트 구성** > **서버 및 사이트 시스템 역할**로 이동한 다음 수동 모드 사이트 서버를 선택합니다.
@@ -84,11 +84,11 @@ ms.locfileid: "32343874"
 
     c. **로그온 요구 사항**에 대해 **사용자의 로그온 여부에 상관없이**를 선택합니다.
 
-    d. **설치 프로그램 표시 여부**에 대해 **보통**을 선택합니다. **최소화**, **보통** 또는 **최대화**의 세 가지 옵션 중에서 선택할 수 있습니다.
+    d. **설치 프로그램 표시 여부**에 대해 **보통**을 선택합니다. 세 가지 옵션, 즉 **최소화**, **보통** 또는 **최대화** 중에서 선택할 수 있습니다.
 
     e. **사용자가 프로그램 설치를 사용하도록 허용** 상자를 선택합니다.
 
-2.  **응용 프로그램 설치** 단계를 사용하여 응용 프로그램을 설치하는 작업 순서를 만들거나 편집합니다. 자세한 내용은 [System Center Configuration Manager의 작업 순서 단계](/sccm/osd/understand/task-sequence-steps)에서 [애플리케이션 설치](/sccm/osd/understand/task-sequence-steps#BKMK_InstallApplication)를 참조하세요.
+2.  **애플리케이션 설치** 단계를 사용하여 애플리케이션을 설치하는 작업 순서를 만들거나 편집합니다. 자세한 내용은 [System Center Configuration Manager의 작업 순서 단계](/sccm/osd/understand/task-sequence-steps)에서 [애플리케이션 설치](/sccm/osd/understand/task-sequence-steps#BKMK_InstallApplication)를 참조하세요.
 
     a. Windows 및 Configuration Manager 설치 단계 후 이미징 작업 순서
 
@@ -97,7 +97,7 @@ ms.locfileid: "32343874"
 3.  클라이언트에 작업 순서를 배포합니다.
 4.  소프트웨어 센터에서 작업 순서를 설치합니다.
 
-작업 순서를 진행하는 동안 응용 프로그램 설치 인터페이스가 대상 최종 사용자 디바이스에 표시됩니다. 최종 사용자가 애플리케이션 설치 워크플로를 완료할 때까지 작업 순서 진행률이 일시 중지됩니다.
+작업 순서를 진행하는 동안 애플리케이션 설치 인터페이스가 대상 최종 사용자 장치에 표시됩니다. 최종 사용자가 애플리케이션 설치 워크플로를 완료할 때까지 작업 순서 진행률이 일시 중지됩니다.
 
 ### <a name="install-using-the-wizard"></a>마법사를 사용하여 설치
 

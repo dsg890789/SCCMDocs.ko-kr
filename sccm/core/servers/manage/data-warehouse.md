@@ -10,12 +10,12 @@ ms.assetid: aaf43e69-68b4-469a-ad58-9b66deb29057
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 7671025b0a643063f30c98922f7da0659e2e1ab9
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.openlocfilehash: 0c04ee9a62b6c629060f79df2f4b104fe78ca794
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52456909"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53418988"
 ---
 #  <a name="the-data-warehouse-service-point-for-configuration-manager"></a>Configuration Manager에 대한 데이터 웨어하우스 서비스 지점
 
@@ -90,15 +90,15 @@ SQL Server 라이선스에 대한 자세한 내용은 [제품 및 라이선스 F
 
 #### <a name="general-page"></a>일반 페이지
 
-- **SQL Server 정규화된 도메인 이름**: 데이터 웨어하우스 서비스 지점 데이터베이스를 호스트하는 서버의 FQDN(정규화된 도메인 이름)을 지정합니다.  
+- **SQL Server의 정규화된 도메인 이름**: 데이터 웨어하우스 서비스 지점 데이터베이스를 호스트하는 서버의 FQDN(정규화된 도메인 이름)을 지정합니다.  
 
-- **SQL Server 인스턴스 이름(해당하는 경우)**: SQL Server의 기본 인스턴스를 사용하지 않는 경우 명명된 인스턴스를 지정합니다.  
+- **SQL Server 인스턴스 이름(적용되는 경우)**: SQL Server의 기본 인스턴스를 사용하지 않는 경우 명명된 인스턴스를 지정합니다.  
 
 - **데이터베이스 이름**: 데이터 웨어하우스 데이터베이스의 이름을 지정합니다. Configuration Manager는 이 이름으로 데이터 웨어하우스 데이터베이스를 만듭니다. SQL Server 인스턴스에 이미 존재하는 데이터베이스 이름을 지정하면 Configuration Manager는 해당 데이터베이스를 사용합니다.  
 
-- **연결에 사용되는 SQL Server 포트**: 데이터 웨어하우스 데이터베이스를 호스트하는 SQL Server에서 사용하는 TCP/IP 포트 번호를 지정합니다. 데이터 웨어하우스 동기화 서비스는 이 포트를 사용하여 데이터 웨어하우스 데이터베이스에 연결합니다. 기본적으로 SQL Server 포트 **1433**을 통신에 사용합니다.  
+- **연결에 사용되는 SQL Server 포트**: 데이터 웨어하우스 데이터베이스를 호스트하는 SQL Server에서 사용된 TCP/IP 포트 번호를 지정합니다. 데이터 웨어하우스 동기화 서비스는 이 포트를 사용하여 데이터 웨어하우스 데이터베이스에 연결합니다. 기본적으로 SQL Server 포트 **1433**을 통신에 사용합니다.  
 
-- **Data Warehouse 서비스 지점 계정**: 1802 버전부터, 데이터 웨어하우스 데이터베이스에 연결할 때 SQL Server Reporting Services가 사용하는 **사용자 이름**을 설정합니다.  
+- **데이터 웨어하우스 서비스 지점 계정**: 1802 버전부터, 데이터 웨어하우스 데이터베이스에 연결할 때 SQL Server Reporting Services가 사용하는 **사용자 이름**을 설정합니다.  
 
 
 #### <a name="synchronization-schedule-page"></a>동기화 일정 페이지
@@ -142,9 +142,9 @@ SQL Server 라이선스에 대한 자세한 내용은 [제품 및 라이선스 F
 
 데이터 웨어하우스 사이트 시스템 역할에는 **데이터 웨어하우스** 범주에 속한 다음 보고서가 포함됩니다.  
 
-- **응용 프로그램 배포 - 기록**: 특정 응용 프로그램 및 컴퓨터에 대한 응용 프로그램 배포 정보를 확인합니다.  
+- **애플리케이션 배포 - 기록**: 특정 애플리케이션 및 컴퓨터에 대한 애플리케이션 배포 정보를 확인합니다.  
 
-- **Endpoint Protection 및 소프트웨어 업데이트 준수 - 기록**: 소프트웨어 업데이트가 누락된 컴퓨터를 확인합니다.  
+- **Endpoint Protection 및 소프트웨어 업데이트 규정 준수 - 기록**: 소프트웨어 업데이트가 누락된 컴퓨터를 확인합니다.  
 
 - **일반 하드웨어 인벤토리 - 기록**: 특정 컴퓨터에 대한 모든 하드웨어 인벤토리를 확인합니다.  
 
@@ -152,7 +152,7 @@ SQL Server 라이선스에 대한 자세한 내용은 [제품 및 라이선스 F
 
 - **인프라 상태 개요 - 기록**: Configuration Manager 인프라의 상태 개요를 표시합니다.  
 
-- **검색된 맬웨어 목록 - 기록**: 조직에서 검색된 맬웨어를 확인합니다.  
+- **검색된 맬웨어 목록 - 기록**:    조직에서 검색된 맬웨어를 확인합니다.  
 
 - **소프트웨어 배포 요약 - 기록**: 특정 보급 알림 및 컴퓨터에 대한 소프트웨어 배포 요약입니다.  
 
@@ -189,7 +189,7 @@ SQL Server 라이선스에 대한 자세한 내용은 [제품 및 라이선스 F
 
 다음 로그를 사용하여 데이터 웨어하우스 서비스 지점 설치 또는 데이터 동기화 문제를 조사할 수 있습니다.
 
-- **DWSSMSI.log** 및 **DWSSSetup.log**: 데이터 웨어하우스 서비스 지점을 설치할 때 발생하는 오류를 조사하려면 이 로그를 사용합니다.  
+- **DWSSMSI.log** 및 **DWSSSetup.log**: 데이터 웨어하우스 서비스 지점을 설치할 때 발생하는 오류를 조사하려면 이러한 로그를 사용합니다.  
 
 - **Microsoft.ConfigMgrDataWarehouse.log**: 사이트 데이터베이스와 데이터 웨어하우스 데이터베이스 간의 데이터 동기화를 조사하려면 이 로그를 사용합니다.  
 

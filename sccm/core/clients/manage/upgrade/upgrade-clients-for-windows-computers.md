@@ -10,12 +10,12 @@ ms.assetid: 6143fd47-48ec-4bca-b53b-5b9b9f067bc3
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 9fce0c0a8602b51c3d05e5181023a0f9d05ab0ca
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 9fa55c29d6f67132b4d98fd12d8e249093009c67
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32335146"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53419549"
 ---
 # <a name="how-to-upgrade-clients-for-windows-computers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Windows 컴퓨터용 클라이언트를 업그레이드하는 방법
 
@@ -23,17 +23,17 @@ ms.locfileid: "32335146"
 
 Configuration Manager에서 클라이언트 설치 방법 또는 자동 클라이언트 업그레이드 기능을 사용하여 Windows 컴퓨터에서 클라이언트를 업그레이드할 수 있습니다. 다음과 같은 클라이언트 설치 방법이 Windows 컴퓨터에서 클라이언트 소프트웨어를 업그레이드하는 올바른 방법입니다.  
 
--   그룹 정책 설치  
+- 그룹 정책 설치  
 
--   로그온 스크립트 설치  
+- 로그온 스크립트 설치  
 
--   수동 설치  
+- 수동 설치  
 
--   업그레이드 설치  
+- 업그레이드 설치  
 
- 클라이언트 설치 방법을 사용하는 클라이언트 업그레이드에 관심이 있는 경우 [System Center Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법](../../../../core/clients/deploy/deploy-clients-to-windows-computers.md)에서 해당 방법 사용에 대해 자세히 알아보세요.
+  클라이언트 설치 방법을 사용하는 클라이언트 업그레이드에 관심이 있는 경우 [System Center Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법](../../../../core/clients/deploy/deploy-clients-to-windows-computers.md)에서 해당 방법 사용에 대해 자세히 알아보세요.
 
- 버전 1610부터 제외 그룹을 지정하여 클라이언트가 업그레이드되지 않도록 제외할 수 있습니다. 자세한 내용은 [Windows 컴퓨터에서 클라이언트 업그레이드를 제외하는 방법](exclude-clients-windows.md)을 참조하세요.  
+  버전 1610부터 제외 그룹을 지정하여 클라이언트가 업그레이드되지 않도록 제외할 수 있습니다. 자세한 내용은 [Windows 컴퓨터에서 클라이언트 업그레이드를 제외하는 방법](exclude-clients-windows.md)을 참조하세요.  
 
 
 > [!TIP]  

@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 robots: noindex
-ms.openlocfilehash: ead1eef396e643930e00d3208ed1e821c73906d5
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 3454b56e53901668c89062f0910f8ea318f22cf2
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32344180"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53417662"
 ---
 # <a name="schema-extensions-for-system-center-configuration-manager"></a>System Center Configuration Manager의 스키마 확장
 
@@ -44,7 +44,7 @@ Active Directory 스키마를 확장하여 Configuration Manager를 지원할 �
 
     -   Windows 2003 포리스트부터는 새로 추가한 특성만 복제됩니다.  
 
-**Active Directory 스키마를 사용하지 않는 장치 및 클라이언트:**  
+**Active Directory 스키마를 사용하지 않는 디바이스 및 클라이언트:**  
 
 -   Exchange Server 커넥터에서 관리하는 모바일 디바이스  
 
@@ -135,12 +135,12 @@ System Center Configuration Manager의 스키마를 확장하는 경우 다음 �
 
     -   cn=MS-SMS-Site  
 
-> [!NOTE]  
-
+> [!NOTE]
+> 
 >  스키마 확장에는 이전 버전의 제품에서 유지되었지만 System Center Configuration Manager에서는 사용되지 않는 특성과 클래스가 포함될 수 있습니다. 예:  
-
->   
->  -   : cn = SMS 사이트 경계 MS  
-> -   Class: cn=MS-SMS-Server-Locator-Point  
+> 
+> 
+> - : cn = SMS 사이트 경계 MS  
+>   -   Class: cn=MS-SMS-Server-Locator-Point  
 
 System Center Configuration Manager 설치 미디어의 **\SMSSETUP\BIN\x64** 폴더에 있는 **ConfigMgr_ad_schema.LDF** 파일을 보면 위의 목록이 최신 상태인지 확인할 수 있습니다.  

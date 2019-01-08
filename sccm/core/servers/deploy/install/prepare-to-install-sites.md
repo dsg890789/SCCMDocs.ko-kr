@@ -10,12 +10,12 @@ ms.assetid: 9089e1b5-cba4-42bd-a2de-126ef882a3af
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 9f07a321ac6f10f5287a88d0df7064920f538ae5
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 3de7b19eb7d997ef72cc7a413eb143172c4ce40e
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32341698"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53424360"
 ---
 # <a name="prepare-to-install-system-center-configuration-manager-sites"></a>System Center Configuration Manager 사이트 설치 준비
 
@@ -35,9 +35,9 @@ ms.locfileid: "32341698"
 ### <a name="first-site"></a>첫 번째 사이트
 계층 구조에 설치할 첫 번째 사이트는 독립 실행형 기본 사이트 또는 중앙 관리 사이트입니다.
 
-**설치 미디어**: 새 계층 구조의 첫 번째 사이트로 중앙 관리 사이트 또는 독립 실행형 기본 사이트를 설치하려면 Configuration Manager의 [기선 버전을 사용](../../../../core/servers/manage/updates.md#bkmk_Baselines)해야 합니다. 임의 사이트의 [CD.Latest 폴더](../../../../core/servers/manage/the-cd.latest-folder.md)에서 업데이트된 소스 파일을 사용하여 새 계층 구조의 첫 번째 사이트를 설치하지 마세요.
+**설치 미디어**: 중앙 관리 사이트 또는 독립 실행형 기본 사이트를 새 계층 구조의 첫 번째 사이트로 설치하려면 Configuration Manager의 [기준 버전을 사용](../../../../core/servers/manage/updates.md#bkmk_Baselines)해야 합니다. 임의 사이트의 [CD.Latest 폴더](../../../../core/servers/manage/the-cd.latest-folder.md)에서 업데이트된 소스 파일을 사용하여 새 계층 구조의 첫 번째 사이트를 설치하지 마세요.
 
-**설치 방법**: [Configuration Manager 설치 마법사](../../../../core/servers/deploy/install/use-the-setup-wizard-to-install-sites.md)를 사용하여 두 유형의 사이트를 설치하거나 [스크립팅된 명령줄 설치](../../../../core/servers/deploy/install/use-a-command-line-to-install-sites.md)와 함께 사용할 스크립트를 구성할 수 있습니다.
+**설치 방법**: [Configuration Manager 설치 마법사](../../../../core/servers/deploy/install/use-the-setup-wizard-to-install-sites.md)를 사용하여 두 유형의 사이트를 설치하거나 [스크립팅된 명령줄 설치](../../../../core/servers/deploy/install/use-a-command-line-to-install-sites.md)와 함께 사용하도록 스크립트를 구성할 수 있습니다.
 
 
 ### <a name="additional-sites"></a>추가 사이트
@@ -49,7 +49,7 @@ ms.locfileid: "32341698"
 |자식 기본 사이트|보조 사이트|
 |독립 실행형 기본 사이트|보조 사이트(기본 사이트를 확장할 수 있으며, 독립 실행형 기본 사이트가 자식 기본 사이트로 변환됨)|
 
-**설치 미디어**: 중앙 관리 사이트를 설치하여 독립 실행형 기본 사이트를 확장하거나 기존 계층 구조에 새 자식 기본 사이트를 설치하는 경우 기존 사이트 또는 사이트의 버전과 일치하는 설치 미디어(소스 파일 포함)를 사용해야 합니다.
+**설치 미디어**: 중앙 관리 사이트를 설치하여 독립 실행형 기본 사이트를 확장하거나 기존 계층 구조에 새 자식 기본 사이트를 설치하는 경우 기존 사이트 또는 사이트의 버전과 일치하는 설치 미디어(원본 파일 포함)를 사용해야 합니다.
 
 > [!IMPORTANT]
 > 이전에 설치된 사이트 버전이 변경된 콘솔 내 업데이트를 설치한 경우 원본 설치 미디어를 사용하지 마세요. 대신, 해당 시나리오에서는 업데이트된 사이트의 [CD.Latest 폴더](../../../../core/servers/manage/the-cd.latest-folder.md)에 있는 소스 파일을 사용합니다. Configuration Manager에서는 새 사이트가 연결될 기존 사이트의 버전과 일치하는 소스 파일을 사용해야 합니다.
@@ -57,9 +57,9 @@ ms.locfileid: "32341698"
 Configuration Manager 콘솔에서 보조 사이트를 설치해야 합니다. 이러한 방식으로 보조 사이트는 항상 부모 기본 사이트의 소스 파일을 사용하여 설치됩니다.
 
 **설치 방법**: 추가 사이트를 설치하는 방법은 설치하려는 사이트의 유형에 따라 다릅니다.
--   **중앙 관리 사이트 추가**: Configuration Manager 설치 마법사 또는 스크립팅된 명령줄을 사용하여 기존 독립 실행형 기본 사이트에 부모 사이트로 새 중앙 관리 사이트를 설치할 수 있습니다. 자세한 내용은 [독립 실행형 기본 사이트 확장](../../../../core/servers/deploy/install/prerequisites-for-installing-sites.md#bkmk_expand)을 참조하세요.
--   **자식 기본 사이트 추가**: Configuration Manager 설치 마법사 또는 명령줄 설치를 사용하여 중앙 관리 사이트 아래 자식 기본 사이트를 추가합니다.
--   **보조 사이트 추가**: Configuration Manager 콘솔을 사용하여 기본 사이트 아래 자식 사이트로 보조 사이트를 설치합니다. 보조 사이트를 추가하는 다른 방법은 지원되지 않습니다.
+-   **중앙 관리 사이트 추가**:  Configuration Manager 설치 마법사 또는 스크립팅된 명령줄을 사용하여 새 중앙 관리 사이트를 기존 독립 실행형 기본 사이트에 부모 사이트로 설치할 수 있습니다. 자세한 내용은 [독립 실행형 기본 사이트 확장](../../../../core/servers/deploy/install/prerequisites-for-installing-sites.md#bkmk_expand)을 참조하세요.
+-   **자식 기본 사이트 추가**:  Configuration Manager 설치 마법사 또는 명령줄 설치를 사용하여 중앙 관리 사이트 아래 자식 기본 사이트를 추가합니다.
+-   **보조 사이트 추가**:  Configuration Manager 콘솔을 사용하여 보조 사이트를 기본 사이트의 자식 사이트로 설치합니다. 보조 사이트를 추가하는 다른 방법은 지원되지 않습니다.
 
 ## <a name="bkmk_tasks"></a> 설치를 시작하기 전에 완료해야 하는 일반적인 작업
 -   **배포에 사용할 계층 구조 토폴로지 이해**    
@@ -105,11 +105,11 @@ Configuration Manager 설치 프로그램을 실행하는 동안 사이트의 �
 
 ## <a name="limits-and-restrictions-for-installed-sites"></a>설치되는 사이트에 대한 제한 사항
 사이트를 설치하기 전에 사이트 및 계층 구조에 적용되는 다음 제한 사항을 이해하는 것이 중요합니다.
--   설치 프로그램을 실행한 후 사이트를 제거하고 새 값을 사용하여 다시 설치하지 않으면 다음 사이트 속성을 변경할 수 없습니다.  
+- 설치 프로그램을 실행한 후 사이트를 제거하고 새 값을 사용하여 다시 설치하지 않으면 다음 사이트 속성을 변경할 수 없습니다.  
   -   프로그램 파일 설치 디렉터리  
   -   사이트 코드  
   -   사이트 설명  
--   계층 구조에 중앙 관리 사이트가 포함된 경우:  
+- 계층 구조에 중앙 관리 사이트가 포함된 경우:  
   -   Configuration Manager에서는 독립 실행형 기본 사이트를 만들거나 다른 계층 구조에 연결하기 위해 계층 구조에서 자식 기본 사이트를 이동할 수 없습니다. 대신, 자식 기본 사이트를 제거한 다음 새 독립 실행형 기본 사이트로 다시 설치하거나 다른 계층 구조의 중앙 관리 사이트의 자식 사이트로 다시 설치할 수 있습니다.  
 
 
@@ -130,7 +130,7 @@ Configuration Manager의 업데이트된 설치 파일을 다운로드하려면 
 **선택적 포트 식별**
 
 사이트 시스템 및 클라이언트에서 사용할 선택적 포트를 식별할 수 있습니다. 추가 정보는 다음과 같습니다.
- -  기본적으로 사이트 시스템 및 클라이언트는 미리 정의된 포트를 사용하여 통신합니다.
- -  설치하는 동안 대체 포트를 구성할 수 있습니다.
+- 기본적으로 사이트 시스템 및 클라이언트는 미리 정의된 포트를 사용하여 통신합니다.
+- 설치하는 동안 대체 포트를 구성할 수 있습니다.
 
- 자세한 내용은 [System Center Configuration Manager에서 사용되는 포트](../../../../core/plan-design/hierarchy/ports.md)를 참조하세요.
+  자세한 내용은 [System Center Configuration Manager에서 사용되는 포트](../../../../core/plan-design/hierarchy/ports.md)를 참조하세요.

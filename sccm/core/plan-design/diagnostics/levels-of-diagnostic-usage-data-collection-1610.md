@@ -10,18 +10,18 @@ ms.assetid: eb20eb90-bcc0-41de-bfea-638ea470c0dd
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 658d005234469d8729b515e9deeb02e20e94c748
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: b29044858bb9a9d57db1c2229c826630d0905860
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32340899"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53416523"
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1610-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1610에 대한 진단 사용 현황 데이터 수집의 수준
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 버전 1610에서는 **기본**, **고급**, **전체** 등 세 가지 수준의 진단 및 사용 현황 데이터를 수집합니다. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
+System Center Configuration Manager 버전 1610에서는 다음과 같은 세 가지 수준의 진단 및 사용 현황 데이터를 수집합니다. **기본**, **고급**, **전체**. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
 
 이전 버전에서 변경된 내용은 ***[새로운 기능]***, ***[업데이트된 기능]***, ***[제거된 기능]*** 또는 ***[이동된 기능]*** 으로 표시됩니다.
 
@@ -40,18 +40,18 @@ System Center Configuration Manager 버전 1610에서는 **기본**, **고급**,
  System Center Configuration Manager 버전 1610에서 이 수준에는 다음이 포함됩니다.
 
 
--   설정 정보:
-      - 빌드, 설치 유형, 언어 팩, 사용하도록 설정한 기능  
+- 설정 정보:
+    - 빌드, 설치 유형, 언어 팩, 사용하도록 설정한 기능  
 
-      - 업데이트 팩 배포 상태 및 오류, 다운로드 진행률 및 필수 구성 요소 오류    
+    - 업데이트 팩 배포 상태 및 오류, 다운로드 진행률 및 필수 구성 요소 오류    
 
-      - 업그레이드 후 스크립트의 버전
+    - 업그레이드 후 스크립트의 버전
 
-      - 업데이트 빠른 링 사용
+    - 업데이트 빠른 링 사용
 
-    - ***[새로운 기능]*** 시험판 사용, 설치 미디어 유형, 분기 유형
+  - ***[새로운 기능]*** 시험판 사용, 설치 미디어 유형, 분기 유형
 
-    - ***[새로운 기능]*** Software Assurance 만료 날짜
+  - ***[새로운 기능]*** Software Assurance 만료 날짜
 
 - 데이터베이스 성능 메트릭(복제 처리 정보, 디스크 사용 현황 및 프로세서에 따른 상위 SQL Server 저장 프로시저)
 
@@ -100,7 +100,7 @@ System Center Configuration Manager 버전 1610에서는 **기본**, **고급**,
 
 System Center Configuration Manager 버전 1610에서 이 수준에는 다음이 포함됩니다.
 
--   **응용 프로그램 관리:**  
+-   **애플리케이션 관리:**  
 
     -    조직 내에서 사용되는 배포 유형에 대한 기본 사용 현황/대상 지정 정보(사용자 및 디바이스 대상 지정, 필수 및 사용 가능, 유니버설 앱)  
 
@@ -110,7 +110,7 @@ System Center Configuration Manager 버전 1610에서 이 수준에는 다음이
 
     -   유형별 패키지 개수  
 
-    -   운영 체제별 애플리케이션 적용 가능성 개수  
+    -   운영 체제별 응용 프로그램 적용 가능성 개수  
 
     -   패키지/프로그램 배포 개수  
 
@@ -136,7 +136,7 @@ System Center Configuration Manager 버전 1610에서 이 수준에는 다음이
 
     - UDA(Universal Data Access) 사용, 생성 방법
 
-    - ***[새로운 기능]*** 응용 프로그램 승인 통계 및 사용 빈도
+    - ***[새로운 기능]*** 애플리케이션 승인 통계 및 사용 빈도
 
 
 
@@ -251,9 +251,9 @@ System Center Configuration Manager 버전 1610에서 이 수준에는 다음이
 
 
 
--   **MDM(모바일 장치 관리):**  
+-   **MDM(모바일 디바이스 관리):**  
 
-    -   ***[업데이트된 기능]*** 실행된 모바일 장치 작업(잠금, 핀 다시 설정, 초기화, 사용 중지 및 지금 동기화 명령) 개수  
+    -   ***[업데이트된 기능]*** 실행된 모바일 디바이스 작업(잠금, 핀 다시 설정, 초기화, 사용 중지 및 지금 동기화 명령) 개수  
 
     -   Configuration Manager 및 Microsoft Intune에서 관리되는 모바일 디바이스 개수 및 등록 방법(대량, 사용자 기반)  
 
@@ -272,7 +272,7 @@ System Center Configuration Manager 버전 1610에서 이 수준에는 다음이
     -   Microsoft Intune에 대한 전체 및 델타 사용자 동기화 통계
 
 
--   **온-프레미스 MDM(모바일 장치 관리):**  
+-   **온-프레미스 MDM(모바일 디바이스 관리):**  
 
     -   온-프레미스 MDM 애플리케이션 배포에 대한 배포 성공/실패 통계  
 
@@ -400,7 +400,7 @@ System Center Configuration Manager 버전 1610에서 이 수준에는 다음이
 -   마지막 소프트웨어 업데이트 검사 이후 최소/최대/평균 시간 수
 
 -    소프트웨어 업데이트 지점에서 동기화된 소프트웨어 업데이트 제품
--    준수 설정: SCEP, VPN, Wi-Fi 및 준수 정책 템플릿 구성 정보
+-    규정 준수 설정: SCEP, VPN, Wi-Fi 및 규정 준수 정책 템플릿 구성 세부 정보
 
 -    Intune에서 관리하는 디바이스에 대한 EAS 조건부 액세스 정책 유형(차단 또는 격리)
 
@@ -414,4 +414,4 @@ System Center Configuration Manager 버전 1610에서 이 수준에는 다음이
 
 -   자세한 클라이언트 배포 설치 오류
 
-- ***[새로운 기능]*** 비즈니스용 Windows 스토어 응용 프로그램 정보(AppID, 온라인 상태 또는 오프라인 상태, 구입한 총 라이선스 수를 포함하여 동기화된 응용 프로그램의 비집계 목록)
+- ***[새로운 기능]*** 비즈니스용 Windows 스토어 애플리케이션 정보(AppID, 온라인 상태 또는 오프라인 상태, 구입한 총 라이선스 수를 포함하여 동기화된 애플리케이션의 비집계 목록)

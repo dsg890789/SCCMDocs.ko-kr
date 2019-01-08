@@ -10,12 +10,12 @@ ms.assetid: 868049d3-3209-47ec-b34a-9cc26941893a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 12dd7a4d806a82e3c55898e249d1caa2a6ffb508
-ms.sourcegitcommit: 19fc4f27667d51502fc9d7d02d164f2837d65dae
+ms.openlocfilehash: 2d1a517b381e4c6ff10db21e39922886716758c0
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49461293"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53420858"
 ---
 # <a name="how-to-create-queries-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 쿼리를 만드는 방법
 
@@ -147,7 +147,7 @@ select SMS_R_System.NetbiosName from
 SMS_R_System where SMS_R_System.NetbiosName like "ABC%"  
 ```  
 
-###  <a name="BKMK_DeviceType"></a> 특정 유형의 장치
+###  <a name="BKMK_DeviceType"></a> 특정 유형의 디바이스
 
 디바이스 유형은 리소스 클래스 **sms_r_system** 및 특성 이름 **AgentEdition**의 Configuration Manager 데이터베이스에 저장됩니다. 지정하는 디바이스 유형의 에이전트 버전과 일치하는 디바이스만 검색하려면 다음 쿼리를 사용합니다.  
 
@@ -155,7 +155,7 @@ SMS_R_System where SMS_R_System.NetbiosName like "ABC%"
 Select SMS_R_System.ClientEdition from SMS_R_System where SMS_R_System.ClientEdition = <Device ID>  
 ```  
 
-*&lt;장치 ID\>* 에 대해 다음 값 중 하나를 사용합니다.  
+*&lt;디바이스 ID\>* 에 대해 다음 값 중 하나를 사용합니다.  
 
 |디바이스 유형|AgentEdition의 값|  
 |-----------------|---------------------------|  

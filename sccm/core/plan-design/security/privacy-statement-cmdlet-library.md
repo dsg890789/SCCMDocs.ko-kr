@@ -9,12 +9,12 @@ ms.assetid: bec00fb4-1ac0-4e49-b330-0871b3722459
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a6a996c4f1e00c05c0b3766b8955130529832063
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: bb48f192146a3c0d4bbbe6f005dda537db871da7
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32344503"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53415486"
 ---
 # <a name="system-center-configuration-manager-privacy-statement---configuration-manager-cmdlet-library"></a>System Center Configuration Manager 개인정보취급방침 – Configuration Manager cmdlet 라이브러리
 
@@ -42,11 +42,11 @@ System Center Configuration Manager cmdlet 라이브러리를 사용하면 Windo
 
  완전히 옵트아웃하려면 이 두 레지스트리 키 값을 설정합니다. 각 ETW(Windows용 이벤트 추적) 공급자에 대한 값입니다.  
 
--   HKLM\Software\Microsoft\ConfigMgr10\PowerShell\Microsoft.ConfigurationManagement.PowerShell.Provider:CeipLevel=0(드라이브 공급자에 대한 사용 현황 데이터 옵트아웃)  
+- HKLM\Software\Microsoft\ConfigMgr10\PowerShell\Microsoft.ConfigurationManagement.PowerShell.Provider:CeipLevel=0(드라이브 공급자에 대한 사용 현황 데이터 옵트아웃)  
 
--   HKLM\Software\Microsoft\ConfigMgr10\PowerShell\Microsoft.ConfigurationManagement.PowerShell.Cmdlets:CeipLevel=0(cmdlet에 대한 사용 현황 데이터 옵트아웃)  
+- HKLM\Software\Microsoft\ConfigMgr10\PowerShell\Microsoft.ConfigurationManagement.PowerShell.Cmdlets:CeipLevel=0(cmdlet에 대한 사용 현황 데이터 옵트아웃)  
 
- 사용 현황 데이터 설정에 대한 변경 사항은 변경이 수행된 컴퓨터에만 적용됩니다.  
+  사용 현황 데이터 설정에 대한 변경 사항은 변경이 수행된 컴퓨터에만 적용됩니다.  
 
 
 ## <a name="next-steps"></a>다음 단계

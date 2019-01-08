@@ -10,16 +10,16 @@ ms.assetid: 00684289-d21a-45f8-b1e3-c5c787d73096
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 49205ac1d1fc2dd20cbd4a0844632c5f3d181e45
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: a9a5aeb35137a74152333a78e95781fb727eecdf
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32341902"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53421606"
 ---
 # <a name="capabilities-in-technical-preview-1705-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1705의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: System Center Configuration Manager(기술 미리 보기)*
 
 이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1705에서 사용 가능한 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대해 피드백 제공 방법 등에 익숙해져야 합니다.    
 
@@ -81,17 +81,19 @@ Technical Preview 버전 1606 이상에서 이 도구를 사용할 수 있습니
 
 **명령줄 매개 변수:**  
 
-| 매개 변수        |설명                 |  
-|------------------|----------------------------|  
-|**-S &lt;최상위 계층 사이트에 있는 SQL Server의 FQDN>** | *필수* <br> 계층 구조에서 최상위 계층 사이트에 대한 사이트 데이터베이스를 호스트하는 SQL Server의 FQDN을 지정해야 합니다.    |  
-| **-D &lt;데이터베이스 이름>**                        | *필수* <br> 최상위 계층 사이트 데이터베이스의 이름을 지정해야 합니다.  |  
-| **-P &lt;패키지 GUID>**                         | *필수* <br> 다시 설정하려는 업데이트 패키지에 대한 GUID를 지정해야 합니다.   |  
-| **-I &lt;SQL Server 인스턴스 이름>**             | *선택 사항* <br> 사이트 데이터베이스를 호스트하는 SQL Server 인스턴스를 식별하는 데 사용합니다. |
-| **-FDELETE**                              | *선택 사항* <br> 성공적으로 다운로드한 업데이트 패키지를 강제로 삭제하는 데 사용합니다. |  
- **예:**  
- 일반적인 시나리오에서는 다운로드 문제가 있는 업데이트를 다시 설정하려고 할 것입니다. SQL Server FQDN은 *server1.fabrikam.com*, 사이트 데이터베이스는 *CM_XYZ*, 패키지 GUID는 *61F16B3C-F1F6-4F9F-8647-2A524B0C802C*입니다.  ***CMUpdateReset.exe -S server1.fabrikam.com -D CM_XYZ -P 61F16B3C-F1F6-4F9F-8647-2A524B0C802C***를 실행합니다.
 
- 좀 더 극단적인 시나리오에서는 문제가 있는 업데이트 패키지를 강제로 삭제하려고 할 수 있습니다. SQL Server FQDN은 *server1.fabrikam.com*, 사이트 데이터베이스는 *CM_XYZ*, 패키지 GUID는 *61F16B3C-F1F6-4F9F-8647-2A524B0C802C*입니다.  ***CMUpdateReset.exe  -FDELETE -S server1.fabrikam.com -D CM_XYZ -P 61F16B3C-F1F6-4F9F-8647-2A524B0C802C***를 실행합니다.
+|                        매개 변수                         |                                                            설명                                                            |
+|----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| **-S &lt;최상위 계층 사이트에 있는 SQL Server의 FQDN>** | *필수* <br> 계층 구조에서 최상위 계층 사이트에 대한 사이트 데이터베이스를 호스트하는 SQL Server의 FQDN을 지정해야 합니다. |
+|                **-D &lt;데이터베이스 이름>**                 |                             *필수* <br> 최상위 계층 사이트 데이터베이스의 이름을 지정해야 합니다.                             |
+|                 **-P &lt;패키지 GUID>**                 |                        *필수* <br> 다시 설정하려는 업데이트 패키지에 대한 GUID를 지정해야 합니다.                        |
+|           **-I &lt;SQL Server 인스턴스 이름>**           |                   *선택 사항* <br> 사이트 데이터베이스를 호스트하는 SQL Server 인스턴스를 식별하는 데 사용합니다.                   |
+|                       **-FDELETE**                       |                      *선택 사항* <br> 성공적으로 다운로드한 업데이트 패키지를 강제로 삭제하는 데 사용합니다.                      |
+
+ **예:**  
+ 일반적인 시나리오에서는 다운로드 문제가 있는 업데이트를 다시 설정하려고 할 것입니다. SQL Server FQDN은 *server1.fabrikam.com*, 사이트 데이터베이스는 *CM_XYZ*, 패키지 GUID는 *61F16B3C-F1F6-4F9F-8647-2A524B0C802C*입니다.  실행: ***CMUpdateReset.exe -S server1.fabrikam.com -D CM_XYZ -P 61F16B3C-F1F6-4F9F-8647-2A524B0C802C***
+
+ 좀 더 극단적인 시나리오에서는 문제가 있는 업데이트 패키지를 강제로 삭제하려고 할 수 있습니다. SQL Server FQDN은 *server1.fabrikam.com*, 사이트 데이터베이스는 *CM_XYZ*, 패키지 GUID는 *61F16B3C-F1F6-4F9F-8647-2A524B0C802C*입니다.  실행: ***CMUpdateReset.exe  -FDELETE -S server1.fabrikam.com -D CM_XYZ -P 61F16B3C-F1F6-4F9F-8647-2A524B0C802C***
 
 ### <a name="test-the-tool-with-the-technical-preview"></a>Technical Preview에서 도구 테스트  
 Technical Preview 버전 1606 이상에서 이 도구를 사용할 수 있습니다. 많은 수의 Technical Preview 업데이트 시나리오에서 이 도구를 사용할 수 있고 다음 Technical Preview 버전을 사용할 수 있을 때까지 기다리지 않아도 되도록 이전 버전 지원이 제공됩니다.
@@ -114,13 +116,13 @@ Technical Preview 버전 1606 이상에서 이 도구를 사용할 수 있습니
 ## <a name="improvements-for-sql-server-always-on-availability-groups"></a>SQL Server Always On 가용성 그룹에 대한 향상된 기능  
 이 릴리스에서는 이제 Configuration Manager에서 SQL Server Always On 가용성 그룹의 비동기 커밋 복제본을 사용할 수 있습니다.  즉, 오프사이트(원격) 백업으로 사용하도록 추가 복제본을 가용성 그룹에 추가한 다음 재해 복구 시나리오에서 사용할 수 있습니다.  
 
--   Configuration Manager에서는 비동기 커밋 복제본을 사용하여 동기 복제본을 복구하도록 지원합니다.  이 작업을 수행하는 방법에 대한 자세한 내용은 백업 및 복구 항목에서 [사이트 데이터베이스 복구 옵션](/sccm/protect/understand/backup-and-recovery#BKMK_SiteDatabaseRecoveryOption)을 참조하세요.
+- Configuration Manager에서는 비동기 커밋 복제본을 사용하여 동기 복제본을 복구하도록 지원합니다.  이 작업을 수행하는 방법에 대한 자세한 내용은 백업 및 복구 항목에서 [사이트 데이터베이스 복구 옵션](/sccm/protect/understand/backup-and-recovery#BKMK_SiteDatabaseRecoveryOption)을 참조하세요.
 
--   이 릴리스에서는 비동기 커밋 복제본을 사이트 데이터베이스로 사용하기 위한 장애 조치를 지원하지 않습니다.
-> [!CAUTION]  
-> Configuration Manager는 비동기 커밋 복제본의 상태가 현재 상태인지 확인하지 않으며 [의도적으로 이러한 복제본은 동기화되지 않을 수 있으므로](https://msdn.microsoft.com/library/ff877884(SQL.120).aspx(d=robot)#Availability%20Modes) 비동기 커밋 복제본을 사이트 데이터베이스로 사용하면 사이트와 데이터의 무결성이 손상될 수 있습니다.  
+- 이 릴리스에서는 비동기 커밋 복제본을 사이트 데이터베이스로 사용하기 위한 장애 조치를 지원하지 않습니다.
+  > [!CAUTION]  
+  > Configuration Manager는 비동기 커밋 복제본의 상태가 현재 상태인지 확인하지 않으며 [의도적으로 이러한 복제본은 동기화되지 않을 수 있으므로](https://msdn.microsoft.com/library/ff877884(SQL.120).aspx(d=robot)#Availability%20Modes) 비동기 커밋 복제본을 사이트 데이터베이스로 사용하면 사이트와 데이터의 무결성이 손상될 수 있습니다.  
 
--   사용 중인 SQL Server 버전에서 지원하는 것과 같은 개수 및 유형의 복제본을 가용성 그룹에서 사용할 수 있습니다.   (이전 지원은 두 개의 동기 커밋 복제본으로 제한되었습니다.)
+- 사용 중인 SQL Server 버전에서 지원하는 것과 같은 개수 및 유형의 복제본을 가용성 그룹에서 사용할 수 있습니다.   (이전 지원은 두 개의 동기 커밋 복제본으로 제한되었습니다.)
 
 ### <a name="configure-an-asynchronous-commit-replica"></a>비동기 커밋 복제본 구성
 비동기 복제본을 [Configuration Manager에서 사용하는 가용성 그룹](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database)에 추가하려는 경우 동기 복제본을 구성하는 데 필요한 구성 스크립트를 실행할 필요가 없습니다. (해당 비동기 복제본을 사이트 데이터베이스로 사용하는 것은 지원되지 않기 때문입니다.) 가용성 그룹에 보조 복제본을 추가하는 방법에 대한 자세한 내용은 [SQL Server 설명서](https://msdn.microsoft.com/library/hh213247(v=sql.120).aspx(d=robot))를 참조하세요.
@@ -128,7 +130,7 @@ Technical Preview 버전 1606 이상에서 이 도구를 사용할 수 있습니
 ### <a name="use-the-asynchronous-replica-to-recover-your-site"></a>비동기 복제본을 사용하여 사이트 복구
 비동기 복제본을 사용하여 사이트 데이터베이스를 복구하기 전에 활성 기본 사이트를 중지하여 사이트 데이터베이스에 대한 추가 쓰기를 방지해야 합니다. 사이트를 중지한 후에 [수동으로 복구된 데이터베이스](/sccm/protect/understand/backup-and-recovery#BKMK_SiteDatabaseRecoveryOption)를 사용하는 대신, 비동기 복제본을 사용할 수 있습니다.
 
-사이트를 중지하려면 [계층 유지 관리 도구](/sccm/core/servers/manage/hierarchy-maintenance-tool-preinst.exe)를 사용하여 사이트 서버의 핵심 서비스를 중지할 수 있습니다. 명령줄 **Preinst.exe /stopsite**를 사용합니다.   
+사이트를 중지하려면 [계층 유지 관리 도구](/sccm/core/servers/manage/hierarchy-maintenance-tool-preinst.exe)를 사용하여 사이트 서버의 핵심 서비스를 중지할 수 있습니다. 명령줄 사용: **Preinst.exe /stopsite**   
 
 사이트를 중지하는것은 사이트 서버에서 사이트 구성 요소 관리자 서비스(sitecomp)를 중지한 후 SMS_Executive 서비스를 중지하는 것과 같습니다.
 
@@ -156,7 +158,7 @@ Technical Preview 버전 1606 이상에서 이 도구를 사용할 수 있습니
 ## <a name="configure-and-deploy-windows-defender-application-guard-policies"></a>Windows Defender Application Guard 정책 구성 및 배포
 
 [Windows Defender Application Guard](https://blogs.windows.com/msedgedev/2016/09/27/application-guard-microsoft-edge/#XLxEbcpkuKcFebrw.97)는 운영 체제의 다른 부분에서 액세스할 수 없는 보안 격리된 컨테이너에서 신뢰할 수 없는 웹 사이트를 열어 사용자를 보호하는 새로운 Windows 기능입니다. 이 Technical Preview에서는 구성하는 Configuration Manager 준수 설정을 사용하여 이 기능을 구성한 다음 컬렉션에 배포하기 위한 지원이 추가되었습니다.
-이 기능은 64비트 버전의 Windows 10 크리에이터 업데이트(코드명: RS2)에 대한 미리 보기에 릴리스될 예정입니다 . 이 기능을 지금 테스트하려면 이 업데이트의 미리 보기 버전을 사용하고 있어야 합니다.
+이 기능은 64비트 버전의 Windows 10 크리에이터 업데이트에 대한 미리 보기에 릴리스될 예정입니다(코드명: RS2). 이 기능을 지금 테스트하려면 이 업데이트의 미리 보기 버전을 사용하고 있어야 합니다.
 
 
 ### <a name="before-you-start"></a>시작하기 전에
@@ -224,20 +226,20 @@ Windows Defender Application Guard에 대한 자세한 내용은 [이 블로그 
 
 이렇게 하면 Configuration Manager 사이트가 Azure AD에 연결되므로 이 섹션의 다른 모든 작업을 위해 반드시 필요합니다. 가상 하드 디스크 파일에 대한 중요 정보를 제공하려면
 
-1.  Configuration Manager 콘솔의 **관리** 작업 영역에서 **Cloud Services**를 확장한 후 **Azure 서비스**를 클릭합니다.
-2.  **홈** 탭의 **Azure 서비스** 그룹에서 **Azure 서비스 구성**을 클릭합니다.
-3.  Azure 서비스 마법사의 **Azure 서비스** 페이지에서 **클라우드 관리**를 선택하여 클라이언트가 Azure AD를 사용하여 계층에서 인증을 받도록 합니다.
-4.  마법사의 **일반** 페이지에서 Azure 서비스에 대한 이름 및 설명을 지정합니다.
-5.  마법사의 **앱** 페이지에 있는 목록에서 Azure 환경을 선택하고 **찾아보기**를 클릭하여 Azure 서비스를 구성하는 데 사용할 서버 및 클라이언트 앱을 선택합니다.
-    - **서버 앱** 창에서 사용할 서버 앱을 선택한 다음 **확인**을 클릭합니다. 서버 앱은 테넌트 ID, 클라이언트 ID 및 클라이언트의 비밀 키를 비롯한 Azure 계정에 대한 구성을 포함하는 Azure 웹앱입니다. 사용 가능한 서버 앱이 없는 경우 다음 중 하나를 사용합니다.
-        - **만들기**: 새 서버 앱을 만들려면 **만들기**를 클릭합니다. 앱 및 테넌트의 이름을 입력합니다. 그런 다음 Azure에 로그인하면 Configuration Manager가 Azure에서 사용자를 위해 웹앱을 만듭니다(웹앱에 사용할 클라이언트 ID 및 비밀 키 포함). 나중에 Azure Portal에서 이러한 내용을 확인할 수 있습니다.
-        - **가져오기**: Azure 구독에 이미 있는 웹앱을 사용하려면 **가져오기**를 클릭합니다. 앱 및 테넌트의 이름을 입력한 다음 테넌트 ID, 클라이언트 ID 및 Configuration Manager에서 사용하도록 할 Azure 웹앱의 비밀 키를 지정합니다. 정보를 확인한 후에 **확인**을 클릭하여 계속합니다. 이 옵션은 현재 이 Technical Preview에서 사용할 수 없습니다.
-    - 클라이언트 앱에 대해 동일한 프로세스를 반복합니다.
+1. Configuration Manager 콘솔의 **관리** 작업 영역에서 **Cloud Services**를 확장한 후 **Azure 서비스**를 클릭합니다.
+2. **홈** 탭의 **Azure 서비스** 그룹에서 **Azure 서비스 구성**을 클릭합니다.
+3. Azure 서비스 마법사의 **Azure 서비스** 페이지에서 **클라우드 관리**를 선택하여 클라이언트가 Azure AD를 사용하여 계층에서 인증을 받도록 합니다.
+4. 마법사의 **일반** 페이지에서 Azure 서비스에 대한 이름 및 설명을 지정합니다.
+5. 마법사의 **앱** 페이지에 있는 목록에서 Azure 환경을 선택하고 **찾아보기**를 클릭하여 Azure 서비스를 구성하는 데 사용할 서버 및 클라이언트 앱을 선택합니다.
+   - **서버 앱** 창에서 사용할 서버 앱을 선택한 다음 **확인**을 클릭합니다. 서버 앱은 테넌트 ID, 클라이언트 ID 및 클라이언트의 비밀 키를 비롯한 Azure 계정에 대한 구성을 포함하는 Azure 웹앱입니다. 사용 가능한 서버 앱이 없는 경우 다음 중 하나를 사용합니다.
+       - **만들기**: 새 서버 앱을 만들려면 **만들기**를 클릭합니다. 앱 및 테넌트의 이름을 입력합니다. 그런 다음 Azure에 로그인하면 Configuration Manager가 Azure에서 사용자를 위해 웹앱을 만듭니다(웹앱에 사용할 클라이언트 ID 및 비밀 키 포함). 나중에 Azure Portal에서 이러한 내용을 확인할 수 있습니다.
+       - **가져오기**: Azure 구독에 이미 있는 웹앱을 사용하려면 **가져오기**를 클릭합니다. 앱 및 테넌트의 이름을 입력한 다음 테넌트 ID, 클라이언트 ID 및 Configuration Manager에서 사용하도록 할 Azure 웹앱의 비밀 키를 지정합니다. 정보를 확인한 후에 **확인**을 클릭하여 계속합니다. 이 옵션은 현재 이 Technical Preview에서 사용할 수 없습니다.
+   - 클라이언트 앱에 대해 동일한 프로세스를 반복합니다.
 
-  포털에서 올바른 권한을 설정하려면 애플리케이션 가져오기를 사용할 때 *디렉터리 데이터 읽기* 애플리케이션 권한을 부여해야 합니다. 애플리케이션 만들기를 사용하면 애플리케이션에 대해 사용 권한이 자동으로 만들어지지만 Azure Portal에서 여전히 애플리케이션에 동의해야 합니다.
-6.  마법사의 **검색** 페이지에서 필요에 따라 **Azure Active Directory 사용자 검색을 사용하도록 설정**하고 **설정**을 클릭합니다.
-**Azure AD 사용자 검색 설정** 대화 상자에서 검색 일정을 구성합니다. 또한 Azure AD에서 새 계정 또는 변경된 계정만 확인하는 델타 검색을 사용하도록 설정할 수도 있습니다.
-7.  마법사를 완료합니다.
+   포털에서 올바른 권한을 설정하려면 애플리케이션 가져오기를 사용할 때 *디렉터리 데이터 읽기* 애플리케이션 권한을 부여해야 합니다. 애플리케이션 만들기를 사용하면 애플리케이션에 대해 사용 권한이 자동으로 만들어지지만 Azure Portal에서 여전히 애플리케이션에 동의해야 합니다.
+6. 마법사의 **검색** 페이지에서 필요에 따라 **Azure Active Directory 사용자 검색을 사용하도록 설정**하고 **설정**을 클릭합니다.
+   **Azure AD 사용자 검색 설정** 대화 상자에서 검색 일정을 구성합니다. 또한 Azure AD에서 새 계정 또는 변경된 계정만 확인하는 델타 검색을 사용하도록 설정할 수도 있습니다.
+7. 마법사를 완료합니다.
 
 이제 Configuration Manager 사이트가 Azure AD에 연결되었습니다.
 
@@ -247,10 +249,10 @@ Windows Defender Application Guard에 대한 자세한 내용은 [이 블로그 
 시작 하기 전에 클라이언트를 설치하려는 디바이스에 클라이언트 설치 원본 파일이 로컬로 저장되어 있는지 확인합니다.
 그런 다음 [System Center Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법](/sccm/core/clients/deploy/deploy-clients-to-windows-computers#a-namebkmkmanuala-how-to-install-clients-manually)의 지침에 따라 다음 설치 명령줄을 사용합니다(이 예제의 값을 고유한 값으로 대체).
 
-**ccmsetup.exe /NoCrlCheck /Source:C:\CLIENT  CCMHOSTNAME=SCCMPROXYCONTOSO.CLOUDAPP.NET/CCM_Proxy_ServerAuth/72457598037527932 SMSSiteCode=HEC AADTENANTID=780433B5-E05E-4B7D-BFD1-E8013911E543 AADTENANTNAME=contoso  AADCLIENTAPPID=<GUID> AADRESOURCEURI=https://contososerver**
+**ccmsetup.exe /NoCrlCheck /Source:C:\CLIENT  CCMHOSTNAME=SCCMPROXYCONTOSO.CLOUDAPP.NET/CCM_Proxy_ServerAuth/72457598037527932 SMSSiteCode=HEC AADTENANTID=780433B5-E05E-4B7D-BFD1-E8013911E543 AADTENANTNAME=contoso  AADCLIENTAPPID=<GUID> AADRESOURCEURI=<https://contososerver>**
 
 - **/NoCrlCheck**: 관리 지점 또는 클라우드 관리 게이트웨이에서 비공용 서버 인증서를 사용하는 경우 클라이언트는 CRL 위치를 연결하지 못할 수 있습니다.
-- **/Source**: Local folder: 클라이언트 설치 파일의 위치입니다.
+- **/Source**: 로컬 폴더:   클라이언트 설치 파일의 위치입니다.
 - **CCMHOSTNAME**: 인터넷 관리 지점의 이름입니다. 관리되는 클라이언트의 명령 프롬프트에서 **gwmi -namespace root\ccm\locationservices -class SMS_ActiveMPCandidate**를 실행하여 이 이름을 찾을 수 있습니다.
 - **SMSMP**: 조회 관리 지점의 이름으로, 인트라넷에 있을 수 있습니다.
 - **SMSSiteCode**: Configuration Manager 사이트의 사이트 코드입니다.

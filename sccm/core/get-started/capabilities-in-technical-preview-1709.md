@@ -10,12 +10,12 @@ ms.assetid: a3ef6bdc-a204-4c4c-a02f-2bd03f35183e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 74ffd06f8b9786d627dc7fd9cecb15215228313d
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 79d7488e0554a36eb274bf4ef76cff92b48a71ba
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32341154"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53418444"
 ---
 # <a name="capabilities-in-technical-preview-1709-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1709의 기능
 
@@ -30,7 +30,7 @@ ms.locfileid: "32341154"
     Workaround details.
 -->
 **이 Technical Preview의 알려진 문제:**
--   **수동 모드의 사이트 서버가 있는 경우 미리 보기 1709 버전에 대한 업데이트가 실패합니다**. 미리 보기 1706, 1707 또는 1708 버전을 실행하고 [수동 모드의 기본 사이트 서버](/sccm/core/get-started/capabilities-in-technical-preview-1706#site-server-role-high-availability)가 있는 경우 미리 보기 사이트를 1709 버전으로 성공적으로 업데이트하려면 먼저 수동 모드 사이트 서버를 제거해야 합니다. 사이트에서 1709 버전을 실행한 후에 수동 모드 사이트 서버를 다시 설치할 수 있습니다.
+- **수동 모드의 사이트 서버가 있는 경우 미리 보기 1709 버전에 대한 업데이트가 실패합니다**. 미리 보기 1706, 1707 또는 1708 버전을 실행하고 [수동 모드의 기본 사이트 서버](/sccm/core/get-started/capabilities-in-technical-preview-1706#site-server-role-high-availability)가 있는 경우 미리 보기 사이트를 1709 버전으로 성공적으로 업데이트하려면 먼저 수동 모드 사이트 서버를 제거해야 합니다. 사이트에서 1709 버전을 실행한 후에 수동 모드 사이트 서버를 다시 설치할 수 있습니다.
 
   수동 모드 사이트 서버를 제거하려면
   1. 콘솔에서 **관리** > **개요** > **사이트 구성** > **서버 및 사이트 시스템 역할**로 이동한 다음 수동 모드 사이트 서버를 선택합니다.
@@ -42,8 +42,7 @@ ms.locfileid: "32341154"
 **다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.**  
 
 ## <a name="improved-vpn-profile-experience-in-configuration-manager-console"></a>Configuration Manager 콘솔에서 개선된 VPN 프로필
-<!-- 1313282 -->
-이 릴리스에서 선택된 플랫폼에 적절한 설정을 표시하기 위해 VPN 프로필 마법사 및 속성 페이지를 업데이트했습니다. 특히:
+<!-- 1313282 --> 이 릴리스에서는 VPN 프로필 마법사 및 속성 페이지를 업데이트하여 선택한 플랫폼에 적절한 설정을 표시했습니다. 특히:
 
 - 각 플랫폼에는 고유한 워크플로가 있습니다. 즉, 새 VPN 프로필에는 플랫폼에서 지원되는 설정만 포함됩니다.
 - 이제 **지원되는 플랫폼** 페이지는 **일반** 페이지 뒤에 표시됩니다.  이제 속성 값을 설정하기 전에 플랫폼을 선택합니다.
@@ -77,8 +76,7 @@ ms.locfileid: "32341154"
 다른 플랫폼을 선택하면 선택한 플랫폼과 관련된 설정만 표시됩니다.
 
 ## <a name="co-management-for-windows-10-devices"></a>Windows 10 디바이스의 공동 관리    
-<!-- 1350871 -->
-고객은 보통 낮은 비용으로 간소화된 클라우드 기반 솔루션을 사용하여 모바일 디바이스를 관리하는 동일한 방식으로 Windows 10 디바이스를 관리하려고 합니다. 그러나 기존 관리에서 최신 관리로 전환하기가 어려울 수 있습니다. Windows 10 버전 1607(Anniversary Update라고도 함)부터는 Windows 10 디바이스를 온-프레미스 AD(Active Directory)와 클라우드 기반 Azure AD에 동시에 조인할 수 있습니다(하이브리드 Azure AD). 공동 관리에서는 이 향상된 기능을 사용하며 Configuration Manager 및 Intune을 둘 다 사용하여 Windows 10 디바이스를 동시에 관리할 수 있게 해줍니다. 이것은 기존 관리에서 최신 관리에 대한 연결을 제공하고 단계별 접근 방법을 사용하여 전환할 수 있는 경로를 제공하는 솔루션입니다. 
+<!-- 1350871 --> 고객은 낮은 비용으로 간소화된 클라우드 기반 솔루션을 사용하여 모바일 디바이스를 관리하는 동일한 방식으로 Windows 10 디바이스를 관리하려고 합니다. 그러나 기존 관리에서 최신 관리로 전환하기가 어려울 수 있습니다. Windows 10 버전 1607(Anniversary Update라고도 함)부터는 Windows 10 디바이스를 온-프레미스 AD(Active Directory)와 클라우드 기반 Azure AD에 동시에 조인할 수 있습니다(하이브리드 Azure AD). 공동 관리에서는 이 향상된 기능을 사용하며 Configuration Manager 및 Intune을 둘 다 사용하여 Windows 10 디바이스를 동시에 관리할 수 있게 해줍니다. 이것은 기존 관리에서 최신 관리에 대한 연결을 제공하고 단계별 접근 방법을 사용하여 전환할 수 있는 경로를 제공하는 솔루션입니다. 
 
 ### <a name="prerequisites"></a>필수 구성 요소
 공동 관리를 활성화하기 전에 다음 필수 구성 요소를 준비해야 합니다. 기존 Configuration Manager 클라이언트 및 클라이언트가 아닌 디바이스에 대한 일반 전제 조건 및 다른 필수 구성 요소가 있습니다.
@@ -118,8 +116,8 @@ ms.locfileid: "32341154"
 Windows 10 디바이스가 공동 관리를 사용하도록 설정한 경우 Azure의 Intune에서 다음과 같은 원격 작업을 사용할 수 있습니다.  
 - [초기화](https://docs.microsoft.com/intune/devices-wipe#factory-reset)
 - [선택적 초기화](https://docs.microsoft.com/intune/apps-selective-wipe)
-- [장치 삭제](https://docs.microsoft.com/intune/devices-wipe#delete-devices-from-the-azure-active-directory-portal)
-- [장치 다시 시작](https://docs.microsoft.com/intune/device-restart)
+- [디바이스 삭제](https://docs.microsoft.com/intune/devices-wipe#delete-devices-from-the-azure-active-directory-portal)
+- [디바이스 다시 시작](https://docs.microsoft.com/intune/device-restart)
 - [새로운 시작](https://docs.microsoft.com/intune/device-fresh-start)
 
 ### <a name="prepare-intune-for-co-management"></a>공동 관리를 위해 Intune 준비
@@ -127,7 +125,7 @@ Configuration Manager에서 Intune으로 워크로드를 전환하기 전에 Int
 Configuration Manager에 있는 개체를 기반으로 Intune에서 개체를 만들 수 있습니다. 또는 현재 전략이 레거시나 기존 관리를 기반으로 하는 경우 최신 관리에 필요한 정책 및 프로필을 재고하기 위해 단계를 뒤로 돌릴 수 있습니다. 다음 리소스를 사용하여 정책 및 프로필을 만듭니다.    
 <!-- - [Device compliance policies](https://docs.microsoft.com/intune/compliance-policy-create-windows)  -->
 - [비즈니스용 Windows 업데이트 정책](https://docs.microsoft.com/intune/windows-update-for-business-configure)  
-- [장치 구성 프로필](https://docs.microsoft.com/intune/device-profile-create)  
+- [디바이스 구성 프로필](https://docs.microsoft.com/intune/device-profile-create)  
 
 ### <a name="architectural-overview-for-co-management"></a>공동 관리에 대한 아키텍처 개요
 다음 다이어그램은 공동 관리의 아키텍처 개요 및 기존 구성 및 Intune 인프라에 맞추는 방법을 제공합니다.
@@ -151,14 +149,14 @@ AD 및 Azure AD에 조인하고, Intune과 Configuration Manager에서 클라이
 #### <a name="command-line-to-install-configuration-manager-client"></a>Configuration Manager 클라이언트를 설치하는 명령줄
 Configuration Manager 클라이언트가 아닌 Windows 10 디바이스의 경우 Intune에서 앱을 만듭니다. 다음 섹션에서 앱을 만들 때 다음 명령줄을 사용합니다.
 
-ccmsetup.msi CCMSETUPCMD="/mp:&#60;*클라우드 관리 게이트웨이 상호 인증 끝점의 URL*&#62;/ CCMHOSTNAME=&#60;*클라우드 관리 게이트웨이 상호 인증 끝점의 URL*&#62; SMSSiteCode=&#60;*Sitecode*&#62; SMSMP=https:&#47;/&#60;*MP의 FQDN*&#62; AADTENANTID=&#60;*AAD 테넌트 ID*&#62; AADTENANTNAME=&#60;*테넌트 이름*&#62; AADCLIENTAPPID=&#60;*AAD 통합용 Server AppID*&#62; AADRESOURCEURI=https:&#47;/&#60;*리소스 ID*&#62;”
+ccmsetup.msi CCMSETUPCMD="/mp:&amp;#60;*클라우드 관리 게이트웨이 상호 인증 엔드포인트의 URL*&amp;#62;/ CCMHOSTNAME=&amp;#60;*클라우드 관리 게이트웨이 상호 인증 엔드포인트의 URL*&amp;#62; SMSSiteCode=&amp;#60;*Sitecode*&amp;#62; SMSMP=https:&amp;#47;/&amp;#60;*MP의 FQDN*&amp;#62; AADTENANTID=&amp;#60;*AAD 테넌트 ID*&amp;#62; AADTENANTNAME=&amp;#60;*테넌트 이름*&amp;#62; AADCLIENTAPPID=&amp;#60;*AAD 통합용 Server AppID*&amp;#62; AADRESOURCEURI=https:&amp;#47;/&amp;#60;*리소스 ID*&amp;#62;”
 
 예를 들어, 다음 값을 포함하는 경우:
 
-- **클라우드 관리 게이트웨이 상호 인증 끝점의 URL**: https:/&#47;contoso.cloudapp.net/CCM_Proxy_MutualAuth/72057594037928100    
+- **클라우드 관리 게이트웨이 상호 인증 엔드포인트의 URL**: https:/&amp;#47;contoso.cloudapp.net/CCM_Proxy_MutualAuth/72057594037928100    
 
    >[!Note]    
-   >**클라우드 관리 게이트웨이 상호 인증 끝점의 URL** 값에 **vProxy_Roles** SQL 보기의 **MutualAuthPath** 값을 사용합니다.
+   >**클라우드 관리 게이트웨이 상호 인증 엔드포인트의 URL** 값에 **vProxy_Roles** SQL 보기의 **MutualAuthPath** 값을 사용합니다.
 
 - **MP(관리 지점)의 FQDN**: sccmmp.corp.contoso.com    
 - **Sitecode**: PS1    
@@ -203,8 +201,8 @@ Intune 또는 Configuration Manager 클라이언트에 등록되지 않은 Windo
 2. the Manage group의 the Home tab에서  **공동 관리 구성**을 선택하여 공동 관리 등록 마법사를 엽니다.    
 3. 구독 페이지에서 **로그인**을 클릭하고 Intune 테넌트에 로그인하고 **다음**을 클릭합니다.   
 4. 스테이징 페이지에서 다음 설정을 구성한 후에 **다음**을 클릭합니다.
-    - **파일럿 그룹**: 파일럿 그룹에는 선택한 하나 이상의 컬렉션이 포함됩니다. 이 그룹을 공동 관리의 단계별 롤아웃 중 일부로 사용합니다. 작은 테스트 컬렉션을 시작하고, 공동 관리를 더 많은 사용자 및 디바이스에 롤아웃하는 경우 파일럿 그룹에 더 많은 컬렉션을 추가할 수 있습니다. 공동 관리 속성에서 언제든지 파일럿 그룹의 컬렉션을 변경할 수 있습니다.
-    - **프로덕션**: 이 설정을 선택하면 지원되는 모든 Windows 10 장치가 공동 관리를 사용할 수 있습니다. 하나 이상의 컬렉션을 포함하여 **제외 그룹**을 구성합니다. 이 그룹에 있는 컬렉션의 멤버인 디바이스는 공동 관리를 사용하지 않도록 제외됩니다. 
+    - **파일럿 그룹**: 파일럿 그룹에는 선택한 컬렉션이 하나 이상 포함되어 있습니다. 이 그룹을 공동 관리의 단계별 롤아웃 중 일부로 사용합니다. 작은 테스트 컬렉션을 시작하고, 공동 관리를 더 많은 사용자 및 디바이스에 롤아웃하는 경우 파일럿 그룹에 더 많은 컬렉션을 추가할 수 있습니다. 공동 관리 속성에서 언제든지 파일럿 그룹의 컬렉션을 변경할 수 있습니다.
+    - **프로덕션:** 이 설정을 선택하면 지원되는 모든 Windows 10 디바이스가 공동 관리를 사용하도록 설정됩니다. 하나 이상의 컬렉션을 포함하여 **제외 그룹**을 구성합니다. 이 그룹에 있는 컬렉션의 멤버인 디바이스는 공동 관리를 사용하지 않도록 제외됩니다. 
 5. 사용 페이지에서 (스테이징 페이지에 구성된 설정에 따라) **파일럿** 또는 **모두** 중 하나를 선택하여 Intune에 자동 등록을 활성화한 후 **다음**을 클릭합니다. **파일럿**을 선택하는 경우 파일럿 그룹의 멤버인 Configuration manager 클라이언트만이 Intune에서 자동으로 등록됩니다. 이 기능을 사용하면 클라이언트의 하위 집합에서 공동 관리를 사용하여 처음에 공동 관리를 테스트하고 단계적 접근을 사용하여 공동 관리를 롤아웃할 수 있습니다. 
 6. 워크로드 페이지에서 Configuration Manager 워크로드를 Intune에서 관리하도록 전환할지를 선택하고 **다음**을 클릭합니다. 슬라이더를 사용하여 (스테이징 페이지에서 구성한 설정에 따라) 워크로드를 파일럿 그룹으로 전활할지 아니면 모든 Windows 10 클라이언트로 전환할지를 선택합니다. 
 7. 공동 관리를 사용하려면 마법사를 완료합니다.  

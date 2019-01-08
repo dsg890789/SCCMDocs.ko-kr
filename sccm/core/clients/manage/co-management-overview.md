@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: d6bbc787-83a5-44b4-ad64-016e5da7413f
-ms.openlocfilehash: 1791217e22e2bcc6d5fd2603abee3aaced816afe
-ms.sourcegitcommit: 1f8731ed8f0308cb2cb576722adb0821a366e9ce
+ms.openlocfilehash: 6434ba443cb884c7fbb5d727c5db3c80d2d88aad
+ms.sourcegitcommit: 12b71da551350c99c5916df3629e33e31040db15
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223741"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53530934"
 ---
 # <a name="co-management-for-windows-10-devices"></a>Windows 10 디바이스의 공동 관리    
 
@@ -39,8 +39,8 @@ ms.locfileid: "51223741"
 - 원격 작업
     - [초기화](https://docs.microsoft.com/intune/devices-wipe#factory-reset)
     - [선택적 초기화](https://docs.microsoft.com/intune/apps-selective-wipe)
-    - [장치 삭제](https://docs.microsoft.com/intune/devices-wipe#delete-devices-from-the-azure-active-directory-portal)
-    - [장치 다시 시작](https://docs.microsoft.com/intune/device-restart)
+    - [디바이스 삭제](https://docs.microsoft.com/intune/devices-wipe#delete-devices-from-the-azure-active-directory-portal)
+    - [디바이스 다시 시작](https://docs.microsoft.com/intune/device-restart)
     - [새로운 시작](https://docs.microsoft.com/intune/device-fresh-start)  
 
 - 다음 워크로드에 대해 Intune과 오케스트레이션:
@@ -48,7 +48,7 @@ ms.locfileid: "51223741"
     - [리소스 액세스 정책](https://docs.microsoft.com/intune/device-profiles)
     - [Windows 업데이트 정책](https://docs.microsoft.com/intune/windows-update-for-business-configure)
     - [Endpoint Protection](https://docs.microsoft.com/intune/endpoint-protection-windows-10)(Configuration Manager 버전 1802부터) <!-- 1357365 -->
-    - [장치 구성](https://docs.microsoft.com/intune/device-profile-create)(Configuration Manager 1806부터 시작) <!-- 1357903 -->
+    - [디바이스 구성](https://docs.microsoft.com/intune/device-profile-create)(Configuration Manager 1806부터 시작) <!-- 1357903 -->
     - [Office 간편 실행 앱](https://docs.microsoft.com/intune/apps-add-office365)(Configuration Manager 1806부터 시작)<!--1357841-->
     - [모바일 앱](https://docs.microsoft.com/intune/app-management)(Configuration Manager 1806부터 시작하는 시험판 기능) <!--1357892-->
 
@@ -58,7 +58,7 @@ ms.locfileid: "51223741"
 
  공동 관리에 연결하기 위한 두 가지 주요 경로가 있습니다.  
 
-   - Configuration Manager가 공동 관리 프로비전: 이미 Configuration Manager 클라이언트가 포함된 Azure AD 조인 Windows 10 디바이스를 Intune에 등록합니다.  
+   - Configuration Manager에서 공동 관리 프로비전: 이미 Configuration Manager 클라이언트인 Azure AD 조인 Windows 10 디바이스를 Intune에 등록합니다.  
 
    - 프로비전된 Intune: 이미 Intune에 등록된 디바이스의 경우 Configuration Manager 클라이언트를 설치하여 공동 관리 상태가 됩니다. 
 
@@ -72,21 +72,21 @@ ms.locfileid: "51223741"
 
  - Windows 10 디바이스는 Azure AD에 조인되어야 합니다. 이러한 장치는 다음 형식 중 하나일 수 있습니다.  
 
-     - [하이브리드 Azure AD 조인](https://docs.microsoft.com/azure/active-directory/device-management-hybrid-azuread-joined-devices-setup), 여기서 디바이스가 온-프레미스 Active Directory에 조인되고 Azure Active Directory에 등록됩니다.
+     - [하이브리드 Azure AD 조인](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan), 여기서 디바이스가 온-프레미스 Active Directory에 조인되고 Azure Active Directory에 등록됩니다.
 
-     - Azure AD 조인 전용. (이 유형은 "클라우드 도메인 조인"이라고도 함)<!--SCCMDocs issue 605-->
+     - [Azure AD 조인](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)만 (이 유형은 "클라우드 도메인 조인"이라고도 함)<!--SCCMDocs issue 605-->
 
  - [Windows 10 자동 등록을 사용하도록 설정합니다](https://docs.microsoft.com/intune/windows-enroll).  
 
 
 ### <a name="intune"></a>Intune
 
- - [Intune 구독 설정 방법](/sccm/mdm/deploy-use/configure-intune-subscription) 또는 [Intune 설정](/intune/setup-steps)  
+- [Intune 구독 설정 방법](/sccm/mdm/deploy-use/configure-intune-subscription) 또는 [Intune 설정](/intune/setup-steps)  
 
- - [하이브리드 MDM에서 Intune 독립 실행형으로 마이그레이션 시작](/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)  
+- [하이브리드 MDM에서 Intune 독립 실행형으로 마이그레이션 시작](/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)  
 
- > [!Note]  
- > 하이브리드 MDM 환경(Configuration Manager와 통합된 Intune)이 설정된 경우 공동 관리를 사용할 수 없습니다. 그러나 사용자를 Intune 독립 실행형으로 마이그레이션하기 시작한 후 관련 Windows 10 디바이스에 공동 관리를 활성화할 수 있습니다. Intune 독립 실행형으로 마이그레이션하는 방법에 대한 자세한 정보는 [하이브리드 MDM에서 Intune 독립 실행형으로 마이그레이션 시작](/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)을 참조하세요.  
+  > [!Note]  
+  > 하이브리드 MDM 환경(Configuration Manager와 통합된 Intune)이 설정된 경우 공동 관리를 사용할 수 없습니다. 그러나 사용자를 Intune 독립 실행형으로 마이그레이션하기 시작한 후 관련 Windows 10 디바이스에 공동 관리를 활성화할 수 있습니다. Intune 독립 실행형으로 마이그레이션하는 방법에 대한 자세한 정보는 [하이브리드 MDM에서 Intune 독립 실행형으로 마이그레이션 시작](/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)을 참조하세요.  
 
 
 ### <a name="enable-co-management"></a>공동 관리 사용 
@@ -106,9 +106,9 @@ ms.locfileid: "51223741"
     > [!Note]  
     > 버전 1806부터 자동 등록은 모든 클라이언트에 대해 직접 실행되지 않습니다. 이 동작은 대규모 환경에 대해 등록 확장을 보다 잘 수행하게 합니다. Configuration Manager는 클라이언트 수에 따라 등록을 임의 지정합니다. 예를 들어 사용자 환경에 100,000명의 클라이언트가 있는 경우 이 설정을 사용하도록 설정하면 며칠에 걸쳐 등록이 가능합니다.<!--1358003-->  
 
-3. **워크로드** 페이지에서 각 워크로드에 대해 Intune으로 관리하기 위해 이동할 장치 그룹을 선택합니다.  
+3. **워크로드** 페이지에서 각 워크로드에 대해 Intune으로 관리하기 위해 이동할 디바이스 그룹을 선택합니다.  
 
-4. **준비** 페이지에서 **파일럿 컬렉션**으로 지정할 장치 컬렉션을 선택합니다. **요약**을 확인하고 마법사를 완료합니다.  
+4. **준비** 페이지에서 **파일럿 컬렉션**으로 지정할 디바이스 컬렉션을 선택합니다. **요약**을 확인하고 마법사를 완료합니다.  
 
 
 ### <a name="upgrade-windows-10-client"></a>Windows 10 클라이언트 업그레이드
@@ -159,4 +159,4 @@ Intune을 사용하여 Configuration Manager 클라이언트를 설치하는 경
 
 ## <a name="next-steps"></a>다음 단계
 
-[공동 관리를 위해 Windows 10 장치 준비](co-management-prepare.md)
+[공동 관리를 위한 Windows 10 디바이스 준비](co-management-prepare.md)

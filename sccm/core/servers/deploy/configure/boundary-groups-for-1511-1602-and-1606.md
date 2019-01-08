@@ -10,12 +10,12 @@ ms.assetid: dec1e0d7-5864-43a8-9f56-413923b3914e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 7cdcb6306632df79fe69edd1d526afaf2321bad0
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 0bb7ccfb2aa516a5deb712bd2ecd82f36c4f282c
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32343850"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53416727"
 ---
 # <a name="boundary-groups-for-system-center-configuration-manager-version-1511-1602-and-1606"></a>System Center Configuration Manager 버전 1511, 1602 및 1606에 대한 경계 그룹
 
@@ -109,15 +109,15 @@ ms.locfileid: "32343850"
 
 #### <a name="to-set-up-a-fallback-site-for-automatic-site-assignment"></a>자동 사이트 할당을 위한 대체 사이트를 설정하려면  
 
-1.  Configuration Manager 콘솔에서 **관리** > **사이트 구성** >  **사이트**를 선택합니다.  
+1. Configuration Manager 콘솔에서 **관리** > **사이트 구성** >  **사이트**를 선택합니다.  
 
-2.  **홈** 탭의 **사이트** 그룹에서 **계층 설정**을 선택합니다.  
+2. **홈** 탭의 **사이트** 그룹에서 **계층 설정**을 선택합니다.  
 
-3.  **일반** 탭에서 **대체 사이트 사용** 확인란을 선택한 다음 **대체 사이트** 드롭다운 목록에서 사이트를 선택합니다.  
+3. **일반** 탭에서 **대체 사이트 사용** 확인란을 선택한 다음 **대체 사이트** 드롭다운 목록에서 사이트를 선택합니다.  
 
-4.  **확인**을 선택하여 구성을 저장합니다.  
+4. **확인**을 선택하여 구성을 저장합니다.  
 
- 다음 섹션에서는 경계 그룹 구성에 대한 추가 세부 정보를 제공합니다.  
+   다음 섹션에서는 경계 그룹 구성에 대한 추가 세부 정보를 제공합니다.  
 
 ###  <a name="BKMK_BoundarySiteAssignment"></a> 사이트 할당 정보  
  각 경계 그룹에 클라이언트의 할당된 사이트를 설정할 수 있습니다.  

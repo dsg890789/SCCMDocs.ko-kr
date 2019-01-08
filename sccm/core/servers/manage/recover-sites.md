@@ -10,12 +10,12 @@ ms.assetid: 19539f4d-1667-4b4c-99a1-9995f12cf5f7
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4737acb34de3aebc8560f54d77b6b341c82ebf65
-ms.sourcegitcommit: 6e0e5b4b7779ce03e2b56b3b5f68f4ace1acedd8
+ms.openlocfilehash: b56dd830e2550a14d6b1e44d2aa7fdda7c56bc9b
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39467660"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53420501"
 ---
 #  <a name="recover-a-configuration-manager-site"></a>Configuration Manager 사이트 복구
 
@@ -102,9 +102,9 @@ Configuration Manager 사이트 데이터베이스는 이미 복구했지만 복
 
 - Configuration Manager는 다음 프로세스에서 사이트 데이터베이스를 복구할 수 있습니다.  
 
-    - Configuration Manager 백업 유지 관리 작업  
-    - DPM(Data Protection Manager)을 사용하여 사이트 데이터베이스 백업  
-    - 다른 백업 프로세스   
+  - Configuration Manager 백업 유지 관리 작업  
+  - DPM(Data Protection Manager)을 사용하여 사이트 데이터베이스 백업  
+  - 다른 백업 프로세스   
 
     Configuration Manager 외부의 방법을 사용하여 사이트 데이터베이스를 복원한 후에는 설치 프로그램을 실행하고 이 옵션을 선택하여 사이트 데이터베이스 복구를 완료합니다.  
 
@@ -121,7 +121,7 @@ Configuration Manager 사이트 데이터베이스는 이미 복구했지만 복
 
 Configuration Manager를 사용하면 SQL Server에서 사이트 데이터베이스에 대한 변경 내용을 추적할 수 있습니다. 변경 내용 추적을 통해 Configuration Manager는 이전 시점 이후에 데이터베이스 테이블에 수행된 변경 내용에 관한 정보를 쿼리할 수 있습니다. 보존 기간은 변경 내용 추적 정보가 보존되는 기간을 지정합니다. 기본적으로 사이트 데이터베이스는 5일간의 보존 기간을 갖도록 구성됩니다. 사이트 데이터베이스를 복구할 때 백업이 보존 기간 내에 있느냐 없느냐에 따라 복구 프로세스는 다르게 진행됩니다. 예를 들어 SQL 서버가 실패하고 마지막 백업이 7일이 경과한 경우 이 백업은 보존 기간을 벗어납니다.
 
-SQL Server 변경 내용 추적 내부에 대한 자세한 내용은 SQL Server 팀의 블로그 게시물, [변경 내용 추적 정리-1부](https://blogs.msdn.microsoft.com/sql_server_team/change-tracking-cleanup-part-1/) 및 [변경 내용 추적 정리-2부](https://blogs.msdn.microsoft.com/sql_server_team/change-tracking-cleanup-part-2)를 참조하세요.
+SQL Server 변경 내용 추적 내부에 대한 자세한 내용은 SQL Server 팀의 블로그 게시물, [변경 내용 추적 정리 - 1부](https://blogs.msdn.microsoft.com/sql_server_team/change-tracking-cleanup-part-1/) 및 [변경 내용 추적 정리 - 2부](https://blogs.msdn.microsoft.com/sql_server_team/change-tracking-cleanup-part-2)를 참조하세요.
 
 
 ### <a name="reinitialization-of-site-or-global-data"></a>사이트 또는 전역 데이터 다시 초기화
@@ -271,7 +271,7 @@ HTTPS에 대해 구성했던 IIS를 실행하는 사이트 시스템을 복구�
 
 콘텐츠 라이브러리가 포함된 파일 시스템 백업이 없는 경우에는 다음과 같은 복원 옵션이 있습니다.  
 
-- **사전 준비된 콘텐츠 파일 가져오기**: Configuration Manager 계층 구조의 다른 위치에서 모든 패키지와 응용 프로그램을 사용하여 사전 준비된 콘텐츠 파일을 만들 수 있습니다. 그런 다음, 사이트 서버에서 콘텐츠 라이브러리를 복구하려면 사전 준비된 콘텐츠 파일을 가져옵니다.  
+- **사전 준비된 콘텐츠 파일 가져오기**: Configuration Manager 계층 구조의 다른 위치에서 모든 패키지와 애플리케이션을 사용하여 사전 준비된 콘텐츠 파일을 만들 수 있습니다. 그런 다음, 사이트 서버에서 콘텐츠 라이브러리를 복구하려면 사전 준비된 콘텐츠 파일을 가져옵니다.  
 
 - **콘텐츠 업데이트**: Configuration Manager는 패키지 원본에서 콘텐츠를 콘텐츠 라이브러리에 복사합니다. 이 작업을 성공적으로 마치려면 패키지 원본 파일을 원래 위치에서 사용할 수 있어야 합니다. 각 패키지와 애플리케이션에 대해 이 작업을 수행합니다.
 

@@ -10,12 +10,12 @@ ms.assetid: 4e345791-74db-41ad-b472-024ce6521daf
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: ed9be26417aceef3fb73f48c2a4a2f15f0ba1b52
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: de1b5343bd66cec20ba55f0aa58add9839fcb48d
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32333759"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53418529"
 ---
 # <a name="common-tasks-for-managing-compliance-on-devices-with-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트가 설치된 디바이스의 준수 관리를 위한 일반 작업
 
@@ -43,66 +43,66 @@ ms.locfileid: "32333759"
 ### <a name="scenario-disable-the-use-of-bluetooth-on-windows-10-devices"></a>시나리오: Windows 10 디바이스에서 Bluetooth 사용 비활성화  
  이 시나리오에서는 보안 부서가 회사 외부에서 중요한 회사 정보를 전송하는 데 디바이스의 Bluetooth 기능을 사용할 수 있다는 사실을 파악했습니다. 최근에 모든 PC를 Windows 10으로 업그레이드했으며 이러한 디바이스에서 Bluetooth 기능을 사용하지 않기로 결정합니다.  
 
-1.  구성 항목 만들기 마법사의 **일반** 페이지에서 **Windows 10** 구성 항목 유형을 선택하고 **다음**을 클릭합니다.  
+1. 구성 항목 만들기 마법사의 **일반** 페이지에서 **Windows 10** 구성 항목 유형을 선택하고 **다음**을 클릭합니다.  
 
-2.  마법사의 **지원되는 플랫폼** 에서 모든 Windows 10 플랫폼을 선택합니다.  
+2. 마법사의 **지원되는 플랫폼** 에서 모든 Windows 10 플랫폼을 선택합니다.  
 
-3.  **장치 설정** 페이지에서 **장치**를 선택하고 **다음**을 클릭합니다.  
+3. **디바이스 설정** 페이지에서 **디바이스**를 선택하고 **다음**을 클릭합니다.  
 
-4.  **장치** 페이지에서 **Bluetooth** 의 값으로 **허용 안 함**을 선택합니다.  
+4. **디바이스** 페이지에서 **Bluetooth** 의 값으로 **허용 안 함**을 선택합니다.  
 
-5.  **비호환 설정 재구성** 을 선택하여 모든 Windows 10 장치에 변경 내용이 적용되도록 합니다.  
+5. **비호환 설정 재구성** 을 선택하여 모든 Windows 10 디바이스에 변경 내용이 적용되도록 합니다.  
 
-6.  마법사를 완료하여 구성 항목을 만듭니다.  
+6. 마법사를 완료하여 구성 항목을 만듭니다.  
 
- 이제 [System Center Configuration Manager에서 구성 기준을 만들고 배포하기 위한 일반 작업](../../compliance/plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md) 항목의 내용을 참조하여, 만든 구성을 디바이스에 쉽게 배포할 수 있습니다.  
+   이제 [System Center Configuration Manager에서 구성 기준을 만들고 배포하기 위한 일반 작업](../../compliance/plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md) 항목의 내용을 참조하여, 만든 구성을 디바이스에 쉽게 배포할 수 있습니다.  
 
 ## <a name="scenarios-for-windows-desktop-and-server-computers-managed-with-the-configuration-manager-client"></a>Configuration Manager 클라이언트와 관리되는 Windows 데스크톱 및 서버 컴퓨터에 대한 시나리오  
  Configuration Manager 클라이언트를 실행하는 Mac 컴퓨터에서는, 다음과 같이 두 가지 방법으로 준수를 평가할 수 있습니다.  
 
--   Mac OS X 기본 설정(plist) 파일을 평가합니다.  
+- Mac OS X 기본 설정(plist) 파일을 평가합니다.  
 
--   사용자 지정 스크립트를 사용하고 스크립트에서 반환된 결과를 평가합니다.  
+- 사용자 지정 스크립트를 사용하고 스크립트에서 반환된 결과를 평가합니다.  
 
- 자세한 내용은 [System Center Configuration Manager 클라이언트를 사용하여 관리하는 Mac OS X 디바이스용 구성 항목을 만드는 방법](../../compliance/deploy-use/create-configuration-items-for-mac-os-x-devices-managed-with-the-client.md)을 참조하세요.  
+  자세한 내용은 [System Center Configuration Manager 클라이언트를 사용하여 관리하는 Mac OS X 디바이스용 구성 항목을 만드는 방법](../../compliance/deploy-use/create-configuration-items-for-mac-os-x-devices-managed-with-the-client.md)을 참조하세요.  
 
 ### <a name="scenario-remediate-an-incorrect-registry-value-on-windows-desktop-computers"></a>시나리오: Windows 데스크톱 컴퓨터에서 잘못된 레지스트리 값 수정  
  이 시나리오에서는, 컴퓨터 중에서 Windows 8.1을 실행하는 일부 컴퓨터에서 중요한 LOB(기간 업무) 앱이 제대로 실행되지 않는다는 것을 발견했습니다. 조사 후, 일부 컴퓨터에서 **HKEY_LOCAL_MACHINE\SOFTWARE\Woodgrove\LOB App\Configuration\Configuration1** 이라는 레지스트리 키가 **0** 의 값으로 설정되어 있기 때문이라는 사실을 발견했습니다. LOB(기간 업무) 앱이 제대로 실행되려면 이 값이 **1**로 설정되어 있어야 합니다.  
 
  이 절차에서는 모니터링하여 잘못된 레지스트리 키 값이 검색되면 이를 자동으로 수정하는 구성 항목을 만듭니다.  
 
-1.  구성 항목 만들기 마법사의 **일반** 페이지에서 **Windows 데스크톱 및 서버(사용자 지정)** 구성 항목 유형을 선택하고 **다음**을 클릭합니다.  
+1. 구성 항목 만들기 마법사의 **일반** 페이지에서 **Windows 데스크톱 및 서버(사용자 지정)** 구성 항목 유형을 선택하고 **다음**을 클릭합니다.  
 
-2.  마법사의 **지원되는 플랫폼** 페이지에서 **Windows 8.1** 을 선택합니다(구성 항목은 영향을 받는 컴퓨터에만 적용됨).  
+2. 마법사의 **지원되는 플랫폼** 페이지에서 **Windows 8.1** 을 선택합니다(구성 항목은 영향을 받는 컴퓨터에만 적용됨).  
 
-3.  **설정** 페이지에서 **새로 만들기** 를 클릭하여 새 설정을 만듭니다.  
+3. **설정** 페이지에서 **새로 만들기** 를 클릭하여 새 설정을 만듭니다.  
 
-4.  **설정 만들기** 대화 상자의 **일반** 탭에서 다음을 구성합니다.  
+4. **설정 만들기** 대화 상자의 **일반** 탭에서 다음을 구성합니다.  
 
-    -   **이름** > **예제 설정**  
+   -   **이름** > **예제 설정**  
 
-    -   **설정 유형** > **레지스트리 값**  
+   -   **설정 유형** > **레지스트리 값**  
 
-    -   **데이터 형식** > **정수** (값에 숫자만 포함되어 있으므로)  
+   -   **데이터 형식** > **정수** (값에 숫자만 포함되어 있으므로)  
 
-    -   **하이브** > **HKEY_LOCAL_MACHINE**  
+   -   **하이브** > **HKEY_LOCAL_MACHINE**  
 
-    -   **키** > **SOFTWARE\Woodgrove\LOB App\Configuration\Configuration1**  
+   -   **키** > **SOFTWARE\Woodgrove\LOB App\Configuration\Configuration1**  
 
-    -   **값** > **1** (필수 값)  
+   -   **값** > **1** (필수 값)  
 
-5.  **설정 만들기** 대화 상자의 **호환성 규칙** 탭에서, **새로 만들기**를 클릭하고, **규칙 만들기** 대화 상자에서 다음을 구성합니다.  
+5. **설정 만들기** 대화 상자의 **호환성 규칙** 탭에서, **새로 만들기**를 클릭하고, **규칙 만들기** 대화 상자에서 다음을 구성합니다.  
 
-    -   **이름** > **예제 규칙**  
+   -   **이름** > **예제 규칙**  
 
-    -   **선택한 설정** – 선택한 설정이 **예제 설정**인지 확인합니다.  
+   -   **선택한 설정** – 선택한 설정이 **예제 설정**인지 확인합니다.  
 
-    -   **규칙 유형** > **값**  
+   -   **규칙 유형** > **값**  
 
-    -   **설정은 다음 규칙을 준수해야 함** - 설정 이름이 올바른지 확인하고 설정 값이 **1**과 같도록 지정하는 옵션을 구성합니다.  
+   -   **설정은 다음 규칙을 준수해야 함** - 설정 이름이 올바른지 확인하고 설정 값이 **1**과 같도록 지정하는 옵션을 구성합니다.  
 
-    -   **지원되는 경우 비규격 규칙 재구성** – Configuration Manager가 레지스트리 키 값이 올바르지 않으면 올바른 값으로 재설정하도록 이 상자를 선택합니다.  
+   -   **지원되는 경우 비규격 규칙 재구성** – Configuration Manager가 레지스트리 키 값이 올바르지 않으면 올바른 값으로 재설정하도록 이 상자를 선택합니다.  
 
-6.  마법사를 완료하여 구성 항목을 만듭니다.  
+6. 마법사를 완료하여 구성 항목을 만듭니다.  
 
- 이제 [구성 기준 만들기 및 배포에 대한 일반 작업](../../compliance/plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md) 항목의 내용을 참조하여, 만든 구성을 디바이스에 쉽게 배포할 수 있습니다.  
+   이제 [구성 기준 만들기 및 배포에 대한 일반 작업](../../compliance/plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md) 항목의 내용을 참조하여, 만든 구성을 디바이스에 쉽게 배포할 수 있습니다.  

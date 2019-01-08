@@ -10,12 +10,12 @@ ms.assetid: 4cafb7fc-380b-41b1-b83e-045aebfb7131
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 648146f11336489f30f03c35cb3d648f161b5e69
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: ec623e6cf7a2616058b63bb1206f5403c4ff792a
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32347062"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53417409"
 ---
 # <a name="use-multicast-to-deploy-windows-over-the-network-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 멀티캐스트를 사용하여 네트워크를 통해 Windows 배포
 
@@ -25,11 +25,11 @@ ms.locfileid: "32347062"
 
  다음 운영 체제 배포 시나리오에서 멀티캐스트를 사용하여 네트워크를 통해 운영 체제를 배포할 수 있습니다.  
 
--   [새 버전의 Windows로 기존 컴퓨터 새로 고침](refresh-an-existing-computer-with-a-new-version-of-windows.md)  
+- [새 버전의 Windows로 기존 컴퓨터 새로 고침](refresh-an-existing-computer-with-a-new-version-of-windows.md)  
 
--   [새 컴퓨터에 새 버전의 Windows 설치(완전 복구)](install-new-windows-version-new-computer-bare-metal.md)  
+- [새 컴퓨터에 새 버전의 Windows 설치(완전 복구)](install-new-windows-version-new-computer-bare-metal.md)  
 
- 운영 체제 배포 시나리오 중 하나의 단계를 완료한 후 다음 섹션을 참조하여 멀티미디어를 지원합니다.  
+  운영 체제 배포 시나리오 중 하나의 단계를 완료한 후 다음 섹션을 참조하여 멀티미디어를 지원합니다.  
 
 ##  <a name="BKMK_Configure"></a> 멀티캐스트를 지원하기 위한 배포 지점 구성  
  운영 체제를 배포할 때 멀티캐스트를 사용하려면 멀티캐스트를 지원하도록 배포 지점을 구성해야 합니다. 자세한 내용은 [멀티캐스트를 지원하도록 배포 지점 구성](../get-started/prepare-site-system-roles-for-operating-system-deployments.md#BKMK_DPMulticast)을 참조하세요.  

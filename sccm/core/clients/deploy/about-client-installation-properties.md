@@ -10,12 +10,12 @@ ms.assetid: c890fd27-7a8c-4f51-bbe2-f9908af1f42b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 735a8da57c0225aee533568eb997dc82d9816d6b
-ms.sourcegitcommit: db6074317d5c68ebb5fc478be5bceeb441aa0737
+ms.openlocfilehash: 61b51fcf9f624f5c2e21a99add1b55f6d6812c84
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34220431"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53421368"
 ---
 # <a name="about-client-installation-parameters-and-properties-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 설치 매개 변수 및 속성 정보
 
@@ -159,17 +159,17 @@ CCMSetup을 로컬 시스템 계정을 사용하는 서비스로 실행하도록
 
  HTTP 연결을 통해 클라이언트 설치 파일을 다운로드할 때의 다운로드 우선 순위를 지정합니다. 가능한 값은 다음과 같습니다.  
 
--   FOREGROUND  
+- FOREGROUND  
 
--   HIGH  
+- HIGH  
 
--   NORMAL  
+- NORMAL  
 
--   LOW  
+- LOW  
 
- 기본값은 NORMAL입니다.  
+  기본값은 NORMAL입니다.  
 
- 예: `ccmsetup.exe /BITSPriority:HIGH`  
+  예: `ccmsetup.exe /BITSPriority:HIGH`  
 
 ### <a name="downloadtimeoutltminutes"></a>/downloadtimeout:&lt;분\>
 
@@ -205,7 +205,7 @@ CCMSetup이 설치 파일 다운로드를 중지하기 전까지 시도할 시�
 
 예: `CCMSetup.exe /config:&lt;Configuration File Name.txt\>`  
 
-올바른 파일 형식을 제공하려면 사이트 서버의 &lt;Configuration Manager 디렉터리\>\\bin\\&lt;플랫폼\> 폴더에 있는 mobileclienttemplate.tcf 파일을 사용합니다. 이 파일에는 또한 섹션에 대한 설명과 섹션 사용 방법이 있습니다. [클라이언트 설치] 섹션에서 **Install=INSTALL=ALL**텍스트 뒤에 클라이언트 설치 속성을 지정합니다.  
+올바른 파일 형식을 제공하려면 사이트 서버의 &lt;Configuration Manager 디렉터리\>\\bin\\&lt;플랫폼\> 폴더에 있는 mobileclienttemplate.tcf 파일을 사용합니다. 이 파일에는 또한 섹션에 대한 설명과 섹션 사용 방법이 있습니다. [클라이언트 설치] 섹션에서 다음 텍스트 뒤에 클라이언트 설치 속성을 지정합니다. **Install=INSTALL=ALL**.  
 
 [클라이언트 설치] 섹션 항목의 예: `Install=INSTALL=ALL SMSSITECODE=ABC SMSCACHESIZE=100`  
 
@@ -265,7 +265,7 @@ ccmsetup.msi로 설치된 후에 ccmsetup.exe에 전달되는 명령줄 매개 �
 
 ### <a name="aadclientappid"></a>AADCLIENTAPPID
 
-Azure AD(Azure Active Directory) 클라이언트 앱 식별자를 지정합니다. 클라우드 관리에 대한 [Azure 서비스를 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)할 때 클라이언트 앱을 만들거나 가져옵니다. Azure 관리자가 Azure Portal에서 이 속성에 대한 값을 가져올 수 있습니다. 자세한 내용은 [애플리케이션 ID 가져오기](/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-application-id-and-authentication-key)를 참조하세요. **AADCLIENTAPPID** 속성의 경우 해당 응용 프로그램 ID는 "원시" 응용 프로그램 형식을 위한 것입니다.
+Azure AD(Azure Active Directory) 클라이언트 앱 식별자를 지정합니다. 클라우드 관리에 대한 [Azure 서비스를 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)할 때 클라이언트 앱을 만들거나 가져옵니다. Azure 관리자가 Azure Portal에서 이 속성에 대한 값을 가져올 수 있습니다. 자세한 내용은 [애플리케이션 ID 가져오기](/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-application-id-and-authentication-key)를 참조하세요. **AADCLIENTAPPID** 속성의 경우 해당 애플리케이션 ID는 "원시" 애플리케이션 형식을 위한 것입니다.
 
 예: `ccmsetup.exe AADCLIENTAPPID=aa28e7f1-b88a-43cd-a2e3-f88b257c863b`
 
@@ -286,8 +286,8 @@ Azure AD 테넌트 식별자를 지정합니다. 클라우드 관리를 위한 [
 - 다음 명령을 실행합니다. `dsregcmd.exe /status`
 - 디바이스 상태 섹션에서 **TenantId** 값을 찾습니다. 예를 들면 `TenantId : 607b7853-6f6f-4d5d-b3d4-811c33fdd49a`
 
- > [!Note]
- > Azure 관리자는 Azure Portal에서 이 값을 가져울 수도 있습니다. 자세한 내용은 [테넌트 ID 가져오기](/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-tenant-id) 참조
+  > [!Note]
+  > Azure 관리자는 Azure Portal에서 이 값을 가져울 수도 있습니다. 자세한 내용은 [테넌트 ID 가져오기](/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-tenant-id) 참조
 
 예: `ccmsetup.exe AADTENANTID=607b7853-6f6f-4d5d-b3d4-811c33fdd49a`
 
@@ -315,7 +315,7 @@ Example: `ccmsetup.exe AADTENANTNAME=Contoso`
 > [!IMPORTANT]  
 >  사용자가 로그온되어 있더라도 경고 없이 컴퓨터가 다시 시작됩니다.  
 
-예: **CCMSetup.exe  CCMALLOWSILENTREBOOT**  
+예제: **CCMSetup.exe  CCMALLOWSILENTREBOOT**  
 
 ### <a name="ccmalwaysinf"></a>CCMALWAYSINF
 
@@ -356,10 +356,10 @@ Example: `ccmsetup.exe AADTENANTNAME=Contoso`
 
  `CCMCERTSEL="SubjectAttr:OU = Computers"`은(는) 고유 이름과 명명된 컴퓨터로 표시된 조직 구성 단위 특성을 검색합니다.  
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 >  주체 이름 상자를 사용할 경우 **Subject:** 는 대/소문자를 구분하고 **SubjectStr:** 은 대/소문자를 구분하지 않습니다.  
->   
->  주체 대체 이름 상자를 사용할 경우 **Subject:** 와 **SubjectStr:** 은 대/소문자를 구분하지 않습니다.  
+> 
+>  주체 대체 이름 상자를 사용할 경우 <strong>Subject:</strong>와 **SubjectStr:** 은 대/소문자를 구분하지 않습니다.  
 
  인증서 선택에 사용할 수 있는 전체 특성 목록은 [PKI 인증서 선택 기준에 지원되는 특성 값](#BKMK_attributevalues)항목에 나와 있습니다.  
 
@@ -461,7 +461,7 @@ Configuration Manager 로그 파일이 최대 크기에 도달하면 클라이�
 
  TRUE로 설정된 경우 이 속성은 관리자의 능력이 **Configuration Manager** 제어판에서 할당된 사이트를 변경하지 못하게 합니다.  
 
- 예: **CCMSetup.exe DISABLESITEOPT=TRUE**  
+ 예제: **CCMSetup.exe DISABLESITEOPT=TRUE**  
 
 ### <a name="disablecacheopt"></a>DISABLECACHEOPT
 
@@ -576,19 +576,19 @@ Configuration Manager 클라이언트 컴퓨터에서 전송한 상태 메시지
 
 Configuration Manager 설치 관리자가 구성 설정을 확인하는 위치와 순서를 지정합니다. 이 속성은 하나 이상의 문자의 문자열이며, 각 문자가 특정 구성 원본을 정의합니다. 문자 값 R, P, M, U를 따로 또는 함께 사용합니다.  
 
--   R: 레지스트리에서 구성 설정을 확인합니다.  
+- R: 레지스트리에서 구성 설정을 확인합니다.  
 
-   자세한 내용은 [레지스트리에 클라이언트 설치 속성을 저장하는 방법에 대한 정보](/sccm/core/clients/deploy/deploy-clients-to-windows-computers#BKMK_Provision)를 참조하세요.  
+  자세한 내용은 [레지스트리에 클라이언트 설치 속성을 저장하는 방법에 대한 정보](/sccm/core/clients/deploy/deploy-clients-to-windows-computers#BKMK_Provision)를 참조하세요.  
 
--   P: 명령 프롬프트에 제공된 설치 속성에서 구성 설정을 확인합니다.  
+- P: 명령 프롬프트에 제공된 설치 속성에서 구성 설정을 확인합니다.  
 
--   M: 이전 클라이언트를 Configuration Manager 클라이언트 소프트웨어로 업그레이드할 때 기존 설정을 확인합니다.  
+- M: 이전 클라이언트를 Configuration Manager 클라이언트 소프트웨어로 업그레이드할 때 기존 설정을 확인합니다.  
 
--   U: 설치된 클라이언트를 최신 버전으로 업그레이드하고 할당된 사이트 코드를 사용합니다.  
+- U: 설치된 클라이언트를 최신 버전으로 업그레이드하고 할당된 사이트 코드를 사용합니다.  
 
- 기본적으로 클라이언트 설치 시 `PU` 가 사용되어 먼저 설치 속성이 확인된 다음 기존 속성이 확인됩니다.  
+  기본적으로 클라이언트 설치 시 `PU` 가 사용되어 먼저 설치 속성이 확인된 다음 기존 속성이 확인됩니다.  
 
- 예: `CCMSetup.exe SMSCONFIGSOURCE=RP`  
+  예: `CCMSetup.exe SMSCONFIGSOURCE=RP`  
 
 ### <a name="smsdirectorylookup"></a>SMSDIRECTORYLOOKUP
 
@@ -627,7 +627,7 @@ Configuration Manager 클라이언트가 사용할 초기 관리 지점을 지�
 
  Configuration Manager의 신뢰할 수 있는 루트 키를 다시 설치하는 데 사용됩니다. 신뢰할 수 있는 루트 키를 포함하는 파일의 전체 경로 및 파일 이름을 지정합니다. 이 속성은 HTTP 및 HTTPS 클라이언트 통신을 사용하는 클라이언트에 적용됩니다. 자세한 내용은 [신뢰할 수 있는 루트 키 계획](../../plan-design/security/plan-for-security.md#BKMK_PlanningForRTK)을 참조하세요.  
 
- 예: 'CCMSetup.exe SMSROOTKEYPATH=&lt;전체 경로 및 파일 이름\>`  
+ 예제: 'CCMSetup.exe SMSROOTKEYPATH=&lt;전체 경로 및 파일 이름\>`  
 
 ### <a name="smssigncert"></a>SMSSIGNCERT
 
@@ -635,7 +635,7 @@ Configuration Manager 클라이언트가 사용할 초기 관리 지점을 지�
 
  이 인증서는 **SMS** 인증서 저장소에 저장되어 있으며 주체 이름이 **사이트 서버** 이고 이름이 **사이트 서버 서명 인증서**입니다.  
 
- 예: **CCMSetup.exe /UsePKICert SMSSIGNCERT=&lt;전체 경로 및 파일 이름\>**  
+ 예제: **CCMSetup.exe /UsePKICert SMSSIGNCERT=&lt;전체 경로 및 파일 이름\>**  
 
 ### <a name="smssitecode"></a>SMSSITECODE
 

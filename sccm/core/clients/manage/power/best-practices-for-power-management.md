@@ -10,12 +10,12 @@ ms.assetid: 9f7142e1-c972-4384-853b-2da1568cb3e3
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 480f7a890e82b46e2b2d69180763f39504a47e0c
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: a08162f36c247136dd346140480e2d29be0c4017
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32344486"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53424802"
 ---
 # <a name="best-practices-for-power-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 전원 관리에 대한 모범 사례
 
@@ -40,17 +40,17 @@ System Center Configuration Manager에서 전원 관리에 대한 다음 모범 
 
  전원 관리에서 제외하려는 컴퓨터의 예는 다음과 같습니다.  
 
--   켜진 상태를 유지해야 하는 컴퓨터  
+- 켜진 상태를 유지해야 하는 컴퓨터  
 
--   사용자가 원격 데스크톱 연결을 사용하여 연결해야 하는 컴퓨터  
+- 사용자가 원격 데스크톱 연결을 사용하여 연결해야 하는 컴퓨터  
 
--   전원 관리를 사용할 수 없는 컴퓨터  
+- 전원 관리를 사용할 수 없는 컴퓨터  
 
--   배포 지점 사이트 시스템 역할을 하는 컴퓨터  
+- 배포 지점 사이트 시스템 역할을 하는 컴퓨터  
 
--   컴퓨터 및 모니터가 항상 켜져 있어야 하는 키오스크 컴퓨터와 같은 공용 컴퓨터, 정보 디스플레이 또는 모니터링 콘솔  
+- 컴퓨터 및 모니터가 항상 켜져 있어야 하는 키오스크 컴퓨터와 같은 공용 컴퓨터, 정보 디스플레이 또는 모니터링 콘솔  
 
- 자세한 내용은 [System Center Configuration Manager에서 전원 관리 구성](../../../../core/clients/manage/power/configuring-power-management.md)을 참조하세요.  
+  자세한 내용은 [System Center Configuration Manager에서 전원 관리 구성](../../../../core/clients/manage/power/configuring-power-management.md)을 참조하세요.  
 
 ## <a name="first-apply-power-plans-to-a-test-collection-of-computers"></a>먼저 전원 계획을 컴퓨터의 테스트 컬렉션에 적용합니다.  
  전원 계획을 더 큰 컴퓨터 컬렉션에 적용하기 전에 항상 먼저 컴퓨터의 테스트 컬렉션에서 전원 관리 계획을 적용한 효과를 테스트합니다.  
@@ -65,7 +65,7 @@ System Center Configuration Manager에서 전원 관리에 대한 다음 모범 
 
  컴퓨터가 각각 다른 전원 계획을 적용하는 여러 컬렉션의 멤버인 경우 다음 작업이 수행됩니다.  
 
--   전원 계획: 전원 설정에 대해 여러 값이 컴퓨터에 적용된 경우 최소한의 제한적인 값이 사용됩니다.  
+-   전원 계획: 전원 설정에 대해 여러 값이 컴퓨터에 적용된 경우 최소한의 제한 값이 사용됩니다.  
 
 -   절전 모드 해제 시간: 여러 절전 모드 해제 시간이 데스크톱 컴퓨터에 적용된 경우 자정에 가장 가까운 시간이 사용됩니다.  
 

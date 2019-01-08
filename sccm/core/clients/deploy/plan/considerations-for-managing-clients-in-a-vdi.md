@@ -10,12 +10,12 @@ ms.assetid: abd45393-d84e-4583-bc80-74bbb3709577
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a17bb43d91d26cf10da0e1d3da5d8f6e4a2af2a7
-ms.sourcegitcommit: 5b3ff56018cfc6bda9643c9f1bebc575173f61bc
+ms.openlocfilehash: 6733a4dc3b027efa23ddc64e06e4269260c43101
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083788"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53418631"
 ---
 # <a name="considerations-for-managing-system-center-configuration-manager-clients--in-a-virtual-desktop-infrastructure-vdi"></a>VDI(가상 데스크톱 인프라)에서 System Center Configuration Manager 클라이언트를 관리할 때의 고려 사항
 
@@ -23,13 +23,13 @@ ms.locfileid: "50083788"
 
 System Center Configuration Manager는 다음과 같은 VDI(가상 데스크톱 인프라) 시나리오에서 Configuration Manager 클라이언트 설치를 지원합니다.  
 
--   **개인 가상 머신** - 일반적으로 사용자 데이터 및 설정을 세션 간에 가상 머신에서 유지 관리하도록 구성할 때 사용됩니다.  
+- **개인 가상 머신** - 일반적으로 사용자 데이터 및 설정을 세션 간에 가상 머신에서 유지 관리하도록 구성할 때 사용됩니다.  
 
--   **원격 데스크톱 서비스 세션** - 원격 데스크톱 서비스를 통해 서버에서 여러 동시 클라이언트 세션을 호스트할 수 있습니다. 사용자는 세션에 연결한 다음 해당 서버에서 애플리케이션을 실행할 수 있습니다.  
+- **원격 데스크톱 서비스 세션** - 원격 데스크톱 서비스를 통해 서버에서 여러 동시 클라이언트 세션을 호스트할 수 있습니다. 사용자는 세션에 연결한 다음 해당 서버에서 애플리케이션을 실행할 수 있습니다.  
 
--   **풀링된 가상 컴퓨터** - 풀링된 가상 컴퓨터는 세션 간에 지속되지 않습니다. 세션이 종료되면 모든 데이터 및 설정은 삭제됩니다. 풀링된 가상 컴퓨터는 클라이언트 세션을 호스팅하는 Windows Server에서 필수 비즈니스 애플리케이션이 실행될 수 없으므로 원격 데스크톱 서비스를 사용할 수 없는 경우에 유용합니다.  
+- **풀링된 가상 컴퓨터** - 풀링된 가상 컴퓨터는 세션 간에 지속되지 않습니다. 세션이 종료되면 모든 데이터 및 설정은 삭제됩니다. 풀링된 가상 컴퓨터는 클라이언트 세션을 호스팅하는 Windows Server에서 필수 비즈니스 애플리케이션이 실행될 수 없으므로 원격 데스크톱 서비스를 사용할 수 없는 경우에 유용합니다.  
 
- 다음 표에는 VDI에서 Configuration Manager 클라이언트를 관리하는 데 필요한 고려 사항이 나열되어 있습니다.  
+  다음 표에는 VDI에서 Configuration Manager 클라이언트를 관리하는 데 필요한 고려 사항이 나열되어 있습니다.  
 
 |가상 머신 유형|고려 사항|  
 |--------------------------|--------------------|  
@@ -42,4 +42,4 @@ System Center Configuration Manager는 다음과 같은 VDI(가상 데스크톱 
 > [!NOTE]  
 >  서비스 모드인 Windows Embedded 클라이언트를 제외하고, 가상화된 환경에서 실행 중이지 않은 Configuration Manager 클라이언트에서도 이러한 임의 지연 시간을 활용합니다. 배포된 클라이언트가 여러 개인 경우 이러한 동작은 네트워크 대역폭의 최대 사용을 방지하고 관리 지점 및 사이트 서버와 같은 Configuration Manager 사이트 시스템에서 CPU 처리 요구 사항을 완화하는 데 도움이 됩니다. 지연 간격은 Configuration Manager 기능에 따라 달라집니다.  
 >   
->  임의 지연은 **컴퓨터 에이전트**: **최종 기한 임의 설정 사용 안 함**클라이언트 설정을 통해 필수 소프트웨어 업데이트에 대해 기본적으로 사용되지 않습니다.
+>  임의 지연은 다음과 같은 클라이언트 설정을 통해 필수 소프트웨어 업데이트에 대해 기본적으로 사용되지 않습니다. **컴퓨터 에이전트**: **최종 기한 임의 설정 사용 안 함**.

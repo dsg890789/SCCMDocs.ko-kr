@@ -1,7 +1,7 @@
 ---
 title: Linux 및 UNIX 서버 애플리케이션 만들기
 titleSuffix: Configuration Manager
-description: Linux 및 Unix 디바이스용 응용 프로그램을 만들고 배포할 때 고려해야 할 사항을 확인합니다.
+description: Linux 및 Unix 장치용 애플리케이션을 만들고 배포할 때 고려해야 할 사항을 확인합니다.
 ms.date: 04/13/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-app
@@ -10,12 +10,12 @@ ms.assetid: 79cd131a-1a24-4751-87c8-7f275e45d847
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 35ccc4944359b89bad3ccac52309a289f69933f7
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 12a3bffb48cba2e3f258d06489b7511d05b7daad
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32338216"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53422082"
 ---
 # <a name="create-linux-and-unix-server-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Linux 및 UNIX 서버 애플리케이션 만들기
 
@@ -100,15 +100,15 @@ Linux 및 UNIX 컴퓨터에 패키지와 프로그램을 배포할 때와 Window
 ### <a name="deploy-software-to-a-linux-or-unix-server"></a>Linux 또는 UNIX 서버에 소프트웨어 배포
  Linux 또는 UNIX 서버에 소프트웨어를 배포하려면 Configuration Manager 콘솔에서 **소프트웨어 배포 마법사**를 사용하면 됩니다. Linux 및 UNIX용 클라이언트는 대부분의 배포 설정을 지원합니다. 그러나 몇 가지 설정은 지원되지 않습니다. 소프트웨어를 배포할 때는 다음 사항을 고려하세요.  
 
--   콘텐츠 위치에 대해 구성된 경계 그룹과 연결된 배포 지점 하나 이상에서 패키지를 프로비전해야 합니다.  
+- 콘텐츠 위치에 대해 구성된 경계 그룹과 연결된 배포 지점 하나 이상에서 패키지를 프로비전해야 합니다.  
 
--   이 배포를 받는 Linux 및 UNIX용 클라이언트가 자체 네트워크 위치에서 이 배포 지점에 액세스할 수 있어야 합니다.  
+- 이 배포를 받는 Linux 및 UNIX용 클라이언트가 자체 네트워크 위치에서 이 배포 지점에 액세스할 수 있어야 합니다.  
 
--   Linux 및 UNIX용 클라이언트는 배포 지점에서 패키지를 다운로드하고 로컬 컴퓨터에서 프로그램을 실행합니다.  
+- Linux 및 UNIX용 클라이언트는 배포 지점에서 패키지를 다운로드하고 로컬 컴퓨터에서 프로그램을 실행합니다.  
 
--   Linux 및 UNIX용 클라이언트는 공유 폴더에서 패키지를 다운로드할 수 있습니다. 클라이언트는 HTTP 또는 HTTPS를 지원하는 IIS 사용 배포 지점에서 패키지를 다운로드합니다.  
+- Linux 및 UNIX용 클라이언트는 공유 폴더에서 패키지를 다운로드할 수 있습니다. 클라이언트는 HTTP 또는 HTTPS를 지원하는 IIS 사용 배포 지점에서 패키지를 다운로드합니다.  
 
- 다음 표에는 지원되지 않는 배포에 대한 속성이 나와 있습니다.  
+  다음 표에는 지원되지 않는 배포에 대한 속성이 나와 있습니다.  
 
 |배포 속성|동작|추가 정보|  
 |-------------------------|--------------|----------------------|  
@@ -131,23 +131,23 @@ Linux 및 UNIX 컴퓨터에 패키지와 프로그램을 배포할 때와 Window
 
  클라이언트가 네트워크 대역폭 제어를 사용하도록 구성하려면 **Background Intelligent Transfer** 의 클라이언트 설정을 구성한 다음 이 설정을 클라이언트 컴퓨터에 적용합니다. 대역폭 제어를 사용하려면 클라이언트가 다음 설정을 **예**로 구성한 상태에서 **Background Intelligent Transfer**의 클라이언트 설정을 받아야 합니다.  
 
--   **BITS 백그라운드 전송의 최대 네트워크 대역폭 제한**  
+- **BITS 백그라운드 전송의 최대 네트워크 대역폭 제한**  
 
- 클라이언트에서는 Background Intelligent Transfer에 대해 다음 구성을 지원합니다.  
+  클라이언트에서는 Background Intelligent Transfer에 대해 다음 구성을 지원합니다.  
 
-    -   **제한 기간 시작 시간**  
+  -   **제한 기간 시작 시간**  
 
-    -   **제한 기간 끝 시간**  
+  -   **제한 기간 끝 시간**  
 
-    -   **제한 기간 내의 최대 전송 속도(Kbps)**  
+  -   **제한 기간 내의 최대 전송 속도(Kbps)**  
 
-    -   **제한 기간 외의 최대 전송 속도(Kbps)**  
+  -   **제한 기간 외의 최대 전송 속도(Kbps)**  
 
 Background Intelligent Transfer에 대한 다음 구성은 Linux 및 UNIX용 클라이언트에서 지원하지 않고 무시합니다.  
 
--   **제한 기간 외에 BITS 다운로드 허용**  
+- **제한 기간 외에 BITS 다운로드 허용**  
 
- 배포 지점에서 클라이언트로 소프트웨어를 다운로드하는 작업이 중단되면 Linux 및 UNIX용 클라이언트는 다운로드를 다시 시작하지 않습니다. 대신 전체 소프트웨어 패키지의 다운로드를 다시 시작합니다.  
+  배포 지점에서 클라이언트로 소프트웨어를 다운로드하는 작업이 중단되면 Linux 및 UNIX용 클라이언트는 다운로드를 다시 시작하지 않습니다. 대신 전체 소프트웨어 패키지의 다운로드를 다시 시작합니다.  
 
 ##  <a name="configure-operations-for-software-deployments"></a>소프트웨어 배포를 위한 작업 구성  
  Linux 및 UNIX용 Configuration Manager 클라이언트에서는 Windows 클라이언트와 마찬가지로 새 정책을 폴링하고 확인할 때 새 소프트웨어 배포를 검색합니다. 클라이언트에서 새 정책을 확인하는 빈도는 클라이언트 설정에 따라 다릅니다. 유지 관리 기간을 구성하여 소프트웨어 배포 실행 시기를 제어할 수 있습니다.  

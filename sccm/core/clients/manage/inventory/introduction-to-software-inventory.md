@@ -10,12 +10,12 @@ ms.assetid: 79eb49da-cd2b-4ffc-b355-b595aeba3aea
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4fe27423391cbdc4767e18a06c73b23cbb302ab5
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 38a2bfb725e61a20293b6bb6ca8aef4e46f189b0
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32332513"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53414704"
 ---
 # <a name="introduction-to-software-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 인벤토리 소개
 
@@ -27,16 +27,16 @@ ms.locfileid: "32332513"
 
  소프트웨어 인벤토리 정보를 보는 방법은 다음과 같습니다.  
 
--   지정된 파일이 포함된 장치를 반환하는 [쿼리를 만듭니다](../../../../core/servers/manage/queries-technical-reference.md).   
+- 지정된 파일이 포함된 디바이스를 반환하는 [쿼리를 만듭니다](../../../../core/servers/manage/queries-technical-reference.md).   
 
--   지정된 파일이 포함된 디바이스를 포함하는 [쿼리 기반 컬렉션](../../../../core/clients/manage/collections/introduction-to-collections.md)을 만듭니다.   
+- 지정된 파일이 포함된 디바이스를 포함하는 [쿼리 기반 컬렉션](../../../../core/clients/manage/collections/introduction-to-collections.md)을 만듭니다.   
 
--   장치의 파일에 대한 세부 정보를 제공하는 [보고서를 실행합니다](../../../../core/servers/manage/reporting.md).
+- 디바이스의 파일에 대한 세부 정보를 제공하는 [보고서를 실행합니다](../../../../core/servers/manage/reporting.md).
 
--   [리소스 탐색기](../../../../core/clients/manage/inventory/use-resource-explorer-to-view-software-inventory.md)를 사용하여 클라이언트 장치에서 인벤토리에 포함되고 수집된 파일에 대한 자세한 정보를 검사합니다.   
+- [리소스 탐색기](../../../../core/clients/manage/inventory/use-resource-explorer-to-view-software-inventory.md)를 사용하여 클라이언트 디바이스에서 인벤토리에 포함되고 수집된 파일에 대한 자세한 정보를 검사합니다.   
 
- 소프트웨어 인벤토리가 클라이언트 디바이스에서 실행되는 경우 첫 번째 인벤토리 보고서는 전체 인벤토리입니다. 후속 보고서는 델타 인벤토리 정보만 포함합니다. 사이트 서버는 받은 순서대로 델타 정보를 처리합니다. 클라이언트에 대한 델타 정보가 없는 경우 사이트 서버에서는 추가 델타 정보를 거부하고 클라이언트에게 전체 인벤토리를 실행하도록 지시합니다.  
+  소프트웨어 인벤토리가 클라이언트 디바이스에서 실행되는 경우 첫 번째 인벤토리 보고서는 전체 인벤토리입니다. 후속 보고서는 델타 인벤토리 정보만 포함합니다. 사이트 서버는 받은 순서대로 델타 정보를 처리합니다. 클라이언트에 대한 델타 정보가 없는 경우 사이트 서버에서는 추가 델타 정보를 거부하고 클라이언트에게 전체 인벤토리를 실행하도록 지시합니다.  
 
- Configuration Manager에서 이중 부팅 컴퓨터를 검색할 수 있지만 인벤토리 시 활성화되었던 운영 체제의 인벤토리 정보만 반환합니다.  
+  Configuration Manager에서 이중 부팅 컴퓨터를 검색할 수 있지만 인벤토리 시 활성화되었던 운영 체제의 인벤토리 정보만 반환합니다.  
 
-**모바일 장치의 경우:** 모바일 장치에 설치된 앱에 대한 인벤토리를 수집하는 방법은 [Microsoft Intune에서 등록한 모바일 장치를 위한 소프트웨어 인벤토리](../../../../mdm/deploy-use/software-inventory-mobile-devices.md)를 참조하세요.
+**모바일 디바이스:** 모바일 디바이스에 설치된 앱용 인벤토리를 수집하는 방법에 대한 자세한 내용은 [Microsoft Intune에 등록된 모바일 디바이스용 소프트웨어 인벤토리](../../../../mdm/deploy-use/software-inventory-mobile-devices.md)를 참조하세요.

@@ -11,12 +11,12 @@ ms.assetid: b3d755bd-0870-4f1f-a56d-bfd3c7b492b9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6bd4675d3b366c5f414467b76627e25b91259ef2
-ms.sourcegitcommit: 240d3199e1c6fa47af6eda499492b2527516ab18
+ms.openlocfilehash: 27eea5c93ec66207e48390e3c7a0352a3a255ceb
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44326206"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53424740"
 ---
 # <a name="how-to-use-the-configuration-manager-docs"></a>Configuration Manager 문서를 사용하는 방법
 
@@ -45,7 +45,7 @@ ms.locfileid: "44326206"
 
     - 검색 결과를 현재 콘텐츠 라이브러리에 추가 포커스를 설정하려면 검색 엔진 범위를 지정하는 `site:docs.microsoft.com`을 포함합니다.  
 
--   사용자 인터페이스 및 온라인 설명서에 있는 용어와 일치하는 검색 용어를 사용합니다. 커뮤니티 콘텐츠에 표시될 수 있는 약어나 비공식 용어를 사용하지 않습니다. 예를 들어 "MP"보다는 "관리 지점"으로, "DT"보다는 "배포 유형"으로, "SUM"보다는 "소프트웨어 업데이트"로 검색하세요.  
+-   사용자 인터페이스 및 온라인 설명서에 있는 용어와 일치하는 검색 용어를 사용합니다. 커뮤니티 콘텐츠에 표시될 수 있는 약어나 비공식 용어를 사용하지 않습니다. 예를 들어 "MP"보다는 "관리 지점"으로, "DT"보다는 "배포 유형"으로, "SUM"보다는 "소프트웨어 업데이트"로 검색하세요.  
 
 -   현재 보고있는 문서 내에서 검색하려면 브라우저의 **찾기** 기능을 사용합니다. 대부분의 현대 웹 브라우저를 사용하여 **Ctrl**+**F** 키를 누른 다음, 검색어를 입력합니다.  
 
@@ -75,9 +75,9 @@ GitHub 문제를 사용하여 다음 유형의 피드백을 제출합니다.
 - 문서 향상: 문서를 개선하기 위한 제안입니다.
 - 문서 질문: 기존 문서를 찾는 데 도움이 필요합니다.
 - 문서 아이디어: 새 문서에 대한 제안입니다. 설명서 피드백을 위해 UserVoice 대신 이 메서드를 사용합니다.
-- Kudos: 유용한 정보 문서에 대한 긍정적인 피드백!
+- Kudos: 유용한 정보 문서에 대한 긍정적인 피드백입니다.
 - 지역화: 콘텐츠 변환에 대한 피드백입니다.
-- SEO(검색 엔진 최적화): 콘텐츠 검색 문제에 대한 피드백입니다. 주석에 검색 엔진, 키워드 및 대상 문서를 포함합니다.
+- SEO(검색 엔진 최적화): 콘텐츠의 문제 검색에 대한 피드백입니다. 주석에 검색 엔진, 키워드 및 대상 문서를 포함합니다.
 
 [제품 피드백](/sccm/core/understand/find-help#product-feedback), [제품 질문](https://social.technet.microsoft.com/Forums/en-US/home?category=ConfigMgrCB), 또는 [지원 요청](https://aka.ms/cmcbsupport)과 같은 비문서 관련 항목에 대해 문제가 발생한 경우 이러한 문제는 종결되고 사용자는 적절한 피드백 채널로 리디렉션됩니다.
 
@@ -90,7 +90,7 @@ docs.microsoft.com 플랫폼에 대한 피드백을 공유하려면 [문서 피�
 문서 라이브러리에서 콘텐츠가 변경될 때 알림을 받으려면 다음 단계를 사용합니다.
 
 1. 문서 또는 문서 집합을 찾으려면 [문서 검색](https://docs.microsoft.com/search/index?scope=ConfigMgr)을 사용합니다. 예:
-    - ["문제 해결을 위한 로그 파일 - Configuration Manager"](https://docs.microsoft.com/search/index?search=%22Log+files+for+troubleshooting+-+Configuration+Manager%22&scope=ConfigMgr)라는 제목으로 단일 문서를 검색합니다.
+    - 제목으로 단일 문서 검색: ["문제 해결을 위한 로그 파일 - Configuration Manager"](https://docs.microsoft.com/search/index?search=%22Log+files+for+troubleshooting+-+Configuration+Manager%22&scope=ConfigMgr)
     - [SQL](https://docs.microsoft.com/search/index?search=SQL&scope=ConfigMgr)에 관한 모든 문서 검색
 2. 오른쪽 위 모서리에서 **RSS** 링크를 클릭합니다. 
 3. 검색 결과에 변경이 있는 경우 알림을 받으려면 모든 RSS 애플리케이션에서 이 피드를 사용합니다.
@@ -122,8 +122,8 @@ docs.microsoft.com의 대부분 콘텐츠와 마찬가지로 Configuration Manag
 기여에 관심이 있지만 어디서 시작해야 할지 모르는 경우 다음 제안을 참조합니다.  
 
 - 다음과 같은 커뮤니티 대상 레이블에 대한 문제 목록을 검색합니다.  
-    - [good-first-issue](https://github.com/MicrosoftDocs/sccmdocs/issues?q=is:open+is:issue+label:good-first-issue)   
-    - [help-wanted](https://github.com/MicrosoftDocs/sccmdocs/issues?q=is:open+is:issue+label:help-wanted)  
+  - [good-first-issue](https://github.com/MicrosoftDocs/sccmdocs/issues?q=is:open+is:issue+label:good-first-issue)   
+  - [help-wanted](https://github.com/MicrosoftDocs/sccmdocs/issues?q=is:open+is:issue+label:help-wanted)  
 
     Microsoft 작성자가 커뮤니티 기여를 위해 적합한 후보인 문제에 이러한 레이블을 할당합니다.  
 

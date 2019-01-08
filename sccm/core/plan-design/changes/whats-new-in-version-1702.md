@@ -10,12 +10,12 @@ ms.assetid: 409e26e1-7716-4f1d-a0ee-34feabf20792
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6abf61488a96ec3299b606b10901b0787b82edc9
-ms.sourcegitcommit: fe279229a90fdc8cddbb13c7ffdbbb22af0e25ef
+ms.openlocfilehash: bdeed74504611589b36e31eff3c1957725345b8a
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47229350"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53421844"
 ---
 # <a name="what39s-new-in-version-1702-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1702의 새로운 기능
 
@@ -63,13 +63,13 @@ System Center Configuration Manager 현재 분기의 업데이트 1702는 버전
  콘솔 내 피드백 옵션을 사용하여 개발 팀에게 직접 피드백을 보낼 수 있습니다.
 
  **피드백** 옵션은 다음 위치에서 찾을 수 있습니다.
- -  리본에서 각 노드의 홈 탭 맨 왼쪽  
-    ![리본](./media/feedback-home.png)
+- 리본에서 각 노드의 홈 탭 맨 왼쪽  
+  ![리본](./media/feedback-home.png)
 
- -  콘솔에서 아무 개체나 마우스 오른쪽 단추로 클릭할 때   
-     ![마우스 오른쪽 단추 클릭 옵션](./media/feedback-option.png)   
+- 콘솔에서 아무 개체나 마우스 오른쪽 단추로 클릭할 때   
+   ![마우스 오른쪽 단추 클릭 옵션](./media/feedback-option.png)   
 
- **피드백**을 선택하면 브라우저에서 [Configuration Manager UserVoice 피드백 웹 사이트](https://go.microsoft.com/fwlink/?linkid=617029)가 열립니다.
+  **피드백**을 선택하면 브라우저에서 [Configuration Manager UserVoice 피드백 웹 사이트](https://go.microsoft.com/fwlink/?linkid=617029)가 열립니다.
 
 
 ###  <a name="changes-for-updates-and-servicing"></a>업데이트 및 서비스의 변경 내용
@@ -112,7 +112,7 @@ System Center Configuration Manager 현재 분기의 업데이트 1702는 버전
 또한 세 가지 새로운 보고서가 보고 지점에 추가되었습니다. 이러한 보고서를 사용하여 관련된 경계 그룹 및 콘텐츠와 같은 거부된 콘텐츠 요청에 대한 자세한 정보를 이해할 수 있습니다. 피어 캐시 항목에서 [모니터링](/sccm/core/plan-design/hierarchy/client-peer-cache#monitoring)을 참조하세요.
 
 ### <a name="content-library-cleanup-tool"></a>콘텐츠 라이브러리 정리 도구
- [콘텐츠 라이브러리 정리 도구](/sccm/core/plan-design/hierarchy/content-library-cleanup-tool)를 사용하여 해당 콘텐츠가 더 이상 응용 프로그램과 연결되지 않을 경우 배포 지점에서 콘텐츠를 제거합니다.
+ [콘텐츠 라이브러리 정리 도구](/sccm/core/plan-design/hierarchy/content-library-cleanup-tool)를 사용하여 해당 콘텐츠가 더 이상 애플리케이션과 연결되지 않을 경우 배포 지점에서 콘텐츠를 제거합니다.
 
 
 ### <a name="use-the-oms-connector-with-the-azure-government-cloud"></a>Azure Government 클라우드에서 OMS 커넥터 사용
@@ -151,7 +151,7 @@ Microsoft Intune에서 제공하는 설정과 일치하도록 iOS 디바이스�
 
 ### <a name="app-management-improvements-for-hybrid-mdm"></a>하이브리드 MDM에 대한 앱 관리 개선
 
-- [장치 컬렉션에 대량 구매한 iOS 앱 배포](#deploy-volume-purchased-ios-apps-to-device-collections)
+- [디바이스 컬렉션에 대량 구매한 iOS 앱 배포](#deploy-volume-purchased-ios-apps-to-device-collections)
 - [교육용 iOS Volume Purchase Program에 대한 지원](#support-for-ios-volume-purchase-program-for-education)
 - [여러 대량 Volume Purchase Program 토큰에 대한 지원](#support-for-multiple-volume-purchase-program-tokens)
 
@@ -194,7 +194,7 @@ Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞
 
 ### <a name="improvements-to-the-install-applications-task-sequence-step"></a>애플리케이션 설치 작업 순서 단계의 향상된 기능
 이 버전에는 다음과 같은 향상된 기능이 추가되었습니다.
-- **응용 프로그램 설치** 작업 순서 단계에서 설치할 수 있는 최대 응용 프로그램 수가 99개까지 증가했습니다. 이전의 최대 개수는 애플리케이션 9개였습니다.
+- **애플리케이션 설치** 작업 순서 단계에서 설치할 수 있는 최대 애플리케이션 수가 99개까지 증가했습니다. 이전의 최대 개수는 애플리케이션 9개였습니다.
 - 작업 순서 편집기에서 **애플리케이션 설치** 작업 순서 단계에 애플리케이션을 추가하는 경우 이제 **설치할 애플리케이션 선택** 창에서 여러 애플리케이션을 선택할 수 있습니다.
 
 ### <a name="improvements-to-the-auto-apply-driver-task-sequence"></a>드라이버 자동 적용 작업 순서의 향상된 기능
@@ -260,16 +260,16 @@ Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞
 > [!NOTE]
 > 속성 페이지에서 사용할 수 있는 최신 모바일 운영 체제 버전이 해당 버전 및 모든 후속 버전에 적용됩니다. 속성 페이지에서는 Android 7 및 iOS 10 이상의 운영 체제에 대해 다음 선택 사항을 제공합니다. 
 > - **Android 7 이상**
-> - **모든 iOS 10 이상의 iPhone 또는 iPod Touch 장치**
-> - **모든 iOS 10 이상의 iPad 장치**
+> - **모든 iOS 10 이상의 iPhone 또는 iPod Touch 디바이스**
+> - **모든 iOS 10 이상의 iPad 디바이스**
 
 ### <a name="android-for-work-support"></a>Android for Work 지원
 1702부터 이제 Microsoft Intune을 통한 하이브리드 모바일 디바이스 관리에서 Android for Work 디바이스 등록 및 관리를 지원합니다. 관리되는 Android for Work 디바이스 지침:
 
-- [Android for Work 장치 등록](/sccm/mdm/deploy-use/enroll-hybrid-android#enable-android-enrollment)
+- [Android for Work 디바이스 등록](/sccm/mdm/deploy-use/enroll-hybrid-android#enable-android-enrollment)
 - [Android for Work 앱 승인 및 배포](/sccm/mdm/deploy-use/creating-android-applications#approve-and-deploy-android-for-work-apps)
 - [Android for Work에 대한 구성 항목 만들기](/sccm/mdm/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client#android-for-work-configuration-items)
-- [Android for Work 장치에서 선택적 초기화](/sccm/mdm/deploy-use/wipe-lock-reset-devices#selective-wipe)
+- [Android for Work 디바이스에서 선택적 초기화](/sccm/mdm/deploy-use/wipe-lock-reset-devices#selective-wipe)
 - [Android for Work 메일 프로필](/sccm/mdm/deploy-use/create-exchange-activesync-profiles)
 - [Android for Work 준수 정책](/sccm/mdm/deploy-use/create-compliance-policy)
 

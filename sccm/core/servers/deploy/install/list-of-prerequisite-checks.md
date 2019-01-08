@@ -2,7 +2,7 @@
 title: 필수 구성 요소 확인
 titleSuffix: Configuration Manager
 description: 특정 필수 구성 요소의 참조는 Configuration Manager 업데이트를 검사합니다.
-ms.date: 11/27/2018
+ms.date: 12/14/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 6a279624-ffc9-41aa-8132-df1809708dd5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 9f17be653d206fd453cdafa4de159804f2fca816
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.openlocfilehash: 4fdc882d63e7bf7d3189e770f230412f17ca0b63
+ms.sourcegitcommit: d36e4c7082a5144e79035dd8847c8e741fa04667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52456688"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53444657"
 ---
 # <a name="list-of-prerequisite-checks-for-configuration-manager"></a>Configuration Manager의 필수 구성 요소 검사 목록
 
@@ -218,7 +218,7 @@ Configuration Manager 사이트 데이터베이스가 이미 설치된 경우 �
 보조 사이트 설치를 위해 지정한 원본 폴더의 Configuration Manager 버전이 주 사이트의 Configuration Manager 버전과 일치합니다.
 
 #### <a name="site-code-in-use"></a>사용 중인 사이트 코드 
-*적용 대상: 주 사이트* 지정된 사이트 코드가 Configuration Manager 계층 구조에서 아직 사용되고 있지 않습니다. 이 사이트에 대한 고유한 사이트 코드를 지정합니다.
+*적용 대상: 주 사이트* 지정된 사이트 코드는 Configuration Manager 계층 구조에서 아직 사용되지 않습니다. 이 사이트에 대한 고유한 사이트 코드를 지정합니다.
 
 #### <a name="sms-provider-in-same-domain-as-site-server"></a>사이트 서버와 동일한 도메인에 있는 SMS 공급자 컴퓨터 
 *적용 대상: SMS 공급자*
@@ -550,13 +550,12 @@ EXEC spDiagChangeTracking @CleanupChangeTracking = 1
 SELECT * FROM vLogs WHERE ProcedureName = 'spDiagChangeTracking'
 ```
 
-<!-- #### SQL Native Client
-<!--SCCMDocs-pr issue 3094->
-*Applies to: Central administration site, primary site, secondary site*
+#### <a name="sql-native-client"></a>SQL Native Client
+<!--SCCMDocs-pr issue 3094-->
+*적용 대상: 중앙 관리 사이트, 주 사이트, 보조 사이트*
 
-A supported version of the SQL Native Client. Starting in version 1810, the minimum version is 11.4.7001.0. 
+새 사이트를 설치하면 Configuration Manager에서 SQL Native Client를 재배포 가능한 구성 요소로 자동으로 설치합니다. Configuration Manager는 SQL Native Client 업그레이드를 지원하지 않습니다. 이 검사에서는 지원되는 버전의 SQL Native Client가 사이트에 있는지 확인합니다. 1810 버전부터 최소 버전은 SQL 2012 SP4(`11.*.7001.0`)입니다. 
 
-This SQL Native Client version supports TLS 1.2. For more information, see the following articles:
-- [TLS 1.2 support for Microsoft SQL Server](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server)  
-- [How to enable TLS 1.2 for Configuration Manager](https://support.microsoft.com/help/4040243/how-to-enable-tls-1-2-for-configuration-manager)  
- -->
+이 SQL Native Client 버전은 TLS 1.2를 지원합니다. 자세한 내용은 다음 아티클을 참조하세요.
+- [Microsoft SQL Server에 대한 TLS 1.2 지원](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server)  
+- [Configuration Manager에서 TLS 1.2를 사용하도록 설정하는 방법](https://support.microsoft.com/help/4040243/how-to-enable-tls-1-2-for-configuration-manager)  

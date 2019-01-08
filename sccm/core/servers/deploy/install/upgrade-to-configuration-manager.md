@@ -9,12 +9,12 @@ ms.assetid: c64e7483-b4bb-4738-95f4-ecdaeb6a2ba6
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 1cea0a54bc4c4c2d69f979bb09d83d7f5fac7706
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 00a6723dd56aa41287d34a7fcdc9f549d792d666
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32342718"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53417917"
 ---
 # <a name="upgrade-to-system-center-configuration-manager"></a>System Center Configuration Manager 업그레이드
 
@@ -31,19 +31,19 @@ ms.locfileid: "32342718"
 
 **버전 1802로 업그레이드**   
 버전 1802 기준 미디어가 있는 경우 다음 버전을 System Center Configuration Manager 버전 1802의 정품 버전으로 업그레이드할 수 있습니다.   
--     System Center Configuration Manager 버전 1802의 평가판 설치
--     System Center 2012 Configuration Manager 서비스 팩 1
--     System Center 2012 Configuration Manager 서비스 팩 2
--     System Center 2012 R2 Configuration Manager
--     System Center 2012 R2 Configuration Manager 서비스 팩 1
+- System Center Configuration Manager 버전 1802의 평가판 설치
+- System Center 2012 Configuration Manager 서비스 팩 1
+- System Center 2012 Configuration Manager 서비스 팩 2
+- System Center 2012 R2 Configuration Manager
+- System Center 2012 R2 Configuration Manager 서비스 팩 1
 
 **버전 1702로 업그레이드**   
 버전 1702 기준 미디어가 있는 경우 다음 버전을 System Center Configuration Manager 버전 1702의 정품 버전으로 업그레이드할 수 있습니다.   
--     System Center Configuration Manager 버전 1702의 평가판 설치
--     System Center 2012 Configuration Manager 서비스 팩 1
--     System Center 2012 Configuration Manager 서비스 팩 2
--     System Center 2012 R2 Configuration Manager
--     System Center 2012 R2 Configuration Manager 서비스 팩 1
+- System Center Configuration Manager 버전 1702의 평가판 설치
+- System Center 2012 Configuration Manager 서비스 팩 1
+- System Center 2012 Configuration Manager 서비스 팩 2
+- System Center 2012 R2 Configuration Manager
+- System Center 2012 R2 Configuration Manager 서비스 팩 1
 
 **버전 1606으로 업그레이드**  
 2016년 12월 15일에 버전 1606의 기준 미디어가 추가 업그레이드 시나리오에 대한 지원을 추가하기 위해 릴리스되었습니다. 이 새로운 릴리스는 다음 버전을 System Center Configuration Manager 버전 1606의 정품 버전으로 업그레이드하도록 지원합니다.  
@@ -87,7 +87,7 @@ When you have version 1511 baseline media, you can upgrade the following to a fu
 
 ### <a name="before-you-upgrade"></a>업그레이드하기 전에  
 
-**System Center 2012 Configuration Manager 환경 검토** 및 KB4018655에 자세히 설명된 문제 해결: [Configuration Manager 클라이언트가 반복되는 재시도 작업때문에 5시간마다 재설치하고 의도치 않게 클라이언트 업그레이드가 초래될 수 있습니다](https://support.microsoft.com/help/4018655).
+**System Center 2012 Configuration Manager 환경을 검토**하고 KB4018655: [Configuration Manager 클라이언트가 다시 시도 작업 되풀이로 인해 5시간 마다 재설치되고 의도치 않게 클라이언트 업그레이드가 발생할 수 있습니다](https://support.microsoft.com/help/4018655)에 설명된 대로 문제를 해결합니다.
 
 컴퓨터 환경이 System Center Configuration Manager로 업그레이드하는 데 필요한 **지원되는 구성을 충족하는지 확인**합니다.  
 
@@ -125,7 +125,7 @@ Configuration Manager에서 관리 지점에 대한 데이터베이스 복제본
 -   프로덕션 사이트를 System Center Configuration Manager로 업그레이드  
 
 자세한 내용은 다음을 참조하세요.  
--   System Center 2012 Configuration Manager: [관리 지점에 대한 데이터베이스 복제본 구성](https://technet.microsoft.com/library/hh846234.aspx)  
+-   System Center 2012 Configuration Manager:  [관리 지점에 대한 데이터베이스 복제본 구성](https://technet.microsoft.com/library/hh846234.aspx)  
 -   System Center Configuration Manager: [System Center Configuration Manager의 관리 지점용 데이터베이스 복제본](../../../../core/servers/deploy/configure/database-replicas-for-management-points.md)  
 
 **NLB를 사용하는 소프트웨어 업데이트 지점 다시 구성:**  
@@ -146,8 +146,8 @@ System Center Configuration Manager로 업그레이드하기 전에 업그레이
 
 사이트 유지 관리 작업에 대한 자세한 내용은 다음을 참조하세요.  
 
--   System Center 2012 Configuration Manager: [Configuration Manager에 대한 유지 관리 작업 계획](https://technet.microsoft.com/library/gg712686.aspx)  
--   System Center Configuration Manager: [System Center Configuration Manager에 대한 유지 관리 작업 참조](../../../../core/servers/manage/reference-for-maintenance-tasks.md)  
+-   System Center 2012 Configuration Manager:  [Configuration Manager에 대한 유지 관리 작업 계획](https://technet.microsoft.com/library/gg712686.aspx)  
+-   System Center Configuration Manager:  [Reference for maintenance tasks for System Center Configuration Manager](../../../../core/servers/manage/reference-for-maintenance-tasks.md)  
 
 **설치 필수 구성 요소 검사기 실행**:  
 사이트를 업그레이드하기 전에 설치 프로그램과 별개로 **필수 구성 요소 검사기** 를 실행하여 사이트가 필수 조건을 충족하는지 확인합니다. 나중에 사이트를 업그레이드하면 필수 구성 요소 검사기가 다시 실행됩니다.  
@@ -302,9 +302,9 @@ System Center Configuration Manager로 업그레이드하는 경우 다음 작�
 
 2.  데이터베이스 사본을 복원한 후에 System Center Configuration Manager 원본 미디어에서 설치 프로그램을 실행합니다. 설치 프로그램을 실행할 때 **/TESTDBUPGRADE** 명령줄 옵션을 사용합니다. 데이터베이스 사본을 호스팅하는 SQL Server 인스턴스가 기본 인스턴스가 아닌 경우에도 명령줄 인수를 제공하여 사이트 데이터베이스 사본을 호스팅하는 인스턴스를 식별해야 합니다.  
 
-     예를 들어 SMS_ABC라는 데이터베이스 이름으로 사이트 데이터베이스를 업그레이드할 계획이라면 이 사이트 데이터베이스의 사본을 인스턴스 이름이 DBTest인 지원되는 SQL Server 인스턴스로 복원합니다. 이 사이트 데이터베이스 복사본의 업그레이드를 테스트하려면 다음 명령줄을 사용합니다. **Setup.exe /TESTDBUPGRADE DBtest\CM_ABC**  
+     예를 들어 SMS_ABC라는 데이터베이스 이름으로 사이트 데이터베이스를 업그레이드할 계획이라면 이 사이트 데이터베이스의 사본을 인스턴스 이름이 DBTest인 지원되는 SQL Server 인스턴스로 복원합니다. 사이트 데이터베이스의 이 사본을 테스트하려면 다음 명령줄을 사용하십시오. **Setup.exe /TESTDBUPGRADE DBtest\CM_ABC**  
 
-     원본 미디어의 **SMSSETUP\BIN\X64**에서 System Center Configuration Manager에 대한 Setup.exe를 찾을 수 있습니다.  
+     원본 미디어의 다음 위치에서 System Center Configuration Manager에 대한 Setup.exe를 찾을 수 있습니다. **SMSSETUP\BIN\X64**.  
 
 3.  데이터베이스 업그레이드 테스트를 실행하는 SQL Server 인스턴스에서 시스템 드라이브 루트에 있는 ConfigMgrSetup.log를 보고 진행률 및 성공 여부를 모니터링합니다.  
 
@@ -329,33 +329,33 @@ Configuration Manager 사이트를 업그레이드하려면 다음 절차를 수
 
 #### <a name="to-upgrade-a-central-administration-site-or-primary-site"></a>중앙 관리 사이트나 기본 사이트를 업그레이드하려면  
 
-1.  설치 프로그램을 실행하는 사용자에게 다음 보안 권한이 있는지 확인합니다.  
+1. 설치 프로그램을 실행하는 사용자에게 다음 보안 권한이 있는지 확인합니다.  
 
-    -   사이트 서버 컴퓨터에 대한 로컬 관리자 권한  
-    -   사이트가 원격인 경우 사이트의 원격 사이트 데이터베이스 서버에 대한 로컬 관리자 권한    </br></br>
+   -   사이트 서버 컴퓨터에 대한 로컬 관리자 권한  
+   -   사이트가 원격인 경우 사이트의 원격 사이트 데이터베이스 서버에 대한 로컬 관리자 권한    </br></br>
 
-2.  사이트 서버 컴퓨터에서 Windows 탐색기를 열고 **&lt;Configuration Manager 원본 미디어\>\SMSSETUP\BIN\X64**로 이동합니다.  
+2. 사이트 서버 컴퓨터에서 Windows 탐색기를 열고 **&lt;Configuration Manager 원본 미디어\>\SMSSETUP\BIN\X64**로 이동합니다.  
 
-3.  **Setup.exe**를 두 번 클릭합니다. Configuration Manager 설치 마법사가 열립니다.  
+3. **Setup.exe**를 두 번 클릭합니다. Configuration Manager 설치 마법사가 열립니다.  
 
-4.  **시작하기 전에** 페이지에서 **다음**을 클릭합니다.  
+4. **시작하기 전에** 페이지에서 **다음**을 클릭합니다.  
 
-5.  **시작** 페이지에서 **이 Configuration Manager 사이트 업그레이드**를 선택하고 **다음**을 클릭합니다.  
+5. **시작** 페이지에서 **이 Configuration Manager 사이트 업그레이드**를 선택하고 **다음**을 클릭합니다.  
 
-6.  **제품 키** 페이지에서 **다음**을 클릭합니다.  
+6. **제품 키** 페이지에서 **다음**을 클릭합니다.  
 
-     이전에 Configuration Manager 평가 버전을 설치한 경우 **이 제품의 라이선스 버전 설치**를 선택한 다음 Configuration Manager 전체 설치를 위한 제품 키를 입력하여 사이트를 정식 버전으로 변환할 수 있습니다.  
+    이전에 Configuration Manager 평가 버전을 설치한 경우 **이 제품의 라이선스 버전 설치**를 선택한 다음 Configuration Manager 전체 설치를 위한 제품 키를 입력하여 사이트를 정식 버전으로 변환할 수 있습니다.  
 
-     System Center Configuration Manager에 대한 버전 1606 기준 미디어의 2016년 10월 릴리스부터 Software Assurance 계약의 만료 날짜를 지정할 수 있습니다. 사용권 계약의 **Software Assurance 만료 날짜**를 해당 날짜의 편리한 미리 알림으로 지정할 수 있는 옵션도 있습니다. 설치하는 동안 이 값을 입력하지 않은 경우 나중에 Configuration Manager 콘솔 내에서 지정할 수 있습니다.
+    System Center Configuration Manager에 대한 버전 1606 기준 미디어의 2016년 10월 릴리스부터 Software Assurance 계약의 만료 날짜를 지정할 수 있습니다. 사용권 계약의 **Software Assurance 만료 날짜**를 해당 날짜의 편리한 미리 알림으로 지정할 수 있는 옵션도 있습니다. 설치하는 동안 이 값을 입력하지 않은 경우 나중에 Configuration Manager 콘솔 내에서 지정할 수 있습니다.
 
-     >  [!NOTE]   
-     >  Microsoft는 입력된 만료 날짜의 유효성을 검사하지 않으며 이 날짜를 라이선스 유효성 검사에 사용하지 않습니다.  대신, 만료 날짜 미리 알림으로 사용할 수 있습니다. 이 기능은 Configuration Manager가 온라인에서 제공되는 새 소프트웨어 업데이트를 정기적으로 확인하며 이러한 추가 업데이트를 사용할 수 있으려면 Software Assurance 라이선스 상태가 현재여야 하기 때문에 유용합니다.    
+   > [!NOTE]
+   >  Microsoft는 입력된 만료 날짜의 유효성을 검사하지 않으며 이 날짜를 라이선스 유효성 검사에 사용하지 않습니다.  대신, 만료 날짜 미리 알림으로 사용할 수 있습니다. 이 기능은 Configuration Manager가 온라인에서 제공되는 새 소프트웨어 업데이트를 정기적으로 확인하며 이러한 추가 업데이트를 사용할 수 있으려면 Software Assurance 라이선스 상태가 현재여야 하기 때문에 유용합니다.    
 
-     자세한 내용은 [System Center Configuration Manager의 라이선스 및 분기](/sccm/core/understand/learn-more-editions)를 참조하세요.
+    자세한 내용은 [System Center Configuration Manager의 라이선스 및 분기](/sccm/core/understand/learn-more-editions)를 참조하세요.
 
-7.  **Microsoft 소프트웨어 사용 조건** 페이지에서 사용 조건을 읽고 동의한 후 **다음**을 클릭합니다.  
+7. **Microsoft 소프트웨어 사용 조건** 페이지에서 사용 조건을 읽고 동의한 후 **다음**을 클릭합니다.  
 
-8.  **필수 구성 요소 사용권** 페이지에서 필수 구성 요소 소프트웨어의 사용 조건을 읽고 동의한 후 **다음**을 클릭합니다. 소프트웨어가 필요한 경우 설치 프로그램이 사이트 시스템 또는 클라이언트에 자동으로 소프트웨어를 설치합니다. 다음 페이지를 계속하기 전에 모든 확인란을 선택해야 합니다.  
+8. **필수 구성 요소 사용권** 페이지에서 필수 구성 요소 소프트웨어의 사용 조건을 읽고 동의한 후 **다음**을 클릭합니다. 소프트웨어가 필요한 경우 설치 프로그램이 사이트 시스템 또는 클라이언트에 자동으로 소프트웨어를 설치합니다. 다음 페이지를 계속하기 전에 모든 확인란을 선택해야 합니다.  
 
 9. **필수 다운로드** 페이지에서, 설치 프로그램이 인터넷에서 최신 필수 구성 요소 재배포 파일, 언어 팩 및 최신 제품 업데이트를 다운로드하도록 할지 아니면 이전에 다운로드한 파일을 사용할지 지정한 후 **다음**을 클릭합니다. 설치 다운로더를 사용하여 이전에 파일을 다운로드한 경우 **이전에 다운로드한 파일 사용** 을 선택하고 다운로드 폴더를 지정합니다. 자세한 내용은 [설치 다운로더](/sccm/core/servers/deploy/install/setup-downloader)를 참조하세요.
 

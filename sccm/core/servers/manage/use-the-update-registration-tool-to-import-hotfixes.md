@@ -10,12 +10,12 @@ ms.assetid: 8cc13635-85d6-4b07-a3ec-c42188bc5c74
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 94f0da3fa9f4aa43ce4818b7b6edf752df53d66a
-ms.sourcegitcommit: ee434c53b3695a039b56298082b6f61f1006d9dd
+ms.openlocfilehash: 70322e01e33cdf857768db812450f27a0f17939e
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943277"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53418240"
 ---
 # <a name="use-the-update-registration-tool-to-import-hotfixes-to-system-center-configuration-manager"></a>업데이트 등록 도구를 사용하여 System Center Configuration Manager에 핫픽스 가져오기
 
@@ -43,26 +43,26 @@ Configuration Manager의 일부 업데이트는 Microsoft 클라우드 서비스
 
 -   서비스 연결 지점을 호스트하는(도구가 실행되는) 컴퓨터에서 도구를 실행하는 데 사용할 계정에 **로컬 관리자** 권한이 있어야 합니다.  
 
--   이 도구를 실행하는 데 사용할 계정에는 서비스 연결 지점을 호스트하는 컴퓨터에서 다음 폴더에 대한 **쓰기** 권한이 있어야 합니다. **&lt;ConfigMgr 설치 디렉터리\>\EasySetupPayload\offline**  
+-   이 도구를 실행하는 데 사용할 계정에는 서비스 연결 지점을 호스트하는 컴퓨터에서 다음 폴더에 대한 **쓰기** 권한이 있어야 합니다.  **&lt;ConfigMgr Installation directory\>\EasySetupPayload\offline**  
 
 ### <a name="to-use-the-update-registration-tool"></a>업데이트 등록 도구를 사용하려면  
 
-1.  서비스 연결 지점을 호스트하는 컴퓨터:  
+1. 서비스 연결 지점을 호스트하는 컴퓨터:  
 
-    -   관리자 권한으로 명령 프롬프트를 열고 **&lt;제품\>-&lt;제품 버전\>-&lt;KB 문서 ID\>-ConfigMgr.Update.exe**가 포함된 위치로 디렉터리를 변경합니다.  
+   -   관리자 권한으로 명령 프롬프트를 열고 **&lt;제품\>-&lt;제품 버전\>-&lt;KB 문서 ID\>-ConfigMgr.Update.exe**가 포함된 위치로 디렉터리를 변경합니다.  
 
-2.  다음 명령을 실행하여 업데이트 등록 도구를 시작합니다.  
+2. 다음 명령을 실행하여 업데이트 등록 도구를 시작합니다.  
 
-    -   **&lt;제품\>-&lt;제품 버전\>-&lt;KB 문서 ID\>-ConfigMgr.Update.exe**  
+   -   **&lt;제품\>-&lt;제품 버전\>-&lt;KB 문서 ID\>-ConfigMgr.Update.exe**  
 
-    핫픽스를 등록하면 콘솔에서 24 시간 내에 새 업데이트로 표시됩니다.  프로세스를 가속화할 수 있습니다.
+   핫픽스를 등록하면 콘솔에서 24 시간 내에 새 업데이트로 표시됩니다.  프로세스를 가속화할 수 있습니다.
 
-    - Configuration Manager 콘솔을 열고 **관리** > **업데이트 및 서비스**로 이동하고 **업데이트 확인**을 클릭합니다. 버전 1702 이전에는 업데이트 및 서비스가 **관리** > **Cloud Services** 아래에 있었습니다. 
+   - Configuration Manager 콘솔을 열고 **관리** > **업데이트 및 서비스**로 이동하고 **업데이트 확인**을 클릭합니다. 버전 1702 이전에는 업데이트 및 서비스가 **관리** > **Cloud Services** 아래에 있었습니다. 
 
-    업데이트 등록 도구는 로컬 컴퓨터의 .log 파일에 작업을 로깅합니다. 로그 파일은 hotfix.exe 파일과 이름이 같으며 **%SystemRoot%/Temp** 폴더에 기록됩니다.  
+   업데이트 등록 도구는 로컬 컴퓨터의 .log 파일에 작업을 로깅합니다. 로그 파일은 hotfix.exe 파일과 이름이 같으며 **%SystemRoot%/Temp** 폴더에 기록됩니다.  
 
-     업데이트가 등록된 후 업데이트 등록 도구를 닫을 수 있습니다.  
+    업데이트가 등록된 후 업데이트 등록 도구를 닫을 수 있습니다.  
 
-3.  Configuration Manager 콘솔을 열고 **관리** > **업데이트 및 서비스**로 이동합니다. 이제 가져온 핫픽스를 설치할 수 있습니다. 버전 1702 이전에는 업데이트 및 서비스가 **관리** > **Cloud Services** 아래에 있었습니다.
+3. Configuration Manager 콘솔을 열고 **관리** > **업데이트 및 서비스**로 이동합니다. 이제 가져온 핫픽스를 설치할 수 있습니다. 버전 1702 이전에는 업데이트 및 서비스가 **관리** > **Cloud Services** 아래에 있었습니다.
 
- 업데이트를 설치하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 콘솔 내 업데이트 설치](../../../core/servers/manage/install-in-console-updates.md)를 참조하세요.  
+   업데이트를 설치하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 콘솔 내 업데이트 설치](../../../core/servers/manage/install-in-console-updates.md)를 참조하세요.  

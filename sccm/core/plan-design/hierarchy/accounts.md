@@ -10,12 +10,12 @@ ms.assetid: 72d7b174-f015-498f-a0a7-2161b9929198
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3981d454d0b007f5b057ccca4c8888da609dba97
-ms.sourcegitcommit: 2cc635835709fb8d86cdb63ea34233b36c94d4d8
+ms.openlocfilehash: d1a10f2381d6820d685ec8ff871c83c2a4c39bb1
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52259083"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53415061"
 ---
 # <a name="accounts-used-in-configuration-manager"></a>Configuration Manager에서 사용되는 계정
 
@@ -223,14 +223,14 @@ Configuration Manager는 자동으로 그룹 멤버 자격을 관리합니다. �
 ### <a name="active-directory-group-discovery-account"></a>Active Directory 그룹 검색 계정  
 
  사이트에서는 **Active Directory 그룹 검색 계정**을 사용하여 사용자가 지정한 Active Directory Domain Services의 위치에서 다음 개체를 검색합니다.
- - 로컬, 글로벌 및 유니버설 보안 그룹
- - 이러한 그룹 내의 멤버 자격
- - 배포 그룹 내의 멤버 자격
-    - 배포 그룹이 그룹 리소스로 검색되지 않습니다.
+- 로컬, 글로벌 및 유니버설 보안 그룹
+- 이러한 그룹 내의 멤버 자격
+- 배포 그룹 내의 멤버 자격
+   - 배포 그룹이 그룹 리소스로 검색되지 않습니다.
 
- 이 계정은 검색을 실행하는 사이트 서버의 컴퓨터 계정이나 Windows 사용자 계정 중 하나일 수 있습니다. 검색을 위해 지정한 Active Directory 위치에 대한 **읽기** 액세스 권한이 있어야 합니다.  
+  이 계정은 검색을 실행하는 사이트 서버의 컴퓨터 계정이나 Windows 사용자 계정 중 하나일 수 있습니다. 검색을 위해 지정한 Active Directory 위치에 대한 **읽기** 액세스 권한이 있어야 합니다.  
 
- 자세한 내용은 [Active Directory 그룹 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#bkmk_aboutGroup)을 참조하세요.
+  자세한 내용은 [Active Directory 그룹 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#bkmk_aboutGroup)을 참조하세요.
 
 
 ### <a name="active-directory-system-discovery-account"></a>Active Directory 시스템 검색 계정  
@@ -402,9 +402,9 @@ Configuration Manager는 자동으로 그룹 멤버 자격을 관리합니다. �
 
 2.  **소프트웨어 라이브러리** 작업 영역에서 액세스 계정을 관리할 콘텐츠 유형을 결정하고 제공 된 단계를 수행합니다.  
 
-    -   **응용 프로그램**: **응용 프로그램 관리**를 확장하고 **응용 프로그램**을 선택한 다음, 액세스 계정을 관리할 응용 프로그램을 선택합니다.  
+    -   **애플리케이션**: **애플리케이션 관리**를 확장하고 **애플리케이션**을 선택한 다음, 액세스 계정을 관리할 애플리케이션을 선택합니다.  
 
-    -   **패키지**: **응용 프로그램 관리**를 확장하고 **패키지**를 선택한 다음, 액세스 계정을 관리할 패키지를 선택합니다.  
+    -   **패키지**: **애플리케이션 관리**를 확장하고 **패키지**를 선택한 다음, 액세스 계정을 관리할 패키지를 선택합니다.  
 
     -   **소프트웨어 업데이트 배포 패키지**: **소프트웨어 업데이트**를 확장하고 **배포 패키지**를 선택한 다음, 액세스 계정을 관리할 배포 패키지를 선택합니다.  
 

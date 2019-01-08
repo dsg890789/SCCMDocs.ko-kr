@@ -10,12 +10,12 @@ ms.assetid: d566d85c-bf7a-40e7-8239-57640a1db5f4
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: bffbb3373fbcd1a9a34f526a7c73faff68ccae49
-ms.sourcegitcommit: be8c0182db9ef55a948269fcbad7c0f34fd871eb
+ms.openlocfilehash: c9888bbcc0468356b55216491d8599ebb5f42818
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42756112"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53420433"
 ---
 # <a name="create-a-task-sequence-to-capture-and-restore-user-state-in-configuration-manager"></a>Configuration Manager에서 사용자 상태를 캡처 및 복원하는 작업 순서 만들기
 
@@ -69,20 +69,20 @@ ms.locfileid: "42756112"
 
  사용자 상태를 복원하는 작업 순서 단계를 추가하려면 다음 절차를 따릅니다.
 
- 1.  **작업 순서** 목록에서 작업 순서를 선택한 후 **편집**을 클릭합니다.  
+1. **작업 순서** 목록에서 작업 순서를 선택한 후 **편집**을 클릭합니다.  
 
- 2.  **사용자 상태 복원** 단계를 작업 순서에 추가합니다. **작업 순서 편집기**에서 **추가**를 클릭합니다. **사용자 상태**를 가리킨 다음, **사용자 상태 복원**을 클릭합니다. 필요할 경우 이 단계에서 상태 마이그레이션 지점에 연결됩니다. 이 단계에 대한 속성 및 옵션을 구성한 다음, **적용**을 클릭합니다. 사용할 수 있는 설정에 대한 자세한 내용은 [사용자 상태 복원](/sccm/osd/understand/task-sequence-steps#BKMK_RestoreUserState)을 참조하세요.  
+2. **사용자 상태 복원** 단계를 작업 순서에 추가합니다. **작업 순서 편집기**에서 **추가**를 클릭합니다. **사용자 상태**를 가리킨 다음, **사용자 상태 복원**을 클릭합니다. 필요할 경우 이 단계에서 상태 마이그레이션 지점에 연결됩니다. 이 단계에 대한 속성 및 옵션을 구성한 다음, **적용**을 클릭합니다. 사용할 수 있는 설정에 대한 자세한 내용은 [사용자 상태 복원](/sccm/osd/understand/task-sequence-steps#BKMK_RestoreUserState)을 참조하세요.  
 
-    > [!Important]  
-    >  **표준 옵션을 사용하여 모든 사용자 프로필 캡처** 옵션과 함께 [사용자 상태 캡처](/sccm/osd/understand/task-sequence-steps#BKMK_CaptureUserState) 단계를 사용하면 **사용자 상태 복원** 단계의 **로컬 컴퓨터 사용자 프로필 복원** 설정을 선택해야 합니다. 그렇지 않으면 작업 순서가 실패합니다.  
+   > [!Important]  
+   >  **표준 옵션을 사용하여 모든 사용자 프로필 캡처** 옵션과 함께 [사용자 상태 캡처](/sccm/osd/understand/task-sequence-steps#BKMK_CaptureUserState) 단계를 사용하면 **사용자 상태 복원** 단계의 **로컬 컴퓨터 사용자 프로필 복원** 설정을 선택해야 합니다. 그렇지 않으면 작업 순서가 실패합니다.  
 
-    > [!Note]  
-    > 로컬 하드 링크를 사용하여 사용자 상태를 저장했는데 복원에 성공하지 못하는 경우 데이터를 저장하기 위해 만든 하드 링크를 직접 삭제하세요. 작업 순서에서 USMTUtils 도구를 실행하여 [명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 단계에서 이 작업을 자동화할 할 수 있습니다. USMTUtils를 사용하여 하드 링크를 삭제하는 경우 USMTUtils를 실행한 후 [컴퓨터 다시 시작](/sccm/osd/understand/task-sequence-steps#BKMK_RestartComputer) 단계를 추가해야 합니다.  
+   > [!Note]  
+   > 로컬 하드 링크를 사용하여 사용자 상태를 저장했는데 복원에 성공하지 못하는 경우 데이터를 저장하기 위해 만든 하드 링크를 직접 삭제하세요. 작업 순서에서 USMTUtils 도구를 실행하여 [명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 단계에서 이 작업을 자동화할 할 수 있습니다. USMTUtils를 사용하여 하드 링크를 삭제하는 경우 USMTUtils를 실행한 후 [컴퓨터 다시 시작](/sccm/osd/understand/task-sequence-steps#BKMK_RestartComputer) 단계를 추가해야 합니다.  
 
- 3.  상태 마이그레이션 지점을 사용하여 사용자 상태를 저장하는 경우 **상태 저장소 해제** 단계를 작업 순서에 추가합니다. **작업 순서 편집기**에서 **추가**를 클릭합니다. **사용자 상태**를 가리킨 다음, **상태 저장소 해제**를 클릭합니다. 이 단계에 대한 속성 및 옵션을 구성한 다음, **적용**을 클릭합니다. 사용할 수 있는 설정에 대한 자세한 내용은 [상태 저장소 해제](/sccm/osd/understand/task-sequence-steps#BKMK_ReleaseStateStore)를 참조하세요.  
+3. 상태 마이그레이션 지점을 사용하여 사용자 상태를 저장하는 경우 **상태 저장소 해제** 단계를 작업 순서에 추가합니다. **작업 순서 편집기**에서 **추가**를 클릭합니다. **사용자 상태**를 가리킨 다음, **상태 저장소 해제**를 클릭합니다. 이 단계에 대한 속성 및 옵션을 구성한 다음, **적용**을 클릭합니다. 사용할 수 있는 설정에 대한 자세한 내용은 [상태 저장소 해제](/sccm/osd/understand/task-sequence-steps#BKMK_ReleaseStateStore)를 참조하세요.  
 
-    > [!IMPORTANT]  
-    >  **상태 저장소 해제** 단계 이전에 실행되는 작업 순서 작업은 **상태 저장소 해제** 단계가 시작되기 전에 모두 성공적으로 수행되어야 합니다.  
+   > [!IMPORTANT]  
+   >  **상태 저장소 해제** 단계 이전에 실행되는 작업 순서 작업은 **상태 저장소 해제** 단계가 시작되기 전에 모두 성공적으로 수행되어야 합니다.  
 
 
  대상 컴퓨터에서 사용자 상태를 복원할 수 있도록 이 작업 순서를 배포합니다. 작업 순서를 배포하는 방법에 대한 자세한 내용은 [작업 순서 배포](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#BKMK_DeployTS)를 참조하세요.  

@@ -10,12 +10,12 @@ ms.assetid: 946b0f74-0794-4e8f-a6af-9737d877179b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: fbcf7a7d76146cc11dd4bb57b86fe4752c694e02
-ms.sourcegitcommit: 1e782268d6c0211bd854b5860de72cfd6c6985c6
+ms.openlocfilehash: 32aced9e14f98008dfd769564c553370d067896e
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44697041"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53423102"
 ---
 # <a name="enable-third-party-updates"></a>타사 업데이트 사용 
 
@@ -53,7 +53,7 @@ ms.locfileid: "44697041"
 4. 원격 SUP 서버의 신뢰할 수 있는 게시자 및 신뢰할 수 있는 루트 저장소에 자체 서명된 WSUS 서명 인증서를 설치하도록 설정하려면 다음이 필요합니다.
    - **WSUS 서버 연결 계정**에는 SUP 서버에 대한 원격 관리 액세스 권한이 있어야 합니다.
 
-    이 항목이 가능하지 않은 경우 로컬 컴퓨터의 WSUS 저장소에서 신뢰할 수 있는 게시자 및 신뢰할 수 있는 루트 저장소로 인증서를 내보냅니다. 
+     이 항목이 가능하지 않은 경우 로컬 컴퓨터의 WSUS 저장소에서 신뢰할 수 있는 게시자 및 신뢰할 수 있는 루트 저장소로 인증서를 내보냅니다. 
 
 > [!NOTE] 
 >**WSUS 서버 연결 계정**은 SUP의 사이트 시스템 역할 속성에서 **프록시 및 계정 설정** 탭을 확인하여 식별할 수 있습니다. 계정을 지정하지 않은 경우 사이트 서버의 컴퓨터 계정을 사용합니다.
@@ -122,17 +122,17 @@ Configuration Manager 콘솔에서 타사 공급업체 카탈로그를 구독하
 1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 영역으로 이동합니다. **소프트웨어 업데이트**를 확장해 **타사 소프트웨어 업데이트 카탈로그** 노드를 선택합니다.  
 2. 구독할 카탈로그를 선택하고 리본 메뉴에서 **카탈로그 구독**을 클릭합니다. 
     ![타사 업데이트가 사용자 지정 카탈로그를 추가](media/third-party-updates-subscribe.png)
-1. 카탈로그 인증서를 검토하고 승인합니다.  
-    >[!NOTE]
-    
-    > 타사 소프트웨어 업데이트 카탈로그를 구독하면 마법사에서 검토하고 승인하는 인증서가 사이트에 추가됩니다. 이 인증서는 **타사 소프트웨어 업데이트 카탈로그** 형식입니다. 이 인증서를 **관리** 작업 영역의 **보안** 아래 **인증서** 노드에서 관리할 수 있습니다.  
-2. 마법사를 완료합니다. 초기 구독 후 카탈로그를 몇 분 내에 다운로드해야 합니다. 
+3. 카탈로그 인증서를 검토하고 승인합니다.  
+   > [!NOTE]
+   > 
+   > 타사 소프트웨어 업데이트 카탈로그를 구독하면 마법사에서 검토하고 승인하는 인증서가 사이트에 추가됩니다. 이 인증서는 **타사 소프트웨어 업데이트 카탈로그** 형식입니다. 이 인증서를 **관리** 작업 영역의 **보안** 아래 **인증서** 노드에서 관리할 수 있습니다.  
+4. 마법사를 완료합니다. 초기 구독 후 카탈로그를 몇 분 내에 다운로드해야 합니다. 
     - 카탈로그는 7일마다 자동으로 동기화됩니다.
     - 리본 메뉴에서 **지금 동기화**를 클릭하여 강제로 동기화합니다.
-3. 카탈로그를 다운로드하면 제품 메타데이터를 WSUS 데이터베이스에서 Configuration Manager 데이터베이스로 동기화해야 합니다. [수동으로 소프트웨어 업데이트 동기화를 시작](../get-started/synchronize-software-updates.md#manually-start-software-updates-synchronization)하여 제품 정보를 동기화합니다.
-4. 제품 정보를 동기화하면 [원하는 제품을 동기화하기 위해 SUP](../get-started/configure-classifications-and-products.md#to-configure-classifications-and-products-to-synchronize)를 Configuration Manager로 구성합니다.  
-5. [수동으로 소프트웨어 업데이트 동기화를 시작](../get-started/synchronize-software-updates.md#manually-start-software-updates-synchronization)하여 신제품 업데이트를 Configuration Manager로 동기화합니다.  
-6. 동기화를 완료하면 **모든 업데이트** 노드에서 타사 업데이트를 확인할 수 있습니다. 이러한 업데이트는 게시를 선택할 때까지 **메타데이터 전용** 업데이트로 게시됩니다. 
+5. 카탈로그를 다운로드하면 제품 메타데이터를 WSUS 데이터베이스에서 Configuration Manager 데이터베이스로 동기화해야 합니다. [수동으로 소프트웨어 업데이트 동기화를 시작](../get-started/synchronize-software-updates.md#manually-start-software-updates-synchronization)하여 제품 정보를 동기화합니다.
+6. 제품 정보를 동기화하면 [원하는 제품을 동기화하기 위해 SUP](../get-started/configure-classifications-and-products.md#to-configure-classifications-and-products-to-synchronize)를 Configuration Manager로 구성합니다.  
+7. [수동으로 소프트웨어 업데이트 동기화를 시작](../get-started/synchronize-software-updates.md#manually-start-software-updates-synchronization)하여 신제품 업데이트를 Configuration Manager로 동기화합니다.  
+8. 동기화를 완료하면 **모든 업데이트** 노드에서 타사 업데이트를 확인할 수 있습니다. 이러한 업데이트는 게시를 선택할 때까지 **메타데이터 전용** 업데이트로 게시됩니다. 
      - 파란색 화살표가 있는 아이콘은 메타데이터 전용 소프트웨어 업데이트를 나타냅니다. ![메타데이터 전용 소프트웨어 업데이트 아이콘](media/MetadataOnly.png)
 
 

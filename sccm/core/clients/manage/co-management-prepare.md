@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 101de2ba-9b4d-4890-b087-5d518a4aa624
-ms.openlocfilehash: 9aab4273129e6a3032d7e85d2545e6abc5b616c4
-ms.sourcegitcommit: 8dd9199bfe8e27f62e9df307f1c6ac58a3b81717
+ms.openlocfilehash: ac7f67a02602473a7635d8c70e4b1b1dc04363bc
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50237159"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53417050"
 ---
 # <a name="prepare-windows-10-devices-for-co-management"></a>공동 관리를 위해 Windows 10 디바이스 준비
 AD 및 Azure AD에 조인하고, Microsoft Intune과 Configuration Manager에서 클라이언트를 등록하는 Windows 10 디바이스에서 공동 관리를 사용할 수 있습니다. 새 Windows 10 디바이스 및 Intune에 이미 등록된 디바이스의 경우 공동 관리되기 전에 Configuration Manager 클라이언트를 설치합니다. Configuration Manager 클라이언트인 Windows 10 디바이스의 경우 Intune에서 디바이스를 등록하고 Configuration Manager 콘솔에서 공동 관리를 사용할 수 있습니다.
@@ -49,12 +49,13 @@ AD 및 Azure AD에 조인하고, Microsoft Intune과 Configuration Manager에서
     - [혼합 기관](/sccm/mdm/deploy-use/migrate-mixed-authority)을 사용 중인 경우 먼저 Intune 독립 실행형으로 마이그레이션을 완료합니다. 그런 다음, 공동 관리를 설정하기 전에 MDM 기관을 Intune으로 설정합니다.<!--SCCMDocs issue #797-->
 
 
-> [!Note]  
+> [!NOTE]
 > 하이브리드 MDM 환경(Configuration Manager와 통합된 Intune)이 설정된 경우 공동 관리를 사용할 수 없습니다. 그러나 사용자를 Intune 독립 실행형으로 마이그레이션하기 시작한 후 관련 Windows 10 디바이스에 공동 관리를 활성화할 수 있습니다. Intune 독립 실행형으로 마이그레이션하는 방법에 대한 자세한 정보는 [하이브리드 MDM에서 Intune 독립 실행형으로 마이그레이션 시작](/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)을 참조하세요.
 
 
 ### <a name="prerequisite-azure-resource-manager-roles"></a>필수 Azure Resource Manager 역할
 <!--SCCMDocs issue #667--> Azure 역할에 대한 자세한 내용은 [서로 다른 역할의 이해](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles)를 참조하세요.
+
 |작업|필요한 역할|
 |----|----|
 |클라우드 관리 게이트웨이 설정|Azure 구독 관리자|
@@ -68,7 +69,7 @@ AD 및 Azure AD에 조인하고, Microsoft Intune과 Configuration Manager에서
 
 - Windows 10, 버전 1709 이상  
 
-- [하이브리드 Azure 조인](https://docs.microsoft.com/azure/active-directory/device-management-hybrid-azuread-joined-devices-setup)(AD 및 Azure AD에 조인) 또는 Azure AD 조인 전용(이 유형은 "클라우드 도메인 조인"이라고도 함).
+- [하이브리드 Azure 조인](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)(AD 및 Azure AD에 조인) 또는 Azure AD 조인 전용(이 유형은 "클라우드 도메인 조인"이라고도 함).
 
 
 ### <a name="additional-prerequisites-for-devices-without-the-configuration-manager-client"></a>Configuration Manager 클라이언트가 없는 디바이스에 대한 추가 필수 구성 요소
@@ -85,16 +86,22 @@ AD 및 Azure AD에 조인하고, Microsoft Intune과 Configuration Manager에서
 
 ## <a name="command-line-to-install-configuration-manager-client"></a>Configuration Manager 클라이언트를 설치하는 명령줄
 
-Configuration Manager 클라이언트가 아닌 Windows 10 디바이스의 경우 Intune에서 앱을 만듭니다. 다음 섹션에서 앱을 만들 때 다음 명령줄을 사용합니다.
+Configuration Manager 클라이언트가 아닌 Windows 10 디바이스의 경우 Intune에서 앱을 만듭니다. 이를 수행하려면 다음 단계를 따르십시오.
+
+1. portal.azure.com으로 이동한 다음, Intune 블레이드를 엽니다.
+2. **클라이언트 앱** > **앱** > **추가**를 클릭합니다. 
+3. **기타**에서 **기간 업무 앱**을 선택합니다.
+4. Ccmsetup.msi 앱 패키지 파일을 업로드합니다. (이 파일은 사이트 서버의 *<ConfigMgr 설치 디렉터리*\bin\i386 폴더에 있습니다.) 
+5. 앱을 업데이트한 후 다음 명령줄 인수를 실행하여 앱 정보를 구성합니다.
 
 `ccmsetup.msi CCMSETUPCMD="/mp:<URL of cloud management gateway mutual auth endpoint> CCMHOSTNAME=<URL of cloud management gateway mutual auth endpoint> SMSSiteCode=<Sitecode> SMSMP=https://<FQDN of MP> AADTENANTID=<AAD tenant ID> AADCLIENTAPPID=<Server AppID for AAD Integration> AADRESOURCEURI=https://<Resource ID>"`
 
-#### <a name="example-command-line"></a>예제 명령줄
+#### <a name="example-command-line-input"></a>예제 명령줄 입력
 다음 값이 있는 경우
 
 - **클라우드 관리 게이트웨이 상호 인증 엔드포인트의 URL**: `https://contoso.cloudapp.net/CCM_Proxy_MutualAuth/72186325152220500`    
 
-   >[!Note]    
+   >[!NOTE]    
    >**클라우드 관리 게이트웨이 상호 인증 엔드포인트의 URL** 값에 **vProxy_Roles** SQL 보기의 **MutualAuthPath** 값을 사용합니다.  
 
 - **MP(관리 지점)의 FQDN** : `mp1.contoso.com`    
@@ -103,7 +110,7 @@ Configuration Manager 클라이언트가 아닌 Windows 10 디바이스의 경�
 - **Azure AD 클라이언트 앱 ID**: `51e781eb-aac6-4265-8030-4cd1ddaa9dd0`     
 - **AAD 리소스 ID URI**: `ConfigMgrServer`    
 
-  > [!Note]    
+  > [!NOTE]    
   > **AAD 리소스 ID URI** 값에 **vSMS_AAD_Application_Ex** SQL 보기에서 찾은 **IdentifierUri** 값을 사용합니다.  
 
 그런 다음, 다음 명령줄을 사용합니다.
@@ -130,7 +137,7 @@ Configuration Manager 클라이언트가 아닌 Windows 10 디바이스의 경�
 자세한 내용은 [클라이언트 설치 속성](/sccm/core/clients/deploy/about-client-installation-properties)을 참조합니다.
 
 
-> [!Tip]
+> [!TIP]
 > 다음 단계를 사용하여 사이트에 대한 명령줄 매개 변수를 찾습니다.     
 > 
 > 1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고, **Cloud Services**를 확장하고, **공동 관리** 노드를 선택합니다.  
@@ -143,7 +150,7 @@ Configuration Manager 클라이언트가 아닌 Windows 10 디바이스의 경�
 > 
 > 5. **취소**를 클릭하여 마법사를 종료합니다.  
 
-> [!Important]    
+> [!IMPORTANT]    
 > Configuration Manager 클라이언트를 설치하도록 명령줄을 사용자 지정하는 경우 명령줄은 1024자를 초과하지 말아야 합니다. 명령줄이 1024자를 넘는 경우 클라이언트 설치에 실패합니다.
 
 

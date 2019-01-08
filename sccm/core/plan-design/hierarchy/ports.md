@@ -10,12 +10,12 @@ ms.assetid: c6777fb0-0754-4abf-8a1b-7639d23e9391
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5a5ec4f699f2c122dc435bbca5c77789ea972de7
-ms.sourcegitcommit: 2badee2b63ae63687795250e298f463474063100
+ms.openlocfilehash: b074ee02ec5e50fb5e495923538535cf8765dcdb
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45601231"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53420943"
 ---
 # <a name="ports-used-in-configuration-manager"></a>Configuration Manager에서 사용되는 포트
 
@@ -95,14 +95,14 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |SQL over TCP|--|1433<sup>[참고 2](#bkmk_note2) 대체 포트 사용 가능</sup>|  
 
 
-###  <a name="BKMK_PortsAppCatalogService-SQL"></a> 응용 프로그램 카탈로그 웹 서비스 지점 -- &gt; SQL Server  
+###  <a name="BKMK_PortsAppCatalogService-SQL"></a> 애플리케이션 카탈로그 웹 서비스 지점 -- &amp;gt; SQL Server  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |SQL over TCP|--|1433<sup>[참고 2](#bkmk_note2) 대체 포트 사용 가능</sup>|  
 
 
-###  <a name="BKMK_PortsAppCatalogWebSitePoint_AppCatalogWebServicePoint"></a> 응용 프로그램 카탈로그 웹 사이트 지점 -- &gt; 응용 프로그램 카탈로그 웹 서비스 지점  
+###  <a name="BKMK_PortsAppCatalogWebSitePoint_AppCatalogWebServicePoint"></a> 애플리케이션 카탈로그 웹 사이트 지점 -- &amp;gt; 애플리케이션 카탈로그 웹 서비스 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -110,7 +110,7 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |HTTPS|--|443 <sup>[참고 2](#bkmk_note2) 대체 포트 사용 가능</sup>|  
 
 
-###  <a name="BKMK_PortsClient-AppCatalogWebsitePoint"></a> 클라이언트 -- &gt; 응용 프로그램 카탈로그 웹 사이트 지점  
+###  <a name="BKMK_PortsClient-AppCatalogWebsitePoint"></a> 클라이언트 -- &amp;gt; 애플리케이션 카탈로그 웹 사이트 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -179,7 +179,7 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 
 > [!Important]  
 > 호스트 기반 방화벽을 사용하도록 설정한 경우 규칙이 서버가 이러한 포트에서 송수신하도록 허용하는지 확인합니다. PXE에 대한 분산 지점을 사용하는 경우 Configuration Manager는 Windows 방화벽에서 인바운드(수신) 규칙을 사용하도록 설정할 수 있습니다. 아웃바운드(송신) 규칙을 구성하지는 않습니다.<!--SCCMDocs issue #744-->  
-  
+
 
 ###  <a name="BKMK_PortsClient-FSP"></a> 클라이언트 -- &gt; 대체 상태 지점  
 
@@ -237,12 +237,14 @@ Configuration Manager는 이러한 연결을 사용하여 CMG 채널을 빌드�
 
 #### <a name="version-1706-or-1710"></a>버전 1706 또는 1710
 특정 포트는 관리 지점 구성에 따라 달라집니다. 
+
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTPS|--|443|
 |HTTP|--|80|  
 
 #### <a name="version-1802"></a>1802 버전
+
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTPS|--|443|
@@ -253,6 +255,7 @@ Configuration Manager는 이러한 연결을 사용하여 CMG 채널을 빌드�
 ###  <a name="bkmk_cmgcp-sup"></a> CMG 연결 지점 -- > 소프트웨어 업데이트 지점  
 
 특정 포트는 소프트웨어 업데이트 지점 구성에 따라 달라집니다. 
+
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTPS|--|443|
@@ -414,14 +417,14 @@ Configuration Manager 콘솔은 다음 구성에 대해 인터넷 액세스를 �
 |SQL over TCP|--|1433<sup>[참고 2](#bkmk_note2) 대체 포트 사용 가능</sup>|  
 
 
-###  <a name="BKMK_PortsMobileDeviceClient-EnrollmentProxyPoint"></a> 모바일 장치 -- &gt; 등록 프록시 지점  
+###  <a name="BKMK_PortsMobileDeviceClient-EnrollmentProxyPoint"></a> 모바일 디바이스 -- &amp;gt; 등록 프록시 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTPS|--|443|  
 
 
-###  <a name="BKMK_PortsMobileDeviceClient-WindowsIntune"></a> 모바일 장치 -- &gt; Microsoft Intune  
+###  <a name="BKMK_PortsMobileDeviceClient-WindowsIntune"></a> 모바일 디바이스 -- &amp;gt; Microsoft Intune  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -453,7 +456,7 @@ Configuration Manager 콘솔은 다음 구성에 대해 인터넷 액세스를 �
 자세한 내용은 [CMG 포트 및 데이터 흐름](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#ports-and-data-flow)을 참조하세요.
 
 
-###  <a name="BKMK_PortsAppCatalogWebServicePoint_SiteServer"></a> 사이트 서버 &lt; -- &gt; 응용 프로그램 카탈로그 웹 서비스 지점  
+###  <a name="BKMK_PortsAppCatalogWebServicePoint_SiteServer"></a> 사이트 서버 &lt; -- &amp;gt; 애플리케이션 카탈로그 웹 서비스 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -462,7 +465,7 @@ Configuration Manager 콘솔은 다음 구성에 대해 인터넷 액세스를 �
 |RPC|--|동적 <sup>[참고 6](#bkmk_note6)</sup>|  
 
 
-###  <a name="BKMK_PortsAppCatalogWebSitePoint_SiteServer"></a> 사이트 서버 &lt; -- &gt; 응용 프로그램 카탈로그 웹 사이트 지점  
+###  <a name="BKMK_PortsAppCatalogWebSitePoint_SiteServer"></a> 사이트 서버 &lt; -- &amp;gt; 애플리케이션 카탈로그 웹 사이트 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -797,7 +800,7 @@ Configuration Manager는 사이트 정보의 검색 및 게시에 다음 포트�
  - RPC 엔드포인트 매퍼: 135
  - RPC: 동적으로 할당된 높은 TCP 포트
  - TCP: 1024: 5000
- - TCP: 49152: 65535
+ - TCP:  49152: 65535
 
 
 ###  <a name="BKMK_External"></a> Configuration Manager에서 수행하는 외부 연결  
@@ -836,17 +839,17 @@ Configuration Manager는 사이트 정보의 검색 및 게시에 다음 포트�
 
  인터넷 기반 클라이언트를 지원하는 인터넷 기반 관리 지점 및 배포 지점, 소프트웨어 업데이트 지점 및 대체 상태 지점은 설치 및 복구에 다음 포트를 사용합니다.  
 
--   사이트 서버 --&amp;gt; 사이트 시스템: UDP 및 TCP 포트 135를 사용하는 RPC 엔드포인트 매퍼  
+-   사이트 서버 --> 사이트 시스템: UDP 및 TCP 포트 135를 사용하는 RPC 엔드포인트 매퍼입니다.  
 
--   사이트 서버--&gt; 사이트 시스템: RPC 동적 TCP 포트  
+-   사이트 서버 --> 사이트 시스템: RPC 동적 TCP 포트입니다.  
 
--   사이트 서버 &lt; --&gt; 사이트 시스템: TCP 포트 445를 사용하는 SMB(Server Message Block)
+-   사이트 서버 &lt; --> 사이트 시스템: TCP 포트 445를 사용하는 SMB(Server Message Block)
 
 배포 지점에 애플리케이션 및 패키지를 설치하려면 다음 RPC 포트가 필요합니다.  
 
--   사이트 서버 --&amp;gt; 배포 지점: UDP 및 TCP 포트 135를 사용하는 RPC 엔드포인트 매퍼
+-   사이트 서버 --> 배포 지점: UDP 및 TCP 포트 135를 사용하는 RPC 엔드포인트 매퍼
 
--   사이트 서버 --&gt; 배포 지점: RPC 동적 TCP 포트  
+-   사이트 서버 --> 배포 지점: RPC 동적 TCP 포트입니다.  
 
 IPsec을 사용하여 사이트 서버 및 사이트 시스템 간 트래픽을 보호할 수 있습니다. RPC에 사용된 동적 포트를 제한해야 하는 경우 Microsoft RPC 구성 도구(rpccfg.exe)를 사용하여 이러한 RPC 패킷에 제한된 포트 범위를 구성할 수 있습니다. RPC 구성 도구에 대한 자세한 내용은 [RPC에서 특정 포트를 사용하도록 구성하는 방법과 IPsec을 사용하여 이러한 포트를 보호하는 방법](https://support.microsoft.com/help/908472/how-to-configure-rpc-to-use-certain-ports-and-how-to-help-secure-those)을 참조하세요.  
 

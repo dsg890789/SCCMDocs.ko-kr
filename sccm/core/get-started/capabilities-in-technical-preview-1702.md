@@ -10,12 +10,12 @@ ms.assetid: aedd608d-6db3-4ea5-851d-70f2dcda6bb5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: dc1fc6668c61f2eafe04f92fc6b9ea27520ddc43
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: d87ef098b096f1dc04bc424a3a100955b12f6f57
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32342463"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53419022"
 ---
 # <a name="capabilities-in-technical-preview-1702-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1702의 기능
 
@@ -30,9 +30,9 @@ ms.locfileid: "32342463"
 
 이 미리 보기에는 Configuration Manager 콘솔에 새 피드백 옵션이 도입되었습니다. 피드백 옵션을 사용하면 Configuration Manager UserVoice 피드백 웹 사이트를 통해 개발 팀에 직접 피드백을 보낼 수 있습니다.  
 
->**피드백** 옵션은 다음 위치에서 찾을 수 있습니다.
--  리본에서 각 노드의 홈 탭 맨 왼쪽  
-   ![리본](./media/feedback-home.png)
+> **피드백** 옵션은 다음 위치에서 찾을 수 있습니다.
+> -  리본에서 각 노드의 홈 탭 맨 왼쪽  
+>    ![리본](./media/feedback-home.png)
 
 -  콘솔에서 아무 개체나 마우스 오른쪽 단추로 클릭할 때   
     ![마우스 오른쪽 단추 클릭 옵션](./media/feedback-option.png)   
@@ -61,7 +61,7 @@ System Center Configuration Manager SDK를 사용하는 경우 피어 원본 기
 
 컴퓨터가 콘텐츠 요청을 거부하는 경우 요청하는 컴퓨터는 사용 가능한 콘텐츠 원본 위치 풀에서 콘텐츠 폼 대체 원본을 계속 검색합니다.   
 
-## <a name="azurediscovery"></a> Azure Active Directory Domain Services를 사용하여 장치, 사용자 및 그룹 관리
+## <a name="azurediscovery"></a> Azure Active Directory Domain Services를 사용하여 디바이스, 사용자 및 그룹 관리
 
 이 기술 미리 보기 버전에서는 Azure AD(Active Directory) Domain Services 관리되는 도메인에 가입된 디바이스를 관리할 수 있습니다. 또한 다양한 Configuration Manager 검색 방법으로 해당 도메인에서 디바이스, 사용자 및 그룹을 검색할 수 있습니다.
 
@@ -86,8 +86,8 @@ Azure AD에서 실행되도록 Configuration Manager를 설정하면 다음 Acti
 사용하는 각 방법에 대해 온-프레미스 Active Directory에 일반적인 컨테이너 대신 Azure AD OU 구조를 검색하도록 LDAP 쿼리를 편집합니다. 이렇게 하려면 Azure 구독에서 Active Directory를 검색하도록 쿼리를 지정해야 합니다.  
 
 다음 예제에서는 Azure AD *contoso.onmicrosoft.com*을 사용합니다.
- - **시스템 복구**   
-Azure AD는 **AADDC 컴퓨터** OU 아래에 디바이스를 저장합니다.  다음을 구성 합니다.  
+- **시스템 복구**   
+  Azure AD는 **AADDC 컴퓨터** OU 아래에 디바이스를 저장합니다.  다음을 구성 합니다.  
   - *LDAP://OU=AADDC Computers,DC=contoso,DC=onmicrosoft,DC=com*  
 
 
@@ -113,7 +113,7 @@ Azure AD에 대한 자세한 내용은 다음을 참조하세요.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 
-**시나리오:** 회사 데이터를 회사 외부로 전송하여 데이터 누출을 초래할 가능성이 있거나 과도한 데이터 사용을 초래하는 앱을 식별하고, 이러한 앱을 비규격 앱 목록에 추가하는 [조건부 액세스 장치 준수 정책을 만듭니다](https://docs.microsoft.com/sccm/protect/deploy-use/create-compliance-policy). 이렇게 하면 사용자가 차단된 앱을 제거할 수 있을 때까지 조건부 액세스를 지원하는 회사 리소스에 대한 액세스가 차단됩니다.
+**시나리오:** 회사 데이터를 회사 외부로 전송하여 데이터 누출을 초래할 가능성이 있거나 과도한 데이터 사용을 초래하는 앱을 식별한 다음, 이러한 앱을 비규정 준수 앱 목록에 추가하는 [조건부 액세스 디바이스 규정 준수 정책을 만듭니다](https://docs.microsoft.com/sccm/protect/deploy-use/create-compliance-policy). 이렇게 하면 사용자가 차단된 앱을 제거할 수 있을 때까지 조건부 액세스를 지원하는 회사 리소스에 대한 액세스가 차단됩니다.
 
 ## <a name="antimalware-client-version-alert"></a>맬웨어 방지 클라이언트 버전 경고
 이 미리 보기 버전부터 만료된 버전의 맬웨어 방지 클라이언트(예: Windows Defender 또는 Endpoint Protection 클라이언트)를 사용하는 관리되는 클라이언트가 20%(기본값)를 초과할 경우 Configuration Manager Endpoint Protection에서 경고를 제공합니다.
@@ -174,8 +174,8 @@ Windows Update for Business 업데이트에 대한 준수 평가 정보를 수�
 1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **운영 체제** > **작업 순서**로 이동합니다.
 2. 편집할 작업 순서를 선택하고 **속성**을 클릭합니다.
 3. **사용자 알림** 탭에서 **사용자 지정 텍스트 사용**을 선택합니다.
->  [!NOTE]
->  **강력한 작업 순서임**이 선택된 경우에만 사용자 알림 텍스트를 설정할 수 있습니다.
+   > [!NOTE]
+   >  **강력한 작업 순서임**이 선택된 경우에만 사용자 알림 텍스트를 설정할 수 있습니다.
 
 4. 다음 설정을 구성합니다(각 텍스트 상자에 최대 255자까지 입력).
 
@@ -183,25 +183,25 @@ Windows Update for Business 업데이트에 대한 준수 평가 정보를 수�
 
    **사용자 알림 메시지 텍스트**: 사용자 지정 알림의 본문을 제공하는 텍스트 상자 세 개가 있습니다.
    - 첫 번째 텍스트 상자: 일반적으로 사용자에 대한 지침이 포함된 텍스트의 본문을 지정합니다. 예를 들어 기본 사용자 알림에서 이 섹션에는 "운영 체제를 업그레이드하는 데 시간이 걸리며 컴퓨터가 여러 번 다시 시작될 수 있습니다."와 같은 내용이 포함됩니다.
-   - 두 번째 텍스트 상자: 텍스트의 기본 본문 아래에 표시되는 굵은 텍스트를 지정합니다. 예를 들어 기본 사용자 알림에서 이 섹션에는 "이 현재 위치 업그레이드에서는 새 운영 체제를 설치하고 앱, 데이터 및 설정을 자동으로 마이그레이션합니다."와 같은 내용이 포함됩니다.
+   - 두 번째 텍스트 상자: 텍스트의 본문 아래에 표시되는 굵은 텍스트를 지정합니다. 예를 들어 기본 사용자 알림에서 이 섹션에는 "이 현재 위치 업그레이드에서는 새 운영 체제를 설치하고 앱, 데이터 및 설정을 자동으로 마이그레이션합니다."와 같은 내용이 포함됩니다.
    - 세 번째 텍스트 상자: 굵은 텍스트 아래에 표시되는 텍스트의 마지막 줄을 지정합니다. 예를 들어 기본 사용자 알림에서 이 섹션에는 "시작하려면 [설치]를 클릭하고 그렇지 않으면 [취소]를 클릭하세요."와 같은 내용이 포함됩니다.   
 
    속성에서 다음과 같은 사용자 지정 알림을 구성한다고 가정해 봅니다.
 
-   ![작업 순서에 대한 사용자 지정 알림](.\media\user-notification.png)
+   ![작업 순서에 대한 사용자 지정 알림](./media/user-notification.png)
 
    최종 사용자가 소프트웨어 센터에서 설치를 열면 다음과 같은 알림 메시지가 표시됩니다.
 
-   ![작업 순서에 대한 사용자 지정 알림](.\media\user-notification-enduser.png)
+   ![작업 순서에 대한 사용자 지정 알림](./media/user-notification-enduser.png)
 
 ### <a name="configure-software-center-properties"></a>소프트웨어 센터 속성 구성
 소프트웨어 센터에 표시된 작업 순서에 대한 세부 정보를 구성하려면 다음 절차를 따르세요. 이러한 세부 정보는 정보 제공용입니다.  
 1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **운영 체제** > **작업 순서**로 이동합니다.
 2. 편집할 작업 순서를 선택하고 **속성**을 클릭합니다.
 3. **일반** 탭에서 소프트웨어 센터에 대한 다음 설정을 사용할 수 있습니다.
-  - **다시 시작 필요**: 설치하는 동안 다시 시작해야 하는지 여부를 사용자에게 알립니다.
-  - **다운로드 크기(MB)**: 작업 순서에 대해 소프트웨어 센터에 표시되는 메가바이트 수를 지정합니다.  
-  - **예상 실행 시간(분)**: 작업 순서에 대해 소프트웨어 센터에 표시되는 예상 실행 시간(분)을 지정합니다.
+   - **다시 시작 필요**: 설치하는 동안 다시 시작해야 하는지 여부를 사용자에게 알립니다.
+   - **다운로드 크기(MB)**: 작업 순서에 대해 소프트웨어 센터에 표시되는 메가바이트 수를 지정합니다.  
+   - **예상 실행 시간(분)**: 작업 순서에 대해 소프트웨어 센터에 표시되는 예상 실행 시간(분)을 지정합니다.
 
 
 ## <a name="check-for-running-executable-files-before-installing-an-application"></a>애플리케이션을 설치하기 전에 실행 중인 실행 파일 확인
@@ -246,10 +246,10 @@ iOS 디바이스에 대한 구성 항목에서 사용할 수 있는 새 설정�
 - **계정 설정 수정**(감독 모드인 경우에만)
 - **앱 셀룰러 데이터 사용량 설정 변경**(감독 모드인 경우에만)
 - **모든 콘텐츠 및 설정 지우기**(감독 모드인 경우에만)
-- **장치에 대한 제한 구성** (감독된 모드에만 해당)
-- **호스트 페어링을 사용하여 iOS 장치에서 페어링할 수 있는 장치 제어**(감독 모드인 경우에만)
+- **디바이스에 대한 제한 구성** (감독된 모드에만 해당)
+- **호스트 페어링을 사용하여 iOS 디바이스에서 페어링할 수 있는 디바이스 제어**(감독 모드인 경우에만)
 - **구성 프로필 및 인증서 설치**(감독 모드인 경우에만)
-- **장치 이름 수정**(감독 모드인 경우에만)
+- **디바이스 이름 수정**(감독 모드인 경우에만)
 - **암호 수정**(감독 모드인 경우에만)
 - **Apple Watch 페어링**(감독 모드인 경우에만)
 - **알림 설정 수정**(감독 모드인 경우에만)
@@ -264,8 +264,7 @@ iOS 디바이스에 대한 구성 항목에서 사용할 수 있는 새 설정�
 - **자동 완성 키보드**(감독 모드인 경우에만)
 - **자동 수정**(감독 모드인 경우에만)
 - **키보드 맞춤법 검사**(감독 모드인 경우에만)
-- **바로 가기 키**(감독 모드인 경우에만)
-<!--- - **Enterprise app trust settings modification** --->
+- **바로 가기 키**(감독 모드인 경우에만)<!--- - **Enterprise app trust settings modification** --->
 - **Apple Configurator 및 iTunes를 사용한 앱 설치만**(감독 모드인 경우에만)
 - **자동 앱 다운로드**(감독 모드인 경우에만)
 - **Find My Friends 앱 설정 변경**(감독 모드인 경우에만)
@@ -282,7 +281,7 @@ iOS 디바이스에 대한 구성 항목에서 사용할 수 있는 새 설정�
 
 Technical Preview 버전 1702부터 Google 계정을 하이브리드 MDM 테넌트에 바인딩할 수 있습니다. 이렇게 하면 다음을 수행할 수 있습니다.
 
-- [지원되는 Android 장치](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012)를 Android for Work로 등록하고 이러한 등록된 장치에 작업 프로필 만들기
+- [지원되는 Android 디바이스](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012)를 Android for Work로 등록하고 이러한 등록된 디바이스에 작업 프로필 만들기
 - Play for Work 스토어에서 앱을 승인하고, Configuration Manager 콘솔과 동기화한 다음 디바이스의 작업 프로필에 배포
 - 구성 항목을 만들고 배포하여 해당 디바이스에 대한 작업 프로필 및 암호 설정 구성
 - Android 디바이스에 대해 이미 수행하는 것처럼 Android for Work 디바이스에 대한 준수 정책 항목과 리소스 액세스 프로필 만들기 및 배포
@@ -298,23 +297,23 @@ Android for Work는 Android와 별도 플랫폼이며, 작업 프로필을 지�
 #### <a name="enable-android-for-work-management"></a>Android for Work 관리 사용
 1. 이 Intune 테넌트에 대한 모든 Android for Work 관리 작업과 연결할 Android for Work 관리자 계정으로 사용할 Google 계정을 https://accounts.google.com/SignUp에서 만듭니다. 이 Google 계정은 Android 디바이스를 관리하는 관리자 간에 공유될 수 있습니다. 또한 조직이 Play for Work 콘솔에서 앱을 관리하고 게시하는 데 사용하는 Google 계정입니다. 이 계정을 사용하여 Play for Work 스토어에서 앱을 승인하므로 계정 이름과 암호를 추적합니다.
 2. Configuration Manager에서 관리되는 Intune 테넌트에 Google 계정을 바인딩하여 Android 등록을 사용하도록 설정합니다.
-  1. **관리** > **개요** > **Cloud Services** > **Microsoft Intune 구독**으로 이동한 다음 Intune 구독을 선택합니다.
-  2. 리본에서 **플랫폼 구성** > **Android**를 클릭하고 **Android 등록 사용**이 선택되었는지 확인합니다.
-  3. 리본에서 **플랫폼 구성** > **Android for Work**를 클릭합니다.
-  4. 대화 상자에서 **Intune 콘솔에서 Android for Work 구성**을 클릭합니다. Intune 콘솔이 웹 브라우저에서 열립니다.
-  5. Intune 관리자 자격 증명을 사용하여 Intune 포털에 로그인합니다.
-  6. **구성**을 클릭하여 Google Play의 Android for Work 웹 사이트를 엽니다.
-  7. Google의 로그인 페이지에서 1단계의 Google 계정 자격 증명을 입력한 다음 회사 정보를 제공합니다.
+   1. **관리** > **개요** > **Cloud Services** > **Microsoft Intune 구독**으로 이동한 다음 Intune 구독을 선택합니다.
+   2. 리본에서 **플랫폼 구성** > **Android**를 클릭하고 **Android 등록 사용**이 선택되었는지 확인합니다.
+   3. 리본에서 **플랫폼 구성** > **Android for Work**를 클릭합니다.
+   4. 대화 상자에서 **Intune 콘솔에서 Android for Work 구성**을 클릭합니다. Intune 콘솔이 웹 브라우저에서 열립니다.
+   5. Intune 관리자 자격 증명을 사용하여 Intune 포털에 로그인합니다.
+   6. **구성**을 클릭하여 Google Play의 Android for Work 웹 사이트를 엽니다.
+   7. Google의 로그인 페이지에서 1단계의 Google 계정 자격 증명을 입력한 다음 회사 정보를 제공합니다.
 3. Intune 포털로 돌아오면 Android for Work이 사용되며, Android for Work 디바이스에 대한 세 가지 등록 옵션이 있습니다.
-  - **모든 장치를 Android로 관리** - (사용 안 함) Android for Work를 지원하는 장치를 포함하여 모든 Android 장치가 기존 Android 장치로 등록됩니다.
-  - **지원되는 장치를 Android for Work로 관리** - (사용) Android for Work를 지원하는 모든 장치가 Android for Work로 등록됩니다. Android for Work를 지원하지 않는 Android 디바이스는 기본 Android 디바이스로 등록됩니다.
-  - **이러한 그룹의 사용자에 대해서만 지원되는 장치를 Android for Work로 관리** - (테스트 중) Android for Work 관리의 대상을 제한된 사용자 집합으로 지정할 수 있습니다. Android for Work를 지원하는 디바이스를 등록하도록 선택된 그룹 구성원만 Android for Work 디바이스로 등록됩니다. 다른 구성원은 모두 Android 디바이스로 등록됩니다.
+   - **모든 디바이스를 Android로 관리** - (사용 안 함) Android for Work를 지원하는 디바이스를 포함하여 모든 Android 디바이스가 기존 Android 디바이스로 등록됩니다.
+   - **Android for Work로 지원되는 디바이스 관리** - (사용) Android for Work를 지원하는 모든 디바이스는 Android for Work 디바이스로 등록됩니다. Android for Work를 지원하지 않는 Android 디바이스는 기본 Android 디바이스로 등록됩니다.
+   - **이러한 그룹의 사용자에 대해서만 지원되는 디바이스를 Android for Work로 관리** - (테스트 중) Android for Work 관리의 대상을 제한된 사용자 집합으로 지정할 수 있습니다. Android for Work를 지원하는 디바이스를 등록하도록 선택된 그룹 구성원만 Android for Work 디바이스로 등록됩니다. 다른 구성원은 모두 Android 디바이스로 등록됩니다.
   
 > [!NOTE]
 > 알려진 문제로 인해 **Manage supported devices for users only in these groups as Android for Work**(이 그룹의 사용자만을 위해 지원되는 디바이스를 Android for Work로 관리) 옵션이 제대로 작동되지 않습니다. 지정된 Azure AD 그룹의 사용자 디바이스가 Android for Work 대신 Android로 등록됩니다. Android for Work를 테스트하려면 **Manage all supported devices as Android for Work**(지원되는 디바이스를 모두 Android for Work로 관리)를 사용해야 합니다.
 
 
-  Android for Work 등록을 사용하도록 설정하려면 아래쪽 두 옵션 중 하나를 선택해야 합니다. **이러한 그룹의 사용자에 대해서만 지원되는 장치를 Android for Work로 관리** 옵션을 사용하려면 Azure Active Directory 보안 그룹을 먼저 설정해야 합니다.
+  Android for Work 등록을 사용하도록 설정하려면 아래쪽 두 옵션 중 하나를 선택해야 합니다. **이러한 그룹의 사용자에 대해서만 지원되는 디바이스를 Android for Work로 관리** 옵션을 사용하려면 Azure Active Directory 보안 그룹을 먼저 설정해야 합니다.
 
 바인딩이 완료되면 계정 이름 및 조직 이름이 Intune 포털에 표시되며, 이제 두 브라우저를 닫아도 됩니다.
 

@@ -10,12 +10,12 @@ ms.assetid: 446c83b5-c292-4e74-ba19-0792ac6b3472
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 76b6b3e1e3ee8e1cdbfbb61890b5a1f7ac5e853f
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: d63100e5525b24ffd8deba447a10325c8209ea00
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32334017"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53416693"
 ---
 # <a name="upgrade-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트 업그레이드
 
@@ -31,19 +31,19 @@ ms.locfileid: "32334017"
 
  **장점**  
 
--   컴퓨터가 검색되지 않아도 클라이언트가 업그레이드될 수 있습니다.  
+- 컴퓨터가 검색되지 않아도 클라이언트가 업그레이드될 수 있습니다.  
 
--   새 클라이언트 설치나 업그레이드에 모두 사용할 수 있습니다.  
+- 새 클라이언트 설치나 업그레이드에 모두 사용할 수 있습니다.  
 
--   컴퓨터에서 Active Directory Domain Services에 게시된 클라이언트 설치 속성을 읽을 수 있습니다.  
+- 컴퓨터에서 Active Directory Domain Services에 게시된 클라이언트 설치 속성을 읽을 수 있습니다.  
 
--   해당 컴퓨터에 대한 설치 계정을 구성하고 관리하지 않아도 됩니다.  
+- 해당 컴퓨터에 대한 설치 계정을 구성하고 관리하지 않아도 됩니다.  
 
- **단점**  
+  **단점**  
 
--   다수의 클라이언트를 업그레이드하는 경우 네트워크 트래픽이 높아질 수 있습니다.  
+- 다수의 클라이언트를 업그레이드하는 경우 네트워크 트래픽이 높아질 수 있습니다.  
 
--   Active Directory 스키마가 Configuration Manager를 지원하도록 확장되지 않은 경우 [그룹 정책 설정](../../../../core/clients/deploy/deploy-clients-to-windows-computers.md#BKMK_ClientGP)을 사용하여 클라이언트 설치 속성을 사이트의 컴퓨터에 추가해야 합니다.  
+- Active Directory 스키마가 Configuration Manager를 지원하도록 확장되지 않은 경우 [그룹 정책 설정](../../../../core/clients/deploy/deploy-clients-to-windows-computers.md#BKMK_ClientGP)을 사용하여 클라이언트 설치 속성을 사이트의 컴퓨터에 추가해야 합니다.  
 
 
 ## <a name="logon-script-installation"></a>로그온 스크립트 설치  
@@ -51,42 +51,42 @@ ms.locfileid: "32334017"
 
  **장점**  
 
--   컴퓨터가 검색되지 않아도 클라이언트가 설치될 수 있습니다.  
+- 컴퓨터가 검색되지 않아도 클라이언트가 설치될 수 있습니다.  
 
--   새 클라이언트 설치나 업그레이드에 모두 사용할 수 있습니다.  
+- 새 클라이언트 설치나 업그레이드에 모두 사용할 수 있습니다.  
 
--   CCMSetup에 명령줄 속성을 사용할 수 있습니다.  
+- CCMSetup에 명령줄 속성을 사용할 수 있습니다.  
 
- **단점**  
+  **단점**  
 
--   짧은 기간 동안 다수의 클라이언트를 업그레이드하는 경우 네트워크 트래픽이 높아질 수 있습니다.  
+- 짧은 기간 동안 다수의 클라이언트를 업그레이드하는 경우 네트워크 트래픽이 높아질 수 있습니다.  
 
--   사용자가 네트워크에 자주 로그온하지 않는 경우 모든 클라이언트 컴퓨터에서 업그레이드하는 데 오랜 시간이 걸릴 수 있습니다.  
+- 사용자가 네트워크에 자주 로그온하지 않는 경우 모든 클라이언트 컴퓨터에서 업그레이드하는 데 오랜 시간이 걸릴 수 있습니다.  
 
- 자세한 내용은 [로그온 스크립트를 사용하여 Configuration Manager 클라이언트를 설치하는 방법](../../../../core/clients/deploy/deploy-clients-to-windows-computers.md#BKMK_ClientLogonScript)을 참조하세요.  
+  자세한 내용은 [로그온 스크립트를 사용하여 Configuration Manager 클라이언트를 설치하는 방법](../../../../core/clients/deploy/deploy-clients-to-windows-computers.md#BKMK_ClientLogonScript)을 참조하세요.  
 
 ## <a name="manual-installation"></a>수동 설치  
  **지원되는 클라이언트 플랫폼:** Windows, UNIX/Linux, Mac OS X  
 
  **장점**  
 
--   컴퓨터가 검색되지 않아도 클라이언트가 업그레이드될 수 있습니다.  
+- 컴퓨터가 검색되지 않아도 클라이언트가 업그레이드될 수 있습니다.  
 
--   테스트를 위해 유용할 수 있습니다.  
+- 테스트를 위해 유용할 수 있습니다.  
 
--   CCMSetup에 명령줄 속성을 사용할 수 있습니다.  
+- CCMSetup에 명령줄 속성을 사용할 수 있습니다.  
 
- **단점**  
+  **단점**  
 
--   자동화되지 않아 시간이 많이 소모됩니다.  
+- 자동화되지 않아 시간이 많이 소모됩니다.  
 
- 자세한 내용은 다음 항목을 참조하세요.  
+  자세한 내용은 다음 항목을 참조하세요.  
 
--   [Configuration Manager 클라이언트를 수동으로 설치하는 방법](../../../../core/clients/deploy/deploy-clients-to-windows-computers.md#BKMK_Manual)  
+- [Configuration Manager 클라이언트를 수동으로 설치하는 방법](../../../../core/clients/deploy/deploy-clients-to-windows-computers.md#BKMK_Manual)  
 
--   [System Center Configuration Manager에서 Linux 및 UNIX 서버용 클라이언트를 업그레이드하는 방법](../../../../core/clients/manage/upgrade/upgrade-clients-for-linux-and-unix-servers.md)  
+- [System Center Configuration Manager에서 Linux 및 UNIX 서버용 클라이언트를 업그레이드하는 방법](../../../../core/clients/manage/upgrade/upgrade-clients-for-linux-and-unix-servers.md)  
 
--   [System Center Configuration Manager에서 Mac 컴퓨터의 클라이언트를 업그레이드하는 방법](../../../../core/clients/manage/upgrade/upgrade-clients-on-mac-computers.md)  
+- [System Center Configuration Manager에서 Mac 컴퓨터의 클라이언트를 업그레이드하는 방법](../../../../core/clients/manage/upgrade/upgrade-clients-on-mac-computers.md)  
 
 ## <a name="upgrade-installation-application-management"></a>업그레이드 설치(애플리케이션 관리)  
  **지원되는 클라이언트 플랫폼:** Windows  
@@ -96,15 +96,15 @@ ms.locfileid: "32334017"
 
  **장점**  
 
--   CCMSetup에 명령줄 속성을 사용할 수 있습니다.  
+- CCMSetup에 명령줄 속성을 사용할 수 있습니다.  
 
- **단점**  
+  **단점**  
 
--   많은 컬렉션에 클라이언트를 배포하는 경우 네트워크 트래픽이 높아질 수 있습니다.  
+- 많은 컬렉션에 클라이언트를 배포하는 경우 네트워크 트래픽이 높아질 수 있습니다.  
 
--   검색되어 사이트에 할당된 컴퓨터에서만 클라이언트를 업그레이드할 수 있습니다.  
+- 검색되어 사이트에 할당된 컴퓨터에서만 클라이언트를 업그레이드할 수 있습니다.  
 
- 자세한 내용은 [패키지 및 프로그램을 사용하여 Configuration Manager 클라이언트를 설치하는 방법](../../../../core/clients/deploy/deploy-clients-to-windows-computers.md#BKMK_ClientApp)을 참조하세요.  
+  자세한 내용은 [패키지 및 프로그램을 사용하여 Configuration Manager 클라이언트를 설치하는 방법](../../../../core/clients/deploy/deploy-clients-to-windows-computers.md#BKMK_ClientApp)을 참조하세요.  
 
 ## <a name="automatic-client-upgrade"></a>자동 클라이언트 업그레이드  
 
@@ -115,33 +115,33 @@ ms.locfileid: "32334017"
 
  **장점**  
 
--   사이트의 클라이언트를 자동으로 최신 버전으로 유지할 수 있습니다.  
+- 사이트의 클라이언트를 자동으로 최신 버전으로 유지할 수 있습니다.  
 
--   관리 작업이 최소화됩니다.  
+- 관리 작업이 최소화됩니다.  
 
- **단점**  
+  **단점**  
 
--   클라이언트 소프트웨어를 업그레이드할 수만 있고 새 클라이언트를 설치할 수는 없습니다.  
+- 클라이언트 소프트웨어를 업그레이드할 수만 있고 새 클라이언트를 설치할 수는 없습니다.  
 
--   많은 클라이언트를 동시에 업그레이드하는 데는 적합하지 않습니다.  
+- 많은 클라이언트를 동시에 업그레이드하는 데는 적합하지 않습니다.  
 
--   사이트에 할당된 계층의 모든 클라이언트에 적용됩니다. 컬렉션으로 범위를 나눌 수 없습니다.  
+- 사이트에 할당된 계층의 모든 클라이언트에 적용됩니다. 컬렉션으로 범위를 나눌 수 없습니다.  
 
--   일정 옵션이 제한적입니다.  
+- 일정 옵션이 제한적입니다.  
 
- 자세한 내용은 [System Center Configuration Manager에서 Windows 컴퓨터용 클라이언트를 업그레이드하는 방법](../../../../core/clients/manage/upgrade/upgrade-clients-for-windows-computers.md)을 참조하세요.  
+  자세한 내용은 [System Center Configuration Manager에서 Windows 컴퓨터용 클라이언트를 업그레이드하는 방법](../../../../core/clients/manage/upgrade/upgrade-clients-for-windows-computers.md)을 참조하세요.  
 
 ## <a name="client-testing"></a>클라이언트 테스트  
  **지원되는 클라이언트 플랫폼:** Windows  
 
  **장점**  
 
--   작은 규모의 사전 프로덕션 컬렉션에서 새 클라이언트 버전을 테스트하는 데 사용할 수 있습니다.  
+- 작은 규모의 사전 프로덕션 컬렉션에서 새 클라이언트 버전을 테스트하는 데 사용할 수 있습니다.  
 
--   테스트가 완료되면 사전 프로덕션의 클라이언트 수준이 프로덕션으로 올라가고 Configuration Manager 사이트 전체에 걸쳐 자동으로 업그레이드됩니다.  
+- 테스트가 완료되면 사전 프로덕션의 클라이언트 수준이 프로덕션으로 올라가고 Configuration Manager 사이트 전체에 걸쳐 자동으로 업그레이드됩니다.  
 
- **단점**  
+  **단점**  
 
--   클라이언트 소프트웨어를 업그레이드할 수만 있고 새 클라이언트를 설치할 수는 없습니다.  
+- 클라이언트 소프트웨어를 업그레이드할 수만 있고 새 클라이언트를 설치할 수는 없습니다.  
 
- [System Center Configuration Manager의 사전 프로덕션 컬렉션에서 클라이언트 업그레이드를 테스트하는 방법](../../../../core/clients/manage/upgrade/test-client-upgrades.md)  
+  [System Center Configuration Manager의 사전 프로덕션 컬렉션에서 클라이언트 업그레이드를 테스트하는 방법](../../../../core/clients/manage/upgrade/test-client-upgrades.md)  

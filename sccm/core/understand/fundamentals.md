@@ -10,12 +10,12 @@ ms.assetid: cc4cdb35-f0b4-42b5-9cec-6431a8c30793
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6bd134857f53157e4ea81d46ff1a36693d7366ca
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: e29042aa4c6d335189c929eef6f2a19700681246
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32335187"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53422269"
 ---
 # <a name="fundamentals-of-system-center-configuration-manager"></a>System Center Configuration Manager의 기본 사항
 
@@ -27,18 +27,18 @@ System Center Configuration Manager를 처음 사용하는 경우 설치 프로�
 
  Configuration Manager를 배포하는 경우 하나 이상의 사이트를 배포합니다.  
 
--   **여러 사이트를 배포하는 경우**사이트는 총체적으로 계층 구조라는 자식-부모 관계를 형성합니다. 계층 구조를 사용하여 다수의 사이트와 디바이스를 중앙에서 관리합니다.  데이터 및 정보는 계층 구조 아래로 진행되어 관리하는 디바이스에 도달합니다. 디바이스 정보와 구성 작업 및 요청의 결과는 계층 구조 위로 진행됩니다.  
+- **여러 사이트를 배포하는 경우**사이트는 총체적으로 계층 구조라는 자식-부모 관계를 형성합니다. 계층 구조를 사용하여 다수의 사이트와 디바이스를 중앙에서 관리합니다.  데이터 및 정보는 계층 구조 아래로 진행되어 관리하는 디바이스에 도달합니다. 디바이스 정보와 구성 작업 및 요청의 결과는 계층 구조 위로 진행됩니다.  
 
--   **단일 사이트를 배포하는 경우** 계층 구조라고도 합니다.  
+- **단일 사이트를 배포하는 경우** 계층 구조라고도 합니다.  
 
- 일부 구성 작업과 설정은 계층 구조의 모든 사이트에 적용되는 반면 개별 사이트에 적용되는 구성 작업과 설정도 있습니다.  
+  일부 구성 작업과 설정은 계층 구조의 모든 사이트에 적용되는 반면 개별 사이트에 적용되는 구성 작업과 설정도 있습니다.  
 
 ## <a name="fundamental-concepts-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 기본 개념
 다음 항목을 확인하여 System Center Configuration Manager에 대한 기본 개념을 알아봅니다.  
 
 -   [System Center Configuration Manager의 사이트 및 계층 구조에 대한 기본 사항](../../core/understand/fundamentals-of-sites-and-hierarchies.md)  
 
--   [System Center Configuration Manager에서 장치 관리의 기본 사항](../../core/understand/fundamentals-of-managing-devices.md)  
+-   [System Center Configuration Manager에서 디바이스 관리의 기본 사항](../../core/understand/fundamentals-of-managing-devices.md)  
 
 -   [System Center Configuration Manager에 대한 클라이언트 관리 작업의 기본 사항](../../core/understand/fundamentals-of-client-management-tasks.md)  
 

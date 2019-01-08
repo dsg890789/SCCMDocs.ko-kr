@@ -10,12 +10,12 @@ ms.assetid: c7c94ba0-d709-4129-8077-075a8abaea1c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: ad4bfe99e841af5ccc4f6792fda664b8259a5369
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 10c072c89064472398c068a62079d1af120b1a11
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32350530"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53416557"
 ---
 # <a name="preprovision-bitlocker-in-windows-pe-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows PE에서 BitLocker 사전 프로비전
 
@@ -25,20 +25,20 @@ System Center Configuration Manager의 **BitLocker 사전 프로비전** 작업 
 
  일반적으로, Windows 7을 설치할 컴퓨터에서 BitLocker를 사전 프로비전하려면 다음 단계를 수행해야 합니다.  
 
--   Windows PE에서 컴퓨터 다시 시작  
+- Windows PE에서 컴퓨터 다시 시작  
 
-    > [!IMPORTANT]  
-    >  BitLocker를 사전 프로비전하려면 Windows PE 4 이상의 부팅 이미지를 사용해야 합니다. Configuration Manager에서 지원되는 Windows PE 버전에 대한 자세한 내용은 [Configuration Manager 외부 종속성](../plan-design/infrastructure-requirements-for-operating-system-deployment.md#BKMK_ExternalDependencies)을 참조하세요.  
+  > [!IMPORTANT]  
+  >  BitLocker를 사전 프로비전하려면 Windows PE 4 이상의 부팅 이미지를 사용해야 합니다. Configuration Manager에서 지원되는 Windows PE 버전에 대한 자세한 내용은 [Configuration Manager 외부 종속성](../plan-design/infrastructure-requirements-for-operating-system-deployment.md#BKMK_ExternalDependencies)을 참조하세요.  
 
--   하드 드라이브 파티션 및 포맷  
+- 하드 드라이브 파티션 및 포맷  
 
--   의  
+- 의  
 
--   특정 운영 체제 및 네트워크 설정으로 Windows 7 설치  
+- 특정 운영 체제 및 네트워크 설정으로 Windows 7 설치  
 
--   BitLocker에 키 보호기 추가  
+- BitLocker에 키 보호기 추가  
 
- Configuration Manager에서, BitLocker를 하드 드라이브에서 사전 프로비전하고 Windows 7을 설치하는 권장 방법은 새 작업 순서를 만들고 **작업 순서 만들기 마법사**의 **새 작업 순서 만들기** 페이지에서 **기존 이미지 패키지 설치**를 선택하는 것입니다. 이 마법사는 다음 표에 나열된 작업 순서 단계를 만듭니다.  
+  Configuration Manager에서, BitLocker를 하드 드라이브에서 사전 프로비전하고 Windows 7을 설치하는 권장 방법은 새 작업 순서를 만들고 **작업 순서 만들기 마법사**의 **새 작업 순서 만들기** 페이지에서 **기존 이미지 패키지 설치**를 선택하는 것입니다. 이 마법사는 다음 표에 나열된 작업 순서 단계를 만듭니다.  
 
 > [!NOTE]  
 >  마법사에서 설정을 구성한 방법에 따라, 이 작업 순서에서 추가 단계가 포함할 수 있습니다. 예를 들어, 마법사의 **상태 마이그레이션** 페이지에서 **캡처된 Microsoft Windows 설정** 을 선택한 경우 **Windows 설정 캡처** 단계가 추가될 수 있습니다.  
@@ -49,7 +49,7 @@ System Center Configuration Manager의 **BitLocker 사전 프로비전** 작업 
 |Windows PE에서 컴퓨터 다시 시작|이 단계에서는 작업 순서에 할당된 부팅 이미지를 실행하여 Windows PE에서 컴퓨터를 다시 시작합니다. BitLocker를 사전 프로비전하려면 Windows PE 4 이상의 부팅 이미지를 사용해야 합니다. 자세한 내용은 [컴퓨터 다시 시작](../understand/task-sequence-steps.md#BKMK_RestartComputer)을 참조하세요.|  
 |디스크 0 파티션 – BIOS:<br /><br /> 디스크 0 파티션 – UEFI:|이러한 단계는 BIOS 또는 UEFI를 사용하여 대상 컴퓨터의 지정된 드라이브를 포맷하고 파티션합니다. 이 작업 순서는 대상 컴퓨터가 UEFI 모드에 있음을 검색하면 UEFI를 사용합니다. 자세한 내용은 [디스크 포맷 및 파티션 만들기](../understand/task-sequence-steps.md#BKMK_FormatandPartitionDisk)를 참조하세요.|  
 |의|이 단계는 Windows PE에서 드라이브에 BitLocker를 사용하도록 설정합니다. 사용되는 드라이브 공간만 암호화됩니다. 위의 단계에서 하드 드라이브를 파티셔닝 및 포맷하므로, 어떤 데이터도 없으며 암호화가 신속하게 완료됩니다. 자세한 내용은 [BitLocker 사전 프로비전](../understand/task-sequence-steps.md#BKMK_PreProvisionBitLocker)을 참조하세요.|  
-|운영 체제 적용|이 단계에서는 응답 파일을 준비합니다. 응답 파일은 대상 컴퓨터에 운영 체제를 설치하는 데 사용되며 운영 체제 파일이 포함된 파티션의 드라이브 문자로 OSDTargetSystemDrive 작업 순서 변수를 설정합니다. 응답 파일 및 변수는 Windows 및 ConfigMgr 설치 단계에서 운영 체제를 설치하는 데 사용됩니다. 자세한 내용은 [운영 체제 이미지 적용](../understand/task-sequence-steps.md#BKMK_ApplyOperatingSystemImage)을 참조하세요.|  
+|운영 체제 적용|이 단계에서는 응답 파일을 준비합니다. 응답 파일은 대상 컴퓨터에 운영 체제를 설치하는 데 사용되며 운영 체제 파일이 포함된 파티션의 드라이브 문자로 OSDTargetSystemDrive 작업 순서 변수를 설정합니다. 응답 파일 및 변수는 Windows 및 ConfigMgr 설치 단계에서 운영 체제를 설치하는 데 사용됩니다. 자세한 내용은 [Apply Operating System Image](../understand/task-sequence-steps.md#BKMK_ApplyOperatingSystemImage)을 참조하십시오.|  
 |Windows 설정 적용|이 단계에서는 응답 파일에 Windows 설정을 추가합니다. 응답 파일은 Windows 및 ConfigMgr 설치 단계에서 운영 체제를 설치하는 데 사용됩니다. 자세한 내용은 [Windows 설정 적용](../understand/task-sequence-steps.md#BKMK_ApplyWindowsSettings)을 참조하세요.|  
 |네트워크 설정 적용|이 단계에서는 응답 파일에 메모장 설정을 추가합니다. 응답 파일은 Windows 및 ConfigMgr 설치 단계에서 운영 체제를 설치하는 데 사용됩니다. 자세한 내용은 [네트워크 설정 단계 적용](../understand/task-sequence-steps.md#BKMK_ApplyNetworkSettings)을 참조하세요.|  
 |디바이스 드라이버 적용|이 단계에서는 운영 체제 배포 중에 드라이버가 일치하는지 확인하고 설치합니다. 자세한 내용은 [드라이버 자동 적용](../understand/task-sequence-steps.md#BKMK_AutoApplyDrivers)을 참조하세요.|  

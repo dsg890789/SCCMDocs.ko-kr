@@ -2,7 +2,7 @@
 title: 릴리스 정보
 titleSuffix: Configuration Manager
 description: Microsoft 지원 기술 자료 문서에서 다루지 않거나 제품에서 아직 해결되지 않은 긴급한 문제에 대해 알아봅니다.
-ms.date: 11/27/2018
+ms.date: 12/21/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 030947fd-f5e0-4185-8513-2397fb2ec96f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 41039ec31c11573424f044df009e9c364491b5f7
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.openlocfilehash: 41b068da0524333ae25ea2228a71bf27344f4f58
+ms.sourcegitcommit: f5fa9e657350ceb963a7928497d2adca9caef3d4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52456348"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "53748496"
 ---
 # <a name="release-notes-for-configuration-manager"></a>Configuration Manager의 릴리스 정보
 
@@ -35,7 +35,7 @@ Configuration Manager에서는 제품 릴리스 정보가 긴급한 문제로 �
 
 
 
-## <a name="setup-and-upgrade"></a>설치 및 업그레이드  
+## <a name="set-up-and-upgrade"></a>설치 및 업그레이드  
 
 
 ### <a name="when-using-redistributable-files-from-the-cdlatest-folder-setup-fails-with-a-manifest-verification-error"></a>CD.Latest 폴더의 재배포 가능 파일을 사용하는 경우 매니페스트 확인 오류가 발생하여 설치가 실패합니다.
@@ -59,7 +59,7 @@ Configuration Manager에서는 제품 릴리스 정보가 긴급한 문제로 �
 Configuration Manager 버전 1802부터 CEIP(사용자 환경 개선 프로그램) 기능은 제품에서 제거됩니다. 명령줄 또는 무인 스크립트에서 새 사이트의 [설치를 자동화하는](/sccm/core/servers/deploy/install/command-line-options-for-setup) 경우 설치 프로그램은 필요한 매개 변수가 누락되었다는 오류를 반환합니다. 
 
 #### <a name="workaround"></a>해결 방법
-설치 프로세스의 결과에 영향을 주지 않으면서, 설치 명령줄에 **JoinCEIP** 매개 변수를 포함합니다.
+설치 프로세스의 결과에 영향을 주지 않지만 설치 명령줄에 **JoinCEIP** 매개 변수를 포함합니다.
 
  > [!Note]  
  > [콘솔 설치 프로그램](/sccm/core/servers/deploy/install/install-consoles)에 대한 EnableSQM 매개 변수가 필요하지 않습니다.
@@ -69,7 +69,7 @@ Configuration Manager 버전 1802부터 CEIP(사용자 환경 개선 프로그�
 <!--VSO 2858826, SCCMDocs issue 772-->
 *적용 대상: Configuration Manager 버전 1806*
 
-[서비스 연결점](/sccm/core/servers/deploy/configure/about-the-service-connection-point)이 [수동 모드의 사이트 서버](/sccm/core/servers/deploy/configure/site-server-high-availability)에 배치되어 있으면 [클라우드 관리 게이트웨이](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway)의 배포 및 모니터링이 시작되지 않습니다. 클라우드 서비스 관리자 구성 요소(SMS_CLOUD_SERVICES_MANAGER)가 중지 상태에 있습니다.
+[서비스 연결 지점](/sccm/core/servers/deploy/configure/about-the-service-connection-point)이 [수동 모드의 사이트 서버](/sccm/core/servers/deploy/configure/site-server-high-availability)에 배치되면 [클라우드 관리 게이트웨이](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway)의 배포 및 모니터링이 시작되지 않습니다. 클라우드 서비스 관리자 구성 요소(SMS_CLOUD_SERVICES_MANAGER)가 중지 상태에 있습니다.
 
 #### <a name="workaround"></a>해결 방법
 서비스 연결점 역할을 다른 서버로 이동합니다.
@@ -88,6 +88,30 @@ Configuration Manager 버전 1802부터 CEIP(사용자 환경 개선 프로그�
 
 
 ## <a name="software-updates"></a>소프트웨어 업데이트
+
+### <a name="security-roles-are-missing-for-phased-deployments"></a>단계적 배포에 대한 보안 역할이 누락됨
+<!--3479337, SCCMDocs-pr issue 3095-->
+*적용 대상: Configuration Manager 버전 1810*
+
+**OS 배포 관리자** 기본 제공 보안 역할에는 [단계적 배포](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence)에 대한 권한이 있습니다. 이러한 권한이 없는 역할은 다음과 같습니다.  
+
+- **애플리케이션 관리자**  
+- **애플리케이션 배포 관리자**  
+- **소프트웨어 업데이트 관리자**  
+
+**앱 작성자** 역할은 단계적 배포에 대한 일부 권한이 있는 것처럼 보일 수 있지만 배포를 만들 수 없습니다. 
+
+이러한 역할이 있는 사용자는 단계적 배포 만들기 마법사를 시작할 수 있으며, 애플리케이션 또는 소프트웨어 업데이트에 대한 단계적 배포를 확인할 수 있습니다. 그러나 마법사를 완료하거나 기존 배포를 변경할 수 없습니다.
+
+#### <a name="workaround"></a>해결 방법
+사용자 지정 보안 역할을 만듭니다. 기존 보안 역할을 복사하고, **단계적 배포** 개체 클래스에 다음 권한을 추가합니다.
+- 만들기  
+- 삭제  
+- 수정  
+- 읽기  
+
+자세한 내용은 [사용자 지정 보안 역할 만들기](/sccm/core/servers/deploy/configure/configure-role-based-administration#BKMK_CreateSecRole)를 참조하세요.
+
 
 ### <a name="changing-office-365-client-setting-doesnt-apply"></a>Office 365 클라이언트 설정 변경이 적용되지 않습니다. 
 <!--511551-->

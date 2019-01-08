@@ -9,12 +9,12 @@ ms.assetid: 3ae68fa6-8b30-45dd-9d12-50bb67cb4a9d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a58e5924fc34bad514ca6f01bb23aa84443705c6
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: df78f6ebfece28d01402272814e8527c3ca4a5fd
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32340712"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53422830"
 ---
 # <a name="what39s-changed-in-system-center-configuration-manager-from-system-center-2012-configuration-manager"></a>System Center 2012 Configuration Manager에서 변경된 System Center Configuration Manager의 기능
 
@@ -100,13 +100,13 @@ System Center 2012 Configuration Manager의 대역 외 관리는 이 변경 내�
 
 애플리케이션 관리에 대한 다음 변경 내용에 유의하세요.
 
--   System Center Configuration Manager 이상을 실행 중인 Windows 10 디바이스에 대한 UWP(유니버설 Windows 플랫폼) 앱을 배포할 수 있습니다. [System Center Configuration Manager에서 Windows 응용 프로그램 만들기](../../../apps/get-started/creating-windows-applications.md)를 참조하세요.  
+-   System Center Configuration Manager 이상을 실행 중인 Windows 10 디바이스에 대한 UWP(유니버설 Windows 플랫폼) 앱을 배포할 수 있습니다. [System Center Configuration Manager에서 Windows 애플리케이션 만들기](../../../apps/get-started/creating-windows-applications.md)를 참조하세요.  
 
--   소프트웨어 센터의 외관이 새롭게 바뀌었습니다. 이전에 애플리케이션 카탈로그에서만 표시된 앱(사용자가 사용할 수 있는 앱)이 이제 애플리케이션 탭 아래 소프트웨어 센터에 표시됩니다. 그래서 사용자가 이러한 배포를 더 쉽게 검색할 수 있고 애플리케이션 카탈로그를 참조하지 않아도 됩니다. 또한, 더는 브라우저에서 Silverlight를 사용하도록 설정할 필요가 없습니다. [System Center Configuration Manager에서 응용 프로그램 관리 계획 및 구성](../../../apps/plan-design/plan-for-and-configure-application-management.md)을 참조하세요.  
+-   소프트웨어 센터의 외관이 새롭게 바뀌었습니다. 이전에 애플리케이션 카탈로그에서만 표시된 앱(사용자가 사용할 수 있는 앱)이 이제 애플리케이션 탭 아래 소프트웨어 센터에 표시됩니다. 그래서 사용자가 이러한 배포를 더 쉽게 검색할 수 있고 애플리케이션 카탈로그를 참조하지 않아도 됩니다. 또한, 더는 브라우저에서 Silverlight를 사용하도록 설정할 필요가 없습니다. [System Center Configuration Manager에서 애플리케이션 관리 계획 및 구성](../../../apps/plan-design/plan-for-and-configure-application-management.md)을 참조하세요.  
 
--   MDM 애플리케이션 유형을 통해 Windows 설치 관리자를 사용하면 Windows Installer 기반 앱을 만들어 Windows 10을 실행하는 등록된 PC에 배포할 수 있습니다. [System Center Configuration Manager에서 Windows 응용 프로그램 만들기](../../../apps/get-started/creating-windows-applications.md)를 참조하세요.  
+-   MDM 애플리케이션 유형을 통해 Windows 설치 관리자를 사용하면 Windows Installer 기반 앱을 만들어 Windows 10을 실행하는 등록된 PC에 배포할 수 있습니다. [System Center Configuration Manager에서 Windows 애플리케이션 만들기](../../../apps/get-started/creating-windows-applications.md)를 참조하세요.  
 
--   사내 iOS 앱용 애플리케이션을 만들 경우 앱에 대한 설치 관리자(.ipa) 파일을 지정하기만 하면 됩니다. 더 이상 해당 속성 목록(.plist) 파일을 지정할 필요가 없습니다. [System Center Configuration Manager에서 iOS 응용 프로그램 만들기](../../../apps/get-started/creating-ios-applications.md)를 참조하세요.  
+-   사내 iOS 앱용 애플리케이션을 만들 경우 앱에 대한 설치 관리자(.ipa) 파일을 지정하기만 하면 됩니다. 더 이상 해당 속성 목록(.plist) 파일을 지정할 필요가 없습니다. [System Center Configuration Manager에서 iOS 애플리케이션 만들기](../../../apps/get-started/creating-ios-applications.md)를 참조하세요.  
 
 -   Configuration Manager 2012에서, Windows 스토어에서 앱에 대한 링크를 지정하기 위해 링크를 직접 지정하거나 앱이 설치된 원격 컴퓨터를 찾을 수 있습니다. System Center Configuration Manager에서, 링크를 직접 입력할 수 있지만 참조 컴퓨터를 검색하는 대신 직접 링크를 입력하고, Configuration Manager 콘솔에서 직접 앱의 스토어를 검색할 수 있습니다.  
 
@@ -122,27 +122,27 @@ System Center 2012 Configuration Manager의 대역 외 관리는 이 변경 내�
 
 준수 설정에 대한 다음 변경 내용에 유의하세요.
 
--   System Center Configuration Manager에서는 구성 항목을 만들기 위한 워크플로를 개선합니다. 이제, 구성 항목을 만들고 지원되는 플랫폼을 선택하면 해당 플랫폼과 관련된 설정만 사용할 수 있습니다. [System Center Configuration Manager에서 준수 설정 시작](../../../compliance/get-started/get-started-with-compliance-settings.md)을 참조하세요.  
+- System Center Configuration Manager에서는 구성 항목을 만들기 위한 워크플로를 개선합니다. 이제, 구성 항목을 만들고 지원되는 플랫폼을 선택하면 해당 플랫폼과 관련된 설정만 사용할 수 있습니다. [System Center Configuration Manager에서 준수 설정 시작](../../../compliance/get-started/get-started-with-compliance-settings.md)을 참조하세요.  
 
--   이제 **구성 항목 만들기** 마법사를 사용하면 만들려는 구성 항목 유형을 쉽게 선택할 수 있습니다. 또한 새로 추가되거나 업데이트된 구성 항목을 다음에 사용할 수 있습니다.  
+- 이제 **구성 항목 만들기** 마법사를 사용하면 만들려는 구성 항목 유형을 쉽게 선택할 수 있습니다. 또한 새로 추가되거나 업데이트된 구성 항목을 다음에 사용할 수 있습니다.  
 
-    -   Configuration Manager 클라이언트를 사용하여 관리되는 Windows 10 디바이스  
+  -   Configuration Manager 클라이언트를 사용하여 관리되는 Windows 10 디바이스  
 
-    -   Configuration Manager 클라이언트를 사용하여 관리되는 Mac OS X 디바이스  
+  -   Configuration Manager 클라이언트를 사용하여 관리되는 Mac OS X 디바이스  
 
-    -   Configuration Manager 클라이언트를 사용하여 관리되는 Windows 데스크톱 및 서버 컴퓨터  
+  -   Configuration Manager 클라이언트를 사용하여 관리되는 Windows 데스크톱 및 서버 컴퓨터  
 
-    -   Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 디바이스  
+  -   Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 디바이스  
 
-    -   Configuration Manager 클라이언트 없이 관리되는 Windows Phone 디바이스  
+  -   Configuration Manager 클라이언트 없이 관리되는 Windows Phone 디바이스  
 
-    -   Configuration Manager 클라이언트 없이 관리되는 iOS 및 Mac OS X 디바이스  
+  -   Configuration Manager 클라이언트 없이 관리되는 iOS 및 Mac OS X 디바이스  
 
-    -   Configuration Manager 클라이언트 없이 관리되는 Android 및 Samsung KNOX Standard 디바이스  
+  -   Configuration Manager 클라이언트 없이 관리되는 Android 및 Samsung KNOX Standard 디바이스  
 
- [System Center Configuration Manager에서 구성 항목을 만드는 방법](../../../compliance/deploy-use/create-configuration-items.md)을 참조하세요.  
+  [System Center Configuration Manager에서 구성 항목을 만드는 방법](../../../compliance/deploy-use/create-configuration-items.md)을 참조하세요.  
 
--   Microsoft Intune에 등록되었거나 Configuration Manager 클라이언트를 사용하여 관리되는 Mac OS X 컴퓨터에서 설정을 관리할 수 있도록 지원합니다. [System Center Configuration Manager 클라이언트 없이 관리되는 iOS 및 Mac OS X 장치에 대해 구성 항목을 만드는 방법](../../../compliance/deploy-use/create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client.md)을 참조하세요.  
+- Microsoft Intune에 등록되었거나 Configuration Manager 클라이언트를 사용하여 관리되는 Mac OS X 컴퓨터에서 설정을 관리할 수 있도록 지원합니다. [System Center Configuration Manager 클라이언트 없이 관리되는 iOS 및 Mac OS X 디바이스에 대해 구성 항목을 만드는 방법](../../../compliance/deploy-use/create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client.md)을 참조하세요.  
 
 ## <a name="protect-data-and-site-infrastructure"></a>데이터 및 사이트 인프라 보호  
 System Center Configuration Manager를 통해 비즈니스용 Windows Hello(이전의 Microsoft Passport for Work)와 통합할 수 있습니다. 비즈니스용 Windows Hello는 Active Directory 또는 Azure Active Directory 계정을 사용하여 Windows 10을 실행하는 디바이스에서 암호, 스마트 카드 또는 가상 스마트 카드를 대신하는 대체 로그인 방법입니다. [System Center Configuration Manager의 비즈니스용 Windows Hello 설정](../../../protect/deploy-use/windows-hello-for-business-settings.md)을 참조하세요.

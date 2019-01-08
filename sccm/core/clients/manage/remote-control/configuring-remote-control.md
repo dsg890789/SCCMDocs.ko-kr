@@ -10,12 +10,12 @@ ms.assetid: 45affc27-aa11-4249-9493-082ac23a3a3d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4e4d380319704eda608930ac938232513800b81a
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 9fac81f08f4750ab6cc133ddc3a3bb9f73780fcd
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32331644"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53422541"
 ---
 # <a name="configuring-remote-control-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 원격 제어 구성
 
@@ -27,17 +27,17 @@ ms.locfileid: "32331644"
 
 #### <a name="to-enable-remote-control-and-configure-client-settings"></a>원격 제어를 사용하도록 설정하고 클라이언트 설정을 구성하려면  
 
-1.  Configuration Manager 콘솔에서 **관리** > **클라이언트 설정** > **기본 클라이언트 설정**을 선택합니다.  
+1. Configuration Manager 콘솔에서 **관리** > **클라이언트 설정** > **기본 클라이언트 설정**을 선택합니다.  
 
-4.  **홈** 탭의 **속성** 그룹에서 **속성**을 선택합니다.  
+2. **홈** 탭의 **속성** 그룹에서 **속성**을 선택합니다.  
 
-5.  **기본** 대화 상자에서 **원격 도구**를 선택합니다.  
+3. **기본** 대화 상자에서 **원격 도구**를 선택합니다.  
 
-6.  원격 제어, 원격 지원 및 원격 데스크톱 클라이언트 설정을 구성합니다. 구성할 수 있는 원격 도구 클라이언트 설정 목록은 [원격 도구](../../../../core/clients/deploy/about-client-settings.md#remote-tools)를 참조하세요.  
+4. 원격 제어, 원격 지원 및 원격 데스크톱 클라이언트 설정을 구성합니다. 구성할 수 있는 원격 도구 클라이언트 설정 목록은 [원격 도구](../../../../core/clients/deploy/about-client-settings.md#remote-tools)를 참조하세요.  
 
-    **컴퓨터 에이전트** 클라이언트 설정의 **소프트웨어 센터에 표시되는 조직 이름** 에 대한 값을 구성하여 **ConfigMgr 원격 제어** 대화 상자에 표시되는 회사 이름을 변경할 수 있습니다.  
+   **컴퓨터 에이전트** 클라이언트 설정의 **소프트웨어 센터에 표시되는 조직 이름** 에 대한 값을 구성하여 **ConfigMgr 원격 제어** 대화 상자에 표시되는 회사 이름을 변경할 수 있습니다.  
 
- 클라이언트 컴퓨터는 다음에 클라이언트 정책을 다운로드할 때 이러한 설정으로 구성됩니다. 단일 클라이언트에 대한 정책 검색을 시작하려면 [System Center Configuration Manager에서 클라이언트를 관리하는 방법](../../../../core/clients/manage/manage-clients.md)을 참조하세요.  
+   클라이언트 컴퓨터는 다음에 클라이언트 정책을 다운로드할 때 이러한 설정으로 구성됩니다. 단일 클라이언트에 대한 정책 검색을 시작하려면 [System Center Configuration Manager에서 클라이언트를 관리하는 방법](../../../../core/clients/manage/manage-clients.md)을 참조하세요.  
 
 #### <a name="enable-keyboard-translation"></a>키보드 변환 사용
 

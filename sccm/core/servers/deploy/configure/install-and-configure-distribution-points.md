@@ -10,12 +10,12 @@ ms.assetid: aebafaf9-b3d5-4a0f-9ee5-685758c037a1
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: bca3e0857ed40d2e2b3f9d739b4c0411e0213d09
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 0ab848051d5eaa85d2b515145ff64471aee81a31
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385374"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53415044"
 ---
 # <a name="install-and-configure-distribution-points-in-configuration-manager"></a>Configuration Manager에서 배포 지점 설치 및 구성
 
@@ -247,20 +247,20 @@ ms.locfileid: "39385374"
 
 다음 설정은 사이트 시스템 서버 만들기 마법사의 **배포 지점** 페이지와 배포 지점 속성 창의 **일반** 탭에 있습니다.  
 
--   **Configuration Manager에 필요한 경우 IIS 설치 및 구성**: IIS가 아직 서버에 설치되지 않은 경우 Configuration Manager에서 IIS를 설치하고 구성합니다. Configuration Manager를 사용하려면 모든 배포 지점에서 IIS가 필요합니다. 이 설정을 선택하지 않고 IIS가 서버에 설치되지 않은 경우 Configuration Manager에서 배포 지점을 성공적으로 설치하기 전에 먼저 IIS를 설치합니다.  
+-   **Configuration Manager에서 필요한 경우 IIS 설치 및 구성**: 아직 서버에 설치되지 않은 경우 Configuration Manager에서 IIS를 설치 및 구성합니다. Configuration Manager를 사용하려면 모든 배포 지점에서 IIS가 필요합니다. 이 설정을 선택하지 않고 IIS가 서버에 설치되지 않은 경우 Configuration Manager에서 배포 지점을 성공적으로 설치하기 전에 먼저 IIS를 설치합니다.  
 
     > [!NOTE]  
     >  이 옵션은 사이트 시스템 서버 만들기 마법사의 **배포 지점** 페이지에만 있으며, [새 배포 지점을 설치](#bkmk_install-procedure)하는 경우에만 사용할 수 있습니다.  
 
-- **이 배포 지점의 BranchCache 사용 및 구성**: Configuration Manager에서 배포 지점 서버에 Windows BranchCache를 구성할 수 있도록 하려면 이 설정을 선택합니다. 자세한 내용은 [BranchCache](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management#branchcache)를 참조하세요.  
+- **이 배포 지점의 BranchCache 사용 및 구성**: 이 설정을 선택하여 Configuration Manager에서 배포 지점 서버에 Windows BranchCache를 구성할 수 있게 합니다. 자세한 내용은 [BranchCache](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management#branchcache)를 참조하세요.  
 
-- **사용되지 않은 네트워크 대역폭을 사용하도록 다운로드 속도 조정(Windows LEDBAT)**<!--1358112-->: 1806 버전부터 배포 지점에서 네트워크 정체 제어를 사용하도록 설정합니다. 자세한 내용은 [Windows LEDBAT](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management#windows-ledbat)를 참조하세요. 배포 지점에서 Windows Server 버전 1709를 실행해야 합니다. 클라이언트의 필수 구성 요소는 없습니다.  
+- **사용되지 않는 네트워크 대역폭(Windows LEDBAT)을 사용하도록 다운로드 속도 조정**<!--1358112-->: 버전 1806부터 배포 지점이 네트워크 정체 제어를 사용하도록 설정합니다. 자세한 내용은 [Windows LEDBAT](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management#windows-ledbat)를 참조하세요. 배포 지점에서 Windows Server 버전 1709를 실행해야 합니다. 클라이언트의 필수 구성 요소는 없습니다.  
 
 - **설명**: 이 배포 지점 역할에 대한 선택적 설명입니다.  
 
--   **클라이언트 장치가 배포 지점과 통신하는 방식 구성**: **HTTP** 또는 **HTTPS**를 사용하는 데는 각각 장단점이 있습니다. 자세한 내용은 [콘텐츠 관리에 대한 보안 모범 사례](/sccm/core/plan-design/hierarchy/security-and-privacy-for-content-management#BKMK_Security_ContentManagement)를 참조하세요.  
+-   **클라이언트 디바이스와 배포 지점의 통신 방식 구성**: **HTTP** 또는 **HTTPS**를 사용하는 데는 장단점이 있습니다. 자세한 내용은 [콘텐츠 관리에 대한 보안 모범 사례](/sccm/core/plan-design/hierarchy/security-and-privacy-for-content-management#BKMK_Security_ContentManagement)를 참조하세요.  
 
--   **클라이언트의 익명 연결 허용**: 이 설정은 배포 지점이 콘텐츠 라이브러리에 대한 Configuration Manager 클라이언트의 익명 연결을 허용할지 여부를 지정합니다.  
+-   **클라이언트의 익명 연결 허용**: 이 설정은 배포 지점이 Configuration Manager 클라이언트에서 콘텐츠 라이브러리로의 익명 연결을 허용할지 여부를 지정합니다.  
 
     > [!Important]  
     > 이 설정을 사용하지 않으면 Windows 7 클라이언트에서 Microsoft 기술 자료 문서 [2619572](https://support.microsoft.com/help/2619572/)에서 설명한 변경 내용이 적용됩니다. 그렇지 않으면 Windows Installer 애플리케이션의 복구가 실패할 수 있습니다.  
@@ -269,7 +269,7 @@ ms.locfileid: "39385374"
     >   
     >  클라이언트에 업데이트가 설치되고 문서화된 레지스트리 키가 수정되면 MSIExec에서 로그인한 사용자 계정을 사용하여 콘텐츠 경로에 액세스합니다.  
 
--   **자체 서명된 인증서 만들기 또는 PKI 클라이언트 인증서 가져오기**: Configuration Manager에서 다음 용도로 이 인증서를 사용합니다.  
+-   **자체 서명된 인증서 만들기 또는 PKI 클라이언트 인증서 가져오기**: Configuration Manager에서는 다음과 같은 용도로 이 인증서를 사용합니다.  
 
     -   배포 지점이 상태 메시지를 전송하기 전에 관리 지점에 대해 배포 지점을 인증합니다.  
 
@@ -300,7 +300,7 @@ ms.locfileid: "39385374"
 
 배포 지점에 대한 드라이브 설정을 지정합니다. 콘텐츠 라이브러리에 대해 최대 2개의 디스크 드라이브를 구성하고, 패키지 공유에 대해 2개의 디스크 드라이브를 구성합니다. 처음 두 개 드라이브가 구성된 드라이브 예약 공간에 도달하면 Configuration Manager에서 추가 드라이브를 사용할 수 있습니다. **드라이브 설정** 페이지에서는 디스크 드라이브의 우선 순위와 각 디스크 드라이브에 남아 있는 사용 가능한 디스크 공간의 양을 구성합니다.  
 
--   **드라이브 공간 예약(MB):** 이 값은 Configuration Manager에서 다른 드라이브를 선택하고 해당 드라이브에 대한 복사 프로세스를 계속하기 전에 드라이브의 사용 가능한 공간을 결정합니다. 콘텐츠 파일은 여러 드라이브에 걸쳐 있을 수 있습니다.  
+-   **드라이브 공간 예약(MB)**: 이 값을 통해 드라이브의 사용 가능한 공간을 결정한 후 Configuration Manager에서 다른 드라이브를 선택하고 해당 드라이브에 대한 복사 프로세스를 계속합니다. 콘텐츠 파일은 여러 드라이브에 걸쳐 있을 수 있습니다.  
 
 -   **콘텐츠 위치**: 이 배포 지점에서 콘텐츠 라이브러리 및 패키지 공유에 대한 위치를 지정합니다. 모든 콘텐츠 위치는 기본적으로 **자동**으로 설정됩니다. Configuration Manager는 사용 가능한 공간의 용량이 **드라이브 공간 예약(MB)** 에 지정된 값에 도달할 때까지 기본 콘텐츠 위치에 콘텐츠를 복사합니다. **자동**을 선택하면 Configuration Manager에서 설치 시 기본 콘텐츠 위치를 가장 많은 디스크 공간이 있는 디스크 드라이브로 설정하고, 보조 위치를 사용 가능한 디스크 공간이 두 번째로 많은 디스크 드라이브로 설정합니다. 기본 및 보조 위치가 드라이브 공간 예약에 도달하면 Configuration Manager에서 사용 가능한 디스크 공간이 가장 많은 다른 가용 드라이브를 선택하여 복사 프로세스를 계속합니다.  
 
@@ -336,30 +336,30 @@ PXE를 사용하도록 설정하면 필요한 경우 Configuration Manager에서
  >   
  > 동일한 서버에 WDS와 DHCP를 설치하는 경우 다른 포트에서 수신 대기하도록 WDS를 구성합니다. 기본적으로 DHCP는 동일한 포트에서 수신 대기합니다. 자세한 내용은 [WDS 및 DHCP가 동일한 서버에 있을 때 고려할 사항](/sccm/osd/plan-design/infrastructure-requirements-for-operating-system-deployment#BKMK_WDSandDHCP)을 참조하세요.  
 
-- **들어오는 PXE 요청에 응답하도록 이 배포 지점 허용**: WDS에서 PXE 서비스 요청에 응답할 수 있도록 할지 여부를 지정합니다. 이 설정을 사용하여 배포 지점에서 PXE 기능을 제거하지 않고 서비스를 사용하거나 사용하지 않도록 설정합니다.  
+- **들어오는 PXE 요청에 응답하도록 이 배포 지점 허용**: WDS에서 PXE 서비스 요청에 응답할 수 있도록 설정할지 여부를 지정합니다. 이 설정을 사용하여 배포 지점에서 PXE 기능을 제거하지 않고 서비스를 사용하거나 사용하지 않도록 설정합니다.  
 
-- **알 수 없는 컴퓨터 지원 사용**: Configuration Manager에서 관리하지 않는 컴퓨터에 대한 지원을 사용할 수 있도록 할지 여부를 지정합니다. 자세한 내용은 [알 수 없는 컴퓨터 배포 준비](/sccm/osd/get-started/prepare-for-unknown-computer-deployments)를 참조하세요.  
+- **알 수 없는 컴퓨터 지원 사용**: Configuration Manager에서 관리하지 않는 컴퓨터에 대한 지원을 사용할 수 있도록 설정할지 여부를 지정합니다. 자세한 내용은 [알 수 없는 컴퓨터 배포 준비](/sccm/osd/get-started/prepare-for-unknown-computer-deployments)를 참조하세요.  
 
-- **Windows 배포 서비스 없이 PXE 응답기 사용**: 1806 버전부터 이 옵션을 사용하면 배포 지점에서 WDS가 필요 없는 PXE 응답기를 사용할 수 있습니다. 이 PXE 응답기는 IPv6 네트워크를 지원합니다. 이미 PXE를 사용하는 배포 지점에서 이 옵션을 사용하도록 설정하면 Configuration Manager에서 WDS 서비스를 일시 중단합니다. 이 옵션을 사용하지 않도록 설정하지만 여전히 **클라이언트에 대해 PXE 지원 사용** 옵션을 설정하는 경우 배포 지점에서 WDS를 다시 사용하도록 설정합니다.<!--1357580-->  
+- **Windows 배포 서비스 없이 PXE 응답기 사용**: 버전 1806부터 이 옵션은 배포 지점에서 WDS가 필요하지 않은 PXE 응답기를 사용하도록 설정합니다. 이 PXE 응답기는 IPv6 네트워크를 지원합니다. 이미 PXE를 사용하는 배포 지점에서 이 옵션을 사용하도록 설정하면 Configuration Manager에서 WDS 서비스를 일시 중단합니다. 이 옵션을 사용하지 않도록 설정하지만 여전히 **클라이언트에 대해 PXE 지원 사용** 옵션을 설정하는 경우 배포 지점에서 WDS를 다시 사용하도록 설정합니다.<!--1357580-->  
 
 - **컴퓨터에서 PXE를 사용할 때 암호 필요**: PXE 배포에 대한 추가 보안을 제공하려면 강력한 암호를 지정합니다.  
 
-- **사용자 장치 선호도**: 배포 지점에서 PXE 배포를 위한 대상 컴퓨터와 사용자를 연결하는 방식을 지정합니다. 다음 옵션 중 하나를 선택합니다.  
+- **사용자 디바이스 선호도**: 배포 지점에서 PXE 배포를 위한 대상 컴퓨터와 사용자를 연결하는 방식을 지정합니다. 다음 옵션 중 하나를 선택합니다.  
 
-    - **자동 승인을 받는 사용자 장치 선호도 허용**: 승인을 기다리지 않고 대상 컴퓨터와 사용자를 자동으로 연결하려면 이 설정을 선택합니다.  
+  - **자동 승인이 포함된 사용자 디바이스 선호도 허용**: 승인을 기다리지 않고 대상 컴퓨터와 사용자를 자동으로 연결하려면 이 설정을 선택합니다.  
 
-    - **관리자 승인을 보류 중인 사용자 장치 선호도 허용**: 대상 컴퓨터와 사용자를 연결하기 전에 관리자의 승인을 기다리려면 이 설정을 선택합니다.  
+  - **관리자 승인을 보류 중인 사용자 디바이스 선호도 허용**: 대상 컴퓨터와 사용자를 연결하기 전에 관리자의 승인을 기다리려면 이 설정을 선택합니다.  
 
-    - **사용자 장치 선호도 허용 안 함**: 사용자가 대상 컴퓨터와 연결되지 않도록 지정하려면 이 설정을 선택합니다. 이 설정은 기본값입니다.  
+  - **사용자 디바이스 선호도 허용 안 함**: 이 설정을 선택하여 사용자를 대상 컴퓨터와 연결하지 않도록 지정합니다. 이 설정은 기본값입니다.  
 
-     사용자 디바이스 선호도에 대한 자세한 내용은 [사용자 디바이스 선호도를 사용하여 사용자와 디바이스 연결](/sccm/apps/deploy-use/link-users-and-devices-with-user-device-affinity)을 참조하세요.  
+    사용자 디바이스 선호도에 대한 자세한 내용은 [사용자 디바이스 선호도를 사용하여 사용자와 디바이스 연결](/sccm/apps/deploy-use/link-users-and-devices-with-user-device-affinity)을 참조하세요.  
 
 - **네트워크 인터페이스**: 배포 지점에서 모든 네트워크 인터페이스 또는 특정 네트워크 인터페이스의 PXE 요청에 응답하도록 지정합니다. 배포 지점에서 특정 네트워크 인터페이스에 응답하는 경우 각 네트워크 인터페이스에 대한 MAC 주소를 제공합니다.  
 
     > [!Note]  
     > 네트워크 인터페이스가 변경되면 해당 구성이 제대로 저장되도록 WDS 서비스를 다시 시작합니다. 1806 버전부터 PXE 응답기 서비스를 사용할 때 **ConfigMgr PXE 응답기 서비스**(SccmPxe)를 다시 시작합니다.<!--SCCMDocs issue 642-->  
 
-- **PXE 서버 응답 지연 시간 지정(초)**: 여러 PXE 서버를 사용하는 경우 이 PXE 사용 배포 지점에서 컴퓨터 요청에 응답할 때까지 기다려야 하는 시간을 지정합니다. 기본적으로 Configuration Manager PXE 사용 배포 지점에서 즉시 응답합니다.  
+- **PXE 서버 응답 지연 시간 지정(초)**: 여러 PXE 서버를 사용하는 경우 이 PXE 기반 배포 지점에서 컴퓨터 요청에 응답할 때까지 기다려야 하는 시간을 지정합니다. 기본적으로 Configuration Manager PXE 사용 배포 지점에서 즉시 응답합니다.  
 
 
 ### <a name="bkmk_config-multicast"></a> 멀티캐스트  
@@ -377,18 +377,18 @@ PXE를 사용하도록 설정하면 필요한 경우 Configuration Manager에서
     > [!IMPORTANT]  
     >  구성하는 IP 주소는 OS 이미지를 요청하는 대상 컴퓨터에서 액세스할 수 있어야 합니다. 라우터와 방화벽에서 대상 컴퓨터와 배포 지점 간의 멀티캐스트 트래픽을 허용하는지 확인하세요.  
 
-- **멀티캐스트용 UDP 포트 범위**: 대상 컴퓨터에 데이터를 전송하는 데 사용되는 UDP 포트의 범위를 지정합니다.  
+- **멀티캐스트용 UDP 포트 범위**: 대상 컴퓨터에 데이터를 전송하는 데 사용되는 UDP 포트 범위를 지정합니다.  
 
     > [!IMPORTANT]  
     >  UDP 포트는 OS 이미지를 요청하는 대상 컴퓨터에서 액세스할 수 있어야 합니다. 라우터와 방화벽에서 대상 컴퓨터와 사이트 서버 사이의 멀티캐스트 트래픽을 허용하는지 확인하세요.  
 
 - **최대 클라이언트**: 이 배포 지점에서 OS 이미지를 다운로드할 수 있는 대상 컴퓨터의 최대 수를 지정합니다.  
 
-- **예약된 멀티캐스트 사용**: 대상 컴퓨터에 운영 체제 배포를 시작하기 시작할 시기를 Configuration Manager에서 제어하는 방식을 지정합니다. 다음 옵션을 구성합니다.  
+- **예약된 멀티캐스트 사용**: 대상 컴퓨터에 운영 체제 배포를 시작할 시기를 Configuration Manager에서 제어하는 방식을 지정합니다. 다음 옵션을 구성합니다.  
 
-    - **세션 시작 지연 시간(분)**: Configuration Manager에서 첫 번째 배포 요청에 응답하기 전에 대기하는 시간(분)을 지정합니다.  
+    - **세션 시작 지연 시간(분)**: Configuration Manager에서 첫 번째 배포 요청에 응답하기 전에 대기 시간(분)을 지정합니다.  
 
-    - **최소 세션 크기(클라이언트)**: Configuration Manager에서 몇 개의 요청을 받은 후 운영 체제 배포를 시작할지를 지정합니다.  
+    - **최소 세션 크기(클라이언트)**: Configuration Manager에서 운영 체제 배포를 시작하기 전에 받아야 할 요청 수를 지정합니다.  
 
 
 > [!IMPORTANT]  
@@ -427,7 +427,7 @@ PXE를 사용하도록 설정하면 필요한 경우 Configuration Manager에서
 
 배포 지점에서 콘텐츠 파일 무결성의 유효성을 검사하는 일정을 설정합니다. 일정에 따라 콘텐츠 유효성 검사를 사용하도록 설정하면 Configuration Manager에서 예약된 시간에 유효성 검사 프로세스를 시작합니다. 배포 지점의 모든 콘텐츠를 확인합니다. 또한 콘텐츠 유효성 검사의 우선 순위를 구성할 수 있습니다. 기본적으로 우선 순위는 **가장 낮음**으로 설정됩니다. 우선 순위를 높이면 유효성 검사 프로세스 중에 서버의 프로세서 및 디스크 사용량이 증가할 수 있지만 더 빨리 완료되어야 합니다. 
 
-콘텐츠 유효성 검사 프로세스의 결과를 보려면 **모니터링** 작업 영역에서 **배포 상태**를 확장한 후 **콘텐츠 상태** 노드를 선택합니다. 애플리케이션, 소프트웨어 업데이트 패키지 및 부팅 이미지와 같은 각 소프트웨어 유형의 콘텐츠가 표시됩니다.  
+콘텐츠 유효성 검사 프로세스의 결과를 보려면 **모니터링** 작업 영역에서 **배포 상태**를 확장한 후 **콘텐츠 상태** 노드를 선택합니다. 응용 프로그램, 소프트웨어 업데이트 패키지 및 부팅 이미지와 같은 각 소프트웨어 유형의 콘텐츠가 표시됩니다.  
 
 > [!WARNING]  
 >  컴퓨터의 로컬 시간을 사용하여 콘텐츠 유효성 검사 일정을 지정하지만, Configuration Manager 콘솔에서는 해당 일정을 UTC로 표시합니다.  
@@ -461,11 +461,11 @@ Configuration Manager에서 데이터를 배포 지점에 전송할 수 있는 �
 
 - **모든 우선 순위에 사용 가능**: Configuration Manager에서 데이터를 아무런 제한 없이 배포 지점으로 보냅니다. 이 설정은 모든 기간에 대한 기본값입니다.  
 
-- **중간 및 높은 우선 순위 허용**: Configuration Manager에서 우선 순위가 중간이거나 높은 데이터만 배포 지점으로 보냅니다.  
+- **중간 및 높은 우선 순위 허용**: Configuration Manager에서 중간 및 높은 우선 순위의 데이터만 배포 지점으로 보냅니다.  
 
 - **높은 우선 순위만 허용**: Configuration Manager에서 우선 순위가 높은 데이터만 배포 지점으로 보냅니다.  
 
-- **닫힘**: Configuration Manager에서 데이터를 배포 지점으로 보내지 않습니다.  
+- **종결됨**: Configuration Manager에서 데이터를 배포 지점으로 보내지 않습니다.  
 
 소프트웨어 속성의 **배포 설정** 탭에서 소프트웨어의 **배포 우선 순위**를 구성합니다. 
 
@@ -482,7 +482,7 @@ Configuration Manager에서 데이터를 배포 지점에 전송할 수 있는 �
 
 Configuration Manager에서 콘텐츠를 배포 지점으로 전송하는 데 사용하는 네트워크 대역폭을 제어하는 속도 제한을 구성합니다. 다음 옵션 중에서 선택 합니다.  
 
-- **이 대상으로 보내는 경우 제한 없음**: Configuration Manager에서 콘텐츠를 아무런 속도 제한 없이 배포 지점으로 보냅니다. 이 설정은 기본값입니다.  
+- **이 대상으로 보내는 경우 제한 없음**: Configuration Manager에서 아무런 속도 제한 없이 배포 지점으로 콘텐츠를 보냅니다. 이 설정은 기본값입니다.  
 
 - **펄스 모드**: 이 옵션은 사이트 서버에서 배포 지점으로 보내는 데이터 블록의 크기를 지정합니다. 또한 각 데이터 블록 전송 간의 시간 지연을 지정할 수도 있습니다. 대역폭이 매우 낮은 네트워크 연결을 통해 배포 지점으로 데이터를 전송해야 할 경우 이 옵션을 사용합니다. 예를 들어 지정된 시간에 연결 속도 또는 사용 속도에 관계없이 5초마다 1KB의 데이터를 보내야 하는 제약 조건이 있습니다.  
 

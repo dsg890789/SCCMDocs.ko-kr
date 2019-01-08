@@ -10,12 +10,12 @@ ms.assetid: 226cbbb2-9afa-4e2e-a472-be989c0f0e11
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 1e71b95642160d519f222a50a66bc8f636628d6e
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: bd347cecce0ae1317fe51a701ce67b4766fbcd10
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39383526"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53423187"
 ---
 # <a name="content-library-cleanup-tool"></a>콘텐츠 라이브러리 정리 도구
 
@@ -41,7 +41,7 @@ ms.locfileid: "39383526"
 
 ## <a name="modes-of-operation"></a>작동 모드
 
-도구는 두 가지 모드([What-if](#what-if-mode) 및 [Delete](#delete-mode))에서 실행할 수 있습니다.
+도구는 다음 두 가지 모드에서 실행합니다. [What-if](#what-if-mode) 및 [삭제](#delete-mode).
 
 > [!Tip]  
 > *what-if*로 시작합니다. 결과에 만족할 경우 *delete* 모드에서 결과를 실행합니다.  
@@ -93,16 +93,17 @@ ms.locfileid: "39383526"
 이러한 명령줄 매개 변수를 어떤 순서로든 사용할 수 있습니다.   
 
 ### <a name="required-parameters"></a>필수 매개 변수
+
 |매개 변수|세부 정보|
 |---------|-------|
 | `/dp <distribution point FQDN>`  | 정리하려는 배포 지점의 FQDN(정규화된 도메인 이름)을 지정합니다. |
 | `/ps <primary site FQDN>` | 보조 사이트의 배포 지점에서 콘텐츠를 정리하는 경우에만 *필수*입니다. 이 도구는 부모 기본 사이트에 연결하여 SMS 공급자에 대한 쿼리를 실행합니다. 이러한 쿼리를 통해 도구는 배포 지점에 있어야 할 콘텐츠를 결정합니다. 그런 다음, 제거할 분리된 콘텐츠를 식별할 수 있습니다. 보조 사이트에서 바로 필요한 세부 정보를 이용할 수 없기 때문에 부모 기본 사이트에 대한 이러한 연결은 보조 사이트에서 배포 지점에 대해 이루어져야 합니다.|
 | `/sc <primary site code>`  | 보조 사이트의 배포 지점에서 콘텐츠를 정리하는 경우에만 *필수*입니다. 부모 기본 사이트의 사이트 코드를 지정합니다. |
 
-#### <a name="example-scan-and-log-what-content-it-would-delete-what-if"></a>예: 검색 및 삭제할 콘텐츠 로깅(what-if)
+#### <a name="example-scan-and-log-what-content-it-would-delete-what-if"></a>예제: 검사 및 삭제할 콘텐츠 로깅(what-if)
 `ContentLibraryCleanup.exe /dp server1.contoso.com`
 
-#### <a name="example-scan-and-log-content-for-a-dp-at-a-secondary-site"></a>예: 보조 사이트에서 스캔 및 DP 콘텐츠 로깅
+#### <a name="example-scan-and-log-content-for-a-dp-at-a-secondary-site"></a>예제: 보조 사이트에서 검사 및 DP 콘텐츠 로깅
 `ContentLibraryCleanup.exe /dp server1.contoso.com /ps siteserver1.contoso.com /sc ABC` 
 
 
@@ -116,16 +117,16 @@ ms.locfileid: "39383526"
 | `/sc <primary site code>` | 기본 사이트의 배포 지점에서 콘텐츠를 정리하는 경우에만 선택 사항입니다. 배포 지점이 속하는 기본 사이트의 사이트 코드를 지정합니다. |
 | `/log <log file directory>` | 도구가 로그 파일을 기록하는 위치를 지정합니다. 이 위치는 로컬 드라이브 또는 네트워크 공유일 수 있습니다.</br></br> 이 매개 변수를 사용하지 않는 경우 도구는 도구가 실행되는 컴퓨터의 사용자 임시 디렉터리에 로그 파일을 저장합니다.|
 
-#### <a name="example-delete-content"></a>예: 콘텐츠 삭제 
+#### <a name="example-delete-content"></a>예제: 콘텐츠 삭제 
 `ContentLibraryCleanup.exe /dp server1.contoso.com /delete`
 
-#### <a name="example-delete-content-without-prompts"></a>예: 확인 메시지 없이 콘텐츠 삭제
+#### <a name="example-delete-content-without-prompts"></a>예제: 확인 메시지 없이 콘텐츠 삭제
 `ContentLibraryCleanup.exe /q /dp server1.contoso.com /delete` 
 
-#### <a name="example-log-to-local-drive"></a>예: 로컬 드라이브에 로깅
+#### <a name="example-log-to-local-drive"></a>예제: 로컬 드라이브에 로깅
 `ContentLibraryCleanup.exe /dp server1.contoso.com /log C:\Users\Administrator\Desktop` 
 
-#### <a name="example-log-to-network-share"></a>예: 네트워크 공유에 로깅
+#### <a name="example-log-to-network-share"></a>예제: 네트워크 공유에 로깅
 `ContentLibraryCleanup.exe /dp server1.contoso.com /log \\server\share`
 
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 04536d51-3bf7-45e5-b4af-36ceed10583d
-ms.openlocfilehash: f59ca099325028ccf29904a2108939d0047df745
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.openlocfilehash: 80effa7ec3439925248e19dbf9d35efcf1694b8a
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52455951"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53419362"
 ---
 # <a name="deploy-software-updates"></a>소프트웨어 업데이트 배포  
 
@@ -98,13 +98,13 @@ ADR을 만든 후 규칙에 추가 배포를 추가합니다. 이 작업을 통�
 
 추가하는 각 새 배포의 특징  
 
--   ADR이 처음 실행될 때 생성되는 것과 같은 업데이트 그룹 및 패키지 사용  
--   다른 컬렉션을 대상으로 할 수 있음  
--   다음을 비롯한 고유 배포 속성 지원  
-   -   활성화 시간  
-   -   최종 기한  
-   -   사용자 환경  
-   -   각 배포에 대한 개별 경고  
+- ADR이 처음 실행될 때 생성되는 것과 같은 업데이트 그룹 및 패키지 사용  
+- 다른 컬렉션을 대상으로 할 수 있음  
+- 다음을 비롯한 고유 배포 속성 지원  
+  -   활성화 시간  
+  -   최종 기한  
+  -   사용자 환경  
+  -   각 배포에 대한 개별 경고  
 
 
 자세한 내용과 자세한 단계는 [소프트웨어 업데이트 자동 배포](automatically-deploy-software-updates.md)를 참조하세요.

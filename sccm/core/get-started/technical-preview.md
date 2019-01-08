@@ -2,7 +2,7 @@
 title: 기술 미리 보기 릴리스
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 새로운 기능과 기술을 시험 사용할 수 있는 기술 미리 보기 분기를 알아봅니다.
-ms.date: 12/03/2018
+ms.date: 12/14/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,16 +10,16 @@ ms.assetid: 9ce0a8cb-f96c-4e41-834c-59ceb54ce44a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 9381980f490d543b3018c206359d4a68b9ca69e4
-ms.sourcegitcommit: 6126dfdf5c879db7d12c3eec019a88fa44521361
+ms.openlocfilehash: d2c1e93378711a19b10f9b67fcaad9973e53ee2e
+ms.sourcegitcommit: d36e4c7082a5144e79035dd8847c8e741fa04667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830492"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53444640"
 ---
 # <a name="technical-preview-for-configuration-manager"></a>Configuration Manager에 대한 기술 미리 보기
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: System Center Configuration Manager(기술 미리 보기)*
 
 이 문서에서는 Configuration Manager의 월간 기술 미리 보기 분기를 자세히 설명합니다. 기술 미리 보기에서는 Microsoft가 작업하고 있는 새로운 기능을 소개합니다. Configuration Manager의 현재 분기에 아직 포함되지 않은 새로운 기능을 소개합니다. 이러한 기능은 최종적으로 현재 분기에 대한 업데이트에 포함될 수 있습니다. 기능을 마무리하기 전에 기능을 사용해 보고 피드백을 보내 주시기 바랍니다.  
 
@@ -104,7 +104,7 @@ Microsoft는 세 개의 연속 버전을 사용할 수 있을 때까지 각 기�
    
 릴리스 후 최대 1년 동안 기준 버전을 설치합니다. 새 기술 미리 보기 사이트를 설치할 때 현재 둘 이상의 기준 버전을 사용할 수 있는 경우 최신 기준 버전을 사용합니다.
 
--  **Technical Preview 버전 1810.2**: Configuration Manager Technical Preview 버전 1810.2는 콘솔 내 업데이트와 새로운 기준 버전으로 모두 제공됩니다. [TechNet 평가 센터에서](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection-technical-preview) 기준 버전을 다운로드합니다.
+-  **기술 미리 보기 버전 1810.2**: Configuration Manager 기술 미리 보기 버전 1810.2는 콘솔 내 업데이트와 새 기준 버전으로 사용할 수 있습니다. [TechNet 평가 센터에서](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection-technical-preview) 기준 버전을 다운로드합니다.
 
 
 
@@ -124,15 +124,15 @@ Microsoft는 세 개의 연속 버전을 사용할 수 있을 때까지 각 기�
 
 <!-- This is the full list of new features in the latest TP release -->
 
-### <a name="technical-preview-version-1811"></a>기술 미리 보기 버전 1811
+### <a name="technical-preview-version-1812"></a>기술 미리 보기 버전 1812
 
-<!--capabilities-in-technical-preview-1811.md#bkmk_anchor-->
+<!--capabilities-in-technical-preview-1812.md#bkmk_anchor-->
 
-- [Windows PowerShell 프로필을 로드하지 마십시오.](capabilities-in-technical-preview-1811.md#bkmk_noprofile) <!--1359239-->
-- [Intune 연결이 온-프레미스 MDM에 필요하지 않음](capabilities-in-technical-preview-1811.md#bkmk_opmdm) <!--1359124-->
-- [Configuration Manager 콘솔 알림](capabilities-in-technical-preview-1811.md#bkmk_notify) <!--1318035-->
-- [작업 순서 미디어 만들기의 향상된 기능](capabilities-in-technical-preview-1811.md#bkmk_tsmedia) <!--1359388-->
-- [PowerShell 스크립트 실행 작업 순서 단계의 향상된 기능](capabilities-in-technical-preview-1811.md#bkmk_posh) <!--1359389-->
+- [향상된 PowerShell 스크립트 실행 작업 순서 단계 기능](capabilities-in-technical-preview-1812.md#bkmk_posh) <!--3556028 fka 1359389-->  
+- [향상된 이메일을 통한 애플리케이션 승인 기능](capabilities-in-technical-preview-1812.md#bkmk_email) <!--3594063-->  
+- [소프트웨어 센터에서 사용자 디바이스 선호도 구성](capabilities-in-technical-preview-1812.md#bkmk_uda) <!--3485366-->  
+- [향상된 Configuration Manager 콘솔 기능](capabilities-in-technical-preview-1812.md#bkmk_console) <!--3594151-->  
+- [커뮤니티 허브에서 보고서 다운로드](capabilities-in-technical-preview-1812.md#bkmk_hub)<!--3555936-->  
 
 
 > [!Note]  
@@ -151,6 +151,11 @@ Then remove the bottom of this list and/or move individual items not in CB to th
 
  | 기능 | 기술 미리 보기 버전 | 현재 분기 버전 |  
  |---------|---------------------------|------------------------|
+ | Windows PowerShell 프로필 로드 안 함<!--1359239--> | [기술 미리 보기 1811](capabilities-in-technical-preview-1811.md#bkmk_noprofile) | ![추가되지 않음](media/Red_X.gif) | 
+ | Intune 연결이 온-프레미스 MDM에 필요하지 않음 <!--1359124--> | [기술 미리 보기 1811](capabilities-in-technical-preview-1811.md#bkmk_opmdm) | ![추가되지 않음](media/Red_X.gif) | 
+ | Configuration Manager 콘솔 알림 <!--1318035--> | [기술 미리 보기 1811](capabilities-in-technical-preview-1811.md#bkmk_notify) | ![추가되지 않음](media/Red_X.gif) | 
+ | 향상된 작업 순서 미디어 만들기 기능 <!--1359388--> | [기술 미리 보기 1811](capabilities-in-technical-preview-1811.md#bkmk_tsmedia) | ![추가되지 않음](media/Red_X.gif) | 
+ | 향상된 PowerShell 스크립트 실행 작업 순서 단계 기능 <!--1359389--> | [기술 미리 보기 1811](capabilities-in-technical-preview-1811.md#bkmk_posh) | ![추가되지 않음](media/Red_X.gif) | 
  | 컬렉션 평가의 개선 사항 <!--1358981--> | [기술 미리 보기 1810.2](capabilities-in-technical-preview-1810-2.md#bkmk_colleval) | 버전 1810 | 
  | Configuration Manager 관리자 인증 <!--1357013--> | [기술 미리 보기 1810.2](capabilities-in-technical-preview-1810-2.md#bkmk_auth) | 버전 1810 | 
  | 피어 캐시 원본 클라이언트 버전의 관리 인사이트 규칙 <!--1358008--> | [기술 미리 보기 1810.2](capabilities-in-technical-preview-1810-2.md#bkmk_insights) | 버전 1810 | 
@@ -169,10 +174,6 @@ Then remove the bottom of this list and/or move individual items not in CB to th
  | 콘솔 내 설명서 대시보드 <!--1357546--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_doc-dashboard) | ![추가되지 않음](media/Red_X.gif) | 
  | 드라이버 유지 관리 기능 개선 <!--1358270--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_drivers) | 버전 1810 | 
  | 기존 디바이스에 대한 Windows Autopilot의 작업 순서 지원 <!--1358333--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_autopilot) | 버전 1810 | 
- | 향상된 CMPivot 기능<!--1359068--> | [Tech Preview 1809](capabilities-in-technical-preview-1809.md#bkmk_cmpivot) | 버전 1810 | 
- | 향상된 수명 주기 대시보드 기능 <!--1358702--> | [Tech Preview 1809](capabilities-in-technical-preview-1809.md#bkmk_lifecycle) | 버전 1810 | 
- | 향상된 데이터 웨어하우스 기능 <!--1358870--> | [Tech Preview 1809](capabilities-in-technical-preview-1809.md#bkmk_dataw) | 버전 1810 | 
- | 향상된 소프트웨어 업데이트에 대한 유지 관리 기간 기능 <!--vso2839307--> | [Tech Preview 1809](capabilities-in-technical-preview-1809.md#bkmk_sum-mw) | 버전 1810 | 
 
 
 

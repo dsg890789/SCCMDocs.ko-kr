@@ -10,12 +10,12 @@ ms.assetid: 9e447e34-0943-49ed-b6ba-3efebf3566c1
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 425ab566b5ddbfaad775d61609c0a4ccd98e96d0
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 277881aab8a6d971c110b6ddd5b3dd34aae8fe7a
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32348568"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53420161"
 ---
 # <a name="prepare-for-unknown-computer-deployments-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 알 수 없는 컴퓨터 배포 준비
 
@@ -23,19 +23,19 @@ ms.locfileid: "32348568"
 
 이 항목의 정보를 통해 System Center Configuration Manager 환경에서 알 수 없는 컴퓨터에 운영 체제를 배포합니다. 알 수 없는 컴퓨터는 Configuration Manager에서 관리되지 않는 컴퓨터입니다. 따라서 Configuration Manager 데이터베이스에 이러한 컴퓨터의 레코드가 없습니다. 알 수 없는 컴퓨터는 다음과 같습니다.  
 
--   Configuration Manager 클라이언트가 설치되지 않은 컴퓨터  
+- Configuration Manager 클라이언트가 설치되지 않은 컴퓨터  
 
--   Configuration Manager로 가져오지 않은 컴퓨터  
+- Configuration Manager로 가져오지 않은 컴퓨터  
 
--   Configuration Manager에서 검색되지 않은 컴퓨터  
+- Configuration Manager에서 검색되지 않은 컴퓨터  
 
- 다음과 같은 배포 방법을 사용하여 알 수 없는 컴퓨터에 운영 체제를 배포할 수 있습니다.  
+  다음과 같은 배포 방법을 사용하여 알 수 없는 컴퓨터에 운영 체제를 배포할 수 있습니다.  
 
--   [PXE를 사용하여 네트워크를 통해 Windows 배포](../deploy-use/use-pxe-to-deploy-windows-over-the-network.md)  
+- [PXE를 사용하여 네트워크를 통해 Windows 배포](../deploy-use/use-pxe-to-deploy-windows-over-the-network.md)  
 
--   [부팅 가능한 미디어를 사용하여 운영 체제 배포](../deploy-use/create-bootable-media.md)  
+- [부팅 가능한 미디어를 사용하여 운영 체제 배포](../deploy-use/create-bootable-media.md)  
 
--   [사전 준비된 미디어를 사용하여 운영 체제 배포](../deploy-use/create-prestaged-media.md)  
+- [사전 준비된 미디어를 사용하여 운영 체제 배포](../deploy-use/create-prestaged-media.md)  
 
 ## <a name="unknown-computer-deployment-workflow"></a>알 수 없는 컴퓨터 배포 워크플로  
  다음은 알 수 없는 컴퓨터에 운영 체제를 배포하기 위한 기본 워크플로입니다.  
@@ -52,15 +52,15 @@ ms.locfileid: "32348568"
 ## <a name="unknown-computer-installation-process"></a>알 수 없는 컴퓨터 설치 프로세스  
  컴퓨터가 PXE 또는 미디어에서 처음 시작되는 경우 Configuration Manager에서 Configuration Manager 데이터베이스에 해당 컴퓨터에 대한 레코드가 있는지 확인합니다. 레코드가 있는 경우 Configuration Manager는 이 레코드에 배포된 작업 순서가 있는지 확인합니다. 레코드가 없는 경우 Configuration Manager는 알 수 없는 컴퓨터 개체에 배포된 작업 순서가 있는지 확인합니다. 두 경우 모두 Configuration Manager에서 다음 작업 중 하나를 수행합니다.  
 
--   사용 가능한 작업 순서가 있는 경우 Configuration Manager에서 작업 순서를 실행할지 묻는 메시지가 표시됩니다.  
+- 사용 가능한 작업 순서가 있는 경우 Configuration Manager에서 작업 순서를 실행할지 묻는 메시지가 표시됩니다.  
 
--   필수 작업 순서가 있는 경우 Configuration Manager는 해당 작업 순서를 자동으로 실행합니다.  
+- 필수 작업 순서가 있는 경우 Configuration Manager는 해당 작업 순서를 자동으로 실행합니다.  
 
--   레코드에 대해 배포된 작업 순서가 없는 경우 Configuration Manager는 대상 컴퓨터에 대해 배포된 작업 순서가 없다는 오류를 생성합니다.  
+- 레코드에 대해 배포된 작업 순서가 없는 경우 Configuration Manager는 대상 컴퓨터에 대해 배포된 작업 순서가 없다는 오류를 생성합니다.  
 
- 알 수 없는 컴퓨터가 시작되면 Configuration Manager는 해당 컴퓨터를 알 수 없는 컴퓨터가 아닌 프로비전 안 된 컴퓨터로 인식합니다. 따라서 이 컴퓨터는 이제 알 수 없는 컴퓨터 개체에 배포되었던 작업 순서를 수신할 수 있습니다. 그런 다음 배포된 작업 순서에서는 Configuration Manager 클라이언트가 포함된 운영 체제 이미지를 설치합니다.  
+  알 수 없는 컴퓨터가 시작되면 Configuration Manager는 해당 컴퓨터를 알 수 없는 컴퓨터가 아닌 프로비전 안 된 컴퓨터로 인식합니다. 따라서 이 컴퓨터는 이제 알 수 없는 컴퓨터 개체에 배포되었던 작업 순서를 수신할 수 있습니다. 그런 다음 배포된 작업 순서에서는 Configuration Manager 클라이언트가 포함된 운영 체제 이미지를 설치합니다.  
 
- Configuration Manager 클라이언트가 설치되면 컴퓨터의 레코드가 만들어지고 이 컴퓨터는 해당 Configuration Manager 컬렉션에 표시됩니다. 컴퓨터에 운영 체제 이미지 또는 Configuration Manager 클라이언트를 설치하지 못한 경우 컴퓨터에 대한 "알 수 없는" 레코드가 만들어지고 이 컴퓨터는 **모든 시스템** 컬렉션에 표시됩니다.  
+  Configuration Manager 클라이언트가 설치되면 컴퓨터의 레코드가 만들어지고 이 컴퓨터는 해당 Configuration Manager 컬렉션에 표시됩니다. 컴퓨터에 운영 체제 이미지 또는 Configuration Manager 클라이언트를 설치하지 못한 경우 컴퓨터에 대한 "알 수 없는" 레코드가 만들어지고 이 컴퓨터는 **모든 시스템** 컬렉션에 표시됩니다.  
 
 > [!NOTE]  
 >  운영 체제 이미지를 설치하는 동안 작업 순서는 이 컴퓨터에서 컬렉션 변수를 검색할 수 있지만 컴퓨터 변수는 검색할 수 없습니다.  

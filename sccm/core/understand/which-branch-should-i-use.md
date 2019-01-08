@@ -10,12 +10,12 @@ ms.assetid: a3be4f8f-3d44-4e3c-9fa1-e85f30a36e72
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4331ec4120141ab9aa20301b9a99c3c6ebeef568
-ms.sourcegitcommit: 0305e710f634529793ae73e5aac24168ee4fe02f
+ms.openlocfilehash: 35e1675e74b0df768d143441fa4cbb2dda47affc
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37042748"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53418230"
 ---
 # <a name="which-branch-of-configuration-manager-should-i-use"></a>사용해야 하는 Configuration Manager 분기
 
@@ -43,11 +43,11 @@ Microsoft는 1년에 몇 차례 System Center Configuration Manager 현재 분�
 
 기준 미디어를 사용하여 현재 분기의 평가판 버전으로 새 사이트를 설치할 수도 있습니다. 평가판은 라이선스가 필요하지 않습니다. 180일 평가판을 사용할 수 있습니다. 현재 분기의 라이선스 버전으로 업그레이드를 지원합니다. 평가판만 설치하려면 [TechNet 평가 센터](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection)에서 가져옵니다.
 
->  [!NOTE]  
+> [!NOTE]
 > 기준 미디어를 사용하여 새 Configuration Manager 계층 구조의 사이트를 설치합니다. 기준 버전을 이전에 설치한 경우 콘솔 내 업데이트를 사용하여 새 버전으로 사이트를 업데이트합니다.  
->  
+> 
 > 콘솔 내 업데이트를 사용하여 업데이트된 사이트는 기준 미디어를 사용하여 설치된 새 사이트와 같습니다.
->
+> 
 > 자세한 내용은 [System Center Configuration Manager용 업데이트](/sccm/core/servers/manage/updates)를 참조하세요.  
 
 

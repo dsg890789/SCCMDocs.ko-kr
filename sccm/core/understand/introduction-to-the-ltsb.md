@@ -10,12 +10,12 @@ ms.assetid: 694bc29f-a7fd-4e06-815a-1a9c5e9ac563
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 20151eeac8a0a430b38ce9537748e0fef019df64
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 446a5fa47cdf55060b960d8846c913cbafc78da8
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32338077"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53415860"
 ---
 # <a name="introduction-to-the-long-term-servicing-branch-of-system-center-configuration-manager"></a>System Center Configuration Manager의 장기 서비스 분기 소개
 
@@ -49,17 +49,17 @@ LTSB에서는 이러한 기능에 대한 지원을 사용할 수 없어도 일�
 ## <a name="find-documentation-for-the-ltsb"></a>LTSB에 대한 문서 찾기
 LTSB는 현재 분기 버전 1606을 기반으로 합니다. 제품 설명서는 [현재 분기 설명서](https://docs.microsoft.com/sccm/)를 사용하며 여기에는 LTSB에만 해당하는 주의 사항과 제한 사항이 있습니다. 이러한 주의 사항과 제한 사항은 다음 온라인 항목에서 확인할 수 있습니다.
 
--     [장기 서비스 분기 소개](introduction-to-the-ltsb.md): (이 항목)
--     [장기 서비스 분기 설치](install-the-ltsb.md)
--     [장기 서비스 분기를 현재 분기로 업그레이드](convert-to-current-branch.md)
--     [장기 서비스 분기에 대해 지원되는 구성](supported-configurations-for-ltsb.md)
--   [Configuration Manager의 장기 서비스 분기 관리](manage-the-ltsb.md)
+- [장기 서비스 분기 소개](introduction-to-the-ltsb.md): (이 항목)
+- [장기 서비스 분기 설치](install-the-ltsb.md)
+- [장기 서비스 분기를 현재 분기로 업그레이드](convert-to-current-branch.md)
+- [장기 서비스 분기에 대해 지원되는 구성](supported-configurations-for-ltsb.md)
+- [Configuration Manager의 장기 서비스 분기 관리](manage-the-ltsb.md)
 
 LTSB에 대한 현재 분기 설명서를 참조할 때 버전 1606에 적용되는 세부 정보가 LTSB에도 적용됩니다. 버전 1610 이상에 소개된 기능이나 세부 정보는 LTSB에서 지원하지 않습니다.
 
 
 ## <a name="licensing-overview-for-the-ltsb"></a>LTSB에 대한 라이선스 개요   
-2016년 10월 1일 당시 System Center Configuration Manager 라이선스에 활성 SA(Software Assurance)가 있거나 이와 동등한 구독 권한이 있는 고객은 System Center Configuration Manager의 2016년 10월 버전 1606 릴리스를 사용할 수 있습니다. 2016년 10월 1일 이후에 System Center Configuration Manager에 대한 권한이 있는 고객은 설치 시 현재 분기 및 LTSB(장기 서비스 분기)라는 두 가지 사용이 허가된 옵션을 사용할 수 있습니다.
+2016년 10월 1일 당시 System Center Configuration Manager 라이선스에 활성 SA(Software Assurance)가 있거나 이와 동등한 구독 권한이 있는 고객은 System Center Configuration Manager의 2016년 10월 버전 1606 릴리스를 사용할 수 있습니다. 2016년 10월 1일 이후에 System Center Configuration Manager에 대한 권한이 있는 고객에게는 설치 시 다음 두 가지 사용이 허가된 옵션이 있습니다. 현재 분기 및 LTSB(장기 서비스 분기).
 
 System Center Configuration Manager에 대한 영구적인 권한이 있거나 10월 1일 이후에 SA 또는 구독 경과를 허용하는 고객은 경과 당시 최신 버전인 System Center Configuration Manager LTSB 버전을 설치할 수 있습니다.
 

@@ -10,12 +10,12 @@ ms.assetid: e83a7b0d-b381-4b4a-8eca-850385abbebb
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: ad76140285df1c0125fcd2efab0f4794ed4881bf
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.openlocfilehash: 5e20985ac8fc39f2384cee5d202e19fc69e2b348
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52455950"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53414687"
 ---
 # <a name="co-management-dashboard-in-configuration-manager"></a>Configuration Manager의 공동 관리 대시보드
 
@@ -39,7 +39,7 @@ Configuration Manager 콘솔에서 **모니터링** 작업 영역으로 이동�
 *버전 1802 및 1806에 적용*
 
 환경 전체에서 공동 관리형 디바이스의 백분율을 표시합니다.
- ![공동 관리형 디바이스 타일](media\co-management-dashboard\Percent-Co-managed-graph.PNG)
+ ![공동 관리형 디바이스 타일](media/co-management-dashboard/Percent-Co-managed-graph.PNG)
 
 
 ### <a name="client-os-distribution"></a>클라이언트 OS 배포
@@ -55,7 +55,7 @@ OS당 클라이언트 디바이스의 수를 버전별로 표시합니다. 다�
     > Windows 10, 1709 이상 버전은 공동 관리에 필수 구성 요소입니다.  
 
 그래프 섹션을 마우스로 가리키면 OS 그룹에서 디바이스의 백분율이 표시됩니다.
- ![클라이언트 OS 배포 타일](media\co-management-dashboard\Co-management-OS-distribution-graph.PNG)
+ ![클라이언트 OS 배포 타일](media/co-management-dashboard/Co-management-OS-distribution-graph.PNG)
 
 
 ### <a name="co-management-status-donut"></a>공동 관리 상태(도넛형)
@@ -65,13 +65,13 @@ OS당 클라이언트 디바이스의 수를 버전별로 표시합니다. 다�
 다음 범주에 디바이스의 성공 또는 실패에 대한 분석 결과를 표시합니다.
 - 성공, 하이브리드 Azure AD 조인됨  
 - 성공, Azure AD 조인됨  
-- 실패: 자동 등록 실패함  
+- 실패: 자동 등록 실패  
 
 그래프 섹션을 마우스로 가리키면 해당 범주에서 디바이스의 백분율이 표시됩니다. 
- ![공동 관리 상태(도넛형) 타일](media\co-management-dashboard\Co-management-status-graph.PNG)
+ ![공동 관리 상태(도넛형) 타일](media/co-management-dashboard/Co-management-status-graph.PNG)
 
 해당 범주에 대한 디바이스 목록을 보려면 그래프 섹션을 선택합니다.
- ![등록 실패 디바이스 목록](media\co-management-dashboard\Enrollment-Failure_Device-List.PNG)
+ ![등록 실패 디바이스 목록](media/co-management-dashboard/Enrollment-Failure_Device-List.PNG)
 
 
 ### <a name="co-management-status-funnel"></a>공동 관리 상태(깔대기형)
@@ -84,7 +84,7 @@ OS당 클라이언트 디바이스의 수를 버전별로 표시합니다. 다�
 - 등록이 시작됨  
 - 등록됨  
 
-![공동 관리 상태(깔대기형) 타일](media\co-management-dashboard\1358980-status-funnel.png)
+![공동 관리 상태(깔대기형) 타일](media/co-management-dashboard/1358980-status-funnel.png)
 
 
 ### <a name="co-management-enrollment-status"></a>공동 관리 등록 상태
@@ -101,7 +101,7 @@ OS당 클라이언트 디바이스의 수를 버전별로 표시합니다. 다�
 
 타일에서 상태를 선택하여 해당 상태의 디바이스 목록으로 드릴스루합니다.  
 
-![공동 관리 등록 상태 타일](media\co-management-dashboard\1358980-enrollment-status.png)
+![공동 관리 등록 상태 타일](media/co-management-dashboard/1358980-enrollment-status.png)
 
 
 ### <a name="enrollment-errors"></a>등록 오류
@@ -118,13 +118,13 @@ OS당 클라이언트 디바이스의 수를 버전별로 표시합니다. 다�
 사용 가능한 워크로드에 대해 Microsoft Intune으로 전환한 디바이스 수를 포함한 가로 막대형 차트를 표시합니다. (워크로드의 목록은 Configuration Manager의 버전에 따라 달라집니다. 자세한 내용은 [Intune으로 전환될 수 있는 워크로드](/sccm/core/clients/manage/co-management-switch-workloads#workloads-able-to-be-transitioned-to-intune)를 참조하세요.)
 
 차트 섹션을 마우스로 가리키면 워크로드에 대해 전환된 디바이스 수가 표시됩니다. 
- ![워크로드 전환 막대 그래프](media\co-management-dashboard\Workload-Transition.PNG)
+ ![워크로드 전환 막대 그래프](media/co-management-dashboard/Workload-Transition.PNG)
 
 
 ## <a name="next-steps"></a>다음 단계
 
 공동 관리에 대한 자세한 내용은 다음을 참조하세요.
- - [Windows 10 장치에 대한 공동 관리](/sccm/core/clients/manage/co-management-overview)
- - [공동 관리를 위해 Windows 10 장치 준비](/sccm/core/clients/manage/co-management-prepare)
+ - [Windows 10 디바이스에 대한 공동 관리](/sccm/core/clients/manage/co-management-overview)
+ - [공동 관리를 위한 Windows 10 디바이스 준비](/sccm/core/clients/manage/co-management-prepare)
 
     

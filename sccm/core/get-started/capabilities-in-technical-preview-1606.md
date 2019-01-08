@@ -10,12 +10,12 @@ ms.assetid: 134a2f60-811e-4dc9-a8f5-1ce0018c5c12
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: f3ee48d60c46def5daef25a2f3654e8a79a0e9e1
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 14e982592491ec5e8a10cd3313f748bddac40cff
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32339862"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53420077"
 ---
 # <a name="capabilities-in-technical-preview-1606-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1606의 기능
 
@@ -33,30 +33,30 @@ ms.locfileid: "32339862"
 
 **다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.**  
 
-## <a name="dmp_category"></a> 컬렉션으로 장치 자동 분류
+## <a name="dmp_category"></a> 컬렉션으로 디바이스 자동 분류
 Microsoft Intune에서 Configuration Manager를 사용하는 경우 디바이스 컬렉션에 디바이스를 자동으로 배치하는 데 사용할 수 있는 디바이스 범주를 만들 수 있습니다. 그런 다음 사용자는 Intune에 디바이스를 등록할 때 디바이스 범주를 선택해야 합니다. 또한 Configuration Manager 콘솔에서 디바이스의 범주를 변경할 수 있습니다.
 
-**중요:** 이 기능은 Microsoft Intune의 **2016년 6월** 릴리스에서 작동합니다. 이러한 절차를 시도하기 전에 이 릴리스로 업데이트했는지 확인합니다.
+**중요:** 이 기능은 Microsoft Intune의 **2016년 6월** 릴리스에 작동합니다. 이러한 절차를 시도하기 전에 이 릴리스로 업데이트했는지 확인합니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 
 ### <a name="create-a-set-of-device-categories"></a>디바이스 범주 집합 만들기
 1.  Configuration Manager 콘솔의 **자산 및 준수** 작업 영역에서 **개요**를 확장한 다음 **디바이스 컬렉션**을 클릭합니다.
-2.  **홈** 탭의 **범주** 그룹에서 **장치 범주 관리**를 클릭합니다.
-3.  **장치 범주 관리** 대화 상자에서 범주를 만들거나 편집하거나 제거할 수 있습니다. 새 범주를 만들어 보세요.
+2.  **홈** 탭의 **범주** 그룹에서 **디바이스 범주 관리**를 클릭합니다.
+3.  **디바이스 범주 관리** 대화 상자에서 범주를 만들거나 편집하거나 제거할 수 있습니다. 새 범주를 만들어 보세요.
 
 ### <a name="associate-a-collection-with-a-device-category"></a>컬렉션을 디바이스 범주에 연결
 컬렉션을 디바이스 범주에 연결하면 지정하는 범주의 모든 디바이스가 해당 컬렉션에 추가됩니다.
 1.  디바이스 컬렉션의 **속성** 대화 상자에서 **규칙 추가** > **디바이스 범주 규칙**을 클릭합니다.
-2.  **장치 범주 멤버 관리 규칙 만들기** 대화 상자에서 컬렉션의 모든 장치에 적용될 범주를 선택합니다.
-3.  **장치 범주 멤버 관리 규칙 만들기** 대화 상자와 컬렉션 속성 대화 상자를 닫습니다.
+2.  **디바이스 범주 멤버 관리 규칙 만들기** 대화 상자에서 컬렉션의 모든 디바이스에 적용될 범주를 선택합니다.
+3.  **디바이스 범주 멤버 관리 규칙 만들기** 대화 상자와 컬렉션 속성 대화 상자를 닫습니다.
 
 ### <a name="change-the-category-of-a-device"></a>디바이스의 범주 변경
 1.  Configuration Manager 콘솔의 **자산 및 준수** 작업 영역에서 **개요**를 확장한 다음 **디바이스**를 클릭합니다.
-2.  **장치** 목록에서 장치를 선택한 다음 **홈** 탭의 **장치** 그룹에서 **범주 변경**을 클릭합니다.
-3.  **장치 범주 편집** 대화 상자에서 이 장치에 적용할 범주를 선택한 다음 **확인**을 클릭합니다.
+2.  **디바이스** 목록에서 디바이스를 선택한 다음 **홈** 탭의 **디바이스** 그룹에서 **범주 변경**을 클릭합니다.
+3.  **디바이스 범주 편집** 대화 상자에서 이 디바이스에 적용할 범주를 선택한 다음 **확인**을 클릭합니다.
 
-## <a name="dmp_grace"></a> 필수 응용 프로그램 및 소프트웨어 업데이트 배포를 위한 유예 기간 적용
+## <a name="dmp_grace"></a> 필수 애플리케이션 및 소프트웨어 업데이트 배포를 위한 유예 기간 적용
 
 간혹 구성한 마감일 이후에도 필수 애플리케이션 배포 또는 소프트웨어 업데이트를 설치할 수 있는 시간을 사용자에게 더 제공하고 싶을 경우가 있습니다. 컴퓨터가 오랫동안 꺼져 있었거나 많은 애플리케이션 또는 업데이트 배포를 설치해야 할 때 이런 경우가 필요할 수 있습니다.
 예를 들어 최종 사용자가 휴가에서 막 돌아온 경우 지연된 애플리케이션 배포를 설치하는 데 너무 오래 기다려야 할 수 있습니다.
@@ -98,8 +98,8 @@ Configuration Manager에서 Device Guard를 사용하는 방법에 대한 추가
 - [Device Guard 인증 및 규정 준수](https://technet.microsoft.com/itpro/windows/keep-secure/device-guard-certification-and-compliance)
 - [Device Guard 배포 가이드](https://technet.microsoft.com/itpro/windows/keep-secure/device-guard-deployment-guide)
 
- ##  <a name="dmp_onprem"></a> 온-프레미스 모바일 장치 관리에 대한 여러 장치 관리 지점  
- Technical Preview 1606에서 온\-프레미스 MDM(모바일 디바이스 관리)은 둘 이상의 디바이스 관리 지점을 사용할 수 있도록 등록된 디바이스를 자동으로 구성하는 Windows 10 1주년 업데이트의 새로운 기능을 지원합니다. 이 기능을 통해 디바이스는 사용 중인 디바이스 관리 지점을 사용할 수 없게 되면 다른 디바이스 관리 지점으로 대체할 수 있습니다. 이 기능은 Windows 10 1주년 업데이트가 설치된 PC에서만 작동합니다.  
+  ##  <a name="dmp_onprem"></a> 온-프레미스 모바일 디바이스 관리에 대한 여러 디바이스 관리 지점  
+  Technical Preview 1606에서 온\-프레미스 MDM(모바일 디바이스 관리)은 둘 이상의 디바이스 관리 지점을 사용할 수 있도록 등록된 디바이스를 자동으로 구성하는 Windows 10 1주년 업데이트의 새로운 기능을 지원합니다. 이 기능을 통해 디바이스는 사용 중인 디바이스 관리 지점을 사용할 수 없게 되면 다른 디바이스 관리 지점으로 대체할 수 있습니다. 이 기능은 Windows 10 1주년 업데이트가 설치된 PC에서만 작동합니다.  
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기  
 

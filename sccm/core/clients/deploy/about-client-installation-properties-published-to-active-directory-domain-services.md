@@ -10,12 +10,12 @@ ms.assetid: 101d7d4d-92db-419d-b2ae-3c1c1dea68e9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 46ede93e8366b4ae387f7e04b83dcb33ce854c5e
-ms.sourcegitcommit: 3dfe3f4401651afa9dc65d14a8944ae4e4198b3e
+ms.openlocfilehash: dccd893cc4a22fddf09598376bdcd05b091e6c2c
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48862518"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53421555"
 ---
 # <a name="about-client-installation-properties-published-to-active-directory-domain-services"></a>Active Directory Domain Services에 게시된 클라이언트 설치 속성 정보
 
@@ -35,29 +35,29 @@ System Center Configuration Manager용으로 Active Directory 스키마를 확�
 ## <a name="client-installation-properties-published-to-active-directory-domain-services"></a>Active Directory Domain Services에 게시된 클라이언트 설치 속성  
 아래 목록에는 클라이언트 설치 속성이 나와 있습니다. 아래 나열된 각 항목에 대한 자세한 내용은 [System Center Configuration Manager의 클라이언트 설치 속성 정보](../../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  
 
--   Configuration Manager 사이트 코드  
+- Configuration Manager 사이트 코드  
 
--   사이트 서버 서명 인증서  
+- 사이트 서버 서명 인증서  
 
--   신뢰할 수 있는 루트 키  
+- 신뢰할 수 있는 루트 키  
 
--   HTTP 및 HTTPS용 클라이언트 통신 포트  
+- HTTP 및 HTTPS용 클라이언트 통신 포트  
 
--   대체 상태 지점. 사이트에 대체 상태 지점이 여러 개 있는 경우 설치된 첫 번째 상태 지점만 Active Directory Domain Services에 게시됩니다.  
+- 대체 상태 지점. 사이트에 대체 상태 지점이 여러 개 있는 경우 설치된 첫 번째 상태 지점만 Active Directory Domain Services에 게시됩니다.  
 
--   클라이언트가 HTTPS만 사용하여 통신해야 함을 나타내는 설정  
+- 클라이언트가 HTTPS만 사용하여 통신해야 함을 나타내는 설정  
 
--   PKI 인증서에 관련된 설정:  
+- PKI 인증서에 관련된 설정:  
 
-   -   클라이언트 PKI 인증서를 사용할 것인지 여부  
+  -   클라이언트 PKI 인증서를 사용할 것인지 여부  
 
-   -   인증서 선택을 위한 선택 조건. 클라이언트에 Configuration Manager용으로 사용할 수 있는 유효한 PKI 인증서가 여러 개 있으면 이 조건이 필요할 수 있습니다.  
+  -   인증서 선택을 위한 선택 조건. 클라이언트에 Configuration Manager용으로 사용할 수 있는 유효한 PKI 인증서가 여러 개 있으면 이 조건이 필요할 수 있습니다.  
 
-   -   인증서 선택 프로세스 후에도 클라이언트에 유효한 인증서가 여러 개 있는 경우 사용할 인증서를 결정하기 위한 설정  
+  -   인증서 선택 프로세스 후에도 클라이언트에 유효한 인증서가 여러 개 있는 경우 사용할 인증서를 결정하기 위한 설정  
 
-   -   신뢰할 수 있는 루트 CA 인증서 목록이 포함된 인증서 발급자 목록  
+  -   신뢰할 수 있는 루트 CA 인증서 목록이 포함된 인증서 발급자 목록  
 
--   **클라이언트 강제 설치 속성** 대화 상자의 **클라이언트** 탭에서 지정되는 client.msi 설치 속성
+- **클라이언트 강제 설치 속성** 대화 상자의 **클라이언트** 탭에서 지정되는 client.msi 설치 속성
 
 다음 방법 중 하나를 사용하여 다른 속성이 지정되지 않은 경우에만 클라이언트 설치(CCMSetup)에서 Active Directory Domain Services에 게시되는 속성을 사용합니다.  
 

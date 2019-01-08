@@ -10,12 +10,12 @@ ms.technology: configmgr-sum
 ms.assetid: 1a997c30-8e71-4be5-89ee-41efb2c8d199
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: da6204a78ce45c72d2b8d5586d02c8692405f295
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: d3155faaa0ccad4e4f98ee72d09f67b1676dc2f4
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32350428"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53421861"
 ---
 # <a name="synchronize-software-updates-from-a-disconnected-software-update-point"></a>연결이 끊긴 소프트웨어 업데이트 지점에서 소프트웨어 업데이트 동기화  
 
@@ -52,11 +52,11 @@ ms.locfileid: "32350428"
 
 #### <a name="to-copy-local-files-from-the-export-server-to-the-disconnected-software-update-point-server"></a>내보내기 서버에서 연결이 끊긴 소프트웨어 업데이트 지점 서버로 로컬 파일을 복사하려면  
 
-1.  내보내기 서버에서 소프트웨어 업데이트 및 소프트웨어 업데이트를 위한 사용 조건이 저장된 폴더로 이동합니다. 기본적으로 WSUS 서버는 <*WSUS 설치 드라이브*>WSUS\WSUSContent\\에 파일을 저장합니다. 여기서 *WSUS 설치 드라이브*는 WSUS가 설치된 드라이브입니다.  
+1. 내보내기 서버에서 소프트웨어 업데이트 및 소프트웨어 업데이트를 위한 사용 조건이 저장된 폴더로 이동합니다. 기본적으로 WSUS 서버는 <*WSUS 설치 드라이브*>WSUS\WSUSContent\\에 파일을 저장합니다. 여기서 *WSUS 설치 드라이브*는 WSUS가 설치된 드라이브입니다.  
 
-2.  이 위치의 모든 파일과 폴더를 연결이 끊긴 소프트웨어 업데이트 지점 서버의 WSUSContent 폴더로 복사합니다.  
+2. 이 위치의 모든 파일과 폴더를 연결이 끊긴 소프트웨어 업데이트 지점 서버의 WSUSContent 폴더로 복사합니다.  
 
- 내보내기 서버의 WSUS 데이터베이스에서 소프트웨어 업데이트 메타데이터를 내보내려면 다음 절차를 수행하세요.  
+   내보내기 서버의 WSUS 데이터베이스에서 소프트웨어 업데이트 메타데이터를 내보내려면 다음 절차를 수행하세요.  
 
 #### <a name="to-export-software-updates-metadata-from-the-wsus-database-on-the-export-server"></a>내보내기 서버의 WSUS 데이터베이스에서 소프트웨어 업데이트 메타데이터를 내보내려면  
 
@@ -70,7 +70,7 @@ ms.locfileid: "32350428"
 
      **wsusutil.exe export export.cab export.log**  
 
-     이 형식은 다음과 같이 요약할 수 있습니다. WSUSutil.exe 뒤에 내보내기 옵션, 내보내기 작업 중에 만든 내보내기 .cab 파일 이름, 로그 파일 이름이 옵니다. WSUSutil.exe는 내보내기 서버에서 메타데이터를 내보내고 작업의 로그 파일을 만듭니다.  
+     이 형식은 다음과 같이 요약할 수 있습니다. WSUSutil.exe 뒤에 내보내기 옵션, 그 뒤에 내보내기 작업 중에 만든 내보내기 .cab 파일 이름, 그리고 그 뒤에 로그 파일 이름이 옵니다. WSUSutil.exe는 내보내기 서버에서 메타데이터를 내보내고 작업의 로그 파일을 만듭니다.  
 
     > [!NOTE]  
     >  현재 폴더에서 패키지(.cab 파일) 및 로그 파일 이름이 고유해야 합니다.  
@@ -98,7 +98,7 @@ ms.locfileid: "32350428"
 
      **wsusutil.exe import export.cab import.log**  
 
-     이 형식은 다음과 같이 요약할 수 있습니다. WSUSutil.exe 뒤에 import 명령, 내보내기 작업 중에 만든 패키지 파일(.cab) 이름, 패키지 파일의 경로(패키지 파일이 다른 폴더에 있는 경우) 및 로그 파일 이름이 옵니다. WSUSutil.exe는 내보내기 서버에서 메타데이터를 가져오고 작업의 로그 파일을 만듭니다.  
+     이 형식은 다음과 같이 요약할 수 있습니다. WSUSutil.exe 뒤에 import 명령, 그 뒤에 내보내기 작업 중에 만든 패키지 파일(.cab) 이름, 그 뒤에 패키지 파일의 경로(패키지 파일이 다른 폴더에 있는 경우), 그리고 그 뒤에 로그 파일 이름이 옵니다. WSUSutil.exe는 내보내기 서버에서 메타데이터를 가져오고 작업의 로그 파일을 만듭니다.  
 
 ## <a name="next-steps"></a>다음 단계
 처음으로 소프트웨어 업데이트를 동기화한 후 또는 새 분류나 제품을 사용할 수 있게 되면 [새 분류 및 제품을 구성](configure-classifications-and-products.md)하여 소프트웨어 업데이트를 새 기준과 동기화해야 합니다.

@@ -10,16 +10,16 @@ ms.assetid: cb405ba0-8792-4ab7-988b-2f835f3a9550
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 375c743e1094f3b3f52090ae520ee9d8e86acbe0
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 5500b7458935c83207a5e54f8fd1d4d7f40dc333
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32336972"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53421640"
 ---
 # <a name="capabilities-in-technical-preview-1707-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1707의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: System Center Configuration Manager(기술 미리 보기)*
 
 이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1707에서 사용 가능한 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대해 피드백 제공 방법 등에 익숙해져야 합니다.     
 
@@ -31,7 +31,7 @@ ms.locfileid: "32336972"
 -->
 
 **이 Technical Preview의 알려진 문제:**
--   **수동 모드인 사이트 서버를 보유한 경우 미리 보기 버전 1707에 대한 업데이트에 실패합니다**. 미리 보기 버전 1706을 실행하고 [수동 모드인 기본 사이트 서버](/sccm/core/get-started/capabilities-in-technical-preview-1706#site-server-role-high-availability)가 있는 경우 미리 보기 사이트를 1707 버전으로 성공적으로 업데이트하기 전에 수동 모드 사이트 서버를 제거해야 합니다. 사이트에서 1707 버전을 실행한 후에 수동 모드 사이트 서버를 다시 설치할 수 있습니다.
+- **수동 모드인 사이트 서버를 보유한 경우 미리 보기 버전 1707에 대한 업데이트에 실패합니다**. 미리 보기 버전 1706을 실행하고 [수동 모드인 기본 사이트 서버](/sccm/core/get-started/capabilities-in-technical-preview-1706#site-server-role-high-availability)가 있는 경우 미리 보기 사이트를 1707 버전으로 성공적으로 업데이트하기 전에 수동 모드 사이트 서버를 제거해야 합니다. 사이트에서 1707 버전을 실행한 후에 수동 모드 사이트 서버를 다시 설치할 수 있습니다.
 
   수동 모드 사이트 서버를 제거하려면
   1. 콘솔에서 **관리** > **개요** > **사이트 구성** > **서버 및 사이트 시스템 역할**로 이동한 다음 수동 모드 사이트 서버를 선택합니다.
@@ -54,12 +54,10 @@ ms.locfileid: "32336972"
 -->
 
 ## <a name="client-peer-cache-support-for-express-installation-files-for-windows-10-and-office-365"></a>Windows 10 및 Office 365에 대한 고속 설치 파일을 위한 클라이언트 피어 캐시 지원
-<!-- 1352486 -->
-이 릴리스부터 피어 캐시가 Windows 10 콘텐츠 고속 설치 파일과 Office 365 업데이트 파일 배포를 지원합니다. 추가 구성이 필요 없습니다.
+<!-- 1352486 --> 이 릴리스부터 피어 캐시가 Windows 10 콘텐츠 빠른 설치 파일과 Office 365 업데이트 파일 배포를 지원합니다. 추가 구성이 필요 없습니다.
 
 ## <a name="surface-device-dashboard"></a>Surface 디바이스 대시보드
-<!--1355788-->
-Surface 디바이스 대시보드는 사용자 환경에 있는 Surface 디바이스에 대한 정보를 제공합니다. 콘솔에서 **Surface 디바이스**  > **모니터링**으로 이동합니다. 다음을 볼 수 있습니다.
+<!--1355788--> Surface 디바이스 대시보드는 사용자 환경에 있는 Surface 디바이스에 대한 정보를 제공합니다. 콘솔에서 **Surface 디바이스**  > **모니터링**으로 이동합니다. 다음을 볼 수 있습니다.
 - Surfaces의 백분율
 - Surface 모델의 백분율
 - 상위 5개 운영 체제 버전
@@ -69,7 +67,7 @@ Surface 디바이스 대시보드는 사용자 환경에 있는 Surface 디바�
 ## <a name="configure-and-deploy-windows-defender-application-guard-policies"></a>Windows Defender Application Guard 정책 구성 및 배포
 <!-- 1351960 -->
 
-[Windows Defender Application Guard](https://blogs.windows.com/msedgedev/2016/09/27/application-guard-microsoft-edge/#XLxEbcpkuKcFebrw.97)는 운영 체제의 다른 부분에서 액세스할 수 없는 보안 격리된 컨테이너에서 신뢰할 수 없는 웹 사이트를 열어 사용자를 보호하는 새로운 Windows 기능입니다. 이 Technical Preview에서는 구성하는 Configuration Manager 준수 설정을 사용하여 이 기능을 구성한 다음 컬렉션에 배포하기 위한 지원이 추가되었습니다. 이 기능은 64비트 버전의 Windows 10 Fall Creator Update(코드명: RS3)에 대한 미리 보기에 릴리스될 예정입니다 . 이 기능을 지금 테스트하려면 이 업데이트의 미리 보기 버전을 사용하고 있어야 합니다.
+[Windows Defender Application Guard](https://blogs.windows.com/msedgedev/2016/09/27/application-guard-microsoft-edge/#XLxEbcpkuKcFebrw.97)는 운영 체제의 다른 부분에서 액세스할 수 없는 보안 격리된 컨테이너에서 신뢰할 수 없는 웹 사이트를 열어 사용자를 보호하는 새로운 Windows 기능입니다. 이 Technical Preview에서는 구성하는 Configuration Manager 준수 설정을 사용하여 이 기능을 구성한 다음 컬렉션에 배포하기 위한 지원이 추가되었습니다. 이 기능은 64비트 버전의 Windows 10 Fall Creator Update(코드명: RS3)에 대한 미리 보기에 릴리스될 예정입니다. 이 기능을 지금 테스트하려면 이 업데이트의 미리 보기 버전을 사용하고 있어야 합니다.
 
 ### <a name="before-you-start"></a>시작하기 전에
 

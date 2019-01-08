@@ -10,12 +10,12 @@ ms.assetid: d8d5c345-1e91-410b-b8a9-0170dcfa846e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 8a5f801edced78306316a63d125d9b90b37600b2
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 676131965165acda9633e7fbceaee7f25d823efe
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32349952"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53420382"
 ---
 # <a name="manage-user-state-in-system-center-configuration-manager"></a>System Center Configuration Manager의 사용자 상태 관리
 
@@ -23,13 +23,13 @@ ms.locfileid: "32349952"
 
 System Center Configuration Manager 작업 순서를 사용하여 현재 운영 체제의 사용자 상태를 보존하려는 운영 체제 배포 시나리오에서 사용자 상태 데이터를 캡처 및 복원할 수 있습니다. 예:  
 
--   배포 시 한 컴퓨터에서 사용자 상태를 캡처하여 다른 컴퓨터에서 복원  
+- 배포 시 한 컴퓨터에서 사용자 상태를 캡처하여 다른 컴퓨터에서 복원  
 
--   동일한 컴퓨터에서 사용자 상태를 캡처하고 복원할 수 있는 업데이트 배포  
+- 동일한 컴퓨터에서 사용자 상태를 캡처하고 복원할 수 있는 업데이트 배포  
 
- Configuration Manager에서는 USMT(사용자 상태 마이그레이션 도구) 10.0을 사용하여 운영 체제 설치가 완료된 후 원본 컴퓨터에서 대상 컴퓨터로의 사용자 상태 데이터 마이그레이션을 관리합니다. USMT 10.0에 대한 일반적인 마이그레이션 시나리오에 대해서는  [일반적인 마이그레이션 시나리오](https://technet.microsoft.com/library/mt299169\(v=vs.85\).aspx)를 참조하세요.  
+  Configuration Manager에서는 USMT(사용자 상태 마이그레이션 도구) 10.0을 사용하여 운영 체제 설치가 완료된 후 원본 컴퓨터에서 대상 컴퓨터로의 사용자 상태 데이터 마이그레이션을 관리합니다. USMT 10.0에 대한 일반적인 마이그레이션 시나리오에 대해서는  [일반적인 마이그레이션 시나리오](https://technet.microsoft.com/library/mt299169\(v=vs.85\).aspx)를 참조하세요.  
 
- 사용자 데이터를 캡처 및 복원하려면 다음 섹션을 참조하세요.
+  사용자 데이터를 캡처 및 복원하려면 다음 섹션을 참조하세요.
 
 
 ##  <a name="BKMK_StoringUserData"></a> 사용자 상태 데이터 저장  
@@ -81,23 +81,23 @@ System Center Configuration Manager 작업 순서를 사용하여 현재 운영 
 ##  <a name="BKMK_StateMigrationPoint"></a> Configure a state migration point  
  상태 마이그레이션 지점에서는 한 컴퓨터에서 캡처된 후 다른 컴퓨터에서 복원된 사용자 상태 데이터를 저장합니다. 그러나 대상 컴퓨터에서 운영 체제를 새로 고치는 배포와 같이 동일한 컴퓨터에서 운영 체제 배포에 대한 사용자 설정을 캡처하는 경우, 하드 링크를 사용하여 동일한 컴퓨터에 데이터를 저장하거나 상태 마이그레이션 지점에 데이터를 저장할 수 있습니다. 일부 컴퓨터 배포에 대해 상태 저장소를 만들 경우 Configuration Manager에서 이 상태 저장소와 대상 컴퓨터 간에 자동으로 연결을 만듭니다. 다음 방법을 사용하여 사용자 상태 데이터를 저장하도록 상태 마이그레이션 지점을 구성할 수 있습니다.  
 
--   **사이트 시스템 서버 만들기 마법사** 를 사용하여 상태 마이그레이션 지점을 위한 새 사이트 시스템 서버를 만듭니다.  
+- **사이트 시스템 서버 만들기 마법사** 를 사용하여 상태 마이그레이션 지점을 위한 새 사이트 시스템 서버를 만듭니다.  
 
--   **사이트 시스템 역할 추가 마법사** 를 사용하여 기존 서버에 상태 마이그레이션 지점을 추가합니다.  
+- **사이트 시스템 역할 추가 마법사** 를 사용하여 기존 서버에 상태 마이그레이션 지점을 추가합니다.  
 
- 이러한 마법사를 사용하는 경우 상태 마이그레이션 지점에 대한 다음 정보를 제공해야 합니다.  
+  이러한 마법사를 사용하는 경우 상태 마이그레이션 지점에 대한 다음 정보를 제공해야 합니다.  
 
--   사용자 상태 데이터를 저장하는 폴더  
+- 사용자 상태 데이터를 저장하는 폴더  
 
--   상태 마이그레이션 지점에 데이터를 저장할 수 있는 최대 클라이언트 수  
+- 상태 마이그레이션 지점에 데이터를 저장할 수 있는 최대 클라이언트 수  
 
--   상태 마이그레이션 지점이 사용자 상태 데이터를 저장하는 데 사용할 수 있는 최소 공간  
+- 상태 마이그레이션 지점이 사용자 상태 데이터를 저장하는 데 사용할 수 있는 최소 공간  
 
--   역할에 대한 삭제 정책. 사용자 상태 데이터가 컴퓨터에서 복원되고 나서 즉시 또는 특정 일수 후에 데이터를 삭제하도록 지정할 수 있습니다.  
+- 역할에 대한 삭제 정책. 사용자 상태 데이터가 컴퓨터에서 복원되고 나서 즉시 또는 특정 일수 후에 데이터를 삭제하도록 지정할 수 있습니다.  
 
--   상태 마이그레이션 지점이 사용자 상태 데이터를 복원하는 요청에만 응답하도록 할지 여부. 이 옵션을 사용하면 상태 마이그레이션 지점을 사용하여 사용자 상태 데이터를 저장할 수 없습니다.  
+- 상태 마이그레이션 지점이 사용자 상태 데이터를 복원하는 요청에만 응답하도록 할지 여부. 이 옵션을 사용하면 상태 마이그레이션 지점을 사용하여 사용자 상태 데이터를 저장할 수 없습니다.  
 
- 상태 마이그레이션 지점 및 구성 단계에 대한 자세한 내용은 [상태 마이그레이션 지점](prepare-site-system-roles-for-operating-system-deployments.md#BKMK_StateMigrationPoints)을 참조하세요.  
+  상태 마이그레이션 지점 및 구성 단계에 대한 자세한 내용은 [상태 마이그레이션 지점](prepare-site-system-roles-for-operating-system-deployments.md#BKMK_StateMigrationPoints)을 참조하세요.  
 
 ##  <a name="BKMK_ComputerAssociation"></a> Create a computer association  
  새 하드웨어에 운영 체제를 설치하고 사용자 데이터 설정을 캡처 및 복원하려면 원본 컴퓨터와 대상 컴퓨터 사이의 관계를 정의하는 컴퓨터 연결을 만듭니다. 원본 컴퓨터는 Configuration Manager가 관리하는 기존 컴퓨터입니다. 새 운영 체제를 대상 컴퓨터에 배포하는 경우 원본 컴퓨터에 대상 컴퓨터로 마이그레이션되는 사용자 상태가 포함됩니다.  

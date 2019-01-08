@@ -10,12 +10,12 @@ ms.assetid: 87f4e041-67df-4c61-aa98-7444faffe565
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 48eb4abcc328c57fdb35e3511e49500099a68cf2
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.openlocfilehash: 6f60d7f3a8c3bd81f4de38b2ce4080f54756de14
+ms.sourcegitcommit: c60e057075a83f07d1ca2577c3de1c7d7c8e9cec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52456484"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626466"
 ---
 # <a name="supported-os-versions-for-clients-and-devices-for-configuration-manager"></a>Configuration Manager의 클라이언트 및 디바이스에 대해 지원되는 OS 버전
 
@@ -44,7 +44,7 @@ ms.locfileid: "52456484"
 
 -   **Windows 8.1**(x86, x64): Professional, Enterprise    
 
--   **Windows 7 SP1**(x86, x64): Professional, Enterprise, Ultimate    
+-   **Windows 7 SP1**(x86, x64): Professional, Enterprise 및 Ultimate    
 
 
 ### <a name="supported-server-os-versions"></a>지원되는 서버 OS 버전
@@ -56,19 +56,19 @@ ms.locfileid: "52456484"
 
 -   **Windows Storage Server 2016**: Workgroup, Standard  
 
--   **Windows Server 2012 R2** (x64): Standard, Datacenter <sup>[참고 1](#bkmk_note1)</sup>    
+-   **Windows Server 2012 R2**(x64): Standard, Datacenter <sup>[참고 1](#bkmk_note1)</sup>    
 
 -   **Windows Storage Server 2012 R2**(x64)    
 
--   **Windows Server 2012** (x64): Standard, Datacenter <sup>[참고 1](#bkmk_note1)</sup>    
+-   **Windows Server 2012**(x64): Standard, Datacenter <sup>[참고 1](#bkmk_note1)</sup>    
 
 -   **Windows Storage Server 2012**(x64)    
 
--   **Windows Server 2008 R2 with SP1** (x64): Standard, Enterprise, Datacenter <sup>[참고 1](#bkmk_note1)</sup>    
+-   **Windows Server 2008 R2 SP1**(x64): Standard, Enterprise, Datacenter <sup>[참고 1](#bkmk_note1)</sup>    
 
 -   **Windows Storage Server 2008 R2**(x86, x64): Workgroup, Standard, Enterprise    
 
--   **Windows Server 2008 with SP2** (x86, x64): Standard, Enterprise, Datacenter <sup>[참고 1](#bkmk_note1)</sup>    
+-   **Windows Server 2008 SP2**(x86, x64): Standard, Enterprise, Datacenter <sup>[참고 1](#bkmk_note1)</sup>    
 
 
 #### <a name="server-core"></a>Server Core
@@ -117,7 +117,7 @@ Windows Server 반기 채널 버전은 Windows Server 버전 1809 같은 Server 
 
     -   통합 쓰기 필터(UWF)  
 
--   Windows Embedded 디바이스에는 응용 프로그램 카탈로그가 지원되지 않습니다.  
+-   Windows Embedded 장치에는 애플리케이션 카탈로그가 지원되지 않습니다.  
 
 
 ### <a name="supported-os-versions"></a>지원된 OS 버전  
@@ -324,7 +324,7 @@ Windows Server 반기 채널 버전은 Windows Server 버전 1809 같은 Server 
 
 
 
-##  <a name="bkmk_OnpremOS"></a> 온-프레미스 모바일 장치 관리  
+##  <a name="bkmk_OnpremOS"></a> 온-프레미스 모바일 디바이스 관리  
 
  Configuration Manager에는 클라이언트 소프트웨어를 설치하지 않고 온-프레미스의 디바이스를 관리할 수 있는 기본 제공 기능이 있습니다. 자세한 내용은 [온-프레미스 인프라로 모바일 디바이스 관리](/sccm/mdm/understand/manage-mobile-devices-with-on-premises-infrastructure)를 참조하세요.  
 
@@ -360,10 +360,10 @@ Configuration Manager에서는 Configuration Manager 클라이언트를 설치�
 
 ### <a name="supported-versions-of-exchange-server"></a>Exchange Server의 지원되는 버전
 
--   **Exchange Server 2010 SP1**  
+- **Exchange Online(Office 365)**: 이 버전에는 Business Productivity Online Standard Suite가 포함되어 있습니다.  
 
--   **Exchange Server 2010 SP2**  
+- **Exchange Server 2016**(1802 버전부터 시작)  
 
--   **Exchange Server 2013**  
+- **Exchange Server 2013**  
 
--   **Exchange Online(Office 365)**: 이 버전에는 Business Productivity Online Standard Suite가 포함됨  
+- **Exchange Server 2010 SP1** 또는 **Exchange Server 2010 SP2** 

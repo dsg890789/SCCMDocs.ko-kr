@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 7397fc17-3ae8-4525-8386-aea8a9cffa06
-ms.openlocfilehash: f9f896cdd1c3a0459d6f85e043bc1bba137c912c
-ms.sourcegitcommit: 2cc635835709fb8d86cdb63ea34233b36c94d4d8
+ms.openlocfilehash: b49a794a4036a3f2a8d42dc3b71855b44c22f44b
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52258862"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53422609"
 ---
 # <a name="surface-device-dashboard-in-system-center-configuration-manager"></a>System Center Configuration Manager의 Surface 디바이스 대시보드
 
@@ -31,8 +31,8 @@ Surface 디바이스 대시보드를 열려면 다음 단계를 사용합니다.
 2. **모니터링** 노드를 클릭합니다. 
 3. 대시보드를 로드하려면 **Surface 디바이스**를 클릭합니다.
 
-**Surface 장치 대시보드**
-![Surface 장치 대시보드](media\Surface-device-dashboard.PNG)
+**Surface 디바이스 대시보드**
+![Surface 디바이스 대시보드](media/Surface-device-dashboard.PNG)
 
 
 
@@ -40,18 +40,18 @@ Surface 디바이스 대시보드를 열려면 다음 단계를 사용합니다.
 
 Surface 디바이스 대시보드는 사용자 환경에 대한 세 개의 그래프를 보여줍니다. 
 
-- **Surface 장치 백분율** - 환경 전체에서 Surface 장치의 백분율을 제공합니다.
+- **Surface 디바이스 백분율** - 환경 전체에서 Surface 디바이스의 백분율을 제공합니다.
 
-    ![Surface 디바이스 백분율 그래프](media\Percent-Surface-Devices.PNG)
-- **Surface 모델** - Surface 모델당 장치 수를 표시합니다. 
-    - 그래프 섹션을 마우스로 가리키면 선택한 모델인 Surface 디바이스의 백분율을 제공합니다. 
+    ![Surface 디바이스 백분율 그래프](media/Percent-Surface-Devices.PNG)
+- **Surface 모델** - Surface 모델당 디바이스 수를 표시합니다. 
+  - 그래프 섹션을 마우스로 가리키면 선택한 모델인 Surface 디바이스의 백분율을 제공합니다. 
 
-         ![Surface 모델 그래프](media\Surface-Models-Hover.PNG)
-    - 그래프 섹션을 클릭하면 모델에 대한 디바이스 목록으로 이동합니다. 
-        ![Surface 모델 장치 목록](media\Surface-Model-Device-List.PNG)
+       ![Surface 모델 그래프](media/Surface-Models-Hover.PNG)
+  - 그래프 섹션을 클릭하면 모델에 대한 디바이스 목록으로 이동합니다. 
+      ![Surface 모델 디바이스 목록](media/Surface-Model-Device-List.PNG)
 
 - **상위 5개 펌웨어 버전** - 환경에서 상위 5개 펌웨어 모델을 포함한 차트를 표시합니다. 
-    - 그래프 섹션을 마우스로 가리키면 선택한 펌웨어 버전인 Surface 디바이스 수를 제공합니다. Configuration Manager 버전 1806부터 그래프 섹션을 클릭하면 관련 디바이스의 목록이 표시됩니다. <!--1358654--> ![Surface 모델 장치 목록](media\Surface-Firmware-Hover.PNG)
+  - 그래프 섹션을 마우스로 가리키면 선택한 펌웨어 버전인 Surface 디바이스 수를 제공합니다. Configuration Manager 버전 1806부터 그래프 섹션을 클릭하면 관련 디바이스의 목록이 표시됩니다. <!--1358654-->![Surface 모델 디바이스 목록](media/Surface-Firmware-Hover.PNG)
 
 
 ## <a name="more-information"></a>추가 정보

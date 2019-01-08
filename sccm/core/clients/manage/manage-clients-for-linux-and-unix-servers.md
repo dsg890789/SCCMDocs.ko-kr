@@ -10,12 +10,12 @@ ms.assetid: 948664f2-239d-47a8-92fc-f8efeebd5796
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 1bafded91dcdcddacd45134ce6b52f4da9d916ac
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 67c50d43a378e2c4939aaffb9943ce4fd408f56f
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32334201"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53417679"
 ---
 # <a name="how-to-manage-clients-for-linux-and-unix-servers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Linux 및 UNIX 서버용 클라이언트를 관리하는 방법
 
@@ -26,21 +26,21 @@ System Center Configuration Manager에서 Linux 및 UNIX 서버를 관리하는 
 ##  <a name="BKMK_CollectionsforLnU"></a> Linux 및 UNIX 서버 컬렉션  
  컬렉션을 사용하여 다른 클라이언트 형식을 관리하는 것과 같은 방식으로 Linux 및 UNIX 서버 그룹을 관리합니다. 컬렉션은 직접 멤버 자격 컬렉션 또는 쿼리 기반 컬렉션일 수 있습니다. 쿼리 기반 컬렉션은 클라이언트 운영 체제, 하드웨어 구성 또는 사이트 데이터베이스에 저장된 클라이언트의 다른 세부 정보를 식별합니다. 예를 들어 Linux 및 UNIX 서버를 포함하는 컬렉션을 사용하여 다음 설정을 관리할 수 있습니다.  
 
--   클라이언트 설정  
+- 클라이언트 설정  
 
--   소프트웨어 배포  
+- 소프트웨어 배포  
 
--   유지 관리 기간 적용  
+- 유지 관리 기간 적용  
 
- Linux 또는 UNIX 클라이언트를 해당 운영 체제 또는 배포로 식별하려면 클라이언트에서 [하드웨어 인벤토리](../../../core/clients/manage/inventory/hardware-inventory-for-linux-and-unix.md)를 수집해야 합니다.  
+  Linux 또는 UNIX 클라이언트를 해당 운영 체제 또는 배포로 식별하려면 클라이언트에서 [하드웨어 인벤토리](../../../core/clients/manage/inventory/hardware-inventory-for-linux-and-unix.md)를 수집해야 합니다.  
 
- 하드웨어 인벤토리에 대한 기본 클라이언트 설정에는 클라이언트 컴퓨터의 운영 체제에 대한 정보가 포함됩니다. **운영 체제** 클래스의 **캡션** 속성을 사용하여 Linux 또는 UNIX 서버의 운영 체제를 식별할 수 있습니다.  
+  하드웨어 인벤토리에 대한 기본 클라이언트 설정에는 클라이언트 컴퓨터의 운영 체제에 대한 정보가 포함됩니다. **운영 체제** 클래스의 **캡션** 속성을 사용하여 Linux 또는 UNIX 서버의 운영 체제를 식별할 수 있습니다.  
 
- Configuration Manager 콘솔에 있는 **자산 및 준수** 작업 영역의 **디바이스** 노드에서 Linux 및 UNIX용 Configuration Manager 클라이언트를 실행하는 컴퓨터에 대한 세부 정보를 볼 수 있습니다. Configuration Manager 콘솔의 **자산 및 준수** 작업 영역에 있는 **운영 체제** 열에서 각 컴퓨터 운영 체제의 이름을 볼 수 있습니다.  
+  Configuration Manager 콘솔에 있는 **자산 및 준수** 작업 영역의 **디바이스** 노드에서 Linux 및 UNIX용 Configuration Manager 클라이언트를 실행하는 컴퓨터에 대한 세부 정보를 볼 수 있습니다. Configuration Manager 콘솔의 **자산 및 준수** 작업 영역에 있는 **운영 체제** 열에서 각 컴퓨터 운영 체제의 이름을 볼 수 있습니다.  
 
- 기본적으로 Linux 및 UNIX 서버는 **모든 시스템** 컬렉션의 멤버입니다. Linux 및 UNIX 서버 또는 그 하위 집합만을 포함하는 사용자 지정 컬렉션을 빌드하는 것이 좋습니다. 사용자 지정 컬렉션을 사용하면 소프트웨어 배포 또는 유사 컴퓨터 그룹에 클라이언트 설정 할당과 같은 작업을 관리할 수 있으므로 배포에 성공했는지 정확히 측정할 수 있습니다.   
+  기본적으로 Linux 및 UNIX 서버는 **모든 시스템** 컬렉션의 멤버입니다. Linux 및 UNIX 서버 또는 그 하위 집합만을 포함하는 사용자 지정 컬렉션을 빌드하는 것이 좋습니다. 사용자 지정 컬렉션을 사용하면 소프트웨어 배포 또는 유사 컴퓨터 그룹에 클라이언트 설정 할당과 같은 작업을 관리할 수 있으므로 배포에 성공했는지 정확히 측정할 수 있습니다.   
 
- Linux 및 UNIX 서버용 사용자 지정 컬렉션을 빌드할 때 운영 체제 특성에 대해 캡션 특성을 포함하는 멤버 관리 규칙 쿼리를 포함시킵니다. 컬렉션을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 컬렉션을 만드는 방법](../../../core/clients/manage/collections/create-collections.md)을 참조하세요.  
+  Linux 및 UNIX 서버용 사용자 지정 컬렉션을 빌드할 때 운영 체제 특성에 대해 캡션 특성을 포함하는 멤버 관리 규칙 쿼리를 포함시킵니다. 컬렉션을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 컬렉션을 만드는 방법](../../../core/clients/manage/collections/create-collections.md)을 참조하세요.  
 
 ##  <a name="BKMK_MaintenanceWindowsforLnU"></a> Linux 및 UNIX 서버에 대 한 유지 관리 기간  
  Linux 및 UNIX 서버용 Configuration Manager 클라이언트는 [유지 관리 기간](../../../core/clients/manage/collections/use-maintenance-windows.md) 사용을 지원합니다. 이 지원은 Windows 기반 클라이언트 지원에서 변경되지 않았습니다.  

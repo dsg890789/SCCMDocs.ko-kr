@@ -10,12 +10,12 @@ ms.assetid: d827cf91-b18f-4ee7-b538-24ba6f003ab9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 68370a09dda49e16edd05fb545922f2e182f79a5
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 2fe6f2490b1ec527b7e6e09e9ce476e66342d7c9
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32331909"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53421164"
 ---
 # <a name="how-to-monitor-clients-for-linux-and-unix-servers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Linux 및 UNIX 서버용 클라이언트를 모니터링하는 방법
 
@@ -25,13 +25,13 @@ Windows 기반 클라이언트에서 정보를 볼 때와 동일한 방법을 �
 
  볼 수 있는 정보는 다음과 같습니다.  
 
--   Configuration Manager 콘솔 대시보드의 클라이언트 상태 세부 정보  
+- Configuration Manager 콘솔 대시보드의 클라이언트 상태 세부 정보  
 
--   기본 Configuration Manager 보고서의 클라이언트 세부 정보  
+- 기본 Configuration Manager 보고서의 클라이언트 세부 정보  
 
--   리소스 탐색기에 인벤토리 세부 정보  
+- 리소스 탐색기에 인벤토리 세부 정보  
 
- 다음 섹션에서는 리소스 탐색기 및 보고서에서 이러한 세부 정보를 가져오는 방법을 설명합니다.  
+  다음 섹션에서는 리소스 탐색기 및 보고서에서 이러한 세부 정보를 가져오는 방법을 설명합니다.  
 
 ##  <a name="BKMK_UseResourceExpforLnU"></a> 리소스 탐색기를 사용하여 Linux 및 UNIX 서버에 대한 인벤토리 보기  
 

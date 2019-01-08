@@ -10,12 +10,12 @@ ms.assetid: 984e8d92-7327-4b08-9228-0c955e6ac778
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: eac38757ed2147d664b3bdbf2f7e0eb11947dcac
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 8fdb7faee21904c504470c2bca86a674d59559cf
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32334078"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53419821"
 ---
 # <a name="determine-the-site-system-roles-for-system-center-configuration-manager-clients"></a>System Center Configuration Manager 클라이언트에 대한 사이트 시스템 역할 결정
 
@@ -45,15 +45,15 @@ ms.locfileid: "32334078"
 
  다음 조건에 모두 해당하는 경우 대체 상태 지점을 설치합니다.  
 
--   해당 클라이언트 컴퓨터가 관리 지점과 통신할 수 없더라도 Windows 컴퓨터의 클라이언트 통신 오류를 사이트에 전송하려 합니다.  
+- 해당 클라이언트 컴퓨터가 관리 지점과 통신할 수 없더라도 Windows 컴퓨터의 클라이언트 통신 오류를 사이트에 전송하려 합니다.  
 
--   대체 상태 지점에서 전송되는 데이터를 표시하는 Configuration Manager 클라이언트 배포 보고서를 사용하려고 합니다.  
+- 대체 상태 지점에서 전송되는 데이터를 표시하는 Configuration Manager 클라이언트 배포 보고서를 사용하려고 합니다.  
 
--   이 사이트 시스템 역할을 위한 전용 서버가 있고 해당 서버를 공격으로부터 보호할 추가적인 보안 수단이 있습니다.  
+- 이 사이트 시스템 역할을 위한 전용 서버가 있고 해당 서버를 공격으로부터 보호할 추가적인 보안 수단이 있습니다.  
 
--   대체 상태 지점의 사용으로 인한 이점이 인증되지 않은 연결이나 HTTP 트래픽을 통한 일반 텍스트 전송과 관련된 보안 위협을 보충하고도 남습니다.  
+- 대체 상태 지점의 사용으로 인한 이점이 인증되지 않은 연결이나 HTTP 트래픽을 통한 일반 텍스트 전송과 관련된 보안 위협을 보충하고도 남습니다.  
 
- 인증되지 않은 연결 및 일반 텍스트 전송 기능을 사용하여 웹 사이트를 실행하는 데 따른 보안 위협이 클라이언트 통신 문제를 확인할 수 있는 데 따른 이점보다 더 크다면 대체 상태 지점을 설치하지 마세요.  
+  인증되지 않은 연결 및 일반 텍스트 전송 기능을 사용하여 웹 사이트를 실행하는 데 따른 보안 위협이 클라이언트 통신 문제를 확인할 수 있는 데 따른 이점보다 더 크다면 대체 상태 지점을 설치하지 마세요.  
 
 ##  <a name="determine-whether-you-need-a-reporting-services-point"></a>보고 서비스 지점이 필요한지 확인  
  Configuration Manager는 Configuration Manager 콘솔에서 클라이언트 설치, 할당 및 관리를 모니터링할 수 있는 많은 보고서를 제공합니다. 일부 클라이언트 배포 보고서는 클라이언트가 대체 상태 지점에 할당되어 있어야 사용할 수 있습니다.  
@@ -75,7 +75,7 @@ ms.locfileid: "32334078"
 
 -   애플리케이션 카탈로그에서 애플리케이션을 검색해 설치합니다.  
 
--   배포 목적이 **사용 가능**인 사용자 및 디바이스에 응용 프로그램을 배포합니다.  
+-   배포 목적이 **사용 가능**인 사용자 및 장치에 애플리케이션을 배포합니다.  
 
 ##  <a name="determine-whether-you-require-a-cloud-management-gateway-connector-point"></a>클라우드 관리 게이트웨이 연결점이 필요한지 확인 
 

@@ -10,12 +10,12 @@ ms.assetid: ac034143-003e-4629-aac2-99eaffef4db1
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 7519971f05813edbf601c598b9281bcfdf19c83b
-ms.sourcegitcommit: fe279229a90fdc8cddbb13c7ffdbbb22af0e25ef
+ms.openlocfilehash: a9fe9c0b2f779558161e7995a01863e6415838ee
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47229333"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53423085"
 ---
 # <a name="what39s-new-in-version-1706-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1706의 새로운 기능
 
@@ -61,7 +61,7 @@ Version 1706 drops support for the following products:
 <!-- 1324589 --> 버전 1706부터 Configuration Manager 기본 사이트 및 중앙 관리 사이트에는 Configuration Manager 업데이트 다시 설정 도구 **CMUpdateReset.exe**가 포함되어 있습니다. 콘솔 내 업데이트를 다운로드하거나 복제하는 문제가 있는 경우 문제를 해결하려면 지원되는 현재 분기 버전에서 이 도구를 사용합니다. 자세한 내용은 [업데이트 다시 설정 도구](/sccm/core/servers/manage/update-reset-tool)를 참조하세요.
 
 ### <a name="high-dpi-console-support"></a>높은 DPI 콘솔 지원  
-<!-- 1353476 --> 이 릴리스에서는 높은 DPI 장치(예: Surface Book)에서 볼 때 Configuration Manager 콘솔이 확장되고 UI의 다른 부분을 표시하는 방식의 문제가 수정되었습니다.
+<!-- 1353476 --> 이 릴리스에서는 높은 DPI 디바이스(예: Surface Book)에서 볼 때 Configuration Manager 콘솔이 확장되고 UI의 다른 부분을 표시하는 방식의 문제가 수정되었습니다.
 
 ### <a name="improved-boundary-groups-for-software-update-points"></a>소프트웨어 업데이트 지점에 대한 향상된 경계 그룹
 <!-- 1324591 --> 이 릴리스에서는 소프트웨어 업데이트 지점이 경계 그룹과 작동하는 방식이 개선되었습니다. 다음은 새로운 대체 동작을 요약해서 설명합니다.
@@ -103,11 +103,11 @@ Version 1706 drops support for the following products:
 ## <a name="compliance-settings"></a>호환성 설정
 
 ### <a name="new-configuration-settings-for-windows-10-devices-that-are-not-managed-with-the-configuration-manager-client"></a>Configuration Manager 클라이언트에서 관리되지 않는 Windows 10 디바이스에 대한 새 구성 설정
-<!-- 1354715 --> 이 릴리스에서는 Intune에 등록되었거나 Configuration Manager를 통해 온-프레미스에서 관리되는 Windows 10 장치에 대한 새 구성 항목 설정을 추가했습니다. 이러한 설정은 다음과 같습니다.
+<!-- 1354715 --> 이 릴리스에서는 Intune에 등록되었거나 Configuration Manager를 통해 온-프레미스에서 관리되는 Windows 10 디바이스에 대한 새 구성 항목 설정을 추가했습니다. 이러한 설정은 다음과 같습니다.
 
 - **암호**
     - 디바이스 암호화
-- **장치**
+- **디바이스**
     - 지역 설정 수정(데스크톱만 해당)
     - 전원 및 절전 모드 설정 수정
     - 언어 설정 수정
@@ -130,30 +130,30 @@ Version 1706 drops support for the following products:
 
 ### <a name="new-device-compliance-policy-rules"></a>새 디바이스 준수 정책 규칙
 
-* **필수 암호 유형** 사용자가 영숫자 암호를 만들어야 할지, 아니면 숫자 암호를 만들어야 할지를 지정합니다. 영숫자 암호의 경우 암호에 포함해야 할 각 문자 집합의 최소 수도 지정합니다. 문자 집합으로는 소문자, 대문자, 기호, 숫자 등 4가지가 있습니다.
+* **필수 암호 유형** 사용자가 영숫자 암호를 만들어야 할지, 아니면 숫자 암호를 만들어야 할지를 지정합니다. 영숫자 암호의 경우 암호에 포함해야 할 각 문자 집합의 최소 수도 지정합니다. 4가지 문자 집합은 다음과 같습니다. 소문자, 대문자, 기호 및 숫자.
 
- **지원됨:**
- * Windows Phone 8+
- * Windows 8.1+
- * iOS 6+
-<br></br>
-* **장치에서 USB 디버깅 차단** USB 디버깅은 Android for Work 디바이스에서 이미 사용되지 않도록 설정되어 있으므로 구성할 필요가 없습니다.
+  **지원됨:**
+  * Windows Phone 8+
+  * Windows 8.1+
+  * iOS 6+
+  <br></br>
+* **디바이스에서 USB 디버깅 차단** USB 디버깅은 Android for Work 디바이스에서 이미 사용되지 않도록 설정되어 있으므로 구성할 필요가 없습니다.
 
- **지원됨:**
- * Android 4.0+
- * Samsung KNOX Standard 4.0 이상
-<br></br>
+  **지원됨:**
+  * Android 4.0+
+  * Samsung KNOX Standard 4.0 이상
+  <br></br>
 * **알 수 없는 출처의 앱 차단** 디바이스가 알 수 없는 소스의 앱 설치를 방지해야 합니다. Android for Work 디바이스는 알 수 없는 출처의 설치를 하상 제한하므로 이 설정은 구성할 필요가 없습니다.
 
   **지원됨:**
   * Android 4.0+
   * Samsung KNOX Standard 4.0 이상
-<br></br>
+  <br></br>
 * **앱에서 위협 검색 필요** 이 설정은 디바이스에서 앱 확인 기능이 사용되도록 구성되어 있음을 지정합니다.
 
- **지원됨:**
- * Android 4.2 ~ 4.4
- * Samsung KNOX Standard 4.0 이상
+  **지원됨:**
+  * Android 4.2 ~ 4.4
+  * Samsung KNOX Standard 4.0 이상
 
 새 디바이스 준수 규칙을 사용해 보려면 [디바이스 규정 준수 정책 만들기 및 배포](https://docs.microsoft.com/sccm/mdm/deploy-use/create-compliance-policy)를 참조하세요.
 
@@ -173,9 +173,9 @@ Configuration Manager에서 패키지 및 프로그램을 사용하여 클라이
 자세한 내용은 [Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행](/sccm/apps/deploy-use/create-deploy-scripts)을 참조하세요.
 
 ### <a name="new-mobile-application-management-policy-settings"></a>새 모바일 애플리케이션 관리 정책 설정    
-<!--1324760--> 이 릴리스부터 3개의 새 MAM(모바일 응용 프로그램 관리) 정책 설정을 사용할 수 있습니다.
+<!--1324760--> 이 릴리스부터 3개의 새 MAM(모바일 애플리케이션 관리) 정책 설정을 사용할 수 있습니다.
 
-- **화면 캡처 차단(Android 장치만 해당):** 이 앱을 사용할 때 장치의 화면 캡처 기능을 차단하도록 지정합니다.
+- **화면 캡처 차단(Android 디바이스에만 해당):** 이 앱을 사용할 때 디바이스의 화면 캡처 기능을 차단하도록 지정합니다.
 
 새로운 앱 보호 정책 설정을 사용하려면 [Configuration Manager에서 앱 보호 정책을 사용하여 앱 보호](https://docs.microsoft.com/sccm/mdm/deploy-use/protect-apps-using-mam-policies)를 참조하세요.
 
@@ -211,7 +211,7 @@ Configuration Manager에서 패키지 및 프로그램을 사용하여 클라이
 3. [동기화된 Microsoft Surface 드라이버를 배포](/sccm/sum/deploy-use/deploy-software-updates)합니다.
 
 ### <a name="configure-windows-update-for-business-deferral-policies"></a>비즈니스용 Windows 업데이트 지연 정책 구성
-<!-- 1290890 --> 이제 비즈니스용 Windows 업데이트에서 직접 관리되는 Windows 10 장치에 대한 Windows 10 기능 업데이트 또는 품질 업데이트의 지연 정책을 구성할 수 있습니다. **소프트웨어 라이브러리** > **Windows 10 서비스** 아래의 새 **비즈니스용 Windows 업데이트 정책** 노드에서 지연 정책을 관리할 수 있습니다.
+<!-- 1290890 --> 이제 비즈니스용 Windows 업데이트에서 직접 관리되는 Windows 10 디바이스에 대한 Windows 10 기능 업데이트 또는 품질 업데이트의 지연 정책을 구성할 수 있습니다. **소프트웨어 라이브러리** > **Windows 10 서비스** 아래의 새 **비즈니스용 Windows 업데이트 정책** 노드에서 지연 정책을 관리할 수 있습니다.
 
 자세한 내용은 [Windows 10에서 비즈니스용 Windows 업데이트와 통합](/sccm/sum/deploy-use/integrate-windows-update-for-business-windows-10#configure-windows-update-for-business-deferral-policies)을 참조하세요.
 
@@ -236,7 +236,7 @@ Configuration Manager에서 패키지 및 프로그램을 사용하여 클라이
 자세한 내용은 [Android for Work 디바이스에 대한 구성 항목](/sccm/mdm/deploy-use/create-configuration-items-for-android-for-work-devices-managed-without-the-client)을 참조하세요.
 
 ### <a name="android-and-ios-enrollment-restrictions"></a>Android 및 iOS 등록 제한
-<!-- 1290826 --> 이제 이 릴리스에서 사용자가 개인 Android 또는 iOS 장치를 등록하도록 지정할 수 있습니다. 새 디바이스 제한 설정을 통해 미리 선언된 디바이스에 대한 Android 디바이스 등록을 제한할 수 있습니다. iOS 디바이스의 경우 Apple의 장비 등록 프로그램, Apple Configurator 또는 Intune 디바이스 등록 관리자 계정에 등록된 디바이스를 제외한 모든 디바이스의 등록을 차단할 수 있습니다.
+<!-- 1290826 --> 이제 이 릴리스에서 사용자가 개인 Android 또는 iOS 디바이스를 등록하도록 지정할 수 있습니다. 새 디바이스 제한 설정을 통해 미리 선언된 디바이스에 대한 Android 디바이스 등록을 제한할 수 있습니다. iOS 디바이스의 경우 Apple의 장비 등록 프로그램, Apple Configurator 또는 Intune 디바이스 등록 관리자 계정에 등록된 디바이스를 제외한 모든 디바이스의 등록을 차단할 수 있습니다.
 - Android 등록 제한에 대한 자세한 내용은 [Android 디바이스 관리 설정](/sccm/mdm/deploy-use/enroll-hybrid-android)을 참조하세요.
 - iOS 등록 제한에 대한 자세한 내용은 [iOS 등록 제한 구성](/sccm/mdm/deploy-use/enroll-hybrid-ios-mac#configure-enrollment-restrictions)을 참조하세요.
 

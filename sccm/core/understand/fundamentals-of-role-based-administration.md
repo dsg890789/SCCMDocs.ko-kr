@@ -10,12 +10,12 @@ ms.assetid: 0a2d6c3f-a4e4-4c19-b087-3caada480de9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3b7916b386cb22f2d1869eface009bd10ff17d18
-ms.sourcegitcommit: 3dfe3f4401651afa9dc65d14a8944ae4e4198b3e
+ms.openlocfilehash: 1103b9e977f3bbef3e07d545b6b3762f6cf59fdd
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48862552"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53414976"
 ---
 # <a name="fundamentals-of-role-based-administration-for-system-center-configuration-manager"></a>System Center Configuration Manager의 역할 기반 관리 기본 사항
 
@@ -25,13 +25,13 @@ System Center Configuration Manager에서 역할 기반 관리를 사용하여 C
 
  역할 기반 관리 모델에서는 다음 항목을 사용하여 모든 사이트 및 사이트 설정에 대한 계층 구조 전체의 보안 액세스 설정을 중앙 집중식으로 정의하고 관리합니다.  
 
--   *보안 역할* - 관리자에게 할당되어 해당 관리자 또는 관리자 그룹에게 다양한 Configuration Manager 개체에 대한 권한을 제공하는 역할입니다. 예를 들어 클라이언트 설정을 만들거나 변경할 권한이 있습니다.  
+- *보안 역할* - 관리자에게 할당되어 해당 관리자 또는 관리자 그룹에게 다양한 Configuration Manager 개체에 대한 권한을 제공하는 역할입니다. 예를 들어 클라이언트 설정을 만들거나 변경할 권한이 있습니다.  
 
--   *보안 범위* - 보안 범위에서는 Microsoft Office 2010을 설치하는 응용 프로그램과 같이 관리자가 관리해야 하는 개체의 특정 인스턴스를 그룹화하는 데 사용됩니다.  
+- *보안 범위* - 보안 범위에서는 Microsoft Office 2010을 설치하는 애플리케이션과 같이 관리자가 관리해야 하는 개체의 특정 인스턴스를 그룹화하는 데 사용됩니다.  
 
--   *컬렉션* - 관리자가 관리할 수 있는 사용자 및 장치 리소스 그룹을 지정하는 데 사용됩니다.  
+- *컬렉션* - 관리자가 관리할 수 있는 사용자 및 디바이스 리소스 그룹을 지정하는 데 사용됩니다.  
 
- 보안 역할, 보안 범위 및 컬렉션을 적절히 함께 사용하여 조직의 요구 사항을 충족하는 관리 할당을 구분합니다. 함께 사용할 경우 Configuration Manager에서 사용자가 보고 관리하는 대상인 사용자의 관리 범위를 정의합니다.  
+  보안 역할, 보안 범위 및 컬렉션을 적절히 함께 사용하여 조직의 요구 사항을 충족하는 관리 할당을 구분합니다. 함께 사용할 경우 Configuration Manager에서 사용자가 보고 관리하는 대상인 사용자의 관리 범위를 정의합니다.  
 
 ## <a name="benefits-of-role-based-administration"></a>역할 기반 관리의 이점  
 
@@ -75,7 +75,7 @@ Configuration Manager에 대해 관리 보안을 디자인하고 구현할 때�
 > [!TIP]  
 >  Configuration Manager 콘솔에서 기본 제공 보안 역할과 사용자가 만든 사용자 지정 보안 역할을 설명과 함께 볼 수 있습니다. 역할을 보려면 **관리** 작업 영역에서 **보안**을 확장하고 **보안 역할**을 선택합니다.  
 
- 각 보안 역할마다 개체 유형별로 다른 사용 권한을 지정합니다. 예를 들어 *애플리케이션 작성자* 보안 역할에는 애플리케이션에 대한 승인, 만들기, 삭제, 수정, 폴더 수정, 개체 이동, 읽기, 보고서 실행 및 보안 범위 설정 권한이 포함됩니다.
+ 각 보안 역할마다 개체 유형별로 다른 사용 권한을 지정합니다. 예를 들어 *애플리케이션 작성자* 보안 역할에는 애플리케이션에 대해 승인, 만들기, 삭제, 수정, 폴더 수정, 개체 이동, 읽기, 보고서 실행 및 보안 범위 설정 권한이 있습니다.
 
  기본 제공 보안 역할의 사용 권한을 변경할 수 없지만 역할을 복사한 후 변경하여 변경 내용을 새로운 사용자 지정 보안 역할로 저장할 수 있습니다. 또한 다른 계층 구조(예: 테스트 네트워크)에서 내보낸 보안 역할을 가져올 수도 있습니다. 보안 역할과 해당 권한을 검토하여 기본 제공 보안 역할을 사용할지, 아니면 사용자 지정 보안 역할을 만들어야 하는지 결정하세요.  
 

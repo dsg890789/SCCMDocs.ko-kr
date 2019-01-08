@@ -9,12 +9,12 @@ ms.assetid: d24257d8-8136-47f4-8e0d-34021356dc37
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2b952e76fc21e3190430cdf34cb4a264918fd199
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: fa201029b81bb3e0ca8fb5e97f126c899497d503
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32342599"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53422932"
 ---
 # <a name="configuration-manager-on-azure---frequently-asked-questions"></a>Azure의 Configuration Manager - 질문과 대답
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -45,13 +45,13 @@ ms.locfileid: "32342599"
 ### <a name="what-about-networking-requirements-should-i-use-expressroute-or-an-azure-vpn-gateway"></a>네트워킹 요구 사항은 무엇인가요? ExpressRoute 또는 Azure VPN Gateway를 사용해야 하나요?
 네트워킹은 매우 중요한 결정 사항입니다. 네트워크 속도 및 대기 시간은 사이트 서버와 원격 사이트 시스템 간, 그리고 사이트 시스템에 대한 모든 클라이언트 통신 기능에 영향을 줄 수 있습니다. 가장 권장되는 방법은 ExpressRoute를 사용하는 것입니다. 하지만 Configuration Manager에서 Azure VPN Gateway 사용을 제한하는 것은 아닙니다. 이 인프라를 통해 요구 사항(성능, 패치, 소프트웨어 배포, 운영 체제 배포)을 신중하게 검토한 다음 결정해야 합니다. 각 솔루션에 대해 고려해야 할 사항은 다음과 같습니다.
 
- - **ExpressRoute**(권장)
+- **ExpressRoute**(권장)
   - 데이터 센터로 자연스러운 확장(여러 데이터 센터를 함께 연결할 수 있음)
   - Azure 데이터 센터와 인프라 간의 개인 연결
   - 공용 인터넷 사용 안 함
   - 안정성, 빠른 속도, 낮은 대기 시간, 높은 보안성 제공
   - 최대 10gbps 속도 및 무제한 데이터 요금제 옵션 제공
- - **VPN Gateway**
+- **VPN Gateway**
   - 사이트-사이트/지점-사이트 VPN
   - 공용 인터넷을 통한 트래픽
   - IPsec(인터넷 프로토콜 보안) 및 IKE(Internet Key Exchange) 사용

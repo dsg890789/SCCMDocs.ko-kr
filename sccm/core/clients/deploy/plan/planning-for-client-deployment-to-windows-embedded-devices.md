@@ -10,18 +10,18 @@ ms.assetid: 038e61f9-f49d-41d1-9a9f-87bec9e00d5d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6ca987411775ec3a6fbe626d4b34f83313673f5b
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 4dd547f0126fa9e77b4d49db7c0de4ec912d2b23
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32334830"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53421623"
 ---
 # <a name="planning-for-client-deployment-to-windows-embedded-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Windows Embedded 디바이스에 클라이언트 배포 계획
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-<a name="BKMK_DeployClientEmbedded"></a> Windows Embedded 장치에 System Center Configuration Manager 클라이언트가 포함되지 않은 경우 장치가 필요한 종속성을 충족하는 한 모든 클라이언트 설치 방법을 사용할 수 있습니다. Windows Embedded 디바이스가 쓰기 필터를 지원하는 경우 클라이언트를 설치하기 전에 이러한 필터를 사용하지 않도록 설정하고 클라이언트가 설치되어 사이트에 할당된 후에 다시 사용하도록 설정해야 합니다.  
+<a name="BKMK_DeployClientEmbedded"></a> Windows Embedded 디바이스에 System Center Configuration Manager 클라이언트가 포함되지 않은 경우 디바이스가 필요한 종속성을 충족하는 한 모든 클라이언트 설치 방법을 사용할 수 있습니다. Windows Embedded 디바이스가 쓰기 필터를 지원하는 경우 클라이언트를 설치하기 전에 이러한 필터를 사용하지 않도록 설정하고 클라이언트가 설치되어 사이트에 할당된 후에 다시 사용하도록 설정해야 합니다.  
 
  필터를 사용하지 않도록 설정할 때 필터 드라이버는 사용하지 않도록 설정하면 안 됩니다. 이러한 드라이버는 일반적으로 컴퓨터를 시작할 때 자동으로 시작됩니다. 드라이버를 사용하지 않도록 설정하면 클라이언트 설치가 차단되거나 쓰기 필터 오케스트레이션을 간섭하게 되어 클라이언트 작업이 실패합니다. 각 쓰기 필터 유형과 연결된 계속 실행되어야 하는 서비스는 다음과 같습니다.  
 
@@ -46,60 +46,60 @@ ms.locfileid: "32334830"
 
  Configuration Manager에서는 다음 유형의 쓰기 필터를 관리할 수 있습니다.  
 
--   FBWF(파일 기반 쓰기 필터) - 자세한 내용은 [파일 기반 쓰기 필터](http://go.microsoft.com/fwlink/?LinkID=204717)를 참조하세요.  
+- FBWF(파일 기반 쓰기 필터) - 자세한 내용은 [파일 기반 쓰기 필터](http://go.microsoft.com/fwlink/?LinkID=204717)를 참조하세요.  
 
--   EWF(강화된 쓰기 필터) RAM - 자세한 내용은 [강화된 쓰기 필터](http://go.microsoft.com/fwlink/?LinkId=204718)를 참조하세요.  
+- EWF(강화된 쓰기 필터) RAM - 자세한 내용은 [강화된 쓰기 필터](http://go.microsoft.com/fwlink/?LinkId=204718)를 참조하세요.  
 
--   UWF(통합 쓰기 필터) - 자세한 내용은 [통합 쓰기 필터](http://go.microsoft.com/fwlink/?LinkId=309236)를 참조하세요.  
+- UWF(통합 쓰기 필터) - 자세한 내용은 [통합 쓰기 필터](http://go.microsoft.com/fwlink/?LinkId=309236)를 참조하세요.  
 
- Configuration Manager에서는 Windows Embedded 디바이스가 EWF RAM Reg 모드일 때 쓰기 필터 작업을 지원하지 않습니다.  
+  Configuration Manager에서는 Windows Embedded 디바이스가 EWF RAM Reg 모드일 때 쓰기 필터 작업을 지원하지 않습니다.  
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 >  선택할 수 있는 경우 효율성과 확장성을 높이기 위해 Configuration Manager에서 FBWF(파일 기반 쓰기 필터)를 사용하는 것이 좋습니다.
->
-> **FBWF만 사용하는 장치의 경우:** 장치 다시 시작 시 클라이언트 상태 및 인벤토리 데이터를 보존하려면 다음 예외를 구성합니다.  
->   
->  -   CCMINSTALLDIR\\\*.sdf  
-> -   CCMINSTALLDIR\ServiceData  
-> -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CCM\StateSystem  
->   
->  Windows Embedded 8.0 이상을 실행하는 디바이스는 와일드카드 문자를 포함하는 제외를 지원하지 않습니다. 이러한 디바이스에서는 다음 제외를 개별적으로 구성해야 합니다.  
->   
->  -   확장명이 .sdf인 CCMINSTALLDIR의 모든 파일. 일반적으로 다음과 같은 파일이 포함됩니다.  
->   
->     -   UserAffinityStore.sdf  
->     -   InventoryStore.sdf  
->     -   CcmStore.sdf  
->     -   StateMessageStore.sdf  
->     -   CertEnrollmentStore.sdf  
-> -   CCMINSTALLDIR\ServiceData  
-> -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CCM\StateSystem  
->   
-> **FBWF 및 UWF만 사용하는 장치의 경우:** 작업 그룹에서 클라이언트가 관리 지점에 대한 인증을 위해 인증서를 사용하는 경우 클라이언트가 계속 관리 지점과 통신할 수 있도록 개인 키도 제외해야 합니다. 이러한 디바이스에서는 다음과 같은 예외를 구성합니다.  
->   
->  -   c:\Windows\System32\Microsoft\Protect  
-> -   c:\ProgramData\Microsoft\Crypto  
-> -   HKEY_LOCAL_MACHINE\Software\Microsoft\SystemCertificates\SMS\Certificates  
+> 
+> **FBWF만 사용하는 디바이스의 경우:** 디바이스 다시 시작 시 클라이언트 상태 및 인벤토리 데이터를 보존하려면 다음 예외를 구성합니다.  
+> 
+> - CCMINSTALLDIR\\\*.sdf  
+>   -   CCMINSTALLDIR\ServiceData  
+>   -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CCM\StateSystem  
+> 
+>   Windows Embedded 8.0 이상을 실행하는 디바이스는 와일드카드 문자를 포함하는 제외를 지원하지 않습니다. 이러한 디바이스에서는 다음 제외를 개별적으로 구성해야 합니다.  
+> 
+> - 확장명이 .sdf인 CCMINSTALLDIR의 모든 파일. 일반적으로 다음과 같은 파일이 포함됩니다.  
+> 
+>   -   UserAffinityStore.sdf  
+>   -   InventoryStore.sdf  
+>   -   CcmStore.sdf  
+>   -   StateMessageStore.sdf  
+>   -   CertEnrollmentStore.sdf  
+>   -   CCMINSTALLDIR\ServiceData  
+>   -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CCM\StateSystem  
+> 
+> **FBWF 및 UWF만 사용하는 디바이스의 경우:** 작업 그룹에서 클라이언트가 관리 지점에 대한 인증을 위해 인증서를 사용하는 경우 클라이언트가 계속 관리 지점과 통신할 수 있도록 개인 키도 제외해야 합니다. 이러한 장치에서는 다음과 같은 예외를 구성합니다.  
+> 
+> - c:\Windows\System32\Microsoft\Protect  
+>   -   c:\ProgramData\Microsoft\Crypto  
+>   -   HKEY_LOCAL_MACHINE\Software\Microsoft\SystemCertificates\SMS\Certificates  
 
  Configuration Manager에서 쓰기 필터를 사용하는 Windows Embedded 디바이스를 배포하고 관리하는 예제 시나리오를 보려면 [Windows Embedded 디바이스의 System Center Configuration Manager 클라이언트 배포 및 관리에 대한 예제 시나리오](../../../../core/clients/deploy/example-scenario-for-deploying-and-managing-clients-on-windows-embedded-devices.md)를 참조하세요.  
 
  Windows Embedded 디바이스에 대한 이미지를 작성하고 쓰기 필터를 구성하는 방법에 대한 자세한 내용은 관련 Windows Embedded 설명서를 참조하거나 OEM에 문의하세요.  
 
-> [!NOTE]  
+> [!NOTE]
 >  소프트웨어 배포 및 구성 항목에 대해 해당되는 플랫폼을 선택하면 특정 버전이 아니라 Windows Embedded 제품군이 표시됩니다. 특정 Windows Embedded 버전을 목록 상자 내 옵션에 매핑하려면 다음 목록을 참조하세요.  
->   
->  -   **Windows XP(32비트) 기반 임베디드 운영 체제** 는 다음과 같습니다.  
->   
->      -   Windows XP Embedded  
->     -   Windows Embedded for Point of Service  
->     -   Windows Embedded Standard 2009  
->     -   Windows Embedded POSReady 2009  
-> -   **Windows 7(32비트) 기반 임베디드 운영 체제** 는 다음과 같습니다.  
->   
->      -   Windows Embedded Standard 7(32비트)  
->     -   Windows Embedded POSReady 7(32비트)  
->     -   Windows ThinPC  
-> -   **Windows 7(64비트) 기반 임베디드 운영 체제** 는 다음과 같습니다.  
->   
->      -   Windows Embedded Standard 7(64비트)  
->     -   Windows Embedded POSReady 7(64비트)
+> 
+> - **Windows XP(32비트) 기반 임베디드 운영 체제** 는 다음과 같습니다.  
+> 
+>   -   Windows XP Embedded  
+>   -   Windows Embedded for Point of Service  
+>   -   Windows Embedded Standard 2009  
+>   -   Windows Embedded POSReady 2009  
+>   -   **Windows 7(32비트) 기반 임베디드 운영 체제** 는 다음과 같습니다.  
+> 
+>   -   Windows Embedded Standard 7(32비트)  
+>   -   Windows Embedded POSReady 7(32비트)  
+>   -   Windows ThinPC  
+>   -   **Windows 7(64비트) 기반 임베디드 운영 체제** 는 다음과 같습니다.  
+> 
+>   -   Windows Embedded Standard 7(64비트)  
+>   -   Windows Embedded POSReady 7(64비트)

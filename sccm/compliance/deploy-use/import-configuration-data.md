@@ -10,12 +10,12 @@ ms.assetid: 309b9a09-a611-4ba2-90ab-dde51582cf87
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 2a779f80f42439fe6526c05d7027c22fb191e41e
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 1c5f4b9cd76379d94c1cedb40ce38eda651b5845
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32332113"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53416761"
 ---
 # <a name="import-configuration-data-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 구성 데이터 가져오기
 
@@ -23,13 +23,13 @@ ms.locfileid: "32332113"
 
 System Center Configuration Manager 콘솔에서 구성 기준 및 구성 항목을 만들 수 있을 뿐만 아니라 캐비닛(.cab) 파일 형식에 포함되어 있고 지원되는 SML(서비스 모델링 언어) 스키마를 준수하는 경우 구성 데이터를 가져올 수 있습니다. 다음과 같은 구성 데이터를 가져올 수 있습니다.  
 
--   Microsoft 또는 다른 소프트웨어 공급업체 사이트에서 다운로드한 모범 사례 구성 데이터(구성 팩)  
+- Microsoft 또는 다른 소프트웨어 공급업체 사이트에서 다운로드한 모범 사례 구성 데이터(구성 팩)  
 
--   System Center 2012 Configuration Manager 이상에서 내보낸 구성 데이터  
+- System Center 2012 Configuration Manager 이상에서 내보낸 구성 데이터  
 
--   외부에서 작성되고 SML 스키마를 준수하는 구성 데이터  
+- 외부에서 작성되고 SML 스키마를 준수하는 구성 데이터  
 
- System Center 2012 Configuration Manager 사이트 서버 역할을 준수할 수 있도록 관리하는 데 도움이 되는 구성 팩에 대한 예제를 보려면 [System Center 2012 Configuration Manager 구성 팩](http://www.microsoft.com/en-us/download/details.aspx?id=30710&WT.mc_id=rss_alldownloads_all)을 참조하세요.  
+  System Center 2012 Configuration Manager 사이트 서버 역할을 준수할 수 있도록 관리하는 데 도움이 되는 구성 팩에 대한 예제를 보려면 [System Center 2012 Configuration Manager 구성 팩](http://www.microsoft.com/en-us/download/details.aspx?id=30710&WT.mc_id=rss_alldownloads_all)을 참조하세요.  
 
 구성 기준을 가져오는 경우 구성 기준에서 참조되는 일부 또는 모든 구성 항목이 캐비닛 파일에 포함될 수도 있습니다. 가져오기 프로세스 중 Configuration Manager가 구성 기준에서 참조되는 모든 구성 항목이 캐비닛 파일에 포함되어 있는지 또는 이미 Configuration Manager 사이트에 존재하는지 확인합니다. Configuration Manager가 찾을 수 없는 구성 데이터를 참조하는 구성 기준을 가져오려고 하는 경우 가져오기 프로세스가 실패합니다.  
 

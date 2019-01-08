@@ -10,12 +10,12 @@ ms.assetid: c21eec87-ad1c-4465-8e45-5feb60b92707
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: fbba0306cececebeb7a0e20757e7de3b0d4d0e70
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 35312c92a20f8e3842b5ee47dd3b916631671e45
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32348337"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53417356"
 ---
 # <a name="upgrade-windows-to-the-latest-version-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows를 최신 버전으로 업그레이드
 
@@ -46,21 +46,21 @@ ms.locfileid: "32348337"
 
 OS를 업그레이드하는 작업 순서에 대한 다음 요구 사항과 제한 사항을 검토하여 사용자의 요구를 충족하는지 확인합니다.  
 
-  -   OS 업그레이드의 핵심 작업과 관련된 작업 순서 단계만 추가합니다. 이러한 단계는 패키지, 애플리케이션 또는 업데이트 설치를 주로 포함합니다. 또한 명령줄, PowerShell을 실행하거나 동적 변수를 설정하는 단계를 사용합니다.  
+- OS 업그레이드의 핵심 작업과 관련된 작업 순서 단계만 추가합니다. 이러한 단계는 패키지, 애플리케이션 또는 업데이트 설치를 주로 포함합니다. 또한 명령줄, PowerShell을 실행하거나 동적 변수를 설정하는 단계를 사용합니다.  
 
-  -   업그레이드 작업 순서를 배포하기 전에 컴퓨터에 설치된 드라이버와 애플리케이션을 검토하여 Windows 10과 호환되는지를 확인합니다.  
+- 업그레이드 작업 순서를 배포하기 전에 컴퓨터에 설치된 드라이버와 애플리케이션을 검토하여 Windows 10과 호환되는지를 확인합니다.  
 
-  -   다음 작업은 현재 위치 업그레이드와 호환되지 않습니다. 기존 OS 배포를 사용해야 합니다.  
+- 다음 작업은 현재 위치 업그레이드와 호환되지 않습니다. 기존 OS 배포를 사용해야 합니다.  
 
-     -   컴퓨터의 도메인 구성원 자격 변경 또는 로컬 관리자 그룹 업데이트  
+  - 컴퓨터의 도메인 구성원 자격 변경 또는 로컬 관리자 그룹 업데이트  
 
-     -   다음과 같은 컴퓨터에서 기본적인 변경 구현: 
-         - 디스크 파티션 변경
-         - x86에서 x64로 시스템 아키텍처 변경
-         - UEFI 구현 (가능한 옵션에 대한 자세한 내용은 [현재 위치 업그레이드 중에 BIOS에서 UEFI로 변환](/sccm/osd/deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion#convert-from-bios-to-uefi-during-an-in-place-upgrade)을 참조하세요.)
-         - 기본 OS 언어 수정  
+  - 다음과 같은 컴퓨터에서 기본적인 변경 구현: 
+    - 디스크 파티션 변경
+    - x86에서 x64로 시스템 아키텍처 변경
+    - UEFI 구현 (가능한 옵션에 대한 자세한 내용은 [현재 위치 업그레이드 중에 BIOS에서 UEFI로 변환](/sccm/osd/deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion#convert-from-bios-to-uefi-during-an-in-place-upgrade)을 참조하세요.)
+    - 기본 OS 언어 수정  
 
-     -   사용자 지정 기본 이미지 또는 타사 디스크 암호화를 사용하거나 WinPE 오프라인 작업을 수행해야 하는 등의 사용자 지정 요구 사항이 적용됩니다.  
+  - 사용자 지정 기본 이미지 또는 타사 디스크 암호화를 사용하거나 WinPE 오프라인 작업을 수행해야 하는 등의 사용자 지정 요구 사항이 적용됩니다.  
 
 ### <a name="infrastructure-requirements"></a>인프라 요구 사항  
 

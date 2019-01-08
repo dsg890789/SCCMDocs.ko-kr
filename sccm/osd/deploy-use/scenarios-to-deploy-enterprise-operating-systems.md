@@ -10,12 +10,12 @@ ms.assetid: f74fdb86-c7c2-447f-91f6-b42df6370d7f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: d0beb10dca04fe26fb4add22b64ab61b53154185
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 0d8f5cf6b30bb465dea5ae680510f16814287daa
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32349170"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53419124"
 ---
 # <a name="scenarios-to-deploy-enterprise-operating-systems-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 엔터프라이즈 운영 체제를 배포하는 시나리오
 
@@ -25,7 +25,7 @@ ms.locfileid: "32349170"
 
 -   [최신 버전으로 Windows 업그레이드](upgrade-windows-to-the-latest-version.md): 이 시나리오는 현재 Windows 7, Windows 8, Windows 8.1 또는 Windows 10을 실행하는 컴퓨터의 운영 체제를 업그레이드합니다. 이 업그레이드 프로세스에서 컴퓨터의 애플리케이션, 설정 및 사용자 데이터는 그대로 유지됩니다. Windows ADK 및 이 프로세스는 기존 운영 체제 배포보다 더욱 빠르고 복원력이 뛰어나므로 외부 종속성이 없습니다.  
 
--   [새 버전의 Windows로 기존 컴퓨터 새로 고침](refresh-an-existing-computer-with-a-new-version-of-windows.md): 이 시나리오에서는 기존 컴퓨터를 파티션으로 나누고 포맷(초기화)한 다음 컴퓨터에 새 운영 체제를 설치합니다. 운영 체제가 설치된 후 설정 및 사용자 데이터를 마이그레이션할 수 있습니다.  
+-   [새 버전의 Windows로 기존 컴퓨터 새로 고침](refresh-an-existing-computer-with-a-new-version-of-windows.md): 이 시나리오에서는 기존 컴퓨터를 파티션으로 나누고 포맷(초기화)한 다음, 해당 컴퓨터에 새 운영 체제를 설치합니다. 운영 체제가 설치된 후 설정 및 사용자 데이터를 마이그레이션할 수 있습니다.  
 
 -   [새 컴퓨터에 새 버전의 Windows 설치(완전 복구)](install-new-windows-version-new-computer-bare-metal.md): 이 시나리오는 새 컴퓨터에 운영 체제를 설치합니다. 이것은 운영 체제를 새로 설치하는 방법이며 설정 또는 사용자 데이터 마이그레이션은 포함되지 않습니다.  
 
@@ -51,12 +51,12 @@ ms.locfileid: "32349170"
 ## <a name="task-sequence-deployments"></a>작업 순서 배포  
  만들어진 작업 순서는 다음 중 한 가지 방법으로 Configuration Manager 클라이언트 컴퓨터에 운영 체제 이미지를 배포할 수 있습니다.  
 
--   먼저 배포 지점에서 Configuration Manager 클라이언트 캐시로 이미지와 해당 콘텐츠를 다운로드한 다음 설치합니다.  
+- 먼저 배포 지점에서 Configuration Manager 클라이언트 캐시로 이미지와 해당 콘텐츠를 다운로드한 다음 설치합니다.  
 
--   배포 지점에서 바로 이미지와 해당 콘텐츠를 설치합니다.  
+- 배포 지점에서 바로 이미지와 해당 콘텐츠를 설치합니다.  
 
--   배포 지점에서 필요에 따라 이미지와 해당 콘텐츠를 설치합니다.  
+- 배포 지점에서 필요에 따라 이미지와 해당 콘텐츠를 설치합니다.  
 
- 기본적으로 작업 순서에 대한 배포를 만들면 먼저 이미지가 Configuration Manager 클라이언트 캐시로 다운로드된 다음 설치됩니다. 이미지를 실행하기 전에 Configuration Manager 클라이언트 캐시로 이미지를 다운로드하도록 선택한 경우 작업 순서에 하드 드라이브를 다시 분할하는 단계가 포함되어 있으면 하드 드라이브 다시 분할 과정에서 Configuration Manager 클라이언트 캐시의 콘텐츠가 지워지므로 다시 분할 단계가 실패합니다. 작업 순서가 하드 드라이브를 다시 분할해야 하는 경우 작업 순서를 배포할 때 **배포 지점에서 프로그램 실행**  옵션을 사용하여 배포 지점에서 이미지 설치를 실행해야 합니다.  
+  기본적으로 작업 순서에 대한 배포를 만들면 먼저 이미지가 Configuration Manager 클라이언트 캐시로 다운로드된 다음 설치됩니다. 이미지를 실행하기 전에 Configuration Manager 클라이언트 캐시로 이미지를 다운로드하도록 선택한 경우 작업 순서에 하드 드라이브를 다시 분할하는 단계가 포함되어 있으면 하드 드라이브 다시 분할 과정에서 Configuration Manager 클라이언트 캐시의 콘텐츠가 지워지므로 다시 분할 단계가 실패합니다. 작업 순서가 하드 드라이브를 다시 분할해야 하는 경우 작업 순서를 배포할 때 **배포 지점에서 프로그램 실행**  옵션을 사용하여 배포 지점에서 이미지 설치를 실행해야 합니다.  
 
- 자세한 내용은 [Deploy a task sequence](manage-task-sequences-to-automate-tasks.md#BKMK_DeployTS)항목을 참조하세요.  
+  자세한 내용은 [Deploy a task sequence](manage-task-sequences-to-automate-tasks.md#BKMK_DeployTS)항목을 참조하세요.  

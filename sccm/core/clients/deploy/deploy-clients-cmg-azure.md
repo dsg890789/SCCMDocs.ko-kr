@@ -10,16 +10,16 @@ ms.assetid: a44006eb-8650-49f6-94e1-18fa0ca959ee
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 490e5a614a98633629df98abcd554b02cec1261a
-ms.sourcegitcommit: ae03ad403b1732a5a61dec981e3a3010a0f09188
+ms.openlocfilehash: b722187a895a71b4195200354180cdbc8b2813e6
+ms.sourcegitcommit: 12b71da551350c99c5916df3629e33e31040db15
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2018
-ms.locfileid: "51860249"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53530917"
 ---
 # <a name="install-and-assign-configuration-manager-windows-10-clients-using-azure-ad-for-authentication"></a>인증을 위해 Azure AD를 사용하여 Configuration Manager Windows 10 클라이언트 설치 및 할당
 
-Azure AD 인증을 사용하여 Windows 10 디바이스에서 Configuration Manager 클라이언트를 설치하려면 Azure AD(Azure Active Directory)와 Configuration Manager를 통합합니다. 클라이언트는 HTTPS 기반 관리 지점과 직접 통신하는 인트라넷에 있을 수 있습니다. 또한 클라이언트는 CMG을 통해 또는 인터넷 기반 관리 지점과 통신하는 인터넷 기반일 수 있습니다. 이 프로세스는 Azure AD를 사용하여 Configuration Manager 사이트에 클라이언트를 인증합니다. Azure AD를 사용하면 클라이언트 인증 인증서를 구성하고 사용할 필요가 없습니다.
+Azure AD 인증을 사용하여 Windows 10 디바이스에서 Configuration Manager 클라이언트를 설치하려면 Azure AD(Azure Active Directory)와 Configuration Manager를 통합합니다. 클라이언트는 HTTPS 지원 관리 지점 또는 향상된 HTTP를 사용하도록 설정된 사이트의 모든 관리 지점과 직접 통신하는 인트라넷에 있을 수 있습니다. 또한 클라이언트는 CMG 또는 인터넷 기반 관리 지점을 통해 통신하는 인터넷 기반일 수 있습니다. 이 프로세스는 Azure AD를 사용하여 Configuration Manager 사이트에 클라이언트를 인증합니다. Azure AD를 사용하면 클라이언트 인증 인증서를 구성하고 사용할 필요가 없습니다.
 
 
 
@@ -62,9 +62,9 @@ Azure AD 인증을 사용하여 Windows 10 디바이스에서 Configuration Mana
 
 1.  [클라이언트 설정 구성 방법](/sccm/core/clients/deploy/configure-client-settings)의 정보를 사용하여 **Cloud Services** 섹션에서 다음 클라이언트 설정을 구성합니다.  
 
-    - **클라우드 배포 지점에 대한 액세스 허용**: 인터넷 기반 장치를 활용하는 이 설정을 사용하여 Configuration Manager 클라이언트를 설치하기 위해 필요한 콘텐츠를 가져옵니다. 콘텐츠가 클라우드 배포 지점에서 사용할 수 없는 경우 디바이스는 CMG에서 콘텐츠를 검색할 수 있습니다. 클라이언트 설치 부트스트랩은 CMG로 되돌아가기 전에 4시간 동안 클라우드 배포 지점을 다시 시도합니다.<!--495533-->  
+    - **클라우드 배포 지점에 대한 액세스 허용**: 이 설정을 사용하면 인터넷 기반 디바이스에서 Configuration Manager 클라이언트를 설치하는 데 필요한 콘텐츠를 가져올 수 있습니다. 콘텐츠가 클라우드 배포 지점에서 사용할 수 없는 경우 디바이스는 CMG에서 콘텐츠를 검색할 수 있습니다. 클라이언트 설치 부트스트랩은 CMG로 되돌아가기 전에 4시간 동안 클라우드 배포 지점을 다시 시도합니다.<!--495533-->  
 
-    - **Azure Active Directory에 새 Windows 10 도메인에 연결된 장치를 자동으로 등록**: **예** 또는 **아니요**로 설정합니다. 기본 설정은 **예**입니다. 이 동작은 Windows 10 버전 1709에서 기본값이기도 합니다.
+    - **Azure Active Directory에 새 Windows 10 도메인에 연결된 디바이스를 자동으로 등록**: **예** 또는 **아니요**로 설정합니다. 기본 설정은 **예**입니다. 이 동작은 Windows 10 버전 1709에서 기본값이기도 합니다.
 
     - **클라이언트가 클라우드 관리 게이트웨이를 사용하도록 설정** – **예**(기본값) 또는 **아니요**로 설정합니다.  
 

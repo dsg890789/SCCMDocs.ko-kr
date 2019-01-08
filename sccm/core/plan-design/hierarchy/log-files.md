@@ -10,12 +10,12 @@ ms.assetid: c1ff371e-b0ad-4048-aeda-02a9ff08889e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: cf7ca86dd04d60f1ff914294a7430d9f4a7a2fb7
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.openlocfilehash: 58ec927ee795624cb475b31c44d64334047f3422
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52456705"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53416506"
 ---
 # <a name="log-files-in-configuration-manager"></a>Configuration Manager의 로그 파일
 
@@ -57,7 +57,7 @@ Configuration Manager에서는 클라이언트 및 사이트 서버 구성 요�
 
 -   [Configuration Manager 기능에 대한 로그 파일](#BKMK_FunctionLogs)  
 
-    -   [응용 프로그램 관리](#BKMK_AppManageLog)  
+    -   [애플리케이션 관리](#BKMK_AppManageLog)  
 
     -   [Asset intelligence](#BKMK_AILog)  
 
@@ -89,7 +89,7 @@ Configuration Manager에서는 클라이언트 및 사이트 서버 구성 요�
 
     -   [마이그레이션](#BKMK_MigrationLog)  
 
-    -   [모바일 장치](#BKMK_MDMLog)  
+    -   [모바일 디바이스](#BKMK_MDMLog)  
 
     -   [운영 체제 배포](#BKMK_OSDLog)  
 
@@ -146,7 +146,7 @@ Configuration Manager는 다양한 위치에 로그 파일을 저장합니다. �
 |로그 이름|설명|  
 |--------------|-----------------|  
 |CAS.log|콘텐츠 액세스 서비스입니다. 클라이언트의 로컬 패키지 캐시를 유지 관리합니다.|  
-|Ccm32BitLauncher.log|*32비트로 실행*으로 표시된 클라이언트에서 응용 프로그램을 시작하는 작업을 기록합니다.|  
+|Ccm32BitLauncher.log|*32비트로 실행*으로 표시된 클라이언트에서 애플리케이션을 시작하는 작업을 기록합니다.|  
 |CcmEval.log|Configuration Manager 클라이언트 상태 평가 활동 및 Configuration Manager 클라이언트에 필요한 구성 요소에 관한 세부 정보를 기록합니다.|  
 |CcmEvalTask.log|평가 예약 작업에 의해 시작된 Configuration Manager 클라이언트 상태 평가 활동을 기록합니다.|  
 |CcmExec.log|클라이언트 및 SMS 에이전트 호스트 서비스의 활동을 기록합니다. 이 로그 파일에는 절전 모드 해제 프록시를 사용하거나 사용하지 않도록 설정하는 작업에 대한 정보도 포함됩니다.|  
@@ -216,39 +216,39 @@ Configuration Manager는 다양한 위치에 로그 파일을 저장합니다. �
 ###  <a name="BKMK_LogFilesforLnU"></a> Linux 및 UNIX용 클라이언트  
  Linux 및 UNIX용 Configuration Manager 클라이언트는 다음 로그 파일에 정보를 기록합니다.  
 
-> [!TIP]  
+> [!TIP]
 >  CMTrace를 사용하여 Linux 및 UNIX 클라이언트의 로그 파일을 봅니다.  
-
-> [!NOTE]  
+> 
+> [!NOTE]
 >  Linux 및 UNIX용 클라이언트의 최초 릴리스를 사용하는 경우 이 섹션의 설명서를 참조할 때 각 파일 또는 프로세스에 대한 다음 참조를 대체하세요.  
->   
->  -   **omiserver.bin** 를 **nwserver.bin**으로 대체  
-> -   **omi** 를 **nanowbem**으로 대체  
+> 
+> - **omiserver.bin** 를 **nwserver.bin**으로 대체  
+>   -   **omi** 를 **nanowbem**으로 대체  
 
-|로그 이름|세부 정보|  
-|--------------|-------------|  
-|Scxcm.log|Linux 및 UNIX용 Configuration Manager 클라이언트의 핵심 서비스(ccmexec.bin)에 대한 로그 파일입니다. 이 로그 파일에는 ccmexec.bin의 설치 및 진행 중인 작업에 대한 정보가 포함됩니다.<br /><br /> 이 로그 파일은 기본적으로 **/var/opt/microsoft/scxcm.log**에 있습니다.<br /><br /> 이 로그 파일의 위치를 변경하려면 **/opt/microsoft/configmgr/etc/scxcm.conf** 를 편집하고 **경로** 필드를 변경합니다. 변경 내용을 적용하기 위해 클라이언트 컴퓨터 또는 서비스를 다시 시작하지 않아도 됩니다.<br /><br /> 로그 수준은 다음 네 가지 설정 중 하나로 설정할 수 있습니다.|  
-|Scxcmprovider.log|Linux 및 UNIX용 Configuration Manager 클라이언트의 CIM 서비스(omiserver.bin)에 대한 로그 파일입니다. 이 로그 파일에는 nwserver.bin의 지속적인 작업에 대한 정보가 포함됩니다.<br /><br /> 이 로그는 **/var/opt/microsoft/configmgr/scxcmprovider.log**에 있습니다.<br /><br /> 이 로그 파일의 위치를 변경하려면 **/opt/microsoft/omi/etc/scxcmprovider.conf** 를 편집하고 **경로** 필드를 변경합니다. 변경 내용을 적용하기 위해 클라이언트 컴퓨터 또는 서비스를 다시 시작하지 않아도 됩니다.<br /><br /> 로그 수준은 다음 세 가지 설정 중 하나로 설정할 수 있습니다.|  
+|     로그 이름      |                                                                                                                                                                                                                                                                                               세부 정보                                                                                                                                                                                                                                                                                               |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     Scxcm.log     | Linux 및 UNIX용 Configuration Manager 클라이언트의 핵심 서비스(ccmexec.bin)에 대한 로그 파일입니다. 이 로그 파일에는 ccmexec.bin의 설치 및 진행 중인 작업에 대한 정보가 포함됩니다.<br /><br /> 이 로그 파일은 기본적으로 **/var/opt/microsoft/scxcm.log**에 있습니다.<br /><br /> 이 로그 파일의 위치를 변경하려면 **/opt/microsoft/configmgr/etc/scxcm.conf** 를 편집하고 **경로** 필드를 변경합니다. 변경 내용을 적용하기 위해 클라이언트 컴퓨터 또는 서비스를 다시 시작하지 않아도 됩니다.<br /><br /> 로그 수준은 다음 네 가지 설정 중 하나로 설정할 수 있습니다. |
+| Scxcmprovider.log |     Linux 및 UNIX용 Configuration Manager 클라이언트의 CIM 서비스(omiserver.bin)에 대한 로그 파일입니다. 이 로그 파일에는 nwserver.bin의 지속적인 작업에 대한 정보가 포함됩니다.<br /><br /> 이 로그는 <strong>/var/opt/microsoft/configmgr/scxcmprovider.log</strong>에 있습니다.<br /><br /> 이 로그 파일의 위치를 변경하려면 **/opt/microsoft/omi/etc/scxcmprovider.conf** 를 편집하고 **경로** 필드를 변경합니다. 변경 내용을 적용하기 위해 클라이언트 컴퓨터 또는 서비스를 다시 시작하지 않아도 됩니다.<br /><br /> 로그 수준은 다음 세 가지 설정 중 하나로 설정할 수 있습니다.      |
 
  두 로그 파일은 여러 수준의 로깅을 지원합니다.  
 
 -   **scxcm.log**. 로그 수준을 변경하려면 **/opt/microsoft/configmgr/etc/scxcm.conf** 를 편집하고 **MODULE** 태그의 각 인스턴스를 원하는 로그 수준으로 변경합니다.  
 
-    -   ERROR: 주의가 필요한 문제를 나타냅니다.  
+    -   오류: 주의가 필요한 문제를 나타냄  
 
-    -   WARNING: 클라이언트 작업에 대해 발생 가능한 문제를 나타냅니다.  
+    -   경고: 클라이언트 작업에 대해 발생 가능한 문제를 나타냄  
 
-    -   INFO: 클라이언트의 다양한 이벤트 상태를 나타내는 세부적인 로그 정보입니다.  
+    -   정보: 클라이언트의 다양한 이벤트 상태를 나타내는 자세한 로깅  
 
-    -   TRACE: 일반적으로 문제를 진단하는 데 사용되는 자세한 정보 로깅입니다.  
+    -   추적: 일반적으로 문제를 진단하는 데 사용되는 자세한 정보 로깅  
 
 -   **scxcmprovider.log**. 로그 수준을 변경하려면 **/opt/microsoft/omi/etc/ scxcmprovider.conf**를 편집하여 **MODULE** 태그의 각 인스턴스를 원하는 로그 수준으로 변경합니다.  
 
-    -   ERROR: 주의가 필요한 문제를 나타냅니다.  
+    -   오류: 주의가 필요한 문제를 나타냄  
 
-    -   WARNING: 클라이언트 작업에 대해 발생 가능한 문제를 나타냅니다.
+    -   경고: 클라이언트 작업에 대해 발생 가능한 문제를 나타냄
 
-    -   INFO: 클라이언트의 다양한 이벤트 상태를 나타내는 세부적인 로그 정보입니다.  
+    -   정보: 클라이언트의 다양한 이벤트 상태를 나타내는 자세한 로깅  
 
 정상 작동 상태에서는 ERROR 로그 수준을 사용합니다. 이 로그 수준이 가장 작은 로그 파일을 만듭니다. 로그 수준을 ERROR에서 WARNING, INFO, TRACE 등으로 올리는 경우 더 많은 데이터가 파일에 기록되므로 더 큰 로그 파일이 생성됩니다.  
 
@@ -424,7 +424,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 ##  <a name="BKMK_FunctionLogs"></a> Configuration Manager 기능에 대한 로그 파일  
  다음 섹션에는 Configuration Manager 기능과 관련된 로그 파일이 나와 있습니다.  
 
-###  <a name="BKMK_AppManageLog"></a> 응용 프로그램 관리  
+###  <a name="BKMK_AppManageLog"></a> 애플리케이션 관리  
  다음 표에는 애플리케이션 관리와 관련된 정보가 포함된 로그 파일이 나와 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
@@ -488,7 +488,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |Crpmsi.log|인증서 등록 지점의 설치 및 구성에 대한 세부 정보를 기록합니다.|인증서 등록 지점|  
 |NDESPlugin.log|문제 확인 및 인증서 등록 작업을 기록합니다.|Configuration Manager 정책 모듈 및 네트워크 디바이스 등록 서비스|  
 
- Configuration Manager 로그 파일뿐 아니라 네트워크 디바이스 등록 서비스를 실행하는 서버와 인증서 등록 지점을 호스트하는 서버의 이벤트 뷰어에서 Windows 응용 프로그램 로그를 검토합니다. 예를 들어 **NetworkDeviceEnrollmentService** 원본에서 메시지를 찾아 봅니다. 다음 로그 파일도 사용할 수 있습니다.  
+ Configuration Manager 로그 파일뿐 아니라 네트워크 장치 등록 서비스를 실행하는 서버와 인증서 등록 지점을 호스트하는 서버의 이벤트 뷰어에서 Windows 애플리케이션 로그를 검토합니다. 예를 들어 **NetworkDeviceEnrollmentService** 원본에서 메시지를 찾아 봅니다. 다음 로그 파일도 사용할 수 있습니다.  
 
 -   네트워크 디바이스 등록 서비스에 대한 IIS 로그 파일: **&lt;경로\>\inetpub\logs\LogFiles\W3SVC1**  
 
@@ -631,7 +631,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |--------------|-----------------|----------------------------|  
 |migmctrl.log|마이그레이션 작업, 공유 배포 지점 및 배포 지점 업그레이드와 관련된 마이그레이션 작업에 대한 정보를 기록합니다.|Configuration Manager 계층 구조의 최상위 사이트 및 각 하위 기본 사이트.<br /><br /> 기본 사이트가 여러 개인 계층인 경우 중앙 관리 사이트에 만들어진 로그 파일을 사용하세요.|  
 
-###  <a name="BKMK_MDMLog"></a> 모바일 장치  
+###  <a name="BKMK_MDMLog"></a> 모바일 디바이스  
  다음 섹션에는 모바일 디바이스 관리와 관련된 정보가 포함된 로그 파일이 나열되어 있습니다.  
 
 ####  <a name="BKMK_EnrollmentLog"></a> 등록  
@@ -655,7 +655,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |--------------|-----------------|----------------------------|  
 |easdisc.log|Exchange Server 커넥터의 활동과 상태를 기록합니다.|사이트 서버|  
 
-####  <a name="BKMK_MDLegLog"></a> 모바일 장치 기존  
+####  <a name="BKMK_MDLegLog"></a> 모바일 디바이스 기존  
  다음 표에는 모바일 디바이스 기존 클라이언트와 관련된 정보가 포함된 로그가 나열되어 있습니다.  
 
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  

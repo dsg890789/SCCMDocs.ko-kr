@@ -10,12 +10,12 @@ ms.assetid: c5a42100-2f60-4952-b495-918025ea6559
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: de8116e1fec500750e429edfb48303b8c24822f4
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: 4e1ee76acca06534605e58fff27d2e7ec5e464dd
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39384840"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53424717"
 ---
 # <a name="size-and-scale-numbers-for-system-center-configuration-manager"></a>System Center Configuration Manager의 크기 조정 및 규모 숫자 값
 
@@ -28,7 +28,7 @@ ms.locfileid: "39384840"
 이 항목의 정보를 다음 문서의 정보와 함께 참조하세요.
 -   [권장 하드웨어](../../../core/plan-design/configs/recommended-hardware.md)
 -   [사이트 시스템 서버에 대해 지원되는 운영 체제](../../../core/plan-design/configs/supported-operating-systems-for-site-system-servers.md)  
--   [클라이언트 및 장치에 대해 지원되는 운영 체제](../../../core/plan-design/configs/supported-operating-systems-for-clients-and-devices.md)
+-   [클라이언트 및 디바이스에 대해 지원되는 운영 체제](../../../core/plan-design/configs/supported-operating-systems-for-clients-and-devices.md)
 -   [사이트 및 사이트 시스템 필수 조건](../../../core/plan-design/configs/site-and-site-system-prerequisites.md)
 
 
@@ -43,11 +43,11 @@ ms.locfileid: "39384840"
 
 ### <a name="primary-site"></a>기본 사이트  
 
--   각 기본 사이트는 최대 250개의 보조 사이트를 지원합니다.  
+- 각 기본 사이트는 최대 250개의 보조 사이트를 지원합니다.  
 
--   기본 사이트당 보조 사이트 수는 지속적으로 연결되며 안정적으로 유지되는 WAN(광역 네트워크) 연결을 기준으로 합니다. 클라이언트 수가 500개 미만인 위치의 경우에는 보조 사이트 대신 배포 지점을 사용할 수 있습니다.  
+- 기본 사이트당 보조 사이트 수는 지속적으로 연결되며 안정적으로 유지되는 WAN(광역 네트워크) 연결을 기준으로 합니다. 클라이언트 수가 500개 미만인 위치의 경우에는 보조 사이트 대신 배포 지점을 사용할 수 있습니다.  
 
- 기본 사이트에서 지원할 수 있는 클라이언트 및 디바이스 수에 대한 자세한 내용은 [사이트 및 계층 구조에 대한 클라이언트 수](#bkmk_clientnumbers)를 참조하세요.  
+  기본 사이트에서 지원할 수 있는 클라이언트 및 디바이스 수에 대한 자세한 내용은 [사이트 및 계층 구조에 대한 클라이언트 수](#bkmk_clientnumbers)를 참조하세요.  
 
 
 ### <a name="secondary-site"></a>보조 사이트  
@@ -135,14 +135,14 @@ ms.locfileid: "39384840"
 
 ### <a name="management-point"></a>관리 지점  
 
--   각 기본 사이트는 최대 15개의 관리 지점을 지원합니다.  
+- 각 기본 사이트는 최대 15개의 관리 지점을 지원합니다.  
 
-    > [!TIP]  
-    >  기본 사이트 서버 또는 사이트 데이터베이스 서버에서 저속 링크를 사용하여 서버에 관리 지점을 설치하지 마세요.  
+  > [!TIP]  
+  >  기본 사이트 서버 또는 사이트 데이터베이스 서버에서 저속 링크를 사용하여 서버에 관리 지점을 설치하지 마세요.  
 
--   각 보조 사이트는 관리 지점 하나를 지원하며, 이 관리 지점은 보조 사이트 서버에 설치해야 합니다.  
+- 각 보조 사이트는 관리 지점 하나를 지원하며, 이 관리 지점은 보조 사이트 서버에 설치해야 합니다.  
 
- 관리 지점에서 지원할 수 있는 클라이언트 및 디바이스 수에 대한 자세한 내용은 [관리 지점](#bkmk_mp) 섹션을 참조하세요.  
+  관리 지점에서 지원할 수 있는 클라이언트 및 디바이스 수에 대한 자세한 내용은 [관리 지점](#bkmk_mp) 섹션을 참조하세요.  
 
 
 ### <a name="software-update-point"></a>소프트웨어 업데이트 지점  
@@ -160,17 +160,17 @@ ms.locfileid: "39384840"
 ###  <a name="bkmk_cas"></a> 중앙 관리 사이트가 있는 계층 구조  
 중앙 관리 사이트는 다음과 같은 세 그룹에 대해 나열된 디바이스 수까지 포함하는 총 디바이스 수를 지원합니다.  
 
--   데스크톱(Windows, Linux 및 UNIX를 실행하는 컴퓨터) 700,000대 또한 [임베디드 디바이스](#embedded) 지원을 참조하세요.
+- 데스크톱(Windows, Linux 및 UNIX를 실행하는 컴퓨터) 700,000대 또한 [임베디드 디바이스](#embedded) 지원을 참조하세요.
 
--   Mac 및 Windows CE 7.0을 실행하는 디바이스 25,000대  
+- Mac 및 Windows CE 7.0을 실행하는 디바이스 25,000대  
 
--   배포에서 MDM(모바일 디바이스 관리)을 지원하는 방법에 따라 수치는 다음 중 하나입니다.  
+- 배포에서 MDM(모바일 디바이스 관리)을 지원하는 방법에 따라 수치는 다음 중 하나입니다.  
 
-    -   온-프레미스 MDM을 사용하여 관리하는 디바이스 100,000대  
+  -   온-프레미스 MDM을 사용하여 관리하는 디바이스 100,000대  
 
-    -   클라우드 기반 디바이스 300,000대  
+  -   클라우드 기반 디바이스 300,000대  
 
- 예를 들어 Microsoft Intune을 통합하면 계층 구조에서 데스크톱 700,000대, Mac 및 Windows CE 7.0 최대 25,000대, 클라우드 기반 디바이스 최대 300,000대를 지원할 수 있습니다. 이 계층 구조는 총 1,025,000대의 디바이스를 지원합니다. 온-프레미스 MDM으로 관리하는 디바이스를 지원하는 경우 이 계층 구조의 총 디바이스 수는 825,000대입니다.  
+  예를 들어 Microsoft Intune을 통합하면 계층 구조에서 데스크톱 700,000대, Mac 및 Windows CE 7.0 최대 25,000대, 클라우드 기반 디바이스 최대 300,000대를 지원할 수 있습니다. 이 계층 구조는 총 1,025,000대의 디바이스를 지원합니다. 온-프레미스 MDM으로 관리하는 디바이스를 지원하는 경우 이 계층 구조의 총 디바이스 수는 825,000대입니다.  
 
 > [!IMPORTANT]  
 >  중앙 관리 사이트가 SQL Server Standard Edition을 사용하는 계층 구조에서, 계층 구조는 최대 50,000대의 데스크톱 및 디바이스를 지원합니다. 50,000개 이상의 데스크톱과 디바이스를 지원하려면 SQL Server Enterprise Edition을 사용해야 합니다. 이 요구 사항은 중앙 관리 사이트에만 적용됩니다. 독립 실행형 기본 사이트 또는 자식 기본 사이트에는 적용되지 않습니다. 기본 사이트에 사용하는 SQL Server 버전은 명시된 클라이언트 수를 지원하는 용량을 제한하지 않습니다.   
@@ -206,7 +206,7 @@ ms.locfileid: "39384840"
 예를 들어 15,0000대 데스크톱 및 10,000대 Mac 또는 Windows CE 7.0을 지원하는 독립 실행형 기본 사이트에서는 15,000대의 추가 디바이스만 지원할 수 있습니다. 이러한 디바이스는 클라우드 기반이거나 온-프레미스 MDM을 사용하여 관리될 수 있습니다.  
 
 
-### <a name="embedded"></a>기본 사이트와 Windows Embedded 장치
+### <a name="embedded"></a>기본 사이트와 Windows Embedded 디바이스
 기본 사이트가 FBWF(파일 기반 쓰기 필터)를 사용할 수 있는 Windows Embedded 디바이스를 지원합니다. 임베디드 디바이스에서 쓰기 필터를 사용할 수 없는 경우 기본 사이트는 임베디드 디바이스를 해당 사이트에 대해 허용되는 디바이스 수까지 지원할 수 있습니다. 기본 사이트에서 지원하는 총 디바이스 중에서 최대 10,000대까지 Windows Embedded 디바이스를 사용할 수 있습니다. 이러한 디바이스는 [Windows Embedded 디바이스에 클라이언트 배포 계획](/sccm/core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices)의 중요 참고 사항에 나열된 예외에 대해 구성해야 합니다. EWF를 사용할 수 있으며 예외가 적용되도록 구성되어 있지 않은 Windows Embedded 디바이스의 경우 기본 사이트에서 3,000개만 지원됩니다.
 
 

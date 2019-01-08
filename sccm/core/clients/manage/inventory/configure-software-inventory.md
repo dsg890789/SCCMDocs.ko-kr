@@ -10,12 +10,12 @@ ms.assetid: f86559de-092a-4ce8-9b43-5d7530e0b763
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 346ff3254f4c1833f49bf256cbf5ad0c489d77e0
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 0e3b6e1ab2962cec7891501ec6b19f081631e187
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32332582"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53421130"
 ---
 # <a name="how-to-configure-software-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 인벤토리를 구성하는 방법
 
@@ -25,26 +25,26 @@ ms.locfileid: "32332582"
 
 ## <a name="to-configure-software-inventory"></a>소프트웨어 인벤토리를 구성하려면  
 
-1.  Configuration Manager 콘솔에서 **관리** > **클라이언트 설정** **기본 클라이언트 설정**을 선택합니다.  
+1. Configuration Manager 콘솔에서 **관리** > **클라이언트 설정** **기본 클라이언트 설정**을 선택합니다.  
 
-4.  **홈** 탭의 **속성** 그룹에서 **속성**을 선택합니다.  
+2. **홈** 탭의 **속성** 그룹에서 **속성**을 선택합니다.  
 
-5.  **기본 설정** 대화 상자에서 **소프트웨어 인벤토리**를 선택합니다.  
+3. **기본 설정** 대화 상자에서 **소프트웨어 인벤토리**를 선택합니다.  
 
-6.  **장치 설정** 목록에서 다음 값을 구성합니다.  
+4. **디바이스 설정** 목록에서 다음 값을 구성합니다.  
 
-    -   **클라이언트에서 소프트웨어 인벤토리 사용** - 드롭다운 목록에서 **True**를 선택합니다.  
+   -   **클라이언트에서 소프트웨어 인벤토리 사용** - 드롭다운 목록에서 **True**를 선택합니다.  
 
-    -   **소프트웨어 인벤토리 및 파일 컬렉션 일정 예약** – 클라이언트가 소프트웨어 인벤토리 및 파일을 수집하는 간격을 구성합니다.   
+   -   **소프트웨어 인벤토리 및 파일 컬렉션 일정 예약** – 클라이언트가 소프트웨어 인벤토리 및 파일을 수집하는 간격을 구성합니다.   
 
-7.  필요한 클라이언트 설정을 구성합니다. [System Center Configuration Manager의 클라이언트 설정 정보](../../../../core/clients/deploy/about-client-settings.md) 항목의 [소프트웨어 인벤토리](../../../../core/clients/deploy/about-client-settings.md#software-inventory) 섹션에는 클라이언트 설정 목록이 있습니다.  
+5. 필요한 클라이언트 설정을 구성합니다. [System Center Configuration Manager의 클라이언트 설정 정보](../../../../core/clients/deploy/about-client-settings.md) 항목의 [소프트웨어 인벤토리](../../../../core/clients/deploy/about-client-settings.md#software-inventory) 섹션에는 클라이언트 설정 목록이 있습니다.  
 
- 클라이언트 컴퓨터는 다음에 클라이언트 정책을 다운로드할 때 이 설정으로 구성됩니다. 단일 클라이언트에 대한 정책 검색을 시작하려면 [System Center Configuration Manager에서 클라이언트를 관리하는 방법](../../../../core/clients/manage/manage-clients.md)을 참조하세요.  
+   클라이언트 컴퓨터는 다음에 클라이언트 정책을 다운로드할 때 이 설정으로 구성됩니다. 단일 클라이언트에 대한 정책 검색을 시작하려면 [System Center Configuration Manager에서 클라이언트를 관리하는 방법](../../../../core/clients/manage/manage-clients.md)을 참조하세요.  
 
- > [!TIP]  
-        >   inventoryprovider.log의 오류 코드 80041006은 WMI 공급자에 메모리가 부족하다는 의미입니다. 즉, 공급자에 대한 메모리 할당량 제한에 도달했고 인벤토리 공급자를 계속할 수 없습니다.
-이 경우에 인벤토리 항목이 보고되지 않도록 인벤토리 에이전트는 0개 항목을 포함한 보고서를 만듭니다. <br/>
-이 오류에 가능한 솔루션은 소프트웨어 인벤토리 컬렉션의 범위를 줄이는 것일 수 있습니다. 인벤토리 범위를 제한한 후에 오류가 발생하는 경우에 [_ProviderHostQuotaConfiguration](https://msdn.microsoft.com/library/aa394671) 클래스에 정의된[ MemoryPerHost](https://blogs.technet.microsoft.com/askperf/2008/09/16/memory-and-handle-quotas-in-the-wmi-provider-service/) 속성이 증가하면 솔루션을 제공할 수 있습니다.
+   > [!TIP]
+   >   inventoryprovider.log의 오류 코드 80041006은 WMI 공급자에 메모리가 부족하다는 의미입니다. 즉, 공급자에 대한 메모리 할당량 제한에 도달했고 인벤토리 공급자를 계속할 수 없습니다.
+   > 이 경우에 인벤토리 항목이 보고되지 않도록 인벤토리 에이전트는 0개 항목을 포함한 보고서를 만듭니다. <br/>
+   > 이 오류에 가능한 솔루션은 소프트웨어 인벤토리 컬렉션의 범위를 줄이는 것일 수 있습니다. 인벤토리 범위를 제한한 후에 오류가 발생하는 경우에 [_ProviderHostQuotaConfiguration](https://msdn.microsoft.com/library/aa394671) 클래스에 정의된[ MemoryPerHost](https://blogs.technet.microsoft.com/askperf/2008/09/16/memory-and-handle-quotas-in-the-wmi-provider-service/) 속성이 증가하면 솔루션을 제공할 수 있습니다.
 
 <!--SMS.480648 include WMI Out of memory tip -->
 

@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 robots: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a6a1f8257c2a334b539499a5febbdb77729f0fb2
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: f0ec652a9fb7d4ef6bef881bfc96f1be2b4e297a
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32349918"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53424343"
 ---
 # <a name="manage-publications-in-updates-publisher"></a>Updates Publisher의 게시물 관리
 
@@ -41,9 +41,9 @@ ms.locfileid: "32349918"
 
 2. 다음으로 **홈** 탭에서 다음 옵션 중 하나를 선택합니다. 사용할 수 있는 옵션은 선택한 업데이트의 게시물 유형에 따라 달라집니다.
 
-  -   **자동**
-  -   **전체 콘텐츠**
-  -   **메타데이터만**
+   -   **자동**
+   -   **전체 콘텐츠**
+   -   **메타데이터만**
 
 변경한 후 새 값을 보려면 게시물 뷰를 새로 고쳐야 할 수 있습니다.
 
@@ -67,13 +67,13 @@ ms.locfileid: "32349918"
 
 ### <a name="to-publish-a-publication"></a>게시물을 게시하려면
 
-1.  **게시물 작업 영역**으로 이동한 다음 게시하거나 내보내려는 업데이트 및 번들 그룹이 포함된 게시물을 선택합니다. 그런 다음 리본의 **홈** 탭에서 **게시**를 선택합니다.
+1. **게시물 작업 영역**으로 이동한 다음 게시하거나 내보내려는 업데이트 및 번들 그룹이 포함된 게시물을 선택합니다. 그런 다음 리본의 **홈** 탭에서 **게시**를 선택합니다.
 
-2.  **게시** 마법사의 **선택** 페이지에서 새 게시 인증서를 사용하여 모든 업데이트에 서명하도록 선택할 수 있지만 게시물 유형은 변경할 수 없습니다.
+2. **게시** 마법사의 **선택** 페이지에서 새 게시 인증서를 사용하여 모든 업데이트에 서명하도록 선택할 수 있지만 게시물 유형은 변경할 수 없습니다.
 
-3.  마법사를 완료합니다.
+3. 마법사를 완료합니다.
 
-  게시에 실패하면 자세한 정보를 제공할 수 있는 UpdatesPublisher.log 파일에 대한 링크가 제공됩니다.
+   게시에 실패하면 자세한 정보를 제공할 수 있는 UpdatesPublisher.log 파일에 대한 링크가 제공됩니다.
 
 ## <a name="export-a-publication"></a>게시물 내보내기
 Updates Publisher 리포지토리에서 게시물을 내보낼 수 있습니다. 이렇게 하면 해당 게시물에 할당된 업데이트 및 번들을 내보내고 업데이트 카탈로그를 만듭니다. 그러면 카탈로그를 [추가](/sccm/sum/tools/updates-publisher-catalogs#add-software-update-catalogs)하고 해당 카탈로그를 Updates Publisher의 다른 인스턴스로 [가져올](/sccm/sum/tools/updates-publisher-catalogs#mport-updates) 수 있습니다. 게시물의 일부가 아닌 [업데이트를 내보낼](/sccm/sum/tools/manage-updates-with-updates-publisher#export-updates) 수도 있습니다.

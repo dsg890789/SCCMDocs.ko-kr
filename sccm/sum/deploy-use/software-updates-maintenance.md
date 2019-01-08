@@ -10,12 +10,12 @@ ms.technology: configmgr-sum
 ms.assetid: 4b0e2e90-aac7-4d06-a707-512eee6e576c
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 3a44643870234a08169db1d55cc834e4ca5fcbb5
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.openlocfilehash: d2196890070aa842ac58bc127af8aaa876640ec4
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385493"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53417033"
 ---
 # <a name="software-updates-maintenance"></a>소프트웨어 업데이트 유지 관리
 
@@ -68,7 +68,7 @@ Configuration Manager 1806 버전 이전의 WSUS 정리 옵션에서 실행하�
 - 서버에 연결되지 않은 컴퓨터
 - 불필요한 업데이트 파일
 
- 자세한 내용과 지침은 [Microsoft WSUS 및 Configuration Manager SUP 유지 관리에 대한 전체 가이드](https://blogs.technet.microsoft.com/configurationmgr/2016/01/26/the-complete-guide-to-microsoft-wsus-and-configuration-manager-sup-maintenance/) 블로그 게시물을 참조하세요. 
+  자세한 내용과 지침은 [Microsoft WSUS 및 Configuration Manager SUP 유지 관리에 대한 전체 가이드](https://blogs.technet.microsoft.com/configurationmgr/2016/01/26/the-complete-guide-to-microsoft-wsus-and-configuration-manager-sup-maintenance/) 블로그 게시물을 참조하세요. 
 
 ## <a name="updates-cleanup-log-entries"></a>정리 로그 항목 업데이트
  

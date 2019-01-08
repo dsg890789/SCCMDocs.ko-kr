@@ -10,19 +10,19 @@ ms.assetid: 2c8f57cf-1968-48de-87fb-4897432ed6e0
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 976aeaacfadfa7d2f189f20ab001486d486b764e
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: c88907b82e0066024128985e2d31522a2ea897ee
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32335884"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53416778"
 ---
 # <a name="how-to-monitor-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트를 모니터링하는 방법
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 
- System Center Configuration Manager 클라이언트 응용 프로그램이 사이트의 Windows 컴퓨터 및 디바이스에 설치되면 Configuration Manager 콘솔에서 해당 상태 및 활동을 모니터링할 수 있습니다.  
+ System Center Configuration Manager 클라이언트 애플리케이션이 사이트의 Windows 컴퓨터 및 장치에 설치되면 Configuration Manager 콘솔에서 해당 상태 및 활동을 모니터링할 수 있습니다.  
 
 ##  <a name="bkmk_about"></a> 클라이언트 상태에 대한 정보  
  Configuration Manager에서는 다음과 같은 정보 유형을 클라이언트 상태로 제공합니다.  
@@ -52,7 +52,7 @@ ms.locfileid: "32335884"
 
 2.  온라인 상태에 대한 자세한 내용을 보려면 열 머리글을 마우스 오른쪽 단추로 클릭하고 추가하려는 온라인 상태 필드를 클릭하여 디바이스 보기에 클라이언트 온라인 상태 정보를 추가합니다. 추가할 수 있는 열은 다음과 같습니다.  
 
-    -   **장치 온라인 상태** 는 클라이언트가 현재 온라인 상태인지 또는 오프라인 상태인지를 나타냅니다. 이는 아이콘으로 제공되는 것과 동일한 정보입니다.  
+    -   **디바이스 온라인 상태** 는 클라이언트가 현재 온라인 상태인지 또는 오프라인 상태인지를 나타냅니다. 이는 아이콘으로 제공되는 것과 동일한 정보입니다.  
 
     -   **마지막 온라인 시간** 은 클라이언트 온라인 상태가 오프라인에서 온라인으로 변경되었을 때를 나타냅니다.  
 
@@ -62,15 +62,15 @@ ms.locfileid: "32335884"
 
 ##  <a name="bkmk_allStatus"></a> 모든 클라이언트의 상태 모니터링  
 
-1.  Configuration Manager 콘솔에서 **모니터링** > **클라이언트 상태**를 클릭합니다. 콘솔의 이 페이지에서 전체 사이트에 걸쳐 클라이언트 활동 및 클라이언트 검사에 대한 전체 통계를 검토할 수 있습니다.  또한 여러 컬렉션을 선택하여 정보의 범위를 변경할 수 있습니다.  
+1. Configuration Manager 콘솔에서 **모니터링** > **클라이언트 상태**를 클릭합니다. 콘솔의 이 페이지에서 전체 사이트에 걸쳐 클라이언트 활동 및 클라이언트 검사에 대한 전체 통계를 검토할 수 있습니다.  또한 여러 컬렉션을 선택하여 정보의 범위를 변경할 수 있습니다.  
 
-2.  보고된 통계에 대한 세부 정보를 드릴다운하려면 보고된 정보(예: **클라이언트 검사를 통과했거나 결과가 없는 활성 클라이언트**)의 이름을 클릭하고 개별 클라이언트에 대한 정보를 검토합니다.  
+2. 보고된 통계에 대한 세부 정보를 드릴다운하려면 보고된 정보(예: **클라이언트 검사를 통과했거나 결과가 없는 활성 클라이언트**)의 이름을 클릭하고 개별 클라이언트에 대한 정보를 검토합니다.  
 
-3.  **클라이언트 활동**을 클릭하여 Configuration Manager 사이트에서 클라이언트 활동을 보여 주는 차트를 표시합니다.  
+3. **클라이언트 활동**을 클릭하여 Configuration Manager 사이트에서 클라이언트 활동을 보여 주는 차트를 표시합니다.  
 
-4.  **클라이언트 검사**를 클릭하여 Configuration Manager 사이트에서 클라이언트 검사의 상태를 표시합니다.  
+4. **클라이언트 검사**를 클릭하여 Configuration Manager 사이트에서 클라이언트 검사의 상태를 표시합니다.  
 
- 클라이언트 검사 결과 또는 클라이언트 활동이 컬렉션 내 지정된 클라이언트 비율(%) 아래로 떨어지거나 지정된 클라이언트 비율(%)에 대해 재구성이 실패할 경우 알림을 보내도록 경고를 구성할 수 있습니다. 클라이언트 상태를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 상태를 구성하는 방법](../../../core/clients/deploy/configure-client-status.md)을 참조하세요.  
+   클라이언트 검사 결과 또는 클라이언트 활동이 컬렉션 내 지정된 클라이언트 비율(%) 아래로 떨어지거나 지정된 클라이언트 비율(%)에 대해 재구성이 실패할 경우 알림을 보내도록 경고를 구성할 수 있습니다. 클라이언트 상태를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 상태를 구성하는 방법](../../../core/clients/deploy/configure-client-status.md)을 참조하세요.  
 
 ##  <a name="BKMK_ClientHealth"></a> 클라이언트 검사를 통한 검사 및 재구성  
  다음 검사 및 재구성은 클라이언트 검사를 통해 수행할 수 있습니다.  
@@ -103,8 +103,8 @@ ms.locfileid: "32335884"
 |Configuration Manager 원격 제어 서비스 시작 유형이 자동 또는 수동인지 확인|서비스 시작 유형을 '자동'으로 다시 설정|추가 정보 없음|  
 |Configuration Manager 원격 제어 서비스가 실행 중인지 확인|원격 제어 서비스를 시작|추가 정보 없음|  
 |클라이언트 WMI 공급자가 정상인지 확인|WMI(Windows Management Instrumentation) 서비스를 다시 시작|이 클라이언트 검사의 해결 방법은 Windows Server 2003, Windows XP(64비트) 이하를 실행하는 컴퓨터에서만 수행해야 합니다.|  
-|절전 모드 해제 프록시 서비스(ConfigMgr 절전 모드 해제 프록시)가 실행 중인지 확인|ConfigMgr 절전 모드 해제 프록시 서비스를 시작|이 클라이언트 검사는 지원되는 클라이언트 운영 체제에서 **전원 관리**: **절전 모드 해제 프록시 사용** 클라이언트 설정이 **예** 로 설정된 경우에만 수행됩니다.|  
-|절전 모드 해제 프록시 서비스(ConfigMgr 절전 모드 해제 프록시) 시작 유형이 자동인지 확인|ConfigMgr 절전 모드 해제 프록시 서비스 시작 유형을 '자동'으로 다시 설정|이 클라이언트 검사는 지원되는 클라이언트 운영 체제에서 **전원 관리**: **절전 모드 해제 프록시 사용** 클라이언트 설정이 **예** 로 설정된 경우에만 수행됩니다.|  
+|절전 모드 해제 프록시 서비스(ConfigMgr 절전 모드 해제 프록시)가 실행 중인지 확인|ConfigMgr 절전 모드 해제 프록시 서비스를 시작|이 클라이언트 검사는 지원되는 클라이언트 운영 체제에서 **전원 관리**: **절전 모드 해제 프록시 사용** 클라이언트 설정이 **예**로 설정된 경우에만 수행됩니다.|  
+|절전 모드 해제 프록시 서비스(ConfigMgr 절전 모드 해제 프록시) 시작 유형이 자동인지 확인|ConfigMgr 절전 모드 해제 프록시 서비스 시작 유형을 '자동'으로 다시 설정|이 클라이언트 검사는 지원되는 클라이언트 운영 체제에서 **전원 관리**: **절전 모드 해제 프록시 사용** 클라이언트 설정이 **예**로 설정된 경우에만 수행됩니다.|  
 
 ## <a name="client-deployment-log-files"></a>클라이언트 배포 로그 파일
 클라이언트 배포 및 관리 작업에 사용되는 로그 파일에 대한 자세한 내용은 [System Center Configuration Manager의 로그 파일](/sccm/core/plan-design/hierarchy/log-files#BKMK_ClientLogs)을 참조하세요.
