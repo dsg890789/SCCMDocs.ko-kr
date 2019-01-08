@@ -10,12 +10,12 @@ ms.assetid: f504de3e-4caf-455c-80d7-a63f13f4c5d9
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 626c52b827e38a53ed3b8982963496f29f11acb5
-ms.sourcegitcommit: 5b3ff56018cfc6bda9643c9f1bebc575173f61bc
-ms.translationtype: HT
+ms.openlocfilehash: dbebdde88a5031eec91a2383e105d06cbc7541e5
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083771"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53420450"
 ---
 #  <a name="configure-alerts-for-endpoint-protection-in-configuration-manager"></a>Configuration Manager에서 Endpoint Protection에 대한 경고를 구성하는 방법
 
@@ -32,9 +32,9 @@ ms.locfileid: "50083771"
 
 1.  Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.
 
-2.  **자산 및 호환성** 작업 영역에서 **장치 컬렉션**을 클릭합니다.
+2.  **자산 및 호환성** 작업 영역에서 **디바이스 컬렉션**을 클릭합니다.
 
-3.  **장치 컬렉션** 목록에서 경고를 구성할 컬렉션을 선택하고 **홈** 탭의 **속성** 그룹에서 **속성**을 클릭합니다.
+3.  **디바이스 컬렉션** 목록에서 경고를 구성할 컬렉션을 선택하고 **홈** 탭의 **속성** 그룹에서 **속성**을 클릭합니다.
 
     > [!NOTE]
     >  사용자 컬렉션에 대해서는 경고를 구성할 수 없습니다.
@@ -92,7 +92,7 @@ Configuration Manager 버전 1702부터 Endpoint Protection 클라이언트가 �
 경고가 생성되는 백분율을 구성하려면 **모니터링** > **경고** > **모든 경고**를 확장하고 **맬웨어 방지 클라이언트가 오래됨**을 두 번 클릭한 다음 **오래된 버전의 맬웨어 방지 클라이언트로 관리되는 클라이언트의 비율이 다음 이상인 경우 경고 생성** 옵션을 수정합니다.
 
 > [!div class="button"]
-[다음 단계 >](endpoint-definition-updates.md)
-
+> [다음 단계 >](endpoint-definition-updates.md)
+> 
 > [!div class="button"]
-[뒤로 >](endpoint-protection-site-role.md)
+> [뒤로 >](endpoint-protection-site-role.md)

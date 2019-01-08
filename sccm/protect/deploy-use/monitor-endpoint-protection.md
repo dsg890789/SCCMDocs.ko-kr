@@ -10,12 +10,12 @@ ms.assetid: f4a1335c-bb3d-493e-a124-83a32a107dc8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f4e1ea4cb097381467774af9c3161079419d6840
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.openlocfilehash: 5de0ab2eb56ad671a43a6a40fab4e1f4dcc051a4
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32348772"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53424396"
 ---
 # <a name="how-to-monitor-endpoint-protection-status"></a>Endpoint Protection 상태를 모니터링하는 방법
 
@@ -25,23 +25,23 @@ ms.locfileid: "32348772"
 
 ##  <a name="BKMK_1"></a> Endpoint Protection 상태 노드를 사용하여 Endpoint Protection을 모니터링하는 방법  
 
-1.  Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.  
+1. Configuration Manager 콘솔에서 **모니터링**을 클릭합니다.  
 
-2.  **모니터링** 작업 영역에서 **보안**을 확장한 다음 **Endpoint Protection 상태**를 클릭합니다.  
+2. **모니터링** 작업 영역에서 **보안**을 확장한 다음 **Endpoint Protection 상태**를 클릭합니다.  
 
-3.  에 **컬렉션** 목록에서 상태 정보를 보려는 컬렉션을 선택 합니다.  
+3. 에 **컬렉션** 목록에서 상태 정보를 보려는 컬렉션을 선택 합니다.  
 
-    > [!IMPORTANT]  
-    >  컬렉션은 다음과 같은 경우에는 선택할 수 있습니다.  
-    >   
-    >  -   *<컬렉션 이름\>***속성** 대화 상자의 **경고** 탭에 **Endpoint Protection 대시보드에서 이 컬렉션 보기**를 선택한 경우  
-    > -   Endpoint Protection 맬웨어 방지 정책을 컬렉션에 배포하는 경우  
-    > -   Endpoint Protection 클라이언트 설정을 사용하도록 설정하고 컬렉션에 배포하는 경우.  
+   > [!IMPORTANT]
+   >  컬렉션은 다음과 같은 경우에는 선택할 수 있습니다.  
+   > 
+   > - <em><컬렉션 이름\></em>**속성** 대화 상자의 **경고** 탭에 **Endpoint Protection 대시보드에서 이 컬렉션 보기**를 선택한 경우  
+   >   -   Endpoint Protection 맬웨어 방지 정책을 컬렉션에 배포하는 경우  
+   >   -   Endpoint Protection 클라이언트 설정을 사용하도록 설정하고 컬렉션에 배포하는 경우.  
 
-4.  에 표시 되는 정보를 검토 하 여 **보안 상태** 및 **작동 상태** 섹션. 아무 상태 링크나 클릭하여 **자산 및 호환성** 작업 영역의 **디바이스** 노드에서 임시 컬렉션을 만들 수 있습니다. 임시 컬렉션 선택 된 상태를 사용 하 여 컴퓨터를 포함합니다.  
+4. 에 표시 되는 정보를 검토 하 여 **보안 상태** 및 **작동 상태** 섹션. 아무 상태 링크나 클릭하여 **자산 및 호환성** 작업 영역의 **디바이스** 노드에서 임시 컬렉션을 만들 수 있습니다. 임시 컬렉션 선택 된 상태를 사용 하 여 컴퓨터를 포함합니다.  
 
-    > [!IMPORTANT]  
-    >   **상태** 노드에 표시되는 정보는 Configuration Manager 데이터베이스에서 마지막으로 요약된 데이터를 기반으로 하며 최신 정보가 아닐 수도 있습니다. 최신 데이터를 검색하려는 경우 **홈** 탭에서 **요약 실행**을 클릭하거나 **요약 일정** 을 클릭하여 요약 간격을 조정합니다.  
+   > [!IMPORTANT]  
+   >  **Endpoint Protection 상태** 노드에 표시되는 정보는 Configuration Manager 데이터베이스에서 마지막으로 요약된 데이터를 기반으로 하며 최신 정보가 아닐 수도 있습니다. 최신 데이터를 검색하려는 경우 **홈** 탭에서 **요약 실행**을 클릭하거나 **요약 일정** 을 클릭하여 요약 간격을 조정합니다.  
 
 ##  <a name="BKMK_2"></a> 자산 및 준수 작업 영역에서 Endpoint Protection을 모니터링하는 방법  
 
@@ -51,7 +51,7 @@ ms.locfileid: "32348772"
 
     -   **디바이스**를 클릭합니다. **자산 및 호환성** 목록에서 컴퓨터를 선택하고 **맬웨어 세부 정보** 탭을 클릭합니다.  
 
-    -   클릭 하 여 **디바이스 컬렉션**. **장치 컬렉션** 목록에서 모니터링할 컴퓨터가 포함된 컬렉션을 선택한 후 **홈** 탭의 **컬렉션** 그룹에서 **멤버 표시**를 클릭합니다.  
+    -   클릭 하 여 **디바이스 컬렉션**. 에 **디바이스 컬렉션** 목록에서 모니터링 하려는 컴퓨터를 포함 하는 컬렉션을 선택 합니다.를 선택한 후의 **홈** 탭에 **컬렉션** 그룹을 클릭 합니다 **멤버 표시**.  
 
 3.  *<컬렉션 이름\>* 목록에서 컴퓨터를 선택하고 **맬웨어 세부 정보** 탭을 클릭합니다.  
 

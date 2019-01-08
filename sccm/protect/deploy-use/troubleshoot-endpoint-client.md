@@ -10,12 +10,12 @@ ms.assetid: d837253e-fcc2-422a-9e2c-c78b938dfd8c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2a8f0e51e5808a691251e4d9acf38d70f2874508
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.openlocfilehash: b6cbee02b0f3eaa34891019e305572f854575b86
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32351584"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53420821"
 ---
 # <a name="troubleshooting-windows-defender-or-endpoint-protection-client"></a>Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결
 
@@ -37,17 +37,17 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 
  이 문서에서는 다음과 같은 경우를 포함하여 자동 업데이트의 일반적인 문제를 설명합니다.  
 
--   업데이트가 실패했음을 나타내는 오류 메시지가 표시됩니다.  
+- 업데이트가 실패했음을 나타내는 오류 메시지가 표시됩니다.  
 
--   업데이트를 확인할 때 바이러스 및 스파이웨어 정의 업데이트를 확인, 다운로드 또는 설치할 수 없다는 오류 메시지가 표시됩니다.  
+- 업데이트를 확인할 때 바이러스 및 스파이웨어 정의 업데이트를 확인, 다운로드 또는 설치할 수 없다는 오류 메시지가 표시됩니다.  
 
--   인터넷에 연결된 경우에도 업데이트가 실패합니다.  
+- 인터넷에 연결된 경우에도 업데이트가 실패합니다.  
 
--   예약된 대로 업데이트가 자동으로 설치되지 않습니다.  
+- 예약된 대로 업데이트가 자동으로 설치되지 않습니다.  
 
- **원인**  
+  **원인**  
 
- 업데이트 문제의 가장 일반적인 원인은 인터넷 연결 문제입니다. 그러나 다른 웹 사이트는 찾아볼 수 있으므로 인터넷에 연결되어 있다는 사실이 확인되면 Windows Internet Explorer의 설정과 충돌하는 것이 문제의 원인일 수 있습니다.  
+  업데이트 문제의 가장 일반적인 원인은 인터넷 연결 문제입니다. 그러나 다른 웹 사이트는 찾아볼 수 있으므로 인터넷에 연결되어 있다는 사실이 확인되면 Windows Internet Explorer의 설정과 충돌하는 것이 문제의 원인일 수 있습니다.  
 
 > [!IMPORTANT]  
 >  이러한 단계를 완료하려면 Internet Explorer를 종료해야 합니다. 따라서 내용을 인쇄하거나 적어두거나 다른 파일에 복사한 후 나중에 액세스할 수 있도록 이 항목에 책갈피를 지정합니다.  
@@ -155,7 +155,7 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 -   **실행**을 클릭합니다. 최신 업데이트가 수동으로 컴퓨터에 설치됩니다.  
 
 
-### <a name="step-7-contact-support"></a>7단계: 지원 사이트에 문의  
+### <a name="step-7-contact-support"></a>7단계: 지원 서비스에 문의  
 
 -   해당 단계로 문제가 해결되지 않으면 지원 서비스에 문의합니다. 자세한 내용은 [고객 지원](http://go.microsoft.com/fwlink/?LinkID=196174)(http://go.microsoft.com/fwlink/?LinkID=196174)을 참조합니다.  
 
@@ -166,7 +166,7 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 
  **해결 방법**  
 
-### <a name="step-1-restart-your-computer"></a>1단계: 컴퓨터 다시 시작  
+### <a name="step-1-restart-your-computer"></a>1단계: 컴퓨터를 다시 시작합니다.  
 
 -   모든 애플리케이션을 종료한 후 컴퓨터를 다시 시작합니다.  
 
@@ -254,15 +254,15 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 
  컴퓨터에서 Windows XP SP2(서비스 팩 2)를 실행 중인 경우 다음과 같은 오류 메시지가 하나 이상 표시될 수 있습니다.  
 
--   설치 마법사에 설치하는 데 필요한 필터 관리자 롤업 패키지가 없습니다.  
+- 설치 마법사에 설치하는 데 필요한 필터 관리자 롤업 패키지가 없습니다.  
 
--   KB914882 설치 오류, 시스템에 설치된 언어가 업데이트 언어와 다르므로 Windows XP 파일을 업데이트할 수 없습니다.  
+- KB914882 설치 오류, 시스템에 설치된 언어가 업데이트 언어와 다르므로 Windows XP 파일을 업데이트할 수 없습니다.  
 
- **원인**  
+  **원인**  
 
- 다른 보안 프로그램을 실행 중인 컴퓨터에는 Endpoint Protection을 설치할 수 없습니다. 다른 보안 프로그램을 제거해도 완전히 제거되지 않는 경우가 있습니다. Endpoint Protection을 설치하려면 정품 Windows 운영 체제를 사용해야 합니다.  
+  다른 보안 프로그램을 실행 중인 컴퓨터에는 Endpoint Protection을 설치할 수 없습니다. 다른 보안 프로그램을 제거해도 완전히 제거되지 않는 경우가 있습니다. Endpoint Protection을 설치하려면 정품 Windows 운영 체제를 사용해야 합니다.  
 
- **해결 방법**  
+  **해결 방법**  
 
 > [!IMPORTANT]  
 >  이 문제를 해결하는 동안 컴퓨터를 다시 시작해야 할 수 있으므로, 이 항목을 쉽게 다시 찾을 수 있도록 이 페이지를 즐겨찾기에 추가하거나 인쇄하여 참고하십시오.  

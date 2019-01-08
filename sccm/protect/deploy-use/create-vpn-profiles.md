@@ -10,12 +10,12 @@ ms.assetid: f338e4db-73b5-45ff-92f4-1b89a8ded989
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: d2969a0df23f7e8b74708a4aee03c3ea7f689a99
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.openlocfilehash: bb5814860389de28294c44f367920a2da9b72fbe
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32349901"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53419430"
 ---
 # <a name="how-to-create-vpn-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 VPN 프로필을 만드는 방법
 
@@ -27,28 +27,28 @@ ms.locfileid: "32349901"
 
 ### <a name="create-a-vpn-profile"></a>VPN 프로필 만들기   
 
-1.  Configuration Manager 콘솔에서 **자산 및 준수** > **준수 설정** > **회사 리소스 액세스** > **VPN 프로필**을 선택합니다.  
+1. Configuration Manager 콘솔에서 **자산 및 준수** > **준수 설정** > **회사 리소스 액세스** > **VPN 프로필**을 선택합니다.  
 
-2.  **홈** 탭의 **만들기** 그룹에서 **VPN 프로필 만들기**를 선택합니다.  
-
-
-3.  **일반** 페이지를 완료합니다. 다음 사항에 유의하십시오.  
-
-    - 적절한 **플랫폼**을 선택합니다.
-
-       - Windows 8.1 플랫폼을 선택하면 **파일에서 기존 VPN 프로필 항목 가져오기**를 선택하여 XML 파일로 내보낸 VPN 프로필 정보를 가져오는 옵션이 있습니다.
-
-    - VPN 프로필 이름에 \\/:*?&lt;>&#124; 문자나 공백 문자를 사용하지 마세요. 이러한 문자는 Windows Server VPN 프로필에서 지원되지 않습니다.  
+2. **홈** 탭의 **만들기** 그룹에서 **VPN 프로필 만들기**를 선택합니다.  
 
 
-4.  **연결** 페이지에서 다음을 지정합니다.  
+3. **일반** 페이지를 완료합니다. 다음 사항에 유의하십시오.  
 
-    -   **연결 형식**: VPN 연결 형식을 선택합니다. 다음 표에 있는 연결 형식 중에서 선택할 수 있습니다.  
+   - 적절한 **플랫폼**을 선택합니다.
 
-    -   **서버 목록**: VPN 연결에 사용할 새 서버를 추가합니다. 연결 형식에 따라 VPN 서버를 하나 이상 선택하고 기본 서버를 지정할 수 있습니다.  
+      - Windows 8.1 플랫폼을 선택하면 **파일에서 기존 VPN 프로필 항목 가져오기**를 선택하여 XML 파일로 내보낸 VPN 프로필 정보를 가져오는 옵션이 있습니다.
 
-        > [!NOTE]  
-        >  iOS를 실행하는 디바이스에서는 여러 VPN 서버를 사용할 수 없습니다. 여러 VPN 서버를 구성한 후 VPN 프로필을 iOS 디바이스에 배포하는 경우 기본 서버만 사용됩니다.  
+   - VPN 프로필 이름에 \\/:*?&lt;>&#124; 문자나 공백 문자를 사용하지 마세요. 이러한 문자는 Windows Server VPN 프로필에서 지원되지 않습니다.  
+
+
+4. **연결** 페이지에서 다음을 지정합니다.  
+
+   - 연결 유형 VPN 연결 형식을 선택 합니다. 다음 표에 있는 연결 형식 중에서 선택할 수 있습니다.  
+
+   - **서버 목록**: VPN 연결에 사용할 새 서버를 추가합니다. 연결 형식에 따라 VPN 서버를 하나 이상 선택하고 기본 서버를 지정할 수 있습니다.  
+
+     > [!NOTE]  
+     >  iOS를 실행하는 디바이스에서는 여러 VPN 서버를 사용할 수 없습니다. 여러 VPN 서버를 구성한 후 VPN 프로필을 iOS 디바이스에 배포하는 경우 기본 서버만 사용됩니다.  
 
      이 표에서는 연결 형식 옵션을 제공합니다. 자세한 내용은 VPN 서버 설명서를 참조하세요.
 

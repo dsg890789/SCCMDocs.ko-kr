@@ -10,12 +10,12 @@ ms.assetid: 76c90f64-d729-456b-8304-01852cd66fb6
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3e8c6cb33032b0c4283f3e35cbfa7b68535751ea
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.openlocfilehash: 160713fe480b0a47c2ad57376c4a1dccdbfb00b1
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52456110"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53418954"
 ---
 # <a name="endpoint-protection"></a>Endpoint Protection
 
@@ -45,7 +45,7 @@ Windows 10 및 Windows Server 2016 컴퓨터부터, Windows Defender가 이미 �
 
  또한 Configuration Manager 콘솔의 Endpoint Protection을 사용하면 Windows 방화벽 설정을 관리할 수 있습니다.  
 
- [예제 시나리오: System Center Endpoint Protection을 사용하여 System Center Configuration Manager에서 맬웨어로부터 컴퓨터 보호](scenarios-endpoint-protection.md) Endpoint Protection 및 Windows 방화벽  
+ [예제 시나리오: System Center Endpoint Protection을 사용하여 System Center Configuration Manager에서 맬웨어로부터 컴퓨터 보호](scenarios-endpoint-protection.md) Endpoint Protection 및 Windows 방화벽.  
 
 
 ## <a name="managing-malware-with-endpoint-protection"></a>Endpoint Protection을 사용하여 맬웨어 관리  
@@ -90,7 +90,7 @@ Endpoint Protection은 Windows Defender ATP(Advanced Threat Protection)를 관�
 ## <a name="endpoint-protection-client-for-mac-computers-and-linux-servers"></a>Mac 컴퓨터 및 Linux 서버에 대한 Endpoint Protection 클라이언트  
 
 > [!Important]  
-> Mac 및 Linux(모든 버전)용 SCEP(System Center Endpoint Protection)에 대한 지원은 2018년 12월 31일에 종료됩니다. Mac용 SCEP 및 Linux용 SCEP에 대한 새 바이러스 정의는 지원이 종료된 후에 중단될 예정입니다. 자세한 내용은 [지원 종료 블로그 게시물](https://go.microsoft.com/fwlink/?linkid=870182)을 참조하세요.  
+> Mac 및 Linux(모든 버전)용 SCEP(System Center Endpoint Protection)에 대한 지원은 2018년 12월 31일에 종료됩니다. Mac용 SCEP 및 Linux용 SCEP에 대한 새 바이러스 정의는 지원이 종료된 후에 중단될 수 있습니다. 자세한 내용은 [지원 종료 블로그 게시물](https://go.microsoft.com/fwlink/?linkid=870182)을 참조하세요.  
 
  System Center Endpoint Protection에는 Linux 및 Mac 컴퓨터용 Endpoint Protection 클라이언트가 포함되어 있습니다. 이러한 클라이언트에는 Configuration Manager가 제공되지 않습니다. [Microsoft 볼륨 라이선스 서비스 센터](https://www.microsoft.com/licensing/servicecenter/default.aspx)에서 다음 제품을 다운로드하세요.  
 
@@ -111,7 +111,7 @@ Mac 컴퓨터와 Linux 서버에 대한 Endpoint Protection 클라이언트 소�
 2. 웹 사이트의 위쪽에서 **다운로드 및 키** 탭을 선택합니다.
 3. **System Center Endpoint Protection(현재 분기)** 제품을 필터링합니다.
 4. **다운로드** 링크를 클릭합니다.
-5. **Continue(계속)** 를 클릭합니다. **Linux OS 및 Macintosh OS 다국어 32/64 비트용 System Center Endpoint Protection(현재 분기 - 버전 1606) 1,878MB ISO** 파일을 포함하여 여러 개의 파일이 표시됩니다.
+5. **Continue(계속)** 를 클릭합니다. 여러 파일을 비롯 한 명명 된 표시 됩니다. **System Center Endpoint Protection (현재 분기-버전 1606) for Linux OS and Macintosh OS Multilanguage 32/64 bit 1878 MB ISO**합니다.
 6. 파일을 다운로드하려면 화살표 아이콘을 클릭합니다. 파일 이름은 **SW_DVD5_Sys_Ctr_Endpnt_Prtctn_1606_MultiLang_-3_EptProt_Lin_Mac_MLF_X21-67050.ISO**입니다.
 
 2018년 1월 업데이트(X21-67050)에 포함된 버전은 다음과 같습니다.
@@ -119,4 +119,4 @@ Mac 컴퓨터와 Linux 서버에 대한 Endpoint Protection 클라이언트 소�
 - Mac용 System Center Endpoint Protection 4.5.32.0(macOS 10.13 High Sierra에 대한 지원)
 - Linux용 System Center Endpoint Protection 4.5.20.0 
 
- Linux 및 Mac 컴퓨터용 Endpoint Protection 클라이언트를 설치 및 관리하는 방법에 대한 자세한 내용은 해당 제품의 설명서를 참조하세요. 이 제품 설명서는 .ISO 파일의 **설명서** 폴더에 있습니다.
+  Linux 및 Mac 컴퓨터용 Endpoint Protection 클라이언트를 설치 및 관리하는 방법에 대한 자세한 내용은 해당 제품의 설명서를 참조하세요. 이 제품 설명서는 .ISO 파일의 **설명서** 폴더에 있습니다.
