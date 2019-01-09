@@ -10,12 +10,12 @@ ms.assetid: b9b22655-b8c1-461f-8047-3a7e906f647a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f7b8b18cbec5a3b5972a448e8a70339533dc11fb
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.openlocfilehash: 46e948a215535bf57153e5a97dbdc9cad2e35e3b
+ms.sourcegitcommit: 54e5786875c4e5f5c1b54e38ed59e96344faf9b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52456012"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817854"
 ---
 # <a name="manage-os-upgrade-packages-with-configuration-manager"></a>Configuration Manager에서 OS 업그레이드 패키지 관리
 
@@ -23,6 +23,8 @@ ms.locfileid: "52456012"
 
 Configuration Manager의 OS 업그레이드 패키지에는 컴퓨터의 기존 OS를 업그레이드하는 데 사용되는 Windows 설치 원본 파일이 포함되어 있습니다. 이 문서에는 OS 업그레이드 패키지를 추가, 배포 및 서비스하는 방법을 설명합니다.
 
+>[!NOTE]
+>새 Windows 설치에도 OS 업그레이드 패키지가 사용될 수 있습니다. 그러나 이 방법에 사용할 수 있는 드라이버에 따라 달라질 수 있습니다. OS 업그레이드 패키지에서 새 Windows 설치를 수행하면 Windows PE에서 드라이버가 설치되거나 드라이버가 단지 삽입만 됩니다. 일부 드라이버는 Windows PE에서 설치되지 않습니다. Windows PE에서 드라이버를 설치할 수 없는 경우 **install.wim** 같은 [OS 이미지](/sccm/osd/get-started/manage-operating-system-images)를 대신 사용하세요.
 
 
 ##  <a name="BKMK_AddOSUpgradePkgs"></a> OS 업그레이드 패키지 추가  
@@ -51,7 +53,7 @@ OS 업그레이드 패키지를 사용하려면 먼저 Configuration Manager 사
 
     -   **버전**: 선택적 버전 식별자입니다. 이 속성은 업그레이드 패키지의 OS 버전이 아니어도 됩니다. 패키지에 대한 조직의 버전인 경우가 많습니다.  
 
-    -   **주석**: 선택적 간략한 설명입니다.  
+    -   **설명**: 선택적 간략한 설명입니다.  
 
 5.  마법사를 완료합니다.  
 

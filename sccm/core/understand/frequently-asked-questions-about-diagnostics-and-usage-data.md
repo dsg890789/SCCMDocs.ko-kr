@@ -10,12 +10,12 @@ ms.assetid: 3fe32aa2-d594-4ad0-a291-b8f5395ac50b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b4174c68d5a6ccd31355d976b7830b6d09f39d91
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 38b59e520baf9fddb09f71f459de409f38adad2b
+ms.sourcegitcommit: 32a257fafbb29aece8b4f435dd5614fcef305328
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32339879"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "54005452"
 ---
 # <a name="frequently-asked-questions-about-diagnostics-and-usage-data-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 진단 및 사용 현황 데이터에 대한 질문과 대답
 
@@ -50,7 +50,7 @@ ms.locfileid: "32339879"
  아니요. 데이터를 수집하는 저장 프로시저는 사이트 데이터베이스로 제한됩니다.  
 
 ### <a name="bkmk_gdpr"></a> Configuration Manager에 GDPR(General Data Protection Regulation)이 적용되나요?
- 아니요. Configuration Manager는 GDPR 단속 대상이 아닙니다. 사용자가 직접 배포, 관리 및 운영하는 온-프레미스 제품입니다. Microsoft에서 수집하는 진단 및 사용량 데이터는 향후 버전의 설치 환경, 품질 및 보안을 개선하는 데 사용됩니다. 이 데이터는 GDPR 단속 대상입니다. 최종 사용자 식별 정보(EUII) 또는 최종 사용자 가명 식별자(EUPI)는 수집되어 Microsoft에 전송되지 않습니다. GDPR에 대한 자세한 내용은 [GDPR에 대한 Microsoft 보안 센터](https://microsoft.com/gdpr)를 참조하세요. Configuration Manager 데이터에 대한 자세한 내용은 [진단 및 사용량 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조하세요.
+ 아니요. Configuration Manager는 GDPR 단속 대상이 아닙니다. 사용자가 직접 배포, 관리 및 운영하는 온-프레미스 제품입니다. Microsoft에서 수집하는 진단 및 사용량 데이터는 향후 버전의 설치 환경, 품질 및 보안을 개선하는 데 사용됩니다. 이 진단 및 사용 현황 데이터는 GDPR 감독의 적용을 받습니다. 그러나 EUII(최종 사용자 식별 정보) 또는 EUPI(최종 사용자 가명 식별자)는 수집되어 Microsoft에 전송되지 않습니다. GDPR에 대한 자세한 내용은 [GDPR에 대한 Microsoft 보안 센터](https://microsoft.com/gdpr)를 참조하세요. Configuration Manager 데이터에 대한 자세한 내용은 [진단 및 사용량 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조하세요.
 
 
 ## <a name="see-also"></a>참고 항목  

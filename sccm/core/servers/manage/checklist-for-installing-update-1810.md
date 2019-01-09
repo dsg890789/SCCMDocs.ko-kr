@@ -10,12 +10,12 @@ ms.assetid: b87ac054-9b37-4725-a3f3-2340cfb10bff
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: efce5242c5de148d6922144af27f47a267b3c6c3
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.openlocfilehash: 6ea093b71d19c2cee35caa748ae60f76a95b078c
+ms.sourcegitcommit: 54e5786875c4e5f5c1b54e38ed59e96344faf9b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52458187"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817769"
 ---
 # <a name="checklist-for-installing-update-1810-for-configuration-manager"></a>Configuration Manager용 업데이트 1810을 설치하기 위한 검사 목록
 
@@ -89,6 +89,9 @@ Configuration Manager의 현재 분기를 사용하는 경우 버전 1810용 콘
 Windows 10 ADK(평가 및 배포 키트)의 버전은 Configuration Manager 버전 1810에 대해 지원되어야 합니다. 지원되는 Windows ADK 버전에 대한 자세한 내용은 [Windows 10 ADK](/sccm/core/plan-design/configs/support-for-windows-10#windows-10-adk)를 참조하세요. Windows ADK를 업데이트해야 할 경우에는 Configuration Manager의 업데이트를 시작하기 전에 업데이트합니다. 이렇게 하면 기본 부팅 이미지가 자동으로 최신 버전의 Windows PE로 업데이트됩니다. 사이트를 업데이트한 후 사용자 지정 부팅 이미지를 수동으로 업데이트합니다.
 
 Windows ADK를 업데이트하기 전에 사이트를 업데이트하는 경우 [부팅 이미지를 사용하여 배포 지점 업데이트](/sccm/osd/get-started/manage-boot-images#update-distribution-points-with-the-boot-image)를 참조하세요.
+
+#### <a name="review-sql-server-native-client-version"></a>SQL Server Native Client 버전 검토
+TLS 1.2에 대한 지원이 포함되는 최소 버전의 SQL Server 2012 Native Client를 설치해야 합니다. 자세한 내용은 [필수 조건 검사 목록](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#sql-native-client)을 참조하세요.
 
 #### <a name="review-the-site-and-hierarchy-status-for-unresolved-issues"></a>해결되지 않은 문제에 대해 사이트 및 계층 구조 상태 검토 
 기존 작동 문제로 인해 사이트 업데이트가 실패할 수 있습니다. 사이트를 업데이트하기 전에 다음 시스템에 대한 모든 작동 문제를 해결합니다.  

@@ -10,12 +10,12 @@ ms.assetid: 1dc74219-7ff5-4e3b-b4f6-5aad663bb75b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 03ec9c046e1b32f137777f15393b5d26b49e5520
-ms.sourcegitcommit: 265d38d55ca0db043e3a7131a56f123e1d98aa5b
+ms.openlocfilehash: cfaa50b941697b19f2d4d029ed7990f2d39eecbc
+ms.sourcegitcommit: f2a1fa59fb3870a6bebca61daf15c0c157e9fdd6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48236160"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54030974"
 ---
 # <a name="infrastructure-requirements-for-os-deployment-in-configuration-manager"></a>Configuration Manager의 OS 배포에 대한 인프라 요구 사항
 
@@ -188,7 +188,7 @@ OS 배포에 Configuration Manager 보고서를 사용하려면 보고 지점을
 
 - **부팅 이미지 패키지**: 만들기, 삭제, 수정, 폴더 수정, 개체 이동, 읽기, 보안 범위 설정  
 
-- **장치 드라이버**: 만들기, 삭제, 수정, 폴더 수정, 보고서 수정, 개체 이동, 읽기, 보고서 실행  
+- **디바이스 드라이버**: 만들기, 삭제, 수정, 폴더 수정, 보고서 수정, 개체 이동, 읽기, 보고서 실행  
 
 - **드라이버 패키지**: 만들기, 삭제, 수정, 폴더 수정, 개체 이동, 읽기, 보안 범위 설정  
 
@@ -260,11 +260,13 @@ OS 배포에 Configuration Manager 보고서를 사용하려면 보고 지점을
 
      `WDSUTIL /Set-Server /UseDHCPPorts:No /DHCPOption60:Yes`  
 
+> [!NOTE]
+> WDS 대신 WDS 없는 PXE 응답기를 사용하는 경우 동일한 서버에서 DHCP 실행도 지원되지 않습니다.
 
 
 ##  <a name="BKMK_SupportedOS"></a> 지원되는 운영 체제  
 
-[클라이언트 및 장치에서 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices)에 지원되는 클라이언트로 나열된 모든 Windows 운영 체제는 OS 배포에 사용할 수 있습니다.  
+[클라이언트 및 디바이스에서 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices)에 지원되는 클라이언트로 나열된 모든 Windows 운영 체제는 OS 배포에 사용할 수 있습니다.  
 
 
 

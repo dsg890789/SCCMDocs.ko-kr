@@ -10,12 +10,12 @@ ms.assetid: a26a653e-17aa-43eb-ab36-0e36c7d29f49
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0e1cdef0acc799fc60c622f11e4c9c7426dfc19c
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.openlocfilehash: 76611065dbed595904c8e0e2f5d52af0b4c68492
+ms.sourcegitcommit: 54e5786875c4e5f5c1b54e38ed59e96344faf9b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52456463"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817786"
 ---
 # <a name="configure-azure-services-for-use-with-configuration-manager"></a>Configuration Manager에서 사용하도록 Azure 서비스 구성
 
@@ -29,7 +29,7 @@ ms.locfileid: "52456463"
 
 이 마법사를 사용하여 다음과 같은 Azure 서비스를 구성합니다.  
 
--   **Cloud Management**: 이 서비스를 사용하면 Azure AD를 사용하여 사이트 및 클라이언트를 인증할 수 있습니다. 이 인증은 다음과 같은 다른 시나리오를 지원합니다.  
+-   **클라우드 관리**: 이 서비스를 사용하면 Azure AD를 사용하여 사이트 및 클라이언트를 인증할 수 있습니다. 이 인증은 다음과 같은 다른 시나리오를 지원합니다.  
 
     - [인증을 위해 Azure AD를 사용하여 Configuration Manager Windows 10 클라이언트 설치 및 할당](/sccm/core/clients/deploy/deploy-clients-cmg-azure)  
 
@@ -44,7 +44,7 @@ ms.locfileid: "52456463"
 
 -   **업그레이드 준비 커넥터**: Windows Analytics [업그레이드 준비](/sccm/core/clients/manage/upgrade/upgrade-analytics)에 연결합니다. 클라이언트 업그레이드 호환성 데이터를 봅니다.  
 
--   **비즈니스용 Microsoft 스토어**: [비즈니스용 Microsoft 스토어](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)에 연결합니다. Configuration Manager와 함께 배포할 수 있는 조직용 스토어 앱을 가져옵니다.  
+-   **비즈니스용 Microsoft Store**: [비즈니스용 Microsoft Store](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)에 연결합니다. Configuration Manager와 함께 배포할 수 있는 조직용 스토어 앱을 가져옵니다.  
 
 ### <a name="service-details"></a>서비스 정보
 
@@ -85,8 +85,8 @@ Azure 서비스마다 고유의 구성이 필요하며, Azure Portal에서 만�
 Azure 앱에 대한 자세한 내용은 다음 문서부터 참조하세요.
 - [Azure App Service의 인증 및 권한 부여](/azure/app-service/app-service-authentication-overview)
 - [Web Apps 개요](/azure/app-service-web/app-service-web-overview)
-- [Azure AD에서 응용 프로그램 등록의 기본 사항](/azure/active-directory/develop/active-directory-authentication-scenarios#basics-of-registering-an-application-in-azure-ad)  
-- [Azure Active Directory 테넌트에 응용 프로그램 등록](/azure/active-directory/active-directory-app-registration)
+- [Azure AD에서 애플리케이션 등록의 기본 사항](/azure/active-directory/develop/active-directory-authentication-scenarios#basics-of-registering-an-application-in-azure-ad)  
+- [Azure Active Directory 테넌트에 애플리케이션 등록](/azure/active-directory/active-directory-app-registration)
 
 
 
@@ -157,20 +157,20 @@ Azure 서비스 마법사의 앱 페이지에서 **웹앱**에 대한 **찾아�
 Azure 서비스 마법사의 서버 앱 대화 상자 또는 앱 페이지에서 **가져오기**를 선택하면 앱 가져오기 대화 상자가 열립니다. 이 페이지에서는 이미 Azure Portal에서 만든 Azure AD 웹앱에 대한 정보를 입력할 수 있습니다. 이 페이지는 해당 웹앱에 대한 메타데이터를 Configuration Manager로 가져옵니다. 다음 정보를 지정하세요.
 - **Azure AD 테넌트 이름**
 - **Azure AD 테넌트 ID**
-- **응용 프로그램 이름**: 앱의 표시 이름.
+- **애플리케이션 이름**: 앱의 식별 이름입니다.
 - **클라이언트 ID**
 - **비밀 키**
 - **비밀 키 만료**: 달력에서 미래의 날짜를 선택합니다. 
-- **앱 ID URI**: 이 값은 Azure AD 테넌트에서 고유해야 합니다. Configuration Manager 클라이언트가 서비스 액세스를 요청할 때 사용하는 액세스 토큰입니다. 이 값은 기본적으로 https://ConfigMgrService입니다.  
+- **앱 ID URI**: 이 값은 Azure AD 테넌트에서 고유해야 합니다. Configuration Manager 클라이언트가 서비스 액세스를 요청할 때 사용하는 액세스 토큰입니다. 기본적으로 이 값은 https\://ConfigMgrService입니다.  
 
 정보를 입력한 후 **확인**을 선택합니다. 그런 다음, **확인**을 선택하여 앱 가져오기 대화 상자를 닫습니다. 이 작업은 Azure 서비스 마법사의 [앱 페이지](#azure-app-properties) 또는 [서버 앱 대화 상자](#server-app-dialog)로 돌아갑니다.
 
 #### <a name="create-server-application-dialog"></a>서버 애플리케이션 만들기 대화 상자
 
 서버 앱 대화 상자에서 **만들기**를 선택하면 서버 애플리케이션 만들기 대화 상자가 열립니다. 이 페이지는 Azure AD에서 웹앱 만들기를 자동화합니다. 다음 정보를 지정하세요.
-- **응용 프로그램 이름**: 앱의 표시 이름.
-- **홈페이지 URL**: 이 값은 Configuration Manager에서 사용되지는 않지만 Azure AD에 필요합니다. 이 값은 기본적으로 https://ConfigMgrService입니다.  
-- **앱 ID URI**: 이 값은 Azure AD 테넌트에서 고유해야 합니다. Configuration Manager 클라이언트가 서비스 액세스를 요청할 때 사용하는 액세스 토큰입니다. 이 값은 기본적으로 https://ConfigMgrService입니다.  
+- **애플리케이션 이름**: 앱의 식별 이름입니다.
+- **홈페이지 URL**: 이 값은 Configuration Manager에서 사용되지는 않지만 Azure AD에 필요합니다. 기본적으로 이 값은 https\://ConfigMgrService입니다.  
+- **앱 ID URI**: 이 값은 Azure AD 테넌트에서 고유해야 합니다. Configuration Manager 클라이언트가 서비스 액세스를 요청할 때 사용하는 액세스 토큰입니다. 기본적으로 이 값은 https\://ConfigMgrService입니다.  
 - **비밀 키 유효 기간**: 드롭다운 목록에서 **1년** 또는 **2년** 중 하나를 선택합니다. 기본값은 1년입니다.
 
 **로그인**을 선택하여 Azure에 관리 사용자로 인증합니다. 이러한 자격 증명은 Configuration Manager에 저장되지 않습니다. 이 가상 사용자는 Configuration Manager에서 권한이 필요 없으며, Azure 서비스 마법사를 실행하는 계정과 동일한 계정이 아니어도 상관 없습니다. Azure에 성공적으로 인증되면 페이지에 **Azure AD 테넌트 이름**이 참조용으로 표시됩니다. 
@@ -199,7 +199,7 @@ Azure 서비스 마법사의 앱 페이지에서 **네이티브 클라이언트 
 #### <a name="import-apps-dialog-client"></a>앱 가져오기 대화 상자(클라이언트)
 
 클라이언트 앱 대화 상자에서 **가져오기**를 선택하면 앱 가져오기 대화 상자가 열립니다. 이 페이지에서는 이미 Azure Portal에서 만든 Azure AD 네이티브 앱에 대한 정보를 입력할 수 있습니다. 이 페이지는 해당 네이티브 앱에 대한 메타데이터를 Configuration Manager로 가져옵니다. 다음 정보를 지정하세요.
-- **응용 프로그램 이름**: 앱의 표시 이름.
+- **애플리케이션 이름**: 앱의 식별 이름입니다.
 - **클라이언트 ID** 
 
 정보를 입력한 후 **확인**을 선택합니다. 그런 다음, **확인**을 선택하여 앱 가져오기 대화 상자를 닫습니다. 이 작업은 [클라이언트 앱 대화 상자](#client-app-dialog)로 돌아갑니다.
@@ -207,12 +207,29 @@ Azure 서비스 마법사의 앱 페이지에서 **네이티브 클라이언트 
 #### <a name="create-client-application-dialog"></a>클라이언트 애플리케이션 만들기 대화 상자
 
 클라이언트 앱 대화 상자에서 **만들기**를 선택하면 클라이언트 애플리케이션 만들기 대화 상자가 열립니다. 이 페이지는 Azure AD에서 네이티브 앱 만들기를 자동화합니다. 다음 정보를 지정하세요.
-- **응용 프로그램 이름**: 앱의 표시 이름.
-- **회신 URL**: 이 값은 Configuration Manager에서 사용되지는 않지만 Azure AD에 필요합니다. 이 값은 기본적으로 https://ConfigMgrService입니다. 
+- **애플리케이션 이름**: 앱의 식별 이름입니다.
+- **회신 URL**: 이 값은 Configuration Manager에서 사용되지는 않지만, Azure AD에 필요합니다. 기본적으로 이 값은 https\://ConfigMgrService입니다. 
 
 **로그인**을 선택하여 Azure에 관리 사용자로 인증합니다. 이러한 자격 증명은 Configuration Manager에 저장되지 않습니다. 이 가상 사용자는 Configuration Manager에서 권한이 필요 없으며, Azure 서비스 마법사를 실행하는 계정과 동일한 계정이 아니어도 상관 없습니다. Azure에 성공적으로 인증되면 페이지에 **Azure AD 테넌트 이름**이 참조용으로 표시됩니다. 
 
 **확인**을 선택하여 Azure AD에서 네이티브 앱을 만들고 클라이언트 애플리케이션 만들기 대화 상자를 닫습니다. 이 작업은 [클라이언트 앱 대화 상자](#client-app-dialog)로 돌아갑니다.
+
+
+### <a name="renew-secret-key-azure-ad-apps"></a>비밀 키 갱신, Azure AD 앱
+버전 1806 이전에서 Azure 앱의 비밀 키를 갱신하려면 앱을 다시 만들어야 합니다.
+
+버전 1806 이상:
+
+- 만든 앱: **Cloud Services 노드** 아래에서 **Azure Active Directory 테넌트**로 이동합니다. [세부 정보] 창에서 애플리케이션이 만들어진 테넌트를 선택하고 **비밀 키 갱신**을 선택합니다.  
+
+    - **로그인**을 선택하여 Azure에 관리 사용자로 인증합니다.  
+
+    - **확인**을 선택하여 Azure AD에서 네이티브 앱을 만들고 클라이언트 애플리케이션 만들기 대화 상자를 닫습니다. 이 작업은 [클라이언트 앱 대화 상자](#client-app-dialog)로 돌아갑니다.  
+
+- 가져온 앱: Azure Portal을 사용하여 갱신하고 새 비밀 키와 만료 날짜를 기록합니다. **비밀 키 갱신** 마법사에서 이 정보를 추가합니다.  
+
+> [!Note]  
+> 비밀 키를 저장한 후 Azure 애플리케이션 속성 **키** 페이지를 닫습니다. 페이지를 닫으면 이 정보는 제거됩니다.
 
 
 ## <a name="configuration-or-discovery"></a>구성 또는 검색
@@ -221,11 +238,11 @@ Azure 서비스 마법사의 앱 페이지에서 **네이티브 클라이언트 
 
 -   **클라우드 관리** 서비스, **검색** 페이지: [Azure AD 사용자 검색 구성](/sccm/core/servers/deploy/configure/configure-discovery-methods#azureaadisc)  
 
--   **Log Analytics 커넥터** 서비스 **구성** 페이지: [Log Analytics에 대한 연결 구성](/sccm/core/clients/manage/sync-data-log-analytics#configure-the-connection-to-log-analytics)  
+-   **Log Analytics 커넥터** 서비스, **구성** 페이지: [Log Analytics에 연결 구성](/sccm/core/clients/manage/sync-data-log-analytics#configure-the-connection-to-log-analytics)  
 
 -   **업그레이드 준비 커넥터** 서비스, **구성** 페이지: [Azure 마법사를 사용하여 연결 만들기](/sccm/core/clients/manage/upgrade/upgrade-analytics#use-the-azure-wizard-to-create-the-connection)  
 
--   **비즈니스용 Microsoft 스토어** 서비스, **구성** 페이지: [비즈니스용 Microsoft Store 동기화 구성](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business#bkmk_config)  
+-   **비즈니스용 Microsoft Store** 서비스, **구성** 페이지: [비즈니스용 Microsoft Store 동기화 구성](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business#bkmk_config)  
 
 
 마지막으로 요약, 진행률 및 완료 페이지를 통해 Azure 서비스 마법사를 완료합니다. Configuration Manager에서 Azure 서비스 구성을 완료했습니다. 이 프로세스를 반복하여 다른 Azure 서비스를 구성하세요.

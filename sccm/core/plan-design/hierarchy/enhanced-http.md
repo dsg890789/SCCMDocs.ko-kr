@@ -10,12 +10,12 @@ ms.assetid: 4deac022-e397-4f1f-bc0a-cea6c6c6368d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 7b7cb4a6a7ec6738bdf045b75bf88c8b4d8c4650
-ms.sourcegitcommit: 1439817f1309658b31008d7bafaab32fc5ef8789
+ms.openlocfilehash: 7f2fab639082e6871e5df8dcebe0d1b3a440624c
+ms.sourcegitcommit: 1bf26b83fa7da637d299a21e1d3bc61f2d7d8c10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52820104"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060368"
 ---
 # <a name="enhanced-http"></a>고급 HTTP
 
@@ -49,7 +49,7 @@ Configuration Manager 버전 1806에서는 클라이언트가 사이트 시스�
 ### <a name="bkmk_scenario1"></a> 시나리오 1: 관리 지점의 클라이언트
 <!--1356889-->
 
-[Azure AD 조인 장치](https://docs.microsoft.com/azure/active-directory/device-management-introduction#azure-ad-joined-devices)는 HTTP용으로 구성된 관리 지점과 통신할 수 있습니다. 사이트 서버는 관리 지점에 대한 인증서를 생성하여 보안 채널을 통해 통신할 수 있도록 허용합니다.   
+[Azure AD 조인 디바이스](https://docs.microsoft.com/azure/active-directory/device-management-introduction#azure-ad-joined-devices)는 HTTP용으로 구성된 관리 지점과 통신할 수 있습니다. 사이트 서버는 관리 지점에 대한 인증서를 생성하여 보안 채널을 통해 통신할 수 있도록 허용합니다.   
 
 > [!Note]  
 > 이 동작은 Configuration Manager 현재 분기 버전 1802에서 클라우드 관리 게이트웨이를 통해 통신하는 Azure AD 조인 클라이언트에 대한 HTTPS 지원 관리 지점을 요구하는 것으로 변경됩니다. 자세한 내용은 [HTTPS에 대한 관리 지점 설정](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#bkmk_mphttps)을 참조하세요.  
@@ -63,7 +63,7 @@ Configuration Manager 버전 1806에서는 클라이언트가 사이트 시스�
 이 동작에는 부팅 미디어, PXE 또는 소프트웨어 센터에서 실행되는 작업 순서가 있는 OS 배포 시나리오가 포함됩니다. 자세한 내용은 [네트워크 액세스 계정](/sccm/core/plan-design/hierarchy/accounts#network-access-account)을 참조하세요.<!--1358278-->
 
 
-### <a name="bkmk_scenario3"></a> 시나리오 3: Azure AD 장치 ID 
+### <a name="bkmk_scenario3"></a> 시나리오 3: Azure AD 디바이스 ID 
 <!--1358460-->
 
 Azure AD 사용자가 로그인되지 않은 Azure AD 조인 또는 [하이브리드 Azure AD 디바이스](https://docs.microsoft.com/azure/active-directory/device-management-introduction#hybrid-azure-ad-joined-devices)에서 할당된 사이트와 안전하게 통신할 수 있습니다. 클라우드 기반 디바이스 ID는 이제 디바이스 중심 시나리오에 대한 CMG 및 관리 지점을 인증하기에 충분합니다. (사용자 중심 시나리오에서는 여전히 사용자 토큰이 필요합니다.)  
@@ -79,7 +79,7 @@ Azure AD 사용자가 로그인되지 않은 Azure AD 조인 또는 [하이브�
 
     - 사이트에 대한 이 필수 요구 조건을 이미 충족한 경우 Azure AD 애플리케이션을 업데이트해야 합니다. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고, **Cloud Services**를 확장한 다음, **Azure Active Directory 테넌트**를 선택합니다. Azure AD 테넌트를 선택하고 **애플리케이션** 창에서 웹 애플리케이션을 선택한 다음, 리본에서 **애플리케이션 설정 업데이트**를 선택합니다.  
 
-- *[시나리오 3](#bkmk_scenario3)에만 해당*: Windows 10 버전 1803을 실행하고 Azure AD에 조인된 클라이언트. 
+- *[시나리오 3](#bkmk_scenario3) 전용*: Windows 10 버전 1803 이상에서 실행되고 Azure AD에 조인된 클라이언트 
 
 
 
