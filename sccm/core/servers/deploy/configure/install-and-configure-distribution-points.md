@@ -10,12 +10,12 @@ ms.assetid: aebafaf9-b3d5-4a0f-9ee5-685758c037a1
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0ab848051d5eaa85d2b515145ff64471aee81a31
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.openlocfilehash: 430931e8bfba3f40a8d970b7ae7b97e24d3381ec
+ms.sourcegitcommit: f2a1fa59fb3870a6bebca61daf15c0c157e9fdd6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53415044"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54031025"
 ---
 # <a name="install-and-configure-distribution-points-in-configuration-manager"></a>Configuration Manager에서 배포 지점 설치 및 구성
 
@@ -341,6 +341,9 @@ PXE를 사용하도록 설정하면 필요한 경우 Configuration Manager에서
 - **알 수 없는 컴퓨터 지원 사용**: Configuration Manager에서 관리하지 않는 컴퓨터에 대한 지원을 사용할 수 있도록 설정할지 여부를 지정합니다. 자세한 내용은 [알 수 없는 컴퓨터 배포 준비](/sccm/osd/get-started/prepare-for-unknown-computer-deployments)를 참조하세요.  
 
 - **Windows 배포 서비스 없이 PXE 응답기 사용**: 버전 1806부터 이 옵션은 배포 지점에서 WDS가 필요하지 않은 PXE 응답기를 사용하도록 설정합니다. 이 PXE 응답기는 IPv6 네트워크를 지원합니다. 이미 PXE를 사용하는 배포 지점에서 이 옵션을 사용하도록 설정하면 Configuration Manager에서 WDS 서비스를 일시 중단합니다. 이 옵션을 사용하지 않도록 설정하지만 여전히 **클라이언트에 대해 PXE 지원 사용** 옵션을 설정하는 경우 배포 지점에서 WDS를 다시 사용하도록 설정합니다.<!--1357580-->  
+
+    > [!Note]
+    >또한 DHCP 서버를 실행하는 서버에서 WDS 없이 PXE 응답기를 사용하도록 지원되지 않습니다.
 
 - **컴퓨터에서 PXE를 사용할 때 암호 필요**: PXE 배포에 대한 추가 보안을 제공하려면 강력한 암호를 지정합니다.  
 

@@ -10,12 +10,12 @@ ms.assetid: 7c888a6f-8e37-4be5-8edb-832b218f266d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5e62983f76b0f2a4277edfab08d4321da5d4a258
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.openlocfilehash: 9d3cd85d4c0bd3a996bd6ec18fc24a02423fab62
+ms.sourcegitcommit: 54e5786875c4e5f5c1b54e38ed59e96344faf9b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53416489"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818058"
 ---
 # <a name="task-sequence-steps-in-configuration-manager"></a>Configuration Manager의 작업 순서 단계
 
@@ -235,7 +235,14 @@ ms.locfileid: "53416489"
  캡처한 OS 이미지를 설치합니다. **찾아보기**를 클릭하여 **패키지 선택** 대화 상자를 엽니다. 그런 다음 설치하려는 기존 이미지 패키지를 선택합니다. 지정된 **이미지 패키지**에 여러 이미지가 연결되어 있는 경우, 드롭다운 목록에서 이 배포에 사용할 연결된 이미지를 선택합니다. 이미지를 클릭하여 각 기존 이미지에 대한 기본 정보를 볼 수 있습니다.  
 
 #### <a name="apply-operating-system-image-from-an-original-installation-source"></a>원래 설치 원본에서 운영 체제 이미지 적용
- 원래 설치 원본이기도 한 OS 업그레이드 패키지를 사용하여 OS를 설치합니다. **찾아보기**를 클릭하여 **운영 체제 설치 패키지 선택** 대화 상자를 엽니다. 그런 다음 사용하려는 기존 OS 업그레이드 패키지를 선택합니다. 이미지를 클릭하여 각 기존 이미지 원본에 대한 기본 정보를 볼 수 있습니다. 대화 상자 아래쪽의 결과 창에 관련 이미지 원본 속성이 표시됩니다. 지정된 패키지와 연결된 버전이 여러 개 있는 경우 드롭다운 목록을 사용하여 사용할 **버전**을 선택합니다.  
+ 원래 설치 원본이기도 한 OS 업그레이드 패키지를 사용하여 OS를 설치합니다. **찾아보기**를 클릭하여 **운영 체제 업그레이드 패키지 선택** 대화 상자를 엽니다. 그런 다음 사용하려는 기존 OS 업그레이드 패키지를 선택합니다. 이미지를 클릭하여 각 기존 이미지 원본에 대한 기본 정보를 볼 수 있습니다. 대화 상자 아래쪽의 결과 창에 관련 이미지 원본 속성이 표시됩니다. 지정된 패키지와 연결된 버전이 여러 개 있는 경우 드롭다운 목록을 사용하여 사용할 **버전**을 선택합니다.  
+
+>[!NOTE]
+>**운영 체제 업그레이드 패키지**는 Windows를 새로 설치하는 것이 아닌 현재 위치 업그레이드에서 주로 사용하려는 기능입니다. Windows를 새로 설치하기 위해 배포할 때 설치 원본 파일에서 **캡처된 이미지에서 운영 체제 적용** 옵션 및 **install.wim**을 사용합니다.
+>
+>**운영 체제 업그레이드 패키지**를 통해 Windows를 새로 설치하는 배포는 계속 지원되지만, 이 방법에 사용할 수 있는 드라이버에 따라 달라질 수 있습니다. **운영 체제 업그레이드 패키지**에서 Windows를 설치하면 Windows PE에서 드라이버가 설치되거나 삽입되기만 합니다. 일부 드라이버는 Windows PE에서 설치되지 않습니다.
+>
+>드라이버가 Windows PE에서 설치되어 호환되지 않는 경우 원래 설치 원본 파일에서 **install.wim**을 **운영 체제 이미지**로 패키징합니다. 그런 다음, **캡처된 이미지에서 운영 체제 적용** 옵션을 통해 대신 배포합니다.
 
 #### <a name="use-an-unattended-or-sysprep-answer-file-for-a-custom-installation"></a>자동 또는 Sysprep 응답 파일을 사용하여 사용자 지정 설치
  이 옵션을 사용하여 OS 버전 및 설치 방법에 따라 Windows 설치 응답 파일(**unattend.xml**, **unattend.txt**또는 **sysprep.inf**)을 제공할 수 있습니다. 지정한 파일은 Windows 응답 파일에서 지원하는 표준 구성 옵션 중 하나를 포함할 수 있습니다. 예를 들어 기본 Internet Explorer 홈 페이지를 지정할 수 있습니다. 응답 파일이 포함된 패키지 및 패키지의 파일에 대한 연결된 경로를 지정합니다.  

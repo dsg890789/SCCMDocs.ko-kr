@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: e0ec7d66-1502-4b31-85bb-94996b1bc66f
-ms.openlocfilehash: 8f743514af8b89212b10073c07b24990ffedcb1a
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.openlocfilehash: 0ad348c47ff7e97d8d9b3bfba91bd8a0c0ae48ff
+ms.sourcegitcommit: 32a257fafbb29aece8b4f435dd5614fcef305328
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53420399"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "54005418"
 ---
 # <a name="set-up-cloud-management-gateway-for-configuration-manager"></a>Configuration Manager용 클라우드 관리 게이트웨이 설정
 
@@ -41,6 +41,8 @@ ms.locfileid: "53420399"
 - 1802 버전부터 **Azure Resource Manager 배포**를 선택합니다. 자세한 내용은 [Azure Resource Manager](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#azure-resource-manager)를 참조하세요. CMG의 Azure Resource Manager 배포에 다음 요구 사항이 필요합니다.  
 
     - **클라우드 관리**를 위해 [Azure AD](/sccm/core/servers/deploy/configure/azure-services-wizard)와 통합 Azure AD 사용자 검색은 필요하지 않습니다.  
+    
+    - Azure 구독 내에서 **Microsoft.ClassicCompute** 리소스 공급 기업을 등록해야 합니다. 자세한 내용은 [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-supported-services)를 참조하세요.
 
     - 구독 관리자는 로그인해야 합니다.  
 
@@ -54,6 +56,8 @@ ms.locfileid: "53420399"
     - Azure 관리 인증서  
 
 - 서비스에서 전역적으로 고유한 이름입니다. 이 이름은 [CMG 서버 인증 인증서](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#cmg-server-authentication-certificate)에서 비롯됩니다.  
+
+- 클라우드 배포 지점으로 CMG를 사용하도록 설정한 경우 전역적으로 동일하게 고유한 CMG 서비스 이름을 선택하여 전역적으로 고유한 스토리지 계정 이름으로 사용할 수 있습니다. 이 이름은 [CMG 서버 인증 인증서](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#cmg-server-authentication-certificate)에서 비롯됩니다.
 
 - 이 CMG 배포에 대한 Azure 지역입니다.  
 
@@ -91,7 +95,7 @@ ms.locfileid: "53420399"
 7. **지역** 드롭다운 목록을 선택하고 이 CMG에 대한 Azure 지역을 선택합니다.  
 
 8. 1802 버전부터는 Azure Resource Manager 배포를 사용하고 **리소스 그룹** 옵션을 선택합니다. 
-   1. **기존 항목 사용**을 선택하는 경우 드롭다운 목록에서 기존 리소스 그룹을 선택합니다.
+   1. **기존 항목 사용**을 선택하는 경우 드롭다운 목록에서 기존 리소스 그룹을 선택합니다. 선택한 리소스 그룹이 7단계에서 선택한 지역에 이미 있어야 합니다. 이전에 선택한 지역과 다른 지역에 위치한 기존 리소스 그룹을 선택하면 CMG는 프로비전에 실패합니다.
    2. **새로 만들기**를 선택하면 새 리소스 그룹 이름을 입력합니다.
 
 9. **VM 인스턴스** 필드에서 이 서비스에 대한 VM 수를 입력합니다. 기본값은 1이지만 CMG당 최대 16대의 VM으로 확장할 수 있습니다.  

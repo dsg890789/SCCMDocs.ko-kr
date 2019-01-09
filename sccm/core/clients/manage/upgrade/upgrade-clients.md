@@ -10,12 +10,12 @@ ms.assetid: 446c83b5-c292-4e74-ba19-0792ac6b3472
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: d63100e5525b24ffd8deba447a10325c8209ea00
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.openlocfilehash: 3d7f142752f2d3ce97986455fe516748b0d6fb72
+ms.sourcegitcommit: 54e5786875c4e5f5c1b54e38ed59e96344faf9b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53416693"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817701"
 ---
 # <a name="upgrade-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트 업그레이드
 
@@ -29,7 +29,7 @@ ms.locfileid: "53416693"
 ## <a name="group-policy-installation"></a>그룹 정책 설치  
  **지원되는 클라이언트 플랫폼:** Windows  
 
- **장점**  
+#### <a name="advantages"></a>장점  
 
 - 컴퓨터가 검색되지 않아도 클라이언트가 업그레이드될 수 있습니다.  
 
@@ -39,7 +39,7 @@ ms.locfileid: "53416693"
 
 - 해당 컴퓨터에 대한 설치 계정을 구성하고 관리하지 않아도 됩니다.  
 
-  **단점**  
+#### <a name="disadvantages"></a>단점  
 
 - 다수의 클라이언트를 업그레이드하는 경우 네트워크 트래픽이 높아질 수 있습니다.  
 
@@ -49,7 +49,7 @@ ms.locfileid: "53416693"
 ## <a name="logon-script-installation"></a>로그온 스크립트 설치  
  **지원되는 클라이언트 플랫폼:** Windows  
 
- **장점**  
+#### <a name="advantages"></a>장점  
 
 - 컴퓨터가 검색되지 않아도 클라이언트가 설치될 수 있습니다.  
 
@@ -57,7 +57,7 @@ ms.locfileid: "53416693"
 
 - CCMSetup에 명령줄 속성을 사용할 수 있습니다.  
 
-  **단점**  
+#### <a name="disadvantages"></a>단점  
 
 - 짧은 기간 동안 다수의 클라이언트를 업그레이드하는 경우 네트워크 트래픽이 높아질 수 있습니다.  
 
@@ -68,7 +68,7 @@ ms.locfileid: "53416693"
 ## <a name="manual-installation"></a>수동 설치  
  **지원되는 클라이언트 플랫폼:** Windows, UNIX/Linux, Mac OS X  
 
- **장점**  
+#### <a name="advantages"></a>장점  
 
 - 컴퓨터가 검색되지 않아도 클라이언트가 업그레이드될 수 있습니다.  
 
@@ -76,7 +76,7 @@ ms.locfileid: "53416693"
 
 - CCMSetup에 명령줄 속성을 사용할 수 있습니다.  
 
-  **단점**  
+#### <a name="disadvantages"></a>단점  
 
 - 자동화되지 않아 시간이 많이 소모됩니다.  
 
@@ -94,11 +94,11 @@ ms.locfileid: "53416693"
 > [!NOTE]  
 >  이 방법으로는 Configuration Manager 2007 클라이언트를 업그레이드할 수 없습니다. 이 시나리오에서는 Configuration Manager 2007 사이트에서 최신 버전의 Configuration Manager 클라이언트를 배포하거나, 최신 버전의 클라이언트가 포함된 패키지를 자동으로 만들어 배포하는 자동 클라이언트 업그레이드를 사용할 수 있습니다.  
 
- **장점**  
+#### <a name="advantages"></a>장점  
 
 - CCMSetup에 명령줄 속성을 사용할 수 있습니다.  
 
-  **단점**  
+#### <a name="disadvantages"></a>단점  
 
 - 많은 컬렉션에 클라이언트를 배포하는 경우 네트워크 트래픽이 높아질 수 있습니다.  
 
@@ -113,17 +113,19 @@ ms.locfileid: "53416693"
 
  **지원되는 클라이언트 플랫폼:** Windows  
 
- **장점**  
+#### <a name="advantages"></a>장점  
 
+- 자동 업그레이드는 지정된 기간 동안의 불규칙화로 인해 대규모 클라이언트 업그레이드에 적합합니다. 다른 메서드는 대규모 작업에서 성능이 너무 느리거나 불규칙화 기능을 포함하지 않습니다. 
+
+    > [!Note]
+    > 클라이언트 파일럿은 불규칙화를 사용하지 않으므로 대규모 작업에 유용하지 않습니다.  
 - 사이트의 클라이언트를 자동으로 최신 버전으로 유지할 수 있습니다.  
 
 - 관리 작업이 최소화됩니다.  
 
-  **단점**  
+#### <a name="disadvantages"></a>단점  
 
 - 클라이언트 소프트웨어를 업그레이드할 수만 있고 새 클라이언트를 설치할 수는 없습니다.  
-
-- 많은 클라이언트를 동시에 업그레이드하는 데는 적합하지 않습니다.  
 
 - 사이트에 할당된 계층의 모든 클라이언트에 적용됩니다. 컬렉션으로 범위를 나눌 수 없습니다.  
 
@@ -134,13 +136,13 @@ ms.locfileid: "53416693"
 ## <a name="client-testing"></a>클라이언트 테스트  
  **지원되는 클라이언트 플랫폼:** Windows  
 
- **장점**  
+#### <a name="advantages"></a>장점  
 
 - 작은 규모의 사전 프로덕션 컬렉션에서 새 클라이언트 버전을 테스트하는 데 사용할 수 있습니다.  
 
 - 테스트가 완료되면 사전 프로덕션의 클라이언트 수준이 프로덕션으로 올라가고 Configuration Manager 사이트 전체에 걸쳐 자동으로 업그레이드됩니다.  
 
-  **단점**  
+#### <a name="disadvantages"></a>단점  
 
 - 클라이언트 소프트웨어를 업그레이드할 수만 있고 새 클라이언트를 설치할 수는 없습니다.  
 

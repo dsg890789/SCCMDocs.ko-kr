@@ -10,12 +10,12 @@ ms.assetid: f5ad22d5-7df1-49c6-8a0f-db1c3f0cda19
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 41ce74ee0978f561a855c5d3952071f68568dee0
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 23c3a8b379accac0e514cfb8a88197baa6463fee
+ms.sourcegitcommit: 54e5786875c4e5f5c1b54e38ed59e96344faf9b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32347640"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817735"
 ---
 # <a name="install-a-new-version-of-windows-on-a-new-computer-bare-metal-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 새 컴퓨터에 새 버전의 Windows 설치(완전 복구)
 
@@ -41,7 +41,7 @@ ms.locfileid: "32347640"
 
     -   부팅 이미지를 사용자 지정하는 방법에 대한 자세한 내용은 [부팅 이미지 사용자 지정](../get-started/customize-boot-images.md)을 참조하세요.  
 
-    -   배포 지점에 부팅 이미지를 배포합니다. 자세한 내용은 [콘텐츠 배포](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_distribute)를 참조하세요.  
+    -   배포 지점에 부팅 이미지를 배포합니다. 자세한 내용은 [Distribute content](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_distribute)을 참조하십시오.  
 
 2.  **운영 체제 이미지 준비**  
 
@@ -49,7 +49,12 @@ ms.locfileid: "32347640"
 
     -   운영 체제 이미지를 만드는 방법에 대한 자세한 내용은 [운영 체제 이미지 관리](../get-started/manage-operating-system-images.md)를 참조하세요.
 
-    -   배포 지점에 운영 체제 이미지 배포 자세한 내용은 [콘텐츠 배포](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_distribute)를 참조하세요.
+    -   배포 지점에 운영 체제 이미지 배포 자세한 내용은 [콘텐츠 배포](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_distribute)를 참조하세요.  
+
+    > [!NOTE]
+    > 새 Windows 설치는 OS 업그레이드 패키지를 통해 설치 원본 파일에서 수행할 수도 있지만, **install.wim** 같은 OS 이미지를 대신 사용하세요.
+    >
+    > OS 업그레이드 패키지를 통한 새 Windows 설치 배포는 계속 지원되지만, 이 방법에 사용할 수 있는 드라이버에 따라 달라질 수 있습니다. OS 업그레이드 패키지에서 Windows를 설치하면 Windows PE에서 드라이버가 설치되거나 드라이버가 단지 삽입만 됩니다. 일부 드라이버는 Windows PE에서 설치되지 않습니다. Windows PE에서 드라이버를 설치할 수 없는 경우 OS 이미지를 대신 사용하세요.  
 
 3.  **네트워크를 통해 운영 체제를 배포하는 작업 순서 만들기**  
 

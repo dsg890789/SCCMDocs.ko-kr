@@ -10,12 +10,12 @@ ms.assetid: 49ef2ed2-2e15-4637-8b63-1d5b7f9c17e1
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 019b275177e1f264a4bfc2926cfe45ebd0be8eae
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 94ef3ce54db0efb7be7e9d6d0709f48bb212f7e7
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32334575"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53416540"
 ---
 # <a name="how-to-test-client-upgrades-in-a-pre-production-collection-in-system-center-configuration-manager"></a>System Center Configuration Manager의 사전 프로덕션 컬렉션에서 클라이언트 업그레이드를 테스트하는 방법
 
@@ -38,15 +38,15 @@ ms.locfileid: "32334575"
 > [!IMPORTANT]
 > 작업 그룹 컴퓨터에서는 사전 프로덕션 클라이언트 배포가 지원되지 않습니다. 작업 그룹 컴퓨터는 배포 지점이 사전 프로덕션 클라이언트 패키지에 액세스하는 데 필요한 인증을 사용할 수 없습니다.  작업 그룹 컴퓨터는 프로덕션 클라이언트로 승격될 때 최신 클라이언트를 수신합니다.
 
-1. 사전 프로덕션 클라이언트를 배포할 컴퓨터를 포함하는 [컬렉션을 설정](..\collections\create-collections.md)합니다.   
+1. 사전 프로덕션 클라이언트를 배포할 컴퓨터를 포함하는 [컬렉션을 설정](../collections/create-collections.md)합니다.   
 
-1.  Configuration Manager 콘솔에서 **관리** > **사이트 구성** > **사이트**를 열고 **계층 설정**을 선택합니다.  
+2. Configuration Manager 콘솔에서 **관리** > **사이트 구성** > **사이트**를 열고 **계층 설정**을 선택합니다.  
 
-     **계층 설정 속성** 의 **클라이언트 업그레이드**탭:  
+    **계층 설정 속성** 의 **클라이언트 업그레이드**탭:  
 
-    -    **사전 프로덕션 클라이언트를 사용하여 자동으로 사전 프로덕션 컬렉션에 있는 모든 클라이언트 업그레이드**선택  
+   -   **사전 프로덕션 클라이언트를 사용하여 자동으로 사전 프로덕션 컬렉션에 있는 모든 클라이언트 업그레이드**선택  
 
-    -   사전 프로덕션 컬렉션으로 사용하는 컬렉션 이름 입력  
+   -   사전 프로덕션 컬렉션으로 사용하는 컬렉션 이름 입력  
 
 ![클라이언트 업그레이드 테스트](media/test-client-upgrades.png)
 

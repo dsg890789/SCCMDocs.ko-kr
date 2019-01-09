@@ -2,7 +2,7 @@
 title: UUP 미리 보기
 titleSuffix: Configuration Manager
 description: UUP 통합 미리 보기 지침
-ms.date: 12/21/2018
+ms.date: 01/04/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 robots: noindex,nofollow
-ms.openlocfilehash: d2aac5945d4b7678acf78d215c557a34aaef9c72
-ms.sourcegitcommit: f5fa9e657350ceb963a7928497d2adca9caef3d4
+ms.openlocfilehash: cfc83f4d076a05ea1847c0d073bd824ad10aa731
+ms.sourcegitcommit: 1bf26b83fa7da637d299a21e1d3bc61f2d7d8c10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2018
-ms.locfileid: "53748570"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060385"
 ---
 # <a name="uup-private-preview-instructions"></a>UUP 비공개 미리 보기 지침
 
@@ -27,13 +27,16 @@ ms.locfileid: "53748570"
 
 ### <a name="feature-updates"></a>기능 업데이트
 
-UUP를 통한 기능 업데이트는 현재 서비스를 제공할 때 고객에게 발생하는 여러 가지 문제를 완화하도록 설계되었습니다. 다음을 포함한 UUP 기능 업데이트를 사용해 보세요.
+Windows 10 UUP(통합 업데이트 플랫폼)를 통한 기능 업데이트는 현재 서비스를 제공할 때 고객에게 발생하는 여러 가지 문제를 완화하도록 설계되었습니다. 다음을 포함한 UUP 기능 업데이트를 사용해 보세요.
 
 - 최신 보안 규정 준수 수준으로 바로 업그레이드합니다. 그러면 규정을 준수하기 위해 업그레이드하는 즉시 더 이상 보안 업데이트를 설치할 필요가 없습니다. 매월 최신 누적 보안 업데이트가 포함된 새로운 기능 업데이트가 게시됩니다. 매월 대부분의 기능 업데이트 콘텐츠를 다시 다운로드하거나 배포하지 않고 누적 업데이트와도 공유되는 보안 업데이트 구성 요소만 배포하면 됩니다.
 
-- 모든 FOD 및 언어 팩은 업그레이드 프로세스 중에 유지되고 손실되지 않아야 합니다.
+- 모든 FOD(주문형 기능) 및 언어 팩은 업그레이드 프로세스 중에 유지되고 손실되지 않아야 합니다.
 
 - UUP를 통한 기능 업데이트는 기본 설치 파일을 지원하므로 각 클라이언트에서 다운로드해야 하는 콘텐츠의 양을 줄일 수 있습니다.
+
+UUP에 대한 자세한 내용은 Windows 블로그 게시물 [UUP(통합 업데이트 플랫폼) 업데이트](https://blogs.windows.com/windowsexperience/2017/03/02/an-update-on-our-unified-update-platform-uup/)를 참조하세요.
+
 
 ### <a name="cumulative-updates"></a>누적 업데이트
 
@@ -55,42 +58,33 @@ $config = $server.GetConfiguration()
 $config.ServerId
 ```
 
-### <a name="2-upgrade-configmgr-to-a-supported-version"></a>2. ConfigMgr을 지원되는 버전으로 업그레이드
+### <a name="2-update-configmgr-to-a-supported-version"></a>2. ConfigMgr을 지원되는 버전으로 업데이트
 
-환경에서 기본 설치 파일이 동기화되는 경우 프로덕션 환경에는 ConfigMgr 1810(TAP, Fast Ring 또는 GA 빌드 모두 허용)이 필요하고, 기술 미리 보기 환경에는 1812 기술 미리 보기가 필요합니다.
+환경에서 기본 설치 파일을 동기화하지 않은 경우 프로덕션 환경에는 ConfigMgr 1810 현재 분기가 필요하고, 랩 환경에는 1812 기술 미리 보기 분기가 필요합니다.
 
-환경에서 기본 설치 파일이 동기화되지 않는 경우 프로덕션 환경에는 1810 GA 기반의 ConfigMgr 1810 UUP 핫픽스가 필요하고, 기술 미리 보기 환경에는 1812 기술 미리 보기가 필요합니다.
+환경에서 기본 설치 파일을 동기화하지 않은 경우 프로덕션 환경에는 ConfigMgr 1810 핫픽스 KB4482615가 필요하고, 랩 환경에는 1812 기술 미리 보기 분기가 필요합니다.
 
 
-#### <a name="configmgr-1810-uup-hotfix-kb4482615-from-1810-ga-slow-ring"></a>1810 GA(Slow Ring)의 ConfigMgr 1810 UUP 핫픽스(KB4482615)
-현재 ConfigMgr 1810 GA(Slow Ring)를 사용하고 있는 경우 ConfigMgr을 UUP 롤업으로 업그레이드해야 합니다.
+#### <a name="configmgr-1810-uup-hotfix-kb4482615"></a>ConfigMgr 1810 UUP 핫픽스(KB4482615)
 
-1. "Configuration Manager 1810 핫픽스(KB4482615)"(패키지 GUID: 86450B7D-3574-4CF7-8B11-486A2C1F62A6) 적용 – 이 핫픽스는 기본 이외의 시나리오에서 UUP를 사용하도록 설정합니다.  
+> [!Important]  
+> 다음 프로세스는 현재 분기 버전 사이트를 2018년 12월 19일 이후 일반 공급되는 1810 버전으로 업데이트하는 작업입니다.
+>
+> 2018년 11월 말 또는 12월 초에 PowerShell 스크립트를 실행하여 1810 업데이트로 옵트인하는 경우 이 핫픽스가 아직 제공되지 않습니다. 
 
-    1. Microsoft 다운로드 센터에서 핫픽스 다운로드(게시 후 링크 제공 예정)  
 
-    2. 이 핫픽스가 다운로드되면 Microsoft Docs 웹 페이지인 [업데이트 등록 도구를 사용하여 핫픽스 가져오기](/sccm/core/servers/manage/use-the-update-registration-tool-to-import-hotfixes)에서 설명하는 설치 지침을 참조하세요.  
+1. 사이트 업데이트
 
-    3. Microsoft 지원 파일을 다운로드하는 방법에 대한 자세한 내용은 [온라인 서비스로부터 Microsoft 지원 파일을 구하는 방법](https://support.microsoft.com/help/119591/how-to-obtain-microsoft-support-files-from-online-services)에 해당하는 문서 번호를 클릭하여 해당 Microsoft 기술 자료 문서를 참조하세요.  
+    1. [Microsoft 다운로드 센터]에서 핫픽스 KB4482615를 다운로드하세요<!--(https://download.microsoft.com/download/0/9/0/09081E12-A2CF-40B6-82D8-9B8914A1C2D3/KB4482615/CM1810-KB4482615.ConfigMgr.Update.exe)-->. 이 핫픽스를 통해 기본 이외의 시나리오에서 UUP를 사용할 수 있습니다.  
 
-2. UUP 핫픽스로 업그레이드되면 ConfigMgr 클라이언트도 업그레이드하여 일치시킵니다. UUP 업데이트를 대상으로 하는 모든 클라이언트는 **약 6GB의 사용되지 않은 콘텐츠를 클라이언트에 불필요하게 다운로드하지 않도록** 업그레이드해야 합니다.
+    2. [핫픽스를 가져오려면 업데이트 등록 도구 사용](/sccm/core/servers/manage/use-the-update-registration-tool-to-import-hotfixes)  
 
-#### <a name="configmgr-1810-uup-hotfix-kb4482615-from-1810-fast-ring"></a>1810 Fast Ring의 ConfigMgr 1810 UUP 핫픽스(KB4482615)
-현재 ConfigMgr 1810 Fast Ring을 사용하고 있는 경우 두 번의 서비스 업데이트를 통해 ConfigMgr을 업그레이드해야 하지만, 클라이언트를 한 번만 업그레이드하려면 두 업데이트를 한 번에 업그레이드할 때까지 클라이언트 업그레이드 배포를 보류합니다.
+2. 클라이언트 업데이트  
 
-1. 1810 GA까지 롤업할 수 있는 핫픽스는 곧 제공될 예정이며(1월 초 예상), [업데이트 및 설치]에 업데이트가 표시될 때까지 보류하세요.  
+    - 이 프로세스를 간소화하려면 자동 클라이언트 업그레이드를 사용하는 것이 좋습니다. 자세한 내용은 [클라이언트 업그레이드](/sccm/core/clients/manage/upgrade/upgrade-clients#automatic-client-upgrade)를 참조하세요.  
 
-2. 사이트 서버만(클라이언트 아님) "Configuration Manager 1810 핫픽스(KB4479288)"로 업그레이드(패키지 GUID: 930FA45E-530F-4B08-B1BF-DE3F5267B03C)  
+    - UUP 업데이트를 대상으로 하는 모든 클라이언트는 **약 6GB의 사용되지 않은 콘텐츠를 클라이언트에 불필요하게 다운로드하지 않도록** 업그레이드해야 합니다.
 
-3. "Configuration Manager 1810 핫픽스(KB4482615)"로 다시 업그레이드합니다(패키지 GUID: 86450B7D-3574-4CF7-8B11-486A2C1F62A6) – 이 핫픽스는 기본 이외의 시나리오에서 UUP를 사용하도록 설정합니다.  
-
-    1. Microsoft 다운로드 센터에서 핫픽스 다운로드(게시 후 링크 제공 예정)  
-
-    2. 이 핫픽스가 다운로드되면 Microsoft Docs 웹 페이지인 [업데이트 등록 도구를 사용하여 핫픽스 가져오기](/sccm/core/servers/manage/use-the-update-registration-tool-to-import-hotfixes)에서 설명하는 설치 지침을 참조하세요.  
-
-    3. Microsoft 지원 파일을 다운로드하는 방법에 대한 자세한 내용은 [온라인 서비스로부터 Microsoft 지원 파일을 구하는 방법](https://support.microsoft.com/help/119591/how-to-obtain-microsoft-support-files-from-online-services)에 해당하는 문서 번호를 클릭하여 해당 Microsoft 기술 자료 문서를 참조하세요.  
-
-4. UUP 핫픽스로 업그레이드되면 ConfigMgr 클라이언트도 업그레이드하여 일치시킵니다. UUP 업데이트를 대상으로 하는 모든 클라이언트는 **약 6GB의 사용되지 않은 콘텐츠를 클라이언트에 불필요하게 다운로드하지 않도록** 업그레이드해야 합니다.
 
 #### <a name="1812-technical-preview"></a>1812 기술 미리 보기
 1812 기술 미리 보기는 지원되는 UUP 시나리오에서 ConfigMgr 1810 UUP 핫픽스(KB4482615)와 동일합니다.
@@ -127,7 +121,7 @@ $config.ServerId
 
 ### <a name="4-enable-express-installation-on-clients-in-client-settings"></a>4. 클라이언트 설정에서 클라이언트에 기본 설치를 사용하도록 설정
 
-기본 설치를 사용하도록 설정하는 클라이언트 설정은 기본 콘텐츠의 동기화 여부와 상관없이 UUP 업데이트에 대해 설정해야 합니다. 이 설정을 사용하면 ConfigMgr에서 UUP 업데이트와 관련된 모든 콘텐츠를 다운로드하지 않고 WUA를 통해 클라이언트에 다운로드하는 데 필요한 콘텐츠를 결정할 수 있습니다. 선택적 FOD 및 언어 팩 콘텐츠가 있으므로 이 설정은 기본 이외의 시나리오에도 필요합니다. 이로 인해 업데이트와 관련된 모든 클라이언트에서 필요하지 않은 의미 없는 양의 추가 데이터가 발생합니다.
+기본 설치를 사용하도록 설정하는 클라이언트 설정은 기본 콘텐츠의 동기화 여부와 상관없이 UUP 업데이트에 대해 설정해야 합니다. 이 설정을 사용하면 ConfigMgr에서 UUP 업데이트와 관련된 모든 콘텐츠를 다운로드하지 않고 WUA(Windows 업데이트 에이전트)를 통해 클라이언트에 다운로드하는 데 필요한 콘텐츠를 결정할 수 있습니다. 선택적 FOD 및 언어 팩 콘텐츠가 있으므로 이 설정은 기본 이외의 시나리오에도 필요합니다. 이로 인해 업데이트와 관련된 모든 클라이언트에서 필요하지 않은 의미 없는 양의 추가 데이터가 발생합니다.
 
 이 설정을 사용하도록 설정하면 서버 콘텐츠 다운로드에는 영향을 주지 않고 클라이언트 다운로드 동작에만 영향을 줍니다. 이 설정을 아직 사용하도록 설정하지 않은 경우 이렇게 설정하기 전에 위에서 설명한 ConfigMgr 및 Windows 클라이언트 버전이 있어야 합니다. 이러한 버전은 WSUS에서 업데이트 승인과 직접 관련된 일부 호환성 문제를 해결하고, 기본 콘텐츠가 동기화되지 않는 경우에도 ConfigMgr에서 UUP 업데이트를 위해 이 채널을 사용할 수 있도록 하기 때문입니다.
 
@@ -144,7 +138,7 @@ $config.ServerId
 
 ### <a name="5-make-sure-your-adrs-are-set-as-desired"></a>5. ADR이 원하는 대로 설정되었는지 확인 
 
-UUP 업데이트 동기화를 사용하도록 설정하기 전에 ADR 및 사용하고 있는 다른 업데이트 인프라를 고려합니다. 이러한 업데이트가 기존 ADR 및 설치 계획의 일부로 자동으로 배포되지 않도록 하려면 ADR을 업데이트하여 해당 업데이트를 정리해야 합니다. [동기화된 UUP 업데이트를 찾는 방법](#how-to-find-synced-uup-updates)을 참조하세요. 기존 설치 계획은 기본적으로 UUP가 아닌 업데이트 인프라만 배포하지만 이 동작을 변경하도록 업데이트할 수 있습니다.
+UUP 업데이트 동기화를 사용하도록 설정하기 전에 ADR(자동 배포 규칙) 및 사용하고 있는 다른 업데이트 인프라를 고려합니다. 이러한 업데이트가 기존 ADR 및 설치 계획의 일부로 자동으로 배포되지 않도록 하려면 ADR을 업데이트하여 해당 업데이트를 정리해야 합니다. [동기화된 UUP 업데이트를 찾는 방법](#how-to-find-synced-uup-updates)을 참조하세요. 기존 설치 계획은 기본적으로 UUP가 아닌 업데이트 인프라만 배포하지만 이 동작을 변경하도록 업데이트할 수 있습니다.
 
 또한 이러한 업데이트가 동기화를 통해 규정 준수 보고서 또는 다른 인프라에 영향을 주고 원하는 대로 미리 수정할 수 있는지도 고려합니다. 예를 들어 모든 제품에서 규정 준수를 측정하면 UUP 및 UUP 이외의 Windows 10 누적 업데이트가 모두 준수 또는 비준수로 표시되어 번호가 왜곡됩니다.
 
@@ -160,7 +154,7 @@ UUP 업데이트를 동기화하고 사용해 볼 준비가 되면 WSUS에서 �
 
 2. Configuration Manager 콘솔에서 **관리** \ **사이트 구성** \ **사이트**로 차례로 이동합니다.  
 
-3. 최상위 사이트(CAS 또는 독립 실행형 주 사이트)를 선택합니다.  
+3. CAS(중앙 관리 사이트) 또는 독립 실행형 기본 사이트 중 하나인 최상위 사이트 선택  
 
 4. **사이트 구성 요소 구성** \ **소프트웨어 업데이트 지점**을 차례로 엽니다.  
 
@@ -243,7 +237,7 @@ UUP가 아직 미리 보기(비공개 또는 공개)로 있는 한 필요한 경
 - Windows 배달 최적화
 - Configuration Manager 피어 캐시
 - Windows BranchCache
-- MU에서 직접 다운로드하려면 서버로 다운로드하지 않고 배포합니다(배포 패키지 없음). 사용하고 있는 경우 DO를 함께 사용하는 것이 좋습니다.
+- Microsoft 업데이트에서 직접 다운로드하려면 서버로 다운로드하지 않고 배포합니다(배포 패키지 없음). 사용하고 있는 경우 전송 최적화를 함께 사용하는 것이 좋습니다.
 - 타사 대체 콘텐츠 공급자
 
 자세한 내용은 [Windows 10 업데이트 배달 최적화](/sccm/sum/deploy-use/optimize-windows-10-update-delivery)를 참조하세요.

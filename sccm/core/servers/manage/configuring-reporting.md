@@ -10,12 +10,12 @@ ms.assetid: 55ae86a7-f0ab-4c09-b4da-89cd0e7fa0e0
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 17b0147e82e2eb9a756bdab69eed7ab86f98a1e0
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: d046a5fcd6602c82eda631c9d9b7d47db2470888
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32344299"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53418427"
 ---
 # <a name="configuring-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 보고 구성
 
@@ -123,7 +123,7 @@ System Center Configuration Manager 콘솔에서 보고서를 만들고 수정�
         > [!IMPORTANT]  
         >  Configuration Manager는 선택된 사이트 시스템에서 현재 사용자의 컨텍스트에서 WMI(Windows Management Instrumentation)에 연결하여 SQL Server for Reporting Services 인스턴스를 검색합니다. 현재 사용자에게 사이트 시스템에서 WMI에 대한 **읽기** 권한이 있어야 하며, 그렇지 않으면 Reporting Services 인스턴스가 검색되지 않습니다.  
 
-    -   **보고 서비스 지점 계정**: **설정**을 클릭한 후에 보고 서비스 지점의 SQL Server Reporting Services가 보고서에 표시되는 데이터를 검색하기 위해 Configuration Manager 사이트 데이터베이스에 연결할 때 사용할 계정을 선택합니다. **기존 계정**을 선택하여 이전에 Configuration Manager 계정으로 구성된 Windows 사용자 계정을 지정하거나 **새 계정**을 선택하여 현재 Configuration Manager 계정으로 구성되어 있지 않은 Windows 사용자 계정을 지정합니다. Configuration Manager에서는 사이트 데이터베이스에 대해 지정된 사용자 액세스 권한을 자동으로 부여합니다. 이 사용자는 **관리** 작업 영역에 있는 **보안** 노드의 **계정** 하위 폴더에 **ConfigMgr 보고 서비스 지점** 계정 이름으로 표시됩니다.  
+    -   **Reporting Services 지점 계정**: **설정**을 클릭한 다음, 보고 서비스 지점의 SQL Server Reporting Services가 보고서에 표시되는 데이터를 검색하기 위해 Configuration Manager 사이트 데이터베이스에 연결될 때 사용할 계정을 선택합니다. **기존 계정**을 선택하여 이전에 Configuration Manager 계정으로 구성된 Windows 사용자 계정을 지정하거나 **새 계정**을 선택하여 현재 Configuration Manager 계정으로 구성되어 있지 않은 Windows 사용자 계정을 지정합니다. Configuration Manager에서는 사이트 데이터베이스에 대해 지정된 사용자 액세스 권한을 자동으로 부여합니다. 이 사용자는 **관리** 작업 영역에 있는 **보안** 노드의 **계정** 하위 폴더에 **ConfigMgr 보고 서비스 지점** 계정 이름으로 표시됩니다.  
 
          Reporting Services를 실행하는 계정은 도메인 로컬 보안 그룹인 **Windows Authorization Access Group**에 속해 있어야 하며, **tokenGroupsGlobalAndUniversal 읽기** 권한이 **허용**으로 설정되어야 합니다. 보고서를 성공적으로 실행하려면 보고 서비스 지점 계정과는 다른 도메인에서 사용자에 대해 양방향 트러스트 관계가 설정되어 있어야 합니다.
 
@@ -147,36 +147,36 @@ System Center Configuration Manager 콘솔에서 보고서를 만들고 수정�
 > [!IMPORTANT]  
 >  SMS_Executive 서비스를 위해 구성된 계정의 자격 증명을 사용하여 다음 목록의 작업이 수행됩니다. 이 계정은 대개 사이트 서버 로컬 시스템 계정입니다.  
 
--   보고 서비스 지점 사이트 역할을 설치합니다.  
+- 보고 서비스 지점 사이트 역할을 설치합니다.  
 
--   마법사에서 지정한 저장된 자격 증명을 사용하여 보고 서비스의 데이터 원본을 만듭니다. 이는 보고서를 실행할 때 보고 서비스가 사이트 데이터베이스에 연결하는 데 사용하는 Windows 사용자 계정과 암호입니다.  
+- 마법사에서 지정한 저장된 자격 증명을 사용하여 보고 서비스의 데이터 원본을 만듭니다. 이는 보고서를 실행할 때 보고 서비스가 사이트 데이터베이스에 연결하는 데 사용하는 Windows 사용자 계정과 암호입니다.  
 
--   Reporting Services에서 Configuration Manager 루트 폴더를 만듭니다.  
+- Reporting Services에서 Configuration Manager 루트 폴더를 만듭니다.  
 
--   보고 서비스에서 **ConfigMgr 보고서 사용자** 및 **ConfigMgr 보고서 관리자** 보안 역할을 추가합니다.  
+- 보고 서비스에서 **ConfigMgr 보고서 사용자** 및 **ConfigMgr 보고서 관리자** 보안 역할을 추가합니다.  
 
--   하위 폴더를 만들어 %ProgramFiles%\SMS_SRSRP의 Configuration Manager 보고서를 Reporting Services에 배포합니다.  
+- 하위 폴더를 만들어 %ProgramFiles%\SMS_SRSRP의 Configuration Manager 보고서를 Reporting Services에 배포합니다.  
 
--   **사이트 읽기** 권한이 있는 Configuration Manager의 모든 사용자 계정의 루트 폴더에 Reporting Services의 **ConfigMgr 보고서 사용자** 역할을 추가합니다.  
+- **사이트 읽기** 권한이 있는 Configuration Manager의 모든 사용자 계정의 루트 폴더에 Reporting Services의 **ConfigMgr 보고서 사용자** 역할을 추가합니다.  
 
--   **사이트 수정** 권한이 있는 Configuration Manager의 모든 사용자 계정의 루트 폴더에 Reporting Services의 **ConfigMgr 보고서 관리자** 역할을 추가합니다.  
+- **사이트 수정** 권한이 있는 Configuration Manager의 모든 사용자 계정의 루트 폴더에 Reporting Services의 **ConfigMgr 보고서 관리자** 역할을 추가합니다.  
 
--   보고서 폴더와 Configuration Manager 보안 개체 유형(Configuration Manager 사이트 데이터베이스에서 유지 관리됨) 간의 매핑을 검색합니다.  
+- 보고서 폴더와 Configuration Manager 보안 개체 유형(Configuration Manager 사이트 데이터베이스에서 유지 관리됨) 간의 매핑을 검색합니다.  
 
--   Reporting Services의 특정 보고서 폴더에 대한 Configuration Manager 관리자의 다음 권한을 구성합니다.  
+- Reporting Services의 특정 보고서 폴더에 대한 Configuration Manager 관리자의 다음 권한을 구성합니다.  
 
-    -   사용자를 추가하고 Configuration Manager 개체에 대한 **보고서 실행** 권한이 있는 관리자에 대해 연결된 보고서 폴더에 **ConfigMgr 보고서 사용자** 역할을 할당합니다.  
+  - 사용자를 추가하고 Configuration Manager 개체에 대한 **보고서 실행** 권한이 있는 관리자에 대해 연결된 보고서 폴더에 **ConfigMgr 보고서 사용자** 역할을 할당합니다.  
 
-    -   사용자를 추가하고 Configuration Manager 개체에 대한 **보고서 수정** 권한이 있는 관리자에 대해 연결된 보고서 폴더에 **ConfigMgr 보고서 관리자** 역할을 할당합니다.  
+  - 사용자를 추가하고 Configuration Manager 개체에 대한 **보고서 수정** 권한이 있는 관리자에 대해 연결된 보고서 폴더에 **ConfigMgr 보고서 관리자** 역할을 할당합니다.  
 
-     Configuration Manager에서 Reporting Services에 연결하고 Configuration Manager 및 Reporting Services 루트 폴더와 특정 보고서 폴더의 사용자에 대한 권한을 설정합니다. 보고 서비스 지점을 처음 설치하면 Configuration Manager에서 10분 간격으로 Reporting Services에 연결하여 보고서 폴더에 구성된 사용자 권한이 Configuration Manager 사용자에 대해 설정된 연결된 권한인지 확인합니다. Reporting Services 보고서 관리자를 사용하여 보고서 폴더에서 사용자를 추가하거나 사용자 권한을 수정하면 Configuration Manager에서 사이트 데이터베이스에 저장된 역할 기반 할당을 사용하여 해당 변경 내용을 덮어씁니다. 또한 Configuration Manager는 Configuration Manager에서 보고 권한이 없는 사용자를 제거합니다.  
+    Configuration Manager에서 Reporting Services에 연결하고 Configuration Manager 및 Reporting Services 루트 폴더와 특정 보고서 폴더의 사용자에 대한 권한을 설정합니다. 보고 서비스 지점을 처음 설치하면 Configuration Manager에서 10분 간격으로 Reporting Services에 연결하여 보고서 폴더에 구성된 사용자 권한이 Configuration Manager 사용자에 대해 설정된 연결된 권한인지 확인합니다. Reporting Services 보고서 관리자를 사용하여 보고서 폴더에서 사용자를 추가하거나 사용자 권한을 수정하면 Configuration Manager에서 사이트 데이터베이스에 저장된 역할 기반 할당을 사용하여 해당 변경 내용을 덮어씁니다. 또한 Configuration Manager는 Configuration Manager에서 보고 권한이 없는 사용자를 제거합니다.  
 
 ##  <a name="BKMK_SecurityRoles"></a> Configuration Manager의 보고 서비스 보안 역할  
  Configuration Manager에서 보고 서비스 지점을 설치하면 Reporting Services에 다음 보안 역할이 추가됩니다.  
 
 -   **ConfigMgr 보고서 사용자**: 이 보안 역할이 할당된 사용자만 Configuration Manager 보고서를 실행할 수 있습니다.  
 
--   **ConfigMgr 보고서 관리자**: 이 보안 역할이 할당된 사용자는 Configuration Manager에서 보고와 관련된 모든 작업을 수행할 수 있습니다.  
+-   **ConfigMgr 보고서 관리자**: 이 보안 역할이 할당된 사용자는 Configuration Manager의 보고와 관련된 모든 작업을 수행할 수 있습니다.  
 
 ##  <a name="BKMK_VerifyReportingServicesPointInstallation"></a> 보고 서비스 지점 설치 확인  
  보고 서비스 지점 사이트 역할을 추가하면 특정 상태 메시지와 로그 파일 항목을 보고 설치를 확인할 수 있습니다. 보고 서비스 지점 설치가 제대로 수행되었는지 확인하려면 다음 절차를 수행하십시오.  

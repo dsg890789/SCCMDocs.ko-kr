@@ -10,12 +10,12 @@ ms.assetid: f2df88b4-c348-4dcf-854a-54fd6eedf485
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: fd606ff7068b7c14047e445d16ea78d20a5c12ea
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: d011272c42f3347f555e4fb5322464e9c5e754da
+ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32342650"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53424700"
 ---
 # <a name="creating-custom-report-models-for-system-center-configuration-manager-in-sql-server-reporting-services"></a>SQL Server Reporting Services에서 System Center Configuration Manager에 대한 사용자 지정 보고서 모델 만들기
 
@@ -136,37 +136,37 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 
 ###  <a name="BKMK_DeployReportModel"></a> To deploy the custom report model to Configuration Manager  
 
-1.  보고서 모델 프로젝트를 만든 폴더로 이동합니다. 예: %*USERPROFILE*%\Documents\Visual Studio 2008\Projects\\*&lt;프로젝트 이름\>.*  
+1. 보고서 모델 프로젝트를 만든 폴더로 이동합니다. 예: %*USERPROFILE*%\Documents\Visual Studio 2008\Projects\\*&lt;프로젝트 이름\>.*  
 
-2.  보고서 모델 프로젝트 폴더에서 컴퓨터의 임시 폴더로 다음 파일을 복사합니다.  
+2. 보고서 모델 프로젝트 폴더에서 컴퓨터의 임시 폴더로 다음 파일을 복사합니다.  
 
-    -   *&lt;모델 이름\>* **.dsv**  
+   -   *&lt;모델 이름\>* **.dsv**  
 
-    -   *&lt;모델 이름\>* **.smdl**  
+   -   *&lt;모델 이름\>* **.smdl**  
 
-3.  텍스트 편집기(예: 메모장)를 사용하여 이전 파일을 엽니다.  
+3. 텍스트 편집기(예: 메모장)를 사용하여 이전 파일을 엽니다.  
 
-4.  *&lt;모델 이름\>***.dsv** 파일에서 다음과 같이 표시된 파일의 첫 줄을 찾습니다.  
+4. *&lt;모델 이름\>***.dsv** 파일에서 다음과 같이 표시된 파일의 첫 줄을 찾습니다.  
 
-     **&lt;DataSourceView xmlns="http://schemas.microsoft.com/analysisservices/2003/engine"\>**  
+    **&lt;DataSourceView xmlns="http://schemas.microsoft.com/analysisservices/2003/engine"\>**  
 
-     이 줄을 다음과 같이 편집합니다.  
+    이 줄을 다음과 같이 편집합니다.  
 
-     **&lt;DataSourceView xmlns="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:xsi="RelationalDataSourceView"\>**  
+    **&lt;DataSourceView xmlns="<http://schemas.microsoft.com/analysisservices/2003/engine>" xmlns:xsi="RelationalDataSourceView"\>**  
 
-5.  파일 내용 전체를 Windows 클립보드에 복사합니다.  
+5. 파일 내용 전체를 Windows 클립보드에 복사합니다.  
 
-6.  *&lt;모델 이름\>***.dsv** 파일을 닫습니다.  
+6. *&lt;모델 이름\>***.dsv** 파일을 닫습니다.  
 
-7.  *&lt;모델 이름\>***.smdl** 파일에서 다음과 같이 표시된 파일의 마지막 세 줄을 찾습니다.  
+7. *&lt;모델 이름\>***.smdl** 파일에서 다음과 같이 표시된 파일의 마지막 세 줄을 찾습니다.  
 
-     `</Entity>`  
+    `</Entity>`  
 
-     `</Entities>`  
+    `</Entities>`  
 
-     `</SemanticModel>`  
+    `</SemanticModel>`  
 
-8.  *&lt;모델 이름\>***.dsv** 파일의 내용을 파일의 마지막 줄(**&lt;SemanticModel\>**) 바로 앞에 붙여넣습니다.  
+8. *&lt;모델 이름\>***.dsv** 파일의 내용을 파일의 마지막 줄(**&lt;SemanticModel\>**) 바로 앞에 붙여넣습니다.  
 
 9. *&lt;모델 이름\>***.smdl** 파일을 저장하고 닫습니다.  
 
@@ -178,13 +178,13 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 ##  <a name="AdvancedReportModel"></a> SQL Server Reporting Services에서 고급 보고서 모델을 만드는 단계  
  다음 절차를 사용하면 사이트의 사용자가 Configuration Manager 데이터베이스의 여러 뷰에서 데이터를 기반으로 한 특정 모델 기반 보고서를 작성하는 데 사용할 수 있는 고급 보고서 모델을 만들 수 있습니다. 보고서 작성자에게 클라이언트 컴퓨터 및 이러한 컴퓨터에 설치된 운영 체제에 대한 정보를 나타내는 보고서 모델을 만듭니다. 이 정보는 Configuration Manager 데이터베이스의 다음 뷰에서 가져옵니다.  
 
--   **V_R_System**: 검색된 컴퓨터와 Configuration Manager 클라이언트에 대한 정보가 포함되어 있습니다.  
+- **V_R_System**: 검색된 컴퓨터와 Configuration Manager 클라이언트에 대한 정보가 포함되어 있습니다.  
 
--   **V_GS_OPERATING_SYSTEM**: 클라이언트 컴퓨터에 설치된 운영 체제에 대한 정보가 포함되어 있습니다.  
+- **V_GS_OPERATING_SYSTEM**: 클라이언트 컴퓨터에 설치된 운영 체제에 대한 정보가 포함되어 있습니다.  
 
- 이전 뷰에서 선택한 항목이 지정된 이름으로 하나의 목록에 통합된 다음, 보고서 작성기에서 특정 보고서에 포함할 수 있도록 보고서 작성자에게 표시됩니다.  
+  이전 뷰에서 선택한 항목이 지정된 이름으로 하나의 목록에 통합된 다음, 보고서 작성기에서 특정 보고서에 포함할 수 있도록 보고서 작성자에게 표시됩니다.  
 
- 이러한 절차를 수행하는 컴퓨터에 SQL Server Business Intelligence Development Studio를 설치했는지, 그리고 이 컴퓨터에 보고 서비스 지점 서버에 대한 네트워크 연결이 있는지 확인합니다. SQL Server Business Intelligence Development Studio에 대한 자세한 내용은 SQL Server 설명서를 참조하십시오.  
+  이러한 절차를 수행하는 컴퓨터에 SQL Server Business Intelligence Development Studio를 설치했는지, 그리고 이 컴퓨터에 보고 서비스 지점 서버에 대한 네트워크 연결이 있는지 확인합니다. SQL Server Business Intelligence Development Studio에 대한 자세한 내용은 SQL Server 설명서를 참조하십시오.  
 
 #### <a name="to-create-the-report-model-project"></a>To create the report model project  
 
@@ -234,28 +234,28 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 
 #### <a name="to-define-the-data-source-view-for-the-report-model"></a>보고서 모델의 데이터 원본 뷰를 정의하려면  
 
-1.  **솔루션 탐색기**에서 **데이터 원본 뷰** 를 마우스 오른쪽 단추로 클릭하여 **새 데이터 원본 뷰 추가**를 선택합니다.  
+1. **솔루션 탐색기**에서 **데이터 원본 뷰** 를 마우스 오른쪽 단추로 클릭하여 **새 데이터 원본 뷰 추가**를 선택합니다.  
 
-2.  **데이터 원본 뷰 마법사 시작** 페이지에서 **다음**을 클릭합니다. **데이터 원본 선택** 페이지가 표시됩니다.  
+2. **데이터 원본 뷰 마법사 시작** 페이지에서 **다음**을 클릭합니다. **데이터 원본 선택** 페이지가 표시됩니다.  
 
-3.  **관계형 데이터 원본** 창에서 **Advanced_Model** 데이터 원본을 선택했는지 확인하고 **다음**을 클릭합니다.  
+3. **관계형 데이터 원본** 창에서 **Advanced_Model** 데이터 원본을 선택했는지 확인하고 **다음**을 클릭합니다.  
 
-4.  **테이블 및 뷰 선택** 페이지의 **사용 가능한 개체** 목록에서 보고서 모델에 사용할 다음 뷰를 선택합니다.  
+4. **테이블 및 뷰 선택** 페이지의 **사용 가능한 개체** 목록에서 보고서 모델에 사용할 다음 뷰를 선택합니다.  
 
-    -   **v_R_System (dbo)**  
+   - **v_R_System (dbo)**  
 
-    -   **v_GS_OPERATING_SYSTEM (dbo)**  
+   - **v_GS_OPERATING_SYSTEM (dbo)**  
 
      각 뷰를 선택한 후 **>** 를 클릭하여 **포함된 개체** 를 선택합니다.  
 
-    > [!TIP]  
-    >  **사용 가능한 개체** 목록에서 뷰를 찾으려면 목록 맨 위의 **이름** 제목을 클릭하여 개체를 사전순으로 정렬합니다.  
+   > [!TIP]  
+   >  **사용 가능한 개체** 목록에서 뷰를 찾으려면 목록 맨 위의 **이름** 제목을 클릭하여 개체를 사전순으로 정렬합니다.  
 
-5.  **이름 일치** 대화 상자가 나타나면 기본 선택 항목을 적용한 후 **다음**을 클릭합니다.  
+5. **이름 일치** 대화 상자가 나타나면 기본 선택 항목을 적용한 후 **다음**을 클릭합니다.  
 
-6.  필요한 개체를 선택한 경우 **다음**을 클릭한 후 데이터 원본 뷰의 이름을 지정합니다. 예를 들어 **Advanced_Model**이라고 입력합니다.  
+6. 필요한 개체를 선택한 경우 **다음**을 클릭한 후 데이터 원본 뷰의 이름을 지정합니다. 예를 들어 **Advanced_Model**이라고 입력합니다.  
 
-7.  **마침**을 클릭합니다. **솔루션 탐색기** 의 **데이터 원본 뷰** 폴더에 **Advanced_Model.dsv**데이터 원본 뷰가 표시됩니다.  
+7. **마침**을 클릭합니다. **솔루션 탐색기** 의 **데이터 원본 뷰** 폴더에 **Advanced_Model.dsv**데이터 원본 뷰가 표시됩니다.  
 
 #### <a name="to-define-relationships-in-the-data-source-view"></a>데이터 원본 뷰에서 관계를 정의하려면  
 
@@ -271,9 +271,9 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 
 6.  **명명된 쿼리 만들기** 대화 상자에서 다음 정보를 지정합니다.  
 
-    -   **이름** : 쿼리의 이름을 지정합니다. 예를 들어 **Advanced_Model**이라고 입력합니다.  
+    -   **이름:** 쿼리의 이름을 지정합니다. 예를 들어 **Advanced_Model**이라고 입력합니다.  
 
-    -   **설명** : 쿼리의 설명을 지정합니다. 이 예에서는 **예제 보고 서비스 보고서 모델**이라고 입력합니다.  
+    -   **설명:** 쿼리의 설명을 지정합니다. 이 예에서는 **예제 보고 서비스 보고서 모델**이라고 입력합니다.  
 
 7.  **v_R_System** 창의 개체 목록에서 보고서 모델에 표시할 항목을 다음 중에서 선택합니다.  
 
@@ -379,37 +379,37 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 
 #### <a name="to-deploy-the-custom-report-model-to-configuration-manager"></a>To deploy the custom report model to Configuration Manager  
 
-1.  보고서 모델 프로젝트를 만든 폴더로 이동합니다. 예: %*USERPROFILE*%\Documents\Visual Studio 2008\Projects\\*&lt;프로젝트 이름\>.*  
+1. 보고서 모델 프로젝트를 만든 폴더로 이동합니다. 예: %*USERPROFILE*%\Documents\Visual Studio 2008\Projects\\*&lt;프로젝트 이름\>.*  
 
-2.  보고서 모델 프로젝트 폴더에서 컴퓨터의 임시 폴더로 다음 파일을 복사합니다.  
+2. 보고서 모델 프로젝트 폴더에서 컴퓨터의 임시 폴더로 다음 파일을 복사합니다.  
 
-    -   *&lt;모델 이름\>* **.dsv**  
+   -   *&lt;모델 이름\>* **.dsv**  
 
-    -   *&lt;모델 이름\>* **.smdl**  
+   -   *&lt;모델 이름\>* **.smdl**  
 
-3.  텍스트 편집기(예: 메모장)를 사용하여 이전 파일을 엽니다.  
+3. 텍스트 편집기(예: 메모장)를 사용하여 이전 파일을 엽니다.  
 
-4.  *&lt;모델 이름\>***.dsv** 파일에서 다음과 같이 표시된 파일의 첫 줄을 찾습니다.  
+4. *&lt;모델 이름\>***.dsv** 파일에서 다음과 같이 표시된 파일의 첫 줄을 찾습니다.  
 
-     **&lt;DataSourceView xmlns="http://schemas.microsoft.com/analysisservices/2003/engine"\>**  
+    **&lt;DataSourceView xmlns="http://schemas.microsoft.com/analysisservices/2003/engine"\>**  
 
-     이 줄을 다음과 같이 편집합니다.  
+    이 줄을 다음과 같이 편집합니다.  
 
-     **&lt;DataSourceView xmlns="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:xsi="RelationalDataSourceView"\>**  
+    **&lt;DataSourceView xmlns="<http://schemas.microsoft.com/analysisservices/2003/engine>" xmlns:xsi="RelationalDataSourceView"\>**  
 
-5.  파일 내용 전체를 Windows 클립보드에 복사합니다.  
+5. 파일 내용 전체를 Windows 클립보드에 복사합니다.  
 
-6.  *&lt;모델 이름\>***.dsv** 파일을 닫습니다.  
+6. *&lt;모델 이름\>***.dsv** 파일을 닫습니다.  
 
-7.  *&lt;모델 이름\>***.smdl** 파일에서 다음과 같이 표시된 파일의 마지막 세 줄을 찾습니다.  
+7. *&lt;모델 이름\>***.smdl** 파일에서 다음과 같이 표시된 파일의 마지막 세 줄을 찾습니다.  
 
-     `</Entity>`  
+    `</Entity>`  
 
-     `</Entities>`  
+    `</Entities>`  
 
-     `</SemanticModel>`  
+    `</SemanticModel>`  
 
-8.  *&lt;모델 이름\>***.dsv** 파일의 내용을 파일의 마지막 줄(**&lt;SemanticModel\>**) 바로 앞에 붙여넣습니다.  
+8. *&lt;모델 이름\>***.dsv** 파일의 내용을 파일의 마지막 줄(**&lt;SemanticModel\>**) 바로 앞에 붙여넣습니다.  
 
 9. *&lt;모델 이름\>***.smdl** 파일을 저장하고 닫습니다.  
 

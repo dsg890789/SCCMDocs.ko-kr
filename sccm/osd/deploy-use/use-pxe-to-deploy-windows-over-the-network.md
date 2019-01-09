@@ -10,12 +10,12 @@ ms.assetid: da5f8b61-2386-4530-ad54-1a5c51911f07
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 1efd4197e63ddc12c0afc9e37b633c38d0df0f14
-ms.sourcegitcommit: a52255da16c9f8b0b60a6c299a369347c7e01bef
+ms.openlocfilehash: 75e463d27475e82677e91b00bfba4c4287d463ee
+ms.sourcegitcommit: f2a1fa59fb3870a6bebca61daf15c0c157e9fdd6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49989147"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54030991"
 ---
 # <a name="use-pxe-to-deploy-windows-over-the-network-with-configuration-manager"></a>Configuration Manager에서 PXE를 사용하여 네트워크를 통해 Windows 배포
 
@@ -43,13 +43,16 @@ PXE 부팅 요청을 만드는 Configuration Manager 클라이언트에 운영 �
 > [!NOTE]  
 >  여러 서브넷을 지원하기 위해 단일 PXE 사용 배포 지점을 구성하는 경우 DHCP 옵션을 사용할 수 없습니다. 라우터에서 IP 도우미를 구성하여 PXE 요청을 PXE 사용 배포 지점으로 전달할 수 있도록 합니다.
 
+> [!NOTE]  
+>  또한 DHCP 서버를 실행하는 서버에서 WDS 없이 PXE 응답기를 사용하도록 지원되지 않습니다.
+
 ## <a name="prepare-a-pxe-enabled-boot-image"></a>PXE 사용 부팅 이미지 준비
 
 PXE를 사용하여 OS를 배포하려면 하나 이상의 PXE 사용 배포 지점에 x86 및 x64 PXE 사용 부팅 이미지가 둘 다 배포되어 있어야 합니다. 다음 정보를 사용하여 부팅 이미지에서 PXE를 사용하도록 설정하고 배포 지점에 부팅 이미지를 배포하세요.
 
 -   부팅 이미지에서 PXE를 사용하도록 설정하려면 부팅 이미지 속성의 **데이터 원본** 탭에서 **PXE 사용 배포 지점에서 이 부팅 이미지 배포**를 선택합니다.
 
--   부팅 이미지에 대한 속성을 변경하면 배포 지점에 부팅 이미지가 다시 배포됩니다. 자세한 내용은 [콘텐츠 배포](/sccm/core/servers/deploy/configure/deploy-and-manage-content#bkmk_distribute)를 참조하세요.
+-   부팅 이미지에 대한 속성을 변경하면 부팅 이미지가 업데이트되고 배포 지점에 부팅 이미지가 다시 배포됩니다. 자세한 내용은 [콘텐츠 배포](/sccm/core/servers/deploy/configure/deploy-and-manage-content#bkmk_distribute)를 참조하세요.
 
 
 
@@ -61,7 +64,7 @@ PXE를 사용하여 운영 체제를 배포할 때 각 배포 지점에 제외 �
 
 1.  PXE에 사용되는 배포 지점에서 텍스트 파일을 만듭니다. 예를 들어 이 텍스트 파일의 이름을 **pxeExceptions.txt**로 지정합니다.  
 
-2.  메모장과 같은 일반 텍스트 편집기를 사용하여 PXE 사용 배포 지점에서 무시할 컴퓨터의 MAC 주소를 추가합니다. MAC 주소 값은 콜론으로 구분하고 각 주소를 별도의 줄에 입력합니다.  `01:23:45:67:89:ab`  
+2.  메모장과 같은 일반 텍스트 편집기를 사용하여 PXE 사용 배포 지점에서 무시할 컴퓨터의 MAC 주소를 추가합니다. MAC 주소 값은 콜론으로 구분하고 각 주소를 별도의 줄에 입력합니다. `01:23:45:67:89:ab`  
 
 3.  PXE 사용 배포 지점 사이트 시스템 서버에서 텍스트 파일을 저장합니다. 텍스트 파일은 서버의 모든 위치에 저장할 수 있습니다.  
 
