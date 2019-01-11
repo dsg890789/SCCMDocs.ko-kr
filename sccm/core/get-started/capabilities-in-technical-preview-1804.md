@@ -57,7 +57,7 @@ HTTP 연결을 사용하여 통신하도록 애플리케이션 카탈로그 웹 
 
 
 ## <a name="configure-a-remote-content-library-for-the-site-server"></a>사이트 서버에 대해 원격 콘텐츠 라이브러리 구성  
-<!--1357525--> 기본 사이트 서버에서 하드 드라이브 공간을 확보하려면 해당 [콘텐츠 라이브러리](/sccm/core/plan-design/hierarchy/the-content-library)를 다른 저장소 위치로 이동합니다. 사이트 서버의 다른 드라이브, 별도의 서버 또는 SAN(저장 영역 네트워크)의 내결함성 디스크로 콘텐츠 라이브러리를 이동할 수 있습니다. 시간 경과에 따라 사용자의 변화하는 콘텐츠 요구 사항에 맞게 확장되거나 축소되는 탄력적인 저장소를 제공하므로 SAN을 사용하는 것이 좋습니다. 
+<!--1357525--> 기본 사이트 서버에서 하드 드라이브 공간을 확보하려면 해당 [콘텐츠 라이브러리](/sccm/core/plan-design/hierarchy/the-content-library)를 다른 저장소 위치로 이동합니다. 사이트 서버의 다른 드라이브, 별도의 서버 또는 SAN(스토리지 영역 네트워크)의 내결함성 디스크로 콘텐츠 라이브러리를 이동할 수 있습니다. 시간 경과에 따라 사용자의 변화하는 콘텐츠 요구 사항에 맞게 확장되거나 축소되는 탄력적인 스토리지를 제공하므로 SAN을 사용하는 것이 좋습니다. 
 
 이 원격 콘텐츠 라이브러리는 [사이트 서버 역할 고가용성](/sccm/core/get-started/capabilities-in-technical-preview-1706#site-server-role-high-availability)을 위한 새로운 필수 조건입니다. 
 

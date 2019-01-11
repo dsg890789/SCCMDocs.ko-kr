@@ -59,7 +59,7 @@ Configuration Manager(SCCM)에서 인증서 프로필을 사용하여 관리되�
 
 -   **개인 정보 교환 PKCS #12(PFX) 설정 – 가져오기**: PFX 인증서를 가져오려면 이 옵션을 선택합니다. PFX 인증서를 만드는 방법을 자세히 알아보려면 [PFX 인증서 프로필 가져오기](/sccm/mdm/deploy-use/import-pfx-certificate-profiles.md)를 참조하세요.
 
--   개인 정보 교환 – PKCS #12(PFX) 설정 – 가져오기 **: 인증 기관을 사용 하 여 PFX 인증서를 처리 하려면 선택 합니다. PFX 인증서를 만드는 방법을 자세히 알아보려면 [PFX 인증서 프로필 만들기](/sccm/mdm/deploy-use/create-pfx-certificate-profiles.md)를 참조하세요.
+-   **개인 정보 교환 PKCS #12(PFX) 설정 - 만들기**: 이를 선택하여 인증 기관을 통해 PFX 인증서를 처리합니다. PFX 인증서를 만드는 방법을 자세히 알아보려면 [PFX 인증서 프로필 만들기](/sccm/mdm/deploy-use/create-pfx-certificate-profiles.md)를 참조하세요.
 
 
 ## <a name="configure-a-trusted-ca-certificate"></a>신뢰할 수 있는 CA 인증서 구성  
@@ -68,7 +68,7 @@ Configuration Manager(SCCM)에서 인증서 프로필을 사용하여 관리되�
 >  SCEP 인증서 프로필을 만들려면 먼저 신뢰할 수 있는 CA 인증서 프로필을 하나 이상 구성해야 합니다.    
 >  
 >  인증서가 배포된 후 이러한 값을 하나라도 변경하면 새 인증서가 요청됩니다.
->  -  키 저장소 공급자
+>  -  키 스토리지 공급자
 >  -  인증서 템플릿 이름
 >  -  인증서 종류
 >  -  주체 이름 형식
@@ -102,7 +102,7 @@ Configuration Manager(SCCM)에서 인증서 프로필을 사용하여 관리되�
 
    -   **KSP(키 스토리지 공급자)**: 인증서에 대한 키를 저장할 위치를 지정합니다. 다음 값 중 하나를 선택합니다.  
 
-   -   **있는 경우 TPM(신뢰할 수 있는 플랫폼 모듈)에 설치**: TPM에 키를 설치합니다. TPM이 없는 경우 키는 소프트웨어 키의 저장소 공급자에 설치됩니다.  
+   -   **있는 경우 TPM(신뢰할 수 있는 플랫폼 모듈)에 설치**: TPM에 키를 설치합니다. TPM이 없는 경우 키는 소프트웨어 키의 스토리지 공급자에 설치됩니다.  
 
    -   **TPM(신뢰할 수 있는 플랫폼 모듈)에 설치, 그렇지 않으면 실패**: TPM에 키를 설치합니다. TPM 모듈이 없는 경우 설치가 실패합니다.  
 
@@ -110,7 +110,7 @@ Configuration Manager(SCCM)에서 인증서 프로필을 사용하여 관리되�
 
    > [!NOTE]  
    > 
-   > 사용자가 비즈니스용 Windows Hello PIN을 만들면 Windows에서 Configuration Manager가 수신 대기하는 알림을 보냅니다. 이렇게 하면 Configuration Manager에서 Windows Hello PIN을 만든 사용자를 신속하게 파악할 수 있습니다. 그런 다음 Windows Hello가 인증서 프로필에서 키 저장소 공급자로 사용되는 경우 Configuration Manager에서 새로운 인증서를 발행할 수 있습니다.  
+   > 사용자가 비즈니스용 Windows Hello PIN을 만들면 Windows에서 Configuration Manager가 수신 대기하는 알림을 보냅니다. 이렇게 하면 Configuration Manager에서 Windows Hello PIN을 만든 사용자를 신속하게 파악할 수 있습니다. 그런 다음 Windows Hello가 인증서 프로필에서 키 스토리지 공급자로 사용되는 경우 Configuration Manager에서 새로운 인증서를 발행할 수 있습니다.  
 
    -   **소프트웨어 키 스토리지 공급자에 설치**: 소프트웨어 키의 저장소 공급자에 키를 설치합니다.  
 
