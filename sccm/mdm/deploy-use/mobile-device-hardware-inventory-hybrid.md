@@ -42,8 +42,8 @@ Configuration Manager에서 Microsoft Intune 커넥터를 사용하여 iOS, Andr
 |서비스 팩 주요 버전|해당 없음|  
 |서비스 팩 부 버전|해당 없음|  
 |운영 체제 언어|해당 없음|  
-|총 저장소 공간|Device_Memory.DeviceCapacity|  
-|사용 가능한 저장소 공간|Device_Memory.AvailableDeviceCapacity|  
+|총 스토리지 공간|Device_Memory.DeviceCapacity|  
+|사용 가능한 스토리지 공간|Device_Memory.AvailableDeviceCapacity|  
 |IMEI(International Mobile Equipment Identity)|Device_ComputerSystem.IMEI|  
 |MEID(Mobile Equipment Identifier)|Device_ComputerSystem.MEID|  
 |제조업체|해당 없음|  
@@ -70,8 +70,8 @@ Configuration Manager에서 Microsoft Intune 커넥터를 사용하여 iOS, Andr
 |서비스 팩 주요 버전|해당 없음|  
 |서비스 팩 부 버전|해당 없음|  
 |운영 체제 언어|해당 없음|  
-|총 저장소 공간|Device_Memory.StorageTotal|  
-|사용 가능한 저장소 공간|Device_Memory.StorageFree|  
+|총 스토리지 공간|Device_Memory.StorageTotal|  
+|사용 가능한 스토리지 공간|Device_Memory.StorageFree|  
 |IMEI(International Mobile Equipment Identity)|Device_ComputerSystem.IMEI|  
 |MEID(Mobile Equipment Identifier)|해당 없음|  
 |제조업체|Device_Info.Manufacturer|  
@@ -95,8 +95,8 @@ Configuration Manager에서 Microsoft Intune 커넥터를 사용하여 iOS, Andr
 |서비스 팩 주요 버전|해당 없음|  
 |서비스 팩 부 버전|해당 없음|  
 |운영 체제 언어|Device_OSInformation.Language|  
-|총 저장소 공간|해당 없음|  
-|사용 가능한 저장소 공간|해당 없음|  
+|총 스토리지 공간|해당 없음|  
+|사용 가능한 스토리지 공간|해당 없음|  
 |IMEI(International Mobile Equipment Identity)|해당 없음|  
 |MEID(Mobile Equipment Identifier)|해당 없음|  
 |제조업체|Device_ComputerSystem.DeviceManufacturer|  
@@ -120,8 +120,8 @@ Configuration Manager에서 Microsoft Intune 커넥터를 사용하여 iOS, Andr
 |서비스 팩 주요 버전|Win32_OperatingSystem.ServicePackMajorVersion|  
 |서비스 팩 부 버전|Win32_OperatingSystem.ServicePackMinorVersion|  
 |운영 체제 언어|해당 없음|  
-|총 저장소 공간|Win32_PhysicalMemory.Capacity|  
-|사용 가능한 저장소 공간|Win32_OperatingSystem.FreePhysicalMemory|  
+|총 스토리지 공간|Win32_PhysicalMemory.Capacity|  
+|사용 가능한 스토리지 공간|Win32_OperatingSystem.FreePhysicalMemory|  
 |IMEI(International Mobile Equipment Identity)|해당 없음|  
 |MEID(Mobile Equipment Identifier)|해당 없음|  
 |제조업체|Win32_ComputerSystem.Manufacturer|  

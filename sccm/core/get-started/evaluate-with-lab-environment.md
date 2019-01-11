@@ -45,7 +45,7 @@ ms.locfileid: "32334117"
 ## <a name="what-this-lab-does-not-do"></a>이 랩에서 수행하지 않는 작업  
  이 랩에서 모든 Configuration Manager 시나리오를 설명하지는 않으며, 활성 환경으로 즉시 마이그레이션할 수 있도록 설계되지도 않았습니다.  
 
- 이 랩을 구축하면 작업할 수 있는 기능 환경이 구현되게 됩니다. 그러나 이 환경은 시스템 성능, 하드 디스크 공간 관리, SQL Server 저장소 등의 요소에 대해 최적화되지 않습니다.  
+ 이 랩을 구축하면 작업할 수 있는 기능 환경이 구현되게 됩니다. 그러나 이 환경은 시스템 성능, 하드 디스크 공간 관리, SQL Server 스토리지 등의 요소에 대해 최적화되지 않습니다.  
 
 ##  <a name="BKMK_EvalRec"></a> 랩을 빌드하기 전의 권장 자료  
  [System Center Configuration Manager에 대한 설명서](http://docs.microsoft.com/sccm/)에서 다양한 콘텐츠를 사용할 수 있습니다. 랩 빌드를 시작하기 전에 이 라이브러리에서 다음 항목을 참조하는 것이 좋습니다.  

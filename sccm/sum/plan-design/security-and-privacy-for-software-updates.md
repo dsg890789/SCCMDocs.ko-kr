@@ -62,7 +62,7 @@ ms.locfileid: "32349187"
 ##  <a name="BKMK_Privacy_HardwareInventory"></a> 소프트웨어 업데이트에 대한 개인 정보  
  소프트웨어 업데이트 작업에서는 클라이언트 컴퓨터를 검색하여 필요한 소프트웨어 업데이트를 확인한 다음 이 정보를 다시 사이트 데이터베이스에 보냅니다. 소프트웨어 업데이트 프로세스 중 Configuration Manager는 컴퓨터 및 로그온 계정을 식별하는 정보를 클라이언트와 서버 간에 전송합니다.  
 
- Configuration Manager에는 소프트웨어 배포 프로세스에 대한 상태 정보가 유지됩니다. 상태 정보는 전송 또는 저장 중에 암호화되지 않습니다. 또한 상태 정보는 Configuration Manager 데이터베이스에 저장되며 데이터베이스 유지 관리 작업에 의해 삭제됩니다. Microsoft로 전송되는 상태 정보는 없습니다.  
+ Configuration Manager에는 소프트웨어 배포 프로세스에 대한 상태 정보가 유지됩니다. 상태 정보는 전송 또는 스토리지 중에 암호화되지 않습니다. 또한 상태 정보는 Configuration Manager 데이터베이스에 저장되며 데이터베이스 유지 관리 작업에 의해 삭제됩니다. Microsoft로 전송되는 상태 정보는 없습니다.  
 
  클라이언트 컴퓨터에 소프트웨어 업데이트를 설치할 때 Configuration Manager 소프트웨어 업데이트는 해당 업데이트에 대한 소프트웨어 사용 조건에 따라 사용해야 합니다. 이 소프트웨어 사용 조건은 System Center Configuration Manager에 대한 소프트웨어 사용 조건과 별개입니다. Configuration Manager를 사용하여 소프트웨어 업데이트를 설치하기 전에는 항상 소프트웨어 사용 조건을 살펴보고 이에 동의해야 합니다.  
 

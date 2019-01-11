@@ -49,7 +49,7 @@ ms.locfileid: "32344520"
 - 콘텐츠는 원본 클라우드 배포 지점에 배포되어야 합니다.
 
 > [!Note]  
-> 이 기능은 데이터 저장 및 네트워크 출력에 대한 Azure 구독에 요금을 부과합니다. 자세한 내용은 [클라우드 기반 배포 사용 비용](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point#BKMK_CloudDPCost)을 참조하세요.
+> 이 기능은 데이터 스토리지 및 네트워크 출력에 대한 Azure 구독에 요금을 부과합니다. 자세한 내용은 [클라우드 기반 배포 사용 비용](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point#BKMK_CloudDPCost)을 참조하세요.
 
 
 

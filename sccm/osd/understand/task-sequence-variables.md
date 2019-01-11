@@ -439,7 +439,7 @@ ms.locfileid: "52456739"
 
  (입력)
 
- 드라이버 패키지에서 설치할 대용량 저장 디바이스 드라이버의 콘텐츠 ID를 지정합니다. 이 변수를 지정하지 않으면 대용량 저장소 드라이버가 설치되지 않습니다.
+ 드라이버 패키지에서 설치할 대용량 저장 디바이스 드라이버의 콘텐츠 ID를 지정합니다. 이 변수를 지정하지 않으면 대용량 스토리지 드라이버가 설치되지 않습니다.
 
 
 ### <a name="OSDApplyDriverBootCriticalHardwareComponent"></a> OSDApplyDriverBootCriticalHardwareComponent
@@ -469,7 +469,7 @@ ms.locfileid: "52456739"
 
  (입력)
 
- 설치할 대용량 저장소 드라이버의 INF 파일을 지정합니다.
+ 설치할 대용량 스토리지 드라이버의 INF 파일을 지정합니다.
 
  [OSDApplyDriverBootCriticalContentUniqueID](#OSDApplyDriverBootCriticalContentUniqueID)가 설정된 경우 이 변수가 필요합니다.
 

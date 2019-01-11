@@ -542,7 +542,7 @@ The action "Zero Touch Installation - Validation" failed with exit code 5001
  **가능한 솔루션:** **UILanguage** 속성에서 로캘을 지정합니다. ZTI 및 UDI에서 ZTIBde.wsf 스크립트는 시스템 컨트롤에서 실행되므로 전체 사용자 프로필이 로드되지 않습니다. ZTIBde.wsf 스크립트가 로캘 정보를 읽으려 할 때 \(사용자 프로필\) 레지스트리가 완전히 로드되지 않았기 때문에 이 정보는 레지스트리에 없습니다. 해결 방법으로 **UILanguage** 속성에서 로캘을 지정합니다.  
 
 #####  <a name="DevicesAppearasMultipleDriveLetters"></a> 여러 드라이브 문자로 장치 표시  
- **문제:** 일부 장치는 분할되는 방법에 따라 여러 논리 드라이브 문자로서 표시할 수 있습니다. 일부 경우에 1.44\-메가바이트\(MB\) 플로피 디스크 드라이브 및 메모리 저장소 드라이브를 에뮬레이트할 수 입니다. 따라서 Windows는 플로피 디스크 에뮬레이션에 대해 동일한 디바이스 드라이브 문자 A 및 B, 메모리 저장소 드라이브에 대해 F를 할당할 수 있습니다. 기본적으로 MDT 스크립트는 가장 낮은 드라이브 문자, \(이 예제에서는 A\)를 사용합니다.  
+ **문제:** 일부 장치는 분할되는 방법에 따라 여러 논리 드라이브 문자로서 표시할 수 있습니다. 일부 경우에 1.44\-메가바이트\(MB\) 플로피 디스크 드라이브 및 메모리 스토리지 드라이브를 에뮬레이트할 수 입니다. 따라서 Windows는 플로피 디스크 에뮬레이션에 대해 동일한 디바이스 드라이브 문자 A 및 B, 메모리 저장소 드라이브에 대해 F를 할당할 수 있습니다. 기본적으로 MDT 스크립트는 가장 낮은 드라이브 문자, \(이 예제에서는 A\)를 사용합니다.  
 
  **가능한 솔루션:** Windows 배포 마법사의 **BitLocker 복구 상세 정보 지정** 페이지에서 기본 설정을 재정의합니다. Windows 배포 마법사 요약 페이지에는 BitLocker 복구 정보를 저장하기 위해 선택된 드라이브 문자에 대해 사용자에게 알려주는 경고 메시지가 표시됩니다. 또한 BDD.log 및 ZTIBDE.log 파일은 검색된 이동식 미디어 디바이스 및 디바이스가 BitLocker 복구 정보를 저장하기 위해 선택된 것을 기록합니다.  
 
@@ -584,7 +584,7 @@ The action "Zero Touch Installation - Validation" failed with exit code 5001
 
  디바이스 드라이버 설치 관련 문제 및 솔루션을 검토합니다.  
 
--   $OEM$ 대용량 저장 장치 드라이버와 MDT 대용량 저장소 논리 결합에서 설명된 대로 MDT가 있는 $OEM$ 대용량 저장소 드라이버를 사용할 때 발생하는 문제  
+-   $OEM$ 대용량 스토리지 장치 드라이버와 MDT 대용량 스토리지 논리 결합에서 설명된 대로 MDT가 있는 $OEM$ 대용량 스토리지 드라이버를 사용할 때 발생하는 문제  
 
 -   [SetupAPI.log 사용하여 장치 설치 문제 해결](#TroubleshootDeviceInstallationwithSetupAPI.log)에 설명된 대로 SetupAPI.log를 사용하여 장치 드라이버 설치 문제 해결  
 
@@ -796,7 +796,7 @@ ERROR - Unable to create ADODB.Connection object, impossible to query SQL Server
 ####  <a name="MissingorIncorrectDrivers"></a> 배포 프로세스가 시작되지 않음-누락되거나 잘못된 드라이버  
  **문제:** 특정 대상 컴퓨터에 배포할 때 Windows PE가 시작하고 **wpeinit**을 실행하고 명령 프롬프트 창을 열지만 실제로 배포 프로세스를 시작하지는 않습니다. 대상 컴퓨터에서 네트워크 드라이브를 매핑하여 문제를 해결하는 것은 네트워크 어댑터 드라이버가 로드되지 않았다는 것을 나타냅니다. *X*:\Windows\System32\Inf에 있는 SetupAPI.log 파일의 검토를 통해 Windows PE가 네트워크 어댑터를 구성하는 경우 오류를 발생시키며 그 중 한 오류는 "이 드라이버는 이 플랫폼을 위한 것이 아닙니다"라는 것을 나타냅니다. **기본 드라이버** 목록에서 드라이버가 이미지에 삽입되었습니다.  
 
- **가능한 솔루션:** Windows PE에 다른 드라이버와 충돌하는 드라이버가 있을 수 있습니다. Deployment Workbench에서 Windows PE 이미지에 대해 설정을 구성하는 경우 네트워크 어댑터와 저장소 드라이버만 포함하는 Windows PE 드라이버 그룹을 만든 다음, Windows PE 드라이버 그룹만 사용하는 배포 공유를 구성합니다.  
+ **가능한 솔루션:** Windows PE에 다른 드라이버와 충돌하는 드라이버가 있을 수 있습니다. Deployment Workbench에서 Windows PE 이미지에 대해 설정을 구성하는 경우 네트워크 어댑터와 스토리지 드라이버만 포함하는 Windows PE 드라이버 그룹을 만든 다음, Windows PE 드라이버 그룹만 사용하는 배포 공유를 구성합니다.  
 
 ## <a name="deployment-process-flow-charts"></a>배포 프로세스 흐름도  
  이 섹션에서는 Configuration Manager를 사용한 LTI 배포 및 ZTI 배포용의 두 가지 MDT 흐름도 집합을 제공합니다. 각 흐름도는 해당 배포 유형 동안 실행된 작업을 보여줍니다.  

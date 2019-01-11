@@ -20,7 +20,7 @@ ms.locfileid: "39383156"
 # <a name="cng-certificates-overview"></a>CNG 인증서 개요
 <!-- 1356191 --> 
 
-Configuration Manager는 CNG(Cryptography: Next Generation) 인증서를 제한적으로 지원합니다. Configuration Manager 클라이언트는 CNG KSP(키 저장소 공급자)의 개인 키와 함께 PKI 클라이언트 인증 인증서를 사용할 수 있습니다. Configuration Manager 클라이언트는 KSP 지원을 통해 PKI 클라이언트 인증 인증서용 TPM KSP와 같은 하드웨어 기반 개인 키를 지원합니다.
+Configuration Manager는 CNG(Cryptography: Next Generation) 인증서를 제한적으로 지원합니다. Configuration Manager 클라이언트는 CNG KSP(키 스토리지 공급자)의 개인 키와 함께 PKI 클라이언트 인증 인증서를 사용할 수 있습니다. Configuration Manager 클라이언트는 KSP 지원을 통해 PKI 클라이언트 인증 인증서용 TPM KSP와 같은 하드웨어 기반 개인 키를 지원합니다.
 
 ## <a name="supported-scenarios"></a>지원되는 시나리오
 [CNG(Cryptography API: Next Generation)](https://msdn.microsoft.com/library/windows/desktop/bb204775.aspx) 인증서 템플릿을 사용할 수 있는 시나리오는 다음과 같습니다.
@@ -80,6 +80,6 @@ CNG 인증서를 사용하려면 CA(인증 기관)가 대상 컴퓨터에 대한
     - **요청 시 다음 공급자 중 하나 사용:** 은 **Microsoft 소프트웨어 키 저장소 공급자**여야 합니다. 
 
 > [!NOTE]
-> 사용자 환경 또는 조직의 요구 사항이 다를 수 있습니다. PKI 전문가에게 문의하세요. 고려해야 할 중요한 점은 인증서 CNG를 활용하기 위해 템플릿에서 키 저장소 공급자를 사용해야 한다는 것입니다.
+> 사용자 환경 또는 조직의 요구 사항이 다를 수 있습니다. PKI 전문가에게 문의하세요. 고려해야 할 중요한 점은 인증서 CNG를 활용하기 위해 템플릿에서 키 스토리지 공급자를 사용해야 한다는 것입니다.
 
 최상의 결과를 위해 Active Directory 정보에서 제목 이름을 빌드하는 것이 좋습니다. **주체 이름 형식**에 DNS 이름을 사용하고 DNS 이름을 대체 주체 이름에 포함시킵니다. 그렇지 않으면 디바이스가 인증서 프로필에 등록할 때 이 정보를 제공해야 합니다.

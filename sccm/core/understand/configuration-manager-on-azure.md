@@ -86,7 +86,7 @@ Configuration Manager는 Azure 부하 분산 장치에서 테스트되지 않았
 
 ### <a name="so-tell-me-more-about-azure-virtual-machines-what-size-vms-should-i-use"></a>그럼 Azure Virtual Machines에 대해 자세히 알고 싶습니다. 어떤 크기의 VM을 사용해야 하나요?
 일반적으로 컴퓨터 성능(CPU 및 메모리)은 [System Center Configuration Manager의 하드웨어 권장 사항](/sccm/core/plan-design/configs/recommended-hardware)을 만족해야 합니다. 그러나 일반적인 컴퓨터 하드웨어와 Azure VM 간에는 약간의 차이가 있습니다. 특히 이러한 VM이 사용하는 디스크가 다릅니다.  사용할 VM의 크기는 해당 환경의 크기에 따라 달라지지만 다음 권장 사항을 참조할 수 있습니다.
-- 대용량 크기의 프로덕션 배포의 경우 “**S**” 클래스 Azure VM을 권장합니다. 이는 Premium Storage 디스크를 이용할 수 있기 때문입니다.  “S” 클래스가 아닌 VM은 Blob Storage를 사용하는데 이 저장소는 일반적으로 수용 가능한 프로덕션 환경의 성능 요구 사항을 만족하지 않습니다.
+- 대용량 크기의 프로덕션 배포의 경우 “**S**” 클래스 Azure VM을 권장합니다. 이는 Premium Storage 디스크를 이용할 수 있기 때문입니다.  “S” 클래스가 아닌 VM은 Blob Storage를 사용하는데 이 스토리지는 일반적으로 수용 가능한 프로덕션 환경의 성능 요구 사항을 만족하지 않습니다.
 - 확장성을 향상시키려면 여러 개의 Premium Storage 디스크를 사용해야 합니다. 최대 IOPS를 위해서는 Windows 디스크 관리 콘솔에서 스트라이프해야 합니다.  
 - 초기 사이트 배포 중 더 나은 또는 여러 개의 프리미엄 디스크를 사용하는 것이 좋습니다(예: P20보다 P30, 1xP30보다 스트라이프 볼륨의 2xP30). 그런 다음 나중에 추가 로드로 인해 VM 크기를 확장해야 할 경우 더 큰 VM 크기가 제공하는 추가 CPU 및 메모리를 사용할 수 있습니다. 또한 이미 배치된 디스크가 더 큰 VM 크기에서 허용하는 추가 IOPS 처리량을 사용하게 될 수 있습니다.
 
@@ -157,12 +157,12 @@ Configuration Manager는 Azure 부하 분산 장치에서 테스트되지 않았
 **Azure VM 컴퓨터 유형:**
  - 가상 머신 크기: https://azure.microsoft.com/documentation/articles/virtual-machines-size-specs/  
  - VM 가격 책정: http://azure.microsoft.com/pricing/details/virtual-machines/  
- - 저장소 가격 책정: http://azure.microsoft.com/pricing/details/storage/
+ - 스토리지 가격 책정: http://azure.microsoft.com/pricing/details/storage/
 
 **디스크 성능 고려 사항:**    
  - 프리미엄 디스크 소개: http://azure.microsoft.com/blog/2014/12/11/introducing-premium-storage-high-performance-storage-for-azure-virtual-machine-workloads/  
  - 자세한 프리미엄 디스크 정보: http://azure.microsoft.com/documentation/articles/storage-premium-storage-preview-portal/   
- - 저장소용 최대 크기 및 성능 대상에 대한 차트의 간편한 컬렉션: https://azure.microsoft.com/documentation/articles/storage-scalability-targets/  
+ - 스토리지용 최대 크기 및 성능 대상에 대한 차트의 간편한 컬렉션: https://azure.microsoft.com/documentation/articles/storage-scalability-targets/  
  - Premium Storage에 대한 기타 소개 및 원리에 대한 유용한 데이터: http://azure.microsoft.com/blog/2015/04/16/azure-premium-storage-now-generally-available-2/
 
 **가용성:**

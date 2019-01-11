@@ -304,7 +304,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
 8.  **완료** 페이지에서 소프트웨어 업데이트가 운영 체제 이미지에 성공적으로 적용되었는지 확인합니다.  
 
 ##  <a name="BKMK_ImportToVMM"></a> System Center Virtual Machine Manager로 VHD 가져오기  
- System Center VMM은 가상화된 데이터 센터를 위한 관리 솔루션으로, 생성된 사설 클라우드에 가상 컴퓨터와 서비스를 만들고 배포하기 위해 VMM을 사용하여 가상화 호스트, 네트워킹, 저장소 리소스 등을 구성 및 관리할 수 있습니다. Configuration Manager에서 VHD를 만든 후 VMM을 사용하여 VHD를 가져오고 관리할 수 있습니다.  
+ System Center VMM은 가상화된 데이터 센터를 위한 관리 솔루션으로, 생성된 사설 클라우드에 가상 컴퓨터와 서비스를 만들고 배포하기 위해 VMM을 사용하여 가상화 호스트, 네트워킹, 스토리지 리소스 등을 구성 및 관리할 수 있습니다. Configuration Manager에서 VHD를 만든 후 VMM을 사용하여 VHD를 가져오고 관리할 수 있습니다.  
 
 > [!TIP]  
 >  VHD를 VMM에 업로드하기 전에 VMM 콘솔이 VMM 관리 서버에 성공적으로 연결되었는지 확인합니다.  

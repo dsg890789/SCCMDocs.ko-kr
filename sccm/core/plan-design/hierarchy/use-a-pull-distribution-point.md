@@ -122,7 +122,7 @@ Configuration Manager 콘솔에서 표준 배포 지점에 콘텐츠를 배포�
 -   버전 1806부터는 원격 사무실의 인터넷 연결 속도가 더 빠르거나 WAN 링크에 대한 부하를 줄이려는 경우 Microsoft Azure의 [클라우드 배포 지점](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point)을 원본으로 사용합니다. 풀(pull) 배포 지점은 인터넷에 액세스할 수 있어야 Microsoft Azure와 통신할 수 있습니다. 콘텐츠는 원본 클라우드 배포 지점에 배포되어야 합니다.<!--1321554-->  
 
     > [!Note]  
-    > 이 기능은 데이터 저장 및 네트워크 출력에 대한 Azure 구독에 요금을 부과합니다. 자세한 내용은 [클라우드 배포 지점을 사용하는 데 드는 비용](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point#bkmk_cost)을 참조하세요.  
+    > 이 기능은 데이터 스토리지 및 네트워크 출력에 대한 Azure 구독에 요금을 부과합니다. 자세한 내용은 [클라우드 배포 지점을 사용하는 데 드는 비용](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point#bkmk_cost)을 참조하세요.  
 
 
 > [!Tip]  

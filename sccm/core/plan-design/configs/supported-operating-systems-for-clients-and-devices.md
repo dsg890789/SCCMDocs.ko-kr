@@ -146,7 +146,7 @@ Windows Server 반기 채널 버전은 Windows Server 버전 1809 같은 Server 
 
 ### <a name="requirements-and-limitations"></a>요구 사항 및 제한 사항:  
 
--   모바일 디바이스 클라이언트를 설치하려면 0.78MB의 저장소 공간이 필요합니다. 로그인은 256KB의 추가 저장소 공간이 필요할 수 있습니다.    
+-   모바일 디바이스 클라이언트를 설치하려면 0.78MB의 저장소 공간이 필요합니다. 로그인은 256KB의 추가 스토리지 공간이 필요할 수 있습니다.    
 
 -   이러한 모바일 디바이스의 기능은 플랫폼 및 클라이언트 유형별로 달라집니다. 지원되는 관리 기능에 대한 자세한 내용은 [디바이스 관리 솔루션 선택](/sccm/core/plan-design/choose-a-device-management-solution)을 참조하세요.  
 

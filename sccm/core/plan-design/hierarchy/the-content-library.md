@@ -69,12 +69,12 @@ Configuration Manager는 다음 경우에 중앙 관리 사이트에서 콘텐�
 - 콘텐츠 라이브러리가 만들어진 후에는 Configuration Manager 도구의 **콘텐츠 라이브러리 전송** 도구를 사용하여 콘텐츠 라이브러리의 위치를 관리합니다. 자세한 내용은 [콘텐츠 라이브러리 전송 도구](/sccm/core/support/content-library-transfer)를 참조하세요.  
 
 > [!Note]  
-> 클라우드 배포 지점은 단일 인스턴스 저장소를 사용하지 않습니다. 사이트는 Azure로 보내기 전에 패키지를 암호화하고 각 패키지에는 고유한 암호화된 키가 포함됩니다. 두 파일이 동일한 경우에도 암호화된 버전은 같을 수 없습니다.  
+> 클라우드 배포 지점은 단일 인스턴스 스토리지를 사용하지 않습니다. 사이트는 Azure로 보내기 전에 패키지를 암호화하고 각 패키지에는 고유한 암호화된 키가 포함됩니다. 두 파일이 동일한 경우에도 암호화된 버전은 같을 수 없습니다.  
 
 
 
 ## <a name="bkmk_remote"></a> 사이트 서버에 대해 원격 콘텐츠 라이브러리 구성  
-<!--1357525--> 1806 버전부터 [사이트 서버 고가용성](/sccm/core/servers/deploy/configure/site-server-high-availability)을 구성하거나 중앙 관리 또는 기본 사이트 서버에서 하드 드라이브 공간을 확보하기 위해 다른 저장소 위치로 콘텐츠 라이브러리를 이동합니다. 별도의 서버인 사이트 서버의 다른 드라이브 또는 SAN(저장 영역 네트워크)의 내결함성 디스크로 콘텐츠 라이브러리를 이동합니다. SAN은 고가용성이며, 시간 경과에 따라 사용자의 변화하는 콘텐츠 요구 사항에 맞게 확장되거나 축소되는 탄력적인 저장소를 제공하므로 권장됩니다. 자세한 내용은 [고가용성 옵션](/sccm/protect/understand/high-availability-options)을 참조하세요.
+<!--1357525--> 1806 버전부터 [사이트 서버 고가용성](/sccm/core/servers/deploy/configure/site-server-high-availability)을 구성하거나 중앙 관리 또는 기본 사이트 서버에서 하드 드라이브 공간을 확보하기 위해 다른 저장소 위치로 콘텐츠 라이브러리를 이동합니다. 별도의 서버인 사이트 서버의 다른 드라이브 또는 SAN(스토리지 영역 네트워크)의 내결함성 디스크로 콘텐츠 라이브러리를 이동합니다. SAN은 고가용성이며, 시간 경과에 따라 사용자의 변화하는 콘텐츠 요구 사항에 맞게 확장되거나 축소되는 탄력적인 스토리지를 제공하므로 권장됩니다. 자세한 내용은 [고가용성 옵션](/sccm/protect/understand/high-availability-options)을 참조하세요.
 
 원격 콘텐츠 라이브러리는 [사이트 서버 고가용성](/sccm/core/servers/deploy/configure/site-server-high-availability)을 위한 필수 조건입니다. 
 
@@ -84,7 +84,7 @@ Configuration Manager는 다음 경우에 중앙 관리 사이트에서 콘텐�
 > [!Tip]  
 > 또한 콘텐츠 라이브러리 외부에 있는 패키지 원본 콘텐츠를 관리하기 위한 계획입니다. Configuration Manager의 모든 소프트웨어 개체에는 네트워크 공유에 패키지 원본이 있습니다. 모든 원본을 단일 공유로 중앙 집중화하는 것을 고려하되, 이 위치는 중복 및 고가용성이어야 합니다. 
 > 
-> 콘텐츠 라이브러리를 패키지 원본과 동일한 저장소 볼륨으로 이동하는 경우 이 볼륨을 데이터 중복 제거용으로 표시할 수 없습니다. 콘텐츠 라이브러리는 데이터 중복 제거를 지원하지만, 패키지 원본 볼륨은 데이터 중복 제거를 지원하지 않습니다. 자세한 내용은 [데이터 중복 제거](/sccm/core/plan-design/configs/support-for-windows-features-and-networks#bkmmk_datadedup)를 참조하세요.<!--SCCMDOcs issue #831-->  
+> 콘텐츠 라이브러리를 패키지 원본과 동일한 스토리지 볼륨으로 이동하는 경우 이 볼륨을 데이터 중복 제거용으로 표시할 수 없습니다. 콘텐츠 라이브러리는 데이터 중복 제거를 지원하지만, 패키지 원본 볼륨은 데이터 중복 제거를 지원하지 않습니다. 자세한 내용은 [데이터 중복 제거](/sccm/core/plan-design/configs/support-for-windows-features-and-networks#bkmmk_datadedup)를 참조하세요.<!--SCCMDOcs issue #831-->  
 
 
 ### <a name="prerequisites"></a>필수 구성 요소  
@@ -142,7 +142,7 @@ Configuration Manager는 다음 경우에 중앙 관리 사이트에서 콘텐�
 
 - 데이터 라이브러리(**DataLib** 폴더): 패키지의 원래 구조체에 대한 정보입니다.  
 
-- 파일 라이브러리(**FileLib** 폴더): 패키지의 원본 파일입니다. 이 폴더는 일반적으로 저장소의 대부분을 사용합니다.  
+- 파일 라이브러리(**FileLib** 폴더): 패키지의 원본 파일입니다. 이 폴더는 일반적으로 스토리지의 대부분을 사용합니다.  
 
 ![Configuration Manager 콘텐츠 라이브러리의 다이어그램 개요](media/content-library-overview.png)
 

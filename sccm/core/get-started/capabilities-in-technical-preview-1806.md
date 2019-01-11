@@ -80,7 +80,7 @@ SCUP는 다른 카탈로그 및 시나리오를 계속 지원합니다. Configur
     > - [Secure Sockets Layer 프로토콜을 사용한 WSUS 보안](/windows-server/administration/windows-server-update-services/deploy/2-configure-wsus#bkmk_2.5.ConfigSSL) 
     > - [WSUS 지원 블로그 게시물](https://blogs.technet.microsoft.com/sus/2011/05/09/how-to-create-an-internet-facing-wsus-server-that-uses-different-internal-and-external-names/)
 
-- 타사 소프트웨어 업데이트에 대한 원본 이진 콘텐츠를 저장하려면 소프트웨어 업데이트 지점인 WSUSContent 폴더에 충분한 디스크 공간이 있어야 합니다. 필요한 저장 양은 공급 업체, 업데이트 유형 및 배포를 위해 게시하는 특정 업데이트에 따라 다릅니다. 더 많은 여유 공간을 사용하여 WSUSContent 폴더를 다른 드라이브로 이동해야 하는 경우 WSUS 지원 팀의 블로그 게시물 [WSUS가 로컬로 업데이트를 저장하는 위치를 변경하는 방법](https://blogs.technet.microsoft.com/sus/2008/05/19/wsus-how-to-change-the-location-where-wsus-stores-updates-locally/)을 참조합니다.  
+- 타사 소프트웨어 업데이트에 대한 원본 이진 콘텐츠를 저장하려면 소프트웨어 업데이트 지점인 WSUSContent 폴더에 충분한 디스크 공간이 있어야 합니다. 필요한 스토리지 양은 공급 업체, 업데이트 유형 및 배포를 위해 게시하는 특정 업데이트에 따라 다릅니다. 더 많은 여유 공간을 사용하여 WSUSContent 폴더를 다른 드라이브로 이동해야 하는 경우 WSUS 지원 팀의 블로그 게시물 [WSUS가 로컬로 업데이트를 저장하는 위치를 변경하는 방법](https://blogs.technet.microsoft.com/sus/2008/05/19/wsus-how-to-change-the-location-where-wsus-stores-updates-locally/)을 참조합니다.  
 
 - **소프트웨어 업데이트** 그룹에서 [타사 소프트웨어 업데이트 사용](/sccm/core/clients/deploy/about-client-settings#enable-third-party-software-updates) 클라이언트 설정을 사용하고 배포합니다.  
 
@@ -263,7 +263,7 @@ SCUP는 다른 카탈로그 및 시나리오를 계속 지원합니다. Configur
 자세한 내용은 [클라이언트 설치 속성](/sccm/core/clients/deploy/about-client-installation-properties)을 참조합니다.
 
 ### <a name="download-content-from-a-cmg"></a>CMG에서 콘텐츠 다운로드
-<!--1358651--> 이전에 클라우드 배포 지점 및 CMG를 별도 역할로 배포해야 했습니다. 이제 이 릴리스에서 CMG는 클라이언트에게 콘텐츠를 제공할 수 있습니다. 이 기능은 필요한 인증서 및 Azure VM 비용을 줄여줍니다. 이 기능을 사용하려면 CMG 속성의 **설정** 탭에서 **CMG가 클라우드 배포 지점으로 기능하고 Azure 저장소에서 콘텐츠를 제공하도록 허용**하는 새 옵션을 사용하도록 설정합니다. 
+<!--1358651--> 이전에 클라우드 배포 지점 및 CMG를 별도 역할로 배포해야 했습니다. 이제 이 릴리스에서 CMG는 클라이언트에게 콘텐츠를 제공할 수 있습니다. 이 기능은 필요한 인증서 및 Azure VM 비용을 줄여줍니다. 이 기능을 사용하려면 CMG 속성의 **설정** 탭에서 **CMG가 클라우드 배포 지점으로 기능하고 Azure 스토리지에서 콘텐츠를 제공하도록 허용**하는 새 옵션을 사용하도록 설정합니다. 
 
 ### <a name="trusted-root-certificate-isnt-required-with-azure-ad"></a>신뢰할 수 있는 루트 인증서는 Azure AD에서 필요하지 않음
 <!--503899--> CMG를 만들 경우 설정 페이지에서 [신뢰할 수 있는 루트 인증서](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#cmg-trusted-root-certificate-to-clients)를 더 이상 제공할 필요가 없습니다. 이 인증서는 클라이언트 인증용 Azure AD(Azure Active Directory)를 사용할 때 필요하지 않지만 마법사에서는 필요합니다.

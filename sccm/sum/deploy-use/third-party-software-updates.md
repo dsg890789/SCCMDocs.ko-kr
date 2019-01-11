@@ -27,7 +27,7 @@ ms.locfileid: "53423102"
 
 ## <a name="prerequisites"></a>필수 구성 요소 
 - 타사 소프트웨어 업데이트에 대한 원본 이진 콘텐츠를 저장하려면 최상위 소프트웨어 업데이트 지점의 WSUSContent 폴더에 충분한 디스크 공간이 있어야 합니다.
-    - 필요한 저장 양은 공급 업체, 업데이트 유형 및 배포를 위해 게시하는 특정 업데이트에 따라 다릅니다.
+    - 필요한 스토리지 양은 공급 업체, 업데이트 유형 및 배포를 위해 게시하는 특정 업데이트에 따라 다릅니다.
     - 더 많은 여유 공간을 사용하여 WSUSContent 폴더를 다른 드라이브로 이동해야 하는 경우 [WSUS가 로컬로 업데이트를 저장하는 위치를 변경하는 방법](https://blogs.technet.microsoft.com/sus/2008/05/19/wsus-how-to-change-the-location-where-wsus-stores-updates-locally/) 블로그 게시물을 참조하세요.
 - 타사 소프트웨어 업데이트 동기화 서비스는 인터넷 액세스가 필요합니다.
     - 파트너 카탈로그 목록의 경우 HTTPS 포트 443을 통해 download.microsoft.com이 필요합니다. 

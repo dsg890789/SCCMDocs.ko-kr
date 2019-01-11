@@ -150,9 +150,9 @@ Passport를 사용하면 암호 대신 사용자 제스처를 사용하여 로�
 
 -   Configuration Manager에서 사용자가 로그인하는 데 사용할 수 있는 제스처와 사용할 수 없는 제스처를 제어하고 PIN 복잡성 요구 사항을 구성할 수 있습니다.  
 
--   Passport for Work KSP(키 저장소 공급자)에 인증 인증서를 저장할 수 있습니다.  
+-   Passport for Work KSP(키 스토리지 공급자)에 인증 인증서를 저장할 수 있습니다.  
 
-사용자가 Passport PIN을 만들 때 Windows에서 Configuration Manager가 수신 대기하는 알림을 보냅니다.  이를 통해 Configuration Manager에서 Passport PIN을 만든 사용자를 신속하게 파악할 수 있습니다. 그런 다음 Passport가 인증서 프로필에서 키 저장소 공급자로 사용되는 경우 Configuration Manager에서 새로운 인증서를 발행할 수 있습니다.  
+사용자가 Passport PIN을 만들 때 Windows에서 Configuration Manager가 수신 대기하는 알림을 보냅니다.  이를 통해 Configuration Manager에서 Passport PIN을 만든 사용자를 신속하게 파악할 수 있습니다. 그런 다음 Passport가 인증서 프로필에서 키 스토리지 공급자로 사용되는 경우 Configuration Manager에서 새로운 인증서를 발행할 수 있습니다.  
 
 ##  <a name="bkmk_onpremdha"></a> 온-프레미스 장치 상태 증명  
  이제 온-프레미스 인프라를 사용하여 통신하도록 Windows 10 디바이스에 대한 상태 증명을 구성할 수 있습니다.  관리자는 보고를 클라우드를 통해 또는 온-프레미스 리소스를 통해 수행할지 여부를 지정할 수 있습니다.  상태 증명 보고를 위해 **온-프레미스**를 선택한 경우 서비스에 대해 URI를 지정할 수 있습니다. 이를 통해 인터넷에 액세스할 수 없는 클라이언트 PC에서 상태 증명을 사용하여 디바이스를 활성화하고 관리할 수 있습니다.  

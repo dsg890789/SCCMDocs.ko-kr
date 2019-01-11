@@ -12,7 +12,7 @@ ms.author: aaroncz
 manager: dougeby
 ms.openlocfilehash: 60dcf98b83fb4650a10e5503d42b9f49d3aba359
 ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
 ms.locfileid: "32350088"
@@ -37,7 +37,7 @@ System Center Configuration Manager를 통해 Windows 10 디바이스의 대체 
 
 -   Configuration Manager를 사용하여 사용자가 로그인하는 데 사용할 수 있는 제스처와 사용할 수 없는 제스처를 제어할 수 있습니다.  
 
--   비즈니스용 Windows Hello KSP(키 저장소 공급자)에 인증 인증서를 저장할 수 있습니다. 자세한 내용은 [인증서 프로필](introduction-to-certificate-profiles.md)을 참조하세요.  
+-   비즈니스용 Windows Hello KSP(키 스토리지 공급자)에 인증 인증서를 저장할 수 있습니다. 자세한 내용은 [인증서 프로필](introduction-to-certificate-profiles.md)을 참조하세요.  
 
 - Configuration Manager 클라이언트를 실행하는 도메인에 가입된 Windows 10 디바이스에 비즈니스용 Windows Hello 정책을 배포할 수 있습니다. 이 구성은 [도메인에 가입된 Windows 10 디바이스에서 비즈니스용 Windows Hello 구성](#configure-windows-hello-for-business-on-domain-joined-windows-10-devices) 섹션에서 설명합니다. Microsoft Intune(하이브리드)에서 Configuration Manager를 사용하는 경우 Windows 10 및 Windows 10 모바일 디바이스에서 이러한 설정을 구성할 수 있습니다. 자세한 내용은 [비즈니스용 Windows Hello 설정(하이브리드) 구성](../../mdm/deploy-use/windows-hello-for-business-settings.md)을 참조하세요.
 

@@ -60,7 +60,7 @@ ms.locfileid: "53817905"
 
 ### <a name="bkmk_plan-cng"></a> 암호화: Next Generation(CNG) 인증서  
 
- Configuration Manager는 암호화: Next Generation(CNG) 인증서를 지원합니다. Configuration Manager 클라이언트는 CNG KSP(키 저장소 공급자)의 개인 키와 함께 PKI 클라이언트 인증 인증서를 사용할 수 있습니다. Configuration Manager 클라이언트는 KSP 지원을 통해 PKI 클라이언트 인증 인증서용 TPM KSP와 같은 하드웨어 기반 개인 키를 지원합니다. 자세한 내용은 [CNG 인증서 개요](/sccm/core/plan-design/network/cng-certificates-overview)를 참조하세요.
+ Configuration Manager는 암호화: Next Generation(CNG) 인증서를 지원합니다. Configuration Manager 클라이언트는 CNG KSP(키 스토리지 공급자)의 개인 키와 함께 PKI 클라이언트 인증 인증서를 사용할 수 있습니다. Configuration Manager 클라이언트는 KSP 지원을 통해 PKI 클라이언트 인증 인증서용 TPM KSP와 같은 하드웨어 기반 개인 키를 지원합니다. 자세한 내용은 [CNG 인증서 개요](/sccm/core/plan-design/network/cng-certificates-overview)를 참조하세요.
 
 
 ### <a name="bkmk_plan-ehttp"></a> 고급 HTTP  

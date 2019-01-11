@@ -124,7 +124,7 @@ System Center Configuration Manager에서는 유니코드 문자를 사용하여
 
     -   IDE 리디렉션 이미지 파일의 파일 이름 및 경로  
 
-    -   AMT 데이터 저장소의 콘텐츠  
+    -   AMT 데이터 스토리지의 콘텐츠  
 
 -   부팅 미디어 .ISO 파일 이름  
 

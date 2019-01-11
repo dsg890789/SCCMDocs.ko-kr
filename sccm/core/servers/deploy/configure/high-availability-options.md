@@ -73,10 +73,10 @@ Configuration Manager의 다른 기능은 실시간 서비스를 제공하지 �
 버전 1806부터 독립 실행형 기본 사이트에 대해 *수동* 모드로 추가 사이트 서버를 설치합니다. 수동 모드의 사이트 서버는 *활성* 모드의 기존의 사이트 서버 외의 추가 서버입니다. 수동 모드의 사이트 서버는 필요할 때 즉시 사용할 수 있습니다. 자세한 내용은 [사이트 서버 고가용성](/sccm/core/servers/deploy/configure/site-server-high-availability)을 참조하세요.  
 
 #### <a name="use-a-remote-content-library"></a>원격 콘텐츠 라이브러리 사용
-버전 1806부터 사이트의 콘텐츠 라이브러리를 항상 사용 가능한 저장소를 제공하는 원격 위치로 이동합니다. 이 기능은 사이트 서버 고가용성을 위한 요구 사항입니다. 자세한 내용은 [콘텐츠 라이브러리](/sccm/core/plan-design/hierarchy/the-content-library#bkmk_remote)를 참조하세요.
+버전 1806부터 사이트의 콘텐츠 라이브러리를 항상 사용 가능한 스토리지를 제공하는 원격 위치로 이동합니다. 이 기능은 사이트 서버 고가용성을 위한 요구 사항입니다. 자세한 내용은 [콘텐츠 라이브러리](/sccm/core/plan-design/hierarchy/the-content-library#bkmk_remote)를 참조하세요.
 
 #### <a name="centralize-content-sources"></a>콘텐츠 소스 중앙 집중화
-Configuration Manager의 모든 소프트웨어 콘텐츠는 네트워크에서 패키지 원본 위치가 필요합니다. 중앙 집중식, 항상 사용 가능한 저장소를 사용하여 모든 콘텐츠에 대한 일반 패키지 원본 위치를 호스트합니다. 
+Configuration Manager의 모든 소프트웨어 콘텐츠는 네트워크에서 패키지 원본 위치가 필요합니다. 중앙 집중식, 항상 사용 가능한 스토리지를 사용하여 모든 콘텐츠에 대한 일반 패키지 원본 위치를 호스트합니다. 
 
 #### <a name="use-a-sql-server-always-on-availability-group-to-host-the-site-database"></a>SQL Server AlwaysOn 가용성 그룹을 사용하여 사이트 데이터베이스 호스트  
 SQL Server Always On 가용성 그룹의 기본 사이트 및 중앙 관리 사이트에서 사이트 데이터베이스를 호스트합니다. 자세한 내용은 [항상 사용 가능한 사이트 데이터베이스에 대한 SQL Server AlwaysOn](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database)을 참조하세요.  

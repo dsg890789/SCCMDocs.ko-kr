@@ -249,7 +249,7 @@ A connection was successfully established with the server, but then an error occ
 
 ![데이터 웨어하우스의 사이트 구성 요소 간의 논리적 데이터 흐름을 보여 주는 다이어그램](./media/datawarehouse.png)
 
-#### <a name="data-storage-and-synchronization"></a>데이터 저장 및 동기화
+#### <a name="data-storage-and-synchronization"></a>데이터 스토리지 및 동기화
 
 | 단계   | 세부 정보  |
 |--------|----------|  

@@ -96,7 +96,7 @@ System Center Configuration Manager 현재 분기의 업데이트 1702는 버전
 ### <a name="data-warehouse-service-point"></a>데이터 웨어하우스 서비스 지점
  데이터 웨어하우스 서비스 지점을 사용하여 Configuration Manager 배포에 대한 장기 기록 데이터를 저장하고 보고할 수 있습니다.
 
- 데이터 웨어하우스는 최대 2TB의 데이터를 지원하며 변경 내용 추적을 위한 타임스탬프가 있습니다. 데이터 저장은 Configuration Manager 사이트 데이터베이스에서 데이터 웨어하우스 데이터베이스로의 자동화된 동기화를 통해 수행됩니다. 이 정보는 보고 서비스 지점에서 액세스할 수 있습니다.
+ 데이터 웨어하우스는 최대 2TB의 데이터를 지원하며 변경 내용 추적을 위한 타임스탬프가 있습니다. 데이터 스토리지는 Configuration Manager 사이트 데이터베이스에서 데이터 웨어하우스 데이터베이스로의 자동화된 동기화를 통해 수행됩니다. 이 정보는 보고 서비스 지점에서 액세스할 수 있습니다.
 
  자세한 내용은 [데이터 웨어하우스 서비스 지점](/sccm/core/servers/manage/data-warehouse)을 참조하세요.
 
