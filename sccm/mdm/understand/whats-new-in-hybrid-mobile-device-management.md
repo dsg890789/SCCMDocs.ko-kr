@@ -2,7 +2,7 @@
 title: 하이브리드 MDM의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 디바이스 관리 기능에 대해 알아봅니다.
-ms.date: 12/14/2018
+ms.date: 01/10/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -10,16 +10,16 @@ ms.assetid: 7b127cee-61f1-4681-9760-caebed36ddf5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 7cf1adf7d73e60fba0d748022ab7c241d60ffed7
-ms.sourcegitcommit: c60e057075a83f07d1ca2577c3de1c7d7c8e9cec
+ms.openlocfilehash: 610dfb7391347663fd92c0839d20eb7a4a703438
+ms.sourcegitcommit: c80abe7e4b7b2f80e957e45ff205f67d1b715688
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626500"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54226226"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 디바이스 관리의 새로운 기능
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 이 문서에서는 System Center Configuration Manager 및 Intune을 포함하는 하이브리드 배포에 사용할 수 있는 새 MDM(모바일 디바이스 관리) 기능에 대한 세부 정보를 제공합니다.     
 
@@ -44,6 +44,33 @@ ms.locfileid: "53626500"
 |**Microsoft Intune의 새로운 기능** | 일반적으로 이 범주 아래에 나열된 모든 기능은 Intune 서비스만 필요하고 Configuration Manager의 추가 기능이 필요하지 않으므로 System Center 2012 R2 Configuration Manager 릴리스를 비롯한 모든 Configuration Manager 릴리스에서 사용할 수 있어야 합니다.|
 |**Configuration Manager Technical Preview의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 Technical Preview 분기에서만 사용할 수 있습니다. 이러한 기능을 시험해보려면 기능 설명에 지정된 기술 미리 보기 버전을 설치해야 합니다. 자세한 내용은 [Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.|
 |**Configuration Manager(현재 분기)의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 버전의 Configuration Manager(현재 분기)에서만 사용할 수 있습니다. 하이브리드 배포에 이전 버전의 Configuration Manager를 사용하는 경우 기능 설명에 지정된 Configuration Manager(현재 분기) 버전으로 업그레이드합니다. 자세한 내용은 [Configuration Manager로 업그레이드](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager)를 참조하세요.|
+
+
+
+## <a name="january-2019"></a>2019 년 1 월
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+#### <a name="tenant-status-dashboard"></a>테 넌 트 상태 대시보드
+<!--1124854--> 새 [테 넌 트 상태 페이지](https://docs.microsoft.com/intune/tenant-status) 테 넌 트에 대 한 상태와 관련된 세부 정보를 볼 수 있는 단일 위치를 제공 합니다. 대시보드는 네 가지 영역으로 구분 됩니다.
+
+- **세부 정보를 테 넌 트**: 에 테 넌 트 이름 및 위치를 MDM 기관에 포함 된 정보를 표시 총 테 넌 트에서 장치 등록 및 라이선스 수를 계산 합니다. 또한이 섹션에서는 테 넌 트에 대 한 현재 서비스 릴리스를 나열합니다.  
+
+- **커넥터 상태**: 사용 가능한 커넥터를 구성 했 고 아직 설정 하지 않은 경우에 해당 나열할 수도 있습니다에 대 한 정보를 표시 합니다.  
+
+    각 커넥터의 현재 상태에 따라 플래그가 표시 되며 정상, 경고 또는 비정상으로 합니다. 드릴스루 및 자세한 내용을 보거나,에 대 한 추가 정보를 구성 하려면 커넥터를 선택 합니다.  
+
+- **Intune 서비스 상태**: 테 넌 트에 대 한 활성 인시던트 또는 중단 하는 방법에 대 한 세부 정보를 표시합니다. 이 섹션의 정보는 Office 메시지 센터에서 직접 검색 됩니다.  
+
+- **Intune 뉴스**: 테 넌 트의 활성 메시지를 표시합니다. 테 넌 트 최신 Intune 기능을 받으면 메시지 알림 등을 포함 합니다.  이 섹션의 정보는 Office 메시지 센터에서 직접 검색 됩니다.  
+
+#### <a name="new-help-and-support-experience-in-company-portal-for-windows-10"></a>새 도움말 및 지원 환경을 Windows 10 용 회사 포털 
+<!--1488939--> 새 회사 포털 도움말 및 지원 페이지는 사용자가 문제를 해결 하 고 앱 및 액세스 문제에 대 한 도움을 요청 하는 데 도움이 됩니다. 새 페이지에서 오류 및 진단 로그 세부 정보를 전자 메일 수 있으며 조직의 기술 지원팀 세부 정보를 찾습니다. 또한 관련 Intune 설명서에 대 한 링크를 사용 하 여 FAQ 섹션을 찾을 수 있습니다. 자세한 내용 및 스크린샷을 참조 하세요 [도움말 및 Windows 10 용 회사 포털에서에서 지원 받기](https://docs.microsoft.com/intune-user-help/help-and-support-windows-cpapp)합니다.
+
+#### <a name="some-bitlocker-settings-support-windows-10-pro-edition"></a>Windows 10 Pro edition을 지원 하는 일부 BitLocker 설정
+<!--2727036--> BitLocker를 포함 하 여 Windows 10 장치에서 endpoint protection 설정을 설정 하는 구성 항목을 만들 수 있습니다. 이 업데이트에는 일부 BitLocker 설정에 대 한 Windows 10 Professional edition에 대 한 지원을 추가합니다.
+
+자세한 내용은 [Windows 10에 대 한 암호화 설정을](/sccm/mdm/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client#encryption)합니다.
 
 
 
@@ -408,8 +435,8 @@ Windows 10 버전 1607 이상의 최종 사용자에게 Microsoft Store에 있�
 
 - **새 모바일 응용 프로그램 관리 정책 설정**     
   모바일 애플리케이션 관리 정책 설정에 다음과 같은 설정이 추가되었습니다.
-  - **연락처 동기화 사용 안 함**: 장치의 네이티브 연락처 앱으로 데이터를 저장 하는 앱을 방지 합니다.
-  - **인쇄 사용 안 함**: 인쇄 작업 또는 학교 데이터에서 앱을 방지합니다.
+  - **연락처 동기화 사용 안 함**: 앱에서 디바이스의 네이티브 연락처 앱에 데이터를 저장하지 않도록 방지합니다.
+  - **인쇄 사용 안 함**: 앱에서 회사 또는 학교 데이터를 인쇄하지 않도록 방지합니다.
   <!-- 1324760 -->    
 
   새로운 앱 보호 정책 설정을 사용하려면 [Configuration Manager에서 앱 보호 정책을 사용하여 앱 보호](/sccm/mdm/deploy-use/protect-apps-using-mam-policies)를 참조하세요.
