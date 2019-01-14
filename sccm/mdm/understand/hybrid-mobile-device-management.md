@@ -10,12 +10,12 @@ ms.assetid: bb95154b-f63e-4491-896e-41d732c802f8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f3d25120701c12b547727259002fc58a8f8f0780
-ms.sourcegitcommit: 97083c51057e2c4e0fe12c3b1f1b512250874c6a
+ms.openlocfilehash: a84dfc33fe79f5eb4d5397505a12052b8e92aebf
+ms.sourcegitcommit: a3cec96a771eed69e58a29917d1a3fe1a5fb2e73
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50968138"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54250615"
 ---
 # <a name="hybrid-mdm-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune에서 사용하는 하이브리드 MDM
 
@@ -28,7 +28,7 @@ ms.locfileid: "50968138"
 > 
 > 그 결과, 대부분의 고객은 하이브리드 MDM 통해 Azure에서 Intune을 선택합니다. 하이브리드 MDM을 사용하는 고객의 수는 더 많은 고객이 클라우드로 이동함에 따라 계속 줄어듭니다. 따라서 2019년 9월 1일, Microsoft에서는 하이브리드 MDM 서비스 제공을 중지합니다. MDM 요구 사항을 충족하려면 [Azure의 Intune으로의 마이그레이션](/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)을 계획하세요. 
 > 
-> 이 변경이 온-프레미스 Configuration Manager나 [Windows 10 디바이스의 공동 관리](/sccm/core/clients/manage/co-management-overview)에 영향을 주지는 않습니다. 하이브리드 MDM을 사용 중인지 모르는 경우에는 Configuration Manager 콘솔의 **관리** 작업 영역으로 이동하여 **Cloud Services**를 확장하고 **Microsoft Intune 구독**을 클릭하세요. Microsoft Intune 구독이 설정되어 있다면 하이브리드 MDM용으로 테넌트가 구성되어 있는 것입니다.
+> 이 변경이 온-프레미스 Configuration Manager나 [Windows 10 디바이스의 공동 관리](/sccm/comanage/overview)에 영향을 주지는 않습니다. 하이브리드 MDM을 사용 중인지 모르는 경우에는 Configuration Manager 콘솔의 **관리** 작업 영역으로 이동하여 **Cloud Services**를 확장하고 **Microsoft Intune 구독**을 클릭하세요. Microsoft Intune 구독이 설정되어 있다면 하이브리드 MDM용으로 테넌트가 구성되어 있는 것입니다.
 > 
 > **이 변경 사항은 어떤 영향을 미치나요?**
 > 
@@ -48,7 +48,7 @@ ms.locfileid: "50968138"
 > 
 > - 하이브리드 MDM에서 Azure의 Intune으로 이동하는 프로세스를 간소화하려면 다음 도구 및 설명서를 검토하세요.  
 >     - [Configuration Manager 데이터를 Microsoft Intune로 가져오기](/sccm/mdm/deploy-use/migrate-import-data)  
->     - [하이브리드 MDM 사용자 및 장치를 Intune 독립 실행형으로 마이그레이션](/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)  
+>     - [하이브리드 MDM 사용자 및 디바이스를 Intune 독립 실행형으로 마이그레이션](/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)  
 > 
 > - 도움이 필요하면 공식 파트너나 FastTrack에 문의하세요. [Microsoft 365용 FastTrack](https://aka.ms/hybrid_fasttrack)이 하이브리드 MDM에서 Azure의 Intune으로의 마이그레이션을 지원할 수 있습니다. 
 > 
@@ -86,8 +86,8 @@ Configuration Manager의 하이브리드 MDM(모바일 디바이스 관리) 기�
 
 디바이스에 하이브리드 관리를 사용하려면 해당 디바이스를 서비스에 등록해야 합니다. 디바이스를 등록하는 방법은 디바이스 유형, 소유권 및 필요한 관리 수준에 따라 다릅니다.
 
-- **BYOD("Bring Your Own Device")**: 사용자가 개인 휴대폰, 태블릿 또는 PC를 등록합니다.  
+- **Bring your own device (BYOD)**: 사용자가 개인 휴대폰, 태블릿 또는 Pc를 등록합니다.  
 
-- **COD(회사 소유 장치)**: 원격 초기화, 공유 장치 또는 장치에 대한 사용자 선호도 등의 관리 시나리오를 사용할 수 있습니다.  
+- **회사 소유 장치 (COD)**: 원격 초기화, 공유 장치 또는 장치에 대 한 사용자 선호도 같은 관리 시나리오를 사용 하도록 설정  
 
 - [Exchange ActiveSync](/sccm/mdm/plan-design/device-enrollment-methods#mobile-device-management-with-exchange-activesync-and-configuration-manager)를 클라우드에서 호스트하거나 온-프레미스로 사용하는 경우 등록하지 않고 간단한 Intune 관리를 사용할 수 있습니다. [Intune 클라이언트 소프트웨어](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)를 사용하여 Windows PC를 관리할 수도 있습니다.
