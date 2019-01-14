@@ -41,11 +41,9 @@ Configuration Manager를 배포하기 전에 클라우드 리소스를 프로비
 ### <a name="azure-virtual-machines-for-cloud-based-infrastructure"></a>Azure 가상 컴퓨터(클라우드 기반 인프라의 경우)  
  Configuration Manager에서는 실제 회사 네트워크 내의 온-프레미스에서 실행하는 경우와 마찬가지로 Azure의 가상 컴퓨터에서 실행되는 컴퓨터 사용을 지원합니다. 다음과 같은 시나리오에서 Azure 가상 컴퓨터를 사용할 수 있습니다.  
 
--   
-  **시나리오 1:** 가상 머신에서 Configuration Manager를 실행하고 다른 가상 머신에 설치된 클라이언트를 관리하는데 사용할 수 있습니다.  
+-   **시나리오 1:** 가상 머신에서 Configuration Manager를 실행하고 다른 가상 머신에 설치된 클라이언트를 관리하는데 사용할 수 있습니다.  
 
--   
-  **시나리오 2:** 가상 머신에서 Configuration Manager를 실행하고 Azure에서 실행 중이지 않은 클라이언트를 관리하는데 사용할 수 있습니다.  
+-   **시나리오 2:** 가상 머신에서 Configuration Manager를 실행하고 Azure에서 실행 중이지 않은 클라이언트를 관리하는데 사용할 수 있습니다.  
 
 -   **시나리오 3:** 적합한 통신용 네트워크 연결을 사용할 수 있는 경우 실제 회사 네트워크에서는 다른 역할을 실행하면서 가상 컴퓨터에서는 다른 Configuration Manager 사이트 시스템 역할을 실행할 수 있습니다.  
 

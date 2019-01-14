@@ -56,7 +56,7 @@ ms.locfileid: "32335782"
  Configuration Manager의 준수 설정에는 구성 항목, 구성 기준 및 배포에 대한 정보를 모니터링할 수 있는 다양한 기본 제공 보고서가 포함됩니다. 이러한 보고서에는 **호환 및 설정 관리**라는 보고서 범주가 있습니다.  
 
 > [!IMPORTANT]  
->  준수 설정 보고서에서**%** 디바이스 필터 **및 사용자 필터 매개 변수를 사용할 때 와일드카드(** ) 문자를 사용해야 합니다.  
+>  준수 설정 보고서에서 **%** 디바이스 필터 **및 사용자 필터 매개 변수를 사용할 때 와일드카드(** ) 문자를 사용해야 합니다.  
 
  Configuration Manager에서 보고를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고](../../core/servers/manage/reporting.md)를 참조하세요.  
 

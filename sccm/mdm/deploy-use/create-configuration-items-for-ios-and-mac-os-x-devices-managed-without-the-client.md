@@ -238,7 +238,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
   
         앱 페이지를 열고 클립보드에 URL을 복사합니다. 이제 규격 또는 비규격 앱 목록의 URL로 사용할 수 있습니다.  
   
-        **예:** 저장소를 검색 합니다 **iPad 용 Microsoft Word** 앱. 사용할 URL은 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**입니다.  
+        **예:** 저장소를 검색 합니다 **iPad 용 Microsoft Word** 앱. 사용할 URL은 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8** 입니다.  
   
    -   **편집** - 선택한 앱의 이름, 게시자 및 URL을 편집할 수 있습니다.  
   
@@ -358,7 +358,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
   
      - 페이지의 URL을 복사한 다음 키오스크 모드에서 실행할 앱을 지정하는 URL로 사용합니다.  
   
-     - **예:** 검색할 **iPad 용 Microsoft Word**합니다. 사용할 URL은 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**입니다.  
+     - **예:** 검색할 **iPad 용 Microsoft Word**합니다. 사용할 URL은 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8** 입니다.  
   
    - **터치** - 디바이스에서 터치 스크린을 사용하거나 사용하지 않도록 설정합니다.  
   
