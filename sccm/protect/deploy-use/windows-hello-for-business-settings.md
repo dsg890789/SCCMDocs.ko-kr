@@ -1,8 +1,8 @@
 ---
 title: 비즈니스용 Windows Hello 설정
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager와 비즈니스용 Windows Hello를 통합하는 방법을 알아봅니다.
-ms.date: 04/10/2018
+description: Configuration Manager와 비즈니스용 Windows Hello를 통합하는 방법을 알아봅니다.
+ms.date: 12/21/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
@@ -10,21 +10,23 @@ ms.assetid: a95bc292-af10-4beb-ab56-2a815fc69304
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 60dcf98b83fb4650a10e5503d42b9f49d3aba359
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.openlocfilehash: 81086b01cef3d60af6e0c93d25b2ad937252d4ba
+ms.sourcegitcommit: 94bf7d5b5beb9628cc1fdfe75451d33b5de26f8a
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32350088"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54152403"
 ---
-# <a name="windows-hello-for-business-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager의 비즈니스용 Windows Hello 설정
+# <a name="windows-hello-for-business-settings-in-configuration-manager"></a>Configuration Manager의 비즈니스용 Windows Hello 설정
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-<!--1245704-->
-System Center Configuration Manager를 통해 Windows 10 디바이스의 대체 로그인 방법인 비즈니스용 Windows Hello(이전의 Microsoft Passport for Windows)와 통합할 수 있습니다. 비즈니스용 Windows Hello는 Active Directory 또는 Azure Active Directory 계정을 사용하여 암호, 스마트 카드 또는 가상 스마트 카드를 대체합니다.  
+<!--1245704--> Configuration Manager를 통해 Windows 10 디바이스의 대체 로그인 방법인 비즈니스용 Windows Hello(이전의 Microsoft Passport for Windows)와 통합할 수 있습니다. 비즈니스용 Windows Hello는 Active Directory 또는 Azure Active Directory 계정을 사용하여 암호, 스마트 카드 또는 가상 스마트 카드를 대체합니다. 비즈니스용 Windows Hello를 통해 암호 대신 **사용자 제스처** 를 사용하여 로그인할 수 있습니다. 사용자 제스처는 단순 PIN, 생체 인식 인증 또는 외부 디바이스(예: 지문 판독기)일 수 있습니다.
 
-비즈니스용 Windows Hello를 통해 암호 대신 **사용자 제스처** 를 사용하여 로그인할 수 있습니다. 사용자 제스처는 단순 PIN, 생체 인식 인증 또는 외부 디바이스(예: 지문 판독기)일 수 있습니다.
+
+> [!Important]  
+> 2017 년 12 월부터 Windows Hello for Business 설정 in Configuration Manager는 한 [사용 되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)합니다. Windows Server 2016 Active Directory Federation Services RA (등록 기관 ADFS) 배포 더 나은 사용자 환경을 제공 합니다. 하며 보다 명확한 인증서 등록 환경이 더 간단 합니다.  
+
 
 자세한 내용은 [비즈니스용 Windows Hello](https://docs.microsoft.com/windows/access-protection/hello-for-business/hello-identity-verification)를 참조하세요.
 
@@ -33,19 +35,24 @@ System Center Configuration Manager를 통해 Windows 10 디바이스의 대체 
 > Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  
 
 
- Configuration Manager는 다음 두 가지 방법으로 비즈니스용 Windows Hello와 통합됩니다.  
+Configuration Manager는 다음 두 가지 방법으로 비즈니스용 Windows Hello와 통합됩니다.  
 
--   Configuration Manager를 사용하여 사용자가 로그인하는 데 사용할 수 있는 제스처와 사용할 수 없는 제스처를 제어할 수 있습니다.  
+- Configuration Manager를 사용하여 사용자가 로그인하는 데 사용할 수 있는 제스처와 사용할 수 없는 제스처를 제어할 수 있습니다.  
 
--   비즈니스용 Windows Hello KSP(키 스토리지 공급자)에 인증 인증서를 저장할 수 있습니다. 자세한 내용은 [인증서 프로필](introduction-to-certificate-profiles.md)을 참조하세요.  
+- 비즈니스용 Windows Hello KSP(키 스토리지 공급자)에 인증 인증서를 저장할 수 있습니다. 자세한 내용은 [인증서 프로필](introduction-to-certificate-profiles.md)을 참조하세요.  
 
-- Configuration Manager 클라이언트를 실행하는 도메인에 가입된 Windows 10 디바이스에 비즈니스용 Windows Hello 정책을 배포할 수 있습니다. 이 구성은 [도메인에 가입된 Windows 10 디바이스에서 비즈니스용 Windows Hello 구성](#configure-windows-hello-for-business-on-domain-joined-windows-10-devices) 섹션에서 설명합니다. Microsoft Intune(하이브리드)에서 Configuration Manager를 사용하는 경우 Windows 10 및 Windows 10 모바일 디바이스에서 이러한 설정을 구성할 수 있습니다. 자세한 내용은 [비즈니스용 Windows Hello 설정(하이브리드) 구성](../../mdm/deploy-use/windows-hello-for-business-settings.md)을 참조하세요.
+- Configuration Manager 클라이언트를 실행하는 도메인에 가입된 Windows 10 디바이스에 비즈니스용 Windows Hello 정책을 배포할 수 있습니다. 이 구성은 [도메인에 가입된 Windows 10 디바이스에서 비즈니스용 Windows Hello 구성](#configure-windows-hello-for-business-on-domain-joined-windows-10-devices) 섹션에서 설명합니다. Microsoft Intune(하이브리드)에서 Configuration Manager를 사용하는 경우 Windows 10 및 Windows 10 모바일 디바이스에서 이러한 설정을 구성할 수 있습니다. 자세한 내용은 [비즈니스용 Windows Hello 설정(하이브리드) 구성](/sccm/mdm/deploy-use/windows-hello-for-business-settings)을 참조하세요.
+
+
 
 ## <a name="configure-windows-hello-for-business-on-domain-joined-windows-10-devices"></a>도메인에 가입된 Windows 10 디바이스에서 비즈니스용 Windows Hello 구성
+
 비즈니스용 Windows Hello 프로필을 만들고 배포하여 도메인에 조인된 Windows 10 디바이스에서 비즈니스용 Windows Hello 설정을 제어할 수 있습니다. 이 방법이 권장됩니다.
 
 
 인증서 기반 인증을 사용하는 경우 [인증서 프로필 구성](#configure-a-certificate-profile)에 설명된 대로 인증서 프로필도 배포해야 합니다. 키 기반 인증을 사용하는 경우 인증서 프로필을 배포할 필요가 없습니다.
+
+
 
 ## <a name="configure-a-windows-hello-for-business-profile"></a>비즈니스용 Windows Hello 프로필 구성  
 
@@ -53,8 +60,11 @@ Configuration Manager 콘솔의 **회사 리소스 액세스** 아래에서 **�
 
 ![사용 가능한 설정 목록을 보여 주는 비즈니스용 Windows Hello 정책 마법사](../media/Hello-for-Business-settings.png)
 
+
+
 ## <a name="configure-a-certificate-profile-to-enroll-the-windows-hello-for-business-enrollment-certificate-in-configuration-manager"></a>Configuration Manager에서 비즈니스용 Windows Hello 등록 인증서를 등록하도록 인증서 프로필 구성  
- 비즈니스용 Windows Hello 인증서 기반 로그인을 사용하려면 다음 구성 요소를 구성합니다.  
+
+비즈니스용 Windows Hello 인증서 기반 로그인을 사용하려면 다음 구성 요소를 구성합니다.  
 
 -   Configuration Manager 인증서 프로필.  
 
