@@ -9,12 +9,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 robots: noindex,nofollow
-ms.openlocfilehash: a71aa0834a241332d3390e1d888d99b6e3f986f7
-ms.sourcegitcommit: d36e4c7082a5144e79035dd8847c8e741fa04667
+ms.openlocfilehash: 151862c390518cf68450c3eb3727a777bc575c5a
+ms.sourcegitcommit: a3cec96a771eed69e58a29917d1a3fe1a5fb2e73
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53444572"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54250649"
 ---
 <!-- 
 - Feature 1357546
@@ -36,7 +36,7 @@ ms.locfileid: "53444572"
 ## <a name="recommended"></a>권장 
 수동으로 큐레이팅된 중요한 문서 목록입니다.
 
-- [Windows 10 디바이스에 대한 공동 관리](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)  
+- [Windows 10 디바이스에 대한 공동 관리](https://docs.microsoft.com/sccm/comanage/overview)  
 - [CMPivot](https://docs.microsoft.com/sccm/core/servers/manage/cmpivot)  
 - [PowerShell 스크립트 만들기 및 실행](https://docs.microsoft.com/sccm/apps/deploy-use/create-deploy-scripts)  
 - [단계별 배포](https://docs.microsoft.com/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence)  
@@ -62,7 +62,7 @@ ms.locfileid: "53444572"
  | 7104 | [Windows 10에 대한 지원](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10) | 
  | 6957 | [콘솔 설치](https://docs.microsoft.com/sccm/core/servers/deploy/install/install-consoles) | 
  | 6765 | [클라이언트 설치 매개 변수 및 속성](https://docs.microsoft.com/sccm/core/clients/deploy/about-client-installation-properties) | 
- | 6091 | [Windows 10 디바이스에 대한 공동 관리](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview) | 
+ | 6091 | [Windows 10 디바이스에 대한 공동 관리](https://docs.microsoft.com/sccm/comanage/overview) | 
  | 6043 | [애플리케이션 배포](https://docs.microsoft.com/sccm/apps/deploy-use/deploy-applications) | 
  | 5833 | [배포 지점 관리](https://docs.microsoft.com/sccm/core/servers/deploy/configure/install-and-configure-distribution-points) | 
 

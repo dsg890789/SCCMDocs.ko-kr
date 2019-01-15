@@ -10,12 +10,12 @@ ms.assetid: 2a216814-ca8c-4d2e-bcef-dc00966a3c9f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5f7cb374859d2605021a3f1ec98d6a6b6081bfc4
-ms.sourcegitcommit: 54e5786875c4e5f5c1b54e38ed59e96344faf9b4
+ms.openlocfilehash: 237a21346665af404850276b12b0f1ca32fc5f6e
+ms.sourcegitcommit: a3cec96a771eed69e58a29917d1a3fe1a5fb2e73
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817905"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54250819"
 ---
 # <a name="plan-for-security-in-configuration-manager"></a>Configuration Manager의 보안 계획
 
@@ -381,7 +381,7 @@ Configuration Manager에서 선택할 수 있는 구성 옵션은 다양하므�
 
 - [클라우드 도메인 조인 디바이스 관리](/sccm/core/clients/deploy/deploy-clients-cmg-azure)  
 
-- [공동 관리](/sccm/core/clients/manage/co-management-overview)  
+- [공동 관리](/sccm/comanage/overview)  
 
 - [사용자 사용 가능 앱 배포](/sccm/apps/deploy-use/deploy-applications#deploy-user-available-applications-on-azure-ad-joined-devices)  
 

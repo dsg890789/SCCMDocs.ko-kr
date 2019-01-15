@@ -10,12 +10,12 @@ ms.assetid: 5d5d6273-0d8a-43c7-865a-cdb1736dcae3
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 024714c564036cd61a6c1340724aa3b9cad782d2
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.openlocfilehash: d59e5e5bc1dfdf962517b4c364b74aa0df6b650a
+ms.sourcegitcommit: 94bf7d5b5beb9628cc1fdfe75451d33b5de26f8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52456399"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54152454"
 ---
 # <a name="plan-for-the-sms-provider"></a>SMS 공급자에 대한 계획 
 
@@ -165,11 +165,11 @@ SMS 공급자는 Configuration Manager 보안을 적용하는 데 도움이 됩�
 
 다음 수준을 사용할 수 있습니다.
 
-- **Windows 인증**: Active Directory 도메인 자격 증명을 사용한 인증이 필요합니다. 이 설정은 이전 동작이고 현재 기본 설정입니다. 사이트를 업데이트할 때 인증 수준은 변경되지 않았습니다.  
+- **Windows 인증**: Active Directory 도메인 자격 증명으로 인증해야 합니다. 이 설정은 이전 동작이고 현재 기본 설정입니다. 사이트를 업데이트할 때 인증 수준은 변경되지 않았습니다.  
 
-- **인증서 인증**: 신뢰할 수 있는 PKI 인증 기관에서 발급한 유효한 인증서를 사용한 인증을 요구합니다. Configuration Manager에서는 이 인증서를 구성하지 않았습니다. Configuration Manager는 관리자에게 PKI를 사용하여 Windows에 로그인하도록 요구합니다.  
+- **인증서 인증**: 신뢰할 수 있는 PKI 인증 기관에서 발급한 유효한 인증서를 사용하여 인증해야 합니다. Configuration Manager에서는 이 인증서를 구성하지 않았습니다. Configuration Manager는 관리자에게 PKI를 사용하여 Windows에 로그인하도록 요구합니다.  
 
-- **비즈니스용 Windows Hello 인증**: 장치에 연결되고 생체 인식 또는 PIN을 사용하는 강력한 2단계 인증으로 인증해야 합니다. Configuration Manager를 사용하여 비즈니스용 Windows Hello 정책을 관리하고 배포할 수 있습니다. 자세한 내용은 [비즈니스용 Windows Hello 설정](/sccm/protect/deploy-use/windows-hello-for-business-settings)을 참조하세요.  
+- **비즈니스용 Windows Hello 인증**: 디바이스에 연결되고 생체 인식 또는 PIN을 사용하는 강력한 2단계 인증을 사용하여 인증해야 합니다. 자세한 내용은 [비즈니스용 Windows Hello](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)를 참조하세요.   
 
 
 ### <a name="exclusions"></a>제외

@@ -10,12 +10,12 @@ ms.assetid: c8534a1e-57b8-4688-b6e6-299d82cfcec9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 329f5c2f227cbd8a51b1c9ccc21810cda9f6a2cf
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.openlocfilehash: 26b6d68f634a230f56a93b6cc1691ce98fa77852
+ms.sourcegitcommit: a3cec96a771eed69e58a29917d1a3fe1a5fb2e73
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53417142"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54250688"
 ---
 # <a name="configuration-manager-and-windows-as-a-service"></a>Configuration Manager 및 Windows as a Service
 
@@ -48,7 +48,7 @@ System Center Configuration Manager는 Windows 10의 기능 업데이트를 포�
 |[Windows 10 업데이트 전송 최적화](/sccm/sum/deploy-use/optimize-windows-10-update-delivery)|Configuration Manager로 업데이트 콘텐츠를 관리하여 Windows 10으로 최신 상태를 유지합니다.|
 |[업그레이드 준비와 통합](/sccm/core/clients/manage/upgrade/upgrade-analytics)|업그레이드 준비는 Windows 10으로 업그레이드하기 위해 사용자 환경에서 디바이스의 준비 상태를 평가하고 분석할 수 있습니다.| 
 |[Windows Update for Business 통합(선택 사항)](/sccm/sum/deploy-use/integrate-windows-update-for-business-windows-10)|Configuration Manager를 사용하여 WUfB(Windows Update for Business) 정책을 정의하고 배포하는 방법을 설명합니다.|
-|[Microsoft Intune 및 Windows Update for Business와 공동 관리 사용(선택 사항)](/sccm/core/clients/manage/co-management-overview)|공동 관리의 개요를 제공합니다.| 
+|[Microsoft Intune 및 Windows Update for Business와 공동 관리 사용(선택 사항)](/sccm/comanage/overview)|공동 관리의 개요를 제공합니다.| 
 
 
 ## <a name="related-articles"></a>관련 문서
