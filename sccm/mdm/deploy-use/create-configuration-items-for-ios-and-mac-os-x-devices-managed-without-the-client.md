@@ -10,12 +10,12 @@ ms.assetid: 613a48ac-c55d-4c4a-94ea-d3747a1b10cb
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: bf5f580d10c48bb44b3c202832ffff3a06c5c37f
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.openlocfilehash: 708a9fc1f3a2f10a602dc5d926cd8b8df0cbc7cf
+ms.sourcegitcommit: 2687489aa409a050dcacd67f17b3dad3ab7f1804
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53416183"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316578"
 ---
 # <a name="how-to-create-configuration-items-for-ios-and-mac-os-x-devices-managed-with-intune"></a>Intune으로 관리되는 iOS 및 Mac OS X 디바이스에 대한 구성 항목을 만드는 방법
 System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용하여 Configuration Manager에서 온-프레미스로 관리되거나 Microsoft Intune에 등록된 iOS 및 Mac OS X 디바이스에 대한 설정을 관리할 수 있습니다.  
@@ -238,7 +238,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
   
         앱 페이지를 열고 클립보드에 URL을 복사합니다. 이제 규격 또는 비규격 앱 목록의 URL로 사용할 수 있습니다.  
   
-        **예:** 저장소를 검색 합니다 **iPad 용 Microsoft Word** 앱. 사용할 URL은 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8** 입니다.  
+        **예제:** 저장소를 검색 합니다 **iPad 용 Microsoft Word** 앱. 사용할 URL은 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8** 입니다.  
   
    -   **편집** - 선택한 앱의 이름, 게시자 및 URL을 편집할 수 있습니다.  
   
@@ -275,7 +275,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
      >  앱의 번들 ID를 찾으려면 앱이 설치된 Mac 컴퓨터에서 다음 단계를 따르세요.  
      > 
      > 1. 앱이 설치되어 있는 폴더(예: **/Applications**)를 엽니다.  
-     >    2.  *<App Name\>***.app** 번들을 선택하고 **패키지 내용 표시**를 선택합니다.  
+     >    2.  _<앱 이름\>_**.app** 번들을 선택하고 **패키지 내용 표시**를 선택합니다.  
      >    3.  **Info.plist** 파일을 엽니다.  
      >    4.  **CFBundleIdentifier**키와 연결된 값을 확인합니다.  
      > 
@@ -358,7 +358,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
   
      - 페이지의 URL을 복사한 다음 키오스크 모드에서 실행할 앱을 지정하는 URL로 사용합니다.  
   
-     - **예:** 검색할 **iPad 용 Microsoft Word**합니다. 사용할 URL은 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8** 입니다.  
+     - **예제:** 검색할 **iPad 용 Microsoft Word**합니다. 사용할 URL은 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8** 입니다.  
   
    - **터치** - 디바이스에서 터치 스크린을 사용하거나 사용하지 않도록 설정합니다.  
   
