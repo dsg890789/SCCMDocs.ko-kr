@@ -10,12 +10,12 @@ ms.assetid: 5bd637b1-d7a1-411b-877a-c7aae9741173
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a0e16c137604480ab23e15b52723692491d1816d
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.openlocfilehash: 763826a1a308130415fb972f7f3dc3e577b8e573
+ms.sourcegitcommit: a3cec96a771eed69e58a29917d1a3fe1a5fb2e73
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53414857"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54250734"
 ---
 # <a name="whats-new-in-version-1802-of-system-center-configuration-manager"></a>System Center Configuration Manager 1802 버전의 새로운 기능
 
@@ -144,7 +144,7 @@ Configuration Manager 1802에서 사용할 수 있는 정보는 다음과 같습
 ## <a name="co-management"></a>공동 관리
 
 ### <a name="transition-endpoint-protection-workload-to-intune-using-co-management"></a>공동 관리를 사용하여 Endpoint Protection 워크로드를 Intune으로 전환
-<!-- 1357365 --> 공동 관리를 사용하도록 설정한 후 Endpoint Protection 워크로드를 Intune으로 전환할 수 있습니다. Endpoint Protection 워크로드를 전환하려면 공동 관리 속성 페이지로 이동한 다음, 슬라이더 막대를 Configuration Manager에서 **파일럿** 또는 **모두**로 이동합니다. 워크로드에 대한 자세한 내용은 [Intune으로 전환할 수 있는 워크로드](/sccm/core/clients/manage/co-management-switch-workloads#Workloads-able-to-be-transitioned-to-Intune)를 참조하세요. 공동 관리에 대한 자세한 내용은 [Windows 10 디바이스에 대한 공동 관리](/sccm/core/clients/manage/co-management-overview)를 참조하세요.
+<!-- 1357365 --> 공동 관리를 사용하도록 설정한 후 Endpoint Protection 워크로드를 Intune으로 전환할 수 있습니다. Endpoint Protection 워크로드를 전환하려면 공동 관리 속성 페이지로 이동한 다음, 슬라이더 막대를 Configuration Manager에서 **파일럿** 또는 **모두**로 이동합니다. 워크로드에 대한 자세한 내용은 [공동 관리 워크로드](/sccm/comanage/workloads)를 참조하세요. 공동 관리에 대한 자세한 내용은 [Windows 10 디바이스에 대한 공동 관리](/sccm/comanage/overview)를 참조하세요.
  
 ### <a name="co-management-dashboard-in-system-center-configuration-manager"></a>System Center Configuration Manager의 공동 관리 대시보드
 <!--1356648--> 이 릴리스부터 공동 관리에 대한 정보가 포함된 대시보드를 볼 수 있습니다. 대시보드를 사용하면 사용자 환경에서 공동으로 관리되는 시스템을 검토할 수 있습니다. 그래프는 주의가 필요한 디바이스를 식별하는 데 도움이 될 수 있습니다. 자세한 내용은 [공동 관리 대시보드](/sccm/core/clients/manage/client-management-dashboard) 문서를 참조하세요. 
@@ -234,8 +234,8 @@ Configuration Manager 1802에서 사용할 수 있는 정보는 다음과 같습
 ### <a name="report-for-default-browser-counts"></a>기본 브라우저 개수에 대한 보고서
 <!-- 1357830 --> 이제 특정 웹 브라우저를 Windows 기본값으로 사용하는 클라이언트 수를 표시하는 새 보고서가 있습니다. **소프트웨어 - 회사 및 제품** 보고서 그룹의 **기본 브라우저 수** 보고서를 참조하세요. 자세한 내용은 [보고서 목록](/sccm/core/servers/manage/list-of-reports#software---companies-and-products)을 참조하세요.
 
-### <a name="report-on-windows-autopilot-device-information"></a>Windows AutoPilot 디바이스 정보에 대한 보고서
-<!-- 1351442 --> Windows AutoPilot은 새로운 Windows 10 디바이스를 최신 방법으로 온보딩 및 구성하기 위한 솔루션입니다. 자세한 내용은 [Windows AutoPilot 개요](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)를 참조하세요. 기존 디바이스를 Windows AutoPilot에 등록하는 한 가지 방법은 비즈니스 및 교육용 Microsoft 스토어에 디바이스 정보를 업로드하는 것입니다. 이 정보에는 디바이스 일련 번호, Windows 제품 식별자 및 하드웨어 식별자가 포함됩니다. Configuration Manager를 사용하여 **하드웨어 - 일반** 보고서 노드에 있는 새로운 **Windows AutoPilot 디바이스 정보** 보고서를 통해 이 디바이스 정보를 수집하고 보고합니다. 자세한 내용은 '공동 관리를 위한 준비'의 [새 Windows 10 디바이스](/sccm/core/clients/manage/co-management-prepare#new-windows-10-devices)를 참조하세요.
+### <a name="report-on-windows-autopilot-device-information"></a>Windows Autopilot 디바이스 정보에 대한 보고서
+<!-- 1351442 --> Windows Autopilot은 새로운 Windows 10 디바이스를 최신 방법으로 온보딩 및 구성하기 위한 솔루션입니다. 자세한 내용은 [Windows Autopilot 개요](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)를 참조하세요. 기존 디바이스를 Windows Autopilot에 등록하는 한 가지 방법은 비즈니스 및 교육용 Microsoft Store에 디바이스 정보를 업로드하는 것입니다. 이 정보에는 디바이스 일련 번호, Windows 제품 식별자 및 하드웨어 식별자가 포함됩니다. Configuration Manager를 사용하여 **하드웨어 - 일반** 보고서 노드에 있는 새로운 **Windows Autopilot 디바이스 정보** 보고서를 통해 이 디바이스 정보를 수집하고 보고합니다. 자세한 내용은 공동 관리 준비 시 [공동 관리를 위해 인터넷 기반 디바이스를 준비하는 방법](/sccm/comanage/how-to-prepare-win10#windows-autopilot)을 참조하세요.
 
 ### <a name="report-on-windows-10-servicing-details-for-a-specific-collection"></a>특정 컬렉션에 대한 Windows 10 서비스 세부 정보 보고서
 <!--1357653-->**특정 컬렉션에 대한 Windows 10 서비스 세부 정보** 보고서는 특정 컬렉션에 대한 Windows 10 서비스와 관련된 일반 정보를 표시합니다. 이 보고서에는 Windows 10 디바이스의 리소스 ID, NetBIOS 이름, OS 이름, OS 릴리스 이름, 빌드, OS 분기 및 서비스 상태가 표시됩니다. 자세한 내용은 [보고서 목록](/sccm/core/servers/manage/list-of-reports#operating-system)을 참조하세요.

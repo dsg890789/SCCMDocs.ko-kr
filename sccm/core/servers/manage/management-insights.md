@@ -10,12 +10,12 @@ ms.assetid: a79f83be-884c-48e6-94d6-ed0a68c22e2f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3721c4c35dd22a0d2a59d2300bd25dfbd3c75aeb
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.openlocfilehash: cd2cee9de9f876f591145a12443b50d08349a451
+ms.sourcegitcommit: a3cec96a771eed69e58a29917d1a3fe1a5fb2e73
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52456314"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54250751"
 ---
 # <a name="management-insights-in-configuration-manager"></a>Configuration Manager의 관리 인사이트
 
@@ -42,11 +42,11 @@ Configuration Manager의 관리 정보는 환경의 현재 상태에 대한 정�
 
 - **모든 규칙**: 선택한 관리 정보 그룹에 대한 규칙의 전체 목록을 제공합니다.  
 
-- **완료**: 아무 조치도 필요하지 않은 규칙을 나열합니다.  
+- **완료**:  아무 조치도 필요하지 않은 규칙을 나열합니다.  
 
-- **진행 중**: 모두는 아니지만 일부 필수 구성 요소가 완료되는 규칙을 보여줍니다.  
+- **진행 중**: 모두는 아니지만 일부 필수 구성 요소가 완료되는 규칙을 보여 줍니다.  
 
-- **필요한 작업**: 작업을 수행해야 하는 규칙이 나열됩니다. **자세한 세부 내용**을 선택하여 작업이 필요한 특정 항목을 검색합니다.  
+- **작업 필요**: 작업을 수행해야 하는 규칙이 나열됩니다. **자세한 세부 내용**을 선택하여 작업이 필요한 특정 항목을 검색합니다.  
 
 **필수 구성 요소** 창에는 규칙을 실행하는 데 필요한 항목이 나열되어 있습니다.
 
@@ -87,13 +87,13 @@ Configuration Manager의 관리 정보는 환경의 현재 상태에 대한 정�
 
 이 대시보드에는 다음과 같은 타일이 있습니다.  
 
-- **관리 인사이트 인덱스**: 관리 인사이트 규칙에 대한 전체 진행 상황을 추적합니다. 인덱스는 가중 평균입니다. 중요 규칙이 가장 유용합니다. 이 인덱스는 선택적 규칙에 가장 작은 가중치를 부여합니다.  
+- **관리 인사이트 인덱스**: 관리 인사이트 규칙에 대한 전반적인 진행 상황을 추적합니다. 인덱스는 가중 평균입니다. 중요 규칙이 가장 유용합니다. 이 인덱스는 선택적 규칙에 가장 작은 가중치를 부여합니다.  
 
 - **관리 인사이트 그룹**: 필터를 적용하여 각 그룹에 있는 규칙의 백분율을 표시합니다. 그룹을 선택하여 이 그룹의 특정 규칙으로 드릴다운할 수 있습니다.  
 
 - **관리 인사이트 우선 순위**: 필터를 적용하여 우선 순위별로 규칙의 백분율을 표시합니다.   
 
-- **모든 인사이트**: 우선 순위 및 상태를 포함하는 인사이트 테이블입니다. 테이블의 맨 위에서 **필터** 필드를 사용하여 사용 가능한 열 중 하나의 문자열과 일치시킵니다. 대시보드는 다음 순서 대로 테이블을 정렬합니다.
+- **모든 인사이트**: 우선 순위 및 상태가 포함된 인사이트 테이블입니다. 테이블의 맨 위에서 **필터** 필드를 사용하여 사용 가능한 열 중 하나의 문자열과 일치시킵니다. 대시보드는 다음 순서 대로 테이블을 정렬합니다.
     - 상태: 작업 필요, 완료, 알 수 없음  
     - 우선 순위: 중요, 권장, 선택 사항  
     - 마지막으로 변경한 날짜: 오래된 날짜 우선   
@@ -105,7 +105,7 @@ Configuration Manager의 관리 정보는 환경의 현재 상태에 대한 정�
 ## <a name="groups-and-rules"></a>그룹 및 규칙
 
 규칙은 다음과 같은 관리 인사이트 그룹으로 구성됩니다.
-- [응용 프로그램](#applications)  
+- [애플리케이션](#applications)  
 - [클라우드 서비스](#cloud-services)  
 - [컬렉션](#collections)  
 - [자동 유지 관리](#proactive-maintenance)  
@@ -119,20 +119,20 @@ Configuration Manager의 관리 정보는 환경의 현재 상태에 대한 정�
 
 애플리케이션 관리에 대한 인사이트
 
-- **배포가 없는 응용 프로그램**: 사용자 환경에서 활성 배포가 없는 응용 프로그램을 나열합니다. 이 규칙을 통해 사용되지 않는 애플리케이션을 찾고 삭제하여 콘솔에 표시된 애플리케이션 목록을 간소화할 수 있습니다. 자세한 내용은 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications)를 참조하세요.  
+- **배포가 없는 애플리케이션**: 사용자 환경에서 활성 배포가 없는 애플리케이션을 나열합니다. 이 규칙을 통해 사용되지 않는 애플리케이션을 찾고 삭제하여 콘솔에 표시된 애플리케이션 목록을 간소화할 수 있습니다. 자세한 내용은 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications)를 참조하세요.  
 
 
 ### <a name="cloud-services"></a>Cloud Services
 
 많은 클라우드 서비스와 통합하여 디바이스의 최신 관리를 사용하도록 설정합니다. 
 
-- **공동 관리 준비 상태 평가**: 공동 관리를 사용하는 데 필요한 단계를 이해할 수 있습니다. 이 규칙에는 필수 구성 요소가 있습니다. 자세한 내용은 [공동 관리 개요](/sccm/core/clients/manage/co-management-overview)를 참조하세요.  
+- **공동 관리 준비 상태 평가**: 공동 관리를 사용하는 데 필요한 단계를 이해할 수 있습니다. 이 규칙에는 필수 구성 요소가 있습니다. 자세한 내용은 [공동 관리 개요](/sccm/comanage/overview)를 참조하세요.  
 
-- **Configuration Manager에 사용할 Azure 서비스 구성**: 이 규칙은 Configuration Manager를 Azure AD에 온보딩하여 클라이언트가 Azure AD를 사용하는 사이트를 인증할 수 있게 해줍니다. 자세한 내용은 [Azure 서비스 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)을 참조하세요.  
+- **Configuration Manager에서 사용하도록 Azure 서비스 구성**: 이 규칙은 Configuration Manager를 Azure AD에 온보딩하여 클라이언트가 Azure AD를 사용하는 사이트를 인증할 수 있게 해줍니다. 자세한 내용은 [Azure 서비스 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)을 참조하세요.  
 
-- **장치가 조인된 하이브리드 Azure Active Directory가 되도록 활성화**: Azure AD 조인 장치를 통해 장치가 조직의 보안 및 규정 준수 표준을 충족하도록 보장하면서 사용자가 도메인 자격 증명으로 로그인할 수 있습니다. 자세한 내용은 [Azure AD 하이브리드 ID 디자인 고려 사항](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-overview)을 참조하세요.  
+- **디바이스가 하이브리드 Azure Active Directory에 가입하도록 설정**: Azure AD 가입 디바이스를 통해 디바이스가 조직의 보안 및 규정 준수 표준을 충족하도록 보장하면서 사용자가 해당 도메인 자격 증명을 사용하여 로그인할 수 있습니다. 자세한 내용은 [Azure AD 하이브리드 ID 디자인 고려 사항](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-overview)을 참조하세요.  
 
-- **최신 Windows 10 버전으로 클라이언트 업데이트** - Windows 10, 1709 버전 이상은 사용자의 컴퓨팅 환경을 향상시키고 현대화합니다. 자세한 내용은 [Windows as a service 채택에 관한 주요 문서](/sccm/core/understand/configuration-manager-and-windows-as-service#key-articles-about-adopting-windows-as-a-service)를 참조하세요.  
+- **클라이언트를 최신 Windows 10 버전으로 업데이트**: Windows 10, 1709 버전 이상은 사용자의 컴퓨팅 환경을 향상시키고 현대화합니다. 자세한 내용은 [Windows as a service 채택에 관한 주요 문서](/sccm/core/understand/configuration-manager-and-windows-as-service#key-articles-about-adopting-windows-as-a-service)를 참조하세요.  
 
 
 ### <a name="collections"></a>컬렉션
@@ -147,7 +147,7 @@ Configuration Manager의 관리 정보는 환경의 현재 상태에 대한 정�
 
 - **할당된 사이트 시스템이 없는 경계 그룹**: 할당된 사이트 시스템이 없으면 경계 그룹은 사이트 할당에만 사용할 수 있습니다. 자세한 내용은 [경계 그룹 구성](/sccm/core/servers/deploy/configure/boundary-groups)을 참조하세요.  
 
-- **Boundary groups with no members**(멤버가 없는 경계 그룹): 경계 그룹은 멤버가 없는 경우 사이트 할당이나 콘텐츠 조회에 적용할 수 없습니다. 자세한 내용은 [경계 그룹 구성](/sccm/core/servers/deploy/configure/boundary-groups)을 참조하세요.  
+- **멤버가 없는 경계 그룹**: 경계 그룹은 멤버가 없는 경우 사이트 할당이나 콘텐츠 조회에 적용할 수 없습니다. 자세한 내용은 [경계 그룹 구성](/sccm/core/servers/deploy/configure/boundary-groups)을 참조하세요.  
 
 - **클라이언트에 콘텐츠를 제공하지 않는 배포 지점**: 지난 30일 동안 클라이언트에 콘텐츠를 제공하지 않은 배포 지점입니다. 이 데이터는 클라이언트의 다운로드 기록 보고서를 기반으로 합니다. 자세한 내용은 [배포 지점 설치 및 구성](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points)을 참조하세요.  
 
@@ -157,7 +157,7 @@ Configuration Manager의 관리 정보는 환경의 현재 상태에 대한 정�
 
 - **사용되지 않는 구성 항목**: 구성 기준에 속하지 않고 30일보다 오래된 구성 항목입니다. 자세한 내용은 [Create configuration baselines](/sccm/compliance/deploy-use/create-configuration-baselines)(구성 기준 만들기)를 참조하세요.  
 
-- **피어 캐시 원본을 Configuration Manager 클라이언트의 최신 버전으로 업그레이드**: 피어 캐시 원본으로 사용되지만 1806 이전 클라이언트 버전에서 업그레이드하지 않은 클라이언트를 식별합니다. 1806 이전 클라이언트는 1806 이상 버전을 실행하는 클라이언트의 피어 캐시 원본으로 사용될 수 없습니다. **작업 수행**을 선택하여 클라이언트 목록을 표시하는 디바이스 보기를 엽니다.<!--1358008-->  
+- **피어 캐시 원본을 최신 버전의 구성 관리자 클라이언트로 업그레이드**: 피어 캐시 원본으로 사용되지만 1806 이전 클라이언트 버전에서 업그레이드하지 않은 클라이언트를 식별합니다. 1806 이전 클라이언트는 1806 이상 버전을 실행하는 클라이언트의 피어 캐시 원본으로 사용될 수 없습니다. **작업 수행**을 선택하여 클라이언트 목록을 표시하는 디바이스 보기를 엽니다.<!--1358008-->  
 
 
 ### <a name="security"></a>보안
@@ -177,18 +177,18 @@ Configuration Manager의 관리 정보는 환경의 현재 상태에 대한 정�
 
 소프트웨어 센터 관리에 대한 인사이트입니다. 
 
-- **사용자를 응용 프로그램 카탈로그 대신 소프트웨어 센터로 이동**: 사용자가 지난 14일 동안 응용 프로그램 카탈로그의 응용 프로그램을 설치했거나 요청했는지를 확인합니다. 애플리케이션 카탈로그의 기본 기능이 이제는 소프트웨어 센터에 포함됩니다. 애플리케이션 카탈로그 웹 사이트에 대한 지원은 1806 버전에서 종료되었습니다. 자세한 내용은 [사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures#deprecated-features)을 참조하세요.  
+- **사용자를 애플리케이션 카탈로그 대신 소프트웨어 센터로 직접 연결**: 사용자가 지난 14일 동안 애플리케이션 카탈로그의 애플리케이션을 설치했거나 요청했는지를 확인합니다. 애플리케이션 카탈로그의 기본 기능이 이제는 소프트웨어 센터에 포함됩니다. 애플리케이션 카탈로그 웹 사이트에 대한 지원은 1806 버전에서 종료되었습니다. 자세한 내용은 [사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures#deprecated-features)을 참조하세요.  
 
-- **새 버전의 소프트웨어 센터 사용**: 이전 버전의 소프트웨어 센터는 더 이상 지원되지 않습니다. 클라이언트 설정인 **컴퓨터 에이전트** 그룹에 **새 소프트웨어 센터 사용**을 활성화하여 새로운 소프트웨어 센터를 사용하도록 클라이언트를 설정합니다. 자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#use-new-software-center)를 참조하세요.  
+- **새 버전의 Software Center 사용**: 이전 버전의 소프트웨어 센터는 더 이상 지원되지 않습니다. 클라이언트 설정인 **컴퓨터 에이전트** 그룹에 **새 소프트웨어 센터 사용**을 활성화하여 새로운 소프트웨어 센터를 사용하도록 클라이언트를 설정합니다. 자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#use-new-software-center)를 참조하세요.  
 
 
 ### <a name="windows-10"></a>Windows 10
 
 Windows 10의 배포 및 서비스와 관련된 정보입니다. Windows 10 관리 정보 그룹은 Windows 7, Windows 8 또는 Windows 8.1을 실행하는 클라이언트의 절반을 초과하는 경우에만 지원됩니다.
 
-- **Windows 원격 분석 및 상업용 ID 키 구성**: 업그레이드 준비에서 데이터를 사용하려면 상업용 ID 키로 구성되고 원격 분석을 사용하도록 장치를 설정합니다. Windows 10 디바이스를 강화된(제한된) 원격 분석 수준 이상으로 설정합니다. 자세한 내용은 [Windows Analytics로 데이터를 보고하도록 클라이언트 구성](/sccm/core/clients/manage/monitor-windows-analytics#configure-clients-to-report-data-to-windows-analytics)을 참조하세요.  
+- **Windows 원격 분석 및 상업용 ID 키 구성**: 업그레이드 준비에서 데이터를 사용하려면 상업용 ID 키로 구성되고 원격 분석을 사용하도록 디바이스를 설정합니다. Windows 10 디바이스를 강화된(제한된) 원격 분석 수준 이상으로 설정합니다. 자세한 내용은 [Windows Analytics로 데이터를 보고하도록 클라이언트 구성](/sccm/core/clients/manage/monitor-windows-analytics#configure-clients-to-report-data-to-windows-analytics)을 참조하세요.  
 
-- **업그레이드 준비에 Configuration Manager 연결**: Windows 7 지원이 중지되기 전에 업그레이드 준비를 활용하여 Windows 10 배포를 신속하게 처리합니다. 자세한 내용은 [업그레이드 준비 통합](/sccm/core/clients/manage/upgrade/upgrade-analytics)을 참조하세요.   
+- **Configuration Manager를 업그레이드 준비에 연결**: Windows 7 지원이 중지되기 전에 업그레이드 준비를 활용하여 Windows 10 배포를 신속하게 처리합니다. 자세한 내용은 [업그레이드 준비 통합](/sccm/core/clients/manage/upgrade/upgrade-analytics)을 참조하세요.   
 
 #### <a name="windows-10-management-insights-rules"></a>Windows 10 관리 인사이트 규칙
 ![관리 인사이트 - Windows 10에 대한 규칙](./media/Windows-10-insights-group.png)

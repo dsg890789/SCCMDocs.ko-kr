@@ -10,12 +10,12 @@ ms.assetid: a44006eb-8650-49f6-94e1-18fa0ca959ee
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b722187a895a71b4195200354180cdbc8b2813e6
-ms.sourcegitcommit: 12b71da551350c99c5916df3629e33e31040db15
+ms.openlocfilehash: 37ed497a83b3a82cd054683f38239f51940b970a
+ms.sourcegitcommit: a3cec96a771eed69e58a29917d1a3fe1a5fb2e73
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "53530917"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54250632"
 ---
 # <a name="install-and-assign-configuration-manager-windows-10-clients-using-azure-ad-for-authentication"></a>인증을 위해 Azure AD를 사용하여 Configuration Manager Windows 10 클라이언트 설치 및 할당
 
@@ -92,7 +92,7 @@ Azure AD ID를 사용하여 클라이언트를 수동으로 설치하려면 먼�
 
 이 예제는 클라우드 관리 게이트웨이를 사용합니다. 각 속성에 대한 예제 값을 대체합니다. `ccmsetup.exe /mp:https://CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72186325152220500 CCMHOSTNAME=CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72186325152220500 SMSSiteCode=ABC SMSMP=https://mp1.contoso.com AADTENANTID=daf4a1c2-3a0c-401b-966f-0b855d3abd1a AADCLIENTAPPID=7506ee10-f7ec-415a-b415-cd3d58790d97 AADRESOURCEURI=https://contososerver`
 
-Microsoft Intune을 통해 Azure AD ID를 사용하여 클라이언트 설치를 자동화하려면 [공동 관리를 위해 Windows 10 디바이스 준비](/sccm/core/clients/manage/co-management-prepare#command-line-to-install-configuration-manager-client) 프로세스를 참조합니다.
+Microsoft Intune을 통해 Azure AD ID를 사용하여 클라이언트 설치를 자동화하려면 [공동 관리를 위해 인터넷 기반 디바이스를 준비하는 방법](/sccm/comanage/how-to-prepare-win10#install-the-configuration-manager-client)을 참조하세요.
 
 
 

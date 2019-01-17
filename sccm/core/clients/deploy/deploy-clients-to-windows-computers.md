@@ -10,12 +10,12 @@ ms.assetid: 341f0d0b-f907-44cf-9e10-e1b41fc15f82
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 187f876999f39dd1d2d4aa345a7e9037f745a0ed
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.openlocfilehash: 64aca2b4840027226ad6fcba2df0bd62b112f602
+ms.sourcegitcommit: a3cec96a771eed69e58a29917d1a3fe1a5fb2e73
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53418903"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54250785"
 ---
 # <a name="how-to-deploy-clients-to-windows-computers-in-configuration-manager"></a>Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법
 
@@ -331,7 +331,7 @@ Azure AD ID를 사용하는 최신 Windows 10 디바이스에 Configuration Mana
 > [!NOTE]  
 > 기본적으로 클라이언트 소프트웨어가 설치되면 디바이스가 Intune에서 등록 취소됩니다.
 > 
-> 1710 버전부터 클라이언트는 Intune에서 등록 취소하지 않습니다. Configuration Manager 클라이언트와 MDM 등록 모두를 동시에 가질 수 있습니다. 자세한 내용은 [공동 관리 개요](/sccm/core/clients/manage/co-management-overview)를 참조하세요.  
+> 1710 버전부터 클라이언트는 Intune에서 등록 취소하지 않습니다. Configuration Manager 클라이언트와 MDM 등록 모두를 동시에 가질 수 있습니다. 자세한 내용은 [공동 관리 개요](/sccm/comanage/overview)를 참조하세요.  
 
 
 ###  <a name="install-clients-with-intune"></a>Intune을 사용하여 클라이언트 설치  
@@ -343,7 +343,7 @@ Azure AD ID를 사용하는 최신 Windows 10 디바이스에 Configuration Mana
    `CCMSETUPCMD="/MP:<FQDN of management point> SMSMP=<FQDN of management point> SMSSITECODE=<Your site code> DNSSUFFIX=<DNS Suffix of management point>"`  
 
    > [!Note]  
-   > Azure AD 인증을 사용하는 최신 Windows 10 클라이언트를 사용하는 예제 명령줄은 [공동 관리를 위해 Windows 10 디바이스 준비](/sccm/core/clients/manage/co-management-prepare#command-line-to-install-configuration-manager-client)를 참조하세요.  
+   > Azure AD 인증을 사용하는 최신 Windows 10 클라이언트를 사용하는 예제 명령줄은 [공동 관리를 위해 인터넷 기반 디바이스를 준비하는 방법](/sccm/comanage/how-to-prepare-win10#install-the-configuration-manager-client)을 참조하세요.  
 
 3. 등록된 Windows 컴퓨터의 그룹에 [앱을 할당](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune)합니다.  
 

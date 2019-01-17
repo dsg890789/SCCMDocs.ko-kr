@@ -2,7 +2,7 @@
 title: 사용되지 않는 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 더 이상 지원하지 않는 기능에 대해 알아보세요.
-ms.date: 11/27/2018
+ms.date: 12/21/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 287a6324-ae65-4d38-b2ef-198d47c91231
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 089f1f69f8df87b1d4b30cd8df6e735f5c79f312
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.openlocfilehash: 441fb520fcf3e82bd284eb20db44f14cab52224f
+ms.sourcegitcommit: 94bf7d5b5beb9628cc1fdfe75451d33b5de26f8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52455788"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54152471"
 ---
 # <a name="removed-and-deprecated-features-for-configuration-manager"></a>Configuration Manager에서 제거되는 기능과 이후 지원되지 않는 기능
 
@@ -34,11 +34,12 @@ ms.locfileid: "52455788"
 |클라우드 관리 게이트웨이 및 클라우드 배포 지점에 대한 클래식 서비스 배포. 자세한 내용은 [CMG 계획](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#azure-resource-manager)을 참조하세요.|2018년 11월|2019년 7월 1일 이후 릴리스된 첫 번째 버전| 
 |Mac 및 Linux용 System Center Endpoint Protection<br>자세한 내용은 [지원 종료 블로그 게시물](https://go.microsoft.com/fwlink/?linkid=870182)을 참조하세요.|2018년 10월|2018년 12월 31일|
 |하이브리드 모바일 디바이스 관리. 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->|2018년 8월 14일|2019년 9월 1일|
+|Configuration Manager의 비즈니스용 Windows Hello 설정<br>자세한 내용은 [비즈니스용 Windows Hello 설정](/sccm/protect/deploy-use/windows-hello-for-business-settings)을 참조하세요.|2017년 12월|2019년 11월 1일 이후 릴리스된 첫 번째 버전|
 |애플리케이션 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 사용자는 새로운 소프트웨어 센터를 사용해야 합니다. 참고: 애플리케이션 카탈로그 웹 사이트 지점 및 웹 서비스 지점은 그대로 지원됩니다. 일부 시나리오에서는 새로운 소프트웨어 센터가 애플리케이션 카탈로그 웹 사이트 지점과 통신합니다. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요.<!--1358309-->|2017년 8월 11일| 버전 1806|
 |이전 버전의 Software Center입니다.<br><br>새 소프트웨어 센터에 대한 자세한 내용은 [애플리케이션 관리 계획 및 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management##bkmk_userex)을 참조하세요.|2016년 12월 13일|1802 버전|
-|Configuration Manager를 사용한 VHD(가상 하드 디스크) 관리 </br></br>이 사용 중단에은 새 VHD를 만들거나 작업 순서를 사용하여 VHD를 관리하는 옵션의 제거 및 Configuration Manager 콘솔에서 가상 하드 디스크 노드의 제거가 포함됩니다. </br></br>기존 VHD는 삭제되지는 않지만 Configuration Manager 콘솔 내에서 더 이상 액세스할 수 없습니다.  |2017년 1월 6일 |버전 1710|
+|Configuration Manager를 사용한 VHD(가상 하드 디스크) 관리 <br><br>이 사용 중단에은 새 VHD를 만들거나 작업 순서를 사용하여 VHD를 관리하는 옵션의 제거 및 Configuration Manager 콘솔에서 가상 하드 디스크 노드의 제거가 포함됩니다. <br><br>기존 VHD는 삭제되지는 않지만 Configuration Manager 콘솔 내에서 더 이상 액세스할 수 없습니다.  |2017년 1월 6일 |버전 1710|
 |작업 순서: <br /> - 동적 디스크로 변환 <br /> - 배포 도구 설치 |2016년 11월 18일|버전 1710|
-|System Center Configuration Manager 업그레이드 평가 도구. </br></br>업그레이드 평가 도구를 사용하려면 System Center Configuration Manager 및 ACT(Application Compatibility Toolkit) 6.x가 둘 다 필요합니다. ACT의 최종 버전은 Windows 10 v1511 ADK에 함께 제공되었습니다. ACT에 대한 추가 업데이트는 없으므로 업그레이드 평가 도구에 대한 지원은 중단됩니다. </br></br>업그레이드 평가 도구는 [Upgrade Readiness](/sccm/core/clients/manage/upgrade/upgrade-analytics) 기능으로 대체됩니다. 2016년 9월 12일에 사용 고지 사항이 [UAT에 대한 다운로드 페이지](https://www.microsoft.com/download/details.aspx?id=37145)에 추가되었습니다. | 2016년 9월 12일  | 2017년 7월 11일 |
+|System Center Configuration Manager 업그레이드 평가 도구. <br><br>업그레이드 평가 도구를 사용하려면 System Center Configuration Manager 및 ACT(Application Compatibility Toolkit) 6.x가 둘 다 필요합니다. ACT의 최종 버전은 Windows 10 v1511 ADK에 함께 제공되었습니다. ACT에 대한 추가 업데이트는 없으므로 업그레이드 평가 도구에 대한 지원은 중단됩니다. <br><br>업그레이드 평가 도구는 [Upgrade Readiness](/sccm/core/clients/manage/upgrade/upgrade-analytics) 기능으로 대체됩니다. 2016년 9월 12일에 사용 고지 사항이 [UAT에 대한 다운로드 페이지](https://www.microsoft.com/download/details.aspx?id=37145)에 추가되었습니다. | 2016년 9월 12일  | 2017년 7월 11일 |
 |NLB(네트워크 부하 분산) 클러스터 사용 소프트웨어 업데이트 지점 | 2016년 2월 27일 | 버전 1702 | 
 |작업 순서: <br /> - OSDPreserveDriveLetter  <br /><br /> 기본적으로 운영 체제 배포 시 Windows 설치 프로그램이 이제 사용하기에 가장 적합한 드라이브 문자(일반적으로 C:)를 결정합니다. 다른 드라이브를 사용하도록 지정하려면 운영 체제 적용 작업 순서 단계에서 위치를 변경할 수 있습니다. **이 운영 체제를 적용할 위치를 선택하십시오** 설정으로 이동합니다. **특정 논리적 드라이브 문자**를 선택하고 사용하려는 드라이브를 선택합니다. |2016년 6월 20일 |버전 1606 |
 |NAP(네트워크 액세스 보호) - System Center 2012 Configuration Manager에 있음|2015년 7월 10일|버전 1511|  

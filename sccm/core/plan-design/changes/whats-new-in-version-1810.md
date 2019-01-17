@@ -10,12 +10,12 @@ ms.assetid: 4812324b-e6aa-4431-bf1d-9fcd763a8caa
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 050cf81a99f29d24cad6eb13e691e332174627c3
-ms.sourcegitcommit: 54e5786875c4e5f5c1b54e38ed59e96344faf9b4
+ms.openlocfilehash: 60d1c93acc2fcc2c04d09cd8f0ec0c083089a8ec
+ms.sourcegitcommit: a3cec96a771eed69e58a29917d1a3fe1a5fb2e73
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53818024"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54250598"
 ---
 # <a name="whats-new-in-version-1810-of-configuration-manager-current-branch"></a>Configuration Manager 1810 버전의 새로운 기능
 
@@ -123,7 +123,10 @@ Version 1810 drops support for the following products:
 ### <a name="new-client-notification-action-to-wake-up-device"></a>디바이스 절전 모드를 해제하는 새 클라이언트 알림 작업
 <!--1317364--> 클라이언트가 사이트 서버와 동일한 서브넷에 있지 않더라도 Configuration Manager 콘솔에서 클라이언트의 절전 모드를 해제할 수 있습니다. 유지 관리를 수행하거나 디바이스를 쿼리해야 하는 경우 절전 상태의 원격 클라이언트로 인해 제한되지 않습니다. 사이트 서버는 클라이언트 알림 채널을 사용하여 동일한 원격 서브넷에서 깨어 있는 다른 클라이언트를 식별합니다. 그런 다음, 깨어 있는 클라이언트는 wake on LAN 요청(매직 패킷)을 전송합니다.
 
-<!--For more information, see [Plan how to wake up clients](/sccm/core/clients/deploy/plan/plan-wake-up-clients).-->
+### <a name="new-option-to-perform-client-notification-from-devices-node"></a>디바이스 노드에서 클라이언트 알림에서 수행하는 새 옵션
+<!--1317364--> 1810까지 **클라이언트 알림** 옵션은 디바이스 컬렉션 노드에서 또는 디바이스 컬렉션의 멤버 자격을 볼 때만 사용 가능했습니다. 이제 **디바이스** 노드에서 직접 **클라이언트 알림**을 수행할 수 있습니다. 더는 컬렉션 멤버 자격 보기 내에 있을 필요가 없습니다. 
+
+자세한 내용은 [클라이언트 알림](/sccm/core/clients/manage/client-notification)을 참조하세요.
 
 
 ### <a name="improvements-to-collection-evaluation"></a>컬렉션 평가의 개선 사항
@@ -169,7 +172,7 @@ Version 1810 drops support for the following products:
 
 ![상위 4개의 타일을 보여 주는 공동 관리 대시보드 스크린샷](media/1358980-comgmt-dashboard.png)
 
-자세한 내용은 [공동 관리 대시보드](/sccm/core/clients/manage/co-management-dashboard)를 참조하세요.
+자세한 내용은 [공동 관리 대시보드](/sccm/comanage/how-to-monitor#co-management-dashboard)를 참조하세요.
 
 
 

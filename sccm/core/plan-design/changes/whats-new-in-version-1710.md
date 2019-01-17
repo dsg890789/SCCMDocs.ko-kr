@@ -10,12 +10,12 @@ ms.assetid: bc6c3e5f-b9e2-400e-9d9d-446ff93c520c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 821c7f32799020948630cd873fead144ae21e39e
-ms.sourcegitcommit: fe279229a90fdc8cddbb13c7ffdbbb22af0e25ef
+ms.openlocfilehash: 4dcf5ce0c31f72db1e6af3ac9e024c83afe92337
+ms.sourcegitcommit: a3cec96a771eed69e58a29917d1a3fe1a5fb2e73
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47229265"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54250666"
 ---
 # <a name="what39s-new-in-version-1710-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1710의 새로운 기능
 
@@ -64,7 +64,7 @@ Version 1710 drops support for the following products:
 ## <a name="client-management"></a>클라이언트 관리
 
 ### <a name="co-management-for-windows-10-devices"></a>Windows 10 디바이스의 공동 관리    
-<!-- 1350871 -->이전 Windows 10 업데이트에서 Windows 10 장치를 온-프레미스 AD(Active Directory)와 클라우드 기반 Azure AD에 동시에 조인할 수 있습니다(하이브리드 Azure AD). Configuration Manager 버전 1710부터 공동 관리에서는 이러한 향상된 기능을 통해 Configuration Manager 및 Intune을 모두 사용하여 Windows 10 버전 1709(Fall Creators Update라고도 함) 디바이스를 동시에 관리할 수 있습니다. 이것은 기존 관리에서 최신 관리에 대한 연결을 제공하고 단계별 접근 방법을 사용하여 전환할 수 있는 경로를 제공하는 솔루션입니다. 자세한 내용은 [Windows 10 디바이스의 공동 관리](/sccm/core/clients/manage/co-management-overview)를 참조하세요.
+<!-- 1350871 -->이전 Windows 10 업데이트에서 Windows 10 장치를 온-프레미스 AD(Active Directory)와 클라우드 기반 Azure AD에 동시에 조인할 수 있습니다(하이브리드 Azure AD). Configuration Manager 버전 1710부터 공동 관리에서는 이러한 향상된 기능을 통해 Configuration Manager 및 Intune을 모두 사용하여 Windows 10 버전 1709(Fall Creators Update라고도 함) 디바이스를 동시에 관리할 수 있습니다. 이것은 기존 관리에서 최신 관리에 대한 연결을 제공하고 단계별 접근 방법을 사용하여 전환할 수 있는 경로를 제공하는 솔루션입니다. 자세한 내용은 [Windows 10 디바이스의 공동 관리](/sccm/comanage/overview)를 참조하세요.
 
 ### <a name="restart-computers-from-the-configuration-manager-console-----1356283---"></a>Configuration Manager 콘솔에서 컴퓨터 다시 시작 <!-- 1356283 -->
 이 릴리스부터 Configuration Manager 콘솔을 사용하여 다시 시작해야 하는 클라이언트 디바이스를 식별한 다음 클라이언트 알림 작업을 통해 해당 디바이스를 다시 시작할 수 있습니다.
@@ -87,9 +87,9 @@ Version 1710 drops support for the following products:
 스크립트 실행에 대한 자세한 내용은 [스크립트 만들기 및 실행](../../../apps/deploy-use/create-deploy-scripts.md)을 참조하세요.
 
 ### <a name="new-mobile-application-management-policy-settings"></a>새 모바일 애플리케이션 관리 정책 설정
-<!-- 1324760 -->모바일 응용 프로그램 관리 정책 설정에 다음과 같은 설정이 추가되었습니다.
-- **연락처 동기화 사용 안 함:** 앱에서 장치의 네이티브 연락처 앱에 데이터를 저장하지 않도록 방지합니다.
-- **인쇄 사용 안 함:** 앱에서 회사 또는 학교 데이터를 인쇄하지 않도록 방지합니다.
+<!-- 1324760 -->모바일 애플리케이션 관리 정책 설정에 다음과 같은 설정이 추가되었습니다.
+- **연락처 동기화 사용 안 함**: 앱에서 디바이스의 네이티브 연락처 앱에 데이터를 저장하지 않도록 방지합니다.
+- **인쇄 사용 안 함**: 앱에서 회사 또는 학교 데이터를 인쇄하지 않도록 방지합니다.
 
 ### <a name="software-center-no-longer-distorts-icons-larger-than-250x250"></a>소프트웨어 센터는 더 이상 250x250보다 큰 아이콘을 왜곡하지 않음  
 <!-- 1356194 -->
@@ -145,7 +145,7 @@ Version 1710 drops support for the following products:
 
 이러한 시나리오는 다음과 같습니다.
 
-- [장치 등록](../../../mdm/deploy-use/enroll-hybrid-windows.md)
+- [디바이스 등록](../../../mdm/deploy-use/enroll-hybrid-windows.md)
 - [원격 전체 및 선택적 초기화 작업 수행](../../../mdm/deploy-use/wipe-lock-reset-devices.md)
 - [구성 항목 및 기준을 통해 설정 관리](../../../mdm/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)
 - [규정 준수 정책](../../../mdm/deploy-use/device-compliance-policies.md) 및 [조건부 액세스](../../../protect/deploy-use/manage-access-to-services.md)
@@ -155,10 +155,10 @@ Version 1710 drops support for the following products:
    - [Wi-Fi 프로필](../../../mdm/deploy-use/create-wifi-profiles.md)
    - [메일 프로필](../../../mdm/deploy-use/create-exchange-activesync-profiles.md)
 - [비즈니스용 Windows Hello 정책 구성](../../../mdm/deploy-use/windows-hello-for-business-settings.md)
-- [응용 프로그램 관리](../../../mdm/deploy-use/management-tasks-applications.md)
+- [애플리케이션 관리](../../../mdm/deploy-use/management-tasks-applications.md)
 
 > [!NOTE]
-> 여러 아키텍처용으로 빌드된 .appxbundle 응용 프로그램을 배포하면 이들 디바이스에서 작동하지 않을 수 있으며, 현재 이 시나리오는 지원되지 않습니다.
+> 여러 아키텍처용으로 빌드된 .appxbundle 애플리케이션을 배포하면 이들 장치에서 작동하지 않을 수 있으며, 현재 이 시나리오는 지원되지 않습니다.
 
 ### <a name="improved-vpn-profile-experience-in-configuration-manager-console"></a>Configuration Manager 콘솔의 VPN 프로필 환경 개선 
 <!-- 1318232 -->
@@ -179,9 +179,9 @@ Version 1710 drops support for the following products:
 
 자세한 내용은 [System Center Configuration Manager의 모바일 디바이스에 대한 VPN 프로필](../../../mdm/deploy-use/create-vpn-profiles.md)을 참조하세요.
 
-### <a name="limited-support-for-cryptography-next-generation-cng-certificates----1356191---"></a>CNG(Cryptography: Next Generation) 인증서에 대한 제한된 지원 <!-- 1356191 -->
+### <a name="limited-support-for-cryptography-next-generation-cng-certificates----1356191---"></a>Cryptography: Next Generation(CNG) 인증서에 대한 제한적 지원 <!-- 1356191 -->
 
-Configuration Manager는 CNG(Cryptography: Next Generation) 인증서를 제한적으로 지원합니다. Configuration Manager 클라이언트는 CNG KSP(키 스토리지 공급자)의 개인 키와 함께 PKI 클라이언트 인증 인증서를 사용할 수 있습니다. Configuration Manager 클라이언트는 KSP 지원을 통해 PKI 클라이언트 인증 인증서용 TPM KSP와 같은 하드웨어 기반 개인 키를 지원합니다.
+Configuration Manager는 Cryptography: Next Generation(CNG) 인증서를 지원합니다. Configuration Manager 클라이언트는 CNG KSP(키 스토리지 공급자)의 개인 키와 함께 PKI 클라이언트 인증 인증서를 사용할 수 있습니다. Configuration Manager 클라이언트는 KSP 지원을 통해 PKI 클라이언트 인증 인증서용 TPM KSP와 같은 하드웨어 기반 개인 키를 지원합니다.
 
 자세한 내용은 [CNG 인증서 개요](../network/cng-certificates-overview.md)를 참조하세요.
 
@@ -201,7 +201,7 @@ Configuration Manager 엔드포인트 보호를 사용하여 [Windows Defender A
 <!-- 1355092 -->Device Guard 정책과 관련하여 다음 세 가지 항목이 변경되었습니다.
 
 - Device Guard 정책의 이름이 Windows Defender 애플리케이션 제어 정책으로 바뀌었습니다. 예를 들어 **Device Guard 정책 만들기 마법사**의 이름이 이제는 **Windows Defender 애플리케이션 제어 정책 만들기 마법사**입니다.
-- Windows용 Fall Creators Update 버전 1709를 사용하는 디바이스는 Windows Defender 응용 프로그램 제어 정책을 적용하기 위해 다시 시작할 필요가 없습니다. 다시 시작은 여전히 기본값이지만 [다시 시작을 해제](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)할 수 있습니다.
+- Windows용 Fall Creators Update 버전 1709를 사용하는 장치는 Windows Defender 애플리케이션 제어 정책을 적용하기 위해 다시 시작할 필요가 없습니다. 다시 시작은 여전히 기본값이지만 [다시 시작을 해제](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)할 수 있습니다.
 - Intelligent Security Graph에서 신뢰할 수 있는 [소프트웨어를 자동으로 실행하도록 디바이스를 설정](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)할 수 있습니다.
 
 

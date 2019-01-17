@@ -10,12 +10,12 @@ ms.assetid: 0249dbd3-1e85-4d05-a9e5-420fbe44d850
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e5fd7c26c190407ba5e497068582704b03c71f00
-ms.sourcegitcommit: 8791bb9be477fe6a029e8a7a76e2ca310acd92e0
+ms.openlocfilehash: fe8fb2a8138433d00686530f76916a1ee4e88dac
+ms.sourcegitcommit: a3cec96a771eed69e58a29917d1a3fe1a5fb2e73
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50411513"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54250802"
 ---
 # <a name="whats-new-in-version-1806-of-configuration-manager-current-branch"></a>Configuration Manager 1806 버전의 새로운 기능
 
@@ -57,7 +57,7 @@ Version 1806 drops support for the following products:
 ## <a name="site-infrastructure"></a>사이트 인프라
 
 ### <a name="cmpivot"></a>CMPivot
-<!--1358456--> Configuration Manager는 고객이 보고용으로 사용하는 장치 데이터의 대규모 중앙 저장소를 항상 제공해왔습니다. 이 사이트는 일반적으로 매주 이 데이터를 수집합니다. CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스할 수 있는 새로운 콘솔 내 유틸리티입니다. 이 유틸리티는 대상 컬렉션에서 현재 연결된 모든 디바이스에 대해 바로 쿼리를 실행하고 결과를 반환합니다. 그러면 도구에서 이 데이터를 필터링하고 그룹화할 수 있습니다. 온라인 클라이언트에서 실시간 데이터를 제공함으로써 비즈니스 질문에 신속하게 대답하고 문제를 해결하며 보안 인시던트에 응답할 수 있습니다. 
+<!--1358456--> Configuration Manager는 고객이 보고용으로 사용하는 디바이스 데이터의 대규모 중앙 저장소를 항상 제공해왔습니다. 이 사이트는 일반적으로 매주 이 데이터를 수집합니다. CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스할 수 있는 새로운 콘솔 내 유틸리티입니다. 이 유틸리티는 대상 컬렉션에서 현재 연결된 모든 디바이스에 대해 바로 쿼리를 실행하고 결과를 반환합니다. 그러면 도구에서 이 데이터를 필터링하고 그룹화할 수 있습니다. 온라인 클라이언트에서 실시간 데이터를 제공함으로써 비즈니스 질문에 신속하게 대답하고 문제를 해결하며 보안 인시던트에 응답할 수 있습니다. 
 
 자세한 내용은 [CMPivot](/sccm/core/servers/manage/cmpivot)을 참조하세요.  
 
@@ -98,7 +98,7 @@ Version 1806 drops support for the following products:
 ## <a name="content-management"></a>콘텐츠 관리
 
 ### <a name="configure-a-remote-content-library-for-the-site-server"></a>사이트 서버에 대해 원격 콘텐츠 라이브러리 구성
-<!--1357525--> 사이트 서버 고가용성을 구성하거나 중앙 관리 또는 기본 사이트 서버에서 하드 드라이브 공간을 확보하기 위해 다른 저장소 위치로 콘텐츠 라이브러리를 이동합니다. 별도의 서버인 사이트 서버의 다른 드라이브 또는 SAN(스토리지 영역 네트워크)의 내결함성 디스크로 콘텐츠 라이브러리를 이동합니다. 
+<!--1357525--> 사이트 서버 고가용성을 구성하거나 중앙 관리 또는 기본 사이트 서버에서 하드 드라이브 공간을 확보하기 위해 다른 스토리지 위치로 콘텐츠 라이브러리를 이동합니다. 별도의 서버인 사이트 서버의 다른 드라이브 또는 SAN(스토리지 영역 네트워크)의 내결함성 디스크로 콘텐츠 라이브러리를 이동합니다. 
 
 자세한 내용은 다음 아티클을 참조하세요. 
 - [콘텐츠 라이브러리](/sccm/core/plan-design/hierarchy/the-content-library)
@@ -169,7 +169,7 @@ Version 1806 drops support for the following products:
 
 
 ### <a name="azure-ad-device-identity"></a>Azure AD 디바이스 ID 
-<!--1358460--> Azure AD 사용자가 로그인되지 않은 [Azure AD 조인](https://docs.microsoft.com/azure/active-directory/device-management-introduction#azure-ad-joined-devices) 또는 [하이브리드 Azure AD 장치](https://docs.microsoft.com/azure/active-directory/device-management-introduction#hybrid-azure-ad-joined-devices)에서 할당된 사이트와 안전하게 통신할 수 있습니다. 이제 클라우드 기반 디바이스 ID만 있으면 CMG 및 관리 지점을 인증하는 데 충분합니다.  
+<!--1358460--> Azure AD 사용자가 로그인되지 않은 [Azure AD 조인](https://docs.microsoft.com/azure/active-directory/device-management-introduction#azure-ad-joined-devices) 또는 [하이브리드 Azure AD 디바이스](https://docs.microsoft.com/azure/active-directory/device-management-introduction#hybrid-azure-ad-joined-devices)에서 할당된 사이트와 안전하게 통신할 수 있습니다. 이제 클라우드 기반 디바이스 ID만 있으면 CMG 및 관리 지점을 인증하는 데 충분합니다.  
 
 자세한 내용은 [고급 HTTP](/sccm/core/plan-design/hierarchy/enhanced-http)를 참조하세요.
 
@@ -197,7 +197,7 @@ Version 1806 drops support for the following products:
 #### <a name="simplified-client-bootstrap-command-line"></a>간소화된 클라이언트 부트스트랩 명령줄
 <!--1358215--> CMG를 통해 Configuration Manager 클라이언트를 인터넷에 설치할 때 명령줄에 필요한 속성이 적어졌습니다. 이를 통해 공동 관리를 준비할 때 Microsoft Intune에서 명령줄 크기가 줄어듭니다. 
 
-자세한 내용은 [공동 관리를 위해 Windows 10 디바이스 준비](/sccm/core/clients/manage/co-management-prepare#command-line-to-install-configuration-manager-client)를 참조하세요.
+자세한 내용은 [공동 관리를 위해 인터넷 기반 디바이스를 준비하는 방법](/sccm/comanage/how-to-prepare-win10#install-the-configuration-manager-client)을 참조하세요.
 
 #### <a name="download-content-from-a-cmg"></a>CMG에서 콘텐츠 다운로드
 <!--1358651--> 이전에 클라우드 배포 지점 및 CMG를 별도 역할로 배포해야 했습니다. CMG도 이제 클라이언트에 콘텐츠를 서비스합니다. 이 기능은 필요한 인증서 및 Azure VM 비용을 줄여줍니다. 
@@ -212,29 +212,29 @@ Version 1806 drops support for the following products:
 ## <a name="co-management"></a>공동 관리
 
 ### <a name="sync-mdm-policy-from-microsoft-intune-for-a-co-managed-device"></a>Microsoft Intune에서 공동 관리하는 디바이스에 대한 MDM 정책 동기화
-<!--1357377-->공동 관리 워크로드를 전환할 경우 공동 관리되는 장치는 Microsoft Intune에서 자동으로 MDM 정책을 동기화합니다. 이 동기화는 Configuration Manager 콘솔의 클라이언트 알림에서 **컴퓨터 정책 다운로드** 작업 시작할 때 발생합니다. 
+<!--1357377-->공동 관리 워크로드를 전환할 경우 공동 관리되는 디바이스는 Microsoft Intune에서 자동으로 MDM 정책을 동기화합니다. 이 동기화는 Configuration Manager 콘솔의 클라이언트 알림에서 **컴퓨터 정책 다운로드** 작업 시작할 때 발생합니다. 
 
-자세한 내용은 [Configuration Manager 워크로드를 Intune으로 전환](/sccm/core/clients/manage/co-management-switch-workloads)을 참조하세요.
+자세한 내용은 [Configuration Manager 워크로드를 Intune으로 전환하는 방법](/sccm/comanage/how-to-switch-workloads)을 참조하세요.
 
 
 ### <a name="transition-new-workloads-to-intune-using-co-management"></a>공동 관리를 사용하여 새 워크로드를 Intune으로 전환 
 이제 공동 관리를 사용하도록 설정한 후 다음 워크로드를 Configuration Manager에서 Intune으로 전환할 수 있습니다.  
 
-- **장치 구성** <!--1357903-->: 이 워크로드를 통해 Intune을 사용하여 MDM 정책을 배포할 수 있지만 응용 프로그램 배포에는 Configuration Manager를 계속 사용할 수 있습니다.  
+- **디바이스 구성**<!--1357903-->: 이 워크로드를 통해 Intune을 사용하여 MDM 정책을 배포할 수 있지만 애플리케이션 배포에는 Configuration Manager를 계속 사용할 수 있습니다.  
 
-- **Office 365**<!--1357841-->: 장치는Configuration Manager에서 Office 365 배포를 설치하지 않습니다.  
+- **Office 365**<!--1357841-->: 디바이스는Configuration Manager에서 Office 365 배포를 설치하지 않습니다.  
 
 - **모바일 앱**<!--1357892-->: Intune에서 배포된 사용 가능한 모든 앱을 회사 포털에서 사용할 수 있습니다. Configuration Manager에서 배포하는 앱은 소프트웨어 센터에서 사용할 수 있습니다. 이것은 [시험판 기능](/sccm/core/servers/manage/pre-release-features)입니다.  
 
 이러한 워크로드를 전환하려면 공동 관리 속성 페이지로 이동하고 워크로드 슬라이더 막대를 Configuration Manager에서 **파일럿** 또는 **모두**로 이동합니다. 
 
-자세한 내용은 [Windows 10 디바이스의 공동 관리](/sccm/core/clients/manage/co-management-overview)를 참조하세요.
+자세한 내용은 [Windows 10 디바이스의 공동 관리](/sccm/comanage/overview)를 참조하세요.
 
 
 ### <a name="support-for-multiple-hierarchies-to-one-intune-tenant"></a>하나의 Intune 테넌트에 대한 여러 계층 구조 지원
 <!--1357944--> 어떤 고객은 여러 Configuration Manager 계층 구조가 있고 향후 Azure Active Directory 및 Microsoft Intune에 대한 단일 테넌트로 통합하고자 합니다. 이제 공동 관리에서 동일한 Intune 테넌트에 대해 여러 Configuration Manager 환경을 지원합니다.
 
-자세한 내용은 [공동 관리를 위해 Windows 10 디바이스 준비](/sccm/core/clients/manage/co-management-prepare)를 참조하세요.
+자세한 내용은 [공동 관리 필수 구성 요소](/sccm/comanage/overview#prerequisites)를 참조하세요.
  
 
 
@@ -259,7 +259,7 @@ Version 1806 drops support for the following products:
 ## <a name="application-management"></a>애플리케이션 관리
 
 ### <a name="phased-deployment-of-applications"></a>애플리케이션의 단계적 배포
-<!--1358147--> 응용 프로그램에 대한 단계적 배포를 만듭니다. 단계적 배포에서는 사용자 지정 가능한 조건 및 그룹에 따라 소프트웨어 출시를 조정하고 순차적으로 진행할 수 있습니다. 예를 들어, 파일럿 컬렉션에 애플리케이션을 배포한 다음, 성공 조건에 따라 출시를 자동으로 계속합니다. 
+<!--1358147--> 애플리케이션에 대한 단계적 배포를 만듭니다. 단계적 배포에서는 사용자 지정 가능한 조건 및 그룹에 따라 소프트웨어 출시를 조정하고 순차적으로 진행할 수 있습니다. 예를 들어, 파일럿 컬렉션에 애플리케이션을 배포한 다음, 성공 조건에 따라 출시를 자동으로 계속합니다. 
 
 자세한 내용은 다음 아티클을 참조하세요.  
 
@@ -269,7 +269,7 @@ Version 1806 drops support for the following products:
 
 
 ### <a name="provision-windows-app-packages-for-all-users-on-a-device"></a>디바이스의 모든 사용자에 대해 Windows 앱 패키지 프로비전
-<!--1358310--> 장치에서 모든 사용자에 대한 Windows 앱 패키지를 사용하여 응용 프로그램을 프로비전합니다. 이 시나리오의 일반적인 한 예는 Minecraft 교육용 버전처럼 비즈니스 및 교육용 Microsoft Store에서 앱을 학교에서 학생들이 사용하는 모든 디바이스에 프로비전하는 것입니다. 전에 Configuration Manager는 사용자 당 이러한 애플리케이션 설치만 지원했습니다. 새 디바이스에 로그인한 후 학생은 앱에 액세스하기를 기다려야 합니다. 앱이 모든 사용자용 디바이스에 프로비전되는 경우 더 신속하게 생산적이 될 수 있습니다. 
+<!--1358310--> 장치에서 모든 사용자에 대한 Windows 앱 패키지를 사용하여 애플리케이션을 프로비전합니다. 이 시나리오의 일반적인 한 예는 Minecraft 교육용 버전처럼 비즈니스 및 교육용 Microsoft Store의 앱을 학교에서 학생들이 사용하는 모든 디바이스에 프로비전하는 것입니다. 전에 Configuration Manager는 사용자 당 이러한 애플리케이션 설치만 지원했습니다. 새 디바이스에 로그인한 후 학생은 앱에 액세스하기를 기다려야 합니다. 앱이 모든 사용자용 디바이스에 프로비전되는 경우 더 신속하게 생산적이 될 수 있습니다. 
 
 자세한 내용은 [Windows 애플리케이션 만들기](/sccm/apps/get-started/creating-windows-applications#bkmk_provision)를 참조하세요.
 
@@ -287,7 +287,7 @@ Version 1806 drops support for the following products:
 
 
 ### <a name="uninstall-application-on-approval-revocation"></a>승인 취소 시 애플리케이션 제거
-<!--1357891-->응용 프로그램 승인 취소 시의 동작이 변경되었습니다. 이제 응용 프로그램에 대한 요청을 거부하면 클라이언트가 사용자 디바이스에서 응용 프로그램을 제거합니다. 이를 위해서는 [선택적 기능](https://docs.microsoft.com/en-us/sccm/core/servers/manage/install-in-console-updates#bkmk_options)인 **장치당 사용자에 대한 응용 프로그램 요청 승인**을 사용하도록 설정해야 합니다. 
+<!--1357891-->애플리케이션 승인 취소 시의 동작이 변경되었습니다. 이제 애플리케이션에 대한 요청을 거부하면 클라이언트가 사용자 장치에서 애플리케이션을 제거합니다. 이를 위해서는 [선택적 기능](https://docs.microsoft.com/en-us/sccm/core/servers/manage/install-in-console-updates#bkmk_options)인 **장치당 사용자에 대한 애플리케이션 요청 승인**을 사용하도록 설정해야 합니다. 
 
 자세한 내용은 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications#bkmk_approval)를 참조하세요.
 
@@ -387,18 +387,18 @@ Version 1806 drops support for the following products:
 
 
 ### <a name="software-center-infrastructure-improvements"></a>소프트웨어 센터 인프라 개선 사항
-<!--1358309--> 소프트웨어 센터에 사용자가 사용할 수 있는 응용 프로그램을 표시하는 데 더 이상 응용 프로그램 카탈로그 역할이 필요하지 않습니다. 이 변경은 사용자에게 애플리케이션을 전달하기 위해 필요한 서버 인프라를 줄일 수 있습니다. 소프트웨어 센터는 [경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups#management-points)에 할당하여 대규모 환경의 크기 조정을 더 잘하도록 도움을 주는 이 정보를 얻으려면 관리 지점에 의존합니다.
+<!--1358309--> 소프트웨어 센터에 사용자가 사용할 수 있는 애플리케이션을 표시하는 데 더 이상 애플리케이션 카탈로그 역할이 필요하지 않습니다. 이 변경은 사용자에게 애플리케이션을 전달하기 위해 필요한 서버 인프라를 줄일 수 있습니다. 소프트웨어 센터는 [경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups#management-points)에 할당하여 대규모 환경의 크기 조정을 더 잘하도록 도움을 주는 이 정보를 얻으려면 관리 지점에 의존합니다.
 
 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요.  
 
 > [!Note]  
-> 응용 프로그램 카탈로그 웹 사이트 지점 및 웹 서비스 지점은 1806에서 더 이상 *필요하지 않지만* *지원은 계속*됩니다. 
+> 애플리케이션 카탈로그 웹 사이트 지점 및 웹 서비스 지점은 1806에서 더 이상 *필요하지 않지만**지원은 계속*됩니다. 
 > 
 > 애플리케이션 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
 
 
 ### <a name="specify-the-visibility-of-the-application-catalog-website-link-in-software-center"></a>소프트웨어 센터에서 애플리케이션 카탈로그 웹 사이트 링크의 표시 여부 지정 
-<!--1358214--> 소프트웨어 센터의 **설치 상태** 노드에 **응용 프로그램 카탈로그 웹 사이트 열기** 링크를 표시할지 여부를 제어할 수 있습니다.  
+<!--1358214--> 소프트웨어 센터의 **설치 상태** 노드에 **애플리케이션 카탈로그 웹 사이트 열기** 링크를 표시할지 여부를 제어할 수 있습니다.  
 
 자세한 내용은 [소프트웨어 센터 클라이언트 설정](/sccm/core/clients/deploy/about-client-settings#software-center)을 참조하세요.
 
@@ -434,7 +434,7 @@ Version 1806 drops support for the following products:
 
 
 ### <a name="deploy-software-updates-without-content"></a>콘텐츠 없이 소프트웨어 업데이트 배포
-<!--1357933--> 콘텐츠를 배포 지점에 처음 다운로드하여 배포하지 않고 장치에 소프트웨어 업데이트를 배포합니다. 이 기능은 매우 큰 업데이트 콘텐츠를 처리할 때 또는 항상 클라이언트가 Microsoft 업데이트 클라우드 서비스에서 콘텐츠를 가져오려 할 때 유용합니다. 이 시나리오에서 클라이언트는 이미 필요한 콘텐츠가 있는 피어로부터 콘텐츠를 다운로드할 수 있습니다. Configuration Manager 클라이언트는 계속 콘텐츠 다운로드를 관리하므로 Configuration Manager 피어 캐시 기능 또는 배달 최적화 같은 다른 기술을 활용할 수 있습니다. 이 기능은 Windows 및 Office 업데이트를 포함하여 Configuration Manager 소프트웨어 업데이트 관리에서 지원하는 모든 업데이트 유형을 지원합니다. 
+<!--1357933--> 콘텐츠를 배포 지점에 처음 다운로드하여 배포하지 않고 디바이스에 소프트웨어 업데이트를 배포합니다. 이 기능은 매우 큰 업데이트 콘텐츠를 처리할 때 또는 항상 클라이언트가 Microsoft 업데이트 클라우드 서비스에서 콘텐츠를 가져오려 할 때 유용합니다. 이 시나리오에서 클라이언트는 이미 필요한 콘텐츠가 있는 피어로부터 콘텐츠를 다운로드할 수 있습니다. Configuration Manager 클라이언트는 계속 콘텐츠 다운로드를 관리하므로 Configuration Manager 피어 캐시 기능 또는 배달 최적화 같은 다른 기술을 활용할 수 있습니다. 이 기능은 Windows 및 Office 업데이트를 포함하여 Configuration Manager 소프트웨어 업데이트 관리에서 지원하는 모든 업데이트 유형을 지원합니다. 
 
 자세한 내용은 [수동으로 소프트웨어 배포](/sccm/sum/deploy-use/manually-deploy-software-updates) 또는 [소프트웨어 업데이트 자동 배포](/sccm/sum/deploy-use/automatically-deploy-software-updates) 시 **배포 패키지 없음** 옵션을 참조하세요.
 
@@ -486,7 +486,7 @@ Version 1806 drops support for the following products:
 ## <a name="configuration-manager-console"></a>Configuration Manager 콘솔
 
 ### <a name="product-lifecycle-dashboard"></a>제품 수명 주기 대시보드
-<!--1319632--> 제품 수명 주기 대시보드에는 Configuration Manager로 관리되는 장치에 설치된 Microsoft 제품에 대한 Microsoft 수명 주기 정책의 상태가 표시됩니다. 또한 사용자 환경의 Microsoft 제품, 지원 가능성 상태 및 지원 종료 날짜에 대한 정보도 제공합니다. 대시보드를 사용하여 각 제품에 대한 지원 가용성을 파악합니다. 이 정보는 현재 지원 종료에 도달하기 전에 사용하는 Microsoft 제품을 업데이트할 시기를 계획하는 데 도움이 됩니다.   
+<!--1319632--> 제품 수명 주기 대시보드에는 Configuration Manager로 관리되는 디바이스에 설치된 Microsoft 제품에 대한 Microsoft 수명 주기 정책의 상태가 표시됩니다. 또한 사용자 환경의 Microsoft 제품, 지원 가능성 상태 및 지원 종료 날짜에 대한 정보도 제공합니다. 대시보드를 사용하여 각 제품에 대한 지원 가용성을 파악합니다. 이 정보는 현재 지원 종료에 도달하기 전에 사용하는 Microsoft 제품을 업데이트할 시기를 계획하는 데 도움이 됩니다.   
 
 자세한 내용은 [제품 수명 주기 대시보드](/sccm/core/clients/manage/asset-intelligence/product-lifecycle-dashboard)를 참조하세요.
 
@@ -508,9 +508,9 @@ Version 1806 drops support for the following products:
 
 - 특정 그래프 섹션을 선택하면 이제 Surface 대시보드에 관련 디바이스 목록이 표시됩니다.  
 
-   - **Surface 장치 비율** 타일을 클릭하면 Surface 장치 목록이 열립니다.  
+   - **Surface 디바이스 비율** 타일을 클릭하면 Surface 디바이스 목록이 열립니다.  
 
-   - **상위 5개 펌웨어 버전** 타일에서 막대를 클릭하면 해당 특정 펌웨어 버전으로 Surface 장치 목록이 열립니다.  
+   - **상위 5개 펌웨어 버전** 타일에서 막대를 클릭하면 해당 특정 펌웨어 버전으로 Surface 디바이스 목록이 열립니다.  
 
 - Surface 대시보드에서 이러한 디바이스 목록을 볼 때 디바이스를 마우스 오른쪽 단추로 클릭하고 일반 작업을 수행합니다.  
 
@@ -518,7 +518,7 @@ Version 1806 drops support for the following products:
 
 
 ### <a name="view-the-currently-signed-on-user-for-a-device"></a>디바이스에 현재 로그온한 사용자 보기
-<!--1358202--> 기본적으로 **자산 및 준수** 작업 영역의 **장치** 노드는 **현재 로그온한 사용자**에 대한 열을 표시합니다. 컬렉션 특정 디바이스 목록도 표시됩니다. 이 값은 [클라이언트 상태](/sccm/core/clients/manage/monitor-clients#bkmk_indStatus)만큼 최신 상태입니다. 사용자가 로그오프하면 클라이언트가 이 값을 지웁니다. 로그온한 사용자가 없으면 값이 비어 있습니다. 
+<!--1358202--> 기본적으로 **자산 및 준수** 작업 영역의 **디바이스** 노드는 **현재 로그온한 사용자**에 대한 열을 표시합니다. 컬렉션 특정 디바이스 목록도 표시됩니다. 이 값은 [클라이언트 상태](/sccm/core/clients/manage/monitor-clients#bkmk_indStatus)만큼 최신 상태입니다. 사용자가 로그오프하면 클라이언트가 이 값을 지웁니다. 로그온한 사용자가 없으면 값이 비어 있습니다. 
 
 자세한 내용은 [1806 버전의 콘솔 향상](/sccm/core/servers/manage/admin-console#console-improvements-in-version-1806)을 참조하세요.
 

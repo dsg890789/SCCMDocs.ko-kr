@@ -2,7 +2,7 @@
 title: UUP 미리 보기
 titleSuffix: Configuration Manager
 description: UUP 통합 미리 보기 지침
-ms.date: 01/04/2018
+ms.date: 01/14/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 robots: noindex,nofollow
-ms.openlocfilehash: cfc83f4d076a05ea1847c0d073bd824ad10aa731
-ms.sourcegitcommit: 1bf26b83fa7da637d299a21e1d3bc61f2d7d8c10
+ms.openlocfilehash: 17a9abf2f20f53ba69ad160db421be51471cc311
+ms.sourcegitcommit: 27b2594087e8c54062db6b2a30ab843bab17f8cc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060385"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270463"
 ---
 # <a name="uup-private-preview-instructions"></a>UUP 비공개 미리 보기 지침
 
@@ -160,8 +160,8 @@ UUP 업데이트를 동기화하고 사용해 볼 준비가 되면 WSUS에서 �
 
 5. WSUS 서버가 미리 보기에 추가되면 **제품** 탭에 두 개의 새 제품이 표시됩니다. 이러한 제품에는 미리 보기 UUP 콘텐츠가 포함되어 있습니다.  
 
-    - **Windows 10 UUP 파일럿**: Windows 워크스테이션 UUP 업데이트  
-    - **Windows Server 2016 UUP**: Windows Server UUP 업데이트  
+    - **Windows 10 UUP 미리 보기**  
+    - **Windows Server UUP 미리 보기**  
 
 6. **분류** 탭에서 다음을 선택합니다.  
 
