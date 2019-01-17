@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: db97ae9e-34f4-4e10-a282-cd211f612bb4
-ms.openlocfilehash: f7c0f0d9dc52c39e0ec33abb8df565d4918471f7
-ms.sourcegitcommit: 54e5786875c4e5f5c1b54e38ed59e96344faf9b4
+ms.openlocfilehash: 3f7d880f7e220966a9baa71ac6ad9286a398ffaa
+ms.sourcegitcommit: d5c013a29f53b975fe3a6cb0a41f1e817bd7b235
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53818041"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54342859"
 ---
 # <a name="prepare-intune-for-user-migration"></a>사용자 마이그레이션을 위한 Intune 준비 
 
@@ -50,7 +50,7 @@ Intune 독립 실행형에서는 각 사용자에 대 한 Intune 라이선스를
 - [정책 할당](https://docs.microsoft.com/intune/get-started-policies)  
 - [프로필 할당](https://docs.microsoft.com/intune/device-profile-assign)  
     > [!NOTE]  
-    > 새 전자 메일 프로필을 배포 하는 Intune에서 사용자가 자신의 암호를 다시 입력 하 라는 메시지가 수신 합니다.  
+    > 새 전자 메일 프로필을 배포 하는 Intune에서 사용자가 자신의 암호를 다시 입력 하 라는 메시지가 수신 합니다. 이 동작은 사용자의 장치에서 다시 다운로드할 되는 전자 메일에서 발생 합니다. 사용자가 완료 된 모든 사용자 지정 수정을 다시 수행 해야 합니다. 
 - [앱 할당](https://docs.microsoft.com/intune/get-started-apps) 
 
 ## <a name="terms-and-conditions-policy"></a>사용 약관 정책

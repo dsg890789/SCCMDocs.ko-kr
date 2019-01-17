@@ -2,7 +2,7 @@
 title: 지원되는 사이트 시스템 서버
 titleSuffix: Configuration Manager
 description: Configuration Manager 사이트 또는 사이트 시스템 역할을 호스트하는 데 사용할 수 있는 Windows 버전을 알아봅니다.
-ms.date: 11/27/2018
+ms.date: 01/15/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 17905b4c-3895-4ad4-a69c-5e0d0fc5a8c3
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4aba91b232a187a72bbc2ea10f32a14a377a3870
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.openlocfilehash: b43c8d08fe1655aea175bbec3ceb7877be96f42e
+ms.sourcegitcommit: d5c013a29f53b975fe3a6cb0a41f1e817bd7b235
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52456858"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54342825"
 ---
 # <a name="supported-operating-systems-for-configuration-manager-site-system-servers"></a>Configuration Manager 사이트 시스템 서버에 대해 지원되는 운영 체제
 
@@ -34,7 +34,7 @@ ms.locfileid: "52456858"
 
 ## <a name="bkmk_2019"></a> Windows Server 2019
 
-*Windows Server 2019 적용 대상: Standard 및 Datacenter* 
+*Windows Server 2019: Standard 및 Datacenter에 적용* 
 
 1810 버전부터 이 OS 버전에서 지원하는 역할은 다음과 같습니다.
 
@@ -69,7 +69,7 @@ ms.locfileid: "52456858"
 
 ## <a name="bkmk_2016"></a> Windows Server 2016
 
-*Windows Server 2016 적용 대상: Standard 및 Datacenter*
+*Windows Server 2016: Standard 및 Datacenter에 적용*
 
 이 OS 버전에서 지원하는 역할은 다음과 같습니다.
 
@@ -112,7 +112,7 @@ ms.locfileid: "52456858"
 
 ## <a name="bkmk_2012r2"></a> Windows Server 2012 R2 
 
-*Windows Server 2012 R2 적용 대상: Standard 및 Datacenter*
+*Windows Server 2012 R2: Standard 및 Datacenter에 적용*
 
 #### <a name="site-servers"></a>사이트 서버
 
@@ -145,7 +145,7 @@ ms.locfileid: "52456858"
 
 ## <a name="bkmk_2012"></a> Windows Server 2012  
 
-*Windows Server 2012 적용 대상: Standard 및 Datacenter*
+*Windows Server 2012: Standard 및 Datacenter에 적용*
 
 #### <a name="site-servers"></a>사이트 서버
 
@@ -178,9 +178,12 @@ ms.locfileid: "52456858"
 
 ## <a name="bkmk_2008r2sp1"></a> Windows Server 2008 R2 SP1   
 
-*Windows Server 2008 R2 서비스 팩 1 적용 대상: Standard, Enterprise 및 Datacenter*
+*Windows Server 2008 R2 서비스 팩 1: Standard, Enterprise 및 Datacenter에 적용*
 
 [Microsoft 지원 기간](https://support.microsoft.com/lifecycle)에 설명된 대로 Windows Server 2008 R2는 현재 추가 지원 상태이며 더 이상 일반 지원에 속하지 않습니다. 향후에 Configuration Manager에서 이러한 운영 체제를 사이트 시스템 서버로 사용할 수 있는지에 대한 자세한 내용은 [사용되지 않는 서버 운영 체제](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-server#deprecated-server-operating-systems)를 참조하세요.  
+
+> [!Important]  
+> Windows Server 2008 R2에서 확장된 지원을 종료하는 날짜는 2020년 1월 14일입니다. 이 날짜 이후에 Configuration Manager에서는 이 OS를 사이트 시스템 역할로 지원하지 않습니다. 
 
 이 OS는 사이트 서버 또는 대부분의 사이트 시스템 역할에 대해 지원되지 않습니다. 풀(pull) 배포 지점을 포함한 배포 지점 사이트 시스템 역할 및 PXE와 멀티캐스트에 대해서는 계속 지원됩니다.
 
@@ -193,9 +196,12 @@ ms.locfileid: "52456858"
 
 ## <a name="bkmk_2008sp2"></a> Windows Server 2008 SP2  
 
-*Windows Server 2008 서비스 팩 2(x86, x64) 적용 대상: Standard, Enterprise 및 Datacenter*
+*Windows Server 2008 서비스 팩 2(x86, x64): Standard, Enterprise 및 Datacenter에 적용*
 
 [Microsoft 지원 수명 주기](https://support.microsoft.com/lifecycle)에서 설명한 대로 Windows Server 2008 SP2(서비스 팩 2)는 이제 확장된 지원 상태이며 더 이상 일반 지원 상태가 아닙니다. 향후에 Configuration Manager에서 이러한 운영 체제를 사이트 시스템 서버로 사용할 수 있는지에 대한 자세한 내용은 [사용되지 않는 서버 운영 체제](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-server#deprecated-server-operating-systems)를 참조하세요.  
+
+> [!Important]  
+> Windows Server 2008 R2에서 확장된 지원을 종료하는 날짜는 2020년 1월 14일입니다. 이 날짜 이후에 Configuration Manager에서는 이 OS를 사이트 시스템 역할로 지원하지 않습니다. 
 
 OS는 배포 지점 및 풀(pull) 배포 지점을 제외하고, 사이트 서버 또는 사이트 시스템 역할에 대해 지원되지 않습니다. 이 지원의 중단이 발표되거나 이 OS의 추가 지원 기간이 만료될 때까지 이 OS를 배포 지점으로 계속 사용할 수 있습니다. 자세한 내용은 [Windows Server 2008에서 Configuration Manager CB 및 LTSB 설치 실패](https://support.microsoft.com/help/4015095)를 참조하세요.
 
@@ -244,7 +250,7 @@ OS는 배포 지점 및 풀(pull) 배포 지점을 제외하고, 사이트 서�
 #### <a name="bkmk_note1"></a> 참고 1: 배포 지점
 배포 지점은 각기 요구 사항이 다른 여러 구성을 지원합니다. 경우에 따라 이러한 구성은 서버뿐만 아니라 클라이언트 운영 체제에 대한 설치도 지원합니다. 자세한 내용은 [콘텐츠 및 콘텐츠 인프라 관리](/sccm/core/servers/deploy/configure/manage-content-and-content-infrastructure)를 참조하세요.  
 
-#### <a name="bkmk_note2"> </a> 참고 2: 사이트 데이터베이스 서버
-RODC(읽기 전용 도메인 컨트롤러)에서는 사이트 데이터베이스 서버가 지원되지 않습니다. 자세한 내용은 Microsoft 지원 기사: [도메인 컨트롤러에 SQL Server 설치할 때 문제가 발생할 수 있습니다](https://support.microsoft.com/help/2032911)를 참조하세요. 
+#### <a name="bkmk_note2"></a> 참고 2: 사이트 데이터베이스 서버
+RODC(읽기 전용 도메인 컨트롤러)에서는 사이트 데이터베이스 서버가 지원되지 않습니다. 자세한 내용은 Microsoft 지원 문서: [도메인 컨트롤러에 SQL Server를 설치할 때 문제가 발생할 수 있습니다.](https://support.microsoft.com/help/2032911)를 참조하세요. 
 
 또한 모든 도메인 컨트롤러에서 보조 사이트 서버가 지원되지 않습니다.  
