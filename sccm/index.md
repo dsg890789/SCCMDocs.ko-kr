@@ -4,12 +4,12 @@ hide_bc: true
 title: System Center Configuration Manager 문서
 description: System Center Configuration Manager를 사용하는 방법을 알아봅니다.
 ms.topic: hub-page
-ms.openlocfilehash: c6002a890f2ed89a1fa52dbf6585cafa10940a56
-ms.sourcegitcommit: a3cec96a771eed69e58a29917d1a3fe1a5fb2e73
+ms.openlocfilehash: ddf8843e490a86534eea0a3c90a78cc7849e4a62
+ms.sourcegitcommit: 6c39c1b5540d8cd8d0e2952b6afc805d6d7540cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54250698"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54379602"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -796,7 +796,7 @@ ms.locfileid: "54250698"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/dn688621(v=technet.10)" data-linktype="absolute-path">
+                                <a href="https://docs.microsoft.com/sccm/core/support/support-center" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -968,7 +968,7 @@ ms.locfileid: "54250698"
                         <a href="#community-all">모두</a>
                         <ul id="community-all" class="cardsF">
                             <li>
-                                <a href="https://cloudblogs.microsoft.com/enterprisemobility/?product=system-center-configuration-manager">
+                                <a href="https://techcommunity.microsoft.com/t5/Configuration-Manager-Blog/bg-p/ConfigurationManagerBlog">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -978,8 +978,8 @@ ms.locfileid: "54250698"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Enterprise Mobility + Security 블로그</h3>
-                                                <p>Configuration Manager에 대한 최신 뉴스입니다.</p>
+                                                <h3>Configuration Manager 블로그</h3>
+                                                <p>Configuration Manager 제품 팀의 정보를 제공합니다.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1063,7 +1063,7 @@ ms.locfileid: "54250698"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://blogs.technet.microsoft.com/configurationmgr/">
+                                <a href="https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -1073,14 +1073,14 @@ ms.locfileid: "54250698"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Configuration Manager 지원 블로그</h3>
-                                                <p>Configuration Manager 팀의 정보를 지원하고 서비스를 제공합니다.</p>
+                                                <h3>Enterprise Mobility + Security 블로그</h3>
+                                                <p>통합 엔드포인트 관리에 대한 최신 소식을 확인할 수 있습니다.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 </a>
-                            </li>
+                            </li>                            
                         </ul>
                     </li>
                 </ul>
