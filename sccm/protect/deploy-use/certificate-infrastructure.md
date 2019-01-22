@@ -10,12 +10,12 @@ ms.assetid: 29ae59b7-2695-4a0f-a9ff-4f29222f28b3
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: ff32a35ccfe3ca51183497197622408c1a28a99d
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.openlocfilehash: 783512841b61d6fa10e3f2832100e9000576e65a
+ms.sourcegitcommit: 2687489aa409a050dcacd67f17b3dad3ab7f1804
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53416302"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316527"
 ---
 # <a name="configure-certificate-infrastructure"></a>인증서 인프라 구성
 
@@ -52,7 +52,7 @@ System Center Configuration Manager에서 인증서 인프라를 구성하는 �
    > [!NOTE]  
    >  이들은 대부분의 환경에 적합한 기본 보안 권한입니다. 그러나 다른 보안 구성을 사용할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 인증서 프로필에 대한 인증서 템플릿 권한 계획](../../protect/plan-design/planning-for-certificate-template-permissions.md)을 참조하세요.  
 
-3. 클라이언트 인증을 지원하는 PKI 인증서를 이 서버에 배포합니다. 컴퓨터에 사용할 수 있는 적합한 인증서가 이미 설치되어 있거나 이 용도로만 인증서를 배포해야 하거나 배포하려고 할 수도 있습니다. 이 인증서의 요구 사항에 대한 자세한 내용은 [System Center Configuration Manager를 위한 PKI 인증서 요구 사항](../../core/plan-design/network/pki-certificate-requirements.md) 항목의 **서버용 PKI 인증서** 섹션에서 네트워크 디바이스 등록 서비스 역할 서비스와 함께 Configuration Manager 정책 모듈을 실행하는 서버 관련 세부 정보를 참조하세요.  
+3. 클라이언트 인증을 지원하는 PKI 인증서를 이 서버에 배포합니다. 컴퓨터에 사용할 수 있는 적합한 인증서가 이미 설치되어 있거나 이 용도로만 인증서를 배포해야 하거나 배포하려고 할 수도 있습니다. 이 인증서의 요구 사항에 대한 자세한 내용은 [System Center Configuration Manager를 위한 PKI 인증서 요구 사항](../../core/plan-design/network/pki-certificate-requirements.md) 항목의 **서버용 PKI 인증서** 섹션에서 "네트워크 디바이스 등록 서비스 역할 서비스와 함께 Configuration Manager 정책 모듈을 실행하는 서버" 관련 세부 정보를 참조하세요.  
 
    > [!TIP]
    >  이 인증서를 배포하는 데 도움이 필요한 경우 [배포 지점용 클라이언트 인증서 배포](/sccm/core/plan-design/network/example-deployment-of-pki-certificates#BKMK_clientdistributionpoint2008_cm2012)에 있는 지침을 참조하세요. 다음 항목 하나를 제외하고 인증서 요구 사항이 동일하기 때문입니다.  
@@ -125,7 +125,7 @@ System Center Configuration Manager 계층에 인증서 등록 지점을 하나 
    - **SCEP 인증서 요청 처리**를 선택한 경우 다음을 구성합니다.
      -   인증서 등록 지점에 대한 **웹 사이트 이름**, **HTTPS 포트 번호** 및 **가상 애플리케이션 이름**. 이러한 필드는 기본값으로 자동으로 입력됩니다. 
      -   **네트워크 디바이스 등록 서비스 및 루트 CA 인증서의 URL** - **추가**를 클릭하고 **URL 및 루트 CA 인증서 추가** 대화 상자에서 다음을 지정합니다.
-         - 네트워크 장치 등록 서비스의 URL **: 다음 형식으로 URL을 지정 합니다: https://*< server_FQDN >*/certsrv/mscep/mscep.dll 합니다. 예를 들어 네트워크 디바이스 등록 서비스를 실행하는 서버의 FQDN이 server1.contoso.com인 경우 **https://server1.contoso.com/certsrv/mscep/mscep.dll**을 입력합니다.
+         - **네트워크 디바이스 등록 서비스의 URL**: URL을 https://*&lt;server_FQDN&gt;*/certsrv/mscep/mscep.dll 형식으로 지정합니다. 예를 들어 네트워크 디바이스 등록 서비스를 실행하는 서버의 FQDN이 server1.contoso.com인 경우 **https://server1.contoso.com/certsrv/mscep/mscep.dll**을 입력합니다.
          - **루트 CA 인증서**: **1단계: 네트워크 장치 등록 서비스 및 종속 항목 설치 및 구성**에서 만들어 저장한 인증서(.cer) 파일을 찾아서 선택합니다. 인증서 등록 지점은 이 루트 CA 인증서를 사용하여 System Center Configuration Manager 정책 모듈에 사용될 클라이언트 인증 인증서의 유효성을 검사할 수 있습니다.  
 
    - **PFX 인증서 요청 처리**를 선택한 경우 선택한 인증 기관에 대한 연결 정보 및 자격 증명을 구성합니다.
@@ -167,7 +167,7 @@ System Center Configuration Manager 계층에 인증서 등록 지점을 하나 
 
 ## <a name="step-3----install-the-system-center-configuration-manager-policy-module-for-scep-certificates-only"></a>3단계 - System Center Configuration Manager 정책 모듈 설치(SCEP 인증서에만 해당)
 
-설치 하 고에 지정 된 각 서버에서 System Center Configuration Manager 정책 모듈을 구성 해야 **2 단계: 인증서 등록 지점 설치 및 구성에서 지정한 각 서버에서 인증서 등록 지점에 대한 속성의 네트워크 장치 등록 서비스의 URL**로 설치하고 구성해야 합니다.  
+System Center Configuration Manager 정책 모듈을 **2단계: 인증서 등록 지점 설치 및 구성**에서 지정한 각 서버에서 인증서 등록 지점에 대한 속성인 **네트워크 디바이스 등록 서비스의 URL**로 설치하고 구성해야 합니다.  
 
 ##### <a name="to-install-the-policy-module"></a>정책 모듈을 설치하려면  
 
