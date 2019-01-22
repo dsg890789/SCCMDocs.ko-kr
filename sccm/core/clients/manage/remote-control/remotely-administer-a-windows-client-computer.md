@@ -10,12 +10,12 @@ ms.assetid: 3c9648c4-645e-4e47-ae10-2da817b8c83b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4437ef8f88b18b7148eadbc3d125d8ac72fb240a
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 9ce6bf7c39e400a59188388ee162bc187b1683a7
+ms.sourcegitcommit: 2687489aa409a050dcacd67f17b3dad3ab7f1804
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32338648"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316476"
 ---
 # <a name="how-to-remotely-administer-a-windows-client-computer-by-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows 클라이언트 컴퓨터를 원격으로 관리하는 방법
 
@@ -82,7 +82,7 @@ ms.locfileid: "32338648"
 
 ### <a name="to-start-the-remote-control-viewer-from-the-windows-command-line"></a>Windows 명령줄에서 원격 제어 뷰어를 시작하려면  
 
--   Windows 명령 프롬프트에 *<Configuration Manager 설치 폴더\>***\AdminConsole\Bin\x64\CmRcViewer.exe**를 입력합니다.  
+-   Windows 명령 프롬프트에 _<Configuration Manager 설치 폴더\>_**\AdminConsole\Bin\x64\CmRcViewer.exe**를 입력합니다.  
 
 CmRcViewer.exe에서 다음 명령줄 옵션을 지원합니다.  
 
