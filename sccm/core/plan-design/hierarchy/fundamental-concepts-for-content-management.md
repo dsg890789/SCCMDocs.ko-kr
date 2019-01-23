@@ -10,12 +10,12 @@ ms.assetid: c201be2a-692c-4d67-ac95-0a3afa5320fe
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b73ead1492b143260d327f428db5a6183f84434c
-ms.sourcegitcommit: 8791bb9be477fe6a029e8a7a76e2ca310acd92e0
+ms.openlocfilehash: 4a777ec74fb4006df056b4e69d7cbdfb380bcf72
+ms.sourcegitcommit: d5c013a29f53b975fe3a6cb0a41f1e817bd7b235
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50411343"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54342757"
 ---
 # <a name="fundamental-concepts-for-content-management-in-configuration-manager"></a>Configuration Manager에서 콘텐츠 관리의 기본 개념
 
@@ -57,7 +57,7 @@ Configuration Manager는 소프트웨어 콘텐츠를 관리하는 도구 및 �
 
 
 ## <a name="binary-differential-replication"></a>이진 차등 복제  
- BDR(이진 차등 복제)은 배포 지점에 대한 필수 구성 요소입니다. 이는 델타 복제라고도 합니다. 이전에 다른 사이트 또는 원격 배포 지점에 배포한 콘텐츠에 업데이트를 배포하는 경우 대역폭을 줄이는 데 자동으로 BDR이 사용됩니다.  
+ BDR(이진 차등 복제)는 때때로 델타 복제라고도 합니다. 이전에 다른 사이트 또는 원격 배포 지점에 배포한 콘텐츠에 업데이트를 배포하는 데 사용됩니다. BDR의 대역폭 사용량 감소를 지원하려면 배포 지점에 **원격 차등 압축** 기능을 설치합니다. 자세한 내용은 [배포 지점 필수 구성 요소](/sccm/core/plan-design/configs/site-and-site-system-prerequisites#bkmk_2012dppreq)를 참조하세요.
 
  BDR은 분산된 콘텐츠의 업데이트를 전송하는 데 사용되는 네트워크 대역폭을 최소화합니다. 해당 파일을 변경할 때마다 콘텐츠 원본 파일의 전체 집합을 전송하지 않고 새롭거나 변경된 콘텐츠만 다시 보냅니다.  
 
@@ -87,7 +87,7 @@ BDR은 계층 내 각 부모 및 자식 사이트 간에 지원됩니다. 사이
 
 
 ## <a name="delivery-optimization"></a>배달 최적화
-<!-- 1324696 --> Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원격 사무실에 대한 콘텐츠 배포를 정의하고 규정합니다. [Windows 배달 최적화](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)는 Windows 10 장치 간에 콘텐츠를 공유하는 클라우드 기반의 피어 투 피어 기술입니다. 1802 버전부터 피어 간에 콘텐츠를 공유하는 경우 경계 그룹을 사용하도록 배달 최적화를 구성합니다. 클라이언트 설정은 경계 그룹 식별자를 클라이언트의 배달 최적화 그룹 식별자로 적용합니다. 클라이언트는 배달 최적화 클라우드 서비스와 통신할 때 이 식별자를 사용하여 원하는 콘텐츠가 있는 피어를 찾습니다. 자세한 내용은 [배달 최적화](/sccm/core/clients/deploy/about-client-settings#delivery-optimization) 클라이언트 설정을 참조하세요.
+<!-- 1324696 --> Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원격 사무실에 대한 콘텐츠 배포를 정의하고 규정합니다. [Windows 배달 최적화](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)는 Windows 10 디바이스 간에 콘텐츠를 공유하는 클라우드 기반의 피어 투 피어 기술입니다. 1802 버전부터 피어 간에 콘텐츠를 공유하는 경우 경계 그룹을 사용하도록 배달 최적화를 구성합니다. 클라이언트 설정은 경계 그룹 식별자를 클라이언트의 배달 최적화 그룹 식별자로 적용합니다. 클라이언트는 배달 최적화 클라우드 서비스와 통신할 때 이 식별자를 사용하여 원하는 콘텐츠가 있는 피어를 찾습니다. 자세한 내용은 [배달 최적화](/sccm/core/clients/deploy/about-client-settings#delivery-optimization) 클라이언트 설정을 참조하세요.
 
 배달 최적화는 Windows 10 품질 업데이트용 빠른 설치 파일의 [Windows 10 업데이트 배달 최적화](/sccm/sum/deploy-use/optimize-windows-10-update-delivery)에 권장되는 기술입니다.
 
@@ -164,7 +164,7 @@ Configuration Manager로 새로운 OS를 배포하면 작업 순서를 실행하
  콘텐츠 라이브러리는 Configuration Manager에서 콘텐츠의 단일 인스턴스 저장소입니다. 이 라이브러리는 배포하는 콘텐츠의 전체 크기를 줄입니다.  
 
 - [콘텐츠 라이브러리](/sccm/core/plan-design/hierarchy/the-content-library)에 대해 자세히 알아봅니다.
-- [콘텐츠 라이브러리 정리 도구](/sccm/core/plan-design/hierarchy/content-library-cleanup-tool)를 사용하여 더 이상 응용 프로그램과 연결되지 않는 콘텐츠를 제거합니다.  
+- [콘텐츠 라이브러리 정리 도구](/sccm/core/plan-design/hierarchy/content-library-cleanup-tool)를 사용하여 더 이상 애플리케이션과 연결되지 않는 콘텐츠를 제거합니다.  
 
 
 
@@ -175,7 +175,7 @@ Configuration Manager로 새로운 OS를 배포하면 작업 순서를 실행하
 
 -   **풀(pull) 배포 지점**: 배포 지점이 다른 배포 지점(원본 배포 지점)에서 콘텐츠를 가져오는 배포 지점의 변형입니다. 이 프로세스는 클라이언트가 배포 지점에서 콘텐츠를 다운로드하는 방법과 비슷합니다. 풀(pull) 배포 지점을 사용하면 사이트 서버가 각 배포 지점에 콘텐츠를 직접 배포해야 하는 경우 발생하는 네트워크 대역폭 병목 현상을 방지할 수 있습니다. [풀(pull) 배포 지점을 사용합니다](/sccm/core/plan-design/hierarchy/use-a-pull-distribution-point).
 
--   **클라우드 기반 배포 지점**: Microsoft Azure에 설치된 배포 지점의 변형입니다. [클라우드 배포 지점을 사용하는 방법을 알아봅니다](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point).  
+-   **클라우드 배포 지점**: Microsoft Azure에 설치된 배포 지점의 변형입니다. [클라우드 배포 지점을 사용하는 방법을 알아봅니다](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point).  
 
 
 표준 배포 지점은 다양한 구성 및 기능을 지원합니다.  
@@ -188,7 +188,7 @@ Configuration Manager로 새로운 OS를 배포하면 작업 순서를 실행하
 
 - OS 배포의 경우 **[PXE](/sccm/osd/get-started/prepare-site-system-roles-for-operating-system-deployments#BKMK_PXEDistributionPoint)** 및 **[멀티 캐스트](/sccm/osd/get-started/prepare-site-system-roles-for-operating-system-deployments#BKMK_DPMulticast)** 와 같은 여러 구성이 있습니다.  
 
-- **모바일 장치**에 대한 옵션   
+- **모바일 디바이스**에 대한 옵션   
   
 클라우드 및 풀(pull) 배포 지점은 다수의 동일한 구성을 지원하지만 각 배포 지점 변형과 관련된 몇 가지 제한 사항이 있습니다.  
 
@@ -256,7 +256,7 @@ Configuration Manager로 새로운 OS를 배포하면 작업 순서를 실행하
 ## <a name="on-demand-content-distribution"></a>주문형 콘텐츠 배포  
  주문형 콘텐츠 배포는 개별 애플리케이션 및 패키지 배포에 대한 옵션입니다. 이 옵션을 사용하면 기본 설정 서버로 주문형 콘텐츠 배포를 수행할 수 있습니다.  
 
--   배포에 이 설정을 사용하려면 **기본 배포 지점으로 이 패키지의 콘텐츠 배포**를 사용하도록 설정합니다.  
+-   배포에 대해 이 설정을 사용하려면 다음을 사용하도록 설정합니다. **기본 배포 지점으로 이 패키지의 콘텐츠를 배포**합니다.  
 
 -   배포에 대해 이 옵션을 사용하도록 설정하고 클라이언트가 해당 콘텐츠를 요청하였으나 클라이언트의 기본 배포 지점에서 해당 콘텐츠를 사용할 수 없는 경우 Configuration Manager에서 클라이언트의 기본 배포 지점에 해당 콘텐츠를 자동으로 배포합니다.  
 

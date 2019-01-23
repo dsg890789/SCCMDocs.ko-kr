@@ -10,12 +10,12 @@ ms.assetid: 32e2d6b9-148f-45e2-8083-98c656473f82
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 85bd23130826c7ca23e10125efba58bf14555fb1
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.openlocfilehash: 2027bf271a39dbe577580fa547ff09a4bd3483a8
+ms.sourcegitcommit: d5c013a29f53b975fe3a6cb0a41f1e817bd7b235
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53424224"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54342740"
 ---
 # <a name="cmpivot-for-real-time-data-in-configuration-manager"></a>Configuration Manager에서 실시간 데이터에 대한 CMPivot
 
@@ -35,7 +35,7 @@ CMPivot을 사용하려면 다음 구성 요소가 필요합니다.
 
 - 대상 디바이스를 Configuration Manager 클라이언트의 최신 버전으로 업그레이드합니다.  
 
-- Configuration Manager 관리자는 **SMS 스크립트** 개체의 **읽기** 권한, **컬렉션** 개체의 **스크립트 실행** 권한, 그리고 기본 범위가 필요합니다. **스크립트 실행기** 역할에는 이러한 권한이 있습니다. 자세한 내용은 [스크립트의 보안 역할](/sccm/apps/deploy-use/create-deploy-scripts#bkmk_ScriptRoles)을 참조하세요.  
+- Configuration Manager 관리자는 **SMS 스크립트** 개체의 **읽기** 권한, **컬렉션** 개체의 **스크립트 실행** 권한, 그리고 기본 범위가 필요합니다. **스크립트 실행기** 역할에는 기본적으로 생성되지 않는 사용 권한이 있습니다. 이 사용자 지정 보안 역할을 만드는 방법에 대한 자세한 내용은 [스크립트에 대한 보안 역할](/sccm/apps/deploy-use/create-deploy-scripts#bkmk_ScriptRoles)을 참조하세요.  
 
 - 다음 엔터티에 대한 데이터를 수집하기 위해 대상 클라이언트는 PowerShell 버전 5.0이 필요합니다.  
     - 관리자
@@ -169,11 +169,11 @@ CMPivot 창은 다음과 같은 요소를 포함합니다.
      - 오프라인 클라이언트 수(2)  
      - 오류를 반환한 모든 클라이언트(0)  
 
-       예를 들면 다음과 같습니다. `Query completed on 3 of 5 clients (2 clients offline and 0 failure)`  
+       `Query completed on 3 of 5 clients (2 clients offline and 0 failure)`  
 
-   - 클라이언트 작업의 ID입니다. 예를 들면 다음과 같습니다. `id(16780221)`  
+   - 클라이언트 작업의 ID입니다. `id(16780221)`  
 
-   - 현재 컬렉션입니다. 예를 들면 다음과 같습니다. `PM_Team_Machines`  
+   - 현재 컬렉션입니다. `PM_Team_Machines`  
 
    - 결과 창에서 행의 총 수입니다. 예를 들면 `1 objects`  
 

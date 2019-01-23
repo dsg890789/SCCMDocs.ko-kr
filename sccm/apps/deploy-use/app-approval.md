@@ -10,12 +10,12 @@ ms.assetid: 20493c86-6454-4b35-8f22-0d049b68b8bb
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 666df71b32ea0dc95411b8ffd58d18f7666d7b23
-ms.sourcegitcommit: d36e4c7082a5144e79035dd8847c8e741fa04667
+ms.openlocfilehash: 776d0a477d56a178927fb2d09866eacf63b4895a
+ms.sourcegitcommit: d5c013a29f53b975fe3a6cb0a41f1e817bd7b235
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53444589"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54342791"
 ---
 # <a name="approve-applications-in-configuration-manager"></a>Configuration Manager에서 애플리케이션 승인
 
@@ -69,6 +69,10 @@ Configuration Manager 콘솔의 **소프트웨어 라이브러리** 작업 영�
 <!--1321550-->
 
 1810 버전부터 애플리케이션 승인 요청에 대한 이메일 알림을 구성합니다. 사용자가 애플리케이션을 요청하면 메일을 받게 됩니다. 메일의 링크를 클릭하면 Configuration Manager 콘솔을 사용하지 않고 요청을 승인 또는 거부할 수 있습니다.
+
+애플리케이션에 대한 새 배포를 만드는 동안 요청을 승인하거나 거부할 수 있는 사용자의 이메일 주소를 정의할 수 있습니다. 나중에 이메일 주소 목록을 변경해야 하는 경우 **모니터링** 작업 영역으로 이동하여 **경고**를 확장하고 **구독** 노드를 선택합니다. 애플리케이션 배포와 관련된 **이메일을 통해 애플리케이션 승인** 구독 중 하나에서 **속성**을 선택합니다. 
+
+둘 이상의 경고가 있는 경우 배포와 함께 사용할 경고를 결정할 수 있습니다. 경고 속성을 열고 일반 탭에서 **선택된 경고**의 목록을 봅니다. 배포가 이 구독에 대한 경고로 활성화됩니다. 
 
 
 ### <a name="prerequisites"></a>필수 구성 요소

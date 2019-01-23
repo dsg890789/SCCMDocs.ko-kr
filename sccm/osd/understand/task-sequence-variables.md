@@ -10,12 +10,12 @@ ms.assetid: 62f15230-d3a6-4afc-abd4-1e07e7ba6c97
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: cde62242fc4db99d762d670037aad22bd25d6c00
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.openlocfilehash: e7a2801b7efa513b2b15a58a7a89eee5d4727a21
+ms.sourcegitcommit: d5c013a29f53b975fe3a6cb0a41f1e817bd7b235
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52456739"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54342900"
 ---
 # <a name="task-sequence-variables-in-configuration-manager"></a>Configuration Manager의 작업 순서 변수
 
@@ -155,7 +155,7 @@ ms.locfileid: "52456739"
 
  - **SMS**: 구성 관리자 클라이언트(예: 소프트웨어 센터에서 시작하는 경우)
  - **UFD**: 레거시 USB 미디어
- - **UFD + FORMAT**: 최신 USB 미디어
+ - **UFD+FORMAT**: 최신 USB 미디어
  - **CD**: 부팅 가능 CD
  - **DVD**: 부팅 가능 DVD
  - **PXE**: PXE 네트워크 부팅
@@ -328,15 +328,15 @@ ms.locfileid: "52456739"
 
 ### <a name="TSAppInstallStatus"></a> _TSAppInstallStatus
 
- [응용 프로그램 설치](task-sequence-steps.md#BKMK_InstallApplication) 단계 중에 작업 순서가 응용 프로그램의 설치 상태를 사용하여 이 변수를 설정하며, 다음 값 중 하나를 설정합니다.  
+ [애플리케이션 설치](task-sequence-steps.md#BKMK_InstallApplication) 단계 중에 작업 순서가 애플리케이션의 설치 상태를 사용하여 이 변수를 설정하며, 다음 값 중 하나를 설정합니다.  
 
- - **정의되지 않음**: 응용 프로그램 설치 단계가 실행되지 않았습니다.  
+ - **Undefined**: 애플리케이션 설치 단계가 실행되지 않았습니다.  
 
- - **오류**: 응용 프로그램 설치 단계 중에 응용 프로그램 하나 이상이 오류 때문에 실패했습니다.  
+ - **오류**: 애플리케이션 설치 단계 중에 애플리케이션 하나 이상이 오류 때문에 실패했습니다.  
 
- - **경고**: 응용 프로그램 설치 단계 중에 오류가 발생하지 않았습니다. 요구 사항이 충족되지 않아 하나 이상의 애플리케이션 또는 필요한 종속성이 설치되지 않았습니다.  
+ - **경고**: 애플리케이션 설치 단계 중에 오류가 발생하지 않았습니다. 요구 사항이 충족되지 않아 하나 이상의 애플리케이션 또는 필요한 종속성이 설치되지 않았습니다.  
 
- - **성공**: 응용 프로그램 설치 단계 중에 감지된 오류 또는 경고가 없습니다.  
+ - **성공**: 애플리케이션 설치 단계 중에 감지된 오류 또는 경고가 없습니다.  
 
 
 ### <a name="OSDAdapter"></a> OSDAdapter
@@ -347,7 +347,7 @@ ms.locfileid: "52456739"
 
  이 작업 순서 변수는 *배열* 변수입니다. 배열의 각 요소는 컴퓨터에서 단일 네트워크 어댑터에 대한 설정을 나타냅니다. 각 어댑터에 대한 설정은 배열 변수 이름과 0부터 시작하는 네트워크 어댑터 인덱스 및 속성 이름을 결합하여 액세스할 수 있습니다.
 
- 네트워크 설정 적용 단계에서 여러 네트워크 어댑터를 구성할 경우 변수 이름에 인덱스 **1**을 사용하여 ‘두 번째’ 네트워크 어댑터의 속성을 정의합니다. 예를 들어 OSDAdapter1EnableDHCP, OSDAdapter1IPAddressList 및 OSDAdapter1DNSDomain이 있습니다.
+ 네트워크 설정 적용 단계에서 여러 네트워크 어댑터를 구성할 경우 변수 이름에 인덱스 **1**을 사용하여 ‘두 번째’ 네트워크 어댑터의 속성을 정의합니다. 예: OSDAdapter1EnableDHCP, OSDAdapter1IPAddressList 및 OSDAdapter1DNSDomain.
 
  다음 변수 이름을 사용하여 단계가 구성할 ‘첫 번째’ 네트워크 어댑터의 속성을 정의할 수 있습니다.
 
@@ -392,9 +392,9 @@ ms.locfileid: "52456739"
 #### <a name="osdadapter0tcpipnetbiosoptions"></a>OSDAdapter0TcpipNetbiosOptions
  NetBIOS over TCP/IP 옵션입니다. 가능한 값은 다음과 같습니다.  
 
- - `0`: DHCP 서버에서 NetBIOS 설정을 사용합니다.  
- - `1`: NetBIOS over TCP/IP를 사용하도록 설정합니다.  
- - `2`: NetBIOS over TCP/IP를 사용하지 않도록 설정합니다.  
+ - `0`: DHCP 서버에서 NetBIOS 설정 사용  
+ - `1`: NetBIOS over TCP/IP 사용  
+ - `2`: NetBIOS over TCP/IP 사용 안 함  
 
 #### <a name="osdadapter0enablewins"></a>OSDAdapter0EnableWINS
  이름 확인에 WINS를 사용하려면 `true`로 설정합니다.
@@ -439,7 +439,7 @@ ms.locfileid: "52456739"
 
  (입력)
 
- 드라이버 패키지에서 설치할 대용량 저장 디바이스 드라이버의 콘텐츠 ID를 지정합니다. 이 변수를 지정하지 않으면 대용량 스토리지 드라이버가 설치되지 않습니다.
+ 드라이버 패키지에서 설치할 대용량 스토리지 장치 드라이버의 콘텐츠 ID를 지정합니다. 이 변수를 지정하지 않으면 대용량 스토리지 드라이버가 설치되지 않습니다.
 
 
 ### <a name="OSDApplyDriverBootCriticalHardwareComponent"></a> OSDApplyDriverBootCriticalHardwareComponent
@@ -448,7 +448,7 @@ ms.locfileid: "52456739"
 
  (입력)
 
- 대용량 저장 디바이스 드라이버가 설치되었는지 여부를 지정하며 이 변수는 **scsi**여야 합니다.
+ 스토리지 저장 장치 드라이버가 설치되었는지 여부를 지정하며 이 변수는 **scsi**여야 합니다.
 
  [OSDApplyDriverBootCriticalContentUniqueID](#OSDApplyDriverBootCriticalContentUniqueID)가 설정된 경우 이 변수가 필요합니다.
 
@@ -459,7 +459,7 @@ ms.locfileid: "52456739"
 
  (입력)
 
- 설치할 대용량 저장 디바이스 드라이버의 부팅 필요 ID를 지정합니다. 이 ID는 디바이스 드라이버의 txtsetup.oem 파일의 **scsi** 섹션에 나열되어 있습니다.
+ 설치할 대용량 스토리지 장치 드라이버의 부팅 필요 ID를 지정합니다. 이 ID는 디바이스 드라이버의 txtsetup.oem 파일의 **scsi** 섹션에 나열되어 있습니다.
 
  [OSDApplyDriverBootCriticalContentUniqueID](#OSDApplyDriverBootCriticalContentUniqueID)가 설정된 경우 이 변수가 필요합니다.
 
@@ -483,9 +483,9 @@ ms.locfileid: "52456739"
  하드웨어 디바이스와 호환되는 드라이버 카탈로그의 여러 디바이스 드라이버가 있는 경우 이 변수는 해당 단계의 동작을 결정합니다. 
 
  #### <a name="valid-values"></a>유효한 값
- - `true`(기본값): 가장 적합한 장치 드라이버만 설치합니다.  
+ - `true`(기본값): 가장 적합한 디바이스 드라이버만 설치합니다.  
 
- - `false`: 이 단계에서 호환되는 모든 장치 드라이버를 설치하고, Windows에서 사용하기 가장 적합한 드라이버를 선택합니다.  
+ - `false`: 이 단계에서 호환되는 모든 디바이스 드라이버를 설치하고, Windows에서 사용하기 가장 적합한 드라이버를 선택합니다.  
 
 
 ### <a name="OSDAutoApplyDriverCategoryList"></a> OSDAutoApplyDriverCategoryList
@@ -780,8 +780,8 @@ ms.locfileid: "52456739"
  대상 컴퓨터가 Windows 도메인 또는 작업 그룹에 가입하는지 여부를 지정합니다. 
 
  #### <a name="valid-values"></a>유효한 값
- - `0`: 대상 컴퓨터를 Windows 도메인에 가입합니다.  
- - `1`: 대상 컴퓨터를 작업 그룹에 가입합니다.  
+ - `0`: 대상 컴퓨터를 Windows 도메인에 조인합니다.  
+ - `1`: 대상 컴퓨터를 작업 그룹에 조인합니다.  
 
 
 ### <a name="OSDJoinWorkgroupName"></a> OSDJoinWorkgroupName
@@ -1018,8 +1018,8 @@ ms.locfileid: "52456739"
  대상 컴퓨터가 Active Directory 도메인 또는 작업 그룹에 가입하는지 여부를 지정합니다.
 
  #### <a name="value-values"></a>유효한 값
- - `0`: Active Directory 도메인에 가입합니다.  
- - `1`: 작업 그룹에 가입합니다.
+ - `0`: Active Directory 도메인에 조인합니다.  
+ - `1`: 작업 그룹에 가입
 
 
 ### <a name="OSDPartitions"></a> OSDPartitions
@@ -1056,7 +1056,7 @@ ms.locfileid: "52456739"
  #### <a name="osdpartitions0volumelettervariable"></a>OSDPartitions0VolumeLetterVariable
  이 단계에서 파티션을 만들 때 Windows PE에서 항상 사용 가능한 다음 드라이브 문자를 사용합니다. 이 선택적 속성을 사용하여 다른 작업 순서 변수의 이름을 지정할 수 있습니다. 이 단계에서는 이 변수를 사용하여 나중에 참조할 새 드라이브 문자를 저장합니다.
 
- 이 작업 순서 단계를 사용하여 여러 파티션을 정의하는 경우 ‘두 번째’ 파티션에 대한 속성이 변수 이름의 **1** 인덱스를 사용하여 정의됩니다. 예를 들어 **OSDPartitions1Type**, **OSDPartitions1FileSystem**, **OSDPartitions1Bootable**, **OSDPartitions1QuickFormat** 및 **OSDPartitions1VolumeName**이 있습니다.
+ 이 작업 순서 단계를 사용하여 여러 파티션을 정의하는 경우 ‘두 번째’ 파티션에 대한 속성이 변수 이름의 **1** 인덱스를 사용하여 정의됩니다. 예: **OSDPartitions1Type**, **OSDPartitions1FileSystem**, **OSDPartitions1Bootable**, **OSDPartitions1QuickFormat** 및 **OSDPartitions1VolumeName**.
 
 
 ### <a name="OSDPartitionStyle"></a> OSDPartitionStyle
@@ -1068,8 +1068,8 @@ ms.locfileid: "52456739"
  디스크를 분할하는 경우 사용할 파티션 스타일을 지정합니다. 
 
  #### <a name="valid-values"></a>유효한 값
- - `GPT`: GUID 파티션 테이블 스타일을 사용합니다.
- - `MBR`: 마스터 부트 레코드 파티션 스타일을 사용합니다.
+ - `GPT`: GUID 파티션 테이블 스타일 사용
+ - `MBR`: 마스터 부트 레코드 파티션 스타일 사용
 
 
 ### <a name="OSDProductKey"></a> OSDProductKey
@@ -1090,7 +1090,7 @@ ms.locfileid: "52456739"
  새 OS에서 로컬 관리자 계정에 대해 임의로 생성된 암호를 지정합니다. 
 
  #### <a name="valid-values"></a>유효한 값
- - `true`(기본값): Windows 설치 프로그램이 대상 컴퓨터에서 로컬 관리자 계정을 사용하지 않도록 설정합니다.  
+ - `true`(기본값): Windows 설치 프로그램이 대상 컴퓨터에서 로컬 관리자 계정을 사용하지 않도록 설정  
 
  - `false`: Windows 설치 프로그램이 대상 컴퓨터에서 로컬 관리자 계정을 사용하도록 설정하고 계정 암호를 [OSDLocalAdminPassword](#OSDLocalAdminPassword) 값으로 설정합니다.  
 
@@ -1350,7 +1350,7 @@ ms.locfileid: "52456739"
 
  #### <a name="examples"></a>예
  - `0`(기본값): 다시 부팅 메시지를 표시하지 않습니다.  
- - `60`: 1분 동안 경고를 표시합니다.  
+ - `60`: 1분 동안 경고 표시  
 
 
 ### <a name="SMSTSAssignmentsDownloadInterval"></a> SMSTSAssignmentsDownloadInterval
@@ -1471,7 +1471,7 @@ ms.locfileid: "52456739"
 ### <a name="SMSTSMPListRequestTimeoutEnabled"></a> SMSTSMPListRequestTimeoutEnabled
 
  ‘다음 단계에 적용합니다.’  
- - [응용 프로그램 설치](task-sequence-steps.md#BKMK_InstallApplication)  
+ - [애플리케이션 설치](task-sequence-steps.md#BKMK_InstallApplication)  
  - [소프트웨어 업데이트 설치](task-sequence-steps.md#BKMK_InstallSoftwareUpdates)  
 
 
@@ -1485,7 +1485,7 @@ ms.locfileid: "52456739"
 ### <a name="SMSTSMPListRequestTimeout"></a> SMSTSMPListRequestTimeout
 
  ‘다음 단계에 적용합니다.’  
- - [응용 프로그램 설치](task-sequence-steps.md#BKMK_InstallApplication)  
+ - [애플리케이션 설치](task-sequence-steps.md#BKMK_InstallApplication)  
  - [소프트웨어 업데이트 설치](task-sequence-steps.md#BKMK_InstallSoftwareUpdates)  
 
 
@@ -1580,6 +1580,8 @@ ms.locfileid: "52456739"
 
  이 단계에서 소프트웨어 업데이트 검사에 대한 제한 시간을 제어합니다. 예를 들어 검사 중에 여러 업데이트가 예상되는 경우 값을 높이세요. 기본값은 `1800`초(30분)입니다. 변수 값은 초 단위로 설정됩니다.
 
+> [!NOTE] 
+> 버전 1802부터 기본값은 `3600`초(60분)입니다.
 
 ### <a name="SMSTSUDAUsers"></a> SMSTSUDAUsers
 
@@ -1605,14 +1607,14 @@ ms.locfileid: "52456739"
 ### <a name="TSDisableProgressUI"></a> TSDisableProgressUI
  <!-- 1354291 --> 작업 순서가 최종 사용자에게 진행률을 표시하는 시기를 제어하려면 이 변수를 사용하세요. 다른 시간에 진행률을 숨기거나 표시하려면 이 변수를 작업 순서에 여러 번 설정합니다.  
 
- - `true`: 작업 순서 진행률을 숨깁니다.  
+ - `true`: 작업 순서 진행률 숨기기  
 
- - `false`: 작업 순서 진행률을 표시합니다.  
+ - `false`: 작업 순서 진행률 표시  
 
 
 ### <a name="TSErrorOnWarning"></a> TSErrorOnWarning 
 
- ‘[응용 프로그램 설치](task-sequence-steps.md#BKMK_InstallApplication) 단계에 적용됩니다.’
+ ‘[애플리케이션 설치](task-sequence-steps.md#BKMK_InstallApplication) 단계에 적용됩니다.’
 
  (입력) 
 
@@ -1639,8 +1641,8 @@ ms.locfileid: "52456739"
 
 - **OSDAllowUnsignedDriver**: Windows Vista 이상 운영 체제를 배포하는 경우에는 사용되지 않습니다.
 - **OSDBuildStorageDriverList**: Windows XP 및 Windows Server 2003에만 적용됩니다.
-- **OSDDiskpartBiosCompatibilityMode**: Windows XP 또는 Windows Server 2003을 배포할 때만 필요합니다.
-- **OSDInstallEditionIndex**: Windows Vista 이후에는 필요하지 않습니다.
+- **OSDDiskpartBiosCompatibilityMode**: Windows XP 또는 Windows Server 2003을 배포할 때만 필요함
+- **OSDInstallEditionIndex**: Windows Vista 이후 필요 없음
 - **OSDPreserveDriveLetter**: 자세한 내용은 [OSDPreserveDriveLetter](#OSDPreserveDriveLetter)를 참조하세요.
 
 ### <a name="osdpreservedriveletter"></a>OSDPreserveDriveLetter

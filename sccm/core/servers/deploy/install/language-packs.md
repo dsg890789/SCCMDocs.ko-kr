@@ -10,12 +10,12 @@ ms.assetid: cd74e5f5-33f6-4566-8c9d-d6a93bfe71ed
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 54034ec94ad2a0ea2b7ce095d9da669aea02f0b3
-ms.sourcegitcommit: 702e6017b6dee4629b67bb9f3bd5d9b5a889ebee
+ms.openlocfilehash: 9f6b10706638a476242051757145f725b262a7fc
+ms.sourcegitcommit: 2687489aa409a050dcacd67f17b3dad3ab7f1804
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37340229"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316442"
 ---
 # <a name="language-packs-in-configuration-manager"></a>Configuration Manager의 언어 팩
 
@@ -47,7 +47,6 @@ Configuration Manager 설치 프로그램을 실행하면 필수 구성 요소 �
 |서버 언어|로캘 ID(LCID)|세 자리 코드|  
 |---------------------|------------------------|-----------------------|  
 |영어(기본값)|0409|ENU|  
-|중국어(번체, 홍콩 특별 행정구)|0c04|ZHH|  
 |중국어(간체)|0804|CHS|  
 |중국어(번체, 대만)|0404|CHT|  
 |체코어|0405|CSY|  
@@ -75,7 +74,6 @@ Configuration Manager 설치 프로그램을 실행하면 필수 구성 요소 �
 |클라이언트 언어|로캘 ID(LCID)|세 자리 코드|  
 |---------------------|------------------------|-----------------------|  
 |영어(기본값)|0409|ENG|  
-|중국어(번체, 홍콩 특별 행정구)|0c04|ZHH|  
 |중국어 - 간체|0804|CHS|  
 |중국어(번체, 대만)|0404|CHT|  
 |체코어|0405|CSY|  

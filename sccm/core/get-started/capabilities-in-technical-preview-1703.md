@@ -10,12 +10,12 @@ ms.assetid: 2e801f8c-d331-41ee-8f27-908448fc0951
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: aed9ec403496b309b1b556355c955743d43b2dc4
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.openlocfilehash: 1a74d549c668581b076ea4775fee3aedbe9a2d01
+ms.sourcegitcommit: 2687489aa409a050dcacd67f17b3dad3ab7f1804
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53420212"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316493"
 ---
 # <a name="capabilities-in-technical-preview-1703-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1703의 기능
 
@@ -52,7 +52,7 @@ ms.locfileid: "53420212"
 
 다음 URL 형식을 사용하여 특정 애플리케이션에 대한 소프트웨어 센터를 엽니다.
 
-**Softwarecenter:SoftwareId=*응용 프로그램 식별자***
+**Softwarecenter:SoftwareId=_애플리케이션 식별자_**
 
 ### <a name="how-to-get-the-application-identifier-of-an-application"></a>애플리케이션의 애플리케이션 식별자를 가져오는 방법
 
