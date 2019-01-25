@@ -10,17 +10,17 @@ ms.assetid: 4c27b161-9eb7-4cdd-b469-d8eb27e71aea
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 172ca284a5a030682e01d9be63031180d7175421
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ROBOTS: NOINDEX
+ms.openlocfilehash: a8609df6aca3b536ee35aacc2d159a75aef234ac
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53423204"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898616"
 ---
 # <a name="past-hybrid-features-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하는 이전 하이브리드 기능
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 이 문서에서는 System Center Configuration Manager 및 Intune을 포함하는 하이브리드 배포에 사용할 수 있는 과거 MDM(모바일 디바이스 관리) 기능에 대한 세부 정보를 제공합니다.  
 

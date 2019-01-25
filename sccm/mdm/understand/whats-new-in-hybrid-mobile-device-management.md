@@ -10,12 +10,12 @@ ms.assetid: 7b127cee-61f1-4681-9760-caebed36ddf5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 610dfb7391347663fd92c0839d20eb7a4a703438
-ms.sourcegitcommit: c80abe7e4b7b2f80e957e45ff205f67d1b715688
+ms.openlocfilehash: 1ec1155ec578e0eab957baa991628ed18eef6c62
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54226226"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898650"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 디바이스 관리의 새로운 기능
 
@@ -60,7 +60,7 @@ ms.locfileid: "54226226"
 
     각 커넥터의 현재 상태에 따라 플래그가 표시 되며 정상, 경고 또는 비정상으로 합니다. 드릴스루 및 자세한 내용을 보거나,에 대 한 추가 정보를 구성 하려면 커넥터를 선택 합니다.  
 
-- **Intune 서비스 상태**: 테 넌 트에 대 한 활성 인시던트 또는 중단 하는 방법에 대 한 세부 정보를 표시합니다. 이 섹션의 정보는 Office 메시지 센터에서 직접 검색 됩니다.  
+- **Intune Service Health**: 테 넌 트에 대 한 활성 인시던트 또는 중단 하는 방법에 대 한 세부 정보를 표시합니다. 이 섹션의 정보는 Office 메시지 센터에서 직접 검색 됩니다.  
 
 - **Intune 뉴스**: 테 넌 트의 활성 메시지를 표시합니다. 테 넌 트 최신 Intune 기능을 받으면 메시지 알림 등을 포함 합니다.  이 섹션의 정보는 Office 메시지 센터에서 직접 검색 됩니다.  
 
@@ -592,24 +592,24 @@ MacOS 버전 10.12 이상은 현재 다음에서 지원됩니다.
 자세한 내용은 [회사 포털 앱을 사용하여 Intune에서 macOS 디바이스 등록](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)을 참조하세요.
 
 
-### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>변경 계획: 고객은 프리미어의 새 Intune 지원 환경 
+### <a name="intune-support-experience-for-premier-customers-now-in-azure-instead-of-mpo"></a>Intune 지원 MPO 대신 Azure에서 이제 고객은 프리미어 경험  
 <!--2828727-->
 
-2018 년 12 월 4 업데이트: 이 프로세스를 개선 하려고 합니다. 12 월 3 일에 MPO에서 지원 요청 만들기를 사용 하지 않도록 설정 하지 않습니다. 알려드리겠습니다 메시지 센터를 통해 지식과이 변경에 대 한 타임 라인을 공유 하려면 곧이 게시물을 업데이트 합니다.
-
-Microsoft 프리미어 고객 인 현재 사용할 수는 [Microsoft Premier Online (MPO) 포털](https://premier.microsoft.com) 하 고 [Azure의 Intune에서](https://portal.azure.com) Intune에 대 한 지원 요청을 만들려면. 2018년 12월 3월부터 프리미어 지원 환경을 계속해서 향상시키려면 Azure의 Intune에서만 지원 요청을 만들 수 있습니다.
+9 월 12 월에 Microsoft 프리미어 온라인 (MPO) 포털 (premier.microsoft.com)에서 Intune 지원 요청을 만들 수는 제거할 것에 MC147649에서 발표 했습니다. 이제 약간의 지연 후 1 월의 끝에 리디렉션됩니다 지원 요청을 만드는 Azure의 Intune에만 합니다.
 
 #### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
-12월 3일 이후에는 MPO에서 지원 요청을 만들 수 없습니다. 시도하는 경우 Azure의 Intune으로 리디렉션하는 중에 해제할 수 없다는 메시지가 표시됩니다. Azure Portal에서 지원 요청을 만드는 경우 Intune 전용 Microsoft 지원으로 라우팅됩니다. 시기 적절하게 문제를 진단하며 해결합니다. MPO 포털에서 지원 요청을 만드는 경우 Azure Portal에서는 볼 수 없습니다. Azure의 Intune에서 지원 요청을 만들기만 시작합니다.  
+프리미어 향상을 계속 하려면 January, 종료 된 후 환경을 지원 MPO에서 지원 요청을 만들 수 없습니다. 이 작업을 수행 하려고 할 때 Azure에서 Intune로 리디렉션하는 중에 해제할 수 없습니다는 프롬프트를 표시 됩니다. 여기에 Intune 전용 Microsoft 지원에 라우팅되는 지원 요청을 만들 수 있습니다. 이러한 지원 엔지니어를 진단 하 고 적절 한 시기에 문제를 해결 합니다. MPO 포털에서 만든 Azure portal에서 지원 요청을 볼 수 없습니다.
 
-하이브리드 MDM(하이브리드 모바일 디바이스 관리)을 사용하거나 공동 관리를 사용하는 경우 Configuration Manager에 대한 지원 요청을 만드는 데 계속 MPO를 사용하되, Intune에 대한 지원 요청을 만들려면 Azure Portal을 사용합니다. 하이브리드 MDM은 이제 사용되지 않으며, 가능한 빠른 시일 내에 Azure의 Intune으로 이동해야 함을 기억하세요. 자세한 내용은 [하이브리드 모바일 디바이스 관리를 Azure의 Intune으로 이동](https://aka.ms/hybrid_notification)을 참조하세요.
+Azure portal에는 새로운 지원 환경이 MC171941에서 최근에 발표 했습니다. 자세한 내용은 [Microsoft Intune에 대 한 지원을 받는 방법](https://aka.ms/new_support_experience)합니다.
 
-글로벌 관리자, Intune 서비스 관리자 및 서비스 지원 관리자 역할인 사용자만 Azure Portal에서 지원 티켓을 만들 수 있습니다.
+하이브리드 MDM 또는 공동 관리를 사용 하는 경우 계속 MPO Configuration Manager에 대 한 지원 요청을 만들려면 사용 합니다. Intune에 대 한 지원 요청을 만들려면 Azure portal을 사용 합니다. 하이브리드 MDM은 이제 사용되지 않으며, 가능한 빠른 시일 내에 Azure의 Intune으로 이동해야 함을 기억하세요. 자세한 내용은 [하이브리드 모바일 디바이스 관리를 Azure의 Intune으로 이동](https://aka.ms/hybrid_notification)을 참조하세요.
+
+전역 관리자, Intune 서비스 관리자 및 서비스 지원 관리자 역할이 있는 사용자만 Azure portal에서 지원 티켓을 만들 수 있습니다.
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>이러한 변경에 대비하려면 어떻게 해야 하나요?
 - Intune 관련 지원 요청에 MPO 사용을 중지합니다. Azure의 Intune을 사용하여 모든 Intune 지원 요청을 만들고 관리합니다.  
 - 필요한 경우 해당 기술 지원팀에게 알리고 설명서를 업데이트합니다.  
-- 글로벌 관리자 또는 Intune 서비스 관리자 역할이 아닌데 현재 MPO에서 지원 요청을 만드는 사용자가 있는 경우 Azure Active Directory에서 서비스 지원 관리자 역할을 해당 사용자에게 할당합니다. 사용자가 Azure Portal에서 지원 티켓을 만들려면 이러한 역할 중 하나가 필요합니다.  
+- 사용자를 전역 관리자 또는 Intune 서비스 관리자 역할을 현재 MPO에서 지원 요청을 만드는 경우 Azure Active Directory에서 서비스 지원 관리자 역할을 할당 합니다. 사용자가 Azure Portal에서 지원 티켓을 만들려면 이러한 역할 중 하나가 필요합니다.  
 
 #### <a name="additional-information"></a>추가 정보
 자세한 내용은 [Microsoft Intune 지원 팀 블로그 게시물](https://aka.ms/IntuneSupport_MPO_to_Azure)을 참조하세요.
