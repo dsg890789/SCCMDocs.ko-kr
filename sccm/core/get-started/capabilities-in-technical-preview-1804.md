@@ -10,12 +10,13 @@ ms.assetid: 8af43618-ec60-4c3e-a007-12399d1335b9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a796c8cc23ab15e3fbeb09fca6ffa6f1dbd45bc3
-ms.sourcegitcommit: 4b8afbd08ecf8fd54950eeb630caf191d3aa4767
+ROBOTS: NOINDEX
+ms.openlocfilehash: 80f16244c10899ed264b83f6c7a9a050fba7a224
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "34474346"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898310"
 ---
 # <a name="capabilities-in-technical-preview-1804-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1804의 기능
 
@@ -36,7 +37,7 @@ ms.locfileid: "34474346"
 설치에 필요한 파일을 다운로드하려면 설치 마법사를 실행합니다. 필수 다운로드 페이지에서 **필수 파일 다운로드** 옵션을 사용합니다. 
 
 
-### <a name="bkmk_appcathttps"></a> 응용 프로그램 카탈로그 웹 서비스 지점에서 HTTPS를 사용할 수 없음
+### <a name="bkmk_appcathttps"></a> 애플리케이션 카탈로그 웹 서비스 지점에서 HTTPS를 사용할 수 없음
 <!--512637--> 응용 프로그램 카탈로그 웹 서비스 지점에서 HTTPS를 사용하도록 설정할 경우
 
 - 사용자가 사용할 수 있도록 배포된 애플리케이션이 소프트웨어 센터에 표시되지 않습니다.  
@@ -99,9 +100,9 @@ HTTP 연결을 사용하여 통신하도록 애플리케이션 카탈로그 웹 
 
    - **웃는 얼굴 보내기**: 특정 항목을 정말 좋아한 경우입니다. 이 옵션의 경우 피드백을 자세히 입력합니다. 그런 다음, 스크린샷과 메일 주소를 선택적으로 포함합니다.  
 
-   - **찡그린 얼굴**: 콘솔에서 문제가 발생했거나, 특정 항목이 예상대로 작동하지 않은 경우입니다. 이 옵션의 경우 잠재적인 제품 문제를 자세히 입력합니다. 그런 다음, 스크린샷, 메일 주소, 진단 데이터를 선택적으로 포함합니다.  
+   - **찡그린 얼굴 보내기**: 콘솔에서 문제가 발생했거나, 특정 항목이 예상대로 작동하지 않은 경우입니다. 이 옵션의 경우 잠재적인 제품 문제를 자세히 입력합니다. 그런 다음, 스크린샷, 메일 주소, 진단 데이터를 선택적으로 포함합니다.  
 
-   - **제안 사항 보내기**: Configuration Manager를 변경하고 개선하기 위한 아이디어가 있는 경우입니다. 이 옵션을 선택하면 웹 브라우저에서 [UserVoice](https://configurationmanager.uservoice.com) 사이트가 열립니다.  
+   - **제안 보내기**: Configuration Manager를 변경하고 개선하기 위한 아이디어가 있는 경우입니다. 이 옵션을 선택하면 웹 브라우저에서 [UserVoice](https://configurationmanager.uservoice.com) 사이트가 열립니다.  
 
 이 피드백은 Microsoft의 Configuration Manager 제품 팀에게 바로 전달됩니다. Windows 10 피드백 허브도 사용할 수 있지만, 콘솔 내 피드백 메커니즘을 사용하는 것이 좋습니다.  
 
@@ -121,7 +122,7 @@ HTTP 연결을 사용하여 통신하도록 애플리케이션 카탈로그 웹 
 
 ### <a name="known-issues"></a>알려진 문제
 
-인터넷에 액세스할 수 없는 디바이스에서 피드백을 보내려고 하면 응용 프로그램이 예기치 않게 닫힐 수 있습니다. 웃는 얼굴이나 찡그린 얼굴을 보내려면 디바이스가 petrol.office.microsoft.com에 액세스할 수 있는지 확인합니다.
+인터넷에 액세스할 수 없는 장치에서 피드백을 보내려고 하면 애플리케이션이 예기치 않게 닫힐 수 있습니다. 웃는 얼굴이나 찡그린 얼굴을 보내려면 디바이스가 petrol.office.microsoft.com에 액세스할 수 있는지 확인합니다.
 
 
 
@@ -150,7 +151,7 @@ HTTP 연결을 사용하여 통신하도록 애플리케이션 카탈로그 웹 
 
  - **DP 작업 관리자**: 배포 지점에 콘텐츠를 배포하는 작업의 문제를 해결합니다.  
 
- - **컬렉션 평가 뷰어**: 컬렉션 평가 세부 정보를 표시합니다.  
+ - **컬렉션 평가 뷰어**: 컬렉션 평가 세부 정보를 봅니다.  
 
  - **콘텐츠 라이브러리 탐색기**: 콘텐츠 라이브러리 단일 인스턴스 저장소의 콘텐츠를 표시합니다.  
 
@@ -158,13 +159,13 @@ HTTP 연결을 사용하여 통신하도록 애플리케이션 카탈로그 웹 
 
  - **콘텐츠 소유권 도구**: 분리된 패키지의 소유권을 변경합니다. 이러한 패키지는 소유하는 사이트 서버가 없는 사이트에 존재합니다.  
 
- - **역할 기반 관리 및 감사 도구**: 관리자가 역할 구성을 감사하는 데 도움이 됩니다.  
+ - **역할 기반 관리 및 감사 도구**: 관리자가 역할 구성을 감사하도록 지원합니다.  
 
 #### <a name="client-tools"></a>클라이언트 도구
 
- - **CMTrace**: 로그를 표시합니다.  
+ - **CMTrace**: 로그를 봅니다.  
 
- - **배포 모니터링 도구**: 응용 프로그램, 업데이트 및 기준 배포의 문제를 해결합니다.  
+ - **배포 모니터링 도구**: 애플리케이션, 업데이트 및 기준 배포의 문제를 해결합니다.  
 
  - **정책 감시**: 정책 할당을 표시합니다.  
 
@@ -190,23 +191,23 @@ HTTP 연결을 사용하여 통신하도록 애플리케이션 카탈로그 웹 
 ## <a name="uninstall-application-on-approval-revocation"></a>승인 취소 시 애플리케이션 제거
 <!--1357891-->
 
-애플리케이션 승인 취소 시의 동작이 변경되었습니다. 이제 응용 프로그램에 대한 요청을 거부하면 클라이언트가 사용자 디바이스에서 응용 프로그램을 제거합니다. 
+애플리케이션 승인 취소 시의 동작이 변경되었습니다. 이제 애플리케이션에 대한 요청을 거부하면 클라이언트가 사용자 장치에서 애플리케이션을 제거합니다. 
 
 ### <a name="prerequisites"></a>필수 구성 요소
-- **장치당 사용자에 대한 응용 프로그램 요청 승인** 기능을 사용하도록 설정합니다.
+- **장치당 사용자에 대한 애플리케이션 요청 승인** 기능을 사용하도록 설정합니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
  작업을 완료합니다. 그런 다음, [피드백](#bkmk_feedback)을 전송하여 작업이 어떻게 진행되었는지 알려주세요.
 
-1. Configuration Manager 콘솔에서 승인이 필요한 애플리케이션을 사용자에게 배포합니다. 배포의 **배포 설정** 탭에서 **관리자가 디바이스에서 이 응용 프로그램에 대한 요청을 승인해야 합니다.** 옵션을 사용하도록 설정합니다.  
+1. Configuration Manager 콘솔에서 승인이 필요한 애플리케이션을 사용자에게 배포합니다. 배포의 **배포 설정** 탭에서 **관리자가 장치에서 이 애플리케이션에 대한 요청을 승인해야 합니다.** 옵션을 사용하도록 설정합니다.  
 
 2. 구성 관리자 클라이언트의 소프트웨어 센터에서 사용자가 애플리케이션 설치 승인을 요청합니다.  
 
-3. Configuration Manager 콘솔에서 디바이스에 응용 프로그램을 설치하려는 이 사용자의 요청을 승인합니다. 애플리케이션 승인 요청은 **소프트웨어 라이브러리** 작업 영역의 **애플리케이션 관리** 아래에 있는 **승인 요청** 노드에 표시됩니다.  
+3. Configuration Manager 콘솔에서 장치에 애플리케이션을 설치하려는 이 사용자의 요청을 승인합니다. 애플리케이션 승인 요청은 **소프트웨어 라이브러리** 작업 영역의 **애플리케이션 관리** 아래에 있는 **승인 요청** 노드에 표시됩니다.  
 
 4. 클라이언트의 소프트웨어 센터에서 사용자가 애플리케이션을 설치합니다.  
 
-5. Configuration Manager 콘솔에서 디바이스의 응용 프로그램에 대한 사용자 요청을 거부합니다.  
+5. Configuration Manager 콘솔에서 장치의 애플리케이션에 대한 사용자 요청을 거부합니다.  
 
 ### <a name="known-issues"></a>알려진 문제
 - 사용자가 클라이언트에 애플리케이션을 설치한 후 사용자 정책을 업데이트합니다. 소프트웨어 센터에서 **옵션** 탭으로 전환하고 **컴퓨터 유지 관리**를 확장한 다음 **정책 동기화**를 클릭합니다.<!--480609-->  
@@ -254,7 +255,7 @@ HTTP 연결을 사용하여 통신하도록 애플리케이션 카탈로그 웹 
 
 3. **소프트웨어 센터 설정**에 대해 **사용자 지정**을 클릭합니다.  
 
-4. **소프트웨어 센터에서 응용 프로그램 카탈로그 웹 사이트 링크 숨기기** 옵션을 사용하도록 설정합니다.   
+4. **소프트웨어 센터에서 애플리케이션 카탈로그 웹 사이트 링크 숨기기** 옵션을 사용하도록 설정합니다.   
 
 클라이언트 설정에 대한 자세한 내용은 [클라이언트 설정 구성](/sccm/core/clients/deploy/configure-client-settings)을 참조하세요.
 
@@ -288,7 +289,7 @@ HTTP 연결을 사용하여 통신하도록 애플리케이션 카탈로그 웹 
 ## <a name="improvements-to-os-deployment"></a>향상된 OS 배포
 OS 배포가 다음과 같이 향상되었으며, 일부는 사용자 의견 피드백을 반영한 결과입니다.  
 
- - [작업 순서 변수에 저장된 중요한 데이터 마스크](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/15282795-secret-task-sequence-variable-value-exposed): [작업 순서 변수 설정](/sccm/osd/understand/task-sequence-steps#BKMK_SetTaskSequenceVariable) 단계에서 새 옵션인 **이 값 표시 안 함**을 선택합니다. 예를 들어 암호를 지정하는 경우입니다.<!--1358330--> 이 옵션을 사용하도록 설정하는 경우 다음 동작이 적용됩니다.
+ - [작업 순서 변수에 저장된 중요한 데이터 마스킹](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/15282795-secret-task-sequence-variable-value-exposed): [작업 순서 변수 설정](/sccm/osd/understand/task-sequence-steps#BKMK_SetTaskSequenceVariable) 단계에서 새 옵션인 **이 값 표시 안 함**을 선택합니다. 예를 들어 암호를 지정하는 경우입니다.<!--1358330--> 이 옵션을 사용하도록 설정하는 경우 다음 동작이 적용됩니다.
    - 변수 값이 smsts.log에 표시되지 않습니다.
    - Configuration Manager 콘솔과 SMS 공급자에서 이 값이 암호 등의 다른 비밀과 동일하게 처리됩니다.
    - 작업 순서를 내보낼 때 값이 포함되지 않습니다.
@@ -298,12 +299,12 @@ OS 배포가 다음과 같이 향상되었으며, 일부는 사용자 의견 피
    > 변수와 해당 값이 작업 순서와 함께 XML로 저장되고 데이터베이스에서 난독 처리됩니다. 클라이언트가 관리 지점에서 작업 순서 정책을 요청하는 경우 전송 중 및 클라이언트에 저장될 때 암호화됩니다. 그러나 클라이언트에서 런타임 중 메모리 내 작업 순서 환경의 모든 변수 값은 일반 텍스트입니다. 작업 순서에 변수 값을 출력하는 단계가 포함된 경우 이 출력은 일반 텍스트입니다. 이 동작의 경우 관리자가 작업 순서에 이러한 단계를 포함하는 명시적 작업을 수행해야 합니다. 
 
 
- - [작업 순서의 명령 실행 단계 중 프로그램 이름 마스크](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/15282795-secret-task-sequence-variable-value-exposed): 잠재적으로 중요한 데이터가 표시되거나 기록되지 않도록 하려면 작업 순서 변수 **OSDDoNotLogCommand**를 `TRUE`로 설정합니다. 이 변수는 [명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 작업 순서 단계 중 smsts.log에서 프로그램 이름을 마스크합니다. <!--1358493-->  
+ - [작업 순서의 명령 실행 단계에서 프로그램 이름 마스크](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/15282795-secret-task-sequence-variable-value-exposed): 잠재적으로 중요한 데이터가 표시되거나 기록되지 않도록 하려면 작업 순서 변수 **OSDDoNotLogCommand**를 `TRUE`로 설정합니다. 이 변수는 [명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 작업 순서 단계 중 smsts.log에서 프로그램 이름을 마스크합니다. <!--1358493-->  
 
 
 
 ## <a name="improvements-to-the-configuration-manager-console"></a>Configuration Manager 콘솔에 대한 향상된 기능
-- **자산 및 준수**, **장치 컬렉션** 아래에서 컬렉션 멤버를 볼 때 이제 기본 사용자 정보가 표시됩니다.<!--510252-->  
+- **자산 및 준수**, **디바이스 컬렉션** 아래에서 컬렉션 멤버를 볼 때 이제 기본 사용자 정보가 표시됩니다.<!--510252-->  
 
 
 

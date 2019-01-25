@@ -10,12 +10,13 @@ ms.assetid: 7996b3eb-5259-483b-af40-adae2943d123
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: ebd51b397e37c69e8f6e8d1e154fc369347bd63a
-ms.sourcegitcommit: fe279229a90fdc8cddbb13c7ffdbbb22af0e25ef
+ROBOTS: NOINDEX
+ms.openlocfilehash: 6108a6d90a18277275e50ba980a9d81099ba116a
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47229367"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898497"
 ---
 # <a name="capabilities-in-technical-preview-1805-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1805의 기능
 
@@ -65,15 +66,15 @@ Steps to workaround, if any.
 6. **단계 설정** 탭에서 각 일정 설정에 대해 하나의 옵션을 선택하고 완료되면 **다음**을 선택합니다.  
 
     - 이전 단계의 성공에 대한 조건(첫 번째 단계에는 이 옵션을 사용할 수 없음)
-        - **배포 성공률**: 이전 단계 성공 조건에 대해 배포를 성공적으로 완료한 장치의 백분율을 지정합니다.  
+        - **배포 성공률**: 이전 단계 성공 조건에 대해 배포를 성공적으로 완료한 디바이스의 백분율을 지정합니다.  
 
     - 이전 단계 성공 후 배포의 이 단계를 시작하기 위한 조건  
         - **지연 기간(일) 후 자동으로 이 단계 시작**: 이전 단계 성공 후 다음 단계 시작 전까지 대기하는 기간(일)을 선택합니다. 
         - **수동으로 이 배포 단계 시작**: 이전 단계 성공 후 자동으로 이 단계를 시작하지 않습니다.  
 
     - 디바이스가 대상으로 지정된 후 소프트웨어 설치
-        - **가능하면 빨리**: 장치를 대상으로 지정하는 즉시 장치에 설치하는 최종 기한을 설정합니다.
-        - **최종 기한 시간(장치가 대상으로 지정된 시간 기준)**: 장치가 대상으로 지정된 후 특정 기간(일)을 설치의 최종 기한으로 설정합니다.  
+        - **가능하면 빨리**: 디바이스를 대상으로 지정하는 즉시 디바이스에 설치하는 최종 기한을 설정합니다.
+        - **최종 기한 시간(디바이스가 대상으로 지정된 시간 기준)**: 디바이스가 대상으로 지정되고 설치가 진행되기까지의 특정 일 수를 설정합니다.  
      
 7. 단계 설정 마법사를 완료합니다.
 
@@ -208,7 +209,7 @@ Configuration Manager 콘솔에서 **모니터링** 작업 영역으로 이동�
 
 3. CMG 연결 분석기 창에서 다음 옵션 중 하나를 선택하여 서비스를 인증합니다.  
 
-     1. **Azure AD 사용자**: 이 옵션은 Azure AD 조인 Windows 10 장치에 로그온한 클라우드 기반 사용자 ID와 동일하게 통신을 시뮬레이션하는 데 사용합니다. **로그인**을 클릭하여 이 Azure AD 사용자 계정에 대한 자격 증명을 안전하게 입력합니다.  
+     1. **Azure AD 사용자**: 이 옵션은 Azure AD 조인 Windows 10 디바이스에 로그온한 클라우드 기반 사용자 ID와 동일하게 통신을 시뮬레이션하는 데 사용합니다. **로그인**을 클릭하여 이 Azure AD 사용자 계정에 대한 자격 증명을 안전하게 입력합니다.  
 
      2. **클라이언트 인증서**: 이 옵션은 [클라이언트 인증 인증서](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#client-authentication-certificate)를 사용하는 Configuration Manager 클라이언트와 동일하게 통신을 시뮬레이션하는 데 사용합니다.  
 
@@ -217,7 +218,7 @@ Configuration Manager 콘솔에서 **모니터링** 작업 영역으로 이동�
 
 
 ## <a name="cmpivot"></a>CMPivot
-<!--1358456--> Configuration Manager는 고객이 보고용으로 사용하는 장치 데이터의 대규모 중앙 저장소를 항상 제공해왔습니다. 그러나 해당 데이터는 클라이언트에서 마지막으로 수집될 때와 마찬가지입니다. 
+<!--1358456--> Configuration Manager는 고객이 보고용으로 사용하는 디바이스 데이터의 대규모 중앙 저장소를 항상 제공해왔습니다. 그러나 해당 데이터는 클라이언트에서 마지막으로 수집될 때와 마찬가지입니다. 
 
 CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스할 수 있는 새로운 콘솔 내 유틸리티입니다. 이 유틸리티는 대상 컬렉션에서 현재 연결된 모든 디바이스에 대해 바로 쿼리를 실행하고 결과를 반환합니다. 그러면 도구에서 이 데이터를 필터링하고 그룹화할 수 있습니다. 온라인 클라이언트에서 실시간 데이터를 제공함으로써 비즈니스 질문에 신속하게 대답하고 문제를 해결하며 보안 인시던트에 응답할 수 있습니다.
 
@@ -277,7 +278,7 @@ CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스�
 
 #### <a name="bkmk_token1"></a> 시나리오 1: 관리 지점의 클라이언트
 <!--1356889-->
-[Azure AD 조인 장치](/azure/active-directory/device-management-introduction#azure-ad-joined-devices)가 CMG(클라우드 관리 게이트웨이)를 통해 HTTP용으로 구성된 관리 지점과 통신할 수 있습니다. 사이트 서버는 관리 지점에 대한 인증서를 생성하여 보안 채널을 통해 통신할 수 있도록 허용합니다.   
+[Azure AD 조인 디바이스](/azure/active-directory/device-management-introduction#azure-ad-joined-devices)가 CMG(클라우드 관리 게이트웨이)를 통해 HTTP용으로 구성된 관리 지점과 통신할 수 있습니다. 사이트 서버는 관리 지점에 대한 인증서를 생성하여 보안 채널을 통해 통신할 수 있도록 허용합니다.   
 
 > [!Note]  
 > 이 동작은 Configuration Manager 현재 분기 버전 1802에서 변경되어 이 시나리오에 HTTPS 사용 관리 지점이 필요합니다. 자세한 내용은 [HTTPS에 대한 관리 지점 설정](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#enable-management-point-for-https)을 참조하세요.  
@@ -285,8 +286,8 @@ CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스�
 #### <a name="bkmk_token2"></a> 시나리오 2: 배포 지점의 클라이언트
 <!--1358228--> 작업 그룹 또는 Azure AD 조인 클라이언트는 HTTP용으로 구성된 배포 지점에서 보안 채널을 통해 콘텐츠를 다운로드할 수 있습니다.   
 
-#### <a name="bkmk_token3"></a> 시나리오 3: Azure AD 장치 ID 
-<!--1358460--> Azure AD 사용자가 로그인되지 않은 Azure AD 조인 또는 [하이브리드 Azure AD 장치](/azure/active-directory/device-management-introduction#hybrid-azure-ad-joined-devices)에서 할당된 사이트와 안전하게 통신할 수 있습니다. 이제 클라우드 기반 디바이스 ID만 있으면 CMG 및 관리 지점을 인증하는 데 충분합니다.  
+#### <a name="bkmk_token3"></a> 시나리오 3: Azure AD 디바이스 ID 
+<!--1358460--> Azure AD 사용자가 로그인되지 않은 Azure AD 조인 또는 [하이브리드 Azure AD 디바이스](/azure/active-directory/device-management-introduction#hybrid-azure-ad-joined-devices)에서 할당된 사이트와 안전하게 통신할 수 있습니다. 이제 클라우드 기반 디바이스 ID만 있으면 CMG 및 관리 지점을 인증하는 데 충분합니다.  
 
 
 ### <a name="prerequisites"></a>필수 구성 요소  
@@ -405,7 +406,7 @@ SCUP 도구의 일반적인 용도에 대한 자세한 내용은 [System Center 
 - 이제 오프라인 피드백을 지원합니다. 콘솔에서 피드백을 저장한 다음, 인터넷에 연결된 시스템에서 Microsoft에 업로드하세요. `cd.latest\SMSSETUP\Tools\UploadOfflineFeedback\UploadOfflineFeedback.exe`에 있는 새로운 오프라인 피드백 업로더 도구를 사용하세요. 필수 명령줄 옵션 및 사용 가능한 옵션을 보려면 `--help` 옵션을 사용하여 도구를 실행하세요. 연결된 시스템은 **petrol.office.microsoft.com**에 액세스해야 합니다.
 
 ### <a name="known-issues"></a>알려진 문제
-인터넷에 연결된 머신의 콘솔에서 **웃는 얼굴 보내기** 또는 **찡그린 얼굴 보내기**를 사용하는 경우 “Error sending feedback.”(피드백을 보내는 중 오류가 발생했습니다.) 메시지가 반환될 수 있습니다. **자세한 내용**을 클릭하면 다음 텍스트가 표시됩니다. `{"Message":""}`. 이 오류는 백 엔드 피드백 시스템의 응답과 관련된 알려진 문제로 인해 발생합니다. 이 오류를 무시할 수 있습니다. Microsoft는 여전히 피드백을 받았습니다. (자세한 내용에 다른 메시지가 표시되는 경우 오프라인 피드백 옵션을 사용하여 나중에 피드백을 다시 보내 보세요.)
+인터넷에 연결된 머신의 콘솔에서 **웃는 얼굴 보내기** 또는 **찡그린 얼굴 보내기**를 사용하는 경우 “피드백을 보내는 중 오류가 발생했습니다.” 메시지가 반환될 수 있습니다. **자세한 내용**을 클릭하면 다음 텍스트가 표시됩니다. `{"Message":""}`. 이 오류는 백 엔드 피드백 시스템의 응답과 관련된 알려진 문제로 인해 발생합니다. 이 오류를 무시할 수 있습니다. Microsoft는 여전히 피드백을 받았습니다. (자세한 내용에 다른 메시지가 표시되는 경우 오프라인 피드백 옵션을 사용하여 나중에 피드백을 다시 보내 보세요.)
 
 
 
