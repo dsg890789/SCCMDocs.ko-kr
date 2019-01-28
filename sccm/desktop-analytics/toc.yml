@@ -1,0 +1,51 @@
+items:
+- name: Desktop Analytics
+  items:
+  - name: 개요
+    href: overview.md
+  - name: 자습서
+    items:
+    - name: 파일럿 Office 365
+      href: tutorial-office-365.md
+  - name: 개념
+    items:
+    - name: 배포 계획
+      href: about-deployment-plans.md
+    - name: 자산
+      href: about-assets.md
+    - name: 품질 및 기능 업데이트
+      href: about-updates.md
+    - name: Windows 앱에 대한 호환성 위험
+      href: compat-risk.md
+    - name: 상태 모니터링
+      href: health-status-monitoring.md
+  - name: 방법 가이드
+    items:
+    - name: Desktop Analytics 설정
+      href: set-up.md
+    - name: Configuration Manager 연결
+      href: connect-configmgr.md
+    - name: 디바이스 등록
+      href: enroll-devices.md
+    - name: 배포 계획 만들기
+      href: create-deployment-plans.md
+    - name: 파일럿 배포
+      href: deploy-pilot.md
+    - name: 프로덕션 환경에 배포
+      href: deploy-prod.md
+    - name: 앱 상태 분석기를 사용하여 호환성 평가
+      href: app-health-analyzer.md
+  - name: 참조
+    items:
+    - name: 데이터 공유를 사용하도록 설정
+      href: enable-data-sharing.md
+    - name: 문제 해결
+      href: troubleshooting.md
+    - name: 개인 정보 보호
+      href: privacy.md
+ms.openlocfilehash: 473ddb150610af13b099bc601e05e8c50be6aac8
+ms.sourcegitcommit: ad25a7bdd983c5a0e4c95bffdc61c9a1ebcbb765
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55073190"
