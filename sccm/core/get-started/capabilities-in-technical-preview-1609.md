@@ -10,12 +10,13 @@ ms.assetid: e2a59116-b2e5-4dd2-90eb-0b8a5eb50b56
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: d5bc2f342ec39366a22e915dab08a7338f850dd1
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ROBOTS: NOINDEX
+ms.openlocfilehash: b999fd8ab17ba0dd28710aa4a38d6417535972f2
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53415163"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898565"
 ---
 # <a name="capabilities-in-technical-preview-1609-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1609의 기능
 
@@ -103,7 +104,7 @@ Configuration Manager를 Intune과 함께 사용할 경우 OMA-URI를 사용하�
 
 #### <a name="security-settings"></a>보안 설정
 
-- **메모리 카드 암호화 필요**
+- **스토리지 카드 암호화 필요**
 - **화면 캡처 허용**
 - **진단 데이터 제출 허용**
 
@@ -121,7 +122,7 @@ Configuration Manager를 Intune과 함께 사용할 경우 OMA-URI를 사용하�
 
 #### <a name="device-capability-settings"></a>디바이스 기능 설정
 
-- **이동식 저장소 허용**
+- **이동식 스토리지 허용**
 - **Wi-Fi 테더링 허용**
 - **지리적 위치 허용**
 - **NFC 허용**
