@@ -10,12 +10,13 @@ ms.assetid: eb20eb90-bcc0-41de-bfea-638ea470c0dd
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b29044858bb9a9d57db1c2229c826630d0905860
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ROBOTS: NOINDEX
+ms.openlocfilehash: 94a8379a1d04a7344e5c50cf8a651dccab3b4948
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53416523"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54897987"
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1610-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1610에 대한 진단 사용 현황 데이터 수집의 수준
 
@@ -110,7 +111,7 @@ System Center Configuration Manager 버전 1610에서 이 수준에는 다음이
 
     -   유형별 패키지 개수  
 
-    -   운영 체제별 응용 프로그램 적용 가능성 개수  
+    -   운영 체제별 애플리케이션 적용 가능성 개수  
 
     -   패키지/프로그램 배포 개수  
 

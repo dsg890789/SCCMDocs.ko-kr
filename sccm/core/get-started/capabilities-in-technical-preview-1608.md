@@ -10,12 +10,13 @@ ms.assetid: 63e1df5e-637c-4b07-b7ec-95340f43a805
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: d2a55ed81017bc8deb10ec9af74278d35b2eea39
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ROBOTS: NOINDEX
+ms.openlocfilehash: 304f5e65d97682914f917bd2e125763156098225
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32333810"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54896382"
 ---
 # <a name="capabilities-in-technical-preview-1608-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1608의 기능
 
@@ -35,7 +36,7 @@ ms.locfileid: "32333810"
 
 ## <a name="improvements-to-software-center"></a>소프트웨어 센터 개선
 * 소프트웨어 센터 **애플리케이션**, **업데이트** 및 **운영 체제** 탭에는 이제 최근에 추가된 소프트웨어가 표시됩니다. 탐색 창의 숫자에는 각 탭에 있는 새 소프트웨어 수가 표시됩니다.
-* 이제 사용자가 애플리케이션에 대한 승인을 요청하고 소프트웨어 센터의 **애플리케이션 정보** 보기에서 요청 기록을 볼 수 있습니다. **응용 프로그램 정보**에서 **요청** 단추를 누르면 더 이상 웹 기반 응용 프로그램 카탈로그로 리디렉션되지 않습니다.
+* 이제 사용자가 애플리케이션에 대한 승인을 요청하고 소프트웨어 센터의 **애플리케이션 정보** 보기에서 요청 기록을 볼 수 있습니다. **애플리케이션 정보**에서 **요청** 단추를 누르면 더 이상 웹 기반 애플리케이션 카탈로그로 리디렉션되지 않습니다.
 
 ## <a name="improvements-to-asset-intelligence"></a>Asset Intelligence 개선
 다른 소프트웨어와 부모 및 자식 관계를 설정할 수 있도록 인벤토리 소프트웨어의 속성에 필드를 추가했습니다. 인벤토리 소프트웨어 목록에서 소프트웨어의 부모를 볼 수 있으며 모든 자식 소프트웨어를 숨길 수도 있습니다.

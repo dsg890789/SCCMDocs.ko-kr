@@ -10,12 +10,13 @@ ms.assetid: 00684289-d21a-45f8-b1e3-c5c787d73096
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a9a5aeb35137a74152333a78e95781fb727eecdf
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ROBOTS: NOINDEX
+ms.openlocfilehash: cf42e357abf40593484867186c9f3753df6bb94a
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53421606"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54897953"
 ---
 # <a name="capabilities-in-technical-preview-1705-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1705의 기능
 

@@ -10,12 +10,13 @@ ms.assetid: df2e57b9-6445-4067-98e7-ace85d4e6aa6
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0dcd2db7543d68a97e00244536d2aac218d440e7
-ms.sourcegitcommit: 2cc635835709fb8d86cdb63ea34233b36c94d4d8
+ROBOTS: NOINDEX
+ms.openlocfilehash: 0d45586267e06185752f597549f798be19d4d47b
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52259066"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54897052"
 ---
 # <a name="what39s-new-in-version-1606-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1606의 새로운 기능
 
@@ -146,7 +147,7 @@ Configuration Manager를 사용하여 다시 시작이 필요한 소프트웨어
 
 ## <a name="operating-system-deployment"></a>운영 체제 배포
 
-### <a name="improvements-to-the-task-sequence-step-install-software-updates"></a>작업 순서 단계의 향상 기능: 소프트웨어 업데이트 설치
+### <a name="improvements-to-the-task-sequence-step-install-software-updates"></a>작업 순서 단계의 향상된 기능: 소프트웨어 업데이트 설치
 새로운 설정, **캐시된 검색 결과에서 소프트웨어 업데이트 평가**는 캐시된 검색 결과를 사용하는 대신 소프트웨어 업데이트에 대한 전체 검색을 수행하는 옵션을 제공합니다. 자세한 내용은 [System Center Configuration Manager의 작업 순서 단계](../../../osd/understand/task-sequence-steps.md#BKMK_InstallSoftwareUpdates)를 참조하세요.
 
 또한 새 작업 순서 변수, **SMSTSSoftwareUpdateScanTimeout**을 사용할 수 있습니다. 이 변수를 사용하여 소프트웨어 업데이트 설치 작업 순서 단계를 진행하는 동안 소프트웨어 업데이트 검사 시간 제한을 제어할 수 있습니다. 기본값은 30분입니다. 자세한 내용은 [System Center Configuration Manager의 작업 순서 기본 제공 변수](../../../osd/understand/task-sequence-built-in-variables.md)를 참조하세요.

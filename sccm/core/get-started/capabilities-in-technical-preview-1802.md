@@ -10,12 +10,13 @@ ms.assetid: 4884a2d3-13ce-44e5-88c4-a66dc7ec6014
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a71fff51f39e6292489a28436dfd18a3755698dc
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ROBOTS: NOINDEX
+ms.openlocfilehash: 7ff02203efac1802db166fef4a1c5a65d1b72615
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53417016"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898531"
 ---
 # <a name="capabilities-in-technical-preview-1802-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1802의 기능
 
@@ -276,7 +277,7 @@ Configuration Manager는 기존 클래식 CMG 인스턴스를 Azure Resource Man
    - Azure AD 조인(클라우드 도메인 조인이라고도 함)
 - 인터넷 기반 클라이언트를 지원하려면
     - [클라우드 관리 게이트웨이](/sccm/core/clients/manage/plan-cloud-management-gateway) 
-    - 클라이언트 설정 사용하도록 설정: [클라이언트 정책](/sccm/core/clients/deploy/about-client-settings#client-policy) 그룹에서 **인터넷 클라이언트의 사용자 정책 요청 사용하도록 설정**
+    - 클라이언트 설정 사용: [클라이언트 정책](/sccm/core/clients/deploy/about-client-settings#client-policy) 그룹에서 **인터넷 클라이언트의 사용자 정책 요청 사용하도록 설정**
 - 회사 네트워크에서 클라이언트를 지원하려면
     - 클라이언트에서 사용하는 경계 그룹에 클라우드 배포 지점을 추가합니다.
     - 클라이언트가 HTTPS 사용 관리 지점의 FQDN(정규화된 도메인 이름)을 확인할 수 있어야 합니다.

@@ -10,12 +10,13 @@ ms.assetid: f4706a58-1f11-4eab-b1eb-3d1a0da02d0f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e8f7a8fbdbd52a8f872583cf2237a06ee8c1420e
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ROBOTS: NOINDEX
+ms.openlocfilehash: 4a52d8dc4082e66e1670359e402b371dc93f6ce7
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53414721"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898123"
 ---
 # <a name="capabilities-in-technical-preview-1710-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1710의 기능
 
@@ -143,7 +144,7 @@ CNG 인증서를 사용하려면 CA(인증 기관)가 대상 컴퓨터에 대한
 
 - **암호화** 탭
 
-    - **공급자 범주**는 **주요 저장소 공급자**여야 합니다.  (필수)
+    - **공급자 범주**는 **주요 스토리지 공급자**여야 합니다.  (필수)
 
 최상의 결과를 위해 Active Directory 정보에서 제목 이름을 빌드하는 것이 좋습니다.  **주체 이름 형식**에 DNS 이름을 사용하고 DNS 이름을 대체 주체 이름에 포함시킵니다.  그렇지 않으면 디바이스가 인증서 프로필에 등록될 때 이 정보를 제공해야 합니다.
 

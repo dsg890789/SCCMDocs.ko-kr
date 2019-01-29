@@ -8,15 +8,15 @@ ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: aae1cf2f-2c04-4f68-a03a-f4a925433c09
 author: aczechowski
-robots: noindex,nofollow
+ROBOTS: NOINDEX
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: a11abd53a83f52cbb05d2a49c3271becb4cedb64
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.openlocfilehash: ed6da304f689430d1d141b823646b07deb087928
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53420195"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54897715"
 ---
 # <a name="capabilities-in-technical-preview-1601-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1601의 기능
 
@@ -117,7 +117,7 @@ ms.locfileid: "53420195"
 -   **기본 규칙 재정의 - Intune 등록 및 규격 디바이스가 Exchange 온-프레미스에 액세스할 수 있도록 항상 허용:**  
 
      이 옵션을 선택하면 Intune에 등록되어 있고 준수 정책을 준수하는 디바이스는 Exchange 온-프레미스에 액세스할 수 있습니다. 이 규칙은 기본 규칙을 재정의하며, 이것은 기본 규칙을 액세스를 격리 또는 차단하도록 설정하더라도 등록 및 규격 디바이스는 여전히 Exchange 온-프레미스에 액세스할 수 있음을 의미합니다.  
-     등록 및 규격 장치가 항상 Exchange 온-프레미스를 통해 메일에 액세스할 수 있도록 하려면 이 설정을 사용합니다.  
+     등록 및 규격 디바이스가 항상 Exchange 온-프레미스를 통해 메일에 액세스할 수 있도록 하려면 이 설정을 사용합니다.  
 
      다음 플랫폼에서 지원됩니다.  Windows Phone 8 이상 및 iOS 6 이상. Android 4.0 이상, Samsung KNOX Standard 4.0 이상  
 

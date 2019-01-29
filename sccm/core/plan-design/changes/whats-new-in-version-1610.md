@@ -10,13 +10,13 @@ ms.assetid: f7eb0803-3f8f-4ab6-825a-99ac11f5ba7d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f53dbbf341d3c6474c1c5dd5066b8d1f2a0fdc63
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ROBOTS: NOINDEX
+ms.openlocfilehash: 85e7761699944e76216d9ba22cd46f5b80c76533
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53424241"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54897681"
 ---
 # <a name="what39s-new-in-version-1610-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1610의 새로운 기능
 
@@ -217,7 +217,7 @@ Microsoft는 맬웨어, 위험한 앱 등을 디바이스에서 검색하여 iOS
 - **지문 잠금 해제 허용**
 
 #### <a name="security-settings"></a>보안 설정
-- **메모리 카드 암호화 필요**
+- **스토리지 카드 암호화 필요**
 - **화면 캡처 허용**
 - **진단 데이터 제출 허용**
 
@@ -232,7 +232,7 @@ Microsoft는 맬웨어, 위험한 앱 등을 디바이스에서 검색하여 iOS
 - **Google Play 스토어 사용 가능**
 
 #### <a name="device-capability-settings"></a>디바이스 기능 설정
-- **이동식 저장소 허용**
+- **이동식 스토리지 허용**
 - **Wi-Fi 테더링 허용**
 - **지리적 위치 허용**
 - **NFC 허용**

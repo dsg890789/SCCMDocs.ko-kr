@@ -9,13 +9,13 @@ ms.assetid: 1fa7d0d9-4bb5-4475-82ff-0d5da4a3da61
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-robots: noindex,nofollow
-ms.openlocfilehash: d4b0d0553254bd3bd86dd2ade1a3c1afc5127ad2
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ROBOTS: NOINDEX
+ms.openlocfilehash: 169bb7fa3bfcd8ead178685be3b9d466069b016d
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32333096"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898276"
 ---
 # <a name="learn-more-about-available-updates-for-system-center-configuration-manager"></a>System Center Configuration Manager의 사용 가능한 업데이트에 대한 자세한 내용을 알아봅니다.
 

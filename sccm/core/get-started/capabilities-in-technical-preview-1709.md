@@ -10,12 +10,13 @@ ms.assetid: a3ef6bdc-a204-4c4c-a02f-2bd03f35183e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 79d7488e0554a36eb274bf4ef76cff92b48a71ba
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ROBOTS: NOINDEX
+ms.openlocfilehash: a1c0654b191b298ca411b95ad13d5361ae4df579
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53418444"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898106"
 ---
 # <a name="capabilities-in-technical-preview-1709-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1709의 기능
 
@@ -149,11 +150,12 @@ AD 및 Azure AD에 조인하고, Intune과 Configuration Manager에서 클라이
 #### <a name="command-line-to-install-configuration-manager-client"></a>Configuration Manager 클라이언트를 설치하는 명령줄
 Configuration Manager 클라이언트가 아닌 Windows 10 디바이스의 경우 Intune에서 앱을 만듭니다. 다음 섹션에서 앱을 만들 때 다음 명령줄을 사용합니다.
 
-ccmsetup.msi CCMSETUPCMD="/mp:&amp;#60;*클라우드 관리 게이트웨이 상호 인증 엔드포인트의 URL*&amp;#62;/ CCMHOSTNAME=&amp;#60;*클라우드 관리 게이트웨이 상호 인증 엔드포인트의 URL*&amp;#62; SMSSiteCode=&amp;#60;*Sitecode*&amp;#62; SMSMP=https:&amp;#47;/&amp;#60;*MP의 FQDN*&amp;#62; AADTENANTID=&amp;#60;*AAD 테넌트 ID*&amp;#62; AADTENANTNAME=&amp;#60;*테넌트 이름*&amp;#62; AADCLIENTAPPID=&amp;#60;*AAD 통합용 Server AppID*&amp;#62; AADRESOURCEURI=https:&amp;#47;/&amp;#60;*리소스 ID*&amp;#62;”
+ccmsetup.msi CCMSETUPCMD="/mp:&#60;*클라우드 관리 게이트웨이 상호 인증 엔드포인트의 URL*&#62;/ CCMHOSTNAME=&#60;*클라우드 관리 게이트웨이 상호 인증 엔드포인트의 URL*&#62; SMSSiteCode=&#60;*Sitecode*&#62; SMSMP=https:&#47;/&#60;*MP의 FQDN*&#62; AADTENANTID=&#60;*AAD 테넌트 ID*&#62; AADTENANTNAME=&#60;*테넌트 이름*&#62; AADCLIENTAPPID=&#60;*AAD 통합용 Server AppID*&#62; AADRESOURCEURI=https:&#47;/&#60;*리소스 ID*&#62;”
 
 예를 들어, 다음 값을 포함하는 경우:
 
-- **클라우드 관리 게이트웨이 상호 인증 엔드포인트의 URL**: https:/&amp;#47;contoso.cloudapp.net/CCM_Proxy_MutualAuth/72057594037928100    
+- 
+  **클라우드 관리 게이트웨이 상호 인증 엔드포인트의 URL**: https:/&#47;contoso.cloudapp.net/CCM_Proxy_MutualAuth/72057594037928100    
 
    >[!Note]    
    >**클라우드 관리 게이트웨이 상호 인증 엔드포인트의 URL** 값에 **vProxy_Roles** SQL 보기의 **MutualAuthPath** 값을 사용합니다.
