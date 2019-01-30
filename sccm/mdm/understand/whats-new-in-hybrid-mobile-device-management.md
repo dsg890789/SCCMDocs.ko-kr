@@ -2,7 +2,7 @@
 title: 하이브리드 MDM의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 디바이스 관리 기능에 대해 알아봅니다.
-ms.date: 01/10/2019
+ms.date: 01/28/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 7b127cee-61f1-4681-9760-caebed36ddf5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 1ec1155ec578e0eab957baa991628ed18eef6c62
-ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
+ms.openlocfilehash: 84c244a959bb9a087d33410fe0605bc6ddcadfbc
+ms.sourcegitcommit: a2ecd84d93f431ee77848134386fec14031aed6a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54898650"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230905"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 디바이스 관리의 새로운 기능
 
@@ -50,6 +50,15 @@ ms.locfileid: "54898650"
 ## <a name="january-2019"></a>2019 년 1 월
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+#### <a name="intune-app-protection-policies-ui-update"></a>Intune 앱 보호 정책 UI 업데이트 
+<!--3251427--> 설정에 대 한 레이블 및 각 쉽게 이해할 수 있도록 Intune 앱 보호에 대 한 단추 변경 했습니다. 변경 내용 중 일부는 다음과 같습니다.  
+
+- 컨트롤에서 변경 됩니다 **예** / **없음** 컨트롤을 주로 **블록** / **허용** 및**사용 안 함** / **사용** 컨트롤입니다. 레이블이 업데이트 됩니다.  
+
+- 설정 변경, 설정 및 레이블을 side-by-side-되므로 컨트롤 더 나은 탐색을 제공 합니다.   
+
+기본 설정 및 설정 수가 동일 하지만이 변경 이해, 탐색 하 고, 선택한 앱 보호 정책을 적용할 쉽게 자세한 설정을 활용할 수 있습니다. 자세한 내용은 [iOS 설정](https://docs.microsoft.com/intune/app-protection-policy-settings-ios#access-requirements) 하 고 [Android 설정](https://docs.microsoft.com/intune/app-protection-policy-settings-android#access-requirements)합니다.
 
 #### <a name="tenant-status-dashboard"></a>테 넌 트 상태 대시보드
 <!--1124854--> 새 [테 넌 트 상태 페이지](https://docs.microsoft.com/intune/tenant-status) 테 넌 트에 대 한 상태와 관련된 세부 정보를 볼 수 있는 단일 위치를 제공 합니다. 대시보드는 네 가지 영역으로 구분 됩니다.
