@@ -10,12 +10,13 @@ ms.assetid: b587779e-1bd3-4ee3-8146-8e31f53499bd
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: be6d3bc210bfc672efc21b3c9397f679f00f2a82
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ROBOTS: NOINDEX
+ms.openlocfilehash: 53b09c5652eed1a1fad6cac0a2cb146863886d24
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53416408"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54897481"
 ---
 # <a name="checklist-for-installing-update-1702-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 업데이트 1702를 설치하기 위한 검사 목록
 
@@ -169,7 +170,7 @@ Do not run a test database upgrade on the production site database. Doing so upd
 
 콘솔에서 필수 구성 요소 검사를 실행 하려면 **관리 > 개요 > 클라우드 서비스 > 업데이트 및 서비스**로 이동합니다. 다음으로 **Configuration Manager 1702 업데이트 패키지**를 마우스 오른쪽 단추로 클릭한 후 **필수 구성 요소 검사 실행**을 선택합니다.
 
-시작한 다음, 필수 구성 요소 검사를 모니터링하는 방법에 대한 자세한 내용은 [System Center Configuration Manager용 콘솔 내 업데이트](/sccm/core/servers/manage/install-in-console-updates) 항목의  **3단계: 업데이트를 설치하기 전에 필수 구성 요소 검사기 실행** 을 참조하세요.
+시작한 다음, 필수 구성 요소 검사를 모니터링하는 방법에 대한 자세한 내용은 [System Center Configuration Manager용 콘솔 내 업데이트](/sccm/core/servers/manage/install-in-console-updates) 항목의 3단계: 업데이트를 설치하기 전에 필수 구성 요소 검사기 실행** 을 참조하세요.
 
 > [!IMPORTANT]  
 > 필수 조건 검사가 독립적으로 또는 업데이트 설치의 일부로 실행되면 프로세스에서 사이트 유지 관리 작업에 사용되는 일부 제품 소스 파일을 업데이트합니다. 따라서 필수 구성 요소 검사기를 실행한 후 업데이트를 설치하기 전에 사이트 유지 관리 작업을 수행해야 하는 경우 사이트 서버의 CD.Latest 폴더에서  **Setupwpf.exe** (Configuration Manager 설치 프로그램)를 실행합니다.
