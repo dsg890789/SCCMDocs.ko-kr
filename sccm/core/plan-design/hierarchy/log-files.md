@@ -19,7 +19,7 @@ ms.locfileid: "53416506"
 ---
 # <a name="log-files-in-configuration-manager"></a>Configuration Manager의 로그 파일
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상:1 System Center Configuration Manager(현재 분기)*
 
 Configuration Manager에서는 클라이언트 및 사이트 서버 구성 요소가 개별 로그 파일에 프로세스 정보를 기록합니다. 이러한 로그 파일의 정보를 사용하면 발생할 수 있는 문제를 해결할 수 있습니다. Configuration Manager에서는 기본적으로 클라이언트 및 서버 구성 요소 로깅을 사용하도록 설정됩니다.   
 
@@ -190,7 +190,7 @@ Configuration Manager는 다양한 위치에 로그 파일을 저장합니다. �
 |SCClient_&lt;*도메인*\>@&lt;*사용자 이름*\>_2.log|클라이언트 컴퓨터의 지정된 사용자에 대한 소프트웨어 센터의 이전 활동을 기록합니다.|  
 |Scheduler.log|모든 클라이언트 작업에 대해 예약된 작업의 활동을 기록합니다.|  
 |SCNotify_&lt;*도메인*\>@&lt;*사용자 이름*\>_1.log|지정된 사용자의 소프트웨어에 대해 사용자에게 알리는 활동을 기록합니다.|  
-|SCNotify_&lt;*도메인*\>@&lt;*사용자 이름*\>_1-&lt; *날짜_시간*>.log|지정된 사용자의 소프트웨어에 대해 사용자에게 알리는 이전 정보를 기록합니다.|  
+|SCNotify_&lt;*도메인*\>@&lt;*사용자 이름*\>_1-&lt; *날짜\_시간*>.log|지정된 사용자의 소프트웨어에 대해 사용자에게 알리는 이전 정보를 기록합니다.|  
 |setuppolicyevaluator.log|WMI의 구성 및 인벤토리 정책 작성을 기록합니다.|  
 |SleepAgent_&lt;*도메인*\>@SYSTEM_0.log|절전 모드 해제 프록시에 대한 기본 로그 파일입니다.|  
 |smscliui.log|제어판에서 Configuration Manager 클라이언트의 사용을 기록합니다.|  
