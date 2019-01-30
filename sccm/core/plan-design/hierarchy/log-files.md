@@ -19,7 +19,7 @@ ms.locfileid: "53416506"
 ---
 # <a name="log-files-in-configuration-manager"></a>Configuration Manager의 로그 파일
 
-*적용 대상:1 System Center Configuration Manager(현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 Configuration Manager에서는 클라이언트 및 사이트 서버 구성 요소가 개별 로그 파일에 프로세스 정보를 기록합니다. 이러한 로그 파일의 정보를 사용하면 발생할 수 있는 문제를 해결할 수 있습니다. Configuration Manager에서는 기본적으로 클라이언트 및 서버 구성 요소 로깅을 사용하도록 설정됩니다.   
 
