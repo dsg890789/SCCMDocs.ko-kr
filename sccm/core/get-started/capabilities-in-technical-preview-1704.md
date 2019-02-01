@@ -10,12 +10,13 @@ ms.assetid: e318e705-20f2-417d-8cde-7dfe661b2fa7
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b86b1a4b8400be29f9b4c468c280fdd0a47385c3
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ROBOTS: NOINDEX
+ms.openlocfilehash: 0b47d64a350a9cf0a8838809604d1a38b55ea3b1
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32343493"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54896739"
 ---
 # <a name="capabilities-in-technical-preview-1704-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1704의 기능
 
@@ -31,7 +32,7 @@ System Center Configuration Manager(Configuration Manager)에서 앱 구성 정�
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기                 
 
-Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **앱 구성 정책**을 선택하고 **앱 구성 정책 만들기**를 선택합니다. 이제 마법사의 **일반** 페이지에서 **구성 정책 형식을 선택**할 수 있습니다. 앱 구성 정책인 **Android for Work 앱용 구성 정책**에 따른 대상 플랫폼을 지정합니다. **이름 및 값 쌍을 지정**하거나 **속성 목록 JSON 파일을 찾을** 수 있습니다. 새 앱 구성 정책이 **소프트웨어 라이브러리** 작업 영역의 **앱 구성 정책** 노드에 표시됩니다. 앱 구성 정책을 Android for Work 앱 배포와 연결하려면 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications) 항목의 프로시저를 사용하여 일반적인 방식으로 애플리케이션을 배포합니다.
+Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **앱 구성 정책**을 선택하고 **앱 구성 정책 만들기**를 선택합니다. 이제 마법사의 **일반** 페이지에서 **구성 정책 형식을 선택**할 수 있습니다. 앱 구성 정책에서 대상이 지정된 플랫폼을 지정합니다. **Android for Work 앱에 대한 구성 정책**. **이름 및 값 쌍을 지정**하거나 **속성 목록 JSON 파일을 찾을** 수 있습니다. 새 앱 구성 정책이 **소프트웨어 라이브러리** 작업 영역의 **앱 구성 정책** 노드에 표시됩니다. 앱 구성 정책을 Android for Work 앱 배포와 연결하려면 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications) 항목의 프로시저를 사용하여 일반적인 방식으로 애플리케이션을 배포합니다.
 
 ## <a name="hardware-inventory-collects-secure-boot-information"></a>하드웨어 인벤토리를 통해 보안 부팅 정보 수집
 이제 하드웨어 인벤토리는 클라이언트에서 보안 부팅을 사용할 수 있는지에 대한 정보를 수집합니다. 이 정보는 버전 1702에 도입된 **SMS_Firmware** 클래스에 저장되며 하드웨어 인벤토리에서 기본적으로 사용하도록 설정됩니다. 하드웨어 인벤토리에 대한 자세한 내용은 [하드웨어 인벤토리 구성 방법](/sccm/core/clients/manage/inventory/configure-hardware-inventory)을 참조하세요.
@@ -66,6 +67,6 @@ Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응�
 ## <a name="improvements-to-operating-system-deployment"></a>운영 체제 배포 향상
 사용자 의견 피드백을 반영하여 운영 체제 배포가 다음과 같이 향상되었습니다.
 
-- [운영 체제 이미지용 새 **OS 버전** 열](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/17558407-add-a-column-to-the-operating-system-images-node-f): **운영 체제 이미지** 및 **운영 체제 업그레이드 패키지** 노드의 정보를 확인할 때 새롭게 추가된 **OS 버전** 열에 이미지의 운영 체제 버전이 표시됩니다. .WIM의 첫 번째 인덱스 버전만 표시됩니다. 이미지의 **세부 정보** 탭으로 이동하면 다른 인덱스의 운영 체제 버전을 검토할 수 있습니다.
+- [운영 체제 이미지용 새 **OS 버전** 열](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/17558407-add-a-column-to-the-operating-system-images-node-f): **운영 체제 이미지** 및 **운영 체제 업그레이드 패키지** 노드의 정보를 확인할 때 **OS 버전** 열을 새로 추가하여 이미지용 운영 체제 버전을 표시했습니다. .WIM의 첫 번째 인덱스 버전만 표시됩니다. 이미지의 **세부 정보** 탭으로 이동하면 다른 인덱스의 운영 체제 버전을 검토할 수 있습니다.
 
-- [보다 효율적인 방식으로 Smsts.log에 로깅](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/16791919-stop-filling-smsts-log-with-useless):이 버전부터는 CCM_CIVersionInfo.PolicyID 정보에 대한 항목이 smsts.log 파일에 더 이상 기록되지 않습니다. 이전 버전에서는 해당 정보를 포함하는 항목이 매우 많은 경우가 있어서 로그 파일에서 관련성이 높은 정보를 찾기가 어려웠습니다.
+- [보다 효율적인 방식으로 Smsts.log에 로깅](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/16791919-stop-filling-smsts-log-with-useless): 이 버전부터는 CCM_CIVersionInfo.PolicyID 정보에 대한 항목이 smsts.log 파일에 더 이상 기록되지 않습니다. 이전 버전에서는 해당 정보를 포함하는 항목이 매우 많은 경우가 있어서 로그 파일에서 관련성이 높은 정보를 찾기가 어려웠습니다.

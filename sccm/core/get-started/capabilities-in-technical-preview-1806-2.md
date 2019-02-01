@@ -10,12 +10,13 @@ ms.assetid: 3af2a69d-30e7-4dce-832d-82b7a1c082f8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5183b30d9184f7119d1423b5773da2b692026ab7
-ms.sourcegitcommit: 64b343906afdd442189559119eea8e933642cbf8
+ROBOTS: NOINDEX
+ms.openlocfilehash: f052d4c4be1334214872ff91f16be1888850a118
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39342817"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898514"
 ---
 # <a name="capabilities-in-technical-preview-18062-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1806.2의 기능
 
@@ -85,7 +86,7 @@ Configuration Manager를 버전 1806.2로 ‘업데이트하기 전에’ SQL Na
 
 이 릴리스에서는 [단계적 배포](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence)의 다음 사항이 개선되었습니다.
 - [단계적 배포 상태](#bkmk_pod-monitor)
-- [응용 프로그램의 단계적 배포](#bkmk_pod-app)
+- [애플리케이션의 단계적 배포](#bkmk_pod-app)
 - [단계적 배포 중 점진적 출시](#bkmk_pod-throttle)
 
 
@@ -96,25 +97,25 @@ Configuration Manager를 버전 1806.2로 ‘업데이트하기 전에’ SQL Na
 
 이 대시보드에는 배포의 각 단계에 대해 다음과 같은 정보가 표시됩니다.  
 
-- **총 장치 수**: 이 단계의 대상으로 지정된 장치의 수입니다.  
+- **총 디바이스 수**: 이 단계의 대상으로 지정된 디바이스의 수입니다.  
 
-- **상태**: 이 단계의 현재 상태입니다. 각 단계는 다음 상태 중 하나일 수 있습니다.  
+- **상태:** 이 단계의 현재 상태입니다. 각 단계는 다음 상태 중 하나일 수 있습니다.  
 
-    - **배포가 생성됨**: 단계적 배포에서 이 단계의 컬렉션에 대한 소프트웨어 배포를 만들었습니다. 클라이언트가 이 소프트웨어에서 적극적으로 대상으로 지정됩니다.  
+    - **배포가 생성됨**: 단계별 배포에서 이 단계의 컬렉션에 대한 소프트웨어 배포를 만들었습니다. 클라이언트가 이 소프트웨어에서 적극적으로 대상으로 지정됩니다.  
 
     - **대기 중**: 이전 단계가 배포의 성공 조건에 도달하지 못해 이 단계를 계속 진행합니다.  
 
     - **일시 중단됨**: 관리자가 배포를 일시 중단했습니다.  
 
-- **진행률**: 클라이언트에서 색으로 구분된 배포 상태입니다. 예를 들어 성공, 진행 중, 오류, 요구 사항에 맞지 않음, 알 수 없음 등이 있습니다. 
+- **진행률**: 클라이언트에서 색으로 구분된 배포 상태입니다. 예: 성공, 진행 중, 오류, 요구 사항에 맞지 않음, 알 수 없음 등이 있습니다. 
 
 
 #### <a name="known-issue"></a>알려진 문제
 단계적 배포 상태 대시보드에서 동일한 단계에 대해 여러 행을 표시할 수 있습니다.<!--518510-->
 
 
-### <a name="bkmk_pod-app"></a> 응용 프로그램의 단계적 배포
-<!--1358147--> 응용 프로그램에 대한 단계적 배포를 만듭니다. 단계적 배포에서는 사용자 지정 가능한 조건 및 그룹에 따라 소프트웨어 출시를 조정하고 순차적으로 진행할 수 있습니다.
+### <a name="bkmk_pod-app"></a> 애플리케이션의 단계적 배포
+<!--1358147--> 애플리케이션에 대한 단계적 배포를 만듭니다. 단계적 배포에서는 사용자 지정 가능한 조건 및 그룹에 따라 소프트웨어 출시를 조정하고 순차적으로 진행할 수 있습니다.
 
 Configuration Manager 콘솔에서 **소프트웨어 라이브러리**로 이동하여 **애플리케이션 관리**를 확장하고 **애플리케이션**을 선택합니다. 애플리케이션을 선택한 다음, 리본에서 **단계적 배포 만들기**를 클릭합니다. 
 
@@ -130,7 +131,7 @@ Configuration Manager 콘솔에서 **소프트웨어 라이브러리**로 이동
 ### <a name="bkmk_pod-throttle"></a> 단계적 배포 중 점진적 출시
 <!--1358578--> 단계적 배포 중에 각 단계의 출시가 이제 점진적으로 수행됩니다. 이 동작은 배포 문제의 위험을 완화하고 콘텐츠의 클라이언트 배포로 인한 네트워크의 부하를 줄이는 데 도움이 됩니다. 사이트에서는 각 단계에 대한 구성에 따라 점진적으로 소프트웨어를 사용할 수 있도록 합니다. 단계의 모든 클라이언트는 소프트웨어를 사용할 수 있게 되는 시간을 기준으로 최종 기한을 갖게 됩니다. 사용 가능 시간과 최종 기한 사이의 기간은 단계의 모든 클라이언트에 대해 동일합니다. 
 
-단계적 배포를 만들고 단계를 수동으로 구성하면 단계 추가 마법사의 **단계 설정** 페이지 또는 단계적 배포 만들기 마법사의 **설정** 페이지에서 **이 기간(일)에 걸쳐 점진적으로 이 소프트웨어를 사용할 수 있도록 함** 옵션을 구성합니다. 이 설정의 기본값은 **0**이므로 기본적으로 배포가 제한되지 않습니다.
+단계별 배포를 만들고 단계를 수동으로 구성하면 단계 추가 마법사의 **단계 설정** 페이지 또는 단계별 배포 만들기 마법사의 **설정** 페이지에서 **이 기간(일)에 걸쳐 점진적으로 이 소프트웨어를 사용할 수 있도록 함** 옵션을 구성합니다. 이 설정의 기본값은 **0**이므로 기본적으로 배포가 제한되지 않습니다.
 
 > [!Note]  
 > 이 옵션은 현재 작업 순서의 단계적 배포에만 사용할 수 있습니다.  
@@ -152,8 +153,8 @@ MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.co
 작업을 완료합니다. 그런 다음, [피드백](capabilities-in-technical-preview-1804.md#bkmk_feedback)을 전송하여 작업이 어떻게 진행되었는지 알려주세요.
 
 1. Configuration Manager 콘솔에서 [애플리케이션을 만듭니다](/sccm/apps/deploy-use/create-applications). 
-2. 애플리케이션 설치 파일 **형식**을 **Windows 앱 패키지(\*.appx, \*.appxbundle, \*.msix, \*.msixbundle)** 로 선택합니다.
-3. 최신 Windows Insider Preview 빌드를 실행하는 클라이언트에 [응용 프로그램을 배포](/sccm/apps/deploy-use/deploy-applications)합니다.
+2. 응용 프로그램 설치 파일 **형식**을 **Windows 앱 패키지(\*.appx, \*.appxbundle, \*.msix, \*.msixbundle)** 로 선택합니다.
+3. 최신 Windows Insider Preview 빌드를 실행하는 클라이언트에 [애플리케이션을 배포](/sccm/apps/deploy-use/deploy-applications)합니다.
 
 
 
@@ -191,22 +192,22 @@ MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.co
 
 - **할당된 사이트 시스템이 없는 경계 그룹**: 할당된 사이트 시스템이 없으면 경계 그룹은 사이트 할당에만 사용할 수 있습니다.  
 
-- **Boundary groups with no members**(멤버가 없는 경계 그룹): 경계 그룹은 멤버가 없는 경우 사이트 할당이나 콘텐츠 조회에 적용할 수 없습니다.  
+- **멤버가 없는 경계 그룹**: 경계 그룹은 멤버가 없는 경우 사이트 할당이나 콘텐츠 조회에 적용할 수 없습니다.  
 
 - **클라이언트에 콘텐츠를 제공하지 않는 배포 지점**: 지난 30일 동안 클라이언트에 콘텐츠를 제공하지 않은 배포 지점입니다. 이 데이터는 클라이언트의 다운로드 기록 보고서를 기반으로 합니다.  
 
-- **Expired updates found**(만료된 업데이트 있음): 만료된 업데이트는 배포에 적용되지 않습니다.   
+- **만료된 업데이트 있음**: 만료된 업데이트는 배포에 적용되지 않습니다.   
 
 
 
-## <a name="bkmk_comgmt"> </a> 공동 관리하는 장치에 대한 모바일 앱 워크로드 전환
-<!--1357892--> 계속 Configuration Manager를 사용하여 Windows 데스크톱 응용 프로그램을 배포하면서 Microsoft Intune으로 모바일 앱을 관리합니다. 최신 앱 워크로드를 전환하려면 공동 관리 속성 페이지로 이동하세요. Configuration Manager에서 슬라이더 막대를 [파일럿] 또는 [모두]로 이동합니다. 
+## <a name="bkmk_comgmt"></a> 공동 관리하는 디바이스에 대한 모바일 앱 워크로드 전환
+<!--1357892--> 계속 Configuration Manager를 사용하여 Windows 데스크톱 애플리케이션을 배포하면서 Microsoft Intune으로 모바일 앱을 관리합니다. 최신 앱 워크로드를 전환하려면 공동 관리 속성 페이지로 이동하세요. Configuration Manager에서 슬라이더 막대를 [파일럿] 또는 [모두]로 이동합니다. 
 
 이 워크로드를 전환하면 Intune에서 배포된 사용 가능한 모든 앱을 회사 포털에서 사용할 수 있습니다. Configuration Manager에서 배포하는 앱은 소프트웨어 센터에서 사용할 수 있습니다. 
 
 자세한 내용은 다음 아티클을 참조하세요.  
 
-- [Windows 10 장치에 대한 공동 관리](/sccm/core/clients/manage/co-management-overview)  
+- [Windows 10 디바이스에 대한 공동 관리](/sccm/core/clients/manage/co-management-overview)  
 
 - [Microsoft Intune 앱 관리란?](https://docs.microsoft.com/intune/app-management)  
 
@@ -215,7 +216,7 @@ MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.co
 ## <a name="bkmk_bgoptions"> </a> 피어 다운로드를 위한 경계 그룹 옵션
 <!--1356193--> 이제 경계 그룹에는 사용자 환경에서 콘텐츠 배포를 보다 세밀하게 제어할 수 있는 추가 설정이 포함됩니다. 이 릴리스에서는 다음 옵션을 추가합니다.  
 
-- **이 경계 그룹에서 피어 다운로드 허용**: 이 설정은 기본적으로 사용하도록 설정되어 있습니다. 관리 지점은 피어 원본을 포함하는 콘텐츠 위치 목록을 클라이언트에 제공합니다. <!--This setting also affects applying Group IDs for Delivery Optimization.518268-->  
+- **이 경계 그룹에서 피어 다운로드 허용**: 이 설정은 기본값으로 사용 가능합니다. 관리 지점은 피어 원본을 포함하는 콘텐츠 위치 목록을 클라이언트에 제공합니다. <!--This setting also affects applying Group IDs for Delivery Optimization.518268-->  
 
     이 옵션을 사용하지 않도록 설정해야 하는 두 가지 일반적인 시나리오가 있습니다.  
 
@@ -243,7 +244,7 @@ MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.co
 
 ### <a name="prerequisites"></a>필수 구성 요소 
 
-- [타사 소프트웨어 업데이트](/sccm/core/get-started/capabilities-in-technical-preview-1806#bkmk-3pupdate)를 설정합니다. 1단계: 기능 설정 및 사용을 완료합니다.   
+- [타사 소프트웨어 업데이트](/sccm/core/get-started/capabilities-in-technical-preview-1806#bkmk-3pupdate)를 설정합니다. 1단계 완료: 기능을 사용하도록 설정합니다.   
 
 - 디지털 서명된 소프트웨어 업데이트를 포함하는 디지털 서명된 사용자 지정 카탈로그.  
 
@@ -317,8 +318,8 @@ MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.co
 보고서를 보려면 **모니터링** 작업 영역으로 이동하여 **보고**, **보고서**, **소프트웨어 업데이트 – A 호환성**을 차례로 확장한 다음, **준수 9 - 전체 상태 및 준수**를 선택합니다. **업데이트 그룹**, **컬렉션 이름** 및 **클라이언트 상태**를 지정합니다.
 
 보고서에는 다음과 같은 부분이 포함됩니다.
-- **정상인 클라이언트 수 및 총 클라이언트 수**: 이 막대형 차트는 지정된 컬렉션의 총 클라이언트 수에 대해 지정된 기간에 사이트와 통신한 “정상” 상태의 클라이언트를 비교합니다.
-- **준수 개요**: 이 원형 차트는 지정된 컬렉션의 활성 클라이언트에 있는 특정 소프트웨어 업데이트 그룹의 전체 준수 상태를 보여 줍니다.
+- **정상 클라이언트 수 및 총 클라이언트 수**: 이 막대형 차트는 지정된 컬렉션의 총 클라이언트 수에 대해 지정된 기간에 사이트와 통신한 “정상” 상태의 클라이언트를 비교합니다.
+- **규정 준수 개요**: 이 원형 차트는 지정된 컬렉션의 활성 클라이언트에 있는 특정 소프트웨어 업데이트 그룹의 전체 규정 준수 상태를 보여 줍니다.
 - **상위 5개의 문서 ID별 비준수**: 이 막대형 차트는 지정된 컬렉션의 활성 클라이언트에서 비준수 상태인 지정된 그룹의 소프트웨어 업데이트 상위 5개를 표시합니다.
 - 보고서의 맨 아래에는 추가 정보가 포함된 표가 있으며 지정된 그룹의 소프트웨어 업데이트를 나열합니다.
 

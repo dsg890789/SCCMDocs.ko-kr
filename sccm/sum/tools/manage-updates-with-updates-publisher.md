@@ -10,13 +10,12 @@ ms.assetid: cd64994c-b426-4465-96cd-54b0edc2778d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-robots: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d0d69990fe99f9b08c9c14222a2d1a9c6ec06b4c
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 4de365b7df3a18abdfc5a92e9516bad84818ac35
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32351839"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54896748"
 ---
 # <a name="manage-software-updates-in-updates-publisher"></a>Updates Publisher에서 소프트웨어 업데이트 관리
 
@@ -90,7 +89,7 @@ System Center Updates Publisher에서는 **업데이트 작업 영역**을 사�
 ### <a name="to-publish-updates-and-bundles"></a>업데이트 및 번들을 게시하려면
 1.  **업데이트 작업 영역**으로 이동하여 게시할 업데이트 및 번들을 하나 이상 선택합니다. 그런 다음 리본의 **홈** 탭에서 **게시**를 선택합니다.
 
-2.  **게시** 마법사의 **선택** 페이지에서 업데이트를 게시할 방법을 선택합니다. 옵션은 [업데이트 할당](#assign-updates-and-bundles-to-a-publication)과 동일하게 **전체 콘텐츠**, **메타데이터만** 또는 **자동**입니다.
+2.  **게시** 마법사의 **선택** 페이지에서 업데이트를 게시할 방법을 선택합니다. 옵션은 [업데이트를 할당](#assign-updates-and-bundles-to-a-publication)할 경우 즉, **전체 콘텐츠**, **메타데이터 전용** 또는 **자동**과 동일합니다.
 
     새 게시 인증서로 모든 업데이트에 서명하도록 선택할 수도 있습니다.
 

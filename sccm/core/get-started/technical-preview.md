@@ -2,7 +2,7 @@
 title: 기술 미리 보기 릴리스
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 새로운 기능과 기술을 시험 사용할 수 있는 기술 미리 보기 분기를 알아봅니다.
-ms.date: 12/14/2018
+ms.date: 01/23/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 9ce0a8cb-f96c-4e41-834c-59ceb54ce44a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: d2c1e93378711a19b10f9b67fcaad9973e53ee2e
-ms.sourcegitcommit: d36e4c7082a5144e79035dd8847c8e741fa04667
+ms.openlocfilehash: cf432ea32e5946a98b59e158752b3e82cf63b3b3
+ms.sourcegitcommit: b8167a60fd6f2d8387b2db723976c0e2c4198d33
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53444640"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54832774"
 ---
 # <a name="technical-preview-for-configuration-manager"></a>Configuration Manager에 대한 기술 미리 보기
 
@@ -25,7 +25,7 @@ ms.locfileid: "53444640"
 
 이 릴리스는 기술적인 미리 보기이므로 세부 사항 및 기능은 변경될 수 있습니다.  
 
-이 정보는 Configuration Manager 기술 미리 보기 분기의 모든 버전에 적용됩니다. 이 문서에서는 먼저 나타나는 기술 미리 보기 버전과 함께 각 새로운 기능을 나열합니다. 2018년(18) 9월(09)에 대한 **1809** 버전을 예로 들 수 있습니다. 각 미리 보기 버전에 전용으로 제공되는 개별 문서에서 개별 기능을 자세히 설명합니다.  
+이 정보는 Configuration Manager 기술 미리 보기 분기의 모든 버전에 적용됩니다. 이 문서에서는 먼저 나타나는 기술 미리 보기 버전과 함께 각 새로운 기능을 나열합니다. 예를 들어 2019년(19) 1월(01)에 대한 버전 **1901**입니다. 각 미리 보기 버전에 전용으로 제공되는 개별 문서에서 개별 기능을 자세히 설명합니다.  
 
 Configuration Manager *현재 분기*의 새로운 기능에 대한 자세한 내용은 [Configuration Manager 증분 버전의 새로운 기능](/sccm/core/plan-design/changes/whats-new-incremental-versions)을 참조하세요.
 
@@ -124,15 +124,30 @@ Microsoft는 세 개의 연속 버전을 사용할 수 있을 때까지 각 기�
 
 <!-- This is the full list of new features in the latest TP release -->
 
-### <a name="technical-preview-version-1812"></a>기술 미리 보기 버전 1812
+### <a name="technical-preview-version-1901"></a>Technical Preview 버전 1901
 
-<!--capabilities-in-technical-preview-1812.md#bkmk_anchor-->
+<!-- - [title](/sccm/core/get-started/2019/technical-preview-1901#bkmk_anchor)<!--ID-->
 
-- [향상된 PowerShell 스크립트 실행 작업 순서 단계 기능](capabilities-in-technical-preview-1812.md#bkmk_posh) <!--3556028 fka 1359389-->  
-- [향상된 이메일을 통한 애플리케이션 승인 기능](capabilities-in-technical-preview-1812.md#bkmk_email) <!--3594063-->  
-- [소프트웨어 센터에서 사용자 디바이스 선호도 구성](capabilities-in-technical-preview-1812.md#bkmk_uda) <!--3485366-->  
-- [향상된 Configuration Manager 콘솔 기능](capabilities-in-technical-preview-1812.md#bkmk_console) <!--3594151-->  
-- [커뮤니티 허브에서 보고서 다운로드](capabilities-in-technical-preview-1812.md#bkmk_hub)<!--3555936-->  
+
+- [클라이언트 상태 대시보드](/sccm/core/get-started/2019/technical-preview-1901#bkmk_health)<!--3599209-->  
+- [Windows 10 서비스에서 기능 업데이트에 대한 우선 순위 지정](/sccm/core/get-started/2019/technical-preview-1901#bkmk_neo)<!--3734525-->  
+- [단계별 배포에 대한 전용 모니터링](/sccm/core/get-started/2019/technical-preview-1901#bkmk_pod)<!--3555949--> 
+- [중앙 관리 사이트에서 CMPivot 실행](/sccm/core/get-started/2019/technical-preview-1901#bkmk_cmpivot)<!--3610960-->  
+- [향상된 PowerShell 스크립트 실행 작업 순서 단계 기능](/sccm/core/get-started/2019/technical-preview-1901#bkmk_posh)<!--3556028-->  
+- [수명 주기 대시보드의 Office 제품](/sccm/core/get-started/2019/technical-preview-1901#bkmk_lifecycle)<!--3556026-->  
+- [컬렉션에 대한 관리 인사이트 규칙](/sccm/core/get-started/2019/technical-preview-1901#bkmk_micoll)<!--3555752-->  
+- [MAC 주소를 사용하여 검색 디바이스 보기](/sccm/core/get-started/2019/technical-preview-1901#bkmk_mac)<!--3600878-->  
+- [배포 지점 유지 관리 모드](/sccm/core/get-started/2019/technical-preview-1901#bkmk_dpmaint)<!--3555754-->  
+- [최적화된 이미지 서비스](/sccm/core/get-started/2019/technical-preview-1901#bkmk_resetbase)<!--3555951-->  
+- [OS 이미지의 단일 인덱스 가져오기](/sccm/core/get-started/2019/technical-preview-1901#bkmk_index)<!--3719699--> 
+- [클라우드 서비스에 대한 Azure Resource Manager 사용](/sccm/core/get-started/2019/technical-preview-1901#bkmk_arm)<!--3605704-->  
+- [콘솔 피드백 확인](/sccm/core/get-started/2019/technical-preview-1901#bkmk_feedback)<!--3556010--> 
+- [Azure에서 Configuration Manager Technical Preview 랩 만들기](/sccm/core/get-started/2019/technical-preview-1901#bkmk_azurevm)<!--3556017-->  
+- [피어 절전 모드 해제에 대한 사용자 지정 포트 지정](/sccm/core/get-started/2019/technical-preview-1901#bkmk_sleep)<!--3605925-->  
+- [최근에 연결된 콘솔 보기](/sccm/core/get-started/2019/technical-preview-1901#bkmk_console)<!--3699367-->  
+- [임계값을 초과하는 경우 클라우드 서비스 중지](/sccm/core/get-started/2019/technical-preview-1901#bkmk_cmg)<!--3735092--> 
+- [클라이언트 프로비전 모드 시간 제한](/sccm/core/get-started/2019/technical-preview-1901#bkmk_osdprov)<!--3197824-->
+- [향상된 OS 배포 기능](/sccm/core/get-started/2019/technical-preview-1901#bkmk_osd)<!--3633146,3641475,3654172,3734270-->
 
 
 > [!Note]  
@@ -151,6 +166,11 @@ Then remove the bottom of this list and/or move individual items not in CB to th
 
  | 기능 | 기술 미리 보기 버전 | 현재 분기 버전 |  
  |---------|---------------------------|------------------------|
+ | 향상된 PowerShell 스크립트 실행 작업 순서 단계 기능 <!--3556028 fka 1359389--> | [Tech Preview 1812](capabilities-in-technical-preview-1812.md#bkmk_posh) | ![추가되지 않음](media/Red_X.gif) | 
+ | 향상된 이메일을 통한 애플리케이션 승인 기능 <!--3594063--> | [Tech Preview 1812](capabilities-in-technical-preview-1812.md#bkmk_email) | ![추가되지 않음](media/Red_X.gif) | 
+ | 소프트웨어 센터에서 사용자 디바이스 선호도 구성 <!--3485366--> | [Tech Preview 1812](capabilities-in-technical-preview-1812.md#bkmk_uda) | ![추가되지 않음](media/Red_X.gif) | 
+ | 향상된 Configuration Manager 콘솔 기능 <!--3594151--> | [Tech Preview 1812](capabilities-in-technical-preview-1812.md#bkmk_console) | ![추가되지 않음](media/Red_X.gif) | 
+ | 커뮤니티 허브에서 보고서 다운로드<!--3555936--> | [Tech Preview 1812](capabilities-in-technical-preview-1812.md#bkmk_hub) | ![추가되지 않음](media/Red_X.gif) | 
  | Windows PowerShell 프로필 로드 안 함<!--1359239--> | [기술 미리 보기 1811](capabilities-in-technical-preview-1811.md#bkmk_noprofile) | ![추가되지 않음](media/Red_X.gif) | 
  | Intune 연결이 온-프레미스 MDM에 필요하지 않음 <!--1359124--> | [기술 미리 보기 1811](capabilities-in-technical-preview-1811.md#bkmk_opmdm) | ![추가되지 않음](media/Red_X.gif) | 
  | Configuration Manager 콘솔 알림 <!--1318035--> | [기술 미리 보기 1811](capabilities-in-technical-preview-1811.md#bkmk_notify) | ![추가되지 않음](media/Red_X.gif) | 
@@ -161,19 +181,6 @@ Then remove the bottom of this list and/or move individual items not in CB to th
  | 피어 캐시 원본 클라이언트 버전의 관리 인사이트 규칙 <!--1358008--> | [기술 미리 보기 1810.2](capabilities-in-technical-preview-1810-2.md#bkmk_insights) | 버전 1810 | 
  | 인터넷 기반 클라이언트 설정의 개선 사항 <!--1359181--> | [기술 미리 보기 1810.2](capabilities-in-technical-preview-1810-2.md#bkmk_cmg) | 버전 1810 | 
  | 애플리케이션을 MSIX로 변환 <!--1359029--> | [기술 미리 보기 1810.2](capabilities-in-technical-preview-1810-2.md#bkmk_msix) | 버전 1810 | 
- | 클라이언트 설치 기능 개선 <!--1358840--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_ccmsetup) | 버전 1810 | 
- | 공동 관리하는 디바이스의 필수 앱 준수 정책 <!--1358196--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_app-compliance) | 버전 1810 | 
- | 공동 관리 대시보드 기능 개선 <!--1358980--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_comgmt-report) | 버전 1810 | 
- | 새 경계 그룹 옵션 <!--1358749--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_bgoptions) | 버전 1810 | 
- | Windows 클러스터 노드의 사이트 시스템 <!--1359132--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_cluster) | 버전 1810 | 
- | 향상된 CMPivot 기능<!--1359068--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_cmpivot) | 버전 1810 | 
- | 스크립트 기능 개선 <!--1358239--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_scripts) | 버전 1810 | 
- | 디바이스 절전 모드를 해제하는 새 클라이언트 알림 작업 <!--1317364--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_wakeup) | 버전 1810 | 
- | 경계 그룹의 작업 순서 지원 <!--1359025--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_bgr-osd) | 버전 1810 | 
- | 관리 인사이트 대시보드 <!--1357979--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_insights) | 버전 1810 | 
- | 콘솔 내 설명서 대시보드 <!--1357546--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_doc-dashboard) | ![추가되지 않음](media/Red_X.gif) | 
- | 드라이버 유지 관리 기능 개선 <!--1358270--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_drivers) | 버전 1810 | 
- | 기존 디바이스에 대한 Windows Autopilot의 작업 순서 지원 <!--1358333--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_autopilot) | 버전 1810 | 
 
 
 
@@ -189,6 +196,7 @@ With each CB release, review and remove from this list for anything that's now a
 
 | 기능        | 기술 미리 보기 버전 |  
 |----------------|---------------------------|
+| 콘솔 내 설명서 대시보드 <!--1357546--> | [Tech Preview 1810](capabilities-in-technical-preview-1810.md#bkmk_doc-dashboard) | 
 | 커뮤니티 허브 <!--1357766--> | [Tech Preview 1807](capabilities-in-technical-preview-1807.md#bkmk_hub) | 
 | Intune에서 공동 관리되는 디바이스 동기화 작업<!--1358565--> | [Tech Preview 1807](capabilities-in-technical-preview-1807.md#bkmk_comgmt) | 
 | 클라이언트 기반 PXE 응답자 서비스 <!--1357148--> | [Tech Preview 1712](capabilities-in-technical-preview-1712.md#client-based-pxe-responder-service) |

@@ -10,19 +10,19 @@ ms.assetid: 9e614ae1-47d2-4a93-ba0a-89dc50d1e266
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-robots: noindex,nofollow
-ms.openlocfilehash: fbd3a84a81fae4ec9197368ff3eca0c027ae9d90
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ROBOTS: NOINDEX
+ms.openlocfilehash: 128ba61e75bfdbbaf6a3051317b9554253b96e87
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32336989"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898242"
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1511-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1511에 대한 진단 사용 현황 데이터 수집의 수준
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 버전 1511에서는 **기본**, **고급**, **전체** 등 세 가지 수준의 진단 및 사용 현황 데이터를 수집합니다. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.  
+System Center Configuration Manager 버전 1511에서는 다음과 같은 세 가지 수준의 진단 및 사용량 데이터를 수집합니다. **기본**, **고급**, **전체**. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.  
 
 > [!IMPORTANT]  
 >  Configuration Manager에서는 기본 또는 고급 수준에서 사이트 코드 또는 사이트 이름, IP 주소, 사용자 이름, 컴퓨터 이름, 실제 주소 또는 메일 주소를 수집하지 않습니다. 전체 수준에서 이 정보가 수집되는 경우가 있어도 이는 특별한 목적이 있는 것은 아닙니다(잠재적으로 로그 파일 또는 메모리 스냅숏과 같은 고급 진단 정보에 포함됨). Microsoft에서는 이러한 정보를 사용자 식별, 연락 또는 광고 목적으로 사용하지 않습니다.  
@@ -81,7 +81,7 @@ System Center Configuration Manager 버전 1511에서는 **기본**, **고급**,
 
 System Center Configuration Manager 버전 1511부터 이 수준에는 다음이 포함됩니다.  
 
--   **응용 프로그램 관리:**  
+-   **애플리케이션 관리:**  
 
     -   조직 내에서 사용되는 배포 유형에 대한 기본 사용 현황/대상 지정 정보(사용자 및 디바이스 대상 지정, 필수 및 사용 가능)  
 
@@ -145,7 +145,7 @@ System Center Configuration Manager 버전 1511부터 이 수준에는 다음이
 
     -   Endpoint Protection 기능에 대해 구성된 경고 개수  
 
--   **MAM(모바일 응용 프로그램 관리):**  
+-   **MAM(모바일 애플리케이션 관리):**  
 
     -   운영 체제별 MAM 사용 Office 애플리케이션, LOB(기간 업무) 애플리케이션 및 정책의 개수  
 
@@ -153,7 +153,7 @@ System Center Configuration Manager 버전 1511부터 이 수준에는 다음이
 
     -   MAM 설정당 만들어진 규칙 개수  
 
--   **MDM(모바일 장치 관리):**  
+-   **MDM(모바일 디바이스 관리):**  
 
     -   실행된 모바일 디바이스 작업(잠금, 핀 다시 설정, 초기화, 사용 중지 명령) 개수
 
@@ -173,7 +173,7 @@ System Center Configuration Manager 버전 1511부터 이 수준에는 다음이
 
     -   Microsoft Intune에 대한 전체 및 델타 사용자 동기화 통계  
 
--   **온-프레미스 MDM(모바일 장치 관리):**  
+-   **온-프레미스 MDM(모바일 디바이스 관리):**  
 
     -   온-프레미스 MDM 애플리케이션 배포에 대한 배포 성공/실패 통계  
 

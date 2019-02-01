@@ -10,12 +10,12 @@ ms.assetid: 0249dbd3-1e85-4d05-a9e5-420fbe44d850
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: fe8fb2a8138433d00686530f76916a1ee4e88dac
-ms.sourcegitcommit: a3cec96a771eed69e58a29917d1a3fe1a5fb2e73
+ms.openlocfilehash: cb0d5d1982bb0b109b83f30f1101ddd50316d53e
+ms.sourcegitcommit: ad25a7bdd983c5a0e4c95bffdc61c9a1ebcbb765
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54250802"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55073036"
 ---
 # <a name="whats-new-in-version-1806-of-configuration-manager-current-branch"></a>Configuration Manager 1806 버전의 새로운 기능
 
@@ -29,14 +29,6 @@ Configuration Manager의 현재 분기에 대한 1806 업데이트는 콘솔 내
 > [!Important]  
 > This article currently lists all significant features in this version. However, not all sections yet link to updated content with further information on the new features. Keep checking this page regularly for updates. Changes are noted with the ***[Updated]*** tag. This note will be removed when the content is finalized.  
 -->
-
-새 기능 외에 이 릴리스에는 버그 수정과 같은 추가 변경 사항도 포함되어 있습니다. 자세한 내용은 [Configuration Manager 현재 분기, 버전 1806의 변경 내용 요약](https://support.microsoft.com/help/4459701)을 참조하세요.
-
-Configuration Manager용 Windows PowerShell cmdlet의 변경 내용에 대한 자세한 내용은 [PowerShell 1806 릴리스 정보](https://docs.microsoft.com/powershell/sccm/1806_release_notes?view=sccm-ps)를 참조하세요.
-
-이제 이 릴리스에 대한 다음과 같은 추가 업데이트도 사용할 수 있습니다.
-- [Configuration Manager 현재 분기, 버전 1806용 업데이트 배포](https://support.microsoft.com/help/4462978)
-
 
 다음 섹션에서는 Configuration Manager 최신 라인인 1806 버전에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.  
 
@@ -529,6 +521,27 @@ Version 1806 drops support for the following products:
 웃는 얼굴 보내기! 이제 Configuration Manager 팀에게 사용자 경험을 직접 알릴 수 있습니다. Configuration Manager 콘솔에서 쉽게 피드백을 보낼 수 있습니다. 칭찬, 문제, 제안 사항 등 모든 피드백에 귀를 기울이겠습니다. Configuration Manager 콘솔의 오른쪽 위에서 리본 위의 웃는 얼굴 단추를 클릭합니다. 이 피드백은 Microsoft의 Configuration Manager 제품 팀에게 바로 전달됩니다. Windows 10 피드백 허브도 사용할 수 있지만, 콘솔 내 피드백 메커니즘을 사용하는 것이 좋습니다.  
 
 자세한 내용은 [1806 버전의 콘솔 향상](/sccm/core/servers/manage/admin-console#console-improvements-in-version-1806) 및 [제품 피드백](/sccm/core/understand/find-help#BKMK_1806Feedback)을 참조하세요.
+
+
+
+## <a name="other-updates"></a>기타 업데이트
+
+새 기능 외에 이 릴리스에는 버그 수정과 같은 추가 변경 사항도 포함되어 있습니다. 자세한 내용은 [Configuration Manager 현재 분기, 버전 1806의 변경 내용 요약](https://support.microsoft.com/help/4459701)을 참조하세요.
+
+Configuration Manager용 Windows PowerShell cmdlet의 변경 내용에 대한 자세한 내용은 [PowerShell 1806 릴리스 정보](https://docs.microsoft.com/powershell/sccm/1806_release_notes?view=sccm-ps)를 참조하세요.
+
+다음 업데이트 롤업(4462978)은 2018년 10월 24일부터 콘솔에서 사용할 수 있습니다. [Configuration Manager 현재 분기, 버전 1806용 업데이트 롤업](https://support.microsoft.com/help/4462978).
+
+
+### <a name="hotfixes"></a>핫픽스
+
+다음 추가 핫픽스는 특정 문제를 해결하는 데 사용할 수 있습니다.
+
+| ID | 제목 | 날짜 | 콘솔 내 |
+|---------|---------|---------|---------|
+| [4346645](https://support.microsoft.com/help/4346645) | System Center Configuration Manager 버전 1806용 업데이트, 첫 번째 웨이브 | 2018년 8월 31일 | 예 |
+| [4465865](https://support.microsoft.com/help/4465865) | 소프트웨어 업데이트는 WSUS가 연결되어 있지 않으면 Configuration Manager 환경에서 다운로드되지 않음<br><br>이 업데이트는 업데이트 롤업(4462978)에 포함되어 있음 | 2018년 10월 1일 | 예 |
+| [4471892](https://support.microsoft.com/help/4471892) | PXE 응답기는 Configuration Manager 1806의 서브넷에서 작동하지 않음 | 2018년 11월 23일 | 아니요 |
 
 
 

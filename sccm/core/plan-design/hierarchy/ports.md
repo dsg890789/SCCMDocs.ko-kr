@@ -10,12 +10,12 @@ ms.assetid: c6777fb0-0754-4abf-8a1b-7639d23e9391
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b074ee02ec5e50fb5e495923538535cf8765dcdb
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.openlocfilehash: 8338e08ffb6d09299123e363f27e586b650452fe
+ms.sourcegitcommit: 231111a704777789629911369f4d9593d2053fc0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53420943"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55065102"
 ---
 # <a name="ports-used-in-configuration-manager"></a>Configuration Manager에서 사용되는 포트
 
@@ -714,6 +714,11 @@ TFTP(Trivial FTP) 디먼 시스템 서비스에는 사용자 이름 또는 암�
 - RFC 2349: 시간 제한 간격 및 전송 크기 옵션  
 
 TFTP는 디스크 없이 부팅하는 환경을 지원하도록 설계됩니다. TFTP 디먼은 UDP 포트 69를 수신하지만 동적으로 할당된 높은 포트에서 응답합니다. 그러므로 이 포트를 사용하면 TFTP 서비스는 들어오는 TFTP 요청을 수신할 수 있지만 선택한 서버는 해당 요청에 응답할 수 없습니다. 포트 69에서 응답하도록 TFTP 서버를 구성하지 않으면 선택한 서버가 인바운드 TFTP 요청에 응답하도록 설정할 수 없습니다.  
+
+PXE 지원 배포 지점 및 Windows PE의 클라이언트는 TFTP 전송에 대해 동적으로 할당된 높은 포트를 선택합니다. 이러한 포트는 Microsoft에 의해 49152 및 65535 사이에서 정의됩니다. 자세한 내용은 [Windows의 서비스 개요 및 네트워크 포트 요구 사항](https://support.microsoft.com/help/832017/service-overview-and-network-port-requirements-for-windows)을 참조하세요.
+
+그러나 실제로 PXE를 부팅하는 동안 디바이스의 네트워크 카드는 TFTP를 전송하는 동안 사용하는 동적으로 할당된 높은 포트를 선택합니다. 디바이스의 네트워크 카드는 Microsoft에서 정의된 동적으로 할당된 높은 포트에 바인딩되지 않습니다. RFC 350에서 정의된 포트로만 바인딩됩니다. 이 포트는 0 및 65535 사이의 하나일 수 있습니다. 네트워크 카드가 사용하는 동적으로 할당된 높은 포트에 대한 자세한 내용은 디바이스 하드웨어 제조업체에 문의하세요.
+
 
 #### <a name="bkmk_note5"></a> 참고 5: 사이트 서버 및 사이트 시스템 간 통신
 기본적으로 사이트 서버 및 사이트 시스템 간 통신은 양방향 통신입니다. 사이트 서버는 통신을 시작하여 사이트 시스템을 구성합니다. 그런 다음 대부분의 사이트 시스템은 사이트 서버로 다시 연결하여 상태 정보를 보냅니다. 보고 서비스 지점 및 배포 지점은 상태 정보를 보내지 않습니다. 사이트 시스템을 설치한 후 사이트 시스템 속성에 대해 **이 사이트 시스템의 연결을 시작하려면 사이트 서버 필요**를 선택하면 사이트 시스템이 사이트 서버와의 통신을 시작하지 않습니다. 대신, 사이트 서버는 통신을 시작하고 사이트 시스템 서버에 대한 인증에 사이트 시스템 설치 계정을 사용합니다.  

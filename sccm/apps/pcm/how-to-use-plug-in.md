@@ -10,13 +10,13 @@ ms.assetid: 83cf156c-36de-483f-a9e6-2e06158f3b20
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-robots: noindex,nofollow
-ms.openlocfilehash: 9e670cb6afd7186d7dc248bedd6e2ce7d7746b02
-ms.sourcegitcommit: 759098de944b8f7d5eedfc2bae2cb9a6ba15276f
+ROBOTS: NOINDEX
+ms.openlocfilehash: 5ed885ba459a584939881235e44d632515138cdf
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43297176"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54896365"
 ---
 # <a name="how-to-use-the-package-conversion-manager-plug-in"></a>Package Conversion Manager 플러그 인을 사용하는 방법
 
@@ -47,7 +47,7 @@ Package Conversion Manager 플러그 인은 패키지마다 한 번씩 실행됩
 
     - **분석**: Configuration Manager 콘솔에 패키지 준비 상태를 표시합니다.  
 
-    - **변환**: Configuration Manager 데이터베이스에 응용 프로그램을 기록합니다.  
+    - **변환**: Configuration Manager 데이터베이스에 애플리케이션을 기록합니다.  
 
 
 ## <a name="plug-in-based-process"></a>플러그 인 기반 프로세스 
@@ -70,7 +70,7 @@ Package Conversion Manager 플러그 인은 패키지마다 한 번씩 실행됩
 
     - **분석**: Configuration Manager 콘솔에 패키지 준비 상태를 표시합니다.  
 
-    - **변환**: Configuration Manager 데이터베이스에 응용 프로그램을 기록합니다.  
+    - **변환**: Configuration Manager 데이터베이스에 애플리케이션을 기록합니다.  
 
 
 

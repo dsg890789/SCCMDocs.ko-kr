@@ -10,18 +10,18 @@ ms.assetid: 272ee86b-d3d9-4fd9-b5c4-73e490e1a1e4
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: fc49a74fe4e257acceaea54d7c423709998a87bd
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 09a583fd3d7ff768c9a102631a0c2cb39a286c23
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32334184"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898382"
 ---
 # <a name="security-and-privacy-for-remote-control-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 원격 제어에 대한 보안 및 개인 정보
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-이 항목에는 System Center 2012 Configuration Manager에서 원격 제어에 대한 보안 및 개인 정보가 포함되어 있습니다.  
+이 항목에는 System Center Configuration Manager에서 원격 제어에 대한 보안 및 개인 정보가 포함되어 있습니다.  
 
 ##  <a name="BKMK_Security_HardwareInventory"></a> 원격 제어에 대한 보안 모범 사례  
  원격 제어를 사용 하 여 클라이언트 컴퓨터를 관리 하는 경우에 다음 보안 모범 사례를 사용 합니다.  
@@ -32,7 +32,7 @@ ms.locfileid: "32334184"
 |원격 제어 뷰어에서 클립보드 공유를 사용하지 마세요.|클립보드는 실행 파일 및 텍스트와 같은 개체를 지원하고 사용자가 호스트 컴퓨터에서 원격 제어 세션 동안 원래 컴퓨터에서 프로그램을 실행할 수 있도록 합니다.|  
 |원격으로 컴퓨터를 관리하는 경우 권한 있는 계정의 암호를 입력하지 마세요.|키보드 입력을 관찰하는 소프트웨어에서 암호를 캡처할 수 있습니다. 또는 클라이언트 컴퓨터에서 실행되는 프로그램이 원격 제어 사용자가 가정하는 프로그램이 아닌 경우 해당 프로그램이 암호를 캡처할 수 있습니다. 계정 및 암호가 필요한 경우 최종 사용자가 입력해야 합니다.|  
 |원격 제어 세션 중에는 키보드 및 마우스를 잠그세요.|Configuration Manager에서 원격 제어 연결이 종료된 것을 감지하는 경우 사용자가 열려 있는 원격 제어 세션을 제어할 수 없도록 Configuration Manager에서 자동으로 키보드 및 마우스를 잠급니다. 그러나 이 감지가 즉시 발생하지 않을 수 있으며 원격 제어 서비스가 종료되면 발생하지 않습니다.<br /><br /> **ConfigMgr 원격 제어** 창에서 **원격 키보드 및 마우스 잠금** 작업을 선택합니다.|  
-|소프트웨어 센터에서 사용자가 원격 제어 설정을 구성할 수 없도록 합니다.|사용자가 감시당하는 것을 방지하려면 클라이언트 설정 **소프트웨어 센터에서 사용자가 정책 또는 알림 설정 변경 가능** 을 사용하도록 설정하지 마세요.<br /><br /> 이 설정은 로그온한 사용자가 아닌 컴퓨터를 위한 것입니다.|  
+|소프트웨어 센터에서 사용자가 원격 제어 설정을 구성할 수 없도록 합니다.|사용자가 감시당하는 것을 방지하려면 클라이언트 설정 **소프트웨어 센터에서 사용자가 정책 또는 알림 설정 변경 가능** 을 사용하도록 설정하지 마세요. 한 사용자가 설정을 변경하는 경우 동일한 머신에서 다른 사용자가 원격으로 보도록 허용할 수 있습니다. <br /><br />**이 설정은 로그온한 사용자가 아닌 컴퓨터를 위한 것입니다**.|  
 |**도메인** Windows 방화벽 프로필을 사용하도록 설정합니다.|클라이언트 설정 **클라이언트 방화벽 예외 프로필에서 원격 제어 사용** 을 사용하도록 설정한 다음 인트라넷 컴퓨터용 **도메인** Windows 방화벽을 선택합니다.|  
 |원격 제어 세션 동안 로그오프하고 다른 사용자로 로그온하는 경우 원격 제어 세션 연결을 끊기 전에 로그오프해야 합니다.|이 시나리오에서 로그오프하지 않는 경우 세션은 열린 상태로 유지됩니다.|  
 |사용자에게 로컬 관리자 권한을 부여하지 마세요.|사용자에게 로컬 관리자 권한을 부여하면 사용자가 원격 제어 세션을 제어하거나 자격 증명을 손상시킬 수 있습니다.|  

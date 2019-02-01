@@ -8,15 +8,15 @@ ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: e4d9e414-1346-4ed4-85d0-64d602b68731
 author: aczechowski
-robots: noindex,nofollow
+ROBOTS: NOINDEX
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 939a767820983c1fe2d575d7a745d6dabb45f25c
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 970f86849572d6b360c5b92a42a3d131a38fe1d7
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32335663"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54896467"
 ---
 # <a name="capabilities-in-technical-preview-1512-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1512의 기능
 
@@ -26,7 +26,7 @@ ms.locfileid: "32335663"
 
  다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.  
 
-##  <a name="bkmk_devicehealth"></a> 장치 상태 증명  
+##  <a name="bkmk_devicehealth"></a> 디바이스 상태 증명  
  Technical  Preview 1512부터 관리자는 Configuration Manager 콘솔에서 Windows 10 디바이스 상태 증명의 상태를 볼 수 있습니다.  이 기능은 Configuration Manager와 Microsoft Intune에서의 Configuration Manager에 사용할 수 있습니다. 디바이스 상태 증명을 사용하여 관리자는 클라이언트 컴퓨터가 신뢰할 수 있는 BIOS, TPM 및 소프트웨어 구성을 갖는지 확인할 수 있습니다. 디바이스 상태 증명을 지원하려면 클라이언트 디바이스에서 TPM 2가 설정된 Win10이 실행되고 있어야 합니다. 디바이스 상태 증명은 다음 각각에 대해 사용하도록 설정된 디바이스 수를 표시합니다.  
 
 -   맬웨어 방지 조기 실행  
@@ -63,7 +63,7 @@ Technical  Preview 1512부터 Microsoft Intune에서 Configuration Manager를 �
 
     -   보호 정책 설정은 기본적으로 사용되도록 설정("예"로 설정)되어 있습니다. 사용되도록 설정되면 이 설정은 다운로드 및 설치 시에 PUA를 차단합니다. 그러나 특정 파일 또는 사용자 환경의 특정 요구를 충족 하기 위해 폴더를 제외할 수 있습니다.  
 
--   검색 설정: **전체 검색을 실행할 때 매핑된 네트워크 드라이브 검색**  
+-   검색 설정: **전체 검사를 실행할 때 매핑된 네트워크 드라이브 검사**  
 
     -   이 설정은 아주 세부적으로 구분되어 있으므로 관리자는 예약된 전체 동안 매핑된 네트워크 드라이브를 항상 검색할 위험 없이 네트워크 파일의 주문형 검색을 수행할 수 있습니다.  
 
@@ -75,9 +75,9 @@ Technical  Preview 1512부터 Microsoft Intune에서 Configuration Manager를 �
 
      맬웨어 방지 엔진은 추가 분석을 위해 샘플 파일을 Microsoft로 보내도록 요청할 수 있습니다. 기본적으로 이러한 샘플을 보내기 전에 항상 확인 메시지가 표시됩니다. 관리자는 이 동작을 구성하기 위해 다음 설정을 관리할 수 있습니다.  
 
-    -   고급: **검색된 특정 항목의 악성 여부를 Microsoft가 확인할 수 있도록 자동 샘플 파일 전송 설정**: 자동 샘플 파일 전송을 사용하도록 설정하려면 이 설정을 "예"로 변경합니다. 기본적으로 이 설정은 자동 샘플 파일 전송이 사용되지 않도록 설정되어 사용자가 샘플을 보내기 전에 확인 메시지가 표시되는 "아니요"로 설정되어 있습니다.   (이 설정은 System Center 2012 R2 Configuration Manager SP1에 처음 도입되었습니다.)  
+    -   고급: **검색된 특정 항목의 악성 여부를 Microsoft가 확인할 수 있도록 자동 샘플 파일 전송 사용**:  자동 샘플 파일 전송을 활성화하려면 이 설정을 “예”로 변경합니다. 기본적으로 이 설정은 자동 샘플 파일 전송이 사용되지 않도록 설정되어 사용자가 샘플을 보내기 전에 확인 메시지가 표시되는 "아니요"로 설정되어 있습니다.   (이 설정은 System Center 2012 R2 Configuration Manager SP1에 처음 도입되었습니다.)  
 
-    -   고급: **사용자가 자동 샘플 파일 전송 설정을 수정할 수 있도록 허용**: 이 설정은 디바이스에 대해 로컬 관리자 권한이 있는 사용자가 클라이언트 인터페이스에서 자동 샘플 파일 전송 설정을 변경할 수 있는지 여부를 결정합니다. 기본적으로 Configuration Manager 콘솔 내에서만 설정을 변경할 수 있고 디바이스의 로컬 관리자가 이 구성을 변경할 수 없는 "아니요"로 설정되어 있습니다.  
+    -   고급: **사용자가 자동 샘플 파일 전송 설정을 수정하도록 허용**: 이 설정은 장치에 대해 로컬 관리자 권한이 있는 사용자가 클라이언트 인터페이스에서 자동 샘플 파일 전송 설정을 변경할 수 있는지 여부를 결정합니다. 기본적으로 Configuration Manager 콘솔 내에서만 설정을 변경할 수 있고 디바이스의 로컬 관리자가 이 구성을 변경할 수 없는 "아니요"로 설정되어 있습니다.  
 
          예를 들어 다음은 관리자가 사용되도록 설정하며 사용자는 수정할 수 없는 Windows 10의 Windows Defender 설정입니다.  
 

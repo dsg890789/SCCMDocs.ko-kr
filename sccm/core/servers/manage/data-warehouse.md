@@ -10,12 +10,12 @@ ms.assetid: aaf43e69-68b4-469a-ad58-9b66deb29057
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0c04ee9a62b6c629060f79df2f4b104fe78ca794
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.openlocfilehash: a4d95495f2f200eaff39699c65cc391a2a81b009
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53418988"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54897562"
 ---
 #  <a name="the-data-warehouse-service-point-for-configuration-manager"></a>Configuration Manager에 대한 데이터 웨어하우스 서비스 지점
 
@@ -237,7 +237,7 @@ A connection was successfully established with the server, but then an error occ
 
     2. **SQL Server 구성 관리자**를 엽니다. **SQL Server 네트워크 구성**에서 **MSSQLSERVER 용 프로토콜** 아래의 **속성**을 마우스 오른쪽 단추로 클릭하여 선택합니다. **인증서** 탭에서 **데이터 웨어하우스 SQL Server 식별 인증서**를 인증서로 선택하고 변경 내용을 저장합니다.  
 
-    3. **SQL Server 구성 관리자**의 **SQL Server 서비스**에서 **SQL Server 서비스** 및 **보고 서비스**를 다시 시작합니다.  
+    3. **SQL Server 구성 관리자**의 **SQL Server 서비스**에서 **SQL Server 서비스**를 다시 시작합니다. SQL Reporting Services가 또한 데이터 웨어하우스 데이터베이스를 호스트하는 서버에 설치된 경우 **Reporting Services** 서비스도 다시 시작합니다.  
 
     4. MMC(Microsoft Management Console)를 열고 **인증서** 스냅인을 추가합니다. 로컬 머신의 **컴퓨터 계정**을 선택합니다. **개인** 폴더를 확장하고 **인증서**를 선택합니다. **데이터 웨어하우스 SQL Server 식별 인증서**를 **DER로 인코딩된 이진 X.509(.CER)** 파일로 내보냅니다.  
 

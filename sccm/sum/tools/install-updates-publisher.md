@@ -10,13 +10,12 @@ ms.assetid: ab5cda93-b67c-4aa5-904d-7b63ce790aa0
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-robots: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f74d7925528e48c691ce7ca61b6dc0b5136f1df7
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: f97decbe40293ee45cdc75c3fb36f4c57662ac06
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32349479"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54896780"
 ---
 # <a name="install-updates-publisher"></a>Updates Publisher 설치
 
@@ -46,12 +45,12 @@ Updates Publisher를 실행하는 컴퓨터에는 다음이 필요합니다.
 -   **사용 권한**:
     -   설치: 로컬 관리자
     -   대부분의 작업: 로컬 사용자
-    -   게시 또는 WSUS와 관련된 작업: WSUS 서버의 WSUS Administrators 그룹 구성원
+    -   게시 또는 WSUS와 관련된 작업: WSUS 서버의 WSUS 관리자 그룹의 멤버입니다.
 
 ### <a name="supported-languages"></a>지원되는 언어
 Updates Publisher는 영어로만 제공되지만 다른 언어의 업데이트를 관리할 수 있습니다. 언어 지원은 업데이트 게시, 만들기 또는 편집과 같은 작업에 따라 달라집니다.
 
-업데이트를 내보내거나 게시할 때 Updates Publisher는 Updates Publisher가 설치된 컴퓨터의 로캘을 기반으로 소프트웨어 업데이트의 제목과 설명을 표시합니다.
+업데이트를 내보내거나 게시할 때 Updates Publisher는 Updates Publisher가 설치된 컴퓨터의 로캘에 따라 소프트웨어 업데이트의 제목과 설명을 표시합니다.
 
 예를 들어 영어 및 스페인어 제목이 있는 소프트웨어 업데이트를 만듭니다.
 

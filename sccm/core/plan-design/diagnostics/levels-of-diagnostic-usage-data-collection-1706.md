@@ -10,18 +10,19 @@ ms.assetid: 14ee4fb0-7790-45a6-906e-6e55627d4079
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 8ed8aed38f20adb3558b61dd32a36f88fbac3b00
-ms.sourcegitcommit: 0d7efd9e064f9d6a9efcfa6a36fd55d4bee20059
+ROBOTS: NOINDEX
+ms.openlocfilehash: a45f48ef16e0d204cfe347c3e024cd0b36403405
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43893511"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898191"
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1706-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1706에 대한 진단 사용 현황 데이터 수집의 수준
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 버전 1706에서는 **기본**, **고급**, **전체** 등 세 가지 수준의 진단 및 사용 현황 데이터를 수집합니다. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
+System Center Configuration Manager 버전 1706에서는 다음과 같은 세 가지 수준의 진단 및 사용 현황 데이터를 수집합니다. **기본**, **고급**, **전체**. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
 
 이전 버전에서 변경된 내용은 ***[새로운 기능]***, ***[업데이트된 기능]***, ***[제거된 기능]*** 또는 ***[이동된 기능]*** 으로 표시됩니다.
 
@@ -106,7 +107,7 @@ System Center Configuration Manager 버전 1706에서 이 수준에는 다음이
 
 System Center Configuration Manager 버전 1706에서 이 수준에는 다음이 포함됩니다.
 
-- **응용 프로그램 관리:**  
+- **애플리케이션 관리:**  
 
    - 앱 요구 사항(각 배포 기술에서 참조되는 기본 제공 조건 개수)
 
@@ -114,7 +115,7 @@ System Center Configuration Manager 버전 1706에서 이 수준에는 다음이
 
    - 애플리케이션 승인 통계 및 사용 빈도
 
-   - ***[새로운 기능]***  응용 프로그램 콘텐츠 크기 통계
+   - ***[새로운 기능]***  애플리케이션 콘텐츠 크기 통계
 
    - 애플리케이션 배포 정보(설치 및 제거 사용, 승인 필요, 사용자 조작 사용/사용 안 함, 종속성, 대체, 설치 동작 기능의 사용 횟수)  
 
@@ -134,9 +135,9 @@ System Center Configuration Manager 버전 1706에서 이 수준에는 다음이
 
    - 작업 순서에서 참조되는 애플리케이션 개수
 
-   - ***[새로운 기능]***  응용 프로그램 카탈로그의 고유 브랜딩 개수
+   - ***[새로운 기능]***  애플리케이션 카탈로그의 고유 브랜딩 개수
 
-   - ***[새로운 기능]***  대시보드를 사용하여 만든 Office 365 응용 프로그램 개수
+   - ***[새로운 기능]***  대시보드를 사용하여 만든 Office 365 애플리케이션 개수
 
    - 유형별 패키지 개수  
 
@@ -169,9 +170,9 @@ System Center Configuration Manager 버전 1706에서 이 수준에는 다음이
 
    - BIOS 사용 기간(년)
    
-   - ***[신규]*** 보안 부팅을 사용하도록 설정한 장치 수
+   - ***[신규]*** 보안 부팅을 사용하도록 설정한 디바이스 수
    
-   - ***[신규]***  TPM 상태별 장치 수
+   - ***[신규]***  TPM 상태별 디바이스 수
 
    - 클라이언트 자동 업그레이드: 클라이언트 파일럿, 제외 사용(확장된 상호 운용성 클라이언트)을 비롯한 배포 구성
 
@@ -210,7 +211,7 @@ System Center Configuration Manager 버전 1706에서 이 수준에는 다음이
 
   - ***[업데이트된 기능]***  영역 및 환경의 수, 인증/권한 부여 통계를 포함하는 클라우드 관리 게이트웨이의 구성 및 사용 통계
 
-  - ***[새로운 기능]***  Configuration Manager에 연결된 Azure Active Directory 응용 프로그램 및 서비스의 개수
+  - ***[새로운 기능]***  Configuration Manager에 연결된 Azure Active Directory 애플리케이션 및 서비스의 개수
 
   - Azure Active Directory 서비스에 가입한 클라이언트 개수
 
@@ -294,7 +295,7 @@ System Center Configuration Manager 버전 1706에서 이 수준에는 다음이
 
 
 
-- **MDM(모바일 장치 관리):**  
+- **MDM(모바일 디바이스 관리):**  
 
     - 실행된 모바일 디바이스 작업(잠금, 핀 다시 설정, 초기화, 사용 중지 및 지금 동기화 명령) 개수
 
@@ -319,7 +320,7 @@ System Center Configuration Manager 버전 1706에서 이 수준에는 다음이
 
 
 
-- **온-프레미스 MDM(모바일 장치 관리):**  
+- **온-프레미스 MDM(모바일 디바이스 관리):**  
 
     - Windows 10 대량 등록 패키지 및 프로필 개수  
 
@@ -449,7 +450,7 @@ System Center Configuration Manager 버전 1706에서 이 수준에는 다음이
 
 - ***[새로운 기능]***  규정 준수 및 오류에 대한 준수 정책 통계
 
-- 준수 설정: SCEP, VPN, Wi-Fi 및 준수 정책 템플릿 구성 정보, 소프트웨어 업데이트가 만료된 그룹 개수
+- 규정 준수 설정: SCEP, VPN, Wi-Fi 및 규정 준수 정책 템플릿 구성 세부 정보, 소프트웨어 업데이트가 만료된 그룹 개수
 
 - System Center Configuration Manager 사용을 위한 DCM 구성 팩
 

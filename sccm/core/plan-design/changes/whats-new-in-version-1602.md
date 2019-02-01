@@ -10,13 +10,13 @@ ms.assetid: 4021eca1-adfb-4e5a-adee-159263c29637
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-robots: noindex,nofollow
-ms.openlocfilehash: c6d085fd33513a32207a3b9acfdfe6fe91657a88
-ms.sourcegitcommit: 2cc635835709fb8d86cdb63ea34233b36c94d4d8
+ROBOTS: NOINDEX
+ms.openlocfilehash: 86d36921939b611fa6647d4a0bf3af6d11f27ee7
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52259049"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54897630"
 ---
 # <a name="what39s-new-in-version-1602-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1602의 새로운 기능
 
@@ -132,7 +132,7 @@ System Center Configuration Manager 업데이트 1602는 버전 1511을 실행�
  자세한 내용은 [System Center Configuration Manager의 디바이스 준수 정책](../../../protect/deploy-use/device-compliance-policies.md)을 참조하세요.  
 
 ### <a name="make-sure-enrolled-and-compliant-devices-always-have-access-to-exchange-on-premises"></a>등록된 규격 디바이스에서 항상 Exchange 온-프레미스에 액세스할 수 있는지 확인  
- 다음 옵션을 선택하면 Intune에 등록되었으며 준수 정책을 준수하는 디바이스에서 Exchange 온-프레미스에 액세스할 수 있습니다. **기본 규칙 재정의 - Intune에 등록된 규격 디바이스의 Exchange 온-프레미스 액세스 항상 허용:**. 이 규칙은 Exchange 온-프레미스에 대한 **조건부 액세스 정책 구성 마법사**의 **일반 페이지**에서 사용할 수 있습니다.
+ 다음 옵션을 선택하면 Intune에 등록되어 있고 규정 준수 정책을 준수하는 디바이스는 Exchange 온-프레미스에 액세스할 수 있습니다. **기본 규칙 재정의 - Intune 등록 및 규정 준수 디바이스가 Exchange 온-프레미스에 액세스할 수 있도록 항상 허용합니다**. 이 규칙은 Exchange 온-프레미스에 대한 **조건부 액세스 정책 구성 마법사**의 **일반 페이지**에서 사용할 수 있습니다.
 
  이 규칙은 기본 규칙을 재정의하며, 이것은 기본 규칙을 액세스를 격리 또는 차단하도록 설정하더라도 등록 및 규격 디바이스는 여전히 Exchange 온-프레미스에 액세스할 수 있음을 의미합니다. 등록된 규격 디바이스에서 Exchange 온-프레미스를 통해 항상 메일에 액세스할 수 있도록 하려면 이 설정을 사용합니다.   
 
@@ -173,17 +173,17 @@ System Center Configuration Manager 업데이트 1602는 버전 1511을 실행�
 ### <a name="improvements-to-endpoint-protection-antimalware-settings"></a>Endpoint Protection 맬웨어 방지 설정의 향상된 기능  
  1602에서는 Windows Defender에 대한 Endpoint Protection 맬웨어 방지 프로그램 정책에서 다음과 같은 새 설정을 추가합니다.  
 
--   실시간 보호: 다운로드 시 및 설치 전에 잠재적으로 원치 않는 애플리케이션 차단  
+-   실시간 보호: 다운로드 시 및 설치 전에 잠재적으로 원치 않는 애플리케이션을 차단합니다.  
 
--   검색 설정: 전체 검색 중 매핑된 네트워크 드라이브 검색  
+-   검색 설정: 전체 검색 중 매핑된 네트워크 드라이브를 검색합니다.  
 
 -   자동 샘플 파일 전송 설정:  
 
      맬웨어 방지 엔진은 추가 분석을 위해 샘플 파일을 Microsoft로 보내도록 요청할 수 있습니다. 기본적으로 이러한 샘플을 보내기 전에 항상 확인 메시지가 표시됩니다. 관리자는 이 동작을 구성하기 위해 다음 설정을 관리할 수 있습니다.  
 
-    -   고급: 검색된 특정 항목의 악성 여부를 Microsoft가 확인할 수 있도록 자동 샘플 파일 전송 설정  
+    -   고급: 검색된 특정 항목의 악성 여부를 Microsoft가 확인할 수 있도록 자동 샘플 파일 전송을 사용하도록 설정합니다.  
 
-    -   고급: 사용자가 자동 샘플 파일 전송 설정을 수정하도록 허용  
+    -   고급: 사용자가 자동 샘플 파일 전송 설정을 수정하도록 허용합니다.  
 
     또한 Endpoint Protection 맬웨어 방지 정책의 "제외 설정" 섹션에 포함된 기존의 **파일 및 폴더 제외** 설정이 이제 디바이스 제외를 허용합니다.  
 
@@ -209,10 +209,10 @@ Configuration Manager에서는 iOS 7.1 이상을 실행하는 감독된/감독�
 
  배포 목록에서 사용 약관 배포를 선택합니다. 요약 영역에는 다음 통계가 표시됩니다.  
 
--   **준수**: 사용자가 최신 버전의 사용 약관을 수락했습니다.  
+-   **규격**: 사용자가 최신 버전의 사용 약관을 수락했습니다.  
 
 -   **오류**  
 
 -   **비준수**: 사용자가 사용 약관의 버전을 수락했지만 최신 버전이 아닙니다.  
 
--   **알 수 없음**: 사용자가 등록된 장치가 없는 사용 약관을 비롯하여 사용 약관을 수락하지 않았습니다.  
+-   **알 수 없음**: 사용자가 등록된 디바이스가 없는 사용 약관을 비롯하여 사용 약관을 수락하지 않았습니다.  

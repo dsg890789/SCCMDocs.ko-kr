@@ -10,13 +10,12 @@ ms.assetid: 2200b02b-e76b-4aa7-a77a-6dc5e70f1333
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-robots: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3a9c7758e394118041700192a393aff98f0d9087
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 2047874bb44c89e510abd52a387277e749cf65db
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32347334"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54896450"
 ---
 # <a name="system-center-updates-publisher"></a>System Center Updates Publisher
 
@@ -45,19 +44,19 @@ Updates Publisher를 열면 기본적으로 *업데이트 작업 영역*의 개�
 Updates Publisher에는 구성에 도움이 되는 4개의 작업 영역이 있습니다.
 
 
-**업데이트 작업 영역**: 이 작업 영역을 사용하여 소프트웨어 업데이트 및 업데이트 번들 [만들기](/sccm/sum/tools/create-updates-with-updates-publisher) 및 [관리](/sccm/sum/tools/manage-updates-with-updates-publisher)를 수행할 수 있습니다. 여기에는 업데이트 및 번들을 게시물에 할당하고, 게시하고, 다른 Updates Publisher 리포지토리로 내보내는 작업이 포함됩니다.
+**업데이트 작업 영역:** 이 작업 영역을 사용하여 소프트웨어 업데이트 및 업데이트 번들을 [만들고](/sccm/sum/tools/create-updates-with-updates-publisher) [관리](/sccm/sum/tools/manage-updates-with-updates-publisher)합니다. 여기에는 업데이트 및 번들을 게시물에 할당하고, 게시하고, 다른 Updates Publisher 리포지토리로 내보내는 작업이 포함됩니다.
 
-**게시물 작업 영역**: [게시물을 관리](/sccm/sum/tools/updates-publisher-publications)하는 곳입니다. 게시물은 업데이트 내보내기 및 업데이트 게시물을 간소화하기 위해 만드는 업데이트 그룹입니다.
+**게시물 작업 영역:** [게시물을 관리](/sccm/sum/tools/updates-publisher-publications)하는 곳입니다. 게시물은 업데이트 내보내기 및 업데이트 게시물을 간소화하기 위해 만드는 업데이트 그룹입니다.
 
 게시물 관리에는 클라이언트가 업데이트를 찾아 설치할 수 있도록 서버에 업데이트를 게시하고, 다른 Updates Publisher 설치에서 사용하도록 업데이트 및 번들을 내보내거나, 게시물의 콘텐츠 또는 세부 정보를 수정하는 작업이 포함됩니다.
 
 
 
-**규칙 작업 영역**: 배포하는 업데이트에서 저장한 후 사용할 수 있는 [적용 가능성 규칙을 관리](/sccm/sum/tools/updates-publisher-applicability-rules)하는 곳입니다. 두 가지 유형의 규칙이 있습니다.
+**규칙 작업 영역:** 배포하는 업데이트에서 저장한 다음, 사용할 수 있는 [적용 가능성 규칙을 관리](/sccm/sum/tools/updates-publisher-applicability-rules)하는 곳입니다. 두 가지 유형의 규칙이 있습니다.
 
 -   설치 가능 규칙 - 이 규칙은 클라이언트가 업데이트를 설치해야 할지 결정하는 데 도움이 됩니다.
 -   설치됨 규칙 - 이 규칙은 업데이트가 이미 설치되었는지 확인합니다.
 
-**카탈로그 작업 영역**: 이 작업 영역을 사용하여 [소프트웨어 업데이트 카탈로그 관리](/sccm/sum/tools/updates-publisher-catalogs) 및 추가를 수행합니다. 여기에는 해당 카탈로그에서 Updates Publisher 리포지토리로 소프트웨어 업데이트 가져오기가 포함됩니다.
+**카탈로그 작업 영역:** 이 작업 영역을 사용하여 [소프트웨어 업데이트 카탈로그를 관리](/sccm/sum/tools/updates-publisher-catalogs)하고 추가합니다. 여기에는 해당 카탈로그에서 Updates Publisher 리포지토리로 소프트웨어 업데이트 가져오기가 포함됩니다.
 ## <a name="first-steps"></a>첫 번째 단계
 시작하려면 먼저 [설치](/sccm/sum/tools/install-updates-publisher)한 다음 Updates Publisher의 [옵션을 구성](/sccm/sum/tools/updates-publisher-options)합니다.

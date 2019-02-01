@@ -10,13 +10,12 @@ ms.assetid: a70bfbd4-757a-4468-9312-1c3b373ef9fc
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-robots: noindex
-ms.openlocfilehash: 0481abfb1ed881355a489b99b0c3f7ec9c595e69
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.openlocfilehash: 0e77225fb378a5851dbba9718dd3810463255cf7
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32342327"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898429"
 ---
 # <a name="plan-a-migration-job-strategy-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 마이그레이션 작업 전략 계획
 
@@ -45,11 +44,11 @@ ms.locfileid: "32342327"
 ##  <a name="Types_of_Migration"></a> 마이그레이션 작업 유형  
  Configuration Manager에서 지원하는 마이그레이션 작업 유형은 다음과 같습니다. 각 작업 유형은 해당 작업에 포함할 수 있는 개체를 정의할 수 있도록 되어 있습니다.  
 
- **컬렉션 마이그레이션**(Configuration Manager 2007 SP2에서 마이그레이션하는 경우에만 지원됨): 선택하는 컬렉션과 관련된 개체를 마이그레이션합니다. 기본적으로 컬렉션 마이그레이션에는 컬렉션의 구성원과 연결된 모든 개체가 포함됩니다. 컬렉션 마이그레이션 작업을 사용할 때 특정 개체 인스턴스를 제외할 수 있습니다.  
+ **컬렉션 마이그레이션**(Configuration Manager 2007 SP2에서 마이그레이션하는 경우만 지원됨). 선택한 컬렉션과 관련된 개체를 마이그레이션합니다. 기본적으로 컬렉션 마이그레이션에는 컬렉션의 구성원과 연결된 모든 개체가 포함됩니다. 컬렉션 마이그레이션 작업을 사용할 때 특정 개체 인스턴스를 제외할 수 있습니다.  
 
- **개체 마이그레이션**: 선택하는 개별 개체를 마이그레이션합니다. 마이그레이션할 특정 데이터만 선택합니다.  
+ **개체 마이그레이션**: 선택한 개별 개체를 마이그레이션합니다. 마이그레이션할 특정 데이터만 선택합니다.  
 
- **이전에 마이그레이션된 개체 마이그레이션**: 이전에 마이그레이션된 개체가 마지막으로 마이그레이션된 후 원본 계층에서 업데이트되면 해당 개체를 마이그레이션합니다.  
+ **이전에 마이그레이션된 개체 마이그레이션**: 이전에 마이그레이션된 개체가 마지막으로 마이그레이션된 후 원본 계층 구조에서 업데이트되면 해당 개체를 마이그레이션합니다.  
 
 ###  <a name="Objects_that_can_migrate"></a> 마이그레이션할 수 있는 개체  
  특정 유형의 마이그레이션 작업에서는 일부 개체만 마이그레이션할 수 있습니다. 다음에는 각 마이그레이션 작업 유형으로 마이그레이션할 수 있는 개체 유형이 나와 있습니다.  
@@ -198,7 +197,7 @@ ms.locfileid: "32342327"
 
     -   이전에 마이그레이션된 개체 마이그레이션  
 
--   **가상 응용 프로그램 패키지**  
+-   **가상 애플리케이션 패키지**  
 
     -   컬렉션 마이그레이션  
 
@@ -285,7 +284,7 @@ ms.locfileid: "32342327"
 ### <a name="collection-dependencies-and-include-objects"></a>컬렉션 종속성 및 개체 포함  
  마이그레이션 작업 만들기 마법사에서 마이그레이션할 컬렉션을 지정하면 종속된 컬렉션이 자동으로 작업에 포함되도록 선택됩니다. 이러한 동작을 통해 모든 필수 리소스를 마이그레이션 후에도 사용할 수 있게 됩니다.  
 
- 예를 들면 다음과 같습니다. Windows 7을 실행하는 디바이스 컬렉션( **Win_7**)을 선택합니다. 이러한 컬렉션은 클라이언트 운영 체제를 모두 포함하는 **All_Clients**이라는 컬렉션으로 제한됩니다. **All_Clients** 컬렉션은 마이그레이션에 자동으로 선택됩니다.  
+ 예: Windows 7을 실행하는 디바이스 컬렉션(**Win_7**)을 선택합니다. 이러한 컬렉션은 클라이언트 운영 체제를 모두 포함하는 **All_Clients**이라는 컬렉션으로 제한됩니다. **All_Clients** 컬렉션은 마이그레이션에 자동으로 선택됩니다.  
 
 ### <a name="collection-limiting"></a>컬렉션 제한  
  System Center Configuration Manager에서 컬렉션은 글로벌 데이터이며 계층 구조의 각 사이트에서 평가됩니다. 따라서 마이그레이션 후에 컬렉션의 범위를 제한할 방법을 계획해야 합니다. 마이그레이션하는 동안에는 사용할 대상 계층의 컬렉션을 식별하여 마이그레이션 중인 컬렉션 범위를 제한하여 예상치 않은 구성원이 마이그레이션된 컬렉션에 포함되지 않도록 할 수 있습니다.  

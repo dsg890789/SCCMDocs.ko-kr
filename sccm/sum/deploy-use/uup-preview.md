@@ -2,7 +2,7 @@
 title: UUP 미리 보기
 titleSuffix: Configuration Manager
 description: UUP 통합 미리 보기 지침
-ms.date: 01/14/2018
+ms.date: 01/25/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
@@ -10,13 +10,13 @@ ms.assetid: 0b0da585-0096-410b-8035-6b7a312f37f5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-robots: noindex,nofollow
-ms.openlocfilehash: 17a9abf2f20f53ba69ad160db421be51471cc311
-ms.sourcegitcommit: 27b2594087e8c54062db6b2a30ab843bab17f8cc
+ROBOTS: NOINDEX
+ms.openlocfilehash: 27a960758d8d3939798ae270404d5dd1afbea62d
+ms.sourcegitcommit: ad25a7bdd983c5a0e4c95bffdc61c9a1ebcbb765
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270463"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072988"
 ---
 # <a name="uup-private-preview-instructions"></a>UUP 비공개 미리 보기 지침
 
@@ -56,28 +56,28 @@ WSUS ID를 검색하려면 다음을 수행합니다.
 $server = Get-WsusServer
 $config = $server.GetConfiguration()
 $config.ServerId
+
+# also check MUUrl
+$config.MUUrl
 ```
 
-### <a name="2-update-configmgr-to-a-supported-version"></a>2. ConfigMgr을 지원되는 버전으로 업데이트
+**MUUrl** 속성은 `https://sws.update.microsoft.com`이어야 합니다. 변경하려면 다음 지원 문서에서 해결 방법을 참조하세요. [SoapException으로 인해 WSUS 동기화 실패](https://support.microsoft.com/help/4482416/wsus-synchronization-fails-with-soapexception)
+
+
+### <a name="2-update-configmgr"></a>2. ConfigMgr 업데이트
 
 환경에서 기본 설치 파일을 동기화하지 않은 경우 프로덕션 환경에는 ConfigMgr 1810 현재 분기가 필요하고, 랩 환경에는 1812 기술 미리 보기 분기가 필요합니다.
 
 환경에서 기본 설치 파일을 동기화하지 않은 경우 프로덕션 환경에는 ConfigMgr 1810 핫픽스 KB4482615가 필요하고, 랩 환경에는 1812 기술 미리 보기 분기가 필요합니다.
 
 
-#### <a name="configmgr-1810-uup-hotfix-kb4482615"></a>ConfigMgr 1810 UUP 핫픽스(KB4482615)
-
-> [!Important]  
-> 다음 프로세스는 현재 분기 버전 사이트를 2018년 12월 19일 이후 일반 공급되는 1810 버전으로 업데이트하는 작업입니다.
->
-> 2018년 11월 말 또는 12월 초에 PowerShell 스크립트를 실행하여 1810 업데이트로 옵트인하는 경우 이 핫픽스가 아직 제공되지 않습니다. 
+#### <a name="diagnostics-and-usage-data-level"></a>진단 및 사용량 데이터 수준
+이 미리 보기 기간 동안 Configuration Manager 진단 및 데이터 사용량 수준을 증가하는 것이 좋습니다. **전체** 수준을 통해 Microsoft에서는 이 새로운 기능으로 문제를 효과적으로 분석하고 해결합니다. 자세한 내용은 [버전 1810의 진단 사용량 데이터 수집 수준](/sccm/core/plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1810)을 참조하세요.
 
 
-1. 사이트 업데이트
+#### <a name="update-rollup-for-configmgr-1810-4486457"></a>ConfigMgr 1810(4486457)에 대한 업데이트 롤업
 
-    1. [Microsoft 다운로드 센터]에서 핫픽스 KB4482615를 다운로드하세요<!--(https://download.microsoft.com/download/0/9/0/09081E12-A2CF-40B6-82D8-9B8914A1C2D3/KB4482615/CM1810-KB4482615.ConfigMgr.Update.exe)-->. 이 핫픽스를 통해 기본 이외의 시나리오에서 UUP를 사용할 수 있습니다.  
-
-    2. [핫픽스를 가져오려면 업데이트 등록 도구 사용](/sccm/core/servers/manage/use-the-update-registration-tool-to-import-hotfixes)  
+1. 버전 1810에 대한 업데이트 롤업을 사용하여 사이트를 업데이트합니다. 자세한 내용은 [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates)를 참조하세요.  
 
 2. 클라이언트 업데이트  
 
@@ -85,11 +85,15 @@ $config.ServerId
 
     - UUP 업데이트를 대상으로 하는 모든 클라이언트는 **약 6GB의 사용되지 않은 콘텐츠를 클라이언트에 불필요하게 다운로드하지 않도록** 업그레이드해야 합니다.
 
+이 업데이트에 대한 자세한 내용은 [System Center Configuration Manager 현재 분기 버전 1810에 대한 업데이트 롤업](https://support.microsoft.com/help/4486457)을 참조하세요.
 
-#### <a name="1812-technical-preview"></a>1812 기술 미리 보기
-1812 기술 미리 보기는 지원되는 UUP 시나리오에서 ConfigMgr 1810 UUP 핫픽스(KB4482615)와 동일합니다.
 
-유일한 주의 사항으로, 1812년 기술 미리 보기의 클라이언트 업그레이드는 1810.1 TP 또는 1811 TP와 관련이 없습니다. 따라서 이 문제를 해결하려면 1810.1 TP 및 1811 TP 클라이언트를 제거한 다음, 1812 TP 클라이언트만 완전하게 설치해야 합니다. UUP 업데이트를 대상으로 하는 모든 클라이언트는 **약 6GB의 사용되지 않은 콘텐츠를 클라이언트에 불필요하게 다운로드하지 않도록** 1812 기술 미리 보기(또는 그 이상)에 있어야 합니다.
+<!-- 
+#### 1812 Technical Preview
+The 1812 Technical Preview is equivalent in supported UUP scenarios to the ConfigMgr 1810 UUP Hotfix (KB4482615).
+
+The only note is that client upgrade of 1812 Technical Preview is broken from 1810.1 TP or 1811 TP. To work around this issue, you'll need to uninstall 1810.1 TP and 1811 TP clients, then install the 1812 TP client cleanly. All clients you target UUP updates to must be on 1812 Technical Preview (or later) to prevent **unnecessarily downloading around 6 GB** of unused content to the client.
+ -->
 
 
 ### <a name="3-update-windows-clients-to-supported-versions"></a>3. Windows 클라이언트를 지원되는 버전으로 업데이트
@@ -97,26 +101,26 @@ $config.ServerId
 #### <a name="for-express-installation-file-sync"></a>기본 설치 파일 동기화인 경우
 기본 콘텐츠의 경우 지원되는 Windows 버전은 다음과 같습니다.
 
-- **Windows 10 버전 1709**([KB4338825](https://support.microsoft.com/help/4338825)(2017년 7월 누적 보안 업데이트)) 이상  
+- **Windows 10 버전 1809**(1월 22일 릴리스된 비보안 누적 업데이트 [KB4476976](https://support.microsoft.com/help/4476976/windows-10-update-kb4476976) 이상). 이 업데이트는 카탈로그에서만 제공되며 WSUS와 직접 동기화되지 않습니다. 업데이트를 배포하기 위해 환경으로 가져오려면 [Microsoft 업데이트 카탈로그에서 업데이트 가져오기](/sccm/sum/get-started/synchronize-software-updates#import-updates-from-the-microsoft-update-catalog)를 참조하세요.
 
 - **Windows 10 버전 1803**([KB4284835](https://support.microsoft.com/help/4284835)(2017년 6월 누적 보안 업데이트)) 이상  
 
-- **Windows 10 버전 1809**(아직 릴리스되지 않은 1월 누적 비보안 업데이트(또는 다음 2월 누적 보안 업데이트)) 이상
+- **Windows 10 버전 1709**([KB4338825](https://support.microsoft.com/help/4338825)(2017년 7월 누적 보안 업데이트)) 이상  
+
 
 #### <a name="for-non-express-installation-file-sync"></a>기본 이외의 설치 파일 동기화인 경우
-기본 이외의 콘텐츠의 경우 추가 패치를 적용해야 합니다. 이 경로는 12/20 카탈로그에서 비누적 형식으로 제공되고 있으며, 1월 말에 일반 누적 형식으로 제공될 예정입니다.
+기본 이외의 콘텐츠의 경우 추가 패치를 적용해야 합니다. 이 업데이트는 약 6GB의 사용되지 않은 콘텐츠를 불필요하게 클라이언트로 다운로드하지 않도록 방지하는 데 중요합니다. 지원되는 Windows 버전에는 다음 빌드가 포함됩니다.
 
-지원되는 패치는 다음 중 하나의 **Windows 10 버전 1709** 및 **Windows 10 버전 1803**입니다.
-- 12월-1월: 클라이언트에는 기본 누적 업데이트 수준과 비누적 업데이트가 있어야 합니다.  
-    - 누적 업데이트  
-        - 1709: [KB4338825](https://support.microsoft.com/help/4338825)(2017년 7월 누적 보안 업데이트) - 2019년 1월 누적 보안 업데이트 포함  
-        - 1803: [KB4284835](https://support.microsoft.com/help/4284835)(2017년 6월 누적 보안 업데이트) - 2019년 1월 누적 보안 업데이트 포함  
-    - 비누적 업데이트 이 업데이트는 카탈로그에서만 제공되며 WSUS와 직접 동기화되지 않습니다. 업데이트를 배포하기 위해 환경으로 가져오려면 [Microsoft 업데이트 카탈로그에서 업데이트 가져오기](/sccm/sum/get-started/synchronize-software-updates#import-updates-from-the-microsoft-update-catalog)를 참조하세요.  
-        - 1709: [KB4483530](https://support.microsoft.com/help/4483530)  
-        - 1803: [KB4483541](https://support.microsoft.com/help/4483541)  
-- 2월 이후: 누적 업데이트의 경우 아직 릴리스되지 않은 1월 누적 비보안 업데이트(또는 다음 2월 누적 보안 업데이트) 이상   
+- **Windows 10 버전 1809**(1월 22일 릴리스된 비보안 누적 업데이트 [KB4476976](https://support.microsoft.com/help/4476976/windows-10-update-kb4476976) 이상). 이 업데이트는 카탈로그에서만 제공되며 WSUS와 직접 동기화되지 않습니다. 업데이트를 배포하기 위해 환경으로 가져오려면 [Microsoft 업데이트 카탈로그에서 업데이트 가져오기](/sccm/sum/get-started/synchronize-software-updates#import-updates-from-the-microsoft-update-catalog)를 참조하세요.
 
-**Windows 10 버전 1809**(아직 릴리스되지 않은 1월 누적 비보안 업데이트(또는 다음 2월 누적 보안 업데이트)) 이상
+
+- **Windows 10 버전 1803** 및 **Windows 10 버전 1709** 클라이언트에는 기본 누적 업데이트 수준과 비누적 업데이트가 있어야 합니다.
+    - 누적 업데이트
+        - 1803: [KB4284835](https://support.microsoft.com/help/4284835)(2017년 6월 누적 보안 업데이트) - 2019년 1월 누적 보안 업데이트 포함
+        - 1709: [KB4338825](https://support.microsoft.com/help/4338825)(2017년 7월 누적 보안 업데이트) - 2019년 1월 누적 보안 업데이트 포함
+    - 비누적 업데이트 이 업데이트는 카탈로그에서만 제공되며 WSUS와 직접 동기화되지 않습니다. 업데이트를 배포하기 위해 환경으로 가져오려면 [Microsoft 업데이트 카탈로그에서 업데이트 가져오기](/sccm/sum/get-started/synchronize-software-updates#import-updates-from-the-microsoft-update-catalog)를 참조하세요.
+        - 1803: [KB4483541](https://support.microsoft.com/help/4483541)
+        - 1709: [KB4483530](https://support.microsoft.com/help/4483530)
 
 
 ### <a name="4-enable-express-installation-on-clients-in-client-settings"></a>4. 클라이언트 설정에서 클라이언트에 기본 설치를 사용하도록 설정
@@ -182,10 +186,7 @@ UUP 업데이트가 환경에 동기화되면 해당 UUP 업데이트를 찾아�
 
 ### <a name="updates-available-during-preview"></a>미리 보기 동안 사용 가능한 업데이트
 
-- Windows 10 1709 누적 업데이트
-    - 12월 보안 업데이트(12월 11일)
-    - 1월 보안 업데이트(1월 8일)
-    - 1월 비보안 업데이트(1월 15일)
+- Windows 10 1809 누적 업데이트
     - 2월 보안 업데이트(2월 12일)  
 
 - Windows 10 1803 누적 업데이트
@@ -194,15 +195,18 @@ UUP 업데이트가 환경에 동기화되면 해당 UUP 업데이트를 찾아�
     - 1월 비보안 업데이트(1월 15일)
     - 2월 보안 업데이트(2월 12일)  
 
-- Windows 10 1809 누적 업데이트
+- Windows 10 1709 누적 업데이트
+    - 12월 보안 업데이트(12월 11일)
+    - 1월 보안 업데이트(1월 8일)
+    - 1월 비보안 업데이트(1월 15일)
     - 2월 보안 업데이트(2월 12일)  
 
-- Windows 10 1803 기능 업데이트(1709 또는 1803)   
+- Windows 10 1809 기능 업데이트(1709 또는 1803)
     - 12월 보안 업데이트 규정 준수(12월 11일)
     - 1월 보안 업데이트 규정 준수(1월 8일)
     - 2월 보안 업데이트 규정 준수(2월 12일)  
 
-- Windows 10 1809 기능 업데이트(1709 또는 1803)
+- Windows 10 1803 기능 업데이트(1709 또는 1803)   
     - 12월 보안 업데이트 규정 준수(12월 11일)
     - 1월 보안 업데이트 규정 준수(1월 8일)
     - 2월 보안 업데이트 규정 준수(2월 12일)  
@@ -226,7 +230,7 @@ UUP가 아직 미리 보기(비공개 또는 공개)로 있는 한 필요한 경
 미리 보기 동안 여러 연속 업데이트에 UUP 유형 업데이트를 사용하여 클라이언트를 준수 상태로 계속 유지함으로써 진행 중인 기대 수준을 느껴보세요.
 
 #### <a name="content"></a>Content
-이전에 UUP 이외의 업데이트에서 확인한 것과 비교해 볼 때 각 주요 버전(1709, 1803, 1809), 아키텍처 및 언어 조합에 대한 첫 번째 업데이트는 파일 수와 디스크 공간 모두에서 큰 것으로 나타납니다. 이 추가 콘텐츠는 주로 누적 업데이트에 대한 모든 FOD 및 언어 팩에 사용됩니다. 기능 업데이트의 경우, 특히 기본 설치를 사용하도록 설정된 경우 첫 번째 업데이트에는 대규모의 추가 콘텐츠가 있습니다. 
+이전에 UUP 이외의 업데이트에서 확인한 것과 비교해 볼 때 각 주요 버전(1809, 1803, 1709), 아키텍처 및 언어 조합에 대한 첫 번째 업데이트는 파일 수와 디스크 공간 모두에서 큰 것으로 나타납니다. 이 추가 콘텐츠는 주로 누적 업데이트에 대한 모든 FOD 및 언어 팩에 사용됩니다. 기능 업데이트의 경우, 특히 기본 설치를 사용하도록 설정된 경우 첫 번째 업데이트에는 대규모의 추가 콘텐츠가 있습니다. 
 
 그러나 모든 FOD 및 언어 팩 콘텐츠는 다시 다운로드되거나 재배포되지 않고 업데이트 전반에 지능적으로 공유되므로 후속 업데이트(누적 업데이트와 높은 규정 준수 수준의 월별 기능 업데이트 모두 해당)를 통해 다운로드하고 배포해야 하는 새 콘텐츠의 양이 훨씬 적습니다. 1709 및 1803의 미리 보기 동안 이 월별 다운로드는 UUP 이외의 시나리오에서 볼 수 있는 누적 업데이트의 크기와 거의 같습니다. 그러나 1809에서는 누적 업데이트의 증분 다운로드가 매월 훨씬 더 적으므로 스토리가 훨씬 향상됩니다. 
 

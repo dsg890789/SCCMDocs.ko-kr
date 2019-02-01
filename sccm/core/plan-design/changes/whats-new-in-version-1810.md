@@ -2,7 +2,7 @@
 title: 버전 1810의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager 최신 라인인 1810 버전에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
-ms.date: 12/20/2018
+ms.date: 01/25/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 4812324b-e6aa-4431-bf1d-9fcd763a8caa
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 60d1c93acc2fcc2c04d09cd8f0ec0c083089a8ec
-ms.sourcegitcommit: a3cec96a771eed69e58a29917d1a3fe1a5fb2e73
+ms.openlocfilehash: be1bbc8319a67b4aa2b4c27be9e9bbe6e935d087
+ms.sourcegitcommit: ad25a7bdd983c5a0e4c95bffdc61c9a1ebcbb765
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54250598"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072971"
 ---
 # <a name="whats-new-in-version-1810-of-configuration-manager-current-branch"></a>Configuration Manager 1810 버전의 새로운 기능
 
@@ -27,15 +27,6 @@ Configuration Manager의 현재 분기에 대한 1810 업데이트는 콘솔 내
 
 > [!Note]  
 > 이 문서는 현재 이 버전의 모든 중요한 기능을 나열합니다. 그러나 일부 섹션은 새 기능에 대한 추가 정보가 있는 업데이트된 콘텐츠에 아직 연결되지 않았습니다. 이 페이지에서 정기적으로 업데이트를 확인하세요. 변경 내용은 ***[업데이트]*** 태그로 표시됩니다. 이 표시는 콘텐츠가 최종 버전이 되면 제거될 것입니다.  
-
-새 기능 외에 이 릴리스에는 버그 수정과 같은 추가 변경 사항도 포함되어 있습니다. 자세한 내용은 [Configuration Manager 현재 분기, 버전 1810의 변경 내용 요약](https://support.microsoft.com/help/4482169)을 참조하세요.
-
-<!--
-For more information on changes to the Windows PowerShell cmdlets for Configuration Manager, see [PowerShell 1810 Release Notes](https://docs.microsoft.com/powershell/sccm/1810_release_notes?view=sccm-ps).
-
-The following additional updates to this release are also now available:
-- [Update rollup for Configuration Manager current branch, version 1810](https://support.microsoft.com/help/4462978)
--->
 
 > [!Important]  
 > 새 Configuration Manager 기능을 활용하려면 먼저 클라이언트를 최신 버전으로 업데이트합니다. 사이트 및 콘솔을 업데이트할 때 Configuration Manager 콘솔에 새 기능이 표시되지만 클라이언트 버전도 최신 버전이 될 때까지 전체 시나리오가 작동하지 않습니다.
@@ -147,7 +138,8 @@ Version 1810 drops support for the following products:
 
 ### <a name="improvements-to-internet-based-client-setup"></a>인터넷 기반 클라이언트 설정의 개선 사항
 <!--1359181-->
-<!--move this under co-management?--> 이 릴리스는 인터넷에서 클라이언트의 Configuration Manager 클라이언트 설정 프로세스를 추가로 간소화합니다. 사이트는 추가 Azure AD(Azure Active Directory) 정보를 CMG(클라우드 관리 게이트웨이)에 게시합니다. Azure AD에 가입된 클라이언트는 가입된 동일한 테넌트를 사용하여 ccmsetup 프로세스 중에 CMG에서 이 정보를 가져옵니다. 이 동작은 둘 이상의 Azure AD 테넌트가 있는 환경의 공동 관리에 디바이스를 등록하는 작업을 추가로 간소화합니다. 이제 유일한 두 개의 필수 ccmsetup 속성은 **CCMHOSTNAME** 및 **SMSSiteCode**입니다.
+<!--move this under co-management?-->  
+이 릴리스는 인터넷에서 클라이언트의 Configuration Manager 클라이언트 설정 프로세스를 추가로 간소화합니다. 사이트는 추가 Azure AD(Azure Active Directory) 정보를 CMG(클라우드 관리 게이트웨이)에 게시합니다. Azure AD에 가입된 클라이언트는 가입된 동일한 테넌트를 사용하여 ccmsetup 프로세스 중에 CMG에서 이 정보를 가져옵니다. 이 동작은 둘 이상의 Azure AD 테넌트가 있는 환경의 공동 관리에 디바이스를 등록하는 작업을 추가로 간소화합니다. 이제 유일한 두 개의 필수 ccmsetup 속성은 **CCMHOSTNAME** 및 **SMSSiteCode**입니다.
 
 <!--For more information, see [Prepare Windows 10 devices for co-management](https://docs.microsoft.com/en-us/sccm/core/clients/manage/co-management-prepare#command-line-to-install-configuration-manager-client).-->
 
@@ -361,8 +353,31 @@ CMPivot의 추가 성능 및 문제 해결 기능 개선에 대한 자세한 내
 
 ## <a name="bkmk_opmdm"></a> 온-프레미스 MDM
 
-### <a name="an-intune-connection-is-no-longer-required-for-on-premises-mdm"></a>Intune 연결이 온-프레미스 MDM에 필요하지 않음
-<!--1359124--> Microsoft Intune 구독을 구성하기 위해 온-프레미스 MDM 필수 구성 요소는 더 이상 필요하지 않습니다. 조직에서 이 기능을 사용하려면 여전히 Intune 라이선스가 필요합니다. 
+### <a name="an-intune-connection-is-no-longer-required-for-new-on-premises-mdm-deployments"></a>Intune 연결이 새 온-프레미스 MDM 배포에 필요하지 않음
+<!--1359124--> Microsoft Intune 구독을 구성하기 위한 온-프레미스 MDM 필수 구성 요소는 새 배포에 더 이상 필요하지 않습니다. 조직에서 이 기능을 사용하려면 여전히 Intune 라이선스가 필요합니다. 현재 기존 온-프레미스 MDM 배포에서 Intune 연결을 제거할 수 없습니다. 자세한 내용은 [Intune 지원 블로그 게시물](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150)을 참조하세요.
+
+
+
+## <a name="other-updates"></a>기타 업데이트
+
+새 기능 외에 이 릴리스에는 버그 수정과 같은 추가 변경 사항도 포함되어 있습니다. 자세한 내용은 [Configuration Manager 현재 분기, 버전 1810의 변경 내용 요약](https://support.microsoft.com/help/4482169)을 참조하세요.
+
+<!--
+For more information on changes to the Windows PowerShell cmdlets for Configuration Manager, see [PowerShell 1810 Release Notes](https://docs.microsoft.com/powershell/sccm/1810_release_notes?view=sccm-ps).
+--> 
+
+다음 업데이트 롤업(4486457)은 2019년 1월 25일부터 콘솔에서 사용할 수 있습니다. [Configuration Manager 현재 분기, 버전 1810용 업데이트 롤업](https://support.microsoft.com/help/4486457).
+
+<!-- 
+### Hotfixes
+
+The following additional hotfixes are available to address specific issues:
+
+| ID | Title | Date | In-console |
+|---------|---------|---------|---------|
+| [4346645](https://support.microsoft.com/help/4346645) | Update for System Center Configuration Manager version 1806, first wave | 31 August 2018 | Yes | 
+
+-->
 
 
 

@@ -10,18 +10,19 @@ ms.assetid: f7350d03-f440-4744-82d4-75f8c6c25028
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 902e5e91b64cf3061862deeb98b0d9bf427e4598
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ROBOTS: NOINDEX
+ms.openlocfilehash: af82e3b5d0f555494705a28fba291253c83b00ea
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32340916"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898021"
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1606-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1606에 대한 진단 사용 현황 데이터 수집의 수준
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 버전 1606에서는 **기본**, **고급**, **전체** 등 세 가지 수준의 진단 및 사용 현황 데이터를 수집합니다. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
+System Center Configuration Manager 버전 1606에서는 다음과 같은 세 가지 수준의 진단 및 사용량 데이터를 수집합니다. **기본**, **고급**, **전체**. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
 
 이전 버전에서 변경된 내용은 ***[새로운 기능]***, ***[업데이트된 기능]***, ***[제거된 기능]*** 또는 ***[이동된 기능]*** 으로 표시됩니다.
 
@@ -97,7 +98,7 @@ System Center Configuration Manager 버전 1606에서는 **기본**, **고급**,
 
 System Center Configuration Manager 버전 1606부터 이 수준에는 다음이 포함됩니다.
 
--   **응용 프로그램 관리:**  
+-   **애플리케이션 관리:**  
 
     -    조직 내에서 사용되는 배포 유형에 대한 기본 사용 현황/대상 지정 정보(사용자 및 디바이스 대상 지정, 필수 및 사용 가능, 유니버설 앱)  
 
@@ -226,11 +227,11 @@ System Center Configuration Manager 버전 1606부터 이 수준에는 다음이
     - ***[새로운 기능]*** ATP(Advanced Threat Protection) 정책(정책 개수 및 정책 배포 여부)
 
 
--   ***[제거된 기능]*** **MAM(모바일 응용 프로그램 관리):**  
+-   ***[제거된 기능]*****MAM(모바일 애플리케이션 관리):**  
 
-    -   ***[제거된 기능]*** 운영 체제별 MAM 사용 Office 응용 프로그램, LOB(기간 업무) 응용 프로그램 및 정책의 개수  
+    -   ***[제거된 기능]*** 운영 체제별 MAM 사용 Office 애플리케이션, LOB(기간 업무) 애플리케이션 및 정책의 개수  
 
-    -   ***[제거된 기능]*** MAM 응용 프로그램/정책 배포 개수  
+    -   ***[제거된 기능]*** MAM 애플리케이션/정책 배포 개수  
 
     -   ***[제거된 기능]*** MAM 설정당 만들어진 규칙 개수  
 
@@ -241,7 +242,7 @@ System Center Configuration Manager 버전 1606부터 이 수준에는 다음이
 
 
 
--   **MDM(모바일 장치 관리):**  
+-   **MDM(모바일 디바이스 관리):**  
 
     -   실행된 모바일 디바이스 작업(잠금, 핀 다시 설정, 초기화, 사용 중지 명령) 개수  
 
@@ -262,7 +263,7 @@ System Center Configuration Manager 버전 1606부터 이 수준에는 다음이
     -   Microsoft Intune에 대한 전체 및 델타 사용자 동기화 통계
 
 
--   **온-프레미스 MDM(모바일 장치 관리):**  
+-   **온-프레미스 MDM(모바일 디바이스 관리):**  
 
     -   온-프레미스 MDM 애플리케이션 배포에 대한 배포 성공/실패 통계  
 
@@ -385,7 +386,7 @@ System Center Configuration Manager 버전 1606부터 이 수준에는 다음이
 -   마지막 소프트웨어 업데이트 검사 이후 최소/최대/평균 시간 수
 
 -    소프트웨어 업데이트 지점에서 동기화된 소프트웨어 업데이트 제품
--    준수 설정: SCEP, VPN, Wi-Fi 및 준수 정책 템플릿 구성 정보
+-    규정 준수 설정: SCEP, VPN, Wi-Fi 및 규정 준수 정책 템플릿 구성 세부 정보
 
 -    Intune에서 관리하는 디바이스에 대한 EAS 조건부 액세스 정책 유형(차단 또는 격리)
 

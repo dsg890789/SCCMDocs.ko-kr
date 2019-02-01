@@ -10,18 +10,19 @@ ms.assetid: d43ab033-2902-4681-8716-b4b17a6df372
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b77f2d38cb24b681aec4123621ffbbf8ba1be579
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ROBOTS: NOINDEX
+ms.openlocfilehash: 575611f8267d4ba10f5c471e63713e121abfc252
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32341715"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54897851"
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1702-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1702에 대한 진단 사용 현황 데이터 수집의 수준
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 버전 1702에서는 **기본**, **고급**, **전체** 등 세 가지 수준의 진단 및 사용 현황 데이터를 수집합니다. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
+System Center Configuration Manager 버전 1702에서는 다음과 같은 세 가지 수준의 진단 및 사용량 데이터를 수집합니다. **기본**, **고급**, **전체**. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
 
 이전 버전에서 변경된 내용은 ***[새로운 기능]***, ***[업데이트된 기능]***, ***[제거된 기능]*** 또는 ***[이동된 기능]*** 으로 표시됩니다.
 
@@ -104,7 +105,7 @@ System Center Configuration Manager 버전 1702에서 이 수준에는 다음이
 
 System Center Configuration Manager 버전 1702에서 이 수준에는 다음이 포함됩니다.
 
-- **응용 프로그램 관리:**  
+- **애플리케이션 관리:**  
 
    - 앱 요구 사항(각 배포 기술에서 참조되는 기본 제공 조건 개수)
 
@@ -112,7 +113,7 @@ System Center Configuration Manager 버전 1702에서 이 수준에는 다음이
 
    - 애플리케이션 승인 통계 및 사용 빈도
 
-   - ***[업데이트된 기능]*** 응용 프로그램 배포 정보(설치 및 제거 사용, 승인 필요, 사용자 조작 사용/사용 안 함, 종속성, 대체, 설치 동작 기능의 사용 횟수)  
+   - ***[업데이트된 기능]*** 애플리케이션 배포 정보(설치 및 제거 사용, 승인 필요, 사용자 조작 사용/사용 안 함, 종속성, 대체, 설치 동작 기능의 사용 횟수)  
 
    - 애플리케이션 정책 크기 및 복잡성 통계
 
@@ -128,7 +129,7 @@ System Center Configuration Manager 버전 1702에서 이 수준에는 다음이
 
    - 운영 체제별 애플리케이션 적용 가능성 개수  
 
-   - ***[새로운 기능]*** 작업 순서에서 참조되는 응용 프로그램 수
+   - ***[새로운 기능]*** 작업 순서에서 참조되는 애플리케이션 수
 
    - 유형별 패키지 개수  
 
@@ -142,7 +143,7 @@ System Center Configuration Manager 버전 1702에서 이 수준에는 다음이
 
    - 기간당 사용자/장치별 애플리케이션 배포의 최소/최대/평균 수
 
-   - ***[새로운 기능]*** 배포 기술에 의한 가장 일반적인 응용 프로그램 설치 오류 코드
+   - ***[새로운 기능]*** 배포 기술에 의한 가장 일반적인 애플리케이션 설치 오류 코드
 
    - MSI 구성 옵션 및 개수
 
@@ -172,11 +173,11 @@ System Center Configuration Manager 버전 1702에서 이 수준에는 다음이
 
    - 클라이언트 설치 오류 개수  
 
-   - ***[새로운 기능]*** Hyper-V 또는 Azure에 의해 가상화된 장치 수  
+   - ***[새로운 기능]*** Hyper-V 또는 Azure에 의해 가상화된 디바이스 수  
 
    - 소프트웨어 센터 작업 개수   
 
-   - ***[새로운 기능]*** UEFI 사용 장치 수
+   - ***[새로운 기능]*** UEFI 사용 디바이스 수
 
    - 클라이언트에 사용된 배포 방법, 배포 방법별 클라이언트 개수
 
@@ -186,7 +187,7 @@ System Center Configuration Manager 버전 1702에서 이 수준에는 다음이
 
    - 하드웨어 인벤토리 클래스, 소프트웨어 인벤토리 규칙 및 파일 수집 규칙 개수
 
-   - ***[새로운 기능]*** 가장 일반적인 오류 코드, 온-프레미스 서버 수, 다양한 상태의 장치 개수를 포함한 장치 상태 증명에 대한 통계
+   - ***[새로운 기능]*** 가장 일반적인 오류 코드, 온-프레미스 서버 수, 다양한 상태의 디바이스 개수를 포함한 디바이스 상태 증명에 대한 통계
 
 
 
@@ -273,7 +274,7 @@ System Center Configuration Manager 버전 1702에서 이 수준에는 다음이
 
 
 
-- **MDM(모바일 장치 관리):**  
+- **MDM(모바일 디바이스 관리):**  
 
     - 실행된 모바일 디바이스 작업(잠금, 핀 다시 설정, 초기화, 사용 중지 및 지금 동기화 명령) 개수
 
@@ -298,7 +299,7 @@ System Center Configuration Manager 버전 1702에서 이 수준에는 다음이
 
 
 
-- **온-프레미스 MDM(모바일 장치 관리):**  
+- **온-프레미스 MDM(모바일 디바이스 관리):**  
 
     - Windows 10 대량 등록 패키지 및 프로필 개수  
 
@@ -411,7 +412,7 @@ System Center Configuration Manager 버전 1702에서 이 수준에는 다음이
 
 - 컬렉션 평가 및 새로 고침 통계
 
-- 준수 설정: SCEP, VPN, Wi-Fi 및 준수 정책 템플릿 구성 정보, 소프트웨어 업데이트가 만료된 그룹 개수
+- 규정 준수 설정: SCEP, VPN, Wi-Fi 및 규정 준수 정책 템플릿 구성 세부 정보, 소프트웨어 업데이트가 만료된 그룹 개수
 
 - System Center Configuration Manager 사용을 위한 DCM 구성 팩
 
@@ -420,7 +421,7 @@ System Center Configuration Manager 버전 1702에서 이 수준에는 다음이
 
 - Endpoint Protection 정책 구성
 
-- ***[새로운 기능]*** 응용 프로그램에 대한 설치 동작으로 구성된 프로세스 목록
+- ***[새로운 기능]*** 애플리케이션에 대한 설치 동작으로 구성된 프로세스 목록
 
 - 마지막 소프트웨어 업데이트 검사 이후 최소/최대/평균 시간 수
 

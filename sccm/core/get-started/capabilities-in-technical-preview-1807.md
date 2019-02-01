@@ -10,12 +10,13 @@ ms.assetid: bcde47a7-433e-4944-964b-539b17d15d64
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 9095bdf431525a66a570267c4fff07a382a16fe4
-ms.sourcegitcommit: af4f8bd8dffe6fb05f51322ea9e94d335a2cc0c0
+ROBOTS: NOINDEX
+ms.openlocfilehash: c443f561392f95d875a681319ebb9db4ff3fb66b
+ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39360773"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898480"
 ---
 # <a name="capabilities-in-configuration-manager-technical-preview-version-1807"></a>Configuration Manager Technical Preview 버전 1807의 기능 
 
@@ -71,16 +72,16 @@ Steps to workaround, if any.
 
 **커뮤니티** 작업 영역에는 다음 노드도 포함됩니다.
 
-- **문서**: Configuration Manager [문서 라이브러리](https://docs.microsoft.com/sccm/)를 표시합니다.  
+- **설명서**: Configuration Manager [문서 라이브러리](https://docs.microsoft.com/sccm/) 표시  
 
-- **피드백**: Configuration Manager [UserVoice 사이트](https://configurationmanager.uservoice.com/)를 표시합니다.  
+- **피드백**: Configuration Manager [UserVoice 사이트](https://configurationmanager.uservoice.com/) 표시  
 
 
 ### <a name="prerequisites"></a>필수 구성 요소
 
 - 클라이언트 OS에서 Configuration Manager 콘솔을 사용합니다.  
 
-    - 선택할 수 있지만 권장하지 않음: 서버에서 [Internet Explorer: 고급 보안 구성](https://go.microsoft.com/fwlink/?LinkId=253461)을 사용하지 않도록 설정합니다.  
+    - 선택할 수 있지만 권장하지 않음: 서버 OS에서 [Internet Explorer: 고급 보안 구성](https://go.microsoft.com/fwlink/?LinkId=253461)을 사용하지 않도록 설정합니다.  
 
 - 콘솔이 있는 컴퓨터는 인터넷 액세스가 필요하고 다음 사이트에 연결해야 합니다.  
     - `https://aka.ms`  
@@ -116,7 +117,7 @@ Steps to workaround, if any.
 
 
 
-## <a name="bkmk_comgmt"></a> Intune에서 공동 관리되는 장치 동기화 작업
+## <a name="bkmk_comgmt"></a> Intune에서 공동 관리되는 디바이스 동기화 작업
 <!--1358565-->
 
 공동으로 관리하는 디바이스가 Microsoft Intune에서 활성화되었는지 여부를 Configuration Manager 콘솔에 표시합니다. 이 상태는 [Intune 데이터 웨어하우스](https://docs.microsoft.com/intune/reports-nav-create-intune-reports)의 데이터를 기반으로 합니다. Configuration Manager 콘솔의 **클라이언트 상태** 대시보드에 **Intune을 사용하는 비활성 클라이언트**가 표시됩니다. 이 새 범주는 Configuration Manager에서 비활성 상태이나 지난주에 Intune 서비스와 동기화된 공동 관리되는 디바이스에 해당합니다.
@@ -152,7 +153,7 @@ Steps to workaround, if any.
 
 2. **프로그램** 탭으로 전환합니다. **프로그램 복구** 명령을 지정합니다.  
 
-3. 앱을 배포합니다. 배포의 **배포 설정** 탭에서 **최종 사용자가 이 애플리케이션을 복구할 수 있도록 허용** 옵션을 사용하도록 설정합니다.  
+3. 앱을 배포합니다. 배포의 **배포 설정** 탭에서 **최종 사용자가 이 응용 프로그램을 복구할 수 있도록 허용** 옵션을 사용하도록 설정합니다.  
 
 
 ### <a name="known-issue"></a>알려진 문제
@@ -170,7 +171,7 @@ Steps to workaround, if any.
 ### <a name="prerequisites"></a>필수 구성 요소
 
 #### <a name="to-send-email-notifications"></a>메일 알림을 보내려면
-- [선택적 기능](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)인 **장치당 사용자에 대한 응용 프로그램 요청 승인**을 사용하도록 설정합니다.  
+- [선택적 기능](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)인 **디바이스당 사용자에 대한 응용 프로그램 요청 승인**을 사용하도록 설정합니다.  
 
 - [경고에 대한 메일 알림](/sccm/core/servers/manage/use-alerts-and-the-status-system#to-configure-email-notification-for-alerts)을 구성합니다.  
 
