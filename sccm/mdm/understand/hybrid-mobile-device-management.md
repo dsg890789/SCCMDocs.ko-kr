@@ -2,7 +2,7 @@
 title: Microsoft Intune과 사용하는 하이브리드 MDM
 titleSuffix: Configuration Manager
 description: Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 MDM(모바일 디바이스 관리)에 대해 알아보세요.
-ms.date: 11/02/2018
+ms.date: 01/30/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: bb95154b-f63e-4491-896e-41d732c802f8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a84dfc33fe79f5eb4d5397505a12052b8e92aebf
-ms.sourcegitcommit: a3cec96a771eed69e58a29917d1a3fe1a5fb2e73
+ms.openlocfilehash: a744463aa82951d68125c0d17d88ba5e8a1f2703
+ms.sourcegitcommit: 33e066aceaf321add1031df00e552e942c8351a7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54250615"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55764415"
 ---
 # <a name="hybrid-mdm-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune에서 사용하는 하이브리드 MDM
 
@@ -38,7 +38,9 @@ ms.locfileid: "54250615"
 > 
 > - 라이선싱은 동일하게 유지됩니다. Azure의 Intune 라이선스는 하이브리드 MDM에 포함되어 있습니다.  
 > 
-> - Configuration Manager의 조건부 액세스 및 온-프레미스 MDM 기능은 더 이상 사용되지 않습니다. 예정된 Configuration Manager의 변경 내용을 통해 하이브리드 MDM 없이도 이러한 기능이 작동될 수 있습니다. 
+> - Configuration Manager의 온-프레미스 MDM 기능 하지 사용 되지 않습니다. Configuration Manager 버전 1810부터 Intune에 연결 하지 않고 온-프레미스 MDM을 사용할 수 있습니다. 자세한 내용은 [는 Intune 연결은 새 온-프레미스 MDM 배포에 필요 하지 않습니다.](/sccm/core/plan-design/changes/whats-new-in-version-1810#bkmk_opmdm)합니다. 
+> 
+> - Configuration Manager의 온-프레미스 조건부 액세스 기능 또한 하이브리드 MDM 사용 하 여 사용 되지 않음 Configuration Manager 클라이언트로 관리 되는 장치의 조건부 액세스를 사용 하는 경우 보호 계속 되도록 먼저 사용 하도록 설정 해당 장치에 대 한 Intune에서 조건부 액세스를 마이그레이션하기 전에 합니다. Configuration Manager에서 공동 관리를 사용 하도록 설정, 규정 준수 정책 워크 로드를 Intune로 이동 하 고 Intune 하이브리드에서 Intune 독립 실행형으로 마이그레이션을 완료 합니다. 자세한 내용은 [공동 관리를 사용 하 여 조건부 액세스](https://docs.microsoft.com/sccm/comanage/quickstart-conditional-access)합니다. 
 > 
 > - 2019년 9월 1일에는 나머지 모든 하이브리드 MDM 디바이스에서 더 이상 정책, 앱 또는 보안 업데이트를 받지 않습니다.  
 > 

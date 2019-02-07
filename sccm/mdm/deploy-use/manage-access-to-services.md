@@ -10,20 +10,24 @@ ms.assetid: 7b04727b-d563-422f-8d59-4dd66215d0b3
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6724113633ab7043c65bad0664ae4a338c829fce
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.openlocfilehash: 37688e1bf992e6b48f3d871f09b7b357453cfc3f
+ms.sourcegitcommit: 33e066aceaf321add1031df00e552e942c8351a7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53422575"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55764347"
 ---
 # <a name="manage-access-to-services-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 서비스 액세스 관리
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
-
-## <a name="conditional-access-in-system-center-configuration-manager"></a>System Center Configuration Manager의 조건부 액세스
 조건부 액세스를 사용하여 Microsoft Intune에 등록된 디바이스의 메일과 기타 서비스를 보호할 수 있는 조건을 지정합니다.  
+
+> [!Important]  
+> 하이브리드 MDM 포함 하 여 온-프레미스 조건부 액세스는 [사용 되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)합니다. 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->  
+> 
+> Configuration Manager 클라이언트로 관리 되는 장치의 조건부 액세스를 사용 하는 경우 보호 계속 되도록 먼저 사용 하도록 설정 해당 장치에 대 한 Intune에서 조건부 액세스를 마이그레이션하기 전에 합니다. Configuration Manager에서 공동 관리를 사용 하도록 설정, 규정 준수 정책 워크 로드를 Intune로 이동 하 고 Intune 하이브리드에서 Intune 독립 실행형으로 마이그레이션을 완료 합니다. 자세한 내용은 [공동 관리를 사용 하 여 조건부 액세스](https://docs.microsoft.com/sccm/comanage/quickstart-conditional-access)합니다. 
+
 
  Configuration Manager 클라이언트를 사용하여 관리되는 디바이스의 조건부 액세스에 대한 자세한 내용은 [System Center Configuration Manager에서 관리되는 PC용 O365 서비스에 대한 액세스 관리](../../protect/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md)를 참조하세요.  
 

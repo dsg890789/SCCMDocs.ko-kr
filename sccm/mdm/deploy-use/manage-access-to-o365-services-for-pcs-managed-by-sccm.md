@@ -10,24 +10,30 @@ ms.assetid: 34024741-edfa-4088-8599-d6bafc331e62
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f4e67050740b9d05dd33f2f79b7820b6dc8d9093
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.openlocfilehash: 8bd926535f56e32430ae41c883623b80d142aebc
+ms.sourcegitcommit: 33e066aceaf321add1031df00e552e942c8351a7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53415809"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55764432"
 ---
 # <a name="manage-access-to-o365-services-for-pcs-managed-by-system-center-configuration-manager"></a>System Center Configuration Manager에서 관리되는 PC용 O365 서비스에 대한 액세스 관리
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 <!--1191496--> Configuration Manager에서 관리 되는 Pc에 대 한 Office 365 서비스에 대 한 조건부 액세스를 구성 합니다.  
+
+> [!Important]  
+> 하이브리드 MDM 포함 하 여 온-프레미스 조건부 액세스는 [사용 되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)합니다. 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->  
+> 
+> Configuration Manager 클라이언트로 관리 되는 장치의 조건부 액세스를 사용 하는 경우 보호 계속 되도록 먼저 사용 하도록 설정 해당 장치에 대 한 Intune에서 조건부 액세스를 마이그레이션하기 전에 합니다. Configuration Manager에서 공동 관리를 사용 하도록 설정, 규정 준수 정책 워크 로드를 Intune로 이동 하 고 Intune 하이브리드에서 Intune 독립 실행형으로 마이그레이션을 완료 합니다. 자세한 내용은 [공동 관리를 사용 하 여 조건부 액세스](https://docs.microsoft.com/sccm/comanage/quickstart-conditional-access)합니다. 
+
+
+Microsoft Intune에서 등록하고 관리한 디바이스에 대한 조건부 액세스를 구성하는 방법에 대한 정보는 [System Center Configuration Manager에서 서비스에 대한 액세스 관리](../../protect/deploy-use/manage-access-to-services.md)를 참조하세요. 해당 문서에서는 도메인에 가입되었지만 규정 준수가 평가되지 않은 디바이스에 대해서도 다룹니다.
 
 > [!Note]  
 > Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  
 
-
-Microsoft Intune에서 등록하고 관리한 디바이스에 대한 조건부 액세스를 구성하는 방법에 대한 정보는 [System Center Configuration Manager에서 서비스에 대한 액세스 관리](../../protect/deploy-use/manage-access-to-services.md)를 참조하세요. 해당 문서에서는 도메인에 가입되었지만 규정 준수가 평가되지 않은 디바이스에 대해서도 다룹니다.
 
 ## <a name="supported-services"></a>지원되는 서비스  
 
@@ -78,11 +84,11 @@ Microsoft Intune에서 등록하고 관리한 디바이스에 대한 조건부 �
 
 -   **Azure Active Directory에서 등록 필요:** 이 규칙은 사용자의 장치가 작업 공간 인지 Azure AD에 가입 된 장치는 Azure AD에 자동으로 등록 하 고 그렇지 않은 경우 확인 합니다. 자동 등록은 Windows 8.1에서만 지원됩니다. Windows 7 PC의 경우 자동 등록을 수행하기 위해 MSI를 배포합니다. 자세한 내용은 [Azure Active Directory에 자동 디바이스 등록](https://docs.microsoft.com/azure/active-directory/device-management-hybrid-azuread-joined-devices-setup)을 참조하세요.  
 
--   **특정 기간 (일) 보다 오래 된 설치 된 모든 필수 업데이트:** 사용자의 장치에 필수 업데이트에 대 한 배포 최종 기한에서 유예 기간에 대 한 값을 지정 합니다. 이 규칙을 추가하면 보류 중인 필수 업데이트도 자동으로 설치됩니다. **필수 자동 업데이트** 규칙에서 필수 업데이트를 지정합니다.   
+-   **마감일이 특정 기간(일)보다 오래된 필수 업데이트가 모두 설치됨:** 사용자의 장치에 필수 업데이트에 대 한 배포 최종 기한에서 유예 기간에 대 한 값을 지정 합니다. 이 규칙을 추가하면 보류 중인 필수 업데이트도 자동으로 설치됩니다. **필수 자동 업데이트** 규칙에서 필수 업데이트를 지정합니다.   
 
 -   **BitLocker 드라이브 암호화 필요:** 이 규칙을 검사 하는 경우 기본 드라이브 (예: c:\\) 장치에서 BitLocker 암호화 됩니다. 기본 디바이스에서 Bitlocker 암호화가 사용되도록 설정되지 않으면 메일 및 SharePoint 서비스에 대한 액세스가 차단됩니다.  
 
--   **맬웨어 방지 필요:** 이 규칙은 System Center Endpoint Protection 또는 Windows Defender가 활성화 되어 실행 하는 경우 확인 합니다. 사용되도록 설정되지 않았으면 메일 및 SharePoint 서비스에 대한 액세스가 차단됩니다.  
+-   **맬웨어 방지 프로그램 필요:** 이 규칙은 System Center Endpoint Protection 또는 Windows Defender가 활성화 되어 실행 하는 경우 확인 합니다. 사용되도록 설정되지 않았으면 메일 및 SharePoint 서비스에 대한 액세스가 차단됩니다.  
 
 -   **상태 증명 서비스에서 정상으로 보고 합니다.** 이 상태는 장치 상태 증명 서비스에 대 한 장치 준수를 확인 하는 4 개의 하위 규칙이 포함 되어 있습니다. 자세한 내용은 [상태 증명](/sccm/core/servers/manage/health-attestation)을 참조하세요. 
 
