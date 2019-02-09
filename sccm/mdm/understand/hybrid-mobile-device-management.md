@@ -10,19 +10,19 @@ ms.assetid: bb95154b-f63e-4491-896e-41d732c802f8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a744463aa82951d68125c0d17d88ba5e8a1f2703
-ms.sourcegitcommit: 33e066aceaf321add1031df00e552e942c8351a7
+ms.openlocfilehash: dd91d8afb092f855179edaa07163d5fcaa2ac350
+ms.sourcegitcommit: 38f56f1d5803370f4262931c2dc4a532bfcf0594
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55764415"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55905593"
 ---
 # <a name="hybrid-mdm-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune에서 사용하는 하이브리드 MDM
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 > [!Important]  
-> 2018년 8월 14일부터 하이브리드 모바일 디바이스 관리 [기능은 사용되지 않습니다](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures).
+> 2018년 8월 14일부터 하이브리드 모바일 디바이스 관리 [기능은 사용되지 않습니다](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures). 신규 고객에 게는 2019 년 2 월, 끝에 예상 1902 Intune 서비스 릴리스에서 새 하이브리드 연결을 만들 수 없습니다. 
 > <!--Intune feature 2683117-->  
 > Intune은 1년여 전 Azure에서 실행된 이후 고객들이 요청하고 업계에서 선두를 달리는 수백 개의 새로운 서비스 기능을 추가했습니다. 이제는 하이브리드 모바일 디바이스 관리(MDM)를 통해 제공하는 것 보다 훨씬 더 많은 기능을 제공합니다. Azure의 Intune에서는 기업 무선 통신 요구 사항을 충족하기 위해 보다 통합되고 간소화된 관리 환경을 제공합니다.
 > 
@@ -36,13 +36,20 @@ ms.locfileid: "55764415"
 > 
 > - 하이브리드 MDM 제공이 종료되기 전에 Azure의 Intune으로 마이그레이션하는 경우 최종 사용자에게는 영향이 없어야 합니다.  
 > 
+> - 2019년 9월 1일에는 나머지 모든 하이브리드 MDM 디바이스에서 더 이상 정책, 앱 또는 보안 업데이트를 받지 않습니다.  
+> 
 > - 라이선싱은 동일하게 유지됩니다. Azure의 Intune 라이선스는 하이브리드 MDM에 포함되어 있습니다.  
 > 
 > - Configuration Manager의 온-프레미스 MDM 기능 하지 사용 되지 않습니다. Configuration Manager 버전 1810부터 Intune에 연결 하지 않고 온-프레미스 MDM을 사용할 수 있습니다. 자세한 내용은 [는 Intune 연결은 새 온-프레미스 MDM 배포에 필요 하지 않습니다.](/sccm/core/plan-design/changes/whats-new-in-version-1810#bkmk_opmdm)합니다. 
 > 
-> - Configuration Manager의 온-프레미스 조건부 액세스 기능 또한 하이브리드 MDM 사용 하 여 사용 되지 않음 Configuration Manager 클라이언트로 관리 되는 장치의 조건부 액세스를 사용 하는 경우 보호 계속 되도록 먼저 사용 하도록 설정 해당 장치에 대 한 Intune에서 조건부 액세스를 마이그레이션하기 전에 합니다. Configuration Manager에서 공동 관리를 사용 하도록 설정, 규정 준수 정책 워크 로드를 Intune로 이동 하 고 Intune 하이브리드에서 Intune 독립 실행형으로 마이그레이션을 완료 합니다. 자세한 내용은 [공동 관리를 사용 하 여 조건부 액세스](https://docs.microsoft.com/sccm/comanage/quickstart-conditional-access)합니다. 
-> 
-> - 2019년 9월 1일에는 나머지 모든 하이브리드 MDM 디바이스에서 더 이상 정책, 앱 또는 보안 업데이트를 받지 않습니다.  
+> - Configuration Manager의 온-프레미스 조건부 액세스 기능 또한 하이브리드 MDM 사용 하 여 사용 되지 않음 Configuration Manager 클라이언트로 관리 되는 장치의 조건부 액세스를 사용 하는 경우 마이그레이션하기 전에 보호 해야 합니다. 
+>     1. Azure에서 조건부 액세스 정책 설정
+>     2. Intune 포털에서 준수 정책 설정 
+>     3. 하이브리드 마이그레이션을 완료 하 고 MDM 기관을 Intune로 설정
+>     4. 공동 관리 사용
+>     5. Intune 준수 정책 공동 관리 워크 로드 이동 
+>
+>     자세한 내용은 [공동 관리를 사용 하 여 조건부 액세스](https://docs.microsoft.com/sccm/comanage/quickstart-conditional-access)합니다. 
 > 
 > **이러한 변경에 대비하려면 어떻게 해야 하나요?**
 > 
