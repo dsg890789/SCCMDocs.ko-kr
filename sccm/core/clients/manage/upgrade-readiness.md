@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 68407ab8-c205-44ed-9deb-ff5714451624
-ms.openlocfilehash: ad084aabca6f3b0fd920fd2c9b406efff36005a1
-ms.sourcegitcommit: 0d7efd9e064f9d6a9efcfa6a36fd55d4bee20059
+ms.openlocfilehash: 0ba5a484fe11185b46125de0d8764bce153f577d
+ms.sourcegitcommit: a2ecd84d93f431ee77848134386fec14031aed6a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995355"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230854"
 ---
 # <a name="integrate-upgrade-readiness-with-configuration-manager"></a>업그레이드 준비를 Configuration Manager와 통합합니다.
 
@@ -50,10 +50,14 @@ ms.locfileid: "43995355"
 
 [Azure 서비스 마법사](/sccm/core/servers/deploy/configure/azure-services-wizard)를 사용하여 Configuration Manager에서 사용하도록 Azure 서비스를 구성하는 과정을 단순화할 수 있습니다. Configuration Manager와 업그레이드 준비를 연결하려면 [Azure Portal](https://portal.azure.com)에서 *웹앱/API* 유형의 Azure AD(Azure Active Directory) 앱 등록을 만듭니다. 앱 등록을 만드는 방법에 대해 자세히 알아보려면 [Azure AD 테넌트로 애플리케이션 등록](/azure/active-directory/active-directory-app-registration)을 참조하세요. 
 
-Azure Portal에서 새로 등록된 웹앱에 *참가자* 권한을 제공합니다. 업그레이드 준비 데이터를 호스팅하는 Log Analytics 작업 영역이 포함된 리소스 그룹에 이러한 권한을 설정합니다. Azure 서비스 마법사는 이 앱 등록을 사용하여 Configuration Manager에서 Azure AD와 안전하게 통신하고 업그레이드 준비 데이터에 인프라를 연결할 수 있게 합니다.
+Azure Portal에서 새로 등록된 웹앱에 다음 권한을 제공합니다.
+- 업그레이드 준비 데이터와 함께 Log Analytics 작업 영역을 포함하는 리소스 그룹에 대한 *Reader* 권한
+- 업그레이드 준비 데이터를 호스트하는 Log Analytics 작업 영역에 대한 *Contributor* 권한
+
+Azure 서비스 마법사는 이 앱 등록을 사용하여 Configuration Manager에서 Azure AD와 안전하게 통신하고 업그레이드 준비 데이터에 인프라를 연결할 수 있게 합니다.
 
 > [!IMPORTANT]  
-> Azure AD 사용자 ID와 달리 *참가자* 권한은 앱 자체에 부여해야 합니다. 이는 등록된 응용 프로그램이며 Configuration Manager 인프라를 대신하여 데이터에 액세스합니다. 권한을 부여하려면 권한을 할당할 때 **사용자 추가** 영역에서 앱 등록 이름을 검색합니다. 
+> Azure AD 사용자 ID가 아니라, 앱 자체에 권한을 부여합니다. 이는 등록된 응용 프로그램이며 Configuration Manager 인프라를 대신하여 데이터에 액세스합니다. 권한을 부여하려면 권한을 할당할 때 **사용자 추가** 영역에서 앱 등록 이름을 검색합니다. 
 > 
 > 이 프로세스는 Configuration Manager에 Log Analytics에 대한 권한을 제공하는 프로세스와 동일합니다. 이러한 단계는 *Azure 서비스 마법사*를 사용하여 앱 등록을 Configuration Manager로 가져오기 전에 완료해야 합니다.
 > 

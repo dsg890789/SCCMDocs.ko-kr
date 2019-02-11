@@ -10,12 +10,12 @@ ms.assetid: 92b339ef-2723-4322-bec6-077b3e8846b0
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a16794fbcff6f21f2240f69998c576994a57502c
-ms.sourcegitcommit: 0d7efd9e064f9d6a9efcfa6a36fd55d4bee20059
+ms.openlocfilehash: 818065f4ea3f537dc565d06c278b710b224a4031
+ms.sourcegitcommit: f0ec334a70d0cdd3f5f185ac7787b700947f82de
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43893630"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303219"
 ---
 # <a name="prerequisites-for-installing-configuration-manager-sites"></a>Configuration Manager 사이트 설치에 대한 필수 조건
 
@@ -115,7 +115,7 @@ Configuration Manager만 계층의 최상위 사이트에서 이러한 역할을
 #### <a name="open-the-sql-server-service-broker-port"></a>SQL Server Service Broker 포트 열기
 독립 실행형 기본 사이트와 중앙 관리 사이트를 설치할 서버 간에 SQL SSB(Server Service Broker)의 네트워크 포트를 열어야 합니다.  
 
-중앙 관리 사이트와 기본 사이트 간에 데이터를 성공적으로 복제하려면 Configuration Manager에서 두 사이트 간에 SSB가 사용할 포트가 열려 있어야 합니다. 중앙 관리 사이트를 설치하고 독립 실행형 기본 사이트를 확장하면 필수 조건 검사에서 SSB용으로 지정한 포트가 기본 사이트에서 열리도록 확인하지 않습니다.  
+중앙 관리 사이트와 기본 사이트 간에 데이터를 성공적으로 복제하려면 Configuration Manager에서 두 사이트 간에 SSB가 사용할 포트가 열려 있어야 합니다. 중앙 관리 사이트를 설치하고 독립 실행형 기본 사이트를 확장하면 필수 조건 검사에서 SSB용으로 지정한 포트가 기본 사이트에서 열리는지 확인하지 않습니다.  
 
 #### <a name="known-issues-with-azure-services"></a>Azure 서비스 관련 알려진 문제
 Configuration Manager에서 다음 Azure 서비스 중 하나를 사용하고, 사이트 확장 후 반드시 해당 서비스 연결을 삭제한 후 다시 만들어야 합니다.

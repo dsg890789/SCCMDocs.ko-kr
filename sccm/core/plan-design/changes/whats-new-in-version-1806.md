@@ -10,12 +10,12 @@ ms.assetid: 0249dbd3-1e85-4d05-a9e5-420fbe44d850
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: cb0d5d1982bb0b109b83f30f1101ddd50316d53e
-ms.sourcegitcommit: ad25a7bdd983c5a0e4c95bffdc61c9a1ebcbb765
+ms.openlocfilehash: 1cc8a2abaf6deff54db569416b91316e23cb4a69
+ms.sourcegitcommit: 013ca76d5a3c07306de7b5bfd985b0289d1be599
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55073036"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55482523"
 ---
 # <a name="whats-new-in-version-1806-of-configuration-manager-current-branch"></a>Configuration Manager 1806 버전의 새로운 기능
 
@@ -542,7 +542,7 @@ Configuration Manager용 Windows PowerShell cmdlet의 변경 내용에 대한 �
 | [4346645](https://support.microsoft.com/help/4346645) | System Center Configuration Manager 버전 1806용 업데이트, 첫 번째 웨이브 | 2018년 8월 31일 | 예 |
 | [4465865](https://support.microsoft.com/help/4465865) | 소프트웨어 업데이트는 WSUS가 연결되어 있지 않으면 Configuration Manager 환경에서 다운로드되지 않음<br><br>이 업데이트는 업데이트 롤업(4462978)에 포함되어 있음 | 2018년 10월 1일 | 예 |
 | [4471892](https://support.microsoft.com/help/4471892) | PXE 응답기는 Configuration Manager 1806의 서브넷에서 작동하지 않음 | 2018년 11월 23일 | 아니요 |
-
+| [4487960](https://support.microsoft.com/help/4487960) | Microsoft Intune 커넥터 인증서가 Configuration Manager에서 갱신되지 않음 | 2019년 1월 18일 | 예 |
 
 
 ## <a name="next-steps"></a>다음 단계

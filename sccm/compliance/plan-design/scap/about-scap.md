@@ -2,7 +2,7 @@
 title: SCAP 확장
 titleSuffix: Configuration Manager
 description: Configuration Manager용 SCAP(Security Content Automation Protocol) 확장에 대해 알아봅니다.
-ms.date: 07/30/2018
+ms.date: 01/30/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-compliance
 ms.topic: conceptual
@@ -10,18 +10,25 @@ ms.assetid: a315489d-5e12-46d6-903e-3a35235b72c5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0cf248704d49f429bf4ca9dc4ea2be375093f92c
-ms.sourcegitcommit: 2cc635835709fb8d86cdb63ea34233b36c94d4d8
+ms.openlocfilehash: e42027663f06bff715cb7e9087ececbc421cc495
+ms.sourcegitcommit: 013ca76d5a3c07306de7b5bfd985b0289d1be599
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52259015"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55482455"
 ---
 # <a name="about-the-security-content-automation-protocol-scap-extensions"></a>SCAP(Security Content Automation Protocol) 확장 정보
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 Configuration Manager용 SCAP 확장을 사용하면 네트워크 환경을 분석하여 SCAP(Security Content Automation Protocol) 준수 여부를 평가할 수 있습니다. SCAP는 NIST(National Institute of Standards and Technology)에서 정의 및 유지 관리합니다. 자세한 내용은 [SCAP 프로젝트 개요](https://csrc.nist.gov/projects/security-content-automation-protocol)를 참조하세요.
+
+> [!Note]  
+> 이 버전의 도구는 버전 1806에서만 사용할 수 있는 시험판 기능입니다. 이 버전은 NIST에서 인증되지 않았습니다. <!--SCCMDocs-pr issue 3323-->
+> 
+> 인증된 도구가 필요하거나 다른 버전의 Configuration Manager 현재 분기를 사용하는 경우, 다음 버전의 SCAP 확장을 사용하세요.
+> - [System Center Configuration Manager의 SCAP 확장 다운로드](https://www.microsoft.com/download/details.aspx?id=48741)
+> - [SCAP 확장 버전 3.0 설명서](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/mt228311\(v%3dtechnet.10\))
 
 Configuration Manager용 SCAP 확장은 준수 설정 기능을 사용하여 사용자 환경의 컴퓨터를 먼저 검사합니다. 그런 다음, USGCB(United States Government Configuration Baseline)를 사용하여 준수 수준을 문서화합니다.
 
@@ -68,11 +75,11 @@ Configuration Manager는 이 확장을 통해 SCAP 데이터 스트림을 사용
 
 ## <a name="terms"></a>용어
 
-- **OVAL ID:** OVAL ID의 형식을 따르는 특정 OVAL 정의에 대한 식별자입니다.  
+- **OVAL ID**: OVAL ID의 형식을 따르는 특정 OVAL 정의에 대한 식별자입니다.  
 
-- **SCAP 결과 데이터 스트림:** 출력(결과) 콘텐츠를 보유하는 SCAP 구성 요소 간의 참조 매핑과 SCAP 구성 요소의 번들입니다.  
+- **SCAP 결과 데이터 스트림**: 출력(결과) 콘텐츠를 보유하는 SCAP 구성 요소 간의 참조 매핑과 SCAP 구성 요소의 번들입니다.  
 
-- **SCAP 원본 데이터 스트림:** 입력(원본) 콘텐츠를 보유하는 SCAP 구성 요소 간의 참조 매핑과 SCAP 구성 요소의 번들입니다.
+- **SCAP 원본 데이터 스트림**: 입력(원본) 콘텐츠를 보유하는 SCAP 구성 요소 간의 참조 매핑과 SCAP 구성 요소의 번들입니다.
 
 
 

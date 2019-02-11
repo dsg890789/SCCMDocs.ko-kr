@@ -10,12 +10,12 @@ ms.assetid: 4812324b-e6aa-4431-bf1d-9fcd763a8caa
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: be1bbc8319a67b4aa2b4c27be9e9bbe6e935d087
-ms.sourcegitcommit: ad25a7bdd983c5a0e4c95bffdc61c9a1ebcbb765
+ms.openlocfilehash: 6870f5100ad4ed929adad3f376b6c2e1bbda15de
+ms.sourcegitcommit: 30c608339dd1fc3ddb4bde01210f8eaeebee400c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072971"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55689562"
 ---
 # <a name="whats-new-in-version-1810-of-configuration-manager-current-branch"></a>Configuration Manager 1810 버전의 새로운 기능
 
@@ -368,17 +368,14 @@ For more information on changes to the Windows PowerShell cmdlets for Configurat
 
 다음 업데이트 롤업(4486457)은 2019년 1월 25일부터 콘솔에서 사용할 수 있습니다. [Configuration Manager 현재 분기, 버전 1810용 업데이트 롤업](https://support.microsoft.com/help/4486457).
 
-<!-- 
-### Hotfixes
 
-The following additional hotfixes are available to address specific issues:
+### <a name="hotfixes"></a>핫픽스
 
-| ID | Title | Date | In-console |
+다음 추가 핫픽스는 특정 문제를 해결하는 데 사용할 수 있습니다.
+
+| ID | 제목 | 날짜 | 콘솔 내 |
 |---------|---------|---------|---------|
-| [4346645](https://support.microsoft.com/help/4346645) | Update for System Center Configuration Manager version 1806, first wave | 31 August 2018 | Yes | 
-
--->
-
+| [4487960](https://support.microsoft.com/help/4487960) | Microsoft Intune 커넥터 인증서가 Configuration Manager에서 갱신되지 않음 | 2019년 1월 18일 | 예 |
 
 
 ## <a name="next-steps"></a>다음 단계

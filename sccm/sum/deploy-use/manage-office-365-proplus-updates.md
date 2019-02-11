@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
-ms.openlocfilehash: 1fa5646b17646258e4863b3a53960c9c15497389
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.openlocfilehash: 7ef9c7d734c74d578c188576b3b03d66fcb1de06
+ms.sourcegitcommit: f7b2fe522134cf102a3447505841cee315d3680c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53418189"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55570237"
 ---
 # <a name="manage-office-365-proplus-with-configuration-manager"></a>Configuration Manager를 사용하여 Office 365 ProPlus 관리
 
@@ -108,7 +108,6 @@ Office 365 앱을 배포한 후 앱을 유지 관리하기 위한 자동 배포 
 
 
 ## <a name="deploy-office-365-updates"></a>Office 365 업데이트 배포
-일주일에 여러 번 실행되는 예약된 [Office 365의 자동 업데이트 작업](https://docs.microsoft.com/deployoffice/overview-of-the-update-process-for-office-365-proplus)이 있습니다. Office 365를 최근에 설치한 경우 업데이트 채널이 아직 설정되지 않아서 업데이트 검색에서 적용 가능한 업데이트를 찾지 못할 수도 있습니다. 테스트를 위해 업데이트 작업을 수동으로 시작할 수 있습니다. 
 
 Configuration Manager를 사용하여 Office 365 업데이트를 배포하려면 다음 단계를 따르세요.
 
@@ -133,6 +132,11 @@ Configuration Manager를 사용하여 Office 365 업데이트를 배포하려면
 > - Configuration Manager 버전 1706부터 Office 365 클라이언트 업데이트가 **Office 365 클라이언트 관리** >**Office 365 업데이트** 노드로 이동되었습니다. 이러한 이동은 현재 ADR 구성에 영향을 주지 않습니다. 
 > - Configuration Manager 버전 1610 이전에는 Office 365 클라이언트에 구성된 동일한 언어로 업데이트를 다운로드하고 배포해야 합니다. 예를 들어 Office 365 클라이언트를 en-us 및 de-de 언어로 구성했다고 가정합니다. 사이트 서버에서 해당하는 Office 365 업데이트의 en-us 콘텐츠만 다운로드 및 배포합니다. 사용자가 소프트웨어 센터로부터 이 업데이트의 설치를 시작하면 de-de 콘텐츠를 다운로드하는 동안에는 업데이트가 중단됩니다.   
 
+> [!NOTE]  
+>
+> Office 365 ProPlus를 최근에 설치한 경우 설치한 방법에 따라 업데이트 채널이 아직 설정되지 않았을 수 있습니다. 그러한 경우 배포된 업데이트가 적용할 수 없는 상태로 검색됩니다. Office 365 ProPlus를 설치할 때 [예약된 자동 업데이트 작업](https://docs.microsoft.com/deployoffice/overview-of-the-update-process-for-office-365-proplus)이 만들어집니다. 이 경우 업데이트 채널을 설정하고 업데이트가 적용할 수 있는 상태로 검색되도록 하려면 이 작업을 한 번 이상 실행해야 합니다.
+>
+> Office 365 ProPlus를 최근에 설치했는데 배포된 업데이트가 검색되지 않는 경우, 테스트를 위해 Office 자동 업데이트 작업을 수동으로 시작한 다음, 클라이언트에서 [소프트웨어 업데이트 배포 평가 주기](https://docs.microsoft.com/sccm/sum/understand/software-updates-introduction#scan-for-software-updates-compliance-process)를 시작할 수 있습니다. 작업 순서에서 이 작업을 수행하는 방법에 대한 지침은 [작업 순서에서 Office 365 ProPlus 업데이트](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#updating-office-365-ProPlus-in-a-task-sequence)를 참조하세요.
 
 ## <a name="restart-behavior-and-client-notifications-for-office-365-updates"></a>Office 365 업데이트에 대한 동작 및 클라이언트 알림 다시 시작
 Office 365 클라이언트에 대한 업데이트를 배포할 때 다시 시작 동작 및 클라이언트 알림은 Configuration Manager 버전에 따라 다릅니다. 다음 표에는 클라이언트에서 Office 365 업데이트를 받을 때 제공하는 최종 사용자 환경에 대한 정보가 나와 있습니다.
@@ -185,17 +189,28 @@ Configuration Manager의 지원 여부와 관계 없이 Office 365에서 지원�
 11. 이제 Office 365 업데이트를 다운로드하면 마법사에서 선택하고 이 절차에서 구성한 언어로 업데이트가 다운로드됩니다. 업데이트가 올바른 언어로 다운로드되는지 확인하려면 업데이트의 패키지 원본으로 이동한 후 파일 이름에 언어 코드가 포함된 파일을 찾습니다.  
     ![추가 언어가 있는 파일 이름](../media/5-verification.png)
 
-## <a name="updating-office-365-during-task-sequences-when-office-365-is-installed-in-the-base-image"></a>기본 이미지에 Office 365가 설치된 경우 작업 순서 중 Office 365 업데이트
-이미지에 Office 365가 이미 설치된 경우 운영 체제를 설치할 때 업데이트 채널 레지스트리 키 값에 원래 설치 위치가 있을 수 있습니다. 이 경우 업데이트 검색 시 적용 가능한 Office 365 클라이언트 업데이트가 표시되지 않습니다. 일주일에 여러 번 실행되는 예약된 Office 자동 업데이트 작업이 있습니다. 해당 작업이 실행된 후 업데이트 채널은 구성된 Office CDN URL을 가리키고 검색 결과에는 해당 업데이트가 적용 가능한 것으로 표시됩니다. <!--510452-->
+## <a name="updating-office-365-proplus-in-a-task-sequence"></a>작업 순서에서 Office 365 ProPlus 업데이트
+[소프트웨어 업데이트 설치](https://docs.microsoft.com/sccm/osd/understand/task-sequence-steps#BKMK_InstallSoftwareUpdates) 작업 순서 단계를 사용하여 Office 365 업데이트를 설치할 때 배포된 업데이트가 사용할 수 없는 상태로 검색될 수 있습니다.  이 문제는 예약된 Office 자동 업데이트 작업이 한 번 이상 실행되지 않은 경우에 발생할 수 있습니다([Office 365 업데이트 배포](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#deploy-office-365-updates)의 참고 참조). 예를 들어, 이 단계를 실행하기 직전에 Office 365 ProPlus가 설치된 경우 이 문제가 발생할 수 있습니다.
 
-해당 업데이트가 검색되도록 업데이트 채널을 설정하려면 다음 단계를 수행합니다.
-1. OS(운영 체제) 기본 이미지와 같은 버전의 Office 365가 있는 컴퓨터에서 작업 스케줄러(taskschd.msc)를 열고 Office 365 자동 업데이트 작업을 식별합니다. 일반적으로 **작업 스케줄러 라이브러리** >**Microsoft**>**Office** 아래에 있습니다.
+배포된 업데이트가 제대로 검색되도록 업데이트 채널이 설정되었는지 확인하려면 다음 방법 중 하나를 사용합니다.
+
+**방법 1:**
+1. 같은 버전의 Office 365 ProPlus가 있는 머신에서 작업 스케줄러(taskschd.msc)를 열고 Office 365 자동 업데이트 작업을 식별합니다. 일반적으로 **작업 스케줄러 라이브러리** >**Microsoft**>**Office** 아래에 있습니다.
 2. 자동 업데이트 작업을 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
 3. **작업** 탭으로 이동하여 **편집**을 클릭합니다. 명령 및 인수를 복사합니다. 
 4. Configuration Manager 콘솔에서 작업 순서를 편집합니다.
-5. 작업 순서에서 **업데이트 설치** 단계 전에 새로운 **명령줄 실행** 단계를 추가합니다. 
+5. 작업 순서에서 **소프트웨어 업데이트 설치** 단계 전에 새로운 **명령줄 실행** 단계를 추가합니다. Office 365 ProPlus가 동일한 작업 순서의 일부로 설치되는 경우 Office가 설치된 후 이 단계가 실행되는지 확인합니다.
 6. Office 자동 업데이트 예약된 작업에서 수집한 명령과 인수를 복사합니다. 
 7. **확인**을 클릭합니다. 
+
+**방법 2:**
+1. 같은 버전의 Office 365 ProPlus가 있는 머신에서 작업 스케줄러(taskschd.msc)를 열고 Office 365 자동 업데이트 작업을 식별합니다. 일반적으로 **작업 스케줄러 라이브러리** >**Microsoft**>**Office** 아래에 있습니다.
+2. Configuration Manager 콘솔에서 작업 순서를 편집합니다.
+3. 작업 순서에서 **소프트웨어 업데이트 설치** 단계 전에 새로운 **명령줄 실행** 단계를 추가합니다. Office 365 ProPlus가 동일한 작업 순서의 일부로 설치되는 경우 Office가 설치된 후 이 단계가 실행되는지 확인합니다.
+4. 명령줄 필드에 예약된 작업을 실행하는 명령줄을 입력합니다. 아래 예를 참조하여 따옴표로 묶인 문자열이 1단계에서 식별한 작업의 이름 및 경로와 일치하는지 확인합니다.  
+
+    예: `schtasks /run /tn "\Microsoft\Office\Office Automatic Updates"`
+5. **확인**을 클릭합니다. 
 
 ## <a name="change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager"></a>Office 365 클라이언트가 Configuration Manager에서 업데이트를 받도록 설정한 후에 업데이트 채널 변경
 Office 365 클라이언트가 Configuration Manager에서 업데이트를 받도록 설정한 후 업데이트 채널을 변경하려면 그룹 정책을 사용하여 Office 365 클라이언트에 레지스트리 키 값 변경 내용을 배포합니다. **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\Configuration\CDNBaseUrl** 레지스트리 키를 다음 중 한 값을 사용하도록 변경합니다.

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: fdf05118-162a-411e-b72e-386b9dc9a5e1
-ms.openlocfilehash: cbaaa84b0c4b3c9b05e7ffbae565a7b6da7c7426
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.openlocfilehash: 5ec545fd2ae6c775fbbd0d984dcdd487359ab043
+ms.sourcegitcommit: f7b2fe522134cf102a3447505841cee315d3680c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53423884"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55570169"
 ---
 # <a name="prerequisites-for-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 업데이트에 대한 필수 조건
 
@@ -32,7 +32,8 @@ ms.locfileid: "53423884"
 ### <a name="windows-server-update-services"></a>Windows Server Update Services  
  WSUS(Windows Server Update Services)는 클라이언트에서 소프트웨어 업데이트 동기화 및 소프트웨어 업데이트 적용 가능 여부 검사를 수행하는 데 필요합니다. WSUS 서버는 소프트웨어 업데이트 지점 역할을 만들기 전에 설치해야 합니다. 소프트웨어 업데이트 지점에 대해 다음 버전의 WSUS가 지원됩니다.  
 
--   WSUS 10.0(Windows Server 2016의 역할)
+-   WSUS 10.0.14393(Windows Server 2016의 역할)
+-   WSUS 10.0.17763(Windows Server 2019의 역할)(Configuration Manager 1810 이상 필요)
 -   WSUS 6.2 및 6.3(Windows Server 2012 및 Windows Server 2012 R2의 역할)
 
 >[!NOTE]

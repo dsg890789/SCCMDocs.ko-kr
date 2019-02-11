@@ -2,7 +2,7 @@
 title: 지원 센터
 titleSuffix: Configuration Manager
 description: 지원 센터를 사용하여 Configuration Manager 클라이언트 문제를 해결합니다.
-ms.date: 11/27/2018
+ms.date: 01/30/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: c631197d-7daa-4faa-9e22-980cd6d604c2
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6d9a4df006619278504d3a4967b813aa2989ebf7
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.openlocfilehash: 828edc3c90b4dd93f4d86772b863816bbc8c9130
+ms.sourcegitcommit: 013ca76d5a3c07306de7b5bfd985b0289d1be599
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52458122"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55482421"
 ---
 # <a name="support-center-for-configuration-manager"></a>Configuration Manager에 대한 지원 센터
 
@@ -88,6 +88,8 @@ ms.locfileid: "52458122"
 [New-CMMachineConnection](https://go.microsoft.com/fwlink/p/?linkid=390542) PowerShell cmdlet을 사용하여 원격 클라이언트에 연결할 때 지원 센터는 각 원격 클라이언트에 대한 SMB(서버 메시지 블록)를 만듭니다. 데이터 수집을 완료한 후 해당 연결은 유지됩니다. Windows에 대해 최대 원격 연결 수를 초과하지 않기 위해 `net use` 명령을 사용하여 현재 활성화된 원격 연결 집합을 확인합니다. 그런 다음, `net use <connection_name> /d` 명령을 사용하여 불필요한 연결을 사용하지 않게 설정합니다. 
 여기서 `<connection_name>`은 원격 연결의 이름입니다.
 
+#### <a name="application-deployment-evaluation-cycle-request-isnt-sent-correctly-to-remote-machines"></a>애플리케이션 배포 평가 주기 요청이 원격 머신에 올바르게 전송되지 않음
+<!--2849356--> 지원 센터에서 **콘텐츠** 탭의 **Invoke trigger**(트리거 호출) 작업에서 **Application deployment evaluation**(애플리케이션 배포 평가)을 선택하면 배포된 애플리케이션을 평가하는 작업이 시작됩니다. 로컬 클라이언트에 연결된 경우, 머신 및 사용자 애플리케이션 배포를 둘 다 평가합니다. 그러나 원격 클라이언트에 연결된 경우 머신 애플리케이션 배포만 평가합니다.
 
 
 ## <a name="next-steps"></a>다음 단계

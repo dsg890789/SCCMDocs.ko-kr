@@ -10,12 +10,12 @@ ms.assetid: 6bce416b-761d-4b23-bd33-5b7c30edb10d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4d892e8d194f61fece977c91ce36ba46cf9dd53d
-ms.sourcegitcommit: a3cec96a771eed69e58a29917d1a3fe1a5fb2e73
+ms.openlocfilehash: e1becb8cc719466edabfb55ce82f9aa5e3345e3f
+ms.sourcegitcommit: 013ca76d5a3c07306de7b5bfd985b0289d1be599
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54250717"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55482438"
 ---
 # <a name="pre-release-features-in-configuration-manager"></a>Configuration Manager 시험판 기능
 
@@ -78,6 +78,7 @@ ms.locfileid: "54250717"
 | SMS 공급 기업 API <!--1359052--> | 버전 1810 | ![아직 추가되지 않음](media/red_x.png) |
 | [향상된 HTTP 사이트 시스템](/sccm/core/plan-design/hierarchy/enhanced-http) <!--1356889,1358228--> | 버전 1806 | 버전 1810 |
 | [공동 관리형 디바이스용 클라이언트 앱](/sccm/comanage/workloads#client-apps) <!--1357892--> | 버전 1806 | ![아직 추가되지 않음](media/red_x.png) |
+| [SCAP 확장](/sccm/compliance/plan-design/scap/about-scap) <!--3607889--> | 버전 1806 | ![아직 추가되지 않음](media/red_x.png) |
 | [Package Conversion Manager](/sccm/apps/pcm/package-conversion-manager) <!--1357861--> | 버전 1806 | 버전 1810 |
 | [iOS용 Cisco AnyConnect 4.0.07x 이상 지원](/sccm/mdm/deploy-use/create-vpn-profiles) <!--1357393--> | 1802 버전 | 1802 버전 <br>4163547 업데이트 포함 |
 | [단계별 배포](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence) <!--1356837--> | 1802 버전 | 버전 1806 |

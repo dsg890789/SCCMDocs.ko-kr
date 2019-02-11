@@ -2,7 +2,7 @@
 title: 연결에 사용되는 포트
 titleSuffix: Configuration Manager
 description: Configuration Manager가 연결에 사용하는 필수 및 사용자 지정 네트워크 포트에 대해 알아봅니다.
-ms.date: 09/10/2018
+ms.date: 01/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: c6777fb0-0754-4abf-8a1b-7639d23e9391
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 8338e08ffb6d09299123e363f27e586b650452fe
-ms.sourcegitcommit: 231111a704777789629911369f4d9593d2053fc0
+ms.openlocfilehash: a65b1f30815eca411a64a72b1a35acc9d7dad34c
+ms.sourcegitcommit: 013ca76d5a3c07306de7b5bfd985b0289d1be599
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55065102"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55482540"
 ---
 # <a name="ports-used-in-configuration-manager"></a>Configuration Manager에서 사용되는 포트
 
@@ -126,9 +126,13 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |-----------------|---------|---------|  
 |Wake On LAN|9 <sup>[참고 2](#bkmk_note2) 대체 포트 사용 가능</sup>|--|  
 |절전 모드 해제 프록시|25536 <sup>[참고 2](#bkmk_note2) 대체 포트 사용 가능</sup>|--|  
+|Windows PE 피어 캐시 브로드캐스트|8004|--|  
+|Windows PE 피어 캐시 다운로드|--|8003|  
+
+자세한 내용은 [Windows PE 피어 캐시](/sccm/osd/get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic.md#-requirements-for-a-client-to-use-a--windows-pe-peer-cache-source)를 참조하세요.
 
 
-###  <a name="BKMK_PortsClient-PolicyModule"></a> 클라이언트 -- > Configuration Manager NDES(네트워크 장치 등록 서비스) 정책 모듈   
+###  <a name="BKMK_PortsClient-PolicyModule"></a> 클라이언트 -- &gt; Configuration Manager NDES(네트워크 디바이스 등록 서비스) 정책 모듈   
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  

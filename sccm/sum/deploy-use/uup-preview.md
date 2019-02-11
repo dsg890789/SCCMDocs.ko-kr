@@ -2,7 +2,7 @@
 title: UUP 미리 보기
 titleSuffix: Configuration Manager
 description: UUP 통합 미리 보기 지침
-ms.date: 01/25/2019
+ms.date: 01/30/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: 27a960758d8d3939798ae270404d5dd1afbea62d
-ms.sourcegitcommit: ad25a7bdd983c5a0e4c95bffdc61c9a1ebcbb765
+ms.openlocfilehash: fde592b02d78c0a2ab29d77f7e55273c143b09ee
+ms.sourcegitcommit: f7b2fe522134cf102a3447505841cee315d3680c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072988"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55570135"
 ---
 # <a name="uup-private-preview-instructions"></a>UUP 비공개 미리 보기 지침
 
@@ -40,7 +40,9 @@ UUP에 대한 자세한 내용은 Windows 블로그 게시물 [UUP(통합 업데
 
 ### <a name="cumulative-updates"></a>누적 업데이트
 
-UUP를 통한 누적 업데이트를 사용하면 FOD 및 언어 팩의 콘텐츠를 오프라인으로 배포할 수 있으므로 인터넷으로 이동하거나 관리자가 지루하게 작업을 준비할 필요 없이 최종 사용자가 필요할 때 이를 얻을 수 있습니다.
+- UUP를 통한 누적 업데이트를 사용하면 FOD 및 언어 팩의 콘텐츠를 오프라인으로 배포할 수 있으므로 인터넷으로 이동하거나 관리자가 지루하게 작업을 준비할 필요 없이 최종 사용자가 필요할 때 이를 얻을 수 있습니다.
+
+- UUP를 통한 누적 업데이트에는 월간 누적 보안 업데이트와 함께 서비스 스택 업데이트가 포함됩니다. UUP를 통한 누적 업데이트를 통해 이러한 두 업데이트의 오케스트레이션 문제를 해결할 수 있습니다. 관계를 관리하고 오케스트레이션할 필요 없이, UUP를 통한 누적 업데이트에서 서비스 스택 업데이트가 누적 업데이트 설치를 위해 준비가 되어 있는지 확인합니다.
 
 
 
@@ -66,9 +68,7 @@ $config.MUUrl
 
 ### <a name="2-update-configmgr"></a>2. ConfigMgr 업데이트
 
-환경에서 기본 설치 파일을 동기화하지 않은 경우 프로덕션 환경에는 ConfigMgr 1810 현재 분기가 필요하고, 랩 환경에는 1812 기술 미리 보기 분기가 필요합니다.
-
-환경에서 기본 설치 파일을 동기화하지 않은 경우 프로덕션 환경에는 ConfigMgr 1810 핫픽스 KB4482615가 필요하고, 랩 환경에는 1812 기술 미리 보기 분기가 필요합니다.
+Configuration Manager 사이트에 다음 변경을 수행하여 이 UUP 미리 보기를 지원합니다.
 
 
 #### <a name="diagnostics-and-usage-data-level"></a>진단 및 사용량 데이터 수준
