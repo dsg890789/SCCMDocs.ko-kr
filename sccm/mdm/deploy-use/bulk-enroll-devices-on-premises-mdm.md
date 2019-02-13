@@ -10,12 +10,13 @@ ms.assetid: b36f5e4a-2b57-4d18-83f6-197081ac2a0a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 437f6e6068fb56f1a906cbb8bea24cd3c707f0e3
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e0c007a2414a68701584967ee21e3cf046e42be3
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32350241"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56130625"
 ---
 # <a name="how-to-bulk-enroll-devices-with-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 온-프레미스 모바일 디바이스 관리를 사용하여 디바이스를 대량 등록하는 방법
 
@@ -44,9 +45,9 @@ System Center Configuration Manager 온-프레미스 모바일 디바이스 관�
 
 -   [등록 패키지(ppkg) 파일 만들기](#bkmk_createPpkg)  
 
--   [패키지를 사용하여 장치 대량 등록](#bkmk_getPpkg)  
+-   [패키지를 사용하여 디바이스 대량 등록](#bkmk_getPpkg)  
 
--   [장치 등록 확인](#bkmk_verifyEnroll)  
+-   [디바이스 등록 확인](#bkmk_verifyEnroll)  
 
 ##  <a name="bkmk_createCert"></a> 인증서 프로필 만들기  
  등록 패키지의 주요 구성 요소는 등록하는 디바이스에 신뢰할 수 있는 루트 인증서를 자동으로 프로비전하는 데 사용되는 인증서 프로필입니다.  이 루트 인증서는 디바이스와 온\-프레미스 모바일 디바이스 관리에 필요한 사이트 시스템 역할 간의 신뢰할 수 있는 통신에 필요합니다. 루트 인증서가 없으면 디바이스는 해당 디바이스와 등록 지점, 등록 프록시 지점, 배포 지점 및 디바이스 관리 지점 사이트 시스템 역할을 호스트하는 서버 간의 HTTPS 연결에서 신뢰되지 않습니다.  
@@ -87,7 +88,7 @@ System Center Configuration Manager 온-프레미스 모바일 디바이스 관�
 
 4.  사이트 코드를 선택하고 **다음**을 클릭합니다.  
 
-5.  **인트라넷만**을 선택하고 장치가 등록 프로세스를 시작하는 데 사용하는 등록 프록시 지점을 선택한 후 **다음**을 클릭합니다.  
+5.  **인트라넷만**을 선택하고 디바이스가 등록 프로세스를 시작하는 데 사용하는 등록 프록시 지점을 선택한 후 **다음**을 클릭합니다.  
 
 6.  신뢰할 수 있는 루트 인증서가 포함된 인증서 프로필( [Create a certificate profile](#bkmk_createCert)에서 만든 프로필)을 선택한 후 **다음**을 클릭합니다.  
 
@@ -119,7 +120,7 @@ System Center Configuration Manager 온-프레미스 모바일 디바이스 관�
 
 4.  **확인**을 클릭합니다.  
 
-##  <a name="bkmk_getPpkg"></a> 패키지를 사용하여 장치 대량 등록  
+##  <a name="bkmk_getPpkg"></a> 패키지를 사용하여 디바이스 대량 등록  
  OOBE(첫 실행 경험) 프로세스를 통해 디바이스가 프로비전되기 전이나 후에 패키지를 사용하여 디바이스를 등록할 수 있습니다.   등록 패키지를 OEM 프로비저닝 패키지의 일부로 포함할 수도 있습니다.  
 
  대량 등록에 사용하려면 해당 패키지를 디바이스에 물리적으로 전달해야 합니다. 다음을 비롯한 사용자 요구에 따라 다양한 방법으로 디바이스에 등록 패키지를 전달할 수 있습니다.  
@@ -154,7 +155,7 @@ System Center Configuration Manager 온-프레미스 모바일 디바이스 관�
 
 6.  계정을 클릭한 다음 **동기화**를 클릭하여 Configuration Manager를 사용한 관리를 시작합니다.  
 
-##  <a name="bkmk_verifyEnroll"></a> 장치 등록 확인  
+##  <a name="bkmk_verifyEnroll"></a> 디바이스 등록 확인  
  Configuration Manager 콘솔에서 디바이스가 성공적으로 등록되었는지 확인할 수 있습니다.  
 
 -   Configuration Manager 콘솔을 시작합니다.  

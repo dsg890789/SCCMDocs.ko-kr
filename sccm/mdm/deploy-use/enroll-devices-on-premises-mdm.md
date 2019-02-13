@@ -10,16 +10,17 @@ ms.assetid: b58472e3-31a5-4305-8eb6-2522befebe02
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: d8fa4f7739ea007044d515f35f4f7ed0b0d5745f
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d27e81da4da7caa89988d78a705648c5709cc2c3
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53419760"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56130346"
 ---
 # <a name="enroll-devices-for-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>System Center Configuration Manager의 온-프레미스 모바일 디바이스 관리를 위한 디바이스 등록
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 System Center Configuration Manager 온-프레미스 모바일 디바이스 관리를 사용하여 컴퓨터 및 디바이스를 관리하려면 Configuration Manager가 관리 작업을 위해 디바이스와 통신할 수 있도록 디바이스가 등록되어 있어야 합니다. Configuration Manager에서는 디바이스 등록을 위한 두 가지 방법을 제공합니다.  
 
