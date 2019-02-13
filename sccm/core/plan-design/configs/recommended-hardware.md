@@ -10,12 +10,13 @@ ms.assetid: 5267f0af-34d3-47a0-9ab8-986c41276e6c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 51d3a537fd7aa874fb2662bb6ec15fcfaa2124e5
-ms.sourcegitcommit: 4b8afbd08ecf8fd54950eeb630caf191d3aa4767
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b773696d5967d9ed1779ee822168d7177f10f585
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "34474329"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56130448"
 ---
 # <a name="recommended-hardware-for-system-center-configuration-manager"></a>System Center Configuration Manager에 권장되는 하드웨어
 
@@ -66,7 +67,7 @@ ms.locfileid: "34474329"
 |소프트웨어 업데이트 지점<sup>1</sup>|8|16|운영 체제의 요구 사항을 충족하고 배포되는 업데이트를 저장할 수 있는 크기|  
 |기타 모든 사이트 시스템 역할|4|8|50|  
 
- <sup>1</sup> 소프트웨어 업데이트 지점을 호스트하는 컴퓨터에서 IIS 응용 프로그램 풀에 대해 다음 구성을 사용해야 합니다.  
+ <sup>1</sup> 소프트웨어 업데이트 지점을 호스트하는 컴퓨터에서 IIS 애플리케이션 풀에 대해 다음 구성을 사용해야 합니다.  
 
 -   **WsusPool 큐 길이**를 **2000**으로 늘립니다.  
 
@@ -115,7 +116,7 @@ ms.locfileid: "34474329"
 
 -   **디스크 공간:** 500MB의 사용 가능한 디스크 공간(Configuration Manager 클라이언트 캐시의 경우 5GB 권장) 사용자 지정된 설정을 사용하여 Configuration Manager 클라이언트를 설치하는 경우에는 필요한 디스크 공간이 더 적어집니다.  
 
-    -   클라이언트에 불필요한 파일을 설치하지 않으려면 CCMSetup 명령줄 속성 /skipprereq를 사용합니다. 예를 들어 클라이언트가 애플리케이션 카탈로그를 사용하지 않는 경우에는 `CCMSetup.exe /skipprereq:silverlight.exe`를 실행합니다. Configuration Manager 1802부터 Silverlight는 더 이상 자동으로 설치되지 않습니다.  
+    -   클라이언트에 불필요한 파일을 설치하지 않으려면 CCMSetup 명령줄 속성 /skipprereq를 사용합니다. 예를 들어 클라이언트가 응용 프로그램 카탈로그를 사용하지 않는 경우에는 `CCMSetup.exe /skipprereq:silverlight.exe`를 실행합니다. Configuration Manager 1802부터 Silverlight는 더 이상 자동으로 설치되지 않습니다.  
 
     -   기본값인 5120MB보다 작은 캐시 파일을 설정하려면 Client.msi 속성 SMSCACHESIZE를 사용합니다. 최소 크기는 1MB입니다. 예를 들어 `CCMSetup.exe SMSCachesize=2`를 사용하는 경우 크기가 2MB인 캐시가 만들어집니다.  
 
@@ -128,11 +129,11 @@ ms.locfileid: "34474329"
 
  Configuration Manager의 선택적 기능에 대한 최소 추가 하드웨어 요구 사항은 다음과 같습니다.  
 
--   **운영 체제 배포:** 384MB RAM  
+-   **운영 체제 배포:** 384MB의 RAM  
 
 -   **소프트웨어 센터:** 500MHz 프로세서  
 
--   **원격 제어:** Pentium 4 하이퍼 스레드 3GHz(단일 코어) 또는 동급 CPU. 환경을 최적화하려면 1GB RAM 이상이 필요합니다.  
+-   **원격 제어:**: Pentium 4 하이퍼 스레드 3GHz(단일 코어) 또는 동급 CPU. 환경을 최적화하려면 1GB RAM 이상이 필요합니다.  
 
 ### <a name="client-for-linux-and-unix"></a>Linux 및 UNIX용 클라이언트  
  아래에는 Configuration Manager를 사용하여 관리하는 Linux 및 UNIX 서버의 최소 요구 사항이 나와 있습니다.  
