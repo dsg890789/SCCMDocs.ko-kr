@@ -9,12 +9,13 @@ ms.assetid: df10dc4d-c9ff-4574-bb33-8d30eb14cfe3
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6cfeae4ddc582d1d641d1065f2542319d5519b5e
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 29b46cc49930d47439dc5e60b72e4bf5017829b9
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53416425"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56139224"
 ---
 # <a name="how-to-create-configuration-items-for-windows-phone-devices-managed-without-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트 없이 관리되는 Windows Phone 디바이스에 대한 구성 항목을 만드는 방법
 System Center Configuration Manager **Windows Phone** 구성 항목을 사용하여 Microsoft Intune에 등록되어 있거나 Configuration Manager에서 온-프레미스로 관리되는 Windows Phone 디바이스에 대한 설정을 관리합니다.  
@@ -155,7 +156,7 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
 |**서명되지 않은 파일 설치**|서명되지 않은 파일을 로드할 수 있습니다.|  
 |**서명되지 않은 애플리케이션**|서명되지 않은 앱을 로드할 수 있습니다.|  
 |**SMS 및 MMS 메시징**|디바이스에서 SMS 및 MMS 메시징을 사용할 수 있습니다.|  
-|**이동식 저장소**|디바이스에서 SD 카드와 같은 이동식 저장소를 사용할 수 있습니다.|  
+|**이동식 스토리지**|디바이스에서 SD 카드와 같은 이동식 저장소를 사용할 수 있습니다.|  
 |**카메라**|디바이스 카메라를 사용할 수 있습니다.|  
 |**NFC(근거리 통신)**|디바이스에서 NFC를 사용하여 통신할 수 있습니다.<br /><br /> (Windows Phone 8.1에만 해당)|  
 |**USB 연결 허용**|USB를 통해 주변 디바이스를 이 디바이스에 연결할 수 있습니다.|
@@ -293,7 +294,7 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
 |설정|자세한 정보|  
 |**차단되는 앱 목록**|사용자가 설치할 수 없는 앱 목록을 지정하려면 이 옵션을 선택합니다.|  
 |**허용되는 앱 목록**|사용자가 설치할 수 있는 앱 목록을 지정하려면 이 옵션을 선택합니다.|  
-|**추가**|앱을 선택한 목록에 추가합니다. 원하는 이름, 앱 게시자(선택 사항) 및 앱 스토어의 앱 URL을 지정합니다.<br /><br /> URL을 지정하려면 Windows Phone 스토어 페이지에서 사용하려는 앱을 검색합니다.<br /><br /> **예:** 저장소를 검색 합니다 **Skype** 앱. 사용할 URL은 http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51입니다.<br /><br /> 회사 포털 앱 또는 LOB(기간 업무) 앱의 경우 전체 URL을 지정할 필요가 없으며 앱 GUID만 지정하면 됩니다.|  
+|**추가**|앱을 선택한 목록에 추가합니다. 원하는 이름, 앱 게시자(선택 사항) 및 앱 스토어의 앱 URL을 지정합니다.<br /><br /> URL을 지정하려면 Windows Phone 스토어 페이지에서 사용하려는 앱을 검색합니다.<br /><br /> **예제:** 저장소를 검색 합니다 **Skype** 앱. 사용할 URL은 http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51입니다.<br /><br /> 회사 포털 앱 또는 LOB(기간 업무) 앱의 경우 전체 URL을 지정할 필요가 없으며 앱 GUID만 지정하면 됩니다.|  
 |**편집**|선택한 앱의 이름, 게시자 및 URL을 편집할 수 있습니다.|  
 |**제거**|목록에서 선택한 앱을 삭제합니다.|  
 |**가져오기**|지정한 앱 목록을 쉼표로 구분된 값 파일로 가져옵니다. 파일의 형식, 애플리케이션 이름, 게시자, 앱 URL을 사용합니다.|  

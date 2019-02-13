@@ -10,12 +10,13 @@ ms.assetid: 7b04727b-d563-422f-8d59-4dd66215d0b3
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 37688e1bf992e6b48f3d871f09b7b357453cfc3f
-ms.sourcegitcommit: 33e066aceaf321add1031df00e552e942c8351a7
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 38036f72603265f14ccd228b9466abc2a74a8ff5
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55764347"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56135806"
 ---
 # <a name="manage-access-to-services-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 서비스 액세스 관리
 

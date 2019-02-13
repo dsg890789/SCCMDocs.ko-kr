@@ -10,16 +10,17 @@ ms.assetid: 617abb22-d22f-41fb-a76b-1c4259e419d2
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 12626a734138094e7558617b714b2b5acdac6450
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d0ce47e9ade73d76e99aa5c0d4e5581c713a847a
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53424326"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56139030"
 ---
 # <a name="create-a-service-connection-point-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하여 서비스 연결 지점 만들기
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 구독을 만든 후에는 Intue 서비스에 연결하는 데 사용할 수 있는 서비스 연결 지점 사이트 시스템 역할을 설치할 수 있습니다. 이 사이트 시스템 역할은 Intue 서비스에 설정 및 애플리케이션을 푸시합니다.
 

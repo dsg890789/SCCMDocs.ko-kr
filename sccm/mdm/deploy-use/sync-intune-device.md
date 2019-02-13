@@ -10,12 +10,13 @@ ms.assetid: b3731ad0-2a24-4042-994e-5e4c1230e3fe
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3ecd2c480ab67a82539edff6daa18ef0f93628c6
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: eab8f812b8772be0812437359275b80702f5760c
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32345716"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56137748"
 ---
 # <a name="remotely-synchronize-policy-on-intune-enrolled-devices-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 Intune에 등록된 디바이스의 정책 원격 동기화
 
@@ -26,8 +27,8 @@ Intune에 등록된 디바이스 자체의 회사 포털 앱에서 동기화를 
 
 가상 하드 디스크 파일에 대한 중요 정보를 제공하려면
 
-1.  **자산 및 준수** > **개요** > **장치** 아래에서 장치를 선택합니다.
-2.  **원격 장치 작업** 메뉴에서 **동기화 요청 보내기**를 클릭합니다.
+1.  **자산 및 준수** > **개요** > **디바이스** 아래에서 디바이스를 선택합니다.
+2.  **원격 디바이스 작업** 메뉴에서 **동기화 요청 보내기**를 클릭합니다.
 
 
 5~10분 후에 정책 변경 내용이 디바이스에 동기화됩니다. 각 디바이스에 대한 **속성** 대화 상자의 검색 데이터 섹션 및 **원격 동기화 상태**라는 디바이스 보기의 새 열에서 동기화 요청 상태 정보를 볼 수 있습니다.

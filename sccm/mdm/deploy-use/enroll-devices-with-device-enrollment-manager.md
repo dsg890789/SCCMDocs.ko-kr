@@ -10,16 +10,17 @@ ms.assetid: 2905f26e-7859-497d-b995-5ff48261efa2
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: cc1be1d602c3f9f8e65e0523d64c5b6a8e579c90
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 15ccbb201b7db02f51ccec322e5a320e143d8da3
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53415555"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56141394"
 ---
 # <a name="enroll-devices-with-device-enrollment-manager-with-configuration-manager"></a>Configuration Manager와 디바이스 등록 관리자를 사용하여 디바이스 등록
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 조직에서는 Intune을 사용하여 단일 사용자 계정으로 많은 수의 모바일 디바이스를 관리할 수 있습니다. DEM(*디바이스 등록 관리자*) 계정은 디바이스를 등록하는 데 사용되는 특수한 사용자 계정입니다. 기존 사용자를 DEM 계정에 추가하여 특수 DEM 기능을 제공합니다. 등록된 각 디바이스는 단일 라이선스를 사용합니다. 이 계정을 통해 등록한 디바이스는 개인 전용 디바이스가 아닌 사용자 선호도가 없는 공유 디바이스로 사용하는 것이 좋습니다.  
 

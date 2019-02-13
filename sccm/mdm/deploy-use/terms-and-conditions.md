@@ -10,16 +10,17 @@ ms.assetid: 4d3f9e6b-4d71-4fc4-9b91-47f1bfbd8c70
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e7f5eefe532c3a0a48bc0703365bf07028bfae71
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a836ec8c15e89a7959db9f10d1329c9182f3998c
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53419634"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156647"
 ---
 # <a name="add-terms-and-conditions-with-system-center-configuration-manager"></a>System Center Configuration Manager 사용 약관 추가
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 디바이스 등록, 회사 포털의 작업 리소스 액세스 및 회사 포털 사용 시의 디바이스와 사용자에 대한 영향을 설명하기 위해 사용자 그룹에 System Center Configuration Manager 계약조건을 배포할 수 있습니다. 사용자는 먼저 사용 약관에 동의해야 회사 포털을 사용하여 작업 등록 및 액세스를 수행할 수 있습니다.  
 

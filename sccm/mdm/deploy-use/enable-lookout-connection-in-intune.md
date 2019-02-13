@@ -9,12 +9,13 @@ ms.assetid: 7e4ada34-63bf-4b9f-8246-31816aa44196
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 179aae5fdbd8d6c09a34dca6dd01437d5f61f7b8
-ms.sourcegitcommit: 0a4556820fabe004d45a82b0ee1176f6891ac9f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b36e98edfffcc26b7fb2670cbfdc31c165331f0f
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37949597"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56139394"
 ---
 # <a name="enable-lookout-mtd-connection-in-the-intune-admin-console"></a>Intune 관리 콘솔에서 Lookout MTD 연결 사용
 
@@ -32,7 +33,7 @@ ms.locfileid: "37949597"
 
 3. **Intune**을 선택하면 **Intune 대시보드**가 열립니다.  
 
-4. **Intune 대시보드**에서 **장치 규정 준수**를 선택한 다음, **설치** 섹션 아래에서 **Mobile Threat Defense**를 선택합니다.  
+4. **Intune 대시보드**에서 **디바이스 준수**를 선택하고 **설치** 섹션 아래에서 **Mobile Threat Defense**를 선택합니다.  
 
 5. **Mobile Threat Defense** 창에서 **추가**를 선택합니다.  
 
@@ -46,11 +47,11 @@ ms.locfileid: "37949597"
 
 조직의 요구 사항에 따라 사용 하도록 설정해야 하는 MTD 설정/해제 옵션을 결정할 수 있습니다. 다음은 자세한 내용입니다.
 
-- **Android 4.1+ 장치를 Lookout for Work MTD에 연결**: 이 옵션을 사용하도록 설정하면 Android 4.1+ 장치가 보안 위험을 Intune에 보고하게 할 수 있습니다.  
-    - **수신된 데이터가 없는 경우 비규격으로 표시**: Intune이 Lookout에서 이 플랫폼의 장치에 대한 데이터를 수신하지 못하면 장치를 비규격으로 간주합니다.  
+- **연결 Android 4.1 + 장치를 Lookout for Work MTD**: 이 옵션을 사용 하도록 설정 하면 있습니다 Android 4.1 이상 장치가 Intune을 다시 보안 위험을 보고 합니다.  
+    - **수신 된 데이터가 없는 경우 비규격으로 표시**: Intune에서 Lookout이이 플랫폼에서 장치에 대 한 데이터를 받지 못하면, 장치를 비규격으로 간주 합니다.  
 
-- **iOS 8.0+ 장치를 Lookout for Work MTD에 연결**: 이 옵션을 사용하도록 설정하면 iOS 8.0+ 장치가 보안 위험을 Intune에 보고하게 할 수 있습니다.
-    - **수신된 데이터가 없는 경우 비규격으로 표시**: Intune이 Lookout에서 이 플랫폼의 장치에 대한 데이터를 수신하지 못하면 장치를 비규격으로 간주합니다.  
+- **IOS 8.0 이상 장치에 Lookout for Work MTD 연결**: 이 옵션을 사용 하도록 설정 하면 보안 위험을 Intune에 다시 보고 하는 iOS 8.0 + 장치 할 수 있습니다.
+    - **수신 된 데이터가 없는 경우 비규격으로 표시**: Intune에서 Lookout이이 플랫폼에서 장치에 대 한 데이터를 받지 못하면, 장치를 비규격으로 간주 합니다.  
 
 > [!TIP]  
 > Mobile Threat Defense 창에서 Intune 및 Lookout 간의 **연결 상태** 및 **마지막 동기화** 시간을 확인할 수 있습니다.

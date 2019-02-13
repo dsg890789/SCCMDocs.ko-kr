@@ -10,16 +10,17 @@ ms.assetid: e3bb3e13-3037-4122-93bc-504bfd080a4d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 214dcdca927e515f776e99f005f968a4b98f4112
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e694b81943dda937f1d95765f75f182e072bc7da
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53418835"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156909"
 ---
 # <a name="how-to-create-pfx-certificate-profiles-by-importing-certificate-details"></a>인증서 세부 정보를 가져와 PFX 인증서 프로필을 만드는 방법
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 
 여기서 외부 인증서의 자격 증명을 가져와 인증서 프로필을 만드는 방법을 알아봅니다.  
@@ -53,11 +54,11 @@ System Center Configuration Manager를 통해 인증서 자격 증명을 가져�
 
     -   **이름**: 인증서 프로필에 대 한 고유한 이름을 입력 합니다. 최대 256자까지 사용할 수 있습니다.  
 
-    -   **설명**: System Center Configuration Manager 콘솔에서 쉽게 식별할 수 있도록 하는 기타 관련 정보 및 인증서 프로필의 개요를 제공 하는 설명을 제공 합니다. 최대 256자까지 사용할 수 있습니다.  
+    -   **설명**: 인증서 프로필에 대한 개략적인 정보를 제공하는 설명과 System Center Configuration Manager 콘솔에서 해당 프로필을 식별하는 데 도움이 되는 기타 관련 정보를 입력합니다. 최대 256자까지 사용할 수 있습니다.  
 
-    -   **만들려는 인증서 프로필의 유형을 지정**: PFX 인증서의 경우 다음 옵션 중 하나를 선택 합니다.  
+    -   **만들려는 인증서 프로필 유형 지정**: PFX 인증서의 경우 다음 옵션 중 하나를 선택 합니다.  
 
-        -   **개인 정보 교환 PKCS #12 (PFX) 설정-가져오기**: 기존 인증서의 정보를 프로그래밍 방식으로 가져와서 인증서 프로필을 만듭니다.  
+        -   **개인 정보 교환 PKCS #12(PFX) 설정 – 가져오기**: 기존 인증서의 정보를 프로그래밍 방식으로 가져와서 인증서 프로필을 만듭니다.  
 
         -   **개인 정보 교환-PKCS #12 (PFX) 설정-만들기**: 인증 기관에서 제공 된 자격 증명을 사용 하 여 PFX 인증서 프로필을 만듭니다.  자세한 내용은 [인증 기관을 사용하여 PFX 인증서 프로필을 만드는 방법](../../mdm/deploy-use/create-pfx-certificate-profiles.md)을 참조하세요.
 
@@ -68,11 +69,11 @@ PFX 인증서를 가져오려면 Configuration Manager SDK를 사용하여 PFX �
 
 가져온 인증서는 등록된 디바이스에 나중에 배포됩니다.
 
-1. **인증서 프로필 만들기 마법사**의 **PFX 인증서** 페이지에서 디바이스 키 저장소 공급자의 위치를 지정합니다.
+1. **인증서 프로필 만들기 마법사**의 **PFX 인증서** 페이지에서 장치 키 스토리지 공급자의 위치를 지정합니다.
     -   **있는 경우 TPM(신뢰할 수 있는 플랫폼 모듈)에 설치**  
     -   **TPM(신뢰할 수 있는 플랫폼 모듈)에 설치, 그렇지 않으면 실패** 
     -   **비즈니스용 Windows Hello에 설치, 그러지 않으면 실패** 
-    -   **소프트웨어 키 저장소 공급자에 설치** 
+    -   **소프트웨어 키 스토리지 공급자에 설치** 
 2. **다음**을 클릭합니다. 
 3. 마법사의 **지원되는 플랫폼** 페이지에서 지원되는 디바이스 플랫폼을 선택하고 **다음**을 클릭합니다.
 

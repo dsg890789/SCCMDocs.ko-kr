@@ -10,16 +10,17 @@ ms.assetid: 78d44adc-9b1c-4bc6-b72d-e93873916ea6
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4628dd18ed865088c68cf38810e984a18f0ba0ad
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 044ea01729b61f55dca74ac0e77b7007e05b346a
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53422218"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56140969"
 ---
 # <a name="ios-device-enrollment-program-dep-enrollment-for-hybrid-deployments-with-configuration-manager"></a>Configuration Manager에서의 하이브리드 배포를 위한 iOS DEP(디바이스 등록 프로그램) 등록
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 회사에서 Apple 장비 등록 프로그램을 통해 iOS 디바이스를 구입한 다음 Microsoft Intune을 사용하여 관리할 수 있습니다. Apple DEP(디바이스 등록 프로그램)를 사용하여 회사 소유 iOS 디바이스를 관리하려는 회사에서는 Apple에서 요구하는 단계를 완료하여 프로그램에 참여하고 해당 프로그램을 통해 디바이스를 가져와야 합니다. 해당 프로세스의 세부 정보는 [https://deploy.apple.com](https://deploy.apple.com)에 제공됩니다. 이 프로그램의 이점 중 하나는 USB로 각 디바이스를 컴퓨터에 연결하지 않고도 디바이스를 자동 설치할 수 있다는 것입니다.  
 

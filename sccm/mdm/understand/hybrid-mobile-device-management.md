@@ -10,12 +10,13 @@ ms.assetid: bb95154b-f63e-4491-896e-41d732c802f8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: dd91d8afb092f855179edaa07163d5fcaa2ac350
-ms.sourcegitcommit: 38f56f1d5803370f4262931c2dc4a532bfcf0594
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2980cef8a39f790dbb94ab85fa025eeb04f4f996
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55905593"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56139292"
 ---
 # <a name="hybrid-mdm-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune에서 사용하는 하이브리드 MDM
 

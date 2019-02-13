@@ -10,12 +10,13 @@ ms.assetid: 770da7bd-02dd-474a-9604-93ff1ea0c1e4
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 21fed8dbba8cc5c8e96218459288b57364fe350e
-ms.sourcegitcommit: 98c3f7848dc9014de05541aefa09f36d49174784
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ebc2b995c763aa54e1d47ee38ab2d250554f5a29
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42584829"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56136027"
 ---
 # <a name="protect-data-with-remote-wipe-lock-or-passcode-reset-by-using-configuration-manager"></a>Configuration Manager를 사용하여 원격 초기화, 잠금 또는 암호 재설정으로 데이터 보호
 
@@ -50,11 +51,11 @@ Configuration Manager는 선택적 초기화, 전체 초기화, 원격 잠금 �
 
 #### <a name="to-initiate-a-remote-wipe-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 원격 초기화를 시작하려면  
 
-1. Configuration Manager 콘솔에서 **자산 및 준수**를 선택하고 **디바이스**를 선택합니다. **장치 컬렉션** 을 선택하고 컬렉션을 선택할 수도 있습니다.  
+1. Configuration Manager 콘솔에서 **자산 및 준수**를 선택하고 **디바이스**를 선택합니다. **디바이스 컬렉션** 을 선택하고 컬렉션을 선택할 수도 있습니다.  
 
 2. 사용 중지/초기화하려는 디바이스를 선택합니다.  
 
-3. **장치 그룹**에서 **원격 장치 작업**을 선택한 다음 **사용 중지/초기화**를 선택합니다.  
+3. **디바이스 그룹**에서 **원격 디바이스 작업**을 선택한 다음 **사용 중지/초기화**를 선택합니다.  
 
 
 
@@ -69,7 +70,7 @@ Configuration Manager는 선택적 초기화, 전체 초기화, 원격 잠금 �
 |Configuration Manager 및 Intune을 사용하여 설치된 회사 앱 및 관련 데이터|앱이 제거됩니다. 회사 앱 데이터가 제거됩니다.|  
 |VPN 및 Wi-Fi 프로필|제거됩니다.|  
 |인증서|제거되고 해지됩니다.|  
-|설정|**음성 로밍 허용**, **데이터 로밍 허용** 및 **로밍하는 동안 자동 동기화 허용**을 제외하고 제거됩니다.|  
+|설정|다음을 제외하고 제거됩니다. **음성 로밍 허용**하십시오 **데이터 로밍 허용**, 및 **로밍 하는 동안 자동 동기화 허용**합니다.|  
 |관리 에이전트|관리 프로필이 제거됩니다.|  
 |전자 메일 프로필|Intune에 의해 설정된 메일 프로필의 경우 메일 계정 및 메일이 제거됩니다.|  
 
@@ -111,18 +112,18 @@ Android for Work 디바이스에서 선택적 초기화를 수행하면 해당 �
 
 Windows 10 Mobile 및 Windows Phone 8.1 디바이스에서는 다음 설정도 제거됩니다.  
 
-- **모바일 장치의 잠금을 해제하는 데 암호 필요**  
+- **모바일 디바이스의 잠금을 해제하는 데 암호 필요**  
 - **단순 암호 허용**  
 - **최소 암호 길이**  
 - **필수 암호 유형**
 - **암호 만료(일)**  
 - **암호 기록 기억**  
-- **장치를 초기화하기 전까지 허용되는 로그인 반복 오류 횟수**  
+- **디바이스를 초기화하기 전까지 허용되는 로그인 반복 오류 횟수**  
 - **암호를 요구하기 전까지 비활성 시간(분)**  
 - **필수 암호 유형 - 최소 문자 집합 수**  
 - **카메라 허용**
-- **모바일 장치 암호화 필요**  
-- **이동식 저장소 허용**  
+- **모바일 디바이스 암호화 필요**  
+- **이동식 스토리지 허용**  
 - **웹 브라우저 허용**  
 - **앱 스토어 허용**  
 - **화면 캡처 허용**  
@@ -139,11 +140,11 @@ Windows 10 Mobile 및 Windows Phone 8.1 디바이스에서는 다음 설정도 �
 
 #### <a name="to-initiate-a-remote-wipe-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 원격 초기화를 시작하려면  
 
-1. Configuration Manager 콘솔에서 **자산 및 준수**를 선택하고 **디바이스**를 선택합니다. **장치 컬렉션** 을 선택하고 컬렉션을 선택할 수도 있습니다.  
+1. Configuration Manager 콘솔에서 **자산 및 준수**를 선택하고 **디바이스**를 선택합니다. **디바이스 컬렉션** 을 선택하고 컬렉션을 선택할 수도 있습니다.  
 
 2. 사용 중지/초기화하려는 디바이스를 선택합니다.  
 
-3. **장치 그룹**에서 **원격 장치 작업**을 선택한 다음 **사용 중지/초기화**를 선택합니다.  
+3. **디바이스 그룹**에서 **원격 디바이스 작업**을 선택한 다음 **사용 중지/초기화**를 선택합니다.  
 
 
 
@@ -199,19 +200,19 @@ Windows 8.1 및 Windows RT 8.1에서 파일 시스템 암호화(EFS)-암호화�
 
 #### <a name="to-reset-the-passcode-on-a-mobile-device-remotely-in-configuration-manager"></a>Configuration Manager에서 원격으로 모바일 디바이스의 암호를 재설정하려면  
 
-1. Configuration Manager 콘솔에서 **자산 및 준수**를 선택하고 **디바이스**를 선택합니다. **장치 컬렉션** 을 선택하고 컬렉션을 선택할 수도 있습니다.  
+1. Configuration Manager 콘솔에서 **자산 및 준수**를 선택하고 **디바이스**를 선택합니다. **디바이스 컬렉션** 을 선택하고 컬렉션을 선택할 수도 있습니다.  
 
 2. 암호를 재설정할 디바이스를 하나 이상 선택합니다.  
 
-3. **장치 그룹**에서 **원격 장치 작업**을 선택한 다음 **암호 재설정**를 선택합니다.  
+3. **디바이스 그룹**에서 **원격 디바이스 작업**을 선택한 다음 **암호 재설정**를 선택합니다.  
 
 #### <a name="to-show-the-state-of-the-passcode-reset"></a>암호 재설정 상태를 표시하려면  
 
-1. Configuration Manager 콘솔에서 **자산 및 준수**를 선택하고 **디바이스**를 선택합니다. **장치 컬렉션** 을 선택하고 컬렉션을 선택할 수도 있습니다.  
+1. Configuration Manager 콘솔에서 **자산 및 준수**를 선택하고 **디바이스**를 선택합니다. **디바이스 컬렉션** 을 선택하고 컬렉션을 선택할 수도 있습니다.  
 
 2. 암호 재설정 상태를 표시할 디바이스를 하나 이상 선택합니다.  
 
-3. **장치 그룹**에서 **원격 장치 작업**을 선택한 다음 **암호 상태 표시**를 선택합니다.  
+3. **디바이스 그룹**에서 **원격 디바이스 작업**을 선택한 다음 **암호 상태 표시**를 선택합니다.  
 
 
 
@@ -233,22 +234,22 @@ Windows 8.1 및 Windows RT 8.1에서 파일 시스템 암호화(EFS)-암호화�
 
 #### <a name="to-lock-a-mobile-device-remotely-through-the-configuration-manager-console"></a>Configuration Manager 콘솔을 통해 원격으로 모바일 디바이스를 잠그려면  
 
-1. Configuration Manager 콘솔에서 **자산 및 준수**를 선택하고 **디바이스**를 선택합니다. **장치 컬렉션** 을 선택하고 컬렉션을 선택할 수도 있습니다.  
+1. Configuration Manager 콘솔에서 **자산 및 준수**를 선택하고 **디바이스**를 선택합니다. **디바이스 컬렉션** 을 선택하고 컬렉션을 선택할 수도 있습니다.  
 
 2. 잠글 디바이스를 하나 이상 선택합니다.  
 
-3. **장치 그룹**에서 **원격 장치 작업**을 선택한 다음 **원격 잠금**을 선택합니다.  
+3. **디바이스 그룹**에서 **원격 디바이스 작업**을 선택한 다음 **원격 잠금**을 선택합니다.  
 
 #### <a name="to-show-the-state-of-the-remote-lock"></a>원격 잠금 상태를 표시하려면  
 
-1. Configuration Manager 콘솔에서 **자산 및 준수**를 선택하고 **디바이스**를 선택합니다. **장치 컬렉션** 을 선택하고 컬렉션을 선택할 수도 있습니다.  
+1. Configuration Manager 콘솔에서 **자산 및 준수**를 선택하고 **디바이스**를 선택합니다. **디바이스 컬렉션** 을 선택하고 컬렉션을 선택할 수도 있습니다.  
 
 2. 원격 잠금 상태를 표시할 디바이스를 선택합니다.  
 
-3. **장치 그룹**에서 **원격 장치 작업**을 선택한 다음 **원격 잠금 상태 표시**를 선택합니다.  
+3. **디바이스 그룹**에서 **원격 디바이스 작업**을 선택한 다음 **원격 잠금 상태 표시**를 선택합니다.  
 
 
 
 ## <a name="see-also"></a>참고 항목  
 
-[장치 데이터 관리를 위한 Windows 선택적 초기화](http://technet.microsoft.com/library/dn486874.aspx)   
+[디바이스 데이터 관리를 위한 Windows 선택적 초기화](http://technet.microsoft.com/library/dn486874.aspx)   

@@ -10,12 +10,13 @@ ms.assetid: e025c48c-1514-4ab7-836c-e0635aaa993a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a95a7735cc7f7afb6a16b030de6925926335e403
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ef070186112642d204aade24039da87c0e3a22f0
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385221"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56139673"
 ---
 # <a name="create-android-applications-in-configuration-manager"></a>Configuration Manager에서 Android 애플리케이션 만들기
 
@@ -23,7 +24,7 @@ ms.locfileid: "39385221"
 
 Configuration Manager 애플리케이션에는 하나 이상의 배포 유형이 있습니다. 배포 유형은 디바이스에 소프트웨어를 배포하는 데 필요한 설치 파일 및 정보로 구성됩니다. 또한 배포 유형에는 소프트웨어 배포 시점 및 방법을 지정하는 규칙이 포함됩니다.  
 
-Configuration Manager 애플리케이션 및 배포 유형을 만드는 단계는 [애플리케이션 만들기](/sccm/apps/deploy-use/create-applications#bkmk_create)를 참조하세요. 
+Configuration Manager 응용 프로그램 및 배포 유형을 만드는 데 필요한 단계는 [응용 프로그램 만들기](/sccm/apps/deploy-use/create-applications#bkmk_create)를 참조하세요. 
 
 Android 디바이스용 응용 프로그램을 만들고 배포할 때는 다음 사항을 고려하세요.  
 
@@ -37,7 +38,7 @@ Configuration Manager는 Android .apk 패키지를 지원합니다.
 
 |디바이스 유형|지원되는 작업|
 |-|-|
-|Android|**사용 가능**, **필수**: 사용자가 설치 및 제거에 모두 동의해야 합니다.|
+|Android|**사용 가능한**하십시오 **필요한**: 사용자가 설치 및 제거에 모두 동의해야 합니다.|
 |Android for Work |**사용 가능**, **필수** |
 
 
@@ -60,7 +61,7 @@ Play for Work 스토어에서 앱을 승인하고, Configuration Manager 콘솔�
 
 6. 앱을 동기화하는 데 최대 10분 동안 기다리십시오. 그런 다음, **소프트웨어 라이브러리** 작업 영역으로 이동하고, **애플리케이션 관리**를 확장한 후, **스토어 앱에 대한 라이선스 정보**를 선택합니다.  
 
-7. Play for Work에서 동기화된 앱을 선택한 다음, **애플리케이션 만들기**를 클릭합니다.  
+7. Play for Work에서 동기화된 앱을 선택한 다음, **응용 프로그램 만들기**를 클릭합니다.  
 
 8. 마법사를 완료합니다.  
 

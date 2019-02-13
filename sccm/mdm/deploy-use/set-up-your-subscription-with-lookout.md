@@ -10,12 +10,13 @@ ms.assetid: 6087b279-ba05-4824-b5e3-3af14f3d3cfe
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 85c2ae1039058f39bd96c7d0752f798504b0dd4d
-ms.sourcegitcommit: 9cff0702c2cc0f214173b47ec241f7e5a40f84e6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6f914cba7eee44f340bf5b696aca1854128aeb8b
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746113"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56141309"
 ---
 # <a name="set-up-your-subscription-for-lookout-mobile-threat-defense"></a>Lookout 모바일 위협 방어에 대한 구독 설정
 
@@ -43,7 +44,7 @@ Lookout 모바일 위협 방어 구독을 설정하려면 다음 단계가 필�
 
 
 ## <a name="collect-azure-ad-information"></a>Azure AD 정보 수집
-Lookout을 Intune과 통합하기 위해 Lookout Mobility Endpoint Security 테넌트는 Azure AD 구독과 연결됩니다. Lookout 모바일 위협 방어 서비스 구독을 사용하도록 설정하려면 Lookout 지원 팀(enterprisesupport@lookout.com)은 다음 정보가 필요합니다.
+Lookout Mobility Endpoint Security 테넌트가 Azure AD 구독과 연결되어 Lookout을 Intune과 통합합니다. Lookout 모바일 위협 방어 서비스 구독을 사용하도록 설정하려면 Lookout 지원 팀(enterprisesupport@lookout.com)은 다음 정보가 필요합니다.
 
 - **Azure AD 테넌트 ID**
 - *전체* Lookout 콘솔 액세스를 위한 **Azure AD 그룹 개체 ID**
@@ -61,8 +62,8 @@ Lookout 지원 팀에게 제공해야 하는 정보를 수집하려면 다음 �
 
    Lookout 콘솔은 다음 두 가지 수준의 액세스를 지원합니다.  
 
-   - **모든 권한:** Azure AD 관리자는 모든 권한이 있는 사용자 그룹을 만들고, 선택적으로 제한된 권한이 있는 사용자 그룹을 만들 수 있습니다. 이러한 그룹의 사용자만 **Lookout 콘솔**에 로그인할 수 있습니다.
-   - **제한된 권한:** 이 그룹의 사용자는 Lookout 콘솔의 여러 구성 및 등록 관련 모듈에 대한 액세스 권한이 없으며, Lookout 콘솔의 **보안 정책** 모듈에 대한 읽기 전용 액세스 권한을 갖습니다.  
+   - **모든 권한:** Azure AD 관리자 전체 액세스 권한이 있는 사용자 그룹을 만들고 필요에 따라 제한 된 액세스 권한이 있는 사용자 그룹을 만들 수 있습니다. 이러한 그룹의 사용자만 **Lookout 콘솔**에 로그인할 수 있습니다.
+   - **제한 된 액세스:** 이 그룹의 사용자는 아무런에 대 한 읽기 전용 액세스를 있고 여러 구성 및 Lookout 콘솔의 등록 관련 모듈에 대 한 액세스는 **보안 정책** Lookout 콘솔의 모듈입니다.  
 
      > [!TIP]  
      > 사용 권한에 대한 자세한 내용은 [이 Lookout 지원 문서](https://personal.support.lookout.com/hc/articles/114094105653)를 참조하십시오.
@@ -96,7 +97,7 @@ Lookout 지원 팀에게 제공해야 하는 정보를 수집하려면 다음 �
     > [!NOTE]  
     > 식별되고 지원되는 Azure AD 내 등록 그룹 사용자의 모든 Lookout 지원, Intune 등록 디바이스가 Lookout MTD 콘솔에 등록되며 활성화할 수 있습니다.
 
-2. [Lookout 콘솔](https://aad.lookout.com)의 **시스템** 모듈에서 Lookout에 장치를 등록해야 하는 사용자 집합을 정의하려면 **커넥터** 탭을 선택하고 **등록 관리**를 선택합니다. 등록을 위해 Azure AD 보안 그룹 **표시 이름**을 추가합니다.
+2. [Lookout 콘솔](https://aad.lookout.com)의 **시스템** 모듈에서 **커넥터** 탭, **등록 관리**를 차례로 선택하여 Lookout에서 해당 디바이스를 등록해야 하는 사용자 집합을 정의합니다. 등록을 위해 Azure AD 보안 그룹 **표시 이름**을 추가합니다.
 
     ![Intune 커넥터 등록 페이지 스크린샷](media/lookout-enrollment.png)
 
@@ -105,7 +106,7 @@ Lookout 지원 팀에게 제공해야 하는 정보를 수집하려면 다음 �
     >![Azure Portal, Azure Active Directory 서비스, 속성 페이지 스크린샷](media/aad-group-display-name.png)
 
     >[!NOTE]  
-    >새 디바이스를 확인할 시간 증분에 기본값 5분을 사용하는 것이 좋습니다. 현재 제한 사항, **Lookout은 그룹 표시 이름의 유효성을 확인할 수 없습니다:** Azure Portal에서 **표시 이름** 필드는 Azure AD 보안 그룹과 정확히 일치하도록 합니다. **중첩 그룹 만들기는 지원되지 않습니다:** Lookout에 사용된 Azure AD 보안 그룹에는 사용자만 포함돼야 합니다. 다른 그룹을 포함할 수 없습니다.
+    >새 디바이스를 확인할 시간 증분에 기본값 5분을 사용하는 것이 좋습니다. 현재 제한 사항, **Lookout 그룹 표시 이름의 유효성을 검사할 수 없습니다.** 확인 합니다 **표시 이름** Azure portal에서 필드가 Azure AD 보안 그룹과 정확히 일치 합니다. **중첩 그룹 만들기는 지원 되지 않습니다.**  Azure AD 보안 그룹을 Lookout에 사용 되는 사용자만 포함 해야 합니다. 다른 그룹을 포함할 수 없습니다.
 
 3.  그룹이 추가된 후 다음번에 사용자가 지원되는 해당 디바이스에서 Lookout for Work 앱을 열면 디바이스가 Lookout에서 활성화됩니다.
 
@@ -126,7 +127,7 @@ Lookout 지원 팀에게 제공해야 하는 정보를 수집하려면 다음 �
 
 
 ## <a name="configure-enrollment-settings"></a>등록 설정 구성
-**시스템** 모듈의 **커넥터** 페이지에서 장치가 연결 끊김으로 간주되기 전의 일수를 지정합니다. 연결이 끊긴 디바이스는 비규격으로 간주되며 SCCM 조건부 액세스 정책에 따라 회사 응용 프로그램에 액세스할 수 없습니다. 1일에서 90일 사이의 값을 지정할 수 있습니다.
+**커넥터** 페이지의 **시스템** 모듈에서 디바이스 연결이 끊긴 것으로 간주되는 일 수를 지정합니다. 연결이 끊긴 디바이스는 비규격으로 간주되며 SCCM 조건부 액세스 정책에 따라 회사 응용 프로그램에 액세스할 수 없습니다. 1일에서 90일 사이의 값을 지정할 수 있습니다.
 
 ![Lookout 등록 설정](media/lookout-console-enrollment-settings.png)
 

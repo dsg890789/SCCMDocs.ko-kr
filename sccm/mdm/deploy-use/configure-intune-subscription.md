@@ -10,16 +10,17 @@ ms.assetid: 99de8fe7-560e-401a-8ab2-6d87d091be17
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a009159a4bd0588f80f140f588b17911101cc72c
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9ec6756e5c180561bef10bba799e3fdba3dcc303
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53418563"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56137629"
 ---
 # <a name="configure-your-intune-subscription-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하여 Intune 구독 구성
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 Intune 구독을 사용하면 인터넷을 통해 디바이스를 관리할 수 있습니다. 여기에는 디바이스를 등록할 수 있는 사용자 컬렉션 지정 및 사용자에게 표시되는 정보 정의가 포함됩니다. Intune 구독을 만드는 동안 회사 로고 및 사용자 지정 색 구성표를 사용하여 Intune 회사 포털에 회사 브랜딩을 추가할 수도 있습니다.
 

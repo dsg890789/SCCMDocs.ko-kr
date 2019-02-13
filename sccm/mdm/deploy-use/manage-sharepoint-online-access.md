@@ -10,16 +10,17 @@ ms.assetid: 49cec466-1676-4fe2-a2fe-5004f01d735e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4d00973704ce49a949c89a37e89ed2d39064cbec
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 755be3231c00eabf9562256e62061fbad70633e7
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53422915"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56140952"
 ---
 # <a name="manage-sharepoint-online-access-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 SharePoint Online 액세스 관리
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 
 **SharePoint Online**의 Configuration Manager 조건부 액세스 정책은 SharePoint Online에 저장된 비즈니스용 OneDrive 파일에 대한 액세스를 관리합니다. 액세스는 지정한 조건을 기반으로 합니다.
@@ -104,7 +105,7 @@ Office 데스크톱 애플리케이션은 다음을 실행하는 SharePoint Onli
 
 ## <a name="configure-conditional-access-for-sharepoint-online"></a>SharePoint Online에 대한 조건부 액세스 구성  
 
-### <a name="step-1-configure-active-directory-security-groups"></a>1 단계: Active Directory 보안 그룹 구성  
+### <a name="step-1-configure-active-directory-security-groups"></a>1단계: Active Directory 보안 그룹 구성  
  시작하기 전에 조건부 액세스 정책에 대한 Azure AD 보안 그룹을 구성합니다. **Office 365 관리 센터**또는 **Intune 계정 포털**에서 이러한 그룹을 구성할 수 있습니다. 이러한 그룹에는 정책의 대상이 되거나 정책에서 제외된 사용자가 포함됩니다. 사용자가 정책의 대상인 경우 사용자가 사용하는 각 디바이스가 정책을 준수해야 리소스에 액세스할 수 있습니다.  
 
  SharePoint Online 정책에 두 그룹 유형을 지정할 수 있습니다.  
@@ -115,7 +116,7 @@ Office 데스크톱 애플리케이션은 다음을 실행하는 SharePoint Onli
 
   사용자가 두 그룹에 모두 속한 경우에는 정책에서 제외됩니다.  
 
-### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>2 단계: 준수 정책 구성 및 배포  
+### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>2단계: 준수 정책 구성 및 배포  
  SharePoint Online 정책의 대상이 되는 모든 디바이스에 대한 준수 정책을 만들고 배포합니다.  
 
 > [!NOTE]   
@@ -128,7 +129,7 @@ Office 데스크톱 애플리케이션은 다음을 실행하는 SharePoint Onli
 
    
 
-###  <a name="BKMK_OneDrive"></a> 3 단계: SharePoint Online 정책 구성  
+###  <a name="BKMK_OneDrive"></a> 3단계: SharePoint Online 정책 구성  
 
  다음으로 관리되고 규정을 준수하는 디바이스만 SharePoint Online에 액세스할 수 있도록 요구하는 정책을 구성합니다. 이 정책은 Azure AD에 저장됩니다.
 

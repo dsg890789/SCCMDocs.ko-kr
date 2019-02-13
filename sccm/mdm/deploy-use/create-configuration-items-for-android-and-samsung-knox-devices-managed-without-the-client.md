@@ -10,12 +10,13 @@ ms.assetid: 7b66f3c4-e3bb-4f6a-abd5-55be649ff90d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 8a1759013902a75c26ec5004b932a81b536e303e
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 47d2ee0cf82e9739d8e6364098be6c3033ce1ea2
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53416999"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56140714"
 ---
 # <a name="how-to-create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트 없이 관리되는 Android 및 Samsung KNOX 디바이스에 대한 구성 항목을 만드는 방법
 
@@ -124,7 +125,7 @@ System Center Configuration Manager **Android 및 삼성 KNOX** 구성 항목을
 |설정|세부 정보|  
 |-------------|-------------|  
 |**SMS 및 MMS 메시징**|디바이스에서 SMS 및 MMS 메시징을 허용합니다.|
-|**이동식 저장소**|디바이스가 SD 카드와 같은 이동식 저장소를 사용할 수 있습니다.|
+|**이동식 저장소**|장치가 SD 카드와 같은 이동식 스토리지를 사용할 수 있습니다.|
 |**카메라**|디바이스 카메라를 사용할 수 있습니다.<br /><br /> Android 및 삼성 KNOX 디바이스에 적용됩니다.|
 |**NFC(근거리 통신)**|디바이스에서 지원하는 경우 근거리 통신을 사용하는 작업을 수행할 수 있습니다.|
 |**YouTube**|디바이스에서 YouTube 앱 사용을 허용합니다.<br /><br /> 삼성 KNOX 디바이스에만 적용됩니다.|  
@@ -143,7 +144,7 @@ System Center Configuration Manager **Android 및 삼성 KNOX** 구성 항목을
 
 |설정|세부 정보|  
 |-------------|-------------|  
-|**메모리 카드 암호화**|디바이스의 메모리 카드를 암호화해야 합니다.|
+|**스토리지 카드 암호화**|장치의 스토리지 카드를 암호화해야 합니다.|
 |**디바이스에 파일 암호화**|모바일 디바이스의 파일을 암호화해야 합니다.|  
 
 ### <a name="wireless-communications"></a>무선 통신
@@ -168,7 +169,7 @@ System Center Configuration Manager **Android 및 삼성 KNOX** 구성 항목을
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **비규격 앱 목록** |                                                                                                                                                                                                                                                                               사용자가 설치하는 경우 비규격으로 보고될 앱 목록을 지정합니다.                                                                                                                                                                                                                                                                               |
 |  **규격 앱 목록**   |                                                                                                                                                                                                                                                              사용자가 설치할 수 있는 앱 목록을 지정합니다. 설치된 앱 중 이 목록에 포함되어 있지 않은 기타 모든 앱은 호환되지 않는 앱으로 보고됩니다.                                                                                                                                                                                                                                                               |
-|          **추가**           | 앱을 선택한 목록에 추가합니다. 원하는 이름, 앱 게시자(선택 사항) 및 앱 스토어의 앱 URL을 지정합니다.<br /><br /> URL을 지정하려면 [Google Play의 앱 섹션](https://play.google.com/store/apps)에서 사용할 앱을 검색합니다.<br /><br /> 앱 페이지를 열고 클립보드에 URL을 복사합니다. 이제 규격 또는 비규격 앱 목록의 URL로 사용할 수 있습니다.<br /><br /> **예:** Google Play에서 검색 **Microsoft Office Mobile**합니다. 사용할 URL은 **<https://play.google.com/store/apps/details?id=com.microsoft.office.officehub>** 입니다. |
+|          **추가**           | 앱을 선택한 목록에 추가합니다. 원하는 이름, 앱 게시자(선택 사항) 및 앱 스토어의 앱 URL을 지정합니다.<br /><br /> URL을 지정하려면 [Google Play의 앱 섹션](https://play.google.com/store/apps)에서 사용할 앱을 검색합니다.<br /><br /> 앱 페이지를 열고 클립보드에 URL을 복사합니다. 이제 규격 또는 비규격 앱 목록의 URL로 사용할 수 있습니다.<br /><br /> **예제:** Google Play에서 검색 **Microsoft Office Mobile**합니다. 사용할 URL은 **<https://play.google.com/store/apps/details?id=com.microsoft.office.officehub>** 입니다. |
 |          **편집**          |                                                                                                                                                                                                                                                                                          선택한 앱의 이름, 게시자 및 URL을 편집할 수 있습니다.                                                                                                                                                                                                                                                                                          |
 |         **제거**         |                                                                                                                                                                                                                                                                                                      목록에서 선택한 앱을 삭제합니다.                                                                                                                                                                                                                                                                                                      |
 |         **가져오기**         |                                                                                                                                                                                                                                                 지정한 앱 목록을 쉼표로 구분된 값 파일로 가져옵니다. 파일의 형식, 애플리케이션 이름, 게시자, 앱 URL을 사용합니다.                                                                                                                                                                                                                                                 |
