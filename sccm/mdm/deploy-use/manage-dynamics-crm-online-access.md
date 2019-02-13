@@ -10,16 +10,17 @@ ms.assetid: 2bfc4c51-b25c-4c70-b81e-8a3b6ddf02c8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5e2c8ab4f8dc0b544a79b2113c278f97444357bf
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2bf6073a15518e971d4880a7adbb0853d6387f0d
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53420960"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56122851"
 ---
 # <a name="manage-dynamics-crm-online-access-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Dynamics CRM Online 액세스 관리
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 Microsoft Intune 조건부 액세스가 설정된 iOS 및 Android 디바이스에서 Microsoft Dynamics CRM Online에 대한 액세스를 제어할 수 있습니다.  Intune 조건부 액세스는 다음 두 가지 구성 요소로 이루어져 있습니다.
 * 디바이스를 준수로 간주하기 위해 디바이스가 준수해야 하는 [디바이스 규정 준수 정책](../../protect/deploy-use/device-compliance-policies.md)
@@ -44,7 +45,7 @@ Dynamics CRM Online에 액세스해야 하는 디바이스는 다음과 같아�
 * 디바이스가 규정을 준수하지 않으면 사용자가 문제에 관한 정보를 찾을 수 있는 Microsoft Intune 웹 포털 또는 회사 포털 앱과 문제의 해결 방법을 알려 주는 메시지가 표시됩니다.
 
 ## <a name="configure-conditional-access-for-dynamics-crm-online"></a>Dynamics CRM Online에 대한 조건부 액세스 구성  
-### <a name="step-1-configure-active-directory-security-groups"></a>1 단계: Active Directory 보안 그룹 구성
+### <a name="step-1-configure-active-directory-security-groups"></a>1단계: Active Directory 보안 그룹 구성
 
 시작하기 전에 조건부 액세스 정책에 대한 Azure Active Directory 보안 그룹을 구성합니다. **Office 365 관리 센터**에서 이러한 그룹을 구성할 수 있습니다. 이 그룹은 정책에서 사용자를 대상으로 지정하거나 제외하는 데 사용됩니다. 사용자가 정책의 대상인 경우 해당 사용자가 사용하는 각 디바이스가 규정을 준수해야 리소스에 액세스할 수 있습니다.
 
@@ -54,7 +55,7 @@ Dynamics CRM 정책에 사용할 두 가지 그룹 유형을 지정할 수 있�
 
 사용자가 두 그룹에 모두 속한 경우에는 정책에서 제외됩니다.
 
-### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>2 단계: 준수 정책 구성 및 배포
+### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>2단계: 준수 정책 구성 및 배포
 정책의 영향을 받는 모든 디바이스에 준수 정책을 [만들어 배포](../../protect/deploy-use/device-compliance-policies.md)합니다. 대상 그룹에서 사용자가 사용하는 모든 디바이스가 됩니다.
 
 > [!NOTE]
@@ -64,7 +65,7 @@ Dynamics CRM 정책에 사용할 두 가지 그룹 유형을 지정할 수 있�
 > 규정 준수 정책을 배포하지 않은 경우 디바이스는 준수하는 것으로 간주됩니다.
 
 준비가 되었으면 3단계를 계속합니다.
-### <a name="step-3-configure-the-dynamics-crm-policy"></a>3 단계: Dynamics CRM 정책 구성
+### <a name="step-3-configure-the-dynamics-crm-policy"></a>3단계: Dynamics CRM 정책 구성
 다음으로 관리되고 규정을 준수하는 디바이스만 Dynamics CRM에 액세스할 수 있도록 요구하는 정책을 구성합니다. 이 정책은 Azure Active Directory에 저장됩니다.
 
 1. Microsoft Intune 관리 콘솔에서 **정책 > 조건부 액세스 > Dynamics CRM Online 정책**을 선택합니다.

@@ -10,12 +10,13 @@ ms.assetid: 34024741-edfa-4088-8599-d6bafc331e62
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 8bd926535f56e32430ae41c883623b80d142aebc
-ms.sourcegitcommit: 33e066aceaf321add1031df00e552e942c8351a7
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b45e9f586616a1f620864a6e6dc8d0777a118251
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55764432"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56122290"
 ---
 # <a name="manage-access-to-o365-services-for-pcs-managed-by-system-center-configuration-manager"></a>System Center Configuration Manager에서 관리되는 PC용 O365 서비스에 대한 액세스 관리
 
@@ -86,7 +87,7 @@ Microsoft Intune에서 등록하고 관리한 디바이스에 대한 조건부 �
 
 -   **마감일이 특정 기간(일)보다 오래된 필수 업데이트가 모두 설치됨:** 사용자의 장치에 필수 업데이트에 대 한 배포 최종 기한에서 유예 기간에 대 한 값을 지정 합니다. 이 규칙을 추가하면 보류 중인 필수 업데이트도 자동으로 설치됩니다. **필수 자동 업데이트** 규칙에서 필수 업데이트를 지정합니다.   
 
--   **BitLocker 드라이브 암호화 필요:** 이 규칙을 검사 하는 경우 기본 드라이브 (예: c:\\) 장치에서 BitLocker 암호화 됩니다. 기본 디바이스에서 Bitlocker 암호화가 사용되도록 설정되지 않으면 메일 및 SharePoint 서비스에 대한 액세스가 차단됩니다.  
+-   **BitLocker 드라이브 암호화 필요:** 이 규칙을 검사 하는 경우 기본 드라이브 (예: c:\\) 장치에서 BitLocker 암호화 됩니다. BitLocker 암호화 기본 장치에서 메일 및 SharePoint 서비스에 대 한 액세스 사용 안 함 차단 됩니다.  
 
 -   **맬웨어 방지 프로그램 필요:** 이 규칙은 System Center Endpoint Protection 또는 Windows Defender가 활성화 되어 실행 하는 경우 확인 합니다. 사용되도록 설정되지 않았으면 메일 및 SharePoint 서비스에 대한 액세스가 차단됩니다.  
 

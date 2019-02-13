@@ -10,12 +10,13 @@ ms.assetid: d240a836-c49b-49ab-a920-784c062d6748
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a186e0b2c4b355cabcaaeb3b3124b65d3588fbc8
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6bbe52a282db016077cb96144938a0d443955f6c
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32350965"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56127442"
 ---
 # <a name="how-to-create-pfx-certificate-profiles-using-a-certificate-authority"></a>인증 기관을 사용하여 PFX 인증서 프로필을 만드는 방법
 
@@ -41,7 +42,7 @@ System Center Configuration Manager에서 인증 기관에서 발급한 자격 �
 
 4.  **인증서 프로필 만들기** 마법사의 **일반** 페이지에서 다음 정보를 지정합니다.  
 
-    -   **이름**: 인증서 프로필의 고유한 이름을 입력합니다. 최대 256자까지 사용할 수 있습니다.  
+    -   **이름**: 인증서 프로필에 대 한 고유한 이름을 입력 합니다. 최대 256자까지 사용할 수 있습니다.  
 
     -   **설명**: 인증서 프로필에 대한 개략적인 정보를 제공하는 설명과 System Center Configuration Manager 콘솔에서 해당 프로필을 식별하는 데 도움이 되는 기타 관련 정보를 입력합니다. 최대 256자까지 사용할 수 있습니다.  
 
@@ -117,7 +118,7 @@ Microsoft를 CA로 사용하는 경우 인증서 설정을 구성하려면
         - **있는 경우 TPM(신뢰할 수 있는 플랫폼 모듈)에 설치**  
         - **TPM(신뢰할 수 있는 플랫폼 모듈)에 설치, 그렇지 않으면 실패** 
         - **비즈니스용 Windows Hello에 설치, 그러지 않으면 실패** 
-        - **소프트웨어 키 저장소 공급자에 설치** 
+        - **소프트웨어 키 스토리지 공급자에 설치** 
 
 1.  완료되면 **다음** 또는 **요약**을 선택합니다.
 
@@ -153,7 +154,7 @@ Entrust를 CA로 사용하는 경우 인증서 설정을 구성하려면
         - **있는 경우 TPM(신뢰할 수 있는 플랫폼 모듈)에 설치**  
         - **TPM(신뢰할 수 있는 플랫폼 모듈)에 설치, 그렇지 않으면 실패** 
         - **비즈니스용 Windows Hello에 설치, 그러지 않으면 실패** 
-        - **소프트웨어 키 저장소 공급자에 설치** 
+        - **소프트웨어 키 스토리지 공급자에 설치** 
 
 1.  완료되면 **다음** 또는 **요약**을 선택합니다.
 

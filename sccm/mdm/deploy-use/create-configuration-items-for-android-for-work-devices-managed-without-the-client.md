@@ -8,12 +8,13 @@ ms.topic: conceptual
 ms.assetid: ab6784fd-8c57-4be9-858f-50fe39f2ff5f
 author: aczechowski
 ms.author: aaroncz
-ms.openlocfilehash: 0b2104b72a155f269beefc6f64c2615b62266b66
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 15e0c2ad91e512551e55d507d6a84bde3e46396f
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53415469"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56127408"
 ---
 # <a name="how-to-create-configuration-items-for-android-for-work-devices-managed-with-intune"></a>Intune으로 관리되는 Android for Work 디바이스에 대한 구성 항목을 만드는 방법
 
@@ -92,7 +93,7 @@ ms.locfileid: "53415469"
 **회사 프로필과 개인 프로필 간의 데이터 공유 허용** 옵션으로는 복사하여 붙여넣기 동작을 금지할 수 없습니다. 복사하여 붙여넣기를 방지하도록 구성할 수 있는 사용자 지정 설정을 사용합니다. 이 설정은 사용자 지정 URI를 통해 지정할 수 있습니다.
 
 - OMA-URI: ./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste
-- 값 종류: 부울
+- 값 형식: 부울
 
 DisallowCrossProfileCopyPaste을 true로 설정하면 Android for Work 개인 및 회사 프로필 간에 복사-붙여넣기 동작이 방지됩니다.
 

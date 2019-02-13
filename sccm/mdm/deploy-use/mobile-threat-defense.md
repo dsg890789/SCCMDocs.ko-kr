@@ -1,7 +1,7 @@
 ---
 title: 위험에 따라 액세스 제한
 titleSuffix: Configuration Manager
-description: 디바이스, 네트워크 및 응용 프로그램 위험에 따라 회사 리소스에 대한 액세스를 제한합니다.
+description: 장치, 네트워크 및 애플리케이션 위험에 따라 회사 리소스에 대한 액세스를 제한합니다.
 ms.date: 08/14/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -10,14 +10,15 @@ ms.assetid: 9083c571-f4fc-4a78-adc5-8aec84dabcbd
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a00a4e8140548c4f503e3467626b8d6cbab69ee3
-ms.sourcegitcommit: 98c3f7848dc9014de05541aefa09f36d49174784
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 90098dc0243e8513fe78692fe91a8390f7936eba
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42584625"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56119652"
 ---
-# <a name="manage-access-to-company-resource-based-on-device-network-and-application-risk"></a>디바이스, 네트워크 및 응용 프로그램 위험에 따라 회사 리소스에 대한 액세스 관리
+# <a name="manage-access-to-company-resource-based-on-device-network-and-application-risk"></a>장치, 네트워크 및 애플리케이션 위험에 따라 회사 리소스에 대한 액세스 관리
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -38,7 +39,7 @@ Mobile Threat Defense 커넥터를 사용하면 선택한 모바일 위협 방�
 
 ## <a name="how-the-intune-mobile-threat-defense-connectors-work"></a>Intune Mobile Threat Defense 커넥터의 작동 방식
 
-커넥터는 Intune과 선택한 모바일 위협 방어 공급업체 간에 통신 채널을 만들어 조직 리소스를 보호합니다. Intune Mobile Threat Defense 파트너는 직관적이고 배포하기 쉬운 모바일 디바이스용 응용 프로그램을 제공합니다. 이 응용 프로그램은 Intune과 공유할 위협 정보를 적극적으로 검색하고 분석합니다. 보고 또는 적용하려면 이 정보를 사용하세요. 
+커넥터는 Intune과 선택한 모바일 위협 방어 공급업체 간에 통신 채널을 만들어 조직 리소스를 보호합니다. Intune Mobile Threat Defense 파트너는 직관적이고 배포하기 쉬운 모바일 장치용 애플리케이션을 제공합니다. 이 애플리케이션은 Intune과 공유할 위협 정보를 적극적으로 검색하고 분석합니다. 보고 또는 적용하려면 이 정보를 사용하세요. 
 
 예를 들어 연결된 Mobile Threat Defense 앱이 Mobile Threat Defense 공급업체에 디바이스가 메시지 가로채기(man-in-the-middle) 공격에 취약한 네트워크에 현재 연결되어 있다고 보고하는 경우 이 정보는 공유되며 적절한 위험 수준(낮음/중간/높음)으로 분류됩니다. 이 위험을 Intune에서 구성된 허용 위험 수준과 비교하여 디바이스가 손상되어 있는 동안 선택한 특정 리소스에 대한 액세스를 철회할지 여부를 결정하세요.
 
@@ -58,6 +59,6 @@ Mobile Threat Defense 커넥터를 사용하면 선택한 모바일 위협 방�
 
 ## <a name="next-steps"></a>다음 단계
 
-다음을 사용하여 디바이스, 네트워크 및 응용 프로그램 위험에 따라 회사 리소스에 대한 액세스를 보호하는 방법을 알아봅니다.
+다음을 사용하여 장치, 네트워크 및 애플리케이션 위험에 따라 회사 리소스에 대한 액세스를 보호하는 방법을 알아봅니다.
 
 - [Lookout](https://docs.microsoft.com/intune/deploy-use/lookout-mobile-threat-defense-connector)

@@ -10,12 +10,13 @@ ms.assetid: 408190da-bea6-4122-9dd6-f90155040e88
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 24a066b30d6c220ecb5be8455a3150bd27936da7
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cc5b38894155df35812d14397fb0d3aaea79c585
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32347538"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56122494"
 ---
 # <a name="monitor-mobile-threat-defense-compliance"></a>**Mobile Threat Defense 준수 모니터링**
 
@@ -42,10 +43,10 @@ Mobile Threat Defense 상태를 모니터링하려면:
 
 1.  Configuration Manager 콘솔에서 **자산 및 준수** 작업 영역을 클릭합니다.
 
-2.  **장치**를 클릭합니다.
+2.  **디바이스**를 클릭합니다.
 
 > [!TIP] 
-> **장치 위협 준수** 및 **장치 위협 수준** 열을 추가하면 상태를 확인할 수 있습니다. 이러한 열은 기본적으로 표시되지 않습니다.
+> **디바이스 위협 준수** 및 **디바이스 위협 수준** 열을 추가하면 상태를 확인할 수 있습니다. 이러한 열은 기본적으로 표시되지 않습니다.
 
 ## <a name="device-threat-protection-tab"></a>디바이스 위협 방지 탭
 
@@ -54,16 +55,16 @@ Mobile Threat Defense 상태를 모니터링하려면:
 > [!IMPORTANT] 
 > [디바이스 위협 방지] 탭은 선택한 디바이스가 모바일 디바이스인 경우에만 표시됩니다.
 
-|열 이름|기본적으로 표시|설명| 
+|열 이름|기본적으로 표시|Description| 
 |-|-|-|
 |**설명**| 예 | Mobile Threat Defense 파트너가 제공하는 위협에 대한 세부 정보입니다. |
 |**마지막 업데이트 시간**| 예 | Threat Defense 파트너가 위협에 대한 업데이트된 세부 정보를 Intune에 보낸 마지막 시간입니다. |
-|**위협 심각도**| 예 | 위협 심각도는 Mobile Threat Defense 파트너 콘솔의 관리 구성에 따른 개별 위협에 대한 정의입니다. 세 가지 값 **낮음**, **보통** 또는 **높음** 중 하나를 사용합니다. |
-|**위협 상태**| 예 | 디바이스에 대한 위협의 현재 상태입니다. 가능한 상태: **활성**, **해결됨** 또는 **무시됨:** 사용자가 디바이스에 대한 위협을 무시했지만 위협이 계속 존재함을 나타냅니다. |
-|**위협 유형**| 예 | 위협의 Mobile Threat Defense 파트너 유형입니다. 가능한 값: **앱**, **파일** 또는 **OS** |
+|**위협 심각도**| 예 | 위협 심각도는 Mobile Threat Defense 파트너 콘솔의 관리 구성에 따른 개별 위협에 대한 정의입니다. 세 값 중 하나 있습니다. **낮은**하십시오 **Medium** 또는 **높은** |
+|**위협 상태**| 예 | 디바이스에 대한 위협의 현재 상태입니다. 가능한 상태: **Active**하십시오 **확인할** 또는 **무시:** 사용자가 장치에 대 한 위협을 무시 했지만 위협이 남아 있는지를 나타냅니다. |
+|**위협 유형**| 예 | 위협의 Mobile Threat Defense 파트너 유형입니다. 가능한 값: **앱**하십시오 **파일** 또는 **OS** |
 |**AAD 계정 ID**| 아니요 | Azure Active Directory 고유 식별자입니다. |
-|**분류**| 예 | Mobile Threat Defense 파트너가 제공한 위협 분류입니다. 가능한 값: **루트 인에이블러, 리스크웨어, 애드웨어, 체인지웨어, 데이터 누수, 트로이 목마, 웜, 바이러스, 익스플로잇, 백도어, 봇, 앱 드로퍼, 클릭 사기, 스팸, 스파이웨어, 감시 웨어, 취약성, 알 수 없음, 루트 탈옥, 연결성, 전화 사기, 사이드로드된 앱** |
-|**장치 ID**| 아니요 | 위협 정보가 포함된 Workplace 조인 디바이스를 나타내는 Azure Active Directory 개체 ID입니다. |
+|**분류**| 예 | Mobile Threat Defense 파트너가 제공한 위협 분류입니다. 가능한 값: **루트 인에 블러, 리스크 웨어, 애드웨어, 체인 지 웨어, 데이터 누수, 트로이 목마, 웜, 바이러스, 악용, 백도어, 봇, 앱 드로 퍼, 클릭 사기, 스팸, 스파이웨어, 감시 웨어, 취약성, 알 수 없음, 루트 탈 옥, 연결성, 사기, 전화** |
+|**디바이스 ID**| 아니요 | 위협 정보가 포함된 Workplace 조인 디바이스를 나타내는 Azure Active Directory 개체 ID입니다. |
 |**위협 ID**| 아니요 | 위협에 대한 Mobile Threat Defense 파트너에서 생성된 고유 식별자입니다. 위협 ID는 해결 방법 추적에 사용됩니다. |
 |**위협 URL**| 아니요 | 제공될 경우 위협 URL은 다시 이 특정 위협에 대한 Mobile Threat Defense 파트너의 관리 콘솔 보기로 연결됩니다. |
 

@@ -10,16 +10,17 @@ ms.assetid: c517fe34-0130-465b-a020-bdb555878778
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: fb488ccfc186fcc56ea91c30b6c0319aead5208e
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 00907d200bf54a4a1eb13863cf5bb529aa2f9656
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53416982"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56127510"
 ---
 # <a name="set-up-android-hybrid-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>Set up Android hybrid device management with System Center Configuration Manager and Microsoft Intune
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 이 문서에서는 Android 및 Android for Work 디바이스의 하이브리드 등록을 사용하도록 설정할 수 있습니다. 그런 다음, Configuration Manger를 사용하여 구성된 Microsoft Intune 구독을 통해 디바이스를 관리할 수 있습니다. Google Play에서 사용자는 Android(Samsung KNOX Standard 포함) 및 Android for Work 디바이스를 등록할 수 있는 Android 회사 포털 앱을 다운로드할 수 있습니다.
 

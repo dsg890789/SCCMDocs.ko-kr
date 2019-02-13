@@ -10,16 +10,17 @@ ms.assetid: 61a19d95-83ff-4ad8-9a67-f304d2ba54f2
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: de83706e92150a654967ec5cf38c5b18508d4e2b
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 04b67b324927f4918ff5c0835896cb0d63a9e48c
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53416914"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56126660"
 ---
 # <a name="ios-hybrid-enrollment-using-apple-configurator-with-configuration-manager"></a>Configuration Manager에서 Apple Configurator를 사용한 iOS 하이브리드 등록
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 직원이 사용할 iOS 디바이스를 구입한 회사는 Microsoft Intune을 사용하여 디바이스를 관리할 수 있습니다. 등록을 위해 회사 소유의 iOS 디바이스를 준비하려면 Configuration Manager 콘솔에서 등록 프로필을 구성한 다음 Apple Configurator에서 사용할 프로필 URL을 내보냅니다. USB 케이블로 Mac 컴퓨터에 연결하고 Apple Configurator를 통해 설정하여 등록할 iOS 디바이스를 준비합니다. Apple Configurator는 디바이스를 초기화하고, 사용자가 처음 전원을 켜고 설정 도우미 프로세스를 수행할 때 디바이스를 등록할 수 있도록 등록 프로필을 추가합니다.
 

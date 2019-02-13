@@ -10,12 +10,13 @@ ms.assetid: b81d06dc-3844-4117-9937-16732a227994
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 89501e22c855f31264fbf94fe093d8ebde08708f
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: be1221b3448c8a2818f7fd02b5ff2d14218bbeed
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32349316"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56134030"
 ---
 # <a name="overview-of-device-enrollment-methods"></a>디바이스 등록 방법 개요
 
@@ -24,15 +25,15 @@ ms.locfileid: "32349316"
 Intune으로 Configuration Manager를 확장하면 관리자가 회사 소유 디바이스를 등록 및 관리하거나 사용자에게 개인 디바이스를 등록할 수 있는 권한을 부여할 수 있습니다. Intune에서 Configuration Manager를 사용하여 회사 소유 디바이스를 관리할 수도 있습니다.
 
 다음 표에서는 등록 방법 및 지원되는 기능을 보여 줍니다. 해당 기능은 다음과 같습니다.
-- **초기화** - 장치를 초기화하고 모든 데이터를 제거합니다. [장치 사용 중지](../deploy-use/wipe-lock-reset-devices.md)
-- **선호도** - 장치를 사용자에 연결합니다. MAM(모바일 애플리케이션 관리) 및 회사 데이터에 대한 조건부 액세스에 필요합니다. [사용자 선호도](../deploy-use/user-affinity-for-hybrid-managed-devices.md)
-- **잠금** 사용자가 관리에서 장치를 제거할 수 없도록 차단합니다. iOS 디바이스를 잠그려면 감독 모드로 설정해야 합니다. [원격 잠금](../deploy-use/wipe-lock-reset-devices.md#remote-lock)
+- **초기화** - 디바이스를 공장 재설정하는 것으로 모든 데이터를 제거합니다. [디바이스 사용 중지](../deploy-use/wipe-lock-reset-devices.md)
+- **선호도** - 디바이스를 사용자에 연결합니다. MAM(모바일 애플리케이션 관리) 및 회사 데이터에 대한 조건부 액세스에 필요합니다. [사용자 선호도](../deploy-use/user-affinity-for-hybrid-managed-devices.md)
+- **잠금** 사용자가 관리에서 디바이스를 제거하지 못하도록 합니다. iOS 디바이스를 잠그려면 감독 모드로 설정해야 합니다. [원격 잠금](../deploy-use/wipe-lock-reset-devices.md#remote-lock)
 
 **iOS 등록 방법**
 
 | **방법** |  **초기화** |  **선호도**    |   **잠금** | **세부 정보** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 아니요|    예 |   아니요 | [자세히](../deploy-use/enable-platform-enrollment.md)|
+|**[BYOD](#byod)** | 아니요|    사용자 계정 컨트롤 |   아니요 | [자세히](../deploy-use/enable-platform-enrollment.md)|
 |**[DEM](#dem)**|   아니요 |아니요 |아니요  | [자세히](../deploy-use/enroll-devices-with-device-enrollment-manager.md)|
 |**[DEP](#dep)**|   예 |   선택 사항 |  선택 사항|[자세히](../deploy-use/ios-device-enrollment-program-for-hybrid.md)|
 |**[USB-SA](#usb-sa)**| 예 |   선택 사항 |  아니요| [자세히](../deploy-use/ios-hybrid-enrollment-using-apple-configurator.md)|
@@ -41,7 +42,7 @@ Intune으로 Configuration Manager를 확장하면 관리자가 회사 소유 �
 
 | **방법** |  **초기화** |  **선호도**    |   **잠금** | **세부 정보**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 아니요|    예 |   아니요 | [자세히](../deploy-use/enroll-hybrid-windows.md)|
+|**[BYOD](#byod)** | 아니요|    사용자 계정 컨트롤 |   아니요 | [자세히](../deploy-use/enroll-hybrid-windows.md)|
 |**[DEM](#dem)**|   아니요 |아니요 |아니요  |[자세히](../deploy-use/enroll-devices-with-device-enrollment-manager.md)|
 
 올바른 방법을 찾는 데 도움이 되는 질문은 [Choose how to enroll devices](/intune/get-started/choose-how-to-enroll-devices1)(디바이스 등록 방법 선택)를 참조하세요.
@@ -52,7 +53,7 @@ Intune으로 Configuration Manager를 확장하면 관리자가 회사 소유 �
 ## <a name="corporate-owned-devices"></a>회사 소유 디바이스
 Configuration Manager 콘솔을 사용하여 COD(회사 소유 디바이스)를 관리할 수 있습니다. Apple에서 제공한 도구를 통해 iOS 디바이스를 등록할 수 있습니다. 관리자 또는 관리자 디바이스 등록 관리자를 사용하여 모든 디바이스 유형을 등록할 수 있습니다. COD 시나리오를 사용할 수 있도록 IMEI 번호가 있는 디바이스도 식별하고 회사 소유로 태그를 지정할 수 있습니다.
 
-[회사 소유 장치 등록](../deploy-use/enroll-company-owned-devices.md)
+[회사 소유 디바이스 등록](../deploy-use/enroll-company-owned-devices.md)
 
 ### <a name="dem"></a>DEM
 디바이스 등록 관리자는 여러 회사 소유 디바이스를 등록 및 관리하는 데 사용되는 특수 사용자 계정입니다. 관리자는 회사 포털을 설치하고 사용자 정보가 없는 디바이스를 여러 대 등록할 수 있습니다. [DEM](../deploy-use/enroll-devices-with-device-enrollment-manager.md)에 대해 자세히 알아보세요. ([표로 돌아가기](#overview-of-device-enrollment-methods))
@@ -77,4 +78,4 @@ USB로 연결된 설정 도우미 등록입니다. 관리자가 정책을 만들
 ## <a name="mobile-device-management-with-exchange-activesync-and-configuration-manager"></a>Exchange ActiveSync 및 Configuration Manager를 사용한 모바일 디바이스 관리
 EAS MDM 정책을 사용하여 등록되지는 않았지만 EAS(Exchange ActiveSync)에 연결된 모바일 디바이스를 Intune에서 관리할 수 있습니다. Intune은 Exchange 커넥터를 사용하여 온-프레미스 및 클라우드에 호스트된 EAS와 통신합니다.
 
-[Exchange ActiveSync와 Intune을 사용한 모바일 장치 관리](../deploy-use/manage-mobile-devices-with-exchange-activesync.md)
+[Exchange ActiveSync와 Intune을 사용한 모바일 디바이스 관리](../deploy-use/manage-mobile-devices-with-exchange-activesync.md)

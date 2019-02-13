@@ -10,16 +10,17 @@ ms.assetid: 1e42b1c1-3d58-481f-8647-5c7ae640c5f5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 64acd3dbdafaec3dbf49e7939718100897c0976b
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 21ff4920ae8829c41dace778ac74824519c5a628
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53422626"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56136010"
 ---
 # <a name="set-up-a-microsoft-intune-subscription-for-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>System Center Configuration Manager의 온-프레미스 모바일 디바이스 관리를 위해 Microsoft Intune 구독 설정
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 System Center Configuration Manager 온\-프레미스 모바일 디바이스 관리를 사용하려면 Microsoft Intune 구독을 통해 라이선스를 추적해야 합니다. Intune 서비스는 디바이스를 관리하거나 관리 정보를 저장하는 데 사용되지 않습니다. 온\-프레미스 모바일 디바이스 관리의 경우 모든 디바이스 관리가 Configuration Manager 인프라에서 처리됩니다.  
 

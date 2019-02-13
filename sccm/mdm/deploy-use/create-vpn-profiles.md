@@ -10,16 +10,17 @@ ms.assetid: 45388103-2410-4c7e-b4cf-73a1bda485fc
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 1c90525b20107cbc926e3775f10d75b7c7083cac
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d7accfe4c329b61c7791bc4b82028d48fdc81931
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53424564"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56122625"
 ---
 # <a name="vpn-profiles-on-mobile-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager의 모바일 디바이스에 대한 VPN 프로필
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 Configuration Manager의 VPN 프로필을 사용하여 조직의 모바일 디바이스 사용자에게 VPN 설정을 배포할 수 있습니다. 이러한 설정을 배포할 때 최종 사용자가 회사 네트워크에 있는 리소스에 연결하는 데 필요한 노력을 최소화할 수 있습니다.  
 
@@ -122,7 +123,7 @@ iOS, Android, Windows Phone 및 Windows 8.1 디바이스에 프로필을 배포�
 
      - **로그온 할 때마다 사용자 자격 증명 기억**: 사용자 연결할 때마다 입력 하지 않아도 되도록 사용자 자격 증명 기억 되지 않습니다.  
 
-     - **클라이언트 인증용 클라이언트 인증서 선택**: 이전에 만든 클라이언트 [SCEP 인증서](create-pfx-certificate-profiles.md) VPN 연결을 인증 하는 데 사용 되는 합니다.   
+     - **클라이언트 인증을 위해 클라이언트 인증서 선택**: 이전에 만든 클라이언트 [SCEP 인증서](create-pfx-certificate-profiles.md) VPN 연결을 인증 하는 데 사용 되는 합니다.   
 
        > [!NOTE]  
        >  iOS 디바이스의 경우 선택하는 SCEP 프로필이 VPN 프로필에 포함됩니다. 다른 플랫폼의 경우 인증서가 없거나 호환되지 않으면 VPN 프로필이 설치되지 않도록 적용 가능성 규칙이 추가됩니다.  

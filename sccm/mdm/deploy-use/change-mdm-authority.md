@@ -10,12 +10,13 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: cc397ab5-125f-4f17-905b-fab980194f49
-ms.openlocfilehash: 692ffb04546da4f65b2198e582999582c996fdb2
-ms.sourcegitcommit: 98c3f7848dc9014de05541aefa09f36d49174784
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c0420113feaaf9c9485b8d1e3d488b07878c61b5
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42584598"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56131968"
 ---
 # <a name="change-your-mdm-authority"></a>MDM 기관 변경
 
@@ -119,7 +120,7 @@ MDM 기관 변경이 완료되면 다음 단계를 검토합니다.
 
     - 새로 등록된 디바이스가 [Azure Portal](https://portal.azure.com)에 표시되는지 확인합니다.  
 
-    - [Azure Portal](https://portal.azure.com)에서 [원격 잠금]과 같은 작업을 장치로 수행합니다. 성공한 경우 디바이스가 새 MDM 기관에서 관리되는 것입니다.  
+    - [Azure Portal](https://portal.azure.com)에서 [원격 잠금]과 같은 작업을 디바이스로 수행합니다. 성공한 경우 디바이스가 새 MDM 기관에서 관리되는 것입니다.  
     
 - 특정 디바이스에 문제가 있는 경우 등록을 취소하고 디바이스를 다시 등록합니다. 이 작업은 가능한 한 빨리 새 기관에 연결하여 관리를 받도록 합니다.  
 

@@ -10,12 +10,13 @@ ms.assetid: 59004b34-b64f-4d77-898c-07bf3dc75430
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 15774704665b2b52daf1061db221ab0eb158eceb
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: dcf12937009a91bb8cc5a8c1c191861fec06ac13
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32347521"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56137561"
 ---
 # <a name="how-users-enroll-devices-with-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>System Center Configuration Manager의 온-프레미스 모바일 디바이스 관리를 사용하여 디바이스를 등록하는 방법
 
@@ -37,9 +38,9 @@ System Center Configuration Manager 온-프레미스 모바일 디바이스 관�
 
 -   [Windows 10 컴퓨터 등록](#bkmk_enrollDesk)  
 
--   [Windows 10 모바일 장치 등록](#bkmk_enrollMob)  
+-   [Windows 10 모바일 디바이스 등록](#bkmk_enrollMob)  
 
--   [장치 등록 확인](#bkmk_verify)  
+-   [디바이스 등록 확인](#bkmk_verify)  
 
 ##  <a name="bkmk_enrollDesk"></a> Windows 10 컴퓨터 등록  
 
@@ -55,7 +56,7 @@ System Center Configuration Manager 온-프레미스 모바일 디바이스 관�
 
 6.  로그인 정보를 기억하기 위해 **건너뛰기** 를 클릭하면 잠시 후에 디바이스가 연결됩니다.  
 
-##  <a name="bkmk_enrollMob"></a> Windows 10 모바일 장치 등록  
+##  <a name="bkmk_enrollMob"></a> Windows 10 모바일 디바이스 등록  
 
 1.  Windows 10 모바일 디바이스에서 **설정**으로 이동합니다.  
 
@@ -67,7 +68,7 @@ System Center Configuration Manager 온-프레미스 모바일 디바이스 관�
 
 5.  다음 화면에서 업무용 메일 주소 및 암호를 입력한 다음 **로그인**을 클릭합니다. 잠시 후 디바이스가 등록됩니다. **완료**를 클릭합니다.  
 
-##  <a name="bkmk_verify"></a> 장치 등록 확인  
+##  <a name="bkmk_verify"></a> 디바이스 등록 확인  
  Configuration Manager 콘솔에서 디바이스가 성공적으로 등록되었는지 확인할 수 있습니다.  
 
 1.  Configuration Manager 콘솔을 시작합니다.  

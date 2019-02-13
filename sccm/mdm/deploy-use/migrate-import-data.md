@@ -10,16 +10,17 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: b552391d-abc0-48a2-a429-93605a13a66a
-ms.openlocfilehash: 26d6f9b928a7acdfbeb6baac3c3ce1c29cc127d9
-ms.sourcegitcommit: d021f82e4bc35a8e9b5d291bf779ce52b4f47eb8
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 46b5034cb95193a07421fe79a445dac0f5b28503
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53656461"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56124264"
 ---
 # <a name="import-configuration-manager-data-to-microsoft-intune"></a>Microsoft Intune으로 Configuration Manager 데이터 가져오기 
 
-*적용 대상: System Center Configuration Manager (현재 분기)*    
+*적용 대상: System Center Configuration Manager(현재 분기)*    
 
 클라우드 전용 구성에서 [하이브리드 MDM 사용자 및 디바이스를 Intune 독립 실행형으로 마이그레이션](migrate-hybridmdm-to-intunesa.md)하는 프로세스에서 권장되는 첫 번째 단계는 Intune 데이터 가져오기 도구를 사용하는 것입니다. 원하는 경우 이 단계를 건너뛰고 [사용자 마이그레이션을 위한 Intune 준비](migrate-prepare-intune.md) 단계로 이동할 수 있습니다. 그러나 이 도구는 다음 단계에서 많은 시간을 절약할 수 있는 다음 기능을 수행합니다.  
 
@@ -196,7 +197,7 @@ There are some Configuration Manager objects that the importer tool cannot impor
     - 수집 프로세스 중에 취소 된 또는 다시 수집 되지 않은 개체에 대 한 도구를 실행할 수 있습니다.  
 
 
-### <a name="phase-2-resolve-issues-and-select-the-objects-to-import"></a>2 단계: 문제 해결 및 가져올 개체를 선택 합니다.  
+### <a name="phase-2-resolve-issues-and-select-the-objects-to-import"></a>2단계: 문제 해결 및 가져올 개체를 선택 합니다.  
 
 2단계에서는 도구에서 찾은 개체를 검토하고, 개체가 Intune으로 가져오지 못하게 하는 문제를 해결하고, 가져올 개체를 선택합니다. 문제를 해결 하는 경우를 반환 합니다 **검색 환경** 개체를 다시 검색 마법사의 페이지입니다. 
 
@@ -235,7 +236,7 @@ There are some Configuration Manager objects that the importer tool cannot impor
     - **오류 데이터 내보내기**: 수 convert 또는 가져오기 도구 아닙니다는 데이터에 대 한 정보를 포함 하는 압축 된 파일을 내보냅니다.  
 
 
-### <a name="phase-3-import-selected-objects-to-intune"></a>3 단계: Intune로 선택한 개체 가져오기
+### <a name="phase-3-import-selected-objects-to-intune"></a>3단계: Intune로 선택한 개체 가져오기
 
 3 단계에서 Intune에 로그인 하 고 선택한 개체를 가져옵니다. 
 

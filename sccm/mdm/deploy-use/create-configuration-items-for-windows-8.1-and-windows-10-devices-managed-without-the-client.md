@@ -10,12 +10,13 @@ ms.assetid: 23e1e4dc-623a-4521-ad04-ae9482927097
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6a637b7379e4ffa507beece9d9384cb8847402f9
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a696059076c64d8341f5fbfa3dd5ab68fd2b34ff
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53420774"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56129530"
 ---
 # <a name="how-to-create-configuration-items-for-windows-81-and-windows-10-devices-managed-without-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 디바이스에 대한 구성 항목을 만드는 방법
 
@@ -325,7 +326,7 @@ ms.locfileid: "53420774"
 |-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **차단되는 앱 목록** |                                                                                                                                                                                                                                 사용자가 설치할 수 없는 앱 목록을 지정하려면 이 옵션을 선택합니다.                                                                                                                                                                                                                                 |
 | **허용되는 앱 목록** |                                                                                                                                                                                                             사용자가 설치할 수 있는 앱 목록을 지정하려면 이 옵션을 선택합니다. 다른 모든 앱이 설치에서 차단됩니다.                                                                                                                                                                                                             |
-|        **추가**        | 앱을 선택한 목록에 추가합니다. 원하는 이름, 앱 게시자(선택 사항) 및 앱 스토어의 앱 URL을 지정합니다.<br /><br /> URL을 지정하려면 Windows 스토어에서 사용할 앱을 검색합니다.<br /><br /> 앱 페이지를 열고 클립보드에 URL을 복사합니다. 이제 이 URL을 허용되는 앱 또는 차단되는 앱 목록에서 URL로 사용할 수 있습니다.<br /><br /> **예:** 저장소를 검색 합니다 **Skype** 앱. 사용하는 URL은 **<http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51>** 입니다. |
+|        **추가**        | 앱을 선택한 목록에 추가합니다. 원하는 이름, 앱 게시자(선택 사항) 및 앱 스토어의 앱 URL을 지정합니다.<br /><br /> URL을 지정하려면 Windows 스토어에서 사용할 앱을 검색합니다.<br /><br /> 앱 페이지를 열고 클립보드에 URL을 복사합니다. 이제 이 URL을 허용되는 앱 또는 차단되는 앱 목록에서 URL로 사용할 수 있습니다.<br /><br /> **예제:** 저장소를 검색 합니다 **Skype** 앱. 사용하는 URL은 **<http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51>** 입니다. |
 |       **편집**        |                                                                                                                                                                                                                                                 선택한 앱의 이름, 게시자 및 URL을 편집할 수 있습니다.                                                                                                                                                                                                                                                 |
 |      **제거**       |                                                                                                                                                                                                                                                             목록에서 선택한 앱을 삭제합니다.                                                                                                                                                                                                                                                             |
 |      **가져오기**       |                                                                                                                                                                                                          지정한 앱 목록을 쉼표로 구분된 값 파일로 가져옵니다. 파일의 형식, 애플리케이션 이름, 게시자, 앱 URL을 사용합니다.                                                                                                                                                                                                          |

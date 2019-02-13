@@ -10,16 +10,17 @@ ms.assetid: 3f62b763-4347-453d-b0a7-1f4a0d1d4105
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 00fa7e538f6156f0dacee00feeb4b767a3c83a5c
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a4e829d92b099be3fbf77796ea604d9d33db252c
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53417628"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56132955"
 ---
 # <a name="configure-and-deploy-lookout-for-work-apps"></a>Lookout for Work 앱 구성 및 배포
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 이 문서에서는 Android 및 iOS 디바이스에서 Lookout for Work 앱을 구성하고 배포하는 방법을 설명합니다.
 
@@ -31,7 +32,7 @@ ms.locfileid: "53417628"
 2.  소프트웨어 배포 마법사의 **일반** 페이지에서 다음 정보를 지정합니다.  
     - 유형: **Google Play의 Android용 앱 패키지**를 선택합니다.
     - 위치: Google Play 스토어에서 Lookout for Work 앱 링크를 복사하여 여기에 붙여넣습니다.
-    - 게시자: Lookout Mobile Security
+    - Publisher: Lookout Mobile Security
     - 이름: Lookout for Work
     - 설명: Lookout에서는 장치를 안전 하 게 유지 하도록 모바일 위협에 대 한 최상의 보호를 제공 합니다. Lookout 앱이 설치되면 앱이 위협으로부터 디바이스를 보호합니다. 위협이 발견되면 사용자와 IT 관리자에게 경고합니다.
     - 관리 범주: 컴퓨터 관리  
@@ -57,7 +58,7 @@ ms.locfileid: "53417628"
    2.  **Lookout for Work iOS 앱**으로 이름을 지정하고 응용 프로그램 유형으로 **네이티브**를 선택합니다.  
    ![네이티브 클라이언트 앱 옵션을 보여 주는 앱 추가 대화 상자 스크린샷](media/aad-add-app-reg.png)
 
-   3.  이 리디렉션 URI의 경우 다음 형식 `lookoutwork://com.lookout.enterprise.<yourcompanyname>`을 사용하여 `<yourcompanyname>`을 회사 이름으로 대체합니다. 예를 들면 다음과 같습니다. `lookoutwork://com.lookout.enterprise.contoso`
+   3.  이 리디렉션 URI의 경우 다음 형식 `lookoutwork://com.lookout.enterprise.<yourcompanyname>`을 사용하여 `<yourcompanyname>`을 회사 이름으로 대체합니다. `lookoutwork://com.lookout.enterprise.contoso`
    4. **만들기**를 클릭하여 웹을 만듭니다. 
    5.  새 앱을 열고 **설정을** 클릭하고 추가 리디렉션 URI를 추가합니다. `<originalURI>`가 원래 리디렉션 URI의 URL로 인코딩된 버전인 다음 형식 `companyportal://code/<originalURI>`를 사용합니다. 예를 들면 `companyportal://code/lookoutwork%3A%2F%2Fcom.lookout.enterprise.contoso`
    6.  앱 설정에서 **필요한 권한**으로 이동하여 **추가**를 클릭합니다. 다음의 위임된 권한을 선택합니다.  

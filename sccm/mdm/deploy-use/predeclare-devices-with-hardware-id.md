@@ -10,16 +10,17 @@ ms.assetid: ddb4c68e-e7f7-475a-89e2-7379a86e44c4
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 118e9b32d691c228857fc31b2da1e9d9b72b7b58
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 51bdfe22e70be58902dece216305d7a6f6612b06
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53415928"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56121263"
 ---
 # <a name="predeclare-devices-with-imei-or-ios-serial-numbers"></a>IMEI 또는 iOS 일련 번호로 디바이스 미리 선언
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 해당 IMEI(International station Mobile Equipment Identity) 번호 또는 iOS 일련 번호를 가져와서 회사 소유의 디바이스를 식별할 수 있습니다. 디바이스 IMEI 번호를 포함한 쉼표로 구분된 값(.csv) 파일을 업로드하거나 디바이스 정보를 수동으로 입력할 수 있습니다.  가져온 정보에 따라 디바이스 목록에 **회사**로 등록된 디바이스의 **소유권**이 설정됩니다. 서비스에 액세스하는 각 사용자는 Intune 라이선스가 여전히 필요합니다.  
 

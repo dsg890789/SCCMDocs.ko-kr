@@ -10,16 +10,17 @@ ms.assetid: 94ecfada-97d9-4d5f-bb04-63550dda5f47
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2d57965a75d602b81da7b19d6732ac7db6e7abe0
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9107557d21927df1f648c06805f89db449de2e5d
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53420833"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56125394"
 ---
 # <a name="verify-mdm-configuration-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 MDM 구성 확인
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 다음 로그 파일을 확인하여 특정 디바이스 관리 구성 요소를 확인할 수 있습니다.
 

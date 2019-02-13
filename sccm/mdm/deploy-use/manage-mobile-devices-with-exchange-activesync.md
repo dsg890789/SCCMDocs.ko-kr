@@ -10,16 +10,17 @@ ms.assetid: aba688d9-fd5b-4c42-8cb4-f7e1b161ef50
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 98b573dcf72f4bbf3cde73cb9a5cd7905b8a0248
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a157e8696a9b4b24acb722be037185351f94ccdc
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53417322"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56127884"
 ---
 # <a name="manage-mobile-devices-with-system-center-configuration-manager-and-exchange"></a>System Center Configuration Manager와 Exchange를 사용하여 모바일 디바이스 관리
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 Microsoft Exchange ActiveSync 프로토콜을 사용하여 Exchange Server(온-프레미스 또는 온라인)에 연결하는 모바일 디바이스를 관리하려고 하며 Configuration Manager를 사용하여 해당 디바이스를 등록할 수 없는 경우 System Center Configuration Manager에서 Exchange Server 커넥터를 사용합니다. Configuration Manager 콘솔에서 여러 Exchange 서버에 대한 설정 제어 및 원격 디바이스 초기화와 같은 Exchange 모바일 디바이스 관리 기능을 구성할 수 있습니다.  
 
@@ -44,7 +45,7 @@ Microsoft Exchange ActiveSync 프로토콜을 사용하여 Exchange Server(온-�
 ## <a name="required-security-permissions"></a>필요한 보안 권한  
  Exchange Server 커넥터를 구성하려면 다음 보안 권한이 있어야 합니다.  
 
-- 추가, 수정 및 Exchange Server 커넥터를 삭제 합니다. **수정할** 에 대 한 권한을 합니다 **사이트** 개체입니다.  
+- 추가, 수정 및 Exchange Server 커넥터를 삭제 합니다. **사이트** 개체에 대한 **수정** 권한이 필요합니다.  
 
 - 모바일 장치 설정을 구성 하려면: **ModifyConnectorPolicy** 에 대 한 권한을 합니다 **사이트** 개체입니다.  
 
@@ -52,11 +53,11 @@ Microsoft Exchange ActiveSync 프로토콜을 사용하여 Exchange Server(온-�
 
   모바일 디바이스를 관리하려면 다음 보안 권한이 있어야 합니다.  
 
-- 모바일 장치를 초기화 합니다. **리소스를 삭제할** 에 대 한 합니다 **컬렉션** 개체입니다.  
+- 모바일 장치를 초기화 합니다. **컬렉션** 개체에 대한 **리소스 삭제** 권한이 필요합니다.  
 
-- 초기화 명령 취소: **리소스 수정** 에 대 한 합니다 **컬렉션** 개체입니다.  
+- 초기화 명령 취소: **컬렉션** 개체에 대한 **리소스 수정** 권한이 필요합니다.  
 
-- 허용 하 고 모바일 장치를 차단 합니다. **리소스 수정** 에 대 한 합니다 **컬렉션** 개체입니다.  
+- 허용 하 고 모바일 장치를 차단 합니다. **컬렉션** 개체에 대한 **리소스 수정** 권한이 필요합니다.  
 
   **운영 관리자** 보안 역할에는 Exchange Server 커넥터를 사용하여 모바일 디바이스를 관리하기 위해 필요한 권한이 포함됩니다.  
 

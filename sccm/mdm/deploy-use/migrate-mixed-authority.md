@@ -10,16 +10,17 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: 6f0201d7-5714-4ba0-b2bf-d1acd0203e9a
-ms.openlocfilehash: 79cf4c2ec217a245bb5c4abbad40aad7188e0ac0
-ms.sourcegitcommit: 3772ece83823714b2aae46ec20523cc094701760
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7ede0049847eda2b87731f4cfbce0bda8984f158
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51688472"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56120251"
 ---
 # <a name="change-the-mdm-authority-for-specific-users-mixed-mdm-authority"></a>특정 사용자에 대한 MDM 기관 변경(혼합 MDM 기관) 
 
-*적용 대상: System Center Configuration Manager (현재 분기)*    
+*적용 대상: System Center Configuration Manager(현재 분기)*    
 
 혼합된 MDM 기관을 동일한 테 넌 트에서 구성할 수 있습니다. 하이브리드 MDM 사용 하 여 Microsoft Intune 등의 몇 가지 사용자 관리 이 문서에서는 Intune 독립 실행형으로 이동 하는 방법에 대 한 정보를 제공 합니다. 다음 단계를 완료 가정 합니다.  
 
@@ -183,12 +184,12 @@ Intune 독립 실행형 장치가 예상대로 작동하는지 확인한 후에�
   - 중요
   - 오류
   - 정보
-  - 해제
+  - 끄기
   - 자세한 정보 표시
   - 경고
  
 #### `-Confirm [<SwitchParameter>]`
-명령을 실행 하기 전에 확인을 묻는 됩니다.
+명령을 실행하기 전 확인 메시지를 표시합니다.
  
 #### `-WhatIf [<SwitchParameter>]`
 실제로 명령을 실행 하지 않고 명령을 실행할 경우에 상황에 대해 설명 합니다.
@@ -214,7 +215,7 @@ Description
 Successfully switched the management authority of the device from Configuration Manager to Intune.
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>REMARKS
 - 예제를 보려면 `get-help Switch-MdmDeviceAuthority -examples`을 입력합니다.  
 - 자세한 내용은 `get-help Switch-MdmDeviceAuthority -detailed`을 입력합니다.  
 - 기술 정보는 `get-help Switch-MdmDeviceAuthority -full`을 입력합니다.  

@@ -10,12 +10,13 @@ ms.assetid: c72612d4-0b3d-4e71-b3c9-35782701b78a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 07f5e7dc0520a145b6130d0c1f79388c2a63456d
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 15e336a85084c7e674b297d95144a2aa0ad01bd7
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32346059"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56120377"
 ---
 # <a name="how-to-create-wi-fi-profiles-for-mobile-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 모바일 디바이스에 대한 Wi-Fi 프로필을 만드는 방법
 

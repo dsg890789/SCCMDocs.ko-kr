@@ -10,16 +10,17 @@ ms.assetid: 2a7d7170-1933-40e9-96d6-74a6eb7278e2
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 391ecbd4ff9f863f41454786e8f8232b31a112a5
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8443430b55ee61e9ad5eeac1e70342dfa6e85851
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53418325"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56122375"
 ---
 # <a name="set-up-certificates-for-trusted-communications-for-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>Set up certificates for trusted communications for On-premises Mobile Device Management in System Center Configuration Manager
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 System Center Configuration Manager 온\-프레미스 모바일 디바이스 관리에는 관리 디바이스와 신뢰할 수 있는 통신을 설정할 등록 지점, 등록 프록시 지점, 배포 지점 및 디바이스 관리 지점 사이트 시스템 역할이 필요합니다. 이러한 역할 중 하나 이상을 호스트하는 모든 사이트 시스템 서버에는 해당 시스템의 웹 서버에 바인딩된 고유 PKI 인증서가 있어야 합니다. 서버의 인증서와 동일한 루트를 가진 인증서는 대부분 신뢰할 수 있는 통신을 설정하기 위해 관리 디바이스에도 저장됩니다.  
 

@@ -1,7 +1,7 @@
 ---
 title: 위험에 따라 액세스 제한
 titleSuffix: Configuration Manager
-description: 디바이스, 네트워크 및 응용 프로그램 위험에 따라 회사 리소스에 대한 액세스를 제한합니다.
+description: 장치, 네트워크 및 애플리케이션 위험에 따라 회사 리소스에 대한 액세스를 제한합니다.
 ms.date: 08/14/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -10,18 +10,19 @@ ms.assetid: 9083c571-f4fc-4a78-adc5-8aec84dabcbd
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: c8e984c6eb76716e031ed793a7753840842f0ea7
-ms.sourcegitcommit: 98c3f7848dc9014de05541aefa09f36d49174784
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 62db216d2047ee0272c6b3fa226493b5e8af5f84
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42584597"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56128724"
 ---
-# <a name="manage-access-to-company-resource-based-on-device-network-and-application-risk"></a>디바이스, 네트워크 및 응용 프로그램 위험에 따라 회사 리소스에 대한 액세스 관리
+# <a name="manage-access-to-company-resource-based-on-device-network-and-application-risk"></a>장치, 네트워크 및 애플리케이션 위험에 따라 회사 리소스에 대한 액세스 관리
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Lookout에서 수행한 위험 평가를 기반으로 회사 리소스에 대한 모바일 디바이스의 액세스를 제어하세요. Lookout은 Microsoft Intune과 통합된 디바이스 위협 방지 솔루션입니다. 위험은 Lookout 서비스 수집하는 데이터를 기반으로 합니다. Lookout 서비스에서는 디바이스로부터 OS(운영 체제) 취약성, 설치된 악성 앱 및 악성 네트워크 프로필에 대한 데이터를 수집합니다. 
+Lookout에서 수행한 위험 평가를 기반으로 회사 리소스에 대한 모바일 디바이스의 액세스를 제어하세요. Lookout은 Microsoft Intune과 통합된 디바이스 위협 방지 솔루션입니다. 위험은 Lookout 서비스 수집하는 데이터를 기반으로 합니다. Lookout 서비스에서는 디바이스로부터 OS(운영 체제) 취약성, 설치된 악성 앱 및 악성 네트워크 프로필에 대한 데이터를 수집합니다. 
 
 Configuration Manager 준수 정책을 통해 사용 설정되는 Lookout의 위험 평가 보고에 따라 조건부 액세스 정책을 구성할 수 있습니다. 이 정책은 Configuration Manager가 해당 디바이스에서 검색된 위협으로 인해 규정을 준수하지 않는 것으로 판단하는 디바이스를 허용하거나 차단합니다.
 
@@ -34,7 +35,7 @@ Configuration Manager 준수 정책을 통해 사용 설정되는 Lookout의 위
 
 하이브리드 MDM 배포 및 Lookout 디바이스 위협 방지는 회사 리소스 보호에 어떻게 도움이 되나요?
 
-Lookout의 모바일 앱(Lookout for Work)은 모바일 디바이스에서 실행됩니다. 이 앱은 사용 가능한 경우 파일 시스템, 네트워크 스택, 디바이스, 응용 프로그램 사용 현황 데이터를 캡처하고, 이 데이터를 Lookout 디바이스 위협 방지 클라우드 서비스에 전송하여 모바일 위협에 대한 종합적인 디바이스 위험을 집계합니다. 요구에 맞게 위협의 위험 수준 분류를 변경하려면 Lookout 콘솔을 사용하세요.  
+Lookout의 모바일 앱(Lookout for Work)은 모바일 디바이스에서 실행됩니다. 이 앱은 사용 가능한 경우 파일 시스템, 네트워크 스택, 장치, 애플리케이션 사용 현황 데이터를 캡처하고, 이 데이터를 Lookout 디바이스 위협 방지 클라우드 서비스에 전송하여 모바일 위협에 대한 종합적인 디바이스 위험을 집계합니다. 요구에 맞게 위협의 위험 수준 분류를 변경하려면 Lookout 콘솔을 사용하세요.  
 
 이제 Configuration Manager의 준수 정책에 Lookout 디바이스 위협 위험 평가를 기반으로 하는 Lookout Mobile Threat Protection에 대한 새 규칙이 포함되어 있습니다. 이 규칙을 사용하도록 설정하면 Configuration Manager에서 디바이스가 정책을 준수하는지 평가합니다.
 
@@ -119,6 +120,6 @@ Lookout에서 지원하는 플랫폼 및 언어에 대한 자세한 내용은 �
 
 1.  [Lookout 모바일 위협 방지를 사용하여 구독 설정](set-up-your-subscription-with-lookout.md)
 2.  [Intune에서 Lookout MTP 연결 사용](enable-lookout-connection-in-intune.md)
-3.  [Lookout for Work 응용 프로그램 구성 및 배포](configure-and-deploy-lookout-for-work-apps.md)
+3.  [Lookout for Work 애플리케이션 구성 및 배포](configure-and-deploy-lookout-for-work-apps.md)
 4.  [준수 정책 구성](enable-device-threat-protection-rule-compliance-policy.md)
 5.  [Lookout 통합 문제 해결](troubleshoot-lookout-integration.md)

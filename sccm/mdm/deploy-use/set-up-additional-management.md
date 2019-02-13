@@ -10,16 +10,17 @@ ms.assetid: 4877d674-6bbc-4e16-810c-daad70c74daa
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 8c2ded7509c8097ae219aa594e56fda3f0c35ccd
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d866ce901640b6e7fafb13a6c24318f26c5d5feb
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53417152"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56131798"
 ---
 # <a name="set-up-additional-management-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 추가 관리 설정
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 (선택 사항) 디바이스가 등록되기 전에 추가 관리를 설정할 수 있습니다. 디바이스가 등록된 후에 이러한 관리 솔루션을 만들고 배포할 수도 있지만 대부분의 조직에서는 디바이스가 관리에 추가될 때 배포하려고 합니다.
 

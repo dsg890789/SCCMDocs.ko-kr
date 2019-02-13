@@ -10,16 +10,17 @@ ms.assetid: 71c44250-626e-482c-8794-434c6aeb2fb1
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f5a03629fdea4a8fc496db624d0b32657d9bec83
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 78c40d84b7d774d7621b983a6e2bb755b14f9563
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53419107"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56138367"
 ---
 # <a name="manage-skype-for-business-online-access"></a>비즈니스용 Skype Online 액세스 관리
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 
 비즈니스용 Skype Online에 대한 조건부 액세스 정책을 사용하여 지정된 조건에 따라 비즈니스용 Skype Online에 대한 액세스를 관리할 수 있습니다.  
@@ -50,7 +51,7 @@ ms.locfileid: "53419107"
 
 ## <a name="configure-conditional-access-for-skype-for-business-online"></a>비즈니스용 Skype Online에 대한 조건부 액세스 구성  
 
-### <a name="step-1-configure-active-directory-security-groups"></a>1 단계: Active Directory 보안 그룹 구성  
+### <a name="step-1-configure-active-directory-security-groups"></a>1단계: Active Directory 보안 그룹 구성  
  시작하기 전에 조건부 액세스 정책에 대한 Azure Active Directory 보안 그룹을 구성합니다. Office 365 관리 센터에서 이러한 그룹을 구성합니다. 이러한 그룹에는 대상으로 지정한 사용자 또는 정책에서 제외된 사용자가 포함됩니다. 사용자가 정책의 대상인 경우 해당 사용자가 사용하는 각 디바이스가 규정을 준수해야 리소스에 액세스할 수 있습니다.  
 
  비즈니스용 Skype 정책에 사용할 두 개의 그룹 유형을 지정할 수 있습니다.  
@@ -60,7 +61,7 @@ ms.locfileid: "53419107"
 -   **제외된 그룹**에는 정책에서 제외된 사용자가 포함됩니다.  
     사용자가 두 그룹에 모두 있으면 제외됩니다.  
 
-### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>2 단계: 준수 정책 구성 및 배포  
+### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>2단계: 준수 정책 구성 및 배포  
  준수 정책을 만들고 비즈니스용 Skype Online 정책의 대상이 되는 모든 디바이스에 배포합니다.  
 
  준수 정책을 구성하는 방법에 대한 자세한 내용은 [디바이스 규정 준수 정책 관리](../../protect/deploy-use/device-compliance-policies.md)를 참조하세요.  
@@ -69,7 +70,7 @@ ms.locfileid: "53419107"
 >  준수 정책을 배포하지 않은 상태에서 비즈니스용 Skype Online 정책을 사용하도록 설정하면 Microsoft Intune에 등록되어 있는 경우 대상으로 지정된 모든 디바이스에 대한 액세스가 허용됩니다.  
 
 
-### <a name="step-3-configure-the-skype-for-business-online-policy"></a>3 단계: Skype Online 정책 구성  
+### <a name="step-3-configure-the-skype-for-business-online-policy"></a>3단계: Skype Online 정책 구성  
  규정을 준수하는 관리 디바이스만 비즈니스용 Skype Online에 액세스할 수 있도록 요구하는 정책을 구성합니다. 이 정책은 Azure Active Directory에 저장됩니다.  
 
 1. [Microsoft Intune 관리 콘솔](https://manage.microsoft.com)에서 **정책** > **조건부 액세스** > **Skype for Business Online 정책**를 참조하세요.  

@@ -10,12 +10,13 @@ ms.assetid: e36b98c7-d0f4-4dd6-bac3-6a6c4b4bf841
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: ee978543248e70182e12a3d6234cfd12be80dc98
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e6055efad94952a7dcd7714cdfb5730289d8dafc
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32348585"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56136146"
 ---
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Intune과 Lookout 통합 문제 해결
 
@@ -51,9 +52,9 @@ Azure AD 전역 관리자가 초기 Lookout 설치에 동의하지 않은 경우
 
 ### <a name="device-continues-to-be-reported-as-pending"></a>디바이스가 **보류 중** 상태로 계속 보고됨
 
-**보류 중**으로 표시되는 장치는 최종 사용자가 Lookout for Work 앱을 열고 **활성화** 단추를 탭하지 않았음을 의미합니다. Lookout for Work 앱에서 디바이스를 활성화하는 방법에 대한 자세한 내용은 다음 항목을 참조하세요.
+디바이스가 **보류 중**으로 나타나는 것은 최종 사용자가 아직 Lookout for work 앱을 열어 **활성화** 단추를 탭하지 않았기 때문입니다. Lookout for Work 앱에서 디바이스를 활성화하는 방법에 대한 자세한 내용은 다음 항목을 참조하세요.
 
-[Android 장치에 Lookout for Work를 설치하라는 메시지가 표시됨](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
+[Android 디바이스에 Lookout for Work를 설치하라는 메시지가 표시됨](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 
 ### <a name="in-the-lookout-mtp-console-a-device-is-showing-as-active-but-does-not-have-a-device-id"></a>Lookout MTP 콘솔에서 디바이스가 활성 상태로 표시되지만 디바이스 ID가 없습니다.
 이 디바이스를 소유하는 사용자가 Lookout MTP 콘솔에 지정된 등록 그룹에 없기 때문입니다.   디바이스를 소유하는 사용자가 등록 그룹에서 제거되었거나 그 사용자가 속한 등록 그룹이 제거되었을 때도 디바이스는 이 상태가 될 수 있습니다.
@@ -78,6 +79,6 @@ Lookout MTP 콘솔의 **디바이스** 모듈에서 **삭제**를 선택할 수�
 새 사용자가 Lookout MTP 콘솔에 지정된 등록 그룹에 속해 있는 동안에는 Azure AD가 디바이스를 새 사용자에 연결하면 디바이스가 나타납니다.
 
 ## <a name="compliance-remediation-workflows"></a>준수 수정 워크플로
-[Android 장치에 Lookout for Work를 설치하라는 메시지가 표시됨]( http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
+[Android 디바이스에 Lookout for Work를 설치하라는 메시지가 표시됨]( http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 
-[Lookout for Work가 Android 장치에서 발견한 위협을 해결해야 함](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+[Android 디바이스에서 Lookout for Work가 발견한 위협을 해결해야 함](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)

@@ -10,16 +10,17 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: be503ec9-5324-4f7c-bcf5-77204328e99c
-ms.openlocfilehash: 4ded99c2084f274d519680e78fdc54825b3857cb
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bcd70b708208e2c49a1a7b6fff12d0a1cf5f16f0
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53419515"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56132938"
 ---
 # <a name="change-your-mdm-authority-to-intune-standalone"></a>MDM 기관을 Intune 독립 실행형으로 변경
 
-*적용 대상: System Center Configuration Manager (현재 분기)*    
+*적용 대상: System Center Configuration Manager(현재 분기)*    
 
 Configuration Manager 콘솔(하이브리드 MDM)에서 구성된 기존 Microsoft Intune 테넌트를 Intune 독립 실행형으로 변경할 수 있습니다. 테넌트 수준 MDM 기관을 Intune으로 변경하는 것은 클라우드 전용 구성에서 [하이브리드 MDM 사용자 및 디바이스를 Intune 독립 실행형으로 마이그레이션](migrate-hybridmdm-to-intunesa.md)하는 프로세스의 최종 단계입니다.    
 

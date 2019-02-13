@@ -10,16 +10,17 @@ ms.assetid: 8e25e00c-c9a8-473f-bcb7-ea989f6ca3c5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2483a15286a2784f2fb8a4256029004374a313dc
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ede2563adbd517dbcda0a408fa5b9b166e8e3c12
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53419787"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56129360"
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-system-center-configuration-manager"></a>System Center Configuration Manager를 통해 관리 브라우저 정책을 사용하여 인터넷 액세스 관리
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 System Center Configuration Manager에서는 Intune Managed Browser(웹 검색 애플리케이션)를 배포하고 관리 브라우저 정책과 연결할 수 있습니다. 관리 브라우저 정책은 관리 브라우저의 사용자가 이동할 수 있는 웹 사이트를 제한하는 허용 목록 또는 차단 목록을 설정합니다.  
 

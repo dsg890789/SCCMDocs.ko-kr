@@ -10,16 +10,17 @@ ms.assetid: fa648e73-5fb8-4818-ab57-7466ffaf888e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f1dbe514e8beca7250b7bfa62a9af7997bf5246c
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f976b63b4580b5df9c6e609ff6b361538860c41c
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53417244"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56137646"
 ---
 # <a name="manage-email-access-in-configuration-manager"></a>Configuration Manager에서 메일 액세스 관리
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 지정한 조건에 따라 Exchange 메일에 대 한 액세스 관리를 사용 하 여 Configuration Manager 조건부 액세스.  
 
@@ -106,7 +107,7 @@ Exchange 온-프레미스에 대한 조건부 액세스 정책은 Configuration 
 
 ## <a name="configure-conditional-access"></a>조건부 액세스 구성
 
-### <a name="step-1-evaluate-the-effect-of-the-conditional-access-policy"></a>1 단계: 조건부 액세스 정책의 영향 평가  
+### <a name="step-1-evaluate-the-effect-of-the-conditional-access-policy"></a>1단계: 조건부 액세스 정책의 영향 평가  
 
 구성한 후 합니다 **온-프레미스 Exchange connector**, Configuration Manager를 사용할 수 있습니다 **조건부 액세스 상태별 장치 목록** 에서 차단할 장치를 식별 하는 보고서 조건부 액세스 정책을 구성한 후 Exchange에 액세스 합니다. 이 보고서를 사용하려면 다음 항목도 필요합니다.  
 
@@ -141,7 +142,7 @@ Exchange 온-프레미스에 대한 조건부 액세스 정책은 Configuration 
 보고서의 내용을 내보내고 **전자 메일 주소** 열을 사용하여 사용자에게 액세스 차단을 알릴 수 있습니다.  
 
 
-### <a name="step-2-configure-user-groups-or-collections-for-the-conditional-access-policy"></a>2 단계: 사용자 그룹 또는 조건부 액세스 정책 컬렉션 구성  
+### <a name="step-2-configure-user-groups-or-collections-for-the-conditional-access-policy"></a>2단계: 사용자 그룹 또는 조건부 액세스 정책 컬렉션 구성  
 
 정책 유형에 따라 서로 다른 사용자 그룹 또는 컬렉션을 대상으로 조건부 액세스 정책을 구성합니다. 이러한 그룹에는 정책의 대상이 되거나 정책에서 제외되는 사용자가 포함됩니다. 사용자가 정책의 대상인 경우 해당 사용자가 사용하는 각 디바이스가 규정을 준수해야 전자 메일에 액세스할 수 있습니다.  
 
@@ -160,7 +161,7 @@ Exchange 온-프레미스에 대한 조건부 액세스 정책은 Configuration 
 조건부 액세스 정책의 대상인 그룹 또는 컬렉션에 대해서만 Exchange 액세스를 평가합니다.  
 
 
-### <a name="step-3-configure-and-deploy-a-compliance-policy"></a>3 단계: 준수 정책 구성 및 배포  
+### <a name="step-3-configure-and-deploy-a-compliance-policy"></a>3단계: 준수 정책 구성 및 배포  
 
 규정 준수 정책을 만들고 Exchange 조건부 액세스 정책의 대상이 될 모든 디바이스에 배포해야 합니다.  
 
@@ -170,7 +171,7 @@ Exchange 온-프레미스에 대한 조건부 액세스 정책은 Configuration 
 > 준수 정책을 배포 하지 않은 하 고 다음에서 Exchange 조건부 액세스 정책을 사용 하도록 설정 하는 경우 모든 대상된 장치는 액세스할을 수 있습니다.  
 
 
-### <a name="step-4-configure-the-conditional-access-policy"></a>4 단계: 조건부 액세스 정책 구성  
+### <a name="step-4-configure-the-conditional-access-policy"></a>4단계: 조건부 액세스 정책 구성  
 
 #### <a name="for-exchange-online-and-tenants-in-the-new-exchange-online-dedicated-environment"></a>Exchange Online(및 새 Exchange Online Dedicated 환경의 테넌트)의 경우
 

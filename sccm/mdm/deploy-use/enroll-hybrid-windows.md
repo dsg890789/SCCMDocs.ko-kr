@@ -10,16 +10,17 @@ ms.assetid: dc1f70f5-64ab-42ab-aa91-d3858803e12f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 26529460498d10fb4ee747059ca050cd6af9db54
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7811e1ab4a323660f16b707076015d9e81bda2bb
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53415962"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56121297"
 ---
 # <a name="set-up-windows-hybrid-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune로 Windows 하이브리드 디바이스 관리 설정
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 이 항목에서는 IT 관리자가 사용자에게 Configuration Manager 및 Microsoft Intune을 사용하여 Windows PC 및 모바일 디바이스를 관리할 수 있도록 설정하는 방법을 설명합니다.
 

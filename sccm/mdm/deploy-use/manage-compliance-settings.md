@@ -10,16 +10,17 @@ ms.assetid: 9e83007f-e81c-4b7e-b47e-b01d7b19cfbc
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5f6ee6ae8d059905e8cda08fec3d75deff177163
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c81e7198a01e2d5dfca7abc80f6a23714184a32c
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53418546"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56121780"
 ---
 # <a name="managing-compliance-on-devices-managed-with-intune"></a>Intune으로 관리되는 디바이스에 대한 준수 관리
 
-*적용 대상: System Center Configuration Manager (현재 분기)*
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 이 시나리오에서는 일반적으로 발생할 수 있는 몇 가지 시나리오를 살펴보면서 System Center Configuration Manager 준수 설정을 사용하는 방법을 소개합니다.  
 
