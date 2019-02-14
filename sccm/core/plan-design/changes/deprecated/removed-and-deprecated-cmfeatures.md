@@ -2,7 +2,7 @@
 title: 사용되지 않는 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 더 이상 지원하지 않는 기능에 대해 알아보세요.
-ms.date: 12/21/2018
+ms.date: 01/30/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 287a6324-ae65-4d38-b2ef-198d47c91231
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 441fb520fcf3e82bd284eb20db44f14cab52224f
-ms.sourcegitcommit: 94bf7d5b5beb9628cc1fdfe75451d33b5de26f8a
+ms.openlocfilehash: a46f2cb84e447a9b76e812dcb98805e83e31f701
+ms.sourcegitcommit: 38f56f1d5803370f4262931c2dc4a532bfcf0594
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54152471"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55905634"
 ---
 # <a name="removed-and-deprecated-features-for-configuration-manager"></a>Configuration Manager에서 제거되는 기능과 이후 지원되지 않는 기능
 
@@ -33,7 +33,8 @@ ms.locfileid: "54152471"
 |-----------|---|--------------|  
 |클라우드 관리 게이트웨이 및 클라우드 배포 지점에 대한 클래식 서비스 배포. 자세한 내용은 [CMG 계획](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#azure-resource-manager)을 참조하세요.|2018년 11월|2019년 7월 1일 이후 릴리스된 첫 번째 버전| 
 |Mac 및 Linux용 System Center Endpoint Protection<br>자세한 내용은 [지원 종료 블로그 게시물](https://go.microsoft.com/fwlink/?linkid=870182)을 참조하세요.|2018년 10월|2018년 12월 31일|
-|하이브리드 모바일 디바이스 관리. 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->|2018년 8월 14일|2019년 9월 1일|
+|온-프레미스 조건부 액세스<br>자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.|2019년 1월 30일|2019년 9월 1일|
+|MDM(하이브리드 모바일 디바이스 관리)<br>자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<br><br>2019년 2월 말로 예정된 1902 Intune 서비스 릴리스부터, 신규 고객은 새 하이브리드 연결을 만들 수 없습니다.<!--Intune feature 2683117-->|2018년 8월 14일|2019년 9월 1일|
 |Configuration Manager의 비즈니스용 Windows Hello 설정<br>자세한 내용은 [비즈니스용 Windows Hello 설정](/sccm/protect/deploy-use/windows-hello-for-business-settings)을 참조하세요.|2017년 12월|2019년 11월 1일 이후 릴리스된 첫 번째 버전|
 |애플리케이션 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 사용자는 새로운 소프트웨어 센터를 사용해야 합니다. 참고: 애플리케이션 카탈로그 웹 사이트 지점 및 웹 서비스 지점은 그대로 지원됩니다. 일부 시나리오에서는 새로운 소프트웨어 센터가 애플리케이션 카탈로그 웹 사이트 지점과 통신합니다. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요.<!--1358309-->|2017년 8월 11일| 버전 1806|
 |이전 버전의 Software Center입니다.<br><br>새 소프트웨어 센터에 대한 자세한 내용은 [애플리케이션 관리 계획 및 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management##bkmk_userex)을 참조하세요.|2016년 12월 13일|1802 버전|

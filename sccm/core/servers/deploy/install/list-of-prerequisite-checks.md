@@ -10,12 +10,12 @@ ms.assetid: 6a279624-ffc9-41aa-8132-df1809708dd5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4fdc882d63e7bf7d3189e770f230412f17ca0b63
-ms.sourcegitcommit: d36e4c7082a5144e79035dd8847c8e741fa04667
+ms.openlocfilehash: ffcb60ff355a67304b057ef2d1b632fb9e0c21dc
+ms.sourcegitcommit: 5e7c4d36f4cdb3390ad3b381d31a3e1e4bf3c6e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53444657"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55986538"
 ---
 # <a name="list-of-prerequisite-checks-for-configuration-manager"></a>Configuration Manager의 필수 구성 요소 검사 목록
 
@@ -526,7 +526,7 @@ Configuration Manager는 사이트 서버 설치에 Active Directory 스키마 �
 
 1810 버전부터 사이트 데이터베이스에 SQL 변경 추적 데이터의 백로그가 있는지 확인합니다.<!--SCCMDocs-pr issue 3023-->  
 
-사이트 데이터베이스에서 진단 저장 프로시저를 실행하여 이 검사를 수동으로 확인합니다. 먼저 사이트 데이터베이스에 대한 [진단 연결](https://docs.microsoft.com/sql/database-engine/configure-windows/diagnostic-connection-for-database-administrators?view=sql-server-2017)을 만듭니다. 가장 쉬운 방법은 SQL Server Management Studio 쿼리 편집기를 사용하여 `admin:<instance name>`에 연결하는 것입니다. 
+사이트 데이터베이스에서 진단 저장 프로시저를 실행하여 이 검사를 수동으로 확인합니다. 먼저 사이트 데이터베이스에 대한 [진단 연결](https://docs.microsoft.com/sql/database-engine/configure-windows/diagnostic-connection-for-database-administrators?view=sql-server-2017)을 만듭니다. 가장 쉬운 방법은 SQL Server Management Studio 데이터베이스 엔진 쿼리 편집기를 사용하여 `admin:<instance name>`에 연결하는 것입니다. 
 
 전용 관리자 연결 쿼리 창에서 다음 명령을 실행합니다.
 

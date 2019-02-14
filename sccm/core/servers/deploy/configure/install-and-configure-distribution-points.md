@@ -10,12 +10,12 @@ ms.assetid: aebafaf9-b3d5-4a0f-9ee5-685758c037a1
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 430931e8bfba3f40a8d970b7ae7b97e24d3381ec
-ms.sourcegitcommit: f2a1fa59fb3870a6bebca61daf15c0c157e9fdd6
+ms.openlocfilehash: 78eb7f360230951184ec645b78081b4ff6995984
+ms.sourcegitcommit: 5e7c4d36f4cdb3390ad3b381d31a3e1e4bf3c6e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54031025"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55986572"
 ---
 # <a name="install-and-configure-distribution-points-in-configuration-manager"></a>Configuration Manager에서 배포 지점 설치 및 구성
 
@@ -409,8 +409,7 @@ PXE를 사용하도록 설정하면 필요한 경우 Configuration Manager에서
 
 이 배포 지점을 기존 배포 지점 그룹의 구성원으로 추가하려면 **추가**를 클릭합니다. [배포 지점 그룹에 추가] 창에서 기존 그룹을 선택한 다음, **확인**을 클릭합니다.  
 
-배포 지점 그룹에서 이 배포 지점을 제거하려면 목록에서 그룹을 선택한 다음, **제거**를 클릭합니다.  
-
+배포 지점 그룹에서 이 배포 지점을 제거하려면 목록에서 그룹을 선택한 다음, **제거**를 클릭합니다. 배포 지점 그룹에서 배포 지점을 제거해도 배포 지점에서 콘텐츠가 제거되지 않습니다.
 
 ### <a name="bkmk_config-content"></a> 콘텐츠  
 

@@ -2,7 +2,7 @@
 title: 기술 미리 보기 릴리스
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 새로운 기능과 기술을 시험 사용할 수 있는 기술 미리 보기 분기를 알아봅니다.
-ms.date: 01/23/2019
+ms.date: 02/08/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 9ce0a8cb-f96c-4e41-834c-59ceb54ce44a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: cf432ea32e5946a98b59e158752b3e82cf63b3b3
-ms.sourcegitcommit: b8167a60fd6f2d8387b2db723976c0e2c4198d33
+ms.openlocfilehash: 69fd77df25465910776eb413601efef5d87842aa
+ms.sourcegitcommit: 4317bd20050f582a068d0a813e71c449d655e4b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54832774"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "55971900"
 ---
 # <a name="technical-preview-for-configuration-manager"></a>Configuration Manager에 대한 기술 미리 보기
 
@@ -69,7 +69,7 @@ Configuration Manager의 기술 미리 보기 분기는 다음 제품 및 기술
 
 -   다음 버전의 **SQL Server**만 지원합니다.  
 
-    -   Configuration Manager 버전 1710에서 시작하는 SQL Server 2017(누적 업데이트 2 이상)
+    -   SQL Server 2017(누적 업데이트 2 이상) 
     -   SQL Server 2016(서비스 팩 없음 버전 이상)
     -   SQL Server 2014(서비스 팩 1 이상)
     -   SQL Server 2012(서비스 팩 3 이상)  
@@ -124,30 +124,19 @@ Microsoft는 세 개의 연속 버전을 사용할 수 있을 때까지 각 기�
 
 <!-- This is the full list of new features in the latest TP release -->
 
-### <a name="technical-preview-version-1901"></a>Technical Preview 버전 1901
+### <a name="technical-preview-version-1902"></a>Technical Preview 버전 1902
 
 <!-- - [title](/sccm/core/get-started/2019/technical-preview-1901#bkmk_anchor)<!--ID-->
 
+- [알림 메시지를 대화 상자 창으로 바꾸기](/sccm/core/get-started/2019/technical-preview-1902#bkmk_impact)<!--3555947-->
+- [현재 위치 업그레이드 작업 순서 중 진행 상태](/sccm/core/get-started/2019/technical-preview-1902#bkmk_ipu)<!--3747129-->
+- [알려진 Windows 폴더를 OneDrive로 리디렉션](/sccm/core/get-started/2019/technical-preview-1902#bkmk_odfb)<!--3556021-->
+- [원격 제어 시 첫 번째 화면만 보기](/sccm/core/get-started/2019/technical-preview-1902#bkmk_rcmulti)<!--3231732-->
+- [PowerShell 스크립트 편집 또는 복사](/sccm/core/get-started/2019/technical-preview-1902#bkmk_psedit)<!--3705507-->
+- [경계 그룹에 클라우드 관리 게이트웨이 추가](/sccm/core/get-started/2019/technical-preview-1902#bkmk_cmgbg)<!--3640932-->
+- [소프트웨어 센터의 기본 보기 구성](/sccm/core/get-started/2019/technical-preview-1902#bkmk_swctr)<!--3612112-->
+- [클라이언트 상태 대시보드 개선 사항](/sccm/core/get-started/2019/technical-preview-1902#bkmk_health)<!--3599209-->
 
-- [클라이언트 상태 대시보드](/sccm/core/get-started/2019/technical-preview-1901#bkmk_health)<!--3599209-->  
-- [Windows 10 서비스에서 기능 업데이트에 대한 우선 순위 지정](/sccm/core/get-started/2019/technical-preview-1901#bkmk_neo)<!--3734525-->  
-- [단계별 배포에 대한 전용 모니터링](/sccm/core/get-started/2019/technical-preview-1901#bkmk_pod)<!--3555949--> 
-- [중앙 관리 사이트에서 CMPivot 실행](/sccm/core/get-started/2019/technical-preview-1901#bkmk_cmpivot)<!--3610960-->  
-- [향상된 PowerShell 스크립트 실행 작업 순서 단계 기능](/sccm/core/get-started/2019/technical-preview-1901#bkmk_posh)<!--3556028-->  
-- [수명 주기 대시보드의 Office 제품](/sccm/core/get-started/2019/technical-preview-1901#bkmk_lifecycle)<!--3556026-->  
-- [컬렉션에 대한 관리 인사이트 규칙](/sccm/core/get-started/2019/technical-preview-1901#bkmk_micoll)<!--3555752-->  
-- [MAC 주소를 사용하여 검색 디바이스 보기](/sccm/core/get-started/2019/technical-preview-1901#bkmk_mac)<!--3600878-->  
-- [배포 지점 유지 관리 모드](/sccm/core/get-started/2019/technical-preview-1901#bkmk_dpmaint)<!--3555754-->  
-- [최적화된 이미지 서비스](/sccm/core/get-started/2019/technical-preview-1901#bkmk_resetbase)<!--3555951-->  
-- [OS 이미지의 단일 인덱스 가져오기](/sccm/core/get-started/2019/technical-preview-1901#bkmk_index)<!--3719699--> 
-- [클라우드 서비스에 대한 Azure Resource Manager 사용](/sccm/core/get-started/2019/technical-preview-1901#bkmk_arm)<!--3605704-->  
-- [콘솔 피드백 확인](/sccm/core/get-started/2019/technical-preview-1901#bkmk_feedback)<!--3556010--> 
-- [Azure에서 Configuration Manager Technical Preview 랩 만들기](/sccm/core/get-started/2019/technical-preview-1901#bkmk_azurevm)<!--3556017-->  
-- [피어 절전 모드 해제에 대한 사용자 지정 포트 지정](/sccm/core/get-started/2019/technical-preview-1901#bkmk_sleep)<!--3605925-->  
-- [최근에 연결된 콘솔 보기](/sccm/core/get-started/2019/technical-preview-1901#bkmk_console)<!--3699367-->  
-- [임계값을 초과하는 경우 클라우드 서비스 중지](/sccm/core/get-started/2019/technical-preview-1901#bkmk_cmg)<!--3735092--> 
-- [클라이언트 프로비전 모드 시간 제한](/sccm/core/get-started/2019/technical-preview-1901#bkmk_osdprov)<!--3197824-->
-- [향상된 OS 배포 기능](/sccm/core/get-started/2019/technical-preview-1901#bkmk_osd)<!--3633146,3641475,3654172,3734270-->
 
 
 > [!Note]  
@@ -166,6 +155,25 @@ Then remove the bottom of this list and/or move individual items not in CB to th
 
  | 기능 | 기술 미리 보기 버전 | 현재 분기 버전 |  
  |---------|---------------------------|------------------------|
+ | 클라이언트 상태 대시보드 <!--3599209--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_health) | ![추가되지 않음](media/Red_X.gif) | 
+ | Windows 10 서비스에서 기능 업데이트에 대한 우선 순위 지정 <!--3734525--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_neo) | ![추가되지 않음](media/Red_X.gif) | 
+ | 단계별 배포에 대한 전용 모니터링 <!--3555949--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_pod) | ![추가되지 않음](media/Red_X.gif) | 
+ | 중앙 관리 사이트에서 CMPivot 실행 <!--3610960--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_cmpivot) | ![추가되지 않음](media/Red_X.gif) | 
+ | 향상된 PowerShell 스크립트 실행 작업 순서 단계 기능 <!--3556028--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_posh) | ![추가되지 않음](media/Red_X.gif) | 
+ | 수명 주기 대시보드의 Office 제품 <!--3556026--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_lifecycle) | ![추가되지 않음](media/Red_X.gif) | 
+ | 컬렉션에 대한 관리 인사이트 규칙 <!--3555752--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_micoll) | ![추가되지 않음](media/Red_X.gif) | 
+ | MAC 주소를 사용하여 검색 디바이스 보기 <!--3600878--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_mac) | ![추가되지 않음](media/Red_X.gif) | 
+ | 배포 지점 유지 관리 모드 <!--3555754--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_dpmaint) | ![추가되지 않음](media/Red_X.gif) | 
+ | 최적화된 이미지 서비스 <!--3555951--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_resetbase) | ![추가되지 않음](media/Red_X.gif) | 
+ | OS 이미지의 단일 인덱스 가져오기 <!--3719699--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_index) | ![추가되지 않음](media/Red_X.gif) | 
+ | 클라우드 서비스에 대한 Azure Resource Manager 사용 <!--3605704--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_arm) | ![추가되지 않음](media/Red_X.gif) | 
+ | 콘솔 피드백 확인 <!--3556010--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_feedback) | ![추가되지 않음](media/Red_X.gif) | 
+ | Azure에서 Configuration Manager Technical Preview 랩 만들기 <!--3556017--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_azurevm) | ![추가되지 않음](media/Red_X.gif) | 
+ | 피어 절전 모드 해제에 대한 사용자 지정 포트 지정 <!--3605925--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_sleep) | ![추가되지 않음](media/Red_X.gif) | 
+ | 최근에 연결된 콘솔 보기 <!--3699367--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_console) | ![추가되지 않음](media/Red_X.gif) | 
+ | 임계값을 초과하는 경우 클라우드 서비스 중지 <!--3735092--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_cmg) | ![추가되지 않음](media/Red_X.gif) | 
+ | 클라이언트 프로비전 모드 시간 제한 <!--3197824--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_osdprov) | ![추가되지 않음](media/Red_X.gif) | 
+ | 향상된 OS 배포 <!--3633146,3641475,3654172,3734270--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_osd) | ![추가되지 않음](media/Red_X.gif) | 
  | 향상된 PowerShell 스크립트 실행 작업 순서 단계 기능 <!--3556028 fka 1359389--> | [Tech Preview 1812](capabilities-in-technical-preview-1812.md#bkmk_posh) | ![추가되지 않음](media/Red_X.gif) | 
  | 향상된 이메일을 통한 애플리케이션 승인 기능 <!--3594063--> | [Tech Preview 1812](capabilities-in-technical-preview-1812.md#bkmk_email) | ![추가되지 않음](media/Red_X.gif) | 
  | 소프트웨어 센터에서 사용자 디바이스 선호도 구성 <!--3485366--> | [Tech Preview 1812](capabilities-in-technical-preview-1812.md#bkmk_uda) | ![추가되지 않음](media/Red_X.gif) | 
@@ -176,11 +184,6 @@ Then remove the bottom of this list and/or move individual items not in CB to th
  | Configuration Manager 콘솔 알림 <!--1318035--> | [기술 미리 보기 1811](capabilities-in-technical-preview-1811.md#bkmk_notify) | ![추가되지 않음](media/Red_X.gif) | 
  | 향상된 작업 순서 미디어 만들기 기능 <!--1359388--> | [기술 미리 보기 1811](capabilities-in-technical-preview-1811.md#bkmk_tsmedia) | ![추가되지 않음](media/Red_X.gif) | 
  | 향상된 PowerShell 스크립트 실행 작업 순서 단계 기능 <!--1359389--> | [기술 미리 보기 1811](capabilities-in-technical-preview-1811.md#bkmk_posh) | ![추가되지 않음](media/Red_X.gif) | 
- | 컬렉션 평가의 개선 사항 <!--1358981--> | [기술 미리 보기 1810.2](capabilities-in-technical-preview-1810-2.md#bkmk_colleval) | 버전 1810 | 
- | Configuration Manager 관리자 인증 <!--1357013--> | [기술 미리 보기 1810.2](capabilities-in-technical-preview-1810-2.md#bkmk_auth) | 버전 1810 | 
- | 피어 캐시 원본 클라이언트 버전의 관리 인사이트 규칙 <!--1358008--> | [기술 미리 보기 1810.2](capabilities-in-technical-preview-1810-2.md#bkmk_insights) | 버전 1810 | 
- | 인터넷 기반 클라이언트 설정의 개선 사항 <!--1359181--> | [기술 미리 보기 1810.2](capabilities-in-technical-preview-1810-2.md#bkmk_cmg) | 버전 1810 | 
- | 애플리케이션을 MSIX로 변환 <!--1359029--> | [기술 미리 보기 1810.2](capabilities-in-technical-preview-1810-2.md#bkmk_msix) | 버전 1810 | 
 
 
 
