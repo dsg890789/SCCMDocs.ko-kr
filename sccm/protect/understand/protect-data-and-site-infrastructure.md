@@ -10,12 +10,13 @@ ms.assetid: 2117f786-d521-4790-9e8d-ec096c63c9d7
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 5214723b5679f4a44110329b96d4d5ec3d660673
-ms.sourcegitcommit: 94bf7d5b5beb9628cc1fdfe75451d33b5de26f8a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 60e8121e62a9d82f29d9a5011b197b2929390178
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54152386"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56127612"
 ---
 # <a name="protect-data-and-site-infrastructure-with-configuration-manager"></a>Configuration Manager를 사용하여 데이터 및 사이트 인프라 보호
 

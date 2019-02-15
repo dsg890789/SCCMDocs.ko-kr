@@ -9,12 +9,13 @@ ms.assetid: 7610bbd3-a67f-4a09-8115-e35d40d43b42
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 0e8cd4a409718645d06f17c8cea36e7b06ec61d2
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 94b1da6564c4b23c3db45b7b8851d795b97b061e
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32352015"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56133643"
 ---
 # <a name="planning-for-endpoint-protection-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Endpoint Protection 계획
 
@@ -96,7 +97,7 @@ Configuration Manager의 1606 버전부터(현재 분기) Endpoint Protection은
 
  이러한 제품은 Configuration Manager 콘솔에서 관리할 수 없습니다. 그러나 설치 파일이 포함된 System Center Operations Manager 관리 팩을 사용하면 Operations Manager로 Linux용 클라이언트를 관리할 수 있습니다.  
 
- Linux 및 Mac 컴퓨터용 Endpoint Protection 클라이언트를 설치 및 관리하는 방법에 대한 자세한 내용은 **설명서** 폴더에 있는 해당 제품의 설명서를 참조하세요.
+ 설치 및 Linux 및 Mac 컴퓨터에 대 한 Endpoint Protection 클라이언트를 관리 하 고, 이러한 제품을 함께 제공 되는 설명서를 사용 하는 방법에 대 한 자세한 내용은 다음 위치에서 **설명서** 폴더입니다.
 
 ## <a name="best-practices-for-endpoint-protection-in-configuration-manager"></a>Configuration Manager의 Endpoint Protection 모범 사례  
  System Center 2012 Configuration Manager의 Endpoint Protection에 대한 다음 모범 사례를 사용합니다.  

@@ -10,12 +10,13 @@ author: aczechowski
 description: 정의 업데이트를 자동 승인하려면 Windows Server Update Services를 구성하는 방법에 대해 알아봅니다.
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: b66c55da65f65c219b5c961949244f105885ba8f
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 74a1dc94a30f56e22b181446422a8b5f99790ffc
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53424289"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56127629"
 ---
 # <a name="enable-endpoint-protection-malware-definitions-to-download-from-windows-server-update-services-wsus-for-configuration-manager"></a>Configuration Manager의 WSUS(Windows Server Update Services)에서 다운로드하기 위해 Endpoint Protection 맬웨어 정의를 사용하도록 설정
 
@@ -74,19 +75,19 @@ ms.locfileid: "53424289"
 
 2.  **업데이트 규칙** 탭에서 **새 규칙**을 클릭합니다.
 
-3.  에 **규칙 추가** 대화 상자의 **1 단계: 속성 선택**를 선택 합니다 **특정 분류의 업데이트 인 경우** 확인란 합니다.
+3.  **규칙 추가** 대화 상자의 **1단계: 속성 선택**에서 **업데이트가 특정 등급에 포함될 때** 확인란을 선택합니다.
 
 4.  **2단계: 속성 편집**에서 **모든 등급**을 클릭합니다.
 
 5.  **정의 업데이트**를 제외한 모든 확인란의 선택을 취소하고 **확인**을 클릭합니다.
 
-6.  에 **규칙 추가** 대화 상자의 **1 단계: 속성을 선택**를 선택 합니다 **업데이트가 특정 제품의 경우** 확인란 합니다.
+6.  **규칙 추가** 대화 상자의 **1단계: 속성 선택**에서 **업데이트가 특정 제품에 포함될 때** 확인란을 선택합니다.
 
 7.  **2단계: 속성 편집**에서 **모든 제품**을 클릭합니다.
 
 8.  **Forefront Endpoint Protection** (Windows 8.1 이전) 또는 **Windows Defender** (Windows 10 이후)를 제외한 모든 확인란의 선택을 취소하고 **확인**을 클릭합니다.
 
-9. 아래 **3 단계: 3단계: 이름 지정**에서 규칙의 이름을 입력하고 **확인**을 클릭합니다.
+9. **3단계: 이름 지정**에서 규칙의 이름을 입력하고 **확인**을 클릭합니다.
 
 10. **자동 승인** 대화 상자에서 새로 만든 규칙의 확인란을 선택하고 **규칙 실행**을 클릭합니다.
 
