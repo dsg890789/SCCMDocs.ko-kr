@@ -10,12 +10,13 @@ ms.assetid: 321b19b2-a093-4b8f-995f-41f74b886eb5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f294bd3e6c8043149e7f5af8b07eb11288751601
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: dba1107dd8cd8d39be555b3b77ff828152513eb8
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53416268"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56122239"
 ---
 # <a name="create-wi-fi-profiles"></a>Wi-Fi 프로필 만들기
 
@@ -56,15 +57,15 @@ System Center Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의
 
 4. **보고할 비호환성 심각도**에서 클라이언트 디바이스에서 Wi-Fi 프로필이 비호환 상태로 확인된 경우(예: 프로필 설치가 실패한 경우) 보고되는 심각도를 지정합니다. 사용할 수 있는 심각도 수준은 다음과 같습니다.  
 
-   -   **없음**: 이 규정 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 오류 심각도를 보고하지 않습니다.  
+   -   **없음** - 이 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 오류 심각도를 보고하지 않습니다.  
 
-   -   **정보**: 이 규정 준수 규칙을 충족하지 않는 컴퓨터가 Configuration Manager 보고서에 **정보** 오류 심각도를 보고합니다.  
+   -   **정보** - 이 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **정보** 오류 심각도를 보고합니다.  
 
-   -   **경고**: 이 규정 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **경고** 오류 심각도를 보고합니다.  
+   -   **경고** - 이 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **경고** 오류 심각도를 보고합니다.  
 
-   -   **위험**: 이 규정 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다.  
+   -   **위험** 이 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다.  
 
-   -   **위험(이벤트 포함)**: 이 규정 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 또한 이 심각도 수준은 애플리케이션 이벤트 로그에 Windows 이벤트로 기록됩니다.  
+   -   **위험(이벤트 포함)** - 이 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 또한 이 심각도 수준은 애플리케이션 이벤트 로그에 Windows 이벤트로 기록됩니다.  
 
 5. **Wi-Fi 프로필** 페이지에서 디바이스에서 네트워크 이름으로 표시할 이름을 입력합니다.  
 
@@ -78,8 +79,8 @@ System Center Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의
    > [!IMPORTANT]
    >  온\-프레미스 모바일 디바이스 관리에 대한 Wi-Fi 프로필을 만드는 경우 현재 분기의 Configuration Manager는 다음 Wi-Fi 보안 구성만 지원합니다.  
    > 
-   >  보안 유형 **WPA2 엔터프라이즈** 또는 **WPA2 개인**  
-   > 암호화 형식 **AES** 또는 **TKIP**  
+   >  보안 유형: **WPA2 엔터프라이즈** 또는 **WPA2 개인**  
+   > 암호화 유형: **AES** 또는 **TKIP**  
    > EAP 유형: **스마트 카드 또는 기타 인증서** 또는 **PEAP**  
    > 
    > Android 디바이스의 경우 **WPA-개인**, **WPA2-개인** 및 **WEP** 보안 유형은 지원되지 않습니다.  
@@ -107,9 +108,9 @@ System Center Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의
       > [!TIP]  
       >  EAP에 대해 선택한 클라이언트 인증서나 iOS 디바이스에 대해 선택한 클라이언트 인증이 네트워크 정책 서버와 같은 RADIUS(Remote Authentication Dial-In User Service) 서버에 인증하는 데 사용되는 경우 주체 대체 이름을 사용자 계정 이름으로 설정해야 합니다.  
 
-    - **서버 유효성 검사에 사용할 루트 인증서 선택**: 장치와 연결되는 서버가 장치에서 신뢰할 수 없는 서버 인증 인증서를 사용하는 경우 장치에서 인증서 신뢰 체인을 만들 수 있도록 서버 인증서에 대한 루트 인증서가 포함된 인증서 프로필을 선택합니다.  
+    - **서버 유효성 검사에 사용할 루트 인증서 선택**: 디바이스와 연결되는 서버가 디바이스에서 신뢰할 수 없는 서버 인증 인증서를 사용하는 경우 디바이스에서 인증서 신뢰 체인을 만들 수 있도록 서버 인증서에 대한 루트 인증서가 포함된 인증서 프로필을 선택합니다.  
 
-    - **클라이언트 인증을 위해 클라이언트 인증서 선택**: 연결된 장치를 인증하기 위해 서버 또는 네트워크 장치에 클라이언트 인증서가 필요한 경우 클라이언트 인증 인증서가 포함된 인증서 프로필을 선택합니다.  
+    - **클라이언트 인증을 위해 클라이언트 인증서 선택**: 연결된 디바이스를 인증하기 위해 서버 또는 네트워크 디바이스에 클라이언트 인증서가 필요한 경우 클라이언트 인증 인증서가 포함된 인증서 프로필을 선택합니다.  
 
       > [!NOTE]  
       >  루트 인증서 및 클라이언트 인증서를 선택하려면 먼저 해당 인증서를 인증서 프로필로 구성하고 배포해야 합니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](introduction-to-certificate-profiles.md)을 참조하세요.  

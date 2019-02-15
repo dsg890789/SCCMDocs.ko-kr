@@ -10,12 +10,13 @@ ms.assetid: 3b9c4027-a98b-406b-935c-ccabcfe713df
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 86452d628d025aea2b797d0ade92a3c2e2fff933
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c16487bc59a7e067aac5554213e2be750729078f
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53418580"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56120149"
 ---
 #  <a name="using-configuration-manager-software-updates-to-deliver-definition-updates"></a>Configuration Manager 소프트웨어 업데이트를 사용 하 여 정의 업데이트를 제공 하려면
 
@@ -75,11 +76,11 @@ ms.locfileid: "53418580"
 
 17. 마법사의 **배포 일정** 페이지에서 다음 설정을 구성합니다.
 
-    -   **기준 시간**: 계층 구조의 모든 클라이언트에서 동시에 최신 정의를 설치하려면 **UTC** 를 선택합니다. 실제 설치 시간은 2시간 이내에서 다를 수 있습니다. 이 설정을 사용하는 것이 좋습니다.
+    -   **시간에 따라**: 계층 구조의 모든 클라이언트에서 동시에 최신 정의를 설치하려면 **UTC** 를 선택합니다. 실제 설치 시간은 2시간 이내에서 다를 수 있습니다. 이 설정을 사용하는 것이 좋습니다.
 
     -   **소프트웨어를 사용할 수 있는 시간**: 이 규칙에서 만든 배포에 사용할 수 있는 시간을 지정합니다. 지정된 시간은 최소한 자동 배포 규칙이 실행된 지 1시간 후여야 합니다. 이렇게 하면 계층 구조의 배포 지점에 콘텐츠를 복제할 시간이 충분합니다. 일부 정의 업데이트에는 맬웨어 방지 엔진 업데이트도 들어 있으며, 배포 지점에 도달하는 데 더 오래 걸릴 수 있습니다.
 
-    -   **설치 최종 기한**: 선택 **가능한 한 빨리**합니다.
+    -   **설치 최종 기한**: **가능한 한 빨리**를 선택합니다.
 
         > [!NOTE]
         >  모든 클라이언트에서 동시에 업데이트를 요청하는 것을 방지하기 위해 소프트웨어 업데이트 최종 기한은 2시간 이내에서 다를 수 있습니다.

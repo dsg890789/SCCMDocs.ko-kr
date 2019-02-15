@@ -9,12 +9,13 @@ ms.assetid: eb4ab74b-b605-41dd-930c-ac18d2f40319
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 6e8a10756958a0490902c5f4ea2057546288332a
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 450211a2c68afa635f2f0b662375e5f24f351936
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53415350"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56136078"
 ---
 # <a name="using-the-microsoft-malware-protection-center-to-download-definitions"></a>Microsoft 맬웨어 보호 센터를 사용하여 정의 다운로드
 

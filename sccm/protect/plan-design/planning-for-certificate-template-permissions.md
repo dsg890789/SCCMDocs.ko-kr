@@ -10,12 +10,13 @@ ms.assetid: eab0e09d-b09e-4c14-ab14-c5f87472522e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: be8d8e70267630a048d68f1415928a7245b75368
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8c885920fa1e413468d09201ddaecc728ffb7b53
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53419413"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56135377"
 ---
 # <a name="planning-for-certificate-template-permissions-for-certificate-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 인증서 프로필에 대한 인증서 템플릿 권한 계획
 
@@ -50,10 +51,10 @@ ms.locfileid: "53419413"
 
 #### <a name="to-check-for-read-and-enroll-permissions-for-users-and-domain-member-computers"></a>사용자 및 도메인 멤버 컴퓨터의 읽기 및 등록 권한을 확인하려면  
 
-1.  인증서 등록 지점을 호스팅하는 사이트 시스템 서버에서 다음 DWORD 레지스트리 키를 만들고 값을 0으로 지정합니다. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SCCM\CRP\SkipTemplateCheck  
+1.  인증서 등록 지점을 호스트하는 사이트 시스템 서버에 0 값을 갖는 다음 DWORD 레지스트리 키를 만듭니다. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SCCM\CRP\SkipTemplateCheck  
 
 2.  도메인 컨트롤러에서 응답이 없어 계정을 인증할 수 없고 권한 확인을 무시하려는 경우  
 
-    -   인증서 등록 지점을 호스트하는 사이트 시스템 서버에서 DWORD 레지스트리 키 를 만들고 값을 0으로 지정합니다. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SCCM\CRP\SkipTemplateCheckOnlyIfAccountAccessDenied  
+    -   인증서 등록 지점을 호스트하는 사이트 시스템 서버에 1 값을 갖는 다음 DWORD 레지스트리 키를 만듭니다. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SCCM\CRP\SkipTemplateCheckOnlyIfAccountAccessDenied  
 
 3.  발급 CA에서, 인증서 템플릿 속성에 있는 **보안** 탭에서 보안 그룹을 하나 이상 추가하여 사용자 또는 디바이스 계정에 읽기 및 등록 권한을 부여합니다.  

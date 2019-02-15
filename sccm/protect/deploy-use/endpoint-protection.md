@@ -10,12 +10,13 @@ ms.assetid: 76c90f64-d729-456b-8304-01852cd66fb6
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 160713fe480b0a47c2ad57376c4a1dccdbfb00b1
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1048b24dba0658610471d37f12f75fd1d06b8d03
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53418954"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56123882"
 ---
 # <a name="endpoint-protection"></a>Endpoint Protection
 
@@ -45,7 +46,7 @@ Windows 10 및 Windows Server 2016 컴퓨터부터, Windows Defender가 이미 �
 
  또한 Configuration Manager 콘솔의 Endpoint Protection을 사용하면 Windows 방화벽 설정을 관리할 수 있습니다.  
 
- [예제 시나리오: System Center Endpoint Protection을 사용하여 System Center Configuration Manager에서 맬웨어로부터 컴퓨터 보호](scenarios-endpoint-protection.md) Endpoint Protection 및 Windows 방화벽.  
+ [예제 시나리오: System Center Endpoint Protection을 사용하여 System Center Configuration Manager에서 맬웨어로부터 컴퓨터 보호](scenarios-endpoint-protection.md) Endpoint Protection 및 Windows 방화벽  
 
 
 ## <a name="managing-malware-with-endpoint-protection"></a>Endpoint Protection을 사용하여 맬웨어 관리  
@@ -111,7 +112,7 @@ Mac 컴퓨터와 Linux 서버에 대한 Endpoint Protection 클라이언트 소�
 2. 웹 사이트의 위쪽에서 **다운로드 및 키** 탭을 선택합니다.
 3. **System Center Endpoint Protection(현재 분기)** 제품을 필터링합니다.
 4. **다운로드** 링크를 클릭합니다.
-5. **Continue(계속)** 를 클릭합니다. 여러 파일을 비롯 한 명명 된 표시 됩니다. **System Center Endpoint Protection (현재 분기-버전 1606) for Linux OS and Macintosh OS Multilanguage 32/64 bit 1878 MB ISO**합니다.
+5. **Continue(계속)** 를 클릭합니다. **Linux OS 및 Macintosh OS 다국어 32/64 비트용 System Center Endpoint Protection(현재 분기 - 버전 1606) 1,878MB ISO** 파일을 포함하여 여러 개의 파일이 표시됩니다.
 6. 파일을 다운로드하려면 화살표 아이콘을 클릭합니다. 파일 이름은 **SW_DVD5_Sys_Ctr_Endpnt_Prtctn_1606_MultiLang_-3_EptProt_Lin_Mac_MLF_X21-67050.ISO**입니다.
 
 2018년 1월 업데이트(X21-67050)에 포함된 버전은 다음과 같습니다.

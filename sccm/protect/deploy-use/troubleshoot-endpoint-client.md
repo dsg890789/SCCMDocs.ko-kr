@@ -10,12 +10,13 @@ ms.assetid: d837253e-fcc2-422a-9e2c-c78b938dfd8c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b6cbee02b0f3eaa34891019e305572f854575b86
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4f7528f15c67e8ce339013db583d545cb252712d
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53420821"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56125666"
 ---
 # <a name="troubleshooting-windows-defender-or-endpoint-protection-client"></a>Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결
 
@@ -155,7 +156,7 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 -   **실행**을 클릭합니다. 최신 업데이트가 수동으로 컴퓨터에 설치됩니다.  
 
 
-### <a name="step-7-contact-support"></a>7단계: 지원 서비스에 문의  
+### <a name="step-7-contact-support"></a>7단계: 지원 사이트에 문의  
 
 -   해당 단계로 문제가 해결되지 않으면 지원 서비스에 문의합니다. 자세한 내용은 [고객 지원](http://go.microsoft.com/fwlink/?LinkID=196174)(http://go.microsoft.com/fwlink/?LinkID=196174)을 참조합니다.  
 
@@ -166,7 +167,7 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 
  **해결 방법**  
 
-### <a name="step-1-restart-your-computer"></a>1단계: 컴퓨터를 다시 시작합니다.  
+### <a name="step-1-restart-your-computer"></a>1단계: 컴퓨터 다시 시작  
 
 -   모든 애플리케이션을 종료한 후 컴퓨터를 다시 시작합니다.  
 

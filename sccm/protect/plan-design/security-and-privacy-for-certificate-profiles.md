@@ -10,12 +10,13 @@ ms.assetid: 3393db41-900a-44c5-b950-2d46a35a198c
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: d5e9d10844a344ea56eaebb315c92675a760c983
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6a0df16ba673acf39aa4861d3a46f1e185ec4589
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32350479"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56132390"
 ---
 # <a name="security-and-privacy-for-certificate-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 인증서 프로필에 대한 보안 및 개인 정보
 

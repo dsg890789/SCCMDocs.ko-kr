@@ -10,12 +10,13 @@ ms.assetid: 33a6c1d9-4dd8-411c-a748-693a5bd2ea5a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 82423914b1d1f5cae8fa4ecea3d02ef02d23703a
-ms.sourcegitcommit: 2cc635835709fb8d86cdb63ea34233b36c94d4d8
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d6446fed2d48fc6428bdc3fbc7a24f728c206dc7
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52258913"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56132424"
 ---
 # <a name="create-and-deploy-windows-defender-application-guard-policy"></a>Windows Defender Application Guard 정책 만들기 및 배포 
 *적용 대상: System Center Configuration Manager (현재 분기)* 
@@ -63,7 +64,7 @@ Windows Defender Application Guard 정책을 만들고 배포하려면 Windows 1
 - **파일:** (Configuration Manager 1802 버전부터 시작)
     - 다운로드한 파일을 호스트에 저장
 
-### <a name="bkmk_ABS"></a> 응용 프로그램 동작 설정
+### <a name="bkmk_ABS"></a> 애플리케이션 동작 설정
 Application Guard 세션 내에서 애플리케이션 동작을 구성합니다. Configuration Manager 1802 이전 버전에서는 애플리케이션 동작과 호스트 상호 작용이 **설정** 탭에 있었습니다.
 
 - **콘텐츠:**

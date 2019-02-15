@@ -10,12 +10,13 @@ ms.assetid: 601e3a8d-e9e7-456f-a844-f19c3dae12a9
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 6fd12ac08e7adfd683347065064c2a5dd006a43d
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b0386f507ef131a38438fd0d76bfdc223a841245
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32346960"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56140765"
 ---
 # <a name="security-and-privacy-for-email-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 메일 프로필에 대한 보안 및 개인 정보
 

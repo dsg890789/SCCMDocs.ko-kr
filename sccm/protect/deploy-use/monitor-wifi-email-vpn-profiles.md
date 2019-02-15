@@ -10,12 +10,13 @@ ms.assetid: e2315b8b-98bc-40e1-8ef9-bfb5e69ab109
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 47b5bb12a89143a0c7e6d16a3252948b955b8ff3
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 49602002a789c0bd1e8d8cc128d3062fde9194fc
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32349214"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56137697"
 ---
 # <a name="monitor-email-wi-fi-and-vpn-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 메일, Wi-Fi 및 VPN 프로필 모니터링
 
@@ -51,7 +52,7 @@ System Center Configuration Manager 메일, Wi-Fi 또는 VPN 프로필을 계층
 
     -   **비규격:** 영향받는 자산 수에 따라 프로필 내에 있는 모든 비규격 규칙의 목록을 표시합니다. 규칙을 두 번 클릭하여 **자산 및 호환성** 작업 영역의 **사용자** 노드 아래에 임시 노드를 만들 수 있습니다. 이 노드에는 이 프로필과 호환되지 않는 모든 사용자가 포함됩니다. 사용자를 선택하면 **자산 정보** 창에 선택한 문제의 영향을 받는 사용자가 표시됩니다. 목록에서 문제에 대한 추가 정보를 표시할 사용자를 두 번 클릭합니다.  
 
-    -   **알 수 없음:** 선택한 프로필 배포의 준수를 보고하지 않은 모든 사용자의 목록을 장치의 현재 클라이언트 상태와 함께 표시합니다.  
+    -   **알 수 없음:** 선택한 프로필 배포의 준수를 보고하지 않은 모든 사용자의 목록을 디바이스의 현재 클라이언트 상태와 함께 표시합니다.  
 
 5.  **배포 상태** 페이지에서 배포된 프로필의 준수에 대한 자세한 정보를 검토할 수 있습니다. 이 정보를 나중에 빠르게 다시 찾을 수 있도록 임시 노드가 **배포** 노드 아래에 만들어집니다.  
 

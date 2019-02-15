@@ -10,12 +10,13 @@ ms.assetid: f4a1335c-bb3d-493e-a124-83a32a107dc8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5de0ab2eb56ad671a43a6a40fab4e1f4dcc051a4
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4d35ec2f02befec0221a1555be19046d3751b3b9
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53424396"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56131407"
 ---
 # <a name="how-to-monitor-endpoint-protection-status"></a>Endpoint Protection 상태를 모니터링하는 방법
 

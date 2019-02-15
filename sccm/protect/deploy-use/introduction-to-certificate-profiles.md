@@ -10,12 +10,13 @@ ms.assetid: 41dcc259-f147-4420-bff2-b65bdf8cff77
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 27a615a412bca7e30ab5f5a3dc5f794961d13d2c
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5872a6a8ee69e50d0abfe5840a087aaf83ab7aa5
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53424496"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156613"
 ---
 # <a name="introduction-to-certificate-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager의 인증서 프로필 소개
 
@@ -34,9 +35,9 @@ ms.locfileid: "53424496"
 
 -   설치된 인증서를 모니터링하고 보고하는 기능  
 
-**예제:** 모든 직원이 회사의 여러 위치에서 Wi-Fi 핫스팟에 연결할 수 있어야 합니다. 사용자가 손쉽게 연결할 수 있도록 하려면 먼저 Wi-Fi에 연결하는 데 필요한 인증서를 배포합니다. 그런 다음, 인증서를 참조하는 Wi-Fi 프로필을 배포합니다.  
+**예:** 모든 직원이 회사의 여러 위치에서 Wi-Fi 핫스폿에 연결할 수 있어야 합니다. 사용자가 손쉽게 연결할 수 있도록 하려면 먼저 Wi-Fi에 연결하는 데 필요한 인증서를 배포합니다. 그런 다음, 인증서를 참조하는 Wi-Fi 프로필을 배포합니다.  
 
-예: 현재 위치에서 PKI를 해야합니다. 더 유연하고 안전한 인증서 배포 방법으로 전환하려고 합니다. 사용자는 보안을 유지하면서 자신의 개인 디바이스에서 회사 리소스에 액세스할 수 있어야 합니다. 특정 디바이스 플랫폼을 지원하는 설정 및 프로토콜을 사용하여 인증서 프로필을 구성합니다. 그러고 나면 디바이스는 인터넷에 연결된 등록 서버에서 이 인증서를 자동으로 요청할 수 있습니다. 그런 다음 디바이스가 회사 리소스에 액세스할 수 있도록 VPN 프로필을 구성하여 이러한 인증서를 사용합니다.  
+**예:** PKI를 사용 중인데 더 유연하고 안전한 인증서 배포 방법으로 전환하려고 합니다. 사용자는 보안을 유지하면서 자신의 개인 디바이스에서 회사 리소스에 액세스할 수 있어야 합니다. 특정 디바이스 플랫폼을 지원하는 설정 및 프로토콜을 사용하여 인증서 프로필을 구성합니다. 그러고 나면 디바이스는 인터넷에 연결된 등록 서버에서 이 인증서를 자동으로 요청할 수 있습니다. 그런 다음 디바이스가 회사 리소스에 액세스할 수 있도록 VPN 프로필을 구성하여 이러한 인증서를 사용합니다.  
 
 
 

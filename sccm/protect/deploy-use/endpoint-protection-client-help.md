@@ -10,12 +10,13 @@ ms.assetid: fdcee455-22e3-451d-bcf3-e7b62792f04a
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 580218b701b01af388b56bbd2b7293f67cf5d77d
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 55615761dfa18c0a6bfc4988c18a4327446f02ca
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32348932"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56124867"
 ---
 # <a name="endpoint-protection-client-help"></a>Endpoint Protection 클라이언트 도움말
 

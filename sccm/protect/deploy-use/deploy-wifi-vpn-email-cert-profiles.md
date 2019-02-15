@@ -10,12 +10,13 @@ ms.assetid: 3753608d-b539-44dc-8e3f-b631319e7687
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: abae42358e6baba660841eab9443410c0b818428
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 63b52b42a9957ed8728d0942988067fef2be6271
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53419260"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56129717"
 ---
 # <a name="deploy-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager의 프로필 배포
 
@@ -54,7 +55,7 @@ ms.locfileid: "53419260"
 
     -   **경고 생성** - 지정된 날짜 및 시간을 기준으로 프로필 준수가 지정된 비율에 못 미치는 경우에 생성되는 경고를 구성하려면 이 옵션을 사용합니다. 경고를 System Center Operations Manager로 전송할지 여부도 지정할 수 있습니다.  
 
-    -   -   **임의 지연(시)**: (단순 인증서 등록 프로토콜 설정이 포함된 인증서 프로필에만 해당) 네트워크 디바이스 등록 서비스의 과도한 처리를 방지하려면 지연 기간을 지정합니다. 기본값은 **64** 시간입니다.  
+    -   -   **임의 지연(시간)**: (단순 인증서 등록 프로토콜 설정이 포함된 인증서 프로필에 대한 경우에만) 네트워크 디바이스 등록 서비스의 과도한 처리를 방지하려면 지연 기간을 지정합니다. 기본값은 **64** 시간입니다.  
 
     -   **이 <type> 프로필에 대한 준수 평가 일정 지정** - 클라이언트 컴퓨터에서 배포된 프로필을 평가할 일정을 지정합니다. 단순 일정 또는 사용자 지정 일정 중에서 지정할 수 있습니다.  
 
