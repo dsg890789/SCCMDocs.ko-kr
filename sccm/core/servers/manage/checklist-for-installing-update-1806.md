@@ -10,12 +10,13 @@ ms.assetid: bb0a87a6-fd65-440b-90a5-2fef35622c9d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: d0f79053eba91ac7177fe117a79612d1c1988965
-ms.sourcegitcommit: be8c0182db9ef55a948269fcbad7c0f34fd871eb
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6c0705df8fafea253fde06ed605521aad2d6ffbd
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42755779"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56131713"
 ---
 # <a name="checklist-for-installing-update-1806-for-configuration-manager"></a>Configuration Manager용 업데이트 1806을 설치하기 위한 검사 목록
 
@@ -73,7 +74,7 @@ Configuration Manager의 현재 분기를 사용하는 경우 버전 1806용 콘
 
 자세한 내용은 [라이선스 및 분기](/sccm/core/understand/learn-more-editions)를 참조하세요.
 
-#### <a name="review-microsoft-net-versions"></a>Microsoft .NET 버전 검토 
+#### <a name="review-microsoft-net-versions"></a>Microsoft .NET 버전 검토 
 사이트에서 이 업데이트를 설치할 때 Configuration Manager에서 자동으로.NET Framework 4.5.2를 설치합니다. 이 필수 구성 요소가 이미 설치되지 않은 경우 사이트는 다음 사이트 시스템 역할 중 하나를 호스트하는 각 서버에 설치합니다.
 
 -   관리 지점
@@ -83,19 +84,19 @@ Configuration Manager의 현재 분기를 사용하는 경우 버전 1806용 콘
 
 이 설치는 사이트 시스템 서버를 다시 부팅 보류 중 상태로 전환하고 Configuration Manager 구성 요소 상태 뷰어에 오류를 보고할 수 있습니다. 또한, 서버가 다시 부팅될 때까지 서버의 .NET 애플리케이션에서 임의의 오류가 발생할 수 있습니다.
 
-자세한 내용은 [사이트 및 사이트 시스템 필수 조건](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)을 참조하세요.
+자세한 내용은  [사이트 및 사이트 시스템 필수 구성 요소](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)를 참조하세요.
 
 #### <a name="review-the-version-of-the-windows-adk-for-windows-10"></a>Windows 10용 Windows ADK 버전 검토
 Windows 10 ADK(평가 및 배포 키트)의 버전은 Configuration Manager 버전 1806에 대해 지원되어야 합니다. 지원되는 Windows ADK 버전에 대한 자세한 내용은 [Windows 10 ADK](/sccm/core/plan-design/configs/support-for-windows-10#windows-10-adk)를 참조하세요. Windows ADK를 업데이트해야 할 경우에는 Configuration Manager의 업데이트를 시작하기 전에 업데이트합니다. 이렇게 하면 기본 부팅 이미지가 자동으로 최신 버전의 Windows PE로 업데이트됩니다. 사이트를 업데이트한 후 사용자 지정 부팅 이미지를 수동으로 업데이트합니다.
 
 Windows ADK를 업데이트하기 전에 사이트를 업데이트하는 경우 [부팅 이미지를 사용하여 배포 지점 업데이트](/sccm/osd/get-started/manage-boot-images#update-distribution-points-with-the-boot-image)를 참조하세요.
 
-#### <a name="review-the-site-and-hierarchy-status-for-unresolved-issues"></a>해결되지 않은 문제에 대해 사이트 및 계층 구조 상태 검토 
+#### <a name="review-the-site-and-hierarchy-status-for-unresolved-issues"></a>해결되지 않은 문제에 대해 사이트 및 계층 구조 상태 검토 
 사이트를 업데이트하기 전에 원격 컴퓨터에 설치된 사이트 서버, 사이트 데이터베이스 서버 및 사이트 시스템 역할의 모든 작동 문제를 해결합니다. 기존 작동 문제로 인해 사이트 업데이트가 실패할 수 있습니다.
 
-자세한 내용은 [경고 및 상태 시스템 사용](/sccm/core/servers/manage/use-alerts-and-the-status-system)을 참조하세요.
+자세한 내용은  [경고 및 상태 시스템 사용](/sccm/core/servers/manage/use-alerts-and-the-status-system)을 참조하세요.
 
-#### <a name="review-file-and-data-replication-between-sites"></a>사이트 간의 파일 및 데이터 복제 검토   
+#### <a name="review-file-and-data-replication-between-sites"></a>사이트 간의 파일 및 데이터 복제 검토   
 사이트 간의 파일 및 데이터베이스 복제가 작동하고 최신 상태인지 확인합니다. 어떤 경우든 지연 또는 백로그는 원활한 업데이트 또는 성공적인 업데이트를 방해할 수 있습니다. 데이터베이스 복제의 경우 업데이트를 시작하기 전에 Replication Link Analyzer를 사용하여 문제를 해결할 수 있습니다.
 
 자세한 내용은 [Replication Link Analyzer 정보](/sccm/core/servers/manage/monitor-hierarchy-and-replication-infrastructure#BKMK_RLA)를 참조하세요.
@@ -103,13 +104,13 @@ Windows ADK를 업데이트하기 전에 사이트를 업데이트하는 경우 
 #### <a name="install-all-applicable-critical-windows-updates"></a>모든 적용 가능한 중요 Windows 업데이트 설치
 Configuration Manager에 대한 업데이트를 설치하기 전에 각 해당 사이트 시스템에 대한 중요한 OS 업데이트를 설치합니다. 이러한 서버는 사이트 서버, 사이트 데이터베이스 서버 및 원격 사이트 시스템 역할을 포함합니다. 설치하는 업데이트에서 다시 시작하도록 요구하는 경우 업그레이드를 시작하기 전에 해당 서버를 다시 시작합니다.
 
-#### <a name="disable-database-replicas-for-management-points-at-primary-sites"></a>기본 사이트의 관리 지점에 데이터베이스 복제본을 사용하지 않도록 설정   
+#### <a name="disable-database-replicas-for-management-points-at-primary-sites"></a>기본 사이트의 관리 지점에 데이터베이스 복제본을 사용하지 않도록 설정   
 Configuration Manager에서 관리 지점에 대한 데이터베이스 복제본이 사용하도록 설정된 기본 사이트를 성공적으로 업데이트할 수 없습니다. Configuration Manager용 업데이트를 설치하기 전에 데이터베이스 복제를 사용하지 않도록 설정합니다.
 
 자세한 내용은 [관리 지점에 대한 데이터베이스 복제본](/sccm/core/servers/deploy/configure/database-replicas-for-management-points)을 참조하세요.
 
 #### <a name="set-sql-server-alwayson-availability-groups-to-manual-failover"></a>SQL Server AlwaysOn 가용성 그룹을 수동 장애 조치(failover)로 설정   
-가용성 그룹을 사용할 경우 업데이트 설치를 시작하기 전에 가용성 그룹이 수동 장애 조치(failover)로 설정되어 있는지 확인합니다. 사이트를 업데이트한 후에 장애 조치(failover)를 자동으로 복원할 수 있습니다. 자세한 내용은 [사이트 데이터베이스에 대한 SQL Server AlwaysOn](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database)을 참조하세요.
+가용성 그룹을 사용할 경우 업데이트 설치를 시작하기 전에 가용성 그룹이 수동 장애 조치(failover)로 설정되어 있는지 확인합니다. 사이트를 업데이트한 후에 장애 조치(failover)를 자동으로 복원할 수 있습니다. 자세한 내용은  [사이트 데이터베이스에 대한 SQL Server AlwaysOn](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database)을 참조하세요.
 
 #### <a name="disable-site-maintenance-tasks-at-each-site"></a>각 사이트에서 사이트 유지 관리 작업을 사용하지 않도록 설정
 업데이트를 설치하기 전에 업데이트 프로세스가 활성 상태인 동안 실행될 수 있는 모든 사이트 유지 관리 작업을 사용하지 않도록 설정합니다. 예를 들어 다음이 있지만, 이에 국한되지는 않습니다.
@@ -120,28 +121,28 @@ Configuration Manager에서 관리 지점에 대한 데이터베이스 복제본
 
 업데이트를 설치하는 동안 사이트 데이터베이스 유지 관리 작업이 실행되면 업데이트 설치가 실패할 수 있습니다. 작업을 사용하지 않도록 설정하기 전에 작업 일정을 기록하세요. 그래야 업데이트가 설치된 후에 해당 구성을 복원할 수 있습니다.
 
-자세한 내용은 [유지 관리 작업](/sccm/core/servers/manage/maintenance-tasks) 및 [유지 관리 작업에 대한 참조](/sccm/core/servers/manage/reference-for-maintenance-tasks)를 참조하세요.
+자세한 내용은  [유지 관리 작업](/sccm/core/servers/manage/maintenance-tasks) 및 [유지 관리 작업에 대한 참조](/sccm/core/servers/manage/reference-for-maintenance-tasks)를 참조하세요.
 
 #### <a name="temporarily-stop-any-antivirus-software"></a>바이러스 백신 소프트웨어를 일시적으로 중지 
 사이트를 업데이트하기 전에 Configuration Manager 서버에서 바이러스 백신 소프트웨어를 중지합니다. <!--SMS.503481--> 
 
-#### <a name="create-a-backup-of-the-site-database"></a>사이트 데이터베이스의 백업 만들기 
+#### <a name="create-a-backup-of-the-site-database"></a>사이트 데이터베이스의 백업 만들기 
 사이트를 업데이트하기 전에 중앙 관리 사이트 및 기본 사이트에서 사이트 데이터베이스를 백업합니다. 이 백업은 재해 복구에 사용할 성공적인 백업이 있는지 확인합니다.
 
-자세한 내용은 [백업 및 복구](/sccm/protect/understand/backup-and-recovery)를 참조하세요.
+자세한 내용은  [백업 및 복구](/sccm/protect/understand/backup-and-recovery)를 참조하세요.
 
-#### <a name="plan-for-client-piloting"></a>클라이언트 파일럿에 대한 계획   
+#### <a name="plan-for-client-piloting"></a>클라이언트 파일럿에 대한 계획   
 클라이언트를 업데이트하는 업데이트를 설치할 때 모든 활성 클라이언트를 배포하고 업그레이드하기 전에 사전 프로덕션 환경에서 새로운 클라이언트 업데이트를 테스트할 수 있습니다. 이 옵션을 활용하려면 업데이트의 설치를 시작하기 전에 사전 프로덕션에 대한 자동 업그레이드를 지원하도록 사이트를 구성해야 합니다.
 
-자세한 내용은 [클라이언트 업그레이드](/sccm/core/clients/manage/upgrade/upgrade-clients) 및 [사전 프로덕션 컬렉션에서 클라이언트 업그레이드를 테스트하는 방법](/sccm/core/clients/manage/upgrade/test-client-upgrades)을 참조하세요.
+자세한 내용은  [클라이언트 업그레이드](/sccm/core/clients/manage/upgrade/upgrade-clients) 및 [사전 프로덕션 컬렉션에서 클라이언트 업그레이드를 테스트하는 방법](/sccm/core/clients/manage/upgrade/test-client-upgrades)을 참조하세요.
 
 #### <a name="plan-to-use-service-windows"></a>서비스 창 사용 계획   
-사이트 서버에 업데이트를 설치할 수 있는 기간을 정의하려면 서비스 기간을 사용합니다. 이를 통해 계층 구조의 사이트에서 업데이트를 설치하는 시기를 제어할 수 있습니다. 자세한 내용은 [사이트 서버에 대한 서비스 기간](/sccm/core/servers/manage/service-windows)을 참조하세요.
+사이트 서버에 업데이트를 설치할 수 있는 기간을 정의하려면 서비스 기간을 사용합니다. 이를 통해 계층 구조의 사이트에서 업데이트를 설치하는 시기를 제어할 수 있습니다. 자세한 내용은  [사이트 서버에 대한 서비스 기간](/sccm/core/servers/manage/service-windows)을 참조하세요.
 
 #### <a name="review-supported-extensions"></a>지원되는 확장 검토
 <!--SCCMdocs#587--> Microsoft 또는 Microsoft 파트너에서 다른 제품으로 Configuration Manager를 확장하는 경우 해당 제품이 버전 1806을 지원하는지 확인합니다. 이 정보는 제품 공급업체를 통해 확인합니다. 예를 들어 Microsoft Deployment Toolkit [릴리스 정보](/sccm/mdt/release-notes)를 참조합니다.
 
-#### <a name="run-the-setup-prerequisite-checker"></a>설치 필수 구성 요소 검사기 실행   
+#### <a name="run-the-setup-prerequisite-checker"></a>설치 필수 구성 요소 검사기 실행   
 업데이트가 콘솔에 **사용 가능**으로 표시되는 경우 업데이트를 설치하기 전에 독립적으로 필수 구성 요소 검사기를 실행할 수 있습니다. 사이트에 업데이트를 설치할 때 필수 조건 검사가 다시 실행됩니다.
 
 콘솔에서 필수 구성 요소 검사를 실행하려면 **관리**작업 영역으로 이동하여 **업데이트 및 서비스**를 선택합니다. **Configuration Manager 1806** 업데이트 패키지를 선택하고, 리본 메뉴에서 **필수 구성 요소 검사 실행**을 클릭합니다.
@@ -149,14 +150,14 @@ Configuration Manager에서 관리 지점에 대한 데이터베이스 복제본
 자세한 내용은 [콘솔 내 업데이트를 설치하기 전에](/sccm/core/servers/manage/install-in-console-updates#bkmk_beforeinstall)에서  **업데이트를 설치하기 전에 필수 구성 요소 검사기 실행**에 대한 섹션을 참조하세요.
 
 > [!IMPORTANT]  
-> 필수 구성 요소 검사기가 실행되면 프로세스에서 사이트 유지 관리 작업에 사용되는 일부 제품 소스 파일을 업데이트합니다. 따라서 필수 구성 요소 검사기를 실행한 후 업데이트를 설치하기 전에 사이트 유지 관리 작업을 수행해야 하는 경우 사이트 서버의 CD.Latest 폴더에서 **Setupwpf.exe**(Configuration Manager 설치 프로그램)를 실행합니다.
+> 필수 구성 요소 검사기가 실행되면 프로세스에서 사이트 유지 관리 작업에 사용되는 일부 제품 소스 파일을 업데이트합니다. 따라서 필수 구성 요소 검사기를 실행한 후 업데이트를 설치하기 전에 사이트 유지 관리 작업을 수행해야 하는 경우 사이트 서버의 CD.Latest 폴더에서  **Setupwpf.exe** (Configuration Manager 설치 프로그램)를 실행합니다.
 
-#### <a name="update-sites"></a>사이트 업데이트   
+#### <a name="update-sites"></a>사이트 업데이트   
 이제 계층 구조에 대한 업데이트 설치를 시작할 수 있습니다. 업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates#a-namebkmkinstalla-install-in-console-updates)를 참조하세요.
 
 일상적인 업무 시간 외에 업데이트를 설치하도록 계획할 수 있습니다. 프로세스가 비즈니스 작업에 최소한의 영향을 주는 시기를 확인합니다. 업데이트를 설치하면 해당 작업에서 사이트 구성 요소 및 사이트 시스템 역할을 다시 설치합니다.
 
-자세한 내용은 [Configuration Manager용 업데이트](/sccm/core/servers/manage/updates)를 참조하세요.
+자세한 내용은  [Configuration Manager에 대한 업데이트](/sccm/core/servers/manage/updates)를 참조하세요.
 
 
 
