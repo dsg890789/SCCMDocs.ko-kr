@@ -10,12 +10,13 @@ ms.technology: configmgr-sum
 ms.assetid: 2486375c-d4a2-4cf2-9124-9bee02bbf173
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 585077c44b13d79da55e8ab140fd93998b8371c1
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c7ab7e28d576bb543fa47f86ad4363e9cffd53e0
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32353572"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56138010"
 ---
 #  <a name="BKMK_RemoveSUP"></a> 소프트웨어 업데이트 지점 사이트 시스템 역할 제거  
 

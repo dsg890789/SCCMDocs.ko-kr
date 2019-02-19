@@ -10,12 +10,13 @@ ms.assetid: 5ee5928f-3d72-4b00-8156-1e0d1030a96c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0e2bb7992854f8743efa45f924e3d3d0718a3efe
-ms.sourcegitcommit: 8791bb9be477fe6a029e8a7a76e2ca310acd92e0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8ad92f3857c1303bf3f4a7c171b0de98f75e56ee
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50411394"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56135173"
 ---
 # <a name="security-and-privacy-for-os-deployment-in-configuration-manager"></a>Configuration Manager에서 OS 배포의 보안 및 개인 정보 보호
 
@@ -244,7 +245,7 @@ ms.locfileid: "50411394"
 
  OS가 없는 컴퓨터에 OS를 배포하는 것 외에도 Configuration Manager를 사용하여 한 컴퓨터에서 다른 컴퓨터로 사용자 파일과 설정을 마이그레이션할 수 있습니다. 관리자는 개인적 데이터 파일, 구성 설정 및 브라우저 쿠키를 포함하여 전송할 정보를 구성합니다.  
 
- Configuration Manager는 정보를 상태 마이그레이션 지점에 저장하고 전송 및 스토리지 중에 암호화합니다. 상태 정보와 연결된 새 컴퓨터만 저장된 정보를 검색할 수 있습니다. 새 컴퓨터가 정보를 검색하는 키를 분실한 경우 컴퓨터 연합 인스턴스 개체에 대한 **복구 정보 보기** 권한이 있는 Configuration Manager 관리자가 정보에 액세스하고 정보를 새 컴퓨터에 연결할 수 있습니다. 새 컴퓨터에서 상태 정보가 복원되면 기본적으로 만 하루 뒤에 데이터가 삭제됩니다. 삭제하도록 표시한 데이터를 상태 마이그레이션 지점에서 제거하는 시점을 구성할 수 있습니다. Configuration Manager는 상태 마이그레이션 정보를 사이트 데이터베이스에 저장하지 않고 Microsoft로 보내지 않습니다.  
+ Configuration Manager는 정보를 상태 마이그레이션 지점에 저장하고 전송 및 저장 중에 암호화합니다. 상태 정보와 연결된 새 컴퓨터만 저장된 정보를 검색할 수 있습니다. 새 컴퓨터가 정보를 검색하는 키를 분실한 경우 컴퓨터 연합 인스턴스 개체에 대한 **복구 정보 보기** 권한이 있는 Configuration Manager 관리자가 정보에 액세스하고 정보를 새 컴퓨터에 연결할 수 있습니다. 새 컴퓨터에서 상태 정보가 복원되면 기본적으로 만 하루 뒤에 데이터가 삭제됩니다. 삭제하도록 표시한 데이터를 상태 마이그레이션 지점에서 제거하는 시점을 구성할 수 있습니다. Configuration Manager는 상태 마이그레이션 정보를 사이트 데이터베이스에 저장하지 않고 Microsoft로 보내지 않습니다.  
 
  부팅 미디어를 사용하여 OS 이미지를 배포하는 경우 항상 기본 옵션을 사용하여 부팅 미디어를 암호로 보호합니다. 암호는 작업 순서에 저장된 모든 변수를 암호화하지만 변수에 저장되지 않은 정보는 쉽게 노출될 수 있습니다.  
 

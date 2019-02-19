@@ -10,12 +10,13 @@ ms.assetid: ba9b623f-6e86-4006-93f2-83d563de0cd0
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0d2e3c7bc6cba90ebc24bdfdf244f54d1752d749
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 31456cac8ff242c377b441a14503c3766f40cf9f
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53420467"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56135394"
 ---
 # <a name="how-to-assign-clients-to-a-site-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사이트에 클라이언트를 할당하는 방법
 
@@ -111,7 +112,7 @@ Configuration Manager는 Configuration Manager(현재 분기) 클라이언트를
 
   사이트 호환성 검사에는 다음 조건 중 하나가 필요합니다.  
 
-- 클라이언트가 Active Directory 도메인 서비스에 게시되는 사이트 정보에 액세스할 수 있습니다.  
+- 클라이언트가 Active Directory Domain Services에 게시되는 사이트 정보에 액세스할 수 있습니다.  
 
 - 클라이언트에서 사이트 내 관리 지점과 통신할 수 있습니다.  
 
