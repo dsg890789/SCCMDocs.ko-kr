@@ -10,12 +10,13 @@ ms.assetid: ab1aecdd-d943-44f5-b0a9-e8fe7439e5d6
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 1ff2b135d38c819804cc7873effa3bff5f9254e7
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 41ec97899d8f959298b3f62ff4a86837b04af461
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53422099"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56140918"
 ---
 # <a name="create-mac-computer-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 Mac 컴퓨터 애플리케이션 만들기
 

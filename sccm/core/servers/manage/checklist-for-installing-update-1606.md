@@ -11,12 +11,13 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: b8584bf77a72a4feb86814014ee0239f62a91f71
-ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3ad9d054f39e5d5a607b0116b438c784950c7ebd
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54896662"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56138112"
 ---
 # <a name="checklist-for-installing-update-1606-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 업데이트 1606을 설치하기 위한 검사 목록
 

@@ -10,12 +10,13 @@ ms.assetid: 46dd9cb2-a812-4b6a-a747-b840f92fef8b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: bce6abd57cd50ff19339c29b97bda165109b79b1
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7c76f0213ffb30432c51430f3fd98b911ab5d627
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32344316"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56129156"
 ---
 # <a name="international-support-in-system-center-configuration-manager"></a>System Center Configuration Manager의 다국어 기능 지원
 

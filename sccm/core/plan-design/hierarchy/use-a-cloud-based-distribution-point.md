@@ -10,12 +10,13 @@ ms.assetid: 3cd9c725-6b42-427d-9191-86e67f84e48c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 00c04190b954a7b19d4bea0e43b2dc6ecf9d8388
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1f251d1356c0cc04ce285aa0ea9a131e5f21ee0f
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53414993"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156977"
 ---
 # <a name="use-a-cloud-distribution-point-in-configuration-manager"></a>Configuration Manager에서 클라우드 배포 지점 사용
 

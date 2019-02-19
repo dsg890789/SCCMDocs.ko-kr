@@ -10,12 +10,13 @@ ms.assetid: 3bd1e487-ea18-43c1-b7c3-acbd9b86d429
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 18f51e43e223b13c01d0c6bde5a30fe08af64f61
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 838a1dffd5a84544259d26cc8d58eb843cc57d0f
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53415459"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56141071"
 ---
 # <a name="create-and-deploy-an-application-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 애플리케이션 만들기 및 배포
 

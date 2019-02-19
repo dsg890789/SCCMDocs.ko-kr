@@ -10,12 +10,13 @@ ms.assetid: 1fcc921f-085f-4b0b-9c53-1e0707211076
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0a1f3612fcf7eab7f54575c4ce704891d1d3824f
-ms.sourcegitcommit: 0d7efd9e064f9d6a9efcfa6a36fd55d4bee20059
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8e5a42249df462be1584a153657a42ae325f1b9a
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43893552"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56125363"
 ---
 # <a name="additional-information-about-privacy-for-configuration-manager"></a>Configuration Manager의 개인정보보호 대한 추가 정보
 

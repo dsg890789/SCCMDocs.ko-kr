@@ -10,12 +10,13 @@ ms.assetid: 7c888a6f-8e37-4be5-8edb-832b218f266d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 9d3cd85d4c0bd3a996bd6ec18fc24a02423fab62
-ms.sourcegitcommit: 54e5786875c4e5f5c1b54e38ed59e96344faf9b4
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 73ca4a1ce43fff63c1d43dc7515517f00600a484
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53818058"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56126932"
 ---
 # <a name="task-sequence-steps-in-configuration-manager"></a>Configuration Manager의 작업 순서 단계
 
@@ -269,7 +270,7 @@ ms.locfileid: "53818058"
  기본 옵션 외에도, 이 작업 순서 단계의 **옵션** 탭에서 다음과 같은 추가 설정을 구성합니다.  
 
 #### <a name="access-content-directly-from-the-distribution-point"></a>배포 지점에서 직접 콘텐츠 액세스
- 배포 지점에서 OS 이미지에 직접 액세스하도록 작업 순서를 구성합니다. 예를 들어 운영 체제를 저장소 용량이 제한된 포함된 디바이스에 배포할 때 이 옵션을 사용합니다. 이 옵션을 선택하는 경우 OS 이미지 속성의 **데이터 액세스** 탭에서 패키지 공유 설정도 구성합니다.  
+ 배포 지점에서 OS 이미지에 직접 액세스하도록 작업 순서를 구성합니다. 예를 들어 운영 체제를 스토리지 용량이 제한된 포함된 장치에 배포할 때 이 옵션을 사용합니다. 이 옵션을 선택하는 경우 OS 이미지 속성의 **데이터 액세스** 탭에서 패키지 공유 설정도 구성합니다.  
 
  > [!NOTE]  
  >  이 설정은 **소프트웨어 배포 마법사**의 **배포 지점** 페이지에서 구성한 배포 옵션을 재정의합니다. 이 재정의는 이 단계에서 지정한 OS 이미지에만 적용되며, 모든 작업 순서 콘텐츠에는 적용되지 않습니다.  

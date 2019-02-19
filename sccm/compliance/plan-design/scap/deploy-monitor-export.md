@@ -10,12 +10,13 @@ ms.assetid: 0bdcb018-bac2-4540-b786-6242bac73ff4
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 7b59b7414ad2095d053b1121ba936281559aa5e2
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e3280edbe900e96cf97af8e59578ceab5322ee2a
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39386004"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56137299"
 ---
 # <a name="deploy-and-monitor-scap-compliance-in-configuration-manager"></a>Configuration Manager에서 SCAP 준수 배포 및 모니터
 
@@ -23,7 +24,7 @@ ms.locfileid: "39386004"
 
 SCAP 데이터 스트림 파일을 [변환하고 가져온 후에는](/sccm/compliance/plan-design/scap/install-configure-scap#bkmk_convert-and-import) 다음 단계를 참조하세요.  
 
-- 구성 기준을 컬렉션에 [배포](#bkmk_deploy)하여 장치에서 SCAP 준수 평가  
+- 구성 기준을 컬렉션에 [배포](#bkmk_deploy)하여 디바이스에서 SCAP 준수 평가  
 
 - 대상 클라이언트에서 반환한 준수 데이터 [모니터](#bkmk_monitor)   
 
@@ -128,7 +129,7 @@ Configuration Manager에서 구성 기준 배포 상태를 보면 Configuration 
 Configuration Manager 콘솔에서 **자산 및 준수** 작업 영역으로 이동하여 **준수 설정**을 확장하고 **구성 기준**을 선택합니다. `BaselineCIID`는 구성 기준에 대한 식별자(ID)입니다.  
 ![CI ID와 할당 ID 가져오기](./media/get-to-baselines.png)
 
-원하는 구성 기준을 선택하고 **배포** 탭을 클릭합니다. `AssignmentID`는 장치 컬렉션에 대한 구성 기준 배포의 식별자(ID)입니다. 할당 ID가 표시되지 않으면 열 헤더를 마우스 오른쪽 단추로 클릭하고 **할당 ID**를 선택합니다.  
+원하는 구성 기준을 선택하고 **배포** 탭을 클릭합니다. `AssignmentID`는 디바이스 컬렉션에 대한 구성 기준 배포의 식별자(ID)입니다. 할당 ID가 표시되지 않으면 열 헤더를 마우스 오른쪽 단추로 클릭하고 **할당 ID**를 선택합니다.  
 ![CI ID와 할당 ID 가져오기](./media/get-to-baselines.png)
 
 

@@ -10,12 +10,13 @@ ms.assetid: 469ff35f-59a1-484d-902b-107dd6070baf
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 47ddbf358426b7683dab42b4f7a6a89ad8e631de
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a7bba23bf35d60d83fcff01acb20c8f404b6445d
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32332790"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56123413"
 ---
 # <a name="security-and-privacy-for-power-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 전원 관리에 대한 보안 및 개인 정보
 

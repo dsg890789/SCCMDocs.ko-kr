@@ -10,12 +10,13 @@ ms.assetid: 507bf676-2679-4e4d-8831-3ffc9cf8557e
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: c0cff0787549624ab0b987fbacdb6f5b4f9c3ec1
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1bfd0dd70c350196ff3e6e4a66da9fb04863b8b8
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53416217"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156800"
 ---
 # <a name="how-to-monitor-and-plan-for-power-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 전원 관리를 모니터링하고 계획하는 방법
 

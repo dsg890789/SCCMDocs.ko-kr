@@ -10,12 +10,13 @@ ms.assetid: 54ef5fbb-521d-4ca5-a1c5-61e6f538d71e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4371e9ede643d794058520cf001f30f01b47fe94
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a90e100c242514eb2526e16bb68e379a2326572f
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32331933"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56136918"
 ---
 # <a name="determine-whether-to-block-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트를 차단할지 여부 결정
 

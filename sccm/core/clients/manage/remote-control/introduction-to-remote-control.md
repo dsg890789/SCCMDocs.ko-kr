@@ -10,12 +10,13 @@ ms.assetid: 29350919-6a25-446b-a0da-05e8914fbb26
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6a6f6ea0d68a8ba8d2db20bd8a77d5e480314150
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b2f9744db8722686d10ad098b186c3972b570cfc
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32331967"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56129292"
 ---
 # <a name="introduction-to-remote-control-in-system-center-configuration-manager"></a>System Center Configuration Manager의 원격 제어 소개
 
@@ -28,4 +29,4 @@ ms.locfileid: "32331967"
 > [!NOTE]  
 >  Configuration Manager 콘솔에서 작업 그룹에 있는 클라이언트 컴퓨터로 원격 지원 세션을 설정할 수 없습니다. 
 
- **자산 및 준수** > **장치**, 모든 장치 컬렉션, Windows 명령 프롬프트 창 또는 Widnows **시작** 메뉴의 Configuration Manager 콘솔에서 원격 제어 세션을 시작할 수 있습니다.  
+ **자산 및 준수** > **디바이스**, 모든 디바이스 컬렉션, Windows 명령 프롬프트 창 또는 Widnows **시작** 메뉴의 Configuration Manager 콘솔에서 원격 제어 세션을 시작할 수 있습니다.  

@@ -10,12 +10,13 @@ ms.assetid: 35b5baec-d313-46aa-9d14-c443aa0d6c09
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: c5d3635ee6d1ed4e9c3819e2cffc3ee5028953f5
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: acdc85980db937433cf8bf10336d940d0a434c94
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53422201"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56135959"
 ---
 # <a name="support-for-configuration-manager-current-branch-versions"></a>Configuration Manager 현재 분기 버전에 대한 지원
 

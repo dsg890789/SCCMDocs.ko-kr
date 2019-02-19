@@ -10,12 +10,13 @@ ms.assetid: 4cafb7fc-380b-41b1-b83e-045aebfb7131
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: ec623e6cf7a2616058b63bb1206f5403c4ff792a
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a256435c927c880363d20e6e52a22179a3271f3a
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53417409"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56142377"
 ---
 # <a name="use-multicast-to-deploy-windows-over-the-network-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 멀티캐스트를 사용하여 네트워크를 통해 Windows 배포
 

@@ -10,12 +10,13 @@ ms.assetid: 999b5409-7e72-48d2-8554-4d44427ce383
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4f7ec06d5bd5f23ac2b8afa2a288dfb8c971f950
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9ebe239687489ce14cd77c23b59ec5f01c2e6609
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32346800"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56128122"
 ---
 # <a name="use-bootable-media-to-deploy-windows-over-the-network-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 부팅 가능한 미디어를 사용하여 네트워크를 통해 Windows 배포
 

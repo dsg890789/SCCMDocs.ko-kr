@@ -10,12 +10,13 @@ ms.assetid: e6c1df1d-7728-4980-9199-bc32cde5439e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f626d07d1fe25d8277ab2189f136862079dc503c
-ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 72c23bdf08972028d86c1824b3b796995845e8c4
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54896627"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56134819"
 ---
 # <a name="manage-publications-in-updates-publisher"></a>Updates Publisher의 게시물 관리
 

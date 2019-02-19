@@ -10,12 +10,13 @@ ms.assetid: 3646d62d-355a-43fc-8569-c08dc2257ee5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6fc86625c27ffbfdf0873ec787b889f4c0cacf6e
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f7dd3ffa5f58be387b229224f31a57965871241f
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32346392"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56136095"
 ---
 # <a name="methods-to-deploy-enterprise-operating-systems-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 엔터프라이즈 운영 체제를 배포하는 방법
 

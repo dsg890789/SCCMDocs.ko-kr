@@ -10,12 +10,13 @@ ms.assetid: b2bf493e-1e10-496f-a139-2646522703ed
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2091f3f41336413a49446a14b1190cce426c8277
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4d3a54b7fabbd36b3c622c75622002d509540581
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32333164"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56141911"
 ---
 # <a name="plan-for-migration-to-system-center-configuration-manager"></a>System Center Configuration Manager로 마이그레이션 계획
 

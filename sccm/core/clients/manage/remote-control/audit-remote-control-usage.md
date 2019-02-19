@@ -10,12 +10,13 @@ ms.assetid: 5c975e69-0cc0-4afd-b7fb-b7182162a933
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b216df726ed46c54bcb4778f0f93b2d19f0f9321
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d7c24692b88571e56c877c8529fe84b7441c6696
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32332936"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56127646"
 ---
 # <a name="how-to-audit-remote-control-usage-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 원격 제어 사용을 감사하는 방법
 

@@ -10,12 +10,13 @@ ms.assetid: b57acf0b-05b7-46af-ad4c-f3e707bd3861
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0a7d07972d412826f8b9b069f23c79df1e972f38
-ms.sourcegitcommit: 1439817f1309658b31008d7bafaab32fc5ef8789
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d78297845f256468d13deaa4af4e4a63b8819a21
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52820053"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56137460"
 ---
 # <a name="whats-new-in-configuration-manager-incremental-versions"></a>Configuration Manager 증분 버전의 새로운 기능
 

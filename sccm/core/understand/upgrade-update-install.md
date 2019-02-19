@@ -10,12 +10,13 @@ ms.assetid: 17fab17f-304d-4f6a-87c7-30ab4f5521ed
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: ba59f4139a46ff5f073d15495196324540f7857a
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: df4daee11a72100debb93270fc6e51ab1a5e2622
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32344418"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56140047"
 ---
 # <a name="about-upgrade-update-and-install-for-site-and-hierarchy-infrastructure"></a>사이트 및 계층 인프라에 대한 업그레이드, 업데이트 및 설치 정보
 

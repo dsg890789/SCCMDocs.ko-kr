@@ -10,12 +10,13 @@ ms.assetid: d0e4ddc3-d9c4-4f5c-8b1f-af098e54f5c8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2ae77e7bf34e77ecadfad1e0e3c16722588599b0
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ccaf6afd25d74e030d3a4cf9e09b2783418f3fd6
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32334738"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56134523"
 ---
 # <a name="resources-for-installing-system-center-configuration-manager-sites"></a>System Center Configuration Manager 사이트 설치용 리소스
 

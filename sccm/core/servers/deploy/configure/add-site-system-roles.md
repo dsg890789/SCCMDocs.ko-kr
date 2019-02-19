@@ -10,12 +10,13 @@ ms.assetid: b90de2d9-494e-43ad-b269-c8ed589f37d3
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2959d2b97088a2d92b861f0ca4a4d37d0df3e726
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6ae01355024170fd63236299864ce0d2286bfeed
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32334235"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56131526"
 ---
 # <a name="add-site-system-roles-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 사이트 시스템 역할 추가
 
@@ -38,7 +39,7 @@ Configuration Manager는 한 사이트 시스템 서버에서 여러 사이트�
 
     Microsoft Azure를 사용하여 클라이언트에 배포하는 콘텐츠를 호스트하려는 경우 이 항목의 정보를 사용하여 Configuration Manager에서 Microsoft Azure 구독과 통신하고 이 구독을 사용하는 데 필요한 인증서 파일을 설정할 수 있습니다. 또한 클라이언트에서 클라우드 기반 배포 지점을 찾을 수 있도록 이름 확인을 설정해야 합니다.  
 
--   [System Center Configuration Manager의 온-프레미스 모바일 장치 관리를 위한 사이트 시스템 역할 설치](../../../../mdm/get-started/install-site-system-roles-for-on-premises-mdm.md)  
+-   [System Center Configuration Manager의 온-프레미스 모바일 디바이스 관리를 위한 사이트 시스템 역할 설치](../../../../mdm/get-started/install-site-system-roles-for-on-premises-mdm.md)  
 
      이 항목의 내용은 Configuration Manager 온-프레미스 MDM을 사용하여 최신 디바이스 관리를 지원하도록 사이트 시스템 역할을 설정하는 데 도움이 됩니다.  
 

@@ -10,12 +10,13 @@ ms.technology: configmgr-sum
 ms.assetid: a0767664-fd60-46a8-9da5-86cc431ce53c
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: df213206ee673e872852958233973e4f091728b9
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c4d17d4e1e0a41e2e94cfe70d422ed3425a812d6
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32353126"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56141156"
 ---
 # <a name="add-software-updates-to-an-update-group"></a>업데이트 그룹에 소프트웨어 업데이트 추가  
 

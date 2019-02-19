@@ -10,12 +10,13 @@ ms.assetid: 25e4ac68-0e78-4bbe-b8fc-3898b372c4e8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 974ecfdf30dd24e6addad91588fce5d223f27b1c
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5a8c3ee0a9d524a640ab8439ee83f8df269f07c7
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53423748"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56131764"
 ---
 # <a name="create-a-task-sequence-to-capture-an-operating-system-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 운영 체제를 캡처하는 작업 순서 만들기
 

@@ -11,12 +11,13 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: 53b09c5652eed1a1fad6cac0a2cb146863886d24
-ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6ba897213299d5282923d619b48cdbbdbe19168f
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54897481"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56122460"
 ---
 # <a name="checklist-for-installing-update-1702-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 업데이트 1702를 설치하기 위한 검사 목록
 

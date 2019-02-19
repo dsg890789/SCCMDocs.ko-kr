@@ -10,12 +10,13 @@ ms.assetid: 101d7d4d-92db-419d-b2ae-3c1c1dea68e9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: dccd893cc4a22fddf09598376bdcd05b091e6c2c
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 203de632cea1dbe7c5fa70177f3a111a4e487911
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53421555"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56123814"
 ---
 # <a name="about-client-installation-properties-published-to-active-directory-domain-services"></a>Active Directory Domain Services에 게시된 클라이언트 설치 속성 정보
 
@@ -106,7 +107,7 @@ CCMSetup는 Client.msi 속성 외에, 매개 변수 /forcereboot, /skipprereq, /
 -   그룹 정책을 사용하여 컴퓨터에 설치 속성을 프로비전하지 않은 경우  
 
 ## <a name="software-distribution-installation"></a>소프트웨어 배포 설치  
- CCMSetup은 다음과 같은 경우 Active Directory 도메인 서비스에서 설치 속성을 검색합니다.  
+ CCMSetup은 다음과 같은 경우 Active Directory Domain Services에서 설치 속성을 검색합니다.  
 
 -   CCMSetup.exe 명령 뒤에 명령줄 속성이 지정되지 않은 경우  
 

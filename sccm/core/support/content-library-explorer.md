@@ -10,12 +10,13 @@ ms.assetid: 691896d9-ec0f-461f-a3f2-40378ebd3121
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 7950447776c5c2dd756d6632a65d74d91adfba01
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b9fb8c5c189407fdc6fc742ebcd0b7d9730d4289
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385814"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56142207"
 ---
 # <a name="content-library-explorer"></a>콘텐츠 라이브러리 탐색기
 
@@ -47,7 +48,7 @@ ms.locfileid: "39385814"
 
 - **전체 관리자** 및 **읽기 전용 분석가** 역할만 이 도구의 모든 정보를 볼 충분한 권한을 갖습니다.  
 
-    - **응용 프로그램 관리자**와 같은 다른 역할은 부분 정보를 볼 수 있습니다. 자세한 내용은 [비활성화된 패키지](#bkmk_disabled-packages)를 참조하세요.  
+    - **애플리케이션 관리자**와 같은 다른 역할은 부분 정보를 볼 수 있습니다. 자세한 내용은 [비활성화된 패키지](#bkmk_disabled-packages)를 참조하세요.  
 
     - **읽기 전용 분석가**는 이 도구에서 패키지를 재배포할 수 없습니다.  
 

@@ -10,12 +10,13 @@ ms.assetid: d17e1188-d277-438f-9236-db9cd213b421
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 48a0788d83ffcd7a373f5f73ee675b62508a6d86
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b9b995d0abfc3f14dce35e0aec70ac25b2ca2853
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32333589"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56138945"
 ---
 # <a name="introduction-to-collections-in-system-center-configuration-manager"></a>System Center Configuration Manager의 컬렉션 소개
 
@@ -53,7 +54,7 @@ ms.locfileid: "32333589"
 |**모든 사용자**|Active Directory 사용자 검색을 사용하여 검색된 사용자를 포함합니다.|  
 |**모든 사용자 및 사용자 그룹**|모든 사용자 및 모든 사용자 그룹 컬렉션을 포함합니다. 이 컬렉션은 가장 큰 범위의 사용자 및 사용자 그룹 리소스를 포함합니다.|  
 |**모든 데스크톱 및 서버 클라이언트**|Configuration Manager 클라이언트가 설치된 서버 및 데스크톱 디바이스를 포함합니다. 멤버 자격이 하트비트 검색을 통해 유지 관리됩니다.|  
-|**모든 모바일 장치**|Configuration Manager에서 관리하는 모바일 디바이스를 포함합니다. 멤버 자격은 성공적으로 사이트에 할당되거나 Exchange Server 커넥터에서 검색된 모바일 디바이스로 제한됩니다.|  
+|**모든 모바일 디바이스**|Configuration Manager에서 관리하는 모바일 디바이스를 포함합니다. 멤버 자격은 성공적으로 사이트에 할당되거나 Exchange Server 커넥터에서 검색된 모바일 디바이스로 제한됩니다.|  
 |**모든 시스템**|모든 데스크톱 및 서버 클라이언트, 모든 모바일 디바이스 및 모든 알 수 없는 컴퓨터 컬렉션 및 Microsoft Intune에서 등록된 모든 모바일 디바이스를 포함합니다. 이 컬렉션은 가장 큰 범위의 디바이스 리소스를 포함합니다.|  
 |**알 수 없는 모든 컴퓨터**|여러 컴퓨터 플랫폼에 대한 일반 컴퓨터 레코드를 포함합니다. 이 컬렉션을 사용하면 작업 순서 및 PXE 부팅, 부팅 가능한 미디어 또는 사전 준비된 미디어를 사용하여 운영 체제를 배포할 수 있습니다.|  
 

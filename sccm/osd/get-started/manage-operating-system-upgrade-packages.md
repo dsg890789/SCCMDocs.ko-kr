@@ -10,12 +10,13 @@ ms.assetid: b9b22655-b8c1-461f-8047-3a7e906f647a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 46e948a215535bf57153e5a97dbdc9cad2e35e3b
-ms.sourcegitcommit: 54e5786875c4e5f5c1b54e38ed59e96344faf9b4
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 77a296c20d75603c432282ea84e2b453702f5e86
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817854"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56133023"
 ---
 # <a name="manage-os-upgrade-packages-with-configuration-manager"></a>Configuration Manager에서 OS 업그레이드 패키지 관리
 

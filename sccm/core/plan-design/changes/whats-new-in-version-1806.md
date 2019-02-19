@@ -10,12 +10,13 @@ ms.assetid: 0249dbd3-1e85-4d05-a9e5-420fbe44d850
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 1cc8a2abaf6deff54db569416b91316e23cb4a69
-ms.sourcegitcommit: 013ca76d5a3c07306de7b5bfd985b0289d1be599
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9c4f085bc418bc2a78452d54bd579cd362112e64
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55482523"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56135020"
 ---
 # <a name="whats-new-in-version-1806-of-configuration-manager-current-branch"></a>Configuration Manager 1806 버전의 새로운 기능
 

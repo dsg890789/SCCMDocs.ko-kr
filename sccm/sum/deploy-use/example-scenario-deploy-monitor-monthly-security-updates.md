@@ -10,12 +10,13 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: c32f757a-02da-43f2-b055-5cfd097d8c43
 ms.author: aaroncz
-ms.openlocfilehash: 092e4a08517c183ac80e45a60a57ddfd78932140
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 30377a9b2cfde1616114779ab7790deec1fb2bb2
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53423867"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56132128"
 ---
 # <a name="example-scenario-for-using-system-center-configuration-manager-to-deploy-and-monitor-the-security-software-updates-released-monthly-by-microsoft"></a>System Center Configuration Manager를 사용하여 Microsoft에서 매월 릴리스하는 보안 소프트웨어 업데이트를 배포하고 모니터링하는 예제 시나리오
 

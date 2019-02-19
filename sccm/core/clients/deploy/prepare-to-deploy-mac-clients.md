@@ -10,12 +10,13 @@ ms.assetid: 2285a953-6a86-4ed5-97dd-cd57b02bc1ee
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a7fc0a7ca3dd6974d1c97445d69b8f6032e81835
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 49edf86f855c934d29ae0ed1101bb319278ccc7c
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52455906"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56141054"
 ---
 # <a name="prepare-to-deploy-client-software-to-macs"></a>Mac에 클라이언트 소프트웨어 배포 준비
 
@@ -128,7 +129,7 @@ Mac용 클라이언트를 설치하는 데 배포 지점은 필요하지 않습�
 
     2.  **인터넷 전용 클라이언트 연결 허용** 또는 **인터넷 및 인트라넷 클라이언트 연결 허용**을 선택합니다. 이러한 옵션에는 인터넷 또는 인트라넷 FQDN이 필요합니다.  
 
-    3.  **모바일 장치 및 Mac 컴퓨터가 이 관리 지점을 사용할 수 있도록 허용**을 선택합니다.  
+    3.  **모바일 디바이스 및 Mac 컴퓨터가 이 관리 지점을 사용할 수 있도록 허용**을 선택합니다.  
 
     4. **확인**을 선택하여 이 구성을 저장합니다.  
 

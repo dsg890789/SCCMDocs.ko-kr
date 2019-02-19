@@ -10,12 +10,13 @@ ms.assetid: 1392797b-76cb-46b4-a3e4-8f349ccaa078
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e8f575fc609dea662688ed10a76733467784a5b9
-ms.sourcegitcommit: d5c013a29f53b975fe3a6cb0a41f1e817bd7b235
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5b1a5a5e27108debe4f9f055da889d5b7a031ece
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54342808"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56128452"
 ---
 # <a name="site-and-site-system-prerequisites-for-configuration-manager"></a>Configuration Manager의 사이트 및 사이트 시스템 필수 조건
 

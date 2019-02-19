@@ -10,12 +10,13 @@ ms.assetid: 9e447e34-0943-49ed-b6ba-3efebf3566c1
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 277881aab8a6d971c110b6ddd5b3dd34aae8fe7a
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5c64ae61e2ff31a14b6c4b094eafa5feac197e21
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53420161"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56132594"
 ---
 # <a name="prepare-for-unknown-computer-deployments-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 알 수 없는 컴퓨터 배포 준비
 

@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: 6f0201d7-5714-4ba0-b2bf-d1acd0203e9a
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ede0049847eda2b87731f4cfbce0bda8984f158
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: b7f2875852b49ab8af9b1f34c4747f12a6620896
+ms.sourcegitcommit: fd16fc2b681608fd6def5bad2cedffbcd1f2423a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56120251"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56405678"
 ---
 # <a name="change-the-mdm-authority-for-specific-users-mixed-mdm-authority"></a>특정 사용자에 대한 MDM 기관 변경(혼합 MDM 기관) 
 
@@ -140,17 +140,7 @@ Intune 독립 실행형 장치가 예상대로 작동하는지 확인한 후에�
 
 ## <a name="migrate-devices-without-user-affinity"></a>사용자 선호도가 없는 디바이스 마이그레이션
 
-디바이스 등록 관리자를 사용하여 등록한 디바이스와 [사용자 선호도](/sccm/mdm/deploy-use/user-affinity-for-hybrid-managed-devices)가 없는 디바이스는 새로운 MDM 기관으로 자동으로 마이그레이션되지 않습니다. 다음과 같은 시나리오에서 *Switch-MdmDeviceAuthority* PowerShell cmdlet을 사용하여 Intune과 Configuration Manager 관리 기간 간에 전환할 수 있습니다. 
-
--   시나리오 1: 사용 된 *Switch-mdmdeviceauthority* 선택한 장치를 마이그레이션하고 관리할 수 있습니다 Azure에서 Intune을 사용 하 여 유효성을 검사 하는 cmdlet입니다. 그런 다음, 준비가 되면 [테넌트에 대해 MDM 기관을 Intune으로 변경](migrate-change-mdm-authority.md)하여 디바이스의 마이그레이션을 완료합니다.  
-
--   시나리오 2: 테 넌 트에 대 한 MDM 기관을 Intune로 변경 하는 준비 된 경우에 사용자 선호도 없는 장치를 마이그레이션하려면 다음 작업을 수행 합니다.  
-
-    - [테넌트에 대해 MDM 기관을 Intune으로 변경](migrate-change-mdm-authority.md)하기 전에 이 cmdlet을 사용하여 사용자 선호도가 없는 장치에 대한 MDM 기관을 변경합니다.     
-
-    - 테넌트에 대해 MDM 기관을 Intune으로 변경한 후 사용자 선호도가 없는 디바이스는 전환하려면 지원 서비스에 문의하세요.  
-
-이러한 MDM 디바이스에 대한 관리 기관을 전환하려면 *Switch-MdmDeviceAuthority* cmdlet을 사용하여 Intune과 Configuration Manager 관리 기관 사이를 전환할 수 있습니다. 
+개별 장치 폼 Configuration Manager 사용자 선호도 없이 등록 된 Intune로 마이그레이션하려면 Switch-mdmdeviceauthority PowerShell cmdlet을 사용 합니다.  마이그레이션이 발생 하는 Azure의 Intune에서 마이그레이션 선택한 장치에 있는 cmdlet을 사용 하 여 유효성을 검사 한 후에 선택한 장치에 대 한 필요 합니다. 그런 다음 준비 된 경우 모든 나머지 장치는 MDM 기관으로 Configuration manager에 대 한 마이그레이션을 완료 하려면 테 넌 트에 대 한 Intune에 MDM 기관을 변경 합니다.
 
 ### <a name="cmdlet-switch-mdmdeviceauthority"></a>*Switch-MdmDeviceAuthority* cmdlet
 

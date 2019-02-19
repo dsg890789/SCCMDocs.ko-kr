@@ -9,12 +9,13 @@ ms.assetid: bec00fb4-1ac0-4e49-b330-0871b3722459
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: bb48f192146a3c0d4bbbe6f005dda537db871da7
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 58b5a2eec6df6ecd6b96c18178cc116bc2b6965a
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53415486"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56135673"
 ---
 # <a name="system-center-configuration-manager-privacy-statement---configuration-manager-cmdlet-library"></a>System Center Configuration Manager 개인정보취급방침 – Configuration Manager cmdlet 라이브러리
 

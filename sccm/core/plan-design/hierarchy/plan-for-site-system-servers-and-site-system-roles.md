@@ -10,12 +10,13 @@ ms.assetid: 0a7415ba-2c53-4433-983e-780e92aa662f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f2c3052337b5c985798c15950a541086587176d1
-ms.sourcegitcommit: 19fc4f27667d51502fc9d7d02d164f2837d65dae
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c6ae8b6fb99016bfc0a39c328cb0d52269897917
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49461310"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56128037"
 ---
 # <a name="plan-for-site-system-servers-and-site-system-roles-in-configuration-manager"></a>Configuration Manager에서 사이트 시스템 서버 및 사이트 시스템 역할에 대한 계획
 

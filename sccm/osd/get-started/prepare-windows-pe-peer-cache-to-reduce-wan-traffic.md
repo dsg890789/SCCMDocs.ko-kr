@@ -10,12 +10,13 @@ ms.assetid: 6c64f276-b88c-4b1e-8073-331876a03038
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 804b21733422bd654764f2199fe33d184d54cce4
-ms.sourcegitcommit: d021f82e4bc35a8e9b5d291bf779ce52b4f47eb8
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bedaeed065121e18089cb6b1847397ba5cfdb35a
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53656478"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56128758"
 ---
 # <a name="prepare-windows-pe-peer-cache-to-reduce-wan-traffic-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 WAN 트래픽을 줄이기 위해 Windows PE 피어 캐시 준비
 

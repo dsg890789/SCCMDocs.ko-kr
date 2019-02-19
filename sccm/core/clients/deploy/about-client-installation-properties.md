@@ -10,12 +10,13 @@ ms.assetid: c890fd27-7a8c-4f51-bbe2-f9908af1f42b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 61b51fcf9f624f5c2e21a99add1b55f6d6812c84
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ebfcde2be230c9c5e04031210cb6e137ed81668c
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53421368"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56126493"
 ---
 # <a name="about-client-installation-parameters-and-properties-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 설치 매개 변수 및 속성 정보
 
@@ -412,7 +413,7 @@ Example: `ccmsetup.exe AADTENANTNAME=Contoso`
 - 다음 명령을 실행합니다. `(Get-WmiObject -Namespace Root\Ccm\LocationServices -Class SMS_ActiveMPCandidate | Where-Object {$_.Type -eq "Internet"}).MP`
 - 반환된 값을 있는 그대로 **CCMHOSTNAME** 속성과 함께 사용합니다.
 
-예를 들면 다음과 같습니다. `ccmsetup.exe CCMHOSTNAME=CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72057598037248100`
+`ccmsetup.exe CCMHOSTNAME=CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72057598037248100`
 
  > [!Important]
  > **CCMHOSTNAME** 속성에 대한 클라우드 관리 게이트웨이 주소를 지정하는 경우 **https://** 같은 접두사를 추가하지 *마십시오*. 이 접두사는 오직 클라우드 관리 게이트웨이의 **/mp** URL과 함께 사용됩니다.

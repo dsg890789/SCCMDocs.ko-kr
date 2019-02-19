@@ -10,12 +10,13 @@ ms.assetid: 33bcf8b3-a6b6-4fc9-bb59-70a9621b2b0d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b0fd4c36ed03f0e0b158fe637a045553dab31ade
-ms.sourcegitcommit: 0d7efd9e064f9d6a9efcfa6a36fd55d4bee20059
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9b3ba4c5179069e5443beaf1b7f733c797cfd680
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995356"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156528"
 ---
 #  <a name="sync-data-from-configuration-manager-to-azure-log-analytics"></a>Configuration Manager의 데이터를 Azure Log Analytics와 동기화
 
@@ -82,4 +83,4 @@ Configuration Manager를 Log Analytics에 연결한 후 추가할 연결 속성�
 - **Azure 리소스 그룹**  
 - **Log Analytics 작업 영역**  
 
-**장치 컬렉션** 목록도 표시합니다. **추가** 및 **제거** 단추를 사용하여 동기화할 컬렉션을 수정합니다.
+**디바이스 컬렉션** 목록도 표시합니다. **추가** 및 **제거** 단추를 사용하여 동기화할 컬렉션을 수정합니다.

@@ -10,12 +10,13 @@ ms.assetid: 45a10878-ff48-4318-9c6d-c014b38a4039
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: de769a24b44c5ab5e28035e96fef341aecd78006
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c56d9a17e48ff62dfae9b54b84909f1eebb3ccd0
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32332987"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56129734"
 ---
 # <a name="supported-configurations-for-system-center-configuration-manager"></a>System Center Configuration Manager에서 지원되는 구성
 
@@ -44,7 +45,7 @@ Configuration Manager에 대한 각 계층 구조 디자인에서 지원되는 �
 -  [사이트 시스템 서버에 대해 지원되는 운영 체제](../../../core/plan-design/configs/supported-operating-systems-for-site-system-servers.md)  
 사이트 서버 또는 사이트 시스템 서버로 사용할 수 있는 운영 체제를 알아봅니다.
 
--  [클라이언트 및 장치에 대해 지원되는 운영 체제](../../../core/plan-design/configs/supported-operating-systems-for-clients-and-devices.md)  
+-  [클라이언트 및 디바이스에 대해 지원되는 운영 체제](../../../core/plan-design/configs/supported-operating-systems-for-clients-and-devices.md)  
 Windows, Windows Embedded, Linux 및 UNIX, Mac, 모바일 디바이스를 포함하여 Configuration Manager를 사용하여 관리할 수 있는 운영 체제를 알아봅니다.
 
 -  [콘솔의 지원되는 운영 체제](../../../core/plan-design/configs/supported-operating-systems-consoles.md)  

@@ -10,12 +10,13 @@ ms.assetid: 9ea20b01-676a-4cc2-b328-0098a41b202e
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 84643f38b5dd0c42a611ca50aaae6ab6d9f52405
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 49f7d898e5cb744771694ce49adb52457fb25e01
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32331671"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156426"
 ---
 # <a name="plan-for-and-configure-compliance-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 준수 설정 계획 및 구성
 
@@ -42,8 +43,8 @@ System Center Configuration Manager 준수 설정 작업을 시작하기 전에 
 2.  **홈** 탭의 **속성** 그룹에서 **속성**을 클릭합니다.  
 3.  **기본 설정** 대화 상자에서 **준수 설정**을 클릭합니다.  
 4.  준수 설정에 대한 다음 클라이언트 설정을 구성합니다.
-    - **클라이언트에서 준수 평가 사용** - 클라이언트 장치에서 준수를 평가하려면 **True**로 설정합니다.
-    - **준수 평가의 일정** - 클라이언트 장치에서 기본 준수 평가 일정을 수정하려면 **일정**을 클릭합니다.
+    - **클라이언트에서 준수 평가 사용** - 클라이언트 디바이스에서 준수를 평가하려면 **True**로 설정합니다.
+    - **준수 평가의 일정** - 클라이언트 디바이스에서 기본 준수 평가 일정을 수정하려면 **일정**을 클릭합니다.
     - **사용자 데이터 및 프로필 구성 항목** - 사용자 데이터 및 프로필 구성 항목을 Windows 컴퓨터에 배포하려면 이 옵션을 사용하도록 설정합니다. 자세한 내용은 [사용자 데이터 및 프로필 구성 항목 만들기](/sccm/compliance/deploy-use/create-remote-connection-profiles)를 참조하세요.
 5. **확인** 을 클릭하여 **기본 설정** 대화 상자를 닫습니다.  
 

@@ -10,12 +10,13 @@ ms.assetid: 75748377-1a45-4538-9c7c-d81852d5d3a7
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 1e93c2a1defb12dcabd757bb2b4ac92fda8a8e54
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 32dcab959c18d55d79b685b2d1f9c43fec90985b
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385884"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56135789"
 ---
 # <a name="flowchart---promote-site-server-planned"></a>순서도 - 사이트 서버 승격(계획됨)
 

@@ -10,12 +10,13 @@ ms.assetid: 98b038b4-1a13-4228-bdb8-a12194e32b0e
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: b3605bc694000a86c407fcc456bb8e4115159490
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9c45e6b5328d0fc9f0734dec09961e2c3e5e4c0f
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53421096"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56139979"
 ---
 # <a name="automatically-categorize-devices-into-collections-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 컬렉션으로 디바이스 자동 분류
 

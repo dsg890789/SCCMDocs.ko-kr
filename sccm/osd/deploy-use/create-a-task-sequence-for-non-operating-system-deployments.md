@@ -10,12 +10,13 @@ ms.assetid: 92aaec8a-8751-442a-b64b-62ab05b5bf50
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 42c56b048afe768cd04cd5c91d659535ad5ffc9e
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c8ef75ea9b0948a932c1b146d0f4fe7051017759
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32347487"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56140316"
 ---
 # <a name="create-a-task-sequence-for-non-operating-system-deployments-with-system-center-configuration-manager"></a>System Center Configuration Manager와 비운영 체제 배포에 대한 작업 순서 만들기
 
@@ -33,7 +34,7 @@ System Center Configuration Manager의 작업 순서는 사용자 환경 내에�
 
 -   [패키지 콘텐츠 다운로드](../understand/task-sequence-steps.md#BKMK_DownloadPackageContent)  
 
--   [응용 프로그램 설치](../understand/task-sequence-steps.md#BKMK_InstallApplication)  
+-   [애플리케이션 설치](../understand/task-sequence-steps.md#BKMK_InstallApplication)  
 
 -   [패키지 설치](../understand/task-sequence-steps.md#BKMK_InstallPackage)  
 

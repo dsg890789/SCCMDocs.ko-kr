@@ -10,12 +10,13 @@ ms.assetid: 1cb96666-98bf-49a9-85ca-dbb53f0655e9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: fc0e7b81b4b46502e4477f098bdc129b0491be69
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2f52e903f730590cd9e0b3c8e6f53982ac24fc1b
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32340610"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56136246"
 ---
 # <a name="accessibility-features-in-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 내게 필요한 옵션 기능
 

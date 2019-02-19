@@ -10,12 +10,13 @@ ms.assetid: 4800a800-66c8-4c35-aebe-e413a23790c1
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: dfe31642342fee75046df7083f059955f011d26f
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 76f82734229f3b8e9ed37ed4bc9057eff6421aad
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32335561"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156545"
 ---
 # <a name="plan-a-source-hierarchy-strategy-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 원본 계층 전략 계획
 

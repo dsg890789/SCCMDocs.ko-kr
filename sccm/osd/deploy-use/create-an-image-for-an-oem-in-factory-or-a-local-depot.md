@@ -10,12 +10,13 @@ ms.assetid: a7d3df90-062d-4d57-9e9d-e137d3e7cd7f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f1bf3460e29375a6c5e95ad372af089548be5713
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 56ac5353052fdba2884b6caee8f56d0835028e3e
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53422481"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56135588"
 ---
 # <a name="create-an-image-for-an-oem-in-factory-or-a-local-depot-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 팩터리 또는 로컬 저장소에 OEM에 대한 이미지 만들기
 

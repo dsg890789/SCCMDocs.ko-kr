@@ -10,12 +10,13 @@ ms.assetid: 038e61f9-f49d-41d1-9a9f-87bec9e00d5d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4dd547f0126fa9e77b4d49db7c0de4ec912d2b23
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1ba85b6d1e545f467816b3e8dddeec04ae4192a4
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53421623"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56123688"
 ---
 # <a name="planning-for-client-deployment-to-windows-embedded-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Windows Embedded 디바이스에 클라이언트 배포 계획
 
@@ -75,7 +76,7 @@ ms.locfileid: "53421623"
 >   -   CCMINSTALLDIR\ServiceData  
 >   -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CCM\StateSystem  
 > 
-> **FBWF 및 UWF만 사용하는 디바이스의 경우:** 작업 그룹에서 클라이언트가 관리 지점에 대한 인증을 위해 인증서를 사용하는 경우 클라이언트가 계속 관리 지점과 통신할 수 있도록 개인 키도 제외해야 합니다. 이러한 장치에서는 다음과 같은 예외를 구성합니다.  
+> **FBWF 및 UWF만 사용하는 디바이스의 경우:** 작업 그룹에서 클라이언트가 관리 지점에 대한 인증을 위해 인증서를 사용하는 경우 클라이언트가 계속 관리 지점과 통신할 수 있도록 개인 키도 제외해야 합니다. 이러한 디바이스에서는 다음과 같은 예외를 구성합니다.  
 > 
 > - c:\Windows\System32\Microsoft\Protect  
 >   -   c:\ProgramData\Microsoft\Crypto  

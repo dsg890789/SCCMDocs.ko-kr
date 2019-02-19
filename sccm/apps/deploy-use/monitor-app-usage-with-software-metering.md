@@ -10,12 +10,13 @@ ms.assetid: b1fdaee2-2816-4447-94cd-609f6948f215
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 862555a34d638ad9c1c5c2d0d0de6f2ce1edd3f3
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 59e64462f22736f7f132ae5f3d683d791b04ccf2
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53419328"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56132921"
 ---
 # <a name="software-metering-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 계량
 

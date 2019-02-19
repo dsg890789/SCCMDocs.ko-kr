@@ -10,12 +10,13 @@ ms.assetid: ca4886d4-7173-46be-8dcd-1657d5b0deb9
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 8b81efc7f31339bd7b19530ef603855f0ee8fad6
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 495d109d73a32617f58383b78d11a10bf05edf75
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32343908"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56134540"
 ---
 #  <a name="service-windows-for-site-servers"></a>사이트 서버에 대한 서비스 기간
 

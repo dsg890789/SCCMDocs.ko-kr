@@ -10,12 +10,13 @@ ms.assetid: d28f4363-9e8a-4c54-9cb7-0594fabfff26
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2693196ab21474877b5eda4ecce4a93737d1ac59
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 769794f98a14b5d8bf27b46c6fb2408d0b0ebe18
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32348796"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56136112"
 ---
 # <a name="replace-an-existing-computer-and-transfer-settings-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 기존 컴퓨터 바꾸기 및 설정 전송
 
@@ -45,7 +46,7 @@ ms.locfileid: "32348796"
 
     -   부팅 이미지를 사용자 지정하는 방법에 대한 자세한 내용은 [부팅 이미지 사용자 지정](../get-started/customize-boot-images.md)을 참조하세요.  
 
-    -   배포 지점에 부팅 이미지를 배포합니다. 자세한 내용은 [콘텐츠 배포](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_distribute)를 참조하세요.  
+    -   배포 지점에 부팅 이미지를 배포합니다. 자세한 내용은 [Distribute content](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_distribute)을 참조하십시오.  
 
 2.  **운영 체제 이미지 준비**  
 

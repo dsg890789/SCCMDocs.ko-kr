@@ -10,12 +10,13 @@ ms.assetid: b7bff8a0-fe76-4d3b-aac6-065290888bea
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 83a06e2b43166f80532fbcc45e4f7199c890adcc
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: daa59087ef30ccbaad1332e33934e728fa793b3d
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32334347"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56132734"
 ---
 # <a name="security-best-practices-and-privacy-information-for-system-center-configuration-manager"></a>Configuration Manager의 보안 모범 사례 및 개인 정보
 
@@ -35,7 +36,7 @@ ms.locfileid: "32334347"
 
 -   [System Center Configuration Manager에서 콘텐츠 관리에 대한 보안 및 개인 정보](../../../core/plan-design/hierarchy/security-and-privacy-for-content-management.md)  
 
--   [System Center Configuration Manager에서 응용 프로그램 관리에 대한 보안 및 개인 정보](../../../apps/plan-design/security-and-privacy-for-application-management.md)  
+-   [System Center Configuration Manager에서 애플리케이션 관리에 대한 보안 및 개인 정보](../../../apps/plan-design/security-and-privacy-for-application-management.md)  
 
 -   [System Center Configuration Manager에서 소프트웨어 업데이트에 대한 보안 및 개인 정보](../../../sum/plan-design/security-and-privacy-for-software-updates.md)  
 

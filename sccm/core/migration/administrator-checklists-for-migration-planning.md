@@ -10,12 +10,13 @@ ms.assetid: 295fdf07-93cc-490c-acdd-ce3ee88cb36f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 06e85a0b372aea34a041f050d311178967dc18b5
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3136c8add4256a646409c4a540da783a04a5b71d
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32336343"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56128292"
 ---
 # <a name="administrator-checklists-for-migration-planning-in-system-center-configuration-manager"></a>System Center Configuration Manager의 마이그레이션 계획에 대한 관리자 검사 목록
 
@@ -39,7 +40,7 @@ ms.locfileid: "32336343"
 
     자세한 내용은 [System Center Configuration Manager의 역할 기반 관리 기본 사항](../../core/understand/fundamentals-of-role-based-administration.md)을 참조하세요.  
 
--   **네트워크 및 Active Directory 토폴로지 평가:** 기존 도메인 구조와 네트워크 토폴로지를 검토하고 이러한 구성이 계층 구조 설계 및 마이그레이션 작업에 어떠한 영향을 미치는지 살펴봅니다.  
+-   **사용자 네트워크 및 Active Directory 토폴로지를 평가합니다.** 기존 도메인 구조와 네트워크 토폴로지를 검토하고 이러한 구성이 계층 설계 및 마이그레이션 작업에 어떠한 영향을 미치는지 살펴봅니다.  
 
 -   **대상 계층 설계를 완료합니다.**  
 

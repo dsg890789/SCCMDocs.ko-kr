@@ -9,12 +9,13 @@ ms.assetid: 78c1f344-4d72-4718-aad9-3a3834b64dbd
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: bdff5b253c4160165be98ba561309b39e1f2fd19
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5a7819963246762bff7f1ac58a6b43c6a0687c2d
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32338111"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56131815"
 ---
 # <a name="reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 보고
 

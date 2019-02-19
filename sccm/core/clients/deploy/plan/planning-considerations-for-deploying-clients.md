@@ -10,12 +10,13 @@ ms.assetid: 518f9882-ce71-48c3-9f47-cd968cfb658d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: cd5488f6ed1a52b35197fa7ef0eb775eafd33e01
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 63a3025411f8c355b4070937f4f29814346f16f4
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32331736"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156664"
 ---
 # <a name="planning-considerations-for-deploying-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 배포에 대한 계획 고려 사항
 
@@ -37,4 +38,4 @@ PC, 서버 및 System Center Configuration Manager의 다른 디바이스에 클
 
 -   [System Center Configuration Manager에서 Mac 컴퓨터에 클라이언트 배포 계획](../../../../core/clients/deploy/plan/planning-for-client-deployment-to-mac-computers.md)  
 
--   [System Center Configuration Manager에서 Windows Embedded 장치에 클라이언트 배포 계획](../../../../core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)  
+-   [System Center Configuration Manager에서 Windows Embedded 디바이스에 클라이언트 배포 계획](../../../../core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)  

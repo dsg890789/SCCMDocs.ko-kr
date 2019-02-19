@@ -10,12 +10,13 @@ ms.assetid: 604ab835-bce3-4fe3-a7f3-3f059cfc0ecf
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 784ce722d9854e1a7466cd922b65dfba762e8bc1
-ms.sourcegitcommit: d5c013a29f53b975fe3a6cb0a41f1e817bd7b235
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d55c246c696a550ad3935a1f2bf9a7b838af996a
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54342689"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156858"
 ---
 # <a name="removed-and-deprecated-items-for-configuration-manager-clients"></a>Configuration Manager 클라이언트에서 제거되는 항목과 사용되지 않는 항목
 

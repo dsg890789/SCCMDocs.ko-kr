@@ -10,12 +10,13 @@ ms.assetid: cc230ff4-7056-4339-a0a6-6a44cdbb2857
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 882af6e50a8619684225de53ce700fcc23923a06
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6d9b65629e000814f80876747e1148d450c2080b
+ms.sourcegitcommit: fd16fc2b681608fd6def5bad2cedffbcd1f2423a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53418405"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56405661"
 ---
 # <a name="create-and-run-powershell-scripts-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행
 
@@ -121,7 +122,6 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 다음과 같�
 |---|---|---|
 |수집|스크립트 실행|예|
 |사이트|읽기|예|
-|SMS 스크립트|만들기|예|
 |SMS 스크립트|읽기|예|
 
 

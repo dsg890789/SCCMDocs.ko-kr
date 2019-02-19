@@ -10,12 +10,13 @@ ms.assetid: d27f88fe-817f-4af4-b290-c16f2e46cf31
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4815b308b1a4c93e3bc9271a3ec3af2f637b11cf
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7bfb6758d62fb76650e019d00eef1ac2b2803d4b
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39386354"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56126966"
 ---
 # <a name="run-meter-summarization-tool"></a>측정기 요약 도구 실행
 

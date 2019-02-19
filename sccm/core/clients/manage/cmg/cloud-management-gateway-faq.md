@@ -9,12 +9,13 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 4c1a128d-22fb-49f1-8e0b-36513a8dc117
-ms.openlocfilehash: 16cb80efe5ad082d8624452c01dcd54a5eca27f2
-ms.sourcegitcommit: 2badee2b63ae63687795250e298f463474063100
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bcc535c007fc081d2597e5c6dafc159ed1176f39
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45600942"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156875"
 ---
 # <a name="frequently-asked-questions-about-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이에 대한 FAQ
 

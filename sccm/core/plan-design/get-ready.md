@@ -8,12 +8,13 @@ ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 3e839a3e-e476-4ec2-bf29-21e78180441d
 author: aczechowski
-ms.openlocfilehash: b315cfcbfd9ff6b40bdf9547611a38d75863cfb4
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7bc8f12da69e9d831f2c4c91eacde701508ddd80
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32333275"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56141724"
 ---
 # <a name="get-ready-for-system-center-configuration-manager"></a>System Center Configuration Manager 준비
 

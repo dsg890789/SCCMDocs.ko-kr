@@ -10,12 +10,13 @@ ms.assetid: b6b86078-fcc4-46cf-87d6-4b52b914b712
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e04b1d5662bb67ddb14310cd136abd6fdf29855d
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2becf31d807f0854bf6ab9d4eb58adf84d8ab7e6
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32331831"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56135765"
 ---
 # <a name="create-app-v-virtual-environments-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 App-V 가상 환경 만들기
 
@@ -42,11 +43,11 @@ System Center Configuration Manager(Configuration Manager)의 Microsoft Applicat
 
 5.  새 배포 유형을 가상 환경에 추가하려면 **추가**를 선택합니다. 하나 이상의 배포 유형을 추가해야 합니다.  
 
-6.  **응용 프로그램 추가** 대화 상자에서 **그룹 이름**(최대 128자)을 지정합니다. 이 이름을 사용하여 가상 환경에 추가하는 애플리케이션 그룹을 참조합니다.  
+6.  **애플리케이션 추가** 대화 상자에서 **그룹 이름**(최대 128자)을 지정합니다. 이 이름을 사용하여 가상 환경에 추가하는 애플리케이션 그룹을 참조합니다.  
 
-7.  **추가**를 선택하고 그룹에 추가할 App-V 5 응용 프로그램과 배포 유형을 선택한 후에 **확인**을 선택합니다.  
+7.  **추가**를 선택하고 그룹에 추가할 App-V 5 애플리케이션과 배포 유형을 선택한 후에 **확인**을 선택합니다.  
 
-8.  **응용 프로그램 추가** 대화 상자에서 **순서 높이기** 또는 **순서 낮추기**를 선택하여, 여러 응용 프로그램이 동일한 가상 환경에서 파일 시스템 또는 레지스트리 설정을 수정할 경우에 우선 순위를 가질 응용 프로그램을 설정할 수 있습니다.  
+8.  **애플리케이션 추가** 대화 상자에서 **순서 높이기** 또는 **순서 낮추기**를 선택하여, 여러 애플리케이션이 동일한 가상 환경에서 파일 시스템 또는 레지스트리 설정을 수정할 경우에 우선 순위를 가질 애플리케이션을 설정할 수 있습니다.  
 
 9. **가상 환경 만들기** 대화 상자로 돌아가려면 **확인**을 선택합니다.  
 

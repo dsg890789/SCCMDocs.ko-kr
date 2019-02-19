@@ -10,12 +10,13 @@ ms.assetid: 8d4e5641-354e-4439-8b4f-620a760e233d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e517b345340619055b03df22638ec0b491c13d40
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 468d21123e6a4166957b7dcc8cda614a78d2366e
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32339097"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56136401"
 ---
 # <a name="fundamentals-of-client-management-tasks-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 클라이언트 관리 작업의 기본 사항
 

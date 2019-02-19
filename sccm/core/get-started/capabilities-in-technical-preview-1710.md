@@ -11,12 +11,13 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: 4a52d8dc4082e66e1670359e402b371dc93f6ce7
-ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 84e7b2692dae8b924cfa418508433755de4da328
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54898123"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56128367"
 ---
 # <a name="capabilities-in-technical-preview-1710-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1710의 기능
 
@@ -204,7 +205,7 @@ Windows Defender Application Guard에 대한 기본 사항을 이해하려면 [�
 정책을 만들고 사용 가능한 설정을 검색하려면
 1. **Configuration Manager** 콘솔에서 **자산 및 준수**를 선택합니다.
 2. **자산 및 준수** 작업 영역에서 **개요** > **Endpoint Protection** > **Windows Defender Application Guard**를 선택합니다.
-3. **홈** 탭의 **만들기** 그룹에서  **만들기**를 클릭합니다.
+3. **홈** 탭의 **만들기** 그룹에서 ** 만들기**를 클릭합니다.
 4. 블로그 게시물을 참조하여 사용 가능한 설정을 찾아보고 구성한 후 기능을 사용해볼 수 있습니다.
 5. 이 릴리스에서는 마법사에 네트워크 정의 페이지가 추가되었습니다. 이 페이지에서 회사 ID를 지정하고 회사 네트워크 경계를 정의합니다.
 

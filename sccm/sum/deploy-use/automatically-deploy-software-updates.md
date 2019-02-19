@@ -10,12 +10,13 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: b27682de-adf8-4edd-9572-54886af8f7fb
-ms.openlocfilehash: 9d8c74968e808877fb903be424eff594210189e1
-ms.sourcegitcommit: d5c013a29f53b975fe3a6cb0a41f1e817bd7b235
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c42cfb2b973084efc897c8f313e58541164d3fa2
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54342774"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56123487"
 ---
 #  <a name="automatically-deploy-software-updates"></a>소프트웨어 업데이트 자동 배포  
 

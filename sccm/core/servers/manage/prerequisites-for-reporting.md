@@ -10,12 +10,13 @@ ms.assetid: 9cc508a5-5023-4833-b776-ae9a6971138f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: c9e20321a794f093dbb494034fe256c26be31480
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 612056861b896d8c7c271e60e0bb6b78fcbd106e
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32336751"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56123266"
 ---
 # <a name="prerequisites-for-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 보고에 대한 필수 조건
 

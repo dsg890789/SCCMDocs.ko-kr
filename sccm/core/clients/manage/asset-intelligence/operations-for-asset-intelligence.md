@@ -10,12 +10,13 @@ ms.assetid: e8159bd9-5c2b-4d25-82f9-78fcfd732ba9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 1bd9afcf12be3bae1e45ea2e0edf8a677e161bcf
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a0febe68b659f1f9444b1a1471a4a8053374daaa
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53420836"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56128003"
 ---
 # <a name="how-to-use-asset-intelligence-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Asset Intelligence를 사용하는 방법
 
@@ -261,7 +262,7 @@ ms.locfileid: "53420836"
 6.  Asset Intelligence 카탈로그에 있는 소프트웨어에 대한 분류 정보를 되돌리면 유효성 검사 상태가 **사용자 정의됨** 에서 **유효성 검사됨**으로 변경됩니다. 카탈로그에 없는 소프트웨어를 되돌리면 유효성 검사 상태가 **사용자 정의됨** 에서 **범주화되지 않음**으로 변경됩니다.  
 
 ##  <a name="BKMK_RequestCatalogUpdate"></a> 범주화되지 않은 소프트웨어 타이틀에 대한 카탈로그 업데이트 요청  
- System Center Online을 연구 및 분류에 대 한 분류 되지 않은 소프트웨어 제목 정보를 제출할 수 있습니다. 범주화되지 않은 소프트웨어 타이틀이 제출되면 동일한 소프트웨어 타이틀에 대해 고객으로부터 최소 4개의 범주화 요청이 있으며, 연구원은 소프트웨어 타이틀 분류 정보를 식별하고 분류한 다음 System Center Online 서비스를 사용하는 모든 고객에게 해당 정보를 제공합니다. Microsoft는 분류를 위해 가장 많은 요청이 있는 소프트웨어 타이틀에 대해 가장 높은 우선 순위를 부여합니다. 사용자 지정 소프트웨어 및 기간 업무 응용 프로그램은 하나의 범주 및 모범 사례로 받을 가능성이 낮으므로 이러한 소프트웨어 타이틀은 분류를 위해 Microsoft에 보내지 않는 것이 좋습니다.  
+ System Center Online을 연구 및 분류에 대 한 분류 되지 않은 소프트웨어 제목 정보를 제출할 수 있습니다. 범주화되지 않은 소프트웨어 타이틀이 제출되면 동일한 소프트웨어 타이틀에 대해 고객으로부터 최소 4개의 범주화 요청이 있으며, 연구원은 소프트웨어 타이틀 분류 정보를 식별하고 분류한 다음 System Center Online 서비스를 사용하는 모든 고객에게 해당 정보를 제공합니다. Microsoft는 분류를 위해 가장 많은 요청이 있는 소프트웨어 타이틀에 대해 가장 높은 우선 순위를 부여합니다. 사용자 지정 소프트웨어 및 기간 업무 애플리케이션은 하나의 범주 및 모범 사례로 받을 가능성이 낮으므로 이러한 소프트웨어 타이틀은 분류를 위해 Microsoft에 보내지 않는 것이 좋습니다.  
 
  분류를 위해 소프트웨어 타이틀 정보가 System Center Online에 제출되는 경우 다음 조건이 적용됩니다.  
 

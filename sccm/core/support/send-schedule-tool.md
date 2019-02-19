@@ -10,12 +10,13 @@ ms.assetid: d5ce547d-3b3b-47d3-bcd7-6ff94692c046
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 7fd90b613fa7e52b4bc83e6c0d0f593d585fdd48
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 38829a249ca87ca87f9c5005ed7ae73e1500e2ab
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385844"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56131203"
 ---
 # <a name="send-schedule-tool"></a>일정 보내기 도구
 

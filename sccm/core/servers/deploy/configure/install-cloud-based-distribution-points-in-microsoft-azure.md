@@ -10,12 +10,13 @@ ms.assetid: bb83ac87-9914-4a35-b633-ad070031aa6e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3d6b4215615b6401a9163edfa33893d866e0c2ce
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ef6ace569a73700c2250cd5a45301df387e54c33
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53424768"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56127170"
 ---
 # <a name="install-a-cloud-distribution-point-for-configuration-manager"></a>Configuration Manager의 클라우드 배포 지점 설치
 
@@ -108,7 +109,7 @@ ms.locfileid: "53424768"
         > [!NOTE]  
         > 클라우드 배포 지점 서버 인증 인증서는 와일드카드를 지원합니다. 와일드카드 인증서를 사용하는 경우 **서비스 FQDN** 필드의 별표(\*)를 서비스에서 원하는 호스트 이름으로 바꿉니다.  
 
-5. **경고** 페이지에서 저장소 할당량, 전송 할당량 및 Configuration Manager에서 이러한 할당량에 대해 경고를 생성할 비율(%)을 설정합니다. **다음**을 선택합니다.  
+5. **경고** 페이지에서 스토리지 할당량, 전송 할당량 및 Configuration Manager에서 이러한 할당량에 대해 경고를 생성할 비율(%)을 설정합니다. **다음**을 선택합니다.  
 
 6. 마법사를 완료합니다.  
 

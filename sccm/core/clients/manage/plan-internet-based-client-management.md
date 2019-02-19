@@ -10,12 +10,13 @@ ms.assetid: 83a7c934-3b11-435d-ba22-cbc274951e83
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f334c4ec1ef66ba85026da6bc970e34b94b51204
-ms.sourcegitcommit: a2ecd84d93f431ee77848134386fec14031aed6a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bb02ae8d2cacf6d2f6037f30435fcb586d1f99da
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55230871"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56142547"
 ---
 # <a name="plan-for-internet-based-client-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 인터넷 기반 클라이언트 관리 계획
 

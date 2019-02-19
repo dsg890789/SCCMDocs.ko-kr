@@ -10,12 +10,13 @@ ms.assetid: 01b30260-f03a-4851-a549-d1b76e8cfc69
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6e8c5ac335e3baa3797ab81c324ff2282302779d
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0e9f851f6dcd21de261729215bad196233610272
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32334117"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56127680"
 ---
 # <a name="evaluate-system-center-configuration-manager-by-building-your-own-lab-environment"></a>고유한 랩 환경을 구축하여 System Center Configuration Manager 평가
 

@@ -10,12 +10,13 @@ ms.assetid: 7341cc6e-9e08-41e4-bcc6-6c1ff12e85ca
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 98deb50a35bd96684bf537c1821c58d1d08ca738
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 70e19304d63c9660a685b37db19219ba38981b18
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53420127"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56133455"
 ---
 # <a name="use-alerts-and-the-status-system-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 경고 및 상태 시스템 사용
 
@@ -85,7 +86,7 @@ ms.locfileid: "53420127"
 
     2.  **임계값** 탭에서 **기본 임계값** 의 값을 지정하여 위험 및 경고 상태 표시의 기본 임계값을 구성합니다.  
 
-    3.  특정 **스토리지 개체**의 값을 편집하려면 **특정 임계값** 목록에서 개체를 선택하고 **속성** 단추를 클릭하여 스토리지 개체 경고 및 위험 임계값을 액세스하여 편집합니다. **확인** 을 클릭하여 저장소 개체 속성을 닫습니다.  
+    3.  특정 **스토리지 개체**의 값을 편집하려면 **특정 임계값** 목록에서 개체를 선택하고 **속성** 단추를 클릭하여 스토리지 개체 경고 및 위험 임계값을 액세스하여 편집합니다. **확인** 을 클릭하여 스토리지 개체 속성을 닫습니다.  
 
     4.  새 스토리지 개체를 만들려면 **개체 만들기** 단추를 클릭하고 스토리지 개체 값을 지정합니다. **확인** 을 클릭하여 개체 속성을 닫습니다.  
 
