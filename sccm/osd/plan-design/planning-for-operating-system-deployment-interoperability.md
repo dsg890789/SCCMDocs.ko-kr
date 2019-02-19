@@ -10,12 +10,13 @@ ms.assetid: e327ce38-6c07-4a27-b6eb-7e5bf74ed04b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: aceb5f032cd0a4a5c12672db625b540465e37800
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a9c1d02993c305c951e5f825b8663543976fdfa7
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53418478"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56120166"
 ---
 # <a name="planning-for-operating-system-deployment-interoperability-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 운영 체제 배포 상호 운용성 계획
 

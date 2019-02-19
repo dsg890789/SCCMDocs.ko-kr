@@ -10,12 +10,13 @@ ms.assetid: 8d37b983-a964-402c-819d-2512ed2d463b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a2e2817f5f3bd48e4a84e2e507597126fa10f989
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f4d617bdea9c63010c96cef6f91e5123b27641e9
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53419227"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56130125"
 ---
 # <a name="settings-to-manage-high-risk-deployments-for-configuration-manager"></a>Configuration Manager에 대해 위험 수준이 높은 배포를 관리하기 위한 설정
 

@@ -9,12 +9,13 @@ ms.assetid: d24257d8-8136-47f4-8e0d-34021356dc37
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: fa201029b81bb3e0ca8fb5e97f126c899497d503
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 985b439a9f74f92a68b1e1c70e4cca0580b819c0
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53422932"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56126797"
 ---
 # <a name="configuration-manager-on-azure---frequently-asked-questions"></a>Azure의 Configuration Manager - 질문과 대답
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -157,7 +158,7 @@ Configuration Manager는 Azure 부하 분산 장치에서 테스트되지 않았
 **Azure VM 컴퓨터 유형:**
  - 가상 머신 크기: https://azure.microsoft.com/documentation/articles/virtual-machines-size-specs/  
  - VM 가격 책정: http://azure.microsoft.com/pricing/details/virtual-machines/  
- - 스토리지 가격 책정: http://azure.microsoft.com/pricing/details/storage/
+ - 저장소 가격 책정: http://azure.microsoft.com/pricing/details/storage/
 
 **디스크 성능 고려 사항:**    
  - 프리미엄 디스크 소개: http://azure.microsoft.com/blog/2014/12/11/introducing-premium-storage-high-performance-storage-for-azure-virtual-machine-workloads/  

@@ -10,12 +10,13 @@ ms.assetid: d39c201f-d364-4e7b-bde4-faa76d747f33
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a8d1d0a727f0a4ad4a2bfc25141f7e2982494080
-ms.sourcegitcommit: b596d944e49f3c4912c6ca91915ed1418c17a1a2
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 35bfd908864ee77c19821ce02ab62c03523fae37
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42584519"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56126949"
 ---
 # <a name="install-the-system-center-configuration-manager-console"></a>System Center Configuration Manager 콘솔 설치
 

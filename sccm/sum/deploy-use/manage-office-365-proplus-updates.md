@@ -10,12 +10,13 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
-ms.openlocfilehash: 7ef9c7d734c74d578c188576b3b03d66fcb1de06
-ms.sourcegitcommit: f7b2fe522134cf102a3447505841cee315d3680c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9ece8381fd41651b5b52e3187bbcbfc1a0578234
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55570237"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56124765"
 ---
 # <a name="manage-office-365-proplus-with-configuration-manager"></a>Configuration Manager를 사용하여 Office 365 ProPlus 관리
 

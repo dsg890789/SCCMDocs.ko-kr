@@ -10,12 +10,13 @@ ms.assetid: ec5b54cf-62b7-4ed1-9bb3-e8c63b9641c8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f1683f69ae065d0523719edd3d24da52d499341b
-ms.sourcegitcommit: 1439817f1309658b31008d7bafaab32fc5ef8789
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6efa58c2257730de0703d850b814f871684b72c6
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52820002"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56129037"
 ---
 # <a name="upgrade-the-long-term-servicing-branch-to-the-current-branch"></a>장기 서비스 분기를 현재 분기로 업그레이드
 

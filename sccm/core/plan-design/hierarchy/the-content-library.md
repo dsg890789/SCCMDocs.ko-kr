@@ -10,12 +10,13 @@ ms.assetid: 65c88e54-3574-48b0-a127-9cc914a89dca
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4587549ef2f43be3dcc5e18021f60c42770f5800
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0453f181133b69dcf3fe83032da0eace84718cf3
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53415520"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56129275"
 ---
 # <a name="the-content-library-in-configuration-manager"></a>Configuration Manager의 콘텐츠 라이브러리
 
@@ -74,7 +75,7 @@ Configuration Manager는 다음 경우에 중앙 관리 사이트에서 콘텐�
 
 
 ## <a name="bkmk_remote"></a> 사이트 서버에 대해 원격 콘텐츠 라이브러리 구성  
-<!--1357525--> 1806 버전부터 [사이트 서버 고가용성](/sccm/core/servers/deploy/configure/site-server-high-availability)을 구성하거나 중앙 관리 또는 기본 사이트 서버에서 하드 드라이브 공간을 확보하기 위해 다른 저장소 위치로 콘텐츠 라이브러리를 이동합니다. 별도의 서버인 사이트 서버의 다른 드라이브 또는 SAN(스토리지 영역 네트워크)의 내결함성 디스크로 콘텐츠 라이브러리를 이동합니다. SAN은 고가용성이며, 시간 경과에 따라 사용자의 변화하는 콘텐츠 요구 사항에 맞게 확장되거나 축소되는 탄력적인 스토리지를 제공하므로 권장됩니다. 자세한 내용은 [고가용성 옵션](/sccm/protect/understand/high-availability-options)을 참조하세요.
+<!--1357525--> 1806 버전부터 [사이트 서버 고가용성](/sccm/core/servers/deploy/configure/site-server-high-availability)을 구성하거나 중앙 관리 또는 기본 사이트 서버에서 하드 드라이브 공간을 확보하기 위해 다른 스토리지 위치로 콘텐츠 라이브러리를 이동합니다. 별도의 서버인 사이트 서버의 다른 드라이브 또는 SAN(스토리지 영역 네트워크)의 내결함성 디스크로 콘텐츠 라이브러리를 이동합니다. SAN은 고가용성이며, 시간 경과에 따라 사용자의 변화하는 콘텐츠 요구 사항에 맞게 확장되거나 축소되는 탄력적인 스토리지를 제공하므로 권장됩니다. 자세한 내용은 [고가용성 옵션](/sccm/protect/understand/high-availability-options)을 참조하세요.
 
 원격 콘텐츠 라이브러리는 [사이트 서버 고가용성](/sccm/core/servers/deploy/configure/site-server-high-availability)을 위한 필수 조건입니다. 
 
@@ -84,7 +85,7 @@ Configuration Manager는 다음 경우에 중앙 관리 사이트에서 콘텐�
 > [!Tip]  
 > 또한 콘텐츠 라이브러리 외부에 있는 패키지 원본 콘텐츠를 관리하기 위한 계획입니다. Configuration Manager의 모든 소프트웨어 개체에는 네트워크 공유에 패키지 원본이 있습니다. 모든 원본을 단일 공유로 중앙 집중화하는 것을 고려하되, 이 위치는 중복 및 고가용성이어야 합니다. 
 > 
-> 콘텐츠 라이브러리를 패키지 원본과 동일한 스토리지 볼륨으로 이동하는 경우 이 볼륨을 데이터 중복 제거용으로 표시할 수 없습니다. 콘텐츠 라이브러리는 데이터 중복 제거를 지원하지만, 패키지 원본 볼륨은 데이터 중복 제거를 지원하지 않습니다. 자세한 내용은 [데이터 중복 제거](/sccm/core/plan-design/configs/support-for-windows-features-and-networks#bkmmk_datadedup)를 참조하세요.<!--SCCMDOcs issue #831-->  
+> 콘텐츠 라이브러리를 패키지 원본과 동일한 저장소 볼륨으로 이동하는 경우 이 볼륨을 데이터 중복 제거용으로 표시할 수 없습니다. 콘텐츠 라이브러리는 데이터 중복 제거를 지원하지만, 패키지 원본 볼륨은 데이터 중복 제거를 지원하지 않습니다. 자세한 내용은 [데이터 중복 제거](/sccm/core/plan-design/configs/support-for-windows-features-and-networks#bkmmk_datadedup)를 참조하세요.<!--SCCMDOcs issue #831-->  
 
 
 ### <a name="prerequisites"></a>필수 구성 요소  

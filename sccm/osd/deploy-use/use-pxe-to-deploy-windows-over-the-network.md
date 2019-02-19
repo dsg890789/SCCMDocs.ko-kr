@@ -10,12 +10,13 @@ ms.assetid: da5f8b61-2386-4530-ad54-1a5c51911f07
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 75e463d27475e82677e91b00bfba4c4287d463ee
-ms.sourcegitcommit: f2a1fa59fb3870a6bebca61daf15c0c157e9fdd6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 78acd5880bfdada80fca33ea4147fc36b28c495e
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54030991"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56126750"
 ---
 # <a name="use-pxe-to-deploy-windows-over-the-network-with-configuration-manager"></a>Configuration Manager에서 PXE를 사용하여 네트워크를 통해 Windows 배포
 

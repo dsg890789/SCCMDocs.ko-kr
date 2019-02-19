@@ -10,12 +10,13 @@ ms.assetid: 035b7f73-8b78-4ed1-835e-a31f9a5c4a02
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 1a7d8e6fe1824ab2a7fe3cfb6f89965a4b5800c0
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a1fbe25f492cd9b4ae36939d5aa5e78cee6be0bb
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52456076"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56119860"
 ---
 # <a name="fundamentals-of-security-for-configuration-manager"></a>Configuration Manager의 보안 기본 사항
 
@@ -82,7 +83,7 @@ Windows 서버 및 네트워크 인프라에서 제공하는 보안 외에도, C
 
  관리자가 관리 사용자 및 그룹 사용 권한에 *보안 역할*을 할당합니다. 사용 권한은 여러 Configuration Manager 개체 유형에 연결됩니다(예: 클라이언트 설정 만들기 또는 변경 권한). 
 
- *보안 범위*에서는 Microsoft Office를 설치하는 응용 프로그램과 같이 관리자가 관리해야 하는 개체의 특정 인스턴스가 그룹화됩니다. 
+ *보안 범위*에서는 Microsoft Office를 설치하는 애플리케이션과 같이 관리자가 관리해야 하는 개체의 특정 인스턴스가 그룹화됩니다. 
 
  보안 역할, 보안 범위 및 컬렉션의 조합에 따라 관리자가 보고 관리할 수 있는 개체가 정의됩니다. Configuration Manager에서 일반적인 관리 작업에 대한 일부 기본 보안 역할을 설치합니다. 특정 비즈니스 요구 사항을 지원하는 고유한 보안 역할을 만듭니다.  
 

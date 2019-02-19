@@ -10,12 +10,13 @@ ms.assetid: b189a346-8c0d-4870-a876-0719fbb0ab04
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 622b49b9fb689db8238be8254a66b3a0264b4399
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8481b0934998a44b6142131d2cff3dbbd0821720
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32350938"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56124247"
 ---
 # <a name="refresh-an-existing-computer-with-a-new-version-of-windows-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 새 버전의 Windows로 기존 컴퓨터 새로 고침
 
@@ -45,7 +46,7 @@ ms.locfileid: "32350938"
 
     -   부팅 이미지를 사용자 지정하는 방법에 대한 자세한 내용은 [부팅 이미지 사용자 지정](../get-started/customize-boot-images.md)을 참조하세요.  
 
-    -   배포 지점에 부팅 이미지를 배포합니다. 자세한 내용은 [콘텐츠 배포](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_distribute)를 참조하세요.  
+    -   배포 지점에 부팅 이미지를 배포합니다. 자세한 내용은 [Distribute content](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_distribute)을 참조하십시오.  
 
 2.  **운영 체제 이미지 준비**  
 

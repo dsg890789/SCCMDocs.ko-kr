@@ -10,12 +10,13 @@ ms.assetid: 72d7b174-f015-498f-a0a7-2161b9929198
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: d1a10f2381d6820d685ec8ff871c83c2a4c39bb1
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f0c9ad4831d0450b7a30de4117a65005164d5080
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53415061"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56122392"
 ---
 # <a name="accounts-used-in-configuration-manager"></a>Configuration Manager에서 사용되는 계정
 

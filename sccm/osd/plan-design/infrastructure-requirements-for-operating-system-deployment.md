@@ -10,12 +10,13 @@ ms.assetid: 1dc74219-7ff5-4e3b-b4f6-5aad663bb75b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: cfaa50b941697b19f2d4d029ed7990f2d39eecbc
-ms.sourcegitcommit: f2a1fa59fb3870a6bebca61daf15c0c157e9fdd6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7b7a484bc3e3491ac832ca7b3d6ed926627cbfaa
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54030974"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56133700"
 ---
 # <a name="infrastructure-requirements-for-os-deployment-in-configuration-manager"></a>Configuration Manager의 OS 배포에 대한 인프라 요구 사항
 

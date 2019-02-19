@@ -10,12 +10,13 @@ ms.assetid: 7568c9aa-b99e-4466-bfc8-0301aa376930
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 081e485211e3bb5b2b0d8e6a9606c4037c29d4e3
-ms.sourcegitcommit: 2deba3d3aaba47a532273bcd377da8e60f7b1a68
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2ac27cfd7bccc55da891707878fccd8829c43d93
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49169603"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56125940"
 ---
 # <a name="ensure-device-compliance-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 디바이스 준수 확인
 
@@ -35,7 +36,7 @@ System Center Configuration Manager의 준수 설정은 조직에서 디바이�
 
 -   자동으로 모바일 디바이스의 일부 비준수 설정 수정  
 
--   비준수를 보고하는 디바이스가 자동으로 포함되는 컬렉션에 응용 프로그램, 패키지 및 프로그램 또는 스크립트를 배포하여 비준수 수정  
+-   비준수를 보고하는 장치가 자동으로 포함되는 컬렉션에 애플리케이션, 패키지 및 프로그램 또는 스크립트를 배포하여 비준수 수정  
 
 
 ## <a name="get-started"></a>시작  
@@ -66,4 +67,4 @@ System Center Configuration Manager의 준수 설정은 조직에서 디바이�
 ## <a name="windows-edition-upgrade-policy"></a>Windows 버전 업그레이드 정책  
  버전 업그레이드 정책을 통해 Windows 10 디바이스를 최신 버전으로 자동으로 업그레이드할 수 있습니다. Windows 10 데스크톱 버전을 업그레이드할 제품 키 또는 Windows 10 Mobile 및 Windows 10 Holographic을 실행하는 디바이스를 업그레이드하는 데 사용할 수 있는 라이선스 파일을 지정할 수 있습니다.  
 
- [버전 업그레이드 정책을 사용하여 Windows 장치 업그레이드](/sccm/compliance/deploy-use/upgrade-windows-version)  
+ [버전 업그레이드 정책을 사용하여 Windows 디바이스 업그레이드](/sccm/compliance/deploy-use/upgrade-windows-version)  

@@ -10,12 +10,13 @@ ms.assetid: cdb9fb0c-0912-41e4-b427-f40620971763
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f9f857a2045f67690579955236c082ff29721a5f
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 10aa303b930c76b50859b38509e854e643538ed8
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32339573"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56125139"
 ---
 # <a name="reference-for-system-center-configuration-manager-setup"></a>System Center Configuration Manager 설치에 대한 참조
 

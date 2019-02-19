@@ -10,12 +10,13 @@ ms.assetid: 97f2d81a-2c58-442c-88bc-defd5a1cd48f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b0fa269199f7f3bf4299f90faef9e55766f775d4
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2dfce18955f4cdfe62830eb3454520c904627117
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53421334"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56122596"
 ---
 # <a name="manage-boot-images-with-system-center-configuration-manager"></a>System Center Configuration Manager로 부팅 이미지 관리
 
@@ -125,7 +126,7 @@ Configuration Manager 버전 1706부터 부팅 이미지를 Windows ADK 설치 �
  부팅 이미지를 배포하는 단계는 [콘텐츠 배포](/sccm/core/servers/deploy/configure/deploy-and-manage-content#bkmk_distribute)를 참조하세요.  
 
 ##  <a name="BKMK_ModifyBootImages"></a> 부팅 이미지 수정  
- 이미지에 디바이스 드라이버를 추가 또는 제거하거나 부팅 이미지와 관련된 속성을 편집할 수 있습니다. 추가하거나 제거할 수 있는 디바이스 드라이버에는 네트워크 어댑터 또는 대용량 저장소 디바이스 드라이버 등이 있습니다. 부팅 이미지를 수정할 경우 다음 요소를 고려하세요.  
+ 이미지에 디바이스 드라이버를 추가 또는 제거하거나 부팅 이미지와 관련된 속성을 편집할 수 있습니다. 추가하거나 제거할 수 있는 장치 드라이버에는 네트워크 어댑터 또는 대용량 스토리지 장치 드라이버 등이 있습니다. 부팅 이미지를 수정할 경우 다음 요소를 고려하세요.  
 
 - 부팅 이미지에 추가하려면 먼저 디바이스 드라이버를 가져오고 디바이스 드라이버 카탈로그에서 사용하도록 설정합니다.  
 
@@ -153,7 +154,7 @@ Configuration Manager 버전 1706부터 부팅 이미지를 Windows ADK 설치 �
 
         -   부팅 이미지의 아키텍처용 드라이버만 표시하려면 **부팅 이미지의 아키텍처와 일치하지 않는 드라이버 숨기기**를 선택합니다. 아키텍처는 제조업체 INF에서 보고되는 아키텍처를 기준으로 합니다.  
 
-        -   **(부팅 이미지용) 저장소 또는 네트워크 클래스에 없는 드라이버 숨기기**를 선택하여 저장소 및 네트워크 드라이버만 표시합니다. 이 옵션은 또한 비디오 또는 모뎀 드라이버 등의 부팅 이미지에 일반적으로 필요하지 않은 기타 드라이버를 숨깁니다.  
+        -   **(부팅 이미지용) 스토리지 또는 네트워크 클래스에 없는 드라이버 숨기기**를 선택하여 스토리지 및 네트워크 드라이버만 표시합니다. 이 옵션은 또한 비디오 또는 모뎀 드라이버 등의 부팅 이미지에 일반적으로 필요하지 않은 기타 드라이버를 숨깁니다.  
 
         -   **디지털 서명되지 않은 드라이버 숨기기**를 선택하여 유효한 디지털 서명이 없는 드라이버를 숨깁니다.  
 

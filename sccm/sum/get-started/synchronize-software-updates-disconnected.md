@@ -10,12 +10,13 @@ ms.technology: configmgr-sum
 ms.assetid: 1a997c30-8e71-4be5-89ee-41efb2c8d199
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: d3155faaa0ccad4e4f98ee72d09f67b1676dc2f4
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0ca643b348d9d6d2800c671d9985f10d08bf5d60
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53421861"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56130472"
 ---
 # <a name="synchronize-software-updates-from-a-disconnected-software-update-point"></a>연결이 끊긴 소프트웨어 업데이트 지점에서 소프트웨어 업데이트 동기화  
 

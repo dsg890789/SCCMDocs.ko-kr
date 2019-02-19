@@ -10,12 +10,13 @@ ms.assetid: 8c6eabc4-5dda-4682-b03e-3a450e6ef65a
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 7d6bcb46650082cebc95e8300a2f6adeb119fdbf
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a5cdb08070c13feed573a947ba1f5ccf6a47b3e1
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53421878"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56126375"
 ---
 # <a name="remote-connection-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager의 원격 연결 프로필
 

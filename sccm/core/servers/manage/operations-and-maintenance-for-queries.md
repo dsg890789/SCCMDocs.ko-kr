@@ -10,12 +10,13 @@ ms.assetid: f050ee45-bcab-4a3b-9050-4952f5e2ec2e
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 7597d7a3f281360533673c91ff53622dcdfebd6c
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 65b90d8f5e1b60d20e05f31f89ab12a2ca22572e
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32336428"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56125343"
 ---
 # <a name="operations-and-maintenance-for-queries-in-system-center-configuration-manager"></a>System Center Configuration Manager의 쿼리 작업 및 유지 관리
 

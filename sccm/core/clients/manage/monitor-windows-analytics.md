@@ -10,12 +10,13 @@ ms.assetid: CF35CE87-3BA8-4A84-9BC8-ABCEA4666212
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 8405a212f9e4cd845ac7591767eb27e5425f404e
-ms.sourcegitcommit: 0d7efd9e064f9d6a9efcfa6a36fd55d4bee20059
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 194a26a4fee7a8a7c97a91db4b579c9db03c1787
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43893654"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56129785"
 ---
 # <a name="use-windows-analytics-with-configuration-manager"></a>Configuration Manager에서 Windows Analytics 사용
 
@@ -38,7 +39,7 @@ Windows Analytics에 데이터를 보고하는 클라이언트 디바이스의 �
 Windows Analytics을 구성하려면 다음을 수행하세요. 
 1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하여 **클라이언트 설정** 노드를 선택합니다.  
 2. 리본에서 **사용자 지정 디바이스 클라이언트 설정 만들기**를 선택합니다.  
-3. **Windows Analytics** 그룹을 이 사용자 지정 장치 클라이언트 설정 정책에 추가합니다.  
+3. **Windows Analytics** 그룹을 이 사용자 지정 디바이스 클라이언트 설정 정책에 추가합니다.  
 
 사용자 지정 디바이스 클라이언트 설정을 만드는 방법에 대한 자세한 내용은 [클라이언트 설정을 구성하는 방법](/sccm/core/clients/deploy/configure-client-settings)을 참조하세요.
 
@@ -74,5 +75,5 @@ Windows 8.1 또는 이전 버전을 실행하는 디바이스에서 Internet Exp
 
 ## <a name="use-windows-analytics-to-identify-gaps-in-windows-information-protection-policies"></a>Windows Analytics를 사용하여 Windows Information Protection 정책의 차이 식별
 
-[Windows Information Protection](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip)(WIP) 정책으로 Windows 10 버전 1703 이후 장치를 구성할 수 있습니다. 이러한 환경에서 기업 데이터에 액세스하는 애플리케이션에 대한 진단 데이터를 보고하지만, 정책 애플리케이션 규칙에는 포함되지 않습니다. 사용자가 이러한 애플리케이션의 생산성을 유지해야 할 수 있지만 WIP는 사용자의 액세스를 차단합니다. 이 정보는 Configuration Manager에서 Windows Information Protection 정책을 유지 관리하는 데 유용합니다. 
+[Windows Information Protection](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip)(WIP) 정책으로 Windows 10 버전 1703 이후 장치를 구성할 수 있습니다. 이러한 환경에서 기업 데이터에 액세스하는 응용 프로그램에 대한 진단 데이터를 보고하지만, 정책 응용 프로그램 규칙에는 포함되지 않습니다. 사용자가 이러한 애플리케이션의 생산성을 유지해야 할 수 있지만 WIP는 사용자의 액세스를 차단합니다. 이 정보는 Configuration Manager에서 Windows Information Protection 정책을 유지 관리하는 데 유용합니다. 
 

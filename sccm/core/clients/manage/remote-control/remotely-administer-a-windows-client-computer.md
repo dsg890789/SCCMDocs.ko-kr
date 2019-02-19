@@ -10,12 +10,13 @@ ms.assetid: 3c9648c4-645e-4e47-ae10-2da817b8c83b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 9ce6bf7c39e400a59188388ee162bc187b1683a7
-ms.sourcegitcommit: 2687489aa409a050dcacd67f17b3dad3ab7f1804
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 266961da1fe1f63e996247612a821ee7ac217f65
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54316476"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56133666"
 ---
 # <a name="how-to-remotely-administer-a-windows-client-computer-by-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows 클라이언트 컴퓨터를 원격으로 관리하는 방법
 

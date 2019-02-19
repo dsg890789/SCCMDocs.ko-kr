@@ -10,12 +10,13 @@ ms.assetid: d466edd2-97f0-44c1-a73e-d71abbdbf4a8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0f87975d660a94d04cdd7d0e10816b6e2815fe53
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 50543fdd042eb0285c070d8714cb98eec9a7629f
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32342072"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56129071"
 ---
 # <a name="uninstall-sites-and-hierarchies-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사이트 및 계층 제거
 

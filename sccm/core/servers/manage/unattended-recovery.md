@@ -10,12 +10,13 @@ ms.assetid: 828c31d1-3d70-4412-b1a8-c92e7e504d39
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 637727356724085f019ac9ab336bc37e3635ea3a
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0da207f92ea2c11266831a0c03f5b846654e83a4
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53415146"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56129003"
 ---
 # <a name="unattended-site-recovery-for-configuration-manager"></a>Configuration Manager에 대한 무인 사이트 복구   
 

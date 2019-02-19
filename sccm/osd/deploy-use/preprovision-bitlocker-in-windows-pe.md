@@ -10,12 +10,13 @@ ms.assetid: c7c94ba0-d709-4129-8077-075a8abaea1c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 10c072c89064472398c068a62079d1af120b1a11
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: edab13fb95f62a994036e1fdb8ecacdec3755cfa
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53416557"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56126602"
 ---
 # <a name="preprovision-bitlocker-in-windows-pe-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows PE에서 BitLocker 사전 프로비전
 

@@ -10,12 +10,13 @@ ms.assetid: 4d26deed-3b16-4116-b640-f618f2c20f5a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: be4f60bbc6114abc1c4537cc83ee8c2dd0aeef42
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 13467e3b227a8080d03e3e44864970703c2e000f
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53421929"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56126340"
 ---
 # <a name="security-and-privacy-for-application-management-in-configuration-manager"></a>Configuration Manager의 애플리케이션 관리를 위한 보안 및 개인정보보호
 

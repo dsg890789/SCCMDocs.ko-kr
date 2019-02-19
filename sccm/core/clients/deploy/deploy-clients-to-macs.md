@@ -10,12 +10,13 @@ ms.assetid: e46ad501-5d73-44ac-92de-0de14ef72b83
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: ba8182795759a29b4a5c8e4dfaa73f7c764dd7ff
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9cfb945c2189d54c8e74f9f972df784cb441a8e1
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53424887"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56129819"
 ---
 # <a name="how-to-deploy-clients-to-macs"></a>How to deploy clients to Macs
 
@@ -119,9 +120,9 @@ Mac 컴퓨터에 대한 등록을 구성하려면 [기본 클라이언트 설정
 
    - **사용자 이름**: 사용자 이름은 다음 형식이 될 수 있습니다.  
 
-     - `domain\name`를 재정의하려면 선택합니다. 예를 들면 다음과 같습니다. `contoso\mnorth`  
+     - `domain\name`를 재정의하려면 선택합니다. `contoso\mnorth`  
 
-     - `user@domain`를 재정의하려면 선택합니다. 예를 들면 다음과 같습니다. `mnorth@contoso.com`  
+     - `user@domain`를 재정의하려면 선택합니다. `mnorth@contoso.com`  
 
          > [!IMPORTANT]  
          >  이메일 주소를 사용하여 **사용자 이름** 필드를 채우면 Configuration Manager에서 **서버 이름** 필드를 자동으로 채웁니다. 등록 프록시 지점 서버의 기본 이름과 이메일 주소의 도메인 이름을 사용합니다. 이러한 이름이 등록 프록시 지점 서버의 이름과 일치하지 않으면 등록 중에 **서버 이름**을 수정합니다.  
@@ -197,7 +198,7 @@ Configuration Manager와 별도로 인증서 요청 및 설치 방법을 사용�
 
 - 주체 값이 동일한 인증서가 둘 이상 있는 경우 Configuration Manager 클라이언트에 사용할 인증서 일련 번호를 지정합니다. `sudo defaults write com.microsoft.ccmclient SerialNumber -data "<serial number>"` 명령을 사용합니다.  
 
-     예를 들면 다음과 같습니다. `sudo defaults write com.microsoft.ccmclient SerialNumber -data "17D4391A00000003DB"`  
+     `sudo defaults write com.microsoft.ccmclient SerialNumber -data "17D4391A00000003DB"`  
 
 
 

@@ -10,12 +10,13 @@ ms.assetid: 753d2681-ea72-4f47-94d1-ac10188d9d5b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 962b19f1849628776eb1b9059089f7ce8e6df3ee
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3ba864914afb6794d460b81f5df346902b8ab0ce
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385984"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56121884"
 ---
 # <a name="content-ownership-tool"></a>콘텐츠 소유권 도구
 

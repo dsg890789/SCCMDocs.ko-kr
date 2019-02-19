@@ -10,12 +10,13 @@ ms.assetid: 1eb2fcaf-acac-4388-9b31-6cccafacaabe
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: fbdb2ecdd0057b52586a7fa19e22cafa0319b039
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ba02c1c3558cc7c0f7280e9517d7b67ee8e46eec
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53422235"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56130380"
 ---
 # <a name="how-to-create-custom-configuration-items-for-windows-desktop-and-server-computers-managed-with-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트에서 관리되는 Windows 데스크톱 및 서버 컴퓨터에 대한 사용자 지정 구성 항목을 만드는 방법
 
@@ -255,7 +256,7 @@ System Center Configuration Manager **사용자 지정 Windows 데스크톱 및 
 ##  <a name="configure-compliance-rules"></a>준수 규칙 구성  
  다음 절차를 사용하여 구성 항목에 대한 준수 규칙을 구성할 수 있습니다.  
 
- 준수 규칙은 구성 항목의 준수를 정의하는 조건을 지정합니다. 설정이 준수에 대해 평가되려면 먼저 하나 이상의 준수 규칙이 있어야 합니다. WMI, 레지스트리 및 설정 스크립트를 통해 정책을 준수 하지 않는 것으로 발견 하는 값을 재구성할 수 있습니다. 새 규칙을 만들 하거나 규칙을 선택 하려면 기존 설정을 모든 구성 항목에서 찾아볼 수 있습니다.  
+ 규정 준수 규칙에는 구성 항목의 호환성을 정의 하는 조건을 지정 합니다. 설정의 준수를 평가하려면 먼저 하나 이상의 준수 규칙이 있어야 합니다. WMI, 레지스트리 및 설정 스크립트를 통해 정책을 준수 하지 않는 것으로 발견 하는 값을 재구성할 수 있습니다. 새 규칙을 만들 하거나 규칙을 선택 하려면 기존 설정을 모든 구성 항목에서 찾아볼 수 있습니다.  
 
 ### <a name="to-create-a-compliance-rule"></a>규정 준수 규칙을 만들려면  
 

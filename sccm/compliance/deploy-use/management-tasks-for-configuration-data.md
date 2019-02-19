@@ -10,12 +10,13 @@ ms.assetid: b48c693c-d2b0-4707-a5dd-fe92172c49fe
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: d4602a2dbee04259d5953873485cdbccdc58167d
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b1eb13beac2882121b2e083ad3e29eef6918eeaa
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32333663"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56120892"
 ---
 # <a name="manage-configuration-data-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 구성 데이터 관리
 

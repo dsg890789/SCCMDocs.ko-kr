@@ -10,12 +10,13 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: 169bb7fa3bfcd8ead178685be3b9d466069b016d
-ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8c342a927fff8d9e120e15695bcd7287a9249648
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54898276"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56120476"
 ---
 # <a name="learn-more-about-available-updates-for-system-center-configuration-manager"></a>System Center Configuration Manager의 사용 가능한 업데이트에 대한 자세한 내용을 알아봅니다.
 

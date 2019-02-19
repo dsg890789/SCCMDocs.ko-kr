@@ -9,12 +9,13 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 71eaa409-b955-45d6-8309-26bf3b3b0911
-ms.openlocfilehash: 60fa4176d44b530b2cab6c2b9b4b35c968fae3c1
-ms.sourcegitcommit: 32a257fafbb29aece8b4f435dd5614fcef305328
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8104210fcf690cecf4bdb815384b8dd672c3873d
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/03/2019
-ms.locfileid: "54005486"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56122325"
 ---
 # <a name="certificates-for-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이에 대한 인증서
 

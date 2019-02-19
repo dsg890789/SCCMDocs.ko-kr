@@ -10,12 +10,13 @@ ms.assetid: a8021bc8-2799-41f4-83c2-e27d1242028c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: fac92818a56b9ef7c7e8e6b923fb0d833f9053c2
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 404c68f954828dffe2bb9aed9dc59800aff83110
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32337142"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56120779"
 ---
 # <a name="how-diagnostics-and-usage-data-is-used-for-system-center-configuration-manager"></a>System Center Configuration Manager의 진단 및 사용 현황 데이터 사용 방법
 

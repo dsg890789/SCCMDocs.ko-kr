@@ -10,12 +10,13 @@ ms.assetid: 3ddff2a7-99eb-4ef8-b969-f3f7f24053db
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: adf410b2cfdb45b3f01ac48c53d324b678689cda
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a86b430849945a01093a2eb136afd6d1aa363aaf
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32334592"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56122069"
 ---
 # <a name="introduction-to-power-management-in-system-center-configuration-manager"></a>System Center Configuration Manager 전원 관리 소개
 

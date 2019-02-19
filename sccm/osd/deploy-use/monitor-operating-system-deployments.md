@@ -10,12 +10,13 @@ ms.assetid: 08085d94-295c-432f-b5e3-9736bce0193b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a6e15f7bea1a600cc2cff2e400b2d793cabf1078
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 47bc9f00a64614e2483feb2ce3171fc8b245a0ba
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32348687"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56122987"
 ---
 # <a name="monitor-operating-system-deployments-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 운영 체제 배포 모니터링
 

@@ -10,12 +10,13 @@ ms.assetid: 868049d3-3209-47ec-b34a-9cc26941893a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2d1a517b381e4c6ff10db21e39922886716758c0
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 46b052b02ebc55beeb27f26a0a302d10dc516e18
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53420858"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56125003"
 ---
 # <a name="how-to-create-queries-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 쿼리를 만드는 방법
 

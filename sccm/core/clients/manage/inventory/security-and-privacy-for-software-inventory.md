@@ -10,12 +10,13 @@ ms.assetid: 8e68e1fb-a8ec-4543-bb8a-cbbaf184a418
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5bd03980c772edf8033ddc4a8ccce336ba924c07
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: dfd765683aa9185d10cba1ae4e4e00837926a6ab
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53423170"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56133683"
 ---
 # <a name="security-and-privacy-for-software-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 인벤토리에 대한 보안 및 개인 정보
 

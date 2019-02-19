@@ -10,12 +10,13 @@ ms.assetid: c28e3492-851a-40fc-ba13-67ebc2d8b41a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a038377e4b29852157fd0d92836f26f1b5e18433
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b59ff47ace87e4c7e8a345402616de44342ea9c1
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32344146"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56121416"
 ---
 # <a name="operations-for-migrating-to-system-center-configuration-manager"></a>System Center Configuration Manager로 마이그레이션을 위한 작업
 

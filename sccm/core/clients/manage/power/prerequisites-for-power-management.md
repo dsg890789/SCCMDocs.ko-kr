@@ -10,12 +10,13 @@ ms.assetid: 9c062f13-3c1f-4621-9cae-de0e322aa03f
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: c6630ef07c0b7947875ea2adac4e6612143aaee8
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4e965c9abede80bac488cfba0759d4f9e33974fb
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32344435"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56125809"
 ---
 # <a name="prerequisites-for-power-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 전원 관리에 대한 필수 조건
 

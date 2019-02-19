@@ -10,12 +10,13 @@ ms.assetid: abb696f3-a816-4f12-a9f1-0503a81e1976
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4168b36553dacff69fab0972011a7d4c2843d787
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6adb326a484976335d114277e095884e107f9906
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53421946"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56124799"
 ---
 # <a name="test-the-database-upgrade-when-installing-an-update"></a>업데이트를 설치할 때 데이터베이스의 테스트 업그레이드 수행
 

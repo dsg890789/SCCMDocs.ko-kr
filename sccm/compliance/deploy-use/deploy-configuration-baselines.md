@@ -10,12 +10,13 @@ ms.assetid: 9be8aaf3-075e-4acd-abd2-7459254e16e2
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: c55382bf1fc377fd7e86f433a0cb92a5240eafa1
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cf818fdb7b1ff87b53277bf9313aa94663163e64
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32334711"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56120762"
 ---
 # <a name="how-to-deploy-configuration-baselines-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 구성 기준을 배포하는 방법
 
@@ -38,7 +39,7 @@ ms.locfileid: "32334711"
 
 5.  다음과 같은 추가 정보를 지정합니다.  
 
-    -   **지원되는 경우 비규격 규칙 재구성** – Configuration Manager에서 등록된 모바일 장치의 레지스트리, 스크립트 및 모든 설정, WMI(Windows Management Instrumentation)에 대해 규격을 준수하지 않는 규칙을 자동으로 수정합니다.  
+    -   **지원되는 경우 비규격 규칙 재구성** – Configuration Manager에서 등록된 모바일 디바이스의 레지스트리, 스크립트 및 모든 설정, WMI(Windows Management Instrumentation)에 대해 규격을 준수하지 않는 규칙을 자동으로 수정합니다.  
 
     -   **유지 관리 기간을 벗어나도 수정 허용** - 구성 기준을 배포할 컬렉션에 대해 유지 관리 기간이 구성된 경우 유지 관리 기간 외의 기간에 준수 설정이 값을 수정할 수 있도록 하려면 이 옵션을 사용하도록 설정합니다. 유지 관리 기간에 대한 자세한 내용은 [유지 관리 기간을 사용하는 방법](/sccm/core/clients/manage/collections/use-maintenance-windows)을 참조하세요.  
 

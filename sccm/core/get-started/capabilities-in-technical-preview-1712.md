@@ -11,12 +11,13 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: dc934948cf9431b8949f445a2ab2f46426638cbb
-ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c3154f705afc48cebe075083666e7a5d2b7f726b
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54896593"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56130278"
 ---
 # <a name="capabilities-in-technical-preview-1712-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1712의 기능
 

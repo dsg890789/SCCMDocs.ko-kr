@@ -10,12 +10,13 @@ ms.assetid: 066caf00-e419-4efb-93d3-ba4ba878297c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0e42b7c8db3ef8c6d645d29f371fd6da475159bd
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: baa5a2219a4eb8c22e8fb5f3db19660c4dca77d1
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32336819"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56122528"
 ---
 # <a name="plan-for-the-migration-of-configuration-manager-objects-to-system-center-configuration-manager"></a>Configuration Manager 개체를 System Center Configuration Manager로 마이그레이션하도록 계획
 

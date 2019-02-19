@@ -10,12 +10,13 @@ ms.assetid: aaf43e69-68b4-469a-ad58-9b66deb29057
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a4d95495f2f200eaff39699c65cc391a2a81b009
-ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4630504cbbf4b00fbfa12b666e26b93fcda09ae5
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54897562"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56130176"
 ---
 #  <a name="the-data-warehouse-service-point-for-configuration-manager"></a>Configuration Manager에 대한 데이터 웨어하우스 서비스 지점
 
