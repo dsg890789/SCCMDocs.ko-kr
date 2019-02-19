@@ -10,12 +10,13 @@ ms.assetid: 6af92de2-b2c7-4d5c-affd-6cce81979fb5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 46de654a0db0c635edb7101cce2e651c87fca31b
-ms.sourcegitcommit: 48098f9fb2f447672bf36d50c9f58a3d26acb9ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 96a100131d8fe0e9c289cdf4d272aeefb43fbf15
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53417458"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56140408"
 ---
 # <a name="checklist-for-installing-update-1802-for-system-center-configuration-manager"></a>System Center Configuration Manager용 업데이트 1802를 설치하기 위한 검사 목록
 
@@ -150,7 +151,7 @@ Microsoft 또는 Microsoft 파트너에서 다른 제품으로 Configuration Man
 
 콘솔에서 필수 구성 요소 검사를 실행하려면 **관리**작업 영역으로 이동하여 **업데이트 및 서비스**를 선택합니다. **Configuration Manager 1802** 업데이트 패키지를 선택하고 리본 메뉴에서 **필수 구성 요소 검사 실행**을 클릭합니다.
 
-시작한 다음, 필수 구성 요소 검사를 모니터링하는 방법에 대한 자세한 내용은 [System Center Configuration Manager용 콘솔 내 업데이트](/sccm/core/servers/manage/install-in-console-updates) 항목의  **3단계: 업데이트를 설치하기 전에 필수 구성 요소 검사기 실행** 을 참조하세요.
+시작한 다음, 필수 구성 요소 검사를 모니터링하는 방법에 대한 자세한 내용은 [System Center Configuration Manager용 콘솔 내 업데이트](/sccm/core/servers/manage/install-in-console-updates) 항목의 3단계: 업데이트를 설치하기 전에 필수 구성 요소 검사기 실행** 을 참조하세요.
 
 > [!IMPORTANT]  
 > 필수 조건 검사가 독립적으로 또는 업데이트 설치의 일부로 실행되면 프로세스에서 사이트 유지 관리 작업에 사용되는 일부 제품 소스 파일을 업데이트합니다. 따라서 필수 구성 요소 검사기를 실행한 후 업데이트를 설치하기 전에 사이트 유지 관리 작업을 수행해야 하는 경우 사이트 서버의 CD.Latest 폴더에서  **Setupwpf.exe** (Configuration Manager 설치 프로그램)를 실행합니다.

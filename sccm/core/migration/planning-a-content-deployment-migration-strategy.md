@@ -10,12 +10,13 @@ ms.assetid: 66f7759c-6272-4116-aad7-0d05db1d46cd
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: d261b246c0718777be56425c7783d05f767575df
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1df57ef2d51a9cd525dbd9b8d99a909baf47ef95
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32342616"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56127544"
 ---
 # <a name="plan-a-content-deployment-migration-strategy-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 콘텐츠 배포 마이그레이션 전략 계획
 
