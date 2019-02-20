@@ -2,7 +2,7 @@
 title: 하이브리드 MDM의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 디바이스 관리 기능에 대해 알아봅니다.
-ms.date: 02/04/2019
+ms.date: 02/19/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5199edf3e362deaeb160bf105ae69f7acbee334
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 2d65f6493ca3d067e31b6602c711ab1fbf9408a1
+ms.sourcegitcommit: e7e5ca04601270ea7af90183123d5db1d42784da
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56124339"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56422241"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 디바이스 관리의 새로운 기능
 
@@ -51,6 +51,10 @@ ms.locfileid: "56124339"
 ## <a name="february-2019"></a>2019 년 2 월
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+#### <a name="macos-users-are-prompted-to-update-their-password"></a>macOS 사용자는 자신의 암호를 업데이트 하 라는 메시지가 표시 됩니다. 
+<!--1873216--> MacOS 장치에서 최종 사용자에 게 해당 암호를 업데이트 하 라는 메시지가 표시 됩니다. 이 프롬프트는 사용자 장치에 로그인과 같은 인증에 필요한 작업을 실행할 때마다 발생 합니다. 사용자가 키 집합 액세스를 요청 하는 등의 관리 권한이 필요한 작업을 수행 하는 경우 자신의 암호를 업데이트 하 라는 메시지도 표시 합니다.  
+
 
 #### <a name="intune-macos-company-portal-dark-mode"></a>Intune macOS 회사 포털 어두운 모드
 <!--3300524--> 이제 Intune macOS 회사 포털 macOS 용 어두운 모드를 지원합니다. MacOS 10.14 이상 장치에서 어두운 모드를 사용 하도록 설정 하면 회사 포털에 해당 모드를 반영 하는 색으로 모양을 조정 합니다.
@@ -609,29 +613,6 @@ MacOS 버전 10.12 이상은 현재 다음에서 지원됩니다.
  
 #### <a name="additional-information"></a>추가 정보
 자세한 내용은 [회사 포털 앱을 사용하여 Intune에서 macOS 디바이스 등록](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)을 참조하세요.
-
-
-### <a name="intune-support-experience-for-premier-customers-now-in-azure-instead-of-mpo"></a>Intune 지원 MPO 대신 Azure에서 이제 고객은 프리미어 경험  
-<!--2828727-->
-
-9 월 12 월에 Microsoft 프리미어 온라인 (MPO) 포털 (premier.microsoft.com)에서 Intune 지원 요청을 만들 수는 제거할 것에 MC147649에서 발표 했습니다. 이제 약간의 지연 후 1 월의 끝에 리디렉션됩니다 지원 요청을 만드는 Azure의 Intune에만 합니다.
-
-#### <a name="how-does-this-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
-프리미어 향상을 계속 하려면 January, 종료 된 후 환경을 지원 MPO에서 지원 요청을 만들 수 없습니다. 이 작업을 수행 하려고 할 때 Azure에서 Intune로 리디렉션하는 중에 해제할 수 없습니다는 프롬프트를 표시 됩니다. 여기에 Intune 전용 Microsoft 지원에 라우팅되는 지원 요청을 만들 수 있습니다. 이러한 지원 엔지니어를 진단 하 고 적절 한 시기에 문제를 해결 합니다. MPO 포털에서 만든 Azure portal에서 지원 요청을 볼 수 없습니다.
-
-Azure portal에는 새로운 지원 환경이 MC171941에서 최근에 발표 했습니다. 자세한 내용은 [Microsoft Intune에 대 한 지원을 받는 방법](https://aka.ms/new_support_experience)합니다.
-
-하이브리드 MDM 또는 공동 관리를 사용 하는 경우 계속 MPO Configuration Manager에 대 한 지원 요청을 만들려면 사용 합니다. Intune에 대 한 지원 요청을 만들려면 Azure portal을 사용 합니다. 하이브리드 MDM은 이제 사용되지 않으며, 가능한 빠른 시일 내에 Azure의 Intune으로 이동해야 함을 기억하세요. 자세한 내용은 [하이브리드 모바일 디바이스 관리를 Azure의 Intune으로 이동](https://aka.ms/hybrid_notification)을 참조하세요.
-
-전역 관리자, Intune 서비스 관리자 및 서비스 지원 관리자 역할이 있는 사용자만 Azure portal에서 지원 티켓을 만들 수 있습니다.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>이러한 변경에 대비하려면 어떻게 해야 하나요?
-- Intune 관련 지원 요청에 MPO 사용을 중지합니다. Azure의 Intune을 사용하여 모든 Intune 지원 요청을 만들고 관리합니다.  
-- 필요한 경우 해당 기술 지원팀에게 알리고 설명서를 업데이트합니다.  
-- 사용자를 전역 관리자 또는 Intune 서비스 관리자 역할을 현재 MPO에서 지원 요청을 만드는 경우 Azure Active Directory에서 서비스 지원 관리자 역할을 할당 합니다. 사용자가 Azure Portal에서 지원 티켓을 만들려면 이러한 역할 중 하나가 필요합니다.  
-
-#### <a name="additional-information"></a>추가 정보
-자세한 내용은 [Microsoft Intune 지원 팀 블로그 게시물](https://aka.ms/IntuneSupport_MPO_to_Azure)을 참조하세요.
 
 
 ### <a name="plan-for-change-use-intune-on-azure-now-for-your-mdm-management"></a>변경 계획: MDM 관리를 위해 Azure에서 Intune 사용 

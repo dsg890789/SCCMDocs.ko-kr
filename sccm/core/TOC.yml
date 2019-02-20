@@ -209,6 +209,8 @@ items:
   - name: 기술 미리 보기
     href: get-started/technical-preview.md
     items:
+    - name: 1902.2 기능
+      href: get-started/2019/technical-preview-1902-2.md
     - name: 1902 기능
       href: get-started/2019/technical-preview-1902.md
     - name: 1901 기능
@@ -633,15 +635,6 @@ items:
       href: clients/manage/maintain-mac-clients.md
     - name: Surface 디바이스 대시보드
       href: clients/manage/surface-device-dashboard.md
-  - name: Windows 10 디바이스의 공동 관리
-    href: clients/manage/co-management-overview.md
-    items:
-    - name: 공동 관리를 위해 Windows 10 디바이스 준비
-      href: clients/manage/co-management-prepare.md
-    - name: Configuration Manager 워크로드를 Intune으로 전환
-      href: clients/manage/co-management-switch-workloads.md
-    - name: 공동 관리 대시보드
-      href: clients/manage/co-management-dashboard.md
   - name: 인터넷에서 클라이언트 관리
     href: clients/manage/manage-clients-internet.md
     items:
@@ -765,9 +758,9 @@ items:
       href: clients/manage/upgrade/upgrade-clients-for-linux-and-unix-servers.md
     - name: Mac 클라이언트 업그레이드
       href: clients/manage/upgrade/upgrade-clients-on-mac-computers.md
-ms.openlocfilehash: 67a81c91b7f2267468ee2cce9f288e8d0787e590
-ms.sourcegitcommit: 4317bd20050f582a068d0a813e71c449d655e4b4
+ms.openlocfilehash: 24a09ebe4efb69eda4f9530266b3e8bb22f48864
+ms.sourcegitcommit: e7e5ca04601270ea7af90183123d5db1d42784da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "55971883"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56422224"
