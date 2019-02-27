@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 304fe88dd5ed8a37bf17dca390d95158d005bae3
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 8850d849066c97b8cb07719f229ebec1d4748403
+ms.sourcegitcommit: 369db96ee84299b5ab6d74b177e6366b3017fc54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56125372"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56589886"
 ---
 # <a name="size-and-scale-numbers-for-system-center-configuration-manager"></a>System Center Configuration Manager의 크기 조정 및 규모 숫자 값
 
@@ -208,7 +208,7 @@ ms.locfileid: "56125372"
 
 
 ### <a name="embedded"></a>기본 사이트와 Windows Embedded 디바이스
-기본 사이트가 FBWF(파일 기반 쓰기 필터)를 사용할 수 있는 Windows Embedded 디바이스를 지원합니다. 임베디드 디바이스에서 쓰기 필터를 사용할 수 없는 경우 기본 사이트는 임베디드 디바이스를 해당 사이트에 대해 허용되는 디바이스 수까지 지원할 수 있습니다. 기본 사이트에서 지원하는 총 디바이스 중에서 최대 10,000대까지 Windows Embedded 디바이스를 사용할 수 있습니다. 이러한 디바이스는 [Windows Embedded 디바이스에 클라이언트 배포 계획](/sccm/core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices)의 중요 참고 사항에 나열된 예외에 대해 구성해야 합니다. EWF를 사용할 수 있으며 예외가 적용되도록 구성되어 있지 않은 Windows Embedded 디바이스의 경우 기본 사이트에서 3,000개만 지원됩니다.
+기본 사이트가 FBWF(파일 기반 쓰기 필터)를 사용할 수 있는 Windows Embedded 디바이스를 지원합니다. 임베디드 디바이스에서 쓰기 필터를 사용할 수 없는 경우 기본 사이트는 임베디드 디바이스를 해당 사이트에 대해 허용되는 디바이스 수까지 지원할 수 있습니다. 임베디드 디바이스에서 FBWF 또는 UWF(Unified Write Filters)가 활성화되면 기본 사이트는 최대 10,000대의 Windows Embedded 디바이스를 지원할 수 있습니다. 이러한 디바이스는 [Windows Embedded 디바이스에 클라이언트 배포 계획](/sccm/core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices)에 있는 중요 참고 사항에 나열된 예외로 구성해야 합니다. EWF를 사용할 수 있으며 예외가 적용되도록 구성되어 있지 않은 Windows Embedded 디바이스의 경우 기본 사이트에서 3,000개만 지원됩니다.
 
 
 ###  <a name="bkmk_sec"></a> 보조 사이트  

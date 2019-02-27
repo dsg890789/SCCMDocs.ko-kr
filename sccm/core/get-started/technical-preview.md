@@ -2,7 +2,7 @@
 title: 기술 미리 보기 릴리스
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 새로운 기능과 기술을 시험 사용할 수 있는 기술 미리 보기 분기를 알아봅니다.
-ms.date: 02/08/2019
+ms.date: 02/19/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c48e7fdd2826af942cc94017d58614760f61545d
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: aa55a8e7c46df0c0d946e7e7c9f93e894bc49b89
+ms.sourcegitcommit: e7e5ca04601270ea7af90183123d5db1d42784da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56136986"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56422207"
 ---
 # <a name="technical-preview-for-configuration-manager"></a>Configuration Manager에 대한 기술 미리 보기
 
@@ -105,7 +105,7 @@ Microsoft는 세 개의 연속 버전을 사용할 수 있을 때까지 각 기�
    
 릴리스 후 최대 1년 동안 기준 버전을 설치합니다. 새 기술 미리 보기 사이트를 설치할 때 현재 둘 이상의 기준 버전을 사용할 수 있는 경우 최신 기준 버전을 사용합니다.
 
--  **기술 미리 보기 버전 1810.2**: Configuration Manager 기술 미리 보기 버전 1810.2는 콘솔 내 업데이트와 새 기준 버전으로 사용할 수 있습니다. [TechNet 평가 센터에서](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection-technical-preview) 기준 버전을 다운로드합니다.
+-  **기술 미리 보기 버전 1902.2**: Configuration Manager 기술 미리 보기 버전 1902.2는 콘솔 내 업데이트와 새 기준 버전으로 사용할 수 있습니다. [TechNet 평가 센터에서](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection-technical-preview) 기준 버전을 다운로드합니다.
 
 
 
@@ -125,19 +125,14 @@ Microsoft는 세 개의 연속 버전을 사용할 수 있을 때까지 각 기�
 
 <!-- This is the full list of new features in the latest TP release -->
 
-### <a name="technical-preview-version-1902"></a>Technical Preview 버전 1902
+### <a name="technical-preview-version-19022"></a>Technical Preview 버전 1902.2
 
-<!-- - [title](/sccm/core/get-started/2019/technical-preview-1901#bkmk_anchor)<!--ID-->
+<!-- - [title](/sccm/core/get-started/2019/technical-preview-1901#bkmk_anchor) <!--ID--> 
 
-- [알림 메시지를 대화 상자 창으로 바꾸기](/sccm/core/get-started/2019/technical-preview-1902#bkmk_impact)<!--3555947-->
-- [현재 위치 업그레이드 작업 순서 중 진행 상태](/sccm/core/get-started/2019/technical-preview-1902#bkmk_ipu)<!--3747129-->
-- [알려진 Windows 폴더를 OneDrive로 리디렉션](/sccm/core/get-started/2019/technical-preview-1902#bkmk_odfb)<!--3556021-->
-- [원격 제어 시 첫 번째 화면만 보기](/sccm/core/get-started/2019/technical-preview-1902#bkmk_rcmulti)<!--3231732-->
-- [PowerShell 스크립트 편집 또는 복사](/sccm/core/get-started/2019/technical-preview-1902#bkmk_psedit)<!--3705507-->
-- [경계 그룹에 클라우드 관리 게이트웨이 추가](/sccm/core/get-started/2019/technical-preview-1902#bkmk_cmgbg)<!--3640932-->
-- [소프트웨어 센터의 기본 보기 구성](/sccm/core/get-started/2019/technical-preview-1902#bkmk_swctr)<!--3612112-->
-- [클라이언트 상태 대시보드 개선 사항](/sccm/core/get-started/2019/technical-preview-1902#bkmk_health)<!--3599209-->
-
+- [Office 365 업데이트용 추가 언어](/sccm/core/get-started/2019/technical-preview-1902-2#bkmk_o365lang) <!--3555955--> 
+- [Office 365 ProPlus 준비를 위한 분석과 통합](/sccm/core/get-started/2019/technical-preview-1902-2#bkmk_o365) <!--3735402--> 
+- [단계적 배포 성공 조건 개선](/sccm/core/get-started/2019/technical-preview-1902-2#bkmk_pod) <!--3555946--> 
+- [고급 HTTP로 개선](/sccm/core/get-started/2019/technical-preview-1902-2#bkmk_ehttp) <!--3798957--> 
 
 
 > [!Note]  
@@ -156,6 +151,14 @@ Then remove the bottom of this list and/or move individual items not in CB to th
 
  | 기능 | 기술 미리 보기 버전 | 현재 분기 버전 |  
  |---------|---------------------------|------------------------|
+ | 알림 메시지를 대화 상자 창으로 바꾸기 <!--3555947--> | [Tech Preview 1902](/sccm/core/get-started/2019/technical-preview-1902#bkmk_impact) | ![추가되지 않음](media/Red_X.gif) | 
+ | 현재 위치 업그레이드 작업 순서 중 진행 상태 <!--3747129--> | [Tech Preview 1902](/sccm/core/get-started/2019/technical-preview-1902#bkmk_ipu) | ![추가되지 않음](media/Red_X.gif) | 
+ | 알려진 Windows 폴더를 OneDrive로 리디렉션 <!--3556021--> | [Tech Preview 1902](/sccm/core/get-started/2019/technical-preview-1902#bkmk_odfb) | ![추가되지 않음](media/Red_X.gif) | 
+ | 원격 제어 시 첫 번째 화면만 보기 <!--3231732--> | [Tech Preview 1902](/sccm/core/get-started/2019/technical-preview-1902#bkmk_rcmulti) | ![추가되지 않음](media/Red_X.gif) | 
+ | PowerShell 스크립트 편집 또는 복사 <!--3705507--> | [Tech Preview 1902](/sccm/core/get-started/2019/technical-preview-1902#bkmk_psedit) | ![추가되지 않음](media/Red_X.gif) | 
+ | 경계 그룹에 클라우드 관리 게이트웨이 추가 <!--3640932--> | [Tech Preview 1902](/sccm/core/get-started/2019/technical-preview-1902#bkmk_cmgbg) | ![추가되지 않음](media/Red_X.gif) | 
+ | 소프트웨어 센터의 기본 보기 구성 <!--3612112--> | [Tech Preview 1902](/sccm/core/get-started/2019/technical-preview-1902#bkmk_swctr) | ![추가되지 않음](media/Red_X.gif) | 
+ | 클라이언트 상태 대시보드 개선 사항 <!--3599209--> | [Tech Preview 1902](/sccm/core/get-started/2019/technical-preview-1902#bkmk_health) | ![추가되지 않음](media/Red_X.gif) | 
  | 클라이언트 상태 대시보드 <!--3599209--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_health) | ![추가되지 않음](media/Red_X.gif) | 
  | Windows 10 서비스에서 기능 업데이트에 대한 우선 순위 지정 <!--3734525--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_neo) | ![추가되지 않음](media/Red_X.gif) | 
  | 단계별 배포에 대한 전용 모니터링 <!--3555949--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_pod) | ![추가되지 않음](media/Red_X.gif) | 

@@ -2,7 +2,7 @@
 title: 버전 1810의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager 최신 라인인 1810 버전에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
-ms.date: 01/25/2019
+ms.date: 02/19/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f29dabe9c29ad69278ac52253a81a0172643f84
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 703b8be554f0a7ed1601703d381e4ed7c317af77
+ms.sourcegitcommit: 369db96ee84299b5ab6d74b177e6366b3017fc54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56142530"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56589869"
 ---
 # <a name="whats-new-in-version-1810-of-configuration-manager-current-branch"></a>Configuration Manager 1810 버전의 새로운 기능
 
@@ -258,7 +258,10 @@ PowerShell 프로필은 PowerShell이 시작될 때 실행되는 스크립트입
 
 <!--For more information, see []().-->
 
+### <a name="improvement-to-software-updates-maintenance"></a>소프트웨어 업데이트 유지 관리 개선
+<!--2839349--> WSUS 정리 작업은 이제 보조 사이트에서 실행됩니다. 만료된 업데이트에 대한 WSUS 정리가 실행되고 보조 사이트의 경우 대체 업데이트가 WSUS에서 거부됩니다.
 
+자세한 내용은 [버전 1810에서 시작하는 WSUS 정리 동작](/sccm/sum/deploy-use/software-updates-maintenance#wsus-cleanup-behavior-starting-in-version-1810)을 참조하세요.
 
 ## <a name="bkmk_report"></a> 보고
 
@@ -363,9 +366,7 @@ CMPivot의 추가 성능 및 문제 해결 기능 개선에 대한 자세한 내
 
 새 기능 외에 이 릴리스에는 버그 수정과 같은 추가 변경 사항도 포함되어 있습니다. 자세한 내용은 [Configuration Manager 현재 분기, 버전 1810의 변경 내용 요약](https://support.microsoft.com/help/4482169)을 참조하세요.
 
-<!--
-For more information on changes to the Windows PowerShell cmdlets for Configuration Manager, see [PowerShell 1810 Release Notes](https://docs.microsoft.com/powershell/sccm/1810_release_notes?view=sccm-ps).
---> 
+Configuration Manager용 Windows PowerShell cmdlet의 변경 내용에 대한 자세한 내용은 [PowerShell 버전 1810 릴리스 정보](https://docs.microsoft.com/powershell/sccm/1810-release-notes?view=sccm-ps)를 참조하세요.
 
 다음 업데이트 롤업(4486457)은 2019년 1월 25일부터 콘솔에서 사용할 수 있습니다. [Configuration Manager 현재 분기, 버전 1810용 업데이트 롤업](https://support.microsoft.com/help/4486457).
 

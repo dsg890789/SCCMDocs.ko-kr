@@ -2,7 +2,7 @@
 title: UUP 미리 보기
 titleSuffix: Configuration Manager
 description: UUP 통합 미리 보기 지침
-ms.date: 01/30/2019
+ms.date: 02/19/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 932f515c902e89236a1537c2f20d6be5f13a79c5
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: ece763244ffbd1ebaabd2c85d92697683eea8732
+ms.sourcegitcommit: e7e5ca04601270ea7af90183123d5db1d42784da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56123407"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56422190"
 ---
 # <a name="uup-private-preview-instructions"></a>UUP 비공개 미리 보기 지침
 
@@ -246,3 +246,39 @@ UUP가 아직 미리 보기(비공개 또는 공개)로 있는 한 필요한 경
 - 타사 대체 콘텐츠 공급자
 
 자세한 내용은 [Windows 10 업데이트 배달 최적화](/sccm/sum/deploy-use/optimize-windows-10-update-delivery)를 참조하세요.
+
+
+## <a name="known-issues"></a>알려진 문제
+
+### <a name="additional-resources-are-required-on-wsus"></a>WSUS에는 추가 리소스가 필요합니다.
+UUP 업데이트를 동기화할 때, 특히 처음인 경우 WSUS 서버에 추가 리소스가 필요합니다. 이 동작으로 인해 상위 WSUS 서버와의 업데이트 동기화 또는 하위 수준 서버에 대한 계층 동기화가 차단되는 경우가 있습니다.
+
+이 문제는 WSUS에서 동기화 실패로 매니페스트됩니다. Configuration Manager는 또한 동기화 실패로 표시합니다.
+
+#### <a name="workaround"></a>해결 방법
+최상위 WSUS 서버 또는 계층의 부모 WSUS 서버에서 다음과 같이 변경합니다.
+1. ServerSyncWebService 시간 제한 증가 
+
+    1. `C:\Program Files\Update Services\WebServices\serversyncwebservice\web.config`의 백업 복사본을 다른 이름으로 만들기  
+
+    2. 메모장에서 `C:\Program Files\Update Services\WebServices\serversyncwebservice\web.config` 열기  
+
+    3. 예를 들어 **executionTimeout** 특성을 추가하여 **httpRunTime**을 수정합니다.  
+
+        `<httpRuntime maxRequestLength="4096" executionTimeout="3600" />`  
+
+    4. web.config를 다른 위치에 저장합니다. 구성 파일은 일반적으로 파일의 소유권을 획득하지 않고 편집할 수 없기 때문에 이 단계가 필요합니다.  
+
+    5. 그런 다음, 수정된 web.config를 `C:\Program Files\Update Services\WebServices\serversyncwebservice` 디렉터리로 복사하여 이전 버전을 대체합니다.  
+
+    6. 관리자 권한 명령 프롬프트에서 IIS(`IISReset`)를 다시 시작합니다.  
+
+        > [!Note]  
+        > 이 작업은 IIS 서버를 일시적으로 중지합니다.
+
+2. WSUS 서버용 앱 풀 메모리를 늘립니다.  
+
+    1. IIS Manager> 애플리케이션 풀 > WsusPool 선택으로 이동하여 오른쪽 창의 **고급 설정**을 선택합니다.  
+
+    2. **전용 메모리** 및 **가상 메모리** 제한 모두를 `0`로 설정합니다.
+

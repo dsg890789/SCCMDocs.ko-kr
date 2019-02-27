@@ -2,7 +2,7 @@
 title: 릴리스 정보
 titleSuffix: Configuration Manager
 description: Microsoft 지원 기술 자료 문서에서 다루지 않거나 제품에서 아직 해결되지 않은 긴급한 문제에 대해 알아봅니다.
-ms.date: 12/21/2018
+ms.date: 02/21/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ba088be689808139a977073dd5b111d1fa46b7b
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: bc19092f1272611ea3e05d708bf89bda1a4ba3b9
+ms.sourcegitcommit: 0a23cde6112cbb5987f433bffcf6f223b994ba72
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56121559"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56667463"
 ---
 # <a name="release-notes-for-configuration-manager"></a>Configuration Manager의 릴리스 정보
 
@@ -84,7 +84,16 @@ Configuration Manager 버전 1802부터 CEIP(사용자 환경 개선 프로그�
 
 
 
-<!-- ## Operating system deployment  -->
+## <a name="os-deployment"></a>OS 배포
+
+### <a name="after-passive-site-server-is-promoted-the-default-boot-image-packages-still-have-package-source-on-the-previous-active-server"></a>수동 사이트 서버가 승격된 후에도 기본 부팅 이미지 패키지에는 이전 활성 서버의 패키지 소스가 여전히 있습니다.
+<!--3453224, SCCMDocs-pr issue 3097-->
+*적용 대상: Configuration Manager 버전 1810*
+
+수동 모드(서버 B)의 사이트 서버가 있는 경우, 사이트 서버를 활성으로 승격할 때 기본 부팅 이미지의 콘텐츠 위치는 이전의 활성 서버(서버 A)를 계속 참조합니다. 서버 A에 하드웨어 오류가 있으면 기본 부팅 이미지를 업데이트하거나 변경할 수 없습니다.
+
+#### <a name="workaround"></a>해결 방법
+없음
 
 
 
