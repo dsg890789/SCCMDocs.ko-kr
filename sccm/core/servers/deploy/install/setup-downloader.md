@@ -10,12 +10,13 @@ ms.assetid: bda87fc5-2e4c-4992-98a4-01770365038c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 1b29fb48d8d8abc2e0c6693725b65c90a0cf1cd1
-ms.sourcegitcommit: a849dab9333ebac799812624d6155f2a96b523ca
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: abfad38e0c02ff6c0af8d4c9c47bdeed7598e513
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42584505"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56129751"
 ---
 # <a name="setup-downloader-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 설치 다운로더
 
@@ -65,7 +66,7 @@ ms.locfileid: "42584505"
 
     -   **/NOUI**: 사용자 인터페이스를 표시하지 않고 설치 다운로더를 시작하려면 이 옵션을 사용합니다. 이 옵션을 사용하는 경우 명령 프롬프트에서 명령의 일부로 **다운로드 경로**를 지정해야 합니다.  
 
-    -   **&lt;다운로드 경로\>**: 다운로드 폴더 경로를 지정하여 확인 또는 다운로드 프로세스를 자동으로 시작할 수 있습니다. **/NOUI** 옵션을 사용하는 경우 다운로드 경로를 지정해야 합니다. 다운로드 경로를 지정하지 않는 경우 설치 다운로더가 열릴 때 경로를 지정해야 합니다. 폴더가 없는 경우 설치 다운로더에서 폴더를 만듭니다.  
+    -   **&lt;DownloadPath\>**: 다운로드 폴더 경로를 지정하여 확인 또는 다운로드 프로세스를 자동으로 시작할 수 있습니다. **/NOUI** 옵션을 사용하는 경우 다운로드 경로를 지정해야 합니다. 다운로드 경로를 지정하지 않는 경우 설치 다운로더가 열릴 때 경로를 지정해야 합니다. 폴더가 없는 경우 설치 다운로더에서 폴더를 만듭니다.  
 
     예제 명령:
 

@@ -10,12 +10,13 @@ ms.assetid: 60575413-44fe-43bb-bcfb-39ec5ed5055b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e798c11bbbd6c6d69ea8455ecb7b0252a408659d
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b90628e4f1e4a1405c90d17fc43628df00070978
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385934"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56123385"
 ---
 # <a name="client-spy"></a>클라이언트 감시
 

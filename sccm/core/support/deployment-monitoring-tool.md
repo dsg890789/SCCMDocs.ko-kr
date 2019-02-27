@@ -10,12 +10,13 @@ ms.assetid: 9edc214f-f405-456d-80df-8adcc2a5428d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 67a052fffcaf6ad105f417649aa9f3826922ce80
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2188ce295f999b392166c99133822ad8fc1e441e
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385894"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56125241"
 ---
 # <a name="deployment-monitoring-tool"></a>배포 모니터링 도구
 
@@ -39,7 +40,7 @@ ms.locfileid: "39385894"
 
 배포 모니터링 도구는 그래픽 사용자 인터페이스만을 지원합니다. 이 도구를 시작하려면 관리자 권한으로 **DeploymentMonitoringTool.exe**를 실행합니다. 다음 세 가지 보기가 있습니다.  
 
-- **클라이언트 속성**: 장치 및 Configuration Manager 클라이언트에 대한 유용한 특성 목록입니다. 이 보기는 기본값입니다.   
+- **클라이언트 속성**: 디바이스 및 Configuration Manager 클라이언트에 대한 유용한 특성 목록입니다. 이 보기는 기본값입니다.   
 
 - **배포**: 현재 대상으로 지정된 모든 배포를 봅니다. 결과 창에서 배포를 선택하여 세부 정보 창에서 자세한 정보를 봅니다.  
 
@@ -67,6 +68,6 @@ ms.locfileid: "39385894"
 
 ## <a name="see-also"></a>참고 항목
 
-- [응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications)
+- [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications)
 - [소프트웨어 업데이트 배포](/sccm/sum/deploy-use/deploy-software-updates)
 - [구성 기준 배포](/sccm/compliance/deploy-use/deploy-configuration-baselines)

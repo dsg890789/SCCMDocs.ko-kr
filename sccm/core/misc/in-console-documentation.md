@@ -1,6 +1,6 @@
 ---
 title: 콘솔 내 설명서
-ms.date: 01/14/2019
+ms.date: 02/11/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -9,12 +9,13 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: eec34451ff9ece005322b67c1d40d1dbcba2f4f6
-ms.sourcegitcommit: ef3fdf21180e43afd7af6c8264524711435e426e
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5cfe4457bb2ebe2d5c8c621aa08c6d41346f4290
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54898140"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56133506"
 ---
 <!-- 
 - Feature 1357546
@@ -25,7 +26,8 @@ ms.locfileid: "54898140"
 
 
 # <a name="configuration-manager-documentation"></a>Configuration Manager 설명서
-이 페이지의 링크는 Configuration Manager를 학습하고 지원하는 데 도움이 되는 큐레이트 콘텐츠를 나타냅니다. 
+
+이 콘텐츠는 Configuration Manager의 학습과 지원에 도움이 될 수 있습니다. 
 
 자세한 내용은 다음 아티클을 참조하세요.
 - [Configuration Manager 문서 라이브러리](https://docs.microsoft.com/sccm)  
@@ -34,7 +36,7 @@ ms.locfileid: "54898140"
 
 
 ## <a name="recommended"></a>권장 
-수동으로 큐레이팅된 중요한 문서 목록입니다.
+큐레이팅된 중요한 문서 목록입니다.
 
 - [Windows 10 디바이스에 대한 공동 관리](https://docs.microsoft.com/sccm/comanage/overview)  
 - [CMPivot](https://docs.microsoft.com/sccm/core/servers/manage/cmpivot)  
@@ -51,38 +53,38 @@ ms.locfileid: "54898140"
 
 
 ## <a name="trending"></a>인기
-2018년 12월의 가장 인기 있는 문서입니다.
+2019년 1월의 가장 인기 있는 문서입니다.
 
- | 페이지 보기 | 제목 | 
- |------------|-------| 
- | 16430 | [문제 해결을 위한 로그 파일](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files) |
- | 15155 | [버전 1810의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1810) |
- | 8581 | [Windows에 클라이언트 배포](https://docs.microsoft.com/sccm/core/clients/deploy/deploy-clients-to-windows-computers) |
- | 7866 | [연결에 사용되는 포트](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/ports) |
- | 7434 | [Windows 10에 대한 지원](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10) |
- | 7088 | [버전 1806의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1806) |
- | 7086 | [클라이언트 설치 매개 변수 및 속성](https://docs.microsoft.com/sccm/core/clients/deploy/about-client-installation-properties) |
- | 6914 | [콘솔 설치](https://docs.microsoft.com/sccm/core/servers/deploy/install/install-consoles) |
- | 6087 | [애플리케이션 배포](https://docs.microsoft.com/sccm/apps/deploy-use/deploy-applications) |
- | 5817 | [업데이트 및 서비스](https://docs.microsoft.com/sccm/core/servers/manage/updates) |
+| 페이지 보기 | 제목 | 
+|------------|-------| 
+| 20862 | [문제 해결을 위한 로그 파일](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files) |
+| 19761 | [버전 1810의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1810) |
+| 11327 | [Windows에 클라이언트 배포](https://docs.microsoft.com/sccm/core/clients/deploy/deploy-clients-to-windows-computers) |
+| 9963 | [Windows 10에 대한 지원](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10) |
+| 9684 | [연결에 사용되는 포트](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/ports) |
+| 8870 | [콘솔 설치](https://docs.microsoft.com/sccm/core/servers/deploy/install/install-consoles) |
+| 8296 | [클라이언트 설치 매개 변수 및 속성](https://docs.microsoft.com/sccm/core/clients/deploy/about-client-installation-properties) |
+| 7810 | [1810네 대한 확인 목록](https://docs.microsoft.com/sccm/core/servers/manage/checklist-for-installing-update-1810) |
+| 7758 | [업데이트 및 서비스](https://docs.microsoft.com/sccm/core/servers/manage/updates) |
+| 7530 | [필수 구성 요소 확인](https://docs.microsoft.com/sccm/core/servers/deploy/install/list-of-prerequisite-checks) |
 
 
 
 ## <a name="recently-updated"></a>최근 업데이트 항목
 최근 및 중요한 업데이트가 포함된 문서입니다.
 
- | 마지막 검토 | 제목 | 
- |---------------|-------|
- | 12/26/2018 | [사용자 마이그레이션을 위한 Intune 준비](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-prepare-intune) |
- | 12/21/2018 | [사용되지 않는 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures) |
- | 12/21/2018 | [릴리스 정보](https://docs.microsoft.com/sccm/core/servers/deploy/install/release-notes) |
- | 12/21/2018 | [비즈니스용 Windows Hello 설정](https://docs.microsoft.com/sccm/mdm/deploy-use/windows-hello-for-business-settings) |
- | 12/20/2018 | [소프트웨어 업데이트 동기화 관리](https://docs.microsoft.com/sccm/sum/get-started/synchronize-software-updates) |
- | 12/14/2018 | [필수 구성 요소 확인](https://docs.microsoft.com/sccm/core/servers/deploy/install/list-of-prerequisite-checks) |
- | 12/14/2018 | [기술 미리 보기 릴리스](https://docs.microsoft.com/sccm/core/get-started/technical-preview) |
- | 12/14/2018 | [기술 미리 보기 1812](https://docs.microsoft.com/sccm/core/get-started/capabilities-in-technical-preview-1812) |
- | 12/14/2018 | [애플리케이션 승인](https://docs.microsoft.com/sccm/apps/deploy-use/app-approval) |
- | 12/14/2018 | [하이브리드 MDM의 새로운 기능](https://docs.microsoft.com/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management) |
+| 마지막 검토 | 제목 | 
+|---------------|-------|
+| 01/30/2019 | [Microsoft Intune에서의 하이브리드 MDM](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management) |
+| 01/30/2019 | [사용되지 않는 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures) |
+| 01/30/2019 | [지원 센터](https://docs.microsoft.com/sccm/core/support/support-center) |
+| 01/29/2019 | [연결에 사용되는 포트](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/ports) |
+| 01/25/2019 | [버전 1810의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1810) |
+| 01/23/2019 | [기술 미리 보기 1901](https://docs.microsoft.com/sccm/core/get-started/2019/technical-preview-1901) |
+| 01/23/2019 | [기술 미리 보기 릴리스](https://docs.microsoft.com/sccm/core/get-started/technical-preview) |
+| 01/22/2019 | [Azure에서 랩 만들기](https://docs.microsoft.com/sccm/core/get-started/azure-template) |
+| 01/15/2019 | [지원되는 사이트 시스템 서버](https://docs.microsoft.com/sccm/core/plan-design/configs/supported-operating-systems-for-site-system-servers) |
+| 01/15/2019 | [공동 관리에 연결된 클라우드](https://docs.microsoft.com/sccm/comanage/quickstarts) |
 
 
 
@@ -91,7 +93,7 @@ Configuration Manager 구성 요소 및 기능의 문제 해결을 지원하기 
 
 - [PXE 부팅 문제 해결](https://support.microsoft.com/help/4468612)
 - [소프트웨어 업데이트 동기화 문제 해결](https://support.microsoft.com/help/10059)
-- [콘텐츠 배포 이해 및 문제 해결](https://support.microsoft.com/help/4000401)
+- [콘텐츠 배포 이해 및 문제 해결](https://support.microsoft.com/help/4482728)
 - [비즈니스용 Microsoft Store 통합 이해 및 문제 해결](https://support.microsoft.com/help/4010214)
 - [소프트웨어 업데이트 관리 문제 해결](https://support.microsoft.com/help/10680)
 - [애플리케이션 설치 작업 순서 단계 문제 해결](https://support.microsoft.com/help/18408/)
@@ -99,13 +101,13 @@ Configuration Manager 구성 요소 및 기능의 문제 해결을 지원하기 
 
 
 ## <a name="new-and-updated-support-articles"></a>새로 제공되거나 업데이트된 지원 문서
-2018년 12월에 새로 제공되거나 업데이트된 지원 문서입니다.
+2019년 1월에 새로 제공되거나 업데이트된 지원 문서입니다.
 
-- [KB 4040243: Configuration Manager에서 TLS 1.2를 사용하도록 설정하는 방법](https://support.microsoft.com/help/4040243)
-- [KB 4477073: 업데이트를 설치할 때 오류 0x800f0831](https://support.microsoft.com/help/4477073)
-- [KB 4471003: 다른 네트워크에 있는 PXE 서버에서 부팅하는 방법](https://support.microsoft.com/help/4471003)
-- [KB 4474026: Configuration Manager에서 오류 80070057이 포함된 BitLocker 작업 실패를 사용하도록 설정](https://support.microsoft.com/help/4474026)
-- [KB 4483868: Azure의 구독 수준에서 웹앱에 대한 기여자 역할이 더 이상 할당되지 않음](https://support.microsoft.com/help/4483868)
-
+- [KB 4490065: 미디어나 부트 이미지의 클라이언트가 사이트 버전보다 오래된 경우 작업 순서가 느림](https://support.microsoft.com/help/4490065)
+- [KB 4490414: WSUS(Windows Server Update Services) 모범 사례](https://support.microsoft.com/help/4490414)
+- [KB 4489045: WSUS 서버에서 높은 CPU 사용량 문제 해결 방법](https://support.microsoft.com/help/4489045)
+- [KB 4486457: System Center Configuration Manager 현재 분기, 버전 1810에 대한 업데이트 롤업](https://support.microsoft.com/help/4486457)
+- [KB 4487768: Configuration Manager 버전 1810으로 업데이트할 때 “변환 실패” 오류](https://support.microsoft.com/help/4487768)
+- [KB 4487960: Microsoft Intune 커넥터 인증서가 Configuration Manager에서 갱신되지 않음](https://support.microsoft.com/help/4487960)
 
 새로운 Configuration Manager 지원 문서의 Atom 또는 RSS 알림을 구독하려면 [지원 콘텐츠 업데이트](https://support.microsoft.com/help/4089498/)를 참조하고 **System Center Configuration Manager**를 선택하세요.  

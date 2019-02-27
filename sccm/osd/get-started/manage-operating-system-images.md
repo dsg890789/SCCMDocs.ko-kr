@@ -10,12 +10,13 @@ ms.assetid: fab13949-371c-4a4c-978e-471db1e54966
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 700a9d8f88c64e11449349ace8c431b4ad6611cf
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ea320b42bfb08ec0023598d010375042d143c220
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52456178"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56124073"
 ---
 # <a name="manage-os-images-with-configuration-manager"></a>Configuration Manager를 사용하여 OS 이미지 관리
 
@@ -68,11 +69,11 @@ OS 이미지를 사용하려면 Configuration Manager 사이트에 추가합니�
 
 4.  **일반** 페이지에서 다음 정보를 지정합니다. 이 정보는 OS 이미지가 여러 개인 경우 목적을 식별하는 데 유용합니다.  
 
-    -   **이름**: 이미지에 대한 고유 이름입니다. 기본적으로 이름은 WIM 파일 이름을 사용합니다.  
+    -   **이름**: 이미지의 고유 이름입니다. 기본적으로 이름은 WIM 파일 이름을 사용합니다.  
 
     -   **버전**: 선택적 버전 식별자입니다. 이 속성은 이미지의 OS 버전이 아니어도 됩니다. 패키지에 대한 조직의 버전인 경우가 많습니다.   
 
-    -   **주석**: 선택적 간략한 설명입니다.  
+    -   **설명**: 선택적 간략한 설명입니다.  
 
 5.  마법사를 완료합니다.  
 

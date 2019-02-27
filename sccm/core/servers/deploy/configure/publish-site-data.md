@@ -10,11 +10,13 @@ ms.assetid: 17cf034f-eaff-43ce-bc8e-917213c1db74
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b7fa19ed6dbdcd745b911e235c95166a70c00f23
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f8efc99783b07b5097ac2e6de82df9651eefa5ce
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56127204"
 ---
 # <a name="publish-site-data-for-system-center-configuration-manager"></a>System Center Configuration Manager용으로 사이트 데이터 게시
 
@@ -49,7 +51,7 @@ System Center Configuration Manager의 Active Directory 스키마를 확장한 �
 
 1.  Configuration Manager 콘솔에서 **관리**를 클릭합니다.  
 
-2.  **관리** 작업 영역에서 **Active Directory 포리스트**를 클릭합니다. 이전에 Active Directory 포리스트 검색을 실행한 경우 검색된 각 포리스트가 결과 창에 표시됩니다. Active Directory 포리스트 검색을 실행하면 로컬 포리스트 및 트러스트된 모든 포리스트가 검색됩니다. 트러스트되지 않은 포리스트만 수동으로 추가해야 합니다.  
+2.  **관리** 작업 영역에서 **계층 구성**을 확장한 다음, **Active Directory 포리스트**를 클릭합니다. 이전에 Active Directory 포리스트 검색을 실행한 경우 검색된 각 포리스트가 결과 창에 표시됩니다. Active Directory 포리스트 검색을 실행하면 로컬 포리스트 및 트러스트된 모든 포리스트가 검색됩니다. 트러스트되지 않은 포리스트만 수동으로 추가해야 합니다.  
 
     -   이전에 검색된 포리스트를 설정하려면 결과 창에서 포리스트를 선택합니다. 그 후에 **홈** 탭의 **속성** 그룹에서 **속성**을 클릭하여 포리스트 속성을 엽니다. 계속해서 3단계를 진행합니다.  
 

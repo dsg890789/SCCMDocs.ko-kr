@@ -10,12 +10,13 @@ ms.assetid: 07ce872e-1558-42ad-b5ad-582c5b1bdbb4
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: eb7e4a6645514cedee382932adff76da14d0ba16
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 74b8f7b099e906856300f5cc76b807daf894e060
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385527"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56120081"
 ---
 # <a name="design-a-hierarchy-of-sites-for-configuration-manager"></a>Configuration Manager에 대한 사이트 계층 구조 디자인
 
@@ -220,11 +221,11 @@ Configuration Manager의 콘텐츠 관리 옵션에 대한 자세한 내용은 [
 
 별도의 문서에서 다루는 일반적인 고려 사항은 다음과 같습니다. 이 정보는 계층 구조 디자인에서 영향을 주거나 받는 데 중요합니다.  
 
-- [컴퓨터 및 장치 관리](/sccm/core/clients/manage/manage-clients)를 준비할 때 장치가 온-프레미스 또는 클라우드에 있는지, 아니면 사용자 소유 장치(BYOD)가 포함되는지 고려합니다. 또한 여러 관리 옵션을 지원하는 디바이스를 관리하는 방법도 고려합니다. 예를 들어 Configuration Manager를 사용하거나 Microsoft Intune과 통합하여 Windows 10 디바이스를 관리합니다. 자세한 내용은 [디바이스 관리 솔루션 선택](/sccm/core/plan-design/choose-a-device-management-solution)을 참조하세요.  
+- [컴퓨터 및 디바이스 관리](/sccm/core/clients/manage/manage-clients)를 준비할 때 디바이스가 온-프레미스 또는 클라우드에 있는지, 아니면 사용자 소유 디바이스(BYOD)가 포함되는지 고려합니다. 또한 여러 관리 옵션을 지원하는 디바이스를 관리하는 방법도 고려합니다. 예를 들어 Configuration Manager를 사용하거나 Microsoft Intune과 통합하여 Windows 10 디바이스를 관리합니다. 자세한 내용은 [디바이스 관리 솔루션 선택](/sccm/core/plan-design/choose-a-device-management-solution)을 참조하세요.  
 
 - 사용 가능한 네트워크 인프라에서 원격 위치 간의 데이터 흐름에 영향을 주는 방식을 이해합니다. 자세한 내용은 [네트워크 환경 준비](/sccm/core/plan-design/network/configure-firewalls-ports-domains)를 참조하세요. 또한 사용자 및 디바이스의 지리적 위치와 온-프레미스 네트워크 또는 인터넷을 통해 인프라에 액세스하는지 여부도 고려합니다.  
 
-- 콘텐츠 인프라에서 배포하는 콘텐츠를 관리하는 디바이스에 효율적으로 배포하도록 계획합니다. 이 콘텐츠는 애플리케이션, 소프트웨어 업데이트 또는 운영 체제일 수 있습니다. 자세한 내용은 [콘텐츠 및 콘텐츠 인프라 관리](/sccm/core/servers/deploy/configure/manage-content-and-content-infrastructure)를 참조하세요.  
+- 콘텐츠 인프라에서 배포하는 콘텐츠를 관리하는 디바이스에 효율적으로 배포하도록 계획합니다. 이 콘텐츠는 응용 프로그램, 소프트웨어 업데이트 또는 운영 체제일 수 있습니다. 자세한 내용은 [콘텐츠 및 콘텐츠 인프라 관리](/sccm/core/servers/deploy/configure/manage-content-and-content-infrastructure)를 참조하세요.  
 
 - 사용하려는 [Configuration Manager의 특징과 기능](/sccm/core/plan-design/changes/features-and-capabilities)을 결정합니다. 기능마다 서로 다른 사이트 시스템 역할 또는 Windows 인프라가 필요합니다. 다중 사이트 계층 구조에서 네트워크 및 서버 리소스를 가장 효율적으로 사용할 수 있도록 배포 위치를 결정합니다.  
 

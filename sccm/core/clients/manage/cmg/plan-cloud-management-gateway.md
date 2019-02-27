@@ -10,12 +10,13 @@ ms.assetid: 2dc8c9f1-4176-4e35-9794-f44b15f4e55f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b059fd3b8511a3cbbf308ea7a3ee21a4ec9dbfaa
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d8eff4154f5799ef0d6411b077f50753d203310e
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52456722"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56126780"
 ---
 # <a name="plan-for-the-cloud-management-gateway-in-configuration-manager"></a>Configuration Manager에서 클라우드 관리 게이트웨이 계획
 
@@ -180,7 +181,7 @@ Fourth Coffee는 시애틀 본사의 온-프레미스 데이터 센터에 중앙
 
 ## <a name="specifications"></a>사양
 
-- [클라이언트 및 장치에 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices)에 나열된 Windows 버전은 모두 CMG에서 지원됩니다.  
+- [클라이언트 및 디바이스에 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices)에 나열된 Windows 버전은 모두 CMG에서 지원됩니다.  
 
 - CMG는 관리 지점 및 소프트웨어 업데이트 지점 역할만 지원합니다.  
 
@@ -327,7 +328,7 @@ CMG 성능을 향상시키는 데 도움이 될 수 있는 권장 사항은 다�
    5. CMG 연결 지점은 클라이언트 통신을 온-프레미스 관리 지점 및 소프트웨어 업데이트 지점으로 전달합니다.  
 
 ### <a name="required-ports"></a>필요한 포트
-다음 표에는 필요한 네트워크 포트와 프로토콜이 나열되어 있습니다. *클라이언트*는 아웃바운드 포트가 필요한 연결을 시작하는 장치입니다. *서버*는 인바운드 포트가 필요한 연결을 수락하는 장치입니다. 
+다음 표에는 필요한 네트워크 포트와 프로토콜이 나열되어 있습니다. *클라이언트*는 아웃바운드 포트가 필요한 연결을 시작하는 디바이스입니다. *서버*는 인바운드 포트가 필요한 연결을 수락하는 디바이스입니다. 
 
 | 클라이언트  | 프로토콜 | 포트  | 서버  | 설명  |
 |---------|---------|---------|---------|---------|
@@ -357,9 +358,9 @@ CMG 연결 지점 사이트 시스템은 웹 프록시 사용을 지원합니다
 
 - StorageEndpoint(core.windows.net)  
 
-- Configuration Manager 콘솔 및 클라이언트에서 Azure AD 토큰을 검색하는 경우: ActiveDirectoryEndpoint(https://login.microsoftonline.com/)  
+- Configuration Manager 콘솔 및 클라이언트에서 Azure AD 토큰 검색: ActiveDirectoryEndpoint(https://login.microsoftonline.com/)  
 
-- Azure AD 사용자를 검색하는 경우: AAD Graph 엔드포인트(https://graph.windows.net/)  
+- Azure AD 사용자 검색: AAD Graph 엔드포인트(https://graph.windows.net/)  
 
 
 

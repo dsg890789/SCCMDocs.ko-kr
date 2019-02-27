@@ -10,12 +10,13 @@ ms.assetid: a6f7f6b7-9ef3-4ffa-a3cf-d877ac55983b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: ca7dfce7b96747e46247cb290b4fc0d7e0df41ff
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b100daf91b8bb7c5d4dd5f041c57e7dc9dac390e
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52458157"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156783"
 ---
 # <a name="customize-support-center"></a>지원 센터 사용자 지정
 
@@ -27,7 +28,7 @@ ms.locfileid: "52458157"
 
   - [로그 그룹 사용자 지정](#bkmk_loggroups): 정규식을 사용하여 로그 파일의 새 그룹을 정의합니다. 또한 그룹을 기록할 다른 로그 파일을 추가합니다.  
 
-  - [와일드카드를 사용하여 추가 로그 파일 수집:](#bkmk_wildcards) 와일드카드 검색을 사용하여 추가 로그 파일을 수집합니다.  
+  - [와일드카드를 사용하여 추가 로그 파일 수집](#bkmk_wildcards): 와일드카드 검색을 사용하여 추가 로그 파일을 수집합니다.  
 
 이렇게 변경하려면 지원 센터를 설치한 클라이언트에서 로컬 관리자 권한이 필요합니다. 메모장 또는 Visual Studio와 같은 XML 편집기 또는 텍스트를 사용하여 이러한 사용자 지정을 확인합니다.
 
@@ -98,7 +99,7 @@ ms.locfileid: "52458157"
 
   - **구성 요소 로그 그룹**: `<componentLogGroup>` 요소는 키 특성을 사용하여 목록에 표시되는 로그 그룹의 이름을 정의합니다. 또한 정규식(regex)이 포함된 값 특성을 사용합니다. 이 regex를 사용하여 관련된 로그 파일의 세트를 수집합니다.  
 
-  - **정적 로그 그룹**: `<staticLogGroup>` 요소는 키 특성을 사용하여 목록에 표시되는 로그 그룹의 이름을 정의합니다. 또한 로그 파일 이름을 정의하는 값 특성을 사용합니다.  
+  - **정적 로그 그룹:** `<staticLogGroup>` 요소는 키 특성을 사용하여 목록에 표시되는 로그 그룹의 이름을 정의합니다. 또한 로그 파일 이름을 정의하는 값 특성을 사용합니다.  
 
 `<componentLogGroup>` 요소 및 `<staticLogGroup>` 요소 내에서 모두 `<add/>` 요소에 동일한 키 특성 값을 사용하는 경우 지원 센터는 단일 그룹을 만듭니다. 이 그룹에는 동일한 키를 사용하는 두 요소에 의해 정의된 로그 파일이 포함되어 있습니다.
 

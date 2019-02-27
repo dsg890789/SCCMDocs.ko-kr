@@ -10,12 +10,13 @@ ms.assetid: 919e3636-53fe-4119-ad14-2d03702b391b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3fd4853a35c4bfa1112e61286add1e1f458e8b6f
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 99cd37d0034725c85709e454960171714cd3db13
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32346586"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56133819"
 ---
 # <a name="use-software-center-to-deploy-windows-over-the-network-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 센터를 사용하여 네트워크를 통해 Windows 배포
 

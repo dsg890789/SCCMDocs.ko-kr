@@ -10,12 +10,13 @@ ms.assetid: 6a279624-ffc9-41aa-8132-df1809708dd5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: ffcb60ff355a67304b057ef2d1b632fb9e0c21dc
-ms.sourcegitcommit: 5e7c4d36f4cdb3390ad3b381d31a3e1e4bf3c6e1
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6bea2d7fc41bdec96fbdfe3508d13eea0a59d514
+ms.sourcegitcommit: ceec0e20bf801071f2a05233f984cf17acc3fd29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55986538"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56265039"
 ---
 # <a name="list-of-prerequisite-checks-for-configuration-manager"></a>Configuration Manager의 필수 구성 요소 검사 목록
 
@@ -554,7 +555,7 @@ SELECT * FROM vLogs WHERE ProcedureName = 'spDiagChangeTracking'
 <!--SCCMDocs-pr issue 3094-->
 *적용 대상: 중앙 관리 사이트, 주 사이트, 보조 사이트*
 
-새 사이트를 설치하면 Configuration Manager에서 SQL Native Client를 재배포 가능한 구성 요소로 자동으로 설치합니다. Configuration Manager는 SQL Native Client 업그레이드를 지원하지 않습니다. 이 검사에서는 지원되는 버전의 SQL Native Client가 사이트에 있는지 확인합니다. 1810 버전부터 최소 버전은 SQL 2012 SP4(`11.*.7001.0`)입니다. 
+새 사이트를 설치하면 Configuration Manager에서 SQL Server Native Client를 재배포 가능한 구성 요소로 자동으로 설치합니다. 사이트를 설치한 후 Configuration Manager는 SQL Server Native Client를 업그레이드하지 않습니다. 이 검사에서는 지원되는 버전의 SQL Native Client가 사이트에 있는지 확인합니다. 1810 버전부터 최소 버전은 SQL 2012 SP4(`11.*.7001.0`)입니다. 
 
 이 SQL Native Client 버전은 TLS 1.2를 지원합니다. 자세한 내용은 다음 아티클을 참조하세요.
 - [Microsoft SQL Server에 대한 TLS 1.2 지원](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server)  

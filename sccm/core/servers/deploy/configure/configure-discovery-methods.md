@@ -10,12 +10,13 @@ ms.assetid: 49505eb1-d44d-4121-8712-e0f3d8b15bf5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e232875aab086dea04261abc4d83df8d5d03e6c8
-ms.sourcegitcommit: aca62bd3d267b1dbea46d4db6f32d797c5f6263c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6524fb7715c9bc3040996a16b4204464e0505123
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347973"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56139190"
 ---
 # <a name="configure-discovery-methods-for-configuration-manager"></a>Configuration Manager 검색 방법 구성
 
@@ -173,9 +174,9 @@ Active Directory 포리스트 검색을 사용하도록 설정하고 Active Dire
 
     2.  다음과 같이 검색 동작을 변경하는 옵션을 지정합니다.  
 
-        - **Active Directory 그룹 내에서 개체 검색**: 사이트는 이 경로의 그룹 멤버 자격도 확인합니다.  
+        - **Active Directory 그룹 내의 개체 검색**: 또한 사이트가 이 경로에서 그룹의 멤버 자격을 살펴봅니다.  
 
-        - **Active Directory 하위 컨테이너를 재귀적으로 검색**: 이 옵션을 사용하는 경우 사이트가 위의 경로에서 추가 컨테이너 또는 OU를 검색합니다. 이 옵션을 사용하지 않는 경우 사이트가 특정 경로의 리소스만 검색합니다.  
+        - **회귀적으로 Active Directory 자식 컨테이너 검색**: 이 옵션을 사용하는 경우 사이트가 위의 경로에서 추가 컨테이너 또는 OU를 검색합니다. 이 옵션을 사용하지 않는 경우 사이트가 특정 경로의 리소스만 검색합니다.  
 
             버전 1806부터 이 재귀 검색에서 제외할 하위 컨테이너를 선택합니다. 이 옵션은 검색되는 개체 수를 줄이는 데 도움이 됩니다. **추가**를 선택하여 위의 경로 아래에 있는 컨테이너를 선택합니다. 새 컨테이너 선택 대화 상자에서 제외할 자식 컨테이너를 선택합니다. **확인**을 선택하여 새 컨테이너 선택 대화 상자를 닫습니다.<!--1358143-->
 

@@ -10,12 +10,13 @@ ms.assetid: 08e0382d-de05-4a76-ba5c-7223173f7066
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 182006f0e4fcaf2304570ef4110527a61180c290
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3a96f9292256227da6a216a913c7a0be1be5c60d
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32341018"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156715"
 ---
 # <a name="configure-asset-intelligence-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Asset Intelligence 구성
 
@@ -27,11 +28,11 @@ Asset Intelligence는 소프트웨어 라이선스 사용을 인벤토리에 포
    
 
 - **1단계**: Asset Intelligence 보고서에 필요한 인벤토리 데이터를 수집하려면 [System Center Configuration Manager에서 하드웨어 인벤토리를 확장하는 방법](../../../../core/clients/manage/inventory/extend-hardware-inventory.md)에 설명된 대로 하드웨어 인벤토리 클라이언트 에이전트를 사용하도록 설정해야 합니다.
-- **2단계**: [Asset Intelligence 하드웨어 인벤토리 보고 클래스를 사용하도록 설정](#BKMK_EnableAssetIntelligence)합니다.  
-- **3단계**: [Asset Intelligence 동기화 지점을 설치](#BKMK_InstallAssetIntelligenceSynchronizationPoint)합니다.
-- **4단계**: [성공 로그온 이벤트의 감사를 사용하도록 설정](#BKMK_EnableSuccessLogonEvents)합니다.  
-- **5단계**: [소프트웨어 라이선스 정보를 가져옵니다.](#BKMK_ImportSoftwareLicenseInformation)  
-- **6단계**: [Asset Intelligence 유지 관리 작업을 구성](#BKMK_ConfigureMaintenanceTasks)합니다. 
+- **2단계**: [Asset Intelligence 하드웨어 인벤토리 보고 클래스를 사용하도록 설정합니다](#BKMK_EnableAssetIntelligence).  
+- **3단계**: [Asset Intelligence 동기화 지점 설치](#BKMK_InstallAssetIntelligenceSynchronizationPoint)
+- **4단계**: [성공 로그온 이벤트 감사를 사용하도록 설정](#BKMK_EnableSuccessLogonEvents)  
+- **5단계**: [소프트웨어 라이선스 정보 가져오기](#BKMK_ImportSoftwareLicenseInformation)  
+- **6단계**: [Asset Intelligence 유지 관리 작업 구성](#BKMK_ConfigureMaintenanceTasks) 
 
 
 ###  <a name="BKMK_EnableAssetIntelligence"></a> Enable Asset Intelligence hardware inventory reporting classes  
@@ -77,7 +78,7 @@ Asset Intelligence 동기화 지점 사이트 시스템 역할은 Configuration 
 
 3.  기존 또는 새 사이트 시스템 서버에 Asset Intelligence 동기화 지점 사이트 시스템 역할을 추가합니다.  
 
-    -  **새 사이트 시스템 서버**: **홈** 탭의 **만들기** 그룹에서 **사이트 시스템 서버 만들기**를 선택하여 마법사를 시작합니다.   
+    -  **새 사이트 시스템 서버**: **홈** 탭의 **만들기** 그룹에서 **사이트 시스템 서버 만들기**를 선택하여 마법사를 선택합니다.   
 
         > [!NOTE]  
         >  기본적으로 Configuration Manager에서 사이트 시스템 역할을 설치할 때 사용 가능한 첫 번째 NTFS 포맷의 하드 디스크 드라이브(사용 가능한 하드 디스크 공간이 가장 큼)에 설치 파일이 설치됩니다. Configuration Manager가 특정 드라이브에 설치되지 않도록 하려면 사이트 시스템 서버를 설치하기 전에 No_sms_on_drive.sms라는 빈 파일을 만들고 드라이브의 루트 폴더에 복사합니다.  
@@ -157,15 +158,15 @@ Asset Intelligence 동기화 지점 사이트 시스템 역할은 Configuration 
 Asset Intelligence는 일반 라이선스 계정에서 지정하는 제품을 제품 이름 및 제품 버전을 사용하여 일치시키지만 게시자 이름은 사용하지 않습니다. 사이트 데이터베이스에 저장된 제품 이름과 정확하게 일치하는 일반 라이선스 계정의 제품 이름을 사용해야 합니다. Asset Intelligence는 일반 라이선스 계정에서 부여된 **EffectiveQuantity**의 숫자를 가져와서 해당 숫자를 Configuration Manager 인벤토리에서 확인한 설치된 제품 숫자와 비교합니다.  
 
 > [!TIP]  
->  Configuration Manager 사이트 데이터베이스에 저장된 제품 이름의 전체 목록을 가져오려면 사이트 데이터베이스에서 SELECT ProductName0 FROM v_GS_INSTALLED_SOFTWARE 쿼리를 실행하면 됩니다.  
+>  Configuration Manager 사이트 데이터베이스에 저장된 제품 이름의 전체 목록을 가져오려면 사이트 데이터베이스에서 다음 쿼리를 실행합니다. SELECT ProductName0 FROM v_GS_INSTALLED_SOFTWARE.  
 
  제품에 대한 정확한 버전을 지정하거나 버전의 일부(예: 주 버전만)를 지정할 수 있습니다. 다음 예제는 특정 제품에 대한 일반 라이선스 계정 버전 항목과 일치하는 결과 버전을 제공합니다.  
 
 |일반 라이선스 계정 항목|사이트 데이터베이스 항목 일치|  
 |-------------------------------------|------------------------------------|  
 |이름: "MySoftware", ProductVersion0:"2"|ProductName0: "Mysoftware", ProductVersion0: "2.01.1234"<br /><br /> ProductName0: "MySoftware", ProductVersion0: "2.02.5678"<br /><br /> ProductName0: "MySoftware", ProductVersion0: "2.05.1234"<br /><br /> ProductName0: "MySoftware", ProductVersion0: "2.05.5678"<br /><br /> ProductName0: "MySoftware", ProductVersion0: "2.05.3579.000"<br /><br /> ProductName0: "MySoftware", ProductVersion0: "2.10.1234"|  
-|이름: "Mysoftware", "2.05" 버전|ProductName0: "MySoftware", ProductVersion0: "2.05.1234"<br /><br /> ProductName0: "MySoftware", ProductVersion0: "2.05.5678"<br /><br /> ProductName0: "MySoftware", ProductVersion0: "2.05.3579.000"|  
-|이름: "Mysoftware", "2" 버전<br /><br /> 이름: "Mysoftware", "2.05" 버전|가져오는 동안 오류가 발생했습니다. 여러 항목이 동일한 제품 버전과 일치하는 경우 가져오기에 실패합니다.|  
+|이름: "MySoftware", Version "2.05"|ProductName0: "MySoftware", ProductVersion0: "2.05.1234"<br /><br /> ProductName0: "MySoftware", ProductVersion0: "2.05.5678"<br /><br /> ProductName0: "MySoftware", ProductVersion0: "2.05.3579.000"|  
+|이름: "Mysoftware", Version "2"<br /><br /> 이름: "Mysoftware", Version "2.05"|가져오는 동안 오류가 발생했습니다. 여러 항목이 동일한 제품 버전과 일치하는 경우 가져오기에 실패합니다.|  
   
 
 ##### <a name="to-create-a-general-license-statement-import-file-by-using-microsoft-excel"></a>Microsoft Excel을 사용하여 일반 라이선스 계정 가져오기 파일을 만들려면  
@@ -199,17 +200,17 @@ Asset Intelligence는 일반 라이선스 계정에서 지정하는 제품을 �
 |EffectiveQuantity|정수 값|예|구매한 라이선스 수|  
 |PONumber|최대 255자|아니요|구매 주문 정보|  
 |ResellerName|최대 255자|아니요|재판매인 정보|  
-|DateOfPurchase|다음 형식의 날짜 값: MM/DD/YYYY|아니요|라이선스 구매 날짜|  
+|DateOfPurchase|다음 형식의 날짜 값:  MM/DD/YYYY|아니요|라이선스 구매 날짜|  
 |SupportPurchased|비트 값|아니요|0 또는 1: 예는 0, 아니요는 1 입력|  
-|SupportExpirationDate|다음 형식의 날짜 값: MM/DD/YYYY|아니요|구매한 지원의 종료 날짜|  
+|SupportExpirationDate|다음 형식의 날짜 값:  MM/DD/YYYY|아니요|구매한 지원의 종료 날짜|  
 |설명|최대 255자|아니요|선택적 설명|  
 
 ###  <a name="BKMK_ConfigureMaintenanceTasks"></a> Configure Asset Intelligence maintenance tasks  
  다음 유지 관리 작업을 Asset Intelligence에 사용할 수 있습니다.  
 
--   **인벤토리 정보를 사용하여 응용 프로그램 타이틀 확인**: 소프트웨어 인벤토리에 보고된 소프트웨어 타이틀이 Asset Intelligence 카탈로그 내 소프트웨어 타이틀과 일치하는지 확인합니다. 기본적으로 이 작업은 사용하도록 설정되어 있으며 토요일 오전 12시 이후부터 오전 5시 이전 사이에 실행되도록 예약되어 있습니다. 이 유지 관리 작업은 Configuration Manager 계층 구조의 최상위 사이트에서만 사용할 수 있습니다.  
+-   **인벤토리 정보를 사용하여 애플리케이션 타이틀 확인**: 소프트웨어 인벤토리에 보고된 소프트웨어 타이틀이 Asset Intelligence 카탈로그 내 소프트웨어 타이틀과 일치하는지 확인합니다. 기본적으로 이 작업은 사용하도록 설정되어 있으며 토요일 오전 12시 이후부터 오전 5시 이전 사이에 실행되도록 예약되어 있습니다. 이 유지 관리 작업은 Configuration Manager 계층 구조의 최상위 사이트에서만 사용할 수 있습니다.  
 
--   **설치된 소프트웨어 데이터 요약**: **자산 및 준수** 작업 영역의 **Asset Intelligence** 노드 아래 **인벤토리에 포함된 소프트웨어** 노드에 표시되는 정보를 제공합니다. 작업을 실행하면 Configuration Manager가 기본 사이트에서 인벤토리에 포함된 모든 소프트웨어 타이틀 수를 수집합니다. 기본적으로 이 작업은 사용하도록 설정되어 있으며 매일 오전 12시 이후부터 오전 5시 이전 사이에 실행되도록 예약되어 있습니다. 이 유지 관리 작업은 기본 사이트에서만 사용할 수 있습니다.  
+-   **설치된 소프트웨어 데이터 요약**: **자산 및 규정 준수** 작업 영역의 **Asset Intelligence** 노드 아래 **인벤토리에 포함된 소프트웨어** 노드에 표시되는 정보를 제공합니다. 작업을 실행하면 Configuration Manager가 기본 사이트에서 인벤토리에 포함된 모든 소프트웨어 타이틀 수를 수집합니다. 기본적으로 이 작업은 사용하도록 설정되어 있으며 매일 오전 12시 이후부터 오전 5시 이전 사이에 실행되도록 예약되어 있습니다. 이 유지 관리 작업은 기본 사이트에서만 사용할 수 있습니다.  
 
 ##### <a name="to-configure-asset-intelligence-maintenance-tasks"></a>Asset Intelligence 유지 관리 작업을 구성하려면  
 

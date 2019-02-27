@@ -10,12 +10,13 @@ ms.assetid: 8db92d67-5d9c-4e9c-80d0-ae6fa0dd4817
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 35a8e1356306815503f2c153a12139e06dd27be2
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ef94f51ad85f5d816a5de253a63a639111b4383a
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32337176"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56134336"
 ---
 # <a name="the-cdlatest-folder-for-system-center-configuration-manager"></a>System Center Configuration Manager의 CD.Latest 폴더
 
@@ -32,9 +33,9 @@ CD.Latest 폴더에는 **Redist** 라는 폴더가 포함되어 있습니다. Re
 
  중앙 관리 사이트 또는 기본 사이트 서버에 CD.Latest 폴더를 만들거나 업데이트하는 시나리오는 다음과 같습니다.  
 
--   Configuration Manager 콘솔 내에서 업데이트 또는 핫픽스 설치: Configuration Manager 설치 폴더에서 폴더가 생성되거나 업데이트됩니다.  
+-   Configuration Manager 콘솔 내에서 업데이트나 핫픽스 설치: Configuration Manager 설치 폴더에 폴더가 만들어지거나 업데이트됩니다.  
 
--   기본 제공 Configuration Manager 백업 작업을 실행합니다. 지정된 백업 폴더 위치에서 폴더가 생성되거나 업데이트됩니다.  
+-   기본 제공 Configuration Manager 백업 작업 실행: 지정된 백업 폴더 위치에서 폴더가 생성되거나 업데이트됩니다.  
 
 -  기준선 미디어(예: 버전 1802)를 사용하여 새 사이트를 설치할 경우 CD.Latest 폴더가 만들어집니다.
 

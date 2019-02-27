@@ -10,12 +10,13 @@ ms.assetid: bc15ee7e-4d0a-4463-ae2c-f72d8d45d65d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6f0590a626cf75ed78e42235768a0d97a9fc3026
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 39227689c484bfcf0df7f49365b196d59b5cfac4
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32336955"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56138350"
 ---
 # <a name="prepare-active-directory-for-site-publishing"></a>사이트 게시를 위해 Active Directory 준비
 
@@ -42,7 +43,7 @@ Configuration Manager의 스키마를 확장하려면:
 
 -   **extadsch.exe** 도구를 실행하거나 **ConfigMgr_ad_schema.ldf** 파일을 통해 LDIFDE 명령줄 유틸리티를 사용합니다. 도구와 파일 모두 Configuration Manager 설치 미디어의 **SMSSETUP\BIN\X64** 폴더에 있습니다.  
 
-#### <a name="option-a-use-extadschexe"></a>옵션 A: extadsch.exe 사용  
+#### <a name="option-a-use-extadschexe"></a>옵션 A: Extadsch.exe 사용  
 
 1.  **extadsch.exe** 를 실행하여 Active Directory 스키마에 새 클래스와 특성을 추가합니다.  
 

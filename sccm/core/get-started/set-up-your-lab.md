@@ -10,12 +10,13 @@ ms.assetid: b1970688-0cd2-404f-a17f-9e2aa4a78758
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 14251bb062423a31bcf74d2079b2e1b667f61ba9
-ms.sourcegitcommit: 06d490d526070e17d77e86bc6c200899ded911cb
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d096681c044b794b849d05c48fa17171344b8a64
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38967167"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56129870"
 ---
 # <a name="set-up-your-system-center-configuration-manager-lab"></a>System Center Configuration Manager 랩 설정
 
@@ -79,9 +80,9 @@ ms.locfileid: "38967167"
 ##  <a name="BKMK_LabADPrep"></a> 랩에 대한 Active Directory 콘텐츠 준비  
  이 랩에 대해 보안 그룹을 만든 다음 도메인 사용자를 추가합니다.  
 
--   보안 그룹: **Evaluation**  
+-   보안 그룹: **평가**  
 
-    -   그룹 범위: **Universal**  
+    -   그룹 범위: **유니버설**  
 
     -   그룹 유형: **Security**  
 
@@ -199,9 +200,9 @@ ms.locfileid: "38967167"
 
 -   [.NET Framework 버전 및 종속성](https://technet.microsoft.com/library/bb822049.aspx)  
 
--   [.NET Framework 4 RTM 응용 프로그램 호환성 연습](https://technet.microsoft.com/library/dd889541.aspx)  
+-   [.NET Framework 4 RTM 애플리케이션 호환성 연습](https://technet.microsoft.com/library/dd889541.aspx)  
 
--   [방법: ASP.NET 웹 응용 프로그램을 ASP.NET 4로 업그레이드](https://technet.microsoft.com/library/dd483478\(VS.100\).aspx)  
+-   [방법: ASP.NET 웹 애플리케이션을 ASP.NET 4로 업그레이드](https://technet.microsoft.com/library/dd483478\(VS.100\).aspx)  
 
 -   [Microsoft .NET Framework 지원 기간 정책 FAQ](https://support.microsoft.com/en-us/gp/framework_faq?WT.mc_id=azurebg_email_Trans_943_NET452_Update)  
 
@@ -209,13 +210,13 @@ ms.locfileid: "38967167"
 
 **BITS, IIS 및 RDC 사용**  
 
-[BITS(Background Intelligent Transfer Service)](https://technet.microsoft.com/library/dn282296.aspx) 는 클라이언트와 서버 간에 파일을 비동기적으로 전송하는 데 필요한 응용 프로그램에 사용됩니다. BITS는 전경과 배경에서 전송의 흐름을 측정하여 다른 네트워크 애플리케이션의 응답을 유지합니다. 또한 전송 세션이 중단되는 경우 파일 전송이 자동으로 다시 시작됩니다.  
+[BITS(Background Intelligent Transfer Service)](https://technet.microsoft.com/library/dn282296.aspx) 는 클라이언트와 서버 간에 파일을 비동기적으로 전송하는 데 필요한 애플리케이션에 사용됩니다. BITS는 전경과 배경에서 전송의 흐름을 측정하여 다른 네트워크 애플리케이션의 응답을 유지합니다. 또한 전송 세션이 중단되는 경우 파일 전송이 자동으로 다시 시작됩니다.  
 
 이 사이트 서버가 관리 지점으로도 사용되므로 이 랩에 대한 BITS를 설치합니다.  
 
 IIS(인터넷 정보 서비스)는 웹에서 서비스를 호스트하는 데 사용할 수 있는 유연하고 확장성 있는 웹 서버입니다. 이는 많은 사이트 시스템 역할을 위해 Configuration Manager에서 사용됩니다. IIS에 대한 자세한 내용은 [System Center Configuration Manager의 사이트 시스템 서버용 웹 사이트](../../core/plan-design/network/websites-for-site-system-servers.md)를 참조하세요.  
 
-[RDC(원격 차등 압축)](https://technet.microsoft.com/library/cc754372.aspx) 은 응용 프로그램이 파일 집합에 변경 사항이 생겼는지 확인하는 데 사용할 수 있는 API 집합입니다. RDC를 통해 애플리케이션이 파일의 변경된 부분만 복제하므로 네트워크 트래픽을 최소로 유지할 수 있습니다.  
+[RDC(원격 차등 압축)](https://technet.microsoft.com/library/cc754372.aspx) 은 애플리케이션이 파일 집합에 변경 사항이 생겼는지 확인하는 데 사용할 수 있는 API 집합입니다. RDC를 통해 애플리케이션이 파일의 변경된 부분만 복제하므로 네트워크 트래픽을 최소로 유지할 수 있습니다.  
 
 #### <a name="to-enable-bits-iis-and-rdc-site-server-roles"></a>BITS, IIS 및 RDC 사이트 서버 역할을 사용하도록 설정하려면  
 
@@ -273,7 +274,7 @@ IIS(인터넷 정보 서비스)는 웹에서 서비스를 호스트하는 데 �
 
         -   **Windows 권한 부여**  
 
-    -   **응용 프로그램 개발**  
+    -   **애플리케이션 개발**  
 
         -   **.NET 확장성 3.5**  
 
@@ -356,7 +357,7 @@ IIS(인터넷 정보 서비스)는 웹에서 서비스를 호스트하는 데 �
     |사이트 설치 절차 단계|선택 항목|  
     |-----------------------------------------|---------------|  
     |4단계: **제품 키** 페이지|**평가**를 선택합니다.|  
-    |7단계:  **필수 조건 다운로드**|**필수 파일 다운로드** 를 선택하고 미리 정의된 위치를 지정합니다.|  
+    |7단계:  **필수 다운로드**|**필수 파일 다운로드** 를 선택하고 미리 정의된 위치를 지정합니다.|  
     |10단계: **사이트 및 설치 설정**|-   **사이트 코드:LAB**<br />-   **사이트 이름:Evaluation**<br />-   **설치 폴더:** 미리 정의된 위치를 지정합니다.|  
     |11단계: **기본 사이트 설치**|**기본 사이트를 독립 사이트로 설치**를 선택하고 **다음**을 클릭합니다.|  
     |12단계: **데이터베이스 설치**|-   **SQL Server 이름(FQDN):** 여기에 FQDN을 입력합니다.<br />-   **인스턴스 이름:** 이전에 설치한 SQL의 기본 인스턴스를 사용하므로 이 이름을 비워둡니다.<br />-   **Service Broker 포트:** 기본 포트인 4022로 그대로 둡니다.|  

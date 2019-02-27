@@ -10,19 +10,20 @@ ms.assetid: b0c9db74-841e-46eb-8924-957cde968bf7
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0c15e919978ae8458f426511dd9a0e6d7c311b4b
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3cda70e7a5f1b2cf7dec079a7e933af48f0bf8ad
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32333292"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56128401"
 ---
 # <a name="upgrade-windows-devices-with-the-edition-upgrade-policy-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 버전 업그레이드 정책을 사용하여 Windows 디바이스 업그레이드
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 
-**버전 업그레이드 정책**을 사용하면 다음 Windows 10 버전 중 하나를 실행하는 장치를 다른 버전으로 자동 업그레이드할 수 있습니다.
+**버전 업그레이드 정책**을 사용하면 다음 Windows 10 버전 중 하나를 실행하는 디바이스를 다른 버전으로 자동 업그레이드할 수 있습니다.
 
 - Windows 10 Desktop
 - Windows 10 Mobile
@@ -38,9 +39,9 @@ ms.locfileid: "32333292"
 ## <a name="before-you-start"></a>시작하기 전에  
  디바이스를 최신 버전으로 업그레이드하기 전에 다음과 같은 필수 구성 요소를 검토합니다.  
 
--   Windows 10의 데스크톱 버전의 경우: 정책으로 대상을 지정하는 모든 디바이스에서 새 버전의 Windows에 유효한 제품 키 이 제품 키는 MAK(복수 정품 인증 키) 또는 GVLK(일반 볼륨 라이선스 키)일 수 있습니다. GVLK는 또한 KMS(키 관리 서비스) 클라이언트 설정 키라고도 합니다. 자세한 내용은 [볼륨 활성화 계획](https://docs.microsoft.com/windows/deployment/volume-activation/plan-for-volume-activation-client)을 참조하세요. KMS 클라이언트 설정 키의 목록은 Windows Server 정품 인증 가이드의 [부록 A](https://docs.microsoft.com/windows-server/get-started/kmsclientkeys)를 참조하세요. <!--496871-->  
+-   Windows 10의 데스크톱 버전: 정책으로 대상을 지정하는 모든 디바이스에서 새 버전의 Windows에 유효한 제품 키입니다. 이 제품 키는 MAK(복수 정품 인증 키) 또는 GVLK(일반 볼륨 라이선스 키)일 수 있습니다. GVLK는 또한 KMS(키 관리 서비스) 클라이언트 설정 키라고도 합니다. 자세한 내용은 [볼륨 활성화 계획](https://docs.microsoft.com/windows/deployment/volume-activation/plan-for-volume-activation-client)을 참조하세요. KMS 클라이언트 설정 키의 목록은 Windows Server 정품 인증 가이드의 [부록 A](https://docs.microsoft.com/windows-server/get-started/kmsclientkeys)를 참조하세요. <!--496871-->  
 
--   Windows 10 Mobile의 경우: VLSC(Microsoft 볼륨 라이선스 서비스 센터)의 XML 라이선스 파일 이 파일에는 정책으로 대상을 지정하는 모든 디바이스에서 새 버전의 Windows에 대한 라이선스 정보가 있습니다.
+-   Windows 10 Mobile: VLSC(Microsoft 볼륨 라이선스 서비스 센터)의 XML 라이선스 파일입니다. 이 파일에는 정책으로 대상을 지정하는 모든 디바이스에서 새 버전의 Windows에 대한 라이선스 정보가 있습니다.
 
 - 이 정책 유형을 관리하려면 Configuration Manager **전체 관리자** 보안 역할이 있어야 합니다.
 
@@ -58,7 +59,7 @@ ms.locfileid: "32333292"
 
     -   **설명** (선택 사항) - 필요에 따라 Intune 콘솔에서 식별하는 데 도움이 되는 정책 설명을 입력합니다.  
 
-    -   **장치를 업그레이드할 SKU** - 드롭다운 목록에서 Windows 10 Desktop 또는 Windows 10 Mobile의 대상 버전을 선택합니다.  
+    -   **디바이스를 업그레이드할 SKU** - 드롭다운 목록에서 Windows 10 Desktop 또는 Windows 10 Mobile의 대상 버전을 선택합니다.  
 
     -   **라이선스 정보** - 다음 중 하나를 선택합니다.  
 
@@ -85,7 +86,7 @@ ms.locfileid: "32333292"
 ## <a name="next-steps"></a>다음 단계
 
 **모니터링** 작업 영역의 **배포** 노드에서 이 배포를 모니터합니다. 다음 예와 같이 실패한 배포가 실패했음을 나타내는 오류가 표시되는 경우
-- **이 장치에 해당 없음**
+- **이 디바이스에 해당 없음**
 - **데이터 형식 변환 실패**
 
 이러한 오류가 배포 실패를 의미하지는 않습니다. 대상 PC에서 업그레이드가 성공적으로 수행되었는지 확인합니다.

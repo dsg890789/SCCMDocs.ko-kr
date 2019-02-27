@@ -10,12 +10,13 @@ ms.assetid: 3fab4d67-8d2a-45ce-8b06-471280102cf6
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 04faf92545f84fdf53c522ad9aa0c74bbd5c4aa1
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d7a9fcf06630c76fc3e1123fa56861c4de224521
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32342276"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56129377"
 ---
 # <a name="monitor-hierarchy-and-replication-infrastructure-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 계층 및 복제 인프라 모니터링
 
@@ -194,7 +195,7 @@ Configuration Manager에서는 여러 가지 방법으로 계층 구조의 상�
 
 Configuration Manager 콘솔이나 명령 프롬프트에서 Replication Link Analyzer를 실행할 수 있습니다.  
 
--   Configuration Manager 콘솔에서 실행하려면 **모니터링** 작업 영역에서 **데이터베이스 복제** 노드를 클릭하고 분석할 복제 링크를 선택한 다음 **홈** 탭의 **데이터베이스 복제** 그룹에서 **Replication Link Analyzer**를 선택합니다.  
+-   Configuration Manager 콘솔에서 실행하려면 **모니터링** 작업 영역에서 **데이터베이스 복제** 노드를 클릭하고 분석할 복제 링크를 선택한 다음, **홈** 탭의 **데이터베이스 복제** 그룹에서 **Replication Link Analyzer**를 선택합니다.  
 
 -   명령 프롬프트를 실행하려면 **%path%\Microsoft Configuration Manager\AdminConsole\bin\Microsoft.ConfigurationManager.ReplicationLinkAnalyzer.Wizard.exe &lt;원본 사이트 서버 FQDN\> &lt;대상 사이트 서버 FQDN\>** 명령을 입력합니다.  
 

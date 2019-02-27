@@ -10,18 +10,19 @@ ms.assetid: 8fce5391-8e75-4f99-813a-76f8842be5bc
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 7ba95a61b074fa1ae4cc4c77f896659b91eaaaaa
-ms.sourcegitcommit: 0d7efd9e064f9d6a9efcfa6a36fd55d4bee20059
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6526d0cb6b6b84afcaa5faeef93cc230a335196f
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43893701"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56136782"
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1710-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1710에 대한 진단 및 사용 현황 데이터 수집 수준
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 버전 1710에서는 **기본**, **고급**, **전체**의 세 가지 수준의 진단 및 사용 현황 데이터를 수집합니다. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
+System Center Configuration Manager 버전 1710에서는 다음과 같은 세 가지 수준의 진단 및 사용량 데이터를 수집합니다. **기본**, **고급**, **전체**. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
 
 이전 버전에서 변경된 내용은 ***[새로운 기능]***, ***[업데이트된 기능]***, ***[제거된 기능]*** 또는 ***[이동된 기능]*** 으로 표시됩니다.
 
@@ -106,7 +107,7 @@ System Center Configuration Manager 버전 1710의 경우 이 수준에는 다�
 
 System Center Configuration Manager 버전 1710의 경우 이 수준에는 다음이 포함됩니다.
 
-- **응용 프로그램 관리:**  
+- **애플리케이션 관리:**  
 
    - 앱 요구 사항(각 배포 기술에서 참조되는 기본 제공 조건 개수)
 
@@ -303,7 +304,7 @@ System Center Configuration Manager 버전 1710의 경우 이 수준에는 다�
 
 
 
-- **MDM(모바일 장치 관리):**  
+- **MDM(모바일 디바이스 관리):**  
 
     - 실행된 모바일 디바이스 작업(잠금, 핀 다시 설정, 초기화, 사용 중지 및 지금 동기화 명령) 개수
 
@@ -328,7 +329,7 @@ System Center Configuration Manager 버전 1710의 경우 이 수준에는 다�
 
 
 
-- **온-프레미스 MDM(모바일 장치 관리):**  
+- **온-프레미스 MDM(모바일 디바이스 관리):**  
 
     - Windows 10 대량 등록 패키지 및 프로필 개수  
 
@@ -463,7 +464,7 @@ System Center Configuration Manager 버전 1710의 경우 이 수준에는 다�
 
 - 준수 및 오류에 대한 준수 정책 통계
 
-- 준수 설정: SCEP, VPN, Wi-Fi 및 준수 정책 템플릿 구성 정보, 소프트웨어 업데이트가 만료된 그룹 개수
+- 규정 준수 설정: SCEP, VPN, Wi-Fi 및 규정 준수 정책 템플릿 구성 세부 정보, 소프트웨어 업데이트가 만료된 그룹 개수
 
 - System Center Configuration Manager 사용을 위한 DCM 구성 팩
 

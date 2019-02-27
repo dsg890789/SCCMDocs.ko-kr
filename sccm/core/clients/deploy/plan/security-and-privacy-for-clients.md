@@ -10,12 +10,13 @@ ms.assetid: c1d71899-308f-49d5-adfa-3a3ec0163ed8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3dfb749695ffb7a8ecdeab5e4fbed764023eb6e2
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9671ccad42fc9135193cf41e058b472b52a412e1
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385595"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56142309"
 ---
 # <a name="security-and-privacy-for-configuration-manager-clients"></a>Configuration Manager 클라이언트에 대한 보안 및 개인 정보
 
@@ -191,7 +192,7 @@ Configuration Manager는 로컬 관리자만 로그인할 수 있도록 이 기�
 
 
 
-##  <a name="bkmk_mobile"></a> 모바일 장치에 대한 보안 모범 사례  
+##  <a name="bkmk_mobile"></a> 모바일 디바이스에 대한 보안 모범 사례  
 
 
 #### <a name="install-the-enrollment-proxy-point-in-a-perimeter-network-and-the-enrollment-point-in-the-intranet"></a>경계 네트워크에 등록 프록시 지점 설치 및 인트라넷에 등록 지점 설치  
@@ -201,27 +202,27 @@ Configuration Manager에서 등록한 인터넷 기반 모바일 디바이스의
 
 #### <a name="configure-the-password-settings-to-help-protect-mobile-devices-from-unauthorized-access"></a>암호 설정을 구성하여 무단 액세스로부터 모바일 장치 보호  
 
-*Configuration Manager에서 등록된 모바일 장치의 경우*: 모바일 장치 구성 항목을 사용하여 암호 복잡도를 PIN으로 구성합니다. 적어도 기본 최소 암호 길이를 지정합니다.  
+*Configuration Manager에서 등록된 모바일 디바이스의 경우*: 모바일 디바이스 구성 항목을 사용하여 암호 복잡도를 PIN으로 구성합니다. 적어도 기본 최소 암호 길이를 지정합니다.  
 
-*Configuration Manager 클라이언트가 설치되지 않았지만 Exchange Server 커넥터에서 관리되는 모바일 장치의 경우*: 암호 복잡도가 PIN이 되도록 Exchange Server 커넥터에 대한 **암호 설정**을 구성합니다. 적어도 기본 최소 암호 길이를 지정합니다.  
+*Configuration Manager 클라이언트가 설치되지 않았지만 Exchange Server 커넥터에서 관리되는 모바일 디바이스의 경우*: Exchange Server 커넥터에 대한 **암호 설정**에서 암호 복잡도를 PIN으로 구성합니다. 적어도 기본 최소 암호 길이를 지정합니다.  
 
 
 #### <a name="only-allow-applications-to-run-that-are-signed-by-companies-that-you-trust"></a>신뢰할 수 있는 회사에서 서명한 애플리케이션만 실행하도록 허용  
 
 신뢰할 수 있는 회사에서 서명한 경우에만 애플리케이션을 실행할 수 있도록 하여 인벤토리 정보 및 상태 정보에 대한 무단 변경을 방지하는 데 도움이 됩니다. 디바이스에서 서명되지 않은 파일을 설치하도록 허용하지 않습니다.  
 
-*Configuration Manager에서 등록된 다른 모바일 장치의 경우*: 모바일 장치 구성 항목을 사용하여 **서명되지 않은 응용 프로그램** 보안 설정을 **허용 안 함**으로 구성합니다. **서명되지 않은 파일 설치**를 신뢰할 수 있는 원본으로 구성합니다.  
+*Configuration Manager에서 등록된 모바일 디바이스의 경우*: 모바일 디바이스 구성 항목을 사용하여 **서명되지 않은 애플리케이션** 보안 설정을 **허용 안 함**으로 구성합니다. **서명되지 않은 파일 설치**를 신뢰할 수 있는 원본으로 구성합니다.  
 
-*Configuration Manager 클라이언트가 설치되지 않았지만 Exchange Server 커넥터에서 관리되는 모바일 장치의 경우*: **서명되지 않은 파일 설치** 및 **서명되지 않은 응용 프로그램**이 **허용 안 함**이 되도록 Exchange Server 커넥터에 대한 **응용 프로그램 설정**을 구성합니다.  
+*Configuration Manager 클라이언트가 설치되지 않았지만 Exchange Server 커넥터에서 관리되는 모바일 디바이스의 경우*: Exchange Server 커넥터에 대한 **애플리케이션 설정**에서 **서명되지 않은 파일 설치** 및 **서명되지 않은 애플리케이션**을 **허용 안 함**으로 구성합니다.  
 
 
 #### <a name="lock-mobile-devices-when-not-in-use"></a>사용하지 않을 때 모바일 디바이스 잠금  
 
 모바일 디바이스를 사용하지 않을 때 잠금으로써 권한 상승 공격을 방지할 수 있습니다.
 
-*Configuration Manager에서 등록된 다른 모바일 장치의 경우*: 모바일 장치 구성 항목을 사용하여 **다음 유휴 시간 후 모바일 장치 잠그기(분)** 암호 설정을 구성합니다.  
+*Configuration Manager에서 등록된 모바일 디바이스의 경우*: 모바일 디바이스 구성 항목을 사용하여 암호 설정 **다음 유휴 시간 후 모바일 디바이스 잠그기(분)** 를 구성합니다.  
 
-*Configuration Manager 클라이언트가 설치되지 않았지만 Exchange Server 커넥터에서 관리되는 모바일 장치의 경우*: Exchange Server 커넥터에 대한 **암호 설정**에서 **다음 유휴 시간 후 모바일 장치 잠그기(분)** 를 설정하도록 구성합니다.  
+*Configuration Manager 클라이언트가 설치되지 않았지만 Exchange Server 커넥터에서 관리되는 모바일 디바이스의 경우*: Exchange Server 커넥터에 대한 **암호 설정**에서 **다음 유휴 시간 후 모바일 디바이스 잠그기(분)** 를 설정합니다.  
 
 
 #### <a name="restrict-the-users-who-can-enroll-their-mobile-devices"></a>모바일 디바이스를 등록할 수 있는 사용자 제한  
@@ -293,7 +294,7 @@ Mac 컴퓨터를 등록하면 Configuration Manager 클라이언트를 관리하
 
 5.  루트 CA 인증서의 대화 상자에서 **신뢰** 섹션을 확장하고 다음과 같이 변경합니다.  
 
-    1.  **이 인증서 사용 시**: **항상 신뢰** 설정을 **시스템 기본값 사용**으로 변경합니다.  
+    1.  **이 인증서를 사용하는 경우**: **항상 신뢰** 설정을 **시스템 기본값 사용**으로 변경합니다.  
 
     2.  **SSL(Secure Sockets Layer)**: **값이 지정되지 않음**을 **항상 신뢰**로 변경합니다.  
 
@@ -404,7 +405,7 @@ Configuration Manager는 클라이언트의 활동을 모니터링합니다. 정
 
 
 
-##  <a name="BKMK_Privacy_ExchangeConnector"></a> Exchange Server 커넥터를 사용하여 관리하는 모바일 장치에 대한 개인 정보  
+##  <a name="BKMK_Privacy_ExchangeConnector"></a> Exchange Server 커넥터를 사용하여 관리하는 모바일 디바이스에 대한 개인 정보  
 
 Exchange Server 커넥터는 ActiveSync 프로토콜을 사용하여 온-프레미스 또는 호스팅된 Exchange Server에 연결된 디바이스를 찾아서 관리합니다. Exchange Server 커넥터에서 찾은 레코드는 SQL 서버의 Configuration Manager 데이터베이스에 저장됩니다. 정보는 Exchange Server에서 수집되며, 여기에는 모바일 디바이스에서 Exchange Server로 보내는 정보 이외의 다른 추가 정보는 포함되지 않습니다.  
 

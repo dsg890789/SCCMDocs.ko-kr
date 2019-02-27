@@ -10,12 +10,13 @@ ms.assetid: 24fca61e-9cdb-447a-ad7a-f4d2e4fd6704
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 07eb6ec88a5f9b9f7985c317813b2ef7dd5534ff
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: fe4e1c83f4079e0df959563ac8209a98983b8d90
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32344707"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56132458"
 ---
 # <a name="use-cloud-services-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라우드 서비스 사용
 
@@ -45,7 +46,7 @@ Configuration Manager를 배포하기 전에 클라우드 리소스를 프로비
 
 -   **시나리오 2:** 가상 머신에서 Configuration Manager를 실행하고 Azure에서 실행 중이지 않은 클라이언트를 관리하는데 사용할 수 있습니다.  
 
--   **시나리오 3:** 적합한 통신용 네트워크 연결을 사용할 수 있는 경우 실제 회사 네트워크에서는 다른 역할을 실행하면서 가상 컴퓨터에서는 다른 Configuration Manager 사이트 시스템 역할을 실행할 수 있습니다.  
+-   **시나리오 3:** 적합한 통신용 네트워크 연결을 사용할 수 있는 경우 실제 회사 네트워크에서는 다른 역할을 실행하면서 가상 머신에서는 다른 Configuration Manager 사이트 시스템 역할을 실행할 수 있습니다.  
 
 실제 회사 네트워크에서 Configuration Manager를 설치할 때 적용되는 것과 동일한 네트워크, 운영 체제 및 하드웨어 요구 사항이 Azure에서 Configuration Manager를 설치할 때도 적용됩니다.  
 

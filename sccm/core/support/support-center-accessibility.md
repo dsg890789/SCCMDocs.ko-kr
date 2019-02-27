@@ -10,12 +10,13 @@ ms.assetid: 1b931c9d-ffae-4d8e-baa7-c330a152674f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 424ab2a1ca7ed81ccdb5c0607edd74ec8ccb7484
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4d759ada36184ac8a6d1ac59c94c96cdaf234d56
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52458152"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56139377"
 ---
 # <a name="accessibility-features-in-support-center"></a>지원 센터의 내게 필요한 옵션 기능
 
@@ -61,13 +62,13 @@ ms.locfileid: "52458152"
 |모든 로그 파일 닫기<br>(지원 센터 **로그** 탭에서, **로그 뷰어** 창에서)|**Ctrl** + **W** |
 |로그 파일에서 검색| - **Ctrl** + **F**: **찾기** 대화 상자를 열어 검색어를 입력합니다.<br> - **F3**: 다음 일치 항목을 찾습니다.<br> - **Shift** + **F3**: 이전 일치 항목을 찾습니다.|
 |오류 코드 조회<br>(**로그** 탭에서, **로그 뷰어** 창에서)|**Ctrl** + **L** |
-|로그 파일에서 복사| - **Ctrl** + **C**: 로그 파일 텍스트를 복사합니다.<br> - **Ctrl** + **Shift** + **C**: 서식이 지정되지 않은 로그 항목을 복사합니다.|
+|로그 파일에서 복사| - **Ctrl** + **C**: 로그 파일 텍스트를 복사합니다.<br> - **Ctrl** + **Shift** + **C**: 서식 없이 로그 항목을 복사합니다.|
 |로그 파일 텍스트를 사용한 빠른 필터링<br>(**로그** 탭에서, **로그 뷰어** 창에서)|**Ctrl** + **Shift** + **C** |
 |로그 파일에 주석 달기<br>(**로그** 탭에서, **로그 뷰어** 창에서)|**Ctrl** + **Shift** + **N** <sup>[참고 1](#bkmk_note1)</sup>|
 |도움말 열기|**F1**|
 
 
-#### <a name="bkmk_note1"></a> 참고 1: 로그 파일에 주석을 답니다.
+#### <a name="bkmk_note1"></a> 참고 1: 로그 파일에 주석 달기
 지원 센터는 주석을 메모리에 저장합니다. 로그 보기 세션 내에서만 사용할 수 있습니다. 나중에 사용할 수 있도록 주석을 보존하려면 화면을 캡처하여 결과 이미지를 저장합니다.
 
 

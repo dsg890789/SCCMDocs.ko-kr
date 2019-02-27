@@ -10,12 +10,13 @@ ms.assetid: 375912f5-436d-4315-bdbe-d77afee6c9f3
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e4f39d06072222c14627481f21139f06ee6656c4
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: fc4958e83c73da91aa31fb8ac0e1b84375218ac9
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39384990"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56128207"
 ---
 # <a name="how-to-use-resource-explorer-to-view-hardware-inventory-in-configuration-manager"></a>리소스 탐색기를 사용하여 Configuration Manager에서 하드웨어 인벤토리를 확인하는 방법
 
@@ -32,9 +33,9 @@ Configuration Manager에서 리소스 탐색기를 사용하여 하드웨어 인
 
 리소스 탐색기에는 하드웨어 인벤토리와 관련된 다음 섹션이 있습니다.  
 
-- **하드웨어**: 지정된 클라이언트 장치에서 수집된 가장 최근 하드웨어 인벤토리가 표시됩니다.  
+- **하드웨어**: 지정된 클라이언트 디바이스에서 수집된 가장 최근 하드웨어 인벤토리가 표시됩니다.  
 
-    - **워크스테이션 상태** 노드는 장치에서 마지막 하드웨어 인벤토리의 날짜 및 시간을 보여 줍니다.  
+    - **워크스테이션 상태** 노드는 디바이스에서 마지막 하드웨어 인벤토리의 날짜 및 시간을 보여 줍니다.  
 
 - **하드웨어 기록**: 마지막 하드웨어 인벤토리 주기 이후 변경된 인벤토리 포함 항목의 기록입니다.  
 
@@ -47,7 +48,7 @@ Configuration Manager에서 리소스 탐색기를 사용하여 하드웨어 인
 
 ## <a name="bkmk_open"></a> 리소스 탐색기를 여는 방법   
 
-1.  Configuration Manager 콘솔에서 **자산 및 호환성** 작업 영역으로 이동하고 **디바이스** 노드를 선택합니다. **장치 컬렉션** 노드에서 모든 컬렉션을 선택할 수도 있습니다.  
+1.  Configuration Manager 콘솔에서 **자산 및 호환성** 작업 영역으로 이동하고 **디바이스** 노드를 선택합니다. **디바이스 컬렉션** 노드에서 모든 컬렉션을 선택할 수도 있습니다.  
 
 2.  디바이스를 선택합니다. 리본에 있는 **홈** 탭 및 **디바이스** 그룹에서 **시작**을 클릭한 다음, **리소스 탐색기**를 선택합니다.   
 

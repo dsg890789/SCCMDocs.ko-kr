@@ -10,12 +10,13 @@ ms.assetid: 6a4a3290-5228-4871-918a-554aa1c20834
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3ad96cedf1170f8563fdafe3922f6ad2e7c67b5a
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 87552016d1cd17e79abf01a9de9109195d3d2a70
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39386014"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56125314"
 ---
 # <a name="cmtrace"></a>CMTrace
 
@@ -87,7 +88,7 @@ CMTrace의 설정을 구성합니다. 다음 옵션을 사용할 수 있습니�
 
      - **업데이트 간격**: CMTrace가 로그 파일에 대한 변경 내용을 확인하고 새 줄을 로드하는 간격을 제어합니다. 이 값은 기본적으로 500밀리초입니다.  
 
-     - **강조 표시**: 선택한 로그 줄을 강조 표시할 때 CMTrace가 사용하는 색을 설정합니다. 기본적으로 이 색은 기본 노랑(빨강: 255, 녹색: 255, 파랑: 0)입니다.  
+     - **강조 표시**: 선택한 로그 줄을 강조 표시할 때 CMTrace가 사용하는 색을 설정합니다. 기본적으로 이 색은 기본 노랑(빨강:  255, 녹색:  255, 파랑:  0)입니다.  
 
      - **열**: 로그 보기에 표시되는 열과 표시 순서를 구성합니다. 기본적으로 로그 텍스트, 구성 요소, 날짜/시간 및 스레드를 표시합니다.  
 
@@ -99,7 +100,7 @@ CMTrace의 설정을 구성합니다. 다음 옵션을 사용할 수 있습니�
  
 - **고급** 탭  
 
-     - **새로 고침 간격**: CMTrace가 많은 줄을 로드할 때 지정된 간격으로 로그 보기를 강제 업데이트합니다. 기본적으로 이 옵션은 0 값을 통해 사용하지 않게 설정됩니다.  
+     - **새로 고침 간격**:  CMTrace가 많은 줄을 로드할 때 지정된 간격으로 로그 보기를 강제 업데이트합니다. 기본적으로 이 옵션은 0 값을 통해 사용하지 않게 설정됩니다.  
 
         > [!Note]  
         > 일반적으로 **새로 고침 간격**은 수정하지 않습니다. 많은 로그 파일을 열 때 소요되는 시간이 크게 늘어날 수 있습니다. 
@@ -146,7 +147,7 @@ CMTrace가 각 로그 항목의 텍스트를 검색하는 데 사용할 문자�
 
 
 #### <a name="error-lookup"></a>오류 조회
-10진수 또는 16진수로 오류를 입력하거나 붙여 넣어 설명을 표시합니다. 가능한 오류 소스에는 Windows, WMI 또는 Winhttp 등이 있습니다.
+10진수 또는 16진수로 오류를 입력하거나 붙여 넣어 설명을 표시합니다. 가능한 오류 소스는 Windows, WMI 또는 Winhttp 등입니다.
 
 #### <a name="pause"></a>일시 중지
 로그 모니터링을 일시 중단하거나 다시 시작합니다. 이 작업을 사용하는 가능한 원인에는 다음 사용 사례가 있습니다.  

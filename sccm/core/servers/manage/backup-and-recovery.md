@@ -10,12 +10,13 @@ ms.assetid: f7832d83-9ae2-4530-8a77-790e0845e12f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 85ce1c4b5201c29ffa3543357f50a379c1b11e7f
-ms.sourcegitcommit: 84afecee44200e27d1d5bb5ed2d54fd6a8c51617
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e876e34929479654240ff220c3cad91043da0f83
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43053884"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56123140"
 ---
 # <a name="back-up-a-configuration-manager-site"></a>Configuration Manager 사이트 백업
 
@@ -29,7 +30,7 @@ ms.locfileid: "43053884"
 
 ## <a name="considerations-before-creating-a-backup"></a>백업 전 고려 사항  
 
--   SQL Server Always On 가용성 그룹을 사용하여 사이트 데이터베이스를 호스트하는 경우: [SQL Server Always On 사용 준비](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database#changes-for-site-backup)에 설명된 대로 백업 및 복구 계획을 수정합니다.  
+-   SQL Server Always On 가용성 그룹을 사용하여 사이트 데이터베이스를 호스트할 경우: [SQL Server Always On 사용 준비](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database#changes-for-site-backup)에서 설명한 대로 백업 및 복구 계획을 수정합니다.  
 
 -   Configuration Manager는 Configuration Manager 백업 작업에서 사이트 데이터베이스를 복구할 수 있습니다. 또한 다른 프로세스로 만든 사이트 데이터베이스의 백업을 사용할 수도 있습니다.   
 
@@ -83,11 +84,11 @@ Configuration Manager 백업 서비스가 실행될 때 이 서비스는 백업 
     > [!IMPORTANT]  
     >  백업 파일의 변조를 방지하도록 파일을 안전한 위치에 저장해야 합니다. 가장 안전한 백업 경로는 폴더에 대한 NTFS 파일 사용 권한을 설정할 수 있는 로컬 드라이브입니다. Configuration Manager는 백업 경로에 저장된 백업 데이터를 암호화하지 않습니다.  
 
-    -   **사이트 데이터 및 데이터베이스용 사이트 서버의 로컬 드라이브**: 작업이 사이트와 사이트 데이터베이스의 백업 파일을 사이트 서버의 로컬 디스크 드라이브의 지정된 경로에 저장하도록 지정합니다. 백업 작업이 실행되기 전에 로컬 폴더를 만듭니다. 사이트 서버의 로컬 시스템 계정에 사이트 서버 백업의 로컬 폴더에 대한 **쓰기** NTFS 파일 권한이 있어야 합니다. SQL Server를 실행하는 컴퓨터의 로컬 시스템 계정에 사이트 데이터베이스 백업 폴더에 대한 **쓰기** NTFS 권한이 있어야 합니다.  
+    -   **사이트 서버의 사이트 데이터 및 데이터베이스용 로컬 드라이브**: 작업이 사이트와 사이트 데이터베이스의 백업 파일을 사이트 서버의 로컬 디스크 드라이브의 지정된 경로에 저장하도록 지정합니다. 백업 작업이 실행되기 전에 로컬 폴더를 만듭니다. 사이트 서버의 로컬 시스템 계정에 사이트 서버 백업의 로컬 폴더에 대한 **쓰기** NTFS 파일 권한이 있어야 합니다. SQL Server를 실행하는 컴퓨터의 로컬 시스템 계정에 사이트 데이터베이스 백업 폴더에 대한 **쓰기** NTFS 권한이 있어야 합니다.  
 
     -   **사이트 데이터 및 데이터베이스의 네트워크 경로(UNC 이름)**: 작업이 사이트와 사이트 데이터베이스의 백업 파일을 지정된 네트워크 경로에 저장하도록 지정합니다. 백업 작업이 실행되기 전에 공유를 만듭니다. 사이트 서버의 컴퓨터 계정에 공유 네트워크 폴더에 대한 **쓰기** NTFS 및 공유 권한이 있어야 합니다. SQL Server가 다른 컴퓨터에 설치된 경우 SQL Server의 컴퓨터 계정에 동일한 권한이 있어야 합니다.  
 
-    -   **사이트 서버 및 SQL 서버의 로컬 드라이브**: 작업이 사이트의 백업 파일을 사이트 서버의 로컬 드라이브의 지정된 경로에 저장하도록 지정합니다. 이 작업은 사이트 데이터베이스의 백업 파일을 사이트 데이터베이스 서버의 로컬 드라이브에서 지정된 경로에 저장합니다. 백업 작업이 실행되기 전에 로컬 폴더를 만듭니다. 사이트 서버의 컴퓨터 계정에 사이트 서버에서 만든 폴더에 대한 **쓰기** NTFS 권한이 있어야 합니다. SQL Server의 컴퓨터 계정에 사이트 데이터베이스 서버에서 만든 폴더에 대한 **쓰기** NTFS 권한이 있어야 합니다. 이 옵션은 사이트 데이터베이스가 사이트 서버에 설치되지 않은 경우에만 사용할 수 있습니다.  
+    -   **사이트 서버 및 SQL Server의 로컬 드라이브**: 작업이 사이트의 백업 파일을 사이트 데이터베이스 서버의 로컬 드라이브에서 지정된 경로에 저장하도록 지정합니다. 이 작업은 사이트 데이터베이스의 백업 파일을 사이트 데이터베이스 서버의 로컬 드라이브에서 지정된 경로에 저장합니다. 백업 작업이 실행되기 전에 로컬 폴더를 만듭니다. 사이트 서버의 컴퓨터 계정에 사이트 서버에서 만든 폴더에 대한 **쓰기** NTFS 권한이 있어야 합니다. SQL Server의 컴퓨터 계정에 사이트 데이터베이스 서버에서 만든 폴더에 대한 **쓰기** NTFS 권한이 있어야 합니다. 이 옵션은 사이트 데이터베이스가 사이트 서버에 설치되지 않은 경우에만 사용할 수 있습니다.  
 
     > [!NOTE]  
     >   백업 대상을 찾는 옵션은 백업 대상의 네트워크 경로를 지정하는 경우에만 사용할 수 있습니다.  

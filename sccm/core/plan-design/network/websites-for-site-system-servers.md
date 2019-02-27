@@ -10,12 +10,13 @@ ms.assetid: 681f0893-e83b-476e-9ec0-a5dc7c9deeb6
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5614317639c12813acf61f17de844c8304bed70f
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: fd2e358a93ff91c79f0f4716a596a9f7026c5daa
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32344350"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56123453"
 ---
 # <a name="websites-for-site-system-servers-in-system-center-configuration-manager"></a>System Center Configuration Manager의 사이트 시스템 서버용 웹 사이트
 

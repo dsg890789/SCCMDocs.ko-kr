@@ -10,17 +10,18 @@ ms.assetid: dba904ae-7c44-46db-ae63-999b9821cb46
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 8b85961c14c3db69c3e02e776798588fadd0fc89
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2fb57705079072e6a656464f5b7252b2ce05ad9d
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39383156"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56123249"
 ---
 # <a name="cng-certificates-overview"></a>CNG 인증서 개요
 <!-- 1356191 --> 
 
-Configuration Manager는 CNG(Cryptography: Next Generation) 인증서를 제한적으로 지원합니다. Configuration Manager 클라이언트는 CNG KSP(키 스토리지 공급자)의 개인 키와 함께 PKI 클라이언트 인증 인증서를 사용할 수 있습니다. Configuration Manager 클라이언트는 KSP 지원을 통해 PKI 클라이언트 인증 인증서용 TPM KSP와 같은 하드웨어 기반 개인 키를 지원합니다.
+Configuration Manager는 Cryptography: Next Generation(CNG) 인증서를 지원합니다. Configuration Manager 클라이언트는 CNG KSP(키 스토리지 공급자)의 개인 키와 함께 PKI 클라이언트 인증 인증서를 사용할 수 있습니다. Configuration Manager 클라이언트는 KSP 지원을 통해 PKI 클라이언트 인증 인증서용 TPM KSP와 같은 하드웨어 기반 개인 키를 지원합니다.
 
 ## <a name="supported-scenarios"></a>지원되는 시나리오
 [CNG(Cryptography API: Next Generation)](https://msdn.microsoft.com/library/windows/desktop/bb204775.aspx) 인증서 템플릿을 사용할 수 있는 시나리오는 다음과 같습니다.
@@ -76,7 +77,7 @@ CNG 인증서를 사용하려면 CA(인증 기관)가 대상 컴퓨터에 대한
 
 - **암호화** 탭
 
-    - **공급자 범주**는 **주요 저장소 공급자**여야 합니다. (필수)
+    - **공급자 범주**는 **주요 스토리지 공급자**여야 합니다. (필수)
     - **요청 시 다음 공급자 중 하나 사용:** 은 **Microsoft 소프트웨어 키 저장소 공급자**여야 합니다. 
 
 > [!NOTE]

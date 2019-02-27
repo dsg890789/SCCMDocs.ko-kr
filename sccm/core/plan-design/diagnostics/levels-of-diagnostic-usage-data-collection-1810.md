@@ -10,18 +10,19 @@ ms.assetid: bce9e299-7b3a-4f51-8863-a322877daa2c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: c6dd50d137cdc570b7e37cd96fb310c85ba60840
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 52c13109710fc35dcd2853f76188ac42269a8058
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52458172"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56120064"
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1810"></a>1810 버전의 진단 사용 현황 데이터 수집 수준
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Configuration Manager 버전 1810에서는 **기본**, **고급**, **전체**의 세 가지 수준의 진단 및 사용량 데이터를 수집합니다. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
+Configuration Manager 버전 1810은 다음과 같은 세 가지 수준의 진단 및 사용량 데이터를 수집합니다. **기본**, **고급**, **전체**. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
 
 이전 버전에서 변경된 내용은 ***[새로운 기능]***, ***[업데이트된 기능]***, ***[제거된 기능]*** 또는 ***[이동된 기능]*** 으로 표시됩니다.
 
@@ -42,7 +43,7 @@ Configuration Manager 버전 1810에서는 **기본**, **고급**, **전체**의
 
 Configuration Manager 버전 1810의 경우 이 수준에는 다음과 같은 데이터가 포함됩니다.
 
-- Configuration Manager 콘솔 연결에 대한 통계: OS 버전, 언어, SKU 및 아키텍처, 시스템 메모리, 논리 프로세서 개수, 연결 사이트 ID, 설치된 .NET 버전 및 콘솔 언어 팩
+- Configuration Manager 콘솔 연결 관련 통계: OS 버전, 언어, SKU 및 아키텍처, 시스템 메모리, 논리 프로세서 개수, 연결 사이트 ID, 설치된 .NET 버전 및 콘솔 언어 팩
 
 - 기본 애플리케이션 및 배포 유형 수: 총 앱, 여러 배포 유형을 사용하는 총 앱, 종속성을 가진 총 앱, 총 교체된 앱, 사용 중인 배포 기술 개수
 
@@ -547,7 +548,7 @@ Configuration Manager 버전 1810의 경우 이 수준에는 다음과 같은 �
 
 - 준수 및 오류에 대한 준수 정책 통계  
 
-- 규정 준수 설정: SCEP, VPN, Wi-Fi 및 준수 정책 템플릿 구성 세부 정보  
+- 준수 설정: SCEP, VPN, Wi-Fi 및 규정 준수 정책 템플릿 구성 세부 정보  
 
 - Configuration Manager 사용을 위한 DCM 구성 팩  
 

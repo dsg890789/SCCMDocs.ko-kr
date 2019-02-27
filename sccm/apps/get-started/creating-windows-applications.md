@@ -1,7 +1,7 @@
 ---
 title: Windows 애플리케이션 만들기
 titleSuffix: Configuration Manager
-description: Configuration Manager에서 Windows 애플리케이션을 만들고 배포하는 방법에 대한 자세한 정보를 알아봅니다.
+description: Configuration Manager에서 Windows 응용 프로그램을 만들고 배포하는 방법에 대한 자세한 정보를 알아봅니다.
 ms.date: 07/30/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-app
@@ -10,18 +10,19 @@ ms.assetid: 9181c84e-d74f-44ea-9bb9-f7805eb465fc
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 38732081ce27fde764f7d47a565ce1211cef1f54
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1fa26147539abc611b86791f6dd9a4be0bc89c59
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39383563"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156477"
 ---
 # <a name="create-windows-applications-in-configuration-manager"></a>Configuration Manager에서 Windows 애플리케이션 만들기
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Windows 디바이스에 대한 응용 프로그램을 만들어 배포할 때는 [응용 프로그램 생성](/sccm/apps/deploy-use/create-applications)에 대한 다른 Configuration Manager 요구 사항 및 절차 외에 다음 사항도 고려하세요.  
+Windows 장치에 대한 애플리케이션을 만들어 배포할 때는 [애플리케이션 생성](/sccm/apps/deploy-use/create-applications)에 대한 다른 Configuration Manager 요구 사항 및 절차 외에 다음 사항도 고려하세요.  
 
 
 
@@ -35,15 +36,15 @@ Configuration Manager는 Windows 8.1 및 Windows 10 디바이스용 Windows 앱 
 
 - 새 MSIX 앱을 만드는 방법은 [MSIX support introduced in Insider Build 17682](https://techcommunity.microsoft.com/t5/MSIX-Blog/MSIX-support-introduced-in-Insider-Build-17682/ba-p/202376)(Insider 빌드 17682에서 도입된 MSIX 지원)를 참조하세요.  
 
-Configuration Manager 콘솔에서 애플리케이션을 만들 때 애플리케이션 설치 파일 **형식**을 **Windows 앱 패키지(\*.appx, \*.appxbundle, \*.msix, \*.msixbundle)** 로 선택합니다. 자세한 내용은 [애플리케이션 만들기](/sccm/apps/deploy-use/create-applications)를 참조하세요. 
+Configuration Manager 콘솔에서 응용 프로그램을 만들 때 응용 프로그램 설치 파일 **형식**을 **Windows 앱 패키지(\*.appx, \*.appxbundle, \*.msix, \*.msixbundle)** 로 선택합니다. 자세한 내용은 [애플리케이션 만들기](/sccm/apps/deploy-use/create-applications)를 참조하세요. 
 
 > [!Note]  
 > 새 Configuration Manager 기능을 활용하려면 먼저 클라이언트를 최신 버전으로 업데이트합니다. 사이트 및 콘솔을 업데이트할 때 Configuration Manager 콘솔에 새 기능이 표시되지만 클라이언트 버전도 최신 버전이 될 때까지 전체 시나리오가 작동하지 않습니다.<!--SCCMDocs issue 646-->  
 
 
 
-## <a name="bkmk_provision"></a> 장치의 모든 사용자에 대해 Windows 앱 패키지 프로비전
-<!--1358310--> 버전 1806부터 장치에서 모든 사용자에 대해 Windows 앱 패키지를 사용하여 응용 프로그램을 프로비전합니다. 이 시나리오의 일반적인 한 예는 Minecraft 교육용 버전처럼 비즈니스 및 교육용 Microsoft Store에서 앱을 학교에서 학생들이 사용하는 모든 디바이스에 프로비전하는 것입니다. 전에 Configuration Manager는 사용자 당 이러한 애플리케이션 설치만 지원했습니다. 새 디바이스에 로그인한 후 학생은 앱에 액세스하기를 기다려야 합니다. 앱이 모든 사용자용 디바이스에 프로비전되는 경우 더 신속하게 생산적이 될 수 있습니다.
+## <a name="bkmk_provision"></a> 디바이스의 모든 사용자에 대해 Windows 앱 패키지 프로비전
+<!--1358310--> 버전 1806부터 장치에서 모든 사용자에 대해 Windows 앱 패키지를 사용하여 애플리케이션을 프로비전합니다. 이 시나리오의 일반적인 한 예는 Minecraft 교육용 버전처럼 비즈니스 및 교육용 Microsoft Store의 앱을 학교에서 학생들이 사용하는 모든 디바이스에 프로비전하는 것입니다. 전에 Configuration Manager는 사용자 당 이러한 애플리케이션 설치만 지원했습니다. 새 디바이스에 로그인한 후 학생은 앱에 액세스하기를 기다려야 합니다. 앱이 모든 사용자용 디바이스에 프로비전되는 경우 더 신속하게 생산적이 될 수 있습니다.
 
 > [!Important]  
 > 디바이스에 다른 버전의 동일한 Windows 앱 패키지의 설치, 프로비저닝 및 업데이트 시 예기치 않은 결과가 발생할 수 있으니 주의하십시오. 이 동작은 앱을 프로비전하기 위해 Configuration Manager를 사용하는 경우에 발생할 수 있지만 사용자는 Microsoft 스토어에서 앱을 업데이트할 수 있습니다. 자세한 내용은 [비즈니스용 Microsoft Store에서 앱 관리](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business#next-steps)할 때 다음 단계 지침을 참조하세요.  
@@ -51,10 +52,10 @@ Configuration Manager 콘솔에서 애플리케이션을 만들 때 애플리케
 오프라인 라이선스 앱을 프로비전하면 Configuration Manager는 Windows가 Microsoft Store에서 자동으로 업데이트하도록 허용하지 않습니다.  
 
 Configuration Manager는 Windows의 <!--SCCMDocs-pr issue 2762--> 버전에서 앱 프로비저닝을 지원합니다.
-- 설치 작업: Windows 10, 버전 1607 이상
-- 제거 작업: Windows 10, 버전 1703 이상
+- 설치 작업: Windows 10 버전 1607 이상​
+- 제거 작업: Windows 10 버전 1703 이상​
 
-이 기능에 대한 Windows 앱 배포 유형을 구성하려면 **디바이스의 모든 사용자에 대해 이 응용 프로그램 프로비전** 옵션을 사용하도록 설정합니다. 자세한 내용은 [애플리케이션 만들기](/sccm/apps/deploy-use/create-applications)를 참조하세요.
+이 기능에 대한 Windows 앱 배포 유형을 구성하려면 **장치의 모든 사용자에 대해 이 애플리케이션 프로비전** 옵션을 사용하도록 설정합니다. 자세한 내용은 [애플리케이션 만들기](/sccm/apps/deploy-use/create-applications)를 참조하세요.
 
 
 > [!Note]  
@@ -82,7 +83,7 @@ UWP LOB(기간 업무) 앱에 디지털 서명합니다. 앱을 배포하는 각
 
 ## <a name="bkmk_mdm-msi"></a> Windows Installer 앱을 MDM 등록 Windows 10 장치에 배포  
 
-**MDM을 통한 Windows Installer(\*.msi)** 배포 유형을 사용하면 Windows Installer 기반 앱을 만들고 Windows 10을 실행하는 MDM 등록 장치에 배포할 수 있습니다.  
+**MDM을 통한 Windows Installer(\*.msi)** 배포 유형을 사용하면 Windows Installer 기반 앱을 만들고 Windows 10을 실행하는 MDM 등록 디바이스에 배포할 수 있습니다.  
 
 이 배포 유형을 사용하는 경우 다음 사항을 고려합니다.    
 

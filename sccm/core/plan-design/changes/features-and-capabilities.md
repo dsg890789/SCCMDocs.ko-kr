@@ -10,12 +10,13 @@ ms.assetid: 5d388399-07ca-431c-a9b2-56c69771aa87
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: fadc93d1977d5d066a6c4c3884bdbaeefb2a0c90
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 235355dff634bab09ef7be65645dbb32c5b86cf9
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32343777"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56133717"
 ---
 # <a name="features-and-capabilities-of-system-center-configuration-manager"></a>System Center Configuration Manager의 기능 및 특성
 
@@ -25,9 +26,9 @@ ms.locfileid: "32343777"
 
  사용자 환경에서 이러한 관리 기능을 지원할 수 있도록 Configuration Manager를 계획하고 설치하는 방법에 대한 자세한 내용은 [System Center Configuration Manager 사용 준비](../../../core/plan-design/get-ready.md)를 참조하세요.  
 
- **응용 프로그램 관리**  
+ **애플리케이션 관리**  
 
- 응용 프로그램을 만들고, 관리하고, 배포하고, 모니터링할 수 있는 도구 및 리소스 집합을 관리하는 다양한 디바이스 범위에 제공합니다. 또한 Configuration Manager에서는 사용자의 앱에서 회사 데이터를 보호하는 데 도움이 되는 도구를 제공합니다. [응용 프로그램 관리 소개](/sccm/apps/understand/introduction-to-application-management)를 참조하세요.
+ 애플리케이션을 만들고, 관리하고, 배포하고, 모니터링할 수 있는 도구 및 리소스 집합을 관리하는 다양한 장치 범위에 제공합니다. 또한 Configuration Manager에서는 사용자의 앱에서 회사 데이터를 보호하는 데 도움이 되는 도구를 제공합니다. [애플리케이션 관리 소개](/sccm/apps/understand/introduction-to-application-management)를 참조하세요.
 
  **회사 리소스 액세스**  
 
@@ -35,7 +36,7 @@ ms.locfileid: "32343777"
 
  **준수 설정**  
 
- 기업에서 클라이언트 디바이스의 구성 호환성을 평가하고, 추적하고, 재구성할 수 있는 도구 및 리소스 집합을 제공합니다. 또한 준수 설정을 사용하여 관리하는 디바이스에서 다양한 기능 및 보안 설정을 구성할 수 있습니다. [System Center Configuration Manager를 사용하여 장치 준수 확인](../../../compliance/understand/ensure-device-compliance.md)을 참조하세요.  
+ 기업에서 클라이언트 디바이스의 구성 호환성을 평가하고, 추적하고, 재구성할 수 있는 도구 및 리소스 집합을 제공합니다. 또한 준수 설정을 사용하여 관리하는 디바이스에서 다양한 기능 및 보안 설정을 구성할 수 있습니다. [System Center Configuration Manager를 사용하여 디바이스 준수 확인](../../../compliance/understand/ensure-device-compliance.md)을 참조하세요.  
 
  **Endpoint Protection**  
 
@@ -45,21 +46,21 @@ ms.locfileid: "32343777"
 
  자산을 식별하고 모니터링할 수 있는 도구 집합을 제공합니다.  
 
--   **하드웨어 인벤토리**: 엔터프라이즈 내 장치의 하드웨어에 대한 자세한 정보를 수집합니다. [System Center Configuration Manager의 하드웨어 인벤토리 소개](../../../core/clients/manage/inventory/introduction-to-hardware-inventory.md)를 참조하세요.  
+-   **하드웨어 인벤토리**: 기업 내 장치의 하드웨어에 대한 자세한 정보를 수집합니다. [System Center Configuration Manager의 하드웨어 인벤토리 소개](../../../core/clients/manage/inventory/introduction-to-hardware-inventory.md)를 참조하세요.  
 
 -   **소프트웨어 인벤토리**: 조직 내 클라이언트 컴퓨터에 저장된 파일에 대한 정보를 수집하고 보고합니다. [System Center Configuration Manager의 소프트웨어 인벤토리 소개](../../../core/clients/manage/inventory/introduction-to-software-inventory.md)를 참조하세요.  
 
 -   **Asset Intelligence**: 인벤토리 데이터를 수집하고 기업의 소프트웨어 라이선스 사용 현황을 모니터링하는 도구를 제공합니다. [System Center Configuration Manager의 Asset Intelligence 소개](../../../core/clients/manage/asset-intelligence/introduction-to-asset-intelligence.md)를 참조하세요.  
 
-**Microsoft Intune에서 모바일 장치 관리**  
+**Microsoft Intune에서 모바일 디바이스 관리**  
 
  인터넷에서 Microsoft Intune 서비스를 사용하여 Configuration Manager를 통해 iOS, Android(Samsung KNOX Standard 포함), Windows Phone 및 Windows 디바이스를 관리할 수 있습니다.
 
- Intune 서비스를 사용하더라도 Configuration Manager 콘솔을 통해 사용 가능한 서비스 연결 지점 사이트 시스템 역할을 사용하여 관리 작업이 완료됩니다. [System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 MDM(모바일 장치 관리)](../../../mdm/understand/hybrid-mobile-device-management.md)을 참조하세요.  
+ Intune 서비스를 사용하더라도 Configuration Manager 콘솔을 통해 사용 가능한 서비스 연결 지점 사이트 시스템 역할을 사용하여 관리 작업이 완료됩니다. [System Center Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 MDM(모바일 디바이스 관리)](../../../mdm/understand/hybrid-mobile-device-management.md)을 참조하세요.  
 
- **온-프레미스 모바일 장치 관리**  
+ **온-프레미스 모바일 디바이스 관리**  
 
- 디바이스 플랫폼에 기본 제공되는 온-프레미스 Configuration Manager 인프라 및 관리 기능을 사용하여(별도로 설치된 Configuration Manager 클라이언트를 사용하지 않고) PC 및 모바일 디바이스를 등록하고 관리합니다. 현재 Windows 10 Enterprise 및 Windows 10 Mobile 디바이스 관리를 지원합니다. [System Center Configuration Manager의 온-프레미스 인프라로 모바일 장치 관리](../../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)를 참조하세요.  
+ 디바이스 플랫폼에 기본 제공되는 온-프레미스 Configuration Manager 인프라 및 관리 기능을 사용하여(별도로 설치된 Configuration Manager 클라이언트를 사용하지 않고) PC 및 모바일 디바이스를 등록하고 관리합니다. 현재 Windows 10 Enterprise 및 Windows 10 Mobile 디바이스 관리를 지원합니다. [System Center Configuration Manager의 온-프레미스 인프라로 모바일 디바이스 관리](../../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)를 참조하세요.  
 
  **운영 체제 배포**  
 

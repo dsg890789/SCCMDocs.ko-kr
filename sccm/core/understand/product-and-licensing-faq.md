@@ -10,16 +10,17 @@ ms.assetid: ee8d611f-aa0c-4efd-b0ad-dbd14d0a0623
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 9e58e11bec9441f73bff021c8a6a24d150777cbe
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 57770c35b3a824aa285185e3031ed2fc9b9dd82d
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385544"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56135455"
 ---
 # <a name="frequently-asked-questions-for-configuration-manager-branches-and-licensing"></a>Configuration Manager 분기 및 라이선스에 대한 질문과 대답
 
- *적용 대상: System Center Configuration Manager(현재 분기), System Center Configuration Manager(장기 서비스 분기)*
+ *적용 대상: System Center Configuration Manager(Current Branch), System Center Configuration Manager(장기 서비스 분기)*
 
 ## <a name="summary"></a>요약
 이 FAQ에서는 Microsoft 볼륨 라이선스 프로그램을 통해 사용할 수 있는 System Center Configuration Manager 현재 분기 및 LTSB(장기 서비스 분기) 버전에 대한 일반적인 라이선스 관련 질문을 다룹니다. 이 문서는 정보 제공용입니다. System Center Configuration Manager 라이선스를 다루는 어떤 문서를 대체하지 않습니다. 자세한 내용은 [System Center 2016](https://www.microsoft.com/en-us/licensing/product-licensing/system-center-2016.aspx)<!-- this link doesn't work without some language code -->에 대한 제품 라이선스 및 [Product Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=53)(제품 사용 약관)를 참조하세요. 제품 용어에서는 볼륨 라이선스의 모든 Microsoft 제품에 대한 사용 조건을 설명합니다.
@@ -45,7 +46,7 @@ SA(Software Assurance) L&SA(라이선스 및 Software Assurance)는 System Cente
 
     - SA가 일부 Microsoft 제품에 대한 선택 사항이지만, System Center Configuration Manager 현재 분기를 사용하는 권한을 얻을 수 있는 유일한 방법은 SA *(또는 동등한 구독 권한)* 를 사용하는 것입니다. 자세한 내용은 [Software Assurance FAQ](https://www.microsoft.com/en-us/licensing/licensing-programs/FAQ-Software-Assurance.aspx)를 참조합니다.<!--this link doesn't work without some language code-->
 
-  - **Microsoft 라이선스 및 Software Assurance(L&SA)**: System Center Configuration Manager에 대한 새 라이선스를 구매하는 고객은 L&SA(라이선스 및 Software Assurance)를 획득해야 합니다.   
+  - **Microsoft L&SA(라이선스 및 Software Assurance)**: System Center Configuration Manager에 대한 새 라이선스를 구매하는 고객은 L&SA(라이선스 및 Software Assurance)를 획득해야 합니다.   
 
     - SA는 현재 분기를 사용할 수 있는 권한을 부여합니다.
 
@@ -78,9 +79,7 @@ System Center Endpoint Protection을 사용하는 경우 SA가 만료되면 제�
 아니요. System Center Configuration Manager를 사용하는 권한을 얻을 수 있는 유일한 방법은 SA를 사용하거나 동등한 구독을 통해 라이선스를 획득하는 것입니다. System Center Configuration Manager가 개발 및 테스트 용도(프로덕션용이 아닌)로 제공되는 개발자 프로그램(예: MSDN)이 있습니다.
 
 
-### 
-  <a name="bkmk_update-rights">
-  </a> 버전 1610과 같이 내 콘솔 내에 제공되는 System Center Configuration Manager의 업데이트가 표시됩니다. 내가 설치할 수 있는 권한이 있나요?   
+### <a name="bkmk_update-rights"></a> 버전 1610과 같이 내 콘솔 내에 제공되는 System Center Configuration Manager의 업데이트가 표시됩니다. 내가 설치할 수 있는 권한이 있나요?   
 활성 *SA*가 있으면 설치할 수 있습니다. 활성 SA가 없으면 현재 분기를 제거해야 하며 System Center Configuration Manager의 LTSB를 설치할 수 있습니다. LTSB에서 System Center Configuration Manager의 증분 버전에 대한 업데이트를 수신하지 않지만 지원 수명 주기를 기반으로 하는 보안 업데이트를 수신합니다.
 
 

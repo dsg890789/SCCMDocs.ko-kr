@@ -10,12 +10,13 @@ ms.assetid: 5cb41e2b-4c79-4da9-a432-ff869c0870f8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5a9865a591f6947447ebb088b5e5e25db1e9fa54
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 026c6e5646983f815572974d5aaa67746178c03b
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52458117"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156460"
 ---
 # <a name="support-center-quickstart-guide"></a>지원 센터 빠른 시작 가이드
 
@@ -47,7 +48,7 @@ ms.locfileid: "52458117"
 
 
 
-## <a name="step-2-view-the-data-bundle-using-support-center-viewer"></a>2단계: 지원 센터 뷰어를 사용하여 데이터 번들 보기
+## <a name="step-2-view-the-data-bundle-using-support-center-viewer"></a>2단계: Support Center Viewer를 사용하여 데이터 번들 보기
 
 1.  **Support Center Viewer**를 시작합니다. 이 작업은 지원 센터를 설치한 모든 컴퓨터에서 실행될 수 있습니다.  
 
@@ -81,7 +82,7 @@ ms.locfileid: "52458117"
 
   - **클라이언트 레지스트리**: 레지스트리에서 클라이언트 구성 정보를 수집합니다. 지원 센터는 Configuration Manager 레지스트리 정보만 수집합니다.  
 
-  - **클라이언트 WMI**: WMI의 클라이언트 구성 정보 지원 센터는 클라이언트 정책을 수집하지 않습니다.  
+  - **클라이언트 WMI**: WMI의 클라이언트 구성 정보. 지원 센터는 클라이언트 정책을 수집하지 않습니다.  
 
   - **문제 해결**: Active Directory, 관리 지점, 네트워킹, 정책 할당 및 등록과 관련된 일반적인 클라이언트 문제를 진단하는 데 도움이 되는 실시간 문제 해결 데이터  
 

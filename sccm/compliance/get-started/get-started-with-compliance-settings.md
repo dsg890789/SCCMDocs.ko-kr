@@ -10,12 +10,13 @@ ms.assetid: a2742d52-851e-4abc-b623-d12d91684c0b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: ec350bdb6b3b421d95bf13eafc562919bccc3c38
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f4e85b6886947fe0ac720f5840dcefd91a441d3e
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32335612"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56130948"
 ---
 # <a name="get-started-with-compliance-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 준수 설정 시작
 
@@ -30,9 +31,9 @@ Configuration Manager 준수 설정을 만들기 전에 먼저 핵심 개념에 
 
  구성 항목은 다음 두 가지 주요 범주로 나뉩니다.  
 
--   **Configuration Manager 클라이언트를 사용하여 관리되는 장치 설정** - 일반적으로 장치를 관리할 수 있도록 하는 Configuration Manager 클라이언트 소프트웨어가 설치된 장치입니다.  
+-   **Configuration Manager 클라이언트를 사용하여 관리되는 디바이스 설정** - 일반적으로 디바이스를 관리할 수 있도록 하는 Configuration Manager 클라이언트 소프트웨어가 설치된 디바이스입니다.  
 
--   **Configuration Manager 클라이언트 없이 관리되는 장치 설정** - 일반적으로 Microsoft Intune 또는 Configuration Manager 온-프레미스 장치 관리로 관리되는 장치입니다.  
+-   **Configuration Manager 클라이언트 없이 관리되는 디바이스 설정** - 일반적으로 Microsoft Intune 또는 Configuration Manager 온-프레미스 디바이스 관리로 관리되는 디바이스입니다.  
 
 
 
@@ -53,13 +54,13 @@ Configuration Manager 준수 설정을 만들기 전에 먼저 핵심 개념에 
 ## <a name="what-is-a-configuration-item"></a>구성 항목 정의  
  구성 항목은 특정 정보를 저장하는 컨테이너입니다. 구성하는 정보는 구성 항목 유형에 따라 달라집니다. 구성 항목은 다음 정보를 포함할 수 있습니다.
 
--   **검색 방법 정보**는 응용 프로그램 설정을 포함하는 Windows 구성 항목에만 적용됩니다. 애플리케이션이 설치되어 있는지 여부를 검색합니다. 이 검색은 애플리케이션에 대한 Windows 설치 관리자 파일 또는 사용자 지정 스크립트를 사용합니다.  
+-   **검색 방법 정보**는 애플리케이션 설정을 포함하는 Windows 구성 항목에만 적용됩니다. 애플리케이션이 설치되어 있는지 여부를 검색합니다. 이 검색은 애플리케이션에 대한 Windows 설치 관리자 파일 또는 사용자 지정 스크립트를 사용합니다.  
 
--   **설정**은 클라이언트 장치에서 준수를 평가하는 비즈니스 또는 기술 조건을 나타냅니다. 새 설정을 구성하거나 참조 컴퓨터에서 기존 설정을 찾습니다.  
+-   **설정**은 클라이언트 디바이스에서 준수를 평가하는 비즈니스 또는 기술 조건을 나타냅니다. 새 설정을 구성하거나 참조 컴퓨터에서 기존 설정을 찾습니다.  
 
 -   **준수 규칙**은 구성 항목 설정의 준수를 정의하는 조건을 지정합니다. 클라이언트가 준수에 대한 설정을 평가하려면 하나 이상의 준수 규칙이 있어야 합니다. 일부 설정은 비호환 값을 재구성합니다. 새 규칙을 만들거나 모든 구성 항목에서 기존 설정을 검색하고 규칙을 선택합니다.  
 
--   **지원되는 플랫폼**은 클라이언트가 구성 항목의 준수를 평가하도록 정의하는 장치 플랫폼입니다. 지원되는 플랫폼 목록에 없는 디바이스에 구성 항목을 배포하는 경우 준수를 평가하지 않습니다.  
+-   **지원되는 플랫폼**은 클라이언트가 구성 항목의 준수를 평가하도록 정의하는 디바이스 플랫폼입니다. 지원되는 플랫폼 목록에 없는 디바이스에 구성 항목을 배포하는 경우 준수를 평가하지 않습니다.  
 
 
 
@@ -109,8 +110,7 @@ Configuration Manager 준수 설정을 만들기 전에 먼저 핵심 개념에 
 
 
 ## <a name="microsoft-edge-browser-profiles"></a>Microsoft Edge 브라우저 프로필
-<!-- 1357310 -->
-1802 버전부터 Windows 10 클라이언트에서 [Microsoft Edge](https://technet.microsoft.com/microsoft-edge/bb265256) 웹 브라우저를 사용하는 고객은 준수 설정 정책을 만들어 여러 Microsoft Edge 설정을 구성합니다. 
+<!-- 1357310 --> 1802 버전부터 Windows 10 클라이언트에서 [Microsoft Edge](https://technet.microsoft.com/microsoft-edge/bb265256) 웹 브라우저를 사용하는 고객은 규정 준수 설정 정책을 만들어 여러 Microsoft Edge 설정을 구성합니다. 
 
 자세한 내용은 [Microsoft Edge 브라우저 프로필](/sccm/compliance/deploy-use/browser-profiles)을 참조하세요.
 

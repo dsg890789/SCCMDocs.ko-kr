@@ -10,12 +10,13 @@ ms.assetid: a0bd093d-67a5-4f74-bf79-dd604889f5ba
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b5f7ac3125b099a764604b3338a92f3f45b10afe
-ms.sourcegitcommit: 2cc635835709fb8d86cdb63ea34233b36c94d4d8
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5adc8809edc0a069269dfce71f302452a0e01b45
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52258981"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56124032"
 ---
 # <a name="learn-more-about-powershell-script-security"></a>PowerShell 스크립트 보안에 대해 자세히 알아보기
 
@@ -64,7 +65,7 @@ ms.locfileid: "52258981"
 - PowerShell 갤러리에서 PowerShell 모듈 ["주입 사냥꾼"](https://www.powershellgallery.com/packages/InjectionHunter/1.0.0)을 활용합니다.
     - 거짓 긍정일 수 있습니다. 따라서 항목이 의심스럽다는 플래그가 지정된 경우 실제 문제가 있는지 확인하려면 의도를 찾아봅니다. 
 - Microsoft Visual Studio에는 PowerShell 구문을 확인하여 지원할 수 있는 스크립트 분석기가 있습니다.
-- "DEF CON 25 - Lee Holmes - Get $pwnd: 전투가 격화된 Windows Server 공격"이라는 이 비디오에서는 보호할 수 있는 형식의 문제 개요를 제공합니다(특히 섹션 12:20에서 17:50).     <iframe width="560" height="315" src="https://www.youtube.com/embed/ahxMOAAani8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+- 이 비디오 제목: “DEF CON 25 - Lee Holmes - Get $pwnd: 전투가 격화된 Windows Server 공격”에서는 보호할 수 있는 형식의 문제 개요를 제공합니다(특히 섹션 12:20에서 17:50).     <iframe width="560" height="315" src="https://www.youtube.com/embed/ahxMOAAani8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## <a name="environment-recommendations"></a>환경 권장 사항
 PowerShell 관리자에 대한 일반 권장 사항입니다.

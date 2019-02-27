@@ -10,12 +10,13 @@ ms.assetid: 4b72922a-d11e-4aef-b309-19f5f0716f32
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5218d47ae8699ee0feb0cf59405833ec4cc49569
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1365c3951a829d92cbdb2f6a4a87c8496f9ada3c
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385834"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56136350"
 ---
 # <a name="dp-job-queue-manager"></a>DP 작업 큐 관리자
 
@@ -89,7 +90,7 @@ DP(배포 지점) 작업 큐 관리자는 [Configuration Manager 도구](/sccm/c
 
 - **소프트웨어**: 특정 배포 지점을 대상으로 하는 패키지의 이름  
 
-- **패키지 ID**: 특정 배포 지점을 대상으로 하는 패키지의 패키지 ID  
+- **패키지 ID**: 특정 배포 지점을 대상으로 하는 패키지 ID  
 
 - **크기**: 패키지 크기(KB)  
 

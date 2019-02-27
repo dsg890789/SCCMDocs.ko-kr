@@ -10,12 +10,13 @@ ms.assetid: 68fe0e7e-351e-4222-853a-877475adb589
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: ce3353d9cc139da53a655f50144c3816b1a4a355
-ms.sourcegitcommit: 8791bb9be477fe6a029e8a7a76e2ca310acd92e0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5ebe37bb97c4a1e231bfaf94f420f7f0471f30f6
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50411377"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56141962"
 ---
 # <a name="communications-between-endpoints-in-configuration-manager"></a>Configuration Manager의 엔드포인트 간 통신
 
@@ -82,8 +83,8 @@ IIS(인터넷 정보 서비스)를 사용하고 클라이언트의 통신을 지
 ### <a name="bkmk_client2mp"></a> 클라이언트에서 관리 지점으로의 통신
 
 클라이언트가 관리 지점과 통신할 때는 인증(전송)과 권한 부여(메시지)라는 두 단계를 거칩니다. 이 프로세스는 다음 요인에 따라 달라집니다. 
-- 사이트 구성: HTTP, HTTPS 또는 고급 HTTP
-- 관리 지점 구성: HTTPS 전용이거나 HTTP 또는 HTTPS 허용
+- 사이트 구성: HTTP, HTTPS 또는 향상된 HTTP
+- 관리 지점 구성: HTTPS만 또는 HTTP 또는 HTTPS 허용
 - 디바이스 중심 시나리오의 디바이스 ID
 - 사용자 중심 시나리오의 사용자 ID
 
@@ -224,7 +225,7 @@ Configuration Manager의 사이트 간 통신에서는 데이터베이스 복제
 
 -   사이트 또는 사이트 시스템 역할을 설치하려면 지정된 컴퓨터에 대한 로컬 관리자 권한이 있는 계정을 지정해야 합니다.  
 
-#### <a name="scenario-2-communication-in-a-site-that-spans-forests"></a>시나리오 2: 여러 포리스트에 걸쳐 있는 사이트 내 통신  
+#### <a name="scenario-2-communication-in-a-site-that-spans-forests"></a>시나리오 2: 여러 포리스트에 걸쳐 있는 사이트 내 통신:  
 이 시나리오에서는 양방향 포리스트 트러스트가 필요하지 않습니다.  
 
 기본 사이트는 원격 포리스트의 컴퓨터에 사이트 시스템 역할을 설치할 수 있도록 지원합니다.  

@@ -10,12 +10,13 @@ ms.assetid: 0ef5f3ce-b0e4-4775-b5c2-b245e45b4194
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: cbfa49dddb19d588a3fe16f042b50af590cf39e8
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6c7f54ccda217ebbae543b70aeead37f6c55cf0f
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39383731"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56125689"
 ---
 # <a name="prepare-site-system-roles-for-os-deployments-with-configuration-manager"></a>Configuration Manager를 사용하여 OS 배포를 위한 사이트 시스템 역할 준비
 

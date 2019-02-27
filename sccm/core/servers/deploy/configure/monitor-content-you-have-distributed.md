@@ -10,12 +10,13 @@ ms.assetid: 82e8a693-9adf-4ca3-8484-7e101c34c7c1
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 44ddf230d33759787636e88f6edcdd79744fd7b2
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f6bc81a1aa6d8464094195c33faeecfeaf2d46f0
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32338927"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56123933"
 ---
 # <a name="monitor-content-you-have-distributed-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 배포한 콘텐츠 모니터링
 

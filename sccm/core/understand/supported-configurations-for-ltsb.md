@@ -10,12 +10,13 @@ ms.assetid: f0f818d4-7f45-402f-8758-dc88bc024953
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2da1ff9f8a45ba33f6546dcab8df423d9064e650
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e185244bda88c317e0157618f066056a817a1a82
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32344639"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56141894"
 ---
 # <a name="supported-configurations-for-the-long-term-servicing-branch-of-system-center-configuration-manager"></a>System Center Configuration Manager의 장기 서비스 분기에 대해 지원되는 구성
 
@@ -47,8 +48,8 @@ LTSB에서는 다음 Windows 컴퓨터 운영 체제를 사이트 시스템으�
 - Windows Server 2016
 - Windows Server 2012 R2(x64): Standard, Datacenter
 - Windows Server 2012(x64): Standard, Datacenter
-- Windows Server 2008 R2 SP1(x64): Standard, Enterprise, Datacenter
-- Windows Server 2008 SP2(x86, x64): Standard, Enterprise, Datacenter *(참고 1 참조)*
+- Windows Server 2008 R2(SP1 포함, x64): Standard, Enterprise, Datacenter
+- Windows Server 2008(SP2 포함, x86, x64): Standard, Enterprise, Datacenter *(참고 1 참조)*
 - Windows 10 Enterprise 2015 LTSB(x86, x64)
 - Windows 10 Enterprise 2016 LTSB(x86, x64)
 - Windows 8.1(x86, x64): Professional, Enterprise
@@ -70,9 +71,9 @@ LTSB를 사용하여 Configuration Manager에 포함된 Configuration Manager �
 - Windows Server 2012(x64): Standard, Datacenter(참고 1)
 - Windows Storage Server 2012 R2(x64)
 - Windows Storage Server 2012(x64)
-- Windows Server 2008 R2 SP1(x64): Standard, Enterprise, Datacenter(참고 1)
+- Windows Server 2008 R2(SP1 포함, x64): Standard, Enterprise, Datacenter(참고 1)
 - Windows Storage Server 2008 R2(x86, x64): Workgroup, Standard, Enterprise
-- Windows Server 2008 SP2(x86, x64): Standard, Enterprise, Datacenter(참고 1)
+- Windows Server 2008(SP2 포함, x86, x64): Standard, Enterprise, Datacenter(참고 1)
 - Windows 10 Enterprise 2015 LTSB(x86, x64)
 - Windows 10 Enterprise 2016 LTSB(x86, x64)
 - Windows 8.1(x86, x64): Professional, Enterprise
@@ -83,7 +84,7 @@ LTSB를 사용하여 Configuration Manager에 포함된 Configuration Manager �
 - Windows Server 2008 SP2의 Server Core 설치(x86, x64)
 
 **(참고 1)** Datacenter 릴리스는 Configuration Manager용으로 지원되지만 인증되지는 않았습니다.  
-**(참고 2)** 클라이언트 강제 설치를 지원하려면 이 운영 체제 버전을 실행하는 컴퓨터에서 파일 및 저장소 서비스 서버 역할용으로 파일 서버 역할 서비스를 실행해야 합니다. Server Core 컴퓨터에 Windows 기능을 설치하는 방법에 대한 자세한 내용은 Windows Server 2012 TechNet 라이브러리에서 [Server Core 서버에 서버 역할 및 기능 설치](https://technet.microsoft.com/library/jj574158(v=ws.11).aspx)를 참조하세요.
+**(참고 2)** 클라이언트 강제 설치를 지원하려면 이 운영 체제 버전을 실행하는 컴퓨터에서 파일 및 스토리지 서비스 서버 역할용으로 파일 서버 역할 서비스를 실행해야 합니다. Server Core 컴퓨터에 Windows 기능을 설치하는 방법에 대한 자세한 내용은 Windows Server 2012 TechNet 라이브러리에서 [Server Core 서버에 서버 역할 및 기능 설치](https://technet.microsoft.com/library/jj574158(v=ws.11).aspx)를 참조하세요.
 
 ### <a name="windows-embedded"></a>Windows Embedded
 디바이스에 클라이언트 소프트웨어를 설치하면 LTSB를 사용하여 다음 Windows Embedded 디바이스를 관리할 수 있습니다.  자세한 내용은 [System Center Configuration Manager에서 Windows Embedded 디바이스에 클라이언트 배포 계획](/sccm/core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices)을 참조하세요.
@@ -100,7 +101,7 @@ LTSB를 사용하여 Configuration Manager에 포함된 Configuration Manager �
 
     -   통합 쓰기 필터(UWF)  
 
--   Windows Embedded 디바이스에는 응용 프로그램 카탈로그가 지원되지 않습니다.  
+-   Windows Embedded 장치에는 애플리케이션 카탈로그가 지원되지 않습니다.  
 
 -   Windows XP를 기반으로 하는 Windows Embedded 디바이스에서는 검색된 맬웨어를 모니터링할 수 있으므로 임베디드 디바이스에 Microsoft Windows WMI 스크립팅 패키지를 설치해야 합니다. 이 패키지를 설치하려면 Windows Embedded Target Designer를 사용합니다. 이 경우 *WBEMDISP.DLL* 및 *WBEMDISP.TLB* 파일이 있고 포함된 디바이스의 %windir%\System32\WBEM 폴더에 등록되어 있어야 검색된 맬웨어가 보고됩니다.  
 
@@ -119,7 +120,7 @@ LTSB를 사용하여 Configuration Manager에 포함된 Configuration Manager �
 
 **요구 사항 및 제한 사항:**  
 
--   모바일 디바이스 클라이언트를 설치하려면 0.78MB의 저장소 공간이 필요합니다. 모바일 디바이스에서 로그인하려면 최대 256KB의 추가 저장소 공간이 필요할 수 있습니다.    
+-   모바일 장치 클라이언트를 설치하려면 0.78MB의 스토리지 공간이 필요합니다. 모바일 장치에서 로그인하려면 최대 256KB의 추가 스토리지 공간이 필요할 수 있습니다.    
 
 -   이러한 모바일 디바이스의 기능은 플랫폼 및 클라이언트 유형별로 달라집니다. Configuration Manager에서 모바일 디바이스 레거시 클라이언트에 대해 지원하는 관리 기능 종류에 대한 자세한 내용은 [System Center Configuration Manager용 디바이스 관리 솔루션 선택](/sccm/core/plan-design/choose-a-device-management-solution)을 참조하세요.  
 
@@ -289,8 +290,8 @@ LTSB는 다음 운영 체제에서 Configuration Manager 콘솔을 실행하도�
 - Windows Server 2016
 - Windows Server 2012 R2(x64): Standard, Datacenter
 - Windows Server 2012(x64): Standard, Datacenter
-- Windows Server 2008 R2 SP1(x64): Standard, Enterprise, Datacenter
-- Windows Server 2008 SP2(x86, x64): Standard, Enterprise, Datacenter
+- Windows Server 2008 R2(SP1 포함, x64): Standard, Enterprise, Datacenter
+- Windows Server 2008(SP2 포함, x86, x64): Standard, Enterprise, Datacenter
 - Windows 10 Enterprise 2016 LTSB(x86, x64)
 - Windows 10 Enterprise 2015 LTSB(x86, x64)
 - Windows 8.1(x86, x64): Professional, Enterprise

@@ -9,12 +9,13 @@ ms.assetid: 57413dd3-b2f8-4a5f-b27f-8464d357caff
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f5a0601af46d4d5f835822d3e5c551096512ceb3
-ms.sourcegitcommit: 7eebd112a9862bf98359c1914bb0c86affc5dbc0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 554e67e171fe5b800d231d257105531dcd633baf
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590879"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56131577"
 ---
 # <a name="configure-role-based-administration-for-configuration-manager"></a>Configuration Manager에 대한 역할 기반 관리 구성   
 
@@ -154,9 +155,9 @@ Configuration Manager의 역할 기반 관리에서는 각 관리자의 관리 �
 
 6.  새 사용자의 보안 개체 동작을 정의하려면 다음 두 옵션 중 하나를 선택합니다.  
 
-    -   **할당된 보안 역할과 관련된 개체의 모든 인스턴스**: 이 옵션은 **모든** 보안 범위와 **모든 시스템** 및 **모든 사용자 및 사용자 그룹** 컬렉션에 관리자를 연결합니다. 사용자에게 할당된 보안 역할은 개체에 대한 액세스 권한을 정의합니다. 이 관리자가 만드는 새 개체는 **기본값** 보안 범위에 할당됩니다.  
+    -   **할당된 보안 역할과 관련된 개체의 모든 인스턴스**: 이 옵션은 관리자를 **모든** 보안 그룹과, **모든 시스템** 및 **모든 사용자 및 사용자 그룹** 컬렉션에 연결합니다. 사용자에게 할당된 보안 역할은 개체에 대한 액세스 권한을 정의합니다. 이 관리자가 만드는 새 개체는 **기본값** 보안 범위에 할당됩니다.  
 
-    -   **지정한 보안 범위 및 컬렉션에 할당된 개체 인스턴스만**: 기본적으로 이 옵션은 **기본값** 보안 범위와 **모든 시스템** 및 **모든 사용자 및 사용자 그룹** 컬렉션에 관리자를 연결합니다. 그러나 실제 보안 범위와 컬렉션은 새 관리자를 만드는 데 사용된 계정에 연결된 보안 범위와 컬렉션으로 제한됩니다. 이 옵션을 선택하면 보안 범위와 컬렉션을 추가하거나 제거하여 관리자의 관리 범위를 사용자 지정할 수 있습니다.  
+    -   **지정한 보안 범위 및 컬렉션에 할당된 개체 인스턴스만**: 기본적으로 이 옵션은 관리자를 **기본값** 보안 범위와 **모든 시스템** 및 **모든 사용자 및 사용자 그룹** 컬렉션에 연결합니다. 그러나 실제 보안 범위와 컬렉션은 새 관리자를 만드는 데 사용된 계정에 연결된 보안 범위와 컬렉션으로 제한됩니다. 이 옵션을 선택하면 보안 범위와 컬렉션을 추가하거나 제거하여 관리자의 관리 범위를 사용자 지정할 수 있습니다.  
 
     > [!IMPORTANT]  
     >  위의 두 옵션은 할당된 각 보안 범위와 컬렉션을 관리자에게 할당된 각 보안 역할에 연결합니다. 세 번째 옵션인 **특정 보안 범위 및 컬렉션과 할당된 보안 역할 연결**은 개별 보안 역할을 특정 보안 범위와 컬렉션에 연결하는 데 사용할 수 있습니다. 이 세 번째 옵션은 새 관리자를 만든 후 관리자를 수정할 때 사용할 수 있습니다.  
@@ -172,11 +173,11 @@ Configuration Manager의 역할 기반 관리에서는 각 관리자의 관리 �
 
  관리자를 수정할 때 할당된 보안 역할에 보안 개체를 연결하는 동작을 변경할 수 있습니다. 선택할 수 있는 동작은 다음 세 가지입니다.  
 
--   **할당된 보안 역할과 관련된 개체의 모든 인스턴스**: 이 옵션은 **모든** 범위와 **모든 시스템** 및 **모든 사용자 및 사용자 그룹** 컬렉션에 관리자를 연결합니다. 사용자에게 할당된 보안 역할은 개체에 대한 액세스 권한을 정의합니다.  
+-   **할당된 보안 역할과 관련된 개체의 모든 인스턴스**: 이 옵션은 관리자를 **모든** 범위와, **모든 시스템** 및 **모든 사용자 및 사용자 그룹** 컬렉션에 연결합니다. 사용자에게 할당된 보안 역할은 개체에 대한 액세스 권한을 정의합니다.  
 
--   **지정한 보안 범위 및 컬렉션에 할당된 개체 인스턴스만**: 이 옵션은 관리자를 구성하는 데 사용하는 계정에 연결된 것과 동일한 보안 범위와 컬렉션에 관리자를 연결합니다. 이 옵션을 선택하면 보안 역할과 컬렉션을 추가하거나 제거하여 관리자의 관리 범위를 사용자 지정할 수 있습니다.  
+-   **지정한 보안 범위 및 컬렉션에 할당된 개체 인스턴스만**: 이 옵션은 새 관리자를 구성하는 데 사용하는 계정에 연결된 보안 범위와 컬렉션에 관리자를 연결합니다. 이 옵션을 선택하면 보안 역할과 컬렉션을 추가하거나 제거하여 관리자의 관리 범위를 사용자 지정할 수 있습니다.  
 
--   **특정 보안 범위 및 컬렉션과 할당된 보안 역할 연결**: 이 옵션을 사용하면 개별 보안 역할과 사용자에 대한 특정 보안 범위 및 컬렉션 간에 특정 연결을 만들 수 있습니다.  
+-   **특정 보안 범위 및 컬렉션과 할당된 보안 역할 연결**: 이 옵션을 사용하면 개별 보안 역할과 사용자의 특정 보안 범위 및 컬렉션 사이에 특정 연결을 만들 수 있습니다.  
 
     > [!NOTE]  
     >  이 옵션은 관리자의 속성을 수정할 때만 사용할 수 있습니다.  
@@ -203,7 +204,7 @@ Configuration Manager의 역할 기반 관리에서는 각 관리자의 관리 �
 
 보안 개체 동작이 **할당된 보안 역할과 관련된 개체의 모든 인스턴스**로 설정된 관리자를 수정하려면 다음 절차를 수행하세요.  
 
-#### <a name="for-option-all-instances-of-the-objects-that-are-related-to-the-assigned-security-roles"></a>사용한 옵션: 할당된 보안 역할과 관련된 개체의 모든 인스턴스  
+#### <a name="for-option-all-instances-of-the-objects-that-are-related-to-the-assigned-security-roles"></a>옵션: 할당된 보안 역할과 관련된 개체의 모든 인스턴스  
 
 1.  Configuration Manager 콘솔에서 **관리**를 선택합니다.  
 
@@ -230,7 +231,7 @@ Configuration Manager의 역할 기반 관리에서는 각 관리자의 관리 �
 
 보안 개체 동작이 **지정한 보안 범위 및 컬렉션에 할당된 개체 인스턴스만**으로 설정된 관리자를 수정하려면 다음 절차를 수행하세요.  
 
-#### <a name="for-option-only-the-instances-of-objects-that-are-assigned-to-the-specified-security-scopes-and-collections"></a>사용한 옵션: 지정한 보안 범위 및 컬렉션에 할당된 개체 인스턴스만  
+#### <a name="for-option-only-the-instances-of-objects-that-are-assigned-to-the-specified-security-scopes-and-collections"></a>옵션: 지정한 보안 범위 및 컬렉션에 할당된 개체 인스턴스만  
 
 1.  Configuration Manager 콘솔에서 **관리**를 선택합니다.  
 
@@ -258,7 +259,7 @@ Configuration Manager의 역할 기반 관리에서는 각 관리자의 관리 �
 
 보안 개체 동작이 **특정 보안 범위 및 컬렉션과 할당된 보안 역할 연결**로 설정된 관리자를 수정하려면 다음 절차를 수행하세요.  
 
-#### <a name="for-option-associate-assigned-security-roles-with-specific-security-scopes-and-collections"></a>사용한 옵션: 특정 보안 범위 및 컬렉션과 할당된 보안 역할 연결  
+#### <a name="for-option-associate-assigned-security-roles-with-specific-security-scopes-and-collections"></a>옵션: 특정 보안 범위 및 컬렉션과 할당된 보안 역할 연결  
 
 1.  Configuration Manager 콘솔에서 **관리**를 선택합니다.  
 

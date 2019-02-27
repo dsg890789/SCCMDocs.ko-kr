@@ -1,7 +1,7 @@
 ---
 title: 애플리케이션 관리 계획
 titleSuffix: Configuration Manager
-description: Configuration Manager에서 애플리케이션 배포에 필요한 종속성을 구현하고 구성합니다.
+description: Configuration Manager에서 응용 프로그램 배포에 필요한 종속성을 구현하고 구성합니다.
 ms.date: 08/31/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-app
@@ -10,12 +10,13 @@ ms.assetid: 2be84a1d-ebb9-47ae-8982-c66d5b92a52a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: df936f3ab5567840560497edd60a32f3bbb9c74d
-ms.sourcegitcommit: 0d7efd9e064f9d6a9efcfa6a36fd55d4bee20059
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 62d750a6ff711afc06ddbcec9b9ad98ecfab758e
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43893604"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56124158"
 ---
 # <a name="plan-for-and-configure-application-management-in-configuration-manager"></a>Configuration Manager에서 응용 프로그램 관리 계획 및 구성
 
@@ -41,9 +42,9 @@ ms.locfileid: "43893604"
 
 ### <a name="certificates-on-code-signed-applications-for-mobile-devices"></a>모바일 디바이스에 대한 코드 서명 응용 프로그램의 인증서
 
-응용 프로그램을 모바일 디바이스에 배포하기 위해 코드 서명할 경우 버전 3 템플릿(**Windows Server 2008, Enterprise Edition**)을 사용하여 생성된 인증서는 사용하지 마세요. 이 인증서 템플릿을 사용하면 모바일 디바이스용 Configuration Manager 응용 프로그램과 호환되지 않는 인증서가 만들어집니다.
+애플리케이션을 모바일 장치에 배포하기 위해 코드 서명할 경우 버전 3 템플릿(**Windows Server 2008, Enterprise Edition**)을 사용하여 생성된 인증서는 사용하지 마세요. 이 인증서 템플릿을 사용하면 모바일 장치용 Configuration Manager 애플리케이션과 호환되지 않는 인증서가 만들어집니다.
 
-모바일 디바이스 응용 프로그램에 대해 Active Directory 인증서 서비스를 사용하여 코드 서명할 경우 버전 3 인증서 템플릿은 사용하지 마세요.
+모바일 장치 애플리케이션에 대해 Active Directory 인증서 서비스를 사용하여 코드 서명할 경우 버전 3 인증서 템플릿은 사용하지 마세요.
 
 
 ### <a name="audit-sign-in-events-for-user-device-affinity"></a>사용자 디바이스 선호도에 대한 감사 로그인 이벤트  
@@ -68,19 +69,19 @@ ms.locfileid: "43893604"
 클라이언트는 관리 지점에 연결하여 클라이언트 정책을 다운로드하고, 콘텐츠를 찾고, 애플리케이션 카탈로그에 연결합니다. 클라이언트는 관리 지점에 액세스할 수 없는 경우 애플리케이션 카탈로그를 사용할 수 없습니다.
 
 > [!Note]  
-> 버전 1806부터 소프트웨어 센터에 사용자가 사용할 수 있는 애플리케이션을 표시하는 데 더 이상 애플리케이션 카탈로그 역할이 필요하지 않습니다. 자세한 내용은 [소프트웨어 센터 구성](#bkmk_userex)을 참조하세요.<!--1358309-->  
+> 버전 1806부터 소프트웨어 센터에 사용자가 사용할 수 있는 응용 프로그램을 표시하는 데 더 이상 응용 프로그램 카탈로그 역할이 필요하지 않습니다. 자세한 내용은 [소프트웨어 센터 구성](#bkmk_userex)을 참조하세요.<!--1358309-->  
   
 
 ### <a name="distribution-point"></a>배포 지점
 
-계층에 배포 지점이 하나 이상 있어야만 클라이언트에 애플리케이션을 배포할 수 있습니다. 기본적으로 사이트 서버에는 표준 설치 중 활성화된 배포 지점 사이트 역할이 있습니다. 배포 지점의 수와 위치는 각 환경의 특정 요구 사항에 따라 달라집니다. 
+계층에 배포 지점이 하나 이상 있어야만 클라이언트에 응용 프로그램을 배포할 수 있습니다. 기본적으로 사이트 서버에는 표준 설치 중 활성화된 배포 지점 사이트 역할이 있습니다. 배포 지점의 수와 위치는 각 환경의 특정 요구 사항에 따라 달라집니다. 
 
 배포 지점을 설치하고 콘텐츠를 관리하는 방법에 대한 자세한 내용은 [콘텐츠 및 콘텐츠 인프라 관리](/sccm/core/servers/deploy/configure/manage-content-and-content-infrastructure)를 참조하세요.  
 
 
 ### <a name="reporting-services-point"></a>보고 서비스 지점
 
-애플리케이션 관리를 위해 Configuration Manager에서 보고서를 사용하려면 먼저 보고 서비스 지점을 설치하고 구성해야 합니다.
+응용 프로그램 관리를 위해 Configuration Manager에서 보고서를 사용하려면 먼저 보고 서비스 지점을 설치하고 구성해야 합니다.
 
 자세한 내용은 [Configuration Manager의 보고 기능](/sccm/core/servers/manage/reporting)을 참조하세요.  
 
@@ -105,7 +106,7 @@ ms.locfileid: "43893604"
 
 - **응용 프로그램 배포 관리자** 보안 역할에는 응용 프로그램을 배포하는 데 필요한 권한이 포함되어 있습니다.  
 
-- **응용 프로그램 관리자** 보안 역할에는 **응용 프로그램 작성자** 및 **응용 프로그램 배포 관리자** 보안 역할의 모든 권한이 포함되어 있습니다.  
+- **애플리케이션 관리자** 보안 역할에는 **애플리케이션 작성자** 및 **애플리케이션 배포 관리자** 보안 역할의 모든 권한이 포함되어 있습니다.  
 
 자세한 내용은 [역할 기반 관리 구성](/sccm/core/servers/deploy/configure/configure-role-based-administration)을 참조하세요.  
 
@@ -114,7 +115,7 @@ ms.locfileid: "43893604"
 
 Configuration Manager에서 가상 응용 프로그램을 만들려면 디바이스에 App-V 4.6 SP1 이상이 설치되어 있어야 합니다.
 
-또한 가상 애플리케이션을 배포하려면 [Microsoft 지원 문서 2645225](https://support.microsoft.com/help/2645225)에 설명된 핫픽스로 App-V 클라이언트를 업데이트해야 합니다.  
+또한 가상 응용 프로그램을 배포하려면 [Microsoft 지원 문서 2645225](https://support.microsoft.com/help/2645225)에 설명된 핫픽스로 App-V 클라이언트를 업데이트해야 합니다.  
 
 
 ### <a name="discovered-user-accounts-for-application-catalog"></a>애플리케이션 카탈로그에 대해 검색된 사용자 계정
@@ -124,7 +125,7 @@ Configuration Manager에서 가상 응용 프로그램을 만들려면 디바이
 
 ### <a name="application-catalog-web-service-point"></a>애플리케이션 카탈로그 웹 서비스 지점
 
-애플리케이션 카탈로그 웹 서비스 지점은 소프트웨어 라이브러리의 사용 가능한 소프트웨어에 대한 정보를 사용자가 액세스하는 애플리케이션 카탈로그 웹 사이트에 제공하는 사이트 시스템 역할입니다.
+응용 프로그램 카탈로그 웹 서비스 지점은 소프트웨어 라이브러리의 사용 가능한 소프트웨어에 대한 정보를 사용자가 액세스하는 응용 프로그램 카탈로그 웹 사이트에 제공하는 사이트 시스템 역할입니다.
 
 이 사이트 시스템 역할을 구성하는 방법에 대한 자세한 내용은 [소프트웨어 센터 구성](#bkmk_userex)을 참조하세요.  
 
@@ -156,7 +157,7 @@ Configuration Manager에서 가상 응용 프로그램을 만들려면 디바이
 
 - **컴퓨터 에이전트** 그룹에서 클라이언트 설정인 **새 소프트웨어 센터 사용**이 기본적으로 활성화됩니다. 이전 버전의 소프트웨어 센터는 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
 
-- Azure Active Directory(Azure AD) 조인 디바이스에서 사용자가 사용할 수 있는 응용 프로그램을 찾아 설치할 수 있습니다. 자세한 내용은 [Azure AD 가입 디바이스에 사용자가 사용할 수 있는 응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications#deploy-user-available-applications-on-azure-ad-joined-devices)를 참조하세요.  
+- Azure Active Directory(Azure AD) 조인 디바이스에서 사용자가 사용할 수 있는 응용 프로그램을 찾아 설치할 수 있습니다. 자세한 내용은 [Azure AD 가입 장치에 사용자가 사용할 수 있는 애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications#deploy-user-available-applications-on-azure-ad-joined-devices)를 참조하세요.  
 
 #### <a name="starting-in-version-1806"></a>버전 1806부터 가능
 
@@ -165,17 +166,17 @@ Configuration Manager에서 가상 응용 프로그램을 만들려면 디바이
 - 소프트웨어 센터에 사용자가 사용할 수 있는 애플리케이션을 표시하는 데 더 이상 애플리케이션 카탈로그 역할이 필요하지 않습니다. 이 변경은 사용자에게 애플리케이션을 전달하기 위해 필요한 서버 인프라를 줄일 수 있습니다. 소프트웨어 센터는 [경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups#management-points)에 할당하여 대규모 환경의 크기 조정을 더 잘하도록 도움을 주는 이 정보를 얻으려면 관리 지점에 의존합니다.<!--1358309-->  
 
     > [!Note]  
-    > 현재 애플리케이션 카탈로그를 사용 중인 경우, Configuration Manager를 버전 1806으로 업데이트하면 계속 작동합니다. 응용 프로그램 카탈로그 웹 사이트 지점 및 웹 서비스 지점 역할은 더 이상 *필요하지 않지만* *지원은 계속*됩니다. 애플리케이션 카탈로그 *웹 사이트 지점*에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요. 
+    > 현재 애플리케이션 카탈로그를 사용 중인 경우, Configuration Manager를 버전 1806으로 업데이트하면 계속 작동합니다. 애플리케이션 카탈로그 웹 사이트 지점 및 웹 서비스 지점 역할은 더 이상 *필요하지 않지만**지원은 계속*됩니다. 응용 프로그램 카탈로그 *웹 사이트 지점*에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요. 
     > 
-    > 이후에 인프라에서 애플리케이션 카탈로그 역할을 제거할 계획을 시작합니다. 관리 지점을 사용할 수 있도록 소프트웨어 센터 개선 사항을 활용하고 Configuration Manager 환경을 간소화합니다.  
+    > 이후에 인프라에서 응용 프로그램 카탈로그 역할을 제거할 계획을 시작합니다. 관리 지점을 사용할 수 있도록 소프트웨어 센터 개선 사항을 활용하고 Configuration Manager 환경을 간소화합니다.  
 
 다음 표를 활용하여 Configuration Manager의 특정 버전에 따른 소프트웨어 센터 요구 사항을 파악합니다.
 
 | 디바이스 유형 | 사이트 버전 | 인프라 | 
 |-----------------|--------------|----------------|
 | Azure AD 조인 디바이스</br>(또는 “클라우드 도메인 조인”) | 1802 또는 1806 | 모든 앱 배치에 대한 관리 지점 | 
-| 인터넷의 [하이브리드 Azure AD 조인](https://docs.microsoft.com/azure/active-directory/device-management-hybrid-azuread-joined-devices-setup) 장치 | 1802 또는 1806 | 모든 앱 배치에 대한 클라우드 관리 게이트웨이 및 관리 지점 |
-| 온-프레미스 Active Directory 도메인 조인 디바이스 | 1802 | 소프트웨어 센터를 통해 사용자가 이용할 수 있는 앱에 필요한 애플리케이션 카탈로그 |
+| 인터넷의 [하이브리드 Azure AD 조인](https://docs.microsoft.com/azure/active-directory/device-management-hybrid-azuread-joined-devices-setup) 디바이스 | 1802 또는 1806 | 모든 앱 배치에 대한 클라우드 관리 게이트웨이 및 관리 지점 |
+| 온-프레미스 Active Directory 도메인 조인 디바이스 | 1802 | 소프트웨어 센터를 통해 사용자가 이용할 수 있는 앱에 필요한 응용 프로그램 카탈로그 |
 | 온-프레미스 Active Directory 도메인 조인 디바이스 | 1806 | 모든 앱 배치에 대한 관리 지점 |
 
 
@@ -196,13 +197,13 @@ Configuration Manager는 다음과 같은 우선 순위에 따라 소프트웨�
 
     2. **컴퓨터 에이전트** 그룹에 있는**조직 이름** 클라이언트 설정. 자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#computer-agent)를 참조하세요.  
 
-- 애플리케이션 카탈로그를 설치한 경우:  
+- 응용 프로그램 카탈로그를 설치한 경우:  
 
     1. **소프트웨어 센터** 클라이언트 설정. 자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#software-center)를 참조하세요.  
 
     2. Microsoft Intune 구독을 Configuration Manager에 연결한 경우 소프트웨어 센터에서 Intune 구독 속성에 지정한 *조직 이름*, *색* 및 *회사 로고*를 표시합니다. 자세한 내용은 [Configuring the Microsoft Intune subscription](/sccm/mdm/deploy-use/configure-intune-subscription)을 참조하십시오.  
 
-    3. 애플리케이션 카탈로그 웹 사이트 지점 속성에 지정한 *조직 이름* 및 *색*입니다. 자세한 내용은 [애플리케이션 카탈로그 웹 사이트 지점에 대한 옵션 구성](/sccm/core/servers/deploy/configure/configuration-options-for-site-system-roles#BKMK_ApplicationCatalog_Website)을 참조하세요.  
+    3. 응용 프로그램 카탈로그 웹 사이트 지점 속성에 지정한 *조직 이름* 및 *색*입니다. 자세한 내용은 [애플리케이션 카탈로그 웹 사이트 지점에 대한 옵션 구성](/sccm/core/servers/deploy/configure/configuration-options-for-site-system-roles#BKMK_ApplicationCatalog_Website)을 참조하세요.  
 
     4. **컴퓨터 에이전트** 그룹에 있는**조직 이름** 클라이언트 설정. 자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#computer-agent)를 참조하세요.  
 
@@ -218,9 +219,9 @@ Configuration Manager는 다음과 같은 우선 순위에 따라 소프트웨�
 ## <a name="bkmk_appcat"> </a> 응용 프로그램 카탈로그 설치 및 구성  
 
 > [!Note]  
-> 버전 1806부터 응용 프로그램 카탈로그 웹 사이트 지점 및 웹 서비스 지점은 더 이상 *필요하지 않지만* *지원은 계속*됩니다. 자세한 내용은 [소프트웨어 센터 구성](#bkmk_userex)을 참조하세요.  
+> 버전 1806부터 애플리케이션 카탈로그 웹 사이트 지점 및 웹 서비스 지점은 더 이상 *필요하지 않지만**지원은 계속*됩니다. 자세한 내용은 [소프트웨어 센터 구성](#bkmk_userex)을 참조하세요.  
 > 
-> 애플리케이션 카탈로그 *웹 사이트 지점*에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
+> 응용 프로그램 카탈로그 *웹 사이트 지점*에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
 
 > [!IMPORTANT]  
 >  이러한 단계를 수행하기 전에 모든 종속성이 제 위치에 있는지 확인하세요. 자세한 내용은 이 문서에서 다음 섹션을 참조하세요.
@@ -258,15 +259,15 @@ HTTPS 연결을 사용하는 경우 애플리케이션 카탈로그 웹 사이�
 > 기본 사이트에 애플리케이션 카탈로그를 설치합니다. 보조 사이트 또는 중앙 관리 사이트에 설치할 수 없습니다.  
 
 새 사이트 시스템 서버 또는 사이트의 기존 서버에 애플리케이션 카탈로그를 설치합니다. 일반 프로시저에 대한 자세한 내용은 [사이트 시스템 역할 설치](/sccm/core/servers/deploy/configure/install-site-system-roles)를 참조하세요. 마법사에서 사이트 시스템 역할을 추가하거나 사이트 시스템 서버를 만들려면 목록에서 다음 역할을 선택합니다.  
-- **응용 프로그램 카탈로그 웹 서비스 지점**  
-- **응용 프로그램 카탈로그 웹 사이트 지점**  
+- **애플리케이션 카탈로그 웹 서비스 지점**  
+- **애플리케이션 카탈로그 웹 사이트 지점**  
 
 > [!TIP]  
 >  클라이언트 컴퓨터에서 인터넷을 통해 애플리케이션 카탈로그를 사용하도록 하려면 인터넷 FQDN(정규화된 도메인 이름)을 지정합니다.  
 
 #### <a name="verify-the-installation-of-these-site-system-roles"></a>이러한 사이트 시스템 역할 설치를 확인하세요.  
 
-- 상태 메시지: **SMS_PORTALWEB_CONTROL_MANAGER** 및 **SMS_AWEBSVC_CONTROL_MANAGER**구성 요소를 사용합니다.  
+- 상태 메시지: **SMS_PORTALWEB_CONTROL_MANAGER** 및 **SMS_AWEBSVC_CONTROL_MANAGER** 구성 요소를 사용합니다.  
 
     예를 들어 **SMS_PORTALWEB_CONTROL_MANAGER**의 상태 ID **1015**는 사이트 구성 요소 관리자가 애플리케이션 카탈로그 웹 사이트 지점을 설치했음을 확인합니다.  
 
@@ -291,17 +292,17 @@ HTTPS 연결을 사용하는 경우 애플리케이션 카탈로그 웹 사이�
 구성 관리자 클라이언트는 다음에 클라이언트 정책을 다운로드할 때 이러한 설정으로 디바이스를 구성합니다. 단일 클라이언트에 대한 정책 검색을 트리거하려면 [클라이언트를 관리하는 방법](/sccm/core/clients/manage/manage-clients)을 참조하세요.
 
 
-### <a name="step-5-verify-that-the-application-catalog-is-operational"></a>5단계: 애플리케이션 카탈로그가 작동하는지 확인
+### <a name="step-5-verify-that-the-application-catalog-is-operational"></a>5단계: 애플리케이션 카탈로그가 작동하는지 확인합니다.
 
 애플리케이션 카탈로그가 작동하는지 확인하려면 다음 절차를 수행하세요. 
 
 > [!NOTE]  
->  애플리케이션 카탈로그 사용자 환경에는 Microsoft Silverlight가 필요합니다. 브라우저에서 직접 애플리케이션 카탈로그를 사용하는 경우 먼저 컴퓨터에 Microsoft Silverlight가 설치되어 있는지 확인하세요.  
+>  응용 프로그램 카탈로그 사용자 환경에는 Microsoft Silverlight가 필요합니다. 브라우저에서 직접 응용 프로그램 카탈로그를 사용하는 경우 먼저 컴퓨터에 Microsoft Silverlight가 설치되어 있는지 확인하세요.  
 
 > [!TIP]  
->  설치 후에 애플리케이션 카탈로그가 잘못된 방식으로 작동하는 원인 중 가장 일반적인 원인은 필수 구성 요소가 누락되었기 때문입니다. 애플리케이션 카탈로그 역할의 사이트 시스템 역할 필수 구성 요소를 확인합니다. 자세한 내용은 [사이트 및 사이트 시스템 필수 조건](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)을 참조하세요.  
+>  설치 후에 애플리케이션 카탈로그가 잘못된 방식으로 작동하는 원인 중 가장 일반적인 원인은 필수 구성 요소가 누락되었기 때문입니다. 응용 프로그램 카탈로그 역할의 사이트 시스템 역할 필수 구성 요소를 확인합니다. 자세한 내용은 [사이트 및 사이트 시스템 필수 조건](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)을 참조하세요.  
 
-브라우저에서 애플리케이션 카탈로그 웹 사이트의 주소를 입력합니다. 해당 웹 페이지에 **응용 프로그램 카탈로그**, **내 응용 프로그램 요청**, **내 디바이스** 등 세 가지 탭이 표시되는지 확인합니다.  
+브라우저에서 애플리케이션 카탈로그 웹 사이트의 주소를 입력합니다. 웹 페이지에 **애플리케이션 카탈로그**, **내 애플리케이션 요청**, **내 디바이스** 등의 세 탭이 표시되는지 확인합니다.  
 
 애플리케이션 카탈로그에 대해 아래 목록에 나와 있는 적합한 주소를 사용합니다. 여기서 &lt;서버&gt;는 컴퓨터 이름, 인트라넷 FQDN 또는 인터넷 FQDN입니다.  
 

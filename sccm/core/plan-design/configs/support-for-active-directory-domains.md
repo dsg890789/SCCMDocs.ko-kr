@@ -10,12 +10,13 @@ ms.assetid: 8c5a13f8-42d5-4898-b7b6-e594dae8b335
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: dcb0f5e82d0ef53524e9abfdb974605e3ae73db3
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2babdf726d468d27d0fe2ab37ad99a101adbb74c
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32333956"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56129564"
 ---
 # <a name="supported-active-directory-domains-for-system-center-configuration-manager"></a>System Center Configuration Manager에서 지원되는 Active Directory 도메인
 
@@ -78,6 +79,6 @@ Configuration Manager에서는 비연속 네임스페이스를 포함하는 도�
 
 -   유효한 최상위 도메인이 있는 비연속 DNS 네임스페이스를 사용하여 Active Directory Domain Services의 단일 레이블 도메인을 구성해야 합니다.  
 
-     **예제:** Contoso의 단일 레이블 도메인이 DNS contoso.com에서 비연속 네임스페이스를 포함하도록 구성되어 있습니다. 따라서 Contoso 도메인의 컴퓨터에 대해 Configuration Manager에서 DNS 접미사를 지정할 때는 “Contoso”가 아닌 “Contoso.com”을 지정합니다.  
+     **예를 들면 다음과 같습니다.** Contoso의 단일 레이블 도메인이 contoso.com의 DNS에서 비연속 네임스페이스를 포함하도록 구성되어 있습니다. 따라서 Contoso 도메인의 컴퓨터에 대해 Configuration Manager에서 DNS 접미사를 지정할 때는 “Contoso”가 아닌 “Contoso.com”을 지정합니다.  
 
 -   Kerberos 인증을 사용하여 사이트 서버와 시스템 컨텍스트 간의 DCOM(Distributed Component Object Model) 연결을 설정할 수 있어야 합니다.  

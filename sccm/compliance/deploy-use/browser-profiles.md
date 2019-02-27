@@ -10,12 +10,13 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-compliance
 ms.assetid: 76477b4d-df41-4b25-8318-7d18d46ca2c6
-ms.openlocfilehash: 2b0b553b7281015bfee89f8409fd6c5e255d753c
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d97a67dd65dd79ba8b47541d0c7a7cad239dca28
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39384146"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56126031"
 ---
 # <a name="configure-microsoft-edge-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Microsoft Edge 설정 구성
 
@@ -47,8 +48,8 @@ ms.locfileid: "39384146"
 <!--1353701--> 버전 1806부터 이 정책은 [Windows Defender SmartScreen](/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)에 대한 세 가지 설정을 추가합니다. 해당 정책에는 **SmartScreen 설정** 페이지에 다음과 같은 추가 정책이 포함됩니다.
 
 - **SmartScreen 허용**: Windows Defender SmartScreen 허용되는지 여부를 지정합니다. 자세한 내용은 참조는 [AllowSmartScreen 브라우저 정책](/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen)을 참조합니다.
-- **사용자는 사이트에 대한 SmartScreen 프롬프트를 재정의할 수 있습니다**: 사용자는 잠재적 악성 웹 사이트에 대한 Windows Defender SmartScreen 필터 경고를 재정의할 수 있는지 여부를 지정합니다. 자세한 내용은 [PreventSmartScreenPromptOverride 브라우저 정책](/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride)을 참조합니다.
-- **사용자는 파일에 대한 SmartScreen 프롬프트를 재정의할 수 있습니다**: 사용자는 확인되지 않은 파일 다운로드에 대한 Windows Defender SmartScreen 필터 경고를 재정의할 수 있는지 여부를 지정합니다. 자세한 내용은 [PreventSmartScreenPromptOverrideForFiles 브라우저 정책](/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)을 참조합니다.
+- **사용자는 사이트에서 SmartScreen 프롬프트를 재정의할 수 있음**: 사용자가 잠재적으로 악성인 웹 사이트에 대한 Windows Defender SmartScreen 필터 경고를 재정의할 수 있는지 여부를 지정합니다. 자세한 내용은 [PreventSmartScreenPromptOverride 브라우저 정책](/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride)을 참조합니다.
+- **사용자는 파일에서 SmartScreen 프롬프트를 재정의할 수 있음**: 사용자가 확인되지 않은 파일 다운로드에 대한 Windows Defender SmartScreen 필터 경고를 재정의할 수 있는지 여부를 지정합니다. 자세한 내용은 [PreventSmartScreenPromptOverrideForFiles 브라우저 정책](/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)을 참조합니다.
 
 
 
@@ -66,7 +67,7 @@ ms.locfileid: "39384146"
 ## <a name="deploy-the-policy"></a>정책 배포
 
 1. 정책을 선택하고 **배포** 리본 옵션을 클릭합니다.
-2. **찾아보기**를 클릭하여 정책을 배포할 사용자 또는 장치 컬렉션을 선택합니다. 
+2. **찾아보기**를 클릭하여 정책을 배포할 사용자 또는 디바이스 컬렉션을 선택합니다. 
 3. 필요에 따라 추가 옵션을 선택합니다.  
      a. 정책이 호환되지 않을 경우 경고를 생성합니다.  
      b. 클라이언트가 이 정책에 대한 디바이스의 준수를 평가하는 일정을 설정합니다. 
@@ -76,4 +77,4 @@ ms.locfileid: "39384146"
 
 ## <a name="next-steps"></a>다음 단계
 
-준수 설정 정책과 마찬가지로 클라이언트는 지정된 일정에 따라 설정을 수정합니다. Configuration Manager 콘솔에서 [장치 준수를 모니터링하고 보고](/sccm/compliance/deploy-use/monitor-compliance-settings)합니다.
+준수 설정 정책과 마찬가지로 클라이언트는 지정된 일정에 따라 설정을 수정합니다. Configuration Manager 콘솔에서 [디바이스 준수를 모니터링하고 보고](/sccm/compliance/deploy-use/monitor-compliance-settings)합니다.

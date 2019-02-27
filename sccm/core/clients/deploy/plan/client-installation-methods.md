@@ -10,12 +10,13 @@ ms.assetid: 51b5964b-374d-4abc-8619-414a9fffad2d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6e437709ec1b721cf9ca597bdc944bcce6da9b0f
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c206a8045429551f361f640febbcda4a39ef9698
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32334252"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56139945"
 ---
 # <a name="client-installation-methods-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 설치 방법
 
@@ -179,7 +180,7 @@ ms.locfileid: "32334252"
 
 자세한 내용은 다음 아티클을 참조하세요.  
 
--   [Intune MDM에서 관리되는 Windows 장치에 클라이언트를 설치하는 방법](/sccm/core/clients/deploy/deploy-clients-to-windows-computers#bkmk_mdm)  
+-   [Intune MDM에서 관리되는 Windows 디바이스에 클라이언트를 설치하는 방법](/sccm/core/clients/deploy/deploy-clients-to-windows-computers#bkmk_mdm)  
 
 -   [인증을 위해 Azure AD를 사용하여 Configuration Manager Windows 10 클라이언트 설치 및 할당](/sccm/core/clients/deploy/deploy-clients-cmg-azure)  
 

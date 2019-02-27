@@ -2,7 +2,7 @@
 title: 문제 해결을 위한 로그 파일
 titleSuffix: Configuration Manager
 description: 로그 파일을 사용하여 Configuration Manager 클라이언트 및 사이트 시스템 문제를 해결할 수 있습니다.
-ms.date: 11/27/2018
+ms.date: 02/12/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,13 @@ ms.assetid: c1ff371e-b0ad-4048-aeda-02a9ff08889e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 96673c0b299e45111c7d9a2bedf55282de50132e
-ms.sourcegitcommit: 5e7c4d36f4cdb3390ad3b381d31a3e1e4bf3c6e1
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a5c6cee6422d3fc8777f54bd42716748410c9323
+ms.sourcegitcommit: ceec0e20bf801071f2a05233f984cf17acc3fd29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55986623"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56265073"
 ---
 # <a name="log-files-in-configuration-manager"></a>Configuration Manager의 로그 파일
 
@@ -809,9 +810,10 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 ###  <a name="BKMK_WindowsServicingLog"></a> Windows 10 서비스  
  다음 표에는 Windows 10 서비스와 관련된 정보가 포함된 로그 파일이 나와 있습니다.  
 서비스는 소프트웨어 업데이트와 동일한 인프라 및 프로세스를 사용합니다. 서비스 시나리오에 적용되는 다른 로그는 [소프트웨어 업데이트](#BKMK_SU_NAPLog)를 참조하세요.
+
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
 |--------------|-----------------|----------------------------|  
-|CBS.log|Windows 업데이트 또는 역할 및 기능 변경과 관련된 서비스 오류를 기록합니다.|클라이언트|  
+|CBS.log|Windows 업데이트 또는 역할 및 기능 변경과 관련된 서비스 오류를 기록합니다.|클라이언트|
 |DISM.log|DISM을 사용하는 모든 작업을 기록합니다. 더 자세한 내용이 필요한 경우, DISM.log가 CBS.log를 가리킵니다.|클라이언트|
 |setupact.log|Windows 설치 과정에서 발생하는 대부분의 오류에 대한 기본 로그 파일입니다. 로그 파일은 %windir%\$Windows.~BT\sources\panther 폴더에 있습니다.|클라이언트|
 

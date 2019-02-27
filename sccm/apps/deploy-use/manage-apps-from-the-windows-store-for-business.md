@@ -10,12 +10,13 @@ ms.assetid: 8cdb22a6-72d7-41f5-9bed-c098b1bcf675
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: ae137cae29d49413ca11668ff0cc744168e91e21
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d0a32357001f37f537f13fe85e71a41f9cb658ac
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39383680"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56122443"
 ---
 # <a name="manage-apps-from-the-microsoft-store-for-business-with-configuration-manager"></a>Configuration Manager를 사용하여 비즈니스용 Microsoft Store에서 앱 관리
 
@@ -26,7 +27,7 @@ ms.locfileid: "39383680"
 
 비즈니스용 Microsoft Store에서는 두 가지 유형의 앱을 지원합니다.
 
-- **온라인**: 이 라이선스 유형에서는 사용자와 장치가 저장소에 연결하여 앱과 해당 라이선스를 가져와야 합니다. Windows 10 디바이스는 Azure AD(Active Directory) 도메인에 가입된 디바이스여야 합니다.  
+- **온라인**: 이 라이선스 유형에서는 사용자와 디바이스가 저장소에 연결하여 앱과 해당 라이선스를 가져와야 합니다. Windows 10 디바이스는 Azure AD(Active Directory) 도메인에 가입된 디바이스여야 합니다.  
 
 - **오프라인**: 이 유형을 사용하면 캐시 앱 및 라이선스를 온-프레미스 네트워크 내에서 직접 배포할 수 있습니다. 디바이스를 스토어에 연결하거나 인터넷에 연결할 필요가 없습니다.
 
@@ -82,11 +83,11 @@ Configuration Manager 클라이언트가 있고 Windows 10 버전 1607 이하를
 
 - 사용자는 스토어에서 설치를 완료해야 합니다.  
 
-- Configuration Manager 콘솔에서 앱 배포 상태는 "Microsoft Store 앱이 클라이언트 PC에서 열렸으며 사용자가 설치를 완료하기를 기다리고 있습니다."라는 오류를 표시하고 실패했다고 보고합니다.  
+- Configuration Manager 콘솔에서 앱 배포 상태가 실패하고 다음 오류를 보고합니다. “Microsoft Store 앱이 클라이언트 PC에서 열렸으며 사용자가 설치를 완료하기를 기다리고 있습니다.”  
 
 다음 애플리케이션 평가 주기에서:  
 
-- 사용자가 스토어에서 애플리케이션을 설치한 경우 애플리케이션에서 **성공** 상태를 보고합니다.  
+- 사용자가 스토어에서 응용 프로그램을 설치한 경우 응용 프로그램에서 **성공** 상태를 보고합니다.  
 
 - 사용자가 스토어에서 앱을 설치하려고 시도하지 않은 경우:  
 
@@ -124,9 +125,9 @@ Azure Services 마법사의 **앱** 페이지에서, 먼저 **Azure 환경** 및
 
 Azure Services 마법사의 **구성** 페이지에서 다음 정보를 지정합니다.  
 
-- **비즈니스용 Microsoft Store 앱 콘텐츠 저장소의 경로**: 공유 네트워크 경로를 지정합니다(폴더 포함). 예: `\\server\share\folder` 사이트 서버가 스토어와 동기화되면 콘텐츠가 이 위치에 캐시됩니다. Configuration Manager에서 애플리케이션을 만들면 사이트 서버가 이 로컬 캐시의 앱 콘텐츠를 사이트의 콘텐츠 라이브러리로 복사합니다.  
+- **비즈니스용 Microsoft 스토어 앱 콘텐츠 스토리지 경로**: 폴더를 포함한 공유 네트워크 경로를 지정합니다. 예: `\\server\share\folder` 사이트 서버가 스토어와 동기화되면 콘텐츠가 이 위치에 캐시됩니다. Configuration Manager에서 애플리케이션을 만들면 사이트 서버가 이 로컬 캐시의 앱 콘텐츠를 사이트의 콘텐츠 라이브러리로 복사합니다.  
 
-- **언어 선택**: 스토어에서 동기화할 언어를 선택하고 소프트웨어 센터의 사용자에게 표시합니다. 예를 들어 사용자가 독일어로 Windows를 구성하면 소프트웨어 센터는 스토어 앱용 독일어 문자열을 표시합니다. 이 동작을 실행하려면 언어가 동기화되고 특정 애플리케이션에 존재해야 합니다.    
+- **언어 선택**:  스토어에서 동기화할 언어를 선택하고 소프트웨어 센터의 사용자에게 표시합니다. 예를 들어 사용자가 독일어로 Windows를 구성하면 소프트웨어 센터는 스토어 앱용 독일어 문자열을 표시합니다. 이 동작을 실행하려면 언어가 동기화되고 특정 애플리케이션에 존재해야 합니다.    
 
 - **기본 언어**: 사용자의 언어를 사용할 수 없는 경우 사용할 기본 언어를 선택합니다.  
 
@@ -138,13 +139,13 @@ Azure Services 마법사의 **구성** 페이지에서 다음 정보를 지정�
 
 1.  Configuration Manager 콘솔의 **소프트웨어 라이브러리** 작업 영역에서 **애플리케이션 관리**를 확장한 다음 **스토어 앱에 대한 라이선스 정보**를 클릭합니다.  
 
-2.  배포하려는 앱을 선택한 다음, 리본에서 **애플리케이션 만들기**를 클릭합니다.  
+2.  배포하려는 앱을 선택한 다음, 리본에서 **응용 프로그램 만들기**를 클릭합니다.  
 
 이 사이트는 비즈니스용 Microsoft Store 앱을 포함하는 Configuration Manager 애플리케이션을 만듭니다. 
 
-그런 다음, 이 애플리케이션을 다른 Configuration Manager 애플리케이션과 마찬가지로 배포하고 모니터링합니다. 자세한 내용은 다음 아티클을 참조하세요.  
-- [응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications)
-- [콘솔에서 응용 프로그램 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)
+그런 다음, 이 응용 프로그램을 다른 Configuration Manager 응용 프로그램과 마찬가지로 배포하고 모니터링합니다. 자세한 내용은 다음 아티클을 참조하세요.  
+- [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications)
+- [콘솔에서 애플리케이션 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)
 
 > [!IMPORTANT]  
 > Microsoft Intune에 등록된 디바이스의 경우 원래 디바이스를 등록한 사용자만 배포된 앱을 사용할 수 있습니다. 다른 사용자는 앱에 액세스할 수 없습니다.
@@ -153,7 +154,7 @@ Azure Services 마법사의 **구성** 페이지에서 다음 정보를 지정�
 
 ## <a name="next-steps"></a>다음 단계
 
-**소프트웨어 라이브러리** 작업 영역에서 **응용 프로그램 관리**를 확장한 다음 **스토어 앱에 대한 라이선스 정보**를 클릭합니다.
+**소프트웨어 라이브러리** 작업 영역에서 **애플리케이션 관리**를 확장한 다음 **스토어 앱에 대한 라이선스 정보**를 클릭합니다.
 
 관리하는 각 스토어 앱에 대한 다음 정보를 봅니다.
 - 앱 이름

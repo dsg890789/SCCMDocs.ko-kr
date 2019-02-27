@@ -10,12 +10,13 @@ ms.assetid: e102fd1a-76df-4d8e-b1b0-10ee18318f67
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 03b34c09a5fef63316bb1d9d1a94dbbfc3ccf69f
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 93a502e9c77e05eedba1c2989cbae69e4080832f
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52456263"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56133734"
 ---
 # <a name="how-to-manage-collections-in-configuration-manager"></a>Configuration Manager에서 컬렉션을 관리하는 방법
 
@@ -28,21 +29,21 @@ ms.locfileid: "52456263"
 
 
 
-## <a name="bkmk_device"></a> 장치 컬렉션을 관리하는 방법  
+## <a name="bkmk_device"></a> 디바이스 컬렉션을 관리하는 방법  
 
- **자산 및 준수** 작업 영역에서 **장치 컬렉션**을 선택하고 관리할 컬렉션을 선택한 다음 관리 작업을 선택합니다.  
+ **자산 및 준수** 작업 영역에서 **디바이스 컬렉션**을 선택하고 관리할 컬렉션을 선택한 다음 관리 작업을 선택합니다.  
 
 
 #### <a name="show-members"></a>멤버 표시
- **장치** 노드의 임시 노드에 선택한 컬렉션의 멤버인 모든 리소스를 표시합니다.
+ **디바이스** 노드의 임시 노드에 선택한 컬렉션의 멤버인 모든 리소스를 표시합니다.
 
 
 #### <a name="add-selected-items"></a>선택한 항목 추가
  다음 옵션이 제공됩니다. 
 
- - **선택한 항목을 기존 장치 컬렉션에 추가**: **컬렉션 선택** 대화 상자를 엽니다. 선택한 컬렉션의 구성원을 추가할 컬렉션을 선택하세요. 선택한 컬렉션이 **컬렉션 포함** 멤버 관리 규칙을 사용하여 이 컬렉션에 포함됩니다.  
+ - **선택한 항목을 기존 디바이스 컬렉션에 추가**: **컬렉션 선택** 대화 상자를 엽니다. 선택한 컬렉션의 구성원을 추가할 컬렉션을 선택하세요. 선택한 컬렉션이 **컬렉션 포함** 멤버 관리 규칙을 사용하여 이 컬렉션에 포함됩니다.  
 
- - **선택한 항목을 새 장치 컬렉션에 추가**: 새 컬렉션을 만들 수 있는 **장치 컬렉션 만들기 마법사**를 엽니다. 선택한 컬렉션이 **컬렉션 포함** 멤버 관리 규칙을 사용하여 이 컬렉션에 포함됩니다.  
+ - **선택한 항목을 새 디바이스 컬렉션에 추가**: 새 컬렉션을 만들 수 있는 **디바이스 컬렉션 만들기 마법사**를 엽니다. 선택한 컬렉션이 **컬렉션 포함** 멤버 관리 규칙을 사용하여 이 컬렉션에 포함됩니다.  
 
 
  자세한 내용은 [컬렉션을 만드는 방법](/sccm/core/clients/manage/collections/create-collections)을 참조하세요.
@@ -57,7 +58,7 @@ ms.locfileid: "52456263"
 
 
 #### <a name="manage-affinity-requests"></a>선호도 요청 관리
- **사용자 장치 선호도 요청 관리** 대화 상자를 엽니다. 보류 중인 요청을 승인하거나 거부하여 선택한 컬렉션의 디바이스에 대해 사용자 디바이스 선호도를 설정합니다. 자세한 내용은 [사용자 디바이스 선호도를 사용하여 사용자와 디바이스 연결](/sccm/apps/deploy-use/link-users-and-devices-with-user-device-affinity)을 참조하세요.
+ **사용자 디바이스 선호도 요청 관리** 대화 상자를 엽니다. 보류 중인 요청을 승인하거나 거부하여 선택한 컬렉션의 디바이스에 대해 사용자 디바이스 선호도를 설정합니다. 자세한 내용은 [사용자 디바이스 선호도를 사용하여 사용자와 디바이스 연결](/sccm/apps/deploy-use/link-users-and-devices-with-user-device-affinity)을 참조하세요.
 
 
 #### <a name="clear-required-pxe-deployments"></a>필수 PXE 배포를 취소 합니다.
@@ -99,13 +100,13 @@ ms.locfileid: "52456263"
 
 
 #### <a name="simulate-deployment"></a>배포 시뮬레이트
- **응용 프로그램 배포 시뮬레이트 마법사**를 엽니다. 이 마법사를 통해 애플리케이션을 설치하거나 제거하지 않고도 애플리케이션 배포 결과를 테스트할 수 있습니다. 자세한 내용은 [애플리케이션 배포 시뮬레이트](/sccm/apps/deploy-use/simulate-application-deployments)를 참조하세요.
+ **애플리케이션 배포 시뮬레이트 마법사**를 엽니다. 이 마법사를 통해 애플리케이션을 설치하거나 제거하지 않고도 애플리케이션 배포 결과를 테스트할 수 있습니다. 자세한 내용은 [애플리케이션 배포 시뮬레이트](/sccm/apps/deploy-use/simulate-application-deployments)를 참조하세요.
 
 
 #### <a name="deploy"></a>배포:
  다음 옵션이 표시됩니다.  
 
- - **응용 프로그램**: **소프트웨어 배포 마법사**를 엽니다. 선택한 컬렉션에 대한 애플리케이션 배포를 선택하고 구성하세요. 자세한 내용은 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications)를 참조하세요.  
+ - **애플리케이션**: **소프트웨어 배포 마법사**를 엽니다. 선택한 컬렉션에 대한 애플리케이션 배포를 선택하고 구성하세요. 자세한 내용은 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications)를 참조하세요.  
 
  - **프로그램**: **소프트웨어 배포 마법사**를 엽니다. 선택한 컬렉션에 대한 패키지 및 프로그램 배포를 선택하고 구성하세요. 자세한 내용은 [패키지 및 프로그램](/sccm/apps/deploy-use/packages-and-programs)을 참조하세요.  
 
@@ -149,7 +150,7 @@ ms.locfileid: "52456263"
  - **삭제**  
  - **배포 시뮬레이트**  
  - **배포**  
-     - **응용 프로그램**  
+     - **애플리케이션**  
      - **프로그램**  
      - **구성 기준**   
  - **이동**  

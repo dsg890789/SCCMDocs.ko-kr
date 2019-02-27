@@ -10,12 +10,13 @@ ms.assetid: b634ff68-b909-48d2-9e2c-0933486673c5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 7d103f7f7b92003605d92d34d6294ed06009118c
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9107e3bf851ddbcec061eeeac064f31e7392ee9f
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52456518"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56142445"
 ---
 # <a name="create-phased-deployments-with-configuration-manager"></a>Configuration Manager를 사용하여 단계별 배포 만들기
 
@@ -58,12 +59,12 @@ ms.locfileid: "52456518"
 
 #### <a name="criteria-for-success-of-the-first-phase"></a>첫 번째 단계의 성공 조건  
 
-- **배포 성공률**: 첫 번째 단계를 성공한 것으로 간주하기 위해 배포가 성공적으로 완료되어야 하는 장치의 백분율을 지정합니다. 이 값은 기본적으로 95%입니다. 즉, 이 배포에 대한 95% 디바이스의 준수 상태가 **성공**일 때 사이트에서 첫 번째 단계를 성공한 것으로 간주합니다. 그런 다음, 사이트는 두 번째 단계로 계속 진행하고, 다음 컬렉션에 소프트웨어 배포를 만듭니다.  
+- **배포 성공률**: 첫 번째 단계를 성공한 것으로 간주하기 위해 배포가 성공적으로 완료되어야 하는 디바이스의 백분율을 지정합니다. 이 값은 기본적으로 95%입니다. 즉, 이 배포에 대한 95% 디바이스의 준수 상태가 **성공**일 때 사이트에서 첫 번째 단계를 성공한 것으로 간주합니다. 그런 다음, 사이트는 두 번째 단계로 계속 진행하고, 다음 컬렉션에 소프트웨어 배포를 만듭니다.  
 
 
 #### <a name="conditions-for-beginning-second-phase-of-deployment-after-success-of-the-first-phase"></a>첫 번째 단계 성공 후 배포의 두 번째 단계를 시작하기 위한 조건  
 
-- **지연 기간(일) 후에 이 단계를 자동으로 시작**: 첫 번째 단계 성공 후에 두 번째 단계를 시작하기 전에 대기할 기간(일)을 선택합니다. 이 값은 기본적으로 1일입니다.  
+- **지연 기간(일) 후 자동으로 이 단계 시작**: 첫 단계 성공 후 두 번째 단계 시작 전까지 대기하는 기간(일)을 선택합니다. 이 값은 기본적으로 1일입니다.  
 
 - **배포의 두 번째 단계를 수동으로 시작**: 사이트는 첫 번째 단계가 성공한 후 자동으로 두 번째 단계를 시작하지 않습니다. 이 옵션을 사용하면 두 번째 단계를 수동으로 시작해야 합니다. 자세한 내용은 [다음 단계로 이동](/sccm/osd/deploy-use/manage-monitor-phased-deployments#bkmk_move)을 참조하세요.  
 
@@ -77,9 +78,9 @@ ms.locfileid: "52456518"
 
 #### <a name="configure-the-deadline-behavior-relative-to-when-the-software-is-made-available"></a>소프트웨어를 사용할 수 있게 되는 시점을 기준으로 최종 기한 동작 구성  
 
-- **가능하면 빨리 설치해야 함**: 장치가 대상으로 지정되는 즉시 장치에 설치해야 하는 최종 기한을 설정합니다.  
+- **가능한 한 빨리 설치 필요**: 디바이스를 대상으로 지정하는 즉시 디바이스에 설치하는 최종 기한을 설정합니다.  
 
-- **이 기간 이후 설치 필요**: 장치가 대상으로 지정된 후 설치해야 하는 최종 기한을 일정 기간(일)으로 설정합니다. 이 값은 기본적으로 7일입니다.   
+- **이 기간이 지나면 설치 필요**: 디바이스가 대상으로 지정되고 설치가 진행되기까지의 특정 일 수를 설정합니다. 이 값은 기본적으로 7일입니다.   
 
 
 <!--### Examples
@@ -92,9 +93,9 @@ Include a timeline diagram
 
 1. Configuration Manager 콘솔에서 단계별 배포 만들기 마법사를 시작합니다. 이 작업은 배포하려는 소프트웨어 종류에 따라 다릅니다.  
 
-    - **응용 프로그램**(버전 1806 이상에서만): **소프트웨어 라이브러리**로 이동하여 **응용 프로그램 관리**를 확장하고 **응용 프로그램**을 선택합니다. 기존 애플리케이션을 선택한 다음, 리본에서 **단계별 배포 만들기**를 선택합니다.  
+    - **애플리케이션**(버전 1806 이상에서만): **소프트웨어 라이브러리**로 이동하고 **애플리케이션 관리**를 확장한 다음, **애플리케이션**을 선택합니다. 기존 애플리케이션을 선택한 다음, 리본에서 **단계별 배포 만들기**를 선택합니다.  
 
-    - **소프트웨어 업데이트**(버전 1810 이상에서만): **소프트웨어 라이브러리**로 이동하여 **소프트웨어 업데이트**를 확장한 다음, **모든 소프트웨어 업데이트**를 선택합니다. 하나 이상의 업데이트 하나를 선택한 다음, 리본에서 **단계적 배포 만들기**를 선택합니다.  
+    - **소프트웨어 업데이트**(버전 1810 이상에서만): **소프트웨어 라이브러리**로 이동하고 **소프트웨어 업데이트**를 확장한 다음, **모든 소프트웨어 업데이트**를 선택합니다. 하나 이상의 업데이트 하나를 선택한 다음, 리본에서 **단계적 배포 만들기**를 선택합니다.  
 
         이 작업은 다음 노드에서 소프트웨어 업데이트에 대해 사용할 수 있습니다.  
         - 소프트웨어 업데이트  
@@ -103,11 +104,11 @@ Include a timeline diagram
         - Windows 10 서비스, **모든 Windows 10 업데이트**  
         - Office 365 클라이언트 관리, **Office 365 업데이트**  
 
-    - **작업 순서**: **소프트웨어 라이브러리** 작업 영역으로 이동하여 **운영 체제**를 확장하고 **작업 순서**를 선택합니다. 기존 작업 순서를 선택한 다음, 리본에서 **단계별 배포 만들기**를 선택합니다.  
+    - **작업 순서**: **소프트웨어 라이브러리** 작업 영역으로 이동하고 **운영 체제**를 확장한 다음, **작업 순서**를 선택합니다. 기존 작업 순서를 선택한 다음, 리본에서 **단계별 배포 만들기**를 선택합니다.  
 
 2. **일반** 페이지에서 단계별 배포에 **이름**, **설명**(선택 사항)을 지정하고 **자동으로 기본 두 단계 배포 만들기**를 선택합니다.  
 
-3. **찾아보기**를 선택하고 **첫 번째 컬렉션** 및 **두 번째 컬렉션** 필드 모두에 대해 대상 컬렉션을 선택합니다. 작업 순서 및 소프트웨어의 경우 디바이스 컬렉션에서 선택합니다. 응용 프로그램의 경우 사용자 또는 디바이스 컬렉션에서 선택합니다. **다음**을 선택합니다.  
+3. **찾아보기**를 선택하고 **첫 번째 컬렉션** 및 **두 번째 컬렉션** 필드 모두에 대해 대상 컬렉션을 선택합니다. 작업 순서 및 소프트웨어의 경우 디바이스 컬렉션에서 선택합니다. 애플리케이션의 경우 사용자 또는 장치 컬렉션에서 선택합니다. **다음**을 선택합니다.  
 
     > [!Important]  
     > 단계별 배포 만들기 마법사는 배포가 잠재적으로 위험성이 높은 경우 사용자에게 알리지 않습니다. 자세한 내용은 [높은 위험 수준의 배포를 관리하는 설정](/sccm/core/servers/manage/settings-to-manage-high-risk-deployments) 및 [작업 순서 배포](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#BKMK_DeployTS) 시 참고 사항을 참조하세요.  
@@ -186,7 +187,7 @@ Include a timeline diagram
 ## <a name="next-steps"></a>다음 단계
 
 단계적 배포 관리 및 모니터링
-- [응용 프로그램](/sccm/osd/deploy-use/manage-monitor-phased-deployments?toc=/sccm/apps/toc.json&bc=/sccm/apps/breadcrumb/toc.json)  
+- [애플리케이션](/sccm/osd/deploy-use/manage-monitor-phased-deployments?toc=/sccm/apps/toc.json&bc=/sccm/apps/breadcrumb/toc.json)  
 - [소프트웨어 업데이트](/sccm/osd/deploy-use/manage-monitor-phased-deployments?toc=/sccm/sum/toc.json&bc=/sccm/sum/breadcrumb/toc.json)  
 - [작업 순서](/sccm/osd/deploy-use/manage-monitor-phased-deployments)  
 

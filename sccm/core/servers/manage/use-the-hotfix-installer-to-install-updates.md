@@ -10,12 +10,13 @@ ms.assetid: f3058277-c597-4dac-86d1-41b6f7e62b36
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5c90889861db55a27da897e709b16b66edece08a
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 67d2fc976b08e438c6f19a7fecca03761bb099f6
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32342429"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56124733"
 ---
 # <a name="use-the-hotfix-installer-to-install-updates-for-system-center-configuration-manager"></a>핫픽스 설치 관리자를 사용하여 System Center Configuration Manager의 업데이트 설치
 
@@ -161,7 +162,7 @@ Microsoft에서 받은 업데이트(핫픽스)를 설치해야 하며 해당 업
 
 4.  이전 단계에서 중지했던 서비스를 다시 시작합니다.  
 
-5.  업데이트 번들이 설치될 때 **update.sql**이 사이트 서버의 다음 위치에 추출됩니다. **\\\\&lt;서버 이름\>\SMS_&lt;사이트 코드\>\Hotfix\\&lt;KB 번호\>\update.sql**  
+5.  업데이트 번들이 설치될 때 **update.sql** 이 사이트 서버의 다음 위치에 추출됩니다.  **\\\\&lt;Server Name\>\SMS_&lt;Site Code\>\Hotfix\\&lt;KB Number\>\update.sql**  
 
 ####  <a name="bkmk_provider"></a> SMS 공급자가 실행되는 컴퓨터 업데이트  
  SMS 공급자의 업데이트가 포함된 업데이트 번들을 설치한 후에는SMS 공급자가 실행되는 각 컴퓨터에 업데이트를 배포해야 합니다. 이에 대한 유일한 예외는 업데이트 번들을 설치하는 사이트 서버에 이전에 설치된 SMS 공급자 인스턴스입니다. 사이트 서버에 있는 SMS 공급자의 로컬 인스턴스는 업데이트 번들을 설치할 때 업데이트됩니다.  
@@ -202,7 +203,7 @@ Microsoft에서 받은 업데이트(핫픽스)를 설치해야 하며 해당 업
 ###  <a name="BKMK_DeploySCUP"></a> Updates Publisher 2011을 사용하여 업데이트 설치  
  사이트 서버에 업데이트 번들을 설치하면 설치 마법사에서 Updates Publisher용 카탈로그 파일을 생성하며, 이를 사용하여 해당 컴퓨터에 업데이트를 배포할 수 있습니다. 마법사는 사용자가 **패키지와 프로그램을 사용하여 이 업데이트 배포**를 업데이트하는 핫픽스를 설치하는 방법에 대한 일반적인 지침을 제공합니다.  
 
- Updates Publisher의 카탈로그 이름은 **SCUPCatalog.cab**이며 업데이트 번들이 실행되는 컴퓨터의 **\\\\&lt;서버 이름\>\SMS_&lt;사이트 코드\>\Hotfix\\&lt;KB 번호\>\SCUP\SCUPCatalog.cab**에 있습니다.  
+ Updates Publisher의 카탈로그는 **SCUPCatalog.cab**로 이름이 지정되며 업데이트 번들이 실행되는 컴퓨터의 다음 위치에 있습니다. **\\\\&lt;ServerName\>\SMS_&lt;SiteCode\>\Hotfix\\&lt;KB Number\>\SCUP\SCUPCatalog.cab**  
 
 > [!IMPORTANT]  
 >  SCUPCatalog.cab 파일은 업데이트 번들이 설치되는 사이트 서버에 해당하는 경로를 사용하여 만들어지므로 다른 사이트 서버에서는 사용할 수 없습니다.  

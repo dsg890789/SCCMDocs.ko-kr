@@ -10,12 +10,13 @@ ms.assetid: caad2d93-087c-4dc0-a2a7-6a2fd808b4c8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6c052979ad310273669d5a7897213bffd9f7e213
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 054676d5583dbc4468f1d2716d895100f3a5471a
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39386574"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56134302"
 ---
 # <a name="collection-evaluation-viewer"></a>컬렉션 평가 뷰어
 
@@ -101,9 +102,9 @@ ms.locfileid: "39386574"
 
 - **사이트 ID**: 컬렉션의 사이트 ID   
 
-- **런타임**: 마지막 컬렉션 평가 실행 기간(초)  
+- **실행 시간**: 마지막 컬렉션 평가 실행 기간(초)  
 
-- **마지막 평가 완료 시간**: 마지막 컬렉션 평가가 완료되는 시간  
+- **마지막 평가 완료 시간**: 마지막 컬렉션 평가가 완료된 시간  
 
 - **다음 평가 시간**: 다음 전체 평가가 시작되는 시간  
 
@@ -122,9 +123,9 @@ ms.locfileid: "39386574"
 
 - **사이트 ID**: 컬렉션의 사이트 ID   
 
-- **런타임**: 마지막 컬렉션 평가 실행 기간(초)  
+- **실행 시간**: 마지막 컬렉션 평가 실행 기간(초)  
 
-- **마지막 평가 완료 시간**: 마지막 컬렉션 평가가 완료되는 시간  
+- **마지막 평가 완료 시간**: 마지막 컬렉션 평가가 완료된 시간  
 
 - **멤버 변경**: 마지막 컬렉션 평가에서의 멤버 변경입니다. 이러한 변경은 더하기(추가된 멤버) 또는 빼기(제거된 멤버) 중 하나에 해당합니다.  
 

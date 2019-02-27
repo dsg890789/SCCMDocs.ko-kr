@@ -10,12 +10,13 @@ ms.assetid: cead6825-6113-4ba5-a381-ac3598dfee86
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4dd1bf9b4085b6e1591d5841bfc307398505f5d1
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 87819530c5a37885c66611da0ba66c1a8872ac57
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32340780"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156630"
 ---
 # <a name="hierarchy-maintenance-tool-preinstexe-for-system-center-configuration-manager"></a>System Center Configuration Manager용 계층 구조 유지 관리 도구(Preinst.exe)
 
@@ -104,7 +105,7 @@ Service Manager를 사용하여 사이트 구성 요소 관리자 서비스를 �
 
 1.  자식 사이트에 로그온해 있는 동안 명령 프롬프트를 열고 **Preinst.exe**위치로 이동합니다.  
 
-2.  다음을 입력하여 하위 사이트의 공개 키를 내보냅니다. **Preinst /keyforparent**  
+2.  다음을 입력하여 자식 사이트의 공개 키를 내보냅니다. **Preinst /keyforparent**  
 
 3.  /keyforparent 옵션은 시스템 드라이브 루트에 있는 **&lt;사이트 코드\>.CT4** 파일에 하위 사이트의 공개 키를 배치합니다.  
 
@@ -114,7 +115,7 @@ Service Manager를 사용하여 사이트 구성 요소 관리자 서비스를 �
 
 1.  부모 사이트에 로그온해 있는 동안 명령 프롬프트를 열고 **Preinst.exe**위치로 이동합니다.  
 
-2.  다음을 입력하여 상위 사이트의 공개 키를 내보냅니다. **Preinst /keyforchild**.  
+2.  다음을 입력하여 부모 사이트의 공개 키를 내보냅니다. **Preinst /keyforchild**.  
 
 3.  /keyforchild 옵션은 시스템 드라이브 루트에 있는 **&lt;사이트 코드\>.CT5** 파일에 상위 사이트의 공개 키를 배치합니다.  
 

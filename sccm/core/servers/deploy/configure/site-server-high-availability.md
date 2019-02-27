@@ -10,12 +10,13 @@ ms.assetid: 6dcef836-c0d1-40af-ad30-cd8d864b09a9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 912bdb93db05091ff756c51ee9f951a17a76ff5d
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: be12cfe29ff470f2f577bab2c685695ae5770bae
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385974"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56131424"
 ---
 # <a name="site-server-high-availability-in-configuration-manager"></a>Configuration Manager의 사이트 서버 고가용성 
 
@@ -119,13 +120,13 @@ Configuration Manager 버전 1806부터 사이트 서버 역할에 대한 고가
 
      - 다음 옵션 중 하나를 선택합니다.  
 
-         - **활성 모드의 사이트 서버에서 네트워크를 통해 설치 원본 파일 복사**: 이 옵션은 압축된 패키지를 만들어 새 사이트 서버에 보냅니다.  
+         - **활성 모드에서 네트워크를 통해 사이트 서버의 설치 원본 파일 복사**: 이 옵션은 압축된 패키지를 만들어 새 사이트 서버로 보냅니다.  
 
-         - **수동 모드의 사이트 서버에서 다음 위치에 원본 파일 사용**: 이미 복사한 원본 파일의 로컬 경로를 예로 들 수 있습니다. 이 콘텐츠가 활성 모드의 사이트 서버와 같은 버전인지 확인합니다.  
+         - **수동 모드에서 사이트 서버의 다음 위치에 있는 원본 파일 사용**: 예를 들어, 이미 복사한 원본 파일의 로컬 경로입니다. 이 콘텐츠가 활성 모드의 사이트 서버와 같은 버전인지 확인합니다.  
 
          - (*권장*) **다음 네트워크 위치의 원본 파일 사용**: 활성 모드의 사이트 서버에서 **CD.Latest** 폴더의 콘텐츠 경로를 직접 지정합니다. 예를 들어 `\\Server\SMS_ABC\CD.Latest`입니다. 여기서 "*Server*"는 활성 모드의 사이트 서버 이름, "*ABC*"는 사이트 이름입니다.  
 
-     - 새 사이트 서버에서 Configuration Manager 설치의 로컬 경로를 지정합니다.  예를 들면 다음과 같습니다. `C:\Program Files\Configuration Manager`  
+     - 새 사이트 서버에서 Configuration Manager 설치의 로컬 경로를 지정합니다.  `C:\Program Files\Configuration Manager`  
 
 5. 마법사를 완료합니다. 그러면 Configuration Manager는 수동 모드에서 사이트 서버를 지정된 서버에 설치합니다.
 

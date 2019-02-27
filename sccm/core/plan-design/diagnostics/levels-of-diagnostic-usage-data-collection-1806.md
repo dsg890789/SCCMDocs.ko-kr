@@ -10,18 +10,19 @@ ms.assetid: a0287beb-70a9-4b57-a627-e7bfba27fd3b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: d964295134538cf281af214830a5bc416484be51
-ms.sourcegitcommit: 0d7efd9e064f9d6a9efcfa6a36fd55d4bee20059
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4bfd2a4cef78b6674e6f288483190ca7c48542fe
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43893674"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56131917"
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1806"></a>1806 버전의 진단 사용 현황 데이터 수집 수준
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Configuration Manager 버전 1806에서는 **기본**, **고급**, **전체**의 세 가지 수준의 진단 및 사용량 데이터를 수집합니다. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
+Configuration Manager 버전 1806은 다음과 같은 세 가지 수준의 진단 및 사용량 데이터를 수집합니다. **기본**, **고급**, **전체**. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
 
 이전 버전에서 변경된 내용은 ***[새로운 기능]***, ***[업데이트된 기능]***, ***[제거된 기능]*** 또는 ***[이동된 기능]*** 으로 표시됩니다.
 
@@ -43,7 +44,7 @@ Configuration Manager 버전 1806에서는 **기본**, **고급**, **전체**의
 
 Configuration Manager 버전 1806의 경우 이 수준에는 다음과 같은 데이터가 포함됩니다.
 
-- Configuration Manager 콘솔 연결에 대한 통계: OS 버전, 언어, SKU 및 아키텍처, 시스템 메모리, 논리 프로세서 개수, 연결 사이트 ID, 설치된 .NET 버전 및 콘솔 언어 팩
+- Configuration Manager 콘솔 연결 관련 통계: OS 버전, 언어, SKU 및 아키텍처, 시스템 메모리, 논리 프로세서 개수, 연결 사이트 ID, 설치된 .NET 버전 및 콘솔 언어 팩
 
 - 기본 애플리케이션 및 배포 유형 수: 총 앱, 여러 배포 유형을 사용하는 총 앱, 종속성을 가진 총 앱, 총 교체된 앱, 사용 중인 배포 기술 개수
 
@@ -187,15 +188,15 @@ Configuration Manager 버전 1806의 경우 이 수준에는 다음과 같은 �
 
    - 디바이스당 최대 및 평균 기본 사용자  
 
-   - ***[New]*** 형식별 응용 프로그램 글로벌 조건 사용  
+   - ***[New]*** 형식별 애플리케이션 글로벌 조건 사용  
 
    - ***[New]*** 소프트웨어 센터 사용자 지정 구성  
 
    - ***[New]*** Package Conversion Manager 준비 및 개수  
 
-   - ***[New]*** 형식별 응용 프로그램 검색 메서드 수  
+   - ***[New]*** 형식별 애플리케이션 검색 메서드 수  
 
-   - ***[New]*** 응용 프로그램 적용 오류 수  
+   - ***[New]*** 애플리케이션 적용 오류 수  
 
    - ***[New]*** MSI 설치 관리자 속성 
 
@@ -247,7 +248,7 @@ Configuration Manager 버전 1806의 경우 이 수준에는 다음과 같은 �
 
    - ***[New]*** Configuration Manager가 생성한 서버 인증 인증서 수  
 
-   - ***[New]*** 모델별 Microsoft Surface 장치 수  
+   - ***[New]*** 모델별 Microsoft Surface 디바이스 수  
 
 
 ### <a name="cloud-services"></a>Cloud Services  
@@ -516,7 +517,7 @@ Configuration Manager 버전 1806의 경우 이 수준에는 다음과 같은 �
 
 - 준수 및 오류에 대한 준수 정책 통계
 
-- 준수 설정: SCEP, VPN, Wi-Fi 및 준수 정책 템플릿 구성 정보
+- 규정 준수 설정: SCEP, VPN, Wi-Fi 및 규정 준수 정책 템플릿 구성 세부 정보
 
 - System Center Configuration Manager 사용을 위한 DCM 구성 팩
 

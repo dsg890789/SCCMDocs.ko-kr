@@ -10,12 +10,13 @@ ms.assetid: f053fa73-c553-4522-a6b9-f885f23fe57c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 41dd6ad6f8a0292fdb16a0d727665b17e038f87b
-ms.sourcegitcommit: 1439817f1309658b31008d7bafaab32fc5ef8789
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ba73d215b9a672f4843c2f1e4a63dfc6bd13ea74
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52820044"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56132887"
 ---
 # <a name="package-conversion-manager"></a>Package Conversion Manager
 
@@ -23,16 +24,16 @@ ms.locfileid: "52820044"
 
 <!--1357861-->
 
-버전 1806부터 Package Conversion Manager가 Configuration Manager 레거시 패키지를 애플리케이션으로 변환하는 데 도움을 줍니다. 응용 프로그램에는 종속성, 요구 사항 규칙, 검색 방법 및 사용자 디바이스 선호도와 같은 추가 혜택이 있습니다.
+버전 1806부터 Package Conversion Manager가 Configuration Manager 레거시 패키지를 애플리케이션으로 변환하는 데 도움을 줍니다. 애플리케이션에는 종속성, 요구 사항 규칙, 검색 방법 및 사용자 장치 선호도와 같은 추가 혜택이 있습니다.
 
 > [!Tip]  
 > 이 기능은 버전 1806에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 소개되었습니다. 버전 1810 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.  
 
 
-Configuration Manager 응용 프로그램에는 클라이언트 디바이스에 배포할 파일 및 프로그램이 포함되어 있습니다. 그러나 레거시 패키지 및 프로그램과 달리 애플리케이션은 사용자 중심 기능을 추가로 제공합니다. 예를 들어 응용 프로그램에는 소프트웨어 패키지, 가상 응용 프로그램 패키지 또는 모바일 디바이스용 응용 프로그램 버전 등의 로컬 설치를 위한 배포 유형이 포함될 수 있습니다.
+Configuration Manager 애플리케이션에는 클라이언트 장치에 배포할 파일 및 프로그램이 포함되어 있습니다. 그러나 레거시 패키지 및 프로그램과 달리 애플리케이션은 사용자 중심 기능을 추가로 제공합니다. 예를 들어 애플리케이션에는 소프트웨어 패키지, 가상 애플리케이션 패키지 또는 모바일 장치용 애플리케이션 버전 등의 로컬 설치를 위한 배포 유형이 포함될 수 있습니다.
 
 자세한 내용은 다음 아티클을 참조하세요. 
-- [응용 프로그램 관리 소개](/sccm/apps/understand/introduction-to-application-management)  
+- [애플리케이션 관리 소개](/sccm/apps/understand/introduction-to-application-management)  
 - [패키지 및 프로그램](/sccm/apps/deploy-use/packages-and-programs)  
 
 > [!Important]  
@@ -54,7 +55,7 @@ Configuration Manager 응용 프로그램에는 클라이언트 디바이스에 
 
 - [패키지 분석, 조사 및 변환](#bkmk_analyze)  
 
-- [응용 프로그램 테스트 및 배포](#bkmk_deploy)  
+- [애플리케이션 테스트 및 배포](#bkmk_deploy)  
 
 
 ### <a name="bkmk_define"></a> 자세한 패키지 변환 플랜 정의
@@ -208,7 +209,7 @@ Configuration Manager 응용 프로그램에는 클라이언트 디바이스에 
 > **모니터링** 작업 영역의 **패키지 변환 상태** 노드를 참조하세요. 분석 및 변환 프로세스에 대한 요약 정보가 표시되어 있습니다.  
 
 
-### <a name="bkmk_deploy"></a> 응용 프로그램 테스트 및 배포
+### <a name="bkmk_deploy"></a> 애플리케이션 테스트 및 배포
 
 자세한 패키지 변환 계획에 따라 테스트 환경이나 프로덕션 환경에서 애플리케이션을 테스트합니다.
 

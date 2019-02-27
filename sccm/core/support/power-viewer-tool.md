@@ -10,12 +10,13 @@ ms.assetid: 8143e3bf-d6bd-4c69-aec1-e6989cf2ecd9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5a90982aa38bbe4c171af1246aa1b12bc67b335d
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5f9695decaf7af8d947d57443bd4b14032545b7d
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39385954"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56133319"
 ---
 # <a name="power-viewer-tool"></a>전원 뷰어 도구
 

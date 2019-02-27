@@ -10,12 +10,13 @@ ms.assetid: b87ac054-9b37-4725-a3f3-2340cfb10bff
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6ea093b71d19c2cee35caa748ae60f76a95b078c
-ms.sourcegitcommit: 54e5786875c4e5f5c1b54e38ed59e96344faf9b4
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 99bde59429af4d75e7e1dfab42d627d3a973efe6
+ms.sourcegitcommit: ceec0e20bf801071f2a05233f984cf17acc3fd29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817769"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56265015"
 ---
 # <a name="checklist-for-installing-update-1810-for-configuration-manager"></a>Configuration Manager용 업데이트 1810을 설치하기 위한 검사 목록
 
@@ -31,7 +32,7 @@ Configuration Manager의 현재 분기를 사용하는 경우 버전 1810용 콘
 
     -   dmpdownloader.log는 dmpdownloader 프로세스가 업데이트를 확인하기 전에 간격을 기다리고 있음을 나타낼 수 있습니다. 업데이트 재배포 파일의 다운로드를 다시 시작하기 위해 사이트 서버에서 **SMS_Executive** 서비스를 다시 시작합니다.
 
-    -   프록시 서버 설정이 http://silverlight.dlservice.microsoft.com 및 http://download.microsoft.com에서 다운로드하지 않도록 방지하는 경우 또 다른 일반적인 다운로드 문제가 발생합니다.
+    -   프록시 서버 설정이 http://silverlight.dlservice.microsoft.com, http://download.microsoft.com 및/또는 http://go.microsoft.com에서 다운로드하지 않도록 방지하는 경우 또 다른 일반적인 다운로드 문제가 발생합니다.
 
 업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 및 서비스](/sccm/core/servers/manage/updates#a-namebkmkinconsolea-in-console-updates-and-servicing)를 참조하세요.
 

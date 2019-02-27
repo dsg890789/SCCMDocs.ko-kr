@@ -4,12 +4,12 @@ ms.author: aaroncz
 ms.prod: configuration-manager
 ms.topic: include
 ms.date: 11/27/2018
-ms.openlocfilehash: c91cf0abb8cb79fe92e34b6b234a4c8264af75ab
-ms.sourcegitcommit: 6e42785c8c26e3c75bf59d3df7802194551f58e1
+ms.openlocfilehash: f6e46f8b0bf985eae87cd5157f8a82af5fa0b849
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52456943"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56142581"
 ---
 ##  <a name="BKMK_OSImagesApplyUpdates"></a> 이미지에 소프트웨어 업데이트 적용  
 
@@ -43,9 +43,9 @@ ms.locfileid: "52456943"
 
     a.  **일정**: 사이트가 이미지에 소프트웨어 업데이트를 적용하는 일정을 지정합니다.  
 
-    b.  **오류 발생 시 계속**: 오류가 있어도 계속 이미지에 소프트웨어 업데이트를 적용하려면 이 옵션을 선택합니다.  
+    b.  **오류 발생 시 계속**:  오류가 있어도 계속 이미지에 소프트웨어 업데이트를 적용하려면 이 옵션을 선택합니다.  
 
-    c.  **이미지로 배포 지점 업데이트**: 사이트가 소프트웨어 업데이트를 적용한 후 배포 지점에서 이미지를 업데이트하려면 이 옵션을 선택합니다.  
+    c.  **이미지가 포함된 배포 지점 업데이트**: 사이트가 소프트웨어 업데이트를 적용한 후 배포 지점에서 이미지를 업데이트하려면 이 옵션을 선택합니다.  
 
 6.  업데이트 예약 마법사를 완료합니다.  
 
@@ -56,8 +56,8 @@ ms.locfileid: "52456943"
 ### <a name="servicing-operations"></a>서비스 작업
 
 Configuration Manager 콘솔의 **OS 이미지** 또는 **OS 업그레이드 패키지** 노드에서 보기에 다음 열을 추가합니다.
-- **예약된 업데이트 날짜**:이 속성은 사용자가 정의한 다음 예약을 표시합니다.  
-- **예약된 업데이트 상태**:이 속성은 상태를 표시합니다. 예를 들어 **성공** 또는 **처리 중**입니다.  
+- **예약된 업데이트 날짜**: 이 속성은 사용자가 정의한 다음 예약을 표시합니다.  
+- **예약된 업데이트 상태**: 이 속성은 상태를 보여 줍니다. 예를 들어 **성공** 또는 **처리 중**입니다.  
 
 특정 이미지 개체를 선택한 다음, 결과 창에서 **업데이트 상태** 탭으로 전환합니다. 이 탭은 이미지의 업데이트 목록을 표시합니다. 
 
@@ -82,4 +82,5 @@ Configuration Manager 콘솔의 **OS 이미지** 또는 **OS 업그레이드 패
 사이트 서버에 없는 드라이버를 선택하면 Configuration Manager가 **자동**을 선택한 것과 동일하게 작동합니다. 
 
 오프라인 서비스를 제공하는 동안 Configuration Manager는 임시 파일을 `<drive>:\ConfigMgr_OfflineImageServicing` 폴더에 저장합니다. 또한 이 폴더에 OS 이미지를 탑재합니다. 
+
 

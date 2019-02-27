@@ -10,12 +10,13 @@ ms.assetid: 500a9aa6-68aa-44eb-bf49-350c1314a697
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 597ce060dc1fb37f1cc827da3e1c059958a91163
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6f094e2e6eab0067f51cb7fcd193a4acc914fc5c
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32332732"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56134955"
 ---
 # <a name="custom-locations-for-system-center-configuration-manager-site-database-files"></a>System Center Configuration Manager 사이트 데이터베이스 파일에 대한 사용자 지정 위치
 
@@ -28,9 +29,9 @@ ms.locfileid: "32332732"
 
  새 기본 사이트 또는 중앙 관리 사이트를**설치하는 동안** 다음을 수행할 수 있습니다.  
 
--   **사이트 데이터베이스에 대해 기본이 아닌 파일 위치 지정**: Configuration Manager 설치 프로그램은 이러한 위치를 사용하여 사이트 데이터베이스를 만듭니다.  
+-   **사이트 데이터베이스에 기본이 아닌 파일 위치 지정**: 그러면 Configuration Manager가 이 위치를 사용하여 사이트 데이터베이스를 만듭니다.  
 
--   **사용자 지정 파일 위치를 사용하는 미리 만든 SQL Server 데이터베이스 사용 지정**:  Configuration Manager 설치 프로그램은 이 미리 만든 데이터베이스와 미리 구성된 파일 위치를 사용합니다.  
+-   **사용자 지정 파일 위치를 사용하는 미리 만든 SQL Server 데이터베이스 사용 지정**:  그러면 Configuration Manager 설정이 미리 만든 데이터베이스와 미리 구성된 파일 위치를 사용합니다.  
 
 **설치 후**에는 사이트 데이터베이스 파일의 위치를 변경할 수 있습니다. 이렇게 하려면 사이트를 중지하고 SQL Server에서 파일 위치를 편집해야 합니다.  
 

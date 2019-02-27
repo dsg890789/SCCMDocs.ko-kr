@@ -10,12 +10,13 @@ ms.assetid: 2e27b0b7-7bd3-45cd-bc99-9c991606c637
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a67fb2d070c971004418ba47c9eb56b6b0de3e5a
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 088f300e475e7299ae0f589790c6c9bfabea3544
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32335867"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56132560"
 ---
 # <a name="plan-a-client-migration-strategy-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트 마이그레이션 전략 계획
 
@@ -34,9 +35,9 @@ ms.locfileid: "32335867"
 ##  <a name="Planning_for_Client_Agent_Migration"></a> 클라이언트를 대상 계층 구조로 마이그레이션하도록 계획  
  원본 계층의 클라이언트를 마이그레이션하면 클라이언트 컴퓨터의 클라이언트 소프트웨어가 업그레이드되어 대상 계층의 제품 버전과 일치하게 됩니다.  
 
--   **Configuration Manager 2007 원본 계층:** 지원되는 Configuration Manager 버전을 실행하는 원본 계층의 클라이언트를 마이그레이션하면 클라이언트 소프트웨어가 대상 계층의 클라이언트 버전으로 업그레이드됩니다.  
+-   **Configuration Manager 2007 소스 계층 구조:** 지원되는 버전의 Configuration Manager를 실행하는 원본 계층의 클라이언트를 마이그레이션하면 클라이언트 소프트웨어가 대상 계층의 클라이언트 버전으로 업데이트됩니다.  
 
--   **System Center 2012 Configuration Manager 이상 원본 계층:** 제품 버전이 같은 계층 간에 클라이언트를 마이그레이션하면 클라이언트 소프트웨어가 변경되거나 업그레이드되지 않습니다. 대신 클라이언트가 원본 계층에서 대상 계층의 사이트로 재할당됩니다.  
+-   **System Center 2012 Configuration Manager 이상의 소스 계층 구조:** 제품 버전이 같은 계층 간에 클라이언트를 마이그레이션하면 클라이언트 소프트웨어가 변경되거나 업그레이드되지 않습니다. 대신 클라이언트가 원본 계층에서 대상 계층의 사이트로 재할당됩니다.  
 
     > [!NOTE]  
     >  계층의 제품 버전이 대상 계층으로의 마이그레이션을 지원하지 않는 경우 원본 계층의 모든 사이트와 클라이언트를 호환되는 제품 버전으로 업그레이드하십시오. 원본 계층이 지원되는 제품 버전으로 업그레이드되면 계층 간에 마이그레이션할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 마이그레이션을 수행하기 위한 필수 조건](../../core/migration/prerequisites-for-migration.md)의 [마이그레이션에 지원되는 Configuration Manager 버전](../../core/migration/prerequisites-for-migration.md#BKMK_SupportedMigrationVersions)을 참조하세요.  

@@ -10,12 +10,13 @@ ms.assetid: 1d58176e-abc0-4087-8583-ce70deb4dcf5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 515385c6c6855e63dc32b522edff9cd2047331bd
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a41b2c0931fc3deb72ff92d8b12b433ef5651aa1
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32343037"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56129598"
 ---
 # <a name="security-and-privacy-for-site-administration-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사이트 관리를 위한 보안 및 개인 정보
 
@@ -98,7 +99,7 @@ Configuration Manager에서는 이러한 보안 그룹을 자동으로 만들고
 
 SCW(보안 구성 마법사)를 사용하여 네트워크상의 서버에 적용할 수 있는 보안 정책을 만들 수 있습니다. System Center Configuration Manager 템플릿을 설치하고 나면 SCW에서 Configuration Manager 사이트 시스템 역할, 서비스, 포트 및 애플리케이션을 인식합니다. 그런 다음 Configuration Manager에 필요한 통신을 허용하고 필요 없는 통신을 차단합니다.  
 
-보안 구성 마법사는 Microsoft 다운로드 센터에서 다운로드할 수 있는 System Center 2012 Configuration Manager용 도구 키트에 함께 포함되어 있습니다. 링크([System Center 2012 – Configuration Manager 구성 요소 추가 기능 및 확장](http://go.microsoft.com/fwlink/p/?LinkId=251931))를 포함하여 보안 구성 마법사에 대한 항목이 업데이트되었습니다.  
+보안 구성 마법사는 Microsoft 다운로드 센터에서 다운로드할 수 있는  System Center 2012 Configuration Manager용 도구 키트에 함께 포함되어 있습니다.  [System Center 2012 – Configuration Manager 구성 요소 추가 기능 및 확장](http://go.microsoft.com/fwlink/p/?LinkId=251931)  
 
 **사이트 시스템에 대한 고정 IP 주소를 구성합니다.**  
 
@@ -106,7 +107,7 @@ SCW(보안 구성 마법사)를 사용하여 네트워크상의 서버에 적용
 
 또한 고정 IP 주소를 사용하면 IPsec 구성이 더 쉽습니다. IPsec 사용은 Configuration Manager에서 사이트 시스템 간 통신을 보호하기 위한 보안 모범 사례입니다.  
 
-**사이트 시스템 서버에 기타 응용 프로그램을 설치하지 않습니다.**  
+**사이트 시스템 서버에 기타 애플리케이션을 설치하지 않습니다.**  
 
 사이트 시스템 서버에 기타 애플리케이션을 설치하면 Configuration Manager의 공격을 받을 수 있는 취약점이 증가하고 비호환성 문제가 발생할 수 있습니다.  
 
@@ -116,7 +117,7 @@ SCW(보안 구성 마법사)를 사용하여 네트워크상의 서버에 적용
 
 **Configuration Manager 관리자를 제한하고 모니터링하며, 역할 기반 관리를 사용하여 이러한 사용자에게 필요한 최소 권한을 부여합니다.**  
 
-신뢰할 수 있는 사용자에게만 Configuration Manager에 대한 관리 권한을 부여하고 기본 제공 보안 역할을 사용하거나 보안 역할을 사용자 지정하여 최소 권한만 부여합니다. 응용 프로그램, 작업 순서, 소프트웨어 업데이트, 구성 항목 및 구성 기준을 만들고 수정하고 배포할 수 있는 관리자는 잠재적으로 Configuration Manager 계층 구조의 디바이스를 제어할 수 있습니다.  
+신뢰할 수 있는 사용자에게만 Configuration Manager에 대한 관리 권한을 부여하고 기본 제공 보안 역할을 사용하거나 보안 역할을 사용자 지정하여 최소 권한만 부여합니다. 애플리케이션, 작업 순서, 소프트웨어 업데이트, 구성 항목 및 구성 기준을 만들고 수정하고 배포할 수 있는 관리자는 잠재적으로 Configuration Manager 계층 구조의 장치를 제어할 수 있습니다.  
 
 정기적으로 관리자 할당과 권한 수준을 감사하여 변경이 필요한지 확인합니다.  
 
@@ -193,7 +194,7 @@ Configuration Manager를 백업하는 경우 인증서와 공격자가 가장하
 
  다음 보안 모범 사례를 사용하면 Configuration Manager에 대해 SQL Server를 보호할 수 있습니다.  
 
- **Configuration Manager 사이트 데이터베이스 서버를 사용하여 다른 SQL Server 응용 프로그램을 실행하지 않습니다.**  
+ **Configuration Manager 사이트 데이터베이스 서버를 사용하여 다른 SQL Server 애플리케이션을 실행하지 않습니다.**  
 
  Configuration Manager 사이트 데이터베이스 서버에 대한 액세스를 늘리면 Configuration Manager 데이터의 위험도 늘어납니다. Configuration Manager 사이트 데이터베이스 보안이 손상되면 같은 SQL Server 컴퓨터에 있는 다른 애플리케이션도 위험해집니다.  
 

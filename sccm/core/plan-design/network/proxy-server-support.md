@@ -10,12 +10,13 @@ ms.assetid: 9123a87a-0b6f-43c7-b5c2-fac5d09686b1
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 78694282dae7408e1f9e01fd75585f87aef41da7
-ms.sourcegitcommit: 1826664216c61691292ea2a79e836b11e1e8a118
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5123bd51de9678666b28ec464e811dafdd91a30d
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39383560"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156562"
 ---
 # <a name="proxy-server-support-in-configuration-manager"></a>Configuration Manager의 프록시 서버 지원
 
@@ -75,7 +76,7 @@ ms.locfileid: "39383560"
 이러한 설정은 소프트웨어 업데이트 지점 속성의 **프록시 및 계정 설정** 탭에 있습니다.  
 
 > [!NOTE]  
->  자동 배포 규칙을 실행하면 기본적으로 자동 배포 규칙을 만든 서버의 **시스템** 계정을 사용하여 인터넷에 연결하고 소프트웨어 업데이트를 다운로드합니다. 또는 사이트 시스템 프록시 서버 계정을 구성하고 사용합니다. 
+>  기본적으로 자동 배포 규칙을 실행하면 자동 배포 규칙을 만든 사이트 서버의 **시스템** 계정을 사용하여 인터넷에 연결하고 소프트웨어 업데이트를 다운로드합니다. 또는 사이트 시스템 프록시 서버 계정을 구성하고 사용합니다. 
 >   
 >  이 계정이 인터넷에 액세스할 수 없으면 소프트웨어 업데이트를 다운로드하지 못합니다. 다음 항목이 **ruleengine.log**에 로깅됩니다.  
 > `Failed to download the update from internet. Error = 12007.`  
@@ -90,12 +91,12 @@ ms.locfileid: "39383560"
 
 3.  사이트 시스템 속성에서 **프록시** 탭으로 전환합니다. 다음 프록시 설정을 구성합니다.  
 
-    - **인터넷에서 정보를 동기화할 때 프록시 서버 사용**: 사이트 시스템 서버가 프록시 서버를 사용하도록 설정하려면 이 옵션을 선택합니다.  
+    - **인터넷의 정보를 동기화할 때 프록시 서버 사용**: 사이트 시스템 서버가 프록시 서버를 사용하도록 설정하려면 이 옵션을 선택합니다.  
 
     - **프록시 서버 이름**: 사용자 환경에서 프록시 서버의 호스트 이름 또는 FQDN을 지정합니다.  
 
     - **포트**: 프록시 서버와 통신할 네트워크 포트를 지정합니다. 기본적으로 포트 **80**을 사용합니다.  
 
-    - **자격 증명을 사용하여 프록시 서버에 연결**: 대다수의 프록시 서버는 사용자에게 인증을 요구합니다. 기본적으로 사이트 시스템 서버는 해당 컴퓨터 계정을 사용하여 프록시 서버에 연결합니다. 필요한 경우, 이 옵션을 활성화하고 **설정**을 클릭한 다음, **기존 계정**을 선택하거나 **새 계정**을 지정합니다. 이러한 자격 증명은 **사이트 시스템 프록시 서버 계정**입니다.  자세한 내용은 [Configuration Manager에 사용되는 계정](/sccm/core/plan-design/hierarchy/accounts)을 참조하세요.  
+    - **자격 증명을 사용하여 프록시 서버에 연결**: 대부분의 프록시 서버에서는 사용자 인증이 필요합니다. 기본적으로 사이트 시스템 서버는 해당 컴퓨터 계정을 사용하여 프록시 서버에 연결합니다. 필요한 경우, 이 옵션을 활성화하고 **설정**을 클릭한 다음, **기존 계정**을 선택하거나 **새 계정**을 지정합니다. 이러한 자격 증명은 **사이트 시스템 프록시 서버 계정**입니다.  자세한 내용은 [Configuration Manager에 사용되는 계정](/sccm/core/plan-design/hierarchy/accounts)을 참조하세요.  
 
 4.  **확인**을 클릭하여 새 프록시 서버 구성을 저장합니다.  

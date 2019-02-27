@@ -10,12 +10,13 @@ ms.assetid: 15a4e323-9f42-4fea-bb14-f2b905d1f77c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 7caffbbccfa53ef4e502685263cb0d81c6e83535
-ms.sourcegitcommit: 0b0c2735c4ed822731ae069b4cc1380e89e78933
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a94cb1338e010bfbd9ed1e2ecf7bdb5ba2418390
+ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32336642"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56120694"
 ---
 # <a name="how-to-deploy-clients-to-unix-and-linux-servers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 UNIX 및 Linux 서버에 클라이언트를 배포하는 방법
 
@@ -56,7 +57,7 @@ System Center Configuration Manager를 사용하여 Linux 또는 UNIX 서버를 
 
 -   **-sitecode &lt;사이트 코드\>** 는 클라이언트에 할당되는 사이트 코드를 지정합니다.  
 
-     예: S01  
+     예제: S01  
 
 -   &lt;속성 #1> &lt;속성 #2>는 설치 스크립트에 사용할 명령줄 속성을 지정합니다.  
 
@@ -145,7 +146,7 @@ System Center Configuration Manager를 사용하여 Linux 또는 UNIX 서버를 
 
      PKI 인증서를 지정 하려면이 속성을 사용 하지 않는 경우 자체 서명 된 인증서를 사용 하는 클라이언트 및 사이트 시스템에 대 한 모든 통신은 HTTP를 통해.  
 
-     에 잘못 된 인증서를 지정 하는 경우 클라이언트 설치 명령줄, 오류가 반환 되지 않습니다. 인증서 유효성 검사는 클라이언트를 설치한 후 발생 때문입니다. 클라이언트 시작, 인증서는 관리 지점과 유효성이 검사 되 고 인증서 유효성 검사에 실패 하는 경우 다음 메시지가 나타납니다에 때 **scxcm.log**, Unix 및 Linux Configuration Manager 클라이언트 로그 파일: **실패 관리 지점에 대 한 인증서의 유효성을 검사**. 기본 로그 파일 위치는  **/var/opt/microsoft/scxcm.log**입니다.  
+     에 잘못 된 인증서를 지정 하는 경우 클라이언트 설치 명령줄, 오류가 반환 되지 않습니다. 인증서 유효성 검사는 클라이언트를 설치한 후 발생 때문입니다. 클라이언트가 시작되면 관리 지점을 통해 인증서의 유효성을 검사하고, 인증서 유효성 검사에 실패하면 다음 메시지가 Unix 및 Linux Configuration Manager 클라이언트 로그 파일인 **scxcm.log**에 표시됩니다. **관리 지점에 대한 인증서 유효성 검사 실패** 기본 로그 파일 위치는  **/var/opt/microsoft/scxcm.log**입니다.  
 
     > [!NOTE]  
     >  클라이언트를 설치할 때는 이 속성을 지정해야 하며, **-mp** 속성을 사용하여 HTTPS 클라이언트 연결만 허용하도록 구성된 관리 지점을 지정해야 합니다.  
@@ -194,7 +195,7 @@ System Center Configuration Manager를 사용하여 Linux 또는 UNIX 서버를 
 
      선택 사항입니다. 전체 경로 지정 하 고 **.cer** 사이트 서버의 내보낸된 자체 서명 된 인증서의 파일 이름입니다. PKI 인증서를 사용할 수 없는 경우 Configuration Manager 사이트 서버에서 자체 서명된 인증서를 자동으로 생성합니다.  
 
-     이러한 인증서는 관리 지점에서 다운로드 하는 클라이언트 정책이 의도 한 사이트에서 보낸 유효성을 검사 하는데 사용 됩니다. 설치 중에 자체 서명된 인증서를 지정하지 않았거나 인증서를 변경해야 하는 경우 **certutil** 유틸리티를 사용합니다. certutil에 대한 자세한 내용은 [Linux 및 UNIX용 클라이언트에서 인증서를 관리하는 방법](../../../core/clients/manage/manage-clients-for-linux-and-unix-servers.md#BKMK_ManageLinuxCerts)을 참조하세요.  
+     이러한 인증서는 관리 지점에서 다운로드 하는 클라이언트 정책이 의도 한 사이트에서 보낸 유효성을 검사 하는데 사용 됩니다. 설치 중에 자체 서명된 인증서를 지정하지 않았거나 인증서를 변경해야 하는 경우 **certutil** 유틸리티를 사용합니다. certutil에 대한 자세한 내용은 [How to manage certificates on the client for Linux and UNIX](../../../core/clients/manage/manage-clients-for-linux-and-unix-servers.md#BKMK_ManageLinuxCerts) 항목을 참조하세요.  
 
      이 인증서는 **SMS** 인증서 저장소를 통해 검색할 수 있으며 주체 이름이 **사이트 서버** 이고 이름이 **사이트 서버 서명 인증서**입니다.  
 
