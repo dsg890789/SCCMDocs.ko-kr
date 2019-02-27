@@ -2,7 +2,7 @@
 title: 공동 관리를 사용 하 여 Windows Autopilot
 titleSuffix: Configuration Manager
 description: 새 Windows 10 장치 등록 집합을 간소화 하기 위해 Configuration Manager에서 공동 관리를 사용 하 여 Windows Autopilot을 사용 합니다.
-ms.date: 01/14/2019
+ms.date: 02/21/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c9867b7ea59b435bd1fd344dd0bf4aa67a2be21
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 28710b925444d681a161eff184b845a1cdd430b1
+ms.sourcegitcommit: ef2960bd91655c741450774e512dd0a9be610625
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56755374"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56838755"
 ---
 # <a name="windows-autopilot-with-co-management"></a>공동 관리를 사용 하 여 Windows Autopilot
 
@@ -94,5 +94,9 @@ IT 서비스를 사용 하 여 위치로 이동 하 여 원격 작업자 폐기�
 
 ## <a name="configure"></a>구성
 
-자세한 내용은 [Windows Autopilot을 사용 하 여 Intune에서 등록 된 Windows 장치](https://docs.microsoft.com/intune/enrollment-autopilot)합니다.
+자세한 내용은 다음 아티클을 참조하세요.
+
+[Intune을 사용 하 여 Windows Autopilot 프로필을 만들려면](https://docs.microsoft.com/intune/enrollment-autopilot)
+
+[기존 장치에 대 한 Windows Autopilot](/sccm/osd/deploy-use/windows-autopilot-for-existing-devices) 작업 순서
 
