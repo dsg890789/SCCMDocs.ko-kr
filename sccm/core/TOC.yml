@@ -386,6 +386,8 @@ items:
       href: plan-design/network/proxy-server-support.md
     - name: 릴리스 정보
       href: servers/deploy/install/release-notes.md
+    - name: Configuration Manager의 상태 메시지
+      href: plan-design/hierarchy/state-messaging-system-center-configuration-manager.md
     - name: 유니코드 및 ASCII 지원
       href: plan-design/hierarchy/unicode-and-ascii-support.md
 - name: 인프라 관리
@@ -758,9 +760,9 @@ items:
       href: clients/manage/upgrade/upgrade-clients-for-linux-and-unix-servers.md
     - name: Mac 클라이언트 업그레이드
       href: clients/manage/upgrade/upgrade-clients-on-mac-computers.md
-ms.openlocfilehash: 24a09ebe4efb69eda4f9530266b3e8bb22f48864
-ms.sourcegitcommit: e7e5ca04601270ea7af90183123d5db1d42784da
+ms.openlocfilehash: 97eb6fe3dac61766ca7f561807e6ee0dd48e1559
+ms.sourcegitcommit: ef2960bd91655c741450774e512dd0a9be610625
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56422224"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56838806"

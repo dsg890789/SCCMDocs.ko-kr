@@ -49,6 +49,8 @@ items:
     items:
     - name: 최신 버전으로 Windows 업그레이드
       href: deploy-use/upgrade-windows-to-the-latest-version.md
+    - name: 기존 디바이스에 대한 Windows Autopilot
+      href: deploy-use/windows-autopilot-for-existing-devices.md
     - name: 새 버전의 Windows로 기존 컴퓨터 새로 고침
       href: deploy-use/refresh-an-existing-computer-with-a-new-version-of-windows.md
     - name: 새 컴퓨터에 새 버전의 Windows 설치(완전 복구)
@@ -124,9 +126,9 @@ items:
     href: understand/task-sequence-variables.md
   - name: 작업 순서 미디어에 대한 시작 전 명령
     href: understand/prestart-commands-for-task-sequence-media.md
-ms.openlocfilehash: 583f3b6e7fb239455e37253c205a8cc2fc0a5998
-ms.sourcegitcommit: 8661f10596f565ca2b7bdb5951388b44b3b622ee
+ms.openlocfilehash: c0d57368fc08fc08dcee0cca6a844d1344f8c762
+ms.sourcegitcommit: ef2960bd91655c741450774e512dd0a9be610625
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "48817686"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56838738"

@@ -5,18 +5,18 @@ description: 소프트웨어 센터의 기능에 대해 알아봅니다.
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.date: 07/30/2018
+ms.date: 02/20/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.assetid: 9e68de6e-2b33-442b-b674-a382728d9529
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: da01c741107d4eb4a707f7f0d8ada5d82706f292
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: eacd1d1be2564b718423b9d0db8d24b60aac1adb
+ms.sourcegitcommit: 369db96ee84299b5ab6d74b177e6366b3017fc54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56119894"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56589920"
 ---
 # <a name="software-center-user-guide"></a>소프트웨어 센터 사용자 가이드
 
@@ -45,7 +45,7 @@ Windows 10 컴퓨터에서 소프트웨어 센터를 시작하는 가장 간단�
 - **모두**: 설치할 수 있는 모든 애플리케이션을 표시합니다.
 - **필수**: IT 관리자는 이러한 애플리케이션을 적용합니다. 이러한 애플리케이션 중 하나를 제거하는 경우 소프트웨어 센터는 해당 프로그램을 다시 설치합니다.
 - **필터**: IT 관리자는 애플리케이션의 범주를 만들 수 있습니다. 지원되는 경우 드롭 다운 목록을 클릭하여 특정 범주에서 해당 애플리케이션에만 뷰를 필터링합니다. **모두**를 선택하여 모든 애플리케이션을 표시합니다.
-- **정렬 기준**: 애플리케이션의 목록을 다시 정렬합니다. 기본적으로 이 목록은 **가장 최근** 기준으로 정렬됩니다.
+- **정렬 기준**: 애플리케이션의 목록을 다시 정렬합니다. 기본적으로 이 목록은 **가장 최근** 기준으로 정렬됩니다. 최근에 사용할 수 있는 애플리케이션은 7일 동안 볼 수 있는 **New** 태그와 함께 나열됩니다.
 - **검색**: 원하는 항목을 찾을 수 없으신가요? 검색 상자에 키워드를 입력하여 찾으세요.
 -  **보기 전환**: 아이콘을 클릭하여 목록 보기와 타일 보기 간에 보기를 전환합니다. 기본적으로 애플리케이션 목록은 그래픽 타일로 표시됩니다. 
     - 타일 보기: IT 관리자는 아이콘을 사용자 지정할 수 있습니다. 아래 각 타일은 애플리케이션 이름, 게시자 및 버전을 표시합니다. 
