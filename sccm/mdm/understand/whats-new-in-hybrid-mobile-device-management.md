@@ -2,7 +2,7 @@
 title: 하이브리드 MDM의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 디바이스 관리 기능에 대해 알아봅니다.
-ms.date: 02/19/2019
+ms.date: 02/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d65f6493ca3d067e31b6602c711ab1fbf9408a1
-ms.sourcegitcommit: e7e5ca04601270ea7af90183123d5db1d42784da
+ms.openlocfilehash: f5c55b48da8e3be356cb91979a8e478a6ac2e43a
+ms.sourcegitcommit: 0bf253085adeca0d9ea62d76497eb5ebf5ce89da
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56422241"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57012499"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 디바이스 관리의 새로운 기능
 
@@ -51,6 +51,22 @@ ms.locfileid: "56422241"
 ## <a name="february-2019"></a>2019 년 2 월
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+#### <a name="create-new-intune-tenants-in-azure-portal"></a>Azure portal에서 새 Intune 테 넌 트 만들기
+<!--3754067--> Intune은 1902의 업데이트는 새 하이브리드 MDM 테 넌 트를 만들 수 있습니다 제거 되었습니다. Azure portal에서 모든 새 Intune 테 넌 트를 만듭니다. 거듭 말하지만 [하이브리드 MDM은 사용 되지 않습니다.](/sccm/mdm/understand/hybrid-mobile-device-management)합니다. 현재 하이브리드 MDM 고객을 Intune 독립 실행형 가능한 한 빨리 마이그레이션해야 합니다.
+
+자세한 내용은 [Intune 지원 블로그 게시물](https://aka.ms/hybrid_notification)을 참조하세요.
+
+
+#### <a name="intune-uses-google-play-protect-apis-on-android-devices"></a>Intune에서 Google Play 보호 Api를 사용 하 여 Android 장치에서 
+<!--2577355--> 일부 관리자는 사용자가 루트 있습니다 위치 하는 BYOD 가로 또는 탈 옥 직면 하는 휴대폰입니다. 이 동작을 되지는 잘못-내려온, 하는 동안 최종 사용자 장치에서 조직의 데이터를 보호 하기 위해 설정 된 여러 Intune 정책의 바이패스를 발생 합니다. 따라서 Intune 등록 및 등록 되지 않은 장치에 대 한 루트 및 탈 옥 검색을 제공합니다. 
+
+이 릴리스에서 Intune은 이제 Google Play 보호 Api에 등록 되지 않은 장치에 대 한 기존 루트 검색 검사는 추가할 활용 합니다. Google에서 발생 하는 루트 검색 검사의 전체를 공유 하지 않습니다 반면 이전 장치에서 최신 OS 업데이트를 가져오는 것을 장치 사용자 지정에서 어떤 이유로 장치 루 사용자를 검색 하는 이러한 Api 예정입니다. 이러한 사용자에이 게 회사 데이터에 액세스 하지 못하도록 차단 될 수 있습니다 또는 해당 정책 사용 하도록 설정 앱에서 회사 계정을 초기화할 수 있습니다. 
+
+
+#### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10"></a>새 **앱 범주** Windows 10 용 회사 포털 앱에서 화면
+<!--3834780--> Windows 10 용 회사 포털에서에서 앱 찾아보기 및 선택 환경을 개선 하기 위해 이제 여기 라는 새 화면이 **앱 범주**합니다. 이제 사용자와 같은 범주로 정렬 하는 앱을 볼 **추천**를 **교육용**, 및 **생산성**합니다. 이 변경 내용이 10.3.3451.0 회사 포털 버전 이상. 새 화면을 보려면 [앱 UI의에서 새로운 기능](https://docs.microsoft.com/intune/whats-new)합니다. 회사 포털에서 앱에 대 한 자세한 내용은 참조 하세요. [설치 하 고 장치에서 앱 공유](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows)합니다.  
+
 
 #### <a name="macos-users-are-prompted-to-update-their-password"></a>macOS 사용자는 자신의 암호를 업데이트 하 라는 메시지가 표시 됩니다. 
 <!--1873216--> MacOS 장치에서 최종 사용자에 게 해당 암호를 업데이트 하 라는 메시지가 표시 됩니다. 이 프롬프트는 사용자 장치에 로그인과 같은 인증에 필요한 작업을 실행할 때마다 발생 합니다. 사용자가 키 집합 액세스를 요청 하는 등의 관리 권한이 필요한 작업을 수행 하는 경우 자신의 암호를 업데이트 하 라는 메시지도 표시 합니다.  
