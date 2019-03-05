@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c4f085bc418bc2a78452d54bd579cd362112e64
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: df8f8c850612d0c0f87683b9bbd17f34e97dcf47
+ms.sourcegitcommit: ef2960bd91655c741450774e512dd0a9be610625
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56135020"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56838891"
 ---
 # <a name="whats-new-in-version-1806-of-configuration-manager-current-branch"></a>Configuration Manager 1806 버전의 새로운 기능
 
@@ -276,7 +276,7 @@ Version 1806 drops support for the following products:
 ### <a name="support-for-new-windows-app-package-formats"></a>새로운 Windows 앱 패키지 형식에 대한 지원 
 <!--1357427--> Configuration Manager는 이제 새 Windows 10 앱 패키지(.msix) 및 앱 번들(.msixbundle) 형식의 배포를 지원합니다. 
 
-자세한 내용은 [Windows 애플리케이션 만들기](/sccm/apps/get-started/creating-windows-applications#bkmk_general)를 참조하세요.
+자세한 내용은 [Windows 애플리케이션 만들기](/sccm/apps/get-started/creating-windows-applications#bkmk_msix)를 참조하세요.
 
 
 ### <a name="uninstall-application-on-approval-revocation"></a>승인 취소 시 애플리케이션 제거

@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3f1ca26c4cbc6de21565948ab2f161e2ccf0ea0
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 02f3df4b8c090df960f1052a25c1f6cc8ef45395
+ms.sourcegitcommit: ef2960bd91655c741450774e512dd0a9be610625
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56128258"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56838772"
 ---
 # <a name="create-a-configuration-manager-technical-preview-lab-in-azure"></a>Azure에서 Configuration Manager Technical Preview 랩 만들기
 
@@ -117,10 +117,10 @@ Active Directory 도메인 컨트롤러
 - IIS(인터넷 정보 서비스)
 
 
-### `<prefix>MPDP`
+### `<prefix>DPMP`
 
-- 관리 지점
 - 배포 지점
+- 관리 지점
 
 #### <a name="windows-features-and-roles"></a>Windows 기능 및 역할
 - .NET
