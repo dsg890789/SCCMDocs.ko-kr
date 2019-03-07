@@ -5,18 +5,18 @@ description: 공동 관리를 위해 Windows 10 인터넷 기반 장치를 준�
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.date: 01/14/2019
+ms.date: 03/05/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 101de2ba-9b4d-4890-b087-5d518a4aa624
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbe26eee8b01c581776b1c134e1fe59cf4293e1a
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 31779b3588617816df4309461ed7715b20b0abd4
+ms.sourcegitcommit: f3dd8405018fe1043434386be15c16752c1a4a3c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56755208"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57558034"
 ---
 # <a name="how-to-prepare-internet-based-devices-for-co-management"></a>공동 관리에 대 한 인터넷 기반 장치를 준비 하는 방법
 
@@ -51,7 +51,9 @@ Azure AD에 가입할 때 자동으로 등록을 Intune에 장치를 구성 하�
 ### <a name="autopilot-for-existing-devices"></a>기존 장치에 대 한 autopilot
 <!--1358333-->
 
-[기존 장치에 대 한 Windows Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) 사용 가능한 Windows 10, 버전 1809 이상이 됩니다. 이 기능을 사용 하면 이미지로 다시 설치에 대 한 Windows 7 장치를 프로 비전 하 [Windows Autopilot 사용자 기반 모드](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) 단일, 기본 Configuration Manager 작업 순서를 사용 합니다. 
+[기존 장치에 대 한 Windows Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) Windows 10 1809 이상 버전에서에서 사용할 수 있습니다. 이 기능을 사용 하면 이미지로 다시 설치에 대 한 Windows 7 장치를 프로 비전 하 [Windows Autopilot 사용자 기반 모드](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) 단일, 기본 Configuration Manager 작업 순서를 사용 합니다. 
+
+자세한 내용은 [기존 장치 작업 순서에 대 한 Windows Autopilot](/sccm/osd/deploy-use/windows-autopilot-for-existing-devices)합니다.
 
 
 
@@ -87,6 +89,11 @@ Azure AD에 가입할 때 자동으로 등록을 Intune에 장치를 구성 하�
     
      자세한 내용은 참조 하세요. [Crl에 대 한 계획](/sccm/core/plan-design/security/plan-for-security#-plan-for-the-site-server-signing-certificate-self-signed)  
 
+1810 버전부터 사이트 게시 추가 Azure AD 정보를 CMG (클라우드 관리 게이트웨이)를 합니다. Azure AD에 가입된 클라이언트는 가입된 동일한 테넌트를 사용하여 ccmsetup 프로세스 중에 CMG에서 이 정보를 가져옵니다. 이 동작은 둘 이상의 Azure AD 테넌트가 있는 환경의 공동 관리에 디바이스를 등록하는 작업을 추가로 간소화합니다. 두 개만 필요한 ccmsetup 속성은 이제 **CCMHOSTNAME** 하 고 **SMSSiteCode**합니다.<!--3607731-->
+
+> [!Note]
+> Intune에서 Configuration Manager 클라이언트를 이미 배포 하는 경우 새 명령줄 및 새 MSI를 사용 하 여 Intune 앱을 업데이트 합니다. <!-- SCCMDocs-pr issue 3084 -->
+
 다음 예제를 포함 하 여 이러한 모든 속성:   
 `ccmsetup.exe CCMHOSTNAME=CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72186325152220500 SMSSiteCode=ABC AADCLIENTAPPID=7506ee10-f7ec-415a-b415-cd3d58790d97 AADRESOURCEURI=https://contososerver SMSMP=https://mp1.contoso.com`
 
@@ -102,6 +109,9 @@ Azure AD에 가입할 때 자동으로 등록을 Intune에 장치를 구성 하�
 3. **기타**에서 **기간 업무 앱**을 선택합니다.  
 
 4. 업로드 합니다 **ccmsetup.msi** 앱 패키지 파일입니다. 사이트 서버의 다음 폴더는 Configuration Manager에서이 파일을 찾을: `<ConfigMgr installation directory>\bin\i386`합니다.  
+
+    > [!Tip]  
+    > 사이트를 업데이트 하는 경우 Intune에서이 앱을 업데이트할 수도 있습니다 있는지 확인 합니다.  
 
 5. 앱이 업데이트 되 면 Configuration Manager에서 복사한 명령줄을 사용 하 여 앱 정보를 구성 합니다.  
 
