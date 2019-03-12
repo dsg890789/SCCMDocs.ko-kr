@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5c6cee6422d3fc8777f54bd42716748410c9323
-ms.sourcegitcommit: ceec0e20bf801071f2a05233f984cf17acc3fd29
+ms.openlocfilehash: b3edf45c5b4eb62d5bfdd795f104c40da1ee1526
+ms.sourcegitcommit: 56ec6933cf7bfc93842f55835ad336ee3a1c6ab5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56265073"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57211706"
 ---
 # <a name="log-files-in-configuration-manager"></a>Configuration Manager의 로그 파일
 
@@ -576,6 +576,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |PrestageContent.log|사전 준비된 원격 배포 지점에서 ExtractContent.exe 도구를 사용하는 방법에 대한 세부 정보를 기록합니다. 이 도구는 파일로 내보낸 콘텐츠를 추출합니다.|사이트 시스템 역할|  
 |SMSdpmon.log|배포 지점에 구성된 배포 지점 상태 모니터링 예약 작업에 대한 세부 정보를 기록합니다.|사이트 시스템 역할|  
 |smsdpprov.log|기본 사이트에서 받은 압축 파일의 압축 풀기에 대한 세부 정보를 기록합니다. 이 로그는 원격 배포 지점의 WMI 공급자가 생성합니다.|사이트 서버와 함께 있지 않은 배포 지점 컴퓨터|  
+|smsdpusage.log|배포 지점 사용량 요약 보고서에 대한 데이터를 실행하고 수집하는 smsdpusage.exe에 대한 세부 정보를 기록합니다.|사이트 시스템 역할|  
 
 ###  <a name="BKMK_DiscoveryLog"></a> 검색  
 다음 표에는 검색과 관련된 정보가 포함된 로그 파일이 나열되어 있습니다.  

@@ -2,7 +2,7 @@
 title: 버전 1810의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager 최신 라인인 1810 버전에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
-ms.date: 02/19/2019
+ms.date: 03/02/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,28 +11,28 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 703b8be554f0a7ed1601703d381e4ed7c317af77
-ms.sourcegitcommit: 369db96ee84299b5ab6d74b177e6366b3017fc54
+ms.openlocfilehash: 7d8a3c6c73d30d7d5e8e825cd20baa334214dceb
+ms.sourcegitcommit: 33a006204f7f5f9b9acd1f3e84c4bc207362d00a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56589869"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305799"
 ---
 # <a name="whats-new-in-version-1810-of-configuration-manager-current-branch"></a>Configuration Manager 1810 버전의 새로운 기능
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Configuration Manager의 현재 분기에 대한 1810 업데이트는 콘솔 내 업데이트로 사용할 수 있습니다. 1710, 1802 또는 1806 버전을 실행하는 사이트에서 이 업데이트를 적용합니다. <!-- baseline only statement: When installing a new site, it's also available as a baseline version.-->
+Configuration Manager의 현재 분기에 대한 1810 업데이트는 콘솔 내 업데이트로 사용할 수 있습니다. 1710, 1802 또는 1806 버전을 실행하는 사이트에서 이 업데이트를 적용합니다. <!-- baseline only statement: When installing a new site, it's also available as a baseline version.--> 이 문서에는 Configuration Manager 버전 1810의 변경 내용과 새로운 기능이 요약되어 있습니다.  
 
 이 업데이트를 설치하기 위한 최신 검사 목록을 항상 검토하세요. 자세한 내용은 [업데이트 1810을 설치하기 위한 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1810)을 참조하세요. 사이트를 업데이트한 후 [업데이트 후 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1810#post-update-checklist)도 검토하세요.
+
+새 Configuration Manager 기능을 활용하려면 먼저 클라이언트를 최신 버전으로 업데이트합니다. 사이트 및 콘솔을 업데이트할 때 Configuration Manager 콘솔에 새 기능이 표시되지만 클라이언트 버전도 최신 버전이 될 때까지 전체 시나리오가 작동하지 않습니다.
 
 > [!Note]  
 > 이 문서는 현재 이 버전의 모든 중요한 기능을 나열합니다. 그러나 일부 섹션은 새 기능에 대한 추가 정보가 있는 업데이트된 콘텐츠에 아직 연결되지 않았습니다. 이 페이지에서 정기적으로 업데이트를 확인하세요. 변경 내용은 ***[업데이트]*** 태그로 표시됩니다. 이 표시는 콘텐츠가 최종 버전이 되면 제거될 것입니다.  
 
-> [!Important]  
-> 새 Configuration Manager 기능을 활용하려면 먼저 클라이언트를 최신 버전으로 업데이트합니다. 사이트 및 콘솔을 업데이트할 때 Configuration Manager 콘솔에 새 기능이 표시되지만 클라이언트 버전도 최신 버전이 될 때까지 전체 시나리오가 작동하지 않습니다.
-
-이 문서는 Configuration Manager, 버전 1810에서 변경 내용 및 새로운 기능을 요약합니다.  
+> [!Tip]  
+> 이 페이지가 업데이트될 때 알림을 받으려면 다음 URL을 복사하여 RSS 피드 판독기에 붙여넣으세요. `https://docs.microsoft.com/api/search/rss?search=%22what%27s+new+in+version+1810+-+Configuration+Manager%22&locale=en-us`
 
 
 
@@ -176,9 +176,10 @@ Version 1810 drops support for the following products:
 ## <a name="bkmk_app"></a> 애플리케이션 관리
 
 ### <a name="convert-applications-to-msix"></a>애플리케이션을 MSIX로 변환
-<!--1359029--> 버전 1806부터 Configuration Manager는 새 Windows 10 앱 패키지(.msix) 형식의 배포를 지원합니다. 이제 기존 Windows Installer(.msi) 애플리케이션을 MSIX 형식으로 변환할 수 있습니다.
+<!--3607729, fka 1359029-->
+ ***[업데이트]*** 버전 1806부터 Configuration Manager에서 새 Windows 10 앱 패키지(.msix) 형식의 배포를 지원합니다. 이제 기존 Windows Installer(.msi) 애플리케이션을 MSIX 형식으로 변환할 수 있습니다.
 
-<!--For more information, see [Create Windows applications](/sccm/apps/get-started/creating-windows-applications#bkmk_general).  this might move to a new section for msix-->
+자세한 내용은 [Windows 애플리케이션 만들기](/sccm/apps/get-started/creating-windows-applications#bkmk_msix)를 참조하세요.  
 
 
 ### <a name="repair-applications"></a>애플리케이션 복구
@@ -207,11 +208,11 @@ PowerShell 프로필은 PowerShell이 시작될 때 실행되는 스크립트입
 ## <a name="bkmk_osd"></a> OS 배포
 
 ### <a name="task-sequence-support-of-windows-autopilot-for-existing-devices"></a>기존 디바이스에 대한 Windows Autopilot의 작업 순서 지원
-<!--1358333-->
+<!--3607717, fka 1358333-->
 
-[기존 디바이스에 대한 Windows Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)은 이제 Windows 10 버전 1809 이상에서 사용할 수 있습니다. 이 새로운 기능을 사용하면 단일, 네이티브 Configuration Manager 작업 순서를 사용하여 [Windows Autopilot 사용자 기반 모드](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven)용으로 Windows 7 디바이스를 이미지로 다시 설치하고 프로비전할 수 있습니다. 
+***[업데이트]*** 이제 [기존 디바이스에 대한 Windows Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)을 Windows 10 버전 1809 이상에서 사용할 수 있습니다. 이 새로운 기능을 사용하면 단일, 네이티브 Configuration Manager 작업 순서를 사용하여 [Windows Autopilot 사용자 기반 모드](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven)용으로 Windows 7 디바이스를 이미지로 다시 설치하고 프로비전할 수 있습니다. 
 
-<!--For more information, see []().--> 
+자세한 내용은 [기존 디바이스에 대한 Windows Autopilot](/sccm/osd/deploy-use/windows-autopilot-for-existing-devices)을 참조하세요.
 
 
 ### <a name="specify-the-drive-for-offline-os-image-servicing"></a>오프라인 OS 이미지 서비스용 드라이브 지정  
@@ -227,7 +228,10 @@ PowerShell 프로필은 PowerShell이 시작될 때 실행되는 스크립트입
 
 
 ### <a name="improvements-to-driver-maintenance"></a>드라이버 유지 관리 기능 개선
-<!--1358270--> 이제 드라이버 패키지에는 **제조업체** 및 **모델**에 대한 추가 메타데이터 필드가 포함됩니다. 이러한 필드를 사용하여 일반적인 하우스키핑을 지원하거나 삭제할 수 있는 이전 및 중복 드라이버를 식별하기 위한 정보로 드라이버 패키지에 태그를 지정합니다.
+<!--3607716, fka 1358270-->
+ ***[업데이트]*** 이제 드라이버 패키지에 **제조업체** 및 **모델**에 대한 추가 메타데이터 필드가 포함됩니다. 이러한 필드를 사용하여 일반적인 하우스키핑을 지원하거나 삭제할 수 있는 이전 및 중복 드라이버를 식별하기 위한 정보로 드라이버 패키지에 태그를 지정합니다.
+
+자세한 내용은 [드라이버 관리](/sccm/osd/get-started/manage-drivers)를 참조하세요.
 
 
 ### <a name="new-task-sequence-variable-for-last-action-name"></a>마지막 작업 이름에 대한 새 작업 순서 변수
@@ -378,6 +382,8 @@ Configuration Manager용 Windows PowerShell cmdlet의 변경 내용에 대한 �
 | ID | 제목 | 날짜 | 콘솔 내 |
 |---------|---------|---------|---------|
 | [4487960](https://support.microsoft.com/help/4487960) | Microsoft Intune 커넥터 인증서가 Configuration Manager에서 갱신되지 않음 | 2019년 1월 18일 | 예 |
+| [4490434](https://support.microsoft.com/help/4490434) | Configuration Manager에서 중복 사용자 검색 열이 만들어짐 | 2019년 2월 22일 | 예 |
+| [4490575](https://support.microsoft.com/help/4490575) | Configuration Manager 버전 1810에서 업데이트 설치가 응답을 중지하거나 완료를 표시하지 않음 | 2019년 2월 22일 | 예 |
 
 
 ## <a name="next-steps"></a>다음 단계

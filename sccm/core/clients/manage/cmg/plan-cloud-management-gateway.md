@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8eff4154f5799ef0d6411b077f50753d203310e
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 0a66ba04defcea48db143487cc08bc5dc330cf2c
+ms.sourcegitcommit: ef2960bd91655c741450774e512dd0a9be610625
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56126780"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56838908"
 ---
 # <a name="plan-for-the-cloud-management-gateway-in-configuration-manager"></a>Configuration Manager에서 클라우드 관리 게이트웨이 계획
 
@@ -208,7 +208,8 @@ Fourth Coffee는 시애틀 본사의 온-프레미스 데이터 센터에 중앙
 | 소프트웨어 배포(디바이스 대상)     | ![지원됨](media/green_check.png) |
 | 소프트웨어 배포(사용자 대상, 필수)<br>(Azure AD 통합 포함)     | ![지원됨](media/green_check.png)  (1710) |
 | 소프트웨어 배포(사용자 대상, 사용 가능)<br>([모든 요구 사항](/sccm/apps/deploy-use/deploy-applications#deploy-user-available-applications-on-azure-ad-joined-devices)) | ![지원됨](media/green_check.png)  (1802) |
-| Windows 10 전체 업그레이드 작업 순서     | ![지원됨](media/green_check.png)  (1802) |
+| Windows 10 전체 업그레이드 작업 순서      | ![지원됨](media/green_check.png)  (1802) |
+| 부팅 이미지를 사용하지 않고 **작업 순서를 시작하기 전에 모든 콘텐츠를 로컬에 다운로드** 옵션을 사용하여 배포되는 작업 순서      | ![지원됨](media/green_check.png)  (1802) |
 | CMPivot     | ![지원됨](media/green_check.png)  (1806) |
 | 다른 작업 순서 시나리오     | ![지원되지 않음](media/Red_X.png) |
 | 클라이언트 강제 설치     | ![지원되지 않음](media/Red_X.png) |

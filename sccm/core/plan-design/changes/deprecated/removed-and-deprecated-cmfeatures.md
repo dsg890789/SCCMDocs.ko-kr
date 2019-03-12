@@ -2,7 +2,7 @@
 title: 사용되지 않는 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 더 이상 지원하지 않는 기능에 대해 알아보세요.
-ms.date: 01/30/2019
+ms.date: 02/21/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a207399f5baa1b00be954ef4d0eb432939ed261
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 40469e8173303eb7ad46ef8e716529c37ec6e76d
+ms.sourcegitcommit: ef2960bd91655c741450774e512dd0a9be610625
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56127306"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56838789"
 ---
 # <a name="removed-and-deprecated-features-for-configuration-manager"></a>Configuration Manager에서 제거되는 기능과 이후 지원되지 않는 기능
 
@@ -32,6 +32,7 @@ ms.locfileid: "56127306"
 
 |기능|처음 중단 발표|제거된&nbsp;지원|  
 |-----------|---|--------------|  
+|Azure 콘텐츠 공유를 위한 구현이 변경되었습니다. 콘텐츠 지원 클라우드 관리 게이트웨이를 사용합니다. 나중에는 기존 클라우드 배포 지점을 만들 수 없습니다.|2019년 2월|2019년 11월 1일 이후 릴리스된 첫 번째 버전|
 |클라우드 관리 게이트웨이 및 클라우드 배포 지점에 대한 클래식 서비스 배포. 자세한 내용은 [CMG 계획](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#azure-resource-manager)을 참조하세요.|2018년 11월|2019년 7월 1일 이후 릴리스된 첫 번째 버전| 
 |Mac 및 Linux용 System Center Endpoint Protection<br>자세한 내용은 [지원 종료 블로그 게시물](https://go.microsoft.com/fwlink/?linkid=870182)을 참조하세요.|2018년 10월|2018년 12월 31일|
 |온-프레미스 조건부 액세스<br>자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.|2019년 1월 30일|2019년 9월 1일|

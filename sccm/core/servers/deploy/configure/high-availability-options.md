@@ -2,7 +2,7 @@
 title: 고가용성
 titleSuffix: Configuration Manager
 description: 사용 가능한 서비스를 높은 수준으로 유지하는 옵션을 사용하여 Configuration Manager를 배포하는 방법을 알아봅니다.
-ms.date: 07/30/2018
+ms.date: 03/06/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b69fac83283963e49b01c733fb8fa3000702cfb
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 424b841360efbebef96ba5980c4ea7a45995ea0a
+ms.sourcegitcommit: 544f335cfd1bfd0a1d4973439780e9f5e9ee8bed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56132169"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57562145"
 ---
 # <a name="high-availability-options-for-configuration-manager"></a>Configuration Manager의 고가용성 옵션
 
@@ -214,6 +214,8 @@ Configuration Manager 클라이언트 자치성에는 다음 동작이 포함됩
 > 이 섹션은 Configuration Manager 1802 이전 버전에만 적용됩니다. 버전 1806부터 Configuration Manager는 사이트 서버에 대해 고가용성 옵션을 제공합니다. 자세한 내용은 [사이트 서버 고가용성](/sccm/core/servers/deploy/configure/site-server-high-availability)을 참조하세요.  
 
 Configuration Manager는 Windows Server 클러스터 또는 NLB 클러스터의 각 사이트에 사이트 서버 설치를 지원하지 않습니다.  
+
+1810 버전부터 Configuration Manager 설치 프로세스는 더 이상 장애 조치 클러스터링을 위한 Windows 역할이 있는 컴퓨터에 사이트 서버 역할의 설치를 차단하지 않습니다. SQL Always On에는 이 역할이 필요하므로 이전에는 사이트 서버에 사이트 데이터베이스를 공동 배치할 수 없었습니다. 이 변경을 사용하면 SQL Always On 및 사이트 서버를 수동 모드에서 사용하여 더 적은 수의 서버로 고가용성 사이트를 만들 수 있습니다. <!--3607761, fka 1359132-->  
 
 다음 정보를 참조하면 사이트 서버에 장애가 발생하거나 작동하지 않는 경우에 대비할 수 있습니다.  
 

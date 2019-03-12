@@ -2,7 +2,7 @@
 title: 클라우드 배포 지점
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 클라우드 배포 지점을 사용하여 Microsoft Azure를 통해 소프트웨어 콘텐츠를 배포하기 위한 계획과 디자인입니다.
-ms.date: 11/27/2018
+ms.date: 02/21/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,16 +11,22 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1f251d1356c0cc04ce285aa0ea9a131e5f21ee0f
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 44eaef29da0635bdf81a02839f60d1c1081d9dec
+ms.sourcegitcommit: ef2960bd91655c741450774e512dd0a9be610625
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156977"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56838857"
 ---
 # <a name="use-a-cloud-distribution-point-in-configuration-manager"></a>Configuration Manager에서 클라우드 배포 지점 사용
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
+
+> [!Important]  
+> Azure 콘텐츠 공유를 위한 구현이 변경되었습니다. **CMG가 클라우드 배포 지점으로 기능하고 Azure 스토리지에서 콘텐츠를 제공하도록 허용** 옵션을 사용하도록 설정하여 콘텐츠 지원 클라우드 관리 게이트웨이를 사용합니다. 자세한 내용은 [CMG 수정](/sccm/core/clients/manage/cmg/setup-cloud-management-gateway#modify-a-cmg)을 참조하세요.
+> 
+> 나중에는 기존 클라우드 배포 지점을 만들 수 없습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요. 
+
 
 클라우드 배포 지점은 Microsoft Azure에서 PaaS(Platform-as-a-Service)로 호스팅되는 Configuration Manager 배포 지점입니다. 이 서비스에서 지원하는 시나리오는 다음과 같습니다.  
 

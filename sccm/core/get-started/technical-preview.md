@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa55a8e7c46df0c0d946e7e7c9f93e894bc49b89
-ms.sourcegitcommit: e7e5ca04601270ea7af90183123d5db1d42784da
+ms.openlocfilehash: d9dee0aa39454d41f217cbe646845bf42076d3af
+ms.sourcegitcommit: 56ec6933cf7bfc93842f55835ad336ee3a1c6ab5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56422207"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57211621"
 ---
 # <a name="technical-preview-for-configuration-manager"></a>Configuration Manager에 대한 기술 미리 보기
 
@@ -30,6 +30,8 @@ ms.locfileid: "56422207"
 
 Configuration Manager *현재 분기*의 새로운 기능에 대한 자세한 내용은 [Configuration Manager 증분 버전의 새로운 기능](/sccm/core/plan-design/changes/whats-new-incremental-versions)을 참조하세요.
 
+> [!Tip]  
+> 이 페이지가 업데이트될 때 알림을 받으려면 다음 URL을 복사하여 RSS 피드 판독기에 붙여넣으세요. `https://docs.microsoft.com/api/search/rss?search=%22technical+preview+releases+-+Configuration+Manager%22&locale=en-us`
 
 
 ##  <a name="bkmk_reqs"></a> 요구 사항 및 제한 사항  

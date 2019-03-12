@@ -2,7 +2,7 @@
 title: 1810에 대한 검사 목록
 titleSuffix: Configuration Manager
 description: Configuration Manager 버전 1810으로 업데이트하기 전에 수행할 작업을 알아봅니다.
-ms.date: 11/27/2018
+ms.date: 02/28/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99bde59429af4d75e7e1dfab42d627d3a973efe6
-ms.sourcegitcommit: ceec0e20bf801071f2a05233f984cf17acc3fd29
+ms.openlocfilehash: 11a67aa698340cd100ded1ca64b9a97960bc6b9b
+ms.sourcegitcommit: 56ec6933cf7bfc93842f55835ad336ee3a1c6ab5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56265015"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57211672"
 ---
 # <a name="checklist-for-installing-update-1810-for-configuration-manager"></a>Configuration Manager용 업데이트 1810을 설치하기 위한 검사 목록
 
@@ -75,7 +75,7 @@ Configuration Manager의 현재 분기를 사용하는 경우 버전 1810용 콘
 자세한 내용은 [라이선스 및 분기](/sccm/core/understand/learn-more-editions)를 참조하세요.
 
 #### <a name="review-microsoft-net-versions"></a>Microsoft .NET 버전 검토 
-사이트에서 이 업데이트를 설치할 때 Configuration Manager에서 자동으로.NET Framework 4.5.2를 설치합니다. 이 필수 구성 요소가 이미 설치되지 않은 경우 사이트는 다음 사이트 시스템 역할 중 하나를 호스트하는 각 서버에 설치합니다.
+사이트에서 이 업데이트를 설치할 때 최소 요구 사항인 .NET Framework 4.5가 설치되어 있지 않으면 Configuration Manager에서 자동으로 .NET Framework 4.5.2를 설치합니다. 이 필수 구성 요소가 이미 설치되지 않은 경우 사이트는 다음 사이트 시스템 역할 중 하나를 호스트하는 각 서버에 설치합니다.
 
 -   관리 지점
 -   서비스 연결 지점

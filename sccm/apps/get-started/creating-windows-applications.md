@@ -2,7 +2,7 @@
 title: Windows 애플리케이션 만들기
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 Windows 응용 프로그램을 만들고 배포하는 방법에 대한 자세한 정보를 알아봅니다.
-ms.date: 07/30/2018
+ms.date: 02/21/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-app
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fa26147539abc611b86791f6dd9a4be0bc89c59
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: c70212962342bd254a5024c17bb292783b760233
+ms.sourcegitcommit: ef2960bd91655c741450774e512dd0a9be610625
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156477"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56838874"
 ---
 # <a name="create-windows-applications-in-configuration-manager"></a>Configuration Manager에서 Windows 애플리케이션 만들기
 
@@ -30,13 +30,7 @@ Windows 장치에 대한 애플리케이션을 만들어 배포할 때는 [애�
 
 Configuration Manager는 Windows 8.1 및 Windows 10 디바이스용 Windows 앱 패키지(.appx)와 앱 번들(.appxbundle) 형식의 배포를 지원합니다.
 
-버전 1806부터 Configuration Manager는 새 Windows 10 앱 패키지(.msix) 및 앱 번들(.msixbundle) 형식도 지원합니다. 최신 [Windows Insider Preview](https://insider.windows.com/) 빌드는 현재 이러한 새 형식을 지원합니다.<!--1357427-->  
-
-- MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.com/sgern/2018/06/18/a-closer-look-at-msix/)(MSIX 자세히 살펴보기)를 참조하세요.  
-
-- 새 MSIX 앱을 만드는 방법은 [MSIX support introduced in Insider Build 17682](https://techcommunity.microsoft.com/t5/MSIX-Blog/MSIX-support-introduced-in-Insider-Build-17682/ba-p/202376)(Insider 빌드 17682에서 도입된 MSIX 지원)를 참조하세요.  
-
-Configuration Manager 콘솔에서 응용 프로그램을 만들 때 응용 프로그램 설치 파일 **형식**을 **Windows 앱 패키지(\*.appx, \*.appxbundle, \*.msix, \*.msixbundle)** 로 선택합니다. 자세한 내용은 [애플리케이션 만들기](/sccm/apps/deploy-use/create-applications)를 참조하세요. 
+Configuration Manager 콘솔에서 애플리케이션을 만들 때 애플리케이션 설치 파일 **형식**을 **Windows 앱 패키지(\*.appx, \*.appxbundle, \*.msix, \*.msixbundle)** 로 선택합니다. 일반적인 앱 만들기에 대한 자세한 내용은 [애플리케이션 만들기](/sccm/apps/deploy-use/create-applications)를 참조하세요. MSIX 형식에 대한 자세한 내용은 [MSIX 형식 지원](#bkmk_msix)을 참조하세요. 
 
 > [!Note]  
 > 새 Configuration Manager 기능을 활용하려면 먼저 클라이언트를 최신 버전으로 업데이트합니다. 사이트 및 콘솔을 업데이트할 때 Configuration Manager 콘솔에 새 기능이 표시되지만 클라이언트 버전도 최신 버전이 될 때까지 전체 시나리오가 작동하지 않습니다.<!--SCCMDocs issue 646-->  
@@ -60,6 +54,63 @@ Configuration Manager는 Windows의 <!--SCCMDocs-pr issue 2762--> 버전에서 �
 
 > [!Note]  
 > 사용자가 이미 로그인한 디바이스에서 프로비전된 응용 프로그램을 제거해야 할 경우 두 개의 제거 배포를 만들어야 합니다. 첫 번째 제거 배포를 디바이스를 포함하는 디바이스 컬렉션의 대상으로 지정합니다. 두 번째 제거 배포를 프로비전된 응용 프로그램을 사용하여 디바이스에 이미 로그인한 사용자를 포함하는 사용자 컬렉션의 대상으로 지정합니다. 디바이스에서 프로비전된 앱을 제거하는 경우 Windows는 현재 사용자를 위해 해당 앱을 제거하지 않습니다. 
+
+
+
+## <a name="bkmk_msix"></a> MSIX 형식 지원
+<!--1357427-->
+
+버전 1806부터 Configuration Manager는 새 Windows 10 앱 패키지(.msix) 및 앱 번들(.msixbundle) 형식을 지원합니다. Windows 10 버전 1809 이상에서 이러한 새 형식을 지원합니다.  
+
+- MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.com/sgern/2018/06/18/a-closer-look-at-msix/)(MSIX 자세히 살펴보기)를 참조하세요.  
+
+- 새 MSIX 앱을 만드는 방법은 [MSIX support introduced in Insider Build 17682](https://techcommunity.microsoft.com/t5/MSIX-Blog/MSIX-support-introduced-in-Insider-Build-17682/ba-p/202376)(Insider 빌드 17682에서 도입된 MSIX 지원)를 참조하세요.  
+
+
+### <a name="convert-applications-to-msix"></a>애플리케이션을 MSIX로 변환
+<!--3607729, fka 1359029-->
+
+버전 1810부터 기존 Windows Installer(.msi) 애플리케이션을 MSIX 형식으로 변환합니다. 
+
+#### <a name="prerequisites"></a>필수 구성 요소
+- Windows 10 버전 1809 이상을 실행하는 참조 디바이스  
+
+- 이 디바이스에서 로컬 관리 권한을 가진 사용자로 Windows에 로그인  
+
+- 이 디바이스에 다음 앱을 설치합니다.  
+
+    - Configuration Manager 콘솔  
+
+    - Microsoft Store에서 [MSIX 패키징 도구](https://www.microsoft.com/store/productId/9N5LW3JBCXKF)를 설치합니다.  
+
+    - [MSIX 패키징 도구 드라이버](https://docs.microsoft.com/windows/msix/packaging-tool/mpt-known-issues#msix-packaging-tool-driver-considerations)<!--SCCMDocs-pr issue #3091-->를 설치합니다.  
+
+이 디바이스에 다른 앱이나 서비스를 설치하지 마세요. 이 디바이스는 참조 시스템입니다. 
+
+#### <a name="process-to-convert-applications-to-msix-format"></a>애플리케이션을 MSIX 형식으로 변환하는 프로세스
+1. Configuration Manager 콘솔의 권한을 상승시키고, **소프트웨어 라이브러리** 작업 영역으로 이동하고, **애플리케이션 관리**를 확장하고, **애플리케이션** 노드를 선택합니다.  
+
+2. Windows Installer(.msi) 배포 유형의 애플리케이션을 선택합니다.  
+
+    > [!Note]  
+    > 참조 장치에서 애플리케이션의 원본 콘텐츠에 액세스할 수 있어야 합니다.  
+    > 
+    > 애플리케이션의 이름에 특수 문자를 사용할 수 없습니다. Configuration Manager는 앱 이름을 출력 파일의 이름으로 사용합니다.  
+    > 
+    > 참조 장치에 미리 이 애플리케이션을 설치하지 마세요.  
+
+3. 리본에서 **.MSIX로 변환**을 선택합니다.
+
+마법사가 완료되면 MSIX 패키징 도구가 마법사에서 지정한 위치에 MSIX 파일을 만듭니다. 이 프로세스 중에 Configuration Manager는 참조 장치에 애플리케이션을 자동으로 설치합니다.
+
+프로세스가 실패하면 요약 페이지는 자세한 정보가 포함된 로그 파일을 가리킵니다. 사용자 상태 캡처 시 오류가 발생하면 Windows에서 로그아웃합니다. 다시 로그인하면 이 문제가 해결될 수 있습니다.
+
+이 MSIX 앱을 사용하려면 먼저 클라이언트가 신뢰할 수 있도록 디지털 서명해야 합니다. 이 프로세스에 대한 자세한 내용은 다음 문서를 참조하세요. 
+- [MSIX - MSIX 패키징 도구 - MSIX 패키지 서명](https://blogs.msdn.microsoft.com/sgern/2018/09/06/msix-the-msix-packaging-tool-signing-the-msix-package/)
+- [SignTool을 사용하여 앱 패키지에 서명하는 방법](https://docs.microsoft.com/windows/desktop/appxpkg/how-to-sign-a-package-using-signtool)
+
+앱에 서명한 후 Configuration Manager에서 응용 프로그램의 새 배포 유형을 만듭니다. 자세한 내용은 [애플리케이션의 배포 유형 만들기](/sccm/apps/deploy-use/create-applications#bkmk_create-dt)를 참조하세요.
+
 
 
 

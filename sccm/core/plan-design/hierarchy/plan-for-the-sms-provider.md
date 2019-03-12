@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6eeb74e3e8e83dd0082f45583bd2eb5dbe1df4e
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: aec16c4b55afd8c4baf7486794e07f29fa84aebf
+ms.sourcegitcommit: 223549003829fce7c6dc63959ee71e8b88542417
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56131611"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56951837"
 ---
 # <a name="plan-for-the-sms-provider"></a>SMS 공급자에 대한 계획 
 
@@ -51,7 +51,7 @@ SMS 공급자는 Configuration Manager 보안을 적용하는 데 도움이 됩�
 
  SMS 공급 기업을 지원하려면 대상 서버가 다음 필수 조건을 충족해야 합니다.  
 
--   사이트 서버 및 사이트 데이터베이스 사이트 시스템과 양방향 트러스트 관계가 있는 도메인에 있어야 함  
+-   사이트 서버 및 사이트 데이터베이스 사이트 시스템과 같은 도메인에 있어야 합니다.  
 
 -   다른 사이트의 사이트 시스템 역할을 보유할 수 없습니다.  
 

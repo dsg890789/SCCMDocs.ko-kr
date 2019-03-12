@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: b27682de-adf8-4edd-9572-54886af8f7fb
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c42cfb2b973084efc897c8f313e58541164d3fa2
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 8d83085637e971b47ee9941d76fef749660861aa
+ms.sourcegitcommit: 223549003829fce7c6dc63959ee71e8b88542417
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56123487"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56951854"
 ---
 #  <a name="automatically-deploy-software-updates"></a>소프트웨어 업데이트 자동 배포  
 
@@ -196,7 +196,7 @@ ADR을 사용하여 소프트웨어 업데이트를 자동으로 승인하고 �
     - **배포 패키지 없음**: 1806 버전부터 콘텐츠를 배포 지점에 처음 다운로드하여 배포하지 않고 디바이스에 소프트웨어 업데이트를 배포합니다. 이 설정은 대량의 업데이트 콘텐츠를 처리할 때 유용합니다. 또한 클라이언트가 항상 Microsoft 업데이트 클라우드 서비스에서 콘텐츠를 가져오도록 하려면 이 기능을 사용합니다. 이 시나리오에서 클라이언트는 이미 필요한 콘텐츠가 있는 피어로부터 콘텐츠를 다운로드할 수 있습니다. Configuration Manager 클라이언트는 계속 콘텐츠 다운로드를 관리하므로 Configuration Manager 피어 캐시 기능 또는 배달 최적화 같은 다른 기술을 활용할 수 있습니다. 이 기능은 Windows 및 Office 업데이트를 포함하여 Configuration Manager 소프트웨어 업데이트 관리에서 지원하는 모든 업데이트 유형을 지원합니다.<!--1357933-->  
 
         > [!Note]  
-        > 이 옵션은 새 자동 배포 규칙에 대해서만 적용됩니다. 이 설정으로 기존 규칙을 수정할 수는 없습니다.<!--SCCMDocs issue 741-->  
+        > 이 옵션을 선택하고 설정을 적용한 후에는 더 이상 변경할 수 없습니다. 다른 옵션은 회색으로 표시됩니다.<!--SCCMDocs-pr issue 3003-->  
 
 12. **배포 지점 페이지**에서 소프트웨어 업데이트 파일을 호스트할 배포 지점 또는 배포 지점 그룹을 지정합니다. 배포 지점에 대한 자세한 내용은 [배포 지점 구성](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_configs) 섹션을 참조하세요. 이 페이지는 새 소프트웨어 업데이트 배포 패키지를 만드는 경우에만 사용할 수 있습니다.  
   

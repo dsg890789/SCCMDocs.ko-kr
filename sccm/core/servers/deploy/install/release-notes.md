@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc19092f1272611ea3e05d708bf89bda1a4ba3b9
-ms.sourcegitcommit: 0a23cde6112cbb5987f433bffcf6f223b994ba72
+ms.openlocfilehash: c7e4307d61cccf968729f013ebaa4bfab4b0027e
+ms.sourcegitcommit: 56ec6933cf7bfc93842f55835ad336ee3a1c6ab5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56667463"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57211536"
 ---
 # <a name="release-notes-for-configuration-manager"></a>Configuration Manager의 릴리스 정보
 
@@ -26,13 +26,15 @@ Configuration Manager에서는 제품 릴리스 정보가 긴급한 문제로 �
 
 기능별 문서에는 핵심 시나리오에 영향을 주는 알려진 문제에 대한 정보가 포함됩니다.  
 
-> [!TIP]  
->  이 항목에는 Configuration Manager의 현재 분기에 대한 릴리스 정보가 포함되어 있습니다. 기술 미리 보기 분기에 대한 자세한 내용은 [기술 미리 보기](/sccm/core/get-started/technical-preview)를 참조하세요.  
+이 항목에는 Configuration Manager의 현재 분기에 대한 릴리스 정보가 포함되어 있습니다. 기술 미리 보기 분기에 대한 자세한 내용은 [기술 미리 보기](/sccm/core/get-started/technical-preview)를 참조하세요.  
 
 다른 버전에서 도입된 새 기능에 대한 자세한 내용은 다음 문서를 참조하세요.
 - [버전 1810의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1810)
 - [버전 1806의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1806)  
 - [버전 1802의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1802)
+
+> [!Tip]  
+> 이 페이지가 업데이트될 때 알림을 받으려면 다음 URL을 복사하여 RSS 피드 판독기에 붙여넣으세요. `https://docs.microsoft.com/api/search/rss?search=%22release+notes+-+Configuration+Manager%22&locale=en-us`
 
 
 
