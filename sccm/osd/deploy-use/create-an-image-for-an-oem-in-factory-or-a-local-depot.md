@@ -13,7 +13,7 @@ manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 56ac5353052fdba2884b6caee8f56d0835028e3e
 ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/12/2019
 ms.locfileid: "56135588"
@@ -45,7 +45,7 @@ System Center Configuration Manager에서 사전 준비된 미디어 배포를 �
 -   **미디어 및 PXE만(숨김)**  
 
 ## <a name="create-the-prestaged-media"></a>사전 준비된 미디어 만들기  
- OEM 또는 로컬 저장소로 보낼 사전 준비된 미디어 파일을 만듭니다. 자세한 내용은 [Create prestaged media with System Center Configuration Manager](create-prestaged-media.md)항목을 참조하세요.  
+ OEM 또는 로컬 저장소로 보낼 사전 준비된 미디어 파일을 만듭니다. 자세한 내용은 [System Center Configuration Manager에서 사전 준비된 미디어 만들기](create-prestaged-media.md)항목을 참조하세요.  
 
 ## <a name="send-the-prestaged-media-file-to-the-oem-or-local-depot"></a>사전 준비된 미디어 파일을 OEM 또는 로컬 저장소로 보냅니다.  
  OEM 또는 로컬 저장소로 미디어를 보내 컴퓨터를 사전 준비합니다. 사전 준비된 미디어 파일은 컴퓨터의 포맷된 하드 디스크에 적용됩니다.  
