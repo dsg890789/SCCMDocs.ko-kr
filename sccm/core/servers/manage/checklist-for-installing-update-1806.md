@@ -32,7 +32,7 @@ Configuration Manager의 현재 분기를 사용하는 경우 버전 1806용 콘
 
     -   dmpdownloader.log는 dmpdownloader 프로세스가 업데이트를 확인하기 전에 간격을 기다리고 있음을 나타낼 수 있습니다. 업데이트 재배포 파일의 다운로드를 다시 시작하기 위해 사이트 서버에서 **SMS_Executive** 서비스를 다시 시작합니다.
 
-    -   프록시 서버 설정이 http://silverlight.dlservice.microsoft.com 및 http://download.microsoft.com에서 다운로드하지 않도록 방지하는 경우 또 다른 일반적인 다운로드 문제가 발생합니다.
+    -   프록시 서버 설정이 http://silverlight.dlservice.microsoft.com 및 http://download.microsoft.com 에서 다운로드하지 않도록 방지하는 경우 또 다른 일반적인 다운로드 문제가 발생합니다.
 
 업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 및 서비스](/sccm/core/servers/manage/updates#a-namebkmkinconsolea-in-console-updates-and-servicing)를 참조하세요.
 

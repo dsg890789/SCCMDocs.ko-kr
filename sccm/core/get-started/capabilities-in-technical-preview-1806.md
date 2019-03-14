@@ -230,7 +230,7 @@ SCUP는 다른 카탈로그 및 시나리오를 계속 지원합니다. Configur
 <!--1358149--> Office 사용자 지정 도구는 Configuration Manager 콘솔에서 Office 365 설치 관리자와 통합됩니다. Office 365에 대한 배포를 만들 때 최신 Office 관리 효율성 설정을 이제 동적으로 구성할 수 있습니다. Office 사용자 지정 도구는 새로운 빌드의 Office 365의 릴리스와 동시에 업데이트됩니다. Office 365에서 새 관리 효율성 설정은 사용할 수 있으면 바로 활용할 수 있습니다. 
 
 ### <a name="prerequisites"></a>필수 구성 요소
-- Configuration Manager 콘솔을 실행하는 컴퓨터는 HTTPS 포트 443을 통한 인터넷 액세스가 필요합니다. Office 365 클라이언트 설치 마법사는 Windows 표준 웹 브라우저 API를 사용하여 https://config.office.com을 엽니다. 인터넷 프록시를 사용하는 경우 사용자는 이 URL에 액세스할 수 있어야 합니다.
+- Configuration Manager 콘솔을 실행하는 컴퓨터는 HTTPS 포트 443을 통한 인터넷 액세스가 필요합니다. Office 365 클라이언트 설치 마법사는 Windows 표준 웹 브라우저 API를 사용하여 https://config.office.com 을 엽니다. 인터넷 프록시를 사용하는 경우 사용자는 이 URL에 액세스할 수 있어야 합니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
  작업을 완료합니다. 그런 다음, [피드백](capabilities-in-technical-preview-1804.md#bkmk_feedback)을 전송하여 작업이 어떻게 진행되었는지 알려주세요.

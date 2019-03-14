@@ -26,7 +26,7 @@ ms.locfileid: "56122001"
 ## <a name="use-software-update-based-client-installation-for-active-directory-computers"></a>Active Directory 컴퓨터에 소프트웨어 업데이트 기반의 클라이언트 설치 사용  
  이 클라이언트 배포 방법은 기존 Windows 기술을 사용하며, Active Directory 인프라와 통합되고, Configuration Manager에서 구성 작업이 최소화되는 한편, 방화벽에 대해 구성하기 가장 쉽고, 가장 안전합니다. 그룹 정책 구성에 보안 그룹과 WMI 필터링을 사용하여 Configuration Manager 클라이언트를 설치할 컴퓨터를 더욱 유연하게 제어할 수 있습니다.  
 
- 자세한 내용은 [How to Install Configuration Manager Clients by Using Software Update-Based Installation](../../../../core/clients/deploy/deploy-clients-to-windows-computers.md#BKMK_ClientSUP)항목을 참조하세요.  
+ 자세한 내용은 [소프트웨어 업데이트 기반 설치를 사용하여 Configuration Manager 클라이언트를 설치하는 방법](../../../../core/clients/deploy/deploy-clients-to-windows-computers.md#BKMK_ClientSUP)항목을 참조하세요.  
 
 ## <a name="extend-the-active-directory-schema-and-publish-the-site-so-that-you-can-run-ccmsetup-without-command-line-options"></a>명령줄 옵션 없이 CCMSetup을 실행할 수 있도록 Active Directory 스키마를 확장하고 사이트 게시  
  Configuration Manager를 위해 Active Directory 스키마를 확장하고 Active Directory Domain Service에 사이트를 게시하면 많은 클라이언트 설치 속성이 Active Directory Domain Service에 게시됩니다. 컴퓨터에서 이러한 클라이언트 설치 속성을 찾을 수 있는 경우 Configuration Manager 클라이언트 배포 시 이러한 속성을 사용할 수 있습니다. 이 정보는 자동으로 생성되므로 수동으로 설치 속성을 입력하는 데 따른 사람의 실수 위험이 없습니다.  

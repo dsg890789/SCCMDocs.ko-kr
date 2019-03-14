@@ -26,7 +26,7 @@ System Center Configuration Manager 온-프레미스 모바일 디바이스 관�
 
 - **사용자 등록** - 이 방법에서는 사용자가 디바이스에서 등록 프로세스를 시작합니다. 사용자 등록이 성공하려면 디바이스에 신뢰할 수 있는 루트 인증서가 설치되어 있어야 하고 등록을 위해 Configuration Manager에서 사용자가 프로비전되어야 합니다.  디바이스를 등록하기 위해 사용자는 회사 자격 증명만 제공하면 되며 관리된 디바이스가 등록됩니다.  
 
-   자세한 내용은 [How users enroll devices with On-premises Mobile Device Management in System Center Configuration Manager](../../mdm/deploy-use/user-enroll-devices-on-premises-mdm.md)섹션을 참조하세요.  
+   자세한 내용은 [System Center Configuration Manager의 온-프레미스 모바일 디바이스 관리를 사용하여 디바이스를 등록하는 방법](../../mdm/deploy-use/user-enroll-devices-on-premises-mdm.md)섹션을 참조하세요.  
 
 - **대량 등록** - 이 방법에서는 디바이스 사용자가 등록을 시작할 필요가 없습니다. 대신 Configuration Manager에서 대량 등록 패키지가 만들어진 다음 디바이스에서 켜지고 열립니다. 패키지를 열면 디바이스를 등록하는 데 필요한 정보가 제공됩니다.  
 
