@@ -34,6 +34,8 @@ items:
     items:
     - name: 구성 관리자 클라이언트에 공동 관리 사용
       href: tutorial-co-manage-clients.md
+    - name: 인터넷 기반 디바이스의 공동 관리 가능
+      href: tutorial-co-manage-new-devices.md
   - name: 개념
     items:
     - name: 워크로드
@@ -48,9 +50,9 @@ items:
       href: how-to-switch-workloads.md
     - name: 공동 관리 모니터링
       href: how-to-monitor.md
-ms.openlocfilehash: bd369fa1393d42e70776d644d055b31eee2a208c
-ms.sourcegitcommit: a3cec96a771eed69e58a29917d1a3fe1a5fb2e73
+ms.openlocfilehash: ff313299137330aab790e62d1db127c0f1bb1808
+ms.sourcegitcommit: af8693048e6706ffda72572374f56e0bc7dfce2c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54251256"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737263"
