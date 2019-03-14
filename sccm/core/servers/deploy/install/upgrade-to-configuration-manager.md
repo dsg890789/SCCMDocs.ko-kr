@@ -148,7 +148,7 @@ System Center Configuration Manager로 업그레이드하기 전에 업그레이
 사이트 유지 관리 작업에 대한 자세한 내용은 다음을 참조하세요.  
 
 -   System Center 2012 Configuration Manager:  [Configuration Manager에 대한 유지 관리 작업 계획](https://technet.microsoft.com/library/gg712686.aspx)  
--   System Center Configuration Manager:  [Reference for maintenance tasks for System Center Configuration Manager](../../../../core/servers/manage/reference-for-maintenance-tasks.md)  
+-   System Center Configuration Manager:  [System Center Configuration Manager에 대한 유지 관리 작업 참조](../../../../core/servers/manage/reference-for-maintenance-tasks.md)  
 
 **설치 필수 구성 요소 검사기 실행**:  
 사이트를 업그레이드하기 전에 설치 프로그램과 별개로 **필수 구성 요소 검사기** 를 실행하여 사이트가 필수 조건을 충족하는지 확인합니다. 나중에 사이트를 업그레이드하면 필수 구성 요소 검사기가 다시 실행됩니다.  
