@@ -2,7 +2,7 @@
 title: O365 서비스에 대한 액세스 관리
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에서 관리되는 PC의 Office 365 서비스에 대한 조건부 액세스를 구성하는 방법을 알아봅니다.
-ms.date: 04/10/2018
+ms.date: 03/21/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -11,18 +11,19 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b45e9f586616a1f620864a6e6dc8d0777a118251
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 74a28863b2e30566b07890d57e927703d77247f6
+ms.sourcegitcommit: ec4411fe30770f90128cf6cbd181047db90040cb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56122290"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57881710"
 ---
 # <a name="manage-access-to-o365-services-for-pcs-managed-by-system-center-configuration-manager"></a>System Center Configuration Manager에서 관리되는 PC용 O365 서비스에 대한 액세스 관리
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-<!--1191496--> Configuration Manager에서 관리 되는 Pc에 대 한 Office 365 서비스에 대 한 조건부 액세스를 구성 합니다.  
+<!--1191496-->
+Configuration Manager에서 관리되는 PC의 Office 365 서비스에 대한 조건부 액세스를 구성합니다.  
 
 > [!Important]  
 > 하이브리드 MDM 포함 하 여 온-프레미스 조건부 액세스는 [사용 되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)합니다. 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->  
@@ -112,7 +113,7 @@ Microsoft Intune에서 등록하고 관리한 디바이스에 대한 조건부 �
 ### <a name="configure-active-directory-security-groups"></a>Active Directory 보안 그룹 구성  
  정책 유형에 따라 사용자 그룹을 대상으로 조건부 액세스 정책을 구성합니다. 이러한 그룹에는 정책의 대상으로 지정하거나 정책에서 제외되는 사용자가 포함됩니다. 정책의 대상이 사용자인 경우 서비스에 액세스하기 위해 해당 사용자가 사용하는 각 디바이스는 호환 가능해야 합니다.  
 
- Active Directory 보안 사용자 그룹입니다. 이러한 사용자 그룹은 Azure Active Directory와 동기화되어야 합니다. Office 365 관리 센터 또는 Intune 계정 포털에서 이러한 그룹을 구성할 수도 있습니다.  
+ Active Directory 보안 사용자 그룹입니다. 이러한 사용자 그룹은 Azure Active Directory와 동기화되어야 합니다. Microsoft 365 관리 센터 또는 Intune 계정 포털에서 이러한 그룹을 구성할 수도 있습니다.  
 
  각 정책에 두 그룹 유형을 지정할 수 있습니다. :  
 

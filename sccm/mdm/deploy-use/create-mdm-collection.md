@@ -2,7 +2,7 @@
 title: MDM 컬렉션 만들기
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager를 사용하여 MDM 컬렉션 만들기
-ms.date: 03/05/2017
+ms.date: 03/21/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0288b88187ead39f1cf584ebf88e3943549b01f
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 3ec7c4cd58fbb717ab586d355ba4f0bf5f91fd06
+ms.sourcegitcommit: ec4411fe30770f90128cf6cbd181047db90040cb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56124015"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57881659"
 ---
 # <a name="create-an-mdm-collection-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하여 MDM 컬렉션 만들기
 
@@ -25,7 +25,7 @@ ms.locfileid: "56124015"
 관리에 디바이스를 등록할 수 있는 사용자를 지정하려면 Configuration Manager 사용자 컬렉션이 필요합니다. Intune 라이선스는 사용자에 의해 할당되기 때문에 디바이스 컬렉션이 아니라 사용자 컬렉션만 사용할 수 있습니다.
 
 > [!NOTE]
-> Intune에 디바이스를 등록하기 위해 Office 365 포털이나 Azure Active Directory 포털에서 사용자에게 라이선스를 할당할 필요가 없습니다. [이후 단계](configure-intune-subscription.md)에서 Intune 구독과 연결된 컬렉션에 사용자를 포함하면 됩니다.
+> Intune 사용 하 여 장치를 등록 하려면 Microsoft 365 관리 센터 또는 Azure Active Directory 포털에서 사용자에 게 라이선스를 할당할 필요가 없습니다. [이후 단계](configure-intune-subscription.md)에서 Intune 구독과 연결된 컬렉션에 사용자를 포함하면 됩니다.
 
 테스트 목적으로 **직접 규칙**을 설정하고 디바이스를 등록할 수 있는 특정 사용자를 추가할 수 있습니다. Configuration Manager 콘솔에서 **자산 및 준수** > **사용자 컬렉션**을 차례로 선택하고 **홈** 탭 > **만들기** 그룹을 차례로 클릭한 다음 **사용자 컬렉션 만들기**를 클릭합니다. 광범위한 배포의 경우 **쿼리 규칙**을 사용하여 사용자를 정의해야 합니다. 컬렉션에 대한 자세한 내용은 [컬렉션을 만드는 방법](https://technet.microsoft.com/library/mt629371.aspx)을 참조하세요.
 

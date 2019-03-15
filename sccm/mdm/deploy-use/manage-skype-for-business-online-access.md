@@ -2,7 +2,7 @@
 title: 비즈니스용 Skype Online 액세스 관리
 titleSuffix: Configuration Manager
 description: 조건부 액세스 정책을 사용하여 비즈니스용 Skype Online에 대한 액세스를 관리하는 방법을 알아봅니다.
-ms.date: 12/22/2017
+ms.date: 03/21/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78c40d84b7d774d7621b983a6e2bb755b14f9563
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 601b58b2f955170e5ab2f038cb49306efe3b499c
+ms.sourcegitcommit: ec4411fe30770f90128cf6cbd181047db90040cb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56138367"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57881727"
 ---
 # <a name="manage-skype-for-business-online-access"></a>비즈니스용 Skype Online 액세스 관리
 
@@ -52,7 +52,7 @@ ms.locfileid: "56138367"
 ## <a name="configure-conditional-access-for-skype-for-business-online"></a>비즈니스용 Skype Online에 대한 조건부 액세스 구성  
 
 ### <a name="step-1-configure-active-directory-security-groups"></a>1단계: Active Directory 보안 그룹 구성  
- 시작하기 전에 조건부 액세스 정책에 대한 Azure Active Directory 보안 그룹을 구성합니다. Office 365 관리 센터에서 이러한 그룹을 구성합니다. 이러한 그룹에는 대상으로 지정한 사용자 또는 정책에서 제외된 사용자가 포함됩니다. 사용자가 정책의 대상인 경우 해당 사용자가 사용하는 각 디바이스가 규정을 준수해야 리소스에 액세스할 수 있습니다.  
+ 시작하기 전에 조건부 액세스 정책에 대한 Azure Active Directory 보안 그룹을 구성합니다. Microsoft 365 관리 센터에서 이러한 그룹을 구성 합니다. 이러한 그룹에는 대상으로 지정한 사용자 또는 정책에서 제외된 사용자가 포함됩니다. 사용자가 정책의 대상인 경우 해당 사용자가 사용하는 각 디바이스가 규정을 준수해야 리소스에 액세스할 수 있습니다.  
 
  비즈니스용 Skype 정책에 사용할 두 개의 그룹 유형을 지정할 수 있습니다.  
 

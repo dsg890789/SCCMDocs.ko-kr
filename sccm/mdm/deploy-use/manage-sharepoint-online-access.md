@@ -2,7 +2,7 @@
 title: SharePoint Online 액세스 관리
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager SharePoint Online 조건부 액세스 정책을 사용하여 OneDrive에 대한 액세스를 관리하는 방법을 알아봅니다.
-ms.date: 12/09/2017
+ms.date: 03/21/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 755be3231c00eabf9562256e62061fbad70633e7
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 69a160a3c7833f196d50185e551f619d68dc0925
+ms.sourcegitcommit: ec4411fe30770f90128cf6cbd181047db90040cb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56140952"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57881744"
 ---
 # <a name="manage-sharepoint-online-access-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 SharePoint Online 액세스 관리
 
@@ -106,7 +106,7 @@ Office 데스크톱 애플리케이션은 다음을 실행하는 SharePoint Onli
 ## <a name="configure-conditional-access-for-sharepoint-online"></a>SharePoint Online에 대한 조건부 액세스 구성  
 
 ### <a name="step-1-configure-active-directory-security-groups"></a>1단계: Active Directory 보안 그룹 구성  
- 시작하기 전에 조건부 액세스 정책에 대한 Azure AD 보안 그룹을 구성합니다. **Office 365 관리 센터**또는 **Intune 계정 포털**에서 이러한 그룹을 구성할 수 있습니다. 이러한 그룹에는 정책의 대상이 되거나 정책에서 제외된 사용자가 포함됩니다. 사용자가 정책의 대상인 경우 사용자가 사용하는 각 디바이스가 정책을 준수해야 리소스에 액세스할 수 있습니다.  
+ 시작하기 전에 조건부 액세스 정책에 대한 Azure AD 보안 그룹을 구성합니다. 이러한 그룹을 구성할 수 있습니다 합니다 **Microsoft 365 관리 센터**, 또는 **Intune 계정 포털**합니다. 이러한 그룹에는 정책의 대상이 되거나 정책에서 제외된 사용자가 포함됩니다. 사용자가 정책의 대상인 경우 사용자가 사용하는 각 디바이스가 정책을 준수해야 리소스에 액세스할 수 있습니다.  
 
  SharePoint Online 정책에 두 그룹 유형을 지정할 수 있습니다.  
 

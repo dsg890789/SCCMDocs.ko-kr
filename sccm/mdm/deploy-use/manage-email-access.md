@@ -2,7 +2,7 @@
 title: 전자 메일 액세스 관리
 titleSuffix: Configuration Manager
 description: Configuration Manager 조건부 액세스를 사용 하 여 Exchange 메일에 대 한 액세스를 관리 하는 방법에 알아봅니다.
-ms.date: 03/05/2017
+ms.date: 03/21/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f976b63b4580b5df9c6e609ff6b361538860c41c
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 76326a1e0bcb3d9362db5eccfc08459bb4448206
+ms.sourcegitcommit: ec4411fe30770f90128cf6cbd181047db90040cb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56137646"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57881778"
 ---
 # <a name="manage-email-access-in-configuration-manager"></a>Configuration Manager에서 메일 액세스 관리
 
@@ -146,7 +146,7 @@ Exchange 온-프레미스에 대한 조건부 액세스 정책은 Configuration 
 
 정책 유형에 따라 서로 다른 사용자 그룹 또는 컬렉션을 대상으로 조건부 액세스 정책을 구성합니다. 이러한 그룹에는 정책의 대상이 되거나 정책에서 제외되는 사용자가 포함됩니다. 사용자가 정책의 대상인 경우 해당 사용자가 사용하는 각 디바이스가 규정을 준수해야 전자 메일에 액세스할 수 있습니다.  
 
-- **Exchange Online 정책의**: Azure Active Directory 보안 사용자 그룹입니다. **Office 365 관리 센터**또는 **Intune 계정 포털**에서 이러한 그룹을 구성할 수 있습니다.  
+- **Exchange Online 정책의**: Azure Active Directory 보안 사용자 그룹입니다. 이러한 그룹을 구성할 수 있습니다 합니다 **Microsoft 365 관리 센터**, 또는 **Intune 계정 포털**합니다.  
 
 - **Exchange 온-프레미스 정책의 경우**: Configuration Manager 사용자 컬렉션에 있습니다. **자산 및 준수** 작업 영역에서 이러한 컬렉션을 구성할 수 있습니다.  
 

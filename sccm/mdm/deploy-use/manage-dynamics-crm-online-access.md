@@ -2,7 +2,7 @@
 title: Dynamics CRM Online 액세스 관리
 titleSuffix: Configuration Manager
 description: Microsoft Intune 조건부 액세스를 사용하여 iOS 및 Android 디바이스에서 Microsoft Dynamics CRM Online에 대한 액세스를 제어하는 방법을 알아봅니다.
-ms.date: 03/05/2017
+ms.date: 03/21/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bf6073a15518e971d4880a7adbb0853d6387f0d
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: fbd3d765a17d41bfbc2c400a3368cf00784b16c1
+ms.sourcegitcommit: ec4411fe30770f90128cf6cbd181047db90040cb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56122851"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57881676"
 ---
 # <a name="manage-dynamics-crm-online-access-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Dynamics CRM Online 액세스 관리
 
@@ -47,7 +47,7 @@ Dynamics CRM Online에 액세스해야 하는 디바이스는 다음과 같아�
 ## <a name="configure-conditional-access-for-dynamics-crm-online"></a>Dynamics CRM Online에 대한 조건부 액세스 구성  
 ### <a name="step-1-configure-active-directory-security-groups"></a>1단계: Active Directory 보안 그룹 구성
 
-시작하기 전에 조건부 액세스 정책에 대한 Azure Active Directory 보안 그룹을 구성합니다. **Office 365 관리 센터**에서 이러한 그룹을 구성할 수 있습니다. 이 그룹은 정책에서 사용자를 대상으로 지정하거나 제외하는 데 사용됩니다. 사용자가 정책의 대상인 경우 해당 사용자가 사용하는 각 디바이스가 규정을 준수해야 리소스에 액세스할 수 있습니다.
+시작하기 전에 조건부 액세스 정책에 대한 Azure Active Directory 보안 그룹을 구성합니다. 이러한 그룹을 구성할 수 있습니다 합니다 **Microsoft 365 관리 센터**합니다. 이 그룹은 정책에서 사용자를 대상으로 지정하거나 제외하는 데 사용됩니다. 사용자가 정책의 대상인 경우 해당 사용자가 사용하는 각 디바이스가 규정을 준수해야 리소스에 액세스할 수 있습니다.
 
 Dynamics CRM 정책에 사용할 두 가지 그룹 유형을 지정할 수 있습니다.
 * **대상 그룹** - 정책이 적용되는 사용자 그룹을 포함합니다.

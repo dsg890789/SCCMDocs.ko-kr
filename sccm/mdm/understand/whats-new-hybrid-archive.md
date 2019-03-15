@@ -2,7 +2,7 @@
 title: 새로운 기능 하이브리드 MDM 보관
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager 및 Intune을 포함하는 하이브리드 배포에 사용할 수 있는 과거 모바일 디바이스 관리 기능의 보관 파일입니다.
-ms.date: 05/31/2018
+ms.date: 03/21/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fcc81e06cbb1ab0206b4145f042cbc10bab44676
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 420026065caf619f51a5ebf84d7ae2f61a2248e1
+ms.sourcegitcommit: ec4411fe30770f90128cf6cbd181047db90040cb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56134421"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57881931"
 ---
 # <a name="past-hybrid-features-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하는 이전 하이브리드 기능
 
@@ -476,7 +476,7 @@ Configuration Manager Technical Preview 2016년 7월에 새로 도입된 하이�
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 2016년 6월에 도입된 다음 Intune 기능은 하이브리드 배포에서 사용할 수 있습니다.
 
-- **Intune 서비스 상태** Intune에 대한 서비스 상태 정보가 다른 Microsoft 서비스와 함께 중앙 위치로 이동되었습니다. 이제 Office 365 관리 포털의 서비스 상태 아래에서 이 정보를 확인할 수 있습니다. 자세한 내용은 이 [블로그 게시물](https://blogs.technet.microsoft.com/enterprisemobility/2016/04/28/intune-service-health-is-now-available-in-the-office-365-portal/)을 참조하세요.
+- **Intune 서비스 상태** Intune에 대한 서비스 상태 정보가 다른 Microsoft 서비스와 함께 중앙 위치로 이동되었습니다. 이제 서비스 상태에서 Microsoft 365 관리 센터에서이 정보를 찾을 수 있습니다. 자세한 내용은 이 [블로그 게시물](https://blogs.technet.microsoft.com/enterprisemobility/2016/04/28/intune-service-health-is-now-available-in-the-office-365-portal/)을 참조하세요.
 
 - **향상된 Windows 10 Enterprise 데이터 정책 구성 환경**
 
