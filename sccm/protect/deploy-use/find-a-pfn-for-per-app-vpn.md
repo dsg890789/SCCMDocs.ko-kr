@@ -70,7 +70,7 @@ OneNote에 대해 검색된 정보는 다음과 같습니다.
 
 ## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>앱이 컴퓨터에 설치되어 있지 않은 경우 PFN 찾기
 
-1.  https://www.microsoft.com/en-us/store/apps로 이동
+1.  [https://www.microsoft.com/en-us/store/apps](https://www.microsoft.com/en-us/store/apps) 로 이동
 2.  검색 창에 앱의 이름을 입력합니다. 이 예제에서는 OneNote를 검색합니다.
 3.  앱에 대한 링크를 클릭합니다. 액세스하는 URL의 끝에 일련의 문자가 있습니다. 이 예제에서 URL은 다음과 같습니다. `https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`
 4.  다른 탭에서 다음 URL `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`를 붙여넣어 `<app id>`를 https://www.microsoft.com/en-us/store/apps에서 얻은 앱 ID로 대체합니다(3단계에서 URL의 끝에 있는 일련의 문자). 이 OneNote 예제에서는 `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`를 붙여넣습니다.

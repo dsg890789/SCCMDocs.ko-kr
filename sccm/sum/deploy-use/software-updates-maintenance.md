@@ -3,7 +3,7 @@ title: 소프트웨어 업데이트 유지 관리
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 업데이트를 유지 관리하려면 WSUS 정리 태스크를 예약하거나 수동으로 실행할 수 있습니다.
 author: mestew
-ms.date: 02/19/2019
+ms.date: 03/05/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
@@ -11,12 +11,12 @@ ms.assetid: 4b0e2e90-aac7-4d06-a707-512eee6e576c
 manager: dougeby
 ms.author: mstewart
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a872d48437b14bfec5b2b3da3a51be5c11cdfba3
-ms.sourcegitcommit: e18853c214c95e4d21b2f032aba6d17c21e97027
-ms.translationtype: HT
+ms.openlocfilehash: ff0f69a0e43c2d52aec9df262bf8d48587edb94c
+ms.sourcegitcommit: 4ab85212268e76d3fd22f00e6c74edaa5abde60c
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56443939"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426858"
 ---
 # <a name="software-updates-maintenance"></a>소프트웨어 업데이트 유지 관리
 
@@ -52,7 +52,7 @@ Configuration Manager 1806 버전 이전의 WSUS 정리 옵션에서 실행하�
 - Configuration Manager 데이터베이스의 소프트웨어 업데이트 구성 항목 정리는 7일마다 발생하고 콘솔에서 불필요한 업데이트를 제거합니다.
   - 이 정리는 현재 배포된 Configuration Manager 콘솔에서 만료된 업데이트를 제거하지 않습니다.
 
-최상위 WSUS 데이터베이스와 환경의 다른 모든 WSUS 데이터베이스에는 추가 유지 관리가 여전히 필요합니다. 자세한 내용과 지침은 [Microsoft WSUS 및 Configuration Manager SUP 유지 관리에 대한 전체 가이드](https://blogs.technet.microsoft.com/configurationmgr/2016/01/26/the-complete-guide-to-microsoft-wsus-and-configuration-manager-sup-maintenance/) 블로그 게시물을 참조하세요.
+최상위 WSUS 데이터베이스와 환경의 다른 모든 WSUS 데이터베이스에는 추가 유지 관리가 여전히 필요합니다. 자세한 내용과 지침은 [Microsoft WSUS 및 Configuration Manager SUP 유지 관리에 대한 전체 가이드](https://support.microsoft.com/help/4490644/complete-guide-to-microsoft-wsus-and-configuration-manager-sup-maint/) 블로그 게시물을 참조하세요.
 
 ## <a name="wsus-cleanup-behavior-starting-in-version-1806"></a>1806 버전부터 시작하는 WSUS 정리 동작
 
@@ -75,7 +75,7 @@ Configuration Manager 1806 버전 이전의 WSUS 정리 옵션에서 실행하�
 - 서버에 연결되지 않은 컴퓨터
 - 불필요한 업데이트 파일
 
-  자세한 내용과 지침은 [Microsoft WSUS 및 Configuration Manager SUP 유지 관리에 대한 전체 가이드](https://blogs.technet.microsoft.com/configurationmgr/2016/01/26/the-complete-guide-to-microsoft-wsus-and-configuration-manager-sup-maintenance/) 블로그 게시물을 참조하세요.
+  자세한 내용과 지침은 [Microsoft WSUS 및 Configuration Manager SUP 유지 관리에 대한 전체 가이드](https://support.microsoft.com/help/4490644/complete-guide-to-microsoft-wsus-and-configuration-manager-sup-maint/) 블로그 게시물을 참조하세요.
 
 ## <a name="wsus-cleanup-behavior-starting-in-version-1810"></a>1810 버전부터 시작하는 WSUS 정리 동작
 
@@ -97,7 +97,7 @@ Configuration Manager 1806 버전 이전의 WSUS 정리 옵션에서 실행하�
 - 서버에 연결되지 않은 컴퓨터
 - 불필요한 업데이트 파일
 
-  자세한 내용과 지침은 [Microsoft WSUS 및 Configuration Manager SUP 유지 관리에 대한 전체 가이드](https://blogs.technet.microsoft.com/configurationmgr/2016/01/26/the-complete-guide-to-microsoft-wsus-and-configuration-manager-sup-maintenance/) 블로그 게시물을 참조하세요.
+  자세한 내용과 지침은 [Microsoft WSUS 및 Configuration Manager SUP 유지 관리에 대한 전체 가이드](https://support.microsoft.com/help/4490644/complete-guide-to-microsoft-wsus-and-configuration-manager-sup-maint/) 블로그 게시물을 참조하세요.
 
 ## <a name="updates-cleanup-log-entries"></a>정리 로그 항목 업데이트
 
