@@ -2,7 +2,7 @@
 title: Azure AD를 사용하여 클라이언트 설치
 titleSuffix: Configuration Manager
 description: 인증을 위해 Azure Active Directory를 사용하여 Windows 10 디바이스에서 Configuration Manager 클라이언트 설치 및 할당
-ms.date: 03/28/2018
+ms.date: 03/05/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,16 +11,20 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3815ff3252b4f58412be84dc16813caa2ebfc6e
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: b45c5938e9c1980802055bd73d5fd7e71122fc2a
+ms.sourcegitcommit: f3dd8405018fe1043434386be15c16752c1a4a3c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56132700"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57558119"
 ---
 # <a name="install-and-assign-configuration-manager-windows-10-clients-using-azure-ad-for-authentication"></a>인증을 위해 Azure AD를 사용하여 Configuration Manager Windows 10 클라이언트 설치 및 할당
 
 Azure AD 인증을 사용하여 Windows 10 디바이스에서 Configuration Manager 클라이언트를 설치하려면 Azure AD(Azure Active Directory)와 Configuration Manager를 통합합니다. 클라이언트는 HTTPS 지원 관리 지점 또는 향상된 HTTP를 사용하도록 설정된 사이트의 모든 관리 지점과 직접 통신하는 인트라넷에 있을 수 있습니다. 또한 클라이언트는 CMG 또는 인터넷 기반 관리 지점을 통해 통신하는 인터넷 기반일 수 있습니다. 이 프로세스는 Azure AD를 사용하여 Configuration Manager 사이트에 클라이언트를 인증합니다. Azure AD를 사용하면 클라이언트 인증 인증서를 구성하고 사용할 필요가 없습니다.
+
+Azure AD를 설정하는 것은 인증서 기반 인증에 대한 공개 키 인프라를 설정하는 것보다 일부 고객에게 더 쉬울 수 있습니다. 사이트에 Azure AD를 온보딩해야 하는 기능이 있지만 클라이언트가 Azure AD에 조인해야 하는 것은 아닙니다.<!-- SCCMDocs issue 1259 --> 자세한 내용은 다음 아티클을 참조하세요.
+- [Azure Active Directory 계획](/sccm/core/plan-design/security/plan-for-security#bkmk_planazuread)
+- [공동 관리를 위해 Azure AD 사용](/sccm/comanage/quickstart-hybrid-aad)
 
 
 
@@ -92,6 +96,8 @@ Azure AD ID를 사용하여 클라이언트를 수동으로 설치하려면 먼�
 - 인터넷 기반 관리 지점, SMSMP 속성은 온-프레미스 또는 인터넷 기반 관리 지점 중 하나를 지정합니다.
 
 이 예제는 클라우드 관리 게이트웨이를 사용합니다. 각 속성에 대한 예제 값을 대체합니다. `ccmsetup.exe /mp:https://CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72186325152220500 CCMHOSTNAME=CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72186325152220500 SMSSiteCode=ABC SMSMP=https://mp1.contoso.com AADTENANTID=daf4a1c2-3a0c-401b-966f-0b855d3abd1a AADCLIENTAPPID=7506ee10-f7ec-415a-b415-cd3d58790d97 AADRESOURCEURI=https://contososerver`
+
+버전 1810부터 사이트는 추가 Azure AD 정보를 CMG(클라우드 관리 게이트웨이)에 게시합니다. Azure AD에 가입된 클라이언트는 가입된 동일한 테넌트를 사용하여 ccmsetup 프로세스 중에 CMG에서 이 정보를 가져옵니다. 이 동작은 둘 이상의 Azure AD 테넌트가 있는 환경에 클라이언트를 설치하는 작업을 추가로 간소화합니다. 이제 유일한 두 개의 필수 ccmsetup 속성은 **CCMHOSTNAME** 및 **SMSSiteCode**입니다.<!--3607731-->
 
 Microsoft Intune을 통해 Azure AD ID를 사용하여 클라이언트 설치를 자동화하려면 [공동 관리를 위해 인터넷 기반 디바이스를 준비하는 방법](/sccm/comanage/how-to-prepare-win10#install-the-configuration-manager-client)을 참조하세요.
 

@@ -2,7 +2,7 @@
 title: Configuration Manager 콘솔
 titleSuffix: Configuration Manager
 description: Configuration Manager 콘솔을 통해 이동에 대해 알아봅니다.
-ms.date: 2/20/2019
+ms.date: 03/06/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30db8b061f41e8a9255b5a308df6a98ef8c0d81b
-ms.sourcegitcommit: 369db96ee84299b5ab6d74b177e6366b3017fc54
+ms.openlocfilehash: 0f9c06f40af1134055d4038fd23954b3f4c59682
+ms.sourcegitcommit: 544f335cfd1bfd0a1d4973439780e9f5e9ee8bed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56589903"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57562111"
 ---
 # <a name="using-the-configuration-manager-console"></a>Configuration Manager 콘솔 사용
 
@@ -160,6 +160,15 @@ Configuration Manager 콘솔에는 다음과 같은 명령줄 옵션이 있습�
     > 현재 로그온한 사용자를 보려면 [사용자 검색](/sccm/core/servers/deploy/configure/configure-discovery-methods#bkmk_config-adud) 및 [사용자 디바이스 선호도](/sccm/apps/deploy-use/link-users-and-devices-with-user-device-affinity)가 필요합니다.  
 
 기본이 아닌 열을 표시하는 방법에 대한 자세한 내용은 [열](#columns)을 참조하세요.
+
+#### <a name="improvement-to-device-search-performance"></a>디바이스 검색 성능 향상
+<!-- 3614690 --> 버전 1806부터는 디바이스 컬렉션에서 검색할 때 모든 개체 속성에 대한 키워드를 검색하지 않습니다. 검색할 항목을 구체적으로 지정하지 않으면 다음과 같은 네 가지 속성을 검색합니다.
+- Name
+- 기본 사용자
+- 현재 로그온한 사용자
+- 마지막 로그온 사용자 이름
+
+이 동작은 특히 대규모 환경에서 이름별로 검색하는 데 걸리는 시간을 대폭 개선합니다. 특정 기준별 사용자 지정 검색은 이 변경의 영향을 받지 않습니다. 
 
 
 ### <a name="monitoring-workspace"></a>모니터링 작업 영역

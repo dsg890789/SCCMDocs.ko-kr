@@ -10,12 +10,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 4c1a128d-22fb-49f1-8e0b-36513a8dc117
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bcc535c007fc081d2597e5c6dafc159ed1176f39
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 4cbb9b37c951c490c1f2245f089fa22707f4c220
+ms.sourcegitcommit: f3dd8405018fe1043434386be15c16752c1a4a3c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156875"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57558017"
 ---
 # <a name="frequently-asked-questions-about-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이에 대한 FAQ
 
@@ -41,6 +41,10 @@ ms.locfileid: "56156875"
 ### <a name="do-i-need-to-maintain-the-azure-virtual-machines"></a>Azure 가상 머신을 유지 관리해야 하나요?
 
 유지 관리가 필요하지 않습니다. 클라우드 관리 게이트웨이의 설계는 Azure PaaS(platform as a service)를 사용하는 것입니다. 제공한 구독을 사용하여 Configuration Manager는 필요한 VM(가상 머신), 스토리지 및 네트워킹을 만듭니다. Azure에서는 가상 머신을 보호하고 업데이트합니다. 이러한 VM은 IaaS(infrastructure as a service)의 경우처럼 온-프레미스 환경의 일부가 아닙니다. 클라우드 관리 게이트웨이는 클라우드로 Configuration Manager 환경을 확장하는 PaaS입니다. 
+
+### <a name="how-can-i-ensure-service-continuity-during-service-updates"></a>서비스 업데이트 중에 서비스 연속성을 보장하려면 어떻게 해야 하나요?
+
+두 개 이상의 인스턴스를 포함하도록 CMG를 확장하면 Azure에서 도메인 자동 업데이트의 이점을 누릴 수 있습니다. [클라우드 서비스 업데이트 방법](/azure/cloud-services/cloud-services-update-azure-service)을 참조하세요.
 
 
 ### <a name="im-already-using-ibcm-if-i-add-cmg-how-do-clients-behave"></a>IBCM을 이미 사용하고 있습니다. CMG를 추가하면 클라이언트가 어떻게 될까요?

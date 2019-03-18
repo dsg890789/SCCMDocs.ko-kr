@@ -2,7 +2,7 @@
 title: 클라이언트 알림
 titleSuffix: Configuration Manager
 description: 중앙 Configuration Manager 콘솔에서 즉각적인 작업을 수행하여 클라이언트를 관리합니다.
-ms.date: 11/27/2018
+ms.date: 03/06/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f190522300090247cdca0affa9d993fe46201668
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: a643924cbaef928f9db4011f634ae96171ab7914
+ms.sourcegitcommit: 544f335cfd1bfd0a1d4973439780e9f5e9ee8bed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56122035"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57562094"
 ---
 # <a name="client-notification-in-configuration-manager"></a>Configuration Manager의 클라이언트 알림
 
@@ -76,6 +76,7 @@ ms.locfileid: "56122035"
 
 이 작업은 홈 탭의 장치 또는 컬렉션 그룹에서 리본의 **클라이언트 알림** 메뉴에 있습니다.
 
+버전 1806 이전에서 **클라이언트 알림** 옵션은 디바이스 컬렉션 노드에서 또는 디바이스 컬렉션의 멤버 자격을 볼 때만 사용 가능했습니다. 버전 1810부터는 **클라이언트 알림**을 **디바이스** 노드에서 바로 시작할 수 있습니다. 더는 컬렉션 멤버 자격 보기 내에 있을 필요가 없습니다. <!--SCCMDocs-pr issue 2972-->
 
 #### <a name="permissions"></a>사용 권한
 <!--SCCMDocs-pr issue #2972--> 1810 버전부터 클라이언트 알림 작업에서 컬렉션 개체에 대해 **리소스 알림** 권한이 필요합니다. 이 권한은 **클라이언트 알림** 메뉴의 모든 작업에 적용됩니다. 

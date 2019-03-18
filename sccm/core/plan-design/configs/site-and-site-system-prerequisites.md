@@ -2,7 +2,7 @@
 title: 사이트 필수 조건
 titleSuffix: Configuration Manager
 description: Windows 컴퓨터를 Configuration Manager 사이트 시스템 서버로 구성하는 방법을 알아봅니다.
-ms.date: 07/30/2018
+ms.date: 03/06/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b1a5a5e27108debe4f9f055da889d5b7a031ece
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 4187be7bf25bd88a5ba1432eaeb4cb5a44945551
+ms.sourcegitcommit: 544f335cfd1bfd0a1d4973439780e9f5e9ee8bed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56128452"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57562137"
 ---
 # <a name="site-and-site-system-prerequisites-for-configuration-manager"></a>Configuration Manager의 사이트 및 사이트 시스템 필수 조건
 
@@ -52,6 +52,8 @@ WSUS(Windows Server Update Services)와 같은 일부 제품의 경우 소프트
   이러한 항목을 변경해야 하는 경우 먼저 컴퓨터에서 사이트 시스템 역할을 제거합니다. 그런 다음, 변경이 완료되면 역할을 다시 설치합니다. 사이트 서버에 영향을 주는 변경 내용의 경우 먼저 사이트를 제거합니다. 그런 다음, 변경이 완료되면 사이트를 다시 설치합니다.  
 
 - Windows Server 클러스터의 인스턴스에서는 사이트 시스템 역할이 지원되지 않습니다. 단, 사이트 데이터베이스 서버의 경우는 예외입니다. 자세한 내용은 [Configuration Manager 사이트 데이터베이스에 SQL Server 클러스터 사용](/sccm/core/servers/deploy/configure/use-a-sql-server-cluster-for-the-site-database)을 참조하세요.  
+
+    1810 버전부터 Configuration Manager 설치 프로세스는 더 이상 장애 조치 클러스터링을 위한 Windows 역할이 있는 컴퓨터에 사이트 서버 역할의 설치를 차단하지 않습니다. SQL Always On에는 이 역할이 필요하므로 이전에는 사이트 서버에 사이트 데이터베이스를 공동 배치할 수 없었습니다. 이 변경을 사용하면 SQL Always On 및 사이트 서버를 수동 모드에서 사용하여 더 적은 수의 서버로 고가용성 사이트를 만들 수 있습니다. 자세한 내용은 [고가용성 옵션](/sccm/core/servers/deploy/configure/high-availability-options)을 참조하세요. <!--3607761, fka 1359132-->  
 
 - 모든 Configuration Manager 서비스의 시작 유형 또는 다음 사용자로 “로그온” 설정은 변경할 수 없습니다. 이 설정을 변경하면 주요 서비스가 정상적으로 실행되지 않을 수 있습니다.  
 
@@ -337,15 +339,17 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 #### <a name="windows-server-roles-and-features"></a>Windows Server 역할 및 기능  
 
--   .NET Framework 3.5 이상  
+- .NET Framework 3.5 이상  
 
--   .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7, 4.7.1 또는 4.7.2:  
+- .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7, 4.7.1 또는 4.7.2:  
 
      이 사이트 시스템 역할을 설치하면 Configuration Manager에서 자동으로.NET Framework 4.5.2를 설치합니다. 이 설치로 인해 서버가 다시 부팅 보류 중 상태가 될 수 있습니다. .NET Framework에 대한 다시 부팅이 보류 중인 경우 서버가 다시 부팅되어 설치를 완료할 때까지 .NET 애플리케이션이 실패할 수 있습니다.  
 
-    -   HTTP 활성화 및 자동으로 선택된 옵션  
+    - HTTP 활성화 및 자동으로 선택된 옵션  
 
-    -   ASP.NET 4.5  
+    - ASP.NET 4.5  
+
+    - WCF(Windows Communication Foundation) 서비스<!-- SCCMDocs issue #1168 -->  
 
 #### <a name="iis-configuration"></a>IIS 구성  
 

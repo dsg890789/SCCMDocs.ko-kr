@@ -2,7 +2,7 @@
 title: 버전 1810의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager 최신 라인인 1810 버전에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
-ms.date: 03/02/2019
+ms.date: 03/05/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d8a3c6c73d30d7d5e8e825cd20baa334214dceb
-ms.sourcegitcommit: 33a006204f7f5f9b9acd1f3e84c4bc207362d00a
+ms.openlocfilehash: 9d2ab324038e833da7bc080286c820b3df8d06fa
+ms.sourcegitcommit: f3dd8405018fe1043434386be15c16752c1a4a3c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57305799"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57558170"
 ---
 # <a name="whats-new-in-version-1810-of-configuration-manager-current-branch"></a>Configuration Manager 1810 버전의 새로운 기능
 
@@ -122,27 +122,20 @@ Version 1810 drops support for the following products:
 
 
 ### <a name="improvements-to-collection-evaluation"></a>컬렉션 평가의 개선 사항
-<!--1358981--> 컬렉션 평가 동작의 다음 변경 내용이 사이트 성능을 개선할 수 있습니다.  
- 
+<!--3607726, fka 1358981-->
+[업데이트됨] 컬렉션 평가 동작의 다음 변경 내용이 사이트 성능을 개선할 수 있습니다.****  
+
 - 이전에 쿼리 기반 컬렉션에서 일정을 구성한 경우 사이트는 컬렉션 설정 **이 컬렉션에 대한 전체 업데이트 예약**을 사용하도록 설정했는지 여부에 관계없이 쿼리를 계속 평가합니다. 일정을 완전히 사용하지 않으려면 일정을 **없음**으로 변경해야 했습니다. 이제 이 설정을 사용하지 않도록 설정하면 사이트가 일정을 지웁니다. 컬렉션 평가 일정을 지정하려면 **이 컬렉션에 대한 전체 업데이트 예약** 옵션을 사용하도록 설정합니다.  
 
 - **모든 시스템** 같은 기본 제공 컬렉션의 평가를 사용하지 않도록 설정할 수 없지만, 현재 일정을 구성할 수는 있습니다. 이 동작을 사용하면 비즈니스 요구 사항을 충족하는 시간에 이 작업을 사용자 지정할 수 있습니다. 
 
-<!--For more information, see [How to create collections](/sccm/core/clients/manage/collections/create-collections).-->
+자세한 내용은 [컬렉션을 만드는 방법](/sccm/core/clients/manage/collections/create-collections#bkmk_create)을 참조하세요.
 
 
 ### <a name="improvement-to-client-installation"></a>클라이언트 설치 기능 개선
 <!--1358840--> Configuration Manager 클라이언트를 설치할 때 ccmsetup 프로세스는 관리 지점에 연결하여 필요한 콘텐츠를 찾습니다. 이전에는 이 프로세스에서 관리 지점이 클라이언트의 현재 경계 그룹에 있는 배포 지점만 반환합니다. 사용 가능한 콘텐츠가 없는 경우 설치 프로세스가 관리 지점에서 콘텐츠를 다운로드하는 것으로 대체됩니다. 필요한 콘텐츠가 있을 수 있는 다른 경계 그룹의 배포 지점으로 대체하는 옵션은 없습니다. 이제 관리 지점은 경계 그룹 구성을 기준으로 배포 지점을 반환합니다. 
 
 자세한 내용은 [경계 그룹 구성](/sccm/core/servers/deploy/configure/boundary-groups#bkmk_ccmsetup)을 참조하세요.
-
-
-### <a name="improvements-to-internet-based-client-setup"></a>인터넷 기반 클라이언트 설정의 개선 사항
-<!--1359181-->
-<!--move this under co-management?-->  
-이 릴리스는 인터넷에서 클라이언트의 Configuration Manager 클라이언트 설정 프로세스를 추가로 간소화합니다. 사이트는 추가 Azure AD(Azure Active Directory) 정보를 CMG(클라우드 관리 게이트웨이)에 게시합니다. Azure AD에 가입된 클라이언트는 가입된 동일한 테넌트를 사용하여 ccmsetup 프로세스 중에 CMG에서 이 정보를 가져옵니다. 이 동작은 둘 이상의 Azure AD 테넌트가 있는 환경의 공동 관리에 디바이스를 등록하는 작업을 추가로 간소화합니다. 이제 유일한 두 개의 필수 ccmsetup 속성은 **CCMHOSTNAME** 및 **SMSSiteCode**입니다.
-
-<!--For more information, see [Prepare Windows 10 devices for co-management](https://docs.microsoft.com/en-us/sccm/core/clients/manage/co-management-prepare#command-line-to-install-configuration-manager-client).-->
 
 
 
@@ -166,6 +159,13 @@ Version 1810 drops support for the following products:
 ![상위 4개의 타일을 보여 주는 공동 관리 대시보드 스크린샷](media/1358980-comgmt-dashboard.png)
 
 자세한 내용은 [공동 관리 대시보드](/sccm/comanage/how-to-monitor#co-management-dashboard)를 참조하세요.
+
+
+### <a name="improvements-to-internet-based-client-setup"></a>인터넷 기반 클라이언트 설정의 개선 사항
+<!--3607731, fka 1359181-->
+[업데이트됨] 이 릴리스는 인터넷에서 클라이언트의 Configuration Manager 클라이언트 설정 프로세스를 추가로 간소화합니다.**** 사이트는 추가 Azure AD(Azure Active Directory) 정보를 CMG(클라우드 관리 게이트웨이)에 게시합니다. Azure AD에 가입된 클라이언트는 가입된 동일한 테넌트를 사용하여 ccmsetup 프로세스 중에 CMG에서 이 정보를 가져옵니다. 이 동작은 둘 이상의 Azure AD 테넌트가 있는 환경의 공동 관리에 디바이스를 등록하는 작업을 추가로 간소화합니다. 이제 유일한 두 개의 필수 ccmsetup 속성은 **CCMHOSTNAME** 및 **SMSSiteCode**입니다.
+
+자세한 내용은 [공동 관리를 위해 인터넷 기반 디바이스를 준비하는 방법](/sccm/comanage/how-to-prepare-Win10#install-the-configuration-manager-client)을 참조하세요.
 
 
 
@@ -195,14 +195,16 @@ Version 1810 drops support for the following products:
 
 
 ### <a name="detection-methods-dont-load-windows-powershell-profiles"></a>검색 방법은 Windows PowerShell 프로필을 로드하지 않습니다.
-<!--1359239--> 애플리케이션의 검색 방법에 대한 Windows PowerShell 스크립트 및 구성 항목의 설정을 사용할 수 있습니다. 이러한 스크립트가 클라이언트에서 실행되는 경우 Configuration Manager는 이제 `-NoProfile` 매개 변수를 사용하여 PowerShell을 호출합니다. 이 옵션은 프로필 없이 PowerShell을 시작합니다. 
+<!--3607762, fka 1359239-->
+[업데이트됨] 애플리케이션의 검색 방법에 대한 Windows PowerShell 스크립트 및 구성 항목의 설정을 사용할 수 있습니다.**** 이러한 스크립트가 클라이언트에서 실행되는 경우 Configuration Manager는 이제 `-NoProfile` 매개 변수를 사용하여 PowerShell을 호출합니다. 이 옵션은 프로필 없이 PowerShell을 시작합니다. 
 
 PowerShell 프로필은 PowerShell이 시작될 때 실행되는 스크립트입니다. PowerShell 프로필을 만들어 환경을 사용자 지정하고 시작하는 모든 PowerShell 세션에 세션별 요소를 추가할 수 있습니다. 
 
 > [!Note]  
 > 동작의 이 변경 내용은 [스크립트](/sccm/apps/deploy-use/create-deploy-scripts) 또는 [CMPivot](/sccm/core/servers/manage/cmpivot)에 적용되지 않습니다. 이러한 기능은 모두 이미 이 PowerShell 매개 변수를 사용합니다.    
 
-<!--For more information, see []().-->
+자세한 내용은 [애플리케이션 만들기](/sccm/apps/deploy-use/create-applications) 및 [사용자 지정 구성 항목 만들기](/sccm/compliance/deploy-use/create-custom-configuration-items-for-windows-desktop-and-server-computers-managed-with-the-client)를 참조하세요.
+
 
 
 ## <a name="bkmk_osd"></a> OS 배포

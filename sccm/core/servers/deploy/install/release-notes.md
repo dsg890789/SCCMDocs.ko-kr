@@ -2,7 +2,7 @@
 title: 릴리스 정보
 titleSuffix: Configuration Manager
 description: Microsoft 지원 기술 자료 문서에서 다루지 않거나 제품에서 아직 해결되지 않은 긴급한 문제에 대해 알아봅니다.
-ms.date: 02/21/2019
+ms.date: 03/05/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7e4307d61cccf968729f013ebaa4bfab4b0027e
-ms.sourcegitcommit: 56ec6933cf7bfc93842f55835ad336ee3a1c6ab5
+ms.openlocfilehash: 33ef7020e1b9312717919a9dda8ce189c8db533c
+ms.sourcegitcommit: f3dd8405018fe1043434386be15c16752c1a4a3c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57211536"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57558187"
 ---
 # <a name="release-notes-for-configuration-manager"></a>Configuration Manager의 릴리스 정보
 
@@ -125,7 +125,7 @@ Configuration Manager 버전 1802부터 CEIP(사용자 환경 개선 프로그�
 자세한 내용은 [사용자 지정 보안 역할 만들기](/sccm/core/servers/deploy/configure/configure-role-based-administration#BKMK_CreateSecRole)를 참조하세요.
 
 
-### <a name="changing-office-365-client-setting-doesnt-apply"></a>Office 365 클라이언트 설정 변경이 적용되지 않습니다. 
+### <a name="changing-office-365-client-setting-doesnt-apply"></a>Office 365 클라이언트 설정 변경이 적용되지 않음 
 <!--511551-->
 *적용 대상: Configuration Manager 버전 1802*  
 
@@ -142,6 +142,18 @@ Configuration Manager 버전 1802부터 CEIP(사용자 환경 개선 프로그�
 
 
 ## <a name="mobile-device-management"></a>모바일 디바이스 관리  
+
+### <a name="validation-for-ios-app-link-sometimes-fails-on-valid-link"></a>iOS 앱 연결에 대한 유효성 검사가 유효한 링크에서 실패하는 경우가 있음
+<!-- LSI 106004348 -->**App Store에서 iOS용 앱 패키지** 유형의 새 애플리케이션을 만드는 경우 유효성 검사기는 **위치**에 대한 일부 유효한 URL을 수락하지 않습니다. 특히 iOS App Store에는 URL의 앱 이름 섹션에 값이 필요하지 않습니다. 예를 들어 다음 링크는 모두 유효하며 동일한 앱을 가리킵니다. 그러나 **애플리케이션 생성 마법사**는 첫 번째 항목만 수락합니다.
+- `https://itunes.apple.com/us/app/app-name/id123456789?mt=8`
+- `https://itunes.apple.com/us/app//id123456789?mt=8`
+
+#### <a name="workaround"></a>해결 방법
+URL에서 앱 이름이 누락된 iOS 앱을 만들 때 URL에 앱 이름인 것처럼 값을 추가하세요. 예:
+- `https://itunes.apple.com/us/app/any-string/id123456789?mt=8`
+
+이 작업을 수행하여 마법사를 완료할 수 있습니다. 앱이 계속해서 iOS 디바이스에 성공적으로 배포됩니다. URL에 추가하는 문자열은 마법사의 **일반 정보** 탭에 있는 **이름**으로 나타납니다. 회사 포털에서 앱의 레이블이기도 합니다.
+
 
 ### <a name="you-can-no-longer-deploy-windows-phone-81-vpn-profiles-to-windows-10"></a>Windows Phone 8.1 VPN 프로필을 Windows 10에 더 이상 배포할 수 없습니다.
 <!-- 503274  -->
