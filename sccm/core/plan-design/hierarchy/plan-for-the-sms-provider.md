@@ -2,7 +2,7 @@
 title: SMS 공급자에 대한 계획
 titleSuffix: Configuration Manager
 description: Configuration Manager의 SMS 공급 기업 사이트 시스템 역할에 대해 알아봅니다.
-ms.date: 11/27/2018
+ms.date: 03/12/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aec16c4b55afd8c4baf7486794e07f29fa84aebf
-ms.sourcegitcommit: 223549003829fce7c6dc63959ee71e8b88542417
+ms.openlocfilehash: aba8479d6a2aecb3c73dad6acce6ab8237ff2576
+ms.sourcegitcommit: 8803a64692f3edc0422b58f6c3037a8796374cc8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56951837"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57881880"
 ---
 # <a name="plan-for-the-sms-provider"></a>SMS 공급자에 대한 계획 
 
@@ -40,10 +40,12 @@ Configuration Manager 관리자는 SMS 공급 기업을 사용하여 데이터�
 
 SMS 공급자는 Configuration Manager 보안을 적용하는 데 도움이 됩니다. SMS 공급 기업은 콘솔 사용자에게 보기 권한이 부여됐다는 정보만 반환합니다.  
 
+버전 1810부터 SMS 공급자는 이제 **관리 서비스**라고 하는 WMI에 대한 읽기 전용 API 상호 운용성 액세스(HTTPS 이용)를 제공합니다. 사이트의 정보에 액세스하는 데 사용자 지정 웹 서비스 대신에 REST API를 사용할 수 있습니다. 자세한 정보는 [관리 서비스](#bkmk_admin-service)를 참조하세요. 
+
 > [!IMPORTANT]  
 >  사이트에 대한 SMS 공급 기업의 각 인스턴스가 오프라인 상태인 경우 Configuration Manager 콘솔은 해당 사이트에 연결할 수 없습니다.  
 
- SMS 공급 기업을 관리하는 방법에 대한 자세한 내용은 [SMS 공급 기업 관리](/sccm/core/servers/manage/modify-your-infrastructure#BKMK_ManageSMSprovider)를 참조하세요.  
+SMS 공급 기업을 관리하는 방법에 대한 자세한 내용은 [SMS 공급 기업 관리](/sccm/core/servers/manage/modify-your-infrastructure#BKMK_ManageSMSprovider)를 참조하세요.  
 
 
 
@@ -246,3 +248,53 @@ OS 배포를 관리하는 경우 Windows ADK를 사용하면 SMS 공급 기업�
 
 
 Windows ADK를 설치하려면 SMS 공급자를 설치하는 각 컴퓨터에 최대 650MB의 사용 가능한 디스크 공간이 필요합니다. 이 많은 디스크 공간은 Configuration Manager가 Windows PE 부팅 이미지를 설치하는 데 필요합니다.  
+
+
+
+## <a name="bkmk_admin-service"></a> 관리 서비스
+<!--3607711, fka 1321523-->
+
+> [!Note]  
+> 이 버전의 Configuration Manager에서 SMS 공급자 API는 시험판 기능입니다. 이 기능을 사용하려면 [시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요.  
+
+버전 1810부터 SMS 공급자는 **관리 서비스**라고 하는 WMI에 대한 읽기 전용 API 상호 운용성 액세스(HTTPS 이용)를 제공합니다. 사이트의 정보에 액세스하는 데 사용자 지정 웹 서비스 대신에 REST API를 사용할 수 있습니다.
+
+`https://servername/AdminService/wmi/<ClassName>` 
+
+예를 들면 `https://servername/AdminService/wmi/SMS_Site`
+
+Windows PowerShell cmdlet [Invoke-RestMethod](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-restmethod)를 사용하여 이 서비스에 직접 호출합니다.
+
+OData 커넥터 옵션을 사용하여 PowerBI에서 사이트 데이터에 액세스하는 데 사용할 수도 있습니다. 
+
+> [!Tip]  
+> 작업 순서에서 이 cmdlet을 사용할 수 있습니다. 이 작업을 통해 WMI 공급자와 상호 작용하는 사용자 지정 웹 서비스 없이 사이트 정보에 액세스할 수 있습니다. 
+
+관리 서비스는 활동을 **adminservice.log** 파일에 기록합니다.
+
+
+### <a name="enable-the-administration-service-through-the-cmg"></a>CMG를 통해 관리 서비스를 사용하도록 설정
+
+**SMS 공급자**는 CMG(클라우드 관리 게이트웨이)를 통해 통신할 수 있도록 옵션을 사용하여 역할로 표시됩니다. 이 설정에 대한 현재 사용은 원격 디바이스의 이메일을 통해 애플리케이션 승인을 활성화하는 것입니다. 자세한 내용은 [애플리케이션 승인](/sccm/apps/deploy-use/app-approval)을 참조하세요.
+
+#### <a name="prerequisites"></a>필수 구성 요소
+- SMS 공급자를 호스트하는 서버에는 .NET 4.5.2 이상이 필요합니다.  
+
+- SMS 공급자에서 인증서를 사용하도록 설정합니다. 다음 옵션 중 하나를 사용합니다.  
+
+    - [향상된 HTTP](/sccm/core/plan-design/hierarchy/enhanced-http) 사용(추천)  
+
+        > [!Note]  
+        > 사이트에서 SMS 공급자에 대한 인증서를 만들면 클라이언트의 웹 브라우저에서 신뢰할 수 없게 됩니다. REST 공급자에 액세스하는 보안 설정에 따라 보안 경고가 표시될 수 있습니다.  
+
+    - SMS 공급자 역할을 호스팅하는 서버의 IIS에 있는 443 포트에 PKI 기반 인증서를 수동으로 바인딩  
+
+#### <a name="process-to-enable-the-api-through-the-cmg"></a>CMG를 통해 API를 사용하도록 설정하는 프로세스
+1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하여 **사이트 구성**을 확장하고 **서버 및 사이트 시스템 역할** 노드를 선택합니다.  
+
+2. **SMS 공급자** 역할이 있는 서버를 선택합니다.  
+
+3. 세부 정보 창에서 **SMS 공급자** 역할을 선택하고 **사이트 역할** 탭의 리본에서 **속성**을 선택합니다.  
+
+4. **관리 서비스에 대해 Configuration Manager 클라우드 관리 게이트웨이 트래픽 허용** 옵션을 선택합니다.  
+

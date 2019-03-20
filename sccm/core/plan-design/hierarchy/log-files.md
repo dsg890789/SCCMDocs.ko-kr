@@ -2,7 +2,7 @@
 title: 문제 해결을 위한 로그 파일
 titleSuffix: Configuration Manager
 description: 로그 파일을 사용하여 Configuration Manager 클라이언트 및 사이트 시스템 문제를 해결할 수 있습니다.
-ms.date: 02/12/2019
+ms.date: 03/12/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3edf45c5b4eb62d5bfdd795f104c40da1ee1526
-ms.sourcegitcommit: 56ec6933cf7bfc93842f55835ad336ee3a1c6ab5
+ms.openlocfilehash: f14953b7c2008f6d0e9e5715a8096126e56b0b7e
+ms.sourcegitcommit: 8803a64692f3edc0422b58f6c3037a8796374cc8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57211706"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57881965"
 ---
 # <a name="log-files-in-configuration-manager"></a>Configuration Manager의 로그 파일
 
@@ -117,7 +117,7 @@ Configuration Manager에서는 클라이언트 및 사이트 서버 구성 요�
 ##  <a name="BKMK_AboutLogs"></a> Configuration Manager 로그 파일 정보  
  Configuration Manager의 프로세스 대부분은 해당 프로세스 전용 로그 파일에 작업 정보를 기록합니다. 로그 파일은 **.log** 또는 **.lo_** 파일 확장명으로 식별됩니다. Configuration Manager는 로그가 최대 크기에 도달할 때까지 .log 파일에 내용을 기록합니다. 로그가 가득 차면 .log 파일이 이름은 같지만 확장명은 .lo_인 파일에 복사되고 프로세스 또는 구성 요소는 계속 .log 파일에 기록합니다. .log 파일이 다시 최대 크기에 도달하면 .lo_ 파일을 덮어쓰게 되고 프로세스가 반복됩니다. 일부 구성 요소는 날짜 및 시간 스탬프를 로그 파일 이름에 추가하고 .log 확장명을 유지하여 로그 파일 기록을 설정합니다. Linux 및 UNIX용 클라이언트에는 .lo_ 파일의 사용 및 최대 크기가 적용되지 않습니다. Linux 및 UNIX용 클라이언트에서 로그 파일을 사용하는 방법에 대한 자세한 내용은 이 문서에서 [Linux 및 UNIX용 클라이언트의 로그 파일 관리](#BKMK_ManageLinuxLogs)를 참조하세요.  
 
- 로그를 보려면 Configuration Manager 로그 뷰어 도구인 CMTrace를 사용하면 됩니다. 이 도구는 Configuration Manager 원본 미디어의 \\SMSSetup\\Tools 폴더에 있습니다. CMTrace 도구는 소프트웨어 라이브러리에 추가된 모든 부팅 이미지에 추가됩니다. 1806 버전부터 CMTrace 로그 보기 도구가 Configuration Manager 클라이언트와 함께 자동으로 설치됩니다.<!--1357971--> 자세한 내용은 [CMTrace](/sccm/core/support/cmtrace)를 참조하세요. 
+ 로그를 보려면 Configuration Manager 로그 뷰어 도구인 CMTrace를 사용하면 됩니다. 이 도구는 Configuration Manager 원본 미디어의 \\SMSSetup\\Tools 폴더에 있습니다. CMTrace 도구는 소프트웨어 라이브러리에 추가된 모든 부팅 이미지에 추가됩니다. 1806 버전부터 이제 CMTrace 로그 보기 도구가 Configuration Manager 클라이언트와 함께 자동으로 설치됩니다.<!--1357971--> 자세한 내용은 [CMTrace](/sccm/core/support/cmtrace)를 참조하세요. 
 
 ###  <a name="BKMK_LogOptions"></a> Configuration Manager Service Manager를 사용하여 로깅 옵션 구성  
  Configuration Manager가 로그 파일을 저장하는 위치 및 크기를 변경할 수 있습니다.  
@@ -164,6 +164,7 @@ Configuration Manager는 다양한 위치에 로그 파일을 저장합니다. �
 |ClientLocation.log|클라이언트 사이트 할당과 관련된 작업을 기록합니다.|  
 |CMHttpsReadiness.log|Configuration Manager HTTPS 준비 평가 도구를 실행한 결과를 기록합니다. 이 도구는 Configuration Manager에 사용할 수 있는 PKI(공개 키 인프라) 클라이언트 인증 인증서가 컴퓨터에 있는지 확인합니다.|  
 |CmRcService.log|원격 제어 서비스에 대한 정보를 기록합니다.|  
+|CoManagementHandler.log|클라이언트에서 공동 관리의 문제를 해결하려면 사용합니다.|
 |ContentTransferManager.log|BITS(Background Intelligent Transfer Service) 또는 SMB(서버 메시지 블록)에서 패키지를 다운로드하거나 액세스할 일정을 예약합니다.|  
 |DataTransferService.log|정책 또는 패키지 액세스에 대한 모든 BITS 통신을 기록합니다.|  
 |EndpointProtectionAgent|System Center Endpoint Protection 클라이언트의 설치 및 해당 클라이언트에 대한 맬웨어 방지 정책 적용에 대한 정보를 기록합니다.|  
@@ -282,6 +283,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |--------------|-----------------|----------------------------|  
 |adctrl.log|등록 처리 작업을 기록합니다.|사이트 서버|  
 |ADForestDisc.log|Active Directory 포리스트 검색 작업을 기록합니다.|사이트 서버|  
+|adminservice.log|SMS 공급자 관리에 서비스 REST API의 작업 기록|SMS 공급자가 설치된 컴퓨터|
 |ADService.log|Active Directory의 계정 만들기 및 보안 그룹 세부 정보를 기록합니다.|사이트 서버|  
 |adsgdis.log|Active Directory 그룹 검색 작업을 기록합니다.|사이트 서버|  
 |adsysdis.log|Active Directory 시스템 검색 작업을 기록합니다.|사이트 서버|  
@@ -406,6 +408,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |mpfdm.log|클라이언트 파일을 사이트 서버의 해당 INBOXES 폴더로 이동한 관리 지점 구성 요소의 작업을 기록합니다.|사이트 시스템 서버|  
 |mpMSI.log|관리 지점 설치에 대한 세부 정보를 기록합니다.|사이트 서버|  
 |MPSetup.log|관리 지점 설치 래퍼 프로세스를 기록합니다.|사이트 서버|  
+|UserService.log|소프트웨어 센터에서 사용자 요청을 기록하며 사용자가 사용할 수 있는 서버의 애플리케이션을 검색하고 설치합니다.|사이트 시스템 서버|
 
 ###  <a name="BKMK_SUPLog"></a> 소프트웨어 업데이트 지점 로그 파일  
  다음 표에는 소프트웨어 업데이트 지점과 관련된 정보가 있는 로그 파일이 정리되어 있습니다.  
@@ -523,7 +526,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |CMGHttpHandler.log<sup>1</sup>|Azure에서 인터넷 정보 서비스와 바인딩하는 클라우드 관리 게이트웨이 HTTP 처리기에 대한 세부 정보를 기록합니다.<br>**Azure 포털\클라우드 서비스 구성** 탭에서 설정 **추적 수준**(**정보**(기본값), **자세한 정보**, **오류**)을 사용하여 로깅 수준을 구성할 수 있습니다.<br>버전 1806부터 이 로그가 없습니다. 구성 요소 기능이 CMG 서비스 구성 요소에 병합됩니다. 대신 CMGService.log를 참조하세요.<!--SCCMDocs-pr issue #2822-->|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
 |CMGService.log<sup>1</sup>|Azure의 클라우드 관리 게이트웨이 핵심 구성 요소에 대한 세부 정보를 기록합니다.<br>**Azure 포털\클라우드 서비스 구성** 탭에서 설정 **추적 수준**(**정보**(기본값), **자세한 정보**, **오류**)을 사용하여 로깅 수준을 구성할 수 있습니다.|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
 |SMS_Cloud_<br>ProxyConnector.log|클라우드 관리 게이트웨이 서비스와 클라우드 관리 게이트웨이 연결 지점 간에 연결을 설정하는 방법에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|
-|CMGContentService.log<sup>1</sup>|<!--SCCMDocs-pr issue #2822--> 버전 1806부터 Azure 스토리지에서 콘텐츠를 제공하기 위해 CMG를 사용하도록 설정하는 경우 이 로그는 해당 서비스의 세부 정보를 기록합니다.|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
+|CMGContentService.log<sup>1</sup>|<!--SCCMDocs-pr issue #2822-->버전 1806부터 Azure 스토리지에서 콘텐츠를 제공하기 위해 CMG를 사용하도록 설정하는 경우 이 로그는 해당 서비스의 세부 정보를 기록합니다.|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
 
 <sup>1</sup> 클라우드 서비스 관리자가 5분마다 Azure 스토리지에서 동기화하는 로컬 Configuration Manager 로그 파일입니다. 클라우드 관리 게이트웨이는 5분마다 로그를 Azure Storage에 푸시합니다. 따라서 최대 지연은 10분입니다. 자세한 정보 스위치는 로컬 및 원격 로그 둘 다에 영향을 미칩니다. 실제 파일 이름에는 서비스 이름 및 역할 인스턴스 식별자가 포함됩니다. 예: CMG-*ServiceName*-*RoleInstanceID*-CMGSetup.log
 

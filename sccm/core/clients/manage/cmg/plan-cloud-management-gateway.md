@@ -11,18 +11,19 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a66ba04defcea48db143487cc08bc5dc330cf2c
-ms.sourcegitcommit: ef2960bd91655c741450774e512dd0a9be610625
+ms.openlocfilehash: 44d19c9d2ba7daa029bb46eeb386771de70a2e8f
+ms.sourcegitcommit: 8803a64692f3edc0422b58f6c3037a8796374cc8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56838908"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57881897"
 ---
 # <a name="plan-for-the-cloud-management-gateway-in-configuration-manager"></a>Configuration Manager에서 클라우드 관리 게이트웨이 계획
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
  
-<!--1101764--> CMG(클라우드 관리 게이트웨이)는 인터넷에서 Configuration Manager 클라이언트를 관리할 수 있는 간단한 방법을 제공합니다. CMG를 클라우드 서비스로 Microsoft Azure에 배포하면 추가 인프라 없이 인터넷에서 로밍하는 기존 클라이언트를 관리할 수 있습니다. 또한 온-프레미스 인프라를 인터넷에 노출할 필요도 없습니다. 
+<!--1101764-->
+CMG(클라우드 관리 게이트웨이)는 인터넷에서 Configuration Manager 클라이언트를 관리할 수 있는 간단한 방법을 제공합니다. CMG를 클라우드 서비스로 Microsoft Azure에 배포하면 추가 인프라 없이 인터넷에서 로밍하는 기존 클라이언트를 관리할 수 있습니다. 또한 온-프레미스 인프라를 인터넷에 노출할 필요도 없습니다. 
 
 > [!Tip]  
 > 이 기능은 버전 1610에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 소개되었습니다. 버전 1802 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.  
@@ -99,7 +100,8 @@ CMG의 배포 및 운영에 포함되는 구성 요소는 다음과 같습니다
 
 
 ### <a name="azure-resource-manager"></a>Azure Resource Manager
-<!-- 1324735 --> 1802 버전부터 **Azure Resource Manager 배포**를 사용하여 CMG를 만들 수 있습니다. [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)는 모든 솔루션 리소스를 [리소스 그룹](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups)이라는 단일 엔터티로 관리하기 위한 최신 플랫폼입니다. Azure Resource Manager로 CMG를 배포하는 경우 사이트에서 Azure AD(Azure Active Directory)를 사용하여 필요한 클라우드 리소스를 인증하고 만듭니다. 이 최신 배포에는 클래식 Azure 관리 인증서가 필요하지 않습니다.  
+<!-- 1324735 -->
+1802 버전부터 **Azure Resource Manager 배포**를 사용하여 CMG를 만들 수 있습니다. [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)는 모든 솔루션 리소스를 [리소스 그룹](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups)이라는 단일 엔터티로 관리하기 위한 최신 플랫폼입니다. Azure Resource Manager로 CMG를 배포하는 경우 사이트에서 Azure AD(Azure Active Directory)를 사용하여 필요한 클라우드 리소스를 인증하고 만듭니다. 이 최신 배포에는 클래식 Azure 관리 인증서가 필요하지 않습니다.  
 
 > [!Note]  
 > 이 기능은 Azure CSP(클라우드 서비스 공급자)를 지원하지 않습니다. Azure Resource Manager를 통한 CMG 배포는 CSP에서 지원하지 않는 클래식 클라우드 서비스를 계속 사용합니다. 자세한 내용은 [Azure CSP에서 사용 가능한 Azure 서비스](https://docs.microsoft.com/azure/cloud-solution-provider/overview/azure-csp-available-services)를 참조하세요. 
@@ -297,9 +299,9 @@ CMG 성능을 향상시키는 데 도움이 될 수 있는 권장 사항은 다�
 
 - 가능한 경우 동일한 네트워크 영역에 CMG, CMG 연결점 및 Configuration Manager 사이트 서버를 구성하여 대기 시간을 줄입니다.  
 
-- 현재 Configuration Manager 클라이언트와 CMG 간의 연결은 지역을 인식하지 못합니다.  
+- 구성 관리자 클라이언트와 CMG 간의 연결은 지역을 인식하지 못합니다. 클라이언트 통신은 대부분 대기 시간 / 지리적 분리에 영향을 받지 않습니다. 지역 근접을 위해 여러 CMG를 배포할 필요는 없습니다. 계층의 최상위 사이트에서 CMG를 배포하고 인스턴스를 추가하여 규모를 늘립니다.
 
-- 서비스의 고가용성을 위해 둘 이상의 CMG 서비스와 사이트당 2개의 CMG 연결 지점을 만듭니다.  
+- 서비스의 고가용성을 위해 2개 이상의 CMG 인스턴스와 사이트당 2개의 CMG 연결 지점을 사용하여 CMG를 만듭니다.  
 
 - 더 많은 VM 인스턴스를 추가하여 더 많은 클라이언트를 지원하도록 CMG 크기를 조정합니다. Azure 부하 분산 장치는 서비스에 대한 클라이언트 연결을 제어합니다.  
 

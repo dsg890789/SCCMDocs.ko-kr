@@ -10,12 +10,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 71eaa409-b955-45d6-8309-26bf3b3b0911
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8104210fcf690cecf4bdb815384b8dd672c3873d
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 8add225db488a749eba98f9015fcb112e8f34f04
+ms.sourcegitcommit: 8803a64692f3edc0422b58f6c3037a8796374cc8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56122325"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57881795"
 ---
 # <a name="certificates-for-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이에 대한 인증서
 
@@ -40,9 +40,10 @@ CMG(클라우드 관리 게이트웨이)를 통해 인터넷에서 클라이언�
 
 
 ### <a name="general-information"></a>일반 정보
-<!--SCCMDocs issue #779-->클라우드 관리 게이트웨이에 대한 인증서는 다음 구성을 지원합니다.  
+<!--SCCMDocs issue #779-->
+클라우드 관리 게이트웨이의 인증서는 다음 구성을 지원합니다.  
 
-- **4096비트 키 길이**  
+- 2048 또는 4096비트 키 길이
 
 - 버전 1710부터는 인증서 개인 키를 위한 키 스토리지 공급자를 지원합니다. 자세한 내용은 [CNG 인증서 개요](/sccm/core/plan-design/network/cng-certificates-overview)를 참조하세요.  
 
@@ -83,7 +84,7 @@ CMG는 인터넷 기반 클라이언트에서 연결하는 HTTPS 서비스를 �
     - Configuration Manager 인증서 프로필을 사용하여 클라이언트에 인증서를 프로비전할 수도 있습니다. 자세한 내용은 [인증서 프로필 소개](/sccm/protect/deploy-use/introduction-to-certificate-profiles)를 참조하세요.  
 
 > [!Note]  
-> 버전 1806부터는 CMG를 만들 경우 설정 페이지에서 신뢰할 수 있는 루트 인증서를 더 이상 제공할 필요가 없습니다. 이 인증서는 클라이언트 인증용 Azure AD(Azure Active Directory)를 사용할 때 필요하지 않지만 마법사에서는 필요합니다. PKI 클라이언트 인증 인증서를 사용하는 경우 여전히 신뢰할 수 있는 루트 인증서를 CMG에 추가해야 합니다..<!--SCCMDocs-pr issue #2872-->  
+> 버전 1806부터는 CMG를 만들 경우 설정 페이지에서 신뢰할 수 있는 루트 인증서를 더 이상 제공할 필요가 없습니다. 이 인증서는 클라이언트 인증용 Azure AD(Azure Active Directory)를 사용할 때 필요하지 않지만 마법사에서는 필요합니다. PKI 클라이언트 인증 인증서를 사용하는 경우 여전히 신뢰할 수 있는 루트 인증서를 CMG에 추가해야 합니다.<!--SCCMDocs-pr issue #2872-->  
 
 
 ### <a name="bkmk_serverauthpublic"></a> 공용 공급자가 발급한 서버 인증 인증서
