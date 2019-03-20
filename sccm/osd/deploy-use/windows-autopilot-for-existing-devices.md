@@ -2,7 +2,7 @@
 title: 기존 디바이스에 대한 Windows Autopilot
 titleSuffix: Configuration Manager
 description: Configuration Manager 작업 순서를 사용하여 Windows Autopilot 사용자 기반 모드용으로 Windows 7 디바이스를 이미지로 다시 설치하고 프로비전합니다.
-ms.date: 02/22/2019
+ms.date: 03/05/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.assetid: 2e96f847-5b5a-4da9-8e8f-6aa488838508
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 53a9ac779a9a89e010334970c2045e71380a7801
-ms.sourcegitcommit: ef2960bd91655c741450774e512dd0a9be610625
-ms.translationtype: HT
+ms.openlocfilehash: 6878e36e5bf20774f6eef1ee855dda2f95dabfb4
+ms.sourcegitcommit: f3dd8405018fe1043434386be15c16752c1a4a3c
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56839015"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57558010"
 ---
 # <a name="windows-autopilot-for-existing-devices"></a>기존 디바이스에 대한 Windows Autopilot
 <!--3607717, fka 1358333-->
@@ -31,9 +31,12 @@ ms.locfileid: "56839015"
 
 ## <a name="prerequisites"></a>필수 구성 요소
 
-Windows 10 버전 1809 이상의 설치 미디어를 가져옵니다. 그런 다음, Configuration Manager OS 이미지를 만듭니다. 자세한 내용은 [OS 이미지 관리](/sccm/osd/get-started/manage-operating-system-images)를 참조하세요.
+- Windows 10 버전 1809 이상의 설치 미디어를 가져옵니다. 그런 다음, Configuration Manager OS 이미지를 만듭니다. 자세한 내용은 [OS 이미지 관리](/sccm/osd/get-started/manage-operating-system-images)를 참조하세요.
 
-Microsoft Intune에서 Windows Autopilot 프로필을 만듭니다. 자세한 내용은 [Windows Autopilot을 사용하여 Intune에 Windows 디바이스 등록](https://docs.microsoft.com/intune/enrollment-autopilot)을 참조하세요.
+- Microsoft Intune에서 Windows Autopilot 프로필을 만듭니다. 자세한 내용은 [Windows Autopilot을 사용하여 Intune에 Windows 디바이스 등록](https://docs.microsoft.com/intune/enrollment-autopilot)을 참조하세요.
+
+- 아직 서비스에 등록 된 Windows Autopilot 장치입니다. 장치가 이미 등록 되어 있는 경우 할당 된 프로필이 우선적으로 적용 합니다. 기존 장치 프로필에 대 한 Autopilot 경우에 적용 온라인 프로필 시간이 초과 됩니다.
+
 
 
 ## <a name="create-the-configuration-file"></a>구성 파일 만들기
@@ -93,7 +96,7 @@ Microsoft Intune에서 Windows Autopilot 프로필을 만듭니다. 자세한 �
 
     - **운영 체제를 설치하기 전에 대상 컴퓨터 파티션을 만들고 포맷** 옵션을 사용하도록 설정합니다.  
 
-    - **BitLocker에 사용할 작업 순서 구성**: 이 옵션을 사용하면 BitLocker를 사용하도록 설정하는 데 필요한 단계가 작업 순서에 포함됩니다.  
+    - **Bitlocker를 사용 하 여 사용할 작업 순서 구성**: 작업 순서에 Bitlocker를 사용 하도록 설정 하는 데 필요한 단계가 포함 됩니다이 옵션을 사용 하는 경우  
 
     - **제품 키**: Windows 정품 인증을 위한 제품 키를 지정해야 하는 경우 여기에 입력합니다.  
 
@@ -121,9 +124,9 @@ Microsoft Intune에서 Windows Autopilot 프로필을 만듭니다. 자세한 �
 
 작업 순서를 편집하는 것은 기존 OS 이미지를 적용하는 기본 작업 순서와 비슷합니다. 이 작업 순서에는 다음 추가 단계가 포함됩니다.  
 
-- **Windows Autopilot 구성 적용**: 이 단계에서는 지정된 패키지의 Autopilot 구성 파일을 적용합니다. 이 단계는 새로운 형식의 단계가 아니라 파일을 복사하는 **명령줄 실행** 단계입니다.  
+- **Windows Autopilot 구성 적용**: 이 단계는 지정된 패키지의 Autopilot 구성 파일을 적용합니다. 이 단계는 새로운 형식의 단계가 아니라 파일을 복사하는 **명령줄 실행** 단계입니다.  
 
-- **Windows 캡처 준비**: 이 단계는 Windows Sysprep을 실행하며 **이 작업을 실행한 후 컴퓨터 종료** 설정을 포함하고 있습니다. 자세한 내용은 [Windows 캡처 준비](/sccm/osd/understand/task-sequence-steps#BKMK_PrepareWindowsforCapture)를 참조하세요.  
+- **Windows 캡처 준비**: 이 단계는 Windows Sysprep을 실행하고 **이 작업을 실행한 후 컴퓨터 종료** 설정을 포함합니다. 자세한 내용은 [Windows 캡처 준비](/sccm/osd/understand/task-sequence-steps#BKMK_PrepareWindowsforCapture)를 참조하세요.  
 
 기존 디바이스에 대한 Windows Autopilot 작업 순서를 진행하면 디바이스가 Azure AD(Azure Active Directory)에 가입됩니다. 
 

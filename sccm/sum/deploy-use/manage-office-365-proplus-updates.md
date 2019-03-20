@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ece8381fd41651b5b52e3187bbcbfc1a0578234
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 10c04b5daa53a1b12637fa8470b97ae27a63678b
+ms.sourcegitcommit: 8803a64692f3edc0422b58f6c3037a8796374cc8
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56124765"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57881829"
 ---
 # <a name="manage-office-365-proplus-with-configuration-manager"></a>Configuration Manager를 사용하여 Office 365 ProPlus 관리
 
@@ -28,7 +28,7 @@ Configuration Manager를 사용하여 다음과 같은 방법으로 Office 365 P
 
 - [Office 365 앱 배포](#deploy-office-365-apps): Office 365 클라이언트 관리 대시보드에서 Office 365 설치 관리자를 시작하여 초기 Office 365 앱 설치 환경을 간편하게 만들 수 있습니다. 마법사를 통해 Office 365 설치 설정을 구성하고, Office CDN(콘텐츠 배달 네트워크)에서 파일을 다운로드하고, 콘텐츠가 포함된 스크립트 애플리케이션을 만들고 배포할 수 있습니다.    
 
-- [Office 365 업데이트 배포](#deploy-office-365-updates): 소프트웨어 업데이트 관리 워크플로를 사용하여 Office 365 클라이언트 업데이트를 관리할 수 있습니다. Microsoft에서 새 Office 365 클라이언트 업데이트를 Office CDN(Content Delivery Network)에 게시하면 Microsoft에서 업데이트 패키지도 WSUS(Windows Server Update Services)에 게시합니다. Configuration Manager에서 WSUS 카탈로그의 Office 365 클라이언트 업데이트를 사이트 서버로 동기화한 후에 업데이트를 클라이언트에 배포할 수 있습니다.    
+- [Deploy Office 365 업데이트](#deploy-office-365-updates): 소프트웨어 업데이트 관리 워크플로를 사용하여 Office 365 클라이언트 업데이트를 관리할 수 있습니다. Microsoft에서 새 Office 365 클라이언트 업데이트를 Office CDN(Content Delivery Network)에 게시하면 Microsoft에서 업데이트 패키지도 WSUS(Windows Server Update Services)에 게시합니다. Configuration Manager에서 WSUS 카탈로그의 Office 365 클라이언트 업데이트를 사이트 서버로 동기화한 후에 업데이트를 클라이언트에 배포할 수 있습니다.    
 
 - [Office 365 업데이트 다운로드 언어 추가](#add-languages-for-office-365-update-downloads): Office 365에서 지원되는 모든 언어의 업데이트를 다운로드하도록 Configuration Manager에 대한 지원을 추가할 수 있습니다. 즉, Office 365가 언어를 지원하면 Configuration Manager는 언어를 지원할 필요가 없습니다. Configuration Manager 버전 1610 이전에는 Office 365 클라이언트에 구성된 동일한 언어로 업데이트를 다운로드하고 배포해야 합니다. 
 
@@ -103,7 +103,7 @@ Configuration Manager 1806부터 Office 사용자 지정 도구가 Configuration
 9. 마법사를 완료합니다.
 10. **소프트웨어 라이브러리** > **개요** > **애플리케이션 관리** > **애플리케이션**에서 애플리케이션을 배포하거나 편집할 수 있습니다.    
 
-Office 365 설치 관리자를 사용하여 Office 365 애플리케이션을 만들고 배포한 후에는 기본적으로 Configuration Manager가 Office 업데이트를 관리하지 않습니다. Office 365 클라이언트가 Configuration Manager에서 업데이트를 받게 하려면 [Configuration Manager를 사용하여 Office 365 업데이트 배포](#deploy-office-365-updates-with-configuration-manager)를 참조하세요.
+Office 365 설치 관리자를 사용하여 Office 365 애플리케이션을 만들고 배포한 후에는 기본적으로 Configuration Manager가 Office 업데이트를 관리하지 않습니다. Office 365 클라이언트가 Configuration Manager에서 업데이트를 받게 하려면 [Configuration Manager를 사용하여 Office 365 업데이트 배포](#deploy-office-365-updates)를 참조하세요.
 
 Office 365 앱을 배포한 후 앱을 유지 관리하기 위한 자동 배포 규칙을 만들 수 있습니다. Office 365 앱에 대한 자동 배포 규칙을 만들려면 Office 365 클라이언트 관리 대시보드에서 **ADR 만들기**를 클릭합니다. 제품을 선택할 때 **Office 365 클라이언트**를 선택합니다. 자세한 내용은 [소프트웨어 업데이트 자동 배포](/sccm/sum/deploy-use/automatically-deploy-software-updates)를 참조하세요.
 
@@ -145,7 +145,7 @@ Office 365 클라이언트에 대한 업데이트를 배포할 때 다시 시작
 |Configuration Manager 버전 |최종 사용자 환경|  
 |----------------|---------------------|
 |1706, 1710|클라이언트는 업데이트를 설치하기 전에 카운트다운 대화 상자 뿐만 아니라 팝업 및 앱 내 알림을 받습니다.|
-|1802| 클라이언트는 업데이트를 설치하기 전에 카운트다운 대화 상자 뿐만 아니라 팝업 및 앱 내 알림을 받습니다. </br>모든 Office 365 애플리케이션이 Office 365 클라이언트 업데이트 적용 동안 실행되는 경우, Office 애플리케이션은 강제로 닫히지 않습니다. 대신 업데이트 설치는 시스템 다시 시작을 요구할 때 반환합니다 <!--510006-->|
+|1802| 클라이언트는 업데이트를 설치하기 전에 카운트다운 대화 상자 뿐만 아니라 팝업 및 앱 내 알림을 받습니다. </br>모든 Office 365 애플리케이션이 Office 365 클라이언트 업데이트 적용 동안 실행되는 경우, Office 애플리케이션은 강제로 닫히지 않습니다. 대신 업데이트 설치는 시스템 다시 시작을 요구할 때 반환합니다. <!--510006-->|
 
 
 > [!Important]
@@ -230,7 +230,8 @@ Office 365 클라이언트가 Configuration Manager에서 업데이트를 받도
 
 - 반기 채널(대상 지정) <br/>
 <i>(지연된 채널의 이전 첫 번째 릴리스)</i>:  
-  **CDNBaseUrl** = http&#58;//officecdn.microsoft.com/pr/b8f9b850-328d-4355-9145-c59439a0c4cf <!--the channel names changed in Sept 2017- https://docs.microsoft.com/en-us/DeployOffice/overview-of-update-channels-for-office-365-proplus?ui=en-US&rs=en-US&ad=US-->
+  **CDNBaseUrl** = http&#58;//officecdn.microsoft.com/pr/b8f9b850-328d-4355-9145-c59439a0c4cf
+<!--the channel names changed in Sept 2017- https://docs.microsoft.com/en-us/DeployOffice/overview-of-update-channels-for-office-365-proplus?ui=en-US&rs=en-US&ad=US-->
 
 
 <!--- You can create an Office 365 app without using the Office 365 Installation Wizard. To do this, you use the Office 2016 Deployment Tool (ODT) to download Office installation source files to a network share, generate Configure.xml that specifies the correct Office version and channel, and so on. Then, create an app for the files using the normal app management process.
