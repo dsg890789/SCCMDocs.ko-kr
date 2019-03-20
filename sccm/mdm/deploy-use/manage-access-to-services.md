@@ -2,7 +2,7 @@
 title: 조건부 액세스
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에서 조건부 액세스를 사용하여 메일 및 기타 서비스를 보호하는 방법을 알아봅니다.
-ms.date: 12/22/2017
+ms.date: 03/18/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38036f72603265f14ccd228b9466abc2a74a8ff5
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: f38b991ef942ea3dae3cffc49d7fe498458f6108
+ms.sourcegitcommit: f38ef9afb0c608c0153230ff819e5f5e0fb1520c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56135806"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58197047"
 ---
 # <a name="manage-access-to-services-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 서비스 액세스 관리
 
@@ -30,7 +30,7 @@ ms.locfileid: "56135806"
 > Configuration Manager 클라이언트로 관리 되는 장치의 조건부 액세스를 사용 하는 경우 보호 계속 되도록 먼저 사용 하도록 설정 해당 장치에 대 한 Intune에서 조건부 액세스를 마이그레이션하기 전에 합니다. Configuration Manager에서 공동 관리를 사용 하도록 설정, 규정 준수 정책 워크 로드를 Intune로 이동 하 고 Intune 하이브리드에서 Intune 독립 실행형으로 마이그레이션을 완료 합니다. 자세한 내용은 [공동 관리를 사용 하 여 조건부 액세스](https://docs.microsoft.com/sccm/comanage/quickstart-conditional-access)합니다. 
 
 
- Configuration Manager 클라이언트를 사용하여 관리되는 디바이스의 조건부 액세스에 대한 자세한 내용은 [System Center Configuration Manager에서 관리되는 PC용 O365 서비스에 대한 액세스 관리](../../protect/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md)를 참조하세요.  
+ Configuration Manager 클라이언트를 사용 하 여 관리 되는 장치의 조건부 액세스에 대 한 정보를 참조 하세요 [System Center Configuration Manager에서 관리 되는 Pc에 대 한 Office 365 서비스에 대 한 액세스 관리](../../protect/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md)합니다.  
 
 
  조건부 액세스에 대한 일반적인 흐름은 다음과 같을 수 있습니다.  

@@ -1,5 +1,5 @@
 ---
-title: O365 서비스에 대한 액세스 관리
+title: Office 365 서비스에 대 한 액세스 관리
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에서 관리되는 PC의 Office 365 서비스에 대한 조건부 액세스를 구성하는 방법을 알아봅니다.
 ms.date: 03/21/2019
@@ -11,14 +11,14 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74a28863b2e30566b07890d57e927703d77247f6
-ms.sourcegitcommit: ec4411fe30770f90128cf6cbd181047db90040cb
+ms.openlocfilehash: 434801b170ed5efcbbafa046a3ac1e94a615ed3d
+ms.sourcegitcommit: f38ef9afb0c608c0153230ff819e5f5e0fb1520c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57881710"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58196775"
 ---
-# <a name="manage-access-to-o365-services-for-pcs-managed-by-system-center-configuration-manager"></a>System Center Configuration Manager에서 관리되는 PC용 O365 서비스에 대한 액세스 관리
+# <a name="manage-access-to-office-365-services-for-pcs-managed-by-system-center-configuration-manager"></a>System Center Configuration Manager에서 관리 되는 Pc에 대 한 Office 365 서비스에 대 한 액세스 관리
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -63,7 +63,7 @@ Microsoft Intune에서 등록하고 관리한 디바이스에 대한 조건부 �
 
 ### <a name="prerequisites"></a>필수 구성 요소  
 
-- ADFS 동기화 및 O365 구독. O365 구독은 Exchange Online 및 SharePoint Online을 설정하는 데 사용됩니다.  
+- ADFS 동기화 및 Office 365 구독을 합니다. Office 365 구독을 Exchange Online 및 SharePoint Online 설정입니다.  
 
 - Microsoft Intune 구독 Microsoft Intune 구독은 Configuration Manager 콘솔에서 구성해야 합니다. Intune 구독은 디바이스 준수 상태를 Azure Active Directory에 릴레이하고 사용자 사용을 허가하는 데 사용됩니다.  
 

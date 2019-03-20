@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76326a1e0bcb3d9362db5eccfc08459bb4448206
-ms.sourcegitcommit: ec4411fe30770f90128cf6cbd181047db90040cb
+ms.openlocfilehash: 2ee4ed8f102507b4d62a1ccbfe1cc38240e85df9
+ms.sourcegitcommit: f38ef9afb0c608c0153230ff819e5f5e0fb1520c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57881778"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58196860"
 ---
 # <a name="manage-email-access-in-configuration-manager"></a>Configuration Manager에서 메일 액세스 관리
 
@@ -79,7 +79,7 @@ Office 데스크톱 애플리케이션은 다음을 실행하는 Exchange Online
 
 지원되지 않는 브라우저는 차단됩니다. IOS 및 Android 용 OWA 앱은 지원 되지 않습니다. 이러한 브라우저는 ADFS 클레임 규칙을 통해 차단해야 합니다.  
 
-- 최신 인증 이외의 인증 프로토콜을 차단하도록 ADFS 클레임 규칙을 설정해야 합니다. 자세한 지침은 시나리오 3에에서 나와 [브라우저 기반 응용 프로그램을 제외한 모든 O365 액세스 차단](https://technet.microsoft.com/library/dn592182.aspx)합니다.  
+- 최신 인증 이외의 인증 프로토콜을 차단하도록 ADFS 클레임 규칙을 설정해야 합니다. 자세한 지침은 시나리오 3에에서 나와 [브라우저 기반 응용 프로그램을 제외한 Office 365에 대 한 모든 액세스를 차단](https://technet.microsoft.com/library/dn592182.aspx)합니다.  
 
 #### <a name="for-pcs"></a>Pc에 대 한
 

@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5213c96ee434d9d87ea7728701945ac46c0a62a0
-ms.sourcegitcommit: ceec0e20bf801071f2a05233f984cf17acc3fd29
+ms.openlocfilehash: f1a6ab6fca6650bde69179b71576d1df2e201b92
+ms.sourcegitcommit: f38ef9afb0c608c0153230ff819e5f5e0fb1520c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56755470"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58196741"
 ---
 # <a name="enable-data-sharing-for-desktop-analytics"></a>데이터 분석 데스크톱에 대 한 공유를 사용 하도록 설정 
 
@@ -76,8 +76,8 @@ ms.locfileid: "56755470"
 | `https://nexusrules.officeapps.live.com` | Office 클라이언트에서 동적 진단 데이터 이벤트를 요청 하는 데 사용 합니다. 이 데이터는 데스크톱 Analytics 포털에서 드릴 다운 및 진단 용도로 유용 하 게 |
 | `https://nexus.officeapps.live.com` | Office 14, Office 15 및 16.0.8702 보다 이전 버전의 Office 16에서 진단 데이터 이벤트를 보내는 Office 클라이언트에서 사용 합니다. 사용량을 수집 하 되 고, 안정성 데스크톱 분석에 대 한 이벤트를 알립니다. |
 | `https://office.pipe.aria.microsoft.com` | Office 클라이언트에서 이벤트를 보내는 데 진단 데이터 유니버설/최신 Office 앱에서 Win32 Office 16 버전 16.0.8702 이상. 사용량을 수집 하 되 고, 안정성 데스크톱 분석에 대 한 이벤트를 알립니다. |
-| `https://graph.windows.net` | Configuration Manager에서 자동으로 설정을 검색할 CommercialId 같은 계층 데스크톱 Analytics에 연결할 때 사용 합니다. |
-| `https://fef.bmsub01.manage-beta.microsoft.com` | 장치 컬렉션 멤버 자격, 배포 계획 및 데스크톱 Analytics를 사용 하 여 장치 준비 상태를 동기화 할 Configuration Manager를 사용 합니다. |
+| `https://graph.windows.net` | Configuration Manager 서버 역할에만 해당) (에 계층 데스크톱 Analytics에 연결 하는 경우 commercialid 입니다와 같은 설정이 자동으로 검색 하는 데 사용 합니다. |
+| `https://fef.msua06.manage.microsoft.com` | 동기화 장치 컬렉션 멤버 자격, 배포 계획 (Configuration Manager 서버 역할에만 해당)에 데스크톱 Analytics를 사용 하 여 장치 준비 상태를 사용 합니다. |
 
 
 ### <a name="ssl-inspection"></a>SSL 검사

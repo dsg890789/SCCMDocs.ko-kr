@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 420026065caf619f51a5ebf84d7ae2f61a2248e1
-ms.sourcegitcommit: ec4411fe30770f90128cf6cbd181047db90040cb
+ms.openlocfilehash: 73eda37c9432750d94ef0b770348fc3d3250800c
+ms.sourcegitcommit: f38ef9afb0c608c0153230ff819e5f5e0fb1520c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57881931"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58197081"
 ---
 # <a name="past-hybrid-features-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하는 이전 하이브리드 기능
 
@@ -223,12 +223,12 @@ Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추�
   Android 용 회사 포털 앱은 Google Play 서비스를 사용하여 Microsoft Intune 서비스와 통신합니다. Google Play 서비스는 중국에서 아직 제공되지 않으므로 다음 작업을 수행하는 경우 완료하는 데 최대 8시간이 걸릴 수 있습니다.
 
   | Configuration Manager 관리 콘솔 | Android용 Intune 회사 포털 앱 | Intune 회사 포털 웹 사이트 |
-  |----|----|----|      
-  | 사용 중지/초기화(모든 데이터 제거)   | 원격 디바이스 제거 | 디바이스(로컬 및 원격) 제거 |
-  | 사용 중지/초기화(회사 데이터 제거)   | 디바이스 다시 설정 | 디바이스 다시 설정|
+  |----|----|----|
+  | 사용 중지/초기화(모든 데이터 제거)| 원격 디바이스 제거 | 디바이스(로컬 및 원격) 제거 |
+  | 사용 중지/초기화(회사 데이터 제거)| 디바이스 다시 설정 | 디바이스 다시 설정|
   | 신규 또는 업데이트된 앱 배포 | 사용 가능한 LOB(기간 업무) 앱 설치 | 디바이스 암호 재설정|
-  | 원격 잠금 | | |
-  | 암호 재설정 | | |        
+  | 원격 잠금| | |
+  | 암호 재설정 | | |
 
 
 ## <a name="november-2016"></a>2016년 11월

@@ -2,7 +2,7 @@
 title: 디바이스 준수 정책
 titleSuffix: Configuration Manager
 description: 디바이스가 조건부 액세스 정책을 준수하도록 Configuration Manager에서 준수 정책을 관리하는 방법을 알아봅니다.
-ms.date: 07/12/2018
+ms.date: 03/19/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2544d2b61c3d92555d0bc1abc908003f1c982bab
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 4e225b7ab54a1061387d1c8ee369641f68bd7889
+ms.sourcegitcommit: f38ef9afb0c608c0153230ff819e5f5e0fb1520c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56136520"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58196877"
 ---
 # <a name="device-compliance-policies-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 디바이스 준수 정책 관리
 
@@ -26,7 +26,7 @@ Configuration Manager의 준수 정책은 디바이스가 조건부 액세스 �
 
 
 > [!IMPORTANT]  
->  이 문서에서는 Microsoft Intune으로 관리되는 디바이스에 대한 규정 준수 정책을 설명합니다. Configuration Manager 클라이언트로 관리되는 디바이스에 대한 준수 정책은 [Configuration Manager에서 관리되는 디바이스용 O365 서비스에 대한 액세스 관리](/sccm/protect/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm)에 설명되어 있습니다.  
+>  이 문서에서는 Microsoft Intune으로 관리되는 디바이스에 대한 규정 준수 정책을 설명합니다. Configuration Manager 클라이언트에서 관리 되는 장치에 대 한 준수 정책에 설명 되어 [Configuration Manager에서 관리 하는 장치에 대 한 Office 365 서비스에 대 한 액세스 관리](/sccm/protect/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm)합니다.  
 
  이러한 규칙에는 다음과 같은 요구 사항이 있습니다.  
 
@@ -71,7 +71,8 @@ Configuration Manager의 준수 정책은 디바이스가 조건부 액세스 �
 
 
 ## <a name="devices-without-any-assigned-compliance-policy"></a>모든 할당된 준수 정책이 없는 디바이스
-<!--2520152--> 2018년 7월부터 할당된 준수 정책이 없는 모든 디바이스가 준수 또는 비준수로 간주되는지 여부를 구성합니다. 기본적으로 할당된 준수 정책이 없는 디바이스는 준수로 간주됩니다. 다음 단계에 따라 Azure Portal에서 이 설정을 변경합니다.
+<!--2520152-->
+2018 년 7 월부터, 할당 된 준수 정책이 없는 모든 장치 준수 또는 비준수 것으로 간주 하는지 여부를 구성 합니다. 기본적으로 할당된 준수 정책이 없는 디바이스는 준수로 간주됩니다. 다음 단계에 따라 Azure Portal에서 이 설정을 변경합니다.
 
 1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에 로그인합니다.  
 

@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb4170bddfbad34807c6fb82131fa09dc7c6b09f
-ms.sourcegitcommit: ceec0e20bf801071f2a05233f984cf17acc3fd29
+ms.openlocfilehash: c8e346aaabb03296f19a1eaf40d79c0f9f241cce
+ms.sourcegitcommit: f38ef9afb0c608c0153230ff819e5f5e0fb1520c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56755477"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58197013"
 ---
 # <a name="tutorial-deploy-office-365-to-pilot"></a>자습서: Office 365를 파일럿 배포 
 
@@ -84,7 +84,7 @@ Azure 구독이 없으면 만듭니다는 [무료 계정](https://azure.microsof
     - `https://nexus.officeapps.live.com`  
     - `https://office.pipe.aria.microsoft.com`  
     - `https://graph.windows.net` (에서 Configuration Manager 서버 역할에만 해당)
-    - `https://fef.bmsub01.manage-beta.microsoft.com` (에서 Configuration Manager 서버 역할에만 해당)
+    - `https://fef.msua06.manage.microsoft.com` (에서 Configuration Manager 서버 역할에만 해당)
 
     자세한 내용은 [데스크톱 분석에 대 한 공유 데이터를 사용 하도록 설정 하는 방법을](/sccm/desktop-analytics/enable-data-sharing#endpoints)합니다.  
 
@@ -101,7 +101,7 @@ Azure 구독이 없으면 만듭니다는 [무료 계정](https://azure.microsof
 
 2. 에 **서비스 계약에 동의** 페이지에서 서비스 계약을 검토 하 고 선택 **Accept**합니다.  
 
-3. 에 **구독을 확인 하** 데스크톱 Analytics의 Windows 장치 상태 모니터링 기능에 대 한 페이지에서 필요한 정식 라이선스 목록이 됩니다. 선택 **다음** 계속 합니다.  
+3. 에 **구독을 확인 하** 데스크톱 Analytics의 Windows 장치 상태 모니터링 기능에 대 한 페이지에서 필요한 정식 라이선스 목록이 됩니다. 계속하려면 **다음**을 선택합니다.  
 
 4. 에 **사용자가 액세스할 수** 데스크톱 분석 페이지에서 Azure Active Directory에서 두 개의 보안 그룹을 미리 구성 합니다.  
 
