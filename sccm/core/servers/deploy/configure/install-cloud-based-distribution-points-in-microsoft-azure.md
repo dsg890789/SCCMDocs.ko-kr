@@ -334,7 +334,7 @@ Set-AzureServiceDiagnosticsExtension -StorageAccountName $storage_name -StorageA
 ```
 
 
-다음 샘플은 위의 PowerShell 스크립트에서 **public_config** 변수에서 참조되는 예제 **diagnostics.wadcfgx** 파일입니다. 자세한 내용은 [Azure 진단 확장 구성 스키마](https://docs.microsoft.com/azure/monitoring-and-diagnostics/azure-diagnostics-schema)를 참조하세요.  
+다음 샘플은 위의 PowerShell 스크립트에서 **public_config** 변수에서 참조되는 예제 **diagnostics.wadcfgx** 파일입니다. 자세한 내용은 [Azure Diagnostics 확장 구성 스키마](https://docs.microsoft.com/azure/monitoring-and-diagnostics/azure-diagnostics-schema)를 참조하세요.  
 
 ``` XML
 <?xml version="1.0" encoding="utf-8"?>
