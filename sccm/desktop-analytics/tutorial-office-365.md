@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8e346aaabb03296f19a1eaf40d79c0f9f241cce
-ms.sourcegitcommit: f38ef9afb0c608c0153230ff819e5f5e0fb1520c
+ms.openlocfilehash: b8102e426e4737efdd5ca77de2824c1465b382ec
+ms.sourcegitcommit: 5f17355f954b9d9e10325c0e9854a9d582dec777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58197013"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58329501"
 ---
 # <a name="tutorial-deploy-office-365-to-pilot"></a>자습서: Office 365를 파일럿 배포 
 
@@ -97,7 +97,7 @@ Azure 구독이 없으면 만듭니다는 [무료 계정](https://azure.microsof
 
 데스크톱 분석에 로그인 하 고 구독에서 구성 하려면이 절차를 따르십시오. 이 절차는 조직에 대 한 데스크톱 Analytics를 설정 하는 일회성 프로세스입니다.  
 
-1. 열기는 [데스크톱 Analytics 포털](https://aka.ms/m365aprod) 사용자로 Microsoft 365 장치 관리에서 **회사 관리자** 권한. 선택 **시작**합니다.  
+1. 사용자로 Microsoft 365 장치 관리에서 데스크톱 Analytics 포털을 엽니다 **회사 관리자** 권한. 선택 **시작**합니다.  
 
 2. 에 **서비스 계약에 동의** 페이지에서 서비스 계약을 검토 하 고 선택 **Accept**합니다.  
 
@@ -134,7 +134,7 @@ Azure 구독이 없으면 만듭니다는 [무료 계정](https://azure.microsof
 
 ### <a name="create-an-app-in-azure-ad-for-configuration-manager"></a>Configuration Manager에 대 한 Azure AD에서 앱 만들기  
 
-1. 에 [Azure portal](http://portal.azure.com)로 이동 하세요 **Azure Active Directory**를 선택한 **앱 등록**합니다. 선택한 **새 응용 프로그램 등록**합니다.  
+1. 에 [Azure portal](https://portal.azure.com)로 이동 하세요 **Azure Active Directory**를 선택한 **앱 등록**합니다. 선택한 **새 응용 프로그램 등록**합니다.  
 
 2. 에 **만들기** 패널에서 다음 설정을 구성 합니다.  
 
