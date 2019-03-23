@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8102e426e4737efdd5ca77de2824c1465b382ec
-ms.sourcegitcommit: 5f17355f954b9d9e10325c0e9854a9d582dec777
+ms.openlocfilehash: 0f05b1115338f9808a950bcd1646d8035f3a563b
+ms.sourcegitcommit: 4441b3035222cfaf7442416873ed824ac7d852c5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58329501"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356362"
 ---
 # <a name="tutorial-deploy-office-365-to-pilot"></a>자습서: Office 365를 파일럿 배포 
 
@@ -381,5 +381,5 @@ Configuration Manager 연결을 만든 후 15 분 내에서 모든 데스크톱 
 
 데스크톱 Analytics 배포 계획에 자세히 알아보려면 다음 문서로 이동 합니다.
 > [!div class="nextstepaction"]  
-> [배포 계획](/sccm/desktop-analytics/deployment-plans)  
+> [배포 계획](/sccm/desktop-analytics/about-deployment-plans)
 

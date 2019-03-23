@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9bd3a9efcbc76647ae39eb1a104b401b112d15fb
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 7b20637cea4e02f390ae845ff9d421e5011120ab
+ms.sourcegitcommit: 4441b3035222cfaf7442416873ed824ac7d852c5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56755175"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356328"
 ---
 # <a name="how-to-set-up-desktop-analytics"></a>데스크톱 Analytics를 설정 하는 방법 
 
@@ -30,7 +30,7 @@ ms.locfileid: "56755175"
 
 ## <a name="initial-onboarding"></a>초기 온 보 딩
 
-1. 열기는 [데스크톱 Analytics 포털](https://aka.ms/m365aprod) 사용자로 Microsoft 365 장치 관리에서 **회사 관리자** 권한. 선택 **시작**합니다.  
+1. 사용자로 Microsoft 365 장치 관리에서 데스크톱 Analytics 포털을 엽니다 **회사 관리자** 권한. 선택 **시작**합니다.  
 
 2. 에 **서비스 계약에 동의** 페이지에서 서비스 계약을 검토 하 고 선택 **Accept**합니다.  
 
