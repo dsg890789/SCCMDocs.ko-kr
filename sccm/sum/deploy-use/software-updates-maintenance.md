@@ -3,7 +3,7 @@ title: 소프트웨어 업데이트 유지 관리
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 업데이트를 유지 관리하려면 WSUS 정리 태스크를 예약하거나 수동으로 실행할 수 있습니다.
 author: mestew
-ms.date: 03/05/2019
+ms.date: 03/15/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
@@ -11,12 +11,12 @@ ms.assetid: 4b0e2e90-aac7-4d06-a707-512eee6e576c
 manager: dougeby
 ms.author: mstewart
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff0f69a0e43c2d52aec9df262bf8d48587edb94c
-ms.sourcegitcommit: 4ab85212268e76d3fd22f00e6c74edaa5abde60c
+ms.openlocfilehash: c0391202054a80ea34180e73d107f5c2991aebe2
+ms.sourcegitcommit: d71e558db2da124357b840332e2da671b3810507
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57426858"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58269076"
 ---
 # <a name="software-updates-maintenance"></a>소프트웨어 업데이트 유지 관리
 
@@ -56,7 +56,8 @@ Configuration Manager 1806 버전 이전의 WSUS 정리 옵션에서 실행하�
 
 ## <a name="wsus-cleanup-behavior-starting-in-version-1806"></a>1806 버전부터 시작하는 WSUS 정리 동작
 
-1806 버전부터 WSUS 정리 옵션은 동기화를 완료할 때마다 발생하고 다음 정리 항목을 수행합니다. <!--1357898 -->
+1806 버전부터 WSUS 정리 옵션은 동기화를 완료할 때마다 발생하고 정리 항목을 수행합니다.
+<!--1357898 -->
 
 - CAS 및 기본 사이트의 WSUS 서버에 대한 **만료된 업데이트** 옵션
   - 보조 사이트의 WSUS 서버는 만료된 업데이트에 대해 WSUS 정리를 실행하지 않습니다.
@@ -79,7 +80,8 @@ Configuration Manager 1806 버전 이전의 WSUS 정리 옵션에서 실행하�
 
 ## <a name="wsus-cleanup-behavior-starting-in-version-1810"></a>1810 버전부터 시작하는 WSUS 정리 동작
 
-1810 버전부터 WSUS 정리 옵션은 동기화를 완료할 때마다 발생하고 <!--2839349--> 정리 항목을 수행합니다.
+1810 버전부터 소프트웨어 업데이트 지점 구성 요소 속성에서 비 기능 업데이트와 별도로 기능 업데이트에 대 한 대체 규칙을 지정할 수 있습니다. WSUS 정리 옵션은 동기화를 완료할 때마다 발생하고 정리 항목을 수행합니다.
+<!--2839349,3098809, 2977644-->
 
 - CAS, 기본 사이트 및 보조 사이트의 WSUS 서버에 대한 **만료된 업데이트** 옵션입니다.
 - Configuration Manager는 데이터베이스에서 대체된 업데이트 목록을 작성합니다. 목록은 소프트웨어 업데이트 지점 구성 요소 속성의 대체 동작을 기반으로 합니다.
