@@ -12,10 +12,10 @@ ms.author: brenduns
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: af526f531ed81de105aea9d6c5d7f2ea81e8f104
-ms.sourcegitcommit: af8693048e6706ffda72572374f56e0bc7dfce2c
+ms.sourcegitcommit: 9aebc20b25cdef0af908918ccfd791f3264a5d94
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
+ms.lasthandoff: 03/27/2019
 ms.locfileid: "57737284"
 ---
 # <a name="tutorial-enable-co-management-for-existing-configuration-manager-clients"></a>자습서: 기존 Configuration Manager 클라이언트에 대해 공동 관리 사용
