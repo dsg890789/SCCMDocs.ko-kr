@@ -2,7 +2,7 @@
 title: Azure에서 랩 만들기
 titleSuffix: Configuration Manager
 description: Azure 템플릿을 사용하여 Configuration Manager Technical Preview 랩 생성 자동화
-ms.date: 01/22/2019
+ms.date: 03/18/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02f3df4b8c090df960f1052a25c1f6cc8ef45395
-ms.sourcegitcommit: ef2960bd91655c741450774e512dd0a9be610625
+ms.openlocfilehash: 25283e513e256e8ce779df7b71ac6f6c17f1e370
+ms.sourcegitcommit: f38ef9afb0c608c0153230ff819e5f5e0fb1520c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56838772"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58196826"
 ---
 # <a name="create-a-configuration-manager-technical-preview-lab-in-azure"></a>Azure에서 Configuration Manager Technical Preview 랩 만들기
 
@@ -33,7 +33,7 @@ Configuration Manager 현재 분기에 대한 자세한 내용은 [Azure의 Conf
 ## <a name="prerequisites"></a>필수 구성 요소
 
 이 프로세스에는 다음 개체를 만들 수 있는 Azure 구독이 필요합니다. 
-- Standard_D2s_v3 가상 머신 4대
+- Standard_D2s_v3 가상 머신 3대
 - Standard_LRS 스토리지 계정
 
 > [!Tip]  
@@ -68,7 +68,7 @@ Configuration Manager 현재 분기에 대한 자세한 내용은 [Azure의 Conf
     > [!Important]  
     > Azure에서 다음 설정이 필요합니다. 기본값을 사용합니다. 이러한 값을 변경하지 마세요.  
     > 
-    > - **\_아티팩트 위치**: 이 템플릿에 대한 스크립트의 위치<!-- https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/sccm-technicalpreview/ -->  
+    > - **\_아티팩트 위치**: 이 템플릿에 대한 스크립트의 위치 <!-- https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/sccm-technicalpreview/ -->  
     >
     > - **\_아티팩트 위치 Sas 토큰**: sasToken은 아티팩트 위치에 액세스해야 함  
     > 
@@ -86,7 +86,7 @@ VM에 연결하려면 먼저 Azure Portal에서 각 VM에 대한 공용 IP 주�
 
 ## <a name="azure-vm-info"></a>Azure VM 정보
 
-4개의 VM은 모두 다음 사양을 충족합니다.
+3개의 VM은 모두 다음 사양을 충족합니다.
 - 두 개의 CPU 코어와 8GB의 메모리가 있는 Standard_D2s_v3  
 - Windows Server 2016 Datacenter Edition
 - 150GB의 디스크 공간
@@ -127,14 +127,4 @@ Active Directory 도메인 컨트롤러
 - RDC(원격 차등 압축) 
 - IIS(인터넷 정보 서비스)
 - BITS(Background Intelligent Transfer Service)
-
-
-### `<prefix>Other`
-
-이 VM은 클라이언트로서 또는 다른 사이트 역할을 호스트하는 데 사용할 수 있습니다.
-
-#### <a name="windows-features-and-roles"></a>Windows 기능 및 역할
-- .NET
-- RDC(원격 차등 압축) 
-
 

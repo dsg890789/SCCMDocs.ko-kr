@@ -2,7 +2,7 @@
 title: 버전 1810의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager 최신 라인인 1810 버전에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
-ms.date: 03/13/2019
+ms.date: 03/21/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 51329775e44963a4ca14067fb909c05c0ec9a24c
-ms.sourcegitcommit: 8803a64692f3edc0422b58f6c3037a8796374cc8
+ms.openlocfilehash: 5e0b1e9404eb332a562b6d48db0f55e8726a09c8
+ms.sourcegitcommit: 5f17355f954b9d9e10325c0e9854a9d582dec777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57881863"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58329620"
 ---
 # <a name="whats-new-in-version-1810-of-configuration-manager-current-branch"></a>Configuration Manager 1810 버전의 새로운 기능
 
@@ -61,10 +61,10 @@ Configuration Manager는 이제 사이트 시스템으로 Windows Server 2019 �
 
 
 ### <a name="hierarchy-support-for-site-server-high-availability"></a>사이트 서버 고가용성에 대한 계층 구조 지원
-<!--1358224-->
-중앙 관리 사이트 및 자식 기본 사이트는 이제 수동 모드의 추가 사이트 서버를 가질 수 있습니다. 
+<!--3607755, fka 1358224-->
+***[업데이트됨]*** 중앙 관리 사이트 및 자식 기본 사이트는 이제 수동 모드의 추가 사이트 서버를 가질 수 있습니다. 
 
-<!--For more information, see [Site server high availability](/sccm/core/servers/deploy/configure/site-server-high-availability).-->
+자세한 내용은 [사이트 서버 고가용성](/sccm/core/servers/deploy/configure/site-server-high-availability)을 참조하세요.
 
 
 ### <a name="improvements-to-setup-prerequisites"></a>설치 필수 구성 요소에 대한 개선 사항
@@ -249,6 +249,12 @@ PowerShell 프로필은 PowerShell이 시작될 때 실행되는 스크립트입
 
 자세한 내용은 [드라이버 관리](/sccm/osd/get-started/manage-drivers)를 참조하세요.
 
+### <a name="improvements-to-windows-10-servicing-plan-filters"></a>Windows 10 서비스 계획 필터 기능 개선
+
+<!--3098809, 3113836, 3204570 -->
+***[업데이트됨]*** 추가 필터가 Windows 10 서비스 계획에 추가되었습니다. 이제 업그레이드가 **대체됨**인 경우 **아키텍처** 및 **제품 범주**별로 필터링할 수 있습니다.
+
+자세한 내용은 [Windows 10 서비스 플랜](/sccm/osd/deploy-use/manage-windows-as-a-service#BKMK_ServicingPlan)을 참조하세요.
 
 ### <a name="new-task-sequence-variable-for-last-action-name"></a>마지막 작업 이름에 대한 새 작업 순서 변수
 <!--SCCMDocs-pr issue #2964-->
@@ -273,19 +279,27 @@ PowerShell 프로필은 PowerShell이 시작될 때 실행되는 스크립트입
 
 ### <a name="improvement-to-maintenance-windows-for-software-updates"></a>향상된 소프트웨어 업데이트에 대한 유지 관리 기간 기능
 <!--vso2839307-->
-다음 클라이언트 설정은 유지 관리 기간에서 **소프트웨어 업데이트**의 설치 동작을 제어하는 소프트웨어 업데이트 그룹에 있습니다. 
+***[업데이트됨]*** 다음 클라이언트 설정은 유지 관리 기간에서 **소프트웨어 업데이트**의 설치 동작을 제어하는 소프트웨어 업데이트 그룹에 있습니다. 
 
 **"소프트웨어 업데이트" 유지 관리 기간을 사용할 수 있는 경우 "모든 배포" 유지 관리 기간에서 업데이트 설치 사용**
 
 기본적으로 이 옵션은 기존 동작과 일관성을 유지하기 위해 **아니요**입니다. 클라이언트에서 다른 사용 가능한 유지 관리 기간을 사용하여 소프트웨어 업데이트를 설치할 수 있도록 하려면 **예**로 변경합니다.
 
-<!--For more information, see []().-->
+자세한 내용은 [소프트웨어 업데이트 클라이언트 설정](/sccm/core/clients/deploy/about-client-settings#bkmk_SUMMaint)을 참조하세요.
+
 
 ### <a name="improvement-to-software-updates-maintenance"></a>소프트웨어 업데이트 유지 관리 개선
 <!--2839349-->
 WSUS 정리 작업은 이제 보조 사이트에서 실행됩니다. 만료된 업데이트에 대한 WSUS 정리가 실행되고 보조 사이트의 경우 대체 업데이트가 WSUS에서 거부됩니다.
 
 자세한 내용은 [버전 1810에서 시작하는 WSUS 정리 동작](/sccm/sum/deploy-use/software-updates-maintenance#wsus-cleanup-behavior-starting-in-version-1810)을 참조하세요.
+
+### <a name="improvement-to-software-update-supersedence-rules"></a>소프트웨어 업데이트 대체 규칙 기능 개선
+<!--3098809, 2977644-->
+
+***[업데이트됨]***  이제 비기능 업데이트와 별도로 기능 업데이트에 대한 대체 규칙을 지정할 수 있습니다. 즉, Windows 10 클라이언트 서비스를 완료하기 전에 Configuration Manager에서 업그레이드가 제거되지 않습니다.
+
+자세한 내용은 [교체 규칙](/sccm/sum/get-started/install-a-software-update-point#supersedence-rules)을 참조하세요.
 
 ## <a name="bkmk_report"></a> 보고
 
@@ -363,9 +377,8 @@ CMPivot의 추가 성능 및 문제 해결 기능 개선에 대한 자세한 내
 
 
 ### <a name="bkmk_scripts"></a> 스크립트 기능 개선
-
-<!--3607711, fka 1358239-->
-***[업데이트]*** 이제 원시 또는 구조적 JSON 형식으로 세부 스크립트 출력을 볼 수 있습니다. 이 형식을 사용하면 출력을 더 쉽게 읽고 분석할 수 있습니다.
+<!--1358239-->
+이제 원시 또는 구조적 JSON 형식으로 세부 스크립트 출력을 볼 수 있습니다. 이 형식을 사용하면 출력을 더 쉽게 읽고 분석할 수 있습니다. 
 
 다음 성능 및 문제 해결 개선 사항은 CMPivot 및 스크립트 둘 다에 적용됩니다.
 
@@ -373,11 +386,11 @@ CMPivot의 추가 성능 및 문제 해결 기능 개선에 대한 자세한 내
 
 - 문제 해결을 위한 추가 로그  
 
-자세한 내용은 다음 아티클을 참조하세요.  
+<!--For more information, see the following articles:  
 
-- [Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행](/sccm/apps/deploy-use/create-deploy-scripts)  
+- [Create and run PowerShell scripts from the Configuration Manager console](/sccm/apps/deploy-use/create-deploy-scripts)  
 
-- [CMPivot](/sccm/core/servers/manage/cmpivot)
+- [CMPivot](/sccm/core/servers/manage/cmpivot)  -->
 
 
 ### <a name="sms-provider-api"></a>SMS 공급자 API

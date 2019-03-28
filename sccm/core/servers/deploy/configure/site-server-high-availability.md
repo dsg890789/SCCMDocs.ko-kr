@@ -2,7 +2,7 @@
 title: 사이트 서버 고가용성
 titleSuffix: Configuration Manager
 description: 수동 모드 사이트 서버를 추가하여 Configuration Manager 사이트 서버에 대해 고가용성을 구성하는 방법입니다.
-ms.date: 07/30/2018
+ms.date: 03/20/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be12cfe29ff470f2f577bab2c685695ae5770bae
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 1259e54f552496f1c838ce4d8da5dbb385dc3c52
+ms.sourcegitcommit: 5f17355f954b9d9e10325c0e9854a9d582dec777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56131424"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58329535"
 ---
 # <a name="site-server-high-availability-in-configuration-manager"></a>Configuration Manager의 사이트 서버 고가용성 
 
@@ -24,7 +24,14 @@ ms.locfileid: "56131424"
 
 <!--1128774-->
 
-Configuration Manager 버전 1806부터 사이트 서버 역할에 대한 고가용성은 *수동* 모드에서 추가 사이트 서버를 설치하기 위한 Configuration Manager 기반 솔루션입니다. 수동 모드의 사이트 서버는 *활성* 모드의 기존의 사이트 서버 외의 추가 서버입니다. 수동 모드의 사이트 서버는 필요할 때 즉시 사용할 수 있습니다. Configuration Manager 서비스의 [고가용성](/sccm/core/servers/deploy/configure/high-availability-options)을 위해 전체 설계의 일부로 추가 사이트 서버를 포함합니다.  
+지금까지 작업 환경에 이러한 역할의 여러 인스턴스를 유지하여 Configuration Manager에서 대부분의 역할에 중복성을 추가할 수 있습니다. 사이트 서버 자체는 예외입니다. Configuration Manager 버전 1806부터 사이트 서버 역할에 대한 고가용성은  *수동* 모드에서 추가 사이트 서버를 설치하기 위한 Configuration Manager 기반 솔루션입니다. 버전 1810은 계층 구조 지원을 추가하므로, 중앙 관리 사이트 및 자식 기본 사이트도 수동 모드의 추가 사이트 서버를 가질 수 있습니다. 수동 모드의 사이트 서버는 Azure에서 온-프레미스 또는 클라우드 기반일 수 있습니다.
+
+이 기능은 다음과 같은 이점을 제공합니다. 
+- 사이트 서버 역할에 대한 중복성 및 고가용성  
+- 사이트 서버의 하드웨어 또는 OS를 보다 쉽게 변경  
+- 사이트 서버를 Azure IaaS로 더 쉽게 이동  
+
+수동 모드의 사이트 서버는 *활성* 모드의 기존의 사이트 서버 외의 추가 서버입니다. 수동 모드의 사이트 서버는 필요할 때 즉시 사용할 수 있습니다. Configuration Manager 서비스의 [고가용성](/sccm/core/servers/deploy/configure/high-availability-options)을 위해 전체 설계의 일부로 추가 사이트 서버를 포함합니다.  
 
 수동 모드의 사이트 서버:
 - 활성 모드의 사이트 서버와 동일한 사이트 데이터베이스를 사용합니다.
@@ -33,12 +40,17 @@ Configuration Manager 버전 1806부터 사이트 서버 역할에 대한 고가
 
 수동 모드의 사이트 서버를 활성화하려면 수동으로 *수준을 올립니다*. 이 작업은 활성 모드의 사이트 서버를 수동 모드의 사이트 서버로 전환합니다. 원래 활성 모드인 서버에서 사용할 수 있는 사이트 시스템 역할은 컴퓨터에 액세스할 수 있기만 하면 사용 가능한 상태로 유지됩니다. 사이트 서버 역할만 활성 모드와 수동 모드 간에 전환됩니다.
 
-> [!Note]  
-> Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.
+Microsoft Core Services 엔지니어링 및 운영 팀은 이 기능을 사용하여 중앙 관리 사이트를 Microsoft Azure로 마이그레이션했습니다. 자세한 내용은 [Microsoft IT Showcase 문서](https://www.microsoft.com/itshowcase/Article/Content/1065/Migrating-System-Center-Configuration-Manager-onpremises-infrastructure-to-Microsoft-Azure)를 참조하세요.
 
 
 
 ## <a name="prerequisites"></a>필수 구성 요소
+
+- 사이트 콘텐츠 라이브러리는 원격 네트워크 공유에 있어야 합니다. 두 사이트 서버는 공유와 해당 내용에 대한 모든 권한이 필요합니다. 자세한 내용은 [콘텐츠 라이브러리관리](/sccm/core/plan-design/hierarchy/the-content-library#bkmk_remote)를 참조하세요.<!--1357525-->  
+
+    - 사이트 서버 컴퓨터 계정에 콘텐츠 라이브러리를 이동하는 네트워크 경로에 대한 **모든 권한**이 필요합니다. 이 사용 권한은 공유 및 파일 시스템 둘 다에 적용됩니다. 원격 시스템에 설치된 구성 요소가 없습니다.
+
+    - 사이트 서버는 배포 지점 역할을 가질 수 없습니다. 배포 지점도 콘텐츠 라이브러리를 사용하며 이 역할은 원격 콘텐츠 라이브러리를 지원하지 않습니다. 콘텐츠 라이브러리를 이동한 후 사이트 서버에 배포 지점 역할을 추가할 수 없습니다.  
 
 - 수동 모드의 사이트 서버는 Azure에서 온-프레미스 또는 클라우드 기반일 수 있습니다.  
     > [!Note]  
@@ -48,40 +60,73 @@ Configuration Manager 버전 1806부터 사이트 서버 역할에 대한 고가
 
 - 두 사이트 서버는 모두 동일한 Active Directory 도메인에 조인되어야 합니다.  
 
-- 사이트는 독립 실행형 기본 사이트입니다. 
+- 1806 버전에서 사이트는 독립 실행형 기본 사이트여야 합니다.  
 
-- 두 사이트 서버는 각 사이트 서버에서 원격인 동일한 사이트 데이터베이스를 사용해야 합니다.  
+    - 1810 버전부터 Configuration Manager는 계층 구조에서 수동 모드의 사이트 서버를 지원합니다. 중앙 관리 사이트 및 자식 기본 사이트는 수동 모드의 추가 사이트 서버를 포함할 수 있습니다.<!-- 3607755 -->  
 
-     - 두 사이트 서버는 사이트 데이터베이스를 호스팅하는 SQL Server의 인스턴스에 대한 **sysadmin** 권한이 필요합니다.
+- 두 사이트 서버 모두 동일한 사이트 데이터베이스를 사용해야 합니다.  
 
-     - 사이트 데이터베이스를 호스트하는 SQL Server는 기본 인스턴스, 명명된 인스턴스, [SQL Server 클러스터](/sccm/core/servers/deploy/configure/use-a-sql-server-cluster-for-the-site-database) 또는 [SQL Server Always On 가용성 그룹](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database).을 사용할 수 있습니다.  
+    - 1806 버전에서 데이터베이스는 각 사이트 서버에서 원격에 있어야 합니다. 1810 버전부터 Configuration Manager 설치 프로세스는 더 이상 장애 조치 클러스터링을 위한 Windows 역할이 있는 컴퓨터에 사이트 서버 역할의 설치를 차단하지 않습니다. SQL Always On에는 이 역할이 필요하므로 이전에는 사이트 서버에 사이트 데이터베이스를 공동 배치할 수 없었습니다. 이 변경을 사용하면 SQL Always On 및 사이트 서버를 수동 모드에서 사용하여 더 적은 수의 서버로 고가용성 사이트를 만들 수 있습니다.<!-- SCCMDocs issue 1074 -->  
 
-     - 수동 모드의 사이트 서버는 활성 모드의 사이트 서버와 동일한 사이트 데이터베이스를 사용하도록 구성됩니다. 수동 모드의 사이트 서버는 데이터베이스에서 읽기만 수행합니다. 활성 모드로 수준을 올려야 데이터베이스에 씁니다.  
+    - 사이트 데이터베이스를 호스트하는 SQL Server는 기본 인스턴스, 명명된 인스턴스, [SQL Server 클러스터](/sccm/core/servers/deploy/configure/use-a-sql-server-cluster-for-the-site-database) 또는 [SQL Server Always On 가용성 그룹](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database).을 사용할 수 있습니다.  
 
-- 사이트 콘텐츠 라이브러리는 원격 네트워크 공유에 있어야 합니다. 두 사이트 서버는 공유와 해당 내용에 대한 모든 권한이 필요합니다. 자세한 내용은 [콘텐츠 라이브러리관리](/sccm/core/plan-design/hierarchy/the-content-library#manage-content-library)를 참조하세요.<!--1357525-->  
+    - 두 사이트 서버 모두 사이트 데이터베이스를 호스트하는 SQL Server의 인스턴스에서 **sysadmin** 및 **securityadmin** 보안 역할이 있어야 합니다. 원본 사이트 서버에는 이러한 역할이 이미 있으므로 새 사이트 서버를 위해 추가합니다. 예를 들어, 다음 SQL 스크립트는 Contoso 도메인에서 새 사이트 서버 **VM2**에 대해 이러한 역할을 추가합니다.  
 
-    - 사이트 서버는 배포 지점 역할을 가질 수 없습니다. 배포 지점도 콘텐츠 라이브러리를 사용하며 이 역할은 원격 콘텐츠 라이브러리를 지원하지 않습니다. 콘텐츠 라이브러리를 이동한 후 사이트 서버에 배포 지점 역할을 추가할 수 없습니다.  
+        ```SQL
+        USE [master]
+        GO
+        CREATE LOGIN [contoso\vm2$] FROM WINDOWS WITH DEFAULT_DATABASE=[master], DEFAULT_LANGUAGE=[us_english]
+        GO
+        ALTER SERVER ROLE [sysadmin] ADD MEMBER [contoso\vm2$]
+        GO
+        ALTER SERVER ROLE [securityadmin] ADD MEMBER [contoso\vm2$]
+        GO        
+        ```
+    - 두 사이트 서버는 SQL Server 인스턴스의 사이트 데이터베이스에 액세스할 수 있어야 합니다. 원본 사이트 서버에는 이러한 액세스 권한이 이미 있으므로 새 사이트 서버를 위해 추가합니다. 예를 들어, 다음 SQL 스크립트는 Contoso 도메인에서 새 사이트 서버 **VM2**에 대한 **CM_ABC** 데이터베이스에 로그인을 추가합니다.  
+
+        ```SQL
+        USE [CM_ABC]
+        GO
+        CREATE USER [contoso\vm2$] FOR LOGIN [contoso\vm2$] WITH DEFAULT_SCHEMA=[dbo]
+        GO
+        ```
+
+    - 수동 모드의 사이트 서버는 활성 모드의 사이트 서버와 동일한 사이트 데이터베이스를 사용하도록 구성됩니다. 수동 모드의 사이트 서버는 데이터베이스에서 읽기만 수행합니다. 활성 모드로 수준을 올려야 데이터베이스에 씁니다.  
 
 - 수동 모드의 사이트 서버:  
 
-     - [기본 사이트를 설치하기 위한 필수 구성 요소](/sccm/core/servers/deploy/install/prerequisites-for-installing-sites#primary-sites-and-the-central-administration-site)를 충족해야 합니다.  
+    - 기본 사이트를 설치하기 위한 필수 구성 요소를 충족해야 합니다. .NET Framework, 원격 차등 압축 및 Windows ADK가 필수 구성 요소에 해당합니다. 전체 목록은 [사이트 및 사이트 시스템 필수 조건](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)을 참조하세요.<!-- SCCMDocs issue 765 -->  
 
-     - 활성 모드의 사이트 서버에서 로컬 관리자 그룹에 해당 컴퓨터 계정이 있어야 합니다. <!--516036-->
+    - 활성 모드의 사이트 서버에서 로컬 관리자 그룹에 해당 컴퓨터 계정이 있어야 합니다.<!--516036-->
 
-     - 활성 모드의 사이트 서버의 버전과 일치하는 원본 파일을 사용하여 설치됩니다.  
+    - 활성 모드의 사이트 서버의 버전과 일치하는 원본 파일을 사용하여 설치해야 합니다.  
 
-     - 수동 모드 역할에 사이트 서버를 설치하기 전에는 어떤 사이트의 사이트 시스템 역할도 가질 수 없습니다.  
+    - 수동 모드 역할에 사이트 서버를 설치하기 전에는 어떤 사이트의 사이트 시스템 역할도 설치할 수 없습니다.  
 
 - 두 사이트 서버는 [해당 항목을 모두 Configuration Manager에서 지원한다면](/sccm/core/plan-design/configs/supported-operating-systems-for-site-system-servers) 서로 다른 OS와 서비스 팩 버전을 실행할 수 있습니다.  
+
+- 고가용성을 위해 구성된 사이트 서버에 서비스 연결 지점 역할을 호스트하지 마세요. 현재 원본 사이트 서버에 있는 경우 제거한 후 다른 사이트 시스템 서버에 설치합니다. 자세한 내용은 [서비스 연결 지점 정보](/sccm/core/servers/deploy/configure/about-the-service-connection-point)를 참조하세요.  
+
+- [사이트 시스템 설치 계정](/sccm/core/plan-design/hierarchy/accounts#site-system-installation-account)에 대한 사용 권한  
+
+    - 기본적으로 많은 고객은 사이트 서버의 컴퓨터 계정을 사용하여 새 사이트 시스템을 설치합니다. 그런 다음, 원격 사이트 시스템의 로컬 **관리자** 그룹에 사이트 서버의 컴퓨터 계정을 추가해야 합니다. 작업 환경에서 이 구성을 사용하는 경우 모든 원격 사이트 시스템의 이 로컬 그룹에 새 사이트 서버의 컴퓨터 계정을 추가해야 합니다. 모든 원격 배포 지점을 예로 들 수 있습니다.  
+
+    - 보다 안전하고 권장되는 구성은 사이트 시스템 설치를 위해 서비스 계정을 사용하는 것입니다. 가장 안전한 구성은 로컬 서비스 계정을 사용하는 것입니다. 작업 환경이 이 구성을 사용하는 경우 변경할 필요가 없습니다.  
 
 
 
 ## <a name="limitations"></a>제한 사항
-- 수동 모드의 단일 사이트 서버는 각 기본 사이트에서 지원됩니다.  
 
-- 수동 모드의 사이트 서버는 계층 구조에서 지원되지 않습니다. 계층 구조에는 중앙 관리 사이트와 자식 기본 사이트가 포함됩니다. 수동 모드의 사이트 서버는 독립 실행형 기본 사이트에서만 만듭니다.<!--1358224-->
+- 수동 모드의 단일 사이트 서버만 각 사이트에서 지원됩니다.  
+
+- 1806 버전에서, 수동 모드의 사이트 서버는 계층 구조에서 지원되지 않습니다. 계층 구조에는 중앙 관리 사이트와 자식 기본 사이트가 포함됩니다. 수동 모드의 사이트 서버는 독립 실행형 기본 사이트에서만 만듭니다.<!--1358224-->  
+
+    - 1810 버전부터 Configuration Manager는 계층 구조에서 수동 모드의 사이트 서버를 지원합니다. 중앙 관리 사이트 및 자식 기본 사이트는 수동 모드의 추가 사이트 서버를 포함할 수 있습니다.<!-- 3607755 -->  
 
 - 수동 모드의 사이트 서버는 독립 실행형 보조 사이트에서 지원되지 않습니다.<!--SCCMDocs issue 680-->  
+
+    > [!Note]  
+    > 보조 사이트는 고가용성 사이트 서버가 있는 기본 사이트에서 계속 지원됩니다.
 
 - 수동 모드에서 활성 모드로의 사이트 서버 수준 올리기는 수동입니다. 자동 장애 조치(failover)는 없습니다.  
 
@@ -92,7 +137,7 @@ Configuration Manager 버전 1806부터 사이트 서버 역할에 대한 고가
 
 - 데이터베이스를 사용하는 보고 지점 같은 역할의 경우 데이터베이스를 두 사이트 서버에서 원격인 서버에 호스트합니다.  
 
-- SMS 공급자는 수동 모드로 사이트 서버에 설치되지 않습니다. 수동 모드의 사이트 서버를 수동으로 활성 모드로 수준을 올리려면 사이트에 대한 공급자에 연결합니다. 다른 서버에 공급자의 추가 인스턴스를 하나 이상 설치합니다. 자세한 내용은 [SMS 공급자 계획](/sccm/core/plan-design/hierarchy/plan-for-the-sms-provider)을 참조하세요.  
+- 수동 모드 역할의 사이트 서버를 추가하면 사이트에서도 SMS 공급자 역할을 설치하지 않습니다. 고가용성을 위해 다른 서버에 공급자의 추가 인스턴스를 하나 이상 설치합니다. 사이트 서버에 이 역할을 포함하도록 디자인한 경우 수동 모드 역할의 사이트 서버를 추가한 후에 새 사이트 서버에 설치합니다. 자세한 내용은 [SMS 공급자 계획](/sccm/core/plan-design/hierarchy/plan-for-the-sms-provider)을 참조하세요.  
 
 - Configuration Manager 콘솔은 수동 모드에서 자동으로 사이트를 설치하지 않습니다.  
 
@@ -154,10 +199,12 @@ Configuration Manager 버전 1806부터 사이트 서버 역할에 대한 고가
 
     - 사이트 간에 적극적으로 복제하는 모든 패키지의 콘텐츠 상태를 확인합니다.  
 
-    - 새 콘텐츠 배포 작업은 시작하지 않습니다. 
+    - 보조 사이트 상태 및 사이트 복제를 확인합니다. 
+
+    - 자식 또는 보조 사이트 서버에서 세 콘텐츠 배포 작업 또는 유지 관리를 시작하지 마세요. 
 
         > [!Note]  
-        > 장애 조치(failover) 도중에 사이트 간 파일 복제가 진행 중인 경우 새 사이트 서버가 복제된 파일을 받지 못할 수 있습니다. 이 경우 새 사이트 서버가 활성 상태가 된 후 소프트웨어 콘텐츠를 다시 배포합니다.<!--515436-->  
+        > 장애 조치(failover) 도중에 사이트 간 파일 또는 데이터베이스 복제가 진행 중인 경우 새 사이트 서버가 복제된 콘텐츠를 받지 못할 수 있습니다. 이 경우 새 사이트 서버가 활성 상태가 된 후 소프트웨어 콘텐츠를 다시 배포합니다.<!--515436--> 데이터베이스 복제를 위해 장애 조치(failover) 후 보조 사이트를 다시 초기화해야 할 수 있습니다.<!-- SCCMDocs issue 808 -->
 
 
 ### <a name="process-to-promote-the-site-server-in-passive-mode-to-active-mode"></a>수동 모드에서 활성 모드로의 사이트 서버 수준 올리기 프로세스
@@ -196,13 +243,13 @@ Configuration Manager 버전 1806부터 사이트 서버 역할에 대한 고가
 
 ### <a name="additional-tasks-after-site-server-promotion"></a>사이트 서버 수준 올리기 후 추가 작업  
 
-사이트 서버 전환 후에는 [사이트복구](/sccm/core/servers/manage/recover-sites#post-recovery-tasks)에서 필요한 대부분의 다른 작업은 수행할 필요가 없습니다. 예를 들어 암호를 다시 설정하거나 Microsoft Intune 구독을 다시 연결하지 않아도 됩니다.
+사이트 서버 전환 후에는 [사이트 복구](/sccm/core/servers/manage/recover-sites#post-recovery-tasks)에서 필요한 대부분의 다른 작업은 수행할 필요가 없습니다. 예를 들어 암호를 다시 설정하거나 Microsoft Intune 구독을 다시 연결하지 않아도 됩니다.
 
 환경에서 요구하는 경우 다음 단계가 필요할 수 있습니다.  
 
 - 배포 지점에 대한 PKI 인증서를 가져온 경우 해당 서버에 대해 인증서를 다시 가져옵니다. 자세한 내용은 [배포 지점에 대한 인증서 다시 생성](/sccm/core/servers/manage/recover-sites#regenerate-the-certificates-for-distribution-points)을 참조하세요.  
 
-- Confguration Manager를 Microsoft Store for Business에 통합한 경우 연결을 다시 구성합니다. 자세한 내용은 [Microsoft Store for Business에서 앱 관리](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)를 참조하세요.  
+- Configuration Manager를 Microsoft Store for Business에 통합한 경우 연결을 다시 구성합니다. 자세한 내용은 [Microsoft Store for Business에서 앱 관리](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)를 참조하세요.  
 
 
 

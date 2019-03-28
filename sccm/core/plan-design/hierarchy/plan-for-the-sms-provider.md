@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aba8479d6a2aecb3c73dad6acce6ab8237ff2576
-ms.sourcegitcommit: 8803a64692f3edc0422b58f6c3037a8796374cc8
+ms.openlocfilehash: 6ff872817805c85665bde7219ca26de0bf8d78ef
+ms.sourcegitcommit: f38ef9afb0c608c0153230ff819e5f5e0fb1520c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/19/2019
-ms.locfileid: "57881880"
+ms.locfileid: "58197115"
 ---
 # <a name="plan-for-the-sms-provider"></a>SMS 공급자에 대한 계획 
 
@@ -259,19 +259,18 @@ Windows ADK를 설치하려면 SMS 공급자를 설치하는 각 컴퓨터에 �
 
 버전 1810부터 SMS 공급자는 **관리 서비스**라고 하는 WMI에 대한 읽기 전용 API 상호 운용성 액세스(HTTPS 이용)를 제공합니다. 사이트의 정보에 액세스하는 데 사용자 지정 웹 서비스 대신에 REST API를 사용할 수 있습니다.
 
-`https://servername/AdminService/wmi/<ClassName>` 
+**관리 서비스** URL 형식은 `https://<servername>/AdminService/wmi/<ClassName>`입니다. 여기서 `<servername>`은 SMS 공급자를 설치한 서버이고 `<ClassName>`은 유효한 Configuration Manager WMI 클래스 이름입니다.
 
 예를 들면 `https://servername/AdminService/wmi/SMS_Site`
 
 Windows PowerShell cmdlet [Invoke-RestMethod](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-restmethod)를 사용하여 이 서비스에 직접 호출합니다.
 
-OData 커넥터 옵션을 사용하여 PowerBI에서 사이트 데이터에 액세스하는 데 사용할 수도 있습니다. 
-
 > [!Tip]  
 > 작업 순서에서 이 cmdlet을 사용할 수 있습니다. 이 작업을 통해 WMI 공급자와 상호 작용하는 사용자 지정 웹 서비스 없이 사이트 정보에 액세스할 수 있습니다. 
 
-관리 서비스는 활동을 **adminservice.log** 파일에 기록합니다.
+OData 커넥터 옵션을 사용하여 PowerBI에서 사이트 데이터에 액세스하는 데 사용할 수도 있습니다. 
 
+관리 서비스는 활동을 **adminservice.log** 파일에 기록합니다.
 
 ### <a name="enable-the-administration-service-through-the-cmg"></a>CMG를 통해 관리 서비스를 사용하도록 설정
 

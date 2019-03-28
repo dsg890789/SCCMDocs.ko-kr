@@ -2,7 +2,7 @@
 title: 콘텐츠 라이브러리
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 배포된 콘텐츠의 전체 크기를 줄이는 데 사용하는 콘텐츠 라이브러리에 대해 알아봅니다.
-ms.date: 09/19/2018
+ms.date: 03/20/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0453f181133b69dcf3fe83032da0eace84718cf3
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 9b082e28fde0b1ae53a00b9d3236764d03b474ed
+ms.sourcegitcommit: 5f17355f954b9d9e10325c0e9854a9d582dec777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56129275"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58329518"
 ---
 # <a name="the-content-library-in-configuration-manager"></a>Configuration Manager의 콘텐츠 라이브러리
 
@@ -75,7 +75,8 @@ Configuration Manager는 다음 경우에 중앙 관리 사이트에서 콘텐�
 
 
 ## <a name="bkmk_remote"></a> 사이트 서버에 대해 원격 콘텐츠 라이브러리 구성  
-<!--1357525--> 1806 버전부터 [사이트 서버 고가용성](/sccm/core/servers/deploy/configure/site-server-high-availability)을 구성하거나 중앙 관리 또는 기본 사이트 서버에서 하드 드라이브 공간을 확보하기 위해 다른 스토리지 위치로 콘텐츠 라이브러리를 이동합니다. 별도의 서버인 사이트 서버의 다른 드라이브 또는 SAN(스토리지 영역 네트워크)의 내결함성 디스크로 콘텐츠 라이브러리를 이동합니다. SAN은 고가용성이며, 시간 경과에 따라 사용자의 변화하는 콘텐츠 요구 사항에 맞게 확장되거나 축소되는 탄력적인 스토리지를 제공하므로 권장됩니다. 자세한 내용은 [고가용성 옵션](/sccm/protect/understand/high-availability-options)을 참조하세요.
+<!--1357525-->
+1806 버전부터 [사이트 서버 고가용성](/sccm/core/servers/deploy/configure/site-server-high-availability)을 구성하거나 중앙 관리 또는 기본 사이트 서버에서 하드 드라이브 공간을 확보하기 위해 다른 스토리지 위치로 콘텐츠 라이브러리를 이동합니다. 별도의 서버인 사이트 서버의 다른 드라이브 또는 SAN(스토리지 영역 네트워크)의 내결함성 디스크로 콘텐츠 라이브러리를 이동합니다. SAN은 고가용성이며, 시간 경과에 따라 사용자의 변화하는 콘텐츠 요구 사항에 맞게 확장되거나 축소되는 탄력적인 스토리지를 제공하므로 권장됩니다. 자세한 내용은 [고가용성 옵션](/sccm/protect/understand/high-availability-options)을 참조하세요.
 
 원격 콘텐츠 라이브러리는 [사이트 서버 고가용성](/sccm/core/servers/deploy/configure/site-server-high-availability)을 위한 필수 조건입니다. 
 
@@ -90,7 +91,7 @@ Configuration Manager는 다음 경우에 중앙 관리 사이트에서 콘텐�
 
 ### <a name="prerequisites"></a>필수 구성 요소  
 
-- 사이트 서버 컴퓨터 계정에 콘텐츠 라이브러리를 이동하는 네트워크 경로에 대한 **읽기** 및 **쓰기** 권한이 필요합니다. 원격 시스템에 설치된 구성 요소가 없습니다.  
+- 사이트 서버 컴퓨터 계정에 콘텐츠 라이브러리를 이동하는 네트워크 경로에 대한 **모든 권한**이 필요합니다. 이 사용 권한은 공유 및 파일 시스템 둘 다에 적용됩니다. 원격 시스템에 설치된 구성 요소가 없습니다.
 
 - 사이트 서버는 배포 지점 역할을 가질 수 없습니다. 배포 지점도 콘텐츠 라이브러리를 사용하며 이 역할은 원격 콘텐츠 라이브러리를 지원하지 않습니다. 콘텐츠 라이브러리를 이동한 후 사이트 서버에 배포 지점 역할을 추가할 수 없습니다.  
 
@@ -115,6 +116,9 @@ Configuration Manager는 다음 경우에 중앙 관리 사이트에서 콘텐�
 
    - **진행 중**인 동안 **이동 진행률(%)** 값은 완료 비율을 표시합니다.  
 
+        > [!Note]  
+        > 대형 콘텐츠 라이브러리가 있는 경우 잠시 동안 콘솔에 `0%` 진행률이 표시될 수 있습니다. 예를 들어, 1TB 라이브러리를 사용하는 경우 10GB를 복사해야 `1%`가 표시됩니다. 복사한 파일 및 바이트 수를 표시하는 **distmgr.log**를 검토합니다. 1810 버전부터 로그 파일에 남은 예상 시간도 표시됩니다.
+
    - 오류 상태가 있을 경우 상태는 오류를 표시합니다. 일반적인 오류에는 **액세스가 거부됨** 또는 **디스크 꽉 참**이 포함됩니다.  
 
    - 완료되면 **완료**가 표시됩니다.  
@@ -124,6 +128,10 @@ Configuration Manager는 다음 경우에 중앙 관리 사이트에서 콘텐�
 이 프로세스에 대한 자세한 내용은 [순서도 - 콘텐츠 라이브러리 관리](/sccm/core/plan-design/hierarchy/manage-content-library-flowchart)를 참조하세요.
 
 사이트는 실제로 원격 위치로 콘텐츠 라이브러리 파일을 *복사*합니다. 이 프로세스는 사이트 서버의 원래 위치에서 콘텐츠 라이브러리 파일을 삭제하지 않습니다. 공간을 확보하기 위해 관리자는 이러한 원본 파일을 수동으로 삭제해야 합니다.
+
+원래 콘텐츠 라이브러리가 두 개의 드라이브에 걸쳐 있는 경우 새 대상의 단일 폴더로 병합됩니다. 
+
+1810 버전부터 복사 프로세스 중에 사이트는 **디스풀러** 및 **배포 관리자** 구성 요소를 중지합니다. 이렇게 하면 콘텐츠가 이동 중에는 라이브러리에 추가되지 않습니다. 그렇다고 해도 이러한 변경 작업을 시스템 유지 관리 동안 예약하는 것이 좋습니다.
 
 콘텐츠 라이브러리를 다시 사이트 서버로 이동해야 하는 경우 이 프로세스를 반복하되 **새 위치**에 대한 로컬 드라이브 및 경로를 입력합니다. 예를 들어 `D:\SCCMContentLib`과 같이 이미 드라이브에 존재하는 폴더 이름을 포함해야 합니다. 원래 콘텐츠가 계속 존재하는 경우 프로세스는 신속하게 사이트 서버로 위치 로컬에 대한 구성을 이동합니다. 
 

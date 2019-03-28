@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e876e34929479654240ff220c3cad91043da0f83
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 7fb6a87f965db0a329a4f64918b0efcd5732ea0b
+ms.sourcegitcommit: d71e558db2da124357b840332e2da671b3810507
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56123140"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58269126"
 ---
 # <a name="back-up-a-configuration-manager-site"></a>Configuration Manager 사이트 백업
 
@@ -67,6 +67,8 @@ DPM에서 사이트 데이터베이스 컴퓨터에 대한 새 보호 그룹을 
 기본 사이트 및 중앙 관리 사이트를 백업할 수 있습니다. 보조 사이트 또는 사이트 시스템 서버는 백업 작업이 필요 없습니다.
 
 Configuration Manager 백업 서비스가 실행될 때 이 서비스는 백업 제어 파일에 정의된 지침을 따릅니다.`<ConfigMgrInstallationFolder>\Inboxes\Smsbkup.box\Smsbkup.ctl` 백업 제어 파일을 수정하여 백업 서비스의 동작을 변경할 수 있습니다.  
+> [!NOTE]
+> **Smsbkup.ctl** 수정 내용은 사이트 서버에서 서비스 SMS_SITE_VSS_WRITER를 다시 시작한 후에 적용됩니다.
 
 사이트 백업 상태 정보는 **Smsbkup.log** 파일에 기록됩니다. 이 파일은 백업 사이트 서버 유지 관리 작업 속성에서 지정한 대상 폴더에서 만들어집니다.  
 

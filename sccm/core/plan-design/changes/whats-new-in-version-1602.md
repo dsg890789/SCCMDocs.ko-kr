@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ac08431c76653711eacb62aed4100c2fab0db50
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 7b0c162e7d1fcc38b388d0b39cc6811bc9e86973
+ms.sourcegitcommit: f38ef9afb0c608c0153230ff819e5f5e0fb1520c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56122511"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58196809"
 ---
 # <a name="what39s-new-in-version-1602-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1602의 새로운 기능
 
@@ -120,7 +120,7 @@ System Center Configuration Manager 업데이트 1602는 버전 1511을 실행�
 ### <a name="conditional-access-for-pcs-managed-by-system-center-configuration-manager"></a>System Center Configuration Manager에서 관리하는 PC에 대한 조건부 액세스 지원  
  이 릴리스 이전에서는, PC에 대한 조건부 액세스를 설정하려면 PC가 Intune에 등록되어 있거나 도메인에 가입된 PC여야 합니다. 1602 업데이트부터, System Center Configuration Manager에서 관리하는 PC에 대한 조건부 액세스가 지원됩니다. System Center Configuration Manager에서 관리하는 사용자 PC에 대해, 설정하는 준수 정책을 준수하는 디바이스로만 Exchange Online 및 SharePoint Online에 대한 액세스를 제한할 수 있습니다.  
 
- 자세한 내용은 [System Center Configuration Manager에서 관리되는 PC용 O365 서비스에 대한 액세스 관리](../../../protect/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md)를 참조하세요.  
+ 자세한 내용은 [System Center Configuration Manager에서 관리되는 PC용 Office 365 서비스에 대한 액세스 관리](../../../protect/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md)를 참조하세요.  
 
 ### <a name="restricting-access-based-on-the-health-of-devices"></a>디바이스 상태에 따라 액세스 제한  
  이제 상태 증명 서비스에서 보고하는 디바이스의 상태를 기준으로, 이메일 및 Office 365 서비스에 대한 액세스를 제한할 수 있습니다. 또한 Intune에서 관리하는 디바이스는 디바이스 상태 보고서에 포함됩니다.  

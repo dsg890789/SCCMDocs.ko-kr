@@ -10,12 +10,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 71eaa409-b955-45d6-8309-26bf3b3b0911
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8add225db488a749eba98f9015fcb112e8f34f04
-ms.sourcegitcommit: 8803a64692f3edc0422b58f6c3037a8796374cc8
+ms.openlocfilehash: 69c5f446c465655adb1e9fee1b891a3152af47e9
+ms.sourcegitcommit: f38ef9afb0c608c0153230ff819e5f5e0fb1520c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/19/2019
-ms.locfileid: "57881795"
+ms.locfileid: "58197098"
 ---
 # <a name="certificates-for-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이에 대한 인증서
 
@@ -206,11 +206,9 @@ CMG는 클라이언트 인증 인증서를 신뢰해야 합니다. 이 신뢰를
 Configuration Manager의 컨텍스트 외부에서 이 인증서를 제공합니다. 예를 들어 Active Directory 인증서 서비스 및 그룹 정책을 사용하여 웹 서버 인증서를 발급합니다. 자세한 내용은 [PKI 인증 요구 사항](/sccm/core/plan-design/network/pki-certificate-requirements) 및 [IIS를 실행하는 사이트 시스템용 웹 서버 인증서 배포](/sccm/core/plan-design/network/example-deployment-of-pki-certificates#BKMK_webserver2008_cm2012)를 참조하세요.
 
 
-- 1706 또는 1710 버전에서 클라이언트 인증 인증서를 사용하여 온-프레미스 ID가 있는 기존 클라이언트를 관리하는 경우 이 인증서를 권장하지만 반드시 필요한 것은 아닙니다.  
+- 1710 버전에서 클라이언트 인증 인증서를 사용하여 온-프레미스 ID가 있는 기존 클라이언트를 관리하는 경우 이 인증서를 권장하지만 반드시 필요한 것은 아닙니다. Azure AD에 가입한 Windows 10 클라이언트를 관리할 때 이 인증서가 관리 지점에 필요합니다.
 
-- 1710 버전에서는 Azure AD에 가입한 Windows 10 클라이언트를 관리할 때 이 인증서가 관리 지점에 필요합니다.  
-
-- 1802 버전부터 이 인증서는 모든 시나리오에서 필요합니다. CMG에 대해 사용할 수 있는 관리 지점만 HTTPS여야 합니다. 이 동작이 변경되면 Azure AD 토큰 기반 인증에 대한 지원이 개선됩니다.  
+- 1802 버전에서 이 인증서는 모든 시나리오에서 필요합니다. CMG에 대해 사용할 수 있는 관리 지점만 HTTPS여야 합니다. 이 동작이 변경되면 Azure AD 토큰 기반 인증에 대한 지원이 개선됩니다.  
 
 - 버전 1806부터 **HTTP 사이트 시스템에 대해 Configuration Manager가 생성한 인증서 사용**이라는 사이트 옵션을 사용하는 경우 관리 지점이 HTTP가 될 수 있습니다. 자세한 내용은 [고급 HTTP](/sccm/core/plan-design/hierarchy/enhanced-http)를 참조하세요.
 
@@ -220,12 +218,12 @@ Configuration Manager의 컨텍스트 외부에서 이 인증서를 제공합니
 #### <a name="for-internet-based-clients-communicating-with-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이와 통신하는 인터넷 기반 클라이언트인 경우
 다음 클라이언트 연결 모드로 CMG에서 들어오는 연결을 허용하도록 온-프레미스 관리 지점을 구성합니다.
 
-| 클라이언트 유형   | 1706        | 1710        | 1802        | 1806        |
+| 클라이언트 유형   | 1710        | 1802        | 1806        | 1810        |
 |------------------|-------------|-------------|-------------|-------------|
-| 작업 그룹        | HTTP, HTTPS | HTTP, HTTPS | HTTPS       | E-HTTP<sup>[참고 1](#bkmk_note1)</sup>, HTTPS |
-| AD 도메인 조인 | HTTP, HTTPS | HTTP, HTTPS | HTTPS       | E-HTTP<sup>[참고 1](#bkmk_note1)</sup>, HTTPS |
-| Azure AD 조인  | HTTPS       | HTTPS       | HTTPS       | E-HTTP, HTTPS |
-| 하이브리드 조인    | HTTP, HTTPS | HTTP, HTTPS | HTTPS       | E-HTTP, HTTPS |
+| 작업 그룹        | HTTP, HTTPS | HTTPS       | E-HTTP<sup>[참고 1](#bkmk_note1)</sup>, HTTPS | E-HTTP<sup>[참고 1](#bkmk_note1)</sup>, HTTPS |
+| AD 도메인 조인 | HTTP, HTTPS | HTTPS       | E-HTTP<sup>[참고 1](#bkmk_note1)</sup>, HTTPS | E-HTTP<sup>[참고 1](#bkmk_note1)</sup>, HTTPS |
+| Azure AD 조인  | HTTPS       | HTTPS       | E-HTTP, HTTPS | E-HTTP, HTTPS |
+| 하이브리드 조인    | HTTP, HTTPS | HTTPS       | E-HTTP, HTTPS | E-HTTP, HTTPS |
 
 <a name="bkmk_note1"></a> 
 
@@ -235,7 +233,7 @@ Configuration Manager의 컨텍스트 외부에서 이 인증서를 제공합니
 #### <a name="for-on-premises-clients-communicating-with-the-on-premises-management-point"></a>온-프레미스 관리 지점과 통신하는 온-프레미스 클라이언트인 경우
 다음 클라이언트 연결 모드로 온-프레미스 관리 지점을 구성합니다.
 
-| 클라이언트 유형   | 1706        | 1710        | 1802        | 1806        |
+| 클라이언트 유형   | 1710        | 1802        | 1806        | 1810        |
 |------------------|-------------|-------------|-------------|-------------|
 | 작업 그룹        | HTTP, HTTPS | HTTP, HTTPS | HTTP, HTTPS | HTTP, HTTPS |
 | AD 도메인 조인 | HTTP, HTTPS | HTTP, HTTPS | HTTP, HTTPS | HTTP, HTTPS |

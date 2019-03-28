@@ -2,7 +2,7 @@
 title: 클라이언트 설정
 titleSuffix: Configuration Manager
 description: 클라이언트 동작을 제어하기 위한 기본 및 사용자 지정 설정에 대해 알아봅니다.
-ms.date: 08/31/2018
+ms.date: 03/21/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9a06e9f0607161b87422d29ede028da0e8aea8c
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 472cf012805700e1ec2de2f3c83a0ef63e10183b
+ms.sourcegitcommit: 5f17355f954b9d9e10325c0e9854a9d582dec777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56140901"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58329603"
 ---
 # <a name="about-client-settings-in-configuration-manager"></a>Configuration Manager의 클라이언트 설정 정보
 
@@ -294,7 +294,8 @@ VDI(가상 데스크톱 인프라)를 사용하는 경우 이러한 지연 시�
 
 ## <a name="delivery-optimization"></a>배달 최적화
 
-<!-- 1324696 --> Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원격 사무실에 대한 콘텐츠 배포를 정의하고 규정합니다. [Windows 배달 최적화](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)는 Windows 10 디바이스 간에 콘텐츠를 공유하는 클라우드 기반의 피어 투 피어 기술입니다. 1802 버전부터 피어 간에 콘텐츠를 공유하는 경우 경계 그룹을 사용하도록 배달 최적화를 구성합니다.
+<!-- 1324696 -->
+Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원격 사무실에 대한 콘텐츠 배포를 정의하고 규정합니다. [Windows 배달 최적화](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)는 Windows 10 디바이스 간에 콘텐츠를 공유하는 클라우드 기반의 피어 투 피어 기술입니다. 1802 버전부터 피어 간에 콘텐츠를 공유하는 경우 경계 그룹을 사용하도록 배달 최적화를 구성합니다.
 
  > [!Note]
  > 배달 최적화는 Windows 10 클라이언트에서만 사용할 수 있습니다.
@@ -594,7 +595,7 @@ NLA(네트워크 수준 인증)를 사용하여 클라이언트 컴퓨터에 대
 Configuration Manager 버전 1802부터 이 옵션을 사용하도록 설정하면 승인이 필요한 사용자가 사용할 수 있는 애플리케이션이 소프트웨어 센터에서 숨겨집니다.   <!--1355146-->
 
 ### <a name="bkmk_HideInstalled"></a> 소프트웨어 센터에서 설치된 애플리케이션 숨기기
-Configuration Manager 버전 1802부터 이 옵션을 사용하도록 설정하면 이미 설치된 애플리케이션이 더 이상 애플리케이션 탭에 표시되지 않습니다. 이 옵션은 Configuration Manager 1802를 설치하거나 이 버전으로 업그레이드할 때 기본값으로 설정됩니다. 설치된 애플리케이션은 설치 상태 탭에서 계속 검토할 수 있습니다. <!--1357592-->   
+Configuration Manager 버전 1802부터 이 옵션을 사용하도록 설정하면 이미 설치된 애플리케이션이 더 이상 애플리케이션 탭에 표시되지 않습니다. 이 옵션은 Configuration Manager 1802를 설치하거나 이 버전으로 업그레이드할 때 기본값으로 설정됩니다. 설치 상태 탭에서는 설치된 애플리케이션을 계속 검토할 수 있습니다. <!--1357592-->   
  
 ### <a name="bkmk_HideAppCat"></a> 소프트웨어 센터에서 애플리케이션 카탈로그 링크 숨기기
 Configuration Manager 버전 1806부터 소프트웨어 센터에서 애플리케이션 카탈로그 웹 사이트 링크의 표시 여부를 지정할 수 있습니다. 이 옵션을 설정하면 사용자는 소프트웨어 센터의 설치 상태 노드에서 애플리케이션 카탈로그 웹 사이트 링크를 볼 수 없습니다. <!--1358214-->
@@ -722,7 +723,7 @@ Configuration Manager에서 모든 배포에 대한 요구 사항 규칙을 재�
 
 
 
-##  <a name="software-updates"></a>소프트웨어 업데이트  
+## <a name="software-updates"></a>소프트웨어 업데이트  
 
 ### <a name="enable-software-updates-on-clients"></a>클라이언트에서 소프트웨어 업데이트 사용
 
@@ -774,6 +775,10 @@ Configuration Manager에서 모든 배포에 대한 요구 사항 규칙을 재�
 ### <a name="enable-management-of-the-office-365-client-agent"></a>Office 365 클라이언트 에이전트 관리 사용
 
 이 옵션을 **예**로 설정하면 Office 365 설치 설정을 구성할 수 있습니다. 또한 Office CDN(콘텐츠 배달 네트워크)에서 파일을 다운로드하고, Configuration Manager에 파일을 애플리케이션으로 배포할 수 있습니다. 자세한 내용은 [Office 365 ProPlus 관리](/sccm/sum/deploy-use/manage-office-365-proplus-updates)를 참조하세요.
+
+### <a name="bkmk_SUMMaint"></a> "소프트웨어 업데이트" 유지 관리 기간을 사용할 수 있는 경우 "모든 배포" 유지 관리 기간에서 소프트웨어 업데이트 설치 사용
+
+이 옵션을 **예**로 설정하고 클라이언트에 하나 이상의 "소프트웨어 업데이트" 유지 관리 기간이 정의된 경우 소프트웨어 업데이트는 "모든 배포" 유지 관리 기간 동안 설치됩니다. 기본적으로 이 설정은 **없음**으로 설정됩니다. 이 클라이언트 설정은 Configuration Manager 버전 1810에 추가되었습니다. <!--2839307-->
 
 ### <a name="enable-third-party-software-updates"></a>타사 소프트웨어 업데이트 사용 
 

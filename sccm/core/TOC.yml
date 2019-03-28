@@ -69,6 +69,8 @@ items:
       href: plan-design/changes/what-has-changed-from-configuration-manager-2012.md
     - name: 증분 버전의 새로운 기능
       href: plan-design/changes/whats-new-incremental-versions.md
+    - name: 버전 1902의 새로운 기능
+      href: plan-design/changes/whats-new-in-version-1902.md
     - name: 버전 1810의 새로운 기능
       href: plan-design/changes/whats-new-in-version-1810.md
     - name: 버전 1806의 새로운 기능
@@ -168,6 +170,8 @@ items:
     items:
     - name: 진단 및 사용 현황 데이터 사용 방법
       href: plan-design/diagnostics/how-diagnostics-and-usage-data-is-used.md
+    - name: 1902에 대한 진단 데이터
+      href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1902.md
     - name: 1810에 대한 진단 데이터
       href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1810.md
     - name: 1806에 대한 진단 데이터
@@ -432,6 +436,8 @@ items:
       href: servers/manage/use-the-update-registration-tool-to-import-hotfixes.md
     - name: 핫픽스 설치 관리자 사용
       href: servers/manage/use-the-hotfix-installer-to-install-updates.md
+    - name: 업데이트 1902을 설치하기 위한 검사 목록
+      href: servers/manage/checklist-for-installing-update-1902.md
     - name: 업데이트 1810을 설치하기 위한 검사 목록
       href: servers/manage/checklist-for-installing-update-1810.md
     - name: 업데이트 1806을 설치하기 위한 검사 목록
@@ -760,9 +766,9 @@ items:
       href: clients/manage/upgrade/upgrade-clients-for-linux-and-unix-servers.md
     - name: Mac 클라이언트 업그레이드
       href: clients/manage/upgrade/upgrade-clients-on-mac-computers.md
-ms.openlocfilehash: 97eb6fe3dac61766ca7f561807e6ee0dd48e1559
-ms.sourcegitcommit: ef2960bd91655c741450774e512dd0a9be610625
+ms.openlocfilehash: befe656dec3949f792d9118a1ef092ff36316fdd
+ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56838806"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58523914"
