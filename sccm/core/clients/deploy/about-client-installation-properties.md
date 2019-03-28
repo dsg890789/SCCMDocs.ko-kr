@@ -2,7 +2,7 @@
 title: 클라이언트 설치 매개 변수 및 속성
 titleSuffix: Configuration Manager
 description: Configuration Manager 클라이언트를 설치하기 위한 ccmsetup 명령줄 매개 변수와 속성에 대해 알아봅니다.
-ms.date: 03/28/2018
+ms.date: 03/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebfcde2be230c9c5e04031210cb6e137ed81668c
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: f84b4b775c2baa59a5281a79f8154c0a6d0820f6
+ms.sourcegitcommit: 5feeb99605be5c4c39896bcee239cc274d89b3e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56126493"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58508533"
 ---
 # <a name="about-client-installation-parameters-and-properties-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 설치 매개 변수 및 속성 정보
 
@@ -40,7 +40,7 @@ CCMSetup.exe 명령을 사용하여 Configuration Manager 클라이언트를 설
 > [!NOTE]  
 >  Configuration Manager에서 Client.msi 파일을 직접 실행할 수 없습니다.  
 
- CCMSetup.exe는 설치를 사용자 지정하는 [명령줄 매개 변수](#ccmsetup-exe-command-line-parameters)를 제공합니다. 매개 변수는 앞에 백슬래시가 추가되며, 규칙에 따라 소문자로 되어 있습니다. 필요한 경우, 콜론 바로 뒤에 원하는 값을 사용하여 매개 변수 값을 지정합니다. CCMSetup.exe 명령줄에서 client.msi의 동작을 수정하는 속성을 제공할 수도 있습니다. 속성은 규칙에 따라 모두 대문자로 되어 있습니다. 등호 바로 뒤에 원하는 값을 사용하여 속성 값을 지정합니다.  
+ CCMSetup.exe는 설치를 사용자 지정하는 [명령줄 매개 변수](#ccmsetupexe-command-line-parameters)를 제공합니다. 매개 변수는 앞에 백슬래시가 추가되며, 규칙에 따라 소문자로 되어 있습니다. 필요한 경우, 콜론 바로 뒤에 원하는 값을 사용하여 매개 변수 값을 지정합니다. CCMSetup.exe 명령줄에서 client.msi의 동작을 수정하는 속성을 제공할 수도 있습니다. 속성은 규칙에 따라 모두 대문자로 되어 있습니다. 등호 바로 뒤에 원하는 값을 사용하여 속성 값을 지정합니다.  
 
 > [!IMPORTANT]  
 >  client.msi의 속성을 지정하기 전에 CCMSetup 매개 변수를 지정합니다.  
@@ -336,7 +336,7 @@ Example: `ccmsetup.exe AADTENANTNAME=Contoso`
 
  이 값은 루트 CA 인증서에 있는 주체 특성에 대해 대/소문자를 구분합니다. 특성은 쉼표(,) 또는 세미콜론(;)으로 구분할 수 있습니다. 구분줄을 사용하여 1 초과 루트 CA 인증서를 지정합니다. 예제:  
 
- `CCMCERTISSUERS=”CN=Contoso Root CA; OU=Servers; O=Contoso, Ltd; C=US &#124; CN=Litware Corporate Root CA; O=Litware, Inc.”`  
+ `CCMCERTISSUERS="CN=Contoso Root CA; OU=Servers; O=Contoso, Ltd; C=US | CN=Litware Corporate Root CA; O=Litware, Inc."`  
 
 > [!TIP]  
 >  사이트에 대한 **CertificateIssuers=&lt;문자열\>** 을 복사하려면 사이트 서버 컴퓨터의 &lt;Configuration Manager 디렉터리\>\bin\\&lt;플랫폼\> 폴더에 있는 mobileclient.tcf 파일을 참조합니다.  
