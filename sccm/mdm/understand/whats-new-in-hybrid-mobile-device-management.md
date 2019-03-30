@@ -2,7 +2,7 @@
 title: 하이브리드 MDM의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 디바이스 관리 기능에 대해 알아봅니다.
-ms.date: 02/26/2019
+ms.date: 03/28/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6e883b6ea5cea6d6b27863afc84eef774b4d552
-ms.sourcegitcommit: f38ef9afb0c608c0153230ff819e5f5e0fb1520c
+ms.openlocfilehash: b26ad559d9417fcc81a2023c1bf1704ae44b7d0c
+ms.sourcegitcommit: 60aff44c76e6432dc544c8b26acba432ac799cfc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58197149"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58639599"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 디바이스 관리의 새로운 기능
 
@@ -45,6 +45,32 @@ ms.locfileid: "58197149"
 |**Microsoft Intune의 새로운 기능** | 일반적으로 이 범주 아래에 나열된 모든 기능은 Intune 서비스만 필요하고 Configuration Manager의 추가 기능이 필요하지 않으므로 System Center 2012 R2 Configuration Manager 릴리스를 비롯한 모든 Configuration Manager 릴리스에서 사용할 수 있어야 합니다.|
 |**Configuration Manager Technical Preview의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 Technical Preview 분기에서만 사용할 수 있습니다. 이러한 기능을 시험해보려면 기능 설명에 지정된 기술 미리 보기 버전을 설치해야 합니다. 자세한 내용은 [Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.|
 |**Configuration Manager(현재 분기)의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 버전의 Configuration Manager(현재 분기)에서만 사용할 수 있습니다. 하이브리드 배포에 이전 버전의 Configuration Manager를 사용하는 경우 기능 설명에 지정된 Configuration Manager(현재 분기) 버전으로 업그레이드합니다. 자세한 내용은 [Configuration Manager로 업그레이드](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager)를 참조하세요.|
+
+
+
+## <a name="march-2019"></a>2019 년 3 월
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+#### <a name="install-available-apps-using-the-company-portal-app-after-windows-bulk-enrollment"></a>Windows 대량 등록 후 회사 포털 앱을 사용 하 여 사용 가능한 앱 설치 
+<!-- 2751523 -->
+사용 하 여 Intune에 등록 된 Windows 장치의 [Windows 대량 등록](https://docs.microsoft.com/intune/windows-bulk-enroll) (패키지를 프로 비전 중) 회사 포털 앱을 사용 하 여 사용 가능한 앱 설치 수 있게 됩니다. 회사 포털 앱에 대 한 자세한 내용은 참조 하세요. [Windows 10 회사 포털에 수동으로 추가](https://docs.microsoft.com/intune/store-apps-company-portal-app) 하 고 [Microsoft Intune 회사 포털 앱을 구성 하는 방법](https://docs.microsoft.com/intune/company-portal-app)합니다.
+
+> [!Note]  
+> 아직이 기능은 모든 고객에 게 완전히 배포 되지 않습니다. 대량 등록 된 장치에서 회사 포털을 사용할 수 없으면, 계정에 유지 하면서이 변경 될 때까지 대기 해야 합니다.
+
+#### <a name="app-icons-are-displayed-with-an-automatically-generated-background"></a>앱 아이콘은 자동으로 생성 된 배경과 함께 표시 됩니다. 
+<!-- 1429026 -->
+이제 Windows 회사 포털 앱을 자동으로 생성 된 배경과 함께 앱 아이콘을 표시합니다. 이 백그라운드는 검색할 수 있으면이 아이콘의 주요 색상 기반 합니다. 해당 하는 경우 백그라운드 앱 타일에 이전에 표시 된 회색 테두리를 대체 합니다. 10.3.3451.0 보다 나중 버전의 회사 포털에서이 변경 내용을 볼 수 있습니다.
+
+#### <a name="changes-to-company-portal-enrollment-for-ios-12-devices"></a>IOS 용 회사 포털 등록 12 장치 변경
+<!-- 3448635 -->  
+IOS 용 회사 포털 앱의 등록 화면 및 Apple iOS 12.2에에서 릴리스된 MDM 등록 변경 내용에 맞게 단계를 업데이트 합니다. 이제 업데이트 된 워크플로 것인지 묻습니다.
+- Safari (Safari)를 통해 회사 포털 웹 사이트를 열고 회사 포털 앱에 반환 하기 전에 관리 프로필을 다운로드할 수 있습니다. 
+- 장치에서 관리 프로필을 설치 하려면 설정 앱을 엽니다.
+- 등록을 완료 하려면 회사 포털 앱에 반환 합니다.  
+
+이러한 변경 내용을 준비 하는 방법에 대 한 자세한 내용은 참조는 [Microsoft 기술 커뮤니티 게시물](https://aka.ms/CP_changes_iOS12)합니다. 회사 포털에서 새 iOS 등록을 지원 하려면을 참조 하세요 [Intune에서 iOS 장치 등록](https://docs.microsoft.com/intune/ios-enroll)합니다.
 
 
 
