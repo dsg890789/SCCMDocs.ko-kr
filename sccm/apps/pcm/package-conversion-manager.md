@@ -2,7 +2,7 @@
 title: Package Conversion Manager
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 패키지를 애플리케이션으로 변환하는 Package Conversion Manager에 대해 알아봅니다.
-ms.date: 08/24/2018
+ms.date: 03/27/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-app
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba73d215b9a672f4843c2f1e4a63dfc6bd13ea74
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 2abfa18bdf454850510c18551f2f64813a7891ea
+ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56132887"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58523931"
 ---
 # <a name="package-conversion-manager"></a>Package Conversion Manager
 
@@ -40,6 +40,12 @@ Configuration Manager 애플리케이션에는 클라이언트 장치에 배포�
 > 이전 버전의 Package Conversion Manager를 전에 설치한 경우 먼저 이를 제거한 후 사이트를 업그레이드합니다. 이 통합 버전이 설치를 요구하지는 않지만 기존 버전과 충돌할 수 있습니다.  
 
 이 통합 버전의 Package Conversion Manager는 Configuration Manager 현재 분기 사이트의 패키지에서 작동합니다. 독립 실행형 도구가 아닙니다. 이전 버전의 Configuration Manager에 패키지 및 프로그램이 있는 경우 먼저 패키지를 현재 분기 사이트로 마이그레이션합니다. 자세한 내용은 [계층 구조 간에 데이터 마이그레이션](/sccm/core/migration/migrate-data-between-hierarchies)을 참조하세요.
+
+<!-- SCCMDocs-pr issue #3357 -->
+Configuration Manager 버전 1902 다음과 같은 개선 사항이 포함 됩니다.
+- 예약 된 패키지 분석 기본적으로 7 일 마다 실행 됩니다.
+- 분석 및 변환 패키지에 대 한 PowerShell cmdlet
+- 일반 버그 수정 및 향상 된 기능
 
 
 
