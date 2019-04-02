@@ -1,7 +1,7 @@
 ---
-title: 함께 인터넷 기반 장치 관리
+title: 인터넷 기반 디바이스 공동 관리
 titleSuffix: Configuration Manager
-description: 공동 관리를 위해 Windows 10 인터넷 기반 장치를 준비 하는 방법에 알아봅니다.
+description: 공동 관리를 위해 Windows 10 인터넷 기반 디바이스를 준비하는 방법을 알아봅니다.
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
@@ -12,66 +12,67 @@ ms.technology: configmgr-client
 ms.assetid: 101de2ba-9b4d-4890-b087-5d518a4aa624
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 31779b3588617816df4309461ed7715b20b0abd4
-ms.sourcegitcommit: f3dd8405018fe1043434386be15c16752c1a4a3c
-ms.translationtype: MT
+ms.sourcegitcommit: 9aebc20b25cdef0af908918ccfd791f3264a5d94
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
+ms.lasthandoff: 03/27/2019
 ms.locfileid: "57558034"
 ---
-# <a name="how-to-prepare-internet-based-devices-for-co-management"></a>공동 관리에 대 한 인터넷 기반 장치를 준비 하는 방법
+# <a name="how-to-prepare-internet-based-devices-for-co-management"></a>공동 관리를 위해 인터넷 기반 디바이스를 준비하는 방법
 
-이 문서에서는 새로운 인터넷 기반 장치에 대 한 공동 관리에 두 번째 경로에 중점을 둡니다. 이 시나리오는 Azure AD에 가입 및 Intune에 자동으로 등록 하는 새 Windows 10 장치가 있는 경우. 공동 관리 상태에 연결할 Configuration Manager 클라이언트를 설치할 수 있습니다.  
+이 문서에서는 새 인터넷 기반 디바이스를 위한 공동 관리의 두 번째 경로를 주로 다룹니다. 이 시나리오는 Azure AD에 가입되고 Intune에 자동으로 등록되는 새 Windows 10 디바이스가 있는 경우입니다. Configuration Manager 클라이언트를 설치하여 공동 관리 상태가 됩니다.  
 
 
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 
-새 Windows 10 장치에 대 한 상자 환경 (OOBE) 출력을 구성 하려면 Autopilot 서비스를 사용할 수 있습니다. 이 프로세스는 Azure AD에 장치를 가입 및 Intune에서 장치 등록을 포함 합니다.  
+새 Windows 10 디바이스에서 Autopilot 서비스를 사용하여 OOBE(첫 실행 경험)를 구성할 수 있습니다. 이 프로세스에는 디바이스를 Azure AD에 가입시키고 Intune에 등록하는 과정이 포함됩니다.  
 
-자세한 내용은 [Windows Autopilot 개요](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot)합니다.    
+자세한 내용은 [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot)(Windows Autopilot 개요)을 참조하세요.    
 
-Azure AD에 가입할 때 자동으로 등록을 Intune에 장치를 구성 하려면 참조 [Microsoft Intune에 등록 된 Windows 장치](https://docs.microsoft.com/intune/windows-enroll)합니다.  
+디바이스를 Azure AD에 가입시킬 때 Intune에 자동으로 등록되도록 구성하려면  [Microsoft Intune에 Windows 디바이스 등록](https://docs.microsoft.com/intune/windows-enroll)을 참조하세요.  
 
 
-### <a name="gather-information-from-configuration-manager"></a>Configuration Manager에서 정보를 수집 합니다.
+### <a name="gather-information-from-configuration-manager"></a>Configuration Manager에서 정보 수집
 
-버전 1802부터 Configuration Manager를 사용하여 비즈니스 및 교육용 Microsoft Store에서 필요한 디바이스 정보를 수집하고 보고합니다. 이 정보에는 디바이스 일련 번호, Windows 제품 식별자 및 하드웨어 식별자가 포함됩니다. Windows Autopilot을 지원 하도록 Microsoft Store 장치를 등록 하는 것이 됩니다. 
+버전 1802부터 Configuration Manager를 사용하여 비즈니스 및 교육용 Microsoft Store에서 필요한 디바이스 정보를 수집하고 보고합니다. 이 정보에는 디바이스 일련 번호, Windows 제품 식별자 및 하드웨어 식별자가 포함됩니다. 이 정보는 Windows Autopilot을 지원하도록 Microsoft Store에 디바이스를 등록하는 데 사용됩니다. 
 
-1. Configuration Manager 콘솔에서로 이동 합니다 **모니터링** 작업 영역에서 확장을 **보고** 노드를 확장 **보고서**, 선택한는 **하드웨어- 일반** 노드.  
+1. Configuration Manager 콘솔에서 **모니터링** 작업 영역으로 이동하고 **보고** 노드, **보고서** 노드를 차례로 확장하고 **하드웨어 - 일반** 노드를 선택합니다.  
 
-2. 보고서를 실행할 **Windows Autopilot 장치 정보**, 결과 봅니다.  
+2. **Windows Autopilot 디바이스 정보** 보고서를 실행하고 결과를 확인합니다.  
 
-3. 보고서 뷰어를 선택 합니다 **내보내기** 아이콘을 선택 합니다 **CSV (쉼표로 구분)** 옵션.  
+3. 보고서 뷰어에서 **내보내기** 아이콘을 선택하고 **CSV(쉼표로 구분)** 옵션을 선택합니다.  
 
 4. 파일을 저장한 후 비즈니스 및 교육용 Microsoft 스토어에 데이터를 업로드합니다.  
 
-자세한 내용은 [비즈니스 및 교육용 Microsoft Store 장치를 추가](https://docs.microsoft.com/microsoft-store/add-profile-to-devices#add-devices-and-apply-autopilot-deployment-profile)합니다.
+자세한 내용은 [Add devices in Microsoft Store for Business and Education](https://docs.microsoft.com/microsoft-store/add-profile-to-devices#add-devices-and-apply-autopilot-deployment-profile)(비즈니스 및 교육용 Microsoft 스토어에 디바이스 추가)을 참조하세요.
 
 
-### <a name="autopilot-for-existing-devices"></a>기존 장치에 대 한 autopilot
+### <a name="autopilot-for-existing-devices"></a>기존 디바이스를 위한 Autopilot
 <!--1358333-->
 
-[기존 장치에 대 한 Windows Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) Windows 10 1809 이상 버전에서에서 사용할 수 있습니다. 이 기능을 사용 하면 이미지로 다시 설치에 대 한 Windows 7 장치를 프로 비전 하 [Windows Autopilot 사용자 기반 모드](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) 단일, 기본 Configuration Manager 작업 순서를 사용 합니다. 
+[기존 디바이스를 위한 Windows Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)은 Windows 10 버전, 1809 이상에서 사용할 수 있습니다. 이 기능을 사용하면 단일, 네이티브 Configuration Manager 작업 순서를 사용하여 [Windows Autopilot user-driven mode](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven)(Windows Autopilot 사용자 기반 모드)용으로 Windows 7 디바이스를 이미지로 다시 설치하고 프로비전할 수 있습니다. 
 
-자세한 내용은 [기존 장치 작업 순서에 대 한 Windows Autopilot](/sccm/osd/deploy-use/windows-autopilot-for-existing-devices)합니다.
+자세한 내용은 [Windows Autopilot for existing devices task sequence](/sccm/osd/deploy-use/windows-autopilot-for-existing-devices)(기존 디바이스를 위한 Windows Autopilot 작업 순서)를 참조하세요.
 
 
 
-## <a name="install-the-configuration-manager-client"></a>Configuration Manager 클라이언트를 설치 합니다.
+## <a name="install-the-configuration-manager-client"></a>Configuration Manager 클라이언트 설치
 
-두 번째 경로에서 인터넷 기반 장치의 경우 Intune에서 앱을 만들려고 해야 합니다. Configuration Manager 클라이언트가 이미 없는 Windows 10 장치에이 앱을 배포 합니다. 
+두 번째 경로의 인터넷 기반 디바이스의 경우 Intune에서 앱을 만들어야 합니다. 아직 Configuration Manager 클라이언트가 아닌 Windows 10 디바이스에 이 앱을 배포합니다. 
 
-### <a name="get-the-command-line-from-configuration-manager"></a>Configuration Manager에서 명령줄을 가져옵니다
+### <a name="get-the-command-line-from-configuration-manager"></a>Configuration Manager에서 명령줄 가져오기
 
 1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고, **Cloud Services**를 확장하고, **공동 관리** 노드를 선택합니다.  
 
-2. 공동 관리 개체를 선택 하 고 선택한 **속성** 리본 메뉴에 있습니다.  
+2. 공동 관리 개체를 선택한 다음 리본에서 **속성**을 선택합니다.  
 
-3. 에 **사용** 탭, 명령줄을 복사 합니다. 다음 프로세스에 대 한 저장 하려면 메모장에 붙여 넣습니다.  
+3. **사용 여부** 탭에서 명령줄을 복사합니다. 명령줄을 메모장에 붙여넣어 다음 프로세스를 위해 저장합니다.  
 
-다음 명령줄은 예: `CCMSETUPCMD="CCMHOSTNAME=contoso.cloudapp.net/CCM_Proxy_MutualAuth/72186325152220500 SMSSiteCode=ABC"`
+다음 명령줄은 예제 명령줄입니다. `CCMSETUPCMD="CCMHOSTNAME=contoso.cloudapp.net/CCM_Proxy_MutualAuth/72186325152220500 SMSSiteCode=ABC"`
 
-<!--1358215--> 버전 1806부터 더 적은 명령줄 속성이 필요합니다.  
+<!--1358215-->
+버전 1806부터 이제 더 적은 명령줄 속성이 필요합니다.  
 
 - 모든 시나리오에서 다음 명령줄 속성이 필요합니다.  
     - CCMHOSTNAME  
@@ -81,20 +82,20 @@ Azure AD에 가입할 때 자동으로 등록을 Intune에 장치를 구성 하�
     - AADCLIENTAPPID  
     - AADRESOURCEURI  
 
-- 클라이언트가 인트라넷으로 다시 로밍 하는 경우 다음 속성이 필요 합니다.  
+- 클라이언트가 인트라넷으로 다시 로밍되는 경우 다음 속성이 필요합니다.  
     - SMSMP  
 
-- 고유 PKI SSL 인증서 및 CRL에 사용 하 여 인터넷에 게시 되지, 다음 매개 변수는 필수:  
+- 고유 PKI SSL 인증서를 사용하고 CRL이 인터넷에 게시되지 않은 경우 다음 매개 변수가 필요합니다.  
     - /noCRLCheck  
     
-     자세한 내용은 참조 하세요. [Crl에 대 한 계획](/sccm/core/plan-design/security/plan-for-security#-plan-for-the-site-server-signing-certificate-self-signed)  
+     자세한 내용은 [CRL 계획](/sccm/core/plan-design/security/plan-for-security#-plan-for-the-site-server-signing-certificate-self-signed)을 참조하세요.  
 
-1810 버전부터 사이트 게시 추가 Azure AD 정보를 CMG (클라우드 관리 게이트웨이)를 합니다. Azure AD에 가입된 클라이언트는 가입된 동일한 테넌트를 사용하여 ccmsetup 프로세스 중에 CMG에서 이 정보를 가져옵니다. 이 동작은 둘 이상의 Azure AD 테넌트가 있는 환경의 공동 관리에 디바이스를 등록하는 작업을 추가로 간소화합니다. 두 개만 필요한 ccmsetup 속성은 이제 **CCMHOSTNAME** 하 고 **SMSSiteCode**합니다.<!--3607731-->
+버전 1810부터 사이트는 추가 Azure AD 정보를 CMG(클라우드 관리 게이트웨이)에 게시합니다. Azure AD에 가입된 클라이언트는 가입된 동일한 테넌트를 사용하여 ccmsetup 프로세스 중에 CMG에서 이 정보를 가져옵니다. 이 동작은 둘 이상의 Azure AD 테넌트가 있는 환경의 공동 관리에 디바이스를 등록하는 작업을 추가로 간소화합니다. 이제 유일한 두 개의 필수 ccmsetup 속성은 **CCMHOSTNAME** 및 **SMSSiteCode**입니다.<!--3607731-->
 
 > [!Note]
-> Intune에서 Configuration Manager 클라이언트를 이미 배포 하는 경우 새 명령줄 및 새 MSI를 사용 하 여 Intune 앱을 업데이트 합니다. <!-- SCCMDocs-pr issue 3084 -->
+> Intune에서 Configuration Manager 클라이언트를 이미 배포하는 경우 새 명령줄과 새 MSI를 사용하여 Intune 앱을 업데이트합니다. <!-- SCCMDocs-pr issue 3084 -->
 
-다음 예제를 포함 하 여 이러한 모든 속성:   
+다음 예제에서는 이러한 속성 모두를 포함합니다.   
 `ccmsetup.exe CCMHOSTNAME=CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72186325152220500 SMSSiteCode=ABC AADCLIENTAPPID=7506ee10-f7ec-415a-b415-cd3d58790d97 AADRESOURCEURI=https://contososerver SMSMP=https://mp1.contoso.com`
 
 자세한 내용은 [클라이언트 설치 속성](/sccm/core/clients/deploy/about-client-installation-properties)을 참조합니다.
@@ -102,20 +103,20 @@ Azure AD에 가입할 때 자동으로 등록을 Intune에 장치를 구성 하�
 
 ### <a name="create-the-app-in-intune"></a>Intune에서 앱 만들기
 
-1. 로 이동 합니다 [Azure portal](https://portal.azure.com), 한 다음 Intune 페이지를 엽니다.  
+1. [Azure Portal](https://portal.azure.com)로 이동한 다음 Intune 페이지를 엽니다.  
 
-2. 선택 **클라이언트 앱** > **앱** > **추가**합니다.  
+2. **클라이언트 앱** > **앱** > **추가**를 선택합니다.  
 
 3. **기타**에서 **기간 업무 앱**을 선택합니다.  
 
-4. 업로드 합니다 **ccmsetup.msi** 앱 패키지 파일입니다. 사이트 서버의 다음 폴더는 Configuration Manager에서이 파일을 찾을: `<ConfigMgr installation directory>\bin\i386`합니다.  
+4. **ccmsetup.msi** 앱 패키지 파일을 업로드합니다. Configuration Manager 사이트 서버의 `<ConfigMgr installation directory>\bin\i386` 폴더에서 이 파일을 찾습니다.  
 
     > [!Tip]  
-    > 사이트를 업데이트 하는 경우 Intune에서이 앱을 업데이트할 수도 있습니다 있는지 확인 합니다.  
+    > 사이트를 업데이트하는 경우 Intune에서 이 앱도 업데이트해야 합니다.  
 
-5. 앱이 업데이트 되 면 Configuration Manager에서 복사한 명령줄을 사용 하 여 앱 정보를 구성 합니다.  
+5. 앱을 업데이트했으면 Configuration Manager에서 복사한 명령줄을 사용하여 앱 정보를 구성합니다.  
 
 > [!IMPORTANT]    
-> 이 명령줄을 사용자 지정 하는 경우는 1024 자 보다 긴 없는 있는지 확인 해야 합니다. 명령줄 길이 1024 자 보다 긴 경우 클라이언트 설치에 실패 합니다.
+> 이 명령줄을 사용자 지정하는 경우는 이 명령줄이 1024자보다 길지 않아야 합니다. 명령줄 길이가 1024자를 넘는 경우 클라이언트 설치에 실패합니다.
 
 
