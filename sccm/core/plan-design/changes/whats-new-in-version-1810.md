@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e0b1e9404eb332a562b6d48db0f55e8726a09c8
-ms.sourcegitcommit: 5f17355f954b9d9e10325c0e9854a9d582dec777
+ms.openlocfilehash: ca7214b12532305932ddca4595b4ef4d5bdc1569
+ms.sourcegitcommit: 9aebc20b25cdef0af908918ccfd791f3264a5d94
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58329620"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58477511"
 ---
 # <a name="whats-new-in-version-1810-of-configuration-manager-current-branch"></a>Configuration Manager 1810 버전의 새로운 기능
 
@@ -417,7 +417,7 @@ Microsoft Intune 구독을 구성하기 위한 온-프레미스 MDM 필수 구�
 
 Configuration Manager용 Windows PowerShell cmdlet의 변경 내용에 대한 자세한 내용은 [PowerShell 버전 1810 릴리스 정보](https://docs.microsoft.com/powershell/sccm/1810-release-notes?view=sccm-ps)를 참조하세요.
 
-다음 업데이트 롤업(4486457)은 2019년 1월 25일부터 콘솔에서 사용할 수 있습니다. [Configuration Manager 현재 분기, 버전 1810용 업데이트 롤업](https://support.microsoft.com/help/4486457).
+(4488598)는 2019년 3월 25일부터 콘솔에서 사용할 수 있습니다: [Configuration Manager 현재 분기, 버전 1810용 업데이트 롤업 2](https://support.microsoft.com/help/4488598). 이 업데이트 롤업은 이전 업데이트 롤업 KB 4486457을 대체합니다.
 
 
 ### <a name="hotfixes"></a>핫픽스
