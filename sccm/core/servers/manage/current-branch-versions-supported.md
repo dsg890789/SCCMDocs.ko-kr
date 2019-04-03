@@ -2,7 +2,7 @@
 title: 현재 분기 버전
 titleSuffix: Configuration Manager
 description: Configuration Manager 버전 기록을 검토하고 제공되는 서비스의 단계에 대해 알아봅니다.
-ms.date: 11/27/2018
+ms.date: 03/27/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: acdc85980db937433cf8bf10336d940d0a434c94
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: ed5e7b6931fe8c853b867483d3db8a2d5bc9ad8b
+ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56135959"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58523727"
 ---
 # <a name="support-for-configuration-manager-current-branch-versions"></a>Configuration Manager 현재 분기 버전에 대한 지원
 
@@ -28,8 +28,11 @@ Microsoft는 1년에 몇 차례 Configuration Manager 현재 분기용 업데이
 
 - **보안 업데이트(전용)** 서비스 단계 - 새로운 현재 분기 버전을 출시한 후 Microsoft는 해당 버전의 지원 수명 주기의 나머지 기간 동안 이전 버전에 대한 보안 업데이트만 지원합니다(그림 1 참조).  
 
-  ![Configuration Manager 서비스 및 지원 일정 그래픽](media/CM_Servicing_support_timeline1.png)  
-  그림 1. 현재 분기 서비스 지원의 릴리스 주기가 겹치는 경우의 예 이 예는 주기를 설명하기 위한 것으로 실제 또는 예상 출시 날짜를 나타내지는 않습니다.
+([전체 크기로 그래픽 보기](media/CM_Servicing_support_timeline1.png))
+
+![Configuration Manager 서비스 및 지원 일정 그래픽](media/CM_Servicing_support_timeline1.png)  
+
+그림 1. 현재 분기 서비스 지원의 릴리스 주기가 겹치는 경우의 예 이 예는 주기를 설명하기 위한 것으로 실제 또는 예상 출시 날짜를 나타내지는 않습니다.
 
 > [!NOTE]  
 >  최신 현재 분기 버전은 항상 **보안 및 중요 업데이트** 서비스 단계입니다. 이 지원 정책은 중요 업데이트가 필요한 코드 오류가 발생한 경우 수정 프로그램을 받으려면 최신 현재 분기 버전을 설치해야 함을 의미합니다. 지원되는 다른 모든 현재 분기 버전은 보안 업데이트만 받을 수 있습니다.

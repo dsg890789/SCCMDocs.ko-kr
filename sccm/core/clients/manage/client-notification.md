@@ -2,7 +2,7 @@
 title: 클라이언트 알림
 titleSuffix: Configuration Manager
 description: 중앙 Configuration Manager 콘솔에서 즉각적인 작업을 수행하여 클라이언트를 관리합니다.
-ms.date: 03/19/2019
+ms.date: 03/22/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39135a1fa548c83e0ba9c7d2a98cf1e925217280
-ms.sourcegitcommit: f38ef9afb0c608c0153230ff819e5f5e0fb1520c
+ms.openlocfilehash: db68a55136d708ad9276f8b1319dde33fcde35ac
+ms.sourcegitcommit: 9aebc20b25cdef0af908918ccfd791f3264a5d94
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58197030"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58477469"
 ---
 # <a name="client-notification-in-configuration-manager"></a>Configuration Manager의 클라이언트 알림
 
@@ -141,7 +141,7 @@ DDR(검색 데이터 레코드)을 전송하도록 클라이언트를 트리거�
 
 ### <a name="wake-up"></a>절전 모드 해제
 
-1810 버전부터 일시 중지된 장치를 완전 전원 모드로 복귀하도록 트리거합니다.
+버전 1810부터 Wake On LAN 패키지를 보내기 위해 동일한 서브넷에 있는 다른 디바이스를 사용하여 절전 모드를 해제하는 Wake On LAN을 지원하도록 구성된 디바이스를 트리거합니다.
 
 
 ### <a name="restart"></a>다시 시작

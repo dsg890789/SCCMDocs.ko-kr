@@ -2,7 +2,7 @@
 title: 클라이언트에서 사용되지 않음
 titleSuffix: Configuration Manager
 description: Configuration Manager가 더 이상 지원하지 않는 클라이언트 운영 체제에 대해 알아봅니다.
-ms.date: 01/15/2019
+ms.date: 03/27/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d55c246c696a550ad3935a1f2bf9a7b838af996a
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 9c6c4af31af08d2c723df01fa37f21f708453044
+ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156858"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58523778"
 ---
 # <a name="removed-and-deprecated-items-for-configuration-manager-clients"></a>Configuration Manager 클라이언트에서 제거되는 항목과 사용되지 않는 항목
 
@@ -33,7 +33,7 @@ ms.locfileid: "56156858"
 
 |**운영 체제**|**처음 중단 발표**|**제거된 지원**|  
 |-|-|-|
-|Linux 및 UNIX|2018년 3월 22일||
+|Linux 및 UNIX|2018년 3월 22일|버전 1902|
 |Windows 8: Professional, Enterprise|2016년 1월 12일|1802 버전|
 |Windows Embedded 8 Pro|2016년 1월 12일|1802 버전|
 |Windows Embedded 8 Industry|2016년 1월 12일|1802 버전|

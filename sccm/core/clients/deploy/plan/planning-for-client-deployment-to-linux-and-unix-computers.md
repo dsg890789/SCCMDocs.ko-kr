@@ -1,8 +1,8 @@
 ---
 title: Linux 및 UNIX 컴퓨터에 클라이언트 배포 계획
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 Linux 및 UNIX 컴퓨터에 클라이언트 배포를 계획합니다.
-ms.date: 08/30/2017
+description: Configuration Manager에서 Linux 및 UNIX 컴퓨터에 클라이언트 배포를 계획합니다.
+ms.date: 03/27/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,18 +11,23 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60811ad0556be4d59caab346d20fbb2c40024206
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: cfa2a2412744046ca1a16aad2721fcb9efcff38e
+ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56128241"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58524152"
 ---
-# <a name="planning-for-client-deployment-to-linux-and-unix-computers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Linux 및 UNIX 컴퓨터에 클라이언트 배포 계획
+# <a name="planning-for-client-deployment-to-linux-and-unix-computers-in-configuration-manager"></a>Configuration Manager에서 Linux 및 UNIX 컴퓨터에 클라이언트 배포 계획
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manager 클라이언트를 설치할 수 있습니다. 이 클라이언트는 작업 그룹 컴퓨터로 작동하는 서버를 위해 설계되었으며 로그온한 사용자와의 상호 작용은 지원하지 않습니다. 클라이언트 소프트웨어를 설치하고 클라이언트가 Configuration Manager 사이트와의 통신을 설정한 후 Configuration Manager 콘솔 및 보고서를 사용하여 클라이언트를 관리합니다.  
+> [!Important]  
+> 버전 1902부터 Configuration Manager는 Linux 또는 UNIX 클라이언트를 지원하지 않습니다. 
+> 
+> 따라서 Linux 서버를 관리하려면 Microsoft Azure 관리를 고려해야 합니다. Azure 솔루션은 대부분의 경우 Linux용 종단 간 패치 관리를 포함하여 Configuration Manager 기능을 능가하는 광범위한 Linux 지원을 제공합니다.
+
+Linux 또는 UNIX를 실행하는 컴퓨터에 Configuration Manager 클라이언트를 설치할 수 있습니다. 이 클라이언트는 작업 그룹 컴퓨터로 작동하는 서버를 위해 설계되었으며 로그온한 사용자와의 상호 작용은 지원하지 않습니다. 클라이언트 소프트웨어를 설치하고 클라이언트가 Configuration Manager 사이트와의 통신을 설정한 후 Configuration Manager 콘솔 및 보고서를 사용하여 클라이언트를 관리합니다.  
 
 > [!NOTE]
 >  Linux 및 UNIX 컴퓨터용 System Center Configuration Manager 클라이언트는 다음 관리 기능을 지원하지 않습니다.  
@@ -156,7 +161,7 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manag
 
 |필수 패키지|설명|최소 버전|  
 |----------------------|-----------------|---------------------|  
-|OS 버전|운영 체제 버전|AIX 6.1, 모든 Technology Level 및 서비스 팩|  
+|OS 버전|운영 체제 버전|AIX 6.1: 모든 Technology Level 및 서비스 팩|  
 |xlC.rte|XL C/C++ 런타임|9.0.0.5|  
 |OpenSSL/openssl.base|OpenSSL Libraries, 보안 네트워크 통신 프로토콜|0.9.8.4|  
 
@@ -164,7 +169,7 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manag
 
 |필수 패키지|설명|최소 버전|  
 |----------------------|-----------------|---------------------|  
-|OS 버전|운영 체제 버전|AIX 7.1, 모든 Technology Level 및 서비스 팩|  
+|OS 버전|운영 체제 버전|AIX 7.1: 모든 Technology Level 및 서비스 팩|  
 |xlC.rte|XL C/C++ 런타임||  
 |OpenSSL/openssl.base|OpenSSL Libraries, 보안 네트워크 통신 프로토콜||  
 
@@ -183,7 +188,7 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manag
 
 |Configuration Manager 사이트 시스템|추가 정보|  
 |---------------------------------------|----------------------|  
-|관리 지점|Linux 및 UNIX용 Configuration Manager 클라이언트를 설치하는 데 관리 지점이 필요하지는 않지만 클라이언트 컴퓨터와 Configuration Manager 서버 간에 정보를 전송하려면 관리 지점이 있어야 합니다. 관리 지점이 없으면 클라이언트 컴퓨터를 관리할 수 없습니다.|  
+|관리 지점|Linux 및 UNIX용 Configuration Manager 클라이언트를 설치하는 데 관리 지점이 필요하지는 않지만, 클라이언트 컴퓨터와 Configuration Manager 서버 간에 정보를 전송하려면 관리 지점이 있어야 합니다. 관리 지점이 없으면 클라이언트 컴퓨터를 관리할 수 없습니다.|  
 |배포 지점|배포 지점은 Linux 및 UNIX용 Configuration Manager 클라이언트 설치에 필요하지 않습니다. 그러나 사이트 시스템 역할은 Linux 및 UNIX 서버에 소프트웨어를 배포 하는 경우 필요 합니다.<br /><br /> Linux 및 UNIX용 Configuration Manager 클라이언트는 SMB를 사용하는 통신을 지원하지 않으므로 클라이언트와 함께 사용하는 배포 지점에서 HTTP 또는 HTTPS 통신을 지원해야 합니다.|  
 |대체 상태 지점|Linux 및 UNIX용 Configuration Manager 클라이언트를 설치하기 위해 대체 상태 지점은 필요하지 않습니다. 그러나 대체 상태 지점을 사용하면 Configuration Manager 사이트의 컴퓨터에서 관리 지점과 통신할 수 없는 경우에 대체 상태 지점을 통해 상태 메시지를 보낼 수 있습니다. 또한 클라이언트는 대체 상태 지점에 해당 설치 상태를 보낼 수 있습니다.|  
 
@@ -192,25 +197,25 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manag
  클라이언트 통신 및 요청 포트에 대한 자세한 내용은 [관리 지점을 찾도록 Linux 및 UNIX용 클라이언트 구성](../../../../core/clients/deploy/deploy-clients-to-unix-and-linux-servers.md#BKMK_ConfigClientMP)을 참조하세요.  
 
 ##  <a name="BKMK_PlanningforCommunicationsforLnU"></a> Linux 및 UNIX 서버에 대한 포리스트 트러스트 간 통신 계획  
- Configuration Manager를 사용하여 관리하는 Linux 및 UNIX 서버는 작업 그룹 클라이언트로 작동하며 작업 그룹에 속한 Windows 기반 클라이언트와 유사한 구성이 필요합니다. 작업 그룹에 있는 컴퓨터의 통신에 대한 자세한 내용은 은 [System Center Configuration Manager에서 엔드포인트 간의 통신](../../../../core/plan-design/hierarchy/communications-between-endpoints.md) 항목에서 [Active Directory 포리스트 간 통신](../../../../core/plan-design/hierarchy/communications-between-endpoints.md#Plan_Com_X-Forest) 섹션을 참조하세요.  
+ Configuration Manager를 사용하여 관리하는 Linux 및 UNIX 서버는 작업 그룹 클라이언트로 작동하며 작업 그룹에 속한 Windows 기반 클라이언트와 유사한 구성이 필요합니다. 작업 그룹에 속한 컴퓨터의 통신에 대한 자세한 내용은 [Active Directory 포리스트 간 통신](/sccm/core/plan-design/hierarchy/communications-between-endpoints#Plan_Com_X-Forest)을 참조하세요.  
 
 ###  <a name="BKMK_ServiceLocationforLnU"></a> Linux 및 UNIX용 클라이언트에서 서비스 위치  
- 클라이언트에 서비스를 제공 하는 사이트 시스템 서버를 찾는 작업은 서비스 위치 라고 합니다. Windows 기반 클라이언트와 달리 Linux 및 UNIX 용 클라이언트 서비스 위치에 대 한 Active Directory 사용 하지 않습니다. 또한 Linux 및 UNIX용 Configuration Manager 클라이언트는 관리 지점의 도메인 접미사를 지정하는 클라이언트 속성을 지원하지 않습니다. 대신, 클라이언트는 클라이언트 소프트웨어를 설치할 때 할당 된 알려진된 관리 지점에서 클라이언트에 서비스를 제공 하는 추가 사이트 시스템 서버에 대 한 알아냅니다.  
+ 클라이언트에 서비스를 제공 하는 사이트 시스템 서버를 찾는 작업은 서비스 위치 라고 합니다. Windows 기반 클라이언트와 달리 Linux 및 UNIX용 클라이언트는 서비스 위치에 Active Directory를 사용하지 않습니다. 또한 Linux 및 UNIX용 Configuration Manager 클라이언트는 관리 지점의 도메인 접미사를 지정하는 클라이언트 속성을 지원하지 않습니다. 대신, 클라이언트는 클라이언트 소프트웨어를 설치할 때 할당 된 알려진된 관리 지점에서 클라이언트에 서비스를 제공 하는 추가 사이트 시스템 서버에 대 한 알아냅니다.  
 
- 서비스 위치에 대한 자세한 내용은 [클라이언트가 System Center Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법 이해](../../../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md) 항목의 [서비스 위치 및 클라이언트에서 자신의 할당된 관리 지점을 확인하는 방법](../../../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md#BKMK_Plan_Service_Location) 섹션을 참조하세요.  
+ 자세한 내용은 [서비스 위치 및 클라이언트에서 자신의 할당된 관리 지점을 확인하는 방법](/sccm/core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services#BKMK_Plan_Service_Location)을 참조하세요.  
 
 ##  <a name="BKMK_SecurityforLnU"></a> Linux 및 UNIX 서버에 대한 보안 및 인증서 계획  
  Configuration Manager 사이트와의 안전하고 인증된 통신을 위해 Linux 및 UNIX용 Configuration Manager 클라이언트는 Windows용 Configuration Manager 클라이언트와 동일한 통신 모델을 사용합니다.  
 
- Linux 및 UNIX 클라이언트를 설치할 때 HTTPS를 사용하여 Configuration Manager 사이트와 통신할 수 있게 하는 PKI 인증서를 클라이언트에 할당할 수 있습니다. PKI 인증서를 할당 하지 않은 경우 클라이언트 자체 서명 된 인증서를 만들고 HTTP를 통해서만 통신 합니다.  
+ Linux 및 UNIX 클라이언트를 설치할 때 HTTPS를 사용하여 Configuration Manager 사이트와 통신할 수 있게 하는 PKI 인증서를 클라이언트에 할당할 수 있습니다. PKI 인증서를 할당하지 않은 경우 클라이언트는 자체 서명된 인증서를 만들고 HTTP를 통해서만 통신합니다.  
 
  PKI 인증서를 설치할 때 제공 하는 클라이언트 관리 지점과 통신을 HTTPS를 사용 합니다. 클라이언트를 지 원하는 HTTPS 관리 지점을 찾을 수 없을 때 제공 된 PKI 인증서와 함께 HTTP를 사용 하 여 다시 대체 됩니다.  
 
- Linux 또는 UNIX 클라이언트 PKI 인증서를 사용 하는 경우에 승인할 필요가 없습니다. 클라이언트가 자체 서명된 인증서를 사용하는 경우 Configuration Manager 콘솔에서 클라이언트 승인에 대한 계층 구조 설정을 검토합니다. 클라이언트 승인 메서드가 없으면 **(권장 하지 않음) 하는 모든 컴퓨터를 자동으로 승인**, 클라이언트를 수동으로 승인 해야 합니다.  
+ Linux 또는 UNIX 클라이언트가 PKI 인증서를 사용하는 경우에는 승인할 필요가 없습니다. 클라이언트가 자체 서명된 인증서를 사용하는 경우 Configuration Manager 콘솔에서 클라이언트 승인에 대한 계층 구조 설정을 검토합니다. 클라이언트 승인 메서드가 없으면 **(권장 하지 않음) 하는 모든 컴퓨터를 자동으로 승인**, 클라이언트를 수동으로 승인 해야 합니다.  
 
- 클라이언트를 수동으로 승인하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트를 관리하는 방법](../../../../core/clients/manage/manage-clients.md) 항목의 [디바이스 노드에서 클라이언트 관리](../../../../core/clients/manage/manage-clients.md#BKMK_ManagingClients_DevicesNode)를 참조하세요.  
+ 클라이언트를 수동으로 승인하는 방법에 대한 자세한 내용은 [디바이스 노드에서 클라이언트 관리](/sccm/core/clients/manage/manage-clients#BKMK_ManagingClients_DevicesNode)를 참조하세요.  
 
- Configuration Manager에서 인증서를 사용하는 방법에 대한 자세한 내용은 [System Center Configuration Manager를 위한 PKI 인증서 요구 사항](../../../../core/plan-design/network/pki-certificate-requirements.md)을 참조하세요.  
+ Configuration Manager에서 인증서를 사용하는 방법에 대한 자세한 내용은 [PKI 인증서 요구 사항](/sccm/core/plan-design/network/pki-certificate-requirements)을 참조하세요.  
 
 ###  <a name="BKMK_AboutCertsforLnU"></a> Linux 및 UNIX 서버에서 사용할 인증서 정보  
  Linux 및 UNIX용 Configuration Manager 클라이언트는 Windows 기반 클라이언트와 마찬가지로 자체 서명된 인증서 또는 X.509 PKI 인증서를 사용합니다. Linux 및 UNIX 클라이언트를 관리하는 경우에도 Configuration Manager 사이트 시스템에 대한 PKI 요구 사항은 변경되지 않습니다.  
@@ -220,13 +225,13 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manag
  Linux 및 UNIX용 Configuration Manager 클라이언트는 단일 PKI 인증서를 지원하며 여러 인증서를 지원하지 않습니다. 따라서 Configuration Manager 사이트에 대해 구성하는 인증서 선택 조건은 적용되지 않습니다.  
 
 ###  <a name="BKMK_ConfigCertsforLnU"></a> Linux 및 UNIX 서버에 대한 인증서 구성  
- HTTPS 통신을 사용하도록 Linux 및 UNIX 서버용 Configuration Manager 클라이언트를 구성하려면 클라이언트를 설치할 때 PKI 인증서를 사용하도록 클라이언트를 구성해야 합니다. 클라이언트 소프트웨어를 설치 하기 전에 인증서를 프로 비전 할 수 없습니다.  
+ HTTPS 통신을 사용하도록 Linux 및 UNIX 서버용 Configuration Manager 클라이언트를 구성하려면 클라이언트를 설치할 때 PKI 인증서를 사용하도록 클라이언트를 구성해야 합니다. 클라이언트 소프트웨어를 설치하기 전에는 인증서를 프로비저닝할 수 없습니다.  
 
- 명령줄 매개 변수를 사용 하는 PKI 인증서를 사용 하는 클라이언트를 설치 하면 **-UsePKICert** PKI 인증서가 포함 된 PKCS #12 파일의 이름과 위치를 지정할 수 있습니다. 또한 명령줄 매개 변수를 사용 해야 **-certpw** 인증서에 대 한 암호를 지정 합니다.  
+ PKI 인증서를 사용하는 클라이언트를 설치할 때 명령줄 매개 변수 `-UsePKICert`를 사용하여 PKI 인증서가 포함된 PKCS#12 파일의 이름과 위치를 지정합니다. 또한 명령줄 매개 변수 `-certpw`를 사용하여 인증서 암호를 지정해야 합니다.  
 
- 지정 하지 않으면 **-UsePKICert**, 클라이언트는 자체 서명 된 인증서를 생성 하 고만 HTTP를 사용 하 여 사이트 시스템 서버와 통신 하려고 시도 합니다.  
+ `-UsePKICert`를 지정하지 않으면 클라이언트가 자체 서명된 인증서를 생성하고 HTTP만 사용하여 사이트 시스템 서버에 통신을 시도합니다.  
 
-##  <a name="BKMK_NoSHA-256"></a> SHA-256을 지원하지 않는 Linux 및 UNIX 운영 체제 정보  
+##  <a name="BKMK_NoSHA-256"></a> SHA-256을 지원하지 않는 버전  
  Configuration Manager용 클라이언트로 지원되는 다음 Linux 및 UNIX 운영 체제는 SHA-256을 지원하지 않는 OpenSSL 버전과 함께 릴리스되었습니다.  
 
 -   Solaris 버전 10(SPARC/x86)  
@@ -234,16 +239,16 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 System Center Configuration Manag
 
  Configuration Manager를 사용하여 이러한 운영 체제를 관리하려면 클라이언트에 SHA-256의 유효성 검사를 건너뛰도록 지시하는 명령줄 스위치로 Linux 및 UNIX용 Configuration Manager 클라이언트를 설치해야 합니다. 이러한 운영 체제 버전에서 실행되는 Configuration Manager 클라이언트는 SHA-256을 지원하는 클라이언트보다 덜 안전한 모드로 작동합니다. 다음 동작을 포함 하는 작업의 보안성이 모드:  
 
--   클라이언트는 관리 지점에서 요청할 정책과 연결 된 사이트 서버 서명 유효성을 검사 하지 않습니다.  
+-   클라이언트는 관리 지점에서 요청할 정책과 연결된 사이트 서버 서명의 유효성을 검사하지 않습니다.  
 
--   클라이언트는 배포 지점에서 다운로드 하는 패키지에 대 한 해시를 확인 하지 않습니다.  
+-   클라이언트는 배포 지점에서 다운로드하는 패키지에 대해 해시의 유효성을 검사하지 않습니다.  
 
 > [!IMPORTANT]  
->  **ignoreSHA256validation** 옵션을 사용 하면 덜 안전 모드에서 Linux 및 UNIX 컴퓨터에 대 한 클라이언트를 실행할 수 있습니다. 이 s h A 256에 대 한 지원을 포함 하지 않는 오래 된 플랫폼에서 사용이 됩니다. 이 보안 재정의 및 Microsoft에서 권장 되지 않습니다 이지만 안전 하 고 신뢰할 수 있는 데이터 센터 환경에서 사용 하기 위해 지원 됩니다.  
+>  `ignoreSHA256validation` 옵션을 사용하면 보안 수준이 낮은 모드에서 Linux 및 UNIX 컴퓨터용 클라이언트를 실행할 수 있습니다. 이 s h A 256에 대 한 지원을 포함 하지 않는 오래 된 플랫폼에서 사용이 됩니다. 이 보안 재정의 및 Microsoft에서 권장 되지 않습니다 이지만 안전 하 고 신뢰할 수 있는 데이터 센터 환경에서 사용 하기 위해 지원 됩니다.  
 
  Linux 및 UNIX용 Configuration Manager 클라이언트를 설치할 때 설치 스크립트는 운영 체제 버전을 확인합니다. 기본적으로 운영 체제 버전이 SHA-256을 지원하는 OpenSSL 버전 없이 릴리스된 것으로 식별되면 Configuration Manager 클라이언트 설치에 실패합니다.  
 
- SHA-256을 지원하는 OpenSSL 버전과 함께 릴리스되지 않은 Linux 및 UNIX 운영 체제에 Configuration Manager 클라이언트를 설치하려면 설치 명령줄 스위치 **ignoreSHA256validation**을 사용해야 합니다. 적용 가능한 Linux 또는 UNIX 운영 체제에서 이 명령줄 옵션을 사용하면 Configuration Manager 클라이언트는 SHA-256 유효성 검사를 건너뛰며, 설치 후에 클라이언트에서 SHA-256을 사용하여 HTTP를 통해 사이트 시스템으로 전송하는 데이터에 서명하지 않습니다. 인증서를 사용하도록 Linux 및 UNIX 클라이언트를 구성하는 방법에 대한 자세한 내용은 이 항목에서 [Linux 및 UNIX 서버에 대한 보안 및 인증서 계획](#BKMK_SecurityforLnU) 을 참조하세요. SHA-256을 요구하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 보안 구성](../../../../core/plan-design/security/configure-security.md) 항목의 [서명 및 암호화 구성](../../../../core/plan-design/security/configure-security.md#BKMK_ConfigureSigningEncryption) 섹션을 참조하세요.  
+ SHA-256을 지원하는 OpenSSL 버전과 함께 릴리스되지 않은 Linux 및 UNIX 운영 체제에 Configuration Manager 클라이언트를 설치하려면 설치 명령줄 스위치 `ignoreSHA256validation`을 사용해야 합니다. 적용 가능한 Linux 또는 UNIX 운영 체제에서 이 명령줄 옵션을 사용하면 Configuration Manager 클라이언트는 SHA-256 유효성 검사를 건너뛰며, 설치 후에 클라이언트에서 SHA-256을 사용하여 HTTP를 통해 사이트 시스템으로 전송하는 데이터에 서명하지 않습니다. 인증서를 사용하도록 Linux 및 UNIX 클라이언트를 구성하는 방법에 대한 자세한 내용은 [Linux 및 UNIX 서버에 대한 보안 및 인증서 계획](#BKMK_SecurityforLnU)을 참조하세요. SHA-256을 요구하는 방법에 대한 자세한 내용은 [서명 및 암호화 구성](/sccm/core/plan-design/security/configure-security#BKMK_ConfigureSigningEncryption)을 참조하세요.  
 
 > [!NOTE]  
->  명령줄 옵션 **ignoreSHA256validation** s h A-256을 지원 하는 버전의 OpenSSL와 Linux 및 UNIX 릴리스된 버전을 실행 하는 컴퓨터에서 무시 됩니다.  
+>  SHA-256을 지원하는 OpenSSL 버전과 함께 릴리스된 Linux 및 UNIX 버전을 실행하는 컴퓨터에서는 명령줄 옵션 `ignoreSHA256validation`이 무시됩니다.  

@@ -11,18 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdbe1d7c3fb28a16c6ba55d073adba3781b12f58
-ms.sourcegitcommit: 544f335cfd1bfd0a1d4973439780e9f5e9ee8bed
+ms.openlocfilehash: d07005c63f0d69d57d24eac163b67c34529658cf
+ms.sourcegitcommit: 9aebc20b25cdef0af908918ccfd791f3264a5d94
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57562060"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58477554"
 ---
 # <a name="use-a-sql-server-cluster-for-the-site-database"></a>사이트 데이터베이스에 대해 SQL Server 클러스터 사용
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-SQL Server 클러스터를 사용하여 Configuration Manager 사이트 데이터베이스를 호스트할 수 있습니다. 클러스터는 장애 조치(failover) 지원을 제공하고 사이트 데이터베이스의 안정성을 개선합니다. 그러나 추가적인 처리 또는 부하 분산 이점은 제공하지 않습니다. 사이트 서버가 사이트 데이터베이스에 연결하기 전에 SQL Server 클러스터의 활성 노드를 찾아야 하므로 성능이 저하될 수도 있습니다.  
+SQL Server 장애 조치 클러스터를 사용하여 Configuration Manager 사이트 데이터베이스를 호스트할 수 있습니다. 클러스터는 장애 조치(failover) 지원을 제공하고 사이트 데이터베이스의 안정성을 개선합니다. 그러나 추가적인 처리 또는 부하 분산 이점은 제공하지 않습니다. 또한 SQL Server 장애 조치 클러스터에서는 공유 스토리지를 사용하고 단일 실패 지점을 소개합니다. 사이트 서버가 사이트 데이터베이스에 연결하기 전에 SQL Server 클러스터의 활성 노드를 찾아야 하므로 성능이 저하될 수도 있습니다.  
 
 > [!IMPORTANT]  
 > SQL Server 클러스터를 올바르게 설정하려면 SQL Server 설명서 라이브러리에서 제공되는 설명서와 절차를 참조합니다.  

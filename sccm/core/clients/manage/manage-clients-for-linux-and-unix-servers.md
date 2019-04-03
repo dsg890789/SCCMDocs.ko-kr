@@ -1,8 +1,8 @@
 ---
 title: Linux 및 UNIX 클라이언트 관리
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 Linux 및 UNIX 서버의 클라이언트 관리
-ms.date: 04/23/2017
+description: Configuration Manager에서 Linux 및 UNIX 서버의 클라이언트 관리
+ms.date: 03/27/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,18 +11,23 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43c7d4768e7da6af69422cce772665250d39764f
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 32e7a643c98fc8a6bd4baccda703146816930367
+ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56138571"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58524050"
 ---
-# <a name="how-to-manage-clients-for-linux-and-unix-servers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Linux 및 UNIX 서버용 클라이언트를 관리하는 방법
+# <a name="how-to-manage-clients-for-linux-and-unix-servers-in-configuration-manager"></a>Configuration Manager에서 Linux 및 UNIX 서버용 클라이언트를 관리하는 방법
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager에서 Linux 및 UNIX 서버를 관리하는 경우 서버를 관리할 수 있도록 컬렉션, 유지 관리 기간 및 클라이언트 설정을 구성할 수 있습니다. 또한 Linux 및 UNIX용 Configuration Manager 클라이언트에 사용자 인터페이스가 없어도 클라이언트가 수동으로 클라이언트 정책을 강제로 폴링할 수 있습니다.
+> [!Important]  
+> 버전 1902부터 Configuration Manager는 Linux 또는 UNIX 클라이언트를 지원하지 않습니다. 
+> 
+> 따라서 Linux 서버를 관리하려면 Microsoft Azure 관리를 고려해야 합니다. Azure 솔루션은 대부분의 경우 Linux용 종단 간 패치 관리를 포함하여 Configuration Manager 기능을 능가하는 광범위한 Linux 지원을 제공합니다.
+
+Configuration Manager에서 Linux 및 UNIX 서버를 관리하는 경우 서버를 관리할 수 있도록 컬렉션, 유지 관리 기간 및 클라이언트 설정을 구성할 수 있습니다. 또한 Linux 및 UNIX용 Configuration Manager 클라이언트에 사용자 인터페이스가 없어도 클라이언트가 수동으로 클라이언트 정책을 강제로 폴링할 수 있습니다.
 
 ##  <a name="BKMK_CollectionsforLnU"></a> Linux 및 UNIX 서버 컬렉션  
  컬렉션을 사용하여 다른 클라이언트 형식을 관리하는 것과 같은 방식으로 Linux 및 UNIX 서버 그룹을 관리합니다. 컬렉션은 직접 멤버 자격 컬렉션 또는 쿼리 기반 컬렉션일 수 있습니다. 쿼리 기반 컬렉션은 클라이언트 운영 체제, 하드웨어 구성 또는 사이트 데이터베이스에 저장된 클라이언트의 다른 세부 정보를 식별합니다. 예를 들어 Linux 및 UNIX 서버를 포함하는 컬렉션을 사용하여 다음 설정을 관리할 수 있습니다.  
@@ -66,12 +71,12 @@ System Center Configuration Manager에서 Linux 및 UNIX 서버를 관리하는 
 >  Linux 및 UNIX용 Configuration Manager 클라이언트는 사용자 정책을 요청하거나 처리하지 않습니다.  
 
 ##  <a name="BKMK_ManageLinuxCerts"></a> Linux 및 UNIX 용 클라이언트에서 인증서를 관리 하는 방법  
- Linux 및 UNIX용 클라이언트를 설치한 후 **certutil** 도구를 사용하여 새 PKI 인증서로 클라이언트를 업데이트하고 새 CRL(인증서 해지 목록)을 가져옵니다. Linux 및 UNIX용 클라이언트를 설치할 때 이 도구는 **/opt/microsoft/configmgr/bin/certutil**에 배치됩니다. 
+ Linux 및 UNIX용 클라이언트를 설치한 후 **certutil** 도구를 사용하여 새 PKI 인증서로 클라이언트를 업데이트하고 새 CRL(인증서 해지 목록)을 가져옵니다. Linux 및 UNIX용 클라이언트를 설치할 때 이 도구는 `/opt/microsoft/configmgr/bin/certutil`에 배치됩니다. 
 
  인증서를 관리하려면 각 클라이언트에서 다음 옵션 중 하나를 사용하여 certutil을 실행합니다.  
 
 |옵션|추가 정보|  
 |------------|----------------------|  
-|importPFX|클라이언트에서 현재 사용 중인 인증서를 대체할 인증서를 지정하려면 이 옵션을 사용합니다.<br /><br /> **-importPFX**를 사용하는 경우 **-password** 명령줄 매개 변수도 사용하여 PKCS#12 파일과 관련된 암호를 입력해야 합니다.<br /><br /> **-rootcerts** 를 사용하여 추가 루트 인증서 요구 사항을 지정합니다.<br /><br /> 예: **certutil -importPFX &lt;PKCS#12 인증서 경로> -password &lt;인증서 암호\> [-rootcerts &lt;쉼표로 구분된 인증서 목록>]**|  
-|-importsitecert|관리 서버의 사이트 서버 서명 인증서를 업데이트하려면 이 옵션을 사용합니다.<br /><br /> 예: **certutil importsitecert &lt;DER 인증서 경로\>**|  
-|-importcrl|클라이언트에서 하나 이상의 CRL 파일 경로로 CRL을 업데이트하려면 이 옵션을 사용합니다.<br /><br /> 예: **certutil importcrl &lt;쉼표로 구분된 CRL 파일 경로\>**|  
+|`importPFX`|클라이언트에서 현재 사용 중인 인증서를 대체할 인증서를 지정하려면 이 옵션을 사용합니다.<br /><br /> `-importPFX`를 사용하는 경우 `-password` 명령줄 매개 변수도 사용하여 PKCS#12 파일과 관련된 암호를 입력해야 합니다.<br /><br /> `-rootcerts`를 사용하여 추가 루트 인증서 요구 사항을 지정합니다.<br /><br /> 예: `certutil -importPFX <path to the PKCS#12 certificate> -password <certificate password> [-rootcerts <comma-separated list of certificates>]`|  
+|`importsitecert`|관리 서버의 사이트 서버 서명 인증서를 업데이트하려면 이 옵션을 사용합니다.<br /><br /> 예: `certutil -importsitecert <path to the DER certificate>`|  
+|`importcrl`|클라이언트에서 하나 이상의 CRL 파일 경로로 CRL을 업데이트하려면 이 옵션을 사용합니다.<br /><br /> 예: `certutil -importcrl <comma separated CRL file paths>`|  

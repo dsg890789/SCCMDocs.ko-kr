@@ -1,8 +1,8 @@
 ---
 title: Linux 및 UNIX 클라이언트 업그레이드
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 Linux 또는 UNIX 서버의 클라이언트 업그레이드
-ms.date: 04/23/2017
+description: Configuration Manager에서 Linux 또는 UNIX 서버의 클라이언트를 업그레이드합니다.
+ms.date: 03/27/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,16 +11,21 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c71d58b247620be08dfbd1244deda5e513890376
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 987014084626e13b09a3c39fe6eff08ecc8fbe6b
+ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56141581"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58523999"
 ---
-# <a name="how-to-upgrade-clients-for-linux-and-unix-servers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Linux 및 UNIX 서버용 클라이언트를 업그레이드하는 방법
+# <a name="how-to-upgrade-clients-for-linux-and-unix-servers-in-configuration-manager"></a>Configuration Manager에서 Linux 및 UNIX 서버용 클라이언트를 업그레이드하는 방법
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
+
+> [!Important]  
+> 버전 1902부터 Configuration Manager는 Linux 또는 UNIX 클라이언트를 지원하지 않습니다. 
+> 
+> 따라서 Linux 서버를 관리하려면 Microsoft Azure 관리를 고려해야 합니다. Azure 솔루션은 대부분의 경우 Linux용 종단 간 패치 관리를 포함하여 Configuration Manager 기능을 능가하는 광범위한 Linux 지원을 제공합니다.
 
 현재 클라이언트를 먼저 제거하지 않고 컴퓨터의 Linux 및 UNIX용 클라이언트 버전을 최신 클라이언트 버전으로 업그레이드할 수 있습니다. 이렇게 하려면 **-keepdb** 명령줄 속성을 사용하여 컴퓨터에 새 클라이언트 설치 패키지를 설치합니다. Linux 및 UNIX용 클라이언트를 설치하면 기존 클라이언트 데이터를 새 클라이언트 파일로 덮어씁니다. 그러나 **–keepdb** 명령줄 속성을 사용하면 설치 프로세스에서 클라이언트 고유 식별자(GUID), 정보의 로컬 데이터베이스 및 인증서 저장소가 유지되고 새 클라이언트 설치에 사용됩니다.  
 

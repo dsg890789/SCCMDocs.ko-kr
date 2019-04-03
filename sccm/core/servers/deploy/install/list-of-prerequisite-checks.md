@@ -2,7 +2,7 @@
 title: 필수 구성 요소 확인
 titleSuffix: Configuration Manager
 description: 특정 필수 구성 요소의 참조는 Configuration Manager 업데이트를 검사합니다.
-ms.date: 12/14/2018
+ms.date: 03/27/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6bea2d7fc41bdec96fbdfe3508d13eea0a59d514
-ms.sourcegitcommit: ceec0e20bf801071f2a05233f984cf17acc3fd29
+ms.openlocfilehash: 81689907f326399de704b075b8500b82803b4d3d
+ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56265039"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58524186"
 ---
 # <a name="list-of-prerequisite-checks-for-configuration-manager"></a>Configuration Manager의 필수 구성 요소 검사 목록
 
@@ -455,11 +455,11 @@ Configuration Manager에서 컴퓨터가 Windows 도메인의 멤버입니다.
 사이트 서버를 설치하려면 15GB 이상의 사용 가능한 디스크 공간이 있어야 합니다. SMS 공급자를 동일한 서버에 설치하는 경우 1GB의 사용 가능한 공간이 추가로 필요합니다.
 
 #### <a name="pending-system-restart"></a>시스템 다시 시작 보류 중 
-*적용 대상: 중앙 관리 사이트, 주 사이트, 보조 사이트, Configuration Manager 콘솔, SMS 공급자, SQL Server, 관리 지점, 배포 지점*
+*적용 대상: 중앙 관리 사이트, 주 사이트, 보조 사이트*
 
 설치 프로그램을 실행하기 전에 다른 프로그램에서 서버를 다시 시작해야 합니다.
 
-1810 버전부터 이 검사는 더 탄력적입니다. 컴퓨터에서 다시 시작 보류 중 상태인지 확인하려면 다음 레지스트리 위치를 검사합니다. <!--SCCMDocs-pr issue 3010-->  
+1810 버전부터 이 검사는 더 탄력적입니다. 컴퓨터가 다시 시작 보류 중 상태인지 확인하기 위해 다음 레지스트리 위치가 검사됩니다.<!--SCCMDocs-pr issue 3010-->  
 
 - `HKLM:Software\Microsoft\Windows\CurrentVersion\Component Based Servicing\RebootPending`  
 - `HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\RebootRequired`  
@@ -514,6 +514,18 @@ Configuration Manager에서 컴퓨터가 Windows 도메인의 멤버입니다.
 *적용 대상: 주 사이트*
 
 디스크 드라이브가 NTFS 파일 시스템으로 포맷됩니다. 보안 수준을 높이려면 NTFS 파일 시스템으로 포맷된 디스크 드라이브에 사이트 서버 구성 요소를 설치합니다.
+
+#### <a name="pending-system-restart-on-the-remote-sql-server"></a>원격 SQL Server에서 시스템 다시 시작 보류 중
+*적용 대상: 버전 1902 이상, 원격 SQL Server*
+
+설치 프로그램을 실행하기 전에 다른 프로그램에서 서버를 다시 시작해야 합니다.
+
+컴퓨터가 다시 시작 보류 중 상태인지 확인하기 위해 다음 레지스트리 위치가 검사됩니다.<!--SCCMDocs-pr issue 3377-->  
+
+- `HKLM:Software\Microsoft\Windows\CurrentVersion\Component Based Servicing\RebootPending`  
+- `HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\RebootRequired`  
+- `HKLM:SYSTEM\CurrentControlSet\Control\Session Manager, PendingFileRenameOperations`  
+- `HKLM:Software\Microsoft\ServerManager, CurrentRebootAttempts`  
 
 #### <a name="schema-extensions"></a>스키마 확장 
 *적용 대상: 중앙 관리 사이트, 주 사이트*

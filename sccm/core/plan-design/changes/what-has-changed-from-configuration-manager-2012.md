@@ -1,7 +1,7 @@
 ---
 title: Configuration Manager 2012에서 변경된 내용
 description: System Center Configuration Manger 및 System Center 2012 Configuration Manager의 변경 내용과 새로운 기능을 확인합니다.
-ms.date: 03/22/2018
+ms.date: 03/27/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd275406a95507441e6b60167c7658a7c5dfccf9
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 05304b1cd7da4878bc06b5214b95e3a6a6c26895
+ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56136367"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58524118"
 ---
 # <a name="whats-changed-in-system-center-configuration-manager-from-system-center-2012-configuration-manager"></a>System Center 2012 Configuration Manager에서 변경된 System Center Configuration Manager의 기능
 
@@ -29,9 +29,9 @@ System Center Configuration Manager:
 
 - Configuration Manager 2007, System Center 2012 Configuration Manager 등의 이전 버전과 달리 제품 이름에 연도나 제품 식별자를 사용하지 않습니다.  
 
-- 업데이트 버전이라고도 하는 증분식 제품 내 업데이트를 지원합니다. 초기 릴리스는 버전 1511입니다. 후속 버전은 버전 1710과 같이 콘솔 내 업데이트로 1년에 여러 번 출시됩니다.  
+- 업데이트 버전이라고도 하는 증분식 제품 내 업데이트를 지원합니다. 초기 릴리스는 버전 1511입니다. 후속 버전은 버전 1810과 같이 콘솔 내 업데이트로 1년에 여러 번 출시됩니다.  
 
-- 기준선 버전을 사용하여 설치됩니다. 1511이 원래 기준선 버전이지만 시간이 지나면서 1802 등의 새 기준선 버전이 릴리스됩니다. 기준선 버전을 사용하여 새 System Center Configuration Manager 사이트 및 계층 구조를 설치하거나 Configuration Manager 2012의 지원되는 버전에서 업그레이드할 수 있습니다.  
+- 기준선 버전을 사용하여 설치됩니다. 1511이 원래 기준선 버전이지만 시간이 지나면서 1902 등의 새 기준선 버전이 릴리스됩니다. 기준선 버전을 사용하여 새 System Center Configuration Manager 사이트 및 계층 구조를 설치하거나 Configuration Manager 2012의 지원되는 버전에서 업그레이드할 수 있습니다.  
 
 
 
@@ -39,9 +39,9 @@ System Center Configuration Manager:
 
 System Center Configuration Manager는 권장 업데이트를 손쉽게 찾아서 설치할 수 있도록 하는 **업데이트 및 서비스**라는 콘솔 내 서비스 메서드를 사용합니다.  
 
-일부 버전은 기존 사이트에 대한 업데이트로만 사용할 수 있으며(Configuration Manager 콘솔 내에서) 새 Configuration Manager 사이트를 설치하는 데 사용할 수 없습니다. 예를 들어 1710 업데이트는 Configuration Manager 콘솔 내에서만 사용할 수 있습니다. System Center Configuration Manager 버전을 이미 실행하는 사이트를 업데이트하는 데 사용됩니다.
+일부 버전은 기존 사이트에 대한 업데이트로만 사용할 수 있으며(Configuration Manager 콘솔 내에서) 새 Configuration Manager 사이트를 설치하는 데 사용할 수 없습니다. 예를 들어 1810 업데이트는 Configuration Manager 콘솔 내에서만 사용할 수 있습니다. System Center Configuration Manager 버전을 이미 실행하는 사이트를 업데이트하는 데 사용됩니다.
 
-또한 업데이트 버전이 주기적으로 새로운 기준선 버전(예: 업데이트 1802)으로 릴리스됩니다. 이런 업데이트는 기존 기준선 버전(예: 1511)으로 시작하여 최신 버전으로 업그레이드할 필요 없이 새로운 계층 구조를 설치하는 데 사용할 수 있습니다.
+또한 업데이트 버전이 주기적으로 새로운 기준선 버전(예: 업데이트 1902)으로 릴리스됩니다. 이런 업데이트는 기존 기준선 버전(예: 1802)으로 시작하여 최신 버전으로 업그레이드할 필요 없이 새로운 계층 구조를 설치하는 데 사용할 수 있습니다.
 
 
 업데이트 사용 방법에 대한 자세한 내용은 [Configuration Manager용 업데이트](/sccm/core/servers/manage/updates)를 참조하세요.  

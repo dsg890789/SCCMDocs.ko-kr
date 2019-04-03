@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 472cf012805700e1ec2de2f3c83a0ef63e10183b
-ms.sourcegitcommit: 5f17355f954b9d9e10325c0e9854a9d582dec777
+ms.openlocfilehash: e76dc5892ad34d72bfee3cd4aea0fa660e34855d
+ms.sourcegitcommit: 9aebc20b25cdef0af908918ccfd791f3264a5d94
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58329603"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58477537"
 ---
 # <a name="about-client-settings-in-configuration-manager"></a>Configuration Manager의 클라이언트 설정 정보
 
@@ -460,6 +460,10 @@ MIF 파일이 하드웨어 인벤토리를 통해 수집되려면 클라이언�
 ### <a name="allow-users-to-exclude-their-device-from-power-management"></a>사용자가 전원 관리에서 디바이스를 제외할 수 있도록 허용
 
 소프트웨어 센터 사용자가 자신의 컴퓨터를 구성된 전원 관리 설정에서 제외할 수 있도록 허용하려면 **예**를 선택합니다.  
+
+### <a name="allow-network-wake-up"></a>네트워크 절전 모드 해제 허용
+
+1810에서 추가되었습니다. **사용**으로 설정되어 있으면, 네트워크 어댑터가 디바이스의 절전 모드를 해제할 수 있도록 네트워크 어댑터의 전원 설정을 구성합니다. **사용 안 함**으로 설정되어 있으면, 네트워크 어댑터의 전원 설정이 네트워크 어댑터가 디바이스의 절전 모드를 해제할 수 없도록 구성되어 있습니다.
 
 ### <a name="enable-wake-up-proxy"></a>절전 모드 해제 프록시 사용
 

@@ -1,8 +1,8 @@
 ---
-title: 'Linux/UNIX 클라이언트 모니터링 '
+title: Linux/UNIX 클라이언트 모니터링
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 Linux 및 UNIX 서버의 클라이언트 모니터링
-ms.date: 08/04/2017
+description: Configuration Manager에서 Linux 및 UNIX 서버의 클라이언트 모니터링
+ms.date: 03/27/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,18 +11,23 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e8e10b4297e1367f6835e61ced77f2a1154319b
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 47a85ec7dea72f08a0ec48ebb151566b8563ba9a
+ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56127935"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58523693"
 ---
-# <a name="how-to-monitor-clients-for-linux-and-unix-servers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Linux 및 UNIX 서버용 클라이언트를 모니터링하는 방법
+# <a name="how-to-monitor-clients-for-linux-and-unix-servers-in-configuration-manager"></a>Configuration Manager에서 Linux 및 UNIX 서버용 클라이언트를 모니터링하는 방법
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Windows 기반 클라이언트에서 정보를 볼 때와 동일한 방법을 사용하여 System Center Configuration Manager 콘솔에서 Linux 및 UNIX 서버의 정보를 볼 수 있습니다.  
+> [!Important]  
+> 버전 1902부터 Configuration Manager는 Linux 또는 UNIX 클라이언트를 지원하지 않습니다. 
+> 
+> 따라서 Linux 서버를 관리하려면 Microsoft Azure 관리를 고려해야 합니다. Azure 솔루션은 대부분의 경우 Linux용 종단 간 패치 관리를 포함하여 Configuration Manager 기능을 능가하는 광범위한 Linux 지원을 제공합니다.
+
+Windows 기반 클라이언트에서 정보를 볼 때와 동일한 방법을 사용하여 Configuration Manager 콘솔에서 Linux 및 UNIX 서버의 정보를 볼 수 있습니다.  
 
  볼 수 있는 정보는 다음과 같습니다.  
 
