@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 063502ae7b09fcdcd7ae1b5c463da4b616829804
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 1280e7cbd1c2d8e7524b296e48d0b1bec426d9ed
+ms.sourcegitcommit: da753df27d3909265ca45d3e79091f1e98758d16
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56755165"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "58913628"
 ---
 # <a name="how-to-connect-configuration-manager-with-desktop-analytics"></a>데스크톱 Analytics를 사용 하 여 Configuration Manager를 연결 하는 방법 
 
@@ -31,7 +31,7 @@ ms.locfileid: "56755165"
 
 먼저 Configuration Manager 사이트를 하나 이상 하 게 실행 중인지 확인 1810 버전입니다. 자세한 내용은 [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates)를 참조하세요.
 
-데스크톱 Analytics와의 통합을 지원 하기 위해 버전 1810 업데이트 롤업 (4486457)를 설치 해야 합니다. 이 업데이트에 대 한 자세한 내용은 참조 하세요. [Configuration Manager 현재 분기, 버전 1810 용 업데이트 롤업](https://support.microsoft.com/help/4486457)합니다.
+1810 버전을 설치 해야 데스크톱 Analytics와의 통합을 지원 하도록 업데이트 롤업 2 (4488598). 이 업데이트에 대 한 자세한 내용은 참조 하세요. [업데이트 롤업 2: Configuration Manager 현재 분기, 버전 1810](https://support.microsoft.com/help/4488598)합니다.
 
 1. 버전 1810에 대한 업데이트 롤업을 사용하여 사이트를 업데이트합니다. 자세한 내용은 [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates)를 참조하세요.  
 

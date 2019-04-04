@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8602db7ece8d786598eb419eb855f1c77cff35ca
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 4105a8a81ab3f09dee9cf3ca5a2462ed2bb4183a
+ms.sourcegitcommit: da753df27d3909265ca45d3e79091f1e98758d16
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56755335"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "58913594"
 ---
 # <a name="what-is-desktop-analytics"></a>데스크톱 Analytics 란?
 
@@ -74,7 +74,7 @@ ms.locfileid: "56755335"
 
     - **회사 관리자** Azure에서 사용 권한  
 
-- Configuration Manager 1810 업데이트 롤업 4486457 이상 버전. 자세한 내용은 [Configuration Manager 업데이트](/sccm/desktop-analytics/connect-configmgr#bkmk_hotfix)합니다.  
+- Configuration Manager 1810 업데이트 롤업 4488598 이상 버전. 자세한 내용은 [Configuration Manager 업데이트](/sccm/desktop-analytics/connect-configmgr#bkmk_hotfix)합니다.  
 
     - **전체 관리자** Configuration Manager의 역할  
 

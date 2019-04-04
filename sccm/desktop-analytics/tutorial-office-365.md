@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f05b1115338f9808a950bcd1646d8035f3a563b
-ms.sourcegitcommit: 4441b3035222cfaf7442416873ed824ac7d852c5
+ms.openlocfilehash: 12f19fe6f52d1ceb4b47b080e45030df898a332a
+ms.sourcegitcommit: da753df27d3909265ca45d3e79091f1e98758d16
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356362"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "58913560"
 ---
 # <a name="tutorial-deploy-office-365-to-pilot"></a>자습서: Office 365를 파일럿 배포 
 
@@ -46,7 +46,7 @@ Azure 구독이 없으면 만듭니다는 [무료 계정](https://azure.microsof
 
 - 활성 Azure 구독을 사용 하 여 **회사 관리자** 권한  
 
-- Configuration Manager 1810 버전 4486457 이상을 사용 하 여 업데이트 롤업 **전체 관리자** 역할  
+- Configuration Manager 1810 업데이트 롤업 4488598를 사용 하 여 이후 버전을 사용 하 여 **전체 관리자** 역할  
 
 - 다음 구성이 포함 된 하나 이상의 Windows 10 장치:  
 
