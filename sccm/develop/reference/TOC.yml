@@ -67,19 +67,19 @@ items:
   - name: ICcmAlternateDowloadProvider 인터페이스
     href: core/servers/configure/iccmalternatedowloadprovider-interface.md
     items:
-    - name: 'ICcmAlternatedownloadProvider: CancelJob 메서드'
+    - name: ICcmAlternatedownloadProvider CancelJob 메서드
       href: core/servers/configure/iccmalternatedownloadprovider---canceljob-method.md
-    - name: 'ICcmAlternatedownloadProvider: DownloadContent 메서드'
+    - name: ICcmAlternatedownloadProvider DownloadContent 메서드
       href: core/servers/configure/iccmalternatedownloadprovider---downloadcontent-method.md
-    - name: 'ICcmAlternatedownloadProvider: ModifyJobPriority 메서드'
+    - name: ICcmAlternatedownloadProvider ModifyJobPriority 메서드
       href: core/servers/configure/iccmalternatedownloadprovider---modifyjobpriority-method.md
-    - name: 'ICcmAlternatedownloadProvider: ModifyJobSource 메서드'
+    - name: ICcmAlternatedownloadProvider ModifyJobSource 메서드
       href: core/servers/configure/iccmalternatedownloadprovider---modifyjobsource-method.md
-    - name: 'ICcmAlternatedownloadProvider: ModifyJobTimeout 메서드'
+    - name: ICcmAlternatedownloadProvider ModifyJobTimeout 메서드
       href: core/servers/configure/iccmalternatedownloadprovider---modifyjobtimeout-method.md
-    - name: 'ICcmAlternatedownloadProvider: Resume 메서드'
+    - name: ICcmAlternatedownloadProvider Resume 메서드
       href: core/servers/configure/iccmalternatedownloadprovider---resume-method.md
-    - name: 'ICcmAlternatedownloadProvider: Suspend 메서드'
+    - name: ICcmAlternatedownloadProvider Suspend 메서드
       href: core/servers/configure/iccmalternatedownloadprovider---suspend-method.md
   - name: ICcmContentTransferManager4 인터페이스
     href: core/servers/configure/iccmcontenttransfermanager4-interface.md
@@ -260,22 +260,22 @@ items:
     - name: IAppContentExt 인터페이스
       href: core/clients/client-classes/iappcontentext-interface.md
       items:
-      - name: IAppContentExt::GetExcludedFileList
+      - name: IAppContentExt GetExcludedFileList
         href: core/clients/client-classes/iappcontentext--getexcludedfilelist.md
     - name: IAppManagementHandler 인터페이스
       href: core/clients/client-classes/iappmanagementhandler-interface.md
       items:
-      - name: IAppManagementHandler::CheckReconnectData 메서드
+      - name: IAppManagementHandler CheckReconnectData 메서드
         href: core/clients/client-classes/iappmanagementhandler--checkreconnectdata-method.md
-      - name: IAppManagementHandler::CompleteEnforcement 메서드
+      - name: IAppManagementHandler CompleteEnforcement 메서드
         href: core/clients/client-classes/iappmanagementhandler--completeenforcement-method.md
-      - name: IAppManagementHandler::DiscoverApp 메서드
+      - name: IAppManagementHandler DiscoverApp 메서드
         href: core/clients/client-classes/iappmanagementhandler--discoverapp-method.md
-      - name: IAppManagementHandler::EnforceApp 메서드
+      - name: IAppManagementHandler EnforceApp 메서드
         href: core/clients/client-classes/iappmanagementhandler--enforceapp-method.md
-      - name: IAppManagementHandler::EnumerateApps 메서드
+      - name: IAppManagementHandler EnumerateApps 메서드
         href: core/clients/client-classes/iappmanagementhandler--enumerateapps-method.md
-      - name: IAppManagementHandler::GetPendingComponentList 메서드
+      - name: IAppManagementHandler GetPendingComponentList 메서드
         href: core/clients/client-classes/iappmanagementhandler--getpendingcomponentlist-method.md
     - name: IAppManagementTypes 인터페이스
       href: core/clients/client-classes/iappmanagementtypes-interface.md
@@ -383,53 +383,53 @@ items:
     - name: ICIINFO 인터페이스
       href: core/clients/client-classes/iciinfo-interface.md
       items:
-      - name: ICIINFO::GetCategory 메서드
+      - name: ICIINFO GetCategory 메서드
         href: core/clients/client-classes/iciinfo--getcategory-method.md
-      - name: ICIINFO::GetCategoryCount 메서드
+      - name: ICIINFO GetCategoryCount 메서드
         href: core/clients/client-classes/iciinfo--getcategorycount-method.md
-      - name: ICIINFO::GetCIPresence 메서드
+      - name: ICIINFO GetCIPresence 메서드
         href: core/clients/client-classes/iciinfo--getcipresence-method.md
-      - name: ICIINFO::GetContextInfo 메서드
+      - name: ICIINFO GetContextInfo 메서드
         href: core/clients/client-classes/iciinfo--getcontextinfo-method.md
-      - name: ICIINFO::GetDependantPackages 메서드
+      - name: ICIINFO GetDependantPackages 메서드
         href: core/clients/client-classes/iciinfo--getdependantpackages-method.md
-      - name: ICIINFO::GetDetailedComplianceInfo 메서드
+      - name: ICIINFO GetDetailedComplianceInfo 메서드
         href: core/clients/client-classes/iciinfo--getdetailedcomplianceinfo-method.md
-      - name: ICIINFO::GetEvalState 메서드
+      - name: ICIINFO GetEvalState 메서드
         href: core/clients/client-classes/iciinfo--getevalstate-method.md
-      - name: ICIINFO::GetId 메서드
+      - name: ICIINFO GetId 메서드
         href: core/clients/client-classes/iciinfo--getid-method.md
-      - name: ICIINFO::GetJobState 메서드
+      - name: ICIINFO GetJobState 메서드
         href: core/clients/client-classes/iciinfo--getjobstate-method.md
-      - name: ICIINFO::GetLastEvalTime 메서드
+      - name: ICIINFO GetLastEvalTime 메서드
         href: core/clients/client-classes/iciinfo--getlastevaltime-method.md
-      - name: ICIINFO::GetProperty 메서드
+      - name: ICIINFO GetProperty 메서드
         href: core/clients/client-classes/iciinfo--getproperty-method.md
-      - name: ICIINFO::GetSdmTypeName 메서드
+      - name: ICIINFO GetSdmTypeName 메서드
         href: core/clients/client-classes/iciinfo--getsdmtypename-method.md
-      - name: ICIINFO::GetVersion 메서드
+      - name: ICIINFO GetVersion 메서드
         href: core/clients/client-classes/iciinfo--getversion-method.md
     - name: IDCMAgentCallback 인터페이스
       href: core/clients/client-classes/idcmagentcallback-interface.md
       items:
-      - name: IDCMAgentCallback::NotifyComplete 메서드
+      - name: IDCMAgentCallback NotifyComplete 메서드
         href: core/clients/client-classes/idcmagentcallback--notifycomplete-method.md
-      - name: IDCMAgentCallback::NotifyError 메서드
+      - name: IDCMAgentCallback NotifyError 메서드
         href: core/clients/client-classes/idcmagentcallback--notifyerror-method.md
-      - name: IDCMAgentCallback::NotifyProgress 메서드
+      - name: IDCMAgentCallback NotifyProgress 메서드
         href: core/clients/client-classes/idcmagentcallback--notifyprogress-method.md
     - name: IDCMSDK 인터페이스
       href: core/clients/client-classes/idcmsdk-interface.md
       items:
-      - name: IDCMSDK::EvaluateBaseline 메서드
+      - name: IDCMSDK EvaluateBaseline 메서드
         href: core/clients/client-classes/idcmsdk--evaluatebaseline-method.md
-      - name: IDCMSDK::GetAssignedBaselines 메서드
+      - name: IDCMSDK GetAssignedBaselines 메서드
         href: core/clients/client-classes/idcmsdk--getassignedbaselines-method.md
-      - name: IDCMSDK::GetBaselineComplianceReport 메서드
+      - name: IDCMSDK GetBaselineComplianceReport 메서드
         href: core/clients/client-classes/idcmsdk--getbaselinecompliancereport-method.md
-      - name: IDCMSDK::GetBaselineInfo 메서드
+      - name: IDCMSDK GetBaselineInfo 메서드
         href: core/clients/client-classes/idcmsdk--getbaselineinfo-method.md
-      - name: IDCMSDK::SetEvaluationCallback 메서드
+      - name: IDCMSDK SetEvaluationCallback 메서드
         href: core/clients/client-classes/idcmsdk--setevaluationcallback-method.md
     - name: CIDetectInfo 구조
       href: core/clients/client-classes/cidetectinfo-structure.md
@@ -482,28 +482,40 @@ items:
       - name: IProgressUI 인터페이스
         href: core/clients/client-classes/iprogressui-interface.md
         items:
-        - name: IProgressUI::ShowActionProgress 메서드
+        - name: IProgressUI CloseProgressDialog 메서드
+          href: core/clients/client-classes/iprogressui--closeprogressdialog-method.md
+        - name: IProgressUI ShowActionProgress 메서드
           href: core/clients/client-classes/iprogressui--showactionprogress-method.md
+        - name: IProgressUI ShowErrorDialog 메서드
+          href: core/clients/client-classes/iprogressui--showerrordialog-method.md
+        - name: IProgressUI ShowMessage 메서드
+          href: core/clients/client-classes/iprogressui--showmessage-method.md
+        - name: IProgressUI ShowRebootDialog 메서드
+          href: core/clients/client-classes/iprogressui--showrebootdialog-method.md
+        - name: IProgressUI ShowSwapMediaDialog 메서드
+          href: core/clients/client-classes/iprogressui--showswapmediadialog-method.md
+        - name: IProgressUI ShowTSProgress 메서드
+          href: core/clients/client-classes/iprogressui--showtsprogress-method.md
     - name: PxeAuthClass 클라이언트 COM 자동화 클래스
       href: core/clients/client-classes/pxeauthclass-client-com-automation-class.md
       items:
       - name: IPxeAuthClass 인터페이스
         href: core/clients/client-classes/ipxeauthclass-interface.md
         items:
-        - name: IPxeAuthClass::CreateIdentity 메서드
+        - name: IPxeAuthClass CreateIdentity 메서드
           href: core/clients/client-classes/ipxeauthclass--createidentity-method.md
-        - name: IPxeAuthClass::ReadIdentity 메서드
+        - name: IPxeAuthClass ReadIdentity 메서드
           href: core/clients/client-classes/ipxeauthclass--readidentity-method.md
     - name: ITSEnvClass 인터페이스
       href: core/clients/client-classes/itsenvclass-interface.md
       items:
-      - name: ITSEnvClass::Clear 메서드
+      - name: ITSEnvClass Clear 메서드
         href: core/clients/client-classes/itsenvclass--clear-method.md
-      - name: ITSEnvClass::Create 메서드
+      - name: ITSEnvClass Create 메서드
         href: core/clients/client-classes/itsenvclass--create-method.md
-      - name: ITSEnvClass::GetVariables 메서드
+      - name: ITSEnvClass GetVariables 메서드
         href: core/clients/client-classes/itsenvclass--getvariables-method.md
-      - name: ITSEnvClass::Value 속성
+      - name: ITSEnvClass Value 속성
         href: core/clients/client-classes/itsenvclass--value-property.md
   - name: 대역 외 관리 클라이언트 WMI 클래스
     href: core/clients/client-classes/out-of-band-management-client-wmi-classes.md
@@ -1476,37 +1488,37 @@ items:
     - name: ITsMediaClass 인터페이스
       href: misc/itsmediaclass-interface.md
       items:
-      - name: ITsMediaClass::Cancel 메서드
+      - name: ITsMediaClass Cancel 메서드
         href: misc/itsmediaclass--cancel-method.md
-      - name: ITsMediaClass::ConnectionOptions 속성
+      - name: ITsMediaClass ConnectionOptions 속성
         href: misc/itsmediaclass--connectionoptions-property.md
-      - name: ITsMediaClass::CreateBootMedia 메서드
+      - name: ITsMediaClass CreateBootMedia 메서드
         href: misc/itsmediaclass--createbootmedia-method.md
-      - name: ITsMediaClass::CreateCaptureMedia 메서드
+      - name: ITsMediaClass CreateCaptureMedia 메서드
         href: misc/itsmediaclass--createcapturemedia-method.md
-      - name: ITsMediaClass::CreateStandaloneMedia 메서드
+      - name: ITsMediaClass CreateStandaloneMedia 메서드
         href: misc/itsmediaclass--createstandalonemedia-method.md
-      - name: ITsMediaClass::CurrentStep 속성
+      - name: ITsMediaClass CurrentStep 속성
         href: misc/itsmediaclass--currentstep-property.md
-      - name: ITsMediaClass::DistributionPoints 속성
+      - name: ITsMediaClass DistributionPoints 속성
         href: misc/itsmediaclass--distributionpoints-property.md
-      - name: ITsMediaClass::ErrorDetail 속성
+      - name: ITsMediaClass ErrorDetail 속성
         href: misc/itsmediaclass--errordetail-property.md
-      - name: ITsMediaClass::ExitCode 속성
+      - name: ITsMediaClass ExitCode 속성
         href: misc/itsmediaclass--exitcode-property.md
-      - name: ITsMediaClass::MediaLabel 속성
+      - name: ITsMediaClass MediaLabel 속성
         href: misc/itsmediaclass--medialabel-property.md
-      - name: ITsMediaClass::NumSteps 속성
+      - name: ITsMediaClass NumSteps 속성
         href: misc/itsmediaclass--numsteps-property.md
-      - name: ITsMediaClass::ProviderName 속성
+      - name: ITsMediaClass ProviderName 속성
         href: misc/itsmediaclass--providername-property.md
-      - name: ITsMediaClass::SiteCode 속성
+      - name: ITsMediaClass SiteCode 속성
         href: misc/itsmediaclass--sitecode-property.md
-      - name: ITsMediaClass::Status 속성
+      - name: ITsMediaClass Status 속성
         href: misc/itsmediaclass--status-property.md
-      - name: ITsMediaClass::StepInfo 속성
+      - name: ITsMediaClass StepInfo 속성
         href: misc/itsmediaclass--stepinfo-property.md
-      - name: ITsMediaClass::StepProgress 속성
+      - name: ITsMediaClass StepProgress 속성
         href: misc/itsmediaclass--stepprogress-property.md
 - name: 운영 체제 배포 클래스
   href: osd/operating-system-deployment-classes.md
@@ -2238,6 +2250,8 @@ items:
       href: core/servers/configure/importglobaluseraccountex-method-in-class-sms_site.md
     - name: 클래스 SMS_Site의 ImportMachineEntry 메서드
       href: core/servers/configure/importmachineentry-method-in-class-sms_site.md
+    - name: 클래스 SMS_Site의 ImportMachineEntryToMultipleCollections 메서드
+      href: core/servers/configure/importmachineentrytomultiplecollections-method-in-class-sms_site.md
     - name: 클래스 SMS_Site의 IsUsedCert 메서드
       href: core/servers/configure/isusedcert-method-in-class-sms_site.md
     - name: 클래스 SMS_Site의 RedistributeAutoUpgradeClientContent 메서드
@@ -2619,15 +2633,15 @@ items:
     - name: SMSEvent 클래스
       href: core/servers/manage/smsevent-class.md
       items:
-      - name: ICCMEvent::EventType 속성
+      - name: ICCMEvent EventType 속성
         href: core/servers/manage/iccmevent--eventtype-property.md
-      - name: ICCMEvent::RawEvent 속성
+      - name: ICCMEvent RawEvent 속성
         href: core/servers/manage/iccmevent--rawevent-property.md
-      - name: ICCMEvent::SetProperty 메서드
+      - name: ICCMEvent SetProperty 메서드
         href: core/servers/manage/iccmevent--setproperty-method.md
-      - name: ICCMEvent::Submit 메서드
+      - name: ICCMEvent Submit 메서드
         href: core/servers/manage/iccmevent--submit-method.md
-      - name: ICCMEvent::SubmitPending 메서드
+      - name: ICCMEvent SubmitPending 메서드
         href: core/servers/manage/iccmevent--submitpending-method.md
   - name: 상태 메시지 유형
     href: core/servers/manage/status-message-types.md
@@ -2745,11 +2759,9 @@ items:
     href: misc/sms_windowsservicinglocalizednames-server-wmi-class.md
   - name: SMS_WindowsServicingStates 서버 WMI 클래스
     href: misc/sms_windowsservicingstates-server-wmi-class.md
-- name: Configuration Manager 관리 참조
-  href: https://msdn.microsoft.com/library/mt767606.aspx
-ms.openlocfilehash: ba172c1d11b9c3089e8cbeec1493cbeb0ebe4217
-ms.sourcegitcommit: 4f05517f7b284696a492a1b184cc5f25c5cda5e6
+ms.openlocfilehash: 19da531a2b9821b54ed03f93e495cdfbb1e84f86
+ms.sourcegitcommit: deb28cdc95a456d4a38499ef1bc71e765ef6dc13
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48891251"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58901539"
