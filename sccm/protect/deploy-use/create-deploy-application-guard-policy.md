@@ -11,16 +11,17 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fa50719107838ed2c5c277a45ead4a7d9be6192a
-ms.sourcegitcommit: dff462bd9830e5e66f519f3c948d5150c18e94ad
+ms.openlocfilehash: cf5345cd54882ae46171b7d3800e1ed818834ecb
+ms.sourcegitcommit: d584c126a0a5725567631b74ac1e01f63242a997
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58417035"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58861006"
 ---
 # <a name="create-and-deploy-windows-defender-application-guard-policy"></a>Windows Defender Application Guard 정책 만들기 및 배포 
 *적용 대상: System Center Configuration Manager(현재 분기)*
-<!-- 1351960 --> Configuration Manager 엔드포인트 보호를 사용하여 [Windows Defender Application Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-application-guard/wd-app-guard-overview) 정책을 만들고 배포할 수 있습니다. 이러한 정책은 운영 체제의 다른 부분에서 액세스할 수 없는 안전하게 격리된 컨테이너에서 신뢰할 수 없는 웹 사이트를 열어 사용자를 보호하는 데 도움이 됩니다.
+<!-- 1351960 -->  
+Configuration Manager 엔드포인트 보호를 사용하여 [Windows Defender Application Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-application-guard/wd-app-guard-overview) 정책을 만들고 배포할 수 있습니다. 이러한 정책은 운영 체제의 다른 부분에서 액세스할 수 없는 안전하게 격리된 컨테이너에서 신뢰할 수 없는 웹 사이트를 열어 사용자를 보호하는 데 도움이 됩니다.
 
 ## <a name="prerequisites"></a>필수 구성 요소
 

@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6bebf4065a4db1c45ee7eaa0a5b04b8d1533f29f
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: d857b0e9d280bfed0834a97760d4fd481f0398d7
+ms.sourcegitcommit: d138a6a9ccbb6a03dc378272cf6f81b98b940f1d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56755245"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59013410"
 ---
 # <a name="troubleshooting-desktop-analytics"></a>데스크톱 Analytics 문제 해결
 
@@ -137,7 +137,8 @@ Configuration Manager 클라이언트가 없는 이상 버전 1810 (5.0.8740).
 - [Office 진단 끝점 연결](#office-diagnostic-endpoint-connectivity)  
 
 #### <a name="appraiser-configuration"></a>평가자 구성
-<!--20,21--> 평가자는 해당 하는 Windows 구성 요소를 [호환성 업데이트](/sccm/desktop-analytics/enroll-devices#update-devices)합니다. 앱 및 최신 버전의 Windows 사용 하 여 호환성을 위해 장치에서 드라이버를 평가합니다. 
+<!--20,21-->
+평가자는 해당 하는 Windows 구성 요소를 [호환성 업데이트](/sccm/desktop-analytics/enroll-devices#update-devices)합니다. 앱 및 최신 버전의 Windows 사용 하 여 호환성을 위해 장치에서 드라이버를 평가합니다. 
 
 이 검사에 성공한 경우 평가자 구성 요소가 제대로 장치의 구성 되어 있습니다. 
 
@@ -155,7 +156,8 @@ Configuration Manager 클라이언트가 없는 이상 버전 1810 (5.0.8740).
 
 
 #### <a name="minimum-compatibility-update"></a>최소 호환성 업데이트
-<!--18,19,32--> 호환성 업데이트 (appraiser.dll)에 설치 또는 장치에서 만료 되지 않습니다. 분석 데스크톱 10.0.17763의 최소 요구 사항 보다 오래 된 것입니다. 
+<!--18,19,32-->
+호환성 업데이트 (appraiser.dll)에 설치 또는 장치에서 만료 되지 않습니다. 분석 데스크톱 10.0.17763의 최소 요구 사항 보다 오래 된 것입니다. 
 
 최신 호환성 업데이트를 설치 합니다. 자세한 내용은 [호환성 업데이트](/sccm/desktop-analytics/enroll-devices#bkmk_appraiser)합니다.
 
@@ -170,7 +172,8 @@ Configuration Manager 클라이언트가 없는 이상 버전 1810 (5.0.8740).
 
 #### <a name="appraiser-data-collection"></a>평가자 데이터 수집
 <!--Appraiser run status-->
-<!--22,33--> 이 속성 평가자 구성 요소를 실행 합니다. Windows에서 최신 결과 보여 줍니다. 
+<!--22,33-->
+이 속성 평가자 구성 요소를 실행 합니다. Windows에서 최신 결과 보여 줍니다. 
 
 그렇지 않은 경우 성공이 표시 될 수 있습니다 다음 오류 중 하나: 
 
@@ -212,7 +215,8 @@ Start-Service -Name dps
 
 #### <a name="census-data-collection"></a>인구 조사 데이터 수집
 <!-- Census run status -->
-<!--51,52--> 인구 조사는 장치를 인벤토리 하는 Windows 구성 요소입니다. 이 인벤토리 데이터는 장치 및 해당 구성을 이해 하려면 사용 됩니다. 
+<!--51,52-->
+인구 조사는 장치를 인벤토리 하는 Windows 구성 요소입니다. 이 인벤토리 데이터는 장치 및 해당 구성을 이해 하려면 사용 됩니다. 
 
 이 속성 인구 조사 구성 요소를 실행 합니다. Windows에서 최신 결과 보여 줍니다.
 
@@ -228,7 +232,8 @@ Start-Service -Name dps
 
 
 #### <a name="windows-diagnostic-endpoint-connectivity"></a>Windows 진단 끝점 연결
-<!--12,15--> 이 검사에 성공한 경우 장치는 연결 된 사용자 환경 및 원격 분석 끝점 (소용돌이)에 연결할 수 있습니다. 
+<!--12,15-->
+이 검사에 성공한 경우 장치는 연결 된 사용자 환경 및 원격 분석 끝점 (소용돌이)에 연결할 수 있습니다. 
 
 그렇지 않으면 다음 오류 중 하나가 표시 될 수 있습니다 것:  
 
@@ -275,7 +280,8 @@ DisableEnterpriseAuthProxy 설정은 Windows 7에 대 한 기본으로 사용 �
 
 
 #### <a name="commercial-id-configuration"></a>상용 ID 구성
-<!--9, 11, 53--> Microsoft은 Desktop Analytics 작업 영역에서 장치 정보를 매핑할 고유한 상업용 ID를 사용 합니다. 이 ID에 대 한 서비스 데스크톱 Analytics를 사용 하 여 Configuration Manager와 통합 하면 자동으로 쿼리 자동으로 configuration Manager 클라이언트를 대상 데스크톱 분석 설정 하려는이 ID를 적용 해야 합니다. 
+<!--9, 11, 53-->
+Microsoft은 Desktop Analytics 작업 영역에서 장치 정보를 매핑할 고유한 상업용 ID를 사용 합니다. 이 ID에 대 한 서비스 데스크톱 Analytics를 사용 하 여 Configuration Manager와 통합 하면 자동으로 쿼리 자동으로 configuration Manager 클라이언트를 대상 데스크톱 분석 설정 하려는이 ID를 적용 해야 합니다. 
 
 이 확인이 성공한 경우 다음 장치가 제대로 구성 되어 상업용 id
 
@@ -331,7 +337,8 @@ DisableEnterpriseAuthProxy 설정은 Windows 7에 대 한 기본으로 사용 �
 
 
 #### <a name="diagtrack-service-configuration"></a>DiagTrack 서비스 구성
-<!--44,45,50--> 이 검사에 성공한 경우 DiagTrack 구성 요소가 제대로 장치의 구성 되어 있습니다. 데스크톱 분석에 필요한 최소 버전은 10010586 (10.0.10586). 
+<!--44,45,50-->
+이 검사에 성공한 경우 DiagTrack 구성 요소가 제대로 장치의 구성 되어 있습니다. 데스크톱 분석에 필요한 최소 버전은 10010586 (10.0.10586). 
 
 그렇지 않으면 다음 오류 중 하나가 표시할 수 있습니다.
 
@@ -369,7 +376,8 @@ DisableEnterpriseAuthProxy 설정은 Windows 7에 대 한 기본으로 사용 �
 
 
 #### <a name="unique-device-identifier-retrieval"></a>고유한 장치 식별자 검색
-<!--54--> 데스크톱 Analytics 더 신뢰할 수 있는 장치 id에 대 한 Microsoft 계정 서비스를 사용합니다. 
+<!--54-->
+데스크톱 Analytics 더 신뢰할 수 있는 장치 id에 대 한 Microsoft 계정 서비스를 사용합니다. 
 
 있는지 확인 합니다 **Microsoft 계정 로그인 도우미** 서비스가 비활성화 되지 않습니다. 시작 유형 이어야 합니다 **수동 (트리거 시작)** 합니다.
 
@@ -377,7 +385,8 @@ DisableEnterpriseAuthProxy 설정은 Windows 7에 대 한 기본으로 사용 �
 
 
 #### <a name="windows-diagnostic-data-opt-in"></a>Windows 진단 데이터 옵트인
-<!--8,40,55,62--> 이 속성은 Windows 진단 데이터를 허용 하도록 올바르게 구성 되어 있는지 확인 합니다. 다음 레지스트리 키를 AllowTelemetry 값을 확인 합니다.
+<!--8,40,55,62-->
+이 속성은 Windows 진단 데이터를 허용 하도록 올바르게 구성 되어 있는지 확인 합니다. 다음 레지스트리 키를 AllowTelemetry 값을 확인 합니다.
 
 - `HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection`
 - `HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection`
@@ -418,6 +427,7 @@ Configuration Manager와 통합 하는 데스크톱 Analytics를 사용 하 여 
 | **M365ADeploymentPlanWorker.log** | 데스크톱 분석에서 계획 동기화를 배포 하는 방법은 클라우드 서비스를 온-프레미스 Configuration Manager |
 | **M365ADeviceHealthWorker.log** | 장치 상태에 대 한 정보는 Configuration Manager에서 Microsoft cloud에 업로드 |
 | **M365AUploadWorker.log** | 컬렉션 및 장치에 대 한 정보는 Configuration Manager에서 Microsoft cloud에 업로드 |
+| **SmsAdminUI.log** | Azure 클라우드 서비스를 구성 하는 등의 Configuration Manager 콘솔 작업에 대 한 정보  |
 
 
 ### <a name="configuration-manager-client"></a>Configuration Manager 클라이언트
@@ -426,14 +436,14 @@ Configuration Manager와 통합 하는 데스크톱 Analytics를 사용 하 여 
 
 | 로그 | Description |
 |---------|---------|
-| **M365Handler.log** | 데스크톱 분석 설정 정책에 대 한 정보 |
+| **M365AHandler.log** | 데스크톱 분석 설정 정책에 대 한 정보 |
 
 
 ### <a name="enable-verbose-logging"></a>자세한 정보 로깅 사용 
 
 1. 서비스 연결 지점에서 다음 레지스트리 키로 이동 합니다. `HKLM\Software\Microsoft\SMS\Tracing\SMS_SERVICE_CONNECTOR`  
 2. 설정 된 **LogLevel** 값 `0`  
-3. 사이트 데이터베이스에서 다음 SQL 명령을 실행 합니다.  
+3. (선택 사항) 사이트 데이터베이스에서 다음 SQL 명령을 실행 합니다.  
 
     ```SQL
     DELETE FROM M365AProperties WHERE Name = 'M365ATenantUpdateInfo_LastUpdateTime'
