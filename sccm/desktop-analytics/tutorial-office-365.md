@@ -2,7 +2,7 @@
 title: 자습서-Office 365를 배포 합니다.
 titleSuffix: Configuration Manager
 description: 데스크톱 분석 및 Configuration Manager를 사용 하 여 Office 365를 파일럿 그룹에 배포 하는 자습서입니다.
-ms.date: 01/25/2019
+ms.date: 04/05/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: tutorial
@@ -12,14 +12,14 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 12f19fe6f52d1ceb4b47b080e45030df898a332a
-ms.sourcegitcommit: da753df27d3909265ca45d3e79091f1e98758d16
+ms.openlocfilehash: 4d21b2b94c53390a9fcdbc1be640578060042ea9
+ms.sourcegitcommit: 5ee9487c891c37916294bd34a10d04e398f111f7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "58913560"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59069452"
 ---
-# <a name="tutorial-deploy-office-365-to-pilot"></a>자습서: Office 365를 파일럿 배포 
+# <a name="tutorial-deploy-office-365-to-pilot"></a>자습서: Office 365를 파일럿 배포
 
 > [!Note]  
 > 이 정보는 정식으로 발표 되기 전에 대폭 수정 될 수 있는 미리 보기 서비스에 연결 합니다. Microsoft는 여기에 제공된 정보와 관련하여 명시적이거나 묵시적인 어떤 보증도 하지 않습니다.  
@@ -34,7 +34,7 @@ ms.locfileid: "58913560"
 > * Office 365 ProPlus에 대 한 데스크톱 Analytics 배포 계획 만들기  
 > * 파일럿 그룹에 Office 365 ProPlus Configuration Manager에서 배포  
 
-Azure 구독이 없으면 만듭니다는 [무료 계정](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) 시작 하기 전에 합니다. 올바르게 구성 하는 경우 데스크톱 분석을 사용 하 여 한 Azure 요금이 부과 하지 않습니다. 
+Azure 구독이 없으면 만듭니다는 [무료 계정](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) 시작 하기 전에 합니다. 올바르게 구성 하는 경우 데스크톱 분석을 사용 하 여 한 Azure 요금이 부과 하지 않습니다.
 
 데스크톱 Analytics를 사용 하는 *Log Analytics 작업 영역* Azure 구독에 있습니다. 작업 영역은 기본적으로 계정에 대 한 간단한 구성 정보와 계정 정보를 포함 하는 컨테이너입니다. 자세한 내용은 [작업 영역 관리](https://docs.microsoft.com/azure/log-analytics/log-analytics-manage-access?toc=/azure/azure-monitor/toc.json)합니다.
 
@@ -109,7 +109,7 @@ Azure 구독이 없으면 만듭니다는 [무료 계정](https://azure.microsof
 
     - **작업 영역 참가자**: 이 작업 영역에서 배포 계획을 만들고 설정 합니다. 모든 추가 Azure 액세스할이 필요는 없습니다.  
   
-   각 그룹에 사용자를 추가할에서 해당 이름 또는 전자 메일 주소를 입력 합니다 **이름 또는 전자 메일 주소 입력** 적절 한 그룹의 섹션입니다. 완료 되 면 선택 **다음**합니다. 
+   각 그룹에 사용자를 추가할에서 해당 이름 또는 전자 메일 주소를 입력 합니다 **이름 또는 전자 메일 주소 입력** 적절 한 그룹의 섹션입니다. 완료 되 면 선택 **다음**합니다.
 
 5. 페이지에서 **작업 영역 설정**:  
 
@@ -148,11 +148,11 @@ Azure 구독이 없으면 만듭니다는 [무료 계정](https://azure.microsof
 
 3. 앱을 선택 하 고 확인 합니다 **응용 프로그램 ID**합니다. 이 값은 Configuration Manager 연결을 구성 하는 데 사용 되는 GUID입니다.  
 
-4. 선택 **설정을** 에 앱을 선택한 후 **키**합니다. 에 **암호** 섹션에서 입력을 **키 설명**, 만료 날짜를 지정 **기간**를 선택한 후 **저장**. 복사 합니다 **값** Configuration Manager 연결을 구성 하는 데 사용 되는 키입니다. 
+4. 선택 **설정을** 에 앱을 선택한 후 **키**합니다. 에 **암호** 섹션에서 입력을 **키 설명**, 만료 날짜를 지정 **기간**를 선택한 후 **저장**. 복사 합니다 **값** Configuration Manager 연결을 구성 하는 데 사용 되는 키입니다.
 
     > [!Important]  
     > 키 값을 복사만 기회입니다. 이제 복사 안 함, 하는 경우 다른 키를 만들 해야 합니다.  
-    > 
+    >
     > 키 값을 안전한 위치에 저장 합니다.  
 
 5. 앱에서 **설정을** 패널에서 **필요한 권한**합니다.  
@@ -205,11 +205,11 @@ Configuration Manager 업데이트, 데스크톱 Analytics에 연결 및 장치 
 
     - **Azure AD 테 넌 트 이름**: 이 이름은 Configuration Manager에서 지정 됩니다 하는 방법  
 
-    - **Azure AD 테 넌 트 ID**: 합니다 **디렉터리 ID** Azure AD에서 복사한   
+    - **Azure AD 테 넌 트 ID**: 합니다 **디렉터리 ID** Azure AD에서 복사한  
 
-    - **클라이언트 ID**: 합니다 **응용 프로그램 ID** Azure AD 앱에서 복사   
+    - **클라이언트 ID**: 합니다 **응용 프로그램 ID** Azure AD 앱에서 복사  
 
-    - **비밀 키**: 키 **값** Azure AD 앱에서 복사   
+    - **비밀 키**: 키 **값** Azure AD 앱에서 복사  
 
     - **비밀 키 만료**: 동일한 키의 만료 날짜   
 
@@ -233,7 +233,7 @@ Configuration Manager 업데이트, 데스크톱 Analytics에 연결 및 장치 
 
     - **컬렉션을 대상**: 이 컬렉션에 진단 데이터 설정과 상업용 ID를 사용 하 여 Configuration Manager를 구성 하는 모든 장치를 포함 합니다. Configuration Manager에서 데스크톱 Analytics 서비스에 연결 하는 장치의 전체 집합은  
 
-    - **아웃 바운드 통신에 대 한 사용자 인증 프록시를 사용 하는 대상 컬렉션의 장치**: 기본적으로이 값은 **No**합니다. 사용자 환경에서 필요한 경우로 **예**합니다.   
+    - **아웃 바운드 통신에 대 한 사용자 인증 프록시를 사용 하는 대상 컬렉션의 장치**: 기본적으로이 값은 **No**합니다. 사용자 환경에서 필요한 경우로 **예**합니다.  
 
     - **데스크톱 Analytics와 동기화 하도록 특정 컬렉션 선택**: 선택 **추가** 추가 컬렉션을 포함 합니다. 이러한 컬렉션은 배포 계획을 사용 하 여 그룹화에 대 한 데스크톱 Analytics 포털에서 사용할 수 있습니다. 파일럿 및 파일럿 제외 컬렉션을 포함 해야 합니다.  
 
@@ -245,7 +245,7 @@ Configuration Manager에는 대상 컬렉션의 장치를 구성 하는 설정 �
 
 데스크톱 분석에 대 한 장치 구성을 모니터링 합니다. Configuration Manager 콘솔에서로 이동 합니다 **소프트웨어 라이브러리** 작업 영역에서 확장을 **Microsoft 365 서비스** 노드를 선택한는 **연결 상태** 대시보드.  
 
-Configuration Manager 연결을 만든 후 15 분 내에서 모든 데스크톱 Analytics 배포 계획을 동기화 합니다. Configuration Manager 콘솔에서로 이동 합니다 **소프트웨어 라이브러리** 작업 영역에서 확장을 **Microsoft 365 서비스** 노드를 선택한는 **배포 계획** 노드. 
+Configuration Manager 연결을 만든 후 15 분 내에서 모든 데스크톱 Analytics 배포 계획을 동기화 합니다. Configuration Manager 콘솔에서로 이동 합니다 **소프트웨어 라이브러리** 작업 영역에서 확장을 **Microsoft 365 서비스** 노드를 선택한는 **배포 계획** 노드.
 
 
 
@@ -275,7 +275,7 @@ Configuration Manager 연결을 만든 후 15 분 내에서 모든 데스크톱 
 
         - 낮은은 Office 추가 기능에 대 한 count 임계값을 설치 합니다. 기본 임계값은 `2%`합니다. 이 임계값 보다 추가 기능 자동으로 설정 됩니다 *낮은 설치 수*입니다. 데스크톱 분석 하지는 파일럿 기간 동안 이러한 추가 기능을 확인 합니다. 
 
-            배포 계획에서 추가 기능으로 표시 추가 기능에서이 임계값 보다 높은 비율로 컴퓨터에 설치 된 경우 *Noteworthy*합니다. 그런 다음 파일럿 단계 테스트의 중요성을 결정할 수 있습니다.   
+            배포 계획에서 추가 기능으로 표시 추가 기능에서이 임계값 보다 높은 비율로 컴퓨터에 설치 된 경우 *Noteworthy*합니다. 그런 다음 파일럿 단계 테스트의 중요성을 결정할 수 있습니다.  
 
     - **완료 날짜**: Office 완벽 하 게 모든 대상된 장치에 배포할지 때 사용 되는 날짜를 선택 합니다.  
 
@@ -287,7 +287,7 @@ Configuration Manager 연결을 만든 후 15 분 내에서 모든 데스크톱 
 
     1. 에 **Office 추가 기능** 탭만 표시 하도록 선택 합니다 **를 검토 하지** 자산입니다.  
 
-    2. 각 추가 기능에서 선택 하 고 선택한 **편집**합니다. 동시 편집 하려면 둘 이상의 앱을 선택할 수 있습니다.   
+    2. 각 추가 기능에서 선택 하 고 선택한 **편집**합니다. 동시 편집 하려면 둘 이상의 앱을 선택할 수 있습니다.  
 
     3. 중요도 수준을 선택 합니다 **중요도** 목록입니다. 데스크톱 Analytics는 파일럿 기간 동안 추가 유효성 검사를 원한다 면 선택 **Critical** 또는 **중요**합니다. 추가 기능으로 표시의 유효성을 검사 하지 않습니다 **중요 하지 않은**합니다. 중요도 수준을 할당할 때 호환성 위험 및 기타 계획 정보를 고려 합니다.  
 
@@ -337,7 +337,7 @@ Configuration Manager 연결을 만든 후 15 분 내에서 모든 데스크톱 
 
     5. 완료 되 면 선택 **검토** 오른쪽 위 모퉁이에서. 구성된 설정을 검토 하 고 선택한 **제출**합니다.  
 
-5. **다음**을 선택합니다. 에 **배포** 페이지에서 **No** 이제 배포 합니다. (다음 절차에서는 데스크톱 Analytics 배포 계획 배포용) 선택 **다음** 마법사를 완료 합니다.  
+4. **다음**을 선택합니다. 에 **배포** 페이지에서 **No** 이제 배포 합니다. (다음 절차에서는 데스크톱 Analytics 배포 계획 배포용) 선택 **다음** 마법사를 완료 합니다.  
 
 
 ### <a name="bkmk_deploy-app"></a> Office 365 데스크톱 Analytics 배포 계획을 사용 하 여 배포
@@ -348,7 +348,12 @@ Configuration Manager 연결을 만든 후 15 분 내에서 모든 데스크톱 
 
 3. 에 **상태 파일럿** 타일을 선택 **응용 프로그램** 를 선택 하 고 드롭 다운 목록에서 **배포**합니다.  
 
-4. 에 **일반적인** 배포 소프트웨어 마법사의 선택 페이지 **찾아보기** 옆에 **소프트웨어** 필드. 예를 들어 Office 365 응용 프로그램 선택 **Office 365 ProPlus**합니다. 데스크톱 분석 통합을 사용 하 여 Configuration Manager는 자동으로 파일럿 배포 계획에 대 한 컬렉션을 만듭니다. **다음**을 선택합니다.  
+4. 에 **일반적인** 배포 소프트웨어 마법사의 선택 페이지 **찾아보기** 옆에 **소프트웨어** 필드. 예를 들어 Office 365 응용 프로그램 선택 **Office 365 ProPlus**합니다. **다음**을 선택합니다.  
+
+    > [!Note]  
+    > 데스크톱 분석 통합을 사용 하 여 Configuration Manager는 자동으로 파일럿 배포 계획에 대 한 컬렉션을 만듭니다. 사용 하기 전에 동기화를이 컬렉션에 대 일 분 정도 걸릴 수 있습니다.<!-- 3887891 -->
+    >
+    > 이 컬렉션은 데스크톱 Analytics 배포 계획 장치에 대 한 예약 되어 있습니다. 이 컬렉션에 수동으로 변경한 내용은 지원 되지 않습니다.<!-- 3866460, SCCMDocs-pr 3544 -->  
 
 5. 에 **콘텐츠** 페이지에서 **추가**를 선택한 후 **배포 지점**합니다. 설치 콘텐츠를 호스트 하 고 선택에 사용할 수 있는 배포 지점을 선택 **확인**합니다. **다음**을 선택합니다.  
 
@@ -375,11 +380,8 @@ Configuration Manager 연결을 만든 후 15 분 내에서 모든 데스크톱 
 -->
 
 
-
-
 ## <a name="next-steps"></a>다음 단계
 
 데스크톱 Analytics 배포 계획에 자세히 알아보려면 다음 문서로 이동 합니다.
 > [!div class="nextstepaction"]  
 > [배포 계획](/sccm/desktop-analytics/about-deployment-plans)
-

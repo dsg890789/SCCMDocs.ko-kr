@@ -2,7 +2,7 @@
 title: 앱 상태 분석기
 titleSuffix: Configuration Manager
 description: 데스크톱 Analytics에서 앱 상태 분석기를 사용 하 여 호환성 평가 위한 방법 가이드입니다.
-ms.date: 01/25/2019
+ms.date: 04/05/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -12,35 +12,35 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 122a27276adcaf57461157e9df03ee1092e52af5
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 21b4907667e055c9595b31eedf9da0ad516b5fec
+ms.sourcegitcommit: 5ee9487c891c37916294bd34a10d04e398f111f7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56755338"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59069367"
 ---
 # <a name="how-to-assess-compatibility-with-app-health-analyzer"></a>앱 상태 분석기를 사용 하 여 호환성을 평가 하는 방법
 
 > [!Note]  
 > 이 정보는 정식으로 발표 되기 전에 대폭 수정 될 수 있는 미리 보기 서비스에 연결 합니다. Microsoft는 여기에 제공된 정보와 관련하여 명시적이거나 묵시적인 어떤 보증도 하지 않습니다.  
 
-데스크톱 분석을 위해 앱 상태 분석기 도구 키트를 사용 하 여 데스크톱 응용 프로그램 호환성 문제에 대해 평가 합니다. 기간 업무 앱을 포함 하 여 데스크톱 앱에 대 한 유효성 검사 노력을 집중할 수 있습니다. 도구에는 가능한 수정 작업과 함께 위험 등급을 제공합니다. 또한 앱 준비 보고서를 사용 하 여 Windows 10 업그레이드에 대 한 앱 준비 상태 평가를 포함 합니다. 
+데스크톱 분석을 위해 앱 상태 분석기 도구 키트를 사용 하 여 데스크톱 응용 프로그램 호환성 문제에 대해 평가 합니다. 기간 업무 앱을 포함 하 여 데스크톱 앱에 대 한 유효성 검사 노력을 집중할 수 있습니다. 도구에는 가능한 수정 작업과 함께 위험 등급을 제공합니다. 또한 앱 준비 보고서를 사용 하 여 Windows 10 업그레이드에 대 한 앱 준비 상태 평가를 포함 합니다.
 
 
 
 ## <a name="download"></a>다운로드
 
-이 도구 키트를 다운로드 합니다 [Microsoft 다운로드 센터](http://download.microsoft.com/download/3/7/D/37D7E378-D805-4822-A712-4EADBF50FC08/AppHealthAnalyzer.zip)<!-- (https://www.microsoft.com/download/details.aspx?id=57276) -->합니다. 항상 최신 버전을 사용 합니다.
+이 도구 키트를 다운로드 합니다 [Microsoft 다운로드 센터](http://download.microsoft.com/download/3/7/D/37D7E378-D805-4822-A712-4EADBF50FC08/AppHealthAnalyzer.zip)<!-- (https://www.microsoft.com/download/details.aspx?id=57276) -->을 참조하세요. 항상 최신 버전을 사용 합니다.
 
-다운로드에 Windows Installer (MSI) 파일입니다. 사용자의 컴퓨터에 앱 상태 분석기 도구 키트를 설치 합니다. 도구 키트를 실행 하면 마법사 앱 준비 보고서를 만드는 과정을 단계별로 안내 합니다. 
+다운로드에 Windows Installer (MSI) 파일입니다. 사용자의 컴퓨터에 앱 상태 분석기 도구 키트를 설치 합니다. 도구 키트를 실행 하면 마법사 앱 준비 보고서를 만드는 과정을 단계별로 안내 합니다.
 
-샘플 스크립트를 포함 하는 도구 키트입니다. 조직 전체에서 장치의 준비 상태 정보의 컬렉션을 자동화 하는 경우 이러한 스크립트를 배포 하려면 Configuration Manager를 사용 합니다. 자세한 내용은 [Automation](#automation)합니다. 
+샘플 스크립트를 포함 하는 도구 키트입니다. 조직 전체에서 장치의 준비 상태 정보의 컬렉션을 자동화 하는 경우 이러한 스크립트를 배포 하려면 Configuration Manager를 사용 합니다. 자세한 내용은 [Automation](#automation)합니다.
 
 
 
 ## <a name="how-it-works"></a>작동 방식
 
-도구는 장치에 이미 설치 된 응용 프로그램의 정적 분석을 수행 합니다. 작동 하지 분석 앱 설치 관리자를 패키지 합니다. 사용자는 앱을 실행할 필요가 없습니다. 도구는 Windows 장치에서 등록 하는 모든 설치 된 응용 프로그램을 평가 합니다. 
+도구는 장치에 이미 설치 된 응용 프로그램의 정적 분석을 수행 합니다. 작동 하지 분석 앱 설치 관리자를 패키지 합니다. 사용자는 앱을 실행할 필요가 없습니다. 도구는 Windows 장치에서 등록 하는 모든 설치 된 응용 프로그램을 평가 합니다.
 
 앱 상태 분석기 적극적으로 관리 하지 않는 레거시 앱에 대 한 설치 관리자를 유지 하는 것을 요구 하지 않습니다. 설치 된 상태로 앱을 사용 하 여 호환성 문제를 식별합니다. 모든 앱은 미리 정의 된 호환성 규칙에 대 한 평가 됩니다. 이러한 신호는 고객은 Windows 10으로 업그레이드 하는 경우 Microsoft에 보고 하는 일반적인 널리 알려진 문제입니다. 호환성 정보를 가능한 수정 작업 또는 수정에도 포함 됩니다. 문제를 사용 하 여 앱에 있는 경우 제안 된 작업을 시작 합니다.
 
@@ -67,7 +67,7 @@ ms.locfileid: "56755338"
 
 
 
-## <a name="analyze"></a>분석 
+## <a name="analyze"></a>분석
 
 1. 대상 장치에 앱 상태 분석기를 설치 합니다. 기본적으로 다음 경로에 설치합니다. `C:\Program Files\Microsoft Corporation\Microsoft App Health Analyzer`  
 
@@ -76,7 +76,7 @@ ms.locfileid: "56755338"
     > [!Note]  
     > 진단 데이터를 필요한 설정 중 필요한 설정을 구성 되지 않은 경우 오류가 표시 됩니다. 필수 구성 요소 설정을 적절 하 게 구성 했는지 확인 합니다. 자세한 내용은 [진단 데이터 수준](/sccm/desktop-analytics/enable-data-sharing#diagnostic-data-levels)합니다.  
 
-3. 앱 준비 보고서를 열 때 응용 프로그램 평가 시작 합니다. 도구 키트를를 완료 하려면 시간이 오래 걸릴 수 있음에 대 한 대기 장치의 응용 프로그램의 수에 따라 합니다.   
+3. 앱 준비 보고서를 열 때 응용 프로그램 평가 시작 합니다. 도구 키트를를 완료 하려면 시간이 오래 걸릴 수 있음에 대 한 대기 장치의 응용 프로그램의 수에 따라 합니다.  
 
 ![앱 상태 분석기의 앱 준비 보고서 스크린샷](media/app-readiness-report-evaluating.png)
 
@@ -86,20 +86,23 @@ ms.locfileid: "56755338"
 ### <a name="app-readiness-report-features"></a>앱 준비 보고서 기능
 
 #### <a name="get-started"></a>시작
-이 탭이 현재 버전에서 지원 되는 신호에 대 한 개요를 제공합니다. 또한 가능한 수정 작업을 포함합니다. 
+
+이 탭이 현재 버전에서 지원 되는 신호에 대 한 개요를 제공합니다. 또한 가능한 수정 작업을 포함합니다.
 
 #### <a name="insights"></a>Insights
-이 탭에는 도구를 평가 하는 모든 앱의 뷰를 제공 합니다. 위험 평가 및 호환성 문제를 식별 하는 데 사용 된 다양 한 신호 보여 줍니다. 
+
+이 탭에는 도구를 평가 하는 모든 앱의 뷰를 제공 합니다. 위험 평가 및 호환성 문제를 식별 하는 데 사용 된 다양 한 신호 보여 줍니다.
 
 - **신호** 메뉴: 신호 왼쪽의 메뉴를 사용 하 여 이러한 앱을 필터링 합니다.  
 
-- **CSV 내보내기**: 이러한 정보를 쉼표로 구분 된 값 (CSV) 파일로 내보내려면   
+- **CSV 내보내기**: 이러한 정보를 쉼표로 구분 된 값 (CSV) 파일로 내보내려면  
 
 - **응용 프로그램을 다시 검사**: 새 응용 프로그램을 설치 하는 경우이 옵션을 사용 하 여 도구를 다시 실행 하려면  
 
 - **ID 문제 해결**: 장치에 설치 된 앱에 보고서의 정보를 표시 하지만 지원 하기 위해이 ID가 제공  
 
 #### <a name="desktop-analytics"></a>Desktop Analytics
+
 이 탭에 앱 상태 분석기를 사용 하 여 조직 전체에서 앱에 대 한 준비 정보를 제공 하는 방법을 간략하게를 설명 합니다.
 
 
@@ -108,8 +111,7 @@ ms.locfileid: "56755338"
 
 다양 한 장치에서 앱 정보를 가져오려는 앱 상태 분석기 명령줄 버전 Configuration Manager를 배포 합니다. 소수의 조직 내의 대표 장치에 배포 합니다. 예를 들어, 데스크톱 분석을 사용 하 여 *파일럿* 컬렉션입니다. 동일 [필수 구성 요소](#prerequisites) 이러한 장치에 적용 합니다.
 
-
-광범위 한 배포를 수행 하기 전에 먼저 성공적인 실행을 확인 합니다. 데이터 분석 데스크톱에에서 표시 되 고 있는지 확인 합니다. 
+광범위 한 배포를 수행 하기 전에 먼저 성공적인 실행을 확인 합니다. 데이터 분석 데스크톱에에서 표시 되 고 있는지 확인 합니다.
 
 샘플 스크립트를 포함 하는 앱 상태 분석기 도구 키트 run_silent.cmd 합니다. 이 스크립트는 기본적으로 다음 경로에: `C:\Program Files\Microsoft Corporation\Microsoft App Health Analyzer`합니다. 이 스크립트를 사용 하 여 Configuration Manager를 사용 하 여 프로세스를 자동화 합니다.
 
@@ -128,7 +130,8 @@ ms.locfileid: "56755338"
 
 ## <a name="desktop-analytics-integration"></a>데스크톱 Analytics 통합
 
-데스크톱 분석의 다음 스크린샷은 버전 1.15.25 ContosoApp 세부 정보를 표시 합니다. 
+데스크톱 분석의 다음 스크린샷은 버전 1.15.25 ContosoApp 세부 정보를 표시 합니다.
+
 - 에 **중간** 위험 평가  
 - 채택 된 버전이 사용 가능  
 - 드라이버 종속성이 있습니다.  
@@ -147,14 +150,17 @@ ms.locfileid: "56755338"
 
 - 도구를 실행할 때 아무 작업도  
 
+### <a name="diagnostic-data-settings"></a>진단 데이터 설정
 
-#### <a name="diagnostic-data-settings"></a>진단 데이터 설정
 Windows 진단 데이터 설정에 대 한 구성을 다시 확인 합니다. Configuration Manager는 이러한 설정 해야 경우 데스크톱 Analytics에 장치 등록 합니다. 해결 방법으로 스크립트 또는 그룹 정책과 같은 다른 메서드를 사용할 수 있습니다. 자세한 내용은 [진단 데이터 수준](/sccm/desktop-analytics/enable-data-sharing#diagnostic-data-levels)합니다.  
 
-#### <a name="verbose-mode"></a>자세한 정보 표시 모드
+### <a name="verbose-mode"></a>자세한 정보 표시 모드
+
 Run_verbose.cmd 스크립트를 사용 하 여 자세한 정보 표시 모드에서 도구를 실행 합니다. 기본적으로 스크립트는 다음 경로에서: `C:\Program Files\Microsoft Corporation\Microsoft App Health Analyzer\run_verbose.cmd`
 
 자세한 정보 표시 모드는 잠재적인 문제를 해결할 수 있는 추가 로그를 생성 합니다. 로그를 저장 합니다 `LogCollection` 폴더에 설치 된 위치입니다. 예를 들어, 기본 로그 컬렉션 경로: `C:\Program Files\Microsoft Corporation\Microsoft App Health Analyzer\LogCollection\`
 
-<!--Send the logs to AHASupport, who will follow up for further investigations. --do we really want to include this in public documentation?-->
 
+## <a name="see-also"></a>참고 항목
+
+에 대 한 액세스를 제공 하는 Windows 10에 대 한 FastTrack 센터 혜택 **데스크톱 앱 보장**합니다. 이 혜택에는 Windows 10 및 Office 365 ProPlus 응용 프로그램 호환성 문제를 해결 하기 위해 새로운 서비스입니다. 자세한 내용은 [데스크톱 앱 보장](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)합니다.

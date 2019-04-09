@@ -2,7 +2,7 @@
 title: 데스크톱 분석에서 장치 등록
 titleSuffix: Configuration Manager
 description: 데스크톱 Analytics에서 장치를 등록 하는 방법을 알아봅니다.
-ms.date: 01/25/2019
+ms.date: 04/05/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -12,25 +12,26 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e409a1bba4642f2a9390c08896ba86cb676839f
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: c5d5e6665b0ddd2e7726af4b8ac8929d5019fedf
+ms.sourcegitcommit: 5ee9487c891c37916294bd34a10d04e398f111f7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56755405"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59069469"
 ---
-# <a name="how-to-enroll-devices-in-desktop-analytics"></a>데스크톱 Analytics에서 장치를 등록 하는 방법 
+# <a name="how-to-enroll-devices-in-desktop-analytics"></a>데스크톱 Analytics에서 장치를 등록 하는 방법
 
 > [!Note]  
 > 이 정보는 정식으로 발표 되기 전에 대폭 수정 될 수 있는 미리 보기 서비스에 연결 합니다. Microsoft는 여기에 제공된 정보와 관련하여 명시적이거나 묵시적인 어떤 보증도 하지 않습니다.  
 
-경우 있습니다 [Configuration Manager 연결](/sccm/desktop-analytics/connect-configmgr) 데스크톱 Analytics로 데스크톱 Analytics에는 장치를 등록 하는 설정을 구성한 합니다. 이러한 설정은 언제 든 지 변경할 수 있습니다. 또한 장치는 최신 해야 합니다. 
+경우 있습니다 [Configuration Manager 연결](/sccm/desktop-analytics/connect-configmgr) 데스크톱 Analytics로 데스크톱 Analytics에는 장치를 등록 하는 설정을 구성한 합니다. 이러한 설정은 언제 든 지 변경할 수 있습니다. 또한 장치는 최신 해야 합니다.
 
 
 
 ## <a name="update-devices"></a>장치 업데이트
 
-데스크톱 Analytics를 사용 하 여 최상의 환경을 위해 적용 해야 하는 업데이트는 다음과 같은 두 종류가 있습니다. 
+데스크톱 Analytics를 사용 하 여 최상의 환경을 위해 적용 해야 하는 업데이트는 다음과 같은 두 종류가 있습니다.
+
 - [호환성 업데이트](#bkmk_appraiser)  
 - [연결 된 사용자 환경 및 원격 분석 서비스](#bkmk_diagtrack)
 
@@ -50,9 +51,11 @@ Microsoft는이 구성 요소에 대 한 업데이트를 정기적으로 증가 
 > 선택적 업데이트를 관련된 없는 [KB 3150513](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=3150513)합니다. 이 업데이트는 업데이트 된 구성과 이전 호환성 업데이트에 대 한 정의 제공합니다. 자세한 내용은 [Windows 용 최신 호환성 정의 업데이트](https://support.microsoft.com/help/3150513)합니다.  
 
 #### <a name="windows-10"></a>Windows 10
+
 Windows 10 호환성 구성 요소를 포함 합니다. 최신 호환성 업데이트를 가져오려면 최신 Windows 10 누적 업데이트를 설치 합니다.
 
 #### <a name="windows-81"></a>Windows 8.1
+
 업데이트 다운로드: [KB 2976978](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2976978) 
 
 Windows 사용자 환경 개선 프로그램에 참여 하는 Windows 8.1 시스템에서 진단 유틸리티를 실행 합니다. 이러한 진단 확인할 지 여부를 Windows 10으로 업그레이드 하는 경우 호환성 문제가 있을 수 있습니다.
@@ -60,6 +63,7 @@ Windows 사용자 환경 개선 프로그램에 참여 하는 Windows 8.1 시스
 자세한 내용은 [Windows를 Windows 8.1 최신 상태로 유지 하는 것에 대 한 호환성 업데이트](https://support.microsoft.com/help/2976978)합니다.
 
 #### <a name="windows-7-with-service-pack-1"></a>Windows 7 서비스 팩 1
+
 업데이트 다운로드: [KB 2952664](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2952664) 
 
 Windows 사용자 환경 개선 프로그램에 참여 하는 서비스 팩 1 (SP1) 시스템을 사용 하 여 Windows 7에서 진단 유틸리티를 실행 합니다. 이러한 진단 확인할 지 여부를 Windows 10으로 업그레이드 하는 경우 호환성 문제가 있을 수 있습니다.
@@ -74,14 +78,16 @@ Windows 사용자 환경 개선 프로그램에 참여 하는 서비스 팩 1 (S
 최상의 환경을 위해 OS 버전에 따라 다음 업데이트를 설치 합니다.
 
 > [!Note]  
-> 이러한 업데이트를 설치할 때 다음 동작을 예상 합니다. 
+> 이러한 업데이트를 설치할 때 다음 동작을 예상 합니다.
+> 
 > - 데스크톱 Analytics에 등록 하는 장치에에서 표시 서비스에서 1 시간 미만  
 > - 장치 신속 하 게 상태를 보고 기능 및 품질 업데이트에서 Windows 및 Office에 대 한  
-> 
+>
 > 이러한 업데이트를 하지 않고 이러한 프로세스에는 데스크톱 Analytics에 보고 하는 장치에 대 한 48 시간 이상 걸릴 수 있습니다.  
 
 
 #### <a name="windows-10"></a>Windows 10
+
 최신 Windows 10 누적 업데이트를 설치 합니다.
 
 <!-- 
@@ -93,9 +99,11 @@ Windows 사용자 환경 개선 프로그램에 참여 하는 서비스 팩 1 (S
  -->
 
 #### <a name="windows-81"></a>Windows 8.1
+
 2018 년 10 월 월별 롤업 설치 [KB4462926](https://support.microsoft.com/help/4462926)
 
 #### <a name="windows-7"></a>Windows 7
+
 2018 년 10 월 월별 롤업 설치 [KB4462923](https://support.microsoft.com/help/4462923)
 
 
@@ -105,17 +113,17 @@ Windows 사용자 환경 개선 프로그램에 참여 하는 서비스 팩 1 (S
 데스크톱 분석 서비스에 설치 하려면 에이전트 없음 장치 등록을 모니터링 하려는 장치의 설정을 구성 해야 합니다. 이러한 설정은 데스크톱 분석 인스턴스 장치 보내야 하는 데이터 및 기타 구성 옵션을 제어 합니다.
 
 > [!Note]  
-> Windows Analytics를 이미 사용 중인 경우 데스크톱 분석을 위해 동일한 작업 영역을 사용 합니다. Windows Analytics에서 이전에 등록 하는 데스크톱 분석 하는 장치를 등록 해야 합니다. 
-> 
-> Azure AD 테 넌 트 당 하나의 데스크톱 분석 작업 영역을만 있습니다. 장치만 하나의 작업 영역에 진단 데이터를 보낼 수 있습니다.   
+> Windows Analytics를 이미 사용 중인 경우 데스크톱 분석을 위해 동일한 작업 영역을 사용 합니다. Windows Analytics에서 이전에 등록 하는 데스크톱 분석 하는 장치를 등록 해야 합니다.
+>
+> Azure AD 테 넌 트 당 하나의 데스크톱 분석 작업 영역을만 있습니다. 장치만 하나의 작업 영역에 진단 데이터를 보낼 수 있습니다.  
 
-Configuration Manager 클라이언트에 이러한 설정을 배포 및 관리에 대 한 통합된 된 환경을 제공 합니다. 최상의 환경을 위해 Configuration Manager를 사용 합니다. 
+Configuration Manager 클라이언트에 이러한 설정을 배포 및 관리에 대 한 통합된 된 환경을 제공 합니다. 최상의 환경을 위해 Configuration Manager를 사용 합니다.
 
 Configuration Manager를 데스크톱 Analytics에 연결 하는 경우 장치 등록 설정 구성 자세한 내용은 [데스크톱 Analytics를 사용 하 여 Configuration Manager를 연결 하는 방법을](/sccm/desktop-analytics/connect-configmgr#bkmk_connect)합니다.
 
 이러한 설정을 변경 하려면 다음 절차를 따르십시오.
 
-1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고, **Cloud Services**를 확장하고, **Azure 서비스** 노드를 선택합니다. 데스크톱 분석에 대 한 연결을 선택 하 고 선택 **속성** 리본 메뉴에 있습니다. 
+1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고, **Cloud Services**를 확장하고, **Azure 서비스** 노드를 선택합니다. 데스크톱 분석에 대 한 연결을 선택 하 고 선택 **속성** 리본 메뉴에 있습니다.
 
 2. 에 **진단 데이터** 페이지에서 다음 설정이 필요에 따라 변경 합니다.  
 
@@ -152,12 +160,14 @@ Configuration Manager 설정 아래에서 다음 Windows 설정을 `Microsoft\Wi
 | **AllowDeviceNameInTelemetry** | *Windows 10, 버전 1803 이상에 적용 됩니다*: 장치 이름을 보내려면 장치를 활성화 하는 별도 옵트인 필요 합니다.<br> <br>참고: 장치 이름은 기본적으로 Microsoft에 전송 되지 않습니다. 경우 "Unknown"으로 데스크톱 분석 나타나는 장치 이름을 보내지 않습니다. 이 동작을 파악 하 고 장치를 평가 어렵게 만들 수 있습니다. 자세한 내용은 [장치 이름](#device-name)합니다. |
 | **CommercialDataOptIn** | *Windows 7 및 Windows 8.1 적용 됩니다*: 값 `1` 데스크톱 분석을 위해 필요 합니다. 자세한 내용은 [상용 데이터 옵트인 Windows 7에서](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/ee126127\(v=ws.10\))합니다. |
 
-다음 경로에서 그룹 정책 편집기에서 이러한 설정을 봅니다. **컴퓨터 구성** > **관리 템플릿** > **Windows 구성 요소** > **데이터 컬렉션 및 미리 보기 빌드**합니다. 
+다음 경로에서 그룹 정책 편집기에서 이러한 설정을 봅니다. **컴퓨터 구성** > **관리 템플릿** > **Windows 구성 요소** > **데이터 컬렉션 및 미리 보기 빌드**합니다.
 
+> [!Important]  
+> 대부분의 경우에 이러한 설정을 구성 하려면 Configuration Manager를 사용 합니다. 도메인 그룹 정책 개체에서 이러한 설정을 적용할 수도 없습니다. 자세한 내용은 [충돌 해결](#conflict-resolution)합니다.<!-- SCCMDocs-pr 3120 -->
 
 ### <a name="device-name"></a>장치 이름
 
-부터 Windows 10, 버전 1803에서 장치 이름은 더 이상 기본적으로 수집 됩니다. 진단 데이터를 사용 하 여 장치 이름을 수집을 별도 옵트인 해야 합니다. 장치 이름 없이 더 어렵습니다 어떤 장치를 새 버전의 Windows 또는 Office로의 업그레이드를 평가 하는 동안 주의가 식별할 수 있습니다. 
+부터 Windows 10, 버전 1803에서 장치 이름은 더 이상 기본적으로 수집 됩니다. 진단 데이터를 사용 하 여 장치 이름을 수집을 별도 옵트인 해야 합니다. 장치 이름 없이 더 어렵습니다 어떤 장치를 새 버전의 Windows 또는 Office로의 업그레이드를 평가 하는 동안 주의가 식별할 수 있습니다.
 
 경우 "Unknown"으로 데스크톱 분석 나타나는 장치 이름을 보내지 않습니다.
 
@@ -170,9 +180,9 @@ Configuration Manager 설정 아래에서 다음 Windows 설정을 `Microsoft\Wi
 
 일반적으로 Configuration Manager 컬렉션을 사용 하 여 데스크톱 분석 설정 및 등록을 대상으로 합니다. 직접 멤버 자격 또는 쿼리를 사용 하 여 포함 하거나 컬렉션에서 장치를 제외 합니다. 자세한 내용은 [컬렉션을 만드는 방법](/sccm/core/clients/manage/collections/create-collections)을 참조하세요.
 
-Configuration Manager는만 값이 존재 하지 않는 경우 Windows 설정을 구성 합니다. 장치의 고유 그룹에 대 한 다른 설정을 구성 해야 하는 경우 사용할 수 있습니다 [그룹 정책](#group-policy)합니다. 그룹 정책에서 대상으로 하는 설정 구성 관리자 설정 보다 우선 합니다.
+Configuration Manager는만 값이 존재 하지 않는 경우 Windows 설정을 구성 합니다. 장치의 고유 그룹에 대 한 다른 설정을 구성 해야 하는 경우 사용할 수 있습니다 [그룹 정책](#windows-settings)합니다. 그룹 정책에서 대상으로 하는 설정 구성 관리자 설정 보다 우선 합니다.
 
-Windows Analytics와 데스크톱 Analytics 설정 사용 하 여 Configuration Manager 클라이언트를 대상으로 하는 경우 데스크톱 분석에 대 한 설정이 우선 합니다. 
+Windows Analytics와 데스크톱 Analytics 설정 사용 하 여 Configuration Manager 클라이언트를 대상으로 하는 경우 데스크톱 분석에 대 한 설정이 우선 합니다.
 
 진단 데이터 수준에서 구성 된 장치에 대 한 상한을 설정 합니다. Windows 10, 버전 1803 이상에서 기본적으로 사용자 하위 수준을 설정할 수 있습니다. 그룹 정책 설정을 사용 하 여이 동작을 제어할 수 있습니다 **원격 분석 옵트인 설정 사용자 인터페이스 구성**합니다. 자세한 내용은 [조직에서 Windows 진단 데이터 구성](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enterprise-management)을 참조하세요.
 
