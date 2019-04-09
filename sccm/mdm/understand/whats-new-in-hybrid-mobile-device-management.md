@@ -2,7 +2,7 @@
 title: 하이브리드 MDM의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 디바이스 관리 기능에 대해 알아봅니다.
-ms.date: 03/28/2019
+ms.date: 04/05/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -11,32 +11,32 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b26ad559d9417fcc81a2023c1bf1704ae44b7d0c
-ms.sourcegitcommit: 60aff44c76e6432dc544c8b26acba432ac799cfc
+ms.openlocfilehash: 01e5d9761cb90715e88a2658d8bf1c31c7cd92cf
+ms.sourcegitcommit: 5ee9487c891c37916294bd34a10d04e398f111f7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58639599"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59069554"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 디바이스 관리의 새로운 기능
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-이 문서에서는 System Center Configuration Manager 및 Intune을 포함하는 하이브리드 배포에 사용할 수 있는 새 MDM(모바일 디바이스 관리) 기능에 대한 세부 정보를 제공합니다.     
+이 문서에서는 System Center Configuration Manager 및 Intune을 포함하는 하이브리드 배포에 사용할 수 있는 새 MDM(모바일 디바이스 관리) 기능에 대한 세부 정보를 제공합니다.
 
 > [!Important]  
 > 2018년 8월 14일부터 하이브리드 모바일 디바이스 관리 [기능은 사용되지 않습니다](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures). 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->  
 
-
-> [!Note]    
-> Azure의 Intune은 Microsoft에서 권장하는 MDM 솔루션입니다.     
-> - Intune 독립 실행형에서 새로운 기능 및 업데이트에 대한 세부 정보는 [Intune의 새로운 기능](https://docs.microsoft.com/intune/whats-new)을 참조하세요.    
+> [!Note]  
+> Azure의 Intune은 Microsoft에서 권장하는 MDM 솔루션입니다.
+>
+> - Intune 독립 실행형에서 새로운 기능 및 업데이트에 대한 세부 정보는 [Intune의 새로운 기능](https://docs.microsoft.com/intune/whats-new)을 참조하세요.
 > - Intune 독립 실행형을 마이그레이션하는 방법에 대한 세부 정보는 [하이브리드 MDM 사용자 및 디바이스를 Intune 독립 실행형으로 마이그레이션](/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)을 참조하세요.
-> - Intune과 하이브리드 MDM의 UI 업데이트에 대한 세부 정보는 [Intune 최종 사용자 앱의 UI 업데이트](https://docs.microsoft.com/intune/whats-new-app-ui)를 참조하세요. 
+> - Intune과 하이브리드 MDM의 UI 업데이트에 대한 세부 정보는 [Intune 최종 사용자 앱의 UI 업데이트](https://docs.microsoft.com/intune/whats-new-app-ui)를 참조하세요.
 
 
 
-##  <a name="compatibility-with-configuration-manager-versions"></a>Configuration Manager 버전과 호환성  
+## <a name="compatibility-with-configuration-manager-versions"></a>Configuration Manager 버전과 호환성  
 
 이 문서의 각 섹션에서는 세 가지 범주로 하이브리드 기능이 나열되어 있습니다. 각 범주의 기능과 다양한 Configuration Manager 버전 간의 호환성을 확인하려면 다음 지침을 따르세요.  
 
@@ -52,20 +52,29 @@ ms.locfileid: "58639599"
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
-#### <a name="install-available-apps-using-the-company-portal-app-after-windows-bulk-enrollment"></a>Windows 대량 등록 후 회사 포털 앱을 사용 하 여 사용 가능한 앱 설치 
+#### <a name="user-experience-update-for-the-company-portal-app-for-ios"></a>iOS용 회사 포털 앱의 사용자 환경 업데이트
+
+<!-- 2536024 -->
+IOS 장치용 회사 포털 앱의 홈 페이지 디자인이 새로워졌습니다. 이 변경으로 홈 페이지를 더 잘 iOS UI 패턴을 따릅니다. 또한 앱 및 전자책에 대 한 향상 된 검색 기능을 제공합니다.
+
+#### <a name="install-available-apps-using-the-company-portal-app-after-windows-bulk-enrollment"></a>Windows 대량 등록 후 회사 포털 앱을 사용 하 여 사용 가능한 앱 설치
+
 <!-- 2751523 -->
 사용 하 여 Intune에 등록 된 Windows 장치의 [Windows 대량 등록](https://docs.microsoft.com/intune/windows-bulk-enroll) (패키지를 프로 비전 중) 회사 포털 앱을 사용 하 여 사용 가능한 앱 설치 수 있게 됩니다. 회사 포털 앱에 대 한 자세한 내용은 참조 하세요. [Windows 10 회사 포털에 수동으로 추가](https://docs.microsoft.com/intune/store-apps-company-portal-app) 하 고 [Microsoft Intune 회사 포털 앱을 구성 하는 방법](https://docs.microsoft.com/intune/company-portal-app)합니다.
 
 > [!Note]  
 > 아직이 기능은 모든 고객에 게 완전히 배포 되지 않습니다. 대량 등록 된 장치에서 회사 포털을 사용할 수 없으면, 계정에 유지 하면서이 변경 될 때까지 대기 해야 합니다.
 
-#### <a name="app-icons-are-displayed-with-an-automatically-generated-background"></a>앱 아이콘은 자동으로 생성 된 배경과 함께 표시 됩니다. 
+#### <a name="app-icons-are-displayed-with-an-automatically-generated-background"></a>앱 아이콘은 자동으로 생성 된 배경과 함께 표시 됩니다.
+
 <!-- 1429026 -->
 이제 Windows 회사 포털 앱을 자동으로 생성 된 배경과 함께 앱 아이콘을 표시합니다. 이 백그라운드는 검색할 수 있으면이 아이콘의 주요 색상 기반 합니다. 해당 하는 경우 백그라운드 앱 타일에 이전에 표시 된 회색 테두리를 대체 합니다. 10.3.3451.0 보다 나중 버전의 회사 포털에서이 변경 내용을 볼 수 있습니다.
 
 #### <a name="changes-to-company-portal-enrollment-for-ios-12-devices"></a>IOS 용 회사 포털 등록 12 장치 변경
+
 <!-- 3448635 -->  
 IOS 용 회사 포털 앱의 등록 화면 및 Apple iOS 12.2에에서 릴리스된 MDM 등록 변경 내용에 맞게 단계를 업데이트 합니다. 이제 업데이트 된 워크플로 것인지 묻습니다.
+
 - Safari (Safari)를 통해 회사 포털 웹 사이트를 열고 회사 포털 앱에 반환 하기 전에 관리 프로필을 다운로드할 수 있습니다. 
 - 장치에서 관리 프로필을 설치 하려면 설정 앱을 엽니다.
 - 등록을 완료 하려면 회사 포털 앱에 반환 합니다.  
@@ -79,30 +88,31 @@ IOS 용 회사 포털 앱의 등록 화면 및 Apple iOS 12.2에에서 릴리스
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
 #### <a name="create-new-intune-tenants-in-azure-portal"></a>Azure portal에서 새 Intune 테 넌 트 만들기
+
 <!--3754067-->  
 Intune은 1902의 업데이트는 새 하이브리드 MDM 테 넌 트를 만들 수 있습니다 제거 되었습니다. Azure portal에서 모든 새 Intune 테 넌 트를 만듭니다. 거듭 말하지만 [하이브리드 MDM은 사용 되지 않습니다.](/sccm/mdm/understand/hybrid-mobile-device-management)합니다. 현재 하이브리드 MDM 고객을 Intune 독립 실행형 가능한 한 빨리 마이그레이션해야 합니다.
 
 자세한 내용은 [Intune 지원 블로그 게시물](https://aka.ms/hybrid_notification)을 참조하세요.
 
+#### <a name="intune-uses-google-play-protect-apis-on-android-devices"></a>Intune에서 Google Play 보호 Api를 사용 하 여 Android 장치에서
 
-#### <a name="intune-uses-google-play-protect-apis-on-android-devices"></a>Intune에서 Google Play 보호 Api를 사용 하 여 Android 장치에서 
 <!--2577355-->  
-일부 관리자는 사용자가 루트 있습니다 위치 하는 BYOD 가로 또는 탈 옥 직면 하는 휴대폰입니다. 이 동작을 되지는 잘못-내려온, 하는 동안 최종 사용자 장치에서 조직의 데이터를 보호 하기 위해 설정 된 여러 Intune 정책의 바이패스를 발생 합니다. 따라서 Intune 등록 및 등록 되지 않은 장치에 대 한 루트 및 탈 옥 검색을 제공합니다. 
+일부 관리자는 사용자가 루트 있습니다 위치 하는 BYOD 가로 또는 탈 옥 직면 하는 휴대폰입니다. 이 동작을 되지는 잘못-내려온, 하는 동안 최종 사용자 장치에서 조직의 데이터를 보호 하기 위해 설정 된 여러 Intune 정책의 바이패스를 발생 합니다. 따라서 Intune 등록 및 등록 되지 않은 장치에 대 한 루트 및 탈 옥 검색을 제공합니다.
 
-이 릴리스에서 Intune은 이제 Google Play 보호 Api에 등록 되지 않은 장치에 대 한 기존 루트 검색 검사는 추가할 활용 합니다. Google에서 발생 하는 루트 검색 검사의 전체를 공유 하지 않습니다 반면 이전 장치에서 최신 OS 업데이트를 가져오는 것을 장치 사용자 지정에서 어떤 이유로 장치 루 사용자를 검색 하는 이러한 Api 예정입니다. 이러한 사용자에이 게 회사 데이터에 액세스 하지 못하도록 차단 될 수 있습니다 또는 해당 정책 사용 하도록 설정 앱에서 회사 계정을 초기화할 수 있습니다. 
-
+이 릴리스에서 Intune은 이제 Google Play 보호 Api에 등록 되지 않은 장치에 대 한 기존 루트 검색 검사는 추가할 활용 합니다. Google에서 발생 하는 루트 검색 검사의 전체를 공유 하지 않습니다 반면 이전 장치에서 최신 OS 업데이트를 가져오는 것을 장치 사용자 지정에서 어떤 이유로 장치 루 사용자를 검색 하는 이러한 Api 예정입니다. 이러한 사용자에이 게 회사 데이터에 액세스 하지 못하도록 차단 될 수 있습니다 또는 해당 정책 사용 하도록 설정 앱에서 회사 계정을 초기화할 수 있습니다.
 
 #### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10"></a>새 **앱 범주** Windows 10 용 회사 포털 앱에서 화면
+
 <!--3834780-->  
 Windows 10 용 회사 포털에서에서 앱 찾아보기 및 선택 환경을 개선 하기 위해 이제 여기 라는 새 화면이 **앱 범주**합니다. 이제 사용자와 같은 범주로 정렬 하는 앱을 볼 **추천**를 **교육용**, 및 **생산성**합니다. 이 변경 내용이 10.3.3451.0 회사 포털 버전 이상. 새 화면을 보려면 [앱 UI의에서 새로운 기능](https://docs.microsoft.com/intune/whats-new)합니다. 회사 포털에서 앱에 대 한 자세한 내용은 참조 하세요. [설치 하 고 장치에서 앱 공유](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows)합니다.  
 
+#### <a name="macos-users-are-prompted-to-update-their-password"></a>macOS 사용자는 자신의 암호를 업데이트 하 라는 메시지가 표시 됩니다.
 
-#### <a name="macos-users-are-prompted-to-update-their-password"></a>macOS 사용자는 자신의 암호를 업데이트 하 라는 메시지가 표시 됩니다. 
 <!--1873216-->  
 MacOS 장치에서 최종 사용자에 게 해당 암호를 업데이트 하 라는 메시지가 표시 됩니다. 이 프롬프트는 사용자 장치에 로그인과 같은 인증에 필요한 작업을 실행할 때마다 발생 합니다. 사용자가 키 집합 액세스를 요청 하는 등의 관리 권한이 필요한 작업을 수행 하는 경우 자신의 암호를 업데이트 하 라는 메시지도 표시 합니다.  
 
-
 #### <a name="intune-macos-company-portal-dark-mode"></a>Intune macOS 회사 포털 어두운 모드
+
 <!--3300524-->  
 이제 Intune macOS 회사 포털 macOS 용 어두운 모드를 지원합니다. MacOS 10.14 이상 장치에서 어두운 모드를 사용 하도록 설정 하면 회사 포털에 해당 모드를 반영 하는 색으로 모양을 조정 합니다.
 
@@ -112,17 +122,19 @@ MacOS 장치에서 최종 사용자에 게 해당 암호를 업데이트 하 라
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
-#### <a name="intune-app-protection-policies-ui-update"></a>Intune 앱 보호 정책 UI 업데이트 
+#### <a name="intune-app-protection-policies-ui-update"></a>Intune 앱 보호 정책 UI 업데이트
+
 <!--3251427-->  
 설정에 대 한 레이블 및 각 쉽게 이해할 수 있도록 Intune 앱 보호에 대 한 단추 변경 했습니다. 변경 내용 중 일부는 다음과 같습니다.  
 
 - 컨트롤에서 변경 됩니다 **예** / **없음** 컨트롤을 주로 **블록** / **허용** 및**사용 안 함** / **사용** 컨트롤입니다. 레이블이 업데이트 됩니다.  
 
-- 설정 변경, 설정 및 레이블을 side-by-side-되므로 컨트롤 더 나은 탐색을 제공 합니다.   
+- 설정 변경, 설정 및 레이블을 side-by-side-되므로 컨트롤 더 나은 탐색을 제공 합니다.  
 
 기본 설정 및 설정 수가 동일 하지만이 변경 이해, 탐색 하 고, 선택한 앱 보호 정책을 적용할 쉽게 자세한 설정을 활용할 수 있습니다. 자세한 내용은 [iOS 설정](https://docs.microsoft.com/intune/app-protection-policy-settings-ios#access-requirements) 하 고 [Android 설정](https://docs.microsoft.com/intune/app-protection-policy-settings-android#access-requirements)합니다.
 
 #### <a name="tenant-status-dashboard"></a>테 넌 트 상태 대시보드
+
 <!--1124854-->  
 새 [테 넌 트 상태 페이지](https://docs.microsoft.com/intune/tenant-status) 테 넌 트에 대 한 상태와 관련된 세부 정보를 볼 수 있는 단일 위치를 제공 합니다. 대시보드는 네 가지 영역으로 구분 됩니다.
 
@@ -136,11 +148,13 @@ MacOS 장치에서 최종 사용자에 게 해당 암호를 업데이트 하 라
 
 - **Intune 뉴스**: 테 넌 트의 활성 메시지를 표시합니다. 테 넌 트 최신 Intune 기능을 받으면 메시지 알림 등을 포함 합니다.  이 섹션의 정보는 Office 메시지 센터에서 직접 검색 됩니다.  
 
-#### <a name="new-help-and-support-experience-in-company-portal-for-windows-10"></a>새 도움말 및 지원 환경을 Windows 10 용 회사 포털 
+#### <a name="new-help-and-support-experience-in-company-portal-for-windows-10"></a>새 도움말 및 지원 환경을 Windows 10 용 회사 포털
+
 <!--1488939-->  
 새 회사 포털 도움말 및 지원 페이지는 사용자가 문제를 해결 하 고 앱 및 액세스 문제에 대 한 도움을 요청 하는 데 도움이 됩니다. 새 페이지에서 오류 및 진단 로그 세부 정보를 전자 메일 수 있으며 조직의 기술 지원팀 세부 정보를 찾습니다. 또한 관련 Intune 설명서에 대 한 링크를 사용 하 여 FAQ 섹션을 찾을 수 있습니다. 자세한 내용 및 스크린샷을 참조 하세요 [도움말 및 Windows 10 용 회사 포털에서에서 지원 받기](https://docs.microsoft.com/intune-user-help/help-and-support-windows-cpapp)합니다.
 
 #### <a name="some-bitlocker-settings-support-windows-10-pro-edition"></a>Windows 10 Pro edition을 지원 하는 일부 BitLocker 설정
+
 <!--2727036-->  
 BitLocker를 포함 하 여 Windows 10 장치에서 endpoint protection 설정을 설정 하는 구성 항목을 만들 수 있습니다. 이 업데이트에는 일부 BitLocker 설정에 대 한 Windows 10 Professional edition에 대 한 지원을 추가합니다.
 
@@ -153,14 +167,17 @@ BitLocker를 포함 하 여 Windows 10 장치에서 endpoint protection 설정�
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
 #### <a name="microsoft-auto-update-version-450-required-for-macos-devices"></a>MacOS 장치에 필요한 Microsoft 자동 업데이트 버전 4.5.0
+
 <!--3503442-->  
 회사 포털 및 기타 Office 응용 프로그램에 대 한 업데이트를 받는 작업을 계속 하려면 Microsoft 자동 업데이트 4.5.0 macOS 장치를 Intune에서 관리 되는 업그레이드 해야 합니다. 사용자가 Office 앱에 대 한이 버전을 이미 있을 수도 있습니다.
 
-#### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys"></a>Intune 앱 SDK는 256 비트 암호화 키 지원 
+#### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys"></a>Intune 앱 SDK는 256 비트 암호화 키 지원
+
 <!--1832174-->  
 Android 용 Intune 앱 SDK는 이제 앱 보호 정책에 의해 암호화가 설정 된 경우 256 비트 암호화 키를 사용 합니다. 콘텐츠 및 이전 SDK 버전을 사용 하는 앱을 사용 하 여 호환성을 위해 128 비트 키의 지원을 제공 하기 위해 SDK는 계속 됩니다.
 
-#### <a name="intune-requires-macos-1012-or-later"></a>Intune에 macOS를 10.12 이상 필요합니다. 
+#### <a name="intune-requires-macos-1012-or-later"></a>Intune에 macOS를 10.12 이상 필요합니다.
+
 <!--2827778-->  
 이제 Intune에 macOS 10.12 이상 버전에 필요 합니다. 이전 macOS 버전을 사용 하 여 장치를 Intune에 등록 하려면 회사 포털을 사용할 수 없습니다. 지원 및 새로운 기능을 받으려면 사용자가 장치 macOS 10.12 이상으로 업그레이드 하 고 회사 포털을 최신 버전으로 업그레이드 해야 합니다.
 
@@ -173,10 +190,12 @@ Android 용 Intune 앱 SDK는 이제 앱 보호 정책에 의해 암호화가 �
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
 #### <a name="new-intune-device-subscription-sku"></a>새 Intune 장치 구독 SKU
+
 <!--3312071-->  
 하는 데 낮은 비용의 기업에서 장치를 관리 하는 새 장치 기반 구독 SKU 출시 되었습니다. 이 Intune 장치 SKU는 월별로 장치당 사용이 허가 됩니다. 가격 라이선스 프로그램에 따라 다릅니다. 이 제품은 직접 채널, EA (기업 계약), Microsoft 제품 및 mpsa 서비스 프로그램 (포함), 및 오픈 클라우드 솔루션 공급자 (CSP)입니다.
 
-#### <a name="new-apps-support-with-app-protection-policies"></a>앱 보호 정책을 사용 하 여 새 앱을 지원합니다. 
+#### <a name="new-apps-support-with-app-protection-policies"></a>앱 보호 정책을 사용 하 여 새 앱을 지원합니다.
+
 <!--3330037-->  
 사용 하 여 다음 앱을 관리할 수 있습니다 [Intune 앱 보호 정책을](https://docs.microsoft.com/intune/app-protection-policies):
 
@@ -185,7 +204,7 @@ Android 용 Intune 앱 SDK는 이제 앱 보호 정책에 의해 암호화가 �
 - PowerApps (Android, iOS)  
 - 흐름 (Android, iOS)  
 
-다른 Intune 정책 관리 앱과 같은 이러한 앱에 대 한 회사 데이터 및 제어 데이터 전송을 보호 하기 위해 사용 하 여 앱 보호 정책입니다. 
+다른 Intune 정책 관리 앱과 같은 이러한 앱에 대 한 회사 데이터 및 제어 데이터 전송을 보호 하기 위해 사용 하 여 앱 보호 정책입니다.
 
 > [!Note]  
 > 흐름을 콘솔에 표시 아직 없는 경우 만들거나 모든 앱 보호 정책을 편집할 때 흐름을 추가 합니다. 선택 **더 많은 앱**를 지정 합니다 *앱 ID* 입력된 필드의 흐름에 대 한 합니다. Android 용도로 `com.microsoft.flow`를 사용 하 여 iOS 및 `com.microsoft.procsimo`합니다.  
@@ -196,35 +215,42 @@ Android 용 Intune 앱 SDK는 이제 앱 보호 정책에 의해 암호화가 �
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
-#### <a name="updates-for-application-transport-security"></a>애플리케이션 전송 보안 업데이트 
+#### <a name="updates-for-application-transport-security"></a>애플리케이션 전송 보안 업데이트
+
 <!--748318-->  
 Microsoft Intune 지원 계층 TLS (전송 보안) 1.2 이상 Intune를 기본적으로 더 안전 하 고 Microsoft Office 365와 같은 다른 Microsoft 서비스에 맞게 최고의에서 암호화를 제공 합니다. 이 요구 사항을 충족하기 위해 iOS 및 macOS 회사 포털은 Apple의 업데이트된 ATS(애플리케이션 전송 보안) 요구 사항(TLS 1.2 이상도 필요)을 적용합니다. ATS는 HTTPS를 통한 모든 앱 통신에 더 엄격한 보안을 적용하는 데 사용됩니다. 이 변경 사항은 iOS 및 macOS 회사 포털 앱을 사용하는 Intune 고객에게 영향을 줍니다. 자세한 내용은 [Intune moving to TLS 1.2 for encryption](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)(Intune이 암호화를 위해 TLS 1.2로 전환)을 참조하세요.
 
-#### <a name="remove-an-email-profile-from-a-device-even-when-theres-only-one-email-profile"></a>하나의 이메일 프로필만 있는 경우에도 디바이스에서 이메일 프로필 제거 
+#### <a name="remove-an-email-profile-from-a-device-even-when-theres-only-one-email-profile"></a>하나의 이메일 프로필만 있는 경우에도 디바이스에서 이메일 프로필 제거
+
 <!--1818139-->  
-이전에 전자 메일 프로필 인 경우 장치에서 전자 메일 프로필을 제거할 수 없습니다. 이 업데이트를 통해 이 동작이 변경됩니다. 이제는 디바이스에 이메일 프로필이 유일한 경우에도 이메일 프로필을 삭제할 수 있습니다. 
+이전에 전자 메일 프로필 인 경우 장치에서 전자 메일 프로필을 제거할 수 없습니다. 이 업데이트를 통해 이 동작이 변경됩니다. 이제는 디바이스에 이메일 프로필이 유일한 경우에도 이메일 프로필을 삭제할 수 있습니다.
 
-#### <a name="remove-pkcs-and-scep-certificates-from-your-devices"></a>디바이스에서 PKCS 및 SCEP 인증서 제거 
+#### <a name="remove-pkcs-and-scep-certificates-from-your-devices"></a>디바이스에서 PKCS 및 SCEP 인증서 제거
+
 <!--3218390-->  
-일부 시나리오에서는 SCEP 및 PKCS 인증서 구성 준수 배포 또는 기존 SCEP 또는 PKCS 프로필을 업데이트 하는 관리자를 삭제 하면 그룹에서 정책을 제거 하는 경우에 장치에서 유지 합니다. 
+일부 시나리오에서는 SCEP 및 PKCS 인증서 구성 준수 배포 또는 기존 SCEP 또는 PKCS 프로필을 업데이트 하는 관리자를 삭제 하면 그룹에서 정책을 제거 하는 경우에 장치에서 유지 합니다.
 
-이 업데이트를 통해 이 동작이 변경됩니다. PKCS 및 SCEP 인증서가 디바이스에서 제거되는 경우와 이러한 인증서가 디바이스에 남아있는 시나리오가 있습니다. 
+이 업데이트를 통해 이 동작이 변경됩니다. PKCS 및 SCEP 인증서가 디바이스에서 제거되는 경우와 이러한 인증서가 디바이스에 남아있는 시나리오가 있습니다.
 
 #### <a name="access-to-key-profile-properties-using-the-company-portal-app"></a>회사 포털 앱을 사용하여 주요 프로필 속성 액세스
-<!--772203-->  
-최종 사용자는 이제 회사 포털 앱에서 암호 재설정과 같은 주요 계정 속성 및 작업에 액세스할 수 있습니다. 
 
-#### <a name="pin-prompt-when-you-change-fingerprints-or-face-id-on-an-ios-device"></a>iOS 디바이스에서 지문 또는 얼굴 ID를 변경할 때 표시되는 PIN 프롬프트  
+<!--772203-->  
+최종 사용자는 이제 회사 포털 앱에서 암호 재설정과 같은 주요 계정 속성 및 작업에 액세스할 수 있습니다.
+
+#### <a name="pin-prompt-when-you-change-fingerprints-or-face-id-on-an-ios-device"></a>iOS 디바이스에서 지문 또는 얼굴 ID를 변경할 때 표시되는 PIN 프롬프트
+
 <!--2637704-->  
 이제 iOS 디바이스에서 생체 인식 내용을 변경한 후 PIN을 입력하라는 메시지가 사용자에게 표시됩니다. 여기에는 등록된 지문 또는 얼굴 ID의 변경이 포함됩니다. 프롬프트의 타이밍은 ‘다음 시간 이후에 액세스 요구 사항 다시 확인:’ 시간 제한의 구성 방법에 따라 다릅니다.  PIN이 설정되지 않은 경우에는 설정하라는 메시지가 사용자에게 표시됩니다.  
 
 이 기능은 iOS에만 제공되고 iOS용 Intune 앱 SDK, 버전 8.1.1 이상을 통합하는 애플리케이션의 참여가 필요합니다. 대상 애플리케이션에 동작이 적용될 수 있도록 SDK의 통합이 필요합니다. 이 통합은 롤링 기반으로 특정 애플리케이션 팀에서 수행합니다. 참여하는 일부 앱에는 WXP, Outlook, Managed Browser 및 Yammer가 포함됩니다.
 
-#### <a name="end-user-device-and-app-content-menu"></a>최종 사용자 디바이스 및 앱 콘텐츠 메뉴 
+#### <a name="end-user-device-and-app-content-menu"></a>최종 사용자 디바이스 및 앱 콘텐츠 메뉴
+
 <!--2771453-->  
-최종 사용자는 이제 디바이스와 앱에서 상황에 맞는 메뉴를 사용하여 디바이스 이름 바꾸기 또는 준수 확인 같은 일반적인 작업을 트리거할 수 있습니다. 
+최종 사용자는 이제 디바이스와 앱에서 상황에 맞는 메뉴를 사용하여 디바이스 이름 바꾸기 또는 준수 확인 같은 일반적인 작업을 트리거할 수 있습니다.
 
 #### <a name="windows-company-portal-keyboard-shortcuts"></a>Windows 회사 포털 바로 가기 키
+
 <!--2771518-->  
 최종 사용자는 이제 바로 가기 키(액셀러레이터 키)를 사용하여 Windows 회사 포털에서 앱 및 디바이스 작업을 트리거할 수 있습니다.
 
@@ -235,6 +261,7 @@ Microsoft Intune 지원 계층 TLS (전송 보안) 1.2 이상 Intune를 기본�
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
 #### <a name="new-user-experience-update-for-the-company-portal-website"></a>회사 포털 웹 사이트의 새로운 사용자 환경 업데이트
+
 <!--2000968-->  
 여러분의 의견에 따라에서는 회사 포털 웹 사이트에 새 기능을 추가 했습니다. Android, iOS 및 Windows 디바이스의 기존 기능과 유용성이 크게 향상됩니다. 사이트의 여러 영역에 새롭고 현대화된 반응형 디자인이 적용되었습니다. 이들 영역에는 디바이스 세부 정보, 피드백 및 지원, 디바이스 개요가 들어 있습니다. 다음과 같은 개선 사항도 볼 수 있습니다.
 
@@ -253,13 +280,14 @@ Microsoft Intune 지원 계층 TLS (전송 보안) 1.2 이상 Intune를 기본�
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
 #### <a name="updated-intune-app-sdk-for-android-is-now-available"></a>업데이트된 Android용 Intune 앱 SDK 사용 가능
+
 <!--2744271-->  
-Android 용 Intune 앱 SDK의 업데이트 된 버전은 Android 9 원형 릴리스를 지원 하기 위해 사용할 수 있습니다. 앱 개발자이며 Android용 Intune SDK를 사용하는 경우 업데이트된 버전의 Intune 앱 SDK를 설치하세요. 이 업데이트를 통해 Android 앱의 Intune 기능이 Android 9 Pie 디바이스에서도 예상대로 작동하도록 할 수 있습니다. 이 버전의 Intune 앱 SDK에서는 SDK 업데이트를 수행하는 기본 제공 플러그 인을 제공합니다. 통합된 기존 코드를 다시 쓸 필요가 없습니다. 자세한 내용은 [Intune SDK for Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)(Android용 Intune SDK)를 참조하세요. 
+Android 용 Intune 앱 SDK의 업데이트 된 버전은 Android 9 원형 릴리스를 지원 하기 위해 사용할 수 있습니다. 앱 개발자이며 Android용 Intune SDK를 사용하는 경우 업데이트된 버전의 Intune 앱 SDK를 설치하세요. 이 업데이트를 통해 Android 앱의 Intune 기능이 Android 9 Pie 디바이스에서도 예상대로 작동하도록 할 수 있습니다. 이 버전의 Intune 앱 SDK에서는 SDK 업데이트를 수행하는 기본 제공 플러그 인을 제공합니다. 통합된 기존 코드를 다시 쓸 필요가 없습니다. 자세한 내용은 [Intune SDK for Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)(Android용 Intune SDK)를 참조하세요.
 
 Intune의 이전 배지 스타일을 사용하고 있는 경우 서류 가방 아이콘을 사용하도록 전환하세요. 브랜딩에 대한 자세한 내용은 [Intune App Badging System](https://github.com/msintuneappsdk/intune-app-partner-badge)(Intune 앱 배지 시스템)을 참조하세요.
 
-
 #### <a name="support-for-security-enhancement-in-intune-service"></a>Intune 서비스의 보안 강화 지원
+
 <!--2520152-->  
 이제 모든 할당 된 준수 정책 없는 장치 혼성에서 준수 하지는 지정할 수 있습니다. Azure Portal의 Intune에서 이 설정을 구성합니다. 이 기능을 사용하여 내부 리소스를 보호하는 것이 좋습니다.
 
@@ -268,10 +296,12 @@ Intune의 이전 배지 스타일을 사용하고 있는 경우 서류 가방 �
 이 기능에 미치는 영향을 확인하는 데 도움이 되도록 [TechNet 갤러리의 스크립트](https://gallery.technet.microsoft.com/SQL-Query-for-Hybrid-MDM-5bcb8695)가 제공되었습니다. Configuration Manager 데이터베이스에 대해 이 스크립트를 실행하면 준수 정책의 대상이 아닌 디바이스가 나열됩니다.
 
 자세한 내용은 다음 아티클을 참조하세요.
-- [Intune 서비스의 보안 강화 기능](https://aka.ms/compliance_policies) 블로그 게시물 
+
+- [Intune 서비스의 보안 강화 기능](https://aka.ms/compliance_policies) 블로그 게시물
 - [Configuration Manager의 장치 준수 정책](/sccm/mdm/deploy-use/device-compliance-policies)
 
-#### <a name="updates-to-out-of-compliance-messages-in-company-portal-app"></a>회사 포털 앱에서 규정에 맞지 않는 메시지에 대한 업데이트 
+#### <a name="updates-to-out-of-compliance-messages-in-company-portal-app"></a>회사 포털 앱에서 규정에 맞지 않는 메시지에 대한 업데이트
+
 <!--1832222-->  
 장치 사용자는 장치가 규정 준수의 때 표시 되는 메시지를 수정 하는 것입니다. 메시지의 원래 의미는 유지하지만 기술 용어를 줄이고 더 친근한 언어로 업데이트합니다. 설명서와 수정 단계에 대한 링크도 새로 고쳐서 최신 상태로 유지합니다.  
 
@@ -281,17 +311,20 @@ Intune의 이전 배지 스타일을 사용하고 있는 경우 서류 가방 �
 
 - 이후: *장치에 로그인 한 동안 조직 검사 되지 않습니다. 연결을 다시 설정하려면 디바이스에서 회사 포털 앱을 열고 디바이스의 설정 확인을 탭하세요.*  
 
-#### <a name="select-device-categories-by-using-the-access-work-or-school-settings"></a>회사 또는 학교 액세스 설정을 사용하여 디바이스 범주 선택 
+#### <a name="select-device-categories-by-using-the-access-work-or-school-settings"></a>회사 또는 학교 액세스 설정을 사용하여 디바이스 범주 선택
+
 <!--1058963-->  
 설정한 경우 [장치 그룹 매핑을](https://docs.microsoft.com/intune/device-group-mapping), Windows 10에서 사용자를 통해 등록 한 후 장치 범주를 선택 하 라는 메시지가 표시 됩니다는 **Connect** 단추 **설정**  >  **계정** > **회사 또는 학교 액세스**합니다.  
 
-#### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Windows용 회사 포털 앱의 새 검색 환경 
+#### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Windows용 회사 포털 앱의 새 검색 환경
+
 <!--2317227-->  
-이제을 찾아보거나 Windows 회사 포털 앱에서 앱에 대 한 검색 하는 경우 기존 전환할 **타일** 보기 및 새로 추가한 **세부 정보** 보기. 새 보기는 이름, 게시자, 게시 날짜 및 설치 상태와 같은 애플리케이션 세부 정보를 나열합니다. 
+이제을 찾아보거나 Windows 회사 포털 앱에서 앱에 대 한 검색 하는 경우 기존 전환할 **타일** 보기 및 새로 추가한 **세부 정보** 보기. 새 보기는 이름, 게시자, 게시 날짜 및 설치 상태와 같은 애플리케이션 세부 정보를 나열합니다.
 
 **앱** 페이지의 **설치된** 보기를 사용하면 완료 및 진행 중인 앱 설치에 대한 세부 정보를 볼 수 있습니다. 새 보기의 모습을 보려면 [UI의 새로운 기능](https://docs.microsoft.com/intune/whats-new-app-ui)을 참조하세요.
 
-#### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Windows용 회사 포털 앱에서 더 많은 동기화 기회  
+#### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Windows용 회사 포털 앱에서 더 많은 동기화 기회
+
 <!--2683177-->  
 Windows 용 회사 포털 앱은 이제 Windows 작업 표시줄 및 시작 메뉴에서 직접 동기화를 시작할 수 있습니다. 이 기능은 디바이스를 동기화하고 회사 리소스에 액세스하는 작업만 수행하는 경우에 특히 유용합니다. 새로운 기능에 액세스하려면 시작 메뉴 또는 작업 표시줄에 고정된 회사 포털 아이콘을 마우스 오른쪽 단추로 클릭합니다. 메뉴 옵션에서 **이 디바이스 동기화**를 선택합니다. (이 메뉴는 점프 목록이라고도 합니다.) 회사 포털은 **설정** 페이지에서 열리고 동기화를 시작합니다. 업데이트 프로시저는 [수동으로 Windows 디바이스 동기화](https://docs.microsoft.com/intune/intune-user-help/sync-your-device-manually-windows#sync-from-device-taskbar-or-start-menu)를 참조하세요.
 
@@ -301,11 +334,13 @@ Windows 용 회사 포털 앱은 이제 Windows 작업 표시줄 및 시작 메�
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
-#### <a name="access-to-macos-company-portal-pre-release-build"></a>macOS 회사 포털 시험판 빌드에 액세스 
+#### <a name="access-to-macos-company-portal-pre-release-build"></a>macOS 회사 포털 시험판 빌드에 액세스
+
 <!--1734766-->  
 참가자 프로그램에 참여 하 여 초기 빌드를 받기 위해 등록 Microsoft 자동 업데이트를 사용 합니다. 등록하면 업데이트된 회사 포털을 사용해 본 이후에 최종 사용자에게 제공할 수 있습니다.
 
-#### <a name="intune-app-protection-policies-and-microsoft-edge"></a>Intune 앱 보호 정책 및 Microsoft Edge 
+#### <a name="intune-app-protection-policies-and-microsoft-edge"></a>Intune 앱 보호 정책 및 Microsoft Edge
+
 <!--1818968,1818969-->  
 모바일 디바이스(iOS 및 Android)용 Microsoft Edge 브라우저에서는 이제 Microsoft Intune 앱 보호 정책을 지원합니다. Edge애플리케이션에서 회사 Azure Active Directory 계정으로 로그인하는 iOS 및 Android 장치의 사용자는 Intune에서 보호합니다. IOS 디바이스에서 **웹 콘텐츠에 대해 관리되는 브라우저 요구** 정책은 관리되는 경우 사용자가 Edge에서 링크를 열 수 있게 합니다.
 
@@ -315,7 +350,8 @@ Windows 용 회사 포털 앱은 이제 Windows 작업 표시줄 및 시작 메�
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
-#### <a name="requesting-help-in-the-company-portal-for-windows-10"></a>Windows 10용 회사 포털에서 도움말 요청 
+#### <a name="requesting-help-in-the-company-portal-for-windows-10"></a>Windows 10용 회사 포털에서 도움말 요청
+
 <!--1874137-->  
 이제 사용자가 문제에 대한 도움을 받기 위해 워크플로를 시작할 때 Windows 10용 회사 포털에서 Microsoft로 직접 앱 로그를 보낼 수 있습니다. 이 동작을 통해 Microsoft에 제기되는 문제를 더욱 쉽게 해결할 수 있습니다.  
 
@@ -323,19 +359,21 @@ Windows 용 회사 포털 앱은 이제 Windows 작업 표시줄 및 시작 메�
 ### <a name="new-in-configuration-manager-current-branch"></a>Configuration Manager(현재 분기)의 새로운 기능
 
 #### <a name="android-for-work-and-lookout-onboarding-moved-to-intune-on-azure"></a>Azure에서 Intune으로 이동된 Android for Work 및 Lookout 온보딩
+
 <!--2355022,2357366-->  
 최신 Intune 업데이트를 사용하여 Azure Portal에서 Intune의 하이브리드 모바일 디바이스 관리 테넌트에서 Android for Work 통합 및 Lookout 모바일 위협 방어 통합을 사용하도록 설정하고 관리할 수 있습니다. 업데이트 전에 이러한 설정은 Intune 클래식(Silverlight) 포털에서만 구성할 수 있었습니다.
- 
+
 참고: Lookout에 하이브리드에 지원 되는 모바일 위협 defense (MTD) 공급자입니다. 전에 다른 모든 MTD 공급자와 통합한 경우 Azure Portal의 Intune에 계속 표시됩니다. 커넥터를 삭제하는 경우 다시 추가할 수 없습니다.
- 
+
 이러한 변경은 기존 기능에 영향을 주지 않습니다. 관련 앱, 보고 및 정책을 관리하려면 Configuration Manager 콘솔을 계속 사용합니다.
- 
+
 자세한 내용은 다음 아티클을 참조하세요.
+
 - [Android 하이브리드 장치 관리 설정](/sccm/mdm/deploy-use/enroll-hybrid-android)
 - [장치, 네트워크 및 응용 프로그램 위험에 따라 회사 리소스에 대한 액세스 관리](/sccm/mdm/deploy-use/lookout-mobile-threat-defense-in-configuration-manager)
 
-
 #### <a name="support-for-new-versions-of-cisco-anyconnect-client-for-ios"></a>새 버전의 iOS용 Cisco AnyConnect 클라이언트 지원
+
 <!--1357393-->  
 iOS 버전 4.0.7 이상을 위한 Cisco AnyConnect를 지원할 수 있습니다. 이렇게 할 경우 기존 Cisco AnyConnect VPN 프로필에 **Cisco Legacy AnyConnect**라는 레이블이 지정되고, 계속해서 이전처럼 작동합니다. **Cisco AnyConnect** 옵션은 iOS 버전 4.0.7 이상에서 Cisco AnyConnect와 함께 작동하는 새 VPN 프로필에 사용됩니다.
 
@@ -343,7 +381,7 @@ iOS 버전 4.0.7 이상을 위한 Cisco AnyConnect를 지원할 수 있습니다
   > iOS용 Cisco AnyConnect 4.0.07x 이상은 버전 1802에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 도입되었습니다. [업데이트 4163547](https://support.microsoft.com/help/4163547)에서 버전 1802부터 이 기능은 더 이상 시험판 기능이 아닙니다.  
 
 > [!Note]  
-> macOS VPN 프로필에는 계속해서 **Cisco Legacy AnyConnect** 옵션을 사용하세요. 
+> macOS VPN 프로필에는 계속해서 **Cisco Legacy AnyConnect** 옵션을 사용하세요.
 
 
 
@@ -351,51 +389,53 @@ iOS 버전 4.0.7 이상을 위한 Cisco AnyConnect를 지원할 수 있습니다
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
-#### <a name="intune-adapts-to-fluent-design-system-in-the-company-portal-app-for-windows-10"></a>Windows 10용 회사 포털 앱에서 Intune이 Fluent Design System에 맞게 조정됨 
+#### <a name="intune-adapts-to-fluent-design-system-in-the-company-portal-app-for-windows-10"></a>Windows 10용 회사 포털 앱에서 Intune이 Fluent Design System에 맞게 조정됨
+
 <!--1195010-->  
 Windows 10용 Intune 회사 포털 앱이 [Fluent Design System의 탐색 보기](/windows/uwp/design/basics/navigation-basics)로 업데이트되었습니다. 앱의 옆쪽에 모든 최상위 페이지의 정적 세로 목록이 표시됩니다. 링크를 클릭하여 빠르게 페이지를 보고 페이지 간에 전환할 수 있습니다. 이 업데이트는 Intune에서 더욱 공감할 수 있고 친숙한 적응형 환경을 만들려는 Microsoft의 지속적인 노력의 일부로 여러 업데이트 중 첫 번째로 선보이는 것입니다. 업데이트된 형태를 보려면 [앱 UI의 새로운 기능](/intune/whats-new-app-ui)으로 이동하세요.
 
 #### <a name="improved-device-tiles-in-the-windows-10-company-portal"></a>Windows 10 회사 포털의 개선된 디바이스 타일
+
 <!--2213364-->  
 저시력 사용자가 더 쉽게 액세스할 수 있고 화면 읽기 도구의 성능이 개선되도록 타일이 업데이트되었습니다.
 
-
 #### <a name="test-the-company-portal-for-macos-on-virtual-machines"></a>가상 머신에서 macOS용 회사 포털 테스트
+
 <!--2216679-->  
 Microsoft에서는 IT 관리자가 Parallels Desktop 및 VMware Fusion에서 가상 머신의 macOS용 회사 포털 앱을 테스트하는 데 도움이 되는 지침을 게시했습니다. 자세한 내용은 [테스트를 위해 macOS 가상 머신 등록](/intune/macos-enroll#enroll-virtual-macos-machines-for-testing)을 참조하세요.
 
-
 #### <a name="send-diagnostic-reports-in-company-portal-app-for-macos"></a>macOS용 회사 포털 앱에 진단 보고서 보내기
+
 <!--2216677-->  
 사용자가 Intune 관련 오류를 보고하는 방법을 개선하기 위해 macOS 디바이스용 회사 포털 앱이 업데이트되었습니다. 회사 포털 앱에서 직원은 다음을 수행할 수 있습니다.
 
 - Microsoft 개발자 팀에 직접 진단 보고서를 업로드합니다.
 - 인시던트 ID를 회사의 IT 지원 팀에게 이메일로 전송합니다.
 
+#### <a name="updated-help-experience-on-company-portal-app-for-android"></a>Android용 회사 포털 앱의 도움말 환경 업데이트
 
-#### <a name="updated-help-experience-on-company-portal-app-for-android"></a>Android용 회사 포털 앱의 도움말 환경 업데이트 
 <!--1631531-->  
 Android 플랫폼에 대한 모범 사례에 맞게 Android용 회사 포털 앱의 도움말 환경을 업데이트했습니다. 이제 앱에서 문제가 발생하면 **메뉴** >  **도움말**를 탭하고 다음을 수행할 수 있습니다.
+
 - 진단 로그를 Microsoft에 업로드합니다.
 - 회사 지원 담당자에게 문제와 인시던트 ID를 설명하는 메일을 보냅니다.
 
+#### <a name="update-where-to-configure-your-app-protection-policies"></a>앱 보호 정책을 구성하는 위치 업데이트
 
-#### <a name="update-where-to-configure-your-app-protection-policies"></a>앱 보호 정책을 구성하는 위치 업데이트 
 <!--2144597-->  
-Microsoft Intune 서비스 내의 Azure portal에서 일시적으로 리디렉션됩니다 하려고 합니다 **Intune 앱 보호** 영역을는 **모바일 앱** 섹션. 모든 앱 보호 정책은 앱 구성 아래 Intune의 **모바일 앱** 섹션에 이미 있습니다. Intune 앱 보호로 이동하는 대신 바로 Intune으로 이동하세요. 2018년 4월에 리디렉션을 중지하고 **Intune 앱 보호**를 완전히 제거합니다. 이 시간 이후로는 Intune 내 앱 보호 정책의 위치가 하나만 있게 됩니다. 
+Microsoft Intune 서비스 내의 Azure portal에서 일시적으로 리디렉션됩니다 하려고 합니다 **Intune 앱 보호** 영역을는 **모바일 앱** 섹션. 모든 앱 보호 정책은 앱 구성 아래 Intune의 **모바일 앱** 섹션에 이미 있습니다. Intune 앱 보호로 이동하는 대신 바로 Intune으로 이동하세요. 2018년 4월에 리디렉션을 중지하고 **Intune 앱 보호**를 완전히 제거합니다. 이 시간 이후로는 Intune 내 앱 보호 정책의 위치가 하나만 있게 됩니다.
 
 **이 변경 사항은 어떤 영향을 미치나요?** 이 변경 사항은 Intune 독립형 고객과 하이브리드(Configuration Manager와 Intune) 고객 모두에 영향을 줍니다. 이 통합은 클라우드 관리 관리를 단순화하는 데 도움이 됩니다.
 
-**이러한 변경에 대비하려면 어떻게 해야 하나요?** **Intune 앱 보호** 대신 **Intune**을 즐겨찾기로 태그합니다. Intune 내의 **모바일 앱** 영역에서 앱 보호 정책 워크플로를 숙지합니다. 짧은 기간 동안 리디렉션한 다음, **앱 보호**를 제거합니다. 모든 앱 보호 정책은 이미 Intune에 있으며 조건부 액세스 정책을 수정할 수 있습니다. 조건부 액세스 정책 수정에 대한 자세한 내용은 [Azure Active Directory의 조건부 액세스](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)를 참조하세요. 자세한 내용은 [앱 보호 정책이란?](https://docs.microsoft.com/intune/app-protection-policy)을 참조하세요. 
+**이러한 변경에 대비하려면 어떻게 해야 하나요?** **Intune 앱 보호** 대신 **Intune**을 즐겨찾기로 태그합니다. Intune 내의 **모바일 앱** 영역에서 앱 보호 정책 워크플로를 숙지합니다. 짧은 기간 동안 리디렉션한 다음, **앱 보호**를 제거합니다. 모든 앱 보호 정책은 이미 Intune에 있으며 조건부 액세스 정책을 수정할 수 있습니다. 조건부 액세스 정책 수정에 대한 자세한 내용은 [Azure Active Directory의 조건부 액세스](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)를 참조하세요. 자세한 내용은 [앱 보호 정책 이란?](https://docs.microsoft.com/intune/app-protection-policy)합니다.
 
+#### <a name="user-experience-update-for-the-company-portal-app-for-ios"></a>iOS용 회사 포털 앱의 사용자 환경 업데이트
 
-
-
-#### <a name="user-experience-update-for-the-company-portal-app-for-ios"></a>iOS용 회사 포털 앱의 사용자 환경 업데이트 
 <!--1412866-->  
 iOS용 회사 포털 앱에 대한 주요 사용자 환경 업데이트가 릴리스되었습니다. 이 업데이트는 현대적인 모양과 느낌을 포함하여 시각적으로 완전히 새롭게 설계했습니다. 앱의 기능은 유지하면서도 유용성과 접근성을 향상시켰습니다.  
 
 또한 다음을 확인할 수 있습니다.
+
 - iPhone X 지원.
 - 더 빨라진 앱 시작과 응답 로드로 사용자 시간 단축.
 - 사용자에게 최신 상태 정보를 제공하는 추가 진행률 표시줄.
@@ -410,8 +450,9 @@ iOS용 회사 포털 앱에 대한 주요 사용자 환경 업데이트가 릴�
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
 #### <a name="windows-company-portal-send-feedback-option-may-no-longer-work"></a>Windows 회사 포털 피드백 보내기 옵션이 더 이상 작동하지 않을 수 있음
+
 <!--2070166-->  
-Windows 회사 포털 앱에는 사용자가 앱에 대한 피드백을 Microsoft에 보낼 수 있는 '피드백 보내기' 옵션이 있습니다. 2018년 4월 30일부터 이 옵션은 Windows 10 버전 1607 이상에서 실행되는 Windows 10 회사 포털 앱에서만 계속 지원됩니다.   
+Windows 회사 포털 앱에는 사용자가 앱에 대한 피드백을 Microsoft에 보낼 수 있는 '피드백 보내기' 옵션이 있습니다. 2018년 4월 30일부터 이 옵션은 Windows 10 버전 1607 이상에서 실행되는 Windows 10 회사 포털 앱에서만 계속 지원됩니다.
 
 **이 변경 사항은 어떤 영향을 미치나요?**
 
@@ -419,15 +460,15 @@ Windows 회사 포털 앱에는 사용자가 앱에 대한 피드백을 Microsof
 
 최종 사용자가 회사 포털 앱을 사용 중인 경우 4월 30일부터 다음 시나리오에서 앱의 '피드백 보내기' 단추가 더 이상 작동하지 않습니다.  
 
- - Windows 10 버전 1507 및 버전 1511의 Windows 10 회사 포털 앱  
+- Windows 10 버전 1507 및 버전 1511의 Windows 10 회사 포털 앱  
 
- - Windows Phone 8.1 회사 포털 앱  
+- Windows Phone 8.1 회사 포털 앱  
 
 관련 디바이스에서 '피드백 보내기' 옵션을 사용하면 오류가 발생하고 다시 시도하더라도 마찬가지입니다. 이러한 플랫폼의 경험에 대한 피드백을 Microsoft로 보내려면 아래에 나열된 대체 피드백 채널을 사용합니다.
 
 **이러한 변경에 대비하려면 어떻게 해야 하나요?**
 
-이 변경 사항을 최종 사용자에게 알리고 필요한 경우 모든 사용자 지침을 업데이트하세요. 
+이 변경 사항을 최종 사용자에게 알리고 필요한 경우 모든 사용자 지침을 업데이트하세요.
 
 Windows Phone 8.1, Windows 10 버전 1507 및 Windows 10 버전 1511에서 회사 포털을 사용하는 최종 사용자에게 두 가지 대체 피드백 채널을 사용할 수 있음을 알리세요. 최종 사용자는 다음과 같이 할 수 있습니다.  
 
@@ -436,9 +477,8 @@ Windows Phone 8.1, Windows 10 버전 1507 및 Windows 10 버전 1511에서 회�
 
 Windows 10 버전 1607 이상의 최종 사용자에게 Microsoft Store에 있는 Windows 회사 포털의 최신 버전으로 업데이트하도록 요청하세요.
 
-
-
 #### <a name="azure-active-directory-web-sites-can-require-the-intune-managed-browser-app-and-support-single-sign-on-for-the-managed-browser-public-preview"></a>Azure Active Directory 웹 사이트는 Intune Managed Browser 앱이 필요하고 Managed Browser(공개 미리 보기)에 대한 Single Sign-On을 지원할 수 있습니다.
+
 <!-- 710595 -->  
 이제 Azure AD(Azure Active Directory)를 사용하여 모바일 디바이스의 Intune Managed Browser 앱에 대한 웹 사이트 액세스를 제한할 수 있습니다. Managed Browser에서 웹 사이트 데이터는 안전하게 유지되고 최종 사용자 개인 데이터와 분리됩니다. 또한 Managed Browser는 Azure AD가 보호하는 사이트에 대해 Single Sign-On 기능을 지원합니다. Managed Browser에 로그인하거나 Intune에서 관리하는 다른 앱과 함께 디바이스에서 Managed Browser를 사용하면 사용자에게 자격 증명을 입력하지 않고도 Azure AD에서 보호되는 회사 사이트에 액세스할 수 있습니다. 이 기능은 OWA(Outlook Web Access) 및 SharePoint Online과 같은 사이트뿐만 아니라 Azure App Proxy를 통해 액세스되는 인트라넷 리소스와 같은 다른 회사 사이트에도 적용됩니다.
 
