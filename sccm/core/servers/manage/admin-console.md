@@ -2,21 +2,21 @@
 title: Configuration Manager 콘솔
 titleSuffix: Configuration Manager
 description: Configuration Manager 콘솔을 통해 이동에 대해 알아봅니다.
-ms.date: 03/06/2019
+ms.date: 04/03/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 463ce307-59dd-4abd-87b8-42ca9db178d7
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f9c06f40af1134055d4038fd23954b3f4c59682
-ms.sourcegitcommit: 544f335cfd1bfd0a1d4973439780e9f5e9ee8bed
+ms.openlocfilehash: fb58662350caec9fd1a08295c93c3811893048a9
+ms.sourcegitcommit: da753df27d3909265ca45d3e79091f1e98758d16
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57562111"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "58913543"
 ---
 # <a name="using-the-configuration-manager-console"></a>Configuration Manager 콘솔 사용
 
@@ -116,7 +116,36 @@ Configuration Manager 콘솔에는 네 가지 **작업 영역**이 있습니다.
 
 ![Configuration Manager에서 열별 그룹화](media/column-group-by.png)  
 
+## <a name="bkmk_viewconnected"></a> 최근에 연결된 콘솔 보기
+<!--3699367-->
 
+1902 버전부터는 Configuration Manager 콘솔에 대한 가장 최근의 연결을 볼 수 있습니다. 보기에는 활성 연결 및 최근에 연결된 연결이 포함되어 있습니다. 항상 목록에 현재 콘솔 연결이 표시되고 Configuration Manager 콘솔로부터의 연결만 표시됩니다. SMS 공급자에 대한 PowerShell 또는 다른 SDK 기반 연결이 표시되지 않습니다. 사이트는 목록에서 30일 이상된 인스턴스를 제거합니다.
+
+
+### <a name="prerequisites-to-view-connected-consoles"></a>연결된 콘솔을 보기 위한 필수 구성 요소
+
+- 계정에 **SMS_Site** 개체에 대한 **읽기** 권한이 필요합니다. 
+- IIS를 SMS 공급자 서버에 설치해야 합니다. <!---SCCMDocs-pr issue 1326--> 
+- SMS 공급자에서 인증서를 사용하도록 설정합니다.<!--SCCMDocs-pr issue 3135--> 다음 옵션 중 하나를 사용합니다.  
+
+  - [향상된 HTTP](/sccm/core/plan-design/hierarchy/enhanced-http) 사용(추천)
+  - SMS 공급자 역할을 호스팅하는 서버의 IIS에 있는 443 포트에 PKI 기반 인증서를 수동으로 바인딩  
+
+### <a name="view-connected-consoles"></a>연결된 콘솔 보기
+
+1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동합니다.  
+
+2. **보안**을 확장하고 **콘솔 연결** 노드를 선택합니다.  
+
+3. 다음 속성을 사용하여 최근 연결을 봅니다.  
+
+    - 사용자 이름
+    - 머신 이름
+    - 연결된 사이트 코드
+    - 콘솔 버전
+    - 마지막으로 연결된 시간: 사용자가 마지막으로 콘솔을 *연* 때
+
+![Configuration Manager 콘솔 연결 보기](media/console-connections.png) 
 
 ## <a name="command-line-options"></a>명령줄 옵션
 
@@ -162,7 +191,8 @@ Configuration Manager 콘솔에는 다음과 같은 명령줄 옵션이 있습�
 기본이 아닌 열을 표시하는 방법에 대한 자세한 내용은 [열](#columns)을 참조하세요.
 
 #### <a name="improvement-to-device-search-performance"></a>디바이스 검색 성능 향상
-<!-- 3614690 --> 버전 1806부터는 디바이스 컬렉션에서 검색할 때 모든 개체 속성에 대한 키워드를 검색하지 않습니다. 검색할 항목을 구체적으로 지정하지 않으면 다음과 같은 네 가지 속성을 검색합니다.
+<!-- 3614690 -->
+버전 1806부터는 디바이스 컬렉션에서 검색할 때 모든 개체 속성에 대한 키워드를 검색하지 않습니다. 검색할 항목을 구체적으로 지정하지 않으면 다음과 같은 네 가지 속성을 검색합니다.
 - Name
 - 기본 사용자
 - 현재 로그온한 사용자
@@ -174,7 +204,8 @@ Configuration Manager 콘솔에는 다음과 같은 명령줄 옵션이 있습�
 ### <a name="monitoring-workspace"></a>모니터링 작업 영역
 
 #### <a name="copy-details-in-monitoring-views"></a>모니터링 보기에서 세부 정보 복사
-<!--1357856--> 1806 버전부터 다음 모니터링 노드에 대해 **자산 세부 정보** 창에서 정보를 복사합니다.  
+<!--1357856-->
+1806 버전부터 다음 모니터링 노드에 대해 **자산 세부 정보** 창에서 정보를 복사합니다.  
 
 - **콘텐츠 배포 상태**  
 

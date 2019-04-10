@@ -2,7 +2,7 @@
 title: 버전 1902의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager 현재 분기, 버전 1902에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
-ms.date: 03/27/2019
+ms.date: 04/03/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81d4a34074e71d97061b8fbcab94e81335df4314
-ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
+ms.openlocfilehash: 0be6a28aa0421c6479ba676e67fd5dd7b4b13d39
+ms.sourcegitcommit: da753df27d3909265ca45d3e79091f1e98758d16
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58525042"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "58913679"
 ---
 # <a name="whats-new-in-version-1902-of-configuration-manager-current-branch"></a>Configuration Manager 현재 분기, 버전 1902의 새 기능
 
@@ -121,9 +121,9 @@ CMG에서 [아웃바운드 트래픽 경고를 설정](/sccm/core/clients/manage
 
 ### <a name="run-cmpivot-from-the-central-administration-site"></a>중앙 관리 사이트에서 CMPivot 실행
 <!--3610960-->
-Configuration Manager는 이제 계층 구조의 중앙 관리 사이트에서 CMPivot의 실행을 지원합니다. 기본 사이트는 계속 클라이언트 통신을 처리합니다. 중앙 관리 사이트에서 CMPivot을 실행하는 경우 고속 메시지 구독 채널을 통해 기본 사이트와 통신합니다. 이 통신은 사이트 간 표준 SQL 복제를 따르지 않습니다.
+***[업데이트됨]*** Configuration Manager는 이제 계층 구조의 중앙 관리 사이트에서 CMPivot의 실행을 지원합니다. 기본 사이트는 계속 클라이언트 통신을 처리합니다. 중앙 관리 사이트에서 CMPivot을 실행하는 경우 고속 메시지 구독 채널을 통해 기본 사이트와 통신합니다. 이 통신은 사이트 간 표준 SQL 복제를 따르지 않습니다.
 
-<!-- For more information, see [CMPivot for real-time data](/sccm/core/servers/manage/cmpivot). -->
+자세한 내용은 [실시간 데이터용 CMPivot](/sccm/core/servers/manage/cmpivot#bkmk_cmpivot1902)을 참조하세요.
 
 
 ### <a name="edit-or-copy-powershell-scripts"></a>PowerShell 스크립트 편집 또는 복사
@@ -440,16 +440,16 @@ MMS(Midwest Management Summit) Desert Edition 2018에서 수렴한 고객의 피
 
 ### <a name="confirmation-of-console-feedback"></a>콘솔 피드백 확인
 <!--3556010-->
-Configuration Manager 콘솔에서 [피드백](/sccm/core/understand/find-help#product-feedback)을 보내면 이제 확인 메시지가 표시됩니다. 이 메시지에는 사용자가 추적 식별자로서 Microsoft에 제공할 수 있는 **피드백 ID**가 포함되어 있습니다. 
+***[업데이트됨]*** Configuration Manager 콘솔에서 [피드백](/sccm/core/understand/find-help#product-feedback)을 보내면 이제 확인 메시지가 표시됩니다. 이 메시지에는 사용자가 추적 식별자로서 Microsoft에 제공할 수 있는 **피드백 ID**가 포함되어 있습니다.
 
-<!-- For more information, see [Product feedback](/sccm/core/understand/find-help#product-feedback). -->
+자세한 내용은 [제품 피드백](/sccm/core/understand/find-help#bkmk_feedbackid)을 참조하세요.
 
 
 ### <a name="view-recently-connected-consoles"></a>최근에 연결된 콘솔 보기 
 <!--3699367-->
-이제 Configuration Manager 콘솔에 대한 가장 최근의 연결을 볼 수 있습니다. 보기에는 활성 연결 및 최근에 연결된 콘솔이 포함되어 있습니다. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하여 **보안**을 확장한 다음, **콘솔 연결** 노드를 선택합니다.
+***[업데이트됨]*** 이제 Configuration Manager 콘솔에 대한 가장 최근의 연결을 볼 수 있습니다. 보기에는 활성 연결 및 최근에 연결된 콘솔이 포함되어 있습니다. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하여 **보안**을 확장한 다음, **콘솔 연결** 노드를 선택합니다.
 
-<!-- For more information, see [Using the Configuration Manager console](/sccm/core/servers/manage/admin-console). -->
+자세한 내용은 [Configuration Manager 콘솔 사용](/sccm/core/servers/manage/admin-console#bkmk_viewconnected)을 참조하세요.
 
 
 ### <a name="in-console-documentation-dashboard"></a>콘솔 내 설명서 대시보드

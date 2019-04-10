@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c50bc520dfe1703d1881c04db67bac095e084d10
-ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
+ms.openlocfilehash: 971d1cd2a8571b6d0dc120a07cd583674ac7fb62
+ms.sourcegitcommit: 60aff44c76e6432dc544c8b26acba432ac799cfc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58524169"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58639498"
 ---
 # <a name="install-in-console-updates-for-configuration-manager"></a>Configuration Manager용 콘솔 내 업데이트 설치
 
@@ -359,6 +359,8 @@ Configuration Manager 콘솔 내에서 업데이트를 설치할 준비가 되�
 ##  <a name="bkmk_after"></a> 사이트에서 업데이트를 설치한 후  
 
 사이트 업데이트 후 해당 버전에 대한 업데이트 후 검사 목록을 검토합니다.  
+
+- [버전 1902용 업데이트 후 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1902#post-update-checklist)  
 
 - [버전 1810용 업데이트 후 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1810#post-update-checklist)  
 

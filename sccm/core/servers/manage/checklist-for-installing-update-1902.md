@@ -11,18 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60856d3e2621f48fb669a4a1385876ddae849b2e
-ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
+ms.openlocfilehash: 5833db7cd6f47d0711fdcfae5d1f7a4114d7ff34
+ms.sourcegitcommit: d584c126a0a5725567631b74ac1e01f63242a997
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58525033"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58861023"
 ---
 # <a name="checklist-for-installing-update-1902-for-configuration-manager"></a>Configuration Manager용 업데이트 1902를 설치하기 위한 검사 목록
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Configuration Manager의 현재 분기를 사용하는 경우 버전 1902용 콘솔 내 업데이트를 설치하여 이전 버전의 계층 구조를 업데이트할 수 있습니다. <!-- baseline only statement:-->버전 1802가 [기준 미디어](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)로도 지원되기 때문에 새로운 계층 구조의 첫 번째 사이트를 설치하는 데 설치 미디어를 사용할 수 있습니다.
+Configuration Manager의 현재 분기를 사용하는 경우 버전 1902용 콘솔 내 업데이트를 설치하여 이전 버전의 계층 구조를 업데이트할 수 있습니다. <!-- baseline only statement:-->버전 1902가 [기준 미디어](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)로도 지원되기 때문에 새로운 계층 구조의 첫 번째 사이트를 설치하는 데 설치 미디어를 사용할 수 있습니다.
 
 버전 1902용 업데이트를 가져오려면 계층 구조의 최상위 사이트에서 서비스 연결점을 사용해야 합니다. 이 사이트 시스템 역할은 온라인 또는 오프라인 모드에 있을 수 있습니다. 계층 구조가 Microsoft에서 업데이트 패키지를 다운로드한 후 콘솔에서 찾습니다. **관리** 작업 영역에서 **업데이트 및 서비스** 노드를 선택합니다.
 

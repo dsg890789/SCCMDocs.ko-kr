@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: e0ec7d66-1502-4b31-85bb-94996b1bc66f
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e937bf4adf3b695bf33d41318e5d48bc560ad06b
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 94a55e0678942623e6afe9752f435ceb8eb71270
+ms.sourcegitcommit: d584c126a0a5725567631b74ac1e01f63242a997
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56128105"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58861057"
 ---
 # <a name="set-up-cloud-management-gateway-for-configuration-manager"></a>Configuration Manager용 클라우드 관리 게이트웨이 설정
 
@@ -43,7 +43,7 @@ ms.locfileid: "56128105"
 
     - **클라우드 관리**를 위해 [Azure AD](/sccm/core/servers/deploy/configure/azure-services-wizard)와 통합 Azure AD 사용자 검색은 필요하지 않습니다.  
     
-    - Azure 구독 내에서 **Microsoft.ClassicCompute** 리소스 공급 기업을 등록해야 합니다. 자세한 내용은 [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-supported-services)를 참조하세요.
+    - Azure 구독 내에서 **Microsoft.ClassicCompute** & **Microsoft.Storage** 리소스 공급자를 등록해야 합니다. 자세한 내용은 [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-supported-services)를 참조하세요.
 
     - 구독 관리자는 로그인해야 합니다.  
 
@@ -104,7 +104,7 @@ ms.locfileid: "56128105"
 10. **인증서**를 선택하여 신뢰할 수 있는 클라이언트 루트 인증서를 추가합니다. 최대 두 개의 신뢰할 수 있는 루트 CA 및 네 개의 중간(하위) CA를 추가합니다.  
 
      > [!Note]  
-     > 버전 1806부터는 CMG를 만들 경우 설정 페이지에서 신뢰할 수 있는 루트 인증서를 더 이상 제공할 필요가 없습니다. 이 인증서는 클라이언트 인증용 Azure AD(Azure Active Directory)를 사용할 때 필요하지 않지만 마법사에서는 필요합니다. PKI 클라이언트 인증 인증서를 사용하는 경우 여전히 신뢰할 수 있는 루트 인증서를 CMG에 추가해야 합니다..<!--SCCMDocs-pr issue #2872-->  
+     > 버전 1806부터는 CMG를 만들 경우 설정 페이지에서 신뢰할 수 있는 루트 인증서를 더 이상 제공할 필요가 없습니다. 이 인증서는 클라이언트 인증용 Azure AD(Azure Active Directory)를 사용할 때 필요하지 않지만 마법사에서는 필요합니다. PKI 클라이언트 인증 인증서를 사용하는 경우 여전히 신뢰할 수 있는 루트 인증서를 CMG에 추가해야 합니다.<!--SCCMDocs-pr issue #2872-->  
 
 11. 마법사는 기본적으로 **클라이언트 인증서 해지를 확인**하는 옵션을 사용합니다. 이 확인이 작동하도록 CRL(인증서 해지 목록)이 공개적으로 게시되어야 합니다. CRL을 게시하지 않는 경우 이 옵션의 선택을 취소합니다.  
 
@@ -226,7 +226,7 @@ CMG를 만든 후 언제든지 경고를 다시 구성합니다.
 
 클라이언트는 기본적으로 24시간마다 정책을 새로 고치므로 이전 CMG를 삭제하기 전에 새 CMG를 만들고 나서 적어도 하루를 기다립니다. 클라이언트가 꺼지거나 인터넷이 연결되지 않은 경우 더 많이 대기해야 합니다. 
 
-1802 버전부터는 클래식 배포 메서드에서 기존 CMG가 설치되어 있다면 새 CMG를 배포하여 Azure Resource Manager 배포 메서드를 사용해야 합니다.<!--509753--> 두 가지 옵션 중에서 선택할 수 있습니다.  
+1802 버전부터는 클래식 배포 메서드에서 기존 CMG가 설치되어 있다면 새 CMG를 배포하여 Azure Resource Manager 배포 메서드를 사용해야 합니다.<!--509753--> 두 가지 옵션 중이 있습니다.  
 
 - 동일한 서비스 이름을 다시 사용하려면:  
 
@@ -247,7 +247,7 @@ CMG를 만든 후 언제든지 경고를 다시 구성합니다.
     4. 클래식 CMG를 삭제합니다.  
 
 > [!Tip]  
-> CMG <!--SCCMDocs issue #611-->의 현재 배포 모델을 확인하려면  
+> CMG의 현재 배포 모델을 확인하려면:<!--SCCMDocs issue #611-->  
 > 1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고, **Cloud Services**를 확장하고, **클라우드 관리 게이트웨이** 노드를 선택합니다.  
 > 2. CMG 인스턴스를 선택합니다.  
 > 3. 창의 맨 아래의 세부 정보 창에서 **배포 모델** 특성을 찾아봅니다. Resource Manager 배포의 경우 이 특성은 **Azure Resource Manager**입니다. 

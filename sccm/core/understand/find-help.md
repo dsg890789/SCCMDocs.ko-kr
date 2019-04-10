@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9c4b9bdbd67e26962a4de3ff66643f071339795
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 9440a4873b6011ed4a7394c335531afc72ac5d97
+ms.sourcegitcommit: deb28cdc95a456d4a38499ef1bc71e765ef6dc13
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56139479"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58901403"
 ---
 # <a name="find-help-for-using-configuration-manager"></a>Configuration Manager 사용 도움말 찾기
 
@@ -46,7 +46,7 @@ ms.locfileid: "56139479"
 
 
 
-<a name="product-feedback"></a>  
+<a name="product-feedback"></a>
 
 ## <a name="BKMK_1806Feedback"></a> 1806 버전부터 시작하는 제품 피드백
 
@@ -56,7 +56,7 @@ Configuration Manager 버전 1806부터 제품 피드백은 콘솔에서 직접 
   - **찡그린 얼굴 보내기**: 싫어하는 것에 대한 피드백을 보냅니다.
   - **제안 보내기**: [UserVoice 웹 사이트](https://configurationmanager.uservoice.com/)로 이동하여 아이디어를 공유합니다.
 
-![Configuration Manager 1806에서 피드백 제출](media/1806-send-a-smile.png)
+    ![Configuration Manager 1806에서 피드백 제출](media/1806-send-a-smile.png)
 
 
 ### <a name="send-a-smile"></a>웃는 얼굴 보내기
@@ -83,8 +83,21 @@ Configuration Manager 버전 1806부터 제품 피드백은 콘솔에서 직접 
 5. **피드백 제출**을 클릭합니다.
      - 인터넷에 연결되어 있지 않으면 아래쪽의 **저장**을 클릭합니다. [나중에 제출할 수 있도록 저장한 피드백 보내기](#BKMK_NoInternet) 섹션의 지침에 따라 Microsoft에 보냅니다.  
 
+### <a name="send-a-suggestion"></a>제안 보내기
+
+**제안을 보내**면 [UserVoice](https://configurationmanager.uservoice.com/), 타사 웹 사이트로 이동하여 아이디어를 공유합니다. Configuration Manager 제품 팀은 다음 UserVoice 상태 값을 사용합니다.
+
+- **참고됨** - 요청을 이해했습니다. 백로그에 추가했습니다.
+- **계획됨** - 이 기능에 대한 코딩을 시작했으며 앞으로 몇 개월 내에 기술 미리 보기 빌드에 표시될 것으로 예상합니다.
+- **시작됨** - 이 기능은 이제 기술 미리 보기 상태입니다. 체크 아웃하고 피드백을 남겨주세요. 이 기능이 올바르게 작동하는지 알려주세요. 다른 사용자가 보고 의견을 남길 수 있도록 원래 요청의 주석 섹션에 추가 피드백을 남겨주세요. 본사는 피드백을 읽고 사용하여 기능을 향상시키겠습니다.
+- **완료됨** - 이 기능의 첫 번째 버전은 프로덕션 빌드 상태입니다. 이 상태는 기능 개발을 100% 완료했고 더 이상 향상시키지 않을 예정이라는 의미는 아닙니다. 하지만 이 기능의 v1이 프로덕션 빌드 상태이면 실제로 사용하기 시작할 수 있습니다. 다음과 같은 이유로 완료됨이라고 표시합니다.
+  - 이 기능이 이미 프로덕션 준비 상태임을 알리고자 합니다.
+  - 다른 항목에서 사용할 수 있도록 UserVoice 응답에 다시 제공하고자 합니다.
+  - 이 기능에 대해 다음으로 가장 중요한 개선 사항을 알리기 위해 이 기능의 새로운 디자인 변경 요청을 제출할 수 있습니다.
 
 ### <a name="information-sent-with-feedback"></a>피드백과 함께 전송되는 정보
+
+**웃는 얼굴 보내기** 또는 **찡그린 얼굴 보내기**를 사용하면 피드백으로 다음 정보가 전송됩니다.
  
    - OS 빌드 정보
    - Configuration Manager 계층 구조 ID
@@ -92,6 +105,7 @@ Configuration Manager 버전 1806부터 제품 피드백은 콘솔에서 직접 
    - 언어 정보
    - 디바이스 식별자 
        - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SQMClient:MachineId
+
 
 
 ### <a name="BKMK_NoInternet"></a> 나중에 제출할 수 있도록 저장한 피드백 보내기
@@ -104,13 +118,25 @@ Configuration Manager 버전 1806부터 제품 피드백은 콘솔에서 직접 
 4. 인터넷에 연결된 머신에서 명령 프롬프트를 엽니다. 
 5. 다음 명령을 실행합니다. `UploadOfflineFeedback.exe -f c:\folder\location_of.zip`
     
-    - 필요에 따라 다음 항목을 지정할 수 있습니다.
+    - 필요에 따라 다음 매개 변수를 지정할 수 있습니다.
         -  `-t, --timeout` 데이터 전송에 대한 시간 제한(초)입니다. 0은 무제한입니다. 기본값은 30입니다.
         - `-s --silent` 콘솔에 로깅하지 않음(--verbose와 결합할 수 없음)
         - `-v, --verbose` 콘솔에 자세한 정보 로깅 출력(--silent와 결합할 수 없음)
         - `--help` 도움말 화면 표시
 
+## <a name="bkmk_feedbackid"></a> 콘솔 피드백 확인
 
+<!--3556010-->
+1902 버전부터는, Configuration Manager 콘솔 또는 UploadOfflineFeedback.exe를 통해 피드백을 보낼 때 확인 메시지를 표시합니다. 이 메시지에는 사용자가 추적 식별자로서 Microsoft에 제공할 수 있는 **피드백 ID**가 포함되어 있습니다.
+
+- **피드백 ID**를 복사하려면 ID 옆에 있는 복사 아이콘을 선택하거나 **CTRL** + **C** 키를 사용합니다.
+  - 이 ID는 컴퓨터에 저장되지 않으므로 창을 닫기 전에 복사해야 합니다.
+- **이 메시지를 다시 표시 안 함**을 클릭하면 대화 상자를 표시하지 않고 나중에 나타나지 않도록 방지합니다.
+
+   ![Configuration Manager 1902의 콘솔에서 피드백 확인](media/1902-feedback-id-example.png)
+- -s 또는 --silent를 사용하지 않은 경우 **UploadOfflineFeedback** 명령 도구는 **FeedbackID**를 콘솔에 작성합니다.
+
+  ![Configuration Manager 1902의 UploadOfflineFeedback.exe에서 피드백 확인](media/1902-offline-feedback-id-example.png)
 
 ##  <a name="BKMK_FeedbackHub"></a> 1802 및 이전 버전에 대한 제품 피드백
 
@@ -120,8 +146,15 @@ Windows 10에 기본 제공된 [피드백 허브 앱](https://support.microsoft.
  - Configuration Manager OS 배포
  - Configuration Manager 서버
 
-Configuration Manager에서 [UserVoice 페이지](https://configurationmanager.uservoice.com/)를 계속 사용하여 새로운 기능 아이디어에 투표하세요.
+Configuration Manager에서 [UserVoice 페이지](https://configurationmanager.uservoice.com/)를 계속 사용하여 새로운 기능 아이디어에 투표하세요. Configuration Manager 제품 팀은 다음 UserVoice 상태 값을 사용합니다.
 
+- **참고됨** - 요청을 이해했습니다. 백로그에 추가했습니다.
+- **계획됨** - 이 기능에 대한 코딩을 시작했으며 앞으로 몇 개월 내에 기술 미리 보기 빌드에 표시될 것으로 예상합니다.
+- **시작됨** - 이 기능은 이제 기술 미리 보기 상태입니다. 체크 아웃하고 피드백을 남겨주세요. 이 기능이 올바르게 작동하는지 알려주세요. 다른 사용자가 보고 의견을 남길 수 있도록 원래 요청의 주석 섹션에 추가 피드백을 남겨주세요. 본사는 피드백을 읽고 사용하여 기능을 향상시키겠습니다.
+- **완료됨** - 이 기능의 첫 번째 버전은 프로덕션 빌드 상태입니다. 이 상태는 기능 개발을 100% 완료했고 더 이상 향상시키지 않을 예정이라는 의미는 아닙니다. 하지만 이 기능의 v1이 프로덕션 빌드 상태이면 실제로 사용하기 시작할 수 있습니다. 다음과 같은 이유로 완료됨이라고 표시합니다.
+  - 이 기능이 이미 프로덕션 준비 상태임을 알리고자 합니다.
+  - 다른 항목에서 사용할 수 있도록 UserVoice 응답에 다시 제공하고자 합니다.
+  - 이 기능에 대해 다음으로 가장 중요한 개선 사항을 알리기 위해 이 기능의 새로운 디자인 변경 요청을 제출할 수 있습니다.
 
 ##  <a name="BKMK_ProductGroupBlog"></a>Configuration Manager 팀 블로그  
 

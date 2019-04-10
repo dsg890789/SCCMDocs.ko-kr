@@ -2,7 +2,7 @@
 title: 사용된 계정
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 사용되는 Windows 그룹과 계정을 식별하고 관리합니다.
-ms.date: 10/26/2018
+ms.date: 03/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0c9ad4831d0450b7a30de4117a65005164d5080
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: a05ff407c3787283a58973f2861432a0a26a52b0
+ms.sourcegitcommit: deb28cdc95a456d4a38499ef1bc71e765ef6dc13
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56122392"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58901522"
 ---
 # <a name="accounts-used-in-configuration-manager"></a>Configuration Manager에서 사용되는 계정
 
@@ -25,8 +25,8 @@ ms.locfileid: "56122392"
 다음 정보를 사용하여 Configuration Manager에서 사용되는 Windows 그룹과 계정, 사용 방법 및 요구 사항을 식별합니다.  
 
 - [Configuration Manager에서 만들고 사용하는 Windows 그룹](#bkmk_groups)  
-    - [ConfigMgr_CollectedFilesAccess](#configmgrcollectedfilesaccess)  
-    - [ConfigMgr_DViewAccess](#configmgrdviewaccess)  
+    - [ConfigMgr_CollectedFilesAccess](#configmgr_collectedfilesaccess)  
+    - [ConfigMgr_DViewAccess](#configmgr_dviewaccess)  
     - [ConfigMgr 원격 제어 사용자](#configmgr-remote-control-users)  
     - [SMS Admins](#sms-admins)  
     - [SMS_SiteSystemToSiteServerConnection_MP_&lt;sitecode\>](#bkmk_remotemp)  
@@ -71,7 +71,7 @@ ms.locfileid: "56122392"
 >  Configuration Manager에서 도메인 구성원인 컴퓨터에 그룹을 만들면 이 그룹은 로컬 보안 그룹이 됩니다. 컴퓨터가 도메인 컨트롤러인 경우 그룹은 도메인 로컬 그룹입니다. 이 유형의 그룹은 도메인의 모든 도메인 컨트롤러 간에 공유됩니다.  
 
 
-### <a name="configmgrcollectedfilesaccess"></a>ConfigMgr_CollectedFilesAccess  
+### <a name="configmgrcollectedfilesaccess"></a>ConfigMgr_CollectedFilesAccess
 
 Configuration Manager에서는 소프트웨어 인벤토리를 통해 수집한 파일을 볼 수 있는 액세스 권한을 부여하는 데 이 그룹을 사용합니다.  
 
@@ -443,7 +443,8 @@ Configuration Manager는 자동으로 그룹 멤버 자격을 관리합니다. �
 
 
 ### <a name="site-installation-account"></a>사이트 설치 계정
-<!--SCCMDocs issue #572--> 도메인 사용자 계정을 사용하여 Configuration Manager 설치 프로그램을 실행하고 새 사이트를 설치할 서버에 로그인합니다.
+<!--SCCMDocs issue #572-->
+도메인 사용자 계정을 사용하여 Configuration Manager 설치 프로그램을 실행하고 새 사이트를 설치할 서버에 로그인합니다.
 
 이 계정에는 다음 권한이 필요합니다.  
 
@@ -474,7 +475,8 @@ Configuration Manager 설치 프로그램은 이 계정을 [SMS Admins](#sms-adm
 
 
 ### <a name="site-system-proxy-server-account"></a>사이트 시스템 프록시 서버 계정
-<!--SCCMDocs issue #648--> 다음 사이트 시스템 역할은 **사이트 시스템 프록시 서버 계정**을 사용하여 인증된 액세스 권한이 필요한 프록시 서버 또는 방화벽을 통해 인터넷에 액세스합니다.
+<!--SCCMDocs issue #648-->
+ 다음 사이트 시스템 역할은 **사이트 시스템 프록시 서버 계정**을 사용하여 인증된 액세스 권한이 필요한 프록시 서버 또는 방화벽을 통해 인터넷에 액세스합니다.
 
 - Asset Intelligence 동기화 지점
 - Exchange Server 커넥터
