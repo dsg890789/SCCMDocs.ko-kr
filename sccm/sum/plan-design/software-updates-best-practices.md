@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 6d20389a-9de2-4a64-bced-9fc4fa519174
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: feb0f086fca89aed3fc1f251901ade378b020533
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: eb5471c5a993a1a2f683807a12dfc01ea00bf275
+ms.sourcegitcommit: 5ee9487c891c37916294bd34a10d04e398f111f7
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56133523"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59069520"
 ---
 # <a name="best-practices-for-software-updates-in-configuration-manager"></a>Configuration Manager의 소프트웨어 업데이트에 대한 모범 사례
 
@@ -40,7 +40,7 @@ Configuration Manager에서 소프트웨어 업데이트를 설치할 때 따라
 
 WSUS 데이터베이스 공유에 대한 자세한 내용은 다음 블로그 게시물을 참조하세요.  
 
-- [Configuration Manager 소프트웨어 업데이트 지점에 대 한 공유 SUSDB를 구현하는 방법](https://blogs.technet.microsoft.com/configurationmgr/2016/10/12/how-to-implement-a-shared-susdb-for-configuration-manager-software-update-points/)  
+- [Configuration Manager 소프트웨어 업데이트 지점에 대 한 공유 SUSDB를 구현하는 방법](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/How-to-implement-a-shared-SUSDB-for-Configuration-Manager/ba-p/274103)  
 
 - [System Center Configuration Manager를 사용하는 경우 콘텐츠 데이터베이스를 공유하는 여러 WSUS 인스턴스에 대한 고려 사항](https://blogs.technet.microsoft.com/wsus/2014/03/22/considerations-for-multiple-wsus-instances-sharing-a-content-database-when-using-system-center-configuration-manager-but-without-network-load-balancing-nlb/)  
 
