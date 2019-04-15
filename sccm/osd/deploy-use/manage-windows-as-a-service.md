@@ -2,7 +2,7 @@
 title: Windows as a Service 관리
 titleSuffix: Configuration Manager
 description: Configuration Manager를 사용하여 WaaS(Windows as a Service)의 상태를 보고, 배포 링을 구성할 서비스 계획을 만들고, Windows 10 클라이언트 지원이 끝나갈 때 경고를 볼 수 있습니다.
-ms.date: 03/15/2017
+ms.date: 04/12/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 614ccc06a3fef5cca54c7eb1c32952e8531aedfa
-ms.sourcegitcommit: d71e558db2da124357b840332e2da671b3810507
+ms.openlocfilehash: 13fde17d8fe46b723a8f49b22a68685fbc4d47de
+ms.sourcegitcommit: d4b0e44e6bb06a830d0887493528d9166a15154b
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58269072"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59506246"
 ---
 # <a name="manage-windows-as-a-service-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows as a Service 관리
 
@@ -54,6 +54,7 @@ ms.locfileid: "58269072"
 -   Configuration Manager 콘솔을 실행하는 컴퓨터에 Internet Explorer 9 이상이 설치되어 있어야 합니다.  
 
 -   소프트웨어 업데이트를 구성하고 동기화해야 합니다. Configuration Manager 콘솔에서 Windows 10 기능 업그레이드를 사용하려면 먼저 **업그레이드** 분류를 선택하고 소프트웨어 업데이트를 동기화합니다. 자세한 내용은 [소프트웨어 업데이트 관리 준비](../../sum/get-started/prepare-for-software-updates-management.md)를 참조하세요.  
+- Configuration Manager 버전 1902부터 기능 업데이트에 대한 **스레드 우선 순위 지정** [클라이언트 설정](/sccm/core/clients/deploy/about-client-settings#bkmk_thread-priority)을 확인하여 환경에 적절한지 확인합니다.
 
 ##  <a name="BKMK_ServicingDashboard"></a> Windows 10 서비스 대시보드  
  Windows 10 서비스 대시보드는 작업 환경의 Windows 10 컴퓨터에 대한 정보, 활성 서비스 계획, 준수 정보 등을 제공합니다. Windows 10 서비스 대시보드의 데이터는 서비스 연결 지점의 설치 여부에 따라 좌우됩니다. 이 대시보드에는 다음과 같은 타일에 있습니다.  
@@ -72,7 +73,7 @@ ms.locfileid: "58269072"
 
 -   **서비스 계획 모니터링 타일**: 사용자가 만든 서비스 계획과 각각에 대한 준수 차트를 표시합니다. 이 타일을 통해 서비스 계획 배포의 현재 상태를 빠르고 간단하게 확인할 수 있습니다. 이전 배포 링이 준수에 대한 사용자의 예상을 충족하는 경우 나중에 서비스 계획(배포 링)을 선택하고, 서비스 계획 규칙이 자동으로 트리거될 때까지 기다리는 대신 **지금 배포** 를 클릭합니다.  
 
--   **Windows 10 빌드 타일**: 현재 릴리스된 Windows 10 빌드에 대한 개요를 제공하고, 빌드가 다른 상태로 전환되는 경우에 대한 일반적인 이해를 돕는 고정 이미지 시간 표시 막대를 표시합니다.  
+-   **Windows 10 빌드 타일**: 현재 릴리스된 Windows 10 빌드에 대한 개요를 제공하고, 빌드가 다른 상태로 전환되는 경우에 대한 일반적인 이해를 돕는 고정 이미지 시간 표시 막대를 표시합니다. [제품 수명 주기 대시보드](/sccm/core/clients/manage/asset-intelligence/product-lifecycle-dashboard)에서 자세한 정보를 제공하므로 이 타일은 Configuration Manager 버전 1902부터 제거되었습니다. <!--3446861-->
 
 > [!IMPORTANT]  
 >  Windows 10 서비스 대시보드에 표시되는 정보(예: Windows 10 버전에 대한 지원 수명 주기)는 편의를 위해 제공되며, 회사 내부에서만 사용됩니다. 따라서 업데이트 호환성을 확인하기 위해 이 정보에만 의존해서는 안 됩니다. 제공된 정보가 정확한지 확인해야 합니다.  
@@ -146,13 +147,13 @@ ms.locfileid: "58269072"
 
 7. 업그레이드 페이지에서 검색 조건을 구성하여 서비스 계획에 추가된 업그레이드를 필터링할 수 있습니다. 지정된 조건을 충족하는 업그레이드만 연결된 배포에 추가됩니다. 다음 속성 필터를 사용할 수 있습니다. <!--3098809, 3113836, 3204570 -->
 
-   - **아키텍처** (1810 버전부터)
+   - **아키텍처**(1810 버전부터)
    - **언어**
-   - **Product Category** (1810 버전부터)
+   - **제품 범주**(1810 버전부터)
    - **필수**
       > [!Important]    
       > 검색 조건의 일부로 **필수** 필드를 **> = 1** 값으로 설정하는 것이 좋습니다. 이 기준을 사용하면 적용 가능한 업데이트만 서비스 계획에 추가됩니다.
-   - **대체** (1810 버전부터)
+   - **교체**(1810 버전부터)
    - **제목**
 
     지정된 조건을 충족하는 업그레이드를 보려면 **미리 보기** 를 클릭합니다.  

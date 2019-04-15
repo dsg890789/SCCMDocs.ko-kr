@@ -2,21 +2,21 @@
 title: Office 365 ProPlus 업데이트 관리
 titleSuffix: Configuration Manager
 description: Configuration Manager는 WSUS 카탈로그의 Office 365 클라이언트 업데이트를 사이트 서버와 동기화하여 업데이트를 클라이언트에 배포할 수 있게 합니다.
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
-ms.date: 07/30/2018
+ms.date: 04/11/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 10c04b5daa53a1b12637fa8470b97ae27a63678b
-ms.sourcegitcommit: 8803a64692f3edc0422b58f6c3037a8796374cc8
+ms.openlocfilehash: 7122d57696a7407731b93da20b995fc3e40949ac
+ms.sourcegitcommit: d4b0e44e6bb06a830d0887493528d9166a15154b
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57881829"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59506178"
 ---
 # <a name="manage-office-365-proplus-with-configuration-manager"></a>Configuration Manager를 사용하여 Office 365 ProPlus 관리
 
@@ -24,38 +24,15 @@ ms.locfileid: "57881829"
 
 Configuration Manager를 사용하여 다음과 같은 방법으로 Office 365 ProPlus 앱을 관리할 수 있습니다.
 
-- [Office 365 클라이언트 관리 대시보드](#office-365-client-management-dashboard): Office 365 클라이언트 관리 대시보드에서 Office 365 클라이언트 정보를 검토할 수 있습니다. Configuration Manager 버전 1802부터 그래프 섹션을 선택하면 Office 365 클라이언트 관리 대시보드에서는 관련 디바이스의 목록을 표시합니다. <!--1357281 -->
-
-- [Office 365 앱 배포](#deploy-office-365-apps): Office 365 클라이언트 관리 대시보드에서 Office 365 설치 관리자를 시작하여 초기 Office 365 앱 설치 환경을 간편하게 만들 수 있습니다. 마법사를 통해 Office 365 설치 설정을 구성하고, Office CDN(콘텐츠 배달 네트워크)에서 파일을 다운로드하고, 콘텐츠가 포함된 스크립트 애플리케이션을 만들고 배포할 수 있습니다.    
+- [Office 365 앱 배포](#deploy-office-365-apps): [Office 365 클라이언트 관리 대시보드](/sccm/sum/deploy-use/office-365-dashboard)에서 Office 365 설치 관리자를 시작하여 초기 Office 365 앱 설치 환경을 간편하게 만들 수 있습니다. 마법사를 통해 Office 365 설치 설정을 구성하고, Office CDN(콘텐츠 배달 네트워크)에서 파일을 다운로드하고, 콘텐츠가 포함된 스크립트 애플리케이션을 만들고 배포할 수 있습니다.
 
 - [Deploy Office 365 업데이트](#deploy-office-365-updates): 소프트웨어 업데이트 관리 워크플로를 사용하여 Office 365 클라이언트 업데이트를 관리할 수 있습니다. Microsoft에서 새 Office 365 클라이언트 업데이트를 Office CDN(Content Delivery Network)에 게시하면 Microsoft에서 업데이트 패키지도 WSUS(Windows Server Update Services)에 게시합니다. Configuration Manager에서 WSUS 카탈로그의 Office 365 클라이언트 업데이트를 사이트 서버로 동기화한 후에 업데이트를 클라이언트에 배포할 수 있습니다.    
 
-- [Office 365 업데이트 다운로드 언어 추가](#add-languages-for-office-365-update-downloads): Office 365에서 지원되는 모든 언어의 업데이트를 다운로드하도록 Configuration Manager에 대한 지원을 추가할 수 있습니다. 즉, Office 365가 언어를 지원하면 Configuration Manager는 언어를 지원할 필요가 없습니다. Configuration Manager 버전 1610 이전에는 Office 365 클라이언트에 구성된 동일한 언어로 업데이트를 다운로드하고 배포해야 합니다. 
+- [Office 365 업데이트 다운로드 언어 추가](#bkmk_o365_lang): Office 365에서 지원되는 모든 언어의 업데이트를 다운로드하도록 Configuration Manager에 대한 지원을 추가할 수 있습니다. 즉, Office 365가 언어를 지원하면 Configuration Manager는 언어를 지원할 필요가 없습니다. Configuration Manager 버전 1610 이전에는 Office 365 클라이언트에 구성된 동일한 언어로 업데이트를 다운로드하고 배포해야 합니다.
 
 - [업데이트 채널 변경](#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager): 그룹 정책을 사용하여 Office 365 클라이언트에 레지스트리 키 값 변경 내용을 배포하여 업데이트 채널을 변경할 수 있습니다.
 
-
-## <a name="office-365-client-management-dashboard"></a>Office 365 클라이언트 관리 대시보드  
-Office 365 클라이언트 관리 대시보드는 다음 정보에 대한 차트를 제공합니다.
-
-- Office 365 클라이언트 수
-- Office 365 클라이언트 버전
-- Office 365 클라이언트 언어
-- Office 365 클라이언트 채널     
-  자세한 내용은 [Office 365 ProPlus의 업데이트 채널 개요](/DeployOffice/overview-of-update-channels-for-office-365-proplus)를 참조하세요.
-
-Configuration Manager 콘솔에서 Office 365 클라이언트 관리 대시보드를 보려면 **소프트웨어 라이브러리** > **개요** > **Office 365 클라이언트 관리**로 이동합니다. 대시보드 맨 위에 있는 **컬렉션** 드롭다운 설정을 사용하여 특정 컬렉션 멤버별로 대시보드 데이터를 필터링합니다. Configuration Manager 버전 1802부터 그래프 섹션을 선택하면 Office 365 클라이언트 관리 대시보드에서는 관련 디바이스의 목록을 표시합니다.
-
-### <a name="display-data-in-the-office-365-client-management-dashboard"></a>Office 365 클라이언트 관리 대시보드에 데이터 표시
-Office 365 클라이언트 관리 대시보드에 표시되는 데이터는 하드웨어 인벤토리에서 옵니다. 하드웨어 인벤토리를 사용하도록 설정하고 대시보드에서 데이터가 표시되도록 **Office 365 ProPlus 구성** 하드웨어 인벤토리 클래스를 선택합니다. 
-#### <a name="to-display-data-in-the-office-365-client-management-dashboard"></a>Office 365 클라이언트 관리 대시보드에 데이터를 표시하려면
-1. 하드웨어 인벤토리를 사용하도록 아직 설정하지 않은 경우 설정합니다. 자세한 내용은 [하드웨어 인벤토리 구성](/sccm/core/clients/manage/inventory/configure-hardware-inventory)을 참조하세요.
-2. Configuration Manager 콘솔에서 **관리** > **클라이언트 설정** > **기본 클라이언트 설정**으로 이동합니다.  
-3. **홈** 탭의 **속성** 그룹에서 **속성**을 클릭합니다.  
-4. 에 **기본 클라이언트 설정** 대화 상자를 클릭 하 여 **하드웨어 인벤토리**.  
-5. 에 **디바이스 설정을** 목록에서 클릭 **클래스 설정**.  
-6. **하드웨어 인벤토리 클래스** 대화 상자에서 **Office 365 ProPlus 구성**을 선택합니다.  
-7.  클릭 하 여 **확인** 변경 내용을 저장 하 고 닫습니다는 **하드웨어 인벤토리 클래스** 대화 상자. <br/>하드웨어 인벤토리가 보고되면 Office 365 클라이언트 관리 대시보드에서 데이터를 표시하기 시작합니다.
+Office 365 클라이언트 정보를 검토하고 이러한 Office 365 관리 작업 중 일부를 시작하려면 [Office 365 클라이언트 관리 대시보드](/sccm/sum/deploy-use/office-365-dashboard)를 사용합니다.
 
 ## <a name="deploy-office-365-apps"></a>Office 365 앱 배포  
 초기 Office 365 앱 설치를 위해 Office 365 클라이언트 관리 대시보드에서 Office 365 설치 관리자를 시작합니다. 마법사를 통해 Office 365 설치 설정을 구성하고, Office CDN(콘텐츠 배달 네트워크)에서 파일을 다운로드하고, 파일에 대한 스크립트 애플리케이션을 만들고 배포할 수 있습니다. 클라이언트에 Office 365가 설치되고 [Office 자동 업데이트 작업](https://docs.microsoft.com/deployoffice/overview-of-the-update-process-for-office-365-proplus)이 실행될 때까지 Office 365 업데이트를 적용할 수 없습니다. 테스트를 위해 업데이트 작업을 수동으로 실행할 수 있습니다.
@@ -105,33 +82,33 @@ Configuration Manager 1806부터 Office 사용자 지정 도구가 Configuration
 
 Office 365 설치 관리자를 사용하여 Office 365 애플리케이션을 만들고 배포한 후에는 기본적으로 Configuration Manager가 Office 업데이트를 관리하지 않습니다. Office 365 클라이언트가 Configuration Manager에서 업데이트를 받게 하려면 [Configuration Manager를 사용하여 Office 365 업데이트 배포](#deploy-office-365-updates)를 참조하세요.
 
-Office 365 앱을 배포한 후 앱을 유지 관리하기 위한 자동 배포 규칙을 만들 수 있습니다. Office 365 앱에 대한 자동 배포 규칙을 만들려면 Office 365 클라이언트 관리 대시보드에서 **ADR 만들기**를 클릭합니다. 제품을 선택할 때 **Office 365 클라이언트**를 선택합니다. 자세한 내용은 [소프트웨어 업데이트 자동 배포](/sccm/sum/deploy-use/automatically-deploy-software-updates)를 참조하세요.
+Office 365 앱을 배포한 후 앱을 유지 관리하기 위한 자동 배포 규칙을 만들 수 있습니다. Office 365 앱에 대한 자동 배포 규칙을 만들려면 [Office 365 클라이언트 관리 대시보드](/sccm/sum/deploy-use/office-365-dashboard)에서 **ADR 만들기**를 클릭합니다. 제품을 선택할 때 **Office 365 클라이언트**를 선택합니다. 자세한 내용은 [소프트웨어 업데이트 자동 배포](/sccm/sum/deploy-use/automatically-deploy-software-updates)를 참조하세요.
 
 
 ## <a name="deploy-office-365-updates"></a>Office 365 업데이트 배포
 
 Configuration Manager를 사용하여 Office 365 업데이트를 배포하려면 다음 단계를 따르세요.
 
-1.  이 문서의 **Configuration Manager를 사용하여 Office 365 클라이언트 업데이트를 관리하기 위한 요구 사항** 섹션에서 Configuration Manager를 사용하여 Office 365 클라이언트 업데이트를 관리하기 위한 [요구 사항을 확인](/DeployOffice/manage-updates-to-office-365-proplus-with-system-center-configuration-manager#requirements-for-using-configuration-manager-to-manage-office-365-client-updates)합니다.  
+1. 이 문서의 **Configuration Manager를 사용하여 Office 365 클라이언트 업데이트를 관리하기 위한 요구 사항** 섹션에서 Configuration Manager를 사용하여 Office 365 클라이언트 업데이트를 관리하기 위한 [요구 사항을 확인](/DeployOffice/manage-updates-to-office-365-proplus-with-system-center-configuration-manager#requirements-for-using-configuration-manager-to-manage-office-365-client-updates)합니다.  
 
-2.  [소프트웨어 업데이트 지점을 구성](../get-started/configure-classifications-and-products.md)하여 Office 365 클라이언트 업데이트를 동기화합니다. 분류에 대한 **업데이트**를 설정하고 제품에 대한 **Office 365 클라이언트**를 선택합니다. **업데이트** 분류를 사용하도록 소프트웨어 업데이트 지점을 구성한 후 소프트웨어 업데이트를 동기화합니다.
-3.  Office 365 클라이언트가 Configuration Manager에서 업데이트를 받을 수 있도록 합니다. Configuration Manager 클라이언트 설정 또는 그룹 정책을 사용하여 클라이언트를 사용하도록 설정합니다.   
+2. [소프트웨어 업데이트 지점을 구성](../get-started/configure-classifications-and-products.md)하여 Office 365 클라이언트 업데이트를 동기화합니다. 분류에 대한 **업데이트**를 설정하고 제품에 대한 **Office 365 클라이언트**를 선택합니다. **업데이트** 분류를 사용하도록 소프트웨어 업데이트 지점을 구성한 후 소프트웨어 업데이트를 동기화합니다.
+3. Office 365 클라이언트가 Configuration Manager에서 업데이트를 받을 수 있도록 합니다. Configuration Manager 클라이언트 설정 또는 그룹 정책을 사용하여 클라이언트를 사용하도록 설정합니다.
 
     **방법 1**: Configuration Manager 버전 1606부터 Configuration Manager 클라이언트 설정을 사용하여 Office 365 클라이언트 에이전트를 관리할 수 있습니다. 이 설정을 구성하고 Office 365 업데이트를 배포한 후 Configuration Manager 클라이언트 에이전트는 Office 365 클라이언트 에이전트와 통신하여 배포 지점에서 업데이트를 다운로드하고 설치합니다. Configuration Manager는 Office 365 ProPlus 클라이언트 설정의 인벤토리를 사용합니다.    
 
-      1.  Configuration Manager 콘솔에서 **관리** > **개요** > **클라이언트 설정**을 클릭합니다.  
+      1. Configuration Manager 콘솔에서 **관리** > **개요** > **클라이언트 설정**을 클릭합니다.  
 
-      2.  적절한 디바이스 설정을 열어 클라이언트 에이전트를 사용하도록 설정합니다. 기본 및 사용자 지정 클라이언트 설정에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../core/clients/deploy/configure-client-settings.md)을 참조하세요.  
+      2. 적절한 디바이스 설정을 열어 클라이언트 에이전트를 사용하도록 설정합니다. 기본 및 사용자 지정 클라이언트 설정에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../core/clients/deploy/configure-client-settings.md)을 참조하세요.  
 
-      3.  **소프트웨어 업데이트**를 클릭하고 **Office 365 클라이언트 에이전트 관리 사용** 설정에 대해 **예**를 선택합니다.  
+      3. **소프트웨어 업데이트**를 클릭하고 **Office 365 클라이언트 에이전트 관리 사용** 설정에 대해 **예**를 선택합니다.  
 
     **방법 2**: Office 배포 도구 또는 그룹 정책을 사용하여 Configuration Manager에서 [Office 365 클라이언트가 업데이트를 받도록 설정](/DeployOffice/manage-updates-to-office-365-proplus-with-system-center-configuration-manager#BKMK_EnableClient)합니다.  
 
-4. 클라이언트에 [Office 365 업데이트를 배포](deploy-software-updates.md)합니다.   
+4. 클라이언트에 [Office 365 업데이트를 배포](deploy-software-updates.md)합니다.
 
 > [!Important]
 > - Configuration Manager 버전 1706부터 Office 365 클라이언트 업데이트가 **Office 365 클라이언트 관리** >**Office 365 업데이트** 노드로 이동되었습니다. 이러한 이동은 현재 ADR 구성에 영향을 주지 않습니다. 
-> - Configuration Manager 버전 1610 이전에는 Office 365 클라이언트에 구성된 동일한 언어로 업데이트를 다운로드하고 배포해야 합니다. 예를 들어 Office 365 클라이언트를 en-us 및 de-de 언어로 구성했다고 가정합니다. 사이트 서버에서 해당하는 Office 365 업데이트의 en-us 콘텐츠만 다운로드 및 배포합니다. 사용자가 소프트웨어 센터로부터 이 업데이트의 설치를 시작하면 de-de 콘텐츠를 다운로드하는 동안에는 업데이트가 중단됩니다.   
+> - Configuration Manager 버전 1610 이전에는 Office 365 클라이언트에 구성된 동일한 언어로 업데이트를 다운로드하고 배포해야 합니다. 예를 들어 Office 365 클라이언트를 en-us 및 de-de 언어로 구성했다고 가정합니다. 사이트 서버에서 해당하는 Office 365 업데이트의 en-us 콘텐츠만 다운로드 및 배포합니다. 사용자가 소프트웨어 센터로부터 이 업데이트의 설치를 시작하면 de-de 콘텐츠를 다운로드하는 동안에는 업데이트가 중단됩니다. 
 
 > [!NOTE]  
 >
@@ -163,15 +140,31 @@ Office 365 클라이언트에 대한 업데이트를 배포할 때 다시 시작
 >- 자세한 내용은 [Office 365에 대한 최종 사용자 업데이트 알림](https://docs.microsoft.com/deployoffice/end-user-update-notifications-for-office-365-proplus)을 참조하세요.
 
 
+## <a name="bkmk_o365_lang"></a>Office 365 업데이트 다운로드 언어 추가
+Office 365에서 지원되는 모든 언어의 업데이트를 다운로드하도록 Configuration Manager에 대한 지원을 추가할 수 있습니다.
 
-## <a name="add-languages-for-office-365-update-downloads"></a>Office 365 업데이트 다운로드 언어 추가
-Configuration Manager의 지원 여부와 관계 없이 Office 365에서 지원되는 모든 언어에 대한 업데이트를 다운로드하도록 Configuration Manager에 대한 지원을 추가할 수 있습니다.    
+### <a name="download-updates-for-additional-languages-in-version-1902"></a>1902 버전의 추가 언어 업데이트 다운로드
+<!--3555955-->
+
+Configuration Manager 버전 1902부터 업데이트 워크플로는 **Office 365 Client Update**의 여러 추가 언어와 **Windows Update**용 38개 언어를 구분합니다.
+
+필요한 언어를 선택하려면 다음 위치에서 **언어 선택** 페이지를 사용합니다.
+- 자동 배포 규칙 만들기 마법사
+- 소프트웨어 업데이트 배포 마법사
+- 소프트웨어 업데이트 다운로드 마법사
+- 자동 배포 규칙 속성
+
+**언어 선택** 페이지에서 **Office 365 클라이언트 업데이트**를 선택하고, **편집**을 클릭합니다. Office 365에 필요한 언어를 추가한 다음 **OK**를 클릭합니다.
+
+![Office 365에 필요한 언어를 추가하는 스크린샷](media/office-update-languages-selection.png)
+
+### <a name="to-add-support-to-download-updates-for-additional-languages-in-version-1810-and-earlier"></a>1810년 이전 버전의 추가 언어에 대한 업데이트를 다운로드하기 위한 지원을 추가합니다.
+
+중앙 관리 사이트나 독립 실행형 기본 사이트의 소프트웨어 업데이트 지점에서 다음 절차를 사용합니다.
 
 > [!IMPORTANT]  
 > 추가 Office 365 업데이트 언어 구성은 사이트 전체 설정입니다. 다음 절차를 사용하여 언어를 추가하면 모든 Office 365 업데이트가 소프트웨어 업데이트 다운로드 또는 소프트웨어 업데이트 배포 마법사의 **언어 선택** 페이지에서 선택한 언어 외에 추가한 언어로도 다운로드됩니다.
 
-### <a name="to-add-support-to-download-updates-for-additional-languages"></a>추가 언어의 업데이트 다운로드 지원을 추가하려면
-중앙 관리 사이트나 독립 실행형 기본 사이트의 소프트웨어 업데이트 지점에서 다음 절차를 사용합니다.
 1. 명령 프롬프트에서 관리자 권한으로 *wbemtest*를 입력하여 Windows Management Instrumentation 테스터를 엽니다.
 2. **연결**을 클릭한 후 *root\sms\site_&lt;siteCode&gt;* 를 입력합니다.
 3. **쿼리**를 클릭한 후 다음 쿼리를 실행합니다. *select &#42; from SMS_SCI_Component where componentname ="SMS_WSUS_CONFIGURATION_MANAGER"*  
@@ -244,5 +237,6 @@ Office 365 클라이언트가 Configuration Manager에서 업데이트를 받도
 You can create an application just as you would with any other application in Configuration Manager from **Software Library** > **Overview** > **Application Management** > **Applications**. For details, see [Create and deploy an application](/sccm/apps/get-started/create-and-deploy-an-application).
 --->
 
-<!--- ## Next steps
-Use the Office 365 Client Management dashboard in Configuration Manager to review Office 365 client information and deploy Office 365 apps. For details, see [Manage Office 365 apps](manage-office-365-apps.md). --->
+## <a name="next-steps"></a>다음 단계
+
+Configuration Manager의 Office 365 클라이언트 관리 대시보드를 사용하여 Office 365 클라이언트 정보를 검토하고 Office 365 앱을 배포합니다. 자세한 내용은 [Office 365 클라이언트 관리 대시보드](/sccm/sum/deploy-use/office-365-dashboard)를 참조하세요. --->

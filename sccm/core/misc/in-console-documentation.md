@@ -1,6 +1,6 @@
 ---
 title: 콘솔 내 설명서
-ms.date: 03/11/2019
+ms.date: 04/05/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,12 +10,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9978241a984ae8694f646ea9e08ac22101072a0
-ms.sourcegitcommit: 8803a64692f3edc0422b58f6c3037a8796374cc8
+ms.openlocfilehash: e61eb676d7ec61a2e72cd911389e019c9f0cbd7a
+ms.sourcegitcommit: 5ee9487c891c37916294bd34a10d04e398f111f7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57881591"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59069333"
 ---
 <!-- 
 - Feature 1357546
@@ -24,18 +24,17 @@ ms.locfileid: "57881591"
 - Process: https://microsoft.sharepoint.com/teams/ConfigMgr/Documents/ContentPub/Data%20collection%20process%20for%20Feature%201357546%20In-console%20documentation.docx?web=1
 -->
 
-
 # <a name="configuration-manager-documentation"></a>Configuration Manager 설명서
 
-이 콘텐츠는 Configuration Manager의 학습과 지원에 도움이 될 수 있습니다. 
+이 콘텐츠는 Configuration Manager의 학습과 지원에 도움이 될 수 있습니다.
 
 자세한 내용은 다음 아티클을 참조하세요.
+
 - [Configuration Manager 문서 라이브러리](https://docs.microsoft.com/sccm)  
 - [Configuration Manager 문서를 사용하는 방법](https://docs.microsoft.com/sccm/core/understand/use-docs)
 
+## <a name="recommended"></a>권장
 
-
-## <a name="recommended"></a>권장 
 큐레이팅된 중요한 문서 목록입니다.
 
 - [Windows 10 디바이스에 대한 공동 관리](https://docs.microsoft.com/sccm/comanage/overview)  
@@ -50,45 +49,42 @@ ms.locfileid: "57881591"
 - [클라우드 관리 게이트웨이에 대한 계획](https://docs.microsoft.com/sccm/core/clients/manage/plan-cloud-management-gateway)
 - [계층 구조 간에 데이터 마이그레이션](https://docs.microsoft.com/sccm/core/migration/migrate-data-between-hierarchies)
 
-
-
 ## <a name="trending"></a>인기
-2019년 2월의 가장 인기 있는 문서입니다.
 
-| 페이지 보기 | 제목 | 
-|------------|-------| 
-| 20070 | [문제 해결을 위한 로그 파일](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files) |
-| 14297 | [버전 1810의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1810) |
-| 10497 | [Windows에 클라이언트 배포](https://docs.microsoft.com/sccm/core/clients/deploy/deploy-clients-to-windows-computers) |
-| 10140 | [연결에 사용되는 포트](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/ports) |
-| 8836 | [콘솔 설치](https://docs.microsoft.com/sccm/core/servers/deploy/install/install-consoles) |
-| 8738 | [Windows 10에 대한 지원](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10) |
-| 8291 | [Windows 10 디바이스에 대한 공동 관리](https://docs.microsoft.com/sccm/comanage/overview) |
-| 7995 | [클라이언트 설치 매개 변수 및 속성](https://docs.microsoft.com/sccm/core/clients/deploy/about-client-installation-properties) |
-| 7788 | [업데이트 및 서비스](https://docs.microsoft.com/sccm/core/servers/manage/updates) |
-| 7261 | [Configuration Manager 도구](https://docs.microsoft.com/sccm/core/support/tools) |
+2019년 3월의 가장 인기 있는 문서입니다.
 
-
+| 페이지 보기 | 제목 |
+|------------|-------|
+| 21716 | [문제 해결을 위한 로그 파일](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files)
+| 13321 | [버전 1810의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1810)
+| 11671 | [연결에 사용되는 포트](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/ports)
+| 10930 | [Windows에 클라이언트 배포](https://docs.microsoft.com/sccm/core/clients/deploy/deploy-clients-to-windows-computers)
+| 8944 | [업데이트 및 서비스](https://docs.microsoft.com/sccm/core/servers/manage/updates)
+| 8941 | [Windows 10에 대한 지원](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10)
+| 8844 | [콘솔 설치](https://docs.microsoft.com/sccm/core/servers/deploy/install/install-consoles)
+| 8797 | [클라이언트 설치 매개 변수 및 속성](https://docs.microsoft.com/sccm/core/clients/deploy/about-client-installation-properties)
+| 8035 | [Office 365 ProPlus 업데이트 관리](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+| 7866 | [애플리케이션 배포](https://docs.microsoft.com/sccm/apps/deploy-use/deploy-applications)
 
 ## <a name="recently-updated"></a>최근 업데이트 항목
+
 최근 및 중요한 업데이트가 포함된 문서입니다.
 
-| 마지막 검토 | 제목 | 
+| 마지막 검토 | 제목 |
 |---------------|-------|
-| 2019/02/27 | [MDM 기관을 Intune으로 변경](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-change-mdm-authority) |
-| 2019/02/26 | [상태 메시지](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/state-messaging-system-center-configuration-manager) |
-| 2019/02/26 | [하이브리드 MDM의 새로운 기능](https://docs.microsoft.com/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management) |
-| 2019/02/25 | [소프트웨어 업데이트 설치](https://docs.microsoft.com/sccm/osd/understand/install-software-updates) |
-| 2019/02/22 | [기존 디바이스에 대한 Windows Autopilot](https://docs.microsoft.com/sccm/osd/deploy-use/windows-autopilot-for-existing-devices) |
-| 2019/02/21 | [버전 1810의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1810) |
-| 2019/02/21 | [사용되지 않는 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures) |
-| 2019/02/21 | [Windows 애플리케이션 만들기](https://docs.microsoft.com/sccm/apps/get-started/creating-windows-applications) |
-| 2019/02/21 | [릴리스 정보](https://docs.microsoft.com/sccm/core/servers/deploy/install/release-notes) |
-| 2019/02/20 | [버전 1810 릴리스 정보](https://docs.microsoft.com/powershell/sccm/1810-release-notes) |
-
-
+| 2019/03/29 | [버전 1902의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1902)
+| 2019/03/29 | [기술 미리 보기 릴리스](https://docs.microsoft.com/sccm/core/get-started/technical-preview)
+| 2019/03/29 | [실시간 데이터에 대한 CMPivot](https://docs.microsoft.com/sccm/core/servers/manage/cmpivot)
+| 2019/03/29 | [기술 미리 보기 1903](https://docs.microsoft.com/sccm/core/get-started/2019/technical-preview-1903)
+| 2019/03/29 | [CMPivot 문제 해결](https://docs.microsoft.com/sccm/core/servers/manage/cmpivot-tsg)
+| 2019/03/27 | [필수 구성 요소 확인](https://docs.microsoft.com/sccm/core/servers/deploy/install/list-of-prerequisite-checks)
+| 2019/03/27 | [사이트 서버 고가용성](https://docs.microsoft.com/sccm/core/servers/deploy/configure/site-server-high-availability)
+| 2019/03/27 | [PowerShell 버전 1902 릴리스 정보](https://docs.microsoft.com/powershell/sccm/1902-release-notes)
+| 2019/03/27 | [확장된 상호 운용성 클라이언트](https://docs.microsoft.com/sccm/core/understand/interoperability-client)
+| 2019/03/27 | [접근성](https://docs.microsoft.com/sccm/core/understand/accessibility-features)
 
 ## <a name="troubleshooting-articles"></a>문제 해결 문서
+
 Configuration Manager 구성 요소 및 기능의 문제 해결을 지원하기 위한 안내 방식 연습입니다.
 
 - [PXE 부팅 문제 해결](https://support.microsoft.com/help/4468612)
@@ -98,18 +94,16 @@ Configuration Manager 구성 요소 및 기능의 문제 해결을 지원하기 
 - [소프트웨어 업데이트 관리 문제 해결](https://support.microsoft.com/help/10680)
 - [애플리케이션 설치 작업 순서 단계 문제 해결](https://support.microsoft.com/help/18408/)
 
-
-
 ## <a name="new-and-updated-support-articles"></a>새로 제공되거나 업데이트된 지원 문서
-2019년 2월에 새로 제공되거나 업데이트된 지원 문서입니다.
 
-- [KB 4490644: Microsoft WSUS 및 Configuration Manager SUP 유지 관리에 대한 전체 가이드](https://support.microsoft.com/help/4490644)
-- [KB 4491117: Configuration Manager 버전 1810 또는 1806에서 클라이언트에 대한 업데이트 설치가 응답을 중지함](https://support.microsoft.com/help/4491117)
-- [KB 4346901: 구성 관리자 클라이언트에서 소프트웨어 업데이트 설치](https://support.microsoft.com/help/4346901)
-- [KB 4468612: Configuration Manager에서 PXE 부팅 문제 해결](https://support.microsoft.com/help/4468612)
-- [KB 4491871: Configuration Manager에서 PXE 부팅 문제 고급 문제 해결](https://support.microsoft.com/help/4491871)
-- [KB 4490575: Configuration Manager 버전 1810에서 업데이트 설치가 응답을 중지하거나 완료를 표시하지 않음](https://support.microsoft.com/help/4490575)
-- [KB 4459394: System Center Configuration Manager의 상태 메시지 설명](https://support.microsoft.com/help/4459394)
-- [KB 4490434: Configuration Manager에서 중복 사용자 검색 열이 만들어짐](https://support.microsoft.com/help/4490434)
+2019년 3월에 새로 제공되거나 업데이트된 지원 문서입니다.
+
+- [KB 4488598: System Center Configuration Manager 현재 분기, 버전 1810의 업데이트 롤업 2](https://support.microsoft.com/help/4488598)
+- [KB 4494015: Windows 설치 프로그램 또는 현재 위치 업그레이드가 완료된 후 OSD 작업 순서가 계속되지 않습니다.](https://support.microsoft.com/help/4494015)
+- [KB 4495265: CMG를 타사 인증서가 있는 클라우드 DP로 사용하는 경우 WINHTTP_CALLBACK_STATUS_FLAG_CERT_CN_INVALID](https://support.microsoft.com/help/4495265)
+- [KB 4494799: 사전 프로비저닝 BitLocker가 Windows 10 버전 1511과 함께 사용되는 경우 이전 버전의 Windows가 "Windows 및 Configuration Manager 설정" 단계 이후에 시작되지 않습니다.](https://support.microsoft.com/help/4494799)
+- [KB 4494362: Configuration Manager 버전 1810으로 업데이트한 후 "PolicyTargetEvalNotify_iud 구성 요소에 대한 업데이트를 보낼 수 없습니다"가 반복적으로 Smsdbmon.log에 기록됩니다.](https://support.microsoft.com/help/4494362)
+- [KB 4494361: 2단계 인증을 사용하도록 설정한 경우 중앙 관리 사이트를 독립 실행형 기본 사이트에 연결하지 못합니다.](https://support.microsoft.com/help/4494361)
+- [KB 4493667: OSDResults는 Configuration Manager에서 UDI 작업 순서에 의해 설치된 애플리케이션을 표시하지 않습니다.](https://support.microsoft.com/help/4493667)
 
 새로운 Configuration Manager 지원 문서의 Atom 또는 RSS 알림을 구독하려면 [지원 콘텐츠 업데이트](https://support.microsoft.com/help/4089498/)를 참조하고 **System Center Configuration Manager**를 선택하세요.  

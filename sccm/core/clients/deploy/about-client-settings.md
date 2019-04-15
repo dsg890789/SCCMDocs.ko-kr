@@ -2,7 +2,7 @@
 title: 클라이언트 설정
 titleSuffix: Configuration Manager
 description: 클라이언트 동작을 제어하기 위한 기본 및 사용자 지정 설정에 대해 알아봅니다.
-ms.date: 03/21/2019
+ms.date: 04/12/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e76dc5892ad34d72bfee3cd4aea0fa660e34855d
-ms.sourcegitcommit: 9aebc20b25cdef0af908918ccfd791f3264a5d94
+ms.openlocfilehash: 42218443f83726bfbca0dcf77ffa37e61c46a2b3
+ms.sourcegitcommit: d4b0e44e6bb06a830d0887493528d9166a15154b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58477537"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59506212"
 ---
 # <a name="about-client-settings-in-configuration-manager"></a>Configuration Manager의 클라이언트 설정 정보
 
@@ -784,11 +784,23 @@ Configuration Manager에서 모든 배포에 대한 요구 사항 규칙을 재�
 
 이 옵션을 **예**로 설정하고 클라이언트에 하나 이상의 "소프트웨어 업데이트" 유지 관리 기간이 정의된 경우 소프트웨어 업데이트는 "모든 배포" 유지 관리 기간 동안 설치됩니다. 기본적으로 이 설정은 **없음**으로 설정됩니다. 이 클라이언트 설정은 Configuration Manager 버전 1810에 추가되었습니다. <!--2839307-->
 
+### <a name="bkmk_thread-priority"></a>기능 업데이트에 대한 스레드 우선 순위를 지정합니다.
+<!--3734525-->
+Configuration Manager 버전 1902에서 시작하여 [Windows 10 서비스](/sccm/osd/deploy-use/manage-windows-as-a-service)를 통해 Windows 10 버전 1709 이상의 클라이언트가 기능 업데이트를 설치하는 우선 순위를 조정할 수 있습니다. 이 설정은 Windows 10 현재 위치 업그레이드 작업 순서에 영향을 미치지 않습니다.
+
+새 클라이언트 설정은 다음 옵션을 제공합니다.
+
+- **구성되지 않음**: Configuration Manager가 설정을 변경하지 않습니다. 관리자는 자신의 setupconfig.ini 파일을 사전 준비할 수 있습니다. 이 값은 기본값입니다. 
+- **정상**: Windows 설치는 더 많은 시스템 리소스를 사용하고 더 빠르게 업데이트합니다. 또한 더 많은 프로세서 시간을 사용하므로 총 설치 시간은 더 짧지만 사용자의 중단은 더 오래 걸립니다.  
+   - `/Priority Normal` [Windows 설치 명령줄 옵션](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options)을 사용하여 setupconfig.ini 파일을 디바이스에 구성합니다.
+
+- **낮음**: 백그라운드에서 다운로드하고 업데이트하는 동안 디바이스에서 작업을 계속할 수 있습니다. 총 설치 시간은 더 오래 걸리지만 사용자의 중단은 더 짧아집니다. 이 옵션을 사용할 때 시간 초과를 방지하려면 업데이트 최대 실행 시간을 늘려야 할 수 있습니다.
+  - setupconfig.ini 파일에서 `/Priority` [Windows 설치 명령줄 옵션](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options)을 제거합니다.
+
+
 ### <a name="enable-third-party-software-updates"></a>타사 소프트웨어 업데이트 사용 
 
 이 옵션을 **예**로 설정하면 '인트라넷 Microsoft 업데이트 서비스 위치에 대해 서명된 업데이트 허용' 정책이 설정되고, 클라이언트의 신뢰할 수 있는 게시자 저장소에 서명 인증서가 설치됩니다. 이 클라이언트 설정은 Configuration Manager 버전 1802에 추가되었습니다.
-
-
 
 ## <a name="state-messaging"></a>상태 메시지
 

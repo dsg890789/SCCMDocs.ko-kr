@@ -2,7 +2,7 @@
 title: 1902에 대한 검사 목록
 titleSuffix: Configuration Manager
 description: Configuration Manager 버전 1902로 업데이트하기 전에 수행할 작업을 알아봅니다.
-ms.date: 03/27/2019
+ms.date: 04/11/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5833db7cd6f47d0711fdcfae5d1f7a4114d7ff34
-ms.sourcegitcommit: d584c126a0a5725567631b74ac1e01f63242a997
+ms.openlocfilehash: c9d0714bd55b4c99b181dfaf3ac34e63a0e9a35e
+ms.sourcegitcommit: d4b0e44e6bb06a830d0887493528d9166a15154b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58861023"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59506144"
 ---
 # <a name="checklist-for-installing-update-1902-for-configuration-manager"></a>Configuration Manager용 업데이트 1902를 설치하기 위한 검사 목록
 
@@ -65,7 +65,7 @@ Configuration Manager의 현재 분기를 사용하는 경우 버전 1902용 콘
 ## <a name="checklist"></a>확인 목록
 
 #### <a name="all-sites-run-a-supported-version-of-configuration-manager"></a>모든 사이트에서 지원되는 Configuration Manager 버전 실행  
-업데이트 1902의 설치를 시작하기 전에 계층의 각 사이트 서버에서 동일한 버전의 Configuration Manager를 실행해야 합니다. 1902로 업데이트하려면 버전 1710, 1802, 1806 또는 1810을 사용해야 합니다.
+업데이트 1902의 설치를 시작하기 전에 계층의 각 사이트 서버에서 동일한 버전의 Configuration Manager를 실행해야 합니다. 1902로 업데이트하려면, 버전 1802, 1806, 또는 1810을 사용해야 합니다.
 
 #### <a name="review-the-status-of-your-product-licensing"></a>제품 라이선스의 상태 검토 
 이 업데이트를 설치하기 위한 활성 SA(Software Assurance) 규약 또는 동등한 구독 권한이 있어야 합니다. 사이트를 업데이트할 때 **라이선싱** 페이지에서는 **Software Assurance 만료 날짜**를 확인하는 옵션을 제공합니다.

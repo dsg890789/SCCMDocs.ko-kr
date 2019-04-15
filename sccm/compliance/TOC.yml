@@ -57,6 +57,8 @@ items:
       href: deploy-use/import-configuration-data.md
   - name: 사용자 데이터 및 프로필 구성 항목 만들기
     href: deploy-use/create-user-data-and-profiles-configuration-items.md
+  - name: 비즈니스용 OneDrive 프로필
+    href: deploy-use/onedrive-profile.md
   - name: 원격 연결 프로필 만들기
     href: deploy-use/create-remote-connection-profiles.md
   - name: Windows 디바이스를 새 버전으로 업그레이드
@@ -65,9 +67,9 @@ items:
     href: deploy-use/browser-profiles.md
   - name: 준수 설정 모니터링
     href: deploy-use/monitor-compliance-settings.md
-ms.openlocfilehash: 38815fd56a9eb9f3f8054ed4518981d9d8938eb9
-ms.sourcegitcommit: 8661f10596f565ca2b7bdb5951388b44b3b622ee
+ms.openlocfilehash: 0e3875fe8038d1d17030a69d2df11631e4e480c1
+ms.sourcegitcommit: d4b0e44e6bb06a830d0887493528d9166a15154b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "48817693"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59506195"

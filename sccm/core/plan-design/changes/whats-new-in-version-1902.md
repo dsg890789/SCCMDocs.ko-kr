@@ -2,7 +2,7 @@
 title: 버전 1902의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager 현재 분기, 버전 1902에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
-ms.date: 04/03/2019
+ms.date: 04/12/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,18 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0be6a28aa0421c6479ba676e67fd5dd7b4b13d39
-ms.sourcegitcommit: da753df27d3909265ca45d3e79091f1e98758d16
+ms.openlocfilehash: a424a2397f4e1845795441208929b7d9efb7f93c
+ms.sourcegitcommit: d4b0e44e6bb06a830d0887493528d9166a15154b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "58913679"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59506280"
 ---
 # <a name="whats-new-in-version-1902-of-configuration-manager-current-branch"></a>Configuration Manager 현재 분기, 버전 1902의 새 기능
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Configuration Manager 현재 분기, 버전 1902 업데이트는 콘솔 내 업데이트로 사용할 수 있습니다. 1710, 1802, 1806 또는 1810 버전을 실행하는 사이트에서 이 업데이트를 적용합니다. <!-- baseline only statement:-->새 사이트를 설치할 때 기준 버전으로 사용할 수도 있습니다. 이 문서에는 Configuration Manager 버전 1902의 변경 내용과 새로운 기능이 요약되어 있습니다.  
+Configuration Manager 현재 분기, 버전 1902 업데이트는 콘솔 내 업데이트로 사용할 수 있습니다. 1802, 1806, 또는 1810 버전을 실행하는 사이트에서 이 업데이트를 적용합니다. <!-- baseline only statement:-->새 사이트를 설치할 때 기준 버전으로 사용할 수도 있습니다. 이 문서에는 Configuration Manager 버전 1902의 변경 내용과 새로운 기능이 요약되어 있습니다.  
 
 이 업데이트를 설치하기 위한 최신 검사 목록을 항상 검토하세요. 자세한 내용은 [업데이트 1902를 설치하기 위한 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1902)을 참조하세요. 사이트를 업데이트한 후 [업데이트 후 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1902#post-update-checklist)도 검토하세요.
 
@@ -343,11 +343,11 @@ OS 이미지를 업데이트할 일정을 생성할 때 **이미지가 업데이
 
 ### <a name="specify-priority-for-feature-updates-in-windows-10-servicing"></a>Windows 10 서비스에서 기능 업데이트에 대한 우선 순위 지정
 <!--3734525-->
-클라이언트가 [Windows 10 서비스](/sccm/osd/deploy-use/manage-windows-as-a-service)를 통해 기능 업데이트를 설치하는 우선 순위를 조정합니다. 기본적으로 클라이언트는 처리 우선 순위가 높은 기능 업데이트부터 설치합니다. 
+***[업데이트]*** 클라이언트가 [Windows 10 서비스](/sccm/osd/deploy-use/manage-windows-as-a-service)를 통해 기능 업데이트를 설치하는 우선 순위를 조정합니다. 기본적으로 클라이언트는 처리 우선 순위가 높은 기능 업데이트부터 설치합니다. 
 
 이 옵션은 클라이언트 설정을 사용하여 구성합니다. **소프트웨어 업데이트** 그룹에서 다음 설정을 구성합니다. **기능 업데이트에 대한 스레드 우선 순위를 지정합니다**. 
 
-<!-- For more information, see [About client settings](/sccm/core/clients/deploy/about-client-settings#software-updates). -->
+자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#software-updates)를 참조하세요. 
 
 
 
@@ -355,7 +355,7 @@ OS 이미지를 업데이트할 일정을 생성할 때 **이미지가 업데이
 
 ### <a name="redirect-windows-known-folders-to-onedrive"></a>알려진 Windows 폴더를 OneDrive로 리디렉션
 <!--3556021-->
-Configuration Manager를 사용하여 알려진 Windows 폴더를 비즈니스용 OneDrive로 이동합니다. 이러한 폴더로는 바탕 화면, 문서, 사진 등이 있습니다. Windows 10 업그레이드의 간소화를 위해, 작업 순서를 배포하기 전에 해당 설정을 Windows 7 클라이언트에 배포하세요. 
+***[업데이트]*** Configuration Manager를 사용하여 알려진 Windows 폴더를 비즈니스용 OneDrive로 이동합니다. 이러한 폴더로는 바탕 화면, 문서, 사진 등이 있습니다. Windows 10 업그레이드의 간소화를 위해, 작업 순서를 배포하기 전에 해당 설정을 Windows 7 클라이언트에 배포하세요. 
 
 비즈니스용 OneDrive의 이 기능에 대한 자세한 내용은 [알려진 Windows 폴더를 OneDrive로 리디렉션 및 이동](https://docs.microsoft.com/onedrive/redirect-known-folders)을 참조하세요.
 
@@ -363,23 +363,23 @@ Configuration Manager를 사용하여 알려진 Windows 폴더를 비즈니스�
 
 Business용 OneDrive 프로필을 만들고 배포하려면 Configuration Manager 콘솔에서 **자산 및 준수** 작업 영역으로 이동합니다. **준수 설정**을 확장하고 **비즈니스용 OneDrive 프로필** 노드를 선택합니다.  
 
-<!-- For more information, see [Redirect Windows known folders to OneDrive](/sccm/compliance/deploy-use/onedrive-profile). -->
+자세한 내용은 [비즈니스 프로필용 OneDrive](/sccm/compliance/deploy-use/onedrive-profile) 문서의 Windows 알려진 폴더를 OneDrive 섹션으로 리디렉션을 참조하세요.
 
 
-### <a name="integration-with-analytics-for-office-365-proplus-readiness"></a>Office 365 ProPlus 준비를 위한 분석과 통합
+### <a name="integration-for-office-365-proplus-readiness"></a>Office 365 ProPlus 준비를 위한 통합
 <!--3735402-->
-Configuration Manager를 사용하여 Office 365 ProPlus로 업그레이드할 준비가 된 높은 정확도의 디바이스를 확인합니다. Office 분석과의 통합을 통해 Office 추가 기능 및 사용자 환경에서 사용되는 매크로의 잠재적인 호환성 문제에 대한 인사이트를 제공합니다. 그런 다음, Configuration Manager를 사용하여 준비된 디바이스에 Office를 배포합니다. 
+***[업데이트]*** Configuration Manager를 사용하여 Office 365 ProPlus로 업그레이드할 준비가 된 높은 정확도의 디바이스를 확인합니다. 통합은 Office 추가 기능 및 사용자 환경에서 사용되는 매크로의 잠재적인 호환성 문제에 대한 인사이트를 제공합니다. 그런 다음, Configuration Manager를 사용하여 준비된 디바이스에 Office를 배포합니다. 
 
 기존 Office 365 클라이언트 관리 대시보드에는 이제 새 타일인 **Office 365 ProPlus 업그레이드 준비**가 포함됩니다.
 
-<!-- For more information, see [Office 365 client management dashboard](/sccm/sum/deploy-use/manage-office-365-proplus-updates#office-365-client-management-dashboard) -->
+자세한 내용은 [Office 365 클라이언트 관리 대시보드](/sccm/sum/deploy-use/office-365-dashboard#bkmk_o365_readiness)를 참조하세요.
 
 
 ### <a name="additional-languages-for-office-365-updates"></a>Office 365 업데이트용 추가 언어
 <!--3555955-->
-이제 Configuration Manager는 Office 365 클라이언트 업데이트를 위해 지원되는 모든 언어를 지원합니다. 이제 업데이트 워크플로는 **Office 365 클라이언트 업데이트**를 위한 103개 언어**에서 Windows 업데이트**를 위한 38개 언어를 구분합니다. 
+이제 Configuration Manager는 Office 365 클라이언트 업데이트를 위해 지원되는 모든 언어를 지원합니다. 이제 업데이트 워크플로는 **Office 365 클라이언트 업데이트**를 위한 다양한 언어**에서 Windows 업데이트**를 위한 38개 언어를 구분합니다. 
 
-<!-- For more information, see [Office 365 client management dashboard](/sccm/sum/deploy-use/manage-office-365-proplus-updates#office-365-client-management-dashboard) -->
+자세한 내용은 [Office 365 관리](/sccm/sum/deploy-use/manage-office-365-proplus-updates#bkmk_o365_lang)를 참조하세요.
 
 
 ### <a name="office-products-on-lifecycle-dashboard"></a>수명 주기 대시보드의 Office 제품
@@ -469,6 +469,19 @@ MMS(Midwest Management Summit) Desert Edition 2018에서 수렴한 고객의 피
 Configuration Manager 콘솔의 접근성 기능을 개선하려면 콘솔을 실행하는 컴퓨터에서 .NET을 4.7 버전 이상으로 업데이트하세요. 
 
 자세한 내용은 [Configuration Manager의 내게 필요한 옵션 기능](/sccm/core/understand/accessibility-features)을 참조하세요.
+
+
+### <a name="changes-to-console-setup-process"></a>콘솔 설치 프로세스 변경 내용
+
+<!-- 3612513 -->
+***[업데이트]***  Configuration Manager 콘솔을 설치할 때 필요한 새 구성 요소가 있습니다. 콘솔을 다른 컴퓨터에서 설치하기 위한 패키지를 생성하는 경우, 패키지에 다음 파일이 포함되어 있는지 확인합니다.
+
+- ConsoleSetup.exe
+- AdminConsole.msi
+- ConfigMgr.AC_Extension.i386.cab
+- ConfigMgr.AC_Extension.amd64.cab
+
+사이트 서버를 설치하거나 업데이트하는 경우 설치 파일 및 사이트의 지원되는 언어 팩이 **Tools\ConsoleSetup** 하위 폴더에 복사됩니다. 자세한 내용은 [Configuration Manager 콘솔 설치](/sccm/core/servers/deploy/install/install-consoles)를 참조하세요.
 
 
 
