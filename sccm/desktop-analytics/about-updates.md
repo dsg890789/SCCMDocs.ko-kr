@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b46bf167bc77716fe360940c4fb45cae2dc9dc5a
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: a10a7b5bbb3a1b7d0dada86774f3412e22faff01
+ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56755389"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59673550"
 ---
 # <a name="updates-in-desktop-analytics"></a>데스크톱 Analytics에서 업데이트 
 
@@ -48,7 +48,7 @@ ms.locfileid: "56755389"
 #### <a name="not-measured"></a>측정 되지 않습니다.
 데스크톱 분석 되지 않은 장치를 평가 합니다. 
 
-- Windows, Windows 7 또는 Windows 8.1 실행 하는 장치 포함  
+- Windows, Windows 참가자 프로그램에 대해 등록 된 Windows 7, Windows 8.1 또는 Windows 10 장치를 실행 하는 장치 포함  
 
 - Office 용 다음 버전 중 하나를 사용 하 여 장치 포함 됩니다.  
 
@@ -81,12 +81,12 @@ ms.locfileid: "56755389"
 장치는 서비스의 끝에 도달한 후 90 일 내에 있는 기능 업데이트를 실행 하 고 있습니다.
 
 #### <a name="end-of-service"></a>서비스의 끝
-장치는 서비스 날짜의 끝을 지난 기능 업데이트를 실행 하 고 있습니다. 서비스 날짜는 종료에 대 한 내용은 {0} 매개 변수를 xlink UDR_monitoring의 관련 섹션으로}를 참조 하세요. |
+장치는 서비스 날짜의 끝을 지난 기능 업데이트를 실행 하 고 있습니다. 서비스 날짜는 종료에 대 한 세부 정보를 참조 하세요. [Windows 수명 주기 팩트 시트](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)  <!-- {xlink into relevant section of UDR_monitoring}|-->
 
 #### <a name="not-measured"></a>측정 되지 않습니다.
 데스크톱 분석 되지 않은 장치를 평가 합니다. 
 
-- Windows, Windows 7 또는 Windows 8.1 실행 하는 장치 포함  
+- Windows, Windows 참가자 프로그램에 대해 등록 된 Windows 7, Windows 8.1 또는 Windows 10 장치를 실행 하는 장치 포함
 
 - Office 용 다음 버전 중 하나를 사용 하 여 장치 포함 됩니다.  
 

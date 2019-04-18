@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: da0bde04e019fdf0fbb0a997be652860824270b1
-ms.sourcegitcommit: 5ee9487c891c37916294bd34a10d04e398f111f7
+ms.openlocfilehash: bf2114ac77a75fedc18c38a8d373b9c0a1ada591
+ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59069401"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59673414"
 ---
 # <a name="compatibility-risk-for-windows-apps-in-desktop-analytics"></a>데스크톱 Analytics에서 Windows 앱에 대 한 호환성 위험
 
@@ -52,8 +52,17 @@ Windows Analytics에서 업그레이드 평가 된 일반, 예를 들어: 주의
 
 ### <a name="ready-for-windows"></a>Windows에 대 한 준비
 
-Windows에 대 한 준비 데이터 저장소 장치에서 호환성 블록에 대 한 확인합니다. 또한 유사한 앱을 보고 다른 고객의에서 데이터를 상호 연결 합니다. Microsoft이 앱이 없는 문제를 보고 하는 위치와 유사한 다른 장치에서 데이터를 사용 합니다.
+합니다 [준비에 대 한 Windows](https://www.readyforwindows.com) 앱 카탈로그 장치의 호환성 블록과 같은 Microsoft 로부터 추가 검사를 사용 하 여 동일한 앱을 보고 다른 고객 으로부터 진단 데이터를 상호 연결 합니다. 
 
+가능한 범주는 다음과 같습니다.
+
+- **데이터가 부족 하 게** 채택을 분류 하는 Microsoft에 대 한이 앱에 대 한 정보를 공유 하는 너무 적은 상용 Windows 10 장치를 의미 합니다.
+
+- **채택** 10,000 개 이상의 상업용 Windows 10 장치에서 앱을 설치한 것을 의미 합니다.  
+
+- **많이 채택** 10만 개 이상의 상업용 Windows 10 장치에서 앱을 설치한 것을 의미 합니다.  
+
+- **개발자에 게 문의** 따라서 것이 좋습니다 자세한 소프트웨어 공급자에 게 문의 하 고이 솔루션을 통해 호환성 문제가 발생할 수 있습니다.  
 
 ### <a name="app-health-analyzer-signals-for-compatibility-assessment"></a>호환성 평가 대 한 앱 상태 분석기 신호
 

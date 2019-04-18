@@ -2,7 +2,7 @@
 title: 데스크톱 Analytics 문제 해결
 titleSuffix: Configuration Manager
 description: 데스크톱 Analytics를 사용 하 여 문제를 해결 하려면 기술 세부 정보입니다.
-ms.date: 04/05/2019
+ms.date: 04/15/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7fab23b4d1d977d2d634a11959887f1c1baa9a7
-ms.sourcegitcommit: 5ee9487c891c37916294bd34a10d04e398f111f7
+ms.openlocfilehash: f0da26f1ea2b7f7c0c49377cb934e451d56889b7
+ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59069435"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59673669"
 ---
 # <a name="troubleshooting-desktop-analytics"></a>데스크톱 Analytics 문제 해결
 
@@ -272,7 +272,7 @@ Start-Service -Name dps
 #### <a name="check-end-user-diagnostic-data"></a>최종 사용자가 진단 데이터를 확인 합니다.
 
 <!--1004-->
-이 검사를 성공한 없으면 사용자 장치에서 더 낮은 Windows 진단 데이터를 선택 합니다.
+이 검사를 성공한 없으면 사용자 장치에서 더 낮은 Windows 진단 데이터를 선택 합니다. 충돌 하는 그룹 정책 개체에 의해 발생할 수도 있습니다. 자세한 내용은 [Windows 설정](/sccm/desktop-analytics/enroll-devices#windows-settings)합니다.
 
 비즈니스 요구 사항에 따라 그룹 정책을 통해 사용자 선택을 해제할 수 있습니다. 설정을 사용 하 여 **원격 분석 옵트인 설정 사용자 인터페이스 구성**합니다. 자세한 내용은 [조직에서 Windows 진단 데이터 구성](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enterprise-management)을 참조하세요.
 
@@ -289,7 +289,7 @@ DisableEnterpriseAuthProxy 설정은 Windows 7에 대 한 기본으로 사용 �
 
 자세한 내용은 클라이언트에서 M365AHandler.log를 검토 합니다.  
 
-이 레지스트리 키에 대 한 권한을 확인 합니다. 로컬 시스템 계정을 설정 하려면 Configuration Manager 클라이언트에 대 한이 키에 액세스할 수 있는지 확인 합니다.  
+이 레지스트리 키에 대 한 권한을 확인 합니다. 로컬 시스템 계정을 설정 하려면 Configuration Manager 클라이언트에 대 한이 키에 액세스할 수 있는지 확인 합니다. 충돌 하는 그룹 정책 개체에 의해 발생할 수도 있습니다. 자세한 내용은 [Windows 설정](/sccm/desktop-analytics/enroll-devices#windows-settings)합니다.  
 
 #### <a name="commercial-id-configuration"></a>상용 ID 구성
 
@@ -308,7 +308,7 @@ Microsoft은 Desktop Analytics 작업 영역에서 장치 정보를 매핑할 �
 
 자세한 내용은 클라이언트에서 M365AHandler.log를 검토 합니다.  
 
-이 레지스트리 키에 대 한 권한을 확인 합니다. 로컬 시스템 계정을 설정 하려면 Configuration Manager 클라이언트에 대 한이 키에 액세스할 수 있는지 확인 합니다.  
+이 레지스트리 키에 대 한 권한을 확인 합니다. 로컬 시스템 계정을 설정 하려면 Configuration Manager 클라이언트에 대 한이 키에 액세스할 수 있는지 확인 합니다. 충돌 하는 그룹 정책 개체에 의해 발생할 수도 있습니다. 자세한 내용은 [Windows 설정](/sccm/desktop-analytics/enroll-devices#windows-settings)합니다.  
 
 장치에 대 한 다른 ID가 있습니다. 이 레지스트리 키 그룹 정책에 의해 사용 됩니다. Configuration Manager에서 제공 하는 ID를 통해 우선 합니다.  
 
@@ -341,7 +341,7 @@ Microsoft은 Desktop Analytics 작업 영역에서 장치 정보를 매핑할 �
 
 자세한 내용은 클라이언트에서 M365AHandler.log를 검토 합니다.  
 
-이 레지스트리 키에 대 한 권한을 확인 합니다. 로컬 시스템 계정을 설정 하려면 Configuration Manager 클라이언트에 대 한이 키에 액세스할 수 있는지 확인 합니다.  
+이 레지스트리 키에 대 한 권한을 확인 합니다. 로컬 시스템 계정을 설정 하려면 Configuration Manager 클라이언트에 대 한이 키에 액세스할 수 있는지 확인 합니다. 충돌 하는 그룹 정책 개체에 의해 발생할 수도 있습니다. 자세한 내용은 [Windows 설정](/sccm/desktop-analytics/enroll-devices#windows-settings)합니다.  
 
 그룹 정책과 같은 다른 정책 메커니즘,이 설정을 사용 하지 않도록 설정 되지 있는지 확인 합니다.
 
@@ -402,7 +402,7 @@ Microsoft은 Desktop Analytics 작업 영역에서 장치 정보를 매핑할 �
 - `HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection`
 - `HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection`
 
-이러한 레지스트리 키에 대 한 권한을 확인 합니다. 로컬 시스템 계정을 설정 하려면 Configuration Manager 클라이언트에 대 한 이러한 키에 액세스할 수 있는지 확인 합니다.  
+이러한 레지스트리 키에 대 한 권한을 확인 합니다. 로컬 시스템 계정을 설정 하려면 Configuration Manager 클라이언트에 대 한 이러한 키에 액세스할 수 있는지 확인 합니다. 충돌 하는 그룹 정책 개체에 의해 발생할 수도 있습니다. 자세한 내용은 [Windows 설정](/sccm/desktop-analytics/enroll-devices#windows-settings)합니다.  
 
 자세한 내용은 클라이언트에서 M365AHandler.log를 검토 합니다.  
 
@@ -473,6 +473,54 @@ Configuration Manager와 통합 하는 데스크톱 Analytics를 사용 하 여 
 
 
 
-## <a name="bkmk_MALogAnalyticsReader"></a> MALogAnalyticsReader 응용 프로그램 역할
+## <a name="bkmk_AzureADApps"></a> Azure AD 응용 프로그램
 
-데스크톱 Analytics를 설정 하는 경우 조직을 대신 하 여 동의 허용 합니다. 이 동의 할당 하는 것은 
+Azure ad에 응용 프로그램을 추가 하는 데스크톱 분석:
+
+- **Configuration Manager 마이크로 서비스**: 데스크톱 Analytics를 사용 하 여 Configuration Manager에 연결 합니다. 이 앱에 대 한 액세스 요구 사항이 없습니다.  
+
+- **Office 365 클라이언트 관리**: Log Analytics 작업 영역에서 데이터를 검색합니다. 이 앱에는 Log Analytics에 대 한 쓰기 액세스에 필요합니다.  
+
+- **MALogAnalyticsReader**: OMS 그룹 및 Log Analytics에서 생성 하는 장치를 검색 합니다. 자세한 내용은 [MALogAnalyticsReader 응용 프로그램 역할](#bkmk_MALogAnalyticsReader)입니다.  
+
+구성 집합을 완료 한 후 이러한 앱을 프로 비전 해야 할 경우으로 이동 합니다 **연결 된 서비스** 창입니다. 선택 **사용자 및 앱에 대 한 액세스 구성**, 및 앱 프로 비전 합니다.  
+
+- **Configuration Manager에 대 한 azure AD 앱**합니다. 프로 비전 또는 구성 집합을 완료 한 후 연결 문제 해결, 참조 하는 경우 [Configuration Manager에 대 한 앱 만들기](/sccm/desktop-analytics/set-up#create-app-for-configuration-manager)합니다. 이 앱에 필요한 **CM 컬렉션 데이터 쓰기** 하 고 **CM 컬렉션 데이터 읽기** 에 **Configuration Manager 서비스** API.  
+
+### <a name="bkmk_MALogAnalyticsReader"></a> MALogAnalyticsReader 응용 프로그램 역할
+
+데스크톱 Analytics를 설정 하는 경우 조직을 대신 하 여 동의 허용 합니다. 이 동의 MALogAnalyticsReader 응용 프로그램 작업 영역에 대 한 Log Analytics Reader 역할을 할당 하는 것입니다. 이 응용 프로그램 역할은 데스크톱 분석 필요 합니다.
+
+설정 하는 동안이 프로세스에 문제가 없는 경우이 사용 권한을 수동으로 추가 하려면 다음 프로세스를 사용 합니다.
+
+1. 로 이동 합니다 [Azure portal](http://portal.azure.com), 선택한 **모든 리소스**합니다. 형식의 작업 영역 선택 **Log Analytics**합니다.  
+
+2. 작업 영역 메뉴에서 선택 **액세스 제어 (IAM)** 을 선택한 후 **추가**합니다.  
+
+3. 에 **권한 추가** 패널에서 다음 설정을 구성 합니다.  
+
+    - **역할**: **Log Analytics Reader**  
+
+    - **에 대 한 액세스 할당**: **Azure AD 사용자, 그룹 또는 응용 프로그램**  
+
+    - **선택**: **MALogAnalyticsReader**  
+
+4. **저장**을 선택합니다.
+
+알림 역할 할당을 추가 하는 포털 보여 줍니다.
+
+
+## <a name="data-latency"></a>데이터 대기 시간
+
+<!-- 3846531 -->
+데스크톱 Analytics 포털에서 데이터가 매일 새로 고쳐집니다. 이 새로 고침에는 진단 데이터를 수집 하는 장치 변경 및 구성에 수행한 변경 내용을 포함 합니다. 예를 들어 변경한 경우 자산의 **업그레이드 결정**를 설치 하는 자산을 사용 하 여 장치의 준비 상태를 변경 내용이 발생할 수 있습니다.
+
+- **관리자 변경** 9 시간 내 데스크톱 Analytics 서비스에서 일반적으로 처리 됩니다. 예를 들어 오후 11시 UTC에 변경한 경우 포털 오전 08시 UTC 다음 날 전에 이러한 변경 내용을 반영 해야 합니다.
+
+- **장치 변경** 검색 UTC에서 현지 시간으로 자정 매일 새로 고침에 포함 일반적으로 됩니다. 일반적으로 관리자 변경에 비해 장치 변경 처리를 사용 하 여 연결 된 대기 시간이 추가 23 시간입니다.
+
+이러한 시간 프레임 내에서 업데이트 된 변경 내용에 표시 되지 않으면 다음 매일 새로 고치면 다른 24 시간 동안 대기 합니다. 긴 지연 표시 되 면 서비스 상태 대시보드를 확인 합니다. 서비스를 정상으로 보고 하는 경우 Microsoft 지원에 문의 합니다.
+
+데스크톱 Analytics를 처음 설치할 때 Configuration Manager 및 Desktop Analytics 포털에서 차트는 전체 데이터를 표시 되지 않습니다. 데스크톱 분석 서비스, 데이터를 처리 하 여 Configuration Manager 사이트를 사용 하 여 다음 동기화 서비스에 진단 데이터 보내기에 대 한 활성 장치에 대해 2 ~ 3 일 걸릴 수 있습니다.
+
+Configuration Manager 계층에서 배포 계획에 대해 새 컬렉션에 대 일 분 정도 걸릴 수 있습니다. 주 사이트 컬렉션을 만들고 데스크톱 Analytics를 사용 하 여 중앙 관리 사이트를 동기화 합니다.<!-- 3896921 -->

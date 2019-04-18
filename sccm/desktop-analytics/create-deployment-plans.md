@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b56fac3060acc16fe46221464ddc6535b478399
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 35e8e883acafaa1d606d81402b868b8a755d0887
+ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56755285"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59673465"
 ---
 # <a name="how-to-create-deployment-plans-in-desktop-analytics"></a>데스크톱 분석에서 배포 계획을 만드는 방법 
 
@@ -56,7 +56,7 @@ ms.locfileid: "56755285"
 
     2. 각 앱을 선택 하 고 선택한 **편집**합니다. 동시 편집 하려면 둘 이상의 앱을 선택할 수 있습니다.   
 
-    3. 중요도 수준을 선택 합니다 **중요도** 목록입니다. 데스크톱 Analytics는 파일럿 기간 동안 추가 유효성 검사를 원한다 면 선택 **Critical** 또는 **중요**합니다. 추가 기능으로 표시의 유효성을 검사 하지 않습니다 **중요 하지 않은**합니다. 중요도 수준을 할당할 때 호환성 위험 및 기타 계획 정보를 고려 합니다.  
+    3. 중요도 수준을 선택 합니다 **중요도** 목록입니다. 데스크톱 Analytics는 파일럿 기간 동안 추가 유효성 검사를 원한다 면 선택 **Critical** 또는 **중요**합니다. 추가 기능으로 표시의 유효성을 검사 하지 않습니다 **중요 하지 않은**합니다. 고려해 야 합니다 [호환성 위험](/sccm/desktop-analytics/compat-risk) 및 중요도 수준을 할당할 때 다른 계획 정보입니다.  
 
         중요도 수준에 할당 하는 경우에 업그레이드 의사 결정을 선택할 수 있습니다.  
 

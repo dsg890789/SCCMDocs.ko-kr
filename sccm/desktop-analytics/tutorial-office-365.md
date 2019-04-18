@@ -2,7 +2,7 @@
 title: 자습서-Office 365를 배포 합니다.
 titleSuffix: Configuration Manager
 description: 데스크톱 분석 및 Configuration Manager를 사용 하 여 Office 365를 파일럿 그룹에 배포 하는 자습서입니다.
-ms.date: 04/05/2019
+ms.date: 04/15/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: tutorial
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d21b2b94c53390a9fcdbc1be640578060042ea9
-ms.sourcegitcommit: 5ee9487c891c37916294bd34a10d04e398f111f7
+ms.openlocfilehash: 66fc982fa7f2cee3fdd83945c1b43d490b40d2f2
+ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59069452"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59673788"
 ---
 # <a name="tutorial-deploy-office-365-to-pilot"></a>자습서: Office 365를 파일럿 배포
 
@@ -103,13 +103,21 @@ Azure 구독이 없으면 만듭니다는 [무료 계정](https://azure.microsof
 
 3. 에 **구독을 확인 하** 데스크톱 Analytics의 Windows 장치 상태 모니터링 기능에 대 한 페이지에서 필요한 정식 라이선스 목록이 됩니다. 계속하려면 **다음**을 선택합니다.  
 
-4. 에 **사용자가 액세스할 수** 데스크톱 분석 페이지에서 Azure Active Directory에서 두 개의 보안 그룹을 미리 구성 합니다.  
+4. 에 **사용자가 액세스할** 페이지:
 
-    - **작업 영역 소유자**: 작업 영역을 만들고 설정 합니다. 이러한 계정은 Azure 구독에 대 한 소유자 액세스를 해야합니다.  
+    - **사용자에 대 한 디렉터리 역할을 관리 하려면 데스크톱 분석 하려는**: 데스크톱 Analytics 자동으로 할당 합니다 **작업 영역 소유자** 및 **작업 영역 참가자** 그룹을 **데스크톱 분석 관리자** 역할. 이러한 그룹은 이미 있는 경우는 **전역 관리자**, 변경 되지 않았습니다.  
 
-    - **작업 영역 참가자**: 이 작업 영역에서 배포 계획을 만들고 설정 합니다. 모든 추가 Azure 액세스할이 필요는 없습니다.  
-  
-   각 그룹에 사용자를 추가할에서 해당 이름 또는 전자 메일 주소를 입력 합니다 **이름 또는 전자 메일 주소 입력** 적절 한 그룹의 섹션입니다. 완료 되 면 선택 **다음**합니다.
+        이 옵션을 선택 하지 않으면, 데스크톱 Analytics는 여전히 사용자 두 보안 그룹의 구성원으로 추가 합니다. A **전역 관리자** 수동으로 할당 해야 합니다 **데스크톱 분석 관리자** 사용자 역할.  
+
+        Azure Active Directory에서 관리자 역할 권한 및 할당 된 권한을 할당 하는 방법에 대 한 자세한 내용은 **데스크톱 Analytics Administrators**를 참조 하세요 [azure에서 관리자 역할 권한 Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)합니다.  
+
+    - 데스크톱 Analytics Azure Active Directory에서 두 개의 보안 그룹 같은 미리 구성합니다.:  
+
+        - **작업 영역 소유자**: 보안 그룹을 만들고 작업 영역을 관리 합니다. 이러한 계정은 Azure 구독에 대 한 소유자 액세스를 해야합니다.  
+
+        - **작업 영역 참가자**: 보안 그룹을 만들고이 작업 영역에서 배포 계획을 관리 합니다. 모든 추가 Azure 액세스할이 필요는 없습니다.  
+
+        각 그룹에 사용자를 추가할에서 해당 이름 또는 전자 메일 주소를 입력 합니다 **이름 또는 전자 메일 주소 입력** 적절 한 그룹의 섹션입니다. 완료 되 면 선택 **다음**합니다.
 
 5. 페이지에서 **작업 영역 설정**:  
 
