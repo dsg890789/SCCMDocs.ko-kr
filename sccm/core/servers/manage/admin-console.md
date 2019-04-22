@@ -12,11 +12,11 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: fb58662350caec9fd1a08295c93c3811893048a9
-ms.sourcegitcommit: da753df27d3909265ca45d3e79091f1e98758d16
+ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "58913543"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59802430"
 ---
 # <a name="using-the-configuration-manager-console"></a>Configuration Manager 콘솔 사용
 

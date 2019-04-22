@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af4d3319e94d8dd673f597e4df4dde3e73e15653
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: c64968ca0348b94e3fb20367af7f739d8a699c58
+ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56129054"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59673601"
 ---
 # <a name="site-components-for-configuration-manager"></a>Configuration Manager를 위한 사이트 구성 요소
 
@@ -27,7 +27,8 @@ ms.locfileid: "56129054"
 Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하여 **사이트 구성**을 확장하고 **사이트** 노드를 선택합니다. 사이트를 선택합니다. 리본 메뉴의 **설정** 그룹에서 **사이트 구성 요소 구성**을 선택합니다. 다음 옵션 중 하나를 선택합니다.
 
 - [소프트웨어 배포](#software-distribution)  
-- [소프트웨어 업데이트 지점](#software-update-point)  
+- [소프트웨어 업데이트 지점](#software-update-point) 
+- [운영 체제 배포](#operating-system-deployment)
 - [관리 지점](#management-point)  
 - [상태 보고](#status-reporting)  
 - [이메일 알림](#email-notification)
@@ -58,6 +59,11 @@ Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하여 *
 ### <a name="software-update-point"></a>소프트웨어 업데이트 지점  
 
 자세한 내용은 [소프트웨어 업데이트 지점 설치](/sccm/sum/get-started/install-a-software-update-point)를 참조하세요.  
+
+
+### <a name="operating-system-deployment"></a>운영 체제 배포
+
+자세한 내용은 [오프라인 OS 이미지 서비스용 드라이브 지정](/sccm/osd/get-started/manage-operating-system-images#bkmk_servicing-drive)을 참조하세요.
 
 
 ### <a name="management-point"></a>관리 지점  

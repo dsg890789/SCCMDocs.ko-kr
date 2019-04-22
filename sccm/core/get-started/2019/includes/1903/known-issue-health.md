@@ -6,11 +6,11 @@ ms.topic: include
 ms.date: 04/03/2019
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 31dfe75e85198b36b8a3125ccbd9fa504cf0bf5e
-ms.sourcegitcommit: da753df27d3909265ca45d3e79091f1e98758d16
+ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "58913710"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59802999"
 ---
 ### <a name="ki_health"></a> 클라이언트 상태 대시보드
 

@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a256435c927c880363d20e6e52a22179a3271f3a
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: baed9b8032c0020153754d400ea127eab9b56812
+ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56142377"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59673805"
 ---
 # <a name="use-multicast-to-deploy-windows-over-the-network-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 멀티캐스트를 사용하여 네트워크를 통해 Windows 배포
 
@@ -33,7 +33,7 @@ ms.locfileid: "56142377"
   운영 체제 배포 시나리오 중 하나의 단계를 완료한 후 다음 섹션을 참조하여 멀티미디어를 지원합니다.  
 
 ##  <a name="BKMK_Configure"></a> 멀티캐스트를 지원하기 위한 배포 지점 구성  
- 운영 체제를 배포할 때 멀티캐스트를 사용하려면 멀티캐스트를 지원하도록 배포 지점을 구성해야 합니다. 자세한 내용은 [멀티캐스트를 지원하도록 배포 지점 구성](../get-started/prepare-site-system-roles-for-operating-system-deployments.md#BKMK_DPMulticast)을 참조하세요.  
+ 운영 체제를 배포할 때 멀티캐스트를 사용하려면 멀티캐스트를 지원하도록 배포 지점을 구성해야 합니다. 자세한 내용은 [배포 지점 설치 및 구성](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_config-multicast)을 참조하세요. 멀티 캐스트를 지원하는 데 필요한 포트 목록은 [포트](/sccm/core/plan-design/hierarchy/ports#BKMK_PortsClient-DP2)를 참조하세요.  
 
 ## <a name="prepare-an-operating-system-image-for-multicast-deployments"></a>멀티캐스트 배포를 위한 운영 체제 이미지 준비  
  멀티캐스트를 지원하도록 운영 체제 이미지 패키지를 구성하려면 [멀티캐스트 배포를 위한 운영 체제 이미지 준비](../get-started/manage-operating-system-images.md#BKMK_OSImageMulticast)를 참조하세요.  

@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c9d0714bd55b4c99b181dfaf3ac34e63a0e9a35e
-ms.sourcegitcommit: d4b0e44e6bb06a830d0887493528d9166a15154b
+ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59506144"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59802489"
 ---
 # <a name="checklist-for-installing-update-1902-for-configuration-manager"></a>Configuration Manager용 업데이트 1902를 설치하기 위한 검사 목록
 

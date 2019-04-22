@@ -13,11 +13,11 @@ manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 21b4907667e055c9595b31eedf9da0ad516b5fec
-ms.sourcegitcommit: 5ee9487c891c37916294bd34a10d04e398f111f7
+ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59069367"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59802260"
 ---
 # <a name="how-to-assess-compatibility-with-app-health-analyzer"></a>앱 상태 분석기를 사용 하 여 호환성을 평가 하는 방법
 
