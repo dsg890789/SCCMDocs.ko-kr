@@ -2,7 +2,7 @@
 title: 버전 1902의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager 현재 분기, 버전 1902에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
-ms.date: 04/12/2019
+ms.date: 04/17/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a424a2397f4e1845795441208929b7d9efb7f93c
-ms.sourcegitcommit: d4b0e44e6bb06a830d0887493528d9166a15154b
+ms.openlocfilehash: fbc38cdb72a2c8f595eed88e0b4b5b5e29374597
+ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59506280"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59673652"
 ---
 # <a name="whats-new-in-version-1902-of-configuration-manager-current-branch"></a>Configuration Manager 현재 분기, 버전 1902의 새 기능
 
@@ -166,9 +166,9 @@ CMG에서 [아웃바운드 트래픽 경고를 설정](/sccm/core/clients/manage
 
 ### <a name="view-first-screen-only-during-remote-control"></a>원격 제어 시 첫 번째 화면만 보기
 <!--3231732-->
-두 대 이상의 모니터를 사용하는 클라이언트에 연결하면 Configuration Manager 원격 제어 뷰어에서 모든 화면을 보기 어려울 수 있습니다. 이제 원격 도구 운영자가 **모든 화면** 보기와 **첫 번째 화면**만 보기 중 선택할 수 있습니다. 
+***[업데이트]*** 두 대 이상의 모니터를 사용하는 클라이언트에 연결하면 Configuration Manager 원격 제어 뷰어에서 모든 화면을 보기 어려울 수 있습니다. 이제 원격 도구 운영자가 **모든 화면** 보기와 **첫 번째 화면**만 보기 중 선택할 수 있습니다.
 
-<!-- For more information, see [How to remotely administer a Windows client computer](/sccm/core/clients/manage/remote-control/remotely-administer-a-windows-client-computer). -->
+자세한 내용은 [Windows 클라이언트 컴퓨터를 원격으로 관리하는 방법](/sccm/core/clients/manage/remote-control/remotely-administer-a-windows-client-computer)을 참조하세요. 
 
 
 ### <a name="specify-a-custom-port-for-peer-wakeup"></a>피어 절전 모드 해제를 위한 사용자 지정 포트 지정
@@ -492,7 +492,7 @@ Configuration Manager 콘솔의 접근성 기능을 개선하려면 콘솔을 �
 
 ## <a name="other-updates"></a>기타 업데이트
 
-<!-- Aside from new features, this release also includes additional changes such as bug fixes. For more information, see [Summary of changes in Configuration Manager current branch, version 1902](https://support.microsoft.com/help/4482169). -->
+새 기능 외에 이 릴리스에는 버그 수정과 같은 추가 변경 사항도 포함되어 있습니다. 자세한 내용은 [Configuration Manager 현재 분기 버전 1902의 변경 내용 요약](https://support.microsoft.com/help/4498910)을 참조하세요.
 
 Configuration Manager용 Windows PowerShell cmdlet의 변경 내용에 대한 자세한 내용은 [PowerShell 버전 1902 릴리스 정보](https://docs.microsoft.com/powershell/sccm/1902-release-notes?view=sccm-ps)를 참조하세요.
 

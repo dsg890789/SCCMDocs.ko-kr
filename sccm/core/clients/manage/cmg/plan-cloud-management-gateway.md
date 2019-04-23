@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f50bb18edf782d5012e90db0b4b21a2309ad4f0b
-ms.sourcegitcommit: f38ef9afb0c608c0153230ff819e5f5e0fb1520c
+ms.openlocfilehash: f9057a2126a548ebb8706e905b86edb702f0ff35
+ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58196894"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59673686"
 ---
 # <a name="plan-for-the-cloud-management-gateway-in-configuration-manager"></a>Configuration Manager에서 클라우드 관리 게이트웨이 계획
 
@@ -112,7 +112,7 @@ Azure 관리 인증서를 사용하는 **클래식 서비스 배포** 옵션도 
 > 1810 버전부터 Azure의 기존 서비스 배포는 Configuration Manager에서 더 이상 사용되지 않습니다. 이 버전은 이러한 Azure 배포의 만들기를 지원하는 마지막 버전입니다. 이 기능은 2019년 7월 1일 이후 릴리스된 첫 번째 Configuration 매니저 버전에서 제거됩니다. 이 시간 이전에 CMG 및 클라우드 배포 지점을 Azure Resource Manager 배포로 이동합니다. <!--SCCMDocs-pr issue #2993-->  
 
 
-### <a name="hierarchy-design"></a>계층 디자인
+### <a name="hierarchy-design"></a>계층 구조 디자인
 
 계층 구조의 최상위 계층 사이트에서 CMG를 만듭니다. 중앙 관리 사이트인 경우 자식 기본 사이트에 CMG 연결 지점을 만듭니다. 클라우드 서비스 관리자 구성 요소는 중앙 관리 사이트에도 있는 서비스 연결 지점에 있습니다. 이 디자인은 필요한 경우 여러 기본 사이트 간에 서비스를 공유할 수 있습니다.
 
@@ -175,7 +175,7 @@ Fourth Coffee는 시애틀 본사의 온-프레미스 데이터 센터에 중앙
     - 버전 1806부터 **HTTP 사이트 시스템에 대해 Configuration Manager가 생성한 인증서 사용**이라는 사이트 옵션을 사용하는 경우 관리 지점이 HTTP가 될 수 있습니다. 자세한 내용은 [고급 HTTP](/sccm/core/plan-design/hierarchy/enhanced-http)를 참조하세요.  
 
 
-- Windows 10 클라이언트에 **Azure AD**와의 통합이 필요할 수 있습니다. 자세한 내용은 [Azure 서비스 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)을 참조하세요.  
+- **Azure AD**와 통합하려면 Azure Resource Manager 배포가 필요합니다. Windows 10 클라이언트도 필요할 수 있습니다. 자세한 내용은 [Azure 서비스 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)을 참조하세요.  
 
 - 클라이언트에서 **IPv4**를 사용해야 합니다.  
 

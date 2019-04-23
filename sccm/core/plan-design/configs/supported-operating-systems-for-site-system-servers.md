@@ -2,7 +2,7 @@
 title: 지원되는 사이트 시스템 서버
 titleSuffix: Configuration Manager
 description: Configuration Manager 사이트 또는 사이트 시스템 역할을 호스트하는 데 사용할 수 있는 Windows 버전을 알아봅니다.
-ms.date: 01/15/2019
+ms.date: 04/16/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5352d1d43de97375eb66389586778d7c23c2aa0
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 125d139548b827d349864496cd636622449b8fe3
+ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56138707"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59673635"
 ---
 # <a name="supported-operating-systems-for-configuration-manager-site-system-servers"></a>Configuration Manager 사이트 시스템 서버에 대해 지원되는 운영 체제
 
@@ -233,6 +233,7 @@ OS는 배포 지점 및 풀(pull) 배포 지점을 제외하고, 사이트 서�
 
 **배포 지점**으로 사용하도록 지원되는 Server Core 설치의 서버 OS 버전은 다음과 같습니다. 
 
+- Windows Server 2019(Configuration Manager 버전 1810에서 시작)  
 - Windows Server 버전 1809(Configuration Manager 버전 1810에서 시작)  
 - Windows Server 버전 1803(Configuration Manager 버전 1802에서 시작)  
 - Windows Server 버전 1709(Configuration Manager 버전 1710에서 시작)  

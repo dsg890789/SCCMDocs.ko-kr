@@ -2,7 +2,7 @@
 title: 연결에 사용되는 포트
 titleSuffix: Configuration Manager
 description: Configuration Manager가 연결에 사용하는 필수 및 사용자 지정 네트워크 포트에 대해 알아봅니다.
-ms.date: 01/29/2019
+ms.date: 04/11/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7aaadae5feaff2aa55e521c4b7438f4f1d24209a
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 99df201cb3525a124b42d5d599d4a74708258bad
+ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156817"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59673720"
 ---
 # <a name="ports-used-in-configuration-manager"></a>Configuration Manager에서 사용되는 포트
 
@@ -315,7 +315,7 @@ Configuration Manager 콘솔은 다음 구성에 대해 인터넷 액세스를 �
 |RPC|--|동적 <sup>[참고 6](#bkmk_note6)</sup>|  
 
 
-###  <a name="BKMK_PortsCertificateRegistationPoint_PolicyModule"></a> Configuration Manager NDES(네트워크 장치 등록 서비스) -- > 인증서 등록 지점  
+###  <a name="BKMK_PortsCertificateRegistationPoint_PolicyModule"></a> Configuration Manager NDES(네트워크 디바이스 등록 서비스) -- > 인증서 등록 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -584,6 +584,14 @@ Configuration Manager 콘솔은 다음 구성에 대해 인터넷 액세스를 �
 |-----------------|---------|---------|  
 |RPC 엔드포인트 매퍼|135|135|  
 |RPC(DCOM)|--|동적 <sup>[참고 6](#bkmk_note6)</sup>|  
+
+
+###  <a name="BKMK_PortsSite-RCL"></a> 사이트 서버 -- > 원격 콘텐츠 라이브러리 공유를 호스팅하는 서버  
+ 버전 1806부터 중앙 관리 또는 기본 사이트 서버에서 하드 드라이브 공간을 확보하기 위해 다른 스토리지 위치로 콘텐츠 라이브러리의 위치를 변경할 수 있습니다. 자세한 내용은 [사이트 서버에 대해 원격 콘텐츠 라이브러리 구성](/sccm/core/plan-design/hierarchy/the-content-library#bkmk_remote)을 참조합니다.  
+
+|설명|UDP|TCP|  
+|-----------------|---------|---------|  
+|SMB(서버 메시지 블록)|--|445|  
 
 
 ###  <a name="BKMK_PortsSite-RSP"></a> 사이트 서버 &lt; -- &gt; 보고 서비스 지점  

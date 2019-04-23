@@ -2,27 +2,25 @@
 title: Windows 컴퓨터 원격 관리
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager를 사용하여 원격 Windows 클라이언트 컴퓨터를 관리합니다.
-ms.date: 07/27/2017
+ms.date: 04/17/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
 ms.assetid: 3c9648c4-645e-4e47-ae10-2da817b8c83b
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 266961da1fe1f63e996247612a821ee7ac217f65
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: d16cbc892a3f4c7565a9672ca7c0145396dcaa3d
+ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56133666"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59673618"
 ---
 # <a name="how-to-remotely-administer-a-windows-client-computer-by-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows 클라이언트 컴퓨터를 원격으로 관리하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
-
-원격 제어를 사용하기 전에 다음 항목 정보를 검토해야 합니다.  
+*적용 대상: System Center Configuration Manager(현재 분기)* Configuration Manager에서는 **Configuration Manager 원격 제어**를 사용하여 클라이언트 컴퓨터에 연결할 수 있습니다. 원격 제어를 사용하기 전에 다음 문서의 정보를 검토해야 합니다.  
 
 -   [System Center Configuration Manager에서 원격 제어에 대한 필수 조건](../../../../core/clients/manage/remote-control/prerequisites-for-remote-control.md)  
 
@@ -36,7 +34,7 @@ ms.locfileid: "56133666"
 
 -   **Microsoft System Center** 프로그램 그룹에서 Configuration Manager 콘솔을 실행하는 컴퓨터의 Windows **시작** 메뉴에서.  
 
-### <a name="to-remotely-administer-a-client-computer-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 클라이언트 컴퓨터를 원격으로 관리하려면  
+## <a name="to-remotely-administer-a-client-computer-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 클라이언트 컴퓨터를 원격으로 관리하려면  
 
 1.  Configuration Manager 콘솔에서 **자산 및 호환성** > **디바이스** 또는 **디바이스 컬렉션**을 선택합니다.  
 
@@ -50,38 +48,41 @@ ms.locfileid: "56133666"
     > [!NOTE]  
     >  연결한 컴퓨터에 다중 모니터가 있으면 이러한 모든 모니터의 화면 표시가 원격 제어 창에 표시됩니다.  
 
-    -   **파일 - 연결** – 다른 컴퓨터에 연결합니다. 원격 제어 세션이 활성화된 경우 이 옵션을 사용할 수 없습니다.  
-
-    -   **파일 - 연결 끊기** – 활성화된 원격 제어 세션 연결을 끊지만 **Configuration Manager 원격 제어** 창을 닫지 않습니다.  
-
-    -   **파일 - 종료** – 활성화된 원격 제어 세션의 연결을 끊고 **Configuration Manage 원격 제어** 창을 닫습니다.  
-
-        > [!NOTE]  
-        >  원격 제어 세션의 연결을 끊으면 보고 있는 컴퓨터에서 Windows 클립보드 내용이 삭제됩니다.  
-
-    -   **보기 - 전체 화면** – **Configuration Manager 원격 제어** 창을 최대화합니다.  
+    -   **File**
+        - **연결** – 다른 컴퓨터에 연결합니다. 원격 제어 세션이 활성화된 경우 이 옵션을 사용할 수 없습니다.  
+        -   **연결 끊기** – 활성화된 원격 제어 세션의 연결을 끊지만 **Configuration Manager 원격 제어** 창을 닫지 않습니다.  
+        - **종료** – 활성화된 원격 제어 세션의 연결을 끊고 **Configuration Manager 원격 제어** 창을 닫습니다.  
 
         > [!NOTE]  
-        >  전체 화면 모드를 종료하려면 Ctrl+Alt+Break를 누릅니다.  
+        >  원격 제어 세션의 연결을 끊으면 보고 있는 컴퓨터에서 Windows 클립보드 내용이 삭제됩니다.
 
-    -   **보기 - 크기 조정** - 원격 컴퓨터의 화면 표시를 **Configuration Manager 원격 제어** 창의 크기에 맞게 조정합니다.  
 
-    -   **보기- 상태 표시줄** – **Configuration Manager 원격 제어** 창 상태 표시줄의 화면 표시를 전환합니다.  
+    - **보기**
+      - **색 깊이** - 픽셀당 16비트 또는 32비트를 선택합니다.
+      -  **전체 화면** – **Configuration Manager 원격 제어** 창을 최대화합니다. 전체 화면 모드를 종료하려면 Ctrl+Alt+Break를 누릅니다.  
+      - **저대역폭 연결에 맞게 최적화** - 연결이 낮은 대역폭이면 이 옵션을 선택합니다.
+      - **화면 표시:**
+        - **모든 화면** - Configuration Manager 1902에 추가되었습니다. 연결한 컴퓨터에 다중 모니터가 있으면 이러한 모든 모니터의 화면 표시가 원격 제어 창에 표시됩니다. 1902 이전에는 **모든 화면**이 다중 모니터가 있는 컴퓨터의 유일한 뷰입니다.
+        -  **첫 번째 화면** - Configuration Manager 1902에 추가되었습니다. *첫 번째 화면*은 Windows 디스플레이 설정에서 가장 왼쪽 상단에 표시되는 화면입니다. 특정 화면을 선택할 수는 없습니다. 뷰어의 구성을 변경한 후에는 원격 세션을 다시 연결해야 합니다. 이때부터 뷰어에 선택 사항이 저장됩니다.
+        -  **크기 조정** - 원격 컴퓨터의 화면 표시를 **Configuration Manager 원격 제어** 창의 크기에 맞게 조정합니다.
+       - **상태 표시줄** – **Configuration Manager 원격 제어** 창 상태 표시줄의 화면 표시를 전환합니다.  
 
-    -   **작업 - Ctrl+Alt+Del 키 보내기** – Ctrl+Alt+Del 키 조합을 원격 컴퓨터로 보냅니다.  
+       > [!NOTE]  
+       >  이때부터 뷰어에 선택 사항이 저장됩니다.
 
-    -   **작업 - 클립보드 공유 사용** - 항목을 원격 컴퓨터에서 복사하고 붙여넣을 수 있습니다. 이 값을 변경하는 경우 변경 사항이 적용되도록 원격 제어 세션을 다시 시작해야 합니다.  
+    -   **작업**
+        - **Ctrl+Alt+Del 키 보내기** – Ctrl+Alt+Del 키 조합을 원격 컴퓨터로 보냅니다. 
+        - **클립보드 공유 사용** - 항목을 원격 컴퓨터에서 복사하고 붙여넣을 수 있습니다. 이 값을 변경하는 경우 변경 사항이 적용되도록 원격 제어 세션을 다시 시작해야 합니다.   
+          - Configuration Manager 콘솔에서 클립보드 공유를 사용하도록 설정하지 않으려면 콘솔을 실행하는 컴퓨터에서 레지스트리 키 값 **HKEY_CURRENT_USER\Software\Microsoft\ConfigMgr10\Remote Control\Clipboard Sharing**을 **0**으로 설정합니다.
+        - **키보드 변환 사용** - 콘솔을 실행하는 컴퓨터의 키보드 레이아웃을 연결된 디바이스의 레이아웃으로 변환합니다.
+        - **원격 키보드 및 마우스 잠금** – 사용자가 원격 컴퓨터로 작업할 수 없도록 원격 키보드 및 마우스를 잠급니다.  
 
-        > [!NOTE]  
-        >  Configuration Manager 콘솔에서 클립보드 공유를 사용하도록 설정하지 않으려면 콘솔을 실행하는 컴퓨터에서 레지스트리 키 값 **HKEY_CURRENT_USER\Software\Microsoft\ConfigMgr10\Remote Control\Clipboard Sharing**을 **0**으로 설정합니다.  
+    -   **도움말**
+        - **원격 제어 정보** – 뷰어의 현재 버전을 표시합니다.  
 
-    -   **작업 - 원격 키보드 및 마우스 잠금** – 사용자가 원격 컴퓨터로 작업할 수 없도록 원격 키보드 및 마우스를 잠급니다.  
+5.  원격 컴퓨터의 사용자가 Configuration Manager **원격 제어** 아이콘을 클릭하면 원격 제어 세션에 대한 자세한 내용을 볼 수 있습니다. 이 아이콘은 Windows 알림 영역 또는 원격 제어 세션 표시줄에 있습니다.  
 
-    -   **도움말 - 원격 제어 정보** – 뷰어의 현재 버전을 표시합니다.  
-
-5.  원격 컴퓨터의 사용자가 Windows 알림 영역에서 Configuration Manager**원격 제어** 아이콘을 클릭하거나 원격 제어 세션 표시줄의 아이콘을 클릭하면 원격 제어 세션에 대한 자세한 내용을 볼 수 있습니다.  
-
-### <a name="to-start-the-remote-control-viewer-from-the-windows-command-line"></a>Windows 명령줄에서 원격 제어 뷰어를 시작하려면  
+## <a name="to-start-the-remote-control-viewer-from-the-windows-command-line"></a>Windows 명령줄에서 원격 제어 뷰어를 시작하려면  
 
 -   Windows 명령 프롬프트에 _<Configuration Manager 설치 폴더\>_**\AdminConsole\Bin\x64\CmRcViewer.exe**를 입력합니다.  
 

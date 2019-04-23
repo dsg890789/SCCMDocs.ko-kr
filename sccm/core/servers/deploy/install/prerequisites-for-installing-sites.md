@@ -2,7 +2,7 @@
 title: 사이트 필수 조건
 titleSuffix: Configuration Manager
 description: 각 유형의 Configuration Manager 사이트를 설치하기 위한 필수 조건을 알아봅니다.
-ms.date: 09/04/2018
+ms.date: 04/12/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a56739eee4d116014f89b3a7e7835e3e87a62ac
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 51569f04a8665f230030da7fec4bc67042263d92
+ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56124591"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59673584"
 ---
 # <a name="prerequisites-for-installing-configuration-manager-sites"></a>Configuration Manager 사이트 설치에 대한 필수 조건
 
@@ -37,6 +37,15 @@ ms.locfileid: "56124591"
 
 
 ###  <a name="bkmk_PrereqPri"></a> 기본 사이트 또는 중앙 관리 사이트 설치를 위한 필수 조건  
+
+- 다음 Windows Server 역할, 기능 및 Windows 구성 요소가 설치되어 있어야 합니다.  
+    - .NET Framework 3.5 SP1 이상
+    - .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7, 4.7.1 또는 4.7.2
+    - 원격 차등 압축
+    - Windows ADK
+    - Visual C++ 재배포 가능 패키지  
+    
+    자세한 내용은 [사이트 시스템 필수 구성 요소](/sccm/core/plan-design/configs/site-and-site-system-prerequisites#bkmk_2012sspreq)를 참조하세요.  
 
 - 사이트를 설치하는 사용자 계정에는 다음 권한이 있어야 합니다.  
 
@@ -136,7 +145,15 @@ Configuration Manager에서 다음 Azure 서비스 중 하나를 사용하고, �
 
 ## <a name="bkmk_secondary"></a> 보조 사이트
 
-다음은 보조 사이트 설치를 위한 필수 조건입니다.
+다음은 보조 사이트 설치를 위한 필수 조건입니다.  
+
+- 다음 Windows Server 역할, 기능 및 Windows 구성 요소가 설치되어 있어야 합니다.  
+    - .NET Framework 3.5 SP1 이상
+    - .NET Framework 4.5.2, 4.6.1, 4.6.2, 4.7, 4.7.1 또는 4.7.2
+    - 원격 차등 압축
+    - Visual C++ 재배포 가능 패키지  
+    
+    자세한 내용은 [사이트 시스템 필수 구성 요소](/sccm/core/plan-design/configs/site-and-site-system-prerequisites#bkmk_2012secpreq)를 참조하세요.  
 
 - Configuration Manager 콘솔에서 보조 사이트의 설치를 구성하는 관리자에게는 **인프라 관리자** 또는 **전체 관리자**의 보안 역할에 해당하는 역할 기반 관리 권한이 있어야 합니다.  
 

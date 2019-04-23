@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f0ea9d6d923aeb1c278e5f3e96806044bbae6e4
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: f6ffa061e3d04bbbda31cc4406494b492ba98d9b
+ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56138622"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59673856"
 ---
 # <a name="plan-for-security-in-configuration-manager"></a>Configuration Manager의 보안 계획
 
@@ -121,7 +121,7 @@ Configuration Manager 클라이언트가 CRL을 확인해야 하는지 여부를
 -   PKI 인증서를 사용하도록 구성된 사이트 시스템에 대한 각 연결마다 CRL을 확인해야 하는 요구 사항이 다음 요구 사항보다 큽니다.  
     - 빠른 연결  
     - 클라이언트에서 효율적인 처리  
-    - 클라이언트가 CRL을 찾을 수 없는 경우 서버에 연결하지 못할 위험  
+    - CRL을 찾을 수 없는 경우 클라이언트가 서버에 연결하지 못할 위험  
 
 
 ###  <a name="BKMK_PlanningForRootCAs"></a> PKI 신뢰할 수 있는 루트 인증서 및 인증서 발급자 목록 계획  
