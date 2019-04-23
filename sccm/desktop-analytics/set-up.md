@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d03b670ade984298df7a1ba5428a3f8696360bb
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
+ms.openlocfilehash: b75b82f632c8bfbbc11a2b11d58ab83116e2180a
+ms.sourcegitcommit: d23ccf7b95e6c2a6b156975194ebbc375cb5e6ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59673567"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60124440"
 ---
 # <a name="how-to-set-up-desktop-analytics"></a>데스크톱 Analytics를 설정 하는 방법
 
@@ -51,6 +51,8 @@ ms.locfileid: "59673567"
         - **작업 영역 참가자**: 보안 그룹을 만들고이 작업 영역에서 배포 계획을 관리 합니다. 모든 추가 Azure 액세스할이 필요는 없습니다.  
 
         각 그룹에 사용자를 추가할에서 해당 이름 또는 전자 메일 주소를 입력 합니다 **이름 또는 전자 메일 주소 입력** 적절 한 그룹의 섹션입니다. 완료 되 면 선택 **다음**합니다.
+
+다음 단계를 완료할 수 있습니다는 **작업 영역 소유자** 하거나 **참가자**합니다. 참조 [필수 구성 요소입니다.](/sccm/desktop-analytics/overview#prerequisites) 
 
 5. 페이지에서 **작업 영역 설정**:  
 
@@ -88,7 +90,7 @@ Azure portal에 데스크톱 분석을 보여 줍니다 **홈** 페이지입니�
 
 Configuration Manager에 대 한 Azure AD에서 앱을 만듭니다.
 
-1. 에 [Azure portal](http://portal.azure.com)로 이동 하세요 **Azure Active Directory**를 선택한 **앱 등록**합니다. 선택한 **새 응용 프로그램 등록**합니다.  
+1. 엽니다는 [Azure portal](http://portal.azure.com) 회사 관리자 권한이 있는 사용자로 이동 **Azure Active Directory**를 선택한 **앱 등록**합니다. 선택한 **새 응용 프로그램 등록**합니다.  
 
 2. 에 **만들기** 패널에서 다음 설정을 구성 합니다.  
 

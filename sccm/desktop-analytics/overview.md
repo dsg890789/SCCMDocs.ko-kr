@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4105a8a81ab3f09dee9cf3ca5a2462ed2bb4183a
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
-ms.translationtype: HT
+ms.openlocfilehash: 1229dabb0fedf600f7d57a2a400df87906945ba4
+ms.sourcegitcommit: d23ccf7b95e6c2a6b156975194ebbc375cb5e6ea
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59802634"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60124423"
 ---
 # <a name="what-is-desktop-analytics"></a>데스크톱 Analytics 란?
 
@@ -71,8 +71,14 @@ ms.locfileid: "59802634"
 ### <a name="technical"></a>기술
 
 - 활성 Azure 구독  
+    
+    - [**회사 관리자** ](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#company-administrator) azure에 대 한 사용 권한 **서비스 계약에 동의**를 **구독을 확인 하** 및 **사용자 액세스를 제공 합니다.** 
 
-    - **회사 관리자** Azure에서 사용 권한  
+    - **작업 영역 소유자** 나 **참가자** 권한을 **작업 영역 설정** 및  
+
+        - [**Analytics 참가자 기록** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#log-analytics-contributor) 하 고 [ **사용자 액세스 관리자** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#user-access-administrator) 기존 리소스 그룹에 새 작업 영역을 만들거나 기존 작업 영역을 사용 하 여 리소스 그룹.
+
+        - [**소유자**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), 또는 [ **참가자** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) 고 [ **사용자 액세스 관리자** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#user-access-administrator) 에 대 한 권한을 합니다 새 리소스 그룹에 작업 영역을 만들 구독입니다.
 
 - Configuration Manager 1810 업데이트 롤업 4488598 이상 버전. 자세한 내용은 [Configuration Manager 업데이트](/sccm/desktop-analytics/connect-configmgr#bkmk_hotfix)합니다.  
 

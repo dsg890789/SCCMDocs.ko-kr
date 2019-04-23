@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 66fc982fa7f2cee3fdd83945c1b43d490b40d2f2
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
+ms.openlocfilehash: 006a887a3989d7f05b7cf44b13562e644e6f7d94
+ms.sourcegitcommit: d23ccf7b95e6c2a6b156975194ebbc375cb5e6ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59673788"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60124406"
 ---
 # <a name="tutorial-deploy-office-365-to-pilot"></a>자습서: Office 365를 파일럿 배포
 
@@ -45,6 +45,8 @@ Azure 구독이 없으면 만듭니다는 [무료 계정](https://azure.microsof
 이 자습서를 시작 하기 전에 다음 필수 구성 요소가 있는지 확인 합니다.  
 
 - 활성 Azure 구독을 사용 하 여 **회사 관리자** 권한  
+    
+    자세한 내용은 [데스크톱 Analytics 필수 구성 요소](/sccm/desktop-analytics/overview#prerequisites)합니다.
 
 - Configuration Manager 1810 업데이트 롤업 4488598를 사용 하 여 이후 버전을 사용 하 여 **전체 관리자** 역할  
 
@@ -119,7 +121,11 @@ Azure 구독이 없으면 만듭니다는 [무료 계정](https://azure.microsof
 
         각 그룹에 사용자를 추가할에서 해당 이름 또는 전자 메일 주소를 입력 합니다 **이름 또는 전자 메일 주소 입력** 적절 한 그룹의 섹션입니다. 완료 되 면 선택 **다음**합니다.
 
+다음 단계를 완료할 수 있습니다는 **작업 영역 소유자** 하거나 **참가자**합니다. 
+
 5. 페이지에서 **작업 영역 설정**:  
+
+    - Azure 구독을 선택 합니다. 
 
     - 기존 작업 영역에 데스크톱 Analytics를 사용 하려면를 선택 하 고 단계를 진행 합니다.  
 
@@ -129,7 +135,9 @@ Azure 구독이 없으면 만듭니다는 [무료 계정](https://azure.microsof
 
         2. 드롭다운 목록 선택 **이 작업 영역에 대 한 Azure 구독 이름을 선택**,이 작업 영역에 대 한 Azure 구독을 선택 합니다.  
 
-        3. 선택 된 **지역** 을 선택 하 고 목록에서 **추가**합니다.  
+        3. **새로 만들기** 리소스 그룹 또는 **기존 항목 사용**합니다.  
+
+        4. 선택 된 **지역** 을 선택 하 고 목록에서 **추가**합니다.  
 
 6. 새 또는 기존 작업 영역을 선택한 후 **데스크톱 Analytics 작업 영역으로 설정**합니다.  선택한 **계속** 에 **Confirm 및 권한 부여 액세스** 대화 합니다.  
 
@@ -142,7 +150,7 @@ Azure 구독이 없으면 만듭니다는 [무료 계정](https://azure.microsof
 
 ### <a name="create-an-app-in-azure-ad-for-configuration-manager"></a>Configuration Manager에 대 한 Azure AD에서 앱 만들기  
 
-1. 에 [Azure portal](https://portal.azure.com)로 이동 하세요 **Azure Active Directory**를 선택한 **앱 등록**합니다. 선택한 **새 응용 프로그램 등록**합니다.  
+1. 엽니다는 [Azure portal](http://portal.azure.com) 회사 관리자 권한이 있는 사용자로 이동 **Azure Active Directory**를 선택한 **앱 등록**합니다. 선택한 **새 응용 프로그램 등록**합니다.  
 
 2. 에 **만들기** 패널에서 다음 설정을 구성 합니다.  
 

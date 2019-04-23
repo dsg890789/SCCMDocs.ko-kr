@@ -2,7 +2,7 @@
 title: 하이브리드 MDM의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 디바이스 관리 기능에 대해 알아봅니다.
-ms.date: 04/05/2019
+ms.date: 04/18/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01e5d9761cb90715e88a2658d8bf1c31c7cd92cf
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
-ms.translationtype: HT
+ms.openlocfilehash: 0251371b8a0e9fa41dc5008beffa87977c47d7c6
+ms.sourcegitcommit: d23ccf7b95e6c2a6b156975194ebbc375cb5e6ea
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59802923"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60124508"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 디바이스 관리의 새로운 기능
 
@@ -46,6 +46,16 @@ ms.locfileid: "59802923"
 |**Configuration Manager Technical Preview의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 Technical Preview 분기에서만 사용할 수 있습니다. 이러한 기능을 시험해보려면 기능 설명에 지정된 기술 미리 보기 버전을 설치해야 합니다. 자세한 내용은 [Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.|
 |**Configuration Manager(현재 분기)의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 버전의 Configuration Manager(현재 분기)에서만 사용할 수 있습니다. 하이브리드 배포에 이전 버전의 Configuration Manager를 사용하는 경우 기능 설명에 지정된 Configuration Manager(현재 분기) 버전으로 업그레이드합니다. 자세한 내용은 [Configuration Manager로 업그레이드](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager)를 참조하세요.|
 
+
+
+## <a name="april-2019"></a>2019 년 4 월
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+#### <a name="openssl-encryption-for-android-app-protection-policies"></a>Android 앱 보호 정책 용 OpenSSL 암호화
+
+<!-- 3747362 -->
+Android 장치에서 Intune 앱 보호 정책 (앱)는 이제 FIPS 140-2와 호환 되는 OpenSSL 암호화 라이브러리를 사용 합니다. 자세한 내용은 [Microsoft Intune에서 Android 앱 보호 정책 설정을](https://docs.microsoft.com/intune/app-protection-policy-settings-android#encryption)합니다.
 
 
 ## <a name="march-2019"></a>2019 년 3 월
