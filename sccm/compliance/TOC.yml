@@ -1,75 +1,68 @@
-items:
 - name: 이해 및 탐색
   items:
-  - name: 디바이스 규정 준수를 확인합니다.
-    href: understand/ensure-device-compliance.md
+    - name: 디바이스 규정 준수를 확인합니다.
+      href: understand/ensure-device-compliance.md
 - name: 시작
   items:
-  - name: 준수 설정 시작
-    href: get-started/get-started-with-compliance-settings.md
+    - name: 준수 설정 시작
+      href: get-started/get-started-with-compliance-settings.md
 - name: 계획 및 디자인
   items:
-  - name: 준수 설정 계획 및 구성
-    href: plan-design/plan-for-and-configure-compliance-settings.md
-  - name: 준수 관리를 위한 일반 작업
-    href: plan-design/common-tasks-for-managing-compliance.md
-    items:
-    - name: Configuration Manager 클라이언트가 포함된 디바이스
-      href: plan-design/common-tasks-for-managing-compliance-on-devices-with-the-client.md
-    - name: 구성 기준 만들기 및 배포
-      href: plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md
-  - name: 보안 및 개인 정보
-    href: plan-design/security-and-privacy-for-compliance-settings.md
-  - name: SCAP(보안 콘텐츠 자동화 프로토콜) 확장
-    href: plan-design/scap/about-scap.md
-    items:
-    - name: SCAP 확장 설치 및 구성
-      href: plan-design/scap/install-configure-scap.md
-    - name: SCAP 준수 배포 및 모니터
-      href: plan-design/scap/deploy-monitor-export.md
-    - name: SCAP 확장 문제 해결
-      href: plan-design/scap/troubleshooting-scap.md
+    - name: 준수 설정 계획 및 구성
+      href: plan-design/plan-for-and-configure-compliance-settings.md
+    - name: 준수 관리를 위한 일반 작업
+      href: plan-design/common-tasks-for-managing-compliance.md
+      items:
+        - name: Configuration Manager 클라이언트가 포함된 디바이스
+          href: plan-design/common-tasks-for-managing-compliance-on-devices-with-the-client.md
+        - name: 구성 기준 만들기 및 배포
+          href: plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md
+    - name: 보안 및 개인 정보
+      href: plan-design/security-and-privacy-for-compliance-settings.md
+    - name: SCAP(보안 콘텐츠 자동화 프로토콜) 확장
+      href: plan-design/scap/about-scap.md
+      items:
+        - name: SCAP 확장 설치 및 구성
+          href: plan-design/scap/install-configure-scap.md
+        - name: SCAP 준수 배포 및 모니터
+          href: plan-design/scap/deploy-monitor-export.md
+        - name: SCAP 확장 문제 해결
+          href: plan-design/scap/troubleshooting-scap.md
 - name: 배포 및 사용
   items:
-  - name: 구성 항목 만들기
-    href: deploy-use/create-configuration-items.md
-    items:
-    - name: Configuration Manager 클라이언트를 사용하여 관리되는 디바이스
-      href: deploy-use/configuration-items-for-devices-managed-with-the-client.md
+    - name: 구성 항목 만들기
+      href: deploy-use/create-configuration-items.md
       items:
-      - name: Windows 10
-        href: deploy-use/create-configuration-items-for-windows-10-devices-managed-with-the-client.md
-      - name: Mac OS X
-        href: deploy-use/create-configuration-items-for-mac-os-x-devices-managed-with-the-client.md
-      - name: Windows 데스크톱 및 서버(사용자 지정)
-        href: deploy-use/create-custom-configuration-items-for-windows-desktop-and-server-computers-managed-with-the-client.md
-  - name: 하위 구성 항목 만들기
-    href: deploy-use/create-child-configuration-items.md
-  - name: 구성 기준 만들기
-    href: deploy-use/create-configuration-baselines.md
-  - name: 구성 기준 배포
-    href: deploy-use/deploy-configuration-baselines.md
-  - name: 구성 데이터 관리
-    items:
+        - name: Configuration Manager 클라이언트를 사용하여 관리되는 디바이스
+          href: deploy-use/configuration-items-for-devices-managed-with-the-client.md
+          items:
+            - name: Windows 10
+              href: deploy-use/create-configuration-items-for-windows-10-devices-managed-with-the-client.md
+            - name: Mac OS X
+              href: deploy-use/create-configuration-items-for-mac-os-x-devices-managed-with-the-client.md
+            - name: Windows 데스크톱 및 서버(사용자 지정)
+              href: deploy-use/create-custom-configuration-items-for-windows-desktop-and-server-computers-managed-with-the-client.md
+    - name: 하위 구성 항목 만들기
+      href: deploy-use/create-child-configuration-items.md
+    - name: 구성 기준 만들기
+      href: deploy-use/create-configuration-baselines.md
+    - name: 구성 기준 배포
+      href: deploy-use/deploy-configuration-baselines.md
     - name: 구성 데이터 관리
-      href: deploy-use/management-tasks-for-configuration-data.md
-    - name: 구성 데이터 가져오기
-      href: deploy-use/import-configuration-data.md
-  - name: 사용자 데이터 및 프로필 구성 항목 만들기
-    href: deploy-use/create-user-data-and-profiles-configuration-items.md
-  - name: 비즈니스용 OneDrive 프로필
-    href: deploy-use/onedrive-profile.md
-  - name: 원격 연결 프로필 만들기
-    href: deploy-use/create-remote-connection-profiles.md
-  - name: Windows 디바이스를 새 버전으로 업그레이드
-    href: deploy-use/upgrade-windows-version.md
-  - name: Microsoft Edge 설정 구성
-    href: deploy-use/browser-profiles.md
-  - name: 준수 설정 모니터링
-    href: deploy-use/monitor-compliance-settings.md
-ms.openlocfilehash: 0e3875fe8038d1d17030a69d2df11631e4e480c1
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59802413"
+      items:
+        - name: 구성 데이터 관리
+          href: deploy-use/management-tasks-for-configuration-data.md
+        - name: 구성 데이터 가져오기
+          href: deploy-use/import-configuration-data.md
+    - name: 사용자 데이터 및 프로필 구성 항목 만들기
+      href: deploy-use/create-user-data-and-profiles-configuration-items.md
+    - name: 비즈니스용 OneDrive 프로필
+      href: deploy-use/onedrive-profile.md
+    - name: 원격 연결 프로필 만들기
+      href: deploy-use/create-remote-connection-profiles.md
+    - name: Windows 디바이스를 새 버전으로 업그레이드
+      href: deploy-use/upgrade-windows-version.md
+    - name: Microsoft Edge 설정 구성
+      href: deploy-use/browser-profiles.md
+    - name: 준수 설정 모니터링
+      href: deploy-use/monitor-compliance-settings.md

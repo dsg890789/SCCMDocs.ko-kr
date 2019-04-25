@@ -1,96 +1,89 @@
-items:
 - name: 이해 및 탐색
   items:
-  - name: 소프트웨어 업데이트 소개
-    href: understand/software-updates-introduction.md
-  - name: 소프트웨어 업데이트에 사용되는 아이콘
-    href: understand/software-updates-icons.md
+    - name: 소프트웨어 업데이트 소개
+      href: understand/software-updates-introduction.md
+    - name: 소프트웨어 업데이트에 사용되는 아이콘
+      href: understand/software-updates-icons.md
 - name: 계획 및 디자인
   items:
-  - name: 소프트웨어 업데이트 계획
-    href: plan-design/plan-for-software-updates.md
-  - name: 소프트웨어 업데이트에 대한 필수 조건
-    href: plan-design/prerequisites-for-software-updates.md
-  - name: 소프트웨어 업데이트에 대한 모범 사례
-    href: plan-design/software-updates-best-practices.md
-  - name: 소프트웨어 업데이트에 대한 보안 및 개인 정보
-    href: plan-design/security-and-privacy-for-software-updates.md
+    - name: 소프트웨어 업데이트 계획
+      href: plan-design/plan-for-software-updates.md
+    - name: 소프트웨어 업데이트에 대한 필수 조건
+      href: plan-design/prerequisites-for-software-updates.md
+    - name: 소프트웨어 업데이트에 대한 모범 사례
+      href: plan-design/software-updates-best-practices.md
+    - name: 소프트웨어 업데이트에 대한 보안 및 개인 정보
+      href: plan-design/security-and-privacy-for-software-updates.md
 - name: 시작
   items:
-  - name: 소프트웨어 업데이트 관리 준비
-    href: get-started/prepare-for-software-updates-management.md
-  - name: 소프트웨어 업데이트 지점 설치
-    href: get-started/install-a-software-update-point.md
-  - name: 소프트웨어 업데이트 동기화
-    href: get-started/synchronize-software-updates.md
-  - name: 연결이 끊긴 소프트웨어 업데이트 지점에서 소프트웨어 업데이트 동기화
-    href: get-started/synchronize-software-updates-disconnected.md
-  - name: 분류 및 제품 구성
-    href: get-started/configure-classifications-and-products.md
-  - name: 소프트웨어 업데이트 설정 관리
-    href: get-started/manage-settings-for-software-updates.md
-  - name: 소프트웨어 업데이트 지점 제거
-    href: get-started/remove-a-software-update-point.md
+    - name: 소프트웨어 업데이트 관리 준비
+      href: get-started/prepare-for-software-updates-management.md
+    - name: 소프트웨어 업데이트 지점 설치
+      href: get-started/install-a-software-update-point.md
+    - name: 소프트웨어 업데이트 동기화
+      href: get-started/synchronize-software-updates.md
+    - name: 연결이 끊긴 소프트웨어 업데이트 지점에서 소프트웨어 업데이트 동기화
+      href: get-started/synchronize-software-updates-disconnected.md
+    - name: 분류 및 제품 구성
+      href: get-started/configure-classifications-and-products.md
+    - name: 소프트웨어 업데이트 설정 관리
+      href: get-started/manage-settings-for-software-updates.md
+    - name: 소프트웨어 업데이트 지점 제거
+      href: get-started/remove-a-software-update-point.md
 - name: 배포 및 사용
   items:
-  - name: 소프트웨어 업데이트 다운로드
-    href: deploy-use/download-software-updates.md
-  - name: 업데이트 그룹에 소프트웨어 업데이트 추가
-    href: deploy-use/add-software-updates-to-an-update-group.md
-  - name: 소프트웨어 업데이트 배포
-    href: deploy-use/deploy-software-updates.md
-    items:
-    - name: 소프트웨어 업데이트 수동 배포
-      href: deploy-use/manually-deploy-software-updates.md
-    - name: 소프트웨어 업데이트 자동 배포
-      href: deploy-use/automatically-deploy-software-updates.md
-    - name: 단계별 배포 만들기
-      href: ../osd/deploy-use/create-phased-deployment-for-task-sequence.md?toc=/sccm/sum/toc.json&bc=/sccm/sum/breadcrumb/toc.json
-  - name: 소프트웨어 업데이트 모니터링
-    href: deploy-use/monitor-software-updates.md
-    items:
-    - name: 단계적 배포 관리 및 모니터링
-      href: ../osd/deploy-use/manage-monitor-phased-deployments.md?toc=/sccm/sum/toc.json&bc=/sccm/sum/breadcrumb/toc.json
-  - name: 소프트웨어 업데이트 유지 관리
-    href: deploy-use/software-updates-maintenance.md
-  - name: 서버 그룹 제공
-    href: deploy-use/service-a-server-group.md
-  - name: Office 365 클라이언트 관리 대시보드
-    href: deploy-use/office-365-dashboard.md
-  - name: Office 365 ProPlus 업데이트 관리
-    href: deploy-use/manage-office-365-proplus-updates.md
-  - name: Windows 10 업데이트 배달 최적화
-    href: deploy-use/optimize-windows-10-update-delivery.md
-  - name: Windows 10 업데이트에 대한 빠른 설치 파일 관리
-    href: deploy-use/manage-express-installation-files-for-windows-10-updates.md
-  - name: Windows 10에서 비즈니스용 Windows 업데이트와 통합
-    href: deploy-use/integrate-windows-update-for-business-windows-10.md
-  - name: 타사 소프트웨어 업데이트
-    href: deploy-use/third-party-software-updates.md
-  - name: 보안 업데이트를 배포하는 예제 시나리오
-    href: deploy-use/example-scenario-deploy-monitor-monthly-security-updates.md
+    - name: 소프트웨어 업데이트 다운로드
+      href: deploy-use/download-software-updates.md
+    - name: 업데이트 그룹에 소프트웨어 업데이트 추가
+      href: deploy-use/add-software-updates-to-an-update-group.md
+    - name: 소프트웨어 업데이트 배포
+      href: deploy-use/deploy-software-updates.md
+      items:
+        - name: 소프트웨어 업데이트 수동 배포
+          href: deploy-use/manually-deploy-software-updates.md
+        - name: 소프트웨어 업데이트 자동 배포
+          href: deploy-use/automatically-deploy-software-updates.md
+        - name: 단계별 배포 만들기
+          href: ../osd/deploy-use/create-phased-deployment-for-task-sequence.md?toc=/sccm/sum/toc.json&bc=/sccm/sum/breadcrumb/toc.json
+    - name: 소프트웨어 업데이트 모니터링
+      href: deploy-use/monitor-software-updates.md
+      items:
+        - name: 단계적 배포 관리 및 모니터링
+          href: ../osd/deploy-use/manage-monitor-phased-deployments.md?toc=/sccm/sum/toc.json&bc=/sccm/sum/breadcrumb/toc.json
+    - name: 소프트웨어 업데이트 유지 관리
+      href: deploy-use/software-updates-maintenance.md
+    - name: 서버 그룹 제공
+      href: deploy-use/service-a-server-group.md
+    - name: Office 365 클라이언트 관리 대시보드
+      href: deploy-use/office-365-dashboard.md
+    - name: Office 365 ProPlus 업데이트 관리
+      href: deploy-use/manage-office-365-proplus-updates.md
+    - name: Windows 10 업데이트 배달 최적화
+      href: deploy-use/optimize-windows-10-update-delivery.md
+    - name: Windows 10 업데이트에 대한 빠른 설치 파일 관리
+      href: deploy-use/manage-express-installation-files-for-windows-10-updates.md
+    - name: Windows 10에서 비즈니스용 Windows 업데이트와 통합
+      href: deploy-use/integrate-windows-update-for-business-windows-10.md
+    - name: 타사 소프트웨어 업데이트
+      href: deploy-use/third-party-software-updates.md
+    - name: 보안 업데이트를 배포하는 예제 시나리오
+      href: deploy-use/example-scenario-deploy-monitor-monthly-security-updates.md
 - name: System Center Updates Publisher
   href: tools/updates-publisher.md
   items:
-  - name: 설치
-    href: tools/install-updates-publisher.md
-  - name: 옵션 구성
-    href: tools/updates-publisher-options.md
-  - name: 카탈로그 관리
-    href: tools/updates-publisher-catalogs.md
-  - name: 업데이트 관리
-    href: tools/manage-updates-with-updates-publisher.md
-  - name: 게시 관리
-    href: tools/updates-publisher-publications.md
-  - name: 새 업데이트 만들기
-    href: tools/create-updates-with-updates-publisher.md
-  - name: 적용 가능성 규칙
-    href: tools/updates-publisher-applicability-rules.md
-  - name: 인증서 및 보안
-    href: tools/updates-publisher-security.md
-ms.openlocfilehash: 2f0cf536a5f34c47951f6d5992d3509d81d1e2dd
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59802583"
+    - name: 설치
+      href: tools/install-updates-publisher.md
+    - name: 옵션 구성
+      href: tools/updates-publisher-options.md
+    - name: 카탈로그 관리
+      href: tools/updates-publisher-catalogs.md
+    - name: 업데이트 관리
+      href: tools/manage-updates-with-updates-publisher.md
+    - name: 게시 관리
+      href: tools/updates-publisher-publications.md
+    - name: 새 업데이트 만들기
+      href: tools/create-updates-with-updates-publisher.md
+    - name: 적용 가능성 규칙
+      href: tools/updates-publisher-applicability-rules.md
+    - name: 인증서 및 보안
+      href: tools/updates-publisher-security.md
