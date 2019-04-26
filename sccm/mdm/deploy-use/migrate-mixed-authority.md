@@ -12,11 +12,11 @@ ms.technology: configmgr-hybrid
 ms.assetid: 6f0201d7-5714-4ba0-b2bf-d1acd0203e9a
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b7f2875852b49ab8af9b1f34c4747f12a6620896
-ms.sourcegitcommit: fd16fc2b681608fd6def5bad2cedffbcd1f2423a
+ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56405678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62282499"
 ---
 # <a name="change-the-mdm-authority-for-specific-users-mixed-mdm-authority"></a>특정 사용자에 대한 MDM 기관 변경(혼합 MDM 기관) 
 
@@ -45,7 +45,7 @@ ms.locfileid: "56405678"
 - Intune 구독과 연결된 컬렉션의 사용자에 대한 디바이스는 하이브리드 MDM에 등록할 수 있습니다. 사용자와 연결되어 있지만 컬렉션에 없는 모든 디바이스는 사용자에게 Intune/EMS 라이선스가 있는 경우 Intune에서 관리됩니다.   
 
     > [!Note]  
-    > 사용자는 Configuration Manager 콘솔을 통해 차단된 경우에도 Intune 독립 실행형에 등록할 수 있습니다. 사용자가 등록하는 것을 완전히 차단하려면 Intune에 원치 않는 사용자에게는 라이선스를 제공하지 마세요. 라이선스 없이는 등록할 수 없습니다.<!--SCCMDocs issue 738-->  
+    > 사용자는 Configuration Manager 콘솔을 통해 차단된 경우에도 Intune 독립 실행형에 등록할 수 있습니다. 사용자가 등록하는 것을 완전히 차단하려면 Intune에 원치 않는 사용자에게는 라이선스를 제공하지 마세요. 라이선스 없이 등록할 수 없습니다.<!--SCCMDocs issue 738-->  
 
 - 사용자를 Intune으로 마이그레이션하면 사용자와 디바이스가 Azure Portal의 Inture에 약 15분 후에 표시됩니다.   
 
@@ -85,7 +85,7 @@ ms.locfileid: "56405678"
 - Configuration Manager에서 DEM(디바이스 등록 관리자)으로 추가된 사용자 계정은 마이그레이션하지 마세요. 나중에 테넌트 수준 MDM 기관을 Intune으로 변경하면 이러한 사용자 계정이 올바르게 마이그레이션됩니다. 테 넌 트 수준 MDM 기관 변경 전에 DEM 사용자 계정, 마이그레이션하는 경우 Azure에서 Intune의 DEM으로 사용자를 수동으로 추가 해야 있습니다. 그러나는 DEM을 사용 하 여 등록 된 장치는 성공적으로 마이그레이션되지 않습니다. 이러한 디바이스를 마이그레이션하려면 지원을 요청합니다. 자세한 내용은 [디바이스 등록 관리자 추가](https://docs.microsoft.com/intune/device-enrollment-manager-enroll#add-a-device-enrollment-manager)를 참조하세요.  
 
     > [!Note]  
-    > 혼합된 기관 모드일 때에는 이러한 계정을 ConfigMgr 클라우드 컬렉션에서 제거하여 Intune으로 이동하지 마세요. 그럴 경우, 사용자가 표준 사용자 되어 15개 이상의 디바이스를 등록할 수 없습니다. 대신, 테넌트를 위한 MDM 기관이 완전히 전환되면 이러한 사용자 및 디바이스를 마이그레이션하세요.<!--Intune bug 2174210-->  
+    > 혼합된 기관 모드일 때에는 이러한 계정을 ConfigMgr 클라우드 컬렉션에서 제거하여 Intune으로 이동하지 마세요. 그럴 경우, 사용자가 표준 사용자 되어 15개 이상의 디바이스를 등록할 수 없습니다. 이러한 사용자 및 장치의 테 넌 트의 MDM 기관이 완벽 하 게 전환 하면 대신 마이그레이션하십시오.<!--Intune bug 2174210-->  
 
 - DEM 및 없이 장치를 사용 하 여 장치 등록 [사용자 선호도](/sccm/mdm/deploy-use/user-affinity-for-hybrid-managed-devices) 새 MDM 기관으로 자동으로 마이그레이션되지 않습니다. 이러한 MDM 디바이스의 관리 기관을 전환하려면 [사용자 선호도가 없는 디바이스 마이그레이션](#migrate-devices-without-user-affinity)을 참조하세요.  
 

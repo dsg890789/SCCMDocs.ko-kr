@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0bae054d3daa5aea8e343fef05aa4578221f17b6
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56133989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62226830"
 ---
 # <a name="enable-device-threat-protection-rule-in-the-compliance-policy"></a>준수 정책에서 디바이스 위협 방지 규칙 사용
 

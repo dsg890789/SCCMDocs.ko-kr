@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d7accfe4c329b61c7791bc4b82028d48fdc81931
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56122625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62256602"
 ---
 # <a name="vpn-profiles-on-mobile-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager의 모바일 디바이스에 대한 VPN 프로필
 
@@ -50,7 +50,7 @@ iOS, Android, Windows Phone 및 Windows 8.1 디바이스에 프로필을 배포�
  |PPTP|예|아니요|예|예|예|아니요|예|  
  |L2TP|예|아니요|예|예|예|아니요|예(OMA-URI)|  
 
-<sup>1</sup> 1802 버전부터 Cisco AnyConnect 연결 형식 사용이 달라집니다.<!--1357393-->  
+<sup>1</sup> 1802 버전부터 연결 형식이 Cisco AnyConnect 사용 달라 집니다.<!--1357393-->  
    - 다음 버전에서는 VPN 프로필에 **Cisco Legacy AnyConnect** 옵션을 사용하세요.
        - Cisco AnyConnect 버전 4.0.5 이하가 설치된 iOS
        - 아무 버전의 Cisco AnyConnect가 설치된 macOS

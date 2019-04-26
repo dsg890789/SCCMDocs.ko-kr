@@ -12,11 +12,11 @@ ms.technology: configmgr-hybrid
 ms.assetid: be503ec9-5324-4f7c-bcf5-77204328e99c
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9d6a909be4b1817b9a251046d666839e2e351443
-ms.sourcegitcommit: 0bf253085adeca0d9ea62d76497eb5ebf5ce89da
+ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57012431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62282170"
 ---
 # <a name="change-your-mdm-authority-to-intune-standalone"></a>MDM 기관을 Intune 독립 실행형으로 변경
 
@@ -118,7 +118,8 @@ MDM 기관을 변경한 후 새 장치가 새 기관으로 성공적으로 등�
 - 사용자와 연결 되지 않은 장치의 경우 MDM 기관을 변경 하는 데 지원에 문의. 
 
 #### <a name="bkmk-ki-dep"></a> Apple DEP 장치 레코드
-<!--ICM 105091970--> 하이브리드 MDM에서에서 마이그레이션이 완료 한 후에 Configuration Manager 콘솔에서 레코드를 유지 하는 Apple DEP 장치를 확인할 수 있습니다. MDM 기관을 Intune로 변경 되 면 Configuration Manager에서 이러한 장치를 제거할 수 없습니다. 
+<!--ICM 105091970-->
+하이브리드 MDM에서에서 마이그레이션이 완료 한 후에 Configuration Manager 콘솔에서 레코드를 유지 하는 Apple DEP 장치를 확인할 수 있습니다. MDM 기관을 Intune로 변경 되 면 Configuration Manager에서 이러한 장치를 제거할 수 없습니다. 
 
 두 가지 해결 방법이 있습니다.
 

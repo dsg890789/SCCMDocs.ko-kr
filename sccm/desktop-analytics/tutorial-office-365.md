@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 006a887a3989d7f05b7cf44b13562e644e6f7d94
-ms.sourcegitcommit: d23ccf7b95e6c2a6b156975194ebbc375cb5e6ea
+ms.openlocfilehash: 66b7d7da7081a4523378c0dc4b2a00917ac16ea9
+ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60124406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62261420"
 ---
 # <a name="tutorial-deploy-office-365-to-pilot"></a>자습서: Office 365를 파일럿 배포
 
@@ -121,7 +121,7 @@ Azure 구독이 없으면 만듭니다는 [무료 계정](https://azure.microsof
 
         각 그룹에 사용자를 추가할에서 해당 이름 또는 전자 메일 주소를 입력 합니다 **이름 또는 전자 메일 주소 입력** 적절 한 그룹의 섹션입니다. 완료 되 면 선택 **다음**합니다.
 
-다음 단계를 완료할 수 있습니다는 **작업 영역 소유자** 하거나 **참가자**합니다. 
+다음 단계를 완료할 수 있습니다는 **작업 영역 소유자** 하거나 **참가자**합니다. 자세한 내용은 [필수 구성 요소](/sccm/desktop-analytics/overview#prerequisites)합니다.
 
 5. 페이지에서 **작업 영역 설정**:  
 

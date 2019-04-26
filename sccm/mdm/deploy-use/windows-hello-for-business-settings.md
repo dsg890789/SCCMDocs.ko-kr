@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 71f853034133e2ec73a4d8e606c2e0c0c94841a4
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56134081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62227586"
 ---
 # <a name="windows-hello-for-business-settings-in-configuration-manager-hybrid"></a>Windows Hello for Business 설정에서 Configuration Manager (하이브리드)
 

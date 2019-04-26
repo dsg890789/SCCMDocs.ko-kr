@@ -10,11 +10,11 @@ author: aczechowski
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 15e0c2ad91e512551e55d507d6a84bde3e46396f
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56127408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62287146"
 ---
 # <a name="how-to-create-configuration-items-for-android-for-work-devices-managed-with-intune"></a>Intune으로 관리되는 Android for Work 디바이스에 대한 구성 항목을 만드는 방법
 

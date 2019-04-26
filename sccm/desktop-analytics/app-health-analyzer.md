@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21b4907667e055c9595b31eedf9da0ad516b5fec
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
+ms.openlocfilehash: d982094a427f1f67992584e3262493d3f4a96766
+ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59802260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62206560"
 ---
 # <a name="how-to-assess-compatibility-with-app-health-analyzer"></a>앱 상태 분석기를 사용 하 여 호환성을 평가 하는 방법
 
@@ -30,7 +30,7 @@ ms.locfileid: "59802260"
 
 ## <a name="download"></a>다운로드
 
-이 도구 키트를 다운로드 합니다 [Microsoft 다운로드 센터](http://download.microsoft.com/download/3/7/D/37D7E378-D805-4822-A712-4EADBF50FC08/AppHealthAnalyzer.zip)<!-- (https://www.microsoft.com/download/details.aspx?id=57276) -->을 참조하세요. 항상 최신 버전을 사용 합니다.
+다운로드 링크를 표시 하려면 Microsoft 담당자에 게 문의 합니다. 항상 최신 버전을 사용 합니다.
 
 다운로드에 Windows Installer (MSI) 파일입니다. 사용자의 컴퓨터에 앱 상태 분석기 도구 키트를 설치 합니다. 도구 키트를 실행 하면 마법사 앱 준비 보고서를 만드는 과정을 단계별로 안내 합니다.
 

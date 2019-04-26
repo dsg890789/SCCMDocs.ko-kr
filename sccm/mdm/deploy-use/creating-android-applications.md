@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ef070186112642d204aade24039da87c0e3a22f0
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56139673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62277041"
 ---
 # <a name="create-android-applications-in-configuration-manager"></a>Configuration Manager에서 Android 애플리케이션 만들기
 

@@ -6,11 +6,11 @@ ms.topic: include
 ms.date: 11/30/2018
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 83ee795be7683a708a32b2c747524d4e400d0df2
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56142564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62287291"
 ---
 - Apple iOS 9.0 이상
 - Google Android 4.0 이상(Samsung KNOX Standard 4.0 이상 포함)*

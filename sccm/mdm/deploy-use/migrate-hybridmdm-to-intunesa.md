@@ -12,11 +12,11 @@ ms.technology: configmgr-hybrid
 ms.assetid: 1dd696ce-3e46-4dfa-a76d-592fe0f0320e
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e2b62362bfcc9a76e407e9c0124306f83ac4a782
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56134472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62282088"
 ---
 # <a name="migrate-hybrid-mdm-users-and-devices-to-intune-standalone"></a>하이브리드 MDM 사용자 및 디바이스를 Intune 독립 실행형으로 마이그레이션
 
@@ -69,7 +69,8 @@ ms.locfileid: "56134472"
 
 
 ## <a name="request-assistance"></a>지원 요청
-<!--Intune bug 2339232--> Microsoft FastTrack 프로그램의 지원을 요청하려면 [Microsoft 365용 FastTrack](https://fasttrack.microsoft.com/microsoft365/capabilities?view=security)으로 이동합니다.
+<!--Intune bug 2339232-->
+Microsoft FastTrack 프로그램에서 지원을 요청 하려면로 이동 하 여 시작 [Microsoft 365 용 FastTrack](https://fasttrack.microsoft.com/microsoft365/capabilities?view=security)합니다.
 
 1. “로그인”을 클릭하고 조직 ID를 입력합니다.  
 

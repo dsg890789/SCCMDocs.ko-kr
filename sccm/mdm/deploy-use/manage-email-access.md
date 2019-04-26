@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2ee4ed8f102507b4d62a1ccbfe1cc38240e85df9
-ms.sourcegitcommit: f38ef9afb0c608c0153230ff819e5f5e0fb1520c
+ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58196860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62260552"
 ---
 # <a name="manage-email-access-in-configuration-manager"></a>Configuration Manager에서 메일 액세스 관리
 
@@ -176,7 +176,7 @@ Exchange 온-프레미스에 대한 조건부 액세스 정책은 Configuration 
 #### <a name="for-exchange-online-and-tenants-in-the-new-exchange-online-dedicated-environment"></a>Exchange Online(및 새 Exchange Online Dedicated 환경의 테넌트)의 경우
 
 > [!NOTE]  
-> Azure AD 관리 콘솔에서 조건부 액세스 정책을 만들 수도 있습니다. Azure AD 관리 콘솔을 사용하면 다단계 인증 등의 다른 조건부 액세스 정책 외에도 Intune 디바이스 조건부 액세스 정책(Azure AD에서는 디바이스 기반 조건부 액세스 정책이라고 함)을 만들 수 있습니다. Azure AD에서 지원하는 Salesforce, Box 등의 타사 엔터프라이즈 앱에 대한 조건부 액세스 정책을 설정할 수도 있습니다. 자세한 내용은 참조 하세요. [방법: 조건부 액세스를 사용 하 여 클라우드 앱 액세스를 위해 관리 되는 장치가](https://docs.microsoft.com/azure/active-directory/conditional-access/require-managed-devices)합니다.  
+> Azure AD 관리 콘솔에서 조건부 액세스 정책을 만들 수도 있습니다. Azure AD 관리 콘솔을 사용하면 다단계 인증 등의 다른 조건부 액세스 정책 외에도 Intune 디바이스 조건부 액세스 정책(Azure AD에서는 디바이스 기반 조건부 액세스 정책이라고 함)을 만들 수 있습니다. Azure AD에서 지원하는 Salesforce, Box 등의 타사 엔터프라이즈 앱에 대한 조건부 액세스 정책을 설정할 수도 있습니다. 자세한 내용은 참조 하세요. [방법: Require managed devices for cloud app access with conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/require-managed-devices)(방법: 조건부 액세스를 사용한 클라우드 앱 액세스를 위해 관리형 디바이스 필요)를 참조하세요.  
 
 다음과 같은 흐름을 사용하여 Exchange Online에 대한 조건부 액세스 정책에 의해 디바이스를 허용할지 또는 차단할지를 평가합니다.  
 

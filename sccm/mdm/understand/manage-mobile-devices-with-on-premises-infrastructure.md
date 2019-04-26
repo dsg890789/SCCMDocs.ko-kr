@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 49e07a7ebe6ec53d61ea9e2ee3bc941dd8561094
-ms.sourcegitcommit: f3dd8405018fe1043434386be15c16752c1a4a3c
+ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57558221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62286984"
 ---
 # <a name="on-premises-mdm-in-configuration-manager"></a>Configuration Manager에서 온-프레미스 MDM
 

@@ -13,11 +13,11 @@ manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 834b7d30aa5331ae73125e1cdfc3c9c7095d58b7
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56755462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62255198"
 ---
 # <a name="health-status-monitoring-in-desktop-analytics"></a>데스크톱 Analytics의 모니터링 상태
 

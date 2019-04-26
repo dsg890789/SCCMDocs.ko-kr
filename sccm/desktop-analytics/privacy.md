@@ -13,11 +13,11 @@ manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 370bfc26b8a7b6ca0223803a36e765528460d89f
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56755446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62258182"
 ---
 # <a name="desktop-analytics-data-privacy"></a>데스크톱의 분석 데이터 개인 정보 보호
 

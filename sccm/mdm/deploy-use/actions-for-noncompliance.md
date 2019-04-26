@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: cbd996629d3b312febd271757aff69faf5371c64
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56127425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62234010"
 ---
 # <a name="set-up-actions-for-non-compliance"></a>비준수에 대한 작업 설정
 
@@ -63,7 +63,7 @@ Configuration Manager에서 전자 메일 템플릿을 제공하지만 직접 �
     a. **이름**: 전자 메일 템플릿 이름  
 
     > [!Note]  
-    > **양식** 필드는 Microsoft에서 받은 회신 없음 메일 주소를 사용하여 자동으로 채워집니다.<!--SCCMDocs issue 652-->  
+    > 합니다 **에서** 필드는 Microsoft의 회신 없음 전자 메일 주소를 사용 하 여 자동으로 채워집니다.<!--SCCMDocs issue 652-->  
 
     c. **제목**: 송신할 전자 메일 알림을 설명 하는 주체  
 

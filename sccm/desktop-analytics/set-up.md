@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b75b82f632c8bfbbc11a2b11d58ab83116e2180a
-ms.sourcegitcommit: d23ccf7b95e6c2a6b156975194ebbc375cb5e6ea
+ms.openlocfilehash: 7f59e7a9feb53370b069852b871ce2a2c333dda0
+ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60124440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62258200"
 ---
 # <a name="how-to-set-up-desktop-analytics"></a>데스크톱 Analytics를 설정 하는 방법
 
@@ -68,8 +68,10 @@ ms.locfileid: "60124440"
         1. 입력 한 **작업 영역 이름**합니다.<!--do we have any guidance for this name?-->  
 
         2. 드롭다운 목록 선택 **이 작업 영역에 대 한 Azure 구독 이름을 선택**,이 작업 영역에 대 한 Azure 구독을 선택 합니다.  
+        
+        3. **새로 만들기** 리소스 그룹 또는 **기존 항목 사용**합니다. 
 
-        3. 선택 된 **지역** 을 선택 하 고 목록에서 **추가**합니다.  
+        4. 선택 된 **지역** 을 선택 하 고 목록에서 **추가**합니다.  
 
 6. 새 또는 기존 작업 영역을 선택한 후 **데스크톱 Analytics 작업 영역으로 설정**합니다.  선택한 **계속** 에 **Confirm 및 권한 부여 액세스** 대화 합니다.  
 

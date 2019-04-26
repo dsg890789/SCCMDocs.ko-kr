@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bb9349a8c3f107f2da139148e4476537fe6aa7ed
-ms.sourcegitcommit: f3dd8405018fe1043434386be15c16752c1a4a3c
+ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57558085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62287163"
 ---
 # <a name="plan-for-on-premises-mdm-in-configuration-manager"></a>Configuration Manager에서 온-프레미스 MDM에 대 한 계획
 
@@ -43,7 +43,7 @@ ms.locfileid: "57558085"
 
 ##  <a name="bkmk_intune"></a> Microsoft Intune 구독  
 
-온-프레미스 MDM을 사용 하 여을 시작 하려면 Microsoft Intune 구독을 해야 합니다. 구독 장치 라이선스를 추적 하려면 경우에 필요 하 고 관리 하거나 장치에 대 한 관리 정보를 저장 하는 데 사용 되지 않습니다. 온-프레미스 Configuration Manager 인프라를 사용 하 여 조직의 모든 관리 데이터가 저장 됩니다.  
+온-프레미스 MDM을 사용 하 여을 시작 하려면 Microsoft Intune 구독을 해야 합니다. 구독은 디바이스 라이선스를 추적하는 데만 필요하며 디바이스에 대한 관리 정보를 관리하거나 저장하는 데는 사용되지 않습니다. 모든 관리 데이터는 온-프레미스 Configuration Manager 인프라를 사용하여 조직에 저장됩니다.  
 
 > [!Note]  
 > 1810 버전부터 Intune 연결을 새 온-프레미스 MDM 배포에 필요 하지 않습니다.<!--3607730, fka 1359124--> 조직에서 이 기능을 사용하려면 여전히 Intune 라이선스가 필요합니다. 현재 기존 온-프레미스 MDM 배포에서 Intune 연결을 제거할 수 없습니다. 자세한 내용은 [Intune 지원 블로그 게시물](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150)을 참조하세요.  
