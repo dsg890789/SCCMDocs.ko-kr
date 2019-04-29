@@ -1,206 +1,199 @@
-items:
 - name: 개요
   items:
-  - name: 하이브리드 MDM이란
-    href: understand/hybrid-mobile-device-management.md
-  - name: 하이브리드 MDM의 새로운 기능
-    href: understand/whats-new-in-hybrid-mobile-device-management.md
+    - name: 하이브리드 MDM이란
+      href: understand/hybrid-mobile-device-management.md
+    - name: 하이브리드 MDM의 새로운 기능
+      href: understand/whats-new-in-hybrid-mobile-device-management.md
 - name: 계획 및 디자인
   href: plan-design/plan-hybrid-mobile-device-management.md
   items:
-  - name: 지원되는 디바이스 플랫폼
-    href: plan-design/supported-device-platforms-for-hybrid.md
-  - name: 디바이스 등록 방법
-    href: plan-design/device-enrollment-methods.md
+    - name: 지원되는 디바이스 플랫폼
+      href: plan-design/supported-device-platforms-for-hybrid.md
+    - name: 디바이스 등록 방법
+      href: plan-design/device-enrollment-methods.md
 - name: 시작
   href: deploy-use/setup-hybrid-mdm.md
   items:
-  - name: MDM 컬렉션 만들기
-    href: deploy-use/create-mdm-collection.md
-  - name: 도메인 이름 요구 사항 확인
-    href: deploy-use/confirm-dns.md
-  - name: Intune 구독 구성
-    href: deploy-use/configure-intune-subscription.md
-  - name: 사용 약관 추가
-    href: deploy-use/terms-and-conditions.md
-  - name: 서비스 연결 지점 만들기
-    href: deploy-use/create-service-connection-point.md
-  - name: 플랫폼 등록 사용
-    href: deploy-use/enable-platform-enrollment.md
-    items:
-    - name: iOS 및 MAC
-      href: deploy-use/enroll-hybrid-ios-mac.md
-    - name: Windows
-      href: deploy-use/enroll-hybrid-windows.md
-    - name: Android
-      href: deploy-use/enroll-hybrid-android.md
-  - name: 추가 관리 설정
-    href: deploy-use/set-up-additional-management.md
-  - name: MDM 구성 확인
-    href: deploy-use/verify-mdm-configuration.md
+    - name: MDM 컬렉션 만들기
+      href: deploy-use/create-mdm-collection.md
+    - name: 도메인 이름 요구 사항 확인
+      href: deploy-use/confirm-dns.md
+    - name: Intune 구독 구성
+      href: deploy-use/configure-intune-subscription.md
+    - name: 사용 약관 추가
+      href: deploy-use/terms-and-conditions.md
+    - name: 서비스 연결 지점 만들기
+      href: deploy-use/create-service-connection-point.md
+    - name: 플랫폼 등록 사용
+      href: deploy-use/enable-platform-enrollment.md
+      items:
+        - name: iOS 및 MAC
+          href: deploy-use/enroll-hybrid-ios-mac.md
+        - name: Windows
+          href: deploy-use/enroll-hybrid-windows.md
+        - name: Android
+          href: deploy-use/enroll-hybrid-android.md
+    - name: 추가 관리 설정
+      href: deploy-use/set-up-additional-management.md
+    - name: MDM 구성 확인
+      href: deploy-use/verify-mdm-configuration.md
 - name: 방법
   items:
-  - name: 사용자 소유의 (BYOD) 디바이스 등록
-    href: deploy-use/enroll-user-owned-devices.md
-  - name: 회사 소유 디바이스 등록
-    href: deploy-use/enroll-company-owned-devices.md
-    items:
-    - name: iOS DEP 등록
-      href: deploy-use/ios-device-enrollment-program-for-hybrid.md
-    - name: Apple Configurator 등록
-      href: deploy-use/ios-hybrid-enrollment-using-apple-configurator.md
-    - name: 디바이스 등록 관리자
-      href: deploy-use/enroll-devices-with-device-enrollment-manager.md
-    - name: 하드웨어 ID 미리 선언
-      href: deploy-use/predeclare-devices-with-hardware-id.md
-    - name: iOS 활성화 잠금 관리
-      href: deploy-use/manage-ios-activation-lock.md
-    - name: 사용자 장치 선호도
-      href: deploy-use/user-affinity-for-hybrid-managed-devices.md
-  - name: 디바이스 사용 중지/초기화, 잠금, 다시 설정
-    href: deploy-use/wipe-lock-reset-devices.md
-  - name: 하드웨어 인벤토리 구성
-    href: deploy-use/mobile-device-hardware-inventory-hybrid.md
-  - name: 소프트웨어 인벤토리 구성
-    href: deploy-use/software-inventory-mobile-devices.md
-  - name: 준수 설정 관리
-    href: deploy-use/manage-compliance-settings.md
-    items:
-    - name: Windows 8.1 및 Windows 10
-      href: deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md
-    - name: Windows Phone
-      href: deploy-use/create-configuration-items-for-windows-phone-devices-managed-without-the-client.md
-    - name: iOS 및 Mac OS X
-      href: deploy-use/create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client.md
-    - name: Android 및 Samsung KNOX Standard
-      href: deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client.md
-    - name: Android for Work
-      href: deploy-use/create-configuration-items-for-android-for-work-devices-managed-without-the-client.md
-  - name: Intune에 등록된 디바이스 동기화
-    href: deploy-use/sync-intune-device.md
-  - name: 애플리케이션 관리
-    href: deploy-use/management-tasks-applications.md
-    items:
-    - name: iOS 애플리케이션 만들기
-      href: deploy-use/creating-ios-applications.md
-    - name: iOS 앱 구성 정책
-      href: deploy-use/configure-ios-apps-with-app-configuration-policies.md
-    - name: iOS 대량 구매 앱
-      href: deploy-use/manage-volume-purchased-ios-apps.md
-    - name: Windows Phone 애플리케이션 만들기
-      href: deploy-use/creating-windows-phone-applications.md
-    - name: Android 애플리케이션 만들기
-      href: deploy-use/creating-android-applications.md
-    - name: Android 앱 구성 정책
-      href: deploy-use/configure-android-apps-with-app-configuration-policies.md
-    - name: 모바일 응용 프로그램 관리 정책
-      href: deploy-use/protect-apps-using-mam-policies.md
-    - name: Managed Browser 정책
-      href: deploy-use/manage-internet-access-using-managed-browser-policies.md
-    - name: 비즈니스용 Microsoft 스토어 앱
-      href: deploy-use/windows-store-for-business.md
-  - name: Intune 구독 관리
-    href: deploy-use/manage-intune-subscriptions.md
-  - name: MDM 기관 변경
-    href: deploy-use/change-mdm-authority.md
-  - name: 하이브리드 MDM에서 Intune 독립 실행형으로 마이그레이션 시작
-    href: deploy-use/migrate-hybridmdm-to-intunesa.md
-    items:
-    - name: Microsoft Intune으로 Configuration Manager 데이터 가져오기
-      href: deploy-use/migrate-import-data.md
-    - name: 사용자 마이그레이션을 위한 Intune 준비
-      href: deploy-use/migrate-prepare-intune.md
-    - name: 특정 사용자에 대한 MDM 기관 변경(혼합 MDM 기관)
-      href: deploy-use/migrate-mixed-authority.md
+    - name: 사용자 소유의 (BYOD) 디바이스 등록
+      href: deploy-use/enroll-user-owned-devices.md
+    - name: 회사 소유 디바이스 등록
+      href: deploy-use/enroll-company-owned-devices.md
+      items:
+        - name: iOS DEP 등록
+          href: deploy-use/ios-device-enrollment-program-for-hybrid.md
+        - name: Apple Configurator 등록
+          href: deploy-use/ios-hybrid-enrollment-using-apple-configurator.md
+        - name: 디바이스 등록 관리자
+          href: deploy-use/enroll-devices-with-device-enrollment-manager.md
+        - name: 하드웨어 ID 미리 선언
+          href: deploy-use/predeclare-devices-with-hardware-id.md
+        - name: iOS 활성화 잠금 관리
+          href: deploy-use/manage-ios-activation-lock.md
+        - name: 사용자 디바이스 선호도
+          href: deploy-use/user-affinity-for-hybrid-managed-devices.md
+    - name: '디바이스 사용 중지/초기화, 잠금, 다시 설정'
+      href: deploy-use/wipe-lock-reset-devices.md
+    - name: 하드웨어 인벤토리 구성
+      href: deploy-use/mobile-device-hardware-inventory-hybrid.md
+    - name: 소프트웨어 인벤토리 구성
+      href: deploy-use/software-inventory-mobile-devices.md
+    - name: 준수 설정 관리
+      href: deploy-use/manage-compliance-settings.md
+      items:
+        - name: Windows 8.1 및 Windows 10
+          href: deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md
+        - name: Windows Phone
+          href: deploy-use/create-configuration-items-for-windows-phone-devices-managed-without-the-client.md
+        - name: iOS 및 Mac OS X
+          href: deploy-use/create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client.md
+        - name: Android 및 Samsung KNOX Standard
+          href: deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client.md
+        - name: Android for Work
+          href: deploy-use/create-configuration-items-for-android-for-work-devices-managed-without-the-client.md
+    - name: Intune에 등록된 디바이스 동기화
+      href: deploy-use/sync-intune-device.md
+    - name: 애플리케이션 관리
+      href: deploy-use/management-tasks-applications.md
+      items:
+        - name: iOS 애플리케이션 만들기
+          href: deploy-use/creating-ios-applications.md
+        - name: iOS 앱 구성 정책
+          href: deploy-use/configure-ios-apps-with-app-configuration-policies.md
+        - name: iOS 대량 구매 앱
+          href: deploy-use/manage-volume-purchased-ios-apps.md
+        - name: Windows Phone 애플리케이션 만들기
+          href: deploy-use/creating-windows-phone-applications.md
+        - name: Android 애플리케이션 만들기
+          href: deploy-use/creating-android-applications.md
+        - name: Android 앱 구성 정책
+          href: deploy-use/configure-android-apps-with-app-configuration-policies.md
+        - name: 모바일 응용 프로그램 관리 정책
+          href: deploy-use/protect-apps-using-mam-policies.md
+        - name: 관리되는 브라우저 정책
+          href: deploy-use/manage-internet-access-using-managed-browser-policies.md
+        - name: 비즈니스용 Microsoft 스토어 앱
+          href: deploy-use/windows-store-for-business.md
+    - name: Intune 구독 관리
+      href: deploy-use/manage-intune-subscriptions.md
     - name: MDM 기관 변경
-      href: deploy-use/migrate-change-mdm-authority.md
-  - name: 리소스 액세스 관리
-    items:
-    - name: Wi-Fi 프로필 만들기
-      href: deploy-use/create-wifi-profiles.md
-    - name: PFX 인증서 프로필 만들기
-      href: deploy-use/create-pfx-certificate-profiles.md
-    - name: PFX 인증서 프로필 가져오기
-      href: deploy-use/import-pfx-certificate-profiles.md
-    - name: VPN 프로필
-      href: deploy-use/create-vpn-profiles.md
-    - name: 이메일 프로필 만들기
-      href: deploy-use/create-exchange-activesync-profiles.md
-    - name: 비즈니스용 Windows Hello 설정
-      href: deploy-use/windows-hello-for-business-settings.md
-  - name: 조건부 액세스 관리
-    href: deploy-use/manage-access-to-services.md
-    items:
-    - name: 디바이스 준수 정책
-      href: deploy-use/device-compliance-policies.md
+      href: deploy-use/change-mdm-authority.md
+    - name: 하이브리드 MDM에서 Intune 독립 실행형으로 마이그레이션 시작
+      href: deploy-use/migrate-hybridmdm-to-intunesa.md
       items:
-      - name: 비준수에 대한 작업
-        href: deploy-use/actions-for-noncompliance.md
-    - name: 디바이스 준수 정책 만들기
-      href: deploy-use/create-compliance-policy.md
-    - name: 전자 메일 액세스 관리
-      href: deploy-use/manage-email-access.md
-    - name: SharePoint Online 액세스 관리
-      href: deploy-use/manage-sharepoint-online-access.md
-    - name: 비즈니스용 Skype Online 액세스 관리
-      href: deploy-use/manage-skype-for-business-online-access.md
-    - name: Dynamics CRM Online 액세스 관리
-      href: deploy-use/manage-dynamics-crm-online-access.md
-    - name: Office 365 서비스에 대한 PC 액세스 관리
-      href: deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md
-  - name: 디바이스 위험에 따라 액세스 관리
-    href: deploy-use/mobile-threat-defense.md
-    items:
-    - name: Configuration Manager에서 Lookout
-      href: deploy-use/lookout-mobile-threat-defense-in-configuration-manager.md
+        - name: Microsoft Intune으로 Configuration Manager 데이터 가져오기
+          href: deploy-use/migrate-import-data.md
+        - name: 사용자 마이그레이션을 위한 Intune 준비
+          href: deploy-use/migrate-prepare-intune.md
+        - name: 특정 사용자에 대한 MDM 기관 변경(혼합 MDM 기관)
+          href: deploy-use/migrate-mixed-authority.md
+        - name: MDM 기관 변경
+          href: deploy-use/migrate-change-mdm-authority.md
+    - name: 리소스 액세스 관리
       items:
-      - name: Lookout 모바일 위협 방어 설정
-        href: deploy-use/set-up-your-subscription-with-lookout.md
-      - name: Intune에서 Lookout 사용
-        href: deploy-use/enable-lookout-connection-in-intune.md
-      - name: Lookout for Work 앱 배포
-        href: deploy-use/configure-and-deploy-lookout-for-work-apps.md
-      - name: Lookout 준수 정책 만들기
-        href: deploy-use/enable-device-threat-protection-rule-compliance-policy.md
-      - name: Lookout 통합 문제 해결
-        href: deploy-use/troubleshoot-lookout-integration.md
-      - name: 모바일 위협 방어 모니터링
-        href: deploy-use/monitor-mobile-threat-defense-compliance.md
+        - name: Wi-Fi 프로필 만들기
+          href: deploy-use/create-wifi-profiles.md
+        - name: PFX 인증서 프로필 만들기
+          href: deploy-use/create-pfx-certificate-profiles.md
+        - name: PFX 인증서 프로필 가져오기
+          href: deploy-use/import-pfx-certificate-profiles.md
+        - name: VPN 프로필
+          href: deploy-use/create-vpn-profiles.md
+        - name: 이메일 프로필 만들기
+          href: deploy-use/create-exchange-activesync-profiles.md
+        - name: 비즈니스용 Windows Hello 설정
+          href: deploy-use/windows-hello-for-business-settings.md
+    - name: 조건부 액세스 관리
+      href: deploy-use/manage-access-to-services.md
+      items:
+        - name: 디바이스 준수 정책
+          href: deploy-use/device-compliance-policies.md
+          items:
+            - name: 비준수에 대한 작업
+              href: deploy-use/actions-for-noncompliance.md
+        - name: 디바이스 준수 정책 만들기
+          href: deploy-use/create-compliance-policy.md
+        - name: 전자 메일 액세스 관리
+          href: deploy-use/manage-email-access.md
+        - name: SharePoint Online 액세스 관리
+          href: deploy-use/manage-sharepoint-online-access.md
+        - name: 비즈니스용 Skype Online 액세스 관리
+          href: deploy-use/manage-skype-for-business-online-access.md
+        - name: Dynamics CRM Online 액세스 관리
+          href: deploy-use/manage-dynamics-crm-online-access.md
+        - name: Office 365 서비스에 대한 PC 액세스 관리
+          href: deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md
+    - name: 디바이스 위험에 따라 액세스 관리
+      href: deploy-use/mobile-threat-defense.md
+      items:
+        - name: Configuration Manager에서 Lookout
+          href: deploy-use/lookout-mobile-threat-defense-in-configuration-manager.md
+          items:
+            - name: Lookout 모바일 위협 방어 설정
+              href: deploy-use/set-up-your-subscription-with-lookout.md
+            - name: Intune에서 Lookout 사용
+              href: deploy-use/enable-lookout-connection-in-intune.md
+            - name: Lookout for Work 앱 배포
+              href: deploy-use/configure-and-deploy-lookout-for-work-apps.md
+            - name: Lookout 준수 정책 만들기
+              href: deploy-use/enable-device-threat-protection-rule-compliance-policy.md
+            - name: Lookout 통합 문제 해결
+              href: deploy-use/troubleshoot-lookout-integration.md
+            - name: 모바일 위협 방어 모니터링
+              href: deploy-use/monitor-mobile-threat-defense-compliance.md
 - name: 온-프레미스 MDM(모바일 디바이스 관리)
   items:
-  - name: 온-프레미스 MDM이란
-    href: understand/manage-mobile-devices-with-on-premises-infrastructure.md
-  - name: 온-프레미스 MDM 계획
-    href: plan-design/plan-on-premises-mdm.md
-  - name: 설치 단계
-    href: get-started/preparation-steps-for-on-premises-mdm.md
-    items:
-    - name: Intune 구독 설정
-      href: get-started/set-up-intune-subscription-on-premises-mdm.md
-    - name: 온-프레미스 역할 설치
-      href: get-started/install-site-system-roles-for-on-premises-mdm.md
-    - name: 인증서 설정
-      href: get-started/set-up-certificates-on-premises-mdm.md
-    - name: 등록에 대한 설정
-      href: get-started/set-up-device-enrollment-on-premises-mdm.md
-  - name: 온-프레미스 MDM에 대한 디바이스 등록
-    href: deploy-use/enroll-devices-on-premises-mdm.md
-    items:
-    - name: 사용자 등록
-      href: deploy-use/user-enroll-devices-on-premises-mdm.md
-    - name: 대량 등록
-      href: deploy-use/bulk-enroll-devices-on-premises-mdm.md
-  - name: 디바이스 관리
-    href: deploy-use/onprem-manage-devices.md
-  - name: 애플리케이션 관리
-    href: deploy-use/onprem-manage-applications.md
-  - name: 데이터 및 디바이스 보호
-    href: deploy-use/onprem-protect-data-devices.md
+    - name: 온-프레미스 MDM이란
+      href: understand/manage-mobile-devices-with-on-premises-infrastructure.md
+    - name: 온-프레미스 MDM 계획
+      href: plan-design/plan-on-premises-mdm.md
+    - name: 설치 단계
+      href: get-started/preparation-steps-for-on-premises-mdm.md
+      items:
+        - name: Intune 구독 설정
+          href: get-started/set-up-intune-subscription-on-premises-mdm.md
+        - name: 온-프레미스 역할 설치
+          href: get-started/install-site-system-roles-for-on-premises-mdm.md
+        - name: 인증서 설정
+          href: get-started/set-up-certificates-on-premises-mdm.md
+        - name: 등록에 대한 설정
+          href: get-started/set-up-device-enrollment-on-premises-mdm.md
+    - name: 온-프레미스 MDM에 대한 디바이스 등록
+      href: deploy-use/enroll-devices-on-premises-mdm.md
+      items:
+        - name: 사용자 등록
+          href: deploy-use/user-enroll-devices-on-premises-mdm.md
+        - name: 대량 등록
+          href: deploy-use/bulk-enroll-devices-on-premises-mdm.md
+    - name: 디바이스 관리
+      href: deploy-use/onprem-manage-devices.md
+    - name: 애플리케이션 관리
+      href: deploy-use/onprem-manage-applications.md
+    - name: 데이터 및 디바이스 보호
+      href: deploy-use/onprem-protect-data-devices.md
 - name: Exchange를 사용한 디바이스 관리
   href: deploy-use/manage-mobile-devices-with-exchange-activesync.md
-ms.openlocfilehash: 604fce055dcaf8544d85986640ee2ba55a39ebb2
-ms.sourcegitcommit: f38ef9afb0c608c0153230ff819e5f5e0fb1520c
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58197132"
