@@ -2,7 +2,7 @@
 title: Desktop Analytics 설정
 titleSuffix: Configuration Manager
 description: 데스크톱 analytics 설정 및 온 보 딩에 대 한 방법 가이드입니다.
-ms.date: 04/15/2019
+ms.date: 04/25/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f59e7a9feb53370b069852b871ce2a2c333dda0
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: 3b831d6f42e6a9c908b46bf21882cab58fa08483
+ms.sourcegitcommit: 9af73f5c1b93f6ccaea3e6a096f75a5fecd65c2f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62258200"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64559055"
 ---
 # <a name="how-to-set-up-desktop-analytics"></a>데스크톱 Analytics를 설정 하는 방법
 
@@ -52,9 +52,10 @@ ms.locfileid: "62258200"
 
         각 그룹에 사용자를 추가할에서 해당 이름 또는 전자 메일 주소를 입력 합니다 **이름 또는 전자 메일 주소 입력** 적절 한 그룹의 섹션입니다. 완료 되 면 선택 **다음**합니다.
 
-다음 단계를 완료할 수 있습니다는 **작업 영역 소유자** 하거나 **참가자**합니다. 참조 [필수 구성 요소입니다.](/sccm/desktop-analytics/overview#prerequisites) 
-
 5. 페이지에서 **작업 영역 설정**:  
+
+    > [!Note]  
+    > 이 단계를 완료 한 **작업 영역 소유자** 또는 **참가자**합니다. 자세한 내용은 [필수 구성 요소](/sccm/desktop-analytics/overview#prerequisites)합니다.  
 
     - 기존 작업 영역에 데스크톱 Analytics를 사용 하려면를 선택 하 고 단계를 진행 합니다.  
 
@@ -68,8 +69,8 @@ ms.locfileid: "62258200"
         1. 입력 한 **작업 영역 이름**합니다.<!--do we have any guidance for this name?-->  
 
         2. 드롭다운 목록 선택 **이 작업 영역에 대 한 Azure 구독 이름을 선택**,이 작업 영역에 대 한 Azure 구독을 선택 합니다.  
-        
-        3. **새로 만들기** 리소스 그룹 또는 **기존 항목 사용**합니다. 
+
+        3. **새로 만들기** 리소스 그룹 또는 **기존 항목 사용**합니다.
 
         4. 선택 된 **지역** 을 선택 하 고 목록에서 **추가**합니다.  
 
@@ -85,50 +86,6 @@ ms.locfileid: "62258200"
 9. 에 **마지막 단계** 페이지에서 **Desktop Analytics로 이동**합니다.
 
 Azure portal에 데스크톱 분석을 보여 줍니다 **홈** 페이지입니다.
-
-
-
-## <a name="create-app-for-configuration-manager"></a>Configuration Manager에 대 한 app 만들기
-
-Configuration Manager에 대 한 Azure AD에서 앱을 만듭니다.
-
-1. 엽니다는 [Azure portal](http://portal.azure.com) 회사 관리자 권한이 있는 사용자로 이동 **Azure Active Directory**를 선택한 **앱 등록**합니다. 선택한 **새 응용 프로그램 등록**합니다.  
-
-2. 에 **만들기** 패널에서 다음 설정을 구성 합니다.  
-
-    - **이름**: 예를 들어 앱을 식별 하는 고유 이름: `Desktop-Analytics-Connection`  
-
-    - **응용 프로그램 유형을**: **웹 앱 / API**  
-
-    - **로그온 URL**:이 값이 Configuration Manager에서 사용 되지 않지만 Azure AD에 필요 합니다. 예를 들어 고유 하 고 올바른 URL을 입력 합니다. `https://configmgrapp`  
-  
-   **만들기**를 선택합니다.  
-
-3. 앱을 선택 하 고 확인 합니다 **응용 프로그램 ID**합니다. 이 값은 Configuration Manager 연결을 구성 하는 데 사용 되는 GUID입니다.  
-
-4. 선택 **설정을** 에 앱을 선택한 후 **키**합니다. 에 **암호** 섹션에서 입력을 **키 설명**, 만료 날짜를 지정 **기간**를 선택한 후 **저장**. 복사 합니다 **값** Configuration Manager 연결을 구성 하는 데 사용 되는 키입니다.
-
-    > [!Important]  
-    > 키 값을 복사만 기회입니다. 이제 복사 안 함, 하는 경우 다른 키를 만들 해야 합니다.  
-    >
-    > 키 값을 안전한 위치에 저장 합니다.  
-
-5. 앱에서 **설정을** 패널에서 **필요한 권한**합니다.  
-
-    1. 에 **필요한 권한** 패널에서 **추가**합니다.  
-
-    2. 에 **API 액세스 추가** 패널 **API 선택**합니다.  
-
-    3. 검색 된 **Configuration Manager 마이크로 서비스** API. 선택 하 고 선택한 **선택**합니다.  
-
-    4. 에 **액세스 사용** 패널에서 응용 프로그램 권한을 모두 선택 합니다. **CM 컬렉션 데이터를 쓸** 하 고 **CM 컬렉션 데이터를 읽을**합니다. 선택한 **선택**합니다.  
-
-    5. 에 **API 액세스 추가** 패널에서 **수행**합니다.  
-
-6. 에 **필요한 권한** 페이지에서 **권한을 부여**합니다. 선택 **예**합니다.  
-
-7. Azure AD 테 넌 트 ID를 복사 합니다. 이 값은 Configuration Manager 연결을 구성 하는 데 사용 되는 GUID입니다. 선택 **Azure Active Directory** 에서 주 메뉴를 선택 합니다 **속성**합니다. 복사 합니다 **디렉터리 ID** 값입니다.  
-
 
 
 ## <a name="next-steps"></a>다음 단계

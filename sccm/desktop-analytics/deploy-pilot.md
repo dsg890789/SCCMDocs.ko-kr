@@ -2,7 +2,7 @@
 title: 파일럿 배포 하는 방법
 titleSuffix: Configuration Manager
 description: 데스크톱 분석 파일럿 그룹에 배포 하기 위한 방법 가이드입니다.
-ms.date: 04/05/2019
+ms.date: 04/22/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -12,19 +12,19 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4aa078f5a8306cb30ea83d45b93b18971be7764f
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: d11e5eeb5e7a183c6b409fdbe58034ebe181898f
+ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62234297"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65083163"
 ---
 # <a name="how-to-deploy-to-pilot-with-desktop-analytics"></a>데스크톱 분석으로 파일럿 배포 하는 방법
 
 > [!Note]  
 > 이 정보는 정식으로 발표 되기 전에 대폭 수정 될 수 있는 미리 보기 서비스에 연결 합니다. Microsoft는 여기에 제공된 정보와 관련하여 명시적이거나 묵시적인 어떤 보증도 하지 않습니다.  
 
-가장 작은 요소 중 가장 넓은 범위를 제공 하는 장치 집합을 식별할 수 있도록 방법은 데스크톱 분석의 이점 중 하나입니다. Windows 및 Office를 업그레이드 및 업데이트의 파일럿을 가장 중요 한 요소에 중점을 둡니다. 더 성공적인 파일럿이 있도록 더 빠르고 자신 있게 프로덕션 환경에서 광범위 한 배포를 이동할 수 있습니다.  
+가장 작은 요소 중 가장 넓은 범위를 제공 하는 장치 집합을 식별할 수 있도록 방법은 데스크톱 분석의 이점 중 하나입니다. Windows 업그레이드 및 업데이트의 파일럿을 가장 중요 한 요소에 중점을 둡니다. 더 성공적인 파일럿이 있도록 더 빠르고 자신 있게 프로덕션 환경에서 광범위 한 배포를 이동할 수 있습니다.  
 
 [!INCLUDE [Definition of pilot and production](includes/define-pilot-prod.md)]
 
@@ -50,42 +50,31 @@ ms.locfileid: "62234297"
 
 ## <a name="create-software"></a>소프트웨어 만들기
 
-Windows 또는 Office를 배포 하기 전에 Configuration Manager에서 만드는 소프트웨어 개체 우선 합니다.
-
-- [Office 365 ProPlus 응용 프로그램](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#deploy-office-365-apps)  
-
-- [Windows 10 현재 위치 업그레이드 작업 순서](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+Windows를 배포 하기 전에 Configuration Manager에서 만드는 소프트웨어 개체 우선 합니다. 자세한 내용은 [Windows 10 현재 위치 업그레이드 작업 순서](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)합니다.
 
 
 
 ## <a name="deploy-to-pilot-devices"></a>파일럿 장치에 배포
 
-Configuration Manager 데스크톱 Analytics에서 데이터를 사용 하 여 파일럿 배포를 위해 컬렉션을 만듭니다. 기존 배포를 사용 하 여 응용 프로그램 또는 작업 순서를 배포 하지 마세요. 데스크톱 Analytics 통합 배포를 만들려면 다음 절차를 사용 합니다.
+Configuration Manager 데스크톱 Analytics에서 데이터를 사용 하 여 파일럿 배포를 위해 컬렉션을 만듭니다. 기존 배포를 사용 하 여 작업 순서를 배포 하지 마세요. 데스크톱 Analytics 통합 배포를 만들려면 다음 절차를 사용 합니다.
 
 1. Configuration Manager 콘솔에서로 이동 합니다 **소프트웨어 라이브러리**, 확장 **데스크톱 분석 서비스**, 선택는 **배포 계획** 노드.  
 
 2. 배포 계획을 선택한 후 **배포 계획 세부 정보** 리본 메뉴에 있습니다.  
 
-3. 에 **상태를 파일럿 실행** 타일, 드롭 다운 목록에서 다음 개체 형식 중 하나를 선택 합니다.  
+3. 에 **상태를 파일럿** 타일을 선택 **작업 순서** 드롭 다운 목록에서.  
 
-    - **응용 프로그램** for Office 365 ProPlus  
+    > [!Note]  
+    > 사용 하지 않는 합니다 **응용 프로그램** 옵션입니다. 향후 기능에 대해 예약 됩니다.
 
-    - **작업 순서** Windows 10 용  
-  
-   선택 **배포**합니다. 이 작업은 선택한 개체 형식에 대 한 소프트웨어 배포 마법사를 시작 합니다.
+    선택 **배포**합니다. 이 작업은 선택한 개체 형식에 대 한 소프트웨어 배포 마법사를 시작 합니다.
 
     > [!Note]  
     > 데스크톱 분석 통합을 사용 하 여 Configuration Manager는 자동으로 파일럿 배포 계획에 대 한 컬렉션을 만듭니다. 사용 하기 전에 동기화를이 컬렉션에 대 일 분 정도 걸릴 수 있습니다.<!-- 3887891 -->
     >
     > 이 컬렉션은 데스크톱 Analytics 배포 계획 장치에 대 한 예약 되어 있습니다. 이 컬렉션에 수동으로 변경한 내용은 지원 되지 않습니다.<!-- 3866460, SCCMDocs-pr 3544 -->  
 
-자세한 내용은 다음 아티클을 참조하세요.  
-
-- [응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications#bkmk_deploy)  
-
-- [작업 순서 배포](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#BKMK_DeployTS)  
-
-배포 계획에 대 한 경우 Windows 10 및 Office 365에는 두 번째 배포를 만드는 데이 프로세스를 반복 합니다. 예를 들어, 첫 번째 배포 작업 순서에 대 한 경우에 응용 프로그램에 대 한 두 번째 배포를 만듭니다.
+자세한 내용은 [Deploy a task sequence](/sccm/osd/deploy-use/deploy-a-task-sequence)항목을 참조하세요.
 
 
 
@@ -93,11 +82,7 @@ Configuration Manager 데스크톱 Analytics에서 데이터를 사용 하 여 �
 
 ### <a name="configuration-manager-console"></a>Configuration Manager 콘솔
 
-구성 관리자를 사용 하 여 배포 같은 다른 응용 프로그램 및 작업 순서 배포를 모니터링 합니다. 자세한 내용은 다음 아티클을 참조하세요.  
-
-- [Configuration Manager 콘솔에서 응용 프로그램 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)  
-
-- [모니터 OS 배포](/sccm/osd/deploy-use/monitor-operating-system-deployments)  
+구성 관리자를 사용 하 여 배포를 동일한 다른 작업 순서 배포를 모니터링 합니다. 자세한 내용은 [모니터 OS 배포](/sccm/osd/deploy-use/monitor-operating-system-deployments)합니다.
 
 
 ### <a name="desktop-analytics-portal"></a>데스크톱 Analytics 포털
@@ -128,7 +113,7 @@ Configuration Manager 데스크톱 Analytics에서 데이터를 사용 하 여 �
 
 ## <a name="next-steps"></a>다음 단계
 
-운영 데이터를 수집 하는 기간에 대 한 파일럿 실행을 사용 수 있습니다. 파일럿 장치의 사용자가 앱, 추가 기능 및 매크로 테스트 하는 것이 좋습니다.
+운영 데이터를 수집 하는 기간에 대 한 파일럿 실행을 사용 수 있습니다. 파일럿 장치의 사용자가 앱을 테스트 하는 것이 좋습니다.
 
 파일럿 배포 성공 조건을 만족 하는 경우 프로덕션에 배포 하려면 다음 문서로 이동 합니다.
 > [!div class="nextstepaction"]  
