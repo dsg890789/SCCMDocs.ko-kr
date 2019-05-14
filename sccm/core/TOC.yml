@@ -1,8 +1,10 @@
+- name: 핵심 인프라
 - name: 이해 및 탐색
   items:
     - name: Configuration Manager 소개
-      href: understand/introduction.md
       items:
+        - name: Configuration Manager 개요
+          href: understand/introduction.md
         - name: Configuration Manager에 대한 도움말 찾기
           href: understand/find-help.md
         - name: 문서 사용 방법
@@ -14,24 +16,27 @@
         - name: 소프트웨어 센터 사용자 가이드
           href: understand/software-center.md
     - name: Configuration Manager의 기본 항목
-      href: understand/fundamentals.md
       items:
+        - name: Configuration Manager 기본 사항
+          href: understand/fundamentals.md
         - name: 사이트 및 계층의 기본 사항
-          href: understand/fundamentals-of-sites-and-hierarchies.md
           items:
+            - name: 사이트 및 계층 구조 기본 사항
+              href: understand/fundamentals-of-sites-and-hierarchies.md
             - name: '사이트 및 계층 인프라에 대한 업그레이드, 업데이트 및 설치 정보'
               href: understand/upgrade-update-install.md
-        - name: 디바이스 관리의 기본 사항
-          href: understand/fundamentals-of-managing-devices.md
-        - name: 클라이언트 관리의 기본 사항
-          href: understand/fundamentals-of-client-management-tasks.md
-        - name: 보안 기본 사항
-          href: understand/fundamentals-of-security.md
-        - name: 역할 기반 관리의 기본 사항
-          href: understand/fundamentals-of-role-based-administration.md
+            - name: 디바이스 관리의 기본 사항
+              href: understand/fundamentals-of-managing-devices.md
+            - name: 클라이언트 관리의 기본 사항
+              href: understand/fundamentals-of-client-management-tasks.md
+            - name: 보안 기본 사항
+              href: understand/fundamentals-of-security.md
+            - name: 역할 기반 관리의 기본 사항
+              href: understand/fundamentals-of-role-based-administration.md
     - name: 장기 서비스 분기 소개
-      href: understand/introduction-to-the-ltsb.md
       items:
+        - name: 장기 서비스 분기 개요
+          href: understand/introduction-to-the-ltsb.md
         - name: 장기 서비스 분기에 대해 지원되는 구성
           href: understand/supported-configurations-for-ltsb.md
         - name: 장기 서비스 분기 설치
@@ -49,8 +54,9 @@
     - name: System Center Configuration Manager 라이선스
       href: understand/learn-more-editions.md
     - name: 클라우드 서비스 사용
-      href: understand/use-cloud-services.md
       items:
+        - name: 클라우드 서비스 개요
+          href: understand/use-cloud-services.md
         - name: Azure의 Configuration Manager
           href: understand/configuration-manager-on-azure.md
     - name: 제품 및 라이선스에 대한 FAQ
@@ -58,8 +64,9 @@
     - name: 진단 및 사용 현황 데이터에 대한 FAQ
       href: understand/frequently-asked-questions-about-diagnostics-and-usage-data.md
 - name: 계획 및 디자인
-  href: plan-design/get-ready.md
   items:
+    - name: Configuration Manager 사용 준비
+      href: plan-design/get-ready.md
     - name: 제품 변경 내용
       items:
         - name: 기능 및 특성
@@ -79,8 +86,9 @@
         - name: 버전 1710의 새로운 기능
           href: plan-design/changes/whats-new-in-version-1710.md
         - name: 제거되는 기능과 사용되지 않는 기능
-          href: plan-design/changes/deprecated/removed-and-deprecated.md
           items:
+            - name: 제거된 개요와 사용되지 않는 개요
+              href: plan-design/changes/deprecated/removed-and-deprecated.md
             - name: 제거되는 기능과 사용되지 않는 기능
               href: plan-design/changes/deprecated/removed-and-deprecated-cmfeatures.md
             - name: 사이트 서버에서 제거되거나 사용되지 않음
@@ -88,8 +96,9 @@
             - name: 클라이언트에서 제거되거나 사용되지 않음
               href: plan-design/changes/deprecated/removed-and-deprecated-client.md
     - name: 지원되는 구성
-      href: plan-design/configs/supported-configurations.md
       items:
+        - name: 지원되는 구성
+          href: plan-design/configs/supported-configurations.md
         - name: 크기 조정 및 규모 숫자 값
           href: plan-design/configs/size-and-scale-numbers.md
         - name: 사이트 및 사이트 시스템 필수 조건
@@ -115,8 +124,9 @@
     - name: 디바이스 관리 솔루션 선택
       href: plan-design/choose-a-device-management-solution.md
     - name: 사이트 계층 구조 디자인
-      href: plan-design/hierarchy/design-a-hierarchy-of-sites.md
       items:
+        - name: 계층 구조 디자인
+          href: plan-design/hierarchy/design-a-hierarchy-of-sites.md
         - name: SMS 공급자에 대한 계획
           href: plan-design/hierarchy/plan-for-the-sms-provider.md
         - name: 사이트 데이터베이스에 대한 계획
@@ -124,8 +134,9 @@
         - name: 사이트 시스템 서버 계획
           href: plan-design/hierarchy/plan-for-site-system-servers-and-site-system-roles.md
         - name: 콘텐츠 관리의 기본 개념
-          href: plan-design/hierarchy/fundamental-concepts-for-content-management.md
           items:
+            - name: 콘텐츠 관리의 기본 사항
+              href: plan-design/hierarchy/fundamental-concepts-for-content-management.md
             - name: 클라우드 기반 배포 지점 사용
               href: plan-design/hierarchy/use-a-cloud-based-distribution-point.md
             - name: 풀(pull) 배포 지점 사용
@@ -149,11 +160,13 @@
         - name: 사이트 관리를 위한 보안 및 개인 정보
           href: plan-design/hierarchy/security-and-privacy-for-site-administration.md
     - name: 네트워크 인프라 계획
-      href: plan-design/network/configure-firewalls-ports-domains.md
       items:
-        - name: Active Directory 스키마 준비
-          href: plan-design/network/extend-the-active-directory-schema.md
+        - name: 네트워크 인프라 고려 사항
+          href: plan-design/network/configure-firewalls-ports-domains.md
+        - name: Active Directory 스키마
           items:
+            - name: Active Directory 스키마 준비
+              href: plan-design/network/extend-the-active-directory-schema.md
             - name: 스키마 확장
               href: plan-design/network/schema-extensions.md
         - name: 사이트 시스템을 지원할 Windows 서버 준비
@@ -165,8 +178,9 @@
         - name: CNG 인증서 개요
           href: plan-design/network/cng-certificates-overview.md
     - name: 진단 및 사용 현황 데이터
-      href: plan-design/diagnostics/diagnostics-and-usage-data.md
       items:
+        - name: 진단 및 사용 현황 데이터 개요
+          href: plan-design/diagnostics/diagnostics-and-usage-data.md
         - name: 진단 및 사용 현황 데이터 사용 방법
           href: plan-design/diagnostics/how-diagnostics-and-usage-data-is-used.md
         - name: 1902에 대한 진단 데이터
@@ -186,8 +200,9 @@
         - name: CEIP(사용자 환경 개선 프로그램)
           href: plan-design/diagnostics/customer-experience-improvement-program-ceip.md
     - name: Configuration Manager에 대한 보안 및 개인 정보
-      href: plan-design/security/security-and-privacy.md
       items:
+        - name: 보안 및 개인 정보 개요
+          href: plan-design/security/security-and-privacy.md
         - name: 보안 계획
           href: plan-design/security/plan-for-security.md
         - name: 보안 모범 사례 및 개인 정보
@@ -203,15 +218,19 @@
 - name: 시작
   items:
     - name: 랩에서 Configuration Manager 평가
-      href: get-started/evaluate-with-lab-environment.md
       items:
+        - name: 랩 개요
+          href: get-started/evaluate-with-lab-environment.md
         - name: 랩 설정
           href: get-started/set-up-your-lab.md
         - name: Azure에서 랩 만들기
           href: get-started/azure-template.md
     - name: 기술 미리 보기
-      href: get-started/technical-preview.md
       items:
+        - name: 기술 미리 보기 개요
+          href: get-started/technical-preview.md
+        - name: 1904 기능
+          href: get-started/2019/technical-preview-1904.md
         - name: 1903 기능
           href: get-started/2019/technical-preview-1903.md
         - name: 1902.2 기능
@@ -220,14 +239,14 @@
           href: get-started/2019/technical-preview-1902.md
         - name: 1901 기능
           href: get-started/2019/technical-preview-1901.md
-        - name: 1812의 기능
-          href: get-started/capabilities-in-technical-preview-1812.md
     - name: 계층 구조 간에 데이터 마이그레이션
-      href: migration/migrate-data-between-hierarchies.md
       items:
+        - name: 마이그레이션 개요
+          href: migration/migrate-data-between-hierarchies.md
         - name: 마이그레이션 계획
-          href: migration/planning-for-migration.md
           items:
+            - name: 마이그레이션 계획
+              href: migration/planning-for-migration.md
             - name: 마이그레이션을 위한 필수 조건
               href: migration/prerequisites-for-migration.md
             - name: 마이그레이션에 대한 검사 목록
@@ -255,8 +274,9 @@
         - name: 마이그레이션에 대한 보안 및 개인 정보
           href: migration/security-and-privacy-for-migration.md
 - name: 서버 및 역할 배포
-  href: servers/deploy/start-using.md
   items:
+    - name: 서버 및 역할 배포
+      href: servers/deploy/start-using.md
     - name: 인프라 설치
       items:
         - name: 설치 미디어 받기
@@ -272,8 +292,9 @@
             - name: 필수 구성 요소 확인
               href: servers/deploy/install/list-of-prerequisite-checks.md
         - name: 사이트 설치
-          href: servers/deploy/install/installing-sites.md
           items:
+            - name: 사이트 설치 준비 개요
+              href: servers/deploy/install/installing-sites.md
             - name: 사이트를 설치할 준비
               href: servers/deploy/install/prepare-to-install-sites.md
             - name: 사이트 설치를 위한 필수 조건
@@ -281,8 +302,9 @@
             - name: 설치 마법사 사용
               href: servers/deploy/install/use-the-setup-wizard-to-install-sites.md
             - name: 명령줄 사용
-              href: servers/deploy/install/use-a-command-line-to-install-sites.md
               items:
+                - name: 명령줄 개요
+                  href: servers/deploy/install/use-a-command-line-to-install-sites.md
                 - name: 명령줄 옵션
                   href: servers/deploy/install/command-line-options-for-setup.md
             - name: 콘솔 설치
@@ -296,11 +318,13 @@
             - name: 사이트 및 계층 제거
               href: servers/deploy/install/uninstall-sites-and-hierarchies.md
     - name: 사이트 및 계층 구조 구성
-      href: servers/deploy/configure/configure-sites-and-hierarchies.md
       items:
+        - name: 사이트 및 계층 구조 구성 개요
+          href: servers/deploy/configure/configure-sites-and-hierarchies.md
         - name: 사이트 시스템 역할 추가
-          href: servers/deploy/configure/add-site-system-roles.md
           items:
+            - name: 사이트 시스템 역할 추가 개요
+              href: servers/deploy/configure/add-site-system-roles.md
             - name: 사이트 시스템 역할 설치
               href: servers/deploy/configure/install-site-system-roles.md
             - name: 클라우드 기반 배포 지점 설치
@@ -316,8 +340,9 @@
         - name: 사이트 데이터 게시
           href: servers/deploy/configure/publish-site-data.md
         - name: Manage content and content infrastructure
-          href: servers/deploy/configure/manage-content-and-content-infrastructure.md
           items:
+            - name: 콘텐츠 인프라 개요
+              href: servers/deploy/configure/manage-content-and-content-infrastructure.md
             - name: 배포 지점 설치 및 구성
               href: servers/deploy/configure/install-and-configure-distribution-points.md
             - name: 콘텐츠 배포 및 관리
@@ -325,8 +350,9 @@
             - name: 콘텐츠 모니터링
               href: servers/deploy/configure/monitor-content-you-have-distributed.md
         - name: 검색 실행
-          href: servers/deploy/configure/run-discovery.md
           items:
+            - name: 검색 방법 개요
+              href: servers/deploy/configure/run-discovery.md
             - name: 검색 방법 정보
               href: servers/deploy/configure/about-discovery-methods.md
             - name: 검색 방법 선택
@@ -334,17 +360,19 @@
             - name: 검색 방법 구성
               href: servers/deploy/configure/configure-discovery-methods.md
         - name: 사이트 경계 및 경계 그룹
-          href: servers/deploy/configure/define-site-boundaries-and-boundary-groups.md
           items:
+            - name: 사이트 경계 및 경계 그룹 개요
+              href: servers/deploy/configure/define-site-boundaries-and-boundary-groups.md
             - name: 경계
               href: servers/deploy/configure/boundaries.md
             - name: 경계 그룹
               href: servers/deploy/configure/boundary-groups.md
             - name: 경계 그룹에 대한 절차
               href: servers/deploy/configure/boundary-group-procedures.md
-        - name: 고가용성 옵션
-          href: servers/deploy/configure/high-availability-options.md
+        - name: 고가용성
           items:
+            - name: 고가용성 옵션
+              href: servers/deploy/configure/high-availability-options.md
             - name: 사이트 서버 고가용성
               href: servers/deploy/configure/site-server-high-availability.md
             - name: 순서도 - 수동 사이트 서버 설치
@@ -398,28 +426,33 @@
     - name: 관리 정보
       href: servers/manage/management-insights.md
     - name: CMPivot
-      href: servers/manage/cmpivot.md
       items:
+        - name: CMPivot 사용
+          href: servers/manage/cmpivot.md
         - name: CMPivot 문제 해결
           href: servers/manage/cmpivot-tsg.md
     - name: 유지 관리 작업
-      href: servers/manage/maintenance-tasks.md
       items:
+        - name: 유지 관리 작업 개요
+          href: servers/manage/maintenance-tasks.md
         - name: 유지 관리 작업에 대한 참조
           href: servers/manage/reference-for-maintenance-tasks.md
     - name: 인프라 수정
-      href: servers/manage/modify-your-infrastructure.md
       items:
+        - name: 인프라 수정
+          href: servers/manage/modify-your-infrastructure.md
         - name: CD.Latest 폴더
           href: servers/manage/the-cd.latest-folder.md
     - name: 온-프레미스 인프라 업그레이드
       href: servers/manage/upgrade-on-premises-infrastructure.md
-    - name: Configuration Manager에 대한 업데이트
-      href: servers/manage/updates.md
+    - name: Configuration Manager 업데이트 개요
       items:
-        - name: 콘솔 내 업데이트 설치
-          href: servers/manage/install-in-console-updates.md
+        - name: Configuration Manager에 대한 업데이트
+          href: servers/manage/updates.md
+        - name: 콘솔 내 업데이트
           items:
+            - name: 콘솔 내 업데이트 설치
+              href: servers/manage/install-in-console-updates.md
             - name: 업데이트 다시 설정 도구
               href: servers/manage/update-reset-tool.md
             - name: 데이터베이스 업그레이드 테스트
@@ -467,32 +500,29 @@
         - name: 상태 증명
           href: servers/manage/health-attestation.md
         - name: 계층 및 복제 인프라 모니터링
-          href: servers/manage/monitor-hierarchy-and-replication-infrastructure.md
           items:
+            - name: 계층 및 복제 인프라 모니터링
+              href: servers/manage/monitor-hierarchy-and-replication-infrastructure.md
             - name: 사이트 간 데이터 전송
               href: servers/manage/data-transfers-between-sites.md
         - name: 쿼리
-          href: servers/manage/queries-technical-reference.md
           items:
             - name: 쿼리 소개
               href: servers/manage/introduction-to-queries.md
-            - name: 쿼리에 대한 운영 및 유지 관리
-              href: servers/manage/operations-and-maintenance-for-queries.md
-              items:
-                - name: 쿼리를 관리하는 방법
-                  href: servers/manage/manage-queries.md
-                - name: 쿼리를 만드는 방법
-                  href: servers/manage/create-queries.md
+            - name: 쿼리를 관리하는 방법
+              href: servers/manage/manage-queries.md
+            - name: 쿼리를 만드는 방법
+              href: servers/manage/create-queries.md
             - name: 쿼리에 대한 보안 및 개인 정보
               href: servers/manage/security-and-privacy-for-queries.md
         - name: 보고
-          href: servers/manage/reporting.md
           items:
             - name: 보고 기능 소개
               href: servers/manage/introduction-to-reporting.md
             - name: 보고 계획
-              href: servers/manage/planning-for-reporting.md
               items:
+                - name: 보고 계힉
+                  href: servers/manage/planning-for-reporting.md
                 - name: 보고에 대한 필수 조건
                   href: servers/manage/prerequisites-for-reporting.md
                 - name: 보고에 대한 모범 사례
@@ -512,6 +542,8 @@
     - name: 지원 센터
       href: support/support-center.md
       items:
+        - name: 지원 센터 개요
+          href: support/support-center.md
         - name: 빠른 시작 가이드
           href: support/support-center-quickstart.md
         - name: 접근성
@@ -521,8 +553,9 @@
         - name: 사용자 지정
           href: support/support-center-customize.md
     - name: Configuration Manager 도구
-      href: support/tools.md
       items:
+        - name: 도구 개요
+          href: support/tools.md
         - name: CMTrace
           href: support/cmtrace.md
         - name: 클라이언트 감시
@@ -558,8 +591,9 @@
         - name: 클라이언트 설치 방법
           href: clients/deploy/plan/client-installation-methods.md
         - name: Windows 컴퓨터에 클라이언트를 배포하기 위한 필수 조건
-          href: clients/deploy/prerequisites-for-deploying-clients-to-windows-computers.md
           items:
+            - name: 클라이언트를 배포를 위한 필수 구성 요소
+              href: clients/deploy/prerequisites-for-deploying-clients-to-windows-computers.md
             - name: 클라이언트에 대한 Windows 방화벽 및 포트 설정
               href: clients/deploy/windows-firewall-and-port-settings-for-clients.md
         - name: 클라이언트에 대한 사이트 시스템 역할 결정
@@ -574,9 +608,10 @@
           href: clients/deploy/plan/planning-for-client-deployment-to-linux-and-unix-computers.md
         - name: Mac 컴퓨터에 클라이언트 배포 계획
           href: clients/deploy/plan/planning-for-client-deployment-to-mac-computers.md
-        - name: Windows Embedded 디바이스에 클라이언트 배포 계획
-          href: clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md
+        - name: Windows Embedded 디바이스에 클라이언트 배포
           items:
+            - name: Windows Embedded 디바이스에 클라이언트 배포 계획
+              href: clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md
             - name: '예제 시나리오 '
               href: clients/deploy/example-scenario-for-deploying-and-managing-clients-on-windows-embedded-devices.md
         - name: 클라이언트를 절전 모드에서 해제하는 방식 계획
@@ -589,25 +624,28 @@
           href: clients/deploy/configure-client-communication-ports.md
         - name: DNS 게시를 사용하여 관리 지점을 찾도록 클라이언트 컴퓨터를 구성하는 방법
           href: clients/deploy/configure-client-computers-to-find-management-points-by-using-dns-publishing.md
-        - name: 클라이언트 설정을 구성하는 방법
-          href: clients/deploy/configure-client-settings.md
+        - name: 클라이언트 설정 구성
           items:
+            - name: 클라이언트 설정을 구성하는 방법
+              href: clients/deploy/configure-client-settings.md
             - name: 클라이언트 설정 정보
               href: clients/deploy/about-client-settings.md
         - name: Wake on LAN을 구성하는 방법
           href: clients/deploy/configure-wake-on-lan.md
-        - name: Windows 컴퓨터에 클라이언트를 배포하는 방법
-          href: clients/deploy/deploy-clients-to-windows-computers.md
+        - name: Windows 컴퓨터에 클라이언트 배포
           items:
+            - name: Windows 컴퓨터에 클라이언트를 배포하는 방법
+              href: clients/deploy/deploy-clients-to-windows-computers.md
             - name: Azure AD를 사용하여 클라이언트 설치
               href: clients/deploy/deploy-clients-cmg-azure.md
             - name: 클라이언트 설치 속성
               href: clients/deploy/about-client-installation-properties.md
             - name: AD에 게시된 클라이언트 설치 속성
               href: clients/deploy/about-client-installation-properties-published-to-active-directory-domain-services.md
-        - name: UNIX 및 Linux 서버에 클라이언트를 배포하는 방법
-          href: clients/deploy/deploy-clients-to-unix-and-linux-servers.md
+        - name: UNIX 및 Linux 서버에 클라이언트 배포
           items:
+            - name: UNIX 및 Linux 서버에 클라이언트를 배포하는 방법
+              href: clients/deploy/deploy-clients-to-unix-and-linux-servers.md
             - name: Linux 및 UNIX 클라이언트 명령
               href: clients/deploy/linux-and-unix-clients-technical-reference.md
         - name: Mac에 클라이언트 배포 준비
@@ -621,8 +659,9 @@
         - name: 클라이언트 배포 상태를 모니터링하는 방법
           href: clients/deploy/monitor-client-deployment-status.md
 - name: 클라이언트 관리
-  href: clients/manage/monitor-and-manage-clients.md
   items:
+    - name: 클라이언트 관리 개요
+      href: clients/manage/monitor-and-manage-clients.md
     - name: 클라이언트 모니터링 및 관리
       items:
         - name: 클라이언트를 모니터링하는 방법
@@ -646,11 +685,13 @@
         - name: Surface 디바이스 대시보드
           href: clients/manage/surface-device-dashboard.md
     - name: 인터넷에서 클라이언트 관리
-      href: clients/manage/manage-clients-internet.md
       items:
-        - name: 클라우드 관리 게이트웨이에 대한 계획
-          href: clients/manage/cmg/plan-cloud-management-gateway.md
+        - name: 인터넷에서 클라이언트 관리 개요
+          href: clients/manage/manage-clients-internet.md
+        - name: 클라우드 관리 게이트웨이
           items:
+            - name: 클라우드 관리 게이트웨이에 대한 계획
+              href: clients/manage/cmg/plan-cloud-management-gateway.md
             - name: 클라우드 관리 게이트웨이에 대한 보안 및 개인 정보
               href: clients/manage/cmg/security-and-privacy-for-cloud-management-gateway.md
             - name: 클라우드 관리 게이트웨이에 대한 FAQ
@@ -756,8 +797,9 @@
         - name: 전원 관리에 대한 보안 및 개인 정보
           href: clients/manage/power/security-and-privacy-for-power-management.md
     - name: 클라이언트 업그레이드
-      href: clients/manage/upgrade/upgrade-clients.md
       items:
+        - name: 클라이언트 업그레이드 방법
+          href: clients/manage/upgrade/upgrade-clients.md
         - name: 사전 프로덕션 컬렉션에서 클라이언트 업그레이드 테스트
           href: clients/manage/upgrade/test-client-upgrades.md
         - name: 업그레이드에서 Windows 클라이언트 제외

@@ -1,3 +1,4 @@
+- name: 운영 체제 배포
 - name: 이해 및 탐색
   items:
     - name: OS 배포 소개
@@ -16,17 +17,20 @@
   items:
     - name: OS 배포를 위한 사이트 시스템 역할 준비
       href: get-started/prepare-site-system-roles-for-operating-system-deployments.md
-    - name: OS 배포를 위한 준비
-      href: get-started/prepare-for-operating-system-deployment.md
+    - name: OS 배포 준비
       items:
-        - name: 부팅 이미지 관리
-          href: get-started/manage-boot-images.md
+        - name: OS 배포를 위한 준비
+          href: get-started/prepare-for-operating-system-deployment.md
+        - name: 부팅 이미지
           items:
+            - name: 부팅 이미지 관리
+              href: get-started/manage-boot-images.md
             - name: 부팅 이미지 사용자 지정
               href: get-started/customize-boot-images.md
-        - name: OS 이미지 관리
-          href: get-started/manage-operating-system-images.md
+        - name: OS 이미지
           items:
+            - name: OS 이미지 관리
+              href: get-started/manage-operating-system-images.md
             - name: OS 이미지 사용자 지정
               href: get-started/customize-operating-system-images.md
         - name: OS 업그레이드 패키지 관리
@@ -44,8 +48,9 @@
 - name: 배포 및 사용
   items:
     - name: 엔터프라이즈 운영 체제를 배포하는 시나리오
-      href: deploy-use/scenarios-to-deploy-enterprise-operating-systems.md
       items:
+        - name: OS 배포 시나리오 개요
+          href: deploy-use/scenarios-to-deploy-enterprise-operating-systems.md
         - name: 최신 버전으로 Windows 업그레이드
           href: deploy-use/upgrade-windows-to-the-latest-version.md
         - name: 기존 디바이스에 대한 Windows Autopilot
@@ -57,8 +62,9 @@
         - name: 기존 컴퓨터 바꾸기 및 설정 전송
           href: deploy-use/replace-an-existing-computer-and-transfer-settings.md
     - name: 엔터프라이즈 운영 체제를 배포하는 방법
-      href: deploy-use/methods-to-deploy-enterprise-operating-systems.md
       items:
+        - name: OS 배포 방법
+          href: deploy-use/methods-to-deploy-enterprise-operating-systems.md
         - name: PXE를 사용하여 네트워크를 통해 Windows 배포
           href: deploy-use/use-pxe-to-deploy-windows-over-the-network.md
         - name: 소프트웨어 센터를 사용하여 네트워크를 통해 Windows 배포
@@ -82,8 +88,9 @@
     - name: OS 배포 모니터링
       href: deploy-use/monitor-operating-system-deployments.md
     - name: 작업 순서를 관리하여 작업 자동화
-      href: deploy-use/manage-task-sequences-to-automate-tasks.md
       items:
+        - name: 작업 순서 생성 및 관리
+          href: deploy-use/manage-task-sequences-to-automate-tasks.md
         - name: OS를 설치하는 작업 순서 만들기
           href: deploy-use/create-a-task-sequence-to-install-an-operating-system.md
         - name: OS를 업그레이드하는 작업 순서 만들기
@@ -92,6 +99,8 @@
           href: deploy-use/create-a-task-sequence-to-capture-an-operating-system.md
         - name: 사용자 환경을 캡처 및 복원하는 작업 순서 만들기
           href: deploy-use/create-a-task-sequence-to-capture-and-restore-user-state.md
+        - name: 작업 순서 배포
+          href: deploy-use/deploy-a-task-sequence.md
         - name: 작업 순서를 사용하여 가상 하드 디스크 관리
           href: deploy-use/use-a-task-sequence-to-manage-virtual-hard-disks.md
     - name: 사용자 지정 작업 순서 시나리오
@@ -105,8 +114,9 @@
         - name: Windows PE에서 BitLocker 사전 프로비전
           href: deploy-use/preprovision-bitlocker-in-windows-pe.md
     - name: 작업 순서 미디어 만들기
-      href: deploy-use/create-task-sequence-media.md
       items:
+        - name: 작업 순서 미디어 개요
+          href: deploy-use/create-task-sequence-media.md
         - name: 독립 실행형 미디어 만들기
           href: deploy-use/create-stand-alone-media.md
         - name: 사전 준비된 미디어 만들기
@@ -118,8 +128,9 @@
 - name: 기술 참조
   items:
     - name: 작업 순서 단계
-      href: understand/task-sequence-steps.md
       items:
+        - name: 작업 순서 단계 정보
+          href: understand/task-sequence-steps.md
         - name: 소프트웨어 업데이트 설치
           href: understand/install-software-updates.md
     - name: 작업 순서 변수 사용 방법

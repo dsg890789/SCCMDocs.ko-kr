@@ -1,65 +1,72 @@
+- name: 데이터 및 인프라 보호
 - name: 이해 및 탐색
   items:
     - name: 개요
       href: understand\protect-data-and-site-infrastructure.md
 - name: 계획 및 디자인
   items:
-    - name: 인증서 프로필 필수 조건
-      href: plan-design/prerequisites-for-certificate-profiles.md
-      items:
-        - name: 인증서 프로필에 대한 인증서 템플릿 권한
-          href: plan-design/planning-for-certificate-template-permissions.md
-        - name: 인증서 프로필 보안 및 개인 정보
-          href: plan-design/security-and-privacy-for-certificate-profiles.md
     - name: Endpoint Protection 계획
       href: plan-design/planning-for-endpoint-protection.md
+    - name: 인증서 프로필 계획
+      items:
+        - name: 인증서 프로필 필수 조건
+          href: plan-design/prerequisites-for-certificate-profiles.md
+        - name: 인증서 프로필에 대한 인증서 템플릿 권한
+          href: plan-design/planning-for-certificate-template-permissions.md
     - name: '이메일, Wi-Fi 및 VPN 프로필 계획'
-      href: plan-design/prerequisites-for-email-profiles.md
       items:
         - name: 메일 프로필 필수 조건
           href: plan-design/prerequisites-for-email-profiles.md
         - name: Wi-Fi 및 VPN 프로필 필수 조건
           href: plan-design/prerequisites-for-wifi-vpn-profiles.md
-    - name: Wi-Fi 및 VPN 프로필에 대한 보안 및 개인 정보
-      href: plan-design/security-and-privacy-for-wifi-vpn-profiles.md
-    - name: 메일 프로필에 대한 보안 및 개인 정보
-      href: plan-design/security-and-privacy-for-email-profiles.md
-    - name: 인증서 프로필에 대한 보안 및 개인 정보
-      href: plan-design/security-and-privacy-for-certificate-profiles.md
+    - name: 보안 및 개인 정보
+      items:
+        - name: Wi-Fi 및 VPN 프로필에 대한 보안 및 개인 정보
+          href: plan-design/security-and-privacy-for-wifi-vpn-profiles.md
+        - name: 메일 프로필에 대한 보안 및 개인 정보
+          href: plan-design/security-and-privacy-for-email-profiles.md
+        - name: 인증서 프로필에 대한 보안 및 개인 정보
+          href: plan-design/security-and-privacy-for-certificate-profiles.md
 - name: 배포 및 사용
   items:
     - name: VPN 프로필
-      href: deploy-use/vpn-profiles.md
       items:
+        - name: Configuration Manager의 VPN 프로필
+          href: deploy-use/vpn-profiles.md
         - name: VPN 프로필 만들기
           href: deploy-use/create-vpn-profiles.md
         - name: 앱별 VPN에 대한 PFN(패키지 패밀리 이름) 찾기
           href: deploy-use/find-a-pfn-for-per-app-vpn.md
     - name: Wi-Fi 프로필
-      href: deploy-use/create-wifi-profiles.md
       items:
         - name: Wi-Fi 프로필 만들기
           href: deploy-use/create-wifi-profiles.md
     - name: 인증서 프로필
-      href: deploy-use/introduction-to-certificate-profiles.md
       items:
+        - name: 인증서 프로필 소개
+          href: deploy-use/introduction-to-certificate-profiles.md
         - name: 인증서 프로필 만들기
           href: deploy-use/create-certificate-profiles.md
         - name: 인증서 인프라 구성
           href: deploy-use/certificate-infrastructure.md
+    - name: 'Wi-Fi, VPN, 메일 및 인증서 프로필 배포'
+      href: deploy-use/deploy-wifi-vpn-email-cert-profiles.md
     - name: "Endpoint\_Protection"
-      href: deploy-use/endpoint-protection.md
       items:
+        - name: Endpoint Protection 개요
+          href: deploy-use/endpoint-protection.md
         - name: Endpoint Protection 구성
-          href: deploy-use/endpoint-protection-configure.md
           items:
+            - name: Endpoint Protection 구성 방법
+              href: deploy-use/endpoint-protection-configure.md
             - name: 사이트 시스템 역할
               href: deploy-use/endpoint-protection-site-role.md
             - name: 경고
               href: deploy-use/endpoint-configure-alerts.md
             - name: 정의 업데이트
-              href: deploy-use/endpoint-definition-updates.md
               items:
+                - name: 정의 업데이트 개요
+                  href: deploy-use/endpoint-definition-updates.md
                 - name: ConfigMgr 업데이트
                   href: deploy-use/endpoint-definitions-configmgr.md
                 - name: WSUS 업데이트
@@ -94,12 +101,10 @@
           href: deploy-use/endpoint-protection-client-faq.md
         - name: 디바이스 보호 설정
           href: deploy-use/use-device-guard-with-configuration-manager.md
-    - name: 'Wi-Fi, VPN, 메일 및 인증서 프로필 배포'
-      href: deploy-use/deploy-wifi-vpn-email-cert-profiles.md
     - name: 비즈니스용 Windows Hello 설정
       href: deploy-use/windows-hello-for-business-settings.md
     - name: 사용 약관 설정
-      href: ../mdm/deploy-use/terms-and-conditions.md
+      href: ../mdm/deploy-use/terms-and-conditions.md?toc=/sccm/protect/toc.json&bc=/sccm/protect/breadcrumb/toc.json
     - name: 보호 모니터링
       items:
         - name: 'Wi-Fi, 이메일 및 VPN 프로필 모니터링'

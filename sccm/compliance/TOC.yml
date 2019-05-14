@@ -1,3 +1,4 @@
+- name: 디바이스 정책 준수
 - name: 이해 및 탐색
   items:
     - name: 디바이스 규정 준수를 확인합니다.
@@ -10,9 +11,10 @@
   items:
     - name: 준수 설정 계획 및 구성
       href: plan-design/plan-for-and-configure-compliance-settings.md
-    - name: 준수 관리를 위한 일반 작업
-      href: plan-design/common-tasks-for-managing-compliance.md
+    - name: 규정 준수 관리를 위한 작업
       items:
+        - name: 준수 관리를 위한 일반 작업
+          href: plan-design/common-tasks-for-managing-compliance.md
         - name: Configuration Manager 클라이언트가 포함된 디바이스
           href: plan-design/common-tasks-for-managing-compliance-on-devices-with-the-client.md
         - name: 구성 기준 만들기 및 배포
@@ -20,8 +22,9 @@
     - name: 보안 및 개인 정보
       href: plan-design/security-and-privacy-for-compliance-settings.md
     - name: SCAP(보안 콘텐츠 자동화 프로토콜) 확장
-      href: plan-design/scap/about-scap.md
       items:
+        - name: SCAP 확장 정보
+          href: plan-design/scap/about-scap.md
         - name: SCAP 확장 설치 및 구성
           href: plan-design/scap/install-configure-scap.md
         - name: SCAP 준수 배포 및 모니터
@@ -31,10 +34,10 @@
 - name: 배포 및 사용
   items:
     - name: 구성 항목 만들기
-      href: deploy-use/create-configuration-items.md
       items:
+        - name: 구성 항목 만들기 개요
+          href: deploy-use/create-configuration-items.md
         - name: Configuration Manager 클라이언트를 사용하여 관리되는 디바이스
-          href: deploy-use/configuration-items-for-devices-managed-with-the-client.md
           items:
             - name: Windows 10
               href: deploy-use/create-configuration-items-for-windows-10-devices-managed-with-the-client.md

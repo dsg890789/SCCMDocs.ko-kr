@@ -1,3 +1,4 @@
+- name: 애플리케이션 관리
 - name: 이해 및 탐색
   items:
     - name: 소개
@@ -10,13 +11,16 @@
   items:
     - name: 애플리케이션 관리 계획 및 구성
       href: plan-design/plan-for-and-configure-application-management.md
+    - name: 소프트웨어 센터 계획
+      href: plan-design/plan-for-software-center.md
     - name: 보안 및 개인 정보
       href: plan-design/security-and-privacy-for-application-management.md
 - name: 배포 및 사용
   items:
     - name: 애플리케이션 만들기
-      href: deploy-use/create-applications.md
       items:
+        - name: 애플리케이션 만들기
+          href: deploy-use/create-applications.md
         - name: Mac 컴퓨터 애플리케이션 만들기
           href: get-started/creating-mac-computer-applications.md
         - name: Windows 애플리케이션 만들기
@@ -70,13 +74,15 @@
         - name: 애플리케이션 제거
           href: deploy-use/uninstall-applications.md
     - name: 스크립트 실행 및 관리
-      href: deploy-use/create-deploy-scripts.md
       items:
+        - name: 스크립트 실행 및 관리
+          href: deploy-use/create-deploy-scripts.md
         - name: PowerShell 스크립트 보안에 대해 알아보기
           href: deploy-use/learn-script-security.md
     - name: Package Conversion Manager
-      href: pcm/package-conversion-manager.md
       items:
+        - name: Package Conversion Manager
+          href: pcm/package-conversion-manager.md
         - name: 패키지를 분석하고 변환하는 방법
           href: pcm/how-to-analyze-and-convert.md
         - name: Package Conversion Manager 문제 해결
