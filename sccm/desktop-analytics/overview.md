@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52879853e3d3286234ccd51479adddac94098441
-ms.sourcegitcommit: 9af73f5c1b93f6ccaea3e6a096f75a5fecd65c2f
+ms.openlocfilehash: 6827f94a0191aee9c1fe1e20978e6414050fca7c
+ms.sourcegitcommit: ab9f2a7fb7ea3a0c65808fce2975ab25a670281f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64559096"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65612511"
 ---
 # <a name="what-is-desktop-analytics"></a>데스크톱 Analytics 란?
 
@@ -70,7 +70,7 @@ ms.locfileid: "64559096"
 
 ### <a name="technical"></a>기술
 
-- 활성 Azure 구독  
+- 활성 Azure 구독을 사용 하 여 [전역 관리자](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#company-administrator) 권한  
 
     - **작업 영역 소유자** 나 **참가자** 권한을 **작업 영역 설정**, 및 다음 역할:  
 
