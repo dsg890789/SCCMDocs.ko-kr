@@ -2,7 +2,7 @@
 title: 데스크톱 Analytics에서 배포 계획
 titleSuffix: Configuration Manager
 description: 데스크톱 Analytics에서 배포 계획에 알아봅니다.
-ms.date: 04/22/2019
+ms.date: 05/14/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91cd7fc450ee53f900ae890e3a698c26c789ba8c
-ms.sourcegitcommit: 4023fb6fb534d8a0d589c8208f021e3311c7167f
+ms.openlocfilehash: b44684f897e7aad4365c39e58c9bfd486bde7cbb
+ms.sourcegitcommit: 53f2380ac67025fb4a69fc1651edad15d98e0cdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64880580"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673287"
 ---
 # <a name="about-deployment-plans-in-desktop-analytics"></a>데스크톱 Analytics에서 배포 계획에 대 한
 
@@ -51,8 +51,6 @@ ms.locfileid: "64880580"
 데스크톱 Analytics 배포 계획 데이터를 매일 새로 고칩니다. 24 시간 동안 변경 내용이 나타나지 않을 수 있습니다. 이러한 변경으로는 중요도를 앱에 할당 또는 파일럿에 포함 하려면 장치를 선택 합니다.  
 
 데스크톱 Analytics를 Configuration Manager에 연결한 후 배포 계획에서 컬렉션을 선택 합니다. 이 통합 데스크톱 분석 데이터를 기반으로 컬렉션에 Windows를 배포할 수 있습니다.
-
-데스크톱 분석 Configuration Manager 컬렉션을 사용 하 여 가장 잘 작동 하는 동안에 Log Analytics에서 장치 그룹을도 만들 수 있습니다. 자세한 내용은 [컴퓨터 그룹에서 Log Analytics 로그 검색](https://docs.microsoft.com/azure/log-analytics/log-analytics-computer-groups)합니다.
 
 
 

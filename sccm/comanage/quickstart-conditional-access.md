@@ -82,7 +82,7 @@ For more information, see [Wipro drives mobile productivity with Microsoft cloud
 
 - Nestle는 150,000명이 넘은 직원을 대상으로 앱 기반 조건부 액세스를 사용합니다.  
 
-- 자동화 소프트웨어 회사 Cadence는 이제 “관리형 디바이스만 Teams 및 회사 인트라넷과 같은 Office 365 앱에 액세스할 수 있습니다." 또한 직원이 “Workday 및 Salesforce 같은 다른 클라우드 기반 앱에도 더 안전하게 액세스”할 수 있습니다. Cadence의 Intune 사용 경험에 대한 자세한 내용은 [Cadence increases the pace of business with mobile collaboration tools in Microsoft 365](https://customers.microsoft.com/story/cadence-partner-professional-services-microsoft-365)(Cadence, Microsoft 365의 모바일 공동 작업 도구로 비즈니스 속도 향상)를 참조하세요.
+- 자동화 소프트웨어 회사 Cadence는 이제 “관리형 디바이스만 Teams 및 회사 인트라넷과 같은 Office 365 앱에 액세스할 수 있습니다." 또한 직원이 “Workday 및 Salesforce 같은 다른 클라우드 기반 앱에도 더 안전하게 액세스”할 수 있습니다. Cadence의 Intune 사용 경험에 대한 자세한 내용은 [Cadence increases the pace of business with mobile collaboration tools in Microsoft 365](https://customers.microsoft.com/story/cadence-partner-professional-services-microsoft-365)(Cadence, Microsoft 365의 모바일 협업 도구로 비즈니스 속도 향상)를 참조하세요.
 
 Intune은 Cisco ISE, Aruba Clear Pass, Citrix NetScaler 등과 같은 파트너와도 완전하게 통합됩니다. 이러한 파트너를 사용하면 이러한 다른 플랫폼 전반에서 Intune 등록 및 디바이스 준수 상태에 따라 액세스 제어를 유지할 수 있습니다.
 

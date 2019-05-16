@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6827f94a0191aee9c1fe1e20978e6414050fca7c
-ms.sourcegitcommit: ab9f2a7fb7ea3a0c65808fce2975ab25a670281f
+ms.openlocfilehash: 78e9454212bb8264926c1aba5262f06db1798abe
+ms.sourcegitcommit: 53f2380ac67025fb4a69fc1651edad15d98e0cdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65612511"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673438"
 ---
 # <a name="what-is-desktop-analytics"></a>데스크톱 Analytics 란?
 
@@ -101,20 +101,14 @@ ms.locfileid: "65612511"
 
 ### <a name="licensing"></a>라이선스
 
-대부분의 기능은 데스크톱 Analytics에서 모든 추가 라이선스 또는 구독에 필요 하지 않습니다. 올바르게 구성 하는 경우 데스크톱 분석을 사용 하 여 한 Azure 요금이 부과 하지 않습니다.
+데스크톱 분석 다음 라이선스 구독 중 하나가 필요합니다.
 
-Windows 상태 정보에 액세스 하거나 데이터를 내보내려면 추가 라이선스 요구 사항이 있습니다. 다음 구독 중 하나에 없는 경우 계속 설정 하 고 데스크톱 분석을 사용할 수 있지만 Windows 상태 정보를 사용 하거나 데이터를 내보내려면 사용이 허가 되지 않습니다.
+- Windows 10 Enterprise E3 또는 E5; Microsoft 365 F1, E3 또는 E5  
 
-- Windows 10 Enterprise 또는 Windows 10 Education: 장치별 활성 Software Assurance를 사용 하 여  
+- Windows 10 Education A3 또는 A5; Microsoft 365 A3 또는 A5  
 
-- Windows 10 Enterprise E3 또는 E5: 장치 단위 또는 사용자 단위 구독 (Microsoft 365 F1, E3 또는 E5에 포함)  
+- Windows VDA E3 또는 E5  
 
-- Windows 10 Education A3 또는 A5 (Microsoft 365 Education A3 또는 A5 포함)  
-
-- Windows 가상 데스크톱 액세스 E3 또는 E5: 장치별 사용자 당 구독  
-
-> [!Note]  
-> 장치 단위 라이선스에 대 한 라이선스를 사용 하 여 각 장치를 활성화할 필요가 없습니다. 데스크톱 Analytics에 등록 된 장치의 하기만 라이선스가 충분 합니다.  
 
 
 
