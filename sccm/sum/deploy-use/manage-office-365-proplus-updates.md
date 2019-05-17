@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7122d57696a7407731b93da20b995fc3e40949ac
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
+ms.openlocfilehash: 021fa2a29512fa3dde06af77093100f5c1dff0ad
+ms.sourcegitcommit: ab9f2a7fb7ea3a0c65808fce2975ab25a670281f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59802600"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65613051"
 ---
 # <a name="manage-office-365-proplus-with-configuration-manager"></a>Configuration Manager를 사용하여 Office 365 ProPlus 관리
 
@@ -203,7 +203,7 @@ Configuration Manager 버전 1902부터 업데이트 워크플로는 **Office 36
 3. 작업 순서에서 **소프트웨어 업데이트 설치** 단계 전에 새로운 **명령줄 실행** 단계를 추가합니다. Office 365 ProPlus가 동일한 작업 순서의 일부로 설치되는 경우 Office가 설치된 후 이 단계가 실행되는지 확인합니다.
 4. 명령줄 필드에 예약된 작업을 실행하는 명령줄을 입력합니다. 아래 예를 참조하여 따옴표로 묶인 문자열이 1단계에서 식별한 작업의 이름 및 경로와 일치하는지 확인합니다.  
 
-    예: `schtasks /run /tn "\Microsoft\Office\Office Automatic Updates"`
+    예: `schtasks /run /tn "\Microsoft\Office\Office Automatic Updates 2.0"`
 5. **확인**을 클릭합니다. 
 
 ## <a name="change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager"></a>Office 365 클라이언트가 Configuration Manager에서 업데이트를 받도록 설정한 후에 업데이트 채널 변경

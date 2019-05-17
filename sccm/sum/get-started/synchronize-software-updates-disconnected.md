@@ -2,21 +2,21 @@
 title: '인터넷 연결 없이 업데이트 동기화 '
 titleSuffix: Configuration Manager
 description: 인터넷에서 연결이 끊어진 최상위 소프트웨어 업데이트 지점에서 소프트웨어 업데이트 동기화를 실행합니다.
-author: aczechowski
 ms.date: 01/23/2017
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 1a997c30-8e71-4be5-89ee-41efb2c8d199
 manager: dougeby
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ca643b348d9d6d2800c671d9985f10d08bf5d60
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 67b284e369268b184067e33d2a505585618795e5
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56130472"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65493976"
 ---
 # <a name="synchronize-software-updates-from-a-disconnected-software-update-point"></a>연결이 끊긴 소프트웨어 업데이트 지점에서 소프트웨어 업데이트 동기화  
 
@@ -71,7 +71,7 @@ ms.locfileid: "56130472"
 
      **wsusutil.exe export export.cab export.log**  
 
-     이 형식은 다음과 같이 요약할 수 있습니다. WSUSutil.exe 뒤에 내보내기 옵션, 그 뒤에 내보내기 작업 중에 만든 내보내기 .cab 파일 이름, 그리고 그 뒤에 로그 파일 이름이 옵니다. WSUSutil.exe는 내보내기 서버에서 메타데이터를 내보내고 작업의 로그 파일을 만듭니다.  
+     이 형식은 다음과 같이 요약할 수 있습니다. WSUSutil.exe 뒤에 내보내기 옵션, 내보내기 작업 중에 만든 내보내기 .cab 파일 이름, 로그 파일 이름이 옵니다. WSUSutil.exe는 내보내기 서버에서 메타데이터를 내보내고 작업의 로그 파일을 만듭니다.  
 
     > [!NOTE]  
     >  현재 폴더에서 패키지(.cab 파일) 및 로그 파일 이름이 고유해야 합니다.  
@@ -99,7 +99,7 @@ ms.locfileid: "56130472"
 
      **wsusutil.exe import export.cab import.log**  
 
-     이 형식은 다음과 같이 요약할 수 있습니다. WSUSutil.exe 뒤에 import 명령, 그 뒤에 내보내기 작업 중에 만든 패키지 파일(.cab) 이름, 그 뒤에 패키지 파일의 경로(패키지 파일이 다른 폴더에 있는 경우), 그리고 그 뒤에 로그 파일 이름이 옵니다. WSUSutil.exe는 내보내기 서버에서 메타데이터를 가져오고 작업의 로그 파일을 만듭니다.  
+     이 형식은 다음과 같이 요약할 수 있습니다. WSUSutil.exe 뒤에 import 명령, 내보내기 작업 중에 만든 패키지 파일(.cab) 이름, 패키지 파일의 경로(패키지 파일이 다른 폴더에 있는 경우) 및 로그 파일 이름이 옵니다. WSUSutil.exe는 내보내기 서버에서 메타데이터를 가져오고 작업의 로그 파일을 만듭니다.  
 
 ## <a name="next-steps"></a>다음 단계
 처음으로 소프트웨어 업데이트를 동기화한 후 또는 새 분류나 제품을 사용할 수 있게 되면 [새 분류 및 제품을 구성](configure-classifications-and-products.md)하여 소프트웨어 업데이트를 새 기준과 동기화해야 합니다.

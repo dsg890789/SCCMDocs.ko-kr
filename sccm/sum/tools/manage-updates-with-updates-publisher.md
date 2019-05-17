@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
 ms.assetid: cd64994c-b426-4465-96cd-54b0edc2778d
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f658ce4757455e4e49cff6228ee37a38b8e4fa5
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 88cc03de66847143336425dbc4b730703d15378c
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56139496"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65493781"
 ---
 # <a name="manage-software-updates-in-updates-publisher"></a>Updates Publisher에서 소프트웨어 업데이트 관리
 
@@ -90,7 +90,7 @@ System Center Updates Publisher에서는 **업데이트 작업 영역**을 사�
 ### <a name="to-publish-updates-and-bundles"></a>업데이트 및 번들을 게시하려면
 1.  **업데이트 작업 영역**으로 이동하여 게시할 업데이트 및 번들을 하나 이상 선택합니다. 그런 다음 리본의 **홈** 탭에서 **게시**를 선택합니다.
 
-2.  **게시** 마법사의 **선택** 페이지에서 업데이트를 게시할 방법을 선택합니다. 옵션은 [업데이트를 할당](#assign-updates-and-bundles-to-a-publication)할 경우 즉, **전체 콘텐츠**, **메타데이터 전용** 또는 **자동**과 동일합니다.
+2.  **게시** 마법사의 **선택** 페이지에서 업데이트를 게시할 방법을 선택합니다. 옵션은 [업데이트 할당](#assign-updates-and-bundles-to-a-publication)과 동일하게 **전체 콘텐츠**, **메타데이터만** 또는 **자동**입니다.
 
     새 게시 인증서로 모든 업데이트에 서명하도록 선택할 수도 있습니다.
 

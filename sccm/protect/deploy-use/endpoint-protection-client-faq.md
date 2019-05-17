@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
 ms.assetid: e3aaa9d2-a40e-42b1-ad75-5a115351729e
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f19fee37ab817670bd754d6da1ad1ebe9ccb452
-ms.sourcegitcommit: 369db96ee84299b5ab6d74b177e6366b3017fc54
+ms.openlocfilehash: e0f3e0a20874539b079541f363c6d494a738225f
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56589937"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65500513"
 ---
 # <a name="endpoint-protection-client-frequently-asked-questions"></a>Endpoint Protection 클라이언트에 대한 질문과 대답
 
@@ -28,15 +28,15 @@ ms.locfileid: "56589937"
 -   [바이러스 백신 및 스파이웨어 방지 소프트웨어가 필요한 이유는 무엇인가요?](#why-do-i-need-antivirus-and-antispyware-software)  
 -   [컴퓨터가 악성 소프트웨어에 감염되었는지 어떻게 알 수 있나요?](#how-can-i-tell-if-my-computer-is-infected-with-malicious-software)
 -   [Windows Defender의 버전을 어떻게 확인할 수 있나요?](#how-can-i-find-the-version-of-windows-defender)
--   [Windows Defender 또는 Endpoint Protection이 컴퓨터에서 악성 소프트웨어를 발견할 경우 어떻게 해야 하나요?](#what-should-i-do-if-windows-defender-or-endpoint-protection-detects-software-on-my-computer)  
+-   [Windows Defender 또는 Endpoint Protection이 컴퓨터에서 악성 소프트웨어를 발견할 경우 어떻게 해야 하나요?](#what-should-i-do-if-windows-defender-or-endpoint-protection-detects-malicious-software-on-my-computer)  
 -   [바이러스란 무엇인가요?](#what-is-a-virus)  
 -   [스파이웨어란 무엇인가요?](#what-is-spyware)  
--   [바이러스, 스파이웨어 및 기타 잠재적으로 위험한 소프트웨어 간의 차이는 무엇인가요?](#hat-s-the-difference-between-viruses-spyware-and-other-potentially-harmful-software)  
+-   [바이러스, 스파이웨어 및 기타 잠재적으로 위험한 소프트웨어 간의 차이는 무엇인가요?](#whats-the-difference-between-viruses-spyware-and-other-potentially-harmful-software)  
 -   [바이러스, 스파이웨어 및 기타 사용자 동의 없이 설치된 소프트웨어의 출처는 무엇인가요?](#where-do-viruses-spyware-and-other-potentially-unwanted-software-come-from)  
 -   [자기도 모르는 사이에 악성 소프트웨어를 받을 수 있나요?](#can-i-get-malicious-software-without-knowing-it)  
 -   [소프트웨어를 설치하기 전에 사용권 계약을 검토하는 것이 중요한 이유는 무엇인가요?](#why-is-it-important-to-review-license-agreements-before-installing-software)  
--   [Endpoint Protection 및 Windows Defender의 차이는 무엇인가요?](#what-s-the-difference-between-endpoint-protection-and-windows-defender)  
--   [Windows Defender가 쿠키를 검색하지 않는 이유는 무엇인가요?](#why-doesn-t-windows-defender-detect-cookies)  
+-   [Endpoint Protection 및 Windows Defender의 차이는 무엇인가요?](#whats-the-difference-between-endpoint-protection-and-windows-defender)  
+-   [Windows Defender가 쿠키를 검색하지 않는 이유는 무엇인가요?](#why-doesnt-windows-defender-detect-cookies)  
 -   [맬웨어를 방지하려면 어떻게 해야 하나요?](#how-can-i-prevent-malware)  
 -   [바이러스 및 스파이웨어 정의란?](#what-are-virus-and-spyware-definitions)  
 -   [바이러스 및 스파이웨어 정의를 최신 상태로 유지하려면 어떻게 해야 하나요?](#how-do-i-keep-virus-and-spyware-definitions-up-to-date)  

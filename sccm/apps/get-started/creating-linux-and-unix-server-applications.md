@@ -13,7 +13,7 @@ ms.author: aaroncz
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 35765aa804bf0e6d303caf2c395d3d44d5027951
 ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/27/2019
 ms.locfileid: "58524084"
@@ -25,7 +25,7 @@ ms.locfileid: "58524084"
 > [!Important]  
 > Configuration Manager 버전 1902 년부터 Linux 또는 UNIX 클라이언트를 지원 하지 않습니다. 
 > 
-> Linux 서버를 관리 하는 것에 대 한 Microsoft Azure 관리를 고려 합니다. Azure 솔루션은 대부분의 경우 Linux용 종단 간 패치 관리를 포함하여 Configuration Manager 기능을 능가하는 광범위한 Linux 지원을 제공합니다.
+> Linux 서버를 관리 하는 것에 대 한 Microsoft Azure 관리를 고려 합니다. Azure 솔루션은 대부분의 경우 Linux용 엔드투엔드 패치 관리를 포함하여 Configuration Manager 기능을 능가하는 광범위한 Linux 지원을 제공합니다.
 
 Linux 및 UNIX를 실행하는 컴퓨터용 애플리케이션을 만들고 배포할 때는 다음 사항을 고려하세요.  
 

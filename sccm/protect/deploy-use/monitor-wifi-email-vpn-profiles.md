@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
 ms.assetid: e2315b8b-98bc-40e1-8ef9-bfb5e69ab109
-author: aczechowski
+author: mestew
+ms.author: mstewart
 manager: dougeby
-ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 49602002a789c0bd1e8d8cc128d3062fde9194fc
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 97106e1e75664a1e3f52e7870f6f35e9eb95ac52
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56137697"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65500382"
 ---
 # <a name="monitor-email-wi-fi-and-vpn-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 메일, Wi-Fi 및 VPN 프로필 모니터링
 

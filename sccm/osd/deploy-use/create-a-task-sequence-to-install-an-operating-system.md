@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c18d6320397281156e39624ea8dc50e6d0539ed
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: c6d0cecc348076bcf728cb08ba29500ae55d1c77
+ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56139911"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65082871"
 ---
 # <a name="create-a-task-sequence-to-install-an-operating-system-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 운영 체제를 설치하는 작업 순서 만들기
 
@@ -66,11 +66,11 @@ System Center Configuration Manager에서 작업 순서를 사용하여 운영 �
 
    -   **이미지**: 운영 체제 이미지 패키지에 여러 이미지가 있으면 설치할 운영 체제 이미지의 인덱스를 지정합니다.  
 
-   -   **운영 체제를 설치하기 전에 대상 컴퓨터 파티션을 만들고 포맷**: 운영 체제를 설치하기 전에 작업 순서로 대상 컴퓨터 파티션을 만들고 포맷할지 여부를 지정합니다.  
+   -   **운영 체제를 설치하기 전에 대상 컴퓨터 파티션을 만들고 포맷합니다.**: 운영 체제를 설치하기 전에 작업 순서로 대상 컴퓨터 파티션을 만들고 포맷할지 여부를 지정합니다.  
 
    -   **제품 키**: 설치할 Windows 운영 체제의 제품 키를 지정합니다. 인코딩된 볼륨 라이선스와 표준 제품 키를 지정할 수 있습니다. 인코딩되지 않은 제품 키를 사용할 경우 5자로 이루어진 각 그룹을 대시(-)로 구분해야 합니다. 예: *XXXXX-XXXXX-XXXXX-XXXXX-XXXXX*  
 
-   -   **서버 라이선싱 모드**: 서버 라이선스가 **사용자 단위**인지 **서버 단위**인지 또는 지정된 라이선스가 없는지 지정합니다. 서버 라이선스가 **서버 단위**인 경우 최대 서버 연결 수도 지정합니다.  
+   -   **서버 라이선싱 모드**: 서버 라이선스가 **사용자 단위**인지 **서버 당**인지 또는 지정된 라이선스가 없는지 지정합니다. 서버 라이선스가 **서버 단위**인 경우 최대 서버 연결 수도 지정합니다.  
 
    -   운영 체제 이미지를 배포할 때 사용되는 관리자 계정을 처리하는 방법을 지정합니다.  
 
@@ -110,7 +110,7 @@ System Center Configuration Manager에서 작업 순서를 사용하여 운영 �
 
 12. 마법사를 완료합니다.  
 
-    이제 컴퓨터의 컬렉션에 작업 순서를 배포할 수 있습니다.  자세한 내용은 [Deploy a task sequence](manage-task-sequences-to-automate-tasks.md#BKMK_DeployTS)항목을 참조하세요.  
+    이제 컴퓨터의 컬렉션에 작업 순서를 배포할 수 있습니다.  자세한 내용은 [Deploy a task sequence](/sccm/osd/deploy-use/deploy-a-task-sequence)항목을 참조하세요.  
 
 ##  <a name="BKMK_InstallExistingOSImageTSExample"></a> 기존 운영 체제 이미지를 설치하는 작업 순서 예  
  기존 운영 체제 이미지를 사용하여 운영 체제를 배포하는 작업 순서를 만드는 경우 다음 표를 가이드로 사용합니다. 테이블에 작업 순서 단계 및 구성 하 고 해당 작업 순서 단계를 논리 그룹으로 구성 하는 방법에 대 한 일반적인 순서를 결정 하는데 도움이 됩니다. 작업 순서를 만들면이 샘플에서 다를 수 있습니다 및 작업 순서 단계 및 그룹 보다 포함할 수 있습니다.  

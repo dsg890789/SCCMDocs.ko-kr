@@ -2,21 +2,21 @@
 title: 소프트웨어 업데이트 동기화 관리
 titleSuffix: Configuration Manager
 description: 소프트웨어 업데이트 동기화를 예약하고, 수동으로 소프트웨어 업데이트 동기화를 시작하고, 소프트웨어 업데이트 동기화를 모니터링하려면 다음 단계를 따르세요.
-author: aczechowski
 ms.date: 12/20/2018
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: ea8698c4-9df5-4cf5-8b62-ab93115b4769
 manager: dougeby
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 543a7867ca40cded389ee3ce875845dd32631274
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 4ef815287321bf6c5554ff424da58276af0cc655
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56123521"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65493928"
 ---
 #  <a name="BKMK_SUMSync"></a> 소프트웨어 업데이트 동기화
 

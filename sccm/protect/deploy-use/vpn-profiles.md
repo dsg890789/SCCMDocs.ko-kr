@@ -7,22 +7,23 @@ ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
 ms.assetid: c0f094f1-852e-4606-91db-97846d8f0772
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6c3217dee8406b46aeb93925c368f18f402bfb70
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 505a4f3c00bc69e115b4130d422e11d8dec3fe30
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56123596"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65500392"
 ---
 # <a name="vpn-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager의 VPN 프로필
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-<!--1283610--> 조직의 사용자에게 VPN 설정을 배포하려면 Configuration Manager에서 VPN 프로필을 사용합니다. 이러한 설정을 배포하여 최종 사용자가 회사 네트워크에 있는 리소스에 연결하는 데 필요한 노력을 최소화할 수 있습니다.  
+<!--1283610-->
+조직의 사용자에게 VPN 설정을 배포하려면 Configuration Manager에서 VPN 프로필을 사용합니다. 이러한 설정을 배포하여 최종 사용자가 회사 네트워크에 있는 리소스에 연결하는 데 필요한 노력을 최소화할 수 있습니다.  
 
  예를 들어 기업 네트워크에서 파일 공유에 연결하는 데 필요한 설정을 사용하여 모든 Windows 10 디바이스를 구성하려고 할 수 있습니다. 기업 네트워크에 연결하는 데 필요한 설정을 사용하여 VPN 프로필을 만들 수 있습니다. 그런 다음, Windows 10을 실행하는 디바이스를 사용하는 모든 사용자에게 이 프로필을 배포합니다. 이러한 사용자에게 이용 가능한 네트워크 목록에 대한 VPN 연결이 표시되어 간편하게 연결할 수 있습니다.  
 

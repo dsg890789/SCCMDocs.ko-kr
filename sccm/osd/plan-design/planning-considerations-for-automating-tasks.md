@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6030bb1a02a94e61cf3ef53b6d90f7b6a5ae4f7a
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 32a645f95d25c92809723ae735f566535fc4043d
+ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56122103"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65083298"
 ---
 # <a name="planning-considerations-for-automating-tasks-in-configuration-manager"></a>Configuration Manager에서 작업을 자동화하기 위한 계획 고려 사항
 
@@ -92,7 +92,8 @@ ms.locfileid: "56122103"
 
 
 ## <a name="add-child-task-sequences-to-a-task-sequence"></a>작업 순서에 자식 작업 순서 추가
- <!--1261338--> Configuration Manager 버전 1710부터 다른 작업 순서를 실행하는 새 작업 순서 단계를 추가할 수 있습니다. 이 단계는 작업 순서 간에 부모-자식 관계를 만듭니다. 이 단계를 사용하면 다시 사용 가능한 모듈식 작업 순서를 더 만들 수 있습니다.  
+ <!--1261338-->
+ Configuration Manager 버전 1710부터 다른 작업 순서를 실행하는 새 작업 순서 단계를 추가할 수 있습니다. 이 단계는 작업 순서 간에 부모-자식 관계를 만듭니다. 이 단계를 사용하면 다시 사용 가능한 모듈식 작업 순서를 더 만들 수 있습니다.  
 
  자세한 내용은 [작업 순서 실행](/sccm/osd/understand/task-sequence-steps#child-task-sequence)을 참조하세요. 
 
@@ -190,7 +191,7 @@ ms.locfileid: "56122103"
  >   
  >  클라이언트에서 유지 관리 외 기간에 작업 순서를 다운로드하면 이 작업 순서는 두 번 다운로드됩니다. 이 시나리오에서는 클라이언트가 작업 순서를 다운로드하고, 쓰기 필터를 사용하지 않도록 설정하고, 컴퓨터를 다시 시작한 다음, 작업 순서를 다시 다운로드합니다. 이것은 처음에 작업 순서가 디바이스가 다시 시작될 때 지워지는 임시 오버레이에 다운로드되었기 때문입니다.  
 
- 작업 순서를 배포하는 방법에 대한 자세한 내용은 [작업 순서 배포](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#BKMK_DeployTS)를 참조하세요.  
+ 작업 순서를 배포하는 방법에 대한 자세한 내용은 [작업 순서 배포](/sccm/osd/deploy-use/deploy-a-task-sequence)를 참조하세요.  
 
 
 
@@ -267,7 +268,7 @@ ms.locfileid: "56122103"
 > [!Note]  
 > 다음 OS 배포 시나리오에서는 여전히 네트워크 액세스 계정을 사용해야 합니다.
 >  
-> - 작업 순서 [배포 옵션](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#BKMK_DeployTS), **실행 중인 작업 순서에 따라 필요한 경우 배포 지점에서 직접 콘텐츠 액세스**   
+> - 작업 순서 [배포 옵션](/sccm/osd/deploy-use/deploy-a-task-sequence), **실행 중인 작업 순서에 따라 필요한 경우 배포 지점에서 직접 콘텐츠 액세스**   
 > - [상태 저장소 요청](/sccm/osd/understand/task-sequence-steps#BKMK_RequestStateStore) 단계 옵션, **컴퓨터 계정이 상태 저장소에 연결하지 못하는 경우 네트워크 액세스 계정 사용** 
 > - 신뢰할 수 없는 도메인과 연결하거나 Active Directory 포리스트 간에 연결하는 경우 
 > - [OS 이미지 적용](/sccm/osd/understand/task-sequence-steps#BKMK_ApplyOperatingSystemImage) 단계 옵션, **배포 지점에서 직접 콘텐츠 액세스** 

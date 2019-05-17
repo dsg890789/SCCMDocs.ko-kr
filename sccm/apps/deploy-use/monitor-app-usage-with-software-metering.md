@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-app
 ms.topic: conceptual
 ms.assetid: b1fdaee2-2816-4447-94cd-609f6948f215
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59e64462f22736f7f132ae5f3d683d791b04ccf2
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: c10dcc07ba2f67b004da462dbde17fb2200ec7a1
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56132921"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65496798"
 ---
 # <a name="software-metering-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 계량
 
@@ -46,9 +46,9 @@ ms.locfileid: "56132921"
 
 4. **디바이스 설정** 목록에서 다음을 구성합니다.
 
-   -   **클라이언트에서 소프트웨어 계량 사용**: **True**를 선택하여 소프트웨어 계량을 사용합니다.
+   -   **클라이언트에서 소프트웨어 계량 사용**: **True** 를 선택하여 소프트웨어 계량을 사용하도록 설정합니다.
 
-   -   **데이터 컬렉션 예약**: 소프트웨어 계량 데이터가 클라이언트 컴퓨터에서 수집되는 빈도를 구성합니다. 기본값인 **7일** 마다를 사용하거나 **일정** 을 클릭하여 사용자 지정 일정을 지정합니다.
+   -   **데이터 컬렉션 예약**: 소프트웨어 계량 데이터가 클라이언트 컴퓨터에서 수집되는 간격을 구성합니다. 기본값인 **7일** 마다를 사용하거나 **일정** 을 클릭하여 사용자 지정 일정을 지정합니다.
 
 5. **확인** 을 클릭하여 **기본 설정** 대화 상자를 닫습니다.
 

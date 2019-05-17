@@ -2,21 +2,21 @@
 title: 소프트웨어 업데이트 관리 준비
 titleSuffix: Configuration Manager
 description: 업데이트 관리를 준비하려면 System Center Configuration Manager 콘솔에 준수 평가 데이터가 표시되도록 이 작업을 완료합니다.
-author: aczechowski
 ms.date: 10/06/2016
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 01907900-e28b-4cd7-9479-42906416707b
 manager: dougeby
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57d83601af5aa41a61b80d539bf87f4e9616792c
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 8381a9a5195982a2defa347934c28286e9082ce7
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56138027"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65493964"
 ---
 # <a name="prepare-for-software-updates-management"></a>소프트웨어 업데이트 관리 준비
 

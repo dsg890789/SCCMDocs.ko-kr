@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0077cd6a906da59a06f4cf619b74ddc0af947cea
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 709442083cd2d9c935aeb2c5fe6c2ad30a2dddf5
+ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56133921"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65083043"
 ---
 # <a name="create-a-task-sequence-to-capture-and-restore-user-state-in-configuration-manager"></a>Configuration Manager에서 사용자 상태를 캡처 및 복원하는 작업 순서 만들기
 
@@ -62,7 +62,7 @@ ms.locfileid: "56133921"
     >  **상태 저장소 해제** 단계 이전에 실행되는 작업 순서 작업은 **상태 저장소 해제** 단계가 시작되기 전에 모두 성공적으로 수행되어야 합니다.  
 
 
- 대상 컴퓨터에서 사용자 상태를 캡처할 수 있도록 이 작업 순서를 배포합니다. 작업 순서를 배포하는 방법에 대한 자세한 내용은 [작업 순서 배포](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#BKMK_DeployTS)를 참조하세요.  
+ 대상 컴퓨터에서 사용자 상태를 캡처할 수 있도록 이 작업 순서를 배포합니다. 작업 순서를 배포하는 방법에 대한 자세한 내용은 [작업 순서 배포](/sccm/osd/deploy-use/deploy-a-task-sequence)를 참조하세요.  
 
 
 
@@ -86,7 +86,7 @@ ms.locfileid: "56133921"
    >  **상태 저장소 해제** 단계 이전에 실행되는 작업 순서 작업은 **상태 저장소 해제** 단계가 시작되기 전에 모두 성공적으로 수행되어야 합니다.  
 
 
- 대상 컴퓨터에서 사용자 상태를 복원할 수 있도록 이 작업 순서를 배포합니다. 작업 순서를 배포하는 방법에 대한 자세한 내용은 [작업 순서 배포](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#BKMK_DeployTS)를 참조하세요.  
+ 대상 컴퓨터에서 사용자 상태를 복원할 수 있도록 이 작업 순서를 배포합니다. 작업 순서를 배포하는 방법에 대한 자세한 내용은 [작업 순서 배포](/sccm/osd/deploy-use/deploy-a-task-sequence)를 참조하세요.  
 
 
 

@@ -2,8 +2,8 @@
 title: 소프트웨어 업데이트 소개
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager의 소프트웨어 업데이트에 대한 기본 사항을 알아봅니다.
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.date: 10/30/2017
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: e9778b13-c8a3-40eb-8655-34ac8ce9cdaa
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac745419dafea6a8fc86ddf1c744944f8f5698b2
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: e95055473cc5d61b10ee06e43456f3f7dfeb428b
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56125037"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65493377"
 ---
 # <a name="introduction-to-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 업데이트 소개
 
@@ -130,11 +130,11 @@ System Center Configuration Manager의 소프트웨어 업데이트는 기업의
 
  검사 일정을 포함해 소프트웨어 업데이트 호환성에 대한 검사는 다음 방식으로 시작할 수 있습니다.  
 
--   **소프트웨어 업데이트 검사 일정**: 소프트웨어 업데이트 호환성 검사는 소프트웨어 업데이트 클라이언트 에이전트 설정에 구성된 검사 일정에 따라 시작됩니다. 소프트웨어 업데이트 클라이언트 설정을 구성하는 방법에 대한 자세한 내용은 [소프트웨어 업데이트 클라이언트 설정](../../core/clients/deploy/about-client-settings.md#software-updates)을 참조하세요.  
+-   **소프트웨어 업데이트 검사 일정**: 소프트웨어 업데이트 준수 검사는 소프트웨어 업데이트 클라이언트 에이전트 설정에 구성된 검사 일정에 따라 시작됩니다. 소프트웨어 업데이트 클라이언트 설정을 구성하는 방법에 대한 자세한 내용은 [소프트웨어 업데이트 클라이언트 설정](../../core/clients/deploy/about-client-settings.md#software-updates)을 참조하세요.  
 
 -   **Configuration Manager 속성 작업**: 사용자는 클라이언트 컴퓨터의 **Configuration Manager 속성** 대화 상자에 있는 **작업** 탭에서 **소프트웨어 업데이트 검사 주기** 또는 **소프트웨어 업데이트 배포 평가 주기** 작업을 시작할 수 있습니다.  
 
--   **배포 재평가 일정**: 소프트웨어 업데이트 호환성에 대한 배포 평가 및 검사는 소프트웨어 업데이트 클라이언트 에이전트 설정에 구성된 배포 재평가 일정에 따라 시작됩니다. 소프트웨어 업데이트 클라이언트 설정에 대한 자세한 내용은 [소프트웨어 업데이트 클라이언트 설정](../../core/clients/deploy/about-client-settings.md#software-updates)을 참조하세요.  
+-   **배포 재평가 일정**: 소프트웨어 업데이트 준수에 대한 배포 평가 및 검사는 소프트웨어 업데이트 클라이언트 에이전트 설정에 구성된 배포 재평가 일정에 따라 시작됩니다. 소프트웨어 업데이트 클라이언트 설정에 대한 자세한 내용은 [소프트웨어 업데이트 클라이언트 설정](../../core/clients/deploy/about-client-settings.md#software-updates)을 참조하세요.  
 
 -   **업데이트 파일 다운로드 전**: 클라이언트 컴퓨터에서 새 필수 배포에 대한 할당 정책을 받으면 소프트웨어 업데이트 클라이언트 에이전트에서는 소프트웨어 업데이트 파일을 로컬 클라이언트 캐시에 다운로드합니다. 소프트웨어 업데이트 파일이 다운로드되기 전에 클라이언트 에이전트는 검사를 시작하여 소프트웨어 업데이트가 아직 필요한지 확인합니다.  
 

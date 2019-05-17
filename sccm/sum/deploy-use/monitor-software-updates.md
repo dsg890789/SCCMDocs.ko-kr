@@ -2,8 +2,8 @@
 title: 소프트웨어 업데이트 모니터링
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager 콘솔은 업데이트 및 준수를 모니터링하기 위해 경고 및 상태를 제공합니다.
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.date: 07/30/2018
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 9afd7b0f-5c8e-48bc-9a65-1f7d74103688
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9399900849ead41118cb727c3ec36cd8345e393b
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 5cd5c27aa04f25b044f74533983a214dc9f9341b
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56133108"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65500148"
 ---
 # <a name="monitor-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 업데이트 모니터링
 
@@ -69,8 +69,8 @@ Configuration Manager 버전 1610부터 소프트웨어 업데이트 대시보�
 #### <a name="compliance-9---overall-health-and-compliance-starting-in-version-1806"></a>준수 9 - 전체 상태 및 준수(버전 1806부터 적용)
 보고서에는 다음과 같은 부분이 포함됩니다.
 
-- **정상 클라이언트 수 및 총 클라이언트 수**: 이 막대형 차트는 지정된 컬렉션의 총 클라이언트 수에 대해 지정된 기간에 사이트와 통신한 “정상” 상태의 클라이언트를 비교합니다.
-- **규정 준수 개요**: 이 원형 차트는 지정된 컬렉션의 활성 클라이언트에 있는 특정 소프트웨어 업데이트 그룹의 전체 규정 준수 상태를 보여 줍니다.
+- **정상인 클라이언트 수 및 총 클라이언트 수**: 이 막대형 차트는 지정된 컬렉션의 총 클라이언트 수에 대해 지정된 기간에 사이트와 통신한 “정상” 상태의 클라이언트를 비교합니다.
+- **준수 개요**: 이 원형 차트는 지정된 컬렉션의 활성 클라이언트에 있는 특정 소프트웨어 업데이트 그룹의 전체 준수 상태를 보여 줍니다.
 - **상위 5개의 문서 ID별 비준수**: 이 막대형 차트는 지정된 컬렉션의 활성 클라이언트에서 비준수 상태인 지정된 그룹의 소프트웨어 업데이트 상위 5개를 표시합니다.
 - 보고서의 맨 아래에는 추가 정보가 포함된 표가 있으며 지정된 그룹의 소프트웨어 업데이트를 나열합니다.
 

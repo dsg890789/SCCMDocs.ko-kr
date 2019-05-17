@@ -25,7 +25,7 @@ ms.locfileid: "58523999"
 > [!Important]  
 > 버전 1902부터 Configuration Manager는 Linux 또는 UNIX 클라이언트를 지원하지 않습니다. 
 > 
-> 따라서 Linux 서버를 관리하려면 Microsoft Azure 관리를 고려해야 합니다. Azure 솔루션은 대부분의 경우 Linux용 종단 간 패치 관리를 포함하여 Configuration Manager 기능을 능가하는 광범위한 Linux 지원을 제공합니다.
+> 따라서 Linux 서버를 관리하려면 Microsoft Azure 관리를 고려해야 합니다. Azure 솔루션은 대부분의 경우 Linux용 엔드투엔드 패치 관리를 포함하여 Configuration Manager 기능을 능가하는 광범위한 Linux 지원을 제공합니다.
 
 현재 클라이언트를 먼저 제거하지 않고 컴퓨터의 Linux 및 UNIX용 클라이언트 버전을 최신 클라이언트 버전으로 업그레이드할 수 있습니다. 이렇게 하려면 **-keepdb** 명령줄 속성을 사용하여 컴퓨터에 새 클라이언트 설치 패키지를 설치합니다. Linux 및 UNIX용 클라이언트를 설치하면 기존 클라이언트 데이터를 새 클라이언트 파일로 덮어씁니다. 그러나 **–keepdb** 명령줄 속성을 사용하면 설치 프로세스에서 클라이언트 고유 식별자(GUID), 정보의 로컬 데이터베이스 및 인증서 저장소가 유지되고 새 클라이언트 설치에 사용됩니다.  
 

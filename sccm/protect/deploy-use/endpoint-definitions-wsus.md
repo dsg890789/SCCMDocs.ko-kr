@@ -6,17 +6,17 @@ ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
 ms.assetid: a34d9401-83e4-471d-8e23-b8042fc11c90
-author: aczechowski
+author: mestew
+ms.author: mstewart
 description: 정의 업데이트를 자동 승인하려면 Windows Server Update Services를 구성하는 방법에 대해 알아봅니다.
 manager: dougeby
-ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74a1dc94a30f56e22b181446422a8b5f99790ffc
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: f79fd876d19ecfae0872c97a8aabe60c121a90f2
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56127629"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65494538"
 ---
 # <a name="enable-endpoint-protection-malware-definitions-to-download-from-windows-server-update-services-wsus-for-configuration-manager"></a>Configuration Manager의 WSUS(Windows Server Update Services)에서 다운로드하기 위해 Endpoint Protection 맬웨어 정의를 사용하도록 설정
 

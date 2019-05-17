@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
 ms.assetid: a7f91e63-4750-402e-9970-dd14be7f76a3
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2a0dbe80e2333df85893365a366d5862842ffa3d
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 045a1daef8da0863ed7957ce4c9d3d48cfacca64
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56125411"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65496188"
 ---
 # <a name="manage-certificates-and-security-for-updates-publisher"></a>Updates Publisher의 인증서 및 보안 관리
 
@@ -74,7 +74,7 @@ ms.locfileid: "56125411"
 
    -   자체 서명된 인증서의 경우: 인증서를 **신뢰할 수 있는 루트 인증 기관** 및 **신뢰할 수 있는 게시자** 인증서 저장소에 추가합니다.
 
-   -   CA(인증 기관) 발급 인증서의 경우: 인증서를 **신뢰할 수 있는 게시자** 인증서 저장소에 추가합니다.
+   -   CA(인증 기관)에서 발급된 인증서의 경우: 인증서를 **신뢰할 수 있는 게시자** 인증서 저장소에 추가합니다.
 
    > [!NOTE]
    > 또한 WUA는 **인트라넷 Microsoft 업데이트 서비스 위치의 서명된 콘텐츠 허용** 그룹 정책 설정이 로컬 컴퓨터에서 사용하도록 설정되어 있는지 확인합니다. 업데이트 게시자로 생성 및 게시된 업데이트를 WUA에서 검색할 수 있으려면 이 정책 설정이 사용하도록 설정되어 있어야 합니다. 이 그룹 정책 설정을 사용하는 방법에 대한 자세한 내용은 [클라이언트 컴퓨터에 그룹 정책을 구성하는 방법](<https://technet.microsoft.com/library/bb530967.aspx(d=robot>)을 참조하세요.

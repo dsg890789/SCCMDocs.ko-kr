@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: baed9b8032c0020153754d400ea127eab9b56812
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
+ms.openlocfilehash: 6e47df52fd3b59c950f7005a7639abe57b2080bb
+ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59673805"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65083216"
 ---
 # <a name="use-multicast-to-deploy-windows-over-the-network-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 멀티캐스트를 사용하여 네트워크를 통해 Windows 배포
 
@@ -39,4 +39,4 @@ ms.locfileid: "59673805"
  멀티캐스트를 지원하도록 운영 체제 이미지 패키지를 구성하려면 [멀티캐스트 배포를 위한 운영 체제 이미지 준비](../get-started/manage-operating-system-images.md#BKMK_OSImageMulticast)를 참조하세요.  
 
 ##  <a name="BKMK_Deploy"></a> 작업 순서 배포  
- 대상 컬렉션에 운영 체제 배포 자세한 내용은 [Deploy a task sequence](manage-task-sequences-to-automate-tasks.md#BKMK_DeployTS)항목을 참조하세요.  
+ 대상 컬렉션에 운영 체제 배포 자세한 내용은 [Deploy a task sequence](/sccm/osd/deploy-use/deploy-a-task-sequence)항목을 참조하세요.  

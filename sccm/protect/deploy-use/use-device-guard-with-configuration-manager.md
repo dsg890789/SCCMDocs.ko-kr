@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
 ms.assetid: 5e5d854c-9cc1-4dd8-b33f-0fcac675b395
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb36d753c3ae05e1e38849709b417ac709281203
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 39ffdff0b9cd84e0eb0c48754bf95a46fc52f30c
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56127918"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65493834"
 ---
 # <a name="device-guard-management-with-configuration-manager"></a>Configuration Manager로 Device Guard 관리
 
@@ -85,7 +85,7 @@ Windows Defender 애플리케이션 제어 정책을 구성하거나 배포하�
     - **설명** - 필요에 따라 Configuration Manager 콘솔에서 이 정책을 식별하는 데 도움이 되는 설명을 입력합니다.
     - **모든 프로세스에 대해 이 정책을 적용할 수 있도록 디바이스 다시 시작 적용** - 정책이 클라이언트 PC에서 처리되면 **컴퓨터 다시 시작**에 대한 **클라이언트 설정**에 따라 클라이언트에서 다시 시작이 예약됩니다.
         - Windows 10 버전 1703 이하를 실행하는 디바이스는 항상 자동으로 다시 시작됩니다.
-        - Windows 10 버전 1709부터는 다시 시작한 다음에야 현재 장치에서 실행 중인 애플리케이션에 새 애플리케이션 제어 정책이 적용됩니다. 그러나 정책이 적용된 후 시작된 애플리케이션은 새 애플리케이션 제어 정책을 사용합니다. 
+        - Windows 10 버전 1709부터는 다시 시작한 다음에야 현재 디바이스에서 실행 중인 응용 프로그램에 새 응용 프로그램 제어 정책이 적용됩니다. 그러나 정책이 적용된 후 시작된 애플리케이션은 새 애플리케이션 제어 정책을 사용합니다. 
     - **적용 모드** - 클라이언트 PC에서 다음과 같은 Device Guard 적용 방법 중 하나를 선택합니다.
         - **적용 사용** - 신뢰할 수 있는 실행 파일만 실행할 수 있습니다.
         - **감사 전용** - 모든 실행 파일을 실행할 수 있지만, 실행되는 신뢰할 수 없는 실행 파일을 로컬 클라이언트 이벤트 로그에 로깅합니다.
@@ -145,7 +145,7 @@ You can let locked-down devices run software with a good reputation as determine
 - 이 시험판 버전의 경우 프로덕션 환경에서 Windows Defender 애플리케이션 제어 정책을 **감사만** 적용 모드로 배포하지 마세요. 이 모드는 랩 설정에서만 기능을 테스트하는 데 도움이 됩니다.
 - **감사만** 또는 **적용 사용** 모드에서 정책을 배포했으며 정책을 적용하기 위해 다시 시작하지 않은 디바이스는 신뢰할 수 없는 소프트웨어 설치에 취약합니다.
 이 경우 디바이스를 다시 시작하거나 **적용 사용** 모드에서 정책을 받아도 소프트웨어가 계속 실행될 수 있습니다.
-- Windows Defender 애플리케이션 제어 정책이 유효한지 확인하려면 랩 환경에서 장치를 준비합니다. 그런 다음 **적용 사용** 정책을 배포하고 마지막으로 최종 사용자에게 디바이스를 제공하기 전에 디바이스를 다시 시작합니다.
+- Windows Defender 응용 프로그램 제어 정책이 유효한지 확인하려면 랩 환경에서 디바이스를 준비합니다. 그런 다음 **적용 사용** 정책을 배포하고 마지막으로 최종 사용자에게 디바이스를 제공하기 전에 디바이스를 다시 시작합니다.
 - **적용 사용**으로 정책을 배포한 후, 나중에 **감사 전용**으로 동일한 디바이스에 정책을 배포하지 마세요. 이 구성을 사용하면 신뢰할 수 없는 소프트웨어가 실행될 수 있습니다.
 - Configuration Manager를 사용하여 Windows Defender 애플리케이션 제어를 클라이언트 PC에서 사용하도록 설정하는 경우 이 정책은 로컬 관리자 권한이 있는 사용자가 애플리케이션 제어 정책을 우회하거나 그렇지 않고 신뢰할 수 없는 소프트웨어를 실행하는 것을 차단하지 않습니다. 
 - 로컬 관리자 권한이 있는 사용자가 애플리케이션 제어를 사용 안 함으로 설정하지 못하게 하는 유일한 방법은 서명된 이진 파일을 배포하는 것입니다. 이 배포 방법은 그룹 정책을 통해 가능하지만 현재 Configuration Manager에서는 지원되지 않습니다.

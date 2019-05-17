@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ea320b42bfb08ec0023598d010375042d143c220
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: e5651f381f2c4a101c82d6f1f7730ffc4ae99a20
+ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56124073"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65083549"
 ---
 # <a name="manage-os-images-with-configuration-manager"></a>Configuration Manager를 사용하여 OS 이미지 관리
 
@@ -69,11 +69,11 @@ OS 이미지를 사용하려면 Configuration Manager 사이트에 추가합니�
 
 4.  **일반** 페이지에서 다음 정보를 지정합니다. 이 정보는 OS 이미지가 여러 개인 경우 목적을 식별하는 데 유용합니다.  
 
-    -   **이름**: 이미지의 고유 이름입니다. 기본적으로 이름은 WIM 파일 이름을 사용합니다.  
+    -   **이름**: 이미지에 대한 고유 이름입니다. 기본적으로 이름은 WIM 파일 이름을 사용합니다.  
 
     -   **버전**: 선택적 버전 식별자입니다. 이 속성은 이미지의 OS 버전이 아니어도 됩니다. 패키지에 대한 조직의 버전인 경우가 많습니다.   
 
-    -   **설명**: 선택적 간략한 설명입니다.  
+    -   **주석**: 선택적 간략한 설명입니다.  
 
 5.  마법사를 완료합니다.  
 
@@ -110,6 +110,6 @@ OS 이미지를 사용하려면 Configuration Manager 사이트에 추가합니�
 
     -   **멀티캐스트를 통해서만 이 패키지 전송**: 배포 지점에서 멀티캐스트 세션 동안만 이미지를 배포할지 여부를 지정합니다.  
 
-         **멀티캐스트를 통해서만 이 패키지 전송**을 선택하는 경우 작업 순서 배포 옵션을 **실행 중인 작업 순서에 따라 필요 시 로컬로 콘텐츠 다운로드**로 지정해야 합니다. 자세한 내용은 [Deploy a task sequence](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#BKMK_DeployTS)항목을 참조하세요.   
+         **멀티캐스트를 통해서만 이 패키지 전송**을 선택하는 경우 작업 순서 배포 옵션을 **실행 중인 작업 순서에 따라 필요 시 로컬로 콘텐츠 다운로드**로 지정해야 합니다. 자세한 내용은 [Deploy a task sequence](/sccm/osd/deploy-use/deploy-a-task-sequence)항목을 참조하세요.   
 
 5.  **확인**을 선택하여 설정을 저장하고 이미지 속성을 닫습니다.  

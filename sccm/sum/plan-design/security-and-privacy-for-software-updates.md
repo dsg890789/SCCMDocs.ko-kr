@@ -2,21 +2,21 @@
 title: 소프트웨어 업데이트에 대한 보안 및 개인 정보
 titleSuffix: Configuration Manager
 description: 소프트웨어 업데이트에 대한 이러한 보안 모범 사례를 따르고 Configuration Manager에서 개인 정보를 처리하는 방식을 알아봅니다.
-author: aczechowski
 manager: dougeby
 ms.date: 10/06/2016
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 41d6d5d8-ba84-4efb-b105-4d1eed239824
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2dee37b0cc55c35b6bd5286acbd18e39c2f5c40c
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 437710d32d979a687a4075761bb1ce3b76dcda51
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56125224"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65493587"
 ---
 # <a name="security-and-privacy-for-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 업데이트에 대한 보안 및 개인 정보
 

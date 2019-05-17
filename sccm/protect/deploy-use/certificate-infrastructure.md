@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
 ms.assetid: 29ae59b7-2695-4a0f-a9ff-4f29222f28b3
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95a5166433ef35b3c2ab7108bfc83a2d403558e0
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: cd9bef65c7b88fa22663174905b33d8977097d31
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56128173"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65500676"
 ---
 # <a name="configure-certificate-infrastructure"></a>인증서 인프라 구성
 
@@ -43,7 +43,7 @@ System Center Configuration Manager에서 인증서 인프라를 구성하는 �
 
         인증서 프로필 만들기 마법사를 실행할 때 SCEP 설정 프로필을 만드는 데 사용할 인증서 템플릿을 찾아 선택하려면 이 권한이 필요합니다. 인증서 템플릿을 선택하면 마법사의 일부 설정이 자동으로 채워집니다. 따라서 사용자가 구성할 항목이 적어지고 네트워크 디바이스 등록 서비스에 사용되는 인증서 템플릿과 호환되지 않는 설정을 선택할 위험이 줄어듭니다.  
 
-   -   네트워크 장치 등록 서비스 애플리케이션 풀에서 사용하는 SCEP 서비스 계정의 경우: **읽기** 및 **등록** 권한  
+   -   네트워크 디바이스 등록 서비스 응용 프로그램 풀에서 사용하는 SCEP 서비스 계정의 경우: **읽기** 및 **등록** 권한  
 
         이 요구 사항은 System Center Configuration Manager에 한정되지 않지만 네트워크 디바이스 등록 서비스를 구성하는 과정에 필요합니다. 자세한 내용은 TechNet의 Active Directory 인증서 서비스 라이브러리에서 [Network Device Enrollment Service Guidance(네트워크 디바이스 등록 서비스 지침)](http://go.microsoft.com/fwlink/p/?LinkId=309016) 를 참조하세요.  
 

@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
 ms.assetid: eab0e09d-b09e-4c14-ab14-c5f87472522e
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c885920fa1e413468d09201ddaecc728ffb7b53
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 817dc9a2fcce8580bf01d57053536ce78b4d1ed3
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56135377"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65500336"
 ---
 # <a name="planning-for-certificate-template-permissions-for-certificate-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 인증서 프로필에 대한 인증서 템플릿 권한 계획
 
@@ -28,7 +28,7 @@ ms.locfileid: "56135377"
 ## <a name="default-security-permissions-and-considerations"></a>기본 보안 권한 및 고려 사항  
  System Center Configuration Manager에서 사용자 및 디바이스에 대한 인증서를 요청하는 데 사용하는 인증서 템플릿에 필요한 기본 보안 권한은 다음과 같습니다.  
 
-- 네트워크 장치 등록 서비스 애플리케이션에서 사용하는 계정의 읽기 및 등록 권한  
+- 네트워크 디바이스 등록 서비스 응용 프로그램에서 사용하는 계정의 읽기 및 등록 권한  
 
 - System Center Configuration Manager 콘솔을 실행하는 계정의 읽기 권한  
 

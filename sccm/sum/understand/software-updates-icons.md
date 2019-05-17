@@ -2,21 +2,21 @@
 title: 소프트웨어 업데이트에 사용되는 아이콘
 titleSuffix: Configuration Manager
 description: Configuration Manager 콘솔에는 동기화된 업데이트 또는 소프트웨어 업데이트 그룹의 상태를 나타내는 아이콘이 포함되어 있습니다.
-author: aczechowski
 manager: dougeby
 ms.date: 10/06/2016
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 63c5ef72-5715-4d86-85a2-71beba469fab
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 898eabbb142a5562464950812cbfd057d3d65187
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 9dbb2b7fadf13a49c25e2eb9bb6fcc608d3869f6
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56128275"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65495849"
 ---
 # <a name="icons-used-for-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 업데이트에 사용되는 아이콘
 

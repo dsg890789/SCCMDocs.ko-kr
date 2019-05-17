@@ -2,21 +2,21 @@
 title: 소프트웨어 업데이트 설정 관리
 titleSuffix: Configuration Manager
 description: 소프트웨어 업데이트 지점을 설치한 후 사이트에서 소프트웨어 업데이트에 적합한 클라이언트 설정을 알아봅니다.
-author: aczechowski
 ms.date: 03/26/2017
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 0d484c1a-e903-4bff-9e9b-e452c62e38a8
 manager: dougeby
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 848cb4e23240091c62ff9ca12c46fedae769010f
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 90304156778f4f41b2ac35a2840a4a7e7bb4dc32
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56129020"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65499777"
 ---
 #  <a name="BKMK_ManageSUSettings"></a> 소프트웨어 업데이트 설정 관리  
 
@@ -102,7 +102,7 @@ Configuration Manager에서 소프트웨어 업데이트를 동기화한 후 다
 ####  <a name="BKMK_SupersedenceInformation"></a> 대체 정보  
 **교체 정보** 탭에서 소프트웨어 업데이트의 교체에 대한 다음 정보를 확인할 수 있습니다.  
 
-- **이 업데이트는 다음 업데이트를 교체함**: 이 업데이트를 교체하는 소프트웨어 업데이트를 지정합니다. 즉 나열된 업데이트가 더 최신 버전입니다. 대부분의 경우 소프트웨어 업데이트를 교체하는 소프트웨어 업데이트 중 하나를 배포합니다. 목록에 표시되는 소프트웨어 업데이트에는 소프트웨어 업데이트에 대해 더 자세한 정보를 보여 주는 웹 페이지의 하이퍼링크가 포함되어 있습니다. 이 업데이트가 교체되지 않으면 **없음** 이 표시됩니다.  
+- **이 업데이트는 다음 업데이트로 교체됨**: 이 업데이트를 교체하는 소프트웨어 업데이트를 지정합니다. 즉 나열된 업데이트가 더 최신 버전입니다. 대부분의 경우 소프트웨어 업데이트를 교체하는 소프트웨어 업데이트 중 하나를 배포합니다. 목록에 표시되는 소프트웨어 업데이트에는 소프트웨어 업데이트에 대해 더 자세한 정보를 보여 주는 웹 페이지의 하이퍼링크가 포함되어 있습니다. 이 업데이트가 교체되지 않으면 **없음** 이 표시됩니다.  
 
 - **이 업데이트는 다음 업데이트를 교체함**: 이 소프트웨어 업데이트로 교체되는 소프트웨어 업데이트를 지정합니다. 즉 이 소프트웨어 업데이트가 더 최신 버전입니다. 대부분의 경우 교체되는 소프트웨어 업데이트를 바꾸기 위해 이 소프트웨어 업데이트를 배포합니다. 목록에 표시되는 소프트웨어 업데이트에는 소프트웨어 업데이트에 대해 더 자세한 정보를 보여 주는 웹 페이지의 하이퍼링크가 포함되어 있습니다. 이 업데이트로 다른 어느 업데이트도 교체되지 않으면 **없음** 이 표시됩니다.  
 

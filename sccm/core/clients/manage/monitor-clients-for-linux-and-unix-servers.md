@@ -25,7 +25,7 @@ ms.locfileid: "58523693"
 > [!Important]  
 > 버전 1902부터 Configuration Manager는 Linux 또는 UNIX 클라이언트를 지원하지 않습니다. 
 > 
-> 따라서 Linux 서버를 관리하려면 Microsoft Azure 관리를 고려해야 합니다. Azure 솔루션은 대부분의 경우 Linux용 종단 간 패치 관리를 포함하여 Configuration Manager 기능을 능가하는 광범위한 Linux 지원을 제공합니다.
+> 따라서 Linux 서버를 관리하려면 Microsoft Azure 관리를 고려해야 합니다. Azure 솔루션은 대부분의 경우 Linux용 엔드투엔드 패치 관리를 포함하여 Configuration Manager 기능을 능가하는 광범위한 Linux 지원을 제공합니다.
 
 Windows 기반 클라이언트에서 정보를 볼 때와 동일한 방법을 사용하여 Configuration Manager 콘솔에서 Linux 및 UNIX 서버의 정보를 볼 수 있습니다.  
 

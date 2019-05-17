@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
 ms.assetid: 537dd2a7-4e44-4877-b8dd-5e1499407f8d
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f87f6c439a7f42144553406081e0b21bcef84c9b
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 9eb4cf0b4fabcd130f0e82893392c298dbfdeab1
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56123866"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65500551"
 ---
 #  <a name="configure-definition-updates-for-endpoint-protection"></a>Endpoint Protection에 대한 정의 업데이트 구성  
 

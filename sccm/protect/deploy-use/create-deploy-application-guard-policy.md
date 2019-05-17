@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
 ms.assetid: 33a6c1d9-4dd8-411c-a748-693a5bd2ea5a
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf5345cd54882ae46171b7d3800e1ed818834ecb
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
+ms.openlocfilehash: 3e2eb7aa483c48ee6099cbb1605c082c9b0315ee
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59802243"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65500636"
 ---
 # <a name="create-and-deploy-windows-defender-application-guard-policy"></a>Windows Defender Application Guard 정책 만들기 및 배포 
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -33,7 +33,7 @@ Windows Defender Application Guard 정책을 만들고 배포하려면 Windows 1
 1. Configuration Manager 콘솔에서 **자산 및 준수**를 선택합니다.
 2. **자산 및 준수** 작업 영역에서 **개요** > **Endpoint Protection** > **Windows Defender Application Guard**를 선택합니다.
 3. **홈** 탭의 **만들기** 그룹에서  **만들기**를 클릭합니다.
-4. [문서](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/configure-wd-app-guard)를 참조하여 사용 가능한 설정을 찾아보고 구성할 수 있습니다. Configuration Manager를 사용하면 특정 정책 설정을 지정할 수 있습니다. [호스트 상호 작용 설정](#BKMK_HIS) 및 [애플리케이션 동작](#BKMK_AppB)을 참조하세요.
+4. [문서](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/configure-wd-app-guard)를 참조하여 사용 가능한 설정을 찾아보고 구성할 수 있습니다. Configuration Manager를 사용하면 특정 정책 설정을 지정할 수 있습니다. [호스트 상호 작용 설정](#bkmk_HIS) 및 [애플리케이션 동작](#bkmk_ABS)을 참조하세요.
 5. **네트워크 정의** 페이지에서 회사 ID를 지정하고 회사 네트워크 경계를 정의합니다.
 
     > [!NOTE]

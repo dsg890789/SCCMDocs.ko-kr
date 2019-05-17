@@ -81,7 +81,7 @@ OS를 업그레이드하는 작업 순서에 대한 다음 요구 사항과 제�
   OS 업그레이드를 자동화하려면 [운영 체제를 업그레이드하는 작업 순서 만들기](create-a-task-sequence-to-upgrade-an-operating-system.md)의 단계를 사용합니다.  
 
    > [!NOTE]  
-   > 일반적으로 [운영 체제를 업그레이드하는 작업 순서 만들기](create-a-task-sequence-to-upgrade-an-operating-system.md)의 단계를 사용하여 OS를 Windows 10으로 업그레이드하는 작업 순서를 만듭니다. 작업 순서에는 운영 체제 업그레이드 단계와 종단 간 업그레이드 프로세스를 처리하기 위한 추가적인 권장 단계 및 그룹이 포함됩니다. 그렇지만 사용자 지정 작업 순서를 만들고 [운영 체제 업그레이드](../understand/task-sequence-steps.md#BKMK_UpgradeOS) 작업 순서 단계를 추가하여 OS를 업그레이드할 수 있습니다. 이 단계는 OS를 Windows 10으로 업그레이드하는 데 필요한 유일한 작업입니다. 이 방법을 선택하는 경우 운영 체제 업그레이드 단계 다음에 [컴퓨터 다시 시작](../understand/task-sequence-steps.md#BKMK_RestartComputer) 단계를 추가하여 업그레이드를 완료합니다. **현재 설치된 기본 운영 체제** 설정을 사용하여 컴퓨터를 Windows PE가 아닌 설치된 OS로 다시 시작해야 합니다.  
+   > 일반적으로 [운영 체제를 업그레이드하는 작업 순서 만들기](create-a-task-sequence-to-upgrade-an-operating-system.md)의 단계를 사용하여 OS를 Windows 10으로 업그레이드하는 작업 순서를 만듭니다. 작업 순서에는 운영 체제 업그레이드 단계와 엔드투엔드 업그레이드 프로세스를 처리하기 위한 추가적인 권장 단계 및 그룹이 포함됩니다. 그렇지만 사용자 지정 작업 순서를 만들고 [운영 체제 업그레이드](../understand/task-sequence-steps.md#BKMK_UpgradeOS) 작업 순서 단계를 추가하여 OS를 업그레이드할 수 있습니다. 이 단계는 OS를 Windows 10으로 업그레이드하는 데 필요한 유일한 작업입니다. 이 방법을 선택하는 경우 운영 체제 업그레이드 단계 다음에 [컴퓨터 다시 시작](../understand/task-sequence-steps.md#BKMK_RestartComputer) 단계를 추가하여 업그레이드를 완료합니다. **현재 설치된 기본 운영 체제** 설정을 사용하여 컴퓨터를 Windows PE가 아닌 설치된 OS로 다시 시작해야 합니다.  
 
 
 

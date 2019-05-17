@@ -139,7 +139,7 @@ CMG([클라우드 관리 게이트웨이](/sccm/core/clients/manage/plan-cloud-m
 
  ### <a name="deprecation-announcement-for-linux-and-unix-client-support"></a>Linux 및 Unix 클라이언트 지원에 대한 사용 중단 알림
  <!--510139-->
-Microsoft는 약 1년 후에 System Center Configuration Manager에서 Linux 및 UNIX 클라이언트 지원을 중단할 예정이므로 2019년 초에 SCCM 1902 릴리스에는 이러한 클라이언트가 포함되지 않습니다. 2018년 후반기의 Configuration Manager 1810 릴리스는 Linux 및 UNIX 클라이언트를 포함하는 마지막 릴리스이며, Configuration Manager 1810의 전체 수명 주기 동안 이러한 클라이언트가 지원됩니다. Configuration Manager 1810 이후 고객이 Linux 서버를 관리하려면 Microsoft Azure 관리를 고려해야 합니다. Azure 솔루션은 대부분의 경우 Linux용 종단 간 패치 관리를 포함하여 Configuration Manager 기능을 능가하는 광범위한 Linux 지원을 제공합니다.
+Microsoft는 약 1년 후에 System Center Configuration Manager에서 Linux 및 UNIX 클라이언트 지원을 중단할 예정이므로 2019년 초에 SCCM 1902 릴리스에는 이러한 클라이언트가 포함되지 않습니다. 2018년 후반기의 Configuration Manager 1810 릴리스는 Linux 및 UNIX 클라이언트를 포함하는 마지막 릴리스이며, Configuration Manager 1810의 전체 수명 주기 동안 이러한 클라이언트가 지원됩니다. Configuration Manager 1810 이후 고객이 Linux 서버를 관리하려면 Microsoft Azure 관리를 고려해야 합니다. Azure 솔루션은 대부분의 경우 Linux용 엔드투엔드 패치 관리를 포함하여 Configuration Manager 기능을 능가하는 광범위한 Linux 지원을 제공합니다.
 
 ### <a name="surface-device-dashboard"></a>Surface 디바이스 대시보드
 <!--1355788-->

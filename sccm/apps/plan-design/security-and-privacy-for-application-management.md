@@ -11,14 +11,14 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13467e3b227a8080d03e3e44864970703c2e000f
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 6d8715b8d91f6397fbf5d4d254b48f8078b0dfc3
+ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56126340"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65083257"
 ---
-# <a name="security-and-privacy-for-application-management-in-configuration-manager"></a>Configuration Manager의 애플리케이션 관리를 위한 보안 및 개인정보보호
+# <a name="security-and-privacy-for-application-management-in-configuration-manager"></a>Configuration Manager의 응용 프로그램 관리를 위한 보안 및 개인정보보호
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -26,12 +26,13 @@ ms.locfileid: "56126340"
 ##  <a name="security-guidance-for-application-management"></a>애플리케이션 관리의 보안 가이드  
 
 
-### <a name="use-the-new-software-center-without-the-application-catalog"></a>응용 프로그램 카탈로그 없이 새 소프트웨어 센터 사용
-<!--1358309--> 버전 1806부터 소프트웨어 센터에 사용자가 사용할 수 있는 응용 프로그램을 표시하는 데 더 이상 응용 프로그램 카탈로그 역할이 필요하지 않습니다. 이 구성은 사용자에게 애플리케이션을 전달하기 위해 필요한 서버 인프라를 줄일 수 있습니다. 서버 인프라를 줄이면 공격 노출도 줄어듭니다. 
+### <a name="use-the-new-software-center-without-the-application-catalog"></a>애플리케이션 카탈로그 없이 새 소프트웨어 센터 사용
+<!--1358309-->
+버전 1806부터 소프트웨어 센터에 사용자가 사용할 수 있는 애플리케이션을 표시하는 데 더 이상 애플리케이션 카탈로그 역할이 필요하지 않습니다. 이 구성은 사용자에게 애플리케이션을 전달하기 위해 필요한 서버 인프라를 줄일 수 있습니다. 서버 인프라를 줄이면 공격 노출도 줄어듭니다. 
 
 인터넷 기반 클라이언트에 대한 지속적이고 안전한 애플리케이션 환경을 제공하려면 Azure Active Directory와 클라우드 관리 게이트웨이를 사용합니다.
 
-자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요. 
+자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-software-center#bkmk_userex)을 참조하세요. 
 
 
 ### <a name="use-https-with-the-application-catalog"></a>응용 프로그램 카탈로그에서 HTTPS 사용
@@ -83,7 +84,7 @@ HTTPS를 사용하지 않는 경우에 브랜딩 구성 옵션을 사용하지 �
 예를 들어 **설치 권한** 을 **관리자만**으로 설정하여 사용자 지정 클라이언트 설정을 만듭니다. 서버 컬렉션에 이 클라이언트 설정을 적용합니다. 이 구성은 관리 권한이 없는 사용자가 해당 서버에 소프트웨어를 설치하지 못하도록 합니다.  
 
 
-### <a name="for-mobile-devices-deploy-only-applications-that-are-signed"></a>모바일 장치의 경우 서명된 애플리케이션만 배포합니다.
+### <a name="for-mobile-devices-deploy-only-applications-that-are-signed"></a>모바일 디바이스의 경우 서명된 응용 프로그램만 배포합니다.
 
 모바일 디바이스 응용 프로그램은 해당 모바일 디바이스가 신뢰하는 CA(인증 기관)에서 코드에 서명한 경우에만 배포합니다. 
 
@@ -97,7 +98,7 @@ HTTPS를 사용하지 않는 경우에 브랜딩 구성 옵션을 사용하지 �
 
 ### <a name="secure-the-location-of-the-mobile-device-application-signing-certificate"></a>모바일 디바이스 응용 프로그램 서명 인증서의 위치 보안
 
-Configuration Manager에서 **애플리케이션 만들기 마법사**를 사용하여 모바일 장치 애플리케이션에 서명한 경우 서명 인증서 파일 위치와 통신 채널을 보호해야 합니다. 권한 승격과 메시지 가로채기(man-in-the-middle) 공격을 방지하려면 서명 인증서 파일을 보안 폴더에 저장합니다. 
+Configuration Manager에서 **응용 프로그램 만들기 마법사**를 사용하여 모바일 디바이스 응용 프로그램에 서명한 경우 서명 인증서 파일 위치와 통신 채널을 보호해야 합니다. 권한 승격과 메시지 가로채기(man-in-the-middle) 공격을 방지하려면 서명 인증서 파일을 보안 폴더에 저장합니다. 
 
 다음 컴퓨터 간에 IPsec을 사용합니다.
 - Configuration Manager 콘솔을 실행하는 컴퓨터
@@ -145,7 +146,7 @@ Configuration Manager에 이 파일을 가져올 때 통신 채널을 보호합�
 
 ### <a name="use-https-for-web-applications"></a>웹 응용 프로그램용 HTTPS 사용
 
-웹 응용 프로그램 배포 유형을 구성하는 경우 연결을 보호하기 위해 HTTPS를 사용합니다. HTTPS 링크가 아니라 HTTP 링크를 사용하여 웹 애플리케이션을 배포하면 장치가 Rogue 서버로 리디렉션될 수 있습니다. 디바이스와 서버 간에 전송되는 데이터가 변조될 수 있습니다.
+웹 응용 프로그램 배포 유형을 구성하는 경우 연결을 보호하기 위해 HTTPS를 사용합니다. HTTPS 링크가 아니라 HTTP 링크를 사용하여 웹 응용 프로그램을 배포하면 디바이스가 Rogue 서버로 리디렉션될 수 있습니다. 디바이스와 서버 간에 전송되는 데이터가 변조될 수 있습니다.
 
 
 
@@ -178,7 +179,7 @@ Configuration Manager에 이 파일을 가져올 때 통신 채널을 보호합�
 > [!Important]  
 > Configuration Manager 버전 1802부터 클라이언트는 Silverlight를 자동으로 설치하지 않습니다.
 > 
-> 버전 1806부터 응용 프로그램 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 사용자는 새로운 소프트웨어 센터를 사용해야 합니다. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요.  
+> 버전 1806부터 응용 프로그램 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 사용자는 새로운 소프트웨어 센터를 사용해야 합니다. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-software-center#bkmk_userex)을 참조하세요.  
 
  구성 관리자 클라이언트 버전 1710 이상에는 Microsoft Silverlight 5가 필요하며, 사용자가 응용 프로그램 카탈로그에서 소프트웨어를 설치하려면 Microsoft Silverlight 5를 높은 권한 모드로 실행해야 합니다. 기본적으로 Silverlight 애플리케이션은 사용자 데이터에 액세스할 수 없도록 부분 신뢰 모드로 실행됩니다. Configuration Manager는 Microsoft Silverlight 5가 클라이언트에 아직 설치되어 있지 않으면 자동으로 설치합니다. 기본적으로 Configuration Manager는 컴퓨터 에이전트의 **Silverlight 애플리케이션의 높은 권한 모드 실행을 허용합니다.** 클라이언트 설정을 **예**로 설정합니다. 이 설정을 사용하면 서명되고 신뢰할 수 있는 Silverlight 애플리케이션에서 높은 권한 모드를 요청할 수 있게 됩니다.  
 
@@ -195,7 +196,7 @@ Configuration Manager에 이 파일을 가져올 때 통신 채널을 보호합�
 
 ##  <a name="privacy-information-for-application-management"></a>애플리케이션 관리의 개인 정보 보호  
 
- 애플리케이션 관리를 사용하면 계층의 모든 클라이언트에서 애플리케이션, 프로그램 또는 스크립트를 실행할 수 있습니다. Configuration Manager에서는 사용자가 실행하는 애플리케이션, 프로그램 또는 스크립트의 유형이나 이러한 애플리케이션, 프로그램 또는 스크립트에서 전송하는 정보의 유형을 제어하지 않습니다. 애플리케이션 배포 과정에서 Configuration Manager는 클라이언트와 서버 간에 장치 및 로그인 계정을 식별하는 정보를 전송할 수 있습니다.  
+ 애플리케이션 관리를 사용하면 계층의 모든 클라이언트에서 애플리케이션, 프로그램 또는 스크립트를 실행할 수 있습니다. Configuration Manager에서는 사용자가 실행하는 애플리케이션, 프로그램 또는 스크립트의 유형이나 이러한 애플리케이션, 프로그램 또는 스크립트에서 전송하는 정보의 유형을 제어하지 않습니다. 응용 프로그램 배포 과정에서 Configuration Manager는 클라이언트와 서버 간에 디바이스 및 로그인 계정을 식별하는 정보를 전송할 수 있습니다.  
 
  Configuration Manager에는 소프트웨어 배포 프로세스에 대한 상태 정보가 유지됩니다. 소프트웨어 배포 상태 정보는 클라이언트가 HTTPS를 사용하여 통신할 때를 제외하고 암호화되지 않습니다. 상태 정보는 데이터베이스에 암호화된 형식으로 저장되지 않습니다.  
 
@@ -212,7 +213,7 @@ Configuration Manager에 이 파일을 가져올 때 통신 채널을 보호합�
 - **응용 프로그램 카탈로그**는 사용자가 소프트웨어를 설치하도록 요청할 수 있는 웹 사이트입니다.  
 
     > [!Note]  
-    > Configuration Manager 1802부터 애플리케이션 카탈로그의 기본 기능이 소프트웨어 센터에 포함됩니다. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요.  
+    > Configuration Manager 1802부터 애플리케이션 카탈로그의 기본 기능이 소프트웨어 센터에 포함됩니다. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-software-center#bkmk_userex)을 참조하세요.  
 
 - **소프트웨어 센터**는 구성 관리자 클라이언트를 설치할 때 디바이스에 자동으로 설치됩니다. 사용자는 소프트웨어 센터에서 설정을 변경하고, 애플리케이션을 탐색하여 설치할 수 있습니다.  
 
