@@ -2,21 +2,21 @@
 title: 증분 버전
 titleSuffix: Configuration Manager
 description: Configuration Manager에 대한 최신 업데이트의 새로운 기능에 대해 알아봅니다.
-ms.date: 03/27/2019
+ms.date: 04/17/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: b57acf0b-05b7-46af-ad4c-f3e707bd3861
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 350b349aee07a984b51d1d1f53358bf45dd4402b
-ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
+ms.openlocfilehash: 5b053cdb8bbaf03a250c1daeff3a51beb16508d8
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58523710"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65499597"
 ---
 # <a name="whats-new-in-configuration-manager-incremental-versions"></a>Configuration Manager 증분 버전의 새로운 기능
 
@@ -33,11 +33,12 @@ Configuration Manager는 콘솔 내 [업데이트 및 서비스](/sccm/core/serv
 ## <a name="supported-versions"></a>지원되는 버전
 
 다음 링크를 사용하여 지원되는 각 버전의 새로운 기능을 확인할 수 있습니다.
-    - [버전 1902의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1902)
-    - [버전 1810의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1810)
-    - [버전 1806의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1806)  
-    - [버전 1802의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1802)
-    - [버전 1710의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1710)
+
+- [버전 1902의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1902)  
+- [버전 1810의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1810)  
+- [버전 1806의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1806)  
+- [버전 1802의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1802)  
+- [버전 1710의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1710)  
 
 1710 이전에 릴리스된 Configuration Manager 버전은 12개월 동안 지원됩니다. 1710 릴리스부터 각 업데이트 버전은 GA(일반 공급) 출시 날짜로부터 18개월 동안 지원됩니다.  가장 최근의 업데이트 버전으로 최신 상태를 유지하세요. 자세한 내용은 [Configuration Manager 현재 분기 버전 지원](/sccm/core/servers/manage/current-branch-versions-supported)을 참조하세요.  
 

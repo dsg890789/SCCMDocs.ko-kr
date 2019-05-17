@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: bc2282d5-0571-465b-9528-a555855eaacd
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a6040fd6b429eb94187026b8b6a98ea1386d5c6
-ms.sourcegitcommit: fd16fc2b681608fd6def5bad2cedffbcd1f2423a
+ms.openlocfilehash: 6f1173a8bec0ab05c3519d04430adddab129389b
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56405644"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65499117"
 ---
 # <a name="about-the-service-connection-point-in-configuration-manager"></a>Configuration Manager의 서비스 연결 지점 정보
 

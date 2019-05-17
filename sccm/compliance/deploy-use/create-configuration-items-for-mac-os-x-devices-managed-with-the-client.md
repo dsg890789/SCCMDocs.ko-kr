@@ -2,7 +2,7 @@
 title: '클라이언트 관리 Mac용 구성 항목 만들기 '
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager Mac OS X 구성 항목을 사용하여 Mac OS X 디바이스에 대한 설정을 관리할 수 있습니다.
-ms.date: 03/28/2017
+ms.date: 05/08/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-compliance
 ms.topic: conceptual
@@ -11,19 +11,19 @@ author: aczechowski
 manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf610c3310265f8b7dd6b467640617928a51258f
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 07ef57dba35fc78bcf4e108ec571106b099b9145
+ms.sourcegitcommit: 99dfe4fb9e9cfd20c44380ae442b3a5b895a0d9b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56124056"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65214795"
 ---
 # <a name="how-to-create-configuration-items-for-mac-os-x-devices-managed-with-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트를 사용하여 관리하는 Mac OS X 디바이스용 구성 항목을 만드는 방법
 System Center Configuration Manager **Mac OS X(사용자 지정)** 구성 항목을 사용하여 Configuration Manager 클라이언트에서 관리되는 Mac OS X 디바이스에 대한 설정을 관리할 수 있습니다.  
   
  Mac OS X 운영 체제는 속성 목록(또는 plist) 파일을 사용하여 애플리케이션 설정을 저장합니다. 속성 목록 파일에서 설정을 평가하고 재구성하려면 준수 설정을 사용합니다. 또한 준수 여부를 평가하고 수정할 수 있는 값을 반환하는 셸 스크립트를 작성하여 Mac OS X 설정을 관리할 수 있습니다.  
   
-### <a name="to-create-a-custom-mac-os-x-configuration-item"></a>사용자 지정 Mac OS X 구성 항목을 만들려면  
+## <a name="to-create-a-custom-mac-os-x-configuration-item"></a>사용자 지정 Mac OS X 구성 항목을 만들려면  
   
 1. Configuration Manager 콘솔에서 **자산 및 준수**을 클릭합니다.  
   
@@ -79,18 +79,18 @@ System Center Configuration Manager **Mac OS X(사용자 지정)** 구성 항목
   
 13. 마법사의 **준수 규칙** 페이지에서 구성 항목의 준수를 정의하는 조건을 지정합니다. 설정의 준수 여부를 평가하기 전에 준수 규칙이 하나 이상 있어야 합니다. 새 규칙을 추가하려면 **새로 만들기** 를 클릭합니다.  
   
-14. 에 **규칙 만들기** 대화 상자에서 다음 정보를 제공 합니다.  
+14. **규칙 만들기** 대화 상자에서 다음 정보를 제공합니다.  
   
-    -   **이름:** 규정 준수 규칙의 이름을 입력합니다.  
+    -   **이름:** 규정 준수 규칙의 이름을 입력 합니다.  
   
-    -   **설명:** 규정 준수 규칙에 대한 설명을 입력합니다.  
+    -   **설명:** 호환성 규칙에 대 한 설명을 입력 합니다.  
   
-    -   **선택한 설정:** **찾아보기**를 클릭하여 **설정 선택** 대화 상자를 엽니다. 규칙을 정의 하거나 클릭 하려는 설정을 선택 **새 설정을**. 완료 했으면 클릭 **선택**.  
+    -   **선택한 설정:** 클릭 하 여 **찾아보기** 열려는 **설정을 선택** 대화 상자. 규칙을 정의 하거나 클릭 하려는 설정을 선택 **새 설정을**. 완료 했으면 클릭 **선택**.  
   
         > [!TIP]  
         >  클릭할 수도 있습니다 **속성** 현재 선택 된 설정에 대 한 정보를 볼 수 있습니다.  
   
-    -   **규칙 유형:** 사용하려는 규정 준수 규칙의 유형을 선택합니다.  
+    -   **규칙 형식:** 사용하려는 준수 규칙의 형식을 선택합니다.  
   
         -   **값:** 구성 항목에서 반환된 값을 지정하는 값과 비교하는 규칙을 만듭니다.  
   
@@ -145,7 +145,7 @@ System Center Configuration Manager **Mac OS X(사용자 지정)** 구성 항목
   
             -   **설정이 클라이언트 디바이스에 없어야 합니다.**  
   
-        -   **보고할 비준수 심각도:** 이 규정 준수 규칙이 실패하는 경우 보고되는 심각도 수준을 지정합니다. 사용할 수 있는 심각도 수준은 다음과 같습니다.  
+        -   **보고서에 대 한 비 호환성 심각도:** 이 호환성 규칙에 실패 하면 보고 되는 심각도 수준을 지정 합니다. 사용할 수 있는 심각도 수준은 다음과 같습니다.  
   
             -   **없음** - 이 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 오류 심각도를 보고하지 않습니다.  
   
@@ -168,5 +168,6 @@ System Center Configuration Manager **Mac OS X(사용자 지정)** 구성 항목
   
     이제 구성 기준에 이 구성 항목을 추가하려는 경우 [System Center Configuration Manager에서 구성 기준을 만드는 방법](../../compliance/deploy-use/create-configuration-baselines.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [System Center Configuration Manager 클라이언트로 관리되는 디바이스의 구성 항목](../../compliance/deploy-use/configuration-items-for-devices-managed-with-the-client.md)
+## <a name="next-steps"></a>다음 단계
+
+ [System Center Configuration Manager 클라이언트로 관리되는 디바이스의 구성 항목](../../compliance/deploy-use/create-configuration-items.md)

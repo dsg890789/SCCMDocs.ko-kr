@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 4a9dc4d9-e114-42ec-ae2b-73bee14ab04f
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c28163f20e1cf99679c7c740ee62884af4bc2f2
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: d4bb3cfa86275562ad46c4fdc988719a493f42bf
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56127595"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65499070"
 ---
 # <a name="define-network-locations-as-boundaries-for-system-center-configuration-manager"></a>네트워크 위치를 System Center Configuration Manager의 경계로 정의합니다.
 

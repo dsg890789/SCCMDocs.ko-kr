@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 76c220b6-1824-4e2e-8c61-a719f0b056f1
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a8033c148241e597ec7dd32366dbd977d0b51f2
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 82ddc015a9d5df29b54e13efe6382934c713ac4b
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56125071"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65501402"
 ---
 # <a name="where-to-get-installation-media-for-system-center-configuration-manager"></a>System Center Configuration Manager용 설치 미디어를 다운로드할 수 있는 위치
 

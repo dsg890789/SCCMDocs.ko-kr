@@ -2,7 +2,7 @@
 title: '클라이언트 관리 디바이스에 대한 일반 준수 관리 작업 '
 titleSuffix: Configuration Manager
 description: 몇 가지 일반적인 시나리오를 진행하여 System Center Configuration Manager의 준수 설정에 대해 알아봅니다.
-ms.date: 10/06/2016
+ms.date: 05/08/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-compliance
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a06c4294e85d3942ea3c795f3621d15ffb0ad32f
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 82826e6b57e479599d02637ee0d8b95dc3173d6f
+ms.sourcegitcommit: 99dfe4fb9e9cfd20c44380ae442b3a5b895a0d9b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56120803"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65214570"
 ---
 # <a name="common-tasks-for-managing-compliance-on-devices-with-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트가 설치된 디바이스의 준수 관리를 위한 일반 작업
 
@@ -24,7 +24,7 @@ ms.locfileid: "56120803"
 
 이 항목의 시나리오에서는 일반적으로 발생할 수 있는 몇 가지 상황을 살펴보면서 System Center Configuration Manager 준수 설정을 사용하는 방법을 소개합니다.  
 
- 준수 설정에 이미 익숙한 경우 사용할 수 있는 모든 기능에 대한 자세한 설명은 [System Center Configuration Manager 클라이언트로 관리되는 디바이스의 구성 항목](../../compliance/deploy-use/configuration-items-for-devices-managed-with-the-client.md) 섹션을 참조하세요.  
+ 준수 설정에 이미 익숙한 경우 사용할 수 있는 모든 기능에 대한 자세한 설명은 [System Center Configuration Manager 클라이언트로 관리되는 디바이스의 구성 항목](../../compliance/deploy-use/create-configuration-items.md) 섹션을 참조하세요.  
 
  시작하기 전에 [준수 설정 시작](../../compliance/get-started/get-started-with-compliance-settings.md)을 읽어 준수 설정에 대한 일부 기본 지식을 익히고 [준수 설정 계획 및 구성](../../compliance/plan-design/plan-for-and-configure-compliance-settings.md)을 읽어 필수 전제 조건을 구현합니다.  
 
@@ -37,7 +37,7 @@ ms.locfileid: "56120803"
 
 4.  아래와 같은 구성 항목 만들기 마법사의 **일반** 탭에서, 구성 항목에 대한 이름 및 설명을 지정한 다음 이 항목의 각 시나리오에 대한 적절한 구성 항목 유형을 선택합니다.  
 
-     ![구성 항목 만들기 마법사의 일반 페이지를 보여 줍니다.](/sccm/compliance/plan-design/media/Compliance-Settings-Wizard---1.png)  
+     ![구성 항목 만들기 마법사의 일반 페이지를 보여 줍니다.](/sccm/mdm/deploy-use/media/Compliance-Settings-Wizard---1.png)  
 
 ## <a name="scenarios-for-windows-10-devices-managed-with-the-configuration-manager-client"></a>Configuration Manager 클라이언트를 사용하여 관리되는 Windows 10 디바이스에 대한 시나리오  
 
@@ -107,3 +107,7 @@ ms.locfileid: "56120803"
 6. 마법사를 완료하여 구성 항목을 만듭니다.  
 
    이제 [구성 기준 만들기 및 배포에 대한 일반 작업](../../compliance/plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md) 항목의 내용을 참조하여, 만든 구성을 디바이스에 쉽게 배포할 수 있습니다.  
+
+## <a name="next-steps"></a>다음 단계
+
+[구성 기준 만들기 및 배포](/sccm/compliance/plan-design/common-tasks-for-creating-and-deploying-configuration-baselines)

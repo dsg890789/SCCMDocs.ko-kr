@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 0e9f0fbd-e442-4509-a021-bfdedf2d04dd
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 209e09ba11de851a1275211364af3cee930737d0
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: a5fb9a553efa634dad314da58298611cdf0bbb58
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56131543"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65498975"
 ---
 # <a name="configuration-options-for-site-system-roles-in-configuration-manager"></a>Configuration Manager의 사이트 시스템 역할에 대한 구성 옵션
 
@@ -29,7 +29,7 @@ Configuration Manager 사이트 시스템 역할의 구성 옵션 대부분은 �
 ##  <a name="BKMK_ApplicationCatalog_Website"></a> 애플리케이션 카탈로그 웹 사이트 지점  
 
 > [!Note]  
-> 버전 1806부터 응용 프로그램 카탈로그 웹 사이트 지점은 더 이상 *필요하지 않지만* *지원은 계속됩니다*. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요.  
+> 버전 1806부터 응용 프로그램 카탈로그 웹 사이트 지점은 더 이상 *필요하지 않지만* *지원은 계속됩니다*. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-software-center#bkmk_userex)을 참조하세요.  
 > 
 > 애플리케이션 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
 
@@ -54,7 +54,7 @@ Configuration Manager 사이트 시스템 역할의 구성 옵션 대부분은 �
 ##  <a name="BKMK_ApplicationCatalog_WebService"></a> 애플리케이션 카탈로그 웹 서비스 지점  
 
 > [!Note]  
-> 버전 1806부터 응용 프로그램 카탈로그 웹 서비스 지점은 더 이상 *필요하지 않지만* *지원은 계속됩니다*. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요.  
+> 버전 1806부터 응용 프로그램 카탈로그 웹 서비스 지점은 더 이상 *필요하지 않지만* *지원은 계속됩니다*. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-software-center#bkmk_userex)을 참조하세요.  
 
  응용 프로그램 카탈로그 웹 서비스 지점을 설정하는 방법에 대한 자세한 내용은 [응용 프로그램 관리 계획 및 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management)을 참조하세요.  
 

@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 92b339ef-2723-4322-bec6-077b3e8846b0
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 51569f04a8665f230030da7fec4bc67042263d92
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
+ms.openlocfilehash: 6f2110b805ac404a6e3c12d66225633b45eb50ae
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59673584"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65501356"
 ---
 # <a name="prerequisites-for-installing-configuration-manager-sites"></a>Configuration Manager 사이트 설치에 대한 필수 조건
 

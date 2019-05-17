@@ -2,21 +2,21 @@
 title: 소프트웨어 인벤토리
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager의 소프트웨어 인벤토리를 소개합니다.
-ms.date: 2/22/2017
+ms.date: 04/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
 ms.assetid: 79eb49da-cd2b-4ffc-b355-b595aeba3aea
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 54bcd177d228e67748f561be556ff4219523711a
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: b4d50e26d2505a5df859f65b89b736783aca0a9a
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56130414"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65499807"
 ---
 # <a name="introduction-to-software-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 인벤토리 소개
 
@@ -28,7 +28,7 @@ ms.locfileid: "56130414"
 
  소프트웨어 인벤토리 정보를 보는 방법은 다음과 같습니다.  
 
-- 지정된 파일이 포함된 디바이스를 반환하는 [쿼리를 만듭니다](../../../../core/servers/manage/queries-technical-reference.md).   
+- 지정된 파일이 포함된 디바이스를 반환하는 [쿼리를 만듭니다](../../../../core/servers/manage/create-queries.md).   
 
 - 지정된 파일이 포함된 디바이스를 포함하는 [쿼리 기반 컬렉션](../../../../core/clients/manage/collections/introduction-to-collections.md)을 만듭니다.   
 

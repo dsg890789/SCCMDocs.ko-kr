@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 5bd637b1-d7a1-411b-877a-c7aae9741173
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d36ac033b197c21122b49aba70bdeaef4f9b5ac
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
+ms.openlocfilehash: 6e6e603210342f5acc3e66328fca95e964dde2bf
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59802855"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65495506"
 ---
 # <a name="whats-new-in-version-1802-of-system-center-configuration-manager"></a>System Center Configuration Manager 1802 버전의 새로운 기능
 
@@ -183,9 +183,9 @@ Windows 10 클라이언트에서 [Microsoft Edge](https://technet.microsoft.com/
 <!-- 1351266 -->
 대체된 버전을 자동으로 업그레이드하지 않도록 애플리케이션 배포를 구성합니다. 이제 **소프트웨어 배포 마법사**의 **배포 설정** 페이지에서 배포를 만들 때 **사용 가능** 설치 목적으로 **이 애플리케이션의 교체된 버전을 자동으로 업그레이드**하는 옵션을 활성화하거나 비활성화할 수 있습니다. 자세한 내용은 [배포 설정 지정](/sccm/apps/deploy-use/deploy-applications#specify-deployment-settings)을 참조하세요.
 
-### <a name="approve-application-requests-for-users-per-device"></a>장치당 사용자에 대한 애플리케이션 요청 승인
+### <a name="approve-application-requests-for-users-per-device"></a>디바이스당 사용자에 대한 응용 프로그램 요청 승인
 <!-- 1357015 -->
-이 릴리스부터는 사용자가 승인이 필요한 애플리케이션을 요청할 때 특정 장치 이름이 요청의 일부로 포함됩니다. 관리자가 요청을 승인하면 사용자는 해당 장치에만 애플리케이션을 설치할 수 있습니다. 사용자가 다른 장치에 애플리케이션을 설치하려면 다른 요청을 제출해야 합니다. 자세한 내용은 [배포 설정 지정](/sccm/apps/deploy-use/deploy-applications#specify-deployment-settings)을 참조하세요.
+이 릴리스부터는 사용자가 승인이 필요한 응용 프로그램을 요청할 때 특정 디바이스 이름이 요청의 일부로 포함됩니다. 관리자가 요청을 승인하면 사용자는 해당 디바이스에만 응용 프로그램을 설치할 수 있습니다. 사용자가 다른 디바이스에 응용 프로그램을 설치하려면 다른 요청을 제출해야 합니다. 자세한 내용은 [배포 설정 지정](/sccm/apps/deploy-use/deploy-applications#specify-deployment-settings)을 참조하세요.
 
  > [!Note]  
  > 이는 선택적 기능입니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.  
@@ -214,12 +214,12 @@ Windows 10 클라이언트에서 [Microsoft Edge](https://technet.microsoft.com/
      - 소프트웨어 센터, PXE 및 미디어에서 모든 운영 체제 배포 시나리오를 지원합니다.
      - 개체 삭제 중 복사, 가져오기, 내보내기 및 경고와 같은 콘솔 작업이 향상되었습니다.
      - [사전 준비된 콘텐츠 파일 만들기](/sccm/core/plan-design/hierarchy/manage-network-bandwidth#BKMK_PrestagingContent) 마법사를 지원합니다.
-     - 배포 확인과 통합됩니다. 자세한 내용은 [높은 위험 수준의 작업 순서 배포](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#BKMK_DeployTS)를 참조하세요. 
+     - 배포 확인과 통합됩니다. 자세한 내용은 [높은 위험 수준의 작업 순서 배포](/sccm/osd/deploy-use/deploy-a-task-sequence)를 참조하세요. 
      - 작업 순서 실행 단계는 이제 단일 부모-자식 관계뿐만 아니라 여러 수준의 작업 순서에서도 사용할 수 있습니다. 여러 수준 관계는 복잡성이 증가되므로 신중하게 사용합니다. 이러한 관계는 여전히 순환 참조를 확인합니다.
     
 ### <a name="deployment-templates-for-task-sequences"></a>작업 순서에 대한 배포 템플릿
 <!-- 1357391 -->
-[작업 순서에 대한 배포 마법사](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#BKMK_DeployTS)에서 이제 배포 템플릿을 만들 수 있습니다. 배포 템플릿을 저장하고 기존 작업 순서나 새 작업 순서에 적용하여 배포를 만들 수 있습니다. 
+[작업 순서에 대한 배포 마법사](/sccm/osd/deploy-use/deploy-a-task-sequence)에서 이제 배포 템플릿을 만들 수 있습니다. 배포 템플릿을 저장하고 기존 작업 순서나 새 작업 순서에 적용하여 배포를 만들 수 있습니다. 
 
 ### <a name="phased-deployments-for-task-sequences"></a>작업 순서에 대한 단계별 배포
 <!--1356837-->
@@ -232,11 +232,11 @@ Windows 10 클라이언트에서 [Microsoft Edge](https://technet.microsoft.com/
 
 ### <a name="install-multiple-applications-in-software-center"></a>소프트웨어 센터에서 여러 애플리케이션 설치
 <!-- 1357126 -->
-이제 최종 사용자 또는 데스크톱 기술자가 장치에 여러 애플리케이션을 설치해야 하는 경우 소프트웨어 센터는 선택한 여러 애플리케이션을 설치하도록 지원합니다. 이 동작을 사용하면 한 설치가 완료될 때까지 기다리지 않고 다음 설치를 시작할 수 있도록 사용자가 더 효율적으로 작업할 수 있습니다. 자세한 내용은 새 소프트웨어 센터 사용자 가이드의 [여러 애플리케이션 설치](/sccm/core/understand/software-center#install-multiple-applications)를 참조하세요.
+이제 최종 사용자 또는 데스크톱 기술자가 디바이스에 여러 응용 프로그램을 설치해야 하는 경우 소프트웨어 센터는 선택한 여러 응용 프로그램을 설치하도록 지원합니다. 이 동작을 사용하면 한 설치가 완료될 때까지 기다리지 않고 다음 설치를 시작할 수 있도록 사용자가 더 효율적으로 작업할 수 있습니다. 자세한 내용은 새 소프트웨어 센터 사용자 가이드의 [여러 애플리케이션 설치](/sccm/core/understand/software-center#install-multiple-applications)를 참조하세요.
 
-### <a name="use-software-center-to-browse-and-install-user-available-applications-on-azure-ad-joined-devices"></a>소프트웨어 센터를 사용하여 Azure AD 조인 장치에서 사용자가 사용할 수 있는 애플리케이션 찾아보기 및 설치
+### <a name="use-software-center-to-browse-and-install-user-available-applications-on-azure-ad-joined-devices"></a>소프트웨어 센터를 사용하여 Azure AD 조인 디바이스에서 사용자가 사용할 수 있는 응용 프로그램 찾아보기 및 설치
 <!-- 1322613 -->
-사용자가 사용할 수 있는 애플리케이션으로 배포하는 경우 이제 Azure AD(Azure Active Directory) 장치에서 소프트웨어 센터를 통해 해당 애플리케이션을 찾아보고 설치할 수 있습니다. 자세한 내용은 [Azure AD 가입 장치에 사용자가 사용할 수 있는 애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications#deploy-user-available-applications-on-azure-ad-joined-devices)를 참조하세요.
+사용자가 사용할 수 있는 응용 프로그램으로 배포하는 경우 이제 Azure AD(Azure Active Directory) 디바이스에서 소프트웨어 센터를 통해 해당 응용 프로그램을 찾아보고 설치할 수 있습니다. 자세한 내용은 [Azure AD 가입 디바이스에 사용자가 사용할 수 있는 응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications#deploy-user-available-applications-on-azure-ad-joined-devices)를 참조하세요.
 
 ### <a name="hide-installed-applications-in-software-center"></a>소프트웨어 센터에서 설치된 애플리케이션 숨기기
 <!--1357592-->
@@ -287,11 +287,11 @@ Windows Autopilot은 새로운 Windows 10 디바이스를 최신 방법으로 �
 
 ### <a name="improvements-to-configuration-manager-policies-for-windows-defender-exploit-guard"></a>Windows Defender Exploit Guard에 대한 Configuration Manager 정책 개선 사항
 <!-- 1356220 -->
-[Windows Defender Exploit Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)에 대한 Configuration Manager에 [공격 노출 영역 축소](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy#BKMK_ASR) 및 [제어된 폴더 액세스](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy#BKMK_CFA) 구성 요소에 대한 추가 정책 설정이 추가되었습니다.
+[Windows Defender Exploit Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)에 대한 Configuration Manager에 [공격 노출 영역 축소](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy#bkmk_ASR) 및 [제어된 폴더 액세스](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy#bkmk_CFA) 구성 요소에 대한 추가 정책 설정이 추가되었습니다.
 
 ### <a name="new-host-interaction-settings-for-windows-defender-application-guard"></a>Windows Defender Application Guard에 대한 새 호스트 상호 작용 설정
 <!-- 1356256 -->
-Windows 10 1709 버전 이상이 설치된 디바이스에는 [Windows Defender Application Guard](/sccm/protect/deploy-use/create-deploy-application-guard-policy#BKMK_HIS)에 대한 새로운 두 가지 호스트 상호 작용 설정이 있습니다. 
+Windows 10 1709 버전 이상이 설치된 디바이스에는 [Windows Defender Application Guard](/sccm/protect/deploy-use/create-deploy-application-guard-policy#bkmk_HIS)에 대한 새로운 두 가지 호스트 상호 작용 설정이 있습니다. 
 - 호스트의 가상 그래픽 프로세서에 대한 액세스 권한을 웹 사이트에 부여할 수 있습니다. 
 - 컨테이너 내부에 다운로드한 파일을 호스트에 유지할 수 있습니다. 
 

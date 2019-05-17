@@ -7,17 +7,17 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: f7eb0803-3f8f-4ab6-825a-99ac11f5ba7d
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a58c5c4a9543ab982ec45467eff02e134ea48965
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 04e4f24cee033f46ea69080a423b9ca6e2d4c9d5
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56127561"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65495139"
 ---
 # <a name="what39s-new-in-version-1610-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1610의 새로운 기능
 
@@ -166,7 +166,7 @@ System Center Configuration Manager 현재 분기의 업데이트 1610은 버전
 ## <a name="improvements-to-the-application-request-process"></a>애플리케이션 요청 프로세스에 대한 개선 사항
 애플리케이션 설치를 승인한 후 Configuration Manager 콘솔에서 **거부**를 클릭하여 요청을 거부하도록 선택할 수 있습니다. 이전에는 승인 후에 이 단추가 회색으로 표시되었습니다.
 
-이 작업을 수행해도 장치에서 애플리케이션이 제거되지는 않습니다. 그러나 사용자가 소프트웨어 센터에서 애플리케이션의 새 복사본을 설치할 수 없습니다.
+이 작업을 수행해도 디바이스에서 응용 프로그램이 제거되지는 않습니다. 그러나 사용자가 소프트웨어 센터에서 애플리케이션의 새 복사본을 설치할 수 없습니다.
 
 ## <a name="filter-by-content-size-in-automatic-deployment-rules"></a>자동 배포 규칙의 콘텐츠 크기에 따라 필터링
 이제 자동 배포 규칙에서 소프트웨어 업데이트의 콘텐츠 크기를 기준으로 필터링할 수 있습니다. 예를 들어 2MB보다 작은 크기의 소프트웨어 업데이트만 다운로드하려면 **콘텐츠 크기(KB)** 필터를 **< 2048**로 설정할 수 있습니다. 이 필터를 사용하면 큰 소프트웨어 업데이트가 자동으로 다운로드되는 것이 방지되므로 네트워크 대역폭이 제한된 경우 단순화된 Windows 하위 수준 서비스를 보다 잘 지원할 수 있습니다. 자세한 내용은 다음을 참조하세요.
@@ -202,9 +202,9 @@ System Center Configuration Manager 현재 분기의 업데이트 1610은 버전
 
 
 ## <a name="lookout-integration-for-hybrid-implementations-to-protect-ios-and-android-devices"></a>하이브리드 구현에서 iOS 및 Android 디바이스를 보호하기 위한 Lookout 통합
-Microsoft는 맬웨어, 위험한 앱 등을 디바이스에서 검색하여 iOS 및 Android 모바일 디바이스를 보호하기 위해 Lookout 모바일 위협 방지 솔루션과 통합합니다. Lookout 솔루션은 구성할 수 있는 위협 수준을 확인하는 데 도움이 됩니다. System Center Configuration Manager에서 준수 정책 규칙을 만들어 Lookout의 위험 평가에 따라 디바이스 준수를 확인할 수 있습니다. 조건부 액세스 정책을 사용하여 디바이스 준수 상태에 따라 회사 리소스에 대한 액세스를 허용하거나 차단할 수 있습니다. 통합 및 작동 방식에 대해 알아보려면 [장치, 네트워크 및 애플리케이션 위험에 따라 액세스 관리](/sccm/protect/deploy-use/manage-access-based-on-device-network-app-risk)를 참조하세요.
+Microsoft는 맬웨어, 위험한 앱 등을 디바이스에서 검색하여 iOS 및 Android 모바일 디바이스를 보호하기 위해 Lookout 모바일 위협 방지 솔루션과 통합합니다. Lookout 솔루션은 구성할 수 있는 위협 수준을 확인하는 데 도움이 됩니다. System Center Configuration Manager에서 준수 정책 규칙을 만들어 Lookout의 위험 평가에 따라 디바이스 준수를 확인할 수 있습니다. 조건부 액세스 정책을 사용하여 디바이스 준수 상태에 따라 회사 리소스에 대한 액세스를 허용하거나 차단할 수 있습니다. 통합 및 작동 방식에 대해 알아보려면 [디바이스, 네트워크 및 응용 프로그램 위험에 따라 액세스 관리](/sccm/protect/deploy-use/manage-access-based-on-device-network-app-risk)를 참조하세요.
 
-호환되지 않는 iOS 디바이스 사용자에게는 등록하라는 내용의 메시지가 표시됩니다. 그러면 장치에 Lookout for Work 앱을 설치하고, 앱을 활성화하고, Lookout for Work 애플리케이션에서 보고된 위협을 수정한 후에 회사 데이터에 액세스할 수 있습니다. [Lookout for Work 앱 구성 및 배포](/sccm/protect/deploy-use/configure-and-deploy-lookout-for-work-apps) 방법을 알아봅니다.
+호환되지 않는 iOS 디바이스 사용자에게는 등록하라는 내용의 메시지가 표시됩니다. 그러면 디바이스에 Lookout for Work 앱을 설치하고, 앱을 활성화하고, Lookout for Work 응용 프로그램에서 보고된 위협을 수정한 후에 회사 데이터에 액세스할 수 있습니다. [Lookout for Work 앱 구성 및 배포](/sccm/protect/deploy-use/configure-and-deploy-lookout-for-work-apps) 방법을 알아봅니다.
 
 
 

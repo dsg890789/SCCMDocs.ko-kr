@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: d53ac075-438b-41da-ab85-42f33982da0c
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1a15d803077f183897f182ef162d36896eb238a
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 52e3384f1922e1a8322f316fd99bdd967e34b131
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56126461"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65496222"
 ---
 # <a name="removed-and-deprecated-for-configuration-manager-site-servers"></a>Configuration Manager 사이트 서버에서 제거되거나 사용되지 않음
 

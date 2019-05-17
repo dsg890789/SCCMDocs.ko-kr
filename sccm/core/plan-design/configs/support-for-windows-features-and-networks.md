@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 0cf4bacb-6b6d-4d4f-8640-b13fe15873de
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae1ac3262acff35e23de4faa1e80c796f5ee4e4b
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 8b2e5573ae4ec74db83dc895641af7b8fbc31a24
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156698"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65499573"
 ---
 # <a name="support-for-windows-features-and-networks-in-configuration-manager"></a>Configuration Manager의 Windows 기능 및 네트워크 지원
 
@@ -148,7 +148,7 @@ Configuration Manager에서는 IPv4(인터넷 프로토콜 버전 4) 외에도, 
 
 Configuration Manager는 Configuration Manager 구성 요소가 설치된 OS 버전에 대해 Windows 하드웨어 호환성 목록에 인증되어 있는 모든 하드웨어에서 작동합니다.
 
-Configuration Manager가 디렉터리 및 파일 권한을 설정할 수 있도록 사이트 서버 역할에는 NTFS가 필요합니다. Configuration Manager에는 논리 드라이브의 완전한 소유권이 있다고 가정합니다. 별도 컴퓨터에서 실행되는 사이트 시스템은 스토리지 기술에 대한 논리 파티션을 공유할 수 없습니다. 그러나 각 컴퓨터는 공유 스토리지 장치의 같은 실제 파티션에서 별도의 논리 파티션을 사용할 수 있습니다.  
+Configuration Manager가 디렉터리 및 파일 권한을 설정할 수 있도록 사이트 서버 역할에는 NTFS가 필요합니다. Configuration Manager에는 논리 드라이브의 완전한 소유권이 있다고 가정합니다. 별도 컴퓨터에서 실행되는 사이트 시스템은 스토리지 기술에 대한 논리 파티션을 공유할 수 없습니다. 그러나 각 컴퓨터는 공유 저장소 디바이스의 같은 실제 파티션에서 별도의 논리 파티션을 사용할 수 있습니다.  
 
 ### <a name="support-considerations"></a>지원 고려 사항
 

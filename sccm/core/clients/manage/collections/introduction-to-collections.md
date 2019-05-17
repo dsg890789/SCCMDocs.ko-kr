@@ -2,7 +2,7 @@
 title: 컬렉션 소개
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에서 컬렉션을 사용하는 방법을 소개합니다.
-ms.date: 01/03/2017
+ms.date: 05/07/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9b995d0abfc3f14dce35e0aec70ac25b2ca2853
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 15359aa414554d0bef9e29c011966caec1c1e6d6
+ms.sourcegitcommit: 417e3834a42b415a8e129327dd3c15cc0c7ec5a2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56138945"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65443152"
 ---
 # <a name="introduction-to-collections-in-system-center-configuration-manager"></a>System Center Configuration Manager의 컬렉션 소개
 
@@ -35,7 +35,7 @@ ms.locfileid: "56138945"
 |작업|예|  
 |---------|-------|  
 |리소스 그룹화|조직의 계층을 기반으로 하여 리소스를 그룹화하는 컬렉션을 만들 수 있습니다.<br /><br /> 예를 들어 "런던 본사" Active Directory OU(조직 구성 단위)에 있는 모든 컴퓨터의 컬렉션을 만들 수 있습니다. 이러한 유형의 컬렉션을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 컬렉션을 만드는 방법](../../../../core/clients/manage/collections/create-collections.md)을 참조하세요.<br /><br /> 이 컬렉션을 사용하여 Endpoint Protection 설정 구성, 디바이스 전원 관리 설정 구성 또는 Configuration Manager 클라이언트 설치와 같은 작업을 수행할 수 있습니다.|  
-|[애플리케이션 배포]|Microsoft Office 2013이 설치되지 않은 모든 컴퓨터의 컬렉션을 만든 다음 해당 컬렉션의 모든 컴퓨터에 Microsoft Office 2013을 배포할 수 있습니다.<br /><br /> 또한 애플리케이션 요구 사항을 사용하여 이 작업을 수행할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 애플리케이션을 만드는 방법](../../../../apps/deploy-use/create-applications.md)을 참조하세요.|  
+|애플리케이션 배포|Microsoft Office 2013이 설치되지 않은 모든 컴퓨터의 컬렉션을 만든 다음 해당 컬렉션의 모든 컴퓨터에 Microsoft Office 2013을 배포할 수 있습니다.<br /><br /> 또한 애플리케이션 요구 사항을 사용하여 이 작업을 수행할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 애플리케이션을 만드는 방법](../../../../apps/deploy-use/create-applications.md)을 참조하세요.|  
 |[클라이언트 설정 관리](../../../../core/clients/deploy/about-client-settings.md)|Configuration Manager의 기본 클라이언트 설정은 모든 디바이스 및 모든 사용자에게 적용되지만, 특정 디바이스 컬렉션 또는 사용자 컬렉션에 적용되는 사용자 지정 클라이언트 설정을 만들 수 있습니다.<br /><br /> 예를 들어 소수의 디바이스만을 제외한 모든 디바이스에서 원격 제어를 사용할 수 있도록 하려면 원격 제어를 허용하도록 기본 클라이언트 설정을 구성한 다음 원격 제어를 허용하지 않는 사용자 지정 클라이언트 설정을 구성하여 예외 클라이언트 컬렉션에 해당 설정을 배포합니다. |  
 |[전원 관리](../power/introduction-to-power-management.md)|컬렉션별로 특정 전원 설정을 구성할 수 있습니다.|  
 |[역할 기반 관리](../../../../core/servers/deploy/configure/configure-role-based-administration.md)|컬렉션을 사용하여 Configuration Manager 콘솔의 다양한 기능에 액세스할 수 있는 사용자 그룹을 제어할 수 있습니다.|  
