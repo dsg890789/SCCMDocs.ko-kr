@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 6af92de2-b2c7-4d5c-affd-6cce81979fb5
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96a100131d8fe0e9c289cdf4d272aeefb43fbf15
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 26ea0ed36a8e7f59a475d6e10d26eb2275c20311
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56140408"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65501182"
 ---
 # <a name="checklist-for-installing-update-1802-for-system-center-configuration-manager"></a>System Center Configuration Manager용 업데이트 1802를 설치하기 위한 검사 목록
 
@@ -32,7 +32,7 @@ System Center Configuration Manager의 현재 분기를 사용하는 경우 버�
 
     -   dmpdownloader.log에서 dmpdownloader 프로세스가 절전 모드이고 업데이트를 확인하기 전에 일정 시간 대기 중임을 나타내는 경우 사이트 서버에서 **SMS_Executive** 서비스를 다시 시작하여 업데이트 재배포 파일의 다운로드를 다시 시작할 수도 있습니다.
 
-    -   프록시 서버 설정이 <http://silverlight.dlservice.microsoft.com> 및 <http://download.microsoft.com>에서 다운로드하지 않도록 방지하는 경우 또 다른 일반적인 다운로드 문제가 발생합니다.
+    -   프록시 서버 설정이 <http://silverlight.dlservice.microsoft.com> 및 <http://download.microsoft.com> 에서 다운로드하지 않도록 방지하는 경우 또 다른 일반적인 다운로드 문제가 발생합니다.
 
 업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 및 서비스](/sccm/core/servers/manage/updates#a-namebkmkinconsolea-in-console-updates-and-servicing)를 참조하세요.
 
@@ -108,7 +108,8 @@ Configuration Manager에서 관리 지점에 대한 데이터베이스 복제본
 가용성 그룹을 사용할 경우 업데이트 설치를 시작하기 전에 가용성 그룹이 수동 장애 조치(failover)로 설정되어 있는지 확인합니다. 사이트를 업데이트한 후에 장애 조치(failover)를 자동으로 되돌릴 수 있습니다. 자세한 내용은  [사이트 데이터베이스에 대한 SQL Server AlwaysOn](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database)을 참조하세요.
 
 **NLB를 사용하는 소프트웨어 업데이트 지점 다시 구성:**   
-<!-- Support for NLBs is fully removed with 1702. When 1702 is no longer in support, this statement can drop --> Configuration Manager에서는 NLB(네트워크 부하 분산) 클러스터를 사용하여 소프트웨어 업데이트 지점을 호스트하는 사이트를 업데이트할 수 없습니다.
+<!-- Support for NLBs is fully removed with 1702. When 1702 is no longer in support, this statement can drop -->
+Configuration Manager에서는 NLB(네트워크 부하 분산) 클러스터를 사용하는 사이트를 소프트웨어 업데이트 지점을 호스트하도록 업데이트할 수 없습니다.
 
 소프트웨어 업데이트 지점에 NLB 클러스터를 사용하는 경우 Windows PowerShell을 사용하여 NLB 클러스터를 제거하세요.
 자세한 내용은  [System Center Configuration Manager에서 소프트웨어 업데이트 플랜](/sccm/sum/plan-design/plan-for-software-updates)을 참조하세요.

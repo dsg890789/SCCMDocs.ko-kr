@@ -2,35 +2,42 @@
 title: 클라이언트 깨우기
 titleSuffix: Configuration Manager
 description: WOL(Wake On LAN)을 사용하여 System Center Configuration Manager에서 클라이언트의 절전 모드를 해제하는 방법을 계획합니다.
-ms.date: 05/23/2018
+ms.date: 04/23/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
 ms.assetid: 52ee82b2-0b91-4829-89df-80a6abc0e63a
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ad20f88d6296a45c97e7c04d94624f9341d369e
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: a16d598b80dd18802e42cae51aeba3c91a4d707c
+ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56125979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62201416"
 ---
 # <a name="plan-how-to-wake-up-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트의 절전 모드 해제 계획
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
+ Configuration Manager는 소프트웨어 업데이트 및 애플리케이션 등과 같은 필수 소프트웨어의 설치가 필요할 때 컴퓨터를 절전 모드에서 해제하는 기존 절전 모드 해제 패킷을 지원합니다.
+
+> [!NOTE]
+> 이 문서에서는 이전 버전 Wake on LAN의 작동 방식을 설명합니다. 이 기능은 최신 버전 Wake on LAN도 들어 있는 Configuration Manager 버전 1810에 포함되어 있습니다. Wake on LAN의 두 버전은 모두 동시에 사용하도록 설정될 수 있고 대부분은 동시에 사용하도록 설정됩니다. 1810부터 새 버전 Wake on LAN의 작동 방식 및 한 버전만 또는 두 버전을 모두 사용하도록 설정하는 방법에 대한 자세한 내용은 [Wake on LAN을 구성하는 방식](/sccm/core/clients/deploy/configure-wake-on-lan)을 참조하세요.  
+
+## <a name="how-to-wake-up-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트의 절전 모드를 해제하는 방법
+
  Configuration Manager는 소프트웨어 업데이트 및 애플리케이션 등과 같은 필수 소프트웨어의 설치가 필요할 때 컴퓨터를 절전 모드에서 해제하는 기존 절전 모드 해제 패킷을 지원합니다.  
 
 절전 모드 해제 프록시 클라이언트 설정을 사용하여 기존 절전 모드 해제 패킷 방법을 보충할 수 있습니다. 절전 모드 해제 프록시에서는 피어 투 피어 프로토콜 및 선택한 컴퓨터를 사용하여 서브넷에 있는 다른 컴퓨터의 절전 모드 해제 여부를 확인하고 필요한 경우 절전 모드를 해제합니다. 사이트가 Wake-On-LAN을 사용하도록 구성되고 클라이언트가 절전 모드 해제 프록시를 사용하도록 구성된 경우 프로세스는 다음과 같이 작동합니다.  
 
-1. Configuration Manager 클라이언트가 설치되어 있고 서브넷에서 절전 모드가 아닌 컴퓨터가 서브넷에 있는 다른 컴퓨터의 절전 모드 해제 여부를 확인합니다. 각 컴퓨터는 서로에게 5초마다 TCP/IP Ping 명령을 보내 이러한 확인 작업을 수행합니다.  
+1. 구성 관리자 클라이언트가 설치되어 있고 서브넷에서 절전 모드가 아닌 컴퓨터가 서브넷에 있는 다른 컴퓨터의 절전 모드 해제 여부를 확인합니다. 각 컴퓨터는 서로에게 5초마다 TCP/IP Ping 명령을 보내 이러한 확인 작업을 수행합니다.  
 
-2. 응답이 없는 컴퓨터는 절전 모드 상태인 것으로 간주됩니다. 절전 모드 해제 상태인 컴퓨터는 서브넷에 대해 *관리자 컴퓨터*가 됩니다.  
+2. 응답이 없는 컴퓨터는 절전 모드 상태인 것으로 간주합니다. 절전 모드 해제 상태인 컴퓨터는 서브넷에 대해 *관리자 컴퓨터*가 됩니다.  
 
-    컴퓨터는 절전 모드 이외의 다른 이유(예: 전원 꺼짐, 네트워크에서 제거됨, 프록시 절전 모드 해제 클라이언트 설정의 적용 중단 등)로 인해 응답하지 못할 수도 있으므로 매일 오후 2시 (현지 시간)마다 절전 모드 해제 패킷을 전송받습니다. 응답하지 않는 컴퓨터는 더 이상 절전 모드로 간주되지 않으며 절전 모드 해제 프록시에 의해 해제되지 않습니다.  
+    컴퓨터는 절전 모드 이외의 다른 이유(예: 전원 꺼짐, 네트워크에서 제거됨, 프록시 절전 모드 해제 클라이언트 설정의 적용 중단 등)로 인해 응답하지 못할 수도 있으므로 매일 오후 2시 (현지 시간)마다 절전 모드 해제 패킷을 전송받습니다. 응답하지 않는 컴퓨터는 더 이상 절전 모드로 간주하지 않으며 절전 모드 해제 프록시에 의해 해제되지 않습니다.  
 
     절전 모드 해제 프록시를 지원하려면 각 서브넷마다 3대 이상의 컴퓨터가 절전 모드 해제 상태여야 합니다. 이러한 요구 사항을 충족하기 위해 3대의 컴퓨터는 서브넷에 대한 *가디언 컴퓨터*가 되도록 임의로 선택됩니다. 즉, 일정한 비활성화 시간이 지나면 절전 또는 최대 절전 모드가 되는 전원 정책이 구성된 경우에도 해당 컴퓨터는 항상 절전 모드 해제 상태로 유지됩니다. 가디언 컴퓨터는 예를 들어 유지 관리 작업의 결과에 따라 종료 또는 다시 시작 명령을 이행합니다. 이 경우 나머지 가디언 컴퓨터는 서브넷에서 다른 컴퓨터의 절전 모드를 해제하므로 서브넷에는 3대의 가디언 컴퓨터가 계속 유지됩니다.  
 
@@ -84,7 +91,7 @@ ms.locfileid: "56125979"
 
 서브넷 지향 브로드캐스트 패킷 또는 유니캐스트 패킷의 사용 여부와 사용할 UDP 포트 번호도 결정합니다. 기본적으로 기존 절전 모드 해제 패킷은 UDP 포트 9를 사용하여 전송되지만 보안 수준을 높이려면 중간 라우터 및 방화벽에서 지원할 경우 사이트에 대해 대체 포트를 선택할 수 있습니다.  
 
-### <a name="choose-between-unicast-and-subnet-directed-broadcast-for-wake-on-lan"></a>Wake-On-LAN을 위한 유니캐스트 및 서브넷 지향 브로드캐스트 선택  
+## <a name="choose-between-unicast-and-subnet-directed-broadcast-for-wake-on-lan"></a>Wake-On-LAN을 위한 유니캐스트 및 서브넷 지향 브로드캐스트 선택  
  기존 절전 모드 해제 패킷을 보내 컴퓨터의 절전 모드를 해제하려면 유니캐스트 패킷 또는 서브넷 지향 브로드캐스트 패킷 중 어느 것을 전송할지 결정해야 합니다. 절전 모드 해제 프록시를 사용할 경우 유니캐스트 패킷을 사용해야 합니다. 그 밖의 경우 다음 표를 참조하여 선택할 전송 방식을 결정하세요.  
 
 |전송 방식|장점|단점|  
