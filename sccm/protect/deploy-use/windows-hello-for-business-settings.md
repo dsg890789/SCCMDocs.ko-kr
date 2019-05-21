@@ -7,26 +7,27 @@ ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
 ms.assetid: a95bc292-af10-4beb-ab56-2a815fc69304
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d23fee65cec798440449a00bf8a22d58cc373132
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 94cbbb7616588fa88bae9ae71f5b5f53dd4a4d63
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56133785"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65500358"
 ---
 # <a name="windows-hello-for-business-settings-in-configuration-manager"></a>Configuration Manager의 비즈니스용 Windows Hello 설정
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-<!--1245704--> Configuration Manager를 통해 Windows 10 디바이스의 대체 로그인 방법인 비즈니스용 Windows Hello(이전의 Microsoft Passport for Windows)와 통합할 수 있습니다. 비즈니스용 Windows Hello는 Active Directory 또는 Azure Active Directory 계정을 사용하여 암호, 스마트 카드 또는 가상 스마트 카드를 대체합니다. 비즈니스용 Windows Hello를 통해 암호 대신 **사용자 제스처** 를 사용하여 로그인할 수 있습니다. 사용자 제스처는 단순 PIN, 생체 인식 인증 또는 외부 디바이스(예: 지문 판독기)일 수 있습니다.
+<!--1245704-->
+Configuration Manager를 통해 Windows 10 디바이스의 대체 로그인 방법인 비즈니스용 Windows Hello(이전의 Microsoft Passport for Windows)와 통합할 수 있습니다. 비즈니스용 Windows Hello는 Active Directory 또는 Azure Active Directory 계정을 사용하여 암호, 스마트 카드 또는 가상 스마트 카드를 대체합니다. 비즈니스용 Windows Hello를 통해 암호 대신 **사용자 제스처** 를 사용하여 로그인할 수 있습니다. 사용자 제스처는 단순 PIN, 생체 인식 인증 또는 외부 디바이스(예: 지문 판독기)일 수 있습니다.
 
 
 > [!Important]  
-> 2017 년 12 월부터 Windows Hello for Business 설정 in Configuration Manager는 한 [사용 되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)합니다. Windows Server 2016 Active Directory Federation Services RA (등록 기관 ADFS) 배포 더 나은 사용자 환경을 제공 합니다. 하며 보다 명확한 인증서 등록 환경이 더 간단 합니다.  
+> 2017년 12월부터, Configuration Manager의 비즈니스용 Windows Hello 설정은 [더 이상 사용되지 않습니다](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures). Windows Server 2016 ADFS RA(Active Directory Federation Services 등록 기관) 배포는 좀 더 간단하며, 더 나은 사용자 환경을 제공하고, 보다 명확한 인증서 등록 환경을 제공합니다.  
 
 
 자세한 내용은 [비즈니스용 Windows Hello](https://docs.microsoft.com/windows/access-protection/hello-for-business/hello-identity-verification)를 참조하세요.
@@ -51,7 +52,7 @@ Configuration Manager는 다음 두 가지 방법으로 비즈니스용 Windows 
 비즈니스용 Windows Hello 프로필을 만들고 배포하여 도메인에 조인된 Windows 10 디바이스에서 비즈니스용 Windows Hello 설정을 제어할 수 있습니다. 이 방법이 권장됩니다.
 
 
-인증서 기반 인증을 사용하는 경우 [인증서 프로필 구성](#configure-a-certificate-profile)에 설명된 대로 인증서 프로필도 배포해야 합니다. 키 기반 인증을 사용하는 경우 인증서 프로필을 배포할 필요가 없습니다.
+인증서 기반 인증을 사용하는 경우 [인증서 프로필 구성](#configure-a-certificate-profile-to-enroll-the-windows-hello-for-business-enrollment-certificate-in-configuration-manager)에 설명된 대로 인증서 프로필도 배포해야 합니다. 키 기반 인증을 사용하는 경우 인증서 프로필을 배포할 필요가 없습니다.
 
 
 

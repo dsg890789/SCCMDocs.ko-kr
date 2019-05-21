@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
 ms.assetid: 0317fd02-3721-4634-b18b-7c976a4e92bf
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5990495532e9d4abe3b912a98e69f2aa1a3c16c9
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 2511705610abf87302d0079b5bd89e8ffe240561
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56121831"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65500307"
 ---
 # <a name="prerequisites-for-certificate-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 인증서 프로필에 대한 필수 조건
 
@@ -40,7 +40,7 @@ System Center Configuration Manager의 인증서 프로필에는 외부 종속�
 
 |종속성|추가 정보|  
 |----------------|----------------------|  
-|인증서 등록 지점 사이트 시스템 역할|인증서 프로필을 사용하려면 먼저 인증서 등록 지점 사이트 시스템 역할을 설치해야 합니다. 이 역할은 System Center Configuration Manager 데이터베이스, System Center Configuration Manager 사이트 서버 및 System Center Configuration Manager 정책 모듈과 통신합니다.<br /><br /> 이 사이트 시스템 역할의 시스템 요구 사항 및 계층 내 역할 설치 위치에 대한 자세한 내용은 [System Center Configuration Manager에서 지원되는 구성](../../core/plan-design/configs/supported-configurations.md) 문서의 **사이트 시스템 요구 사항** 섹션을 참조하세요.<br /><br /> 네트워크 장치 등록 서비스를 실행하는 동일한 서버에 인증서 등록 지점을 설치하지 않아야 합니다.|  
+|인증서 등록 지점 사이트 시스템 역할|인증서 프로필을 사용하려면 먼저 인증서 등록 지점 사이트 시스템 역할을 설치해야 합니다. 이 역할은 System Center Configuration Manager 데이터베이스, System Center Configuration Manager 사이트 서버 및 System Center Configuration Manager 정책 모듈과 통신합니다.<br /><br /> 이 사이트 시스템 역할의 시스템 요구 사항 및 계층 내 역할 설치 위치에 대한 자세한 내용은 [System Center Configuration Manager에서 지원되는 구성](../../core/plan-design/configs/supported-configurations.md) 문서의 **사이트 시스템 요구 사항** 섹션을 참조하세요.<br /><br /> 네트워크 디바이스 등록 서비스를 실행하는 동일한 서버에 인증서 등록 지점을 설치하지 않아야 합니다.|  
 |Active Directory 인증서 서비스용 네트워크 디바이스 등록 서비스 역할 서비스를 실행하는 서버에 설치된 System Center Configuration Manager 정책 모듈|인증서 프로필을 배포하려면 System Center Configuration Manager 정책 모듈을 설치해야 합니다. 이 정책 모듈은 System Center Configuration Manager 설치 미디어에서 찾을 수 있습니다.|  
 |검색 데이터|인증서 주체 및 주체 대체 이름 값은 System Center Configuration Manager에서 제공하며 검색에서 수집된 정보에서 가져옵니다.<br /><br /> 사용자 인증서: Active Directory 사용자 검색<br /><br /> 컴퓨터 인증서: Active Directory 시스템 검색 및 네트워크 검색|  
 |인증서 프로필을 관리하는 특정 보안 권한|회사 리소스 액세스 설정(예: 인증서 프로필, Wi-Fi 프로필 및 VPN 프로필)을 관리하려면 다음과 같은 보안 권한이 있어야 합니다.<br /><br /> 인증서 프로필에 대한 경고 및 보고서를 보고 관리하려면 **경고**개체에 대한 **만들기**, **삭제**, **수정**, **보고서 수정**, **읽기** 및 **보고서 실행** 권한이 필요합니다.<br /><br /> 인증서 프로필을 만들고 관리하려면: **인증서 프로필**개체에 대한 **작성자 정책**, **보고서 수정**, **읽기** 및 **보고서 실행** 권한이 필요합니다.<br /><br /> Wi-Fi, 인증서 및 VPN 프로필 배포를 관리하려면 **컬렉션**개체에 대한 **구성 정책 배포**, **클라이언트 상태 알림 수정**, **읽기** 및 **리소스 읽기** 권한이 필요합니다.<br /><br /> 모든 구성 정책을 관리하려면: **구성 정책**개체에 대한 **만들기**, **삭제**, **수정**, **읽기** 및 **보안 범위 설정** 권한이 필요합니다.<br /><br /> 인증서 프로필과 관련된 쿼리를 실행하려면 **쿼리** 개체에 대한 **읽기** 권한이 필요합니다.<br /><br /> System Center Configuration Manager 콘솔에서 인증서 프로필 정보를 보려면 **사이트** 개체에 대한 **읽기** 권한이 필요합니다.<br /><br /> 인증서 프로필에 대한 상태 메시지를 보려면 **상태 메시지** 개체에 대한 **읽기** 권한이 필요합니다.<br /><br /> 신뢰할 수 있는 CA 인증서 프로필을 만들고 수정하려면: **신뢰할 수 있는 CA 인증서 프로필**개체에 대한 **작성자 정책**, **보고서 수정**, **읽기** 및 **보고서 실행** 권한이 필요합니다.<br /><br /> VPN 프로필을 만들고 관리하려면: **VPN 프로필**개체에 대한 **작성자 정책**, **보고서 수정**, **읽기** 및 **보고서 실행** 권한이 필요합니다.<br /><br /> Wi-Fi 프로필을 만들고 관리하려면: **Wi-Fi 프로필**개체에 대한 **작성자 정책**, **보고서 수정**, **읽기** 및 **보고서 실행** 권한이 필요합니다.<br /><br /> **회사 리소스 액세스 관리자** 보안 역할에는 System Center Configuration Manager에서 인증서 프로필을 관리하는 데 필요한 이와 같은 권한이 포함됩니다. 자세한 내용은 [System Center Configuration Manager의 보안 구성](../../core/plan-design/security/configure-security.md) 문서의 **역할 기반 관리 구성** 섹션을 참조하세요.|  

@@ -1,8 +1,8 @@
 ---
 title: 비운영 체제 배포에 대한 작업 순서 만들기
 titleSuffix: Configuration Manager
-description: 소프트웨어 배포, 드라이버 업데이트, 사용자 상태 편집 등 운영 체제 배포와 관련이 없는 작업 순서를 만듭니다.
-ms.date: 10/06/2016
+description: 소프트웨어 배포 또는 작업 자동화와 같이 OS 배포용이 아닌 작업 순서 만들기
+ms.date: 05/03/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,44 +11,53 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8ef75ea9b0948a932c1b146d0f4fe7051017759
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 17ba0f146a80928b1eaae6334e6418a5e08b1114
+ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56140316"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65083073"
 ---
-# <a name="create-a-task-sequence-for-non-operating-system-deployments-with-system-center-configuration-manager"></a>System Center Configuration Manager와 비운영 체제 배포에 대한 작업 순서 만들기
+# <a name="create-a-task-sequence-for-non-os-deployments"></a>비운영 체제 배포에 대한 작업 순서 만들기
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 작업 순서는 사용자 환경 내에서 다양한 작업을 자동화하는 데 사용됩니다. 이러한 작업은 주로 운영 체제 배포를 위해 설계되고 테스트됩니다.  Configuration Manager에는 [애플리케이션 설치](../../apps/understand/introduction-to-application-management.md), [소프트웨어 업데이트 설치](../../sum/understand/software-updates-introduction.md), [구성 설정](../../compliance/understand/ensure-device-compliance.md), 사용자 지정 자동화 등 시나리오에 사용하는 기본 기술인 기타 많은 기능이 있습니다. 또한 [Orchestrator](https://technet.microsoft.com/library/hh237242.aspx) , [서비스 관리 자동화](https://technet.microsoft.com/library/dn469260.aspx) 등 고려해야 하는 기타 Microsoft System Center 자동화 기술도 있습니다.  
+Configuration Manager의 작업 순서는 사용자 환경 내에서 다양한 작업을 자동화하는 데 사용됩니다. 이러한 작업은 주로 운영 체제 배포를 위해 설계되고 테스트됩니다. Configuration Manager에는 다음과 같은 시나리오에 사용하는 기본 기술에 해당하는 여러 다른 기능이 있습니다.
 
-작업 순서의 장점은 유연성에 있으며, 이러한 작업 순서를 사용하여 운영 체제 배포와 독립적으로 클라이언트 설정 구성, 소프트웨어 배포, 드라이버 업데이트, 사용자 환경 편집 및 기타 작업을 수행할 수 있습니다. 개수와 상관없이 작업을 추가하는 사용자 지정 작업 순서를 만들 수 있습니다. Configuration Manager에서 비운영 체제 배포에 대한 사용자 지정 작업 순서 사용이 지원됩니다. 그러나 작업 순서로 인해 원치 않거나 일관성이 없는 결과가 발생하는 경우 작업을 간소화하는 방법을 살펴보세요. 여러 작업 순서로 작업을 나누어 더 간단한 단계를 사용하거나 작업 순서를 만들고 테스트하는 단계별 방법을 사용하면 됩니다.
+- [애플리케이션 설치](/sccm/apps/understand/introduction-to-application-management)
+- [소프트웨어 업데이트 설치](/sccm/sum/understand/software-updates-introduction)
+- [구성 설정](/sccm/compliance/understand/ensure-device-compliance)
 
- 비운영 체제 배포 사용자 지정 작업 순서에 사용할 수 있는 단계는 다음과 같습니다.  
+또한 [Orchestrator](https://docs.microsoft.com/system-center/orchestrator/) , [Service Management Automation](https://docs.microsoft.com/system-center/sma/) 등 기타 Microsoft System Center 자동화 기술도 고려해야 합니다.  
 
--   [준비 확인](../understand/task-sequence-steps.md#BKMK_CheckReadiness)  
+작업 순서의 장점은 유연성과 사용 방법에 있습니다. 작업 순서를 통해 클라이언트 설정을 구성하고, 소프트웨어를 배포하고, 드라이버를 업데이트하고, 사용자 환경을 편집하고, OS 배포와는 관련 없는 기타 작업을 수행할 수 있습니다. 개수와 상관없이 작업을 추가하는 사용자 지정 작업 순서를 만들 수 있습니다. Configuration Manager에서 비 OS 배포에 대한 사용자 지정 작업 순서 사용이 지원됩니다. 그러나 작업 순서로 인해 원치 않거나 일관성이 없는 결과가 발생하는 경우 작업을 간소화하는 방법을 살펴보세요.
 
--   [네트워크 폴더에 연결](../understand/task-sequence-steps.md#BKMK_ConnectToNetworkFolder)  
+- 보다 더 간단한 단계 사용
+- 작업을 여러 작업 순서 간에 분산
+- 작업 순서를 만들고 테스트하는 단계별 방법을 수행
 
--   [패키지 콘텐츠 다운로드](../understand/task-sequence-steps.md#BKMK_DownloadPackageContent)  
+비 OS 배포 사용자 지정 작업 순서에 사용할 수 있는 단계는 다음과 같습니다.  
 
--   [애플리케이션 설치](../understand/task-sequence-steps.md#BKMK_InstallApplication)  
+- [준비 확인](/sccm/osd/understand/task-sequence-steps#BKMK_CheckReadiness)  
 
--   [패키지 설치](../understand/task-sequence-steps.md#BKMK_InstallPackage)  
+- [네트워크 폴더에 연결](/sccm/osd/understand/task-sequence-steps#BKMK_ConnectToNetworkFolder)  
 
--   [소프트웨어 업데이트 설치](../understand/task-sequence-steps.md#BKMK_InstallSoftwareUpdates)  
+- [패키지 콘텐츠 다운로드](/sccm/osd/understand/task-sequence-steps#BKMK_DownloadPackageContent)  
 
--   [컴퓨터 다시 시작](../understand/task-sequence-steps.md#BKMK_RestartComputer)   
+- [애플리케이션 설치](/sccm/osd/understand/task-sequence-steps#BKMK_InstallApplication)  
 
--   [명령줄 실행](../understand/task-sequence-steps.md#BKMK_RunCommandLine)  
+- [패키지 설치](/sccm/osd/understand/task-sequence-steps#BKMK_InstallPackage)  
 
--   [PowerShell 스크립트 실행](../understand/task-sequence-steps.md#BKMK_RunPowerShellScript)  
+- [소프트웨어 업데이트 설치](/sccm/osd/understand/task-sequence-steps#BKMK_InstallSoftwareUpdates)  
 
--   [동적 변수 설정](../understand/task-sequence-steps.md#BKMK_SetDynamicVariables)  
+- [컴퓨터 다시 시작](/sccm/osd/understand/task-sequence-steps#BKMK_RestartComputer)  
 
--   [작업 순서 변수 설정](../understand/task-sequence-steps.md#BKMK_SetTaskSequenceVariable)  
+- [명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine)  
 
-## <a name="next-steps"></a>다음 단계 
-[작업 순서 배포](manage-task-sequences-to-automate-tasks.md#BKMK_DeployTS)
+- [PowerShell 스크립트 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunPowerShellScript)  
+
+- [작업 순서 실행](/sccm/osd/understand/task-sequence-steps#child-task-sequence)  
+
+- [동적 변수 설정](/sccm/osd/understand/task-sequence-steps#BKMK_SetDynamicVariables)  
+
+- [작업 순서 변수 설정](/sccm/osd/understand/task-sequence-steps#BKMK_SetTaskSequenceVariable)  

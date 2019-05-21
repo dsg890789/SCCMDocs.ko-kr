@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
 ms.assetid: 3b9c4027-a98b-406b-935c-ccabcfe713df
-author: aczechowski
+author: mestew
+ms.author: mstewart
 manager: dougeby
-ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 411811c4047cd781d0edcd5cc345ff82acc80f91
-ms.sourcegitcommit: 0a23cde6112cbb5987f433bffcf6f223b994ba72
+ms.openlocfilehash: 976a6b149175b817ea7039faf1f909a73f2b514d
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56667446"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65500532"
 ---
 #  <a name="using-configuration-manager-software-updates-to-deliver-definition-updates"></a>Configuration Manager 소프트웨어 업데이트를 사용 하 여 정의 업데이트를 제공 하려면
 
@@ -52,7 +52,7 @@ ms.locfileid: "56667446"
 7. 마법사 **배포 설정** 페이지의 **세부 정보 수준** 목록에서 **오류 메시지만**을 선택하고 **다음**을 클릭합니다.
 
    > [!NOTE]
-   >  선택 **오류 메시지만** 정의 배포에서 반환 된 상태 메시지 수가 줄어듭니다. 이 구성을 사용하면 Configuration Manager 서버에서 CPU 처리 사용량을 줄일 수 있습니다.
+   >  **오류 메시지만**을 선택하면 정의 배포에서 반환된 상태 메시지의 수가 줄어듭니다. 이 구성을 사용하면 Configuration Manager 서버에서 CPU 처리 사용량을 줄일 수 있습니다.
 
 8. **속성 필터** 목록에서 **업데이트 분류** 확인란을 선택합니다.
 

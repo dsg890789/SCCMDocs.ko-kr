@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
 ms.assetid: d837253e-fcc2-422a-9e2c-c78b938dfd8c
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f7528f15c67e8ce339013db583d545cb252712d
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 1b8bda1fd21ed3281142a717b768ff7d8c6ac3c3
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56125666"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65500417"
 ---
 # <a name="troubleshooting-windows-defender-or-endpoint-protection-client"></a>Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결
 
@@ -234,7 +234,7 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 3.  케이블 모뎀 또는 DSL 라우터를 사용하는 경우 라우터 및 컴퓨터에 대한 연결에 문제가 없는지 확인합니다. 라우터 및 모뎀을 뽑은 후 끕니다. 잠시 기다렸다가 먼저 모뎀을 꽂고, 1분 정도 기다렸다가 라우터를 꽂은 후 컴퓨터를 다시 시작합니다.  
 
 ##  <a name="detected-threat-cant-be-remediated"></a>재구성할 수 없는 위협 감지  
- Windows Defender 또는 Endpoint Protection에서 .zip 파일 확장자의 압축 파일 또는 네트워크 공유 파일에 숨어 있는 잠재적인 위협을 검색하면 이 위협을 격리하거나 제거하는 방법으로 처리하려고 합니다.  
+ Windows Defender 또는 Endpoint Protection에서 .zip 파일 이름 확장명의 압축 파일 또는 네트워크 공유 파일에 숨어 있는 잠재적인 위협을 검색하면 이 위협을 격리하거나 제거하는 방법으로 처리하려고 합니다.  
 
 ### <a name="remove-or-scan-the-file"></a>파일 제거 또는 검사  
 

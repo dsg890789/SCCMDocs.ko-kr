@@ -2,7 +2,7 @@
 title: 하위 구성 항목 만들기
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에서 자식 구성 항목을 만듭니다.
-ms.date: 10/06/2016
+ms.date: 05/07/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-compliance
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42b6bceacf8d8ecd733e4d13b882fe3b5c0500e7
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 0b88ee7eaac8df8ffce93937f3a3f2616b9e085b
+ms.sourcegitcommit: 417e3834a42b415a8e129327dd3c15cc0c7ec5a2
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56135748"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65443166"
 ---
 # <a name="how-to-create-child-configuration-items-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 자식 구성 항목을 만드는 방법
 
@@ -25,7 +25,7 @@ ms.locfileid: "56135748"
 System Center Configuration Manager의 자식 구성 항목은 부모 구성 항목에서 원본 구성을 상속한다는 점에서 원본 구성 항목에 대한 관계를 유지하는 구성 항목의 복사본입니다.  
 
 Configuration Manager 콘솔에서 자식 구성 항목의 속성을 볼 때 상속된 개체 및 설정과 해당 유효성 검사 기준은 편집할 수 없습니다. 그러나 추가 유효성 검사 조건을 자식 구성 항목에 추가하고 편집할 수 있으며 또한 자식 구성 항목에 새 개체 및 설정을 추가할 수도 있습니다.
-자식 구성 항목을 만들고 편집하는 일반적인 목적은 원본 구성 항목을 구체화하여 비즈니스 요구 사항을 충족하기 위해서입니다.  
+자식 구성 항목을 만들고 편집하는 한 가지 예는 원본 구성 항목을 구체화하여 비즈니스 요구 사항을 충족하는 경우입니다.  
 
 > [!NOTE]  
 >  자식 구성 항목은 **Windows 데스크톱 및 서버(사용자 지정)** 형식의 구성 항목에서만 만들 수 있습니다.  

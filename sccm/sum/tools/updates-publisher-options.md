@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
 ms.assetid: 4e620080-5400-45bb-87c2-fbdbc8aeacac
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17a233c7f71edfd9d294c33ee3b9813cc581b8c6
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 7a26aaa2d4e409e899763cedebd32ebf64c93ffa
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56124141"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65496373"
 ---
 # <a name="configure-options-for-updates-publisher"></a>Updates Publisher의 옵션 구성
 
@@ -74,15 +74,15 @@ WSUS(Windows Server Update Services)와 같은 업데이트 서버에서 작동�
 ## <a name="configmgr-server"></a>ConfigMgr 서버
 Updates Publisher에서 Configuration Manager를 사용할 경우 이러한 옵션을 사용합니다.
 
--   **Configuration Manager 서버 지정:** Configuration Manager에 대한 지원을 사용하도록 설정한 후에 Configuration Manager 계층 구조에서 최상위 계층 사이트 서버의 위치를 지정합니다. 해당 서버가 Updates Publisher 설치의 원격 서버인 경우 사이트 서버의 FQDN을 지정합니다. **연결 테스트**를 선택하여 사이트 서버에 연결할 수 있는지 확인합니다.
+-   **Configuration Manager 서버 지정:** Configuration Manager에 대한 지원을 사용하도록 설정한 후 Configuration Manager 계층 구조에서 최상위 계층 사이트 서버의 위치를 지정합니다. 해당 서버가 Updates Publisher 설치의 원격 서버인 경우 사이트 서버의 FQDN을 지정합니다. **연결 테스트**를 선택하여 사이트 서버에 연결할 수 있는지 확인합니다.
 
--   **임계값 구성:** 임계값은 자동 게시물 형식을 사용하여 업데이트를 게시할 때 사용됩니다. 임계값은 메타데이터만이 아닌, 업데이트에 대한 전체 콘텐츠가 게시되는 시기를 결정하는 데 도움이 됩니다. 게시물 유형에 대한 자세한 내용은 [게시물에 업데이트 할당](/sccm/sum/tools/manage-updates-with-updates-publisher#assign-updates-and-bundles-to-a-publication)을 참조하세요.
+-   **임계값 구성:** 임계값은 자동 게시물 유형으로 업데이트를 게시할 때 사용됩니다. 임계값은 메타데이터만이 아닌, 업데이트에 대한 전체 콘텐츠가 게시되는 시기를 결정하는 데 도움이 됩니다. 게시물 유형에 대한 자세한 내용은 [게시물에 업데이트 할당](/sccm/sum/tools/manage-updates-with-updates-publisher#assign-updates-and-bundles-to-a-publication)을 참조하세요.
 
     다음 임계값 중 하나 또는 둘 다 사용할 수 있습니다.
 
-    -   **요청된 클라이언트 수 임계값:** 여기서는 Updates Publisher에서 해당 업데이트의 전체 콘텐츠 세트를 자동으로 게시하기 전에 업데이트를 요청해야 할 클라이언트 수를 정의합니다. 지정된 수의 클라이언트가 업데이트를 요청할 때까지 업데이트 메타데이터만 게시됩니다.
+    -   **요청된 클라이언트 수 임계값:** Updates Publisher에서 해당 업데이트의 전체 콘텐츠 집합을 자동으로 게시하기 전에 업데이트를 요청해야 할 클라이언트 수를 정의합니다. 지정된 수의 클라이언트가 업데이트를 요청할 때까지 업데이트 메타데이터만 게시됩니다.
 
-    -   **패키지 원본 크기 임계값(MB):** 여기서는 지정한 크기를 초과하는 업데이트가 자동 게시되지 않도록 합니다. 업데이트 크기가 이 값을 초과하는 경우 메타데이터만 게시됩니다. 지정된 크기보다 작은 업데이트의 경우 전체 콘텐츠를 게시할 수 있습니다.
+    -   **패키지 원본 크기 임계값(MB):** 지정한 크기를 초과하는 업데이트가 자동 게시되지 않도록 합니다. 업데이트 크기가 이 값을 초과하는 경우 메타데이터만 게시됩니다. 지정된 크기보다 작은 업데이트의 경우 전체 콘텐츠를 게시할 수 있습니다.
 
 ## <a name="proxy-settings"></a>프록시 설정
 Updates Publisher는 인터넷에서 소프트웨어 카탈로그를 가져오거나 인터넷에 업데이트를 게시할 때 프록시 설정을 사용합니다.
@@ -103,15 +103,15 @@ Updates Publisher는 인터넷에서 소프트웨어 카탈로그를 가져오�
 
 -   **리포지토리 위치:** **scupdb.sdf** 데이터베이스 파일의 위치를 보고 수정합니다. 이 파일은 Updates Publisher의 리포지토리입니다.
 
--   **타임스탬프:** 이 옵션을 사용하도록 설정하면 서명한 업데이트에 타임스탬프가 추가되어 서명된 시기를 식별할 수 있습니다. 인증서가 유효한 동안 서명된 업데이트는 서명 인증서가 만료된 이후에도 사용할 수 있습니다. 기본적으로 소프트웨어 업데이트는 서명 인증서가 만료된 후에는 배포할 수 없습니다.
+-   **타임스탬프:** 사용하도록 설정하면 서명하는 업데이트에 타임스탬프가 추가되어 서명 시기를 식별할 수 있습니다. 인증서가 유효한 동안 서명된 업데이트는 서명 인증서가 만료된 이후에도 사용할 수 있습니다. 기본적으로 소프트웨어 업데이트는 서명 인증서가 만료된 후에는 배포할 수 없습니다.
 
--   **구독 카탈로그에 대한 업데이트 확인:** Updates Publisher가 시작될 때마다 구독한 카탈로그에 대한 업데이트를 자동으로 확인할 수 있습니다. 카탈로그 업데이트를 찾으면 세부 정보가 **업데이트 작업 영역**의 **개요** 창에 **최근 경고**로 제공됩니다.
+-   **구독 카탈로그에 대한 업데이트 확인:** Updates Publisher가 시작될 때마다 구독하는 카탈로그에 대한 업데이트를 자동으로 확인할 수 있습니다. 카탈로그 업데이트를 찾으면 세부 정보가 **업데이트 작업 영역**의 **개요** 창에 **최근 경고**로 제공됩니다.
 
 -   **인증서 해지:** 인증서 해지 확인을 사용하도록 설정하려면 이 옵션을 선택합니다.
 
 -   **로컬 원본 게시:** Updates Publisher는 인터넷에서 해당 업데이트를 다운로드하기 전에 게시 중인 업데이트의 로컬 복사본을 사용할 수 있습니다. 위치는 Updates Publisher를 실행하는 컴퓨터에 있는 폴더여야 합니다. 기본적으로 이 위치는 **My Documents\LocalSourcePublishing**입니다. 이전에 하나 이상의 업데이트를 다운로드했거나 배포하려는 업데이트를 수정한 경우 이 옵션을 사용합니다.
 
--   **소프트웨어 업데이트 정리 마법사:** 업데이트 정리 마법사를 시작합니다. 마법사는 업데이트 서버에 있지만 Updates Publisher 리포지토리에 없는 업데이트를 만료시킵니다. 자세한 내용은 [참조되지 않은 업데이트 만료](#expire-unreferenced-software-updates)를 참조하세요.
+-   **Software Updates Cleanup Wizard**(소프트웨어 업데이트 정리 마법사): 업데이트 정리 마법사를 시작합니다. 마법사는 업데이트 서버에 있지만 Updates Publisher 리포지토리에 없는 업데이트를 만료시킵니다. 자세한 내용은 [참조되지 않은 업데이트 만료](#expire-unreferenced-software-updates)를 참조하세요.
 
 ## <a name="updates"></a>업데이트
  Updates Publisher가 열릴 때마다 자동으로 새 업데이트를 확인할 수 있습니다. Updates Publisher의 미리 보기 빌드 수신을 선택할 수도 있습니다.
@@ -122,7 +122,7 @@ Updates Publisher는 인터넷에서 소프트웨어 카탈로그를 가져오�
 Updates Publisher가 새 업데이트를 찾은 후 **업데이트 사용 가능** 창이 표시되면 업데이트를 설치하도록 선택할 수 있습니다. 업데이트를 설치하지 않도록 선택하는 경우 다음 콘솔을 열 때 제공됩니다.
 
 ## <a name="logging"></a>로깅
-Updates Publisher는 **&lt;*path*&gt;\Windows\Temp\UpdatesPublisher.log**에 Updates Publisher에 대한 기본 정보를 기록합니다.
+Updates Publisher는 **%WINDIR%\Temp\UpdatesPublisher.log**에 Updates Publisher에 대한 기본 정보를 기록합니다.
 
 로그를 보려면 메모장 또는 **CMTrace**를 사용합니다. CMTrace는 Configuration Manager 로그 파일 도구이며 Configuration Manager 원본 미디어의 **\SMSSetup\Tools** 폴더에 있습니다.
 

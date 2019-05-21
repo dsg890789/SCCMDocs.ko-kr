@@ -2,8 +2,8 @@
 title: 소프트웨어 업데이트 배포
 titleSuffix: Configuration Manager
 description: Configuration Manager 콘솔에서 소프트웨어 업데이트를 수동 또는 자동으로 배포하는 방법에 대해 알아봅니다.
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.date: 11/27/2018
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 04536d51-3bf7-45e5-b4af-36ceed10583d
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cabcb57a429e0fb14732cead98902ca5b43957af
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: d01e01bf8318e5d4016420044a5f2f49c9b6965c
+ms.sourcegitcommit: 53f2380ac67025fb4a69fc1651edad15d98e0cdd
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156766"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673367"
 ---
 # <a name="deploy-software-updates"></a>소프트웨어 업데이트 배포  
 
@@ -114,7 +114,8 @@ ADR을 만든 후 규칙에 추가 배포를 추가합니다. 이 작업을 통�
 
 ## <a name="bkmk_phased"></a> 단계별 소프트웨어 업데이트 배포
 
-<!--1358146--> 1810 버전부터 소프트웨어 업데이트에 대한 단계별 배포를 만듭니다. 단계적 배포에서는 사용자 지정 가능한 조건 및 그룹에 따라 소프트웨어 출시를 조정하고 순차적으로 진행할 수 있습니다.
+<!--1358146-->
+1810 버전부터 소프트웨어 업데이트에 대한 단계별 배포를 만듭니다. 단계적 배포에서는 사용자 지정 가능한 조건 및 그룹에 따라 소프트웨어 출시를 조정하고 순차적으로 진행할 수 있습니다.
 
 자세한 내용은 [단계적 배포 만들기](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence?toc=/sccm/sum/toc.json&bc=/sccm/sum/breadcrumb/toc.json)를 참조하세요.
 

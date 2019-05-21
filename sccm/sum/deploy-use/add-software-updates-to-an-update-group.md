@@ -2,21 +2,21 @@
 title: '업데이트 그룹에 업데이트 추가 '
 titleSuffix: Configuration Manager
 description: 사용자 환경에서 소프트웨어 업데이트 그룹에 소프트웨어 업데이트를 수동 또는 자동으로 추가합니다.
-author: aczechowski
 ms.date: 03/18/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: a0767664-fd60-46a8-9da5-86cc431ce53c
 manager: dougeby
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0657877c22aa8ce2382408821d5b61f5fded151d
-ms.sourcegitcommit: d71e558db2da124357b840332e2da671b3810507
+ms.openlocfilehash: b207d0c210aa25489d67a5a551bf795e86c1582b
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58269002"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65500243"
 ---
 # <a name="add-software-updates-to-an-update-group"></a>업데이트 그룹에 소프트웨어 업데이트 추가  
 
@@ -49,7 +49,7 @@ ms.locfileid: "58269002"
 3.  새 소프트웨어 업데이트 그룹에 추가할 소프트웨어 업데이트를 선택합니다.  
 
     > [!NOTE]  
-    >  에 **모든 소프트웨어 업데이트** 노드에서 Configuration Manager에서 제외 하 고 모든 업데이트를 표시 합니다 **업그레이드** 분류 하 고 **Office 365 클라이언트** 제품 분류 합니다.  
+    >  **모든 소프트웨어 업데이트** 노드에서 Configuration Manager는 **업그레이드** 분류 및 **Office 365 클라이언트** 제품 분류에 포함된 업데이트를 제외한 모든 업데이트를 표시합니다.  
 
 4.  **홈** 탭의 **업데이트** 그룹에서 **멤버 자격 편집**을 클릭합니다.  
 

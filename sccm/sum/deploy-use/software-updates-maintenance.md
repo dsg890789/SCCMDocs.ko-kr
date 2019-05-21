@@ -11,12 +11,12 @@ ms.assetid: 4b0e2e90-aac7-4d06-a707-512eee6e576c
 manager: dougeby
 ms.author: mstewart
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5146ba92da82aad6c8dfbf4d961a52e197d0a9b2
-ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
+ms.openlocfilehash: 1f8624e898e22ebb2eef66d72a242d02b36d342d
+ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58523829"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65083352"
 ---
 # <a name="software-updates-maintenance"></a>소프트웨어 업데이트 유지 관리
 
@@ -80,7 +80,7 @@ Configuration Manager 1806 버전 이전의 WSUS 정리 옵션에서 실행하�
 
 ## <a name="wsus-cleanup-behavior-starting-in-version-1810"></a>1810 버전부터 시작하는 WSUS 정리 동작
 
-1810 버전부터 소프트웨어 업데이트 지점 구성 요소 속성에서 비 기능 업데이트와 별도로 기능 업데이트에 대 한 대체 규칙을 지정할 수 있습니다. WSUS 정리 옵션은 동기화를 완료할 때마다 발생하고 정리 항목을 수행합니다.
+1810 버전부터 소프트웨어 업데이트 지점 구성 요소 속성에서 비기능 업데이트와는 별도로 기능 업데이트에 대한 대체 규칙을 지정할 수 있습니다. WSUS 정리 옵션은 동기화를 완료할 때마다 발생하고 정리 항목을 수행합니다.
 <!--2839349,3098809, 2977644-->
 
 - CAS, 기본 사이트 및 보조 사이트의 WSUS 서버에 대한 **만료된 업데이트** 옵션입니다.

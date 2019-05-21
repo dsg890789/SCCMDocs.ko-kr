@@ -2,8 +2,8 @@
 title: 분류 및 제품 구성
 titleSuffix: Configuration Manager
 description: 다음 단계에 따라 Configuration Manager 콘솔에서 동기화할 소프트웨어 업데이트 분류 및 제품을 구성하세요.
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.date: 02/15/2019
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 5ddde4e6-d553-4182-b752-6bc8b4a26745
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f1d984598288434aa1e81c6bd2c51a315edfa551
-ms.sourcegitcommit: fd16fc2b681608fd6def5bad2cedffbcd1f2423a
-ms.translationtype: HT
+ms.openlocfilehash: 747e66adb8f6ce0d013073463ee2472785d3bb70
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56405695"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65500004"
 ---
 #  <a name="configure-classifications-and-products-to-synchronize"></a>동기화할 분류 및 제품 구성  
 
@@ -49,7 +49,7 @@ ms.locfileid: "56405695"
     > - **도구**: 하나 이상의 작업을 완료하는 데 도움이 되는 유틸리티 또는 기능을 지정합니다.  
     > - **업데이트 롤업**: 손쉬운 배포를 위해 하나의 패키지로 묶인 핫픽스, 보안 업데이트, 중요 업데이트 및 업데이트의 테스트된 누적 집합입니다. 업데이트 롤업은 일반적으로 보안 또는 제품 구성 요소 등과 같은 특정 영역을 다룹니다.  
     > - **업데이트**: 특정 문제에 대해 광범위하게 릴리스되는 수정 사항을 지정합니다. 업데이트는 중요하지 않으면서 보안과는 무관한 버그를 해결합니다.  
-    > - **업그레이드**: Windows 10 기능 및 작동에 대한 업그레이드를 지정합니다. **업그레이드** 분류를 가져오려면 소프트웨어 업데이트 지점 및 사이트에서 [핫픽스 3095113](https://support.microsoft.com/kb/3095113)이 있는 최소 WSUS 4.0을 실행해야 합니다.    
+    > - **업그레이드**: Windows 10 기능에 대한 업그레이드를 지정합니다. **업그레이드** 분류를 가져오려면 소프트웨어 업데이트 지점 및 사이트에서 [핫픽스 3095113](https://support.microsoft.com/kb/3095113)이 있는 최소 WSUS 4.0을 실행해야 합니다.    
     >       
 
     > [!NOTE]    

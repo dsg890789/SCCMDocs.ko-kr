@@ -5,18 +5,18 @@ description: 비즈니스용 Windows 업데이트를 사용하면 Windows 업데
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.date: 03/28/2019
+ms.date: 04/25/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 183315fe-27bd-456f-b2c5-e8d25e05229b
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2929782880971b53be3b6013188f65d50d691c05
-ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
+ms.openlocfilehash: 36ab933876b96c0eebe87ba07932757147e334c0
+ms.sourcegitcommit: 9af73f5c1b93f6ccaea3e6a096f75a5fecd65c2f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58523761"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64669118"
 ---
 # <a name="integration-with-windows-update-for-business-in-windows-10"></a>Windows 10에서 비즈니스용 Windows 업데이트와 통합
 
@@ -25,8 +25,8 @@ ms.locfileid: "58523761"
 조직의 Windows 10 기반 디바이스를 WU(Windows 업데이트) 서비스에 직접 연결하면 WUfB(비즈니스용 Windows 업데이트)를 통해 최신 보안 방어 및 Windows 기능을 사용하여 이러한 디바이스를 항상 최신 상태로 유지할 수 있습니다. Configuration Manager는 WUfB 및 WSUS를 사용하여 소프트웨어 업데이트를 가져오는 Windows 10 컴퓨터를 구분할 수 있습니다.  
 
 >[!WARNING]
-> 장치에 대 한 공동 관리를 사용 하는 경우 및 이동 하면 합니다 [Windows 업데이트 정책](/sccm/comanage/workloads#windows-update-policies) intune에 다음 장치 받습니다 해당 [Intune에서 비즈니스용 Windows 업데이트 정책](https://docs.microsoft.com/intune/windows-update-for-business-configure)합니다.
-> - Configuration Manager 클라이언트는 여전히 공동 관리 장치에 설치 하는 경우 누적 업데이트 및 기능 업데이트에 대 한 설정은 Intune에서 관리 됩니다. 그러나에서 사용 하도록 설정 하는 경우 타사 패치 [ **클라이언트 설정**](/sccm/core/clients/deploy/about-client-settings#enable-third-party-software-updates), Configuration Manager에서 계속 관리 됩니다.  
+> 디바이스에 대해 공동 관리를 사용하며 [Windows 업데이트 정책](/sccm/comanage/workloads#windows-update-policies)을 Intune으로 이동한 경우 디바이스는 [Intune에서 비즈니스용 Windows 업데이트 정책](https://docs.microsoft.com/intune/windows-update-for-business-configure)을 받습니다.
+> - 구성 관리자 클라이언트가 여전히 공동 관리 디바이스에 설치되어 있으면 누적 업데이트 및 기능 업데이트에 대한 설정이 Intune에서 관리됩니다. 그러나 [**클라이언트 설정**](/sccm/core/clients/deploy/about-client-settings#enable-third-party-software-updates)에서 사용하도록 지정한 타사 패치는 Configuration Manager에서 계속 관리됩니다.  
 
  Configuration Manager 클라이언트가 WUfB 또는 Windows 참가자를 포함하는 WU에서 업데이트를 수신하도록 구성된 경우에는 일부 Configuration Manager 기능을 더 이상 사용할 수 없습니다.  
 
@@ -44,7 +44,7 @@ ms.locfileid: "58523761"
 
 -   Configuration Manager는 WUfB에 연결하여 업데이트를 받는 클라이언트에 Office, IE, Visual Studio와 같은 Microsoft 업데이트를 배포할 수 없습니다.  
 
--   Configuration Manager는 WUfB에 연결하여 업데이트를 받는 클라이언트에 WSUS에 게시되고 Configuration Manager를 통해 관리되는 타사 업데이트를 배포할 수 있습니다. 모든 타사의 업데이트를 WUfB에 연결 하는 클라이언트에 설치 하지 못하도록 하려는 경우 다음 클라이언트 설정이 명명 된 해제 [클라이언트에서 소프트웨어 업데이트 사용](/sccm/core/clients/deploy/about-client-settings#software-updates)합니다.
+-   Configuration Manager는 WUfB에 연결하여 업데이트를 받는 클라이언트에 WSUS에 게시되고 Configuration Manager를 통해 관리되는 타사 업데이트를 배포할 수 있습니다. WUfB에 연결된 클라이언트에 타사 업데이트를 설치하지 않으려는 경우 클라이언트 설정 [클라이언트에서 소프트웨어 업데이트 사용](/sccm/core/clients/deploy/about-client-settings#software-updates)을 사용하지 않도록 지정합니다.
 
 -   소프트웨어 업데이트 인프라를 사용하는 Configuration Manager 전체 클라이언트 배포는 WUfB에 연결하여 업데이트를 받는 클라이언트에 대해 작동하지 않습니다.  
 

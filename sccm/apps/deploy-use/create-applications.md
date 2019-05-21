@@ -2,7 +2,7 @@
 title: 애플리케이션 만들기
 titleSuffix: Configuration Manager
 description: 배포 유형, 검색 방법 및 소프트웨어를 설치할 요구 사항으로 애플리케이션을 만듭니다.
-ms.date: 03/04/2019
+ms.date: 05/08/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-app
 ms.topic: conceptual
@@ -11,18 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 236ae6e9efafcfe24f064fb643a43524eee3718d
-ms.sourcegitcommit: 4ab85212268e76d3fd22f00e6c74edaa5abde60c
+ms.openlocfilehash: e796996f870fcdd8428f3a16b08eee56d249cfa6
+ms.sourcegitcommit: 53f2380ac67025fb4a69fc1651edad15d98e0cdd
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57426943"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673387"
 ---
 # <a name="create-applications-in-configuration-manager"></a>Configuration Manager에서 애플리케이션 만들기
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Configuration Manager 애플리케이션은 앱에 대한 메타데이터를 정의합니다. 애플리케이션에는 하나 이상의 배포 유형이 있습니다. 이러한 배포 유형에는 디바이스에 소프트웨어를 설치하는 데 필요한 설치 파일과 정보가 포함되어 있습니다. 배포 유형에도 검색 방법 및 요구 사항과 같은 규칙이 있습니다. 이러한 규칙은 클라이언트가 소프트웨어를 설치하는 시기와 방법을 지정합니다.  
+Configuration Manager 애플리케이션은 애플리케이션에 대한 메타데이터를 정의합니다. 애플리케이션에는 하나 이상의 배포 유형이 있습니다. 이러한 배포 유형에는 디바이스에 소프트웨어를 설치하는 데 필요한 설치 파일과 정보가 포함되어 있습니다. 배포 유형에도 검색 방법 및 요구 사항과 같은 규칙이 있습니다. 이러한 규칙은 클라이언트가 소프트웨어를 설치하는 시기와 방법을 지정합니다.  
 
 다음 방법을 사용하여 애플리케이션을 만듭니다.  
 
@@ -88,7 +88,7 @@ Configuration Manager 애플리케이션은 앱에 대한 메타데이터를 정
 
     -   **자동 VPN 연결 사용(구성하는 경우)**: 사용자가 앱을 시작하는 디바이스에 VPN 프로필을 배포한 경우 앱을 시작하면 VPN을 연결합니다. 이 옵션은 Windows 8.1 및 Windows Phone 8.1에만 적용됩니다. Windows Phone 8.1 디바이스에서는 둘 이상의 VPN 프로필을 디바이스에 배포하는 경우 자동 VPN 연결이 지원되지 않습니다. 자세한 내용은 [VPN 프로필](/sccm/protect/deploy-use/vpn-profiles)을 참조하세요.  
 
-    - **장치에서 모든 사용자에 대해 이 애플리케이션 프로비전**<!--1358310-->: 버전 1806부터 장치에서 모든 사용자에 대해 Windows 앱 패키지를 사용하여 애플리케이션을 프로비전합니다. 자세한 내용은 [Windows 애플리케이션 만들기](/sccm/apps/get-started/creating-windows-applications#bkmk_provision)를 참조하세요.  
+    - **디바이스의 모든 사용자에 대해 이 애플리케이션 프로비저닝**<!--1358310-->: 버전 1806부터 디바이스에서 모든 사용자에 대해 Windows 앱 패키지를 사용하여 애플리케이션을 프로비저닝합니다. 자세한 내용은 [Windows 애플리케이션 만들기](/sccm/apps/get-started/creating-windows-applications#bkmk_provision)를 참조하세요.  
 
        > [!Tip]  
        > 기존 애플리케이션을 수정하는 경우 이 설정은 Windows 앱 패키지 배포 유형 속성의 **사용자 경험** 탭에 있습니다.  
@@ -126,6 +126,9 @@ Configuration Manager 콘솔의 **애플리케이션** 노드에 새 애플리�
         > 지역화된 애플리케이션 이름은 설정하는 각 언어 버전에 필요합니다.  
 
     -   **사용자 범주**: **편집**을 선택하여 선택한 언어로 애플리케이션 범주를 지정합니다. 소프트웨어 센터의 사용자는 이러한 범주를 사용하여 사용 가능한 애플리케이션을 필터링하고 정렬할 수 있습니다.  
+
+        > [!IMPORTANT]  
+        > 사용자 범주는 사용자 컬렉션에 대한 배포에만 적용됩니다.  애플리케이션이 컴퓨터 컬렉션에 배포되면 사용자 범주는 무시됩니다.
 
     -   **사용자 설명서**: 소프트웨어 센터 사용자가 이 애플리케이션에 대해 자세한 정보를 얻기 위해 읽을 수 있는 파일의 위치를 지정합니다. 이 위치는 웹 사이트 주소 또는 네트워크 경로 및 파일 이름입니다. 사용자가 이 위치에 대한 액세스 권한이 있는지 확인합니다.  
 
@@ -272,7 +275,7 @@ Configuration Manager 콘솔의 **애플리케이션** 노드에 새 애플리�
 
 ### <a name="bkmk_dt-detect"></a> 배포 유형 **검색 방법** 옵션   
 
-이 절차에서는 배포 유형의 존재를 나타내는 검색 방법을 설정합니다. 즉, Windows 장치에 이미 애플리케이션이 설치되어 있는지 여부를 말합니다. 검색 메서드를 만들려면 다음 두 가지 방법 중 하나를 사용합니다.  
+이 절차에서는 배포 유형의 존재를 나타내는 검색 방법을 설정합니다. 즉, Windows 디바이스에 이미 응용 프로그램이 설치되어 있는지 여부를 말합니다. 검색 메서드를 만들려면 다음 두 가지 방법 중 하나를 사용합니다.  
 - [이 배포 유형의 존재를 검색하는 규칙 구성](#bkmk_detect-rule)
 - [사용자 지정 스크립트를 사용하여 이 배포 유형의 존재를 검색](#bkmk_detect-script)
 
@@ -289,7 +292,7 @@ Configuration Manager 콘솔의 **애플리케이션** 노드에 새 애플리�
 
         - **경로**(필수): 파일 또는 폴더를 포함하는 장치에서 로컬 경로를 입력하거나 찾습니다. 예: `C:\Program Files` 공유 네트워크 경로를 지정할 수 없습니다. **찾아보기**를 클릭하면 로컬 파일 시스템을 찾아보거나 찾아볼 대표 클라이언트에 연결합니다.  
 
-        - **파일 또는 폴더 이름**(필수): 위의 경로에서 검색할 특정 파일 또는 폴더 이름을 지정합니다. 클라이언트가 장치에서 이 파일 또는 폴더를 검색하면 애플리케이션이 장치에 설치된 것으로 고려합니다.  
+        - **파일 또는 폴더 이름**(필수): 위의 경로에서 검색할 특정 파일 또는 폴더 이름을 지정합니다. 클라이언트가 디바이스에서 이 파일 또는 폴더를 검색하면 응용 프로그램이 디바이스에 설치된 것으로 고려합니다.  
 
         - **이 파일 또는 폴더는 64비트 시스템에서 32비트 애플리케이션과 연결됨**: 이 옵션은 기본적으로 선택됩니다. 클라이언트는 먼저 지정된 파일 또는 폴더에 대한 32비트 파일 위치를 확인합니다. 파일 또는 폴더를 찾을 수 없으면 클라이언트는 64비트 위치를 검색합니다.  
 
@@ -321,7 +324,7 @@ Configuration Manager 콘솔의 **애플리케이션** 노드에 새 애플리�
 2.  **스크립트 편집기** 대화 상자에서 **스크립트 유형** 드롭다운 목록을 클릭합니다. 다음 스크립트 언어 중 하나를 선택하여 배포 유형을 검색합니다. PowerShell, VBScript 또는 JScript.  
 
     > [!Note]  
-    > Configuration Manager 클라이언트를 사용 하 여 PowerShell 호출 버전부터 Windows PowerShell 스크립트를 실행 하면 앱의 검색 방법으로 1810의 `-NoProfile` 매개 변수입니다. 이 옵션은 프로필 없이 PowerShell을 시작합니다. PowerShell 프로필은 PowerShell이 시작될 때 실행되는 스크립트입니다. <!--3607762-->  
+    > 버전 1810부터, Windows PowerShell 스크립트를 앱 검색 방법으로 실행하면 구성 관리자 클라이언트는 `-NoProfile` 매개 변수를 사용하여 PowerShell을 호출합니다. 이 옵션은 프로필 없이 PowerShell을 시작합니다. PowerShell 프로필은 PowerShell이 시작될 때 실행되는 스크립트입니다. <!--3607762-->  
 
 3.  **스크립트 콘텐츠** 상자에서 사용할 스크립트를 입력하거나 기존 스크립트의 콘텐츠에 붙여넣습니다. 기존에 저장된 스크립트를 찾아보려면 **열기**를 선택합니다. 스크립트 콘텐츠 필드에서 텍스트를 제거하려면 **지우기**를 클릭합니다. 필요한 경우 **64 비트 클라이언트에서 32비트 프로세스로 스크립트 실행**에 대한 옵션을 사용하도록 설정합니다.  
 
@@ -393,7 +396,7 @@ WScript.Quit(0)
 
 ### <a name="bkmk_dt-ux"></a> 배포 유형 **사용자 환경** 옵션   
 
-이러한 설정은 클라이언트가 애플리케이션을 장치에 설치하는 방법 및 사용자에게 표시되는 항목을 지정합니다.  
+이러한 설정은 클라이언트가 응용 프로그램을 디바이스에 설치하는 방법 및 사용자에게 표시되는 항목을 지정합니다.  
 
 **사용자 환경** 페이지에서 다음 정보를 지정합니다.  
 
@@ -403,7 +406,7 @@ WScript.Quit(0)
 
     - **시스템용 설치**: 클라이언트가 애플리케이션을 한 번만 설치합니다. 모든 사용자가 사용할 수 있습니다.  
 
-    - **리소스가 장치인 경우 시스템용으로 설치, 그렇지 않으면 사용자용으로 설치**: 애플리케이션을 장치에 배포하는 경우 클라이언트가 모든 사용자용으로 설치합니다. 애플리케이션을 사용자에게 배포하는 경우 클라이언트는 해당 사용자용으로만 설치합니다.  
+    - **리소스가 디바이스인 경우 시스템용으로 설치, 그렇지 않으면 사용자용으로 설치**: 애플리케이션을 디바이스에 배포하는 경우 클라이언트가 모든 사용자용으로 설치합니다. 애플리케이션을 사용자에게 배포하는 경우 클라이언트는 해당 사용자용으로만 설치합니다.  
 
 - **로그온 요구 사항**: 다음 옵션 중 하나를 선택합니다.  
 
@@ -466,7 +469,7 @@ WScript.Quit(0)
 
 ### <a name="bkmk_dt-require"></a> 배포 유형 **요구 사항**
 
-Configuration Manager는 배포 유형을 설치하기 전에 디바이스에서 이러한 요구 사항을 확인합니다. 요구 사항을 사용하여 이 애플리케이션을 수신하는 장치 또는 사용자를 더 구체화하고 제어합니다. 예를 들어 사용자 컬렉션에 애플리케이션을 배포하는 경우 여기에서 앱의 하드웨어 요구 사항을 지정합니다. 
+Configuration Manager는 배포 유형을 설치하기 전에 디바이스에서 이러한 요구 사항을 확인합니다. 요구 사항을 사용하여 이 응용 프로그램을 수신하는 디바이스 또는 사용자를 더 구체화하고 제어합니다. 예를 들어 사용자 컬렉션에 애플리케이션을 배포하는 경우 여기에서 앱의 하드웨어 요구 사항을 지정합니다. 
 
 1.  **요구 사항** 페이지에서 **추가**를 클릭하여 **요구 사항 만들기** 대화 상자를 엽니다.  
 
@@ -475,7 +478,7 @@ Configuration Manager는 배포 유형을 설치하기 전에 디바이스에서
     **사용자 지정**을 선택하여 이전에 만든 글로벌 조건을 사용합니다. 또한 **사용자 지정**을 선택하면 **만들기**를 선택하여 새 글로벌 조건을 만들 수 있습니다. 글로벌 조건에 대한 자세한 내용은 [글로벌 조건을 만드는 방법](/sccm/apps/deploy-use/create-global-conditions)을 참조하세요.  
 
     > [!IMPORTANT]  
-    >  애플리케이션을 장치 컬렉션에 배포하는 경우 클라이언트는 **사용자** 범주 및 **기본 장치** 조건의 요구 사항을 무시합니다.  
+    >  응용 프로그램을 디바이스 컬렉션에 배포하는 경우 클라이언트는 **사용자** 범주 및 **기본 디바이스** 조건의 요구 사항을 무시합니다.  
 
 3.  **조건** 드롭다운 목록에서 사용자 또는 디바이스가 설치 요구 사항을 충족하는지 여부를 평가하기 위한 조건을 선택합니다. 이 목록의 콘텐츠는 선택한 범주에 따라 달라집니다.  
 
@@ -660,7 +663,7 @@ Configuration Manager는 애플리케이션에 대해 다음과 같은 배포 �
 | **Android용 앱 패키지(\*.apk 파일)** | Android 앱 패키지 파일입니다. |  
 | **Google Play의 Android용 앱 패키지** | Google Play 스토어에서 앱에 대한 링크를 지정합니다. |  
 | **Mac OS X** | Configuration Manager 클라이언트를 실행하는 macOS 컴퓨터용입니다. **CMAppUtil** 도구를 사용하여 .cmmac 파일을 만듭니다. |  
-| **웹 애플리케이션** | 웹 애플리케이션에 대한 링크를 지정합니다. 이 배포 유형은 사용자의 장치에서 웹 애플리케이션에 대한 바로 가기를 설치합니다.<sup>[참고 2](#bkmk_note2)</sup> |  
+| **웹 애플리케이션** | 웹 애플리케이션에 대한 링크를 지정합니다. 이 배포 유형은 사용자의 디바이스에서 웹 응용 프로그램에 대한 바로 가기를 설치합니다.<sup>[참고 2](#bkmk_note2)</sup> |  
 | **MDM(\*.msi)을 사용하는 Windows Installer** | Windows 10 디바이스에 Windows Installer 기반 앱을 만들고 배포합니다. 자세한 내용은 [Windows Installer 앱을 MDM 등록 Windows 10 디바이스에 배포](/sccm/apps/get-started/creating-windows-applications#bkmk_mdm-msi)를 참조하세요. |  
 
 #### <a name="bkmk_note1"></a> 참고 1: Windows 앱 패키지(Windows 스토어)
@@ -673,7 +676,7 @@ iOS 또는 Android 디바이스에서 Microsoft Intune 관리 브라우저를 �
 - `http-intunemam://<path to web app>`
 - `https-intunemam://<path to web app>`
 
-Configuration Manager [애플리케이션 요구 사항](#bkmk_dt-require)을 사용하여 관리되는 브라우저를 사용하는 웹 앱이 iOS 및 Android 장치에만 설치되도록 해야 합니다. 
+Configuration Manager [응용 프로그램 요구 사항](#bkmk_dt-require)을 사용하여 관리되는 브라우저를 사용하는 웹 앱이 iOS 및 Android 디바이스에만 설치되도록 해야 합니다. 
 
 Intune Managed Browser에 대한 자세한 내용은 [Managed Browser 정책을 사용하여 인터넷 액세스 관리](/sccm/apps/deploy-use/manage-internet-access-using-managed-browser-policies)를 참조하세요.
 
@@ -685,7 +688,7 @@ Configuration Manager에서 애플리케이션을 만든 후 다음 단계는 [�
 
 다른 OS 플랫폼에서 애플리케이션을 만드는 방법에 대한 자세한 내용은 다음 문서를 참조하세요.  
 - [Windows 애플리케이션 만들기](/sccm/apps/get-started/creating-windows-applications)
-- [모바일 장치용 애플리케이션 만들기](/sccm/mdm/deploy-use/create-applications)(iOS, Windows Mobile 및 Android)  
+- [모바일 디바이스용 응용 프로그램 만들기](/sccm/mdm/deploy-use/create-applications)(iOS, Windows Mobile 및 Android)  
 - [Mac 애플리케이션 만들기](/sccm/apps/get-started/creating-mac-computer-applications)
 - [Linux 및 UNIX 서버 애플리케이션 만들기](/sccm/apps/get-started/creating-linux-and-unix-server-applications)
 - [Windows Embedded 애플리케이션 만들기](/sccm/apps/get-started/creating-windows-embedded-applications)

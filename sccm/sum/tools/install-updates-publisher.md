@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37a468a2b9727d66f7d3fe0cafd1aae044585b2a
-ms.sourcegitcommit: e18853c214c95e4d21b2f032aba6d17c21e97027
-ms.translationtype: HT
+ms.openlocfilehash: eb07b154c1da9c7b93f2d8e0f06b825eb52fd561
+ms.sourcegitcommit: 417e3834a42b415a8e129327dd3c15cc0c7ec5a2
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56443956"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65443189"
 ---
 # <a name="install-updates-publisher"></a>Updates Publisher 설치
 
@@ -47,7 +47,7 @@ Updates Publisher를 실행하는 컴퓨터에는 다음이 필요합니다.
 -   **사용 권한**:
     -   설치: 로컬 관리자
     -   대부분의 작업: 로컬 사용자
-    -   게시 또는 WSUS와 관련된 작업: WSUS 서버의 WSUS 관리자 그룹의 멤버입니다.
+    -   게시 또는 WSUS와 관련된 작업: WSUS 서버의 WSUS Administrators 그룹 구성원
 
 ### <a name="supported-languages"></a>지원되는 언어
 Updates Publisher는 영어로만 제공되지만 다른 언어의 업데이트를 관리할 수 있습니다. 언어 지원은 업데이트 게시, 만들기 또는 편집과 같은 작업에 따라 달라집니다.
@@ -103,12 +103,10 @@ Updates Publisher는 영어로만 제공되지만 다른 언어의 업데이트�
 -   러시아어
 -   스페인어
 
-
-
 ## <a name="install-updates-publisher"></a>Updates Publisher 설치
 [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=55543)에서 System Center Updates Publisher를 설치하기 위한 **UpdatesPubliser.msi**를 다운로드합니다.
 
-Updates Publisher를 설치하려면 *필수 조건*을 충족하는 컴퓨터에서 **UpdatesPublisher.msi**를 실행합니다. 설치 관리자는 Updates Publisher를 실행하는 데 필요한 파일을 포함하는 *&lt;path&gt;\Program Files\Microsoft\UpdatesPublisher* 폴더를 만듭니다.
+Updates Publisher를 설치하려면 *필수 조건*을 충족하는 컴퓨터에서 **UpdatesPublisher.msi**를 실행합니다. 설치 관리자는 Updates Publisher를 실행하는 데 필요한 파일을 포함하는 %PROGRAMFILES%\Microsoft\UpdatesPublisher* 폴더를 만듭니다.
 
 이 폴더에는 Updates Publisher를 사용하는 데 필요한 모든 파일이 포함되기 때문에, 이 폴더 및 해당 콘텐츠를 새 위치 또는 컴퓨터에 복사한 다음 해당 위치에서 Updates Publisher를 사용할 수 있습니다. 그러나 Updates Publisher를 실행하려면 새로운 위치 또는 컴퓨터가 필수 조건을 충족해야 합니다.
 
@@ -118,4 +116,3 @@ Updates Publisher를 설치하려면 *필수 조건*을 충족하는 컴퓨터�
  Updates Publisher를 설치한 후에는 Updates Publisher에 대한 [옵션을 구성](updates-publisher-options.md)하는 것이 좋습니다. Updates Publisher의 일부 기능을 사용하려면 일부 옵션을 구성해야 합니다.
 
  그러나 기본값을 사용하고 업데이트 서버 또는 관리 디바이스에 업데이트를 배포하지 않으려면 [소프트웨어 업데이트 카탈로그 관리](updates-publisher-catalogs.md)로 바로 이동하거나, [소프트웨어 업데이트를 만들고](create-updates-with-updates-publisher.md) 업데이트 카탈로그를 직접 만듭니다.
-

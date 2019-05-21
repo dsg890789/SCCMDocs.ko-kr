@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
 ms.assetid: 946b0f74-0794-4e8f-a6af-9737d877179b
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e361760d9d7a2b21f42dc7b9504d653b584fca0a
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 04963f6c565a9cb83655416dd706d5dd9055a29b
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56132441"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65499907"
 ---
 # <a name="enable-third-party-updates"></a>타사 업데이트 사용 
 

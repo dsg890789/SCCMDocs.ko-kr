@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
 ms.assetid: b670cfaf-96a4-4fcb-9caa-0f2e8c2c6198
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92ac9cbfd8b4c68a818a3988c0ce1f3ec26a2215
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 667dfda7f03c5c39f8a0a2e4ffc2ba38bddf5a0e
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56139173"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65500137"
 ---
 # <a name="optimize-windows-10-update-delivery-with-configuration-manager"></a>Configuration Manager로 Windows 10 업데이트 배달 최적화
 
