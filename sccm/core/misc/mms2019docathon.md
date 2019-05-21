@@ -1,6 +1,6 @@
 ---
 title: MMS 2019 Docathon
-ms.date: 04/18/2019
+ms.date: 05/06/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: ffd912f5776f38f9a5af6fd0b628127d0100c926
-ms.sourcegitcommit: 14d27fa21dea8bbb48a410d01def651c31567bd6
+ms.openlocfilehash: 76970a024e54067aaa6a3059bb95a6c134a2e999
+ms.sourcegitcommit: 99dfe4fb9e9cfd20c44380ae442b3a5b895a0d9b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346666"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65214699"
 ---
 # <a name="mms-2019-docathon"></a>MMS 2019 Docathon
 
@@ -97,7 +97,7 @@ MMS(Midwest Management Summit) 2019 기간에 System Center Configuration Manage
 
 ## <a name="contest-summary"></a>콘테스트 요약
 
-콘테스트는 5월 6일부터 9일까지 일주일 내내 진행됩니다. 모든 등록된 MMS 2019 참석자가 참여할 수 있습니다. 수상자 혜택은 [ConfigMgr 제품 팀 Q&A 세션](https://sched.co/N6ge) 후인 5월 9일 화요일에 제공됩니다. 수상하려면 MMS 2019에 참여해야 하지만 해당 세션에 참석할 필요는 없습니다. 세션에 참석하지 않은 경우 수상하려면 금요일 아침에 Aaron이 떠나기 전에 Aaron에게 문의하세요.
+콘테스트는 5월 6일부터 9일까지 일주일 내내 진행됩니다. 모든 등록된 MMS 2019 참석자가 참여할 수 있습니다. 2019년 5월 9일 목요일 오후 3시까지 신청서를 제출하세요. 수상자 혜택은 [ConfigMgr 제품 팀 Q&A 세션](https://sched.co/N6ge) 후인 5월 9일 화요일에 제공됩니다. 수상하려면 MMS 2019에 참여해야 하지만 해당 세션에 참석할 필요는 없습니다. 세션에 참석하지 않은 경우 수상하려면 금요일 아침에 Aaron이 떠나기 전에 Aaron에게 문의하세요.
 
 > [!Important]  
 > 크레딧을 얻으려면 모든 기여에 **#MMS2019Docathon** 해시태그를 포함해야 합니다.
@@ -206,7 +206,7 @@ Microsoft Cloud + AI 개발자 관계 콘텐츠 및 학습 MMS 2019 Docathon 이
         - 가장 많은 줄 변경
         - 가장 많은 문서 작업
 
-    수상자는 2019년 5월 9일 화요일 오후 5시(중부 표준시) 이후 선정됩니다.
+    수상자는 2019년 5월 9일 목요일 오후 3시(중부 표준시) 이후 선정됩니다.
 
     수상자는 이벤트 중에 알림을 받으며 이벤트 종료 전에 수상자 혜택을 청구해야 합니다.
 
