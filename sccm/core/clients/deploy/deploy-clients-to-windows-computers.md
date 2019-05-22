@@ -2,7 +2,7 @@
 title: Windows에 클라이언트 배포
 titleSuffix: Configuration Manager
 description: Windows 컴퓨터에 Configuration Manager 클라이언트를 배포하는 방법을 알아봅니다.
-ms.date: 07/30/2018
+ms.date: 04/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 639521ecf0084b40bf61ac3d635ab4f5e55d1321
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 3260fb68d9ce334061fc39fe8d40cd68d109655e
+ms.sourcegitcommit: 99dfe4fb9e9cfd20c44380ae442b3a5b895a0d9b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56123848"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65214724"
 ---
 # <a name="how-to-deploy-clients-to-windows-computers-in-configuration-manager"></a>Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법
 
@@ -38,7 +38,7 @@ ms.locfileid: "56123848"
 
 - 컬렉션 내의 특정 컬렉션 또는 리소스에 대해 클라이언트 강제 설치 마법사를 실행하여 클라이언트 강제 설치를 시작합니다.  
 
-- 클라이언트 강제 설치 마법사를 사용하여 결과를 [쿼리](/sccm/core/servers/manage/queries-technical-reference)하는 Configuration Manager 클라이언트를 설치합니다. 성공적으로 설치하려면 쿼리에서 반환되는 항목 중 하나가 **시스템 리소스** 클래스의 **ResourceID** 특성이어야 합니다.   
+- 클라이언트 강제 설치 마법사를 사용하여 결과를 [쿼리](/sccm/core/servers/manage/introduction-to-queries)하는 Configuration Manager 클라이언트를 설치합니다. 성공적으로 설치하려면 쿼리에서 반환되는 항목 중 하나가 **시스템 리소스** 클래스의 **ResourceID** 특성이어야 합니다.   
 
 사이트 서버에서 클라이언트 컴퓨터에 연결하거나 설치 프로세스를 시작할 수 없는 경우 1시간마다 자동으로 설치를 시도합니다. 서버는 최대 7일 동안 계속해서 다시 시도합니다.  
 

@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
 ms.assetid: 375912f5-436d-4315-bdbe-d77afee6c9f3
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc4958e83c73da91aa31fb8ac0e1b84375218ac9
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: c55b7b5bc4effdb1bf1f13dbe0248aa56ad2abe1
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56128207"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65499968"
 ---
 # <a name="how-to-use-resource-explorer-to-view-hardware-inventory-in-configuration-manager"></a>리소스 탐색기를 사용하여 Configuration Manager에서 하드웨어 인벤토리를 확인하는 방법
 
@@ -58,7 +58,8 @@ Configuration Manager에서 리소스 탐색기를 사용하여 하드웨어 인
 
 
 ## <a name="bkmk_bigint"></a> 큰 정수 값 사용
-<!--1357880--> Configuration Manager 버전 1802 이전 버전에서 하드웨어 인벤토리는 4,294,967,296(2^32)보다 큰 정수로 제한됩니다. 하드 드라이브 크기(바이트)와 같은 특성의 경우 이 제한에 도달할 수 있습니다. 관리 지점은 이 제한을 초과하는 정수 값을 처리하지 않으므로 값이 데이터베이스에 저장되지 않습니다. 
+<!--1357880-->
+Configuration Manager 버전 1802 이전 버전에서 하드웨어 인벤토리는 4,294,967,296(2^32)보다 큰 정수로 제한됩니다. 하드 드라이브 크기(바이트)와 같은 특성의 경우 이 제한에 도달할 수 있습니다. 관리 지점은 이 제한을 초과하는 정수 값을 처리하지 않으므로 값이 데이터베이스에 저장되지 않습니다. 
 
 1806 버전부터 제한은 18,446,744,073,709,551,616(2^64)으로 증가되었습니다. 
 

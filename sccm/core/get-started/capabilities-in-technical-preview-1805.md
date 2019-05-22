@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 086f7aa4062ee62a2ee8aaf28df3a1e6e389bdf0
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: f9ef05ac5a931addb5dd5a8dc7d1b04bd4d50e1c
+ms.sourcegitcommit: 417e3834a42b415a8e129327dd3c15cc0c7ec5a2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56139207"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65443104"
 ---
 # <a name="capabilities-in-technical-preview-1805-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1805의 기능
 
@@ -48,7 +48,8 @@ Steps to workaround, if any.
 
 
 ## <a name="create-a-phased-deployment-with-manually-configured-phases-for-a-task-sequence"></a>작업 순서에 대해 수동으로 구성된 단계를 사용하여 단계적 배포 만들기
-<!--1358148--> 이제 작업 순서에 대해 수동으로 구성된 단계를 사용하여 [단계적 배포를 만들 수 있습니다](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence). 단계적 배포 만들기 마법사의 **단계** 탭에서 단계를 최대 10개까지 더 추가할 수 있습니다. 
+<!--1358148-->
+이제 작업 순서에 대해 수동으로 구성된 단계를 사용하여 [단계적 배포를 만들 수 있습니다](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence). 단계적 배포 만들기 마법사의 **단계** 탭에서 단계를 최대 10개까지 더 추가할 수 있습니다. 
 
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
@@ -86,7 +87,8 @@ Steps to workaround, if any.
 
 
 ## <a name="cloud-distribution-point-support-for-azure-resource-manager"></a>Azure Resource Manager에 대한 클라우드 배포 지점 지원
-<!--1322209-->[클라우드 배포 지점](/sccm/core/servers/deploy/configure/install-cloud-based-distribution-points-in-microsoft-azure) 인스턴스를 만들 때 이제 마법사에서 **Azure Resource Manager 배포**를 만들 수 있는 옵션을 제공합니다. [Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview)는 모든 솔루션 리소스를 [리소스 그룹](/azure/azure-resource-manager/resource-group-overview#resource-groups)이라는 단일 엔터티로 관리하기 위한 최신 플랫폼입니다. Azure Resource Manager로 클라우드 배포 지점을 배포하는 경우 사이트에서 Azure AD(Azure Active Directory)를 사용하여 필요한 클라우드 리소스를 인증하고 만듭니다. 이 최신 배포에서는 클래식 Azure 관리 인증서가 필요하지 않습니다.  
+<!--1322209-->
+[클라우드 배포 지점](/sccm/core/servers/deploy/configure/install-cloud-based-distribution-points-in-microsoft-azure) 인스턴스를 만들 때 이제 마법사에서 **Azure Resource Manager 배포**를 만들 수 있는 옵션을 제공합니다. [Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview)는 모든 솔루션 리소스를 [리소스 그룹](/azure/azure-resource-manager/resource-group-overview#resource-groups)이라는 단일 엔터티로 관리하기 위한 최신 플랫폼입니다. Azure Resource Manager로 클라우드 배포 지점을 배포하는 경우 사이트에서 Azure AD(Azure Active Directory)를 사용하여 필요한 클라우드 리소스를 인증하고 만듭니다. 이 최신 배포에서는 클래식 Azure 관리 인증서가 필요하지 않습니다.  
 
 Azure 관리 인증서를 사용하는 **클래식 서비스 배포** 옵션도 클라우드 배포 지점 마법사에서 계속 제공됩니다. 리소스의 배포 및 관리를 간소화하려면 모든 새 클라우드 배포 지점에 Azure Resource Manager 배포 모델을 사용하는 것이 좋습니다. 가능하면 Resource Manager를 통해 기존 클라우드 배포 지점을 재배포합니다.
 
@@ -121,7 +123,8 @@ Configuration Manager는 기존 클래식 클라우드 배포 지점을 Azure Re
 
 
 ## <a name="take-actions-based-on-management-insights"></a>관리 인사이트를 기반으로 작업 수행
-<!--1357930--> 일부 [관리 인사이트](/sccm/core/servers/manage/management-insights)에는 작업을 수행할 수 있는 옵션이 있습니다. 규칙에 따라 이 작업은 다음 동작 중 하나를 보여 줍니다.  
+<!--1357930-->
+일부 [관리 인사이트](/sccm/core/servers/manage/management-insights)에는 작업을 수행할 수 있는 옵션이 있습니다. 규칙에 따라 이 작업은 다음 동작 중 하나를 보여 줍니다.  
 
 - 콘솔에서 추가 작업을 수행할 수 있는 노드로 자동으로 이동합니다. 예를 들어, 관리 인사이트에서 클라이언트 설정을 변경하도록 권장하는 경우 작업을 수행하면 클라이언트 설정 노드로 이동합니다. 기본값 또는 사용자 지정 클라이언트 설정 개체를 수정하여 추가 작업을 수행할 수 있습니다.  
 
@@ -181,7 +184,8 @@ Windows LEDBAT에 대한 자세한 정보는 [New transport advancements](https:
 
 
 ## <a name="cloud-management-dashboard"></a>클라우드 관리 대시보드
-<!--1358461--> 새로운 **클라우드 관리 대시보드**는 CMG(클라우드 관리 게이트웨이) 사용량에 대한 중앙 집중식 보기를 제공합니다. 사이트가 Azure AD에 등록되면 클라우드 사용자 및 디바이스에 대한 데이터도 표시됩니다.  
+<!--1358461-->
+새로운 **클라우드 관리 대시보드**는 CMG(클라우드 관리 게이트웨이) 사용량에 대한 중앙 집중식 보기를 제공합니다. 사이트가 Azure AD에 등록되면 클라우드 사용자 및 디바이스에 대한 데이터도 표시됩니다.  
 
 다음 스크린샷은 사용 가능한 타일 두 가지를 보여 주는 클라우드 관리 대시보드의 일부입니다.  
 ![클라우드 관리 대시보드 타일 CMG 트래픽 및 현재 온라인 클라이언트](media/1358461-cmg-dashboard.png)
@@ -219,7 +223,8 @@ Configuration Manager 콘솔에서 **모니터링** 작업 영역으로 이동�
 
 
 ## <a name="cmpivot"></a>CMPivot
-<!--1358456--> Configuration Manager는 고객이 보고용으로 사용하는 디바이스 데이터의 대규모 중앙 저장소를 항상 제공해왔습니다. 그러나 해당 데이터는 클라이언트에서 마지막으로 수집될 때와 마찬가지입니다. 
+<!--1358456-->
+Configuration Manager는 고객이 보고용으로 사용하는 디바이스 데이터의 대규모 중앙 저장소를 항상 제공해왔습니다. 그러나 해당 데이터는 클라이언트에서 마지막으로 수집될 때와 마찬가지입니다. 
 
 CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스할 수 있는 새로운 콘솔 내 유틸리티입니다. 이 유틸리티는 대상 컬렉션에서 현재 연결된 모든 디바이스에 대해 바로 쿼리를 실행하고 결과를 반환합니다. 그러면 도구에서 이 데이터를 필터링하고 그룹화할 수 있습니다. 온라인 클라이언트에서 실시간 데이터를 제공함으로써 비즈니스 질문에 신속하게 대답하고 문제를 해결하며 보안 인시던트에 응답할 수 있습니다.
 
@@ -262,7 +267,8 @@ CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스�
 
 
 ## <a name="improved-secure-client-communications"></a>개선된 보안 클라이언트 통신
-<!--1356889,1358228,1358460--> 모든 Configuration Manager 통신 경로에는 HTTPS 통신을 사용하는 것이 좋지만 일부 고객의 경우 PKI 인증서 관리 오버헤드로 인해 어려울 수 있습니다. Azure AD(Azure Active Directory) 통합이 도입되면서 인증서 요구 사항의 일부는 줄었지만 전체가 없어지지는 않았습니다. 
+<!--1356889,1358228,1358460-->
+모든 Configuration Manager 통신 경로에는 HTTPS 통신을 사용하는 것이 좋지만 일부 고객의 경우 PKI 인증서 관리 오버헤드로 인해 어려울 수 있습니다. Azure AD(Azure Active Directory) 통합이 도입되면서 인증서 요구 사항의 일부는 줄었지만 전체가 없어지지는 않았습니다. 
 
 이번 릴리스에서는 클라이언트가 사이트 시스템과 통신하는 방법이 개선되었습니다. 이러한 개선에는 두 가지 기본 목표가 있습니다.  
 
@@ -285,10 +291,12 @@ CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스�
 > 이 동작은 Configuration Manager 현재 분기 버전 1802에서 변경되어 이 시나리오에 HTTPS 사용 관리 지점이 필요합니다. 자세한 내용은 [HTTPS에 대한 관리 지점 설정](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#enable-management-point-for-https)을 참조하세요.  
 
 #### <a name="bkmk_token2"></a> 시나리오 2: 배포 지점의 클라이언트
-<!--1358228--> 작업 그룹 또는 Azure AD 조인 클라이언트는 HTTP용으로 구성된 배포 지점에서 보안 채널을 통해 콘텐츠를 다운로드할 수 있습니다.   
+<!--1358228-->
+작업 그룹 또는 Azure AD 조인 클라이언트는 HTTP용으로 구성된 배포 지점에서 보안 채널을 통해 콘텐츠를 다운로드할 수 있습니다.   
 
 #### <a name="bkmk_token3"></a> 시나리오 3: Azure AD 디바이스 ID 
-<!--1358460--> Azure AD 사용자가 로그인되지 않은 Azure AD 조인 또는 [하이브리드 Azure AD 디바이스](/azure/active-directory/device-management-introduction#hybrid-azure-ad-joined-devices)에서 할당된 사이트와 안전하게 통신할 수 있습니다. 이제 클라우드 기반 디바이스 ID만 있으면 CMG 및 관리 지점을 인증하는 데 충분합니다.  
+<!--1358460-->
+Azure AD 사용자가 로그인되지 않은 Azure AD 조인 또는 [하이브리드 Azure AD 디바이스](/azure/active-directory/device-management-introduction#hybrid-azure-ad-joined-devices)에서 할당된 사이트와 안전하게 통신할 수 있습니다. 이제 클라우드 기반 디바이스 ID만 있으면 CMG 및 관리 지점을 인증하는 데 충분합니다.  
 
 
 ### <a name="prerequisites"></a>필수 구성 요소  
@@ -331,7 +339,8 @@ CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스�
 
 
 ## <a name="improvements-for-enabling-third-party-software-update-support"></a>타사 소프트웨어 업데이트 지원 개선 사항
-<!--1357605--> [타사 소프트웨어 업데이트 지원](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/8803711-3rd-party-patching-scup-integration-with-sccm-co)에 대한 UserVoice 피드백에 따라 이번 릴리스에서는 SCUP(System Center Updates Publisher)와의 통합을 추가로 반복합니다. Configuration Manager Technical Preview [버전 1803](/sccm/core/get-started/capabilities-in-technical-preview-1803#enable-third-party-software-update-support-on-clients)에서는 타사 업데이트를 위해 WSUS에서 인증서를 읽은 다음, 해당 인증서를 클라이언트에 배포하는 기능을 추가했습니다. 그러나 여전히 SCUP 도구를 사용하여 타사 소프트웨어 업데이트에 서명하는 데 필요한 인증서를 만들고 관리해야 했습니다.
+<!--1357605-->
+[타사 소프트웨어 업데이트 지원](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/8803711-3rd-party-patching-scup-integration-with-sccm-co)에 대한 UserVoice 피드백에 따라 이번 릴리스에서는 SCUP(System Center Updates Publisher)와의 통합을 추가로 반복합니다. Configuration Manager Technical Preview [버전 1803](/sccm/core/get-started/capabilities-in-technical-preview-1803#enable-third-party-software-update-support-on-clients)에서는 타사 업데이트를 위해 WSUS에서 인증서를 읽은 다음, 해당 인증서를 클라이언트에 배포하는 기능을 추가했습니다. 그러나 여전히 SCUP 도구를 사용하여 타사 소프트웨어 업데이트에 서명하는 데 필요한 인증서를 만들고 관리해야 했습니다.
 
 이번 릴리스에서는 Configuration Manager 사이트를 사용하여 인증서를 자동으로 구성할 수 있습니다. 사이트는 이러한 용도의 인증서를 생성하기 위해 WSUS와 통신합니다. 그런 다음, Configuration Manager가 계속해서 클라이언트에 해당 인증서를 배포합니다. 이렇게 반복하면 인증을 만들고 관리하는 데 SCUP 도구를 사용할 필요가 없습니다. 
 
@@ -390,7 +399,8 @@ SCUP 도구의 일반적인 용도에 대한 자세한 내용은 [System Center 
 
 
 ## <a name="improvement-to-the-configuration-manager-console"></a>Configuration Manager 콘솔 개선 사항
-<!--1358202--> Configuration Manager 콘솔이 다음과 같이 개선되었습니다.
+<!--1358202-->
+Configuration Manager 콘솔이 다음과 같이 개선되었습니다.
 
 - 이제 [자산 및 호환성] 아래의 디바이스 목록인 [디바이스]에 기본적으로 현재 로그인한 사용자가 표시됩니다. 이 값은 [클라이언트 상태](/sccm/core/clients/manage/monitor-clients#bkmk_indStatus)만큼 최신 상태입니다. 이 값은 사용자가 로그오프하면 지워지고, 로그온한 사용자가 없으면 값이 비어 있습니다. 
 
@@ -400,7 +410,8 @@ SCUP 도구의 일반적인 용도에 대한 자세한 내용은 [System Center 
 
 
 ## <a name="improvements-to-console-feedback"></a>콘솔 피드백 개선 사항
-<!--1357542--> 이번 릴리스에서는 Configuration Manager 콘솔의 새로운 [피드백](capabilities-in-technical-preview-1804.md#bkmk_feedback) 메커니즘이 다음과 같이 개선되었습니다.  
+<!--1357542-->
+이번 릴리스에서는 Configuration Manager 콘솔의 새로운 [피드백](capabilities-in-technical-preview-1804.md#bkmk_feedback) 메커니즘이 다음과 같이 개선되었습니다.  
 
 - 이제 피드백 대화 상자에서 선택한 옵션, 메일 주소 등의 이전 설정을 기억합니다.  
 
@@ -422,7 +433,8 @@ SCUP 도구의 일반적인 용도에 대한 자세한 내용은 [System Center 
 
 
 ## <a name="improvement-to-hardware-inventory-for-large-integer-values"></a>큰 정수 값에 대한 하드웨어 인벤토리 개선 사항
-<!--1357880--> 하드웨어 인벤토리에 현재 4,294,967,296(2^32)보다 큰 정수에 대한 제한이 있습니다. 하드 드라이브 크기(바이트)와 같은 특성의 경우 이 제한에 도달할 수 있습니다. 관리 지점에서 이 제한을 초과하는 정수 값을 처리하지 않으므로 값이 데이터베이스에 저장되지 않습니다. 이번 릴리스에서는 이 제한이 18,446,744,073,709,551,616(2^64)으로 증가했습니다. 
+<!--1357880-->
+하드웨어 인벤토리에 현재 4,294,967,296(2^32)보다 큰 정수에 대한 제한이 있습니다. 하드 드라이브 크기(바이트)와 같은 특성의 경우 이 제한에 도달할 수 있습니다. 관리 지점에서 이 제한을 초과하는 정수 값을 처리하지 않으므로 값이 데이터베이스에 저장되지 않습니다. 이번 릴리스에서는 이 제한이 18,446,744,073,709,551,616(2^64)으로 증가했습니다. 
 
 전체 디스크 크기와 같이 변경되지 않는 값을 가진 속성의 경우 사이트를 업그레이드한 후 바로 값이 표시되지 않을 수 있습니다. 대부분의 하드웨어 인벤토리는 델타 보고서입니다. 클라이언트는 변경되는 값만 전송합니다. 이 동작을 해결하려면 동일한 클래스에 다른 속성을 추가하세요. 이 작업을 수행하면 클라이언트가 변경된 클래스에서 모든 속성을 업데이트합니다. 
 
@@ -445,7 +457,8 @@ SCUP 도구의 일반적인 용도에 대한 자세한 내용은 [System Center 
 
 
 ## <a name="improvement-to-support-for-cng-certificates"></a>CNG 인증서 지원 개선 사항
-<!--1357314--> 이번 릴리스부터 다음과 같은 추가 HTTPS 사용 서버 역할에 [CNG 인증서](/sccm/core/plan-design/network/cng-certificates-overview)를 사용합니다.  
+<!--1357314-->
+이번 릴리스부터 다음과 같은 추가 HTTPS 사용 서버 역할에 [CNG 인증서](/sccm/core/plan-design/network/cng-certificates-overview)를 사용합니다.  
 - Configuration Manager 정책 모듈을 사용하는 NDES 서버를 포함한 인증서 등록 지점
 
 

@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 6bce416b-761d-4b23-bd33-5b7c30edb10d
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e31e56948d30b95c6de4d9640985c4387bbe7058
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 666cb86e4acbb46956f768655637d3185fc5df71
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56124969"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65497187"
 ---
 # <a name="pre-release-features-in-configuration-manager"></a>Configuration Manager 시험판 기능
 
@@ -76,7 +76,7 @@ ms.locfileid: "56124969"
 
 | 기능          | 시험판으로 추가됨 | 전체 기능으로 추가됨 |  
 |------------------|----------------------|-------------------------|
-| SMS 공급 기업 API <!--1359052--> | 버전 1810 | ![아직 추가되지 않음](media/red_x.png) |
+| SMS 공급자 API <!--1359052--> | 버전 1810 | ![아직 추가되지 않음](media/red_x.png) |
 | [향상된 HTTP 사이트 시스템](/sccm/core/plan-design/hierarchy/enhanced-http) <!--1356889,1358228--> | 버전 1806 | 버전 1810 |
 | [공동 관리형 디바이스용 클라이언트 앱](/sccm/comanage/workloads#client-apps) <!--1357892--> | 버전 1806 | ![아직 추가되지 않음](media/red_x.png) |
 | [SCAP 확장](/sccm/compliance/plan-design/scap/about-scap) <!--3607889--> | 버전 1806 | ![아직 추가되지 않음](media/red_x.png) |
@@ -85,7 +85,7 @@ ms.locfileid: "56124969"
 | [단계별 배포](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence) <!--1356837--> | 1802 버전 | 버전 1806 |
 | [작업 순서 실행 단계](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#add-child-task-sequences-to-a-task-sequence) <!--1261338--> |  버전 1710 | 1802 버전 |
 | [Windows Defender Exploit Guard](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy) <!--1355468--> | 버전 1710 | 1802 버전 |
-| [조건부 액세스의 규정 준수 정책에 대한 디바이스 상태 증명 평가](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm) <!--1235616--> | 버전 1710 | 1802 버전 |
+| [조건부 액세스의 준수 정책에 대한 디바이스 상태 증명 평가](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm) <!--1235616--> | 버전 1710 | 1802 버전 |
 | [Windows PowerShell 스크립트 만들기 및 실행](/sccm/apps/deploy-use/create-deploy-scripts) <!--1236459--> | 버전 1706 | 1802 버전 |
 | [Microsoft Surface 드라이버 업데이트 관리](/sccm/sum/get-started/configure-classifications-and-products) <!--1098490--> | 버전 1706 | 버전 1710 |
 | [Device Guard 관리](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager) <!--1355092 (1319346)--> | 버전 1702 | ![아직 추가되지 않음](media/red_x.png) |

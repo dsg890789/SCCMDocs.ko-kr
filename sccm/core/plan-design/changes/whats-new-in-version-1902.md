@@ -2,21 +2,21 @@
 title: 버전 1902의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager 현재 분기, 버전 1902에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
-ms.date: 04/17/2019
+ms.date: 05/13/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 4812324b-e6aa-4431-bf1d-9fcd763a8caa
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbc38cdb72a2c8f595eed88e0b4b5b5e29374597
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
+ms.openlocfilehash: 0c88cdc52442463bb3788c80c45d6c074dd900f5
+ms.sourcegitcommit: 53f2380ac67025fb4a69fc1651edad15d98e0cdd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59673652"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673419"
 ---
 # <a name="whats-new-in-version-1902-of-configuration-manager-current-branch"></a>Configuration Manager 현재 분기, 버전 1902의 새 기능
 
@@ -173,9 +173,9 @@ CMG에서 [아웃바운드 트래픽 경고를 설정](/sccm/core/clients/manage
 
 ### <a name="specify-a-custom-port-for-peer-wakeup"></a>피어 절전 모드 해제를 위한 사용자 지정 포트 지정
 <!--3605925-->
-이제 절전 모드 해제 프록시에 대한 사용자 지정 포트 번호를 지정할 수 있습니다. 클라이언트 설정의 **전원 관리** 그룹에서 **Wake On LAN 포트 번호(UDP)** 설정을 구성합니다.  
+***[업데이트]*** 이제 절전 모드 해제 프록시에 대한 사용자 지정 포트 번호를 지정할 수 있습니다. 클라이언트 설정의 **전원 관리** 그룹에서 **Wake On LAN 포트 번호(UDP)** 설정을 구성합니다.  
 
-<!-- For more information, see [How to configure Wake on LAN](/sccm/core/clients/deploy/configure-wake-on-lan). -->
+자세한 내용은 [Wake On LAN을 구성하는 방법](/sccm/core/clients/deploy/configure-wake-on-lan)을 참조하세요.
 
 
 
@@ -218,17 +218,30 @@ CMG에서 [아웃바운드 트래픽 경고를 설정](/sccm/core/clients/manage
 이 기능은 지원되는 모든 Windows 10 버전에서 현재 위치 업그레이드 작업 순서로만 작동합니다. 
 
 
-### <a name="improvements-to-task-sequence-media-creation"></a>향상된 작업 순서 미디어 만들기 기능 
+### <a name="improvements-to-task-sequence-media-creation"></a>향상된 작업 순서 미디어 만들기 기능
+
 <!--3556027, fka 1359388-->
-이 버전에는 작업 순서 미디어를 더 잘 만들고 관리하는 데 도움이 되는 몇 가지 향상된 기능이 포함되어 있습니다. <!-- For more information, see [Create task sequence media](/sccm/osd/deploy-use/create-task-sequence-media). -->
+***[업데이트]*** 이 버전에는 작업 순서 미디어를 더 잘 만들고 관리하는 데 도움이 되는 몇 가지 향상된 기능이 포함되어 있습니다. 자세한 내용은 특정 미디어 유형에 대한 다음 문서를 참조하세요.
+
+- [독립 실행형 미디어 만들기](/sccm/osd/deploy-use/create-stand-alone-media)
+- [사전 준비된 미디어 만들기](/sccm/osd/deploy-use/create-prestaged-media)
+- [부팅 가능한 미디어 만들기](/sccm/osd/deploy-use/create-bootable-media)
+- [미디어 캡처 만들기](/sccm/osd/deploy-use/create-capture-media)
 
 #### <a name="specify-temporary-storage"></a>임시 스토리지 지정
-작업 순서 미디어를 만들 때 이제 사이트에서 데이터의 임시 스토리지에 사용하는 위치를 사용자 지정합니다. 이 프로세스에는 많은 임시 드라이브 공간이 필요할 수 있습니다. 이 변경 내용은 이러한 임시 파일을 저장할 위치를 선택하는 데 큰 유연성을 제공합니다. 
+
+작업 순서 미디어를 만들 때 이제 사이트에서 데이터의 임시 스토리지에 사용하는 위치를 사용자 지정합니다. 이 프로세스에는 많은 임시 드라이브 공간이 필요할 수 있습니다. 이 변경 내용은 이러한 임시 파일을 저장할 위치를 선택하는 데 큰 유연성을 제공합니다.
 
 **작업 순서 미디어 만들기 마법사**에서 **준비 폴더**에 대한 위치를 지정합니다. 기본적으로 이 위치는 다음 경로 `%UserProfile%\AppData\Local\Temp`와 유사합니다.
 
 #### <a name="add-a-label-to-the-media"></a>미디어에 레이블 추가
+
 이제 작업 순서 미디어에 레이블을 추가할 수 있습니다. 이 레이블을 통해 미디어를 만든 후 미디어를 보다 잘 식별할 수 있습니다. **작업 순서 미디어 만들기 마법사**에서 **미디어 레이블**을 지정합니다.
+
+#### <a name="include-autoruninf-file-on-media"></a>미디어에 autorun.inf 파일 포함
+
+<!-- 4090666 -->
+작업 순서 미디어를 만들 때 Configuration Manager는 autorun.inf 파일을 추가하지 않습니다. 이 파일은 일반적으로 맬웨어 방지 제품에서 차단됩니다. 시나리오에 필요한 경우 파일이 포함될 수 있습니다.
 
 
 ### <a name="import-a-single-index-of-an-os-image"></a>OS 이미지의 단일 인덱스 가져오기
@@ -254,8 +267,9 @@ OS 이미지를 업데이트할 일정을 생성할 때 **이미지가 업데이
 
 
 ### <a name="improvements-to-run-powershell-script-task-sequence-step"></a>향상된 PowerShell 스크립트 실행 작업 순서 단계 기능
+
 <!--3556028, fka 1359389-->
-**PowerShell 스크립트 실행** 작업 순서 단계에는 이제 다음과 같은 개선 사항이 포함됩니다.  
+***[업데이트]*** **PowerShell 스크립트 실행** 작업 순서 단계에는 이제 다음과 같은 개선 사항이 포함됩니다.  
 
 - 이제 이 단계에서 Windows PowerShell 코드를 직접 입력할 수 있습니다. 이 변경을 통해 먼저 스크립트를 사용하여 패키지를 만들고 배포하지 않고 작업 순서 중 PowerShell 명령을 실행할 수 있습니다.
 
@@ -271,17 +285,18 @@ OS 이미지를 업데이트할 일정을 생성할 때 **이미지가 업데이
 
 - 작업 순서 로그에 스크립트 매개 변수를 포함시키려면 **OSDLogPowerShellParameters** 작업 순서 변수를 **TRUE**로 설정합니다. 기본적으로 매개 변수는 로그에 없습니다.  
 
-- [명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 단계와 유사한 기능을 제공하는 기타 개선 사항. 예를 들어 대체 사용자 자격 증명을 지정하거나 시간 제한을 지정합니다. 
+- [명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 단계와 유사한 기능을 제공하는 기타 개선 사항. 예를 들어 대체 사용자 자격 증명을 지정하거나 시간 제한을 지정합니다.
 
 > [!Important]  
 > 이 새로운 Configuration Manager 기능을 활용하려면 사용자를 업데이트한 후 클라이언트를 최신 버전으로 업데이트하세요. 사이트 및 콘솔을 업데이트할 때 Configuration Manager 콘솔에 새 기능이 표시되지만 클라이언트 버전도 최신 버전이 될 때까지 전체 시나리오가 작동하지 않습니다.
 
-<!-- For more information, see [Run PowerShell Script](/sccm/osd/understand/task-sequence-steps#BKMK_RunPowerShellScript). -->
+자세한 내용은 [PowerShell 스크립트 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunPowerShellScript)을 참조하세요.
 
 
 ### <a name="other-improvements-to-os-deployment"></a>기타 향상된 OS 배포
+
 <!--3633146,3641475,3654172,3734270-->
-이 버전에는 다음과 같은 향상된 OS 배포가 포함됩니다.
+***[업데이트]*** 이 버전에는 다음과 같은 향상된 OS 배포가 포함됩니다.
 
 - 작업 순서에 대한 새로운 **보기** 기본 동작이 있습니다. <!--3633146-->  
 
@@ -296,20 +311,13 @@ OS 이미지를 업데이트할 일정을 생성할 때 **이미지가 업데이
 ## <a name="bkmk_userxp"></a> 소프트웨어 센터
 
 ### <a name="replace-toast-notifications-with-dialog-window"></a>알림 메시지를 대화 상자 창으로 바꾸기
+
 <!--3555947-->
-사용자가 다시 시작이나 필요한 배포에 대한 Windows 알림 메시지를 보지 못하고 지나치는 경우가 있습니다. 이 경우 알림을 반복 설정하는 기능도 보지 못하게 됩니다. 이는 클라이언트가 기한에 도달했을 때 사용자 환경을 저하할 수 있습니다.
+***[업데이트]*** 사용자가 다시 시작이나 필요한 배포에 대한 Windows 알림 메시지를 보지 못하고 지나치는 경우가 있습니다. 이 경우 알림을 반복 설정하는 기능도 보지 못하게 됩니다. 이는 클라이언트가 기한에 도달했을 때 사용자 환경을 저하할 수 있습니다.
 
-이제 환경을 다시 시작해야 하거나 소프트웨어 변경이 필요한 경우, 알림 메시지보다 더 확실히 표시되는 대화 상자 창을 사용할 수 있습니다. 
+이제 환경을 다시 시작해야 하거나 소프트웨어 변경이 필요한 경우, 알림 메시지보다 더 확실히 표시되는 대화 상자 창을 사용할 수 있습니다.
 
-#### <a name="software-changes-are-required"></a>소프트웨어 변경 필요
-소프트웨어 배포 마법사의 **사용자 환경** 페이지에서 사용자 알림 옵션을 **소프트웨어 센터에 모든 알림 표시**로 선택합니다. 다음 옵션도 선택합니다. **소프트웨어 변경이 필요할 때 알림 메시지 대신 사용자에게 대화 상자 창 표시**.  
-
-<!-- For more information, see [Configure Software Center](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex) -->
-
-#### <a name="restart-required"></a>다시 시작 필요
-클라이언트 설정의 **컴퓨터 다시 시작** 그룹에서 다음 옵션을 활성화합니다. **배포를 다시 시작해야 하는 경우 알림 메시지 대신 사용자에게 대화 상자 창 표시**.  
-
-<!-- For more information, see [About client settings](/sccm/core/clients/deploy/about-client-settings#computer-restart). -->
+자세한 내용은 [소프트웨어 센터 계획](/sccm/apps/plan-design/plan-for-software-center#bkmk_impact)을 참조하세요.
 
 
 ### <a name="configure-user-device-affinity-in-software-center"></a>소프트웨어 센터에서 사용자 디바이스 선호도 구성
@@ -345,7 +353,7 @@ OS 이미지를 업데이트할 일정을 생성할 때 **이미지가 업데이
 <!--3734525-->
 ***[업데이트]*** 클라이언트가 [Windows 10 서비스](/sccm/osd/deploy-use/manage-windows-as-a-service)를 통해 기능 업데이트를 설치하는 우선 순위를 조정합니다. 기본적으로 클라이언트는 처리 우선 순위가 높은 기능 업데이트부터 설치합니다. 
 
-이 옵션은 클라이언트 설정을 사용하여 구성합니다. **소프트웨어 업데이트** 그룹에서 다음 설정을 구성합니다. **기능 업데이트에 대한 스레드 우선 순위를 지정합니다**. 
+이 옵션은 클라이언트 설정을 사용하여 구성합니다. **소프트웨어 업데이트** 그룹에서 다음 설정을 구성합니다. **기능 업데이트에 대한 스레드 우선 순위를 지정합니다**.
 
 자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#software-updates)를 참조하세요. 
 
@@ -384,9 +392,9 @@ Business용 OneDrive 프로필을 만들고 배포하려면 Configuration Manage
 
 ### <a name="office-products-on-lifecycle-dashboard"></a>수명 주기 대시보드의 Office 제품
 <!--3556026-->
-제품 수명 주기 대시보드에는 이제 Office 2003에서 Office 2016까지 설치 버전에 대한 정보가 포함됩니다. 사이트가 24시간마다 수명 주기 요약 작업을 실행한 후 데이터가 표시됩니다.
+***[업데이트]*** 제품 수명 주기 대시보드에는 이제 Office 2003에서 Office 2016까지 설치 버전에 대한 정보가 포함됩니다. 사이트가 24시간마다 수명 주기 요약 작업을 실행한 후 데이터가 표시됩니다.
 
-<!-- For more information, see [Use the Product Lifecycle dashboard](/sccm/core/clients/manage/asset-intelligence/product-lifecycle-dashboard). -->
+자세한 내용은 [제품 수명 주기 대시보드 사용](/sccm/core/clients/manage/asset-intelligence/product-lifecycle-dashboard)을 참조하세요.
 
 
 
@@ -398,18 +406,18 @@ Business용 OneDrive 프로필을 만들고 배포하려면 Configuration Manage
 
 ### <a name="dedicated-monitoring-for-phased-deployments"></a>단계별 배포에 대한 전용 모니터링
 <!--3555949-->
-이제 단계별 배포에는 자체 전용 모니터링 노드가 있습니다. 이 노드를 사용하면 만든 단계별 배포를 식별한 다음, 단계별 배포 모니터링 보기로 이동하기가 쉬워집니다. Configuration Manager 콘솔에서 **모니터링** 작업 영역으로 이동하고 **단계별 배포** 노드를 선택합니다. 그러면 단계별 배포 목록이 표시됩니다.
+***[업데이트]*** 이제 단계별 배포에는 자체 전용 모니터링 노드가 있습니다. 이 노드를 사용하면 만든 단계별 배포를 식별한 다음, 단계별 배포 모니터링 보기로 이동하기가 쉬워집니다. Configuration Manager 콘솔에서 **모니터링** 작업 영역으로 이동하고 **단계별 배포** 노드를 선택합니다. 그러면 단계별 배포 목록이 표시됩니다.
 
-<!-- For more information, see [Phased deployment monitoring view](/sccm/osd/deploy-use/manage-monitor-phased-deployments#bkmk_monitor). -->
+자세한 내용은 [단계별 배포 모니터링 보기](/sccm/osd/deploy-use/manage-monitor-phased-deployments#bkmk_monitor)를 참조하세요. 
 
 
 ### <a name="improvement-to-phased-deployment-success-criteria"></a>단계적 배포 성공 조건 개선
 <!--3555946-->
-단계적 배포에서 단계의 성공을 위한 추가 조건을 지정합니다. 백분율 대신 이 조건은 이제 성공적으로 배포된 디바이스의 수도 사용할 수 있습니다. 이 옵션은 컬렉션의 크기가 변수이고, 다음 단계로 이동하기 전에 성공을 표시하는 특정 수의 디바이스가 있을 때 유용합니다. 
+***[업데이트]*** 단계별 배포에서 단계의 성공을 위한 추가 조건을 지정합니다. 백분율 대신 이 조건은 이제 성공적으로 배포된 디바이스의 수도 사용할 수 있습니다. 이 옵션은 컬렉션의 크기가 변수이고, 다음 단계로 이동하기 전에 성공을 표시하는 특정 수의 디바이스가 있을 때 유용합니다. 
 
-작업 순서, 소프트웨어 업데이트 또는 애플리케이션에 대한 단계별 배포를 만듭니다. 그런 다음 마법사의 설정 페이지에서 첫 번째 단계의 성공을 위한 조건으로 다음 옵션을 선택합니다. **성공적으로 배포된 디바이스 수**. 
+작업 순서, 소프트웨어 업데이트 또는 애플리케이션에 대한 단계별 배포를 만듭니다. 그런 다음 마법사의 설정 페이지에서 첫 번째 단계의 성공을 위한 조건으로 다음 옵션을 선택합니다. **성공적으로 배포된 디바이스 수**.
 
-<!-- For more information, see [Create phased deployments](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence). -->
+자세한 내용은 [단계적 배포 만들기](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence)를 참조하세요.
 
 
 

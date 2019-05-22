@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: bc6c3e5f-b9e2-400e-9d9d-446ff93c520c
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1609f162460d525a146289e70426783cd126912
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: b966654712dbe670ea200fbb4c975df26ecac542
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56123436"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65495588"
 ---
 # <a name="what39s-new-in-version-1710-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1710의 새로운 기능
 
@@ -49,13 +49,13 @@ Version 1710 drops support for the following products:
 
 ## <a name="site-infrastructure"></a>사이트 인프라
 
-### <a name="updates-for-peer-cache-----sms500850---"></a>피어 캐시 업데이트 <!-- sms500850 -->
+### <a name="updates-for-peer-cache-----sms500850---"></a>피어 캐시 업데이트  <!-- sms500850 -->
 이 릴리스부터 피어 캐시는 더 이상 시험판 기능이 아닙니다.  이 릴리스에는 피어 캐시에 대한 다른 변경 내용이 없습니다. 자세한 내용은 [Configuration Manager 클라이언트에 대한 피어 캐시](/sccm/core/plan-design/hierarchy/client-peer-cache)를 참조하세요.
 
-### <a name="cloud-distribution-point-support-for-azure-government-cloud------sms491428---"></a>Azure Government 클라우드에 대한 클라우드 배포 지점 지원 <!-- sms491428 -->
+### <a name="cloud-distribution-point-support-for-azure-government-cloud------sms491428---"></a>Azure Government 클라우드에 대한 클라우드 배포 지점 지원   <!-- sms491428 -->
 이제 Azure Government 클라우드에서 [클라우드 기반 배포 지점](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point)을 사용할 수 있습니다.   
 
-### <a name="inventory-default-unit-revision----sms503697---"></a>인벤토리 기본 단위 수정 버전<!-- sms503697 -->
+### <a name="inventory-default-unit-revision----sms503697---"></a>인벤토리 기본 단위 수정 버전 <!-- sms503697 -->
 이제 디바이스에 GB(기가바이트), TB(테라바이트) 이상 크기의 하드 드라이브가 포함되므로 이 릴리스는 여러 보기에서 사용되는 기본 단위(SMS_Units)를 MB(메가바이트)에서 GB로 변경합니다. 예를 들어 v_gs_LogicalDisk.FreeSpace 값이 GB 단위를 보고합니다.
 
 
@@ -65,9 +65,10 @@ Version 1710 drops support for the following products:
 ## <a name="client-management"></a>클라이언트 관리
 
 ### <a name="co-management-for-windows-10-devices"></a>Windows 10 디바이스의 공동 관리    
-<!-- 1350871 -->이전 Windows 10 업데이트에서 Windows 10 장치를 온-프레미스 AD(Active Directory)와 클라우드 기반 Azure AD에 동시에 조인할 수 있습니다(하이브리드 Azure AD). Configuration Manager 버전 1710부터 공동 관리에서는 이러한 향상된 기능을 통해 Configuration Manager 및 Intune을 모두 사용하여 Windows 10 버전 1709(Fall Creators Update라고도 함) 디바이스를 동시에 관리할 수 있습니다. 이것은 기존 관리에서 최신 관리에 대한 연결을 제공하고 단계별 접근 방법을 사용하여 전환할 수 있는 경로를 제공하는 솔루션입니다. 자세한 내용은 [Windows 10 디바이스의 공동 관리](/sccm/comanage/overview)를 참조하세요.
+<!-- 1350871 -->
+이전 Windows 10 업데이트에서 이미 Windows 10 디바이스를 온-프레미스 AD(Active Directory)와 클라우드 기반 Azure AD에 동시에 조인할 수 있습니다(하이브리드 Azure AD). Configuration Manager 버전 1710부터 공동 관리에서는 이러한 향상된 기능을 통해 Configuration Manager 및 Intune을 모두 사용하여 Windows 10 버전 1709(Fall Creators Update라고도 함) 디바이스를 동시에 관리할 수 있습니다. 이것은 기존 관리에서 최신 관리에 대한 연결을 제공하고 단계별 접근 방법을 사용하여 전환할 수 있는 경로를 제공하는 솔루션입니다. 자세한 내용은 [Windows 10 디바이스의 공동 관리](/sccm/comanage/overview)를 참조하세요.
 
-### <a name="restart-computers-from-the-configuration-manager-console-----1356283---"></a>Configuration Manager 콘솔에서 컴퓨터 다시 시작 <!-- 1356283 -->
+### <a name="restart-computers-from-the-configuration-manager-console-----1356283---"></a>Configuration Manager 콘솔에서 컴퓨터 다시 시작  <!-- 1356283 -->
 이 릴리스부터 Configuration Manager 콘솔을 사용하여 다시 시작해야 하는 클라이언트 디바이스를 식별한 다음 클라이언트 알림 작업을 통해 해당 디바이스를 다시 시작할 수 있습니다.
 
 [System Center Configuration Manager에서 클라이언트를 관리하는 방법](/sccm/core/clients/manage/manage-clients#restart-clients)을 참조하세요.
@@ -77,7 +78,7 @@ Version 1710 drops support for the following products:
 
 
 ## <a name="application-management"></a>애플리케이션 관리
-### <a name="improvements-for-run-scripts------1236459---"></a>향상된 스크립트 실행 기능 <!-- 1236459 -->
+### <a name="improvements-for-run-scripts------1236459---"></a>향상된 스크립트 실행 기능   <!-- 1236459 -->
 이 릴리스에서는 몇 가지 **스크립트 실행** 기능이 향상되어 관리되는 디바이스에서 실행되는 PowerShell 스크립트를 배포할 수 있습니다. 이 기능은 1706 버전에서 처음 소개되었습니다.
 
 향상된 기능은 다음과 같습니다.
@@ -88,7 +89,8 @@ Version 1710 drops support for the following products:
 스크립트 실행에 대한 자세한 내용은 [스크립트 만들기 및 실행](../../../apps/deploy-use/create-deploy-scripts.md)을 참조하세요.
 
 ### <a name="new-mobile-application-management-policy-settings"></a>새 모바일 애플리케이션 관리 정책 설정
-<!-- 1324760 -->모바일 애플리케이션 관리 정책 설정에 다음과 같은 설정이 추가되었습니다.
+<!-- 1324760 -->
+모바일 애플리케이션 관리 정책 설정에 다음과 같은 설정이 추가되었습니다.
 - **연락처 동기화 사용 안 함**: 앱에서 디바이스의 네이티브 연락처 앱에 데이터를 저장하지 않도록 방지합니다.
 - **인쇄 사용 안 함**: 앱에서 회사 또는 학교 데이터를 인쇄하지 않도록 방지합니다.
 
@@ -101,7 +103,8 @@ Version 1710 drops support for the following products:
 
 ## <a name="operating-system-deployment"></a>운영 체제 배포
  > [!TIP]   
- > <!-- 1354281 -->Windows 10, 버전 1709(Fall Creators Update라고도 함) 릴리스부터 Windows 미디어에는 여러 버전이 포함되어 있습니다. 운영 체제 업그레이드 패키지 또는 운영 체제 이미지를 사용하도록 작업 시퀀스를 구성할 때 [Configuration Manager가 사용할 수 있도록 지원되는 버전](/sccm/core/plan-design/configs/support-for-windows-10#windows-10-as-a-client)을 선택해야 합니다.
+ > <!-- 1354281 -->
+ > Windows 10, 버전 1709(Fall Creators Update라고도 함) 릴리스부터 Windows 미디어에는 여러 버전이 포함되어 있습니다. 운영 체제 업그레이드 패키지 또는 운영 체제 이미지를 사용하도록 작업 시퀀스를 구성할 때 [Configuration Manager가 사용할 수 있도록 지원되는 버전](/sccm/core/plan-design/configs/support-for-windows-10#windows-10-as-a-client)을 선택해야 합니다.
 
 ### <a name="add-child-task-sequences-to-a-task-sequence"></a>작업 순서에 자식 작업 순서 추가
 <!-- 1261338 -->
@@ -111,13 +114,14 @@ Version 1710 drops support for the following products:
 자식 작업 순서에 대한 자세한 내용은 [자식 작업 순서](/sccm/osd/understand/task-sequence-steps#child-task-sequence)를 참조하세요.
 
 ## <a name="software-center-customization"></a>소프트웨어 센터 사용자 지정
-<!-- 1351224 -->엔터프라이즈 브랜딩 요소를 추가하고 소프트웨어 센터에서 탭의 표시 여부를 지정할 수 있습니다. 소프트웨어 센터 특정의 회사 이름을 추가하고 소프트웨어 센터 구성 색 테마, 회사 로고 및 클라이언트 디바이스에 대한 표시 탭을 설정할 수 있습니다.
+<!-- 1351224 -->
+엔터프라이즈 브랜딩 요소를 추가하고 소프트웨어 센터에서 탭의 표시 여부를 지정할 수 있습니다. 소프트웨어 센터 특정의 회사 이름을 추가하고 소프트웨어 센터 구성 색 테마, 회사 로고 및 클라이언트 디바이스에 대한 표시 탭을 설정할 수 있습니다.
 
 자세한 내용은 [System Center Configuration Manager에서 애플리케이션 관리 계획 및 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management)을 참조하세요.
 
 ## <a name="software-updates"></a>소프트웨어 업데이트
 
-### <a name="surface-driver-updates-----1098490---"></a>Surface 드라이버 업데이트 <!-- 1098490 -->
+### <a name="surface-driver-updates-----1098490---"></a>Surface 드라이버 업데이트  <!-- 1098490 -->
 이 릴리스부터 Surface 드라이버 업데이트 관리는 더 이상 시험판 기능이 아닙니다.  
 
 
@@ -159,7 +163,7 @@ Version 1710 drops support for the following products:
 - [애플리케이션 관리](../../../mdm/deploy-use/management-tasks-applications.md)
 
 > [!NOTE]
-> 여러 아키텍처용으로 빌드된 .appxbundle 애플리케이션을 배포하면 이들 장치에서 작동하지 않을 수 있으며, 현재 이 시나리오는 지원되지 않습니다.
+> 여러 아키텍처용으로 빌드된 .appxbundle 응용 프로그램을 배포하면 이들 디바이스에서 작동하지 않을 수 있으며, 현재 이 시나리오는 지원되지 않습니다.
 
 ### <a name="improved-vpn-profile-experience-in-configuration-manager-console"></a>Configuration Manager 콘솔의 VPN 프로필 환경 개선 
 <!-- 1318232 -->
@@ -180,7 +184,7 @@ Version 1710 drops support for the following products:
 
 자세한 내용은 [System Center Configuration Manager의 모바일 디바이스에 대한 VPN 프로필](../../../mdm/deploy-use/create-vpn-profiles.md)을 참조하세요.
 
-### <a name="limited-support-for-cryptography-next-generation-cng-certificates----1356191---"></a>Cryptography: Next Generation(CNG) 인증서에 대한 제한적 지원 <!-- 1356191 -->
+### <a name="limited-support-for-cryptography-next-generation-cng-certificates----1356191---"></a>Cryptography: Next Generation(CNG) 인증서 <!-- 1356191 -->
 
 Configuration Manager는 Cryptography: Next Generation(CNG) 인증서를 지원합니다. Configuration Manager 클라이언트는 CNG KSP(키 스토리지 공급자)의 개인 키와 함께 PKI 클라이언트 인증 인증서를 사용할 수 있습니다. Configuration Manager 클라이언트는 KSP 지원을 통해 PKI 클라이언트 인증 인증서용 TPM KSP와 같은 하드웨어 기반 개인 키를 지원합니다.
 
@@ -199,10 +203,11 @@ Configuration Manager는 Cryptography: Next Generation(CNG) 인증서를 지원�
 Configuration Manager 엔드포인트 보호를 사용하여 [Windows Defender Application Guard](/sccm/protect/deploy-use/create-deploy-application-guard-policy) 정책을 만들고 배포할 수 있습니다.
 
 ### <a name="device-guard-policy-changes"></a>Device Guard 정책 변경
-<!-- 1355092 -->Device Guard 정책과 관련하여 다음 세 가지 항목이 변경되었습니다.
+<!-- 1355092 -->
+Device Guard 정책과 관련하여 다음 세 가지 항목이 변경되었습니다.
 
 - Device Guard 정책의 이름이 Windows Defender 애플리케이션 제어 정책으로 바뀌었습니다. 예를 들어 **Device Guard 정책 만들기 마법사**의 이름이 이제는 **Windows Defender 애플리케이션 제어 정책 만들기 마법사**입니다.
-- Windows용 Fall Creators Update 버전 1709를 사용하는 장치는 Windows Defender 애플리케이션 제어 정책을 적용하기 위해 다시 시작할 필요가 없습니다. 다시 시작은 여전히 기본값이지만 [다시 시작을 해제](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)할 수 있습니다.
+- Windows용 Fall Creators Update 버전 1709를 사용하는 디바이스는 Windows Defender 응용 프로그램 제어 정책을 적용하기 위해 다시 시작할 필요가 없습니다. 다시 시작은 여전히 기본값이지만 [다시 시작을 해제](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)할 수 있습니다.
 - Intelligent Security Graph에서 신뢰할 수 있는 [소프트웨어를 자동으로 실행하도록 디바이스를 설정](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)할 수 있습니다.
 
 

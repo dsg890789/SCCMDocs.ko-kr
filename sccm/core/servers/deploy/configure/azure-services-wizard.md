@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: a26a653e-17aa-43eb-ab36-0e36c7d29f49
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5a0834e61173708fd99dcdc8806e2f8e633e87c
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 94e632638018d213d46b34e87f8b5398cb49c59e
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56137510"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65499079"
 ---
 # <a name="configure-azure-services-for-use-with-configuration-manager"></a>Configuration Manager에서 사용하도록 Azure 서비스 구성
 
@@ -64,10 +64,10 @@ ms.locfileid: "56137510"
 
 |서비스  |테넌트  |클라우드  |웹앱  |네이티브 앱  |작업  |
 |---------|---------|---------|---------|---------|---------|
-|클라우드 관리 수단<br>Azure AD 사용자 검색 | 복수 | 공용, 사설 | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | 가져오기, 만들기 |
-|Log Analytics 커넥터 | 1대 | 공용, 사설 | ![지원됨](media/green_check.png) | ![지원되지 않음](media/Red_X.png) | 가져오기 |
-|업그레이드 준비 | 1대 | 공개 | ![지원됨](media/green_check.png) | ![지원되지 않음](media/Red_X.png) | 가져오기 |
-|비즈니스 및 교육용<br>Business | 1대 | 공개 | ![지원됨](media/green_check.png) | ![지원되지 않음](media/Red_X.png) | 가져오기, 만들기 |
+|클라우드 관리 수단<br>Azure AD 사용자 검색 | 여러 개 | 공용, 사설 | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | 가져오기, 만들기 |
+|Log Analytics 커넥터 | 하나 | 공용, 사설 | ![지원됨](media/green_check.png) | ![지원되지 않음](media/Red_X.png) | 가져오기 |
+|업그레이드 준비 | 하나 | 공용 | ![지원됨](media/green_check.png) | ![지원되지 않음](media/Red_X.png) | 가져오기 |
+|비즈니스 및 교육용<br>비즈니스 | 하나 | 공용 | ![지원됨](media/green_check.png) | ![지원되지 않음](media/Red_X.png) | 가져오기, 만들기 |
 
 
 ### <a name="about-azure-ad-apps"></a>Azure AD 앱 정보

@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: a6f7f6b7-9ef3-4ffa-a3cf-d877ac55983b
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b100daf91b8bb7c5d4dd5f041c57e7dc9dac390e
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: e8ae8d006555a79be1a27b327a3de78c75743bad
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156783"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65500744"
 ---
 # <a name="customize-support-center"></a>지원 센터 사용자 지정
 

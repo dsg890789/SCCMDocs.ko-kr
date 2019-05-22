@@ -2,27 +2,28 @@
 title: 지원 센터
 titleSuffix: Configuration Manager
 description: 지원 센터를 사용하여 Configuration Manager 클라이언트 문제를 해결합니다.
-ms.date: 03/06/2019
+ms.date: 05/10/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: c631197d-7daa-4faa-9e22-980cd6d604c2
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 367c293794eea86ef8b7b7fb0e331ce0602b325e
-ms.sourcegitcommit: 544f335cfd1bfd0a1d4973439780e9f5e9ee8bed
+ms.openlocfilehash: 9246ea46787b1db466b8aca5d8a602617c80e26a
+ms.sourcegitcommit: ab9f2a7fb7ea3a0c65808fce2975ab25a670281f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57562043"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65612518"
 ---
 # <a name="support-center-for-configuration-manager"></a>Configuration Manager에 대한 지원 센터
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-<!--1357489--> 1810 버전부터 클라이언트 문제 해결, 실시간 로그 보기, 나중에 분석하기 위해 구성 관리자 클라이언트 컴퓨터의 상태 캡처 등의 작업에 지원 센터를 사용합니다. 지원 센터는 많은 관리자 문제 해결 도구를 통합하는 단일 도구입니다. 
+<!--1357489-->
+1810 버전부터 클라이언트 문제 해결, 실시간 로그 보기, 나중에 분석하기 위해 구성 관리자 클라이언트 컴퓨터의 상태 캡처 등의 작업에 지원 센터를 사용합니다. 지원 센터는 많은 관리자 문제 해결 도구를 통합하는 단일 도구입니다. 
 
 
 
@@ -46,7 +47,7 @@ ms.locfileid: "57562043"
 
 ### <a name="support-center-log-file-viewer"></a>지원 센터 로그 파일 뷰어
 
-지원 센터에는 최신 로그 뷰어가 포함되어 있습니다. 이 도구는 CMTrace를 대체합니다. OneTrace는 탭 및 도킹 가능한 창을 지원하는 사용자 지정 가능한 인터페이스를 제공합니다. 빠른 프레젠테이션 계층이 있으며 몇 초 안에 대용량 로그 파일을 로드할 수 있습니다.
+지원 센터에는 최신 로그 뷰어가 포함되어 있습니다. 이 도구는 CMTrace를 대신하며, 탭 및 도킹 가능한 창을 지원하는 사용자 지정 가능한 인터페이스를 제공합니다. 빠른 프레젠테이션 계층이 있으며 몇 초 안에 대용량 로그 파일을 로드할 수 있습니다.
 
 
 ### <a name="powershell-cmdlets"></a>PowerShell cmdlet
@@ -79,7 +80,8 @@ ms.locfileid: "57562043"
 ## <a name="known-issues"></a>알려진 문제 
 
 #### <a name="you-cant-install-the-latest-version-if-an-older-version-is-already-installed"></a>이전 버전이 이미 설치되어 있으면 최신 버전을 설치할 수 없음
-<!--SCCMDocs-pr issue #3090--> 이전 버전의 지원 센터가 설치되어 있으면 버전 1810 설치 관리자에 오류가 발생합니다. 이 문제는 파일이 원래 버전과 최신 버전 간에 버전이 지정되는 방식 때문에 발생합니다. 이 문제를 해결하려면 지원 센터의 이전 버전을 먼저 제거하세요. 그런 다음, Configuration Manager 버전 1810에서 최신 버전을 설치합니다.
+<!--SCCMDocs-pr issue #3090-->
+이전 버전의 지원 센터가 설치되어 있으면 버전 1810 설치 관리자에 오류가 발생합니다. 이 문제는 파일이 원래 버전과 최신 버전 간에 버전이 지정되는 방식 때문에 발생합니다. 이 문제를 해결하려면 지원 센터의 이전 버전을 먼저 제거하세요. 그런 다음, Configuration Manager 버전 1810에서 최신 버전을 설치합니다.
 
 #### <a name="remote-connections-must-include-computer-name-or-domain-as-part-of-the-user-name"></a>원격 연결이 사용자 이름의 일부로 컴퓨터 이름 또는 도메인을 포함해야 함
 지원 센터에서 원격 클라이언트에 연결할 경우 연결을 수립할 때 사용자 이름에 대해 머신 이름 또는 도메인 이름을 입력해야 합니다. 약식 컴퓨터 이름 또는 도메인 이름(예: `.\administrator`)을 사용할 경우 연결은 성공하지만 지원 센터가 해당 클라이언트에서 데이터를 수집하지는 않습니다. 
@@ -93,7 +95,8 @@ ms.locfileid: "57562043"
 여기서 `<connection_name>`은 원격 연결의 이름입니다.
 
 #### <a name="application-deployment-evaluation-cycle-request-isnt-sent-correctly-to-remote-machines"></a>애플리케이션 배포 평가 주기 요청이 원격 머신에 올바르게 전송되지 않음
-<!--2849356--> 지원 센터에서 **콘텐츠** 탭의 **Invoke trigger**(트리거 호출) 작업에서 **Application deployment evaluation**(애플리케이션 배포 평가)을 선택하면 배포된 애플리케이션을 평가하는 작업이 시작됩니다. 로컬 클라이언트에 연결된 경우, 머신 및 사용자 애플리케이션 배포를 둘 다 평가합니다. 그러나 원격 클라이언트에 연결된 경우 머신 애플리케이션 배포만 평가합니다.
+<!--2849356-->
+지원 센터에서 **콘텐츠** 탭의 **트리거 호출** 작업에서 **애플리케이션 배포 평가**를 선택하면 배포된 애플리케이션을 평가하는 작업이 시작됩니다. 로컬 클라이언트에 연결된 경우, 머신 및 사용자 애플리케이션 배포를 둘 다 평가합니다. 그러나 원격 클라이언트에 연결된 경우 머신 애플리케이션 배포만 평가합니다.
 
 
 ## <a name="next-steps"></a>다음 단계

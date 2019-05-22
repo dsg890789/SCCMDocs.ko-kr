@@ -2,7 +2,7 @@
 title: 기술 미리 보기 릴리스
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 새로운 기능과 기술을 시험 사용할 수 있는 기술 미리 보기 분기를 알아봅니다.
-ms.date: 04/03/2019
+ms.date: 04/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2909de734954d9519c04bc02012c3bfe17c9b81f
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
+ms.openlocfilehash: c6797b25138bdd09dd4a879ef461d5420c38ab47
+ms.sourcegitcommit: 8eccf5429aabcef17d5762e4b03912ccad1215e2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59802515"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "64928864"
 ---
 # <a name="technical-preview-for-configuration-manager"></a>Configuration Manager에 대한 기술 미리 보기
 
@@ -119,19 +119,25 @@ Microsoft는 세 개의 연속 버전을 사용할 수 있을 때까지 각 기�
 
 <!-- This is the full list of new features in the latest TP release -->
 
-### <a name="technical-preview-version-1903"></a>Technical Preview 버전 1903
+### <a name="technical-preview-version-1904"></a>Technical Preview 버전 1904
 
 <!-- - [title](/sccm/core/get-started/2019/technical-preview-1901#bkmk_anchor) <!--ID-->
 
-- [클라우드 서비스 비용 예측기](/sccm/core/get-started/2019/technical-preview-1903#bkmk_cmg) <!--3555774-->  
+- [Office 365 ProPlus 업그레이드 준비 대시보드](/sccm/core/get-started/2019/technical-preview-1904#bkmk_o365) <!--4021125-->  
 
-- [전송 최적화를 위해 배포 지점을 로컬 캐시 서버로 사용](/sccm/core/get-started/2019/technical-preview-1903#bkmk_doinc) <!--3555764-->  
+- [기능 업데이트 동안 동적 업데이트 구성](/sccm/core/get-started/2019/technical-preview-1904#configure-dynamic-update-during-feature-updates) <!--4062619-->  
 
-- [작업 순서를 편집하기 위해 잠금 확보](/sccm/core/get-started/2019/technical-preview-1903#bkmk_sedo) <!--3699337-->  
+- [커뮤니티 허브 및 GitHub](/sccm/core/get-started/2019/technical-preview-1904#community-hub-and-github) <!--3555935,3555936-->  
 
-- [필수 업데이트 드릴스루](/sccm/core/get-started/2019/technical-preview-1903#bkmk_req-updates) <!--4224414-->  
+- [CMPivot 독립 실행형](/sccm/core/get-started/2019/technical-preview-1904#bkmk_cmpivot) <!--3555890-->  
 
-- [향상된 작업 순서 미디어 만들기 기능](/sccm/core/get-started/2019/technical-preview-1903#bkmk_tsmedia) <!--4090666-->  
+- [소프트웨어 센터 인프라 개선 사항](/sccm/core/get-started/2019/technical-preview-1904#bkmk_swctr) <!--3555950-->  
+
+- [향상된 WSUS 유지 관리 제어](/sccm/core/get-started/2019/technical-preview-1904#improved-control-over-wsus-maintenance) <!--4110109-->  
+
+- [드라이버 패키지 및 OS 이미지 사전 캐시](/sccm/core/get-started/2019/technical-preview-1904#bkmk_precache) <!--4224642-->  
+
+- [향상된 OS 배포 기능](/sccm/core/get-started/2019/technical-preview-1904#bkmk_osd) <!--2839943,4447680-->  
 
 > [!Note]  
 > 이전 버전의 기술 미리 보기에서 사용할 수 있는 기능은 이후 버전에서도 계속 사용할 수 있습니다. 마찬가지로 Configuration Manager 현재 분기에 추가된 기능은 기술 미리 보기 분기에서 계속 사용할 수 있습니다.  
@@ -147,6 +153,11 @@ Then remove the bottom of this list and/or move individual items not in CB to th
 
  | 기능 | 기술 미리 보기 버전 | 현재 분기 버전 |  
  |---------|---------------------------|------------------------|
+ | 클라우드 서비스 비용 예측기 <!--3555774--> | [Tech Preview 1903](/sccm/core/get-started/2019/technical-preview-1903#bkmk_cmg) | ![추가되지 않음](media/Red_X.gif) |
+ | 전송 최적화를 위해 배포 지점을 로컬 캐시 서버로 사용 <!--3555764--> | [Tech Preview 1903](/sccm/core/get-started/2019/technical-preview-1903#bkmk_doinc) | ![추가되지 않음](media/Red_X.gif) |
+ | 작업 순서를 편집하기 위해 잠금 확보 <!--3699337--> | [Tech Preview 1903](/sccm/core/get-started/2019/technical-preview-1903#bkmk_sedo) | ![추가되지 않음](media/Red_X.gif) |
+ | 필수 업데이트 드릴스루 <!--4224414--> | [Tech Preview 1903](/sccm/core/get-started/2019/technical-preview-1903#bkmk_req-updates) | ![추가되지 않음](media/Red_X.gif) |
+ | 향상된 작업 순서 미디어 만들기 기능 <!--4090666--> | [Tech Preview 1903](/sccm/core/get-started/2019/technical-preview-1903#bkmk_tsmedia) | ![추가되지 않음](media/Red_X.gif) |
  | Office 365 업데이트용 추가 언어 <!--3555955--> | [Tech Preview 1902.2](/sccm/core/get-started/2019/technical-preview-1902-2#bkmk_o365lang) | 버전 1902 |
  | Office 365 ProPlus 준비를 위한 분석과 통합 <!--3735402--> | [Tech Preview 1902.2](/sccm/core/get-started/2019/technical-preview-1902-2#bkmk_o365) | 버전 1902 |
  | 단계적 배포 성공 조건 개선 <!--3555946--> | [Tech Preview 1902.2](/sccm/core/get-started/2019/technical-preview-1902-2#bkmk_pod) | 버전 1902 |
@@ -178,11 +189,7 @@ Then remove the bottom of this list and/or move individual items not in CB to th
  | 임계값을 초과하는 경우 클라우드 서비스 중지 <!--3735092--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_cmg) | 버전 1902 |
  | 클라이언트 프로비전 모드 시간 제한 <!--3197824--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_osdprov) | 버전 1902 |
  | 향상된 OS 배포 <!--3633146,3641475,3654172,3734270--> | [Tech Preview 1901](/sccm/core/get-started/2019/technical-preview-1901#bkmk_osd) | 버전 1902 |
- | 향상된 PowerShell 스크립트 실행 작업 순서 단계 기능 <!--3556028 fka 1359389--> | [Tech Preview 1812](capabilities-in-technical-preview-1812.md#bkmk_posh) | 버전 1902 |
- | 메일을 통한 애플리케이션 승인 기능 향상 <!--3594063--> | [Tech Preview 1812](capabilities-in-technical-preview-1812.md#bkmk_email) | 버전 1902 |
- | 소프트웨어 센터에서 사용자 디바이스 선호도 구성 <!--3485366--> | [Tech Preview 1812](capabilities-in-technical-preview-1812.md#bkmk_uda) | 버전 1902 |
- | 향상된 Configuration Manager 콘솔 기능 <!--3594151--> | [Tech Preview 1812](capabilities-in-technical-preview-1812.md#bkmk_console) | 버전 1902 |
- | 커뮤니티 허브에서 보고서 다운로드<!--3555936--> | [Tech Preview 1812](capabilities-in-technical-preview-1812.md#bkmk_hub) | ![추가되지 않음](media/Red_X.gif) |
+
 
 ## <a name="features-in-previous-technical-previews"></a>이전 기술 미리 보기의 기능
 
@@ -196,6 +203,7 @@ With each CB release, review and remove from this list for anything that's now a
 
 | 기능        | 기술 미리 보기 버전 |  
 |----------------|---------------------------|
+| 커뮤니티 허브에서 보고서 다운로드<!--3555936--> | [Tech Preview 1812](capabilities-in-technical-preview-1812.md#bkmk_hub) |
 | 커뮤니티 허브 <!--3556020, fka 1357766--> | [Tech Preview 1807](capabilities-in-technical-preview-1807.md#bkmk_hub) |
 | 클라이언트 기반 PXE 응답자 서비스 <!--3556018, fka 1357148--> | [Tech Preview 1712](capabilities-in-technical-preview-1712.md#client-based-pxe-responder-service) |
 | IPv6에 대한 PXE 네트워크 부팅 지원 <!--3601254, fka 1269793--> |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#pxe-network-boot-support-for-ipv6)|

@@ -2,21 +2,21 @@
 title: 제품 수명 주기 대시보드
 titleSuffix: Configuration Manager
 description: Configuration Manager의 제품 수명 주기 대시보드를 사용하여 Microsoft 수명 주기 정책을 봅니다.
-ms.date: 11/27/2018
+ms.date: 05/13/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 8b5b144a-0e5f-4fcc-87b2-33b9bcdb5655
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 716c5218eafaf6297292fdd852589b7327e2ecaa
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: b8876f00ecb26aabd84f863ee1fcef4f2aac283a
+ms.sourcegitcommit: 53f2380ac67025fb4a69fc1651edad15d98e0cdd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56120030"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673412"
 ---
 # <a name="manage-microsoft-lifecycle-policy-with-configuration-manager"></a>Configuration Manager로 Microsoft 수명 주기 정책 관리
 
@@ -35,6 +35,8 @@ ms.locfileid: "56120030"
  제품 수명 주기 대시보드에서 데이터를 보려면 다음 구성 요소가 필요합니다.  
 
 - Configuration Manager 콘솔을 실행하는 컴퓨터에 Internet Explorer 9 이상이 설치되어 있어야 합니다.  
+
+- 서비스 연결 지점 역할을 설치하고 구성해야 합니다. 이 대시보드에서 데이터 업데이트를 가져오려면 서비스 연결점이 온라인 상태여야 하며 오프라인 상태인 경우에는 주기적으로 동기화해야 합니다. 자세한 내용은 [서비스 연결 지점 정보](/sccm/core/servers/deploy/configure/about-the-service-connection-point)를 참조하세요.
 
 - 대시보드에서 하이퍼링크가 작동하려면 보고 서비스 지점이 필요합니다. 대시보드는 SSRS(SQL Server Reporting Services) 보고서에 연결됩니다. 자세한 내용은 [Configuration Manager의 보고 기능](/sccm/core/servers/manage/reporting)을 참조하세요.  
 
@@ -67,7 +69,8 @@ Configuration Manager 콘솔에서 수명 주기 대시보드에 액세스하려
 - **Windows 클라이언트**: Windows 클라이언트 OS 버전을 표시합니다.  
 - **Windows Server**: Windows Server OS 버전을 표시합니다.  
 - **데이터베이스**: SQL Server 버전 보기  
-- **Configuration Manager**: 1810 버전부터 Configuration Manager 버전을 표시합니다.  
+- **Configuration Manager**: 1810 버전부터 Configuration Manager 버전을 표시합니다. 
+- **Microsoft Office**: 버전 1902부터, 설치된 Office 2003~Office 2016 버전에 대한 정보를 표시합니다. <!--3556026-->
 
 이 대시보드에는 다음과 같은 타일에 있습니다.  
 

@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 68dc6acd-5848-47a4-b4c1-ffa40e47890b
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b395cc8a19a3aab86f3ad40302673d41afe4885
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 7cc2e1783843f600f88b78e0db0cc6b8b8db0f55
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56123368"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65500991"
 ---
 # <a name="reference-for-maintenance-tasks-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 유지 관리 작업 참조
 
@@ -42,7 +42,7 @@ ms.locfileid: "56123368"
 -   **기본 사이트**: 사용 안 함    
 -   보조 사이트: 사용할 수 없음  
 
-**오래된 애플리케이션 요청 데이터 삭제**: 이 작업을 사용하면 데이터베이스에서 오래된 응용 프로그램 요청을 삭제할 수 있습니다. 애플리케이션 요청에 대한 자세한 내용은 [System Center Configuration Manager를 사용하여 애플리케이션 만들기 및 배포](/sccm/apps/get-started/create-and-deploy-an-application)를 참조하세요.  
+**오래된 애플리케이션 요청 데이터 삭제**: 이 작업을 사용하면 데이터베이스에서 오래된 애플리케이션 요청을 삭제할 수 있습니다. 애플리케이션 요청에 대한 자세한 내용은 [System Center Configuration Manager를 사용하여 애플리케이션 만들기 및 배포](/sccm/apps/get-started/create-and-deploy-an-application)를 참조하세요.  
 
 -   중앙 관리 사이트: 사용할 수 없음
 -   **기본 사이트**: 사용    
@@ -89,13 +89,13 @@ ms.locfileid: "56123368"
 -   **기본 사이트**: 사용    
 -   보조 사이트: 사용할 수 없음  
 
-**오래된 디바이스 초기화 레코드 삭제**: 이 작업을 사용하면 데이터베이스에서 모바일 장치 초기화 작업에 대한 오래된 데이터를 삭제할 수 있습니다. 모바일 디바이스 초기화에 대한 자세한 내용은 [System Center Configuration Manager를 사용하여 원격 초기화, 잠금 또는 암호 재설정으로 데이터 보호](/sccm/mdm/deploy-use/wipe-lock-reset-devices)를 참조하세요.  
+**오래된 디바이스 초기화 레코드 삭제**: 이 작업을 사용하면 데이터베이스에서 모바일 디바이스 초기화 작업에 대한 오래된 데이터를 삭제할 수 있습니다. 모바일 디바이스 초기화에 대한 자세한 내용은 [System Center Configuration Manager를 사용하여 원격 초기화, 잠금 또는 암호 재설정으로 데이터 보호](/sccm/mdm/deploy-use/wipe-lock-reset-devices)를 참조하세요.  
 
 -   중앙 관리 사이트: 사용할 수 없음    
 -   **기본 사이트**: 사용    
 -   보조 사이트: 사용할 수 없음  
 
-**Exchange Server 커넥터에서 관리하는 오래된 디바이스 삭제**: 이 작업을 사용하면 Exchange Server 커넥터를 사용하여 관리되는 모바일 장치에 대한 오래된 데이터를 삭제할 수 있습니다. 이 데이터는 Exchange Server 커넥터 속성의 **검색** 탭에 있는 **다음 기간(일)을 초과해 비활성 상태인 모바일 디바이스 무시** 옵션에서 구성한 간격에 따라 삭제됩니다. 자세한 내용은 [System Center Configuration Manager와 Exchange를 사용하여 모바일 디바이스 관리](../../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md)를 참조하세요.  
+**Exchange Server 커넥터에서 관리하는 오래된 디바이스 삭제**: 이 작업을 사용하면 Exchange Server 커넥터를 사용하여 관리되는 모바일 디바이스에 대한 오래된 데이터를 삭제할 수 있습니다. 이 데이터는 Exchange Server 커넥터 속성의 **검색** 탭에 있는 **다음 기간(일)을 초과해 비활성 상태인 모바일 디바이스 무시** 옵션에서 구성한 간격에 따라 삭제됩니다. 자세한 내용은 [System Center Configuration Manager와 Exchange를 사용하여 모바일 디바이스 관리](../../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md)를 참조하세요.  
 
 -   중앙 관리 사이트: 사용할 수 없음   
 -   **기본 사이트**: 사용    
@@ -127,7 +127,7 @@ ms.locfileid: "56123368"
 -   **기본 사이트**: 사용 안 함    
 -   보조 사이트: 사용할 수 없음  
 
-**오래된 인벤토리 기록 삭제**: 이 작업을 사용하면 데이터베이스에서 지정된 시간보다 오래 저장되어 있는 인벤토리 데이터를 삭제할 수 있습니다. 인벤토리 기록에 대한 자세한 내용은 [System Center Configuration Manager에서 하드웨어 인벤토리를 보기 위해 리소스 탐색기를 사용하는 방법](../../../core/clients/manage/inventory/use-resource-explorer-to-view-hardware-inventory.md)을 참조하세요.  
+**오래된 인벤토리 기록 삭제**: 이 작업을 사용하면 데이터베이스에서 지정된 시간보다 오래 저장된 인벤토리 데이터를 삭제할 수 있습니다. 인벤토리 기록에 대한 자세한 내용은 [System Center Configuration Manager에서 하드웨어 인벤토리를 보기 위해 리소스 탐색기를 사용하는 방법](../../../core/clients/manage/inventory/use-resource-explorer-to-view-hardware-inventory.md)을 참조하세요.  
 
 -   중앙 관리 사이트: 사용할 수 없음    
 -   **기본 사이트**: 사용    
@@ -166,13 +166,13 @@ ms.locfileid: "56123368"
 -   **기본 사이트**: 사용    
 -   **보조 사이트**: 사용  
 
-**오래된 소프트웨어 계량 데이터 삭제**: 이 작업을 사용하면 데이터베이스에서 지정된 시간보다 오래 저장되어 있는 오래된 소프트웨어 계량 관련 데이터를 삭제할 수 있습니다. 자세한 내용은 [System Center Configuration Manager의 소프트웨어 계량](../../../apps/deploy-use/monitor-app-usage-with-software-metering.md)을 참조하세요.  
+**오래된 소프트웨어 계량 데이터 삭제**: 이 작업을 사용하면 데이터베이스에서 지정된 시간보다 오래 저장된 오래된 소프트웨어 계량 관련 데이터를 삭제할 수 있습니다. 자세한 내용은 [System Center Configuration Manager의 소프트웨어 계량](../../../apps/deploy-use/monitor-app-usage-with-software-metering.md)을 참조하세요.  
 
 -   중앙 관리 사이트: 사용할 수 없음    
 -   **기본 사이트**: 사용    
 -   보조 사이트: 사용할 수 없음  
 
-**오래된 소프트웨어 계량 요약 데이터 삭제**: 이 작업을 사용하면 데이터베이스에서 지정된 시간보다 오래 저장되어 있는 오래된 소프트웨어 계량 관련 요약 데이터를 삭제할 수 있습니다. 자세한 내용은 [System Center Configuration Manager의 소프트웨어 계량](../../../apps/deploy-use/monitor-app-usage-with-software-metering.md)을 참조하세요.  
+**오래된 소프트웨어 계량 요약 데이터 삭제**: 이 작업을 사용하면 데이터베이스에서 지정된 시간보다 오래 저장된 오래된 소프트웨어 계량 관련 요약 데이터를 삭제할 수 있습니다. 자세한 내용은 [System Center Configuration Manager의 소프트웨어 계량](../../../apps/deploy-use/monitor-app-usage-with-software-metering.md)을 참조하세요.  
 
 -   중앙 관리 사이트: 사용할 수 없음    
 -   **기본 사이트**: 사용    
@@ -184,7 +184,7 @@ ms.locfileid: "56123368"
 -   **기본 사이트**: 사용    
 -   보조 사이트: 사용할 수 없음  
 
-**오래된 위협 데이터 삭제**: 이 작업을 사용하면 데이터베이스에서 지정된 시간보다 오래 저장되어 있는 오래된 Endpoint Protection 위협 데이터를 삭제할 수 있습니다. Endpoint Protection에 대한 자세한 내용은 [System Center Configuration Manager의 Endpoint Protection 구성](../../../protect/deploy-use/endpoint-protection.md)을 참조하세요.  
+**오래된 위협 데이터 삭제**: 이 작업을 사용하면 데이터베이스에서 지정된 시간보다 오래 저장된 오래된 Endpoint Protection 위협 데이터를 삭제할 수 있습니다. Endpoint Protection에 대한 자세한 내용은 [System Center Configuration Manager의 Endpoint Protection 구성](../../../protect/deploy-use/endpoint-protection.md)을 참조하세요.  
 
 -   중앙 관리 사이트: 사용할 수 없음    
 -   **기본 사이트**: 사용    
@@ -196,7 +196,7 @@ ms.locfileid: "56123368"
 -   **기본 사이트**: 사용    
 -   보조 사이트: 사용할 수 없음  
 
-**오래된 사용자 디바이스 선호도 데이터 삭제**: 이 작업을 사용하면 데이터베이스에서 오래된 사용자 장치 선호도 데이터를 삭제할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 사용자 디바이스 선호도를 사용하여 사용자와 디바이스 연결](../../../apps/deploy-use/link-users-and-devices-with-user-device-affinity.md)을 참조하세요.  
+**오래된 사용자 디바이스 선호도 데이터 삭제**: 이 작업을 사용하면 데이터베이스에서 오래된 사용자 디바이스 선호도 데이터를 삭제할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 사용자 디바이스 선호도를 사용하여 사용자와 디바이스 연결](../../../apps/deploy-use/link-users-and-devices-with-user-device-affinity.md)을 참조하세요.  
 
 -   중앙 관리 사이트: 사용할 수 없음    
 -   **기본 사이트**: 사용    
@@ -218,7 +218,7 @@ ms.locfileid: "56123368"
 -   **기본 사이트**: 사용 안 함    
 -   보조 사이트: 사용할 수 없음  
 
-**사용되지 않는 경고 삭제**: 이 작업을 사용하면 데이터베이스에서 지정된 시간보다 오래 저장되어 있는 만료된 경고를 삭제할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에 대한 경고 및 상태 시스템 사용](../../../core/servers/manage/use-alerts-and-the-status-system.md)을 참조하세요.  
+**사용되지 않는 경고 삭제**: 이 작업을 사용하면 데이터베이스에서 지정된 시간보다 오래 저장된 만료된 경고를 삭제할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에 대한 경고 및 상태 시스템 사용](../../../core/servers/manage/use-alerts-and-the-status-system.md)을 참조하세요.  
 
 -   **중앙 관리 사이트**: 사용    
 -   **기본 사이트**: 사용    
@@ -244,13 +244,13 @@ ms.locfileid: "56123368"
 -   **기본 사이트**: 사용    
 -   보조 사이트: 사용할 수 없음
 
-**사용되지 않은 애플리케이션 수정 버전 삭제**: 이 작업을 사용하면 더 이상 참조되지 않는 응용 프로그램 수정 버전을 삭제할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 애플리케이션을 수정하고 교체하는 방법](../../../apps/deploy-use/revise-and-supersede-applications.md)을 참조하세요.  
+**사용되지 않은 애플리케이션 수정 버전 삭제**: 이 작업을 사용하면 더 이상 참조되지 않는 애플리케이션 수정 버전을 삭제할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 애플리케이션을 수정하고 교체하는 방법](../../../apps/deploy-use/revise-and-supersede-applications.md)을 참조하세요.  
 
 -   중앙 관리 사이트: 사용할 수 없음    
 -   **기본 사이트**: 사용    
 -   보조 사이트: 사용할 수 없음  
 
-**컬렉션 구성원 평가**: 컬렉션 멤버 평가는 사이트 구성 요소로 구성합니다. 사이트 구성 요소에 대한 자세한 내용은 [System Center Configuration Manager의 사이트 구성 요소](../../../core/servers/deploy/configure/site-components.md)를 참조하세요.  
+**컬렉션 구성원 평가**: 컬렉션 멤버 자격 평가는 사이트 구성 요소로 구성합니다. 사이트 구성 요소에 대한 자세한 내용은 [System Center Configuration Manager의 사이트 구성 요소](../../../core/servers/deploy/configure/site-components.md)를 참조하세요.  
 
 -   중앙 관리 사이트: 사용할 수 없음    
 -   **기본 사이트**: 사용    
@@ -300,7 +300,7 @@ ms.locfileid: "56123368"
 -   **기본 사이트**: 사용    
 -   보조 사이트: 사용할 수 없음  
 
-**애플리케이션 카탈로그 테이블 업데이트**: 이 작업을 사용하여 응용 프로그램 카탈로그 웹 사이트 데이터베이스 캐시와 최신 응용 프로그램 정보를 동기합니다. 이 유지 관리 작업의 구성을 변경하는 경우 구성은 계층 내에서 해당되는 각 사이트에 적용됩니다.  
+**애플리케이션 카탈로그 테이블 업데이트**: 이 작업을 사용하여 애플리케이션 카탈로그 웹 사이트 데이터베이스 캐시와 최신 애플리케이션 정보를 동기화합니다. 이 유지 관리 작업의 구성을 변경하는 경우 구성은 계층 내에서 해당되는 각 사이트에 적용됩니다.  
 
 -   중앙 관리 사이트: 사용할 수 없음    
 -   **기본 사이트**: 사용    

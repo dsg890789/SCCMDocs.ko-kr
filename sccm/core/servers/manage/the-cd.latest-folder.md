@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 8db92d67-5d9c-4e9c-80d0-ae6fa0dd4817
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70612d3f60802892aa99bbc4fc006b9385cb8756
-ms.sourcegitcommit: af8693048e6706ffda72572374f56e0bc7dfce2c
+ms.openlocfilehash: b4f69d686a48af3c6e710c6aff592d71de1dbff1
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737322"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65496998"
 ---
 # <a name="the-cdlatest-folder-for-configuration-manager"></a>Configuration Manager의 CD.Latest 폴더
 
@@ -62,7 +62,8 @@ CD.Latest 폴더의 소스 파일은 다음 시나리오에서 지원됩니다.
 새 중앙 관리 사이트를 설치하여 독립 실행형 기본 사이트를 확장하는 경우 기본 사이트의 CD.Latest 폴더에서 설치 프로그램 및 소스 파일을 사용합니다. 이 프로세스는 기본 사이트의 버전과 일치하는 설치 소스 파일을 사용합니다. 자세한 내용은 [독립 실행형 기본 사이트 확장](/sccm/core/servers/deploy/install/use-the-setup-wizard-to-install-sites#bkmk_expand)을 참조하세요.
 
 ### <a name="install-a-secondary-site"></a>보조 사이트 설치
-<!-- SCCMDocs-pr issue #3164 --> 콘솔 내 업데이트를 하나 이상 설치한 기본 사이트 아래에 새 보조 사이트를 설치하려는 경우 기본 사이트의 CD.Latest 폴더에 있는 소스 파일을 사용합니다. 
+<!-- SCCMDocs-pr issue #3164 -->
+콘솔 내 업데이트를 하나 이상 설치한 기본 사이트 아래에 새 보조 사이트를 설치하려는 경우 기본 사이트의 CD.Latest 폴더에 있는 소스 파일을 사용합니다. 
 
 자세한 내용은 [보조 사이트 설치](/sccm/core/servers/deploy/install/use-the-setup-wizard-to-install-sites#bkmk_secondary)를 참조하세요. 
 

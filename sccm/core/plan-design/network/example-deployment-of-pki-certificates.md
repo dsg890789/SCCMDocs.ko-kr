@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 3417ff88-7177-4a0d-8967-ab21fe7eba17
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 060b1f71519227673dd2b8b67b5def026e96f493
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: d686baa95cc29a2e4923c0572a0d056beeff9f5b
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56131900"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65499220"
 ---
 # <a name="step-by-step-example-deployment-of-the-pki-certificates-for-system-center-configuration-manager-windows-server-2008-certification-authority"></a>System Center Configuration Manager를 위한 PKI 인증서 배포의 단계별 예제: Windows Server 2008 인증 기관
 

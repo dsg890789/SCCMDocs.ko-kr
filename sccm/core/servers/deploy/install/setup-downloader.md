@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: bda87fc5-2e4c-4992-98a4-01770365038c
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: abfad38e0c02ff6c0af8d4c9c47bdeed7598e513
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 23fbe5ecb6b69f9832ca34659cd35f5ad25b29b9
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56129751"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65501326"
 ---
 # <a name="setup-downloader-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 설치 다운로더
 

@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: ed931751-18f2-4230-a09e-a0a329fbfa1c
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59376c5b9846e32cc8b63666956424a11211f1c0
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 679f62bb38bab06c074c97e92ff7d3adcae80f1b
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56130795"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65501439"
 ---
 # <a name="about-discovery-methods-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 검색 방법 정보
 
@@ -267,7 +267,7 @@ Azure AD 사용자 검색을 구성하려면 클라우드 관리에 대한 [Azur
 이 방법을 사용하여 네트워크의 토폴로지를 검색하고 네트워크에서 IP 주소가 있는 디바이스를 검색합니다. 네트워크 검색은 다음 엔터티를 쿼리하여 IP 사용 리소스에 대한 네트워크를 검색합니다. 
 - DHCP의 Microsoft 구현을 실행하는 서버
 - 네트워크 라우터의 ARP(주소 확인 프로토콜)
-- SNMP 사용 장치
+- SNMP 사용 디바이스
 - Active Directory 도메인  
 
 네트워크 검색을 사용하려면 실행할 검색의 *수준*을 지정해야 합니다. 또한 네트워크 검색에서 네트워크 세그먼트 또는 디바이스를 쿼리할 수 있도록 지원하는 검색 메커니즘을 하나 이상 구성해야 합니다. 네트워크상의 검색 작업을 제어할 수 있는 설정을 구성할 수도 있습니다. 끝으로, 네트워크 검색이 실행되는 일정을 하나 이상 정의합니다.  

@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: bb0a87a6-fd65-440b-90a5-2fef35622c9d
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6c0705df8fafea253fde06ed605521aad2d6ffbd
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: d8d681dbd9996fb7eddbc2b37cf6af6a32401560
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56131713"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65497596"
 ---
 # <a name="checklist-for-installing-update-1806-for-configuration-manager"></a>Configuration Manager용 업데이트 1806을 설치하기 위한 검사 목록
 
@@ -140,7 +140,8 @@ Configuration Manager에서 관리 지점에 대한 데이터베이스 복제본
 사이트 서버에 업데이트를 설치할 수 있는 기간을 정의하려면 서비스 기간을 사용합니다. 이를 통해 계층 구조의 사이트에서 업데이트를 설치하는 시기를 제어할 수 있습니다. 자세한 내용은  [사이트 서버에 대한 서비스 기간](/sccm/core/servers/manage/service-windows)을 참조하세요.
 
 #### <a name="review-supported-extensions"></a>지원되는 확장 검토
-<!--SCCMdocs#587--> Microsoft 또는 Microsoft 파트너에서 다른 제품으로 Configuration Manager를 확장하는 경우 해당 제품이 버전 1806을 지원하는지 확인합니다. 이 정보는 제품 공급업체를 통해 확인합니다. 예를 들어 Microsoft Deployment Toolkit [릴리스 정보](/sccm/mdt/release-notes)를 참조합니다.
+<!--SCCMdocs#587-->
+Microsoft 또는 Microsoft 파트너에서 다른 제품으로 Configuration Manager를 확장하는 경우 해당 제품이 버전 1806을 지원하는지 확인합니다. 이 정보는 제품 공급업체를 통해 확인합니다. 예를 들어 Microsoft Deployment Toolkit [릴리스 정보](/sccm/mdt/release-notes)를 참조합니다.
 
 #### <a name="run-the-setup-prerequisite-checker"></a>설치 필수 구성 요소 검사기 실행   
 업데이트가 콘솔에 **사용 가능**으로 표시되는 경우 업데이트를 설치하기 전에 독립적으로 필수 구성 요소 검사기를 실행할 수 있습니다. 사이트에 업데이트를 설치할 때 필수 조건 검사가 다시 실행됩니다.

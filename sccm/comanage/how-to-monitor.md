@@ -2,7 +2,7 @@
 title: 공동 관리 모니터링
 titleSuffix: Configuration Manager
 description: 공동 관리 대시보드를 사용하여 공동 관리형 디바이스에 관한 정보를 검토합니다.
-ms.date: 01/14/2019
+ms.date: 04/30/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c731692bc2277cc5ce97e079387b392ca09ff3e
-ms.sourcegitcommit: 9aebc20b25cdef0af908918ccfd791f3264a5d94
+ms.openlocfilehash: f10e71bbf3099bad4d367f068c4a5f9e098f97eb
+ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "56755397"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65083273"
 ---
 # <a name="how-to-monitor-co-management-in-configuration-manager"></a>Configuration Manager에서 공동 관리를 모니터링하는 방법
 
@@ -172,6 +172,7 @@ OS당 클라이언트 디바이스의 수를 버전별로 표시합니다. 다�
 
 두 정책을 **모니터링** 작업 영역의 **배포** 노드에서 만듭니다. 한 정책은 파일럿 그룹용이며 다른 정책은 프로덕션용입니다. 이러한 정책은 Configuration Manager에서 정책을 적용한 디바이스의 수만 보고합니다. 디바이스를 공동 관리할 수 있기 전의 요구 사항인 Intune에 등록된 디바이스의 수는 고려하지 않습니다.  
 
+프로덕션 정책(CoMgmtSettingsProd)은 **모든 시스템** 컬렉션을 대상으로 합니다. 또한 OS 유형 및 버전을 확인하는 적용 가능성 조건을 포함합니다. 클라이언트가 서버 OS 또는 Windows 10이 아니면 정책이 적용되지 않으며, 아무 작업도 수행되지 않습니다.
 
 
 ## <a name="wmi-device-data"></a>WMI 디바이스 데이터

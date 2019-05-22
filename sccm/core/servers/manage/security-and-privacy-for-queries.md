@@ -2,7 +2,7 @@
 title: 쿼리에 대한 보안 및 개인 정보
 titleSuffix: Configuration Manager
 description: 사이트 데이터베이스에서 정보를 쿼리할 때 보안 및 개인 정보에 대한 모범 사례를 이해합니다.
-ms.date: 10/06/2016
+ms.date: 05/08/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cdd9731b2ae34e096159b9e73c730fcbd7ac728
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 43dcbe3abc200ecf32a83888e7b9712efd21584e
+ms.sourcegitcommit: 99dfe4fb9e9cfd20c44380ae442b3a5b895a0d9b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56121535"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65214760"
 ---
 # <a name="security-and-privacy-for-queries-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 쿼리에 대한 보안 및 개인 정보
 
@@ -26,12 +26,14 @@ System Center Configuration Manager의 쿼리를 사용하여 지정하는 기�
 
  쿼리에 대한 자세한 내용은 [System Center Configuration Manager의 쿼리 소개](../../../core/servers/manage/introduction-to-queries.md)를 참조하세요. 쿼리를 사용하여 검색할 수 있는 정보를 수집하는 Configuration Manager 작업에 대해 보안 모범 사례 및 개인 정보에 대한 자세한 내용은 [System Center Configuration Manager의 보안 및 개인 정보](../../../core/plan-design/security/security-and-privacy.md)를 참조하세요.  
 
-## <a name="security-best-practices-for-queries"></a>쿼리에 대 한 보안 모범 사례  
+## <a name="security-best-practices-for-queries"></a>쿼리에 대한 보안 모범 사례
+
  쿼리의 경우 다음 보안 모범 사례를 따르세요.  
 
 |보안 모범 사례|추가 정보|  
 |----------------------------|----------------------|  
 |네트워크 위치에 저장된 쿼리를 가져오거나 내보내는 경우 해당 위치와 네트워크 채널을 보호합니다.|네트워크 폴더에 액세스할 수 있는 사용자를 제한합니다.<br /><br /> 쿼리 데이터를 가져오기 전에 공격자가 변조하지 못하도록 네트워크 위치와 사이트 서버 간에 SMB(서버 메시지 블록) 서명 또는 IPsec(인터넷 프로토콜 보안)을 사용합니다.|  
 
-## <a name="see-also"></a>참고 항목  
- [System Center Configuration Manager에 대한 쿼리 기술 참조](../../../core/servers/manage/queries-technical-reference.md)
+## <a name="next-steps"></a>다음 단계
+  
+[System Center Configuration Manager의 보안 및 개인 정보](../../../core/plan-design/security/security-and-privacy.md)

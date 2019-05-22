@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 1012ec24-27d9-4193-8236-918d283c7448
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 740dda5c41c28e1648eb24e75fe24a2e22784f3b
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 297aa9f8756b0c7214381e5e688f26cc21645fc4
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56129106"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65500848"
 ---
 # <a name="policy-spy"></a>정책 감시
 

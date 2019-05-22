@@ -7,17 +7,17 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: ac034143-003e-4629-aac2-99eaffef4db1
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b5b6f62a06d09159b95b14991d1038585281841
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 93862e95a3bae13582c2aa70daf2db22f9d621d8
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56137282"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65495464"
 ---
 # <a name="what39s-new-in-version-1706-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1706의 새로운 기능
 
@@ -45,28 +45,35 @@ Version 1706 drops support for the following products:
 ## <a name="site-infrastructure"></a>사이트 인프라
 
 ### <a name="client-peer-cache-support-for-express-installation-files-for-windows-10-and-office-365"></a>Windows 10 및 Office 365에 대한 고속 설치 파일을 위한 클라이언트 피어 캐시 지원  
-<!-- 1352486 --> 이 릴리스부터 피어 캐시가 Windows 10 콘텐츠 빠른 설치 파일과 Office 365 업데이트 파일 배포를 지원합니다. 이 변경을 지원하기 위한 추가 구성은 필요 없습니다.
+<!-- 1352486 -->
+이 릴리스부터 피어 캐시가 Windows 10 콘텐츠 고속 설치 파일과 Office 365 업데이트 파일 배포를 지원합니다. 이 변경을 지원하기 위한 추가 구성은 필요 없습니다.
 
 ### <a name="updates-for-the-data-warehouse"></a>데이터 웨어하우스 업데이트
-<!-- 1277922 --> 데이터 웨어하우스는 더 이상 시험판 기능이 아닙니다. 또한 SQL Server Always On 가용성 그룹 및 장애 조치(failover) 클러스터에 대한 지원을 포함하도록 필수 구성 요소를 업데이트했습니다. 자세한 내용은 [데이터 웨어하우스 서비스 지점](/sccm/core/servers/manage/data-warehouse)을 참조하세요.
+<!-- 1277922 -->
+데이터 웨어하우스는 더 이상 시험판 기능이 아닙니다. 또한 SQL Server Always On 가용성 그룹 및 장애 조치(failover) 클러스터에 대한 지원을 포함하도록 필수 구성 요소를 업데이트했습니다. 자세한 내용은 [데이터 웨어하우스 서비스 지점](/sccm/core/servers/manage/data-warehouse)을 참조하세요.
 
 ### <a name="accessibility-improvements"></a>향상된 접근성 기능
-<!-- 1253000 --> Configuration Manager 콘솔에 대한 접근성 기능을 추가로 개선했습니다. 자세한 내용은 [접근성 기능](/sccm/core/understand/accessibility-features)을 참조하세요.
+<!-- 1253000 -->
+Configuration Manager 콘솔에 대한 접근성 기능을 추가로 개선했습니다. 자세한 내용은 [접근성 기능](/sccm/core/understand/accessibility-features)을 참조하세요.
 
 ### <a name="improvements--for-sql-server-always-on-availability-groups"></a>SQL Server Always On 가용성 그룹에 대한 향상된 기능
-<!-- 1352094 --> 이 릴리스에서는 이제 Configuration Manager에서 SQL Server Always On 가용성 그룹의 비동기 커밋 복제본을 사용할 수 있습니다. 즉, 오프사이트(원격) 백업으로 사용하도록 추가 복제본을 가용성 그룹에 추가한 다음 재해 복구 시나리오에서 사용할 수 있습니다.  
+<!-- 1352094 -->
+이 릴리스에서는 이제 Configuration Manager에서 SQL Server Always On 가용성 그룹의 비동기 커밋 복제본을 사용할 수 있습니다. 즉, 오프사이트(원격) 백업으로 사용하도록 추가 복제본을 가용성 그룹에 추가한 다음 재해 복구 시나리오에서 사용할 수 있습니다.  
   -   Configuration Manager에서는 비동기 커밋 복제본을 사용하여 동기 복제본을 복구하도록 지원합니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 백업 및 복구 항목에서 [사이트 데이터베이스 복구 옵션](/sccm/protect/understand/backup-and-recovery#BKMK_SiteDatabaseRecoveryOption)을 참조하세요.
   -   이 릴리스에서는 비동기 커밋 복제본을 사이트 데이터베이스로 사용하기 위한 장애 조치를 지원하지 않습니다.
 자세한 내용은 [Always On 가용성 그룹 사용 준비](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database)를 참조하세요.
 
 ### <a name="update-reset-tool"></a>업데이트 다시 설정 도구
-<!-- 1324589 --> 버전 1706부터 Configuration Manager 기본 사이트 및 중앙 관리 사이트에는 Configuration Manager 업데이트 다시 설정 도구 **CMUpdateReset.exe**가 포함되어 있습니다. 콘솔 내 업데이트를 다운로드하거나 복제하는 문제가 있는 경우 문제를 해결하려면 지원되는 현재 분기 버전에서 이 도구를 사용합니다. 자세한 내용은 [업데이트 다시 설정 도구](/sccm/core/servers/manage/update-reset-tool)를 참조하세요.
+<!-- 1324589 -->
+버전 1706부터 Configuration Manager 기본 사이트 및 중앙 관리 사이트에는 Configuration Manager 업데이트 다시 설정 도구 **CMUpdateReset.exe**가 포함되어 있습니다. 콘솔 내 업데이트를 다운로드하거나 복제하는 문제가 있는 경우 문제를 해결하려면 지원되는 현재 분기 버전에서 이 도구를 사용합니다. 자세한 내용은 [업데이트 다시 설정 도구](/sccm/core/servers/manage/update-reset-tool)를 참조하세요.
 
 ### <a name="high-dpi-console-support"></a>높은 DPI 콘솔 지원  
-<!-- 1353476 --> 이 릴리스에서는 높은 DPI 디바이스(예: Surface Book)에서 볼 때 Configuration Manager 콘솔이 확장되고 UI의 다른 부분을 표시하는 방식의 문제가 수정되었습니다.
+<!-- 1353476 -->
+이 릴리스에서는 높은 DPI 디바이스(예: Surface Book)에서 볼 때 Configuration Manager 콘솔이 확장되고 UI의 다른 부분을 표시하는 방식의 문제가 수정되었습니다.
 
 ### <a name="improved-boundary-groups-for-software-update-points"></a>소프트웨어 업데이트 지점에 대한 향상된 경계 그룹
-<!-- 1324591 --> 이 릴리스에서는 소프트웨어 업데이트 지점이 경계 그룹과 작동하는 방식이 개선되었습니다. 다음은 새로운 대체 동작을 요약해서 설명합니다.
+<!-- 1324591 -->
+이 릴리스에서는 소프트웨어 업데이트 지점이 경계 그룹과 작동하는 방식이 개선되었습니다. 다음은 새로운 대체 동작을 요약해서 설명합니다.
 -   이제 소프트웨어 업데이트 지점에 대한 대체는 인접 경계 그룹으로의 대체에 대해 구성 가능한 시간을 사용합니다.
 -   대체 구성과 관계 없이, 클라이언트는 사용한 마지막 소프트웨어 업데이트 지점에 120분 이내에 도달하려고 합니다. 120분 내에 해당 서버에 도달하지 못하면 클라이언트는 사용 가능한 소프트웨어 업데이트 지점 풀을 확인하여 새 서버를 찾으려고 합니다.
 -   2시간 내에 원래 서버에 도달하지 못하면 클라이언트는 새 소프트웨어 업데이트 지점에 연결하기 위해 더 짧은 주기로 전환합니다. 즉, 클라이언트가 새 서버에 연결하지 못할 경우 사용 가능한 서버 풀의 다음 서버를 빠르게 선택하고 해당 서버에 연결하려고 합니다.
@@ -74,7 +81,8 @@ Version 1706 drops support for the following products:
 자세한 내용은 현재 분기에 대한 경계 그룹 항목에서 [소프트웨어 업데이트 지점](/sccm/core/servers/deploy/configure/boundary-groups#software-update-points)을 참조하세요.
 
 ### <a name="azure-ad-integration-with-configuration-manager"></a>Configuration Manager와의 Azure AD 통합
-<!-- 1248187, 1290765, 1258052, 1298097, 1319334, 1319883, 1352135, 1353331 --> 이 릴리스에서는 Configuration Manager 및 Azure AD(Azure Active Directory)의 통합을 개선했습니다.  이러한 향상된 기능은 Configuration Manager에서 사용하는 Azure 서비스를 구성하는 방법을 능률화하고 Azure AD를 통해 인증을 받는 클라이언트와 사용자를 관리하는 데 도움을 줍니다.
+<!-- 1248187, 1290765, 1258052, 1298097, 1319334, 1319883, 1352135, 1353331 -->
+이 릴리스에서는 Configuration Manager 및 Azure AD(Azure Active Directory)의 통합을 개선했습니다.  이러한 향상된 기능은 Configuration Manager에서 사용하는 Azure 서비스를 구성하는 방법을 능률화하고 Azure AD를 통해 인증을 받는 클라이언트와 사용자를 관리하는 데 도움을 줍니다.
 
 향상된 통합을 통해 다음이 가능해집니다.  
   -   Azure 서비스 마법사 - 이 마법사는 Configuration Manager에서 사용하는 다음 Azure 서비스를 설정하기 위한 개별 워크플로를 대체하는 공통 구성 환경을 제공합니다.
@@ -93,7 +101,8 @@ Version 1706 drops support for the following products:
 -   Azure AD 사용자 검색을 구성합니다.  Azure 서비스 마법사를 사용하여 이 새 검색 방법을 구성합니다. 이 새로운 방법은 기존 검색 데이터와 함께 사용할 수 있는 사용자 데이터를 Azure AD에서 쿼리합니다.  전체 및 델타 동기화 둘 다 지원됩니다.  자세한 내용은 [Azure AD 사용자 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#azureaddisc)을 참조하세요.
 
 ### <a name="peer-cache-improvements"></a>피어 캐시 개선
-<!-- 1252345 --> 피어 캐시는 더 이상 네트워크 액세스 계정을 사용하여 피어의 다운로드 요청을 인증하지 않습니다. 클라이언트에 해당 계정이 계속 필요할 때 피어 캐시를 사용하는 경우 한 가지 주의할 점이 있습니다. WinPE로 부팅하고 피어 캐시 원본의 콘텐츠에 액세스하는 클라이언트에는 이러한 요구 사항이 계속 적용됩니다. 자세한 내용은 [피어 캐시에 대한 요구 사항 및 고려 사항](/sccm/core/plan-design/hierarchy/client-peer-cache#requirements-and-considerations-for-peer-cache)을 참조하세요.
+<!-- 1252345 -->
+피어 캐시는 더 이상 네트워크 액세스 계정을 사용하여 피어의 다운로드 요청을 인증하지 않습니다. 클라이언트에 해당 계정이 계속 필요할 때 피어 캐시를 사용하는 경우 한 가지 주의할 점이 있습니다. WinPE로 부팅하고 피어 캐시 원본의 콘텐츠에 액세스하는 클라이언트에는 이러한 요구 사항이 계속 적용됩니다. 자세한 내용은 [피어 캐시에 대한 요구 사항 및 고려 사항](/sccm/core/plan-design/hierarchy/client-peer-cache#requirements-and-considerations-for-peer-cache)을 참조하세요.
 
 
 <!-- ## Migration  -->
@@ -105,7 +114,8 @@ Version 1706 drops support for the following products:
 ## <a name="compliance-settings"></a>호환성 설정
 
 ### <a name="new-configuration-settings-for-windows-10-devices-that-are-not-managed-with-the-configuration-manager-client"></a>Configuration Manager 클라이언트에서 관리되지 않는 Windows 10 디바이스에 대한 새 구성 설정
-<!-- 1354715 --> 이 릴리스에서는 Intune에 등록되었거나 Configuration Manager를 통해 온-프레미스에서 관리되는 Windows 10 디바이스에 대한 새 구성 항목 설정을 추가했습니다. 이러한 설정은 다음과 같습니다.
+<!-- 1354715 -->
+이 릴리스에서는 Intune에 등록되었거나 Configuration Manager를 통해 온-프레미스에서 관리되는 Windows 10 디바이스에 대한 새 구성 항목 설정을 추가했습니다. 이러한 설정은 다음과 같습니다.
 
 - **암호**
     - 디바이스 암호화
@@ -132,7 +142,7 @@ Version 1706 drops support for the following products:
 
 ### <a name="new-device-compliance-policy-rules"></a>새 디바이스 준수 정책 규칙
 
-* **필수 암호 유형** 사용자가 영숫자 암호를 만들어야 할지, 아니면 숫자 암호를 만들어야 할지를 지정합니다. 영숫자 암호의 경우 암호에 포함해야 할 각 문자 집합의 최소 수도 지정합니다. 4가지 문자 집합은 다음과 같습니다. 소문자, 대문자, 기호 및 숫자.
+* **필수 암호 유형** 사용자가 영숫자 암호를 만들어야 할지, 아니면 숫자 암호를 만들어야 할지를 지정합니다. 영숫자 암호의 경우 암호에 포함해야 할 각 문자 집합의 최소 수도 지정합니다. 4가지 문자 세트는 다음과 같습니다. 소문자, 대문자, 기호 및 숫자.
 
   **지원됨:**
   * Windows Phone 8+
@@ -175,9 +185,10 @@ Configuration Manager에서 패키지 및 프로그램을 사용하여 클라이
 자세한 내용은 [Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행](/sccm/apps/deploy-use/create-deploy-scripts)을 참조하세요.
 
 ### <a name="new-mobile-application-management-policy-settings"></a>새 모바일 애플리케이션 관리 정책 설정    
-<!--1324760--> 이 릴리스부터 3개의 새 MAM(모바일 애플리케이션 관리) 정책 설정을 사용할 수 있습니다.
+<!--1324760-->
+이 릴리스부터 3개의 새 MAM(모바일 애플리케이션 관리) 정책 설정을 사용할 수 있습니다.
 
-- **화면 캡처 차단(Android 디바이스에만 해당):** 이 앱을 사용할 때 디바이스의 화면 캡처 기능을 차단하도록 지정합니다.
+- **화면 캡처 차단(Android 디바이스 전용)**: 이 앱을 사용할 때 디바이스의 화면 캡처 기능을 차단하도록 지정합니다.
 
 새로운 앱 보호 정책 설정을 사용하려면 [Configuration Manager에서 앱 보호 정책을 사용하여 앱 보호](https://docs.microsoft.com/sccm/mdm/deploy-use/protect-apps-using-mam-policies)를 참조하세요.
 
@@ -199,7 +210,8 @@ Configuration Manager에서 패키지 및 프로그램을 사용하여 클라이
 이 릴리스에서는 빠른 업데이트의 다운로드 시간을 크게 개선했습니다. 자세한 내용은 [Windows 10 업데이트에 대한 빠른 설치 파일 관리](/sccm/sum/deploy-use/manage-express-installation-files-for-windows-10-updates)를 참조하세요.
 
 ### <a name="manage-microsoft-surface-driver-updates"></a>Microsoft Surface 드라이버 업데이트 관리
-<!-- 1098490 --> 이제 Configuration Manager를 사용하여 Microsoft Surface 드라이버 업데이트를 관리할 수 있습니다.    
+<!-- 1098490 -->
+이제 Configuration Manager를 사용하여 Microsoft Surface 드라이버 업데이트를 관리할 수 있습니다.    
 
 
 #### <a name="prerequisites"></a>필수 구성 요소
@@ -213,7 +225,8 @@ Configuration Manager에서 패키지 및 프로그램을 사용하여 클라이
 3. [동기화된 Microsoft Surface 드라이버를 배포](/sccm/sum/deploy-use/deploy-software-updates)합니다.
 
 ### <a name="configure-windows-update-for-business-deferral-policies"></a>비즈니스용 Windows 업데이트 지연 정책 구성
-<!-- 1290890 --> 이제 비즈니스용 Windows 업데이트에서 직접 관리되는 Windows 10 디바이스에 대한 Windows 10 기능 업데이트 또는 품질 업데이트의 지연 정책을 구성할 수 있습니다. **소프트웨어 라이브러리** > **Windows 10 서비스** 아래의 새 **비즈니스용 Windows 업데이트 정책** 노드에서 지연 정책을 관리할 수 있습니다.
+<!-- 1290890 -->
+이제 비즈니스용 Windows 업데이트에서 직접 관리되는 Windows 10 디바이스에 대한 Windows 10 기능 업데이트 또는 품질 업데이트의 지연 정책을 구성할 수 있습니다. **소프트웨어 라이브러리** > **Windows 10 서비스** 아래의 새 **비즈니스용 Windows 업데이트 정책** 노드에서 지연 정책을 관리할 수 있습니다.
 
 자세한 내용은 [Windows 10에서 비즈니스용 Windows 업데이트와 통합](/sccm/sum/deploy-use/integrate-windows-update-for-business-windows-10#configure-windows-update-for-business-deferral-policies)을 참조하세요.
 
@@ -223,7 +236,8 @@ Configuration Manager에서 패키지 및 프로그램을 사용하여 클라이
 ## <a name="reporting"></a>보고
 
 ### <a name="use-windows-analytics-with-configuration-manager"></a>Configuration Manager에서 Windows Analytics 사용
-<!-- 1318608 --> Windows Analytics는 사용자 환경의 현재 상태에 대한 인사이트를 얻을 수 있는 솔루션 집합입니다. 사용자 환경의 디바이스에서 Windows 원격 분석 데이터를 보고합니다. 데이터는 Azure Portal을 통해 액세스할 수 있습니다. 업그레이드 준비의 경우 Configuration Manager 콘솔의 모니터링 노드에서 직접 데이터를 사용할 수 있습니다.
+<!-- 1318608 -->
+Windows Analytics는 사용자 환경의 현재 상태에 대한 인사이트를 얻을 수 있는 솔루션 세트입니다. 사용자 환경의 디바이스에서 Windows 원격 분석 데이터를 보고합니다. 데이터는 Azure Portal을 통해 액세스할 수 있습니다. 업그레이드 준비의 경우 Configuration Manager 콘솔의 모니터링 노드에서 직접 데이터를 사용할 수 있습니다.
 
 자세한 내용은 [Configuration Manager에서 Windows Analytics 사용](/sccm/core/clients/manage/monitor-windows-analytics)을 참조하세요.
 
@@ -233,19 +247,22 @@ Configuration Manager에서 패키지 및 프로그램을 사용하여 클라이
 ## <a name="mobile-device-management"></a>모바일 디바이스 관리
 
 ### <a name="updates-to-android-for-work-sharing-configuration"></a>Android for Work 공유 구성에 대한 업데이트
-<!-- 1338403 --> 이 릴리스에서는 **회사 프로필** 설정 그룹의 **회사 프로필과 개인 프로필 간의 데이터 공유 허용** 설정 값이 업데이트되었습니다. 또한 회사 및 개인 프로필 간의 복사하여 붙여넣기를 차단하기 위한 사용자 지정 설정을 추가했습니다.
+<!-- 1338403 -->
+이 릴리스에서는 **회사 프로필** 설정 그룹의 **회사 프로필과 개인 프로필 간의 데이터 공유 허용** 설정 값이 업데이트되었습니다. 또한 회사 및 개인 프로필 간의 복사하여 붙여넣기를 차단하기 위한 사용자 지정 설정을 추가했습니다.
 
 자세한 내용은 [Android for Work 디바이스에 대한 구성 항목](/sccm/mdm/deploy-use/create-configuration-items-for-android-for-work-devices-managed-without-the-client)을 참조하세요.
 
 ### <a name="android-and-ios-enrollment-restrictions"></a>Android 및 iOS 등록 제한
-<!-- 1290826 --> 이제 이 릴리스에서 사용자가 개인 Android 또는 iOS 디바이스를 등록하도록 지정할 수 있습니다. 새 디바이스 제한 설정을 통해 미리 선언된 디바이스에 대한 Android 디바이스 등록을 제한할 수 있습니다. iOS 디바이스의 경우 Apple의 장비 등록 프로그램, Apple Configurator 또는 Intune 디바이스 등록 관리자 계정에 등록된 디바이스를 제외한 모든 디바이스의 등록을 차단할 수 있습니다.
+<!-- 1290826 -->
+이제 이 릴리스에서 사용자가 개인 Android 또는 iOS 디바이스를 등록하도록 지정할 수 있습니다. 새 디바이스 제한 설정을 통해 미리 선언된 디바이스에 대한 Android 디바이스 등록을 제한할 수 있습니다. iOS 디바이스의 경우 Apple의 장비 등록 프로그램, Apple Configurator 또는 Intune 디바이스 등록 관리자 계정에 등록된 디바이스를 제외한 모든 디바이스의 등록을 차단할 수 있습니다.
 - Android 등록 제한에 대한 자세한 내용은 [Android 디바이스 관리 설정](/sccm/mdm/deploy-use/enroll-hybrid-android)을 참조하세요.
 - iOS 등록 제한에 대한 자세한 내용은 [iOS 등록 제한 구성](/sccm/mdm/deploy-use/enroll-hybrid-ios-mac#configure-enrollment-restrictions)을 참조하세요.
 
 ## <a name="protect-devices"></a>디바이스 보호
 
 ### <a name="include-trust-for-specific-files-and-folders-in-a-device-guard-policy"></a>특정 파일 및 폴더에 대한 트러스트를 Device Guard 정책에 포함
-<!--1324676--> 이 릴리스에서는 Device Guard 정책 관리에 기능이 추가되었습니다.
+<!--1324676-->
+이 릴리스에서는 Device Guard 정책 관리에 기능이 추가되었습니다.
 
 이제 Device Guard 정책에서 필요에 따라 폴더의 특정 파일에 대해 트러스트를 추가할 수 있습니다. 이를 통해 다음을 수행할 수 있습니다.
 

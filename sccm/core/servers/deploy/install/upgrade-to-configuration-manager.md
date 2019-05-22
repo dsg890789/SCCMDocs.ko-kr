@@ -6,16 +6,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: c64e7483-b4bb-4738-95f4-ecdaeb6a2ba6
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b6c7dac285493e4887b254c7d6fe7432840d6bd
-ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
+ms.openlocfilehash: 735b5d4d50c09edaeef85a72f6a5aa5f82241762
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58524135"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65501271"
 ---
 # <a name="upgrade-to-configuration-manager"></a>Configuration Manager로 업그레이드
 
@@ -348,7 +348,7 @@ Configuration Manager로 업그레이드하는 경우 다음 작업이 자동으
 
 2. 데이터베이스 사본을 복원한 후에 Configuration Manager 현재 분기의 원본 미디어에서 설치 프로그램을 실행합니다. 설치 프로그램을 실행할 때 `/TESTDBUPGRADE` 명령줄 옵션을 사용합니다. 데이터베이스 사본을 호스트하는 SQL Server 인스턴스가 기본 인스턴스가 아닌 경우 명령줄 인수도 제공하여 사이트 데이터베이스 사본을 호스트하는 인스턴스를 식별합니다.  
 
-    예를 들어 SMS_ABC라는 데이터베이스 이름으로 사이트 데이터베이스를 업그레이드할 계획이라면 이 사이트 데이터베이스의 사본을 인스턴스 이름이 DBTest인 지원되는 SQL Server 인스턴스로 복원합니다. 이 사이트 데이터베이스 복사본의 업그레이드를 테스트하려면 다음 명령줄을 사용합니다. `Setup.exe /TESTDBUPGRADE DBtest\CM_ABC`  
+    예를 들어 SMS_ABC라는 데이터베이스 이름으로 사이트 데이터베이스를 업그레이드할 계획이라면 이 사이트 데이터베이스의 사본을 인스턴스 이름이 DBTest인 지원되는 SQL Server 인스턴스로 복원합니다. 사이트 데이터베이스의 이 사본을 테스트하려면 명령줄 `Setup.exe /TESTDBUPGRADE DBtest\CM_ABC`를 사용하세요.  
 
     Setup.exe는 Configuration Manager 원본 미디어의 `SMSSETUP\BIN\X64` 위치에 있습니다.  
 

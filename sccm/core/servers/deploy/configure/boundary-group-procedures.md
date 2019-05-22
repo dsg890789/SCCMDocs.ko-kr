@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: a1fe22d0-4695-4de0-8bf0-e3475b03cf0e
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a7438a2815f615b029888d8fb1ca28f601735d5
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: fed583e07c59f61f5c06b8355f9d59f18dde47e6
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56140013"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65499054"
 ---
 # <a name="how-to-configure-boundary-groups-for-configuration-manager"></a>Configuration Manager에 대한 경계 그룹을 구성하는 방법
 
@@ -102,7 +102,8 @@ ms.locfileid: "56140013"
 
 
 ### <a name="bkmk_options"></a> 경계 그룹 옵션 구성
-<!--1356193--> 버전 1806부터 이 경계 그룹의 클라이언트에 대한 추가 옵션을 구성하려면 **옵션** 탭으로 전환합니다. 자세한 내용은 [피어 다운로드를 위한 경계 그룹 옵션](/sccm/core/servers/deploy/configure/boundary-groups#bkmk_bgoptions)을 참조하세요.
+<!--1356193-->
+버전 1806부터 이 경계 그룹의 클라이언트에 대한 추가 옵션을 구성하려면 **옵션** 탭으로 전환합니다. 자세한 내용은 [피어 다운로드를 위한 경계 그룹 옵션](/sccm/core/servers/deploy/configure/boundary-groups#bkmk_bgoptions)을 참조하세요.
 
 - **이 경계 그룹에서 피어 다운로드 허용**: 기본적으로 이 옵션은 사용하도록 설정됩니다. 관리 지점은 피어 원본을 포함하는 콘텐츠 위치 목록을 클라이언트에 제공합니다.  
 

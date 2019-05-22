@@ -2,27 +2,28 @@
 title: 데이터 웨어하우스
 titleSuffix: Configuration Manager
 description: Configuration Manager에 대한 데이터 웨어하우스 서비스 지점 및 데이터베이스
-ms.date: 11/27/2018
+ms.date: 05/09/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: aaf43e69-68b4-469a-ad58-9b66deb29057
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4630504cbbf4b00fbfa12b666e26b93fcda09ae5
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 02990fa09e18a9e46914ff622ed20f4cbb958f33
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56130176"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65501147"
 ---
 #  <a name="the-data-warehouse-service-point-for-configuration-manager"></a>Configuration Manager에 대한 데이터 웨어하우스 서비스 지점
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-<!--1277922--> 데이터 웨어하우스 서비스 지점을 사용하여 Configuration Manager 배포에 대한 장기 기록 데이터를 저장하고 보고할 수 있습니다.
+<!--1277922-->
+데이터 웨어하우스 서비스 지점을 사용하여 Configuration Manager 배포에 대한 장기 기록 데이터를 저장하고 보고할 수 있습니다.
 
 > [!Note]  
 > Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  
@@ -84,7 +85,7 @@ SQL Server 라이선스에 대한 자세한 내용은 [제품 및 라이선스 F
 
 역할을 설치하려면 **사이트 시스템 역할 추가 마법사** 또는 **사이트 시스템 서버 만들기 마법사**를 사용합니다. 자세한 내용은 [사이트 시스템 역할 설치](/sccm/core/servers/deploy/configure/install-site-system-roles)를 참조하세요. 마법사의 **시스템 역할 선택** 페이지에서 **데이터 웨어하우스 서비스 지점** 역할을 선택합니다. 
 
-역할을 설치하면 Configuration Manager에서 지정한 SQL Server 인스턴스에 데이터 웨어하우스 데이터베이스를 자동으로 만듭니다. 기존 데이터베이스의 이름을 지정하는 경우에는 Configuration Manager가 새 데이터베이스를 만들지 않습니다. 대신 사용자가 지정한 데이터베이스를 사용합니다. 이 프로세스는 [새 SQL Server로 데이터 웨어하우스 데이터베이스를 이동할 때](#move-the-data-warehouse-database)와 같습니다.
+역할을 설치하면 Configuration Manager에서 지정한 SQL Server 인스턴스에 데이터 웨어하우스 데이터베이스를 자동으로 만듭니다. 기존 데이터베이스의 이름을 지정하는 경우에는 Configuration Manager가 새 데이터베이스를 만들지 않습니다. 대신 사용자가 지정한 데이터베이스를 사용합니다. 이 프로세스는 [새 SQL Server로 데이터 웨어하우스 데이터베이스를 이동할 때](#move-the-database)와 같습니다.
 
 
 ### <a name="configure-properties"></a>속성 구성

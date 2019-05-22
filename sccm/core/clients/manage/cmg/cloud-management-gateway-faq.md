@@ -4,18 +4,18 @@ description: 이 아티클을 사용하여 클라우드 관리 게이트웨이�
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.date: 09/10/2018
+ms.date: 05/02/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 4c1a128d-22fb-49f1-8e0b-36513a8dc117
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4cbb9b37c951c490c1f2245f089fa22707f4c220
-ms.sourcegitcommit: f3dd8405018fe1043434386be15c16752c1a4a3c
+ms.openlocfilehash: 71c30e6770d667426a0aabbf03043d6fb44ecced
+ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57558017"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65083177"
 ---
 # <a name="frequently-asked-questions-about-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이에 대한 FAQ
 
@@ -24,7 +24,7 @@ ms.locfileid: "57558017"
 이 아티클에서는 클라우드 관리 게이트웨이에 관련된 FAQ에 대답합니다. 자세한 내용은 [클라우드 관리 게이트웨이 계획](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway)을 참조하세요.
 
 
-## <a name="frequently-asked-questions"></a>질문과 대답
+## <a name="frequently-asked-questions"></a>자주 묻는 질문
 
 ### <a name="what-certificates-do-i-need"></a>어떤 인증서가 필요한가요?
 
@@ -40,7 +40,8 @@ ms.locfileid: "57558017"
 
 ### <a name="do-i-need-to-maintain-the-azure-virtual-machines"></a>Azure 가상 머신을 유지 관리해야 하나요?
 
-유지 관리가 필요하지 않습니다. 클라우드 관리 게이트웨이의 설계는 Azure PaaS(platform as a service)를 사용하는 것입니다. 제공한 구독을 사용하여 Configuration Manager는 필요한 VM(가상 머신), 스토리지 및 네트워킹을 만듭니다. Azure에서는 가상 머신을 보호하고 업데이트합니다. 이러한 VM은 IaaS(infrastructure as a service)의 경우처럼 온-프레미스 환경의 일부가 아닙니다. 클라우드 관리 게이트웨이는 클라우드로 Configuration Manager 환경을 확장하는 PaaS입니다. 
+유지 관리가 필요하지 않습니다. 클라우드 관리 게이트웨이의 설계는 Azure PaaS(platform as a service)를 사용하는 것입니다. 제공한 구독을 사용하여 Configuration Manager는 필요한 VM(가상 머신), 스토리지 및 네트워킹을 만듭니다. Azure에서는 가상 머신을 보호하고 업데이트합니다. 이러한 VM은 IaaS(infrastructure as a service)의 경우처럼 온-프레미스 환경의 일부가 아닙니다. 클라우드 관리 게이트웨이는 클라우드로 Configuration Manager 환경을 확장하는 PaaS입니다. 자세한 내용은 [PaaS 배포 보호](/azure/security/security-paas-deployments)를 참조하세요.
+
 
 ### <a name="how-can-i-ensure-service-continuity-during-service-updates"></a>서비스 업데이트 중에 서비스 연속성을 보장하려면 어떻게 해야 하나요?
 
@@ -53,7 +54,8 @@ ms.locfileid: "57558017"
 
 
 ### <a name="do-the-user-accounts-have-to-be-in-the-same-azure-subscription-as-the-subscription-that-hosts-the-cmg-cloud-service"></a>사용자 계정이 CMG 클라우드 서비스를 호스팅하는 구독과 동일한 Azure 구독에 있어야 하나요?
-<!--SCCMDocs-pr issue #2873--> 사용자 환경에 하나를 초과하는 구독이 있는 경우 Azure 클라우드 서비스를 호스팅하는 모든 구독에 CMG를 배포할 수 있습니다. 
+<!--SCCMDocs-pr issue #2873-->
+사용자 환경에 하나를 초과하는 구독이 있는 경우 Azure 클라우드 서비스를 호스팅하는 모든 구독에 CMG를 배포할 수 있습니다. 
 
 이 문제는 다음과 같은 시나리오에서 일반적입니다.  
 

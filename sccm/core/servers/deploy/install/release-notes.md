@@ -2,21 +2,21 @@
 title: 릴리스 정보
 titleSuffix: Configuration Manager
 description: Microsoft 지원 기술 자료 문서에서 다루지 않거나 제품에서 아직 해결되지 않은 긴급한 문제에 대해 알아봅니다.
-ms.date: 03/27/2019
+ms.date: 04/30/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 030947fd-f5e0-4185-8513-2397fb2ec96f
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a168e12000f11ca2bb6af8b1988f508910ab7263
-ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
+ms.openlocfilehash: 861d1d12c0df4b2f606a3f36983805fddd83711f
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58523965"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65497685"
 ---
 # <a name="release-notes-for-configuration-manager"></a>Configuration Manager의 릴리스 정보
 
@@ -145,6 +145,9 @@ Configuration Manager 버전 1802부터 CEIP(사용자 환경 개선 프로그�
 ## <a name="mobile-device-management"></a>모바일 디바이스 관리  
 
 ### <a name="validation-for-ios-app-link-sometimes-fails-on-valid-link"></a>iOS 앱 연결에 대한 유효성 검사가 유효한 링크에서 실패하는 경우가 있음
+
+*적용 대상: Configuration Manager 1810 및 이전 버전*
+
 <!-- LSI 106004348 -->
 **App Store에서 iOS용 앱 패키지** 유형의 새 애플리케이션을 만드는 경우 유효성 검사기는 **위치**에 대한 일부 유효한 URL을 수락하지 않습니다. 특히 iOS App Store에는 URL의 앱 이름 섹션에 값이 필요하지 않습니다. 예를 들어 다음 링크는 모두 유효하며 동일한 앱을 가리킵니다. 그러나 **애플리케이션 생성 마법사**는 첫 번째 항목만 수락합니다.
 - `https://itunes.apple.com/us/app/app-name/id123456789?mt=8`

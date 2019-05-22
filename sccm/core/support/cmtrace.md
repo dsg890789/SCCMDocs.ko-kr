@@ -2,21 +2,21 @@
 title: CMTrace
 titleSuffix: Configuration Manager
 description: CMTrace를 사용하여 Configuration Manager에 대한 로그 파일을 보는 방법을 살펴봅니다.
-ms.date: 07/30/2018
+ms.date: 05/09/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 6a4a3290-5228-4871-918a-554aa1c20834
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87552016d1cd17e79abf01a9de9109195d3d2a70
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 988e834de78bac64be43600ca73d0d51ff29bf4b
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56125314"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65496767"
 ---
 # <a name="cmtrace"></a>CMTrace
 
@@ -115,8 +115,8 @@ CMTrace의 설정을 구성합니다. 다음 옵션을 사용할 수 있습니�
 - [필터](#filter)
 - [오류 조회](#error-lookup)
 - [일시 중지](#pause)
-- [세부 정보 표시/숨기기](#show-hide-details)
-- [정보 창 표시/숨기기](#show-hide-info-pane)
+- [세부 정보 표시/숨기기](#show/hide-details)
+- [정보 창 표시/숨기기](#show/hide-info-pane)
 
 #### <a name="find"></a>찾기
 지정된 텍스트 문자열을 열린 로그 파일에서 검색합니다.  
@@ -141,7 +141,8 @@ CMTrace가 각 로그 항목의 텍스트를 검색하는 데 사용할 문자�
 #### <a name="filter"></a>필터
 지정 기준에 따라 로그 줄을 표시하거나 숨깁니다. 표시 여부에 관계없이 4개 열 중 어디에나 필터를 적용합니다. 이 설정은 열린 로그 파일 각각에 적용됩니다. 
 
-예: <!--SCCMDocs issue #603-->
+예제:
+<!--SCCMDocs issue #603-->
 - "작업" 또는 "그룹"을 포함하는 입력 텍스트를 **smsts.log**에서 필터링합니다. 
 - "대상"을 포함하는 입력 텍스트**를 InventoryAgent.log**에서 필터링합니다.
 
@@ -230,7 +231,8 @@ CMTrace는 기본 끌어서 놓기 기능을 지원합니다. Windows 탐색기�
 ## <a name="other-tips"></a>기타 팁
 
 ### <a name="last-directory-registry-key"></a>마지막 디렉터리 레지스트리 키
-<!--511280--> 기본적으로 CMTrace는 마지막에 연 로그 위치를 저장합니다. 이 동작은 매번 로그 경로를 기본값으로 사용하는 사이트 서버에서 유용합니다. 
+<!--511280-->
+기본적으로 CMTrace는 마지막에 연 로그 위치를 저장합니다. 이 동작은 매번 로그 경로를 기본값으로 사용하는 사이트 서버에서 유용합니다. 
 
 클라이언트에서 처음 실행하면 현재 작업 중인 디렉터리를 기본값으로 사용합니다. 이 위치는 CMTrace에서 저장한 경로이거나 `%userprofile%\Desktop` 같은 경로일 수 있습니다. 
 

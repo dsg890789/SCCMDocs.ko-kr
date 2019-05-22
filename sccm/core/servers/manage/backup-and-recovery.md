@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: f7832d83-9ae2-4530-8a77-790e0845e12f
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7fb6a87f965db0a329a4f64918b0efcd5732ea0b
-ms.sourcegitcommit: d71e558db2da124357b840332e2da671b3810507
+ms.openlocfilehash: aff3393dca29d558c62c0a508b8cbf6c98f9fbfa
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58269126"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65501230"
 ---
 # <a name="back-up-a-configuration-manager-site"></a>Configuration Manager 사이트 백업
 

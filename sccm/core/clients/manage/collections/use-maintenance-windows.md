@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15dbcbb3d0528a2627ab00bf81c6de5f5441d9e2
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: cc4a984b15af66a5426d30f3fb4f0b68c794ba5f
+ms.sourcegitcommit: 53f2380ac67025fb4a69fc1651edad15d98e0cdd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56120317"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673330"
 ---
 # <a name="how-to-use-maintenance-windows-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 유지 관리 기간을 사용하는 방법
 
@@ -66,3 +66,12 @@ ms.locfileid: "56120317"
 7.  **다음에 이 일정 적용** 드롭다운 목록에서 선택합니다.  
 
 8.  **확인**을 선택하고 **&lt;컬렉션 이름\> 속성** 대화 상자를 닫습니다.  
+ 
+## <a name="bkmk_powershell"></a> PowerShell 사용
+
+PowerShell을 사용하여 유지 관리 기간을 구성할 수 있습니다.  자세한 내용은 다음을 참조하십시오.
+
+* [Set-CMMaintenanceWindow](https://docs.microsoft.com/powershell/module/configurationmanager/set-cmmaintenancewindow)
+* [Get-CMMaintenanceWindow](https://docs.microsoft.com/powershell/module/configurationmanager/get-cmmaintenancewindow)
+* [New-CMMaintenanceWindow](https://docs.microsoft.com/powershell/module/configurationmanager/new-cmmaintenancewindow)
+* [Remove-CMMaintenanceWindow](https://docs.microsoft.com/powershell/module/configurationmanager/remove-cmmaintenancewindow)

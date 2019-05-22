@@ -2,7 +2,7 @@
 title: 풀(pull) 배포 지점
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 풀(pull) 배포 지점을 사용하기 위한 구성 및 제한 사항을 알아봅니다.
-ms.date: 07/30/2018
+ms.date: 05/06/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5336db0bd16d4845650bae775f2eff895e617fb
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 488fa5251711c8d9c7702e2b240a6f10602d447f
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56142275"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65499292"
 ---
 # <a name="use-a-pull-distribution-point-with-configuration-manager"></a>Configuration Manager에서 풀(pull) 배포 지점 사용
 

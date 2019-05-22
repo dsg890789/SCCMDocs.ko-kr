@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: abb696f3-a816-4f12-a9f1-0503a81e1976
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6adb326a484976335d114277e095884e107f9906
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: db33a822c762922a04cbfe695435950023384f93
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56124799"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65501002"
 ---
 # <a name="test-the-database-upgrade-when-installing-an-update"></a>업데이트를 설치할 때 데이터베이스의 테스트 업그레이드 수행
 
@@ -54,7 +54,7 @@ SQL Server의 별도 인스턴스로 복원한 사이트 데이터베이스의 �
 
 4. 데이터베이스 복사본을 복원한 후에 업데이트하려는 버전의 소스 파일이 포함된 CD.Latest 폴더에서 **설치 프로그램**을 실행합니다. 설치 프로그램을 실행할 때 **/TESTDBUPGRADE** 명령줄 옵션을 사용합니다. 데이터베이스 사본을 호스트하는 SQL Server 인스턴스가 기본 인스턴스가 아닌 경우 명령줄 인수를 제공하여 사이트 데이터베이스 사본을 호스트하는 인스턴스를 식별합니다.   
 
-   예를 들어 데이터베이스 이름이 *SMS_ABC*인 사이트 데이터베이스가 있다고 가정할 경우 이 사이트 데이터베이스의 사본을 인스턴스 이름이 *DBTest*인 지원되는 SQL Server 인스턴스로 복원합니다. 사이트 데이터베이스의 이 사본을 테스트하려면 다음 명령줄을 사용하십시오. **Setup.exe /TESTDBUPGRADE DBtest\CM_ABC**.  
+   예를 들어 데이터베이스 이름이 *SMS_ABC*인 사이트 데이터베이스가 있다고 가정할 경우 이 사이트 데이터베이스의 사본을 인스턴스 이름이 *DBTest*인 지원되는 SQL Server 인스턴스로 복원합니다. 사이트 데이터베이스의 이 사본 업그레이드를 테스트하려면 다음 명령줄을 사용하세요. **Setup.exe /TESTDBUPGRADE DBtest\CM_ABC**.  
 
    원본 미디어의 다음 위치에서 System Center Configuration Manager에 대한 Setup.exe를 찾을 수 있습니다. **SMSSETUP\BIN\X64**.  
 

@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: a79f83be-884c-48e6-94d6-ed0a68c22e2f
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8621f759a2e79090c6cd6dac5f2f3749147cabed
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: f2312cb68940f5d0eb3d0dd33d192d07b6801d8e
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56133353"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65501033"
 ---
 # <a name="management-insights-in-configuration-manager"></a>Configuration Manager의 관리 인사이트
 
@@ -65,7 +65,8 @@ Configuration Manager의 관리 정보는 환경의 현재 상태에 대한 정�
 
 관리 인사이트 규칙에 대한 로그 파일은 사이트 서버의 **SMS_DataEngine.log**입니다.
 
-<!--1357930--> 1806 버전부터 일부 규칙을 통해 작업을 수행할 수 있습니다. 규칙을 선택하고 **자세히**를 선택한 다음, 사용 가능한 경우 **작업 수행**을 선택합니다. 
+<!--1357930-->
+1806 버전부터 일부 규칙을 통해 작업을 수행할 수 있습니다. 규칙을 선택하고 **자세히**를 선택한 다음, 사용 가능한 경우 **작업 수행**을 선택합니다. 
 
 규칙에 따라 이 작업은 다음 동작 중 하나가 있습니다.  
 
@@ -144,7 +145,8 @@ Configuration Manager의 관리 정보는 환경의 현재 상태에 대한 정�
 
 
 ### <a name="proactive-maintenance"></a>자동 유지 관리
-<!--1352184--> 1806 버전부터, 이 그룹의 규칙은 Configuration Manager 개체의 유지를 통해 방지할 수 있는 잠재적 구성 문제를 강조 표시합니다.    
+<!--1352184-->
+1806 버전부터, 이 그룹의 규칙은 Configuration Manager 개체의 유지를 통해 방지할 수 있는 잠재적 구성 문제를 강조 표시합니다.    
 
 - **할당된 사이트 시스템이 없는 경계 그룹**: 할당된 사이트 시스템이 없으면 경계 그룹은 사이트 할당에만 사용할 수 있습니다. 자세한 내용은 [경계 그룹 구성](/sccm/core/servers/deploy/configure/boundary-groups)을 참조하세요.  
 

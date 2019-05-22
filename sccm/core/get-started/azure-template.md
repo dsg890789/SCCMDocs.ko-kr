@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25283e513e256e8ce779df7b71ac6f6c17f1e370
-ms.sourcegitcommit: f38ef9afb0c608c0153230ff819e5f5e0fb1520c
+ms.openlocfilehash: aeef8e447d646df183f7f2075954e381b08d8c93
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58196826"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65499730"
 ---
 # <a name="create-a-configuration-manager-technical-preview-lab-in-azure"></a>Azure에서 Configuration Manager Technical Preview 랩 만들기
 
@@ -33,7 +33,8 @@ Configuration Manager 현재 분기에 대한 자세한 내용은 [Azure의 Conf
 ## <a name="prerequisites"></a>필수 구성 요소
 
 이 프로세스에는 다음 개체를 만들 수 있는 Azure 구독이 필요합니다. 
-- Standard_D2s_v3 가상 머신 3대
+- 도메인 컨트롤러 및 MP/DP 역할에 대한 두 Standard_B2s 가상 머신
+- 기본 사이트 서버 및 SQL 데이터베이스 서버에 대한 하나의 Standard_B2ms 가상 머신
 - Standard_LRS 스토리지 계정
 
 > [!Tip]  

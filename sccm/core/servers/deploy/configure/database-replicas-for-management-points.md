@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: b06f781b-ab25-4d9a-b128-02cbd7cbcffe
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ce8cff2be91950ee7e43cd96f03ab41990170c9
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 3f03b5b01b443f1611d514e9a7473a93c8e0e5a0
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56139622"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65499554"
 ---
 # <a name="database-replicas-for-management-points-for-system-center-configuration-manager"></a>System Center Configuration Manager의 관리 지점용 데이터베이스 복제본
 

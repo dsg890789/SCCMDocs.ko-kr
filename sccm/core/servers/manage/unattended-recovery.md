@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 828c31d1-3d70-4412-b1a8-c92e7e504d39
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0da207f92ea2c11266831a0c03f5b846654e83a4
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 34072fe18bc2d0d751938ff536f6d4ba8e4c378b
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56129003"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65500960"
 ---
 # <a name="unattended-site-recovery-for-configuration-manager"></a>Configuration Manager에 대한 무인 사이트 복구   
 
@@ -104,7 +104,7 @@ ms.locfileid: "56129003"
 
     -   **필수:** 경우에 따라
     -   **값:** &lt;PathToSiteDatabaseBackupSet\>
-    -   **세부 정보:** 사이트 데이터베이스 백업 집합의 경로를 지정합니다. **ServerRecoveryOptions** 키 값을 **1** 또는 **4** 로 구성하고 **DatabaseRecoveryOptions** 키 값을 **10** 으로 구성하는 경우 **BackupLocation** 키는 필수입니다.
+    -   **세부 정보:** 사이트 데이터베이스 백업 세트의 경로를 지정합니다. **ServerRecoveryOptions** 키 값을 **1** 또는 **4** 로 구성하고 **DatabaseRecoveryOptions** 키 값을 **10** 으로 구성하는 경우 **BackupLocation** 키는 필수입니다.
 
 
 **Options**
@@ -202,7 +202,7 @@ ms.locfileid: "56129003"
 
     -   **필수:** 아니요
     -   **값:** &lt;*SSBPortNumber*>
-    -   **세부 정보:** SQL Server에서 사용하는 SQL Server Service Broker(SSB) 포트를 지정합니다. 일반적으로, SSB는 TCP 포트 4022를 사용하도록 구성되지만 다른 포트도 지원됩니다. 실패하기 전에 사용했던 SSB 포트를 지정합니다.
+    -   **세부 정보:** SQL Server에서 사용하는 SSB(SQL Server Service Broker) 포트를 지정합니다. 일반적으로, SSB는 TCP 포트 4022를 사용하도록 구성되지만 다른 포트도 지원됩니다. 실패하기 전에 사용했던 SSB 포트를 지정합니다.
 
 ## <a name="recover-a-primary-site-unattended"></a>기본 사이트 무인 복구
  다음 정보를 참조하여 중앙 관리 사이트를 복구하도록 무인 설치 스크립트 파일을 구성할 수 있습니다.
@@ -213,7 +213,7 @@ ms.locfileid: "56129003"
 
     -   **필수:** 예
     -   **값:** RecoverPrimarySite
-    -   **세부 정보:** 기본 사이트 복구
+    -   **세부 정보:** 기본 사이트를 복구합니다.
 
 
 -   **키 이름:** CDLatest
@@ -263,7 +263,7 @@ ms.locfileid: "56129003"
 
     -   **필수:** 경우에 따라
     -   **값:** &lt;PathToSiteDatabaseBackupSet\>
-    -   **세부 정보:** 사이트 데이터베이스 백업 집합의 경로를 지정합니다. **ServerRecoveryOptions** 키 값을 **1** 또는 **4** 로 구성하고 **DatabaseRecoveryOptions** 키 값을 **10** 으로 구성하는 경우 **BackupLocation** 키는 필수입니다.
+    -   **세부 정보:** 사이트 데이터베이스 백업 세트의 경로를 지정합니다. **ServerRecoveryOptions** 키 값을 **1** 또는 **4** 로 구성하고 **DatabaseRecoveryOptions** 키 값을 **10** 으로 구성하는 경우 **BackupLocation** 키는 필수입니다.
 
 **Options**
 
@@ -364,7 +364,7 @@ ms.locfileid: "56129003"
 
     -   **필수:** 아니요
     -   **값:** &lt;*SSBPortNumber*>
-    -   **세부 정보:** SQL Server에서 사용하는 SQL Server Service Broker(SSB) 포트를 지정합니다. 일반적으로, SSB는 TCP 포트 4022를 사용하도록 구성되지만 다른 포트도 지원됩니다. 실패하기 전에 사용했던 SSB 포트를 지정합니다.
+    -   **세부 정보:** SQL Server에서 사용하는 SSB(SQL Server Service Broker) 포트를 지정합니다. 일반적으로, SSB는 TCP 포트 4022를 사용하도록 구성되지만 다른 포트도 지원됩니다. 실패하기 전에 사용했던 SSB 포트를 지정합니다.
 
 **Hierarchy ExpansionOption**
 

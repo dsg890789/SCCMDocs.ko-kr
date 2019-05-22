@@ -2,21 +2,21 @@
 title: 쿼리 관리
 titleSuffix: Configuration Manager
 description: 쿼리를 관리하는 방법을 알아봅니다. 자세한 참조를 위한 표를 포함합니다.
-ms.date: 10/06/2016
+ms.date: 04/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: e562e2a0-8df8-4952-952f-e8c38461c612
-author: aczechowski
+author: mestew
+ms.author: mstewart
 manager: dougeby
-ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87b92bb857f6a39a99e3aee1e4bc862904bcc4ef
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 5394cd86e1f137bd7cf76549b117cb53f242f8f1
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56126915"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65497299"
 ---
 # <a name="how-to-manage-queries-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 쿼리를 관리하는 방법
 
@@ -38,5 +38,5 @@ ms.locfileid: "56126915"
 |**내보내기**|이 쿼리를 MOF(Managed Object Format) 파일에 내보낸 다음 다른 사이트에서 가져올 수 있는 **개체 내보내기 마법사** 를 엽니다.|추가 정보가 없습니다.|  
 |**이동**|**쿼리** 노드 아래에 이전에 만든 폴더로 선택한 쿼리를 이동할 수 있는 **선택한 항목 이동** 대화 상자를 엽니다.|추가 정보가 없습니다.|  
 
-## <a name="see-also"></a>참고 항목  
- [System Center Configuration Manager의 쿼리 작업 및 유지 관리](../../../core/servers/manage/operations-and-maintenance-for-queries.md)
+## <a name="next-steps"></a>다음 단계 
+ [System Center Configuration Manager에서 쿼리 만들기](../../../core/servers/manage/create-queries.md)

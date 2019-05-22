@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 8c5a13f8-42d5-4898-b7b6-e594dae8b335
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2babdf726d468d27d0fe2ab37ad99a101adbb74c
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 02353e516e7af45afe273bc0deff5b227a7c7f2c
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56129564"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65499434"
 ---
 # <a name="supported-active-directory-domains-for-system-center-configuration-manager"></a>System Center Configuration Manager에서 지원되는 Active Directory 도메인
 

@@ -2,7 +2,7 @@
 title: 배포 지점 관리
 titleSuffix: Configuration Manager
 description: 배포 지점을 사용하여 디바이스 및 사용자에게 배포하는 콘텐츠를 호스팅합니다.
-ms.date: 07/30/2018
+ms.date: 05/03/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5d5d3a1efd2dc58cca06b18fc4221d52ce58bb7f
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 3bd5a2b483551fc760b0dc69cd488bf1e3671732
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56125310"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65498651"
 ---
 # <a name="install-and-configure-distribution-points-in-configuration-manager"></a>Configuration Manager에서 배포 지점 설치 및 구성
 
@@ -169,7 +169,8 @@ ms.locfileid: "56125310"
 
 
 ## <a name="bkmk_reassign"></a> 배포 지점 재할당
-<!-- 1306937 --> 많은 고객들이 대형 Configuration Manager 인프라를 보유하고 있으며 환경을 단순화하기 위해 기본 또는 보조 사이트를 줄이고 있습니다. 하지만 관리 대상 고객에게 콘텐츠를 제공하기 위해 각 지사에서 배포 지점을 유지해야 합니다. 이러한 배포 지점에는 종종 여러 테라바이트 이상의 콘텐츠가 포함됩니다. 이 컨텐츠는 이러한 원격 서버에 배포하는 데 상당한 시간과 네트워크 대역폭을 소비합니다. 
+<!-- 1306937 -->
+많은 고객들이 대형 Configuration Manager 인프라를 보유하고 있으며 환경을 단순화하기 위해 기본 또는 보조 사이트를 줄이고 있습니다. 하지만 관리 대상 고객에게 콘텐츠를 제공하기 위해 각 지사에서 배포 지점을 유지해야 합니다. 이러한 배포 지점에는 종종 여러 테라바이트 이상의 콘텐츠가 포함됩니다. 이 컨텐츠는 이러한 원격 서버에 배포하는 데 상당한 시간과 네트워크 대역폭을 소비합니다. 
 
 버전 1802부터 이 기능을 사용하면 콘텐츠를 재배포하지 않고 다른 기본 사이트에 배포 지점을 재할당할 수 있습니다. 이 작업은 서버의 모든 콘텐츠를 유지하면서 사이트 시스템 할당을 업데이트합니다. 여러 배포 지점을 재할당해야 하는 경우 먼저 단일 배포 지점에서 이 작업을 수행합니다. 그런 다음, 추가 서버를 한 번에 하나씩 진행합니다.
 
@@ -190,7 +191,7 @@ ms.locfileid: "56125310"
 
 새 역할을 추가할 때와 비슷한 방법으로 재할당을 모니터링합니다. 가장 간단한 방법은 몇 분 후 콘솔 보기를 새로 고치는 것입니다. 보기에 사이트 코드 열을 추가합니다. Configuration Manager가 서버를 재할당하면 이 값이 변합니다. 콘솔 보기를 새로 고치기 전에 대상 서버에서 다른 작업을 수행하려고 시도하면 "개체를 찾을 수 없음" 오류가 발생합니다. 서버에서 다른 작업을 시작하려면 프로세스가 완료되었는지 확인하고 콘솔 보기를 새로 고쳐야 합니다.
 
-배포 지점을 재할당한 후에는 서버 인증서를 새로 고칩니다. 새 사이트 서버에서 해당 공개 키를 사용하여 이 인증서를 다시 암호화하여 사이트 데이터베이스에 저장해야 합니다. 자세한 내용은 배포 지점 속성의 [일반](#general) 탭에서 **배포 지점에 대해 자체 서명된 인증서 만들기 또는 PKI(공개 키 인프라) 클라이언트 인증서 가져오기** 설정을 참조하세요. 
+배포 지점을 재할당한 후에는 서버 인증서를 새로 고칩니다. 새 사이트 서버에서 해당 공개 키를 사용하여 이 인증서를 다시 암호화하여 사이트 데이터베이스에 저장해야 합니다. 자세한 내용은 배포 지점 속성의 [일반](#bkmk_config-general) 탭에서 **배포 지점에 대해 자체 서명된 인증서 만들기 또는 PKI(공개 키 인프라) 클라이언트 인증서 가져오기** 설정을 참조하세요. 
 
 - PKI 인증서의 경우 새 인증서를 만들 필요가 없습니다. 동일한 .PFX를 가져와서 암호를 입력하면 됩니다.  
 
@@ -255,7 +256,22 @@ ms.locfileid: "56125310"
 
 - **이 배포 지점의 BranchCache 사용 및 구성**: 이 설정을 선택하여 Configuration Manager에서 배포 지점 서버에 Windows BranchCache를 구성할 수 있게 합니다. 자세한 내용은 [BranchCache](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management#branchcache)를 참조하세요.  
 
-- **사용되지 않는 네트워크 대역폭(Windows LEDBAT)을 사용하도록 다운로드 속도 조정**<!--1358112-->: 버전 1806부터 배포 지점이 네트워크 정체 제어를 사용하도록 설정합니다. 자세한 내용은 [Windows LEDBAT](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management#windows-ledbat)를 참조하세요. 배포 지점에서 Windows Server 버전 1709를 실행해야 합니다. 클라이언트의 필수 구성 요소는 없습니다.  
+- **사용되지 않는 네트워크 대역폭(Windows LEDBAT)을 사용하도록 다운로드 속도 조정**<!--1358112-->: 버전 1806부터 배포 지점이 네트워크 정체 제어를 사용하도록 설정합니다. 자세한 내용은 [Windows LEDBAT](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management#windows-ledbat)를 참조하세요. LEDBAT 지원에 대한 최소 요구 사항:<!-- SCCMDocs issue 883 -->  
+
+    - Configuration Manager 버전 1806(일반 릴리스)  
+
+        - Windows Server, 버전 1709 이상  
+
+    - Configuration Manager 버전 1806, 업데이트 롤업(4462978) 이상  
+
+        - Windows Server, 버전 1709 이상
+        - Windows Server 2016, 업데이트 KB4132216 및 KB4284833
+
+    - Configuration Manager 버전 1810 이상:
+
+        - Windows Server, 버전 1709 이상
+        - Windows Server 2016, 업데이트 KB4132216 및 KB4284833
+        - Windows Server 2019  
 
 - **설명**: 이 배포 지점 역할에 대한 선택적 설명입니다.  
 
@@ -343,8 +359,10 @@ PXE를 사용하도록 설정하면 필요한 경우 Configuration Manager에서
 
 - **Windows 배포 서비스 없이 PXE 응답기 사용**: 버전 1806부터 이 옵션은 배포 지점에서 WDS가 필요하지 않은 PXE 응답기를 사용하도록 설정합니다. 이 PXE 응답기는 IPv6 네트워크를 지원합니다. 이미 PXE를 사용하는 배포 지점에서 이 옵션을 사용하도록 설정하면 Configuration Manager에서 WDS 서비스를 일시 중단합니다. 이 옵션을 사용하지 않도록 설정하지만 여전히 **클라이언트에 대해 PXE 지원 사용** 옵션을 설정하는 경우 배포 지점에서 WDS를 다시 사용하도록 설정합니다.<!--1357580-->  
 
-    > [!Note]
-    >또한 DHCP 서버를 실행하는 서버에서 WDS 없이 PXE 응답기를 사용하도록 지원되지 않습니다.
+    > [!Note]  
+    > 버전 1810 이하에서는 DHCP 서버도 실행하는 서버에서 WDS 없이 PXE 응답기를 사용하도록 지원되지 않습니다.
+    >
+    > 버전 1902부터는 Windows 배포 서비스 없이 배포 지점에서 PXE 응답기를 사용하도록 설정하면 이제 DHCP 서비스와 동일한 서버에서 실행할 수 있습니다. <!--3734270-->  
 
 - **컴퓨터에서 PXE를 사용할 때 암호 필요**: PXE 배포에 대한 추가 보안을 제공하려면 강력한 암호를 지정합니다.  
 
@@ -428,7 +446,7 @@ PXE를 사용하도록 설정하면 필요한 경우 Configuration Manager에서
 
 ### <a name="bkmk_config-valid"></a> 콘텐츠 유효성 검사  
 
-배포 지점에서 콘텐츠 파일 무결성의 유효성을 검사하는 일정을 설정합니다. 일정에 따라 콘텐츠 유효성 검사를 사용하도록 설정하면 Configuration Manager에서 예약된 시간에 유효성 검사 프로세스를 시작합니다. 배포 지점의 모든 콘텐츠를 확인합니다. 또한 콘텐츠 유효성 검사의 우선 순위를 구성할 수 있습니다. 기본적으로 우선 순위는 **가장 낮음**으로 설정됩니다. 우선 순위를 높이면 유효성 검사 프로세스 중에 서버의 프로세서 및 디스크 사용량이 증가할 수 있지만 더 빨리 완료되어야 합니다. 
+배포 지점에서 콘텐츠 파일 무결성의 유효성을 검사하는 일정을 설정합니다. 일정에 따라 콘텐츠 유효성 검사를 사용하도록 설정하면 Configuration Manager에서 예약된 시간에 유효성 검사 프로세스를 시작합니다. 로컬 SMS_PackagesInContLib SCCMDP 클래스 기반 배포 지점의 모든 콘텐츠를 확인합니다. 또한 콘텐츠 유효성 검사의 우선 순위를 구성할 수 있습니다. 기본적으로 우선 순위는 **가장 낮음**으로 설정됩니다. 우선 순위를 높이면 유효성 검사 프로세스 중에 서버의 프로세서 및 디스크 사용량이 증가할 수 있지만 더 빨리 완료되어야 합니다. 
 
 콘텐츠 유효성 검사 프로세스의 결과를 보려면 **모니터링** 작업 영역에서 **배포 상태**를 확장한 후 **콘텐츠 상태** 노드를 선택합니다. 응용 프로그램, 소프트웨어 업데이트 패키지 및 부팅 이미지와 같은 각 소프트웨어 유형의 콘텐츠가 표시됩니다.  
 

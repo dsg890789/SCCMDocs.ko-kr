@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: d6a73e68-57d8-4786-842b-36669541d8ff
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3e10263f8d052f93f99abd16fbe64acc28bc6fa
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 7e4062b163948c0f66f02239e0a49a9ce9aa9a7d
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56127374"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65499457"
 ---
 # <a name="pki-certificate-requirements-for-system-center-configuration-manager"></a>System Center Configuration Manager를 위한 PKI 인증서 요구 사항
 
@@ -26,7 +26,7 @@ ms.locfileid: "56127374"
 
 Active Directory 인증서 서비스에 대한 자세한 내용은 다음 설명서를 참조하세요.  
 
--   Windows Server 2012의 경우: [Active Directory 인증서 서비스 개요](http://go.microsoft.com/fwlink/p/?LinkId=286744)  
+-   Windows Server2012의 경우: [Active Directory 인증서 서비스 개요](http://go.microsoft.com/fwlink/p/?LinkId=286744)  
 
 -   Windows Server 2008의 경우 [Windows Server 2008의 Active Directory 인증서 서비스](http://go.microsoft.com/fwlink/p/?LinkId=115018)
 

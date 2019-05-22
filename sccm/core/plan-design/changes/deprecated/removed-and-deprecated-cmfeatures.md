@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 287a6324-ae65-4d38-b2ef-198d47c91231
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40469e8173303eb7ad46ef8e716529c37ec6e76d
-ms.sourcegitcommit: ef2960bd91655c741450774e512dd0a9be610625
+ms.openlocfilehash: 96a9c497f7b8dbcd831fd42de646e836fc91ef29
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56838789"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65496337"
 ---
 # <a name="removed-and-deprecated-features-for-configuration-manager"></a>Configuration Manager에서 제거되는 기능과 이후 지원되지 않는 기능
 
@@ -38,7 +38,7 @@ ms.locfileid: "56838789"
 |온-프레미스 조건부 액세스<br>자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.|2019년 1월 30일|2019년 9월 1일|
 |MDM(하이브리드 모바일 디바이스 관리)<br>자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<br><br>2019년 2월 말로 예정된 1902 Intune 서비스 릴리스부터, 신규 고객은 새 하이브리드 연결을 만들 수 없습니다.<!--Intune feature 2683117-->|2018년 8월 14일|2019년 9월 1일|
 |Configuration Manager의 비즈니스용 Windows Hello 설정<br>자세한 내용은 [비즈니스용 Windows Hello 설정](/sccm/protect/deploy-use/windows-hello-for-business-settings)을 참조하세요.|2017년 12월|2019년 11월 1일 이후 릴리스된 첫 번째 버전|
-|애플리케이션 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 사용자는 새로운 소프트웨어 센터를 사용해야 합니다. 참고: 애플리케이션 카탈로그 웹 사이트 지점 및 웹 서비스 지점은 그대로 지원됩니다. 일부 시나리오에서는 새로운 소프트웨어 센터가 애플리케이션 카탈로그 웹 사이트 지점과 통신합니다. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_userex)을 참조하세요.<!--1358309-->|2017년 8월 11일| 버전 1806|
+|애플리케이션 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 사용자는 새로운 소프트웨어 센터를 사용해야 합니다. 참고: 애플리케이션 카탈로그 웹 사이트 지점 및 웹 서비스 지점은 그대로 지원됩니다. 일부 시나리오에서는 새로운 소프트웨어 센터가 애플리케이션 카탈로그 웹 사이트 지점과 통신합니다. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-software-center#bkmk_userex)을 참조하세요.<!--1358309-->|2017년 8월 11일| 버전 1806|
 |이전 버전의 Software Center입니다.<br><br>새 소프트웨어 센터에 대한 자세한 내용은 [애플리케이션 관리 계획 및 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management##bkmk_userex)을 참조하세요.|2016년 12월 13일|1802 버전|
 |Configuration Manager를 사용한 VHD(가상 하드 디스크) 관리 <br><br>이 사용 중단에은 새 VHD를 만들거나 작업 순서를 사용하여 VHD를 관리하는 옵션의 제거 및 Configuration Manager 콘솔에서 가상 하드 디스크 노드의 제거가 포함됩니다. <br><br>기존 VHD는 삭제되지는 않지만 Configuration Manager 콘솔 내에서 더 이상 액세스할 수 없습니다.  |2017년 1월 6일 |버전 1710|
 |작업 순서: <br /> - 동적 디스크로 변환 <br /> - 배포 도구 설치 |2016년 11월 18일|버전 1710|

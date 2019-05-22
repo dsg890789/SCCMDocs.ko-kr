@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e79ec4b19ad45c49438ef273bcaf031754cf7e7
-ms.sourcegitcommit: f3dd8405018fe1043434386be15c16752c1a4a3c
+ms.openlocfilehash: 40cb1a96771181b395ec2f628e0f0c3c2efe29b7
+ms.sourcegitcommit: 53f2380ac67025fb4a69fc1651edad15d98e0cdd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57558136"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673309"
 ---
 # <a name="how-to-create-collections-in-configuration-manager"></a>Configuration Manager에서 컬렉션을 만드는 방법
 
@@ -171,7 +171,7 @@ Configuration Manager 컬렉션에 다른 컬렉션의 멤버를 포함합니다
 
 - **리소스 클래스**: 목록에서 검색하여 컬렉션에 추가하려는 리소스의 유형을 선택합니다. 클라이언트 컴퓨터에서 반환된 인벤토리 데이터를 검색하려면 **시스템 리소스** 값에서 값을 선택하거나 알 수 없는 컴퓨터에서 반환된 값에서 선택하려면 **알 수 없는 컴퓨터** 를 선택합니다.  
 
-- **쿼리 문 편집**: 컬렉션에 대한 규칙으로 사용할 쿼리를 작성할 수 있는 **쿼리 문 속성** 대화 상자가 열립니다. 쿼리에 대한 자세한 내용은 [쿼리 기술 참조](/sccm/core/servers/manage/queries-technical-reference)를 참조하세요.  
+- **쿼리 문 편집**: 컬렉션에 대한 규칙으로 사용할 쿼리를 작성할 수 있는 **쿼리 문 속성** 대화 상자가 열립니다. 쿼리에 대한 자세한 내용은 [쿼리 소개](/sccm/core/servers/manage/introduction-to-queries)를 참조하세요.  
 
 
 ### <a name="bkmk-category"></a> 디바이스 범주 규칙
@@ -218,3 +218,10 @@ Configuration Manager 컬렉션에 다른 컬렉션의 멤버를 포함합니다
 
 5. 컬렉션을 가져오는 마법사를 완료합니다. 새 컬렉션이 **자산 및 준수** 작업 영역의 **사용자 컬렉션** 또는 **디바이스 컬렉션** 노드에 표시됩니다. 새로 가져온 컬렉션에 대한 컬렉션 멤버를 확인하려면 Configuration Manager 콘솔을 새로 고치거나 다시 로드합니다.  
 
+## <a name="bkmk_powershell"></a> PowerShell 사용
+
+PowerShell을 사용하여 컬렉션을 만들고 가져올 수 있습니다.  자세한 내용은 다음을 참조하십시오.
+
+* [New-CMCollection](https://docs.microsoft.com/powershell/module/configurationmanager/new-cmcollection)
+* [Set-CMCollection](https://docs.microsoft.com/powershell/module/ConfigurationManager/Set-CMCollection)
+* [Import-CMCollection](https://docs.microsoft.com/powershell/module/ConfigurationManager/Import-CMCollection)

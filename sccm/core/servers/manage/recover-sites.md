@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 19539f4d-1667-4b4c-99a1-9995f12cf5f7
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8a55ec24a70e6059bb638d1d7ddfc7651574055
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 8506996f7b769003c937de69a9c7f659341c4294
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56134370"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65501020"
 ---
 #  <a name="recover-a-configuration-manager-site"></a>Configuration Manager 사이트 복구
 

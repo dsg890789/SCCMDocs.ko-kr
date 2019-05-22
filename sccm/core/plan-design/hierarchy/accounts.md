@@ -1,8 +1,8 @@
 ---
 title: 사용된 계정
 titleSuffix: Configuration Manager
-description: Configuration Manager에서 사용되는 Windows 그룹과 계정을 식별하고 관리합니다.
-ms.date: 03/29/2019
+description: Configuration Manager에서 사용되는 Windows 그룹, 계정 및 SQL 개체를 식별하고 관리합니다.
+ms.date: 05/01/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,18 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a05ff407c3787283a58973f2861432a0a26a52b0
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
+ms.openlocfilehash: 7949808110d058bc1511abd1053e583b7f452cfa
+ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59802787"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65083571"
 ---
 # <a name="accounts-used-in-configuration-manager"></a>Configuration Manager에서 사용되는 계정
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-다음 정보를 사용하여 Configuration Manager에서 사용되는 Windows 그룹과 계정, 사용 방법 및 요구 사항을 식별합니다.  
+다음 정보를 사용하여 Configuration Manager에서 사용되는 Windows 그룹, 계정, SQL 개체와 사용 방법 및 요구 사항을 식별합니다.  
 
 - [Configuration Manager에서 만들고 사용하는 Windows 그룹](#bkmk_groups)  
     - [ConfigMgr_CollectedFilesAccess](#configmgr_collectedfilesaccess)  
@@ -61,7 +61,10 @@ ms.locfileid: "59802787"
     - [작업 순서 네트워크 폴더 연결 계정](#task-sequence-network-folder-connection-account)  
     - [작업 순서 실행 계정](#task-sequence-run-as-account)  
 
-
+- [Configuration Manager가 SQL에서 사용하는 사용자 개체](#bkmk_sqlobjects)
+    - [smsdbuser_ReadOnly](#smsdbuser_ReadOnly)
+    - [smsdbuser_ReadWrite](#smsdbuser_ReadWrite)
+    - [smsdbuser_ReportSchema](#smsdbuser_ReportSchema)
 
 ## <a name="bkmk_groups"></a> Configuration Manager에서 만들고 사용하는 Windows 그룹  
 
@@ -71,7 +74,7 @@ ms.locfileid: "59802787"
 >  Configuration Manager에서 도메인 구성원인 컴퓨터에 그룹을 만들면 이 그룹은 로컬 보안 그룹이 됩니다. 컴퓨터가 도메인 컨트롤러인 경우 그룹은 도메인 로컬 그룹입니다. 이 유형의 그룹은 도메인의 모든 도메인 컨트롤러 간에 공유됩니다.  
 
 
-### <a name="configmgrcollectedfilesaccess"></a>ConfigMgr_CollectedFilesAccess
+### <a name="configmgr_collectedfilesaccess"></a> ConfigMgr_CollectedFilesAccess
 
 Configuration Manager에서는 소프트웨어 인벤토리를 통해 수집한 파일을 볼 수 있는 액세스 권한을 부여하는 데 이 그룹을 사용합니다.  
 
@@ -89,7 +92,7 @@ Configuration Manager는 자동으로 그룹 멤버 자격을 관리합니다. �
 기본적으로 이 그룹에는 사이트 서버의 `C:\Program Files\Microsoft Configuration Manager\sinv.box\FileCol` 폴더에 대한 **읽기** 권한이 있습니다.  
 
 
-### <a name="configmgrdviewaccess"></a>ConfigMgr_DViewAccess  
+### <a name="configmgr_dviewaccess"></a>ConfigMgr_DViewAccess  
 
  이 그룹은 Configuration Manager가 자식 기본 사이트의 사이트 데이터베이스 서버 또는 데이터베이스 복제 서버에 만드는 로컬 보안 그룹입니다. 이 사이트는 계층 구조 내 사이트 간 데이터베이스 복제를 위한 분산 보기를 사용할 때 이를 생성합니다. 여기에는 중앙 관리 사이트의 사이트 서버 및 SQL Server 컴퓨터 계정이 포함됩니다.
 
@@ -589,3 +592,25 @@ Configuration Manager 설치 프로그램은 이 계정을 [SMS Admins](#sms-adm
 >   
 >  명령줄에 컴퓨터에 대한 관리 액세스 권한이 필요한 경우 작업 순서를 실행하는 모든 컴퓨터에서 이 계정에 대해서만 로컬 관리자 계정을 만드는 것이 좋습니다. 더 이상 필요하지 않으면 계정을 삭제합니다.  
 
+
+## <a name="bkmk_sqlobjects"></a> Configuration Manager가 SQL에서 사용하는 사용자 개체 
+<!--SCCMDocs issue #1160-->
+Configuration Manager는 다음과 같은 사용자 개체를 SQL에서 자동으로 만들고 유지 관리합니다.  이러한 개체는 Configuration Manager 데이터베이스 내의 보안/사용자 아래에 있습니다.  
+
+> [!IMPORTANT]  
+>  이러한 개체를 수정하거나 제거하면 Configuration Manager 환경 내에서 급격한 문제가 발생할 수 있습니다.  이러한 개체는 변경하지 않는 것이 좋습니다.
+
+
+### <a name="smsdbuserreadonly"></a>smsdbuser_ReadOnly
+
+이 개체는 읽기 전용 컨텍스트에서 쿼리를 실행하는 데 사용됩니다.  이 개체는 여러 저장 프로시저에서 사용됩니다.
+
+
+### <a name="smsdbuserreadwrite"></a>smsdbuser_ReadWrite
+
+이 개체는 동적 SQL 문에 대한 사용 권한을 제공하는 데 사용됩니다.
+
+
+### <a name="smsdbuserreportschema"></a>smsdbuser_ReportSchema
+
+이 개체는 SQL Reporting 실행에 사용됩니다.  이 함수에는 저장 프로시저 spSRExecQuery가 함께 사용됩니다.

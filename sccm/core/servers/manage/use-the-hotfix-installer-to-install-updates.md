@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: f3058277-c597-4dac-86d1-41b6f7e62b36
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 67d2fc976b08e438c6f19a7fecca03761bb099f6
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 1ca292a5266c19bc4e2b1fbc69dd0c3fe869a58e
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56124733"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65500915"
 ---
 # <a name="use-the-hotfix-installer-to-install-updates-for-system-center-configuration-manager"></a>핫픽스 설치 관리자를 사용하여 System Center Configuration Manager의 업데이트 설치
 

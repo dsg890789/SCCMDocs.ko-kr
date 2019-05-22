@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99df201cb3525a124b42d5d599d4a74708258bad
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
+ms.openlocfilehash: a513eb15f9a8c841aa5896ee5d416bd7863d0cb9
+ms.sourcegitcommit: ab9f2a7fb7ea3a0c65808fce2975ab25a670281f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59673720"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65612785"
 ---
 # <a name="ports-used-in-configuration-manager"></a>Configuration Manager에서 사용되는 포트
 
@@ -315,7 +315,7 @@ Configuration Manager 콘솔은 다음 구성에 대해 인터넷 액세스를 �
 |RPC|--|동적 <sup>[참고 6](#bkmk_note6)</sup>|  
 
 
-###  <a name="BKMK_PortsCertificateRegistationPoint_PolicyModule"></a> Configuration Manager NDES(네트워크 디바이스 등록 서비스) -- > 인증서 등록 지점  
+###  <a name="BKMK_PortsCertificateRegistationPoint_PolicyModule"></a> Configuration Manager NDES(네트워크 장치 등록 서비스) -- > 인증서 등록 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -718,7 +718,7 @@ Configuration Manager 콘솔은 다음 구성에 대해 인터넷 액세스를 �
 #### <a name="bkmk_note4"></a> 참고 4: TFTP(Trivial FTP) 디먼
 TFTP(Trivial FTP) 디먼 시스템 서비스에는 사용자 이름 또는 암호가 필요하지 않으며, 해당 디먼 시스템 서비스는 WDS(Windows 배포 서비스)의 필수적인 부분입니다. Trivial FTP 디먼 서비스는 다음 RFC로 정의된 TFTP 프로토콜을 지원합니다.  
 
-- RFC 350: TFTP  
+- RFC 1350: TFTP  
 
 - RFC 2347: 옵션 확장  
 
@@ -730,7 +730,7 @@ TFTP는 디스크 없이 부팅하는 환경을 지원하도록 설계됩니다.
 
 PXE 지원 배포 지점 및 Windows PE의 클라이언트는 TFTP 전송에 대해 동적으로 할당된 높은 포트를 선택합니다. 이러한 포트는 Microsoft에 의해 49152 및 65535 사이에서 정의됩니다. 자세한 내용은 [Windows의 서비스 개요 및 네트워크 포트 요구 사항](https://support.microsoft.com/help/832017/service-overview-and-network-port-requirements-for-windows)을 참조하세요.
 
-그러나 실제로 PXE를 부팅하는 동안 디바이스의 네트워크 카드는 TFTP를 전송하는 동안 사용하는 동적으로 할당된 높은 포트를 선택합니다. 디바이스의 네트워크 카드는 Microsoft에서 정의된 동적으로 할당된 높은 포트에 바인딩되지 않습니다. RFC 350에서 정의된 포트로만 바인딩됩니다. 이 포트는 0 및 65535 사이의 하나일 수 있습니다. 네트워크 카드가 사용하는 동적으로 할당된 높은 포트에 대한 자세한 내용은 디바이스 하드웨어 제조업체에 문의하세요.
+그러나 실제로 PXE를 부팅하는 동안 디바이스의 네트워크 카드는 TFTP를 전송하는 동안 사용하는 동적으로 할당된 높은 포트를 선택합니다. 디바이스의 네트워크 카드는 Microsoft에서 정의된 동적으로 할당된 높은 포트에 바인딩되지 않습니다. RFC 1350에서 정의된 포트로만 바인딩됩니다. 이 포트는 0 및 65535 사이의 하나일 수 있습니다. 네트워크 카드가 사용하는 동적으로 할당된 높은 포트에 대한 자세한 내용은 디바이스 하드웨어 제조업체에 문의하세요.
 
 
 #### <a name="bkmk_note5"></a> 참고 5: 사이트 서버 및 사이트 시스템 간 통신

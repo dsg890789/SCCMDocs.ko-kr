@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 1b931c9d-ffae-4d8e-baa7-c330a152674f
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d759ada36184ac8a6d1ac59c94c96cdaf234d56
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 2c9f8b65180c4255c5c279d75f012db766163fd6
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56139377"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65500772"
 ---
 # <a name="accessibility-features-in-support-center"></a>지원 센터의 내게 필요한 옵션 기능
 

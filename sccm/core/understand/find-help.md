@@ -2,7 +2,7 @@
 title: 도움말 찾기
 titleSuffix: Configuration Manager
 description: Configuration Manager에 대해 자세히 알아보기 위해 관련 리소스를 찾습니다.
-ms.date: 07/30/2018
+ms.date: 05/02/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9440a4873b6011ed4a7394c335531afc72ac5d97
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
+ms.openlocfilehash: e767d46c81e3942efb44d9d94ba7f66ecd1f5281
+ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59802549"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65083112"
 ---
 # <a name="find-help-for-using-configuration-manager"></a>Configuration Manager 사용 도움말 찾기
 
@@ -112,7 +112,7 @@ Configuration Manager 버전 1806부터 제품 피드백은 콘솔에서 직접 
 
 1. **피드백 제공** 창 아래쪽에서 **저장**을 클릭합니다. 
 2. .zip 파일을 저장합니다. 로컬 머신에 인터넷 액세스 권한이 없는 경우 인터넷에 연결된 머신에 파일을 복사합니다. 
-3. 필요한 경우 `cd.latest\SMSSETUP\Tools\UploadOfflineFeedback\UploadOfflineFeedback.exe`에 있는 UploadOfflineFeedback.exe를 복사합니다.
+3. 필요한 경우 `cd.latest\SMSSETUP\Tools\UploadOfflineFeedback\`에 있는 UploadOfflineFeedback 폴더를 복사합니다.
     - cd.latest 폴더에 대한 자세한 내용은 [CD.Latest 폴더](../servers/manage/the-cd.latest-folder.md)를 참조하세요.
 
 4. 인터넷에 연결된 머신에서 명령 프롬프트를 엽니다. 

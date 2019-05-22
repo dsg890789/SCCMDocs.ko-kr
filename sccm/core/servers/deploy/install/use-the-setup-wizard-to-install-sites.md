@@ -6,16 +6,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 1f703376-5f2c-4fd2-8209-7028c931ddc7
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 67c82a884a5d3df3b1e61e1f9f2c109ff2b7fef6
-ms.sourcegitcommit: af8693048e6706ffda72572374f56e0bc7dfce2c
+ms.openlocfilehash: 92c51158412b8bc9737c4851fc43dc2a7776488b
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737344"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65501264"
 ---
 # <a name="use-the-setup-wizard-to-install-configuration-manager-sites"></a>설치 마법사를 사용하여 Configuration Manager 사이트 설치
 
@@ -329,7 +329,7 @@ Configuration Manager 콘솔을 사용하여 보조 사이트를 설치합니다
 
         - **SQL Server 서비스 포트**: SQL Server Express에 대해 사용할 SQL Server 서비스 포트를 지정합니다. 일반적으로 서비스 포트는 TCP 포트 1433을 사용하도록 구성되지만 다른 포트를 구성할 수도 있습니다.  
 
-        - **SQL Server Broker 포트**: SQL Server Express에 대해 사용할 SQL Server Service Broker(SSB) 포트를 지정합니다. 일반적으로 Service Broker는 TCP 포트 4022를 사용하도록 구성되지만 다른 포트를 구성할 수도 있습니다. 방화벽 제한으로 인해 차단되지 않으면서도 다른 사이트 또는 서비스가 사용하지 않는 유효한 포트를 지정합니다.  
+        - **SQL Server Broker 포트**: SQL Server Express에 대해 사용할 SQL SSB(Server Service Broker) 포트를 지정합니다. 일반적으로 Service Broker는 TCP 포트 4022를 사용하도록 구성되지만 다른 포트를 구성할 수도 있습니다. 방화벽 제한으로 인해 차단되지 않으면서도 다른 사이트 또는 서비스가 사용하지 않는 유효한 포트를 지정합니다.  
 
     - **기존 SQL Server 인스턴스 사용**  
 
@@ -339,7 +339,7 @@ Configuration Manager 콘솔을 사용하여 보조 사이트를 설치합니다
 
         - **ConfigMgr 사이트 데이터베이스 이름**: 보조 사이트 데이터베이스에 사용할 이름을 지정합니다.  
 
-        - **SQL Server Broker 포트**: SQL Server에 대해 사용할 SQL Server Service Broker 포트를 지정합니다. 방화벽 제한으로 인해 차단되지 않으면서도 다른 사이트 또는 서비스가 사용하지 않는 유효한 포트를 지정합니다.  
+        - **SQL Server Broker 포트**: SQL Server에 대해 사용할 SQL SSB(Server Service Broker) 포트를 지정합니다. 방화벽 제한으로 인해 차단되지 않으면서도 다른 사이트 또는 서비스가 사용하지 않는 유효한 포트를 지정합니다.  
 
     > [!TIP]  
     > System Center Configuration Manager에서 지원하는 SQL Server 버전 목록은 [지원되는 SQL Server 버전](/sccm/core/plan-design/configs/support-for-sql-server-versions)을 참조하세요.  

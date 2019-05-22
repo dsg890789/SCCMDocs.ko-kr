@@ -2,7 +2,7 @@
 title: 컬렉션 관리
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 일반적인 컬렉션 관리 작업을 수행합니다.
-ms.date: 08/17/2018
+ms.date: 04/23/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93a502e9c77e05eedba1c2989cbae69e4080832f
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 1a6b087b19a27bcb7cbc2fa2022d828aea58800b
+ms.sourcegitcommit: 53f2380ac67025fb4a69fc1651edad15d98e0cdd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56133734"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673328"
 ---
 # <a name="how-to-manage-collections-in-configuration-manager"></a>Configuration Manager에서 컬렉션을 관리하는 방법
 
@@ -25,7 +25,7 @@ ms.locfileid: "56133734"
 이 문서의 개요 정보를 참조하여 Configuration Manager에서 컬렉션에 대한 관리 작업을 수행할 수 있습니다.  
 
 > [!NOTE]  
->  구성 관리자 컬렉션을 만드는 방법에 대한 자세한 내용은 [컬렉션을 만드는 방법](/sccm/core/clients/manage/collections/create-collections)을 참조하세요.  
+>  구성 관리자 컬렉션을 만드는 방법에 대한 자세한 내용은 [컬렉션을 만드는 방법](/sccm/core/clients/manage/collections/create-collections)을 참조하세요.
 
 
 
@@ -112,7 +112,7 @@ ms.locfileid: "56133734"
 
  - **구성 기준**: **구성 기준 배포** 대화 상자를 엽니다. 선택한 컬렉션에 대한 하나 이상의 구성 기준 배포를 구성하세요. 자세한 내용은 [구성 기준 배포 방법](/sccm/compliance/deploy-use/deploy-configuration-baselines)을 참조하세요.  
 
- - **작업 순서**: **소프트웨어 배포 마법사**를 엽니다. 선택한 컬렉션에 대한 작업 순서 배포를 선택하고 구성하세요. 자세한 내용은 [작업을 자동화하는 작업 순서 관리](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#BKMK_DeployTS)를 참조하세요.  
+ - **작업 순서**: **소프트웨어 배포 마법사**를 엽니다. 선택한 컬렉션에 대한 작업 순서 배포를 선택하고 구성하세요. 자세한 내용은 [작업을 자동화하는 작업 순서 관리](/sccm/osd/deploy-use/deploy-a-task-sequence)를 참조하세요.  
 
  - **소프트웨어 업데이트**: **소프트웨어 업데이트 배포 마법사**를 엽니다. 선택한 컬렉션의 리소스에 대해 소프트웨어 업데이트 배포를 구성하세요. 자세한 내용은 [소프트웨어 업데이트 관리](/sccm/sum/understand/software-updates-introduction)를 참조하세요.  
 
@@ -127,7 +127,6 @@ ms.locfileid: "56133734"
 
 #### <a name="properties"></a>속성
  자세한 내용은 [컬렉션 속성](#BKMK_CollProp)을 참조하세요.  
-
 
 
 ## <a name="bkmk_user"></a> 사용자 컬렉션을 관리하는 방법  
@@ -152,10 +151,9 @@ ms.locfileid: "56133734"
  - **배포**  
      - **애플리케이션**  
      - **프로그램**  
-     - **구성 기준**   
+     - **구성 기준**
  - **이동**  
  - **데이터 액세스**
-
 
 
 ##  <a name="BKMK_CollProp"></a> 컬렉션 속성  
@@ -188,3 +186,32 @@ ms.locfileid: "56133734"
 
 #### <a name="alerts"></a>경고 
  클라이언트 상태와 Endpoint Protection에 대해 경고가 생성되는 때를 구성합니다. 자세한 내용은 [클라이언트 상태를 구성하는 방법](/sccm/core/clients/deploy/configure-client-status) 및 [Endpoint Protection 상태를 모니터링하는 방법](/sccm/protect/deploy-use/monitor-endpoint-protection)을 참조하세요.  
+## <a name="bkmk_powershell"></a> PowerShell 사용
+
+PowerShell을 사용하여 컬렉션을 관리할 수 있습니다.  자세한 내용은 다음을 참조하십시오.
+
+* [Get-CMCollection](https://docs.microsoft.com/powershell/module/configurationmanager/get-cmcollection)
+* [Set-CMCollection](https://docs.microsoft.com/powershell/module/configurationmanager/set-cmcollection)
+* [New-CMCollection](https://docs.microsoft.com/powershell/module/configurationmanager/new-cmcollection)
+* [Copy-CMCollection](https://docs.microsoft.com/powershell/module/configurationmanager/copy-cmcollection)
+* [Remove-CMCollection](https://docs.microsoft.com/powershell/module/configurationmanager/remove-cmcollection)
+* [Import-CMCollection](https://docs.microsoft.com/powershell/module/configurationmanager/import-cmcollection)
+* [Export-CMCollection](https://docs.microsoft.com/powershell/module/configurationmanager/export-cmcollection)
+* [Get-CMCollectionMember](https://docs.microsoft.com/powershell/module/configurationmanager/get-cmcollectionmember)
+* [Get-CMCollectionSetting](https://docs.microsoft.com/powershell/module/configurationmanager/get-cmcollectionsetting)
+* [Invoke-CMCollectionUpdate](https://docs.microsoft.com/powershell/module/configurationmanager/invoke-cmcollectionupdate)
+* [Add-CMCollectionMembershipRule](https://docs.microsoft.com/powershell/module/configurationmanager/add-cmcollectionmembershiprule)
+* [Set-CMCollectionPowerManagement](https://docs.microsoft.com/powershell/module/configurationmanager/set-cmcollectionpowermanagement)
+* [Get-CMCollectionMembershipRule](https://docs.microsoft.com/powershell/module/configurationmanager/get-cmcollectionmembershiprule)
+* [Remove-CMCollectionMembershipRule](https://docs.microsoft.com/powershell/module/configurationmanager/remove-cmcollectionmembershiprule)
+* [Get-CMCollectionDirectMembershipRule](https://docs.microsoft.com/powershell/module/configurationmanager/get-cmcollectiondirectmembershiprule)
+* [Get-CMCollectionQueryMembershipRule](https://docs.microsoft.com/powershell/module/configurationmanager/get-cmcollectionquerymembershiprule)
+* [Get-CMCollectionIncludeMembershipRule](https://docs.microsoft.com/powershell/module/configurationmanager/get-cmcollectionincludemembershiprule)
+* [Add-CMCollectionToAdministrativeUser](https://docs.microsoft.com/powershell/module/configurationmanager/add-cmcollectiontoadministrativeuser)
+* [Remove-CMCollectionQueryMembershipRule](https://docs.microsoft.com/powershell/module/configurationmanager/remove-cmcollectionquerymembershiprule)
+* [Remove-CMCollectionDirectMembershipRule](https://docs.microsoft.com/powershell/module/configurationmanager/remove-cmcollectiondirectmembershiprule)
+* [Get-CMCollectionExcludeMembershipRule](https://docs.microsoft.com/powershell/module/configurationmanager/get-cmcollectionexcludemembershiprule)
+* [Add-CMCollectionToDistributionPointGroup](https://docs.microsoft.com/powershell/module/configurationmanager/add-cmcollectiontodistributionpointgroup)
+* [Remove-CMCollectionIncludeMembershipRule](https://docs.microsoft.com/powershell/module/configurationmanager/remove-cmcollectionincludemembershiprule)
+* [Remove-CMCollectionExcludeMembershipRule](https://docs.microsoft.com/powershell/module/configurationmanager/remove-cmcollectionexcludemembershiprule)
+* [Remove-CMCollectionFromAdministrativeUser](https://docs.microsoft.com/powershell/module/configurationmanager/remove-cmcollectionfromadministrativeuser)

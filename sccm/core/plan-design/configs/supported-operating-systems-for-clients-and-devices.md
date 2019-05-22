@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 87f4e041-67df-4c61-aa98-7444faffe565
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 100fdd8e9032b1d16ae79b3cd52ffba3b3609446
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: af9d8c16033a22c828f014dfd4bad771851c08de
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56140163"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65499329"
 ---
 # <a name="supported-os-versions-for-clients-and-devices-for-configuration-manager"></a>Configuration Manager의 클라이언트 및 디바이스에 대해 지원되는 OS 버전
 
@@ -118,7 +118,7 @@ Windows Server 반기 채널 버전은 Windows Server 버전 1809 같은 Server 
 
     -   통합 쓰기 필터(UWF)  
 
--   Windows Embedded 장치에는 애플리케이션 카탈로그가 지원되지 않습니다.  
+-   Windows Embedded 디바이스에는 응용 프로그램 카탈로그가 지원되지 않습니다.  
 
 
 ### <a name="supported-os-versions"></a>지원된 OS 버전  
@@ -126,7 +126,7 @@ Windows Server 반기 채널 버전은 Windows Server 버전 1809 같은 Server 
 -   **Windows 10 Enterprise**(x86, x64)  
 
 -   **Windows 10 IoT Enterprise**(x86, x64)  
-    이 버전에는 LTSC(장기 서비스 채널)가 포함됩니다. 자세한 내용은 [Overview of Windows 10 IoT Enterprise](https://docs.microsoft.com/windows/iot-core/windows-iot-enterprise)\(Windows 10 IoT Enterprise 개요\)를 참조하세요.<!--SCCMDocs issue 560-->  
+    이 버전에는 LTSC(장기 서비스 채널)가 포함됩니다. 자세한 내용은 [Windows 10 IoT Enterprise 개요](https://docs.microsoft.com/windows/iot-core/windows-iot-enterprise)를 참조하세요.<!--SCCMDocs issue 560-->  
 
 -   **Windows Embedded 8.1 Industry**(x86, x64)    
 
@@ -147,7 +147,7 @@ Windows Server 반기 채널 버전은 Windows Server 버전 1809 같은 Server 
 
 ### <a name="requirements-and-limitations"></a>요구 사항 및 제한 사항:  
 
--   모바일 장치 클라이언트를 설치하려면 0.78MB의 스토리지 공간이 필요합니다. 로그인은 256KB의 추가 스토리지 공간이 필요할 수 있습니다.    
+-   모바일 디바이스 클라이언트를 설치하려면 0.78MB의 저장소 공간이 필요합니다. 로그인은 256KB의 추가 스토리지 공간이 필요할 수 있습니다.    
 
 -   이러한 모바일 디바이스의 기능은 플랫폼 및 클라이언트 유형별로 달라집니다. 지원되는 관리 기능에 대한 자세한 내용은 [디바이스 관리 솔루션 선택](/sccm/core/plan-design/choose-a-device-management-solution)을 참조하세요.  
 
@@ -342,7 +342,7 @@ Windows Server 반기 채널 버전은 Windows Server 버전 1809 같은 Server 
 - **Windows 10 Pro Enterprise**(x86, x64)  
 
 - **Windows 10 IoT Enterprise**(x86, x64)  
-    이 버전에는 LTSC(장기 서비스 채널)가 포함됩니다. 자세한 내용은 [Overview of Windows 10 IoT Enterprise](https://docs.microsoft.com/windows/iot-core/windows-iot-enterprise)\(Windows 10 IoT Enterprise 개요\)를 참조하세요.<!--SCCMDocs issue 560-->  
+    이 버전에는 LTSC(장기 서비스 채널)가 포함됩니다. 자세한 내용은 [Windows 10 IoT Enterprise 개요](https://docs.microsoft.com/windows/iot-core/windows-iot-enterprise)를 참조하세요.<!--SCCMDocs issue 560-->  
 
 - **Windows 10 Mobile**  
 

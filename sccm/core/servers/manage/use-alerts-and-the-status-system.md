@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 7341cc6e-9e08-41e4-bcc6-6c1ff12e85ca
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70e19304d63c9660a685b37db19219ba38981b18
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 52c501c30d2eb4ecea3d7830d0f0c3bb61262137
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56133455"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65497221"
 ---
 # <a name="use-alerts-and-the-status-system-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 경고 및 상태 시스템 사용
 

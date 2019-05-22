@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 41cdebfe-b595-40aa-a385-32e0746255ed
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 970d2fbf69a7c4c91a55cadf5d420988b2207ca2
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 7858497f1ff49e5068da066cc481ca5fd38f825f
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56131101"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65500709"
 ---
 # <a name="support-center-user-interface-reference"></a>지원 센터 사용자 인터페이스 참조
 
@@ -223,13 +223,13 @@ ms.locfileid: "56131101"
 
 - **위치 서비스**  
 
-    - **콘텐츠 위치 새로 고침**: 모든 활성 콘텐츠 다운로드에서 사용되는 배포 지점을 새로 고집니다.  
+    - **콘텐츠 위치 새로 고침**: 모든 활성 콘텐츠 다운로드에서 사용되는 배포 지점을 새로 고칩니다.  
 
     - **관리 지점 새로 고침**: 클라이언트에서 사용하는 관리 지점의 내부 목록을 업데이트합니다.  
 
     - **콘텐츠 요청 시간 초과**: 콘텐츠 위치 요청이 너무 오래 실행되는 경우 이 작업은 요청을 중지합니다.  
 
-  - **애플리케이션 배포 평가**: 배포된 응용 프로그램을 평가하는 작업을 시작합니다.  
+  - **애플리케이션 배포 평가**: 배포된 애플리케이션을 평가하는 작업을 시작합니다.  
 
   - **소프트웨어 업데이트 배포 평가**: 배포된 소프트웨어 업데이트를 평가하는 작업을 시작합니다.  
 

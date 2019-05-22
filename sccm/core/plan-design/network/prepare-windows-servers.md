@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 2aca914f-641e-4bc8-98d4-bbf0a2a5276f
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e794ff161f193f76fc899ab35acb1d29afdf606
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: cbe2608058f7364ba2b78a7ed31a01dbec5ef65f
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56120337"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65499178"
 ---
 # <a name="prepare-windows-servers-to-support-configuration-manager"></a>Configuration Manager를 지원할 Windows 서버 준비
 
@@ -47,7 +47,7 @@ Windows 컴퓨터를 Configuration Manager용 사이트 시스템 서버로 사�
 
     .NET Framework 4.0 이상 버전은 이전 버전과 호환되지 않아 3.5 이하 버전 대신 사용할 수 없으므로 다른 버전이 필수 버전으로 표시되면 같은 컴퓨터에서 각 버전을 사용할 수 있도록 계획합니다.  
 
-- **BITS(Background Intelligent Transfer Service)**: 관리 지점에서는 관리 장치와의 통신을 지원하기 위해 BITS 및 자동으로 선택되는 옵션을 사용해야 합니다.  
+- **BITS(Background Intelligent Transfer Service)**: 관리 지점에서는 관리형 디바이스와의 통신을 지원하기 위해 BITS 및 자동으로 선택되는 옵션을 사용해야 합니다.  
 
 - **BranchCache**: BranchCache를 사용하는 클라이언트를 지원하기 위해 BranchCache를 사용하여 배포 지점을 설정할 수 있습니다.  
 
@@ -60,7 +60,7 @@ Windows 컴퓨터를 Configuration Manager용 사이트 시스템 서버로 사�
 
 - Active Directory 인증서 서비스 라이브러리의 **네트워크 디바이스 등록 서비스 지침**: 이 Windows 역할은 Configuration Manager에서 인증서 프로필을 사용하기 위한 필수 구성 요소입니다.  
 
-- **웹 서버(IIS)**: 예를 들면 다음과 같습니다.  
+- **웹 서버(IIS)**: 포함하는 항목  
     - 일반 HTTP 기능  
           - HTTP 리디렉션  
     - 애플리케이션 개발  

@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 3fab4d67-8d2a-45ce-8b06-471280102cf6
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7a9fcf06630c76fc3e1123fa56861c4de224521
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: dcc3a43f1cc2393a66fe50ef74e864afeb27704c
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56129377"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65501061"
 ---
 # <a name="monitor-hierarchy-and-replication-infrastructure-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 계층 및 복제 인프라 모니터링
 

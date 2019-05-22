@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 0da167f1-52cf-4dfd-8f73-833ca3eb8478
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f5c85e3058a63868cfee28865c1be222919b29a8
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 434b53d24d050cc66cbb5e8bec7a681311f945b8
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56141826"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65498681"
 ---
 # <a name="command-line-options-for-setup-in-system-center-configuration-manager"></a>System Center Configuration Manager 설치를 위한 명령줄 옵션
 
@@ -83,7 +83,7 @@ ms.locfileid: "56141826"
 
     -   **필수:** 아니요  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK, or ZHH  
 
     -   **세부 정보:** Configuration Manager 콘솔, 보고서 및 Configuration Manager 개체에 대해 사용할 수 있는 서버 언어를 지정합니다. 영어는 기본적으로 사용할 수 있습니다.  
 
@@ -91,7 +91,7 @@ ms.locfileid: "56141826"
 
     -   **필수:** 아니요  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK, or ZHH  
 
     -   **세부 정보:** 클라이언트 컴퓨터에 사용할 수 있는 언어를 지정합니다. 영어는 기본적으로 사용할 수 있습니다.  
 
@@ -99,7 +99,7 @@ ms.locfileid: "56141826"
 
     -   **필수:** 아니요  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK, or ZHH  
 
     -   **세부 정보:** 제거할 언어를 지정합니다. 해당 언어는 Configuration Manager 콘솔, 보고서 및 Configuration Manager 개체에 대해 더 이상 사용할 수 없습니다. 영어는 기본적으로 사용할 수 있으며 제거할 수 없습니다.  
 
@@ -107,7 +107,7 @@ ms.locfileid: "56141826"
 
     -   **필수:** 아니요  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK, or ZHH  
 
     -   **세부 정보:** 제거할 언어를 지정합니다. 해당 언어는 클라이언트 컴퓨터에서 더 이상 사용할 수 없습니다. 영어는 기본적으로 사용할 수 있으며 제거할 수 없습니다.  
 
@@ -121,7 +121,7 @@ ms.locfileid: "56141826"
 
          1 = 설치  
 
-    -   **세부 정보:** 모바일 장치 클라이언트 언어의 설치 여부를 지정합니다.  
+    -   **세부 정보:** 모바일 디바이스 클라이언트 언어의 설치 여부를 지정합니다.  
 
 -   **키 이름:** PrerequisiteComp  
 
@@ -259,7 +259,7 @@ ms.locfileid: "56141826"
 
     -   **필수:** 아니요  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK, or ZHH  
 
     -   **세부 정보:** Configuration Manager 콘솔, 보고서 및 Configuration Manager 개체에 대해 사용할 수 있는 서버 언어를 지정합니다. 영어는 기본적으로 사용할 수 있습니다.  
 
@@ -267,7 +267,7 @@ ms.locfileid: "56141826"
 
     -   **필수:** 아니요  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK, or ZHH  
 
     -   **세부 정보:** 클라이언트 컴퓨터에 사용할 수 있는 언어를 지정합니다. 영어는 기본적으로 사용할 수 있습니다.  
 
@@ -275,7 +275,7 @@ ms.locfileid: "56141826"
 
     -   **필수:** 아니요  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK, or ZHH  
 
     -   **세부 정보:** 사이트를 설치한 후 사이트를 수정합니다. 제거할 언어를 지정합니다. 해당 언어는 Configuration Manager 콘솔, 보고서 및 Configuration Manager 개체에 대해 더 이상 사용할 수 없습니다. 영어는 기본적으로 사용할 수 있으며 제거할 수 없습니다.  
 
@@ -283,7 +283,7 @@ ms.locfileid: "56141826"
 
     -   **필수:** 아니요  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK, or ZHH  
 
     -   **세부 정보:** 사이트를 설치한 후 사이트를 수정합니다. 제거할 언어를 지정합니다. 해당 언어는 클라이언트 컴퓨터에서 더 이상 사용할 수 없습니다. 영어는 기본적으로 사용할 수 있으며 제거할 수 없습니다.  
 
@@ -297,7 +297,7 @@ ms.locfileid: "56141826"
 
          1 = 설치  
 
-    -   **세부 정보:** 모바일 장치 클라이언트 언어의 설치 여부를 지정합니다.  
+    -   **세부 정보:** 모바일 디바이스 클라이언트 언어의 설치 여부를 지정합니다.  
 
 **SQLConfigOptions**  
 
@@ -326,7 +326,7 @@ ms.locfileid: "56141826"
 
     -   **값:** <*SSB 포트 번호*>  
 
-    -   **세부 정보:** SQL Server가 사용하는 SQL Server Service Broker(SSB) 포트를 지정합니다. 일반적으로 SSB는 TCP 포트 4022를 사용하도록 구성되지만 다른 포트를 사용할 수도 있습니다.  
+    -   **세부 정보:** SQL Server가 사용하는 SQL SSB(Server Service Broker) 포트를 지정합니다. 일반적으로 SSB는 TCP 포트 4022를 사용하도록 구성되지만 다른 포트를 사용할 수도 있습니다.  
 
 -   **키 이름:** SQLDataFilePath  
 
@@ -509,7 +509,7 @@ ms.locfileid: "56141826"
 
     -   **값:** <*관리 지점 사이트 서버 FQDN*>  
 
-    -   **세부 정보:** 관리 지점 사이트 시스템 역할을 호스팅할 서버의 FQDN을 지정합니다.  
+    -   **세부 정보:** 관리 지점 사이트 시스템 역할을 호스트할 서버의 FQDN을 지정합니다.  
 
 -   **키 이름:** ManagementPointProtocol  
 
@@ -559,7 +559,7 @@ ms.locfileid: "56141826"
 
     -   **필수:** 아니요  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK, or ZHH  
 
     -   **세부 정보:** Configuration Manager 콘솔, 보고서 및 Configuration Manager 개체에 대해 사용할 수 있는 서버 언어를 지정합니다. 영어는 기본적으로 사용할 수 있습니다.  
 
@@ -567,7 +567,7 @@ ms.locfileid: "56141826"
 
     -   **필수:** 아니요  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK, or ZHH  
 
     -   **세부 정보:** 클라이언트 컴퓨터에 사용할 수 있는 언어를 지정합니다. 영어는 기본적으로 사용할 수 있습니다.  
 
@@ -575,7 +575,7 @@ ms.locfileid: "56141826"
 
     -   **필수:** 아니요  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK, or ZHH  
 
     -   **세부 정보:** 사이트를 설치한 후 사이트를 수정합니다. 제거할 언어를 지정합니다. 해당 언어는 Configuration Manager 콘솔, 보고서 및 Configuration Manager 개체에 대해 더 이상 사용할 수 없습니다. 영어는 기본적으로 사용할 수 있으며 제거할 수 없습니다.  
 
@@ -583,7 +583,7 @@ ms.locfileid: "56141826"
 
     -   **필수:** 아니요  
 
-    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK 또는 ZHH  
+    -   **값:** DEU, FRA, RUS, CHS, JPN, CHT, CSY, ESN, HUN, ITA, KOR, NLD, PLK, PTB, PTG, SVE, TRK, or ZHH  
 
     -   **세부 정보:** 사이트를 설치한 후 사이트를 수정합니다. 제거할 언어를 지정합니다. 해당 언어는 클라이언트 컴퓨터에서 더 이상 사용할 수 없습니다. 영어는 기본적으로 사용할 수 있으며 제거할 수 없습니다.  
 
@@ -597,7 +597,7 @@ ms.locfileid: "56141826"
 
          1 = 설치  
 
-    -   **세부 정보:** 모바일 장치 클라이언트 언어의 설치 여부를 지정합니다.  
+    -   **세부 정보:** 모바일 디바이스 클라이언트 언어의 설치 여부를 지정합니다.  
 
 **SQLConfigOptions**  
 
@@ -807,7 +807,7 @@ ms.locfileid: "56141826"
 
     -   **값:** <*사이트 데이터베이스 백업 집합 경로*>  
 
-    -   **세부 정보:** 사이트 데이터베이스 백업 집합의 경로를 지정합니다.  
+    -   **세부 정보:** 사이트 데이터베이스 백업 세트의 경로를 지정합니다.  
 
 **Options**  
 
@@ -1069,7 +1069,7 @@ ms.locfileid: "56141826"
 
     -   **값:** <*사이트 데이터베이스 백업 집합 경로*>  
 
-    -   **세부 정보:** 사이트 데이터베이스 백업 집합의 경로를 지정합니다.  
+    -   **세부 정보:** 사이트 데이터베이스 백업 세트의 경로를 지정합니다.  
 
 **Options**  
 

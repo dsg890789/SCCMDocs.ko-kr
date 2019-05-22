@@ -2,21 +2,21 @@
 title: '하드웨어 인벤토리 '
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager의 하드웨어 인벤토리를 소개합니다.
-ms.date: 02/22/2017
+ms.date: 05/08/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
 ms.assetid: 3969952e-9d05-49c9-82a2-e7e90ccef511
-author: aczechowski
+author: mestew
+ms.author: mstewart
 manager: dougeby
-ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 65060281c020615c9411f98c250222f2386002bd
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 212bafed34022f6f6620e21e87fee2870a8f869e
+ms.sourcegitcommit: 53f2380ac67025fb4a69fc1651edad15d98e0cdd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156443"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673354"
 ---
 # <a name="introduction-to-hardware-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager의 하드웨어 인벤토리 소개
 
@@ -25,10 +25,11 @@ ms.locfileid: "56156443"
 System Center Configuration Manager에서 하드웨어 인벤토리를 사용하여 조직의 클라이언트 디바이스 하드웨어 구성에 대한 정보를 수집할 수 있습니다. 하드웨어 인벤토리를 수집하려면 클라이언트 설정에서 **클라이언트에서 하드웨어 인벤토리 사용** 설정을 사용하도록 설정해야 합니다.  
 
  하드웨어 인벤토리를 사용하도록 설정하고 나면 클라이언트는 하드웨어 인벤토리 주기를 실행한 후 클라이언트 사이트의 관리 지점으로 정보를 보냅니다. 그러면 관리 지점이 인벤토리 정보를 Configuration Manager 사이트 서버에 전달하며 여기서 인벤토리 정보를 사이트 데이터베이스에 저장합니다. 하드웨어 인벤토리는 클라이언트 설정에서 지정하는 일정에 따라 클라이언트에서 실행됩니다.  
+## <a name="view-hardware-inventory"></a>하드웨어 인벤토리 보기 
 
  여러 가지 방법으로 Configuration Manager에서 수집하는 하드웨어 인벤토리 데이터를 볼 수 있습니다. 여기에는 다음이 포함됩니다.  
 
-- [특정 하드웨어 구성을 기반으로 하는 디바이스를 반환하는 쿼리를 만듭니다](../../../../core/servers/manage/queries-technical-reference.md).  
+- [특정 하드웨어 구성을 기반으로 하는 디바이스를 반환하는 쿼리를 만듭니다](../../../../core/servers/manage/introduction-to-queries.md).  
 
 - [특정 하드웨어 구성을 기반으로 하는 쿼리 기반 컬렉션을 만듭니다](../../../../core/clients/manage/collections/introduction-to-collections.md). 쿼리 기반 컬렉션 멤버 자격이 일정에 따라 자동으로 업데이트됩니다. 소프트웨어 배포를 포함하여 여러 작업에 대한 컬렉션을 사용할 수 있습니다. 을 참조하세요.  
 
@@ -46,8 +47,10 @@ System Center Configuration Manager에서 하드웨어 인벤토리를 사용하
 ## <a name="extending-configuration-manager-hardware-inventory"></a>Configuration Manager 하드웨어 인벤토리 확장  
  Configuration Manager의 기본 제공 하드웨어 인벤토리 외에도 다음 방법 중 하나를 사용하여 하드웨어 인벤토리를 확장하고 추가 정보를 수집할 수 있습니다.  
 
-- Configuration Manager 콘솔에서 하드웨어 인벤토리에 대한 인벤토리 클래스를 사용하거나 사용하지 않도록 설정하고 추가 및 제거할 수 있습니다.|  
+- Configuration Manager 콘솔에서 하드웨어 인벤토리에 대한 인벤토리 클래스를 사용하거나 사용하지 않도록 설정하고 추가 및 제거할 수 있습니다.  
 - NOIDMIF 파일을 사용하여 Configuration Manager에서 인벤토리에 포함할 수 없는 클라이언트 디바이스에 대한 정보를 수집합니다. 예를들어, 다음 레이블을 디바이스에만 존재 하는 디바이스 자산 번호 정보를 수집 하는 것이 좋습니다. NOIDMIF 인벤토리 클라이언트 디바이스에서 수집 된 자동으로 연결 됩니다.  
-- IDMIF 파일을 사용하여 Configuration Manager 클라이언트와 연결되지 않은 프로젝터, 복사기, 네트워크 프린터 등의 자산에 대한 정보를 수집합니다.  
+- IDMIF 파일을 사용하여 Configuration Manager 클라이언트와 연결되지 않은 프로젝터, 복사기, 네트워크 프린터 등의 자산에 대한 정보를 수집합니다. 
 
-  이러한 방법을 사용하여 Configuration Manager 하드웨어 인벤토리를 확장하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 하드웨어 인벤토리를 구성하는 방법](../../../../core/clients/manage/inventory/configure-hardware-inventory.md)을 참조하세요.  
+
+## <a name="next-steps"></a>다음 단계
+이러한 방법을 사용하여 Configuration Manager 하드웨어 인벤토리를 확장하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 하드웨어 인벤토리를 구성하는 방법](../../../../core/clients/manage/inventory/configure-hardware-inventory.md)을 참조하세요.  

@@ -7,16 +7,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
 ms.assetid: 1026d616-2a20-4fb2-8604-d331763937f8
-author: aczechowski
+author: mestew
+ms.author: mstewart
 manager: dougeby
-ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f378bb3bda5341e99eb06303d5fb5a8e13c8ac88
-ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
+ms.openlocfilehash: 4cba7c2bf782dce636117e71cb6982cd95ffb8ab
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58524067"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65500084"
 ---
 # <a name="hardware-inventory-for-linux-and-unix-in-configuration-manager"></a>Configuration Manager에서 Linux 및 UNIX에 대한 하드웨어 인벤토리
 

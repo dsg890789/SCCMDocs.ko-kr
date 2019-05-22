@@ -2,21 +2,21 @@
 title: 경계 그룹 구성
 titleSuffix: Configuration Manager
 description: 클라이언트가 사이트 시스템을 쉽게 찾을 수 있도록 경계 그룹을 사용하여 관련 네트워크 위치(경계)를 논리적으로 구성합니다.
-ms.date: 11/27/2018
+ms.date: 05/09/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 5db2926f-f03e-49c7-b44b-e89b1a5a6779
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1062cd5983c3eb0d1353b6387b7d9ee507df3b4
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 011f2cb69ec2de6070bc4f2266dbf73a0e1e7843
+ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56132642"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65498908"
 ---
 # <a name="configure-boundary-groups-for-configuration-manager"></a>Configuration Manager의 경계 그룹 구성
 
@@ -41,7 +41,7 @@ Configuration Manager에서 경계 그룹을 사용하여 관련 네트워크 �
     - 기본 설정 관리 지점  
 
         > [!Note]  
-        > 기본 관리 지점을 사용하는 경우에는 경계 그룹 구성 내가 아닌 계층 구조에 대해 이 옵션을 사용하도록 설정합니다. 자세한 내용은 [기본 관리 지점을 사용하도록 설정](#to-enable-use-of-preferred-management-points)을 참조하세요.  
+        > 기본 관리 지점을 사용하는 경우에는 경계 그룹 구성 내가 아닌 계층 구조에 대해 이 옵션을 사용하도록 설정합니다. 자세한 내용은 [기본 관리 지점을 사용하도록 설정](/sccm/core/servers/deploy/configure/boundary-group-procedures#bkmk_proc-prefer)을 참조하세요.  
 
 
 
@@ -185,13 +185,15 @@ Configuration Manager에서 경계 그룹을 사용하여 관련 네트워크 �
 
 ### <a name="bkmk_bgoptions"> </a> 피어 다운로드를 위한 경계 그룹 옵션
 
-<!--1356193--> 1806 버전부터 경계 그룹에는 사용자 환경에서 콘텐츠 배포를 보다 세밀하게 제어할 수 있는 다음과 같은 추가 설정이 포함됩니다.  
+<!--1356193-->
+1806 버전부터 경계 그룹에는 사용자 환경에서 콘텐츠 배포를 보다 세밀하게 제어할 수 있는 다음과 같은 추가 설정이 포함됩니다.  
 
 - [이 경계 그룹에서 피어 다운로드 허용](#bkmk_bgoptions1)  
 
 - [피어 다운로드 중에는 같은 서브넷 내의 피어만 사용](#bkmk_bgoptions2)  
 
-<!--1358749--> 1810 버전은 다음 옵션을 추가합니다.  
+<!--1358749-->
+1810 버전은 다음 옵션을 추가합니다.  
 
 - [동일한 서브넷을 사용한 피어보다 배포 지점 선호](#bkmk_bgoptions3)  
 
@@ -280,7 +282,8 @@ Configuration Manager에서 경계 그룹을 사용하여 관련 네트워크 �
 
 
 ## <a name="management-points"></a>관리 지점
-<!-- 1324594 --> 버전 1802부터 경계 그룹 간에 관리 지점에 대한 대체 관계를 구성합니다. 이 동작은 클라이언트에서 사용하는 관리 지점에 대한 제어를 강화합니다. 경계 그룹 속성의 **관계** 탭에 관리 지점에 대한 열이 있습니다. 새 대체 경계 그룹을 추가하는 경우 현재 관리 지점의 대체 시간은 항상 0입니다. 이 동작은 사이트 기본 경계 그룹의 **기본 동작**에서도 동일합니다.
+<!-- 1324594 -->
+1802 버전부터 경계 그룹 간의 관리 지점에 대한 대체 관계를 구성합니다. 이 동작은 클라이언트에서 사용하는 관리 지점에 대한 제어를 강화합니다. 경계 그룹 속성의 **관계** 탭에 관리 지점에 대한 열이 있습니다. 새 대체 경계 그룹을 추가하는 경우 현재 관리 지점의 대체 시간은 항상 0입니다. 이 동작은 사이트 기본 경계 그룹의 **기본 동작**에서도 동일합니다.
 
 이전에는, 보안 네트워크에 보호된 관리 지점이 있을 경우 일반적인 문제가 발생합니다. 기본 회사 네트워크의 클라이언트가 방화벽을 통과해서 이 보호된 관리 지점과 통신할 수 없는 경우에도 해당 지점을 포함하는 정책을 받습니다. 이 문제를 해결하려면 **대체 안 함** 옵션을 사용하여 클라이언트가 통신할 수 있는 관리 지점으로만 대체하도록 합니다.
 

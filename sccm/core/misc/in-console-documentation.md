@@ -10,12 +10,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e61eb676d7ec61a2e72cd911389e019c9f0cbd7a
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
+ms.openlocfilehash: 5959cb6af3fb7c433d02b21a8a8f8d99b991d8a6
+ms.sourcegitcommit: ab9f2a7fb7ea3a0c65808fce2975ab25a670281f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59802379"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65612568"
 ---
 <!-- 
 - Feature 1357546
@@ -88,6 +88,7 @@ ms.locfileid: "59802379"
 Configuration Manager 구성 요소 및 기능의 문제 해결을 지원하기 위한 안내 방식 연습입니다.
 
 - [PXE 부팅 문제 해결](https://support.microsoft.com/help/4468612)
+- [Configuration Manager에서 업데이트와 서비스 이해 및 문제 해결](https://support.microsoft.com/help/4490424)
 - [소프트웨어 업데이트 동기화 문제 해결](https://support.microsoft.com/help/10059)
 - [콘텐츠 배포 이해 및 문제 해결](https://support.microsoft.com/help/4482728)
 - [비즈니스용 Microsoft Store 통합 이해 및 문제 해결](https://support.microsoft.com/help/4010214)
@@ -96,14 +97,13 @@ Configuration Manager 구성 요소 및 기능의 문제 해결을 지원하기 
 
 ## <a name="new-and-updated-support-articles"></a>새로 제공되거나 업데이트된 지원 문서
 
-2019년 3월에 새로 제공되거나 업데이트된 지원 문서입니다.
+2019년 4월 7일부터 5월 13일에 새로 제공되거나 업데이트된 지원 문서입니다.
 
 - [KB 4488598: System Center Configuration Manager 현재 분기, 버전 1810의 업데이트 롤업 2](https://support.microsoft.com/help/4488598)
 - [KB 4494015: Windows 설치 프로그램 또는 현재 위치 업그레이드가 완료된 후 OSD 작업 순서가 계속되지 않습니다.](https://support.microsoft.com/help/4494015)
 - [KB 4495265: CMG를 타사 인증서가 있는 클라우드 DP로 사용하는 경우 WINHTTP_CALLBACK_STATUS_FLAG_CERT_CN_INVALID](https://support.microsoft.com/help/4495265)
-- [KB 4494799: 사전 프로비저닝 BitLocker가 Windows 10 버전 1511과 함께 사용되는 경우 이전 버전의 Windows가 "Windows 및 Configuration Manager 설정" 단계 이후에 시작되지 않습니다.](https://support.microsoft.com/help/4494799)
-- [KB 4494362: Configuration Manager 버전 1810으로 업데이트한 후 "PolicyTargetEvalNotify_iud 구성 요소에 대한 업데이트를 보낼 수 없습니다"가 반복적으로 Smsdbmon.log에 기록됩니다.](https://support.microsoft.com/help/4494362)
-- [KB 4494361: 2단계 인증을 사용하도록 설정한 경우 중앙 관리 사이트를 독립 실행형 기본 사이트에 연결하지 못합니다.](https://support.microsoft.com/help/4494361)
-- [KB 4493667: OSDResults는 Configuration Manager에서 UDI 작업 순서에 의해 설치된 애플리케이션을 표시하지 않습니다.](https://support.microsoft.com/help/4493667)
+- [KB 4498259: 업그레이드 준비 데이터가 Configuration Manager에서 계속 다운로드된다.](https://support.microsoft.com/help/4498259)
+- [KB 4040243: Configuration Manager에서 TLS 1.2를 사용하도록 설정하는 방법](https://support.microsoft.com/help/4040243)
+- [KB 4490644: Microsoft WSUS 및 Configuration Manager SUP 유지 관리에 대한 전체 가이드](https://support.microsoft.com/help/4490644)
 
 새로운 Configuration Manager 지원 문서의 Atom 또는 RSS 알림을 구독하려면 [지원 콘텐츠 업데이트](https://support.microsoft.com/help/4089498/)를 참조하고 **System Center Configuration Manager**를 선택하세요.  

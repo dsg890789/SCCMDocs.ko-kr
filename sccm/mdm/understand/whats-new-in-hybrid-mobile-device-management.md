@@ -2,7 +2,7 @@
 title: 하이브리드 MDM의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 디바이스 관리 기능에 대해 알아봅니다.
-ms.date: 04/18/2019
+ms.date: 05/20/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0251371b8a0e9fa41dc5008beffa87977c47d7c6
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: 73fe5e23cd23c874e56b0d71cb6988d815bcbc5c
+ms.sourcegitcommit: d1df13fc95a1f1540177c294555d9be26161b9cb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287060"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65974095"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 디바이스 관리의 새로운 기능
 
@@ -46,6 +46,25 @@ ms.locfileid: "62287060"
 |**Configuration Manager Technical Preview의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 Technical Preview 분기에서만 사용할 수 있습니다. 이러한 기능을 시험해보려면 기능 설명에 지정된 기술 미리 보기 버전을 설치해야 합니다. 자세한 내용은 [Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.|
 |**Configuration Manager(현재 분기)의 새로운 기능**| 이 범주 아래에 나열된 모든 기능은 지정된 버전의 Configuration Manager(현재 분기)에서만 사용할 수 있습니다. 하이브리드 배포에 이전 버전의 Configuration Manager를 사용하는 경우 기능 설명에 지정된 Configuration Manager(현재 분기) 버전으로 업그레이드합니다. 자세한 내용은 [Configuration Manager로 업그레이드](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager)를 참조하세요.|
 
+
+## <a name="may-2019"></a>2019 년 5 월
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+#### <a name="intune-policies-update-authentication-method-and-company-portal-app-installation"></a>Intune 정책 인증 방법 및 회사 포털 앱 설치를 업데이트합니다.
+
+<!-- 1927359 -->
+
+Apple 회사 장치 등록 방법 중 하나를 통해 설정 도우미를 통해 이미 등록 된 장치에서 앱 스토어에서 사용자가 수동으로 설치할 때 Intune 회사 포털을 지원 하지 않습니다. 이 변경은 등록 하는 동안 Apple 설정 도우미를 사용 하 여 인증 하는 경우에 관련이 있습니다. 다음 메서드를 통해 등록 된 iOS 장치를만 영향을 줍니다.  
+
+- Apple Configurator
+- Apple 비즈니스 관리자
+- Apple School Manager
+- Apple DEP (장치 등록 프로그램)
+
+사용자가 앱 스토어에서 회사 포털 앱을 설치 하 통해 이러한 장치를 등록 하려고 하는 경우 이러한 오류가 발생 합니다. 또한 합니다 **장치를 식별** 화면 회사 포털 앱에서 사용 되지 않는 현상이 됩니다.
+
+이미 등록 된 DEP 장치에서 회사 포털을 설치 하려면 앱 구성 정책 사용 하 여 관리 되는 앱으로 푸시하십시오. 이 프로세스에 대 한 자세한 내용은 참조 하세요. [Configuration Manager에서 앱 구성 정책 사용 하 여 iOS 앱에 설정을 적용할](/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies)합니다.
 
 
 ## <a name="april-2019"></a>2019 년 4 월
@@ -352,7 +371,7 @@ Windows 용 회사 포털 앱은 이제 Windows 작업 표시줄 및 시작 메�
 #### <a name="intune-app-protection-policies-and-microsoft-edge"></a>Intune 앱 보호 정책 및 Microsoft Edge
 
 <!--1818968,1818969-->  
-모바일 디바이스(iOS 및 Android)용 Microsoft Edge 브라우저에서는 이제 Microsoft Intune 앱 보호 정책을 지원합니다. Edge애플리케이션에서 회사 Azure Active Directory 계정으로 로그인하는 iOS 및 Android 장치의 사용자는 Intune에서 보호합니다. IOS 디바이스에서 **웹 콘텐츠에 대해 관리되는 브라우저 요구** 정책은 관리되는 경우 사용자가 Edge에서 링크를 열 수 있게 합니다.
+모바일 디바이스(iOS 및 Android)용 Microsoft Edge 브라우저에서는 이제 Microsoft Intune 앱 보호 정책을 지원합니다. Edge응용 프로그램에서 회사 Azure Active Directory 계정으로 로그인하는 iOS 및 Android 디바이스의 사용자는 Intune에서 보호합니다. IOS 디바이스에서 **웹 콘텐츠에 대해 관리되는 브라우저 요구** 정책은 관리되는 경우 사용자가 Edge에서 링크를 열 수 있게 합니다.
 
 
 
