@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 251a614aebce244edddfe362a5f7119ca9dd0c87
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 11ad5a0bef004b778ba431c9a2da30f51eafc443
+ms.sourcegitcommit: f531d0a622f220739710b2fe6644ea58d024064a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56132509"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65933286"
 ---
 # <a name="capabilities-in-technical-preview-1706-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1706의 기능
 
@@ -54,7 +54,8 @@ ms.locfileid: "56132509"
 -->
 
 ## <a name="improved-boundary-groups-for-software-update-points"></a>소프트웨어 업데이트 지점에 대한 향상된 경계 그룹
-<!-- 1324591 --> 이 릴리스에서는 소프트웨어 업데이트 지점이 경계 그룹과 작동하는 방식이 개선되었습니다. 다음은 새로운 대체 동작을 요약해서 설명합니다.
+<!-- 1324591 -->
+이 릴리스에서는 소프트웨어 업데이트 지점이 경계 그룹과 작동하는 방식이 개선되었습니다. 다음은 새로운 대체 동작을 요약해서 설명합니다.
 - 이제 소프트웨어 업데이트 지점에 대한 대체는 인접 경계 그룹으로의 대체에 대해 구성 가능한 시간(최소 시간 120분)을 사용합니다.
 
 - 대체 구성과 관계 없이, 클라이언트는 사용한 마지막 소프트웨어 업데이트 지점에 120분 이내에 도달하려고 합니다. 120분 내에 해당 서버에 도달하지 못하면 클라이언트는 사용 가능한 소프트웨어 업데이트 지점 풀을 확인하여 새 서버를 찾으려고 합니다.
@@ -76,7 +77,8 @@ ms.locfileid: "56132509"
 
 
 ## <a name="site-server-role-high-availability"></a>사이트 서버 역할 고가용성
-<!-- 1128774 --> 사이트 서버 역할에 대한 고가용성은 추가 기본 사이트 서버를 *수동* 모드에서 설치하기 위한 Configuration Manager 기반 솔루션입니다. 수동 모드 사이트 서버는 *활성* 모드의 기존의 기본 사이트 서버 외의 추가 서버입니다. 수동 모드 사이트 서버는 필요할 때 즉시 사용할 수 있습니다.
+<!-- 1128774 -->
+사이트 서버 역할에 대한 고가용성은 추가 기본 사이트 서버를 *수동* 모드에서 설치하기 위한 Configuration Manager 기반 솔루션입니다. 수동 모드 사이트 서버는 *활성* 모드의 기존의 기본 사이트 서버 외의 추가 서버입니다. 수동 모드 사이트 서버는 필요할 때 즉시 사용할 수 있습니다.
 
 수동 모드의 기본 사이트 서버:
 -   활성 사이트 서버와 동일한 사이트 데이터베이스를 사용합니다.
@@ -184,7 +186,8 @@ ms.locfileid: "56132509"
 
 
 ## <a name="include-trust-for-specific-files-and-folders-in-a-device-guard-policy"></a>특정 파일 및 폴더에 대한 트러스트를 Device Guard 정책에 포함
-<!-- 1324676 --> 이 릴리스에서는 [Device Guard](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager) 정책 관리에 기능이 추가되었습니다.
+<!-- 1324676 -->
+이 릴리스에서는 [Device Guard](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager) 정책 관리에 기능이 추가되었습니다.
 
 이제 Device Guard 정책에서 필요에 따라 폴더의 특정 파일에 대해 트러스트를 추가할 수 있습니다. 이를 통해 다음을 수행할 수 있습니다.
 
@@ -200,7 +203,8 @@ ms.locfileid: "56132509"
 
 
 ## <a name="hide-task-sequence-progress"></a>작업 순서 진행률 숨기기
-<!-- 1354291 --> 이 릴리스에서는 새 변수를 사용하여 최종 사용자에게 작업 순서 진행률이 표시되는 시기를 제어할 수 있습니다. 작업 순서에서 **작업 순서 변수 설정** 단계를 사용하여 작업 순서 진행률을 표시하거나 숨기도록 **TSDisableProgressUI** 변수의 값을 설정합니다. 한 작업 순서에서 작업 순서 변수 설정 단계를 여러 번 사용하여 변수 값을 변경할 수 있습니다. 이렇게 하면 작업 순서 진행률을 작업 순서의 여러 섹션에서 숨기거나 표시할 수 있습니다.
+<!-- 1354291 -->
+이 릴리스에서는 새 변수를 사용하여 최종 사용자에게 작업 순서 진행률이 표시되는 시기를 제어할 수 있습니다. 작업 순서에서 **작업 순서 변수 설정** 단계를 사용하여 작업 순서 진행률을 표시하거나 숨기도록 **TSDisableProgressUI** 변수의 값을 설정합니다. 한 작업 순서에서 작업 순서 변수 설정 단계를 여러 번 사용하여 변수 값을 변경할 수 있습니다. 이렇게 하면 작업 순서 진행률을 작업 순서의 여러 섹션에서 숨기거나 표시할 수 있습니다.
 
 #### <a name="to-hide-task-sequence-progress"></a>작업 순서 진행률을 숨기려면
 작업 순서 진행률을 숨기려면 작업 순서 편집기에서 [작업 순서 변수 설정](/sccm/osd/understand/task-sequence-steps#BKMK_SetTaskSequenceVariable) 단계를 사용하여 **TSDisableProgressUI** 변수를 **True**로 설정합니다.
@@ -209,7 +213,8 @@ ms.locfileid: "56132509"
 작업 순서 진행률을 표시하려면 작업 순서 편집기에서 [작업 순서 변수 설정](/sccm/osd/understand/task-sequence-steps#BKMK_SetTaskSequenceVariable) 단계를 사용하여 **TSDisableProgressUI** 변수를 **False**로 설정합니다.
 
 ## <a name="specify-a-different-content-location-for-install-content-and-uninstall-content"></a>설치 콘텐츠 및 제거 콘텐츠에 대해 다른 콘텐츠 위치 지정
-<!-- 1097546 --> 이제 Configuration Manager에서 앱에 대한 설치 파일을 포함하는 설치 위치를 지정합니다. 설치 위치를 지정하면 애플리케이션 콘텐츠에 대한 제거 위치로도 사용됩니다.
+<!-- 1097546 -->
+이제 Configuration Manager에서 앱에 대한 설치 파일을 포함하는 설치 위치를 지정합니다. 설치 위치를 지정하면 애플리케이션 콘텐츠에 대한 제거 위치로도 사용됩니다.
 사용자 의견에 따르면 배포된 애플리케이션을 제거하려고 하고 앱 콘텐츠가 클라이언트 컴퓨터에 없는 경우 클라이언트가 애플리케이션이 제거되기 전에 모든 앱 설치 파일을 다시 다운로드됩니다.
 이 문제를 해결하기 위해 이제 설치 콘텐츠 위치 및 선택적 제거 콘텐츠 위치를 둘 다 지정할 수 있습니다. 또한 제거 콘텐츠 위치를 지정하지 않도록 선택할 수도 있습니다.
 
@@ -226,7 +231,8 @@ ms.locfileid: "56132509"
 
 
 ## <a name="accessibility-improvements"></a>향상된 접근성 기능  
-<!--1253000 --> 이 미리 보기에서는 Configuration Manager 콘솔의 [접근성 기능](/sccm/core/understand/accessibility-features)에 일부 개선 사항을 도입합니다. 여기에는 다음이 포함됩니다.     
+<!--1253000 -->
+이 미리 보기에서는 Configuration Manager 콘솔의 [접근성 기능](/sccm/core/understand/accessibility-features)이 일부 개선되었습니다. 여기에는 다음이 포함됩니다.     
 
 **콘솔에서 이동하기 위한 새 바로 가기 키:**
 -   Ctrl+M - 주(가운데) 창에 포커스를 설정합니다.
@@ -246,7 +252,8 @@ ms.locfileid: "56132509"
 
 
 ## <a name="changes-to-the-azure-services-wizard-to-support-upgrade-readiness"></a>업그레이드 준비 상태를 지원하기 위한 Azure 서비스 마법사 변경
-<!-- 1353331 --> 이 릴리스부터 Azure 서비스 마법사를 사용하여 Configuration Manager에서 [업그레이드 준비 상태](/sccm/core/clients/manage/upgrade/upgrade-analytics)로의 연결을 구성할 수 있습니다. 이 마법사를 사용하면 관련 Azure 서비스에 대한 공통 마법사를 사용하여 커넥터의 구성을 간소화할 수 있습니다.   
+<!-- 1353331 -->
+이 릴리스부터 Azure 서비스 마법사를 사용하여 Configuration Manager에서 [업그레이드 준비 상태](/sccm/core/clients/manage/upgrade/upgrade-analytics)로의 연결을 구성할 수 있습니다. 이 마법사를 사용하면 관련 Azure 서비스에 대한 공통 마법사를 사용하여 커넥터의 구성을 간소화할 수 있습니다.   
 
 연결을 구성하는 방법이 변경되었으나 연결의 필수 구성 요소 및 업그레이드 준비 상태를 사용하는 방법은 동일합니다.   
 
@@ -384,7 +391,8 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반
 3. **스크립트 결과** 목록에서 클라이언트 디바이스에서 실행한 각 스크립트에 대한 결과를 확인합니다. 스크립트 종료 코드 **0**은 일반적으로 스크립트가 성공적으로 실행되었음을 나타냅니다.
 
 ## <a name="pxe-network-boot-support-for-ipv6"></a>IPv6에 대한 PXE 네트워크 부팅 지원
-<!-- 1269793 --> 이제 IPv6에 대한 PXE 네트워크 부팅 지원을 사용하도록 설정하여 작업 순서 운영 체제 배포를 시작할 수 있습니다. 이 설정을 사용하는 경우 PXE 사용 배포 지점은 IPv4 및 IPv6를 둘 다 지원합니다. 이 옵션은 WDS가 필요하지 않으며 WDS가 있으면 중지합니다.
+<!-- 1269793 -->
+이제 IPv6에 대한 PXE 네트워크 부팅 지원을 사용하도록 설정하여 작업 순서 운영 체제 배포를 시작할 수 있습니다. 이 설정을 사용하는 경우 PXE 사용 배포 지점은 IPv4 및 IPv6를 둘 다 지원합니다. 이 옵션은 WDS가 필요하지 않으며 WDS가 있으면 중지합니다.
 
 #### <a name="to-enable-pxe-boot-support-for-ipv6"></a>IPv6에 대한 PXE 부팅 지원을 사용하도록 설정하려면
 다음 절차에 따라 PXE에 대한 IPv6 지원 옵션을 사용하도록 설정합니다.
@@ -393,7 +401,8 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반
 2. **PXE** 탭에서 **IPv6 지원**을 선택하여 PXE에 대한 IPv6 지원을 사용하도록 설정합니다.
 
 ## <a name="manage-microsoft-surface-driver-updates"></a>Microsoft Surface 드라이버 업데이트 관리
-<!-- 1098490 --> 이제 Configuration Manager를 사용하여 Microsoft Surface 드라이버 업데이트를 관리할 수 있습니다.
+<!-- 1098490 -->
+이제 Configuration Manager를 사용하여 Microsoft Surface 드라이버 업데이트를 관리할 수 있습니다.
 
 ### <a name="prerequisites"></a>필수 구성 요소
 모든 소프트웨어 업데이트 지점에서 Windows Server 2016이 실행되어야 합니다.
@@ -405,7 +414,8 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반
 3. [동기화된 Microsoft Surface 드라이버를 배포](/sccm/sum/deploy-use/deploy-software-updates)합니다.
 
 ## <a name="configure-windows-update-for-business-deferral-policies"></a>비즈니스용 Windows 업데이트 지연 정책 구성
-<!-- 1290890 --> 이제 비즈니스용 Windows 업데이트에서 직접 관리되는 Windows 10 디바이스에 대한 Windows 10 기능 업데이트 또는 품질 업데이트의 지연 정책을 구성할 수 있습니다. **소프트웨어 라이브러리** > **Windows 10 서비스** 아래의 새 **비즈니스용 Windows 업데이트 정책** 노드에서 지연 정책을 관리할 수 있습니다.
+<!-- 1290890 -->
+이제 비즈니스용 Windows 업데이트에서 직접 관리되는 Windows 10 디바이스에 대한 Windows 10 기능 업데이트 또는 품질 업데이트의 지연 정책을 구성할 수 있습니다. **소프트웨어 라이브러리** > **Windows 10 서비스** 아래의 새 **비즈니스용 Windows 업데이트 정책** 노드에서 지연 정책을 관리할 수 있습니다.
 
 ### <a name="prerequisites"></a>필수 구성 요소
 비즈니스용 Windows 업데이트에서 관리되는 Windows 10 디바이스는 인터넷에 연결되어 있어야 합니다.
@@ -443,7 +453,8 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반
 
 
 ## <a name="support-for-entrust-certification-authorities"></a>Entrust 인증 기관에 대한 지원
-<!-- 1350740 --> Configuration Manager는 이제 Entrust 인증 기관을 지원합니다. 따라서 Microsoft Intune에 등록된 디바이스에 PFX 인증서를 전달할 수 있습니다.
+<!-- 1350740 -->
+Configuration Manager는 이제 Entrust 인증 기관을 지원합니다. 따라서 Microsoft Intune에 등록된 디바이스에 PFX 인증서를 전달할 수 있습니다.
 
 Configuration Manager에서 인증서 등록 지점 역할을 추가할 때 Entrust를 인증 기관으로 구성할 수 있습니다. PFX 인증서를 발급하는 새 인증서 프로필을 추가할 때는 Microsoft 또는 Entrust 인증 기관을 선택할 수 있습니다.
 
@@ -453,7 +464,7 @@ Configuration Manager에서 인증서 등록 지점 역할을 추가할 때 Entr
 ## <a name="cisco-ipsec-support-for-ios-vpn-profiles"></a>iOS용 VPN 프로필에 대한 Cisco(IPsec) 지원
 <!-- 1321367 -->
 
-연결 형식으로 Cisco(IPsec)를 사용하여 iOS VPN 프로필을 만들 수 있습니다. 자세한 내용은 [VPN 프로필 만들기](https://docs.microsoft.com/en-us/sccm/mdm/deploy-use/create-vpn-profiles#create-vpn-profiles)를 참조하세요.
+연결 형식으로 Cisco(IPsec)를 사용하여 iOS VPN 프로필을 만들 수 있습니다. 자세한 내용은 [VPN 프로필 만들기](https://docs.microsoft.com/sccm/mdm/deploy-use/create-vpn-profiles#create-vpn-profiles)를 참조하세요.
 
 
 ## <a name="new-windows-configuration-item-settings"></a>새 Windows 구성 항목 설정
@@ -494,7 +505,7 @@ Configuration Manager에서 인증서 등록 지점 역할을 추가할 때 Entr
 
 ## <a name="new-device-compliance-policy-rules"></a>새 디바이스 준수 정책 규칙
 
-* **필수 암호 유형** 사용자가 영숫자 암호를 만들어야 할지, 아니면 숫자 암호를 만들어야 할지를 지정합니다. 영숫자 암호의 경우 암호에 포함해야 할 각 문자 집합의 최소 수도 지정합니다. 4가지 문자 집합은 다음과 같습니다. 소문자, 대문자, 기호 및 숫자.
+* **필수 암호 유형** 사용자가 영숫자 암호를 만들어야 할지, 아니면 숫자 암호를 만들어야 할지를 지정합니다. 영숫자 암호의 경우 암호에 포함해야 할 각 문자 집합의 최소 수도 지정합니다. 4가지 문자 세트는 다음과 같습니다. 소문자, 대문자, 기호 및 숫자.
 
     **지원됨:**
     * Windows Phone 8+
@@ -533,7 +544,8 @@ Configuration Manager에서 인증서 등록 지점 역할을 추가할 때 Entr
 새로운 앱 보호 정책 설정을 사용하려면 [Configuration Manager에서 앱 보호 정책을 사용하여 앱 보호](https://docs.microsoft.com/sccm/mdm/deploy-use/protect-apps-using-mam-policies)를 참조하세요.
 
 ## <a name="android-and-ios-enrollment-restrictions"></a>Android 및 iOS 등록 제한
-<!-- 1290826 --> 이번 릴리스부터, 관리자는 이제 사용자가 하이브리드 환경에서 개인 Android 또는 iOS 디바이스를 등록할 수 있도록 지정할 수 있습니다. 이렇게 하면 등록된 디바이스를 미리 선언된 회사 소유 디바이스 또는 디바이스 등록 프로그램에 등록된 iOS 디바이스으로 제한할 수 있습니다.
+<!-- 1290826 -->
+이번 릴리스부터, 관리자는 이제 사용자가 하이브리드 환경에서 개인 Android 또는 iOS 디바이스를 등록할 수 었도록 지정할 수 있습니다. 이렇게 하면 등록된 디바이스를 미리 선언된 회사 소유 디바이스 또는 디바이스 등록 프로그램에 등록된 iOS 디바이스으로 제한할 수 있습니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 1. Configuration Manager 콘솔의 **관리 작업** 영역에서 **클라우드 서비스** > **Microsoft Intune 구독**으로 이동합니다.
@@ -563,7 +575,8 @@ DisallowCrossProfileCopyPaste을 true로 설정하면 Android for Work 개인 �
 4. **회사 프로필과 개인 프로필 간의 데이터 공유 허용**에 대한 값을 선택하고 마법사를 완료합니다.
 
 ## <a name="device-health-attestation-assessment-for-compliance-policies-for-conditional-access"></a>조건부 액세스의 준수 정책에 대한 디바이스 상태 증명 평가
-<!-- 1097546 --> 이 릴리스부터 회사 리소스에 대한 조건부 액세스를 위해 디바이스 상태 증명 상태를 규정 준수 정책 규칙으로 사용할 수 있습니다.
+<!-- 1097546 -->
+이 릴리스부터 회사 리소스에 대한 조건부 액세스를 위해 디바이스 상태 증명 상태를 준수 정책 규칙으로 사용할 수 있습니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 디바이스 상태 증명 규칙을 준수 정책 평가의 일부로 선택합니다.

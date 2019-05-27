@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffe97408d5de71c9ea67b07649d7b92ad77f0a57
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: a41f144909ba946d3c3bc2f00a1573cad2c9b850
+ms.sourcegitcommit: f531d0a622f220739710b2fe6644ea58d024064a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56143710"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65933330"
 ---
 # <a name="capabilities-in-technical-preview-1612-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1612의 기능
 
@@ -225,7 +225,7 @@ User Voice 피드백에 따라 콘솔 내 검색에 대한 다음과 같은 향�
 2.  **추가**를 클릭하여 다른 실행 파일 중 하나를 목록에 추가합니다(예: **Edge.exe**).
 3.  **확인**을 클릭하여 배포 유형 속성 대화 상자를 닫습니다.
 
-이제 사용자 또는 장치에 이 애플리케이션을 배포하고 추가한 실행 파일 중 하나가 실행되는 경우 애플리케이션이 실행 중이므로 설치에 실패했다고 알리는 소프트웨어 센터 대화 상자가 최종 사용자에게 표시됩니다.
+이제 사용자 또는 디바이스에 이 응용 프로그램을 배포하고 추가한 실행 파일 중 하나가 실행되는 경우 응용 프로그램이 실행 중이므로 설치에 실패했다고 알리는 소프트웨어 센터 대화 상자가 최종 사용자에게 표시됩니다.
 
 ## <a name="new-windows-hello-for-business-notification-for-end-users"></a>최종 사용자에 대한 새 비즈니스용 Windows Hello 알림
 
@@ -318,4 +318,4 @@ Azure 관리자 자격 증명이 필요하므로 Azure 관리자를 사용하여
 
 ## <a name="change-to-configuring-multi-factor-authentication-for-device-enrollment"></a>디바이스 등록에 대한 다단계 인증 구성 변경
 
-이제 Azure Portal에서 디바이스 등록에 MFA(다단계 인증)를 설정할 수 있으므로 Configuration Manager 콘솔에서 MFA 옵션이 제거되었습니다. 등록에 MFA를 설정하는 방법에 대한 자세한 내용은 [이 Microsoft Intune 항목](https://docs.microsoft.com/en-us/intune/deploy-use/multi-factor-authentication-azure-active-directory)을 참조하세요.
+이제 Azure Portal에서 디바이스 등록에 MFA(다단계 인증)를 설정할 수 있으므로 Configuration Manager 콘솔에서 MFA 옵션이 제거되었습니다. 등록에 MFA를 설정하는 방법에 대한 자세한 내용은 [이 Microsoft Intune 항목](https://docs.microsoft.com/intune/deploy-use/multi-factor-authentication-azure-active-directory)을 참조하세요.
