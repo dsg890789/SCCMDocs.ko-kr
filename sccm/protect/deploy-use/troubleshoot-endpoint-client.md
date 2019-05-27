@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b8bda1fd21ed3281142a717b768ff7d8c6ac3c3
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 3e0b8e6a522e367e17d6c13fad3896a6606d3e5c
+ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65500417"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66176078"
 ---
 # <a name="troubleshooting-windows-defender-or-endpoint-protection-client"></a>Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결
 
@@ -158,7 +158,7 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 
 ### <a name="step-7-contact-support"></a>7단계: 지원 사이트에 문의  
 
--   해당 단계로 문제가 해결되지 않으면 지원 서비스에 문의합니다. 자세한 내용은 [고객 지원](http://go.microsoft.com/fwlink/?LinkID=196174)(http://go.microsoft.com/fwlink/?LinkID=196174)을 참조합니다.  
+-   해당 단계로 문제가 해결되지 않으면 지원 서비스에 문의합니다. 자세한 내용은 [고객 지원](https://support.microsoft.com/contactus/)(을 참조합니다.  
 
 ##  <a name="starting-windows-defender-or-endpoint-protection-service"></a>Windows Defender 또는 Endpoint Protection 서비스 시작  
  **증상**  

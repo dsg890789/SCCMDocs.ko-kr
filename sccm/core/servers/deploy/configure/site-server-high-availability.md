@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9775bd47e91876a7651bb58fee50b2111f3b7ef1
-ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.openlocfilehash: 5738be3bd84d7698e7b67128e3aff178d2460e52
+ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083518"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66176918"
 ---
 # <a name="site-server-high-availability-in-configuration-manager"></a>Configuration Manager의 사이트 서버 고가용성 
 
@@ -26,10 +26,10 @@ ms.locfileid: "65083518"
 
 지금까지 작업 환경에 이러한 역할의 여러 인스턴스를 유지하여 Configuration Manager에서 대부분의 역할에 중복성을 추가할 수 있습니다. 사이트 서버 자체는 예외입니다. Configuration Manager 버전 1806부터 사이트 서버 역할에 대한 고가용성은  *수동* 모드에서 추가 사이트 서버를 설치하기 위한 Configuration Manager 기반 솔루션입니다. 버전 1810은 계층 구조 지원을 추가하므로, 중앙 관리 사이트 및 자식 기본 사이트도 수동 모드의 추가 사이트 서버를 가질 수 있습니다. 수동 모드의 사이트 서버는 Azure에서 온-프레미스 또는 클라우드 기반일 수 있습니다.
 
-이 기능은 다음과 같은 이점을 제공합니다. 
-- 사이트 서버 역할에 대한 중복성 및 고가용성  
+이 기능은 다음과 같은 이점을 제공합니다. 
+- 사이트 서버 역할에 대한 중복성 및 고가용성  
 - 사이트 서버의 하드웨어 또는 OS를 보다 쉽게 변경  
-- 사이트 서버를 Azure IaaS로 더 쉽게 이동  
+- 사이트 서버를 Azure IaaS로 더 쉽게 이동  
 
 수동 모드의 사이트 서버는 *활성* 모드의 기존의 사이트 서버 외의 추가 서버입니다. 수동 모드의 사이트 서버는 필요할 때 즉시 사용할 수 있습니다. Configuration Manager 서비스의 [고가용성](/sccm/core/servers/deploy/configure/high-availability-options)을 위해 전체 설계의 일부로 추가 사이트 서버를 포함합니다.  
 

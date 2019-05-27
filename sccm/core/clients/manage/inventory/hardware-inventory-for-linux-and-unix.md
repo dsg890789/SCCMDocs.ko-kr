@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4cba7c2bf782dce636117e71cb6982cd95ffb8ab
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 18de1d67ecc1dfa6d9c5fb87355c4fed04e2c4c4
+ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65500084"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66176747"
 ---
 # <a name="hardware-inventory-for-linux-and-unix-in-configuration-manager"></a>Configuration Manager에서 Linux 및 UNIX에 대한 하드웨어 인벤토리
 
@@ -25,7 +25,7 @@ ms.locfileid: "65500084"
 > [!Important]  
 > 버전 1902부터 Configuration Manager는 Linux 또는 UNIX 클라이언트를 지원하지 않습니다. 
 > 
-> 따라서 Linux 서버를 관리하려면 Microsoft Azure 관리를 고려해야 합니다. Azure 솔루션은 대부분의 경우 Linux용 종단 간 패치 관리를 포함하여 Configuration Manager 기능을 능가하는 광범위한 Linux 지원을 제공합니다.
+> 따라서 Linux 서버를 관리하려면 Microsoft Azure 관리를 고려해야 합니다. Azure 솔루션은 대부분의 경우 Linux용 엔드투엔드 패치 관리를 포함하여 Configuration Manager 기능을 능가하는 광범위한 Linux 지원을 제공합니다.
 
 Linux 및 UNIX용 Configuration Manager 클라이언트는 하드웨어 인벤토리를 지원합니다. 하드웨어 인벤토리를 수집하면 리소스 탐색기 또는 Configuration Manager 보고서에서 인벤토리 보기를 실행하고, 이러한 정보를 사용하여 다음과 같은 작업을 사용하도록 설정하는 컬렉션 및 쿼리를 만들 수 있습니다.  
 
@@ -39,7 +39,7 @@ Linux 및 UNIX 서버에 대한 하드웨어 인벤토리에서는 표준 기반
 
 누적 업데이트 1부터는 Linux 및 UNIX용 클라이언트에 **Open Group**의 오픈 소스 **omiserver** 버전 1.0.6이 사용됩니다. (누적 업데이트 1 이전 버전의 클라이언트에서는 **nanowbem** 이 CIM 서버로 사용되었습니다.)  
 
-CIM 서버는 Linux 및 UNIX용 클라이언트의 일부로 설치됩니다. Linux 및 UNIX용 클라이언트는 CIM 서버와 직접 통신하고 CIM 서버의 WS-MAN 인터페이스를 사용하지 않습니다. 클라이언트를 설치하면 CIM 서버의 WS-MAN 포트를 사용할 수 없습니다. Microsoft는 현재 OMI(개방형 관리 인프라) 프로젝트를 통해 오픈 소스로 제공되는 CIM 서버를 개발했습니다. OMI 프로젝트에 대한 자세한 내용은 [Open Group](https://go.microsoft.com/fwlink/p/?LinkId=262317) 웹 사이트를 참조하세요.  
+CIM 서버는 Linux 및 UNIX용 클라이언트의 일부로 설치됩니다. Linux 및 UNIX용 클라이언트는 CIM 서버와 직접 통신하고 CIM 서버의 WS-MAN 인터페이스를 사용하지 않습니다. 클라이언트를 설치하면 CIM 서버의 WS-MAN 포트를 사용할 수 없습니다. Microsoft는 현재 OMI(개방형 관리 인프라) 프로젝트를 통해 오픈 소스로 제공되는 CIM 서버를 개발했습니다. OMI 프로젝트에 대한 자세한 내용은 [Open Group](https://www.opengroup.org/) 웹 사이트를 참조하세요.  
 
 Linux 및 UNIX 서버의 하드웨어 인벤토리는 기존의 Win32 WMI 클래스 및 속성을 Linux 및 UNIX 서버의 해당 클래스 및 속성으로 매핑하여 작동합니다. 이러한 클래스 및 속성의 일대일 매핑을 통해 Linux 및 UNIX 하드웨어 인벤토리를 Configuration Manager와 통합할 수 있습니다. Linux 및 UNIX 서버의 인벤토리 데이터는 Configuration Manager 콘솔 및 보고서에 Windows 기반 컴퓨터의 인벤토리와 함께 표시됩니다. 이 동작은 유형이 다른 관리 환경을 일관되게 제공합니다.  
 

@@ -2,7 +2,7 @@
 title: 하이브리드 MDM의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 디바이스 관리 기능에 대해 알아봅니다.
-ms.date: 05/20/2019
+ms.date: 05/23/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73fe5e23cd23c874e56b0d71cb6988d815bcbc5c
-ms.sourcegitcommit: d1df13fc95a1f1540177c294555d9be26161b9cb
+ms.openlocfilehash: fc41388c1586fc73ce93127dd0e6492f587d18be
+ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65974095"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66176682"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 디바이스 관리의 새로운 기능
 
@@ -50,6 +50,21 @@ ms.locfileid: "65974095"
 ## <a name="may-2019"></a>2019 년 5 월
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+#### <a name="android-enterprise-app-management"></a>Android 엔터프라이즈 앱 관리
+
+<!-- 4459905 -->
+
+구성 하 고 Android 엔터프라이즈 관리를 사용 하기 쉽게 Intune 자동으로 추가 하는 다음 네 가지 일반적인 Android 엔터프라이즈 앱을 Intune 관리 콘솔에 관련:
+
+- [Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune): 완전히 관리 되는 Android 엔터프라이즈 시나리오에 사용 되는
+- [Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator): 2 단계 인증을 사용 하는 경우이 앱을 통해 계정에 로그인
+- [Intune 회사 포털](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal): 앱 보호 정책 (앱) 및 Android 엔터프라이즈 작업 프로필 시나리오 사용
+- [홈 화면을 관리 되는](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise): Android 엔터프라이즈 전용/키오스크 시나리오에 사용 되는
+
+이전에 설치 하는 동안 필요한를 수동으로 찾아서에서 이러한 앱을 승인 합니다 [관리 되는 Google Play 스토어](https://play.google.com/store/apps)합니다. 이 변경에 Android 엔터프라이즈 관리를 사용 하 여 빠르고 쉽게 수행할 수 있도록 하는 이러한 이전에 수동 단계를 제거 합니다.
+
+관리 되는 Google Play에 Intune 테 넌 트를 처음 연결 하면 Intune 앱 목록에 자동으로 추가 4 개의 앱이 표시 됩니다. 자세한 내용은 [Android for Work 등록 사용](/sccm/mdm/deploy-use/enroll-hybrid-android#enable-android-for-work-enrollment)합니다. 이미 테 넌 트 연결 하거나 이미 Android 엔터프라이즈를 사용 하 여 없는 경우 수행 해야 합니다. 이러한 4 개의 앱은 자동으로 월 2019 서비스 업데이트 후 7 일 안에 표시 됩니다.
 
 #### <a name="intune-policies-update-authentication-method-and-company-portal-app-installation"></a>Intune 정책 인증 방법 및 회사 포털 앱 설치를 업데이트합니다.
 
@@ -735,7 +750,23 @@ Windows 10 버전 1607 이상의 최종 사용자에게 Microsoft Store에 있�
 
 ## <a name="notices"></a>알림
 
-### <a name="plan-for-change-intune-supports-macos-1012-and-higher-in-december"></a>변경 계획: Intune은 12 월에 macOS 10.12 이상을 지원합니다 
+### <a name="update-your-android-company-portal-app-to-the-latest-version"></a>Android 회사 포털 앱을 최신 버전으로 업데이트
+
+<!-- 4536963 -->
+
+Intune Android 회사 포털 앱에 대 한 업데이트를 주기적으로 해제합니다. 2018 년 11 월에 Google의 FCM Firebase Cloud Messaging ()가 기존 알림 플랫폼에서 Google의 변경에 대비 하려면 백 엔드 스위치를 포함 하는 회사 포털 업데이트를 릴리스 했습니다. 경우 Google 해당 기존 알림 플랫폼을 사용 중지 하 고 FCM 이상 회사 포털 앱을 업데이트 해야 하는 사용자가 Google Play 스토어를 사용 하 여 통신 하려면 2018 년 11 월 릴리스 이동 합니다.
+
+#### <a name="how-does-this-change-affect-me"></a>이 변경 사항은 어떤 영향을 미치나요?
+
+데이터는 5.0.4269.0 이전 회사 포털 버전을 사용 하 여 장치에 있는 테 넌 트를 나타냅니다. 하는 경우이 버전 (또는 이상)의 회사 포털 앱이 설치 되지 않은 장치 관리자가 시작한 작업 수 예상 대로 작동 하지. 초기화, 암호 재설정에서 사용 가능 하며 필요한 앱 설치 및 인증서 등록이 됩니다.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>이러한 변경에 대비하려면 어떻게 해야 하나요?
+
+Google Play를 통해 업데이트 하려면 회사 포털 버전을 업데이트 하지 않은 Android 장치의 사용자에 게 요청 합니다. 사용자 되지 않은 유지 자동 업데이트는 회사 포털 앱을 하는 경우 기술 지원팀을 게 알립니다. Google의 FCM 플랫폼 및 변경 하는 방법에 대 한 자세한 내용은 참조 하십시오 [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/)합니다.
+
+
+### <a name="plan-for-change-intune-supports-macos-1012-and-higher-in-december"></a>변경 계획: Intune은 12 월에 macOS 10.12 이상을 지원합니다
+
 <!--2970975-->  
 
 Apple이 macOS 10.14를 출시하므로 2018년 12월부터 Intune은 macOS 10.12 이상을 지원합니다. 

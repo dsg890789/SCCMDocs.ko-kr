@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7949808110d058bc1511abd1053e583b7f452cfa
-ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.openlocfilehash: 5b9f4f95916a2d547f89cab7dac838b7fe68fb30
+ms.sourcegitcommit: f531d0a622f220739710b2fe6644ea58d024064a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083571"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65933455"
 ---
 # <a name="accounts-used-in-configuration-manager"></a>Configuration Manager에서 사용되는 계정
 
@@ -526,7 +526,7 @@ Configuration Manager 설치 프로그램은 이 계정을 [SMS Admins](#sms-adm
 > [!NOTE]  
 >  원본 사이트 계정 및 [원본 사이트 데이터베이스 계정](#source-site-database-account)은 모두 Configuration Manager 콘솔의 **관리** 작업 영역 **계정** 노드에서 **마이그레이션 관리자**로 식별됩니다.  
 
- 자세한 내용은 [계층 구조 간에 데이터 마이그레이션](https://docs.microsoft.com/en-us/sccm/core/migration/migrate-data-between-hierarchies)을 참조하세요.
+ 자세한 내용은 [계층 구조 간에 데이터 마이그레이션](https://docs.microsoft.com/sccm/core/migration/migrate-data-between-hierarchies)을 참조하세요.
 
 
 ### <a name="source-site-database-account"></a>원본 사이트 데이터베이스 계정  
@@ -542,7 +542,7 @@ Configuration Manager 설치 프로그램은 이 계정을 [SMS Admins](#sms-adm
 > [!NOTE]  
 >  원본 사이트 계정 및 [원본 사이트 데이터베이스 계정](#source-site-database-account)은 모두 Configuration Manager 콘솔의 **관리** 작업 영역 **계정** 노드에서 **마이그레이션 관리자**로 식별됩니다.  
 
- 자세한 내용은 [계층 구조 간에 데이터 마이그레이션](https://docs.microsoft.com/en-us/sccm/core/migration/migrate-data-between-hierarchies)을 참조하세요.
+ 자세한 내용은 [계층 구조 간에 데이터 마이그레이션](https://docs.microsoft.com/sccm/core/migration/migrate-data-between-hierarchies)을 참조하세요.
 
 
 ### <a name="task-sequence-domain-join-account"></a>작업 순서 도메인 조인 계정 

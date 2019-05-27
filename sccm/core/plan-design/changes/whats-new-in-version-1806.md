@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 301b7de8d991b7e272aa57e6d87e912d6c3df210
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 03368d543b539b018ba581277cb0ba7e6e8cb251
+ms.sourcegitcommit: f531d0a622f220739710b2fe6644ea58d024064a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65495395"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65933502"
 ---
 # <a name="whats-new-in-version-1806-of-configuration-manager-current-branch"></a>Configuration Manager 1806 버전의 새로운 기능
 
@@ -308,7 +308,7 @@ Configuration Manager는 이제 새 Windows 10 앱 패키지(.msix) 및 앱 번�
 
 ### <a name="uninstall-application-on-approval-revocation"></a>승인 취소 시 애플리케이션 제거
 <!--1357891-->
-애플리케이션 승인 취소 시의 동작이 변경되었습니다. 이제 응용 프로그램에 대한 요청을 거부하면 클라이언트가 사용자 디바이스에서 응용 프로그램을 제거합니다. 이를 위해서는 [선택적 기능](https://docs.microsoft.com/en-us/sccm/core/servers/manage/install-in-console-updates#bkmk_options)인 **디바이스당 사용자에 대한 응용 프로그램 요청 승인**을 사용하도록 설정해야 합니다. 
+애플리케이션 승인 취소 시의 동작이 변경되었습니다. 이제 응용 프로그램에 대한 요청을 거부하면 클라이언트가 사용자 디바이스에서 응용 프로그램을 제거합니다. 이를 위해서는 [선택적 기능](https://docs.microsoft.com/sccm/core/servers/manage/install-in-console-updates#bkmk_options)인 **디바이스당 사용자에 대한 응용 프로그램 요청 승인**을 사용하도록 설정해야 합니다. 
 
 자세한 내용은 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications#bkmk_approval)를 참조하세요.
 

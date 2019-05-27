@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0815a974f3b1f29f664a2948eed33de24c6ecff3
-ms.sourcegitcommit: 9aebc20b25cdef0af908918ccfd791f3264a5d94
+ms.openlocfilehash: bbc042975840e5b4e840928f01257785f4859dd4
+ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "56755298"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66176834"
 ---
 # <a name="upgrade-windows-10-for-co-management"></a>공동 관리를 위해 Windows 10 업그레이드
 
@@ -52,7 +52,7 @@ Windows 10 버전 1709 이상에서는 향상된 다른 플랫폼 기능 외에 
 
 ## <a name="case-studies"></a>사례 연구
 
-Microsoft IT는 Microsoft의 96,000명 분산 사용자에게 Windows 10을 배포했습니다. 이 배포에는 원격 사용자와 회사 네트워크의 사용자가 모두 포함되었습니다. 이 배포는 9주 이내에 완료되었습니다. Microsoft IT의 경험에 대한 자세한 내용은 [Microsoft에서 현재 위치 업그레이드로 Windows 10 배포](https://www.microsoft.com/download/details.aspx?id=50377)를 참조하세요.  
+Microsoft IT는 Microsoft의 96,000명 분산 사용자에게 Windows 10을 배포했습니다. 이 배포에는 원격 사용자와 회사 네트워크의 사용자가 모두 포함되었습니다. 이 배포는 9주 이내에 완료되었습니다. Microsoft IT의 경험에 대한 자세한 내용은 [Microsoft에서 현재 위치 업그레이드로 Windows 10 배포](https://www.microsoft.com/itshowcase/deploying-windows-10-at-microsoft-as-an-in-place-upgrade)를 참조하세요.  
 
 유럽의 한 대형 소프트웨어 제조업체는 얼리어답터 그룹을 성공적으로 사용합니다. 초기 테스트와 그룹 파일럿 실행 후 약 2,000명의 직원이 첫 번째 업데이트, 업그레이드 및 소프트웨어를 받습니다. 이 그룹에는 IT 직원과 옵트인 지원자가 포함됩니다. 사용자와의 이러한 수준의 참여를 통해 테스트할 때 신뢰 수준을 향상하고 대규모 출시를 시작할 때 신뢰도도 향상합니다.
 

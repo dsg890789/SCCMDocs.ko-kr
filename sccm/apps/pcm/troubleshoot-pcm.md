@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e586990d049119c3cb00a61c56a1b84763104309
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 6e253d731c5c5cefa6bc13b04f40ab18855af4b8
+ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56137901"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66176892"
 ---
 # <a name="troubleshoot-package-conversion-manager"></a>Package Conversion Manager 문제 해결
 
@@ -38,7 +38,7 @@ SMS 공급자가 제대로 작동하지 않으면 Package Conversion Manager를 
 
 ## <a name="package-readiness"></a>패키지 준비
 
-패키지를 애플리케이션으로 변환하기 전에 Package Conversion Manager  **분석** 기능을 사용하여 패키지를 분석합니다. 분석 후 Configuration Manager 콘솔의 **패키지** 노드에 **준비** 열을 추가합니다. 패키지 목록에는 분석된 패키지의 준비 상태가 다음 중 하나로 표시됩니다.
+패키지를 애플리케이션으로 변환하기 전에 Package Conversion Manager **분석** 기능을 사용하여 패키지를 분석합니다. 분석 후 Configuration Manager 콘솔의 **패키지** 노드에 **준비** 열을 추가합니다. 패키지 목록에는 분석된 패키지의 준비 상태가 다음 중 하나로 표시됩니다.
 
  - **자동**: **변환** 기능을 사용하여 패키지를 바로 변환할 수 있습니다.      
 
@@ -47,7 +47,7 @@ SMS 공급자가 제대로 작동하지 않으면 Package Conversion Manager를 
 
  - **수동**: **수정 및 변환** 기능을 사용하여 패키지를 변환하려면 먼저 패키지에 일부 추가 또는 변경이 있어야 합니다.  
 
- - **해당 없음**: 패키지가 변환에 적합하지 않습니다. 이러한 패키지의 경우 문제를 해결하거나 계속해서 패키지로 배포할 수 있습니다.  
+ - **적용할 수 없음**: 패키지가 변환에 적합하지 않습니다. 이러한 패키지의 경우 문제를 해결하거나 계속해서 패키지로 배포할 수 있습니다.  
 
  - **오류**: 패키지에 오류가 있습니다. 분석하고 변환하려면 먼저 수동으로 이러한 오류를 수정합니다.  
 

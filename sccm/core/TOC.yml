@@ -720,7 +720,7 @@
           href: clients/manage/collections/manage-collections.md
         - name: 유지 관리 기간을 사용하는 방법
           href: clients/manage/collections/use-maintenance-windows.md
-        - name: 컬렉션으로 디바이스를 자동 분류하는 방법
+        - name: 디바이스를 컬렉션으로 자동 분류하는 방법
           href: clients/manage/collections/automatically-categorize-devices-into-collections.md
         - name: 컬렉션에 대한 보안 및 개인 정보
           href: clients/manage/collections/security-and-privacy-for-collections.md

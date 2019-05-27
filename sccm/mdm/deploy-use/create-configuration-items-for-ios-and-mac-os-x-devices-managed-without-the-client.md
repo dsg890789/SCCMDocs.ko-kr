@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 690aefeac875e3c3f39d5801bdb33d69ccecb45e
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 1d511df5dc4b6e29a86d4eabacec9037ee204ecc
+ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56135823"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66176739"
 ---
 # <a name="how-to-create-configuration-items-for-ios-and-mac-os-x-devices-managed-with-intune"></a>Intune으로 관리되는 iOS 및 Mac OS X 디바이스에 대한 구성 항목을 만드는 방법
 System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용하여 Configuration Manager에서 온-프레미스로 관리되거나 Microsoft Intune에 등록된 iOS 및 Mac OS X 디바이스에 대한 설정을 관리할 수 있습니다.  
@@ -92,7 +92,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
 |**잠겨 있는 동안 음성 도우미 허용**|디바이스가 잠겨 있을 때 Siri 등의 음성 도우미 앱을 사용할 수 있습니다.|  
 |**화면 캡처**|디바이스 디스플레이의 스크린샷을 찍을 수 있습니다.|  
 |**영상 채팅 클라이언트**|Facetime과 같은 화상 채팅 앱을 사용할 수 있습니다.|  
-|**다중 접속 게임**|인터넷에서 다른 플레이어와 함께 게임을 플레이할 수 있습니다.|  
+|**다중 접속 게임**|인터넷에서 다른 플레이어를 사용 하 여 게임을 플레이할 수 있습니다.|  
 |**잠겨 있는 동안 개인 전자지갑 소프트웨어 허용**|Passbook과 같은 개인 전자지갑 소프트웨어를 사용할 수 있습니다.|  
 |**진단 데이터 전송**|앱 로그 파일을 전송할 수 있습니다.|  
 |**알림 센터 알림**|사용자에게 잠금 화면에서 알림 보기에 대한 액세스를 허용합니다.|
@@ -116,8 +116,8 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
 |**자동 완성 키보드**(감독 모드인 경우에만)|사용자가 입력할 가능성이 있는 단어를 제안하는 자동 완성 키보드를 사용할 수 있습니다.|
 |**키보드 맞춤법 검사**(감독 모드인 경우에만)|디바이스 맞춤법 검사기를 사용할 수 있습니다.|
 |**알림 설정 수정**(감독 모드인 경우에만)|사용자가 디바이스 알림 설정을 변경할 수 있습니다.|
-|**Spotlight 검색에서 인터넷 검색 결과 반환**(감독 모드인 경우에만)|Spotlight 검색을 통해 인터넷에 연결하여 더 자세한 결과를 제공할 수 있습니다.|
-|**Siri를 사용하여 인터넷에서 사용자 생성 콘텐츠 쿼리**(감독 모드인 경우에만)|Siri가 질문에 대답할 수 있는 웹 사이트에 액세스할 수 있습니다.|
+|**스포트라이트 검색에서 인터넷 검색 결과 반환할** (감독 모드인 경우에)|Spotlight 검색을 결과 제공 하려면 인터넷에 연결할 수 있습니다.|
+|**Siri가 인터넷에서 사용자 생성 콘텐츠 쿼리를 사용 하 여** (감독 모드인 경우에)|Siri가 질문에 대답할 수 있는 웹 사이트에 액세스할 수 있습니다.|
 
   
 ###  <a name="store"></a>스토어  
@@ -138,7 +138,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
   
 |설정 이름|세부 정보|  
 |------------------|-------------|  
-|**기본 브라우저**|사용자가 기본 인터넷 브라우저를 변경할 수 있습니다.|  
+|**기본 브라우저**|사용자는 기본 인터넷 브라우저를 변경할 수 있습니다.|  
 |**자동 채우기**|사용자가 브라우저에서 자동 완성 설정을 변경할 수 있습니다.|  
 |**액티브 스크립팅**|브라우저에서 ActiveX 스크립트와 같은 스크립트를 실행할 수 있습니다.|  
 |**팝업 차단**|브라우저 팝업 차단을 사용하거나 사용하지 않도록 설정합니다.|  
