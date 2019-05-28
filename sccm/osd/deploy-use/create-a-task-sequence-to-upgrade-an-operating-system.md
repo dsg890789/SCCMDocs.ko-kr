@@ -2,7 +2,7 @@
 title: OS 업그레이드 작업 순서 만들기
 titleSuffix: Configuration Manager
 description: 작업 순서를 사용하여 자동으로 Windows 7 이상에서 Windows 10으로 업그레이드
-ms.date: 07/30/2018
+ms.date: 05/21/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc20a7e9be271bde8a5cd6464e2cebdf1ee9bad9
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: b1015573d62bdbbd317b9f787071e7725e5d4362
+ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56138605"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66176126"
 ---
 # <a name="create-a-task-sequence-to-upgrade-an-os-in-configuration-manager"></a>Configuration Manager에서 OS를 업그레이드하는 작업 순서 만들기
 
@@ -64,16 +64,16 @@ Configuration Manager에서 작업 순서를 사용하여 대상 컴퓨터의 OS
 
 5.  **Windows 운영 체제 업그레이드** 페이지에서 다음 설정을 지정한 다음, **다음**을 클릭합니다.  
 
-    -   **업그레이드 패키지**:  OS 업그레이드 원본 파일이 포함된 업그레이드 패키지를 지정합니다. **속성** 창에서 해당 정보를 확인하여 올바른 업그레이드 패키지를 선택했는지 알아봅니다. 자세한 내용은 [OS 업그레이드 패키지 관리](/sccm/osd/get-started/manage-operating-system-upgrade-packages)를 참조하세요.  
+    -   **업그레이드 패키지**: OS 업그레이드 원본 파일이 포함된 업그레이드 패키지를 지정합니다. **속성** 창에서 해당 정보를 확인하여 올바른 업그레이드 패키지를 선택했는지 알아봅니다. 자세한 내용은 [OS 업그레이드 패키지 관리](/sccm/osd/get-started/manage-operating-system-upgrade-packages)를 참조하세요.  
 
     -   **버전 인덱스**: 패키지에서 사용할 수 있는 OS 버전 인덱스가 여러 개 있는 경우 원하는 버전 인덱스를 선택합니다. 기본적으로 마법사는 첫 번째 인덱스를 선택합니다.  
 
-    -   **제품 키**: 설치할 OS의 Windows 제품 키를 지정합니다. 인코딩된 볼륨 라이선스 키 또는 표준 제품 키를 지정하세요. 표준 제품 키를 사용하는 경우 5자로 이루어진 각 그룹을 대시(-)로 구분 합니다. 예: *XXXXX-XXXXX-XXXXX-XXXXX-XXXXX*. 볼륨 라이선스 버전용 업그레이드의 경우에는 제품 키가 필요하지 않을 수 있습니다.  
+    -   **제품 키**: 설치할 OS의 Windows 제품 키를 지정합니다. 인코딩된 볼륨 라이선스 키 또는 표준 제품 키를 지정하세요. 표준 제품 키를 사용하는 경우 5자로 이루어진 각 그룹을 대시(-)로 구분 합니다. 예: *XXXXX-XXXXX-XXXXX-XXXXX-XXXXX* 볼륨 라이선스 버전용 업그레이드의 경우에는 제품 키가 필요하지 않을 수 있습니다.  
 
         > [!Note]  
         > 이 제품 키는 MAK(복수 정품 인증 키) 또는 GVLK(일반 볼륨 라이선스 키)일 수 있습니다. GVLK는 또한 KMS(키 관리 서비스) 클라이언트 설정 키라고도 합니다. 자세한 내용은 [볼륨 활성화 계획](https://docs.microsoft.com/windows/deployment/volume-activation/plan-for-volume-activation-client)을 참조하세요. KMS 클라이언트 설정 키의 목록은 Windows Server 정품 인증 가이드의 [부록 A](https://docs.microsoft.com/windows-server/get-started/kmsclientkeys)를 참조하세요. 
 
-    -   **해제 가능한 호환성 메시지 무시**: Windows Server 2016으로 업그레이드할 때 이 설정을 선택합니다. 이 설정을 선택하지 않으면 Windows 설치 프로그램이 사용자가 Windows 앱 호환성 대화 상자에서 **확인**을 클릭할 때까지 대기하므로 작업 순서가 완료되지 않습니다.   
+    -   **무시할 수 있는 호환성 메시지 모두 무시**: Windows Server 2016으로 업그레이드하는 중인 경우 이 설정을 선택합니다. 이 설정을 선택하지 않으면 Windows 설치 프로그램이 사용자가 Windows 앱 호환성 대화 상자에서 **확인**을 클릭할 때까지 대기하므로 작업 순서가 완료되지 않습니다.   
 
 7.  **업데이트 포함** 페이지에서 모든 소프트웨어 업데이트를 설치해야 하는지 아니면 소프트웨어 업데이트가 필요하지 않은지를 지정합니다. **다음**을 클릭합니다. 소프트웨어 업데이트를 설치하도록 지정하면 Configuration Manager에서 대상 컴퓨터가 속해 있는 컬렉션을 대상으로 하는 해당 업데이트만을 설치합니다.  
 
@@ -93,7 +93,8 @@ Configuration Manager에서 작업 순서를 사용하여 대상 컴퓨터의 OS
 
 
 ## <a name="configure-pre-cache-content"></a>사전 캐시 콘텐츠 구성
-<!--1021244--> 작업 순서의 사용 가능한 배포에 대해 사전 캐시 기능을 사용하면 사용자가 작업 순서를 설치하기 전에 클라이언트에서 관련 OS 업그레이드 패키지 콘텐츠를 다운로드할 수 있습니다.  
+<!--1021244-->
+작업 순서의 사용 가능한 배포에 대해 사전 캐시 기능을 사용하면 사용자가 작업 순서를 설치하기 전에 클라이언트에서 관련 OS 업그레이드 패키지 콘텐츠를 다운로드할 수 있습니다.  
 
 > [!Note]  
 > Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  
@@ -144,17 +145,17 @@ Configuration Manager에서 작업 순서를 사용하여 대상 컴퓨터의 OS
 
 1802 버전부터 Windows 10 내부 업그레이드의 기본 작업 순서 템플릿에 업그레이드 프로세스 전에 추가할 권장 작업이 있는 추가 그룹이 포함되어 있습니다. **업그레이드 준비** 그룹의 이러한 작업은 디바이스를 Windows 10으로 성공적으로 업그레이드한 많은 고객들에게 공통적으로 적용됩니다. 1802 이전 버전의 사이트에서는 이러한 동작을 **업그레이드 준비** 그룹의 작업 순서에 수동으로 추가합니다.  
 
-- **배터리 확인**: 컴퓨터가 배터리를 사용하는지, 전원에 연결되어 있는지 확인하려면 이 그룹에 단계를 추가합니다. 이 작업에서 배터리 확인을 수행하려면 사용자 지정 스크립트 또는 유틸리티가 필요합니다.  
+- **배터리 확인**: 컴퓨터에서 배터리를 사용하는지 또는 유선 전원을 사용하는지를 확인하려면 이 그룹의 단계를 추가합니다. 이 작업에서 배터리 확인을 수행하려면 사용자 지정 스크립트 또는 유틸리티가 필요합니다. 예를 들어, WbemTest를 사용하여 `root\cimv2` 네임스페이스에 연결합니다. 연결한 후에는 `Select Batterystatus From Win32_Battery where batterystatus != 2` 쿼리를 실행합니다. 결과를 반환하지 않는 경우, 디바이스가 배터리로 작동합니다. 그렇지 않으면, 디바이스가 전원에 연결된 것입니다.  
 
-- **네트워크/유선 연결 확인**: 컴퓨터가 네트워크에 연결되어 있고 무선 연결을 사용하지 않는지 여부를 확인하려면 이 그룹에 단계를 추가합니다. 이 작업에서 배터리 확인을 수행하려면 사용자 지정 스크립트 또는 유틸리티가 필요합니다.  
+- **네트워크/유선 연결 확인**: 컴퓨터가 네트워크에 연결되어 있고 무선 연결을 사용하고 있지 않은지 확인하려면 이 그룹의 단계를 추가합니다. 이 작업에서 배터리 확인을 수행하려면 사용자 지정 스크립트 또는 유틸리티가 필요합니다.  
 
-- **호환되지 않는 애플리케이션 제거**: 이 Windows 10 버전과 호환되지 않는 애플리케이션을 모두 제거하려면 이 그룹에 단계를 추가합니다. 애플리케이션을 제거하는 방법은 다양합니다.  
+- **호환되지 않는 애플리케이션 제거**: 이 Windows 10 버전과 호환되지 않는 애플리케이션을 제거하려면 이 그룹의 단계를 추가합니다. 애플리케이션을 제거하는 방법은 다양합니다.  
 
     - 애플리케이션이 Windows Installer를 사용하는 경우 애플리케이션의 Windows Installer 배포 유형 속성에 있는 **프로그램** 탭의 **제거 프로그램** 명령줄을 복사합니다. 그런 다음, 제거 프로그램 명령줄을 사용하여 이 그룹의 **명령줄 실행** 단계를 추가합니다. 예: </br>`msiexec /x {150031D8-1234-4BA8-9F52-D6E5190D1CBA} /q`</br>  
 
-- **호환되지 않는 드라이버 제거**: 이 Windows 10 버전과 호환되지 않는 드라이버를 모두 제거하려면 이 그룹에 단계를 추가합니다.  
+- **호환되지 않는 드라이버 제거**: 이 Windows 10 버전과 호환되지 않는 드라이버를 제거하려면 이 그룹의 단계를 추가합니다.  
 
-- **타사 보안 제거/일시 중단**: 바이러스 백신 소프트웨어와 같은 타사 보안 프로그램을 제거하거나 일시 중단하려면 이 그룹에 단계를 추가합니다.  
+- **제거/일시 중단**: 바이러스 백신과 같은 타사 보안 프로그램을 제거하거나 일시 중단하려면 이 그룹의 단계를 추가합니다.  
 
    - 타사 디스크 암호화 프로그램을 사용하는 경우 `/ReflectDrivers` [명령줄 옵션](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#23)을 사용하여 Windows 설치 프로그램에 해당 암호화 드라이버를 제공합니다. 이 그룹의 작업 순서에 [작업 순서 변수 설정](/sccm/osd/understand/task-sequence-steps#BKMK_SetTaskSequenceVariable) 단계를 추가합니다. 작업 순서 변수를 **OSDSetupAdditionalUpgradeOptions**로 설정합니다. 드라이버 경로를 사용하여 값을 `/ReflectDrivers`로 설정합니다. 이 [작업 순서 변수](/sccm/osd/understand/task-sequence-variables#OSDSetupAdditionalUpgradeOptions)는 작업 순서에서 사용되는 Windows 설치 명령줄을 추가합니다. 이 프로세스에 대한 추가 지침은 소프트웨어 공급업체에 문의하세요.  
 
@@ -168,7 +169,7 @@ Configuration Manager에서 작업 순서를 사용하여 대상 컴퓨터의 OS
 -   해당 드라이버 패키지를 동적으로 다운로드하려면 각 드라이버 패키지에 대해 적합한 하드웨어 종류를 검색하는 조건을 포함하는 두 가지 **패키지 콘텐츠 다운로드** 단계를 사용합니다. 같은 변수를 사용하도록 각 **패키지 콘텐츠 다운로드** 단계를 구성합니다. 그런 다음 **운영 체제 업그레이드** 단계의 드라이버 섹션에서 **준비된 콘텐츠** 값에 해당 변수를 사용합니다.  
 
     > [!NOTE]  
-    > 둘 이상의 패키지가 있는 경우 Configuration Manager에서 변수 이름에 숫자 접미사를 추가합니다. 예를 들어 사용자 지정 변수로 `%mycontent%`를 지정하는 경우 클라이언트는 이 위치에 참조된 모든 콘텐츠를 저장합니다. **운영 체제 업그레이드**와 같은 하위 시퀀스 단계에서 변수를 참조하는 경우 숫자 접미사가 있는 변수를 사용합니다. 이 예제의 `%mycontent01%` 또는 `%mycontent02%`에서 숫자는 **패키지 콘텐츠 다운로드** 단계에서 이 특정 콘텐츠를 나열하는 순서에 해당합니다.  
+    > Configuration Manager에서 변수 이름에 숫자 접미사를 추가합니다. 예를 들어 사용자 지정 변수로 `%mycontent%`를 지정하는 경우 클라이언트는 이 위치에 참조된 모든 콘텐츠를 저장합니다. **운영 체제 업그레이드**와 같은 하위 시퀀스 단계에서 변수를 참조하는 경우 숫자 접미사가 있는 변수를 사용합니다. 이 예제의 `%mycontent01%` 또는 `%mycontent02%`에서 숫자는 **패키지 콘텐츠 다운로드** 단계에서 이 특정 콘텐츠를 나열하는 순서에 해당합니다.  
 
 
 
@@ -181,13 +182,13 @@ Configuration Manager에서 작업 순서를 사용하여 대상 컴퓨터의 OS
 
 1802 버전부터 Windows 10 내부 업그레이드의 기본 작업 순서 템플릿에 업그레이드 프로세스 후에 추가할 권장 작업이 있는 추가 그룹이 포함되어 있습니다. **사후 처리** 그룹의 이러한 작업은 디바이스를 Windows 10으로 성공적으로 업그레이드한 많은 고객들에게 공통적으로 적용됩니다. 1802 이전 버전의 사이트에서는 이러한 동작을 **사후 처리** 그룹의 작업 순서에 수동으로 추가합니다.  
 
-- **설치 기반 드라이버 적용**: 패키지에서 설치 기반 드라이버(.exe)를 설치하려면 이 그룹에 단계를 추가합니다.  
+- **설치 기반 드라이버 적용**: 패키지에서 설치 기반 드라이버(.exe)를 설치하려면 이 그룹의 단계를 추가합니다.  
 
-- **타사 보안 설치/사용**: 바이러스 백신 소프트웨어와 같은 타사 보안 프로그램을 설치하거나 사용하도록 설정하려면 이 그룹에 단계를 추가합니다.  
+- **타사 보안 설치/사용**: 바이러스 백신과 같은 타사 보안 프로그램을 설치하거나 사용하도록 설정하려면 이 그룹의 단계를 추가합니다.  
 
-- **Windows 기본 앱 및 연결 설정**: Windows 기본 앱과 파일 연결을 설정하려면 이 그룹에 단계를 추가합니다. 먼저 원하는 앱 연결을 사용하여 참조 컴퓨터를 준비합니다. 그런 후에 다음 명령줄을 실행하여 내보냅니다. </br>`dism /online /Export-DefaultAppAssociations:"%UserProfile%\Desktop\DefaultAppAssociations.xml"`</br>패키지에 XML 파일을 추가합니다. 그런 다음, 이 그룹의 [명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 단계를 추가합니다. XML 파일이 포함된 패키지를 지정한 후 다음 명령줄을 지정합니다. </br>`dism /online /Import-DefaultAppAssociations:DefaultAppAssocations.xml`</br> 자세한 내용은 [기본 애플리케이션 연결 내보내기 또는 가져오기](/windows-hardware/manufacture/desktop/export-or-import-default-application-associations)을 참조하세요.  
+- **Windows 기본 앱 및 연결 설정**: Windows 기본 앱 및 파일 연결을 설정하려면 이 그룹의 단계를 추가합니다. 먼저 원하는 앱 연결을 사용하여 참조 컴퓨터를 준비합니다. 그런 후에 다음 명령줄을 실행하여 내보냅니다. </br>`dism /online /Export-DefaultAppAssociations:"%UserProfile%\Desktop\DefaultAppAssociations.xml"`</br>패키지에 XML 파일을 추가합니다. 그런 다음, 이 그룹의 [명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 단계를 추가합니다. XML 파일이 포함된 패키지를 지정한 후 다음 명령줄을 지정합니다. </br>`dism /online /Import-DefaultAppAssociations:DefaultAppAssocations.xml`</br> 자세한 내용은 [기본 애플리케이션 연결 내보내기 또는 가져오기](/windows-hardware/manufacture/desktop/export-or-import-default-application-associations)을 참조하세요.  
 
-- **사용자 지정 및 개인 설정 적용**: 프로그램 그룹 구성 등의 시작 메뉴 사용자 지정을 적용하려면 이 그룹에 단계를 추가합니다. 자세한 내용은 [시작 화면 사용자 지정](/windows-hardware/manufacture/desktop/customize-the-start-screen)을 참조하세요.  
+- **사용자 지정 및 개인 설정 적용**: 프로그램 그룹 구성과 같은 시작 메뉴 사용자 지정을 적용하려면 이 그룹의 단계를 추가합니다. 자세한 내용은 [시작 화면 사용자 지정](/windows-hardware/manufacture/desktop/customize-the-start-screen)을 참조하세요.  
 
 
 

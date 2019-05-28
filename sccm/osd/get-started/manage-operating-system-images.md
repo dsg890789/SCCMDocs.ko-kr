@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5651f381f2c4a101c82d6f1f7730ffc4ae99a20
-ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.openlocfilehash: 40bfd1c8a541fbb1f108741ef2d4fa00b11088d7
+ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083549"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66176101"
 ---
 # <a name="manage-os-images-with-configuration-manager"></a>Configuration Manager를 사용하여 OS 이미지 관리
 
@@ -77,6 +77,8 @@ OS 이미지를 사용하려면 Configuration Manager 사이트에 추가합니�
 
 5.  마법사를 완료합니다.  
 
+이 콘솔 마법사와 동등한 PowerShell cmdlet의 경우, [New-CMOperatingSystemImage](https://docs.microsoft.com/powershell/module/configurationmanager/new-cmoperatingsystemimage?view=sccm-ps)를 참조하세요.
+
 
 다음으로, 배포 지점에 OS 이미지를 배포합니다.  
 
@@ -104,7 +106,7 @@ OS 이미지를 사용하려면 Configuration Manager 사이트에 추가합니�
 
 4.  **배포 설정** 탭으로 전환하고 다음 옵션을 구성합니다.  
 
-    -   **멀티캐스트를 통해 이 패키지 전송(WinPE만 해당)**: Configuration Manager에서 멀티캐스트를 사용하여 OS 이미지를 동시에 배포하도록 하려면 이 옵션을 선택합니다.  
+    -   **멀티캐스트를 통해 이 패키지 전송(WinPE만 해당)** : Configuration Manager에서 멀티캐스트를 사용하여 OS 이미지를 동시에 배포하도록 하려면 이 옵션을 선택합니다.  
 
     -   **멀티캐스트 패키지 암호화**: 배포 지점에 전송하기 전에 사이트에서 이미지를 암호화할지 여부를 지정합니다. 이미지에 중요한 정보가 포함된 경우 이 옵션을 사용합니다. 이미지가 암호화되지 않으면 해당 콘텐츠가 네트워크에서 일반 텍스트로 표시됩니다. 그러면 권한 없는 사용자가 이미지 콘텐츠를 가로채어 볼 수 있습니다.  
 

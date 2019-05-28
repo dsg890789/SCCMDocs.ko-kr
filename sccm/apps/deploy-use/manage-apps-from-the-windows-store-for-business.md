@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d0a32357001f37f537f13fe85e71a41f9cb658ac
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: e5178a84443779384e3223998ab8336b46c2d4d0
+ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56122443"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66176897"
 ---
 # <a name="manage-apps-from-the-microsoft-store-for-business-with-configuration-manager"></a>Configuration Manager를 사용하여 비즈니스용 Microsoft Store에서 앱 관리
 
@@ -27,7 +27,7 @@ ms.locfileid: "56122443"
 
 비즈니스용 Microsoft Store에서는 두 가지 유형의 앱을 지원합니다.
 
-- **온라인**: 이 라이선스 유형에서는 사용자와 디바이스가 저장소에 연결하여 앱과 해당 라이선스를 가져와야 합니다. Windows 10 디바이스는 Azure AD(Active Directory) 도메인에 가입된 디바이스여야 합니다.  
+- **온라인**: 이 라이선스 유형에서는 사용자와 장치가 저장소에 연결하여 앱과 해당 라이선스를 가져와야 합니다. Windows 10 디바이스는 Azure AD(Active Directory) 도메인에 가입된 디바이스여야 합니다.  
 
 - **오프라인**: 이 유형을 사용하면 캐시 앱 및 라이선스를 온-프레미스 네트워크 내에서 직접 배포할 수 있습니다. 디바이스를 스토어에 연결하거나 인터넷에 연결할 필요가 없습니다.
 
@@ -45,7 +45,7 @@ Configuration Manager에서는 Configuration Manager 클라이언트를 사용�
 |사용자 또는 디바이스 컬렉션에 대한 필수 배포 지원|예|예|
 |사용자 또는 디바이스 컬렉션에 대한 사용 가능한 배포 지원|예|예|
 |스토어에서 LOB(기간 업무) 앱 지원|예|예|
-|디바이스의 모든 사용자를 위해 스토어 앱 프로비전<sup>2</sup><!--1358310-->|예|예|
+|디바이스의 모든 사용자를 위해 스토어 앱 프로비저닝<sup>2</sup><!--1358310-->|예|예|
 
 - <sup>1</sup> Configuration Manager 클라이언트를 통해 사용이 허가된 온라인 앱을 Windows 10 장치에 배포하려면 Windows 10, 버전 1703 이상을 실행하고 있어야 합니다.  
 
@@ -83,7 +83,7 @@ Configuration Manager 클라이언트가 있고 Windows 10 버전 1607 이하를
 
 - 사용자는 스토어에서 설치를 완료해야 합니다.  
 
-- Configuration Manager 콘솔에서 앱 배포 상태가 실패하고 다음 오류를 보고합니다. “Microsoft Store 앱이 클라이언트 PC에서 열렸으며 사용자가 설치를 완료하기를 기다리고 있습니다.”  
+- Configuration Manager 콘솔에서 앱 배포 상태는 "Microsoft Store 앱이 클라이언트 PC에서 열렸으며 사용자가 설치를 완료하기를 기다리고 있습니다."라는 오류를 표시하고 실패했다고 보고합니다.  
 
 다음 애플리케이션 평가 주기에서:  
 
@@ -125,9 +125,9 @@ Azure Services 마법사의 **앱** 페이지에서, 먼저 **Azure 환경** 및
 
 Azure Services 마법사의 **구성** 페이지에서 다음 정보를 지정합니다.  
 
-- **비즈니스용 Microsoft 스토어 앱 콘텐츠 스토리지 경로**: 폴더를 포함한 공유 네트워크 경로를 지정합니다. 예: `\\server\share\folder` 사이트 서버가 스토어와 동기화되면 콘텐츠가 이 위치에 캐시됩니다. Configuration Manager에서 애플리케이션을 만들면 사이트 서버가 이 로컬 캐시의 앱 콘텐츠를 사이트의 콘텐츠 라이브러리로 복사합니다.  
+- **비즈니스용 Microsoft Store 앱 콘텐츠 저장소의 경로**: 공유 네트워크 경로를 지정합니다(폴더 포함). 예: `\\server\share\folder` 사이트 서버가 스토어와 동기화되면 콘텐츠가 이 위치에 캐시됩니다. Configuration Manager에서 애플리케이션을 만들면 사이트 서버가 이 로컬 캐시의 앱 콘텐츠를 사이트의 콘텐츠 라이브러리로 복사합니다.  
 
-- **언어 선택**:  스토어에서 동기화할 언어를 선택하고 소프트웨어 센터의 사용자에게 표시합니다. 예를 들어 사용자가 독일어로 Windows를 구성하면 소프트웨어 센터는 스토어 앱용 독일어 문자열을 표시합니다. 이 동작을 실행하려면 언어가 동기화되고 특정 애플리케이션에 존재해야 합니다.    
+- **언어 선택**: 스토어에서 동기화할 언어를 선택하고 소프트웨어 센터의 사용자에게 표시합니다. 예를 들어 사용자가 독일어로 Windows를 구성하면 소프트웨어 센터는 스토어 앱용 독일어 문자열을 표시합니다. 이 동작을 실행하려면 언어가 동기화되고 특정 애플리케이션에 존재해야 합니다.    
 
 - **기본 언어**: 사용자의 언어를 사용할 수 없는 경우 사용할 기본 언어를 선택합니다.  
 
@@ -167,3 +167,8 @@ Azure Services 마법사의 **구성** 페이지에서 다음 정보를 지정�
 Configuration Manager 클라이언트를 사용하여 Windows 10 디바이스에 오프라인 앱을 배포할 때 사용자가 Configuration Manager 배포에 외부의 응용 프로그램을 업데이트할 수 없습니다. 오프라인 앱에 대한 업데이트의 제어는 학급과 같은 다중 사용자 환경에서 특히 중요합니다. [그룹 정책](https://docs.microsoft.com/windows/configuration/stop-employees-from-using-microsoft-store#a-href-idblock-store-group-policyablock-microsoft-store-using-group-policy)을 사용하여 Microsoft Store를 사용하지 않도록 설정할 수 있습니다. 
 
 비즈니스용 Microsoft Store 관리자가 오프라인 앱을 구매한 후에 스토어를 통해 사용자에게 앱을 게시하지 마세요. 이렇게 구성하면 사용자가 온라인으로 설치하거나 업데이트할 수 없습니다. 사용자는 Configuration Manager를 통해서만 오프라인 앱 업데이트를 수신하게 됩니다. 
+
+## <a name="see-also"></a>참고 항목
+
+[ConfigMgr을 사용한 비즈니스용 Microsoft Store 통합 이해 및 문제 해결](https://support.microsoft.com/help/4010214)
+

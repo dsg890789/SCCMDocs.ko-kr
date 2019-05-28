@@ -2,7 +2,7 @@
 title: 애플리케이션 관리 계획
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 응용 프로그램 배포에 필요한 종속성을 구현하고 구성합니다.
-ms.date: 05/01/2019
+ms.date: 05/21/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-app
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0c2808bd4fa9501c46012549427e2de4087eb9d
-ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.openlocfilehash: 3ec099d9ffbb5ffaee1c962faf8443a900c1b324
+ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083394"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66176865"
 ---
 # <a name="plan-for-and-configure-application-management-in-configuration-manager"></a>Configuration Manager에서 애플리케이션 관리 계획 및 구성
 
@@ -38,7 +38,7 @@ ms.locfileid: "65083394"
 - 관리 지점  
 - 배포 지점  
 
-이 요구 사항에 대한 자세한 내용은 [사이트 및 사이트 시스템 필수 조건](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)을 참조하세요.  
+자세한 내용은 [사이트 및 사이트 시스템 필수 조건](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)을 참조하세요.  
 
 
 ### <a name="certificates-on-code-signed-applications-for-mobile-devices"></a>모바일 디바이스에 대한 코드 서명 응용 프로그램의 인증서
@@ -119,36 +119,29 @@ ms.locfileid: "65083394"
 
 Configuration Manager에서 가상 응용 프로그램을 만들려면 디바이스에 App-V 4.6 SP1 이상이 설치되어 있어야 합니다.
 
-또한 가상 응용 프로그램을 배포하려면 [Microsoft 지원 문서 2645225](https://support.microsoft.com/help/2645225)에 설명된 핫픽스로 App-V 클라이언트를 업데이트해야 합니다.  
+또한 가상 애플리케이션을 배포하려면 [Microsoft 지원 문서 2645225](https://support.microsoft.com/help/2645225)에 설명된 핫픽스로 App-V 클라이언트를 업데이트해야 합니다.  
 
 
-### <a name="discovered-user-accounts-for-application-catalog"></a>애플리케이션 카탈로그에 대해 검색된 사용자 계정
+### <a name="application-catalog"></a>애플리케이션 카탈로그
 
-사용자가 애플리케이션 카탈로그에서 애플리케이션을 확인하고 요청하려면 먼저 Configuration Manager에서 해당 사용자 계정을 검색해야 합니다. 자세한 내용은 [검색 실행](/sccm/core/servers/deploy/configure/run-discovery)을 참조하세요.  
+> [!Important]  
+> 애플리케이션 카탈로그는 사용되지 않습니다. 자세한 내용은 [애플리케이션 카탈로그 제거](#bkmk_remove-appcat)를 참조하세요.  
 
-
-### <a name="application-catalog-web-service-point"></a>애플리케이션 카탈로그 웹 서비스 지점
+#### <a name="application-catalog-web-service-point"></a>애플리케이션 카탈로그 웹 서비스 지점
 
 애플리케이션 카탈로그 웹 서비스 지점은 소프트웨어 라이브러리의 사용 가능한 소프트웨어에 대한 정보를 사용자가 액세스하는 애플리케이션 카탈로그 웹 사이트에 제공하는 사이트 시스템 역할입니다.
 
 이 사이트 시스템 역할을 구성하는 방법에 대한 자세한 내용은 [애플리케이션 카탈로그 설치 및 구성](#bkmk_appcat)을 참조하세요.  
 
-> [!Note]  
-> 버전 1806부터 애플리케이션 카탈로그 웹 서비스 지점 역할은 더 이상 *필요하지 않지만**지원은 계속됩니다*.<!--1358309-->  
->
-> 애플리케이션 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
-
-
-### <a name="application-catalog-website-point"></a>애플리케이션 카탈로그 웹 사이트 지점
+#### <a name="application-catalog-website-point"></a>애플리케이션 카탈로그 웹 사이트 지점
 
 애플리케이션 카탈로그 웹 사이트 지점은 사용자에게 사용 가능한 소프트웨어 목록을 제공하는 사이트 시스템 역할입니다.
 
 이 사이트 시스템 역할을 구성하는 방법에 대한 자세한 내용은 [애플리케이션 카탈로그 설치 및 구성](#bkmk_appcat)을 참조하세요.
 
-> [!Note]  
-> 버전 1806부터 애플리케이션 카탈로그 웹 사이트 지점 역할은 더 이상 *필요하지 않지만**지원은 계속됩니다*.<!--1358309-->  
->
-> 애플리케이션 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
+#### <a name="discovered-user-accounts-for-application-catalog"></a>애플리케이션 카탈로그에 대해 검색된 사용자 계정
+
+사용자가 애플리케이션 카탈로그에서 애플리케이션을 확인하고 요청하려면 먼저 Configuration Manager에서 해당 사용자 계정을 검색해야 합니다. 자세한 내용은 [검색 실행](/sccm/core/servers/deploy/configure/run-discovery)을 참조하세요.  
 
 
 
@@ -157,25 +150,45 @@ Configuration Manager에서 가상 응용 프로그램을 만들려면 디바이
 소프트웨어 센터 구성 및 브랜딩에 대한 자세한 내용은 [소프트웨어 센터 계획](/sccm/apps/plan-design/plan-for-software-center)을 참조하세요.
 
 
+## <a name="bkmk_remove-appcat"></a> 애플리케이션 카탈로그 제거
+
+<!-- SCCMDocs-pr issue 3051 -->
+
+애플리케이션 카탈로그는 사용되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요. 다음 목록에 변경 내용이 요약되어 있습니다.
+
+- 버전 1806부터 애플리케이션 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다.<!--1358309--> 버전 1806부터 애플리케이션 카탈로그 웹 서비스 지점 역할은 더 이상 *필요하지 않지만*, *지원은 계속됩니다*.
+
+- 2019년 6월 30일 이후 첫 번째 현재 분기 릴리스에서는 업데이트된 클라이언트가 자동으로 사용자가 사용할 수 있는 애플리케이션 배포에 관리 지점을 사용하게 됩니다. 새 애플리케이션 카탈로그 역할을 설치할 수도 없습니다.
+
+- 2019년 10월 31일 이후 첫 번째 현재 분기 릴리스에서는 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
+
+이러한 소프트웨어 센터 및 관리 지점의 반복적인 성능 향상은 인프라를 단순화하고 사용자가 사용할 수 있는 배포용 애플리케이션 카탈로그의 필요성을 제거하는 것입니다. 소프트웨어 센터에서 애플리케이션 카탈로그 없이 모든 앱 배포를 제공할 수 있습니다. 또한 TLS 1.2를 실행하고 애플리케이션 카탈로그로 HTTP를 사용하는 경우,사용자는 사용 가능한 사용자 대상 배포를 볼 수 없습니다.
+
+1. 모든 클라이언트를 버전 1806 이상으로 업데이트합니다.  
+
+1. 애플리케이션 카탈로그 웹 사이트 역할의 속성 대신 소프트웨어 센터의 브랜딩을 설정합니다. 자세한 내용은 [소프트웨어 센터 클라이언트 설정](/sccm/core/clients/deploy/about-client-settings#software-center)을 참조하세요.  
+
+1. 기본 및 모든 사용자 지정 클라이언트 설정을 검토합니다. **컴퓨터 에이전트**그룹에서 **기본 애플리케이션 카탈로그 웹 사이트 지점**이 `(none)`인지 확인합니다.  
+
+    계층 구조에 애플리케이션 카탈로그 역할이 없는 경우에만 클라이언트가 관리 지점 사용으로 전환합니다. 그렇지 않으면 클라이언트는 계층 구조의 애플리케이션 카탈로그 인스턴스 중 하나를 계속 사용합니다. 이 동작은 개별 기본 사이트에 적용됩니다.  
+
+1. 모든 기본 사이트에서 **애플리케이션 카탈로그 웹 사이트** 및 **애플리케이션 카탈로그 웹 서비스** 사이트 시스템 역할을 제거합니다.
+
+애플리케이션 카탈로그 역할을 제거하면 소프트웨어 센터는 사용자 대상의 사용 가능한 배포에 대한 관리 지점을 사용하기 시작합니다. 이 변경은 최대 65분 정도 걸릴 수 있습니다. 특정 클라이언트에서 이 동작을 확인하려면 `SCClient_<username>.log`을 검토하고 다음 행과 유사한 항목을 찾습니다.
+
+`Using endpoint Url: https://mp.contoso.com/CMUserService_WindowsAuth, Windows authentication`
+
+
 ## <a name="bkmk_appcat"></a> 애플리케이션 카탈로그 설치 및 구성  
 
-> [!Note]  
-> 버전 1806부터 애플리케이션 카탈로그 웹 사이트 지점 및 웹 서비스 지점은 더 이상 *필요하지 않지만**지원은 계속*됩니다. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-software-center#bkmk_userex)을 참조하세요.  
->
-> 응용 프로그램 카탈로그 *웹 사이트 지점*에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
-
-> [!IMPORTANT]  
-> 이러한 단계를 수행하기 전에 모든 종속성이 제 위치에 있는지 확인하세요. 자세한 내용은 이 문서에서 다음 섹션을 참조하세요.
->
-> - [Configuration Manager 외부 종속성](#dependencies-external-to-configuration-manager)  
-> - [Configuration Manager 종속성](#configuration-manager-dependencies)
-
+> [!Important]  
+> 애플리케이션 카탈로그는 사용되지 않습니다. 자세한 내용은 [애플리케이션 카탈로그 제거](#bkmk_remove-appcat)를 참조하세요.  
 
 ### <a name="step-1-web-server-certificate-for-https"></a>1단계: HTTPS에 대한 웹 서버 인증서
 
-HTTPS 연결을 사용하는 경우 애플리케이션 카탈로그 웹 사이트 지점 및 애플리케이션 카탈로그 웹 서비스 지점에 대한 사이트 시스템 서버에 웹 서버 인증서를 배포합니다.
+HTTPS 연결을 사용하는 경우, 애플리케이션 카탈로그 웹 사이트 지점 및 애플리케이션 카탈로그 웹 서비스 지점에 대한 사이트 시스템 서버에 웹 서버 인증서를 배포합니다.
 
-클라이언트가 인터넷에서 애플리케이션 카탈로그를 사용하도록 하려면 적어도 하나 이상의 관리 지점에 웹 서버 인증서를 배포합니다. 인터넷에서 클라이언트 연결에 맞게 구성하세요.
+클라이언트가 인터넷에서 애플리케이션 카탈로그를 사용하도록 하려면, 적어도 하나 이상의 관리 지점에 웹 서버 인증서를 배포합니다. 인터넷에서 클라이언트 연결에 맞게 구성하세요.
 
 인증서 요구 사항에 대한 자세한 내용은 [PKI 인증서 요구 사항](/sccm/core/plan-design/network/pki-certificate-requirements)을 참조하세요.  
 
@@ -192,7 +205,7 @@ HTTPS 연결을 사용하는 경우 애플리케이션 카탈로그 웹 사이�
 인증서 요구 사항에 대한 자세한 내용은 [PKI 인증서 요구 사항](/sccm/core/plan-design/network/pki-certificate-requirements)을 참조하세요.  
 
 
-### <a name="step-3-install-and-configure-the-application-catalog-roles"></a>3단계: 응용 프로그램 카탈로그 역할 설치 및 구성
+### <a name="step-3-install-and-configure-the-application-catalog-roles"></a>3단계: 애플리케이션 카탈로그 역할 설치 및 구성
 
 동일한 사이트에 애플리케이션 카탈로그 웹 서비스 지점 및 애플리케이션 카탈로그 웹 사이트 역할을 모두 설치합니다. 같은 서버나 같은 Active Directory 포리스트에 설치할 필요는 없습니다. 그러나 애플리케이션 카탈로그 웹 서비스 지점은 사이트 데이터베이스와 같은 포리스트에 있어야 합니다.
 
@@ -201,7 +214,7 @@ HTTPS 연결을 사용하는 경우 애플리케이션 카탈로그 웹 사이�
 > [!NOTE]  
 > 기본 사이트에 애플리케이션 카탈로그를 설치합니다. 보조 사이트 또는 중앙 관리 사이트에 설치할 수 없습니다.  
 
-새 사이트 시스템 서버 또는 사이트의 기존 서버에 애플리케이션 카탈로그를 설치합니다. 일반 프로시저에 대한 자세한 내용은 [사이트 시스템 역할 설치](/sccm/core/servers/deploy/configure/install-site-system-roles)를 참조하세요. 마법사에서 사이트 시스템 역할을 추가하거나 사이트 시스템 서버를 만들려면 목록에서 다음 역할을 선택합니다.
+새 사이트 시스템 서버 또는 사이트의 기존 서버에 애플리케이션 카탈로그를 설치합니다. 일반 프로시저에 대한 자세한 내용은 [사이트 시스템 역할 설치](/sccm/core/servers/deploy/configure/install-site-system-roles)를 참조하세요. 마법사에서 사이트 시스템 역할을 추가하거나 사이트 시스템 서버를 만들려면 목록에서 다음 역할을 선택합니다.  
 
 - **애플리케이션 카탈로그 웹 서비스 지점**  
 - **애플리케이션 카탈로그 웹 사이트 지점**  
@@ -237,27 +250,27 @@ HTTPS 연결을 사용하는 경우 애플리케이션 카탈로그 웹 사이�
 구성 관리자 클라이언트는 다음에 클라이언트 정책을 다운로드할 때 이러한 설정으로 디바이스를 구성합니다. 단일 클라이언트에 대한 정책 검색을 트리거하려면 [클라이언트를 관리하는 방법](/sccm/core/clients/manage/manage-clients)을 참조하세요.
 
 
-### <a name="step-5-verify-that-the-application-catalog-is-operational"></a>5단계: 애플리케이션 카탈로그가 작동하는지 확인
+### <a name="step-5-verify-that-the-application-catalog-is-operational"></a>5단계: 애플리케이션 카탈로그 작동 확인
 
 애플리케이션 카탈로그가 작동하는지 확인하려면 다음 절차를 수행하세요.
 
 > [!NOTE]  
-> 응용 프로그램 카탈로그 사용자 환경에는 Microsoft Silverlight가 필요합니다. 브라우저에서 직접 응용 프로그램 카탈로그를 사용하는 경우 먼저 컴퓨터에 Microsoft Silverlight가 설치되어 있는지 확인하세요.  
+> 애플리케이션 카탈로그 사용자 환경에는 Microsoft Silverlight가 필요합니다. 브라우저에서 직접 애플리케이션 카탈로그를 사용하는 경우 먼저 컴퓨터에 Microsoft Silverlight가 설치되어 있는지 확인하세요.  
 
 > [!TIP]  
-> 설치 후에 애플리케이션 카탈로그가 잘못된 방식으로 작동하는 원인 중 가장 일반적인 원인은 필수 구성 요소가 누락되었기 때문입니다. 응용 프로그램 카탈로그 역할의 사이트 시스템 역할 필수 구성 요소를 확인합니다. 자세한 내용은 [사이트 및 사이트 시스템 필수 조건](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)을 참조하세요.  
+> 설치 후에 애플리케이션 카탈로그가 잘못된 방식으로 작동하는 원인 중 가장 일반적인 원인은 필수 구성 요소가 누락되었기 때문입니다. 애플리케이션 카탈로그 역할의 사이트 시스템 역할 필수 구성 요소를 확인합니다. 자세한 내용은 [사이트 및 사이트 시스템 필수 조건](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)을 참조하세요.  
 
-브라우저에서 응용 프로그램 카탈로그 웹 사이트의 주소를 입력합니다. 해당 웹 페이지에 **응용 프로그램 카탈로그**, **내 응용 프로그램 요청**, **내 디바이스** 등 세 가지 탭이 표시되는지 확인합니다.  
+브라우저에서 애플리케이션 카탈로그 웹 사이트의 주소를 입력합니다. 해당 웹 페이지에 **응용 프로그램 카탈로그**, **내 응용 프로그램 요청**, **내 디바이스** 등 세 가지 탭이 표시되는지 확인합니다.  
 
-응용 프로그램 카탈로그에 대해 아래 목록에 나와 있는 적합한 주소를 사용합니다. 여기서 &lt;서버&gt;는 컴퓨터 이름, 인트라넷 FQDN 또는 인터넷 FQDN입니다.  
+애플리케이션 카탈로그에 대해 아래 목록에 나와 있는 적합한 주소를 사용합니다. 여기서 `<server>`는 컴퓨터 이름, 인트라넷 FQDN 또는 인터넷 FQDN입니다.  
 
-- HTTPS 클라이언트 연결 및 기본 사이트 시스템 역할 설정: **https://&lt;서버&gt;/CMApplicationCatalog**  
+- HTTPS 클라이언트 연결 및 기본 사이트 시스템 역할 설정: `https://<server>/CMApplicationCatalog`  
 
-- HTTP 클라이언트 연결 및 기본 사이트 시스템 역할 설정: **http://&lt;서버&gt;/CMApplicationCatalog**  
+- HTTP 클라이언트 연결 및 기본 사이트 시스템 역할 설정: `http://<server>/CMApplicationCatalog`  
 
-- HTTPS 클라이언트 연결 및 사용자 지정 사이트 시스템 역할 설정: **https://&lt;서버&gt;:&lt;포트&gt;/&lt;웹 애플리케이션 이름&gt;**  
+- HTTPS 클라이언트 연결 및 사용자 지정 사이트 시스템 역할 설정: `https://<server>:<port>/<web application name>`  
 
-- HTTP 클라이언트 연결 및 사용자 지정 사이트 시스템 역할 설정: **http://&lt;서버&gt;:&lt;포트&gt;/&lt;웹 애플리케이션 이름&gt;**  
+- HTTP 클라이언트 연결 및 사용자 지정 사이트 시스템 역할 설정: `http://<server>:<port>/<web application name>`  
 
 > [!NOTE]  
 > 도메인 관리자 계정으로 디바이스에 로그인하는 경우, 구성 관리자 클라이언트는 알림 메시지를 표시하지 않습니다. 예를 들어, 새 소프트웨어를 사용할 수 있음을 나타내는 메시지가 있습니다.  
