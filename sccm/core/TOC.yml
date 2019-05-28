@@ -706,6 +706,8 @@
               href: clients/manage/cmg/monitor-clients-cloud-management-gateway.md
         - name: 인터넷 기반 클라이언트 관리에 대한 계획
           href: clients/manage/plan-internet-based-client-management.md
+        - name: Azure AD 인증 워크플로
+          href: clients/manage/azure-ccmsetup.md
     - name: 컬렉션
       items:
         - name: 컬렉션 소개
