@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef015f755a42ff113b2ca80bcc2a5650fbf30231
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 11b970cc93db5edbabec58d18cd6d12b2275fd57
+ms.sourcegitcommit: f531d0a622f220739710b2fe6644ea58d024064a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56134744"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65933259"
 ---
 # <a name="capabilities-in-technical-preview-18062-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1806.2의 기능
 
@@ -42,10 +42,11 @@ Steps to workaround, if any.
 ## <a name="known-issues-in-this-technical-preview"></a>이 기술 미리 보기의 알려진 문제
 
 ### <a name="ki_sqlncli"></a> 클라이언트가 자동으로 업데이트되지 않음
-<!--518760--> 버전 1806.2로 업데이트하면 사이트에서 SQL Native Client도 업데이트하므로 사이트 서버에서 다시 시작이 보류될 수 있습니다. 이러한 지연으로 인해 특정 파일이 업데이트되지 않으며 자동 클라이언트 업그레이드에 영향을 줍니다.
+<!--518760-->
+버전 1806.2로 업데이트하면 사이트에서 SQL Native Client도 업데이트하므로 사이트 서버에서 다시 시작이 보류될 수 있습니다. 이러한 지연으로 인해 특정 파일이 업데이트되지 않으며 자동 클라이언트 업그레이드에 영향을 줍니다.
 
 #### <a name="workarounds"></a>해결 방법
-Configuration Manager를 버전 1806.2로 ‘업데이트하기 전에’ SQL Native Client를 수동으로 업그레이드하여 이 문제를 방지하세요. 자세한 내용은 [SQL Server 2012 Native Client의 최신 서비스 업데이트](https://www.microsoft.com/download/details.aspx?id=50402)를 참조하세요.
+Configuration Manager를 버전 1806.2로 ‘업데이트하기 전에’ SQL Native Client를 수동으로 업그레이드하여 이 문제를 방지하세요.  자세한 내용은 [SQL Server 2012 Native Client의 최신 서비스 업데이트](https://www.microsoft.com/download/details.aspx?id=50402)를 참조하세요.
 
 사이트를 이미 업데이트한 경우, 자동 클라이언트 업그레이드 및 클라이언트 강제가 작동하지 않습니다. 대부분의 새로운 기능을 완전히 테스트하려면 클라이언트를 업데이트해야 합니다. 다음 프로세스를 사용하여 기술 미리 보기 클라이언트를 수동으로 업데이트하세요.  
 
@@ -66,7 +67,8 @@ Configuration Manager를 버전 1806.2로 ‘업데이트하기 전에’ SQL Na
 
 
 ### <a name="ki_version"> </a> 버전 1806.2의 Configuration Manager 정보에 버전 1806이 표시됨
-<!--518148--> 기술 미리 보기 버전 1806.2로 업그레이드한 후 콘솔의 왼쪽 위 모서리에서 **Configuration Manager 정보** 창을 열면 **버전 1806**이 계속 표시됩니다. 
+<!--518148-->
+기술 미리 보기 버전 1806.2로 업그레이드한 후 콘솔의 왼쪽 위 모서리에서  **Configuration Manager 정보** 창을 열면 **버전 1806**이 계속 표시됩니다. 
 
 #### <a name="workaround"></a>해결 방법
 **사이트 버전** 속성을 사용하여 1806과1806.2의 차이를 확인하세요.
@@ -92,7 +94,8 @@ Configuration Manager를 버전 1806.2로 ‘업데이트하기 전에’ SQL Na
 
 
 ### <a name="bkmk_pod-monitor"></a> 단계적 배포 상태
-<!--1358577--> 이제 단계적 배포에서 기본 모니터링 환경을 제공합니다. **모니터링** 작업 영역의 **배포** 노드에서 단계적 배포를 선택한 다음, 리본에서 **단계적 배포 상태**를 클릭합니다.
+<!--1358577-->
+이제 단계적 배포에서 기본 모니터링 환경을 제공합니다. **모니터링** 작업 영역의 **배포** 노드에서 단계적 배포를 선택한 다음, 리본에서 **단계적 배포 상태**를 클릭합니다.
 
 ![두 단계의 상태를 보여 주는 단계적 배포 상태 대시보드](media/1358577-phased-deployment-status.png)
 
@@ -116,7 +119,8 @@ Configuration Manager를 버전 1806.2로 ‘업데이트하기 전에’ SQL Na
 
 
 ### <a name="bkmk_pod-app"></a> 애플리케이션의 단계적 배포
-<!--1358147--> 애플리케이션에 대한 단계적 배포를 만듭니다. 단계적 배포에서는 사용자 지정 가능한 조건 및 그룹에 따라 소프트웨어 출시를 조정하고 순차적으로 진행할 수 있습니다.
+<!--1358147-->
+애플리케이션에 대한 단계적 배포를 만듭니다. 단계적 배포에서는 사용자 지정 가능한 조건 및 그룹에 따라 소프트웨어 출시를 조정하고 순차적으로 진행할 수 있습니다.
 
 Configuration Manager 콘솔에서 **소프트웨어 라이브러리**로 이동하여 **애플리케이션 관리**를 확장하고 **애플리케이션**을 선택합니다. 애플리케이션을 선택한 다음, 리본에서 **단계적 배포 만들기**를 클릭합니다. 
 
@@ -130,7 +134,8 @@ Configuration Manager 콘솔에서 **소프트웨어 라이브러리**로 이동
 
 
 ### <a name="bkmk_pod-throttle"></a> 단계적 배포 중 점진적 출시
-<!--1358578--> 단계적 배포 중에 각 단계의 출시가 이제 점진적으로 수행됩니다. 이 동작은 배포 문제의 위험을 완화하고 콘텐츠의 클라이언트 배포로 인한 네트워크의 부하를 줄이는 데 도움이 됩니다. 사이트에서는 각 단계에 대한 구성에 따라 점진적으로 소프트웨어를 사용할 수 있도록 합니다. 단계의 모든 클라이언트는 소프트웨어를 사용할 수 있게 되는 시간을 기준으로 최종 기한을 갖게 됩니다. 사용 가능 시간과 최종 기한 사이의 기간은 단계의 모든 클라이언트에 대해 동일합니다. 
+<!--1358578-->
+단계적 배포 중에 각 단계의 출시가 이제 점진적으로 수행됩니다. 이 동작은 배포 문제의 위험을 완화하고 콘텐츠의 클라이언트 배포로 인한 네트워크의 부하를 줄이는 데 도움이 됩니다. 사이트에서는 각 단계에 대한 구성에 따라 점진적으로 소프트웨어를 사용할 수 있도록 합니다. 단계의 모든 클라이언트는 소프트웨어를 사용할 수 있게 되는 시간을 기준으로 최종 기한을 갖게 됩니다. 사용 가능 시간과 최종 기한 사이의 기간은 단계의 모든 클라이언트에 대해 동일합니다. 
 
 단계별 배포를 만들고 단계를 수동으로 구성하면 단계 추가 마법사의 **단계 설정** 페이지 또는 단계별 배포 만들기 마법사의 **설정** 페이지에서 **이 기간(일)에 걸쳐 점진적으로 이 소프트웨어를 사용할 수 있도록 함** 옵션을 구성합니다. 이 설정의 기본값은 **0**이므로 기본적으로 배포가 제한되지 않습니다.
 
@@ -140,7 +145,8 @@ Configuration Manager 콘솔에서 **소프트웨어 라이브러리**로 이동
 
 
 ## <a name="bkmk_msix"></a> 새로운 Windows 앱 패키지 형식에 대한 지원
-<!--1357427--> Configuration Manager는 이제 새 Windows 10 앱 패키지(.msix) 및 앱 번들(.msixbundle) 형식의 배포를 지원합니다. 최신 [Windows Insider Preview](https://insider.windows.com/) 빌드는 현재 이러한 새 형식을 지원합니다.
+<!--1357427-->
+Configuration Manager는 이제 새 Windows 10 앱 패키지(.msix) 및 앱 번들(.msixbundle) 형식의 배포를 지원합니다. 최신 [Windows Insider Preview](https://insider.windows.com/) 빌드는 현재 이러한 새 형식을 지원합니다.
 
 MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.com/sgern/2018/06/18/a-closer-look-at-msix/)(MSIX 자세히 살펴보기)를 참조하세요.
 
@@ -160,7 +166,8 @@ MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.co
 
 
 ## <a name="bkmk_client-push"> </a> 클라이언트 강제 보안 개선 사항
-<!--1358204--> Configuration Manager 클라이언트 설치의 [클라이언트 강제](/sccm/core/clients/deploy/plan/client-installation-methods#client-push-installation) 방법을 사용하면 사이트 서버에서 클라이언트에 대한 원격 연결을 만들어 설치를 시작합니다. 이 릴리스부터 사이트에서 연결을 설정하기 전에 NTLM으로 대체를 허용하지 않아 Kerberos 상호 인증을 요구할 수 있습니다. 이 개선 사항은 서버와 클라이언트 간의 통신을 보안하는 데 도움이 됩니다. 
+<!--1358204-->
+Configuration Manager 클라이언트 설치의 [클라이언트 강제](/sccm/core/clients/deploy/plan/client-installation-methods#client-push-installation) 방법을 사용하면 사이트 서버에서 클라이언트에 대한 원격 연결을 만들어 설치를 시작합니다. 이 릴리스부터 사이트에서 연결을 설정하기 전에 NTLM으로 대체를 허용하지 않아 Kerberos 상호 인증을 요구할 수 있습니다. 이 개선 사항은 서버와 클라이언트 간의 통신을 보안하는 데 도움이 됩니다. 
 
 보안 정책에 따라 사용자 환경에서 이미 이전 NTLM 인증에 비해 Kerberos를 선호하거나 요구할 수 있습니다. 이러한 인증 프로토콜의 보안 고려 사항에 대한 자세한 내용은 [Windows security policy setting to restrict NTLM](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-outgoing-ntlm-traffic-to-remote-servers#security-considerations)(NTLM을 제한하는 Windows 보안 정책 설정)을 참조하세요.
 
@@ -174,7 +181,7 @@ MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.co
 
 작업을 완료합니다. 그런 다음, [피드백](capabilities-in-technical-preview-1804.md#bkmk_feedback)을 전송하여 작업이 어떻게 진행되었는지 알려주세요.
 
-사이트를 업그레이드해도 기존 동작은 지속됩니다. 클라이언트 강제 설치 속성을 ‘열면’ 사이트에서 Kerberos 확인을 사용하도록 자동으로 설정합니다. 필요한 경우, 보안 수준이 낮은 NTLM 연결 사용으로 연결 대체를 허용할 수 있지만 권장되지는 않습니다. 
+사이트를 업그레이드해도 기존 동작은 지속됩니다. 클라이언트 강제 설치 속성을 ‘열면’ 사이트에서 Kerberos 확인을 사용하도록 자동으로 설정합니다.  필요한 경우, 보안 수준이 낮은 NTLM 연결 사용으로 연결 대체를 허용할 수 있지만 권장되지는 않습니다. 
 
 1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하여 **사이트 구성**을 확장하고 **사이트**를 선택합니다. 대상 사이트를 선택합니다. 리본에서 **클라이언트 설치 설정**을 클릭하고 **클라이언트 강제 설치**를 선택합니다.  
 
@@ -185,7 +192,8 @@ MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.co
 
 
 ## <a name="bkmk_insights"></a> 자동 유지 관리에 대한 관리 인사이트
-<!--1352184,et al--> 이 릴리스에서는 추가 관리 인사이트를 사용하여 잠재적인 구성 문제를 강조 표시할 수 있습니다. 새 **자동 유지 관리** 그룹에서 다음 규칙을 검토하세요.  
+<!--1352184,et al-->
+이 릴리스에서는 추가 관리 인사이트를 사용하여 잠재적인 구성 문제를 강조 표시할 수 있습니다. 새 **자동 유지 관리** 그룹에서 다음 규칙을 검토하세요.  
 
 - **사용되지 않는 구성 항목**: 구성 기준에 속하지 않고 30일보다 오래된 구성 항목입니다.  
 
@@ -202,7 +210,8 @@ MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.co
 
 
 ## <a name="bkmk_comgmt"></a> 공동 관리하는 디바이스에 대한 모바일 앱 워크로드 전환
-<!--1357892--> 계속 Configuration Manager를 사용하여 Windows 데스크톱 애플리케이션을 배포하면서 Microsoft Intune으로 모바일 앱을 관리합니다. 최신 앱 워크로드를 전환하려면 공동 관리 속성 페이지로 이동하세요. Configuration Manager에서 슬라이더 막대를 [파일럿] 또는 [모두]로 이동합니다. 
+<!--1357892-->
+계속 Configuration Manager를 사용하여 Windows 데스크톱 애플리케이션을 배포하면서 Microsoft Intune으로 모바일 앱을 관리합니다. 최신 앱 워크로드를 전환하려면 공동 관리 속성 페이지로 이동하세요. Configuration Manager에서 슬라이더 막대를 [파일럿] 또는 [모두]로 이동합니다. 
 
 이 워크로드를 전환하면 Intune에서 배포된 사용 가능한 모든 앱을 회사 포털에서 사용할 수 있습니다. Configuration Manager에서 배포하는 앱은 소프트웨어 센터에서 사용할 수 있습니다. 
 
@@ -215,7 +224,8 @@ MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.co
 
 
 ## <a name="bkmk_bgoptions"> </a> 피어 다운로드를 위한 경계 그룹 옵션
-<!--1356193--> 이제 경계 그룹에는 사용자 환경에서 콘텐츠 배포를 보다 세밀하게 제어할 수 있는 추가 설정이 포함됩니다. 이 릴리스에서는 다음 옵션을 추가합니다.  
+<!--1356193-->
+이제 경계 그룹에는 사용자 환경에서 콘텐츠 배포를 보다 세밀하게 제어할 수 있는 추가 설정이 포함됩니다. 이 릴리스에서는 다음 옵션을 추가합니다.  
 
 - **이 경계 그룹에서 피어 다운로드 허용**: 이 설정은 기본값으로 사용 가능합니다. 관리 지점은 피어 원본을 포함하는 콘텐츠 위치 목록을 클라이언트에 제공합니다. <!--This setting also affects applying Group IDs for Delivery Optimization.518268-->  
 
@@ -240,7 +250,8 @@ MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.co
 
 
 ## <a name="bkmk_3pupdate"> </a> 사용자 지정 카탈로그에 대한 타사 소프트웨어 업데이트 지원
-<!--1358714--> 이 릴리스에서는 [UserVoice 피드백](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/8803711-3rd-party-patching-scup-integration-with-sccm-co)의 결과로서 타사 소프트웨어 업데이트에 대한 지원을 계속 반복합니다. [기술 미리 보기 버전 1806](/sccm/core/get-started/capabilities-in-technical-preview-1806#bkmk-3pupdate)에서는 소프트웨어 공급업체의 등록된 카탈로그인 *파트너 카탈로그*를 지원했습니다. 사용자가 제공하고 Microsoft에 등록되지 않은 카탈로그를 *사용자 지정 카탈로그*라고 합니다. Configuration Manager 콘솔에서 사용자 지정 카탈로그를 추가하세요.  
+<!--1358714-->
+이 릴리스에서는 [UserVoice 피드백](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/8803711-3rd-party-patching-scup-integration-with-sccm-co)의 결과로서 타사 소프트웨어 업데이트에 대한 지원을 계속 반복합니다. [기술 미리 보기 버전 1806](/sccm/core/get-started/capabilities-in-technical-preview-1806#bkmk-3pupdate)에서는 소프트웨어 공급업체의 등록된 카탈로그인 *파트너 카탈로그*를 지원했습니다. 사용자가 제공하고 Microsoft에 등록되지 않은 카탈로그를 *사용자 지정 카탈로그*라고 합니다. Configuration Manager 콘솔에서 사용자 지정 카탈로그를 추가하세요.  
 
 
 ### <a name="prerequisites"></a>필수 구성 요소 
@@ -309,12 +320,13 @@ MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.co
 
     - [Azure Resource Manager를 사용하여 클라우드 배포 지점](/sccm/core/get-started/capabilities-in-technical-preview-1805#cloud-distribution-point-support-for-azure-resource-manager) 배포  
 
-- 고객이 Windows AutoPilot을 사용하여 온-프레미스 네트워크에 연결된 Azure Active Directory 가입 디바이스에서 Windows 10을 프로비전하고 있습니다. 이러한 디바이스에 Configuration Manager 클라이언트를 설치하거나 업그레이드하기 위해 **클라이언트의 익명 연결을 허용**하도록 구성된 클라우드 배포 지점이나 온-프레미스 배포 지점이 필요하지 않습니다. 대신 **HTTP 사이트 시스템에 Configuration Manager가 생성한 인증서 사용** 사이트 옵션을 설정하여 클라우드 도메인 가입 클라이언트가 온-프레미스 HTTP 사용 배포 지점과 통신하도록 허용합니다. 자세한 내용은 [개선된 보안 클라이언트 통신](https://docs.microsoft.com/en-us/sccm/core/get-started/capabilities-in-technical-preview-1805#improved-secure-client-communications)을 참조하세요.<!--515854-->  
+- 고객이 Windows AutoPilot을 사용하여 온-프레미스 네트워크에 연결된 Azure Active Directory 가입 디바이스에서 Windows 10을 프로비전하고 있습니다. 이러한 디바이스에 Configuration Manager 클라이언트를 설치하거나 업그레이드하기 위해 **클라이언트의 익명 연결을 허용**하도록 구성된 클라우드 배포 지점이나 온-프레미스 배포 지점이 필요하지 않습니다. 대신 **HTTP 사이트 시스템에 Configuration Manager가 생성한 인증서 사용** 사이트 옵션을 설정하여 클라우드 도메인 가입 클라이언트가 온-프레미스 HTTP 사용 배포 지점과 통신하도록 허용합니다. 자세한 내용은 [개선된 보안 클라이언트 통신](https://docs.microsoft.com/sccm/core/get-started/capabilities-in-technical-preview-1805#improved-secure-client-communications)을 참조하세요.<!--515854-->  
 
 
 
 ## <a name="bkmk_report"> </a> 새 소프트웨어 업데이트 준수 보고서
-<!--1357775--> 소프트웨어 업데이트 준수에 대한 보고서 보기에는 일반적으로 최근 사이트에 연결하지 않은 클라이언트의 데이터가 포함됩니다. 새 보고서에서는 특정 소프트웨어 업데이트 그룹에 대한 준수 결과를 “정상” 클라이언트별로 필터링할 수 있습니다. 이 보고서에서는 사용자 환경에서 활성 클라이언트의 보다 사실적인 준수 상태를 보여 줍니다. 
+<!--1357775-->
+소프트웨어 업데이트 준수에 대한 보고서 보기에는 일반적으로 최근 사이트에 연결하지 않은 클라이언트의 데이터가 포함됩니다. 새 보고서에서는 특정 소프트웨어 업데이트 그룹에 대한 준수 결과를 “정상” 클라이언트별로 필터링할 수 있습니다. 이 보고서에서는 사용자 환경에서 활성 클라이언트의 보다 사실적인 준수 상태를 보여 줍니다. 
  
 보고서를 보려면 **모니터링** 작업 영역으로 이동하여 **보고**, **보고서**, **소프트웨어 업데이트 – A 호환성**을 차례로 확장한 다음, **준수 9 - 전체 상태 및 준수**를 선택합니다. **업데이트 그룹**, **컬렉션 이름** 및 **클라이언트 상태**를 지정합니다.
 

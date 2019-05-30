@@ -2,7 +2,7 @@
 title: 타사 MDM 공존성
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 타사 MDM 서비스를 사용하는 방법에 대해 알아보기
-ms.date: 04/26/2019
+ms.date: 05/21/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,18 +11,18 @@ ms.assetid: ed4dc65e-e5d5-4f75-88ac-f4849ec8fc10
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6abf4c81d03d5887294c85337b403a6fb17dca98
-ms.sourcegitcommit: 23852dda81bb8496dd10c0a8ec4f740a8e15efc3
+ms.openlocfilehash: 5fbb2d4a902c21ac2fa2186bba70f58d66e50c48
+ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64873372"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66176844"
 ---
 # <a name="third-party-mdm-coexistence-with-configuration-manager"></a>Configuration Manager와 타사 MDM 공존
 
 Configuration Manager 및 Microsoft Intune을 둘 다 사용해서 Windows 10 디바이스를 동시에 관리할 경우 이 기능을 [공동 관리](/sccm/comanage/overview)라고 합니다. Configuration Manager로 디바이스를 관리하고 타사 MDM 서비스에 등록하는 경우 이 기능을 *공존*이라고 합니다. 두 관리 기관을 제대로 오케스트레이션하지 못한 상태에서 단일 디바이스 관리에 사용하는 일은 어려운 일일 수 있습니다. 공동 관리를 사용하면 Configuration Manager와 Intune이 [워크로드](/sccm/comanage/workloads)의 균형을 유지하여 충돌이 일어나지 않도록 합니다. 이러한 상호 작용은 타사 서비스와 공존하지 않으므로 공존의 관리 기능은 제한됩니다.
 
-구성 관리자 클라이언트는 Azure Active Directory에 가입된 디바이스에서 타사 MDM 서비스와 공존할 수 있습니다. 이러한 디바이스는 다음 유형 중 하나일 수 있습니다.
+Configuration Manager 클라이언트는 Windows 10 버전 1709 이상을 실행하며 Azure Active Directory에 가입된 디바이스에서 타사 MDM 서비스와 공존할 수 있습니다. 이러한 디바이스는 다음 유형 중 하나일 수 있습니다.
 
 - [Azure AD 조인](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)만 (이 유형은 “클라우드 도메인 연결”이라고도 함)  
 

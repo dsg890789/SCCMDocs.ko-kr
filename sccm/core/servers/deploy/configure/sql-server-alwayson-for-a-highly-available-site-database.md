@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08f5e0d9986c59d9a2a37c26f3ed9e245ac62f41
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 6f70373f1fea7928e801c0ccdbbe75cf96e54d20
+ms.sourcegitcommit: f531d0a622f220739710b2fe6644ea58d024064a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56120047"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65933534"
 ---
 # <a name="prepare-to-use-sql-server-always-on-availability-groups-with-configuration-manager"></a>Configuration Manager에서 SQL Server Always On 가용성 그룹 사용 준비
 
@@ -61,10 +61,10 @@ Configuration Manager에서의 가용성 그룹 사용을 위해 다음 시나�
 ### <a name="sql-server"></a>SQL Server
 
 #### <a name="version"></a>Version  
-가용성 그룹의 각 복제본은 사용하는 Configuration Manager 버전에서 지원하는 SQL Server 버전을 실행해야 합니다. SQL Server에서 지원될 경우 가용성 그룹의 노드별로 다른 SQL Server 버전을 실행할 수 있습니다. 자세한 내용은 [Configuration Manager에 대한 지원되는 SQL Server 버전](/sccm/core/plan-design/configs/support-for-sql-server-versions)<!--SCCMDocs issue 656-->을 참조하세요.
+가용성 그룹의 각 복제본은 사용하는 Configuration Manager 버전에서 지원하는 SQL Server 버전을 실행해야 합니다. SQL Server에서 지원될 경우 가용성 그룹의 노드별로 다른 SQL Server 버전을 실행할 수 있습니다. 자세한 내용은 [Configuration Manager에 대한 지원되는 SQL Server 버전](/sccm/core/plan-design/configs/support-for-sql-server-versions)을 참조하세요.<!--SCCMDocs issue 656-->
 
 #### <a name="edition"></a>버전  
-SQL Server의 ‘Enterprise’ Edition을 사용합니다.
+SQL Server의 ‘Enterprise’ Edition을 사용합니다. 
 
 #### <a name="account"></a>계정  
 SQL Server의 각 인스턴스는 도메인 사용자 계정(**서비스 계정**) 또는 비도메인 계정에서 실행될 수 있습니다. 그룹의 각 복제본은 구성이 다를 수 있습니다. 
@@ -88,13 +88,13 @@ SQL Server의 각 인스턴스는 도메인 사용자 계정(**서비스 계정*
 - 비동기 커밋 복제본을 사용하여 동기 복제본을 복구할 수 있습니다. 자세한 내용은 [사이트 데이터베이스 복구 옵션](/sccm/core/servers/manage/backup-and-recovery#BKMK_SiteDatabaseRecoveryOption)을 참조하세요.  
 
     > [!Warning]  
-    > Configuration Manager에서는 비동기 커밋 복제본을 사이트 데이터베이스로 사용하기 위한 *장애 조치*를 지원하지 않습니다. 자세한 내용은 [장애 조치(Failover) 및 장애 조치(Failover) 모드(Always On 가용성 그룹)](https://docs.microsoft.com/en-us/sql/database-engine/availability-groups/windows/failover-and-failover-modes-always-on-availability-groups?view=sql-server-2014)를 참조하세요.  
+    > Configuration Manager에서는 비동기 커밋 복제본을 사이트 데이터베이스로 사용하기 위한 *장애 조치*를 지원하지 않습니다. 자세한 내용은 [장애 조치(Failover) 및 장애 조치(Failover) 모드(Always On 가용성 그룹)](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/failover-and-failover-modes-always-on-availability-groups?view=sql-server-2014)를 참조하세요.  
 
 Configuration Manager에서는 비동기 커밋 복제본의 상태를 확인하여 최신임을 확인하지 않습니다. 비동기 커밋 복제본을 사이트 데이터베이스로 사용하면 사이트와 데이터의 무결성이 위험해질 수 있습니다. 설계 상, 이러한 복제본은 동기화되지 않을 수 있습니다. 자세한 내용은 [AlwaysOn 가용성 그룹 개요(SQL Server)](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/overview-of-always-on-availability-groups-sql-server)를 참조하세요.
 
 각 복제 구성원에는 다음 항목이 구성되어 있어야 합니다.
 
-- ‘기본 인스턴스’나 ‘명명된 인스턴스’를 사용합니다.  
+- ‘기본 인스턴스’나 ‘명명된 인스턴스’를 사용합니다.    
 
 - **주 역할의 연결** 설정은 **모든 연결 허용**입니다.  
 
@@ -159,7 +159,7 @@ Configuration Manager 설치 프로그램을 사용하여 가용성 그룹에서
 
 - **Max text repl size**는 `2147483647`로 설정합니다.  
 
-- 데이터베이스 소유자를 ‘SA 계정’으로 설정합니다.  
+- 데이터베이스 소유자를 ‘SA 계정’으로 설정합니다.   
 
 - **TRUSTWORTY** 설정을 **ON**으로 지정합니다. 자세한 내용은 [TRUSTWORTHY 데이터베이스 속성](https://docs.microsoft.com/sql/relational-databases/security/trustworthy-database-property)을 참조하세요.   
 
@@ -247,7 +247,8 @@ Configuration Manager 설치 프로그램을 사용하여 가용성 그룹에서
 - **MultiSubnetFailover**: 다중 서브넷 구성에서 가용성 그룹을 Configuration Manager에 사용하는 것은 지원되지 않습니다. [MutliSubnetFailover](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/create-or-configure-an-availability-group-listener-sql-server#MultiSubnetFailover) 키워드 연결 문자열도 사용할 수 없습니다.  
 
 #### <a name="sql-servers-that-host-additional-availability-groups"></a>추가 가용성 그룹을 호스트하는 SQL Server
-<!--SCCMDocs issue 649--> SQL Server에서 Configuration Manager에 사용하는 그룹 외에도 하나 이상의 가용성 그룹을 호스트하는 경우 Configuration Manager 설치 프로그램을 실행할 때 특정 설정을 수행해야 합니다. 이 설정은 Configuration Manager에 대한 업데이트를 설치하는 데에도 필요합니다. 각 가용성 그룹의 각 복제본에는 다음 항목이 구성되어 있어야 합니다.
+<!--SCCMDocs issue 649-->
+SQL Server에서 Configuration Manager에 사용하는 그룹 외에도 하나 이상의 가용성 그룹을 호스트하는 경우 Configuration Manager 설치 프로그램을 실행할 때 특정 설정을 수행해야 합니다. 이 설정은 Configuration Manager에 대한 업데이트를 설치하는 데에도 필요합니다. 각 가용성 그룹의 각 복제본에는 다음 항목이 구성되어 있어야 합니다.
 
 - 수동 장애 조치  
 - 모든 읽기 전용 연결을 허용  
@@ -268,7 +269,8 @@ Configuration Manager 설치 프로그램을 실행하여 사이트 데이터베
 이러한 오류는 무시해도 됩니다.
 
 #### <a name="site-expansion"></a>사이트 확장
-<!--SCCMDocs issue 568--> SQL Always On을 사용하도록 독립 실행형 기본 사이트용 사이트 데이터베이스를 구성하는 경우 중앙 관리 사이트를 포함 하도록 사이트를 확장할 수 없습니다. 이 프로세스를 시도하면 실패합니다. 사이트를 확장하려면 가용성 그룹에서 기본 사이트 데이터베이스를 일시적으로 제거하세요.
+<!--SCCMDocs issue 568-->
+SQL Always On을 사용하도록 독립 실행형 기본 사이트용 사이트 데이터베이스를 구성하는 경우 중앙 관리 사이트를 포함 하도록 사이트를 확장할 수 없습니다. 이 프로세스를 시도하면 실패합니다. 사이트를 확장하려면 가용성 그룹에서 기본 사이트 데이터베이스를 일시적으로 제거하세요.
 
 
 

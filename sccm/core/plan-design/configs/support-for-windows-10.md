@@ -2,7 +2,7 @@
 title: Windows 10에 대한 지원
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager가 OSD나 클라이언트로 지원되는 Windows 10 버전에 대해 알아보세요.
-ms.date: 03/27/2019
+ms.date: 05/21/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,24 +11,25 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c20c4219ce9fedda0cf18d1f1fcc0241a9c058ca
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: d3ac15d0039377d4635e531052abcec72503b1c4
+ms.sourcegitcommit: d1df13fc95a1f1540177c294555d9be26161b9cb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65499484"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65974180"
 ---
 # <a name="support-for-windows-10-in-configuration-manager"></a>Configuration Manager의 Windows 10에 대한 지원  
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 다음을 포함하여 Configuration Manager가 지원하는 Windows 10 버전에 대해 알아봅니다.
+
 - [Configuration Manager 클라이언트인 Windows 10](#windows-10-as-a-client)
 - [Windows 10용 Windows ADK(평가 및 배포 키트)](#windows-10-adk)
 
 > [!Tip]
 > 클라이언트인 Windows Server 빌드는 연결된 Windows 10 버전과 동일하게 지원됩니다. 예를 들어 Windows Server 2016은 Windows 10 LTSB 2016과 동일한 빌드 버전이고 Windows Server 버전 1803은 Windows 10 버전 1803과 동일한 빌드 버전입니다.
-> 
+>
 > 사이트 시스템인 Windows Server에 대한 자세한 내용은 [Configuration Manager 사이트 시스템 서버에 대해 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-site-system-servers#the-server-core-installation-of-windows-server-version-1803)를 참조하세요.
 
 
@@ -55,25 +56,25 @@ Configuration Manager 버전은 [해당 버전의 지원](/sccm/core/servers/man
 |---------------------|-----|-----|-----|-----|-----|
 | Enterprise 2015 LTSB <!--10/14/2025-->   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
 | Enterprise 2016 LTSB <!--10/13/2026-->   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
-| Enterprise LTSC 2019 <!--10/10/2028-->   | ![지원되지 않음](media/Red_X.png)   | ![지원되지 않음](media/Red_X.png)   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
-| 1607   <!--04/09/2019-->   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
+| Enterprise LTSC 2019 <!--01/09/2029-->   | ![지원되지 않음](media/Red_X.png)   | ![지원되지 않음](media/Red_X.png)   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
 | 1703   <!--10/08/2019-->   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
 | 1709   <!--04/14/2020-->   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
 | 1803   <!--11/10/2020-->   | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
-| 1809   <!--04/12/2021?-->   | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
+| 1809   <!--05/11/2021-->   | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
+| 1903   <!--TBD-->   | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) |
 
 <!-- lifecycle reference: https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet -->
 
 > [!Note]  
-> Windows 10 반기 채널 버전에 대한 지원에는 Enterprise, Pro, Education 및 Pro Education 버전이 포함됩니다.   
+> Windows 10 반기 채널 버전에 대한 지원에는 Enterprise, Pro, Education 및 Pro Education 버전이 포함됩니다.  
 
 | 키 |
 |--|
 | ![지원됨](media/green_check.png) = **지원됨**  |
 | ![지원 안 됨](media/Red_X.png) = **지원 안 됨** |
 
- > [!NOTE]  
- > 버전 1802부터 Configuration Manager는 Windows 10 ARM64 디바이스의 클라이언트를 지원합니다. 기존 클라이언트 관리 기능도 이러한 새 디바이스에서 작동합니다. 예를 들어 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 업데이트, 애플리케이션 관리 등입니다. OS 배포는 현재 지원되지 않습니다. <!-- 1353704 --> 
+> [!NOTE]  
+> 버전 1802부터 Configuration Manager는 Windows 10 ARM64 디바이스의 클라이언트를 지원합니다. 기존 클라이언트 관리 기능도 이러한 새 디바이스에서 작동합니다. 예를 들어 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 업데이트, 애플리케이션 관리 등입니다. OS 배포는 현재 지원되지 않습니다. <!-- 1353704 -->
 
 Windows 수명 주기에 대한 자세한 내용은 [Windows 수명 주기 팩트 시트](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)를 참조하세요.
 
@@ -95,6 +96,7 @@ Configuration Manager로 운영 체제를 배포할 때 Windows ADK는 필요한
 | **1709**<br>(10.1.16299) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![이전 버전과 호환](media/blue_compat.png) | ![지원되지 않음](media/Red_X.png)   | ![지원되지 않음](media/Red_X.png) |
 | **1803**<br>(10.1.17134) | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![이전 버전과 호환](media/blue_compat.png) | ![이전 버전과 호환](media/blue_compat.png) |
 | **1809**<br>(10.1.17763) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
+| **1903**<br>(10.1.18362) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) |
 
 |키|
 |--|
@@ -103,7 +105,7 @@ Configuration Manager로 운영 체제를 배포할 때 Windows ADK는 필요한
 | ![지원 안 됨](media/Red_X.png) = **지원 안 됨** |
 
 > [!Note]  
-> Configuration Manager는 Windows 10 ADK의 x86 및 amd64 구성 요소만을 지원합니다. 현재 ARM 또는 ARM64 구성 요소를 지원하지 않습니다. 
+> Configuration Manager는 Windows 10 ADK의 x86 및 amd64 구성 요소만을 지원합니다. 현재 ARM 또는 ARM64 구성 요소를 지원하지 않습니다.
 
 > [!Tip]
 > Windows Server 빌드에는 연관된 Windows 10 버전과 동일한 Windows ADK 요구 사항이 있습니다. 예를 들어, Windows Server 2016은 Windows 10 LTSB 2016과 동일한 빌드 버전입니다.

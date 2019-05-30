@@ -12,12 +12,12 @@ ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93862e95a3bae13582c2aa70daf2db22f9d621d8
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: cc88e70360599391c84e54e41e73b53ef3b70678
+ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65495464"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177031"
 ---
 # <a name="what39s-new-in-version-1706-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1706의 새로운 기능
 
@@ -188,7 +188,7 @@ Configuration Manager에서 패키지 및 프로그램을 사용하여 클라이
 <!--1324760-->
 이 릴리스부터 3개의 새 MAM(모바일 애플리케이션 관리) 정책 설정을 사용할 수 있습니다.
 
-- **화면 캡처 차단(Android 디바이스 전용)**: 이 앱을 사용할 때 디바이스의 화면 캡처 기능을 차단하도록 지정합니다.
+- **화면 캡처 차단(Android 디바이스 전용)** : 이 앱을 사용할 때 디바이스의 화면 캡처 기능을 차단하도록 지정합니다.
 
 새로운 앱 보호 정책 설정을 사용하려면 [Configuration Manager에서 앱 보호 정책을 사용하여 앱 보호](https://docs.microsoft.com/sccm/mdm/deploy-use/protect-apps-using-mam-policies)를 참조하세요.
 

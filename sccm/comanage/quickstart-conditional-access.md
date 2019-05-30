@@ -2,7 +2,7 @@
 title: 공동 관리를 사용하는 조건부 액세스
 titleSuffix: Configuration Manager
 description: Intune의 준수 규칙에 따라 조직 리소스에 대한 사용자 액세스 제어
-ms.date: 01/14/2019
+ms.date: 05/13/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d5e5c7d6075697431f8c537366dc16164fedd1f
-ms.sourcegitcommit: 9aebc20b25cdef0af908918ccfd791f3264a5d94
+ms.openlocfilehash: a48dd82b1f4c79953ce88c5e156abe47b891ac14
+ms.sourcegitcommit: d1df13fc95a1f1540177c294555d9be26161b9cb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "56755205"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65973944"
 ---
 # <a name="conditional-access-with-co-management"></a>공동 관리를 사용하는 조건부 액세스
 
@@ -34,7 +34,7 @@ ms.locfileid: "56755205"
 
     - 공동 관리하는 디바이스의 경우 Configuration Manager도 구성 기반 평가를 수행합니다. 예를 들어 필수 업데이트 또는 앱을 준수하는지 평가합니다. Intune은 이 평가를 자체 평가와 결합합니다.  
 
-2. Intune은 디바이스에서 활성 보안 인시던트를 검색합니다. [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/get-started) 및 기타 [모바일 위협 방어 공급자](https://www.lookout.com/about/partners/microsoft)의 지능형 보안을 사용합니다. 이러한 파트너는 디바이스에서 지속적인 동작 분석을 실행합니다. 이 분석에서는 활성 인시던트를 검색한 다음 이 정보를 실시간 준수 평가를 위해 Intune에 전달합니다.  
+2. Intune은 디바이스에서 활성 보안 인시던트를 검색합니다. [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/get-started)(이전 Windows Defender ATP) 및 기타 [모바일 위협 방어 공급자](https://www.lookout.com/about/partners/microsoft)의 인텔리전트 보안을 사용합니다. 이러한 파트너는 디바이스에서 지속적인 동작 분석을 실행합니다. 이 분석에서는 활성 인시던트를 검색한 다음 이 정보를 실시간 준수 평가를 위해 Intune에 전달합니다.  
 
     - 이 평가는 사전 보안 위반 및 인시던트 기반입니다.  
 
@@ -63,7 +63,7 @@ Microsoft 부사장인 Brad Anderson이 2018 Ignite 키노트 중 라이브 데�
 
 조건부 액세스는 [제로 트러스트 네트워크](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/14/building-zero-trust-networks-with-microsoft-365/) 아키텍처를 개발할 때도 중요한 부분입니다. 조건부 액세스를 사용하는 규격 디바이스 액세스 제어는 제로 트러스트 네트워크의 기본 계층입니다. 이 기능은 미래에 조직을 보호하는 방법의 중요한 부분입니다.
 
-자세한 내용은 [Enhancing conditional access with machine-risk data from Windows Defender Advanced Threat Protection](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Enhancing-conditional-access-with-machine-risk-data-from-Windows/ba-p/250559)(Windows Defender Advanced Threat Protection에서 머신 위험 데이터를 사용하여 조건부 액세스 개선)의 블로그 게시물을 참조하세요.
+자세한 내용은 [Enhancing conditional access with machine-risk data from Microsoft Defender Advanced Threat Protection](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Enhancing-conditional-access-with-machine-risk-data-from-Windows/ba-p/250559)(Microsoft Defender Advanced Threat Protection에서 머신 위험 데이터를 사용하여 조건부 액세스 개선)의 블로그 게시물을 참조하세요.
 
 
 
@@ -71,7 +71,7 @@ Microsoft 부사장인 Brad Anderson이 2018 Ignite 키노트 중 라이브 데�
 
 IT 컨설팅 업체인 Wipro는 조건부 액세스를 사용하여 91,000여 직원이 사용하는 디바이스를 보호하고 관리합니다. 최근 사례 연구에서 Wipro의 IT 담당 부사장은 다음과 같이 설명했습니다.
 
-> *조건부 액세스를 달성한 것은 Wipro에게 큰 성과입니다. 이제 모든 직원이 온디맨드를 정보에 모바일 액세스할 수 있습니다.*
+> *조건부 액세스를 달성한 것은 Wipro에게 큰 성과입니다. 이제 모든 직원이 온디맨드를 정보에 모바일 액세스할 수 있습니다.* 
 > *보안 상태와 직원 생산성이 향상되었습니다. 이제 91,000여 직원이 어디서나 원하는 디바이스에서 100개 이상의 앱에 안전하게 액세스할 수 있습니다.*
 
 <!-- waiting for the case study to be public
@@ -80,7 +80,7 @@ For more information, see [Wipro drives mobile productivity with Microsoft cloud
 
 다른 예는 다음과 같습니다. 
 
-- Nestle는 150,000명이 넘은 직원을 대상으로 앱 기반 조건부 액세스를 사용합니다.  
+- Nestlé는 150,000명이 넘은 직원을 대상으로 앱 기반 조건부 액세스를 사용합니다.  
 
 - 자동화 소프트웨어 회사 Cadence는 이제 “관리형 디바이스만 Teams 및 회사 인트라넷과 같은 Office 365 앱에 액세스할 수 있습니다." 또한 직원이 “Workday 및 Salesforce 같은 다른 클라우드 기반 앱에도 더 안전하게 액세스”할 수 있습니다. Cadence의 Intune 사용 경험에 대한 자세한 내용은 [Cadence increases the pace of business with mobile collaboration tools in Microsoft 365](https://customers.microsoft.com/story/cadence-partner-professional-services-microsoft-365)(Cadence, Microsoft 365의 모바일 협업 도구로 비즈니스 속도 향상)를 참조하세요.
 
@@ -99,7 +99,7 @@ Intune은 Cisco ISE, Aruba Clear Pass, Citrix NetScaler 등과 같은 파트너�
 
 조건부 액세스는 EMS(Enterprise Mobility + Security)의 핵심 구성 요소이므로 온-프레미스 설정이나 아키텍처가 필요하지 않습니다. Intune 및 Azure AD(Azure Active Directory)를 사용하면 클라우드에서 조건부 액세스를 신속하게 구성할 수 있습니다. 현재 Configuration Manager를 사용하는 경우 공동 관리를 사용하여 환경을 클라우드로 쉽게 확장하고 바로 사용할 수 있습니다.
 
-ATP 통합에 대한 자세한 내용은 [Windows Defender ATP device risk score exposes new cyberattack, drives Conditional access to protect networks](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/28/windows-defender-atp-device-risk-score-exposes-new-cyberattack-drives-conditional-access-to-protect-networks/)(Windows Defender ATP 디바이스 위험 점수를 통해 새 사이버 공격을 탐지하고 조건부 액세스를 적용하여 네트워크 보호) 블로그 게시물을 참조하세요. 이 블로그에서는 고급 해커 그룹이 기존에 보지 못한 도구를 사용한 방법을 자세히 설명합니다. Microsoft 클라우드에서는 대상 사용자가 조건부 액세스하므로 이 그룹을 감지하고 중지시켰습니다. 침입으로 디바이스의 위험 기반 조건부 액세스 정책이 활성화되었습니다. 공격자가 이미 네트워크에 진입했지만, 악용된 머신에서 Azure AD로 관리되는 조직 서비스 및 데이터에 액세스하는 권한이 자동으로 제한되었습니다.
+ATP 통합에 대한 자세한 내용은 [Microsoft Defender ATP device risk score exposes new cyberattack, drives Conditional access to protect networks](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/28/windows-defender-atp-device-risk-score-exposes-new-cyberattack-drives-conditional-access-to-protect-networks/)(Microsoft Defender ATP 디바이스 위험 점수를 통해 새 사이버 공격을 탐지하고 조건부 액세스를 적용하여 네트워크 보호) 블로그 게시물을 참조하세요. 이 블로그에서는 고급 해커 그룹이 기존에 보지 못한 도구를 사용한 방법을 자세히 설명합니다. Microsoft 클라우드에서는 대상 사용자가 조건부 액세스하므로 이 그룹을 감지하고 중지시켰습니다. 침입으로 디바이스의 위험 기반 조건부 액세스 정책이 활성화되었습니다. 공격자가 이미 네트워크에 진입했지만, 악용된 머신에서 Azure AD로 관리되는 조직 서비스 및 데이터에 액세스하는 권한이 자동으로 제한되었습니다.
 
 
 

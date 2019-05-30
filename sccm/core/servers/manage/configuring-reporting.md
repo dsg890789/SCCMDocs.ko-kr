@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c65c85c6ec340fe595efa3bfd403e3c8d1d6a017
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: aa7d623cdd27258a265cd1b1ad22edeb78fe4da8
+ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56134676"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177009"
 ---
 # <a name="configuring-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 보고 구성
 

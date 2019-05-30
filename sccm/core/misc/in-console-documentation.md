@@ -1,6 +1,6 @@
 ---
 title: 콘솔 내 설명서
-ms.date: 04/05/2019
+ms.date: 05/15/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,12 +10,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5959cb6af3fb7c433d02b21a8a8f8d99b991d8a6
-ms.sourcegitcommit: ab9f2a7fb7ea3a0c65808fce2975ab25a670281f
+ms.openlocfilehash: 81ebb0f12c7ef048d46eea2c13586b77b1fae326
+ms.sourcegitcommit: cab3dba5ebfe90f28cedee03c1840c9a395160cc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65612568"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65839043"
 ---
 <!-- 
 - Feature 1357546
@@ -26,7 +26,11 @@ ms.locfileid: "65612568"
 
 # <a name="configuration-manager-documentation"></a>Configuration Manager 설명서
 
+*마지막 업데이트: 05/15/2019*
+
 이 콘텐츠는 Configuration Manager의 학습과 지원에 도움이 될 수 있습니다.
+
+(참고: 이 콘텐츠는 이전 달의 데이터를 통해 매월 두 번째 월요일에 업데이트됩니다.)
 
 자세한 내용은 다음 아티클을 참조하세요.
 
@@ -47,24 +51,23 @@ ms.locfileid: "65612568"
 - [기술 미리 보기 릴리스](https://docs.microsoft.com/sccm/core/get-started/technical-preview)
 - [클라우드 서비스를 사용하여 온-프레미스 인프라 보충](https://docs.microsoft.com/sccm/core/understand/use-cloud-services)
 - [클라우드 관리 게이트웨이에 대한 계획](https://docs.microsoft.com/sccm/core/clients/manage/plan-cloud-management-gateway)
-- [계층 구조 간에 데이터 마이그레이션](https://docs.microsoft.com/sccm/core/migration/migrate-data-between-hierarchies)
 
 ## <a name="trending"></a>인기
 
-2019년 3월의 가장 인기 있는 문서입니다.
+2019년 4월 1일에서 4월 30일 사이의 문서가 가장 인기 있는 문서입니다.
 
 | 페이지 보기 | 제목 |
 |------------|-------|
-| 21716 | [문제 해결을 위한 로그 파일](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files)
-| 13321 | [버전 1810의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1810)
-| 11671 | [연결에 사용되는 포트](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/ports)
-| 10930 | [Windows에 클라이언트 배포](https://docs.microsoft.com/sccm/core/clients/deploy/deploy-clients-to-windows-computers)
-| 8944 | [업데이트 및 서비스](https://docs.microsoft.com/sccm/core/servers/manage/updates)
-| 8941 | [Windows 10에 대한 지원](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10)
-| 8844 | [콘솔 설치](https://docs.microsoft.com/sccm/core/servers/deploy/install/install-consoles)
-| 8797 | [클라이언트 설치 매개 변수 및 속성](https://docs.microsoft.com/sccm/core/clients/deploy/about-client-installation-properties)
-| 8035 | [Office 365 ProPlus 업데이트 관리](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates)
-| 7866 | [애플리케이션 배포](https://docs.microsoft.com/sccm/apps/deploy-use/deploy-applications)
+| 21698 | [문제 해결을 위한 로그 파일](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files) |
+| 21409 | [버전 1902의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1902) |
+| 11870 | [연결에 사용되는 포트](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/ports) |
+| 10980 | [Windows에 클라이언트 배포](https://docs.microsoft.com/sccm/core/clients/deploy/deploy-clients-to-windows-computers) |
+| 9937 | [Windows 10에 대한 지원](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10) |
+| 9101 | [콘솔 설치](https://docs.microsoft.com/sccm/core/servers/deploy/install/install-consoles) |
+| 9003 | [업데이트 및 서비스](https://docs.microsoft.com/sccm/core/servers/manage/updates) |
+| 8383 | [버전 1810의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1810) |
+| 8237 | [1902에 대한 검사 목록](https://docs.microsoft.com/sccm/core/servers/manage/checklist-for-installing-update-1902) |
+| 8140 | [Office 365 ProPlus 업데이트 관리](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates) |
 
 ## <a name="recently-updated"></a>최근 업데이트 항목
 
@@ -72,16 +75,16 @@ ms.locfileid: "65612568"
 
 | 마지막 검토 | 제목 |
 |---------------|-------|
-| 2019/03/29 | [버전 1902의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1902)
-| 2019/03/29 | [기술 미리 보기 릴리스](https://docs.microsoft.com/sccm/core/get-started/technical-preview)
-| 2019/03/29 | [실시간 데이터에 대한 CMPivot](https://docs.microsoft.com/sccm/core/servers/manage/cmpivot)
-| 2019/03/29 | [기술 미리 보기 1903](https://docs.microsoft.com/sccm/core/get-started/2019/technical-preview-1903)
-| 2019/03/29 | [CMPivot 문제 해결](https://docs.microsoft.com/sccm/core/servers/manage/cmpivot-tsg)
-| 2019/03/27 | [필수 구성 요소 확인](https://docs.microsoft.com/sccm/core/servers/deploy/install/list-of-prerequisite-checks)
-| 2019/03/27 | [사이트 서버 고가용성](https://docs.microsoft.com/sccm/core/servers/deploy/configure/site-server-high-availability)
-| 2019/03/27 | [PowerShell 버전 1902 릴리스 정보](https://docs.microsoft.com/powershell/sccm/1902-release-notes)
-| 2019/03/27 | [확장된 상호 운용성 클라이언트](https://docs.microsoft.com/sccm/core/understand/interoperability-client)
-| 2019/03/27 | [접근성](https://docs.microsoft.com/sccm/core/understand/accessibility-features)
+| 5/2/2019 | [Wake on LAN 구성](https://docs.microsoft.com/sccm/core/clients/deploy/configure-wake-on-lan) |
+| 4/30/2019 | [공동 관리 모니터](https://docs.microsoft.com/sccm/comanage/how-to-monitor) |
+| 4/30/2019 | [SQL Server 보기](https://docs.microsoft.com/sccm/develop/core/understand/sqlviews/sql-server-views-configuration-manager) |
+| 4/29/2019 | [기술 미리 보기 1904](https://docs.microsoft.com/sccm/core/get-started/2019/technical-preview-1904) |
+| 4/26/2019 | [타사 MDM 공존성](https://docs.microsoft.com/sccm/comanage/coexistence) |
+| 4/23/2019 | [버전 1902의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1902) |
+| 4/20/2019 | [콘솔 설치](https://docs.microsoft.com/sccm/core/servers/deploy/install/install-consoles) |
+| 4/11/2019 | [OneDrive for Business 프로필](https://docs.microsoft.com/sccm/compliance/deploy-use/onedrive-profile) |
+| 4/4/2019 | [CMPivot 문제 해결](https://docs.microsoft.com/sccm/core/servers/manage/cmpivot-tsg) |
+| 4/3/2019 | [IProgressUI 인터페이스](https://docs.microsoft.com/sccm/develop/reference/core/clients/client-classes/iprogressui-interface) |
 
 ## <a name="troubleshooting-articles"></a>문제 해결 문서
 

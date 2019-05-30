@@ -2,7 +2,7 @@
 title: 하이브리드 MDM의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 디바이스 관리 기능에 대해 알아봅니다.
-ms.date: 05/23/2019
+ms.date: 05/28/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc41388c1586fc73ce93127dd0e6492f587d18be
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.openlocfilehash: b6a4cfbc7e9db5f4402278b73c2ca7ea1d869953
+ms.sourcegitcommit: 18a94eb78043cb565b05cd0e9469b939b29cccf0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66176682"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66355015"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 디바이스 관리의 새로운 기능
 
@@ -50,6 +50,12 @@ ms.locfileid: "66176682"
 ## <a name="may-2019"></a>2019 년 5 월
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
+
+#### <a name="windows-company-portal-app"></a>Windows 회사 포털 앱
+
+<!-- 3316993 -->
+
+Windows 회사 포털 앱을 이제에 레이블이 지정 된 새 페이지가 **장치**합니다. 합니다 **장치** 페이지에서는 사용자를 보여 줍니다. 모든 등록 된 장치입니다. 10.3.4291.0 버전을 사용할 경우 사용자는 회사 포털에서이 변경 표시 이상. 자세한 내용은 [Microsoft Intune 회사 포털 앱을 구성 하는 방법](https://docs.microsoft.com/intune/company-portal-app)합니다.
 
 #### <a name="android-enterprise-app-management"></a>Android 엔터프라이즈 앱 관리
 
@@ -284,7 +290,7 @@ Microsoft Intune 지원 계층 TLS (전송 보안) 1.2 이상 Intune를 기본�
 #### <a name="pin-prompt-when-you-change-fingerprints-or-face-id-on-an-ios-device"></a>iOS 디바이스에서 지문 또는 얼굴 ID를 변경할 때 표시되는 PIN 프롬프트
 
 <!--2637704-->  
-이제 iOS 디바이스에서 생체 인식 내용을 변경한 후 PIN을 입력하라는 메시지가 사용자에게 표시됩니다. 여기에는 등록된 지문 또는 얼굴 ID의 변경이 포함됩니다. 프롬프트의 타이밍은 ‘다음 시간 이후에 액세스 요구 사항 다시 확인:’ 시간 제한의 구성 방법에 따라 다릅니다.  PIN이 설정되지 않은 경우에는 설정하라는 메시지가 사용자에게 표시됩니다.  
+이제 iOS 디바이스에서 생체 인식 내용을 변경한 후 PIN을 입력하라는 메시지가 사용자에게 표시됩니다. 여기에는 등록된 지문 또는 얼굴 ID의 변경이 포함됩니다. 프롬프트의 타이밍은 ‘다음 시간 이후에 액세스 요구 사항 다시 확인:’ 시간 제한의 구성 방법에 따라 다릅니다.   PIN이 설정되지 않은 경우에는 설정하라는 메시지가 사용자에게 표시됩니다.  
 
 이 기능은 iOS에만 제공되고 iOS용 Intune 앱 SDK, 버전 8.1.1 이상을 통합하는 애플리케이션의 참여가 필요합니다. 대상 애플리케이션에 동작이 적용될 수 있도록 SDK의 통합이 필요합니다. 이 통합은 롤링 기반으로 특정 애플리케이션 팀에서 수행합니다. 참여하는 일부 앱에는 WXP, Outlook, Managed Browser 및 Yammer가 포함됩니다.
 
@@ -571,7 +577,7 @@ Windows 10 버전 1607 이상의 최종 사용자에게 Microsoft Store에 있�
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
-- **이제 Android Enterprise에 사용 가능한 응용 프로그램 배포가 지원됩니다.**    
+- **이제 Android Enterprise에 사용 가능한 응용 프로그램 배포가 지원됩니다.**     
   이제 Android Enterprise(이전의 Android for Work) 앱을 **필수** 외에도 **사용 가능**으로 배포할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 Android 애플리케이션 만들기](/sccm/mdm/deploy-use/creating-android-applications)를 참조하세요.
 
 

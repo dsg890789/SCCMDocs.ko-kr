@@ -2,7 +2,7 @@
 title: SMS 공급자에 대한 계획
 titleSuffix: Configuration Manager
 description: Configuration Manager의 SMS 공급 기업 사이트 시스템 역할에 대해 알아봅니다.
-ms.date: 03/12/2019
+ms.date: 05/21/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ff872817805c85665bde7219ca26de0bf8d78ef
-ms.sourcegitcommit: f38ef9afb0c608c0153230ff819e5f5e0fb1520c
+ms.openlocfilehash: 31818bf0b639db4172e090a68a704380208781ca
+ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58197115"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66176984"
 ---
 # <a name="plan-for-the-sms-provider"></a>SMS 공급자에 대한 계획 
 
@@ -259,9 +259,14 @@ Windows ADK를 설치하려면 SMS 공급자를 설치하는 각 컴퓨터에 �
 
 버전 1810부터 SMS 공급자는 **관리 서비스**라고 하는 WMI에 대한 읽기 전용 API 상호 운용성 액세스(HTTPS 이용)를 제공합니다. 사이트의 정보에 액세스하는 데 사용자 지정 웹 서비스 대신에 REST API를 사용할 수 있습니다.
 
-**관리 서비스** URL 형식은 `https://<servername>/AdminService/wmi/<ClassName>`입니다. 여기서 `<servername>`은 SMS 공급자를 설치한 서버이고 `<ClassName>`은 유효한 Configuration Manager WMI 클래스 이름입니다.
+**관리 서비스** URL 형식은 `https://<servername>/AdminService/wmi/<ClassName>`입니다. 여기서 `<servername>`은 SMS 공급자를 설치한 서버이고 `<ClassName>`은 유효한 Configuration Manager WMI 클래스 이름입니다. 버전 1810에서는 클래스 이름에 `SMS_` 접두어가 포함되지 않습니다. 1902 이상 버전에서는 이 클래스 이름이 WMI 클래스 이름과 같습니다. 
 
-예를 들면 `https://servername/AdminService/wmi/SMS_Site`
+예:
+- 1810: `https://servername/AdminService/wmi/Site`
+- 1902 이상: `https://servername/AdminService/wmi/SMS_Site`
+
+> [!Note]  
+> 관리 서비스 클래스 이름에서는 대/소문자가 구분됩니다. SMS_Site처럼 적절한 대/소문자를 사용합니다.
 
 Windows PowerShell cmdlet [Invoke-RestMethod](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-restmethod)를 사용하여 이 서비스에 직접 호출합니다.
 

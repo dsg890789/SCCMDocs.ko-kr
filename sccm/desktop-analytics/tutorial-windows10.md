@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28e0326cf370d000052eb3bc675e70377d7954c5
-ms.sourcegitcommit: 234f97fde834f94b75f90850378521cf0c5a2343
+ms.openlocfilehash: 7eb322550c6d11426240736d3d0c6b9ff2c9764f
+ms.sourcegitcommit: abfc9e1b3945637fa93ca8d3a11519493a5d5391
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64945100"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66264551"
 ---
 # <a name="tutorial-deploy-windows-10-to-pilot"></a>자습서: 파일럿을 Windows 10을 배포 합니다.
 
@@ -140,6 +140,10 @@ Azure 구독이 없으면 만듭니다는 [무료 계정](https://azure.microsof
 6. 새 또는 기존 작업 영역을 선택한 후 **데스크톱 Analytics 작업 영역으로 설정**합니다.  선택한 **계속** 에 **Confirm 및 권한 부여 액세스** 대화 합니다.  
 
 7. 새 브라우저 탭에서 계정을 사용 하 여 로그인을 선택 합니다. 옵션을 선택 **조직을 대신 하 여 동의** 선택한 **Accept**합니다.  
+
+
+    > [!Note]  
+    > 이 동의 MALogAnalyticsReader 응용 프로그램 작업 영역에 대 한 Log Analytics Reader 역할을 할당 하는 것입니다. 이 응용 프로그램 역할은 데스크톱 분석 필요 합니다. 자세한 내용은 [MALogAnalyticsReader 응용 프로그램 역할](/sccm/desktop-analytics/troubleshooting#bkmk_MALogAnalyticsReader)입니다.  
 
 8. 페이지에서 다시 **작업 영역 설정**를 선택 **다음**합니다.  
 
@@ -315,7 +319,7 @@ Configuration Manager는 연결을 만드는 60 분 내 컬렉션을 동기화 �
 
 다음으로, OS 업그레이드 패키지를 배포 지점에 배포합니다.  
 
-1. 목록에서 OS 업그레이드 패키지를 선택 합니다. 에 **홈** 리본 메뉴의 탭에서를 **배포** 그룹에서 **콘텐츠 배포**합니다. 콘텐츠 배포 마법사를 엽니다.  
+1. 목록에서 OS 업그레이드 패키지를 선택 합니다. 리본의 **홈** 탭에 있는 **배포** 그룹에서 **콘텐츠 배포**를 선택합니다. 콘텐츠 배포 마법사를 엽니다.  
 
 2. 에 **일반** 페이지에서 나열 된 콘텐츠가 배포 하 고 클릭 하려는 콘텐츠 확인 **다음**합니다.  
 

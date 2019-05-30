@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab5802ea43884ac23d434edd39569159ca48480a
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 6aa1c324a3ff24feb14c6b867728a76252a8c19d
+ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56138435"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66176027"
 ---
 # <a name="capabilities-in-technical-preview-1709-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1709의 기능
 
@@ -44,7 +44,8 @@ ms.locfileid: "56138435"
 **다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.**  
 
 ## <a name="improved-vpn-profile-experience-in-configuration-manager-console"></a>Configuration Manager 콘솔에서 개선된 VPN 프로필
-<!-- 1313282 --> 이 릴리스에서는 VPN 프로필 마법사 및 속성 페이지를 업데이트하여 선택한 플랫폼에 적절한 설정을 표시했습니다. 특히:
+<!-- 1313282 -->
+이 릴리스에서 선택된 플랫폼에 적절한 설정을 표시하기 위해 VPN 프로필 마법사 및 속성 페이지를 업데이트했습니다. 특히:
 
 - 각 플랫폼에는 고유한 워크플로가 있습니다. 즉, 새 VPN 프로필에는 플랫폼에서 지원되는 설정만 포함됩니다.
 - 이제 **지원되는 플랫폼** 페이지는 **일반** 페이지 뒤에 표시됩니다.  이제 속성 값을 설정하기 전에 플랫폼을 선택합니다.
@@ -78,7 +79,8 @@ ms.locfileid: "56138435"
 다른 플랫폼을 선택하면 선택한 플랫폼과 관련된 설정만 표시됩니다.
 
 ## <a name="co-management-for-windows-10-devices"></a>Windows 10 디바이스의 공동 관리    
-<!-- 1350871 --> 고객은 낮은 비용으로 간소화된 클라우드 기반 솔루션을 사용하여 모바일 디바이스를 관리하는 동일한 방식으로 Windows 10 디바이스를 관리하려고 합니다. 그러나 기존 관리에서 최신 관리로 전환하기가 어려울 수 있습니다. Windows 10 버전 1607(Anniversary Update라고도 함)부터는 Windows 10 디바이스를 온-프레미스 AD(Active Directory)와 클라우드 기반 Azure AD에 동시에 조인할 수 있습니다(하이브리드 Azure AD). 공동 관리에서는 이 향상된 기능을 사용하며 Configuration Manager 및 Intune을 둘 다 사용하여 Windows 10 디바이스를 동시에 관리할 수 있게 해줍니다. 이것은 기존 관리에서 최신 관리에 대한 연결을 제공하고 단계별 접근 방법을 사용하여 전환할 수 있는 경로를 제공하는 솔루션입니다. 
+<!-- 1350871 -->
+고객은 보통 낮은 비용으로 간소화된 클라우드 기반 솔루션을 사용하여 모바일 디바이스를 관리하는 동일한 방식으로 Windows 10 디바이스를 관리하려고 합니다. 그러나 기존 관리에서 최신 관리로 전환하기가 어려울 수 있습니다. Windows 10 버전 1607(Anniversary Update라고도 함)부터는 Windows 10 디바이스를 온-프레미스 AD(Active Directory)와 클라우드 기반 Azure AD에 동시에 조인할 수 있습니다(하이브리드 Azure AD). 공동 관리에서는 이 향상된 기능을 사용하며 Configuration Manager 및 Intune을 둘 다 사용하여 Windows 10 디바이스를 동시에 관리할 수 있게 해줍니다. 이것은 기존 관리에서 최신 관리에 대한 연결을 제공하고 단계별 접근 방법을 사용하여 전환할 수 있는 경로를 제공하는 솔루션입니다. 
 
 ### <a name="prerequisites"></a>필수 구성 요소
 공동 관리를 활성화하기 전에 다음 필수 구성 요소를 준비해야 합니다. 기존 Configuration Manager 클라이언트 및 클라이언트가 아닌 디바이스에 대한 일반 전제 조건 및 다른 필수 구성 요소가 있습니다.
@@ -109,10 +111,10 @@ ms.locfileid: "56138435"
 공동 관리를 활성화한 후에 Configuration Manager가 계속 모든 워크로드를 관리합니다. 준비되었는지 결정할 때 Intune으로 사용 가능한 워크로드를 관리하기 시작할 수 있습니다. 이 릴리스에서 Intune으로 다음과 같은 워크로드를 관리할 수 있습니다.   
 
 #### <a name="compliance-policies"></a>규정 준수 정책
-규정 준수 정책은 디바이스가 조건부 액세스 정책을 준수하는 것으로 간주되기 위해 준수해야 하는 규칙 및 설정을 정의합니다. 준수 정책을 사용하여 조건부 액세스와 독립적으로 디바이스를 모니터링하고 준수 문제를 수정할 수도 있습니다. 자세한 내용은 [디바이스 규정 준수 정책](https://docs.microsoft.com/en-us/sccm/mdm/deploy-use/device-compliance-policies)를 참조하세요.  
+규정 준수 정책은 디바이스가 조건부 액세스 정책을 준수하는 것으로 간주되기 위해 준수해야 하는 규칙 및 설정을 정의합니다. 준수 정책을 사용하여 조건부 액세스와 독립적으로 디바이스를 모니터링하고 준수 문제를 수정할 수도 있습니다. 자세한 내용은 [디바이스 규정 준수 정책](https://docs.microsoft.com/sccm/mdm/deploy-use/device-compliance-policies)를 참조하세요.  
 
 #### <a name="windows-update-for-business-policies"></a>비즈니스용 Windows 업데이트 정책
-비즈니스용 Windows 업데이트 정책을 통해 비즈니스용 Windows 업데이트에서 직접 관리되는 Windows 10 디바이스에 대한 Windows 10 기능 업데이트 또는 품질 업데이트의 지연 정책을 구성할 수 있습니다. 자세한 내용은 [비즈니스용 Windows 업데이트 지연 정책 구성](https://docs.microsoft.com/sccm/sum/deploy-use/integrate-windows-update-for-business-windows-10#configure-windows-update-for-business-deferral-policies)을 참조하세요.  
+비즈니스용 Windows 업데이트 정책을 통해 비즈니스용 Windows 업데이트에서 직접 관리되는 Windows 10 디바이스에 대한 Windows 10 기능 업데이트 또는 품질 업데이트의 지연 정책을 구성할 수 있습니다. 자세한 내용은 [비즈니스용 Windows 업데이트 지연 정책 구성](https://docs.microsoft.com/sccm/sum/deploy-use/integrate-windows-update-for-business-windows-10#configure-windows-update-for-business-deferral-policies)을 참조하세요.  
 
 ### <a name="remote-actions-available-in-intune-on-azure-for-co-managed-devices"></a>Azure의 Intune에서 공동 관리 디바이스에 사용할 수 있는 원격 작업
 Windows 10 디바이스가 공동 관리를 사용하도록 설정한 경우 Azure의 Intune에서 다음과 같은 원격 작업을 사용할 수 있습니다.  
@@ -155,8 +157,7 @@ ccmsetup.msi CCMSETUPCMD="/mp:&#60;*클라우드 관리 게이트웨이 상호 �
 
 예를 들어, 다음 값을 포함하는 경우:
 
-- 
-  **클라우드 관리 게이트웨이 상호 인증 엔드포인트의 URL**: https:/&#47;contoso.cloudapp.net/CCM_Proxy_MutualAuth/72057594037928100    
+- **클라우드 관리 게이트웨이 상호 인증 엔드포인트의 URL**: https:/&amp;#47;contoso.cloudapp.net/CCM_Proxy_MutualAuth/72057594037928100    
 
    >[!Note]    
    >**클라우드 관리 게이트웨이 상호 인증 엔드포인트의 URL** 값에 **vProxy_Roles** SQL 보기의 **MutualAuthPath** 값을 사용합니다.
@@ -178,7 +179,7 @@ ccmsetup.msi CCMSETUPCMD="/mp:https:/&#47;contoso.cloudapp.net/CCM_Proxy_MutualA
 > [!Tip]
 >다음 단계를 사용하여 사이트에 대한 명령줄 매개 변수를 찾을 수 있습니다.     
 > 1. Configuration Manager 콘솔에서 **관리** > **개요** > **클라우드 서비스** > **공동 관리**로 이동합니다.  
-> 2. the Manage group의 the Home tab에서  **공동 관리 구성**을 선택하여 공동 관리 등록 마법사를 엽니다.    
+> 2. 홈 탭의 관리 그룹에서 **공동 관리 구성**을 선택하여 공동 관리 등록 마법사를 엽니다.    
 > 3. 구독 페이지에서 **로그인**을 클릭하고 Intune 테넌트에 로그인하고 **다음**을 클릭합니다.    
 > 4. 사용 페이지의 **Intune의 등록된 디바이스** 섹션에서 **복사**를 클릭하여 명령줄을 클립보드에 복사하고 명령줄을 저장하여 앱을 만드는 절차에서 사용합니다.  
 > 5. **취소**를 클릭하여 마법사를 종료합니다.
@@ -187,21 +188,21 @@ ccmsetup.msi CCMSETUPCMD="/mp:https:/&#47;contoso.cloudapp.net/CCM_Proxy_MutualA
 새 Windows 10 디바이스에서는 Autopilot 서비스를 사용하여 기본 환경을 구성합니다. 여기에는 AD와 Azure AD에 디바이스를 조인하고 Intune에서 디바이스를 등록하는 작업이 포함됩니다. 그런 다음 Intune에서 앱을 만들어 Configuration Manager 클라이언트를 배포합니다.  
 1. 새 Windows 10 디바이스에 AutoPilot을 사용합니다. 자세한 내용은 [Windows AutoPilot 개요](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot)를 참조하세요.  
 2. 디바이스를 Intune에 자동으로 등록하도록 Azure AD에서 자동 등록을 구성합니다. 자세한 내용은  [Microsoft Intune에 Windows 디바이스 등록](https://docs.microsoft.com/intune/windows-enroll)을 참조하세요.
-3. Configuration Manager 클라이언트 패키지를 사용하여 Intune에서 앱을 만들고 공동 관리하려는 Windows 10 디바이스에 앱을 배포합니다. [Azure AD를 사용하여 인터넷에서 클라이언트를 설치](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/deploy-clients-cmg-azure)하는 단계를 수행할 때 [Configuration Manager 클라이언트를 설치하는 명령줄](#command-line-to-install-configuration-manager-client)을 사용합니다.   
+3. Configuration Manager 클라이언트 패키지를 사용하여 Intune에서 앱을 만들고 공동 관리하려는 Windows 10 디바이스에 앱을 배포합니다. [Azure AD를 사용하여 인터넷에서 클라이언트를 설치](https://docs.microsoft.com/sccm/core/clients/deploy/deploy-clients-cmg-azure)하는 단계를 수행할 때 [Configuration Manager 클라이언트를 설치하는 명령줄](#command-line-to-install-configuration-manager-client)을 사용합니다.   
 
 #### <a name="windows-10-devices-not-enrolled-in-intune-or-a-configuration-manager-client"></a>Intune 또는 Configuration Manager 클라이언트에 등록되지 않은 Windows 10 디바이스
 Intune 또는 Configuration Manager 클라이언트에 등록되지 않은 Windows 10 디바이스의 경우 자동 등록을 사용하여 Intune에서 디바이스를 등록할 수 있습니다. 그런 다음 Intune에서 앱을 만들어 Configuration Manager 클라이언트를 배포합니다.
 1. 디바이스를 Intune에 자동으로 등록하도록 Azure AD에서 자동 등록을 구성합니다. 자세한 내용은  [Microsoft Intune에 Windows 디바이스 등록](https://docs.microsoft.com/intune/windows-enroll)을 참조하세요.  
-2. Configuration Manager 클라이언트 패키지를 사용하여 Intune에서 앱을 만들고 공동 관리하려는 Windows 10 디바이스에 앱을 배포합니다. [Azure AD를 사용하여 인터넷에서 클라이언트를 설치](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/deploy-clients-cmg-azure)하는 단계를 수행할 때 [Configuration Manager 클라이언트를 설치하는 명령줄](#command-line-to-install-configuration-manager-client)을 사용합니다.
+2. Configuration Manager 클라이언트 패키지를 사용하여 Intune에서 앱을 만들고 공동 관리하려는 Windows 10 디바이스에 앱을 배포합니다. [Azure AD를 사용하여 인터넷에서 클라이언트를 설치](https://docs.microsoft.com/sccm/core/clients/deploy/deploy-clients-cmg-azure)하는 단계를 수행할 때 [Configuration Manager 클라이언트를 설치하는 명령줄](#command-line-to-install-configuration-manager-client)을 사용합니다.
 
 #### <a name="windows-10-devices-enrolled-in-intune"></a>Intune에 등록된 Windows 10 디바이스
-이미 Intune에 등록된 Windows 10 디바이스의 경우 Intune에서 앱을 만들어 Configuration Manager 클라이언트를 배포합니다. [Azure AD를 사용하여 인터넷에서 클라이언트를 설치](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/deploy-clients-cmg-azure)하는 단계를 수행할 때 [Configuration Manager 클라이언트를 설치하는 명령줄](#command-line-to-install-configuration-manager-client)을 사용합니다.  
+이미 Intune에 등록된 Windows 10 디바이스의 경우 Intune에서 앱을 만들어 Configuration Manager 클라이언트를 배포합니다. [Azure AD를 사용하여 인터넷에서 클라이언트를 설치](https://docs.microsoft.com/sccm/core/clients/deploy/deploy-clients-cmg-azure)하는 단계를 수행할 때 [Configuration Manager 클라이언트를 설치하는 명령줄](#command-line-to-install-configuration-manager-client)을 사용합니다.  
 
 ### <a name="switch-configuration-manager-workloads-to-intune"></a>Configuration Manager 워크로드를 Intune으로 전환
 이전 섹션에서 공동 관리를 위해 Windows 10 디바이스를 준비했습니다. 이제 이러한 디바이스가 AD와 Azure AD에 조인되고 Intune에 등록되고 Configuration Manager 클라이언트를 포함합니다. Windows 10 디바이스가 AD에 조인되고 Configuration Manager 클라이언트를 포함했지만 Azure AD에 되거나 Intune에 등록되지 않았습니다. 다음 절차에서는 공동 관리를 사용하고, 공동 관리를 위해 나머지 Windows 10 디바이스(Intune에 등록되지 않은 Configuration Manager 클라이언트)를 준비하고, 특정 Configuration Manager 워크로드를 Intune으로 전환하기 시작할 수 있는 단계를 제공합니다.
 
 1. Configuration Manager 콘솔에서 **관리** > **개요** > **클라우드 서비스** > **공동 관리**로 이동합니다.    
-2. the Manage group의 the Home tab에서  **공동 관리 구성**을 선택하여 공동 관리 등록 마법사를 엽니다.    
+2. 홈 탭의 관리 그룹에서 **공동 관리 구성**을 선택하여 공동 관리 등록 마법사를 엽니다.    
 3. 구독 페이지에서 **로그인**을 클릭하고 Intune 테넌트에 로그인하고 **다음**을 클릭합니다.   
 4. 스테이징 페이지에서 다음 설정을 구성한 후에 **다음**을 클릭합니다.
     - **파일럿 그룹**: 파일럿 그룹에는 선택한 컬렉션이 하나 이상 포함되어 있습니다. 이 그룹을 공동 관리의 단계별 롤아웃 중 일부로 사용합니다. 작은 테스트 컬렉션을 시작하고, 공동 관리를 더 많은 사용자 및 디바이스에 롤아웃하는 경우 파일럿 그룹에 더 많은 컬렉션을 추가할 수 있습니다. 공동 관리 속성에서 언제든지 파일럿 그룹의 컬렉션을 변경할 수 있습니다.

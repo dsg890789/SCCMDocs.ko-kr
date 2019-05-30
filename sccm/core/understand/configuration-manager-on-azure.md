@@ -10,12 +10,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 985b439a9f74f92a68b1e1c70e4cca0580b819c0
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: bd2a745f7fc158739898930c9d05ea40724879b1
+ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56126797"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66176086"
 ---
 # <a name="configuration-manager-on-azure---frequently-asked-questions"></a>Azure의 Configuration Manager - 질문과 대답
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -138,7 +138,7 @@ Configuration Manager는 Azure 부하 분산 장치에서 테스트되지 않았
 ### <a name="while-i-am-ok-with-the-limitations-of-cloud-based-distribution-points-i-dont-want-to-put-my-management-point-into-a-dmz-even-though-that-is-needed-to-support-my-internet-based-clients-do-i-have-any-other-options"></a>클라우드 기반 배포 지점의 제한은 괜찮지만 내 인터넷 기반 클라이언트 지원에 필요하더라도 관리 지점을 DMZ에 배치하고 싶지 않습니다. 다른 방법은 없나요?
 예. Configuration Manager 버전 1610과 함께 [클라우드 관리 게이트웨이](/sccm/core/clients/manage/manage-clients-internet#cloud-management-gateway)를 시험판 기능으로 도입했습니다. (이 기능은 Technical Preview 버전 1606에 [클라우드 프록시 서비스](/sccm/core/get-started/capabilities-in-technical-preview-1606#a-namecloudproxyacloud-proxy-service-for-managing-clients-on-the-internet)로 처음 표시되었습니다).
 
-**클라우드 관리 게이트웨이**는 인터넷에서 Configuration Manager 클라이언트를 관리할 수 있는 간단한 방법을 제공합니다. Microsoft Azure에 배포되고 Azure 구독이 필요한 서비스는 클라우드 관리 게이트웨이 연결점이라는 새 역할을 사용하여 온-프레미스 Configuration Manager 인프라에 연결합니다. 배포 및 구성된 클라이언트는 내부 개인 네트워크 또는 인터넷에 연결되었는지 여부에 관계없이 온-프레미스 Configuration Manager 사이트 시스템 역할에 액세스할 수 있습니다.
+**클라우드 관리 게이트웨이**는 인터넷에서 Configuration Manager 클라이언트를 관리할 수 있는 간단한 방법을 제공합니다. Microsoft Azure에 배포되고 Azure 구독이 필요한 서비스는 클라우드 관리 게이트웨이 연결점이라는 새 역할을 사용하여 온-프레미스 Configuration Manager 인프라에 연결합니다. 배포 및 구성된 클라이언트는 내부 프라이빗 네트워크 또는 인터넷에 연결되었는지 여부에 관계없이 온-프레미스 Configuration Manager 사이트 시스템 역할에 액세스할 수 있습니다.
 
 사용자의 환경에서 클라우드 관리 게이트웨이를 사용한 다음 제품 개선을 위해 이에 대한 피드백을 제출할 수 있습니다. 시험판 기능에 대한 자세한 내용은 [업데이트에서 시험판 기능 사용](/sccm/core/servers/manage/install-in-console-updates#a-namebkmkprereleasea-use-pre-release-features-from-updates)을 참조하세요.
 

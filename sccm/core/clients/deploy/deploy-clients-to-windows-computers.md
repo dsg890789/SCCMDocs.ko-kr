@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3260fb68d9ce334061fc39fe8d40cd68d109655e
-ms.sourcegitcommit: 99dfe4fb9e9cfd20c44380ae442b3a5b895a0d9b
+ms.openlocfilehash: 2b53de9695fc2f2586ef162362394536ac911a06
+ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65214724"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66176798"
 ---
 # <a name="how-to-deploy-clients-to-windows-computers-in-configuration-manager"></a>Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법
 
@@ -518,6 +518,8 @@ Configuration Manager 사이트가 인트라넷 및 인터넷 간에 이동하�
 
 #### <a name="configure-clients-for-internet-based-client-management-after-client-installation-by-using-a-script"></a>스크립트를 사용하여 클라이언트 설치 후 클라이언트를 인터넷 기반 클라이언트 관리용으로 구성  
 
+##### <a name="vbscript"></a>VBScript
+
 1.  메모장과 같은 텍스트 편집기를 엽니다.  
 
 2.  다음 VBScript 샘플을 복사하여 파일에 삽입합니다. *mp.contoso.com*을 인터넷 기반 관리 지점의 인터넷 FQDN으로 바꿉니다.  
@@ -556,6 +558,28 @@ Configuration Manager 사이트가 인트라넷 및 인터넷 간에 이동하�
 
 변경 내용을 적용하려면 클라이언트를 다시 시작해야 할 수 있습니다.  
 
+##### <a name="powershell"></a>PowerShell
+
+1. PowerShell ISE, Visual Studio Code 같은 PowerShell 인라인 편집기나, 메모장 같은 텍스트 편집기를 엽니다.
+
+2. 다음 코드 줄을 복사하여 편집기에 삽입합니다. 'mp.contoso.com'을 인터넷 기반 관리 지점의 인터넷 FQDN으로 바꿉니다.
+
+    ``` PowerShell
+    
+    $newInternetBasedManagementPointFQDN = 'mp.contoso.com'
+    $client = New-Object -ComObject Microsoft.SMS.Client
+    $client.SetInternetManagementPointFQDN($newInternetBasedManagementPointFQDN)
+    Restart-Service CcmExec
+    $client.GetInternetManagementPointFQDN()
+    
+    ```
+
+    > [!NOTE]  
+    >  마지막 줄은 새 인터넷 MP 값을 확인하는 역할만 합니다.
+    >
+    >  지정된 인터넷 기반 관리 지점을 삭제하려면 따옴표 안에 있는 서버 FQDN 값을 제거합니다. 그러면 이 줄이 `$newInternetBasedManagementPointFQDN = ''`과 같이 됩니다.
+
+3. 관리자 권한으로 이 스크립트를 실행합니다.
 
 
 ##  <a name="BKMK_Provision"></a> 그룹 정책 및 소프트웨어 업데이트 기반 클라이언트 설치에 대한 클라이언트 설치 속성 프로비전

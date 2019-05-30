@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f86fccc965fd0d6147c55a7c9a3ad25b81e95aff
-ms.sourcegitcommit: 417e3834a42b415a8e129327dd3c15cc0c7ec5a2
+ms.openlocfilehash: 5994eb6ab241e35bd0b4c4ecceb9fe6c4ef35a00
+ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65443093"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66176043"
 ---
 # <a name="log-files-in-configuration-manager"></a>Configuration Manager의 로그 파일
 
@@ -416,7 +416,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
 |--------------|-----------------|----------------------------|  
 |objreplmgr.log|부모 사이트에서 자식 사이트로 소프트웨어 업데이트 알림 파일을 복제하는 작업과 관련된 세부 정보를 기록합니다.|사이트 서버|  
-|PatchDownloader.log|소프트웨어 업데이트를 업데이트 원본에서 사이트 서버의 다운로드 대상으로 다운로드하는 프로세스에 대한 세부 정보를 기록합니다.|다운로드가 시작되는 Configuration Manager 콘솔을 호스트하는 컴퓨터|  
+|PatchDownloader.log|소프트웨어 업데이트를 업데이트 원본에서 사이트 서버의 다운로드 대상으로 다운로드하는 프로세스에 대한 세부 정보를 기록합니다.|업데이트를 수동으로 다운로드하면 이 파일이 콘솔을 사용하는 컴퓨터의 `%temp%` 디렉터리에 있습니다. 자동 배포 규칙의 경우 Configuration Manager 클라이언트가 사이트 서버에 설치되었다면 이 파일이 `%windir%\CCM\Logs`의 사이트 서버에 있습니다.|  
 |ruleengine.log|식별, 콘텐츠 다운로드, 소프트웨어 업데이트 그룹, 배포 만들기 등 자동 배포 규칙에 대한 세부 정보를 기록합니다.|사이트 서버| 
 |SMS_ISVUPDATES_SYNCAGENT.log| Configuration Manager 버전 1806부터 시작되는 타사 소프트웨어 동기화에 대한 로그 파일입니다.| Configuration Manager 계층 구조의 최상위 수준 소프트웨어 업데이트 지점입니다.| 
 |SUPSetup.log|소프트웨어 업데이트 지점 설치에 대한 세부 정보를 기록합니다. 소프트웨어 업데이트 지점 설치가 완료되면 이 로그 파일에 **Installation was successful** 이 기록됩니다.|사이트 시스템 서버|  
@@ -782,7 +782,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |로그 이름|설명|로그 파일이 있는 컴퓨터|  
 |--------------|-----------------|----------------------------|  
 |ccmperf.log|클라이언트 성능 카운터와 관련된 데이터의 유지 관리 및 캡처와 관련된 활동을 기록합니다.|클라이언트|  
-|PatchDownloader.log|소프트웨어 업데이트를 업데이트 원본에서 사이트 서버의 다운로드 대상으로 다운로드하는 프로세스에 대한 세부 정보를 기록합니다.|다운로드가 시작되는 Configuration Manager 콘솔을 호스트하는 컴퓨터|  
+|PatchDownloader.log|소프트웨어 업데이트를 업데이트 원본에서 사이트 서버의 다운로드 대상으로 다운로드하는 프로세스에 대한 세부 정보를 기록합니다.|업데이트를 수동으로 다운로드할 때는 이 파일이 콘솔을 실행하는 머신에서 콘솔을 실행하는 사용자의 %temp% 디렉터리에 있습니다. 자동 배포 규칙의 경우 이 파일은 사이트 서버에 ConfigMgr 클라이언트가 설치되었다면 %windir%\CCM\Logs의 사이트 서버에 있습니다.|  
 |PolicyEvaluator.log|소프트웨어 업데이트의 정책을 포함한 클라이언트 컴퓨터의 정책에 대한 평가와 관련된 세부 정보를 기록합니다.|클라이언트|  
 |RebootCoordinator.log|소프트웨어 업데이트 설치 후 클라이언트 컴퓨터의 시스템 다시 시작 조정에 대한 세부 정보를 기록합니다.|클라이언트|  
 |ScanAgent.log|소프트웨어 업데이트, WSUS 위치 및 관련 작업에 대한 검사 요청과 관련된 세부 정보를 기록합니다.|클라이언트|  

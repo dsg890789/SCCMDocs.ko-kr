@@ -1,7 +1,7 @@
 ---
 title: 컬렉션으로 디바이스 자동 분류
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager를 사용하여 컬렉션으로 디바이스를 자동으로 분류합니다.
+description: 디바이스를 컬렉션으로 자동 분류합니다.
 ms.date: 04/23/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -11,14 +11,14 @@ author: aczechowski
 manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c45e6b5328d0fc9f0734dec09961e2c3e5e4c0f
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: e0a70d55eb63a51ca980db1fb7089a9490a2803c
+ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56139979"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66176707"
 ---
-# <a name="automatically-categorize-devices-into-collections-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 컬렉션으로 디바이스 자동 분류
+# <a name="automatically-categorize-devices-into-collections"></a>컬렉션으로 디바이스 자동 분류
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 

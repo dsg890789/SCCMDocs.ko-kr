@@ -2365,8 +2365,10 @@
     - name: SMS_DistributionPointInfo 서버 WMI 클래스
       href: core/servers/configure/sms_distributionpointinfo-server-wmi-class.md
       items:
-        - name: 클래스 SMSDistributionPointInfo의 GetChainedPullDPs 메서드
+        - name: GetChainedPullDPs 메서드
           href: core/servers/configure/getchainedpulldps-method-in-class-smsdistributionpointinfo.md
+        - name: SetDPMaintenanceMode 메서드
+          href: core/servers/configure/setdpmaintenancemode-method-in-class-sms-distributionpointinfo.md
     - name: SMS_DistributionStatus 서버 WMI 클래스
       href: core/servers/configure/sms_distributionstatus-server-wmi-class.md
     - name: SMS_LastPXEAdvertisement 서버 WMI 클래스
