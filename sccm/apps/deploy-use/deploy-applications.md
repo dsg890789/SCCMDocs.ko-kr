@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c27e2d4bb90240ad2cfee5e0c470d7a6b8a76653
-ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.openlocfilehash: 7550987d9b9679085ad5b546274d0c503b9e28ac
+ms.sourcegitcommit: 3f43fa8462bf39b2c18b90a11a384d199c2822d8
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083332"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66403395"
 ---
 # <a name="deploy-applications-with-configuration-manager"></a>Configuration Manager에서 애플리케이션 배포
 
@@ -68,7 +68,7 @@ Configuration Manager에서 디바이스 또는 사용자 컬렉션에 응용 �
     >[!Note]  
     > 기본 애플리케이션을 배포한 후에 종속된 애플리케이션을 업데이트하면 종속 항목의 새 콘텐츠가 자동으로 배포되지 않습니다.  
 
-- **설명(선택 사항)**: 필요한 경우 이 배포에 대한 설명을 입력합니다.  
+- **설명(선택 사항)** : 필요한 경우 이 배포에 대한 설명을 입력합니다.  
 
 
 ### <a name="bkmk_deploy-content"></a> 배포 **콘텐츠** 옵션
@@ -106,7 +106,7 @@ Configuration Manager에서 디바이스 또는 사용자 컬렉션에 응용 �
 
 - **절전 모드 해제 패킷 보내기**: 배포가 **필수**인 경우 클라이언트가 배포를 실행하기 전에 Configuration Manager가 컴퓨터에 절전 모드 해제 패킷을 보냅니다. 이 패킷은 설치 최종 기한 시간에 컴퓨터를 다시 시작합니다. 이 옵션을 사용하려면 먼저 컴퓨터와 네트워크에 Wake-On-LAN을 구성해야 합니다. 자세한 내용은 [클라이언트를 절전 모드에서 해제하는 방식 계획](/sccm/core/clients/deploy/plan/plan-wake-up-clients)을 참조하세요.  
 
-- **설치 최종 기한에 도달한 후 클라이언트에서 요금제 인터넷 연결을 사용하여 콘텐츠를 다운로드하도록 허용(추가 비용이 발생할 수 있음)**: 이 옵션은 목적이 **필수**인 배포에만 사용할 수 있습니다.  
+- **설치 최종 기한에 도달한 후 클라이언트에서 요금제 인터넷 연결을 사용하여 콘텐츠를 다운로드하도록 허용(추가 비용이 발생할 수 있음)** : 이 옵션은 목적이 **필수**인 배포에만 사용할 수 있습니다.  
 
 - **이 애플리케이션의 대체된 버전을 자동으로 업그레이드**: 클라이언트가 애플리케이션의 모든 교체된 버전을 교체하는 애플리케이션으로 업그레이드합니다.
 
@@ -309,6 +309,7 @@ Configuration Manager의 버전에 따라 다음 승인 설정 중 하나가 나
 
 ## <a name="next-steps"></a>다음 단계
 
- - [애플리케이션 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)
- - [애플리케이션에 대한 관리 작업](/sccm/apps/deploy-use/management-tasks-applications)
- - [소프트웨어 센터 사용자 가이드](/sccm/core/understand/software-center)
+- [애플리케이션 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)
+- [응용 프로그램 배포 문제 해결](/sccm/apps/deploy-use/troubleshoot-application-deployment)
+- [애플리케이션에 대한 관리 작업](/sccm/apps/deploy-use/management-tasks-applications)
+- [소프트웨어 센터 사용자 가이드](/sccm/core/understand/software-center)

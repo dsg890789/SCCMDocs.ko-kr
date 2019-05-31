@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b396ad5955227494511355f6efdb88ecd901110
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: c1aec1447207d20393b0b8454851755ec85f5020
+ms.sourcegitcommit: abfc9e1b3945637fa93ca8d3a11519493a5d5391
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56120834"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66264355"
 ---
 # <a name="choose-a-device-management-solution-for-configuration-manager"></a>Configuration Manager의 디바이스 관리 솔루션 선택
 
@@ -36,7 +36,7 @@ Configuration Manager에서는 PC, 서버 및 디바이스를 관리하기 위�
 이 문서에서는 다음과 같은 네 가지 디바이스 관리 솔루션을 다룹니다. 
 - [구성 관리자 클라이언트](#bkmk_sccm)
 - [Configuration Manager를 사용한 온-프레미스 MDM(모바일 디바이스 관리)](#bkmk_opmdm)
-- [Microsoft Intune을 사용하여 공동 관리](#bkmk_intune)
+- [Microsoft Intune을 사용하여 공동 관리](#bkmk_comanage)
 - [Microsoft Exchange](#bkmk_opmdm)
 
 이러한 디바이스 관리 솔루션을 단독으로 사용하거나 서로 결합해서 사용할 수 있습니다. 예를 들어 클라이언트 기반 관리 방식을 사용하여 조직의 컴퓨터 및 서버를 관리하고, 또한 공동 관리를 사용하여 인터넷 기반 노트북을 관리할 수 있습니다. 이처럼 여러 관리 방식을 결합하여 사용하면 모든 디바이스 관리 요구를 처리할 수 있습니다.  
