@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 007c3b68932a673b5d1971fbcf6919a7ad3adc70
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
+ms.openlocfilehash: cc22c66cfa4cf4e628dce7bf3cb268464610c933
+ms.sourcegitcommit: bfb8a17f60dcb9905e739045a5141ae45613fa2c
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59802617"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198429"
 ---
 # <a name="create-and-run-powershell-scripts-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행
 
@@ -54,8 +54,8 @@ System Center Configuration Manager가 PowerShell 스크립트를 실행하는 �
 - 스크립트를 실행하려면 **컬렉션**에 대한 **스크립트 실행** 권한이 있어야 합니다.
 
 Configuration Manager 보안 역할에 대한 자세한 내용은 다음과 같습니다.</br>
-[스크립트 실행에 대한 보안 범위](#BKMK_Scopes)</br>
-[스크립트 실행에 대한 보안 역할](#BKMK_ScriptRoles)</br>
+[스크립트 실행에 대한 보안 범위](#security-scopes)</br>
+[스크립트 실행에 대한 보안 역할](#bkmk_ScriptRoles)</br>
 [역할 기반 관리의 기본 사항](/sccm/core/understand/fundamentals-of-role-based-administration).
 
 ## <a name="limitations"></a>제한 사항
@@ -72,7 +72,7 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 다음과 같�
 
 ## <a name="run-script-authors-and-approvers"></a>스크립트 실행 작성자 및 승인자
 
-스크립트 실행에서는 *스크립트 작성자* 및 *스크립트 승인자*의 개념을 스크립트를 구현하고 실행하기 위한 별도의 역할로 사용합니다. 작성자와 승인자 역할을 분리하면 스크립트 실행이라는 강력한 도구에 대한 중요한 프로세스를 검사할 수 있습니다. 스크립트 만들기나 승인이 아닌 스크립트 실행을 허용하는 추가적인 *스크립트 실행기* 역할이 있습니다. [스크립트에 대한 보안 역할 만들기](#BKMK_ScriptRoles)를 참조합니다.
+스크립트 실행에서는 *스크립트 작성자* 및 *스크립트 승인자*의 개념을 스크립트를 구현하고 실행하기 위한 별도의 역할로 사용합니다. 작성자와 승인자 역할을 분리하면 스크립트 실행이라는 강력한 도구에 대한 중요한 프로세스를 검사할 수 있습니다. 스크립트 만들기나 승인이 아닌 스크립트 실행을 허용하는 추가적인 *스크립트 실행기* 역할이 있습니다. [스크립트에 대한 보안 역할 만들기](#bkmk_ScriptRoles)를 참조합니다.
 
 ### <a name="scripts-roles-control"></a>스크립트 역할 제어
 

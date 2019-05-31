@@ -139,3 +139,5 @@
       href: understand/task-sequence-variables.md
     - name: 작업 순서 미디어에 대한 시작 전 명령
       href: understand/prestart-commands-for-task-sequence-media.md
+    - name: 프로비저닝 모드
+      href: understand/provisioning-mode.md
