@@ -2,7 +2,7 @@
 title: 데스크톱 분석에서 장치 등록
 titleSuffix: Configuration Manager
 description: 데스크톱 Analytics에서 장치를 등록 하는 방법을 알아봅니다.
-ms.date: 04/05/2019
+ms.date: 04/22/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5d5e6665b0ddd2e7726af4b8ac8929d5019fedf
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: 8d056d533a83290b638958ff78275ddec1409ec5
+ms.sourcegitcommit: 65e9b30e2b53ab9db679a7b1d50634a73c0028db
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62245892"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66429860"
 ---
 # <a name="how-to-enroll-devices-in-desktop-analytics"></a>데스크톱 Analytics에서 장치를 등록 하는 방법
 
@@ -81,7 +81,7 @@ Windows 사용자 환경 개선 프로그램에 참여 하는 서비스 팩 1 (S
 > 이러한 업데이트를 설치할 때 다음 동작을 예상 합니다.
 > 
 > - 데스크톱 Analytics에 등록 하는 장치에에서 표시 서비스에서 1 시간 미만  
-> - 장치 신속 하 게 상태를 보고 기능 및 품질 업데이트에서 Windows 및 Office에 대 한  
+> - 장치는 Windows 기능 및 품질 업데이트의 상태를 신속 하 게 보고  
 >
 > 이러한 업데이트를 하지 않고 이러한 프로세스에는 데스크톱 Analytics에 보고 하는 장치에 대 한 48 시간 이상 걸릴 수 있습니다.  
 
@@ -127,7 +127,7 @@ Configuration Manager를 데스크톱 Analytics에 연결 하는 경우 장치 �
 
 2. 에 **진단 데이터** 페이지에서 다음 설정이 필요에 따라 변경 합니다.  
 
-    - **상업용 ID**: 변경 하거나이 값을 편집할 필요가 없습니다. 상용 ID 사용 하 여 문제 해결에 대 한 자세한 내용은 참조 하세요. [상용 ID 구성](/sccm/desktop-analytics/troubleshooting#commercial-id-configuration)합니다.  
+    - **상업용 ID**:이 값은 조직의 id 자동 채우기 허용 목록에 모든 필요한 프록시 서버에 구성 되어 있는지 확인 하지 않는 경우 [끝점](/sccm/desktop-analytics/enable-data-sharing#endpoints) 계속 하기 전에 합니다. 또는에서 상업용 ID를 검색할 합니다 **연결 된 서비스** 창에는 [데스크톱 Analytics 포털](https://aka.ms/m365aprod).   
 
     - **Windows 10 진단 데이터 수준**: 자세한 내용은 [진단 데이터 수준](/sccm/desktop-analytics/enable-data-sharing#diagnostic-data-levels)합니다.  
 
@@ -135,7 +135,7 @@ Configuration Manager를 데스크톱 Analytics에 연결 하는 경우 장치 �
 
     이 페이지를 변경 하는 경우는 **사용할 수 있는 기능** 페이지 선택된 된 진단 데이터 설정 사용 하 여 데스크톱 분석 기능의 미리 보기를 표시 합니다.  
 
-3. 에 **Microsoft 365 Analytics 연결** 페이지에서 다음 설정이 필요에 따라 변경 합니다.
+3. 에 **데스크톱 Analytics 연결** 페이지에서 다음 설정이 필요에 따라 변경 합니다.
 
     - **표시 이름**: 데스크톱 Analytics 포털에이 이름을 사용 하 여이 Configuration Manager 연결을 표시 합니다.  
 
@@ -143,9 +143,10 @@ Configuration Manager를 데스크톱 Analytics에 연결 하는 경우 장치 �
 
     - **아웃 바운드 통신에 대 한 사용자 인증 프록시를 사용 하는 대상 컬렉션의 장치**: 기본적으로이 값은 **No**합니다. 사용자 환경에서 필요한 경우로 **예**합니다. 자세한 내용은 [프록시 서버 인증](/sccm/desktop-analytics/enable-data-sharing#proxy-server-authentication)합니다.  
 
-    - **데스크톱 Analytics와 동기화 하도록 특정 컬렉션 선택**: 선택 **추가** 추가 컬렉션을 포함 합니다. 이러한 컬렉션은 배포 계획을 사용 하 여 그룹화에 대 한 데스크톱 Analytics 포털에서 사용할 수 있습니다. 파일럿 및 파일럿 제외 컬렉션을 포함 해야 합니다.  
+    - **데스크톱 Analytics와 동기화 하도록 특정 컬렉션 선택**: 선택 **추가** 에서 추가 컬렉션을 포함 하 여 **컬렉션을 대상** 계층입니다. 이러한 컬렉션은 배포 계획을 사용 하 여 그룹화에 대 한 데스크톱 Analytics 포털에서 사용할 수 있습니다. 파일럿 및 파일럿 제외 컬렉션을 포함 해야 합니다.  <!-- 4097528 -->
 
-        이러한 컬렉션의 멤버 자격 변경으로 동기화 계속 합니다. 예를 들어 배포 계획을 Windows 7 멤버 관리 규칙을 사용 하 여 컬렉션을 사용 합니다. 해당 장치를 Windows 10으로 업그레이드 하 고 Configuration Manager 컬렉션 멤버 자격을 평가, 수집 및 배포 계획에서 해당 장치를 삭제 합니다.  
+        > [!Important] 
+        > 이러한 컬렉션의 멤버 자격 변경으로 동기화 계속 합니다. 예를 들어 배포 계획을 Windows 7 멤버 관리 규칙을 사용 하 여 컬렉션을 사용 합니다. 해당 장치를 Windows 10으로 업그레이드 하 고 Configuration Manager 컬렉션 멤버 자격을 평가, 수집 및 배포 계획에서 해당 장치를 삭제 합니다.  
 
 
 ### <a name="windows-settings"></a>Windows 설정
@@ -167,7 +168,7 @@ Configuration Manager 설정 아래에서 다음 Windows 설정을 `Microsoft\Wi
 
 ### <a name="device-name"></a>장치 이름
 
-부터 Windows 10, 버전 1803에서 장치 이름은 더 이상 기본적으로 수집 됩니다. 진단 데이터를 사용 하 여 장치 이름을 수집을 별도 옵트인 해야 합니다. 장치 이름 없이 더 어렵습니다 어떤 장치를 새 버전의 Windows 또는 Office로의 업그레이드를 평가 하는 동안 주의가 식별할 수 있습니다.
+부터 Windows 10, 버전 1803에서 장치 이름은 더 이상 기본적으로 수집 됩니다. 진단 데이터를 사용 하 여 장치 이름을 수집을 별도 옵트인 해야 합니다. 장치 이름 없이 더 어렵습니다 어떤 장치는 새 버전의 Windows로의 업그레이드를 평가 하는 동안 주의가 식별할 수 있습니다.
 
 경우 "Unknown"으로 데스크톱 분석 나타나는 장치 이름을 보내지 않습니다.
 
