@@ -2,7 +2,7 @@
 title: 데스크톱 Analytics 문제 해결
 titleSuffix: Configuration Manager
 description: 데스크톱 Analytics를 사용 하 여 문제를 해결 하려면 기술 세부 정보입니다.
-ms.date: 04/15/2019
+ms.date: 05/31/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0da26f1ea2b7f7c0c49377cb934e451d56889b7
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: edb871cf9a12862f19109fe885bfb3a0e626f445
+ms.sourcegitcommit: 65753c51fbf596f233fc75a5462ea4a44005c70b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62261525"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66463071"
 ---
 # <a name="troubleshooting-desktop-analytics"></a>데스크톱 Analytics 문제 해결
 
@@ -51,7 +51,31 @@ ms.locfileid: "62261525"
 
 데스크톱 Analytics를 처음 설치할 때 이러한 차트는 전체 데이터를 표시 되지 않습니다. 데스크톱 분석 서비스, 데이터를 처리 하 여 Configuration Manager 사이트를 사용 하 여 다음 동기화 서비스에 진단 데이터 보내기에 대 한 활성 장치에 대해 2 ~ 3 일 걸릴 수 있습니다.<!-- 4098037 -->
 
-일부 장치를 데스크톱 Analytics에서 표시 하지 않는 경우 먼저 비율을 확인할 **연결 된 장치**합니다. 100% 미만인 경우 데스크톱 분석 하 여 장치를 지원 하는지 확인 합니다. 자세한 내용은 [필수 구성 요소](/sccm/desktop-analytics/overview#prerequisites)를 참조하세요.
+
+### <a name="connection-details"></a>연결 세부 정보
+
+<!-- 4412133 -->
+
+이 타일 이름 및 서비스에서 업데이트에 대 한 번 연결 된 테 넌 트와 같은 기본 정보를 보여 줍니다. 합니다 **대상 장치** 값은 모든 장치 유형은 빼기 대상 컬렉션의 장치:
+
+- 서비스 해제
+- 사용 되지 않음
+- 비활성
+- 관리 되지 않는
+
+이러한 장치 상태에 대 한 자세한 내용은 참조 하세요. [클라이언트 상태에 대 한](/sccm/core/clients/manage/monitor-clients#bkmk_about)합니다.
+
+> [!Note]  
+> Configuration Manager 데스크톱 Analytics에 업로드 모든 폐기 및 사용 되지 않는 클라이언트에서 뺀 대상 컬렉션의 장치입니다.
+
+### <a name="connected-devices"></a>연결 된 장치
+
+일부 장치를 데스크톱 Analytics에서 표시 하지 않는 경우 먼저 비율을 확인할 **연결 된 장치**합니다. 이 차트에는 다음 수식을 사용 하는 장치의 비율을을 나타냅니다.
+
+- 분자: 합니다 **대상 장치** 값을 [연결 세부 정보](#connection-details) 타일
+- 분모의 경우: 비활성 장치와 관리 되지 않는-Configuration Manager에서 모든 장치
+
+100% 미만인 경우 데스크톱 분석 하 여 장치를 지원 하는지 확인 합니다. 자세한 내용은 [필수 구성 요소](/sccm/desktop-analytics/overview#prerequisites)를 참조하세요.
 
 
 ### <a name="connection-health-states"></a>연결 상태
@@ -114,7 +138,9 @@ Configuration Manager 클라이언트가 없는 이상 버전 1810 (5.0.8740).
 - Windows 진단 데이터 옵트인
 - Windows 상용 데이터 옵트인
 - Windows 진단 끝점 연결
-- Office 진단 끝점 연결
+
+> [!Note]  
+> 에 대 한 열을 무시 **Office 진단 끝점 연결**합니다. 향후 기능에 대해 예약 됩니다.
 
 키에 해당 하는 이러한 열 [필수 구성 요소](/sccm/desktop-analytics/overview#prerequisites) 데스크톱 Analytics와 통신 하는 장치에 대 한 합니다.
 
@@ -145,8 +171,9 @@ Configuration Manager 클라이언트가 없는 이상 버전 1810 (5.0.8740).
 - [SQM ID 검색](#sqm-id-retrieval)  
 - [고유한 장치 식별자 검색](#unique-device-identifier-retrieval)  
 - [Windows 진단 데이터 옵트인](#windows-diagnostic-data-opt-in)  
-- [Office 진단 끝점 연결](#office-diagnostic-endpoint-connectivity)  
-- [Office 진단 데이터 옵트인](#office-diagnostic-data-opt-in)
+
+> [!Note]  
+> 에 대 한 속성을 무시 **Office 진단 끝점 연결** 하 고 **Office 진단 데이터 옵트인**합니다. 향후 기능에 대해 예약 됩니다.
 
 #### <a name="appraiser-configuration"></a>평가자 구성
 
@@ -406,31 +433,6 @@ Microsoft은 Desktop Analytics 작업 영역에서 장치 정보를 매핑할 �
 
 자세한 내용은 클라이언트에서 M365AHandler.log를 검토 합니다.  
 
-#### <a name="office-diagnostic-endpoint-connectivity"></a>Office 진단 끝점 연결
-
-<!-- 1001,1002,1003 -->
-
-이 검사에 성공한 경우 장치는 Office 진단 끝점에 연결할 수 있습니다.
-
-그렇지 않으면 다음 오류 중 하나가 표시 될 수 있습니다 것:
-
-- Office 진단 끝점 (Aria)에 연결할 수 없습니다. 네트워크/프록시 설정을 확인합니다  
-
-- Office 진단 끝점 (Nexusrules)에 연결할 수 없습니다. 네트워크/프록시 설정을 확인합니다  
-
-- Office 진단 끝점 (Nexus)에 연결할 수 없습니다. 네트워크/프록시 설정을 확인합니다  
-
-장치는 서비스와 통신할 수 있는지 확인 합니다. 자세한 내용은 [끝점](/sccm/desktop-analytics/enable-data-sharing#endpoints)합니다.  
-
-#### <a name="office-diagnostic-data-opt-in"></a>Office 진단 데이터 옵트인
-
-<!-- SCCMDocs-pr 3570 -->
-Configuration Manager 버전 1902 년부터 Microsoft Office 서비스 및 진단 데이터 보내기에 대 한 변경 된 동작입니다. 이 속성은 Office 정책 설정이 올바르게 구성 되어 있는지 확인 합니다. 이러한 설정을 안전 하 고 최신 상태로 유지 하는 데 필요한 최소한의 데이터를 제어 하 고 설치 된 장치에서 예상 대로 수행 합니다.
-
-자세한 내용은 [Office 365 ProPlus에 대 한 개인 정보 보호 개요 제어](https://docs.microsoft.com/DeployOffice/privacy/overview-privacy-controls)입니다. 이 문서에서는 세부 정보를 수집 하 고 Office 클라이언트 소프트웨어에 대 한 Microsoft로 전송 된 진단 데이터에 대 한 개인 정보 제어 조직의 컴퓨터를 Windows에서 사용 합니다.
-
-이 검사는 버전 1810 Configuration Manager 클라이언트에 대 한 성공 하지 않습니다. 최신 버전으로 클라이언트를 업데이트 합니다. Configuration Manager 사이트에 대해 자동 클라이언트 업그레이드를 사용 하도록 설정 하는 것이 좋습니다. 자세한 내용은 [클라이언트 업그레이드](/sccm/core/clients/manage/upgrade/upgrade-clients#automatic-client-upgrade)를 참조하세요.
-
 
 
 ## <a name="log-files"></a>로그 파일
@@ -479,13 +481,88 @@ Azure ad에 응용 프로그램을 추가 하는 데스크톱 분석:
 
 - **Configuration Manager 마이크로 서비스**: 데스크톱 Analytics를 사용 하 여 Configuration Manager에 연결 합니다. 이 앱에 대 한 액세스 요구 사항이 없습니다.  
 
-- **Office 365 클라이언트 관리**: Log Analytics 작업 영역에서 데이터를 검색합니다. 이 앱에는 Log Analytics에 대 한 쓰기 액세스에 필요합니다.  
-
 - **MALogAnalyticsReader**: OMS 그룹 및 Log Analytics에서 생성 하는 장치를 검색 합니다. 자세한 내용은 [MALogAnalyticsReader 응용 프로그램 역할](#bkmk_MALogAnalyticsReader)입니다.  
 
 구성 집합을 완료 한 후 이러한 앱을 프로 비전 해야 할 경우으로 이동 합니다 **연결 된 서비스** 창입니다. 선택 **사용자 및 앱에 대 한 액세스 구성**, 및 앱 프로 비전 합니다.  
 
-- **Configuration Manager에 대 한 azure AD 앱**합니다. 프로 비전 또는 구성 집합을 완료 한 후 연결 문제 해결, 참조 하는 경우 [Configuration Manager에 대 한 앱 만들기](/sccm/desktop-analytics/set-up#create-app-for-configuration-manager)합니다. 이 앱에 필요한 **CM 컬렉션 데이터 쓰기** 하 고 **CM 컬렉션 데이터 읽기** 에 **Configuration Manager 서비스** API.  
+- **Configuration Manager에 대 한 azure AD 앱**합니다. 프로 비전 또는 구성 집합을 완료 한 후 연결 문제 해결, 참조 하는 경우 [Configuration Manager에 대 한 앱 만들기 및 가져오기](#create-and-import-app-for-configuration-manager)합니다. 이 앱에 필요한 **CM 컬렉션 데이터 쓰기** 하 고 **CM 컬렉션 데이터 읽기** 에 **Configuration Manager 서비스** API.  
+
+
+### <a name="create-and-import-app-for-configuration-manager"></a>만들기 및 Configuration Manager에 대 한 앱 가져오기
+
+Configuration Manager에서 Azure 서비스 구성 마법사에서이 Azure AD 앱을 만들 수 없으면, 다음 단계를 사용 하 여를 수동으로 만들고 Configuration Manager에 대 한 앱을 가져옵니다.
+
+#### <a name="create-app-in-azure-ad"></a>Azure AD에서 앱 만들기
+
+1. 엽니다는 [Azure portal](http://portal.azure.com) 회사 관리자 권한이 있는 사용자로 이동 **Azure Active Directory**를 선택한 **앱 등록**합니다. 선택한 **새 응용 프로그램 등록**합니다.  
+
+2. 에 **만들기** 패널에서 다음 설정을 구성 합니다.  
+
+    - **이름**: 예를 들어 앱을 식별 하는 고유 이름: `Desktop-Analytics-Connection`  
+
+    - **응용 프로그램 유형을**: **웹 앱 / API**  
+
+    - **로그온 URL**:이 값이 Configuration Manager에서 사용 되지 않지만 Azure AD에 필요 합니다. 예를 들어 고유 하 고 올바른 URL을 입력 합니다. `https://configmgrapp`  
+  
+   **만들기**를 선택합니다.  
+
+3. 앱을 선택 하 고 확인 합니다 **응용 프로그램 ID**합니다. 이 값은 Configuration Manager 연결을 구성 하는 데 사용 되는 GUID입니다.  
+
+4. 선택 **설정을** 에 앱을 선택한 후 **키**합니다. 에 **암호** 섹션에서 입력을 **키 설명**, 만료 날짜를 지정 **기간**를 선택한 후 **저장**. 복사 합니다 **값** Configuration Manager 연결을 구성 하는 데 사용 되는 키입니다.
+
+    > [!Important]  
+    > 키 값을 복사만 기회입니다. 이제 복사 안 함, 하는 경우 다른 키를 만들 해야 합니다.  
+    >
+    > 키 값을 안전한 위치에 저장 합니다.  
+
+5. 앱에서 **설정을** 패널에서 **필요한 권한**합니다.  
+
+    1. 에 **필요한 권한** 패널에서 **추가**합니다.  
+
+    2. 에 **API 액세스 추가** 패널 **API 선택**합니다.  
+
+    3. 검색 된 **Configuration Manager 마이크로 서비스** API. 선택 하 고 선택한 **선택**합니다.  
+
+    4. 에 **액세스 사용** 패널에서 응용 프로그램 권한을 모두 선택 합니다. **CM 컬렉션 데이터를 쓸** 하 고 **CM 컬렉션 데이터를 읽을**합니다. 선택한 **선택**합니다.  
+
+    5. 에 **API 액세스 추가** 패널에서 **수행**합니다.  
+
+6. 에 **필요한 권한** 페이지에서 **권한을 부여**합니다. 선택 **예**합니다.  
+
+7. Azure AD 테 넌 트 ID를 복사 합니다. 이 값은 Configuration Manager 연결을 구성 하는 데 사용 되는 GUID입니다. 선택 **Azure Active Directory** 에서 주 메뉴를 선택 합니다 **속성**합니다. 복사 합니다 **디렉터리 ID** 값입니다.  
+
+#### <a name="import-app-in-configuration-manager"></a>Configuration Manager에서는 가져오기 앱
+
+1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고, **Cloud Services**를 확장하고, **Azure 서비스** 노드를 선택합니다. 선택 **Azure 서비스 구성** 리본 메뉴에 있습니다.  
+
+2. 에 **Azure Services** 페이지 Azure 서비스 마법사의 다음 설정을 구성 합니다.  
+
+    - Configuration Manager의 개체 **이름**을 지정합니다.  
+
+    - 서비스를 식별하는 데 도움이 되도록 선택적 **설명**을 지정합니다.  
+
+    - 선택 **데스크톱 분석** 사용 가능한 서비스 목록에서.  
+  
+   **다음**을 선택합니다.  
+
+3. 에 **앱** 페이지에서 적절 한 선택 **Azure 환경**합니다. 선택한 **가져오기** 웹 앱에 대 한 합니다. 다음 설정을 구성 합니다 **앱 가져오기** 창:  
+
+    - **Azure AD 테 넌 트 이름**: 이 이름은 Configuration Manager에서 지정 됩니다 하는 방법  
+
+    - **Azure AD 테 넌 트 ID**: 합니다 **디렉터리 ID** Azure AD에서 복사한  
+
+    - **클라이언트 ID**: 합니다 **응용 프로그램 ID** Azure AD 앱에서 복사  
+
+    - **비밀 키**: 키 **값** Azure AD 앱에서 복사  
+
+    - **비밀 키 만료**: 동일한 키의 만료 날짜  
+
+    - **앱 ID URI**: 이 설정은 다음 값을 사용 하 여 자동으로 채워야 합니다. `https://cmmicrosvc.manage.microsoft.com/`  
+  
+   선택 **확인**를 선택한 후 **확인** 앱 가져오기 창을 닫습니다. 선택 **다음** Azure 서비스 마법사의 앱 페이지에 있습니다.  
+
+마법사의 나머지 부분에서 계속 합니다 **진단 데이터** 페이지를 참조 하십시오 [서비스에 연결](/sccm/desktop-analytics/connect-configmgr#bkmk_connect)합니다.
+
 
 ### <a name="bkmk_MALogAnalyticsReader"></a> MALogAnalyticsReader 응용 프로그램 역할
 

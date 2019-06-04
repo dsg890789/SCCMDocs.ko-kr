@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d056d533a83290b638958ff78275ddec1409ec5
-ms.sourcegitcommit: 65e9b30e2b53ab9db679a7b1d50634a73c0028db
+ms.openlocfilehash: bfe3094f63440d26a64d8d82cc44007141dd60df
+ms.sourcegitcommit: 65753c51fbf596f233fc75a5462ea4a44005c70b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66429860"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66462999"
 ---
 # <a name="how-to-enroll-devices-in-desktop-analytics"></a>데스크톱 Analytics에서 장치를 등록 하는 방법
 
@@ -127,7 +127,7 @@ Configuration Manager를 데스크톱 Analytics에 연결 하는 경우 장치 �
 
 2. 에 **진단 데이터** 페이지에서 다음 설정이 필요에 따라 변경 합니다.  
 
-    - **상업용 ID**:이 값은 조직의 id 자동 채우기 허용 목록에 모든 필요한 프록시 서버에 구성 되어 있는지 확인 하지 않는 경우 [끝점](/sccm/desktop-analytics/enable-data-sharing#endpoints) 계속 하기 전에 합니다. 또는에서 상업용 ID를 검색할 합니다 **연결 된 서비스** 창에는 [데스크톱 Analytics 포털](https://aka.ms/m365aprod).   
+    - **상업용 ID**:이 값은 조직의 id 자동 채우기 프록시 서버에 필요한 모든을 허용 하도록 구성 되어 있는지 확인 하지 않는 경우 [끝점](/sccm/desktop-analytics/enable-data-sharing#endpoints) 계속 하기 전에 합니다. 또는에서 상업용 ID를 검색할 합니다 **연결 된 서비스** 창에는 [데스크톱 Analytics 포털](https://aka.ms/m365aprod).   
 
     - **Windows 10 진단 데이터 수준**: 자세한 내용은 [진단 데이터 수준](/sccm/desktop-analytics/enable-data-sharing#diagnostic-data-levels)합니다.  
 
