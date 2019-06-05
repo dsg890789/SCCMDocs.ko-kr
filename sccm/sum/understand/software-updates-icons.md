@@ -11,12 +11,12 @@ ms.assetid: 63c5ef72-5715-4d86-85a2-71beba469fab
 author: mestew
 ms.author: mstewart
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9dbb2b7fadf13a49c25e2eb9bb6fcc608d3869f6
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 7f096f9ff9baaff2411289c27282ab53eb697b0b
+ms.sourcegitcommit: 18a94eb78043cb565b05cd0e9469b939b29cccf0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65495849"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66354972"
 ---
 # <a name="icons-used-for-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 업데이트에 사용되는 아이콘
 
@@ -123,4 +123,9 @@ ms.locfileid: "65495849"
 
  **작동 문제:**  
 
- 소프트웨어 업데이트에 대한 콘텐츠가 없을 경우 클라이언트는 배포 지점에서 콘텐츠를 사용할 수 있을 때까지 소프트웨어 업데이트를 설치할 수 없습니다. **재배포** 동작을 사용하여 배포 지점에 콘텐츠를 다시 배포할 수 있습니다. 부모 사이트에서 만든 배포에 소프트웨어 업데이트에 대한 콘텐츠가 없을 경우 소프트웨어 업데이트를 자식 사이트로 복제하거나 다시 배포해야 합니다. 콘텐츠 재배포에 대한 자세한 내용은 [배포한 콘텐츠 관리](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_manage)를 참조하세요.  
+ 소프트웨어 업데이트에 대한 콘텐츠가 없을 경우 클라이언트는 배포 지점에서 콘텐츠를 사용할 수 있을 때까지 소프트웨어 업데이트를 설치할 수 없습니다. **재배포** 동작을 사용하여 배포 지점에 콘텐츠를 다시 배포할 수 있습니다. 부모 사이트에서 만든 배포에 소프트웨어 업데이트에 대한 콘텐츠가 없을 경우 소프트웨어 업데이트를 복제하거나 자식 사이트로 다시 배포해야 합니다. 콘텐츠 재배포에 대한 자세한 내용은 [배포한 콘텐츠 관리](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_manage)를 참조하세요.  
+
+
+## <a name="next-steps"></a>다음 단계 
+
+[소프트웨어 업데이트 계획](/sccm/sum/plan-design/plan-for-software-updates)

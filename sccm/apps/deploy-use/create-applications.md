@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e796996f870fcdd8428f3a16b08eee56d249cfa6
-ms.sourcegitcommit: 53f2380ac67025fb4a69fc1651edad15d98e0cdd
+ms.openlocfilehash: c54eb02fe3de3246a7c8ed15e7589fcd4d9b1c9b
+ms.sourcegitcommit: abfc9e1b3945637fa93ca8d3a11519493a5d5391
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65673387"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66264443"
 ---
 # <a name="create-applications-in-configuration-manager"></a>Configuration Manager에서 애플리케이션 만들기
 
@@ -86,7 +86,7 @@ Configuration Manager 애플리케이션은 애플리케이션에 대한 메타�
 
     -   **설치 동작**: Configuration Manager가 이 배포 유형을 설치하는 방법에 대한 세 가지 옵션 중 하나를 선택합니다. 이러한 옵션에 대한 자세한 내용을 보려면 [사용자 환경](#bkmk_dt-ux)을 참조하세요.  
 
-    -   **자동 VPN 연결 사용(구성하는 경우)**: 사용자가 앱을 시작하는 디바이스에 VPN 프로필을 배포한 경우 앱을 시작하면 VPN을 연결합니다. 이 옵션은 Windows 8.1 및 Windows Phone 8.1에만 적용됩니다. Windows Phone 8.1 디바이스에서는 둘 이상의 VPN 프로필을 디바이스에 배포하는 경우 자동 VPN 연결이 지원되지 않습니다. 자세한 내용은 [VPN 프로필](/sccm/protect/deploy-use/vpn-profiles)을 참조하세요.  
+    -   **자동 VPN 연결 사용(구성하는 경우)** : 사용자가 앱을 시작하는 디바이스에 VPN 프로필을 배포한 경우 앱을 시작하면 VPN을 연결합니다. 이 옵션은 Windows 8.1 및 Windows Phone 8.1에만 적용됩니다. Windows Phone 8.1 디바이스에서는 둘 이상의 VPN 프로필을 디바이스에 배포하는 경우 자동 VPN 연결이 지원되지 않습니다. 자세한 내용은 [VPN 프로필](/sccm/protect/deploy-use/vpn-profiles)을 참조하세요.  
 
     - **디바이스의 모든 사용자에 대해 이 애플리케이션 프로비저닝**<!--1358310-->: 버전 1806부터 디바이스에서 모든 사용자에 대해 Windows 앱 패키지를 사용하여 애플리케이션을 프로비저닝합니다. 자세한 내용은 [Windows 애플리케이션 만들기](/sccm/apps/get-started/creating-windows-applications#bkmk_provision)를 참조하세요.  
 
@@ -209,7 +209,7 @@ Configuration Manager 콘솔의 **애플리케이션** 노드에 새 애플리�
 
     -   **설치 동작**: Configuration Manager가 이 배포 유형을 설치하는 방법에 대한 세 가지 옵션 중 하나를 선택합니다. 이러한 옵션에 대한 자세한 내용을 보려면 [사용자 환경](#bkmk_dt-ux)을 참조하세요.  
 
-    -   **자동 VPN 연결 사용(구성하는 경우)**: 사용자가 앱을 시작하는 디바이스에 VPN 프로필을 배포한 경우 앱을 시작하면 VPN을 연결합니다. 이 옵션은 Windows 8.1 및 Windows Phone 8.1에만 적용됩니다. Windows Phone 8.1 디바이스에서는 둘 이상의 VPN 프로필을 디바이스에 배포하는 경우 자동 VPN 연결이 지원되지 않습니다. 자세한 내용은 [VPN 프로필](/sccm/protect/deploy-use/vpn-profiles)을 참조하세요.  
+    -   **자동 VPN 연결 사용(구성하는 경우)** : 사용자가 앱을 시작하는 디바이스에 VPN 프로필을 배포한 경우 앱을 시작하면 VPN을 연결합니다. 이 옵션은 Windows 8.1 및 Windows Phone 8.1에만 적용됩니다. Windows Phone 8.1 디바이스에서는 둘 이상의 VPN 프로필을 디바이스에 배포하는 경우 자동 VPN 연결이 지원되지 않습니다. 자세한 내용은 [VPN 프로필](/sccm/protect/deploy-use/vpn-profiles)을 참조하세요.  
 
 4.  **다음**을 선택한 다음, [배포 유형 콘텐츠 옵션](#bkmk_dt-content)으로 계속 진행합니다.  
 
@@ -250,7 +250,7 @@ Configuration Manager 콘솔의 **애플리케이션** 노드에 새 애플리�
 
     - **복구 시작 지점**: 선택적으로 배포 유형에 대한 복구 프로그램이 포함된 폴더를 지정합니다. 이 폴더는 클라이언트에서 절대 경로일 수 있습니다. 또한 패키지와 폴더의 배포 지점에서 상대 경로일 수도 있습니다.  
 
-- **설치 및 제거 프로그램을 64비트 클라이언트에서 32비트 프로세스로 실행합니다.**: Windows 기반 컴퓨터에서 32비트 파일 및 레지스트리 위치를 사용하여 배포 유형의 설치 프로그램을 실행합니다.  
+- **설치 및 제거 프로그램을 64비트 클라이언트에서 32비트 프로세스로 실행합니다.** : Windows 기반 컴퓨터에서 32비트 파일 및 레지스트리 위치를 사용하여 배포 유형의 설치 프로그램을 실행합니다.  
 
 
 #### <a name="deployment-type-properties-content-options"></a>배포 유형 속성 **콘텐츠** 옵션
@@ -338,6 +338,9 @@ Configuration Manager 콘솔의 **애플리케이션** 노드에 새 애플리�
 
 Configuration Manager는 스크립트에서 결과를 확인합니다. 스크립트에 의해 표준 출력(STDOUT) 스트림, 표준 오류(STDERR) 스트림 및 종료 코드에 기록된 값을 읽습니다. 스크립트가 0이 아닌 값으로 끝나는 경우 스크립트는 실패하고 애플리케이션 검색 상태는 *알 수 없음* 상태입니다. 종료 코드가 0이고 STDOUT에 데이터가 포함되어 있으면 애플리케이션 검색 상태는 *설치됨*입니다.
 
+> [!TIP]
+> 검색 스크립트를 작성할 때 0 종료 코드를 반환하지만 출력(STDOUT의 데이터)을 반환하지 않으면 애플리케이션이 설치된 것으로 검색되지 않습니다. 자세한 내용은 다음 예를 참조하세요.
+
 다음 표를 사용하여 스크립트의 출력에서 애플리케이션의 설치 여부를 확인합니다.  
 
 **0 종료 코드:**  
@@ -349,7 +352,6 @@ Configuration Manager는 스크립트에서 결과를 확인합니다. 스크립
 |비어 있지 않음|비어 있음|성공|설치됨|
 |비어 있지 않음|비어 있지 않음|성공|설치됨|
 
-
 **0이 아닌 종료 코드:**  
 
 |STDOUT|STDERR|스크립트 결과|애플리케이션 검색 상태|
@@ -359,34 +361,62 @@ Configuration Manager는 스크립트에서 결과를 확인합니다. 스크립
 |비어 있지 않음|비어 있음|실패|알 수 없음|
 |비어 있지 않음|비어 있지 않음|실패|알 수 없음|
 
+**예제**
 
-**VBScript 예제**
-
-다음 VBScript 예제를 사용하여 사용자 고유의 애플리케이션 검색 스크립트를 작성합니다.  
+다음 PowerShell/VBScript 예제를 사용하여 사용자 고유의 애플리케이션 검색 스크립트를 작성합니다.  
 
 예제 1: 스크립트가 0이 아닌 종료 코드를 반환합니다. 이 코드는 스크립트가 성공적으로 실행하지 못했음을 나타냅니다. 이 경우 애플리케이션 검색 상태는 알 수 없음입니다.  
+
+``` PowerShell
+Exit 1
+```
+
 ``` VBScript
 WScript.Quit(1)
 ```
 
 예제 2: 스크립트가 종료 코드 0을 반환하지만 STDERR의 값은 비어 있지 않습니다. 이 결과는 스크립트가 성공적으로 실행하지 못했음을 나타냅니다. 이 경우 애플리케이션 검색 상태는 알 수 없음입니다.  
+
+``` PowerShell
+Write-Error "Script failed"
+Exit 0
+```
+
 ``` VBScript
 WScript.StdErr.Write "Script failed"
 WScript.Quit(0)
 ```
 
 예제 3: 스크립트가 종료 코드 0을 반환하며 이는 실행 성공을 나타냅니다. 그러나 STDOUT의 값이 비어 있으며 이는 애플리케이션이 설치되지 않았음을 나타냅니다.  
+
+``` PowerShell
+Exit 0
+```
+
 ``` VBScript
 WScript.Quit(0)
 ```
 
 예제 4: 스크립트가 종료 코드 0을 반환하며 이는 실행 성공을 나타냅니다. STDOUT의 값이 비어 있지 않으며 이는 애플리케이션이 설치되었음을 나타냅니다.  
+
+``` PowerShell
+Write-Host "The application is installed"
+Exit 0
+```
+
 ``` VBScript
 WScript.StdOut.Write "The application is installed"
 WScript.Quit(0)
 ```
 
 예제 5: 스크립트가 종료 코드 0을 반환하며 이는 실행 성공을 나타냅니다. STDOUT 및 STDERR의 값이 비어 있지 않으며 이는 애플리케이션이 설치되었음을 나타냅니다.  
+
+``` PowerShell
+Write-Host "The application is installed"
+Write-Error "Completed"
+Exit 0
+```
+
 ``` VBScript
 WScript.StdOut.Write "The application is installed"
 WScript.StdErr.Write "Completed"
@@ -439,7 +469,7 @@ WScript.Quit(0)
     >  
     > 시스템 컨텍스트에 설치하고 사용자가 설치와 상호 작용하도록 허용하는 것은 안전한 구성이 아닙니다. 자세한 내용은 [애플리케이션 관리에 대한 보안 및 개인 정보](/sccm/apps/plan-design/security-and-privacy-for-application-management#bkmk_interact)를 참조하세요.  
 
-- **최대 허용 실행 시간(분)**: 배포 유형이 클라이언트 컴퓨터에서 실행될 최대 시간(분)을 지정합니다. 이 설정은 0보다 큰 정수로 지정합니다. 기본값은 120분입니다(2시간).  
+- **최대 허용 실행 시간(분)** : 배포 유형이 클라이언트 컴퓨터에서 실행될 최대 시간(분)을 지정합니다. 이 설정은 0보다 큰 정수로 지정합니다. 기본값은 120분입니다(2시간).  
 
     다음 작업에 대해 이 값을 사용합니다.  
 
@@ -450,7 +480,7 @@ WScript.Quit(0)
     > [!IMPORTANT]  
     >  **최대 허용 실행 시간** 이 예약된 유지 관리 기간보다 더 긴 경우 충돌이 발생할 수 있습니다. 사용자가 최대 실행 시간을 사용 가능한 유지 관리 기간의 길이보다 더 길게 설정한 경우 해당 배포 유형은 실행되지 않습니다.  
 
-- **예상 설치 시간(분)**: 배포 유형의 예상 설치 시간을 지정합니다. 사용자는 소프트웨어 센터에서 이 시간을 봅니다.  
+- **예상 설치 시간(분)** : 배포 유형의 예상 설치 시간을 지정합니다. 사용자는 소프트웨어 센터에서 이 시간을 봅니다.  
 
 
 #### <a name="deployment-type-properties-user-experience-options"></a>배포 유형 속성 **사용자 환경** 옵션
@@ -464,7 +494,7 @@ WScript.Quit(0)
 
 - **소프트웨어 설치 프로그램이 디바이스를 강제로 다시 시작할 수 있음**: Configuration Manager는 다시 부팅을 제어하거나 시작하지는 않지만 실제 설치는 경고 없이 수행할 수도 있습니다. 다시 부팅을 시작할 경우 Configuration Manager가 설치 실패를 보고하지 않도록 하려면 이 설정을 사용합니다. 소프트웨어 센터에 **다시 부팅이 필요**가 표시됩니다.  
 
-- **Configuration Manager 클라이언트는 필수 디바이스를 강제로 다시 시작합니다.**: Configuration Manager는 성공적인 설치 후 디바이스를 강제로 다시 부팅합니다. 소프트웨어 센터에서 다시 부팅이 필요하다고 보고합니다. 사용자가 설치 중에 로그인하면 *배포의* 사용자 환경 구성에 따라 메시지가 표시됩니다.  
+- **Configuration Manager 클라이언트는 필수 디바이스를 강제로 다시 시작합니다.** : Configuration Manager는 성공적인 설치 후 디바이스를 강제로 다시 부팅합니다. 소프트웨어 센터에서 다시 부팅이 필요하다고 보고합니다. 사용자가 설치 중에 로그인하면 *배포의* 사용자 환경 구성에 따라 메시지가 표시됩니다.  
 
 
 ### <a name="bkmk_dt-require"></a> 배포 유형 **요구 사항**
@@ -535,9 +565,9 @@ Configuration Manager는 배포 유형을 설치하기 전에 디바이스에서
 
 3. 드롭다운 목록에서 **코드 유형**을 선택합니다. 이 설정은 Configuration Manager에서 이 배포 유형에서 지정된 반환 코드를 해석하는 방법을 정의합니다. 사용 가능한 유형은 배포 유형 기술에 따라 다릅니다.   
 
-    - **성공(다시 부팅 안 함)**: 성공적으로 배포 유형을 설치했으며 다시 부팅이 필요하지 않습니다.  
+    - **성공(다시 부팅 안 함)** : 성공적으로 배포 유형을 설치했으며 다시 부팅이 필요하지 않습니다.  
 
-    - **실패(다시 부팅 안 함)**: 배포 유형을 설치하지 못했습니다.  
+    - **실패(다시 부팅 안 함)** : 배포 유형을 설치하지 못했습니다.  
 
     - **하드 재부팅**: 성공적으로 배포 유형을 설치했으나, 디바이스를 다시 부팅해야 합니다. 디바이스를 다시 시작할 때까지 아무것도 설치할 수 없습니다.  
 

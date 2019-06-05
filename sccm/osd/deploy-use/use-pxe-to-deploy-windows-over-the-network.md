@@ -2,7 +2,7 @@
 title: 네트워크를 통해 OSD에 대해 PXE 사용
 titleSuffix: Configuration Manager
 description: PXE 시작 OS 배포를 사용하여 컴퓨터의 운영 체제를 새로 고치거나 새 컴퓨터에 새 버전의 Windows를 설치할 수 있습니다.
-ms.date: 05/03/2019
+ms.date: 05/28/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 278472b580c5e1e483d273626420225898073246
-ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.openlocfilehash: 71fab49dc6ba5d949aeaf48145e1f7d0446c0f91
+ms.sourcegitcommit: 18a94eb78043cb565b05cd0e9469b939b29cccf0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083404"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66355005"
 ---
 # <a name="use-pxe-to-deploy-windows-over-the-network-with-configuration-manager"></a>Configuration Manager에서 PXE를 사용하여 네트워크를 통해 Windows 배포
 
@@ -47,7 +47,12 @@ PXE 부팅 요청을 만드는 Configuration Manager 클라이언트에 운영 �
 > [!Note]  
 > 버전 1810 이하에서는 DHCP 서버도 실행하는 서버에서 WDS 없이 PXE 응답기를 사용하도록 지원되지 않습니다.
 >
-> 버전 1902부터는 Windows 배포 서비스 없이 배포 지점에서 PXE 응답기를 사용하도록 설정하면 이제 DHCP 서비스와 동일한 서버에서 실행할 수 있습니다. <!--3734270-->  
+> 버전 1902부터는 Windows 배포 서비스 없이 배포 지점에서 PXE 응답기를 사용하도록 설정하면 이제 DHCP 서비스와 동일한 서버에서 실행할 수 있습니다.<!--3734270, SCCMDocs-pr #3416--> 이 구성을 지원하려면 다음 설정을 추가합니다.  
+>
+> - 다음 레지스트리 키 `HKLM\Software\Microsoft\SMS\DP`에서 DWord 값 **DoNotListenOnDhcpPort**를 `1`로 설정합니다.
+> - DHCP 옵션 60을 `PXEClient`로 설정합니다.  
+> - 서버에서 SCCMPXE 및 DHCP 서비스를 다시 시작합니다.  
+
 
 ## <a name="prepare-a-pxe-enabled-boot-image"></a>PXE 사용 부팅 이미지 준비
 
