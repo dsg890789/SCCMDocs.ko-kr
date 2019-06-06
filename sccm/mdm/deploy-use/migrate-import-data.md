@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: b552391d-abc0-48a2-a429-93605a13a66a
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46b5034cb95193a07421fe79a445dac0f5b28503
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: 0e7c9fde7298d4733c2f3abd9555edb989d7cb66
+ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62232332"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66716214"
 ---
 # <a name="import-configuration-manager-data-to-microsoft-intune"></a>Microsoft Intune으로 Configuration Manager 데이터 가져오기 
 
@@ -145,7 +145,7 @@ There are some Configuration Manager objects that the importer tool cannot impor
 #### <a name="find-the-collections-that-cant-be-imported"></a>가져올 수 없는 컬렉션 찾기
 가져올 수 없는 모든 컬렉션 목록을 가져올 수 있으므로 컬렉션 매핑 .csv 파일에 이 컬렉션을 추가할 수 있습니다. 
 
-1. 데이터 가져오기 도구를 실행하고 가져올 개체를 선택합니다. 절차를 사용 하 여 [1 단계: Configuration Manager 개체를 검색 하 고 데이터를 수집](#phase-1:-discover-configuration-manager-objects-and-collect-data) 고 [2 단계: 문제를 해결 하 고 개체를 가져오도록 선택할](#phase-2:-resolve-issues-and-select-the-objects-to-import) 검색 하 고 개체를 선택 합니다. 그런 다음 **요약** 페이지에서 **세부 정보 내보내기**를 선택하여 가져올 수 없는 개체 및 배포를 비롯해 가져오기 위해 선택한 모든 항목에 대한 세부 정보가 포함된 .csv 파일을 만듭니다.  
+1. 데이터 가져오기 도구를 실행하고 가져올 개체를 선택합니다. 절차를 사용 하 여 [1 단계: Configuration Manager 개체를 검색 하 고 데이터를 수집](#phase-1-discover-configuration-manager-objects-and-collect-data) 고 [2 단계: 문제를 해결 하 고 개체를 가져오도록 선택할](#phase-2-resolve-issues-and-select-the-objects-to-import) 검색 하 고 개체를 선택 합니다. 그런 다음 **요약** 페이지에서 **세부 정보 내보내기**를 선택하여 가져올 수 없는 개체 및 배포를 비롯해 가져오기 위해 선택한 모든 항목에 대한 세부 정보가 포함된 .csv 파일을 만듭니다.  
 
 2. Microsoft Excel에서 .csv 파일을 열고 **유형** 열의 **배포** 및 **Importable**(가져오기 가능) 열의 **아니요**를 기준으로 데이터를 필터링합니다. 컬렉션 이름 열에는 이러한 배포를 가져올 수 있으려면 컬렉션 매핑 파일에 추가해야 하는 모든 컬렉션이 표시됩니다.  
 
@@ -165,7 +165,7 @@ There are some Configuration Manager objects that the importer tool cannot impor
 > 또한 마법사의 **요약** 페이지에서 **배포** 유형을 확인할 수 있습니다. 이 도구는 [가져오기 가능] 열에 **예**를 표시하고 **참고** 열의 개체에 할당할 Azure AD 그룹을 나열합니다.  
 
 
-### <a name="phase-1-discover-configuration-manager-objects-and-collect-data"></a>1 단계: Configuration Manager 개체를 검색 하 고 데이터를 수집 합니다.
+### <a name="phase-1-discover-configuration-manager-objects-and-collect-data"></a>1단계: Configuration Manager 개체를 검색 하 고 데이터를 수집 합니다.
 
 1단계에서 검색할 개체를 선택한 다음 도구에서 선택한 개체에 대한 정보를 수집하도록 합니다. 
 

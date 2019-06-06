@@ -10,17 +10,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 29b46cc49930d47439dc5e60b72e4bf5017829b9
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: 0a05fc1c07df8b95ad9305d199bf5abbb3eff3a1
+ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62275676"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66716166"
 ---
 # <a name="how-to-create-configuration-items-for-windows-phone-devices-managed-without-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트 없이 관리되는 Windows Phone 디바이스에 대한 구성 항목을 만드는 방법
+
 System Center Configuration Manager **Windows Phone** 구성 항목을 사용하여 Microsoft Intune에 등록되어 있거나 Configuration Manager에서 온-프레미스로 관리되는 Windows Phone 디바이스에 대한 설정을 관리합니다.  
   
-### <a name="to-create-a-windows-phone-configuration-item"></a>Windows Phone 구성 항목을 만들려면  
+## <a name="create-a-windows-phone-configuration-item"></a>Windows Phone 구성 항목 만들기  
   
 1. Configuration Manager 콘솔에서 **자산 및 준수**을 클릭합니다.  
   
@@ -36,7 +37,7 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
   
 7. 마법사의 **지원되는 플랫폼** 페이지에서 구성 항목을 평가할 특정 Windows Phone 플랫폼을 선택합니다.  
   
-8. 마법사의 **디바이스 설정** 페이지에서 구성하려는 설정 그룹을 선택합니다. 자세한 내용은 이 항목의 [Windows Phone 구성 항목 설정 참조](#BKMK_Setref) 섹션을 참조하고 **다음**을 클릭합니다.  
+8. 마법사의 **디바이스 설정** 페이지에서 구성하려는 설정 그룹을 선택합니다. 자세한 내용은 이 항목의 [Windows Phone 구성 항목 설정 참조](#windows-phone-configuration-item-settings-reference) 섹션을 참조하고 **다음**을 클릭합니다.  
   
    > [!TIP]  
    >  원하는 설정이 나열되지 않은 경우 **기본 설정 그룹에 없는 추가 설정 구성 확인란**을 선택합니다.  

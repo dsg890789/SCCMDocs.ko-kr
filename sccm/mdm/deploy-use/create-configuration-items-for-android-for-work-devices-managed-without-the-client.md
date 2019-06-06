@@ -1,7 +1,7 @@
 ---
 title: Intune으로 관리되는 Android for Work 디바이스에 대한 구성 항목을 만드는 방법
 titleSuffix: Configuration Manager
-ms.date: 2017-07-31
+ms.date: 07/31/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -9,18 +9,18 @@ ms.assetid: ab6784fd-8c57-4be9-858f-50fe39f2ff5f
 author: aczechowski
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15e0c2ad91e512551e55d507d6a84bde3e46396f
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: 1ebae22b8536c67fc5c912009b836185be3b17b6
+ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287146"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66716249"
 ---
 # <a name="how-to-create-configuration-items-for-android-for-work-devices-managed-with-intune"></a>Intune으로 관리되는 Android for Work 디바이스에 대한 구성 항목을 만드는 방법
 
  System Center Configuration Manager **Android for Work** 구성 항목을 사용하여 Configuration Manager에서 온-프레미스로 관리되거나 Microsoft Intune에 등록된 Android for Work 디바이스에 대한 설정을 관리할 수 있습니다.  
 
-### <a name="to-create-an-android-for-work-configuration-item"></a>Android for Work 구성 항목을 만들려면  
+## <a name="create-an-android-for-work-configuration-item"></a>Android for Work 구성 항목 만들기  
 
 1. Configuration Manager 콘솔에서 **자산 및 준수**을 클릭합니다.  
 

@@ -11,19 +11,19 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a696059076c64d8341f5fbfa3dd5ab68fd2b34ff
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: 170ae3c327e61bd9bebfb22eb7ac8be513323a3f
+ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62275692"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66716194"
 ---
 # <a name="how-to-create-configuration-items-for-windows-81-and-windows-10-devices-managed-without-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 디바이스에 대한 구성 항목을 만드는 방법
 
 
  System Center Configuration Manager **Windows 8.1 및 Windows 10** 구성 항목을 사용하여 Configuration Manager에서 온-프레미스로 관리되거나 Microsoft Intune에 등록된 Windows 8.1 및 Windows 10 디바이스에 대한 설정을 관리할 수 있습니다.  
 
-### <a name="to-create-a-windows-81-and-windows-10-configuration-item"></a>Windows 8.1 및 Windows 10 구성 항목을 만들려면  
+## <a name="create-a-windows-81-and-windows-10-configuration-item"></a>Windows 8.1 및 Windows 10 구성 항목 만들기  
 
 1. Configuration Manager 콘솔에서 **자산 및 준수**을 클릭합니다.  
 
@@ -39,7 +39,7 @@ ms.locfileid: "62275692"
 
 7. 마법사의 **지원되는 플랫폼** 페이지에서 구성 항목을 평가하는 특정 Windows 플랫폼을 선택합니다.  
 
-8. 마법사의 **디바이스 설정** 페이지에서 구성하려는 설정 그룹을 선택합니다. 자세한 내용은 이 항목의 [Windows 8.1 및 Windows 10 구성 항목 설정 참조](#BKMK_Setref) 섹션을 참조하고 **다음**을 클릭합니다.  
+8. 마법사의 **디바이스 설정** 페이지에서 구성하려는 설정 그룹을 선택합니다. 자세한 내용은 이 항목의 [Windows 8.1 및 Windows 10 구성 항목 설정 참조](#windows-81-and-windows-10-configuration-item-settings-reference) 섹션을 참조하고 **다음**을 클릭합니다.  
 
    > [!TIP]  
    >  원하는 설정이 나열되지 않은 경우 **기본 설정 그룹에 없는 추가 설정 구성 확인란**을 선택합니다.  

@@ -2,7 +2,7 @@
 title: Desktop Analytics
 titleSuffix: Configuration Manager
 description: 데스크톱 분석 서비스의 개요를 Configuration Manager를 통합 합니다.
-ms.date: 04/22/2019
+ms.date: 06/04/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: overview
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78e9454212bb8264926c1aba5262f06db1798abe
-ms.sourcegitcommit: 53f2380ac67025fb4a69fc1651edad15d98e0cdd
+ms.openlocfilehash: bdeffb3b2d478e4984ef721655b78aee5c47c36f
+ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65673438"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66716232"
 ---
 # <a name="what-is-desktop-analytics"></a>데스크톱 Analytics 란?
 
@@ -89,6 +89,11 @@ ms.locfileid: "65673438"
     - 최신 업데이트를 설치 합니다. 자세한 내용은 [장치 업데이트](/sccm/desktop-analytics/enroll-devices#update-devices)합니다.  
 
     - 장치는 Configuration Manager 클라이언트를 버전 (4488598) 업데이트 롤업 2 사용 하 여 1810 있어야 할 수도 이상. 자세한 내용은 [Configuration Manager 업데이트](/sccm/desktop-analytics/connect-configmgr#bkmk_hotfix)합니다.  
+
+    > [!Note]  
+    > 데스크톱 Analytics는 Windows 10 장기 서비스 채널 (LTSC)에 대 한 업그레이드를 지원 하지 않습니다. 자세한 내용은 [Windows 서비스에 대 한 개요로](https://docs.microsoft.com/windows/deployment/update/waas-overview#long-term-servicing-channel)합니다.
+    >
+    > 데스크톱 분석 지원 내부에서 업그레이드 시나리오를 가장 하도록 설계 되었습니다. 32 비트에서 64 비트 아키텍처에서와 같은 주요 변경 내용을 확인 해야 하는 경우에 이미징 시나리오를 사용 합니다. 데스크톱 분석 정보는 이러한 클래식 운영 체제 배포 시나리오에서 여전히 중요 하지만 현재 위치 업그레이드 특정 지침은 무시할 수 있습니다. 자세한 내용은 [Configuration Manager를 사용 하 여 엔터프라이즈 운영 체제를 배포 하는 시나리오](/sccm/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems)합니다.
 
 - Windows 진단 데이터입니다. 자세한 내용은 다음 아티클을 참조하세요.  
 
