@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e7baf5d26bb823f3b02efb8e71cf4d34330d899
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: 6aef8f927a2c4d3cb3eb7fecc4970cb19cbb83ed
+ms.sourcegitcommit: a6a6507e01d819217208cfcea483ce9a2744583d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62282395"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66748271"
 ---
 # <a name="set-up-ios-hybrid-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune로 iOS 하이브리드 디바이스 관리 설정
 
@@ -45,7 +45,7 @@ Apple에서 APNs 인증서를 요청하려면 인증서 서명 요청 파일이 
 ## <a name="request-an-mdm-push-certificate-from-apple"></a>Apple에서 MDM 푸시 인증서 요청
 MDM 푸시 인증서를 사용하면 관리 서비스, Intune 및 등록된 iOS 모바일 디바이스 간에 트러스트 관계를 설정할 수 있습니다.  
 
-1.  브라우저에서 [Apple Push Certificates 포털](http://go.microsoft.com/fwlink/?LinkId=269844) 로 이동한 다음 회사 Apple ID로 로그인합니다. 나중에 APNs 인증서를 갱신하기 위해 이 Apple ID를 사용해야 합니다.  
+1.  브라우저에서 [Apple Push Certificates 포털](https://identity.apple.com/pushcert) 로 이동한 다음 회사 Apple ID로 로그인합니다. 나중에 APNs 인증서를 갱신하기 위해 이 Apple ID를 사용해야 합니다.  
 
 2.  인증서 서명 요청(.csr) 파일을 사용하여 마법사를 완료합니다. MDM 푸시 인증서를 다운로드하고 pem 파일을 로컬로 저장합니다. 이 인증서(.pem) 파일은 APN(Apple Push Notification) 서버와 Intune의 모바일 디바이스 관리 기관 간의 트러스트 관계를 설정하는 데 사용됩니다.  
 

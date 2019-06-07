@@ -11,17 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d511df5dc4b6e29a86d4eabacec9037ee204ecc
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.openlocfilehash: cadeb04e52e584cf260e84ee4bdd4ea6a07de23f
+ms.sourcegitcommit: a6a6507e01d819217208cfcea483ce9a2744583d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66176739"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66748319"
 ---
 # <a name="how-to-create-configuration-items-for-ios-and-mac-os-x-devices-managed-with-intune"></a>Intune으로 관리되는 iOS 및 Mac OS X 디바이스에 대한 구성 항목을 만드는 방법
+
 System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용하여 Configuration Manager에서 온-프레미스로 관리되거나 Microsoft Intune에 등록된 iOS 및 Mac OS X 디바이스에 대한 설정을 관리할 수 있습니다.  
   
-### <a name="to-create-an-ios-and-mac-os-x-configuration-item"></a>iOS 및 Mac OS X 구성 항목을 만들려면  
+## <a name="create-an-ios-and-mac-os-x-configuration-item"></a>IOS 및 Mac OS X 구성 항목 만들기  
   
 1. Configuration Manager 콘솔에서 **자산 및 준수**을 클릭합니다.  
   
@@ -37,7 +38,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
   
 7. 마법사의 **지원되는 플랫폼** 페이지에서 구성 항목을 평가하는 특정 iOS 또는 Mac OS X 플랫폼을 선택합니다.  
   
-8. 마법사의 **디바이스 설정** 페이지에서 구성하려는 설정 그룹을 선택합니다. 자세한 내용은 이 항목의 [iOS 및 Mac OS X 구성 항목 설정 참조](#BKMK_Setref) 섹션을 참조하고 **다음**을 클릭합니다.  
+8. 마법사의 **디바이스 설정** 페이지에서 구성하려는 설정 그룹을 선택합니다. 자세한 내용은 이 항목의 [iOS 및 Mac OS X 구성 항목 설정 참조](#ios-and-mac-os-x-configuration-item-settings-reference) 섹션을 참조하고 **다음**을 클릭합니다.  
   
    > [!TIP]  
    >  원하는 설정이 나열되지 않은 경우 **기본 설정 그룹에 없는 추가 설정 구성 확인란**을 선택합니다.  
@@ -276,7 +277,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
      >  앱의 번들 ID를 찾으려면 앱이 설치된 Mac 컴퓨터에서 다음 단계를 따르세요.  
      > 
      > 1. 앱이 설치되어 있는 폴더(예: **/Applications**)를 엽니다.  
-     >    2.  _<앱 이름\>_**.app** 번들을 선택하고 **패키지 내용 표시**를 선택합니다.  
+     >    2.  _<앱 이름\>_ **.app** 번들을 선택하고 **패키지 내용 표시**를 선택합니다.  
      >    3.  **Info.plist** 파일을 엽니다.  
      >    4.  **CFBundleIdentifier**키와 연결된 값을 확인합니다.  
      > 

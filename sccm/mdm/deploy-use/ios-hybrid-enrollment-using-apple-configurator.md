@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04b67b324927f4918ff5c0835896cb0d63a9e48c
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: b07fc7bf1c4a226456506d0131c3d6bad14b1766
+ms.sourcegitcommit: a6a6507e01d819217208cfcea483ce9a2744583d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62256050"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66748223"
 ---
 # <a name="ios-hybrid-enrollment-using-apple-configurator-with-configuration-manager"></a>Configuration Manager에서 Apple Configurator를 사용한 iOS 하이브리드 등록
 
@@ -86,7 +86,7 @@ ms.locfileid: "62256050"
 
     ```
 
-5.  편집한 프로필 URL을 저장합니다. [다음 섹션](#step-4-prepare-the-device-with-apple-configurator)에서 이 URL을 사용하여 Apple Configurator에서 등록 프로필 URL을 추가합니다.  
+5.  편집한 프로필 URL을 저장합니다. [다음 섹션](#prepare-the-device-with-apple-configurator)에서 이 URL을 사용하여 Apple Configurator에서 등록 프로필 URL을 추가합니다.  
 
 > [!NOTE]
 > 등록 프로필 URL은 내보낸 후 2주 동안 유효합니다. 2주 후에는 iOS 디바이스를 등록할 새 URL을 내보내야 합니다.
@@ -104,7 +104,7 @@ ms.locfileid: "62256050"
 
 3. 기본 설정 창에서 **서버**를 선택하고 왼쪽 창 아래에 있는 "+" 기호를 클릭하여 MDM 서버 마법사를 시작합니다. **다음**을 클릭합니다.  
 
-4. [이전](#step-3-export-the-profile-to-deploy-to-ios-devices)에 저장한 **이름** 및 **등록 URL**을 입력합니다. **다음**을 클릭합니다.  
+4. [이전](#export-the-profile-to-deploy-to-ios-devices)에 저장한 **이름** 및 **등록 URL**을 입력합니다. **다음**을 클릭합니다.  
 
    > [!NOTE]
    > Apple TV에 대한 트러스트 프로필 요구 사항에 대한 경고가 표시되면 회색 "X"를 클릭하여 **신뢰 프로필** 옵션을 안전하게 취소할 수 있습니다. 또한 앵커 인증서 경고도 안전하게 무시할 수 있습니다.

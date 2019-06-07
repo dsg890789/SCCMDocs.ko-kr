@@ -2,7 +2,7 @@
 title: 데이터 공유를 사용하도록 설정
 titleSuffix: Configuration Manager
 description: 데스크톱 Analytics를 사용 하 여 진단 데이터를 공유 하는 것에 대 한 참조 가이드입니다.
-ms.date: 04/22/2019
+ms.date: 06/05/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3a30dc89882146c892f5eeec1aacfc31efbfd038
-ms.sourcegitcommit: 65753c51fbf596f233fc75a5462ea4a44005c70b
+ms.openlocfilehash: dbe161fd744343927f0b373775182eccfd58c1b6
+ms.sourcegitcommit: a6a6507e01d819217208cfcea483ce9a2744583d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66463049"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66748240"
 ---
 # <a name="enable-data-sharing-for-desktop-analytics"></a>데이터 분석 데스크톱에 대 한 공유를 사용 하도록 설정
 
@@ -56,6 +56,9 @@ ms.locfileid: "66463049"
 
 데이터 공유를 사용 하려면 다음 끝점을 허용 하도록 프록시 서버를 구성 합니다.
 
+> [!Important]  
+> 개인 정보 보호 및 데이터 무결성에 대 한 Windows 진단 데이터 끝점과 통신할 때 Microsoft SSL 인증서를 확인 합니다. SSL 인터 셉 션 및 검사에 사용할 수 없습니다. 데스크톱 Analytics를 사용 하려면 SSL 검사에서 이러한 끝점을 제외 합니다.<!-- BUG 4647542 -->
+
 | 엔드포인트  | 기능  |
 |-----------|-----------|
 | `https://v10c.events.data.microsoft.com` | 연결 된 사용자 환경 및 진단 구성 요소 끝점입니다. Windows 10을 실행 하는 장치, 버전 1703 이상, 2018-09 누적를 사용 하 여 업데이트 또는 사용 이상이 설치 되어 있습니다. |
@@ -77,12 +80,6 @@ ms.locfileid: "66463049"
 | `https://office.pipe.aria.microsoft.com` | 향후 기능에 대 한 <!-- Used by Office clients to send diagnostic data events from universal/modern Office apps, and Win32 Office 16 versions later than 16.0.8702. It's used to collect usage and reliability signals events for Desktop Analytics. --> |
 | `https://graph.windows.net` | Configuration Manager 서버 역할에만 해당) (에 계층 데스크톱 Analytics에 연결 하는 경우 commercialid 입니다와 같은 설정이 자동으로 검색 하는 데 사용 합니다. |
 | `https://fef.msua06.manage.microsoft.com` | 동기화 장치 컬렉션 멤버 자격, 배포 계획 (Configuration Manager 서버 역할에만 해당)에 데스크톱 Analytics를 사용 하 여 장치 준비 상태를 사용 합니다. |
-
-
-### <a name="ssl-inspection"></a>SSL 검사
-
-개인 정보 보호 및 데이터 무결성에 대 한 Windows 진단 데이터 끝점과 통신할 때 Microsoft SSL 인증서를 확인 합니다. SSL 인터 셉 션 및 검사에 사용할 수 없습니다. 데스크톱 Analytics를 사용 하려면 위의 끝점 SSL 검사에서 제외 합니다.
-
 
 
 ## <a name="proxy-server-authentication"></a>프록시 서버 인증

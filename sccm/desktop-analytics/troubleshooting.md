@@ -2,7 +2,7 @@
 title: 데스크톱 Analytics 문제 해결
 titleSuffix: Configuration Manager
 description: 데스크톱 Analytics를 사용 하 여 문제를 해결 하려면 기술 세부 정보입니다.
-ms.date: 05/31/2019
+ms.date: 06/05/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: edb871cf9a12862f19109fe885bfb3a0e626f445
-ms.sourcegitcommit: 65753c51fbf596f233fc75a5462ea4a44005c70b
+ms.openlocfilehash: a1f54a2794b3a938366553c635e560ebe1adb320
+ms.sourcegitcommit: a6a6507e01d819217208cfcea483ce9a2744583d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66463071"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66748120"
 ---
 # <a name="troubleshooting-desktop-analytics"></a>데스크톱 Analytics 문제 해결
 
@@ -562,6 +562,20 @@ Configuration Manager에서 Azure 서비스 구성 마법사에서이 Azure AD �
    선택 **확인**를 선택한 후 **확인** 앱 가져오기 창을 닫습니다. 선택 **다음** Azure 서비스 마법사의 앱 페이지에 있습니다.  
 
 마법사의 나머지 부분에서 계속 합니다 **진단 데이터** 페이지를 참조 하십시오 [서비스에 연결](/sccm/desktop-analytics/connect-configmgr#bkmk_connect)합니다.
+
+#### <a name="troubleshoot-app-in-configuration-manager"></a>Configuration Manager에서 앱 문제 해결
+
+만들기 또는 가져오기 앱, 첫 번째 검사 문제를 겪고 있는 경우 **smsadminui.log 하세요** 특정 오류에 대 한 합니다. 다음 구성을 확인 합니다.
+
+- 성공적으로 데스크톱 Analytics 서비스에 테 넌 트를 등록 했습니다. 자세한 내용은 [데스크톱 Analytics를 설정 하는 방법을](/sccm/desktop-analytics/set-up)합니다.
+
+- 모든 필요한 끝점에 액세스할 수 있습니다. 자세한 내용은 [끝점](/sccm/desktop-analytics/enable-data-sharing#endpoints)합니다.
+
+- 로그인 한 사용자 권한이 있는지 확인 합니다. 자세한 내용은 [필수 구성 요소](/sccm/desktop-analytics/overview#prerequisites)를 참조하세요.
+
+- 사용자 로그인 할 수 있는지 azure 일반적 있는지 확인 합니다. 이 작업 확인 하는 경우 일반 Azure AD 인증 문제.
+
+- 에 대 한 상태 메시지를 확인 합니다 **SMS_SERVICE_CONNECTOR** 구성 요소에 대 한 합니다 *데스크톱 분석 작업자*.
 
 
 ### <a name="bkmk_MALogAnalyticsReader"></a> MALogAnalyticsReader 응용 프로그램 역할
