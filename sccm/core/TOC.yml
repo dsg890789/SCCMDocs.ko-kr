@@ -51,7 +51,7 @@
       href: understand/configuration-manager-and-windows-as-service.md
     - name: 확장된 상호 운용성 클라이언트
       href: understand/interoperability-client.md
-    - name: System Center Configuration Manager 라이선스
+    - name: 라이선스 및 분기
       href: understand/learn-more-editions.md
     - name: 클라우드 서비스 사용
       items:
@@ -616,7 +616,7 @@
           items:
             - name: Windows Embedded 디바이스에 클라이언트 배포 계획
               href: clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md
-            - name: '예제 시나리오 '
+            - name: 예제 시나리오
               href: clients/deploy/example-scenario-for-deploying-and-managing-clients-on-windows-embedded-devices.md
         - name: 클라이언트를 절전 모드에서 해제하는 방식 계획
           href: clients/deploy/plan/plan-wake-up-clients.md
