@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5adc8809edc0a069269dfce71f302452a0e01b45
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 376d35ae0eaca282b9634e2c3eeb50b9c814f270
+ms.sourcegitcommit: a6a6507e01d819217208cfcea483ce9a2744583d
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56124032"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66748007"
 ---
 # <a name="learn-more-about-powershell-script-security"></a>PowerShell 스크립트 보안에 대해 자세히 알아보기
 
@@ -49,8 +49,6 @@ ms.locfileid: "56124032"
 
 [악성 코드 삽입으로부터 보호](https://blogs.msdn.microsoft.com/powershell/2006/11/22/protecting-against-malicious-code-injection/)
 
-[PowerShell 갤러리의 보안에 대한 정보](https://blogs.msdn.microsoft.com/powershell/2015/08/06/powershell-gallery-new-security-scan/)
-
 [PowerShell 블루팀, 심층 스크립트 블록 로깅, 보호된 이벤트 로깅, 맬웨어 방지 검사 인터페이스, 보안 코드 생성 API에 대해 설명](https://blogs.msdn.microsoft.com/powershell/2015/06/09/powershell-the-blue-team/)
 
 [Windows 10의 경우 맬웨어 방지 검사 인터페이스에 대한 API가 있습니다.](https://cloudblogs.microsoft.com/microsoftsecure/2015/06/09/windows-10-to-offer-application-developers-new-malware-defenses/?source=mmpc)
@@ -65,7 +63,7 @@ ms.locfileid: "56124032"
 - PowerShell 갤러리에서 PowerShell 모듈 ["주입 사냥꾼"](https://www.powershellgallery.com/packages/InjectionHunter/1.0.0)을 활용합니다.
     - 거짓 긍정일 수 있습니다. 따라서 항목이 의심스럽다는 플래그가 지정된 경우 실제 문제가 있는지 확인하려면 의도를 찾아봅니다. 
 - Microsoft Visual Studio에는 PowerShell 구문을 확인하여 지원할 수 있는 스크립트 분석기가 있습니다.
-- 이 비디오 제목: “DEF CON 25 - Lee Holmes - Get $pwnd: 전투가 격화된 Windows Server 공격”에서는 보호할 수 있는 형식의 문제 개요를 제공합니다(특히 섹션 12:20에서 17:50).     <iframe width="560" height="315" src="https://www.youtube.com/embed/ahxMOAAani8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+- "DEF CON 25 - Lee Holmes - Get $pwnd: 전투가 격화된 Windows Server 공격"이라는 이 비디오에서는 보호할 수 있는 형식의 문제 개요를 제공합니다(특히 섹션 12:20에서 17:50).     <iframe width="560" height="315" src="https://www.youtube.com/embed/ahxMOAAani8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## <a name="environment-recommendations"></a>환경 권장 사항
 PowerShell 관리자에 대한 일반 권장 사항입니다.

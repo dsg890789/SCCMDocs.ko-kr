@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 12d40a64cd4300b80e8e625672f1da053814f437
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 3bed079e0037ea09afaf050ef08de16523678970
+ms.sourcegitcommit: 65e9b30e2b53ab9db679a7b1d50634a73c0028db
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65497967"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66429820"
 ---
 # <a name="list-of-prerequisite-checks-for-configuration-manager"></a>Configuration Manager의 필수 구성 요소 검사 목록
 
@@ -746,7 +746,7 @@ SELECT * FROM vLogs WHERE ProcedureName = 'spDiagChangeTracking'
 
 - [Microsoft SQL Server에 대한 TLS 1.2 지원](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server)  
 
-- [Configuration Manager에서 TLS 1.2를 사용하도록 설정하는 방법](https://support.microsoft.com/help/4040243/how-to-enable-tls-1-2-for-configuration-manager)  
+- [Configuration Manager에서 TLS 1.2를 사용하도록 설정하는 방법](/sccm/core/plan-design/security/enable-tls-1-2)  
 
 Configuration Manager는 다음 사이트 시스템 역할에서 SQL Server Native Client를 사용합니다.<!-- SCCMDocs issue 1150 -->
 

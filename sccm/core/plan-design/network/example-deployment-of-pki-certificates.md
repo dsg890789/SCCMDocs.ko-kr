@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e33c634cd2d0153f635675530e3d876ebb6c4e87
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.openlocfilehash: db7b8d62905eb8da1ec23c29a00e7ad88dfb81f8
+ms.sourcegitcommit: a6a6507e01d819217208cfcea483ce9a2744583d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66176970"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66748116"
 ---
 # <a name="step-by-step-example-deployment-of-the-pki-certificates-for-system-center-configuration-manager-windows-server-2008-certification-authority"></a>System Center Configuration Manager를 위한 PKI 인증서 배포의 단계별 예제: Windows Server 2008 인증 기관
 
@@ -72,7 +72,7 @@ Windows Server 2008 CA(인증 기관)를 사용하는 이 단계별 배포 예�
 |인증서 요구 사항|인증서 설명|  
 |-----------------------------|-----------------------------|  
 |IIS를 실행하는 사이트 시스템용 웹 서버 인증서|이 인증서는 데이터를 암호화하고 클라이언트에 대해 서버를 인증하는 데 사용됩니다. 이는 IIS(인터넷 정보 서비스)를 실행하고 HTTPS를 사용하도록 System Center Configuration Manager에서 설정된 사이트 시스템 서버에서 System Center Configuration Manager의 외부에 설치해야 합니다.<br /><br /> 이 인증서를 설정하고 설치하는 단계는 이 항목에서 [IIS를 실행하는 사이트 시스템용 웹 서버 인증서 배포](#BKMK_webserver2008_cm2012)를 참조하세요.|  
-|클라이언트에서 클라우드 기반 배포 지점에 연결하기 위한 서비스 인증서|이 인증서를 구성하고 설치하는 단계는 이 항목에서 [클라우드 기반 배포 지점용 서비스 인증서 배포](#BKMK_clouddp2008_cm2012)를 참조하세요.<br /><br /> **중요:** 이 인증서는 Windows Azure 관리 인증서와 함께 사용됩니다. 관리 인증서에 대한 자세한 내용은 MSDN 라이브러리의 Microsoft Azure 플랫폼 섹션에서 [관리 인증서를 만드는 방법](http://go.microsoft.com/fwlink/p/?LinkId=220281) 및 [Microsoft Azure 구독에 관리 인증서를 추가하는 방법](http://go.microsoft.com/fwlink/?LinkId=241722)을 참조하세요.|  
+|클라이언트에서 클라우드 기반 배포 지점에 연결하기 위한 서비스 인증서|이 인증서를 구성하고 설치하는 단계는 이 항목에서 [클라우드 기반 배포 지점용 서비스 인증서 배포](#BKMK_clouddp2008_cm2012)를 참조하세요.<br /><br /> **중요:** 이 인증서는 Windows Azure 관리 인증서와 함께 사용됩니다. 관리 인증서에 대한 자세한 내용은 MSDN 라이브러리의 Microsoft Azure 플랫폼 섹션에서 [관리 인증서를 만드는 방법](https://docs.microsoft.com/azure/cloud-services/cloud-services-certs-create#create-a-new-self-signed-certificate) 및 [Microsoft Azure 구독에 관리 인증서를 추가하는 방법](https://docs.microsoft.com/azure/cloud-services/cloud-services-configure-ssl-certificate-portal#step-3-upload-a-certificate)을 참조하세요.|  
 |Windows 컴퓨터용 클라이언트 인증서|이 인증서는 HTTPS를 사용하도록 설정된 사이트 시스템에 대해 System Center Configuration Manager 클라이언트 컴퓨터를 인증하는 데 사용됩니다. 또한 HTTPS를 사용하도록 설정된 관리 지점과 상태 마이그레이션 지점에서 작업 상태를 모니터링하는 데 사용할 수 있습니다. 컴퓨터에 있는 System Center Configuration Manager의 외부에 설치해야 합니다.<br /><br /> 이 인증서를 설정하고 설치하는 단계는 이 항목에서 [Windows 컴퓨터용 클라이언트 인증서 배포](#BKMK_client2008_cm2012)를 참조하세요.|  
 |배포 지점용 클라이언트 인증서|이 인증서는 다음 두 가지 용도로 사용됩니다.<br /><br /> 이 인증서는 배포 지점에서 상태 메시지를 전송하기 전에 HTTPS 사용 관리 지점에 대해 배포 지점을 인증하는 데 사용됩니다.<br /><br /> **클라이언트에 대해 PXE 지원 사용** 배포 지점 옵션을 선택할 경우 인증서가 PXE 부팅을 수행하는 컴퓨터로 전송되어 이러한 컴퓨터에서 운영 체제 배포 시 HTTPS 사용 관리 지점에 연결할 수 있습니다.<br /><br /> 이 인증서를 설정하고 설치하는 단계는 이 항목의 [배포 지점용 클라이언트 인증서 배포](#BKMK_clientdistributionpoint2008_cm2012)를 참조하세요.|  
 |모바일 디바이스용 인증서 등록|이 인증서는 HTTPS를 사용하도록 설정된 사이트 시스템에 대해 System Center Configuration Manager 모바일 디바이스 클라이언트를 인증하는 데 사용됩니다. 이 인증서는 System Center Configuration Manager에서 모바일 디바이스를 등록하는 과정에서 설치해야 하며, 구성된 인증서 템플릿을 모바일 디바이스 클라이언트 설정으로 선택해야 합니다.<br /><br /> 이러한 인증서를 설정하는 단계는 이 항목에서 [모바일 디바이스용 등록 인증서 배포](#BKMK_mobiledevices2008_cm2012)를 참조하세요.|  

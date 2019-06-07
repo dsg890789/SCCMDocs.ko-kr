@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18de1d67ecc1dfa6d9c5fb87355c4fed04e2c4c4
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.openlocfilehash: 9b69e6039d7e3626b2e2f7d321bc9150e05ceee3
+ms.sourcegitcommit: a6a6507e01d819217208cfcea483ce9a2744583d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66176747"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66748274"
 ---
 # <a name="hardware-inventory-for-linux-and-unix-in-configuration-manager"></a>Configuration Manager에서 Linux 및 UNIX에 대한 하드웨어 인벤토리
 
@@ -106,7 +106,7 @@ Linux 또는 UNIX 서버의 하드웨어 인벤토리는 클라이언트 설정�
 ###  <a name="BKMK_LinuxProvider"></a> Linux 및 UNIX 컴퓨터에 대한 사용자 지정 하드웨어 인벤토리 공급자 만들기  
  Linux 및 UNIX용 Configuration Manager 클라이언트에 대한 사용자 지정 하드웨어 인벤토리 공급자를 만들려면 **OMI Source - v.1.0.6**을 사용하고 OMI 시작 가이드에 있는 다음 지침을 따릅니다. 이 프로세스에는 새 공급자의 스키마를 정의하는 MOF(Managed Object Format) 파일 만들기가 포함됩니다. 나중에 MOF 파일을 Configuration Manager로 가져와서 새 사용자 지정 인벤토리 클래스를 지원할 수 있습니다.  
 
- OMI Source v.1.0.6, 및 OMI 시작 가이드 모두 [Open Group](http://go.microsoft.com/fwlink/p/?LinkId=262317) 웹 사이트에서 다운로드할 수 있습니다. 이러한 다운로드는 다음 웹 페이지의 **문서** 탭에 있습니다. OpenGroup.org 웹 사이트: [OMI(개방형 관리 인프라)](http://go.microsoft.com/fwlink/p/?LinkId=286805)  
+ OMI Source v.1.0.6, 및 OMI 시작 가이드 모두 [Open Group](https://github.com/microsoft/omi/blob/master/README.md) 웹 사이트에서 다운로드할 수 있습니다. 이러한 다운로드는 다음 웹 페이지의 **문서** 탭에 있습니다. OpenGroup.org 웹 사이트: [OMI(개방형 관리 인프라)](http://go.microsoft.com/fwlink/p/?LinkId=286805)  
 
 ###  <a name="BKMK_AddProvidertoLinux"></a> 사용자 지정 하드웨어 인벤토리 공급자를 사용하여 Linux 또는 UNIX를 실행하는 각 컴퓨터 구성  
  사용자 지정 인벤토리 공급자를 만든 후에는 수집할 인벤토리가 있는 각 컴퓨터에 공급자 라이브러리 파일을 복사하고 등록해야 합니다.  

@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e8ebea21b735e6b93d73bf6ff5eb842243ef42d
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: fd2e95a82ab01c760ea14158f164e930a77db894
+ms.sourcegitcommit: a6a6507e01d819217208cfcea483ce9a2744583d
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56121865"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66748141"
 ---
 # <a name="how-to-use-task-sequence-variables-in-configuration-manager"></a>Configuration Manager에서 작업 순서 변수를 사용하는 방법
 
@@ -54,7 +54,7 @@ ms.locfileid: "56121865"
 
  작업 순서 동작 변수는 하나의 작업 순서 단계에서 사용하는 구성 설정을 지정합니다. 기본적으로 단계는 실행되기 전에 설정을 초기화합니다. 이러한 설정은 연결된 작업 순서 단계가 실행되는 동안에만 사용할 수 있습니다. 작업 순서는 단계를 실행하기 전에 환경에 동작 변수 값을 추가합니다. 그런 다음 단계가 실행된 후 환경에서 값을 제거합니다.
 
- 예를 들어 작업 순서에 **명령줄 실행** 단계를 추가하는 경우, 이 단계는 **시작 위치** 속성을 포함합니다. 작업 순서는 이 속성에 대한 기본값을 **WorkingDirectory** 변수로 저장합니다. 작업 순서는 **명령줄 실행** 단계를 실행하기 전에 이 값을 초기화합니다. 이 단계가 실행되는 동안 **WorkingDirectory** 값에서 **시작 위치** 속성 값에 액세스합니다. 단계가 완료되면 작업 순서가 환경에서 **WorkingDirectory** 변수의 값을 제거합니다. 작업 순서에 또 다른 **명령줄 실행** 단계가 포함되어 있는 경우 작업 순서는 새 **WorkingDirectory** 변수를 초기화합니다. 이때 작업 순서는 변수를 현재 단계에 대한 시작 값으로 설정합니다. 자세한 내용은 [WorkingDirectory](using-task-sequence-variables.md#WorkingDirectory)를 참조하세요.  
+ 예를 들어 작업 순서에 **명령줄 실행** 단계를 추가하는 경우, 이 단계는 **시작 위치** 속성을 포함합니다. 작업 순서는 이 속성에 대한 기본값을 **WorkingDirectory** 변수로 저장합니다. 작업 순서는 **명령줄 실행** 단계를 실행하기 전에 이 값을 초기화합니다. 이 단계가 실행되는 동안 **WorkingDirectory** 값에서 **시작 위치** 속성 값에 액세스합니다. 단계가 완료되면 작업 순서가 환경에서 **WorkingDirectory** 변수의 값을 제거합니다. 작업 순서에 또 다른 **명령줄 실행** 단계가 포함되어 있는 경우 작업 순서는 새 **WorkingDirectory** 변수를 초기화합니다. 이때 작업 순서는 변수를 현재 단계에 대한 시작 값으로 설정합니다. 자세한 내용은 [WorkingDirectory](/sccm/osd/understand/task-sequence-variables#WorkingDirectory)를 참조하세요.  
 
  단계가 실행될 때에는 동작 변수의 *기본* 값이 있습니다. *새* 값을 설정하면 작업 순서의 여러 단계에 사용할 수 있습니다. 기본값을 재정의하면 새 값은 환경에 유지되고, 이 새 값은 작업 순서에 있는 다른 단계에 대한 기본값을 재정의합니다. 예를 들어 작업 순서의 첫 번째 단계로서 **작업 순서 변수 설정** 단계를 추가하는 경우, 이 단계는 **WorkingDirectory** 변수를 `C:\`로 설정합니다. 작업 순서의 모든 **명령줄 실행** 단계에서는 새 시작 디렉터리 값을 사용합니다.  
 
@@ -226,11 +226,11 @@ ms.locfileid: "56121865"
 
  3. **작업 순서 변수** 대화 상자에서 다음 설정을 지정합니다.  
 
-    - **변수**: 변수의 이름입니다. 예: `_SMSTSInWinPE`  
+    - **변수**: 변수 이름. 예: `_SMSTSInWinPE`  
 
-    - **조건**: 변수 값을 평가할 조건입니다. 예: **같음**  
+    - **조건**: 변수 값을 평가할 조건. 예: **같음**  
 
-    - **값**: 검사할 변수의 값입니다. 예: `false`  
+    - **값**: 검사할 변수의 값. 예: `false`  
 
 
  위의 세 가지 예는 다음과 같이 작업 순서가 Windows PE의 부팅 이미지에서 실행되는지 여부를 테스트하기 위한 일반적인 조건을 형성합니다. 

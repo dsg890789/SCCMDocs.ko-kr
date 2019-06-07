@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44ffc6aa554e30ef96dbe09409ee5360d0ed236d
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 33055f0962ef1220d41a2c8ee463cb2380ff60db
+ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56129853"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715958"
 ---
 # <a name="capabilities-in-technical-preview-1705-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1705의 기능
 
@@ -135,10 +135,6 @@ Technical Preview 버전 1606 이상에서 이 도구를 사용할 수 있습니
 사이트를 중지하려면 [계층 유지 관리 도구](/sccm/core/servers/manage/hierarchy-maintenance-tool-preinst.exe)를 사용하여 사이트 서버의 핵심 서비스를 중지할 수 있습니다. 명령줄 사용: **Preinst.exe /stopsite**   
 
 사이트를 중지하는것은 사이트 서버에서 사이트 구성 요소 관리자 서비스(sitecomp)를 중지한 후 SMS_Executive 서비스를 중지하는 것과 같습니다.
-
-> [!TIP]  
-> 기본 수동 복제본을 사용하는 경우(이 Technical Preview에 [사이트 서버 역할 고가용성](#site-server-role-high-availability)으로 도입됨) 수동 복제본을 중지할 필요가 없습니다. 활성 기본 사이트만 중지하면 됩니다.
-
 
 
 ## <a name="improved-user-notifications-for-office-365-updates"></a>Office 365 업데이트에 대한 향상된 사용자 알림

@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9ef05ac5a931addb5dd5a8dc7d1b04bd4d50e1c
-ms.sourcegitcommit: 417e3834a42b415a8e129327dd3c15cc0c7ec5a2
+ms.openlocfilehash: 07e69561580a22128cf9a5b7b97f33e10cbb0456
+ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65443104"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66716036"
 ---
 # <a name="capabilities-in-technical-preview-1805-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1805의 기능
 
@@ -76,7 +76,7 @@ Steps to workaround, if any.
 
     - 디바이스가 대상으로 지정된 후 소프트웨어 설치
         - **가능하면 빨리**: 디바이스를 대상으로 지정하는 즉시 디바이스에 설치하는 최종 기한을 설정합니다.
-        - **최종 기한 시간(디바이스가 대상으로 지정된 시간 기준)**: 디바이스가 대상으로 지정되고 설치가 진행되기까지의 특정 일 수를 설정합니다.  
+        - **최종 기한 시간(디바이스가 대상으로 지정된 시간 기준)** : 디바이스가 대상으로 지정되고 설치가 진행되기까지의 특정 일 수를 설정합니다.  
      
 7. 단계 설정 마법사를 완료합니다.
 
@@ -175,7 +175,7 @@ Windows LEDBAT에 대한 자세한 정보는 [New transport advancements](https:
 
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
- 작업을 완료합니다. 그런 다음, [피드백](#bkmk_feedback)을 전송하여 작업이 어떻게 진행되었는지 알려주세요.
+ 작업을 완료합니다. 그런 다음, [피드백](capabilities-in-technical-preview-1804.md#bkmk_feedback)을 전송하여 작업이 어떻게 진행되었는지 알려주세요.
 
 1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동합니다. **배포 지점** 노드를 선택합니다. 대상 배포 지점을 선택하고 리본에서 **속성**을 클릭합니다.  
 
@@ -394,7 +394,7 @@ SCUP 도구의 일반적인 용도에 대한 자세한 내용은 [System Center 
 이제 CMTrace 로그 보기 도구가 Configuration Manager 클라이언트와 함께 자동으로 설치됩니다. 이 도구는 기본적으로 `%WinDir%\ccm\cmtrace.exe`인 클라이언트 설치 디렉터리에 추가됩니다.
 
 > [!Note]  
-> CMTrace는 .log 파일 확장명을 열도록 Windows에 자동으로 등록되지 ‘않습니다’.
+> CMTrace는 .log 파일 확장명을 열도록 Windows에 자동으로 등록되지  ‘않습니다’.
 
 
 

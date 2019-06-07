@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b9f4f95916a2d547f89cab7dac838b7fe68fb30
-ms.sourcegitcommit: f531d0a622f220739710b2fe6644ea58d024064a
+ms.openlocfilehash: 596c88cd679b2cb37cfcc7a1d8df5f82e3e56702
+ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65933455"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715966"
 ---
 # <a name="accounts-used-in-configuration-manager"></a>Configuration Manager에서 사용되는 계정
 
@@ -62,9 +62,9 @@ ms.locfileid: "65933455"
     - [작업 순서 실행 계정](#task-sequence-run-as-account)  
 
 - [Configuration Manager가 SQL에서 사용하는 사용자 개체](#bkmk_sqlobjects)
-    - [smsdbuser_ReadOnly](#smsdbuser_ReadOnly)
-    - [smsdbuser_ReadWrite](#smsdbuser_ReadWrite)
-    - [smsdbuser_ReportSchema](#smsdbuser_ReportSchema)
+    - [smsdbuser_ReadOnly](#smsdbuser_readonly)
+    - [smsdbuser_ReadWrite](#smsdbuser_readwrite)
+    - [smsdbuser_ReportSchema](#smsdbuser_reportschema)
 
 ## <a name="bkmk_groups"></a> Configuration Manager에서 만들고 사용하는 Windows 그룹  
 

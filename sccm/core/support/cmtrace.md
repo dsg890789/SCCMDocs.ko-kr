@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 988e834de78bac64be43600ca73d0d51ff29bf4b
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 332cdf00256ccfbac07b352c22b232edd4ba9363
+ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65496767"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66716161"
 ---
 # <a name="cmtrace"></a>CMTrace
 
@@ -115,8 +115,8 @@ CMTrace의 설정을 구성합니다. 다음 옵션을 사용할 수 있습니�
 - [필터](#filter)
 - [오류 조회](#error-lookup)
 - [일시 중지](#pause)
-- [세부 정보 표시/숨기기](#show/hide-details)
-- [정보 창 표시/숨기기](#show/hide-info-pane)
+- [세부 정보 표시/숨기기](#showhide-details)
+- [정보 창 표시/숨기기](#showhide-info-pane)
 
 #### <a name="find"></a>찾기
 지정된 텍스트 문자열을 열린 로그 파일에서 검색합니다.  
@@ -196,7 +196,7 @@ CMTrace는 빨강 배경과 노랑 텍스트 색을 사용하여 오류가 있�
 
 - 로그 창에 완전히 표시되지 않는 긴 항목을 읽기 쉽게  
 
-**도구** 메뉴의 **정보 창 표시/숨기기** 옵션으로 정보 창을 표시하거나 숨깁니다.  정보 창이 로그 창의 반 초과를 차지하게 되면 CMTrace가 자동으로 숨깁니다.
+**도구** 메뉴의 **정보 창 표시/숨기기** 옵션으로 정보 창을 표시하거나 숨깁니다. 정보 창이 로그 창의 반 초과를 차지하게 되면 CMTrace가 자동으로 숨깁니다.
 
 
 ### <a name="progress-bar"></a>진행률 표시줄
@@ -236,7 +236,7 @@ CMTrace는 기본 끌어서 놓기 기능을 지원합니다. Windows 탐색기�
 
 클라이언트에서 처음 실행하면 현재 작업 중인 디렉터리를 기본값으로 사용합니다. 이 위치는 CMTrace에서 저장한 경로이거나 `%userprofile%\Desktop` 같은 경로일 수 있습니다. 
 
-레지스트리 키`HKEY_CURRENT_USER\Software\Microsoft\Trace32`의 **마지막 디렉터리** 값이 이 기본 위치를 제어합니다.  클라이언트에서 이 값을 `%windir%\CCM\Logs`로 설정하면 처음 실행할 때 CMTrace가 클라이언트 로그 위치에서 파일을 엽니다.
+레지스트리 키`HKEY_CURRENT_USER\Software\Microsoft\Trace32`의 **마지막 디렉터리** 값이 이 기본 위치를 제어합니다. 클라이언트에서 이 값을 `%windir%\CCM\Logs`로 설정하면 처음 실행할 때 CMTrace가 클라이언트 로그 위치에서 파일을 엽니다.
 
 
 ## <a name="see-also"></a>참고 항목

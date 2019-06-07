@@ -4,20 +4,19 @@ titleSuffix: Configuration Manager
 description: Configuration Manager 기술 문서 라이브러리를 사용하는 방법에 대한 팁을 알아봅니다.
 ms.date: 09/07/2018
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: b3d755bd-0870-4f1f-a56d-bfd3c7b492b9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d2233d8d8182f9a9391464a5882d2525f8e151a
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 19681e8a84c35a2b26fa85e7d1227bead3ea42d5
+ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56140527"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66716132"
 ---
 # <a name="how-to-use-the-configuration-manager-docs"></a>Configuration Manager 문서를 사용하는 방법
 

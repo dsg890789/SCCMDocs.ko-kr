@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c66ef90812e8b5ccf47063fb335c17aaeca4fa64
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 3f6b445bb2e84cb7c3f35d81c66038686f2b9833
+ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56122222"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715987"
 ---
 # <a name="plan-a-migration-job-strategy-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 마이그레이션 작업 전략 계획
 
@@ -29,18 +29,6 @@ ms.locfileid: "56122222"
  계층 간에 클라이언트를 마이그레이션하기 전에 해당 클라이언트에서 사용하는 개체를 마이그레이션해야 하며 이러한 개체를 대상 계층에서 사용할 수 있어야 합니다. 예를 들어 Configuration Manager 2007 SP2 원본 계층에서 마이그레이션하는 경우 클라이언트가 포함된 사용자 지정 컬렉션에 배포되는 콘텐츠에 대한 보급 알림이 있을 수 있습니다. 이 시나리오에서는 클라이언트를 마이그레이션하기 전에 컬렉션, 보급 알림 및 연결된 콘텐츠를 마이그레이션하는 것이 좋습니다. 클라이언트를 마이그레이션하기 전에 콘텐츠, 컬렉션 및 보급 알림을 마이그레이션하지 않으면 이 데이터를 대상 계층의 클라이언트에 연결할 수 없습니다. 이전에 실행했던 보급 알림 및 콘텐츠와 관련된 데이터에 클라이언트를 연결하지 않으면 대상 계층에 설치하도록 클라이언트에 콘텐츠가 제공될 수 있으나 이는 불필요할 수 있습니다. 데이터를 마이그레이션한 후에 클라이언트를 마이그레이션하면 클라이언트가 이 콘텐츠 및 보급 알림에 연결되고, 보급 알림이 되풀이되지 않으면 마이그레이션된 보급 알림에 대해 이 콘텐츠가 다시 제공되지 않습니다.  
 
  일부 개체의 경우 원본 계층에서 대상 계층으로 데이터를 마이그레이션하는 작업 외에 더 많은 작업이 필요합니다. 예를 들어 클라이언트용 소프트웨어 업데이트를 대상 계층에 성공적으로 마이그레이션하려면 활성 소프트웨어 업데이트 지점을 배포하고, 제품의 카탈로그를 구성하고, 대상 계층에서 소프트웨어 업데이트 지점을 WSUS(Windows Server Update Services)와 동기화해야 합니다.  
-
- 마이그레이션 작업을 계획하려면 다음 섹션을 참조하세요.  
-
--   [마이그레이션 작업 유형](#Types_of_Migration)  
-
--   [모든 마이그레이션 작업에 대한 일반적인 계획](#About_Migration_Jobs)  
-
--   [컬렉션 마이그레이션 작업 계획](#About_Collection_Migration)  
-
--   [개체 마이그레이션 작업 계획](#About_Object_Migration)  
-
--   [이전에 마이그레이션한 개체 마이그레이션 작업 계획](#About_Object_Migrations)  
 
 ##  <a name="Types_of_Migration"></a> 마이그레이션 작업 유형  
  Configuration Manager에서 지원하는 마이그레이션 작업 유형은 다음과 같습니다. 각 작업 유형은 해당 작업에 포함할 수 있는 개체를 정의할 수 있도록 되어 있습니다.  
