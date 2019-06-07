@@ -2,7 +2,7 @@
 title: 실시간 데이터에 대한 CMPivot
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 CMPivot을 사용하여 실시간으로 클라이언트를 쿼리하는 방법을 알아봅니다.
-ms.date: 04/04/2019
+ms.date: 05/24/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd914030afb8490b11666fc953d846e03090b834
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
+ms.openlocfilehash: 975768c5bfaf239c1f8cd342c988e06dac5d1269
+ms.sourcegitcommit: abfc9e1b3945637fa93ca8d3a11519493a5d5391
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59802651"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66264559"
 ---
 # <a name="cmpivot-for-real-time-data-in-configuration-manager"></a>Configuration Manager에서 실시간 데이터에 대한 CMPivot
 
@@ -86,7 +86,7 @@ CMPivot을 사용하려면 다음 구성 요소가 필요합니다.
 
      - **엔터티** 중 하나를 클릭하여 쿼리 문자열에 추가합니다.  
 
-     - **표 연산자**, **집계 함수** 및 **스칼라 함수**에 대한 링크를 클릭하면 웹 브라우저에서 언어 참조 문서를 엽니다. CMPivot은 [Azure Log Analytics](https://docs.microsoft.com/azure/kusto/query/)와 동일한 쿼리 언어를 사용합니다.  
+     - **표 연산자**, **집계 함수** 및 **스칼라 함수**에 대한 링크를 클릭하면 웹 브라우저에서 언어 참조 문서를 엽니다. CMPivot은 [KQL(Kusto 쿼리 언어)](https://docs.microsoft.com/azure/kusto/query/)을 사용합니다.  
 
 3. CMPivot 창을 열어 두어 클라이언트에서 결과를 봅니다. CMPivot 창을 닫으면 세션이 완료됩니다.  
 
@@ -121,7 +121,7 @@ CMPivot 창은 다음과 같은 요소를 포함합니다.
 
 5. 쿼리 창은 컬렉션의 클라이언트에서 실행할 쿼리를 작성하거나 입력하는 위치입니다.  
 
-    - CMPivot은 [Azure Log Analytics](https://docs.microsoft.com/azure/kusto/query/)와 동일한 쿼리 언어의 하위 집합을 사용합니다.  
+    - CMPivot은 [KQL(Kusto 쿼리 언어)](https://docs.microsoft.com/azure/kusto/query/) 일부를 사용합니다.  
 
     - 쿼리 창에서 콘텐츠를 잘라내기, 복사 또는 붙여넣습니다.  
 
@@ -260,10 +260,10 @@ Configuration Manager 버전 1810부터 CMPivot에는 다음과 같은 개선 �
 
 ### <a name="bkmk_cmpivot-functions"></a> 스칼라 함수
 CMPivot에서는 다음 스칼라 함수를 지원합니다.
-- **ago()**: 현재 UTC 시계 시간에서 지정된 시간 범위를 뺍니다.  
-- **datetime_diff()**: 두 날짜/시간 값 사이에 달력 차이를 계산합니다.  
-- **now()**: 현재 UTC 시계 시간을 반환합니다.  
-- **bin()**: 값을 지정된 bin 크기의 정수 배수로 내림합니다.  
+- **ago()** : 현재 UTC 시계 시간에서 지정된 시간 범위를 뺍니다.  
+- **datetime_diff()** : 두 날짜/시간 값 사이에 달력 차이를 계산합니다.  
+- **now()** : 현재 UTC 시계 시간을 반환합니다.  
+- **bin()** : 값을 지정된 bin 크기의 정수 배수로 내림합니다.  
 
 > [!Note]  
 > 날짜/시간 데이터 형식은 인스턴트를 시간으로 나타내며, 일반적으로 하루의 날짜와 시간으로 표현됩니다. 시간 값은 1초 단위로 측정됩니다. 날짜/시간 값은 항상 UTC 표준 시간대입니다. 날짜 시간 리터럴을 항상 ISO 8601 형식으로 표현합니다(예: `yyyy-mm-dd HH:MM:ss`)  
@@ -276,7 +276,7 @@ CMPivot에서는 다음 스칼라 함수를 지원합니다.
 
 ### <a name="bkmk_cmpivot-charts"></a>렌더링 시각화
 
-CMPivot에는 이제 Log Analytics [렌더링 연산자](https://docs.microsoft.com/azure/kusto/query/renderoperator)에 대한 기본 지원이 포함됩니다. 이 지원은 다음과 같습니다.  
+CMPivot에는 이제 KQL [렌더링 연산자](https://docs.microsoft.com/azure/kusto/query/renderoperator)에 대한 기본 지원이 포함됩니다. 이 지원은 다음과 같습니다.  
 - **barchart**: 첫 번째 열은 x축이며, 텍스트, 날짜/시간 또는 숫자일 수 있습니다. 두 번째 열은 숫자여야 하고 가로 줄무늬로 표시됩니다.  
 - **columnchart**: barchart와 같이 가로 스트립 대신 세로 줄무늬를 사용합니다.  
 - **piechart**: 첫 번째 열은 색깔 축이고 두 번째 열은 숫자입니다.  
@@ -472,11 +472,11 @@ Configuration Manager 1810부터 CMPivot은 확장된 하드웨어 인벤토리 
  - Scripts.log
  - StateMessage.log
 
-자세한 내용은 [로그 파일](/sccm/core/plan-design/hierarchy/log-files) 및 [CMPivot 문제 해결](/sccm/core/servers/manage/cmpivot-tsg.md)을 참조하세요.
+자세한 내용은 [로그 파일](/sccm/core/plan-design/hierarchy/log-files) 및 [CMPivot 문제 해결](/sccm/core/servers/manage/cmpivot-tsg)을 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
  
-[CMPivot 문제 해결](/sccm/core/servers/manage/cmpivot-tsg.md)
+[CMPivot 문제 해결](/sccm/core/servers/manage/cmpivot-tsg)
 
 [PowerShell 스크립트 만들기 및 실행](/sccm/apps/deploy-use/create-deploy-scripts)
 

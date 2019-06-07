@@ -2,7 +2,7 @@
 title: 버전 1902의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager 현재 분기, 버전 1902에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
-ms.date: 05/13/2019
+ms.date: 05/28/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c88cdc52442463bb3788c80c45d6c074dd900f5
-ms.sourcegitcommit: 53f2380ac67025fb4a69fc1651edad15d98e0cdd
+ms.openlocfilehash: 6b2468dc5f4cf7a9e1a715b3ec8e8a1d912a12b0
+ms.sourcegitcommit: 18a94eb78043cb565b05cd0e9469b939b29cccf0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65673419"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66354885"
 ---
 # <a name="whats-new-in-version-1902-of-configuration-manager-current-branch"></a>Configuration Manager 현재 분기, 버전 1902의 새 기능
 
@@ -44,7 +44,7 @@ Configuration Manager 현재 분기, 버전 1902 업데이트는 콘솔 내 업�
 
 버전 1902에서는 다음 제품이 지원되지 않습니다.  
 
-- Linux 및 UNIX 클라이언트. [버전 1802](/sccm/core/plan-design/changes/whats-new-in-version-1802#deprecation-announcement-for-linux-and-unix-client-support)의 지원 중단이 발표되었습니다. 따라서 Linux 서버를 관리하려면 Microsoft Azure 관리를 고려해야 합니다. Azure 솔루션은 대부분의 경우 Linux용 종단 간 패치 관리를 포함하여 Configuration Manager 기능을 능가하는 광범위한 Linux 지원을 제공합니다.
+- Linux 및 UNIX 클라이언트. [버전 1802](/sccm/core/plan-design/changes/whats-new-in-version-1802#deprecation-announcement-for-linux-and-unix-client-support)의 지원 중단이 발표되었습니다. 따라서 Linux 서버를 관리하려면 Microsoft Azure 관리를 고려해야 합니다. Azure 솔루션은 대부분의 경우 Linux용 엔드투엔드 패치 관리를 포함하여 Configuration Manager 기능을 능가하는 광범위한 Linux 지원을 제공합니다.
 
 
 
@@ -74,12 +74,14 @@ Configuration Manager 콘솔에서 **모니터링** 작업 영역으로 이동�
 
 
 ### <a name="improvement-to-enhanced-http"></a>고급 HTTP로 개선
+
 <!--3798957-->
-이제 기본 사이트당 또는 중앙 관리 사이트에 대해 고급 HTTP를 활성화할 수 있습니다. 
 
-중앙 관리 사이트의 속성에서 **HTTP 사이트 시스템에 대해 Configuration Manager 생성 인증서 사용**에 대한 옵션을 선택합니다. 이 설정은 중앙 관리 사이트의 사이트 시스템 역할에만 적용됩니다. 즉 이 설정은 계층에 대한 전역 설정이 아닙니다. 
+***[업데이트됨]*** 이제 기본 사이트당 또는 중앙 관리 사이트에 대해 고급 HTTP를 활성화할 수 있습니다.
 
-<!-- For more information, see [enhanced HTTP](/sccm/core/plan-design/hierarchy/enhanced-http). -->
+중앙 관리 사이트의 속성에서 **HTTP 사이트 시스템에 대해 Configuration Manager 생성 인증서 사용**에 대한 옵션을 선택합니다. 이 설정은 중앙 관리 사이트의 사이트 시스템 역할에만 적용됩니다. 즉 이 설정은 계층에 대한 전역 설정이 아닙니다.
+
+자세한 내용은 [고급 HTTP](/sccm/core/plan-design/hierarchy/enhanced-http)를 참조하세요.
 
 
 ### <a name="improvement-to-setup-prerequisites"></a>설치 필수 조건 개선 사항
@@ -136,33 +138,38 @@ CMG에서 [아웃바운드 트래픽 경고를 설정](/sccm/core/clients/manage
 
 ## <a name="bkmk_content"></a> 콘텐츠 관리
 
-### <a name="distribution-point-maintenance-mode"></a>배포 지점 유지 관리 모드 
-<!--3555754-->
-이제 유지 관리 모드에서 배포 지점을 설정할 수 있습니다. 소프트웨어 업데이트를 설치할 때나 서버에서 하드웨어를 변경할 때 유지 관리 모드를 사용합니다.
+### <a name="distribution-point-maintenance-mode"></a>배포 지점 유지 관리 모드
 
-배포 지점이 유지 관리 모드 상태인 동안 다음 동작을 유지합니다. 
+<!--3555754-->
+
+***[업데이트됨]*** 이제 유지 관리 모드에서 배포 지점을 설정할 수 있습니다. 소프트웨어 업데이트를 설치할 때나 서버에서 하드웨어를 변경할 때 유지 관리 모드를 사용합니다.
+
+배포 지점이 유지 관리 모드 상태인 동안 다음 동작을 유지합니다.
 
 - 사이트는 배포 지점에 콘텐츠를 배포하지 않습니다.  
 
-- 관리 지점이 클라이언트에 이 배포 지점의 위치를 반환하지 않습니다. 
+- 관리 지점이 클라이언트에 이 배포 지점의 위치를 반환하지 않습니다.
 
-- 사이트를 업데이트하면 유지 관리 모드의 배포 지점이 계속 업데이트됩니다. 
+- 사이트를 업데이트하면 유지 관리 모드의 배포 지점이 계속 업데이트됩니다.
 
 - 배포 지점 속성은 읽기 전용입니다. 예를 들어 인증서를 변경하거나 경계 그룹을 추가할 수 없습니다.  
 
-- 콘텐츠 유효성 검사와 같은 모든 예약된 작업은 계속 동일한 일정에 따라 실행됩니다. 
+- 콘텐츠 유효성 검사와 같은 모든 예약된 작업은 계속 동일한 일정에 따라 실행됩니다.
 
-<!-- For more information, see [Maintenance mode](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_maint) -->
+이 기능에 대한 자세한 내용은 [유지 관리 모드](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_maint)를 참조하세요.
+
+Configuration Manager SDK를 사용하여 이 프로세스를 자동화하는 방법은 [SMS_DistributionPointInfo 클래스의 SetDPMaintenanceMode 메서드](/sccm/develop/reference/core/servers/configure/setdpmaintenancemode-method-in-class-sms-distributionpointinfo)를 참조하세요.
 
 
 
 ## <a name="bkmk_client"></a> 클라이언트 관리
 
 ### <a name="client-provisioning-mode-timeout"></a>클라이언트 프로비전 모드 시간 제한
-<!--3197824-->
-작업 순서가 클라이언트를 프로비전 모드에 배치하는 경우 타임스탬프를 설정합니다. 프로비전 모드의 클라이언트는 타임스탬프 이후의 기간을 60분마다 확인합니다. 48시간을 초과하는 프로비전 모드에 있는 경우 클라이언트는 자동으로 프로비전 모드를 종료하고 해당 프로세스를 다시 시작합니다. 
 
-<!-- For more information, see ... -->
+<!--3197824-->
+***[업데이트됨]*** 작업 순서가 클라이언트를 프로비저닝 모드에 배치하는 경우 타임스탬프를 설정합니다. 프로비전 모드의 클라이언트는 타임스탬프 이후의 기간을 60분마다 확인합니다. 48시간을 초과하는 프로비전 모드에 있는 경우 클라이언트는 자동으로 프로비전 모드를 종료하고 해당 프로세스를 다시 시작합니다.
+
+자세한 내용은 [프로비저닝 모드](/sccm/osd/understand/provisioning-mode)를 참조하세요.
 
 ### <a name="view-first-screen-only-during-remote-control"></a>원격 제어 시 첫 번째 화면만 보기
 <!--3231732-->
@@ -191,10 +198,11 @@ CMG에서 [아웃바운드 트래픽 경고를 설정](/sccm/core/clients/manage
 ## <a name="bkmk_app"></a> 애플리케이션 관리
 
 ### <a name="improvements-to-application-approvals-via-email"></a>메일을 통한 애플리케이션 승인 기능 향상
-<!--3594063-->
-이 버전에서는 애플리케이션 요청에 대한 메일 알림을 받는 기능이 향상되었습니다. 사용자는 항상 소프트웨어 센터의 요청에 주석을 추가할 수 있습니다. 이 주석은 Configuration Manager 콘솔의 애플리케이션 요청에 표시됩니다. 이제 해당 주석은 이메일에도 표시됩니다. 이메일에 이 주석이 포함되면 승인자가 요청을 승인하거나 거부하는 데 더 나은 결정을 내릴 수 있습니다.
 
-<!-- For more information, see [Email notifications](/sccm/apps/deploy-use/app-approval#bkmk_email-approve). -->
+<!--3594063-->
+***[업데이트됨]*** 이 버전에서는 애플리케이션 요청에 대한 메일 알림을 받는 기능이 향상되었습니다. 사용자는 항상 소프트웨어 센터의 요청에 주석을 추가할 수 있습니다. 이 주석은 Configuration Manager 콘솔의 애플리케이션 요청에 표시됩니다. 이제 해당 주석은 이메일에도 표시됩니다. 이메일에 이 주석이 포함되면 승인자가 요청을 승인하거나 거부하는 데 더 나은 결정을 내릴 수 있습니다.
+
+자세한 내용은 [메일 알림](/sccm/apps/deploy-use/app-approval#bkmk_email-approve)을 참조하세요.
 
 
 ### <a name="improvements-to-package-conversion-manager"></a>Package Conversion Manager 개선 사항
@@ -245,25 +253,27 @@ CMG에서 [아웃바운드 트래픽 경고를 설정](/sccm/core/clients/manage
 
 
 ### <a name="import-a-single-index-of-an-os-image"></a>OS 이미지의 단일 인덱스 가져오기
+
 <!--3719699-->
-WIM(Windows 이미지) 파일을 Configuration Manager로 가져오면 이제 파일의 모든 이미지 인덱스가 아닌 단일 인덱스를 자동으로 가져오도록 지정할 수 있습니다. 이 옵션은 다음과 같은 이점을 제공합니다.
+***[업데이트됨]*** WIM(Windows 이미지) 파일을 Configuration Manager로 가져오면 이제 파일의 모든 이미지 인덱스가 아닌 단일 인덱스를 자동으로 가져오도록 지정할 수 있습니다. 이 옵션은 다음과 같은 이점을 제공합니다.
 
 - 더 작은 이미지 파일  
 - 더 빠른 오프라인 설치  
-- 오프라인 설치 후 더 작은 이미지 파일에 대한 이미지 서비스 최적화 
+- 오프라인 설치 후 더 작은 이미지 파일에 대한 이미지 서비스 최적화
 
 OS 이미지를 가져올 때 **지정된 WIM 파일에서 특정 이미지 인덱스 추출** 옵션을 선택하세요. 그런 다음, 목록에서 이미지 인덱스를 선택합니다.  
 
-<!-- For more information, see [Add an OS image](/sccm/osd/get-started/manage-operating-system-images#BKMK_AddOSImages). -->
+자세한 내용은 [OS 이미지 추가](/sccm/osd/get-started/manage-operating-system-images#BKMK_AddOSImages)를 참조하세요.
 
 
 ### <a name="optimized-image-servicing"></a>최적화된 이미지 서비스
+
 <!--3555951-->
-OS 이미지에 소프트웨어 업데이트를 적용하는 경우 대체된 모든 업데이트를 제거하여 출력을 최적화하는 새로운 옵션이 있습니다. 오프라인 설치의 최적화는 단일 인덱스를 사용하는 이미지에만 적용됩니다. 
+***[업데이트됨]*** OS 이미지에 소프트웨어 업데이트를 적용하는 경우 대체된 모든 업데이트를 제거하여 출력을 최적화하는 새로운 옵션이 있습니다. 오프라인 설치의 최적화는 단일 인덱스를 사용하는 이미지에만 적용됩니다.
 
-OS 이미지를 업데이트할 일정을 생성할 때 **이미지가 업데이트된 후 대체된 업데이트 제거** 옵션을 선택합니다. 
+OS 이미지를 업데이트할 일정을 생성할 때 **이미지가 업데이트된 후 대체된 업데이트 제거** 옵션을 선택합니다.
 
-<!-- For more information, see [Apply software updates to an image](/sccm/osd/get-started/manage-operating-system-images#BKMK_OSImagesApplyUpdates).  -->
+자세한 내용은 [이미지에 소프트웨어 업데이트 적용](/sccm/osd/get-started/manage-operating-system-images#bkmk_resetbase)을 참조하세요.
 
 
 ### <a name="improvements-to-run-powershell-script-task-sequence-step"></a>향상된 PowerShell 스크립트 실행 작업 순서 단계 기능
@@ -304,7 +314,7 @@ OS 이미지를 업데이트할 일정을 생성할 때 **이미지가 업데이
 
 - **OSDDoNotLogCommand** 작업 순서 변수를 true로 설정한 경우 로그 파일의 명령줄 실행 단계에서 명령줄을 감춥니다. 이전에 smsts.log의 패키지 설치 단계에서 프로그램 이름을 마스킹했습니다.<!--3654172-->  
 
-- Windows 배포 서비스 없이 배포 지점에서 PXE 응답기를 사용하도록 설정하면 이제 DHCP 서비스와 동일한 서버에서 실행할 수 있습니다. <!--3734270-->  <!-- For more information, see ... -->
+- Windows 배포 서비스 없이 배포 지점에서 PXE 응답기를 사용하도록 설정하면 이제 DHCP 서비스와 동일한 서버에서 실행할 수 있습니다. <!--3734270--> 자세한 내용은 [PXE 요청을 수락하도록 하나 이상의 배포 지점 구성](/sccm/osd/deploy-use/use-pxe-to-deploy-windows-over-the-network#BKMK_Configure)을 참조하세요.
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: 설치 마법사
 titleSuffix: Configuration Manager
-ms.date: 03/07/2019
+ms.date: 05/23/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92c51158412b8bc9737c4851fc43dc2a7776488b
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: e69dbd246e9989494db95cfe5996862c7772822b
+ms.sourcegitcommit: bfb8a17f60dcb9905e739045a5141ae45613fa2c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65501264"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198489"
 ---
 # <a name="use-the-setup-wizard-to-install-configuration-manager-sites"></a>설치 마법사를 사용하여 Configuration Manager 사이트 설치
 
@@ -118,6 +118,13 @@ Configuration Manager 콘솔 내에서 보조 사이트를 설치합니다. 보�
 
     - **설치 폴더**: 이 폴더는 Configuration Manager의 설치 경로입니다. 사이트가 설치된 후에는 위치를 변경할 수 없습니다. 경로에 유니코드 문자 또는 후행 공백을 포함할 수 없습니다.  
 
+        > [!NOTE]  
+        > 기본 설치 폴더를 사용할 것인지 여부를 고려합니다. 프로덕션 환경에서 기본 OS 파티션을 사용하는 경우 나중에 다음과 같은 문제가 발생할 수 있습니다.  
+        >
+        > - Configuration Manager가 OS 파티션의 추가 디스크 여유 공간을 사용하면 Windows와 Configuration Manager 둘 다 제대로 작동하지 않습니다. 별도 파티션에 Configuration Manager를 설치하는 경우 해당 디스크 사용량은 OS에 영향을 미치지 않습니다.
+        > - Configuration Manager 성능은 고속 디스크를 사용할 때 더 향상됩니다. 일부 서버 디자인에서는 OS 디스크의 속도가 최적화되지 않습니다.
+        > - Configuration Manager 설치에 영향을 주지 않고 OS를 제공, 복원 또는 다시 설치할 수 있습니다.  
+
 11. **사이트 설치** 페이지에서 다음 중 시나리오와 일치하는 옵션을 사용합니다.  
 
     - **중앙 관리 사이트 설치:**  
@@ -140,7 +147,7 @@ Configuration Manager 콘솔 내에서 보조 사이트를 설치합니다. 보�
 
 12. **데이터베이스 정보** 페이지에서 다음 정보를 지정합니다.  
 
-    - **SQL Server 이름(FQDN)**: 이 값은 기본적으로 사이트 서버 컴퓨터로 설정되어 있습니다.  
+    - **SQL Server 이름(FQDN)** : 이 값은 기본적으로 사이트 서버 컴퓨터로 설정되어 있습니다.  
 
         사용자 지정 포트를 사용하는 경우 SQL Server의 FQDN에 해당 포트를 추가합니다. 쉼표와 포트 번호를 사용하여 SQL Server의 FQDN을 따릅니다. 예를 들어 *SQLServer1.fabrikam.com* 서버의 경우 다음을 사용하여 포트 *1551*을 지정합니다.`SQLServer1.fabrikam.com,1551`  
 
@@ -369,7 +376,7 @@ Configuration Manager 콘솔을 사용하여 보조 사이트를 설치합니다
 
     콘텐츠 라이브러리에 대해 최대 2개의 디스크 드라이브를, 패키지 공유에 대해 2개의 디스크 드라이브를 구성할 수 있습니다. 그러나 처음 두 개 드라이브가 구성된 드라이브 예약 공간에 도달하면 Configuration Manager에서 추가 드라이브를 사용할 수 있습니다. **드라이브 설정** 페이지에서는 디스크 드라이브에 대한 우선 순위와 각 디스크 드라이브에 남아야 할 사용 가능한 디스크 공간을 구성합니다.  
 
-    - **드라이브 공간 예약(MB)**: 이 설정에 구성하는 값에 따라 드라이브에 남아 있는 사용 가능한 공간의 양이 결정됩니다. 이 값에 도달하면 Configuration Manager에서 다른 드라이브를 선택하여 해당 드라이브로 복사 프로세스를 계속합니다. 콘텐츠 파일은 여러 드라이브에 걸쳐 있을 수 있습니다.  
+    - **드라이브 공간 예약(MB)** : 이 설정에 구성하는 값에 따라 드라이브에 남아 있는 사용 가능한 공간의 양이 결정됩니다. 이 값에 도달하면 Configuration Manager에서 다른 드라이브를 선택하여 해당 드라이브로 복사 프로세스를 계속합니다. 콘텐츠 파일은 여러 드라이브에 걸쳐 있을 수 있습니다.  
 
     - **콘텐츠 위치**: 콘텐츠 라이브러리 및 패키지 공유에 대한 콘텐츠 위치를 지정합니다. Configuration Manager는 사용 가능한 공간의 용량이 **드라이브 공간 예약(MB)** 에 지정된 값에 도달할 때까지 기본 콘텐츠 위치에 콘텐츠를 복사합니다.  
 
