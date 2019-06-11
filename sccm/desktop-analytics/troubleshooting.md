@@ -2,7 +2,7 @@
 title: 데스크톱 Analytics 문제 해결
 titleSuffix: Configuration Manager
 description: 데스크톱 Analytics를 사용 하 여 문제를 해결 하려면 기술 세부 정보입니다.
-ms.date: 06/05/2019
+ms.date: 06/07/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1f54a2794b3a938366553c635e560ebe1adb320
-ms.sourcegitcommit: a6a6507e01d819217208cfcea483ce9a2744583d
+ms.openlocfilehash: 32e3d1185ff1f93a988074cdbc8dd7a14a4dcba8
+ms.sourcegitcommit: 725e1bf7d3250c2b7b7be9da01135517428be7a1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66748120"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66822086"
 ---
 # <a name="troubleshooting-desktop-analytics"></a>데스크톱 Analytics 문제 해결
 
@@ -95,7 +95,7 @@ ms.locfileid: "66748120"
 
 장치에는 다음 특성이 있습니다.
 
-- Configuration Manager 1810 이상 클라이언트 버전  
+- Configuration Manager 클라이언트 버전 1902 이상  
 - 구성 오류가 없음을  
 - 데스크톱 분석 지난 28 일 동안에서이 장치에서 전체 진단 데이터를 수신  
 - 데스크톱 장치 구성의 전체 인벤토리를가 분석과 설치 된 앱  
@@ -118,7 +118,7 @@ Configuration Manager 클라이언트를 구성 하 고 데스크톱 분석을 �
 
 #### <a name="missing-prerequisites"></a>누락 된 필수 구성 요소
 
-Configuration Manager 클라이언트가 없는 이상 버전 1810 (5.0.8740).
+Configuration Manager 클라이언트가 없는 이상 버전 1902 (5.0.8790).
 
 최신 버전으로 클라이언트를 업데이트 합니다. Configuration Manager 사이트에 대해 자동 클라이언트 업그레이드를 사용 하도록 설정 하는 것이 좋습니다. 자세한 내용은 [클라이언트 업그레이드](/sccm/core/clients/manage/upgrade/upgrade-clients#automatic-client-upgrade)를 참조하세요.  
 
@@ -339,7 +339,7 @@ Microsoft은 Desktop Analytics 작업 영역에서 장치 정보를 매핑할 �
 
 장치에 대 한 다른 ID가 있습니다. 이 레지스트리 키 그룹 정책에 의해 사용 됩니다. Configuration Manager에서 제공 하는 ID를 통해 우선 합니다.  
 
-데스크톱 Analytics 포털에서 상업용 ID를 보려면 다음 절차를 따르십시오.
+<a name="bkmk_ViewCommercialID"></a> 데스크톱 Analytics 포털에서 상업용 ID를 보려면 다음 절차를 따르십시오.
 
 1. 선택한 데스크톱 Analytics 포털로 이동 **연결 된 서비스** 의 전역 설정 그룹입니다.  
 
@@ -348,7 +348,7 @@ Microsoft은 Desktop Analytics 작업 영역에서 장치 정보를 매핑할 �
 ![데스크톱 Analytics 포털에서 상업용 ID의 스크린샷](media/commercial-id.png)
 
 > [!Important]  
-> 만 **새 ID 키 가져오기** 때 현재 사용할 수 없습니다. 상용 ID를 다시 생성 하면 새 ID를 장치에 배포 합니다. 이 프로세스는 전환 하는 동안 진단 데이터의 손실에서 될 수 있습니다.  
+> 만 **새 ID 키 가져오기** 때 현재 사용할 수 없습니다. 상용 ID를 다시 생성 [새 Id 사용 하 여 장치를 다시 등록](/sccm/desktop-analytics/enroll-devices#device-enrollment)합니다. 이 프로세스는 전환 하는 동안 진단 데이터의 손실에서 될 수 있습니다.  
 
 #### <a name="windows-commercial-data-opt-in"></a>Windows 상용 데이터 옵트인
 
@@ -604,14 +604,18 @@ Configuration Manager에서 Azure 서비스 구성 마법사에서이 Azure AD �
 ## <a name="data-latency"></a>데이터 대기 시간
 
 <!-- 3846531 -->
-데스크톱 Analytics 포털에서 데이터가 매일 새로 고쳐집니다. 이 새로 고침에는 진단 데이터를 수집 하는 장치 변경 및 구성에 수행한 변경 내용을 포함 합니다. 예를 들어 변경한 경우 자산의 **업그레이드 결정**를 설치 하는 자산을 사용 하 여 장치의 준비 상태를 변경 내용이 발생할 수 있습니다.
+데스크톱 Analytics를 처음 설치할 때 Configuration Manager 및 Desktop Analytics 포털에서 보고서 표시 되지 않습니다 전체 데이터 바로. 데스크톱 분석 서비스, 데이터를 처리 하 여 Configuration Manager 사이트를 사용 하 여 다음 동기화 서비스에 진단 데이터 보내기에 대 한 활성 장치에 대해 2 ~ 3 일 걸릴 수 있습니다.
 
-- **관리자 변경** 9 시간 내 데스크톱 Analytics 서비스에서 일반적으로 처리 됩니다. 예를 들어 오후 11시 UTC에 변경한 경우 포털 오전 08시 UTC 다음 날 전에 이러한 변경 내용을 반영 해야 합니다.
+Configuration Manager 계층 구조에서 데스크톱 분석을 장치 컬렉션을 동기화 하는 경우 데스크톱 Analytics 포털에서 표시 하는 컬렉션에 대해 최대 10 분까지 걸릴 수 있습니다.  마찬가지로, 데스크톱 Analytics에서 배포 계획을 만들 때 Configuration Manager 계층에 표시 하기 위한 배포 계획을 사용 하 여 연결 된 새 컬렉션에 대 일 분 정도 걸릴 수 있습니다.  주 사이트 컬렉션을 만들고 데스크톱 Analytics를 사용 하 여 중앙 관리 사이트를 동기화 합니다.
 
-- **장치 변경** 검색 UTC에서 현지 시간으로 자정 매일 새로 고침에 포함 일반적으로 됩니다. 일반적으로 관리자 변경에 비해 장치 변경 처리를 사용 하 여 연결 된 대기 시간이 추가 23 시간입니다.
+데스크톱 Analytics 포털 내는 두 가지 유형의 데이터 **관리자 데이터** 하 고 **진단 데이터**:
 
-이러한 시간 프레임 내에서 업데이트 된 변경 내용에 표시 되지 않으면 다음 매일 새로 고치면 다른 24 시간 동안 대기 합니다. 긴 지연 표시 되 면 서비스 상태 대시보드를 확인 합니다. 서비스를 정상으로 보고 하는 경우 Microsoft 지원에 문의 합니다.
+- **관리자 데이터** 작업 영역 구성에 변경 내용이 가리킵니다.  예를 들어 변경한 경우 자산의 **업그레이드 결정** 하거나 **중요도** 관리자 데이터를 변경 하는 합니다.  이러한 변경 내용은 경우가 말고 효과 처럼 설치의 해당 자산을 사용 하 여 장치 준비 상태를 변경할 수 있습니다.
 
-데스크톱 Analytics를 처음 설치할 때 Configuration Manager 및 Desktop Analytics 포털에서 차트는 전체 데이터를 표시 되지 않습니다. 데스크톱 분석 서비스, 데이터를 처리 하 여 Configuration Manager 사이트를 사용 하 여 다음 동기화 서비스에 진단 데이터 보내기에 대 한 활성 장치에 대해 2 ~ 3 일 걸릴 수 있습니다.
+- **진단 데이터** 클라이언트 장치에서 Microsoft에 업로드 하는 시스템 메타 데이터를 가리킵니다.  데스크톱 분석을 구동 하 고 장치 인벤토리, 보안 및 기능 업데이트 상태와 같은 특성을 포함 하는 데이터입니다.
 
-Configuration Manager 계층에서 배포 계획에 대해 새 컬렉션에 대 일 분 정도 걸릴 수 있습니다. 주 사이트 컬렉션을 만들고 데스크톱 Analytics를 사용 하 여 중앙 관리 사이트를 동기화 합니다.<!-- 3896921 -->
+기본적으로 포털은 자동으로 데스크톱 Analytics에서 모든 데이터에는 매일을 새로 고쳐집니다. 이 새로 고침 (관리자 데이터) 구성의 변경 내용을 비롯 하 여 진단 데이터에 변경 내용을 포함 하 고 매일 오전 08시 UTC에서 데스크톱 Analytics 포털에서 일반적으로 표시 됩니다.
+
+관리자 데이터를 변경할 때 데이터 통화 플라이 아웃을 열고 "변경 내용 적용"을 클릭 하 여 작업 영역에서 관리자 데이터는 요청 시 새로 고침을 트리거할 수가 있습니다.  일반적으로이 프로세스 영역의 크기 및 프로세스를 필요로 하는 변경 내용의 범위에 따라 15 ~ 60 분 소요 됩니다.  요청 시 데이터를 새로 고치는 참고 진단 데이터를 모든 변경에서 되지 않습니다.  요청 시 새로 고침을 요청 하는 방법에 대 한 자세한 내용은 가격 FAQ 페이지를 참조 하세요.
+
+위에 표시 된 시간 프레임 내에서 업데이트 된 변경 내용에 표시 되지 않으면 다른 24 시간 동안 대기 다음 매일 새로 고침에 대 한 합니다. 긴 지연 표시 되 면 서비스 상태 대시보드를 확인 합니다. 서비스를 정상으로 보고 하는 경우 Microsoft 지원에 문의 합니다.<!-- 3896921 -->

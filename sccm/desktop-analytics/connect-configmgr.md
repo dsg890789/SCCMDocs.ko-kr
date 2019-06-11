@@ -2,7 +2,7 @@
 title: Configuration Manager 연결
 titleSuffix: Configuration Manager
 description: 데스크톱 Analytics를 사용 하 여 Configuration Manager를 연결 하기 위한 방법 가이드입니다.
-ms.date: 04/25/2019
+ms.date: 06/07/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 905ea779082387996858727ef8c50f1835b3d61c
-ms.sourcegitcommit: 65753c51fbf596f233fc75a5462ea4a44005c70b
+ms.openlocfilehash: 38391c5d922a33696dc10d761847e40c01e151cc
+ms.sourcegitcommit: 725e1bf7d3250c2b7b7be9da01135517428be7a1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66463030"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66822001"
 ---
 # <a name="how-to-connect-configuration-manager-with-desktop-analytics"></a>데스크톱 Analytics를 사용 하 여 Configuration Manager를 연결 하는 방법
 
@@ -29,11 +29,11 @@ ms.locfileid: "66463030"
 
 ## <a name="bkmk_hotfix"></a> 사이트 업데이트
 
-먼저 Configuration Manager 사이트를 하나 이상 하 게 실행 중인지 확인 1810 버전입니다. 자세한 내용은 [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates)를 참조하세요.
+먼저 Configuration Manager 사이트를 하나 이상 하 게 실행 중인지 확인 1902 버전입니다. 자세한 내용은 [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates)를 참조하세요.
 
-1810 버전을 설치 해야 데스크톱 Analytics와의 통합을 지원 하도록 업데이트 롤업 2 (4488598). 이 업데이트에 대 한 자세한 내용은 참조 하세요. [업데이트 롤업 2: Configuration Manager 현재 분기, 버전 1810](https://support.microsoft.com/help/4488598)합니다.
+1902 버전 업데이트 롤업을 설치 합니다 (4500571) 데스크톱 Analytics와의 통합을 지원 하도록 해야 합니다. 이 업데이트에 대 한 자세한 내용은 참조 하세요. [Configuration Manager 현재 분기, 버전 1902 용 업데이트 롤업](https://support.microsoft.com/help/4500571)합니다.
 
-1. 버전 1810에 대한 업데이트 롤업을 사용하여 사이트를 업데이트합니다. 자세한 내용은 [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates)를 참조하세요.  
+1. 1902 버전에 대 한 업데이트 롤업을 사용 하 여 사이트를 업데이트 합니다. 자세한 내용은 [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates)를 참조하세요.  
 
 2. 클라이언트 업데이트 이 프로세스를 간소화하려면 자동 클라이언트 업그레이드를 사용하는 것이 좋습니다. 자세한 내용은 [클라이언트 업그레이드](/sccm/core/clients/manage/upgrade/upgrade-clients#automatic-client-upgrade)를 참조하세요.  
 
@@ -83,7 +83,7 @@ ms.locfileid: "66463030"
 
 7. 에 **진단 데이터** 페이지에서 다음 설정을 구성 합니다.  
 
-    - **상업용 ID**:이 값은 조직의 id 자동 채우기 프록시 서버에 필요한 모든을 허용 하도록 구성 되어 있는지 확인 하지 않는 경우 [끝점](/sccm/desktop-analytics/enable-data-sharing#endpoints) 계속 하기 전에 합니다. 또는에서 상업용 ID를 검색할 합니다 **연결 된 서비스** 창에는 [데스크톱 Analytics 포털](https://aka.ms/m365aprod).  
+    - **상업용 ID**:이 값은 조직의 id 자동 채우기 프록시 서버에 필요한 모든을 허용 하도록 구성 되어 있는지 확인 하지 않는 경우 [끝점](/sccm/desktop-analytics/enable-data-sharing#endpoints) 계속 하기 전에 합니다. 또는에서 수동으로 상업용 ID를 검색 합니다 [데스크톱 Analytics 포털](/sccm/desktop-analytics/troubleshooting#bkmk_ViewCommercialID)합니다.  
 
     - **Windows 10 진단 데이터 수준**: 하나 이상 선택 **고급 (제한적)**  
 

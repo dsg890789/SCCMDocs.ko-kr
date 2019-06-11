@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbe161fd744343927f0b373775182eccfd58c1b6
-ms.sourcegitcommit: a6a6507e01d819217208cfcea483ce9a2744583d
+ms.openlocfilehash: 7292fdd3cc370af314cef95a4b782616e315a0cb
+ms.sourcegitcommit: 725e1bf7d3250c2b7b7be9da01135517428be7a1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66748240"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66821985"
 ---
 # <a name="enable-data-sharing-for-desktop-analytics"></a>데이터 분석 데스크톱에 대 한 공유를 사용 하도록 설정
 
@@ -70,8 +70,6 @@ ms.locfileid: "66748240"
 | `https://watson.telemetry.microsoft.com` | Windows 오류 보고 (WER)입니다. Windows 10, 버전 1803에서 배포 상태를 모니터링 해야 합니다. |
 | `https://umwatsonc.events.data.microsoft.com` | Windows 오류 보고 (WER)입니다. Windows 10 1809 이상 버전에서에서 장치 상태 보고서에 필요합니다. |
 | `https://ceuswatcab01.blob.core.windows.net`<br> `https://ceuswatcab02.blob.core.windows.net`<br> `https://eaus2watcab01.blob.core.windows.net`<br> `https://eaus2watcab02.blob.core.windows.net`<br> `https://weus2watcab01.blob.core.windows.net`<br> `https://weus2watcab02.blob.core.windows.net` | Windows 오류 보고 (WER)입니다. Windows 10 1809 이상 버전에서에서 배포 상태를 모니터링 해야 합니다. |
-| `https://www.msftncsi.com` | Windows 오류 보고 (WER)입니다. 연결을 확인 하려면 장치 상태에 필요 합니다. |
-| `https://www.msftconnecttest.com` | Windows 오류 보고 (WER)입니다. 연결을 확인 하려면 장치 상태에 필요 합니다. |
 | `https://kmwatsonc.events.data.microsoft.com` | 온라인 크래시 분석 합니다. Windows 10 1809 이상 버전에서에서 장치 상태 보고서에 필요합니다. |
 | `https://oca.telemetry.microsoft.com`  | 온라인 Analysis (OCA)입니다. Windows 10, 버전 1803에서 배포 상태를 모니터링 해야 합니다. |
 | `https://login.live.com` | 데스크톱 분석에 대 한 더 신뢰할 수 있는 장치 id를 제공 해야 합니다. <br> <br>최종 사용자가 Microsoft 계정 액세스를 비활성화 하려면이 끝점을 차단 하는 대신 정책 설정을 사용 합니다. 자세한 내용은 [기업에서 Microsoft 계정](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts#block-all-consumer-microsoft-account-user-authentication)합니다. |

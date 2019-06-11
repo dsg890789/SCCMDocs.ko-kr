@@ -2,7 +2,7 @@
 title: 자습서-Windows 10 배포
 titleSuffix: Configuration Manager
 description: 데스크톱 분석 및 Configuration Manager를 사용 하 여 파일럿 그룹에 Windows 10을 배포 하는 자습서입니다.
-ms.date: 04/25/2019
+ms.date: 06/07/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: tutorial
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7eb322550c6d11426240736d3d0c6b9ff2c9764f
-ms.sourcegitcommit: abfc9e1b3945637fa93ca8d3a11519493a5d5391
+ms.openlocfilehash: 09259b62eba5a6cbd84b487f83f0fb26d7cbb7c1
+ms.sourcegitcommit: 725e1bf7d3250c2b7b7be9da01135517428be7a1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264551"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66821964"
 ---
 # <a name="tutorial-deploy-windows-10-to-pilot"></a>자습서: 파일럿을 Windows 10을 배포 합니다.
 
@@ -48,7 +48,7 @@ Azure 구독이 없으면 만듭니다는 [무료 계정](https://azure.microsof
 
     자세한 내용은 [데스크톱 Analytics 필수 구성 요소](/sccm/desktop-analytics/overview#prerequisites)합니다.
 
-- Configuration Manager 1810 업데이트 롤업 2 (4488598) 이상 버전을 사용 하 여 **전체 관리자** 역할  
+- Configuration Manager 업데이트 롤업 (4500571) 이상을 사용 하 여 버전 1902 **전체 관리자** 역할  
 
 - Windows 10의 최신 버전은 설치 미디어
 
@@ -58,7 +58,7 @@ Azure 구독이 없으면 만듭니다는 [무료 계정](https://azure.microsof
 
     - 최신 Windows 10 누적 품질 업데이트  
 
-    - Configuration Manager 업데이트 롤업 2 (4488598)를 사용 하 여 클라이언트 버전 1810 이후  
+    - Configuration Manager 클라이언트 버전 1902 업데이트 롤업 (4500571) 이상  
 
 - Windows 진단 데이터 수준을 구성 하려면 비즈니스 승인 **고급 (제한적)** 파일럿 장치에서  
 
@@ -77,8 +77,6 @@ Azure 구독이 없으면 만듭니다는 [무료 계정](https://azure.microsof
     - `https://eaus2watcab02.blob.core.windows.net`  
     - `https://weus2watcab01.blob.core.windows.net`  
     - `https://weus2watcab02.blob.core.windows.net`  
-    - `https://www.msftncsi.com`  
-    - `https://www.msftconnecttest.com`  
     - `https://kmwatsonc.events.data.microsoft.com`  
     - `https://oca.telemetry.microsoft.com`  
     - `https://login.live.com`  
@@ -157,9 +155,9 @@ Configuration Manager 업데이트, 데스크톱 Analytics에 연결 및 장치 
 
 ### <a name="update-configuration-manager"></a>Configuration Manager 업데이트
 
-Configuration Manager 버전 1810 업데이트 롤업 데스크톱 Analytics와의 통합을 지원 하기 위해 (4488598) 2를 설치 합니다. 이 업데이트에 대 한 자세한 내용은 참조 하세요. [Configuration Manager 현재 분기, 버전 1810 용 업데이트 롤업](https://support.microsoft.com/help/4488598)합니다.
+데스크톱 Analytics와의 통합을 지원 하기 위해 Configuration Manager 버전 1902 업데이트 롤업 (4500571)를 설치 합니다. 이 업데이트에 대 한 자세한 내용은 참조 하세요. [Configuration Manager 현재 분기, 버전 1902 용 업데이트 롤업](https://support.microsoft.com/help/4500571)합니다.
 
-1. 버전 1810에 대한 업데이트 롤업을 사용하여 사이트를 업데이트합니다. 자세한 내용은 [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates)를 참조하세요.  
+1. 1902 버전에 대 한 업데이트 롤업을 사용 하 여 사이트를 업데이트 합니다. 자세한 내용은 [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates)를 참조하세요.  
 
 2. 클라이언트 업데이트 이 프로세스를 간소화하려면 자동 클라이언트 업그레이드를 사용하는 것이 좋습니다. 자세한 내용은 [클라이언트 업그레이드](/sccm/core/clients/manage/upgrade/upgrade-clients#automatic-client-upgrade)를 참조하세요.  
 

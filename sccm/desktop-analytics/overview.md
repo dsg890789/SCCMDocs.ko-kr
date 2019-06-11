@@ -2,7 +2,7 @@
 title: Desktop Analytics
 titleSuffix: Configuration Manager
 description: 데스크톱 분석 서비스의 개요를 Configuration Manager를 통합 합니다.
-ms.date: 06/04/2019
+ms.date: 06/07/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: overview
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bdeffb3b2d478e4984ef721655b78aee5c47c36f
-ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
+ms.openlocfilehash: 8dfa24f92ced6c69f90844e46dccf1df0e93f7a7
+ms.sourcegitcommit: 725e1bf7d3250c2b7b7be9da01135517428be7a1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66716232"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66821995"
 ---
 # <a name="what-is-desktop-analytics"></a>데스크톱 Analytics 란?
 
@@ -80,7 +80,7 @@ ms.locfileid: "66716232"
 
         - [**소유자**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), 또는 [ **참가자** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) 고 [ **사용자 액세스 관리자** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#user-access-administrator) 에 대 한 권한을 합니다 새 리소스 그룹에 작업 영역을 만들 구독입니다.  
 
-- Configuration Manager 1810 업데이트 롤업 2 (4488598)를 사용 하 여 버전 이상. 자세한 내용은 [Configuration Manager 업데이트](/sccm/desktop-analytics/connect-configmgr#bkmk_hotfix)합니다.  
+- 1902 버전의 configuration Manager 업데이트 롤업 (4500571) 이상. 자세한 내용은 [Configuration Manager 업데이트](/sccm/desktop-analytics/connect-configmgr#bkmk_hotfix)합니다.  
 
     - **전체 관리자** Configuration Manager의 역할  
 
@@ -88,7 +88,7 @@ ms.locfileid: "66716232"
 
     - 최신 업데이트를 설치 합니다. 자세한 내용은 [장치 업데이트](/sccm/desktop-analytics/enroll-devices#update-devices)합니다.  
 
-    - 장치는 Configuration Manager 클라이언트를 버전 (4488598) 업데이트 롤업 2 사용 하 여 1810 있어야 할 수도 이상. 자세한 내용은 [Configuration Manager 업데이트](/sccm/desktop-analytics/connect-configmgr#bkmk_hotfix)합니다.  
+    - 장치는 Configuration Manager 클라이언트를 버전 1902 있어야 할 수도 업데이트 롤업 (4500571) 이상. 자세한 내용은 [Configuration Manager 업데이트](/sccm/desktop-analytics/connect-configmgr#bkmk_hotfix)합니다.  
 
     > [!Note]  
     > 데스크톱 Analytics는 Windows 10 장기 서비스 채널 (LTSC)에 대 한 업그레이드를 지원 하지 않습니다. 자세한 내용은 [Windows 서비스에 대 한 개요로](https://docs.microsoft.com/windows/deployment/update/waas-overview#long-term-servicing-channel)합니다.
