@@ -202,9 +202,10 @@ additionalContent:
       summary: 커뮤니티에서 자세한 정보
       url: https://www.reddit.com/r/sccm
   footer: 사이트에 문제가 있습니까? [알려주세요](https://docs.microsoft.com/sccm/core/understand/use-docs#bkmk_docfeedback)!
-ms.openlocfilehash: bf3248bb4e4169ca86741d1936398005d3fd1fd5
-ms.sourcegitcommit: a6a6507e01d819217208cfcea483ce9a2744583d
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66463814"
+metadata:
+  ms.openlocfilehash: bf3248bb4e4169ca86741d1936398005d3fd1fd5
+  ms.sourcegitcommit: a6a6507e01d819217208cfcea483ce9a2744583d
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 06/07/2019
+  ms.locfileid: "66463814"
