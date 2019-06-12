@@ -2,7 +2,7 @@
 title: 데스크톱 분석에 대 한 FAQ
 titleSuffix: Configuration Manager
 description: 질문과 대답 데스크톱 분석용입니다.
-ms.date: 04/26/2019
+ms.date: 06/10/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4596923f9a6a42ad98dc17257b22925ad0bc5eed
-ms.sourcegitcommit: 9af73f5c1b93f6ccaea3e6a096f75a5fecd65c2f
+ms.openlocfilehash: 1187688813c2d7a3308ed5ed53e29cb90640dda8
+ms.sourcegitcommit: 0bd336e11c9a7f2de05656496a1bc747c5630452
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "64562450"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66834833"
 ---
 # <a name="desktop-analytics-faq"></a>데스크톱 분석 FAQ
 
@@ -39,6 +39,13 @@ ms.locfileid: "64562450"
 ### <a name="can-i-use-desktop-analytics-with-windows-10-ltsc"></a>Windows 10 LTSC를 사용 하 여 데스크톱 분석을 사용할 수 있나요?
 
 데스크톱 Analytics를 사용 하 여 장치에서 Windows 10 장기 서비스 채널 LTSC () Windows 10 반기 채널에 업데이트를 도우려면 데스크톱 Analytics Windows 10 LTSC에 대 한 업데이트를 지원 하지 않습니다. 이 채널의 Windows 10 광범위 한 용도로 적합 하지 않습니다 및 데스크톱 Analytics를 사용 하 여 지원 되는 대상 되지 않도록 기능 업데이트를 수신 하지 않습니다. 자세한 내용은 [Windows 서비스에 대 한 개요로](https://docs.microsoft.com/windows/deployment/update/waas-overview#long-term-servicing-channel)합니다.
+
+### <a name="can-i-reduce-the-amount-of-time-it-takes-for-data-to-refresh-in-my-desktop-analytics-portal"></a>데이터가 내 데스크톱 Analytics 포털에서 새로 고침 하는 데 걸리는 시간을 줄일 수 있나요?
+
+데스크톱 Analytics 포털에서 데이터는 다음과 같은 두 종류가 있습니다. 관리자 데이터 및 진단 데이터입니다. 요청 시 관리자 데이터를 새로 고치려면 데이터 통화 플라이 아웃 열고 선택 **변경 내용을 적용**합니다. 이 작업에는 즉시 보류 중인 모든 작업 영역에 관리자 변경의 일회성 새로 고침을 트리거합니다. 변경 내용을 전파 하 고 15 ~ 60 분 내에서 일반 공급 됩니다. 타이밍 작업 영역의 크기 및 보류 중인 변경 내용 범위에 따라 달라 집니다. 요청 시 데이터 새로 고침을 6 시간을 24 시간 기간 내 최대 요청할 수 있습니다. 
+
+요청 시 데이터 새로 고침을 요청 하지 하는 경우에 모든 데이터는 하루에 한 번 자동으로 업데이트 됩니다. 진단 데이터의 주문형 새로 고침을 트리거할 방법이 없습니다. 다양 한 데스크톱 Analytics에서 데이터에 대 한 자세한 내용은 참조 하세요. [의 데이터 대기 시간이](/sccm/desktop-analytics/troubleshooting#data-latency)합니다.
+
 
 ## <a name="privacy"></a>개인 정보 보호
 

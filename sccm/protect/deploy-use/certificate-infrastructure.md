@@ -58,9 +58,9 @@ System Center Configuration Manager에서 인증서 인프라를 구성하는 �
    > [!TIP]
    >  이 인증서를 배포하는 데 도움이 필요한 경우 [배포 지점용 클라이언트 인증서 배포](/sccm/core/plan-design/network/example-deployment-of-pki-certificates#BKMK_clientdistributionpoint2008_cm2012)에 있는 지침을 참조하세요. 다음 항목 하나를 제외하고 인증서 요구 사항이 동일하기 때문입니다.  
    > 
-   > - 인증서 템플릿 속성의 **요청 처리** 탭에서 **개인 키를 내보낼 수 있음** 확인란을 선택하지 않습니다.  
+   > - 인증서 템플릿 속성의 **요청 처리** 탭에서 **프라이빗 키를 내보낼 수 있음** 확인란을 선택하지 않습니다.  
    > 
-   >   System Center Configuration Manager 정책 모듈을 구성할 때 이 인증서를 로컬 컴퓨터 저장소에서 찾아 선택할 수 있으므로 개인 키를 포함하여 내보낼 필요가 없습니다.  
+   >   System Center Configuration Manager 정책 모듈을 구성할 때 이 인증서를 로컬 컴퓨터 저장소에서 찾아 선택할 수 있으므로 프라이빗 키를 포함하여 내보낼 필요가 없습니다.  
 
 4. 클라이언트 인증 인증서를 연결할 루트 인증서를 찾습니다. 그런 다음 이 루트 CA 인증서를 인증서(.cer) 파일로 내보냅니다. 나중에 인증서 등록 지점의 사이트 시스템 서버를 설치 및 구성할 때 안전하게 액세스할 수 있도록 보안이 유지되는 위치에 이 파일을 저장합니다.  
 
@@ -74,11 +74,11 @@ System Center Configuration Manager에서 인증서 인프라를 구성하는 �
 
 6. 동일한 서버의 IIS(인터넷 정보 서비스) 관리자에서 /certsrv/mscep 애플리케이션의 요청 필터링 설정을 수정한 후 서버를 다시 시작합니다. **요청 필터링 설정 편집** 대화 상자에서 **요청 제한** 설정을 다음과 같이 구성해야 합니다.  
 
-   - **허용되는 최대 콘텐츠 길이(바이트)**: **30000000**  
+   - **허용되는 최대 콘텐츠 길이(바이트)** : **30000000**  
 
-   - **최대 URL 길이(바이트)**: **65534**  
+   - **최대 URL 길이(바이트)** : **65534**  
 
-   - **최대 쿼리 문자열(바이트)**: **65534**  
+   - **최대 쿼리 문자열(바이트)** : **65534**  
 
      이러한 설정에 대한 자세한 내용과 해당 설정을 구성하는 방법에 대한 자세한 내용은 IIS 참조 라이브러리에서 [Requests Limits(요청 제한)](http://go.microsoft.com/fwlink/?LinkId=309014) 항목을 참조하세요.  
 
@@ -92,7 +92,7 @@ System Center Configuration Manager에서 인증서 인프라를 구성하는 �
 
       자세한 내용은 TechNet에서 PKI 기술 라이브러리의 [Certificate Services Tools and Settings(인증서 서비스 도구 및 설정)](http://go.microsoft.com/fwlink/p/?LinkId=309015) 를 참조하세요.  
 
-8. 네트워크 디바이스 등록 서비스가 다음 링크를 사용하여 작동 중인지 확인합니다(예: **https://server.contoso.com/certsrv/mscep/mscep.dll**). 기본 제공되는 네트워크 디바이스 등록 서비스 웹 페이지가 나타납니다. 이 웹 페이지에서는 서비스에 대해 설명하고, 네트워크 디바이스가 인증서 요청을 제출하는 URL을 사용한다는 것을 설명합니다.  
+8. 네트워크 디바이스 등록 서비스가 다음 링크를 사용하여 작동 중인지 확인합니다(예: **https://server.contoso.com/certsrv/mscep/mscep.dll** ). 기본 제공되는 네트워크 디바이스 등록 서비스 웹 페이지가 나타납니다. 이 웹 페이지에서는 서비스에 대해 설명하고, 네트워크 디바이스가 인증서 요청을 제출하는 URL을 사용한다는 것을 설명합니다.  
 
    네트워크 디바이스 등록 서비스와 종속 항목을 구성했으므로 이제 인증서 등록 지점을 설치 및 구성할 준비가 되었습니다.
 
@@ -126,7 +126,7 @@ System Center Configuration Manager 계층에 인증서 등록 지점을 하나 
    - **SCEP 인증서 요청 처리**를 선택한 경우 다음을 구성합니다.
      -   인증서 등록 지점에 대한 **웹 사이트 이름**, **HTTPS 포트 번호** 및 **가상 애플리케이션 이름**. 이러한 필드는 기본값으로 자동으로 입력됩니다. 
      -   **네트워크 디바이스 등록 서비스 및 루트 CA 인증서의 URL** - **추가**를 클릭하고 **URL 및 루트 CA 인증서 추가** 대화 상자에서 다음을 지정합니다.
-         - **네트워크 디바이스 등록 서비스의 URL**: URL을 https://*&lt;server_FQDN&gt;*/certsrv/mscep/mscep.dll 형식으로 지정합니다. 예를 들어 네트워크 디바이스 등록 서비스를 실행하는 서버의 FQDN이 server1.contoso.com인 경우 **https://server1.contoso.com/certsrv/mscep/mscep.dll**을 입력합니다.
+         - **네트워크 디바이스 등록 서비스의 URL**: URL을 https:// *&lt;server_FQDN&gt;* /certsrv/mscep/mscep.dll 형식으로 지정합니다. 예를 들어 네트워크 디바이스 등록 서비스를 실행하는 서버의 FQDN이 server1.contoso.com인 경우 **https://server1.contoso.com/certsrv/mscep/mscep.dll** 을 입력합니다.
          - **루트 CA 인증서**: **1단계: 네트워크 디바이스 등록 서비스 및 종속성 설치 및 구성**에서 만들어 저장한 인증서(.cer) 파일을 찾아서 선택합니다. 인증서 등록 지점은 이 루트 CA 인증서를 사용하여 System Center Configuration Manager 정책 모듈에 사용될 클라이언트 인증 인증서의 유효성을 검사할 수 있습니다.  
 
    - **PFX 인증서 요청 처리**를 선택한 경우 선택한 인증 기관에 대한 연결 정보 및 자격 증명을 구성합니다.
@@ -186,7 +186,7 @@ System Center Configuration Manager 정책 모듈을 **2단계: 인증서 등록
 
 4. **설치 폴더** 페이지에서 정책 모듈의 기본 설치 폴더를 그대로 적용하거나 다른 폴더를 지정한 후 **다음**을 클릭합니다.  
 
-5. **인증서 등록 지점** 페이지에서 인증서 등록 지점 속성에 지정된 사이트 시스템 서버의 FQDN과 가상 애플리케이션 이름을 사용하여 인증서 등록 지점의 URL을 지정합니다. 기본 가상 애플리케이션 이름은 CMCertificateRegistration입니다. 예를 들어 사이트 시스템 서버의 FQDN이 server1.contoso.com이고 기본 가상 애플리케이션 이름을 사용하는 경우 **https://server1.contoso.com/CMCertificateRegistration**을 지정합니다.  
+5. **인증서 등록 지점** 페이지에서 인증서 등록 지점 속성에 지정된 사이트 시스템 서버의 FQDN과 가상 애플리케이션 이름을 사용하여 인증서 등록 지점의 URL을 지정합니다. 기본 가상 애플리케이션 이름은 CMCertificateRegistration입니다. 예를 들어 사이트 시스템 서버의 FQDN이 server1.contoso.com이고 기본 가상 애플리케이션 이름을 사용하는 경우 **https://server1.contoso.com/CMCertificateRegistration** 을 지정합니다.  
 
 6. 기본 포트 **443** 을 수락하거나 인증서 등록 지점에 사용되는 다른 포트 번호를 지정하고 **다음**을 클릭합니다.  
 

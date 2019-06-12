@@ -13,7 +13,7 @@ ms.assetid: d071b0ec-e070-40a9-b7d4-564b92a5465f
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a4100bca2f1cd1f770c2e739ec229dc020d5d8d8
 ms.sourcegitcommit: 5f17355f954b9d9e10325c0e9854a9d582dec777
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/21/2019
 ms.locfileid: "58329586"
@@ -50,7 +50,7 @@ Configuration Manager 프로덕션 환경에서 소프트웨어 업데이트를 
 
     IIS 애플리케이션 풀:
     - WsusPool 큐 길이를 2000으로 증가
-    - WsusPool 개인 메모리 제한을 4배로 늘리거나 0(무제한)으로 설정합니다. 예를 들어, 기본 제한이 1,843,200KB이면 7,372,800으로 증가합니다. 자세한 내용은 이 [Configuration Manager 지원 팀 블로그 게시물](https://blogs.technet.microsoft.com/configurationmgr/2015/03/23/configmgr-2012-support-tip-wsus-sync-fails-with-http-503-errors/)을 참조하세요.  
+    - WsusPool 프라이빗 메모리 제한을 4배로 늘리거나 0(무제한)으로 설정합니다. 예를 들어, 기본 제한이 1,843,200KB이면 7,372,800으로 증가합니다. 자세한 내용은 이 [Configuration Manager 지원 팀 블로그 게시물](https://blogs.technet.microsoft.com/configurationmgr/2015/03/23/configmgr-2012-support-tip-wsus-sync-fails-with-http-503-errors/)을 참조하세요.  
 
     소프트웨어 업데이트 지점의 하드웨어 요구 사항에 대한 자세한 내용은 [사이트 시스템용 권장 하드웨어](/sccm/core/plan-design/configs/recommended-hardware#a-namebkmkscalesiesystemsa-site-systems)를 참조하세요.  
 
@@ -240,7 +240,7 @@ Configuration Manager의 애플리케이션 관리 기능과 교체 관계를 �
 자세한 내용은 [타사 소프트웨어 업데이트](/sccm/sum/deploy-use/third-party-software-updates)를 참조하세요.
 
 #### <a name="system-center-updates-publisher"></a>System Center Updates Publisher
-SCUP(System Center Updates Publisher)는 독립 소프트웨어 공급업체 또는 LOB(기간 업무) 응용 프로그램 개발자가 사용자 지정 업데이트를 관리할 수 있도록 하는 독립 실행형 도구입니다. 이러한 업데이트에는 드라이버 및 업데이트 번들과 같은 종속성이 있는 업데이트가 포함됩니다.
+SCUP(System Center Updates Publisher)는 독립 소프트웨어 공급업체 또는 LOB(기간 업무) 애플리케이션 개발자가 사용자 지정 업데이트를 관리할 수 있도록 하는 독립 실행형 도구입니다. 이러한 업데이트에는 드라이버 및 업데이트 번들과 같은 종속성이 있는 업데이트가 포함됩니다.
 
 자세한 내용은 [System Center Updates Publisher](/sccm/sum/tools/updates-publisher)를 참조하세요.
 

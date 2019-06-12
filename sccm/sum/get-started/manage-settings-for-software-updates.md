@@ -11,12 +11,12 @@ manager: dougeby
 author: mestew
 ms.author: mstewart
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90304156778f4f41b2ac35a2840a4a7e7bb4dc32
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: b78d4212201a8ed1a08b7fecdb376cbdfdac7636
+ms.sourcegitcommit: a6a6507e01d819217208cfcea483ce9a2744583d
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65499777"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66748214"
 ---
 #  <a name="BKMK_ManageSUSettings"></a> 소프트웨어 업데이트 설정 관리  
 
@@ -69,7 +69,11 @@ Configuration Manager에서 소프트웨어 업데이트를 동기화한 후 다
 ####  <a name="BKMK_SoftwareUpdateDetails"></a> 소프트웨어 업데이트 정보  
 **업데이트 세부 정보** 탭에서 선택한 소프트웨어 업데이트에 대한 다음 요약 정보를 볼 수 있습니다.  
 
-- **공지 ID**: 보안 소프트웨어 업데이트와 연결된 공지 ID를 지정합니다. [Microsoft Security Bulletin Search(Microsoft 보안 공지 검색)](http://go.microsoft.com/fwlink/p/?LinkId=58313) 웹 페이지에서 공지 ID를 검색하여 보안 공지 세부 정보를 찾을 수 있습니다.  
+- **공지 ID**: 보안 소프트웨어 업데이트와 연결된 공지 ID를 지정합니다. [Microsoft Security 보안 대응 센터](https://portal.msrc.microsoft.com/) 웹 페이지에서 공지 ID를 검색하여 보안 공지 세부 정보를 찾을 수 있습니다.  
+
+> [!NOTE]
+> Microsoft에서 보안 업데이트를 문서화하는 방식이 바뀌고 있습니다. 이전 모델은 보안 공지 웹 페이지를 사용했으며 피벗 지점으로 보안 공지 ID 번호(예: MS16-XXX)를 포함했습니다. 공지 ID 번호를 포함한 이 보안 업데이트 문서 양식은 사용이 중지되고 보안 업데이트 가이드로 대체됩니다. 공지 ID 대신 새 가이드는 취약성 ID 번호와 기술 자료 문서 ID 번호를 피벗합니다. 자세한 내용은 [보안 업데이트 가이드 FAQ](https://www.microsoft.com/msrc/faqs-security-update-guide)를 참조하세요.
+
 
 - **문서 ID**: 소프트웨어 업데이트에 대한 문서 ID를 지정합니다. 참조된 문서에서는 소프트웨어 업데이트 및 소프트웨어 업데이트로 수정되거나 개선된 문제에 대해 좀더 자세한 정보를 제공합니다.  
 
@@ -94,7 +98,7 @@ Configuration Manager에서 소프트웨어 업데이트를 동기화한 후 다
 
 -   **원본 경로**: 소프트웨어 업데이트 원본 파일에 대한 경로를 지정합니다.  
 
--   **크기(MB)**: 소프트웨어 업데이트 원본 파일의 크기를 지정합니다.  
+-   **크기(MB)** : 소프트웨어 업데이트 원본 파일의 크기를 지정합니다.  
 
 ####  <a name="BKMK_CustomBundleInformation"></a> 사용자 지정 번들 정보  
 **사용자 지정 번들 정보** 탭에서 소프트웨어 업데이트에 대한 사용자 지정 번들 정보를 검토합니다. 선택한 소프트웨어 업데이트가 소프트웨어 업데이트 파일에 포함된 번들 소프트웨어 업데이트를 포함하는 경우 이 번들 소프트웨어 업데이트는 **번들 정보** 섹션에 표시됩니다. 이 탭에는 여러 언어에 대한 업데이트 파일과 같이 **콘텐츠 정보** 탭에 표시되는 번들 소프트웨어 업데이트는 나타나지 않습니다.  
@@ -134,6 +138,6 @@ Configuration Manager에서는 이 설정을 사용하여, 구성된 유지 관�
 CRL 확인이 사용되는 경우 소프트웨어 업데이트를 처리하는 Configuration Manager 콘솔에서 사용하도록 설정되어야 합니다.  
 
 #### <a name="to-enable-crl-checking"></a>CRL 확인을 사용하려면  
-CRL 확인을 수행하는 컴퓨터에서 제품 DVD를 사용하여 명령 프롬프트에서 **\SMSSETUP\BIN\X64\\**<*언어*>**\UpdDwnldCfg.exe /checkrevocation**을 실행합니다.  
+CRL 확인을 수행하는 컴퓨터에서 제품 DVD를 사용하여 명령 프롬프트에서 **\SMSSETUP\BIN\X64\\** <*언어*> **\UpdDwnldCfg.exe /checkrevocation**을 실행합니다.  
 
 예를 들어 영어(미국)의 경우 **\SMSSETUP\BIN\X64\00000409\UpdDwnldCfg.exe /checkrevocation**을 실행합니다.  

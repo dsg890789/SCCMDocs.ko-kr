@@ -71,7 +71,7 @@ System Center Configuration Manager 현재 분기의 업데이트 1610은 버전
 
 ## <a name="cloud-management-gateway-for-managing-internet-based-clients"></a>인터넷 기반 클라이언트 관리를 위한 클라우드 관리 게이트웨이
 
-클라우드 관리 게이트웨이는 인터넷에서 Configuration Manager 클라이언트를 관리할 수 있는 간단한 방법을 제공합니다. Microsoft Azure에 배포되고 Azure 구독이 필요한 클라우드 관리 게이트웨이 서비스는 클라우드 관리 게이트웨이 연결점이라는 새 역할을 사용하여 온-프레미스 Configuration Manager 인프라에 연결합니다. 완전히 배포되고 구성된 클라이언트는 내부 개인 네트워크 또는 인터넷에 연결되었는지 여부에 관계없이 온-프레미스 Configuration Manager 사이트 시스템 역할 및 클라우드 기반 배포 지점과 통신할 수 있습니다. 자세한 내용 및 클라우드 관리 게이트웨이와 인터넷 기반 클라이언트 관리의 차이점을 보려면 [인터넷에서 클라이언트 관리](/sccm/core/clients/manage/manage-clients-internet)를 참조하세요.
+클라우드 관리 게이트웨이는 인터넷에서 Configuration Manager 클라이언트를 관리할 수 있는 간단한 방법을 제공합니다. Microsoft Azure에 배포되고 Azure 구독이 필요한 클라우드 관리 게이트웨이 서비스는 클라우드 관리 게이트웨이 연결점이라는 새 역할을 사용하여 온-프레미스 Configuration Manager 인프라에 연결합니다. 완전히 배포되고 구성된 클라이언트는 내부 프라이빗 네트워크 또는 인터넷에 연결되었는지 여부에 관계없이 온-프레미스 Configuration Manager 사이트 시스템 역할 및 클라우드 기반 배포 지점과 통신할 수 있습니다. 자세한 내용 및 클라우드 관리 게이트웨이와 인터넷 기반 클라이언트 관리의 차이점을 보려면 [인터넷에서 클라이언트 관리](/sccm/core/clients/manage/manage-clients-internet)를 참조하세요.
 
 ## <a name="improvements-to-the-windows-10-edition-upgrade-policy"></a>Windows 10 버전 업그레이드 정책의 향상 기능
 이번 릴리스에서는 이 정책 유형이 다음과 같이 향상되었습니다.

@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38391c5d922a33696dc10d761847e40c01e151cc
-ms.sourcegitcommit: 725e1bf7d3250c2b7b7be9da01135517428be7a1
+ms.openlocfilehash: ad933e5158fea4cafed7ea84a938b6505d6df4e5
+ms.sourcegitcommit: 0bd336e11c9a7f2de05656496a1bc747c5630452
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66822001"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66834944"
 ---
 # <a name="how-to-connect-configuration-manager-with-desktop-analytics"></a>데스크톱 Analytics를 사용 하 여 Configuration Manager를 연결 하는 방법
 
@@ -85,8 +85,8 @@ ms.locfileid: "66822001"
 
     - **상업용 ID**:이 값은 조직의 id 자동 채우기 프록시 서버에 필요한 모든을 허용 하도록 구성 되어 있는지 확인 하지 않는 경우 [끝점](/sccm/desktop-analytics/enable-data-sharing#endpoints) 계속 하기 전에 합니다. 또는에서 수동으로 상업용 ID를 검색 합니다 [데스크톱 Analytics 포털](/sccm/desktop-analytics/troubleshooting#bkmk_ViewCommercialID)합니다.  
 
-    - **Windows 10 진단 데이터 수준**: 하나 이상 선택 **고급 (제한적)**  
-
+    - **Windows 10 진단 데이터 수준**: 하나 이상 선택 **기본**입니다. 참조 [진단 데이터 수준](/sccm/desktop-analytics/enable-data-sharing#diagnostic-data-levels)
+  
     - **장치 이름을 진단 데이터의 허용**: 선택 **사용 하도록 설정**  
 
         > [!Note]  

@@ -2,7 +2,7 @@
 title: 자습서-Windows 10 배포
 titleSuffix: Configuration Manager
 description: 데스크톱 분석 및 Configuration Manager를 사용 하 여 파일럿 그룹에 Windows 10을 배포 하는 자습서입니다.
-ms.date: 06/07/2019
+ms.date: 06/10/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: tutorial
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09259b62eba5a6cbd84b487f83f0fb26d7cbb7c1
-ms.sourcegitcommit: 725e1bf7d3250c2b7b7be9da01135517428be7a1
+ms.openlocfilehash: ba11906bb8febcd2c2c5ab9295d391680763e0cf
+ms.sourcegitcommit: 0bd336e11c9a7f2de05656496a1bc747c5630452
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66821964"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66834785"
 ---
 # <a name="tutorial-deploy-windows-10-to-pilot"></a>자습서: 파일럿을 Windows 10을 배포 합니다.
 
@@ -256,7 +256,7 @@ Configuration Manager는 연결을 만드는 60 분 내 컬렉션을 동기화 �
 
     - **완료 날짜**: Windows 완벽 하 게 모든 대상된 장치에 배포할지 때 사용 되는 날짜를 선택 합니다.  
 
-5. **만들기**를 선택합니다. 새 계획 처리 되 고 해당 하는 동안 배포 계획의 목록에 나타납니다. 처리는 다음 단계를 진행 하기 전에 최대 48 시간이 걸릴 수 있습니다.  
+5. **만들기**를 선택합니다. 새 계획 처리 되 고 해당 하는 동안 배포 계획의 목록에 나타납니다. 처리를 신속 하 게 요청 시 데이터 새로 고침을 요청 합니다. 자세한 내용은 [데스크톱 분석 FAQ](/sccm/desktop-analytics/faq#can-i-reduce-the-amount-of-time-it-takes-for-data-to-refresh-in-my-desktop-analytics-portal)합니다.
 
 6. 해당 이름을 선택 하 여 배포 계획을 엽니다.  
 

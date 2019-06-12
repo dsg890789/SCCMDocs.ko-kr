@@ -2,7 +2,7 @@
 title: 데스크톱 Analytics에서 배포 계획
 titleSuffix: Configuration Manager
 description: 데스크톱 Analytics에서 배포 계획에 알아봅니다.
-ms.date: 05/14/2019
+ms.date: 06/10/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b44684f897e7aad4365c39e58c9bfd486bde7cbb
-ms.sourcegitcommit: 53f2380ac67025fb4a69fc1651edad15d98e0cdd
+ms.openlocfilehash: 88c78cef4717cc3a51a53b7fd5aba0cbefa93a8e
+ms.sourcegitcommit: 0bd336e11c9a7f2de05656496a1bc747c5630452
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65673287"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66834940"
 ---
 # <a name="about-deployment-plans-in-desktop-analytics"></a>데스크톱 Analytics에서 배포 계획에 대 한
 
@@ -48,7 +48,7 @@ ms.locfileid: "65673287"
 
 - 데스크톱 Analytics에서 권장 사항에 따라 앱을 사용 하 여 문제를 해결 하는 방법 결정  
 
-데스크톱 Analytics 배포 계획 데이터를 매일 새로 고칩니다. 24 시간 동안 변경 내용이 나타나지 않을 수 있습니다. 이러한 변경으로는 중요도를 앱에 할당 또는 파일럿에 포함 하려면 장치를 선택 합니다.  
+기본적으로 데스크톱 분석 데이터를 새로 고칩니다 배포 계획 매일입니다. 앱에 중요도 할당 하거나, 파일럿 실행에 포함할 장치 선택 등 배포 계획, 내에서 수행한 변경 내용 처리 하는 데 최대 24 시간이 됩니다. 이 프로세스를 신속 하 게 요청 시 데이터 새로 고침을 요청 합니다. 자세한 내용은 [데스크톱 분석 FAQ](/sccm/desktop-analytics/faq#can-i-reduce-the-amount-of-time-it-takes-for-data-to-refresh-in-my-desktop-analytics-portal)합니다.  
 
 데스크톱 Analytics를 Configuration Manager에 연결한 후 배포 계획에서 컬렉션을 선택 합니다. 이 통합 데스크톱 분석 데이터를 기반으로 컬렉션에 Windows를 배포할 수 있습니다.
 

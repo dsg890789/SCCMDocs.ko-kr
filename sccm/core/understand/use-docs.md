@@ -97,7 +97,7 @@ docs.microsoft.com 플랫폼에 대한 피드백을 공유하려면 [문서 피�
 
 
 > [!Tip]  
-> GitHub에서 [SCCMdocs 리포지토리](https://github.com/MicrosoftDocs/SCCMdocs)를 **감시**할 수도 있습니다. 이 메서드는 많은 알림을 생성합니다. 또한 Microsoft에서 사용하는 개인 리포지토리의 변경은 포함하지 않습니다.  
+> GitHub에서 [SCCMdocs 리포지토리](https://github.com/MicrosoftDocs/SCCMdocs)를 **감시**할 수도 있습니다. 이 메서드는 많은 알림을 생성합니다. 또한 Microsoft에서 사용하는 프라이빗 리포지토리의 변경은 포함하지 않습니다.  
 
 
 

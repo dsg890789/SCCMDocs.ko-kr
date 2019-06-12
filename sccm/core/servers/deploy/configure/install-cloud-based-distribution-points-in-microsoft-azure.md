@@ -255,7 +255,7 @@ Configuration Manager 콘솔의 **관리** 작업 영역의 **Cloud Services**�
 - 클래식 배포 메서드에서 Azure Resource Manager
 - 구독
 - 서비스 이름
-- 개인에서 공개 PKI
+- 프라이빗에서 퍼블릭 PKI
 - Azure 지역
 
 1806 버전부터는 클래식 배포 메서드에서 기존 클라우드 배포 지점이 설치되어 있는 경우 Azure Resource Manager 배포 메서드를 사용하려면 새 클라우드 배포 지점을 배포해야 합니다. 두 가지 옵션 중에서 선택할 수 있습니다.

@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1015573d62bdbbd317b9f787071e7725e5d4362
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.openlocfilehash: c7932609d9a52968a3c610fd9c5a00326cced8d5
+ms.sourcegitcommit: 9c02c00c4061ab17beb3bc1cc895b533f3b55bc4
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66176126"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501713"
 ---
 # <a name="create-a-task-sequence-to-upgrade-an-os-in-configuration-manager"></a>Configuration Manager에서 OS를 업그레이드하는 작업 순서 만들기
 
@@ -147,7 +147,7 @@ Configuration Manager에서 작업 순서를 사용하여 대상 컴퓨터의 OS
 
 - **배터리 확인**: 컴퓨터에서 배터리를 사용하는지 또는 유선 전원을 사용하는지를 확인하려면 이 그룹의 단계를 추가합니다. 이 작업에서 배터리 확인을 수행하려면 사용자 지정 스크립트 또는 유틸리티가 필요합니다. 예를 들어, WbemTest를 사용하여 `root\cimv2` 네임스페이스에 연결합니다. 연결한 후에는 `Select Batterystatus From Win32_Battery where batterystatus != 2` 쿼리를 실행합니다. 결과를 반환하지 않는 경우, 디바이스가 배터리로 작동합니다. 그렇지 않으면, 디바이스가 전원에 연결된 것입니다.  
 
-- **네트워크/유선 연결 확인**: 컴퓨터가 네트워크에 연결되어 있고 무선 연결을 사용하고 있지 않은지 확인하려면 이 그룹의 단계를 추가합니다. 이 작업에서 배터리 확인을 수행하려면 사용자 지정 스크립트 또는 유틸리티가 필요합니다.  
+- **네트워크/유선 연결 확인**: 컴퓨터가 네트워크에 연결되어 있고 무선 연결을 사용하고 있지 않은지 확인하려면 이 그룹의 단계를 추가합니다. 이 작업에서 배터리 확인을 수행하려면 사용자 지정 스크립트 또는 유틸리티가 필요합니다.  예를 들어, WbemTest를 사용하여 `root\cimv2` 네임스페이스에 연결합니다. 연결한 후에는 `Select * From Win32_NetworkAdapter Where NetConnectionStatus = 2 and PhysicalAdapter = 'True' and NetConnectionID = 'Wi-Fi'` 쿼리를 실행합니다. 결과를 반환하지 않는 경우, 디바이스가 Wi-Fi로 작동합니다. 그렇지 않으면 디바이스는 유선 네트워크 연결에 연결됩니다.
 
 - **호환되지 않는 애플리케이션 제거**: 이 Windows 10 버전과 호환되지 않는 애플리케이션을 제거하려면 이 그룹의 단계를 추가합니다. 애플리케이션을 제거하는 방법은 다양합니다.  
 

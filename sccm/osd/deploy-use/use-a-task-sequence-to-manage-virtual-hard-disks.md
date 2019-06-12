@@ -102,7 +102,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
 
     -   운영 체제 이미지를 배포할 때 사용되는 관리자 계정을 처리하는 방법을 지정합니다.  
 
-        -   **로컬 관리자 암호를 임의로 생성하고 지원되는 모든 플랫폼에서 계정 사용 안 함(권장)**: 마법사에서 로컬 관리자 계정에 대한 암호를 임의로 만들게 한 후 운영 체제 이미지 배포가 완료되면 해당 계정을 사용하지 않도록 설정하려면 이 옵션을 사용합니다.  
+        -   **로컬 관리자 암호를 임의로 생성하고 지원되는 모든 플랫폼에서 계정 사용 안 함(권장)** : 마법사에서 로컬 관리자 계정에 대한 암호를 임의로 만들게 한 후 운영 체제 이미지 배포가 완료되면 해당 계정을 사용하지 않도록 설정하려면 이 옵션을 사용합니다.  
 
         -   **계정을 사용하고 로컬 관리자 암호 지정**: 운영 체제 이미지를 배포하는 모든 컴퓨터의 로컬 관리자 계정에 특정 암호를 사용하려면 이 옵션을 사용합니다.  
 
@@ -171,7 +171,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
 8. 설정을 확인한 후 **다음**을 클릭합니다. 마법사에서 VHD를 만듭니다.  
 
    > [!TIP]
-   >  VHD를 만드는 프로세스 완료 시간은 경우에 따라 다를 수 있습니다. 이 프로세스가 진행되는 동안 다음 로그 파일을 모니터링하여 진행률을 추적할 수 있습니다. 기본적으로 로그는 Configuration Manager 콘솔을 실행하는 컴퓨터의 %*ProgramFiles(x86)*%\Microsoft Configuration Manager\AdminConsole\AdminUILog에 있습니다.  
+   >  VHD를 만드는 프로세스 완료 시간은 경우에 따라 다를 수 있습니다. 이 프로세스가 진행되는 동안 다음 로그 파일을 모니터링하여 진행률을 추적할 수 있습니다. 기본적으로 로그는 Configuration Manager 콘솔을 실행하는 컴퓨터의 %*ProgramFiles(x86)* %\Microsoft Configuration Manager\AdminConsole\AdminUILog에 있습니다.  
    > 
    > - **CreateTSMedia.log**: 마법사에서 작업 순서 미디어가 생성되는 동안 이 로그에 정보가 기록됩니다. 이 로그 파일을 검토하여 독립 실행형 미디어를 만드는 작업의 진행률을 추적할 수 있습니다.  
    >   -   **DeployToVHD.log**: 마법사에서 VHD가 생성되는 프로세스를 거치는 동안 이 로그에 정보가 기록됩니다. 이 로그 파일을 검토하여 독립 실행형 미디어를 만든 후 모든 마법사 단계의 진행률을 추적할 수 있습니다.  
@@ -263,7 +263,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
 8. 설정을 확인한 후 **다음**을 클릭합니다. 마법사에서 수정된 VHD를 만듭니다.  
 
    > [!TIP]
-   >  VHD를 수정하는 프로세스 완료 시간은 경우에 따라 다를 수 있습니다. 이 프로세스가 진행되는 동안 다음 로그 파일을 모니터링하여 진행률을 추적할 수 있습니다. 기본적으로 로그는 Configuration Manager 콘솔을 실행하는 컴퓨터의 %*ProgramFiles(x86)*%\Microsoft Configuration Manager\AdminConsole\AdminUILog에 있습니다.  
+   >  VHD를 수정하는 프로세스 완료 시간은 경우에 따라 다를 수 있습니다. 이 프로세스가 진행되는 동안 다음 로그 파일을 모니터링하여 진행률을 추적할 수 있습니다. 기본적으로 로그는 Configuration Manager 콘솔을 실행하는 컴퓨터의 %*ProgramFiles(x86)* %\Microsoft Configuration Manager\AdminConsole\AdminUILog에 있습니다.  
    > 
    > - **CreateTSMedia.log**: 마법사에서 작업 순서 미디어가 생성되는 동안 이 로그에 정보가 기록됩니다. 이 로그 파일을 검토하여 독립 실행형 미디어를 만드는 작업의 진행률을 추적할 수 있습니다.  
    >   -   **DeployToVHD.log**: 마법사에서 VHD를 수정하는 프로세스를 거치는 동안 이 로그에 정보가 기록됩니다. 이 로그 파일을 검토하여 독립 실행형 미디어를 만든 후 모든 마법사 단계의 진행률을 추적할 수 있습니다.  
@@ -305,7 +305,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
 8.  **완료** 페이지에서 소프트웨어 업데이트가 운영 체제 이미지에 성공적으로 적용되었는지 확인합니다.  
 
 ##  <a name="BKMK_ImportToVMM"></a> System Center Virtual Machine Manager로 VHD 가져오기  
- System Center VMM은 가상화된 데이터 센터를 위한 관리 솔루션으로, 생성된 사설 클라우드에 가상 컴퓨터와 서비스를 만들고 배포하기 위해 VMM을 사용하여 가상화 호스트, 네트워킹, 스토리지 리소스 등을 구성 및 관리할 수 있습니다. Configuration Manager에서 VHD를 만든 후 VMM을 사용하여 VHD를 가져오고 관리할 수 있습니다.  
+ System Center VMM은 가상화된 데이터 센터를 위한 관리 솔루션으로, 생성된 프라이빗 클라우드에 가상 컴퓨터와 서비스를 만들고 배포하기 위해 VMM을 사용하여 가상화 호스트, 네트워킹, 스토리지 리소스 등을 구성 및 관리할 수 있습니다. Configuration Manager에서 VHD를 만든 후 VMM을 사용하여 VHD를 가져오고 관리할 수 있습니다.  
 
 > [!TIP]  
 >  VHD를 VMM에 업로드하기 전에 VMM 콘솔이 VMM 관리 서버에 성공적으로 연결되었는지 확인합니다.  

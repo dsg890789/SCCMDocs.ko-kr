@@ -2,7 +2,7 @@
 title: 애플리케이션 배포
 titleSuffix: Configuration Manager
 description: 디바이스 또는 사용자 컬렉션에 응용 프로그램의 배포를 만들거나 시뮬레이션합니다.
-ms.date: 05/01/2019
+ms.date: 06/04/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-app
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7550987d9b9679085ad5b546274d0c503b9e28ac
-ms.sourcegitcommit: 3f43fa8462bf39b2c18b90a11a384d199c2822d8
+ms.openlocfilehash: 5760b36ddb29c39d6887afb61445f1353f46bbec
+ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66403395"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715684"
 ---
 # <a name="deploy-applications-with-configuration-manager"></a>Configuration Manager에서 애플리케이션 배포
 
@@ -161,6 +161,12 @@ Configuration Manager의 버전에 따라 다음 승인 설정 중 하나가 나
 
 최종 기한 후, 클라이언트는 해당 유예 기간까지 사용자가 구성한 첫 번째 업무 외 시간에 애플리케이션을 설치합니다. 단, 사용자는 언제든지 소프트웨어 센터를 열고 원하는 애플리케이션을 설치할 수 있습니다. 유예 기간이 만료되면 지연 배포에 대한 일반적인 동작이 적용됩니다.
 
+![유예 기간 타임라인의 다이어그램](media/grace-period.svg)
+
+<!-- SCCMDocs issue #1599 -->
+
+> [!Note]  
+> 대부분의 경우 이 기능은 사용자가 사무실에 없는 동안 디바이스의 전원이 꺼져 있는 시나리오를 해결합니다. 기술적으로 유예 기간은 배포 마감 후 클라이언트가 정책을 받을 때 시작됩니다. CcmExec(Configuration Manager 클라이언트 서비스)을 중지한 다음 배포 마감일 후 언제든지 다시 시작하는 경우에도 동일한 동작이 발생합니다.
 
 ### <a name="bkmk_deploy-ux"></a> **사용자 환경** 배포 설정
 
@@ -310,6 +316,6 @@ Configuration Manager의 버전에 따라 다음 승인 설정 중 하나가 나
 ## <a name="next-steps"></a>다음 단계
 
 - [애플리케이션 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)
-- [응용 프로그램 배포 문제 해결](/sccm/apps/deploy-use/troubleshoot-application-deployment)
+- [애플리케이션 배포 문제 해결](/sccm/apps/deploy-use/troubleshoot-application-deployment)
 - [애플리케이션에 대한 관리 작업](/sccm/apps/deploy-use/management-tasks-applications)
 - [소프트웨어 센터 사용자 가이드](/sccm/core/understand/software-center)

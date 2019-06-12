@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e0b8e6a522e367e17d6c13fad3896a6606d3e5c
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.openlocfilehash: 4a8f1ca1484df0480a7923a8d3de64c1670aec6d
+ms.sourcegitcommit: a6a6507e01d819217208cfcea483ce9a2744583d
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66176078"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66748192"
 ---
 # <a name="troubleshooting-windows-defender-or-endpoint-protection-client"></a>Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결
 
@@ -149,16 +149,12 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 
 ### <a name="step-6-manually-install-the-virus-and-spyware-definition-updates"></a>6단계: 바이러스 및 스파이웨어 정의 업데이트를 수동으로 설치  
 
--   32비트 Windows 운영 체제를 실행하는 경우 최신 업데이트를 [http://go.microsoft.com/fwlink/?LinkID=87342](http://go.microsoft.com/fwlink/?LinkID=87342)(http://go.microsoft.com/fwlink/?LinkID=87342)에서 수동으로 다운로드합니다.  
-
--   64비트 Windows 운영 체제를 실행하는 경우 최신 업데이트 [http://go.microsoft.com/fwlink/?LinkID=87341](http://go.microsoft.com/fwlink/?LinkID=87341)(http://go.microsoft.com/fwlink/?LinkID=87341)에서 수동으로 다운로드합니다.  
-
--   **실행**을 클릭합니다. 최신 업데이트가 수동으로 컴퓨터에 설치됩니다.  
+-   [최신 업데이트를 수동으로 다운로드](https://www.microsoft.com/wdsi/definitions/)하세요.  
 
 
 ### <a name="step-7-contact-support"></a>7단계: 지원 사이트에 문의  
 
--   해당 단계로 문제가 해결되지 않으면 지원 서비스에 문의합니다. 자세한 내용은 [고객 지원](https://support.microsoft.com/contactus/)(을 참조합니다.  
+-   해당 단계로 문제가 해결되지 않으면 지원 서비스에 문의합니다. 자세한 내용은 [고객 지원](https://support.microsoft.com/contactus/)을 참조하세요.  
 
 ##  <a name="starting-windows-defender-or-endpoint-protection-service"></a>Windows Defender 또는 Endpoint Protection 서비스 시작  
  **증상**  
@@ -196,9 +192,7 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 >  일부 인터넷 보안 애플리케이션은 완전히 제거되지 않습니다. 정리 유틸리티를 다운로드하여 실행하면 기존 보안 애플리케이션을 완전히 제거할 수 있습니다.  
 
 > [!CAUTION]  
->  인터넷 보안 프로그램을 제거하면 컴퓨터는 비보호 상태가 됩니다. 기존 인터넷 보안 프로그램을 제거한 후 Endpoint Protection을 설치하는 데 문제가 있는 경우   
->       온라인으로 사례를 제출하여 Windows Defender 또는  
->       Endpoint Protection 지원 담당자에게 문의하세요(자세한 내용은 [온라인으로 사례를 제출하는 방법](http://www.microsoft.com/en-ph/security_essentials/Support/8c9074b6-1558-4d14-bc39-d294ced11096.aspx) 참조).  
+> 보안 프로그램을 제거하면 컴퓨터는 비보호 상태가 됩니다. 기존 보안 프로그램을 제거한 후 Windows Defender를 설치하는 데 문제가 있으면 **보안** 제품군의 **Windows Defender**에 대해 [Microsoft 지원](https://support.microsoft.com/supportforbusiness/productselection)에 문의하세요.  
 
 ### <a name="step-4-uninstallreinstall-endpoint-protection"></a>4단계: Endpoint Protection 제거/다시 설치  
 

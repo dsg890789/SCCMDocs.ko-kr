@@ -53,7 +53,7 @@ ms.locfileid: "65499079"
 
 - **테넌트**: 구성할 수 있는 서비스 인스턴스 수. 각 인스턴스는 서로 다른 Azure 테넌트여야 합니다.  
 
-- **클라우드**: 모든 서비스가 전역 Azure 클라우드를 지원하지만, 일부 서비스는 Azure 미국 정부 클라우드 같은 사설 클라우드를 지원하지 않습니다.  
+- **클라우드**: 모든 서비스가 전역 Azure 클라우드를 지원하지만, 일부 서비스는 Azure 미국 정부 클라우드 같은 프라이빗 클라우드를 지원하지 않습니다.  
 
 - **웹앱**: 서비스에서 *웹앱/API* 형식의 Azure AD 앱을 사용하는지 여부를 나타내며, Configuration Manager에서는 서버 앱이라고도 합니다.  
 
@@ -64,8 +64,8 @@ ms.locfileid: "65499079"
 
 |서비스  |테넌트  |클라우드  |웹앱  |네이티브 앱  |작업  |
 |---------|---------|---------|---------|---------|---------|
-|클라우드 관리 수단<br>Azure AD 사용자 검색 | 여러 개 | 공용, 사설 | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | 가져오기, 만들기 |
-|Log Analytics 커넥터 | 하나 | 공용, 사설 | ![지원됨](media/green_check.png) | ![지원되지 않음](media/Red_X.png) | 가져오기 |
+|클라우드 관리 수단<br>Azure AD 사용자 검색 | 여러 개 | 퍼블릭, 프라이빗 | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | 가져오기, 만들기 |
+|Log Analytics 커넥터 | 하나 | 퍼블릭, 프라이빗 | ![지원됨](media/green_check.png) | ![지원되지 않음](media/Red_X.png) | 가져오기 |
 |업그레이드 준비 | 하나 | 공용 | ![지원됨](media/green_check.png) | ![지원되지 않음](media/Red_X.png) | 가져오기 |
 |비즈니스 및 교육용<br>비즈니스 | 하나 | 공용 | ![지원됨](media/green_check.png) | ![지원되지 않음](media/Red_X.png) | 가져오기, 만들기 |
 
