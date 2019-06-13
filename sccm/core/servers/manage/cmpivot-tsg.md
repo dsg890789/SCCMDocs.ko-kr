@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac95cf355c2b3b97d479f5e3557c1ba74e89977f
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
+ms.openlocfilehash: 8cada39ac2514b6e2c7a6dabbbc54e7585ee7c9b
+ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59802702"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66716028"
 ---
 # <a name="troubleshooting-cmpivot"></a>CMPivot 문제 해결
 
@@ -78,6 +78,9 @@ StateMessage body: <?xml version="1.0" encoding="UTF-16"?>
 StateMessage 7/3/2018 11:44:47 AM 5036 (0x13AC)
 Successfully forwarded State Messages to the MP StateMessage 7/3/2018 11:44:47 AM 5036 (0x13AC)
 ```
+
+> [!NOTE]
+> StateSys.log에 포함된 위의 로그 항목은 이 레지스트리 키를 수정하여 수행할 수 있는 SMS_STATE_SYSTEM 구성 요소에 대해 자세한 정보 로깅을 사용하도록 설정하는 경우에만 표시됩니다. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SMS\COMPONENTS\SMS_STATE_SYSTEM\Verbose logging = 1(기본값 0)
 
 ## <a name="review-messages-on-the-site-server"></a>사이트 서버에서 메시지 검토
 

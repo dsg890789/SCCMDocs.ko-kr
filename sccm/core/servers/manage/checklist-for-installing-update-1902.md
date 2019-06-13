@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 801a4819e4bfc9c0f18b87915ea0969b0aa60dc3
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: ceb7f7156c505e73db3fba0d02d60ec044958846
+ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65497870"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66716121"
 ---
 # <a name="checklist-for-installing-update-1902-for-configuration-manager"></a>Configuration Manager용 업데이트 1902를 설치하기 위한 검사 목록
 
@@ -32,7 +32,7 @@ Configuration Manager의 현재 분기를 사용하는 경우 버전 1902용 콘
 
     -   dmpdownloader.log는 dmpdownloader 프로세스가 업데이트를 확인하기 전에 간격을 기다리고 있음을 나타낼 수 있습니다. 업데이트 재배포 파일의 다운로드를 다시 시작하기 위해 사이트 서버에서 **SMS_Executive** 서비스를 다시 시작합니다.
 
-    -   프록시 서버 설정이 http://silverlight.dlservice.microsoft.com, http://download.microsoft.com 및/또는 http://go.microsoft.com에서 다운로드하지 않도록 방지하는 경우 또 다른 일반적인 다운로드 문제가 발생합니다.
+    -   프록시 서버 설정이 http://silverlight.dlservice.microsoft.com , http://download.microsoft.com 및/또는 http://go.microsoft.com 에서 다운로드하지 않도록 방지하는 경우 또 다른 일반적인 다운로드 문제가 발생합니다.
 
 업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 및 서비스](/sccm/core/servers/manage/updates#a-namebkmkinconsolea-in-console-updates-and-servicing)를 참조하세요.
 
@@ -130,7 +130,7 @@ Configuration Manager에서 관리 지점에 대한 데이터베이스 복제본
 자세한 내용은  [유지 관리 작업](/sccm/core/servers/manage/maintenance-tasks) 및 [유지 관리 작업에 대한 참조](/sccm/core/servers/manage/reference-for-maintenance-tasks)를 참조하세요.
 
 #### <a name="temporarily-stop-any-antivirus-software"></a>바이러스 백신 소프트웨어를 일시적으로 중지 
-사이트를 업데이트하기 전에 Configuration Manager 서버에서 바이러스 백신 소프트웨어를 중지합니다. <!--SMS.503481--> 
+사이트를 업데이트하기 전에 Configuration Manager 서버에서 바이러스 백신 소프트웨어를 중지합니다. 바이러스 백신 소프트웨어는 업데이트해야 하는 일부 파일을 잠그므로 업데이트가 실패할 수 있습니다. <!--SMS.503481--> 
 
 #### <a name="create-a-backup-of-the-site-database"></a>사이트 데이터베이스의 백업 만들기 
 사이트를 업데이트하기 전에 중앙 관리 사이트 및 기본 사이트에서 사이트 데이터베이스를 백업합니다. 이 백업은 재해 복구에 사용할 성공적인 백업이 있는지 확인합니다.

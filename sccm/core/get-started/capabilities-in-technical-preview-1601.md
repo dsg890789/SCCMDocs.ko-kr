@@ -12,12 +12,12 @@ ROBOTS: NOINDEX
 manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fa96b497ce942430c5a8391eefd41e939c634ae3
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: be84e7bfae54cf3099b588cce35b01a424c45b8f
+ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56143676"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66716010"
 ---
 # <a name="capabilities-in-technical-preview-1601-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1601의 기능
 
@@ -93,7 +93,7 @@ ms.locfileid: "56143676"
 
 -   **상태 증명 서비스를 사용하는 조건부 액세스** 이제 상태 증명 서비스에서 보고되는 디바이스의 상태를 기준으로, 메일 및 0365 서비스에 대한 액세스를 제한할 수 있습니다.  또한 Intune에서 관리되는 디바이스는 디바이스 상태 보고서에 포함됩니다.  
 
-    상태에 따라 디바이스의 액세스가 허용 또는 차단되어야 하는지를 지정할 수 있는 새 준수 규칙이 Configuration Manager 콘솔에 추가되었습니다.  이 규칙을 만들려면 **준수 정책 만들기 마법사**를 열고 새 규칙을 추가합니다.  상태에 대해 **상태 증명 서비스에서 정상으로 보고됨**을 선택하고 해당 값을 **True**로 설정합니다.  이렇게 하면 정상으로 보고되는 디바이스만 회사 리소스에 액세스할 수 있습니다. 상태 증명 서비스 및 Intune에서 디바이스 상태가 보고되는 방법에 대한 자세한 내용은 [디바이스 상태 증명](#bkmk_devicehealth)을 참조하세요.  
+    상태에 따라 디바이스의 액세스가 허용 또는 차단되어야 하는지를 지정할 수 있는 새 준수 규칙이 Configuration Manager 콘솔에 추가되었습니다.  이 규칙을 만들려면 **준수 정책 만들기 마법사**를 열고 새 규칙을 추가합니다.  상태에 대해 **상태 증명 서비스에서 정상으로 보고됨**을 선택하고 해당 값을 **True**로 설정합니다.  이렇게 하면 정상으로 보고되는 디바이스만 회사 리소스에 액세스할 수 있습니다. 상태 증명 서비스 및 Intune에서 디바이스 상태가 보고되는 방법에 대한 자세한 내용은 [디바이스 상태 증명](/sccm/core/get-started/capabilities-in-technical-preview-1512#bkmk_devicehealth)을 참조하세요.  
 
 -   **새 규정 준수 정책 설정:** 새 규정 준수 정책 설정은 회사 메일 및 SharePoint Services에 액세스하는 데 사용되는 디바이스에 대해 보안 및 보호를 향상시킬 수 있습니다.  
 

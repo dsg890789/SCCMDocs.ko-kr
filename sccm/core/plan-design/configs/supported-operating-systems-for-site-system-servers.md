@@ -2,7 +2,7 @@
 title: 지원되는 사이트 시스템 서버
 titleSuffix: Configuration Manager
 description: Configuration Manager 사이트 또는 사이트 시스템 역할을 호스트하는 데 사용할 수 있는 Windows 버전을 알아봅니다.
-ms.date: 04/16/2019
+ms.date: 05/28/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e505562ac8a0d34f1b58bd0b6210b4630a6c825
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 871f007bd1ee0e38635e03a6b17a9125758553af
+ms.sourcegitcommit: 65e9b30e2b53ab9db679a7b1d50634a73c0028db
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65499320"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66429799"
 ---
 # <a name="supported-operating-systems-for-configuration-manager-site-system-servers"></a>Configuration Manager 사이트 시스템 서버에 대해 지원되는 운영 체제
 
@@ -213,6 +213,8 @@ OS는 배포 지점 및 풀(pull) 배포 지점을 제외하고, 사이트 서�
 
     -   이 OS 버전의 배포 지점은 EFI 모드의 클라이언트 컴퓨터 네트워크 부팅을 지원하지 않습니다. 레거시 모드에서 EFI 부팅 또는 BIOS를 사용하는 클라이언트 컴퓨터는 지원됩니다.  
 
+> [!Warning]  
+> Windows Server 2008은 TLS 1.2를 지원하지 않습니다. 사용자 환경에서 이 프로토콜을 사용하도록 설정하면 Windows Server 2008 컴퓨터는 더 이상 해당 사이트와 통신하지 않습니다. 자세한 내용은 [Configuration Manager에서 TLS 1.2를 사용하도록 설정하는 방법](/sccm/core/plan-design/security/enable-tls-1-2)을 참조하세요.  
 
 
 ## <a name="bkmk_client"></a> 클라이언트 OS 버전
