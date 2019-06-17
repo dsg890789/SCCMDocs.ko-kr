@@ -2,7 +2,7 @@
 title: 파일럿 배포 하는 방법
 titleSuffix: Configuration Manager
 description: 데스크톱 분석 파일럿 그룹에 배포 하기 위한 방법 가이드입니다.
-ms.date: 04/22/2019
+ms.date: 06/14/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d11e5eeb5e7a183c6b409fdbe58034ebe181898f
-ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.openlocfilehash: e18e2e43e9bb768f81233fb2d2deda0ae05c1961
+ms.sourcegitcommit: d47d2f03482e48d343e2139a341e61022331e6c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083163"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67145832"
 ---
 # <a name="how-to-deploy-to-pilot-with-desktop-analytics"></a>데스크톱 분석으로 파일럿 배포 하는 방법
 
@@ -29,16 +29,52 @@ ms.locfileid: "65083163"
 [!INCLUDE [Definition of pilot and production](includes/define-pilot-prod.md)]
 
 
+## <a name="identify-devices"></a>장치 식별
+
+첫 번째 단계는 파일럿에 포함 장치를 식별 하는 것입니다. 데스크톱 Analytics 권장 보고 데이터를 기반으로 하는 장치 및 포함 하거나이 목록에 장치를 바꿀 수 있습니다.
+
+1. 로 이동 합니다 [데스크톱 Analytics 포털](https://aka.ms/desktopanalytics), 및 관리 그룹 선택 **배포 계획**합니다.
+
+1. 배포 계획을 선택 합니다.
+
+1. 배포 계획 메뉴의 준비 그룹에서 선택 **식별 파일럿**합니다.
+
+최상의 검사를 위해 포함할 것을 권장 하는 장치의 수를 보여 주는 데스크톱 Analytics의 데이터를 볼 수 있습니다. 이 알고리즘은 주로 중요 하 고 중요 한 앱의 사용 및 다양 한 하드웨어 구성에 기반 합니다.
+
+추가 권장 되는 장치 목록에 대 한 다음 작업을 수행 합니다.
+
+- **파일럿에 모두 추가**: 파일럿 그룹에 추가 하는 모든 권장 되는 장치
+- **파일럿 추가할**: 개별 장치를 추가
+- **대체** 파일럿에서 특정 장치
+- **다시 계산** 변경 작업이 완료 되는 경우
+
+또한 파일럿에서 제외 되거나 포함 하는 Configuration Manager 컬렉션에 대 한 시스템 수준 결정을 내릴 수 있습니다. 전역 설정 그룹의 주 데스크톱 분석 메뉴에서 선택 **전역 파일럿**합니다.
+
+### <a name="example"></a>예
+
+- 대상에 데스크톱 Analytics 연결 Configuration Manager에서 구성 합니다 **모든 시스템** 컬렉션입니다. 이 작업에는 모든 클라이언트가 서비스에 등록합니다.
+- 데스크톱 Analytics와 동기화 할 추가 컬렉션을 구성할 수도 있습니다.
+    - 모든 Windows 10 클라이언트
+    - 모든 IT 장치
+    - CEO office
+- 에 **전역 파일럿** 설정을 포함 하는 **모든 IT 장치** 컬렉션입니다. 제외 된 **CEO office** 컬렉션입니다.
+- 배포 계획을 만들고 선택 하 여 **모든 Windows 10 클라이언트** 컬렉션입니다.
+- 프로그램 **포함 된 장치를 파일럿 실행** 목록 다음 장치 집합을 포함 합니다.
+    - 전역 파일럿 포함 목록의 모든 장치: **모든 IT 장치**
+    - 또한 배포 계획 대상 그룹의 일부인 컬렉션: **모든 Windows 10 클라이언트**
+- 데스크톱 분석에서 제외 합니다 **장치를 추가 권장** 전역 파일럿에 모든 장치를 나열 *제외* 목록: **CEO office**
+- 처음 두 개의 컬렉션만 파일럿의 일부로 간주 됩니다. 해당 그룹 및 자산을 성공적으로 업그레이드 되 면 *준비*, 데스크톱 Analytics에 연결 된 장치를 동기화 합니다 **CEO office** Configuration Manager 프로덕션 컬렉션에 컬렉션입니다.
+
 
 ## <a name="address-issues"></a>문제를 해결
 
 배포를 차단할 수 있는 자산을 사용 하 여 보고 된 문제를 검토 하려면 데스크톱 분석 포털을 사용 합니다. 그런 다음 승인, 거부 또는 제안 된 수정 프로그램을 수정 합니다. 모든 항목이 표시 되어야 합니다 **준비** 또는 **준비가 완료 되었습니다 (재구성)** 파일럿 배포를 시작 하기 전에 합니다.
 
-1. 선택한 데스크톱 Analytics 포털로 이동 **배포 계획** 관리 그룹에 있습니다.  
+1. 로 이동 합니다 [데스크톱 Analytics 포털](https://aka.ms/desktopanalytics), 및 관리 그룹 선택 **배포 계획**합니다.  
 
-2. 해당 이름을 선택 하 여 배포 계획을 엽니다.  
+2. 배포 계획을 선택 합니다.  
 
-3. 선택 **준비 파일럿** 준비 그룹의 배포 계획 합니다.  
+3. 배포 계획 메뉴의 준비 그룹에서 선택 **준비 파일럿**합니다.  
 
 4. 에 **앱** 탭에서 입력을 필요로 하는 앱을 검토 합니다.  
 
@@ -47,47 +83,77 @@ ms.locfileid: "65083163"
 6. 다른 자산에 대 한이 검토를 반복 합니다.  
 
 
-
 ## <a name="create-software"></a>소프트웨어 만들기
 
 Windows를 배포 하기 전에 Configuration Manager에서 만드는 소프트웨어 개체 우선 합니다. 자세한 내용은 [Windows 10 현재 위치 업그레이드 작업 순서](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)합니다.
 
 
-
 ## <a name="deploy-to-pilot-devices"></a>파일럿 장치에 배포
 
-Configuration Manager 데스크톱 Analytics에서 데이터를 사용 하 여 파일럿 배포를 위해 컬렉션을 만듭니다. 기존 배포를 사용 하 여 작업 순서를 배포 하지 마세요. 데스크톱 Analytics 통합 배포를 만들려면 다음 절차를 사용 합니다.
+Configuration Manager는 파일럿 및 프로덕션 배포에 대 한 컬렉션을 만드는 데스크톱 Analytics에서 데이터를 사용 합니다. 각 배포 단계 후 장치 정상 되었는지 확인 합니다 데스크톱 Analytics 통합 단계적된 배포를 만들려면 다음 절차를 사용 합니다.
 
 1. Configuration Manager 콘솔에서로 이동 합니다 **소프트웨어 라이브러리**, 확장 **데스크톱 분석 서비스**, 선택는 **배포 계획** 노드.  
 
 2. 배포 계획을 선택한 후 **배포 계획 세부 정보** 리본 메뉴에 있습니다.  
 
-3. 에 **상태를 파일럿** 타일을 선택 **작업 순서** 드롭 다운 목록에서.  
+3. 선택 **단계적 배포 만들기** 리본 메뉴에 있습니다. 이 작업에는 단계적 배포 만들기 마법사를 시작합니다.
+
+    > [!Tip]  
+    > 파일럿 컬렉션만 클래식 작업 순서 배포를 만들려는 경우 선택 **배포** 에 **상태를 파일럿 실행** 바둑판식으로 배열 합니다. 이 작업은 소프트웨어 배포 마법사를 시작 합니다. 자세한 내용은 [Deploy a task sequence](/sccm/osd/deploy-use/deploy-a-task-sequence)항목을 참조하세요.  
+
+4. 배포에 대 한 이름을 입력 하 고 사용 하는 작업 순서를 선택 합니다. 옵션을 사용 **자동으로 기본 두 단계 배포 만들기**, 다음 컬렉션을 구성 합니다.  
+
+    - **첫 번째 컬렉션**: 찾기 및 선택 합니다 **파일럿** 이 배포 계획에 대 한 컬렉션입니다. 이 컬렉션에 대 한 표준 명명 규칙은 `<deployment plan name> (Pilot)`합니다.
+
+    - **컬렉션의 두 번째**: 찾기 및 선택 합니다 **프로덕션** 이 배포 계획에 대 한 컬렉션입니다. 이 컬렉션에 대 한 표준 명명 규칙은 `<deployment plan name> (Production)`합니다.
 
     > [!Note]  
-    > 사용 하지 않는 합니다 **응용 프로그램** 옵션입니다. 향후 기능에 대해 예약 됩니다.
-
-    선택 **배포**합니다. 이 작업은 선택한 개체 형식에 대 한 소프트웨어 배포 마법사를 시작 합니다.
-
-    > [!Note]  
-    > 데스크톱 분석 통합을 사용 하 여 Configuration Manager는 자동으로 파일럿 배포 계획에 대 한 컬렉션을 만듭니다. 사용 하기 전에 동기화를이 컬렉션에 대 일 분 정도 걸릴 수 있습니다.<!-- 3887891 -->
+    > 데스크톱 분석 통합을 사용 하 여 Configuration Manager 배포 계획에 대 한 파일럿 및 프로덕션 컬렉션을 자동으로 만듭니다. 이러한 컬렉션을 사용 하기 전에 동기화에 대 일 분 정도 걸릴 수 있습니다.<!-- 3887891 -->
     >
-    > 이 컬렉션은 데스크톱 Analytics 배포 계획 장치에 대 한 예약 되어 있습니다. 이 컬렉션에 수동으로 변경한 내용은 지원 되지 않습니다.<!-- 3866460, SCCMDocs-pr 3544 -->  
+    > 이러한 컬렉션은 데스크톱 Analytics 배포 계획 장치에 대 한 예약 되어 있습니다. 이러한 컬렉션에 수동으로 변경한 내용은 지원 되지 않습니다.<!-- 3866460, SCCMDocs-pr 3544 -->  
 
-자세한 내용은 [Deploy a task sequence](/sccm/osd/deploy-use/deploy-a-task-sequence)항목을 참조하세요.
+5. 단계적된 배포 구성 마법사를 완료 합니다. 자세한 내용은 [단계적 배포 만들기](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence)를 참조하세요.
 
+    > [!Note]  
+    > 기본 설정을 사용 하 여 **는 지연 기간 (일) 후에이 단계를 자동으로 시작**합니다. 시작 하려면 두 번째 단계는 다음 조건은 충족 되어야 합니다.
+    >
+    > 1. 파일럿 장치 업그레이드 보내고 백 진단 데이터를 수정 해야 합니다.
+    > 1. 첫 번째 단계에 도달 합니다 **배포 성공률** 성공 위한 조건입니다. 단계적된 배포에서이 설정을 구성.
+    > 1. 검토 하 고 데스크톱 중요 자산을 표시 하는 Analytics에서 업그레이드 결정을 내릴 필요가 *준비*합니다. 자세한 내용은 [업그레이드는 의사 결정을 해야 하는 자산을 검토](/sccm/desktop-analytics/deploy-prod#bkmk_review)합니다.
+    > 1. 데스크톱 분석 충족 하는 모든 프로덕션 장치를 Configuration Manager 컬렉션에 동기화 합니다 *준비* 조건입니다.
+    >
+    > Configuration Manager 단계적 배포는 자동으로 다음 단계로 이동 되 면 데스크톱 분석 프로덕션 컬렉션에 동기화 하는 장치에만 적용 됩니다.
+
+> [!Important]  
+> 이러한 컬렉션의 멤버 자격 변경으로 동기화 계속 합니다. 예를 들어, 자산을 사용 하 여 문제를 식별 하 고로 표시 **없습니다**, 해당 자산을 사용 하 여 장치에서 더 이상 충족 합니다 *준비* 조건. 이러한 장치는 프로덕션 배포 컬렉션에서 삭제 됩니다.
 
 
 ## <a name="monitor"></a>모니터
 
 ### <a name="configuration-manager-console"></a>Configuration Manager 콘솔
 
-구성 관리자를 사용 하 여 배포를 동일한 다른 작업 순서 배포를 모니터링 합니다. 자세한 내용은 [모니터 OS 배포](/sccm/osd/deploy-use/monitor-operating-system-deployments)합니다.
+배포 계획을 엽니다. 합니다 **준비 업그레이드 결정-전체 상태** 타일 배포 계획에 대 한 상태 요약을 제공 합니다. 이 상태는 파일럿 및 프로덕션 컬렉션입니다. 장치는 다음 범주 중 하나에서 대체할 수 있습니다.
+
+- **최신**: 장치가이 배포 계획에 대 한 대상 Windows 버전으로 업그레이드
+
+- **업그레이드 완료 결정**: 다음 상태 중 하나입니다.
+    - 중요 한 자산을 사용 하 여 장치 **준비** 또는 **업데이트 관리를 사용 하 여 준비**
+    - 장치 상태가 **Blocked**를 **바꾸기 장치** 또는 **Reinstall 장치**
+
+- **검토 하지**: 중요 한 자산을 사용 하 여 장치 **를 검토 하지** 또는 **검토 중**
+
+장치 상태를 업데이트 합니다 **상태를 파일럿 실행** 하 고 **프로덕션 상태** 다음 작업을 사용 하 여 타일:
+
+- 호환성 평가에 변경
+- 대상 버전의 Windows 장치 업그레이드
+- 프로그램 배포 진행
+
+또한 다른 작업 순서 배포와 동일 하 게 모니터링 하는 Configuration Manager 배포를 사용할 수 있습니다. 자세한 내용은 [모니터 OS 배포](/sccm/osd/deploy-use/monitor-operating-system-deployments)합니다.
 
 
 ### <a name="desktop-analytics-portal"></a>데스크톱 Analytics 포털
 
-배포 계획의 상태를 보려면 바탕 화면 분석 포털을 사용 합니다. 배포 계획을 선택 하 고 선택한 **계획 개요**합니다.
+사용 하 여 합니다 [데스크톱 Analytics 포털](https://aka.ms/desktopanalytics) 배포 계획의 상태를 볼 수 있습니다. 배포 계획을 선택 하 고 선택한 **계획 개요**합니다.
 
 ![데스크톱 분석의 배포 계획 개요 스크린샷](media/deployment-plan-overview.png)
 
@@ -110,10 +176,9 @@ Configuration Manager 데스크톱 Analytics에서 데이터를 사용 하 여 �
 이러한 배포 문제를 해결 하는 대로 대시보드 계속 장치의 진행률을 표시 합니다. 장치에서 나가면서 업데이트 **주의 필요** 하 **완료**합니다.
 
 
-
 ## <a name="next-steps"></a>다음 단계
 
-운영 데이터를 수집 하는 기간에 대 한 파일럿 실행을 사용 수 있습니다. 파일럿 장치의 사용자가 앱을 테스트 하는 것이 좋습니다.
+운영 데이터를 수집 하는 동안 파일럿 실행을 사용 수 있습니다. 파일럿 장치의 사용자가 앱을 테스트 하는 것이 좋습니다.
 
 파일럿 배포 성공 조건을 만족 하는 경우 프로덕션에 배포 하려면 다음 문서로 이동 합니다.
 > [!div class="nextstepaction"]  

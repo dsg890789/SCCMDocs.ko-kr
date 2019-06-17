@@ -2,7 +2,7 @@
 title: 데스크톱의 분석 데이터 개인 정보 보호
 titleSuffix: Configuration Manager
 description: 데스크톱 Analytics 고객 데이터 개인 정보 보호에 커밋됩니다.
-ms.date: 01/25/2019
+ms.date: 06/13/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 370bfc26b8a7b6ca0223803a36e765528460d89f
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: fb109bc126902f4d68b876860e8d5ec3ff514bb8
+ms.sourcegitcommit: d47d2f03482e48d343e2139a341e61022331e6c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62258182"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67146027"
 ---
 # <a name="desktop-analytics-data-privacy"></a>데스크톱의 분석 데이터 개인 정보 보호
 
@@ -37,7 +37,7 @@ ms.locfileid: "62258182"
 
 다음 그림에서는 어떻게 진단 데이터를 표시 하 고 Log Analytics 작업 영역에 Azure Log Analytics 저장소에 진단 데이터 서비스를 통해 개별 장치에서 흐름:
 
-![장치에서 진단 데이터의 흐름을 보여 주는 다이어그램](media/da-data-flow-v1.png)
+![장치에서 진단 데이터의 흐름을 보여 주는 다이어그램](media/da-data-flow.png)
 
 1. Azure 포털 및 데스크톱 Analytics에 등록에 로그인 합니다. Configuration Manager를 연결 하려면 Azure AD 앱 만들기 데스크톱 Analytics를 설정 하는 경우 사용자가 선택한 위치에는 Azure Log Analytics 작업 영역을 만듭니다.  
 
@@ -49,38 +49,21 @@ ms.locfileid: "62258182"
 
     3. Configuration Manager는 대상 컬렉션의 상용 ID, 진단 데이터 수준 및 장치에 대 한 다른 설정을 설정합니다. 이 구성은 데스크톱 분석 작업 영역에 표시할 장치를 지정 합니다.  
 
-    4. 모든 대상 장치에 호환성 업데이트를 배포 합니다. 필요에 따라 앱 상태 분석기 및 Office Readiness Toolkit에 배포할 장치 집합을 표시 합니다. 사용자 지정 기간 업무 응용 프로그램 및 Office 매크로에서 이러한 도구 제공 insights 추가 합니다.  
+    4. 모든 대상 장치에 호환성 업데이트를 배포 합니다.  
 
-3. 장치는 Windows 및 Office에 대 한 Microsoft 진단 데이터 관리 서비스에 진단 데이터를 보냅니다. 이 서비스는 미국에서 호스트 됩니다.  
+3. 장치는 Windows에 대 한 Microsoft 진단 데이터 관리 서비스에 진단 데이터를 보냅니다. 이 서비스는 미국에서 호스트 됩니다.  
 
-4. 매일 Microsoft IT에 초점을 맞춘 insights의 스냅숏을 생성합니다. 이 스냅숏이 등록된 된 장치에 대 한 입력을 사용 하 여 Windows 및 Office에서 진단 데이터를 결합합니다. 이 프로세스는 데스크톱 분석에만 사용 되는 임시 저장소에 발생 합니다. 일시적인 저장소는 미국에서 Microsoft 데이터 센터에서 호스팅됩니다. 상용 id 스냅숏은 분리 됩니다.  
+4. 매일 Microsoft IT에 초점을 맞춘 insights의 스냅숏을 생성합니다. 이 스냅숏이 등록된 된 장치에 대 한 입력을 사용 하 여 Windows에서 진단 데이터를 결합합니다. 이 프로세스는 데스크톱 분석에만 사용 되는 임시 저장소에 발생 합니다. 일시적인 저장소는 미국에서 Microsoft 데이터 센터에서 호스팅됩니다. 상용 id 스냅숏은 분리 됩니다.  
 
 5. 스냅숏에 적절 한 Azure Log Analytics 작업 영역에 복사 됩니다.  
 
 6. 데스크톱 Analytics는 Azure Log Analytics 저장소에 입력을 저장합니다. 이러한 구성에는 배포 계획과 업그레이드 및 중요도 대 한 자산 결정 포함 됩니다.  
 
 
-<!-- ![Diagram illustrating flow of diagnostic data from devices](media/wa-data-flow-v1.png)
-
-1. Devices send diagnostic data to the Microsoft Diagnostic Data Management service. This service is hosted in the United States.  
-
-2. Set up and enrollment  
-
-    1. You create an Azure Log Analytics workspace when you set up Desktop Analytics. You choose the location and copy the commercial ID. This ID identifies your workspace.  
-    
-    2. When you connect Configuration Manager to Desktop Analytics, it sets the commercial ID on the devices in your target collection. This configuration specifies the devices to appear in your workspace.  
-
-3. Each day Microsoft produces a "snapshot" of IT-focused insights for each workspace in the Diagnostic Data Management service.  
-
-4. These snapshots are copied to transient storage, which is only used by Desktop Analytics. The transient storage is hosted in Microsoft data centers in the United States. The snapshots are segregated by commercial ID.  
-
-5. The snapshots are then copied to the appropriate Azure Log Analytics workspace.  
-
-6. Desktop Analytics stores your configurations in Analytics Azure storage. These configurations include deployment plans and asset upgrade decisions.  
--->
-
 
 ## <a name="other-resources"></a>관련 자료
+
+데스크톱 분석에 대 한 질문과 대답 개인 정보 관련 참조 [개인 정보 보호 FAQ](/sccm/desktop-analytics/faq#privacy)합니다.
 
 관련된 개인 정보 보호 측면에 대 한 자세한 내용은 다음 문서를 참조 하세요.
 
@@ -103,18 +86,3 @@ ms.locfileid: "62258182"
 - [신뢰할 수 있는 클라우드의 신뢰도](https://azure.microsoft.com/overview/trusted-cloud/)  
 
 - [보안 센터](https://www.microsoft.com/trustcenter)  
-
-
-
-## <a name="faq"></a>FAQ
-
-### <a name="can-desktop-analytics-be-used-without-a-direct-client-connection-to-the-microsoft-data-management-service"></a>Microsoft 데이터 관리 서비스에 직접 클라이언트 연결 없이 데스크톱 Analytics는 사용할 수 있습니까?
-아니요, 전체 서비스는 장치 되어이 직접 연결 해야 하는 진단 데이터를 Windows에서 구현 됩니다.
-
-
-### <a name="can-i-choose-the-data-center-location"></a>데이터 센터 위치를 선택할 수 있나요?
-
-Azure Log analytics: 예, 데스크톱 Analytics를 설정 하 고 Log Analytics 작업 영역을 만들 때.
-
-Microsoft 데이터 관리 서비스 및 분석에 대 한 Azure Storage: 아니요, 이러한 두 서비스는 미국에서 호스트 됩니다.
-

@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d719f35ced60d868cd527dc82769595457d69228
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 6bb18dbb093f6182186f648bcde02407f3c14c5a
+ms.sourcegitcommit: e3c1eb0b75d79c05a750d49354c851d15d5e26a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65499405"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67038573"
 ---
 # <a name="site-and-site-system-prerequisites-for-configuration-manager"></a>Configuration Manager의 사이트 및 사이트 시스템 필수 조건
 
@@ -161,6 +161,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 - [관리 서비스](/sccm/core/plan-design/hierarchy/plan-for-the-sms-provider#bkmk_admin-service)를 사용하고 있는 경우 SMS 공급자 역할을 호스트하는 서버에 .NET 4.5.2 이상이 필요합니다.  <!-- SCCMDocs issue #1203 -->
 
+- 웹 서버(IIS)
 
 ##  <a name="bkmk_2012acwspreq"></a> 애플리케이션 카탈로그 웹 사이트 지점  
 

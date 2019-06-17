@@ -2,7 +2,7 @@
 title: 자습서-Windows 10 배포
 titleSuffix: Configuration Manager
 description: 데스크톱 분석 및 Configuration Manager를 사용 하 여 파일럿 그룹에 Windows 10을 배포 하는 자습서입니다.
-ms.date: 06/10/2019
+ms.date: 06/13/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: tutorial
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba11906bb8febcd2c2c5ab9295d391680763e0cf
-ms.sourcegitcommit: 0bd336e11c9a7f2de05656496a1bc747c5630452
+ms.openlocfilehash: d8b73deb60cf88f0bdf428bb87250ce115a1084b
+ms.sourcegitcommit: d47d2f03482e48d343e2139a341e61022331e6c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66834785"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67145827"
 ---
 # <a name="tutorial-deploy-windows-10-to-pilot"></a>자습서: 파일럿을 Windows 10을 배포 합니다.
 
@@ -94,7 +94,7 @@ Azure 구독이 없으면 만듭니다는 [무료 계정](https://azure.microsof
 
 데스크톱 분석에 로그인 하 고 구독에서 구성 하려면이 절차를 따르십시오. 이 절차는 조직에 대 한 데스크톱 Analytics를 설정 하는 일회성 프로세스입니다.  
 
-1. 사용자로 Microsoft 365 장치 관리에서 데스크톱 Analytics 포털을 엽니다 **전역 관리자** 권한. 선택 **시작**합니다.  
+1. 열기는 [데스크톱 Analytics 포털](https://aka.ms/desktopanalytics) 사용자로 Microsoft 365 장치 관리에서 **전역 관리자** 권한. 선택 **시작**합니다.  
 
 2. 에 **서비스 계약에 동의** 페이지에서 서비스 계약을 검토 하 고 선택 **Accept**합니다.  
 
@@ -232,7 +232,7 @@ Configuration Manager는 연결을 만드는 60 분 내 컬렉션을 동기화 �
 
 데스크톱 Analytics에서 배포 계획을 만들려면이 절차를 사용 합니다.
 
-1. 엽니다는 [데스크톱 Analytics 포털](https://aka.ms/m365aprod)합니다. 최소 권한이 있는 자격 증명을 사용 하 여 **작업 영역 참가자** 권한.  
+1. 엽니다는 [데스크톱 Analytics 포털](https://aka.ms/desktopanalytics)합니다. 최소 권한이 있는 자격 증명을 사용 하 여 **작업 영역 참가자** 권한.  
 
 2. 선택 **배포 계획** 관리 그룹에 있습니다.  
 
@@ -266,7 +266,7 @@ Configuration Manager는 연결을 만드는 60 분 내 컬렉션을 동기화 �
 
     2. 각 앱을 선택 하 고 선택한 **편집**합니다. 동시 편집 하려면 둘 이상의 앱을 선택할 수 있습니다.  
 
-    3. 중요도 수준을 선택 합니다 **중요도** 목록입니다. 파일럿 기간 동안 앱 유효성을 검사 하려면 데스크톱 분석 선택 **Critical** 또는 **중요**합니다. 로 표시 되는 앱의 유효성을 검사 하지 않습니다 **중요 하지 않은**합니다. 고려해 야 합니다 [호환성 위험](/sccm/desktop-analytics/compat-risk) 및 중요도 수준을 할당할 때 다른 계획 정보입니다.  
+    3. 중요도 수준을 선택 합니다 **중요도** 목록입니다. 파일럿 기간 동안 앱 유효성을 검사 하려면 데스크톱 분석 선택 **Critical** 또는 **중요**합니다. 로 표시 되는 앱의 유효성을 검사 하지 않습니다 **중요 하지 않은**합니다. 평가 해당 [호환성](/sccm/desktop-analytics/compat-assessment) 및 중요도 수준을 할당할 때 다른 계획 정보입니다.  
 
         중요도 수준에 할당 하는 경우에 업그레이드 의사 결정을 선택할 수 있습니다.  
 

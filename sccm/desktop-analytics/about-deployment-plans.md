@@ -2,7 +2,7 @@
 title: 데스크톱 Analytics에서 배포 계획
 titleSuffix: Configuration Manager
 description: 데스크톱 Analytics에서 배포 계획에 알아봅니다.
-ms.date: 06/10/2019
+ms.date: 06/13/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88c78cef4717cc3a51a53b7fd5aba0cbefa93a8e
-ms.sourcegitcommit: 0bd336e11c9a7f2de05656496a1bc747c5630452
+ms.openlocfilehash: a8080d89995b6ed10efd996b4ad757151e315c74
+ms.sourcegitcommit: af207075c4a8bc59242a41d3192a4057452a0e55
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66834940"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141042"
 ---
 # <a name="about-deployment-plans-in-desktop-analytics"></a>데스크톱 Analytics에서 배포 계획에 대 한
 
@@ -62,6 +62,43 @@ ms.locfileid: "66834940"
 
 - 낮은은 Windows 앱에 대 한 count 임계값을 설치 합니다. 앱이이 임계값 보다 높은 비율로 컴퓨터에 설치, 배포 계획으로 앱 표시 **Noteworthy**합니다. 이 태그는 파일럿 단계 동안 테스트 하려면이 얼마나 중요 한지를 결정할 수 있습니다 의미 합니다.  
 
+
+## <a name="plan-assets"></a>자산 계획
+
+<!-- 4670224 -->
+
+하는 동안를 [자산](/sccm/desktop-analytics/about-assets) 영역 장치 및 앱에도 표시 합니다 **자산 계획** 특정 배포 계획 영역에 추가 정보가 포함 되어 있습니다.
+
+### <a name="devices"></a>장치
+
+참조 된 **Windows 업그레이드 결정** 배포 계획의 각 장치에 대 한 합니다.
+
+Windows 업그레이드 하기로 **Replace 장치** 다음 이유 중 하나 때문일 수 있습니다.
+
+- 필요한 Windows 10 프로세서 확인에 실패 했습니다. 자세한 내용은 [최소 하드웨어 요구 사항](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview#31-processor)합니다.
+- BIOS 블록이
+- 충분 한 메모리가 없습니다
+- 시스템에서 부팅 중요 한 구성 요소에는 차단 된 드라이버가 있습니다.
+- 특정 제조업체 및 모델을 업그레이드할 수 없습니다.
+- 다음 특성의 모든 드라이버 블록 표시 클래스 요소인:
+    - 재정의 안 함
+    - 새 OS 버전에 드라이버가 없습니다.
+    - 아직 없는 Windows 업데이트
+- 업그레이드를 차단 하는 시스템에서 다른 플러그 앤 플레이 구성 요소가
+- XP 에뮬레이트된 드라이버를 사용 하는 무선 구성 요소는
+- 활성 연결이 있는 네트워크 구성 요소는 해당 드라이버를 잃게 됩니다. 즉, 업그레이드 후 네트워크 연결이 끊어질 수 있습니다.
+
+### <a name="apps"></a>앱
+
+설정 된 **업그레이드 결정** 뿐만 **중요도** 이 앱이 배포 계획에 대 한 합니다. 자세한 내용은 [배포 계획을 만드는 방법을](/sccm/desktop-analytics/create-deployment-plans)합니다.
+
+앱의 세부 정보를 다음 정보를 확인할 수 있습니다. 권장 사항, 호환성 위험 요소 및 Microsoft의 알려진 문제 이 정보를 사용 하 여 도움말 집합은 **업그레이드 결정**합니다. 자세한 내용은 [Compatibility assessment](/sccm/desktop-analytics/compat-assessment)합니다.
+
+데스크톱 분석으로 표시 하는 앱 *주목할 만한* 배포 계획의 준비 상태 규칙에 대 한 낮은 설치 수 임계값을 기반으로 합니다. 자세한 내용은 [준비 규칙](/sccm/desktop-analytics/create-deployment-plans#readiness-rules)합니다.
+
+### <a name="drivers"></a>드라이버
+
+이 배포 계획에 포함 된 드라이버 목록을 참조 하세요. 설정 된 **업그레이드 결정**에서 Microsoft의 권장 사항을 검토 하 고 호환성 위험 요소를 참조 하세요.
 
 
 ## <a name="importance"></a>중요도

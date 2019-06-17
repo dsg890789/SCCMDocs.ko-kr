@@ -2,7 +2,7 @@
 title: Configuration Manager 연결
 titleSuffix: Configuration Manager
 description: 데스크톱 Analytics를 사용 하 여 Configuration Manager를 연결 하기 위한 방법 가이드입니다.
-ms.date: 06/07/2019
+ms.date: 06/13/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bdfed49a68963dc0d46a38810f0ac9dc8041d3fc
-ms.sourcegitcommit: e3c1eb0b75d79c05a750d49354c851d15d5e26a3
+ms.openlocfilehash: 7925bf44c78b6f8d51797145b5ae463ac3498eea
+ms.sourcegitcommit: af207075c4a8bc59242a41d3192a4057452a0e55
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67038767"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141044"
 ---
 # <a name="how-to-connect-configuration-manager-with-desktop-analytics"></a>데스크톱 Analytics를 사용 하 여 Configuration Manager를 연결 하는 방법
 
@@ -44,6 +44,9 @@ ms.locfileid: "67038767"
 이 절차를 사용 하 여 Configuration Manager 데스크톱 Analytics에 연결할 및 장치 설정을 구성 합니다. 이 절차는 계층 클라우드 서비스에 연결 하는 일회성 프로세스입니다.  
 
 1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고, **Cloud Services**를 확장하고, **Azure 서비스** 노드를 선택합니다. 선택 **Azure 서비스 구성** 리본 메뉴에 있습니다.  
+
+    > [!Tip]  
+    > Configuration Manager 콘솔에서로 이동 합니다 **소프트웨어 라이브러리** 작업 영역에서 선택한 합니다 **데스크톱 분석 서비스** 노드. 에 *데스크톱 Analytics에 새?* 상자에서 두 번째 링크를 선택 *Desktop Analytics 서비스에 연결할 Configuration Manager*합니다.  
 
 2. 에 **Azure Services** 페이지 Azure 서비스 마법사의 다음 설정을 구성 합니다.  
 

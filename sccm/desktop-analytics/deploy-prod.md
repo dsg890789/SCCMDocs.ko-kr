@@ -2,7 +2,7 @@
 title: 프로덕션에 배포 하는 방법
 titleSuffix: Configuration Manager
 description: 데스크톱 분석 프로덕션 그룹에 배포 하기 위한 방법 가이드입니다.
-ms.date: 04/22/2019
+ms.date: 06/14/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 20067da8eccf9896bcd948f8efa2becd2b35a707
-ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.openlocfilehash: e93b08766da4abc37ca3663de5fe2919f1953833
+ms.sourcegitcommit: d47d2f03482e48d343e2139a341e61022331e6c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083472"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67146059"
 ---
 # <a name="how-to-deploy-to-production-with-desktop-analytics"></a>데스크톱 Analytics를 사용 하 여 프로덕션에 배포 하는 방법
 
@@ -76,23 +76,15 @@ ms.locfileid: "65083472"
 모든 앱을 검토 합니다. 지정된 된 장치에 있는 모든 자산에 대 한 양의 업그레이드 결정 상태로 "프로덕션 준비 합니다."로 변경 되 면 세 번째 배포 단계를 선택 하 여 배포 계획에 대 한 기본 페이지의 현재 수를 보려면 **배포**합니다.
 
 
-
 ## <a name="bkmk_deploy"></a> 준비 되는 장치에 배포
 
 Configuration Manager 데스크톱 Analytics에서 데이터를 사용 하 여 프로덕션 배포에 대 한 컬렉션을 만듭니다. 기존 배포를 사용 하 여 작업 순서를 배포 하지 마세요. 데스크톱 Analytics 통합 배포를 만들려면 다음 절차를 사용 합니다.
 
-1. Configuration Manager 콘솔에서로 이동 합니다 **소프트웨어 라이브러리**, 확장 **데스크톱 분석 서비스**, 선택는 **배포 계획** 노드.  
+권장 되는 프로세스를 따랐다면 [파일럿 장치에 배포](/sccm/desktop-analytics/deploy-pilot#deploy-to-pilot-devices), Configuration Manager 단계적 배포가 준비 되 합니다. 자산을 표시 하는 대로 *준비*, 해당 장치를 Configuration Manager를 자동으로 동기화 하는 데스크톱 분석 합니다. 이러한 장치는 프로덕션 컬렉션에 추가 됩니다. 단계적된 배포를 두 번째 단계로 이동 하는 경우 이러한 프로덕션 장치는 업그레이드 배포를 받습니다.
 
-2. 배포 계획을 선택한 후 **배포 계획 세부 정보** 리본 메뉴에 있습니다.  
+단계적된 배포를 구성한 경우 **수동으로 두 번째 단계 배포 시작**, 다음 단계를 수동으로 이동 해야 합니다. 자세한 내용은 [단계적 배포 관리 및 모니터](/sccm/osd/deploy-use/manage-monitor-phased-deployments#bkmk_move)를 참조하세요.
 
-3. 에 **프로덕션 상태** 타일을 선택 **작업 순서** 드롭 다운 목록에서.  
-
-    > [!Note]  
-    > 사용 하지 않는 합니다 **응용 프로그램** 옵션입니다. 향후 기능에 대해 예약 됩니다.
-
-    선택 **배포**합니다. 이 작업은 선택한 개체 형식에 대 한 소프트웨어 배포 마법사를 시작 합니다.
-
-자세한 내용은 [Deploy a task sequence](/sccm/osd/deploy-use/deploy-a-task-sequence)항목을 참조하세요.
+파일럿 컬렉션 데스크톱 Analytics 통합 단일 배포를 만든 경우 프로덕션 컬렉션에 배포 하는 프로세스를 반복 해야 합니다.
 
 
 ### <a name="address-deployment-alerts"></a>주소 배포 경고
@@ -106,7 +98,6 @@ Configuration Manager 데스크톱 Analytics에서 데이터를 사용 하 여 �
 - 주의-문제 (문제 유형별로 정렬)
 
 ![데스크톱 Analytics 스크린샷 프로덕션 배포 상태](media/prod-deployment-status.png)
-
 
 
 ## <a name="bkmk_monitor"></a> 업데이트 된 장치의 상태를 모니터링 합니다.
