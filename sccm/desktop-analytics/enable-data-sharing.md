@@ -2,7 +2,7 @@
 title: 데이터 공유를 사용하도록 설정
 titleSuffix: Configuration Manager
 description: 데스크톱 Analytics를 사용 하 여 진단 데이터를 공유 하는 것에 대 한 참조 가이드입니다.
-ms.date: 06/05/2019
+ms.date: 06/17/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,14 +10,13 @@ ms.assetid: be680198-4cea-4378-a686-d52f382ba483
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7292fdd3cc370af314cef95a4b782616e315a0cb
-ms.sourcegitcommit: 725e1bf7d3250c2b7b7be9da01135517428be7a1
+ms.openlocfilehash: 3eff032113b92055b32cb81c6cae9363c368a421
+ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66821985"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159101"
 ---
 # <a name="enable-data-sharing-for-desktop-analytics"></a>데이터 분석 데스크톱에 대 한 공유를 사용 하도록 설정
 
@@ -61,6 +60,7 @@ ms.locfileid: "66821985"
 
 | 엔드포인트  | 기능  |
 |-----------|-----------|
+| `https://aka.ms` | 서비스를 찾는 데 사용 |
 | `https://v10c.events.data.microsoft.com` | 연결 된 사용자 환경 및 진단 구성 요소 끝점입니다. Windows 10을 실행 하는 장치, 버전 1703 이상, 2018-09 누적를 사용 하 여 업데이트 또는 사용 이상이 설치 되어 있습니다. |
 | `https://v10.events.data.microsoft.com` | 연결 된 사용자 환경 및 진단 구성 요소 끝점입니다. Windows 10, 버전 1803에서 이상을 실행 하는 장치에서 사용 하는 _없이_ 2018-09 누적 업데이트가 설치 되어 있습니다. |
 | `https://v10.vortex-win.data.microsoft.com` | 연결 된 사용자 환경 및 진단 구성 요소 끝점입니다. Windows 10 버전 1709 또는 이전 버전을 실행 하는 장치에서 사용 합니다. |

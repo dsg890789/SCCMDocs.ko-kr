@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bf178465f5aff508daca1d87b1b548a42db931d
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: a9d1b5e96dc8d2a43dfc39b9d1b2cd9678c083c9
+ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62275735"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159430"
 ---
 # <a name="exchange-activesync-email-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager의 Exchange ActiveSync 메일 프로필
 
@@ -40,7 +40,7 @@ Microsoft Intune 및 Exchange ActiveSync를 사용하여 디바이스에 메일 
 
  디바이스에서 메일 계정을 구성하는 것 외에 연락처, 일정 및 작업에 대한 동기화 설정을 구성할 수 있습니다.  
 
- 메일 프로필을 만들 경우 광범위한 보안 설정을 포함할 수 있습니다. 이러한 설정에는 System Center Configuration Manager 인증서 프로필을 사용하여 설정된 서명, 암호화 및 ID의 인증서가 포함되어 있습니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](/sccm/protect/deploy-use/introduction-to-certificate-profiles.md)을 참조하세요.    
+ 메일 프로필을 만들 경우 광범위한 보안 설정을 포함할 수 있습니다. 이러한 설정에는 System Center Configuration Manager 인증서 프로필을 사용하여 설정된 서명, 암호화 및 ID의 인증서가 포함되어 있습니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](/sccm/protect/deploy-use/introduction-to-certificate-profiles)을 참조하세요.    
 
 ## <a name="create-an-exchange-activesync-email-profile"></a>Exchange ActiveSync 메일 프로필 만들기  
 
@@ -68,7 +68,7 @@ Microsoft Intune 및 Exchange ActiveSync를 사용하여 디바이스에 메일 
 
    - **계정 사용자 이름**. 클라이언트 디바이스에서 메일 계정 사용자 이름을 구성하는 방법을 선택합니다. 드롭다운 목록에서 다음 옵션 중 하나를 선택할 수 있습니다.  
 
-     -   **UPN(사용자 계정 이름)**. 전체 사용자 계정 이름을 사용하여 Exchange에 로그인합니다.  
+     -   **UPN(사용자 계정 이름)** . 전체 사용자 계정 이름을 사용하여 Exchange에 로그인합니다.  
 
      -   **AccountName**. Active Directory의 전체 사용자 계정 이름을 사용합니다.
 
@@ -78,7 +78,7 @@ Microsoft Intune 및 Exchange ActiveSync를 사용하여 디바이스에 메일 
 
      -   **기본 SMTP 주소**. 사용자의 기본 SMTP 주소를 사용하여 Exchange에 로그인합니다.  
 
-     -   **UPN(사용자 계정 이름)**. 전체 사용자 계정 이름을 메일 주소로 사용합니다.  
+     -   **UPN(사용자 계정 이름)** . 전체 사용자 계정 이름을 메일 주소로 사용합니다.  
 
    - **계정 도메인**. 다음 옵션 중 하나를 선택합니다.  
 

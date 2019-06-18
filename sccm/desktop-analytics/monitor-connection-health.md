@@ -1,5 +1,5 @@
 ---
-title: 연결 상태 모니터
+title: 연결 상태 모니터링
 titleSuffix: Configuration Manager
 description: 데스크톱 분석 in Configuration Manager에 대 한 연결 상태 및 장치 상태를 모니터링 하는 방법에 대 한 세부 정보입니다.
 ms.date: 06/11/2019
@@ -10,16 +10,15 @@ ms.assetid: 1f4e26f7-42f2-40c8-80cf-efd405349c6c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7dc9b67dbf57c1803ed732f36e1cb110260146d
-ms.sourcegitcommit: e3c1eb0b75d79c05a750d49354c851d15d5e26a3
+ms.openlocfilehash: 1c5d2af3cf97d6093037e248eff3447035ff413f
+ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67039734"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159064"
 ---
-# <a name="monitor-connection-health"></a>연결 상태 모니터
+# <a name="monitor-connection-health"></a>연결 상태 모니터링
 
 사용 된 **연결 상태** 장치 상태별으로 범주로 드릴 다운 하려면 Configuration Manager의 대시보드. Configuration Manager 콘솔에서로 이동 합니다 **소프트웨어 라이브러리** 작업 영역에서 확장을 **데스크톱 분석 서비스** 노드를 선택한는 **연결 상태** 대시보드입니다.  
 

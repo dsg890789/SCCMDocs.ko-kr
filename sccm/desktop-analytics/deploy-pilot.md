@@ -10,14 +10,13 @@ ms.assetid: 637fbd8e-b8ea-4c7e-95ee-a60a323c496e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e18e2e43e9bb768f81233fb2d2deda0ae05c1961
-ms.sourcegitcommit: d47d2f03482e48d343e2139a341e61022331e6c2
+ms.openlocfilehash: 5ee3d2c35424820658f91628b5f6e23be41498b2
+ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67145832"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159137"
 ---
 # <a name="how-to-deploy-to-pilot-with-desktop-analytics"></a>데스크톱 분석으로 파일럿 배포 하는 방법
 
@@ -58,12 +57,9 @@ ms.locfileid: "67145832"
     - 모든 IT 장치
     - CEO office
 - 에 **전역 파일럿** 설정을 포함 하는 **모든 IT 장치** 컬렉션입니다. 제외 된 **CEO office** 컬렉션입니다.
-- 배포 계획을 만들고 선택 하 여 **모든 Windows 10 클라이언트** 컬렉션입니다.
-- 프로그램 **포함 된 장치를 파일럿 실행** 목록 다음 장치 집합을 포함 합니다.
-    - 전역 파일럿 포함 목록의 모든 장치: **모든 IT 장치**
-    - 또한 배포 계획 대상 그룹의 일부인 컬렉션: **모든 Windows 10 클라이언트**
-- 데스크톱 분석에서 제외 합니다 **장치를 추가 권장** 전역 파일럿에 모든 장치를 나열 *제외* 목록: **CEO office**
-- 처음 두 개의 컬렉션만 파일럿의 일부로 간주 됩니다. 해당 그룹 및 자산을 성공적으로 업그레이드 되 면 *준비*, 데스크톱 Analytics에 연결 된 장치를 동기화 합니다 **CEO office** Configuration Manager 프로덕션 컬렉션에 컬렉션입니다.
+- 배포 계획, 만들기 및 선택 **모든 Windows 10 클라이언트** 컬렉션에 **대상 그룹**합니다.
+- 합니다 **포함 된 장치를 파일럿 실행** 목록에서 장치의 하위 집합을 포함 하 **대상 그룹**: **모든 Windows 10 클라이언트로** 은 또한 전역 파일럿 *포함* 목록: **모든 IT 장치**  
+- 합니다 **추가 권장 되는 장치** 목록에서 장치 집합을 포함 하 **대상 그룹** 중요 한 자산에 대 한 최대 범위 및 중복성을 제공 하는 합니다.  데스크톱 분석 전역 파일럿에서 모든 장치는이 목록에서 제외 *제외* 목록: **CEO office**
 
 
 ## <a name="address-issues"></a>문제를 해결
@@ -117,12 +113,9 @@ Configuration Manager는 파일럿 및 프로덕션 배포에 대 한 컬렉션�
     > [!Note]  
     > 기본 설정을 사용 하 여 **는 지연 기간 (일) 후에이 단계를 자동으로 시작**합니다. 시작 하려면 두 번째 단계는 다음 조건은 충족 되어야 합니다.
     >
-    > 1. 파일럿 장치 업그레이드 보내고 백 진단 데이터를 수정 해야 합니다.
     > 1. 첫 번째 단계에 도달 합니다 **배포 성공률** 성공 위한 조건입니다. 단계적된 배포에서이 설정을 구성.
     > 1. 검토 하 고 데스크톱 중요 자산을 표시 하는 Analytics에서 업그레이드 결정을 내릴 필요가 *준비*합니다. 자세한 내용은 [업그레이드는 의사 결정을 해야 하는 자산을 검토](/sccm/desktop-analytics/deploy-prod#bkmk_review)합니다.
     > 1. 데스크톱 분석 충족 하는 모든 프로덕션 장치를 Configuration Manager 컬렉션에 동기화 합니다 *준비* 조건입니다.
-    >
-    > Configuration Manager 단계적 배포는 자동으로 다음 단계로 이동 되 면 데스크톱 분석 프로덕션 컬렉션에 동기화 하는 장치에만 적용 됩니다.
 
 > [!Important]  
 > 이러한 컬렉션의 멤버 자격 변경으로 동기화 계속 합니다. 예를 들어, 자산을 사용 하 여 문제를 식별 하 고로 표시 **없습니다**, 해당 자산을 사용 하 여 장치에서 더 이상 충족 합니다 *준비* 조건. 이러한 장치는 프로덕션 배포 컬렉션에서 삭제 됩니다.
@@ -138,7 +131,7 @@ Configuration Manager는 파일럿 및 프로덕션 배포에 대 한 컬렉션�
 
 - **업그레이드 완료 결정**: 다음 상태 중 하나입니다.
     - 중요 한 자산을 사용 하 여 장치 **준비** 또는 **업데이트 관리를 사용 하 여 준비**
-    - 장치 상태가 **Blocked**를 **바꾸기 장치** 또는 **Reinstall 장치**
+    - 장치 상태가 **Blocked**를 [ **바꾸기 장치** ](/sccm/desktop-analytics/about-deployment-plans#plan-assets) 또는 **Reinstall 장치**
 
 - **검토 하지**: 중요 한 자산을 사용 하 여 장치 **를 검토 하지** 또는 **검토 중**
 

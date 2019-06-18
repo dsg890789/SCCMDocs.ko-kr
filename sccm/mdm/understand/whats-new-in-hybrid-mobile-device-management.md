@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6a4cfbc7e9db5f4402278b73c2ca7ea1d869953
-ms.sourcegitcommit: 18a94eb78043cb565b05cd0e9469b939b29cccf0
-ms.translationtype: MT
+ms.openlocfilehash: c0b8d24e536348ed853762cb5aa620e76495e064
+ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66355015"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159445"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 디바이스 관리의 새로운 기능
 
@@ -55,7 +55,7 @@ ms.locfileid: "66355015"
 
 <!-- 3316993 -->
 
-Windows 회사 포털 앱을 이제에 레이블이 지정 된 새 페이지가 **장치**합니다. 합니다 **장치** 페이지에서는 사용자를 보여 줍니다. 모든 등록 된 장치입니다. 10.3.4291.0 버전을 사용할 경우 사용자는 회사 포털에서이 변경 표시 이상. 자세한 내용은 [Microsoft Intune 회사 포털 앱을 구성 하는 방법](https://docs.microsoft.com/intune/company-portal-app)합니다.
+Windows 회사 포털 앱을 이제에 레이블이 지정 된 새 페이지가 **장치**합니다. 합니다 **장치** 페이지에서는 사용자를 보여 줍니다. 모든 등록 된 장치입니다. 10\.3.4291.0 버전을 사용할 경우 사용자는 회사 포털에서이 변경 표시 이상. 자세한 내용은 [Microsoft Intune 회사 포털 앱을 구성 하는 방법](https://docs.microsoft.com/intune/company-portal-app)합니다.
 
 #### <a name="android-enterprise-app-management"></a>Android 엔터프라이즈 앱 관리
 
@@ -88,7 +88,7 @@ Apple 회사 장치 등록 방법 중 하나를 통해 설정 도우미를 통�
 이미 등록 된 DEP 장치에서 회사 포털을 설치 하려면 앱 구성 정책 사용 하 여 관리 되는 앱으로 푸시하십시오. 이 프로세스에 대 한 자세한 내용은 참조 하세요. [Configuration Manager에서 앱 구성 정책 사용 하 여 iOS 앱에 설정을 적용할](/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies)합니다.
 
 
-## <a name="april-2019"></a>2019 년 4 월
+## <a name="april-2019"></a>2019년 4월
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
@@ -118,7 +118,7 @@ IOS 장치용 회사 포털 앱의 홈 페이지 디자인이 새로워졌습니
 #### <a name="app-icons-are-displayed-with-an-automatically-generated-background"></a>앱 아이콘은 자동으로 생성 된 배경과 함께 표시 됩니다.
 
 <!-- 1429026 -->
-이제 Windows 회사 포털 앱을 자동으로 생성 된 배경과 함께 앱 아이콘을 표시합니다. 이 백그라운드는 검색할 수 있으면이 아이콘의 주요 색상 기반 합니다. 해당 하는 경우 백그라운드 앱 타일에 이전에 표시 된 회색 테두리를 대체 합니다. 10.3.3451.0 보다 나중 버전의 회사 포털에서이 변경 내용을 볼 수 있습니다.
+이제 Windows 회사 포털 앱을 자동으로 생성 된 배경과 함께 앱 아이콘을 표시합니다. 이 백그라운드는 검색할 수 있으면이 아이콘의 주요 색상 기반 합니다. 해당 하는 경우 백그라운드 앱 타일에 이전에 표시 된 회색 테두리를 대체 합니다. 10\.3.3451.0 보다 나중 버전의 회사 포털에서이 변경 내용을 볼 수 있습니다.
 
 #### <a name="changes-to-company-portal-enrollment-for-ios-12-devices"></a>IOS 용 회사 포털 등록 12 장치 변경
 
@@ -201,7 +201,7 @@ MacOS 장치에서 최종 사용자에 게 해당 암호를 업데이트 하 라
 #### <a name="new-help-and-support-experience-in-company-portal-for-windows-10"></a>새 도움말 및 지원 환경을 Windows 10 용 회사 포털
 
 <!--1488939-->  
-새 회사 포털 도움말 및 지원 페이지는 사용자가 문제를 해결 하 고 앱 및 액세스 문제에 대 한 도움을 요청 하는 데 도움이 됩니다. 새 페이지에서 오류 및 진단 로그 세부 정보를 전자 메일 수 있으며 조직의 기술 지원팀 세부 정보를 찾습니다. 또한 관련 Intune 설명서에 대 한 링크를 사용 하 여 FAQ 섹션을 찾을 수 있습니다. 자세한 내용 및 스크린샷을 참조 하세요 [도움말 및 Windows 10 용 회사 포털에서에서 지원 받기](https://docs.microsoft.com/intune-user-help/help-and-support-windows-cpapp)합니다.
+새 회사 포털 도움말 및 지원 페이지는 사용자가 문제를 해결 하 고 앱 및 액세스 문제에 대 한 도움을 요청 하는 데 도움이 됩니다. 새 페이지에서 오류 및 진단 로그 세부 정보를 전자 메일 수 있으며 조직의 기술 지원팀 세부 정보를 찾습니다. 또한 관련 Intune 설명서에 대 한 링크를 사용 하 여 FAQ 섹션을 찾을 수 있습니다. 자세한 내용 및 스크린샷을 참조 하세요 [도움말 및 Windows 10 용 회사 포털에서에서 지원 받기](https://docs.microsoft.com/intune-user-help/help-support-windows-cpapp)합니다.
 
 #### <a name="some-bitlocker-settings-support-windows-10-pro-edition"></a>Windows 10 Pro edition을 지원 하는 일부 BitLocker 설정
 
@@ -376,7 +376,7 @@ Intune의 이전 배지 스타일을 사용하고 있는 경우 서류 가방 �
 #### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Windows용 회사 포털 앱에서 더 많은 동기화 기회
 
 <!--2683177-->  
-Windows 용 회사 포털 앱은 이제 Windows 작업 표시줄 및 시작 메뉴에서 직접 동기화를 시작할 수 있습니다. 이 기능은 디바이스를 동기화하고 회사 리소스에 액세스하는 작업만 수행하는 경우에 특히 유용합니다. 새로운 기능에 액세스하려면 시작 메뉴 또는 작업 표시줄에 고정된 회사 포털 아이콘을 마우스 오른쪽 단추로 클릭합니다. 메뉴 옵션에서 **이 디바이스 동기화**를 선택합니다. (이 메뉴는 점프 목록이라고도 합니다.) 회사 포털은 **설정** 페이지에서 열리고 동기화를 시작합니다. 업데이트 프로시저는 [수동으로 Windows 디바이스 동기화](https://docs.microsoft.com/intune/intune-user-help/sync-your-device-manually-windows#sync-from-device-taskbar-or-start-menu)를 참조하세요.
+Windows 용 회사 포털 앱은 이제 Windows 작업 표시줄 및 시작 메뉴에서 직접 동기화를 시작할 수 있습니다. 이 기능은 디바이스를 동기화하고 회사 리소스에 액세스하는 작업만 수행하는 경우에 특히 유용합니다. 새로운 기능에 액세스하려면 시작 메뉴 또는 작업 표시줄에 고정된 회사 포털 아이콘을 마우스 오른쪽 단추로 클릭합니다. 메뉴 옵션에서 **이 디바이스 동기화**를 선택합니다. (이 메뉴는 점프 목록이라고도 합니다.) 회사 포털은 **설정** 페이지에서 열리고 동기화를 시작합니다. 업데이트 프로시저는 [수동으로 Windows 디바이스 동기화](https://docs.microsoft.com/intune-user-help/sync-your-device-manually-windows#sync-from-device-taskbar-or-start-menu)를 참조하세요.
 
 
 

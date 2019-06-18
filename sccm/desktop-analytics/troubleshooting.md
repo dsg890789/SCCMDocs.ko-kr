@@ -10,14 +10,13 @@ ms.assetid: 63e08f3f-9558-4ed7-9bf3-3a185ddaac5c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: acaefcf2c505786dcc65fa7c74063765ca2fe0cf
-ms.sourcegitcommit: e3c1eb0b75d79c05a750d49354c851d15d5e26a3
+ms.openlocfilehash: 305c31c2a40e51b84a0a5da671db1c3f6dad6f2e
+ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67038622"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159004"
 ---
 # <a name="troubleshoot-desktop-analytics"></a>데스크톱 Analytics 문제 해결
 
@@ -43,7 +42,7 @@ ms.locfileid: "67038622"
 
 
 
-## <a name="monitor-connection-health"></a>연결 상태 모니터
+## <a name="monitor-connection-health"></a>연결 상태 모니터링
 
 사용 된 **연결 상태** 장치 상태별으로 범주로 드릴 다운 하려면 Configuration Manager의 대시보드. Configuration Manager 콘솔에서로 이동 합니다 **소프트웨어 라이브러리** 작업 영역에서 확장을 **데스크톱 분석 서비스** 노드를 선택한는 **연결 상태** 대시보드입니다.  
 
@@ -52,29 +51,7 @@ ms.locfileid: "67038622"
 
 ## <a name="log-files"></a>로그 파일
 
-Configuration Manager와 통합 하는 데스크톱 Analytics를 사용 하 여 문제를 해결 하는 다음 로그 파일을 사용 합니다.
-
-
-### <a name="service-connection-point"></a>서비스 연결 지점
-
-다음 로그 파일은 다음 디렉터리에 서비스 연결 지점에서: `C:\Program Files\Configuration Manager\Logs\M365A`:
-
-| 로그 | Description |
-|---------|---------|
-| **M365ADeploymentPlanWorker.log** | 데스크톱 분석에서 계획 동기화를 배포 하는 방법은 클라우드 서비스를 온-프레미스 Configuration Manager |
-| **M365ADeviceHealthWorker.log** | 장치 상태에 대 한 정보는 Configuration Manager에서 Microsoft cloud에 업로드 |
-| **M365AUploadWorker.log** | 컬렉션 및 장치에 대 한 정보는 Configuration Manager에서 Microsoft cloud에 업로드 |
-| **SmsAdminUI.log** | Azure 클라우드 서비스를 구성 하는 등의 Configuration Manager 콘솔 작업에 대 한 정보  |
-
-
-### <a name="configuration-manager-client"></a>Configuration Manager 클라이언트
-
-다음 로그 파일은 다음 디렉터리에 Configuration Manager 클라이언트에서: `C:\Windows\CCM\logs`:
-
-| 로그 | Description |
-|---------|---------|
-| **M365AHandler.log** | 데스크톱 분석 설정 정책에 대 한 정보 |
-
+자세한 내용은 참조 하세요. [데스크톱 분석에 대 한 로그 파일](/sccm/core/plan-design/hierarchy/log-files#desktop-analytics)
 
 ### <a name="enable-verbose-logging"></a>자세한 정보 로깅 사용
 
