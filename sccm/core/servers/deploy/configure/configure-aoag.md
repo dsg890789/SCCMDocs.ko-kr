@@ -48,7 +48,7 @@ ms.locfileid: "65499276"
    - **가용성 그룹의 구성원이 될 경우:**  
      이 서버를 가용성 그룹의 초기 기본 복제 구성원으로 사용하는 경우 사이트 데이터베이스의 복사본을 이 서버 또는 그룹의 다른 서버로 복원할 필요가 없습니다. 데이터베이스가 이미 기본 복제본에 배치되며, SQL Server는 이후 단계에서 데이터베이스를 보조 복제본으로 복제합니다.  
 
-     -    **가용성 그룹의 구성원이 되지 않을 경우:**   
+     -    **가용성 그룹의 구성원이 되지 않을 경우:**    
      그룹의 기본 복제본을 호스트하는 서버로 사이트 데이터베이스의 복사본을 복원합니다.
 
    이 단계를 완료하는 방법에 자세한 내용은 SQL Server 설명서의 [전체 데이터베이스 백업 만들기](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server) 및 [SSMS를 사용하여 데이터베이스 백업 복원](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms)을 참조하세요.
