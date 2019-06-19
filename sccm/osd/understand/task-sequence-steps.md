@@ -2,7 +2,7 @@
 title: 작업 순서 단계
 titleSuffix: Configuration Manager
 description: Configuration Manager 작업 순서에 추가할 수 있는 단계를 알아봅니다.
-ms.date: 05/28/2019
+ms.date: 06/12/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d257d9fd328b04b35ff4c4d29b8a8bbd82ae565
-ms.sourcegitcommit: 18a94eb78043cb565b05cd0e9469b939b29cccf0
-ms.translationtype: MTE75
+ms.openlocfilehash: 6229c0fe0702eac61b482c31195fd35fe3c5792f
+ms.sourcegitcommit: c43996b3cf083d919ff1ccc3d510af664aec4ed4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66355059"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67047005"
 ---
 # <a name="task-sequence-steps"></a>작업 순서 단계
 
@@ -1525,6 +1525,9 @@ Configuration Manager에서 명령줄을 실행할 수 있는 기간을 나타�
 - [OSDLogPowerShellParameters](/sccm/osd/understand/task-sequence-variables#OSDLogPowerShellParameters)(버전 1902부터 적용)<!--3556028-->  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **일반**, **PowerShell 스크립트 실행**을 차례로 선택합니다.
+
+> [!Note]  
+> 유니코드 형식으로 서명된 PowerShell 스크립트를 사용합니다. 기본값인 ANSI 형식은 이 단계에서 작동하지 않습니다.
 
 ### <a name="properties"></a>속성  
 

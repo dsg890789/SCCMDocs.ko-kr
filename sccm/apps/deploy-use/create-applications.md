@@ -2,7 +2,7 @@
 title: 애플리케이션 만들기
 titleSuffix: Configuration Manager
 description: 배포 유형, 검색 방법 및 소프트웨어를 설치할 요구 사항으로 애플리케이션을 만듭니다.
-ms.date: 05/08/2019
+ms.date: 06/07/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-app
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c54eb02fe3de3246a7c8ed15e7589fcd4d9b1c9b
-ms.sourcegitcommit: abfc9e1b3945637fa93ca8d3a11519493a5d5391
+ms.openlocfilehash: 6302ca8e1f01f51bef09df2175c4525effd89a7e
+ms.sourcegitcommit: 0bd336e11c9a7f2de05656496a1bc747c5630452
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264443"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66834812"
 ---
 # <a name="create-applications-in-configuration-manager"></a>Configuration Manager에서 애플리케이션 만들기
 
@@ -312,9 +312,25 @@ Configuration Manager 콘솔의 **애플리케이션** 노드에 새 애플리�
 
 4.  **확인**을 클릭하여 **검색 규칙** 대화 상자를 닫습니다.  
 
-배포 유형에 대해 둘 이상의 검색 방법을 만드는 경우 절을 함께 그룹화하여 더 복잡한 논리를 만듭니다. 
+배포 유형에 대해 둘 이상의 검색 방법을 만드는 경우 절을 함께 그룹화하여 더 복잡한 논리를 만들 수 있습니다.  
 
-검색 방법으로 사용자 지정 스크립트를 사용하는 다음 섹션을 계속 진행합니다. 또는 배포 유형의 [사용자 환경](#bkmk_dt-ux) 옵션으로 건너뜁니다.
+#### <a name="group-detection-clauses-optional"></a>검색 절 그룹화 *(선택 사항)*
+
+1.  배포 유형에 대해 세 개 이상의 검색 방법 절을 만듭니다.  
+
+2.  두 개 이상의 연속 절을 선택한 후 **그룹**을 선택합니다. 연결된 열에는 그룹이 시작되는 위치와 끝나는 위치를 나타내는 괄호가 추가됩니다.  
+
+    예제: 
+
+    | 커넥터  |  ( | 절           |  )  | 
+    |------------|----|------------------|-----| 
+    |            |    | MSI Product Code |     | 
+    | 또는         | (  | file1.text exists|     | 
+    | And        |    | file2.txt exists | )   | 
+
+3.  그룹을 제거하려면 그룹화된 절을 선택한 후 **그룹 해제**를 선택합니다.  
+
+검색 방법으로 사용자 지정 스크립트를 사용하는 다음 섹션을 *계속 진행*합니다. 또는 배포 유형의 [사용자 환경](#bkmk_dt-ux) 옵션으로 *건너뜁니다*.
 
 
 #### <a name="bkmk_detect-script"></a> 사용자 지정 스크립트를 사용하여 배포 유형이 있는지 확인  

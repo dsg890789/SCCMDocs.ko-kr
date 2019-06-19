@@ -2,7 +2,7 @@
 title: Windows 디바이스를 다른 버전으로 업그레이드
 titleSuffix: Configuration Manager
 description: Configuration Manager를 사용하여 Windows 10 Desktop 또는 Windows 10 Mobile을 실행하는 디바이스를 다른 버전으로 자동 업그레이드합니다.
-ms.date: 01/26/2018
+ms.date: 06/07/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-compliance
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3cda70e7a5f1b2cf7dec079a7e933af48f0bf8ad
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 87105e2f9fa090c171b35ed4cb8a6523c624eca4
+ms.sourcegitcommit: 0bd336e11c9a7f2de05656496a1bc747c5630452
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56128401"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66834842"
 ---
 # <a name="upgrade-windows-devices-with-the-edition-upgrade-policy-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 버전 업그레이드 정책을 사용하여 Windows 디바이스 업그레이드
 
@@ -39,9 +39,9 @@ ms.locfileid: "56128401"
 ## <a name="before-you-start"></a>시작하기 전에  
  디바이스를 최신 버전으로 업그레이드하기 전에 다음과 같은 필수 구성 요소를 검토합니다.  
 
--   Windows 10의 데스크톱 버전: 정책으로 대상을 지정하는 모든 디바이스에서 새 버전의 Windows에 유효한 제품 키입니다. 이 제품 키는 MAK(복수 정품 인증 키) 또는 GVLK(일반 볼륨 라이선스 키)일 수 있습니다. GVLK는 또한 KMS(키 관리 서비스) 클라이언트 설정 키라고도 합니다. 자세한 내용은 [볼륨 활성화 계획](https://docs.microsoft.com/windows/deployment/volume-activation/plan-for-volume-activation-client)을 참조하세요. KMS 클라이언트 설정 키의 목록은 Windows Server 정품 인증 가이드의 [부록 A](https://docs.microsoft.com/windows-server/get-started/kmsclientkeys)를 참조하세요. <!--496871-->  
+-   Windows 10의 데스크톱 버전의 경우: 정책으로 대상을 지정하는 모든 디바이스에서 새 버전의 Windows에 유효한 제품 키 이 제품 키는 MAK(복수 정품 인증 키) 또는 GVLK(일반 볼륨 라이선스 키)일 수 있습니다. GVLK는 또한 KMS(키 관리 서비스) 클라이언트 설정 키라고도 합니다. 자세한 내용은 [볼륨 활성화 계획](https://docs.microsoft.com/windows/deployment/volume-activation/plan-for-volume-activation-client)을 참조하세요. KMS 클라이언트 설정 키의 목록은 Windows Server 정품 인증 가이드의 [부록 A](https://docs.microsoft.com/windows-server/get-started/kmsclientkeys)를 참조하세요. <!--496871-->  
 
--   Windows 10 Mobile: VLSC(Microsoft 볼륨 라이선스 서비스 센터)의 XML 라이선스 파일입니다. 이 파일에는 정책으로 대상을 지정하는 모든 디바이스에서 새 버전의 Windows에 대한 라이선스 정보가 있습니다.
+-   Windows 10 Mobile의 경우: VLSC(Microsoft 볼륨 라이선스 서비스 센터)의 XML 라이선스 파일 이 파일에는 정책으로 대상을 지정하는 모든 디바이스에서 새 버전의 Windows에 대한 라이선스 정보가 있습니다.
 
 - 이 정책 유형을 관리하려면 Configuration Manager **전체 관리자** 보안 역할이 있어야 합니다.
 
@@ -89,10 +89,10 @@ ms.locfileid: "56128401"
 - **이 디바이스에 해당 없음**
 - **데이터 형식 변환 실패**
 
-이러한 오류가 배포 실패를 의미하지는 않습니다. 대상 PC에서 업그레이드가 성공적으로 수행되었는지 확인합니다.
+이러한 오류가 배포 실패를 의미하지는 않습니다. 대상 PC에서 업그레이드가 성공적으로 실행되었는지 확인합니다.
 
-클라이언트가 대상 정책을 평가하면 2시간 이내에 다시 시작되어 업그레이드를 적용합니다. 정책을 배포할 모든 사용자에게 알리거나 사용자의 근무 시간 외에 정책이 실행되도록 예약해야 합니다.
+클라이언트가 대상 정책을 평가하면 2시간 이내에 업그레이드를 적용합니다. [특정 업그레이드 경로에서 시스템을 다시 시작해야 할 경우](https://docs.microsoft.com/windows/deployment/upgrade/windows-10-edition-upgrades) 해당 시점에서 다시 시작됩니다. 정책을 배포할 모든 사용자에게 알리거나 사용자의 근무 시간 외에 정책이 실행되도록 예약해야 합니다.
 
-**DcmWmiProvider.log**에 다음 오류가 나타나면 정품 인증 시나리오에 적절한 키를 사용하고 있는지 확인합니다. 자세한 내용은 [시작하기 전에](#before-you-start) 섹션을 참조하세요. 정품 인증에 키 관리 서비스를 사용하는 경우 [KMS 클라이언트 설치 키](https://docs.microsoft.com/windows-server/get-started/kmsclientkeys)를 사용해야 합니다.  <!-- 496871 -->   
+클라이언트의 **DcmWmiProvider.log**에 다음 오류가 나타나면 정품 인증 시나리오에 적절한 키를 사용하고 있는지 확인합니다. 자세한 내용은 [시작하기 전에](#before-you-start) 섹션을 참조하세요. 정품 인증에 키 관리 서비스를 사용하는 경우 [KMS 클라이언트 설치 키](https://docs.microsoft.com/windows-server/get-started/kmsclientkeys)를 사용해야 합니다.  <!-- 496871 -->   
 
 `Failed to execute CheckApplicabilityMethod with error = 0x80041001 OsEditionUpgradeProvider`
