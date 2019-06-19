@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4e829d92b099be3fbf77796ea604d9d33db252c
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: 8762282c6a5007642e2cc174b9d2496b2d705c24
+ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62273658"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67194655"
 ---
 # <a name="configure-and-deploy-lookout-for-work-apps"></a>Lookout for Work 앱 구성 및 배포
 
@@ -68,10 +68,10 @@ ms.locfileid: "62273658"
        | Lookout MTP     | Lookout MTP 액세스         |
        | Microsoft Graph     | 로그인 및 사용자 프로필 읽기        |  
 
-   자세한 내용은 [네이티브 클라이언트 애플리케이션 구성](/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application)을 참조하세요.  
+   자세한 내용은 [네이티브 클라이언트 애플리케이션 구성](/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#configure-a-native-client-application)을 참조하세요.  
 
 
-4. Configuration Manager에서 다시 서명된 .ipa 파일을 업로드합니다. 최소 OS 버전을 iOS 8.0 이상으로 설정합니다. 자세한 내용은 [iOS 응용 프로그램 만들기](/sccm/apps/get-started/creating-ios-applications)를 참조하세요.   
+4. Configuration Manager에서 다시 서명된 .ipa 파일을 업로드합니다. 최소 OS 버전을 iOS 8.0 이상으로 설정합니다. 자세한 내용은 [iOS 애플리케이션 만들기](/sccm/apps/get-started/creating-ios-applications)를 참조하세요.   
 
 
 5. 관리되는 앱 구성 정책을 만듭니다. 자세한 내용은 [모바일 앱 구성 정책을 사용하여 iOS 앱 구성](/sccm/apps/deploy-use/configure-ios-apps-with-app-configuration-policies)을 참조하세요.  

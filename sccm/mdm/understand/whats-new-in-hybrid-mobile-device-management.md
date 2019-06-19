@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0b8d24e536348ed853762cb5aa620e76495e064
-ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
-ms.translationtype: HT
+ms.openlocfilehash: da4798b958e0fd66e53024a2a104a67b3c1b93ea
+ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67159445"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67194600"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 디바이스 관리의 새로운 기능
 
@@ -55,7 +55,7 @@ ms.locfileid: "67159445"
 
 <!-- 3316993 -->
 
-Windows 회사 포털 앱을 이제에 레이블이 지정 된 새 페이지가 **장치**합니다. 합니다 **장치** 페이지에서는 사용자를 보여 줍니다. 모든 등록 된 장치입니다. 10\.3.4291.0 버전을 사용할 경우 사용자는 회사 포털에서이 변경 표시 이상. 자세한 내용은 [Microsoft Intune 회사 포털 앱을 구성 하는 방법](https://docs.microsoft.com/intune/company-portal-app)합니다.
+Windows 회사 포털 앱을 이제에 레이블이 지정 된 새 페이지가 **장치**합니다. 합니다 **장치** 페이지에서는 사용자를 보여 줍니다. 모든 등록 된 장치입니다. 10.3.4291.0 버전을 사용할 경우 사용자는 회사 포털에서이 변경 표시 이상. 자세한 내용은 [Microsoft Intune 회사 포털 앱을 구성 하는 방법](https://docs.microsoft.com/intune/company-portal-app)합니다.
 
 #### <a name="android-enterprise-app-management"></a>Android 엔터프라이즈 앱 관리
 
@@ -118,7 +118,7 @@ IOS 장치용 회사 포털 앱의 홈 페이지 디자인이 새로워졌습니
 #### <a name="app-icons-are-displayed-with-an-automatically-generated-background"></a>앱 아이콘은 자동으로 생성 된 배경과 함께 표시 됩니다.
 
 <!-- 1429026 -->
-이제 Windows 회사 포털 앱을 자동으로 생성 된 배경과 함께 앱 아이콘을 표시합니다. 이 백그라운드는 검색할 수 있으면이 아이콘의 주요 색상 기반 합니다. 해당 하는 경우 백그라운드 앱 타일에 이전에 표시 된 회색 테두리를 대체 합니다. 10\.3.3451.0 보다 나중 버전의 회사 포털에서이 변경 내용을 볼 수 있습니다.
+이제 Windows 회사 포털 앱을 자동으로 생성 된 배경과 함께 앱 아이콘을 표시합니다. 이 백그라운드는 검색할 수 있으면이 아이콘의 주요 색상 기반 합니다. 해당 하는 경우 백그라운드 앱 타일에 이전에 표시 된 회색 테두리를 대체 합니다. 10.3.3451.0 보다 나중 버전의 회사 포털에서이 변경 내용을 볼 수 있습니다.
 
 #### <a name="changes-to-company-portal-enrollment-for-ios-12-devices"></a>IOS 용 회사 포털 등록 12 장치 변경
 
@@ -646,7 +646,7 @@ Windows 10 버전 1607 이상의 최종 사용자에게 Microsoft Store에 있�
 ### <a name="new-in-configuration-manger-technical-preview-1711"></a>Configuration Manager Technical Preview 1711의 새로운 기능
 
 - **Windows 10에 대한 새로운 준수 정책 옵션**   
-  이제 Windows 10 디바이스의 준수 정책에 대한 새 옵션을 구성할 수 있습니다. 새 설정에는 방화벽, 사용자 계정 컨트롤, Windows Defender 바이러스 백신 및 OS 빌드 버전 관리에 대한 정책이 포함됩니다. 자세한 내용은 [Windows 10에 대한 새로운 준수 정책 옵션](/sccm/core/get-started/capabilities-in-technical-preview-1711#new-compliance-policy-options-for-windows-10)을 참조하세요.
+  이제 Windows 10 디바이스의 준수 정책에 대한 새 옵션을 구성할 수 있습니다. 새 설정에는 방화벽, 사용자 계정 컨트롤, Windows Defender 바이러스 백신 및 OS 빌드 버전 관리에 대한 정책이 포함됩니다. 자세한 내용은 [Windows 10에 대한 새로운 준수 정책 옵션](/sccm/mdm/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client)을 참조하세요.
 
 
 
@@ -704,7 +704,7 @@ Windows 10 버전 1607 이상의 최종 사용자에게 Microsoft Store에 있�
   <!--1428681-->    
 
 - **지원되지 않는 Samsung Knox 장치 등록 차단**   
-  회사 포털 앱은 지원되는 Samsung KNOX 디바이스만을 등록하려고 합니다. KNOX 정품 인증 오류로 인해 MDM 등록을 방해하지 않도록 방지하기 위해 디바이스가 [Samsung에서 게시한 디바이스 목록](https://www.samsungknox.com/knox-supported-devices/knox-workspace)을 표시하는 경우에만 디바이스 등록을 시도합니다. 일부 Samsung 디바이스에는 KNOX를 지원하는 모델 번호가 있을 수 있습니다. 구매하고 배포하기 전에 디바이스 재판매인과 함께 KNOX 호환성을 검사합니다. [Android 및 Samsung KNOX 표준 정책 설정](https://docs.microsoft.com/intune-classic/deploy-use/android-policy-settings-in-microsoft-intune#supported-samsung-knox-standard-devices)에서 확인된 디바이스의 전체 목록을 찾을 수 있습니다.
+  회사 포털 앱은 지원되는 Samsung KNOX 디바이스만을 등록하려고 합니다. KNOX 정품 인증 오류로 인해 MDM 등록을 방해하지 않도록 방지하기 위해 디바이스가 [Samsung에서 게시한 디바이스 목록](https://www.samsungknox.com/knox-supported-devices/knox-workspace)을 표시하는 경우에만 디바이스 등록을 시도합니다. 일부 Samsung 디바이스에는 KNOX를 지원하는 모델 번호가 있을 수 있습니다. 구매하고 배포하기 전에 디바이스 재판매인과 함께 KNOX 호환성을 검사합니다. 확인 된 장치에서의 전체 목록을 찾을 수 있습니다 [의 Samsung Knox 모바일 등록을 사용 하 여 Android 장치를 자동으로 등록](https://docs.microsoft.com/intune/android-samsung-knox-mobile-enroll#prerequisites)합니다.
   <!-- 1490695 -->     
 
 - **Android 4.3 이하에 대한 지원 종료**     
@@ -712,7 +712,7 @@ Windows 10 버전 1607 이상의 최종 사용자에게 Microsoft Store에 있�
   <!--1171126, 1326920 -->     
 
 - **등록된 장치에 표시되는 장치 정보를 최종 사용자에게 알리기**     
-  모든 회사 포털 앱의 디바이스 세부 정보 화면에 **소유권 유형**을 추가하고 있습니다. 이 정보를 통해 사용자는 [회사가 볼 수 있는 정보](https://docs.microsoft.com/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune) 문서에서 바로 개인 정보에 대한 자세한 내용을 찾을 수 있습니다. 이러한 기능 향상은 머지않아 모든 회사 포털 앱에 적용됩니다. [9월](https://docs.microsoft.com/intune/whats-new#week-of-september-11-2017)에는 iOS에 대한 이 기능을 발표했습니다. 
+  모든 회사 포털 앱의 디바이스 세부 정보 화면에 **소유권 유형**을 추가하고 있습니다. 이 정보를 통해 사용자는 [회사가 볼 수 있는 정보](https://docs.microsoft.com/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune) 문서에서 바로 개인 정보에 대한 자세한 내용을 찾을 수 있습니다. 이러한 기능 향상은 머지않아 모든 회사 포털 앱에 적용됩니다. [9월](#september-2017)에는 iOS에 대한 이 기능을 발표했습니다. 
   <!--1165314-->     
 
 

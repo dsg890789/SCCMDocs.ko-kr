@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 27df5154a55717a06924bc906edd2c7f6a4f9a2b
-ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
-ms.translationtype: HT
+ms.openlocfilehash: 78926fb271bf1663dbd497f1894e3b4acbffd08b
+ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67158371"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67194634"
 ---
 # <a name="past-hybrid-features-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하는 이전 하이브리드 기능
 
@@ -113,7 +113,7 @@ ms.locfileid: "67158371"
 
 - [Android for Work 지원](/sccm/core/plan-design/changes/whats-new-in-version-1702##android-for-work-support)
 - [비규격 앱 준수 설정](/sccm/core/plan-design/changes/whats-new-in-version-1702#conditional-access-device-compliance-policy-improvements)
-- [PFX 인증서 만들기 및 배포와 S/MIME 지원](/sccm/core/plan-design/changes/whats-new-in-version-1702#improvements-to-certificate-profiles)
+- [PFX 인증서 만들기 및 배포와 S/MIME 지원](/sccm/core/plan-design/changes/whats-new-in-version-1702#mobile-device-management)
 - [Android 및 iOS 버전은 하이브리드 MDM 만들기 마법사에서 대상 지정이 가능하지 않음](/sccm/core/plan-design/changes/whats-new-in-version-1702#android-and-ios-versions-are-no-longer-targetable-in-creation-wizards-for-hybrid-mdm)
 
 Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추가 하이브리드 기능도 포함되어 있습니다.
@@ -192,7 +192,7 @@ Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추�
 
 - **iOS 디바이스가 비활성 상태이거나 관리 콘솔이 디바이스와 통신할 수 없는 문제 해결**
 
-  사용자 디바이스에서 Intune과의 연결이 끊기는 경우 회사 리소스에 대한 액세스 권한을 다시 얻도록 새로운 문제 해결 단계를 제공할 수 있습니다. [디바이스가 비활성 상태이거나 관리 콘솔이 디바이스와 통신할 수 없음](https://docs.microsoft.com/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them)을 참조하세요.
+  사용자 디바이스에서 Intune과의 연결이 끊기는 경우 회사 리소스에 대한 액세스 권한을 다시 얻도록 새로운 문제 해결 단계를 제공할 수 있습니다. [디바이스가 비활성 상태이거나 관리 콘솔이 디바이스와 통신할 수 없음](https://docs.microsoft.com/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#devices-are-inactive-or-the-admin-console-cant-communicate-with-them)을 참조하세요.
 
 ### <a name="new-in-configuration-manager-technical-preview-1701"></a>Configuration Manager Technical Preview 1701의 새로운 기능
 
@@ -571,7 +571,7 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 
   이제 **자산 및 준수** 작업 영역에서 액세스되는 **원격 디바이스 작업** 메뉴에서 **사용 중지/초기화**, **암호 다시 설정**, **원격 잠금** 및 **활성화 잠금 무시** 등의 일반 작업을 찾을 수 있습니다.
 
-  자세한 내용은 [System Center Configuration Manager용 Technical Preview 1605의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605)에서 [원격 디바이스 작업을 위한 새로운 환경](/sccm/core/get-started/capabilities-in-technical-preview-1605#new-experience-for-remote-device-actions)을 참조하세요.  
+  자세한 내용은 [System Center Configuration Manager용 Technical Preview 1605의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605)에서 [원격 디바이스 작업을 위한 새로운 환경](/sccm/core/get-started/capabilities-in-technical-preview-1605#BKMK_Remote)을 참조하세요.  
 
 - **비즈니스용 Windows 스토어 앱**
 
@@ -635,7 +635,7 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 - **Configuration Manager 콘솔에서 Windows 10 디바이스에 대한 비즈니스용 Windows 스토어 앱 찾기, 관리 및 배포**
 
 
-  Configuration Manager Technical Preview 1604에서는 관리하는 Windows 10 디바이스에 대한 앱을 찾고 관리 및 배포할 수 있도록 도와주는 비즈니스용 Windows 스토어에 대한 지원을 사용할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 Technical Preview 1604의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1604)에서 [비즈니스용 Windows 스토어에서 대량 구매 앱 관리](/sccm/core/get-started/capabilities-in-technical-preview-1604#manage-volume-purchased-apps-from-the-windows-store-for-business)를 참조하세요.  
+  Configuration Manager Technical Preview 1604에서는 관리하는 Windows 10 디바이스에 대한 앱을 찾고 관리 및 배포할 수 있도록 도와주는 비즈니스용 Windows 스토어에 대한 지원을 사용할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 Technical Preview 1604의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1604)에서 [비즈니스용 Windows 스토어에서 대량 구매 앱 관리](/sccm/core/get-started/capabilities-in-technical-preview-1604#BKMK_WindowsVPP)를 참조하세요.  
 
 - **Android 디바이스에 대한 SmartLock 설정**
 
