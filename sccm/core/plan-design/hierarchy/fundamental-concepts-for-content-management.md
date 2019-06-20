@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ffed5e06cca06c5976ac81eecfaca53032bdbc2
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: abb8e846598a9ae0d69eb1b134911ec83006b966
+ms.sourcegitcommit: 0bd336e11c9a7f2de05656496a1bc747c5630452
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56140081"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66834895"
 ---
 # <a name="fundamental-concepts-for-content-management-in-configuration-manager"></a>Configuration Manager에서 콘텐츠 관리의 기본 개념
 
@@ -39,7 +39,7 @@ Configuration Manager는 소프트웨어 콘텐츠를 관리하는 도구 및 �
 
 풀(pull) 배포 지점이 원격 포리스트의 원본 배포 지점에서 콘텐츠를 다운로드할 때도 이 계정이 사용됩니다.  
 
-버전 1806부터 일부 시나리오에서는 더 이상 액세스 계정이 필요하지 않습니다. 사이트에서 Azure Active Directory 인증으로 고급 HTTP를 사용하도록 설정할 수 있습니다.<!--1358228--> 
+버전 1806부터 일부 시나리오에서는 더 이상 액세스 계정이 필요하지 않습니다. 사이트에서 Azure Active Directory 인증에 고급 HTTP를 사용하도록 설정할 수 있습니다.<!--1358228--> 
 
 자세한 내용은 [네트워크 액세스 계정](/sccm/core/plan-design/hierarchy/accounts#network-access-account)을 참조하세요.
 
@@ -88,14 +88,16 @@ BDR은 계층 내 각 부모 및 자식 사이트 간에 지원됩니다. 사이
 
 
 ## <a name="delivery-optimization"></a>배달 최적화
-<!-- 1324696 --> Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원격 사무실에 대한 콘텐츠 배포를 정의하고 규정합니다. [Windows 배달 최적화](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)는 Windows 10 디바이스 간에 콘텐츠를 공유하는 클라우드 기반의 피어 투 피어 기술입니다. 1802 버전부터 피어 간에 콘텐츠를 공유하는 경우 경계 그룹을 사용하도록 배달 최적화를 구성합니다. 클라이언트 설정은 경계 그룹 식별자를 클라이언트의 배달 최적화 그룹 식별자로 적용합니다. 클라이언트는 배달 최적화 클라우드 서비스와 통신할 때 이 식별자를 사용하여 원하는 콘텐츠가 있는 피어를 찾습니다. 자세한 내용은 [배달 최적화](/sccm/core/clients/deploy/about-client-settings#delivery-optimization) 클라이언트 설정을 참조하세요.
+<!-- 1324696 -->
+Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원격 사무실에 대한 콘텐츠 배포를 정의하고 규정합니다. [Windows 배달 최적화](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)는 Windows 10 디바이스 간에 콘텐츠를 공유하는 클라우드 기반의 피어 투 피어 기술입니다. 1802 버전부터 피어 간에 콘텐츠를 공유하는 경우 경계 그룹을 사용하도록 배달 최적화를 구성합니다. 클라이언트 설정은 경계 그룹 식별자를 클라이언트의 배달 최적화 그룹 식별자로 적용합니다. 클라이언트는 배달 최적화 클라우드 서비스와 통신할 때 이 식별자를 사용하여 원하는 콘텐츠가 있는 피어를 찾습니다. 자세한 내용은 [배달 최적화](/sccm/core/clients/deploy/about-client-settings#delivery-optimization) 클라이언트 설정을 참조하세요.
 
 배달 최적화는 Windows 10 품질 업데이트용 빠른 설치 파일의 [Windows 10 업데이트 배달 최적화](/sccm/sum/deploy-use/optimize-windows-10-update-delivery)에 권장되는 기술입니다.
 
 
 
 ## <a name="windows-ledbat"></a>Windows LEDBAT
-<!--1358112--> Windows LEDBAT(Low Extra Delay Background Transport)는 백그라운드 네트워크 전송을 관리하는 데 유용한 Windows Server의 네트워크 정체 제어 기능입니다. 지원되는 Windows Server 버전에서 실행되는 배포 지점의 경우 네트워크 트래픽을 조정하는 데 유용한 옵션을 사용할 수 있습니다. 그런 다음, 클라이언트는 사용 가능한 경우에만 네트워크 대역폭을 사용합니다. 
+<!--1358112-->
+Windows LEDBAT(Low Extra Delay Background Transport)는 백그라운드 네트워크 전송을 관리하는 데 유용한 Windows Server의 네트워크 정체 제어 기능입니다. 지원되는 Windows Server 버전에서 실행되는 배포 지점의 경우 네트워크 트래픽을 조정하는 데 유용한 옵션을 사용할 수 있습니다. 그런 다음, 클라이언트는 사용 가능한 경우에만 네트워크 대역폭을 사용합니다. 
 
 전반적인 Windows LEDBAT에 대한 자세한 정보는 [새로운 전송 개선 사항](https://blogs.technet.microsoft.com/networking/2016/07/18/announcing-new-transport-advancements-in-the-anniversary-update-for-windows-10-and-windows-server-2016/) 블로그 게시물을 참조하세요.
 
@@ -134,13 +136,15 @@ Configuration Manager로 새로운 OS를 배포하면 작업 순서를 실행하
 
     -   인터넷 연결 배포 지점이 HTTPS를 허용해야 합니다.  
 
-    -   클라우드 배포 지점을 사용할 수 있습니다.  
+    -   클라우드 배포 지점 또는 CMG(클라우드 관리 게이트웨이)를 사용할 수 있습니다.  
+    
+        *   버전 1806부터 CMG는 클라이언트에게 콘텐츠를 제공할 수 있습니다. 이 기능은 필요한 인증서 및 Azure VM 비용을 줄여줍니다. 자세한 내용은 [CMG 수정](/sccm/core/clients/manage/cmg/setup-cloud-management-gateway)을 참조하세요.
 
 -   **작업 그룹**:  
 
     -   배포 지점이 HTTPS를 허용해야 합니다.  
 
-    -   클라우드 배포 지점을 사용할 수 있습니다.  
+    -   클라우드 배포 지점 또는 CMG를 사용할 수 있습니다.  
 
 
 

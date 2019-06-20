@@ -2,7 +2,7 @@
 title: 온-프레미스 인프라 업그레이드
 titleSuffix: Configuration Manager
 description: SQL Server, 사이트 시스템의 OS 등의 인프라를 업그레이드하는 방법을 알아봅니다.
-ms.date: 11/27/2018
+ms.date: 06/07/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac4f22b6da6f0ed3c743848efc5477577376116b
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: a361ff057d6448169088f383ac8373673a97294d
+ms.sourcegitcommit: 0bd336e11c9a7f2de05656496a1bc747c5630452
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65500929"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66834974"
 ---
 # <a name="upgrade-on-premises-infrastructure-that-supports-configuration-manager"></a>Configuration Manager를 지원하는 온-프레미스 인프라 업그레이드
 
@@ -211,6 +211,8 @@ Configuration Manager는 다음 버전으로의 SQL Server 현재 위치 업그�
 
 - SQL Server 2014  
 
+여기에는 보조 사이트의 SQL Server Express를 최신 버전의 SQL Server Express로 업그레이드하는 것이 포함됩니다.
+
 사이트 데이터베이스를 호스트하는 SQL Server 버전을 업그레이드하는 경우 사이트에서 사용되는 SQL Server 버전을 다음과 같은 순서로 업그레이드해야 합니다.
 
 1. 먼저 중앙 관리 사이트에서 SQL Server 업그레이드  
@@ -219,7 +221,7 @@ Configuration Manager는 다음 버전으로의 SQL Server 현재 위치 업그�
 
 3. 마지막으로 부모 기본 사이트를 업그레이드합니다. 이러한 사이트에는 중앙 관리 사이트에 보고를 하는 자식 기본 사이트와 계층의 최상위 사이트인 독립 실행형 기본 사이트가 모두 포함됩니다.  
 
-
+ 
 ### <a name="sql-server-cardinality-estimation-level"></a>SQL Server 카디널리티 추정 수준   
 
 이전 버전의 SQL Server에서 사이트 데이터베이스를 업그레이드하는 경우 해당 SQL Server 인스턴스에 허용되는 최소값인 경우 데이터베이스는 기존 SQL 카디널리티 추정 수준을 유지합니다. 허용되는 수준보다 낮은 호환성 수준의 데이터베이스를 사용하여 SQL Server를 업그레이드하면 데이터베이스가 자동으로 SQL Server에서 허용되는 가장 낮은 호환성 수준으로 설정됩니다.

@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4bb3cfa86275562ad46c4fdc988719a493f42bf
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 8c6a6e8a346c53d1f2bc8abdc2c2f2d0b9fafb64
+ms.sourcegitcommit: 0bd336e11c9a7f2de05656496a1bc747c5630452
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65499070"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66834892"
 ---
 # <a name="define-network-locations-as-boundaries-for-system-center-configuration-manager"></a>네트워크 위치를 System Center Configuration Manager의 경계로 정의합니다.
 
@@ -50,9 +50,10 @@ Configuration Manager 관리자가 알지 못하는 IP 주소를 사용하는 �
         >  **서브넷 ID** 를 자동으로 지정할 **네트워크** 및 **서브넷 마스크** 를 지정할 수 있습니다. 경계를 저장하면 서브넷 ID 값만 저장됩니다.  
 
     -   **Active Directory 사이트**를 선택한 경우 사이트 서버의 로컬 포리스트에 있는 Active Directory 사이트를 지정하거나 **찾아보기** 로 선택해야 합니다.  
+        
+        - 경계에 대해 Active Directory 사이트를 지정하면 경계에 해당 Active Directory 사이트의 구성원인 각 IP 서브넷이 포함됩니다. Active Directory에서 Active Directory 사이트의 구성이 변경되면 이 경계에 포함된 네트워크 위치도 변경됩니다.  
 
-        > [!IMPORTANT]  
-        >  경계에 대해 Active Directory 사이트를 지정하면 경계에 해당 Active Directory 사이트의 구성원인 각 IP 서브넷이 포함됩니다. Active Directory에서 Active Directory 사이트의 구성이 변경되면 이 경계에 포함된 네트워크 위치도 변경됩니다.  
+        - Active Directory 사이트 경계는 순수 AzureAD 클라이언트에 대해 작동하지 않습니다. 온-프레미스에서 로밍하는 클라이언트는 오직 AD 사이트를 사용하여 정의된 경우 어느 경계에도 속하지 않게 됩니다.
 
     -   **IPv6 접두사**를 선택하는 경우 IPv6 접두사 형식의 **접두사** 를 지정해야 합니다.  
 

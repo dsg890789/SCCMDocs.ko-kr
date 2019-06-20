@@ -1,6 +1,6 @@
 ---
 title: 콘솔 내 설명서
-ms.date: 05/15/2019
+ms.date: 06/10/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,12 +10,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81ebb0f12c7ef048d46eea2c13586b77b1fae326
-ms.sourcegitcommit: cab3dba5ebfe90f28cedee03c1840c9a395160cc
+ms.openlocfilehash: 0af894becf4aa74beb250cc4672e6ba2cb0108af
+ms.sourcegitcommit: 0bd336e11c9a7f2de05656496a1bc747c5630452
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65839043"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66834805"
 ---
 <!-- 
 - Feature 1357546
@@ -26,7 +26,7 @@ ms.locfileid: "65839043"
 
 # <a name="configuration-manager-documentation"></a>Configuration Manager 설명서
 
-*마지막 업데이트: 05/15/2019*
+*마지막 업데이트: 2019/06/10*
 
 이 콘텐츠는 Configuration Manager의 학습과 지원에 도움이 될 수 있습니다.
 
@@ -54,20 +54,20 @@ ms.locfileid: "65839043"
 
 ## <a name="trending"></a>인기
 
-2019년 4월 1일에서 4월 30일 사이의 문서가 가장 인기 있는 문서입니다.
+2019년 5월 1일부터 5월 31일 사이에 가장 많이 조회된 문서입니다.
 
 | 페이지 보기 | 제목 |
 |------------|-------|
-| 21698 | [문제 해결을 위한 로그 파일](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files) |
-| 21409 | [버전 1902의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1902) |
-| 11870 | [연결에 사용되는 포트](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/ports) |
-| 10980 | [Windows에 클라이언트 배포](https://docs.microsoft.com/sccm/core/clients/deploy/deploy-clients-to-windows-computers) |
-| 9937 | [Windows 10에 대한 지원](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10) |
-| 9101 | [콘솔 설치](https://docs.microsoft.com/sccm/core/servers/deploy/install/install-consoles) |
-| 9003 | [업데이트 및 서비스](https://docs.microsoft.com/sccm/core/servers/manage/updates) |
-| 8383 | [버전 1810의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1810) |
-| 8237 | [1902에 대한 검사 목록](https://docs.microsoft.com/sccm/core/servers/manage/checklist-for-installing-update-1902) |
-| 8140 | [Office 365 ProPlus 업데이트 관리](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates) |
+| 21370 | [문제 해결을 위한 로그 파일](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files) |
+| 17017 | [버전 1902의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1902) |
+| 12122 | [연결에 사용되는 포트](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/ports) |
+| 11906 | [Office 365 ProPlus 업데이트 관리](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates) |
+| 11463 | [Windows에 클라이언트 배포](https://docs.microsoft.com/sccm/core/clients/deploy/deploy-clients-to-windows-computers) |
+| 10421 | [Windows 10에 대한 지원](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10) |
+| 9138 | [1902에 대한 검사 목록](https://docs.microsoft.com/sccm/core/servers/manage/checklist-for-installing-update-1902) |
+| 8944 | [콘솔 설치](https://docs.microsoft.com/sccm/core/servers/deploy/install/install-consoles) |
+| 8508 | [클라이언트 설치 매개 변수 및 속성](https://docs.microsoft.com/sccm/core/clients/deploy/about-client-installation-properties) |
+| 8399 | [업데이트 및 서비스](https://docs.microsoft.com/sccm/core/servers/manage/updates) |
 
 ## <a name="recently-updated"></a>최근 업데이트 항목
 
@@ -75,16 +75,16 @@ ms.locfileid: "65839043"
 
 | 마지막 검토 | 제목 |
 |---------------|-------|
-| 5/2/2019 | [Wake on LAN 구성](https://docs.microsoft.com/sccm/core/clients/deploy/configure-wake-on-lan) |
-| 4/30/2019 | [공동 관리 모니터](https://docs.microsoft.com/sccm/comanage/how-to-monitor) |
-| 4/30/2019 | [SQL Server 보기](https://docs.microsoft.com/sccm/develop/core/understand/sqlviews/sql-server-views-configuration-manager) |
-| 4/29/2019 | [기술 미리 보기 1904](https://docs.microsoft.com/sccm/core/get-started/2019/technical-preview-1904) |
-| 4/26/2019 | [타사 MDM 공존성](https://docs.microsoft.com/sccm/comanage/coexistence) |
-| 4/23/2019 | [버전 1902의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1902) |
-| 4/20/2019 | [콘솔 설치](https://docs.microsoft.com/sccm/core/servers/deploy/install/install-consoles) |
-| 4/11/2019 | [OneDrive for Business 프로필](https://docs.microsoft.com/sccm/compliance/deploy-use/onedrive-profile) |
-| 4/4/2019 | [CMPivot 문제 해결](https://docs.microsoft.com/sccm/core/servers/manage/cmpivot-tsg) |
-| 4/3/2019 | [IProgressUI 인터페이스](https://docs.microsoft.com/sccm/develop/reference/core/clients/client-classes/iprogressui-interface) |
+| 2019/5/31 | [TLS 1.2를 사용하도록 설정하는 방법](https://docs.microsoft.com/sccm/core/plan-design/security/enable-tls-1-2) |
+| 2019/5/29 | [프로비저닝 모드](https://docs.microsoft.com/sccm/osd/understand/provisioning-mode) |
+| 2019/5/29 | [앱 배포 문제 해결](https://docs.microsoft.com/sccm/apps/deploy-use/troubleshoot-application-deployment) |
+| 2019/5/29 | [Approve-CMApprovalRequest](https://docs.microsoft.com/powershell/module/configurationmanager/approve-cmapprovalrequest) |
+| 2019/5/29 | [애플리케이션 가져오기 및 내보내기](https://docs.microsoft.com/sccm/apps/deploy-use/import-export-applications) |
+| 2019/5/28 | [버전 1902의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1902) |
+| 2019/5/28 | [고급 HTTP](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/enhanced-http) |
+| 2019/5/24 | [Azure AD 인증 워크플로](https://docs.microsoft.com/sccm/core/clients/manage/azure-ccmsetup) |
+| 2019/5/24 | [SetDPMaintenanceMode 메서드](https://docs.microsoft.com/sccm/develop/reference/core/servers/configure/setdpmaintenancemode-method-in-class-sms-distributionpointinfo) |
+| 2019/5/21 | [사용되지 않는 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures) |
 
 ## <a name="troubleshooting-articles"></a>문제 해결 문서
 
@@ -100,13 +100,10 @@ Configuration Manager 구성 요소 및 기능의 문제 해결을 지원하기 
 
 ## <a name="new-and-updated-support-articles"></a>새로 제공되거나 업데이트된 지원 문서
 
-2019년 4월 7일부터 5월 13일에 새로 제공되거나 업데이트된 지원 문서입니다.
+2019년 5월 14일부터 6월 10일 사이에 새로 제공되었거나 업데이트된 지원 문서입니다.
 
-- [KB 4488598: System Center Configuration Manager 현재 분기, 버전 1810의 업데이트 롤업 2](https://support.microsoft.com/help/4488598)
-- [KB 4494015: Windows 설치 프로그램 또는 현재 위치 업그레이드가 완료된 후 OSD 작업 순서가 계속되지 않습니다.](https://support.microsoft.com/help/4494015)
-- [KB 4495265: CMG를 타사 인증서가 있는 클라우드 DP로 사용하는 경우 WINHTTP_CALLBACK_STATUS_FLAG_CERT_CN_INVALID](https://support.microsoft.com/help/4495265)
-- [KB 4498259: 업그레이드 준비 데이터가 Configuration Manager에서 계속 다운로드된다.](https://support.microsoft.com/help/4498259)
-- [KB 4040243: Configuration Manager에서 TLS 1.2를 사용하도록 설정하는 방법](https://support.microsoft.com/help/4040243)
-- [KB 4490644: Microsoft WSUS 및 Configuration Manager SUP 유지 관리에 대한 전체 가이드](https://support.microsoft.com/help/4490644)
+- [KB 4503442: Configuration Manager 클라이언트가 CMG와 통신하려고 할 때 403 오류 발생](https://support.microsoft.com/help/4503442)
+- [KB 4503578: Configuration Manager에서 보고 서비스 지점을 이동하거나 TLS 1.2를 사용하도록 설정한 이후부터 보고 기능이 작동하지 않음](https://support.microsoft.com/help/4503578)
+- [KB 4505440: Configuration Manager의 소프트웨어 업데이트 관리 문제 해결](https://support.microsoft.com/help/4505440)
 
 새로운 Configuration Manager 지원 문서의 Atom 또는 RSS 알림을 구독하려면 [지원 콘텐츠 업데이트](https://support.microsoft.com/help/4089498/)를 참조하고 **System Center Configuration Manager**를 선택하세요.  

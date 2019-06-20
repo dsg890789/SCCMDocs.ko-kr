@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fdfb536607ce20cd9727882ad92c3ed963c69241
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 367ab11340ef36b0caaf23e84f26bdda921ee158
+ms.sourcegitcommit: 0bd336e11c9a7f2de05656496a1bc747c5630452
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65499468"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66834741"
 ---
 # <a name="supported-sql-server-versions-for-configuration-manager"></a>Configuration Manager에 대한 지원되는 SQL Server 버전
 
@@ -227,7 +227,8 @@ SQL Server 트랜잭션 복제는 [데이터베이스 복제본](/sccm/core/serv
 ### <a name="sql-server-clr-integration"></a>SQL Server CLR 통합  
   사이트 데이터베이스를 사용하려면 SQL Server CLR(공용 언어 런타임)을 활성화해야 합니다. 이 옵션은 Configuration Manager를 설치할 때 자동으로 사용하도록 설정됩니다. CLR에 대한 자세한 내용은 [SQL Server CLR 통합 소개](https://docs.microsoft.com/dotnet/framework/data/adonet/sql/introduction-to-sql-server-clr-integration)를 참조하세요.  
 
-
+### <a name="sql-server-service-broker-ssb"></a>SQL SSB(Server Service Broker)
+ SQL Server Service Broker는 사이트 간 복제와 단일 주 사이트에 모두 필요합니다. 
 
 ##  <a name="bkmk_optional"></a> SQL Server에 대한 선택적 구성  
  전체 SQL Server 설치를 사용하는 각 데이터베이스에 대해 필요한 경우 다음 항목을 구성할 수 있습니다.  

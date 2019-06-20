@@ -2,21 +2,21 @@
 title: 자습서&#58; 기존 Configuration Manager 클라이언트의 공동 관리 사용
 titleSuffix: Configuration Manager
 description: Configuration Manager를 사용하여 Windows 10 디바이스를 이미 관리하는 경우 Microsoft Intune으로 공동 관리를 구성하세요.
-ms.date: 03/08/2019
+ms.date: 06/05/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: tutorial
 ms.assetid: 140c522f-d09a-40b6-a4b0-e0d14742834a
-author: brenduns
-ms.author: brenduns
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af526f531ed81de105aea9d6c5d7f2ea81e8f104
-ms.sourcegitcommit: 9aebc20b25cdef0af908918ccfd791f3264a5d94
+ms.openlocfilehash: 8b19f54d60ed0594be4a51b5abcef69304a27ece
+ms.sourcegitcommit: 0bd336e11c9a7f2de05656496a1bc747c5630452
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "57737284"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66834759"
 ---
 # <a name="tutorial-enable-co-management-for-existing-configuration-manager-clients"></a>자습서: 기존 Configuration Manager 클라이언트에 대해 공동 관리 사용
 공동 관리를 사용하면 Configuration Manager를 사용하여 조직의 PC를 관리하기 위해 제대로 설정된 프로세스를 유지할 수 있습니다. 이와 동시에 보안 및 최신 프로비저닝을 위해 Intune을 사용하여 클라우드에 투자할 수 있습니다.  
@@ -62,9 +62,9 @@ ms.locfileid: "57737284"
 
 ### <a name="permissions"></a>사용 권한
 이 자습서 전체에서 다음 권한을 사용하여 작업을 완료할 수 있습니다.  
-- Azure에서 ’전역 관리자’인 계정  
-- 온-프레미스 인프라에서 ‘도메인 관리자’인 계정  
-- Configuration Manager의 ‘모든’ 범위에 대해 ‘전체 관리자’인 계정   
+- Azure에서 ’전역 관리자’인 계정   
+- 온-프레미스 인프라에서 ‘도메인 관리자’인 계정   
+- Configuration Manager의 ‘모든’ 범위에 대해 ‘전체 관리자’인 계정     
 
 ## <a name="set-up-hybrid-azure-ad"></a>하이브리드 Azure AD 설정
 하이브리드 Azure AD를 설정하면 실제로 Azure AD Connect와 ADFS(Active Directory Federated Services)를 사용하여 Azure AD와 온-프레미스 AD의 통합이 설정됩니다. 성공적인 구성을 통해 작업자들은 온-프레미스 AD 자격 증명을 사용하여 외부 시스템에 원활하게 로그인할 수 있습니다.
@@ -98,14 +98,13 @@ Azure AD Connect를 구성하려면 Azure AD 테넌트에 대한 전역 관리�
 4. **개요** 페이지에서 **다음**을 선택합니다.
 5. **Azure AD에 연결** 페이지에서 Azure AD 테넌트에 대한 전역 관리자의 자격 증명을 입력합니다.
 6. **디바이스 옵션** 페이지에서 **하이브리드 Azure AD 조인 구성**을 선택하고 **다음**을 선택합니다.
-7. **SCP** 페이지에서 Azure AD Connect가 SCP(서비스 연결 지점)를 구성할 각 온-프레미스 포리스트에 대해 다음 단계를 완료한 후 **다음**을 선택합니다.  
+7. **디바이스 운영 체제** 페이지에서 Active Directory 환경 내에 디바이스가 사용하는 운영 체제를 선택하고 **다음**을 선택합니다.  
+
+   Windows 하위 수준 도메인 조인 디바이스를 지원하는 옵션을 선택할 수 있지만, 디바이스의 공동 관리는 Windows 10에서만 지원된다는 점에 유의하세요.
+8. **SCP** 페이지에서 Azure AD Connect가 SCP(서비스 연결 지점)를 구성할 각 온-프레미스 포리스트에 대해 다음 단계를 완료한 후 **다음**을 선택합니다.  
    1. 포리스트를 선택합니다.  
    2. 인증 서비스를 선택합니다.  페더레이션된 도메인이 있는 경우 조직에 Windows 10 클라이언트만 있지 않고 컴퓨터/디바이스 동기화를 구성하지 않았거나 조직에서 [SeamlessSSO](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)를 사용하지 않는다면 AD FS 서버를 선택합니다.  
    3. **추가**를 클릭하여 엔터프라이즈 관리자 자격 증명을 입력합니다.  
-8. **디바이스 운영 체제** 페이지에서 Active Directory 환경 내에 디바이스가 사용하는 운영 체제를 선택하고 **다음**을 선택합니다.  
-
-   Windows 하위 수준 도메인 조인 디바이스를 지원하는 옵션을 선택할 수 있지만, 디바이스의 공동 관리는 Windows 10에서만 지원된다는 점에 유의하세요.
-
 9. 관리되는 도메인에 있으면 이 단계를 건너뜁니다.  
 
    **페더레이션 구성** 페이지에서 AD FS 관리자의 자격 증명을 입력하고 **다음**을 선택합니다.
@@ -131,7 +130,7 @@ Azure AD Connect를 구성하려면 Azure AD 테넌트에 대한 전역 관리�
 
 또한 자동 등록이 있으면 사용자가 Windows 10 디바이스를 Intune에 등록할 수도 있습니다. 사용자가 개인 소유 디바이스에 회사 계정을 추가하거나, 회사 소유 디바이스가 Azure Active Directory에 조인되면 디바이스가 등록됩니다.  
 
-1. [Azure Portal](https://portal.azure.com/)에 로그인하고 **Azure Active Directory** > **모바일(MDM 및 MAM)** > **Microsoft Intune**을 선택합니다.  
+1. [Azure Portal](https://portal.azure.com/)에 로그인하고 **Azure Active Directory** > **모바일(MDM 및 MAM)**  > **Microsoft Intune**을 선택합니다.  
 
 2. **MDM 사용자 범위**를 구성합니다. 다음 중 하나를 지정하여 Microsoft Intune에서 관리하는 사용자의 디바이스를 구성하고 URL 값의 기본값을 수락합니다.  
 
@@ -183,7 +182,7 @@ Azure AD Connect를 구성하려면 Azure AD 테넌트에 대한 전역 관리�
 하이브리드 Azure AD를 설정하면 Configuration Manager 클라이언트가 적절히 구성되고 사용자에게 제품 라이선스가 할당되며, Windows 10 디바이스의 공동 관리를 바로 전환 및 사용하도록 설정할 수 있습니다.  
 
 > [!TIP]  
->  다음 절차의 6단계에서는 공동 관리를 위해 ‘파일럿 그룹’으로 컬렉션을 할당합니다. 이 그룹에는 공동 관리 구성을 테스트할 수 있는 소수의 클라이언트가 포함되어 있습니다. 절차를 시작하기 전에 적합한 컬렉션을 만드는 것이 좋습니다. 그러면 기존 절차를 종료하지 않고도 해당 컬렉션을 선택할 수 있습니다.  
+>  다음 절차의 6단계에서는 공동 관리를 위해 ‘파일럿 그룹’으로 컬렉션을 할당합니다.  이 그룹에는 공동 관리 구성을 테스트할 수 있는 소수의 클라이언트가 포함되어 있습니다. 절차를 시작하기 전에 적합한 컬렉션을 만드는 것이 좋습니다. 그러면 기존 절차를 종료하지 않고도 해당 컬렉션을 선택할 수 있습니다.  
 
 1. Configuration Manager 콘솔에서 **관리** > **개요** > **클라우드 서비스** > **공동 관리**로 이동합니다.
 
@@ -191,9 +190,9 @@ Azure AD Connect를 구성하려면 Azure AD 테넌트에 대한 전역 관리�
 
 3. 구독 페이지에서 **로그인**을 선택하여 Intune 테넌트에 로그인하고 **다음**을 선택합니다.
 
-4. 사용 페이지의 ‘Intune에서 자동 등록’ 드롭다운 목록에서 다음 옵션 중 하나를 선택합니다.  
+4. 사용 페이지의 ‘Intune에서 자동 등록’ 드롭다운 목록에서 다음 옵션 중 하나를 선택합니다.   
 
-   - **파일럿**  - ‘(권장)’ 지정하는 컬렉션의 멤버는 자동으로 Intune에 등록되어 공동으로 관리될 수 있습니다. 이 마법사의 ‘스테이징’ 페이지에서 파일럿 컬렉션을 지정합니다. 이 옵션을 사용하면 클라이언트의 하위 집합에서 공동 관리를 테스트할 수 있습니다. 그런 다음, 단계적 접근 방식을 사용하여 공동 관리를 추가 고객에게 출시할 수 있습니다.  
+   - **파일럿**  - ‘(권장)’ 지정하는 컬렉션의 멤버는 자동으로 Intune에 등록되어 공동으로 관리될 수 있습니다.  이 마법사의 ‘스테이징’ 페이지에서 파일럿 컬렉션을 지정합니다.  이 옵션을 사용하면 클라이언트의 하위 집합에서 공동 관리를 테스트할 수 있습니다. 그런 다음, 단계적 접근 방식을 사용하여 공동 관리를 추가 고객에게 출시할 수 있습니다.  
 
    - **모두** - 모든 클라이언트에 대한 공동 관리가 사용하도록 설정됩니다.  
 

@@ -3,8 +3,8 @@ title: 자습서&#58; 최신 인터넷 기반 Windows 10 디바이스에 대한 
 titleSuffix: Configuration Manager
 description: Configuration Manager 및 Intune용 Windows 10 디바이스에 대한 공동 관리를 구성합니다.
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
 ms.date: 03/08/2019
 ms.topic: tutorial
@@ -12,12 +12,12 @@ ms.prod: configuration-manager
 ms.service: ''
 ms.technology: ''
 ms.assetid: ''
-ms.openlocfilehash: 61400d382a539efa495af99795e32fc1f2a517ab
-ms.sourcegitcommit: 9aebc20b25cdef0af908918ccfd791f3264a5d94
+ms.openlocfilehash: 3c02a9c05e2c7d24654684f122edcd3eb5a84e06
+ms.sourcegitcommit: 0bd336e11c9a7f2de05656496a1bc747c5630452
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "57737361"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66834873"
 ---
 # <a name="tutorial-enable-co-management-for-new-internet-based-devices"></a>자습서: 최신 인터넷 기반 디바이스의 공동 관리 사용
 공동 관리를 사용하면 Configuration Manager를 사용하여 조직의 PC를 관리하기 위해 제대로 설정된 프로세스를 유지할 수 있습니다. 이와 동시에 보안 및 최신 프로비저닝을 위해 Intune을 사용하여 클라우드에 투자할 수 있습니다. 
@@ -148,7 +148,7 @@ CSR을 생성할 때 버전 2 키 공급자 유형을 요청합니다. 버전 2 
 
 4. **가져올 파일** 페이지에서 **다음**을 선택합니다. 
 
-5. **암호** 페이지의 [암호] 상자에 개인 키 암호를 입력하고 **다음**을 선택합니다.  
+5. **암호** 페이지의 [암호] 상자에 프라이빗 키 암호를 입력하고 **다음**을 선택합니다.  
   
    키를 내보낼 수 있도록 설정하는 옵션을 선택합니다.
 
@@ -200,9 +200,9 @@ Configuration Manager 콘솔 내에서 Azure 서비스를 구성하려면 Azure 
 
    - **애플리케이션 이름**: *Cloud Management 웹앱*과 같이 앱의 식별 이름을 지정합니다.  
 
-   - **홈페이지 URL**: 이 값은 Configuration Manager에서 사용되지는 않지만, Azure AD에 필요합니다. 이 값은 기본적으로 https://ConfigMgrService입니다.  
+   - **홈페이지 URL**: 이 값은 Configuration Manager에서 사용되지는 않지만, Azure AD에 필요합니다. 이 값은 기본적으로 https://ConfigMgrService 입니다.  
    
-   - **앱 ID URI**: 이 값은 Azure AD 테넌트에서 고유해야 합니다. Configuration Manager 클라이언트가 서비스 액세스를 요청할 때 사용하는 액세스 토큰입니다. 이 값은 기본적으로 https://ConfigMgrService입니다.  
+   - **앱 ID URI**: 이 값은 Azure AD 테넌트에서 고유해야 합니다. Configuration Manager 클라이언트가 서비스 액세스를 요청할 때 사용하는 액세스 토큰입니다. 이 값은 기본적으로 https://ConfigMgrService 입니다.  
 
    다음으로 **로그인**을 선택하고 Azure 전역 관리자 계정을 지정합니다. 이러한 자격 증명은 Configuration Manager에 저장되지 않습니다. 이 가상 사용자는 Configuration Manager에서 권한이 필요 없으며, Azure 서비스 마법사를 실행하는 계정과 동일한 계정이 아니어도 상관없습니다. 
 
@@ -214,7 +214,7 @@ Configuration Manager 콘솔 내에서 Azure 서비스를 구성하려면 Azure 
 
    - **애플리케이션 이름**: ‘Cloud Management 네이티브 클라이언트 앱’과 같이 앱의 식별 이름을 지정합니다. 
    
-   - **회신 URL**: 이 값은 Configuration Manager에서 사용되지는 않지만, Azure AD에 필요합니다. 이 값은 기본적으로 https://ConfigMgrClient입니다.
+   - **회신 URL**: 이 값은 Configuration Manager에서 사용되지는 않지만, Azure AD에 필요합니다. 이 값은 기본적으로 https://ConfigMgrClient 입니다.
    다음으로 **로그인**을 선택하고 Azure 전역 관리자 계정을 지정합니다. 웹앱과 같은 이러한 자격 증명은 저장되지 않으며 Configuration Manager에서 권한이 필요하지 않습니다.
    
    로그인하면 결과가 표시됩니다. **확인**을 선택하면 클라이언트 만들기 애플리케이션 대화 상자가 닫히고 앱 속성 페이지로 돌아갑니다. 그런 다음, 계속하려면 **다음**을 선택합니다.

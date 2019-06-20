@@ -2,7 +2,7 @@
 title: Windows Embedded 디바이스에 클라이언트 배포 계획
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에서 Windows Embedded 디바이스에 클라이언트 배포를 계획합니다.
-ms.date: 04/23/2017
+ms.date: 06/12/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ba85b6d1e545f467816b3e8dddeec04ae4192a4
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 1fd221ecb62a74e9ff3a56815fbdeacdd27ca026
+ms.sourcegitcommit: e3c1eb0b75d79c05a750d49354c851d15d5e26a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56123688"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67038338"
 ---
 # <a name="planning-for-client-deployment-to-windows-embedded-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Windows Embedded 디바이스에 클라이언트 배포 계획
 
@@ -76,11 +76,14 @@ ms.locfileid: "56123688"
 >   -   CCMINSTALLDIR\ServiceData  
 >   -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CCM\StateSystem  
 > 
-> **FBWF 및 UWF만 사용하는 디바이스의 경우:** 작업 그룹에서 클라이언트가 관리 지점에 대한 인증을 위해 인증서를 사용하는 경우 클라이언트가 계속 관리 지점과 통신할 수 있도록 개인 키도 제외해야 합니다. 이러한 디바이스에서는 다음과 같은 예외를 구성합니다.  
+> **FBWF 및 UWF만 사용하는 디바이스의 경우:** 작업 그룹에서 클라이언트가 관리 지점에 대한 인증을 위해 인증서를 사용하는 경우 클라이언트가 계속 관리 지점과 통신할 수 있도록 프라이빗 키도 제외해야 합니다. 이러한 디바이스에서는 다음과 같은 예외를 구성합니다.  
 > 
 > - c:\Windows\System32\Microsoft\Protect  
 >   -   c:\ProgramData\Microsoft\Crypto  
 >   -   HKEY_LOCAL_MACHINE\Software\Microsoft\SystemCertificates\SMS\Certificates  
+
+> [!NOTE]
+> 위의 **중요** 상자에 설명된 예외 외에는 Configuration Manager 클라이언트에 더 이상의 예외가 필요 없습니다. Configuration Manager 또는 WMI(WBEM) 관련 예외를 더 추가하면 디바이스 설정이 서비스 모드에서 멈추거나 디바이스에서 재부팅 루프가 발생하는 등 Configuration Manager에서 오류가 발생할 수 있습니다. 불필요한 예외로는 Configuration Manager 클라이언트 디렉터리, CCMcache 디렉터리, CCMSetup 디렉터리, 작업 순서 캐시 디렉터리, WBEM 디렉터리 및 Configuration Manager 관련 레지스트리 키가 있습니다.
 
  Configuration Manager에서 쓰기 필터를 사용하는 Windows Embedded 디바이스를 배포하고 관리하는 예제 시나리오를 보려면 [Windows Embedded 디바이스의 System Center Configuration Manager 클라이언트 배포 및 관리에 대한 예제 시나리오](../../../../core/clients/deploy/example-scenario-for-deploying-and-managing-clients-on-windows-embedded-devices.md)를 참조하세요.  
 

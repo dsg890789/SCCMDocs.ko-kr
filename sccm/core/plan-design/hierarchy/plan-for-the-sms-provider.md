@@ -2,7 +2,7 @@
 title: SMS 공급자에 대한 계획
 titleSuffix: Configuration Manager
 description: Configuration Manager의 SMS 공급 기업 사이트 시스템 역할에 대해 알아봅니다.
-ms.date: 05/21/2019
+ms.date: 06/12/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 31818bf0b639db4172e090a68a704380208781ca
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.openlocfilehash: 0458d4b3c1b406a14f1492ed4df91933436cb9a6
+ms.sourcegitcommit: e3c1eb0b75d79c05a750d49354c851d15d5e26a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66176984"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67038604"
 ---
 # <a name="plan-for-the-sms-provider"></a>SMS 공급자에 대한 계획 
 
@@ -63,6 +63,10 @@ SMS 공급 기업을 관리하는 방법에 대한 자세한 내용은 [SMS 공�
 
 -   Windows ADK 구성 요소를 지원하려면 디스크 공간에 650MB 이상의 여유가 있어야 합니다. Windows ADK 및 SMS 공급 기업에 대한 자세한 내용은 [OS 배포 요구 사항](#BKMK_WAIKforSMSProv)을 참조하세요.  
 
+-   Windows server 역할 **웹 서버(IIS)** 사용  
+
+    > [!Note]  
+    > 모든 SMS 공급자는 인증서가 필요한 [관리 서비스](/sccm/core/plan-design/hierarchy/plan-for-the-sms-provider#bkmk_admin-service)를 설치하려고 시도합니다. 이 서비스는 인증서를 HTTPS 포트 443에 바인딩하는 IIS에 종속됩니다. [고급 HTTP](/sccm/core/plan-design/hierarchy/enhanced-http)를 사용하도록 설정하면 사이트에서 IIS API를 사용하여 해당 인증서를 바인딩합니다. 사이트에서 PKI를 사용하는 경우 SMS 공급자의 IIS에서 PKI 인증서를 수동으로 바인딩해야 합니다.  
 
 
 ##  <a name="bkmk_location"></a> 위치  

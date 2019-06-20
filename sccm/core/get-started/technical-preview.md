@@ -2,7 +2,7 @@
 title: 기술 미리 보기 릴리스
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 새로운 기능과 기술을 시험 사용할 수 있는 기술 미리 보기 분기를 알아봅니다.
-ms.date: 05/21/2019
+ms.date: 06/12/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e4475e5db6562fc95d3fafc7c88805b2df53075
-ms.sourcegitcommit: d1df13fc95a1f1540177c294555d9be26161b9cb
+ms.openlocfilehash: bd2336ecef4af05d253c413f0402d5a83414df97
+ms.sourcegitcommit: e3c1eb0b75d79c05a750d49354c851d15d5e26a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65974119"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67038713"
 ---
 # <a name="technical-preview-for-configuration-manager"></a>Configuration Manager에 대한 기술 미리 보기
 
@@ -119,32 +119,31 @@ Microsoft는 세 개의 연속 버전을 사용할 수 있을 때까지 각 기�
 
 <!-- This is the full list of new features in the latest TP release -->
 
-### <a name="technical-preview-version-1905"></a>Technical Preview 버전 1905
+### <a name="technical-preview-version-1906"></a>Technical Preview 버전 1906
 
 <!-- - [title](/sccm/core/get-started/2019/technical-preview-1901#bkmk_anchor) <!--ID-->
 
-- [향상된 WSUS 유지 관리 제어](/sccm/core/get-started/2019/technical-preview-1905#improved-control-over-wsus-maintenance) <!--4110109-->
-- [향상된 Configuration Manager 콘솔 기능](/sccm/core/get-started/2019/technical-preview-1905#bkmk_console) <!--4616810-->
-- [소프트웨어 업데이트에 대한 기본 최대 실행 시간 구성](/sccm/core/get-started/2019/technical-preview-1905#bkmk_timeout) <!--3734426-->
-- [Windows Defender Application Guard 파일 신뢰 기준](/sccm/core/get-started/2019/technical-preview-1905#bkmk_wdag) <!--3555858-->
-- [애플리케이션 그룹](/sccm/core/get-started/2019/technical-preview-1905#bkmk_app-group) <!--3555907-->
-- [앱 모델 배포 유형의 작업 순서](/sccm/core/get-started/2019/technical-preview-1905#bkmk_tsdt) <!--3555953-->
-- [BitLocker 관리](/sccm/core/get-started/2019/technical-preview-1905#bkmk_bitlocker) <!--3601034-->
-- [작업 순서 배포](/sccm/core/get-started/2019/technical-preview-1905#bkmk_tsdebug) <!--3612274-->
-- [클라이언트 데이터 원본 대시보드의 배달 최적화](/sccm/core/get-started/2019/technical-preview-1905#bkmk_do) <!--3555759-->
-- [향상된 커뮤니티 허브 기능](/sccm/core/get-started/2019/technical-preview-1905#bkmk_hub) <!--4224401-->
-- [디바이스 목록에서 SMBIOS GUID 보기](/sccm/core/get-started/2019/technical-preview-1905#bkmk_smbios) <!--4526580-->
-- [OneTrace 로그 뷰어](/sccm/core/get-started/2019/technical-preview-1905#bkmk_onetrace) <!--3555962-->
-- [소프트웨어 센터 인프라 개선 사항](/sccm/core/get-started/2019/technical-preview-1905#bkmk_swctr) <!--3555950-->
-- [소프트웨어 센터 탭 사용자 지정의 개선 사항](/sccm/core/get-started/2019/technical-preview-1905#improvements-to-software-center-tab-customizations) <!--4063773-->
-- [앱 승인의 개선 사항](/sccm/core/get-started/2019/technical-preview-1905#bkmk_approve) <!--4224910-->
-- [사전 승인된 애플리케이션의 설치 다시 시도](/sccm/core/get-started/2019/technical-preview-1905#bkmk_retry) <!--4336307-->
-- [디바이스에 대한 애플리케이션 설치](/sccm/core/get-started/2019/technical-preview-1905#bkmk_device-app) <!--4402180-->
-- [다시 시작에 대한 카운트다운 미리 알림 빈도 증가](/sccm/core/get-started/2019/technical-preview-1905#bkmk_restart) <!--3976435-->
-- [Azure Active Directory 그룹에 컬렉션 멤버 자격 결과 동기화](/sccm/core/get-started/2019/technical-preview-1905#bkmk_aadcollsync) <!--3607475-->
-- [클라이언트 캐시 최소 보존 기간 구성](/sccm/core/get-started/2019/technical-preview-1905#bkmk_cache) <!--4485509-->
-- [향상된 OS 배포 기능](/sccm/core/get-started/2019/technical-preview-1905#bkmk_osd) <!--4512937,4224642-->
-- [SQL AlwaysOn 노드 추가](/sccm/core/get-started/2019/technical-preview-1905#bkmk_sqlao) <!--3127336-->
+- [유지 관리 작업 개선](/sccm/core/get-started/2019/technical-preview-1906#improvements-to-maintenance-tasks) <!--3555894-->
+- [Configuration Manager 업데이트 데이터베이스 업그레이드 모니터링](/sccm/core/get-started/2019/technical-preview-1906#configuration-manager-update-database-upgrade-monitoring) <!--4200581-->
+- [공동 관리 워크로드를 위한 여러 파일럿 그룹](/sccm/core/get-started/2019/technical-preview-1906#bkmk_comgmt_pilot) <!--3555750-->
+- [새로 제공되는 소프트웨어의 알림 논리 재설계](/sccm/core/get-started/2019/technical-preview-1906#redesigned-notification-logic-for-newly-available-software) <!--3555904-->
+- [폴더에 대한 RBAC](/sccm/core/get-started/2019/technical-preview-1906#rbac-on-folders) <!--3600867-->
+- [Azure Active Directory 사용자 그룹 검색](/sccm/core/get-started/2019/technical-preview-1906#bkmk_aad-disco) <!--3611956-->
+- [어디서나 클라우드 관리 게이트웨이를 사용하여 원격 제어](/sccm/core/get-started/2019/technical-preview-1906#remote-control-anywhere-using-cloud-management-gateway) <!--4575930-->
+- [향상된 커뮤니티 허브 기능](/sccm/core/get-started/2019/technical-preview-1906#bkmk_hub) <!--3555935-->
+- [CMPivot에서 조인, 추가 연산자 및 집계 추가](/sccm/core/get-started/2019/technical-preview-1906#bkmk_cmpivot) <!--4054074-->
+- [향상된 CMPivot 기능](/sccm/core/get-started/2019/technical-preview-1906#improvements-to-cmpivot) <!--4619340,4683130-->
+- [향상된 Configuration Manager 콘솔 기능](/sccm/core/get-started/2019/technical-preview-1906#bkmk_console) <!--4223683-->
+- [Windows Virtual Desktop 지원](/sccm/core/get-started/2019/technical-preview-1906#bkmk_winsku) <!--3556025-->
+- [다시 시작에 대한 카운트다운 미리 알림 빈도 증가](/sccm/core/get-started/2019/technical-preview-1906#more-frequent-countdown-notifications-for-restarts) <!--3976435-->
+- [디바이스 토큰을 사용하여 공동 관리 자동 등록](/sccm/core/get-started/2019/technical-preview-1906#bkmk_comgmt) <!--4454491-->
+- [타사 업데이트 카탈로그에 대한 추가 옵션](/sccm/core/get-started/2019/technical-preview-1906#additional-options-for-third-party-update-catalogs) <!--4469002-->
+- [작업 순서 중에 클라이언트 캐시에서 앱 콘텐츠 제거](/sccm/core/get-started/2019/technical-preview-1906#bkmk_tscache) <!--4485675-->
+- [새 Windows 10 버전 1903 이상 제품 범주](/sccm/core/get-started/2019/technical-preview-1906#new-windows-10-version-1903-and-later-product-category) <!--4682946-->
+- [NTLM 대체에 대한 관리 인사이트 규칙](/sccm/core/get-started/2019/technical-preview-1906#bkmk_ntlm) <!--4572953-->
+- [디바이스에 배포된 필터 애플리케이션](/sccm/core/get-started/2019/technical-preview-1906#bkmk_appcategory) <!--4451056-->
+- [향상된 OS 배포 기능](/sccm/core/get-started/2019/technical-preview-1906#bkmk_osd) <!--4668846, 2840337, 4512937-->
+- [소프트웨어 센터의 사용자 지정 탭에 대한 직접 링크](/sccm/core/get-started/2019/technical-preview-1906#bkmk_swctr) <!--4655176-->
 
 > [!Note]  
 > 이전 버전의 기술 미리 보기에서 사용할 수 있는 기능은 이후 버전에서도 계속 사용할 수 있습니다. 마찬가지로 Configuration Manager 현재 분기에 추가된 기능은 기술 미리 보기 분기에서 계속 사용할 수 있습니다.  
@@ -160,6 +159,28 @@ Then remove the bottom of this list and/or move individual items not in CB to th
 
  | 기능 | 기술 미리 보기 버전 | 현재 분기 버전 |  
  |---------|---------------------------|------------------------|
+ | 향상된 WSUS 유지 관리 제어 <!--4110109--> | [Tech Preview 1905](/sccm/core/get-started/2019/technical-preview-1905#improved-control-over-wsus-maintenance) | ![추가되지 않음](media/Red_X.gif) |
+ | 향상된 Configuration Manager 콘솔 기능 <!--4616810--> | [Tech Preview 1905](/sccm/core/get-started/2019/technical-preview-1905#bkmk_console) | ![추가되지 않음](media/Red_X.gif) |
+ | 소프트웨어 업데이트에 대한 기본 최대 실행 시간 구성 <!--3734426--> | [Tech Preview 1905](/sccm/core/get-started/2019/technical-preview-1905#bkmk_timeout) | ![추가되지 않음](media/Red_X.gif) |
+ | Windows Defender Application Guard 파일 신뢰 기준 <!--3555858--> | [Tech Preview 1905](/sccm/core/get-started/2019/technical-preview-1905#bkmk_wdag) | ![추가되지 않음](media/Red_X.gif) |
+ | 애플리케이션 그룹 <!--3555907--> | [Tech Preview 1905](/sccm/core/get-started/2019/technical-preview-1905#bkmk_app-group) | ![추가되지 않음](media/Red_X.gif) |
+ | 앱 모델 배포 유형의 작업 순서 <!--3555953--> | [Tech Preview 1905](/sccm/core/get-started/2019/technical-preview-1905#bkmk_tsdt) | ![추가되지 않음](media/Red_X.gif) |
+ | BitLocker 관리 <!--3601034--> | [Tech Preview 1905](/sccm/core/get-started/2019/technical-preview-1905#bkmk_bitlocker) | ![추가되지 않음](media/Red_X.gif) |
+ | 작업 순서 디버거 <!--3612274--> | [Tech Preview 1905](/sccm/core/get-started/2019/technical-preview-1905#bkmk_tsdebug) | ![추가되지 않음](media/Red_X.gif) |
+ | 클라이언트 데이터 원본 대시보드의 전송 최적화 <!--3555759--> | [Tech Preview 1905](/sccm/core/get-started/2019/technical-preview-1905#bkmk_do) | ![추가되지 않음](media/Red_X.gif) |
+ | 향상된 커뮤니티 허브 기능 <!--4224401--> | [Tech Preview 1905](/sccm/core/get-started/2019/technical-preview-1905#bkmk_hub) | ![추가되지 않음](media/Red_X.gif) |
+ | 디바이스 목록에서 SMBIOS GUID 보기 <!--4526580--> | [Tech Preview 1905](/sccm/core/get-started/2019/technical-preview-1905#bkmk_smbios) | ![추가되지 않음](media/Red_X.gif) |
+ | OneTrace 로그 뷰어 <!--3555962--> | [Tech Preview 1905](/sccm/core/get-started/2019/technical-preview-1905#bkmk_onetrace) | ![추가되지 않음](media/Red_X.gif) |
+ | 소프트웨어 센터 인프라 개선 사항 <!--3555950--> | [Tech Preview 1905](/sccm/core/get-started/2019/technical-preview-1905#bkmk_swctr) | ![추가되지 않음](media/Red_X.gif) |
+ | 소프트웨어 센터 탭 사용자 지정의 개선 사항 <!--4063773--> | [Tech Preview 1905](/sccm/core/get-started/2019/technical-preview-1905#improvements-to-software-center-tab-customizations) | ![추가되지 않음](media/Red_X.gif) |
+ | 앱 승인 개선 사항 <!--4224910--> | [Tech Preview 1905](/sccm/core/get-started/2019/technical-preview-1905#bkmk_approve) | ![추가되지 않음](media/Red_X.gif) |
+ | 사전 승인된 애플리케이션의 설치 다시 시도 <!--4336307--> | [Tech Preview 1905](/sccm/core/get-started/2019/technical-preview-1905#bkmk_retry) | ![추가되지 않음](media/Red_X.gif) |
+ | 디바이스용 애플리케이션 설치 <!--4402180--> | [Tech Preview 1905](/sccm/core/get-started/2019/technical-preview-1905#bkmk_device-app) | ![추가되지 않음](media/Red_X.gif) |
+ | 다시 시작에 대한 카운트다운 알림 빈도 증가 <!--3976435--> | [Tech Preview 1905](/sccm/core/get-started/2019/technical-preview-1905#bkmk_restart) | ![추가되지 않음](media/Red_X.gif) |
+ | Azure Active Directory 그룹에 컬렉션 멤버 자격 결과 동기화 <!--3607475--> | [Tech Preview 1905](/sccm/core/get-started/2019/technical-preview-1905#bkmk_aadcollsync) | ![추가되지 않음](media/Red_X.gif) |
+ | 클라이언트 캐시 최소 보존 기간 구성 <!--4485509--> | [Tech Preview 1905](/sccm/core/get-started/2019/technical-preview-1905#bkmk_cache) | ![추가되지 않음](media/Red_X.gif) |
+ | 향상된 OS 배포 <!--4512937,4224642--> | [Tech Preview 1905](/sccm/core/get-started/2019/technical-preview-1905#bkmk_osd) | ![추가되지 않음](media/Red_X.gif) |
+ | SQL AlwaysOn 노드 추가 <!--3127336--> | [Tech Preview 1905](/sccm/core/get-started/2019/technical-preview-1905#bkmk_sqlao) | ![추가되지 않음](media/Red_X.gif) |
  | Office 365 ProPlus 업그레이드 준비 대시보드 <!--4021125--> | [Tech Preview 1904](/sccm/core/get-started/2019/technical-preview-1904#bkmk_o365) | ![추가되지 않음](media/Red_X.gif) |
  | 기능 업데이트 동안 동적 업데이트 구성 <!--4062619--> | [Tech Preview 1904](/sccm/core/get-started/2019/technical-preview-1904#configure-dynamic-update-during-feature-updates) | ![추가되지 않음](media/Red_X.gif) |
  | 커뮤니티 허브 및 GitHub <!--3555935,3555936--> | [Tech Preview 1904](/sccm/core/get-started/2019/technical-preview-1904#community-hub-and-github) | ![추가되지 않음](media/Red_X.gif) |
@@ -173,18 +194,6 @@ Then remove the bottom of this list and/or move individual items not in CB to th
  | 작업 순서를 편집하기 위해 잠금 확보 <!--3699337--> | [Tech Preview 1903](/sccm/core/get-started/2019/technical-preview-1903#bkmk_sedo) | ![추가되지 않음](media/Red_X.gif) |
  | 필수 업데이트 드릴스루 <!--4224414--> | [Tech Preview 1903](/sccm/core/get-started/2019/technical-preview-1903#bkmk_req-updates) | ![추가되지 않음](media/Red_X.gif) |
  | 향상된 작업 순서 미디어 만들기 기능 <!--4090666--> | [Tech Preview 1903](/sccm/core/get-started/2019/technical-preview-1903#bkmk_tsmedia) | ![추가되지 않음](media/Red_X.gif) |
- | Office 365 업데이트용 추가 언어 <!--3555955--> | [Tech Preview 1902.2](/sccm/core/get-started/2019/technical-preview-1902-2#bkmk_o365lang) | 버전 1902 |
- | Office 365 ProPlus 준비를 위한 분석과 통합 <!--3735402--> | [Tech Preview 1902.2](/sccm/core/get-started/2019/technical-preview-1902-2#bkmk_o365) | 버전 1902 |
- | 단계적 배포 성공 조건 개선 <!--3555946--> | [Tech Preview 1902.2](/sccm/core/get-started/2019/technical-preview-1902-2#bkmk_pod) | 버전 1902 |
- | 고급 HTTP로 개선 <!--3798957--> | [Tech Preview 1902.2](/sccm/core/get-started/2019/technical-preview-1902-2#bkmk_ehttp) | 버전 1902 |
- | 알림 메시지를 대화 상자 창으로 바꾸기 <!--3555947--> | [Tech Preview 1902](/sccm/core/get-started/2019/technical-preview-1902#bkmk_impact) | 버전 1902 |
- | 현재 위치 업그레이드 작업 순서 중 진행 상태 <!--3747129--> | [Tech Preview 1902](/sccm/core/get-started/2019/technical-preview-1902#bkmk_ipu) | 버전 1902 |
- | 알려진 Windows 폴더를 OneDrive로 리디렉션 <!--3556021--> | [Tech Preview 1902](/sccm/core/get-started/2019/technical-preview-1902#bkmk_odfb) | 버전 1902 |
- | 원격 제어 시 첫 번째 화면만 보기 <!--3231732--> | [Tech Preview 1902](/sccm/core/get-started/2019/technical-preview-1902#bkmk_rcmulti) | 버전 1902 |
- | PowerShell 스크립트 편집 또는 복사 <!--3705507--> | [Tech Preview 1902](/sccm/core/get-started/2019/technical-preview-1902#bkmk_psedit) | 버전 1902 |
- | 경계 그룹에 클라우드 관리 게이트웨이 추가 <!--3640932--> | [Tech Preview 1902](/sccm/core/get-started/2019/technical-preview-1902#bkmk_cmgbg) | 버전 1902 |
- | 소프트웨어 센터의 기본 보기 구성 <!--3612112--> | [Tech Preview 1902](/sccm/core/get-started/2019/technical-preview-1902#bkmk_swctr) | 버전 1902 |
- | 클라이언트 상태 대시보드 개선 사항 <!--3599209--> | [Tech Preview 1902](/sccm/core/get-started/2019/technical-preview-1902#bkmk_health) | 버전 1902 |
 
 
 ## <a name="features-in-previous-technical-previews"></a>이전 기술 미리 보기의 기능
