@@ -11,14 +11,14 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 102890f9e4b96328f117779ba63e9c72bf8f5d15
-ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
+ms.openlocfilehash: 9f49955fed92061fb856a5ff49203f1fa6c9d186
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67158950"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67285640"
 ---
-# <a name="tutorial-deploy-windows-10-to-pilot"></a>자습서: 파일럿을 Windows 10을 배포 합니다.
+# <a name="tutorial-deploy-windows-10-to-pilot"></a>자습서: 파일럿에 Windows 10 배포
 
 > [!Note]  
 > 이 정보는 정식으로 발표 되기 전에 대폭 수정 될 수 있는 미리 보기 서비스에 연결 합니다. Microsoft는 여기에 제공된 정보와 관련하여 명시적이거나 묵시적인 어떤 보증도 하지 않습니다.  
@@ -221,6 +221,9 @@ Configuration Manager 업데이트, 데스크톱 Analytics에 연결 및 장치 
 8. 마법사를 완료합니다.  
 
 Configuration Manager에는 대상 컬렉션의 장치를 구성 하는 설정 정책을 만듭니다. 이 정책은 장치가 Microsoft에 데이터를 보낼 수 있도록 진단 데이터 설정을 포함 합니다. 기본적으로 클라이언트 1 시간 마다 정책을 업데이트합니다. 새 설정을 받은 후 데이터가 데스크톱 Analytics에서 사용할 수 있는 전에 몇 시간 더 많은 수 있습니다.
+
+> [!Note]  
+> 이러한 설정에 대 한 자세한 내용은 참조 하세요. [Windows 설정](/sccm/desktop-analytics/enroll-devices#windows-settings)합니다.  
 
 데스크톱 분석에 대 한 장치 구성을 모니터링 합니다. Configuration Manager 콘솔에서로 이동 합니다 **소프트웨어 라이브러리** 작업 영역에서 확장을 **데스크톱 분석 서비스** 노드를 선택한는 **연결 상태** 대시보드입니다.  
 

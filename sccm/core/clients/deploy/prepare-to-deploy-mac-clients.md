@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 49edf86f855c934d29ae0ed1101bb319278ccc7c
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: f9ead2348e96856d006c8041705c4b4e30c145e9
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56141054"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67286825"
 ---
 # <a name="prepare-to-deploy-client-software-to-macs"></a>Mac에 클라이언트 소프트웨어 배포 준비
 
@@ -44,9 +44,9 @@ Mac 클라이언트가CRL(인증서 해지 목록)을 찾을 수 없는 경우 C
 
 Mac 컴퓨터에 Configuration Manager 클라이언트를 설치하기 전에 클라이언트 인증서 설치 방법을 결정하세요.  
 
--   [CMEnroll 도구](/sccm/core/clients/deploy/deploy-clients-to-macs#install-the-client-and-then-enroll-the-client-certificate-on-the-mac)를 사용하여 Configuration Manager 등록을 사용합니다. 등록 프로세스는 자동 인증서 갱신을 지원하지 않습니다. 인증서가 만료되기 전에 Mac 컴퓨터를 다시 등록합니다.  
+-   [CMEnroll 도구](/sccm/core/clients/deploy/deploy-clients-to-macs#client-and-certificate-automation-with-cmenroll)를 사용하여 Configuration Manager 등록을 사용합니다. 등록 프로세스는 자동 인증서 갱신을 지원하지 않습니다. 인증서가 만료되기 전에 Mac 컴퓨터를 다시 등록합니다.  
 
--   [Configuration Manager와 별개의 인증서 요청 및 설치 방법을 사용합니다](/sccm/core/clients/deploy/deploy-clients-to-macs#use-a-certificate-request-and-installation-method-that-is-independent-from-configuration-manager).  
+-   [Configuration Manager와 별개의 인증서 요청 및 설치 방법을 사용합니다](/sccm/core/clients/deploy/deploy-clients-to-macs#bkmk_external).  
 
 Mac 클라이언트 인증서 요구 사항에 대한 자세한 내용은 [Configuration Manager를 위한 PKI 인증서 요구 사항](/sccm/core/plan-design/network/pki-certificate-requirements)을 참조하세요.  
 
@@ -73,7 +73,7 @@ Mac 클라이언트는 해당 클라이언트를 관리하는 Configuration Mana
 
 관리 지점, 배포 지점 및 등록 프록시 지점용 웹 서버 인증서에 사이트 시스템의 인터넷 FQDN 값을 지정합니다.
 
-예제 배포에 대한 자세한 내용은 [IIS를 실행하는 사이트 시스템에 대해 웹 서버 인증서 배포](/sccm/plan-design/network/example-deployment-of-pki-certificates#BKMK_webserver2008_cm2012)를 참조하세요.  
+예제 배포에 대한 자세한 내용은 [IIS를 실행하는 사이트 시스템에 대해 웹 서버 인증서 배포](/sccm/core/plan-design/network/example-deployment-of-pki-certificates#BKMK_webserver2008_cm2012)를 참조하세요.  
 
 
 
@@ -85,9 +85,9 @@ Mac 클라이언트는 해당 클라이언트를 관리하는 Configuration Mana
 
 -   배포 지점  
 
-관리 지점에 대한 클라이언트 인증서를 만들고 설치하는 배포의 예제는 [Windows 컴퓨터용 클라이언트 인증서 배포](/sccm/plan-design/network/example-deployment-of-pki-certificates#BKMK_client2008_cm2012)를 참조하세요.  
+관리 지점에 대한 클라이언트 인증서를 만들고 설치하는 배포의 예제는 [Windows 컴퓨터용 클라이언트 인증서 배포](/sccm/core/plan-design/network/example-deployment-of-pki-certificates#BKMK_client2008_cm2012)를 참조하세요.  
 
-배포 지점에 대한 클라이언트 인증서를 만들고 설치하는 배포의 예제는 [배포 지점용 클라이언트 인증서 배포](/sccm/plan-design/network/example-deployment-of-pki-certificates#BKMK_clientdistributionpoint2008_cm2012)를 참조하세요.  
+배포 지점에 대한 클라이언트 인증서를 만들고 설치하는 배포의 예제는 [배포 지점용 클라이언트 인증서 배포](/sccm/core/plan-design/network/example-deployment-of-pki-certificates#BKMK_clientdistributionpoint2008_cm2012)를 참조하세요.  
 
 > [!IMPORTANT]  
 >  macOS Sierra를 실행하는 디바이스에 클라이언트를 배포하려면 관리 지점 인증서의 주체 이름을 올바르게 구성해야 합니다. 예를 들어 관리 지점 서버의 FQDN을 사용합니다.  
@@ -98,7 +98,7 @@ Mac 클라이언트는 해당 클라이언트를 관리하는 Configuration Mana
 
 인증서 템플릿에는 Mac 컴퓨터에 인증서를 등록하는 사용자 계정에 대한 **읽기** 및 **등록** 권한이 있어야 합니다.  
 
-자세한 내용은 [Mac 컴퓨터용 클라이언트 인증서 배포](/sccm/plan-design/network/example-deployment-of-pki-certificates#BKMK_MacClient_SP1)를 참조하세요.  
+자세한 내용은 [Mac 컴퓨터용 클라이언트 인증서 배포](/sccm/core/plan-design/network/example-deployment-of-pki-certificates#BKMK_MacClient_SP1)를 참조하세요.  
 
 
 

@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6d427571db52f19e9d1e45648bdf2cc66b6c6d9
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 9bdca6ded291ca6e32194c61ce24b33b690489cb
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56141275"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67286239"
 ---
 # <a name="capabilities-in-technical-preview-1703-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1703의 기능
 
@@ -83,7 +83,7 @@ Technical Preview 1703에는 **Azure 서비스 구성** 마법사가 도입되�
 
 Technical Preview 1703에서는 WSfB(비즈니스용 Windows 스토어)만 이 마법사를 사용하여 구성됩니다.  다른 클라우드 서비스는 별도의 워크플로를 사용하여 구성됩니다.
 
--   이 Preview 항목의 정보를 사용하여 현재 분기 항목 [System Center Configuration Manager를 사용하여 비즈니스용 Windows 스토어에서 앱 관리](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)의 [비즈니스용 Windows 스토어 동기화 설정](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business#set-up-windows-store-for-business-synchronization) 섹션에 있는 구성 단계를 바꿉니다.
+-   이 Preview 항목의 정보를 사용하여 현재 분기 항목 [System Center Configuration Manager를 사용하여 비즈니스용 Windows 스토어에서 앱 관리](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)의 [비즈니스용 Windows 스토어 동기화 설정](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business#bkmk_setup) 섹션에 있는 구성 단계를 바꿉니다.
 
 -   웹앱에 대한 자세한 내용은 [Azure App Service의 인증 및 권한 부여](https://docs.microsoft.com/azure/app-service/app-service-authentication-overview) 및 [Web Apps 개요](https://docs.microsoft.com/azure/app-service-web/app-service-web-overview)를 참조하세요.
 

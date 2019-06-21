@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11ad5a0bef004b778ba431c9a2da30f51eafc443
-ms.sourcegitcommit: f531d0a622f220739710b2fe6644ea58d024064a
+ms.openlocfilehash: bbc26ed19de04fd3000d6c3ca713bb2a705ce8ea
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65933286"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67286217"
 ---
 # <a name="capabilities-in-technical-preview-1706-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1706의 기능
 
@@ -258,10 +258,10 @@ ms.locfileid: "65933286"
 연결을 구성하는 방법이 변경되었으나 연결의 필수 구성 요소 및 업그레이드 준비 상태를 사용하는 방법은 동일합니다.   
 
 ### <a name="prerequisites-for-upgrade-readiness"></a>업그레이드 준비 상태에 대한 필수 구성 요소
-[업그레이드 준비 상태에 연결](/sccm/core/clients/manage/upgrade/upgrade-analytics#create-a-connection-to-upgrade-readiness)하기 위한 필수 구성 요소는 Configuration Manager의 현재 분기에 대한 필수 구성 요소에서 달라지지 않았습니다. 여기에서는 편의를 위해 반복해서 설명됩니다.  
+[업그레이드 준비 상태에 연결](/sccm/core/clients/manage/upgrade-readiness#connect-configuration-manager-to-upgrade-readiness)하기 위한 필수 구성 요소는 Configuration Manager의 현재 분기에 대한 필수 구성 요소에서 달라지지 않았습니다. 여기에서는 편의를 위해 반복해서 설명됩니다.  
 
 **전제 조건**
--   연결을 추가하려면 Configuration Manager 환경에서 먼저 [서비스 연결 지점](/sccm/core/servers/deploy/configure/about-the-service-connection-point)을 [온라인 모드](/sccm/core/servers/deploy/configure/about-the-service-connection-point#a-namebkmkmodesa-modes-of-operation)로 구성해야 합니다. 사용자 환경에 연결을 추가하면 이 사이트 시스템 역할을 실행하는 컴퓨터에 Microsoft Monitoring Agent도 설치됩니다.
+-   연결을 추가하려면 Configuration Manager 환경에서 먼저 [서비스 연결 지점](/sccm/core/servers/deploy/configure/about-the-service-connection-point)을 [온라인 모드](/sccm/core/servers/deploy/configure/about-the-service-connection-point#bkmk_modes)로 구성해야 합니다. 사용자 환경에 연결을 추가하면 이 사이트 시스템 역할을 실행하는 컴퓨터에 Microsoft Monitoring Agent도 설치됩니다.
 -   Configuration Manager를 "웹 애플리케이션 및/또는 Web API" 관리 도구로 등록하고 [이 등록의 클라이언트 ID](https://azure.microsoft.com/documentation/articles/active-directory-integrating-applications/)를 받습니다.
 -   Azure Active Directory에서 등록된 관리 도구에 대한 클라이언트 키를 만듭니다.
 -   Azure 관리 포털에서 [Configuration Manager에 OMS에 대한 사용 권한 제공](https://azure.microsoft.com/documentation/articles/log-analytics-sccm/#provide-configuration-manager-with-permissions-to-oms)에 설명된 대로 OMS에 액세스할 수 있는 권한을 등록된 웹앱에 제공합니다.
@@ -410,7 +410,7 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 다음 작업을 완료한 다음 리본 메뉴의 **홈** 탭에서 **사용자 의견**을 전송하여 작동 상황을 알려주세요.
 1. Microsoft Surface 드라이버에 대한 동기화를 사용하도록 설정합니다. [분류 및 제품 구성](/sccm/sum/get-started/configure-classifications-and-products)의 절차를 사용하고 **분류** 탭에서 **Microsoft Surface 드라이버 및 펌웨어 업데이트 포함**을 선택하여 Surface 드라이버를 사용하도록 설정합니다.
-2. [Microsoft Surface 드라이버를 동기화](/sccm/sum/get-started/synchronize-software-updates.md)합니다.
+2. [Microsoft Surface 드라이버를 동기화](/sccm/sum/get-started/synchronize-software-updates)합니다.
 3. [동기화된 Microsoft Surface 드라이버를 배포](/sccm/sum/deploy-use/deploy-software-updates)합니다.
 
 ## <a name="configure-windows-update-for-business-deferral-policies"></a>비즈니스용 Windows 업데이트 지연 정책 구성
@@ -427,11 +427,11 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반
 4. **지연 정책** 페이지에서 기능 업데이트를 연기할지 또는 일시 중지할지를 구성합니다.    
     기능 업데이트는 일반적으로 새로운 Windows용 기능입니다. **분기 준비 수준** 설정을 구성한 후에 Microsoft에서 출시한 후에 기능 업데이트 수신을 연기할지 여부 및 연기 기간을 정의할 수 있습니다.
     - **분기 준비 상태 수준**: 디바이스가 Windows 업데이트(현재 분기 또는 비즈니스용 현재 분기)를 받을 분기를 설정합니다.
-    - **지연 기간(일)**:  기능 업데이트를 연기할 일 수를 지정합니다. 이러한 기능 업데이트는 출시되고 180일 동안 수신을 연기할 수 있습니다.
+    - **지연 기간(일)** :  기능 업데이트를 연기할 일 수를 지정합니다. 이러한 기능 업데이트는 출시되고 180일 동안 수신을 연기할 수 있습니다.
     - **기능 업데이트 시작 일시 중지**: 기능 업데이트를 일시 중지한 날로부터 최대 60일 동안 디바이스에서 기능 업데이트를 받지 못하도록 일시 중지할지 여부를 선택합니다. 최대 일수가 경과하고 나면 일시 중지 기능은 자동으로 만료되고 디바이스가 Windows 업데이트에서 적용되는 업데이트를 검색합니다. 이 검색 후에 업데이트를 다시 일시 중지할 수 있습니다. 이 확인란을 선택 취소하여 기능 업데이트 일시 중지를 해제할 수 있습니다.   
 5. 품질 업데이트를 연기할지 또는 일시 중지할지를 선택합니다.     
     품질 업데이트는 일반적으로 기존 Windows 기능에 대한 수정 내용 및 향상된 기능이며, 매월 첫째 화요일에 게시되는 것이 보통입니다. 물론 Microsoft는 언제든지 이러한 업데이트를 출시할 수 있습니다. 출시된 후에 품질 업데이트 수신을 연기할지 여부 및 연기할 기간을 정의할 수 있습니다.
-    - **지연 기간(일)**: 기능 업데이트를 연기할 일 수를 지정합니다. 이러한 기능 업데이트는 출시되고 180일 동안 수신을 연기할 수 있습니다.
+    - **지연 기간(일)** : 기능 업데이트를 연기할 일 수를 지정합니다. 이러한 기능 업데이트는 출시되고 180일 동안 수신을 연기할 수 있습니다.
     - **품질 업데이트 시작 일시 중지**: 기능 업데이트를 일시 중지한 날로부터 최대 35일 동안 디바이스에서 품질 업데이트를 받지 못하도록 일시 중지할지 여부를 선택합니다. 최대 일수가 경과하고 나면 일시 중지 기능은 자동으로 만료되고 디바이스가 Windows 업데이트에서 적용되는 업데이트를 검색합니다. 이 검색 후에 업데이트를 다시 일시 중지할 수 있습니다. 이 확인란을 선택 취소하여 품질 업데이트 일시 중지를 해제할 수 있습니다.
 6. **다른 Microsoft 제품에 대한 업데이트 설치**를 선택하여 지연 설정이 Windows 업데이트 뿐만 아니라 Microsoft 업데이트에도 적용될 수 있게 하는 그룹 정책 설정을 사용하도록 설정합니다.
 7. Windows 업데이트에서 드라이버를 자동으로 업데이트하려면 **Windows 업데이트에 드라이버 포함**을 선택합니다. 이 설정을 선택 취소하면 드라이버 업데이트가 Windows 업데이트에서 다운로드되지 않습니다.
@@ -446,7 +446,7 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반
     - **지원되는 경우 비규정 준수 규칙 수정**: Configuration Manager에서 등록된 모바일 디바이스의 레지스트리, 스크립트 및 모든 설정, WMI(Windows Management Instrumentation)에 대해 비규정 준수 규칙을 자동으로 수정하도록 선택합니다.
     - **유지 관리 기간을 벗어나도 수정 허용**: 정책을 배포할 컬렉션에 대해 유지 관리 기간이 구성된 경우 유지 관리 기간 외의 기간에 규정 준수 설정이 값을 수정할 수 있도록 하려면 이 옵션을 사용하도록 설정합니다. 유지 관리 기간에 대한 자세한 내용은 [유지 관리 기간을 사용하는 방법](/sccm/core/clients/manage/collections/use-maintenance-windows)을 참조하세요.
     - **경고 생성**: 지정된 날짜 및 시간을 기준으로 구성 기준 규정 준수가 지정된 비율에 못 미치는 경우에 생성되는 경고를 구성합니다. 경고를 System Center Operations Manager로 전송할지 여부도 지정할 수 있습니다.
-    - **임의 지연(시)**: 네트워크 디바이스 등록 서비스의 과도한 처리를 방지하기 위해 지연 기간을 지정합니다. 기본값은 64시간입니다.
+    - **임의 지연(시)** : 네트워크 디바이스 등록 서비스의 과도한 처리를 방지하기 위해 지연 기간을 지정합니다. 기본값은 64시간입니다.
     - **일정**: 클라이언트 컴퓨터에서 배포된 프로필이 평가되는 규정 준수 평가 일정을 지정합니다. 단순 일정 또는 사용자 지정 일정 중에서 지정할 수 있습니다. 사용자가 로그온해 있을 때 클라이언트 컴퓨터에서 프로필을 평가합니다.
 4.  마법사를 완료하여 프로필을 배포합니다.
 
@@ -487,7 +487,7 @@ Configuration Manager에서 인증서 등록 지점 역할을 추가할 때 Entr
 ### <a name="store"></a>스토어
 
 - **스토어에서 앱 자동 업데이트**
-- **개인 저장소만 사용**
+- **프라이빗 저장소만 사용**
 - **스토어에서 시작된 앱 시작**
 
 ### <a name="microsoft-edge"></a>Microsoft Edge
@@ -535,7 +535,7 @@ Configuration Manager에서 인증서 등록 지점 역할을 추가할 때 Entr
 ## <a name="new-mobile-application-management-policy-settings"></a>새 모바일 애플리케이션 관리 정책 설정
 이 릴리스부터 3개의 새 MAM(모바일 애플리케이션 관리) 정책 설정을 사용할 수 있습니다.
 
-- **화면 캡처 차단(Android 디바이스 전용)**: 이 앱을 사용할 때 디바이스의 화면 캡처 기능을 차단하도록 지정합니다.
+- **화면 캡처 차단(Android 디바이스 전용)** : 이 앱을 사용할 때 디바이스의 화면 캡처 기능을 차단하도록 지정합니다.
 
 - **연락처 동기화 사용 안 함**: 앱에서 디바이스의 네이티브 연락처 앱에 데이터를 저장하지 않도록 방지합니다.
 

@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 07e69561580a22128cf9a5b7b97f33e10cbb0456
-ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
+ms.openlocfilehash: 4da8ff0e4d35284c5b1f2f465da468677cdfbb65
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66716036"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67286078"
 ---
 # <a name="capabilities-in-technical-preview-1805-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1805의 기능
 
@@ -101,7 +101,7 @@ Configuration Manager는 기존 클래식 클라우드 배포 지점을 Azure Re
 ### <a name="prerequisites"></a>필수 구성 요소  
 - [Azure AD](/sccm/core/clients/deploy/deploy-clients-cmg-azure)와의 통합. Azure AD 사용자 검색은 필요하지 않습니다.  
 
-- Azure 관리 인증서를 제외하고 [클라우드 배포 지점의 요구 사항](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point#BKMK_PrereqsCloudDP)과 동일합니다.  
+- Azure 관리 인증서를 제외하고 [클라우드 배포 지점의 요구 사항](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point#bkmk_requirements)과 동일합니다.  
 
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기  
@@ -216,7 +216,7 @@ Configuration Manager 콘솔에서 **모니터링** 작업 영역으로 이동�
 
      1. **Azure AD 사용자**: 이 옵션은 Azure AD 조인 Windows 10 디바이스에 로그온한 클라우드 기반 사용자 ID와 동일하게 통신을 시뮬레이션하는 데 사용합니다. **로그인**을 클릭하여 이 Azure AD 사용자 계정에 대한 자격 증명을 안전하게 입력합니다.  
 
-     2. **클라이언트 인증서**: 이 옵션은 [클라이언트 인증 인증서](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#client-authentication-certificate)를 사용하는 Configuration Manager 클라이언트와 동일하게 통신을 시뮬레이션하는 데 사용합니다.  
+     2. **클라이언트 인증서**: 이 옵션은 [클라이언트 인증 인증서](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#bkmk_clientauth)를 사용하는 Configuration Manager 클라이언트와 동일하게 통신을 시뮬레이션하는 데 사용합니다.  
 
 4. **시작**을 클릭하여 분석을 시작합니다. 분석기 창에 결과가 표시됩니다. 설명 필드에서 자세한 내용을 보려면 항목을 선택합니다.  
 
@@ -288,7 +288,7 @@ CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스�
 [Azure AD 조인 디바이스](/azure/active-directory/device-management-introduction#azure-ad-joined-devices)가 CMG(클라우드 관리 게이트웨이)를 통해 HTTP용으로 구성된 관리 지점과 통신할 수 있습니다. 사이트 서버는 관리 지점에 대한 인증서를 생성하여 보안 채널을 통해 통신할 수 있도록 허용합니다.   
 
 > [!Note]  
-> 이 동작은 Configuration Manager 현재 분기 버전 1802에서 변경되어 이 시나리오에 HTTPS 사용 관리 지점이 필요합니다. 자세한 내용은 [HTTPS에 대한 관리 지점 설정](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#enable-management-point-for-https)을 참조하세요.  
+> 이 동작은 Configuration Manager 현재 분기 버전 1802에서 변경되어 이 시나리오에 HTTPS 사용 관리 지점이 필요합니다. 자세한 내용은 [HTTPS에 대한 관리 지점 설정](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#bkmk_mphttps)을 참조하세요.  
 
 #### <a name="bkmk_token2"></a> 시나리오 2: 배포 지점의 클라이언트
 <!--1358228-->

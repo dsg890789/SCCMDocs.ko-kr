@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6aa1c324a3ff24feb14c6b867728a76252a8c19d
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.openlocfilehash: 13db7793b0d5a5b4f0845af21f976089205fdc7d
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66176027"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67286161"
 ---
 # <a name="capabilities-in-technical-preview-1709-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1709의 기능
 
@@ -118,7 +118,7 @@ ms.locfileid: "66176027"
 
 ### <a name="remote-actions-available-in-intune-on-azure-for-co-managed-devices"></a>Azure의 Intune에서 공동 관리 디바이스에 사용할 수 있는 원격 작업
 Windows 10 디바이스가 공동 관리를 사용하도록 설정한 경우 Azure의 Intune에서 다음과 같은 원격 작업을 사용할 수 있습니다.  
-- [초기화](https://docs.microsoft.com/intune/devices-wipe#factory-reset)
+- [초기화](https://docs.microsoft.com/intune/devices-wipe#wipe)
 - [선택적 초기화](https://docs.microsoft.com/intune/apps-selective-wipe)
 - [디바이스 삭제](https://docs.microsoft.com/intune/devices-wipe#delete-devices-from-the-azure-active-directory-portal)
 - [디바이스 다시 시작](https://docs.microsoft.com/intune/device-restart)
@@ -157,7 +157,7 @@ ccmsetup.msi CCMSETUPCMD="/mp:&#60;*클라우드 관리 게이트웨이 상호 �
 
 예를 들어, 다음 값을 포함하는 경우:
 
-- **클라우드 관리 게이트웨이 상호 인증 엔드포인트의 URL**: https:/&amp;#47;contoso.cloudapp.net/CCM_Proxy_MutualAuth/72057594037928100    
+- **클라우드 관리 게이트웨이 상호 인증 엔드포인트의 URL**: https:/&#47;contoso.cloudapp.net/CCM_Proxy_MutualAuth/72057594037928100    
 
    >[!Note]    
    >**클라우드 관리 게이트웨이 상호 인증 엔드포인트의 URL** 값에 **vProxy_Roles** SQL 보기의 **MutualAuthPath** 값을 사용합니다.

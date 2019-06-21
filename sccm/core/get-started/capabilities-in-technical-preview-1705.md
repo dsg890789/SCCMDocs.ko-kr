@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 33055f0962ef1220d41a2c8ee463cb2380ff60db
-ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
+ms.openlocfilehash: 5396ec603cab4b16e0d0c7e538618d1e757ab62f
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715958"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67286196"
 ---
 # <a name="capabilities-in-technical-preview-1705-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1705의 기능
 
@@ -118,7 +118,7 @@ Technical Preview 버전 1606 이상에서 이 도구를 사용할 수 있습니
 ## <a name="improvements-for-sql-server-always-on-availability-groups"></a>SQL Server Always On 가용성 그룹에 대한 향상된 기능  
 이 릴리스에서는 이제 Configuration Manager에서 SQL Server Always On 가용성 그룹의 비동기 커밋 복제본을 사용할 수 있습니다.  즉, 오프사이트(원격) 백업으로 사용하도록 추가 복제본을 가용성 그룹에 추가한 다음 재해 복구 시나리오에서 사용할 수 있습니다.  
 
-- Configuration Manager에서는 비동기 커밋 복제본을 사용하여 동기 복제본을 복구하도록 지원합니다.  이 작업을 수행하는 방법에 대한 자세한 내용은 백업 및 복구 항목에서 [사이트 데이터베이스 복구 옵션](/sccm/protect/understand/backup-and-recovery#BKMK_SiteDatabaseRecoveryOption)을 참조하세요.
+- Configuration Manager에서는 비동기 커밋 복제본을 사용하여 동기 복제본을 복구하도록 지원합니다.  이 작업을 수행하는 방법에 대한 자세한 내용은 백업 및 복구 항목에서 [사이트 데이터베이스 복구 옵션](/sccm/core/servers/manage/recover-sites#site-database-recovery-options)을 참조하세요.
 
 - 이 릴리스에서는 비동기 커밋 복제본을 사이트 데이터베이스로 사용하기 위한 장애 조치를 지원하지 않습니다.
   > [!CAUTION]  
@@ -130,7 +130,7 @@ Technical Preview 버전 1606 이상에서 이 도구를 사용할 수 있습니
 비동기 복제본을 [Configuration Manager에서 사용하는 가용성 그룹](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database)에 추가하려는 경우 동기 복제본을 구성하는 데 필요한 구성 스크립트를 실행할 필요가 없습니다. (해당 비동기 복제본을 사이트 데이터베이스로 사용하는 것은 지원되지 않기 때문입니다.) 가용성 그룹에 보조 복제본을 추가하는 방법에 대한 자세한 내용은 [SQL Server 설명서](https://msdn.microsoft.com/library/hh213247(v=sql.120).aspx(d=robot))를 참조하세요.
 
 ### <a name="use-the-asynchronous-replica-to-recover-your-site"></a>비동기 복제본을 사용하여 사이트 복구
-비동기 복제본을 사용하여 사이트 데이터베이스를 복구하기 전에 활성 기본 사이트를 중지하여 사이트 데이터베이스에 대한 추가 쓰기를 방지해야 합니다. 사이트를 중지한 후에 [수동으로 복구된 데이터베이스](/sccm/protect/understand/backup-and-recovery#BKMK_SiteDatabaseRecoveryOption)를 사용하는 대신, 비동기 복제본을 사용할 수 있습니다.
+비동기 복제본을 사용하여 사이트 데이터베이스를 복구하기 전에 활성 기본 사이트를 중지하여 사이트 데이터베이스에 대한 추가 쓰기를 방지해야 합니다. 사이트를 중지한 후에 [수동으로 복구된 데이터베이스](/sccm/core/servers/manage/recover-sites#use-a-site-database-that-has-been-manually-recovered)를 사용하는 대신, 비동기 복제본을 사용할 수 있습니다.
 
 사이트를 중지하려면 [계층 유지 관리 도구](/sccm/core/servers/manage/hierarchy-maintenance-tool-preinst.exe)를 사용하여 사이트 서버의 핵심 서비스를 중지할 수 있습니다. 명령줄 사용: **Preinst.exe /stopsite**   
 
@@ -245,7 +245,7 @@ Windows Defender Application Guard에 대한 자세한 내용은 [이 블로그 
 ### <a name="install-the-cm-client-from-the-internet"></a>인터넷에서 CM 클라이언트 설치
 
 시작 하기 전에 클라이언트를 설치하려는 디바이스에 클라이언트 설치 원본 파일이 로컬로 저장되어 있는지 확인합니다.
-그런 다음 [System Center Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법](/sccm/core/clients/deploy/deploy-clients-to-windows-computers#a-namebkmkmanuala-how-to-install-clients-manually)의 지침에 따라 다음 설치 명령줄을 사용합니다(이 예제의 값을 고유한 값으로 대체).
+그런 다음 [System Center Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법](/sccm/core/clients/deploy/deploy-clients-to-windows-computers#BKMK_Manual)의 지침에 따라 다음 설치 명령줄을 사용합니다(이 예제의 값을 고유한 값으로 대체).
 
 **ccmsetup.exe /NoCrlCheck /Source:C:\CLIENT  CCMHOSTNAME=SCCMPROXYCONTOSO.CLOUDAPP.NET/CCM_Proxy_ServerAuth/72457598037527932 SMSSiteCode=HEC AADTENANTID=780433B5-E05E-4B7D-BFD1-E8013911E543 AADTENANTNAME=contoso  AADCLIENTAPPID=<GUID> AADRESOURCEURI=<https://contososerver>**
 
@@ -255,7 +255,7 @@ Windows Defender Application Guard에 대한 자세한 내용은 [이 블로그 
 - **SMSMP**: 조회 관리 지점의 이름으로, 인트라넷에 있을 수 있습니다.
 - **SMSSiteCode**: Configuration Manager 사이트의 사이트 코드입니다.
 - **AADTENANTID**, **AADTENANTNAME**: Configuration Manager에 연결된 Azure AD 테넌트의 ID 및 이름입니다. Azure AD에 가입된 디바이스의 명령 프롬프트에서 dsregcmd.exe /status를 실행하여 찾을 수 있습니다.
-- **AADCLIENTAPPID**: Azure AD 클라이언트 앱 ID입니다. 이를 찾으려면 [포털을 사용하여 리소스에 액세스할 수 있는 Azure Active Directory 애플리케이션 및 서비스 사용자 만들기](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-application-id-and-authentication-key)를 참조하세요.
+- **AADCLIENTAPPID**: Azure AD 클라이언트 앱 ID입니다. 이를 찾으려면 [포털을 사용하여 리소스에 액세스할 수 있는 Azure Active Directory 애플리케이션 및 서비스 사용자 만들기](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#get-values-for-signing-in)를 참조하세요.
 - **AADResourceUri**: 등록된 Azure AD 서버 앱의 식별자 URI입니다.
 
 ## <a name="use-azure-services-wizard-to-configure-a-connection-to-oms"></a>Azure 서비스 마법사를 사용하여 OMS에 대한 연결 구성
@@ -266,11 +266,11 @@ Windows Defender Application Guard에 대한 자세한 내용은 [이 블로그 
 -   Configuration Manager는 [Log Analytics](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite) 또는 [업그레이드 준비](/sccm/core/clients/manage/upgrade/upgrade-analytics)와 같은 기능을 위해 OMS에 연결합니다.
 
 ### <a name="prerequisites-for-the-oms-connector"></a>OMS 커넥터에 대한 필수 구성 요소
-OMS에 대한 연결을 구성하기 위한 필수 구성 요소는 [혀냊 분기 버전 1702에 대해 문서화](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite#prerequisites)된 내용에서 달라졌습니다. 이 정보는 여기에도 설명되어 있습니다.  
+OMS에 대한 연결을 구성하기 위한 필수 구성 요소는 [혀냊 분기 버전 1702에 대해 문서화](/sccm/core/clients/manage/sync-data-log-analytics#prerequisites-for-the-log-analytics-connector)된 내용에서 달라졌습니다. 이 정보는 여기에도 설명되어 있습니다.  
 
 -   OMS에 대한 Configuration Manager 사용 권한 제공
 
--   OMS 커넥터는 [서비스 연결 지점](/sccm/core/servers/deploy/configure/about-the-service-connection-point)을 [온라인 모드](/sccm/core/servers/deploy/configure/about-the-service-connection-point#a-namebkmkmodesa-modes-of-operation)에서 호스트하는 컴퓨터에 설치해야 합니다.
+-   OMS 커넥터는 [서비스 연결 지점](/sccm/core/servers/deploy/configure/about-the-service-connection-point)을 [온라인 모드](/sccm/core/servers/deploy/configure/about-the-service-connection-point#bkmk_modes)에서 호스트하는 컴퓨터에 설치해야 합니다.
 
 -   OMS 커넥터와 함께 서비스 연결 지점에 설치된 OMS에 대해 Microsoft Monitoring Agent를 설치해야 합니다. Agent 및 OMS 커넥터는 동일한 **OMS 작업 영역**을 사용하도록 구성해야 합니다. 에이전트를 설치하려면 OMS 문서에서 [에이전트 다운로드 및 설치](/azure/log-analytics/log-analytics-sccm#download-and-install-the-agent)를 참조하세요.
 -   커넥터와 에이전트를 설치한 후 Configuration Manager 데이터를 사용하도록 OMS를 구성해야 합니다. 이렇게 하려면 OMS 포털에서 [Configuration Manager 컬렉션을 가져옵니다](/azure/log-analytics/log-analytics-sccm#import-collections).

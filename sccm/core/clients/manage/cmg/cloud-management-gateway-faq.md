@@ -4,18 +4,18 @@ description: 이 아티클을 사용하여 클라우드 관리 게이트웨이�
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.date: 05/02/2019
+ms.date: 06/19/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 4c1a128d-22fb-49f1-8e0b-36513a8dc117
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71c30e6770d667426a0aabbf03043d6fb44ecced
-ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.openlocfilehash: 6a7b4350cbd220393318eb6c8b5eae2a5bee05fc
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083177"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67286795"
 ---
 # <a name="frequently-asked-questions-about-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이에 대한 FAQ
 
@@ -33,10 +33,9 @@ ms.locfileid: "65083177"
 
 ### <a name="do-i-need-azure-expressroute"></a>Azure ExpressRoute가 필요한가요?
 
-[Azure ExpressRoute](/azure/expressroute/expressroute-introduction)를 통해 온-프레미스 네트워크를 Microsoft 클라우드로 확장할 수 있습니다. Configuration Manager 클라우드 관리 게이트웨이에 대해 ExpressRoute 또는 이러한 다른 가상 네트워크 연결이 필요하지 않습니다. 클라우드 관리 게이트웨이의 디자인을 통해 인터넷 기반 클라이언트가 추가 네트워크 구성 없이 Azure 서비스부터 온-프레미스 사이트 시스템까지 통신할 수 있습니다. 자세한 내용은 [클라우드 관리 게이트웨이 계획](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway)을 참조하세요.
+아니요. [Azure ExpressRoute](/azure/expressroute/expressroute-introduction)를 통해 온-프레미스 네트워크를 Microsoft 클라우드로 확장할 수 있습니다. Configuration Manager 클라우드 관리 게이트웨이에 대해 ExpressRoute 또는 이러한 다른 가상 네트워크 연결이 필요하지 않습니다. 클라우드 관리 게이트웨이의 디자인을 통해 인터넷 기반 클라이언트가 추가 네트워크 구성 없이 Azure 서비스부터 온-프레미스 사이트 시스템까지 통신할 수 있습니다. 자세한 내용은 [클라우드 관리 게이트웨이 계획](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway)을 참조하세요.
 
-조직에서 ExpressRoute를 사용하는 경우 가장 좋은 보안 방법은 클라우드 관리 게이트웨이에 대한 Azure 구독을 격리하는 것입니다. 이 구성을 통해 클라우드 관리 게이트웨이 서비스가 실수로 이런 방식으로 연결되지 않도록 합니다. 자세한 내용은 [클라우드 관리 게이트웨이에 대한 보안 및 개인 정보](/sccm/core/clients/manage/cmg/security-and-privacy-for-cloud-management-gateway)를 참조하세요.
-
+<!-- SCCMDocs#1659 -->
 
 ### <a name="do-i-need-to-maintain-the-azure-virtual-machines"></a>Azure 가상 머신을 유지 관리해야 하나요?
 

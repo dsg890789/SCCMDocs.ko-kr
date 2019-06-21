@@ -12,12 +12,12 @@ ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55e29269bab2ed1a75f00848a59f3345d0a8c071
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 89ba5d63b1a033db49da73cc0df3fa0a41f2b696
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65495160"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67285847"
 ---
 # <a name="what39s-new-in-version-1702-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1702의 새로운 기능
 
@@ -30,7 +30,7 @@ System Center Configuration Manager 현재 분기의 업데이트 1702는 버전
 >  다음에 대해 자세히 알아보세요.    
 >   - [새 사이트 설치](https://technet.microsoft.com/library/mt590197.aspx)  
 >   - [사이트에 업데이트 설치](https://technet.microsoft.com/library/mt607046.aspx)  
->   - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)  
+>   - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)
 
 다음 섹션에서는 Configuration Manager 버전 1702에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.  
 
@@ -38,9 +38,9 @@ System Center Configuration Manager 현재 분기의 업데이트 1702는 버전
 [제거되는 기능과 사용되지 않는 항목](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated)에서 구현되기 전의 지원 변경 내용을 알아보세요.
 
 버전 1702에서는 다음 제품이 지원되지 않습니다.
-- **SQL Server 2008 R2** - 사이트 데이터베이스 서버에 지원되지 않습니다. 지원 중단은 2015년 7월 10일에 [처음 발표](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-server#deprecated-support-for-sql-server-versions-as-a-site-database)되었습니다. 1702 이전 버전의 Configuration Manager를 사용하는 경우 이 버전의 SQL Server가 계속 지원됩니다.
-- **Windows Server 2008 R2** - 사이트 시스템 서버 및 대부분의 사이트 시스템 역할에 지원되지 않습니다. 지원 중단은 2015년 7월 10일에 [처음 발표](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-server#deprecated-server-operating-systems)되었습니다. 1702 이전 버전의 Configuration Manager를 사용하는 경우 이 버전의 Windows가 계속 지원됩니다.  
-- **Windows Server 2008** - 사이트 시스템 서버 및 대부분의 사이트 시스템 역할에 지원되지 않습니다. 지원 중단은 2015년 7월 10일에 [처음 발표](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-server#deprecated-server-operating-systems)되었습니다.
+- **SQL Server 2008 R2** - 사이트 데이터베이스 서버에 지원되지 않습니다. 지원 중단은 2015년 7월 10일에 [처음 발표](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-server#sql-server)되었습니다. 1702 이전 버전의 Configuration Manager를 사용하는 경우 이 버전의 SQL Server가 계속 지원됩니다.
+- **Windows Server 2008 R2** - 사이트 시스템 서버 및 대부분의 사이트 시스템 역할에 지원되지 않습니다. 지원 중단은 2015년 7월 10일에 [처음 발표](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-server#server-os)되었습니다. 1702 이전 버전의 Configuration Manager를 사용하는 경우 이 버전의 Windows가 계속 지원됩니다.  
+- **Windows Server 2008** - 사이트 시스템 서버 및 대부분의 사이트 시스템 역할에 지원되지 않습니다. 지원 중단은 2015년 7월 10일에 [처음 발표](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-server#server-os)되었습니다.
 - **Windows XP Embedded** - 클라이언트 운영 체제로 지원되지 않습니다. 지원 중단은 2015년 7월 10일에 [처음 발표](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-client#deprecated-client-operating-systems)되었습니다. 1702 이전 버전의 Configuration Manager를 사용하는 경우 이 버전의 Windows가 계속 지원됩니다.
 
 
@@ -118,7 +118,7 @@ System Center Configuration Manager 현재 분기의 업데이트 1702는 버전
 
 
 ### <a name="use-the-oms-connector-with-the-azure-government-cloud"></a>Azure Government 클라우드에서 OMS 커넥터 사용
-OMS 커넥터를 사용하여 Microsoft Azure Government 클라우드에 있는 OMS Log Analytics에 연결할 수 있습니다. 이렇게 하려면 커넥터가 Government 클라우드에서 작동할 수 있도록 OMS 커넥터를 설치하기 전에 구성 파일을 수정해야 합니다. 자세한 내용은 [Azure Government 클라우드에서 OMS 커넥터 사용](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite#fairfaxconfig)을 참조하세요.
+OMS 커넥터를 사용하여 Microsoft Azure Government 클라우드에 있는 OMS Log Analytics에 연결할 수 있습니다. 이렇게 하려면 커넥터가 Government 클라우드에서 작동할 수 있도록 OMS 커넥터를 설치하기 전에 구성 파일을 수정해야 합니다. 자세한 내용은 [Azure Government 클라우드에서 OMS 커넥터 사용](/sccm/core/clients/manage/sync-data-log-analytics)을 참조하세요.
 
 ### <a name="software-update-points-are-added-to-boundary-groups"></a>소프트웨어 업데이트 지점이 경계 그룹에 추가됨
 버전 1702부터 클라이언트는 경계 그룹을 사용하여 새 소프트웨어 업데이트 지점을 찾고 더 이상 현재 지점에 액세스할 수 없는 경우 새 소프트웨어 업데이트 지점을 대체하고 찾습니다. 클라이언트가 찾을 수 있는 서버를 제어하기 위해 개별 소프트웨어 업데이트 지점을 다른 경계 그룹에 추가할 수 있습니다. 자세한 내용은 [경계 그룹 구성](/sccm/core/servers/deploy/configure/boundary-groups) 항목에서 [소프트웨어 업데이트 지점](/sccm/core/servers/deploy/configure/boundary-groups#software-update-points)을 참조하세요.
@@ -326,7 +326,7 @@ Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞
 ## <a name="protect-devices"></a>디바이스 보호
 
 ### <a name="detect-outdated-antimalware-client-versions"></a>오래된 맬웨어 방지 클라이언트 버전 감지
-버전 1702부터 Endpoint Protection 클라이언트가 오래되지 않았는지 확인하도록 경고를 구성할 수 있습니다. 자세한 내용은 [오래된 맬웨어 클라이언트에 대한 경고](/sccm/protect/deploy-use/endpoint-configure-alerts#detect-outdated-antimalware-client-versions)를 참조하세요.
+버전 1702부터 Endpoint Protection 클라이언트가 오래되지 않았는지 확인하도록 경고를 구성할 수 있습니다. 자세한 내용은 [오래된 맬웨어 클라이언트에 대한 경고](/sccm/protect/deploy-use/endpoint-configure-alerts#alert-for-outdated-malware-client)를 참조하세요.
 
 ### <a name="device-health-attestation-updates"></a>디바이스 상태 증명 업데이트
 이제 관리 지점에서 온-프레미스 클라이언트에 대한 디바이스 상태 증명 서비스를 구성하고 관리할 수 있습니다. 자세한 내용은 [상태 증명](/sccm/core/servers/manage/health-attestation)을 참조하세요.

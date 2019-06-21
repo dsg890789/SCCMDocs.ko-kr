@@ -11,18 +11,19 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b3ba4c5179069e5443beaf1b7f733c797cfd680
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 0f833269540e10647c20353ad208a54d9eb53af9
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156528"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67286455"
 ---
 #  <a name="sync-data-from-configuration-manager-to-azure-log-analytics"></a>Configuration Manager의 데이터를 Azure Log Analytics와 동기화
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-<!--1258052--> **Azure 서비스 마법사**를 사용하여 Configuration Manager에서 Azure Log Analytics 클라우드 서비스로의 연결을 구성할 수 있습니다. 이 연결은 디바이스 컬렉션 데이터를 Log Analytics과 동기화합니다. 
+<!--1258052-->
+**Azure 서비스 마법사**를 사용하여 Configuration Manager에서 Azure Log Analytics 클라우드 서비스로의 연결을 구성할 수 있습니다. 이 연결은 디바이스 컬렉션 데이터를 Log Analytics과 동기화합니다. 
 
 > [!Note]  
 > Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  
@@ -35,7 +36,7 @@ ms.locfileid: "56156528"
 ## <a name="prerequisites-for-the-log-analytics-connector"></a>Log Analytics 커넥터에 대한 필수 구성 요소
 
 > [!Note]  
-> 이 문서는 *Log Analytics 커넥터*(이전의 *OMS 커넥터*)를 참조합니다. 기능 차이는 없습니다. 자세한 내용은 [Azure 관리 - 모니터링](https://docs.microsoft.com/azure/monitoring/#operations-management-suite)을 참조하세요.  
+> 이 문서는 *Log Analytics 커넥터*(이전의 *OMS 커넥터*)를 참조합니다. 기능 차이는 없습니다. 자세한 내용은 [Azure 관리 - 모니터링](https://docs.microsoft.com/azure/azure-monitor/terminology#log-analytics)을 참조하세요.  
 
 - Configuration Manager에서 Log Analytics 커넥터를 설치하기 전에 권한을 Configuration Manager에 제공해야 합니다. Log Analytics 작업 영역을 포함하는 Azure *리소스 그룹*에 *참가자 액세스 권한*을 부여합니다. 자세한 내용은 [Provide Configuration Manager with permissions to Log Analytics(Configuration Manager에 Log Analytics에 대한 권한 제공)](https://docs.microsoft.com/azure/log-analytics/log-analytics-sccm#grant-configuration-manager-with-permissions-to-log-analytics)을 참조하세요.  
 
@@ -52,7 +53,7 @@ ms.locfileid: "56156528"
 **Azure 서비스 마법사**를 사용하여 Configuration Manager에서 Azure Log Analytics 클라우드 서비스로의 연결을 구성할 수 있습니다. 이 프로세스의 자세한 내용과 세부 정보는 [Azure 서비스 구성](https://docs.microsoft.com/sccm/core/servers/deploy/configure/azure-services-wizard)을 참조하세요. **OMS 커넥터**에 대한 마법사에서 옵션을 선택하세요. 
 
 > [!Note]  
-> 이 문서는 *Log Analytics 커넥터*(이전의 *OMS 커넥터*)를 참조합니다. 기능 차이는 없습니다. 자세한 내용은 [Azure 관리 - 모니터링](https://docs.microsoft.com/azure/monitoring/#operations-management-suite)을 참조하세요.  
+> 이 문서는 *Log Analytics 커넥터*(이전의 *OMS 커넥터*)를 참조합니다. 기능 차이는 없습니다. 자세한 내용은 [Azure 관리 - 모니터링](https://docs.microsoft.com/azure/azure-monitor/terminology#log-analytics)을 참조하세요.  
 
 다른 모든 절차를 성공적으로 완료한 경우 웹앱을 가져오면 **연결 구성** 화면의 정보가 자동으로 나타납니다. 연결 설정에 대한 정보가 **Azure 구독**, **Azure 리소스 그룹** 및 **Operations Management Suite 작업 영역**에 대해 나타납니다.
 

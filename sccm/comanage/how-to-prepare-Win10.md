@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 101de2ba-9b4d-4890-b087-5d518a4aa624
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 31779b3588617816df4309461ed7715b20b0abd4
-ms.sourcegitcommit: 9aebc20b25cdef0af908918ccfd791f3264a5d94
+ms.openlocfilehash: 5600743af8acc0da121454aef2d90167c3ded5fa
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "57558034"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67286619"
 ---
 # <a name="how-to-prepare-internet-based-devices-for-co-management"></a>공동 관리를 위해 인터넷 기반 디바이스를 준비하는 방법
 
@@ -88,7 +88,7 @@ ms.locfileid: "57558034"
 - 고유 PKI SSL 인증서를 사용하고 CRL이 인터넷에 게시되지 않은 경우 다음 매개 변수가 필요합니다.  
     - /noCRLCheck  
     
-     자세한 내용은 [CRL 계획](/sccm/core/plan-design/security/plan-for-security#-plan-for-the-site-server-signing-certificate-self-signed)을 참조하세요.  
+     자세한 내용은 [CRL 계획](/sccm/core/plan-design/security/plan-for-security#BKMK_PlanningForCRLs)을 참조하세요.  
 
 버전 1810부터 사이트는 추가 Azure AD 정보를 CMG(클라우드 관리 게이트웨이)에 게시합니다. Azure AD에 가입된 클라이언트는 가입된 동일한 테넌트를 사용하여 ccmsetup 프로세스 중에 CMG에서 이 정보를 가져옵니다. 이 동작은 둘 이상의 Azure AD 테넌트가 있는 환경의 공동 관리에 디바이스를 등록하는 작업을 추가로 간소화합니다. 이제 유일한 두 개의 필수 ccmsetup 속성은 **CCMHOSTNAME** 및 **SMSSiteCode**입니다.<!--3607731-->
 
