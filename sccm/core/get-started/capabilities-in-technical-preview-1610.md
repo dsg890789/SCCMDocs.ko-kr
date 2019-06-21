@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b164dfe1ea175f0f2141039c3a4a800de1404b9
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: f497272431d8587010ecd7dc0a8205162d9ae7fd
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56132356"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67286348"
 ---
 # <a name="capabilities-in-technical-preview-1610-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1610의 기능
 
@@ -86,7 +86,7 @@ Technical Preview 1610에는 업데이트된 클라이언트 버전을 자동으
 - **클라이언트 강제 설치** – 클라이언트 강제 설치를 사용하여 제외된 컬렉션에 있는 클라이언트를 업그레이드할 수 있습니다. 이 방법은 관리자의 의도인 것으로 간주되고 전체 컬렉션을 제외에서 제거하지 않고 클라이언트를 업그레이드할 수 있습니다.       
 - **수동 클라이언트 설치** – ccmsetup과 명령줄 스위치 ***/ignoreskipupgrade***를 함께 사용하면 제외된 컬렉션에 있는 클라이언트를 수동으로 업그레이드할 수 있습니다.
 
-  제외된 컬렉션의 멤버인 클라이언트를 수동으로 업그레이드할 때 이 스위치를 사용하지 않으면 새 클라이언트 소프트웨어가 설치되지 않습니다. 자세한 내용은 [Configuration Manager 클라이언트를 수동으로 설치하는 방법](/sccm/core/clients/deploy/deploy-clients-to-windows-computers#a-namebkmkmanuala-how-to-install-configuration-manager-clients-manually)을 참조하세요.
+  제외된 컬렉션의 멤버인 클라이언트를 수동으로 업그레이드할 때 이 스위치를 사용하지 않으면 새 클라이언트 소프트웨어가 설치되지 않습니다. 자세한 내용은 [Configuration Manager 클라이언트를 수동으로 설치하는 방법](/sccm/core/clients/deploy/deploy-clients-to-windows-computers#BKMK_Manual)을 참조하세요.
 
 클라이언트 설치 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법](/sccm/core/clients/deploy/deploy-clients-to-windows-computers)을 참조하세요.
 

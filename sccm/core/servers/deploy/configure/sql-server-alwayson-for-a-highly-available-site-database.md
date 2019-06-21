@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f70373f1fea7928e801c0ccdbbe75cf96e54d20
-ms.sourcegitcommit: f531d0a622f220739710b2fe6644ea58d024064a
+ms.openlocfilehash: 2fba1d6793b2b285cc9874de316bb2c435a526e8
+ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65933534"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67252311"
 ---
 # <a name="prepare-to-use-sql-server-always-on-availability-groups-with-configuration-manager"></a>Configuration Manager에서 SQL Server Always On 가용성 그룹 사용 준비
 
@@ -41,8 +41,8 @@ Configuration Manager에서의 가용성 그룹 사용을 위해 다음 시나�
 
 - [Configuration Manager에서 사용하기 위해 가용성 그룹 만들기](/sccm/core/servers/deploy/configure/configure-aoag#create-and-configure-an-availability-group)  
 - [가용성 그룹을 사용하도록 사이트 구성](/sccm/core/servers/deploy/configure/configure-aoag#configure-a-site-to-use-the-database-in-the-availability-group)  
-- [사이트 데이터베이스를 호스트하는 가용성 그룹에서 동기 복제 구성원 추가 또는 제거](/sccm/core/servers/deploy/configure/configure-aoag#add-and-remove-synchronous-replica-members)  
-- [비동기 커밋 복제본 구성](/sccm/core/servers/deploy/configure/configure-aoag#configure-an-asynchronous-commit-repilca)  
+- [사이트 데이터베이스를 호스트하는 가용성 그룹에서 동기 복제 구성원 추가 또는 제거](/sccm/core/servers/deploy/configure/configure-aoag#add-or-remove-synchronous-replica-members)  
+- [비동기 커밋 복제본 구성](/sccm/core/servers/deploy/configure/configure-aoag#configure-an-asynchronous-commit-replica)  
 - [비동기 커밋 복제본에서 사이트 복구](/sccm/core/servers/deploy/configure/configure-aoag#use-the-asynchronous-replica-to-recover-your-site)  
 - [독립 실행형 SQL Server의 기본 또는 명명된 인스턴스로 가용성 그룹의 사이트 데이터베이스 이동](/sccm/core/servers/deploy/configure/configure-aoag#stop-using-an-availability-group)  
 
@@ -85,7 +85,7 @@ SQL Server의 각 인스턴스는 도메인 사용자 계정(**서비스 계정*
 
 - 사용 중인 SQL Server 버전에서 지원하는 동일한 개수와 유형의 복제본을 가용성 그룹에서 사용하세요.
 
-- 비동기 커밋 복제본을 사용하여 동기 복제본을 복구할 수 있습니다. 자세한 내용은 [사이트 데이터베이스 복구 옵션](/sccm/core/servers/manage/backup-and-recovery#BKMK_SiteDatabaseRecoveryOption)을 참조하세요.  
+- 비동기 커밋 복제본을 사용하여 동기 복제본을 복구할 수 있습니다. 자세한 내용은 [사이트 데이터베이스 복구 옵션](/sccm/core/servers/manage/recover-sites#site-database-recovery-options)을 참조하세요.  
 
     > [!Warning]  
     > Configuration Manager에서는 비동기 커밋 복제본을 사이트 데이터베이스로 사용하기 위한 *장애 조치*를 지원하지 않습니다. 자세한 내용은 [장애 조치(Failover) 및 장애 조치(Failover) 모드(Always On 가용성 그룹)](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/failover-and-failover-modes-always-on-availability-groups?view=sql-server-2014)를 참조하세요.  

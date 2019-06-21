@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4b289daa6f0f76c1d8e71879050bdfb6f5de679
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 649c0a134f7ebc77c214801d30720f75b80d34ee
+ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65496485"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159453"
 ---
 # <a name="manage-applicability-rules-in-updates-publisher"></a>Updates Publisher의 적용 가능성 규칙 관리
 
@@ -48,7 +48,7 @@ Updates Publisher의 두 위치에 규칙을 만들 수 있습니다.
 -   업데이트를 만들거나 편집할 때 새 규칙을 만들 수도 있습니다. 이러한 방식으로 만든 규칙은 나중에 사용할 수 있도록 저장되지 않습니다.
 
 ## <a name="create-applicability-rule"></a>적용 가능성 규칙 만들기
-다음 정보는 [Create Update(업데이트 만들기) 마법사](/sccm/sum/tools/create-updates-with-updates-publisher#the-create-update-wizard) 내에서 규칙을 만드는 방법과 비슷합니다. 하지만 마법사와는 달리 나중에 사용하기 위해 규칙 집합을 저장할 수도 있습니다.
+다음 정보는 [Create Update(업데이트 만들기) 마법사](/sccm/sum/tools/create-updates-with-updates-publisher#use-the-create-update-wizard) 내에서 규칙을 만드는 방법과 비슷합니다. 하지만 마법사와는 달리 나중에 사용하기 위해 규칙 집합을 저장할 수도 있습니다.
 
 1. **규칙 작업 영역**에서 **만들기**를 선택하여 **Create Rule**(규칙 만들기) 마법사를 엽니다.
 
@@ -82,7 +82,7 @@ Updates Publisher의 두 위치에 규칙을 만들 수 있습니다.
 
 변경을 수행한 후 **확인**을 선택하여 변경 내용을 저장하고 마법사를 닫습니다.
 
-규칙 마법사 사용에 대한 자세한 내용은 [Create Update(업데이트 만들기) 마법사](/sccm/sum/tools/create-updates-with-updates-publisher#the-create-update-wizard)의 **7단계**, 적용 가능성 페이지를 참조하세요.
+규칙 마법사 사용에 대한 자세한 내용은 [Create Update(업데이트 만들기) 마법사](/sccm/sum/tools/create-updates-with-updates-publisher#use-the-create-update-wizard)의 **7단계**, 적용 가능성 페이지를 참조하세요.
 
 ## <a name="delete-applicability-rules"></a>적용 가능성 규칙 삭제
 저장된 적용 가능성 규칙을 삭제하려면 **규칙 작업 영역**에서 **My saved rules**(내 저장된 규칙) 목록에 있는 규칙 또는 규칙 집합을 선택한 다음 리본 메뉴에서 **삭제**를 선택합니다. 이렇게 하면 저장된 규칙 또는 규칙 집합이 Updates Publisher에서 제거됩니다.

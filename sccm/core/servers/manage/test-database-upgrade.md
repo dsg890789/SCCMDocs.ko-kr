@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db33a822c762922a04cbfe695435950023384f93
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: c25e2d2aac1c1763df4282e92114257ee34065ac
+ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65501002"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67194147"
 ---
 # <a name="test-the-database-upgrade-when-installing-an-update"></a>업데이트를 설치할 때 데이터베이스의 테스트 업그레이드 수행
 
@@ -30,9 +30,9 @@ ms.locfileid: "65501002"
 사이트 복구를 실행할 필요 없이 실패한 업데이트를 자동으로 롤백하는 논리를 비롯하여 업데이트가 설치되는 방식이 변경되었습니다. 이러한 변경 내용은 콘솔을 사용하여 업데이트 설치를 관리하도록 하며 [실패한 업데이트의 설치를 다시 시도](/sccm/core/servers/manage/install-in-console-updates#bkmk_retry)하는 옵션을 포함합니다.
 
 > [!TIP]
-> System Center 2012 Configuration Manager와 같은 이전 제품에서 System Center Configuration Manager로 업그레이드할 때 [테스트 데이터베이스는 권장 단계를 유지](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager#a-namebkmktesta-test-the-site-database-upgrade)합니다.
+> System Center 2012 Configuration Manager와 같은 이전 제품에서 System Center Configuration Manager로 업그레이드할 때 [테스트 데이터베이스는 권장 단계를 유지](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager#bkmk_test)합니다.
 
-콘솔 내 업데이트를 설치할 때 사이트 데이터베이스의 업그레이드를 테스트하려면 [콘솔 내 업데이트 설치 지침](/sccm/core/servers/manage/install-in-console-updates#a-namebkmkinstalla-install-in-console-updates)을 보완하는 다음 정보를 참조하세요.
+콘솔 내 업데이트를 설치할 때 사이트 데이터베이스의 업그레이드를 테스트하려면 [콘솔 내 업데이트 설치 지침](/sccm/core/servers/manage/install-in-console-updates#bkmk_install)을 보완하는 다음 정보를 참조하세요.
 
 ## <a name="prepare-to-run-a-test-database-upgrade"></a>테스트 데이터베이스 업그레이드 실행 준비  
 업데이트 1702와 같은 계층 구조에 새 업데이트를 설치하기 전에 사이트 데이터베이스의 업그레이드를 테스트할 수 있습니다.

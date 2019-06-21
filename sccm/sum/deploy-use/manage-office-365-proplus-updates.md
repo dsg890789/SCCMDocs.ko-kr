@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 63eb7fa579d002b4cae48ed0a43a2246350e2633
-ms.sourcegitcommit: f531d0a622f220739710b2fe6644ea58d024064a
+ms.openlocfilehash: fbbaf7322b0103b9958b4d7b2c66c018d12d20a4
+ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65933316"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67194616"
 ---
 # <a name="manage-office-365-proplus-with-configuration-manager"></a>Configuration Manager를 사용하여 Office 365 ProPlus 관리
 
@@ -114,7 +114,7 @@ Configuration Manager를 사용하여 Office 365 업데이트를 배포하려면
 >
 > Office 365 ProPlus를 최근에 설치한 경우 설치한 방법에 따라 업데이트 채널이 아직 설정되지 않았을 수 있습니다. 그러한 경우 배포된 업데이트가 적용할 수 없는 상태로 검색됩니다. Office 365 ProPlus를 설치할 때 [예약된 자동 업데이트 작업](https://docs.microsoft.com/deployoffice/overview-of-the-update-process-for-office-365-proplus)이 만들어집니다. 이 경우 업데이트 채널을 설정하고 업데이트가 적용할 수 있는 상태로 검색되도록 하려면 이 작업을 한 번 이상 실행해야 합니다.
 >
-> Office 365 ProPlus를 최근에 설치했는데 배포된 업데이트가 검색되지 않는 경우, 테스트를 위해 Office 자동 업데이트 작업을 수동으로 시작한 다음, 클라이언트에서 [소프트웨어 업데이트 배포 평가 주기](https://docs.microsoft.com/sccm/sum/understand/software-updates-introduction#scan-for-software-updates-compliance-process)를 시작할 수 있습니다. 작업 순서에서 이 작업을 수행하는 방법에 대한 지침은 [작업 순서에서 Office 365 ProPlus 업데이트](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#updating-office-365-ProPlus-in-a-task-sequence)를 참조하세요.
+> Office 365 ProPlus를 최근에 설치했는데 배포된 업데이트가 검색되지 않는 경우, 테스트를 위해 Office 자동 업데이트 작업을 수동으로 시작한 다음, 클라이언트에서 [소프트웨어 업데이트 배포 평가 주기](https://docs.microsoft.com/sccm/sum/understand/software-updates-introduction#scan-for-software-updates-compliance-process)를 시작할 수 있습니다. 작업 순서에서 이 작업을 수행하는 방법에 대한 지침은 [작업 순서에서 Office 365 ProPlus 업데이트](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#updating-office-365-proplus-in-a-task-sequence)를 참조하세요.
 
 ## <a name="restart-behavior-and-client-notifications-for-office-365-updates"></a>Office 365 업데이트에 대한 동작 및 클라이언트 알림 다시 시작
 Office 365 클라이언트에 대한 업데이트를 배포할 때 다시 시작 동작 및 클라이언트 알림은 Configuration Manager 버전에 따라 다릅니다. 다음 표에는 클라이언트에서 Office 365 업데이트를 받을 때 제공하는 최종 사용자 환경에 대한 정보가 나와 있습니다.

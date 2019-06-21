@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4735678e9a6a42dedc676a8a0223af0ac8d6b81b
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: ad04b54d3284abc210da273458077889f45735f3
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56135908"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67286051"
 ---
 # <a name="capabilities-in-technical-preview-1803-for-system-center-configuration-manager"></a>System Center Configuration Manager용 기술 미리 보기 1803의 기능
 
@@ -43,21 +43,23 @@ ms.locfileid: "56135908"
 
  
 ## <a name="pull-distribution-points-support-cloud-distribution-points-as-source"></a>풀(pull) 배포 지점은 클라우드 배포 지점을 원본으로 지원합니다.  
-<!--1321554--> 많은 고객은 WAN을 통해 원본 배포 지점에서 콘텐츠를 다운로드하는 원격 사무실 또는 지사에서 [풀(pull) 배포 지점](/sccm/core/plan-design/hierarchy/use-a-pull-distribution-point)을 사용합니다. 원격 사무실의 인터넷 연결 속도가 더 빠르거나 WAN 링크에 대한 로드를 줄이려는 경우 이제 Microsoft Azure의 [클라우드 배포 지점](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point)을 원본으로 사용할 수 있습니다. 배포 지점 속성의 **풀(pull) 배포 지점** 탭에 원본을 추가하면 이제 사이트의 모든 클라우드 배포 지점이 사용 가능한 배포 지점으로 나열됩니다. 그렇지 않을 경우 두 사이트 시스템 역할의 동작이 동일하게 유지됩니다. 
+<!--1321554-->
+많은 고객은 WAN을 통해 원본 배포 지점에서 콘텐츠를 다운로드하는 원격 사무실 또는 지사에서 [풀(pull) 배포 지점](/sccm/core/plan-design/hierarchy/use-a-pull-distribution-point)을 사용합니다. 원격 사무실의 인터넷 연결 속도가 더 빠르거나 WAN 링크에 대한 로드를 줄이려는 경우 이제 Microsoft Azure의 [클라우드 배포 지점](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point)을 원본으로 사용할 수 있습니다. 배포 지점 속성의 **풀(pull) 배포 지점** 탭에 원본을 추가하면 이제 사이트의 모든 클라우드 배포 지점이 사용 가능한 배포 지점으로 나열됩니다. 그렇지 않을 경우 두 사이트 시스템 역할의 동작이 동일하게 유지됩니다. 
 
 ### <a name="prerequisites"></a>필수 구성 요소
 - 풀(pull) 배포 지점은 인터넷에 액세스할 수 있어야 Microsoft Azure와 통신할 수 있습니다.
 - 콘텐츠는 원본 클라우드 배포 지점에 배포되어야 합니다.
 
 > [!Note]  
-> 이 기능은 데이터 스토리지 및 네트워크 출력에 대한 Azure 구독에 요금을 부과합니다. 자세한 내용은 [클라우드 기반 배포 사용 비용](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point#BKMK_CloudDPCost)을 참조하세요.
+> 이 기능은 데이터 스토리지 및 네트워크 출력에 대한 Azure 구독에 요금을 부과합니다. 자세한 내용은 [클라우드 기반 배포 사용 비용](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point#bkmk_cost)을 참조하세요.
 
 
 
 ## <a name="partial-download-support-in-client-peer-cache-to-reduce-wan-utilization"></a>WAN 사용률을 줄이기 위해 클라이언트 피어 캐시에서 부분 다운로드 지원
-<!--1357346--> 클라이언트 피어 캐시 원본은 이제 콘텐츠를 여러 부분으로 나눌 수 있습니다. 이러한 부분은 네트워크 전송을 최소화하여 WAN 사용률을 줄입니다. 관리 지점은 콘텐츠 부분의 더 자세한 추적을 제공합니다. 경계 그룹별로 동일한 콘텐츠의 2회 이상 다운로드를 제거하려고 시도합니다. 
+<!--1357346-->
+클라이언트 피어 캐시 원본은 이제 콘텐츠를 여러 부분으로 나눌 수 있습니다. 이러한 부분은 네트워크 전송을 최소화하여 WAN 사용률을 줄입니다. 관리 지점은 콘텐츠 부분의 더 자세한 추적을 제공합니다. 경계 그룹별로 동일한 콘텐츠의 2회 이상 다운로드를 제거하려고 시도합니다. 
 
-### <a name="example-scenario"></a>예제 시나리오 
+### <a name="example-scenario"></a>예제 시나리오
 Contoso는 다음과 같은 두 경계 그룹이 있는 단일 주 사이트를 운영합니다. HQ(본사) 및 지점. 경계 그룹 간에는 30분의 대체 관계가 있습니다. 사이트의 관리 지점 및 배포 지점은 HQ 경계에만 있습니다. 지사 위치에는 로컬 배포 지점이 없습니다. 지사의 네 클라이언트 중 두 개는 피어 캐시 원본으로 구성됩니다. 
 
 ![예제 시나리오에 설명된 네트워크 구성의 다이어그램](media/1357346-peer-cache-source-parts.png)
@@ -93,13 +95,15 @@ Contoso는 다음과 같은 두 경계 그룹이 있는 단일 주 사이트를 
 
 
 ## <a name="maintenance-windows-in-software-center"></a>소프트웨어 센터의 유지 관리 기간
-<!--1358131--> 소프트웨어 센터는 이제 다음 예약된 유지 관리 기간을 표시합니다. 설치 상태 탭에서 보기를 모두에서 예정으로 전환합니다. 시간 범위와 예약된 배포 목록을 표시합니다. 향후 유지 관리 기간이 없으면 목록은 비어 있습니다. 
+<!--1358131-->
+소프트웨어 센터는 이제 다음 예약된 유지 관리 기간을 표시합니다. 설치 상태 탭에서 보기를 모두에서 예정으로 전환합니다. 시간 범위와 예약된 배포 목록을 표시합니다. 향후 유지 관리 기간이 없으면 목록은 비어 있습니다. 
 
 ![설치 상태 탭에서 예정된 배포 목록을 보여주는 소프트웨어 센터](media/1358131-software-center-maintenance-windows.png)
 
 
 ## <a name="custom-tab-for-webpage-in-software-center"></a>소프트웨어 센터의 웹 페이지용 사용자 지정 탭
-<!--1358132--> 이제 소프트웨어 센터에서 사용자 지정된 탭을 만들어 웹 페이지를 열 수 있습니다. 이 기능을 사용하면 일관되고 신뢰할 수 있는 방식으로 최종 사용자에게 콘텐츠를 보여줄 수 있습니다.  다음 목록에는 몇 가지 예가 포함되어 있습니다.
+<!--1358132-->
+이제 소프트웨어 센터에서 사용자 지정된 탭을 만들어 웹 페이지를 열 수 있습니다. 이 기능을 사용하면 일관되고 신뢰할 수 있는 방식으로 최종 사용자에게 콘텐츠를 보여줄 수 있습니다. 다음 목록에는 몇 가지 예가 포함되어 있습니다.
 - IT 연락처: 조직의 IT 부서에 문의하는 방법에 대한 정보
 - IT 지원 센터: 기술 자료 검색 또는 지원 티켓 열기와 같은 IT 셀프 서비스 작업
 - 최종 사용자 설명서: 조직의 사용자가 애플리케이션을 사용하는 방법이나 Windows 10으로 업그레이드하는 방법과 같은 다양한 IT 토픽에 대한 아티클

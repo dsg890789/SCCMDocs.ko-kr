@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a41f144909ba946d3c3bc2f00a1573cad2c9b850
-ms.sourcegitcommit: f531d0a622f220739710b2fe6644ea58d024064a
+ms.openlocfilehash: c15b387ec9f2048a923eb220b6c8e3e1fdccded8
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65933330"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67286306"
 ---
 # <a name="capabilities-in-technical-preview-1612-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1612의 기능
 
@@ -93,7 +93,7 @@ Technical Preview 버전 1612부터 데이터 웨어하우스 서비스 지점�
 
 **동기화 설정** 페이지:   
 - **데이터 설정:**
-  - **동기화할 복제 그룹** – 동기화할 데이터 그룹을 선택합니다. 다양한 유형의 데이터 그룹에 대한 자세한 내용은 [사이트 간 데이터 전송](/sccm/core/servers/manage/data-transfers-between-sites)에서 [데이터베이스 복제](/sccm/core/servers/manage/data-transfers-between-sites#a-namebkmkdbrepa-database-replication) 및 **분산 뷰**를 참조하세요.
+  - **동기화할 복제 그룹** – 동기화할 데이터 그룹을 선택합니다. 다양한 유형의 데이터 그룹에 대한 자세한 내용은 [사이트 간 데이터 전송](/sccm/core/servers/manage/data-transfers-between-sites)에서 [데이터베이스 복제](/sccm/core/servers/manage/data-transfers-between-sites#bkmk_dbrep) 및 **분산 뷰**를 참조하세요.
   - **동기화에 포함되는 테이블** – 동기화할 각 추가 테이블의 이름을 지정합니다. 여러 테이블을 구분하려면 쉼표를 사용합니다. 이러한 테이블은 선택한 복제 그룹 외에도 사이트 데이터베이스에서 동기화됩니다.
   - **동기화에서 제외되는 테이블** -동기화하는 복제 그룹의 개별 테이블 이름을 지정합니다. 지정한 테이블이 제외됩니다. 여러 테이블을 구분하려면 쉼표를 사용합니다.
 - **동기화 설정:**
@@ -310,7 +310,7 @@ Azure 관리자 자격 증명이 필요하므로 Azure 관리자를 사용하여
 
 - Azure AD 등록 프로세스를 완료해야 하며, 연결 정보를 가져오기 위해 클라이언트가 처음에 회사 네트워크에 연결되어 있어야 합니다.
 - 클라이언트는 도메인(Active Directory에 등록됨) 및 클라우드 도메인(Azure AD에 등록됨)에 가입되어 있어야 합니다.
-- [Active Directory 사용자 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#active-directory-user-discovery#active-directory-user-discovery)을 실행해야 합니다.
+- [Active Directory 사용자 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#bkmk_aboutUser)을 실행해야 합니다.
 - 인터넷을 통한 사용자 정책 요청을 허용하도록 Configuration Manager 클라이언트를 수정하고 변경 내용을 클라이언트에 배포해야 합니다. 클라이언트에 대한 이 변경은 *클라이언트 디바이스*에서 발생하기 때문에 사용자 정책에 필요한 구성 변경을 완료하지 않은 경우에도 클라우드 관리 게이트웨이를 통해 배포할 수 있습니다.
 - HTTPS를 사용하여 네트워크의 토큰을 보호하도록 관리 지점을 구성해야 하며 .Net 4.5가 설치되어 있어야 합니다.
 

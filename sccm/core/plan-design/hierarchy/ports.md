@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a513eb15f9a8c841aa5896ee5d416bd7863d0cb9
-ms.sourcegitcommit: ab9f2a7fb7ea3a0c65808fce2975ab25a670281f
+ms.openlocfilehash: 9d697427fe9cfa774cc7baca6563d6c1cc285c8b
+ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65612785"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159393"
 ---
 # <a name="ports-used-in-configuration-manager"></a>Configuration Manager에서 사용되는 포트
 
@@ -96,14 +96,14 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |SQL over TCP|--|1433<sup>[참고 2](#bkmk_note2) 대체 포트 사용 가능</sup>|  
 
 
-###  <a name="BKMK_PortsAppCatalogService-SQL"></a> 애플리케이션 카탈로그 웹 서비스 지점 -- &amp;gt; SQL Server  
+###  <a name="BKMK_PortsAppCatalogService-SQL"></a> 애플리케이션 카탈로그 웹 서비스 지점 -- &gt; SQL Server  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |SQL over TCP|--|1433<sup>[참고 2](#bkmk_note2) 대체 포트 사용 가능</sup>|  
 
 
-###  <a name="BKMK_PortsAppCatalogWebSitePoint_AppCatalogWebServicePoint"></a> 애플리케이션 카탈로그 웹 사이트 지점 -- &amp;gt; 애플리케이션 카탈로그 웹 서비스 지점  
+###  <a name="BKMK_PortsAppCatalogWebSitePoint_AppCatalogWebServicePoint"></a> 애플리케이션 카탈로그 웹 사이트 지점 -- &gt; 애플리케이션 카탈로그 웹 서비스 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -111,7 +111,7 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |HTTPS|--|443 <sup>[참고 2](#bkmk_note2) 대체 포트 사용 가능</sup>|  
 
 
-###  <a name="BKMK_PortsClient-AppCatalogWebsitePoint"></a> 클라이언트 -- &amp;gt; 애플리케이션 카탈로그 웹 사이트 지점  
+###  <a name="BKMK_PortsClient-AppCatalogWebsitePoint"></a> 클라이언트 -- &gt; 애플리케이션 카탈로그 웹 사이트 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -130,7 +130,7 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |Windows PE 피어 캐시 브로드캐스트|8004|--|  
 |Windows PE 피어 캐시 다운로드|--|8003|  
 
-자세한 내용은 [Windows PE 피어 캐시](/sccm/osd/get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic.md#-requirements-for-a-client-to-use-a--windows-pe-peer-cache-source)를 참조하세요.
+자세한 내용은 [Windows PE 피어 캐시](/sccm/osd/get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic#BKMK_PeerCacheRequirements)를 참조하세요.
 
 
 ###  <a name="BKMK_PortsClient-PolicyModule"></a> 클라이언트 -- &gt; Configuration Manager NDES(네트워크 디바이스 등록 서비스) 정책 모듈   
@@ -422,14 +422,14 @@ Configuration Manager 콘솔은 다음 구성에 대해 인터넷 액세스를 �
 |SQL over TCP|--|1433<sup>[참고 2](#bkmk_note2) 대체 포트 사용 가능</sup>|  
 
 
-###  <a name="BKMK_PortsMobileDeviceClient-EnrollmentProxyPoint"></a> 모바일 디바이스 -- &amp;gt; 등록 프록시 지점  
+###  <a name="BKMK_PortsMobileDeviceClient-EnrollmentProxyPoint"></a> 모바일 디바이스 -- &gt; 등록 프록시 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |HTTPS|--|443|  
 
 
-###  <a name="BKMK_PortsMobileDeviceClient-WindowsIntune"></a> 모바일 디바이스 -- &amp;gt; Microsoft Intune  
+###  <a name="BKMK_PortsMobileDeviceClient-WindowsIntune"></a> 모바일 디바이스 -- &gt; Microsoft Intune  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -461,7 +461,7 @@ Configuration Manager 콘솔은 다음 구성에 대해 인터넷 액세스를 �
 자세한 내용은 [CMG 포트 및 데이터 흐름](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#ports-and-data-flow)을 참조하세요.
 
 
-###  <a name="BKMK_PortsAppCatalogWebServicePoint_SiteServer"></a> 사이트 서버 &lt; -- &amp;gt; 애플리케이션 카탈로그 웹 서비스 지점  
+###  <a name="BKMK_PortsAppCatalogWebServicePoint_SiteServer"></a> 사이트 서버 &lt; -- &gt; 애플리케이션 카탈로그 웹 서비스 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -470,7 +470,7 @@ Configuration Manager 콘솔은 다음 구성에 대해 인터넷 액세스를 �
 |RPC|--|동적 <sup>[참고 6](#bkmk_note6)</sup>|  
 
 
-###  <a name="BKMK_PortsAppCatalogWebSitePoint_SiteServer"></a> 사이트 서버 &lt; -- &amp;gt; 애플리케이션 카탈로그 웹 사이트 지점  
+###  <a name="BKMK_PortsAppCatalogWebSitePoint_SiteServer"></a> 사이트 서버 &lt; -- &gt; 애플리케이션 카탈로그 웹 사이트 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  

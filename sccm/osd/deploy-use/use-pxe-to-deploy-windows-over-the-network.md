@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71fab49dc6ba5d949aeaf48145e1f7d0446c0f91
-ms.sourcegitcommit: 18a94eb78043cb565b05cd0e9469b939b29cccf0
+ms.openlocfilehash: f707eb4b4fabf98d6e436f038f932515749c35c4
+ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66355005"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67194441"
 ---
 # <a name="use-pxe-to-deploy-windows-over-the-network-with-configuration-manager"></a>Configuration Manager에서 PXE를 사용하여 네트워크를 통해 Windows 배포
 
@@ -126,7 +126,7 @@ PXE 시작 OS 배포를 사용하려면 해당 OS를 PXE 부팅 요청에 사용
 
 - **사용 가능한 배포**: 사용 가능한 배포를 활용하려면 사용자가 대상 컴퓨터 앞에 있어야 합니다. 사용자는 **F12** 키를 눌러 PXE 부트 프로세스를 계속 진행해야 합니다. 사용자가 **F12** 키를 누르지 못할 경우 컴퓨터는 현재 OS로 부팅하거나 사용 가능한 다음 부팅 디바이스에서 부팅합니다.
 
-Configuration Manager 컬렉션 또는 컴퓨터에 할당된 마지막 PXE 배포의 상태를 지우면 필수 PXE 배포를 재배포할 수 있습니다. **필수 PXE 배포 지우기** 작업에 대한 자세한 내용은 [클라이언트 관리](/sccm/core/clients/manage/manage-clients#BKMK_ManagingClients_DevicesNode) 또는 [컬렉션 관리](/sccm/core/clients/manage/collections/manage-collections#how-to-manage-device-collections)를 참조하세요. 이 작업은 해당 배포의 상태를 다시 설정하고 가장 최근의 필수 배포를 다시 설치합니다.
+Configuration Manager 컬렉션 또는 컴퓨터에 할당된 마지막 PXE 배포의 상태를 지우면 필수 PXE 배포를 재배포할 수 있습니다. **필수 PXE 배포 지우기** 작업에 대한 자세한 내용은 [클라이언트 관리](/sccm/core/clients/manage/manage-clients#BKMK_ManagingClients_DevicesNode) 또는 [컬렉션 관리](/sccm/core/clients/manage/collections/manage-collections#bkmk_device)를 참조하세요. 이 작업은 해당 배포의 상태를 다시 설정하고 가장 최근의 필수 배포를 다시 설치합니다.
 
 > [!IMPORTANT]  
 > PXE 프로토콜은 안전하지 않습니다. PXE 서버 및 PXE 클라이언트는 사이트에 대한 무단 액세스를 방지하기 위해 데이터 센터 내부와 같은 물리적으로 안전한 네트워크에 있는지 확인합니다.

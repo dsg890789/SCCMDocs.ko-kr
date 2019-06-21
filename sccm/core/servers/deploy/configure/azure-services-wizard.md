@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94e632638018d213d46b34e87f8b5398cb49c59e
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: d6d7acf1d5c73c59f2ce1e6d2b7f3f7354e21979
+ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65499079"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251882"
 ---
 # <a name="configure-azure-services-for-use-with-configuration-manager"></a>Configuration Manager에서 사용하도록 Azure 서비스 구성
 
@@ -41,7 +41,7 @@ ms.locfileid: "65499079"
 -   **Log Analytics 커넥터**: [Azure Log Analytics에 연결합니다](/sccm/core/clients/manage/sync-data-log-analytics). 컬렉션 데이터를 Log Analytics에 동기화합니다.  
 
     > [!Note]  
-    > 이 문서는 *Log Analytics 커넥터*(이전의 *OMS 커넥터*)를 참조합니다. 기능 차이는 없습니다. 자세한 내용은 [Azure 관리 - 모니터링](https://docs.microsoft.com/azure/monitoring/#operations-management-suite)을 참조하세요.  
+    > 이 문서는 *Log Analytics 커넥터*(이전의 *OMS 커넥터*)를 참조합니다. 기능 차이는 없습니다. 자세한 내용은 [Azure 관리 - 모니터링](/azure/azure-monitor/terminology#log-analytics)을 참조하세요.  
 
 -   **업그레이드 준비 커넥터**: Windows Analytics [업그레이드 준비](/sccm/core/clients/manage/upgrade/upgrade-analytics)에 연결합니다. 클라이언트 업그레이드 호환성 데이터를 봅니다.  
 
@@ -86,7 +86,7 @@ Azure 서비스마다 고유의 구성이 필요하며, Azure Portal에서 만�
 Azure 앱에 대한 자세한 내용은 다음 문서부터 참조하세요.
 - [Azure App Service의 인증 및 권한 부여](/azure/app-service/app-service-authentication-overview)
 - [Web Apps 개요](/azure/app-service-web/app-service-web-overview)
-- [Azure AD에서 애플리케이션 등록의 기본 사항](/azure/active-directory/develop/active-directory-authentication-scenarios#basics-of-registering-an-application-in-azure-ad)  
+- [Azure AD에서 애플리케이션 등록의 기본 사항](/azure/active-directory/develop/authentication-scenarios#authentication-basics-in-microsoft-identity-platform)  
 - [Azure Active Directory 테넌트에 애플리케이션 등록](/azure/active-directory/active-directory-app-registration)
 
 
@@ -267,7 +267,7 @@ Azure 서비스 마법사의 앱 페이지에서 **네이티브 클라이언트 
 
 3.  사이트에서 사용자 개체에 대한 데이터를 저장합니다. 자세한 내용은 [Azure AD 사용자 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#azureaddisc)을 참조하세요.  
 
-4.  Configuration Manager 클라이언트가 Azure AD 사용자 토큰을 요청합니다. 클라이언트에서 Azure AD 클라이언트 앱의 애플리케이션 ID를 사용하여, 그리고 서버 앱을 대상 그룹으로 사용하여 클레임을 만듭니다. 자세한 내용은 [Azure AD 보안 토큰의 클레임](/azure/active-directory/develop/active-directory-authentication-scenarios#claims-in-azure-ad-security-tokens)을 참조하세요.  
+4.  Configuration Manager 클라이언트가 Azure AD 사용자 토큰을 요청합니다. 클라이언트에서 Azure AD 클라이언트 앱의 애플리케이션 ID를 사용하여, 그리고 서버 앱을 대상 그룹으로 사용하여 클레임을 만듭니다. 자세한 내용은 [Azure AD 보안 토큰의 클레임](/azure/active-directory/develop/authentication-scenarios#claims-in-microsoft-identity-platform-security-tokens)을 참조하세요.  
 
 5.  클라이언트는 클라우드 관리 게이트웨이 및/또는 온-프레미스 HTTPS 사용 관리 지점에 Azure AD 토큰을 제공하여 사이트에 인증합니다.  
 

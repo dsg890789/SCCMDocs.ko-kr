@@ -10,12 +10,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb6071e576a12773c0aa5627dad80700db843f43
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 8cae90ec8a6120b2a9fcbdb25d7aecbf66bcaae8
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65496115"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67285809"
 ---
 # <a name="whats-changed-in-system-center-configuration-manager-from-system-center-2012-configuration-manager"></a>System Center 2012 Configuration Manager에서 변경된 System Center Configuration Manager의 기능
 
@@ -23,7 +23,7 @@ ms.locfileid: "65496115"
 
 Configuration Manager의 현재 분기에서는 System Center 2012 Configuration Manager의 중요한 변경 내용이 도입되었습니다. 이 문서에서는 중요한 변경 내용과 System Center Configuration Manager의 기준 버전 1511에 도입된 새로운 기능을 확인합니다. System Center Configuration Manager에 대한 후속 업데이트에서 도입된 변경 내용은 [System Center Configuration Manager 증분 버전의 새로운 기능](/sccm/core/plan-design/changes/whats-new-incremental-versions)을 참조하세요.
 
-System Center Configuration Manager(버전 1511)의 2015년 12월 릴리스는 현재 Microsoft Configuration Manager 제품의 초기 릴리스였습니다. 일반적으로 System Center Configuration Manager 현재 분기라고 합니다. ‘현재 분기’는 제품의 증분 업데이트를 지원하는 버전임을 나타냅니다. 또한 이를 통해 Configuration Manager의 이 릴리스와 이전 릴리스를 구분할 수 있습니다.  
+System Center Configuration Manager(버전 1511)의 2015년 12월 릴리스는 현재 Microsoft Configuration Manager 제품의 초기 릴리스였습니다. 일반적으로 System Center Configuration Manager 현재 분기라고 합니다. ‘현재 분기’는 제품의 증분 업데이트를 지원하는 버전임을 나타냅니다.  또한 이를 통해 Configuration Manager의 이 릴리스와 이전 릴리스를 구분할 수 있습니다.  
 
 System Center Configuration Manager:  
 
@@ -45,7 +45,7 @@ System Center Configuration Manager는 권장 업데이트를 손쉽게 찾아�
 
 
 업데이트 사용 방법에 대한 자세한 내용은 [Configuration Manager용 업데이트](/sccm/core/servers/manage/updates)를 참조하세요.  
-기준선에 대한 자세한 내용은 [기준선 및 업데이트 버전](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)을 참조하세요.
+기준선에 대한 자세한 내용은 [기준선 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)을 참조하세요.
 
 
 

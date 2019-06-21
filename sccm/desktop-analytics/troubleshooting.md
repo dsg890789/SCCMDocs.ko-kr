@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 305c31c2a40e51b84a0a5da671db1c3f6dad6f2e
-ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
+ms.openlocfilehash: c6a64a007462c8619e05b3002611bb72581b6f92
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67159004"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67285707"
 ---
 # <a name="troubleshoot-desktop-analytics"></a>데스크톱 Analytics 문제 해결
 
@@ -82,7 +82,7 @@ Azure ad에 응용 프로그램을 추가 하는 데스크톱 분석:
 
 ### <a name="create-and-import-app-for-configuration-manager"></a>만들기 및 Configuration Manager에 대 한 앱 가져오기
 
-Configuration Manager에서 Azure 서비스 구성 마법사에서이 Azure AD 앱을 만들 수 없으면, 다음 단계를 사용 하 여를 수동으로 만들고 Configuration Manager에 대 한 앱을 가져옵니다.
+완료 한 후 합니다 [초기 온 보 딩](/sccm/desktop-analytics/set-up#initial-onboarding) 데스크톱 Analytics 포털에서 사용 하 여 다음 단계를 수동으로 만들고 Azure 서비스 구성에서이 Azure AD 앱을 만들 수 없는 경우 Configuration Manager에 대 한 앱 가져오기 마법사입니다.
 
 #### <a name="create-app-in-azure-ad"></a>Azure AD에서 앱 만들기
 

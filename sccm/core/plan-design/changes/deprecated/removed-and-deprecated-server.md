@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52e3384f1922e1a8322f316fd99bdd967e34b131
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 88b192163ac7a947f73ff658f7bafbfc1bfd5e14
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65496222"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67285871"
 ---
 # <a name="removed-and-deprecated-for-configuration-manager-site-servers"></a>Configuration Manager 사이트 서버에서 제거되거나 사용되지 않음
 
@@ -41,7 +41,7 @@ ms.locfileid: "65496222"
 > [!Important]  
 > SP1이 포함된 Windows Server 2008 R2의 확장된 지원 종료 날짜는 2020년 1월 14일입니다. 이 날짜 이후에 Configuration Manager에서는 이 OS를 사이트 시스템 역할로 지원하지 않습니다. 
 
-사이트 서버 OS를 Windows Server 2008 R2에서 Windows Server 2012 R2로 업그레이드할 수 있습니다. 자세한 내용은 [Windows Server 2008 R2를 실행하는 사이트 서버의 운영 체제에 대한 현재 위치 업그레이드](/sccm/core/servers/manage/upgrade-on-premises-infrastructure#bkmk_from2008r2)를 참조하세요.  
+사이트 서버 OS를 Windows Server 2008 R2에서 Windows Server 2012 R2로 업그레이드할 수 있습니다. 자세한 내용은 [Windows Server 2008 R2를 실행하는 사이트 서버의 운영 체제에 대한 현재 위치 업그레이드](/sccm/core/servers/manage/upgrade-on-premises-infrastructure#BKMK_SupConfigUpgradeSiteSrv)를 참조하세요.  
 
 
 #### <a name="bkmk_note2"></a> 참고 2: Windows Server 2008 SP2
@@ -62,9 +62,9 @@ ms.locfileid: "65496222"
 
 SQL Server 버전을 업그레이드해야 할 경우, 쉬운 경우부터 더 복잡한 경우까지 다음 방법을 권장합니다.
 
-1. [SQL Server 현재 위치 업그레이드](/sccm/core/servers/manage/upgrade-on-premises-infrastructure#a-namebkmksupconfigupgradedbsrva-upgrade-sql-server-on-the-site-database-server)(권장).  
+1. [SQL Server 현재 위치 업그레이드](/sccm/core/servers/manage/upgrade-on-premises-infrastructure#BKMK_SupConfigUpgradeDBSrv)(권장).  
 
-2. SQL Server의 새 버전을 새 컴퓨터에 설치합니다. 그런 다음, 사이트 서버를 새 SQL Server로 가리키려면 Configuration Manager 설치 프로그램의 [데이터베이스 이동 옵션을 사용](/sccm/core/servers/manage/modify-your-infrastructure#a-namebkmkdbconfiga-modify-the-site-database-configuration)합니다.  
+2. SQL Server의 새 버전을 새 컴퓨터에 설치합니다. 그런 다음, 사이트 서버를 새 SQL Server로 가리키려면 Configuration Manager 설치 프로그램의 [데이터베이스 이동 옵션을 사용](/sccm/core/servers/manage/modify-your-infrastructure#bkmk_dbconfig)합니다.  
 
 3. [백업 및 복구](/sccm/protect/understand/backup-and-recovery)를 사용합니다.  
 

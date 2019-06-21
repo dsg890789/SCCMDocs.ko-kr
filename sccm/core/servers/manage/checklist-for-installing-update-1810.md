@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c57042e6ea4db7b244b8617bbef99633d9026d1b
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 59cb31a0d57af21331f48c6a6ba415439fa97239
+ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65501122"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67252181"
 ---
 # <a name="checklist-for-installing-update-1810-for-configuration-manager"></a>Configuration Manager용 업데이트 1810을 설치하기 위한 검사 목록
 
@@ -34,7 +34,7 @@ Configuration Manager의 현재 분기를 사용하는 경우 버전 1810용 콘
 
     -   프록시 서버 설정이 http://silverlight.dlservice.microsoft.com , http://download.microsoft.com 및/또는 http://go.microsoft.com 에서 다운로드하지 않도록 방지하는 경우 또 다른 일반적인 다운로드 문제가 발생합니다.
 
-업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 및 서비스](/sccm/core/servers/manage/updates#a-namebkmkinconsolea-in-console-updates-and-servicing)를 참조하세요.
+업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 및 서비스](/sccm/core/servers/manage/updates#bkmk_inconsole)를 참조하세요.
 
 편재 분기 버전에 대한 자세한 내용은 [기준선 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)을 참조하세요.
 
@@ -92,7 +92,7 @@ Windows 10 ADK(평가 및 배포 키트)의 버전은 Configuration Manager 버�
 Windows ADK를 업데이트하기 전에 사이트를 업데이트하는 경우 [부팅 이미지를 사용하여 배포 지점 업데이트](/sccm/osd/get-started/manage-boot-images#update-distribution-points-with-the-boot-image)를 참조하세요.
 
 #### <a name="review-sql-server-native-client-version"></a>SQL Server Native Client 버전 검토
-TLS 1.2에 대한 지원이 포함되는 최소 버전의 SQL Server 2012 Native Client를 설치해야 합니다. 자세한 내용은 [필수 조건 검사 목록](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#sql-native-client)을 참조하세요.
+TLS 1.2에 대한 지원이 포함되는 최소 버전의 SQL Server 2012 Native Client를 설치해야 합니다. 자세한 내용은 [필수 조건 검사 목록](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#sql-server-native-client)을 참조하세요.
 
 #### <a name="review-the-site-and-hierarchy-status-for-unresolved-issues"></a>해결되지 않은 문제에 대해 사이트 및 계층 구조 상태 검토 
 기존 작동 문제로 인해 사이트 업데이트가 실패할 수 있습니다. 사이트를 업데이트하기 전에 다음 시스템에 대한 모든 작동 문제를 해결합니다.  
@@ -160,7 +160,7 @@ Microsoft 또는 Microsoft 파트너에서 다른 제품으로 Configuration Man
 > 필수 구성 요소 검사기가 실행되면 프로세스에서 사이트 유지 관리 작업에 사용되는 일부 제품 소스 파일을 업데이트합니다. 따라서 필수 구성 요소 검사기를 실행한 후 업데이트를 설치하기 전에 사이트 유지 관리 작업을 수행해야 하는 경우 사이트 서버의 CD.Latest 폴더에서  **Setupwpf.exe** (Configuration Manager 설치 프로그램)를 실행합니다.
 
 #### <a name="update-sites"></a>사이트 업데이트   
-이제 계층 구조에 대한 업데이트 설치를 시작할 수 있습니다. 업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates#a-namebkmkinstalla-install-in-console-updates)를 참조하세요.
+이제 계층 구조에 대한 업데이트 설치를 시작할 수 있습니다. 업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates#bkmk_install)를 참조하세요.
 
 일상적인 업무 시간 외에 업데이트를 설치하도록 계획할 수 있습니다. 프로세스가 비즈니스 작업에 최소한의 영향을 주는 시기를 확인합니다. 업데이트를 설치하면 해당 작업에서 사이트 구성 요소 및 사이트 시스템 역할을 다시 설치합니다.
 

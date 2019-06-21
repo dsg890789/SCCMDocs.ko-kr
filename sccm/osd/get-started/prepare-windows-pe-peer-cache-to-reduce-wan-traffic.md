@@ -2,7 +2,7 @@
 title: WAN 트래픽을 줄이기 위해 Windows PE 피어 캐시 준비
 titleSuffix: Configuration Manager
 description: Windows PE 피어 캐시는 로컬 배포 지점이 없는 경우 로컬 피어로부터 콘텐츠를 가져와 WAN 트래픽을 최소화하도록 Windows PE에서 작동합니다.
-ms.date: 10/06/2016
+ms.date: 06/18/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bedaeed065121e18089cb6b1847397ba5cfdb35a
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 80dffb04d7f6ef097ad5b629690e704d1c9a263f
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56128758"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67286575"
 ---
 # <a name="prepare-windows-pe-peer-cache-to-reduce-wan-traffic-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 WAN 트래픽을 줄이기 위해 Windows PE 피어 캐시 준비
 
@@ -64,9 +64,11 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
 
 -   Configuration Manager 클라이언트가 네트워크의 다음 포트를 통해 통신할 수 있어야 합니다.  
 
-    -   피어 캐시 원본을 찾기 위한 초기 네트워크 브로드캐스트용 포트. 기본 포트는 8004입니다.  
+    -   피어 캐시 원본을 찾기 위한 초기 네트워크 브로드캐스트용 포트. 기본적으로 UDP 포트 8004입니다.  
 
-    -   피어 캐시 원본에서 콘텐츠를 다운로드하기 위한 포트(HTTP 및 HTTPS). 기본 포트는 8003입니다.  
+    -   피어 캐시 원본에서 콘텐츠를 다운로드하기 위한 포트(HTTP 및 HTTPS). 기본적으로 TCP 포트 8003입니다.  
+    
+        자세한 내용은 [연결용 포트 사용](/sccm/core/plan-design/hierarchy/ports#BKMK_PortsClient-ClientWakeUp)합니다.  
 
         > [!TIP]  
         >  클라이언트는 사용할 수 있는 콘텐츠가 있을 때 HTTPS를 사용하여 다운로드합니다. 그러나 HTTP 또는 HTTPS에 동일한 포트 번호가 사용됩니다.  
@@ -114,7 +116,7 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
 
 - **SMSTSPeerDownload**  
 
-   값:  TRUE  
+   값: TRUE  
 
    클라이언트가 Windows PE 피어 캐시를 사용할 수 있도록 합니다.  
 

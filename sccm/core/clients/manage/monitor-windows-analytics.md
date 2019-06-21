@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 194a26a4fee7a8a7c97a91db4b579c9db03c1787
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 7836e1779acbfdfbb66d6eac57bc7797abd52563
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56129785"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67286471"
 ---
 # <a name="use-windows-analytics-with-configuration-manager"></a>Configuration Manager에서 Windows Analytics 사용
 
@@ -52,7 +52,7 @@ Windows Analytics을 구성하려면 다음을 수행하세요.
 상업용 ID 키는 관리하는 디바이스의 정보를 조직의 Windows Analytics 데이터를 호스트하는 Log Analytics 작업 영역으로 매핑합니다. 업그레이드 준비에 사용하기 위한 상업용 ID 키를 이미 구성한 경우 해당 ID를 사용합니다. 상업용 ID 키가 아직 없는 경우 [상업용 ID 키 복사](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started#copy-your-commercial-id-key)를 참조하세요.
 
 #### <a name="windows-10-telemetry"></a>Windows 10 원격 분석
-자세한 내용은 [조직에서 Windows 진단 데이터 구성](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization##diagnostic-data-level)을 참조하세요.
+자세한 내용은 [조직에서 Windows 진단 데이터 구성](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#diagnostic-data-levels)을 참조하세요.
 
 > [!Note]  
 > 이제 Windows 10 데이터 수집 수준을 **고급(제한적)** 으로 설정할 수 있습니다. 이 설정을 사용하면 Windows 10 버전 1709 이상을 사용하여 **고급** 수준의 모든 데이터를 보고하는 디바이스가 없는 환경에서 디바이스에 대해 조치 가능한 인사이트를 얻을 수 있습니다. 고급(제한적) 수준에는 Windows Analytics와 관련된 고급 수준에서 수집된 데이터 하위 집합뿐 아니라 기본 레벨의 메트릭도 포함됩니다.

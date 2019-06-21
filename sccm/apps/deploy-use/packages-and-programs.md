@@ -11,12 +11,12 @@ author: aczechowski
 manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 818abdeb24d4c050bb8517bffda9ece0b012852c
-ms.sourcegitcommit: abfc9e1b3945637fa93ca8d3a11519493a5d5391
+ms.openlocfilehash: e1957dc89e808920daf7e4f40e0d3774afe8b5c5
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264407"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67286550"
 ---
 # <a name="packages-and-programs-in-system-center-configuration-manager"></a>System Center Configuration Manager의 패키지 및 프로그램
 
@@ -287,7 +287,7 @@ System Center Configuration Manager는 Configuration Manager 2007에서 사용�
 |----------|----------------------|  
 |**사전 준비된 콘텐츠 파일 만들기**|다른 사이트에 수동으로 가져올 수 있는 패키지 콘텐츠가 있는 파일을 만들 수 있도록 하는 **사전 준비된 콘텐츠 파일 만들기 마법사**를 엽니다. 사이트 서버와 배포 지점간 낮은 네트워크 대역폭 있는 경우에 유용 합니다.|  
 |**프로그램 만들기**|이 패키지에 대한 새 프로그램을 만들 수 있는 **프로그램 만들기 마법사**를 엽니다.|  
-|**내보내기**|선택한 패키지 및 해당 콘텐츠를 파일에 내보낼 수 있는 **패키지 내보내기 마법사**를 엽니다.<br /><br /> 패키지 및 프로그램을 가져오는 방법에 대한 자세한 내용은 이 항목에서 [패키지 및 프로그램 만들기](/sccm/apps/deploy-use/packages-and-programs#create-packages-and-programs)를 참조하세요.|  
+|**내보내기**|선택한 패키지 및 해당 콘텐츠를 파일에 내보낼 수 있는 **패키지 내보내기 마법사**를 엽니다.<br /><br /> 패키지 및 프로그램을 가져오는 방법에 대한 자세한 내용은 이 항목에서 [패키지 및 프로그램 만들기](/sccm/apps/deploy-use/packages-and-programs#create-a-package-and-program)를 참조하세요.|  
 |**배포**|선택한 패키지 및 프로그램을 컬렉션에 배포할 수 있는 **소프트웨어 배포 마법사**를 엽니다. 자세한 내용은 이 항목의 [패키지 및 프로그램 배포](/sccm/apps/deploy-use/packages-and-programs#deploy-packages-and-programs)를 참조하세요.|  
 |**콘텐츠 배포**|패키지 및 프로그램과 연관된 콘텐츠를 선택한 배포 지점 또는 배포 지점 그룹에 보낼 수 있는 **콘텐츠 배포 마법사**를 엽니다.|  
 |**배포 지점 업데이트**|선택한 패키지 및 프로그램에 대한 최신 콘텐츠를 사용하여 배포 지점을 업데이트합니다.|  

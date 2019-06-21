@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6229c0fe0702eac61b482c31195fd35fe3c5792f
-ms.sourcegitcommit: c43996b3cf083d919ff1ccc3d510af664aec4ed4
-ms.translationtype: HT
+ms.openlocfilehash: 2d510ab884e471a6fc4803826c9c19e21b614273
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67047005"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67285589"
 ---
 # <a name="task-sequence-steps"></a>작업 순서 단계
 
@@ -171,7 +171,7 @@ Windows Vista 이전 OS 배포에 필요한 부팅 필수 디바이스를 지정
 
 #### <a name="account"></a>계정
 
-**설정**을 선택하여 컴퓨터를 도메인에 가입시키는 데 필요한 권한이 있는 계정을 지정합니다. **Windows 사용자 계정** 대화 상자에서 사용자 이름을 `Domain\User` 형식으로 입력합니다. 자세한 내용은 [도메인 가입 계정](/sccm/core/plan-design/hierarchy/accounts#task-sequence-editor-domain-joining-account)을 참조하세요.
+**설정**을 선택하여 컴퓨터를 도메인에 가입시키는 데 필요한 권한이 있는 계정을 지정합니다. **Windows 사용자 계정** 대화 상자에서 사용자 이름을 `Domain\User` 형식으로 입력합니다. 자세한 내용은 [도메인 가입 계정](/sccm/core/plan-design/hierarchy/accounts#task-sequence-domain-join-account)을 참조하세요.
 
 #### <a name="adapter-settings"></a>어댑터 설정
 
@@ -462,7 +462,7 @@ Configuration Manager는 참조 컴퓨터에서 .wim 파일 내의 별도 이미
 
 참조 컴퓨터에 설치된 OS는 Configuration Manager에서 지원되는 Windows 버전이어야 합니다. SysPrep 도구를 사용하여 참조 컴퓨터에서 OS를 준비합니다. 설치된 OS 볼륨과 부팅 볼륨은 동일한 볼륨이어야 합니다.  
 
-선택한 네트워크 공유에 대한 쓰기 권한이 있는 계정을 지정합니다. OS 이미지 캡처 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#capture-operating-system-image-account)을 참조하세요.
+선택한 네트워크 공유에 대한 쓰기 권한이 있는 계정을 지정합니다. OS 이미지 캡처 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#capture-os-image-account)을 참조하세요.
 
 이 작업 순서 단계는 Windows PE에서만 실행됩니다. 전체 OS에서는 실행되지 않습니다.
 
@@ -680,7 +680,7 @@ MB(메가바이트) 단위의 사용 가능한 디스크 공간이 지정된 크
 
 #### <a name="account"></a>계정
 
-**설정**을 선택하여 이 네트워크 폴더에 연결할 수 있는 권한이 있는 사용자 계정을 지정합니다. 작업 순서 네트워크 폴더 연결 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#task-sequence-editor-network-folder-connection-account)을 참조하세요.
+**설정**을 선택하여 이 네트워크 폴더에 연결할 수 있는 권한이 있는 사용자 계정을 지정합니다. 작업 순서 네트워크 폴더 연결 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#task-sequence-network-folder-connection-account)을 참조하세요.
 
 
 
@@ -731,6 +731,9 @@ MB(메가바이트) 단위의 사용 가능한 디스크 공간이 지정된 크
 > 이 단계가 포함된 작업 순서를 배포하는 경우, 소프트웨어 배포 마법사의 **배포 지점** 페이지에서 **배포 옵션**에 대해 **작업 순서를 시작하기 전에 모든 콘텐츠를 로컬에 다운로드** 또는 **배포 지점에서 직접 콘텐츠 액세스**를 선택하지 않도록 합니다.  
 
 이 단계는 전체 OS 또는 Windows PE에서 실행됩니다. 구성 관리자 클라이언트 캐시에 패키지를 저장하는 옵션은 Windows PE에서 지원되지 않습니다.
+
+> [!NOTE]  
+> 합니다 **패키지 콘텐츠 다운로드** 작업 독립 실행형 미디어를 사용 하 여 사용 하 여 지원 되지 않습니다. 자세한 내용은 [독립 실행형 미디어에 대 한 작업을 지원 되지 않는](/sccm/osd/deploy-use/create-stand-alone-media#unsupported-actions-for-stand-alone-media)합니다.  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **소프트웨어**, **패키지 콘텐츠 다운로드**를 차례로 선택합니다.
 
@@ -1158,7 +1161,7 @@ Configuration Manager는 사용하지 않도록 설정된 애플리케이션 또
 
 #### <a name="enter-the-account-which-has-permission-to-join-the-domain"></a>도메인에 가입할 수 있는 권한이 있는 계정을 입력하세요.
 
-**설정**을 선택하여 도메인에 가입할 권한이 있는 계정의 사용자 이름 및 암호를 입력합니다. 계정을 `Domain\account` 형식으로 입력합니다. 작업 순서 도메인 가입 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#task-sequence-editor-domain-joining-account)을 참조하세요.  
+**설정**을 선택하여 도메인에 가입할 권한이 있는 계정의 사용자 이름 및 암호를 입력합니다. 계정을 `Domain\account` 형식으로 입력합니다. 작업 순서 도메인 가입 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#task-sequence-domain-join-account)을 참조하세요.  
 
 
 

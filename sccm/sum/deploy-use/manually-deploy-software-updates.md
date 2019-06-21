@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 57184274-5fea-4d79-a2b4-22e08ed26daf
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1c456277b87c3472e1bae8ed9ed65277d647038
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 098091c0ed9fa5948e7bc36cf601342bc847be75
+ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65500173"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159482"
 ---
 # <a name="manually-deploy-software-updates"></a>소프트웨어 업데이트 수동 배포  
 
@@ -246,7 +246,7 @@ ms.locfileid: "65500173"
 
 14. **다음** 을 클릭하여 소프트웨어 업데이트를 배포합니다.  
 
-    마법사를 완료하면 Configuration Manager가 사이트 서버의 콘텐츠 라이브러리에 소프트웨어 업데이트를 다운로드합니다. 그런 다음, 구성된 배포 지점에 콘텐츠를 배포하고 소프트웨어 업데이트 그룹을 대상 컬렉션의 클라이언트에 배포합니다. 배포 프로세스에 대한 자세한 내용은 [Software update deployment process](/sum/understand/software-updates-introduction#BKMK_DeploymentProcess)(소프트웨어 업데이트 배포 프로세스)를 참조하세요.  
+    마법사를 완료하면 Configuration Manager가 사이트 서버의 콘텐츠 라이브러리에 소프트웨어 업데이트를 다운로드합니다. 그런 다음, 구성된 배포 지점에 콘텐츠를 배포하고 소프트웨어 업데이트 그룹을 대상 컬렉션의 클라이언트에 배포합니다. 배포 프로세스에 대한 자세한 내용은 [Software update deployment process](/sccm/sum/understand/software-updates-introduction#BKMK_DeploymentProcess)(소프트웨어 업데이트 배포 프로세스)를 참조하세요.  
 
 
 

@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c2be7c446d8ce522d587f970d1fd432f648ab3f
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: fb7206020ff0a31cbf853ac1513e806c5bc05165
+ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65499634"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251961"
 ---
 # <a name="whats-new-in-version-1810-of-configuration-manager-current-branch"></a>Configuration Manager 1810 버전의 새로운 기능
 
@@ -76,7 +76,7 @@ Configuration Manager는 이제 사이트 시스템으로 Windows Server 2019 �
 
 - **SQL 변경 내용 추적 정리**: 사이트 데이터베이스에 SQL 변경 내용 추적 데이터의 백로그가 있는지 확인하는 새로운 검사입니다. 이 백로그를 확인하고 지우는 절차를 포함한 자세한 내용은 [SQL 변경 내용 추적 정리](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#bkmk_changetracking)를 참조하세요. <!--SCCMDocs-pr issue 3023-->  
 
-- **SQL Native Client 버전**: 이 필수 구성 요소 검사가 TLS 1.2를 지원하는 SQL Native Client 버전에 대해 업데이트되었습니다. 최소 버전은 [SQL 2012 SP4](https://www.microsoft.com/download/details.aspx?id=50402)입니다. 자세한 내용은 [SQL Native Client 버전](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#sql-native-client)을 참조하세요. <!--SCCMDocs-pr issue 3094-->  
+- **SQL Native Client 버전**: 이 필수 구성 요소 검사가 TLS 1.2를 지원하는 SQL Native Client 버전에 대해 업데이트되었습니다. 최소 버전은 [SQL 2012 SP4](https://www.microsoft.com/download/details.aspx?id=50402)입니다. 자세한 내용은 [SQL Native Client 버전](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#sql-server-native-client)을 참조하세요. <!--SCCMDocs-pr issue 3094-->  
 
 - **Windows 클러스터 노드의 사이트 시스템**: Configuration Manager 설치 프로세스는 장애 조치(Failover) 클러스터링을 위한 Windows 역할이 있는 컴퓨터에서 사이트 서버 역할의 설치를 더 이상 차단하지 않습니다. SQL Always On에는 이 역할이 필요하므로 이전에는 사이트 서버에 사이트 데이터베이스를 공동 배치할 수 없었습니다. 이 변경을 사용하면 SQL Always On 및 사이트 서버를 수동 모드에서 사용하여 더 적은 수의 서버로 고가용성 사이트를 만들 수 있습니다. 자세한 내용은 [Windows 장애 조치(failover) 클러스터](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#windows-failover-cluster)를 참조하세요. <!--1359132-->  
 
@@ -453,7 +453,7 @@ Configuration Manager용 Windows PowerShell cmdlet의 변경 내용에 대한 �
 > 다음에 대해 자세히 알아보세요.
 >
 > - [새 사이트 설치](/sccm/core/servers/deploy/install/installing-sites)  
-> - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)  
+> - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)  
 
 알려진 중요한 문제는 [릴리스 정보](/sccm/core/servers/deploy/install/release-notes)를 참조하세요.
 

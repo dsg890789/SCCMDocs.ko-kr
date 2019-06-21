@@ -12,12 +12,12 @@ ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04e4f24cee033f46ea69080a423b9ca6e2d4c9d5
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 75737d3f640a9ba0a27277f36791227fbdd08a5a
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65495139"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67285838"
 ---
 # <a name="what39s-new-in-version-1610-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1610의 새로운 기능
 
@@ -31,13 +31,13 @@ System Center Configuration Manager 현재 분기의 업데이트 1610은 버전
 >  다음에 대해 자세히 알아보세요.    
 >  -   [새 사이트 설치](https://technet.microsoft.com/library/mt590197.aspx)  
 >  -   [사이트에 업데이트 설치](https://technet.microsoft.com/library/mt607046.aspx)  
->  -   [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)  
+>  -   [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)
 
 다음 섹션에서는 Configuration Manager 버전 1610에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.  
 
 
 ## <a name="in-console-monitoring-of-update-installation-status"></a>콘솔 내 업데이트 설치 상태 모니터링  
-버전 1610부터 콘솔에서 업데이트 팩을 설치하고 설치를 모니터링할 때 **사후 설치**라는 새 단계가 있습니다. 이 단계에는 주요 서비스 다시 시작, 복제 모니터링 초기화 등의 작업 상태가 포함됩니다. 이 단계는 버전 1610으로 사이트 업데이트를 수행해야 콘솔에서 사용할 수 있습니다. 업데이트 설치 상태에 대한 자세한 내용은 [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates#a-namebkmkinstalla-install-in-console-updates)를 참조하세요.
+버전 1610부터 콘솔에서 업데이트 팩을 설치하고 설치를 모니터링할 때 **사후 설치**라는 새 단계가 있습니다. 이 단계에는 주요 서비스 다시 시작, 복제 모니터링 초기화 등의 작업 상태가 포함됩니다. 이 단계는 버전 1610으로 사이트 업데이트를 수행해야 콘솔에서 사용할 수 있습니다. 업데이트 설치 상태에 대한 자세한 내용은 [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates#bkmk_install)를 참조하세요.
 
 
 ## <a name="exclude-clients-from-automatic-upgrade"></a>자동 업그레이드에서 클라이언트 제외
@@ -50,7 +50,7 @@ System Center Configuration Manager 현재 분기의 업데이트 1610은 버전
 
 버전 1610으로 업데이트하는 경우 업데이트는 이러한 변경 내용이 기존 콘텐츠 배포 구성을 방해하지 않도록 새 모델에 맞게 현재 경계 그룹 구성을 변환합니다.
 
-자세한 내용은 [경계 그룹](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#a-namebkmkboundarygroupsa-boundary-groups)을 참조하세요.
+자세한 내용은 [경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups)을 참조하세요.
 
 
 ## <a name="peer-cache-for-content-distribution-to-clients"></a>클라이언트에 콘텐츠 배포를 위한 피어 캐시
@@ -123,9 +123,9 @@ System Center Configuration Manager 현재 분기의 업데이트 1610은 버전
 
 - 애플리케이션 카탈로그 웹 사이트 지점 사이트 서버 역할이 설치되지 않은 경우 소프트웨어 센터에서 **컴퓨터 에이전트** 클라이언트 설정의 **소프트웨어 센터에 표시되는 조직 이름**에 지정된 조직 이름을 표시합니다. 자세한 내용은 [클라이언트 설정을 구성하는 방법](../../clients/deploy/configure-client-settings.md)을 참조하세요.
 
-- 애플리케이션 카탈로그 웹 사이트 지점 사이트 서버 역할이 설치되어 있는 경우 소프트웨어 센터에서 애플리케이션 카탈로그 웹 사이트 지점 사이트 서버 역할 속성에 지정된 조직 이름 및 색을 표시합니다. 자세한 내용은 [애플리케이션 카탈로그 웹 사이트 지점에 대한 옵션 구성](/sccm/core/servers/deploy/configure/configuration-options-for-site-system-roles#Application-Catalog-website-point)을 참조하세요.
+- 애플리케이션 카탈로그 웹 사이트 지점 사이트 서버 역할이 설치되어 있는 경우 소프트웨어 센터에서 애플리케이션 카탈로그 웹 사이트 지점 사이트 서버 역할 속성에 지정된 조직 이름 및 색을 표시합니다. 자세한 내용은 [애플리케이션 카탈로그 웹 사이트 지점에 대한 옵션 구성](/sccm/core/servers/deploy/configure/configuration-options-for-site-system-roles#BKMK_ApplicationCatalog_Website)을 참조하세요.
 
-- Microsoft Intune 구독을 구성하고 Configuration Manager 환경에 연결한 경우 소프트웨어 센터에서 Intune 구독 속성에 지정된 조직 이름, 색 및 회사 로고를 표시합니다. 자세한 내용은 [Configuring the Microsoft Intune subscription](/sccm/mdm/deploy-use/setup-hybrid-mdm#step-3-configure-intune-subscription)을 참조하십시오.
+- Microsoft Intune 구독을 구성하고 Configuration Manager 환경에 연결한 경우 소프트웨어 센터에서 Intune 구독 속성에 지정된 조직 이름, 색 및 회사 로고를 표시합니다. 자세한 내용은 [Configuring the Microsoft Intune subscription](/sccm/mdm/deploy-use/configure-intune-subscription)을 참조하십시오.
 
 
 ## <a name="enforcement-grace-period-for-required-application-and-software-update-deployments"></a>필수 애플리케이션 및 소프트웨어 업데이트 배포를 위한 유예 기간 적용
@@ -202,7 +202,7 @@ System Center Configuration Manager 현재 분기의 업데이트 1610은 버전
 
 
 ## <a name="lookout-integration-for-hybrid-implementations-to-protect-ios-and-android-devices"></a>하이브리드 구현에서 iOS 및 Android 디바이스를 보호하기 위한 Lookout 통합
-Microsoft는 맬웨어, 위험한 앱 등을 디바이스에서 검색하여 iOS 및 Android 모바일 디바이스를 보호하기 위해 Lookout 모바일 위협 방지 솔루션과 통합합니다. Lookout 솔루션은 구성할 수 있는 위협 수준을 확인하는 데 도움이 됩니다. System Center Configuration Manager에서 준수 정책 규칙을 만들어 Lookout의 위험 평가에 따라 디바이스 준수를 확인할 수 있습니다. 조건부 액세스 정책을 사용하여 디바이스 준수 상태에 따라 회사 리소스에 대한 액세스를 허용하거나 차단할 수 있습니다. 통합 및 작동 방식에 대해 알아보려면 [디바이스, 네트워크 및 응용 프로그램 위험에 따라 액세스 관리](/sccm/protect/deploy-use/manage-access-based-on-device-network-app-risk)를 참조하세요.
+Microsoft는 맬웨어, 위험한 앱 등을 디바이스에서 검색하여 iOS 및 Android 모바일 디바이스를 보호하기 위해 Lookout 모바일 위협 방지 솔루션과 통합합니다. Lookout 솔루션은 구성할 수 있는 위협 수준을 확인하는 데 도움이 됩니다. System Center Configuration Manager에서 준수 정책 규칙을 만들어 Lookout의 위험 평가에 따라 디바이스 준수를 확인할 수 있습니다. 조건부 액세스 정책을 사용하여 디바이스 준수 상태에 따라 회사 리소스에 대한 액세스를 허용하거나 차단할 수 있습니다. 통합 및 작동 방식에 대해 알아보려면 [디바이스, 네트워크 및 응용 프로그램 위험에 따라 액세스 관리](/sccm/mdm/deploy-use/mobile-threat-defense)를 참조하세요.
 
 호환되지 않는 iOS 디바이스 사용자에게는 등록하라는 내용의 메시지가 표시됩니다. 그러면 디바이스에 Lookout for Work 앱을 설치하고, 앱을 활성화하고, Lookout for Work 응용 프로그램에서 보고된 위협을 수정한 후에 회사 데이터에 액세스할 수 있습니다. [Lookout for Work 앱 구성 및 배포](/sccm/protect/deploy-use/configure-and-deploy-lookout-for-work-apps) 방법을 알아봅니다.
 

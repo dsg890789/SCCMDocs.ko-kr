@@ -12,12 +12,12 @@ ms.prod: configuration-manager
 ms.service: ''
 ms.technology: ''
 ms.assetid: ''
-ms.openlocfilehash: 3c02a9c05e2c7d24654684f122edcd3eb5a84e06
-ms.sourcegitcommit: 0bd336e11c9a7f2de05656496a1bc747c5630452
+ms.openlocfilehash: 94513445c8d1849f0304b304b7dd8672c1e50978
+ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66834873"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67158293"
 ---
 # <a name="tutorial-enable-co-management-for-new-internet-based-devices"></a>자습서: 최신 인터넷 기반 디바이스의 공동 관리 사용
 공동 관리를 사용하면 Configuration Manager를 사용하여 조직의 PC를 관리하기 위해 제대로 설정된 프로세스를 유지할 수 있습니다. 이와 동시에 보안 및 최신 프로비저닝을 위해 Intune을 사용하여 클라우드에 투자할 수 있습니다. 
@@ -396,7 +396,7 @@ Azure 구성, 사이트 시스템 역할 및 클라이언트 설정을 적절히
 
    - **게시자**: Microsoft  
 
-   - **명령줄 인수**:  \<**CCMSETUPCMD** 명령줄을 지정합니다. 공동 관리 구성 마법사의 ‘사용’ 페이지에서 저장한 명령줄을 사용할 수 있습니다. 이 명령줄에는 클라우드 서비스의 이름과 디바이스가 구성 관리자 클라이언트 소프트웨어를 설치할 수 있도록 하는 추가 값이 포함되어 있습니다.>    
+   - **명령줄 인수**:  \<**CCMSETUPCMD** 명령줄을 지정합니다. 공동 관리 구성 마법사의 ‘사용’ 페이지에서 저장한 명령줄을 사용할 수 있습니다. 이 명령줄에는 클라우드 서비스의 이름과 디바이스가 구성 관리자 클라이언트 소프트웨어를 설치할 수 있도록 하는 추가 값이 포함되어 있습니다.> *  
 
      명령줄 구조는 CCMSETUPCMD 및 SMSSiteCode 매개 변수만 사용하는 이 예제와 유사해야 합니다.  
  
@@ -450,5 +450,5 @@ Azure 구성, 사이트 시스템 역할 및 클라이언트 설정을 적절히
 
 ## <a name="next-steps"></a>다음 단계
 - [공동 관리 대시보드](https://docs.microsoft.com/sccm/core/clients/manage/co-management-dashboard)를 사용하여 공동 관리 디바이스 상태 검토
-- [Windows Autopilot]()을 사용하여 새 디바이스 프로비전
+- [Windows Autopilot](/sccm/comanage/quickstart-autopilot)을 사용하여 새 디바이스 프로비전
 - [조건부 액세스](https://docs.microsoft.com/sccm/comanage/quickstart-conditional-access) 및 Intune 규정 준수를 사용하여 회사 리소스에 대한 사용자 액세스 관리

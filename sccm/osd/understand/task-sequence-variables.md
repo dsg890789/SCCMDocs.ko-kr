@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f903fad2bb0654cd445eeedaca6ddf902bff725
-ms.sourcegitcommit: 99dfe4fb9e9cfd20c44380ae442b3a5b895a0d9b
+ms.openlocfilehash: 3e1ad62c8b8b0f780670e7baf7ebf11de7f6b483
+ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65214985"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67194577"
 ---
 # <a name="task-sequence-variables"></a>작업 순서 변수
 
@@ -38,7 +38,7 @@ Windows PE가 시작될 때 작업 순서가 컴퓨터의 하드 드라이브에
 
 ### <a name="OSDMigrateUsmtPackageID"></a> _OSDMigrateUsmtPackageID
 
-‘[사용자 상태 캡처](task-sequence-steps.md#BKMK_CaptureUserState) 단계에 적용됩니다.’
+‘[사용자 상태 캡처](task-sequence-steps.md#BKMK_CaptureUserState) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -46,7 +46,7 @@ USMT 파일을 포함할 Configuration Manager 패키지의 패키지 ID를 지�
 
 ### <a name="OSDMigrateUsmtRestorePackageID"></a> _OSDMigrateUsmtRestorePackageID
 
-‘[사용자 상태 복원](task-sequence-steps.md#BKMK_RestoreUserState) 단계에 적용됩니다.’
+‘[사용자 상태 복원](task-sequence-steps.md#BKMK_RestoreUserState) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -62,7 +62,7 @@ USMT 파일을 포함할 Configuration Manager 패키지의 패키지 ID를 지�
 
 ### <a name="SMSTSAssetTag"></a> _SMSTSAssetTag
 
-‘[동적 변수 설정](task-sequence-steps.md#BKMK_SetDynamicVariables) 단계에 적용됩니다.’
+‘[동적 변수 설정](task-sequence-steps.md#BKMK_SetDynamicVariables) 단계에 적용됩니다.’ 
 
 컴퓨터에 대한 자산 태그를 지정합니다.
 
@@ -101,7 +101,7 @@ Configuration Manager 클라이언트 GUID의 값을 저장합니다. 작업 순
 
 ### <a name="SMSTSDefaultGateways"></a> _SMSTSDefaultGateways
 
-‘[동적 변수 설정](task-sequence-steps.md#BKMK_SetDynamicVariables) 단계에 적용됩니다.’
+‘[동적 변수 설정](task-sequence-steps.md#BKMK_SetDynamicVariables) 단계에 적용됩니다.’ 
 
 컴퓨터에 사용되는 기본 게이트웨이를 지정합니다.
 
@@ -115,7 +115,7 @@ Configuration Manager 클라이언트 GUID의 값을 저장합니다. 작업 순
 
 ### <a name="SMSTSIPAddresses"></a> _SMSTSIPAddresses
 
-‘[동적 변수 설정](task-sequence-steps.md#BKMK_SetDynamicVariables) 단계에 적용됩니다.’
+‘[동적 변수 설정](task-sequence-steps.md#BKMK_SetDynamicVariables) 단계에 적용됩니다.’ 
 
 컴퓨터에 사용되는 IP 주소를 지정합니다.
 
@@ -159,7 +159,7 @@ Configuration Manager 클라이언트 GUID의 값을 저장합니다. 작업 순
 
 ### <a name="SMSTSMacAddresses"></a> _SMSTSMacAddresses
 
-‘[동적 변수 설정](task-sequence-steps.md#BKMK_SetDynamicVariables) 단계에 적용됩니다.’
+‘[동적 변수 설정](task-sequence-steps.md#BKMK_SetDynamicVariables) 단계에 적용됩니다.’ 
 
 컴퓨터에 사용되는 MAC 주소를 지정합니다.
 
@@ -169,7 +169,7 @@ Configuration Manager 클라이언트 GUID의 값을 저장합니다. 작업 순
 
 ### <a name="SMSTSMake"></a> _SMSTSMake
 
-‘[동적 변수 설정](task-sequence-steps.md#BKMK_SetDynamicVariables) 단계에 적용됩니다.’
+‘[동적 변수 설정](task-sequence-steps.md#BKMK_SetDynamicVariables) 단계에 적용됩니다.’ 
 
 컴퓨터의 제조업체를 지정합니다.
 
@@ -183,7 +183,7 @@ Configuration Manager 클라이언트 GUID의 값을 저장합니다. 작업 순
 
 ### <a name="SMSTSModel"></a> _SMSTSModel
 
-‘[동적 변수 설정](task-sequence-steps.md#BKMK_SetDynamicVariables) 단계에 적용됩니다.’
+‘[동적 변수 설정](task-sequence-steps.md#BKMK_SetDynamicVariables) 단계에 적용됩니다.’ 
 
 컴퓨터의 모델을 지정합니다.
 
@@ -201,7 +201,7 @@ Configuration Manager 관리 지점의 포트 번호를 저장합니다.
 
 ### <a name="SMSTSOSUpgradeActionReturnCode"></a> _SMSTSOSUpgradeActionReturnCode
 
-‘[운영 체제 업그레이드](task-sequence-steps.md#BKMK_UpgradeOS) 단계에 적용됩니다.’
+‘[운영 체제 업그레이드](task-sequence-steps.md#BKMK_UpgradeOS) 단계에 적용됩니다.’ 
 
 Windows 설치 프로그램에서 성공 또는 실패를 나타내기 위해 반환하는 종료 코드 값을 저장합니다. 이 변수는 `/Compat` 명령줄 옵션과 함께 사용하면 좋습니다.
 
@@ -231,7 +231,7 @@ compat 전용 검사가 완료되면 실패 또는 성공 종료 코드에 따�
 
 ### <a name="SMSTSSerialNumber"></a> _SMSTSSerialNumber
 
-‘[동적 변수 설정](task-sequence-steps.md#BKMK_SetDynamicVariables) 단계에 적용됩니다.’
+‘[동적 변수 설정](task-sequence-steps.md#BKMK_SetDynamicVariables) 단계에 적용됩니다.’ 
 
 컴퓨터의 일련 번호를 지정합니다.
 
@@ -290,7 +290,7 @@ Bias,StandardBias,DaylightBias,StandardDate.wYear,wMonth,wDayOfWeek,wDay,wHour,w
 
 ### <a name="SMSTSUUID"></a> _SMSTSUUID
 
-‘[동적 변수 설정](task-sequence-steps.md#BKMK_SetDynamicVariables) 단계에 적용됩니다.’
+‘[동적 변수 설정](task-sequence-steps.md#BKMK_SetDynamicVariables) 단계에 적용됩니다.’ 
 
 컴퓨터의 UUID를 지정합니다.
 
@@ -312,15 +312,15 @@ Bias,StandardBias,DaylightBias,StandardDate.wYear,wMonth,wDayOfWeek,wDay,wHour,w
 
 ### <a name="OSDAdapter"></a> OSDAdapter
 
-‘[네트워크 설정 적용](task-sequence-steps.md#BKMK_ApplyNetworkSettings) 단계에 적용됩니다.’
+‘[네트워크 설정 적용](task-sequence-steps.md#BKMK_ApplyNetworkSettings) 단계에 적용됩니다.’ 
 
 (입력)
 
 이 작업 순서 변수는 *배열* 변수입니다. 배열의 각 요소는 컴퓨터에서 단일 네트워크 어댑터에 대한 설정을 나타냅니다. 각 어댑터에 대한 설정은 배열 변수 이름과 0부터 시작하는 네트워크 어댑터 인덱스 및 속성 이름을 결합하여 액세스할 수 있습니다.
 
-네트워크 설정 적용 단계에서 여러 네트워크 어댑터를 구성할 경우 변수 이름에 인덱스 **1**을 사용하여 ‘두 번째’ 네트워크 어댑터의 속성을 정의합니다. 예를 들어 OSDAdapter1EnableDHCP, OSDAdapter1IPAddressList 및 OSDAdapter1DNSDomain이 있습니다.
+네트워크 설정 적용 단계에서 여러 네트워크 어댑터를 구성할 경우 변수 이름에 인덱스 **1**을 사용하여 ‘두 번째’ 네트워크 어댑터의 속성을 정의합니다.  예를 들어 OSDAdapter1EnableDHCP, OSDAdapter1IPAddressList 및 OSDAdapter1DNSDomain이 있습니다.
 
-다음 변수 이름을 사용하여 단계가 구성할 ‘첫 번째’ 네트워크 어댑터의 속성을 정의할 수 있습니다.
+다음 변수 이름을 사용하여 단계가 구성할 ‘첫 번째’ 네트워크 어댑터의 속성을 정의할 수 있습니다. 
 
 #### <a name="osdadapter0enabledhcp"></a>OSDAdapter0EnableDHCP
 
@@ -411,7 +411,7 @@ NetBIOS over TCP/IP 옵션입니다. 가능한 값은 다음과 같습니다.
 
 ### <a name="OSDAdapterCount"></a> OSDAdapterCount
 
-‘[네트워크 설정 적용](task-sequence-steps.md#BKMK_ApplyNetworkSettings) 단계에 적용됩니다.’
+‘[네트워크 설정 적용](task-sequence-steps.md#BKMK_ApplyNetworkSettings) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -423,7 +423,7 @@ NetBIOS over TCP/IP 옵션입니다. 가능한 값은 다음과 같습니다.
 
 ### <a name="OSDApplyDriverBootCriticalContentUniqueID"></a> OSDApplyDriverBootCriticalContentUniqueID
 
-‘[드라이버 패키지 적용](task-sequence-steps.md#BKMK_ApplyDriverPackage) 단계에 적용됩니다.’
+‘[드라이버 패키지 적용](task-sequence-steps.md#BKMK_ApplyDriverPackage) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -431,7 +431,7 @@ NetBIOS over TCP/IP 옵션입니다. 가능한 값은 다음과 같습니다.
 
 ### <a name="OSDApplyDriverBootCriticalHardwareComponent"></a> OSDApplyDriverBootCriticalHardwareComponent
 
-‘[드라이버 패키지 적용](task-sequence-steps.md#BKMK_ApplyDriverPackage) 단계에 적용됩니다.’
+‘[드라이버 패키지 적용](task-sequence-steps.md#BKMK_ApplyDriverPackage) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -441,7 +441,7 @@ NetBIOS over TCP/IP 옵션입니다. 가능한 값은 다음과 같습니다.
 
 ### <a name="OSDApplyDriverBootCriticalID"></a> OSDApplyDriverBootCriticalID
 
-‘[드라이버 패키지 적용](task-sequence-steps.md#BKMK_ApplyDriverPackage) 단계에 적용됩니다.’
+‘[드라이버 패키지 적용](task-sequence-steps.md#BKMK_ApplyDriverPackage) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -451,7 +451,7 @@ NetBIOS over TCP/IP 옵션입니다. 가능한 값은 다음과 같습니다.
 
 ### <a name="OSDApplyDriverBootCriticalINFFile"></a> OSDApplyDriverBootCriticalINFFile
 
-‘[드라이버 패키지 적용](task-sequence-steps.md#BKMK_ApplyDriverPackage) 단계에 적용됩니다.’
+‘[드라이버 패키지 적용](task-sequence-steps.md#BKMK_ApplyDriverPackage) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -461,7 +461,7 @@ NetBIOS over TCP/IP 옵션입니다. 가능한 값은 다음과 같습니다.
 
 ### <a name="OSDAutoApplyDriverBestMatch"></a> OSDAutoApplyDriverBestMatch
 
-‘[드라이버 자동 적용](task-sequence-steps.md#BKMK_AutoApplyDrivers) 단계에 적용됩니다.’
+‘[드라이버 자동 적용](task-sequence-steps.md#BKMK_AutoApplyDrivers) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -475,7 +475,7 @@ NetBIOS over TCP/IP 옵션입니다. 가능한 값은 다음과 같습니다.
 
 ### <a name="OSDAutoApplyDriverCategoryList"></a> OSDAutoApplyDriverCategoryList
 
-‘[드라이버 자동 적용](task-sequence-steps.md#BKMK_AutoApplyDrivers) 단계에 적용됩니다.’
+‘[드라이버 자동 적용](task-sequence-steps.md#BKMK_AutoApplyDrivers) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -483,7 +483,7 @@ NetBIOS over TCP/IP 옵션입니다. 가능한 값은 다음과 같습니다.
 
 ### <a name="OSDBitLockerRecoveryPassword"></a> OSDBitLockerRecoveryPassword
 
-‘[BitLocker 사용](task-sequence-steps.md#BKMK_EnableBitLocker) 단계에 적용됩니다.’
+‘[BitLocker 사용](task-sequence-steps.md#BKMK_EnableBitLocker) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -491,7 +491,7 @@ NetBIOS over TCP/IP 옵션입니다. 가능한 값은 다음과 같습니다.
 
 ### <a name="OSDBitLockerStartupKey"></a> OSDBitLockerStartupKey
 
-‘[BitLocker 사용](task-sequence-steps.md#BKMK_EnableBitLocker) 단계에 적용됩니다.’
+‘[BitLocker 사용](task-sequence-steps.md#BKMK_EnableBitLocker) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -499,17 +499,17 @@ NetBIOS over TCP/IP 옵션입니다. 가능한 값은 다음과 같습니다.
 
 ### <a name="OSDCaptureAccount"></a> OSDCaptureAccount
 
-‘[운영 체제 이미지 캡처](task-sequence-steps.md#BKMK_CaptureOperatingSystemImage) 단계에 적용됩니다.’
+‘[운영 체제 이미지 캡처](task-sequence-steps.md#BKMK_CaptureOperatingSystemImage) 단계에 적용됩니다.’ 
 
 (입력)
 
 네트워크 공유에서 캡처된 이미지를 저장([OSDCaptureDestination](#OSDCaptureDestination))할 권한이 있는 Windows 계정 이름을 지정합니다. [OSDCaptureAccountPassword](#OSDCaptureAccountPassword)도 지정합니다.
 
-OS 이미지 캡처 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#capture-operating-system-image-account)을 참조하세요.
+OS 이미지 캡처 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#capture-os-image-account)을 참조하세요.
 
 ### <a name="OSDCaptureAccountPassword"></a> OSDCaptureAccountPassword
 
-‘[운영 체제 이미지 캡처](task-sequence-steps.md#BKMK_CaptureOperatingSystemImage) 단계에 적용됩니다.’
+‘[운영 체제 이미지 캡처](task-sequence-steps.md#BKMK_CaptureOperatingSystemImage) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -517,7 +517,7 @@ OS 이미지 캡처 계정에 대한 자세한 내용은 [계정](/sccm/core/pla
 
 ### <a name="OSDCaptureDestination"></a> OSDCaptureDestination
 
-‘[운영 체제 이미지 캡처](task-sequence-steps.md#BKMK_CaptureOperatingSystemImage) 단계에 적용됩니다.’
+‘[운영 체제 이미지 캡처](task-sequence-steps.md#BKMK_CaptureOperatingSystemImage) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -525,7 +525,7 @@ OS 이미지 캡처 계정에 대한 자세한 내용은 [계정](/sccm/core/pla
 
 ### <a name="OSDComputerName-input"></a> OSDComputerName(입력)
 
-‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’
+‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’ 
 
 대상 컴퓨터의 이름을 지정합니다.
 
@@ -535,13 +535,13 @@ OS 이미지 캡처 계정에 대한 자세한 내용은 [계정](/sccm/core/pla
 
 ### <a name="OSDComputerName-output"></a> OSDComputerName(출력)
 
-‘[Windows 설정 캡처](task-sequence-steps.md#BKMK_CaptureWindowsSettings) 단계에 적용됩니다.’
+‘[Windows 설정 캡처](task-sequence-steps.md#BKMK_CaptureWindowsSettings) 단계에 적용됩니다.’ 
 
 컴퓨터의 NetBIOS 이름으로 설정합니다. [OSDMigrateComputerName](#OSDMigrateComputerName) 변수가 `true`로 설정된 경우에만 이 값이 설정됩니다.
 
 ### <a name="OSDConfigFileName"></a> OSDConfigFileName
 
-‘[운영 체제 이미지 적용](task-sequence-steps.md#BKMK_ApplyOperatingSystemImage) 단계에 적용됩니다.’
+‘[운영 체제 이미지 적용](task-sequence-steps.md#BKMK_ApplyOperatingSystemImage) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -549,7 +549,7 @@ OS 배포 이미지 패키지와 관련된 OS 배포 응답 파일의 파일 이
 
 ### <a name="OSDDataImageIndex"></a> OSDDataImageIndex
 
-‘[데이터 이미지 적용](task-sequence-steps.md#BKMK_ApplyDataImage) 단계에 적용됩니다.’
+‘[데이터 이미지 적용](task-sequence-steps.md#BKMK_ApplyDataImage) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -557,7 +557,7 @@ OS 배포 이미지 패키지와 관련된 OS 배포 응답 파일의 파일 이
 
 ### <a name="OSDDiskIndex"></a> OSDDiskIndex
 
-‘[디스크 포맷 및 파티션 만들기](task-sequence-steps.md#BKMK_FormatandPartitionDisk) 단계에 적용됩니다.’
+‘[디스크 포맷 및 파티션 만들기](task-sequence-steps.md#BKMK_FormatandPartitionDisk) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -565,7 +565,7 @@ OS 배포 이미지 패키지와 관련된 OS 배포 응답 파일의 파일 이
 
 ### <a name="OSDDNSDomain"></a> OSDDNSDomain
 
-‘[네트워크 설정 적용](task-sequence-steps.md#BKMK_ApplyNetworkSettings) 단계에 적용됩니다.’
+‘[네트워크 설정 적용](task-sequence-steps.md#BKMK_ApplyNetworkSettings) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -573,7 +573,7 @@ OS 배포 이미지 패키지와 관련된 OS 배포 응답 파일의 파일 이
 
 ### <a name="OSDDNSSuffixSearchOrder"></a> OSDDNSSuffixSearchOrder
 
-‘[네트워크 설정 적용](task-sequence-steps.md#BKMK_ApplyNetworkSettings) 단계에 적용됩니다.’
+‘[네트워크 설정 적용](task-sequence-steps.md#BKMK_ApplyNetworkSettings) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -581,7 +581,7 @@ OS 배포 이미지 패키지와 관련된 OS 배포 응답 파일의 파일 이
 
 ### <a name="OSDDomainName"></a> OSDDomainName
 
-‘[네트워크 설정 적용](task-sequence-steps.md#BKMK_ApplyNetworkSettings) 단계에 적용됩니다.’
+‘[네트워크 설정 적용](task-sequence-steps.md#BKMK_ApplyNetworkSettings) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -589,7 +589,7 @@ OS 배포 이미지 패키지와 관련된 OS 배포 응답 파일의 파일 이
 
 ### <a name="OSDDomainOUName"></a> OSDDomainOUName
 
-‘[네트워크 설정 적용](task-sequence-steps.md#BKMK_ApplyNetworkSettings) 단계에 적용됩니다.’
+‘[네트워크 설정 적용](task-sequence-steps.md#BKMK_ApplyNetworkSettings) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -606,7 +606,7 @@ OS 배포 이미지 패키지와 관련된 OS 배포 응답 파일의 파일 이
 *[패키지 설치](/sccm/osd/understand/task-sequence-steps#BKMK_InstallPackage) 단계에 적용됩니다.*
 
 *버전 1902부터 가능*  
-‘[명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 단계에 적용됩니다.’
+‘[명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -616,7 +616,7 @@ OS 배포 이미지 패키지와 관련된 OS 배포 응답 파일의 파일 이
 
 ### <a name="OSDEnableTCPIPFiltering"></a> OSDEnableTCPIPFiltering
 
-‘[네트워크 설정 적용](task-sequence-steps.md#BKMK_ApplyNetworkSettings) 단계에 적용됩니다.’
+‘[네트워크 설정 적용](task-sequence-steps.md#BKMK_ApplyNetworkSettings) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -629,7 +629,7 @@ TCP/IP 필터링이 사용되는지 여부를 지정합니다.
 
 ### <a name="OSDGPTBootDisk"></a> OSDGPTBootDisk
 
-‘[디스크 포맷 및 파티션 만들기](task-sequence-steps.md#BKMK_FormatandPartitionDisk) 단계에 적용됩니다.’
+‘[디스크 포맷 및 파티션 만들기](task-sequence-steps.md#BKMK_FormatandPartitionDisk) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -642,7 +642,7 @@ GPT 하드 디스크에서 EFI 파티션을 만들지 여부를 지정합니다.
 
 ### <a name="OSDImageCreator"></a> OSDImageCreator
 
-‘[운영 체제 이미지 캡처](task-sequence-steps.md#BKMK_CaptureOperatingSystemImage) 단계에 적용됩니다.’
+‘[운영 체제 이미지 캡처](task-sequence-steps.md#BKMK_CaptureOperatingSystemImage) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -650,7 +650,7 @@ GPT 하드 디스크에서 EFI 파티션을 만들지 여부를 지정합니다.
 
 ### <a name="OSDImageDescription"></a> OSDImageDescription
 
-‘[운영 체제 이미지 캡처](task-sequence-steps.md#BKMK_CaptureOperatingSystemImage) 단계에 적용됩니다.’
+‘[운영 체제 이미지 캡처](task-sequence-steps.md#BKMK_CaptureOperatingSystemImage) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -658,7 +658,7 @@ GPT 하드 디스크에서 EFI 파티션을 만들지 여부를 지정합니다.
 
 ### <a name="OSDImageIndex"></a> OSDImageIndex
 
-‘[운영 체제 이미지 적용](task-sequence-steps.md#BKMK_ApplyOperatingSystemImage) 단계에 적용됩니다.’
+‘[운영 체제 이미지 적용](task-sequence-steps.md#BKMK_ApplyOperatingSystemImage) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -666,7 +666,7 @@ GPT 하드 디스크에서 EFI 파티션을 만들지 여부를 지정합니다.
 
 ### <a name="OSDImageVersion"></a> OSDImageVersion
 
-‘[운영 체제 이미지 캡처](task-sequence-steps.md#BKMK_CaptureOperatingSystemImage) 단계에 적용됩니다.’
+‘[운영 체제 이미지 캡처](task-sequence-steps.md#BKMK_CaptureOperatingSystemImage) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -676,7 +676,7 @@ GPT 하드 디스크에서 EFI 파티션을 만들지 여부를 지정합니다.
 
 <!--516679/2840016-->
 *버전 1806부터 가능*  
-‘[드라이버 패키지 적용](/sccm/osd/understand/task-sequence-steps#BKMK_ApplyDriverPackage) 단계에 적용됩니다.’
+‘[드라이버 패키지 적용](/sccm/osd/understand/task-sequence-steps#BKMK_ApplyDriverPackage) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -688,7 +688,7 @@ GPT 하드 디스크에서 EFI 파티션을 만들지 여부를 지정합니다.
 
 ### <a name="OSDJoinAccount"></a> OSDJoinAccount
 
-‘다음 단계에 적용합니다.’  
+‘다음 단계에 적용합니다.’   
 
 - [네트워크 설정 적용](task-sequence-steps.md#BKMK_ApplyNetworkSettings)  
 - [도메인 또는 작업 그룹 가입](task-sequence-steps.md#BKMK_JoinDomainorWorkgroup)  
@@ -697,11 +697,11 @@ GPT 하드 디스크에서 EFI 파티션을 만들지 여부를 지정합니다.
 
 도메인에 대상 컴퓨터를 추가하는 데 사용되는 도메인 사용자 계정을 지정합니다. 도메인에 가입하는 경우 이 변수가 필요합니다.
 
-작업 순서 도메인 가입 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#task-sequence-editor-domain-joining-account)을 참조하세요.
+작업 순서 도메인 가입 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#task-sequence-domain-join-account)을 참조하세요.
 
 ### <a name="OSDJoinDomainName"></a> OSDJoinDomainName
 
-‘[도메인 또는 작업 그룹 가입](task-sequence-steps.md#BKMK_JoinDomainorWorkgroup) 단계에 적용됩니다.’
+‘[도메인 또는 작업 그룹 가입](task-sequence-steps.md#BKMK_JoinDomainorWorkgroup) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -709,7 +709,7 @@ GPT 하드 디스크에서 EFI 파티션을 만들지 여부를 지정합니다.
 
 ### <a name="OSDJoinDomainOUName"></a> OSDJoinDomainOUName
 
-‘[도메인 또는 작업 그룹 가입](task-sequence-steps.md#BKMK_JoinDomainorWorkgroup) 단계에 적용됩니다.’
+‘[도메인 또는 작업 그룹 가입](task-sequence-steps.md#BKMK_JoinDomainorWorkgroup) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -721,7 +721,7 @@ GPT 하드 디스크에서 EFI 파티션을 만들지 여부를 지정합니다.
 
 ### <a name="OSDJoinPassword"></a> OSDJoinPassword
 
-‘다음 단계에 적용합니다.’  
+‘다음 단계에 적용합니다.’   
 
 - [네트워크 설정 적용](task-sequence-steps.md#BKMK_ApplyNetworkSettings)  
 - [도메인 또는 작업 그룹 가입](task-sequence-steps.md#BKMK_JoinDomainorWorkgroup)  
@@ -732,7 +732,7 @@ Active Directory 도메인에 가입하기 위해 대상 컴퓨터에서 사용�
 
 ### <a name="OSDJoinSkipReboot"></a> OSDJoinSkipReboot
 
-‘[도메인 또는 작업 그룹 가입](task-sequence-steps.md#BKMK_JoinDomainorWorkgroup) 단계에 적용됩니다.’
+‘[도메인 또는 작업 그룹 가입](task-sequence-steps.md#BKMK_JoinDomainorWorkgroup) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -745,7 +745,7 @@ Active Directory 도메인에 가입하기 위해 대상 컴퓨터에서 사용�
 
 ### <a name="OSDJoinType"></a> OSDJoinType
 
-‘[도메인 또는 작업 그룹 가입](task-sequence-steps.md#BKMK_JoinDomainorWorkgroup) 단계에 적용됩니다.’
+‘[도메인 또는 작업 그룹 가입](task-sequence-steps.md#BKMK_JoinDomainorWorkgroup) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -758,7 +758,7 @@ Active Directory 도메인에 가입하기 위해 대상 컴퓨터에서 사용�
 
 ### <a name="OSDJoinWorkgroupName"></a> OSDJoinWorkgroupName
 
-‘[도메인 또는 작업 그룹 가입](task-sequence-steps.md#BKMK_JoinDomainorWorkgroup) 단계에 적용됩니다.’
+‘[도메인 또는 작업 그룹 가입](task-sequence-steps.md#BKMK_JoinDomainorWorkgroup) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -766,7 +766,7 @@ Active Directory 도메인에 가입하기 위해 대상 컴퓨터에서 사용�
 
 ### <a name="OSDKeepActivation"></a> OSDKeepActivation
 
-‘[Windows 캡처 준비](task-sequence-steps.md#BKMK_PrepareWindowsforCapture) 단계에 적용됩니다.’
+‘[Windows 캡처 준비](task-sequence-steps.md#BKMK_PrepareWindowsforCapture) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -779,7 +779,7 @@ Sysprep이 제품 활성화 플래그를 다시 설정하는지 여부를 지정
 
 ### <a name="OSDLocalAdminPassword"></a> OSDLocalAdminPassword
 
-‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’
+‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -797,7 +797,7 @@ Sysprep이 제품 활성화 플래그를 다시 설정하는지 여부를 지정
 
 ### <a name="OSDMigrateAdapterSettings"></a> OSDMigrateAdapterSettings
 
-‘[네트워크 설정 캡처](task-sequence-steps.md#BKMK_CaptureNetworkSettings) 단계에 적용됩니다.’
+‘[네트워크 설정 캡처](task-sequence-steps.md#BKMK_CaptureNetworkSettings) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -810,7 +810,7 @@ Sysprep이 제품 활성화 플래그를 다시 설정하는지 여부를 지정
 
 ### <a name="OSDMigrateAdditionalCaptureOptions"></a> OSDMigrateAdditionalCaptureOptions
 
-‘[사용자 상태 캡처](task-sequence-steps.md#BKMK_CaptureUserState) 단계에 적용됩니다.’
+‘[사용자 상태 캡처](task-sequence-steps.md#BKMK_CaptureUserState) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -822,7 +822,7 @@ Sysprep이 제품 활성화 플래그를 다시 설정하는지 여부를 지정
 
 ### <a name="OSDMigrateAdditionalRestoreOptions"></a> OSDMigrateAdditionalRestoreOptions
 
-‘[사용자 상태 복원](task-sequence-steps.md#BKMK_RestoreUserState) 단계에 적용됩니다.’
+‘[사용자 상태 복원](task-sequence-steps.md#BKMK_RestoreUserState) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -834,7 +834,7 @@ Sysprep이 제품 활성화 플래그를 다시 설정하는지 여부를 지정
 
 ### <a name="OSDMigrateComputerName"></a> OSDMigrateComputerName
 
-‘[Windows 설정 캡처](task-sequence-steps.md#BKMK_CaptureWindowsSettings) 단계에 적용됩니다.’
+‘[Windows 설정 캡처](task-sequence-steps.md#BKMK_CaptureWindowsSettings) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -847,7 +847,7 @@ Sysprep이 제품 활성화 플래그를 다시 설정하는지 여부를 지정
 
 ### <a name="OSDMigrateConfigFiles"></a> OSDMigrateConfigFiles
 
-‘[사용자 상태 캡처](task-sequence-steps.md#BKMK_CaptureUserState) 단계에 적용됩니다.’
+‘[사용자 상태 캡처](task-sequence-steps.md#BKMK_CaptureUserState) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -859,7 +859,7 @@ Sysprep이 제품 활성화 플래그를 다시 설정하는지 여부를 지정
 
 ### <a name="OSDMigrateContinueOnLockedFiles"></a> OSDMigrateContinueOnLockedFiles
 
-‘[사용자 상태 캡처](task-sequence-steps.md#BKMK_CaptureUserState) 단계에 적용됩니다.’
+‘[사용자 상태 캡처](task-sequence-steps.md#BKMK_CaptureUserState) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -872,7 +872,7 @@ USMT에서 일부 파일을 캡처할 수 없는 경우 이 변수는 사용자 
 
 ### <a name="OSDMigrateContinueOnRestore"></a> OSDMigrateContinueOnRestore
 
-‘[사용자 상태 복원](task-sequence-steps.md#BKMK_RestoreUserState) 단계에 적용됩니다.’
+‘[사용자 상태 복원](task-sequence-steps.md#BKMK_RestoreUserState) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -885,7 +885,7 @@ USMT에서 일부 파일을 복원할 수 없는 경우에도 프로세스를 �
 
 ### <a name="OSDMigrateEnableVerboseLogging"></a> OSDMigrateEnableVerboseLogging
 
-‘다음 단계에 적용합니다.’  
+‘다음 단계에 적용합니다.’   
 
 - [사용자 상태 캡처](task-sequence-steps.md#BKMK_CaptureUserState)  
 - [사용자 상태 복원](task-sequence-steps.md#BKMK_RestoreUserState)  
@@ -901,7 +901,7 @@ USMT에 대해 자세한 정보 로깅을 사용합니다. 단계에 이 값이 
 
 ### <a name="OSDMigrateLocalAccounts"></a> OSDMigrateLocalAccounts
 
-‘[사용자 상태 복원](task-sequence-steps.md#BKMK_RestoreUserState) 단계에 적용됩니다.’
+‘[사용자 상태 복원](task-sequence-steps.md#BKMK_RestoreUserState) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -914,7 +914,7 @@ USMT에 대해 자세한 정보 로깅을 사용합니다. 단계에 이 값이 
 
 ### <a name="OSDMigrateLocalAccountPassword"></a> OSDMigrateLocalAccountPassword
 
-‘[사용자 상태 복원](task-sequence-steps.md#BKMK_RestoreUserState) 단계에 적용됩니다.’
+‘[사용자 상태 복원](task-sequence-steps.md#BKMK_RestoreUserState) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -922,7 +922,7 @@ USMT에 대해 자세한 정보 로깅을 사용합니다. 단계에 이 값이 
 
 ### <a name="OSDMigrateMode"></a> OSDMigrateMode
 
-‘[사용자 상태 캡처](task-sequence-steps.md#BKMK_CaptureUserState) 단계에 적용됩니다.’
+‘[사용자 상태 캡처](task-sequence-steps.md#BKMK_CaptureUserState) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -936,7 +936,7 @@ USMT에서 캡처하는 파일을 사용자 지정할 수 있습니다.
 
 ### <a name="OSDMigrateNetworkMembership"></a> OSDMigrateNetworkMembership
 
-‘[네트워크 설정 캡처](task-sequence-steps.md#BKMK_CaptureNetworkSettings) 단계에 적용됩니다.’
+‘[네트워크 설정 캡처](task-sequence-steps.md#BKMK_CaptureNetworkSettings) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -949,7 +949,7 @@ USMT에서 캡처하는 파일을 사용자 지정할 수 있습니다.
 
 ### <a name="OSDMigrateRegistrationInfo"></a> OSDMigrateRegistrationInfo
 
-‘[Windows 설정 캡처](task-sequence-steps.md#BKMK_CaptureWindowsSettings) 단계에 적용됩니다.’
+‘[Windows 설정 캡처](task-sequence-steps.md#BKMK_CaptureWindowsSettings) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -962,7 +962,7 @@ USMT에서 캡처하는 파일을 사용자 지정할 수 있습니다.
 
 ### <a name="OSDMigrateSkipEncryptedFiles"></a> OSDMigrateSkipEncryptedFiles
 
-‘[사용자 상태 캡처](task-sequence-steps.md#BKMK_CaptureUserState) 단계에 적용됩니다.’
+‘[사용자 상태 캡처](task-sequence-steps.md#BKMK_CaptureUserState) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -975,7 +975,7 @@ USMT에서 캡처하는 파일을 사용자 지정할 수 있습니다.
 
 ### <a name="OSDMigrateTimeZone"></a> OSDMigrateTimeZone
 
-‘[Windows 설정 캡처](task-sequence-steps.md#BKMK_CaptureWindowsSettings) 단계에 적용됩니다.’
+‘[Windows 설정 캡처](task-sequence-steps.md#BKMK_CaptureWindowsSettings) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -988,7 +988,7 @@ USMT에서 캡처하는 파일을 사용자 지정할 수 있습니다.
 
 ### <a name="OSDNetworkJoinType"></a> OSDNetworkJoinType
 
-‘[네트워크 설정 적용](task-sequence-steps.md#BKMK_ApplyNetworkSettings) 단계에 적용됩니다.’
+‘[네트워크 설정 적용](task-sequence-steps.md#BKMK_ApplyNetworkSettings) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1001,13 +1001,13 @@ USMT에서 캡처하는 파일을 사용자 지정할 수 있습니다.
 
 ### <a name="OSDPartitions"></a> OSDPartitions
 
-‘[디스크 포맷 및 파티션 만들기](task-sequence-steps.md#BKMK_FormatandPartitionDisk) 단계에 적용됩니다.’
+‘[디스크 포맷 및 파티션 만들기](task-sequence-steps.md#BKMK_FormatandPartitionDisk) 단계에 적용됩니다.’ 
 
 (입력)
 
 이 작업 순서 변수는 파티션 설정의 배열 변수입니다. 배열의 각 요소는 하드 디스크에서 단일 파티션에 대한 설정을 나타냅니다. 각 파티션에 대해 정의된 설정은 배열 변수 이름과 0부터 시작하는 디스크 파티션 번호 및 속성 이름을 결합하여 액세스할 수 있습니다.
 
-다음 변수 이름을 사용하여 이 단계에서 하드 디스크에 만들 ‘첫 번째’ 파티션에 대한 속성을 정의하세요.
+다음 변수 이름을 사용하여 이 단계에서 하드 디스크에 만들 ‘첫 번째’ 파티션에 대한 속성을 정의하세요. 
 
 #### <a name="osdpartitions0type"></a>OSDPartitions0Type
 
@@ -1041,11 +1041,11 @@ USMT에서 캡처하는 파일을 사용자 지정할 수 있습니다.
 
 이 단계에서 파티션을 만들 때 Windows PE에서 항상 사용 가능한 다음 드라이브 문자를 사용합니다. 이 선택적 속성을 사용하여 다른 작업 순서 변수의 이름을 지정할 수 있습니다. 이 단계에서는 이 변수를 사용하여 나중에 참조할 새 드라이브 문자를 저장합니다.
 
-이 작업 순서 단계를 사용하여 여러 파티션을 정의하는 경우 ‘두 번째’ 파티션에 대한 속성이 변수 이름의 **1** 인덱스를 사용하여 정의됩니다. 예를 들어 **OSDPartitions1Type**, **OSDPartitions1FileSystem**, **OSDPartitions1Bootable**, **OSDPartitions1QuickFormat** 및 **OSDPartitions1VolumeName**이 있습니다.
+이 작업 순서 단계를 사용하여 여러 파티션을 정의하는 경우 ‘두 번째’ 파티션에 대한 속성이 변수 이름의 **1** 인덱스를 사용하여 정의됩니다.  예를 들어 **OSDPartitions1Type**, **OSDPartitions1FileSystem**, **OSDPartitions1Bootable**, **OSDPartitions1QuickFormat** 및 **OSDPartitions1VolumeName**이 있습니다.
 
 ### <a name="OSDPartitionStyle"></a> OSDPartitionStyle
 
-‘[디스크 포맷 및 파티션 만들기](task-sequence-steps.md#BKMK_FormatandPartitionDisk) 단계에 적용됩니다.’
+‘[디스크 포맷 및 파티션 만들기](task-sequence-steps.md#BKMK_FormatandPartitionDisk) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1058,7 +1058,7 @@ USMT에서 캡처하는 파일을 사용자 지정할 수 있습니다.
 
 ### <a name="OSDProductKey"></a> OSDProductKey
 
-‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’
+‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1066,7 +1066,7 @@ Windows 제품 키를 지정합니다. 지정된 값은 1-255자 사이여야 �
 
 ### <a name="OSDRandomAdminPassword"></a> OSDRandomAdminPassword
 
-‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’
+‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1080,19 +1080,19 @@ Windows 제품 키를 지정합니다. 지정된 값은 1-255자 사이여야 �
 
 ### <a name="OSDRegisteredOrgName-input"></a> OSDRegisteredOrgName(입력)
 
-‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’
+‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’ 
 
 새 OS에서 등록된 기본 조직 이름을 지정합니다. 지정된 값은 1-255자 사이여야 합니다.
 
 ### <a name="OSDRegisteredOrgName-output"></a> OSDRegisteredOrgName(출력)
 
-‘[Windows 설정 캡처](task-sequence-steps.md#BKMK_CaptureWindowsSettings) 단계에 적용됩니다.’
+‘[Windows 설정 캡처](task-sequence-steps.md#BKMK_CaptureWindowsSettings) 단계에 적용됩니다.’ 
 
 컴퓨터의 등록된 조직 이름으로 설정됩니다. [OSDMigrateRegistrationInfo](#OSDMigrateRegistrationInfo) 변수가 `true`로 설정된 경우에만 이 값이 설정됩니다.
 
 ### <a name="OSDRegisteredUserName"></a> OSDRegisteredUserName
 
-‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’
+‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1100,7 +1100,7 @@ Windows 제품 키를 지정합니다. 지정된 값은 1-255자 사이여야 �
 
 ### <a name="OSDServerLicenseConnectionLimit"></a> OSDServerLicenseConnectionLimit
 
-‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’
+‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1108,7 +1108,7 @@ Windows 제품 키를 지정합니다. 지정된 값은 1-255자 사이여야 �
 
 ### <a name="OSDServerLicenseMode"></a> OSDServerLicenseMode
 
-‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’
+‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1121,7 +1121,7 @@ Windows 제품 키를 지정합니다. 지정된 값은 1-255자 사이여야 �
 
 ### <a name="OSDSetupAdditionalUpgradeOptions"></a> OSDSetupAdditionalUpgradeOptions
 
-‘[운영 체제 업그레이드](task-sequence-steps.md#BKMK_UpgradeOS) 단계에 적용됩니다.’
+‘[운영 체제 업그레이드](task-sequence-steps.md#BKMK_UpgradeOS) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1131,7 +1131,7 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 
 ### <a name="OSDStateFallbackToNAA"></a> OSDStateFallbackToNAA
 
-‘[상태 저장소 요청](task-sequence-steps.md#BKMK_RequestStateStore) 단계에 적용됩니다.’
+‘[상태 저장소 요청](task-sequence-steps.md#BKMK_RequestStateStore) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1146,7 +1146,7 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 
 ### <a name="OSDStateSMPRetryCount"></a> OSDStateSMPRetryCount
 
-‘[상태 저장소 요청](task-sequence-steps.md#BKMK_RequestStateStore) 단계에 적용됩니다.’
+‘[상태 저장소 요청](task-sequence-steps.md#BKMK_RequestStateStore) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1154,7 +1154,7 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 
 ### <a name="OSDStateSMPRetryTime"></a> OSDStateSMPRetryTime
 
-‘[상태 저장소 요청](task-sequence-steps.md#BKMK_RequestStateStore) 단계에 적용됩니다.’
+‘[상태 저장소 요청](task-sequence-steps.md#BKMK_RequestStateStore) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1162,7 +1162,7 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 
 ### <a name="OSDStateStorePath"></a> OSDStateStorePath
 
-‘다음 단계에 적용합니다.’  
+‘다음 단계에 적용합니다.’   
 
 - [사용자 상태 캡처](task-sequence-steps.md#BKMK_CaptureUserState)  
 - [상태 저장소 해제](task-sequence-steps.md#BKMK_ReleaseStateStore)  
@@ -1175,7 +1175,7 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 
 ### <a name="OSDTargetSystemDrive"></a> OSDTargetSystemDrive
 
-‘[운영 체제 이미지 적용](task-sequence-steps.md#BKMK_ApplyOperatingSystemImage) 단계에 적용됩니다.’
+‘[운영 체제 이미지 적용](task-sequence-steps.md#BKMK_ApplyOperatingSystemImage) 단계에 적용됩니다.’ 
 
 (출력)
 
@@ -1183,31 +1183,31 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 
 ### <a name="OSDTargetSystemRoot-input"></a> OSDTargetSystemRoot (input)
 
-‘[운영 체제 이미지 캡처](task-sequence-steps.md#BKMK_CaptureOperatingSystemImage) 단계에 적용됩니다.’
+‘[운영 체제 이미지 캡처](task-sequence-steps.md#BKMK_CaptureOperatingSystemImage) 단계에 적용됩니다.’ 
 
 참조 컴퓨터에 설치된 OS의 Windows 디렉터리 경로를 지정합니다. 작업 순서에서는 이 OS를 Configuration Manager에서 캡처할 수 있도록 지원되는 OS로 확인합니다.
 
 ### <a name="OSDTargetSystemRoot-output"></a> OSDTargetSystemRoot(출력)
 
-‘[Windows 캡처 준비](task-sequence-steps.md#BKMK_PrepareWindowsforCapture) 단계에 적용됩니다.’
+‘[Windows 캡처 준비](task-sequence-steps.md#BKMK_PrepareWindowsforCapture) 단계에 적용됩니다.’ 
 
 참조 컴퓨터에 설치된 OS의 Windows 디렉터리 경로를 지정합니다. 작업 순서에서는 이 OS를 Configuration Manager에서 캡처할 수 있도록 지원되는 OS로 확인합니다.
 
 ### <a name="OSDTimeZone-input"></a> OSDTimeZone(입력)
 
-‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’
+‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’ 
 
 새 OS에서 사용되는 기본 표준 시간대 설정을 지정합니다.
 
 ### <a name="OSDTimeZone-output"></a> OSDTimeZone(출력)
 
-‘[Windows 설정 캡처](task-sequence-steps.md#BKMK_CaptureWindowsSettings) 단계에 적용됩니다.’
+‘[Windows 설정 캡처](task-sequence-steps.md#BKMK_CaptureWindowsSettings) 단계에 적용됩니다.’ 
 
 컴퓨터의 표준 시간대로 설정됩니다. [OSDMigrateTimeZone](#OSDMigrateTimeZone) 변수가 `true`로 설정된 경우에만 이 값이 설정됩니다.
 
 ### <a name="OSDWipeDestinationPartition"></a> OSDWipeDestinationPartition
 
-‘[데이터 이미지 적용](task-sequence-steps.md#BKMK_ApplyDataImage) 단계에 적용됩니다.’
+‘[데이터 이미지 적용](task-sequence-steps.md#BKMK_ApplyDataImage) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1220,7 +1220,7 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 
 ### <a name="OSDWorkgroupName"></a> OSDWorkgroupName
 
-‘[네트워크 설정 적용](task-sequence-steps.md#BKMK_ApplyNetworkSettings) 단계에 적용됩니다.’
+‘[네트워크 설정 적용](task-sequence-steps.md#BKMK_ApplyNetworkSettings) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1230,7 +1230,7 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 
 ### <a name="SMSClientInstallProperties"></a> SMSClientInstallProperties
 
-‘[Windows 및 ConfigMgr 설치](task-sequence-steps.md#BKMK_SetupWindowsandConfigMgr) 단계에 적용됩니다.’
+‘[Windows 및 ConfigMgr 설치](task-sequence-steps.md#BKMK_SetupWindowsandConfigMgr) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1240,17 +1240,17 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 
 ### <a name="SMSConnectNetworkFolderAccount"></a> SMSConnectNetworkFolderAccount
 
-‘[네트워크 폴더에 연결](task-sequence-steps.md#BKMK_ConnectToNetworkFolder) 단계에 적용됩니다.’
+‘[네트워크 폴더에 연결](task-sequence-steps.md#BKMK_ConnectToNetworkFolder) 단계에 적용됩니다.’ 
 
 (입력)
 
 [SMSConnectNetworkFolderPath](#SMSConnectNetworkFolderPath)에서 네트워크 공유에 연결하는 데 사용되는 사용자 계정을 지정합니다. [SMSConnectNetworkFolderPassword](#SMSConnectNetworkFolderPassword) 값을 사용하여 계정 암호를 지정합니다.
 
-작업 순서 네트워크 폴더 연결 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#task-sequence-editor-network-folder-connection-account)을 참조하세요.
+작업 순서 네트워크 폴더 연결 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#task-sequence-network-folder-connection-account)을 참조하세요.
 
 ### <a name="SMSConnectNetworkFolderDriveLetter"></a> SMSConnectNetworkFolderDriveLetter
 
-‘[네트워크 폴더에 연결](task-sequence-steps.md#BKMK_ConnectToNetworkFolder) 단계에 적용됩니다.’
+‘[네트워크 폴더에 연결](task-sequence-steps.md#BKMK_ConnectToNetworkFolder) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1263,7 +1263,7 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 
 ### <a name="SMSConnectNetworkFolderPassword"></a> SMSConnectNetworkFolderPassword
 
-‘[네트워크 폴더에 연결](task-sequence-steps.md#BKMK_ConnectToNetworkFolder) 단계에 적용됩니다.’
+‘[네트워크 폴더에 연결](task-sequence-steps.md#BKMK_ConnectToNetworkFolder) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1271,7 +1271,7 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 
 ### <a name="SMSConnectNetworkFolderPath"></a> SMSConnectNetworkFolderPath
 
-‘[네트워크 폴더에 연결](task-sequence-steps.md#BKMK_ConnectToNetworkFolder) 단계에 적용됩니다.’
+‘[네트워크 폴더에 연결](task-sequence-steps.md#BKMK_ConnectToNetworkFolder) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1283,7 +1283,7 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 
 ### <a name="SMSInstallUpdateTarget"></a> SMSInstallUpdateTarget
 
-‘[소프트웨어 업데이트 설치](task-sequence-steps.md#BKMK_InstallSoftwareUpdates) 단계에 적용됩니다.’
+‘[소프트웨어 업데이트 설치](task-sequence-steps.md#BKMK_InstallSoftwareUpdates) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1296,7 +1296,7 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 
 ### <a name="SMSRebootMessage"></a> SMSRebootMessage
 
-‘[컴퓨터 다시 시작](task-sequence-steps.md#BKMK_RestartComputer) 단계에 적용됩니다.’
+‘[컴퓨터 다시 시작](task-sequence-steps.md#BKMK_RestartComputer) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1308,7 +1308,7 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 
 ### <a name="SMSRebootTimeout"></a> SMSRebootTimeout
 
-‘[컴퓨터 다시 시작](task-sequence-steps.md#BKMK_RestartComputer) 단계에 적용됩니다.’
+‘[컴퓨터 다시 시작](task-sequence-steps.md#BKMK_RestartComputer) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1355,7 +1355,7 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 
 ### <a name="SMSTSDisableWow64Redirection"></a> SMSTSDisableWow64Redirection
 
-‘[명령줄 실행](task-sequence-steps.md#BKMK_RunCommandLine) 단계에 적용됩니다.’
+‘[명령줄 실행](task-sequence-steps.md#BKMK_RunCommandLine) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1379,25 +1379,25 @@ Configuration Manager가 배포 지점의 콘텐츠를 다시 다운로드하기
 
 ### <a name="SMSTSDriverRequestConnectTimeOut"></a> SMSTSDriverRequestConnectTimeOut
 
-‘[드라이버 자동 적용](task-sequence-steps.md#BKMK_AutoApplyDrivers) 단계에 적용됩니다.’
+‘[드라이버 자동 적용](task-sequence-steps.md#BKMK_AutoApplyDrivers) 단계에 적용됩니다.’ 
 
 드라이버 카탈로그를 요청할 경우 이 변수는 작업 순서가 HTTP 서버 연결을 기다리는 시간(초)입니다. 연결이 시간 제한 설정보다 오래 걸리면 작업 순서가 요청을 취소합니다. 시간 제한은 **60**초로 기본 설정됩니다.
 
 ### <a name="SMSTSDriverRequestReceiveTimeOut"></a> SMSTSDriverRequestReceiveTimeOut
 
-‘[드라이버 자동 적용](task-sequence-steps.md#BKMK_AutoApplyDrivers) 단계에 적용됩니다.’
+‘[드라이버 자동 적용](task-sequence-steps.md#BKMK_AutoApplyDrivers) 단계에 적용됩니다.’ 
 
 드라이버 카탈로그를 요청할 경우 이 변수는 작업 순서가 응답을 기다리는 시간(초)입니다. 연결이 시간 제한 설정보다 오래 걸리면 작업 순서가 요청을 취소합니다. 시간 제한은 **480**초로 기본 설정됩니다.
 
 ### <a name="SMSTSDriverRequestResolveTimeOut"></a> SMSTSDriverRequestResolveTimeOut
 
-‘[드라이버 자동 적용](task-sequence-steps.md#BKMK_AutoApplyDrivers) 단계에 적용됩니다.’
+‘[드라이버 자동 적용](task-sequence-steps.md#BKMK_AutoApplyDrivers) 단계에 적용됩니다.’ 
 
 드라이버 카탈로그를 요청할 경우 이 변수는 작업 순서가 HTTP 이름 확인을 기다리는 시간(초)입니다. 연결이 시간 제한 설정보다 오래 걸리면 작업 순서가 요청을 취소합니다. 시간 제한은 **60**초로 기본 설정됩니다.
 
 ### <a name="SMSTSDriverRequestSendTimeOut"></a> SMSTSDriverRequestSendTimeOut
 
-‘[드라이버 자동 적용](task-sequence-steps.md#BKMK_AutoApplyDrivers) 단계에 적용됩니다.’
+‘[드라이버 자동 적용](task-sequence-steps.md#BKMK_AutoApplyDrivers) 단계에 적용됩니다.’ 
 
 드라이버 카탈로그에 대한 요청을 보낼 경우 이 변수는 작업 순서가 요청을 보내기 위해 기다리는 시간(초)입니다. 요청이 시간 제한 설정보다 오래 걸리면 작업 순서가 요청을 취소합니다. 시간 제한은 **60**초로 기본 설정됩니다.
 
@@ -1421,7 +1421,7 @@ Configuration Manager가 배포 지점의 콘텐츠를 다시 다운로드하기
 
 ### <a name="SMSTSMPListRequestTimeoutEnabled"></a> SMSTSMPListRequestTimeoutEnabled
 
-‘다음 단계에 적용합니다.’  
+‘다음 단계에 적용합니다.’   
 
 - [애플리케이션 설치](task-sequence-steps.md#BKMK_InstallApplication)  
 - [소프트웨어 업데이트 설치](task-sequence-steps.md#BKMK_InstallSoftwareUpdates)  
@@ -1434,7 +1434,7 @@ Configuration Manager가 배포 지점의 콘텐츠를 다시 다운로드하기
 
 ### <a name="SMSTSMPListRequestTimeout"></a> SMSTSMPListRequestTimeout
 
-‘다음 단계에 적용합니다.’  
+‘다음 단계에 적용합니다.’   
 
 - [애플리케이션 설치](task-sequence-steps.md#BKMK_InstallApplication)  
 - [소프트웨어 업데이트 설치](task-sequence-steps.md#BKMK_InstallSoftwareUpdates)  
@@ -1495,7 +1495,7 @@ Windows PE 피어 캐시가 초기 브로드캐스트에 사용하는 사용자 
 
 ### <a name="SMSTSRunCommandLineUserName"></a> SMSTSRunCommandLineUserName
 
-‘[명령줄 실행](task-sequence-steps.md#BKMK_RunCommandLine) 단계에 적용됩니다.’
+‘[명령줄 실행](task-sequence-steps.md#BKMK_RunCommandLine) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1505,7 +1505,7 @@ Windows PE 피어 캐시가 초기 브로드캐스트에 사용하는 사용자 
 
 ### <a name="SMSTSRunCommandLinePassword"></a> SMSTSRunCommandLinePassword
 
-‘[명령줄 실행](task-sequence-steps.md#BKMK_RunCommandLine) 단계에 적용됩니다.’
+‘[명령줄 실행](task-sequence-steps.md#BKMK_RunCommandLine) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1513,7 +1513,7 @@ Windows PE 피어 캐시가 초기 브로드캐스트에 사용하는 사용자 
 
 ### <a name="SMSTSSoftwareUpdateScanTimeout"></a> SMSTSSoftwareUpdateScanTimeout
 
-‘[소프트웨어 업데이트 설치](task-sequence-steps.md#BKMK_InstallSoftwareUpdates) 단계에 적용됩니다.’
+‘[소프트웨어 업데이트 설치](task-sequence-steps.md#BKMK_InstallSoftwareUpdates) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1532,7 +1532,7 @@ Windows PE 피어 캐시가 초기 브로드캐스트에 사용하는 사용자 
 
 ### <a name="SMSTSWaitForSecondReboot"></a> SMSTSWaitForSecondReboot
 
-‘[소프트웨어 업데이트 설치](task-sequence-steps.md#BKMK_InstallSoftwareUpdates) 단계에 적용됩니다.’
+‘[소프트웨어 업데이트 설치](task-sequence-steps.md#BKMK_InstallSoftwareUpdates) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1553,7 +1553,7 @@ Windows PE 피어 캐시가 초기 브로드캐스트에 사용하는 사용자 
 
 ### <a name="TSErrorOnWarning"></a> TSErrorOnWarning
 
-‘[애플리케이션 설치](task-sequence-steps.md#BKMK_InstallApplication) 단계에 적용됩니다.’
+‘[애플리케이션 설치](task-sequence-steps.md#BKMK_InstallApplication) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1561,7 +1561,7 @@ Windows PE 피어 캐시가 초기 브로드캐스트에 사용하는 사용자 
 
 ### <a name="WorkingDirectory"></a> WorkingDirectory
 
-‘[명령줄 실행](task-sequence-steps.md#BKMK_RunCommandLine) 단계에 적용됩니다.’
+‘[명령줄 실행](task-sequence-steps.md#BKMK_RunCommandLine) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -1590,7 +1590,7 @@ Windows PE 피어 캐시가 초기 브로드캐스트에 사용하는 사용자 
 >
 > 기본적으로 OS 배포 시 Windows 설치 프로그램이 사용하기에 가장 적합한 드라이브 문자(일반적으로 C:)를 결정합니다.
 
-‘이전 동작’은 이미지를 적용할 때 OSDPreverveDriveLetter 변수가 작업 순서에서 이미지 파일(.WIM)에 캡처된 드라이브 문자를 사용할지 결정하는 것이었습니다. 이 변수 값을 `false`로 설정하여 **운영 체제 적용** 작업 순서 단계의 **대상** 설정에 지정한 위치를 사용할 수 있습니다. 자세한 내용은 [OS 이미지 적용](task-sequence-steps.md#BKMK_ApplyOperatingSystemImage)을 참조하세요.
+‘이전 동작’은 이미지를 적용할 때 OSDPreverveDriveLetter 변수가 작업 순서에서 이미지 파일(.WIM)에 캡처된 드라이브 문자를 사용할지 결정하는 것이었습니다.  이 변수 값을 `false`로 설정하여 **운영 체제 적용** 작업 순서 단계의 **대상** 설정에 지정한 위치를 사용할 수 있습니다. 자세한 내용은 [OS 이미지 적용](task-sequence-steps.md#BKMK_ApplyOperatingSystemImage)을 참조하세요.
 
 
 ## <a name="see-also"></a>참고 항목

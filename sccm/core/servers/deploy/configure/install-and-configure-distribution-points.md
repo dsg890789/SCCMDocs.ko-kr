@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97ea227d1e64bf4e264be6429457aba99ca4833b
-ms.sourcegitcommit: 3f43fa8462bf39b2c18b90a11a384d199c2822d8
+ms.openlocfilehash: 21ed29204a5ed41e54a12a1294bc9582d3e6eaa1
+ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66403411"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67252320"
 ---
 # <a name="install-and-configure-distribution-points-in-configuration-manager"></a>Configuration Manager에서 배포 지점 설치 및 구성
 
@@ -481,11 +481,11 @@ PXE를 사용하도록 설정하면 필요한 경우 Configuration Manager에서
 
 이 배포 지점이 할당된 경계 그룹을 관리합니다. 배포 지점을 하나 이상의 경계 그룹에 추가합니다. 콘텐츠 배포 시 클라이언트가 배포 지점과 연결된 경계 그룹에 있어야만 해당 배포 지점을 콘텐츠 원본 위치로 사용할 수 있습니다.
 
-클라이언트가 콘텐츠를 찾기 위해 대체할 수 있는 경우 및 경계 그룹을 정의하는 경계 그룹 *관계*를 구성합니다. 자세한 내용은 [경계 그룹](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#boundary-groups)을 참조하세요.
+클라이언트가 콘텐츠를 찾기 위해 대체할 수 있는 경우 및 경계 그룹을 정의하는 경계 그룹 *관계*를 구성합니다. 자세한 내용은 [경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups)을 참조하세요.
 
 **추가**를 선택하고 목록에서 기존 경계 그룹을 선택합니다.
 
-이 배포 지점에 대한 새 경계 그룹을 만들려면 **만들기**를 선택합니다. 경계 그룹을 만들고 구성하는 방법에 대한 자세한 내용은 [경계 그룹에 대한 절차](/sccm/core/servers/deploy/configure/boundary-groups#procedures-for-boundary-groups)를 참조하세요.
+이 배포 지점에 대한 새 경계 그룹을 만들려면 **만들기**를 선택합니다. 경계 그룹을 만들고 구성하는 방법에 대한 자세한 내용은 [경계 그룹에 대한 절차](/sccm/core/servers/deploy/configure/boundary-group-procedures)를 참조하세요.
 
 이전에 설치한 배포 지점의 속성을 편집하는 경우 **주문형 배포 시 사용** 옵션을 관리합니다. 이 옵션을 사용하면 클라이언트에서 요청할 때 Configuration Manager에서 콘텐츠를 이 서버에 자동으로 배포할 수 있습니다. 자세한 내용은 [주문형 콘텐츠 배포](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management#on-demand-content-distribution)를 참조하세요.
 

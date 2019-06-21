@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2380c1a543f223c4e9cdf905c8b3782c91f6387b
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 5cf48e73e2d273fcff6b6b99cf0eaa06cababa16
+ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65494809"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159493"
 ---
 # <a name="manage-windows-as-a-service-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows as a Service 관리
 
@@ -136,7 +136,7 @@ ms.locfileid: "65494809"
 
    -   **이 서비스 계획을 적용할 Windows 준비 상태 지정**: 다음 옵션 중 하나를 선택합니다.  
 
-       -   **반기 채널(대상 지정)**: 이 서비스 모델에서는 Microsoft가 기능 업데이트를 릴리스하는 즉시 사용할 수 있습니다.
+       -   **반기 채널(대상 지정)** : 이 서비스 모델에서는 Microsoft가 기능 업데이트를 릴리스하는 즉시 사용할 수 있습니다.
 
        -   **반기 채널**: 이 서비스 채널은 일반적으로 광범위한 배포에 사용됩니다. 반기 채널의 Windows 10 클라이언트는 대상 채널의 디바이스와 동일한 Windows 10 빌드를 나중에 수신합니다.
 
@@ -288,4 +288,4 @@ Windows 10 서비스 대시보드에서 기본 서비스 계획을 만들거나 
     >  **소프트웨어 라이브러리** 작업 영역의 **소프트웨어 업데이트** 노드에서 최근 소프트웨어 업데이트 경고를 살펴볼 수 있습니다.  
 
 **자세한 내용:** <br/>
-[Configuration Manager as a service 및 WaaS(Windows as a Service)의 기본 사항](/sccm/core/understand/configuration-manager-and-windows-as-service.md)
+[Configuration Manager as a service 및 WaaS(Windows as a Service)의 기본 사항](/sccm/core/understand/configuration-manager-and-windows-as-service)

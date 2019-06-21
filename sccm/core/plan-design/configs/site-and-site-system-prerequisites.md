@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6bb18dbb093f6182186f648bcde02407f3c14c5a
-ms.sourcegitcommit: e3c1eb0b75d79c05a750d49354c851d15d5e26a3
+ms.openlocfilehash: daee7a247fd12637736caa9c341798950a66c786
+ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67038573"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251843"
 ---
 # <a name="site-and-site-system-prerequisites-for-configuration-manager"></a>Configuration Manager의 사이트 및 사이트 시스템 필수 조건
 
@@ -558,7 +558,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 ##  <a name="bkmk_2008"></a> Windows Server 2008 R2 및 Windows Server 2008에 대한 필수 조건  
 
-[Microsoft 지원 기간](https://support.microsoft.com/lifecycle)에 설명된 대로 Windows Server 2008 및 Windows Server 2008 R2는 현재 추가 지원 상태이며 더 이상 일반 지원에 속하지 않습니다. 향후에 Configuration Manager에서 이러한 운영 체제를 사이트 시스템 서버로 사용할 수 있는지에 대한 자세한 내용은 [제거되고 사용되지 않는 서버 운영 체제](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-server#deprecated-server-operating-systems)를 참조하세요.  
+[Microsoft 지원 기간](https://support.microsoft.com/lifecycle)에 설명된 대로 Windows Server 2008 및 Windows Server 2008 R2는 현재 추가 지원 상태이며 더 이상 일반 지원에 속하지 않습니다. 향후에 Configuration Manager에서 이러한 운영 체제를 사이트 시스템 서버로 사용할 수 있는지에 대한 자세한 내용은 [제거되고 사용되지 않는 서버 운영 체제](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-server#server-os)를 참조하세요.  
 
 이러한 OS 버전은 사이트 서버 또는 대부분의 사이트 시스템 역할에 대해 지원되지 않습니다. 풀(pull) 배포 지점을 포함한 배포 지점 사이트 시스템 역할 및 PXE와 멀티캐스트에 대해서는 계속 지원됩니다.
 

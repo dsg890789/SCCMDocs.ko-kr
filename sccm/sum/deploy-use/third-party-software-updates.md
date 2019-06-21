@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04963f6c565a9cb83655416dd706d5dd9055a29b
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 3279ba7cd78ca6fc10ddb8662ac816679d01d7cf
+ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65499907"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67194679"
 ---
 # <a name="enable-third-party-updates"></a>타사 업데이트 사용 
 
@@ -90,7 +90,7 @@ PKI 인증서를 사용해야 하는 것처럼 인증서를 수동으로 구성�
 
 
 ## <a name="enable-third-party-updates-on-the-clients"></a>클라이언트에서 타사 업데이트 사용
-클라이언트 설정의 클라이언트에서 타사 업데이트를 사용합니다. 이 설정은 [인트라넷 Microsoft 업데이트 서비스 위치에 대해 서명된 업데이트 허용](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/deploy/4-configure-group-policy-settings-for-automatic-updates#BKMK_comp3)에 대한 Windows 업데이트 에이전트 정책을 설정합니다. 이 클라이언트는 또한 클라이언트의 신뢰할 수 있는 게시자 저장소에 WSUS 서명 인증서를 설치합니다. 인증서 관리 로깅은 클라이언트의 `updatesdeployment.log` 에 표시됩니다.  타사 업데이트에 사용하려는 각 사용자 지정 클라이언트 설정에 이러한 단계를 실행합니다. 자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#Enable-third-party-software-updates) 문서를 참조하세요.
+클라이언트 설정의 클라이언트에서 타사 업데이트를 사용합니다. 이 설정은 [인트라넷 Microsoft 업데이트 서비스 위치에 대해 서명된 업데이트 허용](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/deploy/4-configure-group-policy-settings-for-automatic-updates#allow-signed-updates-from-an-intranet-microsoft-update-service-location)에 대한 Windows 업데이트 에이전트 정책을 설정합니다. 이 클라이언트는 또한 클라이언트의 신뢰할 수 있는 게시자 저장소에 WSUS 서명 인증서를 설치합니다. 인증서 관리 로깅은 클라이언트의 `updatesdeployment.log` 에 표시됩니다.  타사 업데이트에 사용하려는 각 사용자 지정 클라이언트 설정에 이러한 단계를 실행합니다. 자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#enable-third-party-software-updates) 문서를 참조하세요.
 
 1. Configuration Manager 콘솔에서 **관리** 작업 공간으로 이동하여 **클라이언트 설정** 노드를 선택합니다.
 2. 기존 사용자 지정 클라이언트 설정을 선택하거나 새로 만듭니다. 

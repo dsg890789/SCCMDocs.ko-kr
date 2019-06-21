@@ -11,18 +11,18 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ceb7f7156c505e73db3fba0d02d60ec044958846
-ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
+ms.openlocfilehash: 4314432655c8fa560c804075980cef78b270ec30
+ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66716121"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67252093"
 ---
 # <a name="checklist-for-installing-update-1902-for-configuration-manager"></a>Configuration Manager용 업데이트 1902를 설치하기 위한 검사 목록
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Configuration Manager의 현재 분기를 사용하는 경우 버전 1902용 콘솔 내 업데이트를 설치하여 이전 버전의 계층 구조를 업데이트할 수 있습니다. <!-- baseline only statement:-->버전 1902가 [기준 미디어](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)로도 지원되기 때문에 새로운 계층 구조의 첫 번째 사이트를 설치하는 데 설치 미디어를 사용할 수 있습니다.
+Configuration Manager의 현재 분기를 사용하는 경우 버전 1902용 콘솔 내 업데이트를 설치하여 이전 버전의 계층 구조를 업데이트할 수 있습니다. <!-- baseline only statement:-->버전 1902가 [기준 미디어](/sccm/core/servers/manage/updates#bkmk_Baselines)로도 지원되기 때문에 새로운 계층 구조의 첫 번째 사이트를 설치하는 데 설치 미디어를 사용할 수 있습니다.
 
 버전 1902용 업데이트를 가져오려면 계층 구조의 최상위 사이트에서 서비스 연결점을 사용해야 합니다. 이 사이트 시스템 역할은 온라인 또는 오프라인 모드에 있을 수 있습니다. 계층 구조가 Microsoft에서 업데이트 패키지를 다운로드한 후 콘솔에서 찾습니다. **관리** 작업 영역에서 **업데이트 및 서비스** 노드를 선택합니다.
 
@@ -34,7 +34,7 @@ Configuration Manager의 현재 분기를 사용하는 경우 버전 1902용 콘
 
     -   프록시 서버 설정이 http://silverlight.dlservice.microsoft.com , http://download.microsoft.com 및/또는 http://go.microsoft.com 에서 다운로드하지 않도록 방지하는 경우 또 다른 일반적인 다운로드 문제가 발생합니다.
 
-업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 및 서비스](/sccm/core/servers/manage/updates#a-namebkmkinconsolea-in-console-updates-and-servicing)를 참조하세요.
+업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 및 서비스](/sccm/core/servers/manage/updates#bkmk_inconsole)를 참조하세요.
 
 편재 분기 버전에 대한 자세한 내용은 [기준선 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)을 참조하세요.
 
@@ -92,7 +92,7 @@ Configuration Manager 버전 1902에는 Windows 10 ADK(평가 및 배포 키트)
 Windows ADK를 업데이트하기 전에 사이트를 업데이트하는 경우 [부팅 이미지를 사용하여 배포 지점 업데이트](/sccm/osd/get-started/manage-boot-images#update-distribution-points-with-the-boot-image)를 참조하세요.
 
 #### <a name="review-sql-server-native-client-version"></a>SQL Server Native Client 버전 검토
-TLS 1.2에 대한 지원이 포함되는 최소 버전의 SQL Server 2012 Native Client를 설치해야 합니다. 자세한 내용은 [필수 조건 검사 목록](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#sql-native-client)을 참조하세요.
+TLS 1.2에 대한 지원이 포함되는 최소 버전의 SQL Server 2012 Native Client를 설치해야 합니다. 자세한 내용은 [필수 조건 검사 목록](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#sql-server-native-client)을 참조하세요.
 
 #### <a name="review-the-site-and-hierarchy-status-for-unresolved-issues"></a>해결되지 않은 문제에 대해 사이트 및 계층 구조 상태 검토 
 기존 작동 문제로 인해 사이트 업데이트가 실패할 수 있습니다. 사이트를 업데이트하기 전에 다음 시스템에 대한 모든 작동 문제를 해결합니다.  
@@ -160,7 +160,7 @@ Microsoft 또는 Microsoft 파트너에서 다른 제품으로 Configuration Man
 > 필수 구성 요소 검사기가 실행되면 프로세스에서 사이트 유지 관리 작업에 사용되는 일부 제품 소스 파일을 업데이트합니다. 따라서 필수 구성 요소 검사기를 실행한 후 업데이트를 설치하기 전에 사이트 유지 관리 작업을 수행해야 하는 경우 사이트 서버의 CD.Latest 폴더에서  **Setupwpf.exe** (Configuration Manager 설치 프로그램)를 실행합니다.
 
 #### <a name="update-sites"></a>사이트 업데이트   
-이제 계층 구조에 대한 업데이트 설치를 시작할 수 있습니다. 업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates#a-namebkmkinstalla-install-in-console-updates)를 참조하세요.
+이제 계층 구조에 대한 업데이트 설치를 시작할 수 있습니다. 업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates#bkmk_install)를 참조하세요.
 
 일상적인 업무 시간 외에 업데이트를 설치하도록 계획할 수 있습니다. 프로세스가 비즈니스 작업에 최소한의 영향을 주는 시기를 확인합니다. 업데이트를 설치하면 해당 작업에서 사이트 구성 요소 및 사이트 시스템 역할을 다시 설치합니다.
 

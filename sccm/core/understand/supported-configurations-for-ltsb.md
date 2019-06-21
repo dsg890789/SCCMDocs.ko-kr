@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e185244bda88c317e0157618f066056a817a1a82
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: ac26a9b161f869ec3f6410f9f6fb9e5edbc9f8f8
+ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56141894"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67194020"
 ---
 # <a name="supported-configurations-for-the-long-term-servicing-branch-of-system-center-configuration-manager"></a>System Center Configuration Manager의 장기 서비스 분기에 대해 지원되는 구성
 
@@ -101,7 +101,7 @@ LTSB를 사용하여 Configuration Manager에 포함된 Configuration Manager �
 
     -   통합 쓰기 필터(UWF)  
 
--   Windows Embedded 장치에는 애플리케이션 카탈로그가 지원되지 않습니다.  
+-   Windows Embedded 디바이스에는 응용 프로그램 카탈로그가 지원되지 않습니다.  
 
 -   Windows XP를 기반으로 하는 Windows Embedded 디바이스에서는 검색된 맬웨어를 모니터링할 수 있으므로 임베디드 디바이스에 Microsoft Windows WMI 스크립팅 패키지를 설치해야 합니다. 이 패키지를 설치하려면 Windows Embedded Target Designer를 사용합니다. 이 경우 *WBEMDISP.DLL* 및 *WBEMDISP.TLB* 파일이 있고 포함된 디바이스의 %windir%\System32\WBEM 폴더에 등록되어 있어야 검색된 맬웨어가 보고됩니다.  
 
@@ -120,7 +120,7 @@ LTSB를 사용하여 Configuration Manager에 포함된 Configuration Manager �
 
 **요구 사항 및 제한 사항:**  
 
--   모바일 장치 클라이언트를 설치하려면 0.78MB의 스토리지 공간이 필요합니다. 모바일 장치에서 로그인하려면 최대 256KB의 추가 스토리지 공간이 필요할 수 있습니다.    
+-   모바일 디바이스 클라이언트를 설치하려면 0.78MB의 저장소 공간이 필요합니다. 모바일 디바이스에서 로그인하려면 최대 256KB의 추가 저장소 공간이 필요할 수 있습니다.    
 
 -   이러한 모바일 디바이스의 기능은 플랫폼 및 클라이언트 유형별로 달라집니다. Configuration Manager에서 모바일 디바이스 레거시 클라이언트에 대해 지원하는 관리 기능 종류에 대한 자세한 내용은 [System Center Configuration Manager용 디바이스 관리 솔루션 선택](/sccm/core/plan-design/choose-a-device-management-solution)을 참조하세요.  
 
@@ -163,13 +163,13 @@ Linux 및 UNIX 운영 체제에 대한 지원은 이 섹션에 나열된 운영 
 
 **요구 사항 및 제한 사항:**  
 
--   Linux 및 UNIX용 클라이언트에 대한 운영 체제 파일 종속성을 검토하려면 [Linux 및 UNIX 서버에 클라이언트 배포를 위한 필수 조건](/sccm/core/clients/deploy/plan/planning-for-client-deployment-to-linux-and-unix-computers#bkmk_clientdeployprereqforlnu)을 참조하세요.  
+-   Linux 및 UNIX용 클라이언트에 대한 운영 체제 파일 종속성을 검토하려면 [Linux 및 UNIX 서버에 클라이언트 배포를 위한 필수 조건](/sccm/core/clients/deploy/plan/planning-for-client-deployment-to-linux-and-unix-computers#BKMK_ClientDeployPrereqforLnU)을 참조하세요.  
 -   Linux 또는 UNIX를 실행하는 컴퓨터에 대해 지원되는 관리 기능의 개요는 [System Center Configuration Manager에서 UNIX 및 Linux 서버에 클라이언트를 배포하는 방법](/sccm/core/clients/deploy/deploy-clients-to-unix-and-linux-servers)을 참조하세요.  
 -   Linux 및 UNIX에 대해 지원되는 버전의 경우 나열된 버전에는 모든 후속 부 버전이 포함됩니다. 예를 들어 CentOS 버전 6이 지원되는 것으로 나와 있는 경우 여기에는 CentOS 6.3과 같은 CentOS 6의 후속 부 버전도 포함됩니다. 마찬가지로 SUSE Linux Enterprise Server 11 SP1과 같이 서비스 팩을 사용하는 운영 체제가 지원되는 것으로 나와 있는 경우에는 해당 운영 체제 버전의 후속 서비스 팩도 지원 대상에 포함됩니다.
 -   클라이언트 설치 패키지 및 유니버설 에이전트에 대한 자세한 내용은 [System Center Configuration Manager에서 UNIX 및 Linux 서버에 클라이언트를 배포하는 방법](/sccm/core/clients/deploy/deploy-clients-to-unix-and-linux-servers)을 참조하세요.
 
 
-**지원되는 버전:**   
+**지원되는 버전:**    
 다음 버전은 표시된 .tar 파일을 사용하여 지원됩니다.  
 ### <a name="aix"></a>AIX  
 

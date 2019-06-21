@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1e01d423df30e36bcf5e7613aee22962077787b
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 2e0ad2568c250cbaab0f52f76b98750153aa0b05
+ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65499276"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67252350"
 ---
 # <a name="configure-sql-server-always-on-availability-groups-for-configuration-manager"></a>Configuration Manager용 SQL Server Always On 가용성 그룹 구성
 
@@ -122,7 +122,7 @@ Configuration Manager와 함께 사용하는 가용성 그룹에 보조 복제�
 Configuration Manager 버전 1706부터 Configuration Manager에서 사용하여 가용성 그룹에 비동기 복제본을 추가할 수 있습니다. 이렇게 하기 위해 동기 복제본을 구성하는 데 필요한 구성 스크립트를 실행할 필요는 없습니다. (해당 비동기 복제본을 사이트 데이터베이스로 사용하는 것은 지원되지 않기 때문입니다.) 가용성 그룹에 보조 복제본을 추가하는 방법에 대한 자세한 내용은 [SQL Server 설명서](https://msdn.microsoft.com/library/hh213247(v=sql.120).aspx(d=robot))를 참조하세요.
 
 ## <a name="use-the-asynchronous-replica-to-recover-your-site"></a>비동기 복제본을 사용하여 사이트 복구
-Configuration Manager 1706 이상 버전에서는 비동기 복제본을 사용하여 사이트 데이터베이스를 복구할 수 있습니다. 이렇게 하려면 활성 기본 사이트를 중지하여 사이트 데이터베이스에 대항 추가 쓰기를 방지해야 합니다. 사이트를 중지한 후에 [수동으로 복구된 데이터베이스](/sccm/protect/understand/backup-and-recovery#BKMK_SiteDatabaseRecoveryOption)를 사용하는 대신, 비동기 복제본을 사용할 수 있습니다.
+Configuration Manager 1706 이상 버전에서는 비동기 복제본을 사용하여 사이트 데이터베이스를 복구할 수 있습니다. 이렇게 하려면 활성 기본 사이트를 중지하여 사이트 데이터베이스에 대항 추가 쓰기를 방지해야 합니다. 사이트를 중지한 후에 [수동으로 복구된 데이터베이스](/sccm/core/servers/manage/recover-sites#use-a-site-database-that-has-been-manually-recovered)를 사용하는 대신, 비동기 복제본을 사용할 수 있습니다.
 
 사이트를 중지하려면 [계층 유지 관리 도구](/sccm/core/servers/manage/hierarchy-maintenance-tool-preinst.exe)를 사용하여 사이트 서버의 핵심 서비스를 중지할 수 있습니다. 명령줄 사용: **Preinst.exe /stopsite**   
 

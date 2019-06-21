@@ -10,12 +10,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c36a52b5f3bc32cc5e8c725d1a12de6ce467c310
-ms.sourcegitcommit: a6a6507e01d819217208cfcea483ce9a2744583d
+ms.openlocfilehash: 86e41e932995abc47b6229ce3405f810d75b992b
+ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66748290"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159284"
 ---
 # <a name="upgrade-to-configuration-manager"></a>Configuration Manager로 업그레이드
 
@@ -132,7 +132,7 @@ Configuration Manager에서 관리 지점에 대한 데이터베이스 복제본
 
 자세한 내용은 다음 아티클을 참조하세요.  
 
-- System Center 2012 Configuration Manager: [관리 지점에 대한 데이터베이스 복제본 구성](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh846234\(v=technet.10\))  
+- System Center 2012 Configuration Manager: [관리 지점에 대한 데이터베이스 복제본 구성](/sccm/core/servers/deploy/configure/database-replicas-for-management-points#BKMK_DBReplica_Config)  
 
 - Configuration Manager 현재 분기: [관리 지점용 데이터베이스 복제본](/sccm/core/servers/deploy/configure/database-replicas-for-management-points)  
 
@@ -154,7 +154,7 @@ Configuration Manager로 업그레이드하기 전에 업그레이드 프로세�
 
 사이트 유지 관리 작업에 대한 자세한 내용은 다음 문서를 참조하세요.  
 
-- System Center 2012 Configuration Manager: [사이트 작업에 대한 계획](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg712686\(v=technet.10\))  
+- System Center 2012 Configuration Manager: [사이트 작업에 대한 계획](/sccm/core/plan-design/hierarchy/plan-for-the-site-database)  
 
 - Configuration Manager 현재 분기: [유지 관리 작업에 대한 참조](/sccm/core/servers/manage/reference-for-maintenance-tasks)  
 

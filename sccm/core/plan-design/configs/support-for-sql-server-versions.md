@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 367ab11340ef36b0caaf23e84f26bdda921ee158
-ms.sourcegitcommit: 0bd336e11c9a7f2de05656496a1bc747c5630452
+ms.openlocfilehash: 871fc8d32570aaa0af9984b48084965aabf6bc01
+ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66834741"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251773"
 ---
 # <a name="supported-sql-server-versions-for-configuration-manager"></a>Configuration Manager에 대한 지원되는 SQL Server 버전
 
@@ -142,7 +142,7 @@ SQL Server 트랜잭션 복제는 [데이터베이스 복제본](/sccm/core/serv
 -   보조 사이트  
 
 ### <a name="sql-server-2008-r2-sp3-standard-enterprise-datacenter"></a>SQL Server 2008 R2 SP3: Standard, Enterprise, Datacenter     
-  이 버전의 SQL Server는 지원되지 않습니다. 자세한 내용은 [사이트 데이터베이스인 SQL Server 버전에 대해 사용되지 않는 지원](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-server#deprecated-support-for-sql-server-versions-as-a-site-database)을 참조하세요.  
+  이 버전의 SQL Server는 지원되지 않습니다. 자세한 내용은 [사이트 데이터베이스인 SQL Server 버전에 대해 사용되지 않는 지원](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-server#sql-server)을 참조하세요.  
 
 ### <a name="sql-server-2017-express"></a>SQL Server 2017 Express   
 다음 사이트의 경우 [Configuration Manager 버전1710](/sccm/core/plan-design/changes/whats-new-in-version-1710)에서부터 최소 [누적 업데이트 버전 2](https://support.microsoft.com/help/4052574)에서 이 버전의 SQL Server를 사용할 수 있습니다.
@@ -213,7 +213,7 @@ SQL Server 트랜잭션 복제는 [데이터베이스 복제본](/sccm/core/serv
 
 -   **사이트 서버와 동일한 컴퓨터에 설치된 데이터베이스 서버:** SQL Server의 메모리를 사용 가능한 주소 지정 가능 시스템 메모리의 50~80%로 제한합니다.  
 
--   **전용 데이터베이스 서버(사이트 서버의 원격 서버)**: SQL Server의 메모리를 사용 가능한 주소 지정 가능 시스템 메모리의 80~90%로 제한합니다.  
+-   **전용 데이터베이스 서버(사이트 서버의 원격 서버)** : SQL Server의 메모리를 사용 가능한 주소 지정 가능 시스템 메모리의 80~90%로 제한합니다.  
 
 -   **사용 중인 각 SQL Server 인스턴스의 버퍼 풀에 대한 메모리 예약**:  
 
@@ -256,7 +256,7 @@ SQL Server 서비스에서 사용하는 계정을 변경하는 방법에 대한 
 SQL Server Reporting Services는 보고서를 실행할 수 있는 보고 서비스 지점을 설치하는 데 필요합니다.  
 
 > [!IMPORTANT]  
-> 이전 버전에서 SQL Server를 업그레이드한 후 다음과 같은 오류가 표시될 수 있습니다.  ‘보고서 작성기가 없습니다.’  
+> 이전 버전에서 SQL Server를 업그레이드한 후 다음과 같은 오류가 표시될 수 있습니다.  ‘보고서 작성기가 없습니다.’   
 > 이 오류를 해결하려면 보고 서비스 지점 사이트 시스템 역할을 다시 설치해야 합니다.  
 
 ### <a name="sql-server-ports"></a>SQL Server 포트  
@@ -285,8 +285,8 @@ SQL Server를 실행하는 컴퓨터에서 방화벽을 사용하도록 설정�
 
 SQL Server 버전을 업그레이드해야 하는 경우, 쉬운 경우부터 시작해서 복잡한 경우까지 순차적으로 다음 방법을 사용하세요.  
 
-- [SQL Server 현재 위치 업그레이드](/sccm/core/servers/manage/upgrade-on-premises-infrastructure#a-namebkmksupconfigupgradedbsrva-upgrade-sql-server-on-the-site-database-server)(권장)  
+- [SQL Server 현재 위치 업그레이드](/sccm/core/servers/manage/upgrade-on-premises-infrastructure#to-upgrade-sql-server-on-the-site-database-server)(권장)  
 
-- SQL Server의 새 버전을 새 컴퓨터에 설치하고 Configuration Manager 설치 프로그램의 [데이터베이스 이동 옵션을 사용](/sccm/core/servers/manage/modify-your-infrastructure#a-namebkmkdbconfiga-modify-the-site-database-configuration)하여 사이트 서버가 새 SQL Server를 가리키도록 합니다.  
+- SQL Server의 새 버전을 새 컴퓨터에 설치하고 Configuration Manager 설치 프로그램의 [데이터베이스 이동 옵션을 사용](/sccm/core/servers/manage/modify-your-infrastructure#bkmk_dbconfig)하여 사이트 서버가 새 SQL Server를 가리키도록 합니다.  
 
 - [백업 및 복구](/sccm/protect/understand/backup-and-recovery)를 사용합니다. SQL 업그레이드 시나리오에 백업 및 복구를 사용할 수 있습니다. [사이트 복구 전 고려 사항](/sccm/protect/understand/recover-sites#considerations-before-recovering-a-site)을 검토할 때 SQL 버전 관리 요구 사항을 무시할 수 있습니다. 

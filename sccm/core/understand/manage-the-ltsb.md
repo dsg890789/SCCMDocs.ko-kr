@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34e0ae19fc7bb3680a148fd5e4ac52feb294963f
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 08ab6cebbe44ecad8b8ce15691dd83217ada3ce9
+ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56121314"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67194123"
 ---
 # <a name="manage-the-long-term-servicing-branch-of-configuration-manager"></a>Configuration Manager의 장기 서비스 분기 관리
 
@@ -47,7 +47,7 @@ LTSB를 실행하고 새 중앙 관리 사이트를 설치하여 독립 실행�
 
 CD.Latest 폴더에서 사이트 확장을 위해 설치 프로그램을 실행하지 않더라도 CD.Latest 폴더는 사이트 복구에 계속 사용되며, 첫 번째 LTSB 사이트가 중앙 관리 사이트인 경우 새 하위 기본 사이트를 설치할 때도 사용됩니다.
 
-사이트 확장에 대한 자세한 내용은 [독립 실행형 기본 사이트 확장](/sccm/core/servers/deploy/install/use-the-setup-wizard-to-install-sites#expand-a-stand-alone-primary-site)을 참조하세요. CD.Latest 폴더에 대한 자세한 내용은 [CD.Latest 폴더](/sccm/core/servers/manage/the-cd.latest-folder)를 참조하세요.
+사이트 확장에 대한 자세한 내용은 [독립 실행형 기본 사이트 확장](/sccm/core/servers/deploy/install/use-the-setup-wizard-to-install-sites#bkmk_expand)을 참조하세요. CD.Latest 폴더에 대한 자세한 내용은 [CD.Latest 폴더](/sccm/core/servers/manage/the-cd.latest-folder)를 참조하세요.
 
 
 ## <a name="recovery"></a>복구

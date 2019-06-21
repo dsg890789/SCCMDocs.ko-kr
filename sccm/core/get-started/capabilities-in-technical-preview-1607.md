@@ -12,12 +12,12 @@ manager: dougeby
 ms.author: aaroncz
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 416f26f3e424eccdfa024d7a87c07fc5aa39c8fc
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: ac91fa1e9c4f4a8610ab3a0815ea6437eb29862c
+ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56141003"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67158224"
 ---
 # <a name="capabilities-in-technical-preview-1607-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1607의 기능
 
@@ -58,7 +58,7 @@ Configuration Manager 클라이언트 설정에서 **버전 업그레이드**에
 
 2. 애플리케이션 카탈로그 웹 사이트 지점 사이트 서버 역할이 설치되어 있는 경우 소프트웨어 센터에서 애플리케이션 카탈로그 웹 사이트 지점 사이트 서버 역할 속성에 지정된 조직 이름 및 색을 표시합니다. 자세한 내용은 [애플리케이션 카탈로그 웹 사이트 지점에 대한 옵션 구성](../../core/servers/deploy/configure/configuration-options-for-site-system-roles.md#BKMK_ApplicationCatalog_Website)을 참조하세요.
 
-3. Microsoft Intune 구독을 구성하고 Configuration Manager 환경에 연결한 경우 소프트웨어 센터에서 Intune 구독 속성에 지정된 조직 이름, 색 및 회사 로고를 표시합니다. 자세한 내용은 [Microsoft Intune 구독 구성](/mdm/deploy-use/configure-intune-subscription)을 참조하세요.
+3. Microsoft Intune 구독을 구성하고 Configuration Manager 환경에 연결한 경우 소프트웨어 센터에서 Intune 구독 속성에 지정된 조직 이름, 색 및 회사 로고를 표시합니다. 자세한 내용은 [Microsoft Intune 구독 구성](/sccm/mdm/deploy-use/configure-intune-subscription)을 참조하세요.
 
 ## <a name="use-the-same-network-adapter-for-multiple-pxe-initiated-deployments"></a>여러 PXE 시작 배포에 같은 네트워크 어댑터 사용
 Technical Preview 버전 1607에서는 이미지 다중 디바이스(예: 여러 디바이스에서 사용하는 USB 이더넷 어댑터)에 이더넷 어댑터를 사용하면 이더넷 어댑터에 대한 하드웨어 식별자를 입력할 수 있는 새 설정을 사용할 수 있습니다. Configuration Manager는 PXE 설치 수행 시 목록의 하드웨어 식별자와 클라이언트 등록을 위한 하드웨어 식별자를 무시합니다.

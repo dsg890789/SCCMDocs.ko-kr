@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bb478eb875e97d8e3088e50daab8538113b40c5
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: a0d2bc4c8ae366a5e60e9a7a3100b5a5059c341a
+ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56139588"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67193959"
 ---
 # <a name="which-branch-of-configuration-manager-should-i-use"></a>사용해야 하는 Configuration Manager 분기
 
@@ -40,7 +40,7 @@ Software Assurance 및 라이선스 옵션에 대한 자세한 내용은 [System
 
 Microsoft는 1년에 몇 차례 System Center Configuration Manager 현재 분기용 업데이트를 출시할 계획입니다. 1710 이전에 릴리스된 Configuration Manager 버전은 12개월 동안 지원됩니다. 1710 릴리스부터 각 업데이트 버전은 GA(일반 공급) 출시 날짜로부터 18개월 동안 지원됩니다. 기술 지원은 전체 지원 기간 동안 제공됩니다. 그러나 지원 구조는 최신 현재 분기 버전의 가용성에 따라 별도의 두 가지 서비스 단계로 발전하는 동적 구조입니다. 자세한 내용은 [System Center Configuration Manager 현재 분기 버전 지원](https://docs.microsoft.com/sccm/core/servers/manage/current-branch-versions-supported) 항목을 참조하세요. 최신 버전에 대한 업데이트는 콘솔 내 업데이트로 제공됩니다.
 
-현재 분기를 새 사이트로 설치하려면 [기준 미디어](/sccm/core/servers/manage/updates#baseline-and-update-versions)를 사용합니다. 또한 System Center 2012 Configuration Manager 서비스 팩 2 또는 System Center 2012 R2 Configuration Manager 서비스 팩 1에서 업그레이드하려면 기준 미디어를 사용합니다. 이 미디어에 대한 액세스는 조직이 System Center Configuration Manager 사용을 허가한 방식에 따라 달라집니다. 
+현재 분기를 새 사이트로 설치하려면 [기준 미디어](/sccm/core/servers/manage/updates#bkmk_Baselines)를 사용합니다. 또한 System Center 2012 Configuration Manager 서비스 팩 2 또는 System Center 2012 R2 Configuration Manager 서비스 팩 1에서 업그레이드하려면 기준 미디어를 사용합니다. 이 미디어에 대한 액세스는 조직이 System Center Configuration Manager 사용을 허가한 방식에 따라 달라집니다. 
 
 기준 미디어를 사용하여 현재 분기의 평가판 버전으로 새 사이트를 설치할 수도 있습니다. 평가판은 라이선스가 필요하지 않습니다. 180일 평가판을 사용할 수 있습니다. 현재 분기의 라이선스 버전으로 업그레이드를 지원합니다. 평가판만 설치하려면 [TechNet 평가 센터](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection)에서 가져옵니다.
 
@@ -76,9 +76,9 @@ Microsoft는 1년에 몇 차례 System Center Configuration Manager 현재 분�
 ##  <a name="long-term-servicing-branch"></a>장기 서비스 분기 
 이 분기는 현재 분기를 사용하며 Configuration Manager SA(Software Assurance) 또는 동등한 구독 권한이 2016년 10월 1일 이후에 만료되도록 허용한 Configuration Manager 고객이 프로덕션에서 사용하도록 허가된 분기입니다. Software Assurance 및 라이선스 옵션에 대한 자세한 내용은 [System Center Configuration Manager의 라이선스 및 분기](learn-more-editions.md) 및 [Configuration Manager 분기 및 라이선스에 대한 질문과 대답](/sccm/core/understand/product-and-licensing-faq)을 참조하세요.
 
-LTSB는 버전 1606을 기반으로 합니다. 이 분기는 새로운 기능을 제공하거나 기존 기능을 업데이트하는 콘솔 내 업데이트를 받지 않습니다. 그러나 중요한 보안 수정이 제공됩니다. LTSB를 설치하려면 System Center 2016과 함께 제공되는 버전 1606 [기준 미디어](/sccm/core/servers/manage/updates#baseline-and-update-versions)를 사용해야 합니다. 최신 기준 버전은 LTSB 설치를 지원하지 않습니다.
+LTSB는 버전 1606을 기반으로 합니다. 이 분기는 새로운 기능을 제공하거나 기존 기능을 업데이트하는 콘솔 내 업데이트를 받지 않습니다. 그러나 중요한 보안 수정이 제공됩니다. LTSB를 설치하려면 System Center 2016과 함께 제공되는 버전 1606 [기준 미디어](/sccm/core/servers/manage/updates#bkmk_Baselines)를 사용해야 합니다. 최신 기준 버전은 LTSB 설치를 지원하지 않습니다.
 
-지원되는 Configuration Manager 2012 사이트에서 새 사이트나 업그레이드로 LTSB를 설치하려면 System Center 2016과 함께 제공되는 버전 1606 [기준 미디어](/sccm/core/servers/manage/updates#baseline-and-update-versions)를 사용합니다. 기준 미디어를 사용하여 현재 분기의 버전 1606을 실행하는 새 사이트 또는 장기 서비스 분기를 실행하는 새 사이트를 설치할 수 있습니다.
+지원되는 Configuration Manager 2012 사이트에서 새 사이트나 업그레이드로 LTSB를 설치하려면 System Center 2016과 함께 제공되는 버전 1606 [기준 미디어](/sccm/core/servers/manage/updates#bkmk_Baselines)를 사용합니다. 기준 미디어를 사용하여 현재 분기의 버전 1606을 실행하는 새 사이트 또는 장기 서비스 분기를 실행하는 새 사이트를 설치할 수 있습니다.
 
 > [!TIP]  
 > System Center 2016에 대한 자세한 내용은 [System Center 2016 설명서](https://docs.microsoft.com/system-center/index)를 참조하세요. 이 설명서에서는 Microsoft 사용권 계약 또는 유사한 권한이 필요한 System Center 2016을 다운로드하는 방법도 설명합니다.  
@@ -117,7 +117,7 @@ LTSB는 현재 분기 버전 1606을 기반으로 하며 다음과 같은 제한
   변환하려면 Microsoft와 활성 Software Assurance 계약이 있어야 합니다. 자세한 내용은 다음 링크를 참조하세요.
   - [장기 서비스 분기를 현재 분기로 업그레이드](convert-to-current-branch.md)
   - [System Center Configuration Manager의 라이선스 및 분기](learn-more-editions.md)
-  - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#baseline-and-update-versions) 
+  - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines) 
 - LTSB를 기술 미리 보기 분기로 변환하는 옵션은 없습니다. 기술 미리 보기 분기는 라이선스가 필요하지 않은 별도 설치입니다.
 -   현재 분기의 평가판을 LTSB 설치로 업그레이드할 수 없습니다.
 
@@ -126,7 +126,7 @@ LTSB는 현재 분기 버전 1606을 기반으로 하며 다음과 같은 제한
 ## <a name="technical-preview-branch"></a>기술 미리 보기 분기
 기술 미리 보기는 랩 환경용입니다. Configuration Manager용으로 개발되고 있는 최신 기능을 알아보고 사용해봅니다. 프로덕션 환경에서 지원되지 않으며, Software Assurance 사용권 계약이 없어도 됩니다.
 
-기술 미리 보기 분기를 실행하는 새 사이트를 설치하려면 최신 [기술 미리 보기 분기 기준 미디어](/sccm/core/get-started/technical-preview#install-and-update-the-technical-preview)를 사용합니다. 기술 미리 보기 분기를 설치한 후에는 매달 콘솔 내 업데이트로 새 버전이 제공됩니다.
+기술 미리 보기 분기를 실행하는 새 사이트를 설치하려면 최신 [기술 미리 보기 분기 기준 미디어](/sccm/core/get-started/technical-preview#bkmk_install)를 사용합니다. 기술 미리 보기 분기를 설치한 후에는 매달 콘솔 내 업데이트로 새 버전이 제공됩니다.
 
 
 ### <a name="features-of-the-technical-preview-branch"></a>기술 미리 보기 분기의 기능
@@ -137,7 +137,7 @@ LTSB는 현재 분기 버전 1606을 기반으로 하며 다음과 같은 제한
 
 
 ### <a name="limitations"></a>제한 사항
--  [지원이 제한](/sccm/core/get-started/technical-preview#requirements-and-limitatins-for-the-techincal-preview)되며, 단일 기본 사이트와 최대 10개의 클라이언트만 포함합니다.  
+-  [지원이 제한](/sccm/core/get-started/technical-preview#bkmk_reqs)되며, 단일 기본 사이트와 최대 10개의 클라이언트만 포함합니다.  
 -  현재 분기 또는 LTSB로 업그레이드할 수 없습니다.
 -  다음 동작을 지원하지 않습니다.
    - 마이그레이션을 사용하여 다른 Configuration Manager 설치로 데이터 가져오기 또는 내보내기

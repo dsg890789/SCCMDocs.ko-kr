@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f14d245ef6bed5749ace29adae6e20d18574905
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: f524096334d50a3a01ebf79436c32fdf732ca088
+ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65497456"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67252048"
 ---
 # <a name="support-for-configuration-manager-current-branch-versions"></a>Configuration Manager 현재 분기 버전에 대한 지원
 
@@ -43,4 +43,4 @@ Microsoft는 1년에 몇 차례 Configuration Manager 현재 분기용 업데이
 
 현재 분기 버전의 목록은 [버전 정보](/sccm/core/servers/manage/updates#version-details)를 참조하세요.
 
-버전 번호 및 콘솔 내 업데이트 또는 기준으로의 가용성에 대한 자세한 내용은 [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)을 참조하세요.
+버전 번호 및 콘솔 내 업데이트 또는 기준으로의 가용성에 대한 자세한 내용은 [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)을 참조하세요.

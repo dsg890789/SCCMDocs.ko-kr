@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1209f055d96d57d9b747945ea15584da159428f
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: b6eea68e5d700bda23a306257c4764d8446b2958
+ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65501081"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67252040"
 ---
 # <a name="install-in-console-updates-for-configuration-manager"></a>Configuration Manager용 콘솔 내 업데이트 설치
 
@@ -395,11 +395,11 @@ Configuration Manager 콘솔 내에서 업데이트를 설치할 준비가 되�
 
 - [Package Conversion Manager](/sccm/apps/pcm/package-conversion-manager) <!--1357861-->
 - [타사 소프트웨어 업데이트](/sccm/sum/deploy-use/third-party-software-updates)<!--1357605,1352101,1358714-->
-- [디바이스당 사용자에 대한 애플리케이션 요청 승인](/sccm/apps/deploy-use/deploy-applications#specify-deployment-settings) <!--1357015-->  
+- [디바이스당 사용자에 대한 애플리케이션 요청 승인](/sccm/apps/deploy-use/deploy-applications#bkmk_deploy-settings) <!--1357015-->  
 - [iOS용 Cisco AnyConnect 4.0.07x 이상 지원](/sccm/mdm/deploy-use/create-vpn-profiles)<!--1357393-->
 - [조건부 액세스의 준수 정책에 대한 디바이스 상태 증명 평가](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm) <!--1235616-->
 - [스크립트 만들기 및 실행](/sccm/apps/deploy-use/create-deploy-scripts) <!--1236459-->
-- [작업 순서 실행 단계](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#add-child-task-sequences-to-a-task-sequence) <!--1261338-->
+- [작업 순서 실행 단계](/sccm/osd/understand/task-sequence-steps#child-task-sequence) <!--1261338-->
 - [작업 순서 콘텐츠 사전 캐싱](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content) <!--1021244-->
 - [Surface 드라이버 업데이트](/sccm/sum/get-started/configure-classifications-and-products) <!--1098490-->
 - [클라우드 관리 게이트웨이](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway) <!--1101764-->

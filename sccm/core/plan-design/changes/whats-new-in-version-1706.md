@@ -12,12 +12,12 @@ ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cc88e70360599391c84e54e41e73b53ef3b70678
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.openlocfilehash: 5b9dcd7465265021d52e44d72c77172d4323144e
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177031"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67285768"
 ---
 # <a name="what39s-new-in-version-1706-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1706의 새로운 기능
 
@@ -30,7 +30,7 @@ System Center Configuration Manager 현재 분기의 업데이트 1706은 버전
 >  다음에 대해 자세히 알아보세요.    
 >   - [새 사이트 설치](https://technet.microsoft.com/library/mt590197.aspx)  
 >   - [사이트에 업데이트 설치](https://technet.microsoft.com/library/mt607046.aspx)  
->   - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)  
+>   - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)  
 
 다음 섹션에서는 Configuration Manager 버전 1706에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.  
 
@@ -59,7 +59,7 @@ Configuration Manager 콘솔에 대한 접근성 기능을 추가로 개선했�
 ### <a name="improvements--for-sql-server-always-on-availability-groups"></a>SQL Server Always On 가용성 그룹에 대한 향상된 기능
 <!-- 1352094 -->
 이 릴리스에서는 이제 Configuration Manager에서 SQL Server Always On 가용성 그룹의 비동기 커밋 복제본을 사용할 수 있습니다. 즉, 오프사이트(원격) 백업으로 사용하도록 추가 복제본을 가용성 그룹에 추가한 다음 재해 복구 시나리오에서 사용할 수 있습니다.  
-  -   Configuration Manager에서는 비동기 커밋 복제본을 사용하여 동기 복제본을 복구하도록 지원합니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 백업 및 복구 항목에서 [사이트 데이터베이스 복구 옵션](/sccm/protect/understand/backup-and-recovery#BKMK_SiteDatabaseRecoveryOption)을 참조하세요.
+  -   Configuration Manager에서는 비동기 커밋 복제본을 사용하여 동기 복제본을 복구하도록 지원합니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 백업 및 복구 항목에서 [사이트 데이터베이스 복구 옵션](/sccm/core/servers/manage/recover-sites#site-database-recovery-options)을 참조하세요.
   -   이 릴리스에서는 비동기 커밋 복제본을 사이트 데이터베이스로 사용하기 위한 장애 조치를 지원하지 않습니다.
 자세한 내용은 [Always On 가용성 그룹 사용 준비](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database)를 참조하세요.
 
@@ -92,7 +92,7 @@ Configuration Manager 콘솔에 대한 접근성 기능을 추가로 개선했�
       - **비즈니스용 Windows 스토어** 비즈니스용 Windows 스토어에 대한 온라인 스토어에 연결하고 Configuration Manager에서 배포할 수 있는 조직을 위한 앱을 가져옵니다.
 
 
-  이 작업은 [Azure 서버 웹앱](/azure/azure/app-service/app-service-authentication-overview#service-to-service-authentication)을 사용하여 구독 및 구성 세부 정보를 제공함으로써 수행합니다. Azure Web App을 사용하지 않을 경우, Azure에서 새 Configuration Manager 구성 요소 또는 서비스를 설정할 때마다 이러한 세부 정보를 입력해야 합니다. 자세한 내용은 [Azure 서비스 마법사](/sccm/core/servers/deploy/configure/azure-services-wizard)를 참조하세요.
+  이 작업은 [Azure 서버 웹앱](/azure/app-service/app-service-authentication-overview)을 사용하여 구독 및 구성 세부 정보를 제공함으로써 수행합니다. Azure Web App을 사용하지 않을 경우, Azure에서 새 Configuration Manager 구성 요소 또는 서비스를 설정할 때마다 이러한 세부 정보를 입력해야 합니다. 자세한 내용은 [Azure 서비스 마법사](/sccm/core/servers/deploy/configure/azure-services-wizard)를 참조하세요.
 
 -   Configuration Manager 사이트에 액세스하려면 Azure AD를 사용하여 인터넷에서 클라이언트를 인증합니다. Azure AD를 사용하면 클라이언트 인증 인증서를 구성하고 사용할 필요가 없습니다. 이를 위해서는 클라우드 관리 게이트웨이 사이트 시스템 역할이 필요합니다. 자세한 내용은 [인증을 위해 Azure AD를 사용하여 인터넷에서 Configuration Manager 클라이언트 설치 및 할당](/sccm/core/clients/deploy/deploy-clients-cmg-azure)을 참조하세요.
 
@@ -102,7 +102,7 @@ Configuration Manager 콘솔에 대한 접근성 기능을 추가로 개선했�
 
 ### <a name="peer-cache-improvements"></a>피어 캐시 개선
 <!-- 1252345 -->
-피어 캐시는 더 이상 네트워크 액세스 계정을 사용하여 피어의 다운로드 요청을 인증하지 않습니다. 클라이언트에 해당 계정이 계속 필요할 때 피어 캐시를 사용하는 경우 한 가지 주의할 점이 있습니다. WinPE로 부팅하고 피어 캐시 원본의 콘텐츠에 액세스하는 클라이언트에는 이러한 요구 사항이 계속 적용됩니다. 자세한 내용은 [피어 캐시에 대한 요구 사항 및 고려 사항](/sccm/core/plan-design/hierarchy/client-peer-cache#requirements-and-considerations-for-peer-cache)을 참조하세요.
+피어 캐시는 더 이상 네트워크 액세스 계정을 사용하여 피어의 다운로드 요청을 인증하지 않습니다. 클라이언트에 해당 계정이 계속 필요할 때 피어 캐시를 사용하는 경우 한 가지 주의할 점이 있습니다. WinPE로 부팅하고 피어 캐시 원본의 콘텐츠에 액세스하는 클라이언트에는 이러한 요구 사항이 계속 적용됩니다. 자세한 내용은 [피어 캐시에 대한 요구 사항 및 고려 사항](/sccm/core/plan-design/hierarchy/client-peer-cache#requirements)을 참조하세요.
 
 
 <!-- ## Migration  -->

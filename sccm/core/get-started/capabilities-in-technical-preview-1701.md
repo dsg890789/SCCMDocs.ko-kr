@@ -12,12 +12,12 @@ manager: dougeby
 ms.author: aaroncz
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4edec748950b4601c4f5889f180f74c158171b33
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: b2d72e0134bdc4f7033ff37c54bed4898fce6832
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56136816"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67286209"
 ---
 # <a name="capabilities-in-technical-preview-1701-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1701의 기능
 
@@ -65,7 +65,7 @@ ms.locfileid: "56136816"
   *기본 사이트 경계 그룹&lt;사이트 코드>* 에 소프트웨어 업데이트 지점을 추가하는 것이 좋습니다. 이렇게 하면 다른 경계 그룹의 구성원이 아닌 클라이언트가 소프트웨어 업데이트 지점을 찾도록 대체될 수 있습니다.
 
 
-경계 그룹에 대한 소프트웨어 업데이트 지점을 관리하려면 [현재 분기 설명서의 절차](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#procedures-for-boundary-groups)를 사용합니다. 단, 구성하는 대체 시간은 소프트웨어 업데이트 지점에 아직 사용되지 않습니다.
+경계 그룹에 대한 소프트웨어 업데이트 지점을 관리하려면 [현재 분기 설명서의 절차](/sccm/core/servers/deploy/configure/boundary-group-procedures)를 사용합니다. 단, 구성하는 대체 시간은 소프트웨어 업데이트 지점에 아직 사용되지 않습니다.
 
 
 ## <a name="hardware-inventory-collects-uefi-information"></a>하드웨어 인벤토리를 통해 UEFI 정보 수집
@@ -97,7 +97,7 @@ ms.locfileid: "56136816"
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 
-- **관리 지점에서 온-프레미스 디바이스 상태 증명 사용**<br>  Configuration Manager 콘솔에서 관리 지점으로 이동하고 **관리 지점 구성 요소 속성**을 연 다음 **고급 옵션** 탭을 클릭합니다. **추가**를 클릭하고 **온-프레미스 장치 상태 증명 서비스 URL**에 대해 온-프레미스 URL(예: https://10.10.10.10)) 을 지정합니다.
+- **관리 지점에서 온-프레미스 디바이스 상태 증명 사용**<br>  Configuration Manager 콘솔에서 관리 지점으로 이동하고 **관리 지점 구성 요소 속성**을 연 다음 **고급 옵션** 탭을 클릭합니다. **추가**를 클릭하고 **온-프레미스 장치 상태 증명 서비스 URL**에 대해 온-프레미스 URL(예: https://10.10.10.10) ) 을 지정합니다.
 - **클라이언트 에이전트에 대해 온-프레미스 관리 지점 상태 증명 보고 사용**<br>Configuration Manager 콘솔에서 **관리** > **클라이언트 설정**을 선택하고 두 번 클릭하거나 새 **사용자 지정 디바이스 설정**을 만듭니다. **컴퓨터 에이전트**를 선택하고 **온-프레미스 상태 증명 서비스 사용**을 **예**로 설정합니다. **디바이스 상태 증명 서비스와 통신 사용**이 **예**로 설정되고 **온-프레미스 상태 증명 사용**이 **아니요**로 설정된 경우 관리 지점에서 클라우드 기반 디바이스 상태 증명 서비스를 사용합니다.
 
 ## <a name="use-the-oms-connector-for-microsoft-azure-government-cloud"></a>Microsoft Azure Government 클라우드용 OMS 커넥터 사용
@@ -116,7 +116,7 @@ ms.locfileid: "56136816"
      &lt;value>&lt;/value>   
      &lt;/setting>
 
-   - **편집된 값:**     
+   - **편집된 값:**      
      &lt;setting name="FairFaxArmResourceId" serializeAs="String"> &lt;value><https://management.usgovcloudapi.net/&lt;/value>>  
      &lt;/setting>
 

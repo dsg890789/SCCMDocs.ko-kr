@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3ac15d0039377d4635e531052abcec72503b1c4
-ms.sourcegitcommit: d1df13fc95a1f1540177c294555d9be26161b9cb
+ms.openlocfilehash: 67c7c84850d22d7f73a745c61b0c1cb577088f83
+ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65974180"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251686"
 ---
 # <a name="support-for-windows-10-in-configuration-manager"></a>Configuration Manager의 Windows 10에 대한 지원  
 
@@ -30,7 +30,7 @@ ms.locfileid: "65974180"
 > [!Tip]
 > 클라이언트인 Windows Server 빌드는 연결된 Windows 10 버전과 동일하게 지원됩니다. 예를 들어 Windows Server 2016은 Windows 10 LTSB 2016과 동일한 빌드 버전이고 Windows Server 버전 1803은 Windows 10 버전 1803과 동일한 빌드 버전입니다.
 >
-> 사이트 시스템인 Windows Server에 대한 자세한 내용은 [Configuration Manager 사이트 시스템 서버에 대해 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-site-system-servers#the-server-core-installation-of-windows-server-version-1803)를 참조하세요.
+> 사이트 시스템인 Windows Server에 대한 자세한 내용은 [Configuration Manager 사이트 시스템 서버에 대해 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-site-system-servers#bkmk_core)를 참조하세요.
 
 
 

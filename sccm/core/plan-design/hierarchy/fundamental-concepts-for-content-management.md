@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: abb8e846598a9ae0d69eb1b134911ec83006b966
-ms.sourcegitcommit: 0bd336e11c9a7f2de05656496a1bc747c5630452
+ms.openlocfilehash: bf0b57ad1753d797b163b0016517cdad09459013
+ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66834895"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251632"
 ---
 # <a name="fundamental-concepts-for-content-management-in-configuration-manager"></a>Configuration Manager에서 콘텐츠 관리의 기본 개념
 
@@ -234,7 +234,7 @@ Configuration Manager로 새로운 OS를 배포하면 작업 순서를 실행하
 
 기본 배포 지점의 개념은 더 이상 사용되지 않으며, **콘텐츠에 대한 대체 원본 위치 허용** 설정을 더 이상 사용하거나 적용할 수 없습니다.
 
-자세한 내용은 [경계 그룹](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#boundary-groups)을 참조하세요.
+자세한 내용은 [경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups)을 참조하세요.
 
 
 
@@ -254,7 +254,7 @@ Configuration Manager로 새로운 OS를 배포하면 작업 순서를 실행하
 
 배포 지점을 **고속** 또는 **저속**으로 정의하는 네트워크 연결 속도는 더 이상 사용되지 않습니다. 대신 경계 그룹과 연결된 각 사이트 시스템이 동일하게 처리됩니다.
 
-자세한 내용은 [경계 그룹](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#boundary-groups)을 참조하세요.
+자세한 내용은 [경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups)을 참조하세요.
 
 
 
@@ -267,7 +267,7 @@ Configuration Manager로 새로운 OS를 배포하면 작업 순서를 실행하
 
 -   이때 Configuration Manager에서 클라이언트의 기본 배포 지점에 콘텐츠를 자동으로 배포하지만, 클라이언트의 기본 배포 지점이 배포를 받기 전에 클라이언트가 다른 배포 지점에서 해당 콘텐츠를 가져올 수도 있습니다. 이 동작이 발생하는 경우 콘텐츠는 해당 배포를 찾고 있는 다음 클라이언트가 사용할 수 있도록 해당 배포 지점에 표시됩니다.  
 
-자세한 내용은 [경계 그룹](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#boundary-groups)을 참조하세요.
+자세한 내용은 [경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups)을 참조하세요.
 
 
 

@@ -12,12 +12,12 @@ ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18cfb826c3ed495439fde63b62e52e6fc07067b4
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 43a976e04358a176852d72301335b14cf484ed3c
+ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65496032"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67158807"
 ---
 # <a name="what39s-new-in-version-1602-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1602의 새로운 기능
 
@@ -30,7 +30,7 @@ System Center Configuration Manager 업데이트 1602는 버전 1511을 실행�
 > [!TIP]  
 >  다음에 대해 자세히 알아보세요.  
 >   
->   -   [새 사이트 설치](/sccm/core/servers/deploy/install)(1511 등의 기준 버전 사용)  
+>   -   [새 사이트 설치](/sccm/core/servers/deploy/install/prepare-to-install-sites)(1511 등의 기준 버전 사용)  
 >   -   [사이트에서 업데이트 설치](/sccm/core/servers/manage/updates)(예: 업데이트 1602)  
 
  다음 섹션에서는 Configuration Manager 버전 1602에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.  

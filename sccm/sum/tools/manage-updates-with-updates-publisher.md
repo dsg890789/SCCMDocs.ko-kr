@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88cc03de66847143336425dbc4b730703d15378c
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 1802c4f21939026f6775daecd9fe011d23ae7a38
+ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65493781"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159514"
 ---
 # <a name="manage-software-updates-in-updates-publisher"></a>Updates Publisher에서 소프트웨어 업데이트 관리
 
@@ -44,7 +44,7 @@ System Center Updates Publisher에서는 **업데이트 작업 영역**을 사�
 ## <a name="edit-updates-and-bundles"></a>업데이트 및 번들 편집
 리포지토리에 있는 업데이트 및 번들을 선택하여 수정할 수 있습니다.
 
-**업데이트 작업 영역**에서 업데이트 또는 번들을 선택한 다음 **홈** 탭에서 **편집**을 선택하여 편집 마법사를 엽니다. 업데이트 및 번들마다 있는 마법사는 개별적이지만 서로 밀접하게 관련되어 있으며 [Create Update](/sccm/sum/tools/create-updates-with-updates-publisher#the-create-update-wizard)(업데이트 만들기) 또는 [Create Bundle](/sccm/sum/tools/create-updates-with-updates-publisher#the-create-bundle-wizard)(번들 만들기) 마법사와 동일한 옵션을 제공합니다.
+**업데이트 작업 영역**에서 업데이트 또는 번들을 선택한 다음 **홈** 탭에서 **편집**을 선택하여 편집 마법사를 엽니다. 업데이트 및 번들마다 있는 마법사는 개별적이지만 서로 밀접하게 관련되어 있으며 [Create Update](/sccm/sum/tools/create-updates-with-updates-publisher#use-the-create-update-wizard)(업데이트 만들기) 또는 [Create Bundle](/sccm/sum/tools/create-updates-with-updates-publisher#use-the-create-bundle-wizard)(번들 만들기) 마법사와 동일한 옵션을 제공합니다.
 
 편집할 때 업데이트 또는 번들에 대해 사용 가능한 세부 정보를 변경하여 사용자 환경에서 사용할 수 있습니다. 예를 들어 적용 가능성 또는 우선 순위 규칙을 편집하거나 언어를 변경할 수 있습니다. 또한 제품 및 공급업체를 변경하여 업데이트 또는 번들을 사용자 지정 폴더로 이동하고 자신의 용도에 맞게 업데이트를 그룹화할 수 있습니다.
 
@@ -73,7 +73,7 @@ System Center Updates Publisher에서는 **업데이트 작업 영역**을 사�
 
     -   적합한 게시물이 없으면 **Assign software update to a new publication**(새 게시물에 소프트웨어 업데이트 할당)을 사용합니다. 이렇게 하면 지정한 이름으로 새 게시물이 만들어집니다.
 
-게시물에 업데이트를 할당한 후에는 **게시물 작업 영역**을 사용하여 게시물을 그룹에 [게시](/sccm/sum/tools/updates-publisher-publications#publish-pubilcations) 또는 [내보낼](/sccm/sum/tools/updates-publisher-publications#export-a-pubilcation) 수 있습니다.
+게시물에 업데이트를 할당한 후에는 **게시물 작업 영역**을 사용하여 게시물을 그룹에 [게시](/sccm/sum/tools/updates-publisher-publications#publish-publications) 또는 [내보낼](/sccm/sum/tools/updates-publisher-publications#export-a-publication) 수 있습니다.
 
 ## <a name="publish-updates-and-bundles-from-the-updates-workspace"></a>업데이트 작업 영역에서 업데이트 및 번들 게시
 업데이트 및 번들을 게시하면 Updates Publisher가 해당 업데이트 및 번들에 대한 정보(메타데이터)와 업데이트용 이진 파일(전체 콘텐츠)을 디바이스 배포용 업데이트 서버에 추가합니다.
@@ -82,7 +82,7 @@ System Center Updates Publisher에서는 **업데이트 작업 영역**을 사�
 
 업데이트와 번들을 게시하는 방법에는 두 가지가 있습니다.
 -   업데이트 작업 영역에서 직접. *업데이트 및 번들을 게시하려면* 절차를 참조하세요.
--   게시물 작업 영역에서 [게시물](/sccm/sum/tools/updates-publisher-publications#publish-pubilcations)로.  
+-   게시물 작업 영역에서 [게시물](/sccm/sum/tools/updates-publisher-publications#publish-publications)로.  
 
 > [!NOTE]   
 > Updates Publisher는 크기가 375MB 이하인 업데이트만 게시할 수 있습니다.
@@ -99,7 +99,7 @@ System Center Updates Publisher에서는 **업데이트 작업 영역**을 사�
 게시에 실패하면 자세한 정보를 제공할 수 있는 UpdatesPublisher.log 파일에 대한 링크가 제공됩니다.
 
 ## <a name="export-updates"></a>업데이트 내보내기
-Updates Publisher 리포지토리에서 업데이트 및 번들을 내보내서 사용자 지정 업데이트 카탈로그를 만들 수 있습니다. 그러면 카탈로그를 [추가](/sccm/sum/tools/updates-publisher-catalogs#add-software-update-catalogs)하고 해당 카탈로그를 Updates Publisher의 다른 인스턴스로 [가져올](/sccm/sum/tools/updates-publisher-catalogs#mport-updates) 수 있습니다. 또한 [업데이트를 게시물로 내보낼](/sccm/sum/tools/updates-publisher-publications##export-a-publication) 수도 있습니다.
+Updates Publisher 리포지토리에서 업데이트 및 번들을 내보내서 사용자 지정 업데이트 카탈로그를 만들 수 있습니다. 그러면 카탈로그를 [추가](/sccm/sum/tools/updates-publisher-catalogs#add-software-update-catalogs)하고 해당 카탈로그를 Updates Publisher의 다른 인스턴스로 [가져올](/sccm/sum/tools/updates-publisher-catalogs#import-updates) 수 있습니다. 또한 [업데이트를 게시물로 내보낼](/sccm/sum/tools/updates-publisher-publications##export-a-publication) 수도 있습니다.
 
 직접 내보내려면 **업데이트 작업 영역** > **모든 소프트웨어 업데이트**로 이동하여 하나 이상의 업데이트 및 번들을 선택합니다. 공급업체 또는 제품 폴더는 내보낼 수 없지만 폴더를 선택한 다음 해당 폴더에서 내보낼 업데이트를 선택할 수 있습니다.
 
@@ -114,7 +114,7 @@ Updates Publisher 리포지토리에서 업데이트 및 번들을 내보내서 
 
 -   선택한 항목에 게시되지 않거나 만료된 업데이트 또는 번들만 포함되어 있는 경우 제거하기 전에 삭제할 것인지 확인하는 메시지가 표시됩니다.
 
--   선택한 항목에 게시되고 아직 만료되지 않은 번들 또는 업데이트가 포함되어 있는 경우 경고가 표시됩니다. 리포지토리에서 삭제하기 전에 해당 업데이트를 [만료](/sccm/sum/tools/updates-publisher-pubilcations#expire-or-reactivate-updates-and-bundles)한 다음 해당 변경 사항을 게시해야 합니다.  
+-   선택한 항목에 게시되고 아직 만료되지 않은 번들 또는 업데이트가 포함되어 있는 경우 경고가 표시됩니다. 리포지토리에서 삭제하기 전에 해당 업데이트를 [만료](/sccm/sum/tools/updates-publisher-publications#expire-or-reactivate-updates-and-bundles)한 다음 해당 변경 사항을 게시해야 합니다.  
 
 공급업체에서 업데이트 또는 번들을 삭제한 다음 해당 카탈로그를 다시 가져올 경우 해당 업데이트가 리포지토리에 복원됩니다.
 

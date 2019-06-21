@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: b099a645-6434-498f-a408-1d438e394396
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a8961e86ff5184463dd156e2394150968046fb8
-ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
+ms.openlocfilehash: 618dd44a32e624a67f03bb18ea01169dd80daeb7
+ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58523795"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67194676"
 ---
 # <a name="install-and-configure-a-software-update-point"></a>소프트웨어 업데이트 지점 설치 및 구성  
 
@@ -147,7 +147,7 @@ ms.locfileid: "58523795"
 >  마법사의 **언어** 페이지는 중앙 관리 사이트에 소프트웨어 업데이트 지점을 설치할 때만 사용할 수 있습니다. 자식 사이트의 소프트웨어 업데이트 파일 언어는 소프트웨어 업데이트 지점 구성 요소 속성의 **언어** 탭에서 구성할 수 있습니다.  
 
 ## <a name="third-party-updates"></a>타사 업데이트
-Configuration Manager 버전 1802부터 Configuration Manager 클라이언트에 대한 타사 업데이트를 사용할 수 있습니다. SUP 구성 요소 속성에서 타사 소프트웨어 업데이트 사용 시 SUP는 타사 업데이트를 위해 WSUS에서 사용되는 서명 인증서를 다운로드합니다. 이 옵션은 소프트웨어 업데이트 지점 설치 중에는 사용할 수 없으므로 SUP를 설치한 후에 구성해야 합니다. 타사 업데이트에 대한 클라이언트 설정을 사용하려면 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#Enable-third-party-software-updates) 아티클을 참조하세요.
+Configuration Manager 버전 1802부터 Configuration Manager 클라이언트에 대한 타사 업데이트를 사용할 수 있습니다. SUP 구성 요소 속성에서 타사 소프트웨어 업데이트 사용 시 SUP는 타사 업데이트를 위해 WSUS에서 사용되는 서명 인증서를 다운로드합니다. 이 옵션은 소프트웨어 업데이트 지점 설치 중에는 사용할 수 없으므로 SUP를 설치한 후에 구성해야 합니다. 타사 업데이트에 대한 클라이언트 설정을 사용하려면 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#enable-third-party-software-updates) 아티클을 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 Configuration Manager 계층 구조의 최상위 사이트부터 시작하여 소프트웨어 업데이트 지점을 설치했습니다. 하위 사이트에 소프트웨어 업데이트 지점을 설치하려면 이 아티클의 절차를 반복합니다.

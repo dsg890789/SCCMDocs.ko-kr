@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 666cb86e4acbb46956f768655637d3185fc5df71
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: ab1c8e462e22206177e4907df3c5549ec9ba1692
+ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65497187"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67194204"
 ---
 # <a name="pre-release-features-in-configuration-manager"></a>Configuration Manager 시험판 기능
 
@@ -83,14 +83,14 @@ ms.locfileid: "65497187"
 | [Package Conversion Manager](/sccm/apps/pcm/package-conversion-manager) <!--1357861--> | 버전 1806 | 버전 1810 |
 | [iOS용 Cisco AnyConnect 4.0.07x 이상 지원](/sccm/mdm/deploy-use/create-vpn-profiles) <!--1357393--> | 1802 버전 | 1802 버전 <br>4163547 업데이트 포함 |
 | [단계별 배포](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence) <!--1356837--> | 1802 버전 | 버전 1806 |
-| [작업 순서 실행 단계](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#add-child-task-sequences-to-a-task-sequence) <!--1261338--> |  버전 1710 | 1802 버전 |
+| [작업 순서 실행 단계](/sccm/osd/understand/task-sequence-steps#child-task-sequence) <!--1261338--> |  버전 1710 | 1802 버전 |
 | [Windows Defender Exploit Guard](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy) <!--1355468--> | 버전 1710 | 1802 버전 |
 | [조건부 액세스의 준수 정책에 대한 디바이스 상태 증명 평가](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm) <!--1235616--> | 버전 1710 | 1802 버전 |
 | [Windows PowerShell 스크립트 만들기 및 실행](/sccm/apps/deploy-use/create-deploy-scripts) <!--1236459--> | 버전 1706 | 1802 버전 |
 | [Microsoft Surface 드라이버 업데이트 관리](/sccm/sum/get-started/configure-classifications-and-products) <!--1098490--> | 버전 1706 | 버전 1710 |
 | [Device Guard 관리](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager) <!--1355092 (1319346)--> | 버전 1702 | ![아직 추가되지 않음](media/red_x.png) |
 | [작업 순서 콘텐츠 사전 캐싱](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content) <!--1021244--> | 버전 1702 | 버전 1710 |
-| [애플리케이션을 설치하기 전에 실행 중인 실행 파일 확인](/sccm/apps/deploy-use/deploy-applications#how-to-check-for-running-executable-files-before-installing-an-application) <!--1284624--> | 버전 1702 | 버전 1706 |
+| [애플리케이션을 설치하기 전에 실행 중인 실행 파일 확인](/sccm/apps/deploy-use/deploy-applications#bkmk_exe-check) <!--1284624--> | 버전 1702 | 버전 1706 |
 | [데이터 웨어하우스 서비스 지점](/sccm/core/servers/manage/data-warehouse) <!--1277922--> | 버전 1702 | 버전 1706 |
 | [클라이언트에 콘텐츠 배포를 위한 피어 캐시](/sccm/core/plan-design/hierarchy/client-peer-cache) <!--1101436--> | 버전 1610 | 버전 1710 |
 | [클라우드 관리 게이트웨이](/sccm/core/clients/manage/plan-cloud-management-gateway) <!--1101764--> | 버전 1610 | 1802 버전 |

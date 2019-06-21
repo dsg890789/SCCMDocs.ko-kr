@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bed079e0037ea09afaf050ef08de16523678970
-ms.sourcegitcommit: 65e9b30e2b53ab9db679a7b1d50634a73c0028db
+ms.openlocfilehash: 79730167346490350a7536c6badb5f0bc0fa85f4
+ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66429820"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67252270"
 ---
 # <a name="list-of-prerequisite-checks-for-configuration-manager"></a>Configuration Manager의 필수 구성 요소 검사 목록
 
@@ -773,7 +773,7 @@ Configuration Manager는 다음 사이트 시스템 역할에서 SQL Server Nati
 
 SQL Server에서 중앙 관리 사이트 및 주 사이트에 대해 8GB 이상의 메모리를 예약하고, 보조 사이트에 대해 4GB 이상의 메모리를 예약합니다.
 
-자세한 내용은 [SQL Server Management Studio를 사용하여 메모리 옵션을 구성하는 방법](https://docs.microsoft.com/sql/database-engine/configure-windows/server-memory-server-configuration-options#how-to-configure-memory-options-using-includessmanstudiofullincludesssmanstudiofull-mdmd)을 참조하세요.
+자세한 내용은 [SQL Server Management Studio를 사용하여 메모리 옵션을 구성하는 방법](https://docs.microsoft.com/sql/database-engine/configure-windows/server-memory-server-configuration-options#how-to-configure-memory-options-using-)을 참조하세요.
 
 > [!NOTE]  
 > 이 검사가 보조 사이트의 SQL Server Express에는 적용되지 않습니다. 이 버전에서는 예약 메모리를 1GB로 제한합니다.  

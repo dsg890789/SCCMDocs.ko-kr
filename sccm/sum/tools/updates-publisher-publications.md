@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 636d9ef3ba7768c73b00de4f50c22629548e7921
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: a56fea517c12e0d6f8e476b28c2af65a04c2593b
+ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65493948"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67158902"
 ---
 # <a name="manage-publications-in-updates-publisher"></a>Updates Publisher의 게시물 관리
 
@@ -76,7 +76,7 @@ ms.locfileid: "65493948"
    게시에 실패하면 자세한 정보를 제공할 수 있는 UpdatesPublisher.log 파일에 대한 링크가 제공됩니다.
 
 ## <a name="export-a-publication"></a>게시물 내보내기
-Updates Publisher 리포지토리에서 게시물을 내보낼 수 있습니다. 이렇게 하면 해당 게시물에 할당된 업데이트 및 번들을 내보내고 업데이트 카탈로그를 만듭니다. 그러면 카탈로그를 [추가](/sccm/sum/tools/updates-publisher-catalogs#add-software-update-catalogs)하고 해당 카탈로그를 Updates Publisher의 다른 인스턴스로 [가져올](/sccm/sum/tools/updates-publisher-catalogs#mport-updates) 수 있습니다. 게시물의 일부가 아닌 [업데이트를 내보낼](/sccm/sum/tools/manage-updates-with-updates-publisher#export-updates) 수도 있습니다.
+Updates Publisher 리포지토리에서 게시물을 내보낼 수 있습니다. 이렇게 하면 해당 게시물에 할당된 업데이트 및 번들을 내보내고 업데이트 카탈로그를 만듭니다. 그러면 카탈로그를 [추가](/sccm/sum/tools/updates-publisher-catalogs#add-software-update-catalogs)하고 해당 카탈로그를 Updates Publisher의 다른 인스턴스로 [가져올](/sccm/sum/tools/updates-publisher-catalogs#import-updates) 수 있습니다. 게시물의 일부가 아닌 [업데이트를 내보낼](/sccm/sum/tools/manage-updates-with-updates-publisher#export-updates) 수도 있습니다.
 
 게시물을 내보내려면 **게시물 작업 영역**으로 이동하고 내보낼 업데이트를 포함하는 게시물을 선택합니다. 한 번에 하나의 게시물만 선택할 수 있습니다.
 

@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e6e603210342f5acc3e66328fca95e964dde2bf
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 9d35558da6b25bba16b84c931b0254436ac3dd1e
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65495506"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67285540"
 ---
 # <a name="whats-new-in-version-1802-of-system-center-configuration-manager"></a>System Center Configuration Manager 1802 버전의 새로운 기능
 
@@ -35,7 +35,7 @@ Configuration Manager의 현재 분기에 대한 1802 업데이트는 콘솔 내
 >  다음에 대해 자세히 알아보세요.    
 >   - [새 사이트 설치](/sccm/core/servers/deploy/install/installing-sites)  
 >   - [사이트에 업데이트 설치](/sccm/core/servers/manage/updates)  
->   - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)  
+>   - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)
 
 다음 섹션에서는 Configuration Manager 1802 버전에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.  
 
@@ -135,7 +135,7 @@ CMG([클라우드 관리 게이트웨이](/sccm/core/clients/manage/plan-cloud-m
 
 ### <a name="configure-hardware-inventory-to-collect-strings-larger-than-255-characters"></a>255자보다 큰 문자열을 수집하도록 하드웨어 인벤토리 구성
 <!-- 1357389 -->
-하드웨어 인벤토리 속성의 경우 255자를 초과하는 문자열을 구성할 수 있습니다. 이 변경 내용은 새로 추가된 클래스 및 키가 아닌 하드웨어 인벤토리 속성에만 적용됩니다. 자세한 내용은 [하드웨어 인벤토리 확장](/sccm/core/clients/manage/inventory/extend-hardware-inventory#BKMK_GreaterThan255) 문서를 참조하세요. 
+하드웨어 인벤토리 속성의 경우 255자를 초과하는 문자열을 구성할 수 있습니다. 이 변경 내용은 새로 추가된 클래스 및 키가 아닌 하드웨어 인벤토리 속성에만 적용됩니다. 자세한 내용은 [하드웨어 인벤토리 확장](/sccm/core/clients/manage/inventory/extend-hardware-inventory#bkmk_GreaterThan255) 문서를 참조하세요. 
 
  ### <a name="deprecation-announcement-for-linux-and-unix-client-support"></a>Linux 및 Unix 클라이언트 지원에 대한 사용 중단 알림
  <!--510139-->
@@ -162,7 +162,7 @@ Surface 디바이스 대시보드는 사용자 환경에 있는 Surface 디바�
  
 ### <a name="co-management-dashboard-in-system-center-configuration-manager"></a>System Center Configuration Manager의 공동 관리 대시보드
 <!--1356648-->
-이 릴리스부터 공동 관리에 대한 정보가 포함된 대시보드를 볼 수 있습니다. 대시보드를 사용하면 사용자 환경에서 공동으로 관리되는 시스템을 검토할 수 있습니다. 그래프는 주의가 필요한 디바이스를 식별하는 데 도움이 될 수 있습니다. 자세한 내용은 [공동 관리 대시보드](/sccm/core/clients/manage/client-management-dashboard) 문서를 참조하세요. 
+이 릴리스부터 공동 관리에 대한 정보가 포함된 대시보드를 볼 수 있습니다. 대시보드를 사용하면 사용자 환경에서 공동으로 관리되는 시스템을 검토할 수 있습니다. 그래프는 주의가 필요한 디바이스를 식별하는 데 도움이 될 수 있습니다. 자세한 내용은 [공동 관리 대시보드](/sccm/comanage/how-to-monitor#co-management-dashboard) 문서를 참조하세요. 
 
 
 ## <a name="compliance-settings"></a>호환성 설정
@@ -177,15 +177,15 @@ Windows 10 클라이언트에서 [Microsoft Edge](https://technet.microsoft.com/
 
 ### <a name="allow-user-interaction-when-installing-an-application"></a>애플리케이션 설치 시 사용자 상호 작용 허용
 <!-- 1356976 -->
-최종 사용자가 작업 순서를 실행하는 동안 애플리케이션 설치와 상호 작용할 수 있습니다. 예를 들어 최종 사용자에게 다양한 옵션을 요구하는 설치 프로세스를 실행합니다. 일부 애플리케이션 설치 관리자에서 사용자 프롬프트를 닫을 수 없거나, 설치 프로세스에 사용자에게만 알려진 특정 구성 값이 필요할 수 있습니다. 이 기능을 사용하면 이러한 설치 시나리오를 처리할 수 있습니다. 자세한 내용은 [배포 유형에 대한 사용자 환경 옵션 지정](/sccm/apps/deploy-use/create-applications#specify-user-experience-options-for-the-deployment-type)을 참조하세요.
+최종 사용자가 작업 순서를 실행하는 동안 애플리케이션 설치와 상호 작용할 수 있습니다. 예를 들어 최종 사용자에게 다양한 옵션을 요구하는 설치 프로세스를 실행합니다. 일부 애플리케이션 설치 관리자에서 사용자 프롬프트를 닫을 수 없거나, 설치 프로세스에 사용자에게만 알려진 특정 구성 값이 필요할 수 있습니다. 이 기능을 사용하면 이러한 설치 시나리오를 처리할 수 있습니다. 자세한 내용은 [배포 유형에 대한 사용자 환경 옵션 지정](/sccm/apps/deploy-use/create-applications#bkmk_dt-ux)을 참조하세요.
 
 ### <a name="do-not-automatically-upgrade-superseded-applications"></a>교체된 애플리케이션을 자동으로 업그레이드하지 않습니다
 <!-- 1351266 -->
-대체된 버전을 자동으로 업그레이드하지 않도록 애플리케이션 배포를 구성합니다. 이제 **소프트웨어 배포 마법사**의 **배포 설정** 페이지에서 배포를 만들 때 **사용 가능** 설치 목적으로 **이 애플리케이션의 교체된 버전을 자동으로 업그레이드**하는 옵션을 활성화하거나 비활성화할 수 있습니다. 자세한 내용은 [배포 설정 지정](/sccm/apps/deploy-use/deploy-applications#specify-deployment-settings)을 참조하세요.
+대체된 버전을 자동으로 업그레이드하지 않도록 애플리케이션 배포를 구성합니다. 이제 **소프트웨어 배포 마법사**의 **배포 설정** 페이지에서 배포를 만들 때 **사용 가능** 설치 목적으로 **이 애플리케이션의 교체된 버전을 자동으로 업그레이드**하는 옵션을 활성화하거나 비활성화할 수 있습니다. 자세한 내용은 [배포 설정 지정](/sccm/apps/deploy-use/deploy-applications#bkmk_deploy-settings)을 참조하세요.
 
 ### <a name="approve-application-requests-for-users-per-device"></a>디바이스당 사용자에 대한 응용 프로그램 요청 승인
 <!-- 1357015 -->
-이 릴리스부터는 사용자가 승인이 필요한 응용 프로그램을 요청할 때 특정 디바이스 이름이 요청의 일부로 포함됩니다. 관리자가 요청을 승인하면 사용자는 해당 디바이스에만 응용 프로그램을 설치할 수 있습니다. 사용자가 다른 디바이스에 응용 프로그램을 설치하려면 다른 요청을 제출해야 합니다. 자세한 내용은 [배포 설정 지정](/sccm/apps/deploy-use/deploy-applications#specify-deployment-settings)을 참조하세요.
+이 릴리스부터는 사용자가 승인이 필요한 응용 프로그램을 요청할 때 특정 디바이스 이름이 요청의 일부로 포함됩니다. 관리자가 요청을 승인하면 사용자는 해당 디바이스에만 응용 프로그램을 설치할 수 있습니다. 사용자가 다른 디바이스에 응용 프로그램을 설치하려면 다른 요청을 제출해야 합니다. 자세한 내용은 [배포 설정 지정](/sccm/apps/deploy-use/deploy-applications#bkmk_deploy-settings)을 참조하세요.
 
  > [!Note]  
  > 이는 선택적 기능입니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.  
@@ -200,7 +200,7 @@ Windows 10 클라이언트에서 [Microsoft Edge](https://technet.microsoft.com/
 
 ### <a name="windows-10-in-place-upgrade-task-sequence-via-cloud-management-gateway"></a>클라우드 관리 게이트웨이를 통한 Windows 10 현재 위치 업그레이드 작업 순서
 <!-- 1357149 -->
-이제 Windows 10 [내부 업그레이드 작업 순서](/sccm/osd/deploy-use/upgrade-windows-to-the-latest-version)에서 [클라우드 관리 게이트웨이](/sccm/core/clients/manage/plan-cloud-management-gateway)를 통해 관리되는 인터넷 기반 클라이언트에 대한 배포를 지원합니다. 이 기능을 사용하면 원격 사용자가 회사 네트워크에 연결할 필요 없이 Windows 10으로 쉽게 업그레이드할 수 있습니다. 자세한 내용은 [Deploy a task sequence](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#deploy-windows-10-in-place-upgrade-via-cmg)항목을 참조하세요.
+이제 Windows 10 [내부 업그레이드 작업 순서](/sccm/osd/deploy-use/upgrade-windows-to-the-latest-version)에서 [클라우드 관리 게이트웨이](/sccm/core/clients/manage/plan-cloud-management-gateway)를 통해 관리되는 인터넷 기반 클라이언트에 대한 배포를 지원합니다. 이 기능을 사용하면 원격 사용자가 회사 네트워크에 연결할 필요 없이 Windows 10으로 쉽게 업그레이드할 수 있습니다. 자세한 내용은 [Deploy a task sequence](/sccm/osd/deploy-use/deploy-a-task-sequence)항목을 참조하세요.
 
 ### <a name="improvements-to-windows-10-in-place-upgrade-task-sequence"></a>Windows 10 현재 위치 업그레이드 작업 순서 개선 사항
 <!-- 1357425 -->
@@ -240,11 +240,11 @@ Windows 10 클라이언트에서 [Microsoft Edge](https://technet.microsoft.com/
 
 ### <a name="hide-installed-applications-in-software-center"></a>소프트웨어 센터에서 설치된 애플리케이션 숨기기
 <!--1357592-->
-이제 설치된 애플리케이션을 소프트웨어 센터에서 숨길 수 있습니다. 클라이언트 설정에서 이 옵션을 사용하도록 설정하면 이미 설치된 애플리케이션이 더 이상 애플리케이션 탭에 표시되지 않습니다. 이 옵션은 Configuration Manager 1802를 설치하거나 이 버전으로 업그레이드할 때 기본값으로 설정됩니다.  설치 상태 탭에서는 설치된 애플리케이션을 계속 검토할 수 있습니다. [소프트웨어 센터에서 설치된 애플리케이션 숨기기](/sccm/core/clients/deploy/about-client-settings#BKMK_HideInstalled)에는 추가적인 세부 정보가 있습니다.   
+이제 설치된 애플리케이션을 소프트웨어 센터에서 숨길 수 있습니다. 클라이언트 설정에서 이 옵션을 사용하도록 설정하면 이미 설치된 애플리케이션이 더 이상 애플리케이션 탭에 표시되지 않습니다. 이 옵션은 Configuration Manager 1802를 설치하거나 이 버전으로 업그레이드할 때 기본값으로 설정됩니다.  설치 상태 탭에서는 설치된 애플리케이션을 계속 검토할 수 있습니다. [소프트웨어 센터에서 설치된 애플리케이션 숨기기](/sccm/core/clients/deploy/about-client-settings#bkmk_HideInstalled)에는 추가적인 세부 정보가 있습니다.   
 
 ### <a name="hide-unapproved-applications-in-software-center"></a>소프트웨어 센터에서 승인되지 않은 프로그램 숨기기
  <!--1355146-->
-이 클라이언트 설정 옵션을 용하도록 설정하면 승인이 필요한 사용자가 사용할 수 있는 애플리케이션이 소프트웨어 센터에서 숨겨집니다.  [소프트웨어 센터에서 승인되지 않은 프로그램 숨기기](/sccm/core/clients/deploy/about-client-settings#BKMK_HideUnapproved)에는 추가적인 세부 정보가 있습니다.  
+이 클라이언트 설정 옵션을 용하도록 설정하면 승인이 필요한 사용자가 사용할 수 있는 애플리케이션이 소프트웨어 센터에서 숨겨집니다.  [소프트웨어 센터에서 승인되지 않은 프로그램 숨기기](/sccm/core/clients/deploy/about-client-settings#bkmk_HideUnapproved)에는 추가적인 세부 정보가 있습니다.  
 
 ### <a name="software-center-shows-user-additional-compliance-information"></a>소프트웨어 센터에서 사용자에게 추가 준수 정보 표시
 <!-- 1235616 -->

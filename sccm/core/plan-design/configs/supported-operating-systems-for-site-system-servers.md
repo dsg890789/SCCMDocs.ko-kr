@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 871f007bd1ee0e38635e03a6b17a9125758553af
-ms.sourcegitcommit: 65e9b30e2b53ab9db679a7b1d50634a73c0028db
+ms.openlocfilehash: 0a83b55726903369677d3daf04f7c879b3660c06
+ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66429799"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251671"
 ---
 # <a name="supported-operating-systems-for-configuration-manager-site-system-servers"></a>Configuration Manager 사이트 시스템 서버에 대해 지원되는 운영 체제
 
@@ -181,7 +181,7 @@ ms.locfileid: "66429799"
 
 *Windows Server 2008 R2 서비스 팩 1: Standard, Enterprise 및 Datacenter에 적용*
 
-[Microsoft 지원 기간](https://support.microsoft.com/lifecycle)에 설명된 대로 Windows Server 2008 R2는 현재 추가 지원 상태이며 더 이상 일반 지원에 속하지 않습니다. 향후에 Configuration Manager에서 이러한 운영 체제를 사이트 시스템 서버로 사용할 수 있는지에 대한 자세한 내용은 [사용되지 않는 서버 운영 체제](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-server#deprecated-server-operating-systems)를 참조하세요.  
+[Microsoft 지원 기간](https://support.microsoft.com/lifecycle)에 설명된 대로 Windows Server 2008 R2는 현재 추가 지원 상태이며 더 이상 일반 지원에 속하지 않습니다. 향후에 Configuration Manager에서 이러한 운영 체제를 사이트 시스템 서버로 사용할 수 있는지에 대한 자세한 내용은 [사용되지 않는 서버 운영 체제](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-server#server-os)를 참조하세요.  
 
 > [!Important]  
 > Windows Server 2008 R2에서 확장된 지원을 종료하는 날짜는 2020년 1월 14일입니다. 이 날짜 이후에 Configuration Manager에서는 이 OS를 사이트 시스템 역할로 지원하지 않습니다. 
@@ -199,7 +199,7 @@ ms.locfileid: "66429799"
 
 *Windows Server 2008 서비스 팩 2(x86, x64): Standard, Enterprise 및 Datacenter에 적용*
 
-[Microsoft 지원 수명 주기](https://support.microsoft.com/lifecycle)에서 설명한 대로 Windows Server 2008 SP2(서비스 팩 2)는 이제 확장된 지원 상태이며 더 이상 일반 지원 상태가 아닙니다. 향후에 Configuration Manager에서 이러한 운영 체제를 사이트 시스템 서버로 사용할 수 있는지에 대한 자세한 내용은 [사용되지 않는 서버 운영 체제](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-server#deprecated-server-operating-systems)를 참조하세요.  
+[Microsoft 지원 수명 주기](https://support.microsoft.com/lifecycle)에서 설명한 대로 Windows Server 2008 SP2(서비스 팩 2)는 이제 확장된 지원 상태이며 더 이상 일반 지원 상태가 아닙니다. 향후에 Configuration Manager에서 이러한 운영 체제를 사이트 시스템 서버로 사용할 수 있는지에 대한 자세한 내용은 [사용되지 않는 서버 운영 체제](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-server#server-os)를 참조하세요.  
 
 > [!Important]  
 > Windows Server 2008 R2에서 확장된 지원을 종료하는 날짜는 2020년 1월 14일입니다. 이 날짜 이후에 Configuration Manager에서는 이 OS를 사이트 시스템 역할로 지원하지 않습니다. 

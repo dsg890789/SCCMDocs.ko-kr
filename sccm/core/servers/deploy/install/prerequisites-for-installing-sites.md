@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f2110b805ac404a6e3c12d66225633b45eb50ae
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 76ab690024509d63293a7b9b94721644023702a9
+ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65501356"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159317"
 ---
 # <a name="prerequisites-for-installing-configuration-manager-sites"></a>Configuration Manager 사이트 설치에 대한 필수 조건
 
@@ -131,7 +131,7 @@ Configuration Manager만 계층의 최상위 사이트에서 이러한 역할을
 Configuration Manager에서 다음 Azure 서비스 중 하나를 사용하고, 사이트 확장 후 반드시 해당 서비스 연결을 삭제한 후 다시 만들어야 합니다.
 
 - [Log Analytics](/sccm/core/clients/manage/sync-data-log-analytics)  
-- [업그레이드 준비](/sccm/core/clients/manage/upgrade/upgrade-readiness)  
+- [업그레이드 준비](/sccm/core/clients/manage/upgrade-readiness)  
 - [비즈니스용 Microsoft Store](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)  
 
 이 문제를 해결하려면 다음 단계를 따르십시오.

@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aff3393dca29d558c62c0a508b8cbf6c98f9fbfa
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 243e38273488f72e3e5e693270b10d6865c3a422
+ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65501230"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67252246"
 ---
 # <a name="back-up-a-configuration-manager-site"></a>Configuration Manager 사이트 백업
 
@@ -60,7 +60,7 @@ DPM에서 사이트 데이터베이스 컴퓨터에 대한 새 보호 그룹을 
 -   특정 폴더 및 파일 백업
 -   [CD.Latest 폴더](/sccm/core/servers/manage/the-cd.latest-folder) 백업   
 
-최소한 5일마다 기본 사이트 백업 작업을 실행하도록 계획합니다. 이 일정은 Configuration Manager에서 *SQL Server 변경 내용 추적 보존 기간*으로 5일을 사용하기 때문입니다. 자세한 내용은 [SQL Server 변경 내용 추적 보존 기간](/sccm/protect/understand/recover-sites#bkmk_SQLretention)을 참조하세요.
+최소한 5일마다 기본 사이트 백업 작업을 실행하도록 계획합니다. 이 일정은 Configuration Manager에서 *SQL Server 변경 내용 추적 보존 기간*으로 5일을 사용하기 때문입니다. 자세한 내용은 [SQL Server 변경 내용 추적 보존 기간](/sccm/core/servers/manage/recover-sites#sql-server-change-tracking-retention-period)을 참조하세요.
 
 백업 프로세스를 단순화하려면 **AfterBackup.bat** 파일을 만들 수 있습니다. 이 스크립트는 백업 작업이 성공적으로 완료된 후 백업 후속 작업을 자동으로 실행합니다. AfterBackup.bat 파일을 사용하여 백업 스냅숏을 안전한 위치에 보관합니다. AfterBackup.bat 파일을 사용하여 백업 폴더에 파일을 복사하거나 다른 백업 작업을 시작할 수도 있습니다.  
 
@@ -88,7 +88,7 @@ Configuration Manager 백업 서비스가 실행될 때 이 서비스는 백업 
 
     -   **사이트 서버의 사이트 데이터 및 데이터베이스용 로컬 드라이브**: 작업이 사이트와 사이트 데이터베이스의 백업 파일을 사이트 서버의 로컬 디스크 드라이브의 지정된 경로에 저장하도록 지정합니다. 백업 작업이 실행되기 전에 로컬 폴더를 만듭니다. 사이트 서버의 로컬 시스템 계정에 사이트 서버 백업의 로컬 폴더에 대한 **쓰기** NTFS 파일 권한이 있어야 합니다. SQL Server를 실행하는 컴퓨터의 로컬 시스템 계정에 사이트 데이터베이스 백업 폴더에 대한 **쓰기** NTFS 권한이 있어야 합니다.  
 
-    -   **사이트 데이터 및 데이터베이스의 네트워크 경로(UNC 이름)**: 작업이 사이트와 사이트 데이터베이스의 백업 파일을 지정된 네트워크 경로에 저장하도록 지정합니다. 백업 작업이 실행되기 전에 공유를 만듭니다. 사이트 서버의 컴퓨터 계정에 공유 네트워크 폴더에 대한 **쓰기** NTFS 및 공유 권한이 있어야 합니다. SQL Server가 다른 컴퓨터에 설치된 경우 SQL Server의 컴퓨터 계정에 동일한 권한이 있어야 합니다.  
+    -   **사이트 데이터 및 데이터베이스의 네트워크 경로(UNC 이름)** : 작업이 사이트와 사이트 데이터베이스의 백업 파일을 지정된 네트워크 경로에 저장하도록 지정합니다. 백업 작업이 실행되기 전에 공유를 만듭니다. 사이트 서버의 컴퓨터 계정에 공유 네트워크 폴더에 대한 **쓰기** NTFS 및 공유 권한이 있어야 합니다. SQL Server가 다른 컴퓨터에 설치된 경우 SQL Server의 컴퓨터 계정에 동일한 권한이 있어야 합니다.  
 
     -   **사이트 서버 및 SQL Server의 로컬 드라이브**: 작업이 사이트의 백업 파일을 사이트 데이터베이스 서버의 로컬 드라이브에서 지정된 경로에 저장하도록 지정합니다. 이 작업은 사이트 데이터베이스의 백업 파일을 사이트 데이터베이스 서버의 로컬 드라이브에서 지정된 경로에 저장합니다. 백업 작업이 실행되기 전에 로컬 폴더를 만듭니다. 사이트 서버의 컴퓨터 계정에 사이트 서버에서 만든 폴더에 대한 **쓰기** NTFS 권한이 있어야 합니다. SQL Server의 컴퓨터 계정에 사이트 데이터베이스 서버에서 만든 폴더에 대한 **쓰기** NTFS 권한이 있어야 합니다. 이 옵션은 사이트 데이터베이스가 사이트 서버에 설치되지 않은 경우에만 사용할 수 있습니다.  
 

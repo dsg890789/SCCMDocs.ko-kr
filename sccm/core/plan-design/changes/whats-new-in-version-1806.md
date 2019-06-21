@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03368d543b539b018ba581277cb0ba7e6e8cb251
-ms.sourcegitcommit: f531d0a622f220739710b2fe6644ea58d024064a
+ms.openlocfilehash: deb27df76bb3ed6fc9c6338f302fcc612443cee9
+ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65933502"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251922"
 ---
 # <a name="whats-new-in-version-1806-of-configuration-manager-current-branch"></a>Configuration Manager 1806 버전의 새로운 기능
 
@@ -217,7 +217,7 @@ CMG를 통해 구성 관리자 클라이언트를 인터넷에 설치할 때 명
 
 #### <a name="trusted-root-certificate-isnt-required-with-azure-ad"></a>신뢰할 수 있는 루트 인증서는 Azure AD에서 필요하지 않음
 <!--503899-->
-CMG를 만들 경우 설정 페이지에서 [신뢰할 수 있는 루트 인증서](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#cmg-trusted-root-certificate-to-clients)를 더 이상 제공할 필요가 없습니다. 이 인증서는 클라이언트 인증용 Azure AD(Azure Active Directory)를 사용할 때 필요하지 않지만 마법사에서는 필요합니다. PKI 클라이언트 인증 인증서를 사용하는 경우 여전히 신뢰할 수 있는 루트 인증서를 CMG에 추가해야 합니다.
+CMG를 만들 경우 설정 페이지에서 [신뢰할 수 있는 루트 인증서](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#bkmk_cmgroot)를 더 이상 제공할 필요가 없습니다. 이 인증서는 클라이언트 인증용 Azure AD(Azure Active Directory)를 사용할 때 필요하지 않지만 마법사에서는 필요합니다. PKI 클라이언트 인증 인증서를 사용하는 경우 여전히 신뢰할 수 있는 루트 인증서를 CMG에 추가해야 합니다.
 
 
 
@@ -230,7 +230,7 @@ CMG를 만들 경우 설정 페이지에서 [신뢰할 수 있는 루트 인증�
 자세한 내용은 [Configuration Manager 워크로드를 Intune으로 전환하는 방법](/sccm/comanage/how-to-switch-workloads)을 참조하세요.
 
 
-### <a name="transition-new-workloads-to-intune-using-co-management"></a>공동 관리를 사용하여 새 워크로드를 Intune으로 전환 
+### <a name="transition-new-workloads-to-intune-using-co-management"></a>공동 관리를 사용하여 새 워크로드를 Intune으로 전환
 이제 공동 관리를 사용하도록 설정한 후 다음 워크로드를 Configuration Manager에서 Intune으로 전환할 수 있습니다.  
 
 - **디바이스 구성**<!--1357903-->: 이 워크로드를 통해 Intune을 사용하여 MDM 정책을 배포할 수 있지만 애플리케이션 배포에는 Configuration Manager를 계속 사용할 수 있습니다.  
@@ -299,7 +299,7 @@ Office 사용자 지정 도구는 Configuration Manager 콘솔에서 Office 365 
 자세한 내용은 [Office 365 앱 배포](/sccm/sum/deploy-use/manage-office-365-proplus-updates#deploy-office-365-apps)를 참조하세요.
 
 
-### <a name="support-for-new-windows-app-package-formats"></a>새로운 Windows 앱 패키지 형식에 대한 지원 
+### <a name="support-for-new-windows-app-package-formats"></a>새로운 Windows 앱 패키지 형식에 대한 지원
 <!--1357427-->
 Configuration Manager는 이제 새 Windows 10 앱 패키지(.msix) 및 앱 번들(.msixbundle) 형식의 배포를 지원합니다. 
 
@@ -323,7 +323,7 @@ Package Conversion Manager는 레거시 패키지를 Configuration Manager 현�
 
 ## <a name="os-deployment"></a>OS 배포
 
-### <a name="improvements-to-phased-deployments"></a>단계적 배포 개선 사항 
+### <a name="improvements-to-phased-deployments"></a>단계적 배포 개선 사항
 
 이 릴리스에서는 단계적 배포의 다음 사항이 개선되었습니다.  
 
@@ -425,12 +425,12 @@ Package Conversion Manager는 레거시 패키지를 Configuration Manager 현�
 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-software-center#bkmk_userex)을 참조하세요.  
 
 > [!Note]  
-> 애플리케이션 카탈로그 웹 사이트 지점 및 웹 서비스 지점은 1806에서 더 이상 *필요하지 않지만**지원은 계속*됩니다. 
+> 애플리케이션 카탈로그 웹 사이트 지점 및 웹 서비스 지점은 1806에서 더 이상 *필요하지 않지만* *지원은 계속*됩니다. 
 > 
 > 애플리케이션 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
 
 
-### <a name="specify-the-visibility-of-the-application-catalog-website-link-in-software-center"></a>소프트웨어 센터에서 애플리케이션 카탈로그 웹 사이트 링크의 표시 여부 지정 
+### <a name="specify-the-visibility-of-the-application-catalog-website-link-in-software-center"></a>소프트웨어 센터에서 애플리케이션 카탈로그 웹 사이트 링크의 표시 여부 지정
 <!--1358214-->
 클라이언트 설정을 사용하면 소프트웨어 센터의 **설치 상태** 노드에 **애플리케이션 카탈로그 웹 사이트 열기** 링크를 표시할지 여부를 제어할 수 있습니다.  
 
@@ -442,7 +442,7 @@ Package Conversion Manager는 레거시 패키지를 Configuration Manager 현�
 
 ### <a name="custom-tab-for-webpage-in-software-center"></a>소프트웨어 센터의 웹 페이지용 사용자 지정 탭
 <!--1358132-->
-클라이언트 설정을 사용하여 소프트웨어 센터에서 사용자 지정된 탭을 만들어 웹 페이지를 엽니다. 이 기능을 사용하면 일관되고 신뢰할 수 있는 방식으로 최종 사용자에게 콘텐츠를 보여줄 수 있습니다.  다음 목록에는 몇 가지 예가 포함되어 있습니다.  
+클라이언트 설정을 사용하여 소프트웨어 센터에서 사용자 지정된 탭을 만들어 웹 페이지를 엽니다. 이 기능을 사용하면 일관되고 신뢰할 수 있는 방식으로 최종 사용자에게 콘텐츠를 보여줄 수 있습니다. 다음 목록에는 몇 가지 예가 포함되어 있습니다.  
 
 - IT 연락처: 조직의 IT 부서에 문의하는 방법에 대한 정보  
 
@@ -494,7 +494,7 @@ Package Conversion Manager는 레거시 패키지를 Configuration Manager 현�
 
 ## <a name="reporting"></a>보고
 
-### <a name="new-software-updates-compliance-report"></a>새 소프트웨어 업데이트 준수 보고서 
+### <a name="new-software-updates-compliance-report"></a>새 소프트웨어 업데이트 준수 보고서
 <!--1357775-->
 소프트웨어 업데이트 준수에 대한 보고서 보기에는 일반적으로 최근 사이트에 연결하지 않은 클라이언트의 데이터가 포함됩니다. 새 보고서 **준수 9 - 전체 상태 및 준수**에서는 특정 소프트웨어 업데이트 그룹에 대한 준수 결과를 “정상” 클라이언트별로 필터링할 수 있습니다. 이 보고서에서는 사용자 환경에서 활성 클라이언트의 보다 사실적인 준수 상태를 보여 줍니다. 
 
@@ -545,7 +545,7 @@ Package Conversion Manager는 레거시 패키지를 Configuration Manager 현�
 
 자산을 마우스 오른쪽 단추로 클릭하고 **복사**를 선택합니다. 이 작업에서는 선택한 자산을 전체 세부 정보가 담긴 쉼표 분리 목록으로 복사합니다. 이 보기에서는 키보드 바로 가기 **CTRL** + **C**도 작동합니다. 
 
-자세한 내용은 [1806 버전의 콘솔 향상](/sccm/core/servers/manage/admin-console#console-improvements-in-version-1806)을 참조하세요.
+자세한 내용은 [1806 버전의 콘솔 향상](/sccm/core/servers/manage/admin-console#copy-details-in-monitoring-views)을 참조하세요.
 
 
 ### <a name="improvements-to-the-surface-dashboard"></a>Surface 대시보드에 대한 개선 사항
@@ -567,15 +567,15 @@ Package Conversion Manager는 레거시 패키지를 Configuration Manager 현�
 <!--1358202-->
 기본적으로 **자산 및 준수** 작업 영역의 **디바이스** 노드는 **현재 로그온한 사용자**에 대한 열을 표시합니다. 컬렉션 특정 디바이스 목록도 표시됩니다. 이 값은 [클라이언트 상태](/sccm/core/clients/manage/monitor-clients#bkmk_indStatus)만큼 최신 상태입니다. 사용자가 로그오프하면 클라이언트가 이 값을 지웁니다. 로그온한 사용자가 없으면 값이 비어 있습니다. 
 
-자세한 내용은 [1806 버전의 콘솔 향상](/sccm/core/servers/manage/admin-console#console-improvements-in-version-1806)을 참조하세요.
+자세한 내용은 [1806 버전의 콘솔 향상](/sccm/core/servers/manage/admin-console#view-users-for-a-device)을 참조하세요.
 
 
-### <a name="submit-feedback-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 피드백 제출   
+### <a name="submit-feedback-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 피드백 제출  
 <!--1357542-->
 
 웃는 얼굴 보내기! 이제 Configuration Manager 팀에게 사용자 경험을 직접 알릴 수 있습니다. Configuration Manager 콘솔에서 쉽게 피드백을 보낼 수 있습니다. 칭찬, 문제, 제안 사항 등 모든 피드백에 귀를 기울이겠습니다. Configuration Manager 콘솔의 오른쪽 위에서 리본 위의 웃는 얼굴 단추를 클릭합니다. 이 피드백은 Microsoft의 Configuration Manager 제품 팀에게 바로 전달됩니다. Windows 10 피드백 허브도 사용할 수 있지만, 콘솔 내 피드백 메커니즘을 사용하는 것이 좋습니다.  
 
-자세한 내용은 [1806 버전의 콘솔 향상](/sccm/core/servers/manage/admin-console#console-improvements-in-version-1806) 및 [제품 피드백](/sccm/core/understand/find-help#BKMK_1806Feedback)을 참조하세요.
+자세한 내용은 [1806 버전의 콘솔 향상](/sccm/core/servers/manage/admin-console#send-feedback) 및 [제품 피드백](/sccm/core/understand/find-help#BKMK_1806Feedback)을 참조하세요.
 
 
 
@@ -609,7 +609,7 @@ Configuration Manager용 Windows PowerShell cmdlet의 변경 내용에 대한 �
 >
 >  다음에 대해 자세히 알아보세요.    
 >   - [새 사이트 설치](/sccm/core/servers/deploy/install/installing-sites)  
->   - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)  
+>   - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)
 
 알려진 중요한 문제는 [릴리스 정보](/sccm/core/servers/deploy/install/release-notes)를 참조하세요.
 

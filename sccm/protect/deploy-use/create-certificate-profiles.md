@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 600b786bbb2f718868c5d08c722621682582f4e1
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 726df4e6ddbfc34194fd25951d6dbafd1e9008ad
+ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65500652"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159539"
 ---
 # <a name="create-certificate-profiles"></a>인증서 프로필 만들기
 
@@ -25,7 +25,7 @@ ms.locfileid: "65500652"
 
 Configuration Manager(SCCM)에서 인증서 프로필을 사용하여 관리되는 디바이스를 회사 리소스에 액세스하는 데 필요한 인증서로 프로비전할 수 있습니다. 인증서 프로필을 만들기 전에 [System Center Configuration Manager에 대한 인증서 인프라 설정](certificate-infrastructure.md)에 설명된 대로 인증서 인프라를 설정합니다.  
 
-이 항목에서는 신뢰할 수 있는 루트 인증서 및 SCEP 인증서 프로필을 만드는 방법을 설명합니다. PFX 인증서 프로필을 만들려는 경우 [PFX 인증서 프로필 만들기](../../protect/deploy-use/create-pfx-certificate-profiles.md)를 참조하세요.
+이 항목에서는 신뢰할 수 있는 루트 인증서 및 SCEP 인증서 프로필을 만드는 방법을 설명합니다. PFX 인증서 프로필을 만들려는 경우 [PFX 인증서 프로필 만들기](/sccm/mdm/deploy-use/create-pfx-certificate-profiles)를 참조하세요.
 
 인증서 프로필을 만들려면
 
@@ -58,9 +58,9 @@ Configuration Manager(SCCM)에서 인증서 프로필을 사용하여 관리되�
 
 -   **SCEP(단순 인증서 등록 프로토콜) 설정**: 단순 인증서 등록 프로토콜 및 네트워크 디바이스 등록 서비스 역할 서비스를 사용하여 디바이스 또는 사용자의 인증서를 요청하려면 이 인증서 프로필 유형을 선택합니다.
 
--   **개인 정보 교환 PKCS #12(PFX) 설정 - 가져오기**: PFX 인증서를 가져오려면 이 옵션을 선택합니다. PFX 인증서를 만드는 방법을 자세히 알아보려면 [PFX 인증서 프로필 가져오기](/sccm/mdm/deploy-use/import-pfx-certificate-profiles.md)를 참조하세요.
+-   **개인 정보 교환 PKCS #12(PFX) 설정 - 가져오기**: PFX 인증서를 가져오려면 이 옵션을 선택합니다. PFX 인증서를 만드는 방법을 자세히 알아보려면 [PFX 인증서 프로필 가져오기](/sccm/mdm/deploy-use/import-pfx-certificate-profiles)를 참조하세요.
 
--   **개인 정보 교환 PKCS #12(PFX) 설정 - 만들기**: 이를 선택하여 인증 기관을 통해 PFX 인증서를 처리합니다. PFX 인증서를 만드는 방법을 자세히 알아보려면 [PFX 인증서 프로필 만들기](/sccm/mdm/deploy-use/create-pfx-certificate-profiles.md)를 참조하세요.
+-   **개인 정보 교환 PKCS #12(PFX) 설정 - 만들기**: 이를 선택하여 인증 기관을 통해 PFX 인증서를 처리합니다. PFX 인증서를 만드는 방법을 자세히 알아보려면 [PFX 인증서 프로필 만들기](/sccm/mdm/deploy-use/create-pfx-certificate-profiles)를 참조하세요.
 
 
 ## <a name="configure-a-trusted-ca-certificate"></a>신뢰할 수 있는 CA 인증서 구성  

@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a26aaa2d4e409e899763cedebd32ebf64c93ffa
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 2d576057c1ca7940a8d09bcfa305b80b178a6006
+ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65496373"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159519"
 ---
 # <a name="configure-options-for-updates-publisher"></a>Updates Publisher의 옵션 구성
 
@@ -40,7 +40,7 @@ Updates Publisher 옵션에 액세스하려면 콘솔의 왼쪽 상단 모서리
 -   로깅
 
 ## <a name="update-server"></a>업데이트 서버
-WSUS(Windows Server Update Services)와 같은 업데이트 서버에서 작동하도록 Updates Publisher를 구성해야 [업데이트 게시](/sccm/sum/tools/manage-updates-with-updates-publisher#publish-updates-and-bundles)가 가능합니다. 이러한 구성에는 서버를 지정하고 콘솔의 원격 서버인 해당 서버에 연결하는 방법을 지정하고 게시하는 디지털 서명 업데이트에 사용할 인증서를 지정하는 작업이 포함됩니다.
+WSUS(Windows Server Update Services)와 같은 업데이트 서버에서 작동하도록 Updates Publisher를 구성해야 [업데이트 게시](/sccm/sum/tools/manage-updates-with-updates-publisher#publish-updates-and-bundles-from-the-updates-workspace)가 가능합니다. 이러한 구성에는 서버를 지정하고 콘솔의 원격 서버인 해당 서버에 연결하는 방법을 지정하고 게시하는 디지털 서명 업데이트에 사용할 인증서를 지정하는 작업이 포함됩니다.
 
 - **업데이트 서버를 구성**합니다. 업데이트 서버를 구성할 때 모든 자식 사이트가 게시하는 업데이트에 대한 액세스 권한을 갖도록 Configuration Manager 계층 구조에서 최상위 WSUS 서버(업데이트 서버)를 선택합니다.
 
@@ -63,7 +63,7 @@ WSUS(Windows Server Update Services)와 같은 업데이트 서버에서 작동�
 
   **자체 서명 인증서를 만드는 경우** 다음을 구성합니다.
 
-  -   **개인 키를 내보낼 수 있음** 옵션을 사용하도록 설정합니다.
+  -   **프라이빗 키를 내보낼 수 있음** 옵션을 사용하도록 설정합니다.
 
   -   **키 사용**을 디지털 서명으로 설정합니다.
 

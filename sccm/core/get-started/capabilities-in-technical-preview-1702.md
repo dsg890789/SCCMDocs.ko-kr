@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d817bf27302b0a894eb834c747fb3bbcb0ad3fa
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 950e3d60d0737d9135eb5f47bbc02a07f2a5e65e
+ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56141190"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67158341"
 ---
 # <a name="capabilities-in-technical-preview-1702-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1702의 기능
 
@@ -39,7 +39,7 @@ ms.locfileid: "56141190"
 -  콘솔에서 아무 개체나 마우스 오른쪽 단추로 클릭할 때   
     ![마우스 오른쪽 단추 클릭 옵션](./media/feedback-option.png)   
 
-**피드백**을 선택하면 브라우저에서 Configuration Manager UserVoice 피드백 웹 사이트(https://configurationmanager.uservoice.com/forums/300492-ideas)가 열립니다.
+**피드백**을 선택하면 브라우저에서 Configuration Manager UserVoice 피드백 웹 사이트(https://configurationmanager.uservoice.com/forums/300492-ideas )가 열립니다.
 ##  <a name="changes-for-updates-and-servicing"></a>업데이트 및 서비스의 변경 내용
 이 미리 보기에서 도입된 내용은 다음과 같습니다.
 
@@ -77,7 +77,7 @@ Configuration Manager에서 Azure AD를 사용하려면 다음이 필요합니�
 -   Azure AD에 가입된 Azure VM에서 실행되는 Configuration Manager 사이트
 -   동일한 Azure AD 환경에서 실행되는 Configuration Manager 클라이언트
 
-Azure AD Domain Services를 구성하려면 [Azure AD Domain Services 시작](https://docs.microsoft.com/azure/active-directory-domain-services/active-directory-ds-getting-started)을 참조하세요.
+Azure AD Domain Services를 구성하려면 [Azure AD Domain Services 시작](https://docs.microsoft.com/azure/active-directory-domain-services/create-instance)을 참조하세요.
 
 ### <a name="discover-resources"></a>리소스 검색
 Azure AD에서 실행되도록 Configuration Manager를 설정하면 다음 Active Directory 검색 방법을 사용하여 Azure AD에서 리소스를 검색할 수 있습니다.  
@@ -202,8 +202,8 @@ Windows Update for Business 업데이트에 대한 준수 평가 정보를 수�
 2. 편집할 작업 순서를 선택하고 **속성**을 클릭합니다.
 3. **일반** 탭에서 소프트웨어 센터에 대한 다음 설정을 사용할 수 있습니다.
    - **다시 시작 필요**: 설치하는 동안 다시 시작해야 하는지 여부를 사용자에게 알립니다.
-   - **다운로드 크기(MB)**: 작업 순서에 대해 소프트웨어 센터에 표시되는 메가바이트 수를 지정합니다.  
-   - **예상 실행 시간(분)**: 작업 순서에 대해 소프트웨어 센터에 표시되는 예상 실행 시간(분)을 지정합니다.
+   - **다운로드 크기(MB)** : 작업 순서에 대해 소프트웨어 센터에 표시되는 메가바이트 수를 지정합니다.  
+   - **예상 실행 시간(분)** : 작업 순서에 대해 소프트웨어 센터에 표시되는 예상 실행 시간(분)을 지정합니다.
 
 
 ## <a name="check-for-running-executable-files-before-installing-an-application"></a>애플리케이션을 설치하기 전에 실행 중인 실행 파일 확인
@@ -266,7 +266,8 @@ iOS 디바이스에 대한 구성 항목에서 사용할 수 있는 새 설정�
 - **자동 완성 키보드**(감독 모드인 경우에만)
 - **자동 수정**(감독 모드인 경우에만)
 - **키보드 맞춤법 검사**(감독 모드인 경우에만)
-- **바로 가기 키**(감독 모드인 경우에만)<!--- - **Enterprise app trust settings modification** --->
+- **바로 가기 키**(감독 모드인 경우에만)
+  <!--- - **Enterprise app trust settings modification** --->
 - **Apple Configurator 및 iTunes를 사용한 앱 설치만**(감독 모드인 경우에만)
 - **자동 앱 다운로드**(감독 모드인 경우에만)
 - **Find My Friends 앱 설정 변경**(감독 모드인 경우에만)
@@ -297,7 +298,7 @@ Android for Work는 Android와 별도 플랫폼이며, 작업 프로필을 지�
 다음 섹션에서는 Android for Work 관리에 대해 설명합니다.
 
 #### <a name="enable-android-for-work-management"></a>Android for Work 관리 사용
-1. 이 Intune 테넌트에 대한 모든 Android for Work 관리 작업과 연결할 Android for Work 관리자 계정으로 사용할 Google 계정을 https://accounts.google.com/SignUp에서 만듭니다. 이 Google 계정은 Android 디바이스를 관리하는 관리자 간에 공유될 수 있습니다. 또한 조직이 Play for Work 콘솔에서 앱을 관리하고 게시하는 데 사용하는 Google 계정입니다. 이 계정을 사용하여 Play for Work 스토어에서 앱을 승인하므로 계정 이름과 암호를 추적합니다.
+1. 이 Intune 테넌트에 대한 모든 Android for Work 관리 작업과 연결할 Android for Work 관리자 계정으로 사용할 Google 계정을 https://accounts.google.com/SignUp 에서 만듭니다. 이 Google 계정은 Android 디바이스를 관리하는 관리자 간에 공유될 수 있습니다. 또한 조직이 Play for Work 콘솔에서 앱을 관리하고 게시하는 데 사용하는 Google 계정입니다. 이 계정을 사용하여 Play for Work 스토어에서 앱을 승인하므로 계정 이름과 암호를 추적합니다.
 2. Configuration Manager에서 관리되는 Intune 테넌트에 Google 계정을 바인딩하여 Android 등록을 사용하도록 설정합니다.
    1. **관리** > **개요** > **Cloud Services** > **Microsoft Intune 구독**으로 이동한 다음 Intune 구독을 선택합니다.
    2. 리본에서 **플랫폼 구성** > **Android**를 클릭하고 **Android 등록 사용**이 선택되었는지 확인합니다.
@@ -322,7 +323,7 @@ Android for Work는 Android와 별도 플랫폼이며, 작업 프로필을 지�
 #### <a name="approve-and-deploy-android-for-work-apps"></a>Android for Work 앱 승인 및 배포
 Play for Work 스토어에서 앱을 승인하고, Configuration Manager 콘솔과 동기화하고, 관리되는 Android for Work 디바이스에 배포하려면 다음 단계를 따르세요. 사용자의 작업 프로필에 앱을 배포하려면 Play for Work에서 앱을 승인한 다음 Configuration Manager 콘솔과 동기화해야 합니다.
 
-1. 브라우저를 열고 https://play.google.com/work로 이동합니다.
+1. 브라우저를 열고 https://play.google.com/work 로 이동합니다.
 2. Intune 테넌트에 바인딩된 Google 관리자 계정을 사용하여 로그인합니다.
 3. 환경에 배포하려는 앱을 찾은 다음 각 앱에 대해 **승인**을 클릭합니다.
 4. Configuration Manager 콘솔에서 **관리자** > **개요** > **Cloud Services** > **Android for Work**로 이동한 다음 **동기화**를 클릭합니다.

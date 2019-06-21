@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8d681dbd9996fb7eddbc2b37cf6af6a32401560
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 8923b380d5ee8de881e4921e9a7d5a7a680c25b0
+ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65497596"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67252098"
 ---
 # <a name="checklist-for-installing-update-1806-for-configuration-manager"></a>Configuration Manager용 업데이트 1806을 설치하기 위한 검사 목록
 
@@ -34,7 +34,7 @@ Configuration Manager의 현재 분기를 사용하는 경우 버전 1806용 콘
 
     -   프록시 서버 설정이 http://silverlight.dlservice.microsoft.com 및 http://download.microsoft.com 에서 다운로드하지 않도록 방지하는 경우 또 다른 일반적인 다운로드 문제가 발생합니다.
 
-업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 및 서비스](/sccm/core/servers/manage/updates#a-namebkmkinconsolea-in-console-updates-and-servicing)를 참조하세요.
+업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 및 서비스](/sccm/core/servers/manage/updates#bkmk_inconsole)를 참조하세요.
 
 편재 분기 버전에 대한 자세한 내용은 [기준선 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)을 참조하세요.
 
@@ -154,7 +154,7 @@ Microsoft 또는 Microsoft 파트너에서 다른 제품으로 Configuration Man
 > 필수 구성 요소 검사기가 실행되면 프로세스에서 사이트 유지 관리 작업에 사용되는 일부 제품 소스 파일을 업데이트합니다. 따라서 필수 구성 요소 검사기를 실행한 후 업데이트를 설치하기 전에 사이트 유지 관리 작업을 수행해야 하는 경우 사이트 서버의 CD.Latest 폴더에서  **Setupwpf.exe** (Configuration Manager 설치 프로그램)를 실행합니다.
 
 #### <a name="update-sites"></a>사이트 업데이트   
-이제 계층 구조에 대한 업데이트 설치를 시작할 수 있습니다. 업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates#a-namebkmkinstalla-install-in-console-updates)를 참조하세요.
+이제 계층 구조에 대한 업데이트 설치를 시작할 수 있습니다. 업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates#bkmk_install)를 참조하세요.
 
 일상적인 업무 시간 외에 업데이트를 설치하도록 계획할 수 있습니다. 프로세스가 비즈니스 작업에 최소한의 영향을 주는 시기를 확인합니다. 업데이트를 설치하면 해당 작업에서 사이트 구성 요소 및 사이트 시스템 역할을 다시 설치합니다.
 

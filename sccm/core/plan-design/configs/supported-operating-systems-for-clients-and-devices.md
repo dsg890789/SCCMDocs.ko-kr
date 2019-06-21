@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af9d8c16033a22c828f014dfd4bad771851c08de
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: c6b47c99199458c902f1f56ccc3d5007dfd126eb
+ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65499329"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251535"
 ---
 # <a name="supported-os-versions-for-clients-and-devices-for-configuration-manager"></a>Configuration Manager의 클라이언트 및 디바이스에 대해 지원되는 OS 버전
 
@@ -94,7 +94,7 @@ Windows Server 반기 채널 버전은 Windows Server 버전 1809 같은 Server 
  Configuration Manager는 Windows Server Datacenter 버전을 테스트하고 지원하지만 Windows Server에 대한 공식 인증을 받지 않았습니다. Windows Server Datacenter Edition 관련 문제에 대한 Configuration Manager 핫픽스 지원은 제공되지 않습니다. Windows Server 인증 프로그램에 대한 자세한 내용은 [Windows Server Catalog](https://www.windowsservercatalog.com/)(Windows Server 카탈로그)를 참조하세요. 
 
 #### <a name="bkmk_note2"></a> 참고 2
- [클라이언트 강제 설치](/sccm/core/clients/deploy/plan/client-installation-methods#client-push-installation)를 지원하려면 파일 및 스토리지 서비스 서버 역할의 파일 서버 서비스를 추가하세요. Server Core에 Windows 기능을 설치하는 방법에 대한 자세한 내용은 [Install roles, role services, and features by using Windows PowerShell cmdlets](https://docs.microsoft.com/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#BKMK_installwps)(Windows PowerShell cmdlet을 사용하여 역할, 역할 서비스 및 기능 설치)를 참조하세요.  
+ [클라이언트 강제 설치](/sccm/core/clients/deploy/plan/client-installation-methods#client-push-installation)를 지원하려면 파일 및 스토리지 서비스 서버 역할의 파일 서버 서비스를 추가하세요. Server Core에 Windows 기능을 설치하는 방법에 대한 자세한 내용은 [Install roles, role services, and features by using Windows PowerShell cmdlets](https://docs.microsoft.com/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-windows-powershell-cmdlets)(Windows PowerShell cmdlet을 사용하여 역할, 역할 서비스 및 기능 설치)를 참조하세요.  
 
 #### <a name="bkmk_note3"></a> 참고 3
  새 소프트웨어 센터 앱은 모든 Windows Server Core 버전에서 지원되지 않습니다.<!--SCCMDocs issue 683-->
@@ -361,7 +361,7 @@ Configuration Manager에서는 Configuration Manager 클라이언트를 설치�
 
 ### <a name="supported-versions-of-exchange-server"></a>Exchange Server의 지원되는 버전
 
-- **Exchange Online(Office 365)**: 이 버전에는 Business Productivity Online Standard Suite가 포함되어 있습니다.  
+- **Exchange Online(Office 365)** : 이 버전에는 Business Productivity Online Standard Suite가 포함되어 있습니다.  
 
 - **Exchange Server 2016**(1802 버전부터 시작)  
 

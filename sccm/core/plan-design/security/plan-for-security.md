@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5e6aca35dcadf145c0b93f0c984767099eb8960
-ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.openlocfilehash: ca1c06a5778bf168b216474f65d79e5c4c636e61
+ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083551"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159312"
 ---
 # <a name="plan-for-security-in-configuration-manager"></a>Configuration Manager의 보안 계획
 
@@ -441,7 +441,7 @@ Configuration Manager에서 선택할 수 있는 구성 옵션은 다양하므�
 
 - [엔드포인트 간의 통신](/sccm/core/plan-design/hierarchy/communications-between-endpoints)  
 
-- [암호화 컨트롤 기술 참조](/sccm/core/plan-design/security/cryptographic-controls-tehnical-reference)  
+- [암호화 컨트롤 기술 참조](/sccm/core/plan-design/security/cryptographic-controls-technical-reference)  
 
 - [PKI 인증서 요구 사항](/sccm/core/plan-design/network/pki-certificate-requirements)  
 
