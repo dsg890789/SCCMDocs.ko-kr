@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bb875529224655fb56aeea5636bf92c7ddaf8b2c
-ms.sourcegitcommit: 725e1bf7d3250c2b7b7be9da01135517428be7a1
+ms.sourcegitcommit: 9d186b8b9ff652d5ea8a5d352f3f793f11db66f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2019
+ms.lasthandoff: 06/26/2019
 ms.locfileid: "66822056"
 ---
 # <a name="updates-and-servicing-for-configuration-manager"></a>Configuration Manager에 대한 업데이트 및 서비스
@@ -71,7 +71,7 @@ Configuration Manager의 다음과 같은 지원되는 버전은 기준, 업데�
 <a name="bkmk_note1"></a>
 
 > [!Note]  
-> <sup>**참고 1:**</sup> 기준 미디어는 VLSC([볼륨 라이선스 서비스 센터](https://www.microsoft.com/Licensing/servicecenter/Downloads/DownloadsAndKeys.aspx))에서 다음 릴리스의 일부로 사용할 수 있습니다.
+> <sup>**참고 1:** </sup> 기준 미디어는 VLSC([볼륨 라이선스 서비스 센터](https://www.microsoft.com/Licensing/servicecenter/Downloads/DownloadsAndKeys.aspx))에서 다음 릴리스의 일부로 사용할 수 있습니다.
 >
 > - System Center Config Mgr(현재 분기)
 > - System Center 2016 Datacenter
