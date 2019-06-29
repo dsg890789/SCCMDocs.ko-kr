@@ -2,7 +2,7 @@
 title: 데스크톱 Analytics 문제 해결
 titleSuffix: Configuration Manager
 description: 데스크톱 Analytics를 사용 하 여 문제를 해결 하려면 기술 세부 정보입니다.
-ms.date: 06/11/2019
+ms.date: 06/28/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6a64a007462c8619e05b3002611bb72581b6f92
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: 271803e42ba20d8d0340754b3167210414423014
+ms.sourcegitcommit: d8cfd0edf2579e2b08a0ca8a0a7b8f53d1e4196f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67285707"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67463802"
 ---
 # <a name="troubleshoot-desktop-analytics"></a>데스크톱 Analytics 문제 해결
 
@@ -56,7 +56,7 @@ ms.locfileid: "67285707"
 ### <a name="enable-verbose-logging"></a>자세한 정보 로깅 사용
 
 1. 서비스 연결 지점에서 다음 레지스트리 키로 이동 합니다. `HKLM\Software\Microsoft\SMS\Tracing\SMS_SERVICE_CONNECTOR`  
-2. 설정 된 **LogLevel** 값 `0`  
+2. 설정 된 **LoggingLevel** 값 `0`  
 3. (선택 사항) 사이트 데이터베이스에서 다음 SQL 명령을 실행 합니다.  
 
     ```SQL
@@ -86,42 +86,43 @@ Azure ad에 응용 프로그램을 추가 하는 데스크톱 분석:
 
 #### <a name="create-app-in-azure-ad"></a>Azure AD에서 앱 만들기
 
-1. 엽니다는 [Azure portal](http://portal.azure.com) 회사 관리자 권한이 있는 사용자로 이동 **Azure Active Directory**를 선택한 **앱 등록**합니다. 선택한 **새 응용 프로그램 등록**합니다.  
+1. 열기를 [Azure portal](http://portal.azure.com) 사용자로 *전역 관리자* 권한으로 이동 **Azure Active Directory**를 선택 하 고 **앱 등록**. 선택한 **새 등록**합니다.  
 
 2. 에 **만들기** 패널에서 다음 설정을 구성 합니다.  
 
     - **이름**: 예를 들어 앱을 식별 하는 고유 이름: `Desktop-Analytics-Connection`  
 
-    - **응용 프로그램 유형을**: **웹 앱 / API**  
+    - **지원 되는 계정 유형**: **이 조직 디렉터리에만 (Contoso) 계정**
 
-    - **로그온 URL**:이 값이 Configuration Manager에서 사용 되지 않지만 Azure AD에 필요 합니다. 예를 들어 고유 하 고 올바른 URL을 입력 합니다. `https://configmgrapp`  
+    - **리디렉션 URI (선택 사항)** : **Web**  
+
+    <!--     - **Sign-on URL**: this value isn't used by Configuration Manager, but required by Azure AD. Enter a unique and valid URL, for example: `https://configmgrapp`   -->
   
-   **만들기**를 선택합니다.  
+    선택 **등록**합니다.  
 
-3. 앱을 선택 하 고 확인 합니다 **응용 프로그램 ID**합니다. 이 값은 Configuration Manager 연결을 구성 하는 데 사용 되는 GUID입니다.  
+3. 앱을 선택 합니다 **(클라이언트) 응용 프로그램 ID** 하 고 **디렉터리 (테 넌 트) ID**합니다. 값은 Configuration Manager 연결을 구성 하는 데 사용 되는 Guid입니다.  
 
-4. 선택 **설정을** 에 앱을 선택한 후 **키**합니다. 에 **암호** 섹션에서 입력을 **키 설명**, 만료 날짜를 지정 **기간**를 선택한 후 **저장**. 복사 합니다 **값** Configuration Manager 연결을 구성 하는 데 사용 되는 키입니다.
+4. 에 **관리** 메뉴에서 **인증서 및 비밀**합니다. 선택 **새 클라이언트 암호**합니다. 입력 한 **설명을**, 만료 기간을 지정 하 고 선택한 **추가**합니다. 복사 합니다 **값** Configuration Manager 연결을 구성 하는 데 사용 되는 키입니다.
 
     > [!Important]  
     > 키 값을 복사만 기회입니다. 이제 복사 안 함, 하는 경우 다른 키를 만들 해야 합니다.  
     >
     > 키 값을 안전한 위치에 저장 합니다.  
 
-5. 앱에서 **설정을** 패널에서 **필요한 권한**합니다.  
+5. 에 **관리** 메뉴에서 **API 사용 권한**합니다.  
 
-    1. 에 **필요한 권한** 패널에서 **추가**합니다.  
+    1. 에 **API 사용 권한** 패널에서 **권한을 추가**합니다.  
 
-    2. 에 **API 액세스 추가** 패널 **API 선택**합니다.  
+    2. 에 **요청 API 사용 권한** 패널에서 전환할 **내 조직에서 사용 하는 Api**합니다.  
 
-    3. 검색 된 **Configuration Manager 마이크로 서비스** API. 선택 하 고 선택한 **선택**합니다.  
+    3. 검색 하 고 선택 합니다 **Configuration Manager 마이크로 서비스** API.  
 
-    4. 에 **액세스 사용** 패널에서 응용 프로그램 권한을 모두 선택 합니다. **CM 컬렉션 데이터를 쓸** 하 고 **CM 컬렉션 데이터를 읽을**합니다. 선택한 **선택**합니다.  
+    4. 선택 된 **응용 프로그램 사용 권한** 그룹입니다. 확장 **CmCollectionData**, 다음 사용 권한을 모두 선택 합니다. **CM 컬렉션 데이터를 쓸** 하 고 **CM 컬렉션 데이터를 읽을**합니다.  
 
-    5. 에 **API 액세스 추가** 패널에서 **수행**합니다.  
+    5. 선택 **권한 추가**합니다.  
 
-6. 에 **필요한 권한** 페이지에서 **권한을 부여**합니다. 선택 **예**합니다.  
+6. 에 **API 사용 권한** 패널에서 **관리자 동의 부여 하는 중...** . 선택 **예**합니다.  
 
-7. Azure AD 테 넌 트 ID를 복사 합니다. 이 값은 Configuration Manager 연결을 구성 하는 데 사용 되는 GUID입니다. 선택 **Azure Active Directory** 에서 주 메뉴를 선택 합니다 **속성**합니다. 복사 합니다 **디렉터리 ID** 값입니다.  
 
 #### <a name="import-app-in-configuration-manager"></a>Configuration Manager에서는 가져오기 앱
 
@@ -182,7 +183,7 @@ Azure ad에 응용 프로그램을 추가 하는 데스크톱 분석:
 
 3. 에 **권한 추가** 패널에서 다음 설정을 구성 합니다.  
 
-    - **역할**: **Log Analytics Reader**  
+    - **역할**: **판독기**  
 
     - **에 대 한 액세스 할당**: **Azure AD 사용자, 그룹 또는 응용 프로그램**  
 

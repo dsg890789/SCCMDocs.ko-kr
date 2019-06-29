@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7c899f56829d63cebc29518cbeb7497b6a203cd
-ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
+ms.openlocfilehash: 6658f0b7a65027715975e6075e5c18a430d38405
+ms.sourcegitcommit: d8cfd0edf2579e2b08a0ca8a0a7b8f53d1e4196f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67158907"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67463761"
 ---
 # <a name="how-to-set-up-desktop-analytics"></a>데스크톱 Analytics를 설정 하는 방법
 
@@ -40,24 +40,20 @@ ms.locfileid: "67158907"
 
 4. 에 **사용자가 액세스할** 페이지:
 
-    - **사용자에 대 한 디렉터리 역할을 관리 하려면 데스크톱 분석 하려는**: 데스크톱 Analytics 자동으로 할당 합니다 **작업 영역 소유자** 및 **작업 영역 참가자** 그룹을 **데스크톱 분석 관리자** 역할. 이러한 그룹은 이미 있는 경우는 **전역 관리자**, 변경 되지 않았습니다.  
+    - **사용 하면 사용자를 대신해 디렉터리 역할을 관리 하려면 데스크톱 분석**: 데스크톱 Analytics 자동으로 할당 합니다 **작업 영역 소유자** 는 **데스크톱 분석 관리자** 역할입니다. 이러한 그룹은 이미 있는 경우는 **전역 관리자**, 변경 되지 않았습니다.
 
-        이 옵션을 선택 하지 않으면, 데스크톱 Analytics는 여전히 사용자 두 보안 그룹의 구성원으로 추가 합니다. A **전역 관리자** 수동으로 할당 해야 합니다 **데스크톱 분석 관리자** 사용자 역할.  
+        이 옵션을 선택 하지 않으면, 데스크톱 Analytics는 여전히 사용자 보안 그룹의 구성원으로 추가 합니다. A **전역 관리자** 수동으로 할당 해야 합니다 **데스크톱 분석 관리자** 사용자 역할.   
 
         Azure Active Directory에서 관리자 역할 권한 및 할당 된 권한을 할당 하는 방법에 대 한 자세한 내용은 **데스크톱 Analytics Administrators**를 참조 하세요 [azure에서 관리자 역할 권한 Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)합니다.  
 
-    - 데스크톱 Analytics Azure Active Directory에서 두 개의 보안 그룹 같은 미리 구성합니다.:  
+    - 데스크톱 분석 미리 구성 된 **작업 영역 소유자** 배포 계획 및 작업 영역 만들기 및 관리 하도록 Azure Active Directory 보안 그룹입니다. 
 
-        - **작업 영역 소유자**: 보안 그룹을 만들고 작업 영역을 관리 합니다. 이러한 계정은 Azure 구독에 대 한 소유자 액세스를 해야합니다.  
-
-        - **작업 영역 참가자**: 보안 그룹을 만들고이 작업 영역에서 배포 계획을 관리 합니다. 모든 추가 Azure 액세스할이 필요는 없습니다.  
-
-        각 그룹에 사용자를 추가할에서 해당 이름 또는 전자 메일 주소를 입력 합니다 **이름 또는 전자 메일 주소 입력** 적절 한 그룹의 섹션입니다. 완료 되 면 선택 **다음**합니다.
+        사용자 그룹에 추가할에서 해당 이름 또는 전자 메일 주소를 입력 합니다 **이름이 나 전자 메일 주소 입력** 섹션입니다. 완료 되 면 선택 **다음**합니다.
 
 5. 페이지에서 **작업 영역 설정**:  
 
     > [!Note]  
-    > 이 단계를 완료 한 **작업 영역 소유자** 또는 **참가자**합니다. 자세한 내용은 [필수 구성 요소](/sccm/desktop-analytics/overview#prerequisites)합니다.  
+    > 이 단계에서는 사용자가 필요한 데 **작업 영역 소유자** 권한 및 Azure 구독 및 리소스 그룹에 대 한 추가 액세스 합니다. 자세한 내용은 [필수 구성 요소](/sccm/desktop-analytics/overview#prerequisites)합니다.  
 
     - 기존 작업 영역에 데스크톱 Analytics를 사용 하려면를 선택 하 고 단계를 진행 합니다.  
 

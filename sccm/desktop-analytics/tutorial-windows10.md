@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9f49955fed92061fb856a5ff49203f1fa6c9d186
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: 0700644f9548ea588821141a34abc6d249909cdf
+ms.sourcegitcommit: d8cfd0edf2579e2b08a0ca8a0a7b8f53d1e4196f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67285640"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67463757"
 ---
 # <a name="tutorial-deploy-windows-10-to-pilot"></a>자습서: 파일럿에 Windows 10 배포
 
@@ -101,24 +101,20 @@ Azure 구독이 없으면 만듭니다는 [무료 계정](https://azure.microsof
 
 4. 에 **사용자가 액세스할** 페이지:
 
-    - **사용자에 대 한 디렉터리 역할을 관리 하려면 데스크톱 분석 하려는**: 데스크톱 Analytics 자동으로 할당 합니다 **작업 영역 소유자** 및 **작업 영역 참가자** 그룹을 **데스크톱 분석 관리자** 역할. 이러한 그룹은 이미 있는 경우는 **전역 관리자**, 변경 되지 않았습니다.  
+    - **사용 하면 사용자를 대신해 디렉터리 역할을 관리 하려면 데스크톱 분석**: 데스크톱 Analytics 자동으로 할당 합니다 **작업 영역 소유자** 는 **데스크톱 분석 관리자** 역할입니다. 이러한 그룹은 이미 있는 경우는 **전역 관리자**, 변경 되지 않았습니다.  
 
-        이 옵션을 선택 하지 않으면, 데스크톱 Analytics는 여전히 사용자 두 보안 그룹의 구성원으로 추가 합니다. A **전역 관리자** 수동으로 할당 해야 합니다 **데스크톱 분석 관리자** 사용자 역할.  
+        이 옵션을 선택 하지 않으면, 데스크톱 Analytics는 여전히 사용자 보안 그룹의 구성원으로 추가 합니다. A **전역 관리자** 수동으로 할당 해야 합니다 **데스크톱 분석 관리자** 사용자 역할.  
 
         Azure Active Directory에서 관리자 역할 권한 및 할당 된 권한을 할당 하는 방법에 대 한 자세한 내용은 **데스크톱 Analytics Administrators**를 참조 하세요 [azure에서 관리자 역할 권한 Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)합니다.  
 
-    - 데스크톱 Analytics Azure Active Directory에서 두 개의 보안 그룹 같은 미리 구성합니다.:  
+    - 데스크톱 분석 미리 구성 된 **작업 영역 소유자** 배포 계획 및 작업 영역 만들기 및 관리 하도록 Azure Active Directory 보안 그룹입니다. 
 
-        - **작업 영역 소유자**: 보안 그룹을 만들고 작업 영역을 관리 합니다. 이러한 계정은 Azure 구독에 대 한 소유자 액세스를 해야합니다.  
-
-        - **작업 영역 참가자**: 보안 그룹을 만들고이 작업 영역에서 배포 계획을 관리 합니다. 모든 추가 Azure 액세스할이 필요는 없습니다.  
-
-        각 그룹에 사용자를 추가할에서 해당 이름 또는 전자 메일 주소를 입력 합니다 **이름 또는 전자 메일 주소 입력** 적절 한 그룹의 섹션입니다. 완료 되 면 선택 **다음**합니다.
+        사용자 그룹에 추가할에서 해당 이름 또는 전자 메일 주소를 입력 합니다 **이름이 나 전자 메일 주소 입력** 섹션입니다. 완료 되 면 선택 **다음**합니다.
 
 5. 페이지에서 **작업 영역 설정**:  
 
     > [!Note]  
-    > 이 단계를 완료 한 **작업 영역 소유자** 또는 **참가자**합니다. 자세한 내용은 [필수 구성 요소](/sccm/desktop-analytics/overview#prerequisites)합니다.  
+    > 이 단계에서는 사용자가 필요한 데 **작업 영역 소유자** 권한 및 Azure 구독 및 리소스 그룹에 대 한 추가 액세스 합니다. 자세한 내용은 [필수 구성 요소](/sccm/desktop-analytics/overview#prerequisites)합니다.  
 
     - Azure 구독을 선택 합니다.  
 
@@ -192,7 +188,7 @@ Configuration Manager 업데이트, 데스크톱 Analytics에 연결 및 장치 
     선택 **로그인**합니다. Azure에 성공적으로 인증되면 페이지에 **Azure AD 테넌트 이름**이 참조용으로 표시됩니다.
 
     > [!Note]  
-    > 이 단계를 완료 한 **회사 관리자**합니다. 이러한 자격 증명은 Configuration Manager에 저장되지 않습니다. 이 가상 사용자는 Configuration Manager에서 권한이 필요 없으며, Azure 서비스 마법사를 실행하는 계정과 동일한 계정이 아니어도 상관 없습니다.  
+    > 이 단계를 완료 한 **전역 관리자**합니다. 이러한 자격 증명은 Configuration Manager에 저장되지 않습니다. 이 가상 사용자는 Configuration Manager에서 권한이 필요 없으며, Azure 서비스 마법사를 실행하는 계정과 동일한 계정이 아니어도 상관 없습니다.  
 
     **확인**을 선택하여 Azure AD에서 웹앱을 만들고 서버 애플리케이션 만들기 대화 상자를 닫습니다. 서버 앱 대화 상자에서 선택 **확인**합니다. 선택한 **다음** Azure 서비스 마법사의 앱 페이지에 있습니다.  
 
