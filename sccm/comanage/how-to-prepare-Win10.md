@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 101de2ba-9b4d-4890-b087-5d518a4aa624
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5600743af8acc0da121454aef2d90167c3ded5fa
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: a4dd872e803e1d2925f011a60be5d1ee924ca555
+ms.sourcegitcommit: 8e9e7c42a5572797e05936fab0cf84fc27c40862
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67286619"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67398856"
 ---
 # <a name="how-to-prepare-internet-based-devices-for-co-management"></a>공동 관리를 위해 인터넷 기반 디바이스를 준비하는 방법
 
@@ -60,6 +60,9 @@ ms.locfileid: "67286619"
 ## <a name="install-the-configuration-manager-client"></a>Configuration Manager 클라이언트 설치
 
 두 번째 경로의 인터넷 기반 디바이스의 경우 Intune에서 앱을 만들어야 합니다. 아직 Configuration Manager 클라이언트가 아닌 Windows 10 디바이스에 이 앱을 배포합니다. 
+
+> [!Note]  
+> 이 앱을 디바이스에 배포하기 전에 디바이스는 CMG 서버 인증 인증서를 신뢰해야 합니다. 자세한 내용은 [클라이언트에서 신뢰할 수 있는 CMG 루트 인증서](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#bkmk_cmgroot)를 참조하세요. 디바이스가 CMG 서버 인증 인증서를 신뢰하지 않는 경우, 클라이언트이 ccmsetup.log에 WINHTTP_CALLBACK_STATUS_FLAG_INVALID_CA 오류가 표시됩니다.
 
 ### <a name="get-the-command-line-from-configuration-manager"></a>Configuration Manager에서 명령줄 가져오기
 

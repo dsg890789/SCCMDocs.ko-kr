@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c118c50eccf7fdb443a54f630d2d5698836d44f2
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 36304b836dbedcb411310d5f0dd8d0f0a8fd91f1
+ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56135503"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67194462"
 ---
 # <a name="upgrade-windows-to-the-latest-version-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows를 최신 버전으로 업그레이드
 
@@ -37,7 +37,7 @@ ms.locfileid: "56135503"
 
 
 > [!Note]  
-> 버전 1802부터 Windows 10 현재 위치 업그레이드 작업 순서는 [클라우드 관리 게이트웨이](/sccm/core/clients/manage/plan-cloud-management-gateway)를 통해 관리되는 인터넷 기반 클라이언트에 대한 배포를 지원합니다. 이 기능을 사용하면 원격 사용자가 인트라넷에 연결할 필요 없이 Windows 10으로 쉽게 업그레이드할 수 있습니다. 자세한 내용은 [CMG를 통한 Windows 10 현재 위치 업그레이드 배포](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#deploy-windows-10-in-place-upgrade-via-cmg)를 참조하세요. <!-- 1357149 -->
+> 버전 1802부터 Windows 10 현재 위치 업그레이드 작업 순서는 [클라우드 관리 게이트웨이](/sccm/core/clients/manage/plan-cloud-management-gateway)를 통해 관리되는 인터넷 기반 클라이언트에 대한 배포를 지원합니다. 이 기능을 사용하면 원격 사용자가 인트라넷에 연결할 필요 없이 Windows 10으로 쉽게 업그레이드할 수 있습니다. 자세한 내용은 [CMG를 통한 Windows 10 현재 위치 업그레이드 배포](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#deploy)를 참조하세요. <!-- 1357149 -->
 
 
 

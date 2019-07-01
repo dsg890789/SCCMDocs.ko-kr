@@ -5,18 +5,18 @@ description: Configuration Manager 프로덕션 환경에서 소프트웨어 업
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.date: 03/21/2019
+ms.date: 06/19/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: d071b0ec-e070-40a9-b7d4-564b92a5465f
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4100bca2f1cd1f770c2e739ec229dc020d5d8d8
-ms.sourcegitcommit: 5f17355f954b9d9e10325c0e9854a9d582dec777
-ms.translationtype: HT
+ms.openlocfilehash: 7404e97cd1ef9c68f80904b5ba26373605c7c751
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58329586"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67285459"
 ---
 # <a name="plan-for-software-updates-in-configuration-manager"></a>Configuration Manager에서 소프트웨어 업데이트 계획
 
@@ -52,7 +52,7 @@ Configuration Manager 프로덕션 환경에서 소프트웨어 업데이트를 
     - WsusPool 큐 길이를 2000으로 증가
     - WsusPool 프라이빗 메모리 제한을 4배로 늘리거나 0(무제한)으로 설정합니다. 예를 들어, 기본 제한이 1,843,200KB이면 7,372,800으로 증가합니다. 자세한 내용은 이 [Configuration Manager 지원 팀 블로그 게시물](https://blogs.technet.microsoft.com/configurationmgr/2015/03/23/configmgr-2012-support-tip-wsus-sync-fails-with-http-503-errors/)을 참조하세요.  
 
-    소프트웨어 업데이트 지점의 하드웨어 요구 사항에 대한 자세한 내용은 [사이트 시스템용 권장 하드웨어](/sccm/core/plan-design/configs/recommended-hardware#a-namebkmkscalesiesystemsa-site-systems)를 참조하세요.  
+    소프트웨어 업데이트 지점의 하드웨어 요구 사항에 대한 자세한 내용은 [사이트 시스템용 권장 하드웨어](/sccm/core/plan-design/configs/recommended-hardware#bkmk_ScaleSieSystems)를 참조하세요.  
 
 
 ### <a name="bkmk_sum-capacity-obj"></a> 소프트웨어 업데이트 개체를 위한 용량 계획  
@@ -151,7 +151,9 @@ Configuration Manager에 다음 Windows 업데이트 에이전트 오류 코드�
 활성 소프트웨어 업데이트 지점에 문제가 있는 경우 Configuration Manager 클라이언트를 새 소프트웨어 업데이트 지점으로 전환합니다. 이 변경은 클라이언트가 관리 지점에서 여러 소프트웨어 업데이트 지점을 받는 경우에만 발생합니다.
 
 > [!IMPORTANT]    
-> 디바이스를 새 서버를 사용하도록 전환하면 디바이스는 대체(fallback)를 사용하여 해당 새 서버에 찾습니다. 이 변경을 시작하기 전에 경계 그룹 구성을 검토하여 소프트웨어 업데이트 지점이 올바른 경계 그룹에 있는지 확인하세요. 자세한 내용은 [소프트웨어 업데이트 지점](/sccm/core/servers/deploy/configure/boundary-groups#software-update-points)을 참조하세요.  
+> 디바이스를 새 서버를 사용하도록 전환하면 디바이스는 대체(fallback)를 사용하여 해당 새 서버에 찾습니다. 클라이언트는 다음 소프트웨어 업데이트 검사 주기 동안 새 소프트웨어 업데이트 지점으로 전환합니다.<!-- SCCMDocs#1537 -->
+>
+> 이 변경을 시작하기 전에 경계 그룹 구성을 검토하여 소프트웨어 업데이트 지점이 올바른 경계 그룹에 있는지 확인하세요. 자세한 내용은 [소프트웨어 업데이트 지점](/sccm/core/servers/deploy/configure/boundary-groups#software-update-points)을 참조하세요.  
 >
 > 새 소프트웨어 업데이트 지점으로 전환하면 네트워크 트래픽이 추가로 생성됩니다. 트래픽 양은 WSUS 구성 설정(예: 동기화된 분류 및 제품 또는 공유 WSUS 데이터베이스 사용)에 따라 달라집니다. 여러 디바이스를 전환하려는 경우 유지 관리 기간 동안 이 작업을 수행하는 것이 좋습니다. 이 기간에 작업을 수행하면 클라이언트가 새 소프트웨어 업데이트 지점을 사용하여 검색할 때 네트워크에 미치는 영향이 줄어듭니다.  
 
@@ -240,7 +242,7 @@ Configuration Manager의 애플리케이션 관리 기능과 교체 관계를 �
 자세한 내용은 [타사 소프트웨어 업데이트](/sccm/sum/deploy-use/third-party-software-updates)를 참조하세요.
 
 #### <a name="system-center-updates-publisher"></a>System Center Updates Publisher
-SCUP(System Center Updates Publisher)는 독립 소프트웨어 공급업체 또는 LOB(기간 업무) 애플리케이션 개발자가 사용자 지정 업데이트를 관리할 수 있도록 하는 독립 실행형 도구입니다. 이러한 업데이트에는 드라이버 및 업데이트 번들과 같은 종속성이 있는 업데이트가 포함됩니다.
+SCUP(System Center Updates Publisher)는 독립 소프트웨어 공급업체 또는 LOB(기간 업무) 응용 프로그램 개발자가 사용자 지정 업데이트를 관리할 수 있도록 하는 독립 실행형 도구입니다. 이러한 업데이트에는 드라이버 및 업데이트 번들과 같은 종속성이 있는 업데이트가 포함됩니다.
 
 자세한 내용은 [System Center Updates Publisher](/sccm/sum/tools/updates-publisher)를 참조하세요.
 
@@ -260,7 +262,7 @@ SCUP(System Center Updates Publisher)는 독립 소프트웨어 공급업체 또
 
 WSUS의 최소 요구 사항과 Configuration Manager 사이트 시스템의 지원되는 구성을 충족하는 사이트 시스템에 소프트웨어 업데이트 지점 역할을 설치합니다.  
 
--   Windows Server에서 WSUS 서버 역할의 최소 요구 사항에 대한 자세한 내용은 [고려 사항 및 시스템 요구 사항 검토](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/plan/plan-your-wsus-deployment#BKMK_1.1)를 참조하세요.  
+-   Windows Server에서 WSUS 서버 역할의 최소 요구 사항에 대한 자세한 내용은 [고려 사항 및 시스템 요구 사항 검토](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/plan/plan-your-wsus-deployment#11-review-considerations-and-system-requirements)를 참조하세요.  
 
 -   Configuration Manager 사이트 시스템에 지원되는 구성에 대한 자세한 내용은 [사이트 및 사이트 시스템 필수 조건](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)을 참조하세요.  
 
@@ -315,44 +317,10 @@ Microsoft Update 연결은 항상 HTTP용으로 포트 80, HTTPS용으로 포트
 
 
 #### <a name="restrict-access-to-specific-domains"></a>특정 도메인에 대한 액세스 제한  
-조직에서 활성 소프트웨어 업데이트 지점 및 인터넷 간 방화벽의 모든 주소에 대해 포트 및 프로토콜을 여는 것을 허용하지 않은 경우, WSUS 및 자동 업데이트가 Microsoft Update와 통신할 수 있도록 다음 도메인에 대한 액세스를 제한합니다.  
 
--   `http://windowsupdate.microsoft.com`  
+방화벽 또는 프록시 장치를 사용 하 여 인터넷을 사용 하 여 네트워크 통신을 제한 하는 조직에 활성 소프트웨어 업데이트 지점이 인터넷 끝점에 액세스할 수 있도록 해야 합니다. 그런 다음 WSUS 및 자동 업데이트는 Microsoft Update 클라우드 서비스와 통신할 수 있습니다.
 
--   `http://*.windowsupdate.microsoft.com`  
-
--   `https://*.windowsupdate.microsoft.com`  
-
--   `http://*.update.microsoft.com`  
-
--   `https://*.update.microsoft.com`  
-
--   `http://*.windowsupdate.com`  
-
--   `http://download.windowsupdate.com`  
-
--   `http://download.microsoft.com`  
-
--   `http://*.download.windowsupdate.com`  
-
--   `http://test.stats.update.microsoft.com`  
-
--   `http://ntservicepack.microsoft.com`  
-
-다음과 같은 경우 두 사이트 시스템 사이에 있는 방화벽에 아래 주소를 추가해야 할 수 있습니다. 
-- 자식 사이트에 소프트웨어 업데이트 지점이 있는 경우 
-- 사이트에 원격 활성 인터넷 기반 소프트웨어 업데이트 지점이 있는 경우
-
-  **자식 사이트의 소프트웨어 업데이트 지점**  
-
-- `http://<FQDN for software update point on child site>`  
-
-- `https://<FQDN for software update point on child site>`  
-
-- `http://<FQDN for software update point on parent site>`  
-
-- `https://<FQDN for software update point on parent site>`  
-
+자세한 내용은 [인터넷 액세스 요구 사항](/sccm/core/plan-design/network/internet-endpoints#bkmk_sum)합니다.
 
 
 ##  <a name="BKMK_SyncSettings"></a> 동기화 설정에 대한 계획  
@@ -475,7 +443,7 @@ Configuration Manager는 다음과 같은 업데이트 분류의 동기화를 �
 - 설명
 - 업데이트가 지원하는 제품
 - 업데이트 분류
-- 항목 ID
+- 문서 ID
 - 다운로드 URL
 - 적용 가능성 규칙
 
