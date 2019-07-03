@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebc2b995c763aa54e1d47ee38ab2d250554f5a29
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: 0a50dd4df66292837cd7a3667a0790c04ebddb9a
+ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62185549"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67516012"
 ---
 # <a name="protect-data-with-remote-wipe-lock-or-passcode-reset-by-using-configuration-manager"></a>Configuration Manager를 사용하여 원격 초기화, 잠금 또는 암호 재설정으로 데이터 보호
 
@@ -152,7 +152,7 @@ Windows 10 Mobile 및 Windows Phone 8.1 디바이스에서는 다음 설정도 �
 
 Windows 8.1 및 Windows RT 8.1에서 파일 시스템 암호화(EFS)-암호화된 콘텐츠의 선택적 초기화를 지원합니다. 다음은 EFS 지원 콘텐츠의 선택 초기화에 적용됩니다.  
 
-- Intune 계정과 동일한 인터넷 도메인을 사용하는 EFS로 보호되는 앱 및 데이터만 선택적으로 초기화됩니다. 자세한 내용은 [디바이스 데이터 관리를 위한 Windows 선택적 초기화](http://technet.microsoft.com/library/dn486874.aspx)를 참조하세요.  
+- Intune 계정과 동일한 인터넷 도메인을 사용하는 EFS로 보호되는 앱 및 데이터만 선택적으로 초기화됩니다. 자세한 내용은 [디바이스 데이터 관리를 위한 Windows 선택적 초기화](https://technet.microsoft.com/library/dn486874.aspx)를 참조하세요.  
 
 - EFS와 연결된 도메인에 대한 변경 사항이 있는 경우 새 도메인을 사용하는 앱 및 데이터를 선택적으로 초기화하기 전에 변경 사항을 적용하는 데 최대 48시간이 걸릴 수 있습니다.  
 
@@ -252,4 +252,4 @@ Windows 8.1 및 Windows RT 8.1에서 파일 시스템 암호화(EFS)-암호화�
 
 ## <a name="see-also"></a>참고 항목  
 
-[디바이스 데이터 관리를 위한 Windows 선택적 초기화](http://technet.microsoft.com/library/dn486874.aspx)   
+[디바이스 데이터 관리를 위한 Windows 선택적 초기화](https://technet.microsoft.com/library/dn486874.aspx)   

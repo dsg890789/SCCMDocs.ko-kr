@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6055efad94952a7dcd7714cdfb5730289d8dafc
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: b9d5ef21702421a776c7fbe692f6aa99672efcce
+ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56136146"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67516079"
 ---
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Intune과 Lookout 통합 문제 해결
 
@@ -32,14 +32,14 @@ Lookout MTP는 구성된 Azure AD 그룹의 사용자만 액세스할 수 있도
 
 * 메일: enterprisesupport@lookout.com
 * [MTP 콘솔](http://aad.lookout.com)에 로그인한 다음 **지원** 모듈로 이동합니다.
-* [https://enterprise.support.lookout.com/hc/requests](https://enterprise.support.lookout.com/hc/requests)로 이동하여 지원 요청을 합니다.
+* [https://enterprise.support.lookout.com/hc/requests](https://enterprise.support.lookout.com/hc/requests )로 이동하여 지원 요청을 합니다.
 
 ### <a name="unable-to-sign-in"></a>로그인할 수 없음
 Azure AD 전역 관리자가 초기 Lookout 설치에 동의하지 않은 경우 다음 오류가 나타날 수 있습니다.
 
 ![로그인 오류를 보여 주는 Lookout 로그인 화면 스크린샷](media/lookout-consent-not-accepted-error.png)
 
-이 문제를 해결하려면 전역 관리자가 https://aad.lookout.com/les?action=consent에 로그인한 다음, 메시지에 동의하여 설치를 시작해야 합니다. 자세한 정보는 [Lookout MTP를 사용하여 구독 설정](set-up-your-subscription-with-lookout.md) 항목에서 확인할 수 있습니다.
+이 문제를 해결하려면 전역 관리자가 https://aad.lookout.com/les?action=consent 에 로그인한 다음, 메시지에 동의하여 설치를 시작해야 합니다. 자세한 정보는 [Lookout MTP를 사용하여 구독 설정](set-up-your-subscription-with-lookout.md) 항목에서 확인할 수 있습니다.
 
 ## <a name="troubleshoot-device-status-issues"></a>디바이스 상태 문제 해결
 
@@ -54,7 +54,7 @@ Azure AD 전역 관리자가 초기 Lookout 설치에 동의하지 않은 경우
 
 디바이스가 **보류 중**으로 나타나는 것은 최종 사용자가 아직 Lookout for work 앱을 열어 **활성화** 단추를 탭하지 않았기 때문입니다. Lookout for Work 앱에서 디바이스를 활성화하는 방법에 대한 자세한 내용은 다음 항목을 참조하세요.
 
-[Android 디바이스에 Lookout for Work를 설치하라는 메시지가 표시됨](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
+[Android 디바이스에 Lookout for Work를 설치하라는 메시지가 표시됨](https://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 
 ### <a name="in-the-lookout-mtp-console-a-device-is-showing-as-active-but-does-not-have-a-device-id"></a>Lookout MTP 콘솔에서 디바이스가 활성 상태로 표시되지만 디바이스 ID가 없습니다.
 이 디바이스를 소유하는 사용자가 Lookout MTP 콘솔에 지정된 등록 그룹에 없기 때문입니다.   디바이스를 소유하는 사용자가 등록 그룹에서 제거되었거나 그 사용자가 속한 등록 그룹이 제거되었을 때도 디바이스는 이 상태가 될 수 있습니다.
@@ -79,6 +79,6 @@ Lookout MTP 콘솔의 **디바이스** 모듈에서 **삭제**를 선택할 수�
 새 사용자가 Lookout MTP 콘솔에 지정된 등록 그룹에 속해 있는 동안에는 Azure AD가 디바이스를 새 사용자에 연결하면 디바이스가 나타납니다.
 
 ## <a name="compliance-remediation-workflows"></a>준수 수정 워크플로
-[Android 디바이스에 Lookout for Work를 설치하라는 메시지가 표시됨]( http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
+[Android 디바이스에 Lookout for Work를 설치하라는 메시지가 표시됨]( https://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 
-[Android 디바이스에서 Lookout for Work가 발견한 위협을 해결해야 함](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+[Android 디바이스에서 Lookout for Work가 발견한 위협을 해결해야 함](https://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)

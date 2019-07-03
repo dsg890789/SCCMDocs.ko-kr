@@ -2,7 +2,7 @@
 title: 하이브리드 MDM의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager를 포함하는 하이브리드 배포에 사용할 수 있는 새 모바일 디바이스 관리 기능에 대해 알아봅니다.
-ms.date: 06/24/2019
+ms.date: 07/01/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c269e5f90588634e51f1d3f1e31767b11a038503
-ms.sourcegitcommit: d8cfd0edf2579e2b08a0ca8a0a7b8f53d1e4196f
+ms.openlocfilehash: 2dd14e7beaef6fe636ea220de557a866e547a602
+ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67463771"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67516219"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 디바이스 관리의 새로운 기능
 
@@ -50,9 +50,23 @@ ms.locfileid: "67463771"
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능
 
-### <a name="view-all-installed-apps-from-new-company-portal-web-page"></a>새 회사 포털 웹 페이지에서 설치 된 모든 앱 보기 
+#### <a name="new-view-lets-users-see-all-managed-apps-installed-on-device"></a>새 보기에서는 장치에 설치 된 모든 관리 되는 앱을 확인할 수가 있습니다.
+
+<!-- 2352913 -->
+이제 회사 포털에 대 한 Windows 사용자의 장치에 설치 된 모든 관리 되는 앱 (필수 및 사용 가능)를 나열 합니다. 사용자는 시도 및 보류 중인 앱 설치 및 해당 현재 상태에도 볼 수 있습니다. 사용자에 게 필수 또는 사용 가능 앱을 수행 하지 않은, 경우 없는 회사 앱 설치를 설명 하는 메시지를 볼 수 있습니다.
+
+새 보기를 확인 하려면 회사 포털 탐색 창으로 이동 및 선택 **앱** > **설치 된 앱**합니다. 그런 다음 정렬 또는 목록을 필터링 하는 다음 특성 중 하나:
+
+- Name
+- 유형
+- 게시자
+- 마지막으로 업데이트
+- 설치 상태
+
+#### <a name="view-all-installed-apps-from-new-company-portal-web-page"></a>새 회사 포털 웹 페이지에서 설치 된 모든 앱 보기
+
 <!-- 4224326-->
-회사 포털 웹 사이트의 새 **설치 된 앱** 페이지는 사용자의 장치에 설치 된 모든 관리 되는 앱 (필수 및 사용 가능)를 나열 합니다. 할당 유형 외에도 사용자는 앱의 게시자, 게시 된 날짜 및 현재 설치 상태를 볼 수 있습니다. 사용자에 게 필수 또는 사용 가능 앱을 수행 하지 않은, 경우 없는 회사 앱 설치를 설명 하는 메시지를 볼 수 있습니다. 새 보기를 확인 하려면로 이동 합니다 [회사 포털 웹 사이트](https://portal.manage.microsoft.com) 클릭 **설치 된 앱**합니다.  
+회사 포털 웹 사이트의 새 **설치 된 앱** 페이지는 사용자의 장치에 설치 된 모든 관리 되는 앱 (필수 및 사용 가능)를 나열 합니다. 할당 유형 외에도 사용자는 앱의 게시자, 게시 된 날짜 및 현재 설치 상태를 볼 수 있습니다. 사용자에 게 필수 또는 사용 가능 앱을 수행 하지 않은, 경우 없는 회사 앱 설치를 설명 하는 메시지를 볼 수 있습니다. 새 보기를 확인 하려면로 이동 합니다 [회사 포털 웹 사이트](https://portal.manage.microsoft.com) 선택한 **설치 된 앱**합니다.  
 
 
 ## <a name="may-2019"></a>2019 년 5 월
@@ -119,9 +133,6 @@ IOS 장치용 회사 포털 앱의 홈 페이지 디자인이 새로워졌습니
 
 <!-- 2751523 -->
 사용 하 여 Intune에 등록 된 Windows 장치의 [Windows 대량 등록](https://docs.microsoft.com/intune/windows-bulk-enroll) (패키지를 프로 비전 중) 회사 포털 앱을 사용 하 여 사용 가능한 앱 설치 수 있게 됩니다. 회사 포털 앱에 대 한 자세한 내용은 참조 하세요. [Windows 10 회사 포털에 수동으로 추가](https://docs.microsoft.com/intune/store-apps-company-portal-app) 하 고 [Microsoft Intune 회사 포털 앱을 구성 하는 방법](https://docs.microsoft.com/intune/company-portal-app)합니다.
-
-> [!Note]  
-> 아직이 기능은 모든 고객에 게 완전히 배포 되지 않습니다. 대량 등록 된 장치에서 회사 포털을 사용할 수 없으면, 계정에 유지 하면서이 변경 될 때까지 대기 해야 합니다.
 
 #### <a name="app-icons-are-displayed-with-an-automatically-generated-background"></a>앱 아이콘은 자동으로 생성 된 배경과 함께 표시 됩니다.
 
