@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5994eb6ab241e35bd0b4c4ecceb9fe6c4ef35a00
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.openlocfilehash: fc52acadacf8ea8e97d23820d521b831bcc31892
+ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66176043"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67158797"
 ---
 # <a name="log-files-in-configuration-manager"></a>Configuration Manager의 로그 파일
 
@@ -178,6 +178,7 @@ Configuration Manager는 다양한 위치에 로그 파일을 저장합니다. �
 |InventoryAgent.log|클라이언트의 하드웨어 인벤토리, 소프트웨어 인벤토리 및 하트비트 검색 작업에 대한 활동을 기록합니다.|  
 |LocationCache.log|클라이언트의 위치 캐시 사용 및 유지 관리에 대한 활동을 기록합니다.|  
 |LocationServices.log|관리 지점, 소프트웨어 업데이트 지점 및 배포 지점을 찾는 클라이언트 활동을 기록합니다.|  
+|M365AHandler.log|Desktop Analytics 설정 정책에 대한 정보|
 |MaintenanceCoordinator.log|클라이언트의 일반 유지 관리 작업에 대한 활동을 기록합니다.|  
 |Mifprovider.log|MIF(관리 정보 형식) 파일에 대한 WMI 공급자의 활동을 기록합니다.|  
 |mtrmgr.log|모든 소프트웨어 계량 프로세스를 모니터링합니다.|  
@@ -580,6 +581,23 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |SMSdpmon.log|배포 지점에 구성된 배포 지점 상태 모니터링 예약 작업에 대한 세부 정보를 기록합니다.|사이트 시스템 역할|  
 |smsdpprov.log|기본 사이트에서 받은 압축 파일의 압축 풀기에 대한 세부 정보를 기록합니다. 이 로그는 원격 배포 지점의 WMI 공급자가 생성합니다.|사이트 서버와 함께 있지 않은 배포 지점 컴퓨터|  
 |smsdpusage.log|배포 지점 사용량 요약 보고서에 대한 데이터를 실행하고 수집하는 smsdpusage.exe에 대한 세부 정보를 기록합니다.|사이트 시스템 역할|  
+
+
+### <a name="desktop-analytics"></a>Desktop Analytics
+
+다음 로그를 사용하여 Configuration Manager와 통합된 Desktop Analytics의 문제를 해결할 수 있습니다.
+
+서비스 연결 지점의 로그 파일은 `%ProgramFiles%\Configuration Manager\Logs\M365A` 디렉터리에 있습니다.
+구성 관리자 클라이언트의 로그 파일은 `%WinDir%\CCM\logs` 디렉터리에 있습니다.
+
+| 로그 | 설명 |로그 파일이 있는 컴퓨터|
+|---------|---------|---------|
+| M365ADeploymentPlanWorker.log | Desktop Analytics 클라우드 서비스와 온-프레미스 Configuration Manager 간 배포 계획 동기화에 대한 정보 |서비스 연결 지점|
+| M365ADeviceHealthWorker.log | Configuration Manager에서 Microsoft 클라우드로 디바이스 상태 업로드에 대한 정보 |서비스 연결 지점|
+| M365AHandler.log | Desktop Analytics 설정 정책에 대한 정보 |클라이언트|
+| M365AUploadWorker.log | Configuration Manager에서 Microsoft 클라우드로 컬렉션 및 디바이스 업로드에 대한 정보 |서비스 연결 지점|
+| SmsAdminUI.log | Azure 클라우드 서비스 구성과 같은 Configuration Manager 콘솔 작업에 대한 정보  |서비스 연결 지점|
+
 
 ###  <a name="BKMK_DiscoveryLog"></a> 검색  
 다음 표에는 검색과 관련된 정보가 포함된 로그 파일이 나열되어 있습니다.  

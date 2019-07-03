@@ -11,18 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9f43311ea3d36132d8cf77c0c576ad3f0e2cd93
-ms.sourcegitcommit: f3dd8405018fe1043434386be15c16752c1a4a3c
+ms.openlocfilehash: 01fa13c907b451a3539ca8169c3a04ebbaa1b92c
+ms.sourcegitcommit: d47d2f03482e48d343e2139a341e61022331e6c2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57558102"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67145767"
 ---
 # <a name="frequently-asked-questions-for-configuration-manager-branches-and-licensing"></a>Configuration Manager 분기 및 라이선스에 대한 질문과 대답
 
 *적용 대상: System Center Configuration Manager(Current Branch), System Center Configuration Manager(장기 서비스 분기)*
 
-이 FAQ에서는 Microsoft 볼륨 라이선스 프로그램을 통해 사용할 수 있는 Configuration Manager 현재 분기 및 LTSB(장기 서비스 분기) 버전에 대한 일반적인 라이선스 관련 질문을 다룹니다. 이 문서는 정보 제공용입니다. System Center Configuration Manager 라이선스를 다루는 어떤 문서보다 우선하거나 이 문서를 대체하지 않습니다. 자세한 내용은 [System Center 2016](https://www.microsoft.com/en-us/licensing/product-licensing/system-center-2016.aspx)<!-- this link doesn't work without some language code -->에 대한 제품 라이선스 및 [Product Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=53)(제품 사용 약관)를 참조하세요. 제품 용어에서는 볼륨 라이선스의 모든 Microsoft 제품에 대한 사용 조건을 설명합니다.
+이 FAQ에서는 Microsoft 볼륨 라이선스 프로그램을 통해 사용할 수 있는 Configuration Manager 현재 분기 및 LTSB(장기 서비스 분기) 버전에 대한 일반적인 라이선스 관련 질문을 다룹니다. 이 문서는 정보 제공용입니다. System Center Configuration Manager 라이선스를 다루는 어떤 문서보다 우선하거나 이 문서를 대체하지 않습니다. 자세한 내용은 [System Center 2016](https://www.microsoft.com/en-us/licensing/product-licensing/system-center-2016.aspx)의 제품 라이선스 및<!-- this link doesn't work without some language code --> [Product Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=53)(제품 사용 약관)를 참조하세요. 제품 용어에서는 볼륨 라이선스의 모든 Microsoft 제품에 대한 사용 조건을 설명합니다.
 
 Configuration Manager 기능에 대한 자세한 내용은 [제품 페이지](https://www.microsoft.com/cloud-platform/system-center-configuration-manager)를 참조하세요.
 
@@ -42,17 +42,17 @@ LTSB는 Configuration Manager의 프로덕션 준비 빌드입니다. Software A
 
 SA(**Software Assurance**) 및 L&SA(**라이선스 및 Software Assurance**)는 Configuration Manager를 사용하는 권한을 부여하는 라이선스 옵션입니다. SA는 이전 계약을 통해 SA 계약 범위를 갱신하는 고객을 위한 옵션입니다. L&SA는 신규 라이선스 및 SA 계약 범위를 구매하는 고객을 위한 옵션입니다.
 
-- **SA(Software Assurance)**: Configuration Manager의 현재 분기 옵션을 설치하고 사용하려면 고객에게 Configuration Manager 라이선스에 활성 SA가 있거나 이와 동등한 구독 권한이 있어야 합니다.    
+- **SA(Software Assurance)** : Configuration Manager의 현재 분기 옵션을 설치하고 사용하려면 고객에게 Configuration Manager 라이선스에 활성 SA가 있거나 이와 동등한 구독 권한이 있어야 합니다.    
 
-    - SA가 일부 Microsoft 제품에 대한 선택 사항이지만, Configuration Manager 현재 분기를 사용하는 권한을 얻을 수 있는 유일한 방법은 SA(또는 동등한 구독 권한)를 사용하는 것입니다. 자세한 내용은 [Software Assurance FAQ](https://www.microsoft.com/en-us/licensing/licensing-programs/FAQ-Software-Assurance.aspx)를 참조합니다.<!--this link doesn't work without some language code-->
+    - SA가 일부 Microsoft 제품에 대한 선택 사항이지만, Configuration Manager 현재 분기를 사용하는 권한을 얻을 수 있는 유일한 방법은 SA(또는 동등한 구독 권한)를 사용하는 것입니다.  자세한 내용은 [Software Assurance FAQ](https://www.microsoft.com/en-us/licensing/licensing-programs/FAQ-Software-Assurance.aspx)를 참조하세요.<!--this link doesn't work without some language code-->
 
-- **Microsoft L&SA(라이선스 및 Software Assurance)**: Configuration Manager에 대한 새 라이선스를 구매하는 고객은 L&SA(라이선스 및 Software Assurance)를 획득해야 합니다.   
+- **Microsoft L&SA(라이선스 및 Software Assurance)** : Configuration Manager에 대한 새 라이선스를 구매하는 고객은 L&SA(라이선스 및 Software Assurance)를 획득해야 합니다.   
 
     - SA는 현재 분기를 사용할 수 있는 권한을 부여합니다.
 
     - 프로그램 SA가 만료되고 Configuration Manager에 대한 라이선스가 여전히 있는 경우 더 이상 현재 분기를 사용할 수 없습니다. 자세한 내용은 FAQ의 [내 SA가 만료되었지만 L&SA가 있으면 어떻게 되나요?](#bkmk_sa-expires)를 참조하세요.
 
-라이선스 제공에 대한 자세한 내용은 [구입 방법](https://www.microsoft.com/en-us/licensing/licensing-programs)<!--this link doesn't work without some language code--> 및 [제품 라이선스 약관](http://www.microsoftvolumelicensing.com/ProductResults.aspx?doc=Product%20Terms,OST&fid=64)을 참조합니다.  
+라이선스 제공에 대한 자세한 내용은 [구입 방법](https://www.microsoft.com/Licensing/licensing-programs/licensing-programs)<!--this link doesn't work without some language code--> 및 [Licensing Product Terms](http://www.microsoftvolumelicensing.com/ProductResults.aspx?doc=Product%20Terms,OST&fid=64)(라이선스 제품 사용 약관)를 참조하세요.  
 
 
 ### <a name="bkmk_equiv-sub"></a>“동등한 구독”이라는 용어를 봤는데 어떤 프로그램을 의미하는 건가요?   
@@ -71,12 +71,12 @@ EMS는 Configuration Manager(현재 분기 및 장기 서비스 분기)를 사�
 
 2016년 10월 1일 이후에 SA가 만료되었으며 Configuration Manager에 대한 영구 라이선스를 보유하는 경우 지속해서 사용하기 위한 유일한 방법은 System Center 2012 R2 Configuration Manager 및 사용 가능한 서비스 팩을 설치하고 사용하는 것입니다. SA가 만료되었을 때 현재 분기를 제거해야 하며 이전 버전의 제품을 다시 설치해야 했습니다. Configuration Manager 현재 분기에서 이전 버전의 Configuration Manager로 마이그레이션하거나 다운그레이드할 수는 없습니다.   
 
-System Center Endpoint Protection을 사용하는 경우 SA가 만료되면 제거해야 합니다. System Center Endpoint Protection은 *L(라이선스)* 권한 및 영구적인 권한을 제공하지 않습니다.<!--506238--> 
+System Center Endpoint Protection을 사용하는 경우 SA가 만료되면 제거해야 합니다. System Center Endpoint Protection은 ‘L(라이선스)’ 권한 및 영구적인 권한을 제공하지 않습니다. <!--506238--> 
 
 
 ### <a name="bkmk_owncb"></a> 내가 현재 분기를 “소유”하나요?   
 
-아니요. 활성 SA를 보유하는 동안 현재 분기를 사용하도록 허가됩니다. 예를 들어 *L&SA* 를 통해 *SA*가 만료되면 현재 분기를 사용하는 권한이 포함되지 않은 ‘L(라이선스)’ 권한만 보유하게 됩니다. L이 영구적인 권한을 제공하는 경우 현재 분기 대신 Configuration Manager LTSB를 사용할 수 있습니다. SA가 2016년 10월 1일 이전에 만료된 경우에는 System Center 2012 R2 Configuration Manager를 사용할 수도 있습니다.
+아니요. 활성 SA를 보유하는 동안 현재 분기를 사용하도록 허가됩니다. 예를 들어 *L&SA* 를 통해 *SA*가 만료되면 현재 분기를 사용하는 권한이 포함되지 않은 ‘L(라이선스)’ 권한만 보유하게 됩니다.  L이 영구적인 권한을 제공하는 경우 현재 분기 대신 Configuration Manager LTSB를 사용할 수 있습니다. SA가 2016년 10월 1일 이전에 만료된 경우에는 System Center 2012 R2 Configuration Manager를 사용할 수도 있습니다.
 
 
 ### <a name="bkmk_standalone"></a> SA 없이 Configuration Manager 독립 실행형을 구매할 수 있나요?      
@@ -91,7 +91,7 @@ System Center Endpoint Protection을 사용하는 경우 SA가 만료되면 제�
 
 ### <a name="bkmk_csp"></a> CSP(클라우드 솔루션 공급자)를 통해 EMS 또는 Microsoft 365를 구매했는데, Configuration Manager를 사용할 권한이 있나요? 
 
-예. EMS 라이선스에서 보장하는 클라이언트를 관리하기 위한 Configuration Manager를 사용할 권한이 있습니다. 먼저 [평가용 소프트웨어](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection)를 다운로드하고 설치합니다. 그런 다음, 라이선스 키를 받으려면 Microsoft 지원에 문의하십시오.<!--issue472--> Microsoft 지원에 문의하는 경우 내부 문서 ID 4033838을 참조하도록 요청하세요.<!-- SCCMDocs issue 493 --> 
+예. EMS 라이선스에서 보장하는 클라이언트를 관리하기 위한 Configuration Manager를 사용할 권한이 있습니다. 먼저 [평가용 소프트웨어](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection)를 다운로드하고 설치합니다. 그런 다음, 라이선스 키를 받으려면 Microsoft 지원에 문의하세요.<!--issue472--> Microsoft 지원에 문의하는 경우 내부 문서 ID 4033838을 참조하도록 요청하세요.<!-- SCCMDocs issue 493 --> 
 
 
 ### <a name="bkmk_expiration-date"></a> 내 구독 종료 날짜와 SA 만료 날짜가 같나요?    

@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84e7b2692dae8b924cfa418508433755de4da328
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: e668baafac94dfc7da5008c37556c017c5e01c9d
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56128367"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67286101"
 ---
 # <a name="capabilities-in-technical-preview-1710-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1710의 기능
 
@@ -72,7 +72,7 @@ PowerShell 스크립트 배포는 [Tech Preview 1706](/sccm/core/get-started/cap
 
 이 릴리스에서는 이제 Windows 10 원격 분석 데이터 컬렉션 수준을 **고급(제한적)** 으로 설정할 수 있습니다. 이 설정을 사용하면 Windows 10 버전 1709 이상을 사용하여 **고급** 원격 분석 수준의 모든 데이터를 보고하는 디바이스가 없는 환경에서 디바이스에 대해 조치 가능한 통찰력을 얻을 수 있습니다.
 
-고급(제한적) 원격 분석 수준에는 Windows Analytics와 관련된 **고급** 수준에서 수집된 데이터 하위 집합뿐 아니라 기본 레벨의 메트릭도 포함됩니다. 원격 분석 수준에 대한 자세한 내용은 [원격 분석 수준](https://docs.microsoft.com/windows/configuration/configure-windows-telemetry-in-your-organization#telemetry-levels)을 참조하세요.
+고급(제한적) 원격 분석 수준에는 Windows Analytics와 관련된 **고급** 수준에서 수집된 데이터 하위 집합뿐 아니라 기본 레벨의 메트릭도 포함됩니다. 원격 분석 수준에 대한 자세한 내용은 [원격 분석 수준](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#use-group-policy-to-set-the-diagnostic-data-level)을 참조하세요.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 클라이언트에서 Windows 10 원격 분석 컬렉션을 구성하려면 [클라이언트 설정을 구성하는 방법](/sccm/core/clients/deploy/configure-client-settings)을 참조하세요. **Cloud Services** 창을 열고 Windows 10 원격 분석을 **고급**으로 설정합니다.
@@ -88,7 +88,8 @@ PowerShell 스크립트 배포는 [Tech Preview 1706](/sccm/core/get-started/cap
 
 
 ## <a name="check-compliance-from-software-center-for-co-managed-devices"></a>소프트웨어 센터에서 공동 관리 디바이스에 대한 준수 확인
-<!-- 1356374 --> 이 릴리스에서는 Intune에서 조건부 액세스를 관리하는 경우라도 사용자는 소프트웨어 센터를 사용하여 공동 관리하는 Windows 10 디바이스의 규정 준수 상태를 확인할 수 있습니다. 자세한 내용은 [Windows 10 디바이스의 공동 관리](./capabilities-in-technical-preview-1709.md#co-management-for-windows-10-devices)를 참조하세요.
+<!-- 1356374 -->
+이 릴리스에서는 Intune에서 조건부 액세스를 관리하는 경우 사용자는 이제 소프트웨어 센터를 사용하여 공동 관리하는 Windows 10 디바이스의 준수 상태를 확인할 수 있습니다. 자세한 내용은 [Windows 10 디바이스의 공동 관리](./capabilities-in-technical-preview-1709.md#co-management-for-windows-10-devices)를 참조하세요.
 
 
 ## <a name="support-for-exploit-guard"></a>Exploit Guard 지원
@@ -112,7 +113,7 @@ Exploit Guard 및 구체적인 구성 요소와 규칙에 대한 자세한 내�
 | 악용 방지  | 없음  |
 | 네트워크 보호  |  디바이스에서 [Windows Defender AV 실시간 보호]( https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard) 기능을 사용하도록 설정해야 합니다.  |
 
-### <a name="create-an-exploit-guard-policy----1355468---"></a>Exploit Guard 정책 만들기 <!--1355468 -->
+### <a name="create-an-exploit-guard-policy----1355468---"></a>Exploit Guard 정책 만들기  <!--1355468 -->
 1. Configuration Manager 콘솔에서 **자산 및 준수** > **끝점 보호**로 이동한 다음 **Windows Defender Exploit Guard**를 클릭합니다.
 2. **홈** 탭의 **만들기** 그룹에서 **악용 정책 만들기**를 클릭합니다.
 3. **구성 항목 만들기 마법사** 의 **일반**페이지에서 구성 항목에 대한 이름 및 선택적 설명을 지정합니다.
@@ -127,7 +128,8 @@ Exploit Guard 및 구체적인 구성 요소와 규칙에 대한 자세한 내�
 Exploit Guard 정책을 만든 후에는 Exploit Guard 정책 배포 마법사를 사용하여 배포합니다. 이를 위해서는 Configuration Manager 콘솔을 열고 **자산 및 준수** > **끝점 보호**로 이동한 다음 **Exploit Guard 정책 배포**를 클릭합니다.
 
 ## <a name="limited-support-for-cng-certificates"></a>CNG 인증서에 대한 제한적 지원
-<!-- 1356191 --> 이 릴리스부터 [CNG(Cryptography API: Next Generation)](https://msdn.microsoft.com/library/windows/desktop/bb204775.aspx) 인증서 템플릿을 사용할 수 있는 시나리오는 다음과 같습니다.
+<!-- 1356191 -->
+이 릴리스부터 [CNG(Cryptography API: Next Generation)](https://msdn.microsoft.com/library/windows/desktop/bb204775.aspx) 인증서 템플릿을 사용할 수 있는 시나리오는 다음과 같습니다.
 
 - 클라이언트 등록 및 HTTPS 관리 지점과의 커뮤니케이션.   
 - HTTPS 배포 지점을 사용하여 소프트웨어 배포 및 애플리케이션 배포.   
@@ -155,14 +157,14 @@ CNG 인증서를 사용하려면 CA(인증 기관)가 대상 컴퓨터에 대한
 
 이 기술 미리 보기부터 콘솔은 재부팅을 요청하는 프로세스 또는 작업에 대한 정보를 제공하는 추가 세부 사항을 표시합니다.
 
-## <a name="device-guard-policy-changes----1355092---"></a>디바이스 가드 정책 변경 <!-- 1355092 -->
+## <a name="device-guard-policy-changes----1355092---"></a>Device Guard 정책 변경 <!-- 1355092 -->
 1710 기술 미리 보기 빌드에서는 Device Guard 정책에 있어 다음 세 가지가 변경되었습니다.
 
 ### <a name="device-guard-policies-renamed-to-windows-defender-application-control-policies"></a>Device Guard 정책의 이름이 Windows Defender 애플리케이션 제어 정책으로 변경
 Device Guard 정책의 이름이 Windows Defender 애플리케이션 제어 정책으로 바뀌었습니다. 예를 들어 **Device Guard 정책 만들기 마법사**의 이름이 이제는 **Windows Defender 애플리케이션 제어 정책 만들기 마법사**입니다.
 
 ### <a name="restart-is-not-required-to-apply-policies"></a>정책을 적용하려면 다시 시작해야 합니다.
-Windows 버전 1709용 Fall Creators Update로 시작하는 경우에는 Windows Defender 애플리케이션 제어 정책을 적용하기 위해 새 Windows 버전을 사용하는 장치를 다시 시작할 필요가 없습니다.
+Windows 버전 1709용 Fall Creators Update로 시작하는 경우에는 Windows Defender 응용 프로그램 제어 정책을 적용하기 위해 새 Windows 버전을 사용하는 디바이스를 다시 시작할 필요가 없습니다.
 
 다시 시작은 기본적으로 이루어집니다.
 
@@ -205,7 +207,7 @@ Windows Defender Application Guard에 대한 기본 사항을 이해하려면 [�
 정책을 만들고 사용 가능한 설정을 검색하려면
 1. **Configuration Manager** 콘솔에서 **자산 및 준수**를 선택합니다.
 2. **자산 및 준수** 작업 영역에서 **개요** > **Endpoint Protection** > **Windows Defender Application Guard**를 선택합니다.
-3. **홈** 탭의 **만들기** 그룹에서 ** 만들기**를 클릭합니다.
+3. **홈** 탭의 **만들기** 그룹에서  **만들기**를 클릭합니다.
 4. 블로그 게시물을 참조하여 사용 가능한 설정을 찾아보고 구성한 후 기능을 사용해볼 수 있습니다.
 5. 이 릴리스에서는 마법사에 네트워크 정의 페이지가 추가되었습니다. 이 페이지에서 회사 ID를 지정하고 회사 네트워크 경계를 정의합니다.
 

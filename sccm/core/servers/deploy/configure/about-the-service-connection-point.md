@@ -2,7 +2,7 @@
 title: 서비스 연결 지점
 titleSuffix: Configuration Manager
 description: 이 Configuration Manager 사이트 시스템 역할에 대해 알아보고 사용 범위를 이해하고 계획합니다.
-ms.date: 08/01/2018
+ms.date: 06/19/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f1173a8bec0ab05c3519d04430adddab129389b
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: af65085590d8b02d6b3a020668566a334de42f13
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65499117"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67285559"
 ---
 # <a name="about-the-service-connection-point-in-configuration-manager"></a>Configuration Manager의 서비스 연결 지점 정보
 
@@ -79,51 +79,13 @@ Configuration Manager 서비스 관리자를 사용하려면 콘솔에서 **모�
 
 - 사이트 서버의 배포 관리자는 사이트 시스템 설치 계정을 사용하여 서비스 연결 지점에서 업데이트를 전송합니다.
 
-##  <a name="bkmk_urls"></a> 인터넷 액세스 요구 사항  
-작업을 사용하려면 서비스 연결 지점 및 해당 컴퓨터와 인터넷 간의 모든 방화벽을 호스트하는 컴퓨터에서 HTTPS를 위한 송신 포트 **TCP 443**과 HTTP를 위한 송신 포트 **TCP 80**을 통해 아래 인터넷 위치로 통신을 전달해야 합니다. 서비스 연결 지점에서도 웹 프록시(인증을 사용하거나 사용하지 않고)를 사용하여 이러한 위치에 액세스할 수 있습니다. 웹 프록시 계정을 구성해야 하는 경우 [프록시 서버 지원](/sccm/core/plan-design/network/proxy-server-support)을 참조하세요.
 
-> [!TIP]  
-> go.microsoft.com 또는 manage.Microsoft.com에 연결되면 서비스 연결 지점에서 Microsoft Intune 서비스를 사용합니다. Baltimore CyberTrust 루트 인증서가 설치되지 않았거나 만료되었거나 서비스 연결 지점에서 손상된 경우, Intune 커넥터에 연결 문제가 발생하는 것으로 알려진 문제가 있습니다. 자세한 내용은 [서비스 연결 지점에서 업데이트를 다운로드하지 않습니다](https://support.microsoft.com/help/3187516)를 참조하세요.  
+## <a name="bkmk_urls"></a> 인터넷 액세스 요구 사항  
 
-#### <a name="updates-and-servicing"></a>업데이트 및 서비스
+조직에서 방화벽 또는 프록시 디바이스를 사용하여 인터넷과의 네트워크 통신을 제한하는 경우 서비스 연결 지점에서 인터넷 엔드포인트에 액세스하도록 허용해야 합니다.
 
-- `*.akamaiedge.net`  
+자세한 내용은 [Internet access requirements](/sccm/core/plan-design/network/internet-endpoints#bkmk_scp)(인터넷 액세스 요구 사항)를 참조하세요.
 
-- `*.akamaitechnologies.com`  
-
-- `*.manage.microsoft.com`  
-
-- `go.microsoft.com`  
-
-- `blob.core.windows.net`  
-
-- `download.microsoft.com`  
-
-- `download.windowsupdate.com`  
-
-- `sccmconnected-a01.cloudapp.net`  
-
-- `configmgrbits.azureedge.net`  
-
-#### <a name="microsoft-intune"></a>Microsoft Intune
-
-- `*manage.microsoft.com`  
-
-- `https://bspmts.mp.microsoft.com/V`  
-
-- `https://login.microsoftonline.com/{TenantID}`  
-
-#### <a name="windows-10-servicing"></a>Windows 10 서비스
-
-- `download.microsoft.com`  
-
-- `https://go.microsoft.com/fwlink/?LinkID=619849`  
-
-- `dl.delivery.mp.microsoft.com`  
-
-#### <a name="azure-services"></a>Azure 서비스
-
-- `management.azure.com`  
 
 ## <a name="install-the-service-connection-point"></a>서비스 연결점 설치
 **설치 프로그램**을 실행하여 계층의 최상위 사이트를 설치할 때는 서비스 연결점을 설치할 수 있습니다.

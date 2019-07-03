@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 4c90befe-9c4e-4c27-a947-625887e15052
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9477db29a93cd8d4a8a7c9b48be8be563bbe25a6
-ms.sourcegitcommit: abfc9e1b3945637fa93ca8d3a11519493a5d5391
+ms.openlocfilehash: 5fb11ac9ffbacfc37b69cb91d34a6885f44abe08
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264499"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67286638"
 ---
 # <a name="co-management-workloads"></a>공동 관리 워크로드
 
@@ -118,9 +118,11 @@ Intune 기능에 대한 자세한 내용은 [Microsoft Intune을 사용하여 Of
 
 <!--1357892-->
 
-Configuration Manager 버전 1806부터 공동 관리하는 Windows 10 디바이스에서 Intune을 사용하여 클라이언트 앱을 관리할 수 있습니다. 이 워크로드를 전환하면 Intune에서 배포된 사용 가능한 모든 앱을 회사 포털에서 사용할 수 있습니다. Configuration Manager에서 배포하는 앱은 소프트웨어 센터에서 사용할 수 있습니다.
+Configuration Manager 버전 1806부터 공동 관리하는 Windows 10 디바이스에서 Intune을 사용하여 클라이언트 앱 및 PowerShell 스트립트를 관리할 수 있습니다. 이 워크로드를 전환하면 Intune에서 배포된 사용 가능한 모든 앱을 회사 포털에서 사용할 수 있습니다. Configuration Manager에서 배포하는 앱은 소프트웨어 센터에서 사용할 수 있습니다.
+
 
 Intune 기능에 대한 자세한 내용은 [Microsoft Intune 앱 관리란?](https://docs.microsoft.com/intune/app-management)을 참조하세요.
+
 
 > [!Note]  
 > 클라이언트 앱 워크로드는 시험판 기능입니다. 이 기능을 사용하려면 [시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요.  

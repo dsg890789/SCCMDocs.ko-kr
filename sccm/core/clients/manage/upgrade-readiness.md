@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 68407ab8-c205-44ed-9deb-ff5714451624
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 322eff398726b2c799164ea369e01519dc62ec8f
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 4340f21ad257bfe311915edaa918e704832e3e77
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56137207"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67286431"
 ---
 # <a name="integrate-upgrade-readiness-with-configuration-manager"></a>업그레이드 준비를 Configuration Manager와 통합합니다.
 
@@ -36,7 +36,7 @@ ms.locfileid: "56137207"
 
 - Windows 7 또는 8.1을 실행하는 클라이언트의 경우 다음을 수행하세요.  
 
-    - [업그레이드 준비 시작하기](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-readiness-get-started#deploy-the-compatibility-update-and-related-kbs)에서 설명한 대로 업데이트 설치  
+    - [업그레이드 준비 시작하기](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-readiness-get-started)에서 설명한 대로 업데이트 설치  
 
     - Windows Analytics 클라이언트 설정 활성화  
 

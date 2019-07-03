@@ -2,7 +2,7 @@
 title: Configuration Manager 콘솔
 titleSuffix: Configuration Manager
 description: Configuration Manager 콘솔을 통해 이동에 대해 알아봅니다.
-ms.date: 04/03/2019
+ms.date: 06/20/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb58662350caec9fd1a08295c93c3811893048a9
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
+ms.openlocfilehash: 3fc9e6fad0b7be3762b3d642c94c4cf17266e0b3
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59802430"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67285745"
 ---
 # <a name="using-the-configuration-manager-console"></a>Configuration Manager 콘솔 사용
 
@@ -147,6 +147,66 @@ Configuration Manager 콘솔에는 네 가지 **작업 영역**이 있습니다.
 
 ![Configuration Manager 콘솔 연결 보기](media/console-connections.png) 
 
+
+## <a name="bkmk_notify"></a> Configuration Manager 콘솔 알림
+<!--3556016, fka 1318035-->
+Configuration Manager 1902 버전부터 콘솔에서 다음 이벤트를 알립니다.
+
+- Configuration Manager 자체에 대한 업데이트를 사용할 수 있는 경우
+- 환경에서 수명 주기 및 유지 관리 이벤트가 발생하는 경우
+
+이 알림은 리본 아래의 콘솔 창의 맨 위에 있는 막대입니다. Configuration Manager 업데이트를 사용할 수 있는 경우 이전 환경을 대체합니다. 이러한 콘솔 내 알림은 여전히 중요한 정보를 표시하지만 콘솔에서 작업에 방해가 되지 않습니다. 중요한 알림을 해제할 수 없습니다. 콘솔은 제목 표시줄의 새 알림 영역에서 모든 알림을 표시합니다.
+
+![콘솔의 알림 표시줄 및 플래그](./media/1318035-notify-eval-version-expired.png)
+
+### <a name="configure-a-site-to-show-non-critical-notifications"></a>중요하지 않은 알림을 표시하도록 사이트 구성
+
+사이트의 속성에서 중요하지 않은 알림을 표시하도록 각 사이트를 구성할 수 있습니다.
+
+1.  **관리** 작업 영역에서 **사이트 구성**을 확장하고 **사이트** 노드를 클릭합니다.
+1. 중요하지 않은 알림을 구성하려는 사이트를 선택합니다.
+1. 리본에서 **속성**을 클릭합니다.
+1. **경고** 탭에서 **중요하지 않은 사이트 상태 변경에 대한 콘솔 알림 사용** 옵션을 선택합니다.
+   - 이 설정을 활성화하는 경우 모든 콘솔 사용자는 중요, 경고 및 정보 알림을 볼 수 있습니다. 이 설정은 기본값으로 사용 가능합니다.  
+   - 이 설정을 비활성화하는 경우 콘솔 사용자는 중요한 알림만 볼 수 있습니다.  
+
+대부분의 콘솔 알림은 세션당입니다. 콘솔은 사용자가 실행하는 경우 쿼리를 평가합니다. 알림에서 변경 내용을 보려면 콘솔을 다시 시작합니다. 사용자가 중요하지 않은 알림을 취소하면 여전히 적용 가능한 경우 콘솔을 다시 시작할 때 다시 알립니다.
+
+다음 알림은 5분마다 다시 평가합니다.
+- 사이트가 유지 관리 모드에 있습니다.  
+- 사이트가 복구 모드에 있습니다.  
+- 사이트가 업그레이드 모드에 있습니다.  
+
+알림은 역할 기반 관리의 사용 권한을 따릅니다. 예를 들어 사용자에게 Configuration Manager 업데이트를 볼 권한이 없으면 해당 알림이 표시되지 않습니다.
+
+일부 알림에는 관련된 작업이 있습니다. 예를 들어 콘솔 버전이 사이트 버전과 일치하지 않는 경우 **새 콘솔 버전 설치**를 선택합니다. 이 작업은 콘솔 설치 관리자를 시작합니다. 
+
+다음과 같은 알림이 기술 미리 보기 분기에 가장 적합합니다.  
+
+- 평가 버전이 만료 30일 이내에 있습니다(경고). 현재 날짜가 평가판의 만료 날짜로부터 30일 이내에 있습니다.  
+- 평가 버전이 만료되었습니다(위험). 현재 날짜가 평가판의 만료 날짜를 지났습니다.  
+- 콘솔 버전이 일치하지 않음(위험): 콘솔 버전이 사이트 버전과 일치하지 않습니다.  
+- 사이트 업그레이드를 사용할 수 있습니다(경고). 사용 가능한 새 업데이트 패키지가 있습니다.  
+
+자세한 내용 및 문제 해결 도움은 콘솔 컴퓨터의 **SmsAdminUI.log** 파일을 참조하세요. 기본적으로 이 로그 파일은 다음 경로에 있습니다. `C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole\AdminUILog\SmsAdminUI.log`
+
+## <a name="bkmk_doc-dashboard"></a> 콘솔 내 설명서 대시보드
+<!--3556019 FKA 1357546-->
+
+Configuration Manager 1902 버전부터 새 **커뮤니티** 작업 영역에 **설명서** 노드가 있습니다. 이 노드는 Configuration Manager 설명서 및 지원 문서에 대한 최신 정보를 포함합니다. 여기에는 다음과 같은 섹션이 포함됩니다.  
+
+### <a name="product-documentation-library"></a>제품 설명서 라이브러리
+
+- **권장**: 수동으로 큐레이팅된 중요한 문서 목록입니다.
+- **인기**: 지난달의 가장 인기 있는 문서입니다.
+- **최근 업데이트 항목**: 지난달에 수정된 문서입니다.
+
+### <a name="support-articles"></a>지원 문서
+
+- **문제 해결 문서**: Configuration Manager 구성 요소 및 기능의 문제 해결을 지원하기 위한 안내 방식 연습입니다.
+- **새로 제공되거나 업데이트된 지원 문서**: 지난 2개월 동안 새로 제공되거나 업데이트된 문서입니다.
+
+
 ## <a name="command-line-options"></a>명령줄 옵션
 
 Configuration Manager 콘솔에는 다음과 같은 명령줄 옵션이 있습니다.
@@ -160,8 +220,65 @@ Configuration Manager 콘솔에는 다음과 같은 명령줄 옵션이 있습�
 |`/sms:NoRestore`|콘솔은 이전에 유지된 노드 탐색을 무시합니다.|  
 
 
-
 ## <a name="tips"></a>팁
+
+### <a name="search-device-views-using-mac-address"></a>MAC 주소를 사용하여 검색 디바이스 보기
+<!--3600878-->
+*(1902 버전에서 도입됨)*
+
+Configuration Manager 콘솔의 디바이스 보기에서 MAC 주소를 검색할 수 있습니다. 이 속성은 PXE 기반 배포 문제를 해결하는 동안 OS 배포 관리자에게 유용합니다. 디바이스 목록을 확인하면 보기에 **MAC 주소** 열을 추가합니다. 검색 필드를 사용하여 **MAC 주소** 검색 조건을 추가합니다.
+
+### <a name="maximize-the-browse-registry-window"></a>레지스트리 찾아보기 창 최대화
+<!--3594151 includes all MMS 1902 console changes-->
+*(1902 버전에서 도입됨)*
+1. **소프트웨어 라이브러리** 작업 영역에서 **애플리케이션 관리**를 펼치고, **애플리케이션** 노드를 선택합니다. 
+1. 검색 방법을 사용하여 배포 유형이 있는 애플리케이션을 선택합니다. 예를 들어 Windows Installer 검색 방법이 있습니다. 
+1. 세부 정보 창에서 **배포 유형** 탭으로 전환합니다. 
+1. 배포 유형의 속성을 열고, **검색 방법** 탭으로 전환합니다. **절 추가**를 선택합니다. 
+1. **설정 유형**을 **레지스트리**로 변경하고, **찾아보기**를 선택하여 **레지스트리 찾아보기** 창을 엽니다. 이제 이 창을 최대화할 수 있습니다.  
+
+### <a name="go-to-the-collection-from-an-application-deployment"></a>애플리케이션 배포에서 컬렉션으로 이동
+
+*(1902 버전에서 도입됨)*
+1. **소프트웨어 라이브러리** 작업 영역에서 **애플리케이션 관리**를 펼치고, **애플리케이션** 노드를 선택합니다. 
+1. 애플리케이션을 선택합니다. 세부 정보 창에서 **배포** 탭으로 전환합니다.
+1. 배포를 선택한 다음, [배포] 탭의 리본에서 새 **컬렉션** 옵션을 선택합니다. 이 작업은 보기를 배포의 대상인 컬렉션으로 전환합니다.
+   - 이 작업은 이 보기에서 배포의 마우스 오른쪽 단추 클릭 상황에 맞는 메뉴에서도 사용할 수 있습니다.
+
+### <a name="edit-a-task-sequence-by-default"></a>기본적으로 작업 순서 편집
+
+*(1902 버전에서 도입됨)*
+
+**소프트웨어 라이브러리** 작업 영역에서 **운영 체제**를 펼치고 **작업 순서** 노드를 선택합니다. 이제 작업 순서를 열면 **편집**이 기본 작업이 됩니다. 이전에는 기본 작업이 **속성**이었습니다.  
+
+### <a name="remove-content-from-monitoring-status"></a>모니터링 상태에서 콘텐츠 제거
+*(1902 버전에서 도입됨)*
+
+1. **모니터링** 작업 영역에서 **배포 상태**를 펼치고 **콘텐츠 상태**를 선택합니다.
+1. 목록에서 항목을 선택하고, 리본에서 **상태 보기** 옵션을 선택합니다. 
+1. [자산 정보] 창에서 배포 지점을 마우스 오른쪽 단추로 클릭하고, 새 옵션인 **제거**를 선택합니다. 이 작업은 선택한 배포 지점에서 이 콘텐츠를 삭제합니다.
+
+### <a name="views-sort-by-integer-values"></a>정수 값 기준 정렬 보기
+*(1902 버전에서 도입됨)*
+
+다양한 보기에서 데이터를 정렬하는 방식을 개선했습니다. 예를 들어 **모니터링** 작업 영역의 **배포** 노드에서 다음 열은 이제 문자열 값 대신 숫자로 정렬됩니다.  
+
+- 오류 개수
+- 진행 중인 개수
+- 기타 개수
+- 성공 개수
+- 알 수 없는 개수  
+
+### <a name="move-the-warning-for-a-large-number-of-results"></a>많은 수의 결과에 대한 경고 이동
+*(1902 버전에서 도입됨)*
+
+콘솔에서 1,000개가 넘는 결과를 반환하는 노드를 선택하는 경우 Configuration Manager에서 표시하는 경고는 다음과 같습니다.
+
+> Configuration Manager에서 많은 수의 결과를 반환했습니다. 검색을 사용하여 결과를 좁힐 수 있습니다. 또는 최대 100,000개의 결과를 보려면 여기를 클릭합니다.
+ 
+이제 이 경고와 검색 필드 사이에 빈 공간이 추가되었습니다. 이 이동은 경고를 실수로 선택하여 더 많은 결과를 표시하지 않도록 방지하는 데 도움이 됩니다. 
+
+
 
 ### <a name="send-feedback"></a>의견 보내기
 <!--1357542-->

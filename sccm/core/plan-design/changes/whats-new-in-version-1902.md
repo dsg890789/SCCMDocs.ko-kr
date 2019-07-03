@@ -2,7 +2,7 @@
 title: 버전 1902의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager 현재 분기, 버전 1902에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
-ms.date: 05/28/2019
+ms.date: 06/20/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17ba88f318f09e0ddc3f61873c881338741b8ccd
-ms.sourcegitcommit: 725e1bf7d3250c2b7b7be9da01135517428be7a1
+ms.openlocfilehash: 03610ad219a8ae89de63b87499d4ee9c628a271d
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66822042"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67285650"
 ---
 # <a name="whats-new-in-version-1902-of-configuration-manager-current-branch"></a>Configuration Manager 현재 분기, 버전 1902의 새 기능
 
@@ -94,28 +94,29 @@ Configuration Manager 콘솔에서 **모니터링** 작업 영역으로 이동�
 ## <a name="bkmk_cloud"></a> 클라우드 연결 관리
 
 ### <a name="stop-cloud-service-when-it-exceeds-threshold"></a>임계값을 초과하는 경우 클라우드 서비스 중지
+
 <!--3735092-->
-이제 Configuration Manager는 총 데이터 전송이 한도를 초과하는 경우 CMG(클라우드 관리 게이트웨이) 서비스를 중지할 수 있습니다. CMG에는 사용량이 경고 또는 위험 수준에 도달하는 경우 항상 알림을 트리거하는 경고가 있습니다. 사용량 급증으로 인한 예기치 않은 모든 Azure 비용을 줄이려면 이 새 옵션은 클라우드 서비스를 해제합니다. 
+***[06/18 업데이트됨]*** 이제 Configuration Manager는 총 데이터 전송이 한도를 초과하는 경우 CMG(클라우드 관리 게이트웨이) 서비스를 중지할 수 있습니다. CMG에는 사용량이 경고 또는 위험 수준에 도달하는 경우 항상 알림을 트리거하는 경고가 있습니다. 사용량 급증으로 인한 예기치 않은 모든 Azure 비용을 줄이려면 이 새 옵션은 클라우드 서비스를 해제합니다.
 
-CMG에서 [아웃바운드 트래픽 경고를 설정](/sccm/core/clients/manage/cmg/monitor-clients-cloud-management-gateway#set-up-outbound-traffic-alerts)한 다음, **중요한 임계값을 초과하는 경우 이 서비스 중지** 옵션을 사용하도록 설정합니다.  
-
-<!-- For more information, see [Set up outbound traffic alerts](/sccm/core/clients/manage/cmg/monitor-clients-cloud-management-gateway#set-up-outbound-traffic-alerts). -->
+자세한 내용은 [임계값을 초과하는 경우 CMG 중지](/sccm/core/clients/manage/cmg/monitor-clients-cloud-management-gateway#bkmk_stop)를 참조하세요.
 
 
 ### <a name="use-azure-resource-manager-for-cloud-services"></a>클라우드 서비스에 대한 Azure Resource Manager 사용
+
 <!--3605704-->
-1810 버전부터 Azure의 기존 서비스 배포는 Configuration Manager에서 더 이상 사용되지 않습니다. 해당 버전은 이러한 Azure 배포의 만들기를 지원하는 마지막 버전입니다. 
+***[06/17 업데이트됨]*** 1810 버전부터 Azure의 기존 서비스 배포는 Configuration Manager에서 더 이상 사용되지 않습니다. 해당 버전은 이러한 Azure 배포의 만들기를 지원하는 마지막 버전입니다.
 
 기존 배포가 계속 작동합니다. 이번 현재 분기 버전부터 Azure Resource Manager는 클라우드 관리 게이트웨이 및 클라우드 배포 지점의 새 인스턴스를 배포하는 유일한 메커니즘입니다.
 
-<!-- For more information, see [Azure Resource Manager for the cloud management gateway](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#azure-resource-manager).   -->
+자세한 내용은 [클라우드 관리 게이트웨이에 대한 Azure Resource Manager](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#azure-resource-manager)를 참조하세요.
 
 
 ### <a name="add-cloud-management-gateway-to-boundary-groups"></a>경계 그룹에 클라우드 관리 게이트웨이 추가
-<!--3640932-->
-이제 경계 그룹에 클라우드 관리 게이트웨이(CMG)를 연결할 수 있습니다. 이 구성을 사용하면 클라이언트 통신 시 클라이언트가 경계 그룹 관계에 따라 CMG로 기본 설정되거나 대체됩니다. 이 동작은 지점과 VPN 시나리오에서 특히 유용합니다. 느리고 값비싼 WAN 링크를 사용하는 대신 Microsoft Azure에 연결된 빠른 인터넷 링크를 사용하도록 클라이언트 트래픽을 유도할 수 있습니다.
 
-<!-- For more information, see [Plan for the CMG](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway). -->
+<!--3640932-->
+***[06/18 업데이트됨]*** 이제 경계 그룹에 클라우드 관리 게이트웨이(CMG)를 연결할 수 있습니다. 이 구성을 사용하면 클라이언트 통신 시 클라이언트가 경계 그룹 관계에 따라 CMG로 기본 설정되거나 대체됩니다. 이 동작은 지점과 VPN 시나리오에서 특히 유용합니다. 느리고 값비싼 WAN 링크를 사용하는 대신 Microsoft Azure에 연결된 빠른 인터넷 링크를 사용하도록 클라이언트 트래픽을 유도할 수 있습니다.
+
+자세한 내용은 [CMG 계층 구조 디자인](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#hierarchy-design) 및 [CMG 설정](/sccm/core/clients/manage/cmg/setup-cloud-management-gateway#configure-boundary-groups)을 참조하세요.
 
 
 
@@ -130,9 +131,9 @@ CMG에서 [아웃바운드 트래픽 경고를 설정](/sccm/core/clients/manage
 
 ### <a name="edit-or-copy-powershell-scripts"></a>PowerShell 스크립트 편집 또는 복사
 <!--3705507-->
-이제 스크립트 실행 기능으로 사용되는 기존 PowerShell 스크립트를 **편집**하거나 **복사**할 수 있습니다. 변경하려는 스크립트를 다시 만드는 대신 직접 편집하면 됩니다. 두 작업 모두 새 스크립트를 만들 대와 동일한 마법사 환경을 사용합니다. 스크립트를 편집하거나 복사할 때는 Configuration Manager의 승인 상태가 유지되지 않습니다. 
+***[6/20 업데이트됨]*** 이제 스크립트 실행 기능으로 사용되는 기존 PowerShell 스크립트를 **편집**하거나 **복사**할 수 있습니다. 변경하려는 스크립트를 다시 만드는 대신 직접 편집하면 됩니다. 두 작업 모두 새 스크립트를 만들 대와 동일한 마법사 환경을 사용합니다. 스크립트를 편집하거나 복사할 때는 Configuration Manager의 승인 상태가 유지되지 않습니다. 
 
-<!-- For more information, see [Run Scripts](/sccm/apps/deploy-use/create-deploy-scripts). -->
+자세한 내용은 [스크립트 실행](/sccm/apps/deploy-use/create-deploy-scripts#bkmk_psedit)을 참조하세요.
 
 
 
@@ -332,11 +333,11 @@ OS 이미지를 업데이트할 일정을 생성할 때 **이미지가 업데이
 
 ### <a name="configure-user-device-affinity-in-software-center"></a>소프트웨어 센터에서 사용자 디바이스 선호도 구성
 <!--3485366-->
-1806 버전에서 시작된 [소프트웨어 센터 인프라 개선 사항](/sccm/core/plan-design/changes/whats-new-in-version-1806#software-center-infrastructure-improvements)을 사용하는 경우 대부분의 시나리오에서 애플리케이션 카탈로그 사이트 서버 역할이 더 이상 필요하지 않습니다. 일부 고객은 여전히 애플리케이션 카탈로그에 의존하여 사용자가 사용자 디바이스 선호도에 대해 자신의 기본 디바이스를 설정할 수 있도록 했습니다. 
+***[6/18 업데이트됨]*** 1806 버전에서 시작된 [소프트웨어 센터 인프라 개선 사항](/sccm/core/plan-design/changes/whats-new-in-version-1806#software-center-infrastructure-improvements)을 사용하는 경우 대부분의 시나리오에서 애플리케이션 카탈로그 사이트 서버 역할이 더 이상 필요하지 않습니다. 일부 고객은 여전히 애플리케이션 카탈로그에 의존하여 사용자가 사용자 디바이스 선호도에 대해 자신의 기본 디바이스를 설정할 수 있도록 했습니다. 
 
 이제 사용자는 소프트웨어 센터에서 자신의 기본 디바이스를 설정할 수 있습니다. 이렇게 하면 이러한 사용자가 Configuration Manager에서 디바이스의 기본 사용자로 지정됩니다.
 
-<!-- For more information, see [Link users and devices with user device affinity](/sccm/apps/deploy-use/link-users-and-devices-with-user-device-affinity). -->
+자세한 내용은 [사용자 디바이스 선호도를 사용하여 사용자와 디바이스 연결](/sccm/apps/deploy-use/link-users-and-devices-with-user-device-affinity)을 참조하세요. 
 
 
 ### <a name="configure-default-views-in-software-center"></a>소프트웨어 센터의 기본 보기 구성
@@ -435,25 +436,25 @@ Business용 OneDrive 프로필을 만들고 배포하려면 Configuration Manage
 
 ### <a name="bkmk_console"></a> 향상된 Configuration Manager 콘솔 기능
 <!--3594151-->
-MMS(Midwest Management Summit) Desert Edition 2018에서 수렴한 고객의 피드백에 따라 이 버전에는 다음과 같은 향상된 Configuration Manager 콘솔 기능이 포함되어 있습니다.
+***[6/20 업데이트됨]*** MMS(Midwest Management Summit) Desert Edition 2018에서 수렴한 고객의 피드백에 따라 이 버전에는 다음과 같은 향상된 Configuration Manager 콘솔 기능이 포함되어 있습니다.
 - 애플리케이션 검색 방법을 위한 레지스트리 찾아보기 창 최대화
 - 애플리케이션 배포에서 컬렉션으로 이동
 - 모니터링 상태에서 콘텐츠 제거
 - **모니터링** 작업 영역의 **배포** 노드에서 정수 값으로 보기 정렬
 - 많은 수의 결과에 대한 경고 이동
 
-<!-- For more information, see [Using the Configuration Manager console](/sccm/core/servers/manage/admin-console). -->
+자세한 내용은 [Configuration Manager 콘솔 사용](/sccm/core/servers/manage/admin-console#tips)을 참조하세요.
 
 
 ### <a name="configuration-manager-console-notifications"></a>Configuration Manager 콘솔 알림
 <!--3556016, fka 1318035-->
-적절한 작업을 수행할 수 있도록 보다 정확한 정보를 제공하기 위해 Configuration Manager 콘솔은 이제 다음 이벤트를 알려 줍니다.
+***[업데이트됨]*** 적절한 작업을 수행할 수 있도록 보다 정확한 정보를 제공하기 위해 Configuration Manager 콘솔은 이제 다음 이벤트를 알려 줍니다.
 - Configuration Manager 자체에 대한 업데이트를 사용할 수 있는 경우
 - 환경에서 수명 주기 및 유지 관리 이벤트가 발생하는 경우
 
-이 알림은 리본 아래의 콘솔 창의 맨 위에 있는 막대입니다. Configuration Manager 업데이트를 사용할 수 있는 경우 이전 환경을 대체합니다. 이러한 콘솔 내 알림은 여전히 중요한 정보를 표시하지만 콘솔에서 작업에 방해가 되지 않습니다. 중요한 알림을 해제할 수 없습니다. 콘솔은 제목 표시줄의 새 알림 영역에서 모든 알림을 표시합니다. 
+이 알림은 리본 아래의 콘솔 창의 맨 위에 있는 막대입니다. Configuration Manager 업데이트를 사용할 수 있는 경우 이전 환경을 대체합니다. 이러한 콘솔 내 알림은 여전히 중요한 정보를 표시하지만 콘솔에서 작업에 방해가 되지 않습니다. 중요한 알림을 해제할 수 없습니다. 콘솔은 제목 표시줄의 새 알림 영역에서 모든 알림을 표시합니다.
 
-<!-- For more information, see [Using the Configuration Manager console](/sccm/core/servers/manage/admin-console). -->
+자세한 내용은 [Configuration Manager 콘솔 사용](/sccm/core/servers/manage/admin-console)을 참조하세요.
 
 
 ### <a name="confirmation-of-console-feedback"></a>콘솔 피드백 확인
@@ -472,14 +473,16 @@ MMS(Midwest Management Summit) Desert Edition 2018에서 수렴한 고객의 피
 
 ### <a name="in-console-documentation-dashboard"></a>콘솔 내 설명서 대시보드
 <!--3556019, fka 1357546-->
-새 **커뮤니티** 작업 영역에 새 **설명서** 노드가 있습니다. 이 노드는 Configuration Manager 설명서 및 지원 문서에 대한 최신 정보를 포함합니다.
+***[06/20 업데이트됨]*** 새 **커뮤니티** 작업 영역에 새 **설명서** 노드가 있습니다. 이 노드는 Configuration Manager 설명서 및 지원 문서에 대한 최신 정보를 포함합니다.
 
-<!-- For more information, see [Using the Configuration Manager console](/sccm/core/servers/manage/admin-console). -->
+자세한 내용은 [Configuration Manager 콘솔 사용](/sccm/core/servers/manage/admin-console#bkmk_doc-dashboard)을 참조하세요.
 
 
 ### <a name="search-device-views-using-mac-address"></a>MAC 주소를 사용하여 검색 디바이스 보기
 <!--3600878-->
-이제 Configuration Manager 콘솔의 디바이스 보기에서 MAC 주소를 검색할 수 있습니다. 이 속성은 PXE 기반 배포 문제를 해결하는 동안 OS 배포 관리자에게 유용합니다. 디바이스 목록을 확인하면 보기에 **MAC 주소** 열을 추가합니다. 검색 필드를 사용하여 **MAC 주소** 검색 조건을 추가합니다. 
+***[06/20 업데이트됨]*** 이제 Configuration Manager 콘솔의 디바이스 보기에서 MAC 주소를 검색할 수 있습니다. 이 속성은 PXE 기반 배포 문제를 해결하는 동안 OS 배포 관리자에게 유용합니다. 디바이스 목록을 확인하면 보기에 **MAC 주소** 열을 추가합니다. 검색 필드를 사용하여 **MAC 주소** 검색 조건을 추가합니다. 
+
+자세한 내용은 [Configuration Manager 콘솔 사용](/sccm/core/servers/manage/admin-console#tips)을 참조하세요.
 
 
 ### <a name="use-net-47-for-improved-console-accessibility"></a>콘솔 접근성 향상을 위해 .NET 4.7 사용
@@ -514,10 +517,10 @@ Configuration Manager 콘솔의 접근성 기능을 개선하려면 콘솔을 �
 
 Configuration Manager용 Windows PowerShell cmdlet의 변경 내용에 대한 자세한 내용은 [PowerShell 버전 1902 릴리스 정보](https://docs.microsoft.com/powershell/sccm/1902-release-notes?view=sccm-ps)를 참조하세요.
 
-<!-- 
-The following update rollup (4486457) is available in the console starting on 25 January 2019: [Update rollup for Configuration Manager current branch, version 1902](https://support.microsoft.com/help/4486457).
+다음 업데이트 롤업(4500571)은 2019년 6월 17일부터 콘솔에서 사용할 수 있습니다. [Configuration Manager 현재 분기, 버전 1902용 업데이트 롤업](https://support.microsoft.com/help/4500571).
 
 
+<!--
 ### Hotfixes
 
 The following additional hotfixes are available to address specific issues:
@@ -541,7 +544,7 @@ The following additional hotfixes are available to address specific issues:
 >
 >  다음에 대해 자세히 알아보세요.    
 >   - [새 사이트 설치](/sccm/core/servers/deploy/install/installing-sites)  
->   - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)  
+>   - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)  
 
 알려진 중요한 문제는 [릴리스 정보](/sccm/core/servers/deploy/install/release-notes)를 참조하세요.
 

@@ -7,17 +7,17 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: df2e57b9-6445-4067-98e7-ace85d4e6aa6
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dfc10695dc238e7020fd9d1b777ce62d80324beb
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 401565308ac78e1d6db047eca7cda63715474764
+ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56133489"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67158882"
 ---
 # <a name="what39s-new-in-version-1606-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1606의 새로운 기능
 
@@ -27,7 +27,7 @@ System Center Configuration Manager 업데이트 1606은 버전 1511 또는 1602
 > [!TIP]  
 >  다음에 대해 자세히 알아보세요.  
 >   
->  -   [새 사이트 설치](/sccm/core/servers/deploy/install)(1511 등의 기준 버전 사용)  
+>  -   [새 사이트 설치](/sccm/core/servers/deploy/install/prepare-to-install-sites)(1511 등의 기준 버전 사용)  
 >  -   [사이트에서 업데이트 설치](/sccm/core/servers/manage/updates)(예: 업데이트 1602 또는 1606)  
 
  다음 섹션에서는 Configuration Manager 버전 1606에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.  
@@ -199,11 +199,11 @@ Configuration Manager를 사용하면 iOS 7.1 이상 디바이스용 나의 iPho
 자세한 내용은 [System Center Configuration Manager로 iOS 활성화 잠금 관리](../../../mdm/deploy-use/manage-ios-activation-lock.md)를 참조하세요.
 
 
-### <a name="windows-defender-advanced-threat-protection"></a>Windows Defender Advanced Threat Protection
+### <a name="microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection
 
-Endpoint Protection은 Windows Defender ATP(Advanced Threat Protection)를 관리하고 모니터링하는 데 도움이 됩니다. Windows Defender ATP는 엔터프라이즈에서 네트워크에 대한 고급 공격을 검색하고 조사하고 대응할 수 있도록 하는 새로운 서비스입니다. Configuration Manager 정책은 Windows 10 버전 1607(빌드 14328) 이상을 실행하는 관리되는 컴퓨터를 등록하고 모니터링하는 데 도움이 됩니다.
+Endpoint Protection은 Microsoft Defender ATP(Advanced Threat Protection)를 관리하고 모니터링하는 데 도움이 됩니다. Microsoft Defender ATP는 엔터프라이즈에서 네트워크에 대한 고급 공격을 검색하고 조사하고 대응할 수 있도록 하는 새로운 서비스입니다. Configuration Manager 정책은 Windows 10 버전 1607(빌드 14328) 이상을 실행하는 관리되는 컴퓨터를 등록하고 모니터링하는 데 도움이 됩니다.
 
-자세한 내용은 [Windows Defender Advanced Threat Protection](../../../protect/deploy-use/windows-defender-advanced-threat-protection.md)을 참조하세요.
+자세한 내용은 [Microsoft Defender Advanced Threat Protection](../../../protect/deploy-use/windows-defender-advanced-threat-protection.md)을 참조하세요.
 
 ### <a name="device-categories"></a>디바이스 범주
 Microsoft Intune에서 Configuration Manager를 사용하는 경우 디바이스 컬렉션에 디바이스를 자동으로 배치하는 데 사용할 수 있는 디바이스 범주를 만들 수 있습니다. 그런 다음 사용자는 Intune에 디바이스를 등록할 때 디바이스 범주를 선택해야 합니다. 또한 Configuration Manager 콘솔에서 디바이스의 범주를 변경할 수 있습니다.

@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 289cea97990b9f6736f325b153c8bfc375ccea92
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 0b57720d800e224d68f92f339e0c3b4964010e05
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56128656"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67285940"
 ---
 # <a name="capabilities-in-technical-preview-1806-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1806의 기능
 
@@ -41,7 +41,8 @@ Steps to workaround, if any.
 ## <a name="known-issues-in-this-technical-preview"></a>이 기술 미리 보기의 알려진 문제
 
 ### <a name="ki_contentlib"></a> 사이트는 원격 콘텐츠 라이브러리로 업그레이드 실패
-<!--514642--> 사이트는 **cmupdate.log**에서 다음 오류로 인해 업그레이드에 실패합니다.  
+<!--514642-->
+사이트는 **cmupdate.log**에서 다음 오류로 업그레이드에 실패합니다.  
 ```  
 Failed to find any valid drives  
 GetContentLibraryParameters failed; 0x80070057  
@@ -62,7 +63,8 @@ ERROR: Failed to process configuration manager update.
 
 
 ## <a name="bkmk-3pupdate"></a> 타사 소프트웨어 업데이트
-<!--1352101--> 이 릴리스에서는 [UserVoice 피드백](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/8803711-3rd-party-patching-scup-integration-with-sccm-co)의 결과로서 타사 소프트웨어 업데이트에 대한 지원을 계속 반복합니다. 일부 일반적인 시나리오에 대한 SCUP(System Center Updates Publisher) 사용이 더 이상 필요하지 않습니다. Configuration Manager 콘솔에서 새 **타사 소프트웨어 업데이트 카탈로그** 노드는 타사 카탈로그를 구독하고 소프트웨어 업데이트 지점에 해당 업데이트를 게시한 다음, 클라이언트에 업데이트를 배포할 수 있게 합니다. 
+<!--1352101-->
+이 릴리스에서는 [UserVoice 피드백](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/8803711-3rd-party-patching-scup-integration-with-sccm-co)의 결과로서 타사 소프트웨어 업데이트에 대한 지원을 계속 반복합니다. 일부 일반적인 시나리오에 대한 SCUP(System Center Updates Publisher) 사용이 더 이상 필요하지 않습니다. Configuration Manager 콘솔에서 새 **타사 소프트웨어 업데이트 카탈로그** 노드는 타사 카탈로그를 구독하고 소프트웨어 업데이트 지점에 해당 업데이트를 게시한 다음, 클라이언트에 업데이트를 배포할 수 있게 합니다. 
 
 다음의 타사 소프트웨어 업데이트 카탈로그는 이 릴리스에서 사용할 수 있습니다.
 
@@ -153,14 +155,15 @@ SCUP는 다른 카탈로그 및 시나리오를 계속 지원합니다. Configur
 ### <a name="known-issues"></a>알려진 문제
 - 타사 소프트웨어 업데이트 동기화 서비스는 **WSUS 서버 연결 계정**을 사용하기 위해 구성된 소프트웨어 업데이트 지점을 지원하지 않습니다. 이 계정을 소프트웨어 업데이트 지점 속성 페이지의 **프록시 및 계정 설정** 탭에서 구성한 경우 SMS_ISVUPDATES_SYNCAGENT.log에서 다음과 같은 오류가 표시됩니다.  
 `WSUS access account appears to be configured, it is not yet supported for third party updates sync.`  
-이 계정에 대한 자세한 내용은 [소프트웨어 업데이트 지점 연결 계정](/sccm/core/plan-design/hierarchy/accounts#software-update-point-connection-account)을 참조하십시오.<!--515492-->  
+이 계정에 대한 자세한 내용은 [소프트웨어 업데이트 지점의 연결 계정](/sccm/core/plan-design/hierarchy/accounts#software-update-point-connection-account)을 참조하세요.<!--515492-->  
 
-- 새로 통합된 이 타사 소프트웨어 업데이트 기능과 SCUP 같은 다른 도구의 사용을 혼합하지 마십시오. 타사 소프트웨어 업데이트 동기화 서비스는 SCUP 같은 다른 애플리케이션, 도구 또는 스크립트가 WSUS에 추가한 메타데이터 전용 업데이트에 콘텐츠를 게시할 수 없습니다. **타사 소프트웨어 업데이트 콘텐츠 게시** 작업은 이러한 업데이트에서 실패합니다. 이 기능은 아직 지원하지 않는 타사 업데이트를 배포해야 하는 경우 해당 업데이트를 배포 하는 데 기존 프로세스 전체를 사용합니다.<!--515497-->  
+- 새로 통합된 이 타사 소프트웨어 업데이트 기능과 SCUP 같은 다른 도구의 사용을 혼합하지 마십시오. 타사 소프트웨어 업데이트 동기화 서비스는 SCUP 같은 다른 애플리케이션, 도구 또는 스크립트가 WSUS에 추가한 메타데이터 전용 업데이트에 콘텐츠를 게시할 수 없습니다. **타사 소프트웨어 업데이트 콘텐츠 게시** 작업은 이러한 업데이트에서 실패합니다. 이 기능이 아직 지원하지 않는 타사 업데이트를 배포해야 하는 경우 해당 업데이트를 배포하는 데 기존 프로세스 전체를 사용합니다.<!--515497-->  
 
 
 
 ## <a name="configure-windows-defender-smartscreen-settings-for-microsoft-edge"></a>Microsoft Edge용 Windows Defender SmartScreen 설정 구성
-<!--1353701--> 이 릴리스는 [Windows Defender SmartScreen](/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)의 세 가지 설정을 [Microsoft Edge 브라우저 규정 준수 설정 정책](/sccm/compliance/deploy-use/browser-profiles)에 추가합니다. 해당 정책에는 **SmartScreen 설정** 페이지에 다음과 같은 추가 정책이 포함됩니다.
+<!--1353701-->
+이 릴리스는 [Windows Defender SmartScreen](/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)에 대한 세 가지 설정을 [Microsoft Edge 브라우저 규정 준수 설정 정책](/sccm/compliance/deploy-use/browser-profiles)에 추가합니다. 해당 정책에는 **SmartScreen 설정** 페이지에 다음과 같은 추가 정책이 포함됩니다.
 - **SmartScreen 허용**: Windows Defender SmartScreen 허용되는지 여부를 지정합니다. 자세한 내용은 참조는 [AllowSmartScreen 브라우저 정책](/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen)을 참조합니다.
 - **사용자는 사이트에서 SmartScreen 프롬프트를 재정의할 수 있음**: 사용자가 잠재적으로 악성인 웹 사이트에 대한 Windows Defender SmartScreen 필터 경고를 재정의할 수 있는지 여부를 지정합니다. 자세한 내용은 [PreventSmartScreenPromptOverride 브라우저 정책](/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride)을 참조합니다.
 - **사용자는 파일에서 SmartScreen 프롬프트를 재정의할 수 있음**: 사용자가 확인되지 않은 파일 다운로드에 대한 Windows Defender SmartScreen 필터 경고를 재정의할 수 있는지 여부를 지정합니다. 자세한 내용은 [PreventSmartScreenPromptOverrideForFiles 브라우저 정책](/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)을 참조합니다.
@@ -168,12 +171,14 @@ SCUP는 다른 카탈로그 및 시나리오를 계속 지원합니다. Configur
 
 
 ## <a name="sync-mdm-policy-from-microsoft-intune-for-a-co-managed-device"></a>Microsoft Intune에서 공동 관리하는 디바이스에 대한 MDM 정책 동기화
-<!--1357377--> 이 릴리스부터 [공동 관리 워크로드를 전환](/sccm/core/clients/manage/co-management-switch-workloads)할 경우 공동 관리되는 디바이스는 Microsoft Intune에서 자동으로 MDM 정책을 동기화합니다. 이 동기화는 Configuration Manager 콘솔의 클라이언트 알림에서 **컴퓨터 정책 다운로드** 작업 시작할 때 발생합니다. 자세한 내용은 [클라이언트 알림을 사용하여 클라이언트 정책 검색 시작](/sccm/core/clients/manage/manage-clients#initiate-client-policy-retrieval-using-client-notification)을 참조합니다.
+<!--1357377-->
+[공동 관리 워크로드를 전환](/sccm/core/clients/manage/co-management-switch-workloads)할 경우 이 릴리스부터 공동 관리되는 디바이스는 Microsoft Intune에서 자동으로 MDM 정책을 동기화합니다. 이 동기화는 Configuration Manager 콘솔의 클라이언트 알림에서 **컴퓨터 정책 다운로드** 작업 시작할 때 발생합니다. 자세한 내용은 [클라이언트 알림을 사용하여 클라이언트 정책 검색 시작](/sccm/core/clients/manage/manage-clients#initiate-client-policy-retrieval-using-client-notification)을 참조합니다.
 
 
 
 ## <a name="transition-office-365-workload-to-intune-using-co-management"></a>공동 관리를 사용하여 Office 365 워크로드를 Intune으로 전환
-<!--1357841--> 이제 공동 관리를 사용하도록 설정한 후에 Configuration Manager에서 Microsoft Intune으로 Office 365 워크로드를 전환할 수 있습니다. 이 워크로드를 전환하려면 공동 관리 속성 페이지로 이동하고 슬라이더 막대를 Configuration Manager에서 파일럿 또는 모두로 이동합니다. 자세한 내용은 [Windows 10 디바이스의 공동 관리](/sccm/core/clients/manage/co-management-overview)를 참조하세요.
+<!--1357841-->
+이제 공동 관리를 사용하도록 설정한 후 Configuration Manager에서 Microsoft Intune으로 Office 365 워크로드를 전환할 수 있습니다. 이 워크로드를 전환하려면 공동 관리 속성 페이지로 이동하고 슬라이더 막대를 Configuration Manager에서 파일럿 또는 모두로 이동합니다. 자세한 내용은 [Windows 10 디바이스의 공동 관리](/sccm/core/clients/manage/co-management-overview)를 참조하세요.
 
 **장치에서 Intune으로 Office 365 응용 프로그램 관리**라는 새 글로벌 조건이 있습니다. 이 조건은 기본적으로 새 Office 365 애플리케이션에 대한 요구 사항으로 추가됩니다. 이 워크로드를 전환하는 경우 공동 관리되는 클라이언트는 애플리케이션의 요구 사항을 충족하지 못하므로 Configuration Manager를 통해 배포된 Office 365를 설치하지 마십시오.
 
@@ -183,7 +188,8 @@ SCUP는 다른 카탈로그 및 시나리오를 계속 지원합니다. Configur
 
 
 ## <a name="package-conversion-manager"></a>Package Conversion Manager 
-<!--1357861--> Package Conversion Manager는 레거시 Configuration Manager 2007 패키지를 Configuration Manager 현재 분기 애플리케이션으로 변환할 수 있는 통합 도구입니다. 이와 같은 변환을 수행한 후에는 종속성, 요구 사항 규칙, 사용자 디바이스 선호도 등의 응용 프로그램 기능을 사용할 수 있습니다.
+<!--1357861-->
+Package Conversion Manager는 레거시 Configuration Manager 2007 패키지를 Configuration Manager 현재 분기 응용 프로그램으로 변환할 수 있는 통합 도구입니다. 이와 같은 변환을 수행한 후에는 종속성, 요구 사항 규칙, 사용자 디바이스 선호도 등의 응용 프로그램 기능을 사용할 수 있습니다.
 
 > [!Tip]  
 > Package Conversion Manager의 기존 기능에 대한 레거시 설명서는 [TechNet](https://technet.microsoft.com/library/hh531519.aspx)에서 확인할 수 있습니다. 관련 정보는 docs.microsoft.com 라이브러리로 마이그레이션 중입니다.
@@ -212,7 +218,8 @@ SCUP는 다른 카탈로그 및 시나리오를 계속 지원합니다. Configur
 
 
 ## <a name="deploy-software-updates-without-content"></a>콘텐츠 없이 소프트웨어 업데이트 배포
-<!--1357933--> 이제 소프트웨어 업데이트 콘텐츠를 배포 지점에 먼저 다운로드하여 배포하지 않고 디바이스에 소프트웨어 업데이트를 배포할 수 있습니다. 이 기능은 매우 큰 업데이트 콘텐츠를 처리할 때 또는 항상 클라이언트가 Microsoft 업데이트 클라우드 서비스에서 콘텐츠를 가져오려 할 때 유용합니다. 이 시나리오에서 클라이언트는 이미 필요한 콘텐츠가 있는 피어로부터 콘텐츠를 다운로드할 수 있습니다. Configuration Manager 클라이언트는 계속 콘텐츠 다운로드를 관리하므로 Configuration Manager 피어 캐시 기능 또는 배달 최적화 같은 다른 기술을 활용할 수 있습니다. 이 기능은 Windows 및 Office 업데이트를 포함하여 Configuration Manager 소프트웨어 업데이트 관리에서 지원하는 모든 업데이트 유형을 지원합니다. 
+<!--1357933-->
+소프트웨어 업데이트 콘텐츠를 배포 지점에 처음 다운로드하여 배포하지 않고 디바이스에 소프트웨어 업데이트를 배포할 수 있습니다. 이 기능은 매우 큰 업데이트 콘텐츠를 처리할 때 또는 항상 클라이언트가 Microsoft 업데이트 클라우드 서비스에서 콘텐츠를 가져오려 할 때 유용합니다. 이 시나리오에서 클라이언트는 이미 필요한 콘텐츠가 있는 피어로부터 콘텐츠를 다운로드할 수 있습니다. Configuration Manager 클라이언트는 계속 콘텐츠 다운로드를 관리하므로 Configuration Manager 피어 캐시 기능 또는 배달 최적화 같은 다른 기술을 활용할 수 있습니다. 이 기능은 Windows 및 Office 업데이트를 포함하여 Configuration Manager 소프트웨어 업데이트 관리에서 지원하는 모든 업데이트 유형을 지원합니다. 
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
  작업을 완료합니다. 그런 다음, [피드백](capabilities-in-technical-preview-1804.md#bkmk_feedback)을 전송하여 작업이 어떻게 진행되었는지 알려주세요.
@@ -227,7 +234,8 @@ SCUP는 다른 카탈로그 및 시나리오를 계속 지원합니다. Configur
 
 
 ## <a name="office-customization-tool-integration-with-the-office-365-installer"></a>Office 365 설치 관리자와 Office 사용자 지정 도구 통합
-<!--1358149--> Office 사용자 지정 도구는 Configuration Manager 콘솔에서 Office 365 설치 관리자와 통합됩니다. Office 365에 대한 배포를 만들 때 최신 Office 관리 효율성 설정을 이제 동적으로 구성할 수 있습니다. Office 사용자 지정 도구는 새로운 빌드의 Office 365의 릴리스와 동시에 업데이트됩니다. Office 365에서 새 관리 효율성 설정은 사용할 수 있으면 바로 활용할 수 있습니다. 
+<!--1358149-->
+Office 사용자 지정 도구는 Configuration Manager 콘솔에서 Office 365 설치 관리자와 통합됩니다. Office 365에 대한 배포를 만들 때 최신 Office 관리 효율성 설정을 이제 동적으로 구성할 수 있습니다. Office 사용자 지정 도구는 새로운 빌드의 Office 365의 릴리스와 동시에 업데이트됩니다. Office 365에서 새 관리 효율성 설정은 사용할 수 있으면 바로 활용할 수 있습니다. 
 
 ### <a name="prerequisites"></a>필수 구성 요소
 - Configuration Manager 콘솔을 실행하는 컴퓨터는 HTTPS 포트 443을 통한 인터넷 액세스가 필요합니다. Office 365 클라이언트 설치 마법사는 Windows 표준 웹 브라우저 API를 사용하여 https://config.office.com 을 엽니다. 인터넷 프록시를 사용하는 경우 사용자는 이 URL에 액세스할 수 있어야 합니다.
@@ -246,7 +254,8 @@ SCUP는 다른 카탈로그 및 시나리오를 계속 지원합니다. Configur
 이 릴리스에서 CMG(클라우드 관리 게이트웨이)에 포함된 향상된 기능은 다음과 같습니다.
 
 ### <a name="simplified-client-bootstrap-command-line"></a>간소화된 클라이언트 부트스트랩 명령줄
-<!--1358215--> 이제 CMG를 통해 Configuration Manager 클라이언트를 인터넷에 설치할 때 명령줄 속성이 거의 필요하지 않습니다. 이 시나리오의 한 가지 예에 대한 자세한 내용은 공동 관리를 준비하는 경우 [Configuration Manager 클라이언트를 설치하는 명령줄](/sccm/core/clients/manage/co-management-prepare#command-line-to-install-configuration-manager-client)을 참조합니다. 
+<!--1358215-->
+CMG를 통해 Configuration Manager 클라이언트를 인터넷에 설치할 때 적은 수의 명령줄 속성이 이제 필요합니다. 이 시나리오의 한 가지 예에 대한 자세한 내용은 공동 관리를 준비하는 경우 [Configuration Manager 클라이언트를 설치하는 명령줄](/sccm/comanage/how-to-prepare-Win10#install-the-configuration-manager-client)을 참조합니다. 
 
 모든 시나리오에서 다음 명령줄 속성이 필요합니다.
   - CCMHOSTNAME  
@@ -265,10 +274,12 @@ SCUP는 다른 카탈로그 및 시나리오를 계속 지원합니다. Configur
 자세한 내용은 [클라이언트 설치 속성](/sccm/core/clients/deploy/about-client-installation-properties)을 참조합니다.
 
 ### <a name="download-content-from-a-cmg"></a>CMG에서 콘텐츠 다운로드
-<!--1358651--> 이전에 클라우드 배포 지점 및 CMG를 별도 역할로 배포해야 했습니다. 이제 이 릴리스에서 CMG는 클라이언트에게 콘텐츠를 제공할 수 있습니다. 이 기능은 필요한 인증서 및 Azure VM 비용을 줄여줍니다. 이 기능을 사용하려면 CMG 속성의 **설정** 탭에서 **CMG가 클라우드 배포 지점으로 기능하고 Azure 스토리지에서 콘텐츠를 제공하도록 허용**하는 새 옵션을 사용하도록 설정합니다. 
+<!--1358651-->
+이전에 클라우드 배포 지점 및 CMG를 별도 역할로 배포해야 했습니다. 이제 이 릴리스에서 CMG는 클라이언트에게 콘텐츠를 제공할 수 있습니다. 이 기능은 필요한 인증서 및 Azure VM 비용을 줄여줍니다. 이 기능을 사용하려면 CMG 속성의 **설정** 탭에서 **CMG가 클라우드 배포 지점으로 기능하고 Azure 스토리지에서 콘텐츠를 제공하도록 허용**하는 새 옵션을 사용하도록 설정합니다. 
 
 ### <a name="trusted-root-certificate-isnt-required-with-azure-ad"></a>신뢰할 수 있는 루트 인증서는 Azure AD에서 필요하지 않음
-<!--503899--> CMG를 만들 경우 설정 페이지에서 [신뢰할 수 있는 루트 인증서](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#cmg-trusted-root-certificate-to-clients)를 더 이상 제공할 필요가 없습니다. 이 인증서는 클라이언트 인증용 Azure AD(Azure Active Directory)를 사용할 때 필요하지 않지만 마법사에서는 필요합니다.
+<!--503899-->
+CMG를 만들 경우 설정 페이지에서 [신뢰할 수 있는 루트 인증서](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#bkmk_cmgroot)를 더 이상 제공할 필요가 없습니다. 이 인증서는 클라이언트 인증용 Azure AD(Azure Active Directory)를 사용할 때 필요하지 않지만 마법사에서는 필요합니다.
 
 > [!Important]  
 > PKI 클라이언트 인증 인증서를 사용하는 경우 여전히 신뢰할 수 있는 루트 인증서를 CMG에 추가해야 합니다.
@@ -276,7 +287,8 @@ SCUP는 다른 카탈로그 및 시나리오를 계속 지원합니다. Configur
 
 
 ## <a name="improvements-to-secure-client-communications"></a>보안 클라이언트 통신 개선
-<!--1358278,1358279--> 이 릴리스에서는 네트워크 액세스 계정에서 추가 종속성을 제거하여 [개선된 보안 클라이언트 통신](/sccm/core/get-started/capabilities-in-technical-preview-1805#improved-secure-client-communications)을 계속 반복합니다. 에 새 사이트 옵션을 설정 하면 **HTTP 사이트 시스템에 대한 Configuration Manager 생성 인증서 사용**하기 위해 새 사이트 옵션을 사용하는 경우 다음과 같은 시나리오는 배포 지점에서 콘텐츠를 다운로드하기 위한 네트워크 액세스 계정이 필요하지 않습니다.  
+<!--1358278,1358279-->
+이 릴리스에서는 네트워크 액세스 계정에서 추가 종속성을 제거하여 [개선된 보안 클라이언트 통신](/sccm/core/get-started/capabilities-in-technical-preview-1805#improved-secure-client-communications)을 계속 반복합니다. 에 새 사이트 옵션을 설정 하면 **HTTP 사이트 시스템에 대한 Configuration Manager 생성 인증서 사용**하기 위해 새 사이트 옵션을 사용하는 경우 다음과 같은 시나리오는 배포 지점에서 콘텐츠를 다운로드하기 위한 네트워크 액세스 계정이 필요하지 않습니다.  
 
 - 부팅 미디어 또는 PXE에서 실행하는 작업 순서
 - 소프트웨어 센터에서 실행하는 작업 순서  
@@ -286,7 +298,8 @@ SCUP는 다른 카탈로그 및 시나리오를 계속 지원합니다. Configur
 
 
 ## <a name="software-center-infrastructure-improvements"></a>소프트웨어 센터 인프라 개선 사항
-<!--1358309--> 소프트웨어 센터에 사용자가 사용할 수 있는 애플리케이션을 표시하는 데 더 이상 애플리케이션 카탈로그 역할이 필요하지 않습니다. 이 변경은 사용자에게 애플리케이션을 전달하기 위해 필요한 서버 인프라를 줄일 수 있습니다. 소프트웨어 센터는 [경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups#management-points)에 할당하여 대규모 환경의 크기 조정을 더 잘하도록 도움을 주는 이 정보를 얻으려면 관리 지점에 의존합니다.
+<!--1358309-->
+소프트웨어 센터에 사용자가 사용할 수 있는 애플리케이션을 표시하는 데 더 이상 애플리케이션 카탈로그 역할이 필요하지 않습니다. 이 변경은 사용자에게 애플리케이션을 전달하기 위해 필요한 서버 인프라를 줄일 수 있습니다. 소프트웨어 센터는 [경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups#management-points)에 할당하여 대규모 환경의 크기 조정을 더 잘하도록 도움을 주는 이 정보를 얻으려면 관리 지점에 의존합니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
  작업을 완료합니다. 그런 다음, [피드백](capabilities-in-technical-preview-1804.md#bkmk_feedback)을 전송하여 작업이 어떻게 진행되었는지 알려주세요.
@@ -301,7 +314,8 @@ SCUP는 다른 카탈로그 및 시나리오를 계속 지원합니다. Configur
 
 
 ## <a name="provision-windows-app-packages-for-all-users-on-a-device"></a>디바이스의 모든 사용자에 대해 Windows 앱 패키지 프로비전
-<!--1358310--> 이제 디바이스에서 모든 사용자에 대한 Windows 앱 패키지를 사용하여 애플리케이션을 프로비전할 수 있습니다. 이 시나리오의 일반적인 한 예는 Minecraft 교육용 버전처럼 비즈니스 및 교육용 Microsoft Store의 앱을 학교에서 학생들이 사용하는 모든 디바이스에 프로비전하는 것입니다. 전에 Configuration Manager는 사용자 당 이러한 애플리케이션 설치만 지원했습니다. 새 디바이스에 로그인한 후 학생은 앱에 액세스하기를 기다려야 합니다. 앱이 모든 사용자용 디바이스에 프로비전되는 경우 더 신속하게 생산적이 될 수 있습니다.
+<!--1358310-->
+이제 디바이스에서 모든 사용자에 대한 Windows 앱 패키지를 사용하여 응용 프로그램을 프로비전할 수 있습니다. 이 시나리오의 일반적인 한 예는 Minecraft 교육용 버전처럼 비즈니스 및 교육용 Microsoft Store의 앱을 학교에서 학생들이 사용하는 모든 디바이스에 프로비전하는 것입니다. 전에 Configuration Manager는 사용자 당 이러한 애플리케이션 설치만 지원했습니다. 새 디바이스에 로그인한 후 학생은 앱에 액세스하기를 기다려야 합니다. 앱이 모든 사용자용 디바이스에 프로비전되는 경우 더 신속하게 생산적이 될 수 있습니다.
 
 > [!Important]  
 > 디바이스에 다른 버전의 동일한 Windows 앱 패키지의 설치, 프로비저닝 및 업데이트 시 예기치 않은 결과가 발생할 수 있으니 주의하십시오. 이 동작은 앱을 프로비전하기 위해 Configuration Manager를 사용하는 경우에 발생할 수 있지만 사용자는 Microsoft 스토어에서 앱을 업데이트할 수 있습니다. 자세한 내용은 [비즈니스용 Microsoft Store에서 앱 관리](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business#next-steps)할 때 다음 단계 지침을 참조하세요.  
@@ -328,7 +342,8 @@ SCUP는 다른 카탈로그 및 시나리오를 계속 지원합니다. Configur
 
 
 ## <a name="improvements-to-the-surface-dashboard"></a>Surface 대시보드에 대한 개선 사항
-<!--1358654--> 이 릴리스에 포함된 [Surface 대시보드](/sccm/core/clients/manage/surface-device-dashboard)에 대한 향상된 기능은 다음과 같습니다.
+<!--1358654-->
+이 릴리스에 포함된 [Surface 대시보드](/sccm/core/clients/manage/surface-device-dashboard)에 대한 향상된 기능은 다음과 같습니다.
 - 그래프 섹션을 선택하면 이제 Surface 대시보드에 관련 디바이스 목록이 표시됩니다.
    - **Surface 디바이스 비율** 타일을 클릭하면 Surface 디바이스 목록이 열립니다.
    - **상위 5개 펌웨어 버전** 타일에서 막대를 클릭하면 해당 특정 펌웨어 버전으로 Surface 디바이스 목록이 열립니다.
@@ -337,7 +352,8 @@ SCUP는 다른 카탈로그 및 시나리오를 계속 지원합니다. Configur
 
 
 ## <a name="hardware-inventory-default-unit-revision"></a>하드웨어 인벤토리 기본 단위 수정 버전
-<!--514442-->[Configuration Manager 버전 1710](/sccm/core/plan-design/changes/whats-new-in-version-1710#site-infrastructure)에서 많은 보고 보기에 사용된 기본 단위는 메가바이트(MB)에서 기가바이트(GB)로 변경됐습니다. [큰 정수 값에 대한 하드웨어 인벤토리의 향상된 기능](/sccm/core/get-started/capabilities-in-technical-preview-1805#improvement-to-hardware-inventory-for-large-integer-values) 때문에 또한 고객 의견에 따라 이 기본 단위는 다시 MB로 됩니다.
+<!--514442-->
+[Configuration Manager 버전 1710](/sccm/core/plan-design/changes/whats-new-in-version-1710#site-infrastructure)에서 많은 보고 보기에 사용된 기본 단위는 메가바이트(MB)에서 기가바이트(GB)로 변경됐습니다. [큰 정수 값에 대한 하드웨어 인벤토리의 향상된 기능](/sccm/core/get-started/capabilities-in-technical-preview-1805#improvement-to-hardware-inventory-for-large-integer-values) 때문에 또한 고객 의견에 따라 이 기본 단위는 다시 MB로 됩니다.
 
 
 

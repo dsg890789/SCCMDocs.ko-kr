@@ -5,18 +5,18 @@ description: 소프트웨어 센터의 기능에 대해 알아봅니다.
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 06/18/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.assetid: 9e68de6e-2b33-442b-b674-a382728d9529
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eacd1d1be2564b718423b9d0db8d24b60aac1adb
-ms.sourcegitcommit: 369db96ee84299b5ab6d74b177e6366b3017fc54
+ms.openlocfilehash: c32f3f24f083537396c64c8f8426f8b6e6d6ee7a
+ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56589920"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67252029"
 ---
 # <a name="software-center-user-guide"></a>소프트웨어 센터 사용자 가이드
 
@@ -53,7 +53,8 @@ Windows 10 컴퓨터에서 소프트웨어 센터를 시작하는 가장 간단�
 
 
 ### <a name="install-multiple-applications"></a>여러 애플리케이션 설치 
-<!-- 1357126 --> 다음 단계를 시작하기 전에 완료를 기다리는 대신 한 번에 둘 이상의 응용 프로그램을 설치합니다. 일부 애플리케이션은 다음을 수행하는 데 적합하지 않습니다.
+<!-- 1357126 -->
+다음 단계를 시작하기 전에 완료를 기다리는 대신 한 번에 둘 이상의 애플리케이션을 설치합니다. 일부 애플리케이션은 다음을 수행하는 데 적합하지 않습니다.
 - 앱이 사용자에게 표시됩니다.
 - 앱이 다운로드되거나 설치되어 있지 않습니다.
 - IT 관리자에게는 앱을 설치하기 위한 승인이 필요하지 않습니다.
@@ -118,9 +119,13 @@ IT 관리자는 애플리케이션 카탈로그 웹 사이트에서 애플리케
 
 일반적으로 작동하는 시간을 나타냅니다. IT 관리자는 업무 시간 외에 소프트웨어 설치를 예약할 수 있습니다. 시스템 유지 관리 작업에 대해 매일 적어도 4시간을 허용합니다. IT 관리자는 업무 시간 동안 중요한 애플리케이션 및 소프트웨어 업데이트를 설치할 수 있습니다.
 
-- 드롭다운 목록을 클릭하여 이 컴퓨터를 사용하는 시작 및 종료 시간을 선택합니다. 기본적으로 이러한 값은 **오전 5시**에서 **오후 10시**까지입니다.
+   - 드롭다운 목록을 클릭하여 이 컴퓨터를 사용하는 시작 및 종료 시간을 선택합니다. 기본적으로 이러한 값은 **오전 5시**에서 **오후 10시**까지입니다.
 
-- 일반적으로 이 컴퓨터를 사용하는 요일의 옆에 있는 확인란을 선택합니다. 소프트웨어 센터는 기본적으로 평일만을 선택합니다.  
+   - 일반적으로 이 컴퓨터를 사용하는 요일의 옆에 있는 확인란을 선택합니다. 소프트웨어 센터는 기본적으로 평일만을 선택합니다.  
+
+정기적으로 이 컴퓨터를 사용하여 작업을 수행할지 여부를 지정합니다. 관리자가 애플리케이션을 자동으로 설치하거나 기본 컴퓨터에서 추가 애플리케이션을 사용할 수 있게 할 수 있습니다. <!--3485366-->
+
+   - 사용 중인 컴퓨터가 기본 컴퓨터인 경우 **이 컴퓨터에서 정기적으로 작업합니다**를 선택합니다.
 
 
 ### <a name="power-management"></a>전원 관리

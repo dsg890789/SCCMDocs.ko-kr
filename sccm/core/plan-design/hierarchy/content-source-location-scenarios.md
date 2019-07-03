@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd80955f65b9c18ca0e2ed74e47caecb0e826049
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 61565ee1d6c98a5ab3a3391d6444aed3f082ae64
+ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56129173"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251735"
 ---
 # <a name="content-source-location-scenarios-in-system-center-configuration-manager"></a>System Center Configuration Manager의 콘텐츠 원본 위치 시나리오
 
@@ -28,7 +28,7 @@ ms.locfileid: "56129173"
 > [!IMPORTANT]  
 > **사이트에서 버전 1511, 1602 또는 1606을 실행하는 경우** 이 항목의 정보가 인프라에 적용됩니다. 또한 이러한 버전의 Configuration Manager와 경계 그룹에 대한 자세한 내용은 [버전 1511, 1602 및 1606에 대한 경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups-for-1511-1602-and-1606)을 참조하세요.
 >
-> **사이트에서 버전 1610 이상을 실행하는 경우** [System Center Configuration Manager에 대한 사이트 경계 및 경계 그룹 정의](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#boundary-groups)의 정보를 사용하여 클라이언트에서 사용 가능한 콘텐츠가 있는 배포 지점을 찾는 방법을 파악합니다.
+> **사이트에서 버전 1610 이상을 실행하는 경우** [System Center Configuration Manager에 대한 사이트 경계 및 경계 그룹 정의](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups)의 정보를 사용하여 클라이언트에서 사용 가능한 콘텐츠가 있는 배포 지점을 찾는 방법을 파악합니다.
 
 
 

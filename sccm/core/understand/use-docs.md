@@ -2,7 +2,7 @@
 title: 문서 사용 방법
 titleSuffix: Configuration Manager
 description: Configuration Manager 기술 문서 라이브러리를 사용하는 방법에 대한 팁을 알아봅니다.
-ms.date: 09/07/2018
+ms.date: 06/20/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19681e8a84c35a2b26fa85e7d1227bead3ea42d5
-ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
+ms.openlocfilehash: 085f91bfb99bcfabbcdee8083fb3a3089a33057e
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66716132"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67285672"
 ---
 # <a name="how-to-use-the-configuration-manager-docs"></a>Configuration Manager 문서를 사용하는 방법
 
@@ -57,7 +57,8 @@ ms.locfileid: "66716132"
 
 - 특정 항목을 찾는 데 문제가 있습니까? [파일 피드백!](#bkmk_docfeedback) 이 문제를 신고하는 경우 사용하는 검색 엔진, 시도한 키워드 및 대상 문서를 제공합니다. 이 피드백은 Microsoft가 더 나은 검색을 위해 콘텐츠를 최적화하는 데 도움이 됩니다.  
 
-
+> [!TIP] 
+> Configuration Manager 1902 버전부터 새 **커뮤니티** 작업 영역에 **설명서** 노드가 있습니다. 이 노드는 Configuration Manager 설명서 및 지원 문서에 대한 최신 정보를 포함합니다. 자세한 내용은 [Configuration Manager 콘솔 사용](/sccm/core/servers/manage/admin-console#bkmk_doc-dashboard)을 참조하세요.
 
 ## <a name="bkmk_docfeedback"></a>피드백
 
