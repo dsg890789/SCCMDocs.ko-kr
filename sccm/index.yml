@@ -3,6 +3,12 @@ title: System Center Configuration Manager
 summary: Configuration Manager에 공식 제품 설명서
 metadata:
   ms.topic: hub-page
+  ms.openlocfilehash: 5839951dd659da3f88598def010330a50b1b4cf9
+  ms.sourcegitcommit: 65c8b29797bc0173f97b1b1144492d093a30ebb7
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 06/24/2019
+  ms.locfileid: "67344729"
 highlightedContent:
   items:
   - title: 새로운 기능
@@ -212,9 +218,3 @@ additionalContent:
 
         [Facebook의 ConfigMgr Professionals 그룹](https://www.facebook.com/groups/ConfigMgr2012) <br/>
   footer: 사이트에 문제가 있습니까? [알려주세요](https://docs.microsoft.com/sccm/core/understand/use-docs#bkmk_docfeedback)!
-ms.openlocfilehash: 5839951dd659da3f88598def010330a50b1b4cf9
-ms.sourcegitcommit: 65c8b29797bc0173f97b1b1144492d093a30ebb7
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67344729"

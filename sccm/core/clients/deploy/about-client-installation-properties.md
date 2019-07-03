@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f84b4b775c2baa59a5281a79f8154c0a6d0820f6
-ms.sourcegitcommit: 5feeb99605be5c4c39896bcee239cc274d89b3e8
+ms.openlocfilehash: feef839af1f51c4cbb291f4ed5bc6336da6409b3
+ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58508533"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67286870"
 ---
 # <a name="about-client-installation-parameters-and-properties-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 설치 매개 변수 및 속성 정보
 
@@ -206,7 +206,7 @@ CCMSetup이 설치 파일 다운로드를 중지하기 전까지 시도할 시�
 
 예: `CCMSetup.exe /config:&lt;Configuration File Name.txt\>`  
 
-올바른 파일 형식을 제공하려면 사이트 서버의 &lt;Configuration Manager 디렉터리\>\\bin\\&lt;플랫폼\> 폴더에 있는 mobileclienttemplate.tcf 파일을 사용합니다. 이 파일에는 또한 섹션에 대한 설명과 섹션 사용 방법이 있습니다. [클라이언트 설치] 섹션에서 다음 텍스트 뒤에 클라이언트 설치 속성을 지정합니다. **Install=INSTALL=ALL**.  
+올바른 파일 형식을 제공하려면 사이트 서버의 &lt;Configuration Manager 디렉터리\>\\bin\\&lt;플랫폼\> 폴더에 있는 mobileclienttemplate.tcf 파일을 사용합니다. 이 파일에는 또한 섹션에 대한 설명과 섹션 사용 방법이 있습니다. 클라이언트 설치 섹션에서 다음 텍스트 뒤에 클라이언트 설치 속성을 지정합니다. **Install=INSTALL=ALL**.  
 
 [클라이언트 설치] 섹션 항목의 예: `Install=INSTALL=ALL SMSSITECODE=ABC SMSCACHESIZE=100`  
 
@@ -266,7 +266,7 @@ ccmsetup.msi로 설치된 후에 ccmsetup.exe에 전달되는 명령줄 매개 �
 
 ### <a name="aadclientappid"></a>AADCLIENTAPPID
 
-Azure AD(Azure Active Directory) 클라이언트 앱 식별자를 지정합니다. 클라우드 관리에 대한 [Azure 서비스를 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)할 때 클라이언트 앱을 만들거나 가져옵니다. Azure 관리자가 Azure Portal에서 이 속성에 대한 값을 가져올 수 있습니다. 자세한 내용은 [애플리케이션 ID 가져오기](/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-application-id-and-authentication-key)를 참조하세요. **AADCLIENTAPPID** 속성의 경우 해당 애플리케이션 ID는 "원시" 애플리케이션 형식을 위한 것입니다.
+Azure AD(Azure Active Directory) 클라이언트 앱 식별자를 지정합니다. 클라우드 관리에 대한 [Azure 서비스를 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)할 때 클라이언트 앱을 만들거나 가져옵니다. Azure 관리자가 Azure Portal에서 이 속성에 대한 값을 가져올 수 있습니다. 자세한 내용은 [애플리케이션 ID 가져오기](/azure/active-directory/develop/howto-create-service-principal-portal#get-values-for-signing-in)를 참조하세요. **AADCLIENTAPPID** 속성의 경우 해당 애플리케이션 ID는 "원시" 애플리케이션 형식을 위한 것입니다.
 
 예: `ccmsetup.exe AADCLIENTAPPID=aa28e7f1-b88a-43cd-a2e3-f88b257c863b`
 
@@ -288,7 +288,7 @@ Azure AD 테넌트 식별자를 지정합니다. 클라우드 관리를 위한 [
 - 디바이스 상태 섹션에서 **TenantId** 값을 찾습니다. 예를 들면 `TenantId : 607b7853-6f6f-4d5d-b3d4-811c33fdd49a`
 
   > [!Note]
-  > Azure 관리자는 Azure Portal에서 이 값을 가져울 수도 있습니다. 자세한 내용은 [테넌트 ID 가져오기](/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-tenant-id) 참조
+  > Azure 관리자는 Azure Portal에서 이 값을 가져울 수도 있습니다. 자세한 내용은 [테넌트 ID 가져오기](/azure/active-directory/develop/howto-create-service-principal-portal#get-values-for-signing-in) 참조
 
 예: `ccmsetup.exe AADTENANTID=607b7853-6f6f-4d5d-b3d4-811c33fdd49a`
 

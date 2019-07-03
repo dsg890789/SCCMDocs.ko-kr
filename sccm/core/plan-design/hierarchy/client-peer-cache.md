@@ -11,18 +11,19 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b655b21b2d630d91d0e1a143e800d613882ca573
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 90c5c57d1717363d83fa921d68caced8cf9e8da1
+ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56135037"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251721"
 ---
 # <a name="peer-cache-for-configuration-manager-clients"></a>Configuration Manager 클라이언트용 피어 캐시
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-<!--1101436--> 피어 캐시를 사용하면 원격 위치의 클라이언트에 대한 콘텐츠 배포를 관리하는 데 도움이 됩니다. 피어 캐시는 클라이언트가 로컬 캐시의 콘텐츠를 다른 클라이언트와 직접 공유할 수 있도록 하는 기본 제공 Configuration Manager 솔루션입니다.   
+<!--1101436-->
+피어 캐시를 사용하면 원격 위치의 클라이언트로의 콘텐츠 배포를 관리하는 데 도움이 됩니다. 피어 캐시는 클라이언트가 로컬 캐시의 콘텐츠를 다른 클라이언트와 직접 공유할 수 있도록 하는 기본 제공 Configuration Manager 솔루션입니다.   
 
 > [!Note]  
 > Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  
@@ -39,7 +40,7 @@ ms.locfileid: "56135037"
 
 클라이언트 설정을 사용하여 클라이언트가 피어 캐시 원본을 사용하도록 설정합니다. 피어 캐시 클라이언트를 활성화할 필요가 없습니다. 클라이언트를 피어 캐시 원본으로 활성화하면 관리 지점이 이를 콘텐츠 위치 원본 목록에 포함합니다.<!--510397--> 이 프로세스에 대한 자세한 내용은 [작업](#operations)을 참조하세요.  
 
-피어 캐시 원본은 피어 캐시 클라이언트의 현재 경계 그룹의 멤버여야 합니다. 관리 지점은 인접 경계 그룹의 피어 캐시 원본을 클라이언트에 제공하는 콘텐츠 원본 목록에 포함되지 않습니다. 인접 경계 그룹의 배포 지점만 포함합니다. 현재 및 인접 경계 그룹에 대한 자세한 내용은 [경계 그룹](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups##a-namebkmkboundarygroupsa-boundary-groups)을 참조하세요.<!--SCCMDocs issue 685-->  
+피어 캐시 원본은 피어 캐시 클라이언트의 현재 경계 그룹의 멤버여야 합니다. 관리 지점은 인접 경계 그룹의 피어 캐시 원본을 클라이언트에 제공하는 콘텐츠 원본 목록에 포함되지 않습니다. 인접 경계 그룹의 배포 지점만 포함합니다. 현재 및 인접 경계 그룹에 대한 자세한 내용은 [경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups)을 참조하세요.<!--SCCMDocs issue 685-->  
 
 Configuration Manager 클라이언트는 피어 캐시를 사용하여 캐시의 모든 유형의 콘텐츠를 다른 클라이언트에 제공합니다. 이 콘텐츠에는 Office 365 파일과 빠른 설치 파일이 포함됩니다.<!--SMS.500850-->  
 
@@ -106,7 +107,7 @@ Configuration Manager 클라이언트는 피어 캐시를 사용하여 캐시의
     > [!Important]  
     > 1806 버전부터는 피어 캐시 원본이 다른 위치로 로밍되었는지 확인하는 Configuration Manager의 효율이 향상되었습니다. 이 동작을 통해 관리 지점은 피어 캐시 원본을 이전 위치가 아닌 새 위치의 클라이언트에 콘텐츠 원본으로 제공합니다. 로밍 피어 캐시 원본에 피어 캐시 기능을 사용하는 경우 사이트를 1806 버전으로 업데이트 한 후 모든 피어 캐시 원본을 최신 클라이언트 버전으로 업데이트해야 합니다. 피어 캐시 원본이 버전 1806 이상으로 업데이트되기 전에는, 관리 지점이 이러한 피어 캐시 원본을 콘텐츠 위치 목록에 포함하지 않습니다.<!--SCCMDocs issue 850-->  
 
-- 콘텐츠를 다운로드하기 전에, 관리 지점은 먼저 피어 캐시 원본이 온라인 상태인지 확인합니다.<!--sms.498675--> 이 유효성 검사는 TCP 포트 10123을 사용하는 클라이언트 알림의 "빠른 채널"을 통해 수행됩니다.<!--511673-->  
+- 콘텐츠를 다운로드하기 전에 관리 지점은 먼저 피어 캐시 원본이 온라인 상태인지 확인합니다.<!--sms.498675--> 이 유효성 검사는 TCP 포트 10123을 사용하는 클라이언트 알림의 “빠른 채널”을 통해 수행됩니다.<!--511673-->  
 
 > [!Note]  
 > 새 Configuration Manager 기능을 활용하려면 먼저 클라이언트를 최신 버전으로 업데이트합니다. 사이트 및 콘솔을 업데이트할 때 Configuration Manager 콘솔에 새 기능이 표시되지만 클라이언트 버전도 최신 버전이 될 때까지 전체 시나리오가 작동하지 않습니다.  
@@ -124,10 +125,11 @@ Windows 방화벽을 사용하는 피어 캐시 사용 클라이언트에서 Con
 
 
 ## <a name="bkmk_parts"></a> 부분 다운로드 지원
-<!--1357346--> 버전 1806부터 이제 클라이언트 피어 캐시 원본은 콘텐츠를 여러 부분으로 나눌 수 있습니다. 이러한 부분은 네트워크 전송을 최소화하여 WAN 사용률을 줄입니다. 관리 지점은 콘텐츠 부분의 더 자세한 추적을 제공합니다. 경계 그룹별로 동일한 콘텐츠의 2회 이상 다운로드를 제거하려고 시도합니다. 
+<!--1357346-->
+버전 1806부터 이제 클라이언트 피어 캐시 원본은 콘텐츠를 여러 부분으로 나눌 수 있습니다. 이러한 부분은 네트워크 전송을 최소화하여 WAN 사용률을 줄입니다. 관리 지점은 콘텐츠 부분의 더 자세한 추적을 제공합니다. 경계 그룹별로 동일한 콘텐츠의 2회 이상 다운로드를 제거하려고 시도합니다. 
 
 
-### <a name="example-scenario"></a>예제 시나리오 
+### <a name="example-scenario"></a>예제 시나리오
 
 Contoso는 다음과 같은 두 경계 그룹이 있는 단일 주 사이트를 운영합니다. HQ(본사) 및 지점. 경계 그룹 간에는 30분의 대체(fallback) 관계가 있습니다. 사이트의 관리 지점 및 배포 지점은 HQ 경계에만 있습니다. 지사 위치에는 로컬 배포 지점이 없습니다. 지사의 네 클라이언트 중 두 개는 피어 캐시 원본으로 구성됩니다. 
 
@@ -173,7 +175,8 @@ Contoso는 다음과 같은 두 경계 그룹이 있는 단일 주 사이트를 
 
 
 ## <a name="guidance-for-cache-management"></a>캐시 관리 지침
-<!--510645--> 피어 캐시는 Configuration Manager 클라이언트 캐시를 사용하여 콘텐츠를 공유합니다. 사용자 환경에서 클라이언트 캐시를 관리하는 방법에 대한 다음 사항을 고려하세요.  
+<!--510645-->
+피어 캐시는 구성 관리자 클라이언트 캐시를 사용하여 콘텐츠를 공유합니다. 사용자 환경에서 클라이언트 캐시를 관리하는 방법에 대한 다음 사항을 고려하세요.  
 
 - Configuration Manager 클라이언트 캐시는 배포 지점의 콘텐츠 라이브러리와 다릅니다. 사용자가 배포 지점에 배포하는 콘텐츠를 관리하는 동안 Configuration Manager 클라이언트는 해당 캐시의 콘텐츠를 자동으로 관리합니다. 피어 캐시 원본의 캐시에 있는 콘텐츠를 제어하는 데 도움이 되는 설정 및 메서드가 있습니다. 자세한 내용은 [Configuration Manager 클라이언트에 대한 클라이언트 캐시 구성](/sccm/core/clients/manage/manage-clients#BKMK_ClientCache)을 참조하세요.  
 
