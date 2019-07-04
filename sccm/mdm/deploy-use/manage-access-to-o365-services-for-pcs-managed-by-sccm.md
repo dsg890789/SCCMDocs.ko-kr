@@ -2,7 +2,7 @@
 title: Office 365 서비스에 대 한 액세스 관리
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에서 관리되는 PC의 Office 365 서비스에 대한 조건부 액세스를 구성하는 방법을 알아봅니다.
-ms.date: 03/21/2019
+ms.date: 07/03/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 434801b170ed5efcbbafa046a3ac1e94a615ed3d
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: 2583a53a366b338a3ff0096fb4f9ca2f9bdde94b
+ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62256032"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67551472"
 ---
 # <a name="manage-access-to-office-365-services-for-pcs-managed-by-system-center-configuration-manager"></a>System Center Configuration Manager에서 관리 되는 Pc에 대 한 Office 365 서비스에 대 한 액세스 관리
 
@@ -99,8 +99,8 @@ Microsoft Intune에서 등록하고 관리한 디바이스에 대한 조건부 �
     - **디바이스에서 코드 무결성을 사용하도록 설정해야 합니다.**
     - **디바이스에서 맬웨어 방지 조기 실행을 사용하도록 설정해야 합니다.**  
 
-    >[!Tip]  
-    > 디바이스 상태 증명에 대한 조건부 액세스 조건은 1710 버전에 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 도입되었습니다. 버전 1802 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.<!--1235616-->  
+    > [!Important]  
+    > 장치 상태 증명에 대 한 조건부 액세스 조건이 사용 되지 않으며 이후 릴리스에서 제거 됩니다. 자세한 내용은 [제거 하 고 사용 되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)합니다.<!--1235616-->  
 
     > [!Note]  
     > Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  

@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3eff032113b92055b32cb81c6cae9363c368a421
-ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
-ms.translationtype: MT
+ms.openlocfilehash: 94e7456472c17d61ce42ffaf2109a3254bde1280
+ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67159101"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67551268"
 ---
 # <a name="enable-data-sharing-for-desktop-analytics"></a>데이터 분석 데스크톱에 대 한 공유를 사용 하도록 설정
 
@@ -73,9 +73,6 @@ ms.locfileid: "67159101"
 | `https://kmwatsonc.events.data.microsoft.com` | 온라인 크래시 분석 합니다. Windows 10 1809 이상 버전에서에서 장치 상태 보고서에 필요합니다. |
 | `https://oca.telemetry.microsoft.com`  | 온라인 Analysis (OCA)입니다. Windows 10, 버전 1803에서 배포 상태를 모니터링 해야 합니다. |
 | `https://login.live.com` | 데스크톱 분석에 대 한 더 신뢰할 수 있는 장치 id를 제공 해야 합니다. <br> <br>최종 사용자가 Microsoft 계정 액세스를 비활성화 하려면이 끝점을 차단 하는 대신 정책 설정을 사용 합니다. 자세한 내용은 [기업에서 Microsoft 계정](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts#block-all-consumer-microsoft-account-user-authentication)합니다. |
-| `https://nexusrules.officeapps.live.com` | 향후 기능에 대 한 <!-- Used to request dynamic diagnostic data events from Office clients. This data is useful for drill-down and diagnostics purposes in the Desktop Analytics portal --> |
-| `https://nexus.officeapps.live.com` | 향후 기능에 대 한 <!-- Used by Office clients to send diagnostic data events from Office 14, Office 15, and versions of Office 16 earlier than 16.0.8702. It's used to collect usage and reliability signals events for Desktop Analytics. --> |
-| `https://office.pipe.aria.microsoft.com` | 향후 기능에 대 한 <!-- Used by Office clients to send diagnostic data events from universal/modern Office apps, and Win32 Office 16 versions later than 16.0.8702. It's used to collect usage and reliability signals events for Desktop Analytics. --> |
 | `https://graph.windows.net` | Configuration Manager 서버 역할에만 해당) (에 계층 데스크톱 Analytics에 연결 하는 경우 commercialid 입니다와 같은 설정이 자동으로 검색 하는 데 사용 합니다. |
 | `https://fef.msua06.manage.microsoft.com` | 동기화 장치 컬렉션 멤버 자격, 배포 계획 (Configuration Manager 서버 역할에만 해당)에 데스크톱 Analytics를 사용 하 여 장치 준비 상태를 사용 합니다. |
 

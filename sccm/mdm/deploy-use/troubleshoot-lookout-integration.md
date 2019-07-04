@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9d5ef21702421a776c7fbe692f6aa99672efcce
-ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
+ms.openlocfilehash: 9066983e631e1444cccb7b8c686c5b31e6fcf096
+ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67516079"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67551461"
 ---
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Intune과 Lookout 통합 문제 해결
 

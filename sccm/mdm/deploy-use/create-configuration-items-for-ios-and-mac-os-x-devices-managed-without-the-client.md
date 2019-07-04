@@ -1,7 +1,7 @@
 ---
-title: Intune을 사용하여 관리되는 iOS 및 Mac OS X 디바이스에 대한 구성 항목을 만드는 방법
+title: Intune을 사용 하 여 관리 되는 iOS 및 macOS 장치에 대 한 구성 항목 만들기
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager iOS 및 Mac OS X 구성 항목을 사용하여 iOS 및 Mac OS X 디바이스에 대한 설정을 관리할 수 있습니다.
+description: System Center Configuration Manager iOS 및 macOS 구성 항목을 사용 하 여 iOS 및 macOS 장치에 대 한 설정을 관리할 수 있습니다.
 ms.date: 03/28/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,18 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cadeb04e52e584cf260e84ee4bdd4ea6a07de23f
-ms.sourcegitcommit: a6a6507e01d819217208cfcea483ce9a2744583d
+ms.openlocfilehash: a528ef0e53744f5cac466cd08bf2426089a15907
+ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66748319"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67551497"
 ---
-# <a name="how-to-create-configuration-items-for-ios-and-mac-os-x-devices-managed-with-intune"></a>Intune으로 관리되는 iOS 및 Mac OS X 디바이스에 대한 구성 항목을 만드는 방법
+# <a name="how-to-create-configuration-items-for-ios-and-macos-devices-managed-with-intune"></a>Intune을 사용 하 여 관리 되는 iOS 및 macOS 장치에 대 한 구성 항목을 만드는 방법
 
-System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용하여 Configuration Manager에서 온-프레미스로 관리되거나 Microsoft Intune에 등록된 iOS 및 Mac OS X 디바이스에 대한 설정을 관리할 수 있습니다.  
+System Center Configuration Manager를 사용 하 여 **iOS 및 macOS** 구성 항목을 Configuration Manager에서 온-프레미스 관리 되거나 Microsoft Intune에 등록 된 iOS 및 macOS 장치에 대 한 설정을 관리 합니다.  
   
-## <a name="create-an-ios-and-mac-os-x-configuration-item"></a>IOS 및 Mac OS X 구성 항목 만들기  
+## <a name="create-an-ios-and-macos-configuration-item"></a>IOS 및 macOS 구성 항목 만들기  
   
 1. Configuration Manager 콘솔에서 **자산 및 준수**을 클릭합니다.  
   
@@ -32,13 +32,13 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
   
 4. **구성 항목 만들기 마법사** 의 **일반**페이지에서 구성 항목에 대한 이름 및 선택적 설명을 지정합니다.  
   
-5. **만들려는 구성 항목 유형 지정**에서 **iOS 및 Mac OS X**를 선택합니다.  
+5. 아래 **만들려는 구성 항목의 유형을 지정**를 선택 **iOS 및 macOS**합니다.  
   
 6. Configuration Manager 콘솔에서 구성 항목을 검색하고 필터링하기 위해 범주를 만들고 할당하려면 **범주**를 클릭합니다.  
   
-7. 마법사의 **지원되는 플랫폼** 페이지에서 구성 항목을 평가하는 특정 iOS 또는 Mac OS X 플랫폼을 선택합니다.  
+7. 에 **지원 되는 플랫폼** 구성 항목을 평가 하는 마법사, 선택 특정 iOS 또는 macOS 플랫폼의 페이지입니다.  
   
-8. 마법사의 **디바이스 설정** 페이지에서 구성하려는 설정 그룹을 선택합니다. 자세한 내용은 이 항목의 [iOS 및 Mac OS X 구성 항목 설정 참조](#ios-and-mac-os-x-configuration-item-settings-reference) 섹션을 참조하고 **다음**을 클릭합니다.  
+8. 마법사의 **디바이스 설정** 페이지에서 구성하려는 설정 그룹을 선택합니다. 참조 [iOS 및 macOS 구성 항목 설정 참조](#ios-and-mac-os-x-configuration-item-settings-reference) 대 한 정보와 클릭 한 다음이 항목의 **다음**합니다.  
   
    > [!TIP]  
    >  원하는 설정이 나열되지 않은 경우 **기본 설정 그룹에 없는 추가 설정 구성 확인란**을 선택합니다.  
@@ -66,7 +66,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
   
     **자산 및 준수** 작업 영역의 **구성 항목** 노드에서 새 구성 항목을 볼 수 있습니다.  
   
-##  <a name="ios-and-mac-os-x-configuration-item-settings-reference"></a>iOS 및 Mac OS X 구성 항목 설정 참조  
+##  <a name="ios-and-macos-configuration-item-settings-reference"></a>iOS 및 macOS 구성 항목 설정 참조  
   
 ###  <a name="password"></a>암호  
   
@@ -83,7 +83,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
 |**암호 수정**(감독 모드인 경우에만)|디바이스 암호를 추가, 변경 또는 제거할 수 있습니다.|
   
 ###  <a name="device"></a>디바이스  
- 이러한 설정은 iOS 및 Mac OS X 디바이스에 적용됩니다.  
+ 이러한 설정은 iOS 및 macOS 장치에 적용 됩니다.  
   
 |설정 이름|세부 정보|  
 |------------------|-------------|  
@@ -172,7 +172,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
 |**사진 동기화**|클라우드 서비스에 대한 사진 동기화를 수행할 수 있습니다.| 
 |**iCloud 사진 라이브러리**|**아니요**로 설정하면 사용자가 클라우드에 사진과 비디오를 저장할 수 있는 iCloud 사진 보관함을 사용할 수 없게 됩니다. **아니요**로 설정되면 iCloud 사진 라이브러리에서 디바이스로 완전히 다운로드되지 않은 모든 사진이 디바이스에서 제거됩니다.|
 |**iCloud 사진 공유**|디바이스에서 iCloud 사진 공유를 사용하지 않으려면 **아니요**로 설정합니다.|
-|**다른 디바이스에서 작업을 계속하도록 핸드오프**|사용자가 다른 iOS에서 iOS 디바이스 또는 Mac OS X 디바이스에서 시작하는 작업을 계속할 수 있습니다.|
+|**다른 디바이스에서 작업을 계속하도록 핸드오프**|사용자가 다른 iOS에서 iOS 장치 또는 macOS 장치에서 시작 하는 작업을 계속할 수 있습니다.|
 |**관리되는 앱에서 데이터를 iCloud와 동기화**|Intune을 사용하여 관리하는 앱에서 데이터를 사용자의 iCloud 계정과 동기화할 수 있습니다.|
 
   
@@ -258,14 +258,14 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
   
   보고서를 사용하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고 기능](../../core/servers/manage/reporting.md)을 참조하세요.  
   
-###  <a name="compliant-and-noncompliant-apps-mac-os-x"></a>규격 및 비규격 앱(Mac OS X)  
- 회사의 규격 및 비규격 Mac OS X 앱 목록을 지정할 수 있습니다. 그런 다음 보고서를 사용하여 비호환 앱이 설치된 디바이스와 관련 사용자를 표시할 수 있습니다.  
+###  <a name="compliant-and-noncompliant-apps-macos"></a>규격 및 비규격 앱 (macOS)  
+ 준수 또는 비준수 회사에서 macOS 앱 목록을 지정할 수 있습니다. 그런 다음 보고서를 사용하여 비호환 앱이 설치된 디바이스와 관련 사용자를 표시할 수 있습니다.  
   
  같은 구성 항목에서 호환 앱과 비호환 앱을 모두 지정할 수는 없습니다.  
   
 #### <a name="to-specify-the-compliant-or-noncompliant-apps-list"></a>호환 또는 비호환 앱 목록을 지정하려면  
   
-1. **규격 및 비규격 앱(Mac OS X)** 페이지에서 다음 정보를 지정합니다.  
+1. 에 **호환 및 비호환 앱 (macOS)** 페이지에서 다음 정보를 지정 합니다.  
   
    - **호환되지 않는 앱 목록** - 사용자가 설치하는 경우 호환되지 않는 것으로 보고되는 앱 목록을 지정하려면 이 옵션을 선택합니다.  
   
@@ -299,15 +299,15 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
   
   보고서를 사용하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고 기능](../../core/servers/manage/reporting.md)을 참조하세요.  
   
-### <a name="ios-and-mac-os-x-custom-profile-settings"></a>iOS 및 Mac OS X 사용자 지정 프로필 설정  
- **iOS 및 Mac OS X 사용자 지정 프로필** 을 사용하여 [Apple Configurator 도구](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 로 만든 설정을 iOS 및 Mac OS X 디바이스에 배포합니다. 이 도구를 사용하면 이러한 디바이스의 작업을 제어하는 많은 설정을 만들어 구성 프로필에 내보낼 수 있습니다. 그런 다음 이 구성 프로필을 iOS 및 Mac OS X 사용자 지정 프로필로 가져와서 조직의 사용자와 디바이스에 설정을 배포할 수 있습니다.  
+### <a name="ios-and-macos-custom-profile-settings"></a>iOS 및 macOS 사용자 지정 프로필 설정  
+ 사용 하 여 **iOS 및 macOS 사용자 지정 프로필** 사용 하 여 만든 설정을 배포 하는 [Apple Configurator 도구](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) iOS 및 macOS 장치에 합니다. 이 도구를 사용하면 이러한 디바이스의 작업을 제어하는 많은 설정을 만들어 구성 프로필에 내보낼 수 있습니다. 그런 다음이 구성 프로필을 iOS 및 macOS 사용자 지정 프로필을 가져올 하 고 조직에서 사용자 및 장치에 설정을 배포할 수 있습니다.  
   
 > [!NOTE]  
->  Apple Configurator 도구에서 내보내는 설정이 프로필을 배포하는 디바이스에 있는 iOS 또는 Mac OS X의 버전과 호환되는지 확인합니다. 호환되지 않는 설정을 해결하는 방법에 대한 정보를 보려면 [Apple 개발자](https://developer.apple.com/) 웹 사이트에서 구성 프로필 참조 및 모바일 디바이스 관리 프로토콜 참조를 검색하세요.  
+>  Apple Configurator 도구에서 내보내는 설정이 iOS 또는 macOS 프로필을 배포 하는 장치에서의 버전과 호환 되는지 확인 합니다. 호환되지 않는 설정을 해결하는 방법에 대한 정보를 보려면 [Apple 개발자](https://developer.apple.com/) 웹 사이트에서 구성 프로필 참조 및 모바일 디바이스 관리 프로토콜 참조를 검색하세요.  
   
-#### <a name="to-create-an-ios-and-mac-os-x-custom-profile"></a>iOS 및 Mac OS X 사용자 지정 프로필을 만들려면  
+#### <a name="to-create-an-ios-and-macos-custom-profile"></a>IOS 및 macOS 사용자 지정 프로필을 만들려면  
   
-1.  **구성 항목 만들기 마법사** 의 **iOS 및 Mac OS X 사용자 지정 프로필 설정 구성**페이지에서 다음 정보를 지정합니다.  
+1.  에 **iOS 및 macOS 사용자 지정 프로필 설정 구성** 페이지의 **구성 항목 만들기 마법사**, 다음 정보를 지정:  
   
     -   **사용자 지정 구성 프로필 이름(사용자에게 표시)** - 디바이스 및 Configuration Manager 보고서에 표시되는 정책의 이름을 입력합니다.  
   
@@ -322,7 +322,7 @@ System Center Configuration Manager **iOS 및 Mac OS X** 구성 항목을 사용
     -   **보고할 비준수 심각도** - 이 준수 정책이 비준수로 평가되는 경우 보고되는 심각도 수준을 지정합니다. 사용할 수 있는 심각도 수준은 다음과 같습니다.  
   
         > [!NOTE]  
-        >  Mac OS X 디바이스가 절전 모드이면 정책과 프로필을 배달하거나 인벤토리에 추가할 수 없습니다. 따라서 다음번에 디바이스가 절전 모드에서 해제될 때까지 Configuration Manager 콘솔에 오류가 있는 정책 설정 상태가 일시적으로 표시될 수도 있습니다.  
+        >  MacOS 장치를 절전 모드 이면 정책과 프로필 배달 이거나 안 인벤토리에 포함 된. 따라서 다음번에 디바이스가 절전 모드에서 해제될 때까지 Configuration Manager 콘솔에 오류가 있는 정책 설정 상태가 일시적으로 표시될 수도 있습니다.  
   
         -   **없음** 이 준수 규칙에 실패한 디바이스가 Configuration Manager 보고서에 오류 심각도를 보고하지 않습니다.  
   

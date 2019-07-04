@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 271803e42ba20d8d0340754b3167210414423014
-ms.sourcegitcommit: d8cfd0edf2579e2b08a0ca8a0a7b8f53d1e4196f
+ms.openlocfilehash: 246ee2c314df3d942d40d16ac9953580fed32803
+ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67463802"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67551244"
 ---
 # <a name="troubleshoot-desktop-analytics"></a>데스크톱 Analytics 문제 해결
 
@@ -57,14 +57,6 @@ ms.locfileid: "67463802"
 
 1. 서비스 연결 지점에서 다음 레지스트리 키로 이동 합니다. `HKLM\Software\Microsoft\SMS\Tracing\SMS_SERVICE_CONNECTOR`  
 2. 설정 된 **LoggingLevel** 값 `0`  
-3. (선택 사항) 사이트 데이터베이스에서 다음 SQL 명령을 실행 합니다.  
-
-    ```SQL
-    DELETE FROM M365AProperties WHERE Name = 'M365ATenantUpdateInfo_LastUpdateTime'
-    ```
-
-4. 다시 시작 합니다 **SMS_EXECUTIVE** 사이트 서버의 서비스
-
 
 
 ## <a name="bkmk_AzureADApps"></a> Azure AD 응용 프로그램

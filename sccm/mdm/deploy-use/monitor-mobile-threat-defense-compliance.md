@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cc5b38894155df35812d14397fb0d3aaea79c585
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: 9b77fabc6ea4f5823777e932011313c5e2de1acf
+ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62228408"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67551338"
 ---
 # <a name="monitor-mobile-threat-defense-compliance"></a>**Mobile Threat Defense 준수 모니터링**
 
@@ -35,7 +35,7 @@ Mobile Threat Defense 상태를 모니터링하려면:
 - 플랫폼에서 비규격으로 보고되는 디바이스 수
 - 디바이스 준수 상태에 관련된 모든 오류
 
-![](http://i.imgur.com/bmPsiWk.png)
+![장치 위협 방지 대시보드](device-threat-protection-dashboard.png)
 
 ## <a name="to-monitor-the-individual-compliance-status"></a>개별 준수 상태를 모니터링하려면
 
