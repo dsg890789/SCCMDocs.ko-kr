@@ -2,7 +2,7 @@
 title: 데이터 공유를 사용하도록 설정
 titleSuffix: Configuration Manager
 description: 데스크톱 Analytics를 사용 하 여 진단 데이터를 공유 하는 것에 대 한 참조 가이드입니다.
-ms.date: 06/17/2019
+ms.date: 07/03/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94e7456472c17d61ce42ffaf2109a3254bde1280
-ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
-ms.translationtype: HT
+ms.openlocfilehash: c5ba70b39330fd21077f5b7997e8aa92a1c57f42
+ms.sourcegitcommit: 3a3f40f3d39cbecfb9219a64c0185ea4b2ef9671
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67551268"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67562009"
 ---
 # <a name="enable-data-sharing-for-desktop-analytics"></a>데이터 분석 데스크톱에 대 한 공유를 사용 하도록 설정
 
@@ -33,6 +33,12 @@ ms.locfileid: "67551268"
 데스크톱 Analytics를 사용 하 여 Configuration Manager와 통합 하면 있습니다도 관리 하는데 사용할 장치에서 진단 데이터 수준입니다. 최상의 환경을 위해 Configuration Manager를 사용 합니다.
 
 데스크톱 분석의 기본 기능에서 작동 합니다 **기본** 진단 데이터 수준입니다. 사용 하지 않고 업데이트 된 장치에 대 한 사용량 또는 상태 데이터를 가져오는지 않습니다 합니다 **고급 (제한적)** 수준입니다. 사용할 수 있도록 하는 것이 좋습니다 합니다 **고급 (제한적)** 진단 데이터 수준입니다. 자세한 내용은 [Windows 10 향상 된 진단 데이터 이벤트 및 Windows Analytics에 의해 사용 되는 필드](https://docs.microsoft.com/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields)).
+
+> [!Important]   
+> Microsoft는 도구와 사용자의 개인 정보 제어 할당 하는 리소스를 제공 하기 위해 노력 합니다. 결과적으로, Microsoft는 유럽 국가 (스위스 및 EEA)에 있는 장치에서 다음 데이터를 수집 하지 않습니다.
+>
+> - Windows 8.1 장치에서 Windows 진단 데이터
+> - Windows 7에 대 한 앱 사용 현황 데이터
 
 자세한 내용은 [데스크톱 분석 개인 정보 보호](/sccm/desktop-analytics/privacy)합니다.
 

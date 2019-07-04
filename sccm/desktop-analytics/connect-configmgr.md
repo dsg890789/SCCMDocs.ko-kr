@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb16dd6e802c58f042b7eee8ae782e7118dabf1c
-ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
+ms.openlocfilehash: 098c83678585984bbe3dbeddf167e24116afd86b
+ms.sourcegitcommit: 3a3f40f3d39cbecfb9219a64c0185ea4b2ef9671
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67159191"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67562015"
 ---
 # <a name="how-to-connect-configuration-manager-with-desktop-analytics"></a>데스크톱 Analytics를 사용 하 여 Configuration Manager를 연결 하는 방법
 
@@ -107,6 +107,16 @@ ms.locfileid: "67159191"
     - **아웃 바운드 통신에 대 한 사용자 인증 프록시를 사용 하는 대상 컬렉션의 장치**: 기본적으로이 값은 **No**합니다. 사용자 환경에서 필요한 경우로 **예**합니다.  
 
     - **데스크톱 Analytics와 동기화 하도록 특정 컬렉션 선택**: 선택 **추가** 에서 추가 컬렉션을 포함 하 여 **컬렉션을 대상** 계층입니다. 이러한 컬렉션은 배포 계획을 사용 하 여 그룹화에 대 한 데스크톱 Analytics 포털에서 사용할 수 있습니다. 파일럿 및 파일럿 제외 컬렉션을 포함 해야 합니다.  <!-- 4097528 -->  
+
+        > [!Tip]  
+        > 컬렉션 선택 창에서 제한 된 컬렉션만 표시 합니다 **컬렉션을 대상**합니다.
+        >
+        > 다음 예제에서는 같고 대상 컬렉션으로 선택합니다. 추가 컬렉션에 추가 하면 같고, CollectionB, 및 CollectionC 하는 것이 표시 됩니다. CollectionD를 추가할 수 없습니다.
+        >
+        > - 같고: 제한 된 **모든 시스템** 컬렉션
+        >     - 같고 CollectionB: 제한
+        >         - CollectionB CollectionC: 제한
+        > - CollectionD: 제한을 받지 **모든 시스템** 컬렉션
 
         > [!Important]  
         > 이러한 컬렉션의 멤버 자격 변경으로 동기화 계속 합니다. 예를 들어 배포 계획을 Windows 7 멤버 관리 규칙을 사용 하 여 컬렉션을 사용 합니다. 해당 장치를 Windows 10으로 업그레이드 하 고 Configuration Manager 컬렉션 멤버 자격을 평가, 수집 및 배포 계획에서 해당 장치를 삭제 합니다.  
