@@ -2,7 +2,7 @@
 title: 클라이언트 설정
 titleSuffix: Configuration Manager
 description: 클라이언트 동작을 제어하기 위한 기본 및 사용자 지정 설정에 대해 알아봅니다.
-ms.date: 06/18/2019
+ms.date: 06/20/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 157cc09f08cf16056dc3424ddc377fbd95b0fe6e
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: 0c6bffc94abecb5f700fbb7236c923f26f3a0de0
+ms.sourcegitcommit: 949db4d2af7f605ee40610e45ae9d917b1045772
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67286845"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67314416"
 ---
 # <a name="about-client-settings-in-configuration-manager"></a>Configuration Manager의 클라이언트 설정 정보
 
@@ -652,6 +652,17 @@ Configuration Manager 버전 1806부터 소프트웨어 센터에서 애플리�
 
 예를 들어 조직에서 준수 정책을 사용하지 않고 소프트웨어 센터에서 디바이스 준수 탭을 숨기려면 **디바이스 준수 탭 사용**을 **아니요**로 설정합니다.
 
+### <a name="bkmk_swctr_defaults"></a> 소프트웨어 센터의 기본 보기 구성
+<!--3612112-->
+*(1902 버전에서 도입됨)*
+
+- **기본 애플리케이션 필터**를 **모두** 또는 **필수** 애플리케이션만으로 구성합니다.  
+
+    - 소프트웨어 센터는 항상 사용자의 기본 설정을 사용합니다. 사용자는 이 필터를 변경할 수 있으나, 소프트웨어 센터에 사용자의 선택 사항이 저장되지 않습니다.  
+
+ - **기본 애플리케이션 보기**를 **타일 보기** 또는 **목록 보기**로 설정합니다. 
+
+    - 사용자가 이 구성을 변경하면 소프트웨어 센터에 향후 사용자의 선택 사항이 저장됩니다. 
 
 
 ## <a name="software-deployment"></a>소프트웨어 배포  

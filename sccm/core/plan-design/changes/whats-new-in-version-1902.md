@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03610ad219a8ae89de63b87499d4ee9c628a271d
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: 66b89dd0f077e776cc0abe5f24062e017de5acc1
+ms.sourcegitcommit: 949db4d2af7f605ee40610e45ae9d917b1045772
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67285650"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67314427"
 ---
 # <a name="whats-new-in-version-1902-of-configuration-manager-current-branch"></a>Configuration Manager 현재 분기, 버전 1902의 새 기능
 
@@ -342,7 +342,7 @@ OS 이미지를 업데이트할 일정을 생성할 때 **이미지가 업데이
 
 ### <a name="configure-default-views-in-software-center"></a>소프트웨어 센터의 기본 보기 구성
 <!--3612112-->
-이 버전의 Configuration Manager에서 소프트웨어 센터를 사용자 지정하는 방법입니다.
+[***6월 20일 업데이트됨***] 이 버전의 Configuration Manager에서 소프트웨어 센터를 사용자 지정하는 방법입니다.
  
 - 애플리케이션의 기본 레이아웃을 타일 또는 목록으로 설정  
 
@@ -354,7 +354,7 @@ OS 이미지를 업데이트할 일정을 생성할 때 **이미지가 업데이
 
 클라이언트 설정의 **소프트웨어 센터** 그룹에서 이 설정들을 지정합니다.
 
-<!-- For more information, see [About client settings](/sccm/core/clients/deploy/about-client-settings#software-center). -->
+자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#bkmk_swctr_defaults)를 참조하세요.
 
 
 
