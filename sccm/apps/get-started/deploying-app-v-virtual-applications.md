@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8bd4b938690ebc3c370e3ae7a5e9152b9330430
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: 4598b89429ec3a9bd3bed31f57a6b681f88063cf
+ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67286517"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67515815"
 ---
 # <a name="deploy-app-v-virtual-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 App-V 가상 애플리케이션 배포
 
@@ -148,7 +148,7 @@ Configuration Manager와 함께 이 기능을 사용하려면 두 패키지 모�
 App-V Dynamic Suite Composition에 대한 자세한 내용은 관련 App-V 설명서를 참조하세요.  
 
 ##  <a name="converting-app-v-46-applications-to-app-v-5-applications"></a>App-V 4.6 애플리케이션을 App-V 5 애플리케이션으로 변환  
-App-V 4.6과 App-V 5 간에는 애플리케이션 패키지 형식이 변경되었습니다. App-V 4.6을 사용하여 시퀀스된 애플리케이션은 더 이상 지원되지 않습니다. 하지만 App-V 5의 패키지 변환기 도구를 사용하여 애플리케이션을 변환할 수 있습니다. 자세한 내용은 [APP-V 5 설명서](http://technet.microsoft.com/library/jj713472.aspx)를 참조하세요.  
+App-V 4.6과 App-V 5 간에는 애플리케이션 패키지 형식이 변경되었습니다. App-V 4.6을 사용하여 시퀀스된 애플리케이션은 더 이상 지원되지 않습니다. 하지만 App-V 5의 패키지 변환기 도구를 사용하여 애플리케이션을 변환할 수 있습니다. 자세한 내용은 [APP-V 5 설명서](https://technet.microsoft.com/library/jj713472.aspx)를 참조하세요.  
 
 App-V 4.6 애플리케이션을 App-V 5 애플리케이션으로 변환하려면 다음 단계를 따르세요.  
 
@@ -179,7 +179,7 @@ App-V 4.6 애플리케이션을 App-V 5 애플리케이션으로 변환하려면
 
 Configuration Manager로 App-V 5 가상 애플리케이션을 배포하려는 경우 모든 세 파일이 App-V 5 배포 유형을 만들 때 사용한 폴더와 동일한 폴더에 있어야 합니다. 폴더에 여러 파일이 있는 경우 Configuration Manager는 최신 파일을 사용합니다.  
 
-자세한 내용은 [APP-V 5 설명서](http://technet.microsoft.com/library/jj713466.aspx)를 참조하세요.  
+자세한 내용은 [APP-V 5 설명서](https://technet.microsoft.com/library/jj713466.aspx)를 참조하세요.  
 
 ##  <a name="app-v-local-interaction"></a>App-V 로컬 상호 작용  
 일부 애플리케이션 배포의 경우 클라이언트 컴퓨터에 로컬로 설치되는 애플리케이션도 있고, 동일한 클라이언트 컴퓨터에 가상 애플리케이션으로 배포되는 애플리케이션도 있습니다. 기본적으로, 로컬로 설치된 애플리케이션은 가상화된 애플리케이션과 직접 통신하거나 서로 인식할 수 없습니다. 이러한 현상은 App-V에서 제공되는 애플리케이션 격리의 정상적인 동작입니다. 로컬 상호 작용은 App-V 클라이언트의 기능으로, 클라이언트 컴퓨터에서 실행되는 로컬에 설치된 애플리케이션이 가상화된 애플리케이션을 확인하고 가상화된 애플리케이션과 통신할 수 있도록 각 애플리케이션에 대해 이 기능을 사용하도록 설정할 수 있습니다. Configuration Manager 및 App-V는 로컬 상호 작용을 완전히 지원합니다.  
@@ -187,7 +187,7 @@ Configuration Manager로 App-V 5 가상 애플리케이션을 배포하려는 �
 App-V 로컬 상호 작용 기능에 대한 자세한 내용은 관련 App-V 설명서를 참조하세요.  
 
 ##  <a name="app-v-5-shared-content-store"></a>App-V 5 공유 콘텐츠 저장소  
-Configuration Manager는 App-V 5 공유 콘텐츠 저장소 기능을 지원합니다. 자세한 내용은 [App-V 5.0 SCS(공유 콘텐츠 저장소) 계획](http://technet.microsoft.com/library/jj713431.aspx)항목을 참조하세요.  
+Configuration Manager는 App-V 5 공유 콘텐츠 저장소 기능을 지원합니다. 자세한 내용은 [App-V 5.0 SCS(공유 콘텐츠 저장소) 계획](https://technet.microsoft.com/library/jj713431.aspx)항목을 참조하세요.  
 
 ##  <a name="monitoring-virtual-applications"></a>가상 애플리케이션 모니터링  
 

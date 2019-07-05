@@ -10,12 +10,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 410c056b22bc4c52010e941a244cffa1fc3b2dff
-ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
+ms.openlocfilehash: f4efea7baf7820c4edfb61882b14812336c85518
+ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67194100"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67516176"
 ---
 # <a name="configuration-manager-on-azure---frequently-asked-questions"></a>Azure의 Configuration Manager - 질문과 대답
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -153,26 +153,26 @@ Configuration Manager는 Azure 부하 분산 장치에서 테스트되지 않았
 환경마다 다르기 때문에 단언하기 어렵습니다. 가장 좋은 방법은 Microsoft Azure 가격 계산기를 사용하여 환경의 비용을 계산해 보는 것입니다: https://azure.microsoft.com/pricing/calculator/
 
 ## <a name="additional-resources"></a>추가 리소스
-**기본 항목:** http://azure.microsoft.com/documentation/articles/fundamentals-introduction-to-azure/
+**기본 항목:** https://azure.microsoft.com/documentation/articles/fundamentals-introduction-to-azure/
 
 **Azure VM 컴퓨터 유형:**
  - 가상 머신 크기: https://azure.microsoft.com/documentation/articles/virtual-machines-size-specs/  
- - VM 가격 책정: http://azure.microsoft.com/pricing/details/virtual-machines/  
- - 저장소 가격 책정: http://azure.microsoft.com/pricing/details/storage/
+ - VM 가격 책정: https://azure.microsoft.com/pricing/details/virtual-machines/  
+ - 저장소 가격 책정: https://azure.microsoft.com/pricing/details/storage/
 
 **디스크 성능 고려 사항:**    
- - 프리미엄 디스크 소개: http://azure.microsoft.com/blog/2014/12/11/introducing-premium-storage-high-performance-storage-for-azure-virtual-machine-workloads/  
- - 자세한 프리미엄 디스크 정보: http://azure.microsoft.com/documentation/articles/storage-premium-storage-preview-portal/   
+ - 프리미엄 디스크 소개: https://azure.microsoft.com/blog/2014/12/11/introducing-premium-storage-high-performance-storage-for-azure-virtual-machine-workloads/  
+ - 자세한 프리미엄 디스크 정보: https://azure.microsoft.com/documentation/articles/storage-premium-storage-preview-portal/   
  - 스토리지용 최대 크기 및 성능 대상에 대한 차트의 간편한 컬렉션: https://azure.microsoft.com/documentation/articles/storage-scalability-targets/  
- - Premium Storage에 대한 기타 소개 및 원리에 대한 유용한 데이터: http://azure.microsoft.com/blog/2015/04/16/azure-premium-storage-now-generally-available-2/
+ - Premium Storage에 대한 기타 소개 및 원리에 대한 유용한 데이터: https://azure.microsoft.com/blog/2015/04/16/azure-premium-storage-now-generally-available-2/
 
 **가용성:**
  - Azure IaaS 작동 시간 SLA: https://azure.microsoft.com/support/legal/sla/virtual-machines/v1_0/  
  - 가용성 집합 설명: https://azure.microsoft.com/documentation/articles/virtual-machines-manage-availability/
 
 **연결:**
- - Express 경로 및 Azure VPN: http://azure.microsoft.com/blog/2014/06/10/expressroute-or-virtual-network-vpn-whats-right-for-me/
- - Express 경로 가격 책정: http://azure.microsoft.com/pricing/details/expressroute/
- - Express 경로에 대해 자세히: http://azure.microsoft.com/documentation/articles/expressroute-introduction/
+ - Express 경로 및 Azure VPN: https://azure.microsoft.com/blog/2014/06/10/expressroute-or-virtual-network-vpn-whats-right-for-me/
+ - Express 경로 가격 책정: https://azure.microsoft.com/pricing/details/expressroute/
+ - Express 경로에 대해 자세히: https://azure.microsoft.com/documentation/articles/expressroute-introduction/
 
  

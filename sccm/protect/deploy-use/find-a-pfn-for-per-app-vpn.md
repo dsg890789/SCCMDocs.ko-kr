@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d932a4f0bdec3d9bfadbe6c45c12c6f91865a70
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 7021175062a80dffa48a599266fd257c0967e806
+ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65494440"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67551396"
 ---
 # <a name="find-a-package-family-name-pfn-for-per-app-vpn"></a>앱별 VPN에 대한 PFN(패키지 패밀리 이름) 찾기
 
@@ -31,8 +31,9 @@ ms.locfileid: "65494440"
 
 Get-AppxPackage 구문은 다음과 같습니다.
 
-` Parameter Set: __AllParameterSets`
-` Get-AppxPackage [[-Name] <String> ] [[-Publisher] <String> ] [-AllUsers] [-User <String> ] [ <CommonParameters>]`
+```
+Get-AppxPackage [[-Name] <String> ] [[-Publisher] <String> ] [-AllUsers] [-User <String> ] [ <CommonParameters>]
+```
 
 > [!NOTE]
 > PFN을 검색하려면 PowerShell을 관리자로 실행해야 할 수 있습니다.
@@ -70,17 +71,17 @@ OneNote에 대해 검색된 정보는 다음과 같습니다.
 
 ## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>앱이 컴퓨터에 설치되어 있지 않은 경우 PFN 찾기
 
-1.  [https://www.microsoft.com/en-us/store/apps](https://www.microsoft.com/en-us/store/apps) 로 이동
+1.  [https://www.microsoft.com/en-us/store/apps](https://www.microsoft.com/en-us/store/apps ) 로 이동
 2.  검색 창에 앱의 이름을 입력합니다. 이 예제에서는 OneNote를 검색합니다.
 3.  앱에 대한 링크를 클릭합니다. 액세스하는 URL의 끝에 일련의 문자가 있습니다. 이 예제에서 URL은 다음과 같습니다. `https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`
-4.  다른 탭에서 다음 URL `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`를 붙여넣어 `<app id>`를 https://www.microsoft.com/en-us/store/apps에서 얻은 앱 ID로 대체합니다(3단계에서 URL의 끝에 있는 일련의 문자). 이 OneNote 예제에서는 `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`를 붙여넣습니다.
+4.  다른 탭에서 다음 URL `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`를 붙여넣어 `<app id>`를 https://www.microsoft.com/en-us/store/apps 에서 얻은 앱 ID로 대체합니다(3단계에서 URL의 끝에 있는 일련의 문자). 이 OneNote 예제에서는 `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`를 붙여넣습니다.
 
 Edge에서 원하는 정보가 표시됩니다. Internet Explorer에서 **열기**를 클릭하여 정보를 확인합니다. PFN 값은 첫 번째 줄에 지정됩니다. 예제의 경우 결과가 표시되는 방법은 다음과 같습니다.
 
-
-`{`
-`  "packageFamilyName": "Microsoft.Office.OneNote_8wekyb3d8bbwe",`
-`  "packageIdentityName": "Microsoft.Office.OneNote",`
-`  "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",`
-`  "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"`
-`}`
+```json
+{
+  "packageFamilyName": "Microsoft.Office.OneNote_8wekyb3d8bbwe",
+  "packageIdentityName": "Microsoft.Office.OneNote",
+  "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
+  "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+}

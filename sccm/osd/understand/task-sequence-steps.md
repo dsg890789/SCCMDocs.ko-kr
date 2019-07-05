@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d510ab884e471a6fc4803826c9c19e21b614273
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: e862fe4907d5e480fd8a19c28d890987f73240fa
+ms.sourcegitcommit: d8cfd0edf2579e2b08a0ca8a0a7b8f53d1e4196f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67285589"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67463783"
 ---
 # <a name="task-sequence-steps"></a>작업 순서 단계
 
@@ -1774,7 +1774,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 
 이 단계를 사용하여 Windows PE에서 새 OS로 전환합니다. 이 작업 순서 단계는 임의의 OS 배포 중 필요합니다. 구성 관리자 클라이언트를 새 OS에 설치하고 새 OS에서 작업 순서를 계속 실행하도록 준비합니다.  
 
-이 단계는 Windows PE에서만 실행됩니다. 전체 OS에서는 실행되지 않습니다.  
+이 단계는 전체 운영 체제를 Windows PE에서 작업 순서를 전환 하는 일을 담당 합니다. 단계는이 전환으로 인해 Windows PE 및 전체 운영 체제를 실행합니다. 그러나 Windows PE에서 시작 되는 전환 되므로 작업 순서가 Windows PE 부분 중 추가할만 있습니다.  
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 

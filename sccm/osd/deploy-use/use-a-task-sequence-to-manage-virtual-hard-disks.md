@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e998710be94a9c4063a156d25bc98b4f2f7c4a35
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 413c2a40e6745cfaa94a99aa2147eacb8ea90f9e
+ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56135731"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67516190"
 ---
 # <a name="use-a-task-sequence-to-manage-virtual-hard-disks-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 작업 순서를 사용하여 가상 하드 디스크 관리
 
@@ -45,7 +45,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
 
     -   Windows Server 2012 R2  
 
--   BIOS에서 가상화가 사용하도록 설정되어 있어야 하며 VHD를 관리할 수 있도록 Configuration Manager 콘솔을 실행하는 컴퓨터에 Hyper-V가 설치되어 있어야 합니다. 또한 모범 사례에 따라 가상 하드 디스크를 테스트하고 문제를 해결하는 데 유용한 Hyper-V 관리 도구를 설치해야 합니다. 예를 들어 Hyper-V의 작업 순서 진행률을 추적하기 위해 smsts.log 파일을 모니터링하려면 Hyper-V 관리 도구를 설치해야 합니다. Hyper-V 요구 사항에 대한 자세한 내용은 [Hyper-V 설치 필수 구성 요소](http://technet.microsoft.com/library/cc731898.aspx)를 참조하십시오.  
+-   BIOS에서 가상화가 사용하도록 설정되어 있어야 하며 VHD를 관리할 수 있도록 Configuration Manager 콘솔을 실행하는 컴퓨터에 Hyper-V가 설치되어 있어야 합니다. 또한 모범 사례에 따라 가상 하드 디스크를 테스트하고 문제를 해결하는 데 유용한 Hyper-V 관리 도구를 설치해야 합니다. 예를 들어 Hyper-V의 작업 순서 진행률을 추적하기 위해 smsts.log 파일을 모니터링하려면 Hyper-V 관리 도구를 설치해야 합니다. Hyper-V 요구 사항에 대한 자세한 내용은 [Hyper-V 설치 필수 구성 요소](https://technet.microsoft.com/library/cc731898.aspx)를 참조하십시오.  
 
     > [!IMPORTANT]  
     >  VHD를 만드는 프로세스에는 프로세서 시간과 메모리가 사용됩니다. 따라서 사이트 서버가 설치되지 않은 Configuration Manager 콘솔에서 VHD를 관리하는 것이 좋습니다.  
@@ -65,7 +65,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
  VHD를 만들려면 VHD를 만드는 단계가 포함된 작업 순서를 만든 후 "가상 하드 드라이브 만들기 마법사"에서 VHD를 만드는 작업 순서를 사용해야 합니다. 다음 섹션에서는 VHD를 만드는 단계를 설명합니다.  
 
 ###  <a name="BKMK_CreateTS"></a> VHD에 대한 작업 순서 만들기  
- VHD를 만드는 단계가 포함된 작업 순서를 만들어야 합니다. VHD를 만드는 데 사용할 단계를 만드는 **가상 하드 디스크에 기존 이미지 패키지 설치** 옵션이 작업 순서 만들기 마법사에 있습니다. 예를 들어 마법사는 Windows PE에서 다시 시작, 디스크 포맷/파티션, 운영 체제 적용, 컴퓨터 종료 등의 필수 단계를 추가합니다. 정식 운영 체제 상태에서 VHD를 만들 수 없습니다. 또한 가상 머신이 종료되어야 패키징이 완료되므로 Configuration Manager는 가상 머신이 종료될 때까지 기다려야합니다. 기본적으로 마법사는 5분 동안 기다린 후 가상 머신을 종료합니다. 작업 순서를 만든 후 필요한 경우 단계를 더 추가할 수 있습니다.  
+ VHD를 만드는 단계가 포함된 작업 순서를 만들어야 합니다. VHD를 만드는 데 사용할 단계를 만드는 **가상 하드 디스크에 기존 이미지 패키지 설치** 옵션이 작업 순서 만들기 마법사에 있습니다. 예를 들어 마법사에서 필수 단계인 Windows PE에서 다시 시작, 디스크 포맷 및 파티션 만들기, 운영 체제 적용, 컴퓨터 종료 등이 추가됩니다. 정식 운영 체제 상태에서 VHD를 만들 수 없습니다. 또한 가상 머신이 종료되어야 패키징이 완료되므로 Configuration Manager는 가상 머신이 종료될 때까지 기다려야합니다. 기본적으로 마법사는 5분 동안 기다린 후 가상 머신을 종료합니다. 작업 순서를 만든 후 필요한 경우 단계를 더 추가할 수 있습니다.  
 
 > [!IMPORTANT]  
 >  다음 절차를 수행하면 VHD를 성공적으로 만드는 필수 단계를 자동으로 포함하는 **가상 하드 디스크에 기존 이미지 패키지 설치** 옵션을 사용하여 작업 순서가 만들어집니다. 기존 작업 순서를 사용하도록 선택하거나 수동으로 작업 순서를 만드는 경우 작업 순서의 끝에 컴퓨터 종료 단계를 추가해야 합니다. 이 단계가 없으면 임시 가상 머신은 삭제되지 않고 VHD를 만드는 프로세스는 완료되지 않습니다. 하지만 마법사는 완료되어 작업에 성공한 것으로 보고합니다.  
@@ -98,7 +98,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
 
     -   **제품 키**: 설치할 Windows 운영 체제의 제품 키를 지정합니다. 인코딩된 볼륨 라이선스와 표준 제품 키를 지정할 수 있습니다. 인코딩되지 않은 제품 키를 사용할 경우 5자로 이루어진 각 그룹을 대시(-)로 구분해야 합니다. 예: *XXXXX-XXXXX-XXXXX-XXXXX-XXXXX*  
 
-    -   **서버 라이선싱 모드**: 서버 라이선스가 **사용자 단위**인지 **서버 단위**인지 또는 지정된 라이선스가 없는지 지정합니다. 서버 라이선스가 **서버 단위**인 경우 최대 서버 연결 수도 지정합니다.  
+    -   **서버 라이선싱 모드**: 서버 라이선스가 **사용자 단위**인지 **서버 당**인지 또는 지정된 라이선스가 없는지 지정합니다. 서버 라이선스가 **서버 단위**인 경우 최대 서버 연결 수도 지정합니다.  
 
     -   운영 체제 이미지를 배포할 때 사용되는 관리자 계정을 처리하는 방법을 지정합니다.  
 
@@ -142,7 +142,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
 3. **홈** 탭의 **만들기** 그룹에서 **가상 하드 디스크 만들기** 를 클릭하여 가상 하드 디스크 만들기 마법사를 시작합니다.  
 
    > [!NOTE]  
-   >  VHD를 관리하는 Configuration Manager 콘솔을 실행하는 컴퓨터에 Hyper-V가 설치되어 있어야 합니다. 그렇지 않으면 **가상 하드 디스크 만들기** 옵션을 사용할 수 없습니다. Hyper-V 요구 사항에 대한 자세한 내용은 [Hyper-V 설치 필수 구성 요소](http://technet.microsoft.com/library/cc731898.aspx)를 참조하십시오.  
+   >  VHD를 관리하는 Configuration Manager 콘솔을 실행하는 컴퓨터에 Hyper-V가 설치되어 있어야 합니다. 그렇지 않으면 **가상 하드 디스크 만들기** 옵션을 사용할 수 없습니다. Hyper-V 요구 사항에 대한 자세한 내용은 [Hyper-V 설치 필수 구성 요소](https://technet.microsoft.com/library/cc731898.aspx)를 참조하십시오.  
 
    > [!TIP]  
    >  VHD를 정리하려면 **가상 하드 디스크** 노드 아래에서 새 폴더를 만들거나 기존 폴더를 선택한 후 폴더에서 **가상 하드 디스크 만들기** 를 클릭합니다.  
@@ -153,7 +153,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
 
    -   **버전**: VHD의 버전 번호를 지정합니다. 이는 선택적 설정입니다.  
 
-   -   **주석**: VHD의 설명을 지정합니다.  
+   -   **주석**: VHD에 대한 설명을 지정합니다.  
 
    -   **경로**: VHD 파일이 만들어질 경로 및 파일 이름을 지정합니다.  
 
@@ -239,7 +239,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
 3. **홈** 탭의 **가상 하드 디스크** 그룹에서 **가상 하드 디스크 수정** 을 클릭하여 가상 하드 디스크 수정 마법사를 시작합니다.  
 
    > [!NOTE]  
-   >  VHD를 관리하는 Configuration Manager 콘솔을 실행하는 컴퓨터에 Hyper-V가 설치되어 있어야 합니다. 그렇지 않으면 **가상 하드 디스크 수정** 옵션을 사용할 수 없습니다. Hyper-V 요구 사항에 대한 자세한 내용은 [Hyper-V 설치 필수 구성 요소](http://technet.microsoft.com/library/cc731898.aspx)를 참조하십시오.  
+   >  VHD를 관리하는 Configuration Manager 콘솔을 실행하는 컴퓨터에 Hyper-V가 설치되어 있어야 합니다. 그렇지 않으면 **가상 하드 디스크 수정** 옵션을 사용할 수 없습니다. Hyper-V 요구 사항에 대한 자세한 내용은 [Hyper-V 설치 필수 구성 요소](https://technet.microsoft.com/library/cc731898.aspx)를 참조하십시오.  
 
 4. **일반** 페이지에서 다음 설정을 확인한 후 **다음**을 클릭합니다.  
 
@@ -298,7 +298,7 @@ System Center Configuration Manager에서는 Configuration Manager 콘솔에서 
 
     1.  **일정**: VHD에 소프트웨어 업데이트를 적용할 일정을 지정합니다.  
 
-    2.  **오류 발생 시 계속**: 오류가 발생한 경우에도 계속해서 이미지에 소프트웨어 업데이트를 적용하려면 이 옵션을 선택합니다.  
+    2.  **오류 발생 시 계속**: 오류가 있어도 계속 이미지에 소프트웨어 업데이트를 적용하려면 이 옵션을 선택합니다.  
 
 7.  **요약** 페이지에서 정보를 확인한 후에 **다음**을 클릭합니다.  
 

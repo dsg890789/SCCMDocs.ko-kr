@@ -3,12 +3,12 @@ title: System Center Configuration Manager
 summary: Configuration Manager에 공식 제품 설명서
 metadata:
   ms.topic: hub-page
-  ms.openlocfilehash: 5839951dd659da3f88598def010330a50b1b4cf9
-  ms.sourcegitcommit: 65c8b29797bc0173f97b1b1144492d093a30ebb7
+  ms.openlocfilehash: fdea6b136b93cc3afe62a9fd16efa365d9467b16
+  ms.sourcegitcommit: 3a3f40f3d39cbecfb9219a64c0185ea4b2ef9671
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 06/24/2019
-  ms.locfileid: "67344729"
+  ms.lasthandoff: 07/04/2019
+  ms.locfileid: "67562052"
 highlightedContent:
   items:
   - title: 새로운 기능
@@ -195,26 +195,29 @@ additionalContent:
   - title: 다른 콘텐츠
     items:
     - title: 개발
-      summary: >
-        [PowerShell](https://docs.microsoft.com/powershell/sccm/overview?view=sccm-ps) <br/>
-
-        [SDK 개념](https://docs.microsoft.com/sccm/develop/core/misc/system-center-configuration-manager-sdk) <br/>
-
-        [SDK 참조](https://docs.microsoft.com/sccm/develop/reference/configuration-manager-reference) <br/>
-
-        [SQL 보기](https://docs.microsoft.com/sccm/develop/core/understand/sqlviews/create-custom-reports-using-sql-server-views)
+      links:
+      - url: https://docs.microsoft.com/powershell/sccm/overview?view=sccm-ps
+        text: PowerShell
+      - url: https://docs.microsoft.com/sccm/develop/core/misc/system-center-configuration-manager-sdk
+        text: SDK 개념
+      - url: https://docs.microsoft.com/sccm/develop/reference/configuration-manager-reference
+        text: SDK 참조
+      - url: https://docs.microsoft.com/sccm/develop/core/understand/sqlviews/create-custom-reports-using-sql-server-views
+        text: SQL 보기
     - title: 도구
-      summary: >
-        [지원 센터](https://docs.microsoft.com/sccm/core/support/support-center) <br/>
-
-        [MDT](https://docs.microsoft.com/sccm/mdt/) <br/>
-
-        [Package Conversion Manager](https://docs.microsoft.com/sccm/apps/pcm/package-conversion-manager) <br/>
-
-        [자세히 보기 >](https://docs.microsoft.com/sccm/core/support/tools)
+      links:
+      - url: https://docs.microsoft.com/sccm/core/support/support-center
+        text: 지원 센터
+      - url: https://docs.microsoft.com/sccm/mdt/
+        text: MDT
+      - url: https://docs.microsoft.com/sccm/apps/pcm/package-conversion-manager
+        text: Package Conversion Manager
+      - url: https://docs.microsoft.com/sccm/core/support/tools
+        text: 자세히 보기 >
     - title: 다른 커뮤니티 사이트
-      summary: >
-        [Reddit의 ConfigMgr](https://www.reddit.com/r/sccm) <br/>
-
-        [Facebook의 ConfigMgr Professionals 그룹](https://www.facebook.com/groups/ConfigMgr2012) <br/>
+      links:
+      - url: https://www.reddit.com/r/sccm
+        text: Reddit의 ConfigMgr
+      - url: https://www.facebook.com/groups/ConfigMgr2012
+        text: Facebook의 ConfigMgr Professionals 그룹
   footer: 사이트에 문제가 있습니까? [알려주세요](https://docs.microsoft.com/sccm/core/understand/use-docs#bkmk_docfeedback)!

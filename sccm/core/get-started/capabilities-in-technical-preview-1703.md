@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9bdca6ded291ca6e32194c61ce24b33b690489cb
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: bc5ebcbec87edf52d7ca7d3f9e6f4341ec60c191
+ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67286239"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67515839"
 ---
 # <a name="capabilities-in-technical-preview-1703-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1703의 기능
 
@@ -159,4 +159,4 @@ Windows Analytics를 구성하려면 Configuration Manager 콘솔에서 **관리
 - **Windows 7, 8 및 8.1 디바이스에서 상용 데이터 수집에 옵트인**  선택  
 옵트인할 경우 이러한 운영 체제에서 수집되는 데이터에 대한 자세한 내용을 보려면 Microsoft에서 [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965)(Windows 7, Windows 8 및 Windows 8.1 appraiser 원격 분석 이벤트 및 필드) pdf 파일을 다운로드하세요.
 
-- **Internet Explorer 데이터 수집 구성** Windows 8.1 또는 이전 버전을 실행하는 디바이스에서 Internet Explorer 데이터 수집을 수행하면 업그레이드 준비 기능을 통해 Windows 10으로의 원활한 업그레이드에 방해가 될 수 있는 웹앱 비호환성 문제를 감지할 수 있습니다. Internet Explorer 데이터 수집은 인터넷 영역별로 사용 가능하게 설정할 수 있습니다. 인터넷 영역에 대한 자세한 내용은 [URL 보안 영역 정보](https://msdn.microsoft.com/en-us/library/ms537183(v=vs.85).aspx)를 참조하세요.
+- **Internet Explorer 데이터 수집 구성** Windows 8.1 또는 이전 버전을 실행하는 디바이스에서 Internet Explorer 데이터 수집을 수행하면 업그레이드 준비 기능을 통해 Windows 10으로의 원활한 업그레이드에 방해가 될 수 있는 웹앱 비호환성 문제를 감지할 수 있습니다. Internet Explorer 데이터 수집은 인터넷 영역별로 사용 가능하게 설정할 수 있습니다. 인터넷 영역에 대한 자세한 내용은 [URL 보안 영역 정보](https://msdn.microsoft.com/library/ms537183(v=vs.85).aspx)를 참조하세요.

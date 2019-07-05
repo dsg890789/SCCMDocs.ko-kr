@@ -4,12 +4,12 @@ ms.author: aaroncz
 ms.prod: configuration-manager
 ms.topic: include
 ms.date: 05/28/2019
-ms.openlocfilehash: fbbd33527ee83479c52f207127084ab4ad4ca123
-ms.sourcegitcommit: 18a94eb78043cb565b05cd0e9469b939b29cccf0
+ms.openlocfilehash: 1f809ca6499b502520a7662d9947f0799369bef2
+ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66355098"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67534680"
 ---
 ## <a name="BKMK_OSImagesApplyUpdates"></a> 이미지에 소프트웨어 업데이트 적용
 

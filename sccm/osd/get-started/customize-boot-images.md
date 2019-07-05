@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f794e24bd2626e11ce0f3c1664ad0e63eafbbe37
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 08156819af349af0f052cf2b58e8b4a44ef7b74b
+ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56134149"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67516204"
 ---
 # <a name="customize-boot-images-with-system-center-configuration-manager"></a>System Center Configuration Manager로 부팅 이미지 사용자 지정
 
@@ -44,7 +44,7 @@ Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deploy
 
   이 항목의 절차에서는 다음과 같은 Windows PE 패키지를 사용하여 Configuration Manager에 필요한 옵션 구성 요소를 부팅 이미지에 추가하는 방법을 보여 줍니다.  
 
-- **WinPE-WMI**: WMI(Windows Management Instrumentation) 지원을 추가합니다.  
+- **WinPE WMI**: Windows Management Instrumentation(WMI) 지원을 추가합니다.  
 
 - **WinPE-Scripting**: WSH(Windows Script Host) 지원을 추가합니다.  
 
@@ -52,9 +52,9 @@ Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deploy
 
   다른 Windows PE 패키지를 추가할 수 있습니다. 다음 리소스에서는 부팅 이미지에 추가할 수 있는 선택적 구성 요소에 대한 자세한 정보를 제공합니다.  
 
-- Windows PE 5는 [WinPE: 패키지 추가(선택적 구성 요소 참조)](https://msdn.microsoft.com/library/windows/hardware/dn938382\(v=vs.85\).aspx) 참조  
+- Windows PE 5의 경우 [WinPE: 패키지 추가(선택적 구성 요소 참조)](https://msdn.microsoft.com/library/windows/hardware/dn938382\(v=vs.85\).aspx)를 참조하세요.  
 
-- Windows PE 3.1의 경우, Windows 7 TechNet 문서 라이브러리의 [Windows PE 이미지에 패키지 추가](http://technet.microsoft.com/library/dd799312\(v=WS.10\).aspx) 항목을 참조하세요.  
+- Windows PE 3.1의 경우, Windows 7 TechNet 문서 라이브러리의 [Windows PE 이미지에 패키지 추가](https://technet.microsoft.com/library/dd799312\(v=WS.10\).aspx) 항목을 참조하세요.  
 
 > [!NOTE]
 >추가된 도구를 포함하는 사용자 지정된 부팅 이미지에서 WinPE로 부팅하면 WinPE에서 명령 프롬프트를 열고 도구의 파일 이름을 입력하여 실행합니다. 이러한 도구의 위치는 경로 변수에 자동으로 추가됩니다. 명령 프롬프트는 부팅 이미지 속성의 **사용자 지정** 탭에서 **명령 지원 사용(테스트 전용)** 설정이 선택된 경우에만 추가할 수 있습니다.
@@ -77,7 +77,7 @@ Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deploy
     여기서 C:\WinPEWAIK는 부팅 이미지가 포함된 폴더이고, C:\WinPEMount는 탑재된 폴더입니다.  
 
    > [!NOTE]
-   >  DISM에 대한 자세한 내용은 Windows 8.1 및 Windows 8 TechNet 문서 라이브러리의 [DISM - 배포 이미지 서비스 및 관리 기술 참조](http://technet.microsoft.com/library/hh824821.aspx) 항목을 참조하세요.
+   >  DISM에 대한 자세한 내용은 Windows 8.1 및 Windows 8 TechNet 문서 라이브러리의 [DISM - 배포 이미지 서비스 및 관리 기술 참조](https://technet.microsoft.com/library/hh824821.aspx) 항목을 참조하세요.
 
 5. 부팅 이미지를 탑재한 후 DISM을 사용하여 부팅 이미지에 선택적 구성 요소를 추가합니다. Windows PE 5의 경우 64비트 선택적 구성 요소는 <*설치 경로*>\Windows Kits\8.1\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs에 있습니다.  
 
@@ -113,7 +113,7 @@ Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deploy
     **dism.exe /image:C:\WinPEMount /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\8.1\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-WDS-Tools_en-us.cab"**  
 
    > [!TIP]
-   >  부팅 이미지에 추가할 수 있는 선택적 구성 요소에 대한 자세한 내용은 Windows 8.1 및 Windows 8 TechNet 문서 라이브러리의 [Windows PE 선택적 구성 요소 참조](http://technet.microsoft.com/library/hh824926.aspx) 항목을 참조하세요.  
+   >  부팅 이미지에 추가할 수 있는 선택적 구성 요소에 대한 자세한 내용은 Windows 8.1 및 Windows 8 TechNet 문서 라이브러리의 [Windows PE 선택적 구성 요소 참조](https://technet.microsoft.com/library/hh824926.aspx) 항목을 참조하세요.  
 
 6. 필요한 경우 DISM을 사용하여 특정 드라이버를 부팅 이미지에 추가합니다. 다음을 입력하여 부팅 이미지에 드라이버를 추가하세요.  
 
@@ -137,7 +137,7 @@ Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deploy
 
    4. **데이터 원본** 페이지에서 다음 옵션을 지정한 후 **다음**을 클릭합니다.  
 
-      - **경로** 상자에서 업데이트된 부팅 이미지 파일의 경로를 지정합니다. 지정하는 경로는 UNC 형식의 유효한 네트워크 경로여야 합니다. 예를 들어 **\\\\<**<em>servername</em>**>\\<**<em>WinPEWAIK 공유</em>**>\winpe.wim**과 같습니다.  
+      - **경로** 상자에서 업데이트된 부팅 이미지 파일의 경로를 지정합니다. 지정하는 경로는 UNC 형식의 유효한 네트워크 경로여야 합니다. 예를 들어 **\\\\<** <em>servername</em> **>\\<** <em>WinPEWAIK 공유</em> **>\winpe.wim**과 같습니다.  
 
       - **부팅 이미지** 드롭다운 목록에서 부팅 이미지를 선택합니다. WIM 파일에 여러 부팅 이미지가 포함되어 있는 경우 각 이미지가 나열됩니다.  
 
@@ -161,7 +161,7 @@ Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deploy
 
    4. 명령 프롬프트에서 **wbemtest** 를 입력하여 Windows Management Instrumentation 테스터를 엽니다.  
 
-   5. **네임스페이스**에 **\\\\<**<em>SMS 공급자 컴퓨터</em>**>\root\sms\site_<**<em>사이트 코드</em>**>**>를 입력하고 **연결**을 클릭합니다.  
+   5. **네임스페이스**에 **\\\\<** <em>SMS 공급자 컴퓨터</em> **>\root\sms\site_<** <em>사이트 코드</em> **>** >를 입력하고 **연결**을 클릭합니다.  
 
    6. **인스턴스 열기**를 클릭하고 **sms_bootimagepackage.packageID="<패키지 ID\>"** 를 입력한 후 **확인**을 클릭합니다. 패키지ID의 경우, 3단계에서 확인한 값을 입력합니다.  
 
@@ -199,7 +199,7 @@ Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deploy
     여기서 C:\WinPEWAIK는 부팅 이미지가 포함된 폴더이고, C:\WinPEMount는 탑재된 폴더입니다.  
 
    > [!NOTE]
-   >  DISM에 대한 자세한 내용은 Windows 7 TechNet 문서 라이브러리의 [배포 이미지 서비스 및 관리 기술 참조](http://technet.microsoft.com/library/dd744256\(v=ws.10\).aspx)를 참조하세요.  
+   >  DISM에 대한 자세한 내용은 Windows 7 TechNet 문서 라이브러리의 [배포 이미지 서비스 및 관리 기술 참조](https://technet.microsoft.com/library/dd744256\(v=ws.10\).aspx)를 참조하세요.  
 
 5. 부팅 이미지를 탑재한 후 DISM을 사용하여 부팅 이미지에 선택적 구성 요소를 추가합니다. 예를 들어 Windows PE 3.1에서 선택적 구성 요소는 <*설치 경로*>\Windows AIK\Tools\PETools\amd64\WinPE_FPs\\에 있습니다.  
 
@@ -229,7 +229,7 @@ Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deploy
     **dism.exe /image:C:\WinPEMount /add-package /packagepath:"C:\Program Files\Windows AIK\Tools\PETools\amd64\WinPE_FPs\en-us\winpe-wds-tools_en-us.cab"**  
 
    > [!TIP]
-   >  부팅 이미지에 추가할 수 있는 여러 패키지에 대한 자세한 내용은 Windows 7 TechNet 문서 라이브러리의 [Windows PE 이미지에 패키지 추가](http://technet.microsoft.com/library/dd799312\(v=WS.10\).aspx)를 참조하세요.  
+   >  부팅 이미지에 추가할 수 있는 여러 패키지에 대한 자세한 내용은 Windows 7 TechNet 문서 라이브러리의 [Windows PE 이미지에 패키지 추가](https://technet.microsoft.com/library/dd799312\(v=WS.10\).aspx)를 참조하세요.  
 
 6. 필요한 경우 DISM을 사용하여 특정 드라이버를 부팅 이미지에 추가합니다. 필요한 경우 다음을 입력하여 부팅 이미지에 드라이버를 추가하세요.  
 
@@ -253,7 +253,7 @@ Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deploy
 
    4. **데이터 원본** 페이지에서 다음 옵션을 지정한 후 **다음**을 클릭합니다.  
 
-      - **경로** 상자에서 업데이트된 부팅 이미지 파일의 경로를 지정합니다. 지정하는 경로는 UNC 형식의 유효한 네트워크 경로여야 합니다. 예를 들어 **\\\\<**<em>servername</em>**>\\<**<em>WinPEWAIK 공유</em>**>\winpe.wim**과 같습니다.  
+      - **경로** 상자에서 업데이트된 부팅 이미지 파일의 경로를 지정합니다. 지정하는 경로는 UNC 형식의 유효한 네트워크 경로여야 합니다. 예를 들어 **\\\\<** <em>servername</em> **>\\<** <em>WinPEWAIK 공유</em> **>\winpe.wim**과 같습니다.  
 
       - **부팅 이미지** 드롭다운 목록에서 부팅 이미지를 선택합니다. WIM 파일에 여러 부팅 이미지가 포함되어 있는 경우 각 이미지가 나열됩니다.  
 
@@ -277,7 +277,7 @@ Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deploy
 
    4. 명령 프롬프트에서 **wbemtest** 를 입력하여 Windows Management Instrumentation 테스터를 엽니다.  
 
-   5. **네임스페이스**에 **\\\\<**<em>SMS 공급자 컴퓨터</em>**>\root\sms\site_<**<em>사이트 코드</em>**>**>를 입력하고 **연결**을 클릭합니다.  
+   5. **네임스페이스**에 **\\\\<** <em>SMS 공급자 컴퓨터</em> **>\root\sms\site_<** <em>사이트 코드</em> **>** >를 입력하고 **연결**을 클릭합니다.  
 
    6. **인스턴스 열기**를 클릭하고 **sms_bootimagepackage.packageID="<패키지 ID\>"** 를 입력한 후 **확인**을 클릭합니다. 패키지ID의 경우, 3단계에서 확인한 값을 입력합니다.  
 

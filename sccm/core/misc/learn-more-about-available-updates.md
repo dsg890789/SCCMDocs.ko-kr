@@ -11,17 +11,17 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c342a927fff8d9e120e15695bcd7287a9249648
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 22edda205cc513119b03210cb416a256ec636a80
+ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56120476"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67516057"
 ---
 # <a name="learn-more-about-available-updates-for-system-center-configuration-manager"></a>System Center Configuration Manager의 사용 가능한 업데이트에 대한 자세한 내용을 알아봅니다.
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 릴리스 버전을 사용하는 경우 [System Center Configuration Manager의 새로운 기능](http://technet.microsoft.com/library/mt622084.aspx)을 참조하세요.  
+System Center Configuration Manager의 릴리스 버전을 사용하는 경우 [System Center Configuration Manager의 새로운 기능](https://technet.microsoft.com/library/mt622084.aspx)을 참조하세요.  
 
- System Center Configuration Manager의 Technical Preview 버전을 사용하는 경우 [System Center Configuration Manager Technical Preview](http://technet.microsoft.com/library/mt595861.aspx)를 참조하세요.
+ System Center Configuration Manager의 Technical Preview 버전을 사용하는 경우 [System Center Configuration Manager Technical Preview](https://technet.microsoft.com/library/mt595861.aspx)를 참조하세요.

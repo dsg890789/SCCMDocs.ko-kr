@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 975768c5bfaf239c1f8cd342c988e06dac5d1269
-ms.sourcegitcommit: abfc9e1b3945637fa93ca8d3a11519493a5d5391
+ms.openlocfilehash: 3626514d4cd7f2d26e3c198931eb6fad49123dd2
+ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264559"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67551302"
 ---
 # <a name="cmpivot-for-real-time-data-in-configuration-manager"></a>Configuration Manager에서 실시간 데이터에 대한 CMPivot
 
@@ -124,7 +124,7 @@ CMPivot 창은 다음과 같은 요소를 포함합니다.
     - CMPivot은 [KQL(Kusto 쿼리 언어)](https://docs.microsoft.com/azure/kusto/query/) 일부를 사용합니다.  
 
     - 쿼리 창에서 콘텐츠를 잘라내기, 복사 또는 붙여넣습니다.  
-
+    <!-- markdownlint-disable MD038 -->
     - 기본적으로 이 창에서는 IntelliSense를 사용합니다. 예를 들어 `D` 입력을 시작하는 경우 IntelliSense는 해당 문자로 시작하는 모든 엔터티를 제안합니다. 옵션을 선택하고 탭 키를 눌러 삽입합니다. 파이프 문자 및 공백 `| `을 입력하면, IntelliSense에서 모든 테이블 연산자를 제안합니다. `summarize`를 삽입하고 공백을 입력하면, IntelliSense에서 모든 집계 함수를 제안합니다. 이러한 연산자 및 함수에 대한 자세한 내용은 CMPivot에서 **홈** 탭을 클릭합니다.  
 
     - 쿼리 창은 또한 다음 옵션을 제공합니다.  

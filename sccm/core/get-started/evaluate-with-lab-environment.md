@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e9f851f6dcd21de261729215bad196233610272
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 78fdf0a07d1a299f7d10a0325b48f0c1fcfde2e3
+ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56127680"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67516004"
 ---
 # <a name="evaluate-system-center-configuration-manager-by-building-your-own-lab-environment"></a>고유한 랩 환경을 구축하여 System Center Configuration Manager 평가
 
@@ -49,7 +49,7 @@ ms.locfileid: "56127680"
  이 랩을 구축하면 작업할 수 있는 기능 환경이 구현되게 됩니다. 그러나 이 환경은 시스템 성능, 하드 디스크 공간 관리, SQL Server 스토리지 등의 요소에 대해 최적화되지 않습니다.  
 
 ##  <a name="BKMK_EvalRec"></a> 랩을 빌드하기 전의 권장 자료  
- [System Center Configuration Manager에 대한 설명서](http://docs.microsoft.com/sccm/)에서 다양한 콘텐츠를 사용할 수 있습니다. 랩 빌드를 시작하기 전에 이 라이브러리에서 다음 항목을 참조하는 것이 좋습니다.  
+ [System Center Configuration Manager에 대한 설명서](https://docs.microsoft.com/sccm/)에서 다양한 콘텐츠를 사용할 수 있습니다. 랩 빌드를 시작하기 전에 이 라이브러리에서 다음 항목을 참조하는 것이 좋습니다.  
 
 -   [System Center Configuration Manager 소개](../../core/understand/introduction.md)에서 Configuration Manager 콘솔, 최종 사용자 포털 및 예제 시나리오에 대한 핵심 개념을 알아봅니다.  
 

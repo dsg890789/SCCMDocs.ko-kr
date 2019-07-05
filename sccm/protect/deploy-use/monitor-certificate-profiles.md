@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f350f10db18c1de599337afac54596d2dfd988ea
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 1f5518346f0085293a2a9b5422c7aef375076d0c
+ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65494414"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67516164"
 ---
 # <a name="how-to-monitor-certificate-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 인증서 프로필을 모니터링하는 방법
 
@@ -58,7 +58,7 @@ SCEP 인증서 준수 여부를 모니터링하려면 [보고서](#view-complian
    |    0x00000004     |                                                                                                          등록이 지연되고 있습니다.                                                                                                           |
    |    0x00000010     |                                                                                                               오류가 발생했습니다.                                                                                                                |
    |    0x00000020     |                                                                                                        등록 상태를 알 수 없습니다.                                                                                                        |
-   |    0x00000040     | 상태 정보를 건너뛰었습니다. 이러한 현상은 하이퍼링크 "<http://msdn.microsoft.com/windows/ms721572>" \l "_security_certification_authority_gly" 인증 기관이 유효하지 않거나 모니터링용으로 선택되지 않은 경우 발생할 수 있습니다. |
+   |    0x00000040     | 상태 정보를 건너뛰었습니다. 이러한 현상은 하이퍼링크 "<https://msdn.microsoft.com/windows/ms721572>" \l "_security_certification_authority_gly" 인증 기관이 유효하지 않거나 모니터링용으로 선택되지 않은 경우 발생할 수 있습니다. |
    |    0x00000100     |                                                                                                           등록이 거부되었습니다.                                                                                                           |
 
 ##  <a name="view-compliance-results-by-using-reports"></a>보고서를 사용하여 준수 결과 보기

@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c3058eed3cd7fe4430824d5a55f155694a2ed44
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.openlocfilehash: eddce66fe58ca44ece7e9c2f15a5f602ad7a78d7
+ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177027"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67516081"
 ---
 # <a name="learn-how-clients-find-site-resources-and-services-for-system-center-configuration-manager"></a>클라이언트가 System Center Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법
 
@@ -132,12 +132,12 @@ MP 목록은 클라이언트가 이전에 식별한 관리 지점의 우선 순�
 이때 클라이언트는 사용할 새 관리 지점을 임의로 선택합니다.  
 
 ##  <a name="bkmk_ad"></a> Active Directory  
-도메인에 가입된 클라이언트는 서비스 위치에 AD DS를 사용할 수 있습니다. 이를 위해서는 사이트에서 [데이터를 Active Directory에 게시](http://technet.microsoft.com/library/hh696543.aspx)해야 합니다.  
+도메인에 가입된 클라이언트는 서비스 위치에 AD DS를 사용할 수 있습니다. 이를 위해서는 사이트에서 [데이터를 Active Directory에 게시](https://technet.microsoft.com/library/hh696543.aspx)해야 합니다.  
 
 클라이언트는 다음 조건을 모두 충족하는 경우 서비스 위치에 AD DS를 사용할 수 있습니다.  
 
 -   Active Directory [스키마가 확장](https://technet.microsoft.com/library/mt345589.aspx)되었거나 System Center 2012 Configuration Manager용으로 확장된 경우  
--   [Active Directory 포리스트가 게시에 대해 구성](http://technet.microsoft.com/library/hh696542.aspx)되고, Configuration Manager 사이트가 게시하도록 구성된 경우  
+-   [Active Directory 포리스트가 게시에 대해 구성](https://technet.microsoft.com/library/hh696542.aspx)되고, Configuration Manager 사이트가 게시하도록 구성된 경우  
 -   클라이언트 컴퓨터가 Active Directory 도메인의 구성원이고 글로벌 카탈로그 서버에 액세스할 수 있습니다.  
 
 클라이언트는 AD DS에서 서비스 위치에 사용할 관리 지점을 찾을 수 없는 경우 DNS를 사용하려고 시도합니다.  
@@ -149,7 +149,7 @@ MP 목록은 클라이언트가 이전에 식별한 관리 지점의 우선 순�
 -   AD DS 스키마가 Configuration Manager를 지원하도록 연장되어 있지 않습니다.
 -   인트라넷의 클라이언트가 Configuration Manager 게시에 사용할 수 없는 포리스트에 있습니다.  
 -   클라이언트가 작업 그룹 컴퓨터에 있고, 인터넷 전용 클라이언트 관리용으로 구성되어 있지 않습니다. 인터넷용으로 구성된 작업 그룹 클라이언트는 인터넷 연결 관리 지점과만 통신하며, 서비스 위치에 DNS를 사용하지 않습니다.  
--   [DNS에서 관리 지점을 찾도록 클라이언트를 구성](http://technet.microsoft.com/library/gg682055)할 수 있습니다.  
+-   [DNS에서 관리 지점을 찾도록 클라이언트를 구성](https://technet.microsoft.com/library/gg682055)할 수 있습니다.  
 
 사이트에서 관리 지점에 대한 서비스 위치 레코드를 DNS에 게시한 경우:  
 
