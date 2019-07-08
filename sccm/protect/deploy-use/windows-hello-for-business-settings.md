@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94cbbb7616588fa88bae9ae71f5b5f53dd4a4d63
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 9346e95e3fa66e9f24d1bfc3711917c3d2146e5e
+ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65500358"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67551347"
 ---
 # <a name="windows-hello-for-business-settings-in-configuration-manager"></a>Configuration Manager의 비즈니스용 Windows Hello 설정
 
@@ -90,9 +90,9 @@ Configuration Manager 콘솔의 **회사 리소스 액세스** 아래에서 **�
 1.  도메인 관리자 또는 이와 동등한 자격 증명을 사용하여 도메인 컨트롤러 또는 관리 워크스테이션에 로그인합니다.
 2.  **Active Directory 사용자 및 컴퓨터**를 엽니다.
 3.  탐색 창에서 도메인 이름을 마우스 오른쪽 단추로 클릭하고 **속성**을 클릭합니다.
-4.  *<domain name>* **속성** 대화 상자의 **보안** 탭에서 **고급**을 클릭합니다. **보안** 탭이 표시되지 않으면 **Active Directory 사용자 및 컴퓨터**의 **보기** 메뉴에서 **고급 기능**을 켭니다.
+4.  *\<도메인 이름>* **속성** 대화 상자의 **보안** 탭에서 **고급**을 클릭합니다. **보안** 탭이 표시되지 않으면 **Active Directory 사용자 및 컴퓨터**의 **보기** 메뉴에서 **고급 기능**을 켭니다.
 5.  **추가**를 클릭합니다.
-6.  *<domain name>* **권한 항목** 대화 상자에서 **보안 주체 선택**을 클릭합니다.
+6.  *\<도메인 이름>* **권한 항목** 대화 상자에서 **보안 주체 선택**을 클릭합니다.
 7.  **사용자, 컴퓨터, 서비스 계정 또는 그룹 선택** 대화 상자에서 **선택할 개체 이름 입력** 텍스트 상자에 **키 관리**를 입력합니다. **확인**을 클릭합니다.
 8.  **적용 대상** 목록에서 **하위 사용자 개체**를 선택합니다.
 9.  페이지 아래쪽으로 스크롤하고 **모두 지우기**를 클릭합니다.

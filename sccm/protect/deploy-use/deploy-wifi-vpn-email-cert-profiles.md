@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db5c6d0d06328ae73921a80b090dffd1fb711d8b
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 4e876041d67263b0b5db2acdfdef0ffa1ff318ef
+ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65500555"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67551427"
 ---
 # <a name="deploy-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager의 프로필 배포
 
@@ -55,9 +55,9 @@ ms.locfileid: "65500555"
 
     -   **경고 생성** - 지정된 날짜 및 시간을 기준으로 프로필 준수가 지정된 비율에 못 미치는 경우에 생성되는 경고를 구성하려면 이 옵션을 사용합니다. 경고를 System Center Operations Manager로 전송할지 여부도 지정할 수 있습니다.  
 
-    -   -   **임의 지연(시간)**: (단순 인증서 등록 프로토콜 설정이 포함된 인증서 프로필에 대한 경우에만) 네트워크 디바이스 등록 서비스의 과도한 처리를 방지하려면 지연 기간을 지정합니다. 기본값은 **64** 시간입니다.  
+    -   -   **임의 지연(시간)** : (단순 인증서 등록 프로토콜 설정이 포함된 인증서 프로필에 대한 경우에만) 네트워크 디바이스 등록 서비스의 과도한 처리를 방지하려면 지연 기간을 지정합니다. 기본값은 **64** 시간입니다.  
 
-    -   **이 <type> 프로필에 대한 준수 평가 일정 지정** - 클라이언트 컴퓨터에서 배포된 프로필을 평가할 일정을 지정합니다. 단순 일정 또는 사용자 지정 일정 중에서 지정할 수 있습니다.  
+    -   **이 \<형식>프로필에 대한 적합성 평가 일정 지정** - 클라이언트 컴퓨터에서 배포된 VPN 프로필을 평가할 일정을 지정합니다. 단순 일정 또는 사용자 지정 일정 중에서 지정할 수 있습니다.  
 
         > [!NOTE]  
         >  사용자가 로그온해 있을 때 클라이언트 컴퓨터에서 프로필을 평가합니다.  
