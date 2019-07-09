@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0458d4b3c1b406a14f1492ed4df91933436cb9a6
-ms.sourcegitcommit: e3c1eb0b75d79c05a750d49354c851d15d5e26a3
+ms.openlocfilehash: 30ac544aca07ef9d08753b2a93c361194894c91a
+ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67038604"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67516118"
 ---
 # <a name="plan-for-the-sms-provider"></a>SMS 공급자에 대한 계획 
 

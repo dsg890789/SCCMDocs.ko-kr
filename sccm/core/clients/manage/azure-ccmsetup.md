@@ -2,7 +2,7 @@
 title: Azure AD 인증 워크플로
 titleSuffix: Configuration Manager
 description: Azure Active Directory 인증을 사용하는 Windows 10 디바이스의 구성 관리자 클라이언트 설치 프로세스 세부 정보
-ms.date: 05/24/2019
+ms.date: 07/03/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.assetid: 9aaf466a-3f40-4468-b3cd-f0010f21f05a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: c422e5134ca798c1a5422cd518d550ed4c188e9a
-ms.sourcegitcommit: bfb8a17f60dcb9905e739045a5141ae45613fa2c
+ms.openlocfilehash: 8bb386aea70253fa033f59ab85732e0b99987c16
+ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66213804"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67550983"
 ---
 # <a name="azure-ad-authentication-workflow"></a>Azure AD 인증 워크플로
 
@@ -91,7 +91,7 @@ MessageID: 3087bd34-b82c-4950-b972-e82bb0fb8385 RequestURI: https://MP.MYCORP.CO
 다음 항목이 **CCM_STS.log**에 로깅됩니다.
 
 ```
-Validated AAD token. TokenType: Device TenantId: XXXXe388-XXXX-485c-XXXX-e8e4eb41XXXX UserId: 00000000-0000-0000-0000-000000000000 DeviceId: 0aebad80-77d2-4f0a-9639-676ee4764bb7 OnPrem_UserSid:  OnPrem_DeviceSid:
+Validated AAD token. TokenType: Device TenantId: XXXXe388-XXXX-485c-XXXX-e8e4eb41XXXX UserId: 00000000-0000-0000-0000-000000000000 DeviceId: 0XXXXX80-77XX-4XXa-X63X-67XXXXX64bb7 OnPrem_UserSid:  OnPrem_DeviceSid:
 
 Return token to client, token type: UDA, hierarchyId: XXXX4f9c-XXXX-46a5-XXXX-7612c324XXXX, userId: 00000000-0000-0000-0000-000000000000, deviceId: GUID:XXXXaee9-cXXc-4ccd-XXXX-f1417d81XXX
 ```
@@ -127,3 +127,85 @@ Appending CCM Token to the header.
 - WPJ 인증서를 찾을 수 없음: 클라이언트가 Azure AD에 등록되었으나 Azure AD에 가입되지 않음
 
 /NoCRLCheck는 ccmsetup 부트스트랩에만 사용하는 것이 적합합니다. 클라이언트가 완전히 작동하려면 인터넷에 CRL을 게시해야 합니다. 해결 방법으로, 사이트의 클라이언트 통신 구성에서 CRL 확인을 사용하지 않도록 설정할 수 있습니다. 그렇지 않은 경우, 위치 서비스에서 보안 설정이 새로 고쳐진 후 클라이언트가 더 이상 서버와 통신하지 못합니다.
+
+
+## <a name="client-registration"></a>클라이언트 등록
+
+![Azure AD 등록 워크플로 다이어그램](media/azure-ad-registration-workflow.png)  
+
+### <a name="1-configuration-manager-client-request-registration"></a>1. 구성 관리자 클라이언트 요청 등록
+
+다음 항목이 **ClientIDManagerStartup.log**에 로깅됩니다.
+
+```
+[RegTask] - Client is not registered. Sending registration request for GUID:1XXXXXEF-5XX8-4XX3-XEDX-XXXFBFF78XXX ...        
+Registering client using AAD auth.  
+```
+
+### <a name="2-configuration-manager-request-azure-ad-token-to-register-client"></a>2. 클라이언트를 등록하기 위한 Configuration Manager 요청 Azure AD 토큰
+
+다음 항목이 **ADALOperationProvider.log**에 로깅됩니다.
+```
+Getting AAD (user) token with: ClientId = f1f9b14e-XXXX-4f17-XXXX-2593f6eee91e, ResourceUrl = https://ConfigMgrService, AccountId = X49FC29A-ECE3-XXX-A3C1-XXXXXXF035A6E
+Retrieved AAD token for AAD user '00000000-0000-0000-0000-000000000000' 
+
+```
+
+#### <a name="21-configuration-manager-client-is-registered"></a>2.1 구성 관리자 클라이언트가 등록됨  
+
+다음 항목이 **ClientIDManagerStartup.log**에 로깅됩니다.
+
+```
+[RegTask] - Client is registered. Server assigned ClientID is GUID:1XXXXXEF-5XX8-4XX3-XEDX-XXXFBFF78XXX. Approval status 3  
+```
+
+> [!NOTE]  
+> 클라이언트 등록 동안 항상 인증서 유효성 검사가 실행됩니다. 이 프로세스는 Azure AD 인증 방법을 사용하여 클라이언트를 등록하는 경우에도 발생합니다.
+
+
+### <a name="3-configuration-manager-client-token-request"></a>3. 구성 관리자 클라이언트 토큰 요청
+
+사이트에서 클라이언트를 등록하면 클라이언트는 CCM 토큰을 요청합니다. CCM 토큰이 로컬 시스템 계정에 대해 암호화되고(S-1-5-18), 8시간 동안 캐시됩니다. 8시간 후에 토큰이 만료되고 클라이언트는 토큰 갱신을 요청합니다.
+
+다음 항목이 **ClientIDManagerStartup.log**에 로깅됩니다.
+
+```
+Getting CCM Token from STS server 'MP.MYCORP.COM'   
+Getting CCM Token from https://MP.MYCORP.COM/CCM_STS
+...
+Cached encrypted token for 'S-1-5-18'. Will expire at 'XX/XX/XX XX:XX:XX'   
+```
+
+#### <a name="31-cmg-gets-request"></a>3.1 CMG가 요청 가져오기
+
+다음 항목이 **IIS.log**에 로깅됩니다.
+
+```
+RD0003FF74XX2 10.0.0.4 GET /CCM_STS - 443 - HTTP/1.1 python-requests/2.20.0 - - 13.95.234.44 404 0 2 1477 154 15
+```
+
+#### <a name="32-cmg-forwards-request-to-cmg-connection-point"></a>3.2 CMG가 CMG 연결점에 요청 전달
+
+다음 항목이 **CMGService.log**에 로깅됩니다.
+
+```
+RequestUri: /CCM_PROXY_SERVERAUTH/XXXXXX037938216/CCM_STS  RequestCount: 769  RequestSize: 1081595 Bytes  ResponseCount: 769     ResponseSize: 36143 Bytes  AverageElapsedTime: 3945 ms
+```
+
+#### <a name="33-cmg-connection-point-transforms-cmg-client-request-to-management-point-client-request"></a>3.3 CMG 연결점이 CMG 클라이언트 요청을 관리 지점 클라이언트 요청으로 변환
+
+다음 항목이 **SMS_CLOUD_PROXYCONNECTOR.log**에 로깅됩니다.
+
+```
+MessageID: 3087bd34-b82c-4950-b972-e82bb0fb8385 RequestURI: https://MP.MYCORP.COM/CCM_STS EndpointName: CCM_STS ResponseHeader: HTTP/1.1 200 OK ~~ ResponseBodySize: 0 ElapsedTime: 2 ms
+```
+
+#### <a name="34-management-point-verifies-user-token-in-site-database"></a>3.4 관리 지점이 사이트 데이터베이스에서 사용자 토큰 확인
+
+다음 항목이 **CCM_STS.log**에 로깅됩니다.
+
+```
+Validated AAD token. TokenType: Device TenantId: XXXXe388-XXXX-485c-XXXX-e8e4eb41XXXX UserId: 00000000-0000-0000-0000-000000000000 DeviceId: 0XXXXX80-77XX-4XXa-X63X-67XXXXX64bb7 OnPrem_UserSid:  OnPrem_DeviceSid:
+
+Return token to client, token type: UDA, hierarchyId: XXXX4f9c-XXXX-46a5-XXXX-7612c324XXXX, userId: 00000000-0000-0000-0000-000000000000, deviceId: GUID:XXXXaee9-cXXc-4ccd-XXXX-f1417d81XXX
+```

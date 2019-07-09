@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5396ec603cab4b16e0d0c7e538618d1e757ab62f
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: 50a85f9639cb2f284a431081caea10e71f92b9f3
+ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67286196"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67551136"
 ---
 # <a name="capabilities-in-technical-preview-1705-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1705의 기능
 
@@ -247,7 +247,7 @@ Windows Defender Application Guard에 대한 자세한 내용은 [이 블로그 
 시작 하기 전에 클라이언트를 설치하려는 디바이스에 클라이언트 설치 원본 파일이 로컬로 저장되어 있는지 확인합니다.
 그런 다음 [System Center Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법](/sccm/core/clients/deploy/deploy-clients-to-windows-computers#BKMK_Manual)의 지침에 따라 다음 설치 명령줄을 사용합니다(이 예제의 값을 고유한 값으로 대체).
 
-**ccmsetup.exe /NoCrlCheck /Source:C:\CLIENT  CCMHOSTNAME=SCCMPROXYCONTOSO.CLOUDAPP.NET/CCM_Proxy_ServerAuth/72457598037527932 SMSSiteCode=HEC AADTENANTID=780433B5-E05E-4B7D-BFD1-E8013911E543 AADTENANTNAME=contoso  AADCLIENTAPPID=<GUID> AADRESOURCEURI=<https://contososerver>**
+**ccmsetup.exe /NoCrlCheck /Source:C:\CLIENT  CCMHOSTNAME=SCCMPROXYCONTOSO.CLOUDAPP.NET/CCM_Proxy_ServerAuth/72457598037527932 SMSSiteCode=HEC AADTENANTID=780433B5-E05E-4B7D-BFD1-E8013911E543 AADTENANTNAME=contoso  AADCLIENTAPPID=\<GUID> AADRESOURCEURI=<https://contososerver>**
 
 - **/NoCrlCheck**: 관리 지점 또는 클라우드 관리 게이트웨이에서 비공용 서버 인증서를 사용하는 경우 클라이언트는 CRL 위치를 연결하지 못할 수 있습니다.
 - **/Source**: 로컬 폴더:   클라이언트 설치 파일의 위치입니다.

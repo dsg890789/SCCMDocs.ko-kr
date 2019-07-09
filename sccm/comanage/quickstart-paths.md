@@ -2,7 +2,7 @@
 title: 공동 관리 경로
 titleSuffix: Configuration Manager
 description: 공동 관리를 설정하는 두 가지 기본 방법의 필수 조건을 이해합니다.
-ms.date: 01/14/2019
+ms.date: 06/27/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 803f05dd14da8d280f08f2bcf3608865f384d273
-ms.sourcegitcommit: 9aebc20b25cdef0af908918ccfd791f3264a5d94
+ms.openlocfilehash: 4c34cf73133086f08cb390f39ab4fe715dfcefd2
+ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "56755195"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67550677"
 ---
 # <a name="paths-to-co-management"></a>공동 관리 경로
 
@@ -35,7 +35,10 @@ ms.locfileid: "56755195"
 
 설정하려면 다음이 필요합니다.
 - 하이브리드 Azure AD
-    - PTA(통과 인증)를 사용하는 ADFS(Active Directory Federation Services)
+    - 다음 [Azure AD 하이브리드 ID 옵션](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-user-signin) 중 하나:  
+       - [Seamless SSO(Single Sign-On)](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)를 사용하는 [암호 해시 동기화](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-user-signin#password-hash-synchronization)
+       - [Seamless SSO(Single Sign-On)](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)를 사용하는 [통과 인증](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta)
+       - [페더레이션 SSO(AD FS(Active Directory Federation Services) 사용)](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-user-signin#federation-that-uses-a-new-or-existing-farm-with-ad-fs-in-windows-server-2012-r2)
     - Azure AD Connect
     - Azure AD Premium 라이선스
     - 하이브리드 Azure AD 연결 구성(한 가지 옵션 선택):

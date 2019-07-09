@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 950e3d60d0737d9135eb5f47bbc02a07f2a5e65e
-ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
+ms.openlocfilehash: 23fbb29ba4676f6c7282e5337f691f88209e15e6
+ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67158341"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67551225"
 ---
 # <a name="capabilities-in-technical-preview-1702-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1702의 기능
 
@@ -158,7 +158,7 @@ Windows Update for Business 업데이트에 대한 준수 평가 정보를 수�
 ## <a name="improvements-to-software-center-settings-and-notification-messages-for-high-impact-task-sequences"></a>영향력이 큰 작업 순서에 대한 소프트웨어 센터 설정 및 알림 메시지 개선
 이 릴리스에는 영향력이 큰 배포 작업 순서에 대한 소프트웨어 센터 설정 및 알림 메시지와 관련해서 다음과 같은 개선 사항이 포함되어 있습니다.
 
-- 이제 작업 순서 속성에서 비운영 체제 작업 순서를 비롯한 모든 작업 순서를 높은 위험 수준 배포로 구성할 수 있습니다. 특정 조건을 충족하는 작업 순서는 자동으로 모두 강력한 작업 순서로 정의됩니다. 자세한 내용은 [위험 수준이 높은 배포 관리](http://docs.microsoft.com/sccm/protect/understand/settings-to-manage-high-risk-deployments)를 참조하세요.
+- 이제 작업 순서 속성에서 비운영 체제 작업 순서를 비롯한 모든 작업 순서를 높은 위험 수준 배포로 구성할 수 있습니다. 특정 조건을 충족하는 작업 순서는 자동으로 모두 강력한 작업 순서로 정의됩니다. 자세한 내용은 [위험 수준이 높은 배포 관리](https://docs.microsoft.com/sccm/protect/understand/settings-to-manage-high-risk-deployments)를 참조하세요.
 - 작업 순서 속성에서 기본 알림 메시지를 사용하거나 강력한 배포에 대한 고유한 사용자 지정 알림 메시지를 만들 수 있습니다.
 - 작업 순서 속성에서 다시 시작을 필수로 설정, 작업 순서의 다운로드 크기 및 예상 실행 시간을 포함하는 소프트웨어 센터 속성을 구성할 수 있습니다.
 - 이제 현재 위치 업그레이드에 대한 강력한 배포 기본 메시지에 앱, 데이터 및 설정이 자동으로 마이그레이션된다고 표시됩니다. 이전에는 모든 운영 체제 설치에 대한 기본 메시지에 모든 앱, 데이터 및 설정이 손실된다고 표시되었으며, 이는 현재 위치 업그레이드에 적용되지 않습니다.
@@ -166,7 +166,7 @@ Windows Update for Business 업데이트에 대한 준수 평가 정보를 수�
 ### <a name="set-a-task-sequence-as-a-high-impact-task-sequence"></a>작업 순서를 강력한 작업 순서로 설정
 작업 순서를 강력한 작업 순서로 설정하려면 다음 절차를 따르세요.
 > [!NOTE]
-> 특정 조건을 충족하는 작업 순서는 자동으로 모두 강력한 작업 순서로 정의됩니다. 자세한 내용은 [위험 수준이 높은 배포 관리](http://docs.microsoft.com/sccm/protect/understand/settings-to-manage-high-risk-deployments)를 참조하세요.
+> 특정 조건을 충족하는 작업 순서는 자동으로 모두 강력한 작업 순서로 정의됩니다. 자세한 내용은 [위험 수준이 높은 배포 관리](https://docs.microsoft.com/sccm/protect/understand/settings-to-manage-high-risk-deployments)를 참조하세요.
 
 1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **운영 체제** > **작업 순서**로 이동합니다.
 2. 편집할 작업 순서를 선택하고 **속성**을 클릭합니다.
@@ -208,7 +208,7 @@ Windows Update for Business 업데이트에 대한 준수 평가 정보를 수�
 
 ## <a name="check-for-running-executable-files-before-installing-an-application"></a>애플리케이션을 설치하기 전에 실행 중인 실행 파일 확인
 
-이제 [설치 동작] 탭에 있는 배포 유형의 *<deployment type name>* **속성** 대화 상자에서 배포 유형의 설치를 차단하는 실행 파일(실행 중일 경우)을 하나 이상 지정할 수 있습니다. 사용자가 실행 중인 실행 파일을 닫아야(또는 필수 용도의 배포를 위해 자동으로 닫힐 수 있음) 배포 유형을 설치할 수 있습니다.
+이제 설치 동작 탭에 있는 배포 유형의 *\<deployment type name>* **속성** 대화 상자에서 배포 유형의 설치를 차단하는 실행 파일(실행 중일 경우)을 하나 이상 지정할 수 있습니다. 사용자가 실행 중인 실행 파일을 닫아야(또는 필수 용도의 배포를 위해 자동으로 닫힐 수 있음) 배포 유형을 설치할 수 있습니다.
 
 ### <a name="try-it-out"></a>직접 시도해 보세요.
 

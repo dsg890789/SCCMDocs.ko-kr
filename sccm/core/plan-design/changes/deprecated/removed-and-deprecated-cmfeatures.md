@@ -2,7 +2,7 @@
 title: 사용되지 않는 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 더 이상 지원하지 않는 기능에 대해 알아보세요.
-ms.date: 05/21/2019
+ms.date: 07/03/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4cfa662a3743865317b6c2f469ca0a34cd71f327
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.openlocfilehash: 28ba232fa94ee100c20da31f2eddc5a7341f6ac6
+ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177055"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67551145"
 ---
 # <a name="removed-and-deprecated-features-for-configuration-manager"></a>Configuration Manager에서 제거되는 기능과 이후 지원되지 않는 기능
 
@@ -32,6 +32,7 @@ ms.locfileid: "66177055"
 
 |기능|처음 중단 발표|제거된&nbsp;지원|  
 |-----------|---|--------------|  
+| 조건부 액세스의 준수 정책에 대한 디바이스 상태 증명 평가 <!--1235616 aka 3608202--> 자세한 내용은 [Configuration Manager에서 관리되는 PC용 Office 365 서비스에 대한 액세스 관리](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm#step-1-configure-compliance-policy)를 참조하세요.| 2019년 7월 3일 | 2019년 11월 1일 이후 릴리스된 첫 번째 버전 |
 | 애플리케이션 카탈로그 웹 사이트 지점과 웹 서비스 지점 등, 두 사이트 서비스 역할을 포함한 애플리케이션 카탈로그. 자세한 정보는 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요. | 2019년 5월 21일 | 2019년 11월 1일 이후 릴리스된 첫 번째 버전|
 |Azure 콘텐츠 공유를 위한 구현이 변경되었습니다. 콘텐츠 지원 클라우드 관리 게이트웨이를 사용합니다. 나중에는 기존 클라우드 배포 지점을 만들 수 없습니다.|2019년 2월|2019년 11월 1일 이후 릴리스된 첫 번째 버전|
 |클라우드 관리 게이트웨이 및 클라우드 배포 지점에 대한 클래식 서비스 배포. 자세한 내용은 [CMG 계획](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#azure-resource-manager)을 참조하세요.|2018년 11월|2019년 7월 1일 이후 릴리스된 첫 번째 버전|

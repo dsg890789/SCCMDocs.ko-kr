@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c15b387ec9f2048a923eb220b6c8e3e1fdccded8
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: b3560284733ccad6a9a3676a46f755106596ad03
+ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67286306"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67551196"
 ---
 # <a name="capabilities-in-technical-preview-1612-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1612의 기능
 
@@ -186,7 +186,7 @@ Technical Preview 1612를 설치한 후 Technical Preview 사이트 서버의 \*
 2. 필수 명령줄 스위치와 사용할 선택적 스위치를 포함하는 명령줄을 입력합니다.
 
 **알려진 문제** 도구가 실행되면 패키지 또는 배포가 실패했거나 진행 중인 경우 다음과 같은 오류가 반환될 수 있습니다.
--  *System.InvalidOperationException: <packageID> 패키지가 완전히 설치되지 않으므로 이 콘텐츠 라이브러리가 바로 정리될 수 없습니다.*
+-  *System.InvalidOperationException: \<packageID> 패키지가 완전히 설치되지 않으므로 이 콘텐츠 라이브러리가 바로 정리될 수 없습니다.*
 
 **해결 방법:** 없음 콘텐츠가 진행 중이거나 배포에 실패한 경우 도구는 분리된 파일을 안정적으로 식별할 수 없습니다. 따라서 해당 문제가 해결될 때까지 도구를 통해 콘텐츠를 정리할 수 없습니다.
 
@@ -202,7 +202,7 @@ Technical Preview 1612를 설치한 후 Technical Preview 사이트 서버의 \*
 | **/dp &lt;배포 지점 FQDN>**  | **필수** </br> 정리하려는 배포 지점의 FQDN(정규화된 도메인 이름)을 지정합니다. </br></br> 예제:  ***ContentLibraryCleanup.exe /dp server1.contoso.com***|
 | **/ps &lt;기본 사이트 FQDN>**       | 기본 사이트의 배포 지점에서 콘텐츠를 정리하는 경우 **선택 사항**입니다.</br>보조 사이트의 배포 지점에서 콘텐츠를 정리하는 경우 **필수**입니다. </br></br> 배포 지점이 속하는 기본 사이트 또는 배포 지점이 보조 사이트에 있는 경우 부모 기본 사이트의 FQDN을 지정합니다. </br></br> 예제: ***ContentLibraryCleanup.exe /dp server1.contoso.com /ps siteserver1.contoso.com*** |
 | **/sc &lt;기본 사이트 코드>**  | 기본 사이트의 배포 지점에서 콘텐츠를 정리하는 경우 **선택 사항**입니다.</br>보조 사이트의 배포 지점에서 콘텐츠를 정리하는 경우 **필수**입니다. </br></br> 배포 지점이 속하는 기본 사이트 또는 배포 지점이 보조 사이트에 있는 경우 부모 기본 사이트의 사이트 코드를 지정합니다.</br></br> 예제: ***ContentLibraryCleanup.exe /dp server1.contoso.com /sc ABC*** |
-| **/log <log file directory>**       |**선택 사항** </br> 로그 파일을 배치할 디렉터리를 지정합니다. 로컬 드라이브 또는 네트워크 공유일 수 있습니다.</br></br> 이 스위치를 사용하지 않으면 로그 파일은 자동으로 사용자 temp 폴더에 배치됩니다.</br></br> 로컬 드라이브의 예: ***ContentLibraryCleanup.exe /dp server1.contoso.com /log C:\Users\Administrator\Desktop*** </br></br>네트워크 공유의 예: ***ContentLibraryCleanup.exe /dp server1.contoso.com /log \\&lt;share>\&lt;folder>***|
+| **/log \<log file directory>**       |**선택 사항** </br> 로그 파일을 배치할 디렉터리를 지정합니다. 로컬 드라이브 또는 네트워크 공유일 수 있습니다.</br></br> 이 스위치를 사용하지 않으면 로그 파일은 자동으로 사용자 temp 폴더에 배치됩니다.</br></br> 로컬 드라이브의 예: ***ContentLibraryCleanup.exe /dp server1.contoso.com /log C:\Users\Administrator\Desktop*** </br></br>네트워크 공유의 예: ***ContentLibraryCleanup.exe /dp server1.contoso.com /log \\&lt;share>\&lt;folder>***|
 
 
 ## <a name="improvements-for-in-console-search"></a>콘솔 내 검색의 향상된 기능
