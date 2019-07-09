@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5dc3123763430dc35d566b68e3c1c04762d26de5
-ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
+ms.openlocfilehash: 4b32105304354e9b9d4473451a32f52162f80d02
+ms.sourcegitcommit: 20bbb870baf624c7809d3972f2d09a8d2df79cda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67159049"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67623329"
 ---
 # <a name="health-status-monitoring-in-desktop-analytics"></a>데스크톱 Analytics의 모니터링 상태
 
@@ -58,7 +58,7 @@ ms.locfileid: "67159049"
 
 - **다른 버전**: 이 앱의 다른 버전의 목록입니다. 각 버전에 대해 내 조직과 상업적 평균 크래시 요금이 상대 변경 내용을 보여 줍니다. 이후 버전 충돌 속도가 낮은 사용 하 여 앱의 경우, 앱을 업데이트 도움이 될 수 있습니다.  
 
-    버전이 있는 경우는 수도 표시 됩니다는 **준비에 대 한 Windows** 신호입니다. 자세한 내용은 [Compatibility assessment](/sccm/desktop-analytics/compat-assessment#risk-assessment-engine)합니다.  
+    버전이 있는 경우는 수도 표시 됩니다는 **준비에 대 한 Windows** 신호입니다. 자세한 내용은 [Compatibility assessment](compat-assessment.md#driver-risk-assessment)합니다.  
 
 - **문제를 상위**: 목록 인스턴스 수에 따라 가장 자주 실패 Id입니다. 오류 ID 관련 작동 중단 된 스택 추적을 식별 합니다. 지원에 대 한 앱 공급 업체를 호출할 때이 ID를 사용할 수 있습니다.  
 

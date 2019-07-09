@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0700644f9548ea588821141a34abc6d249909cdf
-ms.sourcegitcommit: d8cfd0edf2579e2b08a0ca8a0a7b8f53d1e4196f
+ms.openlocfilehash: d564a5161011a1af0a4ec70f9bf7b45d87dd9dcb
+ms.sourcegitcommit: 20bbb870baf624c7809d3972f2d09a8d2df79cda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67463757"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67623165"
 ---
 # <a name="tutorial-deploy-windows-10-to-pilot"></a>자습서: 파일럿에 Windows 10 배포
 
@@ -93,7 +93,7 @@ Azure 구독이 없으면 만듭니다는 [무료 계정](https://azure.microsof
 
 데스크톱 분석에 로그인 하 고 구독에서 구성 하려면이 절차를 따르십시오. 이 절차는 조직에 대 한 데스크톱 Analytics를 설정 하는 일회성 프로세스입니다.  
 
-1. 열기는 [데스크톱 Analytics 포털](https://aka.ms/desktopanalytics) 사용자로 Microsoft 365 장치 관리에서 **전역 관리자** 권한. 선택 **시작**합니다.  
+1. 열기는 [데스크톱 Analytics 포털](https://aka.ms/desktopanalytics) 사용자로 Microsoft 365 장치 관리에서 **전역 관리자** 권한. 선택 **시작**합니다.  초대 코드를 묻는 경우 사용 합니다. `DesktopAnalyticsRocks!`
 
 2. 에 **서비스 계약에 동의** 페이지에서 서비스 계약을 검토 하 고 선택 **Accept**합니다.  
 
