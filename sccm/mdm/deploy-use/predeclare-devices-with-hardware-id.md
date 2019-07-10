@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 51bdfe22e70be58902dece216305d7a6f6612b06
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: 743976f35fb2ced98e0685bf51f38374aea5408e
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62227818"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67678917"
 ---
 # <a name="predeclare-devices-with-imei-or-ios-serial-numbers"></a>IMEI 또는 iOS 일련 번호로 디바이스 미리 선언
 
@@ -66,10 +66,10 @@ IMEI 또는 iOS 일련 번호로 디바이스를 식별하는 데 사용하는 .
 | IMEI 번호  | iOS 일련 번호  | OS | 세부 정보 |
 |------------ |---------------|-----|-----|
 | 123456789012345    |   | WINDOWS | 회사 소유 Windows 디바이스|
-|   | A1B2C3D4E5C6 | IOS |  회사 소유 iOS 디바이스|
-| 223456789012345 | E6D5C4B3A210 |   IOS |  다른 iOS 디바이스|
-| 323456789012345 |        |   IOS |    세 번째 iOS 디바이스|
-| 123456789012346 |         |   ANDROID |   회사 소유 Android 디바이스|
+|   | A1B2C3D4E5C6 | IOS | 회사 소유 iOS 디바이스|
+| 223456789012345 | E6D5C4B3A210 |   IOS | 다른 iOS 디바이스|
+| 323456789012345 |        |   IOS | 세 번째 iOS 디바이스|
+| 123456789012346 |         |   ANDROID | 회사 소유 Android 디바이스|
 
 .csv 파일의 머리글 행을 포함하지 않습니다. 다음 예제에서는 CSV 형식의 동일한 샘플 데이터를 보여 줍니다.
 

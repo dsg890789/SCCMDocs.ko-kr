@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f914cba7eee44f340bf5b696aca1854128aeb8b
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: d0946c455732bc13520d3363187b22b118d6e403
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62228164"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67678898"
 ---
 # <a name="set-up-your-subscription-for-lookout-mobile-threat-defense"></a>Lookout 모바일 위협 방어에 대한 구독 설정
 

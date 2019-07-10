@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbd996629d3b312febd271757aff69faf5371c64
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: 4d5814895ba2829a1d4238581d85f955816e4058
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62234010"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67678701"
 ---
 # <a name="set-up-actions-for-non-compliance"></a>비준수에 대한 작업 설정
 
@@ -101,7 +101,7 @@ Configuration Manager에서 전자 메일 템플릿을 제공하지만 직접 �
     b. **추가 받는 사람(전자 메일을 통해)**  
 
     c. **메시지 템플릿 선택:** 기본 전자 메일 템플릿 또는 사용자가 만든 사용자 지정 템플릿을 선택 합니다.  
-    
+
     > [!TIP]   
     > **작업 추가** 페이지에서 **새로 만들기:** 를 클릭하여 **최종 사용자에게 전자 메일 보내기** 작업을 추가할 때 새 전자 메일 템플릿을 추가할 수도 있습니다.  
 

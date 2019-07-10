@@ -2,7 +2,7 @@
 title: Configuration Manager 연결
 titleSuffix: Configuration Manager
 description: 데스크톱 Analytics를 사용 하 여 Configuration Manager를 연결 하기 위한 방법 가이드입니다.
-ms.date: 06/13/2019
+ms.date: 07/08/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 098c83678585984bbe3dbeddf167e24116afd86b
-ms.sourcegitcommit: 3a3f40f3d39cbecfb9219a64c0185ea4b2ef9671
+ms.openlocfilehash: f24161b61c796f9c1605a61656af0eb91f225067
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67562015"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67676057"
 ---
 # <a name="how-to-connect-configuration-manager-with-desktop-analytics"></a>데스크톱 Analytics를 사용 하 여 Configuration Manager를 연결 하는 방법
 
@@ -79,7 +79,7 @@ ms.locfileid: "67562015"
     선택 **로그인** 합니다. Azure에 성공적으로 인증되면 페이지에 **Azure AD 테넌트 이름**이 참조용으로 표시됩니다.
         
     > [!Note]  
-    > 이 단계를 완료 한 **회사 관리자**합니다. 이러한 자격 증명은 Configuration Manager에 저장되지 않습니다. 이 가상 사용자는 Configuration Manager에서 권한이 필요 없으며, Azure 서비스 마법사를 실행하는 계정과 동일한 계정이 아니어도 상관 없습니다.  
+    > 이 단계를 완료 한 **전역 관리자**합니다. 이러한 자격 증명은 Configuration Manager에 저장되지 않습니다. 이 가상 사용자는 Configuration Manager에서 권한이 필요 없으며, Azure 서비스 마법사를 실행하는 계정과 동일한 계정이 아니어도 상관 없습니다.  
 
     **확인**을 선택하여 Azure AD에서 웹앱을 만들고 서버 애플리케이션 만들기 대화 상자를 닫습니다. 서버 앱 대화 상자에서 선택 **확인**합니다. 선택한 **다음** Azure 서비스 마법사의 앱 페이지에 있습니다.  
 

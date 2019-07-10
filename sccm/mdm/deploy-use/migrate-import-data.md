@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: b552391d-abc0-48a2-a429-93605a13a66a
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e7c9fde7298d4733c2f3abd9555edb989d7cb66
-ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
+ms.openlocfilehash: 18c8bab6b072a9df2dea9c9f67d844b8481d314e
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66716214"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67678210"
 ---
 # <a name="import-configuration-manager-data-to-microsoft-intune"></a>Microsoft Intune으로 Configuration Manager 데이터 가져오기 
 
@@ -24,11 +24,11 @@ ms.locfileid: "66716214"
 
 클라우드 전용 구성에서 [하이브리드 MDM 사용자 및 디바이스를 Intune 독립 실행형으로 마이그레이션](migrate-hybridmdm-to-intunesa.md)하는 프로세스에서 권장되는 첫 번째 단계는 Intune 데이터 가져오기 도구를 사용하는 것입니다. 원하는 경우 이 단계를 건너뛰고 [사용자 마이그레이션을 위한 Intune 준비](migrate-prepare-intune.md) 단계로 이동할 수 있습니다. 그러나 이 도구는 다음 단계에서 많은 시간을 절약할 수 있는 다음 기능을 수행합니다.  
 
-1.  Configuration Manager 계층 구조에서 선택한 개체에 대한 데이터를 수집합니다.  
+1. Configuration Manager 계층 구조에서 선택한 개체에 대한 데이터를 수집합니다.  
 
-2.  가져오도록 선택할 수 있는 개체에 대한 세부 정보와 일부 개체를 가져올 수 없는 이유에 대한 정보를 제공합니다.  
+2. 가져오도록 선택할 수 있는 개체에 대한 세부 정보와 일부 개체를 가져올 수 없는 이유에 대한 정보를 제공합니다.  
 
-3.  선택한 개체를 Microsoft Intune 테넌트로 가져옵니다.  
+3. 선택한 개체를 Microsoft Intune 테넌트로 가져옵니다.  
 
 데이터 가져오기 도구는 Configuration Manager 환경의 어떤 방식으로든에서 변경 되지 않습니다. Intune로 개체를 가져올 수 있으며 모든 하이브리드 MDM 장치의 관리 되지 않는 상태로 두는 위험이 없이 예상 대로 작동 하는지 확인 수 있습니다. 
 
@@ -114,7 +114,7 @@ There are some Configuration Manager objects that the importer tool cannot impor
 
 데이터 가져오기 도구를 실행하려면 먼저 전역 관리자 계정을 사용하여 Azure에서 리소스에 액세스하기 위한 데이터 가져오기 도구 권한을 부여해야 합니다. 그런 다음 전역 관리자 또는 Intune 관리자 계정을 사용 하 여 도구를 실행할 수 있습니다.   
 
-1.  전역 관리자는 다음 매개 변수를 사용 하 여 처음으로 도구를 실행 해야 합니다. `IntuneDataImporter.exe -GlobalConsent`  
+1. 전역 관리자는 다음 매개 변수를 사용 하 여 처음으로 도구를 실행 해야 합니다. `IntuneDataImporter.exe -GlobalConsent`  
 
 2. 도구를 시작 하는 경우 Azure에서 전역 관리자 역할이 있는 계정을 사용해 로그인 합니다.  
 
@@ -188,7 +188,7 @@ There are some Configuration Manager objects that the importer tool cannot impor
 
         - **가져올 개체 형식**: 도구에서 수집할 개체를 선택 합니다. **모두 선택**을 선택하여 모든 개체를 선택하거나 개별 개체 형식을 선택할 수 있습니다.  
 
-4.  선택 **다음** 사이트에서 개체 검색을 시작 합니다. 이 도구에는 각 개체 형식에 대한 진행률이 표시됩니다.  
+4. 선택 **다음** 사이트에서 개체 검색을 시작 합니다. 이 도구에는 각 개체 형식에 대한 진행률이 표시됩니다.  
 
     - 도구에서 선택한 개체 형식에 대한 데이터를 검색하지 못하면 해당 개체 형식에 수행된 진행률 표시줄이 즉시 표시됩니다.  
 

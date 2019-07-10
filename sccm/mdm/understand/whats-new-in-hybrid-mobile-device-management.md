@@ -11,21 +11,23 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2dd14e7beaef6fe636ea220de557a866e547a602
-ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
+ms.openlocfilehash: c2b697520dee854f956554dfcca60519f930f15b
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67516219"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67678631"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 디바이스 관리의 새로운 기능
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-이 문서에서는 System Center Configuration Manager 및 Intune을 포함하는 하이브리드 배포에 사용할 수 있는 새 MDM(모바일 디바이스 관리) 기능에 대한 세부 정보를 제공합니다.
-
 > [!Important]  
-> 2018년 8월 14일부터 하이브리드 모바일 디바이스 관리 [기능은 사용되지 않습니다](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures). 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->  
+> 이 문서는 더 이상 업데이트 합니다. 하이브리드 모바일 장치 관리 된 2018 년 8 월 14 일 이후에 [사용 되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)합니다. Intune 독립 실행형 환경의 가능한 한 빨리 마이그레이션할 해야 있습니다. 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.
+>
+> 하이브리드 모바일 장치 관리 (MDM)에 대 한 정보에 추가할 계속 중요 합니다 [Office 365 메시지 센터](https://go.microsoft.com/fwlink/?linkid=2070717) 및 [Intune 고객의 성공을 블로그](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess) 에 서비스는 사용 중지 될 때까지 2019 년 9 월 1 년입니다. <!--Intune feature 2683117-->  
+
+이 문서에서는 System Center Configuration Manager 및 Intune을 포함하는 하이브리드 배포에 사용할 수 있는 새 MDM(모바일 디바이스 관리) 기능에 대한 세부 정보를 제공합니다. 
 
 > [!Note]  
 > Azure의 Intune은 Microsoft에서 권장하는 MDM 솔루션입니다.

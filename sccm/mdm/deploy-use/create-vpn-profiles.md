@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7accfe4c329b61c7791bc4b82028d48fdc81931
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: 3b653d8c60299f54a0e54cee0792066ccd8dba65
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62256602"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67678147"
 ---
 # <a name="vpn-profiles-on-mobile-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager의 모바일 디바이스에 대한 VPN 프로필
 
@@ -133,9 +133,9 @@ iOS, Android, Windows Phone 및 Windows 8.1 디바이스에 프로필을 배포�
        >  iOS를 실행하는 디바이스는 연결 형식이 PPTP인 경우 인증 방법으로 RSA SecurID 및 MSCHAP v2만 지원합니다. 오류 보고를 방지하려면 iOS를 실행하는 디바이스에 별도의 PPTP VPN 프로필을 배포하세요.   
 
      - **조건부 액세스**  
-         - 연결 전에 VPN에 연결하는 디바이스의 조건부 액세스 준수를 테스트하려면 **이 VPN 연결에 조건부 액세스 사용**을 선택합니다. 자세한 내용은 [디바이스 규정 준수 정책](/sccm/protect/deploy-use/device-compliance-policies)를 참조하세요.  
+       - 연결 전에 VPN에 연결하는 디바이스의 조건부 액세스 준수를 테스트하려면 **이 VPN 연결에 조건부 액세스 사용**을 선택합니다. 자세한 내용은 [디바이스 규정 준수 정책](/sccm/protect/deploy-use/device-compliance-policies)를 참조하세요.  
 
-         - 디바이스 준수에 대해 VPN 인증 인증서 이외의 인증서를 선택하려면 **대체 인증서로 SSO(Single Sign-On) 사용**을 선택합니다. 이 옵션을 선택하는 경우 VPN 클라이언트가 찾아야 하는 올바른 인증서의 **EKU**(쉼표로 구분된 목록) 및 **발급자 해시**를 제공합니다.  
+       - 디바이스 준수에 대해 VPN 인증 인증서 이외의 인증서를 선택하려면 **대체 인증서로 SSO(Single Sign-On) 사용**을 선택합니다. 이 옵션을 선택하는 경우 VPN 클라이언트가 찾아야 하는 올바른 인증서의 **EKU**(쉼표로 구분된 목록) 및 **발급자 해시**를 제공합니다.  
 
        - **Windows Information Protection** - 엔터프라이즈에서 관리되는 회사 ID를 제공합니다. 일반적으로 조직의 기본 도메인(예: *contoso.com*)입니다. "|" 문자로 구분하여 조직에서 소유하는 여러 도메인을 지정할 수 있습니다. 예를 들어 *contoso.com|newcontoso.com*입니다. 자세한 내용은 [Intune을 사용하여 Windows Information Protection 앱 보호 정책 만들기 및 배포](/intune/windows-information-protection-policy-create)를 참조하세요.   
 

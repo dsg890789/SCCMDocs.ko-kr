@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be1221b3448c8a2818f7fd02b5ff2d14218bbeed
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: eda9de25d3bdb1a1563d8b74e78ddcad259683f6
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62286789"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67678721"
 ---
 # <a name="overview-of-device-enrollment-methods"></a>디바이스 등록 방법 개요
 
@@ -31,19 +31,19 @@ Intune으로 Configuration Manager를 확장하면 관리자가 회사 소유 �
 
 **iOS 등록 방법**
 
-| **방법** |  **초기화** |  **선호도**    |   **잠금** | **세부 정보** |
+| **방법** | **초기화** | **선호도** | **잠금** | **세부 정보** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 아니요|    사용자 계정 컨트롤 |   아니요 | [자세히](../deploy-use/enable-platform-enrollment.md)|
-|**[DEM](#dem)**|   아니요 |아니요 |아니요  | [자세히](../deploy-use/enroll-devices-with-device-enrollment-manager.md)|
-|**[DEP](#dep)**|   예 |   선택 사항 |  선택 사항|[자세히](../deploy-use/ios-device-enrollment-program-for-hybrid.md)|
-|**[USB-SA](#usb-sa)**| 예 |   선택 사항 |  아니요| [자세히](../deploy-use/ios-hybrid-enrollment-using-apple-configurator.md)|
+|**[BYOD](#byod)** | 아니요| 사용자 계정 컨트롤 | 아니요 | [자세히](../deploy-use/enable-platform-enrollment.md)|
+|**[DEM](#dem)**| 아니요 |아니요 |아니요 | [자세히](../deploy-use/enroll-devices-with-device-enrollment-manager.md)|
+|**[DEP](#dep)**| 예 | 선택 사항 | 선택 사항|[자세히](../deploy-use/ios-device-enrollment-program-for-hybrid.md)|
+|**[USB-SA](#usb-sa)**| 예 | 선택 사항 | 아니요| [자세히](../deploy-use/ios-hybrid-enrollment-using-apple-configurator.md)|
 
 **Windows 및 Android 등록 방법**
 
-| **방법** |  **초기화** |  **선호도**    |   **잠금** | **세부 정보**|
+| **방법** | **초기화** | **선호도** | **잠금** | **세부 정보**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 아니요|    사용자 계정 컨트롤 |   아니요 | [자세히](../deploy-use/enroll-hybrid-windows.md)|
-|**[DEM](#dem)**|   아니요 |아니요 |아니요  |[자세히](../deploy-use/enroll-devices-with-device-enrollment-manager.md)|
+|**[BYOD](#byod)** | 아니요| 사용자 계정 컨트롤 | 아니요 | [자세히](../deploy-use/enroll-hybrid-windows.md)|
+|**[DEM](#dem)**| 아니요 |아니요 |아니요 |[자세히](../deploy-use/enroll-devices-with-device-enrollment-manager.md)|
 
 올바른 방법을 찾는 데 도움이 되는 질문은 [Choose how to enroll devices](/intune/get-started/choose-how-to-enroll-devices1)(디바이스 등록 방법 선택)를 참조하세요.
 

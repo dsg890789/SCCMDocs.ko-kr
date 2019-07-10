@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a298bd0504ea719d6b60d2c86692942d6ba989b8
-ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
+ms.openlocfilehash: 43a5e1a4bf3283c185d612cc31428a23a4e12061
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67159026"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67678109"
 ---
 # <a name="what-is-desktop-analytics"></a>데스크톱 Analytics 란?
 
@@ -73,11 +73,11 @@ ms.locfileid: "67159026"
 
     - **작업 영역 소유자** 나 **참가자** 권한을 **작업 영역 설정**, 및 다음 역할:  
 
-       - [**데스크톱 분석 관리자** ](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 역할입니다.
+      - [**데스크톱 분석 관리자** ](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 역할입니다.
 
-       - [**Analytics 참가자 기록** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#log-analytics-contributor) 하 고 [ **사용자 액세스 관리자** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#user-access-administrator) 기존 리소스 그룹에 새 작업 영역을 만들거나 기존 작업 영역을 사용 하 여 리소스 그룹.
+      - [**Analytics 참가자 기록** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#log-analytics-contributor) 하 고 [ **사용자 액세스 관리자** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#user-access-administrator) 기존 리소스 그룹에 새 작업 영역을 만들거나 기존 작업 영역을 사용 하 여 리소스 그룹.
 
-        - [**소유자**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), 또는 [ **참가자** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) 고 [ **사용자 액세스 관리자** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#user-access-administrator) 에 대 한 권한을 합니다 새 리소스 그룹에 작업 영역을 만들 구독입니다.  
+      - [**소유자**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), 또는 [ **참가자** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) 고 [ **사용자 액세스 관리자** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#user-access-administrator) 에 대 한 권한을 합니다 새 리소스 그룹에 작업 영역을 만들 구독입니다.  
 
 - 1902 버전의 configuration Manager 업데이트 롤업 (4500571) 이상. 자세한 내용은 [Configuration Manager 업데이트](/sccm/desktop-analytics/connect-configmgr#bkmk_hotfix)합니다.  
 

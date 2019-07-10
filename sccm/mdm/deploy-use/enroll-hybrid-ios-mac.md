@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6aef8f927a2c4d3cb3eb7fecc4970cb19cbb83ed
-ms.sourcegitcommit: a6a6507e01d819217208cfcea483ce9a2744583d
+ms.openlocfilehash: 6c6573ce4faf893e30eac070efd963dc7465e20e
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66748271"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67678843"
 ---
 # <a name="set-up-ios-hybrid-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune로 iOS 하이브리드 디바이스 관리 설정
 
@@ -73,9 +73,9 @@ IOS 등록을 사용하도록 설정하려면 APNs 인증서를 업로드합니�
 - [디바이스 등록 관리자 계정](enroll-devices-with-device-enrollment-manager.md)을 사용하여 등록한 디바이스
 
 ### <a name="to-enable-enrollment-restrictions"></a>등록 제한을 사용하려면
-1.  Configuration Manager 콘솔의 **관리 작업** 영역에서 **클라우드 서비스** > **Microsoft Intune 구독**으로 이동합니다.
-2.  **홈** 탭의 **구독** 그룹에서 **플랫폼 구성** > **iOS**를 클릭합니다.
-3.  **개인적으로 소유한 디바이스 차단**을 선택하여 회사 소유 디바이스에 대한 등록을 제한합니다.
+1. Configuration Manager 콘솔의 **관리 작업** 영역에서 **클라우드 서비스** > **Microsoft Intune 구독**으로 이동합니다.
+2. **홈** 탭의 **구독** 그룹에서 **플랫폼 구성** > **iOS**를 클릭합니다.
+3. **개인적으로 소유한 디바이스 차단**을 선택하여 회사 소유 디바이스에 대한 등록을 제한합니다.
 
 > [!div class="button"]
 > [< 이전 단계](create-service-connection-point.md)  [다음 단계 >](set-up-additional-management.md)

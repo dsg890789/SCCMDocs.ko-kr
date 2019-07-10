@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2583a53a366b338a3ff0096fb4f9ca2f9bdde94b
-ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
+ms.openlocfilehash: e8c70da520d33f83b0519ac0c01e1bad3ce6e3ba
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67551472"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67678186"
 ---
 # <a name="manage-access-to-office-365-services-for-pcs-managed-by-system-center-configuration-manager"></a>System Center Configuration Manager에서 관리 되는 Pc에 대 한 Office 365 서비스에 대 한 액세스 관리
 

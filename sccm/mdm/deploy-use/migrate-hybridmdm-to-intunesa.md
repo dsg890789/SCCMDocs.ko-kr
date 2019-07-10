@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: 1dd696ce-3e46-4dfa-a76d-592fe0f0320e
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e2b62362bfcc9a76e407e9c0124306f83ac4a782
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: e3adbb2f7bd75921f45c9c6d5462bdf04deb8c26
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62282088"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67678224"
 ---
 # <a name="migrate-hybrid-mdm-users-and-devices-to-intune-standalone"></a>하이브리드 MDM 사용자 및 디바이스를 Intune 독립 실행형으로 마이그레이션
 
@@ -32,7 +32,7 @@ ms.locfileid: "62282088"
 
 자세한 내용은 다음 아티클을 참조하세요.    
   
-1.  [Configuration Manager 데이터를 Microsoft Intune로 가져오기](migrate-import-data.md)   
+1. [Configuration Manager 데이터를 Microsoft Intune로 가져오기](migrate-import-data.md)   
 
     Intune Data Importer 도구:  
 
@@ -46,7 +46,7 @@ ms.locfileid: "62282088"
 
     이 단계는 선택 사항입니다. 이 단계를 통해 Configuration Manager에서 Intune으로 개체를 다시 만드는 프로세스를 자동화하여 많은 시간을 절약할 수 있습니다.  
 
-2.  [사용자 마이그레이션을 위한 Intune 준비](migrate-prepare-intune.md)    
+2. [사용자 마이그레이션을 위한 Intune 준비](migrate-prepare-intune.md)    
 
     - Configuration Manager에서 가져온 개체의 유효성을 검사합니다.  
 
@@ -58,11 +58,11 @@ ms.locfileid: "62282088"
 
     단계를 완료 하 고 Intune 독립 실행형으로의 마이그레이션을 시작 하는 경우에 사용자에 게 중요 한 영향이 있습니다.   
 
-3.  [특정 사용자에 대한 MDM 기관 변경(혼합 MDM 기관)](migrate-mixed-authority.md)    
+3. [특정 사용자에 대한 MDM 기관 변경(혼합 MDM 기관)](migrate-mixed-authority.md)    
 
     동일한 테넌트에서 혼합 MDM 기관을 구성하세요. 하이브리드 MDM을 사용하여 다른 모든 디바이스를 관리하면서 Intune에서 관리할 사용자를 선택합니다. 추가 사용자 마이그레이션을 시작하기 전에 작은 사용자 하위 집합에 대한 디바이스에서 Intune 기능이 작동하는지 테스트합니다.   
 
-4.  [MDM 기관을 Intune 독립 실행형으로 변경](change-mdm-authority.md)     
+4. [MDM 기관을 Intune 독립 실행형으로 변경](change-mdm-authority.md)     
 
     테넌트 수준의 MDM 기관을 Configuration Manager에서 Intune으로 변경합니다. 나머지 모든 사용자와 디바이스는 Intune 독립 실행형으로 마이그레이션됩니다. 이전 단계에서 Intune 기능을 철저히 테스트하고 대부분 또는 모든 사용자를 마이그레이션한 후에는 테넌트 수준의 MDM 기관을 변경합니다.
 

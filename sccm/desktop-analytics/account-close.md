@@ -2,7 +2,7 @@
 title: 계정 사용 중지 하는 방법
 titleSuffix: Configuration Manager
 description: Azure 계정에서 데스크톱 분석을 제거 하는 방법
-ms.date: 06/11/2019
+ms.date: 07/08/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 805cb79a1986457f04b11fa5f99b30ec098be99b
-ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
+ms.openlocfilehash: e2b1c893204366581eacd0f8e953cb2a6fd0d1a4
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67159207"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67676166"
 ---
 # <a name="how-to-close-your-account"></a>계정 사용 중지 하는 방법
 
@@ -31,7 +31,7 @@ ms.locfileid: "67159207"
 
 ## <a name="delete-the-solution"></a>솔루션 삭제
 
-1. 에 로그인 합니다 [Azure portal](https://portal.azure.com) 사용자로는 **회사 관리자** 역할입니다.
+1. 에 로그인 합니다 [Azure portal](https://portal.azure.com) 사용자로는 **전역 관리자** 역할입니다.
 
 1. 검색할 **모든 리소스** 데스크톱 Analytics 작업 영역의 이름입니다. 이 이름은 서비스에 등록할 때 만든 새로운입니다.
 
@@ -44,7 +44,7 @@ ms.locfileid: "67159207"
 
 ## <a name="remove-user-and-app-access"></a>사용자 및 앱에 대 한 액세스 제거
 
-1. 에 로그인 합니다 [Azure portal](https://portal.azure.com) 사용자로는 **회사 관리자** 역할입니다. 로 이동 **Azure Active Directory**합니다.
+1. 에 로그인 합니다 [Azure portal](https://portal.azure.com) 사용자로는 **전역 관리자** 역할입니다. 로 이동 **Azure Active Directory**합니다.
 
 1. **역할과 관리자**를 검색 합니다 **데스크톱 분석 관리자** 역할입니다. 해당 멤버를 제거 합니다.
 

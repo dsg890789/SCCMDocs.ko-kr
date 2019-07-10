@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78926fb271bf1663dbd497f1894e3b4acbffd08b
-ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
+ms.openlocfilehash: 7821951461fc03598e91f22a54a49fd3b0c0cf6e
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67194634"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67678634"
 ---
 # <a name="past-hybrid-features-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하는 이전 하이브리드 기능
 
@@ -460,14 +460,14 @@ Configuration Manager Technical Preview 2016년 7월에 새로 도입된 하이�
 이전에 Configuration Manager Technical Preview 릴리스에서 사용할 수 있었던 다음 기능을 이제 Intune과 Configuration Manager(현재 분기) 버전 1606을 포함하는 하이브리드 배포에서 사용할 수 있습니다.
 
 * Configuration Manager 콘솔에서 Windows 10 디바이스에 대한 비즈니스용 Windows 스토어 앱 찾기, 관리 및 배포([1604](#new-in-1604-technical-preview))
-*   Android 디바이스에 대한 SmartLock 설정([1604](#new-in-1604-technical-preview))
-*   Windows 10 디바이스를 위한 앱 트리거 VPN([1605](#new-in-1605-technical-preview))
-*   원격 디바이스 작업을 위한 새로운 환경([1605](#new-in-1605-technical-preview))
-*   비즈니스용 Windows 스토어 앱([1605](#new-in-1605-technical-preview))
-*   대량 구매 앱의 일반적인 향상 기능([1605](#new-in-1605-technical-preview))
-*   WIP(Windows Information Protection)([1605](#new-in-1605-technical-preview))
-*   IMEI 또는 iOS 일련 번호로 회사 소유 디바이스 미리 선언([1605](#new-in-1605-technical-preview))
-*   컬렉션으로 디바이스 자동 분류([1606](#new-in-1606-technical-preview))
+* Android 디바이스에 대한 SmartLock 설정([1604](#new-in-1604-technical-preview))
+* Windows 10 디바이스를 위한 앱 트리거 VPN([1605](#new-in-1605-technical-preview))
+* 원격 디바이스 작업을 위한 새로운 환경([1605](#new-in-1605-technical-preview))
+* 비즈니스용 Windows 스토어 앱([1605](#new-in-1605-technical-preview))
+* 대량 구매 앱의 일반적인 향상 기능([1605](#new-in-1605-technical-preview))
+* WIP(Windows Information Protection)([1605](#new-in-1605-technical-preview))
+* IMEI 또는 iOS 일련 번호로 회사 소유 디바이스 미리 선언([1605](#new-in-1605-technical-preview))
+* 컬렉션으로 디바이스 자동 분류([1606](#new-in-1606-technical-preview))
 
 새로운 기능에 대한 자세한 내용은 지정된 기술 미리 보기 릴리스에 대한 설명서를 참조하세요.
 
@@ -740,9 +740,9 @@ System Center 2012 Configuration Manager SP1 및 System Center 2012 R2 Configura
 Configuration Manager 2012 SP1 또는 R2 RTM과 함께 하이브리드 배포를 실행하는 경우 2017년 4월 10일 이전에 Configuration Manager(현재 분기)로 업그레이드하거나 Configuration Manager 2012의 지원되는 최신 서비스 팩(R2 SP1 또는 SP2)으로 업그레이드하여 서비스 중단을 방지하는 것이 좋습니다.
 
 추가 리소스:
--   [System Center Configuration Manager(현재 분기)로 업그레이드](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager)
--   [System Center 2012 R2 Configuration Manager SP1로의 업그레이드 계획](https://technet.microsoft.com/library/jj822981.aspx#BKMK_PlanningR2SP1Upgrade)
--   [System Center 2012 Configuration Manager SP2로의 업그레이드 계획](https://technet.microsoft.com/library/jj822981.aspx#BKMK_PlanningSP2Upgrade)
+- [System Center Configuration Manager(현재 분기)로 업그레이드](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager)
+- [System Center 2012 R2 Configuration Manager SP1로의 업그레이드 계획](https://technet.microsoft.com/library/jj822981.aspx#BKMK_PlanningR2SP1Upgrade)
+- [System Center 2012 Configuration Manager SP2로의 업그레이드 계획](https://technet.microsoft.com/library/jj822981.aspx#BKMK_PlanningSP2Upgrade)
 
 ### <a name="windows-phone-8-company-portal-upload-deprecated"></a>Windows Phone 8 회사 포털 업로드가 사용되지 않음
 *2016년 10월 25일*

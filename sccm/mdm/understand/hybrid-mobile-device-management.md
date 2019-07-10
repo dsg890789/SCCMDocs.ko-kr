@@ -11,19 +11,19 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2980cef8a39f790dbb94ab85fa025eeb04f4f996
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: 8214793cb724f029892de40bc1191cdc25ed0ec5
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62286905"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67678646"
 ---
 # <a name="hybrid-mdm-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune에서 사용하는 하이브리드 MDM
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 > [!Important]  
-> 2018년 8월 14일부터 하이브리드 모바일 디바이스 관리 [기능은 사용되지 않습니다](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures). 신규 고객에 게는 2019 년 2 월, 끝에 예상 1902 Intune 서비스 릴리스에서 새 하이브리드 연결을 만들 수 없습니다. 
+> 2018년 8월 14일부터 하이브리드 모바일 디바이스 관리 [기능은 사용되지 않습니다](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures). 2019년 2월 말로 예정된 1902 Intune 서비스 릴리스부터, 신규 고객은 새 하이브리드 연결을 만들 수 없습니다. 
 > <!--Intune feature 2683117-->  
 > Intune은 1년여 전 Azure에서 실행된 이후 고객들이 요청하고 업계에서 선두를 달리는 수백 개의 새로운 서비스 기능을 추가했습니다. 이제는 하이브리드 모바일 디바이스 관리(MDM)를 통해 제공하는 것 보다 훨씬 더 많은 기능을 제공합니다. Azure의 Intune에서는 기업 무선 통신 요구 사항을 충족하기 위해 보다 통합되고 간소화된 관리 환경을 제공합니다.
 > 
@@ -88,16 +88,14 @@ Configuration Manager의 하이브리드 MDM(모바일 디바이스 관리) 기�
 
 -   기본 제공 보고서를 사용하여 소프트웨어 인벤토리 수집  
 
-하이브리드 MDM에 사용할 수 있는 새로운 기능에 대한 자세한 내용은 [하이브리드 모바일 디바이스 관리의 새로운 기능](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management)을 참조하세요.
-
 
 
 ## <a name="hybrid-mdm-enrollment"></a>하이브리드 MDM 등록
 
 디바이스에 하이브리드 관리를 사용하려면 해당 디바이스를 서비스에 등록해야 합니다. 디바이스를 등록하는 방법은 디바이스 유형, 소유권 및 필요한 관리 수준에 따라 다릅니다.
 
-- **Bring your own device (BYOD)**: 사용자가 개인 휴대폰, 태블릿 또는 Pc를 등록합니다.  
+- **Bring your own device (BYOD)** : 사용자가 개인 휴대폰, 태블릿 또는 Pc를 등록합니다.  
 
-- **회사 소유 장치 (COD)**: 원격 초기화, 공유 장치 또는 장치에 대 한 사용자 선호도 같은 관리 시나리오를 사용 하도록 설정  
+- **회사 소유 장치 (COD)** : 원격 초기화, 공유 장치 또는 장치에 대 한 사용자 선호도 같은 관리 시나리오를 사용 하도록 설정  
 
 - [Exchange ActiveSync](/sccm/mdm/plan-design/device-enrollment-methods#mobile-device-management-with-exchange-activesync-and-configuration-manager)를 클라우드에서 호스트하거나 온-프레미스로 사용하는 경우 등록하지 않고 간단한 Intune 관리를 사용할 수 있습니다. [Intune 클라이언트 소프트웨어](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)를 사용하여 Windows PC를 관리할 수도 있습니다.

@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e694b81943dda937f1d95765f75f182e072bc7da
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: b999dddc048c1afe0dd4212ed9b99ebc9c991ff0
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62224740"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67678850"
 ---
 # <a name="how-to-create-pfx-certificate-profiles-by-importing-certificate-details"></a>인증서 세부 정보를 가져와 PFX 인증서 프로필을 만드는 방법
 
@@ -69,11 +69,11 @@ PFX 인증서를 가져오려면 Configuration Manager SDK를 사용하여 PFX �
 
 가져온 인증서는 등록된 디바이스에 나중에 배포됩니다.
 
-1. **인증서 프로필 만들기 마법사**의 **PFX 인증서** 페이지에서 장치 키 스토리지 공급자의 위치를 지정합니다.
-    -   **있는 경우 TPM(신뢰할 수 있는 플랫폼 모듈)에 설치**  
-    -   **TPM(신뢰할 수 있는 플랫폼 모듈)에 설치, 그렇지 않으면 실패** 
-    -   **비즈니스용 Windows Hello에 설치, 그러지 않으면 실패** 
-    -   **소프트웨어 키 스토리지 공급자에 설치** 
+1. **인증서 프로필 만들기 마법사**의 **PFX 인증서** 페이지에서 디바이스 키 저장소 공급자의 위치를 지정합니다.
+    - **있는 경우 TPM(신뢰할 수 있는 플랫폼 모듈)에 설치**  
+    - **TPM(신뢰할 수 있는 플랫폼 모듈)에 설치, 그렇지 않으면 실패** 
+    - **비즈니스용 Windows Hello에 설치, 그러지 않으면 실패** 
+    - **소프트웨어 키 스토리지 공급자에 설치** 
 2. **다음**을 클릭합니다. 
 3. 마법사의 **지원되는 플랫폼** 페이지에서 지원되는 디바이스 플랫폼을 선택하고 **다음**을 클릭합니다.
 
@@ -89,9 +89,9 @@ PFX 인증서를 가져오려면 Configuration Manager SDK를 사용하여 PFX �
 
 Configuration Manager 2012 SP2에 추가된 PFX 만들기 스크립트는 SDK에 SMS_ClientPfxCertificate 클래스를 추가합니다. 이 클래스는 다음 메서드를 포함합니다.  
 
-    -   `ImportForUser`  
+-   `ImportForUser`  
 
-    -   `DeleteForUser`  
+-   `DeleteForUser`  
 
 다음 예제에서는 PFX 인증서 프로필에 자격 증명을 가져옵니다.
 
