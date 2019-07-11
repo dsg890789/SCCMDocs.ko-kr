@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43a5e1a4bf3283c185d612cc31428a23a4e12061
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: b0daf2943b0859227d08069be9c9da69165d5d1a
+ms.sourcegitcommit: de3c86077bbf91b793e94e1f60814df18da11bab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67678109"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67726234"
 ---
 # <a name="what-is-desktop-analytics"></a>데스크톱 Analytics 란?
 
@@ -94,7 +94,7 @@ ms.locfileid: "67678109"
     >
     > 데스크톱 분석 지원 내부에서 업그레이드 시나리오를 가장 하도록 설계 되었습니다. 32 비트에서 64 비트 아키텍처에서와 같은 주요 변경 내용을 확인 해야 하는 경우에 이미징 시나리오를 사용 합니다. 데스크톱 분석 정보는 이러한 클래식 운영 체제 배포 시나리오에서 여전히 중요 하지만 현재 위치 업그레이드 특정 지침은 무시할 수 있습니다. 자세한 내용은 [Configuration Manager를 사용 하 여 엔터프라이즈 운영 체제를 배포 하는 시나리오](/sccm/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems)합니다.
 
-- Windows 진단 데이터입니다. 자세한 내용은 다음 아티클을 참조하세요.  
+- Windows 진단 데이터입니다. 자세한 내용은 다음 문서를 참조하세요.  
 
     - [진단 데이터 수준](/sccm/desktop-analytics/enable-data-sharing#diagnostic-data-levels)  
 
@@ -103,7 +103,7 @@ ms.locfileid: "67678109"
 - 네트워크 장치에서 Microsoft 공용 클라우드를 연결 합니다. 자세한 내용은 참조 하세요. [데이터 공유를 사용 하는 방법](/sccm/desktop-analytics/enable-data-sharing)  
 
 
-### <a name="licensing"></a>라이선스
+### <a name="licensing"></a>라이선싱
 
 데스크톱 분석 다음 라이선스 구독 중 하나가 필요합니다.
 
@@ -120,4 +120,4 @@ ms.locfileid: "67678109"
 
 다음 자습서는 데스크톱 분석 및 Configuration Manager를 사용 하 여 시작 하는 단계별 가이드를 제공 합니다.  
 
-- [파일럿에 Windows 10 배포](/sccm/desktop-analytics/tutorial-windows10)  
+- [파일럿을 Windows 10을 배포 합니다.](/sccm/desktop-analytics/tutorial-windows10)  
