@@ -12,17 +12,17 @@ ms.prod: configuration-manager
 ms.service: ''
 ms.technology: ''
 ms.assetid: ''
-ms.openlocfilehash: 94513445c8d1849f0304b304b7dd8672c1e50978
-ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
+ms.openlocfilehash: 696c952484b53c186b6f1d4f8e5b711262ded5a8
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67158293"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67678004"
 ---
 # <a name="tutorial-enable-co-management-for-new-internet-based-devices"></a>자습서: 최신 인터넷 기반 디바이스의 공동 관리 사용
 공동 관리를 사용하면 Configuration Manager를 사용하여 조직의 PC를 관리하기 위해 제대로 설정된 프로세스를 유지할 수 있습니다. 이와 동시에 보안 및 최신 프로비저닝을 위해 Intune을 사용하여 클라우드에 투자할 수 있습니다. 
 
-이 자습서에서는 Azure AD(Active Directory)와 온-프레미스 AD를 모두 사용하지만 [하이브리드 AD](https://docs.microsoft.com/azure/active-directory/devices/overview#hybrid-azure-ad-joined-devices)가 없는 환경에서 Windows 10 디바이스의 공동 관리를 설정합니다. Configuration Manager 환경에는 동일한 단일 서버인 사이트 서버에 모든 사이트 시스템 역할이 있는 단일 기본 사이트가 포함되어 있습니다. 이 자습서는 Windows 10 디바이스가 이미 Intune에 등록되어 있다는 전제에서 시작됩니다. 
+이 자습서에서는 Azure AD(Active Directory)와 온-프레미스 AD를 모두 사용하지만 [하이브리드 AD](/azure/active-directory/devices/concept-azure-ad-join-hybrid)가 없는 환경에서 Windows 10 디바이스의 공동 관리를 설정합니다. Configuration Manager 환경에는 동일한 단일 서버인 사이트 서버에 모든 사이트 시스템 역할이 있는 단일 기본 사이트가 포함되어 있습니다. 이 자습서는 Windows 10 디바이스가 이미 Intune에 등록되어 있다는 전제에서 시작됩니다. 
 
 Azure AD(Active Directory)로 온-프레미스 AD를 조인하는 하이브리드 Azure AD를 배포할 수 없는 경우에는[구성 관리자 클라이언트에 대한 공동 관리 사용](/sccm/comanage/tutorial-co-manage-clients) 포함 자습서를 따르는 것이 좋습니다. 
  
@@ -154,7 +154,7 @@ CSR을 생성할 때 버전 2 키 공급자 유형을 요청합니다. 버전 2 
 
 6. **인증서 저장소 페이지**에서 **인증서 유형을 기반으로 인증서 저장소를 자동으로 선택**을 선택한 후 **다음**을 선택합니다.  
 
-7.  **완료**를 선택합니다.
+7. **완료**를 선택합니다.
 
 ### <a name="export-the-certificate"></a>인증서 내보내기
 서버에서 ‘CMG 서버 인증 인증서’를 내보냅니다.  인증서를 다시 내보내면 Azure의 클라우드 관리 게이트웨이에서 사용할 수 있습니다.  
@@ -399,8 +399,10 @@ Azure 구성, 사이트 시스템 역할 및 클라이언트 설정을 적절히
    - **명령줄 인수**:  \<**CCMSETUPCMD** 명령줄을 지정합니다. 공동 관리 구성 마법사의 ‘사용’ 페이지에서 저장한 명령줄을 사용할 수 있습니다. 이 명령줄에는 클라우드 서비스의 이름과 디바이스가 구성 관리자 클라이언트 소프트웨어를 설치할 수 있도록 하는 추가 값이 포함되어 있습니다.> *  
 
      명령줄 구조는 CCMSETUPCMD 및 SMSSiteCode 매개 변수만 사용하는 이 예제와 유사해야 합니다.  
- 
-         CCMSETUPCMD="CCMHOSTNAME=<ServiceName.CLOUDAPP.NET/CCM_Proxy_MutualAuth/<GUID>" SMSSiteCode="<YourSiteCode>"  
+
+     ```
+     CCMSETUPCMD="CCMHOSTNAME=<ServiceName.CLOUDAPP.NET/CCM_Proxy_MutualAuth/<GUID>" SMSSiteCode="<YourSiteCode>"  
+     ```
 
      > [!TIP]  
      > 사용 가능한 명령줄이 없는 경우 Configuration Manager 콘솔에서 *CoMgmtSettingsProd*의 속성을 보고 명령줄의 복사본을 가져올 수 있습니다.    
